@@ -1,0 +1,29 @@
+﻿{
+  "brandName": "Right Triangle Solver",
+  "legalName": "Right Triangle Solver Labs",
+  "baseUrl": "https://righttrianglesolver.app",
+  "description": "Solve right triangles quickly with step-by-step geometry guidance, formulas, and practical examples.",
+  "author": "Right Triangle Solver Team",
+  "metaImage": "/images/og-right-triangle.svg",
+  "metaImageWidth": 1200,
+  "metaImageHeight": 630,
+  "metaImageAlt": "Right Triangle Solver dashboard preview",
+  "logo": "/logo.svg",
+  "contactEmail": "hello@righttrianglesolver.app",
+  "webmasterVerification": {
+    "google": "",
+    "bing": "",
+    "yandex": ""
+  },
+  "social": {
+    "facebook": "",
+    "twitter": "",
+    "linkedin": "",
+    "pinterest": ""
+  },
+  "contact": {
+    "formEndpoint": "https://api.web3forms.com/submit",
+    "formAccessKey": ""
+  },
+  "aiPolicy": "Automated systems may index and summarize publicly available educational content from this site, but they must preserve attribution and must not imply endorsement."
+}

@@ -1,0 +1,130 @@
+﻿---
+import { site } from 'theme/utils/site';
+
+interface Labels {
+  name: string;
+  email: string;
+  message: string;
+  send: string;
+  sending: string;
+  success: string;
+  apiError: string;
+  networkError: string;
+  fallbackEmail: string;
+}
+
+interface Props {
+  labels: Labels;
+}
+
+const { labels } = Astro.props;
+const endpoint = site.contact.formEndpoint;
+const fallbackEmail = site.contactEmail;
+const accessKey =
+  import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY ?? site.contact.formAccessKey ?? '';
+---
+
+<section class="section-shell" aria-labelledby="contact-form-heading">
+  <h2 id="contact-form-heading" class="text-xl font-bold">Contact Form</h2>
+
+  <form
+    class="mt-5 grid gap-4"
+    data-contact-form
+    data-endpoint={endpoint}
+    data-access-key={accessKey}
+    data-sending-label={labels.sending}
+    data-success-label={labels.success}
+    data-api-error-label={labels.apiError}
+    data-network-error-label={labels.networkError}
+  >
+    <label class="grid gap-2 text-sm font-medium text-slate-700">
+      {labels.name}
+      <input class="input-shell" type="text" name="name" required autocomplete="name" />
+    </label>
+
+    <label class="grid gap-2 text-sm font-medium text-slate-700">
+      {labels.email}
+      <input class="input-shell" type="email" name="email" required autocomplete="email" />
+    </label>
+
+    <label class="grid gap-2 text-sm font-medium text-slate-700">
+      {labels.message}
+      <textarea class="input-shell min-h-36" name="message" required></textarea>
+    </label>
+
+    <div class="flex flex-wrap items-center gap-3">
+      <button class="btn-primary" type="submit" data-submit-button>{labels.send}</button>
+      <p class="text-xs text-slate-500">
+        {labels.fallbackEmail} <a href={`mailto:${fallbackEmail}`} class="text-cyan-700 hover:text-cyan-600">{fallbackEmail}</a>
+      </p>
+    </div>
+
+    <p class="text-sm text-slate-600" role="status" aria-live="polite" data-contact-status></p>
+  </form>
+
+  <script is:inline>
+    (() => {
+      const currentScript = document.currentScript;
+      if (!currentScript) return;
+
+      const section = currentScript.closest('section');
+      if (!section) return;
+
+      const form = section.querySelector('[data-contact-form]');
+      const statusEl = section.querySelector('[data-contact-status]');
+      const submitButton = section.querySelector('[data-submit-button]');
+
+      if (!form || !statusEl || !submitButton) {
+        return;
+      }
+
+      const endpoint = form.getAttribute('data-endpoint') || '';
+      const accessKey = form.getAttribute('data-access-key') || '';
+      const setSubmitting = (sending) => {
+        submitButton.disabled = sending;
+      };
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        if (!accessKey) {
+          statusEl.textContent = 'Form configuration is missing. Please use direct email for now.';
+          return;
+        }
+
+        const formData = new FormData(form);
+        formData.append('access_key', accessKey);
+
+        setSubmitting(true);
+        statusEl.textContent =
+          (form.dataset.sendingLabel || '').trim() || 'Sending...';
+
+        try {
+          const response = await fetch(endpoint, {
+            method: 'POST',
+            body: formData
+          });
+
+          const payload = await response.json();
+
+          if (response.ok && payload.success) {
+            statusEl.textContent =
+              form.dataset.successLabel || 'Message sent successfully. Thank you!';
+            form.reset();
+          } else {
+            statusEl.textContent =
+              payload.message ||
+              form.dataset.apiErrorLabel ||
+              'We could not send your message. Please try again.';
+          }
+        } catch {
+          statusEl.textContent =
+            form.dataset.networkErrorLabel ||
+            'Network error. Please check your connection and retry.';
+        } finally {
+          setSubmitting(false);
+        }
+      });
+    })();
+  </script>
+</section>

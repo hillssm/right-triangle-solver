@@ -1,0 +1,23 @@
+﻿---
+import { DEFAULT_LOCALE } from 'theme/i18n/locales';
+import { getTranslations, pick } from 'theme/i18n/translations';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+
+const locale = DEFAULT_LOCALE;
+const bundle = getTranslations(locale);
+const content = bundle.content as Record<string, unknown>;
+const privacy = (content.privacy as Record<string, string>) ?? {};
+---
+
+<BaseLayout
+  locale={locale}
+  title={pick(privacy, 'title', 'Privacy')}
+  description={pick(privacy, 'description', 'Privacy policy')}
+  canonicalPath="/privacy/"
+>
+  <article class="section-shell prose-shell">
+    <h1 class="text-3xl font-bold sm:text-4xl">{pick(privacy, 'heading', 'Privacy Policy')}</h1>
+    <p class="mt-2 text-xs uppercase tracking-wide text-slate-500">{pick(privacy, 'updatedLabel', '')}</p>
+    <p class="mt-4 text-slate-700">{pick(privacy, 'body', 'This is our privacy policy.')}</p>
+  </article>
+</BaseLayout>

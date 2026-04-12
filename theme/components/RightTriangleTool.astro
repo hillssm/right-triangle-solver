@@ -1,0 +1,121 @@
+﻿---
+interface Props {
+  heading: string;
+  description: string;
+}
+
+const { heading, description } = Astro.props;
+---
+
+<section class="section-shell" aria-labelledby="tool-heading">
+  <h2 id="tool-heading" class="text-2xl font-bold sm:text-3xl">{heading}</h2>
+  <p class="mt-2 text-sm text-slate-600">{description}</p>
+
+  <form class="mt-6 grid gap-4 sm:grid-cols-2" data-triangle-form>
+    <label class="grid gap-2 text-sm font-medium text-slate-700">
+      Leg A
+      <input
+        class="input-shell"
+        type="number"
+        inputmode="decimal"
+        min="0"
+        step="any"
+        name="legA"
+        required
+      />
+    </label>
+
+    <label class="grid gap-2 text-sm font-medium text-slate-700">
+      Leg B
+      <input
+        class="input-shell"
+        type="number"
+        inputmode="decimal"
+        min="0"
+        step="any"
+        name="legB"
+        required
+      />
+    </label>
+
+    <div class="sm:col-span-2 flex flex-wrap gap-3">
+      <button class="btn-primary" type="submit">Solve Triangle</button>
+      <button class="btn-secondary" type="reset">Reset</button>
+    </div>
+
+    <p class="sm:col-span-2 text-sm text-slate-600" role="status" aria-live="polite" data-tool-status>
+      Enter two positive leg values to begin.
+    </p>
+
+    <div class="sm:col-span-2 hidden rounded-xl border border-cyan-100 bg-cyan-50 p-4" data-tool-results>
+      <dl class="grid gap-3 text-sm sm:grid-cols-3">
+        <div>
+          <dt class="font-semibold text-slate-700">Hypotenuse</dt>
+          <dd class="font-mono text-slate-900" data-result-hypotenuse>-</dd>
+        </div>
+        <div>
+          <dt class="font-semibold text-slate-700">Area</dt>
+          <dd class="font-mono text-slate-900" data-result-area>-</dd>
+        </div>
+        <div>
+          <dt class="font-semibold text-slate-700">Perimeter</dt>
+          <dd class="font-mono text-slate-900" data-result-perimeter>-</dd>
+        </div>
+      </dl>
+    </div>
+  </form>
+
+  <script is:inline>
+    (() => {
+      const currentScript = document.currentScript;
+      if (!currentScript) return;
+
+      const section = currentScript.closest('section');
+      if (!section) return;
+
+      const form = section.querySelector('[data-triangle-form]');
+      const statusEl = section.querySelector('[data-tool-status]');
+      const resultsEl = section.querySelector('[data-tool-results]');
+      const hypotenuseEl = section.querySelector('[data-result-hypotenuse]');
+      const areaEl = section.querySelector('[data-result-area]');
+      const perimeterEl = section.querySelector('[data-result-perimeter]');
+
+      if (!form || !statusEl || !resultsEl || !hypotenuseEl || !areaEl || !perimeterEl) {
+        return;
+      }
+
+      const formatValue = (value) => Number(value).toFixed(3);
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const legA = Number(formData.get('legA'));
+        const legB = Number(formData.get('legB'));
+
+        if (!(legA > 0) || !(legB > 0)) {
+          statusEl.textContent = 'Both legs must be positive numbers.';
+          resultsEl.classList.add('hidden');
+          return;
+        }
+
+        const hypotenuse = Math.hypot(legA, legB);
+        const area = 0.5 * legA * legB;
+        const perimeter = legA + legB + hypotenuse;
+
+        hypotenuseEl.textContent = formatValue(hypotenuse);
+        areaEl.textContent = formatValue(area);
+        perimeterEl.textContent = formatValue(perimeter);
+        statusEl.textContent = 'Solved. You can adjust inputs and recalculate anytime.';
+        resultsEl.classList.remove('hidden');
+      });
+
+      form.addEventListener('reset', () => {
+        setTimeout(() => {
+          statusEl.textContent = 'Enter two positive leg values to begin.';
+          resultsEl.classList.add('hidden');
+        }, 0);
+      });
+    })();
+  </script>
+</section>

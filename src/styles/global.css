@@ -1,0 +1,80 @@
+﻿@import "tailwindcss";
+@source "../**/*.{astro,ts,tsx,md,mdx}";
+@source "../../theme/**/*.{astro,ts,tsx,md,mdx}";
+
+@theme {
+  --breakpoint-2xl: 90rem;
+
+  --font-sans: "Space Grotesk", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", Consolas, "Courier New", monospace;
+
+  --color-brand-50: #ecfeff;
+  --color-brand-100: #cffafe;
+  --color-brand-200: #a5f3fc;
+  --color-brand-300: #67e8f9;
+  --color-brand-400: #22d3ee;
+  --color-brand-500: #06b6d4;
+  --color-brand-600: #0891b2;
+  --color-brand-700: #0e7490;
+  --color-brand-800: #155e75;
+  --color-brand-900: #164e63;
+
+  --color-accent-400: #f59e0b;
+  --color-accent-500: #d97706;
+
+  --shadow-soft: 0 10px 28px -16px rgb(15 23 42 / 0.45);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background: radial-gradient(circle at 0% 0%, #e6fffb 0%, #f8fafc 44%, #f8fafc 100%);
+  }
+
+  body {
+    @apply text-slate-800 antialiased;
+    font-family: var(--font-sans);
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-slate-900 tracking-tight;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .section-shell {
+    @apply rounded-2xl border border-cyan-100 bg-white/90 p-6 shadow-[var(--shadow-soft)] backdrop-blur-sm sm:p-8;
+  }
+
+  .surface-card {
+    @apply rounded-xl border border-slate-200 bg-white p-5 shadow-sm;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-lg bg-cyan-700 px-4 py-2.5 text-sm font-semibold text-white hover:bg-cyan-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-800 hover:border-cyan-500 hover:text-cyan-700;
+  }
+
+  .input-shell {
+    @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-slate-900 placeholder:text-slate-400 focus:border-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-200;
+  }
+
+  .prose-shell p {
+    @apply mb-4 leading-relaxed;
+  }
+
+  .prose-shell a {
+    @apply text-cyan-700 underline decoration-cyan-300 underline-offset-2 hover:text-cyan-600;
+  }
+}

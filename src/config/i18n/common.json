@@ -1,0 +1,46 @@
+{
+  "en": {
+    "nav": {
+      "home": "Home",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
+    },
+    "common": {
+      "readMore": "Read article",
+      "previous": "Previous",
+      "next": "Next",
+      "page": "Page",
+      "of": "of",
+      "results": "Results",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully. Thank you!",
+      "apiError": "We could not send your message. Please try again.",
+      "networkError": "Network error. Please check your connection and retry.",
+      "fallbackEmail": "Or email us directly at",
+      "backToBlog": "Back to Blog",
+      "switchLanguage": "Language"
+    },
+    "footer": {
+      "rights": "All rights reserved."
+    }
+  },
+  "ar": {
+    "nav": {
+      "home": "Home",
+      "contactUs": "Contact Us"
+    },
+    "common": {
+      "switchLanguage": "Language",
+      "send": "Send Message"
+    }
+  }
+}

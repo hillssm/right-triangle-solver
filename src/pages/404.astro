@@ -1,0 +1,29 @@
+﻿---
+import { DEFAULT_LOCALE, localizePath } from 'theme/i18n/locales';
+import { getTranslations, pick } from 'theme/i18n/translations';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+
+const locale = DEFAULT_LOCALE;
+const bundle = getTranslations(locale);
+const content = bundle.content as Record<string, unknown>;
+const errors = (content.errors as Record<string, string>) ?? {};
+---
+
+<BaseLayout
+  locale={locale}
+  title={pick(errors, 'notFoundTitle', 'Page Not Found')}
+  description={pick(errors, 'notFoundDescription', 'The page was not found.')}
+  canonicalPath="/404/"
+  noindex={true}
+>
+  <section class="section-shell text-center">
+    <p class="text-sm font-semibold uppercase tracking-wide text-cyan-700">404</p>
+    <h1 class="mt-2 text-3xl font-bold sm:text-4xl">{pick(errors, 'notFoundHeading', 'Page not found')}</h1>
+    <p class="mx-auto mt-4 max-w-xl text-slate-600">
+      {pick(errors, 'notFoundText', 'Return to home and continue.')}
+    </p>
+    <a href={localizePath(locale, '/')} class="btn-primary mt-6 inline-flex">
+      {pick(errors, 'notFoundCta', 'Back to Home')}
+    </a>
+  </section>
+</BaseLayout>

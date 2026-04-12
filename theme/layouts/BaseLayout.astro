@@ -1,0 +1,174 @@
+---
+import 'src/styles/global.css';
+
+import Footer from 'theme/components/Footer.astro';
+import Header from 'theme/components/Header.astro';
+import {
+  DEFAULT_LOCALE,
+  getDirection,
+  getOgLocale,
+  type Locale
+} from 'theme/i18n/locales';
+import { getTranslations, pick } from 'theme/i18n/translations';
+import { getLocalizedNavItems, site, toAbsoluteUrl } from 'theme/utils/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+  locale?: Locale;
+  canonicalPath?: string;
+  noindex?: boolean;
+  ogType?: 'website' | 'article';
+  schemaPage?: 'about' | 'contact' | null;
+}
+
+const {
+  title,
+  description,
+  locale = DEFAULT_LOCALE,
+  canonicalPath,
+  noindex = false,
+  ogType = 'website',
+  schemaPage = null
+} = Astro.props;
+
+const bundle = getTranslations(locale);
+const content = bundle.content as Record<string, unknown>;
+const common = bundle.common as Record<string, unknown>;
+const commonNav = (common.nav as Record<string, string>) ?? {};
+const commonWords = (common.common as Record<string, string>) ?? {};
+const footerWords = (common.footer as Record<string, string>) ?? {};
+
+const localizedSite = (content.site as Record<string, string>) ?? {};
+const localizedFooter = (content.footer as Record<string, string>) ?? {};
+
+const siteTitle = title ?? pick(localizedSite, 'title', site.brandName);
+const pageDescription =
+  description ?? pick(localizedSite, 'description', site.description);
+
+const canonicalUrl = toAbsoluteUrl(canonicalPath ?? Astro.url.pathname);
+const robots = noindex
+  ? 'noindex, nofollow'
+  : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+const googlebot = noindex ? 'noindex, nofollow' : 'index, follow';
+const ogLocale = getOgLocale(locale);
+const ogImageUrl = toAbsoluteUrl(site.metaImage);
+
+const socialUrls = Object.values(site.social).filter(Boolean);
+const headerNav = getLocalizedNavItems(locale, 'header', commonNav).map((item) => ({
+  '@type': 'SiteNavigationElement',
+  name: item.label,
+  url: toAbsoluteUrl(item.href)
+}));
+
+const organizationSchema = {
+  '@type': 'Organization',
+  name: site.brandName,
+  legalName: site.legalName,
+  url: site.baseUrl,
+  description: pageDescription,
+  logo: {
+    '@type': 'ImageObject',
+    url: toAbsoluteUrl(site.logo)
+  },
+  sameAs: socialUrls
+};
+
+const pageSchema =
+  schemaPage === 'about'
+    ? {
+        '@type': 'AboutPage',
+        name: siteTitle,
+        url: canonicalUrl,
+        description: pageDescription
+      }
+    : schemaPage === 'contact'
+      ? {
+          '@type': 'ContactPage',
+          name: siteTitle,
+          url: canonicalUrl,
+          description: pageDescription
+        }
+      : null;
+
+const schemaGraph = {
+  '@context': 'https://schema.org',
+  '@graph': pageSchema
+    ? [organizationSchema, ...headerNav, pageSchema]
+    : [organizationSchema, ...headerNav]
+};
+
+const footerCommonLabels = {
+  ...commonWords,
+  ...footerWords
+};
+---
+
+<!doctype html>
+<html lang={locale} dir={getDirection(locale)}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{siteTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <meta name="robots" content={robots} />
+    <meta name="googlebot" content={googlebot} />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+
+    {site.webmasterVerification.google && (
+      <meta name="google-site-verification" content={site.webmasterVerification.google} />
+    )}
+    {site.webmasterVerification.bing && (
+      <meta name="msvalidate.01" content={site.webmasterVerification.bing} />
+    )}
+    {site.webmasterVerification.yandex && (
+      <meta name="yandex-verification" content={site.webmasterVerification.yandex} />
+    )}
+
+    <meta property="og:title" content={siteTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content={site.brandName} />
+    <meta property="og:locale" content={ogLocale} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:width" content={String(site.metaImageWidth)} />
+    <meta property="og:image:height" content={String(site.metaImageHeight)} />
+    <meta property="og:image:alt" content={site.metaImageAlt} />
+    <meta property="og:type" content={ogType} />
+
+    <meta name="twitter:title" content={siteTitle} />
+    <meta name="twitter:description" content={pageDescription} />
+    <meta name="twitter:image" content={ogImageUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(schemaGraph)}></script>
+
+    <slot name="head" />
+  </head>
+  <body class="text-slate-800">
+    <Header
+      locale={locale}
+      siteTitle={pick(localizedSite, 'title', site.brandName)}
+      logo={site.logo}
+      navLabels={commonNav}
+    />
+
+    <main class="mx-auto w-full max-w-[1200px] px-4 py-8 sm:px-6 lg:px-8">
+      <slot />
+    </main>
+
+    <Footer
+      locale={locale}
+      siteTitle={pick(localizedSite, 'title', site.brandName)}
+      logo={site.logo}
+      description={pick(localizedFooter, 'description', site.description)}
+      navLabels={commonNav}
+      commonLabels={footerCommonLabels}
+    />
+  </body>
+</html>

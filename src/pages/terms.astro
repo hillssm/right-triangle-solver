@@ -1,0 +1,23 @@
+﻿---
+import { DEFAULT_LOCALE } from 'theme/i18n/locales';
+import { getTranslations, pick } from 'theme/i18n/translations';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+
+const locale = DEFAULT_LOCALE;
+const bundle = getTranslations(locale);
+const content = bundle.content as Record<string, unknown>;
+const terms = (content.terms as Record<string, string>) ?? {};
+---
+
+<BaseLayout
+  locale={locale}
+  title={pick(terms, 'title', 'Terms')}
+  description={pick(terms, 'description', 'Terms of use')}
+  canonicalPath="/terms/"
+>
+  <article class="section-shell prose-shell">
+    <h1 class="text-3xl font-bold sm:text-4xl">{pick(terms, 'heading', 'Terms of Use')}</h1>
+    <p class="mt-2 text-xs uppercase tracking-wide text-slate-500">{pick(terms, 'updatedLabel', '')}</p>
+    <p class="mt-4 text-slate-700">{pick(terms, 'body', 'These are the terms of use.')}</p>
+  </article>
+</BaseLayout>

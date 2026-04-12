@@ -1,0 +1,132 @@
+﻿---
+import { localizePath, type Locale } from 'theme/i18n/locales';
+import { getLocalizedNavItems } from 'theme/utils/site';
+
+interface Props {
+  locale: Locale;
+  siteTitle: string;
+  logo: string;
+  navLabels: Record<string, string>;
+}
+
+const { locale, siteTitle, logo, navLabels } = Astro.props;
+
+const navItems = getLocalizedNavItems(locale, 'header', navLabels);
+const homeHref = localizePath(locale, '/');
+---
+
+<header class="sticky top-0 z-40 border-b border-cyan-100 bg-white/90 backdrop-blur-md">
+  <div class="mx-auto flex w-full max-w-[1200px] items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+    <a href={homeHref} class="inline-flex items-center gap-3 text-slate-900" data-mobile-link>
+      <img src={logo} alt={`${siteTitle} logo`} class="h-9 w-auto" loading="lazy" />
+      <span class="text-sm font-bold tracking-tight sm:text-base">{siteTitle}</span>
+    </a>
+
+    <nav aria-label="Primary" class="hidden items-center gap-5 text-sm font-medium md:flex">
+      {navItems.map((item) => (
+        <a
+          href={item.href}
+          class="rounded-md px-2 py-1 text-slate-700 hover:bg-cyan-50 hover:text-cyan-700"
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+
+    <button
+      type="button"
+      data-menu-toggle
+      class="inline-flex items-center justify-center rounded-md border border-slate-300 p-2 text-slate-700 hover:border-cyan-500 hover:text-cyan-700 md:hidden"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      aria-label="Toggle menu"
+    >
+      <span data-icon-open aria-hidden="true">Menu</span>
+      <span data-icon-close class="hidden" aria-hidden="true">X</span>
+    </button>
+  </div>
+
+  <div
+    data-mobile-overlay
+    class="fixed inset-0 hidden bg-slate-900/55 md:hidden"
+    aria-hidden="true"
+  ></div>
+
+  <aside
+    id="mobile-menu"
+    data-mobile-panel
+    aria-hidden="true"
+    class="fixed right-0 top-0 h-full w-[85%] max-w-sm translate-x-full border-l border-cyan-100 bg-white p-5 shadow-2xl transition-transform duration-200 md:hidden"
+  >
+    <div class="mb-6 flex items-center justify-between">
+      <span class="text-sm font-semibold text-slate-900">Menu</span>
+      <button
+        type="button"
+        data-menu-close
+        class="rounded-md border border-slate-300 px-2 py-1 text-sm text-slate-700"
+        aria-label="Close menu"
+      >
+        Close
+      </button>
+    </div>
+
+    <nav class="grid gap-2" aria-label="Mobile">
+      {navItems.map((item) => (
+        <a
+          href={item.href}
+          class="rounded-lg border border-slate-200 px-3 py-2 text-sm font-medium text-slate-700 hover:border-cyan-300 hover:bg-cyan-50 hover:text-cyan-700"
+          data-mobile-link
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+  </aside>
+
+  <script is:inline>
+    (() => {
+      const currentScript = document.currentScript;
+      if (!currentScript) return;
+
+      const header = currentScript.closest('header');
+      if (!header) return;
+
+      const toggleButton = header.querySelector('[data-menu-toggle]');
+      const closeButton = header.querySelector('[data-menu-close]');
+      const panel = header.querySelector('[data-mobile-panel]');
+      const overlay = header.querySelector('[data-mobile-overlay]');
+      const openIcon = header.querySelector('[data-icon-open]');
+      const closeIcon = header.querySelector('[data-icon-close]');
+      const mobileLinks = header.querySelectorAll('[data-mobile-link]');
+
+      if (!toggleButton || !panel || !overlay || !openIcon || !closeIcon) {
+        return;
+      }
+
+      const setMenuState = (isOpen) => {
+        toggleButton.setAttribute('aria-expanded', String(isOpen));
+        panel.setAttribute('aria-hidden', String(!isOpen));
+        overlay.setAttribute('aria-hidden', String(!isOpen));
+
+        panel.classList.toggle('translate-x-full', !isOpen);
+        overlay.classList.toggle('hidden', !isOpen);
+        openIcon.classList.toggle('hidden', isOpen);
+        closeIcon.classList.toggle('hidden', !isOpen);
+
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+      };
+
+      toggleButton.addEventListener('click', () => {
+        const expanded = toggleButton.getAttribute('aria-expanded') === 'true';
+        setMenuState(!expanded);
+      });
+
+      closeButton?.addEventListener('click', () => setMenuState(false));
+      overlay.addEventListener('click', () => setMenuState(false));
+
+      mobileLinks.forEach((link) => {
+        link.addEventListener('click', () => setMenuState(false));
+      });
+    })();
+  </script>
+</header>

@@ -1,0 +1,17 @@
+﻿{
+  "header": [
+    { "labelKey": "home", "href": "/" },
+    { "labelKey": "aboutUs", "href": "/about-us/" },
+    { "labelKey": "contactUs", "href": "/contact-us/" },
+    { "labelKey": "blog", "href": "/blog/" },
+    { "labelKey": "faq", "href": "/#faq" }
+  ],
+  "footer": [
+    { "labelKey": "home", "href": "/" },
+    { "labelKey": "aboutUs", "href": "/about-us/" },
+    { "labelKey": "contactUs", "href": "/contact-us/" },
+    { "labelKey": "terms", "href": "/terms/" },
+    { "labelKey": "privacy", "href": "/privacy/" },
+    { "labelKey": "sitemap", "href": "/sitemap/" }
+  ]
+}

@@ -1,0 +1,67 @@
+﻿---
+import LanguageSwitcher from 'theme/components/LanguageSwitcher.astro';
+import SocialIcon from 'theme/components/SocialIcon.astro';
+import { type Locale } from 'theme/i18n/locales';
+import { getEnabledSocialLinks, getLocalizedNavItems } from 'theme/utils/site';
+
+interface Props {
+  locale: Locale;
+  siteTitle: string;
+  logo: string;
+  description: string;
+  navLabels: Record<string, string>;
+  commonLabels: Record<string, string>;
+}
+
+const { locale, siteTitle, logo, description, navLabels, commonLabels } = Astro.props;
+
+const footerNav = getLocalizedNavItems(locale, 'footer', navLabels);
+const socialLinks = getEnabledSocialLinks();
+const year = new Date().getFullYear();
+const switchLabel = commonLabels.switchLanguage ?? 'Language';
+const rights = commonLabels.rights ?? 'All rights reserved.';
+---
+
+<footer class="mt-16 border-t border-cyan-100 bg-white/80">
+  <div class="mx-auto grid w-full max-w-[1200px] gap-8 px-4 py-10 sm:px-6 lg:grid-cols-[1.1fr_1fr] lg:px-8">
+    <div class="space-y-4">
+      <a href="/" class="inline-flex items-center gap-3 text-slate-900">
+        <img src={logo} alt={`${siteTitle} logo`} class="h-10 w-auto" loading="lazy" />
+        <span class="text-base font-bold">{siteTitle}</span>
+      </a>
+      <p class="max-w-xl text-sm text-slate-600">{description}</p>
+
+      {socialLinks.length > 0 && (
+        <div class="flex items-center gap-2" aria-label="Social links">
+          {socialLinks.map((item) => (
+            <a
+              href={item.href}
+              class="inline-flex rounded-lg border border-slate-300 p-2 text-slate-600 hover:border-cyan-500 hover:text-cyan-700"
+              rel="noreferrer"
+              target="_blank"
+              aria-label={item.name}
+            >
+              <SocialIcon network={item.name as 'facebook' | 'twitter' | 'linkedin' | 'pinterest'} />
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+
+    <div class="grid gap-6 sm:grid-cols-2">
+      <nav aria-label="Footer navigation" class="grid gap-2 text-sm">
+        {footerNav.map((item) => (
+          <a href={item.href} class="text-slate-600 hover:text-cyan-700">
+            {item.label}
+          </a>
+        ))}
+      </nav>
+
+      <LanguageSwitcher currentLocale={locale} switchLabel={switchLabel} />
+    </div>
+  </div>
+
+  <div class="border-t border-cyan-100 px-4 py-4 text-center text-xs text-slate-500 sm:px-6 lg:px-8">
+    &copy; {year} {siteTitle}. {rights}
+  </div>
+</footer>

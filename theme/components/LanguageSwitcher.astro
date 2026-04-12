@@ -1,0 +1,41 @@
+﻿---
+import {
+  LOCALE_LABELS,
+  SUPPORTED_LOCALES,
+  localizePath,
+  type Locale
+} from 'theme/i18n/locales';
+
+interface Props {
+  currentLocale: Locale;
+  switchLabel: string;
+}
+
+const { currentLocale, switchLabel } = Astro.props;
+---
+
+<nav aria-label={switchLabel} class="flex flex-wrap items-center gap-2">
+  <span class="text-xs font-semibold uppercase tracking-wide text-slate-500">{switchLabel}</span>
+  <ul class="flex flex-wrap items-center gap-1 text-xs">
+    {SUPPORTED_LOCALES.map((locale) => {
+      const active = locale === currentLocale;
+      return (
+        <li>
+          <a
+            href={localizePath(locale, '/')}
+            class:list={[
+              'inline-flex rounded-md border px-2 py-1 transition-colors',
+              active
+                ? 'border-cyan-600 bg-cyan-50 text-cyan-700'
+                : 'border-slate-300 text-slate-600 hover:border-cyan-400 hover:text-cyan-700'
+            ]}
+            aria-current={active ? 'page' : undefined}
+            lang={locale}
+          >
+            {locale.toUpperCase()} <span class="sr-only">{LOCALE_LABELS[locale]}</span>
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+</nav>

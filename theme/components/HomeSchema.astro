@@ -1,0 +1,50 @@
+---
+import type { Locale } from 'theme/i18n/locales';
+import type { FaqItem } from 'theme/i18n/translations';
+import { site, toAbsoluteUrl } from 'theme/utils/site';
+
+interface Props {
+  locale: Locale;
+  title: string;
+  description: string;
+  path: string;
+  faqs: FaqItem[];
+}
+
+const { locale, title, description, path, faqs } = Astro.props;
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: title,
+  description,
+  url: toAbsoluteUrl(path),
+  inLanguage: locale,
+  publisher: {
+    '@type': 'Organization',
+    name: site.brandName,
+    url: site.baseUrl
+  }
+};
+
+const visibleFaqs = faqs.filter((item) => item.display !== false);
+
+const faqSchema =
+  visibleFaqs.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: visibleFaqs.map((item) => ({
+          '@type': 'Question',
+          name: item.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: item.answer
+          }
+        }))
+      }
+    : null;
+---
+
+<script is:inline type="application/ld+json" set:html={JSON.stringify(websiteSchema)}></script>
+{faqSchema && <script is:inline type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>}

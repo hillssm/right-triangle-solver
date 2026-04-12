@@ -1,0 +1,117 @@
+﻿---
+import { getCollection } from 'astro:content';
+import {
+  DEFAULT_LOCALE,
+  SUPPORTED_LOCALES,
+  localizePath
+} from 'theme/i18n/locales';
+import { getTranslations, pick } from 'theme/i18n/translations';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import { toAbsoluteUrl } from 'theme/utils/site';
+
+const locale = DEFAULT_LOCALE;
+const bundle = getTranslations(locale);
+const content = bundle.content as Record<string, unknown>;
+const sitemapText = (content.sitemap as Record<string, string>) ?? {};
+
+const PAGE_SIZE = 12;
+
+const pageFiles = Object.keys(import.meta.glob('/src/pages/**/*.astro'));
+
+function fileToRoute(filePath: string): string | null {
+  let route = filePath.replace('/src/pages', '').replace('.astro', '');
+
+  if (route.includes('[')) {
+    return null;
+  }
+
+  if (route === '/404') {
+    return null;
+  }
+
+  if (route.endsWith('/index')) {
+    route = route.slice(0, -6) || '/';
+  }
+
+  if (!route.startsWith('/')) {
+    route = `/${route}`;
+  }
+
+  if (route !== '/' && !route.endsWith('/')) {
+    route = `${route}/`;
+  }
+
+  return route;
+}
+
+const staticPages = Array.from(
+  new Set(
+    pageFiles
+      .map(fileToRoute)
+      .filter((route): route is string => Boolean(route))
+      .sort()
+  )
+);
+
+const localeHomes = SUPPORTED_LOCALES.map((supportedLocale) =>
+  localizePath(supportedLocale, '/')
+);
+
+const blogPosts = (await getCollection('blog')).map((post) => `/blog/${post.id}/`);
+const blogTotalPages = Math.max(Math.ceil(blogPosts.length / PAGE_SIZE), 1);
+const blogPagination = Array.from({ length: Math.max(blogTotalPages - 1, 0) }, (_, index) => {
+  const page = index + 2;
+  return `/blog/${page}/`;
+});
+---
+
+<BaseLayout
+  locale={locale}
+  title={pick(sitemapText, 'title', 'Sitemap')}
+  description={pick(sitemapText, 'description', 'Website sitemap')}
+  canonicalPath="/sitemap/"
+>
+  <section class="section-shell">
+    <h1 class="text-3xl font-bold sm:text-4xl">{pick(sitemapText, 'heading', 'Sitemap')}</h1>
+    <p class="mt-3 text-slate-600">{pick(sitemapText, 'description', 'Browse all major routes.')}</p>
+  </section>
+
+  <div class="mt-8 grid gap-6 lg:grid-cols-2">
+    <section class="surface-card">
+      <h2 class="text-lg font-semibold">Static Pages</h2>
+      <ul class="mt-3 space-y-2 text-sm text-cyan-700">
+        {staticPages.map((route) => (
+          <li><a href={route} class="hover:text-cyan-600">{toAbsoluteUrl(route)}</a></li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="surface-card">
+      <h2 class="text-lg font-semibold">Localized Home Routes</h2>
+      <ul class="mt-3 space-y-2 text-sm text-cyan-700">
+        {localeHomes.map((route) => (
+          <li><a href={route} class="hover:text-cyan-600">{toAbsoluteUrl(route)}</a></li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="surface-card">
+      <h2 class="text-lg font-semibold">Blog Posts</h2>
+      <ul class="mt-3 max-h-72 space-y-2 overflow-auto text-sm text-cyan-700">
+        {blogPosts.map((route) => (
+          <li><a href={route} class="hover:text-cyan-600">{toAbsoluteUrl(route)}</a></li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="surface-card">
+      <h2 class="text-lg font-semibold">Blog Pagination</h2>
+      <ul class="mt-3 space-y-2 text-sm text-cyan-700">
+        <li><a href="/blog/" class="hover:text-cyan-600">{toAbsoluteUrl('/blog/')}</a></li>
+        {blogPagination.map((route) => (
+          <li><a href={route} class="hover:text-cyan-600">{toAbsoluteUrl(route)}</a></li>
+        ))}
+      </ul>
+    </section>
+  </div>
+</BaseLayout>

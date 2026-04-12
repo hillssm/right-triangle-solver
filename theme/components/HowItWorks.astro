@@ -1,0 +1,33 @@
+﻿---
+interface Props {
+  heading: string;
+}
+
+const { heading } = Astro.props;
+---
+
+<section id="how-it-works" class="section-shell">
+  <h2 class="text-2xl font-bold sm:text-3xl">{heading}</h2>
+  <div class="mt-6 grid gap-4 sm:grid-cols-3">
+    <slot>
+      <article class="surface-card">
+        <h3 class="text-base font-semibold">1. Enter known sides</h3>
+        <p class="mt-2 text-sm text-slate-600">
+          Add the two leg values from your problem statement.
+        </p>
+      </article>
+      <article class="surface-card">
+        <h3 class="text-base font-semibold">2. Solve instantly</h3>
+        <p class="mt-2 text-sm text-slate-600">
+          The calculator applies the Pythagorean theorem and derived formulas.
+        </p>
+      </article>
+      <article class="surface-card">
+        <h3 class="text-base font-semibold">3. Validate your work</h3>
+        <p class="mt-2 text-sm text-slate-600">
+          Compare computed values with your handwritten solution steps.
+        </p>
+      </article>
+    </slot>
+  </div>
+</section>

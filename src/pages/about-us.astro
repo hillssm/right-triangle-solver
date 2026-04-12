@@ -1,0 +1,23 @@
+﻿---
+import { DEFAULT_LOCALE } from 'theme/i18n/locales';
+import { getTranslations, pick } from 'theme/i18n/translations';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+
+const locale = DEFAULT_LOCALE;
+const bundle = getTranslations(locale);
+const content = bundle.content as Record<string, unknown>;
+const about = (content.about as Record<string, string>) ?? {};
+---
+
+<BaseLayout
+  locale={locale}
+  title={pick(about, 'title', 'About Us')}
+  description={pick(about, 'description', 'About this project')}
+  canonicalPath="/about-us/"
+  schemaPage="about"
+>
+  <article class="section-shell prose-shell">
+    <h1 class="text-3xl font-bold sm:text-4xl">{pick(about, 'heading', 'About Us')}</h1>
+    <p class="mt-4 text-slate-700">{pick(about, 'body', 'We built this site to simplify geometry.')}</p>
+  </article>
+</BaseLayout>

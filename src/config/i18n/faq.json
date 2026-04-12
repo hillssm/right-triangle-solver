@@ -1,0 +1,31 @@
+{
+  "en": [
+    {
+      "question": "What values does this solver calculate?",
+      "answer": "Given two legs, the tool computes hypotenuse, area, and perimeter using standard right-triangle formulas.",
+      "display": true
+    },
+    {
+      "question": "Can I use this for homework checks?",
+      "answer": "Yes. It is designed for study and review. For graded work, always show your own steps and reasoning.",
+      "display": true
+    },
+    {
+      "question": "Does it support units?",
+      "answer": "Use any consistent unit system. The outputs follow the same unit scale you provide in the inputs.",
+      "display": true
+    },
+    {
+      "question": "Hidden FAQ Example",
+      "answer": "This entry is intentionally hidden with display=false.",
+      "display": false
+    }
+  ],
+  "ar": [
+    {
+      "question": "Does Arabic locale use RTL?",
+      "answer": "Yes. The Arabic route switches html dir to rtl automatically.",
+      "display": true
+    }
+  ]
+}

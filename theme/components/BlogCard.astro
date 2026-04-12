@@ -1,0 +1,31 @@
+﻿---
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+  href: string;
+  ctaLabel: string;
+}
+
+const { title, description, image, href, ctaLabel } = Astro.props;
+---
+
+<article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+  <a href={href} class="block" aria-label={title}>
+    <img
+      src={image}
+      alt={title}
+      loading="lazy"
+      class="h-48 w-full object-cover"
+    />
+  </a>
+  <div class="space-y-3 p-5">
+    <h2 class="text-lg font-semibold leading-tight text-slate-900">
+      <a href={href} class="hover:text-cyan-700">{title}</a>
+    </h2>
+    <p class="text-sm leading-relaxed text-slate-600">{description}</p>
+    <a href={href} class="inline-flex text-sm font-semibold text-cyan-700 hover:text-cyan-600">
+      {ctaLabel}
+    </a>
+  </div>
+</article>

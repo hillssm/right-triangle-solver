@@ -1,0 +1,79 @@
+﻿---
+import ChartTableSection from 'theme/components/ChartTableSection.astro';
+import Faq from 'theme/components/Faq.astro';
+import HomeSchema from 'theme/components/HomeSchema.astro';
+import HowItWorks from 'theme/components/HowItWorks.astro';
+import RightTriangleTool from 'theme/components/RightTriangleTool.astro';
+import {
+  getLocaleFromParams,
+  getLocaleStaticPaths,
+  localizePath
+} from 'theme/i18n/locales';
+import { getTranslations, pick } from 'theme/i18n/translations';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
+
+const locale = getLocaleFromParams(Astro.params.locale);
+const bundle = getTranslations(locale);
+const content = bundle.content as Record<string, unknown>;
+const home = (content.home as Record<string, string>) ?? {};
+const siteContent = (content.site as Record<string, string>) ?? {};
+
+const siteTitle = pick(siteContent, 'title', 'Right Triangle Solver');
+const pageTitle = pick(home, 'title', `${siteTitle} | Geometry`);
+const pageDescription = pick(
+  home,
+  'description',
+  'Solve right triangles quickly with formulas and examples.'
+);
+
+const rows = [
+  { label: 'Legs 3 and 4', value: '5.000', ratio: 5 },
+  { label: 'Legs 5 and 12', value: '13.000', ratio: 13 },
+  { label: 'Legs 8 and 15', value: '17.000', ratio: 17 }
+];
+
+const localizedPath = localizePath(locale, '/');
+---
+
+<BaseLayout
+  locale={locale}
+  title={pageTitle}
+  description={pageDescription}
+  canonicalPath={localizedPath}
+>
+  <HomeSchema
+    slot="head"
+    locale={locale}
+    title={pageTitle}
+    description={pageDescription}
+    path={localizedPath}
+    faqs={bundle.faq}
+  />
+
+  <section class="section-shell space-y-4">
+    <h1 class="text-3xl font-bold sm:text-4xl">{pick(home, 'heading', siteTitle)}</h1>
+    <p class="max-w-2xl text-base leading-relaxed text-slate-600">
+      {pick(home, 'intro', 'Solve right triangle geometry problems without guesswork.')}
+    </p>
+  </section>
+
+  <div class="mt-8 space-y-8">
+    <RightTriangleTool
+      heading={pick(home, 'toolHeading', 'Triangle Tool')}
+      description={pick(home, 'toolDescription', 'Calculate triangle values in seconds.')}
+    />
+
+    <HowItWorks heading={pick(home, 'howHeading', `How ${siteTitle} works`)} />
+
+    <ChartTableSection
+      heading={pick(home, 'chartHeading', 'Reference Values')}
+      rows={rows}
+    />
+
+    <Faq heading={pick(home, 'faqHeading', 'Frequently Asked Questions')} items={bundle.faq} />
+  </div>
+</BaseLayout>

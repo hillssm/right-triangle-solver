@@ -1,0 +1,69 @@
+﻿---
+interface Props {
+  currentPage: number;
+  totalPages: number;
+  basePath: string;
+  previousLabel: string;
+  nextLabel: string;
+}
+
+const {
+  currentPage,
+  totalPages,
+  basePath,
+  previousLabel,
+  nextLabel
+} = Astro.props;
+
+const pageNumbers = Array.from({ length: totalPages }, (_, index) => index + 1);
+
+function pageHref(page: number): string {
+  if (page <= 1) {
+    return basePath;
+  }
+  return `${basePath}${page}/`;
+}
+---
+
+<nav class="mt-10 flex flex-wrap items-center justify-center gap-2" aria-label="Pagination">
+  <a
+    href={currentPage > 1 ? pageHref(currentPage - 1) : undefined}
+    class:list={[
+      'rounded-lg border px-3 py-2 text-sm',
+      currentPage > 1
+        ? 'border-slate-300 text-slate-700 hover:border-cyan-500 hover:text-cyan-700'
+        : 'pointer-events-none border-slate-200 text-slate-400'
+    ]}
+    aria-disabled={currentPage > 1 ? 'false' : 'true'}
+  >
+    {previousLabel}
+  </a>
+
+  {pageNumbers.map((page) => (
+    <a
+      href={pageHref(page)}
+      class:list={[
+        'rounded-lg border px-3 py-2 text-sm',
+        page === currentPage
+          ? 'border-cyan-600 bg-cyan-50 text-cyan-700'
+          : 'border-slate-300 text-slate-700 hover:border-cyan-500 hover:text-cyan-700'
+      ]}
+      aria-current={page === currentPage ? 'page' : undefined}
+    >
+      {page}
+    </a>
+  ))}
+
+  <a
+    href={currentPage < totalPages ? pageHref(currentPage + 1) : undefined}
+    class:list={[
+      'rounded-lg border px-3 py-2 text-sm',
+      currentPage < totalPages
+        ? 'border-slate-300 text-slate-700 hover:border-cyan-500 hover:text-cyan-700'
+        : 'pointer-events-none border-slate-200 text-slate-400'
+    ]}
+    aria-disabled={currentPage < totalPages ? 'false' : 'true'}
+  >
+    {nextLabel}
+  </a>
+</nav>

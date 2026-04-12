@@ -20,6 +20,9 @@ interface Props {
   noindex?: boolean;
   ogType?: 'website' | 'article';
   schemaPage?: 'about' | 'contact' | null;
+  hideHeader?: boolean;
+  hideFooter?: boolean;
+  mainClass?: string;
 }
 
 const {
@@ -29,7 +32,10 @@ const {
   canonicalPath,
   noindex = false,
   ogType = 'website',
-  schemaPage = null
+  schemaPage = null,
+  hideHeader = false,
+  hideFooter = false,
+  mainClass = 'mx-auto w-full max-w-[1200px] px-4 py-8 sm:px-6 lg:px-8'
 } = Astro.props;
 
 const bundle = getTranslations(locale);
@@ -117,6 +123,15 @@ const footerCommonLabels = {
     <meta name="robots" content={robots} />
     <meta name="googlebot" content={googlebot} />
 
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    />
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
 
@@ -151,24 +166,28 @@ const footerCommonLabels = {
     <slot name="head" />
   </head>
   <body class="text-slate-800">
-    <Header
-      locale={locale}
-      siteTitle={pick(localizedSite, 'title', site.brandName)}
-      logo={site.logo}
-      navLabels={commonNav}
-    />
+    {!hideHeader && (
+      <Header
+        locale={locale}
+        siteTitle={pick(localizedSite, 'title', site.brandName)}
+        logo={site.logo}
+        navLabels={commonNav}
+      />
+    )}
 
-    <main class="mx-auto w-full max-w-[1200px] px-4 py-8 sm:px-6 lg:px-8">
+    <main class={mainClass}>
       <slot />
     </main>
 
-    <Footer
-      locale={locale}
-      siteTitle={pick(localizedSite, 'title', site.brandName)}
-      logo={site.logo}
-      description={pick(localizedFooter, 'description', site.description)}
-      navLabels={commonNav}
-      commonLabels={footerCommonLabels}
-    />
+    {!hideFooter && (
+      <Footer
+        locale={locale}
+        siteTitle={pick(localizedSite, 'title', site.brandName)}
+        logo={site.logo}
+        description={pick(localizedFooter, 'description', site.description)}
+        navLabels={commonNav}
+        commonLabels={footerCommonLabels}
+      />
+    )}
   </body>
 </html>

@@ -1,0 +1,12 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 42" role="img" aria-label="Right Triangle Solver logo">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0e7490"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="38" height="38" rx="8" fill="url(#g)"/>
+  <path d="M11 30 L11 13 L29 30 Z" fill="#ecfeff"/>
+  <path d="M12 29 L29 29" stroke="#67e8f9" stroke-width="2"/>
+  <text x="48" y="27" fill="#0f172a" font-size="16" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Right Triangle Solver</text>
+</svg>

@@ -29,6 +29,8 @@ const pageDescription = pick(
 
 const localizedPath = localizePath(locale, '/');
 const localizedLibraryPath = localizePath(locale, '/library/');
+const localizedPracticePath = localizePath(locale, '/practice/');
+const localizedFormulasPath = localizePath(locale, '/formulas/');
 ---
 
 <BaseLayout
@@ -53,5 +55,7 @@ const localizedLibraryPath = localizePath(locale, '/library/');
     title={pick(home, 'heading', siteTitle)}
     solverHref={localizedPath}
     libraryHref={localizedLibraryPath}
+    practiceHref={localizedPracticePath}
+    formulasHref={localizedFormulasPath}
   />
 </BaseLayout>

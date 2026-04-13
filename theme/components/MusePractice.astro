@@ -1,0 +1,250 @@
+---
+interface Props {
+  solverHref?: string;
+  libraryHref?: string;
+  practiceHref?: string;
+  formulasHref?: string;
+}
+
+const {
+  solverHref = '/',
+  libraryHref = '/library/',
+  practiceHref = '/practice/',
+  formulasHref = '/formulas/'
+} = Astro.props;
+---
+
+<div class="dark bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+  <div class="flex min-h-screen">
+    <aside class="fixed top-0 left-0 hidden h-screen w-64 flex-col border-r border-[#3c494c]/15 bg-[#0d1c32] py-6 md:flex">
+      <div class="mb-10 px-6">
+        <h1 class="text-xl font-headline text-primary">The Muse</h1>
+        <p class="font-label text-[10px] uppercase tracking-[0.2em] text-slate-400 opacity-70">Precision Solver</p>
+      </div>
+
+      <nav class="flex-1 space-y-2 px-4" aria-label="Workspace navigation">
+        <a class="flex items-center gap-3 rounded-lg px-4 py-3 text-slate-400 transition-all duration-300 ease-in-out hover:bg-[#1c2a41] hover:text-slate-100" href={solverHref}>
+          <span class="material-symbols-outlined">calculate</span>
+          <span class="font-label text-sm tracking-wide">Solver</span>
+        </a>
+        <a class="flex items-center gap-3 rounded-lg px-4 py-3 text-slate-400 transition-all duration-300 ease-in-out hover:bg-[#1c2a41] hover:text-slate-100" href={libraryHref}>
+          <span class="material-symbols-outlined">menu_book</span>
+          <span class="font-label text-sm tracking-wide">Library</span>
+        </a>
+        <a
+          class="flex items-center gap-3 border-l-2 border-primary bg-[#1c2a41] px-4 py-3 text-primary transition-all duration-300 ease-in-out"
+          href={practiceHref}
+        >
+          <span class="material-symbols-outlined">edit_note</span>
+          <span class="font-label text-sm tracking-wide">Practice</span>
+        </a>
+        <a class="flex items-center gap-3 rounded-lg px-4 py-3 text-slate-400 transition-all duration-300 ease-in-out hover:bg-[#1c2a41] hover:text-slate-100" href={formulasHref}>
+          <span class="material-symbols-outlined">functions</span>
+          <span class="font-label text-sm tracking-wide">Formulas</span>
+        </a>
+      </nav>
+
+      <div class="mt-auto space-y-2 border-t border-outline-variant/10 px-4 pt-6">
+        <button class="button-gradient mb-6 flex w-full items-center justify-center gap-2 rounded-lg py-3 font-bold text-on-primary shadow-lg" type="button">
+          <span class="material-symbols-outlined">add</span>
+          <span class="font-label text-sm">New Proof</span>
+        </button>
+        <a class="flex items-center gap-3 px-4 py-2 text-slate-400 transition-colors hover:text-slate-100" href="#">
+          <span class="material-symbols-outlined text-sm">settings</span>
+          <span class="font-label text-xs uppercase tracking-widest">Settings</span>
+        </a>
+        <a class="flex items-center gap-3 px-4 py-2 text-slate-400 transition-colors hover:text-slate-100" href="#">
+          <span class="material-symbols-outlined text-sm">help</span>
+          <span class="font-label text-xs uppercase tracking-widest">Support</span>
+        </a>
+      </div>
+    </aside>
+
+    <main class="flex-1 bg-background md:ml-64">
+      <header class="sticky top-0 z-30 flex h-16 w-full items-center justify-between bg-[#041329] px-8">
+        <div class="flex items-center gap-2">
+          <span class="text-2xl font-headline tracking-tight text-primary">Mathematical Muse</span>
+        </div>
+        <div class="flex items-center gap-6">
+          <div class="hidden items-center gap-2 rounded-full border border-outline-variant/10 bg-surface-container-low px-4 py-1.5 md:flex">
+            <span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+            <span class="font-label text-xs text-on-surface">12 DAY STREAK</span>
+          </div>
+          <button class="text-sm font-bold text-primary transition-colors duration-300 hover:underline" type="button">Go Premium</button>
+          <span class="material-symbols-outlined cursor-pointer text-slate-200">account_circle</span>
+        </div>
+      </header>
+
+      <div class="mx-auto max-w-6xl p-8">
+        <div class="mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <div>
+            <span class="mb-2 block font-label text-xs uppercase tracking-[0.3em] text-primary">Daily Challenge</span>
+            <h2 class="text-4xl leading-tight font-headline text-secondary">The Pythagorean Shadow</h2>
+            <p class="mt-2 max-w-md text-sm font-body italic text-slate-400">
+              Calculate the unknown side 'c' given the adjacent and opposite lengths.
+            </p>
+          </div>
+
+          <div class="flex items-center gap-8 rounded-xl border-l-4 border-primary bg-surface-container-low p-6">
+            <div class="flex flex-col">
+              <span class="font-label text-[10px] uppercase tracking-widest text-slate-500">Progress</span>
+              <div class="mt-1 flex items-center gap-3">
+                <div class="h-1 w-32 overflow-hidden rounded-full bg-surface-container-highest">
+                  <div class="h-full w-[65%] bg-primary"></div>
+                </div>
+                <span class="font-label text-xs text-primary">65%</span>
+              </div>
+            </div>
+
+            <div class="h-10 w-px bg-outline-variant/20"></div>
+
+            <div class="flex flex-col">
+              <span class="font-label text-[10px] uppercase tracking-widest text-slate-500">Rank</span>
+              <span class="text-lg font-headline text-secondary">Initiate</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-12">
+          <div class="group relative overflow-hidden rounded-xl bg-surface-container-low p-12 lg:col-span-7">
+            <div
+              class="pointer-events-none absolute inset-0 opacity-[0.03]"
+              style="background-image: radial-gradient(#00daf3 1px, transparent 1px); background-size: 24px 24px;"
+            ></div>
+
+            <div class="relative flex aspect-video w-full items-center justify-center">
+              <svg class="w-full max-w-md drop-shadow-2xl" viewBox="0 0 400 300">
+                <path class="text-primary opacity-80" d="M 50 250 L 350 250 L 350 50 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"></path>
+                <rect class="text-outline-variant" x="330" y="230" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"></rect>
+                <text class="fill-secondary font-bold" x="200" y="275" font-family="Space Grotesk" font-size="16">a = 12</text>
+                <text class="fill-secondary font-bold" x="365" y="150" font-family="Space Grotesk" font-size="16">b = 9</text>
+                <text class="fill-primary font-bold italic" x="180" y="140" font-family="Space Grotesk" font-size="20" transform="rotate(-33, 180, 140)">c = ?</text>
+                <circle class="fill-primary" cx="50" cy="250" r="4"></circle>
+                <circle class="fill-primary" cx="350" cy="250" r="4"></circle>
+                <circle class="fill-primary" cx="350" cy="50" r="4"></circle>
+              </svg>
+            </div>
+
+            <div class="glass-panel absolute right-6 bottom-6 left-6 flex items-center justify-between rounded-lg border border-outline-variant/10 p-4">
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-tertiary">lightbulb</span>
+                <p class="text-xs text-slate-300 font-body">
+                  Recall: <span class="ml-1 text-sm italic font-headline">a^2 + b^2 = c^2</span>
+                </p>
+              </div>
+              <button class="font-label text-[10px] uppercase tracking-widest text-primary transition-colors hover:text-secondary-container" type="button">
+                Show Derivation
+              </button>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-6 lg:col-span-5">
+            <div class="rounded-xl border-b-4 border-primary/30 bg-surface-container-highest p-8">
+              <label class="mb-4 block font-label text-xs uppercase tracking-widest text-slate-400">Your Solution</label>
+              <div class="group relative">
+                <input
+                  class="w-full border-none border-b-2 border-outline-variant bg-transparent pb-4 text-5xl font-headline text-primary placeholder:text-slate-700 transition-all focus:border-primary focus:ring-0"
+                  type="text"
+                  placeholder="Enter value..."
+                />
+                <div class="absolute right-0 bottom-6 flex items-center gap-2">
+                  <span class="font-label text-xs text-slate-500">UNITS:</span>
+                  <span class="text-lg font-headline text-secondary">cm</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-3 rounded-xl bg-surface-container-low p-6">
+              <button class="h-14 rounded-lg bg-surface-container-highest text-xl text-secondary transition-all duration-300 hover:bg-primary hover:text-on-primary" type="button">7</button>
+              <button class="h-14 rounded-lg bg-surface-container-highest text-xl text-secondary transition-all duration-300 hover:bg-primary hover:text-on-primary" type="button">8</button>
+              <button class="h-14 rounded-lg bg-surface-container-highest text-xl text-secondary transition-all duration-300 hover:bg-primary hover:text-on-primary" type="button">9</button>
+              <button class="h-14 rounded-lg bg-surface-container-highest text-xl text-secondary transition-all duration-300 hover:bg-primary hover:text-on-primary" type="button">4</button>
+              <button class="h-14 rounded-lg bg-surface-container-highest text-xl text-secondary transition-all duration-300 hover:bg-primary hover:text-on-primary" type="button">5</button>
+              <button class="h-14 rounded-lg bg-surface-container-highest text-xl text-secondary transition-all duration-300 hover:bg-primary hover:text-on-primary" type="button">6</button>
+              <button class="h-14 rounded-lg bg-surface-container-highest text-xl text-secondary transition-all duration-300 hover:bg-primary hover:text-on-primary" type="button">1</button>
+              <button class="h-14 rounded-lg bg-surface-container-highest text-xl text-secondary transition-all duration-300 hover:bg-primary hover:text-on-primary" type="button">2</button>
+              <button class="h-14 rounded-lg bg-surface-container-highest text-xl text-secondary transition-all duration-300 hover:bg-primary hover:text-on-primary" type="button">3</button>
+              <button class="h-14 rounded-lg bg-surface-container-highest text-xl text-secondary transition-all duration-300 hover:bg-primary hover:text-on-primary" type="button">.</button>
+              <button class="h-14 rounded-lg bg-surface-container-highest text-xl text-secondary transition-all duration-300 hover:bg-primary hover:text-on-primary" type="button">0</button>
+              <button class="h-14 rounded-lg bg-surface-container-highest text-xl text-error transition-all duration-300 hover:bg-error-container" type="button">
+                <span class="material-symbols-outlined">backspace</span>
+              </button>
+              <button class="button-gradient col-span-3 mt-4 flex h-16 items-center justify-center gap-3 rounded-lg font-label font-bold uppercase tracking-widest text-on-primary transition-transform active:scale-[0.98]" type="button">
+                <span>Check Answer</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-4">
+          <div class="rounded-xl border border-outline-variant/10 bg-surface-container-low p-5">
+            <span class="mb-1 block font-label text-[10px] uppercase tracking-widest text-slate-500">Difficulty</span>
+            <div class="mt-2 flex gap-1">
+              <div class="h-1 w-6 rounded-full bg-secondary-container"></div>
+              <div class="h-1 w-6 rounded-full bg-secondary-container"></div>
+              <div class="h-1 w-6 rounded-full bg-outline-variant/20"></div>
+            </div>
+            <span class="mt-3 block text-xs text-secondary font-body">Moderate Level</span>
+          </div>
+
+          <div class="rounded-xl border border-outline-variant/10 bg-surface-container-low p-5">
+            <span class="mb-1 block font-label text-[10px] uppercase tracking-widest text-slate-500">Time Elapsed</span>
+            <span class="mt-1 block text-xl font-headline text-secondary">02:14</span>
+          </div>
+
+          <div class="rounded-xl border border-outline-variant/10 bg-surface-container-low p-5">
+            <span class="mb-1 block font-label text-[10px] uppercase tracking-widest text-slate-500">Accuracy</span>
+            <span class="mt-1 block text-xl font-headline text-secondary">94.2%</span>
+          </div>
+
+          <div class="relative overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-low p-5">
+            <span class="mb-1 block font-label text-[10px] uppercase tracking-widest text-slate-500">Tokens Earned</span>
+            <div class="mt-1 flex items-center gap-2">
+              <span class="text-xl font-headline text-primary-container">+450</span>
+              <span class="material-symbols-outlined text-lg text-primary-container">token</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <nav class="fixed right-0 bottom-0 left-0 z-50 flex h-16 items-center justify-around border-t border-outline-variant/10 bg-[#0d1c32] md:hidden">
+    <a class="text-slate-400" href={solverHref}>
+      <span class="material-symbols-outlined">calculate</span>
+    </a>
+    <a class="text-slate-400" href={libraryHref}>
+      <span class="material-symbols-outlined">menu_book</span>
+    </a>
+    <a class="flex flex-col items-center text-primary" href={practiceHref}>
+      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">edit_note</span>
+      <span class="text-[8px] font-label font-bold uppercase tracking-tighter">Practice</span>
+    </a>
+    <a class="text-slate-400" href={formulasHref}>
+      <span class="material-symbols-outlined">functions</span>
+    </a>
+    <a class="text-slate-400" href="#">
+      <span class="material-symbols-outlined">settings</span>
+    </a>
+  </nav>
+
+  <div class="pointer-events-none fixed top-0 right-0 -z-10 h-screen w-1/2 opacity-20">
+    <div
+      class="absolute top-0 right-0 h-full w-full"
+      style="background: radial-gradient(circle at top right, #00daf322 0%, transparent 70%);"
+    ></div>
+  </div>
+</div>
+
+<style>
+  .button-gradient {
+    background: linear-gradient(135deg, #00daf3 0%, #00bcd2 100%);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #00daf3 0%, #00bcd2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>

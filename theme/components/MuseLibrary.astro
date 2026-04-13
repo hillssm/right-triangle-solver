@@ -2,9 +2,16 @@
 interface Props {
   solverHref?: string;
   libraryHref?: string;
+  practiceHref?: string;
+  formulasHref?: string;
 }
 
-const { solverHref = '/', libraryHref = '/library/' } = Astro.props;
+const {
+  solverHref = '/',
+  libraryHref = '/library/',
+  practiceHref = '/practice/',
+  formulasHref = '/formulas/'
+} = Astro.props;
 ---
 
 <div class="dark min-h-screen bg-background text-on-background font-body flex overflow-hidden">
@@ -31,17 +38,17 @@ const { solverHref = '/', libraryHref = '/library/' } = Astro.props;
       </a>
       <a
         class="flex items-center px-8 py-3 text-slate-400 transition-all duration-300 ease-in-out hover:bg-[#1c2a41] hover:text-slate-100"
-        href="#"
+        href={practiceHref}
       >
         <span class="material-symbols-outlined mr-4">edit_note</span>
         <span class="font-label text-sm tracking-wide">Practice</span>
       </a>
       <a
         class="flex items-center px-8 py-3 text-slate-400 transition-all duration-300 ease-in-out hover:bg-[#1c2a41] hover:text-slate-100"
-        href="#"
+        href={formulasHref}
       >
-        <span class="material-symbols-outlined mr-4">history</span>
-        <span class="font-label text-sm tracking-wide">History</span>
+        <span class="material-symbols-outlined mr-4">functions</span>
+        <span class="font-label text-sm tracking-wide">Formulas</span>
       </a>
     </nav>
 
@@ -283,13 +290,13 @@ const { solverHref = '/', libraryHref = '/library/' } = Astro.props;
       <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu_book</span>
       <span class="text-[10px] font-label">Library</span>
     </a>
-    <a class="flex flex-col items-center text-slate-400" href="#">
+    <a class="flex flex-col items-center text-slate-400" href={practiceHref}>
       <span class="material-symbols-outlined">edit_note</span>
       <span class="text-[10px] font-label">Practice</span>
     </a>
-    <a class="flex flex-col items-center text-slate-400" href="#">
-      <span class="material-symbols-outlined">history</span>
-      <span class="text-[10px] font-label">History</span>
+    <a class="flex flex-col items-center text-slate-400" href={formulasHref}>
+      <span class="material-symbols-outlined">functions</span>
+      <span class="text-[10px] font-label">Formulas</span>
     </a>
   </nav>
 </div>

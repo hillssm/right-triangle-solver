@@ -1,0 +1,76 @@
+---
+import { RIGHT_TRIANGLE_FORMULAS } from 'src/data/rightTriangleFormulas';
+import {
+  getLocaleFromParams,
+  getLocaleStaticPaths,
+  localizePath
+} from 'theme/i18n/locales';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
+
+const locale = getLocaleFromParams(Astro.params.locale);
+
+const groupedFormulas = RIGHT_TRIANGLE_FORMULAS.reduce<
+  Record<string, typeof RIGHT_TRIANGLE_FORMULAS>
+>((acc, item) => {
+  acc[item.category] = acc[item.category] ?? [];
+  acc[item.category].push(item);
+  return acc;
+}, {});
+
+const categoryOrder = [
+  'Core Side Relations',
+  'Area and Perimeter',
+  'Trigonometric Ratios',
+  'Inverse Angle Formulas',
+  'Derived Geometry'
+];
+const formulasRoot = localizePath(locale, '/formulas/');
+---
+
+<BaseLayout
+  locale={locale}
+  title="Right Triangle Formula Directory"
+  description="Every key right-triangle formula with separate pages and quick calculators."
+  canonicalPath={formulasRoot}
+>
+  <section class="section-shell">
+    <p class="font-label text-xs uppercase tracking-widest text-primary">Formula Hub</p>
+    <h1 class="mt-3 text-3xl font-bold sm:text-4xl">All Right Triangle Formulas</h1>
+    <p class="mt-3 max-w-3xl text-on-surface-variant">
+      Every formula has its own page with definitions, usage notes, and a quick calculator. Use this as a complete
+      reference plus practical solving toolkit.
+    </p>
+  </section>
+
+  {
+    categoryOrder.map((category) => {
+      const items = groupedFormulas[category] ?? [];
+      if (items.length === 0) return null;
+
+      return (
+        <section class="mt-8 section-shell">
+          <h2 class="text-2xl font-semibold">{category}</h2>
+          <div class="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+            {items.map((formula) => (
+              <a
+                href={`${formulasRoot}${formula.slug}/`}
+                class="surface-card block border-outline-variant/35 hover:border-primary/50 hover:bg-surface-container-high"
+              >
+                <p class="font-label text-xs uppercase tracking-widest text-primary">Formula</p>
+                <h3 class="mt-2 text-lg font-semibold">{formula.title}</h3>
+                <p class="mt-3 text-sm text-on-surface-variant">{formula.description}</p>
+                <p class="mt-4 rounded-md bg-surface-container-high px-3 py-2 font-mono text-xs text-tertiary">
+                  {formula.expression}
+                </p>
+              </a>
+            ))}
+          </div>
+        </section>
+      );
+    })
+  }
+</BaseLayout>

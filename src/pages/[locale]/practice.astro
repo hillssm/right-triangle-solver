@@ -1,0 +1,45 @@
+---
+import MusePractice from 'theme/components/MusePractice.astro';
+import {
+  getLocaleFromParams,
+  getLocaleStaticPaths,
+  localizePath
+} from 'theme/i18n/locales';
+import { getTranslations, pick } from 'theme/i18n/translations';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
+
+const locale = getLocaleFromParams(Astro.params.locale);
+const bundle = getTranslations(locale);
+const content = bundle.content as Record<string, unknown>;
+const siteContent = (content.site as Record<string, string>) ?? {};
+
+const siteTitle = pick(siteContent, 'title', 'Right Triangle Solver');
+const pageTitle = `Practice Mode | ${siteTitle}`;
+const pageDescription =
+  'Train with right triangle challenges in an interactive practice workspace with progress and keypad input.';
+const localizedSolverPath = localizePath(locale, '/');
+const localizedLibraryPath = localizePath(locale, '/library/');
+const localizedPracticePath = localizePath(locale, '/practice/');
+const localizedFormulasPath = localizePath(locale, '/formulas/');
+---
+
+<BaseLayout
+  locale={locale}
+  title={pageTitle}
+  description={pageDescription}
+  canonicalPath={localizedPracticePath}
+  hideHeader={true}
+  hideFooter={true}
+  mainClass="w-full min-h-screen p-0"
+>
+  <MusePractice
+    solverHref={localizedSolverPath}
+    libraryHref={localizedLibraryPath}
+    practiceHref={localizedPracticePath}
+    formulasHref={localizedFormulasPath}
+  />
+</BaseLayout>

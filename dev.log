@@ -136,3 +136,883 @@ Error: Failed to load url astro:server-app.js (resolved id: astro:server-app.js)
 [2m10:08:17[22m [34m[watch][39m .vercel/output/static/zh/library/index.html
 [2m10:08:25[22m [34m[200][39m / [2m5ms[22m
 [2m10:08:25[22m [34m[200][39m /library/ [2m48ms[22m
+[2m10:12:33[22m [34m[200][39m /library/ [2m12ms[22m
+[2m10:12:35[22m [34m[200][39m / [2m10ms[22m
+[2m10:12:36[22m [34m[200][39m /library/ [2m4ms[22m
+[2m10:12:41[22m [34m[200][39m / [2m6ms[22m
+[2m10:15:34[22m [34m[watch][39m /src/styles/global.css
+[2m10:15:36[22m [34m[200][39m / [2m74ms[22m
+[2m10:15:36[22m [34m[200][39m / [2m11ms[22m
+[2m10:15:41[22m [34m[watch][39m /src/styles/global.css
+[2m10:15:42[22m [34m[200][39m / [2m6ms[22m
+[2m10:15:42[22m [34m[200][39m / [2m7ms[22m
+[2m10:15:47[22m [34m[watch][39m /src/styles/global.css
+[2m10:15:47[22m [34m[200][39m / [2m57ms[22m
+[2m10:15:47[22m [34m[200][39m / [2m10ms[22m
+[vite] program reload
+[2m10:15:57[22m [34m[200][39m / [2m59ms[22m
+[2m10:15:57[22m [34m[200][39m / [2m6ms[22m
+[2m10:16:00[22m [34m[watch][39m /src/styles/global.css
+[2m10:16:01[22m [34m[200][39m / [2m15ms[22m
+[2m10:16:01[22m [34m[200][39m / [2m10ms[22m
+[vite] program reload
+[2m10:16:07[22m [34m[200][39m / [2m37ms[22m
+[2m10:16:07[22m [34m[200][39m / [2m11ms[22m
+[2m10:16:25[22m [34m[watch][39m .vercel/output/static/404.html
+[2m10:16:25[22m [34m[watch][39m .vercel/output/static/index.html
+[2m10:16:25[22m [34m[watch][39m .vercel/output/static/about-us/index.html
+[2m10:16:25[22m [34m[watch][39m .vercel/output/static/ar/index.html
+[2m10:16:25[22m [34m[watch][39m .vercel/output/static/bg/index.html
+[2m10:16:25[22m [34m[watch][39m .vercel/output/static/contact-us/index.html
+[2m10:16:25[22m [34m[watch][39m .vercel/output/static/bn/index.html
+[2m10:16:25[22m [34m[watch][39m .vercel/output/static/bn/library/index.html
+[2m10:16:25[22m [34m[watch][39m .vercel/output/static/blog/index.html
+[2m10:16:25[22m [34m[watch][39m .vercel/output/static/de/index.html
+[2m10:16:25[22m [34m[watch][39m .vercel/output/static/de/library/index.html
+[2m10:16:25[22m [34m[watch][39m .vercel/output/static/es/index.html
+[2m10:16:25[22m [34m[watch][39m .vercel/output/static/es/library/index.html
+[2m10:16:25[22m [34m[watch][39m .vercel/output/static/fr/index.html
+[2m10:16:25[22m [34m[watch][39m .vercel/output/static/hi/index.html
+[2m10:16:25[22m [34m[watch][39m .vercel/output/static/hi/library/index.html
+[2m10:16:25[22m [34m[watch][39m .vercel/output/static/fr/library/index.html
+[2m10:16:25[22m [34m[watch][39m .vercel/output/static/id/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/id/library/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/it/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/it/library/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/ja/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/ja/library/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/library/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/ko/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/pt/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/ko/library/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/pt/library/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/ms/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/privacy/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/ms/library/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/pl/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/pl/library/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/sitemap/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/ru/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/ru/library/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/terms/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/tr/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/tr/library/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/sv/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/sv/library/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/zh/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/zh/library/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/ar/library/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/blog/2/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/blog/area-memory-trick/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/blog/classic-triples/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/blog/common-input-mistakes/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/blog/drawing-better-diagrams/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/blog/engineering-use-cases/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/blog/learning-plan/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/blog/perimeter-practice/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/blog/pythagorean-basics/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/blog/quick-exam-strategy/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/blog/sanity-checking-output/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/blog/triangle-units/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/blog/teacher-workflow/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/blog/when-to-round/index.html
+[2m10:16:26[22m [34m[watch][39m .vercel/output/static/bg/library/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/404.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/about-us/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/ar/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/bg/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/blog/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/bn/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/contact-us/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/de/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/es/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/fr/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/hi/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/id/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/it/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/ja/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/ko/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/ms/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/pl/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/practice/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/privacy/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/pt/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/sitemap/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/sv/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/tr/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/ru/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/terms/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/zh/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/library/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/ar/library/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/ar/practice/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/bg/library/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/bg/practice/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/blog/2/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/blog/area-memory-trick/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/blog/common-input-mistakes/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/blog/classic-triples/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/blog/drawing-better-diagrams/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/blog/engineering-use-cases/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/blog/learning-plan/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/blog/perimeter-practice/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/blog/pythagorean-basics/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/blog/quick-exam-strategy/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/blog/sanity-checking-output/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/blog/teacher-workflow/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/blog/when-to-round/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/blog/triangle-units/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/bn/library/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/bn/practice/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/de/library/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/de/practice/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/es/library/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/es/practice/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/fr/library/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/fr/practice/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/hi/library/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/hi/practice/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/id/practice/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/id/library/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/it/library/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/it/practice/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/ja/library/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/ja/practice/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/ko/library/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/ko/practice/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/ms/library/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/ms/practice/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/pl/library/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/pt/practice/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/pl/practice/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/pt/library/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/sv/library/index.html
+[2m10:16:33[22m [34m[watch][39m .vercel/output/static/sv/practice/index.html
+[2m10:16:34[22m [34m[watch][39m .vercel/output/static/tr/library/index.html
+[2m10:16:34[22m [34m[watch][39m .vercel/output/static/tr/practice/index.html
+[2m10:16:34[22m [34m[watch][39m .vercel/output/static/ru/library/index.html
+[2m10:16:34[22m [34m[watch][39m .vercel/output/static/ru/practice/index.html
+[2m10:16:34[22m [34m[watch][39m .vercel/output/static/zh/library/index.html
+[2m10:16:34[22m [34m[watch][39m .vercel/output/static/zh/practice/index.html
+[2m10:16:42[22m [34m[200][39m / [2m8ms[22m
+[2m10:16:42[22m [34m[200][39m /library/ [2m44ms[22m
+[2m10:16:42[22m [34m[200][39m /practice/ [2m86ms[22m
+[2m10:21:16[22m [34m[200][39m /practice/ [2m6ms[22m
+[2m10:21:20[22m [34m[200][39m /practice/ [2m8ms[22m
+[2m10:21:20[22m [34m[200][39m /library/ [2m8ms[22m
+[2m10:21:22[22m [34m[200][39m / [2m8ms[22m
+[2m10:31:18[22m [34m[watch][39m /src/styles/global.css
+[vite] program reload
+[vite] An error happened during full reload
+Failed to load url /theme/components/MuseSolver.astro (resolved id: C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/theme/components/MuseSolver.astro) in C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/src/pages/index.astro. Does the file exist?
+Error: Failed to load url /theme/components/MuseSolver.astro (resolved id: C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/theme/components/MuseSolver.astro) in C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/src/pages/index.astro. Does the file exist?
+    at loadAndTransform (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:22663:33)
+    at async fetchModule (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:33997:15)
+    at async handleInvoke (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:25837:21)
+    at async EventEmitter.listenerForInvokeHandler (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:25892:13)
+[vite] program reload
+[vite] An error happened during full reload
+Failed to load url /theme/components/MuseSolver.astro (resolved id: C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/theme/components/MuseSolver.astro) in C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/src/pages/index.astro. Does the file exist?
+Error: Failed to load url /theme/components/MuseSolver.astro (resolved id: C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/theme/components/MuseSolver.astro) in C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/src/pages/index.astro. Does the file exist?
+    at loadAndTransform (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:22663:33)
+    at async fetchModule (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:33997:15)
+    at async handleInvoke (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:25837:21)
+    at async EventEmitter.listenerForInvokeHandler (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:25892:13)
+[vite] program reload
+[vite] An error happened during full reload
+Failed to load url /theme/components/MuseSolver.astro (resolved id: C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/theme/components/MuseSolver.astro) in C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/src/pages/index.astro. Does the file exist?
+Error: Failed to load url /theme/components/MuseSolver.astro (resolved id: C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/theme/components/MuseSolver.astro) in C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/src/pages/index.astro. Does the file exist?
+    at loadAndTransform (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:22663:33)
+    at async fetchModule (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:33997:15)
+    at async handleInvoke (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:25837:21)
+    at async EventEmitter.listenerForInvokeHandler (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:25892:13)
+[vite] program reload
+[vite] An error happened during full reload
+Failed to load url /theme/components/MuseSolver.astro (resolved id: C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/theme/components/MuseSolver.astro) in C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/src/pages/index.astro. Does the file exist?
+Error: Failed to load url /theme/components/MuseSolver.astro (resolved id: C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/theme/components/MuseSolver.astro) in C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/src/pages/index.astro. Does the file exist?
+    at loadAndTransform (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:22663:33)
+    at async fetchModule (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:33997:15)
+    at async handleInvoke (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:25837:21)
+    at async EventEmitter.listenerForInvokeHandler (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:25892:13)
+[vite] program reload
+[vite] An error happened during full reload
+Failed to load url /theme/components/MuseSolver.astro (resolved id: C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/theme/components/MuseSolver.astro) in C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/src/pages/index.astro. Does the file exist?
+Error: Failed to load url /theme/components/MuseSolver.astro (resolved id: C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/theme/components/MuseSolver.astro) in C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/src/pages/index.astro. Does the file exist?
+    at loadAndTransform (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:22663:33)
+    at async fetchModule (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:33997:15)
+    at async handleInvoke (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:25837:21)
+    at async EventEmitter.listenerForInvokeHandler (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:25892:13)
+[vite] program reload
+[vite] An error happened during full reload
+Failed to load url /theme/components/MuseSolver.astro (resolved id: C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/theme/components/MuseSolver.astro) in C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/src/pages/index.astro. Does the file exist?
+Error: Failed to load url /theme/components/MuseSolver.astro (resolved id: C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/theme/components/MuseSolver.astro) in C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/src/pages/index.astro. Does the file exist?
+    at loadAndTransform (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:22663:33)
+    at async fetchModule (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:33997:15)
+    at async handleInvoke (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:25837:21)
+    at async EventEmitter.listenerForInvokeHandler (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:25892:13)
+[vite] program reload
+[vite] An error happened during full reload
+Failed to load url /theme/components/MuseSolver.astro (resolved id: C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/theme/components/MuseSolver.astro) in C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/src/pages/index.astro. Does the file exist?
+Error: Failed to load url /theme/components/MuseSolver.astro (resolved id: C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/theme/components/MuseSolver.astro) in C:/Users/Lenovo/OneDrive/Documents/GitHub/right triangle solver/src/pages/index.astro. Does the file exist?
+    at loadAndTransform (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:22663:33)
+    at async fetchModule (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:33997:15)
+    at async handleInvoke (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:25837:21)
+    at async EventEmitter.listenerForInvokeHandler (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:25892:13)
+[2m10:34:53[22m [34m[watch][39m /src/styles/global.css
+[2m10:34:54[22m [34m[200][39m / [2m93ms[22m
+[2m10:34:54[22m [34m[200][39m / [2m16ms[22m
+[2m10:34:54[22m [34m[200][39m / [2m7ms[22m
+[vite] program reload
+[2m10:36:02[22m [34m[watch][39m /src/styles/global.css
+[2m10:36:04[22m [34m[200][39m / [2m66ms[22m
+[2m10:36:04[22m [34m[200][39m / [2m6ms[22m
+[2m10:36:04[22m [34m[200][39m / [2m8ms[22m
+[2m10:37:04[22m [34m[watch][39m /src/styles/global.css
+[2m10:37:05[22m [34m[200][39m / [2m56ms[22m
+[2m10:37:05[22m [34m[200][39m / [2m7ms[22m
+[2m10:37:05[22m [34m[200][39m / [2m40ms[22m
+[vite] program reload
+[2m10:37:24[22m [34m[200][39m / [2m47ms[22m
+[2m10:37:24[22m [34m[200][39m / [2m11ms[22m
+[2m10:37:24[22m [34m[200][39m / [2m10ms[22m
+[2m10:38:07[22m [34m[200][39m / [2m9ms[22m
+[2m10:38:07[22m [34m[200][39m / [2m7ms[22m
+[2m10:38:07[22m [34m[200][39m / [2m7ms[22m
+[vite] program reload
+[2m10:38:09[22m [34m[200][39m / [2m53ms[22m
+[2m10:38:10[22m [34m[200][39m / [2m8ms[22m
+[2m10:38:10[22m [34m[200][39m / [2m9ms[22m
+[vite] program reload
+[2m10:38:39[22m [34m[200][39m / [2m47ms[22m
+[2m10:38:39[22m [34m[200][39m / [2m7ms[22m
+[2m10:38:39[22m [34m[200][39m / [2m8ms[22m
+[vite] program reload
+[vite] program reload
+[2m10:38:51[22m [34m[200][39m / [2m71ms[22m
+[2m10:38:51[22m [34m[200][39m / [2m9ms[22m
+[2m10:38:51[22m [34m[200][39m / [2m10ms[22m
+[2m10:38:52[22m [34m[watch][39m /src/styles/global.css
+[vite] program reload
+[2m10:38:58[22m [34m[200][39m / [2m88ms[22m
+[2m10:38:58[22m [34m[200][39m / [2m12ms[22m
+[2m10:38:59[22m [34m[200][39m / [2m16ms[22m
+[2m10:38:59[22m [34m[200][39m / [2m8ms[22m
+[2m10:39:20[22m [34m[watch][39m /src/styles/global.css
+[2m10:39:21[22m [34m[200][39m / [2m10ms[22m
+[vite] program reload
+[2m10:39:21[22m [34m[200][39m / [2m48ms[22m
+[vite] program reload
+[2m10:39:22[22m [34m[200][39m / [2m325ms[22m
+[2m10:39:22[22m [34m[200][39m / [2m325ms[22m
+[vite] program reload
+[vite] program reload
+[2m10:39:23[22m [34m[200][39m / [2m49ms[22m
+[2m10:39:23[22m [34m[200][39m / [2m9ms[22m
+[2m10:39:33[22m [34m[watch][39m /src/styles/global.css, /theme/components/MusePractice.astro?astro&type=style&index=0&lang.css
+[vite] program reload
+[2m10:39:33[22m [34m[200][39m / [2m53ms[22m
+[2m10:39:34[22m [34m[200][39m / [2m7ms[22m
+[2m10:39:34[22m [34m[200][39m / [2m7ms[22m
+[vite] program reload
+[vite] program reload
+[2m10:39:36[22m [34m[200][39m / [2m45ms[22m
+[2m10:39:36[22m [34m[200][39m / [2m6ms[22m
+[vite] program reload
+[vite] program reload
+[2m10:39:37[22m [34m[200][39m / [2m44ms[22m
+[vite] program reload
+[2m10:39:38[22m [34m[200][39m / [2m49ms[22m
+[vite] program reload
+[2m10:39:40[22m [34m[200][39m / [2m51ms[22m
+[2m10:39:40[22m [34m[200][39m / [2m7ms[22m
+[2m10:39:41[22m [34m[watch][39m /src/styles/global.css
+[vite] program reload
+[2m10:39:43[22m [34m[200][39m / [2m115ms[22m
+[2m10:39:43[22m [34m[200][39m / [2m7ms[22m
+[2m10:39:44[22m [34m[200][39m / [2m6ms[22m
+[2m10:39:49[22m [34m[watch][39m /src/styles/global.css
+[2m10:39:49[22m [34m[200][39m / [2m20ms[22m
+[vite] program reload
+[2m10:39:49[22m [34m[200][39m / [2m40ms[22m
+[2m10:39:49[22m [34m[200][39m / [2m40ms[22m
+[2m10:39:50[22m [34m[200][39m / [2m13ms[22m
+[vite] program reload
+[2m10:39:52[22m [34m[200][39m / [2m91ms[22m
+[2m10:39:53[22m [34m[200][39m / [2m7ms[22m
+[2m10:39:53[22m [34m[200][39m / [2m6ms[22m
+[2m10:39:55[22m [34m[watch][39m /src/styles/global.css
+[vite] program reload
+[2m10:39:56[22m [34m[200][39m / [2m499ms[22m
+[2m10:39:56[22m [34m[200][39m / [2m29ms[22m
+[2m10:39:56[22m [34m[200][39m / [2m6ms[22m
+[2m10:39:56[22m [34m[200][39m / [2m9ms[22m
+[vite] program reload
+[2m10:39:59[22m [34m[200][39m / [2m47ms[22m
+[2m10:39:59[22m [34m[200][39m / [2m8ms[22m
+[2m10:39:59[22m [34m[200][39m / [2m10ms[22m
+[vite] program reload
+[vite] program reload
+[2m10:40:04[22m [34m[200][39m / [2m67ms[22m
+[2m10:40:04[22m [34m[200][39m / [2m6ms[22m
+[2m10:40:05[22m [34m[200][39m / [2m10ms[22m
+[vite] program reload
+[vite] program reload
+[2m10:40:07[22m [34m[200][39m / [2m47ms[22m
+[2m10:40:07[22m [34m[200][39m / [2m8ms[22m
+[vite] program reload
+[vite] program reload
+[vite] program reload
+[2m10:40:12[22m [34m[200][39m / [2m42ms[22m
+[2m10:40:12[22m [34m[200][39m / [2m6ms[22m
+[2m10:40:12[22m [34m[200][39m / [2m7ms[22m
+[vite] program reload
+[vite] program reload
+[vite] program reload
+[2m10:40:20[22m [34m[200][39m / [2m188ms[22m
+[2m10:40:20[22m [34m[200][39m / [2m79ms[22m
+[2m10:40:20[22m [34m[200][39m / [2m6ms[22m
+[vite] program reload
+[vite] program reload
+[vite] program reload
+[2m10:40:22[22m [34m[200][39m / [2m53ms[22m
+[2m10:40:23[22m [34m[200][39m / [2m10ms[22m
+[2m10:40:24[22m [34m[200][39m / [2m13ms[22m
+[2m10:40:31[22m [34m[watch][39m /src/styles/global.css
+[vite] program reload
+[2m10:40:32[22m [34m[200][39m / [2m146ms[22m
+[2m10:40:32[22m [34m[200][39m / [2m8ms[22m
+[2m10:40:32[22m [34m[200][39m / [2m8ms[22m
+[vite] program reload
+[2m10:40:35[22m [34m[200][39m / [2m44ms[22m
+[2m10:40:35[22m [34m[200][39m / [2m6ms[22m
+[2m10:40:36[22m [34m[200][39m / [2m7ms[22m
+[2m10:40:39[22m [34m[watch][39m /src/styles/global.css
+[vite] program reload
+[2m10:40:40[22m [34m[200][39m / [2m175ms[22m
+[2m10:40:40[22m [34m[200][39m / [2m8ms[22m
+[2m10:40:40[22m [34m[200][39m / [2m8ms[22m
+[vite] program reload
+[2m10:40:43[22m [34m[200][39m / [2m58ms[22m
+[2m10:40:43[22m [34m[200][39m / [2m7ms[22m
+[2m10:40:44[22m [34m[200][39m / [2m6ms[22m
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/404.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/bg/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/about-us/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/ar/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/bn/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/bg/library/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/bg/practice/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/ar/library/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/ar/practice/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/bn/library/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/bn/practice/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/blog/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/blog/2/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/blog/area-memory-trick/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/blog/common-input-mistakes/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/blog/classic-triples/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/blog/drawing-better-diagrams/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/blog/engineering-use-cases/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/blog/learning-plan/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/blog/perimeter-practice/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/blog/pythagorean-basics/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/blog/quick-exam-strategy/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/blog/sanity-checking-output/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/blog/teacher-workflow/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/blog/when-to-round/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/blog/triangle-units/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/contact-us/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/es/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/es/library/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/es/practice/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/de/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/de/library/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/de/practice/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/id/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/id/practice/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/id/library/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/fr/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/fr/library/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/fr/practice/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/hi/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/hi/library/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/hi/practice/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/ja/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/ja/library/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/ja/practice/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/it/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/it/library/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/it/practice/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/ms/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/ms/library/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/ms/practice/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/library/index.html
+[2m10:41:05[22m [34m[watch][39m .vercel/output/static/ko/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/ko/library/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/ko/practice/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/pl/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/pl/library/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/pl/practice/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/practice/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/privacy/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/pt/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/pt/practice/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/pt/library/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/sitemap/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/ru/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/ru/library/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/ru/practice/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/sv/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/sv/library/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/sv/practice/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/tr/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/tr/library/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/tr/practice/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/terms/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/zh/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/zh/library/index.html
+[2m10:41:06[22m [34m[watch][39m .vercel/output/static/zh/practice/index.html
+[2m10:41:06[22m [34m[200][39m / [2m10ms[22m
+[2m10:41:06[22m [34m[200][39m / [2m38ms[22m
+[2m10:41:06[22m [34m[200][39m / [2m7ms[22m
+[vite] program reload
+[2m10:41:11[22m [34m[200][39m / [2m58ms[22m
+[2m10:41:11[22m [34m[200][39m / [2m6ms[22m
+[2m10:41:11[22m [34m[200][39m / [2m7ms[22m
+[vite] program reload
+[2m10:41:19[22m [34m[200][39m / [2m46ms[22m
+[2m10:41:19[22m [34m[200][39m / [2m10ms[22m
+[2m10:41:19[22m [34m[200][39m / [2m10ms[22m
+[2m10:41:33[22m [34m[watch][39m /src/styles/global.css
+[vite] program reload
+[2m10:41:34[22m [34m[200][39m / [2m87ms[22m
+[2m10:41:34[22m [34m[200][39m / [2m87ms[22m
+[2m10:41:34[22m [34m[200][39m / [2m7ms[22m
+[2m10:41:34[22m [34m[200][39m / [2m9ms[22m
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/404.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/about-us/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/ar/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/bg/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/ar/formulas/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/ar/library/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/ar/practice/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/blog/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/bn/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/bg/formulas/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/bg/library/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/bg/practice/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/ar/formulas/altitude-to-hypotenuse/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/ar/formulas/angle-from-cosine/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/ar/formulas/angle-from-sine/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/ar/formulas/angle-from-tangent/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/ar/formulas/circumradius/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/ar/formulas/area-from-legs/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/ar/formulas/cosine-ratio/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/ar/formulas/inradius/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/ar/formulas/other-leg-from-hypotenuse-and-leg/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/ar/formulas/leg-from-hypotenuse-and-other-leg/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/ar/formulas/perimeter/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/ar/formulas/projection-of-a-on-hypotenuse/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/ar/formulas/projection-of-b-on-hypotenuse/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/ar/formulas/sine-ratio/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/ar/formulas/semiperimeter/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/ar/formulas/pythagorean-theorem/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/ar/formulas/tangent-ratio/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/de/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/contact-us/index.html
+[2m10:42:00[22m [34m[watch][39m .vercel/output/static/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/es/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/blog/2/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/blog/area-memory-trick/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/blog/classic-triples/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/blog/common-input-mistakes/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/blog/drawing-better-diagrams/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/blog/learning-plan/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/blog/perimeter-practice/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/blog/pythagorean-basics/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/blog/quick-exam-strategy/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/blog/engineering-use-cases/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/blog/teacher-workflow/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/blog/sanity-checking-output/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/blog/triangle-units/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/blog/when-to-round/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/formulas/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/fr/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/bn/formulas/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/bn/library/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/bn/practice/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/hi/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/bg/formulas/altitude-to-hypotenuse/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/bg/formulas/angle-from-sine/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/bg/formulas/angle-from-cosine/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/bg/formulas/angle-from-tangent/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/bg/formulas/area-from-legs/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/bg/formulas/inradius/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/bg/formulas/circumradius/index.html
+[2m10:42:01[22m [34m[watch][39m .vercel/output/static/bg/formulas/other-leg-from-hypotenuse-and-leg/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/bg/formulas/cosine-ratio/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/bg/formulas/leg-from-hypotenuse-and-other-leg/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/bg/formulas/perimeter/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/bg/formulas/projection-of-a-on-hypotenuse/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/bg/formulas/projection-of-b-on-hypotenuse/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/bg/formulas/semiperimeter/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/bg/formulas/pythagorean-theorem/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/bg/formulas/sine-ratio/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/bg/formulas/tangent-ratio/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/id/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/it/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/de/formulas/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/de/practice/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/de/library/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/ja/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/ko/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/library/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/pl/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/ms/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/es/formulas/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/es/library/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/es/practice/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/privacy/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/pt/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/ru/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/practice/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/sitemap/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/sv/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/terms/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/zh/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/tr/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/formulas/altitude-to-hypotenuse/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/formulas/angle-from-sine/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/formulas/angle-from-tangent/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/formulas/area-from-legs/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/formulas/circumradius/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/formulas/angle-from-cosine/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/formulas/cosine-ratio/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/formulas/inradius/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/formulas/leg-from-hypotenuse-and-other-leg/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/formulas/other-leg-from-hypotenuse-and-leg/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/formulas/projection-of-a-on-hypotenuse/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/formulas/perimeter/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/formulas/pythagorean-theorem/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/formulas/semiperimeter/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/formulas/tangent-ratio/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/formulas/projection-of-b-on-hypotenuse/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/formulas/sine-ratio/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/fr/library/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/fr/practice/index.html
+[2m10:42:02[22m [34m[watch][39m .vercel/output/static/fr/formulas/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/bn/formulas/altitude-to-hypotenuse/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/bn/formulas/angle-from-cosine/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/bn/formulas/angle-from-tangent/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/bn/formulas/angle-from-sine/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/bn/formulas/area-from-legs/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/bn/formulas/circumradius/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/bn/formulas/cosine-ratio/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/bn/formulas/leg-from-hypotenuse-and-other-leg/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/bn/formulas/inradius/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/bn/formulas/other-leg-from-hypotenuse-and-leg/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/bn/formulas/perimeter/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/bn/formulas/projection-of-a-on-hypotenuse/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/bn/formulas/projection-of-b-on-hypotenuse/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/bn/formulas/pythagorean-theorem/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/bn/formulas/semiperimeter/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/bn/formulas/sine-ratio/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/bn/formulas/tangent-ratio/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/hi/practice/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/hi/library/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/hi/formulas/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/id/formulas/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/id/library/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/id/practice/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/it/formulas/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/it/practice/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/it/library/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/de/formulas/altitude-to-hypotenuse/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/de/formulas/angle-from-cosine/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/de/formulas/angle-from-sine/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/de/formulas/angle-from-tangent/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/de/formulas/area-from-legs/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/de/formulas/circumradius/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/de/formulas/cosine-ratio/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/de/formulas/inradius/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/de/formulas/leg-from-hypotenuse-and-other-leg/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/de/formulas/other-leg-from-hypotenuse-and-leg/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/de/formulas/perimeter/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/de/formulas/projection-of-a-on-hypotenuse/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/de/formulas/pythagorean-theorem/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/de/formulas/semiperimeter/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/de/formulas/sine-ratio/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/de/formulas/tangent-ratio/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/de/formulas/projection-of-b-on-hypotenuse/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/ja/formulas/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/ja/library/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/ja/practice/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/ko/formulas/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/ko/library/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/ko/practice/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/pl/library/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/pl/practice/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/pl/formulas/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/ms/formulas/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/ms/library/index.html
+[2m10:42:03[22m [34m[watch][39m .vercel/output/static/ms/practice/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/es/formulas/altitude-to-hypotenuse/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/es/formulas/angle-from-cosine/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/es/formulas/angle-from-sine/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/es/formulas/angle-from-tangent/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/es/formulas/area-from-legs/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/es/formulas/circumradius/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/es/formulas/cosine-ratio/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/es/formulas/inradius/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/es/formulas/leg-from-hypotenuse-and-other-leg/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/es/formulas/other-leg-from-hypotenuse-and-leg/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/es/formulas/projection-of-a-on-hypotenuse/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/es/formulas/projection-of-b-on-hypotenuse/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/es/formulas/perimeter/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/es/formulas/pythagorean-theorem/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/es/formulas/semiperimeter/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/es/formulas/sine-ratio/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/es/formulas/tangent-ratio/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/pt/formulas/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/pt/library/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/pt/practice/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/ru/formulas/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/ru/library/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/ru/practice/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/sv/formulas/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/sv/library/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/sv/practice/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/zh/formulas/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/zh/practice/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/zh/library/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/tr/formulas/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/tr/library/index.html
+[2m10:42:04[22m [34m[watch][39m .vercel/output/static/tr/practice/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/fr/formulas/altitude-to-hypotenuse/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/fr/formulas/angle-from-cosine/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/fr/formulas/area-from-legs/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/fr/formulas/angle-from-sine/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/fr/formulas/angle-from-tangent/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/fr/formulas/circumradius/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/fr/formulas/cosine-ratio/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/fr/formulas/leg-from-hypotenuse-and-other-leg/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/fr/formulas/inradius/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/fr/formulas/other-leg-from-hypotenuse-and-leg/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/fr/formulas/perimeter/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/fr/formulas/projection-of-a-on-hypotenuse/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/fr/formulas/projection-of-b-on-hypotenuse/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/fr/formulas/pythagorean-theorem/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/fr/formulas/semiperimeter/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/fr/formulas/sine-ratio/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/fr/formulas/tangent-ratio/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/hi/formulas/altitude-to-hypotenuse/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/hi/formulas/angle-from-cosine/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/hi/formulas/angle-from-sine/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/hi/formulas/circumradius/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/hi/formulas/cosine-ratio/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/hi/formulas/area-from-legs/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/hi/formulas/inradius/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/hi/formulas/angle-from-tangent/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/hi/formulas/perimeter/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/hi/formulas/leg-from-hypotenuse-and-other-leg/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/hi/formulas/other-leg-from-hypotenuse-and-leg/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/hi/formulas/projection-of-a-on-hypotenuse/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/hi/formulas/projection-of-b-on-hypotenuse/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/hi/formulas/pythagorean-theorem/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/hi/formulas/sine-ratio/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/hi/formulas/semiperimeter/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/hi/formulas/tangent-ratio/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/id/formulas/angle-from-cosine/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/id/formulas/altitude-to-hypotenuse/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/id/formulas/angle-from-sine/index.html
+[2m10:42:05[22m [34m[watch][39m .vercel/output/static/id/formulas/area-from-legs/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/id/formulas/angle-from-tangent/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/id/formulas/cosine-ratio/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/id/formulas/inradius/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/id/formulas/circumradius/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/id/formulas/leg-from-hypotenuse-and-other-leg/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/id/formulas/other-leg-from-hypotenuse-and-leg/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/id/formulas/projection-of-a-on-hypotenuse/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/id/formulas/projection-of-b-on-hypotenuse/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/id/formulas/perimeter/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/id/formulas/pythagorean-theorem/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/id/formulas/semiperimeter/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/it/formulas/altitude-to-hypotenuse/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/id/formulas/sine-ratio/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/id/formulas/tangent-ratio/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/it/formulas/angle-from-cosine/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/it/formulas/angle-from-tangent/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/it/formulas/angle-from-sine/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/it/formulas/circumradius/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/it/formulas/area-from-legs/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/it/formulas/cosine-ratio/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/it/formulas/inradius/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/it/formulas/other-leg-from-hypotenuse-and-leg/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/it/formulas/leg-from-hypotenuse-and-other-leg/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/it/formulas/perimeter/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/it/formulas/projection-of-a-on-hypotenuse/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/it/formulas/projection-of-b-on-hypotenuse/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/it/formulas/pythagorean-theorem/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/it/formulas/semiperimeter/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/it/formulas/tangent-ratio/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/it/formulas/sine-ratio/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ja/formulas/angle-from-tangent/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ja/formulas/angle-from-sine/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ja/formulas/altitude-to-hypotenuse/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ja/formulas/angle-from-cosine/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ja/formulas/area-from-legs/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ja/formulas/circumradius/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ja/formulas/cosine-ratio/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ja/formulas/inradius/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ja/formulas/leg-from-hypotenuse-and-other-leg/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ja/formulas/other-leg-from-hypotenuse-and-leg/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ja/formulas/perimeter/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ja/formulas/projection-of-a-on-hypotenuse/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ja/formulas/pythagorean-theorem/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ja/formulas/projection-of-b-on-hypotenuse/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ja/formulas/semiperimeter/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ko/formulas/altitude-to-hypotenuse/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ko/formulas/angle-from-cosine/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ko/formulas/angle-from-tangent/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ko/formulas/angle-from-sine/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ko/formulas/area-from-legs/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ja/formulas/tangent-ratio/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ja/formulas/sine-ratio/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ko/formulas/circumradius/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ko/formulas/inradius/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ko/formulas/cosine-ratio/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ko/formulas/leg-from-hypotenuse-and-other-leg/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ko/formulas/perimeter/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ko/formulas/other-leg-from-hypotenuse-and-leg/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ko/formulas/projection-of-a-on-hypotenuse/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ko/formulas/projection-of-b-on-hypotenuse/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ko/formulas/pythagorean-theorem/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ko/formulas/semiperimeter/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ko/formulas/tangent-ratio/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ko/formulas/sine-ratio/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/pl/formulas/angle-from-cosine/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/pl/formulas/altitude-to-hypotenuse/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/pl/formulas/angle-from-tangent/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/pl/formulas/area-from-legs/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/pl/formulas/cosine-ratio/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/pl/formulas/angle-from-sine/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/pl/formulas/circumradius/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/pl/formulas/leg-from-hypotenuse-and-other-leg/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/pl/formulas/inradius/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/pl/formulas/perimeter/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/pl/formulas/other-leg-from-hypotenuse-and-leg/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/pl/formulas/projection-of-a-on-hypotenuse/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/pl/formulas/projection-of-b-on-hypotenuse/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/pl/formulas/pythagorean-theorem/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/pl/formulas/sine-ratio/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/pl/formulas/semiperimeter/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/pl/formulas/tangent-ratio/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ms/formulas/altitude-to-hypotenuse/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ms/formulas/angle-from-sine/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ms/formulas/angle-from-cosine/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ms/formulas/angle-from-tangent/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ms/formulas/circumradius/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ms/formulas/area-from-legs/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ms/formulas/cosine-ratio/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ms/formulas/inradius/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ms/formulas/other-leg-from-hypotenuse-and-leg/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ms/formulas/leg-from-hypotenuse-and-other-leg/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ms/formulas/projection-of-a-on-hypotenuse/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ms/formulas/perimeter/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ms/formulas/projection-of-b-on-hypotenuse/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ms/formulas/pythagorean-theorem/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ms/formulas/semiperimeter/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ms/formulas/sine-ratio/index.html
+[2m10:42:06[22m [34m[watch][39m .vercel/output/static/ms/formulas/tangent-ratio/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/pt/formulas/altitude-to-hypotenuse/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/pt/formulas/angle-from-cosine/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/pt/formulas/angle-from-sine/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/pt/formulas/angle-from-tangent/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/pt/formulas/area-from-legs/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/pt/formulas/circumradius/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/pt/formulas/inradius/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/pt/formulas/cosine-ratio/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/pt/formulas/leg-from-hypotenuse-and-other-leg/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/pt/formulas/other-leg-from-hypotenuse-and-leg/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/pt/formulas/perimeter/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/pt/formulas/projection-of-b-on-hypotenuse/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/pt/formulas/pythagorean-theorem/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/pt/formulas/projection-of-a-on-hypotenuse/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/pt/formulas/sine-ratio/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/pt/formulas/semiperimeter/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/ru/formulas/angle-from-cosine/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/pt/formulas/tangent-ratio/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/ru/formulas/angle-from-sine/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/ru/formulas/altitude-to-hypotenuse/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/ru/formulas/angle-from-tangent/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/ru/formulas/inradius/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/ru/formulas/area-from-legs/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/ru/formulas/cosine-ratio/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/ru/formulas/circumradius/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/ru/formulas/leg-from-hypotenuse-and-other-leg/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/ru/formulas/other-leg-from-hypotenuse-and-leg/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/ru/formulas/perimeter/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/ru/formulas/projection-of-b-on-hypotenuse/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/ru/formulas/projection-of-a-on-hypotenuse/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/ru/formulas/pythagorean-theorem/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/ru/formulas/semiperimeter/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/ru/formulas/sine-ratio/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/ru/formulas/tangent-ratio/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/sv/formulas/altitude-to-hypotenuse/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/sv/formulas/angle-from-cosine/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/sv/formulas/angle-from-sine/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/sv/formulas/area-from-legs/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/sv/formulas/angle-from-tangent/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/sv/formulas/circumradius/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/sv/formulas/cosine-ratio/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/sv/formulas/inradius/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/sv/formulas/leg-from-hypotenuse-and-other-leg/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/sv/formulas/other-leg-from-hypotenuse-and-leg/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/sv/formulas/perimeter/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/sv/formulas/projection-of-a-on-hypotenuse/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/sv/formulas/pythagorean-theorem/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/sv/formulas/projection-of-b-on-hypotenuse/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/sv/formulas/semiperimeter/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/sv/formulas/sine-ratio/index.html
+[2m10:42:07[22m [34m[watch][39m .vercel/output/static/sv/formulas/tangent-ratio/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/zh/formulas/altitude-to-hypotenuse/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/zh/formulas/angle-from-cosine/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/zh/formulas/angle-from-sine/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/zh/formulas/area-from-legs/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/zh/formulas/angle-from-tangent/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/zh/formulas/circumradius/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/zh/formulas/inradius/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/zh/formulas/cosine-ratio/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/zh/formulas/leg-from-hypotenuse-and-other-leg/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/zh/formulas/other-leg-from-hypotenuse-and-leg/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/zh/formulas/perimeter/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/zh/formulas/projection-of-a-on-hypotenuse/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/zh/formulas/projection-of-b-on-hypotenuse/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/zh/formulas/semiperimeter/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/zh/formulas/pythagorean-theorem/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/zh/formulas/sine-ratio/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/zh/formulas/tangent-ratio/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/tr/formulas/altitude-to-hypotenuse/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/tr/formulas/angle-from-cosine/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/tr/formulas/area-from-legs/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/tr/formulas/angle-from-sine/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/tr/formulas/angle-from-tangent/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/tr/formulas/circumradius/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/tr/formulas/cosine-ratio/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/tr/formulas/leg-from-hypotenuse-and-other-leg/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/tr/formulas/inradius/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/tr/formulas/other-leg-from-hypotenuse-and-leg/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/tr/formulas/perimeter/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/tr/formulas/projection-of-a-on-hypotenuse/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/tr/formulas/pythagorean-theorem/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/tr/formulas/projection-of-b-on-hypotenuse/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/tr/formulas/semiperimeter/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/tr/formulas/sine-ratio/index.html
+[2m10:42:08[22m [34m[watch][39m .vercel/output/static/tr/formulas/tangent-ratio/index.html
+[2m10:42:17[22m [34m[200][39m / [2m8ms[22m
+[2m10:42:17[22m [34m[200][39m /practice/ [2m98ms[22m
+[2m10:42:17[22m [34m[200][39m /formulas/pythagorean-theorem/ [2m99ms[22m
+[2m10:42:17[22m [34m[200][39m /formulas/ [2m166ms[22m
+[2m10:42:57[22m [34m[200][39m / [2m8ms[22m

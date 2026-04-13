@@ -23,6 +23,8 @@ const pageDescription =
   'Browse theorem references, trigonometry mnemonics, and geometry formulas in a focused dark-mode library.';
 const localizedSolverPath = localizePath(locale, '/');
 const localizedPath = localizePath(locale, '/library/');
+const localizedPracticePath = localizePath(locale, '/practice/');
+const localizedFormulasPath = localizePath(locale, '/formulas/');
 ---
 
 <BaseLayout
@@ -34,5 +36,10 @@ const localizedPath = localizePath(locale, '/library/');
   hideFooter={true}
   mainClass="w-full h-[100dvh] overflow-hidden p-0"
 >
-  <MuseLibrary solverHref={localizedSolverPath} libraryHref={localizedPath} />
+  <MuseLibrary
+    solverHref={localizedSolverPath}
+    libraryHref={localizedPath}
+    practiceHref={localizedPracticePath}
+    formulasHref={localizedFormulasPath}
+  />
 </BaseLayout>

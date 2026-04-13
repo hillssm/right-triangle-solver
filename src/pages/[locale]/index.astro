@@ -28,6 +28,7 @@ const pageDescription = pick(
 );
 
 const localizedPath = localizePath(locale, '/');
+const localizedLibraryPath = localizePath(locale, '/library/');
 ---
 
 <BaseLayout
@@ -48,5 +49,9 @@ const localizedPath = localizePath(locale, '/');
     faqs={bundle.faq}
   />
 
-  <MuseSolver title={pick(home, 'heading', siteTitle)} />
+  <MuseSolver
+    title={pick(home, 'heading', siteTitle)}
+    solverHref={localizedPath}
+    libraryHref={localizedLibraryPath}
+  />
 </BaseLayout>

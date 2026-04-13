@@ -1,0 +1,28 @@
+---
+import MuseLibrary from 'theme/components/MuseLibrary.astro';
+import { DEFAULT_LOCALE } from 'theme/i18n/locales';
+import { getTranslations, pick } from 'theme/i18n/translations';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+
+const locale = DEFAULT_LOCALE;
+const bundle = getTranslations(locale);
+const content = bundle.content as Record<string, unknown>;
+const siteContent = (content.site as Record<string, string>) ?? {};
+
+const siteTitle = pick(siteContent, 'title', 'Right Triangle Solver');
+const pageTitle = `Formula Library | ${siteTitle}`;
+const pageDescription =
+  'Browse theorem references, trigonometry mnemonics, and geometry formulas in a focused dark-mode library.';
+---
+
+<BaseLayout
+  locale={locale}
+  title={pageTitle}
+  description={pageDescription}
+  canonicalPath="/library/"
+  hideHeader={true}
+  hideFooter={true}
+  mainClass="w-full h-[100dvh] overflow-hidden p-0"
+>
+  <MuseLibrary solverHref="/" libraryHref="/library/" />
+</BaseLayout>

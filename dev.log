@@ -3,13 +3,136 @@
 > astro dev --host 0.0.0.0 --port 4321
 
 [vite] connected.
-[2m21:09:17[22m [34m[types][39m Generated [2m3ms[22m
+[2m10:02:00[22m [34m[types][39m Generated [2m3ms[22m
 [vite] connected.
-[2m21:09:19[22m [34m[content][39m Syncing content
-[2m21:09:19[22m [34m[content][39m Synced content
-[2m21:09:19[22m [34m[vite][39m Re-optimizing dependencies because vite config has changed
-[42m[1m astro [22m[49m [32mv6.1.5[39m [2mready in[22m 11670 [2mms[22m
+[2m10:02:01[22m [34m[content][39m Syncing content
+[2m10:02:01[22m [34m[content][39m Synced content
+[42m[1m astro [22m[49m [32mv6.1.5[39m [2mready in[22m 7357 [2mms[22m
 [2m┃[22m Local    [36mhttp://localhost:4321/[39m
-[2m┃[22m Network  [36mhttp://192.168.1.6:4321/[39m
-[2m21:09:19[22m [32mwatching for file changes...[39m
-[2m21:09:37[22m [34m[200][39m / [2m282ms[22m
+[2m┃[22m Network  [36mhttp://192.168.1.5:4321/[39m
+[2m10:02:01[22m [32mwatching for file changes...[39m
+[2m10:02:04[22m [34m[200][39m / [2m63ms[22m
+[2m10:02:19[22m [34m[200][39m / [2m4ms[22m
+[2m10:02:35[22m [34m[200][39m / [2m4ms[22m
+[2m10:02:55[22m [34m[200][39m / [2m7ms[22m
+[2m10:03:01[22m [34m[200][39m / [2m7ms[22m
+[2m10:07:10[22m [34m[watch][39m /src/styles/global.css
+[2m10:07:11[22m [34m[200][39m / [2m62ms[22m
+[2m10:07:25[22m [34m[watch][39m /src/styles/global.css
+[2m10:07:26[22m [34m[200][39m / [2m38ms[22m
+[vite] program reload
+[vite] An error happened during full reload
+Failed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?
+Error: Failed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?
+    at loadAndTransform (file:///C:/Users/Lenovo/OneDrive/Documents/GitHub/right%20triangle%20solver/node_modules/vite/dist/node/chunks/config.js:22663:33)
+[2m10:07:32[22m [34m[200][39m / [2m29ms[22m
+[2m10:07:36[22m [34m[watch][39m /src/styles/global.css
+[2m10:07:37[22m [34m[200][39m / [2m50ms[22m
+[vite] program reload
+[2m10:07:45[22m [34m[200][39m / [2m33ms[22m
+[vite] program reload
+[vite] program reload
+[2m10:07:51[22m [34m[200][39m / [2m31ms[22m
+[vite] program reload
+[2m10:07:56[22m [34m[200][39m / [2m42ms[22m
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/404.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/about-us/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/blog/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/bg/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/ar/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/es/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/bn/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/de/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/contact-us/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/fr/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/hi/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/id/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/it/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/ja/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/ko/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/ms/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/pl/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/privacy/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/ru/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/sitemap/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/pt/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/sv/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/tr/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/zh/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/terms/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/blog/2/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/blog/area-memory-trick/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/blog/classic-triples/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/blog/common-input-mistakes/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/blog/drawing-better-diagrams/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/blog/learning-plan/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/blog/perimeter-practice/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/blog/engineering-use-cases/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/blog/pythagorean-basics/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/blog/quick-exam-strategy/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/blog/sanity-checking-output/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/blog/teacher-workflow/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/blog/triangle-units/index.html
+[2m10:08:10[22m [34m[watch][39m .vercel/output/static/blog/when-to-round/index.html
+[2m10:08:16[22m [34m[watch][39m .vercel/output/static/404.html
+[2m10:08:16[22m [34m[watch][39m .vercel/output/static/index.html
+[2m10:08:16[22m [34m[watch][39m .vercel/output/static/about-us/index.html
+[2m10:08:16[22m [34m[watch][39m .vercel/output/static/ar/index.html
+[2m10:08:16[22m [34m[watch][39m .vercel/output/static/blog/index.html
+[2m10:08:16[22m [34m[watch][39m .vercel/output/static/bg/index.html
+[2m10:08:16[22m [34m[watch][39m .vercel/output/static/bn/index.html
+[2m10:08:16[22m [34m[watch][39m .vercel/output/static/contact-us/index.html
+[2m10:08:16[22m [34m[watch][39m .vercel/output/static/de/index.html
+[2m10:08:16[22m [34m[watch][39m .vercel/output/static/es/index.html
+[2m10:08:16[22m [34m[watch][39m .vercel/output/static/hi/index.html
+[2m10:08:16[22m [34m[watch][39m .vercel/output/static/fr/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/id/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/it/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/ja/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/ko/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/library/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/ms/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/pl/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/privacy/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/ru/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/pt/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/sitemap/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/sv/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/terms/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/tr/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/zh/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/ar/library/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/blog/2/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/blog/area-memory-trick/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/blog/classic-triples/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/blog/common-input-mistakes/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/blog/drawing-better-diagrams/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/blog/engineering-use-cases/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/blog/learning-plan/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/blog/perimeter-practice/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/blog/pythagorean-basics/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/blog/quick-exam-strategy/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/blog/sanity-checking-output/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/blog/triangle-units/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/blog/teacher-workflow/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/blog/when-to-round/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/bg/library/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/bn/library/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/de/library/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/hi/library/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/es/library/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/fr/library/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/id/library/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/it/library/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/ja/library/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/ko/library/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/ms/library/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/pl/library/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/pt/library/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/ru/library/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/sv/library/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/tr/library/index.html
+[2m10:08:17[22m [34m[watch][39m .vercel/output/static/zh/library/index.html
+[2m10:08:25[22m [34m[200][39m / [2m5ms[22m
+[2m10:08:25[22m [34m[200][39m /library/ [2m48ms[22m

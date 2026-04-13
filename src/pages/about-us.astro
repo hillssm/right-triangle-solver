@@ -1,4 +1,4 @@
-﻿---
+---
 import { DEFAULT_LOCALE } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
@@ -16,8 +16,57 @@ const about = (content.about as Record<string, string>) ?? {};
   canonicalPath="/about-us/"
   schemaPage="about"
 >
-  <article class="section-shell prose-shell">
-    <h1 class="text-3xl font-bold sm:text-4xl">{pick(about, 'heading', 'About Us')}</h1>
-    <p class="mt-4 text-slate-700">{pick(about, 'body', 'We built this site to simplify geometry.')}</p>
+  <article class="section-shell prose-shell" style="animation: fade-in-up 0.5s cubic-bezier(0.22,1,0.36,1) both;">
+    <div class="flex items-center gap-4 mb-6">
+      <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10">
+        <span class="material-symbols-outlined text-3xl text-primary">groups</span>
+      </div>
+      <div>
+        <h1 class="text-3xl font-headline sm:text-4xl">{pick(about, 'heading', 'About Us')}</h1>
+        <p class="text-xs font-label uppercase tracking-widest text-slate-500 mt-1">Who we are</p>
+      </div>
+    </div>
+
+    <div class="mt-8 space-y-8">
+      <div class="rounded-xl border border-outline-variant/15 bg-surface-container-lowest/50 p-6">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="material-symbols-outlined text-lg text-primary">auto_awesome</span>
+          <h2 class="text-xl font-headline text-on-surface">Our Mission</h2>
+        </div>
+        <p class="text-slate-400 leading-relaxed">{pick(about, 'body', 'We built Right Triangle Solver to simplify geometry for students, teachers, and professionals. Our goal is to make mathematical concepts accessible, interactive, and beautifully presented.')}</p>
+      </div>
+
+      <div class="grid gap-5 sm:grid-cols-3 anim-stagger">
+        <div class="surface-card flex flex-col items-center text-center gap-3 py-8">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
+            <span class="material-symbols-outlined text-xl text-primary">precision_manufacturing</span>
+          </div>
+          <h3 class="font-semibold text-on-surface">Precision</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">Every calculation is accurate to 4+ decimal places with full trigonometric coverage.</p>
+        </div>
+        <div class="surface-card flex flex-col items-center text-center gap-3 py-8">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
+            <span class="material-symbols-outlined text-xl text-primary">speed</span>
+          </div>
+          <h3 class="font-semibold text-on-surface">Instant</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">Results compute in milliseconds with live triangle visualization updates.</p>
+        </div>
+        <div class="surface-card flex flex-col items-center text-center gap-3 py-8">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
+            <span class="material-symbols-outlined text-xl text-primary">school</span>
+          </div>
+          <h3 class="font-semibold text-on-surface">Educational</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">Step-by-step solution breakdowns help you understand the math, not just the answer.</p>
+        </div>
+      </div>
+
+      <div class="rounded-xl border border-outline-variant/15 bg-surface-container-lowest/50 p-6">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="material-symbols-outlined text-lg text-primary">handshake</span>
+          <h2 class="text-xl font-headline text-on-surface">Our Promise</h2>
+        </div>
+        <p class="text-slate-400 leading-relaxed">Right Triangle Solver is free to use, ad-free, and designed with care. We respect your privacy and never collect personal data beyond what's needed for the contact form. Our codebase is maintained with industry-standard practices, and we continuously improve based on user feedback.</p>
+      </div>
+    </div>
   </article>
 </BaseLayout>

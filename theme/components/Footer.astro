@@ -22,9 +22,9 @@ const switchLabel = commonLabels.switchLanguage ?? 'Language';
 const rights = commonLabels.rights ?? 'All rights reserved.';
 ---
 
-<footer class="relative mt-16 overflow-hidden border-t border-outline-variant/10">
+<footer class="relative mt-16 overflow-hidden border-t border-primary/12">
   <!-- Subtle ambient glow -->
-  <div class="pointer-events-none absolute bottom-0 left-1/2 h-64 w-[600px] -translate-x-1/2 rounded-full bg-primary/5 blur-[120px]"></div>
+  <div class="pointer-events-none absolute bottom-0 left-1/2 h-64 w-[600px] -translate-x-1/2 rounded-full bg-primary/10 blur-[120px]"></div>
 
   <div class="relative mx-auto grid w-full max-w-[1200px] gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.2fr_1fr] lg:px-8">
     <div class="space-y-5">
@@ -34,14 +34,14 @@ const rights = commonLabels.rights ?? 'All rights reserved.';
         </div>
         <span class="text-base font-bold tracking-tight">{siteTitle}</span>
       </a>
-      <p class="max-w-xl text-sm leading-relaxed text-slate-400">{description}</p>
+      <p class="max-w-xl text-sm leading-relaxed text-on-surface-variant">{description}</p>
 
       {socialLinks.length > 0 && (
         <div class="flex items-center gap-3 pt-2" aria-label="Social links">
           {socialLinks.map((item) => (
             <a
               href={item.href}
-              class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-outline-variant/15 bg-surface-container-high/30 text-slate-400 transition-all duration-200 hover:border-primary/30 hover:bg-primary/10 hover:text-primary hover:shadow-[var(--shadow-glow-primary)]"
+              class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-outline-variant/20 bg-surface-container-high/30 text-on-surface-variant transition-all duration-200 hover:border-primary/35 hover:bg-primary/10 hover:text-primary hover:shadow-[var(--shadow-glow-primary)]"
               rel="noreferrer"
               target="_blank"
               aria-label={item.name}
@@ -56,7 +56,7 @@ const rights = commonLabels.rights ?? 'All rights reserved.';
     <div class="grid gap-8 sm:grid-cols-2">
       <nav aria-label="Footer navigation" class="grid gap-2 text-sm">
         {footerNav.map((item) => (
-          <a href={item.href} class="rounded-lg px-1 py-1 text-slate-400 transition-all duration-200 hover:text-primary hover:translate-x-1">
+          <a href={item.href} class="rounded-lg px-1 py-1 text-on-surface-variant transition-all duration-200 hover:text-primary hover:translate-x-1">
             {item.label}
           </a>
         ))}
@@ -66,7 +66,7 @@ const rights = commonLabels.rights ?? 'All rights reserved.';
     </div>
   </div>
 
-  <div class="relative border-t border-outline-variant/8 px-4 py-5 text-center text-xs text-slate-500 sm:px-6 lg:px-8">
+  <div class="relative border-t border-outline-variant/12 px-4 py-5 text-center text-xs text-outline sm:px-6 lg:px-8">
     <p>&copy; {year} {siteTitle}. {rights}</p>
   </div>
 </footer>

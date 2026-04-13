@@ -1,4 +1,4 @@
-﻿---
+---
 import { site } from 'theme/utils/site';
 
 interface Labels {
@@ -25,10 +25,16 @@ const accessKey =
 ---
 
 <section class="section-shell" aria-labelledby="contact-form-heading">
-  <h2 id="contact-form-heading" class="text-xl font-bold">Contact Form</h2>
+  <div class="flex items-center gap-3 mb-2">
+    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
+      <span class="material-symbols-outlined text-xl text-primary">mail</span>
+    </div>
+    <h2 id="contact-form-heading" class="text-xl font-headline">Contact Form</h2>
+  </div>
+  <p class="text-sm text-slate-400 mb-6">Fill in the fields below and we'll get back to you promptly.</p>
 
   <form
-    class="mt-5 grid gap-4"
+    class="mt-4 grid gap-5"
     data-contact-form
     data-endpoint={endpoint}
     data-access-key={accessKey}
@@ -37,29 +43,42 @@ const accessKey =
     data-api-error-label={labels.apiError}
     data-network-error-label={labels.networkError}
   >
-    <label class="grid gap-2 text-sm font-medium text-slate-700">
-      {labels.name}
-      <input class="input-shell" type="text" name="name" required autocomplete="name" />
+    <label class="grid gap-2.5 text-sm">
+      <span class="font-label text-xs uppercase tracking-widest text-slate-400 flex items-center gap-2">
+        <span class="material-symbols-outlined text-sm text-primary/60">person</span>
+        {labels.name}
+      </span>
+      <input class="input-shell" type="text" name="name" required autocomplete="name" placeholder="Your full name" />
     </label>
 
-    <label class="grid gap-2 text-sm font-medium text-slate-700">
-      {labels.email}
-      <input class="input-shell" type="email" name="email" required autocomplete="email" />
+    <label class="grid gap-2.5 text-sm">
+      <span class="font-label text-xs uppercase tracking-widest text-slate-400 flex items-center gap-2">
+        <span class="material-symbols-outlined text-sm text-primary/60">alternate_email</span>
+        {labels.email}
+      </span>
+      <input class="input-shell" type="email" name="email" required autocomplete="email" placeholder="you@example.com" />
     </label>
 
-    <label class="grid gap-2 text-sm font-medium text-slate-700">
-      {labels.message}
-      <textarea class="input-shell min-h-36" name="message" required></textarea>
+    <label class="grid gap-2.5 text-sm">
+      <span class="font-label text-xs uppercase tracking-widest text-slate-400 flex items-center gap-2">
+        <span class="material-symbols-outlined text-sm text-primary/60">chat</span>
+        {labels.message}
+      </span>
+      <textarea class="input-shell min-h-36 resize-y" name="message" required placeholder="Describe your question or feedback..."></textarea>
     </label>
 
-    <div class="flex flex-wrap items-center gap-3">
-      <button class="btn-primary" type="submit" data-submit-button>{labels.send}</button>
+    <div class="flex flex-wrap items-center gap-4 pt-2">
+      <button class="btn-primary gap-2" type="submit" data-submit-button>
+        <span class="material-symbols-outlined text-base">send</span>
+        {labels.send}
+      </button>
       <p class="text-xs text-slate-500">
-        {labels.fallbackEmail} <a href={`mailto:${fallbackEmail}`} class="text-cyan-700 hover:text-cyan-600">{fallbackEmail}</a>
+        {labels.fallbackEmail} <a href={`mailto:${fallbackEmail}`} class="text-primary underline decoration-primary/30 underline-offset-2 transition-colors hover:text-primary-container">{fallbackEmail}</a>
       </p>
     </div>
 
-    <p class="text-sm text-slate-600" role="status" aria-live="polite" data-contact-status></p>
+    <div class="flex items-center gap-2 text-sm text-slate-400" role="status" aria-live="polite" data-contact-status>
+    </div>
   </form>
 
   <script is:inline>
@@ -80,15 +99,29 @@ const accessKey =
 
       const endpoint = form.getAttribute('data-endpoint') || '';
       const accessKey = form.getAttribute('data-access-key') || '';
+
       const setSubmitting = (sending) => {
         submitButton.disabled = sending;
+        if (sending) {
+          submitButton.style.opacity = '0.7';
+          submitButton.style.pointerEvents = 'none';
+        } else {
+          submitButton.style.opacity = '1';
+          submitButton.style.pointerEvents = 'auto';
+        }
+      };
+
+      const showStatus = (message, isError) => {
+        const icon = isError ? 'error' : 'check_circle';
+        const color = isError ? 'text-error' : 'text-secondary-container';
+        statusEl.innerHTML = `<span class="material-symbols-outlined text-base ${color}" style="font-variation-settings: 'FILL' 1;">${icon}</span><span>${message}</span>`;
       };
 
       form.addEventListener('submit', async (event) => {
         event.preventDefault();
 
         if (!accessKey) {
-          statusEl.textContent = 'Form configuration is missing. Please use direct email for now.';
+          showStatus('Form configuration is missing. Please use direct email for now.', true);
           return;
         }
 
@@ -96,8 +129,7 @@ const accessKey =
         formData.append('access_key', accessKey);
 
         setSubmitting(true);
-        statusEl.textContent =
-          (form.dataset.sendingLabel || '').trim() || 'Sending...';
+        statusEl.innerHTML = `<span class="material-symbols-outlined text-base text-primary animate-spin">progress_activity</span><span>${(form.dataset.sendingLabel || '').trim() || 'Sending...'}</span>`;
 
         try {
           const response = await fetch(endpoint, {
@@ -108,19 +140,22 @@ const accessKey =
           const payload = await response.json();
 
           if (response.ok && payload.success) {
-            statusEl.textContent =
-              form.dataset.successLabel || 'Message sent successfully. Thank you!';
+            showStatus(form.dataset.successLabel || 'Message sent successfully. Thank you!', false);
             form.reset();
           } else {
-            statusEl.textContent =
+            showStatus(
               payload.message ||
               form.dataset.apiErrorLabel ||
-              'We could not send your message. Please try again.';
+              'We could not send your message. Please try again.',
+              true
+            );
           }
         } catch {
-          statusEl.textContent =
+          showStatus(
             form.dataset.networkErrorLabel ||
-            'Network error. Please check your connection and retry.';
+            'Network error. Please check your connection and retry.',
+            true
+          );
         } finally {
           setSubmitting(false);
         }

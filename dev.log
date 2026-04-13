@@ -1044,3 +1044,13 @@ Error: Failed to load url /theme/components/MuseSolver.astro (resolved id: C:/Us
 [2m11:09:25[22m [34m[200][39m /hi/ [2m172ms[22m
 [vite] program reload
 [2m11:09:43[22m [34m[200][39m /hi/ [2m159ms[22m
+[vite] program reload
+[2m11:12:20[22m [34m[200][39m /hi/ [2m62ms[22m
+[2m11:12:27[22m [34m[200][39m /hi/ [2m10ms[22m
+[2m11:12:32[22m [34m[200][39m / [2m91ms[22m
+[2m11:12:35[22m [34m[200][39m / [2m13ms[22m
+[vite] program reload
+[2m11:12:45[22m [34m[200][39m / [2m187ms[22m
+[2m11:12:45[22m [34m[200][39m /formulas/pythagorean-theorem/ [2m357ms[22m
+[2m11:12:54[22m [34m[200][39m / [2m20ms[22m
+[2m11:12:56[22m [34m[200][39m / [2m7ms[22m

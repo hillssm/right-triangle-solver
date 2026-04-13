@@ -1,4 +1,4 @@
----
+﻿---
 interface Props {
   title?: string;
   solverHref?: string;
@@ -28,13 +28,13 @@ const modeSummaries = [
 ];
 ---
 
-<div class="dark flex h-[100dvh] w-full overflow-hidden bg-background text-on-surface font-body" data-muse-root>
+<div class="relative flex h-[100dvh] w-full overflow-hidden bg-background text-on-surface font-body" data-muse-root>
   <!-- Ambient glow effects -->
-  <div class="ambient-glow" style="width: 600px; height: 600px; top: -200px; right: -100px; background: #00daf3;"></div>
-  <div class="ambient-glow" style="width: 400px; height: 400px; bottom: -100px; left: -100px; background: #00bcd2;"></div>
+  <div class="ambient-glow" style="width: 620px; height: 620px; top: -220px; right: -120px; background: #d4af74;"></div>
+  <div class="ambient-glow" style="width: 420px; height: 420px; bottom: -120px; left: -120px; background: #8b6228;"></div>
 
-  <!-- ═══ SIDEBAR ═══ -->
-  <aside class="hidden h-screen w-[280px] shrink-0 flex-col border-r border-outline-variant/10 bg-gradient-to-b from-[#0a1628] to-[#0d1c32] py-6 md:flex" data-sidebar>
+  <!-- SIDEBAR -->
+  <aside class="hidden h-screen w-[280px] shrink-0 flex-col border-r border-primary/15 bg-[linear-gradient(180deg,#19120c_0%,#0f0a06_100%)] py-6 md:flex" data-sidebar>
     <!-- Brand -->
     <div class="mb-10 px-8">
       <div class="flex items-center gap-3">
@@ -43,27 +43,27 @@ const modeSummaries = [
         </div>
         <div>
           <h1 class="text-lg font-headline text-primary text-glow-primary">The Muse</h1>
-          <p class="font-label text-[9px] uppercase tracking-[0.25em] text-slate-500">Precision Solver</p>
+          <p class="font-label text-[9px] uppercase tracking-[0.25em] text-outline">Precision Solver</p>
         </div>
       </div>
     </div>
 
     <!-- Nav -->
     <nav class="flex-1 space-y-1 px-4" aria-label="Workspace navigation">
-      <a class="group flex items-center gap-4 rounded-xl border-l-[3px] border-primary bg-primary/8 px-5 py-3.5 text-primary transition-all duration-300" href={solverHref}>
+      <a class="group flex items-center gap-4 rounded-xl border border-primary/20 bg-primary/10 px-5 py-3.5 text-primary transition-all duration-300" href={solverHref}>
         <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110" style="font-variation-settings: 'FILL' 1;">calculate</span>
         <span class="text-sm font-medium tracking-wide">Solver</span>
-        <span class="ml-auto h-1.5 w-1.5 rounded-full bg-primary shadow-[0_0_6px_rgba(0,218,243,0.6)]"></span>
+        <span class="ml-auto h-1.5 w-1.5 rounded-full bg-primary shadow-[0_0_8px_rgba(212,175,116,0.65)]"></span>
       </a>
-      <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-slate-400 transition-all duration-300 hover:bg-surface-container-high/60 hover:text-slate-100" href={libraryHref}>
+      <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-on-surface-variant transition-all duration-300 hover:bg-primary/8 hover:text-on-surface" href={libraryHref}>
         <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">menu_book</span>
         <span class="text-sm tracking-wide">Library</span>
       </a>
-      <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-slate-400 transition-all duration-300 hover:bg-surface-container-high/60 hover:text-slate-100" href={practiceHref}>
+      <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-on-surface-variant transition-all duration-300 hover:bg-primary/8 hover:text-on-surface" href={practiceHref}>
         <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">edit_note</span>
         <span class="text-sm tracking-wide">Practice</span>
       </a>
-      <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-slate-400 transition-all duration-300 hover:bg-surface-container-high/60 hover:text-slate-100" href={formulasHref}>
+      <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-on-surface-variant transition-all duration-300 hover:bg-primary/8 hover:text-on-surface" href={formulasHref}>
         <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">functions</span>
         <span class="text-sm tracking-wide">Formulas</span>
       </a>
@@ -79,30 +79,30 @@ const modeSummaries = [
 
     <!-- Sidebar bottom -->
     <div class="space-y-1 border-t border-outline-variant/8 px-4 pt-5">
-      <a class="group flex items-center gap-4 rounded-lg px-5 py-2.5 text-slate-500 transition-colors hover:text-slate-300" href="#">
+      <a class="group flex items-center gap-4 rounded-lg px-5 py-2.5 text-outline transition-colors hover:text-on-surface" href="#">
         <span class="material-symbols-outlined text-lg">settings</span>
         <span class="text-xs font-label tracking-wide">Settings</span>
       </a>
-      <a class="group flex items-center gap-4 rounded-lg px-5 py-2.5 text-slate-500 transition-colors hover:text-slate-300" href="#">
+      <a class="group flex items-center gap-4 rounded-lg px-5 py-2.5 text-outline transition-colors hover:text-on-surface" href="#">
         <span class="material-symbols-outlined text-lg">help</span>
         <span class="text-xs font-label tracking-wide">Support</span>
       </a>
     </div>
   </aside>
 
-  <!-- ═══ MAIN CONTENT ═══ -->
+  <!-- MAIN CONTENT -->
   <main class="min-w-0 flex flex-1 flex-col overflow-hidden bg-background">
-    <!-- ─── TOP BAR ─── -->
-    <header class="relative z-10 h-16 w-full shrink-0 flex items-center justify-between px-6 md:px-8" style="background: linear-gradient(180deg, rgba(4,19,41,0.95) 0%, rgba(4,19,41,0.7) 100%); backdrop-filter: blur(12px);">
+    <!-- TOP BAR -->
+    <header class="relative z-10 h-16 w-full shrink-0 flex items-center justify-between border-b border-primary/10 px-6 md:px-8" style="background: linear-gradient(180deg, rgba(22,15,10,0.94) 0%, rgba(18,13,9,0.72) 100%); backdrop-filter: blur(12px);">
       <div class="flex items-center gap-4">
         <!-- Mobile menu toggle -->
-        <button type="button" class="inline-flex items-center justify-center rounded-lg border border-outline-variant/20 p-2 text-slate-400 transition-colors hover:border-primary/30 hover:text-primary md:hidden" data-mobile-sidebar-toggle aria-label="Toggle sidebar">
+        <button type="button" class="inline-flex items-center justify-center rounded-lg border border-outline-variant/30 p-2 text-on-surface-variant transition-colors hover:border-primary/35 hover:text-primary md:hidden" data-mobile-sidebar-toggle aria-label="Toggle sidebar">
           <span class="material-symbols-outlined text-xl">menu</span>
         </button>
         <span class="text-xl font-headline tracking-tight text-glow-primary md:text-2xl">
           <span class="text-gradient-primary">{title}</span>
         </span>
-        <span class="hidden rounded-full border border-primary/20 bg-primary/5 px-3 py-1 font-label text-[10px] uppercase tracking-widest text-primary sm:inline-block">Full Solver</span>
+        <span class="hidden rounded-full border border-primary/20 bg-primary/5 px-3 py-1 font-label text-[10px] uppercase tracking-widest text-primary sm:inline-block">Signature Mode</span>
       </div>
 
       <div class="flex items-center gap-3">
@@ -110,22 +110,22 @@ const modeSummaries = [
           <span class="material-symbols-outlined text-base">library_books</span>
           Browse Formulas
         </a>
-        <button type="button" class="flex h-9 w-9 items-center justify-center rounded-full border border-outline-variant/15 bg-surface-container-high/50 text-slate-400 transition-all hover:border-primary/30 hover:text-primary" data-tooltip="Profile" aria-label="Profile">
+        <button type="button" class="flex h-9 w-9 items-center justify-center rounded-full border border-outline-variant/25 bg-surface-container-high/60 text-on-surface-variant transition-all hover:border-primary/35 hover:text-primary" data-tooltip="Profile" aria-label="Profile">
           <span class="material-symbols-outlined text-xl">account_circle</span>
         </button>
       </div>
     </header>
 
-    <!-- ─── SCROLLABLE BODY ─── -->
+    <!-- SCROLLABLE BODY -->
     <div class="flex-1 overflow-y-auto custom-scrollbar p-4 md:p-6 lg:p-8 pb-24 md:pb-8">
       <div class="mx-auto grid max-w-[1440px] gap-6 xl:grid-cols-[380px_minmax(0,1fr)]">
 
-        <!-- ═══ LEFT PANEL: Input Form ═══ -->
-        <section class="rounded-2xl border border-outline-variant/15 bg-gradient-to-b from-surface-container-low to-surface-container-lowest p-6 lg:p-7" style="animation: fade-in-up 0.5s cubic-bezier(0.22,1,0.36,1) 0.1s both;">
+        <!-- LEFT PANEL: Input Form -->
+        <section class="rounded-2xl border border-primary/15 bg-[linear-gradient(160deg,rgba(35,27,20,0.94)_0%,rgba(20,15,11,0.94)_100%)] p-6 lg:p-7" style="animation: fade-in-up 0.5s cubic-bezier(0.22,1,0.36,1) 0.1s both;">
           <div class="flex items-start justify-between">
             <div>
               <h2 class="text-xl font-headline text-on-surface">Universal Right Triangle Solver</h2>
-              <p class="mt-2 text-sm text-slate-400 leading-relaxed">
+              <p class="mt-2 text-sm text-on-surface-variant leading-relaxed">
                 Choose any valid input pair. The solver computes every side, angle, and derived metric instantly.
               </p>
             </div>
@@ -137,7 +137,7 @@ const modeSummaries = [
           <form class="mt-7 space-y-5" data-solver-form>
             <!-- Mode selector -->
             <label class="grid gap-2 text-sm">
-              <span class="font-label text-xs uppercase tracking-widest text-slate-400 flex items-center gap-2">
+              <span class="font-label text-xs uppercase tracking-widest text-on-surface-variant flex items-center gap-2">
                 <span class="material-symbols-outlined text-sm text-primary">tune</span>
                 Input Mode
               </span>
@@ -150,7 +150,7 @@ const modeSummaries = [
 
             <!-- Input 1 -->
             <label class="grid gap-2 text-sm">
-              <span class="font-label text-xs uppercase tracking-widest text-slate-400" data-input1-label>Input 1</span>
+              <span class="font-label text-xs uppercase tracking-widest text-on-surface-variant" data-input1-label>Input 1</span>
               <div class="group relative">
                 <input class="input-shell pr-16 text-lg font-headline text-primary" data-input1 type="number" step="any" min="0" placeholder="0" />
                 <span class="pointer-events-none absolute top-1/2 right-4 -translate-y-1/2 rounded-md bg-primary/8 px-2 py-0.5 text-[10px] font-label uppercase tracking-wider text-primary" data-input1-unit>units</span>
@@ -159,7 +159,7 @@ const modeSummaries = [
 
             <!-- Input 2 -->
             <label class="grid gap-2 text-sm">
-              <span class="font-label text-xs uppercase tracking-widest text-slate-400" data-input2-label>Input 2</span>
+              <span class="font-label text-xs uppercase tracking-widest text-on-surface-variant" data-input2-label>Input 2</span>
               <div class="group relative">
                 <input class="input-shell pr-16 text-lg font-headline text-primary" data-input2 type="number" step="any" min="0" placeholder="0" />
                 <span class="pointer-events-none absolute top-1/2 right-4 -translate-y-1/2 rounded-md bg-primary/8 px-2 py-0.5 text-[10px] font-label uppercase tracking-wider text-primary" data-input2-unit>units</span>
@@ -169,7 +169,7 @@ const modeSummaries = [
             <!-- Mode description -->
             <div class="flex items-start gap-3 rounded-xl border border-outline-variant/15 bg-surface-container/50 px-4 py-3">
               <span class="material-symbols-outlined mt-0.5 text-base text-primary/60">info</span>
-              <p class="text-xs text-slate-400 leading-relaxed" data-mode-description>
+              <p class="text-xs text-on-surface-variant leading-relaxed" data-mode-description>
                 Pick a mode and enter your known values.
               </p>
             </div>
@@ -188,24 +188,24 @@ const modeSummaries = [
           </form>
 
           <!-- Status -->
-          <p class="mt-5 flex items-center gap-2 text-sm text-slate-400" data-status role="status" aria-live="polite">
+          <p class="mt-5 flex items-center gap-2 text-sm text-on-surface-variant" data-status role="status" aria-live="polite">
             <span class="material-symbols-outlined text-base text-primary/50">info</span>
             Enter inputs and click solve.
           </p>
 
           <!-- Mode reference panel -->
-          <details class="mt-6 rounded-xl border border-outline-variant/10 bg-surface-container-lowest/50">
-            <summary class="cursor-pointer px-5 py-4 font-label text-xs uppercase tracking-widest text-slate-400 select-none hover:text-slate-300 transition-colors flex items-center gap-2">
+          <details class="mt-6 rounded-xl border border-outline-variant/20 bg-surface-container-lowest/65">
+            <summary class="cursor-pointer px-5 py-4 font-label text-xs uppercase tracking-widest text-on-surface-variant select-none hover:text-on-surface transition-colors flex items-center gap-2">
               <span class="material-symbols-outlined text-sm">expand_more</span>
               All Supported Cases
             </summary>
-            <ul class="space-y-2 px-5 pb-5 text-sm text-slate-400 anim-stagger">
+            <ul class="space-y-2 px-5 pb-5 text-sm text-on-surface-variant anim-stagger">
               {modeSummaries.map((mode) => (
                 <li class="flex items-start gap-2 rounded-lg p-2 transition-colors hover:bg-surface-container-high/30">
                   <span class="material-symbols-outlined mt-0.5 text-sm text-primary/60">{mode.icon}</span>
                   <div>
                     <span class="text-primary font-medium">{mode.title}</span>
-                    <span class="text-slate-500"> — {mode.description}</span>
+                    <span class="text-outline"> - {mode.description}</span>
                   </div>
                 </li>
               ))}
@@ -213,12 +213,12 @@ const modeSummaries = [
           </details>
         </section>
 
-        <!-- ═══ RIGHT PANEL: Results ═══ -->
+        <!-- RIGHT PANEL: Results -->
         <section class="space-y-6" style="animation: fade-in-up 0.5s cubic-bezier(0.22,1,0.36,1) 0.25s both;">
           <!-- Triangle Viz + Key Stats -->
           <div class="grid gap-6 xl:grid-cols-[1.2fr_0.8fr]">
             <!-- SVG Visualization -->
-            <div class="relative overflow-hidden rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-6 hover-lift">
+            <div class="relative overflow-hidden rounded-2xl border border-primary/15 bg-surface-container-lowest p-6 hover-lift">
               <div class="dot-grid pointer-events-none absolute inset-0 opacity-[0.06]"></div>
 
               <div class="relative flex items-center justify-between">
@@ -227,7 +227,7 @@ const modeSummaries = [
                     <span class="material-symbols-outlined text-primary">visibility</span>
                     Triangle Visualization
                   </h2>
-                  <p class="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-label mt-1">Scaled from solved values</p>
+                  <p class="mt-1 text-[10px] font-label uppercase tracking-[0.2em] text-outline">Scaled from solved values</p>
                 </div>
                 <a class="group flex items-center gap-2 rounded-xl border border-primary/15 bg-primary/5 px-3 py-2 text-[10px] uppercase tracking-widest text-primary font-label transition-all hover:bg-primary/10" href={formulasHref}>
                   <span class="material-symbols-outlined text-sm">functions</span>
@@ -236,41 +236,41 @@ const modeSummaries = [
               </div>
 
               <div class="relative mt-6 flex items-center justify-center">
-                <svg class="h-auto w-full max-w-2xl drop-shadow-[0_0_30px_rgba(0,218,243,0.1)]" viewBox="0 0 420 290" aria-label="Right triangle solved geometry">
-                  <path d="M 60 220 L 80 220 L 80 240" fill="none" stroke="#3c494c" stroke-width="1.5"></path>
+                <svg class="h-auto w-full max-w-2xl drop-shadow-[0_0_30px_rgba(212,175,116,0.15)]" viewBox="0 0 420 290" aria-label="Right triangle solved geometry">
+                  <path d="M 60 220 L 80 220 L 80 240" fill="none" stroke="#6f5b47" stroke-width="1.5"></path>
                   <path
                     d="M 60 80 L 60 240 L 340 240 Z"
                     fill="none"
-                    stroke="#00daf3"
+                    stroke="#d4af74"
                     stroke-width="3"
                     stroke-linejoin="round"
                     data-triangle-path
-                    style="filter: drop-shadow(0 0 8px rgba(0,218,243,0.3));"
+                    style="filter: drop-shadow(0 0 10px rgba(212,175,116,0.34));"
                   ></path>
                   <path d="M 60 80 L 60 240 L 340 240 Z" fill="url(#triangleFillGradient)" opacity="0.12" data-triangle-fill></path>
 
                   <!-- Labels -->
-                  <text fill="#bbc9cc" font-family="Space Grotesk" font-size="13" text-anchor="end" x="47" y="160" data-label-a>a = 3.000</text>
-                  <text fill="#bbc9cc" font-family="Space Grotesk" font-size="13" text-anchor="middle" x="200" y="262" data-label-b>b = 4.000</text>
-                  <text fill="#00daf3" font-family="Space Grotesk" font-size="14" font-weight="700" text-anchor="start" x="226" y="146" data-label-c style="filter: drop-shadow(0 0 6px rgba(0,218,243,0.4));">c = 5.000</text>
-                  <text fill="#7ed1f7" font-family="Space Grotesk" font-size="11" x="282" y="226" data-label-alpha>A = 36.870 deg</text>
-                  <text fill="#7ed1f7" font-family="Space Grotesk" font-size="11" x="78" y="96" data-label-beta>B = 53.130 deg</text>
+                  <text fill="#c4b7a5" font-family="Sora" font-size="13" text-anchor="end" x="47" y="160" data-label-a>a = 3.000</text>
+                  <text fill="#c4b7a5" font-family="Sora" font-size="13" text-anchor="middle" x="200" y="262" data-label-b>b = 4.000</text>
+                  <text fill="#d4af74" font-family="Sora" font-size="14" font-weight="700" text-anchor="start" x="226" y="146" data-label-c style="filter: drop-shadow(0 0 6px rgba(212,175,116,0.4));">c = 5.000</text>
+                  <text fill="#d9c3a0" font-family="Sora" font-size="11" x="282" y="226" data-label-alpha>A = 36.870 deg</text>
+                  <text fill="#d9c3a0" font-family="Sora" font-size="11" x="78" y="96" data-label-beta>B = 53.130 deg</text>
 
                   <!-- Vertex dots -->
-                  <circle cx="60" cy="240" r="4" fill="#00daf3" opacity="0.7">
+                  <circle cx="60" cy="240" r="4" fill="#d4af74" opacity="0.7">
                     <animate attributeName="r" values="3;5;3" dur="3s" repeatCount="indefinite" />
                   </circle>
-                  <circle cx="340" cy="240" r="4" fill="#00daf3" opacity="0.7">
+                  <circle cx="340" cy="240" r="4" fill="#d4af74" opacity="0.7">
                     <animate attributeName="r" values="3;5;3" dur="3s" repeatCount="indefinite" begin="1s" />
                   </circle>
-                  <circle cx="60" cy="80" r="4" fill="#00daf3" opacity="0.7">
+                  <circle cx="60" cy="80" r="4" fill="#d4af74" opacity="0.7">
                     <animate attributeName="r" values="3;5;3" dur="3s" repeatCount="indefinite" begin="2s" />
                   </circle>
 
                   <defs>
                     <linearGradient id="triangleFillGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stop-color="#00daf3" stop-opacity="1"></stop>
-                      <stop offset="100%" stop-color="#00bcd2" stop-opacity="0.15"></stop>
+                      <stop offset="0%" stop-color="#d4af74" stop-opacity="1"></stop>
+                      <stop offset="100%" stop-color="#8b6228" stop-opacity="0.15"></stop>
                     </linearGradient>
                   </defs>
                 </svg>
@@ -284,30 +284,30 @@ const modeSummaries = [
                   <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10">
                     <span class="material-symbols-outlined text-base text-primary">square_foot</span>
                   </div>
-                  <p class="font-label text-[10px] uppercase tracking-widest text-slate-500">Area</p>
+                  <p class="font-label text-[10px] uppercase tracking-widest text-outline">Area</p>
                 </div>
                 <p class="mt-3 text-3xl font-headline text-primary text-glow-primary stat-value" data-out-area>6.0000</p>
-                <p class="mt-1 text-[10px] text-slate-500 font-label">square units</p>
+                <p class="mt-1 text-[10px] font-label text-outline">square units</p>
               </div>
               <div class="group rounded-2xl border border-outline-variant/15 bg-gradient-to-br from-surface-container-low to-surface-container-lowest p-5 hover-lift">
                 <div class="flex items-center gap-3">
                   <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-tertiary/10">
                     <span class="material-symbols-outlined text-base text-tertiary">border_all</span>
                   </div>
-                  <p class="font-label text-[10px] uppercase tracking-widest text-slate-500">Perimeter</p>
+                  <p class="font-label text-[10px] uppercase tracking-widest text-outline">Perimeter</p>
                 </div>
                 <p class="mt-3 text-3xl font-headline text-on-surface stat-value" data-out-perimeter>12.0000</p>
-                <p class="mt-1 text-[10px] text-slate-500 font-label">linear units</p>
+                <p class="mt-1 text-[10px] font-label text-outline">linear units</p>
               </div>
               <div class="group rounded-2xl border border-outline-variant/15 bg-gradient-to-br from-surface-container-low to-surface-container-lowest p-5 hover-lift">
                 <div class="flex items-center gap-3">
                   <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-secondary-fixed/10">
                     <span class="material-symbols-outlined text-base text-secondary-fixed">show_chart</span>
                   </div>
-                  <p class="font-label text-[10px] uppercase tracking-widest text-slate-500">Hypotenuse</p>
+                  <p class="font-label text-[10px] uppercase tracking-widest text-outline">Hypotenuse</p>
                 </div>
                 <p class="mt-3 text-3xl font-headline text-secondary-fixed text-glow-secondary stat-value" data-out-c>5.0000</p>
-                <p class="mt-1 text-[10px] text-slate-500 font-label">longest side</p>
+                <p class="mt-1 text-[10px] font-label text-outline">longest side</p>
               </div>
             </div>
           </div>
@@ -322,59 +322,59 @@ const modeSummaries = [
               </h3>
               <div class="mt-4 grid grid-cols-2 gap-3 text-sm anim-stagger">
                 <div class="group rounded-xl bg-surface-container-lowest/70 p-3 transition-all hover:bg-surface-container-high/40 border border-transparent hover:border-primary/10">
-                  <span class="text-slate-500 font-label text-[10px] uppercase tracking-widest">Leg a</span>
+                  <span class="text-outline font-label text-[10px] uppercase tracking-widest">Leg a</span>
                   <div class="font-mono text-primary mt-1" data-out-a>3.0000</div>
                 </div>
                 <div class="group rounded-xl bg-surface-container-lowest/70 p-3 transition-all hover:bg-surface-container-high/40 border border-transparent hover:border-primary/10">
-                  <span class="text-slate-500 font-label text-[10px] uppercase tracking-widest">Leg b</span>
+                  <span class="text-outline font-label text-[10px] uppercase tracking-widest">Leg b</span>
                   <div class="font-mono text-primary mt-1" data-out-b>4.0000</div>
                 </div>
                 <div class="group rounded-xl bg-surface-container-lowest/70 p-3 transition-all hover:bg-surface-container-high/40 border border-transparent hover:border-primary/10">
-                  <span class="text-slate-500 font-label text-[10px] uppercase tracking-widest">Hypotenuse c</span>
+                  <span class="text-outline font-label text-[10px] uppercase tracking-widest">Hypotenuse c</span>
                   <div class="font-mono text-primary mt-1" data-out-c-2>5.0000</div>
                 </div>
                 <div class="group rounded-xl bg-surface-container-lowest/70 p-3 transition-all hover:bg-surface-container-high/40 border border-transparent hover:border-tertiary/10">
-                  <span class="text-slate-500 font-label text-[10px] uppercase tracking-widest">Angle A</span>
-                  <div class="font-mono text-tertiary mt-1" data-out-a-angle>36.8700°</div>
+                  <span class="text-outline font-label text-[10px] uppercase tracking-widest">Angle A</span>
+                  <div class="font-mono text-tertiary mt-1" data-out-a-angle>36.8700 deg</div>
                 </div>
                 <div class="group rounded-xl bg-surface-container-lowest/70 p-3 transition-all hover:bg-surface-container-high/40 border border-transparent hover:border-tertiary/10">
-                  <span class="text-slate-500 font-label text-[10px] uppercase tracking-widest">Angle B</span>
-                  <div class="font-mono text-tertiary mt-1" data-out-b-angle>53.1300°</div>
+                  <span class="text-outline font-label text-[10px] uppercase tracking-widest">Angle B</span>
+                  <div class="font-mono text-tertiary mt-1" data-out-b-angle>53.1300 deg</div>
                 </div>
                 <div class="group rounded-xl bg-surface-container-lowest/70 p-3 transition-all hover:bg-surface-container-high/40 border border-transparent hover:border-outline-variant/10">
-                  <span class="text-slate-500 font-label text-[10px] uppercase tracking-widest">Semiperimeter</span>
+                  <span class="text-outline font-label text-[10px] uppercase tracking-widest">Semiperimeter</span>
                   <div class="font-mono text-on-surface mt-1" data-out-s>6.0000</div>
                 </div>
                 <div class="group rounded-xl bg-surface-container-lowest/70 p-3 transition-all hover:bg-surface-container-high/40 border border-transparent hover:border-outline-variant/10">
-                  <span class="text-slate-500 font-label text-[10px] uppercase tracking-widest">Altitude h</span>
+                  <span class="text-outline font-label text-[10px] uppercase tracking-widest">Altitude h</span>
                   <div class="font-mono text-on-surface mt-1" data-out-h>2.4000</div>
                 </div>
                 <div class="group rounded-xl bg-surface-container-lowest/70 p-3 transition-all hover:bg-surface-container-high/40 border border-transparent hover:border-outline-variant/10">
-                  <span class="text-slate-500 font-label text-[10px] uppercase tracking-widest">Inradius r</span>
+                  <span class="text-outline font-label text-[10px] uppercase tracking-widest">Inradius r</span>
                   <div class="font-mono text-on-surface mt-1" data-out-r>1.0000</div>
                 </div>
                 <div class="group rounded-xl bg-surface-container-lowest/70 p-3 transition-all hover:bg-surface-container-high/40 border border-transparent hover:border-outline-variant/10">
-                  <span class="text-slate-500 font-label text-[10px] uppercase tracking-widest">Circumradius R</span>
+                  <span class="text-outline font-label text-[10px] uppercase tracking-widest">Circumradius R</span>
                   <div class="font-mono text-on-surface mt-1" data-out-R>2.5000</div>
                 </div>
                 <div class="group rounded-xl bg-surface-container-lowest/70 p-3 transition-all hover:bg-surface-container-high/40 border border-transparent hover:border-outline-variant/10">
-                  <span class="text-slate-500 font-label text-[10px] uppercase tracking-widest">Projection p</span>
+                  <span class="text-outline font-label text-[10px] uppercase tracking-widest">Projection p</span>
                   <div class="font-mono text-on-surface mt-1" data-out-p>1.8000</div>
                 </div>
                 <div class="group rounded-xl bg-surface-container-lowest/70 p-3 transition-all hover:bg-surface-container-high/40 border border-transparent hover:border-outline-variant/10">
-                  <span class="text-slate-500 font-label text-[10px] uppercase tracking-widest">Projection q</span>
+                  <span class="text-outline font-label text-[10px] uppercase tracking-widest">Projection q</span>
                   <div class="font-mono text-on-surface mt-1" data-out-q>3.2000</div>
                 </div>
                 <div class="group rounded-xl bg-surface-container-lowest/70 p-3 transition-all hover:bg-surface-container-high/40 border border-transparent hover:border-outline-variant/10">
-                  <span class="text-slate-500 font-label text-[10px] uppercase tracking-widest">sin(A)</span>
+                  <span class="text-outline font-label text-[10px] uppercase tracking-widest">sin(A)</span>
                   <div class="font-mono text-on-surface mt-1" data-out-sinA>0.6000</div>
                 </div>
                 <div class="group rounded-xl bg-surface-container-lowest/70 p-3 transition-all hover:bg-surface-container-high/40 border border-transparent hover:border-outline-variant/10">
-                  <span class="text-slate-500 font-label text-[10px] uppercase tracking-widest">cos(A)</span>
+                  <span class="text-outline font-label text-[10px] uppercase tracking-widest">cos(A)</span>
                   <div class="font-mono text-on-surface mt-1" data-out-cosA>0.8000</div>
                 </div>
                 <div class="group rounded-xl bg-surface-container-lowest/70 p-3 transition-all hover:bg-surface-container-high/40 border border-transparent hover:border-outline-variant/10">
-                  <span class="text-slate-500 font-label text-[10px] uppercase tracking-widest">tan(A)</span>
+                  <span class="text-outline font-label text-[10px] uppercase tracking-widest">tan(A)</span>
                   <div class="font-mono text-on-surface mt-1" data-out-tanA>0.7500</div>
                 </div>
               </div>
@@ -386,19 +386,19 @@ const modeSummaries = [
                 <span class="material-symbols-outlined text-primary">description</span>
                 How This Was Solved
               </h3>
-              <ol class="mt-4 list-decimal space-y-3 pl-5 text-sm text-slate-300" data-steps-list>
-                <li class="py-1 pl-2">Used Pythagorean theorem: c = sqrt(a² + b²).</li>
-                <li class="py-1 pl-2">Computed angle A with atan(a / b), then B = 90 − A.</li>
+              <ol class="mt-4 list-decimal space-y-3 pl-5 text-sm text-on-surface-variant" data-steps-list>
+                <li class="py-1 pl-2">Used Pythagorean theorem: c = sqrt(a^2 + b^2).</li>
+                <li class="py-1 pl-2">Computed angle A with atan(a / b), then B = 90 - A.</li>
                 <li class="py-1 pl-2">Derived area, perimeter, and circle radii from solved sides.</li>
               </ol>
 
               <div class="mt-8 border-t border-outline-variant/10 pt-5">
-                <h4 class="text-xs font-label uppercase tracking-widest text-slate-500 flex items-center gap-2">
+                <h4 class="text-xs font-label uppercase tracking-widest text-outline flex items-center gap-2">
                   <span class="material-symbols-outlined text-sm text-primary/50">history</span>
                   Recent Solves
                 </h4>
-                <ul class="mt-3 space-y-2 text-xs text-slate-300 max-h-64 overflow-y-auto custom-scrollbar" data-history-list>
-                  <li class="text-slate-500 italic">No history yet. Solve to save entries.</li>
+                <ul class="mt-3 max-h-64 space-y-2 overflow-y-auto custom-scrollbar text-xs text-on-surface-variant" data-history-list>
+                  <li class="text-outline italic">No history yet. Solve to save entries.</li>
                 </ul>
               </div>
             </section>
@@ -408,29 +408,29 @@ const modeSummaries = [
     </div>
   </main>
 
-  <!-- ═══ MOBILE BOTTOM NAV ═══ -->
-  <nav class="fixed right-0 bottom-0 left-0 z-20 flex h-16 items-center justify-around border-t border-outline-variant/8 md:hidden" style="background: linear-gradient(180deg, rgba(13,28,50,0.95) 0%, rgba(10,22,40,1) 100%); backdrop-filter: blur(16px);">
+  <!-- MOBILE BOTTOM NAV -->
+  <nav class="fixed right-0 bottom-0 left-0 z-20 flex h-16 items-center justify-around border-t border-primary/10 md:hidden" style="background: linear-gradient(180deg, rgba(28,19,13,0.95) 0%, rgba(16,11,8,1) 100%); backdrop-filter: blur(16px);">
     <a class="flex flex-col items-center gap-1 text-primary" href={solverHref}>
       <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calculate</span>
       <span class="text-[9px] font-label font-medium tracking-wide">Solver</span>
     </a>
-    <a class="flex flex-col items-center gap-1 text-slate-500 transition-colors hover:text-slate-300" href={libraryHref}>
+    <a class="flex flex-col items-center gap-1 text-outline transition-colors hover:text-on-surface" href={libraryHref}>
       <span class="material-symbols-outlined">menu_book</span>
       <span class="text-[9px] font-label tracking-wide">Library</span>
     </a>
-    <a class="flex flex-col items-center gap-1 text-slate-500 transition-colors hover:text-slate-300" href={practiceHref}>
+    <a class="flex flex-col items-center gap-1 text-outline transition-colors hover:text-on-surface" href={practiceHref}>
       <span class="material-symbols-outlined">edit_note</span>
       <span class="text-[9px] font-label tracking-wide">Practice</span>
     </a>
-    <a class="flex flex-col items-center gap-1 text-slate-500 transition-colors hover:text-slate-300" href={formulasHref}>
+    <a class="flex flex-col items-center gap-1 text-outline transition-colors hover:text-on-surface" href={formulasHref}>
       <span class="material-symbols-outlined">functions</span>
       <span class="text-[9px] font-label tracking-wide">Formulas</span>
     </a>
   </nav>
 
-  <!-- ═══ MOBILE SIDEBAR OVERLAY ═══ -->
+  <!-- MOBILE SIDEBAR OVERLAY -->
   <div class="fixed inset-0 z-50 hidden bg-black/60 md:hidden" data-mobile-sidebar-overlay></div>
-  <aside class="fixed left-0 top-0 z-50 h-full w-[280px] -translate-x-full bg-gradient-to-b from-[#0a1628] to-[#0d1c32] border-r border-outline-variant/10 transition-transform duration-300 md:hidden" data-mobile-sidebar-panel>
+  <aside class="fixed left-0 top-0 z-50 h-full w-[280px] -translate-x-full border-r border-primary/15 bg-[linear-gradient(180deg,#19120c_0%,#0f0a06_100%)] transition-transform duration-300 md:hidden" data-mobile-sidebar-panel>
     <div class="flex items-center justify-between px-6 py-5 border-b border-outline-variant/10">
       <div class="flex items-center gap-3">
         <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-primary-container">
@@ -438,24 +438,24 @@ const modeSummaries = [
         </div>
         <span class="text-base font-headline text-primary">The Muse</span>
       </div>
-      <button type="button" class="rounded-lg border border-outline-variant/20 p-1.5 text-slate-400 hover:text-primary" data-mobile-sidebar-close aria-label="Close sidebar">
+      <button type="button" class="rounded-lg border border-outline-variant/20 p-1.5 text-on-surface-variant hover:text-primary" data-mobile-sidebar-close aria-label="Close sidebar">
         <span class="material-symbols-outlined text-lg">close</span>
       </button>
     </div>
     <nav class="space-y-1 p-4" aria-label="Mobile navigation">
-      <a class="flex items-center gap-4 rounded-xl border-l-[3px] border-primary bg-primary/8 px-5 py-3.5 text-primary" href={solverHref}>
+      <a class="flex items-center gap-4 rounded-xl border border-primary/20 bg-primary/10 px-5 py-3.5 text-primary" href={solverHref}>
         <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calculate</span>
         <span class="text-sm font-medium tracking-wide">Solver</span>
       </a>
-      <a class="flex items-center gap-4 rounded-xl px-5 py-3.5 text-slate-400 transition-all hover:bg-surface-container-high/60 hover:text-slate-100" href={libraryHref}>
+      <a class="flex items-center gap-4 rounded-xl px-5 py-3.5 text-on-surface-variant transition-all hover:bg-primary/8 hover:text-on-surface" href={libraryHref}>
         <span class="material-symbols-outlined">menu_book</span>
         <span class="text-sm tracking-wide">Library</span>
       </a>
-      <a class="flex items-center gap-4 rounded-xl px-5 py-3.5 text-slate-400 transition-all hover:bg-surface-container-high/60 hover:text-slate-100" href={practiceHref}>
+      <a class="flex items-center gap-4 rounded-xl px-5 py-3.5 text-on-surface-variant transition-all hover:bg-primary/8 hover:text-on-surface" href={practiceHref}>
         <span class="material-symbols-outlined">edit_note</span>
         <span class="text-sm tracking-wide">Practice</span>
       </a>
-      <a class="flex items-center gap-4 rounded-xl px-5 py-3.5 text-slate-400 transition-all hover:bg-surface-container-high/60 hover:text-slate-100" href={formulasHref}>
+      <a class="flex items-center gap-4 rounded-xl px-5 py-3.5 text-on-surface-variant transition-all hover:bg-primary/8 hover:text-on-surface" href={formulasHref}>
         <span class="material-symbols-outlined">functions</span>
         <span class="text-sm tracking-wide">Formulas</span>
       </a>
@@ -481,3 +481,4 @@ const modeSummaries = [
     })();
   </script>
 </div>
+

@@ -5,10 +5,10 @@
 @theme {
   --breakpoint-2xl: 90rem;
 
-  --font-sans: "Manrope", "Segoe UI", sans-serif;
-  --font-headline: "Cormorant Garamond", Georgia, serif;
-  --font-body: "Manrope", "Segoe UI", sans-serif;
-  --font-label: "Sora", "Segoe UI", sans-serif;
+  --font-sans: "Plus Jakarta Sans", "Segoe UI", sans-serif;
+  --font-headline: "Bodoni Moda", "Cormorant Garamond", Georgia, serif;
+  --font-body: "Plus Jakarta Sans", "Segoe UI", sans-serif;
+  --font-label: "Space Grotesk", "Segoe UI", sans-serif;
   --font-mono: "IBM Plex Mono", Consolas, "Courier New", monospace;
 
   --color-background: #0c0806;
@@ -175,9 +175,10 @@
 
   body {
     @apply antialiased;
-    background: radial-gradient(1200px 500px at 12% -12%, rgba(212, 175, 116, 0.2), transparent 60%),
-      radial-gradient(1000px 500px at 90% -6%, rgba(170, 118, 56, 0.15), transparent 68%),
-      linear-gradient(160deg, #070403 0%, #120d09 44%, #1a130d 100%);
+    background:
+      radial-gradient(1200px 520px at 10% -14%, rgba(212, 175, 116, 0.23), transparent 62%),
+      radial-gradient(1000px 540px at 90% -12%, rgba(170, 118, 56, 0.16), transparent 68%),
+      linear-gradient(160deg, #060403 0%, #110c08 46%, #19120d 100%);
     color: var(--color-on-surface);
     font-family: var(--font-body);
     min-height: 100vh;
@@ -190,7 +191,7 @@
     inset: 0;
     pointer-events: none;
     z-index: -1;
-    opacity: 0.3;
+    opacity: 0.22;
     background-image:
       linear-gradient(to right, rgba(212, 175, 116, 0.04) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(212, 175, 116, 0.04) 1px, transparent 1px);
@@ -271,6 +272,44 @@
 
   .surface-card:hover::after {
     opacity: 1;
+  }
+
+  .lux-stat {
+    @apply rounded-2xl border border-outline-variant/25 bg-surface-container-low/75 p-5;
+    box-shadow:
+      0 18px 45px -34px rgba(0, 0, 0, 0.9),
+      inset 0 1px 0 rgba(255, 247, 230, 0.05);
+    transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .lux-stat:hover {
+    @apply border-primary/40;
+    transform: translateY(-2px);
+    box-shadow:
+      0 24px 54px -32px rgba(0, 0, 0, 0.88),
+      0 0 20px -12px rgba(212, 175, 116, 0.45),
+      inset 0 1px 0 rgba(255, 247, 230, 0.08);
+  }
+
+  .lux-data-cell {
+    @apply rounded-xl border border-outline-variant/20 bg-surface-container-lowest/75 p-3;
+    display: grid;
+    gap: 0.4rem;
+    transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .lux-data-cell span {
+    @apply font-label text-[10px] uppercase tracking-[0.18em] text-outline;
+  }
+
+  .lux-data-cell strong {
+    @apply font-mono text-sm text-on-surface;
+    letter-spacing: 0.01em;
+  }
+
+  .lux-data-cell:hover {
+    @apply border-primary/30 bg-surface-container-high/40;
+    transform: translateY(-1px);
   }
 
   .btn-primary {

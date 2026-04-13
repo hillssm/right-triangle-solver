@@ -1,4 +1,4 @@
-﻿---
+---
 import { localizePath, type Locale } from 'theme/i18n/locales';
 import { getLocalizedNavItems } from 'theme/utils/site';
 
@@ -15,18 +15,20 @@ const navItems = getLocalizedNavItems(locale, 'header', navLabels);
 const homeHref = localizePath(locale, '/');
 ---
 
-<header class="sticky top-0 z-40 border-b border-cyan-100 bg-white/90 backdrop-blur-md">
-  <div class="mx-auto flex w-full max-w-[1200px] items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-    <a href={homeHref} class="inline-flex items-center gap-3 text-slate-900" data-mobile-link>
-      <img src={logo} alt={`${siteTitle} logo`} class="h-9 w-auto" loading="lazy" />
+<header class="sticky top-0 z-40 border-b border-outline-variant/10" style="background: linear-gradient(180deg, rgba(4,19,41,0.95) 0%, rgba(4,19,41,0.8) 100%); backdrop-filter: blur(16px) saturate(1.5);">
+  <div class="mx-auto flex w-full max-w-[1200px] items-center justify-between px-4 py-3.5 sm:px-6 lg:px-8">
+    <a href={homeHref} class="group inline-flex items-center gap-3 text-on-surface transition-colors hover:text-primary" data-mobile-link>
+      <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-primary-container shadow-[0_0_16px_-4px_rgba(0,218,243,0.3)] transition-transform duration-300 group-hover:scale-105">
+        <img src={logo} alt={`${siteTitle} logo`} class="h-5 w-auto" loading="lazy" />
+      </div>
       <span class="text-sm font-bold tracking-tight sm:text-base">{siteTitle}</span>
     </a>
 
-    <nav aria-label="Primary" class="hidden items-center gap-5 text-sm font-medium md:flex">
+    <nav aria-label="Primary" class="hidden items-center gap-1 text-sm font-medium md:flex">
       {navItems.map((item) => (
         <a
           href={item.href}
-          class="rounded-md px-2 py-1 text-slate-700 hover:bg-cyan-50 hover:text-cyan-700"
+          class="rounded-lg px-3 py-2 text-slate-400 transition-all duration-200 hover:bg-primary/8 hover:text-primary"
         >
           {item.label}
         </a>
@@ -36,19 +38,19 @@ const homeHref = localizePath(locale, '/');
     <button
       type="button"
       data-menu-toggle
-      class="inline-flex items-center justify-center rounded-md border border-slate-300 p-2 text-slate-700 hover:border-cyan-500 hover:text-cyan-700 md:hidden"
+      class="inline-flex items-center justify-center rounded-lg border border-outline-variant/20 p-2 text-slate-400 transition-all duration-200 hover:border-primary/30 hover:text-primary md:hidden"
       aria-expanded="false"
       aria-controls="mobile-menu"
       aria-label="Toggle menu"
     >
-      <span data-icon-open aria-hidden="true">Menu</span>
-      <span data-icon-close class="hidden" aria-hidden="true">X</span>
+      <span data-icon-open aria-hidden="true" class="material-symbols-outlined text-xl">menu</span>
+      <span data-icon-close class="material-symbols-outlined text-xl hidden" aria-hidden="true">close</span>
     </button>
   </div>
 
   <div
     data-mobile-overlay
-    class="fixed inset-0 hidden bg-slate-900/55 md:hidden"
+    class="fixed inset-0 hidden bg-black/60 backdrop-blur-sm md:hidden"
     aria-hidden="true"
   ></div>
 
@@ -56,17 +58,22 @@ const homeHref = localizePath(locale, '/');
     id="mobile-menu"
     data-mobile-panel
     aria-hidden="true"
-    class="fixed right-0 top-0 h-full w-[85%] max-w-sm translate-x-full border-l border-cyan-100 bg-white p-5 shadow-2xl transition-transform duration-200 md:hidden"
+    class="fixed right-0 top-0 h-full w-[85%] max-w-sm translate-x-full border-l border-outline-variant/10 bg-gradient-to-b from-[#0a1628] to-[#0d1c32] p-6 shadow-[var(--shadow-luxury)] transition-transform duration-300 md:hidden"
   >
-    <div class="mb-6 flex items-center justify-between">
-      <span class="text-sm font-semibold text-slate-900">Menu</span>
+    <div class="mb-8 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-primary-container">
+          <img src={logo} alt="" class="h-4 w-auto" loading="lazy" />
+        </div>
+        <span class="text-sm font-semibold text-on-surface">{siteTitle}</span>
+      </div>
       <button
         type="button"
         data-menu-close
-        class="rounded-md border border-slate-300 px-2 py-1 text-sm text-slate-700"
+        class="rounded-lg border border-outline-variant/20 p-2 text-slate-400 transition-colors hover:text-primary"
         aria-label="Close menu"
       >
-        Close
+        <span class="material-symbols-outlined text-lg">close</span>
       </button>
     </div>
 
@@ -74,7 +81,7 @@ const homeHref = localizePath(locale, '/');
       {navItems.map((item) => (
         <a
           href={item.href}
-          class="rounded-lg border border-slate-200 px-3 py-2 text-sm font-medium text-slate-700 hover:border-cyan-300 hover:bg-cyan-50 hover:text-cyan-700"
+          class="rounded-xl border border-outline-variant/10 px-4 py-3 text-sm font-medium text-slate-300 transition-all duration-200 hover:border-primary/20 hover:bg-primary/8 hover:text-primary"
           data-mobile-link
         >
           {item.label}

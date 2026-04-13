@@ -1,33 +1,37 @@
-﻿---
+---
 interface Props {
   heading: string;
 }
 
 const { heading } = Astro.props;
+
+const defaultSteps = [
+  { icon: 'input', title: '1. Enter known sides', desc: 'Provide the values you know — any two of the three sides, or one side and one angle.' },
+  { icon: 'bolt', title: '2. Solve instantly', desc: 'Our solver applies the Pythagorean theorem and trigonometric identities in milliseconds.' },
+  { icon: 'verified', title: '3. Validate your work', desc: 'Compare the computed hypotenuse, area, angles, and inradius against your own solution.' }
+];
 ---
 
 <section id="how-it-works" class="section-shell">
-  <h2 class="text-2xl font-bold sm:text-3xl">{heading}</h2>
-  <div class="mt-6 grid gap-4 sm:grid-cols-3">
+  <div class="flex items-center gap-3 mb-2">
+    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
+      <span class="material-symbols-outlined text-xl text-primary">rocket_launch</span>
+    </div>
+    <h2 class="text-2xl font-headline sm:text-3xl">{heading}</h2>
+  </div>
+  <p class="text-sm text-slate-400 mb-6">Three simple steps to solve any right triangle problem.</p>
+
+  <div class="mt-4 grid gap-5 sm:grid-cols-3 anim-stagger">
     <slot>
-      <article class="surface-card">
-        <h3 class="text-base font-semibold">1. Enter known sides</h3>
-        <p class="mt-2 text-sm text-slate-600">
-          Add the two leg values from your problem statement.
-        </p>
-      </article>
-      <article class="surface-card">
-        <h3 class="text-base font-semibold">2. Solve instantly</h3>
-        <p class="mt-2 text-sm text-slate-600">
-          The calculator applies the Pythagorean theorem and derived formulas.
-        </p>
-      </article>
-      <article class="surface-card">
-        <h3 class="text-base font-semibold">3. Validate your work</h3>
-        <p class="mt-2 text-sm text-slate-600">
-          Compare computed values with your handwritten solution steps.
-        </p>
-      </article>
+      {defaultSteps.map((step) => (
+        <article class="group surface-card flex flex-col gap-4">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 transition-transform duration-300 group-hover:scale-110">
+            <span class="material-symbols-outlined text-xl text-primary">{step.icon}</span>
+          </div>
+          <h3 class="text-base font-semibold text-on-surface">{step.title}</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">{step.desc}</p>
+        </article>
+      ))}
     </slot>
   </div>
 </section>

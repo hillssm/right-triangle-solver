@@ -15,111 +15,119 @@ const {
 ---
 
 <div class="dark min-h-screen bg-background text-on-background font-body flex overflow-hidden">
-  <aside class="hidden h-screen w-64 shrink-0 flex-col border-r border-[#3c494c]/15 bg-[#0d1c32] py-6 md:flex">
+  <!-- Ambient glow -->
+  <div class="ambient-glow" style="width: 500px; height: 500px; top: -150px; left: 30%; background: #00daf3;"></div>
+  <div class="ambient-glow" style="width: 400px; height: 400px; bottom: -100px; right: -50px; background: #7ed1f7;"></div>
+
+  <!-- ═══ SIDEBAR ═══ -->
+  <aside class="hidden h-screen w-[280px] shrink-0 flex-col border-r border-outline-variant/10 bg-gradient-to-b from-[#0a1628] to-[#0d1c32] py-6 md:flex">
     <div class="mb-10 px-8">
-      <h1 class="text-xl font-headline text-primary">The Muse</h1>
-      <p class="text-[10px] font-label uppercase tracking-[0.2em] text-slate-500">Precision Solver</p>
+      <div class="flex items-center gap-3">
+        <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-primary-container shadow-[var(--shadow-glow-primary)]">
+          <span class="material-symbols-outlined text-lg text-on-primary" style="font-variation-settings: 'FILL' 1;">architecture</span>
+        </div>
+        <div>
+          <h1 class="text-lg font-headline text-primary text-glow-primary">The Muse</h1>
+          <p class="font-label text-[9px] uppercase tracking-[0.25em] text-slate-500">Precision Solver</p>
+        </div>
+      </div>
     </div>
 
-    <nav class="flex-1 space-y-1" aria-label="Workspace navigation">
-      <a
-        class="flex items-center px-8 py-3 text-slate-400 transition-all duration-300 ease-in-out hover:bg-[#1c2a41] hover:text-slate-100"
-        href={solverHref}
-      >
-        <span class="material-symbols-outlined mr-4">calculate</span>
-        <span class="font-label text-sm tracking-wide">Solver</span>
+    <nav class="flex-1 space-y-1 px-4" aria-label="Workspace navigation">
+      <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-slate-400 transition-all duration-300 hover:bg-surface-container-high/60 hover:text-slate-100" href={solverHref}>
+        <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">calculate</span>
+        <span class="text-sm tracking-wide">Solver</span>
       </a>
-      <a
-        class="flex items-center border-l-2 border-primary bg-[#1c2a41] px-8 py-3 text-primary transition-all duration-300 ease-in-out"
-        href={libraryHref}
-      >
-        <span class="material-symbols-outlined mr-4">menu_book</span>
-        <span class="font-label text-sm tracking-wide">Library</span>
+      <a class="group flex items-center gap-4 rounded-xl border-l-[3px] border-primary bg-primary/8 px-5 py-3.5 text-primary transition-all duration-300" href={libraryHref}>
+        <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+        <span class="text-sm font-medium tracking-wide">Library</span>
+        <span class="ml-auto h-1.5 w-1.5 rounded-full bg-primary shadow-[0_0_6px_rgba(0,218,243,0.6)]"></span>
       </a>
-      <a
-        class="flex items-center px-8 py-3 text-slate-400 transition-all duration-300 ease-in-out hover:bg-[#1c2a41] hover:text-slate-100"
-        href={practiceHref}
-      >
-        <span class="material-symbols-outlined mr-4">edit_note</span>
-        <span class="font-label text-sm tracking-wide">Practice</span>
+      <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-slate-400 transition-all duration-300 hover:bg-surface-container-high/60 hover:text-slate-100" href={practiceHref}>
+        <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">edit_note</span>
+        <span class="text-sm tracking-wide">Practice</span>
       </a>
-      <a
-        class="flex items-center px-8 py-3 text-slate-400 transition-all duration-300 ease-in-out hover:bg-[#1c2a41] hover:text-slate-100"
-        href={formulasHref}
-      >
-        <span class="material-symbols-outlined mr-4">functions</span>
-        <span class="font-label text-sm tracking-wide">Formulas</span>
+      <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-slate-400 transition-all duration-300 hover:bg-surface-container-high/60 hover:text-slate-100" href={formulasHref}>
+        <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">functions</span>
+        <span class="text-sm tracking-wide">Formulas</span>
       </a>
     </nav>
 
-    <div class="mb-6 px-8">
-      <button
-        class="w-full rounded-md bg-gradient-to-br from-primary to-primary-container py-3 font-label text-xs font-bold uppercase tracking-widest text-on-primary shadow-lg"
-        type="button"
-      >
+    <div class="mb-6 px-6">
+      <button class="btn-primary w-full justify-center gap-2 py-3 text-sm" type="button">
+        <span class="material-symbols-outlined text-base">add_circle</span>
         New Proof
       </button>
     </div>
 
-    <div class="space-y-1 border-t border-[#3c494c]/15 pt-6">
-      <a class="flex items-center px-8 py-2 text-slate-400 transition-colors hover:text-slate-100" href="#">
-        <span class="material-symbols-outlined mr-4 text-lg">settings</span>
-        <span class="font-label text-xs">Settings</span>
+    <div class="space-y-1 border-t border-outline-variant/8 px-4 pt-5">
+      <a class="flex items-center gap-4 rounded-lg px-5 py-2.5 text-slate-500 transition-colors hover:text-slate-300" href="#">
+        <span class="material-symbols-outlined text-lg">settings</span>
+        <span class="text-xs font-label tracking-wide">Settings</span>
       </a>
-      <a class="flex items-center px-8 py-2 text-slate-400 transition-colors hover:text-slate-100" href="#">
-        <span class="material-symbols-outlined mr-4 text-lg">help</span>
-        <span class="font-label text-xs">Support</span>
+      <a class="flex items-center gap-4 rounded-lg px-5 py-2.5 text-slate-500 transition-colors hover:text-slate-300" href="#">
+        <span class="material-symbols-outlined text-lg">help</span>
+        <span class="text-xs font-label tracking-wide">Support</span>
       </a>
     </div>
   </aside>
 
+  <!-- ═══ MAIN ═══ -->
   <div class="flex h-screen flex-1 flex-col overflow-hidden">
-    <header class="z-10 flex h-16 w-full shrink-0 items-center justify-between bg-[#041329] px-8">
+    <header class="relative z-10 flex h-16 w-full shrink-0 items-center justify-between px-6 md:px-8" style="background: linear-gradient(180deg, rgba(4,19,41,0.95) 0%, rgba(4,19,41,0.7) 100%); backdrop-filter: blur(12px);">
       <div class="flex items-center gap-4">
-        <span class="material-symbols-outlined cursor-pointer text-primary md:hidden">menu</span>
-        <span class="text-2xl font-headline tracking-tight text-primary">Mathematical Muse</span>
+        <button type="button" class="inline-flex items-center justify-center rounded-lg border border-outline-variant/20 p-2 text-slate-400 transition-colors hover:border-primary/30 hover:text-primary md:hidden" data-lib-mobile-toggle aria-label="Toggle sidebar">
+          <span class="material-symbols-outlined text-xl">menu</span>
+        </button>
+        <span class="text-xl font-headline tracking-tight md:text-2xl">
+          <span class="text-gradient-primary">Mathematical Muse</span>
+        </span>
       </div>
 
-      <div class="flex items-center gap-6">
-        <div class="hidden items-center rounded-md border border-outline-variant/10 bg-surface-container-low px-4 py-1.5 lg:flex">
-          <span class="material-symbols-outlined mr-2 text-sm text-slate-400">search</span>
+      <div class="flex items-center gap-4">
+        <div class="hidden items-center rounded-xl border border-outline-variant/10 bg-surface-container-low/50 px-4 py-2 lg:flex">
+          <span class="material-symbols-outlined mr-2 text-sm text-primary/60">search</span>
           <input
-            class="w-48 border-none bg-transparent text-sm text-slate-200 placeholder-slate-500 focus:ring-0"
+            class="w-52 border-none bg-transparent text-sm text-slate-200 placeholder-slate-500 outline-none focus:ring-0"
             placeholder="Search theorems..."
             type="text"
           />
         </div>
-        <button
-          class="font-label text-xs font-bold uppercase tracking-widest text-primary transition-colors hover:text-primary-container"
-          type="button"
-        >
+        <button class="hidden items-center gap-2 rounded-xl border border-primary/15 bg-primary/5 px-4 py-2 text-sm font-medium text-primary transition-all hover:bg-primary/10 md:inline-flex" type="button">
+          <span class="material-symbols-outlined text-base">workspace_premium</span>
           Go Premium
         </button>
-        <span class="material-symbols-outlined cursor-pointer text-slate-200">account_circle</span>
+        <button type="button" class="flex h-9 w-9 items-center justify-center rounded-full border border-outline-variant/15 bg-surface-container-high/50 text-slate-400 transition-all hover:border-primary/30 hover:text-primary" aria-label="Profile">
+          <span class="material-symbols-outlined text-xl">account_circle</span>
+        </button>
       </div>
     </header>
 
-    <main class="flex-1 overflow-y-auto bg-background p-8 pb-24 scroll-smooth md:pb-8">
+    <main class="flex-1 overflow-y-auto custom-scrollbar bg-background p-6 pb-24 scroll-smooth md:p-8 md:pb-8">
       <div class="mx-auto max-w-7xl">
-        <div class="mb-12 max-w-3xl">
-          <span class="mb-4 block font-label text-xs font-bold uppercase tracking-[0.3em] text-primary">
-            Theorem Dark // Knowledge Base
+        <!-- Hero intro -->
+        <div class="mb-14 max-w-3xl" style="animation: fade-in-up 0.6s cubic-bezier(0.22,1,0.36,1) both;">
+          <span class="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/15 bg-primary/5 px-4 py-1.5 font-label text-[10px] font-bold uppercase tracking-[0.25em] text-primary">
+            <span class="material-symbols-outlined text-sm">auto_awesome</span>
+            Knowledge Base
           </span>
-          <h2 class="mb-6 text-5xl leading-tight font-headline text-on-surface">Formula &amp; Theory Library</h2>
+          <h2 class="mb-6 text-4xl leading-tight font-headline text-on-surface md:text-5xl">
+            Formula & Theory <span class="text-gradient-primary">Library</span>
+          </h2>
           <p class="text-lg leading-relaxed text-slate-400 font-body">
             A curated collection of geometric principles and algebraic identities, rendered for clarity and precision.
             Explore the architectural foundations of mathematics.
           </p>
         </div>
 
+        <!-- ═══ BENTO GRID ═══ -->
         <div class="grid grid-cols-1 gap-6 md:grid-cols-12">
-          <div
-            class="group flex flex-col overflow-hidden rounded-xl bg-surface-container-low transition-colors duration-500 hover:bg-surface-container md:col-span-8 md:flex-row"
-          >
+          <!-- Pythagorean Theorem (Hero card) -->
+          <div class="group flex flex-col overflow-hidden rounded-2xl border border-outline-variant/10 bg-gradient-to-br from-surface-container-low to-surface-container-lowest transition-all duration-500 hover:border-primary/20 hover:shadow-[var(--shadow-glow-primary)] md:col-span-8 md:flex-row" style="animation: fade-in-up 0.6s cubic-bezier(0.22,1,0.36,1) 0.1s both;">
             <div class="flex flex-col justify-between p-8 md:w-1/2">
               <div>
-                <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-                  <span class="material-symbols-outlined text-primary">architecture</span>
+                <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 transition-transform duration-300 group-hover:scale-110">
+                  <span class="material-symbols-outlined text-2xl text-primary">architecture</span>
                 </div>
                 <h3 class="mb-4 text-3xl font-headline text-on-surface">Pythagorean Theorem</h3>
                 <p class="mb-6 text-sm leading-relaxed text-slate-400 font-body">
@@ -128,108 +136,151 @@ const {
                   other two sides.
                 </p>
               </div>
-              <div class="rounded-md border-l-4 border-primary bg-surface-container-lowest p-4">
-                <code class="font-label text-2xl tracking-tighter text-primary">a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></code>
+              <div class="rounded-xl border-l-4 border-primary bg-surface-container-lowest/80 p-5 backdrop-blur-sm">
+                <code class="font-label text-2xl tracking-tighter text-primary text-glow-primary">a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></code>
               </div>
             </div>
-            <div class="relative flex min-h-[300px] items-center justify-center overflow-hidden bg-surface-container-highest/30 md:w-1/2">
-              <div
-                class="pointer-events-none absolute inset-0 opacity-20"
-                style="background-image: radial-gradient(circle at 2px 2px, #3c494c 1px, transparent 0); background-size: 24px 24px;"
-              ></div>
-              <img
-                class="h-full w-full object-cover mix-blend-lighten"
-                alt="Minimalist geometric blueprint of a right-angled triangle showing squares on each side with elegant neon cyan line work"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFpgxTjiHlqYQXuNjyFEpG8FgdhBabWxQuK6D6P-SDnSCAwIYAPtozxcKIQ_eIQjDIF7ySpVpHU3WmfiRmp7SUmcQK-GD7Tzx99oEjKFm3fqbKFU7dGZda3-MA50hT5Uu6eNg8bLpYeML_jjyaqHoULhvoKRoKH97IVv4bUpousOi9ZTeNEVbnga3jdroHja6stv1_eWEgoQiQW-LYMXessRQmvXVnNSTFKYfOY_HCV-vuc-JniNzu_ULIVWYvBXWoqgGRt5PNySAU"
-                loading="lazy"
-              />
+            <div class="relative flex min-h-[280px] items-center justify-center overflow-hidden bg-surface-container-highest/20 md:w-1/2">
+              <div class="dot-grid pointer-events-none absolute inset-0 opacity-[0.08]"></div>
+              <!-- Interactive animated triangle -->
+              <svg class="relative h-48 w-48 drop-shadow-[0_0_20px_rgba(0,218,243,0.2)]" viewBox="0 0 200 200" data-interactive-pyth>
+                <defs>
+                  <linearGradient id="pythGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#00daf3" stop-opacity="0.2"/>
+                    <stop offset="100%" stop-color="#00bcd2" stop-opacity="0.05"/>
+                  </linearGradient>
+                </defs>
+                <!-- a² square -->
+                <rect x="10" y="10" width="60" height="60" fill="url(#pythGrad)" stroke="#00daf3" stroke-width="1.5" rx="4" opacity="0.6">
+                  <animate attributeName="opacity" values="0.4;0.7;0.4" dur="4s" repeatCount="indefinite"/>
+                </rect>
+                <text x="40" y="45" text-anchor="middle" fill="#00daf3" font-family="Space Grotesk" font-size="14" font-weight="700">a²</text>
+                <!-- b² square -->
+                <rect x="80" y="80" width="80" height="80" fill="url(#pythGrad)" stroke="#00daf3" stroke-width="1.5" rx="4" opacity="0.6">
+                  <animate attributeName="opacity" values="0.4;0.7;0.4" dur="4s" repeatCount="indefinite" begin="1.3s"/>
+                </rect>
+                <text x="120" y="125" text-anchor="middle" fill="#00daf3" font-family="Space Grotesk" font-size="14" font-weight="700">b²</text>
+                <!-- Triangle -->
+                <path d="M 10 70 L 80 70 L 80 160 Z" fill="none" stroke="#7ed1f7" stroke-width="2" stroke-linejoin="round" style="filter: drop-shadow(0 0 4px rgba(126,209,247,0.4));"/>
+                <!-- c² square (rotated conceptual) -->
+                <text x="35" y="130" text-anchor="middle" fill="#80ff2c" font-family="Space Grotesk" font-size="12" font-weight="700" opacity="0.8">=c²</text>
+                <!-- Animated plus sign -->
+                <text x="60" y="82" text-anchor="middle" fill="#7ed1f7" font-family="Space Grotesk" font-size="18" font-weight="700">+</text>
+              </svg>
             </div>
           </div>
 
-          <div
-            class="group rounded-xl border border-outline-variant/5 bg-surface-container-low p-8 transition-colors duration-500 hover:bg-surface-container md:col-span-4"
-          >
-            <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-secondary-container/10">
-              <span class="material-symbols-outlined text-secondary-container">change_history</span>
+          <!-- SOH CAH TOA -->
+          <div class="group rounded-2xl border border-outline-variant/10 bg-gradient-to-br from-surface-container-low to-surface-container-lowest p-8 transition-all duration-500 hover:border-primary/15 hover:shadow-[var(--shadow-glow-primary)] md:col-span-4" style="animation: fade-in-up 0.6s cubic-bezier(0.22,1,0.36,1) 0.2s both;">
+            <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-secondary-container/10 transition-transform duration-300 group-hover:scale-110">
+              <span class="material-symbols-outlined text-2xl text-secondary-container">change_history</span>
             </div>
-            <h3 class="mb-4 text-2xl font-headline text-on-surface">SOH CAHTOA</h3>
+            <h3 class="mb-4 text-2xl font-headline text-on-surface">SOH CAH TOA</h3>
             <p class="mb-8 text-sm leading-relaxed text-slate-400 font-body">
               A mnemonic for the three trigonometric ratios used to find unknown sides or angles in right triangles.
             </p>
-            <div class="space-y-4">
-              <div class="flex items-center justify-between border-b border-outline-variant/10 py-2">
-                <span class="font-label text-xs uppercase tracking-widest text-slate-500">Sine</span>
+            <div class="space-y-3" data-trig-ratios>
+              <div class="group/item flex items-center justify-between rounded-xl border border-outline-variant/10 px-4 py-3 transition-all duration-300 hover:border-primary/20 hover:bg-surface-container-high/30 cursor-pointer" data-tooltip="sin(θ) = Opposite / Hypotenuse">
+                <span class="font-label text-xs uppercase tracking-widest text-slate-500 group-hover/item:text-primary transition-colors">Sine</span>
                 <span class="italic font-headline text-on-surface">O / H</span>
               </div>
-              <div class="flex items-center justify-between border-b border-outline-variant/10 py-2">
-                <span class="font-label text-xs uppercase tracking-widest text-slate-500">Cosine</span>
+              <div class="group/item flex items-center justify-between rounded-xl border border-outline-variant/10 px-4 py-3 transition-all duration-300 hover:border-primary/20 hover:bg-surface-container-high/30 cursor-pointer" data-tooltip="cos(θ) = Adjacent / Hypotenuse">
+                <span class="font-label text-xs uppercase tracking-widest text-slate-500 group-hover/item:text-primary transition-colors">Cosine</span>
                 <span class="italic font-headline text-on-surface">A / H</span>
               </div>
-              <div class="flex items-center justify-between py-2">
-                <span class="font-label text-xs uppercase tracking-widest text-slate-500">Tangent</span>
+              <div class="group/item flex items-center justify-between rounded-xl border border-outline-variant/10 px-4 py-3 transition-all duration-300 hover:border-primary/20 hover:bg-surface-container-high/30 cursor-pointer" data-tooltip="tan(θ) = Opposite / Adjacent">
+                <span class="font-label text-xs uppercase tracking-widest text-slate-500 group-hover/item:text-primary transition-colors">Tangent</span>
                 <span class="italic font-headline text-on-surface">O / A</span>
               </div>
             </div>
           </div>
 
-          <div
-            class="group flex flex-col rounded-xl border border-outline-variant/5 bg-surface-container-low p-8 transition-colors duration-500 hover:bg-surface-container md:col-span-6"
-          >
-            <div class="mb-8 flex items-start justify-between gap-4">
+          <!-- 45-45-90 Triangle -->
+          <div class="group flex flex-col rounded-2xl border border-outline-variant/10 bg-gradient-to-br from-surface-container-low to-surface-container-lowest p-8 transition-all duration-500 hover:border-primary/15 hover:shadow-[var(--shadow-glow-primary)] md:col-span-6" style="animation: fade-in-up 0.6s cubic-bezier(0.22,1,0.36,1) 0.3s both;">
+            <div class="mb-6 flex items-start justify-between gap-4">
               <div>
                 <h3 class="mb-2 text-2xl font-headline text-on-surface">45-45-90 Triangle</h3>
                 <p class="max-w-xs text-sm text-slate-400 font-body">
                   The isosceles right triangle, where the sides follow the ratio 1 : 1 : &radic;2.
                 </p>
               </div>
-              <span class="rounded bg-primary/10 px-2 py-1 font-label text-[10px] text-primary">PRECISION RATIO</span>
+              <span class="rounded-full bg-primary/10 px-3 py-1.5 font-label text-[9px] uppercase tracking-widest text-primary border border-primary/15">Precision Ratio</span>
             </div>
+            <!-- Interactive 45-45-90 SVG -->
             <div class="flex flex-1 items-center justify-center py-6">
-              <img
-                class="max-h-48 object-contain"
-                alt="Technical schematic drawing of a 45-45-90 triangle with mathematical labels on dark technical paper aesthetic"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm6wqCxJE3I1IGLC5HI-tzydtTO7hvw8fJeuYuSSmRdOV7ePrLQ9zoiGDFCEbRYhAeXt81o-9Qapd1iol-0MIZQmD3LrkMXbQ8-GlzmtZAXKFUsRuVTKEjSd5yIBsHUchRApNke00x8SjSjBZee6XtAOcjQgDBQqlWzlpsD9KOKJ3D0mLAEdoB5D8gsXgnlxJhpbkvhVXSgdOcow3c8lviLbMUMSBuTBjAs5bSUM8RLcPL8aB7RB4KQ7goQmAr4meTvRPetecrsNJb"
-                loading="lazy"
-              />
+              <svg class="h-48 w-48 drop-shadow-[0_0_20px_rgba(0,218,243,0.15)]" viewBox="0 0 200 200" data-interactive-4545>
+                <path d="M 30 170 L 170 170 L 30 30 Z" fill="none" stroke="#00daf3" stroke-width="2.5" stroke-linejoin="round" style="filter: drop-shadow(0 0 6px rgba(0,218,243,0.3));"/>
+                <path d="M 30 170 L 170 170 L 30 30 Z" fill="#00daf3" opacity="0.06"/>
+                <rect x="30" y="150" width="20" height="20" fill="none" stroke="#3c494c" stroke-width="1.5"/>
+                <text x="20" y="105" text-anchor="end" fill="#bbc9cc" font-family="Space Grotesk" font-size="13">x</text>
+                <text x="100" y="190" text-anchor="middle" fill="#bbc9cc" font-family="Space Grotesk" font-size="13">x</text>
+                <text x="115" y="90" text-anchor="middle" fill="#00daf3" font-family="Space Grotesk" font-size="13" font-weight="700" transform="rotate(-45, 115, 90)">x√2</text>
+                <text x="82" y="155" fill="#7ed1f7" font-family="Space Grotesk" font-size="10">45°</text>
+                <text x="38" y="50" fill="#7ed1f7" font-family="Space Grotesk" font-size="10">45°</text>
+                <!-- Animated vertices -->
+                <circle cx="30" cy="170" r="3" fill="#00daf3" opacity="0.7">
+                  <animate attributeName="r" values="2;4;2" dur="3s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="170" cy="170" r="3" fill="#00daf3" opacity="0.7">
+                  <animate attributeName="r" values="2;4;2" dur="3s" repeatCount="indefinite" begin="1s"/>
+                </circle>
+                <circle cx="30" cy="30" r="3" fill="#00daf3" opacity="0.7">
+                  <animate attributeName="r" values="2;4;2" dur="3s" repeatCount="indefinite" begin="2s"/>
+                </circle>
+              </svg>
             </div>
             <div class="mt-4 grid grid-cols-2 gap-4">
-              <div class="rounded bg-surface-container-lowest p-3">
-                <p class="mb-1 text-[10px] text-slate-500 font-label">LEGS</p>
+              <div class="rounded-xl bg-surface-container-lowest/70 p-4 border border-outline-variant/10 transition-all hover:border-primary/15">
+                <p class="mb-1.5 text-[9px] text-slate-500 font-label uppercase tracking-widest">Legs</p>
                 <p class="text-xl font-headline text-on-surface">x</p>
               </div>
-              <div class="rounded bg-surface-container-lowest p-3">
-                <p class="mb-1 text-[10px] text-slate-500 font-label">HYPOTENUSE</p>
-                <p class="text-xl font-headline text-primary">x&radic;2</p>
+              <div class="rounded-xl bg-surface-container-lowest/70 p-4 border border-outline-variant/10 transition-all hover:border-primary/15">
+                <p class="mb-1.5 text-[9px] text-slate-500 font-label uppercase tracking-widest">Hypotenuse</p>
+                <p class="text-xl font-headline text-primary text-glow-primary">x&radic;2</p>
               </div>
             </div>
           </div>
 
-          <div
-            class="group rounded-xl border border-outline-variant/5 bg-surface-container-low p-8 transition-colors duration-500 hover:bg-surface-container md:col-span-6"
-          >
-            <h3 class="mb-6 text-2xl font-headline text-on-surface">Area Formulas</h3>
-            <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-              <div class="space-y-2">
-                <p class="font-label text-xs uppercase tracking-widest text-primary">Circle</p>
-                <div class="rounded-md bg-surface-container-lowest p-4">
+          <!-- Area Formulas -->
+          <div class="group rounded-2xl border border-outline-variant/10 bg-gradient-to-br from-surface-container-low to-surface-container-lowest p-8 transition-all duration-500 hover:border-primary/15 hover:shadow-[var(--shadow-glow-primary)] md:col-span-6" style="animation: fade-in-up 0.6s cubic-bezier(0.22,1,0.36,1) 0.4s both;">
+            <h3 class="mb-6 text-2xl font-headline text-on-surface flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary">calculate</span>
+              Area Formulas
+            </h3>
+            <div class="grid grid-cols-1 gap-x-8 gap-y-5 sm:grid-cols-2">
+              <div class="space-y-2 group/formula">
+                <p class="font-label text-xs uppercase tracking-widest text-primary flex items-center gap-2">
+                  <span class="material-symbols-outlined text-sm">circle</span>
+                  Circle
+                </p>
+                <div class="rounded-xl bg-surface-container-lowest/70 p-4 border border-outline-variant/10 transition-all hover:border-primary/15 hover:shadow-sm">
                   <span class="text-2xl font-headline text-on-surface">A = &pi;r<sup>2</sup></span>
                 </div>
               </div>
-              <div class="space-y-2">
-                <p class="font-label text-xs uppercase tracking-widest text-primary">Triangle</p>
-                <div class="rounded-md bg-surface-container-lowest p-4">
-                  <span class="text-2xl font-headline text-on-surface">A = 1/2bh</span>
+              <div class="space-y-2 group/formula">
+                <p class="font-label text-xs uppercase tracking-widest text-primary flex items-center gap-2">
+                  <span class="material-symbols-outlined text-sm">change_history</span>
+                  Triangle
+                </p>
+                <div class="rounded-xl bg-surface-container-lowest/70 p-4 border border-outline-variant/10 transition-all hover:border-primary/15 hover:shadow-sm">
+                  <span class="text-2xl font-headline text-on-surface">A = &frac12;bh</span>
                 </div>
               </div>
-              <div class="space-y-2">
-                <p class="font-label text-xs uppercase tracking-widest text-primary">Trapezoid</p>
-                <div class="rounded-md bg-surface-container-lowest p-4">
-                  <span class="text-2xl font-headline text-on-surface">A = 1/2h(b<sub>1</sub>+b<sub>2</sub>)</span>
+              <div class="space-y-2 group/formula">
+                <p class="font-label text-xs uppercase tracking-widest text-primary flex items-center gap-2">
+                  <span class="material-symbols-outlined text-sm">pentagon</span>
+                  Trapezoid
+                </p>
+                <div class="rounded-xl bg-surface-container-lowest/70 p-4 border border-outline-variant/10 transition-all hover:border-primary/15 hover:shadow-sm">
+                  <span class="text-2xl font-headline text-on-surface">A = &frac12;h(b<sub>1</sub>+b<sub>2</sub>)</span>
                 </div>
               </div>
-              <div class="space-y-2">
-                <p class="font-label text-xs uppercase tracking-widest text-primary">Rectangle</p>
-                <div class="rounded-md bg-surface-container-lowest p-4">
+              <div class="space-y-2 group/formula">
+                <p class="font-label text-xs uppercase tracking-widest text-primary flex items-center gap-2">
+                  <span class="material-symbols-outlined text-sm">rectangle</span>
+                  Rectangle
+                </p>
+                <div class="rounded-xl bg-surface-container-lowest/70 p-4 border border-outline-variant/10 transition-all hover:border-primary/15 hover:shadow-sm">
                   <span class="text-2xl font-headline text-on-surface">A = lw</span>
                 </div>
               </div>
@@ -237,43 +288,53 @@ const {
           </div>
         </div>
 
-        <section class="mt-20 flex flex-col items-center gap-12 border-t border-outline-variant/10 py-16 lg:flex-row">
+        <!-- ═══ SPOTLIGHT SECTION: Golden Ratio ═══ -->
+        <section class="mt-16 flex flex-col items-center gap-12 rounded-2xl border border-outline-variant/10 bg-gradient-to-br from-surface-container-low/50 to-transparent p-8 lg:flex-row lg:p-12" style="animation: fade-in-up 0.6s cubic-bezier(0.22,1,0.36,1) 0.5s both;">
           <div class="order-2 lg:order-1 lg:w-2/5">
-            <img
-              class="rounded-xl border border-outline-variant/10 shadow-2xl"
-              alt="Abstract high-end visualization of the Golden Ratio spiral with intricate Fibonacci patterns and glowing cyan accents on dark navy"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn_P-jiDcEArLkatQvC5tI_hU5xPOjQxAGDY7Cbk0RYoK422_dgyPph99QcwXr7D5JjcnoOOoWTJgeIBuzPzlr9Qa8PlZrJuRVVCKC4YNM1dbUUQiYsMZP2sgefme8a6nvqsZh18b3A9w4FvIRbZsFizlJFDMXTkPs0biO_HU6ETohVfjCB1vMmUOG4jzXHJj9ut3DjaowCaVnwcJ8rrXq21EaYtNU86RUpLllYMkuE2AqO7yk-DbOGGregw4x2YgAp-k7uzXp6xXy"
-              loading="lazy"
-            />
+            <!-- Interactive Golden Spiral SVG -->
+            <div class="relative overflow-hidden rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-8">
+              <div class="dot-grid pointer-events-none absolute inset-0 opacity-[0.04]"></div>
+              <svg class="relative w-full h-auto drop-shadow-[0_0_20px_rgba(0,218,243,0.1)]" viewBox="0 0 300 200" data-golden-spiral>
+                <!-- Golden rectangle subdivisions -->
+                <rect x="10" y="10" width="180" height="180" fill="none" stroke="#00daf3" stroke-width="1" opacity="0.3" rx="2"/>
+                <rect x="10" y="10" width="112" height="112" fill="none" stroke="#7ed1f7" stroke-width="1" opacity="0.3" rx="2"/>
+                <rect x="10" y="122" width="68" height="68" fill="none" stroke="#7ed1f7" stroke-width="1" opacity="0.3" rx="2"/>
+                <!-- Spiral approximation -->
+                <path d="M 190 190 Q 190 10, 10 10 Q 10 10, 10 122 Q 10 122, 78 122 Q 78 122, 78 190" fill="none" stroke="#00daf3" stroke-width="2.5" stroke-linecap="round" style="filter: drop-shadow(0 0 6px rgba(0,218,243,0.4));">
+                  <animate attributeName="stroke-dashoffset" values="600;0" dur="4s" fill="freeze"/>
+                  <set attributeName="stroke-dasharray" to="600"/>
+                </path>
+                <!-- φ symbol -->
+                <text x="250" y="105" text-anchor="middle" fill="#00daf3" font-family="Noto Serif" font-size="48" font-weight="700" opacity="0.6" style="filter: drop-shadow(0 0 10px rgba(0,218,243,0.3));">φ</text>
+                <text x="250" y="130" text-anchor="middle" fill="#bbc9cc" font-family="Space Grotesk" font-size="11">≈ 1.618</text>
+              </svg>
+            </div>
           </div>
 
           <div class="order-1 lg:order-2 lg:w-3/5">
-            <span class="mb-4 block font-label text-xs font-bold uppercase tracking-[0.4em] text-secondary-container">
+            <span class="mb-4 inline-flex items-center gap-2 rounded-full border border-secondary-container/20 bg-secondary-container/5 px-4 py-1.5 font-label text-[10px] font-bold uppercase tracking-[0.25em] text-secondary-container">
+              <span class="material-symbols-outlined text-sm">star</span>
               Spotlight Theorem
             </span>
-            <h2 class="mb-8 text-4xl font-headline text-on-surface">The Divine Proportion (&phi;)</h2>
-            <p class="mb-8 text-lg leading-relaxed text-slate-400 font-body">
+            <h2 class="mb-8 text-3xl font-headline text-on-surface md:text-4xl">The Divine Proportion (&phi;)</h2>
+            <p class="mb-8 text-base leading-relaxed text-slate-400 font-body md:text-lg">
               In mathematics, two quantities are in the golden ratio if their ratio is the same as the ratio of their
               sum to the larger of the two quantities. This ratio, approximately 1.618, appears frequently in
               geometry, art, architecture and biological systems.
             </p>
-            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-              <div class="glass-panel rounded-lg border border-outline-variant/20 p-6">
-                <p class="mb-2 font-label text-[10px] uppercase tracking-tighter text-slate-500">
-                  Algebraic Definition
-                </p>
-                <span class="text-3xl font-headline text-primary">&phi; = (1 + &radic;5) / 2</span>
+            <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+              <div class="glass-panel rounded-xl border border-outline-variant/15 p-6 transition-all hover:border-primary/20 hover:shadow-[var(--shadow-glow-primary)]">
+                <p class="mb-2 font-label text-[9px] uppercase tracking-widest text-slate-500">Algebraic Definition</p>
+                <span class="text-2xl font-headline text-primary text-glow-primary md:text-3xl">&phi; = (1 + &radic;5) / 2</span>
               </div>
-              <div class="glass-panel rounded-lg border border-outline-variant/20 p-6">
-                <p class="mb-2 font-label text-[10px] uppercase tracking-tighter text-slate-500">Limit of Series</p>
-                <span class="text-2xl font-headline text-on-surface">F(n) / F(n-1) -&gt; &phi;</span>
+              <div class="glass-panel rounded-xl border border-outline-variant/15 p-6 transition-all hover:border-primary/20 hover:shadow-[var(--shadow-glow-primary)]">
+                <p class="mb-2 font-label text-[9px] uppercase tracking-widest text-slate-500">Limit of Series</p>
+                <span class="text-xl font-headline text-on-surface md:text-2xl">F(n) / F(n-1) &rarr; &phi;</span>
               </div>
             </div>
-            <button
-              class="mt-10 flex items-center gap-2 font-label text-sm uppercase tracking-widest text-primary transition-all duration-300 hover:gap-4"
-              type="button"
-            >
-              Explore Detailed Proof <span class="material-symbols-outlined">arrow_forward</span>
+            <button class="group mt-10 flex items-center gap-2 font-label text-sm uppercase tracking-widest text-primary transition-all duration-300 hover:gap-4" type="button">
+              Explore Detailed Proof
+              <span class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-2">arrow_forward</span>
             </button>
           </div>
         </section>
@@ -281,22 +342,23 @@ const {
     </main>
   </div>
 
-  <nav class="fixed right-0 bottom-0 left-0 z-20 flex h-16 items-center justify-around border-t border-outline-variant/10 bg-[#0d1c32] md:hidden">
-    <a class="flex flex-col items-center text-slate-400" href={solverHref}>
+  <!-- Mobile bottom nav -->
+  <nav class="fixed right-0 bottom-0 left-0 z-20 flex h-16 items-center justify-around border-t border-outline-variant/8 md:hidden" style="background: linear-gradient(180deg, rgba(13,28,50,0.95) 0%, rgba(10,22,40,1) 100%); backdrop-filter: blur(16px);">
+    <a class="flex flex-col items-center gap-1 text-slate-500 transition-colors hover:text-slate-300" href={solverHref}>
       <span class="material-symbols-outlined">calculate</span>
-      <span class="text-[10px] font-label">Solver</span>
+      <span class="text-[9px] font-label tracking-wide">Solver</span>
     </a>
-    <a class="flex flex-col items-center text-primary" href={libraryHref}>
+    <a class="flex flex-col items-center gap-1 text-primary" href={libraryHref}>
       <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu_book</span>
-      <span class="text-[10px] font-label">Library</span>
+      <span class="text-[9px] font-label font-medium tracking-wide">Library</span>
     </a>
-    <a class="flex flex-col items-center text-slate-400" href={practiceHref}>
+    <a class="flex flex-col items-center gap-1 text-slate-500 transition-colors hover:text-slate-300" href={practiceHref}>
       <span class="material-symbols-outlined">edit_note</span>
-      <span class="text-[10px] font-label">Practice</span>
+      <span class="text-[9px] font-label tracking-wide">Practice</span>
     </a>
-    <a class="flex flex-col items-center text-slate-400" href={formulasHref}>
+    <a class="flex flex-col items-center gap-1 text-slate-500 transition-colors hover:text-slate-300" href={formulasHref}>
       <span class="material-symbols-outlined">functions</span>
-      <span class="text-[10px] font-label">Formulas</span>
+      <span class="text-[9px] font-label tracking-wide">Formulas</span>
     </a>
   </nav>
 </div>

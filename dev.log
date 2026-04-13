@@ -1016,3 +1016,31 @@ Error: Failed to load url /theme/components/MuseSolver.astro (resolved id: C:/Us
 [2m10:42:17[22m [34m[200][39m /formulas/pythagorean-theorem/ [2m99ms[22m
 [2m10:42:17[22m [34m[200][39m /formulas/ [2m166ms[22m
 [2m10:42:57[22m [34m[200][39m / [2m8ms[22m
+[2m10:47:18[22m [34m[200][39m / [2m6ms[22m
+[2m10:47:27[22m [34m[200][39m / [2m6ms[22m
+[2m10:47:35[22m [34m[200][39m /library/ [2m98ms[22m
+[2m10:47:41[22m [34m[200][39m / [2m3ms[22m
+[2m10:47:45[22m [34m[200][39m /formulas/pythagorean-theorem/ [2m7ms[22m
+[2m10:48:58[22m [34m[200][39m /formulas/ [2m11ms[22m
+[2m10:49:17[22m [34m[200][39m /formulas/angle-from-cosine/ [2m4ms[22m
+[2m10:49:24[22m [34m[200][39m /blog/ [2m261ms[22m
+[2m10:49:27[22m [34m[200][39m /blog/teacher-workflow/ [2m74ms[22m
+[2m10:49:42[22m [34m[200][39m /hi/ [2m63ms[22m
+[2m11:01:52[22m [34m[watch][39m /src/styles/global.css
+[2m11:01:52[22m [34m[watch][39m /src/styles/global.css
+[2m11:04:03[22m [34m[watch][39m /src/styles/global.css
+[2m11:04:05[22m [34m[200][39m /hi/ [2m171ms[22m
+[2m11:05:55[22m [34m[watch][39m /src/styles/global.css
+[2m11:05:56[22m [34m[200][39m /hi/ [2m17ms[22m
+[2m11:07:59[22m [34m[watch][39m /src/styles/global.css, /theme/components/MusePractice.astro?astro&type=style&index=0&lang.css
+[2m11:08:00[22m [34m[200][39m /hi/ [2m12ms[22m
+[2m11:08:31[22m [34m[watch][39m /src/styles/global.css
+[2m11:08:32[22m [34m[200][39m /hi/ [2m127ms[22m
+[2m11:08:54[22m [34m[watch][39m /src/styles/global.css
+[2m11:08:55[22m [34m[200][39m /hi/ [2m116ms[22m
+[vite] program reload
+[2m11:09:11[22m [34m[200][39m /hi/ [2m114ms[22m
+[vite] program reload
+[2m11:09:25[22m [34m[200][39m /hi/ [2m172ms[22m
+[vite] program reload
+[2m11:09:43[22m [34m[200][39m /hi/ [2m159ms[22m

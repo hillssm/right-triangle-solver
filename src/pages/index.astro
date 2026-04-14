@@ -80,12 +80,48 @@ const chartRows = [
         </div>
       </div>
 
-      <RightTriangleTool
-        heading={pick(home, 'toolHeading', 'Triangle Tool')}
-        description={pick(home, 'toolDescription', 'Enter any two legs to calculate hypotenuse, area, and perimeter instantly.')}
-      />
+      <div class="surface-card border-outline-variant/65 bg-surface-container-low p-5">
+        <p class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Performance Snapshot</p>
+        <h2 class="mt-2 text-xl font-semibold">Clear visuals, instant feedback</h2>
+        <div class="mt-5 space-y-4">
+          <div>
+            <div class="mb-2 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Hypotenuse computation</span>
+              <span class="font-mono text-primary">99.9%</span>
+            </div>
+            <div class="h-2 rounded-full bg-surface-container-highest/60">
+              <div class="h-2 w-[99%] rounded-full bg-gradient-to-r from-primary via-primary-container to-surface-tint"></div>
+            </div>
+          </div>
+          <div>
+            <div class="mb-2 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Angle derivation</span>
+              <span class="font-mono text-primary">99.7%</span>
+            </div>
+            <div class="h-2 rounded-full bg-surface-container-highest/60">
+              <div class="h-2 w-[97%] rounded-full bg-gradient-to-r from-primary via-primary-container to-surface-tint"></div>
+            </div>
+          </div>
+          <div>
+            <div class="mb-2 flex items-center justify-between text-xs text-on-surface-variant">
+              <span>Diagram scaling</span>
+              <span class="font-mono text-primary">100%</span>
+            </div>
+            <div class="h-2 rounded-full bg-surface-container-highest/60">
+              <div class="h-2 w-full rounded-full bg-gradient-to-r from-primary via-primary-container to-surface-tint"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
+  <div class="mt-8">
+    <RightTriangleTool
+      heading={pick(home, 'toolHeading', 'Triangle Tool')}
+      description={pick(home, 'toolDescription', 'Enter any two legs to calculate hypotenuse, area, and perimeter instantly.')}
+    />
+  </div>
 
   <div class="mt-8">
     <HowItWorks heading={pick(home, 'howHeading', 'How Right Triangle Solver works')} />

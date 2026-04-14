@@ -25,9 +25,15 @@ export type RightTriangleSolution = {
   h: number;
   area: number;
   perimeter: number;
+  semiperimeter: number;
+  inradius: number;
+  circumradius: number;
+  segmentP: number;
+  segmentQ: number;
   ratioA: number;
   ratioB: number;
   tangentAlpha: number;
+  providedKeys: SolverInputKey[];
   combination: SupportedCombination;
   formulas: string[];
   steps: string[];
@@ -50,6 +56,16 @@ const EPSILON = 1e-10;
 const HALF_PI = Math.PI / 2;
 const PYTHAGOREAN_TOLERANCE = 1e-8;
 const ANGLE_TOLERANCE = 1e-8;
+const COMMON_DERIVED_FORMULAS = [
+  'h = (a * b) / c',
+  'A = (a * b) / 2',
+  'P = a + b + c',
+  's = P / 2',
+  'r = A / s = (a + b - c) / 2',
+  'R = c / 2',
+  'p = a^2 / c',
+  'q = b^2 / c'
+];
 
 const toRadians = (value: number, mode: AngleMode): number => (mode === 'deg' ? (value * Math.PI) / 180 : value);
 const toDegrees = (value: number): number => (value * 180) / Math.PI;
@@ -73,6 +89,7 @@ const finalizeSolution = (payload: {
   c: number;
   alphaRad: number;
   betaRad: number;
+  providedKeys: SolverInputKey[];
   combination: SupportedCombination;
   formulas: string[];
   steps: string[];
@@ -98,12 +115,17 @@ const finalizeSolution = (payload: {
   }
 
   if (Math.abs(alphaRad + betaRad - HALF_PI) > ANGLE_TOLERANCE) {
-    throw new Error('Angles must satisfy alpha + beta = 90 deg (pi/2 radians).');
+    throw new Error('Angles must satisfy A + B = 90 deg (pi/2 radians).');
   }
 
   const area = 0.5 * a * b;
   const perimeter = a + b + c;
+  const semiperimeter = perimeter / 2;
   const h = (a * b) / c;
+  const inradius = area / semiperimeter;
+  const circumradius = c / 2;
+  const segmentP = (a * a) / c;
+  const segmentQ = (b * b) / c;
 
   return {
     a,
@@ -116,11 +138,17 @@ const finalizeSolution = (payload: {
     h,
     area,
     perimeter,
+    semiperimeter,
+    inradius,
+    circumradius,
+    segmentP,
+    segmentQ,
     ratioA: a / c,
     ratioB: b / c,
     tangentAlpha: a / b,
+    providedKeys: payload.providedKeys,
     combination: payload.combination,
-    formulas: payload.formulas,
+    formulas: [...payload.formulas, ...COMMON_DERIVED_FORMULAS],
     steps: payload.steps
   };
 };
@@ -164,9 +192,14 @@ export const solveRightTriangle = (
 ): RightTriangleSolution => {
   const values = normalizeProvidedInputs(inputs);
   const providedKeys = SOLVER_INPUT_KEYS.filter((key) => values[key] !== undefined);
+  const providedSideCount = (['a', 'b', 'c'] as const).filter((key) => values[key] !== undefined).length;
 
   if (providedKeys.length !== 2) {
     throw new Error('Enter exactly two known values to solve the triangle.');
+  }
+
+  if (providedSideCount < 1) {
+    throw new Error('At least one side is required. Angles A and B alone are not enough.');
   }
 
   for (const sideKey of ['a', 'b', 'c'] as const) {
@@ -183,18 +216,18 @@ export const solveRightTriangle = (
   const beta = betaInput === undefined ? undefined : toRadians(betaInput, angleMode);
 
   if (alpha !== undefined && !(alpha > 0 && alpha < HALF_PI)) {
-    throw new Error('Angle alpha must be between 0 and 90 deg (0 and pi/2 radians).');
+    throw new Error('Angle A must be between 0 and 90 deg (0 and pi/2 radians).');
   }
 
   if (beta !== undefined && !(beta > 0 && beta < HALF_PI)) {
-    throw new Error('Angle beta must be between 0 and 90 deg (0 and pi/2 radians).');
+    throw new Error('Angle B must be between 0 and 90 deg (0 and pi/2 radians).');
   }
 
   if (alpha !== undefined && beta !== undefined) {
     if (Math.abs(alpha + beta - HALF_PI) > ANGLE_TOLERANCE) {
-      throw new Error('Angles must satisfy alpha + beta = 90 deg (pi/2 radians).');
+      throw new Error('Angles must satisfy A + B = 90 deg (pi/2 radians).');
     }
-    throw new Error('Angles alpha and beta alone are not enough. Provide one side and one angle.');
+    throw new Error('Angles A and B alone are not enough. Provide one side and one angle.');
   }
 
   if (values.c !== undefined && values.a !== undefined && values.c <= values.a + EPSILON) {
@@ -219,6 +252,7 @@ export const solveRightTriangle = (
       c,
       alphaRad,
       betaRad,
+      providedKeys,
       combination: 'a+b',
       formulas: ['c = sqrt(a^2 + b^2)', 'alpha = atan(a / b)', 'beta = 90 deg - alpha'],
       steps: [
@@ -241,6 +275,7 @@ export const solveRightTriangle = (
       c,
       alphaRad,
       betaRad,
+      providedKeys,
       combination: 'a+c',
       formulas: ['b = sqrt(c^2 - a^2)', 'alpha = asin(a / c)', 'beta = 90 deg - alpha'],
       steps: [
@@ -263,6 +298,7 @@ export const solveRightTriangle = (
       c,
       alphaRad,
       betaRad,
+      providedKeys,
       combination: 'b+c',
       formulas: ['a = sqrt(c^2 - b^2)', 'alpha = acos(b / c)', 'beta = 90 deg - alpha'],
       steps: [
@@ -279,7 +315,7 @@ export const solveRightTriangle = (
     const sine = Math.sin(alphaRad);
     const tangent = Math.tan(alphaRad);
     if (Math.abs(sine) < EPSILON || Math.abs(tangent) < EPSILON) {
-      throw new Error('Angle alpha is too small for stable computation.');
+      throw new Error('Angle A is too small for stable computation.');
     }
     const c = a / sine;
     const b = a / tangent;
@@ -290,6 +326,7 @@ export const solveRightTriangle = (
       c,
       alphaRad,
       betaRad,
+      providedKeys,
       combination: 'a+alpha',
       formulas: ['c = a / sin(alpha)', 'b = a / tan(alpha)', 'beta = 90 deg - alpha'],
       steps: [
@@ -306,7 +343,7 @@ export const solveRightTriangle = (
     const cosine = Math.cos(betaRad);
     const tangent = Math.tan(betaRad);
     if (Math.abs(cosine) < EPSILON) {
-      throw new Error('Angle beta is too close to 90 deg for stable computation.');
+      throw new Error('Angle B is too close to 90 deg for stable computation.');
     }
     const c = a / cosine;
     const b = a * tangent;
@@ -317,6 +354,7 @@ export const solveRightTriangle = (
       c,
       alphaRad,
       betaRad,
+      providedKeys,
       combination: 'a+beta',
       formulas: ['c = a / cos(beta)', 'b = a * tan(beta)', 'alpha = 90 deg - beta'],
       steps: [
@@ -333,7 +371,7 @@ export const solveRightTriangle = (
     const cosine = Math.cos(alphaRad);
     const tangent = Math.tan(alphaRad);
     if (Math.abs(cosine) < EPSILON) {
-      throw new Error('Angle alpha is too close to 90 deg for stable computation.');
+      throw new Error('Angle A is too close to 90 deg for stable computation.');
     }
     const c = b / cosine;
     const a = b * tangent;
@@ -344,6 +382,7 @@ export const solveRightTriangle = (
       c,
       alphaRad,
       betaRad,
+      providedKeys,
       combination: 'b+alpha',
       formulas: ['c = b / cos(alpha)', 'a = b * tan(alpha)', 'beta = 90 deg - alpha'],
       steps: [
@@ -360,7 +399,7 @@ export const solveRightTriangle = (
     const sine = Math.sin(betaRad);
     const tangent = Math.tan(betaRad);
     if (Math.abs(sine) < EPSILON || Math.abs(tangent) < EPSILON) {
-      throw new Error('Angle beta is too small for stable computation.');
+      throw new Error('Angle B is too small for stable computation.');
     }
     const c = b / sine;
     const a = b / tangent;
@@ -371,6 +410,7 @@ export const solveRightTriangle = (
       c,
       alphaRad,
       betaRad,
+      providedKeys,
       combination: 'b+beta',
       formulas: ['c = b / sin(beta)', 'a = b / tan(beta)', 'alpha = 90 deg - beta'],
       steps: [
@@ -393,6 +433,7 @@ export const solveRightTriangle = (
       c,
       alphaRad,
       betaRad,
+      providedKeys,
       combination: 'c+alpha',
       formulas: ['a = c * sin(alpha)', 'b = c * cos(alpha)', 'beta = 90 deg - alpha'],
       steps: [
@@ -415,6 +456,7 @@ export const solveRightTriangle = (
       c,
       alphaRad,
       betaRad,
+      providedKeys,
       combination: 'c+beta',
       formulas: ['b = c * sin(beta)', 'a = c * cos(beta)', 'alpha = 90 deg - beta'],
       steps: [

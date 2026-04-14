@@ -17,25 +17,13 @@ const { heading, description } = Astro.props;
         <div class="grid gap-4 sm:grid-cols-2">
           <label class="grid gap-2 text-sm">
             <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Side a</span>
-            <input
-              class="input-shell"
-              type="text"
-              inputmode="decimal"
-              name="a"
-              placeholder="3"
-            />
+            <input class="input-shell" type="text" inputmode="decimal" name="a" placeholder="3" />
             <span class="min-h-[1rem] text-xs text-error" data-error-for="a"></span>
           </label>
 
           <label class="grid gap-2 text-sm">
             <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Side b</span>
-            <input
-              class="input-shell"
-              type="text"
-              inputmode="decimal"
-              name="b"
-              placeholder="4"
-            />
+            <input class="input-shell" type="text" inputmode="decimal" name="b" placeholder="4" />
             <span class="min-h-[1rem] text-xs text-error" data-error-for="b"></span>
           </label>
 
@@ -46,13 +34,13 @@ const { heading, description } = Astro.props;
           </label>
 
           <label class="grid gap-2 text-sm">
-            <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Angle α</span>
+            <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Angle A</span>
             <input class="input-shell" type="text" inputmode="text" name="alpha" placeholder="30" />
             <span class="min-h-[1rem] text-xs text-error" data-error-for="alpha"></span>
           </label>
 
           <label class="grid gap-2 text-sm sm:col-span-2">
-            <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Angle β</span>
+            <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Angle B</span>
             <input class="input-shell" type="text" inputmode="text" name="beta" placeholder="pi/6" />
             <span class="min-h-[1rem] text-xs text-error" data-error-for="beta"></span>
           </label>
@@ -62,7 +50,29 @@ const { heading, description } = Astro.props;
           <span class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">Angle mode</span>
           <button class="interactive-chip is-active" type="button" data-angle-mode-option="deg">Degree</button>
           <button class="interactive-chip" type="button" data-angle-mode-option="rad">Radian</button>
-          <span class="text-xs text-on-surface-variant">Angles accept entries like 30 or pi/6.</span>
+          <span class="text-xs text-on-surface-variant">Radian entries like pi/6 are supported.</span>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2">
+          <label class="font-label text-[10px] uppercase tracking-[0.18em] text-outline" for="triangle-unit">Unit</label>
+          <select id="triangle-unit" class="input-shell h-10 w-auto min-w-[8rem]" data-unit-select aria-label="Measurement unit">
+            <option value="">No unit</option>
+            <option value="m">m</option>
+            <option value="cm">cm</option>
+            <option value="mm">mm</option>
+            <option value="ft">ft</option>
+            <option value="in">in</option>
+          </select>
+          <span class="text-xs text-on-surface-variant">All values use the same unit.</span>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">Quick presets</span>
+          <button class="interactive-chip" type="button" data-preset="a:3,b:4">3-4-5</button>
+          <button class="interactive-chip" type="button" data-preset="a:5,b:12">5-12-13</button>
+          <button class="interactive-chip" type="button" data-preset="a:8,b:15">8-15-17</button>
+          <button class="interactive-chip" type="button" data-preset="a:1,b:1">45-45-90</button>
+          <button class="interactive-chip" type="button" data-preset="a:1,b:1.7320508075688772">30-60-90</button>
         </div>
 
         <div class="flex flex-wrap gap-3">
@@ -74,68 +84,50 @@ const { heading, description } = Astro.props;
             <span class="material-symbols-outlined text-base">refresh</span>
             Reset
           </button>
+          <button class="btn-secondary gap-2" type="button" data-copy-btn>
+            <span class="material-symbols-outlined text-base">content_copy</span>
+            Copy Results
+          </button>
         </div>
 
         <p class="text-sm text-on-surface-variant" role="status" aria-live="polite" data-tool-status>
-          Enter exactly two known values from a, b, c, α, β.
+          Enter any 2 valid right-triangle values.
         </p>
+        <p class="text-xs text-on-surface-variant">Solve sides, angles, and derived measures. View formulas and steps.</p>
 
         <details class="rounded-xl border border-outline-variant/20 bg-surface-container-lowest/70">
           <summary class="cursor-pointer px-4 py-3 font-label text-[10px] uppercase tracking-[0.2em] text-outline transition-colors hover:text-on-surface">
-            Formulas Used
+            Show Formulas Used
           </summary>
           <ul class="space-y-2 px-4 pb-4 text-sm text-on-surface-variant" data-formula-list>
-            <li class="pl-1">c = sqrt(a^2 + b^2)</li>
-            <li class="pl-1">α = atan(a / b)</li>
-            <li class="pl-1">β = 90° - α</li>
+            <li class="pl-1">Enter any 2 valid right-triangle values.</li>
           </ul>
         </details>
 
         <details class="rounded-xl border border-outline-variant/20 bg-surface-container-lowest/70">
           <summary class="cursor-pointer px-4 py-3 font-label text-[10px] uppercase tracking-[0.2em] text-outline transition-colors hover:text-on-surface">
-            Step-By-Step
+            Show Steps
           </summary>
           <ol class="list-decimal space-y-2 px-4 pb-4 pl-8 text-sm text-on-surface-variant" data-step-list>
-            <li class="pl-1">Provide exactly two known values.</li>
-            <li class="pl-1">Apply right-triangle identities to recover missing values.</li>
-            <li class="pl-1">Validate that c is largest and α + β = 90°.</li>
+            <li class="pl-1">Enter exactly 2 values with at least one side.</li>
           </ol>
         </details>
       </form>
 
-      <div class="mt-6 grid gap-3 sm:grid-cols-2">
-        <div class="lux-data-cell">
-          <span>Side a</span>
-          <strong data-result-a>3.0000</strong>
-        </div>
-        <div class="lux-data-cell">
-          <span>Side b</span>
-          <strong data-result-b>4.0000</strong>
-        </div>
-        <div class="lux-data-cell">
-          <span>Hypotenuse c</span>
-          <strong data-result-hypotenuse>5.0000</strong>
-        </div>
-        <div class="lux-data-cell">
-          <span>Angle α</span>
-          <strong data-result-angle-alpha>36.8699 deg</strong>
-        </div>
-        <div class="lux-data-cell">
-          <span>Angle β</span>
-          <strong data-result-angle-beta>53.1301 deg</strong>
-        </div>
-        <div class="lux-data-cell">
-          <span>Altitude h</span>
-          <strong data-result-altitude>2.4000</strong>
-        </div>
-        <div class="lux-data-cell">
-          <span>Area A</span>
-          <strong data-result-area>6.0000</strong>
-        </div>
-        <div class="lux-data-cell">
-          <span>Perimeter P</span>
-          <strong data-result-perimeter>12.0000</strong>
-        </div>
+      <div class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="lux-data-cell"><div class="flex items-center justify-between gap-2"><span>Side a</span><span class="font-label text-[9px] uppercase tracking-[0.16em] text-outline" data-origin-a>-</span></div><strong data-result-a>-</strong></div>
+        <div class="lux-data-cell"><div class="flex items-center justify-between gap-2"><span>Side b</span><span class="font-label text-[9px] uppercase tracking-[0.16em] text-outline" data-origin-b>-</span></div><strong data-result-b>-</strong></div>
+        <div class="lux-data-cell"><div class="flex items-center justify-between gap-2"><span>Hypotenuse c</span><span class="font-label text-[9px] uppercase tracking-[0.16em] text-outline" data-origin-c>-</span></div><strong data-result-hypotenuse>-</strong></div>
+        <div class="lux-data-cell"><div class="flex items-center justify-between gap-2"><span>Angle A</span><span class="font-label text-[9px] uppercase tracking-[0.16em] text-outline" data-origin-alpha>-</span></div><strong data-result-angle-alpha>-</strong></div>
+        <div class="lux-data-cell"><div class="flex items-center justify-between gap-2"><span>Angle B</span><span class="font-label text-[9px] uppercase tracking-[0.16em] text-outline" data-origin-beta>-</span></div><strong data-result-angle-beta>-</strong></div>
+        <div class="lux-data-cell"><span>Area</span><strong data-result-area>-</strong></div>
+        <div class="lux-data-cell"><span>Perimeter</span><strong data-result-perimeter>-</strong></div>
+        <div class="lux-data-cell"><span>Altitude h</span><strong data-result-altitude>-</strong></div>
+        <div class="lux-data-cell"><span>Semiperimeter s</span><strong data-result-semiperimeter>-</strong></div>
+        <div class="lux-data-cell"><span>Inradius r</span><strong data-result-inradius>-</strong></div>
+        <div class="lux-data-cell"><span>Circumradius R</span><strong data-result-circumradius>-</strong></div>
+        <div class="lux-data-cell"><span>Segment p</span><strong data-result-segment-p>-</strong></div>
+        <div class="lux-data-cell"><span>Segment q</span><strong data-result-segment-q>-</strong></div>
       </div>
     </div>
 
@@ -145,9 +137,7 @@ const { heading, description } = Astro.props;
           <p class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Live Visualization</p>
           <h3 class="mt-2 text-xl text-on-surface">Right Triangle Diagram</h3>
         </div>
-        <div class="rounded-lg border border-primary/30 bg-primary-fixed px-3 py-1 text-[10px] font-label uppercase tracking-[0.2em] text-primary">
-          Scaled
-        </div>
+        <div class="rounded-lg border border-primary/30 bg-primary-fixed px-3 py-1 text-[10px] font-label uppercase tracking-[0.2em] text-primary">Scaled</div>
       </div>
 
       <div class="relative mt-5 overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-lowest/70 p-4 sm:p-6">
@@ -161,38 +151,23 @@ const { heading, description } = Astro.props;
           </defs>
 
           <path d="M 60 240 L 80 240 L 80 260" fill="none" stroke="#99907c" stroke-width="1.5"></path>
-
-          <path
-            d="M 70 70 L 70 260 L 380 260 Z"
-            fill="none"
-            stroke="#f1c97d"
-            stroke-width="3.2"
-            stroke-linejoin="round"
-            data-triangle-path
-          ></path>
+          <path d="M 70 70 L 70 260 L 380 260 Z" fill="none" stroke="#f1c97d" stroke-width="3.2" stroke-linejoin="round" data-triangle-path></path>
           <path d="M 70 70 L 70 260 L 380 260 Z" fill="url(#rt-fill-gradient)" data-triangle-fill></path>
+          <line x1="70" y1="260" x2="196" y2="184" stroke="#f1c97d" stroke-width="2" stroke-dasharray="5 4" opacity="0" data-altitude-line></line>
 
-          <text x="54" y="170" fill="#d0c5af" font-size="13" text-anchor="end" data-label-a>a = 3.000</text>
-          <text x="226" y="284" fill="#d0c5af" font-size="13" text-anchor="middle" data-label-b>b = 4.000</text>
-          <text x="250" y="152" fill="#f1c97d" font-size="14" font-weight="700" data-label-c>c = 5.000</text>
-          <text x="316" y="248" fill="#b6b5b4" font-size="11" data-label-angle-alpha>α = 36.870 deg</text>
-          <text x="84" y="88" fill="#b6b5b4" font-size="11" data-label-angle-beta>β = 53.130 deg</text>
+          <text x="54" y="170" fill="#d0c5af" font-size="13" text-anchor="end" data-label-a>a = -</text>
+          <text x="226" y="284" fill="#d0c5af" font-size="13" text-anchor="middle" data-label-b>b = -</text>
+          <text x="250" y="152" fill="#f1c97d" font-size="14" font-weight="700" data-label-c>c = -</text>
+          <text x="316" y="248" fill="#b6b5b4" font-size="11" data-label-angle-alpha>A = -</text>
+          <text x="84" y="88" fill="#b6b5b4" font-size="11" data-label-angle-beta>B = -</text>
+          <text x="208" y="196" fill="#f1c97d" font-size="11" opacity="0" data-label-h>h = -</text>
         </svg>
       </div>
 
       <div class="mt-5 grid gap-3 sm:grid-cols-3">
-        <div class="rounded-lg border border-outline-variant/20 bg-surface-container-lowest/70 p-3">
-          <p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">a:c ratio</p>
-          <p class="mt-2 font-mono text-sm text-on-surface" data-result-ratio-a>0.6000</p>
-        </div>
-        <div class="rounded-lg border border-outline-variant/20 bg-surface-container-lowest/70 p-3">
-          <p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">b:c ratio</p>
-          <p class="mt-2 font-mono text-sm text-on-surface" data-result-ratio-b>0.8000</p>
-        </div>
-        <div class="rounded-lg border border-outline-variant/20 bg-surface-container-lowest/70 p-3">
-          <p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">tan(α)</p>
-          <p class="mt-2 font-mono text-sm text-on-surface" data-result-tangent>0.7500</p>
-        </div>
+        <div class="rounded-lg border border-outline-variant/20 bg-surface-container-lowest/70 p-3"><p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">a:c ratio</p><p class="mt-2 font-mono text-sm text-on-surface" data-result-ratio-a>-</p></div>
+        <div class="rounded-lg border border-outline-variant/20 bg-surface-container-lowest/70 p-3"><p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">b:c ratio</p><p class="mt-2 font-mono text-sm text-on-surface" data-result-ratio-b>-</p></div>
+        <div class="rounded-lg border border-outline-variant/20 bg-surface-container-lowest/70 p-3"><p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">tan(A)</p><p class="mt-2 font-mono text-sm text-on-surface" data-result-tangent>-</p></div>
       </div>
     </article>
   </div>
@@ -208,72 +183,91 @@ const { heading, description } = Astro.props;
       type SolverInputKey
     } from 'src/utils/rightTriangleSolver';
 
+    type UnitOption = '' | 'm' | 'cm' | 'mm' | 'ft' | 'in';
+
+    const UNIT_OPTIONS: UnitOption[] = ['', 'm', 'cm', 'mm', 'ft', 'in'];
+    const DEFAULT_FORMULAS = ['Enter any 2 valid right-triangle values.'];
+    const DEFAULT_STEPS = ['Enter exactly 2 values.', 'At least 1 value must be a side (a, b, or c).', 'View formulas and steps after solving.'];
+    const DEFAULT_PATH = 'M 70 70 L 70 260 L 380 260 Z';
+
     const formatNumber = (value: number, digits = 4): string => Number(value).toFixed(digits);
+    const formatEditableNumber = (value: number, digits = 10): string => String(Number(value.toFixed(digits)));
+    const formatWithUnit = (value: number, unit: UnitOption, digits = 4, squared = false): string => {
+      const base = formatNumber(value, digits);
+      if (!unit) return base;
+      return squared ? `${base} ${unit}²` : `${base} ${unit}`;
+    };
+    const formatAngle = (rad: number, mode: AngleMode): string => `${formatAngleForMode(rad, mode, 4)} ${mode === 'deg' ? 'deg' : 'rad'}`;
+    const parseAngleInput = (raw: string, mode: AngleMode): number => {
+      let parsed = parseMathExpression(raw);
+      if (mode === 'deg' && /pi|π/i.test(raw)) {
+        parsed = (parsed * 180) / Math.PI;
+      }
+      return parsed;
+    };
 
     const renderListItems = (listEl: HTMLElement, items: string[]) => {
       const fragment = document.createDocumentFragment();
       for (const item of items) {
         const li = document.createElement('li');
         li.className = 'pl-1';
-        li.textContent = item;
+        li.textContent = item.replace(/alpha/g, 'A').replace(/beta/g, 'B');
         fragment.append(li);
       }
       listEl.replaceChildren(fragment);
     };
 
+    const parsePreset = (rawPreset: string): Partial<Record<SolverInputKey, string>> => {
+      const values: Partial<Record<SolverInputKey, string>> = {};
+      for (const chunk of rawPreset.split(',')) {
+        const [rawKey, rawValue] = chunk.split(':');
+        const key = rawKey?.trim() as SolverInputKey | undefined;
+        const value = rawValue?.trim();
+        if (key && value && SOLVER_INPUT_KEYS.includes(key)) values[key] = value;
+      }
+      return values;
+    };
+
     const initTriangleTool = (section: HTMLElement) => {
       const form = section.querySelector('[data-triangle-form]') as HTMLFormElement | null;
       const statusEl = section.querySelector('[data-tool-status]') as HTMLElement | null;
+      const formulaListEl = section.querySelector('[data-formula-list]') as HTMLElement | null;
+      const stepListEl = section.querySelector('[data-step-list]') as HTMLElement | null;
+      const unitSelect = section.querySelector('[data-unit-select]') as HTMLSelectElement | null;
+      const resetButton = section.querySelector('[data-reset-btn]') as HTMLButtonElement | null;
+      const copyButton = section.querySelector('[data-copy-btn]') as HTMLButtonElement | null;
       const pathEl = section.querySelector('[data-triangle-path]') as SVGPathElement | null;
       const fillEl = section.querySelector('[data-triangle-fill]') as SVGPathElement | null;
+      const altitudeLineEl = section.querySelector('[data-altitude-line]') as SVGLineElement | null;
       const labelA = section.querySelector('[data-label-a]') as SVGTextElement | null;
       const labelB = section.querySelector('[data-label-b]') as SVGTextElement | null;
       const labelC = section.querySelector('[data-label-c]') as SVGTextElement | null;
       const labelAngleAlpha = section.querySelector('[data-label-angle-alpha]') as SVGTextElement | null;
       const labelAngleBeta = section.querySelector('[data-label-angle-beta]') as SVGTextElement | null;
-      const resultAEl = section.querySelector('[data-result-a]') as HTMLElement | null;
-      const resultBEl = section.querySelector('[data-result-b]') as HTMLElement | null;
-      const hypotenuseEl = section.querySelector('[data-result-hypotenuse]') as HTMLElement | null;
-      const areaEl = section.querySelector('[data-result-area]') as HTMLElement | null;
-      const perimeterEl = section.querySelector('[data-result-perimeter]') as HTMLElement | null;
-      const angleAlphaEl = section.querySelector('[data-result-angle-alpha]') as HTMLElement | null;
-      const angleBetaEl = section.querySelector('[data-result-angle-beta]') as HTMLElement | null;
-      const altitudeEl = section.querySelector('[data-result-altitude]') as HTMLElement | null;
-      const ratioAEl = section.querySelector('[data-result-ratio-a]') as HTMLElement | null;
-      const ratioBEl = section.querySelector('[data-result-ratio-b]') as HTMLElement | null;
-      const tangentEl = section.querySelector('[data-result-tangent]') as HTMLElement | null;
-      const formulaListEl = section.querySelector('[data-formula-list]') as HTMLElement | null;
-      const stepListEl = section.querySelector('[data-step-list]') as HTMLElement | null;
+      const labelH = section.querySelector('[data-label-h]') as SVGTextElement | null;
       const modeButtons = Array.from(section.querySelectorAll('[data-angle-mode-option]')) as HTMLButtonElement[];
-      const resetButton = section.querySelector('[data-reset-btn]') as HTMLButtonElement | null;
+      const presetButtons = Array.from(section.querySelectorAll('[data-preset]')) as HTMLButtonElement[];
 
-      if (
-        !form ||
-        !statusEl ||
-        !pathEl ||
-        !fillEl ||
-        !labelA ||
-        !labelB ||
-        !labelC ||
-        !labelAngleAlpha ||
-        !labelAngleBeta ||
-        !resultAEl ||
-        !resultBEl ||
-        !hypotenuseEl ||
-        !areaEl ||
-        !perimeterEl ||
-        !angleAlphaEl ||
-        !angleBetaEl ||
-        !altitudeEl ||
-        !ratioAEl ||
-        !ratioBEl ||
-        !tangentEl ||
-        !formulaListEl ||
-        !stepListEl ||
-        !resetButton
-      ) {
-        return;
-      }
+      const resultEls = {
+        a: section.querySelector('[data-result-a]'),
+        b: section.querySelector('[data-result-b]'),
+        c: section.querySelector('[data-result-hypotenuse]'),
+        A: section.querySelector('[data-result-angle-alpha]'),
+        B: section.querySelector('[data-result-angle-beta]'),
+        area: section.querySelector('[data-result-area]'),
+        perimeter: section.querySelector('[data-result-perimeter]'),
+        h: section.querySelector('[data-result-altitude]'),
+        s: section.querySelector('[data-result-semiperimeter]'),
+        r: section.querySelector('[data-result-inradius]'),
+        R: section.querySelector('[data-result-circumradius]'),
+        p: section.querySelector('[data-result-segment-p]'),
+        q: section.querySelector('[data-result-segment-q]'),
+        ratioA: section.querySelector('[data-result-ratio-a]'),
+        ratioB: section.querySelector('[data-result-ratio-b]'),
+        tanA: section.querySelector('[data-result-tangent]')
+      };
+
+      if (!form || !statusEl || !formulaListEl || !stepListEl || !unitSelect || !resetButton || !copyButton || !pathEl || !fillEl || !altitudeLineEl || !labelA || !labelB || !labelC || !labelAngleAlpha || !labelAngleBeta || !labelH || Object.values(resultEls).some((el) => !el)) return;
 
       const inputRefs = {
         a: form.querySelector('input[name="a"]'),
@@ -291,17 +285,26 @@ const { heading, description } = Astro.props;
         beta: form.querySelector('[data-error-for="beta"]')
       } satisfies Record<SolverInputKey, HTMLElement | null>;
 
-      if (
-        Object.values(inputRefs).some((el) => !el) ||
-        Object.values(errorRefs).some((el) => !el)
-      ) {
-        return;
-      }
+      const originRefs = {
+        a: section.querySelector('[data-origin-a]'),
+        b: section.querySelector('[data-origin-b]'),
+        c: section.querySelector('[data-origin-c]'),
+        alpha: section.querySelector('[data-origin-alpha]'),
+        beta: section.querySelector('[data-origin-beta]')
+      } satisfies Record<SolverInputKey, HTMLElement | null>;
+
+      if (Object.values(inputRefs).some((el) => !el) || Object.values(errorRefs).some((el) => !el) || Object.values(originRefs).some((el) => !el)) return;
 
       const inputs = inputRefs as Record<SolverInputKey, HTMLInputElement>;
       const errors = errorRefs as Record<SolverInputKey, HTMLElement>;
+      const origins = originRefs as Record<SolverInputKey, HTMLElement>;
+      const r = resultEls as Record<string, HTMLElement>;
 
       let angleMode: AngleMode = 'deg';
+      let unit: UnitOption = '';
+      let lastSolution: RightTriangleSolution | null = null;
+
+      const getFilledCount = () => SOLVER_INPUT_KEYS.filter((key) => inputs[key].value.trim().length > 0).length;
 
       const setStatus = (message: string, isError = false) => {
         statusEl.textContent = message;
@@ -314,62 +317,131 @@ const { heading, description } = Astro.props;
       };
 
       const clearFieldErrors = () => {
+        for (const key of SOLVER_INPUT_KEYS) setFieldError(key, '');
+      };
+
+      const setOriginState = (provided: SolverInputKey[] | null) => {
         for (const key of SOLVER_INPUT_KEYS) {
-          setFieldError(key, '');
+          const entered = provided ? provided.includes(key) : false;
+          origins[key].textContent = provided ? (entered ? 'entered' : 'computed') : '-';
+          origins[key].classList.toggle('text-primary', entered);
+          origins[key].classList.toggle('text-outline', !entered);
         }
       };
 
-      const drawTriangle = (solution: RightTriangleSolution) => {
-        const originX = 70;
-        const originY = 260;
-        const maxLeg = Math.max(solution.a, solution.b, 1);
-        const scale = 190 / maxLeg;
-        const topX = originX;
-        const topY = originY - solution.a * scale;
-        const rightX = originX + solution.b * scale;
-        const path = `M ${topX} ${topY} L ${originX} ${originY} L ${rightX} ${originY} Z`;
-        const angleUnit = angleMode === 'deg' ? 'deg' : 'rad';
+      const setEmptyResults = () => {
+        for (const key of ['a', 'b', 'c', 'A', 'B', 'area', 'perimeter', 'h', 's', 'r', 'R', 'p', 'q', 'ratioA', 'ratioB', 'tanA']) r[key].textContent = '-';
+        setOriginState(null);
+        renderListItems(formulaListEl, DEFAULT_FORMULAS);
+        renderListItems(stepListEl, DEFAULT_STEPS);
+        pathEl.setAttribute('d', DEFAULT_PATH);
+        fillEl.setAttribute('d', DEFAULT_PATH);
+        altitudeLineEl.setAttribute('opacity', '0');
+        labelH.setAttribute('opacity', '0');
+        labelA.textContent = 'a = -';
+        labelB.textContent = 'b = -';
+        labelC.textContent = 'c = -';
+        labelAngleAlpha.textContent = 'A = -';
+        labelAngleBeta.textContent = 'B = -';
+        labelH.textContent = 'h = -';
+        labelA.setAttribute('fill', '#d0c5af');
+        labelB.setAttribute('fill', '#d0c5af');
+        labelC.setAttribute('fill', '#f1c97d');
+        labelAngleAlpha.setAttribute('fill', '#b6b5b4');
+        labelAngleBeta.setAttribute('fill', '#b6b5b4');
+        lastSolution = null;
+      };
 
+      const drawTriangle = (solution: RightTriangleSolution) => {
+        const ox = 70;
+        const oy = 260;
+        const scale = 190 / Math.max(solution.a, solution.b, 1);
+        const tx = ox;
+        const ty = oy - solution.a * scale;
+        const rx = ox + solution.b * scale;
+        const ry = oy;
+        const path = `M ${tx} ${ty} L ${ox} ${oy} L ${rx} ${ry} Z`;
         pathEl.setAttribute('d', path);
         fillEl.setAttribute('d', path);
 
-        labelA.setAttribute('y', String((topY + originY) / 2));
-        labelA.textContent = `a = ${formatNumber(solution.a, 3)}`;
+        const dx = rx - tx;
+        const dy = ry - ty;
+        const den = dx * dx + dy * dy;
+        const t = den > 0 ? ((ox - tx) * dx + (oy - ty) * dy) / den : 0;
+        const fx = tx + t * dx;
+        const fy = ty + t * dy;
 
-        labelB.setAttribute('x', String((originX + rightX) / 2));
-        labelB.textContent = `b = ${formatNumber(solution.b, 3)}`;
+        altitudeLineEl.setAttribute('x1', String(ox));
+        altitudeLineEl.setAttribute('y1', String(oy));
+        altitudeLineEl.setAttribute('x2', String(fx));
+        altitudeLineEl.setAttribute('y2', String(fy));
+        altitudeLineEl.setAttribute('opacity', '1');
 
-        labelC.setAttribute('x', String((originX + rightX) / 2 + 18));
-        labelC.setAttribute('y', String((topY + originY) / 2));
-        labelC.textContent = `c = ${formatNumber(solution.c, 3)}`;
+        labelH.setAttribute('x', String((ox + fx) / 2 + 8));
+        labelH.setAttribute('y', String((oy + fy) / 2 - 8));
+        labelH.setAttribute('opacity', '1');
+        labelH.textContent = `h = ${formatWithUnit(solution.h, unit, 3)}`;
 
-        labelAngleAlpha.setAttribute('x', String(rightX - 76));
-        labelAngleAlpha.setAttribute('y', String(originY - 12));
-        labelAngleAlpha.textContent = `α = ${formatAngleForMode(solution.alphaRad, angleMode, 3)} ${angleUnit}`;
+        labelA.setAttribute('y', String((ty + oy) / 2));
+        labelA.textContent = `a = ${formatWithUnit(solution.a, unit, 3)}`;
+        labelB.setAttribute('x', String((ox + rx) / 2));
+        labelB.textContent = `b = ${formatWithUnit(solution.b, unit, 3)}`;
+        labelC.setAttribute('x', String((ox + rx) / 2 + 18));
+        labelC.setAttribute('y', String((ty + oy) / 2));
+        labelC.textContent = `c = ${formatWithUnit(solution.c, unit, 3)}`;
+        labelAngleAlpha.setAttribute('x', String(rx - 76));
+        labelAngleAlpha.setAttribute('y', String(oy - 12));
+        labelAngleAlpha.textContent = `A = ${formatAngleForMode(solution.alphaRad, angleMode, 3)} ${angleMode === 'deg' ? 'deg' : 'rad'}`;
+        labelAngleBeta.setAttribute('x', String(ox + 14));
+        labelAngleBeta.setAttribute('y', String(ty + 16));
+        labelAngleBeta.textContent = `B = ${formatAngleForMode(solution.betaRad, angleMode, 3)} ${angleMode === 'deg' ? 'deg' : 'rad'}`;
 
-        labelAngleBeta.setAttribute('x', String(originX + 14));
-        labelAngleBeta.setAttribute('y', String(topY + 16));
-        labelAngleBeta.textContent = `β = ${formatAngleForMode(solution.betaRad, angleMode, 3)} ${angleUnit}`;
+        const entered = new Set(solution.providedKeys);
+        labelA.setAttribute('fill', entered.has('a') ? '#f1c97d' : '#d0c5af');
+        labelB.setAttribute('fill', entered.has('b') ? '#f1c97d' : '#d0c5af');
+        labelC.setAttribute('fill', entered.has('c') ? '#f1c97d' : '#d0c5af');
+        labelAngleAlpha.setAttribute('fill', entered.has('alpha') ? '#f1c97d' : '#b6b5b4');
+        labelAngleBeta.setAttribute('fill', entered.has('beta') ? '#f1c97d' : '#b6b5b4');
       };
 
       const renderSolution = (solution: RightTriangleSolution) => {
-        const angleUnit = angleMode === 'deg' ? 'deg' : 'rad';
+        r.a.textContent = formatWithUnit(solution.a, unit);
+        r.b.textContent = formatWithUnit(solution.b, unit);
+        r.c.textContent = formatWithUnit(solution.c, unit);
+        r.A.textContent = formatAngle(solution.alphaRad, angleMode);
+        r.B.textContent = formatAngle(solution.betaRad, angleMode);
+        r.area.textContent = formatWithUnit(solution.area, unit, 4, true);
+        r.perimeter.textContent = formatWithUnit(solution.perimeter, unit);
+        r.h.textContent = formatWithUnit(solution.h, unit);
+        r.s.textContent = formatWithUnit(solution.semiperimeter, unit);
+        r.r.textContent = formatWithUnit(solution.inradius, unit);
+        r.R.textContent = formatWithUnit(solution.circumradius, unit);
+        r.p.textContent = formatWithUnit(solution.segmentP, unit);
+        r.q.textContent = formatWithUnit(solution.segmentQ, unit);
+        r.ratioA.textContent = formatNumber(solution.ratioA);
+        r.ratioB.textContent = formatNumber(solution.ratioB);
+        r.tanA.textContent = formatNumber(solution.tangentAlpha);
 
-        resultAEl.textContent = formatNumber(solution.a);
-        resultBEl.textContent = formatNumber(solution.b);
-        hypotenuseEl.textContent = formatNumber(solution.c);
-        angleAlphaEl.textContent = `${formatAngleForMode(solution.alphaRad, angleMode)} ${angleUnit}`;
-        angleBetaEl.textContent = `${formatAngleForMode(solution.betaRad, angleMode)} ${angleUnit}`;
-        altitudeEl.textContent = formatNumber(solution.h);
-        areaEl.textContent = formatNumber(solution.area);
-        perimeterEl.textContent = formatNumber(solution.perimeter);
-        ratioAEl.textContent = formatNumber(solution.ratioA);
-        ratioBEl.textContent = formatNumber(solution.ratioB);
-        tangentEl.textContent = formatNumber(solution.tangentAlpha);
-
+        setOriginState(solution.providedKeys);
         drawTriangle(solution);
         renderListItems(formulaListEl, solution.formulas);
         renderListItems(stepListEl, solution.steps);
+        lastSolution = solution;
+      };
+      const updateUrlState = () => {
+        const params = new URLSearchParams(window.location.search);
+        const map: Record<SolverInputKey, string> = { a: 'a', b: 'b', c: 'c', alpha: 'A', beta: 'B' };
+        for (const key of SOLVER_INPUT_KEYS) {
+          const value = inputs[key].value.trim();
+          if (value) params.set(map[key], value);
+          else params.delete(map[key]);
+        }
+        if (angleMode === 'deg') params.delete('mode');
+        else params.set('mode', angleMode);
+        if (unit) params.set('unit', unit);
+        else params.delete('unit');
+        const query = params.toString();
+        window.history.replaceState({}, '', query ? `${window.location.pathname}?${query}` : window.location.pathname);
       };
 
       const readValues = () => {
@@ -384,10 +456,7 @@ const { heading, description } = Astro.props;
           }
 
           try {
-            let parsed = parseMathExpression(raw);
-            if ((key === 'alpha' || key === 'beta') && angleMode === 'deg' && /pi|π/i.test(raw)) {
-              parsed = (parsed * 180) / Math.PI;
-            }
+            const parsed = key === 'alpha' || key === 'beta' ? parseAngleInput(raw, angleMode) : parseMathExpression(raw);
             values[key] = parsed;
             setFieldError(key, '');
           } catch (error) {
@@ -395,8 +464,7 @@ const { heading, description } = Astro.props;
               key === 'alpha' || key === 'beta'
                 ? 'Enter a valid angle (example: 30 or pi/6).'
                 : `Enter a valid value for ${key}.`;
-            const message = error instanceof Error ? error.message : fallback;
-            setFieldError(key, message);
+            setFieldError(key, error instanceof Error ? error.message : fallback);
             hasAnyError = true;
           }
         }
@@ -404,42 +472,147 @@ const { heading, description } = Astro.props;
         return { values, hasAnyError };
       };
 
+      const updatePresetState = () => {
+        const isPresetActive = (preset: Partial<Record<SolverInputKey, string>>) => {
+          for (const key of SOLVER_INPUT_KEYS) {
+            const p = preset[key] ?? '';
+            const c = inputs[key].value.trim();
+            if (!p && c) return false;
+            if (!p) continue;
+            try {
+              if (Math.abs(parseMathExpression(p) - parseMathExpression(c || '')) > 1e-9) return false;
+            } catch {
+              return false;
+            }
+          }
+          return true;
+        };
+
+        for (const button of presetButtons) {
+          const preset = parsePreset(button.getAttribute('data-preset') || '');
+          button.classList.toggle('is-active', isPresetActive(preset));
+        }
+      };
+
       const solveFromInputs = () => {
         clearFieldErrors();
         const { values, hasAnyError } = readValues();
         if (hasAnyError) {
           setStatus('Fix highlighted inputs before solving.', true);
+          setEmptyResults();
+          updatePresetState();
+          updateUrlState();
           return;
         }
 
         try {
           const solution = solveRightTriangle(values, angleMode);
           renderSolution(solution);
-          const readableCase = solution.combination.replace('+', ' + ');
+          const readableCase = solution.combination.replace('+', ' + ').replace('alpha', 'A').replace('beta', 'B');
           setStatus(`Solved from ${readableCase}.`, false);
         } catch (error) {
-          const message = error instanceof Error ? error.message : 'Unable to solve with these inputs.';
-          setStatus(message, true);
+          setStatus(error instanceof Error ? error.message : 'Unable to solve with these inputs.', true);
+          setEmptyResults();
         }
+
+        updatePresetState();
+        updateUrlState();
       };
 
       const syncModeButtons = () => {
         for (const button of modeButtons) {
-          const isActive = button.dataset.angleModeOption === angleMode;
-          button.classList.toggle('is-active', isActive);
-          button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+          const active = button.dataset.angleModeOption === angleMode;
+          button.classList.toggle('is-active', active);
+          button.setAttribute('aria-pressed', active ? 'true' : 'false');
         }
       };
 
       const resetTool = () => {
         angleMode = 'deg';
-        syncModeButtons();
+        unit = '';
+        unitSelect.value = '';
         for (const key of SOLVER_INPUT_KEYS) {
           inputs[key].value = '';
+          setFieldError(key, '');
         }
-        inputs.a.value = '3';
-        inputs.b.value = '4';
-        solveFromInputs();
+        syncModeButtons();
+        setEmptyResults();
+        setStatus('Enter any 2 valid right-triangle values.', false);
+        updatePresetState();
+        updateUrlState();
+      };
+
+      const copyResults = async () => {
+        if (!lastSolution) {
+          setStatus('Solve a triangle before copying results.', true);
+          return;
+        }
+
+        const text = [
+          'Right Triangle Solver Results',
+          `a = ${formatWithUnit(lastSolution.a, unit)}`,
+          `b = ${formatWithUnit(lastSolution.b, unit)}`,
+          `c = ${formatWithUnit(lastSolution.c, unit)}`,
+          `A = ${formatAngle(lastSolution.alphaRad, angleMode)}`,
+          `B = ${formatAngle(lastSolution.betaRad, angleMode)}`,
+          `Area = ${formatWithUnit(lastSolution.area, unit, 4, true)}`,
+          `Perimeter = ${formatWithUnit(lastSolution.perimeter, unit)}`,
+          `Altitude h = ${formatWithUnit(lastSolution.h, unit)}`,
+          `Semiperimeter s = ${formatWithUnit(lastSolution.semiperimeter, unit)}`,
+          `Inradius r = ${formatWithUnit(lastSolution.inradius, unit)}`,
+          `Circumradius R = ${formatWithUnit(lastSolution.circumradius, unit)}`,
+          `Segment p = ${formatWithUnit(lastSolution.segmentP, unit)}`,
+          `Segment q = ${formatWithUnit(lastSolution.segmentQ, unit)}`
+        ].join('\n');
+
+        try {
+          if (navigator.clipboard?.writeText) {
+            await navigator.clipboard.writeText(text);
+          } else {
+            const area = document.createElement('textarea');
+            area.value = text;
+            area.setAttribute('readonly', 'true');
+            area.style.position = 'fixed';
+            area.style.opacity = '0';
+            document.body.append(area);
+            area.select();
+            document.execCommand('copy');
+            area.remove();
+          }
+          setStatus('Results copied to clipboard.', false);
+        } catch {
+          setStatus('Unable to copy automatically. Please copy manually.', true);
+        }
+      };
+
+      const hydrateFromUrl = () => {
+        const params = new URLSearchParams(window.location.search);
+        const mode = params.get('mode');
+        const urlUnit = params.get('unit');
+        if (mode === 'deg' || mode === 'rad') angleMode = mode;
+        if (urlUnit && UNIT_OPTIONS.includes(urlUnit as UnitOption)) unit = urlUnit as UnitOption;
+
+        const map: Array<[string, SolverInputKey]> = [['a', 'a'], ['b', 'b'], ['c', 'c'], ['A', 'alpha'], ['B', 'beta']];
+        let hasAny = false;
+        for (const [param, key] of map) {
+          const value = params.get(param)?.trim() ?? '';
+          if (value) hasAny = true;
+          inputs[key].value = value;
+        }
+
+        syncModeButtons();
+        unitSelect.value = unit;
+        updatePresetState();
+
+        const filled = getFilledCount();
+        if (hasAny && filled === 2) solveFromInputs();
+        else if (!hasAny || filled === 0) {
+          setEmptyResults();
+          setStatus('Enter any 2 valid right-triangle values.', false);
+        } else {
+          setEmptyResults();
+          setStatus('Enter exactly 2 values to solve.', true);
+        }
       };
 
       form.addEventListener('submit', (event) => {
@@ -449,39 +622,82 @@ const { heading, description } = Astro.props;
 
       for (const key of SOLVER_INPUT_KEYS) {
         inputs[key].addEventListener('input', () => {
-          const filled = SOLVER_INPUT_KEYS.filter((inputKey) => inputs[inputKey].value.trim().length > 0).length;
+          setFieldError(key, '');
+          const filled = getFilledCount();
           if (filled === 2) {
             solveFromInputs();
             return;
           }
-          if (filled === 0) {
-            clearFieldErrors();
-            setStatus('Enter exactly two known values from a, b, c, α, β.', false);
-            return;
+          setEmptyResults();
+          if (filled === 0) setStatus('Enter any 2 valid right-triangle values.', false);
+          else if (filled === 1) setStatus('Enter one more value to solve the triangle.', false);
+          else setStatus('Enter exactly 2 values. Clear extra fields to solve.', true);
+          updatePresetState();
+          updateUrlState();
+        });
+
+        inputs[key].addEventListener('keydown', (event) => {
+          if (event.key === 'Enter') {
+            event.preventDefault();
+            solveFromInputs();
           }
-          clearFieldErrors();
-          setStatus('Provide exactly two known values to solve.', false);
+        });
+      }
+
+      for (const button of presetButtons) {
+        button.addEventListener('click', () => {
+          const preset = parsePreset(button.getAttribute('data-preset') || '');
+          for (const key of SOLVER_INPUT_KEYS) {
+            inputs[key].value = preset[key] ?? '';
+            setFieldError(key, '');
+          }
+          solveFromInputs();
         });
       }
 
       for (const button of modeButtons) {
         button.addEventListener('click', () => {
-          const nextMode = button.dataset.angleModeOption as AngleMode | undefined;
-          if (!nextMode || nextMode === angleMode) return;
-          angleMode = nextMode;
+          const next = button.dataset.angleModeOption as AngleMode | undefined;
+          if (!next || next === angleMode) return;
+          const previousMode = angleMode;
+          for (const key of ['alpha', 'beta'] as const) {
+            const raw = inputs[key].value.trim();
+            if (!raw) continue;
+            try {
+              const parsedInPreviousMode = parseAngleInput(raw, previousMode);
+              const converted = next === 'deg' ? (parsedInPreviousMode * 180) / Math.PI : (parsedInPreviousMode * Math.PI) / 180;
+              inputs[key].value = formatEditableNumber(converted);
+              setFieldError(key, '');
+            } catch {
+              // Keep original raw input if it cannot be parsed safely.
+            }
+          }
+          angleMode = next;
           syncModeButtons();
-          solveFromInputs();
+          if (getFilledCount() === 2) solveFromInputs();
+          else if (lastSolution) renderSolution(lastSolution);
+          updateUrlState();
         });
       }
 
-      resetButton.addEventListener('click', () => resetTool());
+      unitSelect.addEventListener('change', () => {
+        const value = unitSelect.value as UnitOption;
+        if (!UNIT_OPTIONS.includes(value)) return;
+        unit = value;
+        if (lastSolution) renderSolution(lastSolution);
+        updateUrlState();
+      });
 
-      syncModeButtons();
-      resetTool();
+      resetButton.addEventListener('click', resetTool);
+      copyButton.addEventListener('click', () => {
+        void copyResults();
+      });
+
+      setEmptyResults();
+      hydrateFromUrl();
     };
 
-    const sections = Array.from(document.querySelectorAll('[data-right-triangle-tool]')) as HTMLElement[];
-    for (const section of sections) {
+    for (const section of Array.from(document.querySelectorAll('[data-right-triangle-tool]')) as HTMLElement[]) {
       initTriangleTool(section);
     }
   </script>

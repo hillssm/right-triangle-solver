@@ -65,14 +65,6 @@ const { heading, description } = Astro.props;
           <span class="text-xs text-on-surface-variant">Angles accept entries like 30 or pi/6.</span>
         </div>
 
-        <div class="flex flex-wrap items-center gap-2">
-          <span class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">Quick presets</span>
-          <button class="interactive-chip" type="button" data-preset="a:3,b:4">3-4-5</button>
-          <button class="interactive-chip" type="button" data-preset="a:5,b:12">5-12-13</button>
-          <button class="interactive-chip" type="button" data-preset="a:8,b:15">8-15-17</button>
-          <button class="interactive-chip" type="button" data-preset="a:9,b:12">9-12-15</button>
-        </div>
-
         <div class="flex flex-wrap gap-3">
           <button class="btn-primary gap-2" type="submit">
             <span class="material-symbols-outlined text-base">play_arrow</span>
@@ -229,19 +221,6 @@ const { heading, description } = Astro.props;
       listEl.replaceChildren(fragment);
     };
 
-    const parsePreset = (rawPreset: string): Partial<Record<SolverInputKey, string>> => {
-      const values: Partial<Record<SolverInputKey, string>> = {};
-      for (const chunk of rawPreset.split(',')) {
-        const [rawKey, rawValue] = chunk.split(':');
-        const key = rawKey?.trim() as SolverInputKey | undefined;
-        const value = rawValue?.trim();
-        if (key && value && SOLVER_INPUT_KEYS.includes(key)) {
-          values[key] = value;
-        }
-      }
-      return values;
-    };
-
     const initTriangleTool = (section: HTMLElement) => {
       const form = section.querySelector('[data-triangle-form]') as HTMLFormElement | null;
       const statusEl = section.querySelector('[data-tool-status]') as HTMLElement | null;
@@ -265,7 +244,6 @@ const { heading, description } = Astro.props;
       const tangentEl = section.querySelector('[data-result-tangent]') as HTMLElement | null;
       const formulaListEl = section.querySelector('[data-formula-list]') as HTMLElement | null;
       const stepListEl = section.querySelector('[data-step-list]') as HTMLElement | null;
-      const presetButtons = Array.from(section.querySelectorAll('[data-preset]')) as HTMLButtonElement[];
       const modeButtons = Array.from(section.querySelectorAll('[data-angle-mode-option]')) as HTMLButtonElement[];
       const resetButton = section.querySelector('[data-reset-btn]') as HTMLButtonElement | null;
 
@@ -394,34 +372,6 @@ const { heading, description } = Astro.props;
         renderListItems(stepListEl, solution.steps);
       };
 
-      const activePresetForInputs = (preset: Partial<Record<SolverInputKey, string>>) => {
-        for (const key of SOLVER_INPUT_KEYS) {
-          const presetValue = preset[key] ?? '';
-          const currentValue = inputs[key].value.trim();
-          if (!presetValue && currentValue) return false;
-          if (!presetValue) continue;
-
-          try {
-            const presetNumber = parseMathExpression(presetValue);
-            const currentNumber = parseMathExpression(currentValue || '');
-            if (Math.abs(presetNumber - currentNumber) > 1e-9) {
-              return false;
-            }
-          } catch {
-            return false;
-          }
-        }
-
-        return true;
-      };
-
-      const updatePresetState = () => {
-        for (const button of presetButtons) {
-          const preset = parsePreset(button.getAttribute('data-preset') || '');
-          button.classList.toggle('is-active', activePresetForInputs(preset));
-        }
-      };
-
       const readValues = () => {
         const values: Partial<Record<SolverInputKey, number>> = {};
         let hasAnyError = false;
@@ -459,7 +409,6 @@ const { heading, description } = Astro.props;
         const { values, hasAnyError } = readValues();
         if (hasAnyError) {
           setStatus('Fix highlighted inputs before solving.', true);
-          updatePresetState();
           return;
         }
 
@@ -472,16 +421,6 @@ const { heading, description } = Astro.props;
           const message = error instanceof Error ? error.message : 'Unable to solve with these inputs.';
           setStatus(message, true);
         }
-
-        updatePresetState();
-      };
-
-      const applyPreset = (button: HTMLButtonElement) => {
-        const preset = parsePreset(button.getAttribute('data-preset') || '');
-        for (const key of SOLVER_INPUT_KEYS) {
-          inputs[key].value = preset[key] ?? '';
-        }
-        solveFromInputs();
       };
 
       const syncModeButtons = () => {
@@ -510,7 +449,6 @@ const { heading, description } = Astro.props;
 
       for (const key of SOLVER_INPUT_KEYS) {
         inputs[key].addEventListener('input', () => {
-          updatePresetState();
           const filled = SOLVER_INPUT_KEYS.filter((inputKey) => inputs[inputKey].value.trim().length > 0).length;
           if (filled === 2) {
             solveFromInputs();
@@ -524,10 +462,6 @@ const { heading, description } = Astro.props;
           clearFieldErrors();
           setStatus('Provide exactly two known values to solve.', false);
         });
-      }
-
-      for (const button of presetButtons) {
-        button.addEventListener('click', () => applyPreset(button));
       }
 
       for (const button of modeButtons) {

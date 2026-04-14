@@ -170,12 +170,15 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    background: rgb(206, 207, 202);
+    background: var(--color-background);
   }
 
   body {
     @apply antialiased;
-    background: rgb(206, 207, 202);
+    background:
+      radial-gradient(880px 460px at 8% -12%, rgba(241, 201, 125, 0.12), transparent 70%),
+      radial-gradient(820px 420px at 95% -14%, rgba(198, 199, 194, 0.08), transparent 70%),
+      linear-gradient(180deg, #131313 0%, #181717 54%, #131313 100%);
     color: var(--color-on-surface);
     font-family: var(--font-body);
     min-height: 100vh;
@@ -188,7 +191,7 @@
     inset: 0;
     pointer-events: none;
     z-index: -1;
-    opacity: 0;
+    opacity: 0.22;
     background-image:
       linear-gradient(to right, rgba(153, 144, 124, 0.06) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(153, 144, 124, 0.06) 1px, transparent 1px);

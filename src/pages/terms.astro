@@ -17,7 +17,7 @@ const terms = (content.terms as Record<string, string>) ?? {};
 >
   <article class="section-shell prose-shell">
     <h1 class="text-3xl font-bold sm:text-4xl">{pick(terms, 'heading', 'Terms of Use')}</h1>
-    <p class="mt-2 text-xs uppercase tracking-wide text-slate-500">{pick(terms, 'updatedLabel', '')}</p>
-    <p class="mt-4 text-slate-700">{pick(terms, 'body', 'These are the terms of use.')}</p>
+    <p class="mt-2 text-xs uppercase tracking-wide text-outline">{pick(terms, 'updatedLabel', '')}</p>
+    <p class="mt-4 text-on-surface-variant">{pick(terms, 'body', 'These are the terms of use.')}</p>
   </article>
 </BaseLayout>

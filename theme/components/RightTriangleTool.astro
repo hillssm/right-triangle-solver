@@ -1,4 +1,4 @@
-﻿---
+---
 interface Props {
   heading: string;
   description: string;
@@ -8,62 +8,135 @@ const { heading, description } = Astro.props;
 ---
 
 <section class="section-shell" aria-labelledby="tool-heading">
-  <h2 id="tool-heading" class="text-2xl font-bold sm:text-3xl">{heading}</h2>
-  <p class="mt-2 text-sm text-slate-600">{description}</p>
+  <div class="grid gap-8 xl:grid-cols-[0.95fr_1.05fr]">
+    <div>
+      <h2 id="tool-heading" class="text-2xl sm:text-3xl">{heading}</h2>
+      <p class="mt-2 max-w-xl text-sm leading-relaxed text-on-surface-variant">{description}</p>
 
-  <form class="mt-6 grid gap-4 sm:grid-cols-2" data-triangle-form>
-    <label class="grid gap-2 text-sm font-medium text-slate-700">
-      Leg A
-      <input
-        class="input-shell"
-        type="number"
-        inputmode="decimal"
-        min="0"
-        step="any"
-        name="legA"
-        required
-      />
-    </label>
+      <form class="mt-6 grid gap-4" data-triangle-form>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <label class="grid gap-2 text-sm">
+            <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Leg a</span>
+            <input
+              class="input-shell"
+              type="number"
+              inputmode="decimal"
+              min="0"
+              step="any"
+              name="legA"
+              placeholder="3"
+              required
+            />
+          </label>
 
-    <label class="grid gap-2 text-sm font-medium text-slate-700">
-      Leg B
-      <input
-        class="input-shell"
-        type="number"
-        inputmode="decimal"
-        min="0"
-        step="any"
-        name="legB"
-        required
-      />
-    </label>
+          <label class="grid gap-2 text-sm">
+            <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Leg b</span>
+            <input
+              class="input-shell"
+              type="number"
+              inputmode="decimal"
+              min="0"
+              step="any"
+              name="legB"
+              placeholder="4"
+              required
+            />
+          </label>
+        </div>
 
-    <div class="sm:col-span-2 flex flex-wrap gap-3">
-      <button class="btn-primary" type="submit">Solve Triangle</button>
-      <button class="btn-secondary" type="reset">Reset</button>
+        <div class="flex flex-wrap gap-3">
+          <button class="btn-primary gap-2" type="submit">
+            <span class="material-symbols-outlined text-base">play_arrow</span>
+            Solve Triangle
+          </button>
+          <button class="btn-secondary gap-2" type="reset">
+            <span class="material-symbols-outlined text-base">refresh</span>
+            Reset
+          </button>
+        </div>
+
+        <p class="text-sm text-on-surface-variant" role="status" aria-live="polite" data-tool-status>
+          Enter two positive leg values to begin.
+        </p>
+      </form>
+
+      <div class="mt-6 grid gap-3 sm:grid-cols-2">
+        <div class="lux-data-cell">
+          <span>Hypotenuse c</span>
+          <strong data-result-hypotenuse>5.0000</strong>
+        </div>
+        <div class="lux-data-cell">
+          <span>Area</span>
+          <strong data-result-area>6.0000</strong>
+        </div>
+        <div class="lux-data-cell">
+          <span>Perimeter</span>
+          <strong data-result-perimeter>12.0000</strong>
+        </div>
+        <div class="lux-data-cell">
+          <span>Angle A</span>
+          <strong data-result-angle-a>36.8699 deg</strong>
+        </div>
+      </div>
     </div>
 
-    <p class="sm:col-span-2 text-sm text-slate-600" role="status" aria-live="polite" data-tool-status>
-      Enter two positive leg values to begin.
-    </p>
+    <article class="surface-card border-primary/20 bg-[linear-gradient(155deg,rgba(30,23,17,0.95)_0%,rgba(15,10,8,0.95)_100%)] p-4 sm:p-6">
+      <div class="flex items-center justify-between gap-3">
+        <div>
+          <p class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Live Visualization</p>
+          <h3 class="mt-2 text-xl text-on-surface">Right Triangle Diagram</h3>
+        </div>
+        <div class="rounded-lg border border-primary/25 bg-primary/10 px-3 py-1 text-[10px] font-label uppercase tracking-[0.2em] text-primary">
+          Scaled
+        </div>
+      </div>
 
-    <div class="sm:col-span-2 hidden rounded-xl border border-cyan-100 bg-cyan-50 p-4" data-tool-results>
-      <dl class="grid gap-3 text-sm sm:grid-cols-3">
-        <div>
-          <dt class="font-semibold text-slate-700">Hypotenuse</dt>
-          <dd class="font-mono text-slate-900" data-result-hypotenuse>-</dd>
+      <div class="relative mt-5 overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-lowest/70 p-4 sm:p-6">
+        <div class="dot-grid pointer-events-none absolute inset-0 opacity-[0.08]"></div>
+        <svg class="relative h-auto w-full" viewBox="0 0 460 300" aria-label="Dynamic right triangle">
+          <defs>
+            <linearGradient id="rt-fill-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f3ddb6" stop-opacity="0.24"></stop>
+              <stop offset="100%" stop-color="#8b6228" stop-opacity="0.08"></stop>
+            </linearGradient>
+          </defs>
+
+          <path d="M 60 240 L 80 240 L 80 260" fill="none" stroke="#6f5b47" stroke-width="1.5"></path>
+
+          <path
+            d="M 70 70 L 70 260 L 380 260 Z"
+            fill="none"
+            stroke="#d4af74"
+            stroke-width="3.2"
+            stroke-linejoin="round"
+            data-triangle-path
+          ></path>
+          <path d="M 70 70 L 70 260 L 380 260 Z" fill="url(#rt-fill-gradient)" data-triangle-fill></path>
+
+          <text x="54" y="170" fill="#c4b7a5" font-size="13" text-anchor="end" data-label-a>a = 3.000</text>
+          <text x="226" y="284" fill="#c4b7a5" font-size="13" text-anchor="middle" data-label-b>b = 4.000</text>
+          <text x="250" y="152" fill="#d4af74" font-size="14" font-weight="700" data-label-c>c = 5.000</text>
+          <text x="316" y="248" fill="#d9c3a0" font-size="11" data-label-angle-a>A = 36.870 deg</text>
+          <text x="84" y="88" fill="#d9c3a0" font-size="11" data-label-angle-b>B = 53.130 deg</text>
+        </svg>
+      </div>
+
+      <div class="mt-5 grid gap-3 sm:grid-cols-3">
+        <div class="rounded-lg border border-outline-variant/20 bg-surface-container-lowest/70 p-3">
+          <p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">a:c ratio</p>
+          <p class="mt-2 font-mono text-sm text-on-surface" data-result-ratio-a>0.6000</p>
         </div>
-        <div>
-          <dt class="font-semibold text-slate-700">Area</dt>
-          <dd class="font-mono text-slate-900" data-result-area>-</dd>
+        <div class="rounded-lg border border-outline-variant/20 bg-surface-container-lowest/70 p-3">
+          <p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">b:c ratio</p>
+          <p class="mt-2 font-mono text-sm text-on-surface" data-result-ratio-b>0.8000</p>
         </div>
-        <div>
-          <dt class="font-semibold text-slate-700">Perimeter</dt>
-          <dd class="font-mono text-slate-900" data-result-perimeter>-</dd>
+        <div class="rounded-lg border border-outline-variant/20 bg-surface-container-lowest/70 p-3">
+          <p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">tan(A)</p>
+          <p class="mt-2 font-mono text-sm text-on-surface" data-result-tangent>0.7500</p>
         </div>
-      </dl>
-    </div>
-  </form>
+      </div>
+    </article>
+  </div>
 
   <script is:inline>
     (() => {
@@ -75,47 +148,120 @@ const { heading, description } = Astro.props;
 
       const form = section.querySelector('[data-triangle-form]');
       const statusEl = section.querySelector('[data-tool-status]');
-      const resultsEl = section.querySelector('[data-tool-results]');
+      const pathEl = section.querySelector('[data-triangle-path]');
+      const fillEl = section.querySelector('[data-triangle-fill]');
+      const labelA = section.querySelector('[data-label-a]');
+      const labelB = section.querySelector('[data-label-b]');
+      const labelC = section.querySelector('[data-label-c]');
+      const labelAngleA = section.querySelector('[data-label-angle-a]');
+      const labelAngleB = section.querySelector('[data-label-angle-b]');
       const hypotenuseEl = section.querySelector('[data-result-hypotenuse]');
       const areaEl = section.querySelector('[data-result-area]');
       const perimeterEl = section.querySelector('[data-result-perimeter]');
+      const angleAEl = section.querySelector('[data-result-angle-a]');
+      const ratioAEl = section.querySelector('[data-result-ratio-a]');
+      const ratioBEl = section.querySelector('[data-result-ratio-b]');
+      const tangentEl = section.querySelector('[data-result-tangent]');
 
-      if (!form || !statusEl || !resultsEl || !hypotenuseEl || !areaEl || !perimeterEl) {
+      if (
+        !form ||
+        !statusEl ||
+        !pathEl ||
+        !fillEl ||
+        !labelA ||
+        !labelB ||
+        !labelC ||
+        !labelAngleA ||
+        !labelAngleB ||
+        !hypotenuseEl ||
+        !areaEl ||
+        !perimeterEl ||
+        !angleAEl ||
+        !ratioAEl ||
+        !ratioBEl ||
+        !tangentEl
+      ) {
         return;
       }
 
-      const formatValue = (value) => Number(value).toFixed(3);
+      const inputA = form.querySelector('input[name="legA"]');
+      const inputB = form.querySelector('input[name="legB"]');
+      if (!inputA || !inputB) return;
 
-      form.addEventListener('submit', (event) => {
-        event.preventDefault();
+      const format = (value, digits = 4) => Number(value).toFixed(digits);
 
-        const formData = new FormData(form);
-        const legA = Number(formData.get('legA'));
-        const legB = Number(formData.get('legB'));
+      const drawTriangle = (a, b, c, angleA, angleB) => {
+        const originX = 70;
+        const originY = 260;
+        const maxLeg = Math.max(a, b, 1);
+        const scale = 190 / maxLeg;
+        const topX = originX;
+        const topY = originY - a * scale;
+        const rightX = originX + b * scale;
+        const rightY = originY;
+        const path = `M ${topX} ${topY} L ${originX} ${originY} L ${rightX} ${rightY} Z`;
 
-        if (!(legA > 0) || !(legB > 0)) {
+        pathEl.setAttribute('d', path);
+        fillEl.setAttribute('d', path);
+
+        labelA.setAttribute('y', String((topY + originY) / 2));
+        labelA.textContent = `a = ${format(a, 3)}`;
+        labelB.setAttribute('x', String((originX + rightX) / 2));
+        labelB.textContent = `b = ${format(b, 3)}`;
+        labelC.setAttribute('x', String((originX + rightX) / 2 + 18));
+        labelC.setAttribute('y', String((topY + originY) / 2));
+        labelC.textContent = `c = ${format(c, 3)}`;
+        labelAngleA.textContent = `A = ${format(angleA, 3)} deg`;
+        labelAngleB.textContent = `B = ${format(angleB, 3)} deg`;
+      };
+
+      const setSolved = (a, b) => {
+        if (!(a > 0) || !(b > 0)) {
           statusEl.textContent = 'Both legs must be positive numbers.';
-          resultsEl.classList.add('hidden');
           return;
         }
 
-        const hypotenuse = Math.hypot(legA, legB);
-        const area = 0.5 * legA * legB;
-        const perimeter = legA + legB + hypotenuse;
+        const c = Math.hypot(a, b);
+        const area = 0.5 * a * b;
+        const perimeter = a + b + c;
+        const angleA = (Math.atan2(a, b) * 180) / Math.PI;
+        const angleB = 90 - angleA;
 
-        hypotenuseEl.textContent = formatValue(hypotenuse);
-        areaEl.textContent = formatValue(area);
-        perimeterEl.textContent = formatValue(perimeter);
-        statusEl.textContent = 'Solved. You can adjust inputs and recalculate anytime.';
-        resultsEl.classList.remove('hidden');
+        hypotenuseEl.textContent = format(c);
+        areaEl.textContent = format(area);
+        perimeterEl.textContent = format(perimeter);
+        angleAEl.textContent = `${format(angleA)} deg`;
+        ratioAEl.textContent = format(a / c);
+        ratioBEl.textContent = format(b / c);
+        tangentEl.textContent = format(a / b);
+
+        drawTriangle(a, b, c, angleA, angleB);
+        statusEl.textContent = 'Solved. Adjust either leg for live updates.';
+      };
+
+      const solveFromForm = () => {
+        setSolved(Number(inputA.value), Number(inputB.value));
+      };
+
+      inputA.addEventListener('input', solveFromForm);
+      inputB.addEventListener('input', solveFromForm);
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        solveFromForm();
       });
 
       form.addEventListener('reset', () => {
         setTimeout(() => {
-          statusEl.textContent = 'Enter two positive leg values to begin.';
-          resultsEl.classList.add('hidden');
+          inputA.value = '3';
+          inputB.value = '4';
+          solveFromForm();
         }, 0);
       });
+
+      inputA.value = '3';
+      inputB.value = '4';
+      solveFromForm();
     })();
   </script>
 </section>

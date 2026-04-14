@@ -17,7 +17,7 @@ const privacy = (content.privacy as Record<string, string>) ?? {};
 >
   <article class="section-shell prose-shell">
     <h1 class="text-3xl font-bold sm:text-4xl">{pick(privacy, 'heading', 'Privacy Policy')}</h1>
-    <p class="mt-2 text-xs uppercase tracking-wide text-slate-500">{pick(privacy, 'updatedLabel', '')}</p>
-    <p class="mt-4 text-slate-700">{pick(privacy, 'body', 'This is our privacy policy.')}</p>
+    <p class="mt-2 text-xs uppercase tracking-wide text-outline">{pick(privacy, 'updatedLabel', '')}</p>
+    <p class="mt-4 text-on-surface-variant">{pick(privacy, 'body', 'This is our privacy policy.')}</p>
   </article>
 </BaseLayout>

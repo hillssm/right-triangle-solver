@@ -1,4 +1,4 @@
-﻿---
+---
 import {
   LOCALE_LABELS,
   SUPPORTED_LOCALES,
@@ -15,7 +15,7 @@ const { currentLocale, switchLabel } = Astro.props;
 ---
 
 <nav aria-label={switchLabel} class="flex flex-wrap items-center gap-2">
-  <span class="text-xs font-semibold uppercase tracking-wide text-slate-500">{switchLabel}</span>
+  <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">{switchLabel}</span>
   <ul class="flex flex-wrap items-center gap-1 text-xs">
     {SUPPORTED_LOCALES.map((locale) => {
       const active = locale === currentLocale;
@@ -26,8 +26,8 @@ const { currentLocale, switchLabel } = Astro.props;
             class:list={[
               'inline-flex rounded-md border px-2 py-1 transition-colors',
               active
-                ? 'border-cyan-600 bg-cyan-50 text-cyan-700'
-                : 'border-slate-300 text-slate-600 hover:border-cyan-400 hover:text-cyan-700'
+                ? 'border-primary/60 bg-primary/16 text-primary'
+                : 'border-outline-variant/40 text-on-surface-variant hover:border-primary/40 hover:text-primary'
             ]}
             aria-current={active ? 'page' : undefined}
             lang={locale}

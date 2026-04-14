@@ -17,9 +17,9 @@ const errors = (content.errors as Record<string, string>) ?? {};
   noindex={true}
 >
   <section class="section-shell text-center">
-    <p class="text-sm font-semibold uppercase tracking-wide text-cyan-700">404</p>
+    <p class="text-sm font-semibold uppercase tracking-wide text-primary">404</p>
     <h1 class="mt-2 text-3xl font-bold sm:text-4xl">{pick(errors, 'notFoundHeading', 'Page not found')}</h1>
-    <p class="mx-auto mt-4 max-w-xl text-slate-600">
+    <p class="mx-auto mt-4 max-w-xl text-on-surface-variant">
       {pick(errors, 'notFoundText', 'Return to home and continue.')}
     </p>
     <a href={localizePath(locale, '/')} class="btn-primary mt-6 inline-flex">

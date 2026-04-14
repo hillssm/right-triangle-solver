@@ -6,32 +6,48 @@ interface Props {
 const { heading } = Astro.props;
 
 const defaultSteps = [
-  { icon: 'input', title: '1. Enter known sides', desc: 'Provide the values you know — any two of the three sides, or one side and one angle.' },
-  { icon: 'bolt', title: '2. Solve instantly', desc: 'Our solver applies the Pythagorean theorem and trigonometric identities in milliseconds.' },
-  { icon: 'verified', title: '3. Validate your work', desc: 'Compare the computed hypotenuse, area, angles, and inradius against your own solution.' }
+  {
+    icon: 'input',
+    title: '1. Enter known values',
+    desc: 'Provide any valid right-triangle inputs and keep units consistent.'
+  },
+  {
+    icon: 'bolt',
+    title: '2. Solve instantly',
+    desc: 'The solver applies Pythagorean and trigonometric relations in real time.'
+  },
+  {
+    icon: 'insights',
+    title: '3. Validate the geometry',
+    desc: 'Use live visualization, ratios, and derived metrics to verify your answer.'
+  }
 ];
 ---
 
-<section id="how-it-works" class="section-shell">
-  <div class="flex items-center gap-3 mb-2">
-    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
-      <span class="material-symbols-outlined text-xl text-primary">rocket_launch</span>
+<section id="how-it-works" class="section-shell" aria-labelledby="how-it-works-heading">
+  <div class="flex items-center gap-3">
+    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/12 text-primary">
+      <span class="material-symbols-outlined text-xl">rocket_launch</span>
     </div>
-    <h2 class="text-2xl font-headline sm:text-3xl">{heading}</h2>
+    <h2 id="how-it-works-heading" class="text-2xl sm:text-3xl">{heading}</h2>
   </div>
-  <p class="text-sm text-slate-400 mb-6">Three simple steps to solve any right triangle problem.</p>
+  <p class="mt-3 max-w-2xl text-sm text-on-surface-variant">
+    From input to proof-ready output in three clean steps.
+  </p>
 
-  <div class="mt-4 grid gap-5 sm:grid-cols-3 anim-stagger">
+  <div class="mt-6 grid gap-5 sm:grid-cols-3 anim-stagger">
     <slot>
-      {defaultSteps.map((step) => (
-        <article class="group surface-card flex flex-col gap-4">
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 transition-transform duration-300 group-hover:scale-110">
-            <span class="material-symbols-outlined text-xl text-primary">{step.icon}</span>
-          </div>
-          <h3 class="text-base font-semibold text-on-surface">{step.title}</h3>
-          <p class="text-sm text-slate-400 leading-relaxed">{step.desc}</p>
-        </article>
-      ))}
+      {
+        defaultSteps.map((step) => (
+          <article class="surface-card group flex flex-col gap-4 border-outline-variant/30">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
+              <span class="material-symbols-outlined text-xl">{step.icon}</span>
+            </div>
+            <h3 class="text-base font-semibold text-on-surface">{step.title}</h3>
+            <p class="text-sm leading-relaxed text-on-surface-variant">{step.desc}</p>
+          </article>
+        ))
+      }
     </slot>
   </div>
 </section>

@@ -11,26 +11,32 @@ const visibleItems = items.filter((item) => item.display !== false);
 ---
 
 <section id="faq" class="section-shell" aria-labelledby="faq-heading">
-  <div class="flex items-center gap-3 mb-2">
-    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
-      <span class="material-symbols-outlined text-xl text-primary">quiz</span>
+  <div class="flex items-center gap-3">
+    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/12 text-primary">
+      <span class="material-symbols-outlined text-xl">quiz</span>
     </div>
-    <h2 id="faq-heading" class="text-2xl font-headline sm:text-3xl">{heading}</h2>
+    <h2 id="faq-heading" class="text-2xl sm:text-3xl">{heading}</h2>
   </div>
-  <p class="text-sm text-slate-400 mb-6">Find answers to common questions about our right triangle solver.</p>
+  <p class="mt-3 max-w-2xl text-sm text-on-surface-variant">
+    Answers to the most common right-triangle solving questions.
+  </p>
 
-  <div class="mt-4 grid gap-3 anim-stagger">
+  <div class="mt-6 grid gap-3 anim-stagger">
     {visibleItems.map((item, index) => (
-      <details class="group rounded-xl border border-outline-variant/15 bg-surface-container-lowest/50 transition-all duration-300 hover:border-primary/15 hover:shadow-sm" name="faq-item">
-        <summary class="cursor-pointer list-none px-5 py-4 text-sm font-semibold text-on-surface flex items-center justify-between gap-4 select-none">
+      <details class="group overflow-hidden rounded-xl border border-outline-variant/20 bg-surface-container-lowest/55 transition-all duration-300 hover:border-primary/30" name="faq-item">
+        <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-sm font-semibold text-on-surface">
           <span class="flex items-center gap-3">
-            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-[10px] font-bold font-label text-primary">{String(index + 1).padStart(2, '0')}</span>
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-primary/12 font-label text-[10px] uppercase tracking-[0.14em] text-primary">
+              {String(index + 1).padStart(2, '0')}
+            </span>
             {item.question}
           </span>
-          <span class="material-symbols-outlined text-lg text-slate-400 transition-transform duration-300 group-open:rotate-180">expand_more</span>
+          <span class="material-symbols-outlined text-lg text-outline transition-transform duration-300 group-open:rotate-180">
+            expand_more
+          </span>
         </summary>
-        <div class="border-t border-outline-variant/10 px-5 py-4">
-          <p class="text-sm leading-relaxed text-slate-400 pl-10">{item.answer}</p>
+        <div class="border-t border-outline-variant/15 px-5 py-4">
+          <p class="pl-10 text-sm leading-relaxed text-on-surface-variant">{item.answer}</p>
         </div>
       </details>
     ))}

@@ -73,43 +73,43 @@ const blogPagination = Array.from({ length: Math.max(blogTotalPages - 1, 0) }, (
 >
   <section class="section-shell">
     <h1 class="text-3xl font-bold sm:text-4xl">{pick(sitemapText, 'heading', 'Sitemap')}</h1>
-    <p class="mt-3 text-slate-600">{pick(sitemapText, 'description', 'Browse all major routes.')}</p>
+    <p class="mt-3 text-on-surface-variant">{pick(sitemapText, 'description', 'Browse all major routes.')}</p>
   </section>
 
   <div class="mt-8 grid gap-6 lg:grid-cols-2">
     <section class="surface-card">
       <h2 class="text-lg font-semibold">Static Pages</h2>
-      <ul class="mt-3 space-y-2 text-sm text-cyan-700">
+      <ul class="mt-3 space-y-2 text-sm text-primary">
         {staticPages.map((route) => (
-          <li><a href={route} class="hover:text-cyan-600">{toAbsoluteUrl(route)}</a></li>
+          <li><a href={route} class="hover:text-primary-fixed">{toAbsoluteUrl(route)}</a></li>
         ))}
       </ul>
     </section>
 
     <section class="surface-card">
       <h2 class="text-lg font-semibold">Localized Home Routes</h2>
-      <ul class="mt-3 space-y-2 text-sm text-cyan-700">
+      <ul class="mt-3 space-y-2 text-sm text-primary">
         {localeHomes.map((route) => (
-          <li><a href={route} class="hover:text-cyan-600">{toAbsoluteUrl(route)}</a></li>
+          <li><a href={route} class="hover:text-primary-fixed">{toAbsoluteUrl(route)}</a></li>
         ))}
       </ul>
     </section>
 
     <section class="surface-card">
       <h2 class="text-lg font-semibold">Blog Posts</h2>
-      <ul class="mt-3 max-h-72 space-y-2 overflow-auto text-sm text-cyan-700">
+      <ul class="mt-3 max-h-72 space-y-2 overflow-auto text-sm text-primary">
         {blogPosts.map((route) => (
-          <li><a href={route} class="hover:text-cyan-600">{toAbsoluteUrl(route)}</a></li>
+          <li><a href={route} class="hover:text-primary-fixed">{toAbsoluteUrl(route)}</a></li>
         ))}
       </ul>
     </section>
 
     <section class="surface-card">
       <h2 class="text-lg font-semibold">Blog Pagination</h2>
-      <ul class="mt-3 space-y-2 text-sm text-cyan-700">
-        <li><a href="/blog/" class="hover:text-cyan-600">{toAbsoluteUrl('/blog/')}</a></li>
+      <ul class="mt-3 space-y-2 text-sm text-primary">
+        <li><a href="/blog/" class="hover:text-primary-fixed">{toAbsoluteUrl('/blog/')}</a></li>
         {blogPagination.map((route) => (
-          <li><a href={route} class="hover:text-cyan-600">{toAbsoluteUrl(route)}</a></li>
+          <li><a href={route} class="hover:text-primary-fixed">{toAbsoluteUrl(route)}</a></li>
         ))}
       </ul>
     </section>

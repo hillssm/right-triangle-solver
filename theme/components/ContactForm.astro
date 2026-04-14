@@ -31,7 +31,7 @@ const accessKey =
     </div>
     <h2 id="contact-form-heading" class="text-xl font-headline">Contact Form</h2>
   </div>
-  <p class="text-sm text-slate-400 mb-6">Fill in the fields below and we'll get back to you promptly.</p>
+  <p class="mb-6 text-sm text-on-surface-variant">Fill in the fields below and we'll get back to you promptly.</p>
 
   <form
     class="mt-4 grid gap-5"
@@ -44,7 +44,7 @@ const accessKey =
     data-network-error-label={labels.networkError}
   >
     <label class="grid gap-2.5 text-sm">
-      <span class="font-label text-xs uppercase tracking-widest text-slate-400 flex items-center gap-2">
+      <span class="flex items-center gap-2 font-label text-xs uppercase tracking-widest text-outline">
         <span class="material-symbols-outlined text-sm text-primary/60">person</span>
         {labels.name}
       </span>
@@ -52,7 +52,7 @@ const accessKey =
     </label>
 
     <label class="grid gap-2.5 text-sm">
-      <span class="font-label text-xs uppercase tracking-widest text-slate-400 flex items-center gap-2">
+      <span class="flex items-center gap-2 font-label text-xs uppercase tracking-widest text-outline">
         <span class="material-symbols-outlined text-sm text-primary/60">alternate_email</span>
         {labels.email}
       </span>
@@ -60,7 +60,7 @@ const accessKey =
     </label>
 
     <label class="grid gap-2.5 text-sm">
-      <span class="font-label text-xs uppercase tracking-widest text-slate-400 flex items-center gap-2">
+      <span class="flex items-center gap-2 font-label text-xs uppercase tracking-widest text-outline">
         <span class="material-symbols-outlined text-sm text-primary/60">chat</span>
         {labels.message}
       </span>
@@ -72,12 +72,12 @@ const accessKey =
         <span class="material-symbols-outlined text-base">send</span>
         {labels.send}
       </button>
-      <p class="text-xs text-slate-500">
+      <p class="text-xs text-on-surface-variant">
         {labels.fallbackEmail} <a href={`mailto:${fallbackEmail}`} class="text-primary underline decoration-primary/30 underline-offset-2 transition-colors hover:text-primary-container">{fallbackEmail}</a>
       </p>
     </div>
 
-    <div class="flex items-center gap-2 text-sm text-slate-400" role="status" aria-live="polite" data-contact-status>
+    <div class="flex items-center gap-2 text-sm text-on-surface-variant" role="status" aria-live="polite" data-contact-status>
     </div>
   </form>
 

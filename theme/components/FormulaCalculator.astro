@@ -1,0 +1,265 @@
+---
+import type { RightTriangleFormula } from 'src/data/rightTriangleFormulas';
+
+interface Props {
+  formula: RightTriangleFormula;
+}
+
+const { formula } = Astro.props;
+
+const exampleValues: Partial<Record<RightTriangleFormula['calculator']['kind'], Record<string, number>>> = {
+  pythagorean_c: { a: 3, b: 4 },
+  leg_from_ac: { a: 5, c: 13 },
+  leg_from_bc: { b: 12, c: 13 },
+  area_legs: { a: 8, b: 15 },
+  perimeter: { a: 5, b: 12, c: 13 },
+  semiperimeter: { a: 5, b: 12, c: 13 },
+  sine: { a: 3, c: 5 },
+  cosine: { b: 4, c: 5 },
+  tangent: { a: 3, b: 4 },
+  angle_asin: { a: 3, c: 5 },
+  angle_acos: { b: 4, c: 5 },
+  angle_atan: { a: 3, b: 4 },
+  altitude: { a: 3, b: 4, c: 5 },
+  projection_p: { a: 3, c: 5 },
+  projection_q: { b: 4, c: 5 },
+  inradius: { a: 3, b: 4, c: 5 },
+  circumradius: { c: 5 }
+};
+
+const inputHint = exampleValues[formula.calculator.kind] ?? {};
+const defaultStatus = `Enter inputs to calculate ${formula.calculator.outputLabel}.`;
+---
+
+<section
+  class="mt-8 section-shell"
+  data-formula-calculator
+  data-kind={formula.calculator.kind}
+  data-output-label={formula.calculator.outputLabel}
+  data-output-unit={formula.calculator.outputUnit ?? ''}
+  data-default-status={defaultStatus}
+>
+  <h2 class="text-2xl font-semibold">{formula.title} Calculator</h2>
+  <p class="mt-2 text-sm text-on-surface-variant">
+    This calculator follows <span class="font-mono text-primary">{formula.expression}</span> and returns
+    <strong class="font-semibold text-on-surface"> {formula.calculator.outputLabel}</strong>.
+  </p>
+
+  <form class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" data-calc-form>
+    {formula.calculator.fields.map((field) => (
+      <label class="grid gap-2 text-sm font-medium">
+        <span>{field.label}</span>
+        <div class="relative">
+          <input
+            class="input-shell pr-16"
+            type="number"
+            step="any"
+            min={field.min ?? 0}
+            name={field.key}
+            required
+            placeholder={String(inputHint[field.key] ?? '')}
+          />
+          {field.unit && (
+            <span class="pointer-events-none absolute top-1/2 right-3 -translate-y-1/2 text-xs text-on-surface-variant">
+              {field.unit}
+            </span>
+          )}
+        </div>
+      </label>
+    ))}
+
+    <div class="sm:col-span-2 lg:col-span-3 flex flex-wrap gap-3">
+      <button type="submit" class="btn-primary">Calculate {formula.calculator.outputLabel}</button>
+      <button type="reset" class="btn-secondary">Reset</button>
+    </div>
+  </form>
+
+  <p class="mt-4 text-sm text-on-surface-variant" data-calc-status role="status" aria-live="polite">
+    {defaultStatus}
+  </p>
+
+  <div class="mt-4 hidden surface-card border-primary/30 bg-surface-container-high" data-calc-result-wrap>
+    <p class="font-label text-xs uppercase tracking-widest text-primary" data-calc-output-label>
+      {formula.calculator.outputLabel}
+    </p>
+    <p class="mt-2 font-mono text-2xl text-tertiary" data-calc-output-value>-</p>
+    <p class="mt-2 text-xs text-on-surface-variant" data-calc-output-detail>
+      Formula: {formula.expression}
+    </p>
+  </div>
+
+  <script is:inline>
+    (() => {
+      const currentScript = document.currentScript;
+      if (!currentScript) return;
+
+      const section = currentScript.closest('[data-formula-calculator]');
+      if (!section) return;
+
+      const form = section.querySelector('[data-calc-form]');
+      const statusEl = section.querySelector('[data-calc-status]');
+      const resultWrap = section.querySelector('[data-calc-result-wrap]');
+      const labelEl = section.querySelector('[data-calc-output-label]');
+      const valueEl = section.querySelector('[data-calc-output-value]');
+      const detailEl = section.querySelector('[data-calc-output-detail]');
+      const kind = section.getAttribute('data-kind') ?? '';
+      const outputLabel = section.getAttribute('data-output-label') ?? 'Result';
+      const outputUnit = section.getAttribute('data-output-unit') ?? '';
+      const defaultStatus =
+        section.getAttribute('data-default-status') ?? 'Fill values and click calculate.';
+
+      if (!form || !statusEl || !resultWrap || !labelEl || !valueEl || !detailEl) return;
+
+      const toNumber = (value) => Number.parseFloat(String(value));
+      const deg = (rad) => (rad * 180) / Math.PI;
+      const format = (n, digits = 6) => Number(n).toFixed(digits).replace(/\.?0+$/, '');
+
+      const parseInputs = () => {
+        const data = new FormData(form);
+        const values = {};
+        for (const [key, val] of data.entries()) {
+          const num = toNumber(val);
+          if (!Number.isFinite(num)) {
+            throw new Error(`Invalid value for ${key}.`);
+          }
+          values[key] = num;
+        }
+        return values;
+      };
+
+      const requirePositive = (...nums) => {
+        if (nums.some((n) => !(n > 0))) {
+          throw new Error('All values must be positive.');
+        }
+      };
+
+      const solve = (values) => {
+        switch (kind) {
+          case 'pythagorean_c': {
+            const { a, b } = values;
+            requirePositive(a, b);
+            return { result: Math.hypot(a, b), detail: 'c = sqrt(a^2 + b^2)' };
+          }
+          case 'leg_from_ac': {
+            const { a, c } = values;
+            requirePositive(a, c);
+            if (c <= a) throw new Error('Hypotenuse c must be greater than leg a.');
+            return { result: Math.sqrt(c * c - a * a), detail: 'b = sqrt(c^2 - a^2)' };
+          }
+          case 'leg_from_bc': {
+            const { b, c } = values;
+            requirePositive(b, c);
+            if (c <= b) throw new Error('Hypotenuse c must be greater than leg b.');
+            return { result: Math.sqrt(c * c - b * b), detail: 'a = sqrt(c^2 - b^2)' };
+          }
+          case 'area_legs': {
+            const { a, b } = values;
+            requirePositive(a, b);
+            return { result: (a * b) / 2, detail: 'Area = (a * b) / 2' };
+          }
+          case 'perimeter': {
+            const { a, b, c } = values;
+            requirePositive(a, b, c);
+            return { result: a + b + c, detail: 'P = a + b + c' };
+          }
+          case 'semiperimeter': {
+            const { a, b, c } = values;
+            requirePositive(a, b, c);
+            return { result: (a + b + c) / 2, detail: 's = (a + b + c) / 2' };
+          }
+          case 'sine': {
+            const { a, c } = values;
+            requirePositive(a, c);
+            if (a >= c) throw new Error('For a right triangle, a must be less than c.');
+            return { result: a / c, detail: 'sin(A) = a / c' };
+          }
+          case 'cosine': {
+            const { b, c } = values;
+            requirePositive(b, c);
+            if (b >= c) throw new Error('For a right triangle, b must be less than c.');
+            return { result: b / c, detail: 'cos(A) = b / c' };
+          }
+          case 'tangent': {
+            const { a, b } = values;
+            requirePositive(a, b);
+            return { result: a / b, detail: 'tan(A) = a / b' };
+          }
+          case 'angle_asin': {
+            const { a, c } = values;
+            requirePositive(a, c);
+            if (a >= c) throw new Error('For a right triangle, a must be less than c.');
+            return { result: deg(Math.asin(a / c)), detail: 'A = asin(a / c)' };
+          }
+          case 'angle_acos': {
+            const { b, c } = values;
+            requirePositive(b, c);
+            if (b >= c) throw new Error('For a right triangle, b must be less than c.');
+            return { result: deg(Math.acos(b / c)), detail: 'A = acos(b / c)' };
+          }
+          case 'angle_atan': {
+            const { a, b } = values;
+            requirePositive(a, b);
+            return { result: deg(Math.atan(a / b)), detail: 'A = atan(a / b)' };
+          }
+          case 'altitude': {
+            let { a, b, c } = values;
+            requirePositive(a, b, c);
+            if (c <= a || c <= b) {
+              c = Math.hypot(a, b);
+            }
+            return { result: (a * b) / c, detail: 'h = (a * b) / c' };
+          }
+          case 'projection_p': {
+            const { a, c } = values;
+            requirePositive(a, c);
+            if (a >= c) throw new Error('For a right triangle, a must be less than c.');
+            return { result: (a * a) / c, detail: 'p = a^2 / c' };
+          }
+          case 'projection_q': {
+            const { b, c } = values;
+            requirePositive(b, c);
+            if (b >= c) throw new Error('For a right triangle, b must be less than c.');
+            return { result: (b * b) / c, detail: 'q = b^2 / c' };
+          }
+          case 'inradius': {
+            const { a, b, c } = values;
+            requirePositive(a, b, c);
+            const r = (a + b - c) / 2;
+            if (r <= 0) throw new Error('These sides do not produce a valid inradius.');
+            return { result: r, detail: 'r = (a + b - c) / 2' };
+          }
+          case 'circumradius': {
+            const { c } = values;
+            requirePositive(c);
+            return { result: c / 2, detail: 'R = c / 2' };
+          }
+          default:
+            throw new Error('Calculator type is not configured.');
+        }
+      };
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        try {
+          const values = parseInputs();
+          const output = solve(values);
+          labelEl.textContent = outputLabel;
+          valueEl.textContent = `${format(output.result)}${outputUnit ? ` ${outputUnit}` : ''}`;
+          detailEl.textContent = output.detail;
+          statusEl.textContent = `Calculated ${outputLabel}.`;
+          resultWrap.classList.remove('hidden');
+        } catch (err) {
+          statusEl.textContent = err instanceof Error ? err.message : 'Unable to calculate.';
+          resultWrap.classList.add('hidden');
+        }
+      });
+
+      form.addEventListener('reset', () => {
+        setTimeout(() => {
+          statusEl.textContent = defaultStatus;
+          resultWrap.classList.add('hidden');
+        }, 0);
+      });
+    })();
+  </script>
+</section>

@@ -24,10 +24,10 @@ const { currentLocale, switchLabel } = Astro.props;
           <a
             href={localizePath(locale, '/')}
             class:list={[
-              'inline-flex rounded-md border px-2 py-1 transition-colors',
+              'inline-flex rounded-md border px-2 py-1 transition-all duration-200',
               active
-                ? 'border-primary/60 bg-primary/16 text-primary'
-                : 'border-outline-variant/40 text-on-surface-variant hover:border-primary/40 hover:text-primary'
+                ? 'border-primary/50 bg-primary/15 text-primary shadow-[0_8px_18px_-14px_rgba(241,201,125,0.45)]'
+                : 'border-outline-variant/60 text-on-surface-variant hover:border-primary/40 hover:bg-primary/10 hover:text-primary'
             ]}
             aria-current={active ? 'page' : undefined}
             lang={locale}

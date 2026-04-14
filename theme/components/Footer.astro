@@ -1,7 +1,7 @@
 ---
 import LanguageSwitcher from 'theme/components/LanguageSwitcher.astro';
 import SocialIcon from 'theme/components/SocialIcon.astro';
-import { type Locale } from 'theme/i18n/locales';
+import { localizePath, type Locale } from 'theme/i18n/locales';
 import { getEnabledSocialLinks, getLocalizedNavItems } from 'theme/utils/site';
 
 interface Props {
@@ -20,19 +20,20 @@ const socialLinks = getEnabledSocialLinks();
 const year = new Date().getFullYear();
 const switchLabel = commonLabels.switchLanguage ?? 'Language';
 const rights = commonLabels.rights ?? 'All rights reserved.';
+const homeHref = localizePath(locale, '/');
 ---
 
-<footer class="relative mt-16 overflow-hidden border-t border-primary/12">
-  <!-- Subtle ambient glow -->
-  <div class="pointer-events-none absolute bottom-0 left-1/2 h-64 w-[600px] -translate-x-1/2 rounded-full bg-primary/10 blur-[120px]"></div>
+<footer class="relative mt-16 overflow-hidden border-t border-outline-variant/65 bg-surface">
+  <div class="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+  <div class="pointer-events-none absolute -right-20 -top-24 h-56 w-56 rounded-full bg-primary/12 blur-3xl"></div>
 
   <div class="relative mx-auto grid w-full max-w-[1200px] gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.2fr_1fr] lg:px-8">
     <div class="space-y-5">
-      <a href="/" class="group inline-flex items-center gap-3 text-on-surface transition-colors hover:text-primary">
-        <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-primary-container shadow-[0_0_16px_-4px_rgba(212,175,116,0.4)] transition-transform duration-300 group-hover:scale-105">
+      <a href={homeHref} class="group inline-flex items-center gap-3 text-on-surface transition-colors hover:text-primary">
+        <div class="flex h-10 w-10 items-center justify-center rounded-md border border-outline-variant/70 bg-surface-container-low shadow-[0_14px_28px_-22px_rgba(241,201,125,0.35)] transition-transform duration-300 group-hover:scale-105">
           <img src={logo} alt={`${siteTitle} logo`} class="h-5 w-auto" loading="lazy" />
         </div>
-        <span class="text-base font-bold tracking-tight">{siteTitle}</span>
+        <span class="font-headline text-base font-medium tracking-[-0.02em]">{siteTitle}</span>
       </a>
       <p class="max-w-xl text-sm leading-relaxed text-on-surface-variant">{description}</p>
 
@@ -41,7 +42,7 @@ const rights = commonLabels.rights ?? 'All rights reserved.';
           {socialLinks.map((item) => (
             <a
               href={item.href}
-              class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-outline-variant/20 bg-surface-container-high/30 text-on-surface-variant transition-all duration-200 hover:border-primary/35 hover:bg-primary/10 hover:text-primary hover:shadow-[var(--shadow-glow-primary)]"
+              class="inline-flex h-10 w-10 items-center justify-center rounded-md border border-outline-variant/60 bg-surface-container-low text-on-surface-variant transition-all duration-200 hover:border-primary/35 hover:bg-primary/10 hover:text-primary hover:shadow-[var(--shadow-glow-primary)]"
               rel="noreferrer"
               target="_blank"
               aria-label={item.name}
@@ -56,7 +57,10 @@ const rights = commonLabels.rights ?? 'All rights reserved.';
     <div class="grid gap-8 sm:grid-cols-2">
       <nav aria-label="Footer navigation" class="grid gap-2 text-sm">
         {footerNav.map((item) => (
-          <a href={item.href} class="rounded-lg px-1 py-1 text-on-surface-variant transition-all duration-200 hover:text-primary hover:translate-x-1">
+          <a
+            href={item.href}
+            class="rounded-none px-1 py-1 text-[11px] uppercase tracking-[0.16em] text-on-surface-variant transition-all duration-200 hover:text-primary hover:translate-x-1 font-label"
+          >
             {item.label}
           </a>
         ))}
@@ -66,7 +70,7 @@ const rights = commonLabels.rights ?? 'All rights reserved.';
     </div>
   </div>
 
-  <div class="relative border-t border-outline-variant/12 px-4 py-5 text-center text-xs text-outline sm:px-6 lg:px-8">
+  <div class="relative border-t border-outline-variant/50 px-4 py-5 text-center text-xs text-outline sm:px-6 lg:px-8">
     <p>&copy; {year} {siteTitle}. {rights}</p>
   </div>
 </footer>

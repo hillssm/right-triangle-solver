@@ -44,6 +44,14 @@ const { heading, description } = Astro.props;
           </label>
         </div>
 
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">Quick presets</span>
+          <button class="interactive-chip" type="button" data-preset="3,4">3-4-5</button>
+          <button class="interactive-chip" type="button" data-preset="5,12">5-12-13</button>
+          <button class="interactive-chip" type="button" data-preset="8,15">8-15-17</button>
+          <button class="interactive-chip" type="button" data-preset="9,12">9-12-15</button>
+        </div>
+
         <div class="flex flex-wrap gap-3">
           <button class="btn-primary gap-2" type="submit">
             <span class="material-symbols-outlined text-base">play_arrow</span>
@@ -80,13 +88,13 @@ const { heading, description } = Astro.props;
       </div>
     </div>
 
-    <article class="surface-card border-primary/20 bg-[linear-gradient(155deg,rgba(30,23,17,0.95)_0%,rgba(15,10,8,0.95)_100%)] p-4 sm:p-6">
+    <article class="surface-card border-outline-variant/65 bg-surface-container-low p-4 sm:p-6">
       <div class="flex items-center justify-between gap-3">
         <div>
           <p class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Live Visualization</p>
           <h3 class="mt-2 text-xl text-on-surface">Right Triangle Diagram</h3>
         </div>
-        <div class="rounded-lg border border-primary/25 bg-primary/10 px-3 py-1 text-[10px] font-label uppercase tracking-[0.2em] text-primary">
+        <div class="rounded-lg border border-primary/30 bg-primary-fixed px-3 py-1 text-[10px] font-label uppercase tracking-[0.2em] text-primary">
           Scaled
         </div>
       </div>
@@ -96,28 +104,28 @@ const { heading, description } = Astro.props;
         <svg class="relative h-auto w-full" viewBox="0 0 460 300" aria-label="Dynamic right triangle">
           <defs>
             <linearGradient id="rt-fill-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#f3ddb6" stop-opacity="0.24"></stop>
-              <stop offset="100%" stop-color="#8b6228" stop-opacity="0.08"></stop>
+              <stop offset="0%" stop-color="#f1c97d" stop-opacity="0.3"></stop>
+              <stop offset="100%" stop-color="#d4ad65" stop-opacity="0.12"></stop>
             </linearGradient>
           </defs>
 
-          <path d="M 60 240 L 80 240 L 80 260" fill="none" stroke="#6f5b47" stroke-width="1.5"></path>
+          <path d="M 60 240 L 80 240 L 80 260" fill="none" stroke="#99907c" stroke-width="1.5"></path>
 
           <path
             d="M 70 70 L 70 260 L 380 260 Z"
             fill="none"
-            stroke="#d4af74"
+            stroke="#f1c97d"
             stroke-width="3.2"
             stroke-linejoin="round"
             data-triangle-path
           ></path>
           <path d="M 70 70 L 70 260 L 380 260 Z" fill="url(#rt-fill-gradient)" data-triangle-fill></path>
 
-          <text x="54" y="170" fill="#c4b7a5" font-size="13" text-anchor="end" data-label-a>a = 3.000</text>
-          <text x="226" y="284" fill="#c4b7a5" font-size="13" text-anchor="middle" data-label-b>b = 4.000</text>
-          <text x="250" y="152" fill="#d4af74" font-size="14" font-weight="700" data-label-c>c = 5.000</text>
-          <text x="316" y="248" fill="#d9c3a0" font-size="11" data-label-angle-a>A = 36.870 deg</text>
-          <text x="84" y="88" fill="#d9c3a0" font-size="11" data-label-angle-b>B = 53.130 deg</text>
+          <text x="54" y="170" fill="#d0c5af" font-size="13" text-anchor="end" data-label-a>a = 3.000</text>
+          <text x="226" y="284" fill="#d0c5af" font-size="13" text-anchor="middle" data-label-b>b = 4.000</text>
+          <text x="250" y="152" fill="#f1c97d" font-size="14" font-weight="700" data-label-c>c = 5.000</text>
+          <text x="316" y="248" fill="#b6b5b4" font-size="11" data-label-angle-a>A = 36.870 deg</text>
+          <text x="84" y="88" fill="#b6b5b4" font-size="11" data-label-angle-b>B = 53.130 deg</text>
         </svg>
       </div>
 
@@ -162,6 +170,7 @@ const { heading, description } = Astro.props;
       const ratioAEl = section.querySelector('[data-result-ratio-a]');
       const ratioBEl = section.querySelector('[data-result-ratio-b]');
       const tangentEl = section.querySelector('[data-result-tangent]');
+      const presetButtons = section.querySelectorAll('[data-preset]');
 
       if (
         !form ||
@@ -215,9 +224,19 @@ const { heading, description } = Astro.props;
         labelAngleB.textContent = `B = ${format(angleB, 3)} deg`;
       };
 
+      const updatePresetState = () => {
+        presetButtons.forEach((button) => {
+          const preset = button.getAttribute('data-preset') || '';
+          const [a, b] = preset.split(',');
+          const active = Number(inputA.value) === Number(a) && Number(inputB.value) === Number(b);
+          button.classList.toggle('is-active', active);
+        });
+      };
+
       const setSolved = (a, b) => {
         if (!(a > 0) || !(b > 0)) {
           statusEl.textContent = 'Both legs must be positive numbers.';
+          updatePresetState();
           return;
         }
 
@@ -237,6 +256,7 @@ const { heading, description } = Astro.props;
 
         drawTriangle(a, b, c, angleA, angleB);
         statusEl.textContent = 'Solved. Adjust either leg for live updates.';
+        updatePresetState();
       };
 
       const solveFromForm = () => {
@@ -257,6 +277,18 @@ const { heading, description } = Astro.props;
           inputB.value = '4';
           solveFromForm();
         }, 0);
+      });
+
+      presetButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const preset = button.getAttribute('data-preset') || '';
+          const [a, b] = preset.split(',').map((value) => Number(value));
+          if (a > 0 && b > 0) {
+            inputA.value = String(a);
+            inputB.value = String(b);
+            solveFromForm();
+          }
+        });
       });
 
       inputA.value = '3';

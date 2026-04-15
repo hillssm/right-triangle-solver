@@ -60,8 +60,8 @@ const chartRows = [
   <section class="section-shell overflow-hidden">
     <div class="pointer-events-none absolute -left-10 -top-20 h-64 w-64 rounded-full bg-primary/14 blur-3xl"></div>
     <div class="pointer-events-none absolute -bottom-20 right-8 h-52 w-52 rounded-full bg-tertiary/14 blur-3xl"></div>
-    <div class="relative grid gap-6 sm:grid-cols-[0.9fr_1.1fr] sm:items-start lg:gap-8 lg:grid-cols-[0.85fr_1.15fr]">
-      <div>
+    <div class="relative grid gap-6 sm:grid-cols-[1.1fr_0.9fr] sm:items-start lg:gap-8 lg:grid-cols-[1.15fr_0.85fr]">
+      <div class="sm:order-2">
         <div class="flex flex-wrap items-center gap-2">
           <span class="interactive-chip is-active">Right Triangle Studio</span>
           <span class="interactive-chip">Live Geometry</span>
@@ -91,10 +91,12 @@ const chartRows = [
         </div>
       </div>
 
-      <RightTriangleTool
-        heading={pick(home, 'toolHeading', 'Triangle Tool')}
-        description={pick(home, 'toolDescription', 'Enter any two legs to calculate hypotenuse, area, and perimeter instantly.')}
-      />
+      <div class="sm:order-1">
+        <RightTriangleTool
+          heading={pick(home, 'toolHeading', 'Triangle Tool')}
+          description={pick(home, 'toolDescription', 'Enter any two legs to calculate hypotenuse, area, and perimeter instantly.')}
+        />
+      </div>
     </div>
   </section>
 

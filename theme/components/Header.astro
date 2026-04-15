@@ -12,6 +12,10 @@ const { locale, siteTitle, logo, navLabels } = Astro.props;
 
 const navItems = [
   {
+    label: navLabels.home ?? 'Home',
+    href: localizePath(locale, '/')
+  },
+  {
     label: navLabels.practice ?? 'Practice',
     href: localizePath(locale, '/practice/')
   },

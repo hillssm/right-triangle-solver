@@ -8,6 +8,9 @@ import { fileURLToPath } from 'node:url';
 export default defineConfig({
   site: 'https://righttrianglesolver.app',
   trailingSlash: 'always',
+  build: {
+    inlineStylesheets: 'always'
+  },
   integrations: [mdx(), sitemap()],
   adapter: vercel(),
   vite: {

@@ -1,6 +1,5 @@
 ---
 import { localizePath, type Locale } from 'theme/i18n/locales';
-import { getLocalizedNavItems } from 'theme/utils/site';
 
 interface Props {
   locale: Locale;
@@ -11,7 +10,12 @@ interface Props {
 
 const { locale, siteTitle, logo, navLabels } = Astro.props;
 
-const navItems = getLocalizedNavItems(locale, 'header', navLabels);
+const navItems = [
+  {
+    label: navLabels.practice ?? 'Practice',
+    href: localizePath(locale, '/practice/')
+  }
+];
 const homeHref = localizePath(locale, '/');
 const currentPath = Astro.url.pathname;
 
@@ -35,15 +39,15 @@ const normalizePath = (path: string) => {
       <span class="font-headline text-sm font-medium tracking-[-0.02em] text-on-surface sm:text-base">{siteTitle}</span>
     </a>
 
-    <nav aria-label="Primary" class="hidden items-center gap-1 text-sm font-medium md:flex">
+    <nav aria-label="Primary" class="hidden items-center md:flex">
       {navItems.map((item) => (
         <a
           href={item.href}
           class:list={[
-            'rounded-none px-3 py-2 text-[11px] uppercase tracking-[0.18em] transition-all duration-200 font-label',
+            'btn-primary px-4 py-2 text-[11px] uppercase tracking-[0.16em] font-label',
             normalizePath(item.href) === normalizePath(currentPath)
-              ? 'border-b-2 border-primary text-primary'
-              : 'text-on-surface-variant/80 hover:text-primary'
+              ? ''
+              : 'opacity-90 hover:opacity-100'
           ]}
         >
           {item.label}

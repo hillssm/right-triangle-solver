@@ -58,37 +58,8 @@ const chartRows = [
         />
       </div>
 
-      <div class="grid w-full gap-6 md:min-w-0">
-        <div class="grid gap-4">
-          <div class="flex flex-wrap items-center gap-2">
-            <span class="interactive-chip is-active">Right Triangle Studio</span>
-            <span class="interactive-chip">Live Geometry</span>
-            <span class="interactive-chip">Exam Ready</span>
-          </div>
-          <h1 class="mt-4 text-4xl sm:text-5xl">{pick(home, 'heading', siteTitle)}</h1>
-          <p class="mt-4 max-w-2xl text-on-surface-variant">
-            {pick(home, 'intro', 'Calculate missing values fast, review formulas, and validate your geometry work with confidence.')}
-          </p>
-          <div class="mt-6 flex flex-wrap gap-3">
-            <a class="btn-primary" href="/formulas/">Explore Formula Directory</a>
-            <a class="btn-secondary" href="/practice/">Open Practice Workspace</a>
-          </div>
-        </div>
-
-        <div class="grid gap-3 sm:grid-cols-3 md:grid-cols-1 xl:grid-cols-3">
-          <div class="lux-stat">
-            <p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">Solve Time</p>
-            <p class="mt-2 text-2xl font-bold text-on-surface">0.2s</p>
-          </div>
-          <div class="lux-stat">
-            <p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">Output Metrics</p>
-            <p class="mt-2 text-2xl font-bold text-on-surface">7+</p>
-          </div>
-          <div class="lux-stat">
-            <p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">Visual Checks</p>
-            <p class="mt-2 text-2xl font-bold text-on-surface">Real-time</p>
-          </div>
-        </div>
+      <div class="w-full md:min-w-0">
+        <h1 class="mt-2 text-4xl sm:text-5xl">{siteTitle}</h1>
       </div>
     </div>
   </section>

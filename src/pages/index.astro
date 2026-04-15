@@ -50,16 +50,15 @@ const chartRows = [
   <section class="section-shell w-full overflow-hidden">
     <div class="pointer-events-none absolute -left-10 -top-20 h-64 w-64 rounded-full bg-primary/14 blur-3xl"></div>
     <div class="pointer-events-none absolute -bottom-20 right-8 h-52 w-52 rounded-full bg-tertiary/14 blur-3xl"></div>
-    <div dir="ltr" class="relative grid grid-cols-1 gap-6 md:grid-cols-[minmax(0,1.65fr)_minmax(18rem,1fr)] md:items-start lg:gap-8">
+    <div class="relative grid gap-6">
+      <div class="w-full">
+        <h1 class="mt-2 text-4xl sm:text-5xl">{siteTitle}</h1>
+      </div>
       <div class="w-full min-w-0">
         <RightTriangleTool
           heading={pick(home, 'toolHeading', 'Triangle Tool')}
           description={pick(home, 'toolDescription', 'Enter any two legs to calculate hypotenuse, area, and perimeter instantly.')}
         />
-      </div>
-
-      <div class="w-full md:min-w-0">
-        <h1 class="mt-2 text-4xl sm:text-5xl">{siteTitle}</h1>
       </div>
     </div>
   </section>

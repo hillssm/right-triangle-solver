@@ -1,4 +1,4 @@
-﻿{
+{
   "header": [
     { "labelKey": "home", "href": "/" },
     { "labelKey": "formulas", "href": "/formulas/" },
@@ -12,6 +12,7 @@
     { "labelKey": "formulas", "href": "/formulas/" },
     { "labelKey": "aboutUs", "href": "/about-us/" },
     { "labelKey": "contactUs", "href": "/contact-us/" },
+    { "labelKey": "blog", "href": "/blog/" },
     { "labelKey": "terms", "href": "/terms/" },
     { "labelKey": "privacy", "href": "/privacy/" },
     { "labelKey": "sitemap", "href": "/sitemap/" }

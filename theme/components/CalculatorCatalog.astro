@@ -29,14 +29,6 @@ type DiagramFeature =
   | 'inradius'
   | 'circumradius';
 
-const categoryClasses: Record<string, string> = {
-  'Core Side Relations': 'bg-primary/12 text-primary border-primary/35',
-  'Area and Perimeter': 'bg-primary-container/18 text-primary-fixed border-primary-container/45',
-  'Trigonometric Ratios': 'bg-tertiary-fixed/12 text-tertiary-fixed border-tertiary-fixed-dim/45',
-  'Inverse Angle Formulas': 'bg-secondary-container/45 text-secondary-fixed border-secondary-container/65',
-  'Derived Geometry': 'bg-surface-container-high text-on-surface-variant border-outline-variant'
-};
-
 const outputFeatureByKind: Record<RightTriangleFormula['calculator']['kind'], DiagramFeature> = {
   pythagorean_c: 'c',
   leg_from_ac: 'b',
@@ -55,21 +47,6 @@ const outputFeatureByKind: Record<RightTriangleFormula['calculator']['kind'], Di
   projection_q: 'projectionQ',
   inradius: 'inradius',
   circumradius: 'circumradius'
-};
-
-const outputGlyphByFeature: Record<DiagramFeature, string> = {
-  a: 'a',
-  b: 'b',
-  c: 'c',
-  area: 'Ar',
-  perimeter: 'P',
-  semiperimeter: 's',
-  angleA: 'A',
-  altitude: 'h',
-  projectionP: 'p',
-  projectionQ: 'q',
-  inradius: 'r',
-  circumradius: 'R'
 };
 
 const sideFeatureByFieldKey: Partial<Record<string, SideFeature>> = {
@@ -98,172 +75,133 @@ const strokeForSide = (side: SideFeature, inputSides: Set<SideFeature>, outputFe
 };
 
 const strokeWidthForSide = (side: SideFeature, inputSides: Set<SideFeature>, outputFeature: DiagramFeature) => {
-  if (outputFeature === 'perimeter' || outputFeature === 'semiperimeter') return 3;
-  if (outputFeature === side) return 3;
-  if (inputSides.has(side)) return 2.6;
-  return 2.1;
+  if (outputFeature === 'perimeter' || outputFeature === 'semiperimeter') return 2.5;
+  if (outputFeature === side) return 2.5;
+  if (inputSides.has(side)) return 2;
+  return 1.5;
 };
 ---
 
-<section class="section-shell" aria-labelledby="calculator-catalog-heading">
-  <div class="flex flex-wrap items-center justify-between gap-3">
-    <div class="flex items-center gap-3">
-      <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
-        <span class="material-symbols-outlined text-xl">calculate</span>
-      </div>
-      <h2 id="calculator-catalog-heading" class="text-2xl sm:text-3xl">{heading}</h2>
+<section class="relative mt-12 w-full overflow-hidden rounded-3xl border border-outline-variant/40 bg-surface-container px-6 py-12 shadow-[var(--shadow-luxury)] sm:px-12 sm:py-16" aria-labelledby="calculator-catalog-heading">
+  <!-- Luxury Ambient Glows -->
+  <div class="pointer-events-none absolute -left-32 -top-32 h-96 w-96 rounded-full bg-primary/10 blur-[100px]"></div>
+  <div class="pointer-events-none absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-tertiary-fixed/10 blur-[120px]"></div>
+
+  <div class="relative z-10 flex flex-col items-center text-center">
+    <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 backdrop-blur-md">
+      <span class="material-symbols-outlined text-[14px] text-primary">auto_awesome</span>
+      <span class="font-label text-xs uppercase tracking-[0.2em] text-primary">{RIGHT_TRIANGLE_FORMULAS.length} Precision Tools</span>
     </div>
-    <p class="rounded-md border border-primary/35 bg-primary/10 px-3 py-1.5 font-label text-[10px] uppercase tracking-[0.16em] text-primary">
-      {RIGHT_TRIANGLE_FORMULAS.length} Tools
+    
+    <h2 id="calculator-catalog-heading" class="text-glow-primary font-headline text-3xl tracking-tight text-on-surface sm:text-4xl lg:text-5xl">
+      {heading}
+    </h2>
+    <p class="mx-auto mt-4 max-w-2xl text-base text-on-surface-variant/80 sm:text-lg">
+      {description}
     </p>
   </div>
-  <p class="mt-3 max-w-3xl text-sm text-on-surface-variant">{description}</p>
 
-  <div class="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+  <div class="relative z-10 mx-auto mt-14 grid max-w-7xl gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
     {RIGHT_TRIANGLE_FORMULAS.map((formula, index) => {
       const diagram = buildDiagramState(formula);
-      const outputGlyph = outputGlyphByFeature[diagram.outputFeature];
-      const areaFill = diagram.outputFeature === 'area' ? 'rgba(241, 201, 125, 0.24)' : 'rgba(233, 193, 118, 0.08)';
-      const angleStroke = diagram.outputFeature === 'angleA' ? 'var(--color-primary)' : 'var(--color-outline-variant)';
-      const altitudeOpacity = diagram.outputFeature === 'altitude' ? 1 : 0.18;
-      const projectionPOpacity = diagram.outputFeature === 'projectionP' ? 1 : 0.2;
-      const projectionQOpacity = diagram.outputFeature === 'projectionQ' ? 1 : 0.2;
-      const inradiusOpacity = diagram.outputFeature === 'inradius' ? 1 : 0.15;
-      const circumradiusOpacity = diagram.outputFeature === 'circumradius' ? 1 : 0.12;
-      const outputChipClass =
-        diagram.outputFeature === 'perimeter' || diagram.outputFeature === 'semiperimeter'
-          ? 'border-primary/40 bg-primary/10 text-primary'
-          : 'border-outline-variant/45 bg-surface-container-lowest/60 text-on-surface-variant';
-
+      const isArea = diagram.outputFeature === 'area';
+      
       return (
         <a
           href={`${formulasRoot}${formula.slug}/`}
-          class="surface-card block border-outline-variant/50 hover:border-primary/45 hover:bg-surface-container-high"
+          class="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-outline-variant/30 bg-surface-container-lowest/50 p-6 transition-all duration-500 hover:-translate-y-1.5 hover:border-primary/50 hover:bg-surface-container-low/80 hover:shadow-[var(--shadow-glow-primary)]"
           aria-label={`${formula.title} calculator`}
         >
-          <div class="flex items-start justify-between gap-3">
-            <span
-              class:list={[
-                'rounded-md border px-2 py-1 font-label text-[10px] uppercase tracking-[0.14em]',
-                categoryClasses[formula.category] ?? 'bg-surface-container-high text-on-surface border-outline-variant'
-              ]}
-            >
-              {formula.category}
-            </span>
-            <span class="font-label text-[10px] uppercase tracking-[0.14em] text-outline">Tool {String(index + 1).padStart(2, '0')}</span>
+          <!-- Hover Highlight -->
+          <div class="pointer-events-none absolute -inset-px rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100" style="background: radial-gradient(400px circle at 50% 100%, rgba(241, 201, 125, 0.12), transparent 45%);"></div>
+
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline transition-colors group-hover:text-primary/70">
+                Tool {String(index + 1).padStart(2, '0')}
+              </span>
+              <span class="material-symbols-outlined text-[16px] text-outline/50 transition-colors group-hover:text-primary">arrow_outward</span>
+            </div>
+            <h3 class="mt-4 break-words text-lg font-semibold leading-snug tracking-tight text-on-surface transition-colors group-hover:text-primary">
+              {formula.title}
+            </h3>
           </div>
 
-          <h3 class="mt-3 line-clamp-2 text-base font-semibold sm:text-lg">{formula.title}</h3>
+          <div class="mt-6 flex h-36 w-full items-center justify-center rounded-xl border border-outline-variant/20 bg-surface/50 shadow-inner transition-colors group-hover:border-primary/20">
+            <!-- Simplified, elegant SVG Diagram -->
+            <svg class="h-24 w-full" viewBox="0 0 112 96" role="img" aria-label={`${formula.title} diagram`}>
+              <defs>
+                <linearGradient id={`grad-${index}`} x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color={isArea ? "rgba(241, 201, 125, 0.3)" : "rgba(241, 201, 125, 0.05)"} />
+                  <stop offset="100%" stop-color={isArea ? "rgba(212, 173, 101, 0.1)" : "rgba(241, 201, 125, 0.0)"} />
+                </linearGradient>
+              </defs>
 
-          <div class="mt-3 rounded-xl border border-outline-variant/30 bg-surface-container-lowest/70 p-3">
-            <svg class="h-28 w-full" viewBox="0 0 112 96" role="img" aria-label={`${formula.title} diagram`}>
-              <path d="M 18 14 L 18 82 L 94 82 Z" fill={areaFill}></path>
+              <!-- Base Triangle Fill -->
+              <path d="M 24 14 L 24 82 L 88 82 Z" fill={`url(#grad-${index})`} stroke="none"></path>
 
+              <!-- Conditionally rendered advanced features -->
+              {diagram.outputFeature === 'altitude' && (
+                <line x1="24" y1="82" x2="54" y2="46" stroke="var(--color-primary)" stroke-width="2" stroke-dasharray="3 3"></line>
+              )}
+              {diagram.outputFeature === 'projectionP' && (
+                <line x1="24" y1="14" x2="54" y2="46" stroke="var(--color-primary)" stroke-width="2.5"></line>
+              )}
+              {diagram.outputFeature === 'projectionQ' && (
+                <line x1="54" y1="46" x2="88" y2="82" stroke="var(--color-primary)" stroke-width="2.5"></line>
+              )}
+              {diagram.outputFeature === 'inradius' && (
+                <circle cx="43" cy="63" r="13" fill="none" stroke="var(--color-primary)" stroke-width="2"></circle>
+              )}
+              {diagram.outputFeature === 'circumradius' && (
+                <circle cx="56" cy="48" r="41" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-dasharray="3 3"></circle>
+              )}
+              {diagram.outputFeature === 'angleA' && (
+                <path d="M 75 82 A 13 13 0 0 0 78 72" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"></path>
+              )}
+
+              <!-- Base Triangle Sides -->
               <line
-                x1="18"
-                y1="14"
-                x2="18"
-                y2="82"
+                x1="24" y1="14" x2="24" y2="82"
                 stroke={strokeForSide('a', diagram.inputSides, diagram.outputFeature)}
                 stroke-width={strokeWidthForSide('a', diagram.inputSides, diagram.outputFeature)}
                 stroke-linecap="round"
               ></line>
               <line
-                x1="18"
-                y1="82"
-                x2="94"
-                y2="82"
+                x1="24" y1="82" x2="88" y2="82"
                 stroke={strokeForSide('b', diagram.inputSides, diagram.outputFeature)}
                 stroke-width={strokeWidthForSide('b', diagram.inputSides, diagram.outputFeature)}
                 stroke-linecap="round"
               ></line>
               <line
-                x1="18"
-                y1="14"
-                x2="94"
-                y2="82"
+                x1="24" y1="14" x2="88" y2="82"
                 stroke={strokeForSide('c', diagram.inputSides, diagram.outputFeature)}
                 stroke-width={strokeWidthForSide('c', diagram.inputSides, diagram.outputFeature)}
                 stroke-linecap="round"
               ></line>
 
-              <path d="M 18 82 L 29 82 L 29 71" fill="none" stroke="var(--color-outline)" stroke-width="1.6"></path>
-
-              <path d="M 79 82 A 14 14 0 0 0 72 69" fill="none" stroke={angleStroke} stroke-width="2" stroke-linecap="round"></path>
-
-              <line
-                x1="18"
-                y1="82"
-                x2="52"
-                y2="44"
-                stroke="var(--color-primary)"
-                stroke-width="2"
-                stroke-dasharray="4 3"
-                opacity={altitudeOpacity}
-              ></line>
-
-              <line
-                x1="18"
-                y1="14"
-                x2="52"
-                y2="44"
-                stroke="var(--color-primary)"
-                stroke-width="3"
-                opacity={projectionPOpacity}
-              ></line>
-              <line
-                x1="52"
-                y1="44"
-                x2="94"
-                y2="82"
-                stroke="var(--color-primary)"
-                stroke-width="3"
-                opacity={projectionQOpacity}
-              ></line>
-
-              <circle
-                cx="39"
-                cy="61"
-                r="15"
-                fill="none"
-                stroke="var(--color-primary)"
-                stroke-width="2"
-                opacity={inradiusOpacity}
-              ></circle>
-              <circle
-                cx="56"
-                cy="48"
-                r="47"
-                fill="none"
-                stroke="var(--color-primary)"
-                stroke-width="1.8"
-                stroke-dasharray="4 4"
-                opacity={circumradiusOpacity}
-              ></circle>
-
-              <rect x="72" y="8" width="30" height="14" rx="4" fill="rgba(14, 14, 14, 0.72)" stroke="var(--color-outline-variant)"></rect>
-              <text x="87" y="18" text-anchor="middle" fill="var(--color-primary)" font-size="9" font-family="var(--font-label)" font-weight="700">
-                {outputGlyph}
-              </text>
+              <!-- Right angle marker -->
+              <path d="M 24 73 L 33 73 L 33 82" fill="none" stroke="var(--color-outline-variant)" stroke-width="1"></path>
             </svg>
           </div>
 
-          <div class="mt-3 space-y-2 text-[11px] text-on-surface-variant">
-            <p>
-              <span class="font-label uppercase tracking-[0.14em] text-outline">Inputs</span>
-              <span class="ml-2">{formula.calculator.fields.map((field) => field.label).join(' + ')}</span>
-            </p>
-            <p>
-              <span class="font-label uppercase tracking-[0.14em] text-outline">Output</span>
-              <span class:list={['ml-2 rounded-md border px-2 py-0.5 font-medium', outputChipClass]}>{formula.calculator.outputLabel}</span>
-            </p>
+          <div class="mt-6 flex flex-col gap-3">
+            <div class="flex items-center gap-2">
+              <span class="rounded border border-outline-variant/30 bg-surface-container-high px-2 py-1 font-mono text-[10px] text-on-surface-variant/80">Input</span>
+              <span class="text-xs font-medium text-on-surface">
+                {formula.calculator.fields.map((f) => f.label.replace('Leg ', '').replace('Hypotenuse ', '').replace('Adjacent ', '').replace('Opposite ', '')).join(' + ')}
+              </span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="rounded border border-primary/20 bg-primary/10 px-2 py-1 font-mono text-[10px] text-primary">Output</span>
+              <span class="text-xs font-medium text-primary">
+                {formula.calculator.outputLabel}
+              </span>
+            </div>
           </div>
-
-          <p class="mt-3 rounded-lg border border-outline-variant/45 bg-surface px-3 py-2 font-mono text-[11px] text-primary">
-            {formula.expression}
-          </p>
         </a>
       );
     })}
   </div>
 </section>
+

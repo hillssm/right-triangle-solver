@@ -51,12 +51,7 @@ const chartRows = [
     <div class="pointer-events-none absolute -left-10 -top-20 h-64 w-64 rounded-full bg-primary/14 blur-3xl"></div>
     <div class="pointer-events-none absolute -bottom-20 right-8 h-52 w-52 rounded-full bg-tertiary/14 blur-3xl"></div>
     <div class="relative grid grid-cols-1 justify-items-stretch gap-6 lg:gap-8">
-      <RightTriangleTool
-        heading={pick(home, 'toolHeading', 'Triangle Tool')}
-        description={pick(home, 'toolDescription', 'Enter any two legs to calculate hypotenuse, area, and perimeter instantly.')}
-      />
-
-      <div>
+      <div class="grid gap-4">
         <div class="flex flex-wrap items-center gap-2">
           <span class="interactive-chip is-active">Right Triangle Studio</span>
           <span class="interactive-chip">Live Geometry</span>
@@ -70,19 +65,25 @@ const chartRows = [
           <a class="btn-primary" href="/formulas/">Explore Formula Directory</a>
           <a class="btn-secondary" href="/practice/">Open Practice Workspace</a>
         </div>
-        <div class="mt-6 grid gap-3 sm:grid-cols-3">
-          <div class="lux-stat">
-            <p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">Solve Time</p>
-            <p class="mt-2 text-2xl font-bold text-on-surface">0.2s</p>
-          </div>
-          <div class="lux-stat">
-            <p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">Output Metrics</p>
-            <p class="mt-2 text-2xl font-bold text-on-surface">7+</p>
-          </div>
-          <div class="lux-stat">
-            <p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">Visual Checks</p>
-            <p class="mt-2 text-2xl font-bold text-on-surface">Real-time</p>
-          </div>
+      </div>
+
+      <RightTriangleTool
+        heading={pick(home, 'toolHeading', 'Triangle Tool')}
+        description={pick(home, 'toolDescription', 'Enter any two legs to calculate hypotenuse, area, and perimeter instantly.')}
+      />
+
+      <div class="grid gap-3 sm:grid-cols-3">
+        <div class="lux-stat">
+          <p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">Solve Time</p>
+          <p class="mt-2 text-2xl font-bold text-on-surface">0.2s</p>
+        </div>
+        <div class="lux-stat">
+          <p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">Output Metrics</p>
+          <p class="mt-2 text-2xl font-bold text-on-surface">7+</p>
+        </div>
+        <div class="lux-stat">
+          <p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">Visual Checks</p>
+          <p class="mt-2 text-2xl font-bold text-on-surface">Real-time</p>
         </div>
       </div>
 

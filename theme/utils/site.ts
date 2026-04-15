@@ -1,4 +1,4 @@
-﻿import navigationConfig from 'src/config/navigation.json';
+import navigationConfig from 'src/config/navigation.json';
 import siteConfig from 'src/config/site.json';
 import { localizeNavHref, type Locale } from 'theme/i18n/locales';
 
@@ -24,6 +24,9 @@ export type SiteConfig = {
     twitter?: string;
     linkedin?: string;
     pinterest?: string;
+    instagram?: string;
+    youtube?: string;
+    bluesky?: string;
   };
   contact: {
     formEndpoint: string;

@@ -1,4 +1,4 @@
-﻿{
+{
   "brandName": "Right Triangle Solver",
   "legalName": "Right Triangle Solver Labs",
   "baseUrl": "https://righttrianglesolver.app",
@@ -16,10 +16,13 @@
     "yandex": ""
   },
   "social": {
-    "facebook": "",
-    "twitter": "",
-    "linkedin": "",
-    "pinterest": ""
+    "facebook": "https://facebook.com/righttrianglesolver",
+    "twitter": "https://twitter.com/righttrianglesolver",
+    "linkedin": "https://linkedin.com/company/righttrianglesolver",
+    "pinterest": "https://pinterest.com/righttrianglesolver",
+    "instagram": "https://instagram.com/righttrianglesolver",
+    "youtube": "https://youtube.com/@righttrianglesolver",
+    "bluesky": "https://bsky.app/profile/righttrianglesolver.bsky.social"
   },
   "contact": {
     "formEndpoint": "https://api.web3forms.com/submit",

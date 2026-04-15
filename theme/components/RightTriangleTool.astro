@@ -8,7 +8,7 @@ const { heading, description } = Astro.props;
 ---
 
 <section class="section-shell h-full w-full min-w-0 justify-self-stretch" aria-labelledby="tool-heading" data-right-triangle-tool>
-  <div class="grid gap-6 sm:grid-cols-[0.95fr_1.05fr] lg:gap-8">
+  <div class="grid gap-6 sm:grid-cols-[1.1fr_0.9fr] lg:gap-8">
     <div>
       <h2 id="tool-heading" class="text-2xl sm:text-3xl">{heading}</h2>
       <p class="mt-2 max-w-xl text-sm leading-relaxed text-on-surface-variant">{description}</p>
@@ -128,7 +128,7 @@ const { heading, description } = Astro.props;
           <p class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Live Visualization</p>
           <h3 class="mt-2 text-xl text-on-surface">Right Triangle Diagram</h3>
         </div>
-        <div class="rounded-lg border border-primary/30 bg-primary-fixed px-3 py-1 text-[10px] font-label uppercase tracking-[0.2em] text-on-primary-fixed">Scaled</div>
+        <div class="rounded-lg border border-primary/30 bg-primary-fixed px-3 py-1 text-[10px] font-label uppercase tracking-[0.2em] text-[#261900]">Scaled</div>
       </div>
 
       <div class="relative mt-5 overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-lowest/70 p-4 sm:p-6">

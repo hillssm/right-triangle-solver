@@ -1,6 +1,8 @@
 ---
 import { localizePath, type Locale } from 'theme/i18n/locales';
 
+import { getLocalizedNavItems } from 'theme/utils/site';
+
 interface Props {
   locale: Locale;
   siteTitle: string;
@@ -10,31 +12,9 @@ interface Props {
 
 const { locale, siteTitle, logo, navLabels } = Astro.props;
 
-const navItems = [
-  {
-    label: navLabels.home ?? 'Home',
-    href: localizePath(locale, '/')
-  },
-  {
-    label: navLabels.practice ?? 'Practice',
-    href: localizePath(locale, '/practice/')
-  },
-  {
-    label: navLabels.formulas ?? 'Formulas',
-    href: localizePath(locale, '/formulas/')
-  },
-  {
-    label: navLabels.aboutUs ?? 'About Us',
-    href: localizePath(locale, '/about-us/')
-  },
-  {
-    label: navLabels.contactUs ?? 'Contact Us',
-    href: localizePath(locale, '/contact-us/')
-  }
-];
+const navItems = getLocalizedNavItems(locale, 'header', navLabels);
 const homeHref = localizePath(locale, '/');
 const currentPath = Astro.url.pathname;
-
 const normalizePath = (path: string) => {
   if (path === '/') return '/';
   return path.endsWith('/') ? path : `${path}/`;

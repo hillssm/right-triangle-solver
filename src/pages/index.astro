@@ -36,6 +36,7 @@ const chartRows = [
   title={pageTitle}
   description={pageDescription}
   canonicalPath="/"
+  mainClass="w-full px-4 py-8 sm:px-6 lg:px-8"
 >
   <HomeSchema
     slot="head"
@@ -49,7 +50,7 @@ const chartRows = [
   <section class="section-shell overflow-hidden">
     <div class="pointer-events-none absolute -left-10 -top-20 h-64 w-64 rounded-full bg-primary/14 blur-3xl"></div>
     <div class="pointer-events-none absolute -bottom-20 right-8 h-52 w-52 rounded-full bg-tertiary/14 blur-3xl"></div>
-    <div class="relative grid grid-cols-1 gap-6 lg:gap-8">
+    <div class="relative grid grid-cols-1 justify-items-stretch gap-6 lg:gap-8">
       <RightTriangleTool
         heading={pick(home, 'toolHeading', 'Triangle Tool')}
         description={pick(home, 'toolDescription', 'Enter any two legs to calculate hypotenuse, area, and perimeter instantly.')}

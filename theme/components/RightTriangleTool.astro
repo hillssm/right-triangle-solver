@@ -7,7 +7,7 @@ interface Props {
 const { heading, description } = Astro.props;
 ---
 
-<section class="section-shell h-full" aria-labelledby="tool-heading" data-right-triangle-tool>
+<section class="section-shell h-full w-full min-w-0 justify-self-stretch" aria-labelledby="tool-heading" data-right-triangle-tool>
   <div class="grid gap-6 sm:grid-cols-[0.95fr_1.05fr] lg:gap-8">
     <div>
       <h2 id="tool-heading" class="text-2xl sm:text-3xl">{heading}</h2>

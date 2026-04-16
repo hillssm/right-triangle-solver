@@ -79,11 +79,20 @@ const defaultStatus = `Enter inputs to calculate ${formula.calculator.outputLabe
   </p>
 
   <div class="mt-4 hidden surface-card border-primary/30 bg-surface-container-high" data-calc-result-wrap>
-    <p class="font-label text-xs uppercase tracking-widest text-primary" data-calc-output-label>
-      {formula.calculator.outputLabel}
-    </p>
-    <p class="mt-2 font-mono text-2xl text-tertiary" data-calc-output-value>-</p>
-    <p class="mt-2 text-xs text-on-surface-variant" data-calc-output-detail>
+    <div class="flex items-center justify-between">
+      <p class="font-label text-xs uppercase tracking-widest text-primary" data-calc-output-label>
+        {formula.calculator.outputLabel}
+      </p>
+      <span class="rounded bg-primary-fixed px-2 py-0.5 text-[10px] uppercase text-on-primary-fixed">Result</span>
+    </div>
+    <p class="mt-2 font-mono text-3xl text-tertiary" data-calc-output-value>-</p>
+    
+    <div class="mt-6 border-t border-outline-variant/30 pt-4">
+      <h4 class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Solution Steps</h4>
+      <ol class="mt-3 space-y-3" data-calc-steps></ol>
+    </div>
+
+    <p class="mt-4 text-xs italic text-on-surface-variant" data-calc-output-detail>
       Formula: {formula.expression}
     </p>
   </div>
@@ -102,17 +111,18 @@ const defaultStatus = `Enter inputs to calculate ${formula.calculator.outputLabe
       const labelEl = section.querySelector('[data-calc-output-label]');
       const valueEl = section.querySelector('[data-calc-output-value]');
       const detailEl = section.querySelector('[data-calc-output-detail]');
+      const stepsEl = section.querySelector('[data-calc-steps]');
       const kind = section.getAttribute('data-kind') ?? '';
       const outputLabel = section.getAttribute('data-output-label') ?? 'Result';
       const outputUnit = section.getAttribute('data-output-unit') ?? '';
       const defaultStatus =
         section.getAttribute('data-default-status') ?? 'Fill values and click calculate.';
 
-      if (!form || !statusEl || !resultWrap || !labelEl || !valueEl || !detailEl) return;
+      if (!form || !statusEl || !resultWrap || !labelEl || !valueEl || !detailEl || !stepsEl) return;
 
       const toNumber = (value) => Number.parseFloat(String(value));
       const deg = (rad) => (rad * 180) / Math.PI;
-      const format = (n, digits = 6) => Number(n).toFixed(digits).replace(/\.?0+$/, '');
+      const format = (n, digits = 4) => Number(n).toFixed(digits).replace(/\.?0+$/, '');
 
       const parseInputs = () => {
         const data = new FormData(form);
@@ -133,109 +143,240 @@ const defaultStatus = `Enter inputs to calculate ${formula.calculator.outputLabe
         }
       };
 
-      const solve = (values) => {
+      const solve = (v) => {
         switch (kind) {
           case 'pythagorean_c': {
-            const { a, b } = values;
-            requirePositive(a, b);
-            return { result: Math.hypot(a, b), detail: 'c = sqrt(a^2 + b^2)' };
+            requirePositive(v.a, v.b);
+            const r = Math.hypot(v.a, v.b);
+            return {
+              result: r,
+              steps: [
+                `Identify side a = ${v.a} and side b = ${v.b}.`,
+                `Use the Pythagorean theorem: c = √(a² + b²)`,
+                `Substitute: c = √(${v.a}² + ${v.b}²) = √(${format(v.a ** 2)} + ${format(v.b ** 2)})`,
+                `The hypotenuse c is ${format(r)}.`
+              ]
+            };
           }
           case 'leg_from_ac': {
-            const { a, c } = values;
-            requirePositive(a, c);
-            if (c <= a) throw new Error('Hypotenuse c must be greater than leg a.');
-            return { result: Math.sqrt(c * c - a * a), detail: 'b = sqrt(c^2 - a^2)' };
+            requirePositive(v.a, v.c);
+            if (v.c <= v.a) throw new Error('Hypotenuse c must be greater than leg a.');
+            const r = Math.sqrt(v.c * v.c - v.a * v.a);
+            return {
+              result: r,
+              steps: [
+                `Identify side a = ${v.a} and hypotenuse c = ${v.c}.`,
+                `Use the formula: b = √(c² - a²)`,
+                `Substitute: b = √(${v.c}² - ${v.a}²) = √(${format(v.c ** 2)} - ${format(v.a ** 2)})`,
+                `The missing leg b is ${format(r)}.`
+              ]
+            };
           }
           case 'leg_from_bc': {
-            const { b, c } = values;
-            requirePositive(b, c);
-            if (c <= b) throw new Error('Hypotenuse c must be greater than leg b.');
-            return { result: Math.sqrt(c * c - b * b), detail: 'a = sqrt(c^2 - b^2)' };
+            requirePositive(v.b, v.c);
+            if (v.c <= v.b) throw new Error('Hypotenuse c must be greater than leg b.');
+            const r = Math.sqrt(v.c * v.c - v.b * v.b);
+            return {
+              result: r,
+              steps: [
+                `Identify side b = ${v.b} and hypotenuse c = ${v.c}.`,
+                `Use the formula: a = √(c² - b²)`,
+                `Substitute: a = √(${v.c}² - ${v.b}²) = √(${format(v.c ** 2)} - ${format(v.b ** 2)})`,
+                `The missing leg a is ${format(r)}.`
+              ]
+            };
           }
           case 'area_legs': {
-            const { a, b } = values;
-            requirePositive(a, b);
-            return { result: (a * b) / 2, detail: 'Area = (a * b) / 2' };
+            requirePositive(v.a, v.b);
+            const r = (v.a * v.b) / 2;
+            return {
+              result: r,
+              steps: [
+                `Identify base (a) = ${v.a} and height (b) = ${v.b}.`,
+                `Area = (a * b) / 2`,
+                `Calculate: (${v.a} * ${v.b}) / 2 = ${format(v.a * v.b)} / 2`,
+                `The total area is ${format(r)}.`
+              ]
+            };
           }
           case 'perimeter': {
-            const { a, b, c } = values;
-            requirePositive(a, b, c);
-            return { result: a + b + c, detail: 'P = a + b + c' };
+            requirePositive(v.a, v.b, v.c);
+            const r = v.a + v.b + v.c;
+            return {
+              result: r,
+              steps: [
+                `Identify sides a = ${v.a}, b = ${v.b}, c = ${v.c}.`,
+                `Perimeter (P) = a + b + c`,
+                `Calculate: ${v.a} + ${v.b} + ${v.c} = ${format(r)}.`
+              ]
+            };
           }
           case 'semiperimeter': {
-            const { a, b, c } = values;
-            requirePositive(a, b, c);
-            return { result: (a + b + c) / 2, detail: 's = (a + b + c) / 2' };
+            requirePositive(v.a, v.b, v.c);
+            const r = (v.a + v.b + v.c) / 2;
+            return {
+              result: r,
+              steps: [
+                `Add all sides: P = ${v.a} + ${v.b} + ${v.c} = ${format(v.a + v.b + v.c)}`,
+                `Semiperimeter (s) = P / 2 = ${format(v.a + v.b + v.c)} / 2`,
+                `The result is ${format(r)}.`
+              ]
+            };
           }
           case 'sine': {
-            const { a, c } = values;
-            requirePositive(a, c);
-            if (a >= c) throw new Error('For a right triangle, a must be less than c.');
-            return { result: a / c, detail: 'sin(A) = a / c' };
+            requirePositive(v.a, v.c);
+            if (v.a >= v.c) throw new Error('Leg a must be smaller than hypotenuse c.');
+            const r = v.a / v.c;
+            return {
+              result: r,
+              steps: [
+                `Sine of Angle A (sin A) = Opposite / Hypotenuse`,
+                `Identify opposite side a = ${v.a} and hypotenuse c = ${v.c}.`,
+                `Calculate: ${v.a} / ${v.c} = ${format(r)}.`
+              ]
+            };
           }
           case 'cosine': {
-            const { b, c } = values;
-            requirePositive(b, c);
-            if (b >= c) throw new Error('For a right triangle, b must be less than c.');
-            return { result: b / c, detail: 'cos(A) = b / c' };
+            requirePositive(v.b, v.c);
+            if (v.b >= v.c) throw new Error('Leg b must be smaller than hypotenuse c.');
+            const r = v.b / v.c;
+            return {
+              result: r,
+              steps: [
+                `Cosine of Angle A (cos A) = Adjacent / Hypotenuse`,
+                `Identify adjacent side b = ${v.b} and hypotenuse c = ${v.c}.`,
+                `Calculate: ${v.b} / ${v.c} = ${format(r)}.`
+              ]
+            };
           }
           case 'tangent': {
-            const { a, b } = values;
-            requirePositive(a, b);
-            return { result: a / b, detail: 'tan(A) = a / b' };
+            requirePositive(v.a, v.b);
+            const r = v.a / v.b;
+            return {
+              result: r,
+              steps: [
+                `Tangent of Angle A (tan A) = Opposite / Adjacent`,
+                `Identify opposite leg a = ${v.a} and adjacent leg b = ${v.b}.`,
+                `Calculate: ${v.a} / ${v.b} = ${format(r)}.`
+              ]
+            };
           }
           case 'angle_asin': {
-            const { a, c } = values;
-            requirePositive(a, c);
-            if (a >= c) throw new Error('For a right triangle, a must be less than c.');
-            return { result: deg(Math.asin(a / c)), detail: 'A = asin(a / c)' };
+            requirePositive(v.a, v.c);
+            const r = deg(Math.asin(v.a / v.c));
+            return {
+              result: r,
+              steps: [
+                `Find Angle A where sin(A) = a / c`,
+                `A = arcsin(${v.a} / ${v.c}) = arcsin(${format(v.a / v.c)})`,
+                `Angle A is approximately ${format(r)}°.`
+              ]
+            };
           }
           case 'angle_acos': {
-            const { b, c } = values;
-            requirePositive(b, c);
-            if (b >= c) throw new Error('For a right triangle, b must be less than c.');
-            return { result: deg(Math.acos(b / c)), detail: 'A = acos(b / c)' };
+            requirePositive(v.b, v.c);
+            const r = deg(Math.acos(v.b / v.c));
+            return {
+              result: r,
+              steps: [
+                `Find Angle A where cos(A) = b / c`,
+                `A = arccos(${v.b} / ${v.c}) = arccos(${format(v.b / v.c)})`,
+                `Angle A is approximately ${format(r)}°.`
+              ]
+            };
           }
           case 'angle_atan': {
-            const { a, b } = values;
-            requirePositive(a, b);
-            return { result: deg(Math.atan(a / b)), detail: 'A = atan(a / b)' };
+            requirePositive(v.a, v.b);
+            const r = deg(Math.atan(v.a / v.b));
+            return {
+              result: r,
+              steps: [
+                `Find Angle A where tan(A) = a / b`,
+                `A = arctan(${v.a} / ${v.b}) = arctan(${format(v.a / v.b)})`,
+                `Angle A is approximately ${format(r)}°.`
+              ]
+            };
           }
           case 'altitude': {
-            let { a, b, c } = values;
-            requirePositive(a, b, c);
-            if (c <= a || c <= b) {
-              c = Math.hypot(a, b);
-            }
-            return { result: (a * b) / c, detail: 'h = (a * b) / c' };
+            let { a, b, c } = v;
+            requirePositive(a, b);
+            if (!c || c <= a || c <= b) c = Math.hypot(a, b);
+            const r = (a * b) / c;
+            return {
+              result: r,
+              steps: [
+                `Altitude (h) to the hypotenuse is (a * b) / c.`,
+                `Sides: a = ${a}, b = ${b}, c = ${format(c)}.`,
+                `Calculate: (${a} * ${b}) / ${format(c)} = ${format(a * b)} / ${format(c)}`,
+                `The altitude is ${format(r)}.`
+              ]
+            };
           }
           case 'projection_p': {
-            const { a, c } = values;
-            requirePositive(a, c);
-            if (a >= c) throw new Error('For a right triangle, a must be less than c.');
-            return { result: (a * a) / c, detail: 'p = a^2 / c' };
+            requirePositive(v.a, v.c);
+            const r = (v.a * v.a) / v.c;
+            return {
+              result: r,
+              steps: [
+                `The projection p of leg a on the hypotenuse is a² / c.`,
+                `a = ${v.a}, c = ${v.c}.`,
+                `Substitute: ${v.a}² / ${v.c} = ${format(v.a ** 2)} / ${v.c}`,
+                `The length p is ${format(r)}.`
+              ]
+            };
           }
           case 'projection_q': {
-            const { b, c } = values;
-            requirePositive(b, c);
-            if (b >= c) throw new Error('For a right triangle, b must be less than c.');
-            return { result: (b * b) / c, detail: 'q = b^2 / c' };
+            requirePositive(v.b, v.c);
+            const r = (v.b * v.b) / v.c;
+            return {
+              result: r,
+              steps: [
+                `The projection q of leg b on the hypotenuse is b² / c.`,
+                `b = ${v.b}, c = ${v.c}.`,
+                `Substitute: ${v.b}² / ${v.c} = ${format(v.b ** 2)} / ${v.c}`,
+                `The length q is ${format(r)}.`
+              ]
+            };
           }
           case 'inradius': {
-            const { a, b, c } = values;
-            requirePositive(a, b, c);
-            const r = (a + b - c) / 2;
-            if (r <= 0) throw new Error('These sides do not produce a valid inradius.');
-            return { result: r, detail: 'r = (a + b - c) / 2' };
+            requirePositive(v.a, v.b, v.c);
+            const r = (v.a + v.b - v.c) / 2;
+            return {
+              result: r,
+              steps: [
+                `The inradius (r) of a right triangle is (a + b - c) / 2.`,
+                `Substitute: (${v.a} + ${v.b} - ${v.c}) / 2 = ${format(v.a + v.b - v.c)} / 2`,
+                `The inradius is ${format(r)}.`
+              ]
+            };
           }
           case 'circumradius': {
-            const { c } = values;
-            requirePositive(c);
-            return { result: c / 2, detail: 'R = c / 2' };
+            requirePositive(v.c);
+            const r = v.c / 2;
+            return {
+              result: r,
+              steps: [
+                `The circumradius (R) of a right triangle is hypotenuse c / 2.`,
+                `c = ${v.c}.`,
+                `Substitute: ${v.c} / 2 = ${format(r)}.`
+              ]
+            };
           }
           default:
             throw new Error('Calculator type is not configured.');
         }
+      };
+
+      const renderSteps = (steps) => {
+        const fragment = document.createDocumentFragment();
+        steps.forEach((text, i) => {
+          const li = document.createElement('li');
+          li.className = 'flex items-start gap-3 rounded-lg border border-outline-variant/10 bg-surface-container-low/40 p-3 text-sm transition-colors hover:bg-surface-container-low/60';
+          const num = (i + 1).toString().padStart(2, '0');
+          li.innerHTML = `<span class="mt-0.5 font-mono text-[10px] text-primary/60 flex-shrink-0">${num}</span><span class="text-on-surface-variant">${text}</span>`;
+          fragment.append(li);
+        });
+        stepsEl.replaceChildren(fragment);
       };
 
       form.addEventListener('submit', (event) => {
@@ -245,7 +386,7 @@ const defaultStatus = `Enter inputs to calculate ${formula.calculator.outputLabe
           const output = solve(values);
           labelEl.textContent = outputLabel;
           valueEl.textContent = `${format(output.result)}${outputUnit ? ` ${outputUnit}` : ''}`;
-          detailEl.textContent = output.detail;
+          renderSteps(output.steps);
           statusEl.textContent = `Calculated ${outputLabel}.`;
           resultWrap.classList.remove('hidden');
         } catch (err) {

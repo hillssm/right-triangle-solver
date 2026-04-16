@@ -157,6 +157,16 @@ const finalizeSolution = (payload: {
   const segmentP = (a * a) / c;
   const segmentQ = (b * b) / c;
 
+  const derivedSteps = [
+    `Area (A) = (a * b) / 2 = (${a} * ${b}) / 2 = ${area.toFixed(4)}`,
+    `Perimeter (P) = a + b + c = ${a} + ${b} + ${c} = ${perimeter.toFixed(4)}`,
+    `Altitude h = (a * b) / c = (${a} * ${b}) / ${c} = ${h.toFixed(4)}`,
+    `Inradius r = A / s = ${area.toFixed(4)} / ${semiperimeter.toFixed(4)} = ${inradius.toFixed(4)}`,
+    `Circumradius R = c / 2 = ${c} / 2 = ${circumradius.toFixed(4)}`,
+    `Segment p = a² / c = ${a}² / ${c} = ${segmentP.toFixed(4)}`,
+    `Segment q = b² / c = ${b}² / ${c} = ${segmentQ.toFixed(4)}`
+  ];
+
   return {
     a,
     b,
@@ -179,7 +189,7 @@ const finalizeSolution = (payload: {
     providedKeys: payload.providedKeys,
     combination: payload.combination,
     formulas: [...payload.formulas, ...COMMON_DERIVED_FORMULAS],
-    steps: payload.steps
+    steps: [...payload.steps, ...derivedSteps]
   };
 };
 

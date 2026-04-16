@@ -73,9 +73,9 @@
           A,
           B,
           steps: [
-            `Calculate hypotenuse c: c = √(${a}² + ${b}²) = ${fmt(c)}`,
-            `Find angle A: A = atan(${a} / ${b}) = ${fmt(A)}°`,
-            `Find angle B: B = 90° - ${fmt(A)}° = ${fmt(B)}°`
+            `Calculate hypotenuse c using Pythagoras: c = √(${fmt(a)}² + ${fmt(b)}²) = √(${fmt(a*a)} + ${fmt(b*b)}) = ${fmt(c)}`,
+            `Find Angle A using tangent: A = atan(${fmt(a)} / ${fmt(b)}) = ${fmt(A)}°`,
+            `Find Angle B (complementary): B = 90° - ${fmt(A)}° = ${fmt(B)}°`
           ]
         };
       }
@@ -100,9 +100,9 @@
           A,
           B,
           steps: [
-            `Calculate leg b: b = √(${c}² - ${a}²) = ${fmt(b)}`,
-            `Find angle A: A = asin(${a} / ${c}) = ${fmt(A)}°`,
-            `Find angle B: B = 90° - ${fmt(A)}° = ${fmt(B)}°`
+            `Calculate leg b using Pythagoras: b = √(${fmt(c)}² - ${fmt(a)}²) = √(${fmt(c*c)} - ${fmt(a*a)}) = ${fmt(b)}`,
+            `Find Angle A using sine: A = asin(${fmt(a)} / ${fmt(c)}) = ${fmt(A)}°`,
+            `Find Angle B: B = 90° - ${fmt(A)}° = ${fmt(B)}°`
           ]
         };
       }
@@ -127,9 +127,9 @@
           A,
           B,
           steps: [
-            `Calculate leg a: a = √(${c}² - ${b}²) = ${fmt(a)}`,
-            `Find angle A: A = acos(${b} / ${c}) = ${fmt(A)}°`,
-            `Find angle B: B = 90° - ${fmt(A)}° = ${fmt(B)}°`
+            `Calculate leg a using Pythagoras: a = √(${fmt(c)}² - ${fmt(b)}²) = √(${fmt(c*c)} - ${fmt(b*b)}) = ${fmt(a)}`,
+            `Find Angle A using cosine: A = acos(${fmt(b)} / ${fmt(c)}) = ${fmt(A)}°`,
+            `Find Angle B: B = 90° - ${fmt(A)}° = ${fmt(B)}°`
           ]
         };
       }
@@ -154,9 +154,9 @@
           A,
           B,
           steps: [
-            `Calculate hypotenuse c: c = ${a} / sin(${A}°) = ${fmt(c)}`,
-            `Calculate leg b: b = ${a} / tan(${A}°) = ${fmt(b)}`,
-            `Find angle B: B = 90° - ${A}° = ${fmt(B)}°`
+            `Calculate hypotenuse c: c = ${fmt(a)} / sin(${fmt(A)}°) = ${fmt(c)}`,
+            `Calculate leg b: b = ${fmt(a)} / tan(${fmt(A)}°) = ${fmt(b)}`,
+            `Find Angle B: B = 90° - ${fmt(A)}° = ${fmt(B)}°`
           ]
         };
       }
@@ -181,9 +181,9 @@
           A,
           B,
           steps: [
-            `Calculate hypotenuse c: c = ${b} / cos(${A}°) = ${fmt(c)}`,
-            `Calculate leg a: a = ${b} * tan(${A}°) = ${fmt(a)}`,
-            `Find angle B: B = 90° - ${A}° = ${fmt(B)}°`
+            `Calculate hypotenuse c: c = ${fmt(b)} / cos(${fmt(A)}°) = ${fmt(c)}`,
+            `Calculate leg a: a = ${fmt(b)} * tan(${fmt(A)}°) = ${fmt(a)}`,
+            `Find Angle B: B = 90° - ${fmt(A)}° = ${fmt(B)}°`
           ]
         };
       }
@@ -208,9 +208,9 @@
           A,
           B,
           steps: [
-            `Calculate leg a: a = ${c} * sin(${A}°) = ${fmt(a)}`,
-            `Calculate leg b: b = ${c} * cos(${A}°) = ${fmt(b)}`,
-            `Find angle B: B = 90° - ${A}° = ${fmt(B)}°`
+            `Calculate leg a: a = ${fmt(c)} * sin(${fmt(A)}°) = ${fmt(a)}`,
+            `Calculate leg b: b = ${fmt(c)} * cos(${fmt(A)}°) = ${fmt(b)}`,
+            `Find Angle B: B = 90° - ${fmt(A)}° = ${fmt(B)}°`
           ]
         };
       }
@@ -235,9 +235,9 @@
           A,
           B,
           steps: [
-            `Calculate hypotenuse c: c = ${a} / cos(${B}°) = ${fmt(c)}`,
-            `Calculate leg b: b = ${a} * tan(${B}°) = ${fmt(b)}`,
-            `Find angle A: A = 90° - ${B}° = ${fmt(A)}°`
+            `Calculate hypotenuse c: c = ${fmt(a)} / cos(${fmt(B)}°) = ${fmt(c)}`,
+            `Calculate leg b: b = ${fmt(a)} * tan(${fmt(B)}°) = ${fmt(b)}`,
+            `Find Angle A: A = 90° - ${fmt(B)}° = ${fmt(A)}°`
           ]
         };
       }
@@ -262,9 +262,9 @@
           A,
           B,
           steps: [
-            `Calculate hypotenuse c: c = ${b} / sin(${B}°) = ${fmt(c)}`,
-            `Calculate leg a: a = ${b} / tan(${B}°) = ${fmt(a)}`,
-            `Find angle A: A = 90° - ${B}° = ${fmt(A)}°`
+            `Calculate hypotenuse c: c = ${fmt(b)} / sin(${fmt(B)}°) = ${fmt(c)}`,
+            `Calculate leg a: a = ${fmt(b)} / tan(${fmt(B)}°) = ${fmt(a)}`,
+            `Find Angle A: A = 90° - ${fmt(B)}° = ${fmt(A)}°`
           ]
         };
       }
@@ -289,9 +289,9 @@
           A,
           B,
           steps: [
-            `Calculate leg b: b = ${c} * sin(${B}°) = ${fmt(b)}`,
-            `Calculate leg a: a = ${c} * cos(${B}°) = ${fmt(a)}`,
-            `Find angle A: A = 90° - ${B}° = ${fmt(A)}°`
+            `Calculate leg b: b = ${fmt(c)} * sin(${fmt(B)}°) = ${fmt(b)}`,
+            `Calculate leg a: a = ${fmt(c)} * cos(${fmt(B)}°) = ${fmt(a)}`,
+            `Find Angle A: A = 90° - ${fmt(B)}° = ${fmt(A)}°`
           ]
         };
       }
@@ -491,8 +491,13 @@
       setOutputs(full);
       setSteps([
         ...base.steps,
-        'Area = (a * b) / 2, Perimeter = a + b + c',
-        'h = ab/c, r = (a + b - c)/2, R = c/2'
+        `Area (A) = (a * b) / 2 = (${fmt(full.a)} * ${fmt(full.b)}) / 2 = ${fmt(full.area)}`,
+        `Perimeter (P) = a + b + c = ${fmt(full.a)} + ${fmt(full.b)} + ${fmt(full.c)} = ${fmt(full.perimeter)}`,
+        `Altitude h = (a * b) / c = (${fmt(full.a)} * ${fmt(full.b)}) / ${fmt(full.c)} = ${fmt(full.h)}`,
+        `Inradius r = A / s = ${fmt(full.area)} / ${fmt(full.s)} = ${fmt(full.r)}`,
+        `Circumradius R = c / 2 = ${fmt(full.c)} / 2 = ${fmt(full.R)}`,
+        `Projection p = a² / c = ${fmt(full.a)}² / ${fmt(full.c)} = ${fmt(full.p)}`,
+        `Projection q = b² / c = ${fmt(full.b)}² / ${fmt(full.c)} = ${fmt(full.q)}`
       ]);
       drawTriangle(full);
 

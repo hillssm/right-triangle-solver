@@ -47,17 +47,6 @@ const chartRows = [
     faqs={bundle.faq}
   />
 
-  <section class="section-shell relative w-full overflow-hidden mt-4">
-    <div class="pointer-events-none absolute -left-10 -top-20 h-64 w-64 rounded-full bg-primary/14 blur-3xl"></div>
-    <div class="pointer-events-none absolute -bottom-20 right-8 h-52 w-52 rounded-full bg-tertiary/14 blur-3xl"></div>
-    <div class="relative w-full min-w-0">
-      <RightTriangleTool
-        heading={pick(home, 'toolHeading', 'Right Triangle Solver')}
-        description={pick(home, 'toolDescription', 'Enter any two legs to calculate hypotenuse, area, and perimeter instantly.')}
-      />
-    </div>
-  </section>
-
   <header class="relative z-10 flex flex-col items-center justify-center py-12 text-center sm:py-20">
     <div class="pointer-events-none absolute -top-24 -z-10 h-96 w-full bg-gradient-to-b from-primary/10 to-transparent opacity-30"></div>
     <h1 class="mx-auto max-w-4xl font-headline text-3xl font-bold tracking-tight text-on-surface drop-shadow-sm sm:text-5xl lg:text-6xl">
@@ -67,6 +56,17 @@ const chartRows = [
       Calculate hypotenuse, angles, area, and geometry instantly with our precision digital tool.
     </p>
   </header>
+
+  <section class="section-shell relative w-full overflow-hidden">
+    <div class="pointer-events-none absolute -left-10 -top-20 h-64 w-64 rounded-full bg-primary/14 blur-3xl"></div>
+    <div class="pointer-events-none absolute -bottom-20 right-8 h-52 w-52 rounded-full bg-tertiary/14 blur-3xl"></div>
+    <div class="relative w-full min-w-0">
+      <RightTriangleTool
+        heading={pick(home, 'toolHeading', 'Right Triangle Solver')}
+        description={pick(home, 'toolDescription', 'Enter any two legs to calculate hypotenuse, area, and perimeter instantly.')}
+      />
+    </div>
+  </section>
 
   <div class="mt-8">
     <HowItWorks heading={pick(home, 'howHeading', 'How Right Triangle Solver works')} />

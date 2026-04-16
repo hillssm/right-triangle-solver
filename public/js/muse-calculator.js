@@ -72,7 +72,11 @@
           c,
           A,
           B,
-          steps: ['Input mode: Leg a + Leg b.', 'c = sqrt(a^2 + b^2)', 'A = atan(a / b), B = 90 - A']
+          steps: [
+            `Calculate hypotenuse c: c = √(${a}² + ${b}²) = ${fmt(c)}`,
+            `Find angle A: A = atan(${a} / ${b}) = ${fmt(A)}°`,
+            `Find angle B: B = 90° - ${fmt(A)}° = ${fmt(B)}°`
+          ]
         };
       }
     },
@@ -95,7 +99,11 @@
           c,
           A,
           B,
-          steps: ['Input mode: Leg a + Hypotenuse c.', 'b = sqrt(c^2 - a^2)', 'A = asin(a / c), B = 90 - A']
+          steps: [
+            `Calculate leg b: b = √(${c}² - ${a}²) = ${fmt(b)}`,
+            `Find angle A: A = asin(${a} / ${c}) = ${fmt(A)}°`,
+            `Find angle B: B = 90° - ${fmt(A)}° = ${fmt(B)}°`
+          ]
         };
       }
     },
@@ -118,7 +126,11 @@
           c,
           A,
           B,
-          steps: ['Input mode: Leg b + Hypotenuse c.', 'a = sqrt(c^2 - b^2)', 'A = acos(b / c), B = 90 - A']
+          steps: [
+            `Calculate leg a: a = √(${c}² - ${b}²) = ${fmt(a)}`,
+            `Find angle A: A = acos(${b} / ${c}) = ${fmt(A)}°`,
+            `Find angle B: B = 90° - ${fmt(A)}° = ${fmt(B)}°`
+          ]
         };
       }
     },
@@ -141,7 +153,11 @@
           c,
           A,
           B,
-          steps: ['Input mode: Angle A + Leg a.', 'c = a / sin(A)', 'b = a / tan(A), B = 90 - A']
+          steps: [
+            `Calculate hypotenuse c: c = ${a} / sin(${A}°) = ${fmt(c)}`,
+            `Calculate leg b: b = ${a} / tan(${A}°) = ${fmt(b)}`,
+            `Find angle B: B = 90° - ${A}° = ${fmt(B)}°`
+          ]
         };
       }
     },
@@ -164,7 +180,11 @@
           c,
           A,
           B,
-          steps: ['Input mode: Angle A + Leg b.', 'c = b / cos(A)', 'a = b * tan(A), B = 90 - A']
+          steps: [
+            `Calculate hypotenuse c: c = ${b} / cos(${A}°) = ${fmt(c)}`,
+            `Calculate leg a: a = ${b} * tan(${A}°) = ${fmt(a)}`,
+            `Find angle B: B = 90° - ${A}° = ${fmt(B)}°`
+          ]
         };
       }
     },
@@ -187,7 +207,11 @@
           c,
           A,
           B,
-          steps: ['Input mode: Angle A + Hypotenuse c.', 'a = c * sin(A)', 'b = c * cos(A), B = 90 - A']
+          steps: [
+            `Calculate leg a: a = ${c} * sin(${A}°) = ${fmt(a)}`,
+            `Calculate leg b: b = ${c} * cos(${A}°) = ${fmt(b)}`,
+            `Find angle B: B = 90° - ${A}° = ${fmt(B)}°`
+          ]
         };
       }
     },
@@ -210,7 +234,11 @@
           c,
           A,
           B,
-          steps: ['Input mode: Angle B + Leg a.', 'c = a / cos(B)', 'b = a * tan(B), A = 90 - B']
+          steps: [
+            `Calculate hypotenuse c: c = ${a} / cos(${B}°) = ${fmt(c)}`,
+            `Calculate leg b: b = ${a} * tan(${B}°) = ${fmt(b)}`,
+            `Find angle A: A = 90° - ${B}° = ${fmt(A)}°`
+          ]
         };
       }
     },
@@ -233,7 +261,11 @@
           c,
           A,
           B,
-          steps: ['Input mode: Angle B + Leg b.', 'c = b / sin(B)', 'a = b / tan(B), A = 90 - B']
+          steps: [
+            `Calculate hypotenuse c: c = ${b} / sin(${B}°) = ${fmt(c)}`,
+            `Calculate leg a: a = ${b} / tan(${B}°) = ${fmt(a)}`,
+            `Find angle A: A = 90° - ${B}° = ${fmt(A)}°`
+          ]
         };
       }
     },
@@ -256,7 +288,11 @@
           c,
           A,
           B,
-          steps: ['Input mode: Angle B + Hypotenuse c.', 'b = c * sin(B)', 'a = c * cos(B), A = 90 - B']
+          steps: [
+            `Calculate leg b: b = ${c} * sin(${B}°) = ${fmt(b)}`,
+            `Calculate leg a: a = ${c} * cos(${B}°) = ${fmt(a)}`,
+            `Find angle A: A = 90° - ${B}° = ${fmt(A)}°`
+          ]
         };
       }
     }

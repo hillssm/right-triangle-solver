@@ -240,12 +240,16 @@ export const calculateRightTriangle = (
 
   const has = (key: CalculatorInputKey): boolean => values[key] !== undefined;
 
+  const fmtValue = (v: number) => Number(v.toFixed(4));
+
   if (has('a') && has('b')) {
     const a = values.a as number;
     const b = values.b as number;
     const c = Math.hypot(a, b);
     const alphaRad = Math.atan2(a, b);
     const betaRad = HALF_PI - alphaRad;
+    const a2 = a * a;
+    const b2 = b * b;
     return finalizeSolution({
       a,
       b,
@@ -254,11 +258,11 @@ export const calculateRightTriangle = (
       betaRad,
       providedKeys,
       combination: 'a+b',
-      formulas: ['c = sqrt(a^2 + b^2)', 'alpha = atan(a / b)', 'beta = 90 deg - alpha'],
+      formulas: ['c = sqrt(a² + b²)', 'α = atan(a / b)', 'β = 90° - α'],
       steps: [
-        'Use both legs with the Pythagorean theorem.',
-        'Find alpha from the opposite/adjacent ratio.',
-        'Compute beta from complementarity.'
+        `Calculate hypotenuse c using Pythagoras: c = √(${a}² + ${b}²) = √(${fmtValue(a2)} + ${fmtValue(b2)}) = ${fmtValue(c)}`,
+        `Find angle A using tangent: A = atan(${a} / ${b}) = ${fmtValue(toDegrees(alphaRad))}°`,
+        `Find angle B (complementary): B = 90° - ${fmtValue(toDegrees(alphaRad))}° = ${fmtValue(toDegrees(betaRad))}°`
       ]
     });
   }
@@ -277,11 +281,11 @@ export const calculateRightTriangle = (
       betaRad,
       providedKeys,
       combination: 'a+c',
-      formulas: ['b = sqrt(c^2 - a^2)', 'alpha = asin(a / c)', 'beta = 90 deg - alpha'],
+      formulas: ['b = sqrt(c² - a²)', 'α = asin(a / c)', 'β = 90° - α'],
       steps: [
-        'Recover side b by rearranging the Pythagorean identity.',
-        'Use sine to obtain alpha.',
-        'Compute beta as the complementary angle.'
+        `Calculate leg b using Pythagoras: b = √(${c}² - ${a}²) = √(${fmtValue(c * c)} - ${fmtValue(a * a)}) = ${fmtValue(b)}`,
+        `Find angle A using sine: A = asin(${a} / ${c}) = ${fmtValue(toDegrees(alphaRad))}°`,
+        `Find angle B: B = 90° - ${fmtValue(toDegrees(alphaRad))}° = ${fmtValue(toDegrees(betaRad))}°`
       ]
     });
   }
@@ -300,11 +304,11 @@ export const calculateRightTriangle = (
       betaRad,
       providedKeys,
       combination: 'b+c',
-      formulas: ['a = sqrt(c^2 - b^2)', 'alpha = acos(b / c)', 'beta = 90 deg - alpha'],
+      formulas: ['a = sqrt(c² - b²)', 'α = acos(b / c)', 'β = 90° - α'],
       steps: [
-        'Recover side a by rearranging the Pythagorean identity.',
-        'Use cosine to obtain alpha.',
-        'Compute beta as the complementary angle.'
+        `Calculate leg a using Pythagoras: a = √(${c}² - ${b}²) = √(${fmtValue(c * c)} - ${fmtValue(b * b)}) = ${fmtValue(a)}`,
+        `Find angle A using cosine: A = acos(${b} / ${c}) = ${fmtValue(toDegrees(alphaRad))}°`,
+        `Find angle B: B = 90° - ${fmtValue(toDegrees(alphaRad))}° = ${fmtValue(toDegrees(betaRad))}°`
       ]
     });
   }
@@ -328,11 +332,11 @@ export const calculateRightTriangle = (
       betaRad,
       providedKeys,
       combination: 'a+alpha',
-      formulas: ['c = a / sin(alpha)', 'b = a / tan(alpha)', 'beta = 90 deg - alpha'],
+      formulas: ['c = a / sin(α)', 'b = a / tan(α)', 'β = 90° - α'],
       steps: [
-        'Use side a with angle alpha via sine to recover c.',
-        'Use tangent to recover b.',
-        'Compute beta from complementarity.'
+        `Calculate hypotenuse c: c = ${a} / sin(${fmtValue(toDegrees(alphaRad))}°) = ${fmtValue(c)}`,
+        `Calculate leg b: b = ${a} / tan(${fmtValue(toDegrees(alphaRad))}°) = ${fmtValue(b)}`,
+        `Find angle B: B = 90° - ${fmtValue(toDegrees(alphaRad))}° = ${fmtValue(toDegrees(betaRad))}°`
       ]
     });
   }
@@ -340,6 +344,7 @@ export const calculateRightTriangle = (
   if (has('a') && has('beta')) {
     const a = values.a as number;
     const betaRad = beta as number;
+    const alphaRad = HALF_PI - betaRad;
     const cosine = Math.cos(betaRad);
     const tangent = Math.tan(betaRad);
     if (Math.abs(cosine) < EPSILON) {
@@ -347,7 +352,6 @@ export const calculateRightTriangle = (
     }
     const c = a / cosine;
     const b = a * tangent;
-    const alphaRad = HALF_PI - betaRad;
     return finalizeSolution({
       a,
       b,
@@ -356,11 +360,11 @@ export const calculateRightTriangle = (
       betaRad,
       providedKeys,
       combination: 'a+beta',
-      formulas: ['c = a / cos(beta)', 'b = a * tan(beta)', 'alpha = 90 deg - beta'],
+      formulas: ['c = a / cos(β)', 'b = a * tan(β)', 'α = 90° - β'],
       steps: [
-        'Use side a with angle beta via cosine to recover c.',
-        'Use tangent to recover side b.',
-        'Compute alpha from complementarity.'
+        `Calculate hypotenuse c: c = ${a} / cos(${fmtValue(toDegrees(betaRad))}°) = ${fmtValue(c)}`,
+        `Calculate leg b: b = ${a} * tan(${fmtValue(toDegrees(betaRad))}°) = ${fmtValue(b)}`,
+        `Find angle A: A = 90° - ${fmtValue(toDegrees(betaRad))}° = ${fmtValue(toDegrees(alphaRad))}°`
       ]
     });
   }
@@ -368,6 +372,7 @@ export const calculateRightTriangle = (
   if (has('b') && has('alpha')) {
     const b = values.b as number;
     const alphaRad = alpha as number;
+    const betaRad = HALF_PI - alphaRad;
     const cosine = Math.cos(alphaRad);
     const tangent = Math.tan(alphaRad);
     if (Math.abs(cosine) < EPSILON) {
@@ -375,7 +380,6 @@ export const calculateRightTriangle = (
     }
     const c = b / cosine;
     const a = b * tangent;
-    const betaRad = HALF_PI - alphaRad;
     return finalizeSolution({
       a,
       b,
@@ -384,11 +388,11 @@ export const calculateRightTriangle = (
       betaRad,
       providedKeys,
       combination: 'b+alpha',
-      formulas: ['c = b / cos(alpha)', 'a = b * tan(alpha)', 'beta = 90 deg - alpha'],
+      formulas: ['c = b / cos(α)', 'a = b * tan(α)', 'β = 90° - α'],
       steps: [
-        'Use side b with angle alpha via cosine to recover c.',
-        'Use tangent to recover side a.',
-        'Compute beta from complementarity.'
+        `Calculate hypotenuse c: c = ${b} / cos(${fmtValue(toDegrees(alphaRad))}°) = ${fmtValue(c)}`,
+        `Calculate leg a: a = ${b} * tan(${fmtValue(toDegrees(alphaRad))}°) = ${fmtValue(a)}`,
+        `Find angle B: B = 90° - ${fmtValue(toDegrees(alphaRad))}° = ${fmtValue(toDegrees(betaRad))}°`
       ]
     });
   }
@@ -396,6 +400,7 @@ export const calculateRightTriangle = (
   if (has('b') && has('beta')) {
     const b = values.b as number;
     const betaRad = beta as number;
+    const alphaRad = HALF_PI - betaRad;
     const sine = Math.sin(betaRad);
     const tangent = Math.tan(betaRad);
     if (Math.abs(sine) < EPSILON || Math.abs(tangent) < EPSILON) {
@@ -403,7 +408,6 @@ export const calculateRightTriangle = (
     }
     const c = b / sine;
     const a = b / tangent;
-    const alphaRad = HALF_PI - betaRad;
     return finalizeSolution({
       a,
       b,
@@ -412,11 +416,11 @@ export const calculateRightTriangle = (
       betaRad,
       providedKeys,
       combination: 'b+beta',
-      formulas: ['c = b / sin(beta)', 'a = b / tan(beta)', 'alpha = 90 deg - beta'],
+      formulas: ['c = b / sin(β)', 'a = b / tan(β)', 'α = 90° - β'],
       steps: [
-        'Use side b with angle beta via sine to recover c.',
-        'Use tangent to recover side a.',
-        'Compute alpha from complementarity.'
+        `Calculate hypotenuse c: c = ${b} / sin(${fmtValue(toDegrees(betaRad))}°) = ${fmtValue(c)}`,
+        `Calculate leg a: a = ${b} / tan(${fmtValue(toDegrees(betaRad))}°) = ${fmtValue(a)}`,
+        `Find angle A: A = 90° - ${fmtValue(toDegrees(betaRad))}° = ${fmtValue(toDegrees(alphaRad))}°`
       ]
     });
   }
@@ -424,9 +428,9 @@ export const calculateRightTriangle = (
   if (has('c') && has('alpha')) {
     const c = values.c as number;
     const alphaRad = alpha as number;
+    const betaRad = HALF_PI - alphaRad;
     const a = c * Math.sin(alphaRad);
     const b = c * Math.cos(alphaRad);
-    const betaRad = HALF_PI - alphaRad;
     return finalizeSolution({
       a,
       b,
@@ -435,11 +439,11 @@ export const calculateRightTriangle = (
       betaRad,
       providedKeys,
       combination: 'c+alpha',
-      formulas: ['a = c * sin(alpha)', 'b = c * cos(alpha)', 'beta = 90 deg - alpha'],
+      formulas: ['a = c * sin(α)', 'b = c * cos(α)', 'β = 90° - α'],
       steps: [
-        'Project c onto side a using sine.',
-        'Project c onto side b using cosine.',
-        'Compute beta as the complementary angle.'
+        `Calculate leg a: a = ${c} * sin(${fmtValue(toDegrees(alphaRad))}°) = ${fmtValue(a)}`,
+        `Calculate leg b: b = ${c} * cos(${fmtValue(toDegrees(alphaRad))}°) = ${fmtValue(b)}`,
+        `Find angle B: B = 90° - ${fmtValue(toDegrees(alphaRad))}° = ${fmtValue(toDegrees(betaRad))}°`
       ]
     });
   }
@@ -447,9 +451,9 @@ export const calculateRightTriangle = (
   if (has('c') && has('beta')) {
     const c = values.c as number;
     const betaRad = beta as number;
+    const alphaRad = HALF_PI - betaRad;
     const b = c * Math.sin(betaRad);
     const a = c * Math.cos(betaRad);
-    const alphaRad = HALF_PI - betaRad;
     return finalizeSolution({
       a,
       b,
@@ -458,15 +462,15 @@ export const calculateRightTriangle = (
       betaRad,
       providedKeys,
       combination: 'c+beta',
-      formulas: ['b = c * sin(beta)', 'a = c * cos(beta)', 'alpha = 90 deg - beta'],
+      formulas: ['b = c * sin(β)', 'a = c * cos(β)', 'α = 90° - β'],
       steps: [
-        'Project c onto side b using sine.',
-        'Project c onto side a using cosine.',
-        'Compute alpha as the complementary angle.'
+        `Calculate leg b: b = ${c} * sin(${fmtValue(toDegrees(betaRad))}°) = ${fmtValue(b)}`,
+        `Calculate leg a: a = ${c} * cos(${fmtValue(toDegrees(betaRad))}°) = ${fmtValue(a)}`,
+        `Find angle A: A = 90° - ${fmtValue(toDegrees(betaRad))}° = ${fmtValue(toDegrees(alphaRad))}°`
       ]
     });
   }
 
   const chosen = providedKeys.join(' + ');
   throw new Error(`The combination "${chosen}" is not supported for right-triangle calculations.`);
-};;
+};

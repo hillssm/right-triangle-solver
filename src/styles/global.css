@@ -300,7 +300,10 @@
   }
 
   .lux-data-cell strong {
-    @apply text-sm text-on-surface math-textbook;
+    @apply text-sm text-on-surface;
+    font-family: var(--font-headline);
+    font-style: italic;
+    font-size: 1.05em;
     letter-spacing: 0.01em;
   }
 

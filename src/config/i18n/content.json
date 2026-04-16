@@ -1,13 +1,13 @@
 {
   "en": {
     "site": {
-      "title": "Right Triangle solver",
+      "title": "right triangle solver",
       "description": "Solve right triangles quickly with clear formulas, visual guidance, and practical examples."
     },
     "home": {
       "title": "Right Triangle solver | Instant Geometry Helper",
       "description": "Find missing sides, area, and perimeter in seconds with an accessible right triangle calculator.",
-      "heading": "Right Triangle solver",
+      "heading": "right triangle solver",
       "intro": "Calculate missing values fast, review formulas, and validate your geometry work with confidence.",
       "toolHeading": "Right Triangle calculator",
       "toolDescription": "Enter any two legs to calculate hypotenuse, area, and perimeter instantly.",

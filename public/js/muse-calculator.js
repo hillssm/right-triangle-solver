@@ -485,5 +485,5 @@
   history = readHistory();
   renderHistory();
   setModeLabels();
-  resetSolver();
+  resetCalculator();
 })();

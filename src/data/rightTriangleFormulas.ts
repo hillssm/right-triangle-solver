@@ -50,13 +50,13 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     slug: 'pythagorean-theorem',
     title: 'Pythagorean Theorem',
     category: 'Core Side Relations',
-    expression: 'c = sqrt(a^2 + b^2)',
+    expression: 'c = sqrt(a² + b²)',
     description:
       'Find the hypotenuse when both legs are known. This is the primary identity for every right triangle.',
     variables: ['a = leg opposite angle A', 'b = leg opposite angle B', 'c = hypotenuse'],
     notes: [
       'Works only for right triangles.',
-      'Equivalent base identity: a^2 + b^2 = c^2.'
+      'Equivalent base identity: a² + b² = c².'
     ],
     calculator: {
       kind: 'pythagorean_c',
@@ -72,7 +72,7 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     slug: 'leg-from-hypotenuse-and-other-leg',
     title: 'Missing Leg From c and a',
     category: 'Core Side Relations',
-    expression: 'b = sqrt(c^2 - a^2)',
+    expression: 'b = sqrt(c² - a²)',
     description:
       'Find leg b when hypotenuse c and the other leg a are known.',
     variables: ['a = known leg', 'b = unknown leg', 'c = hypotenuse'],
@@ -94,7 +94,7 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     slug: 'other-leg-from-hypotenuse-and-leg',
     title: 'Missing Leg From c and b',
     category: 'Core Side Relations',
-    expression: 'a = sqrt(c^2 - b^2)',
+    expression: 'a = sqrt(c² - b²)',
     description:
       'Find leg a when hypotenuse c and leg b are known.',
     variables: ['a = unknown leg', 'b = known leg', 'c = hypotenuse'],
@@ -318,8 +318,8 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
       'Compute altitude from the right-angle vertex to the hypotenuse.',
     variables: ['a = leg', 'b = leg', 'c = hypotenuse', 'h = altitude'],
     notes: [
-      'Equivalent identity: h^2 = p * q where p and q are hypotenuse segments.',
-      'Use c = sqrt(a^2 + b^2) when needed.'
+      'Equivalent identity: h² = p * q where p and q are hypotenuse segments.',
+      'Use c = sqrt(a² + b²) when needed.'
     ],
     calculator: {
       kind: 'altitude',
@@ -336,7 +336,7 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     slug: 'projection-of-a-on-hypotenuse',
     title: 'Hypotenuse Segment p',
     category: 'Derived Geometry',
-    expression: 'p = a^2 / c',
+    expression: 'p = a² / c',
     description:
       'Projection of leg a onto hypotenuse c.',
     variables: ['a = leg', 'c = hypotenuse', 'p = projection segment'],
@@ -358,7 +358,7 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     slug: 'projection-of-b-on-hypotenuse',
     title: 'Hypotenuse Segment q',
     category: 'Derived Geometry',
-    expression: 'q = b^2 / c',
+    expression: 'q = b² / c',
     description:
       'Projection of leg b onto hypotenuse c.',
     variables: ['b = leg', 'c = hypotenuse', 'q = projection segment'],

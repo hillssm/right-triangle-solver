@@ -41,7 +41,7 @@ const defaultStatus = `Enter inputs to calculate ${formula.calculator.outputLabe
 >
   <h2 class="text-2xl font-semibold">{formula.title} Calculator</h2>
   <p class="mt-2 text-sm text-on-surface-variant">
-    This calculator follows <span class="font-mono text-primary">{formula.expression}</span> and returns
+    This calculator follows <span class="text-primary math-textbook">{formula.expression}</span> and returns
     <strong class="font-semibold text-on-surface"> {formula.calculator.outputLabel}</strong>.
   </p>
 
@@ -373,7 +373,7 @@ const defaultStatus = `Enter inputs to calculate ${formula.calculator.outputLabe
           const li = document.createElement('li');
           li.className = 'flex items-start gap-3 rounded-lg border border-outline-variant/10 bg-surface-container-low/40 p-3 text-sm transition-colors hover:bg-surface-container-low/60';
           const num = (i + 1).toString().padStart(2, '0');
-          li.innerHTML = `<span class="mt-0.5 font-mono text-[10px] text-primary/60 flex-shrink-0">${num}</span><span class="text-on-surface-variant">${text}</span>`;
+          li.innerHTML = `<span class="mt-0.5 font-mono text-[10px] text-primary/60 flex-shrink-0">${num}</span><span class="text-on-surface-variant math-textbook">${text}</span>`;
           fragment.append(li);
         });
         stepsEl.replaceChildren(fragment);

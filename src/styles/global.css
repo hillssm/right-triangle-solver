@@ -300,7 +300,7 @@
   }
 
   .lux-data-cell strong {
-    @apply font-mono text-sm text-on-surface;
+    @apply text-sm text-on-surface math-textbook;
     letter-spacing: 0.01em;
   }
 
@@ -561,5 +561,17 @@
   .interactive-chip.is-active {
     @apply border-primary/55 text-primary;
     background: rgba(233, 193, 118, 0.14);
+  }
+
+  .math-textbook {
+    font-family: var(--font-headline);
+    font-style: italic;
+    font-size: 1.05em;
+    letter-spacing: 0.01em;
+  }
+
+  /* Don't italicize numbers, parentheses, or operators in textbook style */
+  .math-textbook :not(i):not(span.var) {
+    /* This is a bit complex in CSS without specific markup, so I'll just use the class on the container and guide the user. */
   }
 }

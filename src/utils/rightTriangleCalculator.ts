@@ -63,8 +63,8 @@ const COMMON_DERIVED_FORMULAS = [
   's = P / 2',
   'r = A / s = (a + b - c) / 2',
   'R = c / 2',
-  'p = a^2 / c',
-  'q = b^2 / c'
+  'p = a² / c',
+  'q = b² / c'
 ];
 
 const toRadians = (value: number, mode: AngleMode): number => (mode === 'deg' ? (value * Math.PI) / 180 : value);

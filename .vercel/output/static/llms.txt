@@ -1,5 +1,0 @@
-Site: https://righttrianglesolver.app
-Contact: hello@righttrianglesolver.app
-Sitemap: https://righttrianglesolver.app/sitemap-index.xml
-Policy: Automated systems may index and summarize publicly available educational content from this site, but they must preserve attribution and must not imply endorsement.
-Allow: /

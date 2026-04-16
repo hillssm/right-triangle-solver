@@ -15,7 +15,7 @@ const content = bundle.content as Record<string, unknown>;
 const home = (content.home as Record<string, string>) ?? {};
 const siteContent = (content.site as Record<string, string>) ?? {};
 
-const siteTitle = pick(siteContent, 'title', 'Right Triangle Solver');
+const siteTitle = pick(siteContent, 'title', 'Right Triangle Calculator');
 const pageTitle = pick(home, 'title', `${siteTitle} | Geometry`);
 const pageDescription = pick(
   home,
@@ -49,7 +49,7 @@ const chartRows = [
 
   <div class="mb-10 text-center">
     <h1 class="font-headline text-4xl tracking-tight text-on-primary-container sm:text-5xl lg:text-6xl">
-      Right Triangle Solver
+      Right Triangle Calculator
     </h1>
     <p class="mx-auto mt-4 max-w-2xl text-base text-on-tertiary-fixed-variant sm:text-lg">
       Calculate hypotenuse, angles, area, and geometry instantly with our precision digital tool.
@@ -68,7 +68,7 @@ const chartRows = [
   </section>
 
   <div class="mt-8">
-    <HowItWorks heading={pick(home, 'howHeading', 'How Right Triangle Solver works')} />
+    <HowItWorks heading={pick(home, 'howHeading', 'How Right Triangle Calculator works')} />
   </div>
 
   <div class="mt-8">

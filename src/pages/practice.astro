@@ -9,7 +9,7 @@ const bundle = getTranslations(locale);
 const content = bundle.content as Record<string, unknown>;
 const siteContent = (content.site as Record<string, string>) ?? {};
 
-const siteTitle = pick(siteContent, 'title', 'Right Triangle Solver');
+const siteTitle = pick(siteContent, 'title', 'Right Triangle Calculator');
 const pageTitle = `Practice Mode | ${siteTitle}`;
 const pageDescription =
   'Train with right triangle challenges in an interactive practice workspace with progress and keypad input.';

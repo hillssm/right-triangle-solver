@@ -1,5 +1,5 @@
 ---
-title: "Sanity-Checking Solver Output"
+title: "Sanity-Checking Calculator Output"
 description: "How to quickly detect impossible outputs in right-triangle calculations."
 image: "/images/og-right-triangle.svg"
 date: "2026-04-02"

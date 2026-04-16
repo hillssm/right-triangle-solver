@@ -1,5 +1,5 @@
 ---
-title: "Common Input Mistakes in Triangle Solvers"
+title: "Common Input Mistakes in Triangle Calculators"
 description: "Avoid avoidable errors when entering leg values and interpreting outputs."
 image: "/images/og-right-triangle.svg"
 date: "2026-04-10"

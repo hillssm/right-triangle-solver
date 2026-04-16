@@ -1,7 +1,7 @@
 export type AngleMode = 'deg' | 'rad';
-export type SolverInputKey = 'a' | 'b' | 'c' | 'alpha' | 'beta';
+export type CalculatorInputKey = 'a' | 'b' | 'c' | 'alpha' | 'beta';
 
-type RawNumericInputs = Partial<Record<SolverInputKey, number>>;
+type RawNumericInputs = Partial<Record<CalculatorInputKey, number>>;
 
 export type SupportedCombination =
   | 'a+b'
@@ -33,13 +33,13 @@ export type RightTriangleSolution = {
   ratioA: number;
   ratioB: number;
   tangentAlpha: number;
-  providedKeys: SolverInputKey[];
+  providedKeys: CalculatorInputKey[];
   combination: SupportedCombination;
   formulas: string[];
   steps: string[];
 };
 
-export const SOLVER_INPUT_KEYS: SolverInputKey[] = ['a', 'b', 'c', 'alpha', 'beta'];
+export const CALCULATOR_INPUT_KEYS: CalculatorInputKey[] = ['a', 'b', 'c', 'alpha', 'beta'];
 export const VALID_COMBINATIONS: SupportedCombination[] = [
   'a+b',
   'a+c',
@@ -74,7 +74,7 @@ const clampTrigInput = (value: number): number => Math.min(1, Math.max(-1, value
 
 const normalizeProvidedInputs = (inputs: RawNumericInputs): RawNumericInputs => {
   const normalized: RawNumericInputs = {};
-  for (const key of SOLVER_INPUT_KEYS) {
+  for (const key of CALCULATOR_INPUT_KEYS) {
     const value = inputs[key];
     if (typeof value === 'number' && Number.isFinite(value)) {
       normalized[key] = value;
@@ -89,7 +89,7 @@ const finalizeSolution = (payload: {
   c: number;
   alphaRad: number;
   betaRad: number;
-  providedKeys: SolverInputKey[];
+  providedKeys: CalculatorInputKey[];
   combination: SupportedCombination;
   formulas: string[];
   steps: string[];
@@ -186,12 +186,12 @@ export const formatAngleForMode = (angleInRadians: number, mode: AngleMode, digi
   return Number(value).toFixed(digits);
 };
 
-export const solveRightTriangle = (
+export const calculateRightTriangle = (
   inputs: RawNumericInputs,
   angleMode: AngleMode = 'deg'
 ): RightTriangleSolution => {
   const values = normalizeProvidedInputs(inputs);
-  const providedKeys = SOLVER_INPUT_KEYS.filter((key) => values[key] !== undefined);
+  const providedKeys = CALCULATOR_INPUT_KEYS.filter((key) => values[key] !== undefined);
   const providedSideCount = (['a', 'b', 'c'] as const).filter((key) => values[key] !== undefined).length;
 
   if (providedKeys.length !== 2) {
@@ -238,7 +238,7 @@ export const solveRightTriangle = (
     throw new Error('Hypotenuse c must be larger than side b.');
   }
 
-  const has = (key: SolverInputKey): boolean => values[key] !== undefined;
+  const has = (key: CalculatorInputKey): boolean => values[key] !== undefined;
 
   if (has('a') && has('b')) {
     const a = values.a as number;
@@ -468,5 +468,5 @@ export const solveRightTriangle = (
   }
 
   const chosen = providedKeys.join(' + ');
-  throw new Error(`The combination "${chosen}" is not supported for right-triangle solving.`);
-};
+  throw new Error(`The combination "${chosen}" is not supported for right-triangle calculations.`);
+};;

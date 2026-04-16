@@ -174,13 +174,13 @@ const { heading, description } = Astro.props;
   <script>
     import {
       parseMathExpression,
-      solveRightTriangle,
+      calculateRightTriangle,
       formatAngleForMode,
-      SOLVER_INPUT_KEYS,
+      CALCULATOR_INPUT_KEYS,
       type AngleMode,
       type RightTriangleSolution,
-      type SolverInputKey
-    } from 'src/utils/rightTriangleSolver';
+      type CalculatorInputKey
+    } from 'src/utils/rightTriangleCalculator';
 
     type UnitOption = '' | 'm' | 'cm' | 'mm' | 'ft' | 'in';
 
@@ -224,14 +224,14 @@ const { heading, description } = Astro.props;
       listEl.replaceChildren(fragment);
     };
 
-    const parsePreset = (rawPreset: string): Partial<Record<SolverInputKey, string>> => {
-      const values: Partial<Record<SolverInputKey, string>> = {};
-      for (const chunk of rawPreset.split(',')) {
-        const [rawKey, rawValue] = chunk.split(':');
-        const key = rawKey?.trim() as SolverInputKey | undefined;
-        const value = rawValue?.trim();
-        if (key && value && SOLVER_INPUT_KEYS.includes(key)) values[key] = value;
-      }
+      const parsePreset = (rawPreset: string): Partial<Record<CalculatorInputKey, string>> => {
+        const values: Partial<Record<CalculatorInputKey, string>> = {};
+        for (const chunk of rawPreset.split(',')) {
+          const [rawKey, rawValue] = chunk.split(':');
+          const key = rawKey?.trim() as CalculatorInputKey | undefined;
+          const value = rawValue?.trim();
+          if (key && value && CALCULATOR_INPUT_KEYS.includes(key)) values[key] = value;
+        }
       return values;
     };
 
@@ -276,65 +276,65 @@ const { heading, description } = Astro.props;
 
       if (!form || !statusEl || !formulaListEl || !stepListEl || !unitSelect || !resetButton || !copyButton || !pathEl || !fillEl || !altitudeLineEl || !labelA || !labelB || !labelC || !labelAngleAlpha || !labelAngleBeta || !labelH || Object.values(resultEls).some((el) => !el)) return;
 
-      const inputRefs = {
-        a: form.querySelector('input[name="a"]'),
-        b: form.querySelector('input[name="b"]'),
-        c: form.querySelector('input[name="c"]'),
-        alpha: form.querySelector('input[name="alpha"]'),
-        beta: form.querySelector('input[name="beta"]')
-      } satisfies Record<SolverInputKey, HTMLInputElement | null>;
+        const inputRefs = {
+          a: form.querySelector('input[name="a"]'),
+          b: form.querySelector('input[name="b"]'),
+          c: form.querySelector('input[name="c"]'),
+          alpha: form.querySelector('input[name="alpha"]'),
+          beta: form.querySelector('input[name="beta"]')
+        } satisfies Record<CalculatorInputKey, HTMLInputElement | null>;
 
-      const errorRefs = {
-        a: form.querySelector('[data-error-for="a"]'),
-        b: form.querySelector('[data-error-for="b"]'),
-        c: form.querySelector('[data-error-for="c"]'),
-        alpha: form.querySelector('[data-error-for="alpha"]'),
-        beta: form.querySelector('[data-error-for="beta"]')
-      } satisfies Record<SolverInputKey, HTMLElement | null>;
+        const errorRefs = {
+          a: form.querySelector('[data-error-for="a"]'),
+          b: form.querySelector('[data-error-for="b"]'),
+          c: form.querySelector('[data-error-for="c"]'),
+          alpha: form.querySelector('[data-error-for="alpha"]'),
+          beta: form.querySelector('[data-error-for="beta"]')
+        } satisfies Record<CalculatorInputKey, HTMLElement | null>;
 
-      const originRefs = {
-        a: section.querySelector('[data-origin-a]'),
-        b: section.querySelector('[data-origin-b]'),
-        c: section.querySelector('[data-origin-c]'),
-        alpha: section.querySelector('[data-origin-alpha]'),
-        beta: section.querySelector('[data-origin-beta]')
-      } satisfies Record<SolverInputKey, HTMLElement | null>;
+        const originRefs = {
+          a: section.querySelector('[data-origin-a]'),
+          b: section.querySelector('[data-origin-b]'),
+          c: section.querySelector('[data-origin-c]'),
+          alpha: section.querySelector('[data-origin-alpha]'),
+          beta: section.querySelector('[data-origin-beta]')
+        } satisfies Record<CalculatorInputKey, HTMLElement | null>;
 
-      if (Object.values(inputRefs).some((el) => !el) || Object.values(errorRefs).some((el) => !el) || Object.values(originRefs).some((el) => !el)) return;
+        if (Object.values(inputRefs).some((el) => !el) || Object.values(errorRefs).some((el) => !el) || Object.values(originRefs).some((el) => !el)) return;
 
-      const inputs = inputRefs as Record<SolverInputKey, HTMLInputElement>;
-      const errors = errorRefs as Record<SolverInputKey, HTMLElement>;
-      const origins = originRefs as Record<SolverInputKey, HTMLElement>;
-      const r = resultEls as Record<string, HTMLElement>;
+        const inputs = inputRefs as Record<CalculatorInputKey, HTMLInputElement>;
+        const errors = errorRefs as Record<CalculatorInputKey, HTMLElement>;
+        const origins = originRefs as Record<CalculatorInputKey, HTMLElement>;
+        const r = resultEls as Record<string, HTMLElement>;
 
-      let angleMode: AngleMode = 'deg';
-      let unit: UnitOption = '';
-      let lastSolution: RightTriangleSolution | null = null;
+        let angleMode: AngleMode = 'deg';
+        let unit: UnitOption = '';
+        let lastSolution: RightTriangleSolution | null = null;
 
-      const getFilledCount = () => SOLVER_INPUT_KEYS.filter((key) => inputs[key].value.trim().length > 0).length;
+        const getFilledCount = () => CALCULATOR_INPUT_KEYS.filter((key) => inputs[key].value.trim().length > 0).length;
 
       const setStatus = (message: string, isError = false) => {
         statusEl.textContent = message;
         statusEl.classList.toggle('text-error', isError);
       };
 
-      const setFieldError = (key: SolverInputKey, message = '') => {
-        errors[key].textContent = message;
-        inputs[key].setAttribute('aria-invalid', message ? 'true' : 'false');
-      };
+        const setFieldError = (key: CalculatorInputKey, message = '') => {
+          errors[key].textContent = message;
+          inputs[key].setAttribute('aria-invalid', message ? 'true' : 'false');
+        };
 
-      const clearFieldErrors = () => {
-        for (const key of SOLVER_INPUT_KEYS) setFieldError(key, '');
-      };
+        const clearFieldErrors = () => {
+          for (const key of CALCULATOR_INPUT_KEYS) setFieldError(key, '');
+        };
 
-      const setOriginState = (provided: SolverInputKey[] | null) => {
-        for (const key of SOLVER_INPUT_KEYS) {
-          const entered = provided ? provided.includes(key) : false;
-          origins[key].textContent = provided ? (entered ? 'entered' : 'computed') : '-';
-          origins[key].classList.toggle('text-primary', entered);
-          origins[key].classList.toggle('text-outline', !entered);
-        }
-      };
+        const setOriginState = (provided: CalculatorInputKey[] | null) => {
+          for (const key of CALCULATOR_INPUT_KEYS) {
+            const entered = provided ? provided.includes(key) : false;
+            origins[key].textContent = provided ? (entered ? 'entered' : 'computed') : '-';
+            origins[key].classList.toggle('text-primary', entered);
+            origins[key].classList.toggle('text-outline', !entered);
+          }
+        };
 
       const setEmptyResults = () => {
         for (const key of ['a', 'b', 'c', 'A', 'B', 'area', 'perimeter', 'h', 's', 'r', 'R', 'p', 'q', 'ratioA', 'ratioB', 'tanA']) r[key].textContent = '-';
@@ -435,14 +435,14 @@ const { heading, description } = Astro.props;
         renderListItems(stepListEl, solution.steps, true);
         lastSolution = solution;
       };
-      const updateUrlState = () => {
-        const params = new URLSearchParams(window.location.search);
-        const map: Record<SolverInputKey, string> = { a: 'a', b: 'b', c: 'c', alpha: 'A', beta: 'B' };
-        for (const key of SOLVER_INPUT_KEYS) {
-          const value = inputs[key].value.trim();
-          if (value) params.set(map[key], value);
-          else params.delete(map[key]);
-        }
+        const updateUrlState = () => {
+          const params = new URLSearchParams(window.location.search);
+          const map: Record<CalculatorInputKey, string> = { a: 'a', b: 'b', c: 'c', alpha: 'A', beta: 'B' };
+          for (const key of CALCULATOR_INPUT_KEYS) {
+            const value = inputs[key].value.trim();
+            if (value) params.set(map[key], value);
+            else params.delete(map[key]);
+          }
         if (angleMode === 'deg') params.delete('mode');
         else params.set('mode', angleMode);
         if (unit) params.set('unit', unit);
@@ -451,12 +451,12 @@ const { heading, description } = Astro.props;
         window.history.replaceState({}, '', query ? `${window.location.pathname}?${query}` : window.location.pathname);
       };
 
-      const readValues = () => {
-        const values: Partial<Record<SolverInputKey, number>> = {};
-        let hasAnyError = false;
+        const readValues = () => {
+          const values: Partial<Record<CalculatorInputKey, number>> = {};
+          let hasAnyError = false;
 
-        for (const key of SOLVER_INPUT_KEYS) {
-          const raw = inputs[key].value.trim();
+          for (const key of CALCULATOR_INPUT_KEYS) {
+            const raw = inputs[key].value.trim();
           if (!raw) {
             setFieldError(key, '');
             continue;
@@ -479,10 +479,10 @@ const { heading, description } = Astro.props;
         return { values, hasAnyError };
       };
 
-      const updatePresetState = () => {
-        const isPresetActive = (preset: Partial<Record<SolverInputKey, string>>) => {
-          for (const key of SOLVER_INPUT_KEYS) {
-            const p = preset[key] ?? '';
+        const updatePresetState = () => {
+          const isPresetActive = (preset: Partial<Record<CalculatorInputKey, string>>) => {
+            for (const key of CALCULATOR_INPUT_KEYS) {
+              const p = preset[key] ?? '';
             const c = inputs[key].value.trim();
             if (!p && c) return false;
             if (!p) continue;
@@ -513,12 +513,12 @@ const { heading, description } = Astro.props;
         }
 
         try {
-          const solution = solveRightTriangle(values, angleMode);
-          renderSolution(solution);
-          const readableCase = solution.combination.replace('+', ' + ').replace('alpha', 'A').replace('beta', 'B');
-          setStatus(`Solved from ${readableCase}.`, false);
-        } catch (error) {
-          setStatus(error instanceof Error ? error.message : 'Unable to solve with these inputs.', true);
+            const solution = calculateRightTriangle(values, angleMode);
+            renderSolution(solution);
+            const readableCase = solution.combination.replace('+', ' + ').replace('alpha', 'A').replace('beta', 'B');
+            setStatus(`Solved from ${readableCase}.`, false);
+          } catch (error) {
+            setStatus(error instanceof Error ? error.message : 'Unable to solve with these inputs.', true);
           setEmptyResults();
         }
 
@@ -538,7 +538,7 @@ const { heading, description } = Astro.props;
         angleMode = 'deg';
         unit = '';
         unitSelect.value = '';
-        for (const key of SOLVER_INPUT_KEYS) {
+        for (const key of CALCULATOR_INPUT_KEYS) {
           inputs[key].value = '';
           setFieldError(key, '');
         }
@@ -599,7 +599,7 @@ const { heading, description } = Astro.props;
         if (mode === 'deg' || mode === 'rad') angleMode = mode;
         if (urlUnit && UNIT_OPTIONS.includes(urlUnit as UnitOption)) unit = urlUnit as UnitOption;
 
-        const map: Array<[string, SolverInputKey]> = [['a', 'a'], ['b', 'b'], ['c', 'c'], ['A', 'alpha'], ['B', 'beta']];
+        const map: Array<[string, CalculatorInputKey]> = [['a', 'a'], ['b', 'b'], ['c', 'c'], ['A', 'alpha'], ['B', 'beta']];
         let hasAny = false;
         for (const [param, key] of map) {
           const value = params.get(param)?.trim() ?? '';
@@ -627,7 +627,7 @@ const { heading, description } = Astro.props;
         solveFromInputs();
       });
 
-      for (const key of SOLVER_INPUT_KEYS) {
+      for (const key of CALCULATOR_INPUT_KEYS) {
         inputs[key].addEventListener('input', () => {
           setFieldError(key, '');
           const filled = getFilledCount();
@@ -654,7 +654,7 @@ const { heading, description } = Astro.props;
       for (const button of presetButtons) {
         button.addEventListener('click', () => {
           const preset = parsePreset(button.getAttribute('data-preset') || '');
-          for (const key of SOLVER_INPUT_KEYS) {
+          for (const key of CALCULATOR_INPUT_KEYS) {
             inputs[key].value = preset[key] ?? '';
             setFieldError(key, '');
           }

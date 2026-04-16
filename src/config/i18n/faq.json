@@ -1,8 +1,8 @@
 {
   "en": [
     {
-      "question": "What values does this solver calculate?",
-      "answer": "Given two legs, the tool computes hypotenuse, area, and perimeter using standard right-triangle formulas.",
+      "question": "What values does this calculator compute?",
+      "answer": "Given two input values, the tool computes hypotenuse, area, and perimeter using standard right-triangle formulas.",
       "display": true
     },
     {

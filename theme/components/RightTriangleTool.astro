@@ -209,7 +209,8 @@ const { heading, description } = Astro.props;
       const fragment = document.createDocumentFragment();
       items.forEach((item, index) => {
         const li = document.createElement('li');
-        const text = item.replace(/alpha/g, 'A').replace(/beta/g, 'B');
+        // Handle both alpha/beta words and the Greek letters α/β
+        const text = item.replace(/alpha|α/g, 'A').replace(/beta|β/g, 'B');
         
         if (isStep) {
           li.className = 'rounded-xl border border-outline-variant/10 bg-surface-container-lowest/40 p-3 text-sm text-on-surface-variant transition-colors hover:border-primary/20 hover:bg-surface-container-lowest/60 flex items-start gap-3';
@@ -614,13 +615,13 @@ const { heading, description } = Astro.props;
         updatePresetState();
 
         const filled = getFilledCount();
-        if (hasAny && filled === 2) solveFromInputs();
+        if (hasAny && filled >= 2) solveFromInputs();
         else if (!hasAny || filled === 0) {
           setEmptyResults();
           setStatus('Enter any 2 valid right-triangle values.', false);
         } else {
           setEmptyResults();
-          setStatus('Enter exactly 2 values to solve.', true);
+          setStatus('Enter more values to solve.', true);
         }
       };
 
@@ -633,14 +634,19 @@ const { heading, description } = Astro.props;
         inputs[key].addEventListener('input', () => {
           setFieldError(key, '');
           const filled = getFilledCount();
-          if (filled === 2) {
+          if (filled >= 2) {
             solveFromInputs();
             return;
           }
-          setEmptyResults();
-          if (filled === 0) setStatus('Enter any 2 valid right-triangle values.', false);
-          else if (filled === 1) setStatus('Enter one more value to solve the triangle.', false);
-          else setStatus('Enter exactly 2 values. Clear extra fields to solve.', true);
+          // Only clear results if they actually cleared the form (filled < 2)
+          // but we might want to keep last successful solution visible for a better UX.
+          // However, to keep it "live", we clear if they don't have enough data.
+          if (filled === 0) {
+            setEmptyResults();
+            setStatus('Enter any 2 valid right-triangle values.', false);
+          } else if (filled === 1) {
+            setStatus('Enter one more value to solve the triangle.', false);
+          }
           updatePresetState();
           updateUrlState();
         });

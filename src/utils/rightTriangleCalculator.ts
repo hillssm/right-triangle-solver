@@ -276,6 +276,16 @@ export const calculateRightTriangle = (
 
   const fmtValue = (v: number) => Number(v.toFixed(4));
 
+  const isDeg = angleMode === 'deg';
+  const fullAngle = isDeg ? 90 : 1.5708; // Roughly pi/2 for the step text
+  const fullAngleSymbol = isDeg ? '90°' : 'π/2';
+  const unitSymbol = isDeg ? '°' : ' rad';
+
+  const fmtAngle = (rad: number) => {
+    const val = isDeg ? toDegrees(rad) : rad;
+    return fmtValue(val) + unitSymbol;
+  };
+
   if (has('a') && has('b')) {
     const a = values.a as number;
     const b = values.b as number;
@@ -294,11 +304,11 @@ export const calculateRightTriangle = (
       providedValues: values,
       angleMode,
       combination: 'a+b',
-      formulas: ['c = sqrt(a² + b²)', 'α = atan(a / b)', 'β = 90° - α'],
+      formulas: ['c = sqrt(a² + b²)', `α = atan(a / b)`, `β = ${fullAngleSymbol} - α`],
       steps: [
         `Calculate hypotenuse c using Pythagoras: c = √(${a}² + ${b}²) = √(${fmtValue(a2)} + ${fmtValue(b2)}) = ${fmtValue(c)}`,
-        `Find angle A using tangent: A = atan(${a} / ${b}) = ${fmtValue(toDegrees(alphaRad))}°`,
-        `Find angle B (complementary): B = 90° - ${fmtValue(toDegrees(alphaRad))}° = ${fmtValue(toDegrees(betaRad))}°`
+        `Find angle A using tangent: A = atan(${a} / ${b}) = ${fmtAngle(alphaRad)}`,
+        `Find angle B (complementary): B = ${fullAngleSymbol} - ${fmtAngle(alphaRad)} = ${fmtAngle(betaRad)}`
       ]
     });
   }
@@ -319,11 +329,11 @@ export const calculateRightTriangle = (
       providedValues: values,
       angleMode,
       combination: 'a+c',
-      formulas: ['b = sqrt(c² - a²)', 'α = asin(a / c)', 'β = 90° - α'],
+      formulas: ['b = sqrt(c² - a²)', `α = asin(a / c)`, `β = ${fullAngleSymbol} - α`],
       steps: [
         `Calculate leg b using Pythagoras: b = √(${c}² - ${a}²) = √(${fmtValue(c * c)} - ${fmtValue(a * a)}) = ${fmtValue(b)}`,
-        `Find angle A using sine: A = asin(${a} / ${c}) = ${fmtValue(toDegrees(alphaRad))}°`,
-        `Find angle B: B = 90° - ${fmtValue(toDegrees(alphaRad))}° = ${fmtValue(toDegrees(betaRad))}°`
+        `Find angle A using sine: A = asin(${a} / ${c}) = ${fmtAngle(alphaRad)}`,
+        `Find angle B: B = ${fullAngleSymbol} - ${fmtAngle(alphaRad)} = ${fmtAngle(betaRad)}`
       ]
     });
   }
@@ -344,11 +354,11 @@ export const calculateRightTriangle = (
       providedValues: values,
       angleMode,
       combination: 'b+c',
-      formulas: ['a = sqrt(c² - b²)', 'α = acos(b / c)', 'β = 90° - α'],
+      formulas: ['a = sqrt(c² - b²)', `α = acos(b / c)`, `β = ${fullAngleSymbol} - α`],
       steps: [
         `Calculate leg a using Pythagoras: a = √(${c}² - ${b}²) = √(${fmtValue(c * c)} - ${fmtValue(b * b)}) = ${fmtValue(a)}`,
-        `Find angle A using cosine: A = acos(${b} / ${c}) = ${fmtValue(toDegrees(alphaRad))}°`,
-        `Find angle B: B = 90° - ${fmtValue(toDegrees(alphaRad))}° = ${fmtValue(toDegrees(betaRad))}°`
+        `Find angle A using cosine: A = acos(${b} / ${c}) = ${fmtAngle(alphaRad)}`,
+        `Find angle B: B = ${fullAngleSymbol} - ${fmtAngle(alphaRad)} = ${fmtAngle(betaRad)}`
       ]
     });
   }
@@ -374,11 +384,11 @@ export const calculateRightTriangle = (
       providedValues: values,
       angleMode,
       combination: 'a+alpha',
-      formulas: ['c = a / sin(α)', 'b = a / tan(α)', 'β = 90° - α'],
+      formulas: [`c = a / sin(α)`, `b = a / tan(α)`, `β = ${fullAngleSymbol} - α`],
       steps: [
-        `Calculate hypotenuse c: c = ${a} / sin(${fmtValue(toDegrees(alphaRad))}°) = ${fmtValue(c)}`,
-        `Calculate leg b: b = ${a} / tan(${fmtValue(toDegrees(alphaRad))}°) = ${fmtValue(b)}`,
-        `Find angle B: B = 90° - ${fmtValue(toDegrees(alphaRad))}° = ${fmtValue(toDegrees(betaRad))}°`
+        `Calculate hypotenuse c: c = ${a} / sin(${fmtAngle(alphaRad)}) = ${fmtValue(c)}`,
+        `Calculate leg b: b = ${a} / tan(${fmtAngle(alphaRad)}) = ${fmtValue(b)}`,
+        `Find angle B: B = ${fullAngleSymbol} - ${fmtAngle(alphaRad)} = ${fmtAngle(betaRad)}`
       ]
     });
   }
@@ -404,11 +414,11 @@ export const calculateRightTriangle = (
       providedValues: values,
       angleMode,
       combination: 'a+beta',
-      formulas: ['c = a / cos(β)', 'b = a * tan(β)', 'α = 90° - β'],
+      formulas: [`c = a / cos(β)`, `b = a * tan(β)`, `α = ${fullAngleSymbol} - β`],
       steps: [
-        `Calculate hypotenuse c: c = ${a} / cos(${fmtValue(toDegrees(betaRad))}°) = ${fmtValue(c)}`,
-        `Calculate leg b: b = ${a} * tan(${fmtValue(toDegrees(betaRad))}°) = ${fmtValue(b)}`,
-        `Find angle A: A = 90° - ${fmtValue(toDegrees(betaRad))}° = ${fmtValue(toDegrees(alphaRad))}°`
+        `Calculate hypotenuse c: c = ${a} / cos(${fmtAngle(betaRad)}) = ${fmtValue(c)}`,
+        `Calculate leg b: b = ${a} * tan(${fmtAngle(betaRad)}) = ${fmtValue(b)}`,
+        `Find angle A: A = ${fullAngleSymbol} - ${fmtAngle(betaRad)} = ${fmtAngle(alphaRad)}`
       ]
     });
   }
@@ -434,11 +444,11 @@ export const calculateRightTriangle = (
       providedValues: values,
       angleMode,
       combination: 'b+alpha',
-      formulas: ['c = b / cos(α)', 'a = b * tan(α)', 'β = 90° - α'],
+      formulas: [`c = b / cos(α)`, `a = b * tan(α)`, `β = ${fullAngleSymbol} - α`],
       steps: [
-        `Calculate hypotenuse c: c = ${b} / cos(${fmtValue(toDegrees(alphaRad))}°) = ${fmtValue(c)}`,
-        `Calculate leg a: a = ${b} * tan(${fmtValue(toDegrees(alphaRad))}°) = ${fmtValue(a)}`,
-        `Find angle B: B = 90° - ${fmtValue(toDegrees(alphaRad))}° = ${fmtValue(toDegrees(betaRad))}°`
+        `Calculate hypotenuse c: c = ${b} / cos(${fmtAngle(alphaRad)}) = ${fmtValue(c)}`,
+        `Calculate leg a: a = ${b} * tan(${fmtAngle(alphaRad)}) = ${fmtValue(a)}`,
+        `Find angle B: B = ${fullAngleSymbol} - ${fmtAngle(alphaRad)} = ${fmtAngle(betaRad)}`
       ]
     });
   }
@@ -464,11 +474,11 @@ export const calculateRightTriangle = (
       providedValues: values,
       angleMode,
       combination: 'b+beta',
-      formulas: ['c = b / sin(β)', 'a = b / tan(β)', 'α = 90° - β'],
+      formulas: [`c = b / sin(β)`, `a = b / tan(β)`, `α = ${fullAngleSymbol} - β`],
       steps: [
-        `Calculate hypotenuse c: c = ${b} / sin(${fmtValue(toDegrees(betaRad))}°) = ${fmtValue(c)}`,
-        `Calculate leg a: a = ${b} / tan(${fmtValue(toDegrees(betaRad))}°) = ${fmtValue(a)}`,
-        `Find angle A: A = 90° - ${fmtValue(toDegrees(betaRad))}° = ${fmtValue(toDegrees(alphaRad))}°`
+        `Calculate hypotenuse c: c = ${b} / sin(${fmtAngle(betaRad)}) = ${fmtValue(c)}`,
+        `Calculate leg a: a = ${b} / tan(${fmtAngle(betaRad)}) = ${fmtValue(a)}`,
+        `Find angle A: A = ${fullAngleSymbol} - ${fmtAngle(betaRad)} = ${fmtAngle(alphaRad)}`
       ]
     });
   }
@@ -489,11 +499,11 @@ export const calculateRightTriangle = (
       providedValues: values,
       angleMode,
       combination: 'c+alpha',
-      formulas: ['a = c * sin(α)', 'b = c * cos(α)', 'β = 90° - α'],
+      formulas: [`a = c * sin(α)`, `b = c * cos(α)`, `β = ${fullAngleSymbol} - α`],
       steps: [
-        `Calculate leg a: a = ${c} * sin(${fmtValue(toDegrees(alphaRad))}°) = ${fmtValue(a)}`,
-        `Calculate leg b: b = ${c} * cos(${fmtValue(toDegrees(alphaRad))}°) = ${fmtValue(b)}`,
-        `Find angle B: B = 90° - ${fmtValue(toDegrees(alphaRad))}° = ${fmtValue(toDegrees(betaRad))}°`
+        `Calculate leg a: a = ${c} * sin(${fmtAngle(alphaRad)}) = ${fmtValue(a)}`,
+        `Calculate leg b: b = ${c} * cos(${fmtAngle(alphaRad)}) = ${fmtValue(b)}`,
+        `Find angle B: B = ${fullAngleSymbol} - ${fmtAngle(alphaRad)} = ${fmtAngle(betaRad)}`
       ]
     });
   }
@@ -501,6 +511,9 @@ export const calculateRightTriangle = (
   if (has('c') && has('beta')) {
     const c = values.c as number;
     const betaRad = beta as number;
+    const alphaRad = HALF_PI - betaRad;
+    const b = c * Math.sin(betaRad);
+    const a = c * Math.cos(betaRad);
     return finalizeSolution({
       a,
       b,
@@ -511,11 +524,11 @@ export const calculateRightTriangle = (
       providedValues: values,
       angleMode,
       combination: 'c+beta',
-      formulas: ['b = c * sin(β)', 'a = c * cos(β)', 'α = 90° - β'],
+      formulas: [`b = c * sin(β)`, `a = c * cos(β)`, `α = ${fullAngleSymbol} - β`],
       steps: [
-        `Calculate leg b: b = ${c} * sin(${fmtValue(toDegrees(betaRad))}°) = ${fmtValue(b)}`,
-        `Calculate leg a: a = ${c} * cos(${fmtValue(toDegrees(betaRad))}°) = ${fmtValue(a)}`,
-        `Find angle A: A = 90° - ${fmtValue(toDegrees(betaRad))}° = ${fmtValue(toDegrees(alphaRad))}°`
+        `Calculate leg b: b = ${c} * sin(${fmtAngle(betaRad)}) = ${fmtValue(b)}`,
+        `Calculate leg a: a = ${c} * cos(${fmtAngle(betaRad)}) = ${fmtValue(a)}`,
+        `Find angle A: A = ${fullAngleSymbol} - ${fmtAngle(betaRad)} = ${fmtAngle(alphaRad)}`
       ]
     });
   }

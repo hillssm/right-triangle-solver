@@ -1,9 +1,9 @@
 {
-  "brandName": "Right Triangle Calculator",
-  "legalName": "Right Triangle Calculator Labs",
+  "brandName": "Right Triangle solver",
+  "legalName": "Right Triangle solver Labs",
   "baseUrl": "https://righttrianglesolver.app",
   "description": "Solve right triangles quickly with step-by-step geometry guidance, formulas, and practical examples.",
-  "author": "Right Triangle Calculator Team",
+  "author": "Right Triangle solver Team",
   "metaImage": "/images/og-right-triangle.svg",
   "metaImageWidth": 1200,
   "metaImageHeight": 630,

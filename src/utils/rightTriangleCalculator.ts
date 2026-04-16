@@ -90,6 +90,8 @@ const finalizeSolution = (payload: {
   alphaRad: number;
   betaRad: number;
   providedKeys: CalculatorInputKey[];
+  providedValues: RawNumericInputs;
+  angleMode: AngleMode;
   combination: SupportedCombination;
   formulas: string[];
   steps: string[];
@@ -116,6 +118,34 @@ const finalizeSolution = (payload: {
 
   if (Math.abs(alphaRad + betaRad - HALF_PI) > ANGLE_TOLERANCE) {
     throw new Error('Angles must satisfy A + B = 90 deg (pi/2 radians).');
+  }
+
+  // Final consistency check for all provided values
+  for (const key of payload.providedKeys) {
+    const provided = payload.providedValues[key]!;
+    let computed = 0;
+    let tolerance = 1e-7;
+
+    switch (key) {
+      case 'a': computed = a; break;
+      case 'b': computed = b; break;
+      case 'c': computed = c; break;
+      case 'alpha': 
+        computed = toDegrees(alphaRad); 
+        if (payload.angleMode === 'rad') computed = alphaRad;
+        tolerance = 1e-5; 
+        break;
+      case 'beta': 
+        computed = toDegrees(betaRad);
+        if (payload.angleMode === 'rad') computed = betaRad;
+        tolerance = 1e-5;
+        break;
+    }
+
+    if (Math.abs(computed - provided) > tolerance) {
+      const name = key === 'alpha' ? 'Angle A' : key === 'beta' ? 'Angle B' : `Side ${key}`;
+      throw new Error(`${name} is inconsistent with other inputs.`);
+    }
   }
 
   const area = 0.5 * a * b;
@@ -159,7 +189,11 @@ export const parseMathExpression = (raw: string): number => {
     throw new Error('Enter a value.');
   }
 
-  const normalized = trimmed.toLowerCase().replace(/\u03c0/g, 'pi').replace(/\s+/g, '');
+  const normalized = trimmed.toLowerCase()
+    .replace(/\u03c0/g, 'pi')
+    .replace(/,/g, '.') // Support comma decimal separators
+    .replace(/\s+/g, '');
+
   if (!/^[0-9pi+\-*/().]+$/.test(normalized)) {
     throw new Error('Only numbers, parentheses, + - * /, and pi are allowed.');
   }
@@ -194,12 +228,12 @@ export const calculateRightTriangle = (
   const providedKeys = CALCULATOR_INPUT_KEYS.filter((key) => values[key] !== undefined);
   const providedSideCount = (['a', 'b', 'c'] as const).filter((key) => values[key] !== undefined).length;
 
-  if (providedKeys.length !== 2) {
-    throw new Error('Enter exactly two known values to solve the triangle.');
+  if (providedKeys.length < 2) {
+    throw new Error('Enter at least two known values to solve the triangle.');
   }
 
   if (providedSideCount < 1) {
-    throw new Error('At least one side is required. Angles A and B alone are not enough.');
+    throw new Error('At least one side (a, b, or c) is required. Angles alone cannot solve a triangle.');
   }
 
   for (const sideKey of ['a', 'b', 'c'] as const) {
@@ -257,6 +291,8 @@ export const calculateRightTriangle = (
       alphaRad,
       betaRad,
       providedKeys,
+      providedValues: values,
+      angleMode,
       combination: 'a+b',
       formulas: ['c = sqrt(a² + b²)', 'α = atan(a / b)', 'β = 90° - α'],
       steps: [
@@ -280,6 +316,8 @@ export const calculateRightTriangle = (
       alphaRad,
       betaRad,
       providedKeys,
+      providedValues: values,
+      angleMode,
       combination: 'a+c',
       formulas: ['b = sqrt(c² - a²)', 'α = asin(a / c)', 'β = 90° - α'],
       steps: [
@@ -303,6 +341,8 @@ export const calculateRightTriangle = (
       alphaRad,
       betaRad,
       providedKeys,
+      providedValues: values,
+      angleMode,
       combination: 'b+c',
       formulas: ['a = sqrt(c² - b²)', 'α = acos(b / c)', 'β = 90° - α'],
       steps: [
@@ -331,6 +371,8 @@ export const calculateRightTriangle = (
       alphaRad,
       betaRad,
       providedKeys,
+      providedValues: values,
+      angleMode,
       combination: 'a+alpha',
       formulas: ['c = a / sin(α)', 'b = a / tan(α)', 'β = 90° - α'],
       steps: [
@@ -359,6 +401,8 @@ export const calculateRightTriangle = (
       alphaRad,
       betaRad,
       providedKeys,
+      providedValues: values,
+      angleMode,
       combination: 'a+beta',
       formulas: ['c = a / cos(β)', 'b = a * tan(β)', 'α = 90° - β'],
       steps: [
@@ -387,6 +431,8 @@ export const calculateRightTriangle = (
       alphaRad,
       betaRad,
       providedKeys,
+      providedValues: values,
+      angleMode,
       combination: 'b+alpha',
       formulas: ['c = b / cos(α)', 'a = b * tan(α)', 'β = 90° - α'],
       steps: [
@@ -415,6 +461,8 @@ export const calculateRightTriangle = (
       alphaRad,
       betaRad,
       providedKeys,
+      providedValues: values,
+      angleMode,
       combination: 'b+beta',
       formulas: ['c = b / sin(β)', 'a = b / tan(β)', 'α = 90° - β'],
       steps: [
@@ -438,6 +486,8 @@ export const calculateRightTriangle = (
       alphaRad,
       betaRad,
       providedKeys,
+      providedValues: values,
+      angleMode,
       combination: 'c+alpha',
       formulas: ['a = c * sin(α)', 'b = c * cos(α)', 'β = 90° - α'],
       steps: [
@@ -451,9 +501,6 @@ export const calculateRightTriangle = (
   if (has('c') && has('beta')) {
     const c = values.c as number;
     const betaRad = beta as number;
-    const alphaRad = HALF_PI - betaRad;
-    const b = c * Math.sin(betaRad);
-    const a = c * Math.cos(betaRad);
     return finalizeSolution({
       a,
       b,
@@ -461,6 +508,8 @@ export const calculateRightTriangle = (
       alphaRad,
       betaRad,
       providedKeys,
+      providedValues: values,
+      angleMode,
       combination: 'c+beta',
       formulas: ['b = c * sin(β)', 'a = c * cos(β)', 'α = 90° - β'],
       steps: [

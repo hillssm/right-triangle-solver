@@ -180,7 +180,7 @@ const { heading, description } = Astro.props;
       type AngleMode,
       type RightTriangleSolution,
       type CalculatorInputKey
-    } from 'src/utils/rightTriangleCalculator';
+    } from '../../src/utils/rightTriangleCalculator';
 
     type UnitOption = '' | 'm' | 'cm' | 'mm' | 'ft' | 'in';
 
@@ -434,23 +434,9 @@ const { heading, description } = Astro.props;
         renderListItems(formulaListEl, solution.formulas);
         renderListItems(stepListEl, solution.steps, true);
 
-        // Sync computed values back to inputs
-        for (const [key, input] of Object.entries(inputs)) {
-          if (!input.value.trim()) {
-            let val = 0;
-            switch(key) {
-              case 'a': val = solution.a; break;
-              case 'b': val = solution.b; break;
-              case 'c': val = solution.c; break;
-              case 'alpha': val = solution.alphaDeg; break;
-              case 'beta': val = solution.betaDeg; break;
-            }
-            input.value = formatEditableNumber(val);
-          }
-        }
-
         lastSolution = solution;
       };
+
         const updateUrlState = () => {
           const params = new URLSearchParams(window.location.search);
           const map: Record<CalculatorInputKey, string> = { a: 'a', b: 'b', c: 'c', alpha: 'A', beta: 'B' };

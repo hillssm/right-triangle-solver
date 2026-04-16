@@ -10,7 +10,7 @@
   const input1Unit = root.querySelector('[data-input1-unit]');
   const input2Unit = root.querySelector('[data-input2-unit]');
   const modeDescription = root.querySelector('[data-mode-description]');
-  const form = root.querySelector('[data-solver-form]');
+  const form = root.querySelector('[data-calculator-form]');
   const statusEl = root.querySelector('[data-status]');
   const resetBtn = root.querySelector('[data-reset-btn]');
   const stepsList = root.querySelector('[data-steps-list]');

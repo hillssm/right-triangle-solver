@@ -1,13 +1,13 @@
 ---
 interface Props {
-  solverHref?: string;
+  calculatorHref?: string;
   libraryHref?: string;
   practiceHref?: string;
   formulasHref?: string;
 }
 
 const {
-  solverHref = '/',
+  calculatorHref = '/',
   libraryHref = '/library/',
   practiceHref = '/practice/',
   formulasHref = '/formulas/'
@@ -35,7 +35,7 @@ const {
       </div>
 
       <nav class="flex-1 space-y-1 px-4" aria-label="Workspace navigation">
-        <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-slate-400 transition-all duration-300 hover:bg-surface-container-high/60 hover:text-slate-100" href={solverHref}>
+        <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-slate-400 transition-all duration-300 hover:bg-surface-container-high/60 hover:text-slate-100" href={calculatorHref}>
           <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">calculate</span>
           <span class="text-sm tracking-wide">Calculator</span>
         </a>
@@ -282,7 +282,7 @@ const {
 
   <!-- Mobile bottom nav -->
   <nav class="fixed right-0 bottom-0 left-0 z-20 flex h-16 items-center justify-around border-t border-outline-variant/8 md:hidden" style="background: linear-gradient(180deg, rgba(25,18,13,0.95) 0%, rgba(12,9,7,1) 100%); backdrop-filter: blur(16px);">
-    <a class="flex flex-col items-center gap-1 text-slate-500 transition-colors hover:text-slate-300" href={solverHref}>
+    <a class="flex flex-col items-center gap-1 text-slate-500 transition-colors hover:text-slate-300" href={calculatorHref}>
       <span class="material-symbols-outlined">calculate</span>
       <span class="text-[9px] font-label tracking-wide">Calculator</span>
     </a>

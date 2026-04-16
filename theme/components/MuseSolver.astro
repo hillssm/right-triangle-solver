@@ -1,7 +1,7 @@
 ---
 interface Props {
   title?: string;
-  solverHref?: string;
+  calculatorHref?: string;
   libraryHref?: string;
   practiceHref?: string;
   formulasHref?: string;
@@ -9,7 +9,7 @@ interface Props {
 
 const {
   title = 'Mathematical Muse',
-  solverHref = '/',
+  calculatorHref = '/',
   libraryHref = '/library/',
   practiceHref = '/practice/',
   formulasHref = '/formulas/'
@@ -95,7 +95,7 @@ const modeSummaries = [
     </div>
 
     <nav class="space-y-2" aria-label="Workspace navigation">
-      <a class="group flex items-center gap-3 rounded-xl border border-primary/25 bg-primary/12 px-4 py-3 text-primary transition-all hover:shadow-[var(--shadow-glow-primary)]" href={solverHref}>
+      <a class="group flex items-center gap-3 rounded-xl border border-primary/25 bg-primary/12 px-4 py-3 text-primary transition-all hover:shadow-[var(--shadow-glow-primary)]" href={calculatorHref}>
         <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calculate</span>
         <span class="text-sm font-medium tracking-wide">Calculator</span>
         <span class="ml-auto h-2 w-2 rounded-full bg-primary shadow-[0_0_10px_rgba(212,175,116,0.7)]"></span>
@@ -183,7 +183,7 @@ const modeSummaries = [
             </div>
           </div>
 
-          <form class="space-y-4" data-solver-form>
+          <form class="space-y-4" data-calculator-form>
             <label class="grid gap-2 text-sm">
               <span class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant">Input Mode</span>
               <select class="input-shell cursor-pointer" data-mode-select>
@@ -352,7 +352,7 @@ const modeSummaries = [
               <p class="mt-1 text-sm text-on-surface-variant">Every solve includes a readable method trace and recent entries.</p>
 
               <ol class="mt-4 grid gap-3" data-steps-list>
-                <!-- Steps will be injected here by muse-solver.js -->
+                <!-- Steps will be injected here by muse-calculator.js -->
               </ol>
 
               <div class="mt-6 border-t border-outline-variant/20 pt-4">
@@ -369,7 +369,7 @@ const modeSummaries = [
   </main>
 
   <nav class="fixed bottom-0 left-0 right-0 z-20 flex h-16 items-center justify-around border-t border-primary/15 bg-[linear-gradient(180deg,rgba(24,17,12,0.95)_0%,rgba(13,10,7,1)_100%)] backdrop-blur-xl md:hidden">
-    <a class="flex flex-col items-center gap-1 text-primary" href={solverHref}>
+    <a class="flex flex-col items-center gap-1 text-primary" href={calculatorHref}>
       <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calculate</span>
       <span class="text-[9px] font-label tracking-wide">Calculator</span>
     </a>
@@ -402,7 +402,7 @@ const modeSummaries = [
     </div>
 
     <nav class="space-y-2" aria-label="Mobile navigation">
-      <a class="flex items-center gap-3 rounded-xl border border-primary/20 bg-primary/10 px-4 py-3 text-primary" href={solverHref}>
+      <a class="flex items-center gap-3 rounded-xl border border-primary/20 bg-primary/10 px-4 py-3 text-primary" href={calculatorHref}>
         <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calculate</span>
         <span class="text-sm font-medium tracking-wide">Calculator</span>
       </a>
@@ -421,7 +421,7 @@ const modeSummaries = [
     </nav>
   </aside>
 
-  <script is:inline src="/js/muse-solver.js"></script>
+  <script is:inline src="/js/muse-calculator.js"></script>
   <script is:inline>
     (() => {
       const toggle = document.querySelector('[data-mobile-sidebar-toggle]');

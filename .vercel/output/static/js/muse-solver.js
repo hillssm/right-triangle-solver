@@ -51,7 +51,7 @@
   const degToRad = (deg) => (deg * Math.PI) / 180;
   const radToDeg = (rad) => (rad * 180) / Math.PI;
   const fmt = (value, digits = 4) => Number(value).toFixed(digits);
-  const HISTORY_KEY = 'right_triangle_solver_history_v2';
+  const HISTORY_KEY = 'right_triangle_calculator_history_v1';
 
   const MODES = {
     legs_ab: {
@@ -357,7 +357,17 @@
   };
 
   const setSteps = (steps) => {
-    stepsList.innerHTML = steps.map((step) => `<li>${step}</li>`).join('');
+    stepsList.className = 'mt-4 grid gap-3';
+    stepsList.innerHTML = steps
+      .map((step, index) => {
+        const num = (index + 1).toString().padStart(2, '0');
+        const text = step.replace(/alpha/g, 'A').replace(/beta/g, 'B');
+        return `<li class="rounded-xl border border-outline-variant/10 bg-surface-container-lowest/40 p-3 text-sm text-on-surface-variant transition-colors hover:border-primary/20 hover:bg-surface-container-lowest/60 flex items-start gap-3">
+          <span class="mt-0.5 font-mono text-[10px] text-primary/60 flex-shrink-0">${num}</span>
+          <span>${text}</span>
+        </li>`;
+      })
+      .join('');
   };
 
   const drawTriangle = (result) => {
@@ -457,7 +467,7 @@
     }
   };
 
-  const resetSolver = () => {
+  const resetCalculator = () => {
     modeSelect.value = 'legs_ab';
     setModeLabels();
     input1.value = '3';
@@ -470,7 +480,7 @@
     event.preventDefault();
     solveCurrent();
   });
-  resetBtn.addEventListener('click', resetSolver);
+  resetBtn.addEventListener('click', resetCalculator);
 
   history = readHistory();
   renderHistory();

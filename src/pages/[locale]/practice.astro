@@ -21,7 +21,7 @@ const siteTitle = pick(siteContent, 'title', 'Right Triangle Calculator');
 const pageTitle = `Practice Mode | ${siteTitle}`;
 const pageDescription =
   'Train with right triangle challenges in an interactive practice workspace with progress and keypad input.';
-const localizedSolverPath = localizePath(locale, '/');
+const localizedCalculatorPath = localizePath(locale, '/');
 const localizedLibraryPath = localizePath(locale, '/library/');
 const localizedPracticePath = localizePath(locale, '/practice/');
 const localizedFormulasPath = localizePath(locale, '/formulas/');
@@ -37,7 +37,7 @@ const localizedFormulasPath = localizePath(locale, '/formulas/');
   mainClass="w-full min-h-screen p-0"
 >
   <MusePractice
-    solverHref={localizedSolverPath}
+    calculatorHref={localizedCalculatorPath}
     libraryHref={localizedLibraryPath}
     practiceHref={localizedPracticePath}
     formulasHref={localizedFormulasPath}

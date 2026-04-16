@@ -21,7 +21,7 @@ const siteTitle = pick(siteContent, 'title', 'Right Triangle Calculator');
 const pageTitle = `Formula Library | ${siteTitle}`;
 const pageDescription =
   'Browse theorem references, trigonometry mnemonics, and geometry formulas in a focused dark-mode library.';
-const localizedSolverPath = localizePath(locale, '/');
+const localizedCalculatorPath = localizePath(locale, '/');
 const localizedPath = localizePath(locale, '/library/');
 const localizedPracticePath = localizePath(locale, '/practice/');
 const localizedFormulasPath = localizePath(locale, '/formulas/');
@@ -37,7 +37,7 @@ const localizedFormulasPath = localizePath(locale, '/formulas/');
   mainClass="w-full h-[100dvh] overflow-hidden p-0"
 >
   <MuseLibrary
-    solverHref={localizedSolverPath}
+    calculatorHref={localizedCalculatorPath}
     libraryHref={localizedPath}
     practiceHref={localizedPracticePath}
     formulasHref={localizedFormulasPath}

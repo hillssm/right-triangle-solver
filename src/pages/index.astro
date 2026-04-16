@@ -47,18 +47,7 @@ const chartRows = [
     faqs={bundle.faq}
   />
 
-  <section class="section-shell w-full overflow-hidden">
-    <div class="pointer-events-none absolute -left-10 -top-20 h-64 w-64 rounded-full bg-primary/14 blur-3xl"></div>
-    <div class="pointer-events-none absolute -bottom-20 right-8 h-52 w-52 rounded-full bg-tertiary/14 blur-3xl"></div>
-    <div class="relative w-full min-w-0">
-      <RightTriangleTool
-        heading={pick(home, 'toolHeading', 'Interactive Calculator')}
-        description={pick(home, 'toolDescription', 'Enter any two values to calculate sides, angles, area, and perimeter instantly.')}
-      />
-    </div>
-  </section>
-
-  <div class="my-12 text-center">
+  <div class="mb-12 text-center">
     <h1 class="font-headline text-4xl tracking-tight text-on-primary-container sm:text-5xl lg:text-6xl">
       {pick(home, 'heading', 'Right Triangle Solver')}
     </h1>
@@ -66,6 +55,17 @@ const chartRows = [
       Calculate hypotenuse, angles, area, and geometry instantly with our precision digital tool.
     </p>
   </div>
+
+  <section class="section-shell w-full overflow-hidden">
+    <div class="pointer-events-none absolute -left-10 -top-20 h-64 w-64 rounded-full bg-primary/14 blur-3xl"></div>
+    <div class="pointer-events-none absolute -bottom-20 right-8 h-52 w-52 rounded-full bg-tertiary/14 blur-3xl"></div>
+    <div class="relative w-full min-w-0">
+      <RightTriangleTool
+        heading={pick(home, 'toolHeading', 'Right Triangle Solver')}
+        description={pick(home, 'toolDescription', 'Enter any two legs to calculate hypotenuse, area, and perimeter instantly.')}
+      />
+    </div>
+  </section>
 
   <div class="mt-8">
     <HowItWorks heading={pick(home, 'howHeading', 'How Right Triangle Solver works')} />

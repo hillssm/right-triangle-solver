@@ -56,6 +56,15 @@ const chartRows = [
     faqs={bundle.faq}
   />
 
+  <div class="mb-12 text-center">
+    <h1 class="font-headline text-4xl tracking-tight text-on-primary-container sm:text-5xl lg:text-6xl">
+      {pick(home, 'heading', 'Right Triangle Solver')}
+    </h1>
+    <p class="mx-auto mt-4 max-w-2xl text-base text-on-tertiary-fixed-variant sm:text-lg">
+      Calculate hypotenuse, angles, area, and geometry instantly with our precision digital tool.
+    </p>
+  </div>
+
   <section class="section-shell w-full overflow-hidden">
     <div class="pointer-events-none absolute -left-10 -top-20 h-64 w-64 rounded-full bg-primary/14 blur-3xl"></div>
     <div class="pointer-events-none absolute -bottom-20 right-8 h-52 w-52 rounded-full bg-tertiary/14 blur-3xl"></div>
@@ -66,15 +75,6 @@ const chartRows = [
       />
     </div>
   </section>
-
-  <div class="my-12 text-center">
-    <h1 class="font-headline text-4xl tracking-tight text-on-primary-container sm:text-5xl lg:text-6xl">
-      {pick(home, 'heading', 'Right Triangle Solver')}
-    </h1>
-    <p class="mx-auto mt-4 max-w-2xl text-base text-on-tertiary-fixed-variant sm:text-lg">
-      Calculate hypotenuse, angles, area, and geometry instantly with our precision digital tool.
-    </p>
-  </div>
 
   <div class="mt-8">
     <HowItWorks heading={pick(home, 'howHeading', 'How Right Triangle Solver works')} />

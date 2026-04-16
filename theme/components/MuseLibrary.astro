@@ -14,40 +14,40 @@ const {
 } = Astro.props;
 ---
 
-<div class="bg-background text-on-background font-body flex flex-col md:flex-row rounded-3xl overflow-hidden border border-outline-variant/10 shadow-luxury">
+<div class="bg-surface text-on-surface font-body flex flex-col md:flex-row rounded-3xl overflow-hidden border border-outline-variant/30 shadow-luxury relative">
   <!-- Ambient glow -->
-  <div class="ambient-glow" style="width: 500px; height: 500px; top: -150px; left: 30%; background: #d4af74;"></div>
-  <div class="ambient-glow" style="width: 400px; height: 400px; bottom: -100px; right: -50px; background: #f1d4a4;"></div>
+  <div class="ambient-glow" style="width: 500px; height: 500px; top: -150px; left: 30%; background: rgba(181, 140, 69, 0.15);"></div>
+  <div class="ambient-glow" style="width: 400px; height: 400px; bottom: -100px; right: -50px; background: rgba(91, 64, 0, 0.1);"></div>
 
   <!-- ═══ SIDEBAR ═══ -->
-  <aside class="hidden h-screen w-[280px] shrink-0 flex-col border-r border-outline-variant/10 bg-gradient-to-b from-[#1b140f] to-[#0f0b08] py-6 md:flex">
+  <aside class="hidden w-[280px] shrink-0 flex-col border-r border-outline-variant/20 bg-gradient-to-b from-surface-container-low to-surface-container py-6 md:flex">
     <div class="mb-10 px-8">
       <div class="flex items-center gap-3">
-        <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-primary-container shadow-[var(--shadow-glow-primary)]">
+        <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-primary-container shadow-md">
           <span class="material-symbols-outlined text-lg text-on-primary" style="font-variation-settings: 'FILL' 1;">architecture</span>
         </div>
         <div>
-          <h1 class="text-lg font-headline text-primary text-glow-primary">Right Triangle Solver</h1>
-          <p class="font-label text-[9px] uppercase tracking-[0.25em] text-slate-500">Precision Solver</p>
+          <div class="text-sm font-headline font-bold text-on-primary-container">Right Triangle Solver</div>
+          <p class="font-label text-[9px] uppercase tracking-[0.25em] text-on-surface-variant">Precision Solver</p>
         </div>
       </div>
     </div>
 
     <nav class="flex-1 space-y-1 px-4" aria-label="Workspace navigation">
-      <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-slate-400 transition-all duration-300 hover:bg-surface-container-high/60 hover:text-slate-100" href={calculatorHref}>
+      <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-on-surface-variant transition-all duration-300 hover:bg-primary/5 hover:text-primary" href={calculatorHref}>
         <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">calculate</span>
         <span class="text-sm tracking-wide">Calculator</span>
       </a>
-      <a class="group flex items-center gap-4 rounded-xl border-l-[3px] border-primary bg-primary/8 px-5 py-3.5 text-primary transition-all duration-300" href={libraryHref}>
+      <a class="group flex items-center gap-4 rounded-xl border-l-[3px] border-primary bg-primary/10 px-5 py-3.5 text-primary transition-all duration-300" href={libraryHref}>
         <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110" style="font-variation-settings: 'FILL' 1;">menu_book</span>
         <span class="text-sm font-medium tracking-wide">Library</span>
-        <span class="ml-auto h-1.5 w-1.5 rounded-full bg-primary shadow-[0_0_6px_rgba(212,175,116,0.6)]"></span>
+        <span class="ml-auto h-1.5 w-1.5 rounded-full bg-primary shadow-sm"></span>
       </a>
-      <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-slate-400 transition-all duration-300 hover:bg-surface-container-high/60 hover:text-slate-100" href={practiceHref}>
+      <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-on-surface-variant transition-all duration-300 hover:bg-primary/5 hover:text-primary" href={practiceHref}>
         <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">edit_note</span>
         <span class="text-sm tracking-wide">Practice</span>
       </a>
-      <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-slate-400 transition-all duration-300 hover:bg-surface-container-high/60 hover:text-slate-100" href={formulasHref}>
+      <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-on-surface-variant transition-all duration-300 hover:bg-primary/5 hover:text-primary" href={formulasHref}>
         <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">functions</span>
         <span class="text-sm tracking-wide">Formulas</span>
       </a>
@@ -61,11 +61,11 @@ const {
     </div>
 
     <div class="space-y-1 border-t border-outline-variant/8 px-4 pt-5">
-      <a class="flex items-center gap-4 rounded-lg px-5 py-2.5 text-slate-500 transition-colors hover:text-slate-300" href="#">
+      <a class="flex items-center gap-4 rounded-lg px-5 py-2.5 text-on-surface-variant transition-colors hover:text-primary" href="#">
         <span class="material-symbols-outlined text-lg">settings</span>
         <span class="text-xs font-label tracking-wide">Settings</span>
       </a>
-      <a class="flex items-center gap-4 rounded-lg px-5 py-2.5 text-slate-500 transition-colors hover:text-slate-300" href="#">
+      <a class="flex items-center gap-4 rounded-lg px-5 py-2.5 text-on-surface-variant transition-colors hover:text-primary" href="#">
         <span class="material-symbols-outlined text-lg">help</span>
         <span class="text-xs font-label tracking-wide">Support</span>
       </a>
@@ -73,8 +73,8 @@ const {
   </aside>
 
   <!-- ═══ MAIN ═══ -->
-  <div class="flex h-screen flex-1 flex-col overflow-hidden">
-    <header class="relative z-10 flex h-16 w-full shrink-0 items-center justify-between px-6 md:px-8" style="background: linear-gradient(180deg, rgba(28,20,13,0.95) 0%, rgba(18,13,9,0.7) 100%); backdrop-filter: blur(12px);">
+  <div class="flex flex-1 flex-col overflow-hidden">
+    <header class="relative z-10 flex h-16 w-full shrink-0 items-center justify-between px-6 md:px-8 border-b border-outline-variant/10 bg-white/40 backdrop-blur-md">
       <div class="flex items-center gap-4">
         <button type="button" class="inline-flex items-center justify-center rounded-lg border border-outline-variant/20 p-2 text-slate-400 transition-colors hover:border-primary/30 hover:text-primary md:hidden" data-lib-mobile-toggle aria-label="Toggle sidebar">
           <span class="material-symbols-outlined text-xl">menu</span>
@@ -112,9 +112,9 @@ const {
             Knowledge Base
           </span>
           <h2 class="mb-6 text-4xl leading-tight font-headline text-on-surface md:text-5xl">
-            Formula & Theory <span class="text-gradient-primary">Library</span>
+            Formula & Theory <span class="text-primary drop-shadow-sm">Library</span>
           </h2>
-          <p class="text-lg leading-relaxed text-slate-400 font-body">
+          <p class="text-lg leading-relaxed text-on-surface-variant font-body">
             A curated collection of geometric principles and algebraic identities, rendered for clarity and precision.
             Explore the architectural foundations of mathematics.
           </p>

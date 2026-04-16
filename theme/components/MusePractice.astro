@@ -15,43 +15,43 @@ const {
 ---
 
 <div class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
-  <!-- Ambient glow -->
-  <div class="ambient-glow" style="width: 500px; height: 500px; top: -100px; right: 10%; background: #d4af74;"></div>
-  <div class="ambient-glow" style="width: 300px; height: 300px; bottom: 0; left: 0; background: #d8b177; opacity: 0.06;"></div>
+  <div class="flex flex-col md:flex-row rounded-3xl overflow-hidden border border-outline-variant/30 shadow-luxury relative">
+    <!-- Ambient glow -->
+    <div class="ambient-glow" style="width: 500px; height: 500px; top: -100px; right: 10%; background: rgba(181, 140, 69, 0.12);"></div>
+    <div class="ambient-glow" style="width: 300px; height: 300px; bottom: 0; left: 0; background: rgba(91, 64, 0, 0.05);"></div>
 
-  <div class="flex flex-col md:flex-row rounded-3xl overflow-hidden border border-outline-variant/10 shadow-luxury">
     <!-- ═══ SIDEBAR ═══ -->
-    <aside class="hidden w-[280px] shrink-0 flex-col border-r border-outline-variant/10 bg-gradient-to-b from-[#1b140f] to-[#0f0b08] py-6 md:flex">
+    <aside class="hidden w-[280px] shrink-0 flex-col border-r border-outline-variant/20 bg-gradient-to-b from-surface-container-low to-surface-container py-6 md:flex">
       <div class="mb-10 px-6">
         <div class="flex items-center gap-3">
           <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-primary-container shadow-[var(--shadow-glow-primary)]">
             <span class="material-symbols-outlined text-lg text-on-primary" style="font-variation-settings: 'FILL' 1;">architecture</span>
           </div>
-          <div>
-            <h1 class="text-lg font-headline text-primary text-glow-primary">Right Triangle Solver</h1>
-            <p class="font-label text-[9px] uppercase tracking-[0.25em] text-slate-500">Precision Solver</p>
-          </div>
+        <div>
+          <div class="text-sm font-headline font-bold text-on-primary-container">Right Triangle Solver</div>
+          <p class="font-label text-[9px] uppercase tracking-[0.25em] text-on-surface-variant">Precision Solver</p>
+        </div>
         </div>
       </div>
 
       <nav class="flex-1 space-y-1 px-4" aria-label="Workspace navigation">
-        <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-slate-400 transition-all duration-300 hover:bg-surface-container-high/60 hover:text-slate-100" href={calculatorHref}>
-          <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">calculate</span>
-          <span class="text-sm tracking-wide">Solver</span>
-        </a>
-        <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-slate-400 transition-all duration-300 hover:bg-surface-container-high/60 hover:text-slate-100" href={libraryHref}>
-          <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">menu_book</span>
-          <span class="text-sm tracking-wide">Library</span>
-        </a>
-        <a class="group flex items-center gap-4 rounded-xl border-l-[3px] border-primary bg-primary/8 px-5 py-3.5 text-primary transition-all duration-300" href={practiceHref}>
-          <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110" style="font-variation-settings: 'FILL' 1;">edit_note</span>
-          <span class="text-sm font-medium tracking-wide">Practice</span>
-          <span class="ml-auto h-1.5 w-1.5 rounded-full bg-primary shadow-[0_0_6px_rgba(212,175,116,0.6)]"></span>
-        </a>
-        <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-slate-400 transition-all duration-300 hover:bg-surface-container-high/60 hover:text-slate-100" href={formulasHref}>
-          <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">functions</span>
-          <span class="text-sm tracking-wide">Formulas</span>
-        </a>
+      <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-on-surface-variant transition-all duration-300 hover:bg-primary/5 hover:text-primary" href={calculatorHref}>
+        <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">calculate</span>
+        <span class="text-sm tracking-wide">Solver</span>
+      </a>
+      <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-on-surface-variant transition-all duration-300 hover:bg-primary/5 hover:text-primary" href={libraryHref}>
+        <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">menu_book</span>
+        <span class="text-sm tracking-wide">Library</span>
+      </a>
+      <a class="group flex items-center gap-4 rounded-xl border-l-[3px] border-primary bg-primary/10 px-5 py-3.5 text-primary transition-all duration-300" href={practiceHref}>
+        <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110" style="font-variation-settings: 'FILL' 1;">edit_note</span>
+        <span class="text-sm font-medium tracking-wide">Practice</span>
+        <span class="ml-auto h-1.5 w-1.5 rounded-full bg-primary shadow-sm"></span>
+      </a>
+      <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-on-surface-variant transition-all duration-300 hover:bg-primary/5 hover:text-primary" href={formulasHref}>
+        <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">functions</span>
+        <span class="text-sm tracking-wide">Formulas</span>
+      </a>
       </nav>
 
       <div class="mt-auto space-y-2 border-t border-outline-variant/8 px-4 pt-5">
@@ -59,11 +59,11 @@ const {
           <span class="material-symbols-outlined text-base">add_circle</span>
           New Challenge
         </button>
-        <a class="flex items-center gap-4 rounded-lg px-5 py-2.5 text-slate-500 transition-colors hover:text-slate-300" href="#">
+        <a class="flex items-center gap-4 rounded-lg px-5 py-2.5 text-on-surface-variant transition-colors hover:text-primary" href="#">
           <span class="material-symbols-outlined text-lg">settings</span>
           <span class="text-xs font-label tracking-wide">Settings</span>
         </a>
-        <a class="flex items-center gap-4 rounded-lg px-5 py-2.5 text-slate-500 transition-colors hover:text-slate-300" href="#">
+        <a class="flex items-center gap-4 rounded-lg px-5 py-2.5 text-on-surface-variant transition-colors hover:text-primary" href="#">
           <span class="material-symbols-outlined text-lg">help</span>
           <span class="text-xs font-label tracking-wide">Support</span>
         </a>
@@ -71,11 +71,11 @@ const {
     </aside>
 
     <!-- ═══ MAIN ═══ -->
-    <main class="flex-1 bg-background">
-      <header class="sticky top-0 z-30 flex h-16 w-full items-center justify-between px-6 md:px-8" style="background: linear-gradient(180deg, rgba(28,20,13,0.95) 0%, rgba(18,13,9,0.7) 100%); backdrop-filter: blur(12px);">
+    <main class="flex-1 bg-surface">
+      <header class="sticky top-0 z-30 flex h-16 w-full items-center justify-between px-6 md:px-8 border-b border-outline-variant/10 bg-white/40 backdrop-blur-md">
         <div class="flex items-center gap-3">
           <span class="text-xl font-headline tracking-tight md:text-2xl">
-            <span class="text-gradient-primary">Right Triangle Solver</span>
+            <span class="text-primary drop-shadow-sm">Right Triangle Solver</span>
           </span>
         </div>
         <div class="flex items-center gap-4">

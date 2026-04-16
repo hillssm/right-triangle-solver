@@ -10,8 +10,8 @@ interface Props {
 
 const {
   locale,
-  heading = 'All Formula Calculators',
-  description = 'Each tool has its own calculator page with title-specific inputs and direct output.'
+  heading = 'All Formula Solvers',
+  description = 'Each tool has its own dedicated page with title-specific inputs and precision output.'
 } = Astro.props;
 
 const formulasRoot = localizePath(locale, '/formulas/');
@@ -120,7 +120,7 @@ const strokeWidthForSide = (side: SideFeature, inputSides: Set<SideFeature>, out
           href={`${formulasRoot}${formula.slug}/`}
           class="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-outline-variant/30 bg-surface-container-lowest/50 p-6 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:bg-surface-container-low"
           style={`border-color: rgba(${theme.rgbaBase}, 0.15); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);`}
-          aria-label={`${formula.title} calculator`}
+          aria-label={`${formula.title} tool`}
           onmouseover={`this.style.borderColor='rgba(${theme.rgbaBase},0.5)'; this.style.boxShadow='0 10px 30px -10px rgba(${theme.rgbaBase},0.3)';`}
           onmouseout={`this.style.borderColor='rgba(${theme.rgbaBase},0.15)'; this.style.boxShadow='0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)';`}
         >

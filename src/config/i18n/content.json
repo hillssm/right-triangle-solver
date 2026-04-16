@@ -11,7 +11,7 @@
       "intro": "Calculate missing values fast, review formulas, and validate your geometry work with confidence.",
       "toolHeading": "Right Triangle Solver",
       "toolDescription": "Enter any two legs to calculate hypotenuse, area, and perimeter instantly.",
-      "howHeading": "How Right Triangle solver works",
+      "howHeading": "How Right Triangle Solver works",
       "chartHeading": "Reference Values",
       "catalogHeading": "All Tool Calculators",
       "catalogDescription": "Browse every formula tool. Each page has a dedicated calculator built for that title intent.",
@@ -19,19 +19,19 @@
     },
     "about": {
       "title": "About Us | Right Triangle Solver",
-      "description": "Learn why we built Right Triangle solver and how it helps students and professionals solve geometry faster.",
+      "description": "Learn why we built Right Triangle Solver and how it helps students and professionals solve geometry faster.",
       "heading": "About Right Triangle Solver",
-      "body": "Right Triangle solver was built for students, teachers, engineers, and anyone who needs dependable triangle calculations without friction. We focus on speed, clarity, and transparent formulas so every answer is easy to trust."
+      "body": "Right Triangle Solver was built for students, teachers, engineers, and anyone who needs dependable triangle calculations without friction. We focus on speed, clarity, and transparent formulas so every answer is easy to trust."
     },
     "contact": {
       "title": "Contact Us | Right Triangle Solver",
-      "description": "Send feedback, report an issue, or request a feature for Right Triangle solver.",
+      "description": "Send feedback, report an issue, or request a feature for Right Triangle Solver.",
       "heading": "Contact Us",
       "helper": "Questions, ideas, or bug reports are welcome. We usually reply within one business day."
     },
     "terms": {
       "title": "Terms of Use | Right Triangle Solver",
-      "description": "Read the terms for using Right Triangle solver and related educational resources.",
+      "description": "Read the terms for using Right Triangle Solver and related educational resources.",
       "heading": "Terms of Use",
       "updatedLabel": "Last updated: April 12, 2026",
       "body": "By using this website, you agree to use the tools responsibly and verify results for high-stakes work. The service is provided as-is for educational and productivity use. You may not misuse, reverse engineer, or abuse the service. We may update these terms as the product evolves."
@@ -65,7 +65,7 @@
   },
   "ar": {
     "home": {
-      "heading": "Right Triangle solver (Arabic)",
+      "heading": "Right Triangle Solver (Arabic)",
       "intro": "Arabic locale uses RTL layout with English fallback content."
     }
   }

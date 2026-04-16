@@ -15,7 +15,7 @@ const content = bundle.content as Record<string, unknown>;
 const home = (content.home as Record<string, string>) ?? {};
 const siteContent = (content.site as Record<string, string>) ?? {};
 
-const siteTitle = pick(siteContent, 'title', 'Right Triangle Calculator');
+const siteTitle = pick(siteContent, 'title', 'Right Triangle Solver');
 const pageTitle = pick(home, 'title', `${siteTitle} | Geometry`);
 const pageDescription = pick(
   home,
@@ -68,7 +68,7 @@ const chartRows = [
   </section>
 
   <div class="mt-8">
-    <HowItWorks heading={pick(home, 'howHeading', 'How Right Triangle Calculator works')} />
+    <HowItWorks heading={pick(home, 'howHeading', 'How Right Triangle Solver works')} />
   </div>
 
   <div class="mt-8">

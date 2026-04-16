@@ -51,7 +51,7 @@
   const degToRad = (deg) => (deg * Math.PI) / 180;
   const radToDeg = (rad) => (rad * 180) / Math.PI;
   const fmt = (value, digits = 4) => Number(value).toFixed(digits);
-  const HISTORY_KEY = 'right_triangle_calculator_history_v1';
+  const HISTORY_KEY = 'right_triangle_solver_history_v1';
 
   const MODES = {
     legs_ab: {

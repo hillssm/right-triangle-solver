@@ -1,4 +1,4 @@
-﻿---
+---
 import { DEFAULT_LOCALE } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
@@ -15,9 +15,13 @@ const terms = (content.terms as Record<string, string>) ?? {};
   description={pick(terms, 'description', 'Terms of use')}
   canonicalPath="/terms/"
 >
-  <article class="section-shell prose-shell">
-    <h1 class="text-3xl font-bold sm:text-4xl">{pick(terms, 'heading', 'Terms of Use')}</h1>
+  <header class="mb-10 text-center">
+    <p class="font-label text-xs uppercase tracking-widest text-primary">Agreement</p>
+    <h1 class="mt-3 text-3xl font-headline sm:text-4xl lg:text-5xl text-[#5b4000]">{pick(terms, 'heading', 'Terms of Use')}</h1>
     <p class="mt-2 text-xs uppercase tracking-wide text-outline">{pick(terms, 'updatedLabel', '')}</p>
+  </header>
+
+  <article class="section-shell prose-shell">
     <p class="mt-4 text-on-surface-variant">{pick(terms, 'body', 'These are the terms of use.')}</p>
   </article>
 </BaseLayout>

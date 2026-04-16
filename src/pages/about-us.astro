@@ -16,16 +16,15 @@ const about = (content.about as Record<string, string>) ?? {};
   canonicalPath="/about-us/"
   schemaPage="about"
 >
-  <article class="section-shell prose-shell" style="animation: fade-in-up 0.5s cubic-bezier(0.22,1,0.36,1) both;">
-    <div class="flex items-center gap-4 mb-6">
-      <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10">
-        <span class="material-symbols-outlined text-3xl text-primary">groups</span>
-      </div>
-      <div>
-        <h1 class="text-3xl font-headline sm:text-4xl">{pick(about, 'heading', 'About Us')}</h1>
-        <p class="mt-1 text-xs font-label uppercase tracking-widest text-outline">Who we are</p>
-      </div>
+  <header class="mb-10 text-center">
+    <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10">
+      <span class="material-symbols-outlined text-3xl text-primary">groups</span>
     </div>
+    <p class="font-label text-xs uppercase tracking-widest text-outline">Who we are</p>
+    <h1 class="mt-3 text-3xl font-headline sm:text-4xl lg:text-5xl text-[#5b4000]">{pick(about, 'heading', 'About Us')}</h1>
+  </header>
+
+  <article class="section-shell prose-shell" style="animation: fade-in-up 0.5s cubic-bezier(0.22,1,0.36,1) both;">
 
     <div class="mt-8 space-y-8">
       <div class="rounded-xl border border-outline-variant/15 bg-surface-container-lowest/50 p-6">

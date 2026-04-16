@@ -95,14 +95,7 @@ const { heading, description } = Astro.props;
           </ul>
         </details>
 
-        <details class="rounded-xl border border-outline-variant/20 bg-surface-container-lowest/70">
-          <summary class="cursor-pointer px-4 py-3 font-label text-[10px] uppercase tracking-[0.2em] text-outline transition-colors hover:text-on-surface">
-            Show Steps
-          </summary>
-          <ol class="list-decimal space-y-2 px-4 pb-4 pl-8 text-sm text-on-surface-variant" data-step-list>
-            <li class="pl-1">Enter exactly 2 values with at least one side.</li>
-          </ol>
-        </details>
+
       </form>
 
       <div class="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
@@ -160,6 +153,21 @@ const { heading, description } = Astro.props;
         <div class="rounded-lg border border-outline-variant/20 bg-surface-container-lowest/70 p-3"><p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">b:c ratio</p><p class="mt-2 font-mono text-sm text-on-surface" data-result-ratio-b>-</p></div>
         <div class="rounded-lg border border-outline-variant/20 bg-surface-container-lowest/70 p-3"><p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">tan(A)</p><p class="mt-2 font-mono text-sm text-on-surface" data-result-tangent>-</p></div>
       </div>
+
+      <div class="mt-8 border-t border-outline-variant/30 pt-6">
+        <div class="flex items-center gap-3">
+          <div class="h-1.5 w-1.5 rounded-full bg-primary/70"></div>
+          <h3 class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Solution Steps</h3>
+        </div>
+        <div class="mt-4 space-y-4">
+          <ol class="grid gap-3" data-step-list>
+            <li class="rounded-xl border border-outline-variant/10 bg-surface-container-lowest/40 p-3 text-sm text-on-surface-variant transition-colors hover:border-primary/20 hover:bg-surface-container-lowest/60">
+              <span class="mr-2 font-mono text-[10px] text-primary/60">01</span>
+              Enter exactly 2 values with at least one side.
+            </li>
+          </ol>
+        </div>
+      </div>
     </article>
   </div>
 
@@ -197,14 +205,22 @@ const { heading, description } = Astro.props;
       return parsed;
     };
 
-    const renderListItems = (listEl: HTMLElement, items: string[]) => {
+    const renderListItems = (listEl: HTMLElement, items: string[], isStep = false) => {
       const fragment = document.createDocumentFragment();
-      for (const item of items) {
+      items.forEach((item, index) => {
         const li = document.createElement('li');
-        li.className = 'pl-1';
-        li.textContent = item.replace(/alpha/g, 'A').replace(/beta/g, 'B');
+        const text = item.replace(/alpha/g, 'A').replace(/beta/g, 'B');
+        
+        if (isStep) {
+          li.className = 'rounded-xl border border-outline-variant/10 bg-surface-container-lowest/40 p-3 text-sm text-on-surface-variant transition-colors hover:border-primary/20 hover:bg-surface-container-lowest/60 flex items-start gap-3';
+          const num = (index + 1).toString().padStart(2, '0');
+          li.innerHTML = `<span class="mt-0.5 font-mono text-[10px] text-primary/60 flex-shrink-0">${num}</span><span>${text}</span>`;
+        } else {
+          li.className = 'pl-1';
+          li.textContent = text;
+        }
         fragment.append(li);
-      }
+      });
       listEl.replaceChildren(fragment);
     };
 
@@ -324,7 +340,7 @@ const { heading, description } = Astro.props;
         for (const key of ['a', 'b', 'c', 'A', 'B', 'area', 'perimeter', 'h', 's', 'r', 'R', 'p', 'q', 'ratioA', 'ratioB', 'tanA']) r[key].textContent = '-';
         setOriginState(null);
         renderListItems(formulaListEl, DEFAULT_FORMULAS);
-        renderListItems(stepListEl, DEFAULT_STEPS);
+        renderListItems(stepListEl, DEFAULT_STEPS, true);
         pathEl.setAttribute('d', DEFAULT_PATH);
         fillEl.setAttribute('d', DEFAULT_PATH);
         altitudeLineEl.setAttribute('opacity', '0');
@@ -416,7 +432,7 @@ const { heading, description } = Astro.props;
         setOriginState(solution.providedKeys);
         drawTriangle(solution);
         renderListItems(formulaListEl, solution.formulas);
-        renderListItems(stepListEl, solution.steps);
+        renderListItems(stepListEl, solution.steps, true);
         lastSolution = solution;
       };
       const updateUrlState = () => {

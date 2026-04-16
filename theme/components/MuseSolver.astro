@@ -351,10 +351,8 @@ const modeSummaries = [
               <h3 class="text-xl font-headline">Reasoning and History</h3>
               <p class="mt-1 text-sm text-on-surface-variant">Every solve includes a readable method trace and recent entries.</p>
 
-              <ol class="mt-4 list-decimal space-y-2 pl-5 text-sm text-on-surface-variant" data-steps-list>
-                <li class="pl-1">Used Pythagorean theorem: c = sqrt(a^2 + b^2).</li>
-                <li class="pl-1">Computed angle A with atan(a / b), then B = 90 - A.</li>
-                <li class="pl-1">Derived area, perimeter, and circle radii from solved sides.</li>
+              <ol class="mt-4 grid gap-3" data-steps-list>
+                <!-- Steps will be injected here by muse-solver.js -->
               </ol>
 
               <div class="mt-6 border-t border-outline-variant/20 pt-4">

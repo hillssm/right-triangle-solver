@@ -1,15 +1,15 @@
 {
   "en": {
     "site": {
-      "title": "right triangle solver",
+      "title": "Right Triangle Solver",
       "description": "Solve right triangles quickly with clear formulas, visual guidance, and practical examples."
     },
     "home": {
-      "title": "Right Triangle solver | Instant Geometry Helper",
+      "title": "Right Triangle Solver | Instant Geometry Helper",
       "description": "Find missing sides, area, and perimeter in seconds with an accessible right triangle calculator.",
-      "heading": "right triangle solver",
+      "heading": "Right Triangle Solver",
       "intro": "Calculate missing values fast, review formulas, and validate your geometry work with confidence.",
-      "toolHeading": "Right Triangle calculator",
+      "toolHeading": "Right Triangle Solver",
       "toolDescription": "Enter any two legs to calculate hypotenuse, area, and perimeter instantly.",
       "howHeading": "How Right Triangle solver works",
       "chartHeading": "Reference Values",
@@ -18,26 +18,26 @@
       "faqHeading": "Frequently Asked Questions"
     },
     "about": {
-      "title": "About Us | Right Triangle solver",
+      "title": "About Us | Right Triangle Solver",
       "description": "Learn why we built Right Triangle solver and how it helps students and professionals solve geometry faster.",
-      "heading": "About Right Triangle solver",
+      "heading": "About Right Triangle Solver",
       "body": "Right Triangle solver was built for students, teachers, engineers, and anyone who needs dependable triangle calculations without friction. We focus on speed, clarity, and transparent formulas so every answer is easy to trust."
     },
     "contact": {
-      "title": "Contact Us | Right Triangle solver",
+      "title": "Contact Us | Right Triangle Solver",
       "description": "Send feedback, report an issue, or request a feature for Right Triangle solver.",
       "heading": "Contact Us",
       "helper": "Questions, ideas, or bug reports are welcome. We usually reply within one business day."
     },
     "terms": {
-      "title": "Terms of Use | Right Triangle solver",
+      "title": "Terms of Use | Right Triangle Solver",
       "description": "Read the terms for using Right Triangle solver and related educational resources.",
       "heading": "Terms of Use",
       "updatedLabel": "Last updated: April 12, 2026",
       "body": "By using this website, you agree to use the tools responsibly and verify results for high-stakes work. The service is provided as-is for educational and productivity use. You may not misuse, reverse engineer, or abuse the service. We may update these terms as the product evolves."
     },
     "privacy": {
-      "title": "Privacy Policy | Right Triangle solver",
+      "title": "Privacy Policy | Right Triangle Solver",
       "description": "Understand what information Right Triangle solver collects and how it is used.",
       "heading": "Privacy Policy",
       "updatedLabel": "Last updated: April 12, 2026",
@@ -48,7 +48,7 @@
       "description": "Guides, worked examples, and practical tips for right triangle problem solving."
     },
     "sitemap": {
-      "title": "Sitemap | Right Triangle solver",
+      "title": "Sitemap | Right Triangle Solver",
       "description": "Browse all major pages, localized home routes, and blog content.",
       "heading": "Sitemap"
     },
@@ -56,7 +56,7 @@
       "description": "A fast geometry workspace for right-triangle calculations and learning."
     },
     "errors": {
-      "notFoundTitle": "Page Not Found | Right Triangle solver",
+      "notFoundTitle": "Page Not Found | Right Triangle Solver",
       "notFoundDescription": "The page you requested was not found.",
       "notFoundHeading": "We could not find that page",
       "notFoundText": "Try returning to the homepage to continue solving right triangles.",

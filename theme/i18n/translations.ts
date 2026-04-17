@@ -1,4 +1,4 @@
-﻿import commonSource from 'src/config/i18n/common.json';
+import commonSource from 'src/config/i18n/common.json';
 import contentSource from 'src/config/i18n/content.json';
 import faqSource from 'src/config/i18n/faq.json';
 import { DEFAULT_LOCALE, type Locale } from 'theme/i18n/locales';
@@ -9,6 +9,7 @@ type FaqItem = {
   question: string;
   answer: string;
   display?: boolean;
+  category?: string;
 };
 
 const commonData = commonSource as Record<string, Dictionary>;

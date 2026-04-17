@@ -7,6 +7,13 @@ import BaseLayout from 'theme/layouts/BaseLayout.astro';
 const locale = DEFAULT_LOCALE;
 const bundle = getTranslations(locale);
 
+const groupedFaqs = bundle.faq.reduce((acc, item) => {
+  const cat = item.category || 'Detailed FAQs';
+  if (!acc[cat]) acc[cat] = [];
+  acc[cat].push(item);
+  return acc;
+}, {} as Record<string, typeof bundle.faq>);
+
 const pageTitle = "Frequently Asked Questions | Right Triangle Solver";
 const pageDescription = "Find answers to all your questions about the tools, formulas, units, and solutions on the Right Triangle Solver platform.";
 ---
@@ -28,7 +35,24 @@ const pageDescription = "Find answers to all your questions about the tools, for
     </p>
   </header>
 
-  <div class="mt-8 rounded-3xl border border-outline-variant/30 bg-surface-container shadow-[var(--shadow-luxury)] p-8">
-    <Faq heading="Detailed FAQs" items={bundle.faq} />
+  <nav class="sticky top-20 z-20 mb-12 flex flex-wrap justify-center gap-2 rounded-2xl border border-outline-variant/20 bg-surface-container-lowest/80 p-3 backdrop-blur-md shadow-sm">
+    {Object.keys(groupedFaqs).map((category, idx) => (
+      <a 
+        href={`#faq-cat-${idx}`}
+        class="interactive-chip text-[10px] sm:text-xs"
+      >
+        {category}
+      </a>
+    ))}
+  </nav>
+
+  <div class="mt-8 space-y-12">
+    {Object.entries(groupedFaqs).map(([category, items], idx) => (
+      <div id={`faq-cat-${idx}`} class="scroll-mt-32">
+        <div class="rounded-3xl border border-outline-variant/30 bg-surface-container shadow-[var(--shadow-luxury)] p-8">
+          <Faq heading={category} items={items} />
+        </div>
+      </div>
+    ))}
   </div>
 </BaseLayout>

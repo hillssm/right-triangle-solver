@@ -29,8 +29,21 @@ if (!formula) {
 }
 
 const bundle = getTranslations(locale);
-// Pick a few general FAQs for the tool page
-const toolFaqs = bundle.faq.slice(0, 5);
+
+// Contextual FAQ Mapping
+const FAQ_CAT_MAP = {
+  'Trigonometry': 'Trigonometry & Formulas',
+  'Side Calculations': 'General Information',
+  'Area & Geometry': 'Area, Perimeter & Advanced Math',
+  'Advanced Relations': 'Area, Perimeter & Advanced Math',
+  'Special Triangles': 'Area, Perimeter & Advanced Math'
+};
+
+const relevantCat = FAQ_CAT_MAP[formula.category] || 'General Information';
+const toolFaqs = [
+  ...bundle.faq.filter(f => f.category === relevantCat),
+  ...bundle.faq.filter(f => f.category === 'Usage, Errors & Visuals').slice(0, 3)
+];
 
 const formulasRoot = localizePath(locale, '/formulas/');
 const formulaPath = `${formulasRoot}${formula.slug}/`;

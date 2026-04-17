@@ -1,11 +1,11 @@
 ---
 import Faq from 'theme/components/Faq.astro';
-import { 
   getLocaleStaticPaths, 
+  getLocaleFromParams,
   localizePath, 
   type Locale 
 } from 'theme/i18n/locales';
-import { getTranslations } from 'theme/i18n/translations';
+import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 
 export function getStaticPaths() {

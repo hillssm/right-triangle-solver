@@ -93,6 +93,39 @@
       "updatedLabel": "Last updated: April 12, 2026",
       "body": "We minimize data collection. Contact form submissions include only the details you provide. We may collect anonymized analytics to improve usability and performance. We do not sell personal data. You may contact us to request deletion of information submitted through direct messages."
     },
+    "library": {
+      "title": "Formula Library",
+      "description": "Browse theorem references, trigonometry mnemonics, and geometry formulas in a focused dark-mode library."
+    },
+    "practice": {
+      "title": "Practice Mode",
+      "description": "Train with right triangle challenges in an interactive practice workspace with progress tracking."
+    },
+    "formulaHub": {
+      "title": "Formula Directory | Right Triangle Solver",
+      "description": "Every key right-triangle formula with separate pages and quick calculators.",
+      "badge": "Formula Hub",
+      "heading": "All Right Triangle Formulas",
+      "intro": "Every formula has its own page with definitions, usage notes, and a quick calculator.",
+      "faqTitle": "Geometric Knowledge Base",
+      "faqIntro": "Have questions about decimal precision, measurement units, or step-by-step logic?",
+      "faqCta": "Browse Detailed FAQ",
+      "solveTitle": "Ready to Solve?",
+      "solveIntro": "Return to our high-precision right triangle calculator to solve for hypotenuse, area, and angles.",
+      "solveCta": "Instant Tool Home"
+    },
+    "faqHub": {
+      "title": "Frequently Asked Questions | Right Triangle Solver",
+      "description": "Find answers to all your questions about the tools, formulas, units, and solutions on our platform.",
+      "heading": "Frequently Asked Questions",
+      "intro": "Everything you need to know about our solvers, unit systems, and geometric calculations.",
+      "formulasTitle": "Formula Hub",
+      "formulasIntro": "Explore our curated directory of specific right-triangle calculators.",
+      "formulasCta": "Browse Formula Directory",
+      "solveTitle": "Start Solving Now",
+      "solveIntro": "Our multi-variable solver handles any valid right-triangle combination instantly.",
+      "solveCta": "Back to Calculator"
+    },
     "blog": {
       "title": "Geometry Blog",
       "description": "Guides, worked examples, and practical tips for right triangle problem solving."
@@ -100,7 +133,11 @@
     "sitemap": {
       "title": "Sitemap | Right Triangle Solver",
       "description": "Browse all major pages, localized home routes, and blog content.",
-      "heading": "Sitemap"
+      "heading": "Sitemap",
+      "staticPagesTitle": "Static Pages",
+      "homeRoutesTitle": "Localized Home Routes",
+      "blogPostsTitle": "Blog Posts",
+      "blogPaginationTitle": "Blog Pagination"
     },
     "footer": {
       "description": "A fast geometry workspace for right-triangle calculations and learning."
@@ -217,6 +254,59 @@
       "description": "हमारी गोपनीयता नीति को समझें।",
       "heading": "गोपनीयता नीति",
       "updatedLabel": "अंतिम अपडेट: 12 अप्रैल, 2026"
+    },
+    "library": {
+      "title": "सूत्र पुस्तकालय",
+      "description": "एक केंद्रित डार्क-मोड लाइब्रेरी में प्रमेय संदर्भों और ज्यामिति सूत्रों को ब्राउज़ करें।"
+    },
+    "practice": {
+      "title": "अभ्यास मोड",
+      "description": "प्रगति ट्रैकिंग के साथ एक इंटरैक्टिव अभ्यास कार्यक्षेत्र में समकोण त्रिभुज चुनौतियों के साथ अभ्यास करें।"
+    },
+    "formulaHub": {
+      "title": "सूत्र निर्देशिका | समकोण त्रिभुज सॉल्वर",
+      "description": "अलग-अलग पृष्ठों और त्वरित कैलकुलेटर के साथ प्रत्येक मुख्य समकोण-त्रिभुज सूत्र।",
+      "badge": "फॉर्मूला हब",
+      "heading": "सभी समकोण त्रिभुज सूत्र",
+      "intro": "प्रत्येक सूत्र का परिभाषाओं, उपयोग नोटों और एक त्वरित कैलकुलेटर के साथ अपना पृष्ठ है।",
+      "faqTitle": "ज्यामितीय ज्ञान आधार",
+      "faqIntro": "दशमलव सटीकता, माप इकाइयों, या चरण-दर-चरण तर्क के बारे में प्रश्न हैं?",
+      "faqCta": "विस्तृत अक्सर पूछे जाने वाले प्रश्न ब्राउज़ करें",
+      "solveTitle": "हल करने के लिए तैयार हैं?",
+      "solveIntro": "कर्ण, क्षेत्रफल और कोणों को हल करने के लिए हमारे उच्च-सटीक सॉल्वर पर लौटें।",
+      "solveCta": "त्वरित टूल होम"
+    },
+    "faqHub": {
+      "title": "अक्सर पूछे जाने वाले प्रश्न | समकोण त्रिभुज सॉल्वर",
+      "description": "हमारे प्लेटफ़ॉर्म पर टूल, फ़ार्मुलों, इकाइयों और समाधानों के बारे में अपने सभी प्रश्नों के उत्तर खोजें।",
+      "heading": "अक्सर पूछे जाने वाले प्रश्न",
+      "intro": "हमारे सॉल्वर, यूनिट सिस्टम और ज्यामितीय गणनाओं के बारे में वह सब कुछ जो आपको जानना आवश्यक है।",
+      "formulasTitle": "फॉर्मूला हब",
+      "formulasIntro": "विशिष्ट समकोण-त्रिभुज कैलकुलेटरों की हमारी क्यूरेटेड निर्देशिका एक्सप्लोर करें।",
+      "formulasCta": "सूत्र निर्देशिका ब्राउज़ करें",
+      "solveTitle": "अभी हल करना शुरू करें",
+      "solveIntro": "हमारा बहु-परिवर्तनीय सॉल्वर किसी भी मान्य समकोण-त्रिभुज संयोजन को तुरंत संभालता है।",
+      "solveCta": "कैलकुलेटर पर वापस जाएं"
+    },
+    "blog": {
+      "title": "ज्यामिति ब्लॉग",
+      "description": "समकोण त्रिभुज समस्या समाधान के लिए मार्गदर्शिकाएँ, उदाहरण और व्यावहारिक सुझाव।"
+    },
+    "sitemap": {
+       "title": "साइटमैप | समकोण त्रिभुज सॉल्वर",
+       "description": "सभी प्रमुख पृष्ठों, स्थानीय होम मार्गों और ब्लॉग सामग्री को ब्राउज़ करें।",
+       "heading": "साइटमैप",
+       "staticPagesTitle": "स्थिर पृष्ठ",
+       "homeRoutesTitle": "स्थानीयकृत होम मार्ग",
+       "blogPostsTitle": "ब्लॉग पोस्ट",
+       "blogPaginationTitle": "ब्लॉग पृष्ठांकन"
+    },
+    "errors": {
+      "notFoundTitle": "पृष्ठ नहीं मिला",
+      "notFoundDescription": "आपके द्वारा अनुरोधित पृष्ठ नहीं मिल सका।",
+      "notFoundHeading": "हमें वह पृष्ठ नहीं मिला",
+      "notFoundText": "समकोण त्रिभुजों को हल करना जारी रखने के लिए होमपेज पर लौटने का प्रयास करें।",
+      "notFoundCta": "होम पर वापस जाएं"
     }
   },
   "es": {
@@ -323,6 +413,59 @@
       "description": "Entienda cómo se utiliza su información.",
       "heading": "Política de Privacidad",
       "updatedLabel": "Última actualización: 12 de abril de 2026"
+    },
+    "library": {
+      "title": "Biblioteca de Fórmulas",
+      "description": "Explore referencias de teoremas y fórmulas de geometría en una biblioteca enfocada en modo oscuro."
+    },
+    "practice": {
+      "title": "Modo de Práctica",
+      "description": "Entrene con desafíos de triángulos rectángulos en un espacio interactivo con seguimiento de progreso."
+    },
+    "formulaHub": {
+      "title": "Directorio de Fórmulas | Solucionador de Triángulos Rectángulos",
+      "description": "Cada fórmula clave con páginas separadas y calculadoras rápidas.",
+      "badge": "Centro de Fórmulas",
+      "heading": "Todas las Fórmulas de Triángulos Rectángulos",
+      "intro": "Cada fórmula tiene su propia página con definiciones, notas de uso y una calculadora rápida.",
+      "faqTitle": "Base de Conocimientos Geométricos",
+      "faqIntro": "¿Tiene preguntas sobre precisión decimal, unidades de medida o lógica paso a paso?",
+      "faqCta": "Explorar FAQ detallada",
+      "solveTitle": "¿Listo para resolver?",
+      "solveIntro": "Regrese a nuestra calculadora de alta precisión para resolver hipotenusa, área y ángulos.",
+      "solveCta": "Inicio de Herramientas"
+    },
+    "faqHub": {
+      "title": "Preguntas Frecuentes | Solucionador de Triángulos Rectángulos",
+      "description": "Encuentre respuestas sobre herramientas, fórmulas, unidades y soluciones en nuestra plataforma.",
+      "heading": "Preguntas Frecuentes",
+      "intro": "Todo lo que necesita saber sobre nuestros resolutores y cálculos geométricos.",
+      "formulasTitle": "Centro de Fórmulas",
+      "formulasIntro": "Explore nuestro directorio curado de calculadoras específicas.",
+      "formulasCta": "Explorar Directorio de Fórmulas",
+      "solveTitle": "Empiece a resolver ahora",
+      "solveIntro": "Nuestro resolutor multivariable maneja cualquier combinación válida al instante.",
+      "solveCta": "Volver a la Calculadora"
+    },
+    "blog": {
+      "title": "Blog de Geometría",
+      "description": "Guías, ejemplos prácticos y consejos para resolver problemas de triángulos rectángulos."
+    },
+    "sitemap": {
+      "title": "Mapa del sitio | Solucionador de Triángulos Rectángulos",
+      "description": "Explore todas las páginas principales, rutas locales y contenido del blog.",
+      "heading": "Mapa del sitio",
+      "staticPagesTitle": "Páginas Estáticas",
+      "homeRoutesTitle": "Rutas de Inicio Localizadas",
+      "blogPostsTitle": "Entradas del Blog",
+      "blogPaginationTitle": "Paginación del Blog"
+    },
+    "errors": {
+      "notFoundTitle": "Página no encontrada",
+      "notFoundDescription": "La página que solicitó no fue encontrada.",
+      "notFoundHeading": "No pudimos encontrar esa página",
+      "notFoundText": "Intente volver a la página de inicio para continuar resolviendo triángulos.",
+      "notFoundCta": "Volver al Inicio"
     }
   },
   "ru": {
@@ -426,9 +569,62 @@
     },
     "privacy": {
       "title": "Политика конфиденциальности",
-      "description": "Как мы используем ваши данные.",
+      "description": "Узнайте, как используется ваша информация.",
       "heading": "Политика конфиденциальности",
-      "updatedLabel": "Последнее обновление: 12 апреля 2026"
+      "updatedLabel": "Последнее обновление: 12 апреля 2026 г."
+    },
+    "library": {
+      "title": "Библиотека формул",
+      "description": "Просматривайте справочники теорем и геометрические формулы в специализированной библиотеке в темном режиме."
+    },
+    "practice": {
+      "title": "Режим практики",
+      "description": "Тренируйтесь решать задачи с прямоугольными треугольниками в интерактивном рабочем пространстве с отслеживанием прогресса."
+    },
+    "formulaHub": {
+      "title": "Каталог формул | Решатель прямоугольных треугольников",
+      "description": "Каждая ключевая формула прямоугольного треугольника с отдельными страницами и быстрыми калькуляторами.",
+      "badge": "Центр формул",
+      "heading": "Все формулы прямоугольных треугольников",
+      "intro": "У каждой формулы есть своя страница с определениями, примечаниями по использованию и быстрым калькулятором.",
+      "faqTitle": "Геометрическая база знаний",
+      "faqIntro": "Есть вопросы о десятичной точности, единицах измерения или пошаговой логике?",
+      "faqCta": "Просмотреть подробный FAQ",
+      "solveTitle": "Готовы решать?",
+      "solveIntro": "Вернитесь к нашему высокоточному калькулятору, чтобы вычислить гипотенузу, площадь и углы.",
+      "solveCta": "Главная инструментов"
+    },
+    "faqHub": {
+      "title": "Часто задаваемые вопросы | Решатель прямоугольных треугольников",
+      "description": "Найдите ответы на все вопросы об инструментах, формулах, единицах и решениях на нашей платформе.",
+      "heading": "Часто задаваемые вопросы",
+      "intro": "Все, что вам нужно знать о наших решателях, системах единиц и геометрических расчетах.",
+      "formulasTitle": "Центр формул",
+      "formulasIntro": "Изучите наш курируемый каталог специализированных калькуляторов прямоугольных треугольников.",
+      "formulasCta": "Просмотреть каталог формул",
+      "solveTitle": "Начните решать сейчас",
+      "solveIntro": "Наш многопараметрический решатель мгновенно обрабатывает любую допустимую комбинацию.",
+      "solveCta": "Назад к калькулятору"
+    },
+    "blog": {
+      "title": "Блог по геометрии",
+      "description": "Руководства, примеры и практические советы по решению задач с прямоугольными треугольниками."
+    },
+    "sitemap": {
+      "title": "Карта сайта | Решатель прямоугольных треугольников",
+      "description": "Просматривайте все основные страницы, локализованные домашние маршруты и содержимое блога.",
+      "heading": "Карта сайта",
+      "staticPagesTitle": "Статические страницы",
+      "homeRoutesTitle": "Локализованные домашние маршруты",
+      "blogPostsTitle": "Записи в блоге",
+      "blogPaginationTitle": "Пагинация блога"
+    },
+    "errors": {
+      "notFoundTitle": "Страница не найдена",
+      "notFoundDescription": "Запрошенная страница не найдена.",
+      "notFoundHeading": "Мы не смогли найти эту страницу",
+      "notFoundText": "Попробуйте вернуться на главную страницу, чтобы продолжить решение треугольников.",
+      "notFoundCta": "Вернуться на главную"
     }
   },
   "fr": {
@@ -532,9 +728,62 @@
     },
     "privacy": {
       "title": "Politique de Confidentialité",
-      "description": "Comprenez comment nous traitons vos données.",
+      "description": "Comprenez comment vos informations sont utilisées.",
       "heading": "Politique de Confidentialité",
-      "updatedLabel": "Mis à jour: 12 avril 2026"
+      "updatedLabel": "Dernière mise à jour : 12 avril 2026"
+    },
+    "library": {
+      "title": "Bibliothèque de Formules",
+      "description": "Parcourez les références de théorèmes et les formules de géométrie dans une bibliothèque dédiée en mode sombre."
+    },
+    "practice": {
+      "title": "Mode Entraînement",
+      "description": "Entraînez-vous avec des défis de triangles rectangles dans un espace interactif avec suivi de progression."
+    },
+    "formulaHub": {
+      "title": "Répertoire des Formules | Résolveur de Triangle Rectangle",
+      "description": "Chaque formule clé avec des pages séparées et des calculateurs rapides.",
+      "badge": "Hub de Formules",
+      "heading": "Toutes les Formules de Triangle Rectangle",
+      "intro": "Chaque formule a sa propre page avec définitions, notes d'utilisation et un calculateur rapide.",
+      "faqTitle": "Base de Connaissances Géométriques",
+      "faqIntro": "Des questions sur la précision décimale, les unités ou la logique étape par étape ?",
+      "faqCta": "Parcourir la FAQ détaillée",
+      "solveTitle": "Prêt à résoudre ?",
+      "solveIntro": "Revenez à notre calculateur de haute précision pour résoudre l'hypoténuse, l'aire et les angles.",
+      "solveCta": "Accueil des Outils"
+    },
+    "faqHub": {
+      "title": "Questions Fréquemment Posées | Résolveur de Triangle Rectangle",
+      "description": "Trouvez des réponses sur les outils, formules, unités et solutions sur notre plateforme.",
+      "heading": "Questions Fréquemment Posées",
+      "intro": "Tout ce que vous devez savoir sur nos outils et calculs géométriques.",
+      "formulasTitle": "Hub de Formules",
+      "formulasIntro": "Explorez notre répertoire de calculateurs de triangle rectangle spécifiques.",
+      "formulasCta": "Parcourir le Répertoire des Formules",
+      "solveTitle": "Commencer à résoudre",
+      "solveIntro": "Notre solveur multi-variable gère instantanément toute combinaison valide.",
+      "solveCta": "Retour au Calculateur"
+    },
+    "blog": {
+      "title": "Blog de Géométrie",
+      "description": "Guides, exemples et conseils pratiques pour résoudre les problèmes de triangle rectangle."
+    },
+    "sitemap": {
+      "title": "Plan du site | Résolveur de Triangle Rectangle",
+      "description": "Parcourez tous les itinéraires principaux, les itinéraires locaux et le contenu du blog.",
+      "heading": "Plan du site",
+      "staticPagesTitle": "Pages Statiques",
+      "homeRoutesTitle": "Itinéraires d'Accueil Localisés",
+      "blogPostsTitle": "Articles de Blog",
+      "blogPaginationTitle": "Pagination du Blog"
+    },
+    "errors": {
+      "notFoundTitle": "Page non trouvée",
+      "notFoundDescription": "La page demandée est introuvable.",
+      "notFoundHeading": "Nous n'avons pas pu trouver cette page",
+      "notFoundText": "Essayez de revenir à la page d'accueil pour continuer à résoudre des triangles.",
+      "notFoundCta": "Retour à l'Accueil"
     }
   },
   "de": {
@@ -607,6 +856,93 @@
     },
     "footer": {
       "description": "Ein schneller Geometrie-Arbeitsbereich für Berechnungen am rechtwinkligen Dreieck und zum Lernen."
+    },
+    "about": {
+      "title": "Über Uns | Rechtwinkliger Dreiecksrechner",
+      "description": "Erfahren Sie mehr über das Projekt und unsere Mission, die Geometrie zu vereinfachen.",
+      "heading": "Über Uns",
+      "subHeading": "Wer wir sind",
+      "missionTitle": "Unsere Mission",
+      "missionBody": "Wir haben dieses Tool entwickelt, um die Geometrie für Schüler und Profis gleichermaßen zu vereinfachen.",
+      "precisionTitle": "Präzision",
+      "precisionDesc": "Genaue Berechnungen bis zu 4+ Dezimalstellen.",
+      "instantTitle": "Sofort",
+      "instantDesc": "Ergebnisse in Millisekunden mit Live-Visualisierung.",
+      "educationalTitle": "Pädagogisch",
+      "educationalDesc": "Schritt-für-Schritt-Lösungen, die Ihnen helfen, die Mathematik zu verstehen.",
+      "promiseTitle": "Unser Versprechen",
+      "promiseBody": "Kostenlos, werbefrei und mit Sorgfalt entwickelt. Wir respektieren Ihre Privatsphäre."
+    },
+    "contact": {
+      "title": "Kontakt | Rechtwinkliger Dreiecksrechner",
+      "description": "Senden Sie Feedback oder melden Sie ein Problem.",
+      "heading": "Kontaktieren Sie uns",
+      "helper": "Fragen und Ideen sind willkommen. Wir antworten in der Regel innerhalb eines Arbeitstages."
+    },
+    "terms": {
+      "title": "Nutzungsbedingungen",
+      "description": "Lesen Sie die Bedingungen für die Nutzung unserer Bildungsressourcen.",
+      "heading": "Nutzungsbedingungen",
+      "updatedLabel": "Zuletzt aktualisiert: 12. April 2026"
+    },
+    "privacy": {
+      "title": "Datenschutzrichtlinie",
+      "description": "Verstehen Sie, wie Ihre Informationen verwendet werden.",
+      "heading": "Datenschutzrichtlinie",
+      "updatedLabel": "Zuletzt aktualisiert: 12. April 2026"
+    },
+    "library": {
+      "title": "Formel-Bibliothek",
+      "description": "Durchsuchen Sie Theorem-Referenzen und Geometrie-Formeln in einer fokussierten Bibliothek im Dark-Mode."
+    },
+    "practice": {
+      "title": "Übungsmodus",
+      "description": "Trainieren Sie mit Herausforderungen zu rechtwinkligen Dreiecken in einem interaktiven Arbeitsbereich mit Fortschrittskontrolle."
+    },
+    "formulaHub": {
+      "title": "Formelverzeichnis | Rechtwinkliger Dreiecksrechner",
+      "description": "Jede wichtige Formel mit separaten Seiten und Schnellrechnern.",
+      "badge": "Formel-Hub",
+      "heading": "Alle Formeln für rechtwinklige Dreiecke",
+      "intro": "Jede Formel hat eine eigene Seite mit Definitionen, Nutzungshinweisen und einem Schnellrechner.",
+      "faqTitle": "Geometrische Wissensbasis",
+      "faqIntro": "Haben Sie Fragen zur Dezimalpräzision, zu Maßeinheiten oder zur Schritt-für-Schritt-Logik?",
+      "faqCta": "Detaillierte FAQ durchsuchen",
+      "solveTitle": "Bereit zum Lösen?",
+      "solveIntro": "Kehren Sie zu unserem Hochpräzisionsrechner zurück, um Hypotenuse, Fläche und Winkel zu berechnen.",
+      "solveCta": "Tool-Startseite"
+    },
+    "faqHub": {
+      "title": "Häufig gestellte Fragen | Rechtwinkliger Dreiecksrechner",
+      "description": "Finden Sie Antworten auf alle Ihre Fragen zu den Tools, Formeln, Einheiten und Lösungen auf unserer Plattform.",
+      "heading": "Häufig gestellte Fragen",
+      "intro": "Alles, was Sie über unsere Rechner, Einheitensysteme und geometrischen Berechnungen wissen müssen.",
+      "formulasTitle": "Formel-Hub",
+      "formulasIntro": "Erkunden Sie unser kuratiertes Verzeichnis spezifischer Rechner für rechtwinklige Dreiecke.",
+      "formulasCta": "Formelverzeichnis durchsuchen",
+      "solveTitle": "Jetzt mit dem Lösen beginnen",
+      "solveIntro": "Unser Multivariablen-Rechner verarbeitet jede gültige Kombination sofort.",
+      "solveCta": "Zurück zum Rechner"
+    },
+    "blog": {
+      "title": "Geometrie-Blog",
+      "description": "Anleitungen, Beispiele und praktische Tipps zur Lösung von Problemen mit rechtwinkligen Dreiecken."
+    },
+    "sitemap": {
+      "title": "Sitemap | Rechtwinkliger Dreiecksrechner",
+      "description": "Durchsuchen Sie alle wichtigen Seiten, lokalisierten Home-Routen und Blog-Inhalte.",
+      "heading": "Sitemap",
+      "staticPagesTitle": "Statische Seiten",
+      "homeRoutesTitle": "Lokalisierte Home-Routen",
+      "blogPostsTitle": "Blog-Beiträge",
+      "blogPaginationTitle": "Blog-Seitenindex"
+    },
+    "errors": {
+      "notFoundTitle": "Seite nicht gefunden",
+      "notFoundDescription": "Die angeforderte Seite wurde nicht gefunden.",
+      "notFoundHeading": "Wir konnten diese Seite nicht finden",
+      "notFoundText": "Versuchen Sie, zur Startseite zurückzukehren, um mit der Berechnung von Dreiecken fortzufahren.",
+      "notFoundCta": "Zurück zur Startseite"
     }
   },
   "it": {
@@ -713,6 +1049,59 @@
       "description": "Comprendi come vengono utilizzate le tue informazioni.",
       "heading": "Informativa sulla Privacy",
       "updatedLabel": "Ultimo aggiornamento: 12 aprile 2026"
+    },
+    "library": {
+      "title": "Biblioteca delle Formule",
+      "description": "Sfoglia i riferimenti dei teoremi e le formule di geometria in una biblioteca dedicata in modalità oscura."
+    },
+    "practice": {
+      "title": "Modalità Pratica",
+      "description": "Allenati con sfide sui triangoli rettangoli in uno spazio interattivo con tracciamento dei progressi."
+    },
+    "formulaHub": {
+      "title": "Directory delle Formule | Risolutore di Triangoli Rettangoli",
+      "description": "Ogni formula chiave con pagine separate e calcolatori rapidi.",
+      "badge": "Hub delle Formule",
+      "heading": "Tutte le Formule per il Triangolo Rettangolo",
+      "intro": "Ogni formula ha la sua pagina con definizioni, note sull'uso e un calcolatore rapido.",
+      "faqTitle": "Base di Conoscenza Geometrica",
+      "faqIntro": "Hai domande sulla precisione decimale, sulle unità di misura o sulla logica passo-passo?",
+      "faqCta": "Sfoglia le FAQ dettagliate",
+      "solveTitle": "Pronto a risolvere?",
+      "solveIntro": "Torna al nostro calcolatore ad alta precisione per risolvere ipotenusa, area e angoli.",
+      "solveCta": "Home degli Strumenti"
+    },
+    "faqHub": {
+      "title": "Domande Frequenti | Risolutore di Triangoli Rettangoli",
+      "description": "Trova risposte su strumenti, formule, unità e soluzioni sulla nostra piattaforma.",
+      "heading": "Domande Frequenti",
+      "intro": "Tutto quello che devi sapere sui nostri risolutori e calcoli geometrici.",
+      "formulasTitle": "Hub delle Formule",
+      "formulasIntro": "Esplora la nostra directory di calcolatori specifici per triangoli rettangoli.",
+      "formulasCta": "Sfoglia la Directory delle Formule",
+      "solveTitle": "Inizia a risolvere ora",
+      "solveIntro": "Il nostro risolutore multivariabile gestisce istantaneamente qualsiasi combinazione valida.",
+      "solveCta": "Torna al Calcolatore"
+    },
+    "blog": {
+      "title": "Blog di Geometria",
+      "description": "Guide, esempi e consigli pratici per risolvere problemi sui triangoli rettangoli."
+    },
+    "sitemap": {
+      "title": "Mappa del sito | Risolutore di Triangoli Rettangoli",
+      "description": "Sfoglia tutte le pagine principali, i percorsi locali e i contenuti del blog.",
+      "heading": "Mappa del sito",
+      "staticPagesTitle": "Pagine statiche",
+      "homeRoutesTitle": "Percorsi home localizzati",
+      "blogPostsTitle": "Articoli del blog",
+      "blogPaginationTitle": "Paginazione del blog"
+    },
+    "errors": {
+      "notFoundTitle": "Pagina non trovata",
+      "notFoundDescription": "La pagina richiesta non è stata trovata.",
+      "notFoundHeading": "Non siamo riusciti a trovare quella pagina",
+      "notFoundText": "Prova a tornare alla homepage per continuare a risolvere i triangoli.",
+      "notFoundCta": "Torna alla Home"
     }
   },
   "pt": {
@@ -785,6 +1174,56 @@
     },
     "footer": {
       "description": "Um espaço de trabalho geométrico rápido para cálculos de triângulos retângulos e aprendizado."
+    },
+    "about": {
+      "title": "Sobre Nós | Calculadora de Triângulos Retângulos",
+      "description": "Saiba mais sobre o projeto e nossa missão de simplificar a geometria.",
+      "heading": "Sobre Nós",
+      "subHeading": "Quem somos",
+      "missionTitle": "Nossa Missão",
+      "missionBody": "Construímos esta ferramenta para simplificar a geometria para estudantes e profissionais interessados.",
+      "precisionTitle": "Precisão",
+      "precisionDesc": "Cálculos exatos até 4+ casas decimais.",
+      "instantTitle": "Instantâneo",
+      "instantDesc": "Resultados em milissegundos com visualização ao vivo.",
+      "educationalTitle": "Educativo",
+      "educationalDesc": "Soluções passo a passo para ajudá-lo a entender a matemática.",
+      "promiseTitle": "Nossa Promessa",
+      "promiseBody": "Gratuito, sem anúncios e projetado com cuidado. Respeitamos sua privacidade."
+    },
+    "contact": {
+      "title": "Contato | Calculadora de Triângulos Retângulos",
+      "description": "Envie feedback ou relate um problema.",
+      "heading": "Contate-nos",
+      "helper": "Dúvidas e ideias são bem-vindas. Geralmente respondemos em um dia útil."
+    },
+    "terms": {
+      "title": "Termos de Uso",
+      "description": "Leia os termos de uso dos nossos recursos educacionais.",
+      "heading": "Termos de Uso",
+      "updatedLabel": "Última atualização: 12 de abril de 2026"
+    },
+    "privacy": {
+      "title": "Política de Privacidade",
+      "description": "Entenda como suas informações são usadas.",
+      "heading": "Política de Privacidade",
+      "updatedLabel": "Última atualização: 12 de abril de 2026"
+    },
+    "blog": {
+      "title": "Blog de Geometria",
+      "description": "Guias, exemplos e dicas práticas para resolver problemas de triângulos retângulos."
+    },
+    "sitemap": {
+      "title": "Mapa do Site | Calculadora de Triângulos Retângulos",
+      "description": "Navegue por todas as páginas principais, rotas locais e conteúdo do blog.",
+      "heading": "Mapa do Site"
+    },
+    "errors": {
+      "notFoundTitle": "Página não encontrada",
+      "notFoundDescription": "A página que você solicitou não foi encontrada.",
+      "notFoundHeading": "Não conseguimos encontrar essa página",
+      "notFoundText": "Tente voltar para a página inicial.",
+      "notFoundCta": "Voltar ao Início"
     }
   },
   "bn": {
@@ -857,6 +1296,93 @@
     },
     "footer": {
       "description": "সমকোণী-ত্রিভুজ গণনা এবং শেখার জন্য একটি দ্রুত জ্যামিতি কর্মক্ষেত্র।"
+    },
+    "about": {
+      "title": "আমাদের সম্পর্কে | সমকোণী ত্রিভুজ সমাধানকারী",
+      "description": "প্রকল্প এবং জ্যামিতি সহজ করার আমাদের লক্ষ্য সম্পর্কে আরও জানুন।",
+      "heading": "আমাদের সম্পর্কে",
+      "subHeading": "আমরা কে",
+      "missionTitle": "আমাদের লক্ষ্য",
+      "missionBody": "আমরা শিক্ষার্থী এবং পেশাদারদের জন্য জ্যামিতি সহজ করতে এই সরঞ্জামটি তৈরি করেছি।",
+      "precisionTitle": "নির্ভুলতা",
+      "precisionDesc": "৪+ দশমিক স্থান পর্যন্ত সঠিক গণনা।",
+      "instantTitle": "তাৎক্ষণিক",
+      "instantDesc": "লাইভ ভিজ্যুয়ালাইজেশন সহ মিলিসেকেন্ডে ফলাফল।",
+      "educationalTitle": "শিক্ষামূলক",
+      "educationalDesc": "গণিত বুঝতে সাহায্য করার জন্য ধাপে ধাপে সমাধান।",
+      "promiseTitle": "আমাদের অঙ্গীকার",
+      "promiseBody": "বিনামূল্যে, বিজ্ঞাপন মুক্ত এবং যত্ন সহকারে ডিজাইন করা। আমরা আপনার গোপনীয়তাকে সম্মান করি।"
+    },
+    "contact": {
+      "title": "আমাদের সাথে যোগাযোগ করুন | সমকোণী ত্রিভুজ সমাধানকারী",
+      "description": "মতামত পাঠান বা কোনো সমস্যার কথা জানান।",
+      "heading": "যোগাযোগ",
+      "helper": "প্রশ্ন এবং ধারণা সাদরে আমন্ত্রিত। আমরা সাধারণত এক কার্যদিবসের মধ্যে উত্তর দেই।"
+    },
+    "terms": {
+      "title": "ব্যবহারের শর্তাবলী",
+      "description": "আমাদের শিক্ষামূলক সংস্থান ব্যবহারের শর্তাবলী পড়ুন।",
+      "heading": "ব্যবহারের শর্তাবলী",
+      "updatedLabel": "সর্বশেষ আপডেট: ১২ এপ্রিল ২০২৬"
+    },
+    "privacy": {
+      "title": "গোপনীয়তা নীতি",
+      "description": "আপনার তথ্য কীভাবে ব্যবহৃত হয় তা বুঝুন।",
+      "heading": "গোপনীয়তা নীতি",
+      "updatedLabel": "সর্বশেষ আপডেট: ১২ এপ্রিল ২০২৬"
+    },
+    "library": {
+      "title": "সূত্র লাইব্রেরি",
+      "description": "একটি ডেডিকেটেড ডার্ক মোড লাইব্রেরিতে উপপাদ্য এবং জ্যামিতি সূত্রগুলি ব্রাউজ করুন।"
+    },
+    "practice": {
+      "title": "অনুশীলন মোড",
+      "description": "অগ্রগতি ট্র্যাকিং সহ একটি ইন্টারেক্টিভ ওয়ার্কস্পেসে সমকোণী ত্রিভুজ চ্যালেঞ্জগুলির সাথে প্রশিক্ষণ দিন।"
+    },
+    "formulaHub": {
+      "title": "সূত্র ডিরেক্টরি | সমকোণী ত্রিভুজ সমাধানকারী",
+      "description": "প্রতিটি মূল সূত্রের জন্য আলাদা পৃষ্ঠা এবং দ্রুত ক্যালকুলেটর।",
+      "badge": "সূত্র হাব",
+      "heading": "সব সমকোণী ত্রিভুজ সূত্র",
+      "intro": "প্রতিটি সূত্রের নিজস্ব পৃষ্ঠা রয়েছে যেখানে সংজ্ঞা এবং ক্যালকুলেটর দেওয়া আছে।",
+      "faqTitle": "জ্যামিতিক জ্ঞান ভাণ্ডার",
+      "faqIntro": "নির্ভুলতা বা ধাপে ধাপে লজিক সম্পর্কে প্রশ্ন আছে?",
+      "faqCta": "বিস্তারিত FAQ ব্রাউজ করুন",
+      "solveTitle": "সমাধান করতে প্রস্তুত?",
+      "solveIntro": "আমাদের উচ্চ-নির্ভুল ক্যালকুলেটরে ফিরে যান।",
+      "solveCta": "টুল হোম"
+    },
+    "faqHub": {
+      "title": "সচরাচর জিজ্ঞাস্য প্রশ্নাবলী | সমকোণী ত্রিভুজ সমাধানকারী",
+      "description": "আমাদের প্ল্যাটফর্মের টুলস এবং সূত্র সম্পর্কে উত্তর খুঁজুন।",
+      "heading": "সচরাচর জিজ্ঞাস্য প্রশ্নাবলী",
+      "intro": "আমাদের গণনা সম্পর্কে আপনার যা জানা দরকার।",
+      "formulasTitle": "সূত্র হাব",
+      "formulasIntro": "আমাদের বিশেষ ক্যালকুলেটর ডিরেক্টরি অন্বেষণ করুন।",
+      "formulasCta": "সূত্র ডিরেক্টরি ব্রাউজ করুন",
+      "solveTitle": "এখনই সমাধান শুরু করুন",
+      "solveIntro": "আমাদের সমাধানকারী তাৎক্ষণিকভাবে যেকোনো বৈধ সমন্বয় পরিচালনা করে।",
+      "solveCta": "ক্যালকুলেটরে ফিরে যান"
+    },
+    "blog": {
+      "title": "জ্যামিতি ব্লগ",
+      "description": "সমস্যা সমাধানের জন্য গাইড এবং উদাহরণ।"
+    },
+    "sitemap": {
+      "title": "সাইটম্যাপ",
+      "description": "সাইটের গঠন ব্রাউজ করুন।",
+      "heading": "সাইটম্যাপ",
+      "staticPagesTitle": "স্থির পেজ",
+      "homeRoutesTitle": "স্থানীয় হোম রুট",
+      "blogPostsTitle": "ব্লগ পোস্ট",
+      "blogPaginationTitle": "প্যাগিনেশন"
+    },
+    "errors": {
+      "notFoundTitle": "পাতাটি পাওয়া যায়নি",
+      "notFoundDescription": "আপনার অনুরোধ করা পাতাটি পাওয়া যায়নি।",
+      "notFoundHeading": "আমরা সেই পাতাটি খুঁজে পাইনি",
+      "notFoundText": "হোমপেজে ফিরে গিয়ে সমাধান চালিয়ে যান।",
+      "notFoundCta": "হোমে ফিরে যান"
     }
   },
   "ja": {
@@ -960,9 +1486,62 @@
     },
     "privacy": {
       "title": "プライバシーポリシー",
-      "description": "情報の使用方法について理解する。",
+      "description": "お客様の情報がどのように使用されるかをご理解ください。",
       "heading": "プライバシーポリシー",
       "updatedLabel": "最終更新日: 2026年4月12日"
+    },
+    "library": {
+      "title": "公式ライブラリ",
+      "description": "定理リファレンスや幾何学公式を、集中できるダークモードライブラリで閲覧できます。"
+    },
+    "practice": {
+      "title": "練習モード",
+      "description": "進捗管理機能付きのインタラクティブな練習ワークスペースで直角三角形の課題に取り組みましょう。"
+    },
+    "formulaHub": {
+      "title": "公式ディレクトリ | 直角三角形ソルバー",
+      "description": "すべての主要な直角三角形の公式を提供します。",
+      "badge": "公式ハブ",
+      "heading": "すべての直角三角形の公式",
+      "intro": "すべての公式には専用の計算機があります。",
+      "faqTitle": "幾何学ナレッジベース",
+      "faqIntro": "質問がありますか？",
+      "faqCta": "FAQを閲覧する",
+      "solveTitle": "解く準備はできましたか？",
+      "solveIntro": "計算機に戻りましょう。",
+      "solveCta": "ホーム"
+    },
+    "faqHub": {
+      "title": "よくある質問 | 直角三角形ソルバー",
+      "description": "よくある質問の回答が見つかります。",
+      "heading": "よくある質問",
+      "intro": "ソルバーと幾何学計算について。",
+      "formulasTitle": "公式ハブ",
+      "formulasIntro": "公式ディレクトリを探索してください。",
+      "formulasCta": "ディレクトリを閲覧",
+      "solveTitle": "今すぐ解き始める",
+      "solveIntro": "即座に計算します。",
+      "solveCta": "計算機に戻る"
+    },
+    "blog": {
+      "title": "幾何学ブログ",
+      "description": "問題解決のためのガイドやヒント。"
+    },
+    "sitemap": {
+      "title": "サイトマップ",
+      "description": "サイトマップを閲覧。",
+      "heading": "サイトマップ",
+      "staticPagesTitle": "静的ページ",
+      "homeRoutesTitle": "ホームルート",
+      "blogPostsTitle": "ブログ記事",
+      "blogPaginationTitle": "ページネーション"
+    },
+    "errors": {
+      "notFoundTitle": "ページが見つかりません",
+      "notFoundDescription": "ページは見つかりませんでした。",
+      "notFoundHeading": "見つかりません",
+      "notFoundText": "ホームページに戻りましょう。",
+      "notFoundCta": "ホームに戻る"
     }
   },
   "ko": {
@@ -1069,6 +1648,59 @@
       "description": "귀하의 정보가 어떻게 사용되는지 이해하십시오.",
       "heading": "개인정보 처리방침",
       "updatedLabel": "최종 업데이트: 2026년 4월 12일"
+    },
+    "library": {
+      "title": "공식 라이브러리",
+      "description": "정리 참조 및 기하학 공식을 집중력 있는 다크 모드 라이브러리에서 찾아보세요."
+    },
+    "practice": {
+      "title": "연습 모드",
+      "description": "진행률 추적 기능이 있는 대화형 연습 워크スペース에서 직각 삼각형 문제로 훈련하세요."
+    },
+    "formulaHub": {
+      "title": "공식 디렉토리 | 직각 삼각형 솔버",
+      "description": "모든 주요 직각 삼각형 공식에 대한 개별 페이지와 빠른 계산기를 제공합니다.",
+      "badge": "공식 허브",
+      "heading": "모든 직각 삼각형 공식",
+      "intro": "모든 공식에는 정의, 사용법 노트 및 빠른 계산기가 포함된 전용 페이지가 있습니다.",
+      "faqTitle": "기하학 지식 베이스",
+      "faqIntro": "소수점 정밀도, 측정 단위 또는 단계별 로직에 대해 궁금한 점이 있으신가요?",
+      "faqCta": "상세 FAQ 찾아보기",
+      "solveTitle": "문제를 풀 준비가 되셨나요?",
+      "solveIntro": "빗변, 넓이 및 각도를 계산하려면 고정밀 솔버로 돌아가세요.",
+      "solveCta": "도구 홈"
+    },
+    "faqHub": {
+      "title": "자주 묻는 질문 | 직각 삼각형 솔버",
+      "description": "플랫폼의 도구, 공식, 단위 및 솔루션에 대한 모든 질문의 답변을 확인하세요.",
+      "heading": "자주 묻는 질문",
+      "intro": "솔버, 단위계 및 기하학적 계산에 대해 알아야 할 모든 것.",
+      "formulasTitle": "공식 허브",
+      "formulasIntro": "엄선된 특정 직각 삼각형 계산기 디렉토리를 탐색해 보세요.",
+      "formulasCta": "공식 디렉토리 찾아보기",
+      "solveTitle": "지금 풀기 시작하기",
+      "solveIntro": "당사의 다변수 솔버는 유효한 조합을 즉시 처리합니다.",
+      "solveCta": "계산기로 돌아가기"
+    },
+    "blog": {
+      "title": "기하학 블로그",
+      "description": "직각 삼각형 문제 해결을 위한 가이드, 실습 사례 및 실용적인 팁."
+    },
+    "sitemap": {
+      "title": "사이트맵 | 직각 삼각형 솔버",
+      "description": "모든 주요 페이지, 로컬 홈 경로 및 블로그 콘텐츠를 탐색하세요.",
+      "heading": "사이트맵",
+      "staticPagesTitle": "정적 페이지",
+      "homeRoutesTitle": "로컬 홈 경로",
+      "blogPostsTitle": "블로그 게시물",
+      "blogPaginationTitle": "블로그 페이지네이션"
+    },
+    "errors": {
+      "notFoundTitle": "페이지를 찾을 수 없음",
+      "notFoundDescription": "요청하신 페이지를 찾을 수 없습니다.",
+      "notFoundHeading": "페이지를 찾을 수 없습니다",
+      "notFoundText": "홈페이지로 돌아가 직각 삼각형 풀기를 계속하세요.",
+      "notFoundCta": "홈으로 돌아가기"
     }
   },
   "ms": {
@@ -1175,6 +1807,59 @@
       "description": "Fahami bagaimana maklumat anda digunakan.",
       "heading": "Dasar Privasi",
       "updatedLabel": "Kemas kini terakhir: 12 April 2026"
+    },
+    "library": {
+      "title": "Perpustakaan Formula",
+      "description": "Layari rujukan teorem dan formula geometri dalam perpustakaan mod gelap yang terfokus."
+    },
+    "practice": {
+      "title": "Mod Latihan",
+      "description": "Berlatih dengan cabaran segitiga bersudut tegak dalam ruang kerja interaktif dengan penjejakan kemajuan."
+    },
+    "formulaHub": {
+      "title": "Direktori Formula | Penyelesai Segitiga Bersudut Tegak",
+      "description": "Setiap formula utama dengan halaman berasingan dan kalkulator pantas.",
+      "badge": "Hab Formula",
+      "heading": "Semua Formula Segitiga Bersudut Tegak",
+      "intro": "Setiap formula mempunyai halaman sendiri dengan definisi dan kalkulator pantas.",
+      "faqTitle": "Pangkalan Pengetahuan Geometrik",
+      "faqIntro": "Ada soalan tentang ketepatan perpuluhan atau logik langkah demi langkah?",
+      "faqCta": "Layari Soalan Lazim Terperinci",
+      "solveTitle": "Sedia untuk Menyelesaikan?",
+      "solveIntro": "Kembali ke kalkulator ketepatan tinggi kami.",
+      "solveCta": "Laman Utama Alat"
+    },
+    "faqHub": {
+      "title": "Soalan Lazim | Penyelesai Segitiga Bersudut Tegak",
+      "description": "Cari jawapan tentang alat dan formula di platform kami.",
+      "heading": "Soalan Lazim",
+      "intro": "Semua yang anda perlu tahu tentang pengiraan kami.",
+      "formulasTitle": "Hab Formula",
+      "formulasIntro": "Terokai direktori kalkulator khusus kami.",
+      "formulasCta": "Layari Direktori Formula",
+      "solveTitle": "Mula Menyelesaikan Sekarang",
+      "solveIntro": "Penyelasaian kami mengendalikan mana-mana kombinasi sah serta-merta.",
+      "solveCta": "Kembali ke Kalkulator"
+    },
+    "blog": {
+      "title": "Blog Geometri",
+      "description": "Panduan dan contoh penyelesaian masalah."
+    },
+    "sitemap": {
+      "title": "Peta Laman",
+      "description": "Layari struktur laman.",
+      "heading": "Peta Laman",
+      "staticPagesTitle": "Halaman Statik",
+      "homeRoutesTitle": "Laluan Utama Setempat",
+      "blogPostsTitle": "Siaran Blog",
+      "blogPaginationTitle": "Penomoran Halaman"
+    },
+    "errors": {
+      "notFoundTitle": "Halaman Tidak Ditemui",
+      "notFoundDescription": "Halaman yang anda minta tidak ditemui.",
+      "notFoundHeading": "Kami tidak dapat mencari halaman itu",
+      "notFoundText": "Cuba kembali ke laman utama.",
+      "notFoundCta": "Kembali ke Utama"
     }
   },
   "pl": {
@@ -1276,11 +1961,58 @@
       "heading": "Warunki Użytkowania",
       "updatedLabel": "Ostatnia aktualizacja: 12 kwietnia 2026"
     },
-    "privacy": {
-      "title": "Polityka Prywatności",
-      "description": "Zrozum, jak wykorzystywane są Twoje dane.",
-      "heading": "Polityka Prywatności",
-      "updatedLabel": "Ostatnia aktualizacja: 12 kwietnia 2026"
+    "library": {
+      "title": "Biblioteka Formuł",
+      "description": "Przeglądaj odniesienia do twierdzeń i formuły geometrii w dedykowanej bibliotece w trybie ciemnym."
+    },
+    "practice": {
+      "title": "Tryb Praktyki",
+      "description": "Trenuj z wyzwaniami trójkąta prostokątnego w interaktywnej przestrzeni z śledzeniem postępów."
+    },
+    "formulaHub": {
+      "title": "Katalog Formuł | Rozwiązywanie Trójkątów Prostokątnych",
+      "description": "Każda kluczowa formuła z osobnymi stronami i szybkimi kalkulatorami.",
+      "badge": "Centrum Formuł",
+      "heading": "Wszystkie Formuły Trójkąta Prostokątnego",
+      "intro": "Każda formuła ma swoją stronę z definicjami, uwagami i kalkulatorem.",
+      "faqTitle": "Baza Wiedzy Geometrycznej",
+      "faqIntro": "Masz pytania o precyzję lub logikę krok po kroku?",
+      "faqCta": "Przeglądaj szczegółowe FAQ",
+      "solveTitle": "Gotowy do rozwiązywania?",
+      "solveIntro": "Wróć do naszego kalkulatora wysokiej precyzji.",
+      "solveCta": "Strona główna narzędzi"
+    },
+    "faqHub": {
+      "title": "Najczęstsze Pytania | Rozwiązywanie Trójkątów Prostokątnych",
+      "description": "Znajdź odpowiedzi na pytania o narzędzia i formuły na naszej platformie.",
+      "heading": "Najczęstsze Pytania",
+      "intro": "Wszystko, co musisz wiedzieć o naszych obliczeniach.",
+      "formulasTitle": "Centrum Formuł",
+      "formulasIntro": "Eksploruj nasz katalog specyficznych kalkulatorów.",
+      "formulasCta": "Przeglądaj Katalog Formuł",
+      "solveTitle": "Zacznij rozwiązywać teraz",
+      "solveIntro": "Nasz kalkulator obsługuje każdą poprawną kombinację.",
+      "solveCta": "Powrót do Kalkulatora"
+    },
+    "blog": {
+      "title": "Blog o Geometrii",
+      "description": "Poradniki i przykłady rozwiązywania problemów."
+    },
+    "sitemap": {
+      "title": "Mapa strony",
+      "description": "Przeglądaj strukturę witryny.",
+      "heading": "Mapa strony",
+      "staticPagesTitle": "Strony statyczne",
+      "homeRoutesTitle": "Zlokalizowane trasy",
+      "blogPostsTitle": "Wpisy na blogu",
+      "blogPaginationTitle": "Paginacja"
+    },
+    "errors": {
+      "notFoundTitle": "Strona nie znaleziona",
+      "notFoundDescription": "Nie znaleziono żądanej strony.",
+      "notFoundHeading": "Nie znaleźliśmy tej strony",
+      "notFoundText": "Wróć na stronę główną.",
+      "notFoundCta": "Powrót do Home"
     }
   },
   "id": {
@@ -1387,6 +2119,59 @@
       "description": "Pahami bagaimana informasi Anda digunakan.",
       "heading": "Kebijakan Privasi",
       "updatedLabel": "Pembaruan terakhir: 12 April 2026"
+    },
+    "library": {
+      "title": "Perpustakaan Rumus",
+      "description": "Jelajahi referensi teorema dan rumus geometri dalam perpustakaan mode gelap yang terfokus."
+    },
+    "practice": {
+      "title": "Mode Latihan",
+      "description": "Berlatih dengan tantangan segitiga siku-siku di ruang kerja interaktif dengan pelacakan kemajuan."
+    },
+    "formulaHub": {
+      "title": "Direktori Rumus | Pemecah Segitiga Siku-siku",
+      "description": "Setiap rumus kunci dengan halaman terpisah dan kalkulator cepat.",
+      "badge": "Pusat Rumus",
+      "heading": "Semua Rumus Segitiga Siku-siku",
+      "intro": "Setiap rumus memiliki halamannya sendiri dengan definisi dan kalkulator.",
+      "faqTitle": "Basis Pengetahuan Geometris",
+      "faqIntro": "Punya pertanyaan tentang akurasi atau logika langkah demi langkah?",
+      "faqCta": "Jelajahi FAQ Terperinci",
+      "solveTitle": "Siap untuk Menyelesaikan?",
+      "solveIntro": "Kembali ke kalkulator presisi tinggi kami.",
+      "solveCta": "Halaman Utama Alat"
+    },
+    "faqHub": {
+      "title": "Pertanyaan Umum | Pemecah Segitiga Siku-siku",
+      "description": "Temukan jawaban tentang alat dan rumus di platform kami.",
+      "heading": "Pertanyaan Umum",
+      "intro": "Semua yang perlu Anda ketahui tentang perhitungan kami.",
+      "formulasTitle": "Pusat Rumus",
+      "formulasIntro": "Jelajahi direktori kalkulator khusus kami.",
+      "formulasCta": "Jelajahi Direktori Rumus",
+      "solveTitle": "Mulai Menyelesaikan Sekarang",
+      "solveIntro": "Pemecah kami menangani kombinasi valid secara instan.",
+      "solveCta": "Kembali ke Kalkulator"
+    },
+    "blog": {
+      "title": "Blog Geometri",
+      "description": "Panduan dan contoh pemecahan masalah."
+    },
+    "sitemap": {
+       "title": "Peta Situs",
+       "description": "Jelajahi struktur situs.",
+       "heading": "Peta Situs",
+       "staticPagesTitle": "Halaman Statis",
+       "homeRoutesTitle": "Rute Beranda Terlokalisasi",
+       "blogPostsTitle": "Posting Blog",
+       "blogPaginationTitle": "Penomoran Halaman"
+    },
+    "errors": {
+      "notFoundTitle": "Halaman Tidak Ditemukan",
+      "notFoundDescription": "Halaman yang Anda minta tidak ditemukan.",
+      "notFoundHeading": "Kami tidak dapat menemukan halaman itu",
+      "notFoundText": "Coba kembali ke beranda.",
+      "notFoundCta": "Kembali ke Beranda"
     }
   },
   "ar": {
@@ -1493,6 +2278,59 @@
       "description": "افهم كيف يتم استخدام معلوماتك.",
       "heading": "سياسة الخصوصية",
       "updatedLabel": "آخر تحديث: 12 أبريل 2026"
+    },
+    "library": {
+      "title": "مكتبة الصيغ",
+      "description": "تصفح مراجع النظريات وصيغ الهندسة في مكتبة مخصصة بالوضع الداكن."
+    },
+    "practice": {
+      "title": "وضع التدريب",
+      "description": "تدرب على تحديات المثلث القائم في مساحة عمل تفاعلية مع تتبع التقدم."
+    },
+    "formulaHub": {
+      "title": "دليل الصيغ | حلل المثلث القائم",
+      "description": "كل صيغة رئيسية مع صفحات منفصلة وحاسبات سريعة.",
+      "badge": "مركز الصيغ",
+      "heading": "جميع صيغ المثلث القائم",
+      "intro": "لكل صيغة صفحتها الخاصة مع التعريفات وحاسبة سريعة.",
+      "faqTitle": "قاعدة المعرفة الهندسية",
+      "faqIntro": "هل لديك أسئلة حول الدقة أو المنطق خطوة بخطوة؟",
+      "faqCta": "تصفح الأسئلة الشائعة",
+      "solveTitle": "هل أنت جاهز للحل؟",
+      "solveIntro": "عد إلى حاسبتنا عالية الدقة.",
+      "solveCta": "الرئيسية"
+    },
+    "faqHub": {
+       "title": "الأسئلة الشائعة | حلل المثلث القائم",
+       "description": "ابحث عن إجابات حول الأدوات والصيغ على منصتنا.",
+       "heading": "الأسئلة الشائعة",
+       "intro": "كل ما تحتاج لمعرفته حول حساباتنا.",
+       "formulasTitle": "مركز الصيغ",
+       "formulasIntro": "استكشف دليل الحاسبات المتخصصة.",
+       "formulasCta": "تصفح دليل الصيغ",
+       "solveTitle": "ابدأ الحل الآن",
+       "solveIntro": "يتعامل نظامنا مع أي تشكيلة صحيحة فوراً.",
+       "solveCta": "العودة للحاسبة"
+    },
+    "blog": {
+      "title": "مدونة الهندسة",
+      "description": "أدلة وأمثلة لحل المشكلات."
+    },
+    "sitemap": {
+      "title": "خريطة الموقع",
+      "description": "تصفح هيكل الموقع.",
+      "heading": "خريطة الموقع",
+      "staticPagesTitle": "صفحات ثابتة",
+      "homeRoutesTitle": "مسارات محددة",
+      "blogPostsTitle": "منشورات المدونة",
+      "blogPaginationTitle": "التنقل"
+    },
+    "errors": {
+      "notFoundTitle": "الصفحة غير موجودة",
+      "notFoundDescription": "لم يتم العثور على الصفحة المطلوبة.",
+      "notFoundHeading": "لم نتمكن من العثور على الصفحة",
+      "notFoundText": "حاول العودة للرئيسية.",
+      "notFoundCta": "العودة للرئيسية"
     }
   },
   "bg": {
@@ -1599,6 +2437,59 @@
       "description": "Разберете как се използва вашата информация.",
       "heading": "Политика за поверителност",
       "updatedLabel": "Последна актуализация: 12 април 2026 г."
+    },
+    "library": {
+      "title": "Библиотека с формули",
+      "description": "Разгледайте препратки към теореми и геометрични формули в специализирана библиотека в тъмен режим."
+    },
+    "practice": {
+      "title": "Режим на практика",
+      "description": "Тренирайте с предизвикателства за правоъгълни триъгълници в интерактивно работно пространство."
+    },
+    "formulaHub": {
+      "title": "Директория с формули | Решаване на правоъгълни триъгълници",
+      "description": "Всяка ключова формула с отделни страници и бързи калкулатори.",
+      "badge": "Център за формули",
+      "heading": "Всички формули за правоъгълен триъгълник",
+      "intro": "Всяка формула има своя собствена страница с дефиниции и бърз калкулатор.",
+      "faqTitle": "Геометрична база знания",
+      "faqIntro": "Имате въпроси относно прецизността или логиката стъпка по стъпка?",
+      "faqCta": "Разгледайте подробните често задавани въпроси",
+      "solveTitle": "Готови ли сте да решавате?",
+      "solveIntro": "Върнете се към нашия високоточен калкулатор.",
+      "solveCta": "Начало"
+    },
+    "faqHub": {
+      "title": "Често задавани въпроси | Решаване на правоъгълни триъгълници",
+      "description": "Намерете отговори за инструментите и формулите на нашата платформа.",
+      "heading": "Често задавани въпроси",
+      "intro": "Всичко, което трябва да знаете за нашите изчисления.",
+      "formulasTitle": "Център за формули",
+      "formulasIntro": "Разгледайте директорията със специфични калкулатори.",
+      "formulasCta": "Разгледайте директорията с формули",
+      "solveTitle": "Започнете да решавате сега",
+      "solveIntro": "Нашият инструмент обработва всяка валидна комбинация мигновено.",
+      "solveCta": "Назад към калкулатора"
+    },
+    "blog": {
+      "title": "Блог за геометрия",
+      "description": "Ръководства и примери за решаване на проблеми."
+    },
+    "sitemap": {
+       "title": "Карта на сайта",
+       "description": "Разгледайте структурата на сайта.",
+       "heading": "Карта на сайта",
+       "staticPagesTitle": "Статични страници",
+       "homeRoutesTitle": "Локализирани начални маршрути",
+       "blogPostsTitle": "Блогове",
+       "blogPaginationTitle": "Пагинация"
+    },
+    "errors": {
+      "notFoundTitle": "Страницата не е намерена",
+      "notFoundDescription": "Заявената страница не бе намерена.",
+      "notFoundHeading": "Не можахме да намерим тази страница",
+      "notFoundText": "Опитайте да се върнете към началната страница.",
+      "notFoundCta": "Назад към началото"
     }
   },
   "tr": {
@@ -1705,6 +2596,59 @@
       "description": "Bilgilerinizin nasıl kullanıldığını anlayın.",
       "heading": "Gizlilik Politikası",
       "updatedLabel": "Son güncelleme: 12 Nisan 2026"
+    },
+    "library": {
+      "title": "Formül Kitaplığı",
+      "description": "Teorem referanslarına ve geometri formüllerine odaklanmış bir karanlık mod kitaplığında göz atın."
+    },
+    "practice": {
+      "title": "Pratik Modu",
+      "description": "İlerleme takibi ile etkileşimli bir çalışma alanında dik üçgen zorluklarıyla antrenman yapın."
+    },
+    "formulaHub": {
+      "title": "Formül Dizini | Dik Üçgen Çözücü",
+      "description": "Ayrı sayfalar ve hızlı hesaplayıcılar ile her temel formül.",
+      "badge": "Formül Merkezi",
+      "heading": "Tüm Dik Üçgen Formülleri",
+      "intro": "Her formülün tanımlar ve hızlı bir hesaplayıcı içeren kendi sayfası vardır.",
+      "faqTitle": "Geometrik Bilgi Bankası",
+      "faqIntro": "Hassasiyet veya adım adım mantık hakkında sorularınız mı var?",
+      "faqCta": "Detaylı SSS'lere Göz Atın",
+      "solveTitle": "Çözmeye Hazır mısınız?",
+      "solveIntro": "Yüksek hassasiyetli hesaplayıcımıza geri dönün.",
+      "solveCta": "Araç Ana Sayfası"
+    },
+    "faqHub": {
+      "title": "Sıkça Sorulan Sorular | Dik Üçgen Çözücü",
+      "description": "Platformumuzdaki araçlar ve formüller hakkında cevaplar bulun.",
+      "heading": "Sıkça Sorulan Sorular",
+      "intro": "Hesaplamalarımız hakkında bilmeniz gereken her şey.",
+      "formulasTitle": "Formül Merkezi",
+      "formulasIntro": "Özel hesaplayıcı dizinimizi keşfedin.",
+      "formulasCta": "Formül Dizinine Göz Atın",
+      "solveTitle": "Şimdi Çözmeye Başlayın",
+      "solveIntro": "Çözücümüz herhangi bir geçerli kombinasyonu anında işler.",
+      "solveCta": "Hesaplayıcıya Geri Dön"
+    },
+    "blog": {
+      "title": "Geometri Bloğu",
+      "description": "Problem çözme için kılavuzlar ve örnekler."
+    },
+    "sitemap": {
+      "title": "Site Haritası",
+      "description": "Site yapısına göz atın.",
+      "heading": "Site Haritası",
+      "staticPagesTitle": "Statik Sayfalar",
+      "homeRoutesTitle": "Yerelleştirilmiş Ana Sayfa Rotaları",
+      "blogPostsTitle": "Blog Yazıları",
+      "blogPaginationTitle": "Sayfalama"
+    },
+    "errors": {
+      "notFoundTitle": "Sayfa Bulunamadı",
+      "notFoundDescription": "İstediğiniz sayfa bulunamadı.",
+      "notFoundHeading": "Bu sayfayı bulamadık",
+      "notFoundText": "Hesaplamaya devam etmek için ana sayfaya dönmeyi deneyin.",
+      "notFoundCta": "Ana Sayfaya Dön"
     }
   },
   "sv": {
@@ -1811,6 +2755,59 @@
       "description": "Förstå hur din information används.",
       "heading": "Integritetspolicy",
       "updatedLabel": "Senast uppdaterad: 12 april 2026"
+    },
+    "library": {
+      "title": "Formelbibliotek",
+      "description": "Bläddra bland teorem och geometri-formler i ett fokuserat mörkt läge-bibliotek."
+    },
+    "practice": {
+      "title": "Övningsläge",
+      "description": "Träna med utmaningar för rätvinkliga trianglar i en interaktiv arbetsyta med framstegsspårning."
+    },
+    "formulaHub": {
+      "title": "Formelkatalog | Rätvinklig triangellösare",
+      "description": "Varje nyckelformel med separata sidor och snabbkalkylatorer.",
+      "badge": "Formel-hubb",
+      "heading": "Alla formler för rätvinkliga trianglar",
+      "intro": "Varje formel har sin egen sida med definitioner och en snabbräknare.",
+      "faqTitle": "Geometrisk kunskapsbas",
+      "faqIntro": "Har du frågor om decimalprecision eller steg-för-steg-logik?",
+      "faqCta": "Bläddra i detaljerad FAQ",
+      "solveTitle": "Redo att lösa?",
+      "solveIntro": "Återgå till vår högprecisionsräknare.",
+      "solveCta": "Verktygets startsida"
+    },
+    "faqHub": {
+      "title": "Vanliga frågor | Rätvinklig triangellösare",
+      "description": "Hitta svar om verktyg och formler på vår plattform.",
+      "heading": "Vanliga frågor",
+      "intro": "Allt du behöver veta om våra beräkningar.",
+      "formulasTitle": "Formel-hubb",
+      "formulasIntro": "Utforska vår katalog med specifika räknare.",
+      "formulasCta": "Bläddra i formelkatalogen",
+      "solveTitle": "Börja lösa nu",
+      "solveIntro": "Vår lösare hanterar alla giltiga kombinationer direkt.",
+      "solveCta": "Tillbaka till räknaren"
+    },
+    "blog": {
+      "title": "Geometriblogg",
+      "description": "Guider och exempel för problemlösning."
+    },
+    "sitemap": {
+      "title": "Webbplatskarta",
+      "description": "Bläddra i webbplatsstrukturen.",
+      "heading": "Webbplatskarta",
+      "staticPagesTitle": "Statiska sidor",
+      "homeRoutesTitle": "Lokaliserade hemrutter",
+      "blogPostsTitle": "Blogginlägg",
+      "blogPaginationTitle": "Sidnumrering"
+    },
+    "errors": {
+      "notFoundTitle": "Sidan hittades inte",
+      "notFoundDescription": "Sidan du begärde hittades inte.",
+      "notFoundHeading": "Vi kunde inte hitta den sidan",
+      "notFoundText": "Försök att återgå till startsidan för att fortsätta lösa trianglar.",
+      "notFoundCta": "Tillbaka till hem"
     }
   },
   "zh": {

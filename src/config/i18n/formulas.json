@@ -1,0 +1,724 @@
+{
+  "en": {
+    "pythagorean-theorem": {
+      "title": "Pythagorean Theorem",
+      "description": "Calculate the hypotenuse when both legs are known.",
+      "variables": ["a = leg", "b = leg", "c = hypotenuse"],
+      "notes": ["Standard identity: a² + b² = c²."]
+    },
+    "area-from-legs": {
+      "title": "Area from Legs",
+      "description": "Calculate the area using the two perpendicular legs.",
+      "variables": ["a = leg", "b = leg"],
+      "notes": ["Area = 0.5 * a * b"]
+    },
+    "perimeter": {
+      "title": "Perimeter",
+      "description": "Sum of all three sides of the triangle.",
+      "variables": ["a = side", "b = side", "c = hypotenuse"],
+      "notes": ["P = a + b + c"]
+    },
+    "sine-ratio": {
+      "title": "Sine Ratio (sin)",
+      "description": "Relationship between the opposite side and the hypotenuse.",
+      "variables": ["a = opposite", "c = hypotenuse"],
+      "notes": ["sin(A) = a/c"]
+    },
+    "cosine-ratio": {
+      "title": "Cosine Ratio (cos)",
+      "description": "Relationship between the adjacent side and the hypotenuse.",
+      "variables": ["b = adjacent", "c = hypotenuse"],
+      "notes": ["cos(A) = b/c"]
+    },
+    "tangent-ratio": {
+      "title": "Tangent Ratio (tan)",
+      "description": "Relationship between the opposite and adjacent sides.",
+      "variables": ["a = opposite", "b = adjacent"],
+      "notes": ["tan(A) = a/b"]
+    }
+  },
+  "hi": {
+    "pythagorean-theorem": {
+      "title": "पाइथागोरस प्रमेय",
+      "description": "जब दोनों भुजाएं ज्ञात हों तो कर्ण की गणना करें।",
+      "variables": ["a = भुजा", "b = भुजा", "c = कर्ण"],
+      "notes": ["मानक पहचान: a² + b² = c²"]
+    },
+    "area-from-legs": {
+      "title": "भुजाओं से क्षेत्रफल",
+      "description": "दो लम्बवत भुजाओं का उपयोग करके क्षेत्रफल की गणना करें।",
+      "variables": ["a = भुजा", "b = भुजा"],
+      "notes": ["क्षेत्रफल = 0.5 * a * b"]
+    },
+    "perimeter": {
+      "title": "परिधि",
+      "description": "त्रिभुज की तीनों भुजाओं का योग।",
+      "variables": ["a = भुजा", "b = भुजा", "c = कर्ण"],
+      "notes": ["P = a + b + c"]
+    },
+    "sine-ratio": {
+      "title": "ज्या अनुपात (sin)",
+      "description": "विपरीत भुजा और कर्ण के बीच संबंध।",
+      "variables": ["a = विपरीत", "c = कर्ण"],
+      "notes": ["sin(A) = a/c"]
+    },
+    "cosine-ratio": {
+      "title": "कोज्या अनुपात (cos)",
+      "description": "संलग्न भुजा और कर्ण के बीच संबंध।",
+      "variables": ["b = संलग्न", "c = कर्ण"],
+      "notes": ["cos(A) = b/c"]
+    },
+    "tangent-ratio": {
+      "title": "स्पर्शज्या अनुपात (tan)",
+      "description": "विपरीत और संलग्न भुजाओं के बीच संबंध।",
+      "variables": ["a = विपरीत", "b = संलग्न"],
+      "notes": ["tan(A) = a/b"]
+    }
+  },
+  "es": {
+    "pythagorean-theorem": {
+      "title": "Teorema de Pitágoras",
+      "description": "Calcula la hipotenusa cuando se conocen ambos catetos.",
+      "variables": ["a = cateto", "b = cateto", "c = hipotenusa"],
+      "notes": ["Identidad estándar: a² + b² = c²."]
+    },
+    "area-from-legs": {
+      "title": "Área desde Catetos",
+      "description": "Calcula el área usando los dos catetos perpendiculares.",
+      "variables": ["a = cateto", "b = cateto"],
+      "notes": ["Área = 0.5 * a * b"]
+    },
+    "perimeter": {
+      "title": "Perímetro",
+      "description": "Suma de los tres lados del triángulo.",
+      "variables": ["a = lado", "b = lado", "c = hipotenusa"],
+      "notes": ["P = a + b + c"]
+    },
+    "sine-ratio": {
+      "title": "Razón Seno (sin)",
+      "description": "Relación entre el cateto opuesto y la hipotenusa.",
+      "variables": ["a = opuesto", "c = hipotenusa"],
+      "notes": ["sin(A) = a/c"]
+    },
+    "cosine-ratio": {
+      "title": "Razón Coseno (cos)",
+      "description": "Relación entre el cateto adyacente y la hipotenusa.",
+      "variables": ["b = adyacente", "c = hipotenusa"],
+      "notes": ["cos(A) = b/c"]
+    },
+    "tangent-ratio": {
+      "title": "Razón Tangente (tan)",
+      "description": "Relación entre el cateto opuesto y el adyacente.",
+      "variables": ["a = opuesto", "b = adyacente"],
+      "notes": ["tan(A) = a/b"]
+    }
+  },
+  "ru": {
+    "pythagorean-theorem": {
+      "title": "Теорема Пифагора",
+      "description": "Вычислите гипотенузу, когда известны оба катета.",
+      "variables": ["a = катет", "b = катет", "c = гипотенуза"],
+      "notes": ["Стандартное тождество: a² + b² = c²."]
+    },
+    "area-from-legs": {
+      "title": "Площадь по катетам",
+      "description": "Вычислите площадь, используя два перпендикулярных катета.",
+      "variables": ["a = катет", "b = катет"],
+      "notes": ["Площадь = 0.5 * a * b"]
+    },
+    "perimeter": {
+      "title": "Периметр",
+      "description": "Сумма всех трех сторон треугольника.",
+      "variables": ["a = сторона", "b = сторона", "c = гипотенуза"],
+      "notes": ["P = a + b + c"]
+    },
+    "sine-ratio": {
+      "title": "Отношение синуса (sin)",
+      "description": "Отношение противолежащего катета к гипотенузе.",
+      "variables": ["a = противолежащий", "c = гипотенуза"],
+      "notes": ["sin(A) = a/c"]
+    },
+    "cosine-ratio": {
+      "title": "Отношение косинуса (cos)",
+      "description": "Отношение прилежащего катета к гипотенузе.",
+      "variables": ["b = прилежащий", "c = гипотенуза"],
+      "notes": ["cos(A) = b/c"]
+    },
+    "tangent-ratio": {
+      "title": "Отношение тангенса (tan)",
+      "description": "Отношение противолежащего катета к прилежащему.",
+      "variables": ["a = противолежащий", "b = прилежащий"],
+      "notes": ["tan(A) = a/b"]
+    }
+  },
+  "fr": {
+    "pythagorean-theorem": {
+      "title": "Théorème de Pythagore",
+      "description": "Calculez l'hypoténuse lorsque les deux côtés sont connus.",
+      "variables": ["a = côté", "b = côté", "c = hypoténuse"],
+      "notes": ["Identité standard : a² + b² = c²."]
+    },
+    "area-from-legs": {
+      "title": "Aire à partir des côtés",
+      "description": "Calculez l'aire en utilisant les deux côtés perpendiculaires.",
+      "variables": ["a = côté", "b = côté"],
+      "notes": ["Aire = 0.5 * a * b"]
+    },
+    "perimeter": {
+      "title": "Périmètre",
+      "description": "Somme des trois côtés du triangle.",
+      "variables": ["a = côté", "b = côté", "c = hypoténuse"],
+      "notes": ["P = a + b + c"]
+    },
+    "sine-ratio": {
+      "title": "Rapport Sinus (sin)",
+      "description": "Relation entre le côté opposé et l'hypoténuse.",
+      "variables": ["a = opposé", "c = hypoténuse"],
+      "notes": ["sin(A) = a/c"]
+    },
+    "cosine-ratio": {
+      "title": "Rapport Cosinus (cos)",
+      "description": "Relation entre le côté adjacent et l'hypoténuse.",
+      "variables": ["b = adjacent", "c = hypoténuse"],
+      "notes": ["cos(A) = b/c"]
+    },
+    "tangent-ratio": {
+      "title": "Rapport Tangente (tan)",
+      "description": "Relation entre le côté opposé et le côté adjacent.",
+      "variables": ["a = opposé", "b = adjacent"],
+      "notes": ["tan(A) = a/b"]
+    }
+  },
+  "de": {
+    "pythagorean-theorem": {
+      "title": "Satz des Pythagoras",
+      "description": "Berechnen Sie die Hypotenuse, wenn beide Katheten bekannt sind.",
+      "variables": ["a = Kathete", "b = Kathete", "c = Hypotenuse"],
+      "notes": ["Standardidentität: a² + b² = c²."]
+    },
+    "area-from-legs": {
+      "title": "Fläche aus Katheten",
+      "description": "Berechnen Sie die Fläche mit den beiden rechtwinkligen Katheten.",
+      "variables": ["a = Kathete", "b = Kathete"],
+      "notes": ["Fläche = 0,5 * a * b"]
+    },
+    "perimeter": {
+      "title": "Umfang",
+      "description": "Summe aller drei Seiten des Dreiecks.",
+      "variables": ["a = Seite", "b = Seite", "c = Hypotenuse"],
+      "notes": ["U = a + b + c"]
+    },
+    "sine-ratio": {
+      "title": "Sinus-Verhältnis (sin)",
+      "description": "Verhältnis zwischen Gegenkathete und Hypotenuse.",
+      "variables": ["a = Gegenkathete", "c = Hypotenuse"],
+      "notes": ["sin(A) = a/c"]
+    },
+    "cosine-ratio": {
+      "title": "Kosinus-Verhältnis (cos)",
+      "description": "Verhältnis zwischen Ankathete und Hypotenuse.",
+      "variables": ["b = Ankathete", "c = Hypotenuse"],
+      "notes": ["cos(A) = b/c"]
+    },
+    "tangent-ratio": {
+      "title": "Tangens-Verhältnis (tan)",
+      "description": "Verhältnis zwischen Gegenkathete und Ankathete.",
+      "variables": ["a = Gegenkathete", "b = Ankathete"],
+      "notes": ["tan(A) = a/b"]
+    }
+  },
+  "it": {
+    "pythagorean-theorem": {
+      "title": "Teorema di Pitagora",
+      "description": "Calcola l'ipotenusa quando entrambi i cateti sono noti.",
+      "variables": ["a = cateto", "b = cateto", "c = ipotenusa"],
+      "notes": ["Identità standard: a² + b² = c²."]
+    },
+    "area-from-legs": {
+      "title": "Area dai Cateti",
+      "description": "Calcola l'area usando i due cateti perpendicolari.",
+      "variables": ["a = cateto", "b = cateto"],
+      "notes": ["Area = 0.5 * a * b"]
+    },
+    "perimeter": {
+      "title": "Perimetro",
+      "description": "Somma di tutti e tre i lati del triangolo.",
+      "variables": ["a = lato", "b = lato", "c = ipotenusa"],
+      "notes": ["P = a + b + c"]
+    },
+    "sine-ratio": {
+      "title": "Rapporto Seno (sin)",
+      "description": "Relazione tra il cateto opposto e l'ipotenusa.",
+      "variables": ["a = opposto", "c = ipotenusa"],
+      "notes": ["sin(A) = a/c"]
+    },
+    "cosine-ratio": {
+      "title": "Rapporto Coseno (cos)",
+      "description": "Relazione tra il cateto adiacente e l'ipotenusa.",
+      "variables": ["b = adiacente", "c = ipotenusa"],
+      "notes": ["cos(A) = b/c"]
+    },
+    "tangent-ratio": {
+      "title": "Rapporto Tangente (tan)",
+      "description": "Relazione tra il cateto opposto e quello adiacente.",
+      "variables": ["a = opposto", "b = adiacente"],
+      "notes": ["tan(A) = a/b"]
+    }
+  },
+  "pt": {
+    "pythagorean-theorem": {
+      "title": "Teorema de Pitágoras",
+      "description": "Calcule a hipotenusa quando ambos os catetos são conhecidos.",
+      "variables": ["a = cateto", "b = cateto", "c = hipotenusa"],
+      "notes": ["Identidade padrão: a² + b² = c²."]
+    },
+    "area-from-legs": {
+      "title": "Área pelos Catetos",
+      "description": "Calcule a área usando os dois catetos perpendiculares.",
+      "variables": ["a = cateto", "b = cateto"],
+      "notes": ["Área = 0.5 * a * b"]
+    },
+    "perimeter": {
+      "title": "Perímetro",
+      "description": "Soma de todos os três lados do triângulo.",
+      "variables": ["a = lado", "b = lado", "c = hipotenusa"],
+      "notes": ["P = a + b + c"]
+    },
+    "sine-ratio": {
+      "title": "Razão Seno (sin)",
+      "description": "Relação entre o cateto oposto e a hipotenusa.",
+      "variables": ["a = oposto", "c = hipotenusa"],
+      "notes": ["sin(A) = a/c"]
+    },
+    "cosine-ratio": {
+      "title": "Razão Cosseno (cos)",
+      "description": "Relação entre o cateto adjacente e a hipotenusa.",
+      "variables": ["b = adjacente", "c = hipotenusa"],
+      "notes": ["cos(A) = b/c"]
+    },
+    "tangent-ratio": {
+      "title": "Razão Tangente (tan)",
+      "description": "Relação entre os catetos oposto e adjacente.",
+      "variables": ["a = oposto", "b = adjacente"],
+      "notes": ["tan(A) = a/b"]
+    }
+  },
+  "bn": {
+    "pythagorean-theorem": {
+      "title": "পিথাগোরাস উপপাদ্য",
+      "description": "উভয় বাহু জানা থাকলে অতিভুজ গণনা করুন।",
+      "variables": ["a = বাহু", "b = বাহু", "c = অতিভুজ"],
+      "notes": ["মানক সূত্র: a² + b² = c²"]
+    },
+    "area-from-legs": {
+      "title": "বাহু থেকে ক্ষেত্রফল",
+      "description": "দুটি লম্ব বাহু ব্যবহার করে ক্ষেত্রফল গণনা করুন।",
+      "variables": ["a = বাহু", "b = বাহু"],
+      "notes": ["ক্ষেত্রফল = ০.৫ * a * b"]
+    },
+    "perimeter": {
+      "title": "পরিধি",
+      "description": "ত্রিভুজের তিনটি বাহুর সমষ্টি।",
+      "variables": ["a = বাহু", "b = বাহু", "c = অতিভুজ"],
+      "notes": ["P = a + b + c"]
+    },
+    "sine-ratio": {
+      "title": "সাইন অনুপাত (sin)",
+      "description": "বিপরীত বাহু এবং অতিভুজের মধ্যে সম্পর্ক।",
+      "variables": ["a = বিপরীত", "c = অতিভুজ"],
+      "notes": ["sin(A) = a/c"]
+    },
+    "cosine-ratio": {
+      "title": "কোসাইন অনুপাত (cos)",
+      "description": "সংলগ্ন বাহু এবং অতিভুজের মধ্যে সম্পর্ক।",
+      "variables": ["b = সংলগ্ন", "c = অতিভুজ"],
+      "notes": ["cos(A) = b/c"]
+    },
+    "tangent-ratio": {
+      "title": "ট্যানজেন্ট অনুপাত (tan)",
+      "description": "বিপরীত এবং সংলগ্ন বাহুর মধ্যে সম্পর্ক।",
+      "variables": ["a = বিপরীত", "b = সংলগ্ন"],
+      "notes": ["tan(A) = a/b"]
+    }
+  },
+  "ja": {
+    "pythagorean-theorem": {
+      "title": "ピタゴラスの定理",
+      "description": "両方の辺がわかっている場合に斜辺を計算します。",
+      "variables": ["a = 辺", "b = 辺", "c = 斜辺"],
+      "notes": ["標準的な恒等式: a² + b² = c²"]
+    },
+    "area-from-legs": {
+      "title": "辺から面積を求める",
+      "description": "2つの直交する辺を使用して面積を計算します。",
+      "variables": ["a = 辺", "b = 辺"],
+      "notes": ["面積 = 0.5 * a * b"]
+    },
+    "perimeter": {
+      "title": "周囲の長さ",
+      "description": "三角形の3辺すべての合計。",
+      "variables": ["a = 辺", "b = 辺", "c = 斜辺"],
+      "notes": ["P = a + b + c"]
+    },
+    "sine-ratio": {
+      "title": "正弦比 (sin)",
+      "description": "対辺と斜辺の関係。",
+      "variables": ["a = 対辺", "c = 斜辺"],
+      "notes": ["sin(A) = a/c"]
+    },
+    "cosine-ratio": {
+      "title": "余弦比 (cos)",
+      "description": "隣辺と斜辺の関係。",
+      "variables": ["b = 隣辺", "c = 斜辺"],
+      "notes": ["cos(A) = b/c"]
+    },
+    "tangent-ratio": {
+      "title": "正接比 (tan)",
+      "description": "対辺と隣辺の関係。",
+      "variables": ["a = 対辺", "b = 隣辺"],
+      "notes": ["tan(A) = a/b"]
+    }
+  },
+  "ko": {
+    "pythagorean-theorem": {
+      "title": "피타고라스의 정리",
+      "description": "두 변의 길이를 알 때 빗변을 계산합니다.",
+      "variables": ["a = 변", "b = 변", "c = 빗변"],
+      "notes": ["표준 항등식: a² + b² = c²"]
+    },
+    "area-from-legs": {
+      "title": "변을 이용한 넓이",
+      "description": "두 직교하는 변을 사용하여 넓이를 계산합니다.",
+      "variables": ["a = 변", "b = 변"],
+      "notes": ["넓이 = 0.5 * a * b"]
+    },
+    "perimeter": {
+      "title": "둘레",
+      "description": "삼각형 세 변의 합.",
+      "variables": ["a = 변", "b = 변", "c = 빗변"],
+      "notes": ["P = a + b + c"]
+    },
+    "sine-ratio": {
+      "title": "사인 비 (sin)",
+      "description": "대변과 빗변의 관계.",
+      "variables": ["a = 대변", "c = 빗변"],
+      "notes": ["sin(A) = a/c"]
+    },
+    "cosine-ratio": {
+      "title": "코사인 비 (cos)",
+      "description": "인접변과 빗변의 관계.",
+      "variables": ["b = 인접변", "c = 빗변"],
+      "notes": ["cos(A) = b/c"]
+    },
+    "tangent-ratio": {
+      "title": "탄젠트 비 (tan)",
+      "description": "대변과 인접변의 관계.",
+      "variables": ["a = 대변", "b = 인접변"],
+      "notes": ["tan(A) = a/b"]
+    }
+  },
+  "ms": {
+    "pythagorean-theorem": {
+      "title": "Teorem Pythagoras",
+      "description": "Kira hipotenus apabila kedua-dua sisi diketahui.",
+      "variables": ["a = sisi", "b = sisi", "c = hipotenus"],
+      "notes": ["Identiti standard: a² + b² = c²."]
+    },
+    "area-from-legs": {
+      "title": "Luas daripada Sisi",
+      "description": "Kira luas menggunakan dua sisi berserenjang.",
+      "variables": ["a = sisi", "b = sisi"],
+      "notes": ["Luas = 0.5 * a * b"]
+    },
+    "perimeter": {
+      "title": "Perimeter",
+      "description": "Jumlah ketiga-tiga sisi segitiga.",
+      "variables": ["a = sisi", "b = sisi", "c = hipotenus"],
+      "notes": ["P = a + b + c"]
+    },
+    "sine-ratio": {
+      "title": "Nisbah Sinus (sin)",
+      "description": "Hubungan antara sisi bertentangan dan hipotenus.",
+      "variables": ["a = bertentangan", "c = hipotenus"],
+      "notes": ["sin(A) = a/c"]
+    },
+    "cosine-ratio": {
+      "title": "Nisbah Kosinus (cos)",
+      "description": "Hubungan antara sisi bersebelahan dan hipotenus.",
+      "variables": ["b = bersebelahan", "c = hipotenus"],
+      "notes": ["cos(A) = b/c"]
+    },
+    "tangent-ratio": {
+      "title": "Nisbah Tangen (tan)",
+      "description": "Hubungan antara sisi bertentangan dan bersebelahan.",
+      "variables": ["a = bertentangan", "b = bersebelahan"],
+      "notes": ["tan(A) = a/b"]
+    }
+  },
+  "pl": {
+    "pythagorean-theorem": {
+      "title": "Twierdzenie Pitagorasa",
+      "description": "Oblicz przeciwprostokątną, gdy znane są obie przyprostokątne.",
+      "variables": ["a = bok", "b = bok", "c = przeciwprostokątna"],
+      "notes": ["Tożsamość: a² + b² = c²."]
+    },
+    "area-from-legs": {
+      "title": "Pole z przyprostokątnych",
+      "description": "Oblicz pole, używając dwóch prostopadłych boków.",
+      "variables": ["a = bok", "b = bok"],
+      "notes": ["Pole = 0.5 * a * b"]
+    },
+    "perimeter": {
+      "title": "Obwód",
+      "description": "Suma wszystkich trzech boków trójkąta.",
+      "variables": ["a = bok", "b = bok", "c = przeciwprostokątna"],
+      "notes": ["P = a + b + c"]
+    },
+    "sine-ratio": {
+      "title": "Stosunek Sinus (sin)",
+      "description": "Relacja między bokiem przeciwległym a przeciwprostokątną.",
+      "variables": ["a = przeciwległy", "c = przeciwprostokątna"],
+      "notes": ["sin(A) = a/c"]
+    },
+    "cosine-ratio": {
+      "title": "Stosunek Cosenus (cos)",
+      "description": "Relacja między bokiem przyległym a przeciwprostokątną.",
+      "variables": ["b = przyległy", "c = przeciwprostokątna"],
+      "notes": ["cos(A) = b/c"]
+    },
+    "tangent-ratio": {
+      "title": "Stosunek Tangens (tan)",
+      "description": "Relacja między bokiem przeciwległym a przyległym.",
+      "variables": ["a = przeciwległy", "b = przyległy"],
+      "notes": ["tan(A) = a/b"]
+    }
+  },
+  "id": {
+    "pythagorean-theorem": {
+      "title": "Teorema Pythagoras",
+      "description": "Hitung hipotenusa jika kedua sisi diketahui.",
+      "variables": ["a = sisi", "b = sisi", "c = hipotenusa"],
+      "notes": ["Identitas standar: a² + b² = c²."]
+    },
+    "area-from-legs": {
+      "title": "Luas dari Sisi",
+      "description": "Hitung luas menggunakan dua sisi yang tegak lurus.",
+      "variables": ["a = sisi", "b = sisi"],
+      "notes": ["Luas = 0.5 * a * b"]
+    },
+    "perimeter": {
+      "title": "Keliling",
+      "description": "Jumlah dari ketiga sisi segitiga.",
+      "variables": ["a = sisi", "b = sisi", "c = hipotenusa"],
+      "notes": ["P = a + b + c"]
+    },
+    "sine-ratio": {
+      "title": "Rasio Sinus (sin)",
+      "description": "Hubungan antara sisi depan dan hipotenusa.",
+      "variables": ["a = depan", "c = hipotenusa"],
+      "notes": ["sin(A) = a/c"]
+    },
+    "cosine-ratio": {
+      "title": "Rasio Kosinus (cos)",
+      "description": "Hubungan antara sisi samping dan hipotenusa.",
+      "variables": ["b = samping", "c = hipotenusa"],
+      "notes": ["cos(A) = b/c"]
+    },
+    "tangent-ratio": {
+      "title": "Rasio Tangen (tan)",
+      "description": "Hubungan antara sisi depan dan samping.",
+      "variables": ["a = depan", "b = samping"],
+      "notes": ["tan(A) = a/b"]
+    }
+  },
+  "ar": {
+    "pythagorean-theorem": {
+      "title": "نظرية فيثاغورس",
+      "description": "احسب الوتر عندما يكون كلاً من الضلعين معروفين.",
+      "variables": ["a = ضلع", "b = ضلع", "c = وتر"],
+      "notes": ["العلاقة القياسية: a² + b² = c²."]
+    },
+    "area-from-legs": {
+      "title": "المساحة من الضلعين",
+      "description": "احسب المساحة باستخدام الضلعين المتعامدين.",
+      "variables": ["a = ضلع", "b = ضلع"],
+      "notes": ["المساحة = 0.5 * a * b"]
+    },
+    "perimeter": {
+      "title": "المحيط",
+      "description": "مجموع أضلاع المثلث الثلاثة.",
+      "variables": ["a = ضلع", "b = ضلع", "c = وتر"],
+      "notes": ["P = a + b + c"]
+    },
+    "sine-ratio": {
+      "title": "نسبة الجيب (sin)",
+      "description": "العلاقة بين الضلع المقابل والوتر.",
+      "variables": ["a = مقابل", "c = وتر"],
+      "notes": ["sin(A) = a/c"]
+    },
+    "cosine-ratio": {
+      "title": "نسبة جيب التمام (cos)",
+      "description": "العلاقة بين الضلع المجاور والوتر.",
+      "variables": ["b = مجاور", "c = وتر"],
+      "notes": ["cos(A) = b/c"]
+    },
+    "tangent-ratio": {
+      "title": "نسبة الظل (tan)",
+      "description": "العلاقة بين الضلع المقابل والضلع المجاور.",
+      "variables": ["a = مقابل", "b = مجاور"],
+      "notes": ["tan(A) = a/b"]
+    }
+  },
+  "bg": {
+    "pythagorean-theorem": {
+      "title": "Питагорова теорема",
+      "description": "Изчислете хипотенузата, когато са известни двата катета.",
+      "variables": ["a = катет", "b = катет", "c = хипотенуза"],
+      "notes": ["Стандартно уравнение: a² + b² = c²."]
+    },
+    "area-from-legs": {
+      "title": "Площ по катети",
+      "description": "Изчислете площта чрез двата перпендикулярни катета.",
+      "variables": ["a = катет", "b = катет"],
+      "notes": ["Площ = 0.5 * a * b"]
+    },
+    "perimeter": {
+      "title": "Периметър",
+      "description": "Сума от трите страни на триъгълника.",
+      "variables": ["a = страна", "b = страна", "c = хипотенуза"],
+      "notes": ["P = a + b + c"]
+    },
+    "sine-ratio": {
+      "title": "Синус (sin)",
+      "description": "Връзка между срещулежащия катет и хипотенузата.",
+      "variables": ["a = срещулежащ", "c = хипотенуза"],
+      "notes": ["sin(A) = a/c"]
+    },
+    "cosine-ratio": {
+      "title": "Косинус (cos)",
+      "description": "Връзка между прилежащия катет и хипотенузата.",
+      "variables": ["b = прилежащ", "c = хипотенуза"],
+      "notes": ["cos(A) = b/c"]
+    },
+    "tangent-ratio": {
+      "title": "Тангенс (tan)",
+      "description": "Връзка между срещулежащия и прилежащия катет.",
+      "variables": ["a = срещулежащ", "b = прилежащ"],
+      "notes": ["tan(A) = a/b"]
+    }
+  },
+  "tr": {
+    "pythagorean-theorem": {
+      "title": "Pisagor Teoremi",
+      "description": "Her iki kenar bilindiğinde hipotenüsü hesaplayın.",
+      "variables": ["a = kenar", "b = kenar", "c = hipotenüs"],
+      "notes": ["Standart özdeşlik: a² + b² = c²."]
+    },
+    "area-from-legs": {
+      "title": "Kenarlardan Alan",
+      "description": "İki dik kenarı kullanarak alanı hesaplayın.",
+      "variables": ["a = kenar", "b = kenar"],
+      "notes": ["Alan = 0.5 * a * b"]
+    },
+    "perimeter": {
+      "title": "Çevre",
+      "description": "Üçgenin üç kenarının toplamı.",
+      "variables": ["a = kenar", "b = kenar", "c = hipotenüs"],
+      "notes": ["P = a + b + c"]
+    },
+    "sine-ratio": {
+      "title": "Sinüs Oranı (sin)",
+      "description": "Karşı kenar ile hipotenüs arasındaki ilişki.",
+      "variables": ["a = karşı", "c = hipotenüs"],
+      "notes": ["sin(A) = a/c"]
+    },
+    "cosine-ratio": {
+      "title": "Kosinüs Oranı (cos)",
+      "description": "Komşu kenar ile hipotenüs arasındaki ilişki.",
+      "variables": ["b = komşu", "c = hipotenüs"],
+      "notes": ["cos(A) = b/c"]
+    },
+    "tangent-ratio": {
+      "title": "Tanjant Oranı (tan)",
+      "description": "Karşı kenar ile komşu kenar arasındaki ilişki.",
+      "variables": ["a = karşı", "b = komşu"],
+      "notes": ["tan(A) = a/b"]
+    }
+  },
+  "sv": {
+    "pythagorean-theorem": {
+      "title": "Pythagoras sats",
+      "description": "Beräkna hypotenusan när båda kateterna är kända.",
+      "variables": ["a = katet", "b = katet", "c = hypotenusa"],
+      "notes": ["Standardidentitet: a² + b² = c²."]
+    },
+    "area-from-legs": {
+      "title": "Area från kateter",
+      "description": "Beräkna arean med de två vinkelräta kateterna.",
+      "variables": ["a = katet", "b = katet"],
+      "notes": ["Area = 0.5 * a * b"]
+    },
+    "perimeter": {
+      "title": "Omkrets",
+      "description": "Summan av triangelns alla tre sidor.",
+      "variables": ["a = sida", "b = sida", "c = hypotenusa"],
+      "notes": ["P = a + b + c"]
+    },
+    "sine-ratio": {
+      "title": "Sinuskvot (sin)",
+      "description": "Förhållandet mellan motstående katet och hypotenusan.",
+      "variables": ["a = motstående", "c = hypotenusa"],
+      "notes": ["sin(A) = a/c"]
+    },
+    "cosine-ratio": {
+      "title": "Cosinuskvot (cos)",
+      "description": "Förhållandet mellan närliggande katet och hypotenusan.",
+      "variables": ["b = närliggande", "c = hypotenusa"],
+      "notes": ["cos(A) = b/c"]
+    },
+    "tangent-ratio": {
+      "title": "Tangentkvot (tan)",
+      "description": "Förhållandet mellan motstående katet och närliggande katet.",
+      "variables": ["a = motstående", "b = närliggande"],
+      "notes": ["tan(A) = a/b"]
+    }
+  },
+  "zh": {
+    "pythagorean-theorem": {
+      "title": "勾股定理",
+      "description": "已知两条直角边时计算斜边。",
+      "variables": ["a = 直角边", "b = 直角边", "c = 斜边"],
+      "notes": ["标准公式：a² + b² = c²。"]
+    },
+    "area-from-legs": {
+      "title": "直角边求面积",
+      "description": "使用两条垂直的直角边计算面积。",
+      "variables": ["a = 直角边", "b = 直角边"],
+      "notes": ["面积 = 0.5 * a * b"]
+    },
+    "perimeter": {
+      "title": "周长",
+      "description": "三角形三条边的总和。",
+      "variables": ["a = 边", "b = 边", "c = 斜边"],
+      "notes": ["P = a + b + c"]
+    },
+    "sine-ratio": {
+      "title": "正弦比 (sin)",
+      "description": "对边与斜边的关系。",
+      "variables": ["a = 对边", "c = 斜边"],
+      "notes": ["sin(A) = a/c"]
+    },
+    "cosine-ratio": {
+      "title": "余弦比 (cos)",
+      "description": "邻边与斜边的关系。",
+      "variables": ["b = 邻边", "c = 斜边"],
+      "notes": ["cos(A) = b/c"]
+    },
+    "tangent-ratio": {
+      "title": "正切比 (tan)",
+      "description": "对边与邻边的关系。",
+      "variables": ["a = 对边", "b = 邻边"],
+      "notes": ["tan(A) = a/b"]
+    }
+  }
+}

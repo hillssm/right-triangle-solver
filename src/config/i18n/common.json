@@ -1,5 +1,12 @@
 {
   "en": {
+    "categories": {
+      "trigonometry": "Trigonometry",
+      "sides": "Side Calculations",
+      "area": "Area & Geometry",
+      "advanced": "Advanced Relations",
+      "special": "Special Triangles"
+    },
     "nav": {
       "home": "Home",
       "practice": "Practice",
@@ -29,6 +36,7 @@
       "networkError": "Network error. Please check your connection and retry.",
       "fallbackEmail": "Or email us directly at",
       "backToBlog": "Back to Blog",
+      "backToFormulas": "Back to Formula Directory",
       "switchLanguage": "Language"
     },
     "footer": {
@@ -36,17 +44,24 @@
     }
   },
   "hi": {
+    "categories": {
+      "trigonometry": "त्रिकोणमिति",
+      "sides": "भुजा गणना",
+      "area": "क्षेत्रफल और ज्यामिति",
+      "advanced": "उन्नत संबंध",
+      "special": "विशेष त्रिभुज"
+    },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
-      "blog": "Blog",
-      "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "home": "मुख्य पृष्ठ",
+      "practice": "अभ्यास",
+      "formulas": "सूत्र",
+      "aboutUs": "हमारे बारे में",
+      "contactUs": "संपर्क करें",
+      "blog": "ब्लॉग",
+      "faq": "सामान्य प्रश्न",
+      "terms": "शर्तें",
+      "privacy": "गोपनीयता",
+      "sitemap": "साइटमैप"
     },
     "common": {
       "readMore": "लेख पढ़ें",
@@ -55,6 +70,17 @@
       "page": "पृष्ठ",
       "of": "का",
       "results": "परिणाम",
+      "name": "नाम",
+      "email": "ईमेल",
+      "message": "संदेश",
+      "send": "संदेश भेजें",
+      "sending": "भेज रहे हैं...",
+      "success": "संदेश सफलतापूर्वक भेजा गया। धन्यवाद!",
+      "apiError": "हम आपका संदेश नहीं भेज सके। कृपया पुनः प्रयास करें।",
+      "networkError": "नेटवर्क त्रुटि। कृपया अपना कनेक्शन जांचें और पुनः प्रयास करें।",
+      "fallbackEmail": "या हमें सीधे ईमेल करें",
+      "backToBlog": "ब्लॉग पर वापस जाएं",
+      "backToFormulas": "सूत्र निर्देशिका पर वापस जाएं",
       "switchLanguage": "भाषा"
     },
     "footer": {
@@ -62,17 +88,24 @@
     }
   },
   "es": {
+    "categories": {
+      "trigonometry": "Trigonometría",
+      "sides": "Cálculos de Lados",
+      "area": "Área y Geometría",
+      "advanced": "Relaciones Avanzadas",
+      "special": "Triángulos Especiales"
+    },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
+      "home": "Inicio",
+      "practice": "Práctica",
+      "formulas": "Fórmulas",
+      "aboutUs": "Sobre Nosotros",
+      "contactUs": "Contacto",
       "blog": "Blog",
-      "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "faq": "Preguntas Frecuentes",
+      "terms": "Términos",
+      "privacy": "Privacidad",
+      "sitemap": "Mapa del sitio"
     },
     "common": {
       "readMore": "Leer artículo",
@@ -81,6 +114,17 @@
       "page": "Página",
       "of": "de",
       "results": "Resultados",
+      "name": "Nombre",
+      "email": "Email",
+      "message": "Mensaje",
+      "send": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "Mensaje enviado con éxito. ¡Gracias!",
+      "apiError": "No pudimos enviar su mensaje. Por favor, inténtelo de nuevo.",
+      "networkError": "Error de red. Por favor, compruebe su conexión.",
+      "fallbackEmail": "O envíenos un correo directamente a",
+      "backToBlog": "Volver al Blog",
+      "backToFormulas": "Volver al Directorio de Fórmulas",
       "switchLanguage": "Idioma"
     },
     "footer": {
@@ -88,17 +132,24 @@
     }
   },
   "ru": {
+    "categories": {
+      "trigonometry": "Тригонометрия",
+      "sides": "Расчет сторон",
+      "area": "Площадь и геометрия",
+      "advanced": "Сложные связи",
+      "special": "Особые треугольники"
+    },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
-      "blog": "Blog",
-      "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "home": "Главная",
+      "practice": "Практика",
+      "formulas": "Формулы",
+      "aboutUs": "О нас",
+      "contactUs": "Контакты",
+      "blog": "Блог",
+      "faq": "ЧЗВ",
+      "terms": "Условия",
+      "privacy": "Конфиденциальность",
+      "sitemap": "Карта сайта"
     },
     "common": {
       "readMore": "Читать статью",
@@ -107,6 +158,17 @@
       "page": "Страница",
       "of": "из",
       "results": "Результаты",
+      "name": "Имя",
+      "email": "Эл. почта",
+      "message": "Сообщение",
+      "send": "Отправить сообщение",
+      "sending": "Отправка...",
+      "success": "Сообщение успешно отправлено. Спасибо!",
+      "apiError": "Не удалось отправить сообщение. Пожалуйста, попробуйте еще раз.",
+      "networkError": "Ошибка сети. Пожалуйста, проверьте соединение.",
+      "fallbackEmail": "Или напишите нам напрямую на",
+      "backToBlog": "Вернуться в блог",
+      "backToFormulas": "Вернуться в каталог формул",
       "switchLanguage": "Язык"
     },
     "footer": {
@@ -114,17 +176,24 @@
     }
   },
   "fr": {
+    "categories": {
+      "trigonometry": "Trigonométrie",
+      "sides": "Calculs de Côtés",
+      "area": "Aire & Géométrie",
+      "advanced": "Relations Avancées",
+      "special": "Triangles Spéciaux"
+    },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
+      "home": "Accueil",
+      "practice": "Pratique",
+      "formulas": "Formules",
+      "aboutUs": "À Propos",
+      "contactUs": "Contact",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "terms": "Conditions",
+      "privacy": "Confidentialité",
+      "sitemap": "Plan du site"
     },
     "common": {
       "readMore": "Lire l'article",
@@ -133,6 +202,17 @@
       "page": "Page",
       "of": "de",
       "results": "Résultats",
+      "name": "Nom",
+      "email": "E-mail",
+      "message": "Message",
+      "send": "Envoyer le message",
+      "sending": "Envoi...",
+      "success": "Message envoyé avec succès. Merci !",
+      "apiError": "Nous n'avons pas pu envoyer votre message. Veuillez réessayer.",
+      "networkError": "Erreur réseau. Veuillez vérifier votre connexion.",
+      "fallbackEmail": "Ou envoyez-nous un e-mail directement à",
+      "backToBlog": "Retour au Blog",
+      "backToFormulas": "Retour au Répertoire des Formules",
       "switchLanguage": "Langue"
     },
     "footer": {
@@ -140,16 +220,23 @@
     }
   },
   "de": {
+    "categories": {
+      "trigonometry": "Trigonometrie",
+      "sides": "Seitenberechnungen",
+      "area": "Fläche & Geometrie",
+      "advanced": "Fortgeschrittene Beziehungen",
+      "special": "Besondere Dreiecke"
+    },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
+      "home": "Startseite",
+      "practice": "Übung",
+      "formulas": "Formeln",
+      "aboutUs": "Über uns",
+      "contactUs": "Kontakt",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
+      "terms": "Bedingungen",
+      "privacy": "Datenschutz",
       "sitemap": "Sitemap"
     },
     "common": {
@@ -159,6 +246,17 @@
       "page": "Seite",
       "of": "von",
       "results": "Ergebnisse",
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "send": "Nachricht senden",
+      "sending": "Wird gesendet...",
+      "success": "Nachricht erfolgreich gesendet. Vielen Dank!",
+      "apiError": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
+      "networkError": "Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung.",
+      "fallbackEmail": "Oder schreiben Sie uns direkt an",
+      "backToBlog": "Zurück zum Blog",
+      "backToFormulas": "Zurück zum Formelverzeichnis",
       "switchLanguage": "Sprache"
     },
     "footer": {
@@ -166,17 +264,24 @@
     }
   },
   "it": {
+    "categories": {
+      "trigonometry": "Trigonometria",
+      "sides": "Calcoli dei Lati",
+      "area": "Area e Geometria",
+      "advanced": "Relazioni Avanzate",
+      "special": "Triangoli Speciali"
+    },
     "nav": {
       "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
+      "practice": "Pratica",
+      "formulas": "Formule",
+      "aboutUs": "Chi Siamo",
+      "contactUs": "Contatti",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Terms",
+      "terms": "Termini",
       "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "sitemap": "Mappa del sito"
     },
     "common": {
       "readMore": "Leggi articolo",
@@ -185,6 +290,17 @@
       "page": "Pagina",
       "of": "di",
       "results": "Risultati",
+      "name": "Nome",
+      "email": "Email",
+      "message": "Messaggio",
+      "send": "Invia Messaggio",
+      "sending": "Invio...",
+      "success": "Messaggio inviato con successo. Grazie!",
+      "apiError": "Non è stato possibile inviare il messaggio. Riprova.",
+      "networkError": "Errore di rete. Controlla la tua connessione.",
+      "fallbackEmail": "O scrivici direttamente a",
+      "backToBlog": "Torna al Blog",
+      "backToFormulas": "Torna alla Directory delle Formule",
       "switchLanguage": "Lingua"
     },
     "footer": {
@@ -192,17 +308,24 @@
     }
   },
   "pt": {
+    "categories": {
+      "trigonometry": "Trigonometria",
+      "sides": "Cálculos de Lados",
+      "area": "Área e Geometria",
+      "advanced": "Relações Avançadas",
+      "special": "Triângulos Especiais"
+    },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
+      "home": "Início",
+      "practice": "Prática",
+      "formulas": "Fórmulas",
+      "aboutUs": "Sobre Nós",
+      "contactUs": "Contato",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "terms": "Termos",
+      "privacy": "Privacidade",
+      "sitemap": "Mapa do site"
     },
     "common": {
       "readMore": "Ler artigo",
@@ -211,6 +334,17 @@
       "page": "Página",
       "of": "de",
       "results": "Resultados",
+      "name": "Nome",
+      "email": "E-mail",
+      "message": "Mensagem",
+      "send": "Enviar Mensagem",
+      "sending": "Enviando...",
+      "success": "Mensagem enviada com sucesso. Obrigado!",
+      "apiError": "Não foi possível enviar sua mensagem. Tente novamente.",
+      "networkError": "Erro de rede. Verifique sua conexão.",
+      "fallbackEmail": "Ou envie um e-mail diretamente para",
+      "backToBlog": "Voltar ao Blog",
+      "backToFormulas": "Voltar ao Diretório de Fórmulas",
       "switchLanguage": "Idioma"
     },
     "footer": {
@@ -218,17 +352,24 @@
     }
   },
   "bn": {
+    "categories": {
+      "trigonometry": "ত্রিকোণমিতি",
+      "sides": "বাহু গণনা",
+      "area": "ক্ষেত্রফল ও জ্যামিতি",
+      "advanced": "উন্নত সম্পর্ক",
+      "special": "বিশেষ ত্রিভুজ"
+    },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
-      "blog": "Blog",
-      "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "home": "হোম",
+      "practice": "অনুশীলন",
+      "formulas": "সূত্র",
+      "aboutUs": "আমাদের সম্পর্কে",
+      "contactUs": "যোগাযোগ",
+      "blog": "ব্লগ",
+      "faq": "প্রশ্নাবলী",
+      "terms": "শর্তাবলী",
+      "privacy": "গোপনীয়তা",
+      "sitemap": "সাইটম্যাপ"
     },
     "common": {
       "readMore": "নিবন্ধ পড়ুন",
@@ -236,7 +377,18 @@
       "next": "পরবর্তী",
       "page": "পৃষ্ঠা",
       "of": "এর",
-      "results": "ফलाफल",
+      "results": "ফলাফল",
+      "name": "নাম",
+      "email": "ইমেল",
+      "message": "বার্তা",
+      "send": "বার্তা পাঠান",
+      "sending": "পাঠানো হচ্ছে...",
+      "success": "বার্তা সফলভাবে পাঠানো হয়েছে। ধন্যবাদ!",
+      "apiError": "আমরা আপনার বার্তা পাঠাতে পারিনি। অনুগ্রহ করে আবার চেষ্টা করুন।",
+      "networkError": "নেটওয়ার্ক ত্রুটি। আপনার সংযোগ পরীক্ষা করুন।",
+      "fallbackEmail": "অথবা সরাসরি আমাদের ইমেল করুন",
+      "backToBlog": "ব্লগে ফিরে যান",
+      "backToFormulas": "সূত্র ডিরেক্টরিতে ফিরে যান",
       "switchLanguage": "ভাষা"
     },
     "footer": {
@@ -244,17 +396,24 @@
     }
   },
   "ja": {
+    "categories": {
+      "trigonometry": "三角法",
+      "sides": "辺の計算",
+      "area": "面積と幾何学",
+      "advanced": "高度な関係",
+      "special": "特別な三角形"
+    },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
-      "blog": "Blog",
-      "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "home": "ホーム",
+      "practice": "練習",
+      "formulas": "公式",
+      "aboutUs": "私たちについて",
+      "contactUs": "お問い合わせ",
+      "blog": "ブログ",
+      "faq": "よくある質問",
+      "terms": "利用規約",
+      "privacy": "プライバシー",
+      "sitemap": "サイトマップ"
     },
     "common": {
       "readMore": "記事を読む",
@@ -263,6 +422,17 @@
       "page": "ページ",
       "of": "/",
       "results": "結果",
+      "name": "名前",
+      "email": "メールアドレス",
+      "message": "メッセージ",
+      "send": "送信",
+      "sending": "送信中...",
+      "success": "メッセージを送信しました。ありがとうございます！",
+      "apiError": "送信できませんでした。もう一度お試しください。",
+      "networkError": "ネットワークエラー。接続を確認してください。",
+      "fallbackEmail": "または、こちらに直接メールしてください",
+      "backToBlog": "ブログに戻る",
+      "backToFormulas": "公式ディレクトリに戻る",
       "switchLanguage": "言語"
     },
     "footer": {
@@ -270,17 +440,24 @@
     }
   },
   "ko": {
+    "categories": {
+      "trigonometry": "삼각법",
+      "sides": "변 계산",
+      "area": "넓이 및 기하학",
+      "advanced": "고급 관계",
+      "special": "특수 삼각형"
+    },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
-      "blog": "Blog",
+      "home": "홈",
+      "practice": "연습",
+      "formulas": "공식",
+      "aboutUs": "소개",
+      "contactUs": "문의하기",
+      "blog": "블로그",
       "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "terms": "약관",
+      "privacy": "개인정보",
+      "sitemap": "사이트맵"
     },
     "common": {
       "readMore": "기사 읽기",
@@ -289,6 +466,17 @@
       "page": "페이지",
       "of": "/",
       "results": "결과",
+      "name": "이름",
+      "email": "이메일",
+      "message": "메시지",
+      "send": "메시지 보내기",
+      "sending": "보내는 중...",
+      "success": "메시지가 성공적으로 전송되었습니다. 감사합니다!",
+      "apiError": "메시지를 보낼 수 없습니다. 다시 시도해 주세요.",
+      "networkError": "네트워크 오류. 연결을 확인해 주세요.",
+      "fallbackEmail": "또는 직접 이메일을 보내주세요",
+      "backToBlog": "블로그로 돌아가기",
+      "backToFormulas": "공식 디렉토리로 돌아가기",
       "switchLanguage": "언어"
     },
     "footer": {
@@ -296,17 +484,24 @@
     }
   },
   "ms": {
+    "categories": {
+      "trigonometry": "Trigonometri",
+      "sides": "Pengiraan Sisi",
+      "area": "Luas & Geometri",
+      "advanced": "Hubungan Lanjutan",
+      "special": "Segitiga Khas"
+    },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
+      "home": "Utama",
+      "practice": "Latihan",
+      "formulas": "Formula",
+      "aboutUs": "Tentang Kami",
+      "contactUs": "Hubungi Kami",
       "blog": "Blog",
-      "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "faq": "Soalan Lazim",
+      "terms": "Syarat",
+      "privacy": "Privasi",
+      "sitemap": "Peta Laman"
     },
     "common": {
       "readMore": "Baca artikel",
@@ -315,6 +510,17 @@
       "page": "Halaman",
       "of": "daripada",
       "results": "Keputusan",
+      "name": "Nama",
+      "email": "E-mel",
+      "message": "Mesej",
+      "send": "Hantar Mesej",
+      "sending": "Menghantar...",
+      "success": "Mesej berjaya dihantar. Terima kasih!",
+      "apiError": "Kami tidak dapat menghantar mesej anda. Sila cuba lagi.",
+      "networkError": "Ralat rangkaian. Sila semak sambungan anda.",
+      "fallbackEmail": "Atau e-mel kami terus di",
+      "backToBlog": "Kembali ke Blog",
+      "backToFormulas": "Kembali ke Direktori Formula",
       "switchLanguage": "Bahasa"
     },
     "footer": {
@@ -322,17 +528,24 @@
     }
   },
   "pl": {
+    "categories": {
+      "trigonometry": "Trygonometria",
+      "sides": "Obliczenia boków",
+      "area": "Pole i geometria",
+      "advanced": "Zaawansowane relacje",
+      "special": "Trójkąty specjalne"
+    },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
+      "home": "Główna",
+      "practice": "Praktyka",
+      "formulas": "Wzory",
+      "aboutUs": "O nas",
+      "contactUs": "Kontakt",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "terms": "Regulamin",
+      "privacy": "Prywatność",
+      "sitemap": "Mapa strony"
     },
     "common": {
       "readMore": "Czytaj artykuł",
@@ -341,6 +554,17 @@
       "page": "Strona",
       "of": "z",
       "results": "Wyniki",
+      "name": "Imię",
+      "email": "E-mail",
+      "message": "Wiadomość",
+      "send": "Wyślij wiadomość",
+      "sending": "Wysyłanie...",
+      "success": "Wiadomość została wysłana. Dziękujemy!",
+      "apiError": "Nie udało się wysłać wiadomości. Spróbuj ponownie.",
+      "networkError": "Błąd sieci. Sprawdź swoje połączenie.",
+      "fallbackEmail": "Lub napisz do nas bezpośrednio na",
+      "backToBlog": "Wróć do bloga",
+      "backToFormulas": "Wróć do katalogu wzorów",
       "switchLanguage": "Język"
     },
     "footer": {
@@ -348,17 +572,24 @@
     }
   },
   "id": {
+    "categories": {
+      "trigonometry": "Trigonometri",
+      "sides": "Perhitungan Sisi",
+      "area": "Luas & Geometri",
+      "advanced": "Hubungan Lanjutan",
+      "special": "Segitiga Khusus"
+    },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
+      "home": "Beranda",
+      "practice": "Latihan",
+      "formulas": "Rumus",
+      "aboutUs": "Tentang Kami",
+      "contactUs": "Hubungi Kami",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "terms": "Syarat",
+      "privacy": "Privasi",
+      "sitemap": "Peta situs"
     },
     "common": {
       "readMore": "Baca artikel",
@@ -367,6 +598,17 @@
       "page": "Halaman",
       "of": "dari",
       "results": "Hasil",
+      "name": "Nama",
+      "email": "Email",
+      "message": "Pesan",
+      "send": "Kirim Pesan",
+      "sending": "Mengirim...",
+      "success": "Pesan berhasil terkirim. Terima kasih!",
+      "apiError": "Kami tidak dapat mengirim pesan Anda. Silakan coba lagi.",
+      "networkError": "Kesalahan jaringan. Periksa koneksi Anda.",
+      "fallbackEmail": "Atau email kami langsung di",
+      "backToBlog": "Kembali ke Blog",
+      "backToFormulas": "Kembali ke Direktori Rumus",
       "switchLanguage": "Bahasa"
     },
     "footer": {
@@ -374,17 +616,24 @@
     }
   },
   "ar": {
+    "categories": {
+      "trigonometry": "علم المثلثات",
+      "sides": "حسابات الأضلاع",
+      "area": "المساحة والهندسة",
+      "advanced": "علاقات متقدمة",
+      "special": "مثلثات خاصة"
+    },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
-      "blog": "Blog",
-      "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "home": "الرئيسية",
+      "practice": "ممارسة",
+      "formulas": "صيغ",
+      "aboutUs": "من نحن",
+      "contactUs": "اتصل بنا",
+      "blog": "المدونة",
+      "faq": "الأسئلة الشائعة",
+      "terms": "الشروط",
+      "privacy": "الخصوصية",
+      "sitemap": "خريطة الموقع"
     },
     "common": {
       "readMore": "اقرأ المقال",
@@ -393,6 +642,17 @@
       "page": "صفحة",
       "of": "من",
       "results": "نتائج",
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "message": "الرسالة",
+      "send": "إرسال الرسالة",
+      "sending": "جاري الإرسال...",
+      "success": "تم إرسال الرسالة بنجاح. شكراً لك!",
+      "apiError": "لم نتمكن من إرسال رسالتك. يرجى المحاولة مرة أخرى.",
+      "networkError": "خطأ في الشبكة. يرجى التحقق من اتصالك.",
+      "fallbackEmail": "أو راسلنا مباشرة على",
+      "backToBlog": "العودة إلى المدونة",
+      "backToFormulas": "العودة إلى دليل الصيغ",
       "switchLanguage": "اللغة"
     },
     "footer": {
@@ -400,17 +660,24 @@
     }
   },
   "bg": {
+    "categories": {
+      "trigonometry": "Тригонометрия",
+      "sides": "Изчисления на страни",
+      "area": "Площ и геометрия",
+      "advanced": "Сложни зависимости",
+      "special": "Специални триъгълници"
+    },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
-      "blog": "Blog",
-      "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "home": "Начало",
+      "practice": "Практика",
+      "formulas": "Формули",
+      "aboutUs": "За нас",
+      "contactUs": "Контакт",
+      "blog": "Блог",
+      "faq": "ЧЗВ",
+      "terms": "Условия",
+      "privacy": "Поверителност",
+      "sitemap": "Карта на сайта"
     },
     "common": {
       "readMore": "Прочети статията",
@@ -419,6 +686,17 @@
       "page": "Страница",
       "of": "от",
       "results": "Резултати",
+      "name": "Име",
+      "email": "Имейл",
+      "message": "Съобщение",
+      "send": "Изпрати съобщение",
+      "sending": "Изпращане...",
+      "success": "Съобщението е изпратено успешно. Благодаря ви!",
+      "apiError": "Не можахме да изпратим съобщението ви. Моля, опитайте отново.",
+      "networkError": "Мрежова грешка. Моля, проверете връзката си.",
+      "fallbackEmail": "Или ни пишете директно на",
+      "backToBlog": "Обратно към блога",
+      "backToFormulas": "Обратно към каталога с формули",
       "switchLanguage": "Език"
     },
     "footer": {
@@ -426,17 +704,24 @@
     }
   },
   "tr": {
+    "categories": {
+      "trigonometry": "Trigonometri",
+      "sides": "Kenar Hesaplamaları",
+      "area": "Alan ve Geometri",
+      "advanced": "Gelişmiş İlişkiler",
+      "special": "Özel Üçgenler"
+    },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
+      "home": "Ana Sayfa",
+      "practice": "Pratik",
+      "formulas": "Formüller",
+      "aboutUs": "Hakkımızda",
+      "contactUs": "İletişim",
       "blog": "Blog",
-      "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "faq": "SSS",
+      "terms": "Şartlar",
+      "privacy": "Gizlilik",
+      "sitemap": "Site Haritası"
     },
     "common": {
       "readMore": "Makaleyi oku",
@@ -445,6 +730,17 @@
       "page": "Sayfa",
       "of": "/",
       "results": "Sonuçlar",
+      "name": "İsim",
+      "email": "E-posta",
+      "message": "Mesaj",
+      "send": "Mesaj Gönder",
+      "sending": "Gönderiliyor...",
+      "success": "Mesaj başarıyla gönderildi. Teşekkürler!",
+      "apiError": "Mesajınızı gönderemedik. Lütfen tekrar deneyin.",
+      "networkError": "Ağ hatası. Lütfen bağlantınızı kontrol edin.",
+      "fallbackEmail": "Veya doğrudan bize e-posta gönderin:",
+      "backToBlog": "Blog'a Geri Dön",
+      "backToFormulas": "Formül Dizinine Geri Dön",
       "switchLanguage": "Dil"
     },
     "footer": {
@@ -452,17 +748,24 @@
     }
   },
   "sv": {
+    "categories": {
+      "trigonometry": "Trigonometri",
+      "sides": "Sidberäkningar",
+      "area": "Area och geometri",
+      "advanced": "Avancerade samband",
+      "special": "Speciella trianglar"
+    },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
-      "blog": "Blog",
+      "home": "Hem",
+      "practice": "Öva",
+      "formulas": "Formler",
+      "aboutUs": "Om oss",
+      "contactUs": "Kontakt",
+      "blog": "Blogg",
       "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "terms": "Villkor",
+      "privacy": "Integritet",
+      "sitemap": "Sajtmap"
     },
     "common": {
       "readMore": "Läs artikel",
@@ -471,6 +774,17 @@
       "page": "Sida",
       "of": "av",
       "results": "Resultat",
+      "name": "Namn",
+      "email": "E-post",
+      "message": "Meddelande",
+      "send": "Skicka meddelande",
+      "sending": "Skickar...",
+      "success": "Meddelandet skickades. Tack!",
+      "apiError": "Kunde inte skicka meddelandet. Försök igen.",
+      "networkError": "Nätverksfel. Kontrollera din anslutning.",
+      "fallbackEmail": "Eller mejla oss direkt på",
+      "backToBlog": "Tillbaka till bloggen",
+      "backToFormulas": "Tillbaka till formelkatalogen",
       "switchLanguage": "Språk"
     },
     "footer": {
@@ -478,17 +792,24 @@
     }
   },
   "zh": {
+    "categories": {
+      "trigonometry": "三角学",
+      "sides": "边长计算",
+      "area": "面积与几何",
+      "advanced": "高级关系",
+      "special": "特殊三角形"
+    },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
-      "blog": "Blog",
-      "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "home": "首页",
+      "practice": "练习",
+      "formulas": "公式",
+      "aboutUs": "关于我们",
+      "contactUs": "联系我们",
+      "blog": "博客",
+      "faq": "常见问题",
+      "terms": "条款",
+      "privacy": "隐私",
+      "sitemap": "网站地图"
     },
     "common": {
       "readMore": "阅读文章",
@@ -497,6 +818,17 @@
       "page": "页",
       "of": "/",
       "results": "结果",
+      "name": "姓名",
+      "email": "电子邮件",
+      "message": "留言",
+      "send": "发送留言",
+      "sending": "发送中...",
+      "success": "留言已成功发送。谢谢！",
+      "apiError": "无法发送您的留言。请重试。",
+      "networkError": "网络错误。请检查您的连接。",
+      "fallbackEmail": "或直接发邮件给我们：",
+      "backToBlog": "返回博客",
+      "backToFormulas": "返回公式目录",
       "switchLanguage": "语言"
     },
     "footer": {
@@ -504,4 +836,3 @@
     }
   }
 }
-

@@ -12,8 +12,10 @@ export function getStaticPaths() {
   return getLocaleStaticPaths();
 }
 
-const { locale } = Astro.params as { locale: Locale };
+const locale = getLocaleFromParams(Astro.params.locale);
 const bundle = getTranslations(locale);
+const content = bundle.content as Record<string, any>;
+const faqHub = content.faqHub ?? {};
 
 const groupedFaqs = bundle.faq.reduce((acc, item) => {
   const cat = item.category || 'Detailed FAQs';
@@ -22,8 +24,8 @@ const groupedFaqs = bundle.faq.reduce((acc, item) => {
   return acc;
 }, {} as Record<string, typeof bundle.faq>);
 
-const pageTitle = "Frequently Asked Questions | Right Triangle Solver";
-const pageDescription = "Find answers to all your questions about the tools, formulas, units, and solutions on the Right Triangle Solver platform.";
+const pageTitle = `${pick(faqHub, 'title', 'Frequently Asked Questions')} | Right Triangle Solver`;
+const pageDescription = pick(faqHub, 'description', 'Find answers to all your questions about the tools, formulas, units, and solutions.');
 ---
 
 <BaseLayout
@@ -36,10 +38,10 @@ const pageDescription = "Find answers to all your questions about the tools, for
   <header class="relative z-10 flex flex-col items-center justify-center pb-12 text-center text-on-surface">
     <div class="pointer-events-none absolute -top-12 -z-10 h-72 w-full bg-gradient-to-b from-primary/10 to-transparent opacity-30"></div>
     <h1 class="font-headline text-4xl font-bold tracking-tight drop-shadow-sm sm:text-5xl lg:text-6xl text-gradient-primary">
-      Frequently Asked Questions
+      {pick(faqHub, 'heading', 'Frequently Asked Questions')}
     </h1>
     <p class="mt-4 max-w-2xl text-base text-on-surface-variant sm:text-lg">
-      Everything you need to know about our solvers, unit systems, and geometric calculations.
+      {pick(faqHub, 'intro', 'Everything you need to know about our solvers, unit systems, and geometric calculations.')}
     </p>
   </header>
 
@@ -69,13 +71,13 @@ const pageDescription = "Find answers to all your questions about the tools, for
       <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-secondary/15 text-secondary mb-6">
         <span class="material-symbols-outlined text-2xl">menu_book</span>
       </div>
-      <h2 class="text-2xl font-bold text-on-surface">Formula Hub</h2>
+      <h2 class="text-2xl font-bold text-on-surface">{pick(faqHub, 'formulasTitle', 'Formula Hub')}</h2>
       <p class="mt-3 text-on-surface-variant leading-relaxed">
-        Explore our curated directory of specific right-triangle calculators. From basic Pythagorean solutions to advanced projections and Reciprocal Trigonometry.
+        {pick(faqHub, 'formulasIntro', 'Explore our curated directory of specific right-triangle calculators.')}
       </p>
       <div class="mt-6">
         <a href={localizePath(locale, '/formulas/')} class="btn-primary inline-flex items-center gap-2">
-          Browse Formula Directory
+          {pick(faqHub, 'formulasCta', 'Browse Formula Directory')}
           <span class="material-symbols-outlined text-sm">arrow_forward</span>
         </a>
       </div>
@@ -85,13 +87,13 @@ const pageDescription = "Find answers to all your questions about the tools, for
       <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15 text-primary mb-6">
         <span class="material-symbols-outlined text-2xl">calculate</span>
       </div>
-      <h2 class="text-2xl font-bold text-on-surface">Start Solving Now</h2>
+      <h2 class="text-2xl font-bold text-on-surface">{pick(faqHub, 'solveTitle', 'Start Solving Now')}</h2>
       <p class="mt-3 text-on-surface-variant leading-relaxed">
-        Our multi-variable solver handles any valid right-triangle combination instantly with live interactive diagrams and full step-by-step logic tracing.
+        {pick(faqHub, 'solveIntro', 'Our multi-variable solver handles any valid right-triangle combination instantly.')}
       </p>
       <div class="mt-6">
         <a href={localizePath(locale, '/')} class="btn-secondary inline-flex items-center gap-2">
-          Back to Calculator
+          {pick(faqHub, 'solveCta', 'Back to Calculator')}
           <span class="material-symbols-outlined text-sm">home</span>
         </a>
       </div>

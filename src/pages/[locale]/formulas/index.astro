@@ -13,7 +13,11 @@ export function getStaticPaths() {
   return getLocaleStaticPaths();
 }
 
-const locale = getLocaleFromParams(Astro.params.locale);
+const bundle = getTranslations(locale);
+const content = bundle.content as Record<string, any>;
+const categories = (bundle.common.categories as Record<string, string>) ?? {};
+
+const hubText = content.formulaHub ?? {};
 
 const groupedFormulas = RIGHT_TRIANGLE_FORMULAS.reduce<
   Record<string, typeof RIGHT_TRIANGLE_FORMULAS>
@@ -22,6 +26,14 @@ const groupedFormulas = RIGHT_TRIANGLE_FORMULAS.reduce<
   acc[item.category].push(item);
   return acc;
 }, {});
+
+const categoryMap = {
+  'Trigonometry': categories.trigonometry || 'Trigonometry',
+  'Side Calculations': categories.sides || 'Side Calculations',
+  'Area & Geometry': categories.area || 'Area & Geometry',
+  'Advanced Relations': categories.advanced || 'Advanced Relations',
+  'Special Triangles': categories.special || 'Special Triangles'
+};
 
 const categoryOrder = [
   'Trigonometry',
@@ -36,21 +48,21 @@ const categoryId = (cat: string) => cat.toLowerCase().replace(/[^a-z0-9]+/g, '-'
 
 <BaseLayout
   locale={locale}
-  title="Right Triangle Formula Directory"
-  description="Every key right-triangle formula with separate pages and quick calculators."
+  title={pick(hubText, 'title', 'Right Triangle Formula Directory')}
+  description={pick(hubText, 'description', 'Every key right-triangle formula with separate pages and quick calculators.')}
   canonicalPath={formulasRoot}
 >
   <header class="mb-10 text-center">
-    <p class="font-label text-xs uppercase tracking-widest text-primary">Formula Hub</p>
-    <h1 class="mt-3 text-3xl font-headline sm:text-4xl lg:text-5xl text-[#5b4000]">All Right Triangle Formulas</h1>
+    <p class="font-label text-xs uppercase tracking-widest text-primary">{pick(hubText, 'badge', 'Formula Hub')}</p>
+    <h1 class="mt-3 text-3xl font-headline sm:text-4xl lg:text-5xl text-[#5b4000]">{pick(hubText, 'heading', 'All Right Triangle Formulas')}</h1>
     <p class="mx-auto mt-4 max-w-3xl text-on-surface-variant">
-      Every formula has its own page with definitions, usage notes, and a quick calculator.
+      {pick(hubText, 'intro', 'Every formula has its own page with definitions, usage notes, and a quick calculator.')}
     </p>
     
     <nav class="mt-6 flex flex-wrap justify-center gap-3">
       {categoryOrder.map(cat => (
         <a href={`#${categoryId(cat)}`} class="rounded-full bg-surface-container-high px-4 py-2 text-sm font-medium hover:bg-primary hover:text-white transition-colors border border-outline-variant/50">
-          {cat}
+          {categoryMap[cat]}
         </a>
       ))}
     </nav>
@@ -63,17 +75,22 @@ const categoryId = (cat: string) => cat.toLowerCase().replace(/[^a-z0-9]+/g, '-'
 
       return (
         <section id={categoryId(category)} class="mt-12 section-shell scroll-mt-24">
-          <h2 class="text-2xl font-semibold border-b border-outline-variant/35 pb-2 mb-6">{category}</h2>
+          <h2 class="text-2xl font-semibold border-b border-outline-variant/35 pb-2 mb-6">{categoryMap[category]}</h2>
           <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
-            {items.map((formula) => (
+            {items.map((formula) => {
+              const localizedFormula = (bundle.formulas?.[formula.slug] as any) || {};
+              const displayTitle = localizedFormula.title || formula.title;
+              const displayDescription = localizedFormula.description || formula.description;
+
+              return (
               <a
                 href={`${formulasRoot}${formula.slug}/`}
                 class="surface-card block border-outline-variant/35 hover:border-primary/50 hover:bg-surface-container-high transition-transform hover:-translate-y-1 shadow-sm"
               >
                 <div class="flex flex-col h-full">
                   <p class="font-label text-xs uppercase tracking-widest text-primary">Formula</p>
-                  <h3 class="mt-2 text-lg font-semibold">{formula.title}</h3>
-                  <p class="mt-3 text-sm text-on-surface-variant flex-grow">{formula.description}</p>
+                  <h3 class="mt-2 text-lg font-semibold">{displayTitle}</h3>
+                  <p class="mt-3 text-sm text-on-surface-variant flex-grow">{displayDescription}</p>
                   
                   <div 
                     class="mt-4 rounded-md bg-surface-container-lowest border border-outline-variant/20 px-4 py-3 text-center math-textbook overflow-x-auto text-lg"
@@ -81,7 +98,8 @@ const categoryId = (cat: string) => cat.toLowerCase().replace(/[^a-z0-9]+/g, '-'
                   />
                 </div>
               </a>
-            ))}
+              );
+            })}
           </div>
         </section>
       );
@@ -93,13 +111,13 @@ const categoryId = (cat: string) => cat.toLowerCase().replace(/[^a-z0-9]+/g, '-'
       <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15 text-primary mb-6">
         <span class="material-symbols-outlined text-2xl">help_outline</span>
       </div>
-      <h2 class="text-2xl font-bold text-on-surface">Geometric Knowledge Base</h2>
+      <h2 class="text-2xl font-bold text-on-surface">{pick(hubText, 'faqTitle', 'Geometric Knowledge Base')}</h2>
       <p class="mt-3 text-on-surface-variant leading-relaxed">
-        Have questions about decimal precision, measurement units, or step-by-step logic? Our comprehensive FAQ hub covers all {RIGHT_TRIANGLE_FORMULAS.length} tools in detail.
+        {pick(hubText, 'faqIntro', `Have questions about decimal precision, measurement units, or step-by-step logic? Our comprehensive FAQ hub covers all ${RIGHT_TRIANGLE_FORMULAS.length} tools in detail.`)}
       </p>
       <div class="mt-6">
         <a href={localizePath(locale, '/faqs/')} class="btn-primary inline-flex items-center gap-2">
-          Browse Detailed FAQ
+          {pick(hubText, 'faqCta', 'Browse Detailed FAQ')}
           <span class="material-symbols-outlined text-sm">arrow_forward</span>
         </a>
       </div>
@@ -109,13 +127,13 @@ const categoryId = (cat: string) => cat.toLowerCase().replace(/[^a-z0-9]+/g, '-'
       <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-tertiary/15 text-tertiary mb-6">
         <span class="material-symbols-outlined text-2xl">calculate</span>
       </div>
-      <h2 class="text-2xl font-bold text-on-surface">Ready to Solve?</h2>
+      <h2 class="text-2xl font-bold text-on-surface">{pick(hubText, 'solveTitle', 'Ready to Solve?')}</h2>
       <p class="mt-3 text-on-surface-variant leading-relaxed">
-        Return to our high-precision right triangle calculator to instantly solve for hypotenuse, area, and angles using any two known variables.
+        {pick(hubText, 'solveIntro', 'Return to our high-precision right triangle calculator to instantly solve for hypotenuse, area, and angles.')}
       </p>
       <div class="mt-6">
         <a href={localizePath(locale, '/')} class="btn-secondary inline-flex items-center gap-2">
-          Instant Tool Home
+          {pick(hubText, 'solveCta', 'Instant Tool Home')}
           <span class="material-symbols-outlined text-sm">home</span>
         </a>
       </div>

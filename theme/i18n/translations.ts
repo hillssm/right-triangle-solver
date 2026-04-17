@@ -1,6 +1,7 @@
 import commonSource from 'src/config/i18n/common.json';
 import contentSource from 'src/config/i18n/content.json';
 import faqSource from 'src/config/i18n/faq.json';
+import formulasSource from 'src/config/i18n/formulas.json';
 import { DEFAULT_LOCALE, type Locale } from 'theme/i18n/locales';
 
 type Dictionary = Record<string, unknown>;
@@ -14,6 +15,7 @@ type FaqItem = {
 
 const commonData = commonSource as Record<string, Dictionary>;
 const contentData = contentSource as Record<string, Dictionary>;
+const formulasData = formulasSource as Record<string, Dictionary>;
 const faqData = faqSource as Record<string, FaqItem[]>;
 
 function mergeDeep(base: Dictionary, override: Dictionary): Dictionary {
@@ -58,6 +60,7 @@ function mergeFaq(localeFaq: FaqItem[] | undefined): FaqItem[] {
 export type TranslationBundle = {
   content: Dictionary;
   common: Dictionary;
+  formulas: Dictionary;
   faq: FaqItem[];
 };
 
@@ -70,9 +73,13 @@ export function getTranslations(locale: Locale): TranslationBundle {
     commonData[DEFAULT_LOCALE] ?? {},
     commonData[locale] ?? {}
   );
+  const formulas = mergeDeep(
+    formulasData[DEFAULT_LOCALE] ?? {},
+    formulasData[locale] ?? {}
+  );
   const faq = mergeFaq(faqData[locale]);
 
-  return { content, common, faq };
+  return { content, common, formulas, faq };
 }
 
 export function pick<T>(

@@ -15,12 +15,10 @@ export function getStaticPaths() {
 const locale = getLocaleFromParams(Astro.params.locale);
 const bundle = getTranslations(locale);
 const content = bundle.content as Record<string, unknown>;
-const siteContent = (content.site as Record<string, string>) ?? {};
-
+const practiceText = (content.practice as Record<string, string>) ?? {};
 const siteTitle = pick(siteContent, 'title', 'Right Triangle Solver');
-const pageTitle = `Practice Mode | ${siteTitle}`;
-const pageDescription =
-  'Train with right triangle challenges in an interactive practice workspace with progress and keypad input.';
+const pageTitle = `${pick(practiceText, 'title', 'Practice Mode')} | ${siteTitle}`;
+const pageDescription = pick(practiceText, 'description', 'Train with right triangle challenges in an interactive practice workspace.');
 const localizedCalculatorPath = localizePath(locale, '/');
 const localizedLibraryPath = localizePath(locale, '/library/');
 const localizedPracticePath = localizePath(locale, '/practice/');

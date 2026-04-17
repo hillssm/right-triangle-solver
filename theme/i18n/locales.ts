@@ -95,23 +95,26 @@ export function getOgLocale(locale: Locale): string {
 }
 
 export function getLocaleStaticPaths() {
-  return SUPPORTED_LOCALES
-    .filter((locale) => locale !== DEFAULT_LOCALE)
-    .map((locale) => ({ params: { locale } }));
+  return SUPPORTED_LOCALES.map((locale) => ({ params: { locale } }));
+}
+
+export function stripLocalePrefix(path: string): string {
+  const normalized = path.startsWith('/') ? path : `/${path}`;
+  const parts = normalized.split('/').filter(Boolean);
+  
+  if (parts.length > 0 && isLocale(parts[0])) {
+    const stripped = '/' + parts.slice(1).join('/');
+    return stripped.endsWith('/') || stripped === '' ? stripped : `${stripped}/`;
+  }
+  
+  return normalized;
 }
 
 export function localizePath(locale: Locale, path: string): string {
-  const normalized = path.startsWith('/') ? path : `/${path}`;
+  const stripped = stripLocalePrefix(path);
+  const normalized = stripped === '/' ? '' : stripped;
 
-  if (locale === DEFAULT_LOCALE) {
-    return normalized === '' ? '/' : normalized;
-  }
-
-  if (normalized === '/') {
-    return `/${locale}/`;
-  }
-
-  return `/${locale}${normalized}`;
+  return `/${locale}${normalized}${normalized.endsWith('/') || normalized === '' ? '' : '/'}`;
 }
 
 export function localizeNavHref(locale: Locale, href: string): string {

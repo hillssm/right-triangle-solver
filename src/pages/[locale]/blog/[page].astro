@@ -1,0 +1,118 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BlogCard from 'theme/components/BlogCard.astro';
+import Pagination from 'theme/components/Pagination.astro';
+import { getLocaleStaticPaths, getLocaleFromParams, localizePath } from 'theme/i18n/locales';
+import { getTranslations, pick } from 'theme/i18n/translations';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import { toAbsoluteUrl } from 'theme/utils/site';
+
+const PAGE_SIZE = 12;
+
+export async function getStaticPaths() {
+  const pageSize = 12;
+  const allPosts = (await getCollection('blog')).sort(
+    (a, b) => b.data.date.getTime() - a.data.date.getTime()
+  );
+  const totalPosts = allPosts.length;
+  const totalPages = Math.max(Math.ceil(totalPosts / pageSize), 1);
+  const paths = getLocaleStaticPaths();
+
+  if (totalPages <= 1) {
+    return [];
+  }
+
+  return paths.flatMap((path) => {
+    return Array.from({ length: totalPages - 1 }, (_, index) => {
+      const currentPage = index + 2;
+      const startIndex = (currentPage - 1) * pageSize;
+      const posts = allPosts.slice(startIndex, startIndex + pageSize);
+
+      return {
+        params: { ...path.params, page: String(currentPage) },
+        props: {
+          posts,
+          currentPage,
+          totalPages,
+          totalPosts
+        }
+      };
+    });
+  });
+}
+
+const locale = getLocaleFromParams(Astro.params.locale);
+const bundle = getTranslations(locale);
+const content = bundle.content as Record<string, unknown>;
+const common = bundle.common as Record<string, unknown>;
+const blogText = (content.blog as Record<string, string>) ?? {};
+const commonWords = (common.common as Record<string, string>) ?? {};
+
+const { posts, currentPage, totalPages, totalPosts } = Astro.props as {
+  posts: CollectionEntry<'blog'>[];
+  currentPage: number;
+  totalPages: number;
+  totalPosts: number;
+};
+
+const start = (currentPage - 1) * PAGE_SIZE + 1;
+const end = start + posts.length - 1;
+
+const blogSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  name: pick(blogText, 'title', 'Blog'),
+  description: pick(blogText, 'description', 'Latest posts'),
+  url: toAbsoluteUrl(localizePath(locale, `/blog/${currentPage}/`))
+};
+
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: posts.map((post, index) => ({
+    '@type': 'ListItem',
+    position: start + index,
+    url: toAbsoluteUrl(localizePath(locale, `/blog/${post.id}/`))
+  }))
+};
+---
+
+<BaseLayout
+  locale={locale}
+  title={`${pick(blogText, 'title', 'Blog')} - ${pick(commonWords, 'page', 'Page')} ${currentPage} | Right Triangle Solver`}
+  description={pick(blogText, 'description', 'Read the latest posts')}
+  canonicalPath={localizePath(locale, `/blog/${currentPage}/`)}
+>
+  <script is:inline slot="head" type="application/ld+json" set:html={JSON.stringify(blogSchema)}></script>
+  <script is:inline slot="head" type="application/ld+json" set:html={JSON.stringify(itemListSchema)}></script>
+
+  <section class="section-shell">
+    <h1 class="text-3xl font-bold sm:text-4xl">{pick(blogText, 'title', 'Blog')}</h1>
+    <p class="mt-3 text-on-surface-variant">
+      {pick(commonWords, 'page', 'Page')} {currentPage} {pick(commonWords, 'of', 'of')} {totalPages}
+    </p>
+    <p class="mt-2 text-sm text-outline">
+      {pick(commonWords, 'results', 'Results')}: {start}-{end} {pick(commonWords, 'of', 'of')} {totalPosts}
+    </p>
+  </section>
+
+  <div class="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+    {posts.map((post) => (
+      <BlogCard
+        title={post.data.title}
+        description={post.data.description}
+        image={post.data.image}
+        href={localizePath(locale, `/blog/${post.id}/`)}
+        ctaLabel={pick(commonWords, 'readMore', 'Read article')}
+      />
+    ))}
+  </div>
+
+  <Pagination
+    currentPage={currentPage}
+    totalPages={totalPages}
+    basePath={localizePath(locale, '/blog/')}
+    previousLabel={pick(commonWords, 'previous', 'Previous')}
+    nextLabel={pick(commonWords, 'next', 'Next')}
+  />
+</BaseLayout>

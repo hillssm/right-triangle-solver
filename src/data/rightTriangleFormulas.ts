@@ -238,6 +238,60 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     }
   },
   {
+    slug: 'angle-from-sine',
+    title: 'Angle From Sine',
+    category: 'Trigonometry',
+    expression: 'A = \\arcsin\\left(\\frac{a}{c}\\right)',
+    description: 'Recover acute angle A when opposite side and hypotenuse are known.',
+    variables: ['A = acute angle', 'a = opposite leg', 'c = hypotenuse'],
+    notes: ['Output is in degrees here.', 'Ratio a/c must be in (0, 1).'],
+    calculator: {
+      kind: 'angle_asin',
+      outputLabel: 'Angle A',
+      outputUnit: 'degrees',
+      fields: [
+        { key: 'a', label: 'Opposite leg a', min: 0 },
+        { key: 'c', label: 'Hypotenuse c', min: 0 }
+      ]
+    }
+  },
+  {
+    slug: 'angle-from-cosine',
+    title: 'Angle From Cosine',
+    category: 'Trigonometry',
+    expression: 'A = \\arccos\\left(\\frac{b}{c}\\right)',
+    description: 'Recover acute angle A when adjacent side and hypotenuse are known.',
+    variables: ['A = acute angle', 'b = adjacent leg', 'c = hypotenuse'],
+    notes: ['Output is in degrees.', 'Ratio b/c must be in (0, 1).'],
+    calculator: {
+      kind: 'angle_acos',
+      outputLabel: 'Angle A',
+      outputUnit: 'degrees',
+      fields: [
+        { key: 'b', label: 'Adjacent leg b', min: 0 },
+        { key: 'c', label: 'Hypotenuse c', min: 0 }
+      ]
+    }
+  },
+  {
+    slug: 'angle-from-tangent',
+    title: 'Angle From Tangent',
+    category: 'Trigonometry',
+    expression: 'A = \\arctan\\left(\\frac{a}{b}\\right)',
+    description: 'Recover acute angle A from opposite and adjacent legs.',
+    variables: ['A = acute angle', 'a = opposite leg', 'b = adjacent leg'],
+    notes: ['Output is in degrees.', 'Require b > 0.'],
+    calculator: {
+      kind: 'angle_atan',
+      outputLabel: 'Angle A',
+      outputUnit: 'degrees',
+      fields: [
+        { key: 'a', label: 'Opposite leg a', min: 0 },
+        { key: 'b', label: 'Adjacent leg b', min: 0 }
+      ]
+    }
+  },
+  {
     slug: 'cotangent-ratio',
     title: 'Cotangent Ratio',
     category: 'Trigonometry',
@@ -367,6 +421,42 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     description: 'The altitude is the geometric mean of the two hypotenuse segments.',
     variables: ['h = altitude', 'p = hypotenuse segment', 'q = hypotenuse segment'],
     notes: ['Derived from similar right triangles formed by the altitude.']
+  },
+  {
+    slug: 'projection-of-a-on-hypotenuse',
+    title: 'Hypotenuse Segment p',
+    category: 'Advanced Relations',
+    expression: 'p = \\frac{a^2}{c}',
+    description: 'Projection of leg a onto hypotenuse c.',
+    variables: ['a = leg', 'c = hypotenuse', 'p = projection segment'],
+    notes: ['Together with q, satisfies p + q = c.', 'Requires c > 0.'],
+    calculator: {
+      kind: 'projection_p',
+      outputLabel: 'Projection p',
+      outputUnit: 'units',
+      fields: [
+        { key: 'a', label: 'Leg a', min: 0 },
+        { key: 'c', label: 'Hypotenuse c', min: 0 }
+      ]
+    }
+  },
+  {
+    slug: 'projection-of-b-on-hypotenuse',
+    title: 'Hypotenuse Segment q',
+    category: 'Advanced Relations',
+    expression: 'q = \\frac{b^2}{c}',
+    description: 'Projection of leg b onto hypotenuse c.',
+    variables: ['b = leg', 'c = hypotenuse', 'q = projection segment'],
+    notes: ['Together with p, satisfies p + q = c.', 'Requires c > 0.'],
+    calculator: {
+      kind: 'projection_q',
+      outputLabel: 'Projection q',
+      outputUnit: 'units',
+      fields: [
+        { key: 'b', label: 'Leg b', min: 0 },
+        { key: 'c', label: 'Hypotenuse c', min: 0 }
+      ]
+    }
   },
   {
     slug: 'leg-a-projection',

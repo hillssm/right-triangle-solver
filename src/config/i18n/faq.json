@@ -322,5 +322,325 @@
       "answer": "Estamos increíblemente orgullosos de ofrecer un seguimiento analítico completo paso a paso para cada herramienta de fórmula, mostrando desgloses de ejecución matemática al estilo de un libro de texto.",
       "display": true
     }
+  ],
+  "fr": [
+    {
+      "category": "Informations générales",
+      "question": "Quel est le minimum d'informations nécessaires pour résoudre un triangle rectangle ?",
+      "answer": "Vous avez besoin d'exactement deux valeurs. Au moins l'une d'entre elles doit être une longueur de côté (un cathète ou l'hypoténuse).",
+      "display": true
+    },
+    {
+      "category": "Informations générales",
+      "question": "Puis-je résoudre un triangle avec seulement deux côtés ?",
+      "answer": "Oui, le système utilise le théorème de Pythagore et la trigonométrie inverse pour déduire le reste du triangle.",
+      "display": true
+    },
+    {
+      "category": "Utilisation et erreurs",
+      "question": "La calculatrice affiche-t-elle les étapes de la solution ?",
+      "answer": "Oui, nous proposons un suivi analytique complet étape par étape pour chaque outil de formule.",
+      "display": true
+    }
+  ],
+  "de": [
+    {
+      "category": "Allgemeine Informationen",
+      "question": "Was sind die Mindestinformationen, um ein rechtwinkliges Dreieck zu lösen?",
+      "answer": "Sie benötigen genau zwei Werte. Mindestens einer dieser Werte muss eine Seitenlänge sein.",
+      "display": true
+    },
+    {
+      "category": "Allgemeine Informationen",
+      "question": "Kann ich ein Dreieck nur mit zwei Seiten lösen?",
+      "answer": "Ja, das System verwendet den Satz des Pythagoras und die inverse Trigonometrie, um den Rest zu berechnen.",
+      "display": true
+    },
+    {
+      "category": "Nutzung und Fehler",
+      "question": "Zeigt der Rechner Schritt-für-Schritt-Lösungen an?",
+      "answer": "Ja, wir bieten eine vollständige analytische Schritt-für-Schritt-Verfolgung für jedes Formel-Tool an.",
+      "display": true
+    }
+  ],
+  "ru": [
+    {
+      "category": "Общая информация",
+      "question": "Какая минимальная информация нужна для решения прямоугольного треугольника?",
+      "answer": "Вам нужны ровно два значения. По крайней мере одно из них должно быть длиной стороны.",
+      "display": true
+    },
+    {
+      "category": "Общая информация",
+      "question": "Можно ли решить треугольник, зная только две стороны?",
+      "answer": "Да, система использует теорему Пифагора и обратную тригонометрию для вычисления остальных параметров.",
+      "display": true
+    },
+    {
+      "category": "Использование и ошибки",
+      "question": "Показывает ли калькулятор пошаговое решение?",
+      "answer": "Да, мы предоставляем полное пошаговое аналитическое отслеживание для каждого инструмента формул.",
+      "display": true
+    }
+  ],
+  "ja": [
+    {
+      "category": "一般情報",
+      "question": "直角三角形を解くために必要な最小限の情報は何ですか？",
+      "answer": "正確に2つの値が必要です。そのうちの少なくとも1つは辺の長さ（カテパスまたは斜辺）である必要があります。",
+      "display": true
+    },
+    {
+      "category": "一般情報",
+      "question": "2辺だけで三角形を解くことはできますか？",
+      "answer": "はい、システムはピタゴラスの定理と逆三角関数を使用して、三角形の残りの部分を導き出します。",
+      "display": true
+    },
+    {
+      "category": "使用方法とエラー",
+      "question": "計算機はステップバイステップの解決策を表示しますか？",
+      "answer": "はい、すべての公式ツールについて、完全なステップバイステップの分析追跡を提供しています。",
+      "display": true
+    }
+  ],
+  "ko": [
+    {
+      "category": "일반 정보",
+      "question": "직각 삼각형을 풀기 위해 필요한 최소 정보는 무엇입니까?",
+      "answer": "정확히 두 개의 값이 필요합니다. 그 중 적어도 하나는 변의 길이(밑변, 높이 또는 빗변)여야 합니다.",
+      "display": true
+    },
+    {
+      "category": "일반 정보",
+      "question": "두 변만으로 삼각형을 풀 수 있습니까?",
+      "answer": "예, 시스템은 피타고라스 정리와 역삼각함수를 사용하여 삼각형의 나머지 부분을 도출합니다.",
+      "display": true
+    },
+    {
+      "category": "사용법 및 오류",
+      "question": "계산기는 단계별 솔루션을 보여줍니까?",
+      "answer": "예, 모든 공식 도구에 대해 완전한 단계별 분석 추적을 제공합니다.",
+      "display": true
+    }
+  ],
+  "it": [
+    {
+      "category": "Informazioni generali",
+      "question": "Qual è il minimo di informazioni necessarie per risolvere un triangolo rettangolo ?",
+      "answer": "Hai bisogno di esattamente due valori. Almeno uno di essi deve essere la lunghezza di un lato.",
+      "display": true
+    },
+    {
+      "category": "Informazioni generali",
+      "question": "Posso risolvere un triangolo usando solo due lati?",
+      "answer": "Sì, il sistema utilizza il teorema di Pitagora e la trigonometria inversa.",
+      "display": true
+    },
+    {
+      "category": "Utilizzo ed errori",
+      "question": "La calcolatrice mostra le soluzioni passo dopo passo?",
+      "answer": "Sì, offriamo un tracciamento analitico completo passo dopo passo per ogni formula.",
+      "display": true
+    }
+  ],
+  "pt": [
+    {
+      "category": "Informações gerais",
+      "question": "Qual é o mínimo de informações necessárias para resolver um triângulo retângulo?",
+      "answer": "Você precisa de exatamente dois valores. Pelo menos um deles deve ser o comprimento de um lado.",
+      "display": true
+    },
+    {
+      "category": "Informações gerais",
+      "question": "Posso resolver um triângulo usando apenas dois lados?",
+      "answer": "Sim, o sistema usa o teorema de Pitágoras e trigonometria inversa.",
+      "display": true
+    },
+    {
+      "category": "Uso e erros",
+      "question": "A calculadora mostra as soluções passo a passo?",
+      "answer": "Sim, oferecemos um rastreamento analítico completo passo a passo.",
+      "display": true
+    }
+  ],
+  "bn": [
+    {
+      "category": "সাধারণ তথ্য",
+      "question": "একটি সমকোণী ত্রিভুজ সমাধান করার জন্য ন্যূনতম কী তথ্য প্রয়োজন?",
+      "answer": "আপনার ঠিক দুটি মানের প্রয়োজন। এর মধ্যে অন্তত একটি হতে হবে বাহুর দৈর্ঘ্য।",
+      "display": true
+    },
+    {
+      "category": "সাধারণ তথ্য",
+      "question": "আমি কি শুধু দুটি বাহু ব্যবহার করে একটি ত্রিভুজ সমাধান করতে পারি?",
+      "answer": "হ্যাঁ, সিস্টেমটি ত্রিভুজের বাকি অংশ বের করতে পিথাগোরাস উপপাদ্য এবং বিপরীত ত্রিকোণমিতি ব্যবহার করে।",
+      "display": true
+    },
+    {
+      "category": "ব্যবহার এবং ত্রুটি",
+      "question": "ক্যালকুলেটর কি ধাপে ধাপে সমাধান দেখায়?",
+      "answer": "হ্যাঁ, আমরা প্রতিটি সূত্র সরঞ্জামের জন্য সম্পূর্ণ ধাপে ধাপে সমাধান প্রদান করি।",
+      "display": true
+    }
+  ],
+  "ms": [
+    {
+      "category": "Maklumat Umum",
+      "question": "Apakah maklumat minimum yang diperlukan untuk menyelesaikan segitiga bersudut tegak?",
+      "answer": "Anda memerlukan tepat dua nilai. Sekurang-kurangnya satu daripada nilai ini mestilah panjang sisi.",
+      "display": true
+    },
+    {
+      "category": "Maklumat Umum",
+      "question": "Bolehkah saya menyelesaikan segitiga menggunakan dua sisi sahaja?",
+      "answer": "Ya, sistem menggunakan teorem Pythagoras dan trigonometri songsang untuk mencari baki parameter.",
+      "display": true
+    },
+    {
+      "category": "Penggunaan dan Ralat",
+      "question": "Adakah kalkulator menunjukkan penyelesaian langkah demi langkah?",
+      "answer": "Ya, kami menyediakan penjejakan analitikal langkah demi langkah untuk setiap alat formula.",
+      "display": true
+    }
+  ],
+  "pl": [
+    {
+      "category": "Informacje ogólne",
+      "question": "Jakie są minimalne informacje potrzebne do rozwiązania trójkąta prostokątnego ?",
+      "answer": "Potrzebujesz dokładnie dwóch wartości. Co najmniej jedna z nich musi być długością boku.",
+      "display": true
+    },
+    {
+      "category": "Informacje ogólne",
+      "question": "Czy mogę rozwiązać trójkąt używając tylko dwóch boków?",
+      "answer": "Tak, system wykorzystuje twierdzenie Pitagorasa i trygonometrię odwrotną.",
+      "display": true
+    },
+    {
+      "category": "Użycie i błędy",
+      "question": "Czy kalkulator pokazuje rozwiązania krok po kroku?",
+      "answer": "Tak, oferujemy pełne analityczne śledzenie krok po kroku dla każdego narzędzia formuły.",
+      "display": true
+    }
+  ],
+  "id": [
+    {
+      "category": "Informasi Umum",
+      "question": "Apa informasi minimum yang dibutuhkan untuk menyelesaikan segitiga siku-siku?",
+      "answer": "Anda membutuhkan tepat dua nilai. Setidaknya salah satunya harus merupakan panjang sisi.",
+      "display": true
+    },
+    {
+      "category": "Informasi Umum",
+      "question": "Bisakah saya menyelesaikan segitiga hanya dengan menggunakan dua sisi?",
+      "answer": "Ya, sistem menggunakan teorema Pythagoras dan trigonometri invers untuk mencari sisa parameter.",
+      "display": true
+    },
+    {
+      "category": "Penggunaan dan Kesalahan",
+      "question": "Apakah kalkulator menunjukkan solusi langkah demi langkah?",
+      "answer": "Ya, kami menyediakan pelacakan analitis langkah demi langkah untuk setiap alat rumus.",
+      "display": true
+    }
+  ],
+  "ar": [
+    {
+      "category": "معلومات عامة",
+      "question": "ما هو الحد الأدنى من المعلومات اللازمة لحل مثلث قائم الزاوية؟",
+      "answer": "تحتاج إلى قيمتين بالضبط. يجب أن تكون إحداهما على الأقل طول ضلع (ضلع أو وتر).",
+      "display": true
+    },
+    {
+      "category": "معلومات عامة",
+      "question": "هل يمكنني حل مثلث باستخدام ضلعين فقط؟",
+      "answer": "نعم، يستخدم النظام نظرية فيثاغورس والمثلثات العكسية لاستنتاج بقية المثلث.",
+      "display": true
+    },
+    {
+      "category": "الاستخدام والأخطاء",
+      "question": "هل تظهر الحاسبة حلولاً خطوة بخطوة؟",
+      "answer": "نعم، نحن نقدم تتبعاً تحليلياً كاملاً خطوة بخطوة لكل أداة صيغة.",
+      "display": true
+    }
+  ],
+  "bg": [
+    {
+      "category": "Обща информация",
+      "question": "Каква е минималната информация, необходима за решаване на правоъгълен триъгълник?",
+      "answer": "Нуждаете се от точно две стойности. Поне една от тях трябва да бъде дължина на страна.",
+      "display": true
+    },
+    {
+      "category": "Обща информация",
+      "question": "Мога ли да реша триъгълник, като използвам само две страни?",
+      "answer": "Да, системата използва Питагоровата теорема и обратната тригонометрия, за да изчисли останалите параметри.",
+      "display": true
+    },
+    {
+      "category": "Употреба и грешки",
+      "question": "Показва ли калкулаторът решения стъпка по стъпка?",
+      "answer": "Да, предлагаме пълно аналитично проследяване стъпка по стъпка за всеки инструмент за формули.",
+      "display": true
+    }
+  ],
+  "tr": [
+    {
+      "category": "Genel Bilgi",
+      "question": "Bir dik üçgeni çözmek için gereken minimum bilgi nedir?",
+      "answer": "Tam olarak iki değere ihtiyacınız var. Bu değerlerden en az biri kenar uzunluğu (bir dik kenar veya hipotenüs) olmalıdır.",
+      "display": true
+    },
+    {
+      "category": "Genel Bilgi",
+      "question": "Sadece iki kenar kullanarak bir üçgeni çözebilir miyim?",
+      "answer": "Evet, sistem geri kalan parametreleri bulmak için Pisagor teoremini ve ters trigonometriyi kullanır.",
+      "display": true
+    },
+    {
+      "category": "Kullanım ve Hatalar",
+      "question": "Hesap makinesi adım adım çözümleri gösteriyor mu?",
+      "answer": "Evet, her formül aracı için tam analitik adım adım izleme sağlıyoruz.",
+      "display": true
+    }
+  ],
+  "sv": [
+    {
+      "category": "Allmän information",
+      "question": "Vilken är den minsta information som behövs för att lösa en rätvinklig triangel?",
+      "answer": "Du behöver exakt två värden. Minst ett av dessa värden måste vara en sidlängd (katet eller hypotenusa).",
+      "display": true
+    },
+    {
+      "category": "Allmän information",
+      "question": "Kan jag lösa en triangel med bara två sidor?",
+      "answer": "Ja, systemet använder Pythagoras sats och invers trigonometri för att härleda resten av triangeln.",
+      "display": true
+    },
+    {
+      "category": "Användning och fel",
+      "question": "Visar räknaren steg-för-steg-lösningar?",
+      "answer": "Ja, vi erbjuder fullstendig steg-för-steg-analys för varje formelverktyg.",
+      "display": true
+    }
+  ],
+  "zh": [
+    {
+      "category": "一般信息",
+      "question": "解直角三角形所需的最小信息是什么？",
+      "answer": "您需要恰好两个值。其中至少一个必须是边长（直角边或斜边）。",
+      "display": true
+    },
+    {
+      "category": "一般信息",
+      "question": "我可以只用两条边来解三角形吗？",
+      "answer": "是的，系统使用勾股定理和反三角函数来推导三角形的其余部分。",
+      "display": true
+    },
+    {
+      "category": "使用和错误",
+      "question": "计算器会显示分步解决方案吗？",
+      "answer": "是的，我们为每个公式工具提供完整的分析步骤跟踪。",
+      "display": true
+    }
   ]
 }

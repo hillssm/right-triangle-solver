@@ -2923,6 +2923,59 @@
       "description": "了解我们如何使用您的信息。",
       "heading": "隐私政策",
       "updatedLabel": "最后更新：2026年4月12日"
+    },
+    "library": {
+      "title": "公式库",
+      "description": "在专门的深色模式库中浏览定理参考和几何公式。"
+    },
+    "practice": {
+      "title": "练习模式",
+      "description": "在具有进度跟踪功能的交互式工作区中练习直角三角形挑战。"
+    },
+    "formulaHub": {
+      "title": "公式目录 | 直角三角形求解器",
+      "description": "每个关键公式都有单独的页面和快速计算器。",
+      "badge": "公式中心",
+      "heading": "所有直角三角形公式",
+      "intro": "每个公式都有自己的页面，包含定义、使用说明和快速计算器。",
+      "faqTitle": "几何知识库",
+      "faqIntro": "对十进制精度、测量单位或分步逻辑有疑问吗？",
+      "faqCta": "浏览详细常见问题",
+      "solveTitle": "准备好求解了？",
+      "solveIntro": "返回我们的高精度求解器以计算斜边、面积和角度。",
+      "solveCta": "工具首页"
+    },
+    "faqHub": {
+      "title": "常见问题 | 直角三角形求解器",
+      "description": "在我们的平台上查找有关工具、公式、单位和解决方案的所有问题的答案。",
+      "heading": "常见问题",
+      "intro": "关于我们的求解器、单位制和几何计算您需要了解的一切。",
+      "formulasTitle": "公式中心",
+      "formulasIntro": "探索我们精选的特定直角三角形计算器目录。",
+      "formulasCta": "浏览公式目录",
+      "solveTitle": "现在开始求解",
+      "solveIntro": "我们的多变量求解器可立即处理任何有效的直角三角形组合。",
+      "solveCta": "返回计算器"
+    },
+    "blog": {
+      "title": "几何博客",
+      "description": "直角三角形问题求解指南、示例和实用技巧。"
+    },
+    "sitemap": {
+       "title": "网站地图 | 直角三角形求解器",
+       "description": "浏览所有主要页面、本地主页路径和博客内容。",
+       "heading": "网站地图",
+       "staticPagesTitle": "静态页面",
+       "homeRoutesTitle": "本地主页路径",
+       "blogPostsTitle": "博客文章",
+       "blogPaginationTitle": "博客分页"
+    },
+    "errors": {
+      "notFoundTitle": "页面未找到",
+      "notFoundDescription": "您请求的页面无法找到。",
+      "notFoundHeading": "我们找不到该页面",
+      "notFoundText": "尝试返回首页继续求解直角三角形。",
+      "notFoundCta": "返回首页"
     }
   }
 }

@@ -87,6 +87,8 @@ const l = {
   data-label-entered={l.entered}
   data-label-computed={l.computed}
   data-label-solved-from={l.solvedFrom}
+  data-label-status-default={l.statusDefault}
+  data-label-solution-steps-default={l.solutionStepsDefault}
 >
   <div class="grid gap-6 sm:grid-cols-[1.1fr_0.9fr] lg:gap-8">
     <div>
@@ -275,10 +277,6 @@ const l = {
       light_day: 25902068371200, ly: 9460730472580800, kly: 9460730472580800000,
       pc: 3.085677581e16, Mpc: 3.085677581e22
     };
-    const DEFAULT_FORMULAS = ['Enter any 2 valid right-triangle values.'];
-    const DEFAULT_STEPS = ['Enter exactly 2 values.', 'At least 1 value must be a side (a, b, or c).', 'View formulas and steps after solving.'];
-    const DEFAULT_PATH = 'M 70 70 L 70 260 L 380 260 Z';
-
     const formatNumber = (value: number, digits = 4): string => Number(value).toFixed(digits);
     const formatEditableNumber = (value: number, digits = 10): string => String(Number(value.toFixed(digits)));
     const formatWithUnit = (value: number, unit: UnitOption, digits = 4, squared = false): string => {
@@ -420,6 +418,9 @@ const l = {
         const labelEntered = section.getAttribute('data-label-entered') || 'entered';
         const labelComputed = section.getAttribute('data-label-computed') || 'computed';
         const labelSolvedFrom = section.getAttribute('data-label-solved-from') || 'Solved from';
+        const labelStatusDefault = section.getAttribute('data-label-status-default') || '';
+        const labelSolutionStepsDefault = section.getAttribute('data-label-solution-steps-default') || '';
+        const DEFAULT_PATH = 'M 70 70 L 70 260 L 380 260 Z';
 
         const setOriginState = (provided: CalculatorInputKey[] | null) => {
           for (const key of CALCULATOR_INPUT_KEYS) {
@@ -433,8 +434,8 @@ const l = {
       const setEmptyResults = () => {
         for (const key of ['a', 'b', 'c', 'A', 'B', 'area', 'perimeter', 'h', 's', 'r', 'R', 'p', 'q', 'ratioA', 'ratioB', 'tanA']) r[key].textContent = '-';
         setOriginState(null);
-        renderListItems(formulaListEl, DEFAULT_FORMULAS);
-        renderListItems(stepListEl, DEFAULT_STEPS, true);
+        renderListItems(formulaListEl, []);
+        renderListItems(stepListEl, [labelSolutionStepsDefault], true);
         pathEl.setAttribute('d', DEFAULT_PATH);
         fillEl.setAttribute('d', DEFAULT_PATH);
         altitudeLineEl.setAttribute('opacity', '0');
@@ -749,10 +750,10 @@ const l = {
         if (hasAny && filled >= 2) solveFromInputs();
         else if (!hasAny || filled === 0) {
           setEmptyResults();
-          setStatus('Enter any 2 valid right-triangle values.', false);
+          setStatus('', false);
         } else {
           setEmptyResults();
-          setStatus('Enter more values to solve.', true);
+          setStatus('', true);
         }
       };
 
@@ -774,9 +775,9 @@ const l = {
           // However, to keep it "live", we clear if they don't have enough data.
           if (filled === 0) {
             setEmptyResults();
-            setStatus('Enter any 2 valid right-triangle values.', false);
+            setStatus('', false);
           } else if (filled === 1) {
-            setStatus('Enter one more value to solve the triangle.', false);
+            setStatus('', false);
           }
           updatePresetState();
           updateUrlState();

@@ -8,34 +8,96 @@ import {
 
 interface Props {
   currentLocale: Locale;
-  switchLabel: string;
+  switchLabel?: string;
 }
 
-const { currentLocale, switchLabel } = Astro.props;
+const { currentLocale } = Astro.props;
 ---
 
-<nav aria-label={switchLabel} class="flex flex-wrap items-center gap-2">
-  <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">{switchLabel}</span>
-  <ul class="flex flex-wrap items-center gap-1 text-xs">
-    {SUPPORTED_LOCALES.map((locale) => {
-      const active = locale === currentLocale;
-      return (
-        <li>
-          <a
-            href={localizePath(locale, '/')}
-            class:list={[
-              'inline-flex rounded-md border px-2 py-1 transition-all duration-200',
-              active
-                ? 'border-primary/50 bg-primary/15 text-primary shadow-[0_8px_18px_-14px_rgba(241,201,125,0.45)]'
-                : 'border-outline-variant/60 text-on-surface-variant hover:border-primary/40 hover:bg-primary/10 hover:text-primary'
-            ]}
-            aria-current={active ? 'page' : undefined}
-            lang={locale}
-          >
-            {locale.toUpperCase()} <span class="sr-only">{LOCALE_LABELS[locale]}</span>
-          </a>
-        </li>
-      );
-    })}
-  </ul>
-</nav>
+<div class="relative inline-block text-left" data-language-switcher>
+  <button
+    type="button"
+    class="inline-flex items-center gap-2 rounded-md border border-outline-variant/60 bg-surface-container-low px-3 py-1.5 text-xs font-medium text-on-surface-variant transition-all duration-200 hover:border-primary/35 hover:bg-primary/5 hover:text-primary focus:outline-none focus:ring-1 focus:ring-primary/25 shadow-sm"
+    id="language-options-menu"
+    aria-expanded="false"
+    aria-haspopup="true"
+    data-switcher-toggle
+  >
+    <span class="material-symbols-outlined text-[18px]">language</span>
+    <span class="uppercase tracking-wider">{currentLocale}</span>
+    <span class="material-symbols-outlined text-[14px] transition-transform duration-200" data-chevron>expand_more</span>
+  </button>
+
+  <div
+    class="absolute right-0 z-50 mt-2 hidden w-64 origin-top-right overflow-hidden rounded-xl border border-outline-variant/70 bg-surface shadow-[var(--shadow-luxury)] backdrop-blur-3xl transition-opacity animate-in fade-in zoom-in-95"
+    role="menu"
+    aria-orientation="vertical"
+    aria-labelledby="language-options-menu"
+    data-switcher-panel
+  >
+    <div class="max-h-72 overflow-y-auto p-2" role="none">
+      <div class="grid grid-cols-2 gap-1" role="none">
+        {SUPPORTED_LOCALES.map((locale) => {
+          const active = locale === currentLocale;
+          return (
+            <a
+              href={localizePath(locale, '/')}
+              class:list={[
+                'flex items-center justify-between rounded-lg px-2.5 py-2 text-[11px] font-medium transition-all duration-200',
+                active
+                  ? 'bg-primary/10 text-primary shadow-sm'
+                  : 'text-on-surface-variant hover:bg-surface-container-high hover:text-primary'
+              ]}
+              role="menuitem"
+              lang={locale}
+            >
+              <div class="flex items-center gap-2">
+                <span class="uppercase opacity-70">{locale}</span>
+                <span class="truncate">{LOCALE_LABELS[locale]}</span>
+              </div>
+              {active && <span class="material-symbols-outlined text-[14px]">check</span>}
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const initSwitchers = () => {
+    const switchers = document.querySelectorAll('[data-language-switcher]');
+    
+    switchers.forEach((switcher) => {
+      const toggle = switcher.querySelector('[data-switcher-toggle]') as HTMLButtonElement;
+      const panel = switcher.querySelector('[data-switcher-panel]') as HTMLElement;
+      const chevron = switcher.querySelector('[data-chevron]') as HTMLElement;
+
+      const toggleMenu = (open?: boolean) => {
+        const isOpen = open ?? panel.classList.contains('hidden');
+        panel.classList.toggle('hidden', !isOpen);
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        chevron.style.transform = isOpen ? 'rotate(180deg)' : '';
+      };
+
+      toggle?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleMenu();
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!switcher.contains(e.target as Node)) {
+          toggleMenu(false);
+        }
+      });
+
+      // Close on escape
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') toggleMenu(false);
+      });
+    });
+  };
+
+  initSwitchers();
+  document.addEventListener('astro:after-swap', initSwitchers);
+</script>

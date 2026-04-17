@@ -5,7 +5,7 @@
     { "labelKey": "aboutUs", "href": "/about-us/" },
     { "labelKey": "contactUs", "href": "/contact-us/" },
     { "labelKey": "blog", "href": "/blog/" },
-    { "labelKey": "faq", "href": "/#faq" }
+    { "labelKey": "faq", "href": "/faqs/" }
   ],
   "footer": [
     { "labelKey": "home", "href": "/" },
@@ -13,6 +13,7 @@
     { "labelKey": "aboutUs", "href": "/about-us/" },
     { "labelKey": "contactUs", "href": "/contact-us/" },
     { "labelKey": "blog", "href": "/blog/" },
+    { "labelKey": "faq", "href": "/faqs/" },
     { "labelKey": "terms", "href": "/terms/" },
     { "labelKey": "privacy", "href": "/privacy/" },
     { "labelKey": "sitemap", "href": "/sitemap/" }

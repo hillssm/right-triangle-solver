@@ -17,19 +17,34 @@ const { heading, description } = Astro.props;
         <div class="grid gap-4 sm:grid-cols-2">
           <label class="grid gap-2 text-sm">
             <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Side a</span>
-            <input class="input-shell" type="text" inputmode="decimal" name="a" placeholder="" />
+            <div class="relative flex">
+              <input class="input-shell flex-1 rounded-r-none border-r-0" type="text" inputmode="decimal" name="a" />
+              <select name="a_unit" class="bg-surface-container border border-outline/30 rounded-r-lg px-2 text-[10px] sm:text-xs focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary w-24 sm:w-28 text-on-surface-variant truncate">
+                <option value="m">(m) meter</option><option value="nm">(nm) nanometer</option><option value="µm">(µm) micrometer</option><option value="mm">(mm) millimeter</option><option value="cm">(cm) centimeter</option><option value="km">(km) kilometer</option><option value="in">(in) inch</option><option value="ft">(ft) foot</option><option value="yd">(yd) yard</option><option value="mi">(mi) mile</option><option value="nmi">(nmi) nautical mile</option><option value="Å">(Å) angstrom</option><option value="mil">(mil) mil</option><option value="pixel">(pixel) pointer</option><option value="pt">(pt) point</option><option value="foot_survey_us">(survey ft)</option><option value="fathom">(fathom)</option><option value="au">(au) astronomic</option><option value="light_second">(ls) l-sec</option><option value="light_minute">(lm) l-min</option><option value="light_hour">(lh) l-hour</option><option value="light_day">(ld) l-day</option><option value="ly">(ly) lightyear</option><option value="kly">(kly) kilolightyear</option><option value="pc">(pc) parsec</option><option value="Mpc">(Mpc) megaparsec</option>
+              </select>
+            </div>
             <span class="min-h-[1rem] text-xs text-error" data-error-for="a"></span>
           </label>
 
           <label class="grid gap-2 text-sm">
             <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Side b</span>
-            <input class="input-shell" type="text" inputmode="decimal" name="b" placeholder="" />
+            <div class="relative flex">
+              <input class="input-shell flex-1 rounded-r-none border-r-0" type="text" inputmode="decimal" name="b" />
+              <select name="b_unit" class="bg-surface-container border border-outline/30 rounded-r-lg px-2 text-[10px] sm:text-xs focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary w-24 sm:w-28 text-on-surface-variant truncate">
+                <option value="m">(m) meter</option><option value="nm">(nm) nanometer</option><option value="µm">(µm) micrometer</option><option value="mm">(mm) millimeter</option><option value="cm">(cm) centimeter</option><option value="km">(km) kilometer</option><option value="in">(in) inch</option><option value="ft">(ft) foot</option><option value="yd">(yd) yard</option><option value="mi">(mi) mile</option><option value="nmi">(nmi) nautical mile</option><option value="Å">(Å) angstrom</option><option value="mil">(mil) mil</option><option value="pixel">(pixel) pointer</option><option value="pt">(pt) point</option><option value="foot_survey_us">(survey ft)</option><option value="fathom">(fathom)</option><option value="au">(au) astronomic</option><option value="light_second">(ls) l-sec</option><option value="light_minute">(lm) l-min</option><option value="light_hour">(lh) l-hour</option><option value="light_day">(ld) l-day</option><option value="ly">(ly) lightyear</option><option value="kly">(kly) kilolightyear</option><option value="pc">(pc) parsec</option><option value="Mpc">(Mpc) megaparsec</option>
+              </select>
+            </div>
             <span class="min-h-[1rem] text-xs text-error" data-error-for="b"></span>
           </label>
 
           <label class="grid gap-2 text-sm">
             <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Hypotenuse c</span>
-            <input class="input-shell" type="text" inputmode="decimal" name="c" placeholder="" />
+            <div class="relative flex">
+              <input class="input-shell flex-1 rounded-r-none border-r-0" type="text" inputmode="decimal" name="c" />
+              <select name="c_unit" class="bg-surface-container border border-outline/30 rounded-r-lg px-2 text-[10px] sm:text-xs focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary w-24 sm:w-28 text-on-surface-variant truncate">
+                <option value="m">(m) meter</option><option value="nm">(nm) nanometer</option><option value="µm">(µm) micrometer</option><option value="mm">(mm) millimeter</option><option value="cm">(cm) centimeter</option><option value="km">(km) kilometer</option><option value="in">(in) inch</option><option value="ft">(ft) foot</option><option value="yd">(yd) yard</option><option value="mi">(mi) mile</option><option value="nmi">(nmi) nautical mile</option><option value="Å">(Å) angstrom</option><option value="mil">(mil) mil</option><option value="pixel">(pixel) pointer</option><option value="pt">(pt) point</option><option value="foot_survey_us">(survey ft)</option><option value="fathom">(fathom)</option><option value="au">(au) astronomic</option><option value="light_second">(ls) l-sec</option><option value="light_minute">(lm) l-min</option><option value="light_hour">(lh) l-hour</option><option value="light_day">(ld) l-day</option><option value="ly">(ly) lightyear</option><option value="kly">(kly) kilolightyear</option><option value="pc">(pc) parsec</option><option value="Mpc">(Mpc) megaparsec</option>
+              </select>
+            </div>
             <span class="min-h-[1rem] text-xs text-error" data-error-for="c"></span>
           </label>
 
@@ -53,18 +68,6 @@ const { heading, description } = Astro.props;
           <span class="text-xs text-on-surface-variant">Radian entries like pi/6 are supported.</span>
         </div>
 
-        <div class="flex flex-wrap items-center gap-2">
-          <label class="font-label text-[10px] uppercase tracking-[0.18em] text-outline" for="triangle-unit">Unit</label>
-          <select id="triangle-unit" class="input-shell w-auto min-w-[8rem] py-2 leading-tight" data-unit-select aria-label="Measurement unit">
-            <option value="">No unit</option>
-            <option value="m">m</option>
-            <option value="cm">cm</option>
-            <option value="mm">mm</option>
-            <option value="ft">ft</option>
-            <option value="in">in</option>
-          </select>
-          <span class="text-xs text-on-surface-variant">All values use the same unit.</span>
-        </div>
 
         <div class="flex flex-wrap gap-3">
           <button class="btn-primary gap-2" type="submit">
@@ -182,9 +185,17 @@ const { heading, description } = Astro.props;
       type CalculatorInputKey
     } from '../../src/utils/rightTriangleCalculator';
 
-    type UnitOption = '' | 'm' | 'cm' | 'mm' | 'ft' | 'in';
+    type UnitOption = string;
 
-    const UNIT_OPTIONS: UnitOption[] = ['', 'm', 'cm', 'mm', 'ft', 'in'];
+    const UNIT_SCALE: Record<string, number> = {
+      m: 1, nm: 1e-9, 'µm': 1e-6, mm: 1e-3, cm: 1e-2, km: 1e3,
+      in: 0.0254, ft: 0.3048, yd: 0.9144, mi: 1609.344, nmi: 1852,
+      'Å': 1e-10, mil: 0.0000254, pixel: 0.0002645833, pt: 0.0003527778,
+      foot_survey_us: 0.3048006096, fathom: 1.8288, au: 149597870700,
+      light_second: 299792458, light_minute: 17987547480, light_hour: 1079252848800,
+      light_day: 25902068371200, ly: 9460730472580800, kly: 9460730472580800000,
+      pc: 3.085677581e16, Mpc: 3.085677581e22
+    };
     const DEFAULT_FORMULAS = ['Enter any 2 valid right-triangle values.'];
     const DEFAULT_STEPS = ['Enter exactly 2 values.', 'At least 1 value must be a side (a, b, or c).', 'View formulas and steps after solving.'];
     const DEFAULT_PATH = 'M 70 70 L 70 260 L 380 260 Z';
@@ -241,7 +252,6 @@ const { heading, description } = Astro.props;
       const statusEl = section.querySelector('[data-tool-status]') as HTMLElement | null;
       const formulaListEl = section.querySelector('[data-formula-list]') as HTMLElement | null;
       const stepListEl = section.querySelector('[data-step-list]') as HTMLElement | null;
-      const unitSelect = section.querySelector('[data-unit-select]') as HTMLSelectElement | null;
       const resetButton = section.querySelector('[data-reset-btn]') as HTMLButtonElement | null;
       const copyButton = section.querySelector('[data-copy-btn]') as HTMLButtonElement | null;
       const pathEl = section.querySelector('[data-triangle-path]') as SVGPathElement | null;
@@ -275,7 +285,7 @@ const { heading, description } = Astro.props;
         tanA: section.querySelector('[data-result-tangent]')
       };
 
-      if (!form || !statusEl || !formulaListEl || !stepListEl || !unitSelect || !resetButton || !copyButton || !pathEl || !fillEl || !altitudeLineEl || !labelA || !labelB || !labelC || !labelAngleAlpha || !labelAngleBeta || !labelH || Object.values(resultEls).some((el) => !el)) return;
+      if (!form || !statusEl || !formulaListEl || !stepListEl || !resetButton || !copyButton || !pathEl || !fillEl || !altitudeLineEl || !labelA || !labelB || !labelC || !labelAngleAlpha || !labelAngleBeta || !labelH || Object.values(resultEls).some((el) => !el)) return;
 
         const inputRefs = {
           a: form.querySelector('input[name="a"]'),
@@ -458,6 +468,12 @@ const { heading, description } = Astro.props;
           const values: Partial<Record<CalculatorInputKey, number>> = {};
           let hasAnyError = false;
 
+          const formData = new FormData(form);
+          const units: Record<string, string> = {};
+          for (const key of ['a', 'b', 'c']) {
+            units[key] = String(formData.get(`${key}_unit`) || 'm');
+          }
+
           for (const key of CALCULATOR_INPUT_KEYS) {
             const raw = inputs[key].value.trim();
           if (!raw) {
@@ -476,6 +492,23 @@ const { heading, description } = Astro.props;
                 : `Enter a valid value for ${key}.`;
             setFieldError(key, error instanceof Error ? error.message : fallback);
             hasAnyError = true;
+          }
+        }
+
+        let primaryUnit = '';
+        for (const k of ['a', 'b', 'c'] as const) {
+          if (values[k] !== undefined) {
+            primaryUnit = units[k];
+            break;
+          }
+        }
+        if (primaryUnit) {
+          unit = primaryUnit;
+          for (const k of ['a', 'b', 'c'] as const) {
+            if (values[k] !== undefined) {
+              const scale = UNIT_SCALE[units[k]] / UNIT_SCALE[primaryUnit];
+              values[k] = values[k]! * scale;
+            }
           }
         }
 
@@ -540,7 +573,6 @@ const { heading, description } = Astro.props;
       const resetTool = () => {
         angleMode = 'deg';
         unit = '';
-        unitSelect.value = '';
         for (const key of CALCULATOR_INPUT_KEYS) {
           inputs[key].value = '';
           setFieldError(key, '');
@@ -600,7 +632,7 @@ const { heading, description } = Astro.props;
         const mode = params.get('mode');
         const urlUnit = params.get('unit');
         if (mode === 'deg' || mode === 'rad') angleMode = mode;
-        if (urlUnit && UNIT_OPTIONS.includes(urlUnit as UnitOption)) unit = urlUnit as UnitOption;
+        if (urlUnit && UNIT_SCALE[urlUnit]) unit = urlUnit;
 
         const map: Array<[string, CalculatorInputKey]> = [['a', 'a'], ['b', 'b'], ['c', 'c'], ['A', 'alpha'], ['B', 'beta']];
         let hasAny = false;
@@ -611,7 +643,6 @@ const { heading, description } = Astro.props;
         }
 
         syncModeButtons();
-        unitSelect.value = unit;
         updatePresetState();
 
         const filled = getFilledCount();
@@ -695,13 +726,16 @@ const { heading, description } = Astro.props;
         });
       }
 
-      unitSelect.addEventListener('change', () => {
-        const value = unitSelect.value as UnitOption;
-        if (!UNIT_OPTIONS.includes(value)) return;
-        unit = value;
-        if (lastSolution) renderSolution(lastSolution);
-        updateUrlState();
-      });
+      for (const uk of ['a_unit', 'b_unit', 'c_unit']) {
+        const sel = form.querySelector(`[name="${uk}"]`);
+        if (sel) {
+          sel.addEventListener('change', () => {
+            const filled = getFilledCount();
+            if (filled >= 2) solveFromInputs();
+            updateUrlState();
+          });
+        }
+      }
 
       resetButton.addEventListener('click', resetTool);
       copyButton.addEventListener('click', () => {

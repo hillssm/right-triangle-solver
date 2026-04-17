@@ -337,7 +337,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: 'R = \\frac{c}{2}',
     description: 'Radius of the circumscribed circle in a right triangle.',
     variables: ['c = hypotenuse', 'R = circumradius'],
-    notes: ['The hypotenuse is the diameter of the circumcircle.']
+    notes: ['The hypotenuse is the diameter of the circumcircle.'],
+    calculator: {
+      kind: 'circumradius', outputLabel: 'Circumradius R', outputUnit: 'units',
+      fields: [{ key: 'c', label: 'Hypotenuse c', min: 0 }]
+    }
   },
 
   // ============================
@@ -606,19 +610,7 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
       fields: [{ key: 'a', label: 'Leg a', min: 0 }, { key: 'b', label: 'Leg b', min: 0 }, { key: 'c', label: 'Hypotenuse c', min: 0 }]
     }
   },
-  {
-    slug: 'radius-R-cap',
-    title: 'Radius Relation R',
-    category: 'Advanced Relations',
-    expression: 'R = \\frac{c}{2}',
-    description: 'Circumradius of a right triangle.',
-    variables: ['c = hypotenuse', 'R = circumradius'],
-    notes: [],
-    calculator: {
-      kind: 'circumradius', outputLabel: 'Circumradius R', outputUnit: 'units',
-      fields: [{ key: 'c', label: 'Hypotenuse c', min: 0 }]
-    }
-  },
+
 
   // TRIG IDENTITIES
   {

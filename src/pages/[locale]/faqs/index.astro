@@ -1,0 +1,38 @@
+---
+import Faq from 'theme/components/Faq.astro';
+import { getLocaleStaticPaths, type Locale } from 'theme/i18n/locales';
+import { getTranslations } from 'theme/i18n/translations';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
+
+const { locale } = Astro.params as { locale: Locale };
+const bundle = getTranslations(locale);
+
+const pageTitle = "Frequently Asked Questions | Right Triangle Solver";
+const pageDescription = "Find answers to all your questions about the tools, formulas, units, and solutions on the Right Triangle Solver platform.";
+---
+
+<BaseLayout
+  locale={locale}
+  title={pageTitle}
+  description={pageDescription}
+  canonicalPath="/faqs/"
+  mainClass="mx-auto w-full max-w-[900px] px-4 py-16 sm:px-6 lg:px-8"
+>
+  <header class="relative z-10 flex flex-col items-center justify-center pb-12 text-center text-on-surface">
+    <div class="pointer-events-none absolute -top-12 -z-10 h-72 w-full bg-gradient-to-b from-primary/10 to-transparent opacity-30"></div>
+    <h1 class="font-headline text-4xl font-bold tracking-tight drop-shadow-sm sm:text-5xl lg:text-6xl text-gradient-primary">
+      Frequently Asked Questions
+    </h1>
+    <p class="mt-4 max-w-2xl text-base text-on-surface-variant sm:text-lg">
+      Everything you need to know about our solvers, unit systems, and geometric calculations.
+    </p>
+  </header>
+
+  <div class="mt-8 rounded-3xl border border-outline-variant/30 bg-surface-container shadow-[var(--shadow-luxury)] p-8">
+    <Faq heading="Detailed FAQs" items={bundle.faq} />
+  </div>
+</BaseLayout>

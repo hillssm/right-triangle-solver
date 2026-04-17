@@ -1,24 +1,44 @@
 {
   "en": [
     {
-      "question": "What values does this calculator compute?",
-      "answer": "Given two input values, the tool computes hypotenuse, area, and perimeter using standard right-triangle formulas.",
+      "question": "What values does the Pythagorean Calculator compute?",
+      "answer": "It takes the two perpendicular legs of a right triangle (a and b) and uses the Pythagorean theorem (c² = a² + b²) to accurately compute the hypotenuse.",
       "display": true
     },
     {
-      "question": "Can I use this for homework checks?",
-      "answer": "Yes. It is designed for study and review. For graded work, always show your own steps and reasoning.",
+      "question": "How do I calculate an angle from its sine, cosine, or tangent?",
+      "answer": "Navigate to the Inverse Angle Formulas in the hub. Input your two known sides (e.g., opposite and hypotenuse for sine) and the tool will use arcsin(), arccos(), or arctan() to return the exact angle in degrees.",
       "display": true
     },
     {
-      "question": "Does it support units?",
-      "answer": "Use any consistent unit system. The outputs follow the same unit scale you provide in the inputs.",
+      "question": "Does the calculator support different measurement units?",
+      "answer": "Yes! All 43 calculators feature an extensive unit dropdown including meters, feet, inches, parsecs, lightyears, and more. The tools automatically normalize dimensions—even mixed units—to guarantee precise results.",
       "display": true
     },
     {
-      "question": "Hidden FAQ Example",
-      "answer": "This entry is intentionally hidden with display=false.",
-      "display": false
+      "question": "What happens if I type an invalid combination (like a leg longer than the hypotenuse)?",
+      "answer": "Our robust validation engine will instantly detect mathematically impossible states. It halts the calculation and visually alerts you with a striking red notification to ensure your inputs respect geometric bounds.",
+      "display": true
+    },
+    {
+      "question": "Does it show step-by-step logic?",
+      "answer": "Absolutely. Every single formula on the site breaks down the calculation. You will see the original geometric equation, the exact values substituted in, the intermediate steps, and the final deduced result.",
+      "display": true
+    },
+    {
+      "question": "Do you support Special Right Triangles (45-45-90 and 30-60-90)?",
+      "answer": "Yes. We have dedicated calculators for Special Triangles. Simply enter the short leg, and the tool will compute the hypotenuse or long leg instantly utilizing the √2 and √3 constant ratios.",
+      "display": true
+    },
+    {
+      "question": "Can I compute Area without knowing the explicitly strictly perpendicular legs?",
+      "answer": "Yes, our hub includes numerous Area derivations. You can find Area utilizing the inradius and semiperimeter, or using half the product of any two sides multiplied by the sine of their included angle.",
+      "display": true
+    },
+    {
+      "question": "What are the projection and altitude relations?",
+      "answer": "When dropping an altitude (h) to the hypotenuse, it divides the hypotenuse into two segments (projection p and q). Our Advanced Relations calculators let you solve for these using geometric mean theorems like h² = p * q.",
+      "display": true
     }
   ],
   "ar": [

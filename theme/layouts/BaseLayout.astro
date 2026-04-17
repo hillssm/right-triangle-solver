@@ -6,8 +6,10 @@ import Header from 'theme/components/Header.astro';
 import BackToTop from 'theme/components/BackToTop.astro';
 import {
   DEFAULT_LOCALE,
+  SUPPORTED_LOCALES,
   getDirection,
   getOgLocale,
+  localizePath,
   type Locale
 } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
@@ -120,6 +122,19 @@ const footerCommonLabels = {
     <title>{siteTitle}</title>
     <meta name="description" content={pageDescription} />
     <link rel="canonical" href={canonicalUrl} />
+
+    {SUPPORTED_LOCALES.map((l) => (
+      <link 
+        rel="alternate" 
+        hreflang={l} 
+        href={toAbsoluteUrl(localizePath(l, Astro.url.pathname))} 
+      />
+    ))}
+    <link 
+      rel="alternate" 
+      hreflang="x-default" 
+      href={toAbsoluteUrl(localizePath(DEFAULT_LOCALE, Astro.url.pathname))} 
+    />
 
     <meta name="robots" content={robots} />
     <meta name="googlebot" content={googlebot} />

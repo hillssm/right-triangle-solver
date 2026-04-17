@@ -39,85 +39,115 @@ const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
     <strong class="font-semibold text-on-surface"> {calculator.outputLabel}</strong>.
   </p>
 
-  <form class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" data-calc-form>
-    {calculator.fields.map((field) => (
-      <label class="grid gap-2 text-sm font-medium">
-        <span>{field.label}</span>
-        <div class="relative flex">
-          <input
-            class={`input-shell flex-1 ${LENGTH_KEYS.includes(field.key) ? 'rounded-r-none border-r-0' : 'pr-16'}`}
-            type="number"
-            step="any"
-            min={field.min ?? 0}
-            name={field.key}
-            required
-          />
-          {LENGTH_KEYS.includes(field.key) ? (
-            <select name={`${field.key}_unit`} class="bg-surface-container border border-outline/30 rounded-r-lg px-2 text-[10px] sm:text-xs focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary w-24 sm:w-28 text-on-surface-variant truncate">
-              <option value="m">(m) meter</option>
-              <option value="nm">(nm) nanometer</option>
-              <option value="µm">(µm) micrometer</option>
-              <option value="mm">(mm) millimeter</option>
-              <option value="cm">(cm) centimeter</option>
-              <option value="km">(km) kilometer</option>
-              <option value="in">(in) inch</option>
-              <option value="ft">(ft) foot</option>
-              <option value="yd">(yd) yard</option>
-              <option value="mi">(mi) mile</option>
-              <option value="nmi">(nmi) nautical mile</option>
-              <option value="Å">(Å) angstrom</option>
-              <option value="mil">(mil) mil</option>
-              <option value="pixel">(pixel) pointer</option>
-              <option value="pt">(pt) point</option>
-              <option value="foot_survey_us">(survey ft)</option>
-              <option value="fathom">(fathom)</option>
-              <option value="au">(au) astronomic</option>
-              <option value="light_second">(ls) l-sec</option>
-              <option value="light_minute">(lm) l-min</option>
-              <option value="light_hour">(lh) l-hour</option>
-              <option value="light_day">(ld) l-day</option>
-              <option value="ly">(ly) lightyear</option>
-              <option value="kly">(kly) kilolightyear</option>
-              <option value="pc">(pc) parsec</option>
-              <option value="Mpc">(Mpc) megaparsec</option>
-            </select>
-          ) : field.unit ? (
-            <span class="pointer-events-none absolute top-1/2 right-3 -translate-y-1/2 text-xs text-on-surface-variant">
-              {field.unit}
-            </span>
-          ) : null}
+  <div class="mt-6 flex flex-col gap-6 lg:flex-row lg:items-start">
+    <div class="flex-1 w-full relative z-10 overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-lowest/70 p-4 sm:p-6 shadow-sm hidden sm:block">
+      <div class="dot-grid pointer-events-none absolute inset-0 opacity-[0.08]"></div>
+      <div class="mb-2">
+        <p class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Live Visualization</p>
+        <h3 class="mt-1 text-lg text-on-surface">Formula Diagram</h3>
+      </div>
+      <svg class="relative h-auto w-full max-w-sm mx-auto" viewBox="0 0 460 300" aria-label="Dynamic right triangle">
+        <defs>
+          <linearGradient id="rt-fill-gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#f1c97d" stop-opacity="0.3"></stop>
+            <stop offset="100%" stop-color="#d4ad65" stop-opacity="0.12"></stop>
+          </linearGradient>
+        </defs>
+        <path d="M 60 240 L 80 240 L 80 260" fill="none" stroke="#99907c" stroke-width="1.5"></path>
+        <path d="M 70 70 L 70 260 L 380 260 Z" fill="url(#rt-fill-gradient2)" stroke="#f1c97d" stroke-width="2.5" stroke-linejoin="round"></path>
+        <line x1="70" y1="260" x2="196" y2="184" stroke="#f1c97d" stroke-width="2" stroke-dasharray="5 4" opacity="0.6"></line>
+        <text x="50" y="170" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="14" text-anchor="end" data-calc-svg-label="a">a = -</text>
+        <text x="226" y="284" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="14" text-anchor="middle" data-calc-svg-label="b">b = -</text>
+        <text x="246" y="152" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="15" data-calc-svg-label="c">c = -</text>
+        <text x="316" y="248" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="12" data-calc-svg-label="A">A = -</text>
+        <text x="88" y="94" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="12" data-calc-svg-label="B">B = -</text>
+        <text x="146" y="210" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="13" data-calc-svg-label="h">h = -</text>
+      </svg>
+    </div>
+
+    <div class="flex-1 w-full space-y-4">
+      <form class="grid gap-4 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2" data-calc-form>
+        {calculator.fields.map((field) => (
+          <label class="grid gap-2 text-sm font-medium">
+            <span>{field.label}</span>
+            <div class="relative flex">
+              <input
+                class={`input-shell flex-1 ${LENGTH_KEYS.includes(field.key) ? 'rounded-r-none border-r-0' : 'pr-16'}`}
+                type="number"
+                step="any"
+                min={field.min ?? 0}
+                name={field.key}
+                required
+              />
+              {LENGTH_KEYS.includes(field.key) ? (
+                <select name={`${field.key}_unit`} class="bg-surface-container border border-outline/30 rounded-r-lg px-2 text-[10px] sm:text-xs focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary w-24 sm:w-28 text-on-surface-variant truncate">
+                  <option value="m">(m) meter</option>
+                  <option value="nm">(nm) nanometer</option>
+                  <option value="µm">(µm) micrometer</option>
+                  <option value="mm">(mm) millimeter</option>
+                  <option value="cm">(cm) centimeter</option>
+                  <option value="km">(km) kilometer</option>
+                  <option value="in">(in) inch</option>
+                  <option value="ft">(ft) foot</option>
+                  <option value="yd">(yd) yard</option>
+                  <option value="mi">(mi) mile</option>
+                  <option value="nmi">(nmi) nautical mile</option>
+                  <option value="Å">(Å) angstrom</option>
+                  <option value="mil">(mil) mil</option>
+                  <option value="pixel">(pixel) pointer</option>
+                  <option value="pt">(pt) point</option>
+                  <option value="foot_survey_us">(survey ft)</option>
+                  <option value="fathom">(fathom)</option>
+                  <option value="au">(au) astronomic</option>
+                  <option value="light_second">(ls) l-sec</option>
+                  <option value="light_minute">(lm) l-min</option>
+                  <option value="light_hour">(lh) l-hour</option>
+                  <option value="light_day">(ld) l-day</option>
+                  <option value="ly">(ly) lightyear</option>
+                  <option value="kly">(kly) kilolightyear</option>
+                  <option value="pc">(pc) parsec</option>
+                  <option value="Mpc">(Mpc) megaparsec</option>
+                </select>
+              ) : field.unit ? (
+                <span class="pointer-events-none absolute top-1/2 right-3 -translate-y-1/2 text-xs text-on-surface-variant">
+                  {field.unit}
+                </span>
+              ) : null}
+            </div>
+            <p class="hidden text-xs text-error mt-0.5" data-calc-input-error={field.key}></p>
+          </label>
+        ))}
+
+        <div class="sm:col-span-2 lg:col-span-1 xl:col-span-2 flex flex-wrap gap-3">
+          <button type="submit" class="btn-primary">Calculate {calculator.outputLabel}</button>
+          <button type="reset" class="btn-secondary">Reset</button>
         </div>
-      </label>
-    ))}
+      </form>
 
-    <div class="sm:col-span-2 lg:col-span-3 flex flex-wrap gap-3">
-      <button type="submit" class="btn-primary">Calculate {calculator.outputLabel}</button>
-      <button type="reset" class="btn-secondary">Reset</button>
-    </div>
-  </form>
-
-  <p class="mt-4 text-sm text-on-surface-variant" data-calc-status role="status" aria-live="polite">
-    {defaultStatus}
-  </p>
-
-  <div class="mt-4 hidden surface-card border-primary/30 bg-surface-container-high" data-calc-result-wrap>
-    <div class="flex items-center justify-between">
-      <p class="font-label text-xs uppercase tracking-widest text-primary" data-calc-output-label>
-        {calculator.outputLabel}
+      <p class="text-sm text-on-surface-variant" data-calc-status role="status" aria-live="polite">
+        {defaultStatus}
       </p>
-      <span class="rounded bg-primary-fixed px-2 py-0.5 text-[10px] uppercase text-on-primary-fixed">Result</span>
-    </div>
-    <p class="mt-2 font-mono text-3xl text-tertiary" data-calc-output-value>-</p>
 
-    
-    <div class="mt-6 border-t border-outline-variant/30 pt-4">
-      <h4 class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Solution Steps</h4>
-      <ol class="mt-3 space-y-3" data-calc-steps></ol>
-    </div>
+      <div class="hidden surface-card border-primary/30 bg-surface-container-high" data-calc-result-wrap>
+        <div class="flex items-center justify-between">
+          <p class="font-label text-xs uppercase tracking-widest text-primary" data-calc-output-label>
+            {calculator.outputLabel}
+          </p>
+          <span class="rounded bg-primary-fixed px-2 py-0.5 text-[10px] uppercase text-on-primary-fixed">Result</span>
+        </div>
+        <p class="mt-2 font-mono text-3xl text-tertiary" data-calc-output-value>-</p>
 
-    <p class="mt-4 text-xs italic text-on-surface-variant" data-calc-output-detail>
-      Formula: {formula.expression}
-    </p>
+        
+        <div class="mt-6 border-t border-outline-variant/30 pt-4">
+          <h4 class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Solution Steps</h4>
+          <ol class="mt-3 space-y-3" data-calc-steps></ol>
+        </div>
+
+        <p class="mt-4 text-xs italic text-on-surface-variant" data-calc-output-detail>
+          Formula: {formula.expression}
+        </p>
+      </div>
+    </div>
   </div>
 
   <script is:inline>
@@ -448,54 +478,136 @@ const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
         }
       };
 
-      const renderSteps = (steps) => {
+      const updateSvgLabels = (inputs, resultVal, outputUnit) => {
+        const svgLabels = section.querySelectorAll('[data-calc-svg-label]');
+        const map = { ...inputs };
+        
+        let outKey = null;
+        const lowL = outputLabel.toLowerCase();
+        if (lowL.includes('leg a') || outputLabel === 'Leg a' || lowL === 'opposite a') outKey = 'a';
+        else if (lowL.includes('leg b') || outputLabel === 'Leg b' || lowL === 'adjacent b') outKey = 'b';
+        else if (lowL.includes('hypotenuse c') || outputLabel === 'Hypotenuse c') outKey = 'c';
+        else if (lowL.includes('angle a') || lowL.includes('sin(a)') || lowL.includes('cos(a)') || lowL.includes('tan(a)') || lowL.includes('cot(a)') || lowL.includes('sec(a)') || lowL.includes('csc(a)')) outKey = 'A';
+        else if (lowL.includes('angle b') || lowL.includes('sin(b)') || lowL.includes('cos(b)') || lowL.includes('tan(b)') || lowL.includes('cot(b)') || lowL.includes('sec(b)') || lowL.includes('csc(b)')) outKey = 'B';
+        else if (lowL.includes('altitude h') || outputLabel === 'Altitude h') outKey = 'h';
+        else if (lowL.includes('projection p')) outKey = 'p';
+        else if (lowL.includes('projection q')) outKey = 'q';
+
+        if (outKey && resultVal !== undefined) map[outKey] = resultVal;
+
+        for (const el of svgLabels) {
+          const key = el.getAttribute('data-calc-svg-label');
+          if (map[key] !== undefined) {
+            let u = outputUnit ? ` ${outputUnit}` : '';
+            if (key === 'A' || key === 'B') u = '°';
+            if (outKey === key) {
+              el.textContent = `${key} = ${format(map[key])}${u}`;
+              el.setAttribute('fill', '#f1c97d');
+              el.setAttribute('font-weight', '700');
+            } else {
+              el.textContent = `${key} = ${format(map[key])}${u}`;
+              el.setAttribute('fill', '#d0c5af');
+              el.setAttribute('font-weight', 'normal');
+            }
+          } else {
+            el.textContent = `${key} = -`;
+            el.setAttribute('fill', '#b6b5b4');
+            el.setAttribute('font-weight', 'normal');
+          }
+        }
+      };
+
+      const renderSuccess = (resultData, primaryUnit, inputs) => {
+        statusEl.textContent = 'Calculation complete.';
+        statusEl.classList.remove('text-red-500', 'font-semibold', 'bg-red-500/10', 'px-3', 'py-2', 'rounded-lg', 'border', 'border-red-500/20');
+        statusEl.classList.add('text-on-surface-variant');
+        resultWrap.classList.remove('hidden');
+
+        const { result, steps } = resultData;
+        const outSuffix = primaryUnit ? ` ${primaryUnit}` : (outputUnit ? ` ${outputUnit}` : '');
+        valueEl.textContent = `${format(result)}${outSuffix}`;
+
         const fragment = document.createDocumentFragment();
-        steps.forEach((text, i) => {
+        steps.forEach((step, index) => {
           const li = document.createElement('li');
           li.className = 'flex items-start gap-3 rounded-lg border border-outline-variant/10 bg-surface-container-low/40 p-3 text-sm transition-colors hover:bg-surface-container-low/60';
-          const num = (i + 1).toString().padStart(2, '0');
-          li.innerHTML = `<span class="mt-0.5 font-mono text-[10px] text-primary/60 flex-shrink-0">${num}</span><span class="text-on-surface-variant math-textbook">${text}</span>`;
+          const num = (index + 1).toString().padStart(2, '0');
+          li.innerHTML = `<span class="mt-0.5 font-mono text-[10px] text-primary/60 flex-shrink-0">${num}</span><span class="text-on-surface-variant math-textbook">${step}</span>`;
           fragment.append(li);
         });
         stepsEl.replaceChildren(fragment);
+        updateSvgLabels(inputs, result, primaryUnit || outputUnit);
+      };
+
+      const renderError = (err) => {
+        const msg = err instanceof Error ? err.message : 'Unable to calculate.';
+        
+        // Clear all previous field errors
+        const errorBoxes = section.querySelectorAll('[data-calc-input-error]');
+        errorBoxes.forEach(el => el.classList.add('hidden'));
+        
+        let foundField = false;
+        const lowMsg = msg.toLowerCase();
+        
+        let targetKey = null;
+        if (lowMsg.includes('c must be greater than leg a') || lowMsg.includes('larger than side a') || lowMsg.includes('hypotenuse c must be')) targetKey = 'c';
+        else if (lowMsg.includes('c must be greater than leg b') || lowMsg.includes('larger than side b')) targetKey = 'c';
+        else if (lowMsg.includes('side a') && !lowMsg.includes('hypotenuse')) targetKey = 'a';
+        else if (lowMsg.includes('side b') && !lowMsg.includes('hypotenuse')) targetKey = 'b';
+        else if (lowMsg.includes('angle a')) targetKey = 'A';
+        else if (lowMsg.includes('angle b')) targetKey = 'B';
+
+        if (targetKey) {
+           const box = section.querySelector(`[data-calc-input-error="${targetKey}"]`);
+           if (box) { 
+             box.textContent = msg; 
+             box.classList.remove('hidden'); 
+             foundField = true; 
+           }
+        }
+
+        if (!foundField) {
+          statusEl.textContent = `Error: ${msg}`;
+          statusEl.classList.add('text-red-500', 'font-semibold', 'bg-red-500/10', 'px-3', 'py-2', 'rounded-lg', 'border', 'border-red-500/20');
+          statusEl.classList.remove('text-on-surface-variant');
+        } else {
+          statusEl.textContent = 'Please fix the errors in the fields above.';
+          statusEl.classList.add('text-red-500', 'font-semibold');
+          statusEl.classList.remove('text-on-surface-variant', 'bg-red-500/10', 'px-3', 'py-2', 'rounded-lg', 'border', 'border-red-500/20');
+        }
+
+        resultWrap.classList.add('hidden');
+        updateSvgLabels({}, undefined, '');
       };
 
       form.addEventListener('submit', (event) => {
         event.preventDefault();
         try {
+          // Clear errors on fresh submit
+          const errorBoxes = section.querySelectorAll('[data-calc-input-error]');
+          errorBoxes.forEach(el => el.classList.add('hidden'));
+
           const { values, primaryUnit } = parseInputs();
-          const output = solve(values);
-          if (Number.isNaN(output.result)) {
+          const resultData = solve(values);
+          if (Number.isNaN(resultData.result)) {
             throw new Error('Mathematical error. Verify your values accurately represent a right triangle.');
           }
-          
-          let finalLabel = outputUnit;
-          if (primaryUnit) {
-            if (finalLabel === 'units') finalLabel = primaryUnit;
-            else if (finalLabel === 'sq units') finalLabel = `sq ${primaryUnit}`;
-          }
-          
-          labelEl.textContent = outputLabel;
-          valueEl.textContent = `${format(output.result)}${finalLabel ? ` ${finalLabel}` : ''}`;
-          renderSteps(output.steps);
-          statusEl.textContent = `Calculated ${outputLabel}.`;
-          statusEl.classList.remove('text-red-500', 'font-semibold', 'bg-red-500/10', 'px-3', 'py-2', 'rounded-lg', 'border', 'border-red-500/20');
-          statusEl.classList.add('text-on-surface-variant');
-          resultWrap.classList.remove('hidden');
+          renderSuccess(resultData, primaryUnit, values);
         } catch (err) {
-          statusEl.textContent = `Error: ${err instanceof Error ? err.message : 'Unable to calculate.'}`;
-          statusEl.classList.add('text-red-500', 'font-semibold', 'bg-red-500/10', 'px-3', 'py-2', 'rounded-lg', 'border', 'border-red-500/20');
-          statusEl.classList.remove('text-on-surface-variant');
-          resultWrap.classList.add('hidden');
+          renderError(err);
         }
       });
 
       form.addEventListener('reset', () => {
         setTimeout(() => {
+          const errorBoxes = section.querySelectorAll('[data-calc-input-error]');
+          errorBoxes.forEach(el => el.classList.add('hidden'));
+
           statusEl.textContent = defaultStatus;
           statusEl.classList.remove('text-red-500', 'font-semibold', 'bg-red-500/10', 'px-3', 'py-2', 'rounded-lg', 'border', 'border-red-500/20');
           statusEl.classList.add('text-on-surface-variant');
           resultWrap.classList.add('hidden');
+          updateSvgLabels({}, undefined, '');
         }, 0);
       });
     })();

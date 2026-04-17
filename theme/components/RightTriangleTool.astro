@@ -554,7 +554,24 @@ const { heading, description } = Astro.props;
             const readableCase = solution.combination.replace('+', ' + ').replace('alpha', 'A').replace('beta', 'B');
             setStatus(`Solved from ${readableCase}.`, false);
           } catch (error) {
-            setStatus(error instanceof Error ? error.message : 'Unable to solve with these inputs.', true);
+            const msg = error instanceof Error ? error.message : 'Unable to solve with these inputs.';
+            const lowMsg = msg.toLowerCase();
+            let targetKey = null;
+
+            // Map standard text errors to actual input keys for interactive field-level error display
+            if (lowMsg.includes('c must be larger than side a') || lowMsg.includes('c must be greater than leg a') || lowMsg.includes('hypotenuse c must be')) targetKey = 'c';
+            else if (lowMsg.includes('c must be larger than side b') || lowMsg.includes('c must be greater than leg b')) targetKey = 'c';
+            else if (lowMsg.includes('side a must be a positive') || (!lowMsg.includes('hypotenuse') && lowMsg.includes('side a'))) targetKey = 'a';
+            else if (lowMsg.includes('side b must be a positive') || (!lowMsg.includes('hypotenuse') && lowMsg.includes('side b'))) targetKey = 'b';
+            else if (lowMsg.includes('angle a')) targetKey = 'alpha';
+            else if (lowMsg.includes('angle b')) targetKey = 'beta';
+
+            if (targetKey) {
+              setFieldError(targetKey, msg);
+              setStatus('Please fix the errors in the highlighted fields.', true);
+            } else {
+              setStatus(msg, true);
+            }
           setEmptyResults();
         }
 

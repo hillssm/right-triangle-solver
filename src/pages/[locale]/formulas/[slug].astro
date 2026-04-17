@@ -40,10 +40,37 @@ const FAQ_CAT_MAP = {
 };
 
 const relevantCat = FAQ_CAT_MAP[formula.category] || 'General Information';
-const toolFaqs = [
-  ...bundle.faq.filter(f => f.category === relevantCat),
-  ...bundle.faq.filter(f => f.category === 'Usage, Errors & Visuals').slice(0, 3)
-];
+
+// Intelligent Scoring for unique & relevant FAQs
+const toolFaqs = bundle.faq
+  .map(f => {
+    let score = 0;
+    const q = f.question.toLowerCase();
+    const title = formula.title.toLowerCase();
+    const slug = formula.slug.toLowerCase();
+    
+    // Strong matches for tool-specific terms
+    if (q.includes(title)) score += 15;
+    if (slug.includes('area') && q.includes('area')) score += 10;
+    if (slug.includes('angle') && q.includes('angle')) score += 10;
+    if (slug.includes('sin') && q.includes('sine')) score += 10;
+    if (slug.includes('cos') && q.includes('cosine')) score += 10;
+    if (slug.includes('tan') && q.includes('tangent')) score += 10;
+    if (slug.includes('special') && q.includes('special')) score += 15;
+    if (slug.includes('pythagorean') && q.includes('pythagorean')) score += 15;
+    if (slug.includes('radius') && q.includes('radius')) score += 15;
+    if (slug.includes('projection') && q.includes('projection')) score += 15;
+    
+    // Category Relevance
+    if (f.category === relevantCat) score += 5;
+    
+    // Usage errors and accuracy are good generic fallbacks
+    if (f.category === 'Usage, Errors & Visuals') score += 2;
+
+    return { ...f, score };
+  })
+  .sort((a, b) => b.score - a.score)
+  .slice(0, 4); // Keep it tight and unique
 
 const formulasRoot = localizePath(locale, '/formulas/');
 const formulaPath = `${formulasRoot}${formula.slug}/`;

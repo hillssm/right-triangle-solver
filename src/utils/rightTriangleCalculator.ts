@@ -157,14 +157,23 @@ const finalizeSolution = (payload: {
   const segmentP = (a * a) / c;
   const segmentQ = (b * b) / c;
 
+  const fmt = (v: number) => Number(v.toFixed(4));
+  const sArea = fmt(area);
+  const sPeri = fmt(perimeter);
+  const sSemi = fmt(semiperimeter);
+  const sH = fmt(h);
+  const sP = fmt(segmentP);
+  const sQ = fmt(segmentQ);
+
   const derivedSteps = [
-    `Area (A) = (a * b) / 2 = (${a} * ${b}) / 2 = ${area.toFixed(4)}`,
-    `Perimeter (P) = a + b + c = ${a} + ${b} + ${c} = ${perimeter.toFixed(4)}`,
-    `Altitude h = (a * b) / c = (${a} * ${b}) / ${c} = ${h.toFixed(4)}`,
-    `Inradius r = A / s = ${area.toFixed(4)} / ${semiperimeter.toFixed(4)} = ${inradius.toFixed(4)}`,
-    `Circumradius R = c / 2 = ${c} / 2 = ${circumradius.toFixed(4)}`,
-    `Segment p = a² / c = ${a}² / ${c} = ${segmentP.toFixed(4)}`,
-    `Segment q = b² / c = ${b}² / ${c} = ${segmentQ.toFixed(4)}`
+    `**Calculate Area**<br/>Multiply base by height and divide by two.<br/>Use Area = (a × b) / 2<br/>Area = (${a} × ${b}) / 2 = ${fmt(a * b)} / 2 = ${sArea}`,
+    `**Calculate Perimeter**<br/>Sum all sides of the triangle.<br/>Use P = a + b + c<br/>P = ${a} + ${b} + ${c} = ${sPeri}`,
+    `**Find Altitude h**<br/>The height dropped to the hypotenuse.<br/>Use Altitude = (a × b) / c<br/>Altitude = (${a} × ${b}) / ${c} = ${sH}`,
+    `**Determine Semiperimeter**<br/>Half of the total perimeter.<br/>Use s = P / 2<br/>s = ${sPeri} / 2 = ${sSemi}`,
+    `**Calculate Inradius r**<br/>Radius of the inscribed circle.<br/>Use r = (a + b - c) / 2<br/>r = (${a} + ${b} - ${c}) / 2 = ${fmt(inradius)}`,
+    `**Calculate Circumradius R**<br/>Radius of the circumscribed circle.<br/>Use R = c / 2<br/>R = ${c} / 2 = ${fmt(circumradius)}`,
+    `**Segment p**<br/>Hypotenuse segment adjacent to leg a.<br/>Use p = a² / c<br/>p = ${a}² / ${c} = ${sP}`,
+    `**Segment q**<br/>Hypotenuse segment adjacent to leg b.<br/>Use q = b² / c<br/>q = ${b}² / ${c} = ${sQ}`
   ];
 
   return {
@@ -316,9 +325,9 @@ export const calculateRightTriangle = (
       combination: 'a+b',
       formulas: ['c = sqrt(a² + b²)', `α = atan(a / b)`, `β = ${fullAngleSymbol} - α`],
       steps: [
-        `Calculate hypotenuse c using Pythagoras: c = √(${a}² + ${b}²) = √(${fmtValue(a2)} + ${fmtValue(b2)}) = ${fmtValue(c)}`,
-        `Find angle A using tangent: A = atan(${a} / ${b}) = ${fmtAngle(alphaRad)}`,
-        `Find angle B (complementary): B = ${fullAngleSymbol} - ${fmtAngle(alphaRad)} = ${fmtAngle(betaRad)}`
+        `**Solve for Hypotenuse c**<br/>Use the squares of both legs to find the diagonal.<br/>Use c = √(a² + b²)<br/>c = √(${a}² + ${b}²) = √(${fmtValue(a2)} + ${fmtValue(b2)}) = ${fmtValue(c)}`,
+        `**Find Angle A**<br/>Calculate the incline using the ratio of legs.<br/>Use tan(A) = a / b<br/>A = tan⁻¹(${a} / ${b}) = ${fmtAngle(alphaRad)}`,
+        `**Determine Angle B**<br/>Subtract angle A from the triangle's 90-degree constant.<br/>Use B = ${fullAngleSymbol} - A<br/>B = ${fullAngleSymbol} - ${fmtAngle(alphaRad)} = ${fmtAngle(betaRad)}`
       ]
     });
   }
@@ -341,9 +350,9 @@ export const calculateRightTriangle = (
       combination: 'a+c',
       formulas: ['b = sqrt(c² - a²)', `α = asin(a / c)`, `β = ${fullAngleSymbol} - α`],
       steps: [
-        `Calculate leg b using Pythagoras: b = √(${c}² - ${a}²) = √(${fmtValue(c * c)} - ${fmtValue(a * a)}) = ${fmtValue(b)}`,
-        `Find angle A using sine: A = asin(${a} / ${c}) = ${fmtAngle(alphaRad)}`,
-        `Find angle B: B = ${fullAngleSymbol} - ${fmtAngle(alphaRad)} = ${fmtAngle(betaRad)}`
+        `**Solve for Leg b**<br/>Calculate the missing leg using the square of the hypotenuse.<br/>Use b = √(c² - a²)<br/>b = √(${c}² - ${a}²) = √(${fmtValue(c * c)} - ${fmtValue(a * a)}) = ${fmtValue(b)}`,
+        `**Find Angle A**<br/>Use the ratio of opposite side to hypotenuse.<br/>Use sin(A) = a / c<br/>A = sin⁻¹(${a} / ${c}) = ${fmtAngle(alphaRad)}`,
+        `**Determine Angle B**<br/>Subtract A from 90 degrees to find the secondary angle.<br/>Use B = ${fullAngleSymbol} - A<br/>B = ${fullAngleSymbol} - ${fmtAngle(alphaRad)} = ${fmtAngle(betaRad)}`
       ]
     });
   }
@@ -366,9 +375,9 @@ export const calculateRightTriangle = (
       combination: 'b+c',
       formulas: ['a = sqrt(c² - b²)', `α = acos(b / c)`, `β = ${fullAngleSymbol} - α`],
       steps: [
-        `Calculate leg a using Pythagoras: a = √(${c}² - ${b}²) = √(${fmtValue(c * c)} - ${fmtValue(b * b)}) = ${fmtValue(a)}`,
-        `Find angle A using cosine: A = acos(${b} / ${c}) = ${fmtAngle(alphaRad)}`,
-        `Find angle B: B = ${fullAngleSymbol} - ${fmtAngle(alphaRad)} = ${fmtAngle(betaRad)}`
+        `**Solve for Leg a**<br/>Derive the missing leg from the hypotenuse and leg b.<br/>Use a = √(c² - b²)<br/>a = √(${c}² - ${b}²) = √(${fmtValue(c * c)} - ${fmtValue(b * b)}) = ${fmtValue(a)}`,
+        `**Find Angle A**<br/>Calculate A from adjacent side and hypotenuse.<br/>Use cos(A) = b / c<br/>A = cos⁻¹(${b} / ${c}) = ${fmtAngle(alphaRad)}`,
+        `**Determine Angle B**<br/>Apply the complementary angle property.<br/>Use B = ${fullAngleSymbol} - A<br/>B = ${fullAngleSymbol} - ${fmtAngle(alphaRad)} = ${fmtAngle(betaRad)}`
       ]
     });
   }
@@ -396,9 +405,9 @@ export const calculateRightTriangle = (
       combination: 'a+alpha',
       formulas: [`c = a / sin(α)`, `b = a / tan(α)`, `β = ${fullAngleSymbol} - α`],
       steps: [
-        `Calculate hypotenuse c: c = ${a} / sin(${fmtAngle(alphaRad)}) = ${fmtValue(c)}`,
-        `Calculate leg b: b = ${a} / tan(${fmtAngle(alphaRad)}) = ${fmtValue(b)}`,
-        `Find angle B: B = ${fullAngleSymbol} - ${fmtAngle(alphaRad)} = ${fmtAngle(betaRad)}`
+        `**Solve for Hypotenuse c**<br/>Divide the opposite side by the sine of its angle.<br/>Use c = a / sin(A)<br/>c = ${a} / sin(${fmtAngle(alphaRad)}) = ${fmtValue(c)}`,
+        `**Solve for Leg b**<br/>Calculate the adjacent side using the tangent ratio.<br/>Use b = a / tan(A)<br/>b = ${a} / tan(${fmtAngle(alphaRad)}) = ${fmtValue(b)}`,
+        `**Determine Angle B**<br/>Calculate the second acute angle via subtraction.<br/>Use B = ${fullAngleSymbol} - A<br/>B = ${fullAngleSymbol} - ${fmtAngle(alphaRad)} = ${fmtAngle(betaRad)}`
       ]
     });
   }
@@ -426,9 +435,9 @@ export const calculateRightTriangle = (
       combination: 'a+beta',
       formulas: [`c = a / cos(β)`, `b = a * tan(β)`, `α = ${fullAngleSymbol} - β`],
       steps: [
-        `Calculate hypotenuse c: c = ${a} / cos(${fmtAngle(betaRad)}) = ${fmtValue(c)}`,
-        `Calculate leg b: b = ${a} * tan(${fmtAngle(betaRad)}) = ${fmtValue(b)}`,
-        `Find angle A: A = ${fullAngleSymbol} - ${fmtAngle(betaRad)} = ${fmtAngle(alphaRad)}`
+        `**Solve for Hypotenuse c**<br/>Divide side a by the cosine of the adjacent angle B.<br/>Use c = a / cos(B)<br/>c = ${a} / cos(${fmtAngle(betaRad)}) = ${fmtValue(c)}`,
+        `**Solve for Leg b**<br/>Derive side b from angle B's tangent scaling.<br/>Use b = a × tan(B)<br/>b = ${a} × tan(${fmtAngle(betaRad)}) = ${fmtValue(b)}`,
+        `**Determine Angle A**<br/>Solve for the first acute angle via subtraction.<br/>Use A = ${fullAngleSymbol} - B<br/>A = ${fullAngleSymbol} - ${fmtAngle(betaRad)} = ${fmtAngle(alphaRad)}`
       ]
     });
   }
@@ -456,9 +465,9 @@ export const calculateRightTriangle = (
       combination: 'b+alpha',
       formulas: [`c = b / cos(α)`, `a = b * tan(α)`, `β = ${fullAngleSymbol} - α`],
       steps: [
-        `Calculate hypotenuse c: c = ${b} / cos(${fmtAngle(alphaRad)}) = ${fmtValue(c)}`,
-        `Calculate leg a: a = ${b} * tan(${fmtAngle(alphaRad)}) = ${fmtValue(a)}`,
-        `Find angle B: B = ${fullAngleSymbol} - ${fmtAngle(alphaRad)} = ${fmtAngle(betaRad)}`
+        `**Solve for Hypotenuse c**<br/>Identify c using leg b and its adjacent angle A.<br/>Use c = b / cos(A)<br/>c = ${b} / cos(${fmtAngle(alphaRad)}) = ${fmtValue(c)}`,
+        `**Solve for Leg a**<br/>Derive the opposite side a using tangent.<br/>Use a = b × tan(A)<br/>a = ${b} × tan(${fmtAngle(alphaRad)}) = ${fmtValue(a)}`,
+        `**Determine Angle B**<br/>Apply the 90-degree complementary property.<br/>Use B = ${fullAngleSymbol} - A<br/>B = ${fullAngleSymbol} - ${fmtAngle(alphaRad)} = ${fmtAngle(betaRad)}`
       ]
     });
   }
@@ -486,9 +495,9 @@ export const calculateRightTriangle = (
       combination: 'b+beta',
       formulas: [`c = b / sin(β)`, `a = b / tan(β)`, `α = ${fullAngleSymbol} - β`],
       steps: [
-        `Calculate hypotenuse c: c = ${b} / sin(${fmtAngle(betaRad)}) = ${fmtValue(c)}`,
-        `Calculate leg a: a = ${b} / tan(${fmtAngle(betaRad)}) = ${fmtValue(a)}`,
-        `Find angle A: A = ${fullAngleSymbol} - ${fmtAngle(betaRad)} = ${fmtAngle(alphaRad)}`
+        `**Solve for Hypotenuse c**<br/>Identify c using its opposite angle B and leg b.<br/>Use c = b / sin(B)<br/>c = ${b} / sin(${fmtAngle(betaRad)}) = ${fmtValue(c)}`,
+        `**Solve for Leg a**<br/>Calculate the adjacent leg relative to angle B.<br/>Use a = b / tan(B)<br/>a = ${b} / tan(${fmtAngle(betaRad)}) = ${fmtValue(a)}`,
+        `**Determine Angle A**<br/>Complete the triangle by finding angle A.<br/>Use A = ${fullAngleSymbol} - B<br/>A = ${fullAngleSymbol} - ${fmtAngle(betaRad)} = ${fmtAngle(alphaRad)}`
       ]
     });
   }
@@ -511,9 +520,9 @@ export const calculateRightTriangle = (
       combination: 'c+alpha',
       formulas: [`a = c * sin(α)`, `b = c * cos(α)`, `β = ${fullAngleSymbol} - α`],
       steps: [
-        `Calculate leg a: a = ${c} * sin(${fmtAngle(alphaRad)}) = ${fmtValue(a)}`,
-        `Calculate leg b: b = ${c} * cos(${fmtAngle(alphaRad)}) = ${fmtValue(b)}`,
-        `Find angle B: B = ${fullAngleSymbol} - ${fmtAngle(alphaRad)} = ${fmtAngle(betaRad)}`
+        `**Solve for Leg a**<br/>Multiple hypotenuse by sine of opposite angle A.<br/>Use a = c × sin(A)<br/>a = ${c} × sin(${fmtAngle(alphaRad)}) = ${fmtValue(a)}`,
+        `**Solve for Leg b**<br/>Multiply hypotenuse by cosine of adjacent angle A.<br/>Use b = c × cos(A)<br/>b = ${c} × cos(${fmtAngle(alphaRad)}) = ${fmtValue(b)}`,
+        `**Determine Angle B**<br/>Angle B is complementary to angle A.<br/>Use B = ${fullAngleSymbol} - A<br/>B = ${fullAngleSymbol} - ${fmtAngle(alphaRad)} = ${fmtAngle(betaRad)}`
       ]
     });
   }
@@ -536,9 +545,9 @@ export const calculateRightTriangle = (
       combination: 'c+beta',
       formulas: [`b = c * sin(β)`, `a = c * cos(β)`, `α = ${fullAngleSymbol} - β`],
       steps: [
-        `Calculate leg b: b = ${c} * sin(${fmtAngle(betaRad)}) = ${fmtValue(b)}`,
-        `Calculate leg a: a = ${c} * cos(${fmtAngle(betaRad)}) = ${fmtValue(a)}`,
-        `Find angle A: A = ${fullAngleSymbol} - ${fmtAngle(betaRad)} = ${fmtAngle(alphaRad)}`
+        `**Solve for Leg b**<br/>Multiple hypotenuse by sine of opposite angle B.<br/>Use b = c × sin(B)<br/>b = ${c} × sin(${fmtAngle(betaRad)}) = ${fmtValue(b)}`,
+        `**Solve for Leg a**<br/>Multiply hypotenuse by cosine of adjacent angle B.<br/>Use a = c × cos(B)<br/>a = ${c} × cos(${fmtAngle(betaRad)}) = ${fmtValue(a)}`,
+        `**Determine Angle A**<br/>Angle A is complementary to angle B.<br/>Use A = ${fullAngleSymbol} - B<br/>A = ${fullAngleSymbol} - ${fmtAngle(betaRad)} = ${fmtAngle(alphaRad)}`
       ]
     });
   }

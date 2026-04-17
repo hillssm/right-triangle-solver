@@ -87,5 +87,39 @@ const categoryId = (cat: string) => cat.toLowerCase().replace(/[^a-z0-9]+/g, '-'
       );
     })
   }
+
+  <div class="mt-20 grid gap-8 lg:grid-cols-2">
+    <section class="rounded-3xl border border-primary/20 bg-primary/5 p-8 shadow-sm transition-all hover:bg-primary/8">
+      <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15 text-primary mb-6">
+        <span class="material-symbols-outlined text-2xl">help_outline</span>
+      </div>
+      <h2 class="text-2xl font-bold text-on-surface">Geometric Knowledge Base</h2>
+      <p class="mt-3 text-on-surface-variant leading-relaxed">
+        Have questions about decimal precision, measurement units, or step-by-step logic? Our comprehensive FAQ hub covers all {RIGHT_TRIANGLE_FORMULAS.length} tools in detail.
+      </p>
+      <div class="mt-6">
+        <a href={localizePath(locale, '/faqs/')} class="btn-primary inline-flex items-center gap-2">
+          Browse Detailed FAQ
+          <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="rounded-3xl border border-tertiary/20 bg-tertiary/5 p-8 shadow-sm transition-all hover:bg-tertiary/8">
+      <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-tertiary/15 text-tertiary mb-6">
+        <span class="material-symbols-outlined text-2xl">calculate</span>
+      </div>
+      <h2 class="text-2xl font-bold text-on-surface">Ready to Solve?</h2>
+      <p class="mt-3 text-on-surface-variant leading-relaxed">
+        Return to our high-precision right triangle calculator to instantly solve for hypotenuse, area, and angles using any two known variables.
+      </p>
+      <div class="mt-6">
+        <a href={localizePath(locale, '/')} class="btn-secondary inline-flex items-center gap-2">
+          Instant Tool Home
+          <span class="material-symbols-outlined text-sm">home</span>
+        </a>
+      </div>
+    </section>
+  </div>
 </BaseLayout>
 

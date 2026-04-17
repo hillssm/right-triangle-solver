@@ -73,6 +73,48 @@
       "description": "विपरीत और संलग्न भुजाओं के बीच संबंध।",
       "variables": ["a = विपरीत", "b = संलग्न"],
       "notes": ["tan(A) = a/b"]
+    },
+    "semiperimeter": {
+      "title": "अर्धपरिधि",
+      "description": "परिधि का आधा।",
+      "variables": ["s = अर्धपरिधि"],
+      "notes": ["s = (a+b+c)/2"]
+    },
+    "inradius": {
+      "title": "अंतःत्रिज्या",
+      "description": "त्रिभुज के भीतर खुदे हुए वृत्त की त्रिज्या।",
+      "variables": ["r = अंतःत्रिज्या"],
+      "notes": ["r = (a+b-c)/2"]
+    },
+    "circumradius": {
+      "title": "परित्रिज्या",
+      "description": "त्रिभुज के चारों ओर परिबद्ध वृत्त की त्रिज्या।",
+      "variables": ["R = परित्रिज्या"],
+      "notes": ["R = c/2"]
+    },
+    "altitude-to-hypotenuse": {
+      "title": "कर्ण की ऊंचाई",
+      "description": "समकोण शीर्ष से कर्ण तक की ऊंचाई।",
+      "variables": ["h = ऊंचाई"],
+      "notes": ["h = (a*b)/c"]
+    },
+    "cotangent-exact": {
+      "title": "कोटेंगेंट अनुपात (cot)",
+      "description": "टेंगेंट का व्युत्क्रम।",
+      "variables": ["cot(A) = b/a"],
+      "notes": []
+    },
+    "secant-exact": {
+      "title": "सीकेंट अनुपात (sec)",
+      "description": "कोसाइन का व्युत्क्रम।",
+      "variables": ["sec(A) = c/b"],
+      "notes": []
+    },
+    "cosecant-exact": {
+      "title": "कोसीकेंट अनुपात (csc)",
+      "description": "साइन का व्युत्क्रम।",
+      "variables": ["csc(A) = c/a"],
+      "notes": []
     }
   },
   "es": {
@@ -111,6 +153,48 @@
       "description": "Relación entre el cateto opuesto y el adyacente.",
       "variables": ["a = opuesto", "b = adyacente"],
       "notes": ["tan(A) = a/b"]
+    },
+    "semiperimeter": {
+      "title": "Semiperímetro",
+      "description": "La mitad del perímetro del triángulo.",
+      "variables": ["s = semiperímetro"],
+      "notes": ["s = (a+b+c)/2"]
+    },
+    "inradius": {
+      "title": "Inradio",
+      "description": "El radio del círculo inscrito en el triángulo.",
+      "variables": ["r = inradio"],
+      "notes": ["r = (a+b-c)/2"]
+    },
+    "circumradius": {
+      "title": "Circunradio",
+      "description": "El radio del círculo circunscrito al triángulo.",
+      "variables": ["R = circunradio"],
+      "notes": ["R = c/2"]
+    },
+    "altitude-to-hypotenuse": {
+      "title": "Altura a la Hipotenusa",
+      "description": "Altura desde el vértice recto hasta la hipotenusa.",
+      "variables": ["h = altura"],
+      "notes": ["h = (a*b)/c"]
+    },
+    "cotangent-exact": {
+      "title": "Razón Cotangente (cot)",
+      "description": "Recíproco de la tangente.",
+      "variables": ["cot(A) = b/a"],
+      "notes": []
+    },
+    "secant-exact": {
+      "title": "Razón Secante (sec)",
+      "description": "Recíproco del coseno.",
+      "variables": ["sec(A) = c/b"],
+      "notes": []
+    },
+    "cosecant-exact": {
+      "title": "Razón Cosecante (csc)",
+      "description": "Recíproco del seno.",
+      "variables": ["csc(A) = c/a"],
+      "notes": []
     }
   },
   "ru": {
@@ -149,6 +233,48 @@
       "description": "Отношение противолежащего катета к прилежащему.",
       "variables": ["a = противолежащий", "b = прилежащий"],
       "notes": ["tan(A) = a/b"]
+    },
+    "semiperimeter": {
+      "title": "Полупериметр",
+      "description": "Половина периметра треугольника.",
+      "variables": ["s = полупериметр"],
+      "notes": ["s = (a+b+c)/2"]
+    },
+    "inradius": {
+      "title": "Радиус вписанной окружности",
+      "description": "Радиус окружности, вписанной в треугольник.",
+      "variables": ["r = радиус"],
+      "notes": ["r = (a+b-c)/2"]
+    },
+    "circumradius": {
+      "title": "Радиус описанной окружности",
+      "description": "Радиус окружности, описанной вокруг треугольника.",
+      "variables": ["R = радиус"],
+      "notes": ["R = c/2"]
+    },
+    "altitude-to-hypotenuse": {
+      "title": "Высота к гипотенузе",
+      "description": "Высота от прямого угла до гипотенузы.",
+      "variables": ["h = высота"],
+      "notes": ["h = (a*b)/c"]
+    },
+    "cotangent-exact": {
+      "title": "Отношение котангенса (cot)",
+      "description": "Обратная величина тангенса.",
+      "variables": ["cot(A) = b/a"],
+      "notes": []
+    },
+    "secant-exact": {
+      "title": "Отношение секанса (sec)",
+      "description": "Обратная величина косинуса.",
+      "variables": ["sec(A) = c/b"],
+      "notes": []
+    },
+    "cosecant-exact": {
+      "title": "Отношение косеканса (csc)",
+      "description": "Обратная величина синуса.",
+      "variables": ["csc(A) = c/a"],
+      "notes": []
     }
   },
   "fr": {
@@ -187,6 +313,48 @@
       "description": "Relation entre le côté opposé et le côté adjacent.",
       "variables": ["a = opposé", "b = adjacent"],
       "notes": ["tan(A) = a/b"]
+    },
+    "semiperimeter": {
+      "title": "Demi-périmètre",
+      "description": "La moitié du périmètre du triangle.",
+      "variables": ["s = demi-périmètre"],
+      "notes": ["s = (a+b+c)/2"]
+    },
+    "inradius": {
+      "title": "Rayon du cercle inscrit",
+      "description": "Rayon du cercle inscrit dans le triangle.",
+      "variables": ["r = rayon"],
+      "notes": ["r = (a+b-c)/2"]
+    },
+    "circumradius": {
+      "title": "Rayon du cercle circonscrit",
+      "description": "Rayon du cercle circonscrit au triangle.",
+      "variables": ["R = rayon"],
+      "notes": ["R = c/2"]
+    },
+    "altitude-to-hypotenuse": {
+      "title": "Hauteur à l'hypoténuse",
+      "description": "Hauteur issue du sommet de l'angle droit.",
+      "variables": ["h = hauteur"],
+      "notes": ["h = (a*b)/c"]
+    },
+    "cotangent-exact": {
+      "title": "Rapport Cotangente (cot)",
+      "description": "Inverse de la tangente.",
+      "variables": ["cot(A) = b/a"],
+      "notes": []
+    },
+    "secant-exact": {
+      "title": "Rapport Sécante (sec)",
+      "description": "Inverse du cosinus.",
+      "variables": ["sec(A) = c/b"],
+      "notes": []
+    },
+    "cosecant-exact": {
+      "title": "Rapport Cosécante (csc)",
+      "description": "Inverse du sinus.",
+      "variables": ["csc(A) = c/a"],
+      "notes": []
     }
   },
   "de": {
@@ -225,6 +393,48 @@
       "description": "Verhältnis zwischen Gegenkathete und Ankathete.",
       "variables": ["a = Gegenkathete", "b = Ankathete"],
       "notes": ["tan(A) = a/b"]
+    },
+    "semiperimeter": {
+      "title": "Halbumfang",
+      "description": "Die Hälfte des Umfangs des Dreiecks.",
+      "variables": ["s = Halbumfang"],
+      "notes": ["s = (a+b+c)/2"]
+    },
+    "inradius": {
+      "title": "Inkreisradius",
+      "description": "Der Radius des dem Dreieck eingeschriebenen Kreises.",
+      "variables": ["r = Inkreisradius"],
+      "notes": ["r = (a+b-c)/2"]
+    },
+    "circumradius": {
+      "title": "Umkreisradius",
+      "description": "Der Radius des dem Dreieck umgeschriebenen Kreises.",
+      "variables": ["R = Umkreisradius"],
+      "notes": ["R = c/2"]
+    },
+    "altitude-to-hypotenuse": {
+      "title": "Höhe zur Hypotenuse",
+      "description": "Höhe vom rechten Winkel zur Hypotenuse.",
+      "variables": ["h = Höhe"],
+      "notes": ["h = (a*b)/c"]
+    },
+    "cotangent-exact": {
+      "title": "Kotangens-Verhältnis (cot)",
+      "description": "Kehrwert des Tangens.",
+      "variables": ["cot(A) = b/a"],
+      "notes": []
+    },
+    "secant-exact": {
+      "title": "Sekans-Verhältnis (sec)",
+      "description": "Kehrwert des Kosinus.",
+      "variables": ["sec(A) = c/b"],
+      "notes": []
+    },
+    "cosecant-exact": {
+      "title": "Kosekans-Verhältnis (csc)",
+      "description": "Kehrwert des Sinus.",
+      "variables": ["csc(A) = c/a"],
+      "notes": []
     }
   },
   "it": {
@@ -263,6 +473,48 @@
       "description": "Relazione tra il cateto opposto e quello adiacente.",
       "variables": ["a = opposto", "b = adiacente"],
       "notes": ["tan(A) = a/b"]
+    },
+    "semiperimeter": {
+      "title": "Semiperimetro",
+      "description": "La metà del perimetro del triangolo.",
+      "variables": ["s = semiperimetro"],
+      "notes": ["s = (a+b+c)/2"]
+    },
+    "inradius": {
+      "title": "Inraggio",
+      "description": "Il raggio del cerchio inscritto nel triangolo.",
+      "variables": ["r = inraggio"],
+      "notes": ["r = (a+b-c)/2"]
+    },
+    "circumradius": {
+      "title": "Circonraggio",
+      "description": "Il raggio del cerchio circoscritto al triangolo.",
+      "variables": ["R = circonraggio"],
+      "notes": ["R = c/2"]
+    },
+    "altitude-to-hypotenuse": {
+      "title": "Altezza relativa all'ipotenusa",
+      "description": "Altezza dal vertice dell'angolo retto all'ipotenusa.",
+      "variables": ["h = altezza"],
+      "notes": ["h = (a*b)/c"]
+    },
+    "cotangent-exact": {
+      "title": "Rapporto Cotangente (cot)",
+      "description": "Reciproco della tangente.",
+      "variables": ["cot(A) = b/a"],
+      "notes": []
+    },
+    "secant-exact": {
+      "title": "Rapporto Secante (sec)",
+      "description": "Reciproco del coseno.",
+      "variables": ["sec(A) = c/b"],
+      "notes": []
+    },
+    "cosecant-exact": {
+      "title": "Rapporto Cosecante (csc)",
+      "description": "Reciproco del seno.",
+      "variables": ["csc(A) = c/a"],
+      "notes": []
     }
   },
   "pt": {
@@ -301,6 +553,48 @@
       "description": "Relação entre os catetos oposto e adjacente.",
       "variables": ["a = oposto", "b = adjacente"],
       "notes": ["tan(A) = a/b"]
+    },
+    "semiperimeter": {
+      "title": "Semiperímetro",
+      "description": "Metade do perímetro do triângulo.",
+      "variables": ["s = semiperímetro"],
+      "notes": ["s = (a+b+c)/2"]
+    },
+    "inradius": {
+      "title": "Inraio",
+      "description": "O raio do círculo inscrito no triângulo.",
+      "variables": ["r = inraio"],
+      "notes": ["r = (a+b-c)/2"]
+    },
+    "circumradius": {
+      "title": "Cincunraio",
+      "description": "O raio do círculo circunscrito ao triângulo.",
+      "variables": ["R = circunraio"],
+      "notes": ["R = c/2"]
+    },
+    "altitude-to-hypotenuse": {
+      "title": "Altura relativa à hipotenusa",
+      "description": "Altura do vértice reto até a hipotenusa.",
+      "variables": ["h = altura"],
+      "notes": ["h = (a*b)/c"]
+    },
+    "cotangent-exact": {
+      "title": "Razão Cotangente (cot)",
+      "description": "Recíproco da tangente.",
+      "variables": ["cot(A) = b/a"],
+      "notes": []
+    },
+    "secant-exact": {
+      "title": "Razão Secante (sec)",
+      "description": "Recíproco do cosseno.",
+      "variables": ["sec(A) = c/b"],
+      "notes": []
+    },
+    "cosecant-exact": {
+      "title": "Razão Cossecante (csc)",
+      "description": "Recíproco do seno.",
+      "variables": ["csc(A) = c/a"],
+      "notes": []
     }
   },
   "bn": {
@@ -336,9 +630,33 @@
     },
     "tangent-ratio": {
       "title": "ট্যানজেন্ট অনুপাত (tan)",
-      "description": "বিপরীত এবং সংলগ্ন বাহুর মধ্যে সম্পর্ক।",
+      "description": "বিপরীত এবং সংলগ্ন বাহুর মধ্যে संबंध।",
       "variables": ["a = বিপরীত", "b = সংলগ্ন"],
       "notes": ["tan(A) = a/b"]
+    },
+    "semiperimeter": {
+      "title": "অর্ধপরিধি",
+      "description": "ত্রিভুজের পরিধির অর্ধেক।",
+      "variables": ["s = অর্ধপরিধি"],
+      "notes": ["s = (a+b+c)/2"]
+    },
+    "inradius": {
+      "title": "অন্তঃব্যাসার্ধ",
+      "description": "ত্রিভুজের ভেতরে অঙ্কিত বৃত্তের ব্যাসার্ধ।",
+      "variables": ["r = অন্তঃব্যাসার্ধ"],
+      "notes": ["r = (a+b-c)/2"]
+    },
+    "circumradius": {
+      "title": "পরিব্যাসার্ধ",
+      "description": "ত্রিভুজের বাইরে অঙ্কিত বৃত্তের ব্যাসার্ধ।",
+      "variables": ["R = পরিব্যাসার্ধ"],
+      "notes": ["R = c/2"]
+    },
+    "altitude-to-hypotenuse": {
+      "title": "অতিভুজের ওপর উচ্চতা",
+      "description": "সমকোণ থেকে অতিভুজের ওপর অঙ্কিত উচ্চতা।",
+      "variables": ["h = উচ্চতা"],
+      "notes": ["h = (a*b)/c"]
     }
   },
   "ja": {
@@ -377,6 +695,48 @@
       "description": "対辺と隣辺の関係。",
       "variables": ["a = 対辺", "b = 隣辺"],
       "notes": ["tan(A) = a/b"]
+    },
+    "semiperimeter": {
+      "title": "半周長",
+      "description": "三角形の周囲の長さの半分。",
+      "variables": ["s = 半周長"],
+      "notes": ["s = (a+b+c)/2"]
+    },
+    "inradius": {
+      "title": "内接円の半径",
+      "description": "三角形に内接する円の半径。",
+      "variables": ["r = 内接円半径"],
+      "notes": ["r = (a+b-c)/2"]
+    },
+    "circumradius": {
+      "title": "外接円の半径",
+      "description": "三角形に外接する円の半径。",
+      "variables": ["R = 外接円半径"],
+      "notes": ["R = c/2"]
+    },
+    "altitude-to-hypotenuse": {
+      "title": "斜辺への高さ",
+      "description": "直角の頂点から斜辺までの高さ。",
+      "variables": ["h = 高さ"],
+      "notes": ["h = (a*b)/c"]
+    },
+    "cotangent-exact": {
+      "title": "余接比 (cot)",
+      "description": "正接の逆数。",
+      "variables": ["cot(A) = b/a"],
+      "notes": []
+    },
+    "secant-exact": {
+      "title": "正割比 (sec)",
+      "description": "余弦の逆数。",
+      "variables": ["sec(A) = c/b"],
+      "notes": []
+    },
+    "cosecant-exact": {
+      "title": "余割比 (csc)",
+      "description": "正弦の逆数。",
+      "variables": ["csc(A) = c/a"],
+      "notes": []
     }
   },
   "ko": {
@@ -415,6 +775,30 @@
       "description": "대변과 인접변의 관계.",
       "variables": ["a = 대변", "b = 인접변"],
       "notes": ["tan(A) = a/b"]
+    },
+    "semiperimeter": {
+      "title": "반둘레",
+      "description": "삼각형 둘레의 절반.",
+      "variables": ["s = 반둘레"],
+      "notes": ["s = (a+b+c)/2"]
+    },
+    "inradius": {
+      "title": "내접원 반지름",
+      "description": "삼각형 내접원의 반지름.",
+      "variables": ["r = 내접원 반지름"],
+      "notes": ["r = (a+b-c)/2"]
+    },
+    "circumradius": {
+      "title": "외접원 반지름",
+      "description": "삼각형 외접원의 반지름.",
+      "variables": ["R = 외접원 반지름"],
+      "notes": ["R = c/2"]
+    },
+    "altitude-to-hypotenuse": {
+      "title": "빗변의 높이",
+      "description": "직각 꼭짓점에서 빗변까지의 높이.",
+      "variables": ["h = 높이"],
+      "notes": ["h = (a*b)/c"]
     }
   },
   "ms": {
@@ -453,6 +837,30 @@
       "description": "Hubungan antara sisi bertentangan dan bersebelahan.",
       "variables": ["a = bertentangan", "b = bersebelahan"],
       "notes": ["tan(A) = a/b"]
+    },
+    "semiperimeter": {
+      "title": "Semiperimeter",
+      "description": "Separuh daripada perimeter segitiga.",
+      "variables": ["s = semiperimeter"],
+      "notes": ["s = (a+b+c)/2"]
+    },
+    "inradius": {
+      "title": "Inradius",
+      "description": "Jejari bulatan terterap dalam segitiga.",
+      "variables": ["r = inradius"],
+      "notes": ["r = (a+b-c)/2"]
+    },
+    "circumradius": {
+      "title": "Circumradius",
+      "description": "Jejari bulatan lilitan segitiga.",
+      "variables": ["R = circumradius"],
+      "notes": ["R = c/2"]
+    },
+    "altitude-to-hypotenuse": {
+      "title": "Tinggi ke Hipotenus",
+      "description": "Tinggi dari bucu tegak ke hipotenus.",
+      "variables": ["h = tinggi"],
+      "notes": ["h = (a*b)/c"]
     }
   },
   "pl": {
@@ -491,6 +899,30 @@
       "description": "Relacja między bokiem przeciwległym a przyległym.",
       "variables": ["a = przeciwległy", "b = przyległy"],
       "notes": ["tan(A) = a/b"]
+    },
+    "semiperimeter": {
+      "title": "Półobwód",
+      "description": "Połowa obwodu trójkąta.",
+      "variables": ["s = półobwód"],
+      "notes": ["s = (a+b+c)/2"]
+    },
+    "inradius": {
+      "title": "Promień koła wpisanego",
+      "description": "Promień koła wpisanego w trójkąt.",
+      "variables": ["r = promień"],
+      "notes": ["r = (a+b-c)/2"]
+    },
+    "circumradius": {
+      "title": "Promień koła opisanego",
+      "description": "Promień koła opisanego na trójkącie.",
+      "variables": ["R = promień"],
+      "notes": ["R = c/2"]
+    },
+    "altitude-to-hypotenuse": {
+      "title": "Wysokość do przeciwprostokątnej",
+      "description": "Wysokość z wierzchołka kąta prostego do przeciwprostokątnej.",
+      "variables": ["h = wysokość"],
+      "notes": ["h = (a*b)/c"]
     }
   },
   "id": {
@@ -529,6 +961,30 @@
       "description": "Hubungan antara sisi depan dan samping.",
       "variables": ["a = depan", "b = samping"],
       "notes": ["tan(A) = a/b"]
+    },
+    "semiperimeter": {
+      "title": "Semiperimeter",
+      "description": "Setengah dari keliling segitiga.",
+      "variables": ["s = semiperimeter"],
+      "notes": ["s = (a+b+c)/2"]
+    },
+    "inradius": {
+      "title": "Inradius",
+      "description": "Jari-jari lingkaran dalam segitiga.",
+      "variables": ["r = inradius"],
+      "notes": ["r = (a+b-c)/2"]
+    },
+    "circumradius": {
+      "title": "Circumradius",
+      "description": "Jari-jari lingkaran luar segitiga.",
+      "variables": ["R = circumradius"],
+      "notes": ["R = c/2"]
+    },
+    "altitude-to-hypotenuse": {
+      "title": "Tinggi ke Hipotenusa",
+      "description": "Tinggi dari titik sudut siku-siku ke hipotenusa.",
+      "variables": ["h = tinggi"],
+      "notes": ["h = (a*b)/c"]
     }
   },
   "ar": {
@@ -567,6 +1023,30 @@
       "description": "العلاقة بين الضلع المقابل والضلع المجاور.",
       "variables": ["a = مقابل", "b = مجاور"],
       "notes": ["tan(A) = a/b"]
+    },
+    "semiperimeter": {
+      "title": "نصف المحيط",
+      "description": "نصف محيط المثلث.",
+      "variables": ["s = نصف المحيط"],
+      "notes": ["s = (a+b+c)/2"]
+    },
+    "inradius": {
+      "title": "نصف قطر الدائرة الداخلية",
+      "description": "نصف قطر الدائرة المرسومة داخل المثلث.",
+      "variables": ["r = نصف قطر"],
+      "notes": ["r = (a+b-c)/2"]
+    },
+    "circumradius": {
+      "title": "نصف قطر الدائرة المحيطة",
+      "description": "نصف قطر الدائرة المرسومة حول المثلث.",
+      "variables": ["R = نصف قطر"],
+      "notes": ["R = c/2"]
+    },
+    "altitude-to-hypotenuse": {
+      "title": "الارتفاع على الوتر",
+      "description": "الارتفاع من رأس الزاوية القائمة إلى الوتر.",
+      "variables": ["h = الارتفاع"],
+      "notes": ["h = (a*b)/c"]
     }
   },
   "bg": {
@@ -605,6 +1085,30 @@
       "description": "Връзка между срещулежащия и прилежащия катет.",
       "variables": ["a = срещулежащ", "b = прилежащ"],
       "notes": ["tan(A) = a/b"]
+    },
+    "semiperimeter": {
+      "title": "Полупериметър",
+      "description": "Половината от периметъра на триъгълника.",
+      "variables": ["s = полупериметър"],
+      "notes": ["s = (a+b+c)/2"]
+    },
+    "inradius": {
+      "title": "Радиус на вписаната окръжност",
+      "description": "Радиус на окръжността, вписана в триъгълника.",
+      "variables": ["r = радиус"],
+      "notes": ["r = (a+b-c)/2"]
+    },
+    "circumradius": {
+      "title": "Радиус на описаната окръжност",
+      "description": "Радиус на окръжността, описана около триъгълника.",
+      "variables": ["R = радиус"],
+      "notes": ["R = c/2"]
+    },
+    "altitude-to-hypotenuse": {
+      "title": "Височина към хипотенузата",
+      "description": "Височина от върха на правия ъгъл към хипотенузата.",
+      "variables": ["h = височина"],
+      "notes": ["h = (a*b)/c"]
     }
   },
   "tr": {
@@ -643,6 +1147,30 @@
       "description": "Karşı kenar ile komşu kenar arasındaki ilişki.",
       "variables": ["a = karşı", "b = komşu"],
       "notes": ["tan(A) = a/b"]
+    },
+    "semiperimeter": {
+      "title": "Yarım Çevre",
+      "description": "Üçgenin çevresinin yarısı.",
+      "variables": ["s = yarım çevre"],
+      "notes": ["s = (a+b+c)/2"]
+    },
+    "inradius": {
+      "title": "İç Teğet Çember Yarıçapı",
+      "description": "Üçgenin içine çizilen çemberin yarıçapı.",
+      "variables": ["r = yarıçap"],
+      "notes": ["r = (a+b-c)/2"]
+    },
+    "circumradius": {
+      "title": "Çevrel Çember Yarıçapı",
+      "description": "Üçgenin dışına çizilen çemberin yarıçapı.",
+      "variables": ["R = yarıçap"],
+      "notes": ["R = c/2"]
+    },
+    "altitude-to-hypotenuse": {
+      "title": "Hipotenüse Ait Yükseklik",
+      "description": "Dik açı köşesinden hipotenüse inen yükseklik.",
+      "variables": ["h = yükseklik"],
+      "notes": ["h = (a*b)/c"]
     }
   },
   "sv": {
@@ -681,6 +1209,30 @@
       "description": "Förhållandet mellan motstående katet och närliggande katet.",
       "variables": ["a = motstående", "b = närliggande"],
       "notes": ["tan(A) = a/b"]
+    },
+    "semiperimeter": {
+      "title": "Semiperimeter",
+      "description": "Hälften av triangelns omkrets.",
+      "variables": ["s = semiperimeter"],
+      "notes": ["s = (a+b+c)/2"]
+    },
+    "inradius": {
+      "title": "Inskriven cirkelradie",
+      "description": "Radien på den cirkel som är inskriven i triangeln.",
+      "variables": ["r = radie"],
+      "notes": ["r = (a+b-c)/2"]
+    },
+    "circumradius": {
+      "title": "Omskriven cirkelradie",
+      "description": "Radien på den cirkel som är omskriven kring triangeln.",
+      "variables": ["R = radie"],
+      "notes": ["R = c/2"]
+    },
+    "altitude-to-hypotenuse": {
+      "title": "Höjd mot hypotenusan",
+      "description": "Höjden från den räta vinkeln mot hypotenusan.",
+      "variables": ["h = höjd"],
+      "notes": ["h = (a*b)/c"]
     }
   },
   "zh": {
@@ -719,6 +1271,30 @@
       "description": "对边与邻边的关系。",
       "variables": ["a = 对边", "b = 邻边"],
       "notes": ["tan(A) = a/b"]
+    },
+    "semiperimeter": {
+      "title": "半周长",
+      "description": "三角形周长的一半。",
+      "variables": ["s = 半周长"],
+      "notes": ["s = (a+b+c)/2"]
+    },
+    "inradius": {
+      "title": "内切圆半径",
+      "description": "直角三角形内切圆的半径。",
+      "variables": ["r = 半径"],
+      "notes": ["r = (a+b-c)/2"]
+    },
+    "circumradius": {
+      "title": "外接圆半径",
+      "description": "直角三角形外接圆的半径。",
+      "variables": ["R = 半径"],
+      "notes": ["R = c/2"]
+    },
+    "altitude-to-hypotenuse": {
+      "title": "斜边上的高",
+      "description": "从直角顶点到斜边的垂直高度。",
+      "variables": ["h = 高"],
+      "notes": ["h = (a*b)/c"]
     }
   }
 }

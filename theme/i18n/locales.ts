@@ -1,4 +1,4 @@
-﻿export const SUPPORTED_LOCALES = [
+export const SUPPORTED_LOCALES = [
   'en',
   'hi',
   'es',
@@ -115,14 +115,11 @@ export function localizePath(locale: Locale, path: string): string {
 }
 
 export function localizeNavHref(locale: Locale, href: string): string {
-  if (href === '/') {
-    return localizePath(locale, '/');
-  }
-
   if (href.startsWith('/#')) {
     const rootPath = localizePath(locale, '/');
     return `${rootPath}#${href.slice(2)}`;
   }
 
-  return href;
+  return localizePath(locale, href);
 }
+

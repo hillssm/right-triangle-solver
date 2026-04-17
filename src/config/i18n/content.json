@@ -71,7 +71,17 @@
       "title": "About Us | Right Triangle Solver",
       "description": "Learn why we built Right Triangle Solver and how it helps students and professionals solve geometry faster.",
       "heading": "About Right Triangle Solver",
-      "body": "Right Triangle Solver was built for students, teachers, engineers, and anyone who needs dependable triangle calculations without friction. We focus on speed, clarity, and transparent formulas so every answer is easy to trust."
+      "subHeading": "Who we are",
+      "missionTitle": "Our Mission",
+      "missionBody": "We built Right Triangle Solver to simplify geometry for students, teachers, and professionals. Our goal is to make math accessible, accurate, and intuitive.",
+      "precisionTitle": "Precision",
+      "precisionDesc": "Accurate to 4+ decimal places with full trigonometric coverage.",
+      "instantTitle": "Instant",
+      "instantDesc": "Results in milliseconds with live visualization updates.",
+      "educationalTitle": "Educational",
+      "educationalDesc": "Step-by-step solutions to help you understand the math behind the answer.",
+      "promiseTitle": "Our Promise",
+      "promiseBody": "The tool is free, ad-free, and designed with care. We respect your privacy and never collect personal data."
     },
     "contact": {
       "title": "Contact Us | Right Triangle Solver",
@@ -83,16 +93,15 @@
       "title": "Terms of Use | Right Triangle Solver",
       "description": "Read the terms for using Right Triangle Solver and related educational resources.",
       "heading": "Terms of Use",
-      "updatedLabel": "Last updated: April 12, 2026",
-      "body": "By using this website, you agree to use the tools responsibly and verify results for high-stakes work. The service is provided as-is for educational and productivity use. You may not misuse, reverse engineer, or abuse the service. We may update these terms as the product evolves."
+      "updatedLabel": "Last updated: April 12, 2026"
     },
     "privacy": {
       "title": "Privacy Policy | Right Triangle Solver",
       "description": "Understand what information Right Triangle solver collects and how it is used.",
       "heading": "Privacy Policy",
-      "updatedLabel": "Last updated: April 12, 2026",
-      "body": "We minimize data collection. Contact form submissions include only the details you provide. We may collect anonymized analytics to improve usability and performance. We do not sell personal data. You may contact us to request deletion of information submitted through direct messages."
+      "updatedLabel": "Last updated: April 12, 2026"
     },
+
     "library": {
       "title": "Formula Library",
       "description": "Browse theorem references, trigonometry mnemonics, and geometry formulas in a focused dark-mode library."

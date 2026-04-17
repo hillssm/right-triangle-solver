@@ -30,14 +30,19 @@ type DiagramFeature =
   | 'circumradius';
 
 const CATEGORY_THEMES: Record<string, { hex: string; rgbaBase: string }> = {
-  'Core Side Relations': { hex: '#f1c97d', rgbaBase: '241, 201, 125' }, // Gold
-  'Area and Perimeter': { hex: '#a6e3a1', rgbaBase: '166, 227, 161' }, // Pastel Green
-  'Trigonometric Ratios': { hex: '#89b4fa', rgbaBase: '137, 180, 250' }, // Soft Blue
-  'Inverse Angle Formulas': { hex: '#cba6f7', rgbaBase: '203, 166, 247' }, // Soft Purple
-  'Derived Geometry': { hex: '#f38ba8', rgbaBase: '243, 139, 168' }  // Soft Pink
+  'Trigonometry': { hex: '#cba6f7', rgbaBase: '203, 166, 247' },           // Purple
+  'Side Calculations': { hex: '#89b4fa', rgbaBase: '137, 180, 250' },      // Blue
+  'Area & Geometry': { hex: '#a6e3a1', rgbaBase: '166, 227, 161' },        // Green
+  'Advanced Relations': { hex: '#f38ba8', rgbaBase: '243, 139, 168' },     // Pink
+  'Special Triangles': { hex: '#f1c97d', rgbaBase: '241, 201, 125' },      // Gold
+  'Core Side Relations': { hex: '#f1c97d', rgbaBase: '241, 201, 125' }, // Gold fallback
+  'Area and Perimeter': { hex: '#a6e3a1', rgbaBase: '166, 227, 161' }, // Pastel Green fallback
+  'Trigonometric Ratios': { hex: '#89b4fa', rgbaBase: '137, 180, 250' }, // Soft Blue fallback
+  'Inverse Angle Formulas': { hex: '#cba6f7', rgbaBase: '203, 166, 247' }, // Soft Purple fallback
+  'Derived Geometry': { hex: '#f38ba8', rgbaBase: '243, 139, 168' }  // Soft Pink fallback
 };
 
-const outputFeatureByKind: Record<RightTriangleFormula['calculator']['kind'], DiagramFeature> = {
+const outputFeatureByKind: Record<string, DiagramFeature> = {
   pythagorean_c: 'c',
   leg_from_ac: 'b',
   leg_from_bc: 'a',
@@ -65,29 +70,33 @@ const sideFeatureByFieldKey: Partial<Record<string, SideFeature>> = {
 
 const buildDiagramState = (formula: RightTriangleFormula) => {
   const inputSides = new Set<SideFeature>();
-  for (const field of formula.calculator.fields) {
-    const side = sideFeatureByFieldKey[field.key];
-    if (side) inputSides.add(side);
+  if (formula.calculator) {
+    for (const field of formula.calculator.fields) {
+      const side = sideFeatureByFieldKey[field.key];
+      if (side) inputSides.add(side);
+    }
   }
   return {
     inputSides,
-    outputFeature: outputFeatureByKind[formula.calculator.kind]
+    outputFeature: formula.calculator ? outputFeatureByKind[formula.calculator.kind] : undefined
   };
 };
 
-const strokeForSide = (side: SideFeature, inputSides: Set<SideFeature>, outputFeature: DiagramFeature, themeHex: string) => {
+const strokeForSide = (side: SideFeature, inputSides: Set<SideFeature>, outputFeature: DiagramFeature | undefined, themeHex: string) => {
   if (outputFeature === 'perimeter' || outputFeature === 'semiperimeter') return themeHex;
   if (outputFeature === side) return themeHex;
   if (inputSides.has(side)) return 'var(--color-secondary-fixed)';
   return 'var(--color-outline-variant)';
 };
 
-const strokeWidthForSide = (side: SideFeature, inputSides: Set<SideFeature>, outputFeature: DiagramFeature) => {
+const strokeWidthForSide = (side: SideFeature, inputSides: Set<SideFeature>, outputFeature: DiagramFeature | undefined) => {
   if (outputFeature === 'perimeter' || outputFeature === 'semiperimeter') return 2.5;
   if (outputFeature === side) return 2.5;
   if (inputSides.has(side)) return 2;
   return 1.5;
 };
+
+const tools = RIGHT_TRIANGLE_FORMULAS.filter(f => f.calculator != null);
 ---
 
 <section class="relative mt-12 w-full overflow-hidden rounded-3xl border border-outline-variant/40 bg-surface-container px-6 py-12 shadow-[var(--shadow-luxury)] sm:px-12 sm:py-16" aria-labelledby="calculator-catalog-heading">
@@ -98,7 +107,7 @@ const strokeWidthForSide = (side: SideFeature, inputSides: Set<SideFeature>, out
   <div class="relative z-10 flex flex-col items-center text-center">
     <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 backdrop-blur-md">
       <span class="material-symbols-outlined text-[14px] text-primary">auto_awesome</span>
-      <span class="font-label text-xs uppercase tracking-[0.2em] text-primary">{RIGHT_TRIANGLE_FORMULAS.length} Precision Tools</span>
+      <span class="font-label text-xs uppercase tracking-[0.2em] text-primary">{tools.length} Precision Tools</span>
     </div>
     
     <h2 id="calculator-catalog-heading" class="text-glow-primary font-headline text-3xl tracking-tight text-on-surface sm:text-4xl lg:text-5xl">
@@ -110,7 +119,8 @@ const strokeWidthForSide = (side: SideFeature, inputSides: Set<SideFeature>, out
   </div>
 
   <div class="relative z-10 mx-auto mt-14 grid max-w-7xl gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-    {RIGHT_TRIANGLE_FORMULAS.map((formula, index) => {
+    {tools.map((formula, index) => {
+      const calculator = formula.calculator!!;
       const diagram = buildDiagramState(formula);
       const isArea = diagram.outputFeature === 'area';
       const theme = CATEGORY_THEMES[formula.category] || CATEGORY_THEMES['Core Side Relations'];
@@ -204,13 +214,13 @@ const strokeWidthForSide = (side: SideFeature, inputSides: Set<SideFeature>, out
             <div class="flex items-center gap-2">
               <span class="rounded border border-outline-variant/30 bg-surface-container-high px-2 py-1 font-mono text-[10px] text-on-surface-variant/80">Input</span>
               <span class="text-xs font-medium text-on-surface">
-                {formula.calculator.fields.map((f) => f.label.replace('Leg ', '').replace('Hypotenuse ', '').replace('Adjacent ', '').replace('Opposite ', '')).join(' + ')}
+                {calculator.fields.map((f) => f.label.replace('Leg ', '').replace('Hypotenuse ', '').replace('Adjacent ', '').replace('Opposite ', '')).join(' + ')}
               </span>
             </div>
             <div class="flex items-center gap-2">
               <span class="rounded border px-2 py-1 font-mono text-[10px]" style={`color: ${theme.hex}; border-color: rgba(${theme.rgbaBase},0.3); background: rgba(${theme.rgbaBase},0.1);`}>Output</span>
               <span class="text-xs font-medium" style={`color: ${theme.hex};`}>
-                {formula.calculator.outputLabel}
+                {calculator.outputLabel}
               </span>
             </div>
           </div>

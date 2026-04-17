@@ -3,6 +3,8 @@ import { RIGHT_TRIANGLE_FORMULAS, getFormulaBySlug } from 'src/data/rightTriangl
 import { DEFAULT_LOCALE } from 'theme/i18n/locales';
 import FormulaCalculator from 'theme/components/FormulaCalculator.astro';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import katex from 'katex';
+import 'katex/dist/katex.min.css';
 
 export function getStaticPaths() {
   return RIGHT_TRIANGLE_FORMULAS.map((item) => ({
@@ -35,19 +37,22 @@ if (!formula) {
     <p class="mt-4 text-on-surface-variant max-w-3xl">{formula.description}</p>
   </header>
 
-  <FormulaCalculator formula={formula} />
+  {formula.calculator && <FormulaCalculator formula={formula} />}
   
   <article class="mt-8 section-shell">
-    <div class="rounded-lg border border-outline-variant/35 bg-surface-container-lowest p-4">
-      <p class="font-label text-xs uppercase tracking-widest text-outline">Main Formula</p>
-      <p class="mt-2 text-lg text-tertiary math-textbook">{formula.expression}</p>
+    <div class="rounded-lg border border-outline-variant/35 bg-surface-container-lowest p-6 shadow-sm overflow-x-auto text-center">
+      <p class="font-label text-xs uppercase tracking-widest text-outline text-left mb-4">Main Formula</p>
+      <div 
+        class="text-2xl text-tertiary math-textbook"
+        set:html={katex.renderToString(formula.expression, { throwOnError: false, displayMode: true })}
+      />
     </div>
 
     <div class="mt-6 grid gap-6 lg:grid-cols-2">
       <section class="surface-card">
         <h2 class="text-xl font-semibold">Variables</h2>
         <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-on-surface-variant">
-          {formula.variables.map((line) => (
+          {(formula.variables || []).map((line) => (
             <li>{line}</li>
           ))}
         </ul>
@@ -56,7 +61,7 @@ if (!formula) {
       <section class="surface-card">
         <h2 class="text-xl font-semibold">Usage Notes</h2>
         <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-on-surface-variant">
-          {formula.notes.map((line) => (
+          {(formula.notes || []).map((line) => (
             <li>{line}</li>
           ))}
         </ul>
@@ -64,3 +69,4 @@ if (!formula) {
     </div>
   </article>
 </BaseLayout>
+

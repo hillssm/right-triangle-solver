@@ -7,7 +7,12 @@ interface Props {
 
 const { formula } = Astro.props;
 
-const exampleValues: Partial<Record<RightTriangleFormula['calculator']['kind'], Record<string, number>>> = {
+if (!formula.calculator) {
+  throw new Error('FormulaCalculator requires a formula with a calculator configuration.');
+}
+const calculator = formula.calculator!!;
+
+const exampleValues: Partial<Record<string, Record<string, number>>> = {
   pythagorean_c: { a: 3, b: 4 },
   leg_from_ac: { a: 5, c: 13 },
   leg_from_bc: { b: 12, c: 13 },
@@ -27,26 +32,26 @@ const exampleValues: Partial<Record<RightTriangleFormula['calculator']['kind'], 
   circumradius: { c: 5 }
 };
 
-const inputHint = exampleValues[formula.calculator.kind] ?? {};
-const defaultStatus = `Enter inputs to calculate ${formula.calculator.outputLabel}.`;
+const inputHint = exampleValues[calculator.kind] ?? {};
+const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
 ---
 
 <section
   class="section-shell"
   data-formula-calculator
-  data-kind={formula.calculator.kind}
-  data-output-label={formula.calculator.outputLabel}
-  data-output-unit={formula.calculator.outputUnit ?? ''}
+  data-kind={calculator.kind}
+  data-output-label={calculator.outputLabel}
+  data-output-unit={calculator.outputUnit ?? ''}
   data-default-status={defaultStatus}
 >
   <h2 class="text-2xl font-semibold">{formula.title} Calculator</h2>
   <p class="mt-2 text-sm text-on-surface-variant">
     This calculator follows <span class="text-primary math-textbook">{formula.expression}</span> and returns
-    <strong class="font-semibold text-on-surface"> {formula.calculator.outputLabel}</strong>.
+    <strong class="font-semibold text-on-surface"> {calculator.outputLabel}</strong>.
   </p>
 
   <form class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" data-calc-form>
-    {formula.calculator.fields.map((field) => (
+    {calculator.fields.map((field) => (
       <label class="grid gap-2 text-sm font-medium">
         <span>{field.label}</span>
         <div class="relative">
@@ -69,7 +74,7 @@ const defaultStatus = `Enter inputs to calculate ${formula.calculator.outputLabe
     ))}
 
     <div class="sm:col-span-2 lg:col-span-3 flex flex-wrap gap-3">
-      <button type="submit" class="btn-primary">Calculate {formula.calculator.outputLabel}</button>
+      <button type="submit" class="btn-primary">Calculate {calculator.outputLabel}</button>
       <button type="reset" class="btn-secondary">Reset</button>
     </div>
   </form>
@@ -81,11 +86,12 @@ const defaultStatus = `Enter inputs to calculate ${formula.calculator.outputLabe
   <div class="mt-4 hidden surface-card border-primary/30 bg-surface-container-high" data-calc-result-wrap>
     <div class="flex items-center justify-between">
       <p class="font-label text-xs uppercase tracking-widest text-primary" data-calc-output-label>
-        {formula.calculator.outputLabel}
+        {calculator.outputLabel}
       </p>
       <span class="rounded bg-primary-fixed px-2 py-0.5 text-[10px] uppercase text-on-primary-fixed">Result</span>
     </div>
     <p class="mt-2 font-mono text-3xl text-tertiary" data-calc-output-value>-</p>
+
     
     <div class="mt-6 border-t border-outline-variant/30 pt-4">
       <h4 class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Solution Steps</h4>

@@ -137,15 +137,15 @@ const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
             <stop offset="100%" stop-color="#d4ad65" stop-opacity="0.12"></stop>
           </linearGradient>
         </defs>
-        <path d="M 60 240 L 80 240 L 80 260" fill="none" stroke="#99907c" stroke-width="1.5"></path>
-        <path d="M 70 70 L 70 260 L 380 260 Z" fill="url(#rt-fill-gradient2)" stroke="#f1c97d" stroke-width="2.5" stroke-linejoin="round"></path>
-        <line x1="70" y1="260" x2="196" y2="184" stroke="#f1c97d" stroke-width="2" stroke-dasharray="5 4" opacity="0.6"></line>
+        <path d="M 60 240 L 80 240 L 80 260" fill="none" stroke="#99907c" stroke-width="1.5" data-calc-svg-path-stroke></path>
+        <path d="M 70 70 L 70 260 L 380 260 Z" fill="url(#rt-fill-gradient2)" stroke="#f1c97d" stroke-width="2.5" stroke-linejoin="round" data-calc-svg-path-fill></path>
+        <line x1="70" y1="260" x2="196" y2="184" stroke="#f1c97d" stroke-width="2" stroke-dasharray="5 4" opacity="0.6" data-calc-svg-altitude></line>
         <text x="50" y="170" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="14" text-anchor="end" data-calc-svg-label="a">a = -</text>
         <text x="226" y="284" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="14" text-anchor="middle" data-calc-svg-label="b">b = -</text>
-        <text x="246" y="152" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="15" data-calc-svg-label="c">c = -</text>
-        <text x="316" y="248" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="12" data-calc-svg-label="A">A = -</text>
-        <text x="88" y="94" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="12" data-calc-svg-label="B">B = -</text>
-        <text x="146" y="210" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="13" data-calc-svg-label="h">h = -</text>
+        <text x="246" y="152" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="15" text-anchor="start" data-calc-svg-label="c">c = -</text>
+        <text x="316" y="248" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="12" text-anchor="end" data-calc-svg-label="A">A = -</text>
+        <text x="88" y="94" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="12" text-anchor="start" data-calc-svg-label="B">B = -</text>
+        <text x="146" y="210" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="13" text-anchor="end" data-calc-svg-label="h">h = -</text>
       </svg>
     </div>
   </div>
@@ -480,11 +480,14 @@ const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
 
       const updateSvgLabels = (inputs, resultVal, outputUnit) => {
         const svgLabels = section.querySelectorAll('[data-calc-svg-label]');
+        const strokeEl = section.querySelector('[data-calc-svg-path-stroke]');
+        const fillEl = section.querySelector('[data-calc-svg-path-fill]');
+        const altitudeLine = section.querySelector('[data-calc-svg-altitude]');
         const map = { ...inputs };
         
         let outKey = null;
         const lowL = outputLabel.toLowerCase();
-        if (lowL.includes('leg a') || outputLabel === 'Leg a' || lowL === 'opposite a') outKey = 'a';
+        if (lowL.includes('leg a') || outputLabel === 'Leg a' || lowL === 'opposite a' || lowL === 'long leg') outKey = 'a';
         else if (lowL.includes('leg b') || outputLabel === 'Leg b' || lowL === 'adjacent b') outKey = 'b';
         else if (lowL.includes('hypotenuse c') || outputLabel === 'Hypotenuse c') outKey = 'c';
         else if (lowL.includes('angle a') || lowL.includes('sin(a)') || lowL.includes('cos(a)') || lowL.includes('tan(a)') || lowL.includes('cot(a)') || lowL.includes('sec(a)') || lowL.includes('csc(a)')) outKey = 'A';
@@ -494,6 +497,80 @@ const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
         else if (lowL.includes('projection q')) outKey = 'q';
 
         if (outKey && resultVal !== undefined) map[outKey] = resultVal;
+
+        // --- Derive A and B for visual shape scaling ---
+        let drawA = map.a;
+        let drawB = map.b;
+        const drawC = map.c;
+        const A_ang = map.A;
+        const B_ang = map.B;
+
+        if (!drawA || !drawB) {
+            if (drawA && drawC && drawC > drawA) drawB = Math.sqrt(drawC*drawC - drawA*drawA);
+            else if (drawB && drawC && drawC > drawB) drawA = Math.sqrt(drawC*drawC - drawB*drawB);
+            else if (drawC && A_ang) { drawA = drawC * Math.sin(rad(A_ang)); drawB = drawC * Math.cos(rad(A_ang)); }
+            else if (drawC && B_ang) { drawA = drawC * Math.cos(rad(B_ang)); drawB = drawC * Math.sin(rad(B_ang)); }
+            else if (drawA && A_ang) drawB = drawA / Math.tan(rad(A_ang));
+            else if (drawB && B_ang) drawA = drawB / Math.tan(rad(B_ang));
+            else if (map.p && map.q) { drawC = map.p + map.q; drawA = Math.sqrt(drawC*map.p); drawB = Math.sqrt(drawC*map.q); }
+            else if (map.h && drawC) { drawA = Math.sqrt(0.5*(drawC*drawC + drawC*Math.sqrt(Math.max(0, drawC*drawC - 4*map.h*map.h)))); drawB = Math.sqrt(Math.max(0, drawC*drawC - drawA*drawA)); }
+        }
+
+        const setPath = (aVal, bVal) => {
+          const DEFAULT_STROKE = 'M 60 240 L 80 240 L 80 260';
+          const DEFAULT_FILL = 'M 70 70 L 70 260 L 380 260 Z';
+          if (!aVal || !bVal || !isFinite(aVal) || !isFinite(bVal) || aVal <= 0 || bVal <= 0) {
+            if (fillEl) fillEl.setAttribute('d', DEFAULT_FILL);
+            if (strokeEl) strokeEl.setAttribute('d', DEFAULT_STROKE);
+            if (altitudeLine) altitudeLine.setAttribute('opacity', '0');
+            // reset text positions
+             for (const el of svgLabels) {
+               const k = el.getAttribute('data-calc-svg-label');
+               if (k === 'a') { el.setAttribute('x', '50'); el.setAttribute('y', '170'); el.setAttribute('text-anchor', 'end'); }
+               if (k === 'b') { el.setAttribute('x', '226'); el.setAttribute('y', '284'); el.setAttribute('text-anchor', 'middle'); }
+               if (k === 'c') { el.setAttribute('x', '246'); el.setAttribute('y', '152'); el.setAttribute('text-anchor', 'start'); }
+               if (k === 'A') { el.setAttribute('x', '316'); el.setAttribute('y', '248'); el.setAttribute('text-anchor', 'end'); }
+               if (k === 'B') { el.setAttribute('x', '88'); el.setAttribute('y', '94'); el.setAttribute('text-anchor', 'start'); }
+               if (k === 'h') { el.setAttribute('x', '146'); el.setAttribute('y', '210'); el.setAttribute('text-anchor', 'end'); }
+             }
+            return;
+          }
+
+          const W = 460, H = 300, maxW = W - 100, maxH = H - 80;
+          const aspectTri = bVal / aVal;
+          const aspectBox = maxW / maxH;
+          let dW = maxW, dH = dW / aspectTri;
+          if (aspectTri <= aspectBox) { dH = maxH; dW = dH * aspectTri; }
+          const lX = W/2 - dW/2, tY = H/2 - dH/2, rX = lX + dW, bY = tY + dH;
+
+          if (fillEl) fillEl.setAttribute('d', `M ${lX} ${tY} L ${lX} ${bY} L ${rX} ${bY} Z`);
+          
+          const bSize = Math.min(20, dW * 0.15, dH * 0.15);
+          if (strokeEl) strokeEl.setAttribute('d', `M ${lX} ${bY - bSize} L ${lX + bSize} ${bY - bSize} L ${lX + bSize} ${bY}`);
+
+          const hX = lX + (dW * dH * dH) / (dW*dW + dH*dH);
+          const hY = bY - (dW * dW * dH) / (dW*dW + dH*dH);
+          if (altitudeLine) {
+            altitudeLine.setAttribute('x1', lX);
+            altitudeLine.setAttribute('y1', bY);
+            altitudeLine.setAttribute('x2', hX);
+            altitudeLine.setAttribute('y2', hY);
+            altitudeLine.setAttribute('opacity', '0.6');
+          }
+
+          for (const el of svgLabels) {
+             const key = el.getAttribute('data-calc-svg-label');
+             if (key === 'a') { el.setAttribute('x', lX - 10); el.setAttribute('y', bY - dH/2 + 5); el.setAttribute('text-anchor', 'end'); }
+             if (key === 'b') { el.setAttribute('x', lX + dW/2); el.setAttribute('y', bY + 20); el.setAttribute('text-anchor', 'middle'); }
+             if (key === 'c') { el.setAttribute('x', lX + dW/2 + 15); el.setAttribute('y', bY - dH/2 - 10); el.setAttribute('text-anchor', 'start'); }
+             if (key === 'A') { el.setAttribute('x', rX - Math.min(40, dW*0.1)); el.setAttribute('y', bY - 8); el.setAttribute('text-anchor', 'end'); }
+             if (key === 'B') { el.setAttribute('x', lX + 12); el.setAttribute('y', tY + Math.min(40, dH*0.1) + 10); el.setAttribute('text-anchor', 'start'); }
+             if (key === 'h') { el.setAttribute('x', lX + (hX - lX)*0.5 + 5); el.setAttribute('y', bY - (bY - hY)*0.5 + 5); el.setAttribute('text-anchor', 'end'); }
+          }
+        };
+
+        setPath(drawA, drawB);
+        // ---
 
         for (const el of svgLabels) {
           const key = el.getAttribute('data-calc-svg-label');

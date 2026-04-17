@@ -692,6 +692,19 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
       kind: 'c_from_a_30', outputLabel: 'Hypotenuse c', outputUnit: 'units',
       fields: [{ key: 'a', label: 'Short leg a', min: 0 }]
     }
+  },
+  {
+    slug: 'radius-R-cap',
+    title: 'Radius Relation R',
+    category: 'Advanced Relations',
+    expression: 'R = \\frac{c}{2}',
+    description: 'Circumradius of a right triangle.',
+    variables: ['c = hypotenuse', 'R = circumradius'],
+    notes: [],
+    calculator: {
+      kind: 'circumradius', outputLabel: 'Circumradius R', outputUnit: 'units',
+      fields: [{ key: 'c', label: 'Hypotenuse c', min: 0 }]
+    }
   }
 ];
 

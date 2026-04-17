@@ -1,0 +1,30 @@
+---
+---
+
+<button
+  id="back-to-top"
+  class="fixed bottom-8 right-8 z-[100] flex h-12 w-12 translate-y-20 items-center justify-center rounded-full bg-primary/90 text-on-primary shadow-lg transition-all duration-300 hover:scale-110 hover:bg-primary active:scale-95 sm:bottom-10 sm:right-10"
+  aria-label="Back to Top"
+>
+  <span class="material-symbols-outlined">expand_less</span>
+</button>
+
+<script>
+  const btn = document.getElementById('back-to-top');
+
+  if (btn) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        btn.classList.remove('translate-y-20', 'opacity-0');
+        btn.classList.add('translate-y-0', 'opacity-100');
+      } else {
+        btn.classList.add('translate-y-20', 'opacity-0');
+        btn.classList.remove('translate-y-0', 'opacity-100');
+      }
+    });
+
+    btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+</script>

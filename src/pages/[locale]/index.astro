@@ -56,13 +56,13 @@ const chartRows = [
     faqs={bundle.faq}
   />
 
-  <header class="relative flex flex-col items-center justify-center py-20 text-center sm:py-32">
-    <div class="pointer-events-none absolute -top-24 h-96 w-full bg-gradient-to-b from-[#1a1c19]/5 to-transparent opacity-30"></div>
-    <h1 class="mx-auto max-w-4xl font-headline text-5xl font-bold tracking-tight text-[#5b4000] sm:text-7xl lg:text-8xl">
-      {pick(home, 'heading', 'Right Triangle Solver')}
+  <header class="relative flex flex-col items-center justify-center py-10 text-center sm:py-16">
+    <div class="pointer-events-none absolute -top-12 h-64 w-full bg-gradient-to-b from-[#1a1c19]/5 to-transparent opacity-30"></div>
+    <h1 class="mx-auto max-w-4xl font-headline text-3xl font-bold tracking-tight text-[#5b4000] drop-shadow-sm sm:text-5xl lg:text-5xl">
+      <span class="text-gradient-primary">{pick(home, 'heading', 'Right Triangle Solver')}</span>
     </h1>
-    <p class="mx-auto mt-8 max-w-2xl px-4 text-base leading-relaxed text-[#454744] sm:text-lg lg:text-xl">
-      Calculate hypotenuse, angles, area, and geometry instantly with our precision digital tool.
+    <p class="mx-auto mt-4 max-w-2xl px-4 text-sm leading-relaxed text-[#454744] sm:text-base lg:text-lg">
+      {pick(home, 'intro', 'Calculate hypotenuse, angles, area, and geometry instantly with our precision digital tool.')}
     </p>
   </header>
 
@@ -73,16 +73,50 @@ const chartRows = [
       <RightTriangleTool
         heading={pick(home, 'toolHeading', 'Right Triangle Solver')}
         description={pick(home, 'toolDescription', 'Enter any two legs to calculate hypotenuse, area, and perimeter instantly.')}
+        labels={home.tool as any}
       />
     </div>
   </section>
 
   <div class="mt-8">
-    <HowItWorks heading={pick(home, 'howHeading', 'How Right Triangle Solver works')} />
+    <HowItWorks heading={pick(home, 'howHeading', 'How Right Triangle Solver works')}>
+      <p slot="intro" class="mt-3 max-w-2xl text-sm text-on-surface-variant">
+        {pick(home, 'howIntro', 'From input to proof-ready output in three clean steps.')}
+      </p>
+      <Fragment slot="steps">
+        <article class="surface-card group flex flex-col gap-4 border-outline-variant/30">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
+            <span class="material-symbols-outlined text-xl">input</span>
+          </div>
+          <h3 class="text-base font-semibold text-on-surface">{pick(home, 'step1Title', '1. Enter known values')}</h3>
+          <p class="text-sm leading-relaxed text-on-surface-variant">{pick(home, 'step1Desc', 'Provide any valid right-triangle inputs and keep units consistent.')}</p>
+        </article>
+        <article class="surface-card group flex flex-col gap-4 border-outline-variant/30">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
+            <span class="material-symbols-outlined text-xl">bolt</span>
+          </div>
+          <h3 class="text-base font-semibold text-on-surface">{pick(home, 'step2Title', '2. Solve instantly')}</h3>
+          <p class="text-sm leading-relaxed text-on-surface-variant">{pick(home, 'step2Desc', 'The solver applies Pythagorean and trigonometric relations in real time.')}</p>
+        </article>
+        <article class="surface-card group flex flex-col gap-4 border-outline-variant/30">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
+            <span class="material-symbols-outlined text-xl">insights</span>
+          </div>
+          <h3 class="text-base font-semibold text-on-surface">{pick(home, 'step3Title', '3. Validate the geometry')}</h3>
+          <p class="text-sm leading-relaxed text-on-surface-variant">{pick(home, 'step3Desc', 'Use live visualization, ratios, and derived metrics to verify your answer.')}</p>
+        </article>
+      </Fragment>
+    </HowItWorks>
   </div>
 
   <div class="mt-8">
-    <ChartTableSection heading={pick(home, 'chartHeading', 'Reference Values')} rows={chartRows} />
+    <ChartTableSection
+      heading={pick(home, 'chartHeading', 'Reference Values')}
+      subHeading={pick(home, 'chartSubHeading', 'Compare common right-triangle families and their hypotenuse values.')}
+      label1={pick(home, 'chartLabel1', 'Triangle')}
+      label2={pick(home, 'chartLabel2', 'Hypotenuse')}
+      rows={chartRows}
+    />
   </div>
 
   <div class="mt-8">
@@ -94,6 +128,9 @@ const chartRows = [
         'catalogDescription',
         'Browse every formula tool. Each page has a dedicated calculator built for that title intent.'
       )}
+      uiTools={pick(home, 'catalogTools', 'Precision Tools')}
+      uiInput={pick(home, 'catalogInput', 'Input')}
+      uiOutput={pick(home, 'catalogOutput', 'Output')}
     />
   </div>
 
@@ -101,7 +138,7 @@ const chartRows = [
     <Faq heading={pick(home, 'faqHeading', 'Frequently Asked Questions')} items={bundle.faq.slice(0, 6)} />
     <div class="mt-6 flex justify-center">
       <a href={localizePath(locale, '/faqs/')} class="btn-secondary flex items-center gap-2">
-        View All Detailed FAQs
+        {pick(home, 'viewAllFaqs', 'View All Detailed FAQs')}
         <span class="material-symbols-outlined text-sm">arrow_forward</span>
       </a>
     </div>

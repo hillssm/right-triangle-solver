@@ -37,16 +37,16 @@
   },
   "hi": {
     "nav": {
-      "home": "होम",
-      "practice": "अभ्यास",
-      "formulas": "फॉर्मूला",
-      "aboutUs": "हमारे बारे में",
-      "contactUs": "संपर्क करें",
-      "blog": "ब्लॉग",
-      "faq": "सामान्य प्रश्न",
-      "terms": "नियम",
-      "privacy": "गोपनीयता",
-      "sitemap": "साइटमैप"
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "लेख पढ़ें",
@@ -63,16 +63,16 @@
   },
   "es": {
     "nav": {
-      "home": "Inicio",
-      "practice": "Práctica",
-      "formulas": "Fórmulas",
-      "aboutUs": "Sobre Nosotros",
-      "contactUs": "Contacto",
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Términos",
-      "privacy": "Privacidad",
-      "sitemap": "Mapa del sitio"
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Leer artículo",
@@ -89,16 +89,16 @@
   },
   "ru": {
     "nav": {
-      "home": "Главная",
-      "practice": "Практика",
-      "formulas": "Формулы",
-      "aboutUs": "О нас",
-      "contactUs": "Контакты",
-      "blog": "Блог",
-      "faq": "ЧАВО",
-      "terms": "Условия",
-      "privacy": "Конфиденциальность",
-      "sitemap": "Карта сайта"
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Читать статью",
@@ -115,16 +115,16 @@
   },
   "fr": {
     "nav": {
-      "home": "Accueil",
-      "practice": "Pratique",
-      "formulas": "Formules",
-      "aboutUs": "À Propos",
-      "contactUs": "Contact",
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Conditions",
-      "privacy": "Confidentialité",
-      "sitemap": "Plan du site"
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Lire l'article",
@@ -141,15 +141,15 @@
   },
   "de": {
     "nav": {
-      "home": "Startseite",
-      "practice": "Übung",
-      "formulas": "Formeln",
-      "aboutUs": "Über uns",
-      "contactUs": "Kontakt",
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Bedingungen",
-      "privacy": "Datenschutz",
+      "terms": "Terms",
+      "privacy": "Privacy",
       "sitemap": "Sitemap"
     },
     "common": {
@@ -168,15 +168,15 @@
   "it": {
     "nav": {
       "home": "Home",
-      "practice": "Pratica",
-      "formulas": "Formule",
-      "aboutUs": "Chi Siamo",
-      "contactUs": "Contatti",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Termini",
+      "terms": "Terms",
       "privacy": "Privacy",
-      "sitemap": "Mappa del sito"
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Leggi articolo",
@@ -193,16 +193,16 @@
   },
   "pt": {
     "nav": {
-      "home": "Início",
-      "practice": "Prática",
-      "formulas": "Fórmulas",
-      "aboutUs": "Sobre Nós",
-      "contactUs": "Contato",
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Termos",
-      "privacy": "Privacidade",
-      "sitemap": "Mapa do site"
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Ler artigo",
@@ -219,16 +219,16 @@
   },
   "bn": {
     "nav": {
-      "home": "হোম",
-      "practice": "অনুশীলন",
-      "formulas": "সূত্র",
-      "aboutUs": "আমাদের সম্পর্কে",
-      "contactUs": "যোগাযোগ",
-      "blog": "ব্লগ",
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
+      "blog": "Blog",
       "faq": "FAQ",
-      "terms": "শর্তাবলী",
-      "privacy": "গোপনীয়তা",
-      "sitemap": "সাইটম্যাপ"
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "নিবন্ধ পড়ুন",
@@ -236,7 +236,7 @@
       "next": "পরবর্তী",
       "page": "পৃষ্ঠা",
       "of": "এর",
-      "results": "ফলাফল",
+      "results": "ফलाफल",
       "switchLanguage": "ভাষা"
     },
     "footer": {
@@ -245,16 +245,16 @@
   },
   "ja": {
     "nav": {
-      "home": "ホーム",
-      "practice": "練習",
-      "formulas": "公式",
-      "aboutUs": "私たちについて",
-      "contactUs": "お問い合わせ",
-      "blog": "ブログ",
-      "faq": "よくある質問",
-      "terms": "規約",
-      "privacy": "プライバシー",
-      "sitemap": "サイトマップ"
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "記事を読む",
@@ -271,16 +271,16 @@
   },
   "ko": {
     "nav": {
-      "home": "홈",
-      "practice": "연습",
-      "formulas": "공식",
-      "aboutUs": "소개",
-      "contactUs": "문의하기",
-      "blog": "블로그",
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
+      "blog": "Blog",
       "faq": "FAQ",
-      "terms": "약관",
-      "privacy": "개인정보",
-      "sitemap": "사이트맵"
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "기사 읽기",
@@ -297,16 +297,16 @@
   },
   "ms": {
     "nav": {
-      "home": "Utama",
-      "practice": "Latihan",
-      "formulas": "Formula",
-      "aboutUs": "Tentang Kami",
-      "contactUs": "Hubungi Kami",
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Terma",
-      "privacy": "Privasi",
-      "sitemap": "Peta Laman"
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Baca artikel",
@@ -323,16 +323,16 @@
   },
   "pl": {
     "nav": {
-      "home": "Główna",
-      "practice": "Praktyka",
-      "formulas": "Wzory",
-      "aboutUs": "O nas",
-      "contactUs": "Kontakt",
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Regulamin",
-      "privacy": "Prywatność",
-      "sitemap": "Mapa strony"
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Czytaj artykuł",
@@ -349,16 +349,16 @@
   },
   "id": {
     "nav": {
-      "home": "Beranda",
-      "practice": "Latihan",
-      "formulas": "Rumus",
-      "aboutUs": "Tentang Kami",
-      "contactUs": "Hubungi Kami",
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Ketentuan",
-      "privacy": "Privasi",
-      "sitemap": "Peta situs"
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Baca artikel",
@@ -375,16 +375,16 @@
   },
   "ar": {
     "nav": {
-      "home": "الرئيسية",
-      "practice": "تدريب",
-      "formulas": "صيغ",
-      "aboutUs": "من نحن",
-      "contactUs": "اتصل بنا",
-      "blog": "مدونة",
-      "faq": "الأسئلة الشائعة",
-      "terms": "الشروط",
-      "privacy": "الخصوصية",
-      "sitemap": "خريطة الموقع"
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "اقرأ المقال",
@@ -401,16 +401,16 @@
   },
   "bg": {
     "nav": {
-      "home": "Начало",
-      "practice": "Практика",
-      "formulas": "Формули",
-      "aboutUs": "За нас",
-      "contactUs": "Контакт",
-      "blog": "Блог",
-      "faq": "ЧЗВ",
-      "terms": "Условия",
-      "privacy": "Поверителност",
-      "sitemap": "Карта на сайта"
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Прочети статията",
@@ -427,16 +427,16 @@
   },
   "tr": {
     "nav": {
-      "home": "Ana Sayfa",
-      "practice": "Pratik",
-      "formulas": "Formüller",
-      "aboutUs": "Hakkımızda",
-      "contactUs": "İletişim",
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
       "blog": "Blog",
-      "faq": "SSS",
-      "terms": "Şartlar",
-      "privacy": "Gizlilik",
-      "sitemap": "Site Haritası"
+      "faq": "FAQ",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Makaleyi oku",
@@ -453,16 +453,16 @@
   },
   "sv": {
     "nav": {
-      "home": "Hem",
-      "practice": "Träna",
-      "formulas": "Formler",
-      "aboutUs": "Om oss",
-      "contactUs": "Kontakt",
-      "blog": "Blogg",
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
+      "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Villkor",
-      "privacy": "Integritet",
-      "sitemap": "Webbplatskarta"
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Läs artikel",
@@ -479,16 +479,16 @@
   },
   "zh": {
     "nav": {
-      "home": "首页",
-      "practice": "练习",
-      "formulas": "公式",
-      "aboutUs": "关于我们",
-      "contactUs": "联系我们",
-      "blog": "博客",
-      "faq": "常见问题",
-      "terms": "条款",
-      "privacy": "隐私",
-      "sitemap": "网站地图"
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "阅读文章",

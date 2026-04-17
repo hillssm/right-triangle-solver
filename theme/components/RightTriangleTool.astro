@@ -1,13 +1,93 @@
----
 interface Props {
   heading: string;
   description: string;
+  labels?: {
+    sideA?: string;
+    sideB?: string;
+    hypotenuseC?: string;
+    angleA?: string;
+    angleB?: string;
+    angleMode?: string;
+    degree?: string;
+    radian?: string;
+    radianNote?: string;
+    solve?: string;
+    reset?: string;
+    copy?: string;
+    statusDefault?: string;
+    statusDescription?: string;
+    showFormulas?: string;
+    area?: string;
+    perimeter?: string;
+    altitude?: string;
+    semiperimeter?: string;
+    inradius?: string;
+    circumradius?: string;
+    segmentP?: string;
+    segmentQ?: string;
+    visualizationTitle?: string;
+    visualizationSub?: string;
+    visualizationBadge?: string;
+    ratioAC?: string;
+    ratioBC?: string;
+    tanA?: string;
+    solutionSteps?: string;
+    solutionStepsDefault?: string;
+    entered?: string;
+    computed?: string;
+    solvedFrom?: string;
+  }
 }
 
-const { heading, description } = Astro.props;
+const { heading, description, labels = {} } = Astro.props;
+
+// Default labels in English for fallback
+const l = {
+  sideA: labels.sideA ?? 'Side a',
+  sideB: labels.sideB ?? 'Side b',
+  hypotenuseC: labels.hypotenuseC ?? 'Hypotenuse c',
+  angleA: labels.angleA ?? 'Angle A',
+  angleB: labels.angleB ?? 'Angle B',
+  angleMode: labels.angleMode ?? 'Angle mode',
+  degree: labels.degree ?? 'Degree',
+  radian: labels.radian ?? 'Radian',
+  radianNote: labels.radianNote ?? 'Radian entries like pi/6 are supported.',
+  solve: labels.solve ?? 'Solve Triangle',
+  reset: labels.reset ?? 'Reset',
+  copy: labels.copy ?? 'Copy Results',
+  statusDefault: labels.statusDefault ?? 'Enter any 2 valid right-triangle values.',
+  statusDescription: labels.statusDescription ?? 'Solve sides, angles, and derived measures. View formulas and steps.',
+  showFormulas: labels.showFormulas ?? 'Show Formulas Used',
+  area: labels.area ?? 'Area',
+  perimeter: labels.perimeter ?? 'Perimeter',
+  altitude: labels.altitude ?? 'Altitude h',
+  semiperimeter: labels.semiperimeter ?? 'Semiperimeter s',
+  inradius: labels.inradius ?? 'Inradius r',
+  circumradius: labels.circumradius ?? 'Circumradius R',
+  segmentP: labels.segmentP ?? 'Segment p',
+  segmentQ: labels.segmentQ ?? 'Segment q',
+  visualizationTitle: labels.visualizationTitle ?? 'Live Visualization',
+  visualizationSub: labels.visualizationSub ?? 'Right Triangle Diagram',
+  visualizationBadge: labels.visualizationBadge ?? 'Scaled',
+  ratioAC: labels.ratioAC ?? 'a:c ratio',
+  ratioBC: labels.ratioBC ?? 'b:c ratio',
+  tanA: labels.tanA ?? 'tan(A)',
+  solutionSteps: labels.solutionSteps ?? 'Solution Steps',
+  solutionStepsDefault: labels.solutionStepsDefault ?? 'Enter exactly 2 values with at least one side.',
+  entered: labels.entered ?? 'entered',
+  computed: labels.computed ?? 'computed',
+  solvedFrom: labels.solvedFrom ?? 'Solved from'
+};
 ---
 
-<section class="section-shell h-full w-full min-w-0 justify-self-stretch" aria-labelledby="tool-heading" data-right-triangle-tool>
+<section 
+  class="section-shell h-full w-full min-w-0 justify-self-stretch" 
+  aria-labelledby="tool-heading" 
+  data-right-triangle-tool
+  data-label-entered={l.entered}
+  data-label-computed={l.computed}
+  data-label-solved-from={l.solvedFrom}
+>
   <div class="grid gap-6 sm:grid-cols-[1.1fr_0.9fr] lg:gap-8">
     <div>
       <h2 id="tool-heading" class="text-2xl sm:text-3xl">{heading}</h2>
@@ -16,7 +96,7 @@ const { heading, description } = Astro.props;
       <form class="mt-6 grid gap-4" data-triangle-form novalidate>
         <div class="grid gap-4 sm:grid-cols-2">
           <label class="grid gap-2 text-sm">
-            <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Side a</span>
+            <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">{l.sideA}</span>
             <div class="relative flex">
               <input class="input-shell flex-1 rounded-r-none border-r-0" type="text" inputmode="decimal" name="a" />
               <select name="a_unit" class="bg-surface-container border border-outline/30 rounded-r-lg px-2 text-[10px] sm:text-xs focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary w-24 sm:w-28 text-on-surface-variant truncate">
@@ -27,7 +107,7 @@ const { heading, description } = Astro.props;
           </label>
 
           <label class="grid gap-2 text-sm">
-            <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Side b</span>
+            <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">{l.sideB}</span>
             <div class="relative flex">
               <input class="input-shell flex-1 rounded-r-none border-r-0" type="text" inputmode="decimal" name="b" />
               <select name="b_unit" class="bg-surface-container border border-outline/30 rounded-r-lg px-2 text-[10px] sm:text-xs focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary w-24 sm:w-28 text-on-surface-variant truncate">
@@ -38,7 +118,7 @@ const { heading, description } = Astro.props;
           </label>
 
           <label class="grid gap-2 text-sm">
-            <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Hypotenuse c</span>
+            <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">{l.hypotenuseC}</span>
             <div class="relative flex">
               <input class="input-shell flex-1 rounded-r-none border-r-0" type="text" inputmode="decimal" name="c" />
               <select name="c_unit" class="bg-surface-container border border-outline/30 rounded-r-lg px-2 text-[10px] sm:text-xs focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary w-24 sm:w-28 text-on-surface-variant truncate">
@@ -49,52 +129,52 @@ const { heading, description } = Astro.props;
           </label>
 
           <label class="grid gap-2 text-sm">
-            <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Angle A</span>
+            <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">{l.angleA}</span>
             <input class="input-shell" type="text" inputmode="text" name="alpha" placeholder="" />
             <span class="min-h-[1rem] text-xs text-error" data-error-for="alpha"></span>
           </label>
 
           <label class="grid gap-2 text-sm sm:col-span-2">
-            <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Angle B</span>
+            <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">{l.angleB}</span>
             <input class="input-shell" type="text" inputmode="text" name="beta" placeholder="" />
             <span class="min-h-[1rem] text-xs text-error" data-error-for="beta"></span>
           </label>
         </div>
 
         <div class="flex flex-wrap items-center gap-2">
-          <span class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">Angle mode</span>
-          <button class="interactive-chip is-active" type="button" data-angle-mode-option="deg">Degree</button>
-          <button class="interactive-chip" type="button" data-angle-mode-option="rad">Radian</button>
-          <span class="text-xs text-on-surface-variant">Radian entries like pi/6 are supported.</span>
+          <span class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">{l.angleMode}</span>
+          <button class="interactive-chip is-active" type="button" data-angle-mode-option="deg">{l.degree}</button>
+          <button class="interactive-chip" type="button" data-angle-mode-option="rad">{l.radian}</button>
+          <span class="text-xs text-on-surface-variant">{l.radianNote}</span>
         </div>
 
 
         <div class="flex flex-wrap gap-3">
           <button class="btn-primary gap-2" type="submit">
             <span class="material-symbols-outlined text-base">play_arrow</span>
-            Solve Triangle
+            {l.solve}
           </button>
           <button class="btn-secondary gap-2" type="button" data-reset-btn>
             <span class="material-symbols-outlined text-base">refresh</span>
-            Reset
+            {l.reset}
           </button>
           <button class="btn-secondary gap-2" type="button" data-copy-btn>
             <span class="material-symbols-outlined text-base">content_copy</span>
-            Copy Results
+            {l.copy}
           </button>
         </div>
 
         <p class="text-sm text-on-surface-variant" role="status" aria-live="polite" data-tool-status>
-          Enter any 2 valid right-triangle values.
+          {l.statusDefault}
         </p>
-        <p class="text-xs text-on-surface-variant">Solve sides, angles, and derived measures. View formulas and steps.</p>
+        <p class="text-xs text-on-surface-variant">{l.statusDescription}</p>
 
         <details class="rounded-xl border border-outline-variant/20 bg-surface-container-lowest/70">
           <summary class="cursor-pointer px-4 py-3 font-label text-[10px] uppercase tracking-[0.2em] text-outline transition-colors hover:text-on-surface">
-            Show Formulas Used
+            {l.showFormulas}
           </summary>
           <ul class="space-y-2 px-4 pb-4 text-sm text-on-surface-variant" data-formula-list>
-            <li class="pl-1">Enter any 2 valid right-triangle values.</li>
+            <li class="pl-1">{l.statusDefault}</li>
           </ul>
         </details>
 
@@ -102,29 +182,29 @@ const { heading, description } = Astro.props;
       </form>
 
       <div class="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-        <div class="lux-data-cell"><div class="flex items-center justify-between gap-2"><span>Side a</span><span class="font-label text-[9px] uppercase tracking-[0.16em] text-outline" data-origin-a>-</span></div><strong data-result-a>-</strong></div>
-        <div class="lux-data-cell"><div class="flex items-center justify-between gap-2"><span>Side b</span><span class="font-label text-[9px] uppercase tracking-[0.16em] text-outline" data-origin-b>-</span></div><strong data-result-b>-</strong></div>
-        <div class="lux-data-cell"><div class="flex items-center justify-between gap-2"><span>Hypotenuse c</span><span class="font-label text-[9px] uppercase tracking-[0.16em] text-outline" data-origin-c>-</span></div><strong data-result-hypotenuse>-</strong></div>
-        <div class="lux-data-cell"><div class="flex items-center justify-between gap-2"><span>Angle A</span><span class="font-label text-[9px] uppercase tracking-[0.16em] text-outline" data-origin-alpha>-</span></div><strong data-result-angle-alpha>-</strong></div>
-        <div class="lux-data-cell"><div class="flex items-center justify-between gap-2"><span>Angle B</span><span class="font-label text-[9px] uppercase tracking-[0.16em] text-outline" data-origin-beta>-</span></div><strong data-result-angle-beta>-</strong></div>
-        <div class="lux-data-cell"><span>Area</span><strong data-result-area>-</strong></div>
-        <div class="lux-data-cell"><span>Perimeter</span><strong data-result-perimeter>-</strong></div>
-        <div class="lux-data-cell"><span>Altitude h</span><strong data-result-altitude>-</strong></div>
-        <div class="lux-data-cell"><span>Semiperimeter s</span><strong data-result-semiperimeter>-</strong></div>
-        <div class="lux-data-cell"><span>Inradius r</span><strong data-result-inradius>-</strong></div>
-        <div class="lux-data-cell"><span>Circumradius R</span><strong data-result-circumradius>-</strong></div>
-        <div class="lux-data-cell"><span>Segment p</span><strong data-result-segment-p>-</strong></div>
-        <div class="lux-data-cell"><span>Segment q</span><strong data-result-segment-q>-</strong></div>
+        <div class="lux-data-cell"><div class="flex items-center justify-between gap-2"><span>{l.sideA}</span><span class="font-label text-[9px] uppercase tracking-[0.16em] text-outline" data-origin-a>-</span></div><strong data-result-a>-</strong></div>
+        <div class="lux-data-cell"><div class="flex items-center justify-between gap-2"><span>{l.sideB}</span><span class="font-label text-[9px] uppercase tracking-[0.16em] text-outline" data-origin-b>-</span></div><strong data-result-b>-</strong></div>
+        <div class="lux-data-cell"><div class="flex items-center justify-between gap-2"><span>{l.hypotenuseC}</span><span class="font-label text-[9px] uppercase tracking-[0.16em] text-outline" data-origin-c>-</span></div><strong data-result-hypotenuse>-</strong></div>
+        <div class="lux-data-cell"><div class="flex items-center justify-between gap-2"><span>{l.angleA}</span><span class="font-label text-[9px] uppercase tracking-[0.16em] text-outline" data-origin-alpha>-</span></div><strong data-result-angle-alpha>-</strong></div>
+        <div class="lux-data-cell"><div class="flex items-center justify-between gap-2"><span>{l.angleB}</span><span class="font-label text-[9px] uppercase tracking-[0.16em] text-outline" data-origin-beta>-</span></div><strong data-result-angle-beta>-</strong></div>
+        <div class="lux-data-cell"><span>{l.area}</span><strong data-result-area>-</strong></div>
+        <div class="lux-data-cell"><span>{l.perimeter}</span><strong data-result-perimeter>-</strong></div>
+        <div class="lux-data-cell"><span>{l.altitude}</span><strong data-result-altitude>-</strong></div>
+        <div class="lux-data-cell"><span>{l.semiperimeter}</span><strong data-result-semiperimeter>-</strong></div>
+        <div class="lux-data-cell"><span>{l.inradius}</span><strong data-result-inradius>-</strong></div>
+        <div class="lux-data-cell"><span>{l.circumradius}</span><strong data-result-circumradius>-</strong></div>
+        <div class="lux-data-cell"><span>{l.segmentP}</span><strong data-result-segment-p>-</strong></div>
+        <div class="lux-data-cell"><span>{l.segmentQ}</span><strong data-result-segment-q>-</strong></div>
       </div>
     </div>
 
     <article class="surface-card border-outline-variant/65 bg-surface-container-low p-4 sm:p-6">
       <div class="flex items-center justify-between gap-3">
         <div>
-          <p class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Live Visualization</p>
-          <h3 class="mt-2 text-xl text-on-surface">Right Triangle Diagram</h3>
+          <p class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">{l.visualizationTitle}</p>
+          <h3 class="mt-2 text-xl text-on-surface">{l.visualizationSub}</h3>
         </div>
-        <div class="rounded-lg border border-primary/30 bg-primary-fixed px-3 py-1 text-[10px] font-label uppercase tracking-[0.2em] text-[#261900]">Scaled</div>
+        <div class="rounded-lg border border-primary/30 bg-primary-fixed px-3 py-1 text-[10px] font-label uppercase tracking-[0.2em] text-[#261900]">{l.visualizationBadge}</div>
       </div>
 
       <div class="relative mt-5 overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-lowest/70 p-4 sm:p-6">
@@ -152,21 +232,21 @@ const { heading, description } = Astro.props;
       </div>
 
       <div class="mt-5 grid gap-3 sm:grid-cols-3">
-        <div class="rounded-lg border border-outline-variant/20 bg-surface-container-lowest/70 p-3"><p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">a:c ratio</p><p class="mt-2 font-mono text-sm text-on-surface" data-result-ratio-a>-</p></div>
-        <div class="rounded-lg border border-outline-variant/20 bg-surface-container-lowest/70 p-3"><p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">b:c ratio</p><p class="mt-2 font-mono text-sm text-on-surface" data-result-ratio-b>-</p></div>
-        <div class="rounded-lg border border-outline-variant/20 bg-surface-container-lowest/70 p-3"><p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">tan(A)</p><p class="mt-2 font-mono text-sm text-on-surface" data-result-tangent>-</p></div>
+        <div class="rounded-lg border border-outline-variant/20 bg-surface-container-lowest/70 p-3"><p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">{l.ratioAC}</p><p class="mt-2 font-mono text-sm text-on-surface" data-result-ratio-a>-</p></div>
+        <div class="rounded-lg border border-outline-variant/20 bg-surface-container-lowest/70 p-3"><p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">{l.ratioBC}</p><p class="mt-2 font-mono text-sm text-on-surface" data-result-ratio-b>-</p></div>
+        <div class="rounded-lg border border-outline-variant/20 bg-surface-container-lowest/70 p-3"><p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline">{l.tanA}</p><p class="mt-2 font-mono text-sm text-on-surface" data-result-tangent>-</p></div>
       </div>
 
       <div class="mt-8 border-t border-outline-variant/30 pt-6">
         <div class="flex items-center gap-3">
           <div class="h-1.5 w-1.5 rounded-full bg-primary/70"></div>
-          <h3 class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Solution Steps</h3>
+          <h3 class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">{l.solutionSteps}</h3>
         </div>
         <div class="mt-4 space-y-4">
           <ol class="grid gap-3" data-step-list>
             <li class="rounded-xl border border-outline-variant/10 bg-surface-container-lowest/40 p-3 text-sm text-on-surface-variant transition-colors hover:border-primary/20 hover:bg-surface-container-lowest/60">
               <span class="mr-2 font-mono text-[10px] text-primary/60">01</span>
-              Enter exactly 2 values with at least one side.
+              {l.solutionStepsDefault}
             </li>
           </ol>
         </div>
@@ -338,10 +418,14 @@ const { heading, description } = Astro.props;
           for (const key of CALCULATOR_INPUT_KEYS) setFieldError(key, '');
         };
 
+        const labelEntered = section.getAttribute('data-label-entered') || 'entered';
+        const labelComputed = section.getAttribute('data-label-computed') || 'computed';
+        const labelSolvedFrom = section.getAttribute('data-label-solved-from') || 'Solved from';
+
         const setOriginState = (provided: CalculatorInputKey[] | null) => {
           for (const key of CALCULATOR_INPUT_KEYS) {
             const entered = provided ? provided.includes(key) : false;
-            origins[key].textContent = provided ? (entered ? 'entered' : 'computed') : '-';
+            origins[key].textContent = provided ? (entered ? labelEntered : labelComputed) : '-';
             origins[key].classList.toggle('text-primary', entered);
             origins[key].classList.toggle('text-outline', !entered);
           }
@@ -431,11 +515,11 @@ const { heading, description } = Astro.props;
         r.area.textContent = formatWithUnit(solution.area, unit, 4, true);
         r.perimeter.textContent = formatWithUnit(solution.perimeter, unit);
         r.h.textContent = formatWithUnit(solution.h, unit);
-        r.s.textContent = formatWithUnit(solution.semiperimeter, unit);
-        r.r.textContent = formatWithUnit(solution.inradius, unit);
-        r.R.textContent = formatWithUnit(solution.circumradius, unit);
-        r.p.textContent = formatWithUnit(solution.segmentP, unit);
-        r.q.textContent = formatWithUnit(solution.segmentQ, unit);
+        r.s.textContent = formatWithUnit(lastSolution.semiperimeter, unit);
+        r.r.textContent = formatWithUnit(lastSolution.inradius, unit);
+        r.R.textContent = formatWithUnit(lastSolution.circumradius, unit);
+        r.p.textContent = formatWithUnit(lastSolution.segmentP, unit);
+        r.q.textContent = formatWithUnit(lastSolution.segmentQ, unit);
         r.ratioA.textContent = formatNumber(solution.ratioA);
         r.ratioB.textContent = formatNumber(solution.ratioB);
         r.tanA.textContent = formatNumber(solution.tangentAlpha);
@@ -552,7 +636,7 @@ const { heading, description } = Astro.props;
             const solution = calculateRightTriangle(values, angleMode);
             renderSolution(solution);
             const readableCase = solution.combination.replace('+', ' + ').replace('alpha', 'A').replace('beta', 'B');
-            setStatus(`Solved from ${readableCase}.`, false);
+            setStatus(`${labelSolvedFrom} ${readableCase}.`, false);
           } catch (error) {
             const msg = error instanceof Error ? error.message : 'Unable to solve with these inputs.';
             const lowMsg = msg.toLowerCase();

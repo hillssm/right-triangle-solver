@@ -86,7 +86,6 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
       ]
     }
   },
-
   // ============================
   // AREA & GEOMETRY
   // ============================
@@ -107,33 +106,6 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
         { key: 'b', label: 'Leg b', min: 0 }
       ]
     }
-  },
-  {
-    slug: 'area-from-hypotenuse-and-altitude',
-    title: 'Area from Base & Height',
-    category: 'Area & Geometry',
-    expression: '\\text{Area} = \\frac{1}{2} \\times c \\times h',
-    description: 'Calculate the area using the hypotenuse as the base and the corresponding altitude as the height.',
-    variables: ['c = hypotenuse (base)', 'h = altitude (height)'],
-    notes: ['Standard triangle area formula: base × height / 2.']
-  },
-  {
-    slug: 'area-angle-a',
-    title: 'Area from Angle A',
-    category: 'Area & Geometry',
-    expression: '\\text{Area} = \\frac{1}{2} b c \\sin(A)',
-    description: 'Calculate area using two sides and the included angle (A).',
-    variables: ['b = leg', 'c = hypotenuse', 'A = included angle'],
-    notes: ['Works for any triangle, specifying angle A in this context.']
-  },
-  {
-    slug: 'area-angle-b',
-    title: 'Area from Angle B',
-    category: 'Area & Geometry',
-    expression: '\\text{Area} = \\frac{1}{2} a c \\sin(B)',
-    description: 'Calculate area using two sides and the included angle (B).',
-    variables: ['a = leg', 'c = hypotenuse', 'B = included angle'],
-    notes: ['Works for any triangle, specifying angle B in this context.']
   },
   {
     slug: 'perimeter',
@@ -173,18 +145,8 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
       ]
     }
   },
-  {
-    slug: 'area-semiperimeter',
-    title: 'Area from Semiperimeter',
-    category: 'Area & Geometry',
-    expression: '\\text{Area} = r \\times s',
-    description: 'Calculate the area of a triangle by multiplying its inradius and semiperimeter.',
-    variables: ['r = inradius', 's = semiperimeter'],
-    notes: ['This identity applies to all polygons that have an inscribed circle.']
-  },
-
   // ============================
-  // TRIGONOMETRY
+  // TRIGONOMETRY (Originals & Inverse)
   // ============================
   {
     slug: 'sine-ratio',
@@ -291,108 +253,8 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
       ]
     }
   },
-  {
-    slug: 'cotangent-ratio',
-    title: 'Cotangent Ratio',
-    category: 'Trigonometry',
-    expression: '\\cot(A) = \\frac{b}{a}',
-    description: 'Cotangent is the reciprocal of tangent. Adjacent over opposite.',
-    variables: ['A = acute angle', 'a = opposite leg', 'b = adjacent leg'],
-    notes: ['Require a > 0.']
-  },
-  {
-    slug: 'secant-ratio',
-    title: 'Secant Ratio',
-    category: 'Trigonometry',
-    expression: '\\sec(A) = \\frac{c}{b}',
-    description: 'Secant is the reciprocal of cosine. Hypotenuse over adjacent.',
-    variables: ['A = acute angle', 'b = adjacent leg', 'c = hypotenuse'],
-    notes: ['Require b > 0.']
-  },
-  {
-    slug: 'cosecant-ratio',
-    title: 'Cosecant Ratio',
-    category: 'Trigonometry',
-    expression: '\\csc(A) = \\frac{c}{a}',
-    description: 'Cosecant is the reciprocal of sine. Hypotenuse over opposite.',
-    variables: ['A = acute angle', 'a = opposite leg', 'c = hypotenuse'],
-    notes: ['Require a > 0.']
-  },
-  {
-    slug: 'leg-a-sine',
-    title: 'Leg a from Sine',
-    category: 'Trigonometry',
-    expression: 'a = c \\sin(A)',
-    description: 'Find leg a using the hypotenuse and the sine of angle A.',
-    variables: ['a = leg', 'c = hypotenuse', 'A = acute angle'],
-    notes: ['Useful when working with vectors or generic trigonometry.']
-  },
-  {
-    slug: 'leg-b-cosine',
-    title: 'Leg b from Cosine',
-    category: 'Trigonometry',
-    expression: 'b = c \\cos(A)',
-    description: 'Find leg b using the hypotenuse and the cosine of angle A.',
-    variables: ['b = leg', 'c = hypotenuse', 'A = acute angle'],
-    notes: ['Useful when projecting the hypotenuse.']
-  },
-  {
-    slug: 'leg-a-tangent',
-    title: 'Leg a from Tangent',
-    category: 'Trigonometry',
-    expression: 'a = b \\tan(A)',
-    description: 'Find leg a using leg b and the tangent of angle A.',
-    variables: ['a = opposite leg', 'b = adjacent leg', 'A = acute angle'],
-    notes: ['Often used in height measurements from shadows.']
-  },
-  {
-    slug: 'leg-b-tangent',
-    title: 'Leg b from Tangent',
-    category: 'Trigonometry',
-    expression: 'b = \\frac{a}{\\tan(A)}',
-    description: 'Find leg b using leg a and the tangent of angle A.',
-    variables: ['a = opposite leg', 'b = adjacent leg', 'A = acute angle'],
-    notes: ['Alternative form: b = a * cot(A).']
-  },
-  {
-    slug: 'pythagorean-identity',
-    title: 'Pythagorean Identity',
-    category: 'Trigonometry',
-    expression: '\\sin^2(A) + \\cos^2(A) = 1',
-    description: 'The fundamental trigonometric identity relating sine and cosine.',
-    variables: ['A = angle'],
-    notes: ['Works for any angle, derived directly from the Pythagorean theorem on the unit circle.']
-  },
-  {
-    slug: 'tangent-identity',
-    title: 'Tangent Identity',
-    category: 'Trigonometry',
-    expression: '\\tan(A) = \\frac{\\sin(A)}{\\cos(A)}',
-    description: 'Tangent expressed as the ratio of sine to cosine.',
-    variables: ['A = angle'],
-    notes: ['Fundamental identity linking the three primary trigonometric functions.']
-  },
-  {
-    slug: 'complementary-angles-sum',
-    title: 'Complementary Angles Sum',
-    category: 'Trigonometry',
-    expression: 'A + B = 90^\\circ',
-    description: 'The two acute angles in a right triangle sum to 90 degrees.',
-    variables: ['A = acute angle', 'B = acute angle'],
-    notes: ['The third angle is exactly 90°.']
-  },
-  {
-    slug: 'find-angle-b',
-    title: 'Find Angle B',
-    category: 'Trigonometry',
-    expression: 'B = 90^\\circ - A',
-    description: 'Solve for angle B knowing angle A.',
-    variables: ['A = known acute angle', 'B = remaining acute angle'],
-    notes: ['If A is in radians, use B = (π / 2) - A.']
-  },
-
   // ============================
-  // ADVANCED RELATIONS
+  // ADVANCED RELATIONS (Original)
   // ============================
   {
     slug: 'altitude-to-hypotenuse',
@@ -412,15 +274,6 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
         { key: 'c', label: 'Hypotenuse c', min: 0 }
       ]
     }
-  },
-  {
-    slug: 'altitude-geometric-mean',
-    title: 'Altitude Geometric Mean',
-    category: 'Advanced Relations',
-    expression: 'h^2 = p \\times q',
-    description: 'The altitude is the geometric mean of the two hypotenuse segments.',
-    variables: ['h = altitude', 'p = hypotenuse segment', 'q = hypotenuse segment'],
-    notes: ['Derived from similar right triangles formed by the altitude.']
   },
   {
     slug: 'projection-of-a-on-hypotenuse',
@@ -459,33 +312,6 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     }
   },
   {
-    slug: 'leg-a-projection',
-    title: 'Leg a Projection',
-    category: 'Advanced Relations',
-    expression: 'a^2 = c \\times p',
-    description: 'Leg a squared is the product of the hypotenuse and the adjacent segment p.',
-    variables: ['a = leg', 'c = hypotenuse', 'p = projection segment'],
-    notes: ['Derived from geometric mean theorems.']
-  },
-  {
-    slug: 'leg-b-projection',
-    title: 'Leg b Projection',
-    category: 'Advanced Relations',
-    expression: 'b^2 = c \\times q',
-    description: 'Leg b squared is the product of the hypotenuse and the adjacent segment q.',
-    variables: ['b = leg', 'c = hypotenuse', 'q = projection segment'],
-    notes: ['Derived from geometric mean theorems.']
-  },
-  {
-    slug: 'hypotenuse-segments-sum',
-    title: 'Hypotenuse Segments Sum',
-    category: 'Advanced Relations',
-    expression: 'p + q = c',
-    description: 'The hypotenuse is exactly the sum of its two projections p and q.',
-    variables: ['p = segment of hypotenuse', 'q = segment of hypotenuse', 'c = total hypotenuse'],
-    notes: ['Segments p and q are created by drawing the altitude to the hypotenuse.']
-  },
-  {
     slug: 'inradius',
     title: 'Inradius',
     category: 'Advanced Relations',
@@ -515,43 +341,261 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
   },
 
   // ============================
-  // SPECIAL TRIANGLES
+  // USER'S 26 EXACT NEW FORMULAS
   // ============================
+
+  // TRIG EXPANSIONS
   {
-    slug: '45-45-90-hypotenuse',
-    title: '45-45-90: Hypotenuse',
+    slug: 'cotangent-exact',
+    title: 'Cotangent Ratio',
+    category: 'Trigonometry',
+    expression: '\\cot(A) = \\frac{b}{a}',
+    description: 'Cotangent is the reciprocal of tangent. Adjacent over opposite.',
+    variables: ['A = acute angle', 'a = opposite leg', 'b = adjacent leg'],
+    notes: ['Require a > 0.']
+  },
+  {
+    slug: 'secant-exact',
+    title: 'Secant Ratio',
+    category: 'Trigonometry',
+    expression: '\\sec(A) = \\frac{c}{b}',
+    description: 'Secant is the reciprocal of cosine. Hypotenuse over adjacent.',
+    variables: ['A = acute angle', 'b = adjacent leg', 'c = hypotenuse'],
+    notes: ['Require b > 0.']
+  },
+  {
+    slug: 'cosecant-exact',
+    title: 'Cosecant Ratio',
+    category: 'Trigonometry',
+    expression: '\\csc(A) = \\frac{c}{a}',
+    description: 'Cosecant is the reciprocal of sine. Hypotenuse over opposite.',
+    variables: ['A = acute angle', 'a = opposite leg', 'c = hypotenuse'],
+    notes: ['Require a > 0.']
+  },
+
+  // TRIG → SIDE
+  {
+    slug: 'a-c-sin',
+    title: 'Leg a from Sine',
+    category: 'Trigonometry',
+    expression: 'a = c \\cdot \\sin(A)',
+    description: 'Find leg a using hypotenuse and the sine of A.',
+    variables: ['a = leg', 'c = hypotenuse', 'A = acute angle'],
+    notes: []
+  },
+  {
+    slug: 'b-c-cos',
+    title: 'Leg b from Cosine',
+    category: 'Trigonometry',
+    expression: 'b = c \\cdot \\cos(A)',
+    description: 'Find leg b using hypotenuse and the cosine of A.',
+    variables: ['b = leg', 'c = hypotenuse', 'A = acute angle'],
+    notes: []
+  },
+  {
+    slug: 'a-b-tan',
+    title: 'Leg a from Tangent',
+    category: 'Trigonometry',
+    expression: 'a = b \\cdot \\tan(A)',
+    description: 'Find leg a using leg b and the tangent of A.',
+    variables: ['a = opposite leg', 'b = adjacent leg', 'A = acute angle'],
+    notes: []
+  },
+  {
+    slug: 'b-a-tan',
+    title: 'Leg b from Tangent',
+    category: 'Trigonometry',
+    expression: 'b = \\frac{a}{\\tan(A)}',
+    description: 'Find leg b using leg a and the tangent of A.',
+    variables: ['a = opposite leg', 'b = adjacent leg', 'A = acute angle'],
+    notes: []
+  },
+
+  // ANGLE RELATIONS
+  {
+    slug: 'angle-sum-exact',
+    title: 'Angle Sum',
+    category: 'Trigonometry',
+    expression: 'A + B = 90^\\circ',
+    description: 'Acute angles sum to 90 degrees.',
+    variables: ['A = acute angle', 'B = acute angle'],
+    notes: []
+  },
+  {
+    slug: 'angle-b-exact',
+    title: 'Angle B',
+    category: 'Trigonometry',
+    expression: 'B = 90^\\circ - A',
+    description: 'Finding angle B from angle A.',
+    variables: ['A = acute angle', 'B = acute angle'],
+    notes: []
+  },
+
+  // AREA VARIATIONS
+  {
+    slug: 'area-sin-a',
+    title: 'Area Variation (Angle A)',
+    category: 'Area & Geometry',
+    expression: '\\text{Area} = \\frac{1}{2} b c \\sin(A)',
+    description: 'Calculate area using two sides and the included angle A.',
+    variables: ['b = leaf', 'c = hypotenuse', 'A = included angle'],
+    notes: []
+  },
+  {
+    slug: 'area-sin-b',
+    title: 'Area Variation (Angle B)',
+    category: 'Area & Geometry',
+    expression: '\\text{Area} = \\frac{1}{2} a c \\sin(B)',
+    description: 'Calculate area using two sides and the included angle B.',
+    variables: ['a = leg', 'c = hypotenuse', 'B = included angle'],
+    notes: []
+  },
+
+  // SEMIPERIMETER
+  {
+    slug: 'area-rs',
+    title: 'Area from Semiperimeter',
+    category: 'Area & Geometry',
+    expression: '\\text{Area} = r \\times s',
+    description: 'Area using inradius and semiperimeter.',
+    variables: ['r = inradius', 's = semiperimeter'],
+    notes: []
+  },
+
+  // ALTITUDE RELATIONS
+  {
+    slug: 'alt-rel-h',
+    title: 'Altitude Relation h',
+    category: 'Advanced Relations',
+    expression: 'h = \\frac{a \\times b}{c}',
+    description: 'Altitude using legs and hypotenuse.',
+    variables: ['a = leg', 'b = leg', 'c = hypotenuse', 'h = altitude'],
+    notes: []
+  },
+  {
+    slug: 'area-ch',
+    title: 'Area Variation (Altitude)',
+    category: 'Area & Geometry',
+    expression: '\\text{Area} = \\frac{1}{2} c h',
+    description: 'Area using hypotenuse and altitude.',
+    variables: ['c = hypotenuse', 'h = altitude'],
+    notes: []
+  },
+  {
+    slug: 'h-sq-pq',
+    title: 'Altitude squared',
+    category: 'Advanced Relations',
+    expression: 'h^2 = p \\times q',
+    description: 'Altitude geometric mean theorem.',
+    variables: ['h = altitude', 'p = projection', 'q = projection'],
+    notes: []
+  },
+
+  // HYPOTENUSE PROJECTIONS
+  {
+    slug: 'a-sq-cp',
+    title: 'Leg a squared projection',
+    category: 'Advanced Relations',
+    expression: 'a^2 = c \\times p',
+    description: 'Leg a projection theorem.',
+    variables: ['a = leg', 'c = hypotenuse', 'p = projection p'],
+    notes: []
+  },
+  {
+    slug: 'b-sq-cq',
+    title: 'Leg b squared projection',
+    category: 'Advanced Relations',
+    expression: 'b^2 = c \\times q',
+    description: 'Leg b projection theorem.',
+    variables: ['b = leg', 'c = hypotenuse', 'q = projection q'],
+    notes: []
+  },
+  {
+    slug: 'pq-c',
+    title: 'Projections sum to c',
+    category: 'Advanced Relations',
+    expression: 'p + q = c',
+    description: 'The sum of the projections equals the hypotenuse.',
+    variables: ['p = projection p', 'q = projection q', 'c = hypotenuse'],
+    notes: []
+  },
+
+  // RADIUS RELATIONS
+  {
+    slug: 'radius-r',
+    title: 'Radius Relation r',
+    category: 'Advanced Relations',
+    expression: 'r = \\frac{a + b - c}{2}',
+    description: 'Inradius of a right triangle.',
+    variables: ['a, b = legs', 'c = hypotenuse', 'r = inradius'],
+    notes: []
+  },
+  {
+    slug: 'radius-R-cap',
+    title: 'Radius Relation R',
+    category: 'Advanced Relations',
+    expression: 'R = \\frac{c}{2}',
+    description: 'Circumradius of a right triangle.',
+    variables: ['c = hypotenuse', 'R = circumradius'],
+    notes: []
+  },
+
+  // TRIG IDENTITIES
+  {
+    slug: 'sin2-cos2',
+    title: 'Pythagorean Identity',
+    category: 'Trigonometry',
+    expression: '\\sin^2(A) + \\cos^2(A) = 1',
+    description: 'Fundamental trigonometric identity.',
+    variables: ['A = angle'],
+    notes: []
+  },
+  {
+    slug: 'tan-sin-cos',
+    title: 'Tangent Identity',
+    category: 'Trigonometry',
+    expression: '\\tan(A) = \\frac{\\sin(A)}{\\cos(A)}',
+    description: 'Tangent as the ratio of sine to cosine.',
+    variables: ['A = angle'],
+    notes: []
+  },
+
+  // SPECIAL TRIANGLES
+  {
+    slug: 'c-a-rt2',
+    title: '45-45-90: c',
     category: 'Special Triangles',
     expression: 'c = a \\sqrt{2}',
-    description: 'In an isosceles right triangle, the hypotenuse is √2 times the leg.',
+    description: 'Hypotenuse of a 45-45-90 triangle.',
     variables: ['a = leg', 'c = hypotenuse'],
-    notes: ['Legs are equal (a = b).']
+    notes: []
   },
   {
-    slug: '45-45-90-leg',
-    title: '45-45-90: Leg',
+    slug: 'a-c-rt2',
+    title: '45-45-90: a',
     category: 'Special Triangles',
     expression: 'a = \\frac{c}{\\sqrt{2}}',
-    description: 'In an isosceles right triangle, a leg is hypotenuse divided by √2.',
+    description: 'Leg of a 45-45-90 triangle.',
     variables: ['c = hypotenuse', 'a = leg'],
-    notes: ['Or equivalently, a = (c * √2) / 2.']
+    notes: []
   },
   {
-    slug: '30-60-90-long-leg',
+    slug: 'long-a-rt3',
     title: '30-60-90: Long Leg',
     category: 'Special Triangles',
     expression: '\\text{long leg} = a \\sqrt{3}',
-    description: 'In a 30-60-90 triangle, the longer leg is √3 times the shorter leg a.',
-    variables: ['a = shorter leg (opposite 30°)', 'long leg = opposite 60°'],
-    notes: ['a is always the shortest side.']
+    description: 'Longer leg in a 30-60-90 triangle.',
+    variables: ['a = short leg'],
+    notes: []
   },
   {
-    slug: '30-60-90-hypotenuse',
-    title: '30-60-90: Hypotenuse',
+    slug: 'c-2a',
+    title: '30-60-90: c',
     category: 'Special Triangles',
     expression: 'c = 2a',
-    description: 'In a 30-60-90 triangle, the hypotenuse is twice the shorter leg.',
-    variables: ['a = shorter leg (opposite 30°)', 'c = hypotenuse'],
-    notes: ['The triangle is half of an equilateral triangle.']
+    description: 'Hypotenuse in a 30-60-90 triangle is twice the short leg.',
+    variables: ['a = short leg', 'c = hypotenuse'],
+    notes: []
   }
 ];
 

@@ -127,7 +127,8 @@ const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
       if (!form || !statusEl || !resultWrap || !labelEl || !valueEl || !detailEl || !stepsEl) return;
 
       const toNumber = (value) => Number.parseFloat(String(value));
-      const deg = (rad) => (rad * 180) / Math.PI;
+      const deg = (r) => (r * 180) / Math.PI;
+      const rad = (d) => (d * Math.PI) / 180;
       const format = (n, digits = 4) => Number(n).toFixed(digits).replace(/\.?0+$/, '');
 
       const parseInputs = () => {
@@ -368,8 +369,31 @@ const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
               ]
             };
           }
+          case 'cotangent': { requirePositive(v.a, v.b); const r = v.b/v.a; return { result: r, steps: [`cot(A) = b / a = ${format(r)}`] }; }
+          case 'secant': { requirePositive(v.b, v.c); const r = v.c/v.b; return { result: r, steps: [`sec(A) = c / b = ${format(r)}`] }; }
+          case 'cosecant': { requirePositive(v.a, v.c); const r = v.c/v.a; return { result: r, steps: [`csc(A) = c / a = ${format(r)}`] }; }
+          case 'leg_from_hc_sin': { requirePositive(v.c, v.A); const r = v.c * Math.sin(rad(v.A)); return { result: r, steps: [`a = c * sin(A) = ${v.c} * sin(${v.A}°) = ${format(r)}`] }; }
+          case 'leg_from_hc_cos': { requirePositive(v.c, v.A); const r = v.c * Math.cos(rad(v.A)); return { result: r, steps: [`b = c * cos(A) = ${v.c} * cos(${v.A}°) = ${format(r)}`] }; }
+          case 'leg_from_leg_tan': { requirePositive(v.b, v.A); const r = v.b * Math.tan(rad(v.A)); return { result: r, steps: [`a = b * tan(A) = ${v.b} * tan(${v.A}°) = ${format(r)}`] }; }
+          case 'leg_from_leg_tan_div': { requirePositive(v.a, v.A); const r = v.a / Math.tan(rad(v.A)); return { result: r, steps: [`b = a / tan(A) = ${v.a} / tan(${v.A}°) = ${format(r)}`] }; }
+          case 'angle_b_from_a': { requirePositive(v.A); const r = 90 - v.A; return { result: r, steps: [`B = 90° - A = 90 - ${v.A} = ${format(r)}`] }; }
+          case 'angle_a_from_b': { requirePositive(v.B); const r = 90 - v.B; return { result: r, steps: [`A = 90° - B = 90 - ${v.B} = ${format(r)}`] }; }
+          case 'area_sin_a': { requirePositive(v.b, v.c, v.A); const r = 0.5 * v.b * v.c * Math.sin(rad(v.A)); return { result: r, steps: [`Area = 0.5 * b * c * sin(A) = ${format(r)}`] }; }
+          case 'area_sin_b': { requirePositive(v.a, v.c, v.B); const r = 0.5 * v.a * v.c * Math.sin(rad(v.B)); return { result: r, steps: [`Area = 0.5 * a * c * sin(B) = ${format(r)}`] }; }
+          case 'area_rs': { requirePositive(v.r, v.s); const r = v.r * v.s; return { result: r, steps: [`Area = r * s = ${v.r} * ${v.s} = ${format(r)}`] }; }
+          case 'area_ch': { requirePositive(v.c, v.h); const r = 0.5 * v.c * v.h; return { result: r, steps: [`Area = 0.5 * c * h = ${format(r)}`] }; }
+          case 'altitude_pq': { requirePositive(v.p, v.q); const r = Math.sqrt(v.p * v.q); return { result: r, steps: [`h = sqrt(p * q) = sqrt(${v.p * v.q}) = ${format(r)}`] }; }
+          case 'leg_from_cp': { requirePositive(v.c, v.p); const r = Math.sqrt(v.c * v.p); return { result: r, steps: [`a = sqrt(c * p) = sqrt(${v.c * v.p}) = ${format(r)}`] }; }
+          case 'leg_from_cq': { requirePositive(v.c, v.q); const r = Math.sqrt(v.c * v.q); return { result: r, steps: [`b = sqrt(c * q) = sqrt(${v.c * v.q}) = ${format(r)}`] }; }
+          case 'hyp_from_pq': { requirePositive(v.p, v.q); const r = v.p + v.q; return { result: r, steps: [`c = p + q = ${v.p} + ${v.q} = ${format(r)}`] }; }
+          case 'identity_cos_from_sin': { requirePositive(v.sinA); const r = Math.sqrt(1 - (v.sinA * v.sinA)); return { result: r, steps: [`cos(A) = sqrt(1 - sin²(A)) = ${format(r)}`] }; }
+          case 'tan_from_sin_cos': { requirePositive(v.sinA, v.cosA); const r = v.sinA / v.cosA; return { result: r, steps: [`tan(A) = sin(A) / cos(A) = ${format(r)}`] }; }
+          case 'c_from_a_45': { requirePositive(v.a); const r = v.a * Math.SQRT2; return { result: r, steps: [`c = a * sqrt(2) = ${format(r)}`] }; }
+          case 'a_from_c_45': { requirePositive(v.c); const r = v.c / Math.SQRT2; return { result: r, steps: [`a = c / sqrt(2) = ${format(r)}`] }; }
+          case 'long_from_short_30': { requirePositive(v.a); const r = v.a * Math.sqrt(3); return { result: r, steps: [`long leg = a * sqrt(3) = ${format(r)}`] }; }
+          case 'c_from_a_30': { requirePositive(v.a); const r = v.a * 2; return { result: r, steps: [`c = 2 * a = ${v.a * 2}`] }; }
           default:
-            throw new Error('Calculator type is not configured.');
+            throw new Error(`Calculator type '${kind}' is not configured.`);
         }
       };
 

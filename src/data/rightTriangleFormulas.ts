@@ -352,7 +352,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: '\\cot(A) = \\frac{b}{a}',
     description: 'Cotangent is the reciprocal of tangent. Adjacent over opposite.',
     variables: ['A = acute angle', 'a = opposite leg', 'b = adjacent leg'],
-    notes: ['Require a > 0.']
+    notes: ['Require a > 0.'],
+    calculator: {
+      kind: 'cotangent', outputLabel: 'cot(A)',
+      fields: [{ key: 'b', label: 'Adjacent b', min: 0 }, { key: 'a', label: 'Opposite a', min: 0 }]
+    }
   },
   {
     slug: 'secant-exact',
@@ -361,7 +365,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: '\\sec(A) = \\frac{c}{b}',
     description: 'Secant is the reciprocal of cosine. Hypotenuse over adjacent.',
     variables: ['A = acute angle', 'b = adjacent leg', 'c = hypotenuse'],
-    notes: ['Require b > 0.']
+    notes: ['Require b > 0.'],
+    calculator: {
+      kind: 'secant', outputLabel: 'sec(A)',
+      fields: [{ key: 'c', label: 'Hypotenuse c', min: 0 }, { key: 'b', label: 'Adjacent b', min: 0 }]
+    }
   },
   {
     slug: 'cosecant-exact',
@@ -370,7 +378,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: '\\csc(A) = \\frac{c}{a}',
     description: 'Cosecant is the reciprocal of sine. Hypotenuse over opposite.',
     variables: ['A = acute angle', 'a = opposite leg', 'c = hypotenuse'],
-    notes: ['Require a > 0.']
+    notes: ['Require a > 0.'],
+    calculator: {
+      kind: 'cosecant', outputLabel: 'csc(A)',
+      fields: [{ key: 'c', label: 'Hypotenuse c', min: 0 }, { key: 'a', label: 'Opposite a', min: 0 }]
+    }
   },
 
   // TRIG → SIDE
@@ -381,7 +393,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: 'a = c \\cdot \\sin(A)',
     description: 'Find leg a using hypotenuse and the sine of A.',
     variables: ['a = leg', 'c = hypotenuse', 'A = acute angle'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'leg_from_hc_sin', outputLabel: 'Leg a', outputUnit: 'units',
+      fields: [{ key: 'c', label: 'Hypotenuse c', min: 0 }, { key: 'A', label: 'Angle A', min: 0 }]
+    }
   },
   {
     slug: 'b-c-cos',
@@ -390,7 +406,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: 'b = c \\cdot \\cos(A)',
     description: 'Find leg b using hypotenuse and the cosine of A.',
     variables: ['b = leg', 'c = hypotenuse', 'A = acute angle'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'leg_from_hc_cos', outputLabel: 'Leg b', outputUnit: 'units',
+      fields: [{ key: 'c', label: 'Hypotenuse c', min: 0 }, { key: 'A', label: 'Angle A (deg)', min: 0 }]
+    }
   },
   {
     slug: 'a-b-tan',
@@ -399,7 +419,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: 'a = b \\cdot \\tan(A)',
     description: 'Find leg a using leg b and the tangent of A.',
     variables: ['a = opposite leg', 'b = adjacent leg', 'A = acute angle'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'leg_from_leg_tan', outputLabel: 'Leg a', outputUnit: 'units',
+      fields: [{ key: 'b', label: 'Leg b', min: 0 }, { key: 'A', label: 'Angle A (deg)', min: 0 }]
+    }
   },
   {
     slug: 'b-a-tan',
@@ -408,7 +432,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: 'b = \\frac{a}{\\tan(A)}',
     description: 'Find leg b using leg a and the tangent of A.',
     variables: ['a = opposite leg', 'b = adjacent leg', 'A = acute angle'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'leg_from_leg_tan_div', outputLabel: 'Leg b', outputUnit: 'units',
+      fields: [{ key: 'a', label: 'Leg a', min: 0 }, { key: 'A', label: 'Angle A (deg)', min: 0 }]
+    }
   },
 
   // ANGLE RELATIONS
@@ -419,7 +447,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: 'A + B = 90^\\circ',
     description: 'Acute angles sum to 90 degrees.',
     variables: ['A = acute angle', 'B = acute angle'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'angle_b_from_a', outputLabel: 'Angle B', outputUnit: 'degrees',
+      fields: [{ key: 'A', label: 'Angle A (deg)', min: 0, unit: '°' }]
+    }
   },
   {
     slug: 'angle-b-exact',
@@ -428,7 +460,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: 'B = 90^\\circ - A',
     description: 'Finding angle B from angle A.',
     variables: ['A = acute angle', 'B = acute angle'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'angle_a_from_b', outputLabel: 'Angle A', outputUnit: 'degrees',
+      fields: [{ key: 'B', label: 'Angle B (deg)', min: 0, unit: '°' }]
+    }
   },
 
   // AREA VARIATIONS
@@ -438,8 +474,12 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     category: 'Area & Geometry',
     expression: '\\text{Area} = \\frac{1}{2} b c \\sin(A)',
     description: 'Calculate area using two sides and the included angle A.',
-    variables: ['b = leaf', 'c = hypotenuse', 'A = included angle'],
-    notes: []
+    variables: ['b = leg', 'c = hypotenuse', 'A = included angle'],
+    notes: [],
+    calculator: {
+      kind: 'area_sin_a', outputLabel: 'Area', outputUnit: 'sq units',
+      fields: [{ key: 'b', label: 'Leg b', min: 0 }, { key: 'c', label: 'Hypotenuse c', min: 0 }, { key: 'A', label: 'Angle A', min: 0 }]
+    }
   },
   {
     slug: 'area-sin-b',
@@ -448,7 +488,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: '\\text{Area} = \\frac{1}{2} a c \\sin(B)',
     description: 'Calculate area using two sides and the included angle B.',
     variables: ['a = leg', 'c = hypotenuse', 'B = included angle'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'area_sin_b', outputLabel: 'Area', outputUnit: 'sq units',
+      fields: [{ key: 'a', label: 'Leg a', min: 0 }, { key: 'c', label: 'Hypotenuse c', min: 0 }, { key: 'B', label: 'Angle B', min: 0 }]
+    }
   },
 
   // SEMIPERIMETER
@@ -459,7 +503,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: '\\text{Area} = r \\times s',
     description: 'Area using inradius and semiperimeter.',
     variables: ['r = inradius', 's = semiperimeter'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'area_rs', outputLabel: 'Area', outputUnit: 'sq units',
+      fields: [{ key: 'r', label: 'Inradius r', min: 0 }, { key: 's', label: 'Semiperimeter s', min: 0 }]
+    }
   },
 
   // ALTITUDE RELATIONS
@@ -470,7 +518,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: 'h = \\frac{a \\times b}{c}',
     description: 'Altitude using legs and hypotenuse.',
     variables: ['a = leg', 'b = leg', 'c = hypotenuse', 'h = altitude'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'altitude', outputLabel: 'Altitude h', outputUnit: 'units',
+      fields: [{ key: 'a', label: 'Leg a', min: 0 }, { key: 'b', label: 'Leg b', min: 0 }, { key: 'c', label: 'Hypotenuse c', min: 0 }]
+    }
   },
   {
     slug: 'area-ch',
@@ -479,7 +531,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: '\\text{Area} = \\frac{1}{2} c h',
     description: 'Area using hypotenuse and altitude.',
     variables: ['c = hypotenuse', 'h = altitude'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'area_ch', outputLabel: 'Area', outputUnit: 'sq units',
+      fields: [{ key: 'c', label: 'Hypotenuse c', min: 0 }, { key: 'h', label: 'Altitude h', min: 0 }]
+    }
   },
   {
     slug: 'h-sq-pq',
@@ -488,7 +544,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: 'h^2 = p \\times q',
     description: 'Altitude geometric mean theorem.',
     variables: ['h = altitude', 'p = projection', 'q = projection'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'altitude_pq', outputLabel: 'Altitude h', outputUnit: 'units',
+      fields: [{ key: 'p', label: 'Projection p', min: 0 }, { key: 'q', label: 'Projection q', min: 0 }]
+    }
   },
 
   // HYPOTENUSE PROJECTIONS
@@ -499,7 +559,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: 'a^2 = c \\times p',
     description: 'Leg a projection theorem.',
     variables: ['a = leg', 'c = hypotenuse', 'p = projection p'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'leg_from_cp', outputLabel: 'Leg a', outputUnit: 'units',
+      fields: [{ key: 'c', label: 'Hypotenuse c', min: 0 }, { key: 'p', label: 'Projection p', min: 0 }]
+    }
   },
   {
     slug: 'b-sq-cq',
@@ -508,7 +572,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: 'b^2 = c \\times q',
     description: 'Leg b projection theorem.',
     variables: ['b = leg', 'c = hypotenuse', 'q = projection q'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'leg_from_cq', outputLabel: 'Leg b', outputUnit: 'units',
+      fields: [{ key: 'c', label: 'Hypotenuse c', min: 0 }, { key: 'q', label: 'Projection q', min: 0 }]
+    }
   },
   {
     slug: 'pq-c',
@@ -517,7 +585,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: 'p + q = c',
     description: 'The sum of the projections equals the hypotenuse.',
     variables: ['p = projection p', 'q = projection q', 'c = hypotenuse'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'hyp_from_pq', outputLabel: 'Hypotenuse c', outputUnit: 'units',
+      fields: [{ key: 'p', label: 'Projection p', min: 0 }, { key: 'q', label: 'Projection q', min: 0 }]
+    }
   },
 
   // RADIUS RELATIONS
@@ -528,7 +600,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: 'r = \\frac{a + b - c}{2}',
     description: 'Inradius of a right triangle.',
     variables: ['a, b = legs', 'c = hypotenuse', 'r = inradius'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'inradius', outputLabel: 'Inradius r', outputUnit: 'units',
+      fields: [{ key: 'a', label: 'Leg a', min: 0 }, { key: 'b', label: 'Leg b', min: 0 }, { key: 'c', label: 'Hypotenuse c', min: 0 }]
+    }
   },
   {
     slug: 'radius-R-cap',
@@ -537,7 +613,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: 'R = \\frac{c}{2}',
     description: 'Circumradius of a right triangle.',
     variables: ['c = hypotenuse', 'R = circumradius'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'circumradius', outputLabel: 'Circumradius R', outputUnit: 'units',
+      fields: [{ key: 'c', label: 'Hypotenuse c', min: 0 }]
+    }
   },
 
   // TRIG IDENTITIES
@@ -548,7 +628,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: '\\sin^2(A) + \\cos^2(A) = 1',
     description: 'Fundamental trigonometric identity.',
     variables: ['A = angle'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'identity_cos_from_sin', outputLabel: 'cos(A)',
+      fields: [{ key: 'sinA', label: 'sin(A) value', min: 0 }]
+    }
   },
   {
     slug: 'tan-sin-cos',
@@ -557,7 +641,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: '\\tan(A) = \\frac{\\sin(A)}{\\cos(A)}',
     description: 'Tangent as the ratio of sine to cosine.',
     variables: ['A = angle'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'tan_from_sin_cos', outputLabel: 'tan(A)',
+      fields: [{ key: 'sinA', label: 'sin(A) value' }, { key: 'cosA', label: 'cos(A) value' }]
+    }
   },
 
   // SPECIAL TRIANGLES
@@ -568,7 +656,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: 'c = a \\sqrt{2}',
     description: 'Hypotenuse of a 45-45-90 triangle.',
     variables: ['a = leg', 'c = hypotenuse'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'c_from_a_45', outputLabel: 'Hypotenuse c', outputUnit: 'units',
+      fields: [{ key: 'a', label: 'Leg a', min: 0 }]
+    }
   },
   {
     slug: 'a-c-rt2',
@@ -577,7 +669,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: 'a = \\frac{c}{\\sqrt{2}}',
     description: 'Leg of a 45-45-90 triangle.',
     variables: ['c = hypotenuse', 'a = leg'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'a_from_c_45', outputLabel: 'Leg a', outputUnit: 'units',
+      fields: [{ key: 'c', label: 'Hypotenuse c', min: 0 }]
+    }
   },
   {
     slug: 'long-a-rt3',
@@ -586,7 +682,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: '\\text{long leg} = a \\sqrt{3}',
     description: 'Longer leg in a 30-60-90 triangle.',
     variables: ['a = short leg'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'long_from_short_30', outputLabel: 'Long Leg', outputUnit: 'units',
+      fields: [{ key: 'a', label: 'Short leg a', min: 0 }]
+    }
   },
   {
     slug: 'c-2a',
@@ -595,7 +695,11 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     expression: 'c = 2a',
     description: 'Hypotenuse in a 30-60-90 triangle is twice the short leg.',
     variables: ['a = short leg', 'c = hypotenuse'],
-    notes: []
+    notes: [],
+    calculator: {
+      kind: 'c_from_a_30', outputLabel: 'Hypotenuse c', outputUnit: 'units',
+      fields: [{ key: 'a', label: 'Short leg a', min: 0 }]
+    }
   }
 ];
 

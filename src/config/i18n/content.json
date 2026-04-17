@@ -183,6 +183,40 @@
     },
     "footer": {
       "description": "समकोण-त्रिभुज गणना और सीखने के लिए एक तेज़ ज्यामिति कार्यक्षेत्र।"
+    },
+    "about": {
+      "title": "हमारे बारे में | समकोण त्रिभुज सॉल्वर",
+      "description": "जानें क्यों हमने यह सॉल्वर बनाया और कैसे यह छात्रों और पेशेवरों की मदद करता है।",
+      "heading": "हमारे बारे में",
+      "subHeading": "हम कौन हैं",
+      "missionTitle": "हमारा मिशन",
+      "missionBody": "हमने छात्रों और पेशेवरों के लिए ज्यामिति को सरल बनाने के लिए इस उपकरण का निर्माण किया।",
+      "precisionTitle": "सटीकता",
+      "precisionDesc": "पूर्ण त्रिकोणमितीय कवरेज के साथ 4+ दशमलव स्थानों तक सटीक गणना।",
+      "instantTitle": "त्वरित",
+      "instantDesc": "लाइव विज़ुअलाइज़ेशन अपडेट के साथ मिलीसेकंड में परिणाम।",
+      "educationalTitle": "शैक्षिक",
+      "educationalDesc": "गणित को समझने में आपकी मदद करने के लिए चरण-दर-चरण समाधान।",
+      "promiseTitle": "हमारा वादा",
+      "promiseBody": "नि:शुल्क, विज्ञापन-मुक्त और सावधानी से बनाया गया। हम आपकी गोपनीयता का सम्मान करते हैं।"
+    },
+    "contact": {
+      "title": "संपर्क करें | समकोण त्रिभुज सॉल्वर",
+      "description": "अपनी प्रतिक्रिया भेजें या किसी समस्या की रिपोर्ट करें।",
+      "heading": "संपर्क करें",
+      "helper": "प्रश्नों और विचारों का स्वागत है। हम आमतौर पर एक कार्य दिवस में उत्तर देते हैं।"
+    },
+    "terms": {
+      "title": "उपयोग की शर्तें",
+      "description": "उपयोग की शर्तों को पढ़ें।",
+      "heading": "उपयोग की शर्तें",
+      "updatedLabel": "अंतिम अपडेट: 12 अप्रैल, 2026"
+    },
+    "privacy": {
+      "title": "गोपनीयता नीति",
+      "description": "हमारी गोपनीयता नीति को समझें।",
+      "heading": "गोपनीयता नीति",
+      "updatedLabel": "अंतिम अपडेट: 12 अप्रैल, 2026"
     }
   },
   "es": {
@@ -255,6 +289,40 @@
     },
     "footer": {
       "description": "Un espacio de trabajo geométrico rápido para cálculos y aprendizaje de triángulos rectángulos."
+    },
+    "about": {
+      "title": "Sobre Nosotros | Calculadora de Triángulos Rectángulos",
+      "description": "Conozca más sobre el proyecto y nuestra misión de simplificar la geometría.",
+      "heading": "Sobre Nosotros",
+      "subHeading": "Quiénes somos",
+      "missionTitle": "Nuestra Misión",
+      "missionBody": "Creamos esta herramienta para simplificar la geometría para estudiantes y profesionales. Nuestro objetivo es hacer que las matemáticas sean accesibles y hermosas.",
+      "precisionTitle": "Precisión",
+      "precisionDesc": "Cálculos exactos hasta más de 4 decimales con cobertura trigonométrica completa.",
+      "instantTitle": "Instantáneo",
+      "instantDesc": "Resultados en milisegundos con actualizaciones visuales en vivo.",
+      "educationalTitle": "Educativo",
+      "educationalDesc": "Soluciones paso a paso para ayudarte a entender las matemáticas, no solo la respuesta.",
+      "promiseTitle": "Nuestra Promesa",
+      "promiseBody": "Es gratuito, sin publicidad y diseñado con cuidado. Respetamos tu privacidad y mejoramos continuamente."
+    },
+    "contact": {
+      "title": "Contacto | Calculadora de Triángulos Rectángulos",
+      "description": "Envíanos tus comentarios o solicita una función.",
+      "heading": "Contáctenos",
+      "helper": "Sus preguntas e ideas son bienvenidas. Normalmente respondemos en un día hábil."
+    },
+    "terms": {
+      "title": "Términos de Uso",
+      "description": "Lea los términos para el uso de nuestros recursos educativos.",
+      "heading": "Términos de Uso",
+      "updatedLabel": "Última actualización: 12 de abril de 2026"
+    },
+    "privacy": {
+      "title": "Política de Privacidad",
+      "description": "Entienda cómo se utiliza su información.",
+      "heading": "Política de Privacidad",
+      "updatedLabel": "Última actualización: 12 de abril de 2026"
     }
   },
   "ru": {
@@ -327,6 +395,40 @@
     },
     "footer": {
       "description": "Быстрое геометрическое рабочее пространство для расчетов прямоугольных треугольников и обучения."
+    },
+    "about": {
+      "title": "О нас | Решатель прямоугольных треугольников",
+      "description": "Узнайте, почему мы создали этот инструмент и как он помогает в обучении.",
+      "heading": "О нас",
+      "subHeading": "Кто мы",
+      "missionTitle": "Наша миссия",
+      "missionBody": "Мы создали этот инструмент, чтобы упростить геометрию для студентов и профессионалов.",
+      "precisionTitle": "Точность",
+      "precisionDesc": "Точные расчеты до 4+ десятичных знаков.",
+      "instantTitle": "Мгновенно",
+      "instantDesc": "Результаты за миллисекунды с живой визуализацией.",
+      "educationalTitle": "Образовательный",
+      "educationalDesc": "Пошаговые решения помогут вам понять математику.",
+      "promiseTitle": "Наше обещание",
+      "promiseBody": "Бесплатно, без рекламы и сделано с заботой. Мы уважаем вашу конфиденциальность."
+    },
+    "contact": {
+      "title": "Контакты | Решатель прямоугольных треугольников",
+      "description": "Свяжитесь с нами для отзывов и предложений.",
+      "heading": "Свяжитесь с нами",
+      "helper": "Мы рады вашим вопросам и идеям. Обычно мы отвечаем в течение рабочего дня."
+    },
+    "terms": {
+      "title": "Условия использования",
+      "description": "Условия использования наших ресурсов.",
+      "heading": "Условия использования",
+      "updatedLabel": "Последнее обновление: 12 апреля 2026"
+    },
+    "privacy": {
+      "title": "Политика конфиденциальности",
+      "description": "Как мы используем ваши данные.",
+      "heading": "Политика конфиденциальности",
+      "updatedLabel": "Последнее обновление: 12 апреля 2026"
     }
   },
   "fr": {
@@ -399,6 +501,40 @@
     },
     "footer": {
       "description": "Un espace de travail géométrique rapide pour les calculs de triangles rectangles et l'apprentissage."
+    },
+    "about": {
+      "title": "À Propos | Solveur de Triangle Rectangle",
+      "description": "Découvrez pourquoi nous avons construit ce solveur et notre mission pour simplifier la géométrie.",
+      "heading": "À Propos",
+      "subHeading": "Qui nous sommes",
+      "missionTitle": "Notre Mission",
+      "missionBody": "Nous avons conçu cet outil pour simplifier la géométrie pour les étudiants et les professionnels. Notre but est de rendre les mathématiques accessibles et belles.",
+      "precisionTitle": "Précision",
+      "precisionDesc": "Calculs précis à 4+ décimales avec couverture trigonométrique totale.",
+      "instantTitle": "Instantané",
+      "instantDesc": "Résultats en millisecondes avec visualisation en direct.",
+      "educationalTitle": "Éducatif",
+      "educationalDesc": "Des solutions étape par étape pour comprendre les mathématiques.",
+      "promiseTitle": "Notre Promesse",
+      "promiseBody": "Gratuit, respectueux de la vie privée et conçu avec soin. Nous nous améliorons selon vos retours."
+    },
+    "contact": {
+      "title": "Contactez-nous | Solveur de Triangle Rectangle",
+      "description": "Envoyez des commentaires ou demandez une fonctionnalité.",
+      "heading": "Contactez-nous",
+      "helper": "Vos questions et idées sont les bienvenues. Nous répondons généralement sous un jour ouvrable."
+    },
+    "terms": {
+      "title": "Conditions d'Utilisation",
+      "description": "Consultez les conditions d'utilisation de nos ressources éducatives.",
+      "heading": "Conditions d'Utilisation",
+      "updatedLabel": "Mis à jour: 12 avril 2026"
+    },
+    "privacy": {
+      "title": "Politique de Confidentialité",
+      "description": "Comprenez comment nous traitons vos données.",
+      "heading": "Politique de Confidentialité",
+      "updatedLabel": "Mis à jour: 12 avril 2026"
     }
   },
   "de": {
@@ -543,6 +679,40 @@
     },
     "footer": {
       "description": "Uno spazio di lavoro geometrico rapido per i calcoli dei triangoli rettangoli e l'apprendimento."
+    },
+    "about": {
+      "title": "Chi Siamo | Risolutore di Triangoli Rettangoli",
+      "description": "Scopri perché abbiamo costruito questo risolutore e la nostra missione di semplificare la geometria.",
+      "heading": "Chi Siamo",
+      "subHeading": "Chi siamo",
+      "missionTitle": "La Nostra Missione",
+      "missionBody": "Abbiamo costruito questo strumento per semplificare la geometria per studenti e professionisti.",
+      "precisionTitle": "Precisione",
+      "precisionDesc": "Calcoli accurati fino a 4+ cifre decimali con copertura trigonometrica completa.",
+      "instantTitle": "Istantaneo",
+      "instantDesc": "Risultati in millisecondi con visualizzazione in tempo reale.",
+      "educationalTitle": "Educativo",
+      "educationalDesc": "Soluzioni passo-passo per aiutarti a capire la matematica.",
+      "promiseTitle": "La Nostra Promessa",
+      "promiseBody": "Gratuito, senza pubblicità e progettato con cura. Rispettiamo la tua privacy."
+    },
+    "contact": {
+      "title": "Contattaci | Risolutore di Triangoli Rettangoli",
+      "description": "Inviaci feedback o richiedi una funzionalità.",
+      "heading": "Contattaci",
+      "helper": "Domande e idee sono benvenute. Di solito rispondiamo entro un giorno lavorativo."
+    },
+    "terms": {
+      "title": "Termini di Utilizzo",
+      "description": "Leggi i termini per l'utilizzo delle nostre risorse educative.",
+      "heading": "Termini di Utilizzo",
+      "updatedLabel": "Ultimo aggiornamento: 12 aprile 2026"
+    },
+    "privacy": {
+      "title": "Informativa sulla Privacy",
+      "description": "Comprendi come vengono utilizzate le tue informazioni.",
+      "heading": "Informativa sulla Privacy",
+      "updatedLabel": "Ultimo aggiornamento: 12 aprile 2026"
     }
   },
   "pt": {
@@ -759,6 +929,40 @@
     },
     "footer": {
       "description": "直角三角形の計算と学習のための高速な幾何学ワークスペース。"
+    },
+    "about": {
+      "title": "私たちについて | 直角三角形ソルバー",
+      "description": "幾何学を簡素化するという私たちの使命について詳しく知る。",
+      "heading": "私たちについて",
+      "subHeading": "私たちは誰ですか",
+      "missionTitle": "私たちの使命",
+      "missionBody": "学生や専門家のために幾何学を簡素化するためにこのツールを構築しました。",
+      "precisionTitle": "精度",
+      "precisionDesc": "小数点以下4桁以上の正確な計算。",
+      "instantTitle": "即座に",
+      "instantDesc": "ライブ視覚化によるミリ秒単位の結果。",
+      "educationalTitle": "教育的",
+      "educationalDesc": "数学を理解するのに役立つステップバイステップの解決策。",
+      "promiseTitle": "私たちの約束",
+      "promiseBody": "無料で広告なし、慎重に設計されています。プライバシーを尊重します。"
+    },
+    "contact": {
+      "title": "お問い合わせ | 直角三角形ソルバー",
+      "description": "フィードバックを送信するか、問題を報告してください。",
+      "heading": "お問い合わせ",
+      "helper": "質問やアイデアは大歓迎です。通常1営業日以内に返信します。"
+    },
+    "terms": {
+      "title": "利用規約",
+      "description": "教育リソースの利用規約をお読みください。",
+      "heading": "利用規約",
+      "updatedLabel": "最終更新日: 2026年4月12日"
+    },
+    "privacy": {
+      "title": "プライバシーポリシー",
+      "description": "情報の使用方法について理解する。",
+      "heading": "プライバシーポリシー",
+      "updatedLabel": "最終更新日: 2026年4月12日"
     }
   },
   "ko": {
@@ -831,6 +1035,40 @@
     },
     "footer": {
       "description": "직각 삼각형 계산 및 학습을 위한 빠른 기하학 작업 공간입니다."
+    },
+    "about": {
+      "title": "회사 소개 | 직각 삼각형 계산기",
+      "description": "기하학을 단순화하려는 우리의 사명과 프로젝트에 대해 자세히 알아보십시오.",
+      "heading": "회사 소개",
+      "subHeading": "우리는 누구인가",
+      "missionTitle": "우리의 사명",
+      "missionBody": "우리는 학생과 전문가를 위해 기하학을 단순화하기 위해 이 도구를 만들었습니다.",
+      "precisionTitle": "정밀도",
+      "precisionDesc": "4+ 소수점자리까지 정확한 계산.",
+      "instantTitle": "즉각적",
+      "instantDesc": "라이브 시각화와 함께 밀리초 단위의 결과.",
+      "educationalTitle": "교육적",
+      "educationalDesc": "수학을 이해하는 데 도움이 되는 단계별 솔루션.",
+      "promiseTitle": "우리의 약속",
+      "promiseBody": "무료이며 광고가 없고 신중하게 설계되었습니다. 우리는 귀하의 개인 정보를 존중합니다."
+    },
+    "contact": {
+      "title": "문의하기 | 직각 삼각형 계산기",
+      "description": "피드백을 보내거나 문제를 보고하십시오.",
+      "heading": "문의하기",
+      "helper": "질문과 아이디어를 환영합니다. 일반적으로 영업일 기준 1일 이내에 답변해 드립니다."
+    },
+    "terms": {
+      "title": "이용 약관",
+      "description": "교육 리소스 이용 약관을 읽어보십시오.",
+      "heading": "이용 약관",
+      "updatedLabel": "최종 업데이트: 2026년 4월 12일"
+    },
+    "privacy": {
+      "title": "개인정보 처리방침",
+      "description": "귀하의 정보가 어떻게 사용되는지 이해하십시오.",
+      "heading": "개인정보 처리방침",
+      "updatedLabel": "최종 업데이트: 2026년 4월 12일"
     }
   },
   "ms": {
@@ -903,6 +1141,40 @@
     },
     "footer": {
       "description": "Ruang kerja geometri pantas untuk pengiraan segitiga bersudut tegak dan pembelajaran."
+    },
+    "about": {
+      "title": "Tentang Kami | Penyelesai Segitiga Bersudut Tegak",
+      "description": "Ketahui lebih lanjut tentang projek dan misi kami untuk memudahkan geometri.",
+      "heading": "Tentang Kami",
+      "subHeading": "Siapa kami",
+      "missionTitle": "Misi Kami",
+      "missionBody": "Kami membina alat ini untuk memudahkan geometri bagi pelajar dan profesional.",
+      "precisionTitle": "Ketepatan",
+      "precisionDesc": "Pengiraan tepat sehingga 4+ tempat perpuluhan.",
+      "instantTitle": "Segera",
+      "instantDesc": "Keputusan dalam milisaat dengan visualisasi langsung.",
+      "educationalTitle": "Pendidikan",
+      "educationalDesc": "Penyelesaian langkah demi langkah untuk membantu anda memahami matematik.",
+      "promiseTitle": "Janji Kami",
+      "promiseBody": "Percuma, tanpa iklan, dan direka dengan teliti. Kami menghormati privasi anda."
+    },
+    "contact": {
+      "title": "Hubungi Kami | Penyelesai Segitiga Bersudut Tegak",
+      "description": "Hantar maklum balas atau lapor masalah.",
+      "heading": "Hubungi Kami",
+      "helper": "Soalan dan idea dialu-alukan. Kami biasanya membalas dalam satu hari bekerja."
+    },
+    "terms": {
+      "title": "Syarat Penggunaan",
+      "description": "Baca syarat penggunaan sumber pendidikan kami.",
+      "heading": "Syarat Penggunaan",
+      "updatedLabel": "Kemas kini terakhir: 12 April 2026"
+    },
+    "privacy": {
+      "title": "Dasar Privasi",
+      "description": "Fahami bagaimana maklumat anda digunakan.",
+      "heading": "Dasar Privasi",
+      "updatedLabel": "Kemas kini terakhir: 12 April 2026"
     }
   },
   "pl": {
@@ -975,6 +1247,40 @@
     },
     "footer": {
       "description": "Szybka przestrzeń geometryczna do obliczeń trójkątów prostokątnych i nauki."
+    },
+    "about": {
+      "title": "O Nas | Rozwiązywanie Trójkątów Prostokątnych",
+      "description": "Dowiedz się więcej o projekcie i naszej misji upraszczania geometrii.",
+      "heading": "O Nas",
+      "subHeading": "Kim jesteśmy",
+      "missionTitle": "Nasza Misja",
+      "missionBody": "Zbudowaliśmy to narzędzie, aby uprościć geometrię dla uczniów i profesjonalistów.",
+      "precisionTitle": "Precyzja",
+      "precisionDesc": "Dokładne obliczenia do 4+ miejsc po przecinku.",
+      "instantTitle": "Natychmiast",
+      "instantDesc": "Wyniki w milisekundach z wizualizacją na żywo.",
+      "educationalTitle": "Edukacyjne",
+      "educationalDesc": "Rozwiązania krok po kroku pomagające zrozumieć matematykę.",
+      "promiseTitle": "Nasza Obietnica",
+      "promiseBody": "Bezpłatne, bez reklam i zaprojektowane z dbałością. Szanujemy Twoją prywatność."
+    },
+    "contact": {
+      "title": "Kontakt | Rozwiązywanie Trójkątów Prostokątnych",
+      "description": "Wyślij opinię lub zgłoś problem.",
+      "heading": "Kontakt",
+      "helper": "Pytania i pomysły są mile widziane. Zazwyczaj odpowiadamos w ciągu jednego dnia roboczego."
+    },
+    "terms": {
+      "title": "Warunki Użytkowania",
+      "description": "Przeczytaj warunki korzystania z naszych zasobów edukacyjnych.",
+      "heading": "Warunki Użytkowania",
+      "updatedLabel": "Ostatnia aktualizacja: 12 kwietnia 2026"
+    },
+    "privacy": {
+      "title": "Polityka Prywatności",
+      "description": "Zrozum, jak wykorzystywane są Twoje dane.",
+      "heading": "Polityka Prywatności",
+      "updatedLabel": "Ostatnia aktualizacja: 12 kwietnia 2026"
     }
   },
   "id": {
@@ -1047,6 +1353,40 @@
     },
     "footer": {
       "description": "Ruang kerja geometri cepat untuk perhitungan segitiga siku-siku dan pembelajaran."
+    },
+    "about": {
+      "title": "Tentang Kami | Pemecah Segitiga Siku-siku",
+      "description": "Pelajari lebih lanjut tentang proyek dan misi kami untuk menyederhanakan geometri.",
+      "heading": "Tentang Kami",
+      "subHeading": "Siapa kami",
+      "missionTitle": "Misi Kami",
+      "missionBody": "Kami membangun alat ini untuk menyederhanakan geometri bagi siswa dan profesional.",
+      "precisionTitle": "Presisi",
+      "precisionDesc": "Perhitungan akurat hingga 4+ angka desimal.",
+      "instantTitle": "Instan",
+      "instantDesc": "Hasil dalam milidetik dengan visualisasi langsung.",
+      "educationalTitle": "Edukatif",
+      "educationalDesc": "Solusi langkah demi langkah untuk membantu Anda memahami matematika.",
+      "promiseTitle": "Janji Kami",
+      "promiseBody": "Gratis, tanpa iklan, dan dirancang dengan cermat. Kami menghormati privasi Anda."
+    },
+    "contact": {
+      "title": "Hubungi Kami | Pemecah Segitiga Siku-siku",
+      "description": "Kirim umpan balik atau laporkan masalah.",
+      "heading": "Hubungi Kami",
+      "helper": "Pertanyaan dan ide disambut baik. Kami biasanya membalas dalam satu hari kerja."
+    },
+    "terms": {
+      "title": "Ketentuan Penggunaan",
+      "description": "Baca ketentuan penggunaan sumber daya pendidikan kami.",
+      "heading": "Ketentuan Penggunaan",
+      "updatedLabel": "Pembaruan terakhir: 12 April 2026"
+    },
+    "privacy": {
+      "title": "Kebijakan Privasi",
+      "description": "Pahami bagaimana informasi Anda digunakan.",
+      "heading": "Kebijakan Privasi",
+      "updatedLabel": "Pembaruan terakhir: 12 April 2026"
     }
   },
   "ar": {
@@ -1119,6 +1459,40 @@
     },
     "footer": {
       "description": "مساحة عمل هندسية سريعة لحسابات المثلث القائم والتعلم."
+    },
+    "about": {
+      "title": "من نحن | حلل المثلث القائم",
+      "description": "تعرف على المزيد حول المشروع ومهمتنا لتبسيط الهندسة.",
+      "heading": "من نحن",
+      "subHeading": "من نحن",
+      "missionTitle": "مهمتنا",
+      "missionBody": "لقد قمنا ببناء هذه الأداة لتبسيط الهندسة للطلاب والمهنيين على حد سواء.",
+      "precisionTitle": "دقة",
+      "precisionDesc": "حسابات دقيقة تصل إلى 4+ مراتب عشرية.",
+      "instantTitle": "فوري",
+      "instantDesc": "نتائج في أجزاء من الثانية مع تمثيل مرئي مباشر.",
+      "educationalTitle": "تعليمي",
+      "educationalDesc": "حلول خطوة بخطوة لمساعدتك على فهم الرياضيات.",
+      "promiseTitle": "وعدنا",
+      "promiseBody": "مجاني، خالي من الإعلانات، ومصمم بعناية. نحن نحترم خصوصيتك."
+    },
+    "contact": {
+      "title": "اتصل بنا | حلل المثلث القائم",
+      "description": "أرسل ملاحظاتك أو ابلغ عن مشكلة.",
+      "heading": "اتصل بنا",
+      "helper": "نرحب بأسئلتكم وأفكاركم. عادة ما نرد خلال يوم عمل واحد."
+    },
+    "terms": {
+      "title": "شروط الاستخدام",
+      "description": "اقرأ شروط استخدام مواردنا التعليمية.",
+      "heading": "شروط الاستخدام",
+      "updatedLabel": "آخر تحديث: 12 أبريل 2026"
+    },
+    "privacy": {
+      "title": "سياسة الخصوصية",
+      "description": "افهم كيف يتم استخدام معلوماتك.",
+      "heading": "سياسة الخصوصية",
+      "updatedLabel": "آخر تحديث: 12 أبريل 2026"
     }
   },
   "bg": {
@@ -1191,6 +1565,40 @@
     },
     "footer": {
       "description": "Бързо геометрично работно пространство за изчисления на правоъгълни триъгълници и обучение."
+    },
+    "about": {
+      "title": "За нас | Решаване на правоъгълни триъгълници",
+      "description": "Научете повече за проекта и нашата мисия да опростим геометрията.",
+      "heading": "За нас",
+      "subHeading": "Кои сме ние",
+      "missionTitle": "Нашата мисия",
+      "missionBody": "Създадохме този инструмент, за да улесним геометрията за ученици и професионалисти.",
+      "precisionTitle": "Прецизност",
+      "precisionDesc": "Точни изчисления до 4+ знака след запетаята.",
+      "instantTitle": "Мигновено",
+      "instantDesc": "Резултати за милисекунди с визуализация на живо.",
+      "educationalTitle": "Образователно",
+      "educationalDesc": "Поетапни решения за по-добро разбиране на математиката.",
+      "promiseTitle": "Нашето обещание",
+      "promiseBody": "Безплатно, без реклами и направено с грижа. Уважаваме поверителността ви."
+    },
+    "contact": {
+      "title": "Контакти | Решаване на правоъгълни триъгълници",
+      "description": "Изпратете ни обратна връзка или съобщете за проблем.",
+      "heading": "Контакти",
+      "helper": "Вашите въпроси и идеи са добре дошли. Обикновено отговаряме в рамките на един работен ден."
+    },
+    "terms": {
+      "title": "Условия за ползване",
+      "description": "Прочетете условията за ползване на нашите ресурси.",
+      "heading": "Условия за ползване",
+      "updatedLabel": "Последна актуализация: 12 април 2026 г."
+    },
+    "privacy": {
+      "title": "Политика за поверителност",
+      "description": "Разберете как се използва вашата информация.",
+      "heading": "Политика за поверителност",
+      "updatedLabel": "Последна актуализация: 12 април 2026 г."
     }
   },
   "tr": {
@@ -1263,6 +1671,40 @@
     },
     "footer": {
       "description": "Dik üçgen hesaplamaları ve öğrenimi için hızlı bir geometri çalışma alanı."
+    },
+    "about": {
+      "title": "Hakkımızda | Dik Üçgen Çözücü",
+      "description": "Geometriyi basitleştirme misyonumuz hakkında daha fazla bilgi edinin.",
+      "heading": "Hakkımızda",
+      "subHeading": "Biz kimiz",
+      "missionTitle": "Misyonumuz",
+      "missionBody": "Matematiksel kavramları herkes için erişilebilir ve kolay hale getirmek için bu aracı geliştirdik.",
+      "precisionTitle": "Hassasiyet",
+      "precisionDesc": "4+ ondalık basamağa kadar doğru sonuçlar.",
+      "instantTitle": "Anında",
+      "instantDesc": "Milisaniyeler içinde sonuçlar ve canlı görselleştirme.",
+      "educationalTitle": "Eğitici",
+      "educationalDesc": "Matematiği anlamanıza yardımcı olacak adım adım çözümler.",
+      "promiseTitle": "Sözümüz",
+      "promiseBody": "Ücretsiz, reklamsız ve özenle tasarlanmıştır. Gizliliğinize saygı duyuyoruz."
+    },
+    "contact": {
+      "title": "İletişim | Dik Üçgen Çözücü",
+      "description": "Geri bildirim gönderin veya bir sorun bildirin.",
+      "heading": "İletişim",
+      "helper": "Sorularınız ve fikirleriniz için teşekkürler. Genellikle bir iş günü içinde yanıt veririz."
+    },
+    "terms": {
+      "title": "Kullanım Koşulları",
+      "description": "Eğitim kaynaklarımızı kullanım koşullarını okuyun.",
+      "heading": "Kullanım Koşulları",
+      "updatedLabel": "Son güncelleme: 12 Nisan 2026"
+    },
+    "privacy": {
+      "title": "Gizlilik Politikası",
+      "description": "Bilgilerinizin nasıl kullanıldığını anlayın.",
+      "heading": "Gizlilik Politikası",
+      "updatedLabel": "Son güncelleme: 12 Nisan 2026"
     }
   },
   "sv": {
@@ -1335,6 +1777,40 @@
     },
     "footer": {
       "description": "En snabb geometriarbetsyta för beräkningar av rätvinkliga trianglar och lärande."
+    },
+    "about": {
+      "title": "Om Oss | Rätvinklig Triangellösare",
+      "description": "Lär dig mer om projektet och vårt uppdrag att förenkla geometri.",
+      "heading": "Om Oss",
+      "subHeading": "Vilka vi är",
+      "missionTitle": "Vårt Uppdrag",
+      "missionBody": "Vi byggde detta verktyg för att förenkla geometri för studenter och proffs.",
+      "precisionTitle": "Precision",
+      "precisionDesc": "Exakta beräkningar upp till 4+ decimaler.",
+      "instantTitle": "Omedelbar",
+      "instantDesc": "Resultat på millisekunder med livevisning.",
+      "educationalTitle": "Pedagogisk",
+      "educationalDesc": "Steg-för-steg-lösningar som hjälper dig att förstå matematiken.",
+      "promiseTitle": "Vårt Löfte",
+      "promiseBody": "Gratis, reklamfritt och designat med omsorg. Vi respekterar din integritet."
+    },
+    "contact": {
+      "title": "Kontakta Oss | Rätvinklig Triangellösare",
+      "description": "Skicka feedback eller rapportera ett problem.",
+      "heading": "Kontakta Oss",
+      "helper": "Frågor och idéer är välkomna. Vi svarar vanligtvis inom en arbetsdag."
+    },
+    "terms": {
+      "title": "Användarvillkor",
+      "description": "Läs villkoren för användning av våra utbildningsresurser.",
+      "heading": "Användarvillkor",
+      "updatedLabel": "Senast uppdaterad: 12 april 2026"
+    },
+    "privacy": {
+      "title": "Integritetspolicy",
+      "description": "Förstå hur din information används.",
+      "heading": "Integritetspolicy",
+      "updatedLabel": "Senast uppdaterad: 12 april 2026"
     }
   },
   "zh": {
@@ -1407,6 +1883,40 @@
     },
     "footer": {
       "description": "用于直角三角形计算和学习的快速几何工作空间。"
+    },
+    "about": {
+      "title": "关于我们 | 直角三角形求解器",
+      "description": "详细了解该项目以及我们简化几何教学的使命。",
+      "heading": "关于我们",
+      "subHeading": "我们是谁",
+      "missionTitle": "我们的使命",
+      "missionBody": "我们建立这个工具是为了简化学生和专业人士的几何计算。",
+      "precisionTitle": "精准度",
+      "precisionDesc": "精确到小数点后 4 位以上。",
+      "instantTitle": "即时性",
+      "instantDesc": "以毫秒为单位得出计算结果并实时展示。",
+      "educationalTitle": "教育性",
+      "educationalDesc": "分步解题指南，助您理解数学原理。",
+      "promiseTitle": "我们的承诺",
+      "promiseBody": "免费、无广告且精心设计。我们尊重您的隐私。"
+    },
+    "contact": {
+      "title": "联系我们 | 直角三角形求解器",
+      "description": "提交反馈或报告问题。",
+      "heading": "联系我们",
+      "helper": "欢迎提出问题或想法。我们通常会在一个工作日内回复。"
+    },
+    "terms": {
+      "title": "使用条款",
+      "description": "阅读我们教育资源的使用条款。",
+      "heading": "使用条款",
+      "updatedLabel": "最后更新：2026年4月12日"
+    },
+    "privacy": {
+      "title": "隐私政策",
+      "description": "了解我们如何使用您的信息。",
+      "heading": "隐私政策",
+      "updatedLabel": "最后更新：2026年4月12日"
     }
   }
 }

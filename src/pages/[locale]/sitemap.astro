@@ -1,18 +1,24 @@
-﻿---
+---
 import { getCollection } from 'astro:content';
 import {
-  DEFAULT_LOCALE,
   SUPPORTED_LOCALES,
-  localizePath
+  localizePath,
+  getLocaleStaticPaths,
+  getLocaleFromParams
 } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
 
-const locale = DEFAULT_LOCALE;
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
+
+const { locale: rawLocale } = Astro.params;
+const locale = getLocaleFromParams(rawLocale);
 const bundle = getTranslations(locale);
-const content = bundle.content as Record<string, unknown>;
-const sitemapText = (content.sitemap as Record<string, string>) ?? {};
+const content = bundle.content as Record<string, any>;
+const sitemapText = content.sitemap ?? {};
 
 const PAGE_SIZE = 12;
 

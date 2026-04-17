@@ -1,7 +1,6 @@
 ---
-import LanguageSwitcher from 'theme/components/LanguageSwitcher.astro';
 import SocialIcon from 'theme/components/SocialIcon.astro';
-import { localizePath, type Locale } from 'theme/i18n/locales';
+import { localizePath, SUPPORTED_LOCALES, LOCALE_LABELS, type Locale } from 'theme/i18n/locales';
 import { getEnabledSocialLinks, getLocalizedNavItems } from 'theme/utils/site';
 
 interface Props {
@@ -18,12 +17,11 @@ const { locale, siteTitle, logo, description, navLabels, commonLabels } = Astro.
 const footerNav = getLocalizedNavItems(locale, 'footer', navLabels);
 const socialLinks = getEnabledSocialLinks();
 const year = new Date().getFullYear();
-const switchLabel = commonLabels.switchLanguage ?? 'Language';
 const rights = commonLabels.rights ?? 'All rights reserved.';
 const homeHref = localizePath(locale, '/');
 ---
 
-<footer class="relative mt-16 overflow-hidden border-t border-outline-variant/65 bg-surface">
+<footer class="relative mt-16 overflow-hidden border-t border-outline-variant/65 bg-surface pb-12">
   <div class="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
   <div class="pointer-events-none absolute -right-20 -top-24 h-56 w-56 rounded-full bg-primary/12 blur-3xl"></div>
 
@@ -35,7 +33,7 @@ const homeHref = localizePath(locale, '/');
         </div>
         <span class="font-headline text-base font-medium tracking-[-0.02em]">{siteTitle}</span>
       </a>
-      <p class="max-w-xl text-sm leading-relaxed text-on-surface-variant">{description}</p>
+      <p class="max-w-xl text-sm leading-relaxed text-on-surface-variant text-balance">{description}</p>
 
       {socialLinks.length > 0 && (
         <div class="flex items-center gap-3 pt-2" aria-label="Social links">
@@ -55,22 +53,41 @@ const homeHref = localizePath(locale, '/');
     </div>
 
     <div class="grid gap-8 sm:grid-cols-2">
-      <nav aria-label="Footer navigation" class="grid gap-2 text-sm">
-        {footerNav.map((item) => (
-          <a
-            href={item.href}
-            class="rounded-none px-1 py-1 text-[11px] uppercase tracking-[0.16em] text-on-surface-variant transition-all duration-200 hover:text-primary hover:translate-x-1 font-label"
-          >
-            {item.label}
-          </a>
-        ))}
-      </nav>
+      <div>
+        <h3 class="font-label text-xs font-bold uppercase tracking-widest text-on-surface mb-6 opacity-80 decoration-primary/30 decoration-2 underline-offset-8">Sections</h3>
+        <nav aria-label="Footer navigation" class="grid gap-4 text-sm">
+          {footerNav.map((item) => (
+            <a
+              href={item.href}
+              class="rounded-none text-[11px] uppercase tracking-[0.16em] text-on-surface-variant transition-all duration-200 hover:text-primary hover:translate-x-1 font-label"
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      </div>
 
-      <LanguageSwitcher currentLocale={locale} switchLabel={switchLabel} />
+      <div>
+        <h3 class="font-label text-xs font-bold uppercase tracking-widest text-on-surface mb-6 opacity-80">Languages</h3>
+        <div class="grid grid-cols-2 gap-x-4 gap-y-3">
+          {SUPPORTED_LOCALES.map((l) => (
+            <a
+              href={localizePath(l, '/')}
+              class:list={[
+                "text-[10.5px] font-medium transition-all hover:text-primary",
+                l === locale ? "text-primary font-bold" : "text-on-surface-variant/80"
+              ]}
+              lang={l}
+            >
+              {LOCALE_LABELS[l]}
+            </a>
+          ))}
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="relative border-t border-outline-variant/50 px-4 py-5 text-center text-xs text-outline sm:px-6 lg:px-8">
+  <div class="relative border-t border-outline-variant/50 px-4 py-8 text-center text-xs text-outline sm:px-6 lg:px-8">
     <p>&copy; {year} {siteTitle}. {rights}</p>
   </div>
 </footer>

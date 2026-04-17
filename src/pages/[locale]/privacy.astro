@@ -1,12 +1,17 @@
 ---
-import { DEFAULT_LOCALE } from 'theme/i18n/locales';
+import { getLocaleStaticPaths, getLocaleFromParams, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 
-const locale = DEFAULT_LOCALE;
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
+
+const { locale: rawLocale } = Astro.params;
+const locale = getLocaleFromParams(rawLocale);
 const bundle = getTranslations(locale);
-const content = bundle.content as Record<string, unknown>;
-const privacy = (content.privacy as Record<string, string>) ?? {};
+const content = bundle.content as Record<string, any>;
+const privacy = content.privacy ?? {};
 ---
 
 <BaseLayout

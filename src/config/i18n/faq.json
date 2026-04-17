@@ -6,8 +6,38 @@
       "display": true
     },
     {
+      "question": "How do I find a missing leg if I already have the hypotenuse?",
+      "answer": "You can use the 'Missing Leg' calculators available in the Side Calculations category. By providing the hypotenuse (c) and the known leg (a or b), the tool mathematically derives the missing leg.",
+      "display": true
+    },
+    {
       "question": "How do I calculate an angle from its sine, cosine, or tangent?",
       "answer": "Navigate to the Inverse Angle Formulas in the hub. Input your two known sides (e.g., opposite and hypotenuse for sine) and the tool will use arcsin(), arccos(), or arctan() to return the exact angle in degrees.",
+      "display": true
+    },
+    {
+      "question": "Can I calculate Trigonometric Ratios (Sine, Cosine, Tangent) directly?",
+      "answer": "Yes! We offer direct calculators for Sine (a/c), Cosine (b/c), and Tangent (a/b). Just input the relevant sides, and the tool returns the exact ratio decimal.",
+      "display": true
+    },
+    {
+      "question": "Does the hub have tools for Cosecant, Secant, and Cotangent?",
+      "answer": "Absolutely. You can calculate the reciprocal trigonometric identities directly: Cotangent (b/a), Secant (c/b), and Cosecant (c/a) within our advanced Trigonometry section.",
+      "display": true
+    },
+    {
+      "question": "How do I find a side if I have the hypotenuse and an angle?",
+      "answer": "Use the 'Side from Hypotenuse and Angle' calculators (e.g. a = c * sin(A) or b = c * cos(A)). Simply choose the angle and side combination you know, and the solver handles the trigonometry.",
+      "display": true
+    },
+    {
+      "question": "If I only know the legs, can I find the Area?",
+      "answer": "Yes, use the simple 'Area from Legs' calculator. The area of a right triangle is exactly half the product of its two perpendicular legs (Area = a * b / 2).",
+      "display": true
+    },
+    {
+      "question": "Can I compute Area without knowing the explicitly perpendicular legs?",
+      "answer": "Yes, our hub includes numerous Area derivations. You can find Area utilizing the inradius and semiperimeter (Area = r * s), or using half the product of any two sides multiplied by the sine of their included angle.",
       "display": true
     },
     {
@@ -17,7 +47,7 @@
     },
     {
       "question": "What happens if I type an invalid combination (like a leg longer than the hypotenuse)?",
-      "answer": "Our robust validation engine will instantly detect mathematically impossible states. It halts the calculation and visually alerts you with a striking red notification to ensure your inputs respect geometric bounds.",
+      "answer": "Our robust validation engine will instantly detect mathematically impossible states. It halts the calculation and visually alerts you with a striking red notification underneath the exact invalid field to ensure your inputs respect geometric bounds.",
       "display": true
     },
     {
@@ -26,18 +56,33 @@
       "display": true
     },
     {
+      "question": "How does the 'Live Visualization' diagram work?",
+      "answer": "When you solve a formula, our geometric engine dynamically reconstructs the right triangle based on your specific values. The SVG paths reshape automatically to accurately match the proportions and dimensions of your exact inputs.",
+      "display": true
+    },
+    {
       "question": "Do you support Special Right Triangles (45-45-90 and 30-60-90)?",
       "answer": "Yes. We have dedicated calculators for Special Triangles. Simply enter the short leg, and the tool will compute the hypotenuse or long leg instantly utilizing the √2 and √3 constant ratios.",
       "display": true
     },
     {
-      "question": "Can I compute Area without knowing the explicitly strictly perpendicular legs?",
-      "answer": "Yes, our hub includes numerous Area derivations. You can find Area utilizing the inradius and semiperimeter, or using half the product of any two sides multiplied by the sine of their included angle.",
+      "question": "What are the projection and altitude relations?",
+      "answer": "When dropping an altitude (h) to the hypotenuse, it divides the hypotenuse into two segments (projection p and q). Our Advanced Relations calculators let you solve for these using geometric mean theorems like h² = p * q, a² = c * p, and b² = c * q.",
       "display": true
     },
     {
-      "question": "What are the projection and altitude relations?",
-      "answer": "When dropping an altitude (h) to the hypotenuse, it divides the hypotenuse into two segments (projection p and q). Our Advanced Relations calculators let you solve for these using geometric mean theorems like h² = p * q.",
+      "question": "Is it possible to calculate the Inradius and Circumradius?",
+      "answer": "Yes. The Circumradius (R) relies on the hypotenuse via (R = c / 2). The Inradius (r) is deduced from all three sides (r = [a + b - c] / 2). Both have respective fully functional calculators.",
+      "display": true
+    },
+    {
+      "question": "How can I verify the sum of the complementary angles?",
+      "answer": "If you have Angle A, you can find Angle B using the geometric property that the two acute angles in a right triangle sum to 90°. We provide explicit calculators for evaluating A + B = 90°.",
+      "display": true
+    },
+    {
+      "question": "Can I prove Trigonometric Identities like sin²(A) + cos²(A) = 1?",
+      "answer": "Yes, our Advanced Relations category includes calculators that allow you to plug in sine and cosine decimal values to directly prove identity formulas on your own inputs.",
       "display": true
     }
   ],

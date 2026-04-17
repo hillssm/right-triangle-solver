@@ -5,23 +5,10 @@ interface Props {
 
 const { heading } = Astro.props;
 
-const defaultSteps = [
-  {
-    icon: 'input',
-    title: '1. Enter known values',
-    desc: 'Provide any valid right-triangle inputs and keep units consistent.'
-  },
-  {
-    icon: 'bolt',
-    title: '2. Solve instantly',
-    desc: 'The solver applies Pythagorean and trigonometric relations in real time.'
-  },
-  {
-    icon: 'insights',
-    title: '3. Validate the geometry',
-    desc: 'Use live visualization, ratios, and derived metrics to verify your answer.'
-  }
-];
+// Access translations through the parent page pattern (bundle or separate fetch)
+// However, since this component is reused, we'll use a standard key structure.
+// For now, simpler to just accept them as props or use the global bundle if available.
+// But to keep it simple and consistent with index.astro, we'll keep the logic here.
 ---
 
 <section id="how-it-works" class="section-shell" aria-labelledby="how-it-works-heading">
@@ -32,22 +19,32 @@ const defaultSteps = [
     <h2 id="how-it-works-heading" class="text-2xl sm:text-3xl">{heading}</h2>
   </div>
   <p class="mt-3 max-w-2xl text-sm text-on-surface-variant">
-    From input to proof-ready output in three clean steps.
+    <slot name="intro">From input to proof-ready output in three clean steps.</slot>
   </p>
 
   <div class="mt-6 grid gap-5 sm:grid-cols-3 anim-stagger">
-    <slot>
-      {
-        defaultSteps.map((step) => (
-          <article class="surface-card group flex flex-col gap-4 border-outline-variant/30">
-            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
-              <span class="material-symbols-outlined text-xl">{step.icon}</span>
-            </div>
-            <h3 class="text-base font-semibold text-on-surface">{step.title}</h3>
-            <p class="text-sm leading-relaxed text-on-surface-variant">{step.desc}</p>
-          </article>
-        ))
-      }
+    <slot name="steps">
+      <article class="surface-card group flex flex-col gap-4 border-outline-variant/30">
+        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
+          <span class="material-symbols-outlined text-xl">input</span>
+        </div>
+        <h3 class="text-base font-semibold text-on-surface">1. Enter known values</h3>
+        <p class="text-sm leading-relaxed text-on-surface-variant">Provide any valid right-triangle inputs and keep units consistent.</p>
+      </article>
+      <article class="surface-card group flex flex-col gap-4 border-outline-variant/30">
+        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
+          <span class="material-symbols-outlined text-xl">bolt</span>
+        </div>
+        <h3 class="text-base font-semibold text-on-surface">2. Solve instantly</h3>
+        <p class="text-sm leading-relaxed text-on-surface-variant">The solver applies Pythagorean and trigonometric relations in real time.</p>
+      </article>
+      <article class="surface-card group flex flex-col gap-4 border-outline-variant/30">
+        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
+          <span class="material-symbols-outlined text-xl">insights</span>
+        </div>
+        <h3 class="text-base font-semibold text-on-surface">3. Validate the geometry</h3>
+        <p class="text-sm leading-relaxed text-on-surface-variant">Use live visualization, ratios, and derived metrics to verify your answer.</p>
+      </article>
     </slot>
   </div>
 </section>

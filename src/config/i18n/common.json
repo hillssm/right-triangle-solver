@@ -35,15 +35,473 @@
       "rights": "All rights reserved. © 2026"
     }
   },
-  "ar": {
+  "hi": {
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "contactUs": "Contact Us"
+      "home": "होम",
+      "practice": "अभ्यास",
+      "formulas": "फॉर्मूला",
+      "aboutUs": "हमारे बारे में",
+      "contactUs": "संपर्क करें",
+      "blog": "ब्लॉग",
+      "faq": "सामान्य प्रश्न",
+      "terms": "नियम",
+      "privacy": "गोपनीयता",
+      "sitemap": "साइटमैप"
     },
     "common": {
-      "switchLanguage": "Language",
-      "send": "Send Message"
+      "readMore": "लेख पढ़ें",
+      "previous": "पिछला",
+      "next": "अगला",
+      "page": "पृष्ठ",
+      "of": "का",
+      "results": "परिणाम",
+      "switchLanguage": "भाषा"
+    },
+    "footer": {
+      "rights": "सर्वाधिकार सुरक्षित। © 2026"
+    }
+  },
+  "es": {
+    "nav": {
+      "home": "Inicio",
+      "practice": "Práctica",
+      "formulas": "Fórmulas",
+      "aboutUs": "Sobre Nosotros",
+      "contactUs": "Contacto",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Términos",
+      "privacy": "Privacidad",
+      "sitemap": "Mapa del sitio"
+    },
+    "common": {
+      "readMore": "Leer artículo",
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "page": "Página",
+      "of": "de",
+      "results": "Resultados",
+      "switchLanguage": "Idioma"
+    },
+    "footer": {
+      "rights": "Todos los derechos reservados. © 2026"
+    }
+  },
+  "ru": {
+    "nav": {
+      "home": "Главная",
+      "practice": "Практика",
+      "formulas": "Формулы",
+      "aboutUs": "О нас",
+      "contactUs": "Контакты",
+      "blog": "Блог",
+      "faq": "ЧАВО",
+      "terms": "Условия",
+      "privacy": "Конфиденциальность",
+      "sitemap": "Карта сайта"
+    },
+    "common": {
+      "readMore": "Читать статью",
+      "previous": "Предыдущий",
+      "next": "Следующий",
+      "page": "Страница",
+      "of": "из",
+      "results": "Результаты",
+      "switchLanguage": "Язык"
+    },
+    "footer": {
+      "rights": "Все права защищены. © 2026"
+    }
+  },
+  "fr": {
+    "nav": {
+      "home": "Accueil",
+      "practice": "Pratique",
+      "formulas": "Formules",
+      "aboutUs": "À Propos",
+      "contactUs": "Contact",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Conditions",
+      "privacy": "Confidentialité",
+      "sitemap": "Plan du site"
+    },
+    "common": {
+      "readMore": "Lire l'article",
+      "previous": "Précédent",
+      "next": "Suivant",
+      "page": "Page",
+      "of": "de",
+      "results": "Résultats",
+      "switchLanguage": "Langue"
+    },
+    "footer": {
+      "rights": "Tous droits réservés. © 2026"
+    }
+  },
+  "de": {
+    "nav": {
+      "home": "Startseite",
+      "practice": "Übung",
+      "formulas": "Formeln",
+      "aboutUs": "Über uns",
+      "contactUs": "Kontakt",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Bedingungen",
+      "privacy": "Datenschutz",
+      "sitemap": "Sitemap"
+    },
+    "common": {
+      "readMore": "Artikel lesen",
+      "previous": "Vorherige",
+      "next": "Nächste",
+      "page": "Seite",
+      "of": "von",
+      "results": "Ergebnisse",
+      "switchLanguage": "Sprache"
+    },
+    "footer": {
+      "rights": "Alle Rechte vorbehalten. © 2026"
+    }
+  },
+  "it": {
+    "nav": {
+      "home": "Home",
+      "practice": "Pratica",
+      "formulas": "Formule",
+      "aboutUs": "Chi Siamo",
+      "contactUs": "Contatti",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Termini",
+      "privacy": "Privacy",
+      "sitemap": "Mappa del sito"
+    },
+    "common": {
+      "readMore": "Leggi articolo",
+      "previous": "Precedente",
+      "next": "Successivo",
+      "page": "Pagina",
+      "of": "di",
+      "results": "Risultati",
+      "switchLanguage": "Lingua"
+    },
+    "footer": {
+      "rights": "Tutti i diritti riservati. © 2026"
+    }
+  },
+  "pt": {
+    "nav": {
+      "home": "Início",
+      "practice": "Prática",
+      "formulas": "Fórmulas",
+      "aboutUs": "Sobre Nós",
+      "contactUs": "Contato",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Termos",
+      "privacy": "Privacidade",
+      "sitemap": "Mapa do site"
+    },
+    "common": {
+      "readMore": "Ler artigo",
+      "previous": "Anterior",
+      "next": "Próximo",
+      "page": "Página",
+      "of": "de",
+      "results": "Resultados",
+      "switchLanguage": "Idioma"
+    },
+    "footer": {
+      "rights": "Todos os direitos reservados. © 2026"
+    }
+  },
+  "bn": {
+    "nav": {
+      "home": "হোম",
+      "practice": "অনুশীলন",
+      "formulas": "সূত্র",
+      "aboutUs": "আমাদের সম্পর্কে",
+      "contactUs": "যোগাযোগ",
+      "blog": "ব্লগ",
+      "faq": "FAQ",
+      "terms": "শর্তাবলী",
+      "privacy": "গোপনীয়তা",
+      "sitemap": "সাইটম্যাপ"
+    },
+    "common": {
+      "readMore": "নিবন্ধ পড়ুন",
+      "previous": "পূর্ববর্তী",
+      "next": "পরবর্তী",
+      "page": "পৃষ্ঠা",
+      "of": "এর",
+      "results": "ফলাফল",
+      "switchLanguage": "ভাষা"
+    },
+    "footer": {
+      "rights": "সর্বস্বত্ব সংরক্ষিত। © ২০২৬"
+    }
+  },
+  "ja": {
+    "nav": {
+      "home": "ホーム",
+      "practice": "練習",
+      "formulas": "公式",
+      "aboutUs": "私たちについて",
+      "contactUs": "お問い合わせ",
+      "blog": "ブログ",
+      "faq": "よくある質問",
+      "terms": "規約",
+      "privacy": "プライバシー",
+      "sitemap": "サイトマップ"
+    },
+    "common": {
+      "readMore": "記事を読む",
+      "previous": "前へ",
+      "next": "次へ",
+      "page": "ページ",
+      "of": "/",
+      "results": "結果",
+      "switchLanguage": "言語"
+    },
+    "footer": {
+      "rights": "無断複写・転載を禁じます。© 2026"
+    }
+  },
+  "ko": {
+    "nav": {
+      "home": "홈",
+      "practice": "연습",
+      "formulas": "공식",
+      "aboutUs": "소개",
+      "contactUs": "문의하기",
+      "blog": "블로그",
+      "faq": "FAQ",
+      "terms": "약관",
+      "privacy": "개인정보",
+      "sitemap": "사이트맵"
+    },
+    "common": {
+      "readMore": "기사 읽기",
+      "previous": "이전",
+      "next": "다음",
+      "page": "페이지",
+      "of": "/",
+      "results": "결과",
+      "switchLanguage": "언어"
+    },
+    "footer": {
+      "rights": "모든 권리 보유. © 2026"
+    }
+  },
+  "ms": {
+    "nav": {
+      "home": "Utama",
+      "practice": "Latihan",
+      "formulas": "Formula",
+      "aboutUs": "Tentang Kami",
+      "contactUs": "Hubungi Kami",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Terma",
+      "privacy": "Privasi",
+      "sitemap": "Peta Laman"
+    },
+    "common": {
+      "readMore": "Baca artikel",
+      "previous": "Sebelum",
+      "next": "Seterusnya",
+      "page": "Halaman",
+      "of": "daripada",
+      "results": "Keputusan",
+      "switchLanguage": "Bahasa"
+    },
+    "footer": {
+      "rights": "Hak cipta terpelihara. © 2026"
+    }
+  },
+  "pl": {
+    "nav": {
+      "home": "Główna",
+      "practice": "Praktyka",
+      "formulas": "Wzory",
+      "aboutUs": "O nas",
+      "contactUs": "Kontakt",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Regulamin",
+      "privacy": "Prywatność",
+      "sitemap": "Mapa strony"
+    },
+    "common": {
+      "readMore": "Czytaj artykuł",
+      "previous": "Poprzedni",
+      "next": "Następny",
+      "page": "Strona",
+      "of": "z",
+      "results": "Wyniki",
+      "switchLanguage": "Język"
+    },
+    "footer": {
+      "rights": "Wszelkie prawa zastrzeżone. © 2026"
+    }
+  },
+  "id": {
+    "nav": {
+      "home": "Beranda",
+      "practice": "Latihan",
+      "formulas": "Rumus",
+      "aboutUs": "Tentang Kami",
+      "contactUs": "Hubungi Kami",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Ketentuan",
+      "privacy": "Privasi",
+      "sitemap": "Peta situs"
+    },
+    "common": {
+      "readMore": "Baca artikel",
+      "previous": "Sebelumnya",
+      "next": "Berikutnya",
+      "page": "Halaman",
+      "of": "dari",
+      "results": "Hasil",
+      "switchLanguage": "Bahasa"
+    },
+    "footer": {
+      "rights": "Hak cipta dilindungi undang-undang. © 2026"
+    }
+  },
+  "ar": {
+    "nav": {
+      "home": "الرئيسية",
+      "practice": "تدريب",
+      "formulas": "صيغ",
+      "aboutUs": "من نحن",
+      "contactUs": "اتصل بنا",
+      "blog": "مدونة",
+      "faq": "الأسئلة الشائعة",
+      "terms": "الشروط",
+      "privacy": "الخصوصية",
+      "sitemap": "خريطة الموقع"
+    },
+    "common": {
+      "readMore": "اقرأ المقال",
+      "previous": "السابق",
+      "next": "التالي",
+      "page": "صفحة",
+      "of": "من",
+      "results": "نتائج",
+      "switchLanguage": "اللغة"
+    },
+    "footer": {
+      "rights": "جميع الحقوق محفوظة. © 2026"
+    }
+  },
+  "bg": {
+    "nav": {
+      "home": "Начало",
+      "practice": "Практика",
+      "formulas": "Формули",
+      "aboutUs": "За нас",
+      "contactUs": "Контакт",
+      "blog": "Блог",
+      "faq": "ЧЗВ",
+      "terms": "Условия",
+      "privacy": "Поверителност",
+      "sitemap": "Карта на сайта"
+    },
+    "common": {
+      "readMore": "Прочети статията",
+      "previous": "Предишна",
+      "next": "Следваща",
+      "page": "Страница",
+      "of": "от",
+      "results": "Резултати",
+      "switchLanguage": "Език"
+    },
+    "footer": {
+      "rights": "Всички права запазени. © 2026"
+    }
+  },
+  "tr": {
+    "nav": {
+      "home": "Ana Sayfa",
+      "practice": "Pratik",
+      "formulas": "Formüller",
+      "aboutUs": "Hakkımızda",
+      "contactUs": "İletişim",
+      "blog": "Blog",
+      "faq": "SSS",
+      "terms": "Şartlar",
+      "privacy": "Gizlilik",
+      "sitemap": "Site Haritası"
+    },
+    "common": {
+      "readMore": "Makaleyi oku",
+      "previous": "Önceki",
+      "next": "Sonraki",
+      "page": "Sayfa",
+      "of": "/",
+      "results": "Sonuçlar",
+      "switchLanguage": "Dil"
+    },
+    "footer": {
+      "rights": "Tüm hakları saklıdır. © 2026"
+    }
+  },
+  "sv": {
+    "nav": {
+      "home": "Hem",
+      "practice": "Träna",
+      "formulas": "Formler",
+      "aboutUs": "Om oss",
+      "contactUs": "Kontakt",
+      "blog": "Blogg",
+      "faq": "FAQ",
+      "terms": "Villkor",
+      "privacy": "Integritet",
+      "sitemap": "Webbplatskarta"
+    },
+    "common": {
+      "readMore": "Läs artikel",
+      "previous": "Föregående",
+      "next": "Nästa",
+      "page": "Sida",
+      "of": "av",
+      "results": "Resultat",
+      "switchLanguage": "Språk"
+    },
+    "footer": {
+      "rights": "Alla rättigheter förbehållna. © 2026"
+    }
+  },
+  "zh": {
+    "nav": {
+      "home": "首页",
+      "practice": "练习",
+      "formulas": "公式",
+      "aboutUs": "关于我们",
+      "contactUs": "联系我们",
+      "blog": "博客",
+      "faq": "常见问题",
+      "terms": "条款",
+      "privacy": "隐私",
+      "sitemap": "网站地图"
+    },
+    "common": {
+      "readMore": "阅读文章",
+      "previous": "上一页",
+      "next": "下一页",
+      "page": "页",
+      "of": "/",
+      "results": "结果",
+      "switchLanguage": "语言"
+    },
+    "footer": {
+      "rights": "版权所有。© 2026"
     }
   }
 }
+

@@ -6,12 +6,18 @@ interface Props {
   locale: Locale;
   heading?: string;
   description?: string;
+  uiTools?: string;
+  uiInput?: string;
+  uiOutput?: string;
 }
 
 const {
   locale,
   heading = 'All Formula Solvers',
-  description = 'Each tool has its own dedicated page with title-specific inputs and precision output.'
+  description = 'Each tool has its own dedicated page with title-specific inputs and precision output.',
+  uiTools = 'Precision Tools',
+  uiInput = 'Input',
+  uiOutput = 'Output'
 } = Astro.props;
 
 const formulasRoot = localizePath(locale, '/formulas/');
@@ -130,7 +136,7 @@ const tools = RIGHT_TRIANGLE_FORMULAS.filter(f => f.calculator != null);
   <div class="relative z-10 flex flex-col items-center text-center">
     <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 backdrop-blur-md">
       <span class="material-symbols-outlined text-[14px] text-primary">auto_awesome</span>
-      <span class="font-label text-xs uppercase tracking-[0.2em] text-primary">{tools.length} Precision Tools</span>
+      <span class="font-label text-xs uppercase tracking-[0.2em] text-primary">{tools.length} {uiTools}</span>
     </div>
     
     <h2 id="calculator-catalog-heading" class="text-glow-primary font-headline text-3xl tracking-tight text-on-surface sm:text-4xl lg:text-5xl">
@@ -235,13 +241,13 @@ const tools = RIGHT_TRIANGLE_FORMULAS.filter(f => f.calculator != null);
 
           <div class="relative z-10 mt-6 flex flex-col gap-3">
             <div class="flex items-center gap-2">
-              <span class="rounded border border-outline-variant/30 bg-surface-container-high px-2 py-1 font-mono text-[10px] text-on-surface-variant/80">Input</span>
+              <span class="rounded border border-outline-variant/30 bg-surface-container-high px-2 py-1 font-mono text-[10px] text-on-surface-variant/80">{uiInput}</span>
               <span class="text-xs font-medium text-on-surface">
                 {calculator.fields.map((f) => f.label.replace('Leg ', '').replace('Hypotenuse ', '').replace('Adjacent ', '').replace('Opposite ', '')).join(' + ')}
               </span>
             </div>
             <div class="flex items-center gap-2">
-              <span class="rounded border px-2 py-1 font-mono text-[10px]" style={`color: ${theme.hex}; border-color: rgba(${theme.rgbaBase},0.3); background: rgba(${theme.rgbaBase},0.1);`}>Output</span>
+              <span class="rounded border px-2 py-1 font-mono text-[10px]" style={`color: ${theme.hex}; border-color: rgba(${theme.rgbaBase},0.3); background: rgba(${theme.rgbaBase},0.1);`}>{uiOutput}</span>
               <span class="text-xs font-medium" style={`color: ${theme.hex};`}>
                 {calculator.outputLabel}
               </span>

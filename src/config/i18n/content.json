@@ -8,14 +8,28 @@
       "title": "Right Triangle Solver | Instant Geometry Helper",
       "description": "Find missing sides, area, and perimeter in seconds with an accessible right triangle calculator.",
       "heading": "Right Triangle Solver",
-      "intro": "Calculate missing values fast, review formulas, and validate your geometry work with confidence.",
+      "intro": "Calculate hypotenuse, angles, area, and geometry instantly with our precision digital tool.",
       "toolHeading": "Right Triangle calculator",
       "toolDescription": "Enter any two legs to calculate hypotenuse, area, and perimeter instantly.",
       "howHeading": "How Right Triangle Solver works",
+      "howIntro": "From input to proof-ready output in three clean steps.",
+      "step1Title": "1. Enter known values",
+      "step1Desc": "Provide any valid right-triangle inputs and keep units consistent.",
+      "step2Title": "2. Solve instantly",
+      "step2Desc": "The solver applies Pythagorean and trigonometric relations in real time.",
+      "step3Title": "3. Validate the geometry",
+      "step3Desc": "Use live visualization, ratios, and derived metrics to verify your answer.",
       "chartHeading": "Reference Values",
+      "chartSubHeading": "Compare common right-triangle families and their hypotenuse values.",
+      "chartLabel1": "Triangle",
+      "chartLabel2": "Hypotenuse",
       "catalogHeading": "All Tool Calculators",
       "catalogDescription": "Browse every formula tool. Each page has a dedicated calculator built for that title intent.",
-      "faqHeading": "Frequently Asked Questions"
+      "catalogTools": "Precision Tools",
+      "catalogInput": "Input",
+      "catalogOutput": "Output",
+      "faqHeading": "Frequently Asked Questions",
+      "viewAllFaqs": "View All Detailed FAQs"
     },
     "about": {
       "title": "About Us | Right Triangle Solver",
@@ -63,10 +77,653 @@
       "notFoundCta": "Back to Home"
     }
   },
-  "ar": {
+  "hi": {
+    "site": {
+      "title": "समकोण त्रिभुज सॉल्वर",
+      "description": "स्पष्ट फ़ार्मुलों, विजुअल मार्गदर्शन और व्यावहारिक उदाहरणों के साथ समकोण त्रिभुजों को तेज़ी से हल करें।"
+    },
     "home": {
-      "heading": "Right Triangle Solver (Arabic)",
-      "intro": "Arabic locale uses RTL layout with English fallback content."
+      "title": "समकोण त्रिभुज सॉल्वर | त्वरित ज्यामिति सहायक",
+      "description": "एक सुलभ समकोण त्रिभुज कैलकुलेटर के साथ सेकंड में लापता पक्षों, क्षेत्रफल और परिधि का पता लगाएं।",
+      "heading": "समकोण त्रिभुज सॉल्वर",
+      "intro": "हमारे सटीक डिजिटल टूल के साथ तुरंत कर्ण, कोण, क्षेत्रफल और ज्यामिति की गणना करें।",
+      "toolHeading": "समकोण त्रिभुज कैलकुलेटर",
+      "toolDescription": "कर्ण, क्षेत्रफल और परिधि की तुरंत गणना करने के लिए किन्हीं दो भुजाओं को दर्ज करें।",
+      "howHeading": "समकोण त्रिभुज सॉल्वर कैसे काम करता है",
+      "howIntro": "इनपुट से प्रमाण-तैयार आउटपुट तक तीन स्पष्ट चरणों में।",
+      "step1Title": "1. ज्ञात मान दर्ज करें",
+      "step1Desc": "कोई भी मान्य समकोण-त्रिभुज इनपुट प्रदान करें और इकाइयों को सुसंगत रखें।",
+      "step2Title": "2. तुरंत हल करें",
+      "step2Desc": "सॉल्वर वास्तविक समय में पाइथागोरस और त्रिकोणमितीय संबंधों को लागू करता है।",
+      "step3Title": "3. ज्यामिति को मान्य करें",
+      "step3Desc": "अपने उत्तर को सत्यापित करने के लिए लाइव विज़ुअलाइज़ेशन, अनुपात और व्युत्पन्न मीट्रिक का उपयोग करें।",
+      "chartHeading": "संदर्भ मान",
+      "chartSubHeading": "सामान्य समकोण-त्रिभुज परिवारों और उनके कर्ण मानों की तुलना करें।",
+      "chartLabel1": "त्रिभुज",
+      "chartLabel2": "कर्ण",
+      "catalogHeading": "सभी उपकरण कैलकुलेटर",
+      "catalogDescription": "हर फॉर्मूला टूल ब्राउज़ करें। प्रत्येक पृष्ठ में उस शीर्षक के लिए बनाया गया एक समर्पित कैलकुलेटर है।",
+      "catalogTools": "सटीक उपकरण",
+      "catalogInput": "इनपुट",
+      "catalogOutput": "आउटपुट",
+      "faqHeading": "अक्सर पूछे जाने वाले प्रश्न",
+      "viewAllFaqs": "सभी विस्तृत प्रश्न देखें"
+    },
+    "footer": {
+      "description": "समकोण-त्रिभुज गणना और सीखने के लिए एक तेज़ ज्यामिति कार्यक्षेत्र।"
+    }
+  },
+  "es": {
+    "site": {
+      "title": "Resolutor de Triángulos Rectángulos",
+      "description": "Resuelva triángulos rectángulos rápidamente con fórmulas claras, guía visual y ejemplos prácticos."
+    },
+    "home": {
+      "title": "Resolutor de Triángulos Rectángulos | Ayuda Geométrica Instantánea",
+      "description": "Encuentre lados faltantes, área y perímetro en segundos con una calculadora de triángulos rectángulos accesible.",
+      "heading": "Resolutor de Triángulos Rectángulos",
+      "intro": "Calcule hipotenusa, ángulos, área y geometría al instante con nuestra herramienta digital de precisión.",
+      "toolHeading": "Calculadora de Triángulos Rectángulos",
+      "toolDescription": "Ingrese dos lados cualesquiera para calcular la hipotenusa, el área y el perímetro al instante.",
+      "howHeading": "Cómo funciona el Resolutor de Triángulos Rectángulos",
+      "howIntro": "Desde la entrada hasta el resultado listo para usar en tres sencillos pasos.",
+      "step1Title": "1. Ingrese valores conocidos",
+      "step1Desc": "Proporcione cualquier entrada válida de triángulo rectángulo y mantenga las unidades constantes.",
+      "step2Title": "2. Resuelva al instante",
+      "step2Desc": "El resolutor aplica relaciones pitagóricas y trigonométricas en tiempo real.",
+      "step3Title": "3. Valide la geometría",
+      "step3Desc": "Use visualización en vivo, proporciones y métricas derivadas para verificar su respuesta.",
+      "chartHeading": "Valores de Referencia",
+      "chartSubHeading": "Compare familias comunes de triángulos rectángulos y sus valores de hipotenusa.",
+      "chartLabel1": "Triángulo",
+      "chartLabel2": "Hipotenusa",
+      "catalogHeading": "Todos los Calculadores",
+      "catalogDescription": "Explore cada herramienta de fórmula. Cada página tiene una calculadora dedicada diseñada para ese propósito.",
+      "catalogTools": "Herramientas de Precisión",
+      "catalogInput": "Entrada",
+      "catalogOutput": "Salida",
+      "faqHeading": "Preguntas Frecuentes",
+      "viewAllFaqs": "Ver todas las preguntas detalladas"
+    },
+    "footer": {
+      "description": "Un espacio de trabajo geométrico rápido para cálculos y aprendizaje de triángulos rectángulos."
+    }
+  },
+  "ru": {
+    "site": {
+      "title": "Решатель прямоугольных треугольников",
+      "description": "Решайте прямоугольные треугольники быстро с помощью четких формул, визуальных подсказок и практических примеров."
+    },
+    "home": {
+      "title": "Решатель прямоугольных треугольников | Мгновенный помощник по геометрии",
+      "description": "Найдите недостающие стороны, площадь и периметр за считанные секунды с помощью доступного калькулятора.",
+      "heading": "Решатель прямоугольных треугольников",
+      "intro": "Мгновенно рассчитывайте гипотенузу, углы, площадь и геометрию с помощью нашего точного цифрового инструмента.",
+      "toolHeading": "Калькулятор прямоугольного треугольника",
+      "toolDescription": "Введите любые две стороны, чтобы мгновенно рассчитать гипотенузу, площадь и периметр.",
+      "howHeading": "Как работает решатель прямоугольных треугольников",
+      "howIntro": "От ввода данных до готового результата за три простых шага.",
+      "step1Title": "1. Введите известные значения",
+      "step1Desc": "Введите любые допустимые данные для прямоугольного треугольника и соблюдайте единство единиц измерения.",
+      "step2Title": "2. Мгновенное решение",
+      "step2Desc": "Решатель применяет пифагоровы и тригонометрические отношения в режиме реального времени.",
+      "step3Title": "3. Проверка геометрии",
+      "step3Desc": "Используйте живую визуализацию, соотношения и производные метрики для проверки вашего ответа.",
+      "chartHeading": "Справочные значения",
+      "chartSubHeading": "Сравните распространенные семейства прямоугольных треугольников и значения их гипотенуз.",
+      "chartLabel1": "Треугольник",
+      "chartLabel2": "Гипотенуза",
+      "catalogHeading": "Все калькуляторы",
+      "catalogDescription": "Просмотрите каждую формулу. Каждая страница содержит специальный калькулятор, созданный для конкретной задачи.",
+      "catalogTools": "Точные инструменты",
+      "catalogInput": "Ввод",
+      "catalogOutput": "Вывод",
+      "faqHeading": "Часто задаваемые вопросы",
+      "viewAllFaqs": "Посмотреть все подробные вопросы"
+    },
+    "footer": {
+      "description": "Быстрое геометрическое рабочее пространство для расчетов прямоугольных треугольников и обучения."
+    }
+  },
+  "fr": {
+    "site": {
+      "title": "Calculateur de Triangle Rectangle",
+      "description": "Résolvez des triangles rectangles rapidement avec des formules claires, des guides visuels et des exemples pratiques."
+    },
+    "home": {
+      "title": "Calculateur de Triangle Rectangle | Aide Géométrique Instantanée",
+      "description": "Trouvez les côtés manquants, l'aire et le périmètre en quelques secondes avec un calculateur accessible.",
+      "heading": "Calculateur de Triangle Rectangle",
+      "intro": "Calculez l'hypoténuse, les angles, l'aire et la géométrie instantanément avec notre outil numérique de précision.",
+      "toolHeading": "Solveur de Triangle Rectangle",
+      "toolDescription": "Entrez deux côtés pour calculer instantanément l'hypoténuse, l'aire et le périmètre.",
+      "howHeading": "Comment fonctionne le solveur de triangle rectangle",
+      "howIntro": "De la saisie au résultat final en trois étapes simples.",
+      "step1Title": "1. Entrez les valeurs connues",
+      "step1Desc": "Fournissez des entrées valides pour un triangle rectangle et gardez des unités cohérentes.",
+      "step2Title": "2. Résolvez instantanément",
+      "step2Desc": "Le solveur applique les relations pythagoriciennes et trigonométriques en temps réel.",
+      "step3Title": "3. Validez la géométrie",
+      "step3Desc": "Utilisez la visualisation en direct, les rapports et les métriques dérivées pour vérifier votre réponse.",
+      "chartHeading": "Valeurs de Référence",
+      "chartSubHeading": "Comparez les familles de triangles rectangles courants et leurs valeurs d'hypoténuse.",
+      "chartLabel1": "Triangle",
+      "chartLabel2": "Hypoténuse",
+      "catalogHeading": "Tous les Calculateurs",
+      "catalogDescription": "Parcourez chaque outil de formule. Chaque page dispose d'un calculateur dédié conçu pour cette intention.",
+      "catalogTools": "Outils de Précision",
+      "catalogInput": "Entrée",
+      "catalogOutput": "Sortie",
+      "faqHeading": "Questions Fréquemment Posées",
+      "viewAllFaqs": "Voir toutes les FAQ détaillées"
+    },
+    "footer": {
+      "description": "Un espace de travail géométrique rapide pour les calculs de triangles rectangles et l'apprentissage."
+    }
+  },
+  "de": {
+    "site": {
+      "title": "Rechtwinkliger Dreiecksrechner",
+      "description": "Lösen Sie rechtwinklige Dreiecke schnell mit klaren Formeln, visueller Anleitung und praktischen Beispielen."
+    },
+    "home": {
+      "title": "Rechtwinkliger Dreiecksrechner | Soforthilfe Geometrie",
+      "description": "Finden Sie fehlende Seiten, Fläche und Umfang in Sekunden mit einem zugänglichen Rechner.",
+      "heading": "Rechtwinkliger Dreiecksrechner",
+      "intro": "Berechnen Sie Hypotenuse, Winkel, Fläche und Geometrie sofort mit unserem präzisen digitalen Werkzeug.",
+      "toolHeading": "Rechner für rechtwinklige Dreiecke",
+      "toolDescription": "Geben Sie zwei beliebige Seiten ein, um Hypotenuse, Fläche und Umfang sofort zu berechnen.",
+      "howHeading": "Wie der Dreiecksrechner funktioniert",
+      "howIntro": "Von der Eingabe bis zum fertigen Ergebnis in drei sauberen Schritten.",
+      "step1Title": "1. Bekannte Werte eingeben",
+      "step1Desc": "Geben Sie gültige Eingaben ein und achten Sie auf einheitliche Einheiten.",
+      "step2Title": "2. Sofort lösen",
+      "step2Desc": "Der Rechner wendet pythagoreische und trigonometrische Beziehungen in Echtzeit an.",
+      "step3Title": "3. Geometrie validieren",
+      "step3Desc": "Nutzen Sie Live-Visualisierungen, Verhältnisse und abgeleitete Metriken zur Überprüfung.",
+      "chartHeading": "Referenzwerte",
+      "chartSubHeading": "Vergleichen Sie gängige Dreiecksfamilien und ihre Hypotenusenwerte.",
+      "chartLabel1": "Dreieck",
+      "chartLabel2": "Hypotenuse",
+      "catalogHeading": "Alle Formel-Rechner",
+      "catalogDescription": "Durchsuchen Sie jedes Werkzeug. Jede Seite hat einen speziellen Rechner für diese Aufgabe.",
+      "catalogTools": "Präzisionswerkzeuge",
+      "catalogInput": "Eingabe",
+      "catalogOutput": "Ausgabe",
+      "faqHeading": "Häufig gestellte Fragen",
+      "viewAllFaqs": "Alle detaillierten FAQs anzeigen"
+    },
+    "footer": {
+      "description": "Ein schneller Geometrie-Arbeitsbereich für Berechnungen am rechtwinkligen Dreieck und zum Lernen."
+    }
+  },
+  "it": {
+    "site": {
+      "title": "Risolutore di Triangoli Rettangoli",
+      "description": "Risolvi triangoli rettangoli velocemente con formule chiare, guida visiva ed esempi pratici."
+    },
+    "home": {
+      "title": "Risolutore di Triangoli Rettangoli | Aiuto Geometrico Istantaneo",
+      "description": "Trova lati mancanti, area e perimetro in pochi secondi con un calcolatore accessibile.",
+      "heading": "Risolutore di Triangoli Rettangoli",
+      "intro": "Calcola ipotenusa, angoli, area e geometria istantaneamente con il nostro strumento digitale di precision.",
+      "toolHeading": "Calcolatore Triangolo Rettangolo",
+      "toolDescription": "Inserisci due lati qualsiasi per calcolare istantaneamente ipotenusa, area e perimetro.",
+      "howHeading": "Come funziona il Risolutore",
+      "howIntro": "Dall'inserimento al risultato finale in tre semplici passaggi.",
+      "step1Title": "1. Inserisci i valori noti",
+      "step1Desc": "Fornisci input validi e mantieni le unità di misura coerenti.",
+      "step2Title": "2. Risolvi istantaneamente",
+      "step2Desc": "Il risolutore applica le relazioni pitagoriche e trigonometriche in tempo reale.",
+      "step3Title": "3. Convalida la geometria",
+      "step3Desc": "Usa visualizzazione live, rapporti e metriche derivate per verificare la tua risposta.",
+      "chartHeading": "Valori di Riferimento",
+      "chartSubHeading": "Confronta le famiglie comuni di triangoli rettangoli e i loro valori di ipotenusa.",
+      "chartLabel1": "Triangolo",
+      "chartLabel2": "Ipotenusa",
+      "catalogHeading": "Tutti i Calcolatori",
+      "catalogDescription": "Sfoglia ogni strumento. Ogni pagina ha un calcolatore dedicato creato per quell'intento specifico.",
+      "catalogTools": "Strumenti di Precisione",
+      "catalogInput": "Input",
+      "catalogOutput": "Output",
+      "faqHeading": "Domande Frequenti",
+      "viewAllFaqs": "Visualizza tutte le FAQ dettagliate"
+    },
+    "footer": {
+      "description": "Uno spazio di lavoro geometrico rapido per i calcoli dei triangoli rettangoli e l'apprendimento."
+    }
+  },
+  "pt": {
+    "site": {
+      "title": "Calculadora de Triângulos Retângulos",
+      "description": "Resolva triângulos retângulos rapidamente com fórmulas claras, guia visual e exemplos práticos."
+    },
+    "home": {
+      "title": "Calculadora de Triângulos Retângulos | Ajuda Geométrica Instantânea",
+      "description": "Encontre lados ausentes, área e perímetro em segundos com uma calculadora acessível.",
+      "heading": "Calculadora de Triângulos Retângulos",
+      "intro": "Calcule hipotenusa, ângulos, área e geometria instantaneamente com nossa ferramenta digital de precisão.",
+      "toolHeading": "Resolvido de Triângulo Retângulo",
+      "toolDescription": "Insira dois lados quaisquer para calcular a hipotenusa, área e perímetro instantaneamente.",
+      "howHeading": "Como funciona a calculadora",
+      "howIntro": "Da entrada ao resultado final em três etapas simples.",
+      "step1Title": "1. Insira valores conhecidos",
+      "step1Desc": "Forneça entradas válidas e mantenha as unidades consistentes.",
+      "step2Title": "2. Resolva instantaneamente",
+      "step2Desc": "A ferramenta aplica relações pitagóricas e trigonométricas em tempo real.",
+      "step3Title": "3. Valide a geometria",
+      "step3Desc": "Use visualização ao vivo, proporções e métricas derivadas para verificar sua resposta.",
+      "chartHeading": "Valores de Referência",
+      "chartSubHeading": "Compare famílias comuns de triângulos retângulos e seus valores de hipotenusa.",
+      "chartLabel1": "Triângulo",
+      "chartLabel2": "Hipotenusa",
+      "catalogHeading": "Todas as Calculadoras",
+      "catalogDescription": "Navegue por todas as ferramentas. Cada página tem uma calculadora dedicada para essa finalidade.",
+      "catalogTools": "Ferramentas de Precisão",
+      "catalogInput": "Entrada",
+      "catalogOutput": "Saída",
+      "faqHeading": "Perguntas Frequentes",
+      "viewAllFaqs": "Ver todas as perguntas detalhadas"
+    },
+    "footer": {
+      "description": "Um espaço de trabalho geométrico rápido para cálculos de triângulos retângulos e aprendizado."
+    }
+  },
+  "bn": {
+    "site": {
+      "title": "সমকোণী ত্রিভুজ সমাধানকারী",
+      "description": "পরিষ্কার সূত্র, ভিজ্যুয়াল গাইডেন্স এবং ব্যবহারিক উদাহরণ সহ দ্রুত সমকোণী ত্রিভুজ সমাধান করুন।"
+    },
+    "home": {
+      "title": "সমকোণী ত্রিভুজ সমাধানকারী | তাৎক্ষণিক জ্যামিতি সহায়ক",
+      "description": "একটি সহজলভ্য সমকোণী ত্রিভুজ ক্যালকুলেটর দিয়ে কয়েক সেকেন্ডের মধ্যে অনুপস্থিত বাহু, ক্ষেত্রফল এবং পরিধি খুঁজুন।",
+      "heading": "সমকোণী ত্রিভুজ সমাধানকারী",
+      "intro": "আমাদের সুনির্দিষ্ট ডিজিটাল টুলের সাহায্যে তাৎক্ষণিকভাবে অতিভুজ, কোণ, ক্ষেত্রফল এবং জ্যামিতি গণনা করুন।",
+      "toolHeading": "সমকোণী ত্রিভুজ ক্যালকুলেটর",
+      "toolDescription": "তাৎক্ষণিকভাবে অতিভুজ, ক্ষেত্রফল এবং পরিধি গণনা করতে যেকোনো দুটি বাহু ইনপুট দিন।",
+      "howHeading": "সমকোণী ত্রিভুজ সমাধানকারী কীভাবে কাজ করে",
+      "howIntro": "ইনপুট থেকে আউটপুট পর্যন্ত তিনটি সহজ ধাপ।",
+      "step1Title": "১. পরিচিত মানগুলি লিখুন",
+      "step1Desc": "যেকোনো বৈধ সমকোণী ত্রিভুজ ইনপুট প্রদান করুন এবং এককগুলি সামঞ্জস্যপূর্ণ রাখুন।",
+      "step2Title": "২. তাৎক্ষণিক সমাধান",
+      "step2Desc": "সলিভারটি রিয়েল-টাইমে পিথাগোরাস এবং ত্রিকোণমিতিক সম্পর্ক প্রয়োগ করে।",
+      "step3Title": "৩. জ্যামিতি যাচাই করুন",
+      "step3Desc": "আপনার উত্তর যাচাই করতে লাইভ ভিজ্যুয়ালাইজেশন, অনুপাত এবং প্রাপ্ত মেট্রিক্স ব্যবহার করুন।",
+      "chartHeading": "রেফারেন্স মান",
+      "chartSubHeading": "সাধারণ সমকোণী ত্রিভুজ পরিবার এবং তাদের অতিভুজের মান তুলনা করুন।",
+      "chartLabel1": "ত্রিভুজ",
+      "chartLabel2": "অতিভুজ",
+      "catalogHeading": "সব টুল ক্যালকুলেটর",
+      "catalogDescription": "প্রতিটি সূত্র টুল ব্রাউজ করুন। প্রতিটি পৃষ্ঠায় সেই নির্দিষ্ট উদ্দেশ্যে তৈরি করা একটি ক্যালকুলেটর রয়েছে।",
+      "catalogTools": "নির্ভুল টুলস",
+      "catalogInput": "ইনপুট",
+      "catalogOutput": "আউটপুট",
+      "faqHeading": "সচরাচর জিজ্ঞাস্য প্রশ্নাবলী",
+      "viewAllFaqs": "সব বিস্তারিত প্রশ্ন দেখুন"
+    },
+    "footer": {
+      "description": "সমকোণী-ত্রিভুজ গণনা এবং শেখার জন্য একটি দ্রুত জ্যামিতি কর্মক্ষেত্র।"
+    }
+  },
+  "ja": {
+    "site": {
+      "title": "直角三角形ソルバー",
+      "description": "明確な公式、視覚的なガイダンス、実用的な例を使用して、直角三角形を迅速に解決します。"
+    },
+    "home": {
+      "title": "直角三角形ソルバー | インスタント幾何学ヘルパー",
+      "description": "アクセシブルな直角三角形計算機を使用して、不足している辺、面積、周囲を数秒で見つけます。",
+      "heading": "直角三角形ソルバー",
+      "intro": "当社の精密デジタルツールを使用して、斜辺、角度、面積、幾何学を即座に計算します。",
+      "toolHeading": "直角三角形計算機",
+      "toolDescription": "任意の2辺を入力すると、斜辺、面積、周囲が即座に計算されます。",
+      "howHeading": "直角三角形ソルバーの仕組み",
+      "howIntro": "入力から出力まで、3つのクリーンなステップで完了します。",
+      "step1Title": "1. 既知の値を入力する",
+      "step1Desc": "有効な直角三角形の入力を提供し、単位を一定に保ちます。",
+      "step2Title": "2. 即座に解決",
+      "step2Desc": "ソルバーは、ピタゴラスの定理と三角関数の関係をリアルタイムで適用します。",
+      "step3Title": "3. 幾何学を検証する",
+      "step3Desc": "ライブ視覚化、比率、派生メトリクスを使用して、答えを検証します。",
+      "chartHeading": "参照値",
+      "chartSubHeading": "一般的な直角三角形のファミリーとその斜辺の値を比較します。",
+      "chartLabel1": "三角形",
+      "chartLabel2": "斜辺",
+      "catalogHeading": "すべてのツール計算機",
+      "catalogDescription": "すべての公式ツールを閲覧。各ページにはその目的に合わせた専用の計算機があります。",
+      "catalogTools": "精密ツール",
+      "catalogInput": "入力",
+      "catalogOutput": "出力",
+      "faqHeading": "よくある質問",
+      "viewAllFaqs": "すべての詳細なFAQを表示"
+    },
+    "footer": {
+      "description": "直角三角形の計算と学習のための高速な幾何学ワークスペース。"
+    }
+  },
+  "ko": {
+    "site": {
+      "title": "직각 삼각형 솔버",
+      "description": "명확한 공식, 시각적 안내 및 실용적인 예를 통해 직각 삼각형을 신속하게 해결하세요."
+    },
+    "home": {
+      "title": "직각 삼각형 솔버 | 즉석 기하학 도움말",
+      "description": "접근 가능한 직각 삼각형 계산기로 누락된 변, 넓이, 둘레를 몇 초 만에 찾으세요.",
+      "heading": "직각 삼각형 솔버",
+      "intro": "정밀 디지털 도구를 사용하여 빗변, 각도, 넓이 및 기하학을 즉시 계산하십시오.",
+      "toolHeading": "직각 삼각형 계산기",
+      "toolDescription": "임의의 두 변을 입력하여 빗변, 넓이, 둘레를 즉시 계산하십시오.",
+      "howHeading": "직각 삼각형 솔버 작동 원리",
+      "howIntro": "입력부터 결과 도출까지 깔끔한 세 단계로 진행됩니다.",
+      "step1Title": "1. 알려진 값 입력",
+      "step1Desc": "유효한 직각 삼각형 입력을 제공하고 단위를 일관되게 유지하십시오.",
+      "step2Title": "2. 즉시 해결",
+      "step2Desc": "솔버는 실시간으로 피타고라스와 삼각 함수 관계를 적용합니다.",
+      "step3Title": "3. 기하학 검증",
+      "step3Desc": "라이브 시각화, 비율 및 파생 메트릭을 사용하여 답변을 확인하십시오.",
+      "chartHeading": "참조 값",
+      "chartSubHeading": "일반적인 직각 삼각형 제품군과 빗변 값을 비교해 보세요.",
+      "chartLabel1": "삼각형",
+      "chartLabel2": "빗변",
+      "catalogHeading": "모든 도구 계산기",
+      "catalogDescription": "모든 공식 도구를 찾아보세요. 각 페이지에는 해당 목적에 맞게 제작된 전용 계산기가 있습니다.",
+      "catalogTools": "정밀 도구",
+      "catalogInput": "입력",
+      "catalogOutput": "출력",
+      "faqHeading": "자주 묻는 질문",
+      "viewAllFaqs": "모든 상세 FAQ 보기"
+    },
+    "footer": {
+      "description": "직각 삼각형 계산 및 학습을 위한 빠른 기하학 작업 공간입니다."
+    }
+  },
+  "ms": {
+    "site": {
+      "title": "Penyelesai Segitiga Bersudut Tegak",
+      "description": "Selesaikan segitiga bersudut tegak dengan pantas menggunakan formula yang jelas, panduan visual dan contoh praktikal."
+    },
+    "home": {
+      "title": "Penyelesai Segitiga Bersudut Tegak | Pembantu Geometri Segera",
+      "description": "Cari sisi yang hilang, luas, dan perimeter dalam beberapa saat dengan kalkulator yang mudah digunakan.",
+      "heading": "Penyelesai Segitiga Bersudut Tegak",
+      "intro": "Kira hipotenus, sudut, luas, dan geometri serta-merta dengan alat digital ketepatan kami.",
+      "toolHeading": "Kalkulator Segitiga Bersudut Tegak",
+      "toolDescription": "Masukkan mana-mana dua sisi untuk mengira hipotenus, luas, dan perimeter serta-merta.",
+      "howHeading": "Cara Penyelesai Segitiga Bersudut Tegak berfungsi",
+      "howIntro": "Daripada input kepada output dalam tiga langkah bersih.",
+      "step1Title": "1. Masukkan nilai yang diketahui",
+      "step1Desc": "Berikan input yang sah dan pastikan unit adalah konsisten.",
+      "step2Title": "2. Selesaikan serta-merta",
+      "step2Desc": "Penyelesai menggunakan hubungan Pythagoras dan trigonometri dalam masa nyata.",
+      "step3Title": "3. Sahkan geometri",
+      "step3Desc": "Gunakan visualisasi langsung, nisbah, dan metrik terbitan untuk mengesahkan jawapan anda.",
+      "chartHeading": "Nilai Rujukan",
+      "chartSubHeading": "Bandingkan keluarga segitiga bersudut tegak yang biasa dan nilai hipotenusnya.",
+      "chartLabel1": "Segitiga",
+      "chartLabel2": "Hipotenus",
+      "catalogHeading": "Semua Kalkulator Alat",
+      "catalogDescription": "Layari setiap alat formula. Setiap halaman mempunyai kalkulator khusus yang dibina untuk tujuan tersebut.",
+      "catalogTools": "Alatan Ketepatan",
+      "catalogInput": "Input",
+      "catalogOutput": "Output",
+      "faqHeading": "Soalan Lazim",
+      "viewAllFaqs": "Lihat Semua Soalan Lazim Terperinci"
+    },
+    "footer": {
+      "description": "Ruang kerja geometri pantas untuk pengiraan segitiga bersudut tegak dan pembelajaran."
+    }
+  },
+  "pl": {
+    "site": {
+      "title": "Rozwiązywanie Trójkątów Prostokątnych",
+      "description": "Rozwiązuj trójkąty prostokątne szybko, korzystając z jasnych wzorów, wskazówek wizualnych i praktycznych przykładów."
+    },
+    "home": {
+      "title": "Rozwiązywanie Trójkątów Prostokątnych | Natychmiastowa Pomoc",
+      "description": "Znajdź brakujące boki, pole i obwód w kilka sekund za pomocą przystępnego kalkulatora.",
+      "heading": "Rozwiązywanie Trójkątów Prostokątnych",
+      "intro": "Oblicz przeciwprostokątną, kąty, pole i geometrię natychmiast za pomocą naszego precyzyjnego narzędzia cyfrowego.",
+      "toolHeading": "Kalkulator Trójkąta Prostokątnego",
+      "toolDescription": "Wprowadź dowolne dwa boki, aby natychmiast obliczyć przeciwprostokątną, pole i obwód.",
+      "howHeading": "Jak działa rozwiązywanie trójkątów prostokątnych",
+      "howIntro": "Od wprowadzenia danych do gotowego wyniku w trzech prostych krokach.",
+      "step1Title": "1. Wprowadź znane wartości",
+      "step1Desc": "Podaj dowolne poprawne dane wejściowe i zachowaj spójność jednostek.",
+      "step2Title": "2. Rozwiąż natychmiast",
+      "step2Desc": "Kalkulator stosuje zależności pitagorejskie i trygonometryczne w czasie rzeczywistym.",
+      "step3Title": "3. Zweryfikuj geometrię",
+      "step3Desc": "Użyj wizualizacji na żywo, proporcji i pochodnych miar, aby sprawdzić swoją odpowiedź.",
+      "chartHeading": "Wartości Referencyjne",
+      "chartSubHeading": "Porównaj typowe rodziny trójkątów prostokątnych i ich wartości przeciwprostokątnych.",
+      "chartLabel1": "Trójkąt",
+      "chartLabel2": "Przeciwprostokątna",
+      "catalogHeading": "Wszystkie Kalkulatory",
+      "catalogDescription": "Przeglądaj każde narzędzie. Każda strona posiada dedykowany kalkulator stworzony dla konkretnego celu.",
+      "catalogTools": "Narzędzia Precyzyjne",
+      "catalogInput": "Wejście",
+      "catalogOutput": "Wyjście",
+      "faqHeading": "Często Zadawane Pytania",
+      "viewAllFaqs": "Zobacz wszystkie szczegółowe pytania"
+    },
+    "footer": {
+      "description": "Szybka przestrzeń geometryczna do obliczeń trójkątów prostokątnych i nauki."
+    }
+  },
+  "id": {
+    "site": {
+      "title": "Pemecah Segitiga Siku-siku",
+      "description": "Selesaikan segitiga siku-siku dengan cepat dengan rumus yang jelas, panduan visual, dan contoh praktis."
+    },
+    "home": {
+      "title": "Pemecah Segitiga Siku-siku | Pembantu Geometri Instan",
+      "description": "Temukan sisi yang hilang, luas, dan keliling dalam hitungan detik dengan kalkulator segitiga siku-siku.",
+      "heading": "Pemecah Segitiga Siku-siku",
+      "intro": "Hitung hipotenusa, sudut, luas, dan geometri secara instan dengan alat digital presisi kami.",
+      "toolHeading": "Kalkulator Segitiga Siku-siku",
+      "toolDescription": "Masukkan dua sisi apa pun untuk menghitung hipotenusa, luas, dan keliling secara instan.",
+      "howHeading": "Cara kerja Pemecah Segitiga Siku-siku",
+      "howIntro": "Dari input hingga hasil akhir dalam tiga langkah bersih.",
+      "step1Title": "1. Masukkan nilai yang diketahui",
+      "step1Desc": "Berikan input segitiga siku-siku yang valid dan jaga agar unit tetap konsisten.",
+      "step2Title": "2. Selesaikan secara instan",
+      "step2Desc": "Pemecah menerapkan hubungan Pythagoras dan trigonometri secara real-time.",
+      "step3Title": "3. Validasi geometri",
+      "step3Desc": "Gunakan visualisasi langsung, rasio, dan metrik turunan untuk memverifikasi jawaban Anda.",
+      "chartHeading": "Nilai Referensi",
+      "chartSubHeading": "Bandingkan keluarga segitiga siku-siku umum dan nilai hipotenusanya.",
+      "chartLabel1": "Segitiga",
+      "chartLabel2": "Hipotenusa",
+      "catalogHeading": "Semua Kalkulator Alat",
+      "catalogDescription": "Jelajahi setiap alat rumus. Setiap halaman memiliki kalkulator khusus yang sesuai untuk tujuan tersebut.",
+      "catalogTools": "Alat Presisi",
+      "catalogInput": "Masukan",
+      "catalogOutput": "Keluaran",
+      "faqHeading": "Pertanyaan Umum",
+      "viewAllFaqs": "Lihat Semua FAQ Terperinci"
+    },
+    "footer": {
+      "description": "Ruang kerja geometri cepat untuk perhitungan segitiga siku-siku dan pembelajaran."
+    }
+  },
+  "ar": {
+    "site": {
+      "title": "حلل المثلث القائم",
+      "description": "حل المثلثات القائمة بسرعة باستخدام صيغ واضحة، وإرشاد مرئي، وأمثلة عملية."
+    },
+    "home": {
+      "title": "حلل المثلث القائم | مساعد الهندسة الفوري",
+      "description": "ابحث عن الأضلاع المفقودة، والمساحة، والمحيط في ثوانٍ باستخدام حاسبة المثلث القائم.",
+      "heading": "حلل المثلث القائم",
+      "intro": "احسب الوتر، والزوايا، والمساحة، والهندسة فوراً باستخدام أداة دقيقة رقمية.",
+      "toolHeading": "حاسبة المثلث القائم",
+      "toolDescription": "أدخل أي ضلعين لحساب الوتر، والمساحة، والمحيط فوراً.",
+      "howHeading": "كيف يعمل حلل المثلث القائم",
+      "howIntro": "من المدخلات إلى النتائج في ثلاث خطوات بسيطة.",
+      "step1Title": "1. أدخل القيم المعروفة",
+      "step1Desc": "قدم أي مدخلات صحيحة للمثلث القائم وحافظ على تناسق الوحدات.",
+      "step2Title": "2. الحل فوراً",
+      "step2Desc": "يحلل النظام العلاقات الفيثاغورسية والمثلثية في الوقت الفعلي.",
+      "step3Title": "3. التحقق من الهندسة",
+      "step3Desc": "استخدم التمثيل المرئي، والنسب، والمقاييس المستنتجة للتحقق من إجابتك.",
+      "chartHeading": "قيم مرجعية",
+      "chartSubHeading": "قارن بين عائلات المثلثات القائمة الشائعة وقيم الوتر الخاصة بها.",
+      "chartLabel1": "المثلث",
+      "chartLabel2": "الوتر",
+      "catalogHeading": "جميع الحاسبات",
+      "catalogDescription": "تصفح كل أداة صيغة. تحتوي كل صفحة على حاسبة مخصصة لهذا الغرض.",
+      "catalogTools": "أدوات دقيقة",
+      "catalogInput": "المدخلات",
+      "catalogOutput": "المخرجات",
+      "faqHeading": "الأسئلة الشائعة",
+      "viewAllFaqs": "عرض جميع الأسئلة الشائعة"
+    },
+    "footer": {
+      "description": "مساحة عمل هندسية سريعة لحسابات المثلث القائم والتعلم."
+    }
+  },
+  "bg": {
+    "site": {
+      "title": "Решаване на правоъгълни триъгълници",
+      "description": "Решавайте правоъгълни триъгълници бързо с ясни формули, визуални насоки и практически примери."
+    },
+    "home": {
+      "title": "Решаване на правоъгълни триъгълници | Помощ по геометрия",
+      "description": "Намерете липсващи страни, площ и периметър за секунди с достъпен калкулатор за правоъгълни триъгълници.",
+      "heading": "Решаване на правоъгълни триъгълници",
+      "intro": "Изчислявайте хипотенуза, ъгли, площ и геометрия мигновено с нашия прецизен цифров инструмент.",
+      "toolHeading": "Калкулатор за правоъгълен триъгълник",
+      "toolDescription": "Въведете кои да е две страни, за да изчислите хипотенуза, площ и периметър мигновено.",
+      "howHeading": "Как работи решаването на правоъгълни триъгълници",
+      "howIntro": "От въвеждане до готов резултат в три ясни стъпки.",
+      "step1Title": "1. Въведете известни стойности",
+      "step1Desc": "Предоставете валидни входни данни за правоъгълен триъгълник и поддържайте мерните единици последователни.",
+      "step2Title": "2. Решете мигновено",
+      "step2Desc": "Инструментът прилага питагорови и тригонометрични зависимости в реално време.",
+      "step3Title": "3. Проверете геометрията",
+      "step3Desc": "Използвайте визуализация на живо, съотношения и производни показатели, за да проверите отговора си.",
+      "chartHeading": "Справочни стойности",
+      "chartSubHeading": "Сравнете често срещани семейства правоъгълни триъгълници и стойностите на техните хипотенузи.",
+      "chartLabel1": "Триъгълник",
+      "chartLabel2": "Хипотенуза",
+      "catalogHeading": "Всички калкулатори",
+      "catalogDescription": "Разгледайте всеки инструмент. Всяка страница има специален калкулатор, създаден за тази цел.",
+      "catalogTools": "Прецизни инструменти",
+      "catalogInput": "Вход",
+      "catalogOutput": "Изход",
+      "faqHeading": "Често задавани въпроси",
+      "viewAllFaqs": "Вижте всички подробни въпроси"
+    },
+    "footer": {
+      "description": "Бързо геометрично работно пространство за изчисления на правоъгълни триъгълници и обучение."
+    }
+  },
+  "tr": {
+    "site": {
+      "title": "Dik Üçgen Çözücü",
+      "description": "Açık formüller, görsel rehberlik ve pratik örneklerle dik üçgenleri hızlı bir şekilde çözün."
+    },
+    "home": {
+      "title": "Dik Üçgen Çözücü | Anlık Geometri Yardımcısı",
+      "description": "Erişilebilir bir dik üçgen hesaplayıcısı ile eksik kenarları, alanı ve çevreyi saniyeler içinde bulun.",
+      "heading": "Dik Üçgen Çözücü",
+      "intro": "Hassas dijital aracımızla hipotenüsü, açıları, alanı ve geometriyi anında hesaplayın.",
+      "toolHeading": "Dik Üçgen Hesaplayıcı",
+      "toolDescription": "Hipotenüsü, alanı ve çevreyi anında hesaplamak için herhangi iki kenarı girin.",
+      "howHeading": "Dik Üçgen Çözücü nasıl çalışır?",
+      "howIntro": "Girişten kanıta hazır çıktıya kadar üç temiz adımda.",
+      "step1Title": "1. Bilinen değerleri girin",
+      "step1Desc": "Geçerli dik üçgen girişleri sağlayın ve birimleri tutarlı tutun.",
+      "step2Title": "2. Anında çözün",
+      "step2Desc": "Çözücü, Pisagor ve trigonometrik ilişkileri gerçek zamanlı olarak uygular.",
+      "step3Title": "3. Geometriyi doğrulayın",
+      "step3Desc": "Cevabınızı doğrulamak için canlı görselleştirme, oranlar ve türetilmiş metrikleri kullanın.",
+      "chartHeading": "Referans Değerler",
+      "chartSubHeading": "Yaygın dik üçgen ailelerini ve hipotenüs değerlerini karşılaştırın.",
+      "chartLabel1": "Üçgen",
+      "chartLabel2": "Hipotenüs",
+      "catalogHeading": "Tüm Araç Hesaplayıcıları",
+      "catalogDescription": "Her formül aracına göz atın. Her sayfanın o başlık amacına uygun özel bir hesaplayıcısı vardır.",
+      "catalogTools": "Hassas Araçlar",
+      "catalogInput": "Giriş",
+      "catalogOutput": "Çıktı",
+      "faqHeading": "Sıkça Sorulan Sorular",
+      "viewAllFaqs": "Tüm Detaylı Sıkça Sorulan Soruları Görüntüle"
+    },
+    "footer": {
+      "description": "Dik üçgen hesaplamaları ve öğrenimi için hızlı bir geometri çalışma alanı."
+    }
+  },
+  "sv": {
+    "site": {
+      "title": "Rätvinklig triangel-lösare",
+      "description": "Lös rätvinkliga trianglar snabbt med tydliga formler, visuell vägledning och praktiska exempel."
+    },
+    "home": {
+      "title": "Rätvinklig triangel-lösare | Instant Geometri Hjälpare",
+      "description": "Hitta saknade sidor, area och omkrets på några sekunder med en tillgänglig rätvinklig triangelräknare.",
+      "heading": "Rätvinklig triangel-lösare",
+      "intro": "Beräkna hypotenusa, vinklar, area och geometri direkt med vårt precisionverktyg.",
+      "toolHeading": "Rätvinklig triangelräknare",
+      "toolDescription": "Ange två sidor för att beräkna hypotenusa, area och omkrets direkt.",
+      "howHeading": "Så fungerar rätvinklig triangel-lösare",
+      "howIntro": "Från inmatning till färdigt resultat i tre enkla steg.",
+      "step1Title": "1. Ange kända värden",
+      "step1Desc": "Ange giltiga inmatningar för rätvinkliga trianglar och håll enheterna konsekventa.",
+      "step2Title": "2. Lös direkt",
+      "step2Desc": "Lösningen tillämpar Pythagoras sats och trigonometriska samband i realtid.",
+      "step3Title": "3. Validera geometrin",
+      "step3Desc": "Använd livevisning, förhållanden och härledda mått för att verifiera ditt svar.",
+      "chartHeading": "Referensvärden",
+      "chartSubHeading": "Jämför vanliga rätvinkliga triangelfamiljer och deras hypotenusavärden.",
+      "chartLabel1": "Triangel",
+      "chartLabel2": "Hypotenusa",
+      "catalogHeading": "Alla räknare",
+      "catalogDescription": "Bläddra bland alla formler. Varje sida har en dedikerad räknare byggd för det ändamålet.",
+      "catalogTools": "Precisionsverktyg",
+      "catalogInput": "Indata",
+      "catalogOutput": "Utdata",
+      "faqHeading": "Vanliga frågor",
+      "viewAllFaqs": "Visa alla detaljerade vanliga frågor"
+    },
+    "footer": {
+      "description": "En snabb geometriarbetsyta för beräkningar av rätvinkliga trianglar och lärande."
+    }
+  },
+  "zh": {
+    "site": {
+      "title": "直角三角形求解器",
+      "description": "通过清晰的公式、视觉指导和实际示例快速求解直角三角形。"
+    },
+    "home": {
+      "title": "直角三角形求解器 | 即时几何助手",
+      "description": "使用易于使用的直角三角形计算器，在几秒钟内找到缺失的边、面积和周长。",
+      "heading": "直角三角形求解器",
+      "intro": "使用我们的精密数字工具立即计算斜边、角度、面积和几何形状。",
+      "toolHeading": "直角三角形计算器",
+      "toolDescription": "输入任意两条边即可立即计算斜边、面积和周长。",
+      "howHeading": "直角三角形求解器的工作原理",
+      "howIntro": "从输入到结果输出，只需三个简洁的步骤。",
+      "step1Title": "1. 输入已知值",
+      "step1Desc": "提供任何有效的直角三角形输入并保持单位一致。",
+      "step2Title": "2. 立即求解",
+      "step2Desc": "求解器实时应用勾股定理和三角关系。",
+      "step3Title": "3. 验证几何形状",
+      "step3Desc": "使用实时可视化、比例和派生指标来验证您的答案。",
+      "chartHeading": "参考值",
+      "chartSubHeading": "比较常见的直角三角形族及其斜边值。",
+      "chartLabel1": "三角形",
+      "chartLabel2": "斜边",
+      "catalogHeading": "所有工具计算器",
+      "catalogDescription": "浏览每个公式工具。每个页面都有一个专为该目的构建的专用计算器。",
+      "catalogTools": "精密工具",
+      "catalogInput": "输入",
+      "catalogOutput": "输出",
+      "faqHeading": "常见问题解答",
+      "viewAllFaqs": "查看所有详细的常见问题解答"
+    },
+    "footer": {
+      "description": "用于直角三角形计算和学习的快速几何工作空间。"
     }
   }
 }
+

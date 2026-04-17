@@ -241,10 +241,309 @@
       "display": true
     }
   ],
+  "hi": [
+    {
+      "question": "समकोण त्रिभुज को हल करने के लिए न्यूनतम कितनी जानकारी की आवश्यकता है?",
+      "answer": "समकोण त्रिभुज को पूरी तरह से हल करने के लिए आपको बिल्कुल दो मानों की आवश्यकता होती है। इनमें से कम से कम एक मान भुजा की लंबाई (एक पैर या कर्ण) होनी चाहिए, क्योंकि केवल दो कोण आकार प्रदान नहीं करते हैं।",
+      "display": true
+    },
+    {
+      "question": "यह समकोण त्रिभुज कैलकुलेटर किन मानों का पता लगा सकता है?",
+      "answer": "यह सभी मुख्य समकोण त्रिभुज गुणों को हल करता है: पैर की लंबाई (a, b), कर्ण (c), तीव्र कोण (A, B), परिधि, अर्धपरिधि, क्षेत्रफल, ऊंचाई, और बहुत कुछ।",
+      "display": true
+    },
+    {
+      "question": "क्या मैं केवल दो भुजाओं का उपयोग करके त्रिभुज को हल कर सकता हूँ?",
+      "answer": "हाँ, किन्हीं भी दो भुजाओं (जैसे दो पैरों, या एक पैर और कर्ण) को दर्ज करना पूरी तरह से पर्याप्त है। सिस्टम बाकी जानकारी निकालने के लिए पाइथागोरस प्रमेय का उपयोग करता है।",
+      "display": true
+    }
+  ],
+  "es": [
+    {
+      "question": "¿Cuál es la información mínima necesaria para resolver un triángulo rectángulo?",
+      "answer": "Necesitas exactamente dos valores para resolver completamente un triángulo rectángulo. Al menos uno de estos valores debe ser la longitud de un lado (un cateto o la hipotenusa).",
+      "display": true
+    },
+    {
+      "question": "¿Qué valores puede encontrar esta calculadora de triángulos rectángulos?",
+      "answer": "Resuelve todas las propiedades principales: longitudes de los catetos (a, b), hipotenusa (c), ángulos agudos (A, B), perímetro, área, altura y más.",
+      "display": true
+    },
+    {
+      "question": "¿Puedo resolver un triángulo usando solo dos lados?",
+      "answer": "Sí, ingresar dos lados cualesquiera (como los dos catetos, o un cateto y la hipotenusa) es perfectamente suficiente.",
+      "display": true
+    }
+  ],
+  "ru": [
+    {
+      "question": "Какова минимальная информация, необходимая для решения прямоугольного треугольника?",
+      "answer": "Для полного решения прямоугольного треугольника вам понадобятся ровно два значения. По крайней мере одно из них должно быть длиной стороны.",
+      "display": true
+    },
+    {
+      "question": "Какие значения может найти этот калькулятор прямоугольного треугольника?",
+      "answer": "Он решает все основные свойства: длины катетов (a, b), гипотенузу (c), острые углы (A, B), периметр, площадь, высоту и многое другое.",
+      "display": true
+    },
+    {
+      "question": "Можно ли решить треугольник, используя только две стороны?",
+      "answer": "Да, ввода любых двух сторон (например, двух катетов или катета и гипотенузы) вполне достаточно.",
+      "display": true
+    }
+  ],
+  "fr": [
+    {
+      "question": "Quelle est l'information minimale nécessaire pour résoudre un triangle rectangle ?",
+      "answer": "Vous avez besoin de exactement deux valeurs. Au moins l'une de ces valeurs doit être une longueur de côté (un côté ou l'hypoténuse).",
+      "display": true
+    },
+    {
+      "question": "Quelles valeurs ce calculateur de triangle rectangle peut-il trouver ?",
+      "answer": "Il résout toutes les propriétés majeures : longueurs des côtés (a, b), hypoténuse (c), angles aigus (A, B), périmètre, aire, hauteur, etc.",
+      "display": true
+    },
+    {
+      "question": "Puis-je résoudre un triangle en utilisant seulement deux côtés ?",
+      "answer": "Oui, saisir deux côtés (comme les deux côtés adjacents, ou un côté et l'hypoténuse) est parfaitement suffisant.",
+      "display": true
+    }
+  ],
+  "de": [
+    {
+      "question": "Was sind die Mindestinformationen, um ein rechtwinkliges Dreieck zu lösen?",
+      "answer": "Sie benötigen genau zwei Werte. Mindestens einer dieser Werte muss eine Seitenlänge (eine Kathete oder die Hypotenuse) sein.",
+      "display": true
+    },
+    {
+      "question": "Welche Werte kann dieser Dreiecksrechner finden?",
+      "answer": "Er löst alle wichtigen Eigenschaften: Kathetenlängen (a, b), Hypotenuse (c), spitze Winkel (A, B), Umfang, Fläche, Höhe und mehr.",
+      "display": true
+    },
+    {
+      "question": "Kann ich ein Dreieck nur mit zwei Seiten lösen?",
+      "answer": "Ja, die Eingabe von zwei beliebigen Seiten (z. B. den beiden Katheten oder einer Kathete und der Hypotenuse) ist völlig ausreichend.",
+      "display": true
+    }
+  ],
+  "it": [
+    {
+      "question": "Quali sono le informazioni minime necessarie per risolvere un triangolo rettangolo?",
+      "answer": "Hai bisogno di esattamente due valori. Almeno uno di questi deve essere la lunghezza di un lato (un cateto o l'ipotenusa).",
+      "display": true
+    },
+    {
+      "question": "Quali valori può trovare questo calcolatore di triangoli rettangoli?",
+      "answer": "Risolve tutte le principali proprietà: lunghezze dei cateti (a, b), ipotenusa (c), angoli acuti (A, B), perimetro, area, altezza e altro.",
+      "display": true
+    },
+    {
+      "question": "Posso risolvere un triangolo usando solo due lati?",
+      "answer": "Sì, inserire due lati qualsiasi (come i due cateti, o un cateto e l'ipotenusa) è perfettamente sufficiente.",
+      "display": true
+    }
+  ],
+  "pt": [
+    {
+      "question": "Qual é a informação mínima necessária para resolver um triângulo retângulo?",
+      "answer": "Você precisa de exatamente dois valores. Pelo menos um desses valores deve ser o comprimento de um lado.",
+      "display": true
+    },
+    {
+      "question": "Quais valores esta calculadora de triângulo retângulo pode encontrar?",
+      "answer": "Ela resolve todas as principais propriedades: comprimentos dos catetos (a, b), hipotenusa (c), ângulos agudos (A, B), perímetro, área, altura e muito mais.",
+      "display": true
+    },
+    {
+      "question": "Posso resolver um triângulo usando apenas dois lados?",
+      "answer": "Sim, inserir quaisquer dois lados (como os dois catetos, ou um cateto e a hipotenusa) é perfeitamente suficiente.",
+      "display": true
+    }
+  ],
+  "bn": [
+    {
+      "question": "একটি সমকোণী ত্রিভুজ সমাধান করার জন্য ন্যূনতম কী তথ্যের প্রয়োজন?",
+      "answer": "আপনার ঠিক দুটি মানের প্রয়োজন। এর মধ্যে অন্তত একটি মান অবশ্যই বাহুর দৈর্ঘ্য (একটি লম্ব বা অতিভুজ) হতে হবে।",
+      "display": true
+    },
+    {
+      "question": "এই সমকোণী ত্রিভুজ ক্যালকুলেটর কোন মানগুলি খুঁজে পেতে পারে?",
+      "answer": "এটি সমস্ত প্রধান বৈশিষ্ট্য সমাধান করে: বাহুর দৈর্ঘ্য (a, b), অতিভুজ (c), সূক্ষ্মকোণ (A, B), পরিধি, ক্ষেত্রফল এবং আরও অনেক কিছু।",
+      "display": true
+    },
+    {
+      "question": "আমি কি শুধুমাত্র দুটি বাহু ব্যবহার করে একটি ত্রিভুজ সমাধান করতে পারি?",
+      "answer": "হ্যাঁ, যেকোনো দুটি বাহু (যেমন দুটি লম্ব, অথবা একটি লম্ব এবং অতিভুজ) প্রবেশ করানোই যথেষ্ট।",
+      "display": true
+    }
+  ],
+  "ja": [
+    {
+      "question": "直角三角形を解くために必要な最小限の情報は何ですか？",
+      "answer": "正確に2つの値が必要です。少なくとも1つの値は、辺の長さ（カテタスまたは斜辺）である必要があります。",
+      "display": true
+    },
+    {
+      "question": "この直角三角形計算機はどのような値を求めることができますか？",
+      "answer": "すべての主要なプロパティを解決します：辺の長さ（a、b）、斜辺（c）、鋭角（A、B）、周囲、面積、高さなど。",
+      "display": true
+    },
+    {
+      "question": "2辺だけで三角形を解くことはできますか？",
+      "answer": "はい、任意の2辺（2つのカテタス、または1つのカテタスと斜辺など）を入力するだけで十分です。",
+      "display": true
+    }
+  ],
+  "ko": [
+    {
+      "question": "직각 삼각형을 풀기 위해 필요한 최소 정보는 무엇입니까?",
+      "answer": "정확히 두 개의 값이 필요합니다. 이 값 중 적어도 하나는 변의 길이(밑변, 높이 또는 빗변)여야 합니다.",
+      "display": true
+    },
+    {
+      "question": "이 직각 삼각형 계산기로 어떤 값을 구할 수 있습니까?",
+      "answer": "모든 주요 속성(변의 길이(a, b), 빗변(c), 예각(A, B), 둘레, 넓이, 높이 등)을 해결합니다.",
+      "display": true
+    },
+    {
+      "question": "두 변만 사용하여 삼각형을 풀 수 있습니까?",
+      "answer": "네, 임의의 두 변(두 밑변 또는 한 변과 빗변 등)을 입력하는 것으로 충분합니다.",
+      "display": true
+    }
+  ],
+  "ms": [
+    {
+      "question": "Apakah maklumat minimum yang diperlukan untuk menyelesaikan segitiga bersudut tegak?",
+      "answer": "Anda memerlukan tepat dua nilai. Sekurang-kurangnya satu daripada nilai ini mestilah panjang sisi.",
+      "display": true
+    },
+    {
+      "question": "Apakah nilai yang boleh dicari oleh kalkulator segitiga bersudut tegak ini?",
+      "answer": "Ia menyelesaikan semua sifat utama: panjang sisi (a, b), hipotenus (c), sudut tirus (A, B), perimeter, luas, tinggi dan banyak lagi.",
+      "display": true
+    },
+    {
+      "question": "Bolehkah saya menyelesaikan segitiga menggunakan dua sisi sahaja?",
+      "answer": "Ya, memasukkan mana-mana dua sisi (seperti dua sisi bersebelahan, atau satu sisi dan hipotenus) sudah memadai.",
+      "display": true
+    }
+  ],
+  "pl": [
+    {
+      "question": "Jakie są minimalne informacje potrzebne do rozwiązania trójkąta prostokątnego?",
+      "answer": "Potrzebujesz dokładnie dwóch wartości. Przynajmniej jedna z nich musi być długością boku.",
+      "display": true
+    },
+    {
+      "question": "Jakie wartości może obliczyć ten kalkulator?",
+      "answer": "Oblicza wszystkie główne właściwości: długości przyprostokątnych (a, b), przeciwprostokątną (c), kąty ostre (A, B), obwód, pole, wysokość i inne.",
+      "display": true
+    },
+    {
+      "question": "Czy mogę rozwiązać trójkąt, używając tylko dwóch boków?",
+      "answer": "Tak, wprowadzenie dowolnych dwóch boków (np. dwóch przyprostokątnych lub jednej przyprostokątnej i przeciwprostokątnej) jest w zupełności wystarczające.",
+      "display": true
+    }
+  ],
+  "id": [
+    {
+      "question": "Apa informasi minimum yang dibutuhkan untuk menyelesaikan segitiga siku-siku?",
+      "answer": "Anda membutuhkan tepat dua nilai. Setidaknya salah satu dari nilai ini harus berupa panjang sisi.",
+      "display": true
+    },
+    {
+      "question": "Nilai apa saja yang bisa ditemukan oleh kalkulator segitiga siku-siku ini?",
+      "answer": "Kalkulator ini menyelesaikan semua properti utama: panjang sisi (a, b), hipotenusa (c), sudut lancip (A, B), keliling, luas, tinggi, dan banyak lagi.",
+      "display": true
+    },
+    {
+      "question": "Bisakah saya menyelesaikan segitiga hanya dengan menggunakan dua sisi?",
+      "answer": "Ya, memasukkan dua sisi apa pun (seperti dua kaki, atau satu kaki dan hipotenusa) sudah cukup.",
+      "display": true
+    }
+  ],
   "ar": [
     {
-      "question": "Does Arabic locale use RTL?",
-      "answer": "Yes. The Arabic route switches html dir to rtl automatically.",
+      "question": "ما هي أقل المعلومات المطلوبة لحل المثلث القائم؟",
+      "answer": "تحتاج إلى قيمتين بالضبط. يجب أن تكون إحدى هذه القيم على الأقل طول ضلع (ضلع أو وتر).",
+      "display": true
+    },
+    {
+      "question": "ما هي القيم التي يمكن لهذه الحاسبة إيجادها؟",
+      "answer": "تحل جميع خصائص المثلث القائم الرئيسية: أطوال الأضلاع (أ، ب)، الوتر (ج)، الزوايا الحادة (أ، ب)، المحيط، المساحة، والارتفاع.",
+      "display": true
+    },
+    {
+      "question": "هل يمكنني حل مثلث باستخدام ضلعين فقط؟",
+      "answer": "نعم، إدخال أي ضلعين (مثل الضلعين القائمين، أو ضلع واحد والوتر) كافٍ تماماً.",
+      "display": true
+    }
+  ],
+  "bg": [
+    {
+      "question": "Каква е минималната информация за решаване на правоъгълен триъгълник?",
+      "answer": "Нуждаете се от точно две стойности. Поне една от тях трябва да бъде дължина на страна.",
+      "display": true
+    },
+    {
+      "question": "Какви стойности може да намери този калкулатор?",
+      "answer": "Той решава всички основни свойства: дължини на катетите (a, b), хипотенуза (c), остри ъгли (A, B), периметър, площ, височина и др.",
+      "display": true
+    },
+    {
+      "question": "Мога ли да реша триъгълник само с две страни?",
+      "answer": "Да, въвеждането на които и да е две страни (например двата катета или катет и хипотенуза) е напълно достатъчно.",
+      "display": true
+    }
+  ],
+  "tr": [
+    {
+      "question": "Bir dik üçgeni çözmek için gereken minimum bilgi nedir?",
+      "answer": "Tam olarak iki değere ihtiyacınız var. Bu değerlerden en az biri kenar uzunluğu olmalıdır.",
+      "display": true
+    },
+    {
+      "question": "Bu dik üçgen hesaplayıcısı hangi değerleri bulabilir?",
+      "answer": "Tüm ana özellikleri çözer: kenar uzunlukları (a, b), hipotenüs (c), dar açılar (A, B), çevre, alan, yükseklik ve daha fazlası.",
+      "display": true
+    },
+    {
+      "question": "Sadece iki kenar kullanarak bir üçgeni çözebilir miyim?",
+      "answer": "Evet, herhangi iki kenarı (iki dik kenar veya bir dik kenar ve hipotenüs gibi) girmek tamamen yeterlidir.",
+      "display": true
+    }
+  ],
+  "sv": [
+    {
+      "question": "Vilken är den minsta informationen som behövs för att lösa en rätvinklig triangel?",
+      "answer": "Du behöver exakt två värden. Minst ett av dessa värden måste vara en sidlängd.",
+      "display": true
+    },
+    {
+      "question": "Vilka värden kan den här triangelräknaren hitta?",
+      "answer": "Den löser alla viktiga egenskaper: sidlängder (a, b), hypotenusa (c), spetsiga vinklar (A, B), omkrets, area, höjd och mer.",
+      "display": true
+    },
+    {
+      "question": "Kan jag lösa en triangel med bara två sidor?",
+      "answer": "Ja, det räcker helt och hållet att ange två sidor (som de två kateterna, eller en katet och hypotenusan).",
+      "display": true
+    }
+  ],
+  "zh": [
+    {
+      "question": "求解直角三角形至少需要多少信息？",
+      "answer": "您恰好需要两个值。其中至少一个值必须是边长（直角边或斜边）。",
+      "display": true
+    },
+    {
+      "question": "这款直角三角形计算器可以求出哪些值？",
+      "answer": "它可以求解所有主要的直角三角形属性：直角边长 (a, b)、斜边 (c)、锐角 (A, B)、周长、面积、高度等。",
+      "display": true
+    },
+    {
+      "question": "我可以只用两条边来求解三角形吗？",
+      "answer": "可以，输入任何两条边（如两条直角边，或一条直角边和斜边）就足够了。",
       "display": true
     }
   ]

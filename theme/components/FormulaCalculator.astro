@@ -40,31 +40,6 @@ const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
   </p>
 
   <div class="mt-6 flex flex-col gap-6 lg:flex-row lg:items-start">
-    <div class="flex-1 w-full relative z-10 overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-lowest/70 p-4 sm:p-6 shadow-sm hidden sm:block">
-      <div class="dot-grid pointer-events-none absolute inset-0 opacity-[0.08]"></div>
-      <div class="mb-2">
-        <p class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Live Visualization</p>
-        <h3 class="mt-1 text-lg text-on-surface">Formula Diagram</h3>
-      </div>
-      <svg class="relative h-auto w-full max-w-sm mx-auto" viewBox="0 0 460 300" aria-label="Dynamic right triangle">
-        <defs>
-          <linearGradient id="rt-fill-gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#f1c97d" stop-opacity="0.3"></stop>
-            <stop offset="100%" stop-color="#d4ad65" stop-opacity="0.12"></stop>
-          </linearGradient>
-        </defs>
-        <path d="M 60 240 L 80 240 L 80 260" fill="none" stroke="#99907c" stroke-width="1.5"></path>
-        <path d="M 70 70 L 70 260 L 380 260 Z" fill="url(#rt-fill-gradient2)" stroke="#f1c97d" stroke-width="2.5" stroke-linejoin="round"></path>
-        <line x1="70" y1="260" x2="196" y2="184" stroke="#f1c97d" stroke-width="2" stroke-dasharray="5 4" opacity="0.6"></line>
-        <text x="50" y="170" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="14" text-anchor="end" data-calc-svg-label="a">a = -</text>
-        <text x="226" y="284" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="14" text-anchor="middle" data-calc-svg-label="b">b = -</text>
-        <text x="246" y="152" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="15" data-calc-svg-label="c">c = -</text>
-        <text x="316" y="248" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="12" data-calc-svg-label="A">A = -</text>
-        <text x="88" y="94" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="12" data-calc-svg-label="B">B = -</text>
-        <text x="146" y="210" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="13" data-calc-svg-label="h">h = -</text>
-      </svg>
-    </div>
-
     <div class="flex-1 w-full space-y-4">
       <form class="grid gap-4 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2" data-calc-form>
         {calculator.fields.map((field) => (
@@ -147,6 +122,31 @@ const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
           Formula: {formula.expression}
         </p>
       </div>
+    </div>
+
+    <div class="flex-1 w-full relative z-10 overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-lowest/70 p-4 sm:p-6 shadow-sm hidden sm:block">
+      <div class="dot-grid pointer-events-none absolute inset-0 opacity-[0.08]"></div>
+      <div class="mb-2">
+        <p class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Live Visualization</p>
+        <h3 class="mt-1 text-lg text-on-surface">Formula Diagram</h3>
+      </div>
+      <svg class="relative h-auto w-full max-w-sm mx-auto" viewBox="0 0 460 300" aria-label="Dynamic right triangle">
+        <defs>
+          <linearGradient id="rt-fill-gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#f1c97d" stop-opacity="0.3"></stop>
+            <stop offset="100%" stop-color="#d4ad65" stop-opacity="0.12"></stop>
+          </linearGradient>
+        </defs>
+        <path d="M 60 240 L 80 240 L 80 260" fill="none" stroke="#99907c" stroke-width="1.5"></path>
+        <path d="M 70 70 L 70 260 L 380 260 Z" fill="url(#rt-fill-gradient2)" stroke="#f1c97d" stroke-width="2.5" stroke-linejoin="round"></path>
+        <line x1="70" y1="260" x2="196" y2="184" stroke="#f1c97d" stroke-width="2" stroke-dasharray="5 4" opacity="0.6"></line>
+        <text x="50" y="170" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="14" text-anchor="end" data-calc-svg-label="a">a = -</text>
+        <text x="226" y="284" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="14" text-anchor="middle" data-calc-svg-label="b">b = -</text>
+        <text x="246" y="152" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="15" data-calc-svg-label="c">c = -</text>
+        <text x="316" y="248" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="12" data-calc-svg-label="A">A = -</text>
+        <text x="88" y="94" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="12" data-calc-svg-label="B">B = -</text>
+        <text x="146" y="210" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="13" data-calc-svg-label="h">h = -</text>
+      </svg>
     </div>
   </div>
 

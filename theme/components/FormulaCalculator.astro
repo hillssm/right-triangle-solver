@@ -560,7 +560,30 @@ const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
         resultWrap.classList.remove('hidden');
 
         const { result, steps } = resultData;
-        const outSuffix = primaryUnit ? ` ${primaryUnit}` : (outputUnit ? ` ${outputUnit}` : '');
+        
+        const getUnitSuffix = () => {
+          const k = kind.toLowerCase();
+          // Trig ratios are unitless ratios of sides
+          const isRatio = ['sine', 'cosine', 'tangent', 'cotangent', 'secant', 'cosecant', 'identity', 'ratio', 'tan_from'].some(r => k.includes(r));
+          if (isRatio) return '';
+
+          // Angles use degrees/radians
+          if (k.includes('angle')) {
+            return outputUnit ? ` ${outputUnit}` : '°';
+          }
+
+          // Area uses squared units
+          if (k.includes('area')) {
+            if (primaryUnit) return ` ${primaryUnit}²`;
+            return outputUnit ? ` ${outputUnit}` : ' sq units';
+          }
+
+          // Lengths (sides, perimeter, altitude)
+          if (primaryUnit) return ` ${primaryUnit}`;
+          return outputUnit ? ` ${outputUnit}` : '';
+        };
+
+        const outSuffix = getUnitSuffix();
         valueEl.textContent = `${format(result)}${outSuffix}`;
 
         const fragment = document.createDocumentFragment();

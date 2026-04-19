@@ -1,6 +1,7 @@
 ---
 import { RIGHT_TRIANGLE_FORMULAS, type RightTriangleFormula } from 'src/data/rightTriangleFormulas';
 import { localizePath, type Locale } from 'theme/i18n/locales';
+import { getTranslations } from 'theme/i18n/translations';
 
 interface Props {
   locale: Locale;
@@ -19,6 +20,9 @@ const {
   uiInput = 'Input',
   uiOutput = 'Output'
 } = Astro.props;
+
+const bundle = getTranslations(locale);
+const formulaTranslations = bundle.formulas || {};
 
 const formulasRoot = localizePath(locale, '/formulas/');
 
@@ -154,12 +158,16 @@ const tools = RIGHT_TRIANGLE_FORMULAS.filter(f => f.calculator != null);
       const isArea = diagram.outputFeature === 'area';
       const theme = CATEGORY_THEMES[formula.category] || CATEGORY_THEMES['Core Side Relations'];
       
+      const translation = (formulaTranslations[formula.slug] as any) || {};
+      const displayTitle = translation.title || formula.title;
+      const displayDescription = translation.description || formula.description;
+      
       return (
         <a
           href={`${formulasRoot}${formula.slug}/`}
           class="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-outline-variant/30 bg-surface-container-lowest/50 p-6 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:bg-surface-container-low"
           style={`border-color: rgba(${theme.rgbaBase}, 0.15); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);`}
-          aria-label={`${formula.title} tool`}
+          aria-label={`${displayTitle} tool`}
           onmouseover={`this.style.borderColor='rgba(${theme.rgbaBase},0.5)'; this.style.boxShadow='0 10px 30px -10px rgba(${theme.rgbaBase},0.3)';`}
           onmouseout={`this.style.borderColor='rgba(${theme.rgbaBase},0.15)'; this.style.boxShadow='0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)';`}
         >
@@ -174,8 +182,9 @@ const tools = RIGHT_TRIANGLE_FORMULAS.filter(f => f.calculator != null);
               <span class="material-symbols-outlined text-[16px] text-outline/50 transition-colors group-hover:scale-110" style={`color: rgba(${theme.rgbaBase}, 0.9);`}>arrow_outward</span>
             </div>
             <h3 class="mt-4 break-words text-lg font-semibold leading-snug tracking-tight text-on-surface transition-colors" style={`--hover-color: ${theme.hex};`} onmouseover="this.style.color='var(--hover-color)'" onmouseout="this.style.color=''">
-              {formula.title}
+              {displayTitle}
             </h3>
+            <p class="mt-2 text-xs text-on-surface-variant line-clamp-2">{displayDescription}</p>
           </div>
 
           <div class="relative z-10 mt-6 flex h-36 w-full items-center justify-center overflow-hidden rounded-xl bg-[rgba(15,15,15,0.4)] shadow-inner transition-all duration-700 group-hover:scale-[1.03]" style={`border: 1px solid rgba(${theme.rgbaBase}, 0.2);`}>

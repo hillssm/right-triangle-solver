@@ -22,8 +22,8 @@ const pageDescription = pick(libraryText, 'description', 'Browse theorem referen
 const localizedCalculatorPath = localizePath(locale, '/');
 const localizedPath = localizePath(locale, '/library/');
 const localizedPracticePath = localizePath(locale, '/practice/');
-const localizedFormulasPath = localizePath(locale, '/formulas/');
 ---
+
 
 <BaseLayout
   locale={locale}
@@ -38,6 +38,6 @@ const localizedFormulasPath = localizePath(locale, '/formulas/');
     calculatorHref={localizedCalculatorPath}
     libraryHref={localizedPath}
     practiceHref={localizedPracticePath}
-    formulasHref={localizedFormulasPath}
   />
 </BaseLayout>
+

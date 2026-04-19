@@ -1,3 +1,4 @@
+---
 import type { RightTriangleFormula } from 'src/data/rightTriangleFormulas';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import katex from 'katex';
@@ -206,7 +207,6 @@ const scriptTranslations = {
       const resultWrap = section.querySelector('[data-calc-result-wrap]');
       const labelEl = section.querySelector('[data-calc-output-label]');
       const valueEl = section.querySelector('[data-calc-output-value]');
-      const detailEl = section.querySelector('[data-calc-output-detail]');
       const stepsEl = section.querySelector('[data-calc-steps]');
       const kind = section.getAttribute('data-kind') ?? '';
       const outputLabel = section.getAttribute('data-output-label') ?? 'Result';
@@ -214,7 +214,7 @@ const scriptTranslations = {
       const defaultStatus =
         section.getAttribute('data-default-status') ?? 'Fill values and click calculate.';
 
-      if (!form || !statusEl || !resultWrap || !labelEl || !valueEl || !detailEl || !stepsEl) return;
+      if (!form || !statusEl || !resultWrap || !labelEl || !valueEl || !stepsEl) return;
 
       const UNIT_SCALE = {
         m: 1, nm: 1e-9, um: 1e-6, mm: 1e-3, cm: 1e-2, km: 1e3,

@@ -110,12 +110,33 @@ export function stripLocalePrefix(path: string): string {
   return normalized.endsWith('/') || normalized === '' ? normalized : `${normalized}/`;
 }
 
+const EXCLUDED_FROM_LOCALIZATION = new Set([
+  'about-us',
+  'contact-us',
+  'blog',
+  'terms',
+  'privacy',
+  'sitemap'
+]);
+
+export function isEnglishOnlyPath(path: string): boolean {
+  const stripped = stripLocalePrefix(path);
+  const normalized = stripped.startsWith('/') ? stripped.slice(1) : stripped;
+  const firstPart = normalized.split('/')[0];
+  return EXCLUDED_FROM_LOCALIZATION.has(firstPart);
+}
+
 export function localizePath(locale: Locale, path: string): string {
   const stripped = stripLocalePrefix(path);
   const normalized = stripped.startsWith('/') ? stripped.slice(1) : stripped;
   
+  // Check if this path should remain in English
+  if (isEnglishOnlyPath(path)) {
+    return normalized === '' ? '/' : `/${normalized.endsWith('/') ? normalized : `${normalized}/`}`;
+  }
+
   if (locale === DEFAULT_LOCALE) {
-    return normalized === '' ? '/' : `/${normalized}`;
+    return normalized === '' ? '/' : `/${normalized.endsWith('/') ? normalized : `${normalized}/`}`;
   }
 
   const joined = `/${locale}/${normalized}`;

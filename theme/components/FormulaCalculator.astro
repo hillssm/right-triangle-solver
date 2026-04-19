@@ -1,28 +1,78 @@
 ---
 import type { RightTriangleFormula } from 'src/data/rightTriangleFormulas';
+import { getTranslations, pick } from 'theme/i18n/translations';
 
 interface Props {
   formula: RightTriangleFormula;
+  locale: string;
 }
 
-const { formula } = Astro.props;
+const { formula, locale } = Astro.props;
 
 if (!formula.calculator) {
   throw new Error('FormulaCalculator requires a formula with a calculator configuration.');
 }
+
+const bundle = getTranslations(locale);
+const solver = (bundle.solver as any) || {};
+const units = (bundle.units as any) || {};
+
 const calculator = formula.calculator!!;
 
-const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
-  const UNIT_SCALE = {
-    m: 1, nm: 1e-9, µm: 1e-6, mm: 1e-3, cm: 1e-2, km: 1e3,
-    in: 0.0254, ft: 0.3048, yd: 0.9144, mi: 1609.344, nmi: 1852,
-    Å: 1e-10, mil: 0.0000254, pixel: 0.0002645833, pt: 0.0003527778,
-    foot_survey_us: 0.3048006096, fathom: 1.8288, au: 149597870700,
-    light_second: 299792458, light_minute: 17987547480, light_hour: 1079252848800,
-    light_day: 25902068371200, ly: 9460730472580800, kly: 9460730472580800000,
-    pc: 3.085677581e16, Mpc: 3.085677581e22
-  };
-  const LENGTH_KEYS = ['a', 'b', 'c', 'p', 'q', 'h', 'r', 's', 'R'];
+const displayTitle = (bundle.formulas?.[formula.slug] as any)?.title || formula.title;
+const defaultStatus = pick(solver, 'statusDefault', `Enter inputs to calculate {label}.`).replace('{label}', calculator.outputLabel);
+
+const UNIT_LIST = [
+  { val: 'm', label: units.m || 'meter' },
+  { val: 'nm', label: units.nm || 'nanometer' },
+  { val: 'um', label: units.um || 'micrometer' },
+  { val: 'mm', label: units.mm || 'millimeter' },
+  { val: 'cm', label: units.cm || 'centimeter' },
+  { val: 'km', label: units.km || 'kilometer' },
+  { val: 'in', label: units.in || 'inch' },
+  { val: 'ft', label: units.ft || 'foot' },
+  { val: 'yd', label: units.yd || 'yard' },
+  { val: 'mi', label: units.mi || 'mile' },
+  { val: 'nmi', label: units.nmi || 'nautical mile' },
+  { val: 'ang', label: units.ang || 'angstrom' },
+  { val: 'mil', label: units.mil || 'mil' },
+  { val: 'pixel', label: units.pixel || 'pixel' },
+  { val: 'pt', label: units.pt || 'point' },
+  { val: 'survey_ft', label: units.survey_ft || 'survey ft' },
+  { val: 'fathom', label: units.fathom || 'fathom' },
+  { val: 'au', label: units.au || 'astronomic' },
+  { val: 'ls', label: units.ls || 'l-sec' },
+  { val: 'lm', label: units.lm || 'l-min' },
+  { val: 'lh', label: units.lh || 'l-hour' },
+  { val: 'ld', label: units.ld || 'l-day' },
+  { val: 'ly', label: units.ly || 'lightyear' },
+  { val: 'kly', label: units.kly || 'kilolightyear' },
+  { val: 'pc', label: units.pc || 'parsec' },
+  { val: 'mpc', label: units.mpc || 'megaparsec' }
+];
+
+const UNIT_SCALE = {
+  m: 1, nm: 1e-9, um: 1e-6, mm: 1e-3, cm: 1e-2, km: 1e3,
+  in: 0.0254, ft: 0.3048, yd: 0.9144, mi: 1609.344, nmi: 1852,
+  ang: 1e-10, mil: 0.0000254, pixel: 0.0002645833, pt: 0.0003527778,
+  survey_ft: 0.3048006096, fathom: 1.8288, au: 149597870700,
+  ls: 299792458, lm: 17987547480, lh: 1079252848800,
+  ld: 25902068371200, ly: 9460730472580800, kly: 9460730472580800000,
+  pc: 3.085677581e16, mpc: 3.085677581e22
+};
+
+const LENGTH_KEYS = ['a', 'b', 'c', 'p', 'q', 'h', 'r', 's', 'R'];
+
+const scriptTranslations = {
+  calculationComplete: "Calculation complete.", // I should add these to the bundle too
+  unableToCalculate: "Unable to calculate.",
+  fixErrors: "Please fix the errors in the fields above.",
+  angleSuffix: "°",
+  sqUnits: (units.m ? ` ${units.m}²` : ' sq units'),
+  resultLabel: pick(solver, 'resultLabel', 'Result'),
+  solutionSteps: pick(solver, 'solutionSteps', 'Solution Steps'),
+  formula: pick(solver, 'formulaLabel', 'Formula')
+};
 ---
 
 <section
@@ -32,11 +82,13 @@ const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
   data-output-label={calculator.outputLabel}
   data-output-unit={calculator.outputUnit ?? ''}
   data-default-status={defaultStatus}
+  data-translations={JSON.stringify(scriptTranslations)}
 >
-  <h2 class="text-2xl font-semibold">{formula.title} Calculator</h2>
+  <h2 class="text-2xl font-semibold">{displayTitle} {pick(solver, 'calculateSuffix', 'Calculator')}</h2>
   <p class="mt-2 text-sm text-on-surface-variant">
-    This calculator follows <span class="text-primary math-textbook">{formula.expression}</span> and returns
-    <strong class="font-semibold text-on-surface"> {calculator.outputLabel}</strong>.
+    {pick(solver, 'calculatorIntro', `This calculator follows {expression} and returns {label}.`)
+      .replace('{expression}', formula.expression)
+      .replace('{label}', calculator.outputLabel)}
   </p>
 
   <div class="mt-6 flex flex-col gap-6 lg:flex-row lg:items-start">
@@ -56,32 +108,9 @@ const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
               />
               {LENGTH_KEYS.includes(field.key) ? (
                 <select name={`${field.key}_unit`} class="bg-surface-container border border-outline/30 rounded-r-lg px-2 text-[10px] sm:text-xs focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary w-24 sm:w-28 text-on-surface-variant truncate">
-                  <option value="m">(m) meter</option>
-                  <option value="nm">(nm) nanometer</option>
-                  <option value="µm">(µm) micrometer</option>
-                  <option value="mm">(mm) millimeter</option>
-                  <option value="cm">(cm) centimeter</option>
-                  <option value="km">(km) kilometer</option>
-                  <option value="in">(in) inch</option>
-                  <option value="ft">(ft) foot</option>
-                  <option value="yd">(yd) yard</option>
-                  <option value="mi">(mi) mile</option>
-                  <option value="nmi">(nmi) nautical mile</option>
-                  <option value="Å">(Å) angstrom</option>
-                  <option value="mil">(mil) mil</option>
-                  <option value="pixel">(pixel) pointer</option>
-                  <option value="pt">(pt) point</option>
-                  <option value="foot_survey_us">(survey ft)</option>
-                  <option value="fathom">(fathom)</option>
-                  <option value="au">(au) astronomic</option>
-                  <option value="light_second">(ls) l-sec</option>
-                  <option value="light_minute">(lm) l-min</option>
-                  <option value="light_hour">(lh) l-hour</option>
-                  <option value="light_day">(ld) l-day</option>
-                  <option value="ly">(ly) lightyear</option>
-                  <option value="kly">(kly) kilolightyear</option>
-                  <option value="pc">(pc) parsec</option>
-                  <option value="Mpc">(Mpc) megaparsec</option>
+                  {UNIT_LIST.map(u => (
+                    <option value={u.val}>({u.val}) {u.label}</option>
+                  ))}
                 </select>
               ) : field.unit ? (
                 <span class="pointer-events-none absolute top-1/2 right-3 -translate-y-1/2 text-xs text-on-surface-variant">
@@ -94,8 +123,8 @@ const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
         ))}
 
         <div class="sm:col-span-2 lg:col-span-1 xl:col-span-2 flex flex-wrap gap-3">
-          <button type="submit" class="btn-primary">Calculate {calculator.outputLabel}</button>
-          <button type="reset" class="btn-secondary">Reset</button>
+          <button type="submit" class="btn-primary">{pick(solver, 'calculate', 'Calculate')} {calculator.outputLabel}</button>
+          <button type="reset" class="btn-secondary">{pick(solver, 'reset', 'Reset')}</button>
         </div>
       </form>
 
@@ -108,18 +137,18 @@ const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
           <p class="font-label text-xs uppercase tracking-widest text-primary" data-calc-output-label>
             {calculator.outputLabel}
           </p>
-          <span class="rounded bg-primary-fixed px-2 py-0.5 text-[10px] uppercase text-on-primary-fixed">Result</span>
+          <span class="rounded bg-primary-fixed px-2 py-0.5 text-[10px] uppercase text-on-primary-fixed">{pick(solver, 'resultLabel', 'Result')}</span>
         </div>
         <p class="mt-2 font-mono text-3xl text-tertiary" data-calc-output-value>-</p>
 
         
         <div class="mt-6 border-t border-outline-variant/30 pt-4">
-          <h4 class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Solution Steps</h4>
+          <h4 class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">{pick(solver, 'solutionSteps', 'Solution Steps')}</h4>
           <ol class="mt-3 space-y-3" data-calc-steps></ol>
         </div>
 
         <p class="mt-4 text-xs italic text-on-surface-variant" data-calc-output-detail>
-          Formula: {formula.expression}
+          {pick(solver, 'formulaLabel', 'Formula')}: {formula.expression}
         </p>
       </div>
     </div>
@@ -127,8 +156,8 @@ const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
     <div class="flex-1 w-full relative z-10 overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-lowest/70 p-4 sm:p-6 shadow-sm hidden sm:block">
       <div class="dot-grid pointer-events-none absolute inset-0 opacity-[0.08]"></div>
       <div class="mb-2">
-        <p class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Live Visualization</p>
-        <h3 class="mt-1 text-lg text-on-surface">Formula Diagram</h3>
+        <p class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">{pick(solver, 'liveVisualization', 'Live Visualization')}</p>
+        <h3 class="mt-1 text-lg text-on-surface">{pick(solver, 'formulaDiagram', 'Formula Diagram')}</h3>
       </div>
       <svg class="relative h-auto w-full max-w-sm mx-auto" viewBox="0 0 460 300" aria-label="Dynamic right triangle">
         <defs>
@@ -158,6 +187,7 @@ const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
       const section = currentScript.closest('[data-formula-calculator]');
       if (!section) return;
 
+      const translations = JSON.parse(section.getAttribute('data-translations') || '{}');
       const form = section.querySelector('[data-calc-form]');
       const statusEl = section.querySelector('[data-calc-status]');
       const resultWrap = section.querySelector('[data-calc-result-wrap]');
@@ -174,13 +204,13 @@ const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
       if (!form || !statusEl || !resultWrap || !labelEl || !valueEl || !detailEl || !stepsEl) return;
 
       const UNIT_SCALE = {
-        m: 1, nm: 1e-9, 'µm': 1e-6, mm: 1e-3, cm: 1e-2, km: 1e3,
+        m: 1, nm: 1e-9, um: 1e-6, mm: 1e-3, cm: 1e-2, km: 1e3,
         in: 0.0254, ft: 0.3048, yd: 0.9144, mi: 1609.344, nmi: 1852,
-        'Å': 1e-10, mil: 0.0000254, pixel: 0.0002645833, pt: 0.0003527778,
-        foot_survey_us: 0.3048006096, fathom: 1.8288, au: 149597870700,
-        light_second: 299792458, light_minute: 17987547480, light_hour: 1079252848800,
-        light_day: 25902068371200, ly: 9460730472580800, kly: 9460730472580800000,
-        pc: 3.085677581e16, Mpc: 3.085677581e22
+        ang: 1e-10, mil: 0.0000254, pixel: 0.0002645833, pt: 0.0003527778,
+        survey_ft: 0.3048006096, fathom: 1.8288, au: 149597870700,
+        ls: 299792458, lm: 17987547480, lh: 1079252848800,
+        ld: 25902068371200, ly: 9460730472580800, kly: 9460730472580800000,
+        pc: 3.085677581e16, mpc: 3.085677581e22
       };
       const LENGTH_KEYS = ['a', 'b', 'c', 'p', 'q', 'h', 'r', 's', 'R'];
 
@@ -554,7 +584,7 @@ const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
       };
 
       const renderSuccess = (resultData, primaryUnit, inputs) => {
-        statusEl.textContent = 'Calculation complete.';
+        statusEl.textContent = translations.calculationComplete || 'Calculation complete.';
         statusEl.classList.remove('text-red-500', 'font-semibold', 'bg-red-500/10', 'px-3', 'py-2', 'rounded-lg', 'border', 'border-red-500/20');
         statusEl.classList.add('text-on-surface-variant');
         resultWrap.classList.remove('hidden');
@@ -563,22 +593,17 @@ const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
         
         const getUnitSuffix = () => {
           const k = kind.toLowerCase();
-          // Trig ratios are unitless ratios of sides
           const isRatio = ['sine', 'cosine', 'tangent', 'cotangent', 'secant', 'cosecant', 'identity', 'ratio', 'tan_from'].some(r => k.includes(r));
           if (isRatio) return '';
 
-          // Angles use degrees/radians
           if (k.includes('angle')) {
-            return outputUnit ? ` ${outputUnit}` : '°';
+            return outputUnit ? ` ${outputUnit}` : (translations.angleSuffix || '°');
           }
 
-          // Area uses squared units
           if (k.includes('area')) {
-            if (primaryUnit) return ` ${primaryUnit}²`;
-            return outputUnit ? ` ${outputUnit}` : ' sq units';
+            return (translations.sqUnits || ' sq units');
           }
 
-          // Lengths (sides, perimeter, altitude)
           if (primaryUnit) return ` ${primaryUnit}`;
           return outputUnit ? ` ${outputUnit}` : '';
         };
@@ -599,9 +624,8 @@ const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
       };
 
       const renderError = (err) => {
-        const msg = err instanceof Error ? err.message : 'Unable to calculate.';
+        const msg = err instanceof Error ? err.message : (translations.unableToCalculate || 'Unable to calculate.');
         
-        // Clear all previous field errors
         const errorBoxes = section.querySelectorAll('[data-calc-input-error]');
         errorBoxes.forEach(el => el.classList.add('hidden'));
         
@@ -630,7 +654,7 @@ const defaultStatus = `Enter inputs to calculate ${calculator.outputLabel}.`;
           statusEl.classList.add('text-red-500', 'font-semibold', 'bg-red-500/10', 'px-3', 'py-2', 'rounded-lg', 'border', 'border-red-500/20');
           statusEl.classList.remove('text-on-surface-variant');
         } else {
-          statusEl.textContent = 'Please fix the errors in the fields above.';
+          statusEl.textContent = translations.fixErrors || 'Please fix the errors in the fields above.';
           statusEl.classList.add('text-red-500', 'font-semibold');
           statusEl.classList.remove('text-on-surface-variant', 'bg-red-500/10', 'px-3', 'py-2', 'rounded-lg', 'border', 'border-red-500/20');
         }

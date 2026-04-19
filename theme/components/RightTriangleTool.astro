@@ -1,6 +1,7 @@
 ---
 interface Props {
   heading: string;
+  locale?: string;
   labels?: {
     sideA?: string;
     sideB?: string;
@@ -36,10 +37,18 @@ interface Props {
     entered?: string;
     computed?: string;
     solvedFrom?: string;
+    resultsTitle?: string;
+    copySuccess?: string;
+    solveFirst?: string;
+    fixErrors?: string;
   }
 }
 
-const { heading, labels = {} } = Astro.props;
+import { getTranslations } from '../i18n/translations';
+
+const { heading, locale = 'en', labels = {} } = Astro.props;
+const bundle = getTranslations(locale as any);
+const units = bundle.units || {};
 
 // Default labels in English for fallback
 const l = {
@@ -76,19 +85,50 @@ const l = {
   solutionStepsDefault: labels.solutionStepsDefault ?? 'Enter exactly 2 values with at least one side.',
   entered: labels.entered ?? 'entered',
   computed: labels.computed ?? 'computed',
-  solvedFrom: labels.solvedFrom ?? 'Solved from'
+  solvedFrom: labels.solvedFrom ?? 'Solved from',
+  resultsTitle: labels.resultsTitle ?? 'Right Triangle Solver Results',
+  copySuccess: labels.copySuccess ?? 'Results copied to clipboard.',
+  solveFirst: labels.solveFirst ?? 'Solve a triangle before copying results.',
+  fixErrors: labels.fixErrors ?? 'Please fix the errors in the highlighted fields.'
 };
+
+const UNIT_LIST = [
+  { val: 'm', label: units.m || 'meter' },
+  { val: 'nm', label: units.nm || 'nanometer' },
+  { val: 'um', label: units.um || 'micrometer' },
+  { val: 'mm', label: units.mm || 'millimeter' },
+  { val: 'cm', label: units.cm || 'centimeter' },
+  { val: 'km', label: units.km || 'kilometer' },
+  { val: 'in', label: units.in || 'inch' },
+  { val: 'ft', label: units.ft || 'foot' },
+  { val: 'yd', label: units.yd || 'yard' },
+  { val: 'mi', label: units.mi || 'mile' },
+  { val: 'nmi', label: units.nmi || 'nautical mile' },
+  { val: 'ang', label: units.ang || 'angstrom' },
+  { val: 'mil', label: units.mil || 'mil' },
+  { val: 'pixel', label: units.pixel || 'pixel' },
+  { val: 'pt', label: units.pt || 'point' },
+  { val: 'survey_ft', label: units.survey_ft || 'survey ft' },
+  { val: 'fathom', label: units.fathom || 'fathom' },
+  { val: 'au', label: units.au || 'astronomic' },
+  { val: 'ls', label: units.ls || 'l-sec' },
+  { val: 'lm', label: units.lm || 'l-min' },
+  { val: 'lh', label: units.lh || 'l-hour' },
+  { val: 'ld', label: units.ld || 'l-day' },
+  { val: 'ly', label: units.ly || 'lightyear' },
+  { val: 'kly', label: units.kly || 'kilolightyear' },
+  { val: 'pc', label: units.pc || 'parsec' },
+  { val: 'mpc', label: units.mpc || 'megaparsec' }
+];
+
+const labelsJson = JSON.stringify(l);
 ---
 
 <section 
   class="section-shell h-full w-full min-w-0 justify-self-stretch" 
   aria-labelledby="tool-heading" 
   data-right-triangle-tool
-  data-label-entered={l.entered}
-  data-label-computed={l.computed}
-  data-label-solved-from={l.solvedFrom}
-  data-label-status-default={l.statusDefault}
-  data-label-solution-steps-default={l.solutionStepsDefault}
+  data-labels={labelsJson}
 >
   <div class="grid gap-6 sm:grid-cols-[1.1fr_0.9fr] lg:gap-8">
     <div>
@@ -102,7 +142,7 @@ const l = {
             <div class="relative flex">
               <input class="input-shell flex-1 rounded-r-none border-r-0" type="text" inputmode="decimal" name="a" />
               <select name="a_unit" class="bg-surface-container border border-outline/30 rounded-r-lg px-2 text-[10px] sm:text-xs focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary w-24 sm:w-28 text-on-surface-variant truncate">
-                <option value="m">(m) meter</option><option value="nm">(nm) nanometer</option><option value="µm">(µm) micrometer</option><option value="mm">(mm) millimeter</option><option value="cm">(cm) centimeter</option><option value="km">(km) kilometer</option><option value="in">(in) inch</option><option value="ft">(ft) foot</option><option value="yd">(yd) yard</option><option value="mi">(mi) mile</option><option value="nmi">(nmi) nautical mile</option><option value="Å">(Å) angstrom</option><option value="mil">(mil) mil</option><option value="pixel">(pixel) pointer</option><option value="pt">(pt) point</option><option value="foot_survey_us">(survey ft)</option><option value="fathom">(fathom)</option><option value="au">(au) astronomic</option><option value="light_second">(ls) l-sec</option><option value="light_minute">(lm) l-min</option><option value="light_hour">(lh) l-hour</option><option value="light_day">(ld) l-day</option><option value="ly">(ly) lightyear</option><option value="kly">(kly) kilolightyear</option><option value="pc">(pc) parsec</option><option value="Mpc">(Mpc) megaparsec</option>
+                {UNIT_LIST.map(u => <option value={u.val}>({u.val}) {u.label}</option>)}
               </select>
             </div>
             <span class="min-h-[1rem] text-xs text-error" data-error-for="a"></span>
@@ -113,7 +153,7 @@ const l = {
             <div class="relative flex">
               <input class="input-shell flex-1 rounded-r-none border-r-0" type="text" inputmode="decimal" name="b" />
               <select name="b_unit" class="bg-surface-container border border-outline/30 rounded-r-lg px-2 text-[10px] sm:text-xs focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary w-24 sm:w-28 text-on-surface-variant truncate">
-                <option value="m">(m) meter</option><option value="nm">(nm) nanometer</option><option value="µm">(µm) micrometer</option><option value="mm">(mm) millimeter</option><option value="cm">(cm) centimeter</option><option value="km">(km) kilometer</option><option value="in">(in) inch</option><option value="ft">(ft) foot</option><option value="yd">(yd) yard</option><option value="mi">(mi) mile</option><option value="nmi">(nmi) nautical mile</option><option value="Å">(Å) angstrom</option><option value="mil">(mil) mil</option><option value="pixel">(pixel) pointer</option><option value="pt">(pt) point</option><option value="foot_survey_us">(survey ft)</option><option value="fathom">(fathom)</option><option value="au">(au) astronomic</option><option value="light_second">(ls) l-sec</option><option value="light_minute">(lm) l-min</option><option value="light_hour">(lh) l-hour</option><option value="light_day">(ld) l-day</option><option value="ly">(ly) lightyear</option><option value="kly">(kly) kilolightyear</option><option value="pc">(pc) parsec</option><option value="Mpc">(Mpc) megaparsec</option>
+                {UNIT_LIST.map(u => <option value={u.val}>({u.val}) {u.label}</option>)}
               </select>
             </div>
             <span class="min-h-[1rem] text-xs text-error" data-error-for="b"></span>
@@ -124,7 +164,7 @@ const l = {
             <div class="relative flex">
               <input class="input-shell flex-1 rounded-r-none border-r-0" type="text" inputmode="decimal" name="c" />
               <select name="c_unit" class="bg-surface-container border border-outline/30 rounded-r-lg px-2 text-[10px] sm:text-xs focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary w-24 sm:w-28 text-on-surface-variant truncate">
-                <option value="m">(m) meter</option><option value="nm">(nm) nanometer</option><option value="µm">(µm) micrometer</option><option value="mm">(mm) millimeter</option><option value="cm">(cm) centimeter</option><option value="km">(km) kilometer</option><option value="in">(in) inch</option><option value="ft">(ft) foot</option><option value="yd">(yd) yard</option><option value="mi">(mi) mile</option><option value="nmi">(nmi) nautical mile</option><option value="Å">(Å) angstrom</option><option value="mil">(mil) mil</option><option value="pixel">(pixel) pointer</option><option value="pt">(pt) point</option><option value="foot_survey_us">(survey ft)</option><option value="fathom">(fathom)</option><option value="au">(au) astronomic</option><option value="light_second">(ls) l-sec</option><option value="light_minute">(lm) l-min</option><option value="light_hour">(lh) l-hour</option><option value="light_day">(ld) l-day</option><option value="ly">(ly) lightyear</option><option value="kly">(kly) kilolightyear</option><option value="pc">(pc) parsec</option><option value="Mpc">(Mpc) megaparsec</option>
+                {UNIT_LIST.map(u => <option value={u.val}>({u.val}) {u.label}</option>)}
               </select>
             </div>
             <span class="min-h-[1rem] text-xs text-error" data-error-for="c"></span>
@@ -325,6 +365,7 @@ const l = {
     };
 
     const initTriangleTool = (section: HTMLElement) => {
+      const l = JSON.parse(section.getAttribute('data-labels') || '{}');
       const form = section.querySelector('[data-triangle-form]') as HTMLFormElement | null;
       const statusEl = section.querySelector('[data-tool-status]') as HTMLElement | null;
       const formulaListEl = section.querySelector('[data-formula-list]') as HTMLElement | null;
@@ -341,7 +382,6 @@ const l = {
       const labelAngleBeta = section.querySelector('[data-label-angle-beta]') as SVGTextElement | null;
       const labelH = section.querySelector('[data-label-h]') as SVGTextElement | null;
       const modeButtons = Array.from(section.querySelectorAll('[data-angle-mode-option]')) as HTMLButtonElement[];
-      const presetButtons = Array.from(section.querySelectorAll('[data-preset]')) as HTMLButtonElement[];
 
       const resultEls = {
         a: section.querySelector('[data-result-a]'),
@@ -401,10 +441,10 @@ const l = {
 
         const getFilledCount = () => CALCULATOR_INPUT_KEYS.filter((key) => inputs[key].value.trim().length > 0).length;
 
-      const setStatus = (message: string, isError = false) => {
-        statusEl.textContent = message;
-        statusEl.classList.toggle('text-error', isError);
-      };
+        const setStatus = (message: string, isError = false) => {
+          statusEl.textContent = message;
+          statusEl.classList.toggle('text-error', isError);
+        };
 
         const setFieldError = (key: CalculatorInputKey, message = '') => {
           errors[key].textContent = message;
@@ -415,11 +455,11 @@ const l = {
           for (const key of CALCULATOR_INPUT_KEYS) setFieldError(key, '');
         };
 
-        const labelEntered = section.getAttribute('data-label-entered') || 'entered';
-        const labelComputed = section.getAttribute('data-label-computed') || 'computed';
-        const labelSolvedFrom = section.getAttribute('data-label-solved-from') || 'Solved from';
-        const labelStatusDefault = section.getAttribute('data-label-status-default') || '';
-        const labelSolutionStepsDefault = section.getAttribute('data-label-solution-steps-default') || '';
+        const labelEntered = l.entered || 'entered';
+        const labelComputed = l.computed || 'computed';
+        const labelSolvedFrom = l.solvedFrom || 'Solved from';
+        const labelStatusDefault = l.statusDefault || '';
+        const labelSolutionStepsDefault = l.solutionStepsDefault || '';
         const DEFAULT_PATH = 'M 70 70 L 70 260 L 380 260 Z';
 
         const setOriginState = (provided: CalculatorInputKey[] | null) => {
@@ -515,11 +555,11 @@ const l = {
         r.area.textContent = formatWithUnit(solution.area, unit, 4, true);
         r.perimeter.textContent = formatWithUnit(solution.perimeter, unit);
         r.h.textContent = formatWithUnit(solution.h, unit);
-        r.s.textContent = formatWithUnit(lastSolution.semiperimeter, unit);
-        r.r.textContent = formatWithUnit(lastSolution.inradius, unit);
-        r.R.textContent = formatWithUnit(lastSolution.circumradius, unit);
-        r.p.textContent = formatWithUnit(lastSolution.segmentP, unit);
-        r.q.textContent = formatWithUnit(lastSolution.segmentQ, unit);
+        r.s.textContent = formatWithUnit(solution.semiperimeter, unit);
+        r.r.textContent = formatWithUnit(solution.inradius, unit);
+        r.R.textContent = formatWithUnit(solution.circumradius, unit);
+        r.p.textContent = formatWithUnit(solution.segmentP, unit);
+        r.q.textContent = formatWithUnit(solution.segmentQ, unit);
         r.ratioA.textContent = formatNumber(solution.ratioA);
         r.ratioB.textContent = formatNumber(solution.ratioB);
         r.tanA.textContent = formatNumber(solution.tangentAlpha);
@@ -572,7 +612,7 @@ const l = {
           } catch (error) {
             const fallback =
               key === 'alpha' || key === 'beta'
-                ? 'Enter a valid angle (example: 30 or pi/6).'
+                ? 'Enter a valid angle.'
                 : `Enter a valid value for ${key}.`;
             setFieldError(key, error instanceof Error ? error.message : fallback);
             hasAnyError = true;
@@ -599,36 +639,12 @@ const l = {
         return { values, hasAnyError };
       };
 
-        const updatePresetState = () => {
-          const isPresetActive = (preset: Partial<Record<CalculatorInputKey, string>>) => {
-            for (const key of CALCULATOR_INPUT_KEYS) {
-              const p = preset[key] ?? '';
-            const c = inputs[key].value.trim();
-            if (!p && c) return false;
-            if (!p) continue;
-            try {
-              if (Math.abs(parseMathExpression(p) - parseMathExpression(c || '')) > 1e-9) return false;
-            } catch {
-              return false;
-            }
-          }
-          return true;
-        };
-
-        for (const button of presetButtons) {
-          const preset = parsePreset(button.getAttribute('data-preset') || '');
-          button.classList.toggle('is-active', isPresetActive(preset));
-        }
-      };
-
       const solveFromInputs = () => {
         clearFieldErrors();
         const { values, hasAnyError } = readValues();
         if (hasAnyError) {
-          setStatus('Fix highlighted inputs before solving.', true);
+          setStatus(l.fixErrors || 'Fix highlighted inputs before solving.', true);
           setEmptyResults();
-          updatePresetState();
-          updateUrlState();
           return;
         }
 
@@ -638,11 +654,10 @@ const l = {
             const readableCase = solution.combination.replace('+', ' + ').replace('alpha', 'A').replace('beta', 'B');
             setStatus(`${labelSolvedFrom} ${readableCase}.`, false);
           } catch (error) {
-            const msg = error instanceof Error ? error.message : 'Unable to solve with these inputs.';
+            const msg = error instanceof Error ? error.message : 'Unable to solve.';
             const lowMsg = msg.toLowerCase();
             let targetKey = null;
 
-            // Map standard text errors to actual input keys for interactive field-level error display
             if (lowMsg.includes('c must be larger than side a') || lowMsg.includes('c must be greater than leg a') || lowMsg.includes('hypotenuse c must be')) targetKey = 'c';
             else if (lowMsg.includes('c must be larger than side b') || lowMsg.includes('c must be greater than leg b')) targetKey = 'c';
             else if (lowMsg.includes('side a must be a positive') || (!lowMsg.includes('hypotenuse') && lowMsg.includes('side a'))) targetKey = 'a';
@@ -652,14 +667,13 @@ const l = {
 
             if (targetKey) {
               setFieldError(targetKey, msg);
-              setStatus('Please fix the errors in the highlighted fields.', true);
+              setStatus(l.fixErrors || 'Please fix errors.', true);
             } else {
               setStatus(msg, true);
             }
           setEmptyResults();
         }
 
-        updatePresetState();
         updateUrlState();
       };
 
@@ -680,19 +694,18 @@ const l = {
         }
         syncModeButtons();
         setEmptyResults();
-        setStatus('Enter any 2 valid right-triangle values.', false);
-        updatePresetState();
+        setStatus(l.statusDefault, false);
         updateUrlState();
       };
 
       const copyResults = async () => {
         if (!lastSolution) {
-          setStatus('Solve a triangle before copying results.', true);
+          setStatus(l.solveFirst || 'Solve before copying.', true);
           return;
         }
 
         const text = [
-          'Right Triangle Solver Results',
+          l.resultsTitle || 'Right Triangle Solver Results',
           `a = ${formatWithUnit(lastSolution.a, unit)}`,
           `b = ${formatWithUnit(lastSolution.b, unit)}`,
           `c = ${formatWithUnit(lastSolution.c, unit)}`,
@@ -722,9 +735,9 @@ const l = {
             document.execCommand('copy');
             area.remove();
           }
-          setStatus('Results copied to clipboard.', false);
+          setStatus(l.copySuccess || 'Copied.', false);
         } catch {
-          setStatus('Unable to copy automatically. Please copy manually.', true);
+          setStatus('Error copying results.', true);
         }
       };
 
@@ -744,16 +757,12 @@ const l = {
         }
 
         syncModeButtons();
-        updatePresetState();
 
         const filled = getFilledCount();
         if (hasAny && filled >= 2) solveFromInputs();
-        else if (!hasAny || filled === 0) {
+        else {
           setEmptyResults();
-          setStatus('', false);
-        } else {
-          setEmptyResults();
-          setStatus('', true);
+          setStatus(l.statusDefault, false);
         }
       };
 
@@ -770,16 +779,10 @@ const l = {
             solveFromInputs();
             return;
           }
-          // Only clear results if they actually cleared the form (filled < 2)
-          // but we might want to keep last successful solution visible for a better UX.
-          // However, to keep it "live", we clear if they don't have enough data.
           if (filled === 0) {
             setEmptyResults();
-            setStatus('', false);
-          } else if (filled === 1) {
-            setStatus('', false);
+            setStatus(l.statusDefault, false);
           }
-          updatePresetState();
           updateUrlState();
         });
 
@@ -788,17 +791,6 @@ const l = {
             event.preventDefault();
             solveFromInputs();
           }
-        });
-      }
-
-      for (const button of presetButtons) {
-        button.addEventListener('click', () => {
-          const preset = parsePreset(button.getAttribute('data-preset') || '');
-          for (const key of CALCULATOR_INPUT_KEYS) {
-            inputs[key].value = preset[key] ?? '';
-            setFieldError(key, '');
-          }
-          solveFromInputs();
         });
       }
 
@@ -816,12 +808,11 @@ const l = {
               inputs[key].value = formatEditableNumber(converted);
               setFieldError(key, '');
             } catch {
-              // Keep original raw input if it cannot be parsed safely.
             }
           }
           angleMode = next;
           syncModeButtons();
-          if (getFilledCount() === 2) solveFromInputs();
+          if (getFilledCount() >= 2) solveFromInputs();
           else if (lastSolution) renderSolution(lastSolution);
           updateUrlState();
         });
@@ -839,9 +830,7 @@ const l = {
       }
 
       resetButton.addEventListener('click', resetTool);
-      copyButton.addEventListener('click', () => {
-        void copyResults();
-      });
+      copyButton.addEventListener('click', copyResults);
 
       setEmptyResults();
       hydrateFromUrl();

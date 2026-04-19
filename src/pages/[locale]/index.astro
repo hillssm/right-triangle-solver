@@ -71,6 +71,7 @@ const chartRows = [
     <div class="pointer-events-none absolute -bottom-20 right-8 h-52 w-52 rounded-full bg-tertiary/14 blur-3xl"></div>
     <div class="relative w-full min-w-0">
       <RightTriangleTool
+        locale={locale}
         heading={pick(home, 'toolHeading', 'Right Triangle Solver')}
         labels={home.tool as any}
       />

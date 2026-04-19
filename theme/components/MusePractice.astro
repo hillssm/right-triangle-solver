@@ -1,21 +1,58 @@
 ---
+import { getTranslations, pick } from 'theme/i18n/translations';
+
 interface Props {
   calculatorHref?: string;
   libraryHref?: string;
   practiceHref?: string;
   formulasHref?: string;
+  locale: string;
 }
 
 const {
   calculatorHref = '/',
   libraryHref = '/library/',
   practiceHref = '/practice/',
-  formulasHref = '/formulas/'
+  formulasHref = '/formulas/',
+  locale
 } = Astro.props;
+
+const bundle = getTranslations(locale);
+const practice = (bundle.practice as any) || {};
+const solver = (bundle.solver as any) || {};
+
+const diffMap = {
+  1: practice.easy || 'Easy',
+  2: practice.moderate || 'Moderate',
+  3: practice.hard || 'Hard'
+};
+
+const scriptTranslations = {
+  streakSuffix: practice.streak || "DAY STREAK",
+  rank: practice.rank || "Rank",
+  time: practice.time || "Time",
+  accuracy: practice.accuracy || "Accuracy",
+  score: practice.score || "Score",
+  correctTitle: practice.correct || "Correct!",
+  incorrectTitle: practice.incorrect || "Not quite!",
+  feedbackCorrect: "The answer is {ans}. Solved in {sec}s. +{pts} points!", // template
+  feedbackIncorrect: "The correct answer is {ans}. Keep practicing!", // template
+  difficultyLabels: [practice.easy || 'Easy', practice.moderate || 'Moderate', practice.hard || 'Hard'],
+  challengeSubtitle: "Find the hypotenuse c given a = {a} and b = {b}.", // template
+  recall: "Recall:",
+  showHint: practice.showHint || "Show Hint",
+  ranks: {
+    gm: "Grand Master",
+    expert: "Expert",
+    scholar: "Scholar",
+    adept: "Adept",
+    initiate: "Initiate"
+  }
+};
 ---
 
 <div class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
-  <div class="flex flex-col md:flex-row rounded-3xl overflow-hidden border border-outline-variant/30 shadow-luxury relative">
+  <div class="flex flex-col md:flex-row rounded-3xl overflow-hidden border border-outline-variant/30 shadow-luxury relative" data-practice-translations={JSON.stringify(scriptTranslations)}>
     <!-- Ambient glow -->
     <div class="ambient-glow" style="width: 500px; height: 500px; top: -100px; right: 10%; background: rgba(181, 140, 69, 0.12);"></div>
     <div class="ambient-glow" style="width: 300px; height: 300px; bottom: 0; left: 0; background: rgba(91, 64, 0, 0.05);"></div>
@@ -29,7 +66,7 @@ const {
           </div>
         <div>
           <div class="text-sm font-headline font-bold text-on-primary-container">Right Triangle Solver</div>
-          <p class="font-label text-[9px] uppercase tracking-[0.25em] text-on-surface-variant">Precision Solver</p>
+          <p class="font-label text-[9px] uppercase tracking-[0.25em] text-on-surface-variant">{practice.precisionSolver || 'Precision Solver'}</p>
         </div>
         </div>
       </div>
@@ -37,15 +74,15 @@ const {
       <nav class="flex-1 space-y-1 px-4" aria-label="Workspace navigation">
       <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-on-surface-variant transition-all duration-300 hover:bg-primary/5 hover:text-primary" href={calculatorHref}>
         <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">calculate</span>
-        <span class="text-sm tracking-wide">Solver</span>
+        <span class="text-sm tracking-wide">{practice.solver || 'Solver'}</span>
       </a>
       <a class="group flex items-center gap-4 rounded-xl px-5 py-3.5 text-on-surface-variant transition-all duration-300 hover:bg-primary/5 hover:text-primary" href={libraryHref}>
         <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">menu_book</span>
-        <span class="text-sm tracking-wide">Library</span>
+        <span class="text-sm tracking-wide">{practice.library || 'Library'}</span>
       </a>
       <a class="group flex items-center gap-4 rounded-xl border-l-[3px] border-primary bg-primary/10 px-5 py-3.5 text-primary transition-all duration-300" href={practiceHref}>
         <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110" style="font-variation-settings: 'FILL' 1;">edit_note</span>
-        <span class="text-sm font-medium tracking-wide">Practice</span>
+        <span class="text-sm font-medium tracking-wide">{practice.practice || 'Practice'}</span>
         <span class="ml-auto h-1.5 w-1.5 rounded-full bg-primary shadow-sm"></span>
       </a>
       </nav>
@@ -53,15 +90,15 @@ const {
       <div class="mt-auto space-y-2 border-t border-outline-variant/8 px-4 pt-5">
         <button class="btn-primary mb-4 w-full justify-center gap-2 py-3 text-sm" type="button" data-new-challenge>
           <span class="material-symbols-outlined text-base">add_circle</span>
-          New Challenge
+          {practice.newChallenge || 'New Challenge'}
         </button>
         <a class="flex items-center gap-4 rounded-lg px-5 py-2.5 text-on-surface-variant transition-colors hover:text-primary" href="#">
           <span class="material-symbols-outlined text-lg">settings</span>
-          <span class="text-xs font-label tracking-wide">Settings</span>
+          <span class="text-xs font-label tracking-wide">{practice.settings || 'Settings'}</span>
         </a>
         <a class="flex items-center gap-4 rounded-lg px-5 py-2.5 text-on-surface-variant transition-colors hover:text-primary" href="#">
           <span class="material-symbols-outlined text-lg">help</span>
-          <span class="text-xs font-label tracking-wide">Support</span>
+          <span class="text-xs font-label tracking-wide">{practice.support || 'Support'}</span>
         </a>
       </div>
     </aside>
@@ -78,11 +115,11 @@ const {
           <!-- Streak badge -->
           <div class="hidden items-center gap-2 rounded-full border border-primary/15 bg-primary/5 px-4 py-1.5 md:flex">
             <span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
-            <span class="font-label text-xs text-primary" data-streak-count>0 DAY STREAK</span>
+            <span class="font-label text-xs text-primary" data-streak-count>0 {practice.streak || 'DAY STREAK'}</span>
           </div>
           <button class="hidden items-center gap-2 rounded-xl border border-primary/15 bg-primary/5 px-4 py-2 text-sm font-medium text-primary transition-all hover:bg-primary/10 md:inline-flex" type="button">
             <span class="material-symbols-outlined text-base">workspace_premium</span>
-            Go Premium
+            {practice.premium || 'Go Premium'}
           </button>
           <button type="button" class="flex h-9 w-9 items-center justify-center rounded-full border border-outline-variant/15 bg-surface-container-high/50 text-slate-400 transition-all hover:border-primary/30 hover:text-primary" aria-label="Profile">
             <span class="material-symbols-outlined text-xl">account_circle</span>
@@ -96,7 +133,7 @@ const {
           <div>
             <span class="mb-3 inline-flex items-center gap-2 rounded-full border border-primary/15 bg-primary/5 px-4 py-1.5 font-label text-[10px] font-bold uppercase tracking-[0.25em] text-primary">
               <span class="material-symbols-outlined text-sm">bolt</span>
-              Daily Challenge
+              {practice.dailyChallenge || 'Daily Challenge'}
             </span>
             <h2 class="text-3xl leading-tight font-headline md:text-4xl">
               <span class="text-gradient-secondary" data-challenge-title>The Pythagorean Shadow</span>
@@ -109,7 +146,7 @@ const {
           <!-- Progress panel -->
           <div class="flex items-center gap-6 rounded-2xl border-l-4 border-primary/40 bg-gradient-to-r from-surface-container-low to-surface-container-lowest p-6 hover-lift">
             <div class="flex flex-col">
-              <span class="font-label text-[9px] uppercase tracking-widest text-slate-500">Progress</span>
+              <span class="font-label text-[9px] uppercase tracking-widest text-slate-500">{practice.progress || 'Progress'}</span>
               <div class="mt-2 flex items-center gap-3">
                 <div class="h-1.5 w-32 overflow-hidden rounded-full bg-surface-container-highest">
                   <div class="h-full rounded-full bg-gradient-to-r from-primary to-primary-container transition-all duration-1000" style="width: 0%;" data-progress-bar></div>
@@ -119,7 +156,7 @@ const {
             </div>
             <div class="h-8 w-px bg-outline-variant/15"></div>
             <div class="flex flex-col">
-              <span class="font-label text-[9px] uppercase tracking-widest text-slate-500">Rank</span>
+              <span class="font-label text-[9px] uppercase tracking-widest text-slate-500">{practice.rank || 'Rank'}</span>
               <span class="text-lg font-headline text-gradient-secondary" data-rank-text>Initiate</span>
             </div>
           </div>
@@ -157,11 +194,11 @@ const {
               <div class="flex items-center gap-3">
                 <span class="material-symbols-outlined text-tertiary">lightbulb</span>
                 <p class="text-xs text-slate-300 font-body">
-                  Recall: <span class="ml-1 text-sm italic font-headline text-primary">a² + b² = c²</span>
+                  {scriptTranslations.recall} <span class="ml-1 text-sm italic font-headline text-primary">a² + b² = c²</span>
                 </p>
               </div>
               <button class="font-label text-[10px] uppercase tracking-widest text-primary transition-colors hover:text-primary-container" type="button" data-show-hint>
-                Show Hint
+                {practice.showHint || 'Show Hint'}
               </button>
             </div>
           </div>
@@ -172,18 +209,18 @@ const {
             <div class="rounded-2xl border border-outline-variant/15 bg-gradient-to-br from-surface-container-highest/80 to-surface-container-high p-7 border-glow">
               <label class="mb-4 flex items-center gap-2 font-label text-xs uppercase tracking-widest text-slate-400">
                 <span class="material-symbols-outlined text-sm text-primary">edit</span>
-                Your Solution
+                {practice.yourSolution || 'Your Solution'}
               </label>
               <div class="group relative">
                 <input
                   class="w-full border-none border-b-2 border-outline-variant bg-transparent pb-4 text-4xl font-headline text-primary placeholder:text-slate-700 transition-all focus:border-primary focus:ring-0 md:text-5xl"
                   type="text"
-                  placeholder="Enter value..."
+                  placeholder={practice.enterValue || 'Enter value...'}
                   data-answer-input
                   inputmode="decimal"
                 />
                 <div class="absolute right-0 bottom-5 flex items-center gap-2">
-                  <span class="font-label text-[10px] uppercase tracking-widest text-slate-500">Units:</span>
+                  <span class="font-label text-[10px] uppercase tracking-widest text-slate-500">{practice.units || 'Units'}:</span>
                   <span class="text-base font-headline text-secondary-fixed">cm</span>
                 </div>
               </div>
@@ -207,7 +244,7 @@ const {
                   <span class="material-symbols-outlined">backspace</span>
                 </button>
                 <button class="btn-primary col-span-3 mt-3 h-14 gap-3 text-base font-label font-bold uppercase tracking-widest" type="button" data-check-answer>
-                  <span>Check Answer</span>
+                  <span>{practice.checkAnswer || 'Check Answer'}</span>
                   <span class="material-symbols-outlined text-lg">arrow_forward</span>
                 </button>
               </div>
@@ -220,7 +257,7 @@ const {
           <div class="group rounded-2xl border border-outline-variant/10 bg-gradient-to-br from-surface-container-low to-surface-container-lowest p-5 hover-lift">
             <span class="mb-2 flex items-center gap-2 font-label text-[9px] uppercase tracking-widest text-slate-500">
               <span class="material-symbols-outlined text-sm text-primary/50">speed</span>
-              Difficulty
+              {practice.difficulty || 'Difficulty'}
             </span>
             <div class="mt-2 flex gap-1.5" data-difficulty-bars>
               <div class="h-1.5 w-8 rounded-full bg-secondary-container transition-all"></div>
@@ -233,7 +270,7 @@ const {
           <div class="group rounded-2xl border border-outline-variant/10 bg-gradient-to-br from-surface-container-low to-surface-container-lowest p-5 hover-lift">
             <span class="mb-2 flex items-center gap-2 font-label text-[9px] uppercase tracking-widest text-slate-500">
               <span class="material-symbols-outlined text-sm text-primary/50">timer</span>
-              Time
+              {practice.time || 'Time'}
             </span>
             <span class="mt-1 block text-2xl font-headline text-secondary stat-value" data-timer>00:00</span>
           </div>
@@ -241,7 +278,7 @@ const {
           <div class="group rounded-2xl border border-outline-variant/10 bg-gradient-to-br from-surface-container-low to-surface-container-lowest p-5 hover-lift">
             <span class="mb-2 flex items-center gap-2 font-label text-[9px] uppercase tracking-widest text-slate-500">
               <span class="material-symbols-outlined text-sm text-primary/50">target</span>
-              Accuracy
+              {practice.accuracy || 'Accuracy'}
             </span>
             <span class="mt-1 block text-2xl font-headline text-secondary stat-value" data-accuracy>0%</span>
           </div>
@@ -249,7 +286,6 @@ const {
           <div class="group relative overflow-hidden rounded-2xl border border-outline-variant/10 bg-gradient-to-br from-surface-container-low to-surface-container-lowest p-5 hover-lift">
             <span class="mb-2 flex items-center gap-2 font-label text-[9px] uppercase tracking-widest text-slate-500">
               <span class="material-symbols-outlined text-sm text-primary/50">token</span>
-              Score
             </span>
             <div class="mt-1 flex items-center gap-2">
               <span class="text-2xl font-headline text-primary-container stat-value" data-score>0</span>
@@ -267,7 +303,7 @@ const {
             <h3 class="text-2xl font-headline" data-feedback-title></h3>
             <p class="mt-2 text-sm text-slate-400" data-feedback-message></p>
             <button class="btn-primary mt-6 w-full justify-center py-3" type="button" data-feedback-next>
-              Next Challenge
+              {practice.nextChallenge || 'Next Challenge'}
               <span class="material-symbols-outlined ml-2 text-base">arrow_forward</span>
             </button>
           </div>
@@ -280,22 +316,21 @@ const {
   <nav class="fixed right-0 bottom-0 left-0 z-20 flex h-16 items-center justify-around border-t border-outline-variant/8 md:hidden" style="background: linear-gradient(180deg, rgba(25,18,13,0.95) 0%, rgba(12,9,7,1) 100%); backdrop-filter: blur(16px);">
     <a class="flex flex-col items-center gap-1 text-slate-500 transition-colors hover:text-slate-300" href={calculatorHref}>
       <span class="material-symbols-outlined">calculate</span>
-      <span class="text-[9px] font-label tracking-wide">Solver</span>
+      <span class="text-[9px] font-label tracking-wide">{practice.solver || 'Solver'}</span>
     </a>
     <a class="flex flex-col items-center gap-1 text-slate-500 transition-colors hover:text-slate-300" href={libraryHref}>
       <span class="material-symbols-outlined">menu_book</span>
-      <span class="text-[9px] font-label tracking-wide">Library</span>
+      <span class="text-[9px] font-label tracking-wide">{practice.library || 'Library'}</span>
     </a>
     <a class="flex flex-col items-center gap-1 text-primary" href={practiceHref}>
       <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">edit_note</span>
-      <span class="text-[9px] font-label font-medium tracking-wide">Practice</span>
+      <span class="text-[9px] font-label font-medium tracking-wide">{practice.practice || 'Practice'}</span>
     </a>
   </nav>
 </div>
 
 <script is:inline>
 (() => {
-  // ─── PRACTICE ENGINE ───
   const CHALLENGES = [
     { a: 3, b: 4, unknown: 'c', title: 'Classic 3-4-5', difficulty: 1 },
     { a: 5, b: 12, unknown: 'c', title: 'Perfect Triple 5-12-13', difficulty: 1 },
@@ -358,21 +393,24 @@ const {
   const feedbackTitle = $('[data-feedback-title]');
   const feedbackMessage = $('[data-feedback-message]');
   const rankEl = $('[data-rank-text]');
+  
+  const translations = JSON.parse(document.querySelector('[data-practice-translations]')?.getAttribute('data-practice-translations') || '{}');
 
   if (!answerInput) return;
 
   const getRank = () => {
-    if (score >= 500) return 'Grand Master';
-    if (score >= 300) return 'Expert';
-    if (score >= 150) return 'Scholar';
-    if (score >= 50) return 'Adept';
-    return 'Initiate';
+    const r = translations.ranks || {};
+    if (score >= 500) return r.gm || 'Grand Master';
+    if (score >= 300) return r.expert || 'Expert';
+    if (score >= 150) return r.scholar || 'Scholar';
+    if (score >= 50) return r.adept || 'Adept';
+    return r.initiate || 'Initiate';
   };
 
   const updateUI = () => {
     if (scoreEl) scoreEl.textContent = score;
     if (accuracyEl) accuracyEl.textContent = total > 0 ? Math.round((correct / total) * 100) + '%' : '0%';
-    if (streakEl) streakEl.textContent = streak + ' DAY STREAK';
+    if (streakEl) streakEl.textContent = (streak || 0) + ' ' + (translations.streakSuffix || 'DAY STREAK');
     if (rankEl) rankEl.textContent = getRank();
     const progress = Math.min((score / 500) * 100, 100);
     if (progressBar) progressBar.style.width = progress + '%';
@@ -397,7 +435,6 @@ const {
   const setDifficulty = (level) => {
     if (!diffBars) return;
     const bars = diffBars.querySelectorAll('div');
-    const labels = ['Easy', 'Moderate', 'Hard'];
     bars.forEach((bar, i) => {
       if (i < level) {
         bar.className = 'h-1.5 w-8 rounded-full bg-secondary-container transition-all';
@@ -405,7 +442,9 @@ const {
         bar.className = 'h-1.5 w-8 rounded-full bg-outline-variant/15 transition-all';
       }
     });
-    if (diffText) diffText.textContent = labels[level - 1] || 'Moderate';
+    if (diffText) {
+      diffText.textContent = (translations.difficultyLabels || [])[level - 1] || 'Moderate';
+    }
   };
 
   const loadChallenge = () => {
@@ -415,7 +454,11 @@ const {
     currentChallenge.answer = answer;
 
     if (challengeTitle) challengeTitle.textContent = currentChallenge.title;
-    if (challengeSubtitle) challengeSubtitle.textContent = `Find the hypotenuse c given a = ${currentChallenge.a} and b = ${currentChallenge.b}.`;
+    if (challengeSubtitle) {
+      challengeSubtitle.textContent = (translations.challengeSubtitle || "Find the hypotenuse c given a = {a} and b = {b}.")
+        .replace('{a}', currentChallenge.a)
+        .replace('{b}', currentChallenge.b);
+    }
     if (labelA) labelA.textContent = `a = ${currentChallenge.a}`;
     if (labelB) labelB.textContent = `b = ${currentChallenge.b}`;
     if (labelHyp) labelHyp.textContent = 'c = ?';
@@ -435,17 +478,23 @@ const {
       feedbackIcon.textContent = 'check_circle';
       feedbackIcon.className = 'material-symbols-outlined text-4xl text-secondary-container';
       feedbackIcon.style.fontVariationSettings = "'FILL' 1";
-      feedbackTitle.textContent = 'Correct!';
+      feedbackTitle.textContent = translations.correctTitle || 'Correct!';
       feedbackTitle.className = 'text-2xl font-headline text-secondary-container';
-      feedbackMessage.textContent = `The answer is ${correctAnswer.toFixed(2)}. Solved in ${seconds}s. +${Math.max(50 - seconds, 10)} points!`;
+      
+      const pts = Math.max(50 - seconds, 10);
+      feedbackMessage.textContent = (translations.feedbackCorrect || "The answer is {ans}. Solved in {sec}s. +{pts} points!")
+        .replace('{ans}', correctAnswer.toFixed(2))
+        .replace('{sec}', seconds)
+        .replace('{pts}', pts);
     } else {
       feedbackIconWrap.className = 'mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-error/20';
       feedbackIcon.textContent = 'cancel';
       feedbackIcon.className = 'material-symbols-outlined text-4xl text-error';
       feedbackIcon.style.fontVariationSettings = "'FILL' 1";
-      feedbackTitle.textContent = 'Not quite!';
+      feedbackTitle.textContent = translations.incorrectTitle || 'Not quite!';
       feedbackTitle.className = 'text-2xl font-headline text-error';
-      feedbackMessage.textContent = `The correct answer is ${correctAnswer.toFixed(2)}. Keep practicing!`;
+      feedbackMessage.textContent = (translations.feedbackIncorrect || "The correct answer is {ans}. Keep practicing!")
+        .replace('{ans}', correctAnswer.toFixed(2));
     }
   };
 
@@ -470,7 +519,6 @@ const {
     showFeedback(isCorrect, currentChallenge.answer);
   };
 
-  // Keypad
   const keypad = document.querySelector('[data-keypad]');
   if (keypad) {
     keypad.querySelectorAll('[data-key]').forEach(btn => {
@@ -486,18 +534,15 @@ const {
     });
   }
 
-  // Check answer button
   const checkBtn = $('[data-check-answer]');
   if (checkBtn) checkBtn.addEventListener('click', checkAnswer);
 
-  // Enter key
   if (answerInput) {
     answerInput.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') checkAnswer();
     });
   }
 
-  // Feedback next
   const nextBtn = $('[data-feedback-next]');
   if (nextBtn) {
     nextBtn.addEventListener('click', () => {
@@ -507,11 +552,9 @@ const {
     });
   }
 
-  // New challenge button
   const newBtn = $('[data-new-challenge]');
   if (newBtn) newBtn.addEventListener('click', loadChallenge);
 
-  // Hint button
   const hintBtn = $('[data-show-hint]');
   if (hintBtn) {
     hintBtn.addEventListener('click', () => {
@@ -528,4 +571,3 @@ const {
   loadChallenge();
 })();
 </script>
-

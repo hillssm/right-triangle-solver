@@ -1,5 +1,5 @@
 ---
-import Page from './[locale]/[slug].astro';
+import FormulaToolPage from 'theme/templates/FormulaToolPage.astro';
 import { DEFAULT_LOCALE } from 'theme/i18n/locales';
 import { RIGHT_TRIANGLE_FORMULAS } from 'src/data/rightTriangleFormulas';
 
@@ -9,6 +9,6 @@ export function getStaticPaths() {
   }));
 }
 
-// Map the root slug to the English version of the tool
+const { slug } = Astro.params;
 ---
-<Page />
+<FormulaToolPage locale={DEFAULT_LOCALE} slug={slug!!} />

@@ -1,6 +1,7 @@
----
 import type { RightTriangleFormula } from 'src/data/rightTriangleFormulas';
 import { getTranslations, pick } from 'theme/i18n/translations';
+import katex from 'katex';
+import 'katex/dist/katex.min.css';
 
 interface Props {
   formula: RightTriangleFormula;
@@ -86,9 +87,20 @@ const scriptTranslations = {
 >
   <h2 class="text-2xl font-semibold">{displayTitle} {pick(solver, 'calculateSuffix', 'Calculator')}</h2>
   <p class="mt-2 text-sm text-on-surface-variant">
-    {pick(solver, 'calculatorIntro', `This calculator follows {expression} and returns {label}.`)
-      .replace('{expression}', formula.expression)
-      .replace('{label}', calculator.outputLabel)}
+    {(() => {
+      const text = pick(solver, 'calculatorIntro', `This calculator follows {expression} and returns {label}.`).replace('{label}', calculator.outputLabel);
+      if (text.includes('{expression}')) {
+        const parts = text.split('{expression}');
+        return (
+          <Fragment>
+            {parts[0]}
+            <span class="math-textbook text-tertiary" set:html={katex.renderToString(formula.expression, { throwOnError: false })} />
+            {parts[1]}
+          </Fragment>
+        );
+      }
+      return text;
+    })()}
   </p>
 
   <div class="mt-6 flex flex-col gap-6 lg:flex-row lg:items-start">
@@ -139,7 +151,7 @@ const scriptTranslations = {
           </p>
           <span class="rounded bg-primary-fixed px-2 py-0.5 text-[10px] uppercase text-on-primary-fixed">{pick(solver, 'resultLabel', 'Result')}</span>
         </div>
-        <p class="mt-2 font-mono text-3xl text-tertiary" data-calc-output-value>-</p>
+        <p class="mt-2 font-mono text-3xl text-tertiary math-textbook" data-calc-output-value>-</p>
 
         
         <div class="mt-6 border-t border-outline-variant/30 pt-4">
@@ -147,8 +159,9 @@ const scriptTranslations = {
           <ol class="mt-3 space-y-3" data-calc-steps></ol>
         </div>
 
-        <p class="mt-4 text-xs italic text-on-surface-variant" data-calc-output-detail>
-          {pick(solver, 'formulaLabel', 'Formula')}: {formula.expression}
+        <p class="mt-4 text-xs italic text-on-surface-variant flex items-center gap-2">
+          <span>{pick(solver, 'formulaLabel', 'Formula')}:</span>
+          <span class="math-textbook" set:html={katex.renderToString(formula.expression, { throwOnError: false })} />
         </p>
       </div>
     </div>

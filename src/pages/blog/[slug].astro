@@ -1,6 +1,9 @@
 ---
-import Page from '../[locale]/blog/[slug].astro';
-import { getCollection } from 'astro:content';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import { DEFAULT_LOCALE, localizePath } from 'theme/i18n/locales';
+import { getTranslations, pick } from 'theme/i18n/translations';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import { toAbsoluteUrl } from 'theme/utils/site';
 
 export async function getStaticPaths() {
   const allPosts = await getCollection('blog');
@@ -10,6 +13,91 @@ export async function getStaticPaths() {
   }));
 }
 
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
 const { post } = Astro.props;
+const { Content } = await render(post);
+
+const locale = DEFAULT_LOCALE;
+const bundle = getTranslations(locale);
+const content = bundle.content as Record<string, any>;
+const common = bundle.common as Record<string, any>;
+const blogText = content.blog ?? {};
+const commonWords = common.common ?? {};
+
+const pageTitle = `${post.data.title} | ${pick(blogText, 'title', 'Blog')}`;
+const pageDescription = post.data.description;
+const canonicalUrl = localizePath(locale, `/blog/${post.id}/`);
+
+const postSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.data.title,
+  description: post.data.description,
+  image: toAbsoluteUrl(post.data.image),
+  datePublished: post.data.date.toISOString(),
+  author: {
+    '@type': 'Person',
+    name: post.data.author
+  }
+};
 ---
-<Page post={post} />
+
+<BaseLayout
+  locale={locale}
+  title={pageTitle}
+  description={pageDescription}
+  canonicalPath={canonicalUrl}
+  ogType="article"
+>
+  <script is:inline slot="head" type="application/ld+json" set:html={JSON.stringify(postSchema)}></script>
+
+  <article class="mx-auto max-w-4xl overflow-hidden">
+    <header class="mb-10">
+      <div class="mb-6 flex items-center gap-3 text-sm text-on-surface-variant">
+        <a href={localizePath(locale, '/blog/')} class="font-medium text-primary hover:underline">
+          {pick(blogText, 'title', 'Blog')}
+        </a>
+        <span>/</span>
+        <time datetime={post.data.date.toISOString()}>
+          {post.data.date.toLocaleDateString(locale, { year: 'numeric', month: 'long', day: 'numeric' })}
+        </time>
+      </div>
+      
+      <h1 class="text-3xl font-bold tracking-tight sm:text-5xl">{post.data.title}</h1>
+      
+      <div class="mt-6 flex items-center gap-4">
+        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
+          <span class="material-symbols-outlined">person</span>
+        </div>
+        <div>
+          <p class="text-sm font-semibold">{post.data.author}</p>
+          <p class="text-xs text-on-surface-variant">{post.data.category}</p>
+        </div>
+      </div>
+    </header>
+
+    {post.data.image && (
+      <div class="mb-12 aspect-[2/1] w-full overflow-hidden rounded-3xl border border-outline-variant/30 shadow-lg">
+        <img 
+          src={post.data.image} 
+          alt={post.data.title} 
+          class="h-full w-full object-cover"
+        />
+      </div>
+    )}
+
+    <div class="prose prose-luxury prose-lg max-w-none">
+      <Content />
+    </div>
+
+    <footer class="mt-16 border-t border-outline-variant/30 pt-10">
+      <a href={localizePath(locale, '/blog/')} class="btn-secondary group inline-flex items-center gap-2">
+        <span class="material-symbols-outlined transition-transform group-hover:-translate-x-1">arrow_back</span>
+        {pick(commonWords, 'backToBlog', 'Back to blog')}
+      </a>
+    </footer>
+  </article>
+</BaseLayout>

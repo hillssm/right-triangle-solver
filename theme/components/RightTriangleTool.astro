@@ -319,10 +319,15 @@ const labelsJson = JSON.stringify(l);
     };
     const formatNumber = (value: number, digits = 4): string => Number(value).toFixed(digits);
     const formatEditableNumber = (value: number, digits = 10): string => String(Number(value.toFixed(digits)));
-    const formatWithUnit = (value: number, unit: UnitOption, digits = 4, squared = false): string => {
+    const formatWithUnitRaw = (value: number, unit: UnitOption, digits = 4, squared = false): string => {
       const base = formatNumber(value, digits);
       if (!unit) return base;
       return squared ? `${base} ${unit}²` : `${base} ${unit}`;
+    };
+    const formatWithUnit = (value: number, unit: UnitOption, digits = 4, squared = false): string => {
+      const base = formatNumber(value, digits);
+      if (!unit) return base;
+      return squared ? `${base} ${unit}<sup>2</sup>` : `${base} ${unit}`;
     };
     const formatAngle = (rad: number, mode: AngleMode): string => `${formatAngleForMode(rad, mode, 4)} ${mode === 'deg' ? 'deg' : 'rad'}`;
     const parseAngleInput = (raw: string, mode: AngleMode): number => {
@@ -337,8 +342,22 @@ const labelsJson = JSON.stringify(l);
       const fragment = document.createDocumentFragment();
       items.forEach((item, index) => {
         const li = document.createElement('li');
-        // Handle both alpha/beta words and the Greek letters α/β
-        const text = item.replace(/alpha|α/g, 'A').replace(/beta|β/g, 'B');
+        
+        let text = item
+          .replace(/alpha|α/g, 'A')
+          .replace(/beta|β/g, 'B')
+          // Textbook power: variable followed by digit (e.g. x2 -> x²)
+          .replace(/([a-zA-Z])(\d+)/g, '<i>$1</i><sup>$2</sup>')
+          // Caret power: ^2 -> <sup>2</sup>
+          .replace(/\^(\d+)/g, '<sup>$1</sup>')
+          // Unicode power conversion
+          .replace(/¹/g, '<sup>1</sup>')
+          .replace(/²/g, '<sup>2</sup>')
+          .replace(/³/g, '<sup>3</sup>')
+          .replace(/⁴/g, '<sup>4</sup>');
+
+        // Italicize single letters representing variables if not already wrapped
+        text = text.replace(/(^|[^a-zA-Z<>])([a-zA-Z])(?![a-zA-Z<>])/g, '$1<i>$2</i>');
         
         if (isStep) {
           li.className = 'rounded-xl border border-outline-variant/10 bg-surface-container-lowest/40 p-3 text-sm text-on-surface-variant transition-colors hover:border-primary/20 hover:bg-surface-container-lowest/60 flex items-start gap-3';
@@ -547,22 +566,22 @@ const labelsJson = JSON.stringify(l);
       };
 
       const renderSolution = (solution: RightTriangleSolution) => {
-        r.a.textContent = formatWithUnit(solution.a, unit);
-        r.b.textContent = formatWithUnit(solution.b, unit);
-        r.c.textContent = formatWithUnit(solution.c, unit);
-        r.A.textContent = formatAngle(solution.alphaRad, angleMode);
-        r.B.textContent = formatAngle(solution.betaRad, angleMode);
-        r.area.textContent = formatWithUnit(solution.area, unit, 4, true);
-        r.perimeter.textContent = formatWithUnit(solution.perimeter, unit);
-        r.h.textContent = formatWithUnit(solution.h, unit);
-        r.s.textContent = formatWithUnit(solution.semiperimeter, unit);
-        r.r.textContent = formatWithUnit(solution.inradius, unit);
-        r.R.textContent = formatWithUnit(solution.circumradius, unit);
-        r.p.textContent = formatWithUnit(solution.segmentP, unit);
-        r.q.textContent = formatWithUnit(solution.segmentQ, unit);
-        r.ratioA.textContent = formatNumber(solution.ratioA);
-        r.ratioB.textContent = formatNumber(solution.ratioB);
-        r.tanA.textContent = formatNumber(solution.tangentAlpha);
+        r.a.innerHTML = formatWithUnit(solution.a, unit);
+        r.b.innerHTML = formatWithUnit(solution.b, unit);
+        r.c.innerHTML = formatWithUnit(solution.c, unit);
+        r.A.innerHTML = formatAngle(solution.alphaRad, angleMode);
+        r.B.innerHTML = formatAngle(solution.betaRad, angleMode);
+        r.area.innerHTML = formatWithUnit(solution.area, unit, 4, true);
+        r.perimeter.innerHTML = formatWithUnit(solution.perimeter, unit);
+        r.h.innerHTML = formatWithUnit(solution.h, unit);
+        r.s.innerHTML = formatWithUnit(solution.semiperimeter, unit);
+        r.r.innerHTML = formatWithUnit(solution.inradius, unit);
+        r.R.innerHTML = formatWithUnit(solution.circumradius, unit);
+        r.p.innerHTML = formatWithUnit(solution.segmentP, unit);
+        r.q.innerHTML = formatWithUnit(solution.segmentQ, unit);
+        r.ratioA.innerHTML = formatNumber(solution.ratioA);
+        r.ratioB.innerHTML = formatNumber(solution.ratioB);
+        r.tanA.innerHTML = formatNumber(solution.tangentAlpha);
 
         setOriginState(solution.providedKeys);
         drawTriangle(solution);
@@ -706,19 +725,19 @@ const labelsJson = JSON.stringify(l);
 
         const text = [
           l.resultsTitle || 'Right Triangle Solver Results',
-          `a = ${formatWithUnit(lastSolution.a, unit)}`,
-          `b = ${formatWithUnit(lastSolution.b, unit)}`,
-          `c = ${formatWithUnit(lastSolution.c, unit)}`,
+          `a = ${formatWithUnitRaw(lastSolution.a, unit)}`,
+          `b = ${formatWithUnitRaw(lastSolution.b, unit)}`,
+          `c = ${formatWithUnitRaw(lastSolution.c, unit)}`,
           `A = ${formatAngle(lastSolution.alphaRad, angleMode)}`,
           `B = ${formatAngle(lastSolution.betaRad, angleMode)}`,
-          `Area = ${formatWithUnit(lastSolution.area, unit, 4, true)}`,
-          `Perimeter = ${formatWithUnit(lastSolution.perimeter, unit)}`,
-          `Altitude h = ${formatWithUnit(lastSolution.h, unit)}`,
-          `Semiperimeter s = ${formatWithUnit(lastSolution.semiperimeter, unit)}`,
-          `Inradius r = ${formatWithUnit(lastSolution.inradius, unit)}`,
-          `Circumradius R = ${formatWithUnit(lastSolution.circumradius, unit)}`,
-          `Segment p = ${formatWithUnit(lastSolution.segmentP, unit)}`,
-          `Segment q = ${formatWithUnit(lastSolution.segmentQ, unit)}`
+          `Area = ${formatWithUnitRaw(lastSolution.area, unit, 4, true)}`,
+          `Perimeter = ${formatWithUnitRaw(lastSolution.perimeter, unit)}`,
+          `Altitude h = ${formatWithUnitRaw(lastSolution.h, unit)}`,
+          `Semiperimeter s = ${formatWithUnitRaw(lastSolution.semiperimeter, unit)}`,
+          `Inradius r = ${formatWithUnitRaw(lastSolution.inradius, unit)}`,
+          `Circumradius R = ${formatWithUnitRaw(lastSolution.circumradius, unit)}`,
+          `Segment p = ${formatWithUnitRaw(lastSolution.segmentP, unit)}`,
+          `Segment q = ${formatWithUnitRaw(lastSolution.segmentQ, unit)}`
         ].join('\n');
 
         try {

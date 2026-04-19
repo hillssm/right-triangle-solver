@@ -9,7 +9,7 @@ export function getStaticPaths() {
 
 const { locale: rawLocale } = Astro.params;
 const locale = getLocaleFromParams(rawLocale);
-const bundle = getTranslations(locale);
+const bundle = getTranslations('en');
 const content = bundle.content as Record<string, any>;
 const about = content.about ?? {};
 ---

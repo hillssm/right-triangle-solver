@@ -68,7 +68,7 @@ const scriptTranslations = {
   unableToCalculate: "Unable to calculate.",
   fixErrors: "Please fix the errors in the fields above.",
   angleSuffix: "°",
-  sqUnits: (units.m ? ` ${units.m}²` : ' sq units'),
+  sqUnits: (units.m ? ` ${units.m}<sup>2</sup>` : ' sq units'),
   resultLabel: pick(solver, 'resultLabel', 'Result'),
   solutionSteps: pick(solver, 'solutionSteps', 'Solution Steps'),
   formula: pick(solver, 'formulaLabel', 'Formula')
@@ -609,14 +609,21 @@ const scriptTranslations = {
         };
 
         const outSuffix = getUnitSuffix();
-        valueEl.textContent = `${format(result)}${outSuffix}`;
+        valueEl.innerHTML = `${format(result)}${outSuffix.replace(/²/g, '<sup>2</sup>')}`;
 
         const fragment = document.createDocumentFragment();
         steps.forEach((step, index) => {
           const li = document.createElement('li');
+          const formatted = step
+            .replace(/([a-zA-Z])(\d+)/g, '<i>$1</i><sup>$2</sup>')
+            .replace(/\^(\d+)/g, '<sup>$1</sup>')
+            .replace(/²/g, '<sup>2</sup>')
+            .replace(/³/g, '<sup>3</sup>')
+            .replace(/(^|[^a-zA-Z<>])([a-zA-Z])(?![a-zA-Z<>])/g, '$1<i>$2</i>');
+
           li.className = 'flex items-start gap-3 rounded-lg border border-outline-variant/10 bg-surface-container-low/40 p-3 text-sm transition-colors hover:bg-surface-container-low/60';
           const num = (index + 1).toString().padStart(2, '0');
-          li.innerHTML = `<span class="mt-0.5 font-mono text-[10px] text-primary/60 flex-shrink-0">${num}</span><span class="text-on-surface-variant math-textbook">${step}</span>`;
+          li.innerHTML = `<span class="mt-0.5 font-mono text-[10px] text-primary/60 flex-shrink-0">${num}</span><span class="text-on-surface-variant math-textbook">${formatted}</span>`;
           fragment.append(li);
         });
         stepsEl.replaceChildren(fragment);

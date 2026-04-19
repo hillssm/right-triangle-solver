@@ -12,7 +12,7 @@ export function getStaticPaths() {
 }
 
 const locale = getLocaleFromParams(Astro.params.locale);
-const bundle = getTranslations(locale);
+const bundle = getTranslations('en');
 const content = bundle.content as Record<string, unknown>;
 const common = bundle.common as Record<string, unknown>;
 const blogText = (content.blog as Record<string, string>) ?? {};

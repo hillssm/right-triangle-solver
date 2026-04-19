@@ -1,5 +1,53 @@
 ---
+import { RIGHT_TRIANGLE_FORMULAS } from 'src/data/rightTriangleFormulas';
 import { DEFAULT_LOCALE, localizePath } from 'theme/i18n/locales';
+import { getTranslations } from 'theme/i18n/translations';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
 
-return Astro.redirect(localizePath(DEFAULT_LOCALE, '/sitemap/'));
+const locale = DEFAULT_LOCALE;
+const bundle = getTranslations('en');
+const content = bundle.content as Record<string, any>;
+const sitemapText = content.sitemap ?? {};
+
+const PAGE_SIZE = 12;
+const totalTools = RIGHT_TRIANGLE_FORMULAS.length;
+const totalBlogPosts = 0; // Simplified for now
+const totalFaqs = 0;
 ---
+
+<BaseLayout
+  locale={locale}
+  title="Sitemap | Right Triangle Solver"
+  description="Navigate all resources on Right Triangle Solver."
+  canonicalPath="/sitemap/"
+>
+  <header class="mb-10 text-center">
+    <p class="font-label text-xs uppercase tracking-widest text-primary">Directory</p>
+    <h1 class="mt-3 text-3xl font-headline sm:text-4xl lg:text-5xl text-on-surface">Website Sitemap</h1>
+  </header>
+
+  <div class="grid gap-8 lg:grid-cols-2">
+    <section class="section-shell">
+      <h2 class="text-xl font-bold mb-4">Calculators & Tools</h2>
+      <ul class="space-y-2">
+        {RIGHT_TRIANGLE_FORMULAS.slice(0, 50).map(f => (
+          <li>
+            <a href={localizePath(locale, `/${f.slug}/`)} class="text-primary hover:underline">{f.title}</a>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="section-shell">
+      <h2 class="text-xl font-bold mb-4">Pages</h2>
+      <ul class="space-y-2">
+        <li><a href={localizePath(locale, '/')} class="text-primary hover:underline">Home</a></li>
+        <li><a href={localizePath(locale, '/about-us/')} class="text-primary hover:underline">About Us</a></li>
+        <li><a href={localizePath(locale, '/contact-us/')} class="text-primary hover:underline">Contact Us</a></li>
+        <li><a href={localizePath(locale, '/faqs/')} class="text-primary hover:underline">FAQs</a></li>
+        <li><a href={localizePath(locale, '/privacy/')} class="text-primary hover:underline">Privacy Policy</a></li>
+        <li><a href={localizePath(locale, '/terms/')} class="text-primary hover:underline">Terms of Use</a></li>
+      </ul>
+    </section>
+  </div>
+</BaseLayout>

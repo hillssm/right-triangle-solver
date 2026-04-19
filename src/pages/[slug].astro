@@ -1,0 +1,14 @@
+---
+import Page from './[locale]/[slug].astro';
+import { DEFAULT_LOCALE } from 'theme/i18n/locales';
+import { RIGHT_TRIANGLE_FORMULAS } from 'src/data/rightTriangleFormulas';
+
+export function getStaticPaths() {
+  return RIGHT_TRIANGLE_FORMULAS.map((formula) => ({
+    params: { slug: formula.slug }
+  }));
+}
+
+// Map the root slug to the English version of the tool
+---
+<Page />

@@ -1,12 +1,15 @@
 ---
+import Page from '../[locale]/blog/[slug].astro';
 import { getCollection } from 'astro:content';
-import { DEFAULT_LOCALE, localizePath } from 'theme/i18n/locales';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
-  return posts.map(p => ({ params: { slug: p.id } }));
+  const allPosts = await getCollection('blog');
+  return allPosts.map((post) => ({
+    params: { slug: post.id },
+    props: { post }
+  }));
 }
 
-const { slug } = Astro.params;
-return Astro.redirect(localizePath(DEFAULT_LOCALE, `/blog/${slug}/`));
+const { post } = Astro.props;
 ---
+<Page post={post} />

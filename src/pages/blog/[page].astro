@@ -1,19 +1,31 @@
 ---
+import Page from '../[locale]/blog/[page].astro';
 import { getCollection } from 'astro:content';
-import { DEFAULT_LOCALE, localizePath } from 'theme/i18n/locales';
 
 export async function getStaticPaths() {
   const pageSize = 12;
   const allPosts = await getCollection('blog');
-  const totalPages = Math.ceil(allPosts.length / pageSize);
-  
+  const sortedPosts = allPosts.sort((a,b) => b.data.date.getTime() - a.data.date.getTime());
+  const totalPages = Math.max(Math.ceil(allPosts.length / pageSize), 1);
+
   if (totalPages <= 1) return [];
-  
-  return Array.from({ length: totalPages - 1 }, (_, i) => ({
-    params: { page: String(i + 2) }
-  }));
+
+  return Array.from({ length: totalPages - 1 }, (_, index) => {
+    const currentPage = index + 2;
+    const startIndex = (currentPage - 1) * pageSize;
+    const posts = sortedPosts.slice(startIndex, startIndex + pageSize);
+    return {
+      params: { page: String(currentPage) },
+      props: {
+        posts,
+        currentPage,
+        totalPages,
+        totalPosts: allPosts.length
+      }
+    };
+  });
 }
 
-const { page } = Astro.params;
-return Astro.redirect(localizePath(DEFAULT_LOCALE, `/blog/${page}/`));
+const props = Astro.props;
 ---
+<Page {...props} />

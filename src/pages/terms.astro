@@ -1,5 +1,27 @@
 ---
-import { DEFAULT_LOCALE, localizePath } from 'theme/i18n/locales';
+import { DEFAULT_LOCALE } from 'theme/i18n/locales';
+import { getTranslations, pick } from 'theme/i18n/translations';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
 
-return Astro.redirect(localizePath(DEFAULT_LOCALE, '/terms/'));
+const locale = DEFAULT_LOCALE;
+const bundle = getTranslations('en');
+const content = bundle.content as Record<string, any>;
+const terms = content.terms ?? {};
 ---
+
+<BaseLayout
+  locale={locale}
+  title={pick(terms, 'title', 'Terms')}
+  description={pick(terms, 'description', 'Terms and conditions')}
+  canonicalPath="/terms/"
+>
+  <header class="mb-10 text-center">
+    <p class="font-label text-xs uppercase tracking-widest text-primary">Agreement</p>
+    <h1 class="mt-3 text-3xl font-headline sm:text-4xl lg:text-5xl text-on-surface">{pick(terms, 'heading', 'Terms of Use')}</h1>
+    <p class="mt-2 text-xs uppercase tracking-wide text-outline">{pick(terms, 'updatedLabel', '')}</p>
+  </header>
+
+  <article class="section-shell prose-shell">
+    <p class="text-on-surface-variant font-body">{pick(terms, 'body', 'Our terms of use.')}</p>
+  </article>
+</BaseLayout>

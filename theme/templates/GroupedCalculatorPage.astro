@@ -163,20 +163,7 @@ const uiOpen = pick(solver, 'openTool', 'Open Tool');
     </>
   ) : (
     <>
-      <section class="section-shell prose-shell">
-        <h2>{groupedPage!.h2[0]}</h2>
-        <p>
-          This page combines related calculator modes into a single workflow so users can solve
-          the same intent without jumping between thin pages.
-        </p>
-        <h2>{groupedPage!.h2[1]}</h2>
-        <p>
-          Switch modes below to use the exact formula you need. The formula names stay inside the
-          page content and calculator modules while the page title remains broad and user-focused.
-        </p>
-      </section>
-
-      <section class="mt-8 section-shell" data-grouped-calculator-page>
+      <section class="section-shell" data-grouped-calculator-page>
         <div class="flex flex-wrap items-start justify-between gap-4">
           <h2 class="text-2xl font-semibold">{uiModeTitle}</h2>
           <a href={hubPath} class="btn-secondary text-xs sm:text-sm">Back To {uiHub}</a>
@@ -255,14 +242,9 @@ const uiOpen = pick(solver, 'openTool', 'Open Tool');
               if (select && select.value !== mode) {
                 select.value = mode;
               }
-
-              const url = new URL(window.location.href);
-              url.searchParams.set('tool', mode);
-              window.history.replaceState({}, '', url.toString());
             };
 
-            const searchMode = new URL(window.location.href).searchParams.get('tool');
-            const defaultMode = searchMode || panels[0].getAttribute('data-mode');
+            const defaultMode = panels[0].getAttribute('data-mode');
             if (defaultMode) setMode(defaultMode);
 
             buttons.forEach((button) => {
@@ -281,6 +263,19 @@ const uiOpen = pick(solver, 'openTool', 'Open Tool');
             }
           })();
         </script>
+      </section>
+
+      <section class="mt-8 section-shell prose-shell">
+        <h2>{groupedPage!.h2[0]}</h2>
+        <p>
+          This page combines related calculator modes into a single workflow so users can solve
+          the same intent without jumping between thin pages.
+        </p>
+        <h2>{groupedPage!.h2[1]}</h2>
+        <p>
+          Switch modes above to use the exact formula you need. The formula names stay inside the
+          page content and calculator modules while the page title remains broad and user-focused.
+        </p>
       </section>
 
       <section class="mt-8 section-shell">

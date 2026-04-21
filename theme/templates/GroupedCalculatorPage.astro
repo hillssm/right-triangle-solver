@@ -18,6 +18,19 @@ interface Props {
   slug: string;
 }
 
+type GroupedPageCopy = {
+  h1: string;
+  h2: [string, string];
+  intent: string;
+  content: {
+    intro: string;
+    method: string;
+    useCases: string[];
+    inputTips: string[];
+    proTip: string;
+  };
+};
+
 const { locale, slug } = Astro.props;
 const groupedPage = getGroupedPageBySlug(slug);
 const isHubPage = slug === RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.slug;
@@ -26,14 +39,130 @@ if (!groupedPage && !isHubPage) {
   throw new Error(`Unknown grouped calculator slug: ${slug}`);
 }
 
-const activePage = isHubPage ? RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE : groupedPage!;
-const canonicalPath = localizePath(locale, activePage.url);
-const pageTitle = `${activePage.h1} | Right Triangle Solver`;
-const pageDescription = isHubPage
-  ? RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.purpose
-  : groupedPage!.intent;
+const bundle = getTranslations(locale);
+const common = (bundle.common as any) || {};
+const content = (bundle.content as any) || {};
+const formulasBundle = (bundle.formulas as any) || {};
+const nav = (common.nav as any) || {};
 
-const formulas = groupedPage ? getGroupedPageFormulas(groupedPage) : [];
+const groupedContent = (content.grouped as any) || {};
+const groupedUi = (groupedContent.ui as any) || {};
+const groupedHub = (groupedContent.hub as any) || {};
+const groupedPages = (groupedContent.pages as Record<string, any>) || {};
+const groupedFaqs = (groupedContent.faqs as Record<string, any>) || {};
+
+const defaultHubIntro = [
+  'Use this hub to jump into the exact right triangle workflow you need. Each page groups calculators by practical user intent, not by fragmented formula pages.',
+  'Every grouped page includes multiple tool modes in one interface, so users can solve related tasks without moving across overlapping pages.'
+];
+const defaultChooseBestSteps = [
+  'Start with what you already know: sides, angles, area, altitude, projections, or radii.',
+  'Open the grouped page matching that intent, then select the exact mode from tabs.',
+  'Use one related grouped page to verify your final output before using it in class or work.'
+];
+const defaultCommonMistakes = [
+  'Mixing units in a single calculation. Keep all values in one unit system before solving.',
+  'Choosing a mode that does not match known inputs. Start with the closest mode to your available values.',
+  'Rounding too early. Keep full precision until the final result output.',
+  'Skipping verification. Recheck using one related calculator before using results in high-stakes work.'
+];
+const defaultQuickStartTemplates = [
+  'Choose the tab that matches your known values before entering numbers.',
+  'Enter values in consistent units and verify that your triangle inputs are valid.',
+  'Review the calculated result, then cross-check with a related calculator when accuracy matters.',
+  'Use related pages such as {first} and {second} for advanced checks.'
+];
+const defaultWorkflows = [
+  {
+    href: '/right-triangle-side-calculator/',
+    label: 'Side -> Angle -> Area workflow',
+    description: 'for full triangle completion.'
+  },
+  {
+    href: '/right-triangle-trig-ratios-calculator/',
+    label: 'Trig ratios -> Angle -> Side workflow',
+    description: 'for trigonometry tasks.'
+  },
+  {
+    href: '/right-triangle-area-calculator/',
+    label: 'Area + Altitude + Radius workflow',
+    description: 'for geometry validation.'
+  }
+];
+
+const formatText = (template: string, replacements: Record<string, string>) =>
+  Object.entries(replacements).reduce(
+    (acc, [key, value]) => acc.replaceAll(`{${key}}`, value),
+    template
+  );
+
+const localizeGroupedPage = (
+  page: (typeof RIGHT_TRIANGLE_GROUPED_PAGES)[number]
+): GroupedPageCopy => {
+  const copy = groupedPages[page.slug] || {};
+  const contentCopy = copy.content || {};
+
+  const h2 =
+    Array.isArray(copy.h2) && copy.h2.length === 2
+      ? [String(copy.h2[0]), String(copy.h2[1])]
+      : page.h2;
+
+  return {
+    h1: pick(copy, 'h1', page.h1),
+    h2: h2 as [string, string],
+    intent: pick(copy, 'intent', page.intent),
+    content: {
+      intro: pick(contentCopy, 'intro', page.content.intro),
+      method: pick(contentCopy, 'method', page.content.method),
+      useCases: Array.isArray(contentCopy.useCases)
+        ? contentCopy.useCases
+        : page.content.useCases,
+      inputTips: Array.isArray(contentCopy.inputTips)
+        ? contentCopy.inputTips
+        : page.content.inputTips,
+      proTip: pick(contentCopy, 'proTip', page.content.proTip)
+    }
+  };
+};
+
+const localizedHub = {
+  h1: pick(groupedHub, 'h1', RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.h1),
+  h2:
+    Array.isArray(groupedHub.h2) && groupedHub.h2.length === 2
+      ? [String(groupedHub.h2[0]), String(groupedHub.h2[1])]
+      : RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.h2,
+  purpose: pick(groupedHub, 'purpose', RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.purpose)
+};
+
+const localizedGroupedPages = RIGHT_TRIANGLE_GROUPED_PAGES.map((page) => ({
+  base: page,
+  copy: localizeGroupedPage(page)
+}));
+
+const activePage = isHubPage
+  ? {
+      h1: localizedHub.h1,
+      h2: localizedHub.h2,
+      intent: localizedHub.purpose,
+      content: null
+    }
+  : localizeGroupedPage(groupedPage!);
+
+const canonicalPath = localizePath(locale, isHubPage ? RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.url : groupedPage!.url);
+const pageTitle = `${activePage.h1} | Right Triangle Solver`;
+const pageDescription = activePage.intent;
+
+const formulas = groupedPage
+  ? getGroupedPageFormulas(groupedPage).map((formula) => {
+      const localizedFormula = formulasBundle?.[formula.slug] || {};
+      return {
+        ...formula,
+        title: pick(localizedFormula, 'title', formula.title),
+        description: pick(localizedFormula, 'description', formula.description)
+      };
+    })
+  : [];
+
 const relatedPages = groupedPage
   ? groupedPage.relatedSlugs
       .map((relatedSlug) =>
@@ -45,18 +174,70 @@ const relatedPages = groupedPage
       )
   : RIGHT_TRIANGLE_GROUPED_PAGES;
 
+const localizedRelatedPages = relatedPages.map((page) => ({
+  base: page,
+  copy: localizeGroupedPage(page)
+}));
+
+const uiHome = pick(groupedUi, 'homeLabel', pick(nav, 'home', 'Home'));
+const uiHub = localizedHub.h1;
+const uiModeTitle = pick(groupedUi, 'calculatorModeTitle', 'Calculator Mode');
+const uiSelectMode = pick(groupedUi, 'chooseCalculatorMode', 'Choose calculator mode');
+const uiRelated = pick(groupedUi, 'relatedCalculatorsTitle', 'Related Calculators');
+const uiOpen = pick(groupedUi, 'openTool', 'Open Tool');
+const uiBackTo = pick(groupedUi, 'backTo', 'Back To');
+
+const relatedPageNames = localizedRelatedPages.map((item) => item.copy.h1);
+const quickStartTemplates = Array.isArray(groupedUi.quickStartSteps)
+  ? groupedUi.quickStartSteps
+  : defaultQuickStartTemplates;
+
+const quickStartSteps = groupedPage
+  ? [
+      quickStartTemplates[0] ?? defaultQuickStartTemplates[0],
+      quickStartTemplates[1] ?? defaultQuickStartTemplates[1],
+      quickStartTemplates[2] ?? defaultQuickStartTemplates[2],
+      formatText(
+        quickStartTemplates[3] ?? defaultQuickStartTemplates[3],
+        {
+          first: relatedPageNames[0] ?? 'related calculators',
+          second: relatedPageNames[1] ?? relatedPageNames[0] ?? 'other pages'
+        }
+      )
+    ]
+  : [];
+
+const groupedPageFaqItems = groupedPage
+  ? groupedFaqs[groupedPage.slug] ?? GROUPED_PAGE_FAQS[groupedPage.slug] ?? []
+  : [];
+
+const groupedPageFaqSchema = groupedPage && groupedPageFaqItems.length > 0
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: groupedPageFaqItems.map((item: any) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer
+        }
+      }))
+    }
+  : null;
+
 const homePath = localizePath(locale, '/');
 const hubPath = localizePath(locale, RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.url);
 
 const breadcrumbItems = isHubPage
   ? [
-      { label: 'Home', href: homePath },
-      { label: RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.h1, href: hubPath }
+      { label: uiHome, href: homePath },
+      { label: uiHub, href: hubPath }
     ]
   : [
-      { label: 'Home', href: homePath },
-      { label: RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.h1, href: hubPath },
-      { label: groupedPage!.h1, href: localizePath(locale, groupedPage!.url) }
+      { label: uiHome, href: homePath },
+      { label: uiHub, href: hubPath },
+      { label: activePage.h1, href: localizePath(locale, groupedPage!.url) }
     ];
 
 const breadcrumbSchema = {
@@ -70,47 +251,18 @@ const breadcrumbSchema = {
   }))
 };
 
-const bundle = getTranslations(locale);
-const common = (bundle.common as any) || {};
-const solver = (common.solver as any) || {};
-const nav = (common.nav as any) || {};
-
-const uiHome = pick(nav, 'home', 'Home');
-const uiHub = RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.h1;
-const uiModeTitle = pick(solver, 'calculatorMode', 'Calculator Mode');
-const uiSelectMode = pick(solver, 'chooseCalculator', 'Choose calculator mode');
-const uiRelated = pick(solver, 'relatedTools', 'Related Calculators');
-const uiOpen = pick(solver, 'openTool', 'Open Tool');
-
-const relatedPageNames = relatedPages.map((page) => page.h1);
-
-const quickStartSteps = groupedPage
-  ? [
-      'Choose the tab that matches your known values before entering numbers.',
-      'Enter values in consistent units and verify that your triangle inputs are valid.',
-      'Review the calculated result, then cross-check with a related calculator when accuracy matters.',
-      `Use related pages such as ${relatedPageNames.slice(0, 2).join(' and ')} for advanced checks.`
-    ]
-  : [];
-
-const groupedPageFaqItems = groupedPage
-  ? GROUPED_PAGE_FAQS[groupedPage.slug] ?? []
-  : [];
-
-const groupedPageFaqSchema = groupedPage && groupedPageFaqItems.length > 0
-  ? {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: groupedPageFaqItems.map((item) => ({
-        '@type': 'Question',
-        name: item.question,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: item.answer
-        }
-      }))
-    }
-  : null;
+const hubIntroParagraphs = Array.isArray(groupedUi.hubIntroParagraphs)
+  ? groupedUi.hubIntroParagraphs
+  : defaultHubIntro;
+const chooseBestSteps = Array.isArray(groupedUi.chooseBestSteps)
+  ? groupedUi.chooseBestSteps
+  : defaultChooseBestSteps;
+const workflows = Array.isArray(groupedUi.workflows)
+  ? groupedUi.workflows
+  : defaultWorkflows;
+const commonMistakes = Array.isArray(groupedUi.commonMistakes)
+  ? groupedUi.commonMistakes
+  : defaultCommonMistakes;
 ---
 
 <BaseLayout
@@ -138,13 +290,9 @@ const groupedPageFaqSchema = groupedPage && groupedPageFaqItems.length > 0
         <>
           <li>
             {index === breadcrumbItems.length - 1 ? (
-              <span aria-current="page" class="text-on-surface">
-                {index === 0 ? uiHome : item.label}
-              </span>
+              <span aria-current="page" class="text-on-surface">{item.label}</span>
             ) : (
-              <a href={item.href} class="hover:text-primary">
-                {index === 0 ? uiHome : index === 1 ? uiHub : item.label}
-              </a>
+              <a href={item.href} class="hover:text-primary">{item.label}</a>
             )}
           </li>
           {index < breadcrumbItems.length - 1 && (
@@ -157,57 +305,53 @@ const groupedPageFaqSchema = groupedPage && groupedPageFaqItems.length > 0
 
   <header class="mb-8">
     <p class="font-label text-xs uppercase tracking-widest text-primary">
-      {isHubPage ? 'Calculator Hub' : 'Grouped Calculator'}
+      {isHubPage
+        ? pick(groupedUi, 'hubBadge', 'Calculator Hub')
+        : pick(groupedUi, 'groupedBadge', 'Grouped Calculator')}
     </p>
     <h1 class="mt-3 text-3xl font-bold sm:text-4xl">{activePage.h1}</h1>
-    <p class="mt-4 max-w-3xl text-on-surface-variant">
-      {isHubPage ? RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.purpose : groupedPage!.intent}
-    </p>
+    <p class="mt-4 max-w-3xl text-on-surface-variant">{activePage.intent}</p>
   </header>
 
   {isHubPage ? (
     <>
       <section class="section-shell prose-shell">
-        <h2>{RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.h2[0]}</h2>
-        <p>
-          Use this hub to jump into the exact right triangle workflow you need.
-          Each page groups calculators by practical user intent, not by fragmented formula pages.
-        </p>
-        <h2>{RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.h2[1]}</h2>
-        <p>
-          Every grouped page includes multiple tool modes in one interface, so users can solve
-          related tasks without moving across overlapping pages.
-        </p>
+        <h2>{localizedHub.h2[0]}</h2>
+        <p>{hubIntroParagraphs[0] ?? defaultHubIntro[0]}</p>
+        <h2>{localizedHub.h2[1]}</h2>
+        <p>{hubIntroParagraphs[1] ?? defaultHubIntro[1]}</p>
 
-        <h2>How To Choose The Best Right Triangle Calculator</h2>
+        <h2>{pick(groupedUi, 'chooseBestTitle', 'How To Choose The Best Right Triangle Calculator')}</h2>
         <ol>
-          <li>Start with what you already know: sides, angles, area, altitude, projections, or radii.</li>
-          <li>Open the grouped page matching that intent, then select the exact mode from tabs.</li>
-          <li>Use one related grouped page to verify your final output before using it in class or work.</li>
+          {chooseBestSteps.map((step: string) => (
+            <li>{step}</li>
+          ))}
         </ol>
 
-        <h2>Popular Solver Workflows</h2>
+        <h2>{pick(groupedUi, 'popularWorkflowsTitle', 'Popular Solver Workflows')}</h2>
         <ul>
-          <li><a href={localizePath(locale, '/right-triangle-side-calculator/')}>Side -> Angle -> Area workflow</a> for full triangle completion.</li>
-          <li><a href={localizePath(locale, '/right-triangle-trig-ratios-calculator/')}>Trig ratios -> Angle -> Side workflow</a> for trigonometry tasks.</li>
-          <li><a href={localizePath(locale, '/right-triangle-area-calculator/')}>Area + Altitude + Radius workflow</a> for geometry validation.</li>
+          {workflows.map((workflow: any) => (
+            <li>
+              <a href={localizePath(locale, workflow.href)}>{workflow.label}</a> {workflow.description}
+            </li>
+          ))}
         </ul>
       </section>
 
       <section class="mt-8 section-shell">
-        <h2 class="text-2xl font-semibold">All Grouped Calculator Pages</h2>
+        <h2 class="text-2xl font-semibold">{pick(groupedUi, 'allGroupedPagesTitle', 'All Grouped Calculator Pages')}</h2>
         <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {RIGHT_TRIANGLE_GROUPED_PAGES.map((page) => (
+          {localizedGroupedPages.map(({ base, copy }) => (
             <a
-              href={localizePath(locale, page.url)}
+              href={localizePath(locale, base.url)}
               class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
             >
               <h3 class="text-base font-semibold text-on-surface group-hover:text-primary">
-                {page.h1}
+                {copy.h1}
               </h3>
-              <p class="mt-2 text-sm text-on-surface-variant">{page.intent}</p>
+              <p class="mt-2 text-sm text-on-surface-variant">{copy.intent}</p>
               <p class="mt-2 text-xs text-outline">
-                {page.includedToolIds.length} integrated tool modes
+                {base.includedToolIds.length} {pick(groupedUi, 'integratedToolModesSuffix', 'integrated tool modes')}
               </p>
             </a>
           ))}
@@ -219,7 +363,7 @@ const groupedPageFaqSchema = groupedPage && groupedPageFaqItems.length > 0
       <section class="section-shell" data-grouped-calculator-page>
         <div class="flex flex-wrap items-start justify-between gap-4">
           <h2 class="text-2xl font-semibold">{uiModeTitle}</h2>
-          <a href={hubPath} class="btn-secondary text-xs sm:text-sm">Back To {uiHub}</a>
+          <a href={hubPath} class="btn-secondary text-xs sm:text-sm">{uiBackTo} {uiHub}</a>
         </div>
 
         <label class="mt-6 block text-sm font-medium text-on-surface-variant sm:hidden">
@@ -319,39 +463,39 @@ const groupedPageFaqSchema = groupedPage && groupedPageFaqItems.length > 0
       </section>
 
       <section class="mt-8 section-shell prose-shell">
-        <h2>{groupedPage!.h2[0]}</h2>
-        <p>{groupedPage!.content.intro}</p>
-        <h2>{groupedPage!.h2[1]}</h2>
-        <p>{groupedPage!.content.method}</p>
+        <h2>{activePage.h2[0]}</h2>
+        <p>{activePage.content!.intro}</p>
+        <h2>{activePage.h2[1]}</h2>
+        <p>{activePage.content!.method}</p>
 
-        <h3>Where This Calculator Helps</h3>
+        <h3>{pick(groupedUi, 'whereThisCalculatorHelps', 'Where This Calculator Helps')}</h3>
         <ul>
-          {groupedPage!.content.useCases.map((item) => (
+          {activePage.content!.useCases.map((item: string) => (
             <li>{item}</li>
           ))}
         </ul>
 
-        <h3>Input Tips for Better Results</h3>
+        <h3>{pick(groupedUi, 'inputTipsTitle', 'Input Tips for Better Results')}</h3>
         <ul>
-          {groupedPage!.content.inputTips.map((item) => (
+          {activePage.content!.inputTips.map((item: string) => (
             <li>{item}</li>
           ))}
         </ul>
 
         <p>
-          <strong>Pro Tip:</strong> {groupedPage!.content.proTip}
+          <strong>{pick(groupedUi, 'proTipLabel', 'Pro Tip:')}</strong> {activePage.content!.proTip}
         </p>
       </section>
 
       <section class="mt-8 section-shell prose-shell">
-        <h2>How To Use This Calculator</h2>
+        <h2>{pick(groupedUi, 'howToUseTitle', 'How To Use This Calculator')}</h2>
         <ol>
-          {quickStartSteps.map((step) => (
+          {quickStartSteps.map((step: string) => (
             <li>{step}</li>
           ))}
         </ol>
 
-        <h2>Calculator Modes Available</h2>
+        <h2>{pick(groupedUi, 'calculatorModesAvailable', 'Calculator Modes Available')}</h2>
         <ul>
           {formulas.map((formula) => (
             <li>
@@ -360,33 +504,32 @@ const groupedPageFaqSchema = groupedPage && groupedPageFaqItems.length > 0
           ))}
         </ul>
 
-        <h2>Common Mistakes and Quick Fixes</h2>
+        <h2>{pick(groupedUi, 'commonMistakesTitle', 'Common Mistakes and Quick Fixes')}</h2>
         <ul>
-          <li>Mixing units in a single calculation. Keep all values in one unit system before solving.</li>
-          <li>Choosing a mode that does not match known inputs. Start with the closest mode to your available values.</li>
-          <li>Rounding too early. Keep full precision until the final result output.</li>
-          <li>Skipping verification. Recheck using one related calculator before using results in high-stakes work.</li>
+          {commonMistakes.map((item: string) => (
+            <li>{item}</li>
+          ))}
         </ul>
       </section>
 
       {groupedPageFaqItems.length > 0 && (
         <div class="mt-8">
-          <Faq heading="Frequently Asked Questions" items={groupedPageFaqItems} />
+          <Faq heading={pick(groupedUi, 'faqHeading', 'Frequently Asked Questions')} items={groupedPageFaqItems} />
         </div>
       )}
 
       <section class="mt-8 section-shell">
         <h2 class="text-2xl font-semibold">{uiRelated}</h2>
         <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {relatedPages.map((page) => (
+          {localizedRelatedPages.map(({ base, copy }) => (
             <a
-              href={localizePath(locale, page.url)}
+              href={localizePath(locale, base.url)}
               class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
             >
               <h3 class="text-base font-semibold text-on-surface group-hover:text-primary">
-                {page.h1}
+                {copy.h1}
               </h3>
-              <p class="mt-2 text-sm text-on-surface-variant">{page.intent}</p>
+              <p class="mt-2 text-sm text-on-surface-variant">{copy.intent}</p>
               <p class="mt-3 text-[11px] uppercase tracking-widest text-primary">
                 {uiOpen}
               </p>

@@ -142,16 +142,16 @@
       "special": "विशेष त्रिभुज"
     },
     "nav": {
-      "home": "मुख्य पृष्ठ",
-      "practice": "अभ्यास",
-      "formulas": "सूत्र",
-      "aboutUs": "हमारे बारे में",
-      "contactUs": "संपर्क करें",
-      "blog": "ब्लॉग",
-      "faq": "सामान्य प्रश्न",
-      "terms": "शर्तें",
-      "privacy": "गोपनीयता",
-      "sitemap": "साइटमैप"
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "लेख पढ़ें",
@@ -194,10 +194,10 @@
       "liveVisualization": "लाइव विज़ुअलाइज़ेशन",
       "formulaDiagram": "सूत्र आरेख",
       "backToDirectory": "सूत्र निर्देशिका पर वापस जाएं",
-      "resultsTitle": "Right Triangle Solver Results",
-      "copySuccess": "Results copied to clipboard.",
-      "solveFirst": "Solve a triangle before copying results.",
-      "fixErrors": "Please fix the errors in the highlighted fields."
+      "resultsTitle": "समकोण त्रिभुज सॉल्वर परिणाम",
+      "copySuccess": "परिणाम क्लिपबोर्ड पर कॉपी किए गए।",
+      "solveFirst": "परिणाम कॉपी करने से पहले एक त्रिभुज को हल करें।",
+      "fixErrors": "कृपया हाइलाइट किए गए फ़ील्ड में त्रुटियों को ठीक करें।"
     },
     "practice": {
       "solver": "सॉल्वर",
@@ -254,17 +254,17 @@
       "mpc": "मेगापारसेक"
     },
     "library": {
-      "nav_calculator": "Calculator",
-      "nav_library": "Library",
-      "nav_practice": "Practice",
-      "goPremium": "Go Premium",
-      "searchTheorems": "Search theorems...",
-      "knowledgeBase": "Knowledge Base",
-      "formulaTheoryLibrary": "Formula & Theory Library",
-      "libraryIntro": "A curated collection of geometric principles and algebraic identities.",
-      "spotlightTheorem": "Spotlight Theorem",
-      "divineProportion": "The Divine Proportion (φ)",
-      "detailedProof": "Explore Detailed Proof"
+      "nav_calculator": "कैलकुलेटर",
+      "nav_library": "पुस्तकालय",
+      "nav_practice": "अभ्यास करें",
+      "goPremium": "प्रीमियम जाओ",
+      "searchTheorems": "प्रमेय खोजें...",
+      "knowledgeBase": "ज्ञानकोष",
+      "formulaTheoryLibrary": "सूत्र एवं सिद्धांत पुस्तकालय",
+      "libraryIntro": "ज्यामितीय सिद्धांतों और बीजगणितीय पहचानों का एक क्यूरेटेड संग्रह।",
+      "spotlightTheorem": "स्पॉटलाइट प्रमेय",
+      "divineProportion": "दैवीय अनुपात (φ)",
+      "detailedProof": "विस्तृत प्रमाण देखें"
     }
   },
   "es": {
@@ -276,16 +276,16 @@
       "special": "Triángulos Especiales"
     },
     "nav": {
-      "home": "Inicio",
-      "practice": "Práctica",
-      "formulas": "Fórmulas",
-      "aboutUs": "Sobre Nosotros",
-      "contactUs": "Contacto",
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
       "blog": "Blog",
-      "faq": "Preguntas Frecuentes",
-      "terms": "Términos",
-      "privacy": "Privacidad",
-      "sitemap": "Mapa del sitio"
+      "faq": "FAQ",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Leer artículo",
@@ -295,7 +295,7 @@
       "of": "de",
       "results": "Resultados",
       "name": "Nombre",
-      "email": "Email",
+      "email": "Correo electrónico",
       "message": "Mensaje",
       "send": "Enviar Mensaje",
       "sending": "Enviando...",
@@ -312,7 +312,7 @@
     },
     "solver": {
       "mainFormula": "Fórmula Principal",
-      "variables": "Variables",
+      "variables": "variables",
       "usageNotes": "Notas de Uso",
       "relatedTools": "Herramientas Relacionadas",
       "exploreOther": "Explora otros calculadores en la categoría {category}.",
@@ -328,10 +328,10 @@
       "liveVisualization": "Visualización en Vivo",
       "formulaDiagram": "Diagrama de Fórmula",
       "backToDirectory": "Volver al Directorio de Fórmulas",
-      "resultsTitle": "Right Triangle Solver Results",
-      "copySuccess": "Results copied to clipboard.",
-      "solveFirst": "Solve a triangle before copying results.",
-      "fixErrors": "Please fix the errors in the highlighted fields."
+      "resultsTitle": "Resultados del solucionador de triángulos rectángulos",
+      "copySuccess": "Resultados copiados al portapapeles.",
+      "solveFirst": "Resuelve un triángulo antes de copiar los resultados.",
+      "fixErrors": "Corrija los errores en los campos resaltados."
     },
     "practice": {
       "solver": "Resolutor",
@@ -341,7 +341,7 @@
       "settings": "Ajustes",
       "support": "Soporte",
       "streak": "DÍAS DE RACHA",
-      "premium": "Go Premium",
+      "premium": "Ir Premium",
       "dailyChallenge": "Desafío Diario",
       "progress": "Progreso",
       "rank": "Rango",
@@ -372,7 +372,7 @@
       "mi": "milla",
       "nmi": "milla náutica",
       "ang": "angstrom",
-      "mil": "mil",
+      "mil": "millones",
       "pixel": "píxel",
       "pt": "punto",
       "survey_ft": "pie de agrimensura",
@@ -388,17 +388,17 @@
       "mpc": "megapársec"
     },
     "library": {
-      "nav_calculator": "Calculator",
-      "nav_library": "Library",
-      "nav_practice": "Practice",
-      "goPremium": "Go Premium",
-      "searchTheorems": "Search theorems...",
-      "knowledgeBase": "Knowledge Base",
-      "formulaTheoryLibrary": "Formula & Theory Library",
-      "libraryIntro": "A curated collection of geometric principles and algebraic identities.",
-      "spotlightTheorem": "Spotlight Theorem",
-      "divineProportion": "The Divine Proportion (φ)",
-      "detailedProof": "Explore Detailed Proof"
+      "nav_calculator": "Calculadora",
+      "nav_library": "Biblioteca",
+      "nav_practice": "Practica",
+      "goPremium": "Ir Premium",
+      "searchTheorems": "Teoremas de búsqueda...",
+      "knowledgeBase": "Base de conocimientos",
+      "formulaTheoryLibrary": "Biblioteca de fórmulas y teorías",
+      "libraryIntro": "Una colección curada de principios geométricos e identidades algebraicas.",
+      "spotlightTheorem": "Teorema del foco",
+      "divineProportion": "La Divina Proporción (φ)",
+      "detailedProof": "Explorar pruebas detalladas"
     }
   },
   "ru": {
@@ -410,16 +410,16 @@
       "special": "Особые треугольники"
     },
     "nav": {
-      "home": "Главная",
-      "practice": "Практика",
-      "formulas": "Формулы",
-      "aboutUs": "О нас",
-      "contactUs": "Контакты",
-      "blog": "Блог",
-      "faq": "ЧЗВ",
-      "terms": "Условия",
-      "privacy": "Конфиденциальность",
-      "sitemap": "Карта сайта"
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Читать статью",
@@ -462,10 +462,10 @@
       "liveVisualization": "Живая визуализация",
       "formulaDiagram": "Диаграмма формулы",
       "backToDirectory": "Назад в каталог формул",
-      "resultsTitle": "Right Triangle Solver Results",
-      "copySuccess": "Results copied to clipboard.",
-      "solveFirst": "Solve a triangle before copying results.",
-      "fixErrors": "Please fix the errors in the highlighted fields."
+      "resultsTitle": "Результаты решения прямоугольного треугольника",
+      "copySuccess": "Результаты скопированы в буфер обмена.",
+      "solveFirst": "Решите треугольник перед копированием результатов.",
+      "fixErrors": "Пожалуйста, исправьте ошибки в выделенных полях."
     },
     "practice": {
       "solver": "Решатель",
@@ -475,7 +475,7 @@
       "settings": "Настройки",
       "support": "Поддержка",
       "streak": "ДНЕЙ ПОДРЯД",
-      "premium": "Go Premium",
+      "premium": "Перейти Премиум",
       "dailyChallenge": "Ежедневный вызов",
       "progress": "Прогресс",
       "rank": "Ранг",
@@ -522,17 +522,17 @@
       "mpc": "мегапарсек"
     },
     "library": {
-      "nav_calculator": "Calculator",
-      "nav_library": "Library",
-      "nav_practice": "Practice",
-      "goPremium": "Go Premium",
-      "searchTheorems": "Search theorems...",
-      "knowledgeBase": "Knowledge Base",
-      "formulaTheoryLibrary": "Formula & Theory Library",
-      "libraryIntro": "A curated collection of geometric principles and algebraic identities.",
-      "spotlightTheorem": "Spotlight Theorem",
-      "divineProportion": "The Divine Proportion (φ)",
-      "detailedProof": "Explore Detailed Proof"
+      "nav_calculator": "Калькулятор",
+      "nav_library": "Библиотека",
+      "nav_practice": "Практика",
+      "goPremium": "Перейти Премиум",
+      "searchTheorems": "Теоремы поиска...",
+      "knowledgeBase": "База знаний",
+      "formulaTheoryLibrary": "Библиотека формул и теорий",
+      "libraryIntro": "Кураторская коллекция геометрических принципов и алгебраических тождеств.",
+      "spotlightTheorem": "Теорема прожектора",
+      "divineProportion": "Божественная пропорция (φ)",
+      "detailedProof": "Изучите подробное доказательство"
     }
   },
   "fr": {
@@ -544,22 +544,22 @@
       "special": "Triangles Spéciaux"
     },
     "nav": {
-      "home": "Accueil",
-      "practice": "Pratique",
-      "formulas": "Formules",
-      "aboutUs": "À Propos",
-      "contactUs": "Contact",
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Conditions",
-      "privacy": "Confidentialité",
-      "sitemap": "Plan du site"
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Lire l'article",
       "previous": "Précédent",
       "next": "Suivant",
-      "page": "Page",
+      "page": "Pages",
       "of": "de",
       "results": "Résultats",
       "name": "Nom",
@@ -596,10 +596,10 @@
       "liveVisualization": "Visualisation en direct",
       "formulaDiagram": "Diagramme de formule",
       "backToDirectory": "Retour au répertoire des formules",
-      "resultsTitle": "Right Triangle Solver Results",
-      "copySuccess": "Results copied to clipboard.",
-      "solveFirst": "Solve a triangle before copying results.",
-      "fixErrors": "Please fix the errors in the highlighted fields."
+      "resultsTitle": "Résultats du solveur de triangle rectangle",
+      "copySuccess": "Résultats copiés dans le presse-papiers.",
+      "solveFirst": "Résolvez un triangle avant de copier les résultats.",
+      "fixErrors": "Veuillez corriger les erreurs dans les champs en surbrillance."
     },
     "practice": {
       "solver": "Solveur",
@@ -607,9 +607,9 @@
       "practice": "Pratique",
       "newChallenge": "Nouveau Défi",
       "settings": "Paramètres",
-      "support": "Support",
+      "support": "Assistance",
       "streak": "JOURS DE SÉRIE",
-      "premium": "Go Premium",
+      "premium": "Passez à la version premium",
       "dailyChallenge": "Défi Quotidien",
       "progress": "Progression",
       "rank": "Rang",
@@ -636,13 +636,13 @@
       "km": "kilomètre",
       "in": "pouce",
       "ft": "pied",
-      "yd": "yard",
+      "yd": "cour",
       "mi": "mille",
       "nmi": "mille marin",
       "ang": "angström",
       "mil": "mil",
-      "pixel": "pixel",
-      "pt": "point",
+      "pixel": "pixels",
+      "pt": "pointe",
       "survey_ft": "pied d'arpentage",
       "fathom": "brasse",
       "au": "astronomique",
@@ -656,17 +656,17 @@
       "mpc": "mégaparsec"
     },
     "library": {
-      "nav_calculator": "Calculator",
-      "nav_library": "Library",
-      "nav_practice": "Practice",
-      "goPremium": "Go Premium",
-      "searchTheorems": "Search theorems...",
-      "knowledgeBase": "Knowledge Base",
-      "formulaTheoryLibrary": "Formula & Theory Library",
-      "libraryIntro": "A curated collection of geometric principles and algebraic identities.",
-      "spotlightTheorem": "Spotlight Theorem",
-      "divineProportion": "The Divine Proportion (φ)",
-      "detailedProof": "Explore Detailed Proof"
+      "nav_calculator": "Calculatrice",
+      "nav_library": "Bibliothèque",
+      "nav_practice": "Pratique",
+      "goPremium": "Passez à la version premium",
+      "searchTheorems": "Théorèmes de recherche...",
+      "knowledgeBase": "Base de connaissances",
+      "formulaTheoryLibrary": "Bibliothèque de formules et de théories",
+      "libraryIntro": "Une collection organisée de principes géométriques et d'identités algébriques.",
+      "spotlightTheorem": "Théorème de Spotlight",
+      "divineProportion": "La proportion divine (φ)",
+      "detailedProof": "Explorez la preuve détaillée"
     }
   },
   "de": {
@@ -678,15 +678,15 @@
       "special": "Besondere Dreiecke"
     },
     "nav": {
-      "home": "Startseite",
-      "practice": "Übung",
-      "formulas": "Formeln",
-      "aboutUs": "Über uns",
-      "contactUs": "Kontakt",
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Bedingungen",
-      "privacy": "Datenschutz",
+      "terms": "Terms",
+      "privacy": "Privacy",
       "sitemap": "Sitemap"
     },
     "common": {
@@ -730,10 +730,10 @@
       "liveVisualization": "Live-Visualisierung",
       "formulaDiagram": "Formeldiagramm",
       "backToDirectory": "Zurück zum Formelverzeichnis",
-      "resultsTitle": "Right Triangle Solver Results",
-      "copySuccess": "Results copied to clipboard.",
-      "solveFirst": "Solve a triangle before copying results.",
-      "fixErrors": "Please fix the errors in the highlighted fields."
+      "resultsTitle": "Ergebnisse des rechtwinkligen Dreiecklösers",
+      "copySuccess": "Ergebnisse in die Zwischenablage kopiert.",
+      "solveFirst": "Lösen Sie ein Dreieck, bevor Sie die Ergebnisse kopieren.",
+      "fixErrors": "Bitte beheben Sie die Fehler in den hervorgehobenen Feldern."
     },
     "practice": {
       "solver": "Rechner",
@@ -741,9 +741,9 @@
       "practice": "Übung",
       "newChallenge": "Neue Herausforderung",
       "settings": "Einstellungen",
-      "support": "Support",
+      "support": "Unterstützung",
       "streak": "TAGE-STREAK",
-      "premium": "Go Premium",
+      "premium": "Gehen Sie Premium",
       "dailyChallenge": "Tägliche Aufgabe",
       "progress": "Fortschritt",
       "rank": "Rang",
@@ -790,17 +790,17 @@
       "mpc": "Megaparsec"
     },
     "library": {
-      "nav_calculator": "Calculator",
-      "nav_library": "Library",
-      "nav_practice": "Practice",
-      "goPremium": "Go Premium",
-      "searchTheorems": "Search theorems...",
-      "knowledgeBase": "Knowledge Base",
-      "formulaTheoryLibrary": "Formula & Theory Library",
-      "libraryIntro": "A curated collection of geometric principles and algebraic identities.",
-      "spotlightTheorem": "Spotlight Theorem",
-      "divineProportion": "The Divine Proportion (φ)",
-      "detailedProof": "Explore Detailed Proof"
+      "nav_calculator": "Rechner",
+      "nav_library": "Bibliothek",
+      "nav_practice": "Üben",
+      "goPremium": "Gehen Sie Premium",
+      "searchTheorems": "Theoreme suchen...",
+      "knowledgeBase": "Wissensdatenbank",
+      "formulaTheoryLibrary": "Formel- und Theoriebibliothek",
+      "libraryIntro": "Eine kuratierte Sammlung geometrischer Prinzipien und algebraischer Identitäten.",
+      "spotlightTheorem": "Spotlight-Theorem",
+      "divineProportion": "Der göttliche Anteil (φ)",
+      "detailedProof": "Entdecken Sie detaillierte Beweise"
     }
   },
   "it": {
@@ -813,15 +813,15 @@
     },
     "nav": {
       "home": "Home",
-      "practice": "Pratica",
-      "formulas": "Formule",
-      "aboutUs": "Chi Siamo",
-      "contactUs": "Contatti",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Termini",
+      "terms": "Terms",
       "privacy": "Privacy",
-      "sitemap": "Mappa del sito"
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Leggi articolo",
@@ -831,7 +831,7 @@
       "of": "di",
       "results": "Risultati",
       "name": "Nome",
-      "email": "Email",
+      "email": "E-mail",
       "message": "Messaggio",
       "send": "Invia Messaggio",
       "sending": "Invio...",
@@ -864,10 +864,10 @@
       "liveVisualization": "Visualizzazione dal Vivo",
       "formulaDiagram": "Diagramma della Formula",
       "backToDirectory": "Torna alla Directory delle Formule",
-      "resultsTitle": "Right Triangle Solver Results",
-      "copySuccess": "Results copied to clipboard.",
-      "solveFirst": "Solve a triangle before copying results.",
-      "fixErrors": "Please fix the errors in the highlighted fields."
+      "resultsTitle": "Risultati del risolutore del triangolo rettangolo",
+      "copySuccess": "Risultati copiati negli appunti.",
+      "solveFirst": "Risolvi un triangolo prima di copiare i risultati.",
+      "fixErrors": "Correggi gli errori nei campi evidenziati."
     },
     "practice": {
       "solver": "Risolutore",
@@ -877,7 +877,7 @@
       "settings": "Impostazioni",
       "support": "Supporto",
       "streak": "GIORNI DI FILA",
-      "premium": "Go Premium",
+      "premium": "Passa a Premium",
       "dailyChallenge": "Sfida Quotidiana",
       "progress": "Progresso",
       "rank": "Grado",
@@ -924,17 +924,17 @@
       "mpc": "megaparsec"
     },
     "library": {
-      "nav_calculator": "Calculator",
-      "nav_library": "Library",
-      "nav_practice": "Practice",
-      "goPremium": "Go Premium",
-      "searchTheorems": "Search theorems...",
-      "knowledgeBase": "Knowledge Base",
-      "formulaTheoryLibrary": "Formula & Theory Library",
-      "libraryIntro": "A curated collection of geometric principles and algebraic identities.",
-      "spotlightTheorem": "Spotlight Theorem",
-      "divineProportion": "The Divine Proportion (φ)",
-      "detailedProof": "Explore Detailed Proof"
+      "nav_calculator": "Calcolatrice",
+      "nav_library": "Biblioteca",
+      "nav_practice": "Pratica",
+      "goPremium": "Passa a Premium",
+      "searchTheorems": "Cerca teoremi...",
+      "knowledgeBase": "Base di conoscenza",
+      "formulaTheoryLibrary": "Biblioteca di formule e teorie",
+      "libraryIntro": "Una raccolta curata di principi geometrici e identità algebriche.",
+      "spotlightTheorem": "Teorema dei riflettori",
+      "divineProportion": "La proporzione divina (φ)",
+      "detailedProof": "Esplora prove dettagliate"
     }
   },
   "pt": {
@@ -946,16 +946,16 @@
       "special": "Triângulos Especiais"
     },
     "nav": {
-      "home": "Início",
-      "practice": "Prática",
-      "formulas": "Fórmulas",
-      "aboutUs": "Sobre Nós",
-      "contactUs": "Contato",
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Termos",
-      "privacy": "Privacidade",
-      "sitemap": "Mapa do site"
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Ler artigo",
@@ -998,10 +998,10 @@
       "liveVisualization": "Visualização ao Vivo",
       "formulaDiagram": "Diagrama de Fórmula",
       "backToDirectory": "Voltar ao Diretório de Fórmulas",
-      "resultsTitle": "Right Triangle Solver Results",
-      "copySuccess": "Results copied to clipboard.",
-      "solveFirst": "Solve a triangle before copying results.",
-      "fixErrors": "Please fix the errors in the highlighted fields."
+      "resultsTitle": "Resultados do Solucionador de Triângulo Retângulo",
+      "copySuccess": "Resultados copiados para a área de transferência.",
+      "solveFirst": "Resolva um triângulo antes de copiar os resultados.",
+      "fixErrors": "Corrija os erros nos campos destacados."
     },
     "practice": {
       "solver": "Resolutor",
@@ -1011,7 +1011,7 @@
       "settings": "Configurações",
       "support": "Suporte",
       "streak": "DIAS DE SEQUÊNCIA",
-      "premium": "Go Premium",
+      "premium": "Torne-se Premium",
       "dailyChallenge": "Desafio Diário",
       "progress": "Progresso",
       "rank": "Classificação",
@@ -1041,8 +1041,8 @@
       "yd": "jarda",
       "mi": "milha",
       "nmi": "milha náutica",
-      "ang": "angstrom",
-      "mil": "mil",
+      "ang": "Angstrom",
+      "mil": "milhões",
       "pixel": "pixel",
       "pt": "ponto",
       "survey_ft": "pé de agrimensura",
@@ -1058,17 +1058,17 @@
       "mpc": "megaparsec"
     },
     "library": {
-      "nav_calculator": "Calculator",
-      "nav_library": "Library",
-      "nav_practice": "Practice",
-      "goPremium": "Go Premium",
-      "searchTheorems": "Search theorems...",
-      "knowledgeBase": "Knowledge Base",
-      "formulaTheoryLibrary": "Formula & Theory Library",
-      "libraryIntro": "A curated collection of geometric principles and algebraic identities.",
-      "spotlightTheorem": "Spotlight Theorem",
-      "divineProportion": "The Divine Proportion (φ)",
-      "detailedProof": "Explore Detailed Proof"
+      "nav_calculator": "Calculadora",
+      "nav_library": "Biblioteca",
+      "nav_practice": "Pratique",
+      "goPremium": "Torne-se Premium",
+      "searchTheorems": "Pesquise teoremas...",
+      "knowledgeBase": "Base de conhecimento",
+      "formulaTheoryLibrary": "Biblioteca de Fórmulas e Teorias",
+      "libraryIntro": "Uma coleção com curadoria de princípios geométricos e identidades algébricas.",
+      "spotlightTheorem": "Teorema do Destaque",
+      "divineProportion": "A Proporção Divina (φ)",
+      "detailedProof": "Explore a prova detalhada"
     }
   },
   "bn": {
@@ -1080,16 +1080,16 @@
       "special": "বিশেষ ত্রিভুজ"
     },
     "nav": {
-      "home": "হোম",
-      "practice": "অনুশীলন",
-      "formulas": "সূত্র",
-      "aboutUs": "আমাদের সম্পর্কে",
-      "contactUs": "যোগাযোগ",
-      "blog": "ব্লগ",
-      "faq": "প্রশ্নাবলী",
-      "terms": "শর্তাবলী",
-      "privacy": "গোপনীয়তা",
-      "sitemap": "সাইটম্যাপ"
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "নিবন্ধ পড়ুন",
@@ -1115,23 +1115,94 @@
       "rights": "সর্বস্বত্ব সংরক্ষিত। © ২০২৬"
     },
     "solver": {
-      "resultsTitle": "Right Triangle Solver Results",
-      "copySuccess": "Results copied to clipboard.",
-      "solveFirst": "Solve a triangle before copying results.",
-      "fixErrors": "Please fix the errors in the highlighted fields."
+      "resultsTitle": "সমকোণী ত্রিভুজ সমাধানকারী ফলাফল",
+      "copySuccess": "ক্লিপবোর্ডে ফলাফল কপি করা হয়েছে।",
+      "solveFirst": "ফলাফল অনুলিপি করার আগে একটি ত্রিভুজ সমাধান করুন।",
+      "fixErrors": "অনুগ্রহ করে হাইলাইট করা ক্ষেত্রগুলির ত্রুটিগুলি ঠিক করুন৷",
+      "mainFormula": "প্রধান সূত্র",
+      "variables": "ভেরিয়েবল",
+      "usageNotes": "ব্যবহারের নোট",
+      "relatedTools": "সম্পর্কিত সরঞ্জাম",
+      "exploreOther": "{category} বিভাগে অন্যান্য ক্যালকুলেটরগুলি অন্বেষণ করুন৷",
+      "openTool": "ওপেন টুল",
+      "calculateSuffix": "ক্যালকুলেটর",
+      "calculatorIntro": "এই ক্যালকুলেটরটি {expression} অনুসরণ করে এবং {label} প্রদান করে।",
+      "calculate": "হিসাব করুন",
+      "reset": "রিসেট করুন",
+      "statusDefault": "{label} গণনা করতে ইনপুট লিখুন।",
+      "resultLabel": "ফলাফল",
+      "solutionSteps": "সমাধান পদক্ষেপ",
+      "formulaLabel": "সূত্র",
+      "liveVisualization": "লাইভ ভিজ্যুয়ালাইজেশন",
+      "formulaDiagram": "সূত্র চিত্র",
+      "backToDirectory": "ফর্মুলা ডিরেক্টরিতে ফিরে যান"
     },
     "library": {
-      "nav_calculator": "Calculator",
-      "nav_library": "Library",
-      "nav_practice": "Practice",
-      "goPremium": "Go Premium",
-      "searchTheorems": "Search theorems...",
-      "knowledgeBase": "Knowledge Base",
-      "formulaTheoryLibrary": "Formula & Theory Library",
-      "libraryIntro": "A curated collection of geometric principles and algebraic identities.",
-      "spotlightTheorem": "Spotlight Theorem",
-      "divineProportion": "The Divine Proportion (φ)",
-      "detailedProof": "Explore Detailed Proof"
+      "nav_calculator": "ক্যালকুলেটর",
+      "nav_library": "লাইব্রেরি",
+      "nav_practice": "অনুশীলন করুন",
+      "goPremium": "প্রিমিয়াম যান",
+      "searchTheorems": "উপপাদ্য অনুসন্ধান করুন...",
+      "knowledgeBase": "জ্ঞানভাণ্ডার",
+      "formulaTheoryLibrary": "সূত্র ও তত্ত্ব গ্রন্থাগার",
+      "libraryIntro": "জ্যামিতিক নীতি এবং বীজগাণিতিক পরিচয়ের একটি সংকলিত সংগ্রহ।",
+      "spotlightTheorem": "স্পটলাইট উপপাদ্য",
+      "divineProportion": "ঐশ্বরিক অনুপাত (φ)",
+      "detailedProof": "বিস্তারিত প্রমাণ অন্বেষণ"
+    },
+    "practice": {
+      "solver": "সমাধানকারী",
+      "library": "লাইব্রেরি",
+      "practice": "অনুশীলন করুন",
+      "newChallenge": "নতুন চ্যালেঞ্জ",
+      "settings": "সেটিংস",
+      "support": "সমর্থন",
+      "streak": "দিন স্ট্রীক",
+      "premium": "প্রিমিয়াম যান",
+      "dailyChallenge": "দৈনিক চ্যালেঞ্জ",
+      "progress": "অগ্রগতি",
+      "rank": "পদমর্যাদা",
+      "time": "সময়",
+      "accuracy": "নির্ভুলতা",
+      "score": "স্কোর",
+      "correct": "সঠিক!",
+      "incorrect": "পুরোপুরি না!",
+      "nextChallenge": "পরবর্তী চ্যালেঞ্জ",
+      "showHint": "ইঙ্গিত দেখান",
+      "yourSolution": "আপনার সমাধান",
+      "enterValue": "মান লিখুন...",
+      "units": "ইউনিট",
+      "checkAnswer": "উত্তর চেক করুন",
+      "difficulty": "অসুবিধা",
+      "precisionSolver": "যথার্থ সমাধানকারী"
+    },
+    "units": {
+      "m": "মিটার",
+      "nm": "ন্যানোমিটার",
+      "um": "মাইক্রোমিটার",
+      "mm": "মিলিমিটার",
+      "cm": "সেন্টিমিটার",
+      "km": "কিলোমিটার",
+      "in": "ইঞ্চি",
+      "ft": "পা",
+      "yd": "গজ",
+      "mi": "মাইল",
+      "nmi": "নটিক্যাল মাইল",
+      "ang": "angstrom",
+      "mil": "মিল",
+      "pixel": "পিক্সেল",
+      "pt": "বিন্দু",
+      "survey_ft": "জরিপ ফুট",
+      "fathom": "ধারণা",
+      "au": "জ্যোতির্বিদ্যা",
+      "ls": "l-সেকেন্ড",
+      "lm": "l-মিনিট",
+      "lh": "l-ঘন্টা",
+      "ld": "l-দিন",
+      "ly": "আলোকবর্ষ",
+      "kly": "কিলোলাইটবর্ষ",
+      "pc": "পার্সেক",
+      "mpc": "মেগাপারসেক"
     }
   },
   "ja": {
@@ -1143,16 +1214,16 @@
       "special": "特別な三角形"
     },
     "nav": {
-      "home": "ホーム",
-      "practice": "練習",
-      "formulas": "公式",
-      "aboutUs": "私たちについて",
-      "contactUs": "お問い合わせ",
-      "blog": "ブログ",
-      "faq": "よくある質問",
-      "terms": "利用規約",
-      "privacy": "プライバシー",
-      "sitemap": "サイトマップ"
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "記事を読む",
@@ -1195,10 +1266,10 @@
       "liveVisualization": "リアルタイム可視化",
       "formulaDiagram": "公式図",
       "backToDirectory": "公式ディレクトリに戻る",
-      "resultsTitle": "Right Triangle Solver Results",
-      "copySuccess": "Results copied to clipboard.",
-      "solveFirst": "Solve a triangle before copying results.",
-      "fixErrors": "Please fix the errors in the highlighted fields."
+      "resultsTitle": "直角三角形ソルバーの結果",
+      "copySuccess": "結果はクリップボードにコピーされました。",
+      "solveFirst": "結果をコピーする前に三角形を解決してください。",
+      "fixErrors": "強調表示されたフィールドのエラーを修正してください。"
     },
     "practice": {
       "solver": "ソルバー",
@@ -1255,17 +1326,17 @@
       "mpc": "メガパーセク"
     },
     "library": {
-      "nav_calculator": "Calculator",
-      "nav_library": "Library",
-      "nav_practice": "Practice",
-      "goPremium": "Go Premium",
-      "searchTheorems": "Search theorems...",
-      "knowledgeBase": "Knowledge Base",
-      "formulaTheoryLibrary": "Formula & Theory Library",
-      "libraryIntro": "A curated collection of geometric principles and algebraic identities.",
-      "spotlightTheorem": "Spotlight Theorem",
-      "divineProportion": "The Divine Proportion (φ)",
-      "detailedProof": "Explore Detailed Proof"
+      "nav_calculator": "電卓",
+      "nav_library": "図書館",
+      "nav_practice": "練習する",
+      "goPremium": "プレミアムに行く",
+      "searchTheorems": "定理を検索...",
+      "knowledgeBase": "ナレッジベース",
+      "formulaTheoryLibrary": "数式と理論ライブラリ",
+      "libraryIntro": "幾何学的原理と代数恒等の精選されたコレクション。",
+      "spotlightTheorem": "スポットライト定理",
+      "divineProportion": "神聖な比率（φ）",
+      "detailedProof": "詳細な証拠を調べる"
     }
   },
   "ko": {
@@ -1277,16 +1348,16 @@
       "special": "특수 삼각형"
     },
     "nav": {
-      "home": "홈",
-      "practice": "연습",
-      "formulas": "공식",
-      "aboutUs": "소개",
-      "contactUs": "문의하기",
-      "blog": "블로그",
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
+      "blog": "Blog",
       "faq": "FAQ",
-      "terms": "약관",
-      "privacy": "개인정보",
-      "sitemap": "사이트맵"
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "기사 읽기",
@@ -1329,10 +1400,10 @@
       "liveVisualization": "실시간 시각화",
       "formulaDiagram": "공식 도표",
       "backToDirectory": "공식 목록으로 돌아가기",
-      "resultsTitle": "Right Triangle Solver Results",
-      "copySuccess": "Results copied to clipboard.",
-      "solveFirst": "Solve a triangle before copying results.",
-      "fixErrors": "Please fix the errors in the highlighted fields."
+      "resultsTitle": "직각 삼각형 솔버 결과",
+      "copySuccess": "결과가 클립보드에 복사되었습니다.",
+      "solveFirst": "결과를 복사하기 전에 삼각형을 풀어보세요.",
+      "fixErrors": "강조표시된 필드의 오류를 수정하세요."
     },
     "practice": {
       "solver": "해결사",
@@ -1389,17 +1460,17 @@
       "mpc": "메가파섹"
     },
     "library": {
-      "nav_calculator": "Calculator",
-      "nav_library": "Library",
-      "nav_practice": "Practice",
-      "goPremium": "Go Premium",
-      "searchTheorems": "Search theorems...",
-      "knowledgeBase": "Knowledge Base",
-      "formulaTheoryLibrary": "Formula & Theory Library",
-      "libraryIntro": "A curated collection of geometric principles and algebraic identities.",
-      "spotlightTheorem": "Spotlight Theorem",
-      "divineProportion": "The Divine Proportion (φ)",
-      "detailedProof": "Explore Detailed Proof"
+      "nav_calculator": "계산기",
+      "nav_library": "도서관",
+      "nav_practice": "연습",
+      "goPremium": "프리미엄으로 이동",
+      "searchTheorems": "정리 검색...",
+      "knowledgeBase": "기술 자료",
+      "formulaTheoryLibrary": "공식 및 이론 라이브러리",
+      "libraryIntro": "기하학적 원리와 대수적 정체성을 엄선한 컬렉션입니다.",
+      "spotlightTheorem": "스포트라이트 정리",
+      "divineProportion": "신성한 비율(ψ)",
+      "detailedProof": "자세한 증거 살펴보기"
     }
   },
   "ms": {
@@ -1411,16 +1482,16 @@
       "special": "Segitiga Khas"
     },
     "nav": {
-      "home": "Utama",
-      "practice": "Latihan",
-      "formulas": "Formula",
-      "aboutUs": "Tentang Kami",
-      "contactUs": "Hubungi Kami",
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
       "blog": "Blog",
-      "faq": "Soalan Lazim",
-      "terms": "Syarat",
-      "privacy": "Privasi",
-      "sitemap": "Peta Laman"
+      "faq": "FAQ",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Baca artikel",
@@ -1446,23 +1517,94 @@
       "rights": "Hak cipta terpelihara. © 2026"
     },
     "solver": {
-      "resultsTitle": "Right Triangle Solver Results",
-      "copySuccess": "Results copied to clipboard.",
-      "solveFirst": "Solve a triangle before copying results.",
-      "fixErrors": "Please fix the errors in the highlighted fields."
+      "resultsTitle": "Keputusan Penyelesai Segi Tiga Kanan",
+      "copySuccess": "Keputusan disalin ke papan keratan.",
+      "solveFirst": "Selesaikan segitiga sebelum menyalin keputusan.",
+      "fixErrors": "Sila betulkan ralat dalam medan yang diserlahkan.",
+      "mainFormula": "Formula Utama",
+      "variables": "Pembolehubah",
+      "usageNotes": "Nota Penggunaan",
+      "relatedTools": "Alat Berkaitan",
+      "exploreOther": "Terokai kalkulator lain dalam kategori {category}.",
+      "openTool": "Buka Alat",
+      "calculateSuffix": "Kalkulator",
+      "calculatorIntro": "Kalkulator ini mengikut {expression} dan mengembalikan {label}.",
+      "calculate": "Kira",
+      "reset": "Tetapkan semula",
+      "statusDefault": "Masukkan input untuk mengira {label}.",
+      "resultLabel": "Hasilnya",
+      "solutionSteps": "Langkah Penyelesaian",
+      "formulaLabel": "Formula",
+      "liveVisualization": "Visualisasi Langsung",
+      "formulaDiagram": "Rajah Formula",
+      "backToDirectory": "Kembali Ke Direktori Formula"
     },
     "library": {
-      "nav_calculator": "Calculator",
-      "nav_library": "Library",
-      "nav_practice": "Practice",
-      "goPremium": "Go Premium",
-      "searchTheorems": "Search theorems...",
-      "knowledgeBase": "Knowledge Base",
-      "formulaTheoryLibrary": "Formula & Theory Library",
-      "libraryIntro": "A curated collection of geometric principles and algebraic identities.",
-      "spotlightTheorem": "Spotlight Theorem",
-      "divineProportion": "The Divine Proportion (φ)",
-      "detailedProof": "Explore Detailed Proof"
+      "nav_calculator": "Kalkulator",
+      "nav_library": "Perpustakaan",
+      "nav_practice": "berlatih",
+      "goPremium": "Pergi Premium",
+      "searchTheorems": "Cari teorem...",
+      "knowledgeBase": "Pangkalan Pengetahuan",
+      "formulaTheoryLibrary": "Perpustakaan Formula & Teori",
+      "libraryIntro": "Koleksi susun atur prinsip geometri dan identiti algebra.",
+      "spotlightTheorem": "Teorem Sorotan",
+      "divineProportion": "Perkadaran Ilahi (φ)",
+      "detailedProof": "Terokai Bukti Terperinci"
+    },
+    "practice": {
+      "solver": "Penyelesai",
+      "library": "Perpustakaan",
+      "practice": "berlatih",
+      "newChallenge": "Cabaran Baru",
+      "settings": "tetapan",
+      "support": "Sokongan",
+      "streak": "STREK HARI",
+      "premium": "Pergi Premium",
+      "dailyChallenge": "Cabaran Harian",
+      "progress": "Kemajuan",
+      "rank": "pangkat",
+      "time": "Masa",
+      "accuracy": "Ketepatan",
+      "score": "skor",
+      "correct": "Betul!",
+      "incorrect": "Tidak cukup!",
+      "nextChallenge": "Cabaran Seterusnya",
+      "showHint": "Tunjukkan Petunjuk",
+      "yourSolution": "Penyelesaian Anda",
+      "enterValue": "Masukkan nilai...",
+      "units": "Unit",
+      "checkAnswer": "Semak Jawapan",
+      "difficulty": "Kesukaran",
+      "precisionSolver": "Penyelesai Ketepatan"
+    },
+    "units": {
+      "m": "meter",
+      "nm": "nanometer",
+      "um": "mikrometer",
+      "mm": "milimeter",
+      "cm": "sentimeter",
+      "km": "kilometer",
+      "in": "inci",
+      "ft": "kaki",
+      "yd": "halaman rumah",
+      "mi": "batu",
+      "nmi": "batu nautika",
+      "ang": "angstrom",
+      "mil": "mil",
+      "pixel": "piksel",
+      "pt": "titik",
+      "survey_ft": "tinjauan ft",
+      "fathom": "memahami",
+      "au": "astronomi",
+      "ls": "l-saat",
+      "lm": "l-min",
+      "lh": "l-jam",
+      "ld": "l-hari",
+      "ly": "tahun cahaya",
+      "kly": "kilolightyear",
+      "pc": "parsec",
+      "mpc": "megaparsec"
     }
   },
   "pl": {
@@ -1474,16 +1616,16 @@
       "special": "Trójkąty specjalne"
     },
     "nav": {
-      "home": "Główna",
-      "practice": "Praktyka",
-      "formulas": "Wzory",
-      "aboutUs": "O nas",
-      "contactUs": "Kontakt",
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Regulamin",
-      "privacy": "Prywatność",
-      "sitemap": "Mapa strony"
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Czytaj artykuł",
@@ -1526,13 +1668,13 @@
       "liveVisualization": "Wizualizacja na żywo",
       "formulaDiagram": "Diagram wzoru",
       "backToDirectory": "Wróć do katalogu wzorów",
-      "resultsTitle": "Right Triangle Solver Results",
-      "copySuccess": "Results copied to clipboard.",
-      "solveFirst": "Solve a triangle before copying results.",
-      "fixErrors": "Please fix the errors in the highlighted fields."
+      "resultsTitle": "Wyniki rozwiązywania trójkąta prostokątnego",
+      "copySuccess": "Wyniki skopiowane do schowka.",
+      "solveFirst": "Rozwiąż trójkąt przed skopiowaniem wyników.",
+      "fixErrors": "Popraw błędy w wyróżnionych polach."
     },
     "practice": {
-      "solver": "Solver",
+      "solver": "Rozwiązujący",
       "library": "Biblioteka",
       "practice": "Praktyka",
       "newChallenge": "Nowe wyzwanie",
@@ -1586,17 +1728,17 @@
       "mpc": "megaparsek"
     },
     "library": {
-      "nav_calculator": "Calculator",
-      "nav_library": "Library",
-      "nav_practice": "Practice",
-      "goPremium": "Go Premium",
-      "searchTheorems": "Search theorems...",
-      "knowledgeBase": "Knowledge Base",
-      "formulaTheoryLibrary": "Formula & Theory Library",
-      "libraryIntro": "A curated collection of geometric principles and algebraic identities.",
-      "spotlightTheorem": "Spotlight Theorem",
-      "divineProportion": "The Divine Proportion (φ)",
-      "detailedProof": "Explore Detailed Proof"
+      "nav_calculator": "Kalkulator",
+      "nav_library": "Biblioteka",
+      "nav_practice": "Ćwicz",
+      "goPremium": "Przejdź na Premium",
+      "searchTheorems": "Szukaj twierdzeń...",
+      "knowledgeBase": "Baza wiedzy",
+      "formulaTheoryLibrary": "Biblioteka formuł i teorii",
+      "libraryIntro": "Wyselekcjonowany zbiór zasad geometrycznych i tożsamości algebraicznych.",
+      "spotlightTheorem": "Twierdzenie o świetle reflektora",
+      "divineProportion": "Boska proporcja (φ)",
+      "detailedProof": "Poznaj szczegółowy dowód"
     }
   },
   "id": {
@@ -1608,16 +1750,16 @@
       "special": "Segitiga Khusus"
     },
     "nav": {
-      "home": "Beranda",
-      "practice": "Latihan",
-      "formulas": "Rumus",
-      "aboutUs": "Tentang Kami",
-      "contactUs": "Hubungi Kami",
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Syarat",
-      "privacy": "Privasi",
-      "sitemap": "Peta situs"
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Baca artikel",
@@ -1627,7 +1769,7 @@
       "of": "dari",
       "results": "Hasil",
       "name": "Nama",
-      "email": "Email",
+      "email": "Surel",
       "message": "Pesan",
       "send": "Kirim Pesan",
       "sending": "Mengirim...",
@@ -1656,14 +1798,14 @@
       "statusDefault": "Masukkan input untuk menghitung {label}.",
       "resultLabel": "Hasil",
       "solutionSteps": "Langkah Solusi",
-      "formulaLabel": "Formula",
+      "formulaLabel": "Rumus",
       "liveVisualization": "Visualisasi Langsung",
       "formulaDiagram": "Diagram Formula",
       "backToDirectory": "Kembali ke Direktori Formula",
-      "resultsTitle": "Right Triangle Solver Results",
-      "copySuccess": "Results copied to clipboard.",
-      "solveFirst": "Solve a triangle before copying results.",
-      "fixErrors": "Please fix the errors in the highlighted fields."
+      "resultsTitle": "Hasil Pemecah Segitiga Kanan",
+      "copySuccess": "Hasil disalin ke clipboard.",
+      "solveFirst": "Pecahkan segitiga sebelum menyalin hasilnya.",
+      "fixErrors": "Harap perbaiki kesalahan pada bidang yang disorot."
     },
     "practice": {
       "solver": "Pemecah",
@@ -1673,7 +1815,7 @@
       "settings": "Pengaturan",
       "support": "Dukungan",
       "streak": "HARI BERUNTUN",
-      "premium": "Go Premium",
+      "premium": "Gunakan Premium",
       "dailyChallenge": "Tantangan Harian",
       "progress": "Kemajuan",
       "rank": "Peringkat",
@@ -1692,7 +1834,7 @@
       "precisionSolver": "Pemecah Presisi"
     },
     "units": {
-      "m": "meter",
+      "m": "meteran",
       "nm": "nanometer",
       "um": "mikrometer",
       "mm": "milimeter",
@@ -1700,11 +1842,11 @@
       "km": "kilometer",
       "in": "inci",
       "ft": "kaki",
-      "yd": "yard",
+      "yd": "halaman",
       "mi": "mil",
       "nmi": "mil laut",
-      "ang": "angstrom",
-      "mil": "mil",
+      "ang": "Angstrom",
+      "mil": "juta",
       "pixel": "piksel",
       "pt": "poin",
       "survey_ft": "kaki survei",
@@ -1720,17 +1862,17 @@
       "mpc": "megaparsec"
     },
     "library": {
-      "nav_calculator": "Calculator",
-      "nav_library": "Library",
-      "nav_practice": "Practice",
-      "goPremium": "Go Premium",
-      "searchTheorems": "Search theorems...",
-      "knowledgeBase": "Knowledge Base",
-      "formulaTheoryLibrary": "Formula & Theory Library",
-      "libraryIntro": "A curated collection of geometric principles and algebraic identities.",
-      "spotlightTheorem": "Spotlight Theorem",
-      "divineProportion": "The Divine Proportion (φ)",
-      "detailedProof": "Explore Detailed Proof"
+      "nav_calculator": "Kalkulator",
+      "nav_library": "Perpustakaan",
+      "nav_practice": "Praktek",
+      "goPremium": "Gunakan Premium",
+      "searchTheorems": "Teorema pencarian...",
+      "knowledgeBase": "Basis Pengetahuan",
+      "formulaTheoryLibrary": "Perpustakaan Rumus & Teori",
+      "libraryIntro": "Kumpulan prinsip geometri dan identitas aljabar yang dikurasi.",
+      "spotlightTheorem": "Teorema Sorotan",
+      "divineProportion": "Proporsi Ilahi (φ)",
+      "detailedProof": "Jelajahi Bukti Terperinci"
     }
   },
   "ar": {
@@ -1742,16 +1884,16 @@
       "special": "مثلثات خاصة"
     },
     "nav": {
-      "home": "الرئيسية",
-      "practice": "ممارسة",
-      "formulas": "صيغ",
-      "aboutUs": "من نحن",
-      "contactUs": "اتصل بنا",
-      "blog": "المدونة",
-      "faq": "الأسئلة الشائعة",
-      "terms": "الشروط",
-      "privacy": "الخصوصية",
-      "sitemap": "خريطة الموقع"
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "اقرأ المقال",
@@ -1794,10 +1936,10 @@
       "liveVisualization": "تصور مباشر",
       "formulaDiagram": "مخطط الصيغة",
       "backToDirectory": "العودة إلى دليل الصيغ",
-      "resultsTitle": "Right Triangle Solver Results",
-      "copySuccess": "Results copied to clipboard.",
-      "solveFirst": "Solve a triangle before copying results.",
-      "fixErrors": "Please fix the errors in the highlighted fields."
+      "resultsTitle": "نتائج حل المثلث الأيمن",
+      "copySuccess": "تم نسخ النتائج إلى الحافظة.",
+      "solveFirst": "حل المثلث قبل نسخ النتائج.",
+      "fixErrors": "الرجاء إصلاح الأخطاء في الحقول المميزة."
     },
     "practice": {
       "solver": "المحلل",
@@ -1854,17 +1996,17 @@
       "mpc": "ميجا فرسخ فلكي"
     },
     "library": {
-      "nav_calculator": "Calculator",
-      "nav_library": "Library",
-      "nav_practice": "Practice",
-      "goPremium": "Go Premium",
-      "searchTheorems": "Search theorems...",
-      "knowledgeBase": "Knowledge Base",
-      "formulaTheoryLibrary": "Formula & Theory Library",
-      "libraryIntro": "A curated collection of geometric principles and algebraic identities.",
-      "spotlightTheorem": "Spotlight Theorem",
-      "divineProportion": "The Divine Proportion (φ)",
-      "detailedProof": "Explore Detailed Proof"
+      "nav_calculator": "آلة حاسبة",
+      "nav_library": "مكتبة",
+      "nav_practice": "ممارسة",
+      "goPremium": "اذهب إلى الإصدار المميز",
+      "searchTheorems": "نظريات البحث...",
+      "knowledgeBase": "قاعدة المعرفة",
+      "formulaTheoryLibrary": "مكتبة الصيغة والنظرية",
+      "libraryIntro": "مجموعة منسقة من المبادئ الهندسية والهويات الجبرية.",
+      "spotlightTheorem": "نظرية الأضواء",
+      "divineProportion": "النسبة الإلهية (φ)",
+      "detailedProof": "استكشاف دليل مفصل"
     }
   },
   "bg": {
@@ -1876,16 +2018,16 @@
       "special": "Специални триъгълници"
     },
     "nav": {
-      "home": "Начало",
-      "practice": "Практика",
-      "formulas": "Формули",
-      "aboutUs": "За нас",
-      "contactUs": "Контакт",
-      "blog": "Блог",
-      "faq": "ЧЗВ",
-      "terms": "Условия",
-      "privacy": "Поверителност",
-      "sitemap": "Карта на сайта"
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Прочети статията",
@@ -1911,23 +2053,94 @@
       "rights": "Всички права запазени. © 2026"
     },
     "solver": {
-      "resultsTitle": "Right Triangle Solver Results",
-      "copySuccess": "Results copied to clipboard.",
-      "solveFirst": "Solve a triangle before copying results.",
-      "fixErrors": "Please fix the errors in the highlighted fields."
+      "resultsTitle": "Резултати от решаването на правоъгълен триъгълник",
+      "copySuccess": "Резултатите са копирани в клипборда.",
+      "solveFirst": "Решете триъгълник, преди да копирате резултатите.",
+      "fixErrors": "Моля, коригирайте грешките в маркираните полета.",
+      "mainFormula": "Основна формула",
+      "variables": "Променливи",
+      "usageNotes": "Бележки за употреба",
+      "relatedTools": "Свързани инструменти",
+      "exploreOther": "Разгледайте други калкулатори в категорията {category}.",
+      "openTool": "Отваряне на инструмента",
+      "calculateSuffix": "Калкулатор",
+      "calculatorIntro": "Този калкулатор следва {expression} и връща {label}.",
+      "calculate": "Изчислете",
+      "reset": "Нулиране",
+      "statusDefault": "Въведете входни данни, за да изчислите {label}.",
+      "resultLabel": "Резултат",
+      "solutionSteps": "Стъпки на решението",
+      "formulaLabel": "Формула",
+      "liveVisualization": "Визуализация на живо",
+      "formulaDiagram": "Формула Диаграма",
+      "backToDirectory": "Обратно към директорията с формули"
     },
     "library": {
-      "nav_calculator": "Calculator",
-      "nav_library": "Library",
-      "nav_practice": "Practice",
-      "goPremium": "Go Premium",
-      "searchTheorems": "Search theorems...",
-      "knowledgeBase": "Knowledge Base",
-      "formulaTheoryLibrary": "Formula & Theory Library",
-      "libraryIntro": "A curated collection of geometric principles and algebraic identities.",
-      "spotlightTheorem": "Spotlight Theorem",
-      "divineProportion": "The Divine Proportion (φ)",
-      "detailedProof": "Explore Detailed Proof"
+      "nav_calculator": "Калкулатор",
+      "nav_library": "Библиотека",
+      "nav_practice": "Практикувайте",
+      "goPremium": "Отидете на Premium",
+      "searchTheorems": "Теореми за търсене...",
+      "knowledgeBase": "База знания",
+      "formulaTheoryLibrary": "Библиотека с формули и теория",
+      "libraryIntro": "Подбрана колекция от геометрични принципи и алгебрични идентичности.",
+      "spotlightTheorem": "Теорема за прожекторите",
+      "divineProportion": "Божествената пропорция (φ)",
+      "detailedProof": "Разгледайте подробно доказателство"
+    },
+    "practice": {
+      "solver": "Решател",
+      "library": "Библиотека",
+      "practice": "Практикувайте",
+      "newChallenge": "Ново предизвикателство",
+      "settings": "Настройки",
+      "support": "поддръжка",
+      "streak": "ДНЕВНА ПОРИЦА",
+      "premium": "Отидете на Premium",
+      "dailyChallenge": "Ежедневно предизвикателство",
+      "progress": "Напредък",
+      "rank": "Ранг",
+      "time": "време",
+      "accuracy": "точност",
+      "score": "резултат",
+      "correct": "Правилно!",
+      "incorrect": "Не съвсем!",
+      "nextChallenge": "Следващо предизвикателство",
+      "showHint": "Показване на подсказка",
+      "yourSolution": "Вашето решение",
+      "enterValue": "Въведете стойност...",
+      "units": "единици",
+      "checkAnswer": "Проверете отговор",
+      "difficulty": "Трудност",
+      "precisionSolver": "Прецизен решаващ проблем"
+    },
+    "units": {
+      "m": "метър",
+      "nm": "нанометър",
+      "um": "микрометър",
+      "mm": "милиметър",
+      "cm": "сантиметър",
+      "km": "километър",
+      "in": "инч",
+      "ft": "крак",
+      "yd": "двор",
+      "mi": "миля",
+      "nmi": "морска миля",
+      "ang": "ангстрьом",
+      "mil": "мил",
+      "pixel": "пиксел",
+      "pt": "точка",
+      "survey_ft": "проучване ft",
+      "fathom": "дълбочина",
+      "au": "астрономически",
+      "ls": "l-сек",
+      "lm": "л-мин",
+      "lh": "l-час",
+      "ld": "л-ден",
+      "ly": "светлинна година",
+      "kly": "килосветлинна година",
+      "pc": "парсек",
+      "mpc": "мегапарсек"
     }
   },
   "tr": {
@@ -1939,16 +2152,16 @@
       "special": "Özel Üçgenler"
     },
     "nav": {
-      "home": "Ana Sayfa",
-      "practice": "Pratik",
-      "formulas": "Formüller",
-      "aboutUs": "Hakkımızda",
-      "contactUs": "İletişim",
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
       "blog": "Blog",
-      "faq": "SSS",
-      "terms": "Şartlar",
-      "privacy": "Gizlilik",
-      "sitemap": "Site Haritası"
+      "faq": "FAQ",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Makaleyi oku",
@@ -1991,10 +2204,10 @@
       "liveVisualization": "Canlı Görselleştirme",
       "formulaDiagram": "Formül Diyagramı",
       "backToDirectory": "Formül Dizinine Dön",
-      "resultsTitle": "Right Triangle Solver Results",
-      "copySuccess": "Results copied to clipboard.",
-      "solveFirst": "Solve a triangle before copying results.",
-      "fixErrors": "Please fix the errors in the highlighted fields."
+      "resultsTitle": "Dik Üçgen Çözücü Sonuçları",
+      "copySuccess": "Sonuçlar panoya kopyalandı.",
+      "solveFirst": "Sonuçları kopyalamadan önce bir üçgen çözün.",
+      "fixErrors": "Lütfen vurgulanan alanlardaki hataları düzeltin."
     },
     "practice": {
       "solver": "Çözücü",
@@ -2051,17 +2264,17 @@
       "mpc": "megaparsek"
     },
     "library": {
-      "nav_calculator": "Calculator",
-      "nav_library": "Library",
-      "nav_practice": "Practice",
-      "goPremium": "Go Premium",
-      "searchTheorems": "Search theorems...",
-      "knowledgeBase": "Knowledge Base",
-      "formulaTheoryLibrary": "Formula & Theory Library",
-      "libraryIntro": "A curated collection of geometric principles and algebraic identities.",
-      "spotlightTheorem": "Spotlight Theorem",
-      "divineProportion": "The Divine Proportion (φ)",
-      "detailedProof": "Explore Detailed Proof"
+      "nav_calculator": "Hesap Makinesi",
+      "nav_library": "Kütüphane",
+      "nav_practice": "Alıştırma",
+      "goPremium": "Premium'a Geçin",
+      "searchTheorems": "Teoremleri ara...",
+      "knowledgeBase": "Bilgi Bankası",
+      "formulaTheoryLibrary": "Formül ve Teori Kitaplığı",
+      "libraryIntro": "Geometrik prensipler ve cebirsel kimliklerden oluşan özel bir koleksiyon.",
+      "spotlightTheorem": "Spot Işığı Teoremi",
+      "divineProportion": "İlahi Oran (φ)",
+      "detailedProof": "Ayrıntılı Kanıtı Keşfedin"
     }
   },
   "sv": {
@@ -2073,16 +2286,16 @@
       "special": "Speciella trianglar"
     },
     "nav": {
-      "home": "Hem",
-      "practice": "Öva",
-      "formulas": "Formler",
-      "aboutUs": "Om oss",
-      "contactUs": "Kontakt",
-      "blog": "Blogg",
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
+      "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Villkor",
-      "privacy": "Integritet",
-      "sitemap": "Sajtmap"
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "Läs artikel",
@@ -2125,10 +2338,10 @@
       "liveVisualization": "Live-visualisering",
       "formulaDiagram": "Formeldiagram",
       "backToDirectory": "Tillbaka till formelkatalogen",
-      "resultsTitle": "Right Triangle Solver Results",
-      "copySuccess": "Results copied to clipboard.",
-      "solveFirst": "Solve a triangle before copying results.",
-      "fixErrors": "Please fix the errors in the highlighted fields."
+      "resultsTitle": "Resultat för rätt triangellösare",
+      "copySuccess": "Resultaten har kopierats till urklipp.",
+      "solveFirst": "Lös en triangel innan du kopierar resultat.",
+      "fixErrors": "Vänligen åtgärda felen i de markerade fälten."
     },
     "practice": {
       "solver": "Lösare",
@@ -2138,7 +2351,7 @@
       "settings": "Inställningar",
       "support": "Support",
       "streak": "DAGAR I RAD",
-      "premium": "Go Premium",
+      "premium": "Gå Premium",
       "dailyChallenge": "Daglig utmaning",
       "progress": "Framsteg",
       "rank": "Rank",
@@ -2157,7 +2370,7 @@
       "precisionSolver": "Precisionslösare"
     },
     "units": {
-      "m": "meter",
+      "m": "mätare",
       "nm": "nanometer",
       "um": "mikrometer",
       "mm": "millimeter",
@@ -2165,7 +2378,7 @@
       "km": "kilometer",
       "in": "tum",
       "ft": "fot",
-      "yd": "yard",
+      "yd": "gård",
       "mi": "mil",
       "nmi": "distansminut",
       "ang": "ångström",
@@ -2185,17 +2398,17 @@
       "mpc": "megaparsec"
     },
     "library": {
-      "nav_calculator": "Calculator",
-      "nav_library": "Library",
-      "nav_practice": "Practice",
-      "goPremium": "Go Premium",
-      "searchTheorems": "Search theorems...",
-      "knowledgeBase": "Knowledge Base",
-      "formulaTheoryLibrary": "Formula & Theory Library",
-      "libraryIntro": "A curated collection of geometric principles and algebraic identities.",
+      "nav_calculator": "Miniräknare",
+      "nav_library": "Bibliotek",
+      "nav_practice": "Öva",
+      "goPremium": "Gå Premium",
+      "searchTheorems": "Sök satser...",
+      "knowledgeBase": "Kunskapsbas",
+      "formulaTheoryLibrary": "Formel & teoribibliotek",
+      "libraryIntro": "En kurerad samling av geometriska principer och algebraiska identiteter.",
       "spotlightTheorem": "Spotlight Theorem",
-      "divineProportion": "The Divine Proportion (φ)",
-      "detailedProof": "Explore Detailed Proof"
+      "divineProportion": "Den gudomliga proportionen (φ)",
+      "detailedProof": "Utforska detaljerade bevis"
     }
   },
   "zh": {
@@ -2207,16 +2420,16 @@
       "special": "特殊三角形"
     },
     "nav": {
-      "home": "首页",
-      "practice": "练习",
-      "formulas": "公式",
-      "aboutUs": "关于我们",
-      "contactUs": "联系我们",
-      "blog": "博客",
-      "faq": "常见问题",
-      "terms": "条款",
-      "privacy": "隐私",
-      "sitemap": "网站地图"
+      "home": "Home",
+      "practice": "Practice",
+      "formulas": "Formulas",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "sitemap": "Sitemap"
     },
     "common": {
       "readMore": "阅读文章",
@@ -2259,10 +2472,10 @@
       "liveVisualization": "实时可视化",
       "formulaDiagram": "公式图表",
       "backToDirectory": "返回公式目录",
-      "resultsTitle": "Right Triangle Solver Results",
-      "copySuccess": "Results copied to clipboard.",
-      "solveFirst": "Solve a triangle before copying results.",
-      "fixErrors": "Please fix the errors in the highlighted fields."
+      "resultsTitle": "直角三角形求解器结果",
+      "copySuccess": "结果复制到剪贴板。",
+      "solveFirst": "在复制结果之前求解三角形。",
+      "fixErrors": "请修正突出显示字段中的错误。"
     },
     "practice": {
       "solver": "解答器",
@@ -2319,17 +2532,17 @@
       "mpc": "百万秒差距"
     },
     "library": {
-      "nav_calculator": "Calculator",
-      "nav_library": "Library",
-      "nav_practice": "Practice",
-      "goPremium": "Go Premium",
-      "searchTheorems": "Search theorems...",
-      "knowledgeBase": "Knowledge Base",
-      "formulaTheoryLibrary": "Formula & Theory Library",
-      "libraryIntro": "A curated collection of geometric principles and algebraic identities.",
-      "spotlightTheorem": "Spotlight Theorem",
-      "divineProportion": "The Divine Proportion (φ)",
-      "detailedProof": "Explore Detailed Proof"
+      "nav_calculator": "计算器",
+      "nav_library": "图书馆",
+      "nav_practice": "练习",
+      "goPremium": "升级至高级版",
+      "searchTheorems": "搜索定理...",
+      "knowledgeBase": "知识库",
+      "formulaTheoryLibrary": "公式与理论库",
+      "libraryIntro": "几何原理和代数恒等式的精选集。",
+      "spotlightTheorem": "聚光灯定理",
+      "divineProportion": "神圣比例 (φ)",
+      "detailedProof": "探索详细证明"
     }
   }
 }

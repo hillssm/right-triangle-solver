@@ -1,4 +1,4 @@
-﻿---
+---
 import CalculatorCatalog from 'theme/components/CalculatorCatalog.astro';
 import ChartTableSection from 'theme/components/ChartTableSection.astro';
 import Faq from 'theme/components/Faq.astro';
@@ -14,10 +14,13 @@ interface Props {
   locale: Locale;
 }
 
+type LinkItem = { href: string; label: string; description: string };
+
 const { locale } = Astro.props;
 const bundle = getTranslations(locale);
 const content = bundle.content as Record<string, unknown>;
-const home = (content.home as Record<string, string>) ?? {};
+const home = (content.home as Record<string, unknown>) ?? {};
+const homeAny = home as Record<string, any>;
 const siteContent = (content.site as Record<string, string>) ?? {};
 
 const siteTitle = pick(siteContent, 'title', 'Right Triangle Solver');
@@ -28,13 +31,208 @@ const pageDescription = pick(
   'Solve right triangles quickly with formulas and examples.'
 );
 
-const localizedPath = localizePath(locale, '/');
-const chartRows = [
+const longContent = (homeAny.longContent as Record<string, any>) ?? {};
+const introSection = (longContent.introSection as Record<string, any>) ?? {};
+const formulaSection = (longContent.formulaSection as Record<string, any>) ?? {};
+const solveSection = (longContent.solveSection as Record<string, any>) ?? {};
+const calculatorSection = (longContent.calculatorSection as Record<string, any>) ?? {};
+const validationSection = (longContent.validationSection as Record<string, any>) ?? {};
+
+const defaultChartRows = [
   { label: '3-4-5 triangle', value: '5.000', ratio: 5 },
   { label: '5-12-13 triangle', value: '13.000', ratio: 13 },
   { label: '8-15-17 triangle', value: '17.000', ratio: 17 },
   { label: '9-12-15 triangle', value: '15.000', ratio: 15 }
 ];
+
+const chartRows = Array.isArray(homeAny.chartRows) ? homeAny.chartRows : defaultChartRows;
+
+const introNotationItems = Array.isArray(introSection.notationItems)
+  ? introSection.notationItems
+  : [
+      'a: one leg of the triangle.',
+      'b: the other leg of the triangle.',
+      'c: hypotenuse (always the longest side).',
+      'A and B: acute angles, where A + B = 90°.',
+      'h: altitude to the hypotenuse.',
+      'p and q: hypotenuse segments created by the altitude.',
+      'r and R: inradius and circumradius.'
+    ];
+
+const formulaSideItems = Array.isArray(formulaSection.sideItems)
+  ? formulaSection.sideItems
+  : [
+      'Pythagorean relation: a² + b² = c².',
+      'Missing leg from hypotenuse: b = √(c² - a²) or a = √(c² - b²).',
+      'Special triangles: 45-45-90 and 30-60-90 shortcuts for fast side solving.'
+    ];
+
+const formulaAngleItems = Array.isArray(formulaSection.angleItems)
+  ? formulaSection.angleItems
+  : [
+      'sin(A) = a / c, cos(A) = b / c, tan(A) = a / b.',
+      'Inverse trig for angle finding: A = sin⁻¹(a/c), cos⁻¹(b/c), tan⁻¹(a/b).',
+      'Complement relation for the second angle: B = 90° - A.'
+    ];
+
+const formulaGeometryItems = Array.isArray(formulaSection.geometryItems)
+  ? formulaSection.geometryItems
+  : [
+      'Area = (a × b) / 2, Perimeter = a + b + c, Semiperimeter = (a + b + c) / 2.',
+      'Altitude relation: h = (a × b) / c.',
+      'Projection relations: p = a²/c, q = b²/c, and p + q = c.',
+      'Radius relations: r = (a + b - c) / 2 and R = c / 2.'
+    ];
+
+const solveSteps = Array.isArray(solveSection.steps)
+  ? solveSection.steps
+  : [
+      'Define the known values: list sides, angles, and units exactly as given.',
+      'Choose the correct relation: side, angle, area, altitude, projection, or radius formula.',
+      'Apply the formula: start from the symbolic equation before inserting values.',
+      'Substitute the values: replace variables with your known numbers and units.',
+      'Simplify carefully: compute in order and keep intermediate precision.',
+      'Read the final answer: confirm unit and value format for your use case.',
+      'Validate: check geometric conditions (c must be longest, A + B = 90°, units consistent).'
+    ];
+
+const resultItems = Array.isArray(solveSection.resultsItems)
+  ? solveSection.resultsItems
+  : [
+      'Formula: the exact relation selected for your inputs.',
+      'Substitution: your input values placed into that relation.',
+      'Answer: solved numeric output in the proper unit format.',
+      'Explanation: short clarity note for quicker understanding.'
+    ];
+
+const normalizeLinkItems = (value: unknown, fallback: LinkItem[]): LinkItem[] => {
+  if (!Array.isArray(value)) return fallback;
+  return value
+    .map((item) => ({
+      href: item?.href ?? '',
+      label: item?.label ?? '',
+      description: item?.description ?? ''
+    }))
+    .filter((item) => item.href && item.label);
+};
+
+const missingSidesItems = normalizeLinkItems(calculatorSection.missingSidesItems, [
+  {
+    href: '/right-triangle-side-calculator/',
+    label: 'Right Triangle Side Calculator',
+    description: 'to solve c, a, or b from Pythagorean relations.'
+  },
+  {
+    href: '/right-triangle-side-from-angle-calculator/',
+    label: 'Right Triangle Side from Angle Calculator',
+    description: 'to find sides using trigonometric input.'
+  },
+  {
+    href: '/special-right-triangle-calculator/',
+    label: 'Special Right Triangle Calculator',
+    description: 'for 45-45-90 and 30-60-90 shortcuts.'
+  }
+]);
+
+const angleItems = normalizeLinkItems(calculatorSection.anglesItems, [
+  {
+    href: '/right-triangle-angle-calculator/',
+    label: 'Right Triangle Angle Calculator',
+    description: 'to find A or B with inverse trig.'
+  },
+  {
+    href: '/right-triangle-trig-ratios-calculator/',
+    label: 'Trigonometric Ratios Calculator',
+    description: 'for sin, cos, tan, sec, csc, and cot.'
+  }
+]);
+
+const measurementItems = normalizeLinkItems(calculatorSection.measurementsItems, [
+  {
+    href: '/right-triangle-area-calculator/',
+    label: 'Right Triangle Area Calculator',
+    description: 'for multiple area methods.'
+  },
+  {
+    href: '/right-triangle-measurements-calculator/',
+    label: 'Right Triangle Measurements Calculator',
+    description: 'for perimeter and semiperimeter.'
+  },
+  {
+    href: '/right-triangle-altitude-calculator/',
+    label: 'Right Triangle Altitude Calculator',
+    description: 'for altitude relations.'
+  },
+  {
+    href: '/right-triangle-projection-calculator/',
+    label: 'Right Triangle Projection Calculator',
+    description: 'for segment and projection theorems.'
+  },
+  {
+    href: '/right-triangle-radius-calculator/',
+    label: 'Right Triangle Radius Calculator',
+    description: 'for inradius and circumradius.'
+  }
+]);
+
+const practicalItems = Array.isArray(validationSection.practicalItems)
+  ? validationSection.practicalItems
+  : [
+      'Classroom and exam preparation with traceable formula-based steps.',
+      'Site measurements for ramps, ladders, roof pitch, and wall offsets.',
+      'Technical drafting where side-angle consistency must be validated quickly.',
+      'Engineering and fabrication checks before final dimensions are approved.'
+    ];
+
+const checklistItems = Array.isArray(validationSection.checklistItems)
+  ? validationSection.checklistItems
+  : [
+      'Keep all side inputs in consistent units before solving.',
+      'Ensure hypotenuse c remains larger than both legs.',
+      'Use the correct angle mode and trigonometric relation.',
+      'Round only at the final answer, not during intermediate substitution.',
+      'Cross-check with one related calculator when precision matters.'
+    ];
+
+const supportItems = normalizeLinkItems(validationSection.supportItems, [
+  {
+    href: '/faqs/',
+    label: 'FAQs',
+    description: 'for common calculation and usage questions.'
+  },
+  {
+    href: '/library/',
+    label: 'Library',
+    description: 'for concept explanations and formula references.'
+  },
+  {
+    href: '/practice/',
+    label: 'Practice',
+    description: 'for drill-based improvement.'
+  },
+  {
+    href: '/about-us/',
+    label: 'About Us',
+    description: 'to learn about our mission and quality standards.'
+  },
+  {
+    href: '/contact-us/',
+    label: 'Contact Us',
+    description: 'for direct support.'
+  },
+  {
+    href: '/terms/',
+    label: 'Terms',
+    description: 'for policy details.'
+  },
+  {
+    href: '/privacy/',
+    label: 'Privacy',
+    description: 'for privacy policy details.'
+  }
+]);
+
+const localizedPath = localizePath(locale, '/');
 ---
 
 <BaseLayout
@@ -77,135 +275,109 @@ const chartRows = [
 
   <div class="mx-auto mt-8 grid w-full max-w-4xl gap-6 sm:gap-8">
     <section class="section-shell prose-shell">
-      <h2>What Is a Right Triangle?</h2>
-      <p>
-        A right triangle is a triangle that has one angle exactly equal to 90&deg;. That fixed right angle creates a
-        stable geometry model used in school math, engineering layouts, architecture drawings, surveying, navigation,
-        and technical design.
-      </p>
-      <p>
-        This homepage is structured to help you move in one clear flow: definition first, then formulas, then solving
-        steps, then tool selection, and finally accuracy checks before you use the answer.
-      </p>
-
-      <h2>Right Triangle Definition and Structure</h2>
-      <p>
-        In every right triangle, the side opposite the 90&deg; angle is the <strong>hypotenuse</strong>. The other two
-        sides are called <strong>legs</strong>. Most formulas and tools on this site use these standard symbols.
-      </p>
-      <h3>Standard notation used in the solver</h3>
+      <h2>{pick(introSection, 'title', 'What Is a Right Triangle?')}</h2>
+      <p>{pick(introSection, 'paragraph1', 'A right triangle is a triangle that has one angle exactly equal to 90°. That fixed right angle creates a stable geometry model used in school math, engineering layouts, architecture drawings, surveying, navigation, and technical design.')}</p>
+      <p>{pick(introSection, 'paragraph2', 'This homepage is structured to help you move in one clear flow: definition first, then formulas, then solving steps, then tool selection, and finally accuracy checks before you use the answer.')}</p>
+      <h2>{pick(introSection, 'structureTitle', 'Right Triangle Definition and Structure')}</h2>
+      <p>{pick(introSection, 'structureParagraph', 'In every right triangle, the side opposite the 90° angle is the hypotenuse. The other two sides are called legs. Most formulas and tools on this site use these standard symbols.')}</p>
+      <h3>{pick(introSection, 'notationTitle', 'Standard notation used in the solver')}</h3>
       <ul>
-        <li><strong>a</strong>: one leg of the triangle.</li>
-        <li><strong>b</strong>: the other leg of the triangle.</li>
-        <li><strong>c</strong>: hypotenuse (always the longest side).</li>
-        <li><strong>A</strong> and <strong>B</strong>: acute angles, where A + B = 90&deg;.</li>
-        <li><strong>h</strong>: altitude to the hypotenuse.</li>
-        <li><strong>p</strong> and <strong>q</strong>: hypotenuse segments created by the altitude.</li>
-        <li><strong>r</strong> and <strong>R</strong>: inradius and circumradius.</li>
+        {introNotationItems.map((item: string) => (
+          <li>{item}</li>
+        ))}
       </ul>
     </section>
 
     <section class="section-shell prose-shell">
-      <h2>Core Right Triangle Formulas You Need First</h2>
-      <p>
-        Before solving any question, identify what values are known and choose the formula family that matches that
-        input type.
-      </p>
-      <h3>Side formulas</h3>
+      <h2>{pick(formulaSection, 'title', 'Core Right Triangle Formulas You Need First')}</h2>
+      <p>{pick(formulaSection, 'intro', 'Before solving any question, identify what values are known and choose the formula family that matches that input type.')}</p>
+      <h3>{pick(formulaSection, 'sideTitle', 'Side formulas')}</h3>
       <ul>
-        <li>Pythagorean relation: a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>.</li>
-        <li>Missing leg from hypotenuse: b = &radic;(c<sup>2</sup> - a<sup>2</sup>) or a = &radic;(c<sup>2</sup> - b<sup>2</sup>).</li>
-        <li>Special triangles: 45-45-90 and 30-60-90 shortcuts for fast side solving.</li>
+        {formulaSideItems.map((item: string) => (
+          <li>{item}</li>
+        ))}
       </ul>
-      <h3>Angle and trigonometric formulas</h3>
+      <h3>{pick(formulaSection, 'angleTitle', 'Angle and trigonometric formulas')}</h3>
       <ul>
-        <li>sin(A) = a / c, cos(A) = b / c, tan(A) = a / b.</li>
-        <li>Inverse trig for angle finding: A = sin<sup>-1</sup>(a/c), cos<sup>-1</sup>(b/c), tan<sup>-1</sup>(a/b).</li>
-        <li>Complement relation for the second angle: B = 90&deg; - A.</li>
+        {formulaAngleItems.map((item: string) => (
+          <li>{item}</li>
+        ))}
       </ul>
-      <h3>Measurement and geometry formulas</h3>
+      <h3>{pick(formulaSection, 'geometryTitle', 'Measurement and geometry formulas')}</h3>
       <ul>
-        <li>Area = (a &times; b) / 2, Perimeter = a + b + c, Semiperimeter = (a + b + c) / 2.</li>
-        <li>Altitude relation: h = (a &times; b) / c.</li>
-        <li>Projection relations: p = a<sup>2</sup>/c, q = b<sup>2</sup>/c, and p + q = c.</li>
-        <li>Radius relations: r = (a + b - c) / 2 and R = c / 2.</li>
+        {formulaGeometryItems.map((item: string) => (
+          <li>{item}</li>
+        ))}
       </ul>
     </section>
 
     <section class="section-shell prose-shell">
-      <h2>How To Solve Any Right Triangle (Clear Process)</h2>
+      <h2>{pick(solveSection, 'title', 'How To Solve Any Right Triangle (Clear Process)')}</h2>
       <ol>
-        <li><strong>Define the known values:</strong> list sides, angles, and units exactly as given.</li>
-        <li><strong>Choose the correct relation:</strong> side, angle, area, altitude, projection, or radius formula.</li>
-        <li><strong>Apply the formula:</strong> start from the symbolic equation before inserting values.</li>
-        <li><strong>Substitute the values:</strong> replace variables with your known numbers and units.</li>
-        <li><strong>Simplify carefully:</strong> compute in order and keep intermediate precision.</li>
-        <li><strong>Read the final answer:</strong> confirm unit and value format for your use case.</li>
-        <li><strong>Validate:</strong> check geometric conditions (c must be longest, A + B = 90&deg;, units consistent).</li>
+        {solveSteps.map((item: string) => (
+          <li>{item}</li>
+        ))}
       </ol>
 
-      <h2>How This Solver Presents Step-by-Step Results</h2>
-      <p>
-        Every calculator mode is designed to show a useful solution flow, not only a final number. You see the formula,
-        then value substitution, then computed answer, followed by a short explanation line so each step is easier to
-        verify and reuse.
-      </p>
+      <h2>{pick(solveSection, 'resultsTitle', 'How This Solver Presents Step-by-Step Results')}</h2>
+      <p>{pick(solveSection, 'resultsIntro', 'Every calculator mode is designed to show a useful solution flow, not only a final number. You see the formula, then value substitution, then computed answer, followed by a short explanation line so each step is easier to verify and reuse.')}</p>
       <ul>
-        <li><strong>Formula:</strong> the exact relation selected for your inputs.</li>
-        <li><strong>Substitution:</strong> your input values placed into that relation.</li>
-        <li><strong>Answer:</strong> solved numeric output in the proper unit format.</li>
-        <li><strong>Explanation:</strong> short clarity note for quicker understanding.</li>
+        {resultItems.map((item: string) => (
+          <li>{item}</li>
+        ))}
       </ul>
     </section>
 
     <section class="section-shell prose-shell">
-      <h2>Choose the Right Calculator by Goal</h2>
-      <h3>For missing sides</h3>
+      <h2>{pick(calculatorSection, 'title', 'Choose the Right Calculator by Goal')}</h2>
+      <h3>{pick(calculatorSection, 'missingSidesTitle', 'For missing sides')}</h3>
       <ul>
-        <li><a href={localizePath(locale, '/right-triangle-side-calculator/')}>Right Triangle Side Calculator</a> to solve c, a, or b from Pythagorean relations.</li>
-        <li><a href={localizePath(locale, '/right-triangle-side-from-angle-calculator/')}>Right Triangle Side from Angle Calculator</a> to find sides using trigonometric input.</li>
-        <li><a href={localizePath(locale, '/special-right-triangle-calculator/')}>Special Right Triangle Calculator</a> for 45-45-90 and 30-60-90 shortcuts.</li>
+        {missingSidesItems.map((item) => (
+          <li>
+            <a href={localizePath(locale, item.href)}>{item.label}</a> {item.description}
+          </li>
+        ))}
       </ul>
-      <h3>For angles and trig ratios</h3>
+      <h3>{pick(calculatorSection, 'anglesTitle', 'For angles and trig ratios')}</h3>
       <ul>
-        <li><a href={localizePath(locale, '/right-triangle-angle-calculator/')}>Right Triangle Angle Calculator</a> to find A or B with inverse trig.</li>
-        <li><a href={localizePath(locale, '/right-triangle-trig-ratios-calculator/')}>Trigonometric Ratios Calculator</a> for sin, cos, tan, sec, csc, and cot.</li>
+        {angleItems.map((item) => (
+          <li>
+            <a href={localizePath(locale, item.href)}>{item.label}</a> {item.description}
+          </li>
+        ))}
       </ul>
-      <h3>For measurements and geometric properties</h3>
+      <h3>{pick(calculatorSection, 'measurementsTitle', 'For measurements and geometric properties')}</h3>
       <ul>
-        <li><a href={localizePath(locale, '/right-triangle-area-calculator/')}>Right Triangle Area Calculator</a> for multiple area methods.</li>
-        <li><a href={localizePath(locale, '/right-triangle-measurements-calculator/')}>Right Triangle Measurements Calculator</a> for perimeter and semiperimeter.</li>
-        <li><a href={localizePath(locale, '/right-triangle-altitude-calculator/')}>Right Triangle Altitude Calculator</a> for altitude relations.</li>
-        <li><a href={localizePath(locale, '/right-triangle-projection-calculator/')}>Right Triangle Projection Calculator</a> for segment and projection theorems.</li>
-        <li><a href={localizePath(locale, '/right-triangle-radius-calculator/')}>Right Triangle Radius Calculator</a> for inradius and circumradius.</li>
+        {measurementItems.map((item) => (
+          <li>
+            <a href={localizePath(locale, item.href)}>{item.label}</a> {item.description}
+          </li>
+        ))}
       </ul>
     </section>
 
     <section class="section-shell prose-shell">
-      <h2>Practical Use Cases</h2>
+      <h2>{pick(validationSection, 'practicalTitle', 'Practical Use Cases')}</h2>
       <ul>
-        <li>Classroom and exam preparation with traceable formula-based steps.</li>
-        <li>Site measurements for ramps, ladders, roof pitch, and wall offsets.</li>
-        <li>Technical drafting where side-angle consistency must be validated quickly.</li>
-        <li>Engineering and fabrication checks before final dimensions are approved.</li>
+        {practicalItems.map((item: string) => (
+          <li>{item}</li>
+        ))}
       </ul>
 
-      <h2>Accuracy Checklist Before You Finalize</h2>
+      <h2>{pick(validationSection, 'checklistTitle', 'Accuracy Checklist Before You Finalize')}</h2>
       <ul>
-        <li>Keep all side inputs in consistent units before solving.</li>
-        <li>Ensure hypotenuse c remains larger than both legs.</li>
-        <li>Use the correct angle mode and trigonometric relation.</li>
-        <li>Round only at the final answer, not during intermediate substitution.</li>
-        <li>Cross-check with one related calculator when precision matters.</li>
+        {checklistItems.map((item: string) => (
+          <li>{item}</li>
+        ))}
       </ul>
 
-      <h2>Helpful Support Pages</h2>
+      <h2>{pick(validationSection, 'supportTitle', 'Helpful Support Pages')}</h2>
       <ul>
-        <li><a href={localizePath(locale, '/faqs/')}>FAQs</a> for common calculation and usage questions.</li>
-        <li><a href={localizePath(locale, '/library/')}>Library</a> for concept explanations and formula references.</li>
-        <li><a href={localizePath(locale, '/practice/')}>Practice</a> for drill-based improvement.</li>
-        <li><a href={localizePath(locale, '/about-us/')}>About Us</a> and <a href={localizePath(locale, '/contact-us/')}>Contact Us</a> for support.</li>
-        <li><a href={localizePath(locale, '/terms/')}>Terms</a> and <a href={localizePath(locale, '/privacy/')}>Privacy</a> for policy details.</li>
+        {supportItems.map((item) => (
+          <li>
+            <a href={localizePath(locale, item.href)}>{item.label}</a> {item.description}
+          </li>
+        ))}
       </ul>
     </section>
   </div>
@@ -269,4 +441,3 @@ const chartRows = [
     </div>
   </div>
 </BaseLayout>
-

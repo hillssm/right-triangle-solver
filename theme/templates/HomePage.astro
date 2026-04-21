@@ -1,4 +1,4 @@
----
+﻿---
 import CalculatorCatalog from 'theme/components/CalculatorCatalog.astro';
 import ChartTableSection from 'theme/components/ChartTableSection.astro';
 import Faq from 'theme/components/Faq.astro';
@@ -76,70 +76,127 @@ const chartRows = [
   </section>
 
   <section class="mt-8 section-shell prose-shell">
-    <h2>Right Triangle Calculator for Students, Teachers, and Professionals</h2>
+    <h2>What Is a Right Triangle?</h2>
     <p>
-      Right Triangle Solver is designed for practical problem-solving. You can move from basic side and angle solving
-      to area, altitude, projection, and radius checks in one consistent workflow.
+      A right triangle is a triangle that has one angle exactly equal to 90&deg;. That fixed right angle creates a
+      stable geometry model used in school math, engineering layouts, architecture drawings, surveying, navigation,
+      and technical design.
+    </p>
+    <p>
+      This homepage is structured to help you move in one clear flow: definition first, then formulas, then solving
+      steps, then tool selection, and finally accuracy checks before you use the answer.
     </p>
 
-    <h2>Right Triangle Basics</h2>
+    <h2>Right Triangle Definition and Structure</h2>
     <p>
-      A right triangle has one angle equal to 90 degrees. The side opposite this angle is the hypotenuse, and the
-      remaining two sides are legs.
+      In every right triangle, the side opposite the 90&deg; angle is the <strong>hypotenuse</strong>. The other two
+      sides are called <strong>legs</strong>. Most formulas and tools on this site use these standard symbols.
     </p>
-    <h3>Core facts you should always remember</h3>
+    <h3>Standard notation used in the solver</h3>
     <ul>
-      <li>Acute angles satisfy A + B = 90°.</li>
-      <li>The hypotenuse is always the longest side.</li>
-      <li>The base identity is a² + b² = c².</li>
+      <li><strong>a</strong>: one leg of the triangle.</li>
+      <li><strong>b</strong>: the other leg of the triangle.</li>
+      <li><strong>c</strong>: hypotenuse (always the longest side).</li>
+      <li><strong>A</strong> and <strong>B</strong>: acute angles, where A + B = 90&deg;.</li>
+      <li><strong>h</strong>: altitude to the hypotenuse.</li>
+      <li><strong>p</strong> and <strong>q</strong>: hypotenuse segments created by the altitude.</li>
+      <li><strong>r</strong> and <strong>R</strong>: inradius and circumradius.</li>
     </ul>
 
-    <h2>How To Solve Any Right Triangle</h2>
+    <h2>Core Right Triangle Formulas You Need First</h2>
+    <p>
+      Before solving any question, identify what values are known and choose the formula family that matches that
+      input type.
+    </p>
+    <h3>Side formulas</h3>
+    <ul>
+      <li>Pythagorean relation: a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>.</li>
+      <li>Missing leg from hypotenuse: b = &radic;(c<sup>2</sup> - a<sup>2</sup>) or a = &radic;(c<sup>2</sup> - b<sup>2</sup>).</li>
+      <li>Special triangles: 45-45-90 and 30-60-90 shortcuts for fast side solving.</li>
+    </ul>
+    <h3>Angle and trigonometric formulas</h3>
+    <ul>
+      <li>sin(A) = a / c, cos(A) = b / c, tan(A) = a / b.</li>
+      <li>Inverse trig for angle finding: A = sin<sup>-1</sup>(a/c), cos<sup>-1</sup>(b/c), tan<sup>-1</sup>(a/b).</li>
+      <li>Complement relation for the second angle: B = 90&deg; - A.</li>
+    </ul>
+    <h3>Measurement and geometry formulas</h3>
+    <ul>
+      <li>Area = (a &times; b) / 2, Perimeter = a + b + c, Semiperimeter = (a + b + c) / 2.</li>
+      <li>Altitude relation: h = (a &times; b) / c.</li>
+      <li>Projection relations: p = a<sup>2</sup>/c, q = b<sup>2</sup>/c, and p + q = c.</li>
+      <li>Radius relations: r = (a + b - c) / 2 and R = c / 2.</li>
+    </ul>
+
+    <h2>How To Solve Any Right Triangle (Clear Process)</h2>
     <ol>
-      <li><strong>Start from known values:</strong> use two valid inputs with at least one side.</li>
-      <li><strong>Select the matching mode:</strong> side, angle, trig ratio, area, or geometry relation.</li>
-      <li><strong>Read the step-by-step output:</strong> formula -> substitution -> final answer.</li>
-      <li><strong>Verify once:</strong> cross-check with a related tool before final rounding.</li>
+      <li><strong>Define the known values:</strong> list sides, angles, and units exactly as given.</li>
+      <li><strong>Choose the correct relation:</strong> side, angle, area, altitude, projection, or radius formula.</li>
+      <li><strong>Apply the formula:</strong> start from the symbolic equation before inserting values.</li>
+      <li><strong>Substitute the values:</strong> replace variables with your known numbers and units.</li>
+      <li><strong>Simplify carefully:</strong> compute in order and keep intermediate precision.</li>
+      <li><strong>Read the final answer:</strong> confirm unit and value format for your use case.</li>
+      <li><strong>Validate:</strong> check geometric conditions (c must be longest, A + B = 90&deg;, units consistent).</li>
     </ol>
 
-    <h2>Choose the Right Calculator by Your Goal</h2>
-    <h3>If you need missing sides</h3>
+    <h2>How This Solver Presents Step-by-Step Results</h2>
+    <p>
+      Every calculator mode is designed to show a useful solution flow, not only a final number. You see the formula,
+      then value substitution, then computed answer, followed by a short explanation line so each step is easier to
+      verify and reuse.
+    </p>
     <ul>
-      <li><a href={localizePath(locale, '/right-triangle-side-calculator/')}>Right Triangle Side Calculator</a> for hypotenuse or missing leg.</li>
-      <li><a href={localizePath(locale, '/right-triangle-side-from-angle-calculator/')}>Right Triangle Side from Angle Calculator</a> for trig-based side solving.</li>
-      <li><a href={localizePath(locale, '/special-right-triangle-calculator/')}>Special Right Triangle Calculator</a> for 45-45-90 and 30-60-90 cases.</li>
+      <li><strong>Formula:</strong> the exact relation selected for your inputs.</li>
+      <li><strong>Substitution:</strong> your input values placed into that relation.</li>
+      <li><strong>Answer:</strong> solved numeric output in the proper unit format.</li>
+      <li><strong>Explanation:</strong> short clarity note for quicker understanding.</li>
     </ul>
 
-    <h3>If you need angles or trig ratios</h3>
+    <h2>Choose the Right Calculator by Goal</h2>
+    <h3>For missing sides</h3>
     <ul>
-      <li><a href={localizePath(locale, '/right-triangle-angle-calculator/')}>Right Triangle Angle Calculator</a> to find angle A or B.</li>
+      <li><a href={localizePath(locale, '/right-triangle-side-calculator/')}>Right Triangle Side Calculator</a> to solve c, a, or b from Pythagorean relations.</li>
+      <li><a href={localizePath(locale, '/right-triangle-side-from-angle-calculator/')}>Right Triangle Side from Angle Calculator</a> to find sides using trigonometric input.</li>
+      <li><a href={localizePath(locale, '/special-right-triangle-calculator/')}>Special Right Triangle Calculator</a> for 45-45-90 and 30-60-90 shortcuts.</li>
+    </ul>
+    <h3>For angles and trig ratios</h3>
+    <ul>
+      <li><a href={localizePath(locale, '/right-triangle-angle-calculator/')}>Right Triangle Angle Calculator</a> to find A or B with inverse trig.</li>
       <li><a href={localizePath(locale, '/right-triangle-trig-ratios-calculator/')}>Trigonometric Ratios Calculator</a> for sin, cos, tan, sec, csc, and cot.</li>
     </ul>
-
-    <h3>If you need geometry properties</h3>
+    <h3>For measurements and geometric properties</h3>
     <ul>
       <li><a href={localizePath(locale, '/right-triangle-area-calculator/')}>Right Triangle Area Calculator</a> for multiple area methods.</li>
       <li><a href={localizePath(locale, '/right-triangle-measurements-calculator/')}>Right Triangle Measurements Calculator</a> for perimeter and semiperimeter.</li>
-      <li><a href={localizePath(locale, '/right-triangle-altitude-calculator/')}>Right Triangle Altitude Calculator</a> for height relations.</li>
+      <li><a href={localizePath(locale, '/right-triangle-altitude-calculator/')}>Right Triangle Altitude Calculator</a> for altitude relations.</li>
       <li><a href={localizePath(locale, '/right-triangle-projection-calculator/')}>Right Triangle Projection Calculator</a> for segment and projection theorems.</li>
       <li><a href={localizePath(locale, '/right-triangle-radius-calculator/')}>Right Triangle Radius Calculator</a> for inradius and circumradius.</li>
     </ul>
 
-    <h2>Accuracy Checklist Before Final Answer</h2>
+    <h2>Practical Use Cases</h2>
     <ul>
-      <li>Keep units consistent across all side inputs.</li>
-      <li>Confirm the hypotenuse remains larger than both legs.</li>
-      <li>Match the angle mode correctly when using trigonometric tools.</li>
-      <li>Round only after the final computed value.</li>
+      <li>Classroom and exam preparation with traceable formula-based steps.</li>
+      <li>Site measurements for ramps, ladders, roof pitch, and wall offsets.</li>
+      <li>Technical drafting where side-angle consistency must be validated quickly.</li>
+      <li>Engineering and fabrication checks before final dimensions are approved.</li>
     </ul>
 
-    <h2>Helpful Pages Beyond Calculators</h2>
+    <h2>Accuracy Checklist Before You Finalize</h2>
     <ul>
-      <li><a href={localizePath(locale, '/faqs/')}>FAQs</a> for quick troubleshooting and usage questions.</li>
-      <li><a href={localizePath(locale, '/library/')}>Library</a> for formula explanations and concept revision.</li>
-      <li><a href={localizePath(locale, '/practice/')}>Practice</a> for drills and speed improvement.</li>
-      <li><a href={localizePath(locale, '/about-us/')}>About Us</a> and <a href={localizePath(locale, '/contact-us/')}>Contact Us</a> for support and trust details.</li>
-      <li><a href={localizePath(locale, '/terms/')}>Terms</a> and <a href={localizePath(locale, '/privacy/')}>Privacy</a> for policy transparency.</li>
+      <li>Keep all side inputs in consistent units before solving.</li>
+      <li>Ensure hypotenuse c remains larger than both legs.</li>
+      <li>Use the correct angle mode and trigonometric relation.</li>
+      <li>Round only at the final answer, not during intermediate substitution.</li>
+      <li>Cross-check with one related calculator when precision matters.</li>
+    </ul>
+
+    <h2>Helpful Support Pages</h2>
+    <ul>
+      <li><a href={localizePath(locale, '/faqs/')}>FAQs</a> for common calculation and usage questions.</li>
+      <li><a href={localizePath(locale, '/library/')}>Library</a> for concept explanations and formula references.</li>
+      <li><a href={localizePath(locale, '/practice/')}>Practice</a> for drill-based improvement.</li>
+      <li><a href={localizePath(locale, '/about-us/')}>About Us</a> and <a href={localizePath(locale, '/contact-us/')}>Contact Us</a> for support.</li>
+      <li><a href={localizePath(locale, '/terms/')}>Terms</a> and <a href={localizePath(locale, '/privacy/')}>Privacy</a> for policy details.</li>
     </ul>
   </section>
 
@@ -202,3 +259,4 @@ const chartRows = [
     </div>
   </div>
 </BaseLayout>
+

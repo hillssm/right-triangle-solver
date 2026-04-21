@@ -77,14 +77,14 @@ const chartRows = [
   </section>
 
   <section class="mt-8 section-shell prose-shell">
-    <h2>Right Triangle Calculator for Practical Problem Solving</h2>
+    <h2>Right Triangle Calculator for Students, Teachers, and Professionals</h2>
     <p>
-      This website is built to solve right triangle questions from real workflows, not only textbook examples.
-      You can move from side solving to angle finding, area, projections, altitude, and radius calculations with
-      clear formulas and step-by-step outputs.
+      Right Triangle Solver is built for real use cases where speed and accuracy both matter. You can solve missing
+      sides, angles, trigonometric ratios, area, altitude, projections, and circle relations in one connected
+      ecosystem of calculators.
     </p>
 
-    <h2>Choose the Right Calculator by Goal</h2>
+    <h2>Complete Right Triangle Calculator Directory by Goal</h2>
     <ul>
       {RIGHT_TRIANGLE_GROUPED_PAGES.map((page) => (
         <li>
@@ -93,7 +93,38 @@ const chartRows = [
       ))}
     </ul>
 
-    <h2>How to Get More Accurate Results</h2>
+    <h2>Recommended Right Triangle Solving Workflow</h2>
+    <ol>
+      <li>Start with the calculator matching your known values, such as side-based or angle-based inputs.</li>
+      <li>Use grouped tool modes to avoid jumping across thin pages and keep solving in one focused workflow.</li>
+      <li>Verify with one related calculator (for example, side -> angle -> area) before finalizing results.</li>
+      <li>Apply final rounding only at the end for cleaner, more reliable geometry outputs.</li>
+    </ol>
+
+    <h2>Common Input Mistakes and How to Avoid Them</h2>
+    <ul>
+      <li>Mixing units across sides and angles in the same calculation flow.</li>
+      <li>Using a formula mode that does not match what is actually known.</li>
+      <li>Entering angle values in the wrong format for trig-based calculators.</li>
+      <li>Skipping validity checks such as hypotenuse being the longest side.</li>
+    </ul>
+
+    <h2>Why Use a Dedicated Right Triangle Solver Website</h2>
+    <p>
+      This platform is structured around user intent, not isolated formulas. That means you can complete a full
+      right triangle problem with fewer steps, better context, and stronger result verification through internal links.
+    </p>
+
+    <h2>Useful Pages Beyond the Calculators</h2>
+    <ul>
+      <li><a href={localizePath(locale, '/faqs/')}>FAQs</a> for quick answers and troubleshooting.</li>
+      <li><a href={localizePath(locale, '/library/')}>Library</a> for formula references and concept review.</li>
+      <li><a href={localizePath(locale, '/practice/')}>Practice</a> to train speed and accuracy.</li>
+      <li><a href={localizePath(locale, '/about-us/')}>About Us</a> and <a href={localizePath(locale, '/contact-us/')}>Contact Us</a> for support and trust signals.</li>
+      <li><a href={localizePath(locale, '/terms/')}>Terms</a> and <a href={localizePath(locale, '/privacy/')}>Privacy</a> for policy transparency.</li>
+    </ul>
+
+    <h2>How to Get More Accurate Results Every Time</h2>
     <p>
       Use consistent units, choose the mode that matches your known values, and cross-check with a second
       related calculator when possible. This quickly catches input mistakes and improves confidence in the result.

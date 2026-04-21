@@ -5,6 +5,7 @@ import {
   getGroupedPageBySlug,
   getGroupedPageFormulas
 } from 'src/data/rightTriangleGroupedPages';
+import { GROUPED_PAGE_FAQS } from 'src/data/groupedPageFaqs';
 import FormulaCalculator from 'theme/components/FormulaCalculator.astro';
 import { localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
@@ -79,6 +80,36 @@ const uiModeTitle = pick(solver, 'calculatorMode', 'Calculator Mode');
 const uiSelectMode = pick(solver, 'chooseCalculator', 'Choose calculator mode');
 const uiRelated = pick(solver, 'relatedTools', 'Related Calculators');
 const uiOpen = pick(solver, 'openTool', 'Open Tool');
+
+const relatedPageNames = relatedPages.map((page) => page.h1);
+
+const quickStartSteps = groupedPage
+  ? [
+      'Choose the tab that matches your known values before entering numbers.',
+      'Enter values in consistent units and verify that your triangle inputs are valid.',
+      'Review the calculated result, then cross-check with a related calculator when accuracy matters.',
+      `Use related pages such as ${relatedPageNames.slice(0, 2).join(' and ')} for advanced checks.`
+    ]
+  : [];
+
+const groupedPageFaqItems = groupedPage
+  ? GROUPED_PAGE_FAQS[groupedPage.slug] ?? []
+  : [];
+
+const groupedPageFaqSchema = groupedPage && groupedPageFaqItems.length > 0
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: groupedPageFaqItems.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer
+        }
+      }))
+    }
+  : null;
 ---
 
 <BaseLayout
@@ -92,6 +123,13 @@ const uiOpen = pick(solver, 'openTool', 'Open Tool');
     type="application/ld+json"
     set:html={JSON.stringify(breadcrumbSchema)}
   ></script>
+  {groupedPageFaqSchema && (
+    <script
+      slot="head"
+      type="application/ld+json"
+      set:html={JSON.stringify(groupedPageFaqSchema)}
+    ></script>
+  )}
 
   <nav class="mb-6" aria-label="Breadcrumb">
     <ol class="flex flex-wrap items-center gap-2 text-xs text-on-surface-variant">
@@ -139,6 +177,20 @@ const uiOpen = pick(solver, 'openTool', 'Open Tool');
           Every grouped page includes multiple tool modes in one interface, so users can solve
           related tasks without moving across overlapping pages.
         </p>
+
+        <h2>How To Choose The Best Right Triangle Calculator</h2>
+        <ol>
+          <li>Start with what you already know: sides, angles, area, altitude, projections, or radii.</li>
+          <li>Open the grouped page matching that intent, then select the exact mode from tabs.</li>
+          <li>Use one related grouped page to verify your final output before using it in class or work.</li>
+        </ol>
+
+        <h2>Popular Solver Workflows</h2>
+        <ul>
+          <li><a href={localizePath(locale, '/right-triangle-side-calculator/')}>Side -> Angle -> Area workflow</a> for full triangle completion.</li>
+          <li><a href={localizePath(locale, '/right-triangle-trig-ratios-calculator/')}>Trig ratios -> Angle -> Side workflow</a> for trigonometry tasks.</li>
+          <li><a href={localizePath(locale, '/right-triangle-area-calculator/')}>Area + Altitude + Radius workflow</a> for geometry validation.</li>
+        </ul>
       </section>
 
       <section class="mt-8 section-shell">
@@ -288,6 +340,42 @@ const uiOpen = pick(solver, 'openTool', 'Open Tool');
         <p>
           <strong>Pro Tip:</strong> {groupedPage!.content.proTip}
         </p>
+      </section>
+
+      <section class="mt-8 section-shell prose-shell">
+        <h2>How To Use This Calculator</h2>
+        <ol>
+          {quickStartSteps.map((step) => (
+            <li>{step}</li>
+          ))}
+        </ol>
+
+        <h2>Calculator Modes Available</h2>
+        <ul>
+          {formulas.map((formula) => (
+            <li>
+              <strong>{formula.title}:</strong> {formula.description}
+            </li>
+          ))}
+        </ul>
+
+        <h2>Common Mistakes and Quick Fixes</h2>
+        <ul>
+          <li>Mixing units in a single calculation. Keep all values in one unit system before solving.</li>
+          <li>Choosing a mode that does not match known inputs. Start with the closest mode to your available values.</li>
+          <li>Rounding too early. Keep full precision until the final result output.</li>
+          <li>Skipping verification. Recheck using one related calculator before using results in high-stakes work.</li>
+        </ul>
+      </section>
+
+      <section class="mt-8 section-shell prose-shell">
+        <h2>Frequently Asked Questions</h2>
+        {groupedPageFaqItems.map((item) => (
+          <div>
+            <h3>{item.question}</h3>
+            <p>{item.answer}</p>
+          </div>
+        ))}
       </section>
 
       <section class="mt-8 section-shell">

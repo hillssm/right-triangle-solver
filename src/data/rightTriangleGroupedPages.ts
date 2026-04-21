@@ -87,13 +87,13 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
   {
     slug: 'right-triangle-measurements-calculator',
     url: '/right-triangle-measurements-calculator/',
-    h1: 'Right Triangle Area, Perimeter and Semiperimeter Calculator',
+    h1: 'Right Triangle Perimeter and Semiperimeter Calculator',
     h2: [
-      'Calculate Area, Perimeter and Semiperimeter',
+      'Calculate Perimeter and Semiperimeter',
       'Right Triangle Measurement Formulas'
     ],
-    includedToolIds: [4, 5, 6],
-    intent: 'Calculate basic triangle properties.',
+    includedToolIds: [5, 6],
+    intent: 'Calculate right triangle perimeter and semiperimeter.',
     relatedSlugs: [
       'right-triangle-area-calculator',
       'right-triangle-radius-calculator',

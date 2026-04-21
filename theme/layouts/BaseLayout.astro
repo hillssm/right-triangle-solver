@@ -4,6 +4,7 @@ import 'src/styles/global.css';
 import Footer from 'theme/components/Footer.astro';
 import Header from 'theme/components/Header.astro';
 import BackToTop from 'theme/components/BackToTop.astro';
+import InternalLinkNetwork from 'theme/components/InternalLinkNetwork.astro';
 import {
   DEFAULT_LOCALE,
   SUPPORTED_LOCALES,
@@ -26,6 +27,7 @@ interface Props {
   schemaPage?: 'about' | 'contact' | null;
   hideHeader?: boolean;
   hideFooter?: boolean;
+  hideInternalLinks?: boolean;
   mainClass?: string;
 }
 
@@ -39,6 +41,7 @@ const {
   schemaPage = null,
   hideHeader = false,
   hideFooter = false,
+  hideInternalLinks = false,
   mainClass = 'mx-auto w-full max-w-[1200px] px-4 py-8 sm:px-6 lg:px-8'
 } = Astro.props;
 
@@ -198,6 +201,13 @@ const footerCommonLabels = {
     <main class={mainClass}>
       <slot />
     </main>
+
+    {!hideInternalLinks && (
+      <InternalLinkNetwork
+        locale={locale}
+        currentPath={Astro.url.pathname}
+      />
+    )}
 
     {!hideFooter && (
       <Footer

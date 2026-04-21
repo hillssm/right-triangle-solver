@@ -1,0 +1,93 @@
+---
+import {
+  RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE,
+  RIGHT_TRIANGLE_GROUPED_PAGES
+} from 'src/data/rightTriangleGroupedPages';
+import { localizePath, type Locale } from 'theme/i18n/locales';
+
+interface Props {
+  locale: Locale;
+  currentPath?: string;
+}
+
+const { locale, currentPath = '/' } = Astro.props;
+
+const normalizePath = (path: string) => {
+  if (path === '/') return '/';
+  return path.endsWith('/') ? path : `${path}/`;
+};
+
+const normalizedCurrentPath = normalizePath(currentPath);
+
+const toolLinks = [
+  {
+    label: RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.h1,
+    href: localizePath(locale, RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.url)
+  },
+  ...RIGHT_TRIANGLE_GROUPED_PAGES.map((page) => ({
+    label: page.h1,
+    href: localizePath(locale, page.url)
+  }))
+].filter((item) => normalizePath(item.href) !== normalizedCurrentPath);
+
+const siteLinks = [
+  { label: 'Home', path: '/' },
+  { label: 'About Us', path: '/about-us/' },
+  { label: 'Contact Us', path: '/contact-us/' },
+  { label: 'FAQs', path: '/faqs/' },
+  { label: 'Library', path: '/library/' },
+  { label: 'Practice', path: '/practice/' },
+  { label: 'Terms', path: '/terms/' },
+  { label: 'Privacy', path: '/privacy/' },
+  { label: 'Blog', path: '/blog/' },
+  { label: 'Sitemap', path: '/sitemap/' }
+]
+  .map((item) => ({
+    label: item.label,
+    href: localizePath(locale, item.path)
+  }))
+  .filter((item) => normalizePath(item.href) !== normalizedCurrentPath);
+---
+
+<section class="mx-auto mt-10 w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
+  <div class="section-shell">
+    <h2 class="text-xl font-semibold text-on-surface">Explore More Right Triangle Pages</h2>
+    <p class="mt-2 text-sm text-on-surface-variant">
+      Internal links to all calculator tools and key site pages for quick navigation.
+    </p>
+
+    <div class="mt-6 grid gap-8 lg:grid-cols-2">
+      <div>
+        <h3 class="text-xs font-label uppercase tracking-widest text-primary">All Tool Pages</h3>
+        <ul class="mt-3 grid gap-2 sm:grid-cols-2">
+          {toolLinks.map((item) => (
+            <li>
+              <a
+                href={item.href}
+                class="text-sm text-on-surface-variant transition-colors hover:text-primary"
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xs font-label uppercase tracking-widest text-primary">Other Pages</h3>
+        <ul class="mt-3 grid gap-2 sm:grid-cols-2">
+          {siteLinks.map((item) => (
+            <li>
+              <a
+                href={item.href}
+                class="text-sm text-on-surface-variant transition-colors hover:text-primary"
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

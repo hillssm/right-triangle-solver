@@ -603,6 +603,10 @@ const scriptTranslations = {
         resultWrap.classList.remove('hidden');
 
         const { result, steps } = resultData;
+        const expandedSteps = steps
+          .flatMap((step) => String(step).split(/<br\s*\/?>/gi))
+          .map((step) => step.trim())
+          .filter(Boolean);
         
         const getUnitSuffix = () => {
           const k = kind.toLowerCase();
@@ -625,9 +629,10 @@ const scriptTranslations = {
         valueEl.innerHTML = `${format(result)}${outSuffix.replace(/²/g, '<sup>2</sup>')}`;
 
         const fragment = document.createDocumentFragment();
-        steps.forEach((step, index) => {
+        expandedSteps.forEach((step, index) => {
           const li = document.createElement('li');
           const formatted = step
+            .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
             .replace(/([a-zA-Z])(\d+)/g, '<i>$1</i><sup>$2</sup>')
             .replace(/\^(\d+)/g, '<sup>$1</sup>')
             .replace(/²/g, '<sup>2</sup>')

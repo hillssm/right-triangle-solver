@@ -339,11 +339,18 @@ const labelsJson = JSON.stringify(l);
     };
 
     const renderListItems = (listEl: HTMLElement, items: string[], isStep = false) => {
+      const normalizedItems = isStep
+        ? items
+            .flatMap((item) => String(item).split(/<br\s*\/?>/gi))
+            .map((item) => item.trim())
+            .filter(Boolean)
+        : items;
       const fragment = document.createDocumentFragment();
-      items.forEach((item, index) => {
+      normalizedItems.forEach((item, index) => {
         const li = document.createElement('li');
         
         let text = item
+          .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
           .replace(/alpha|α/g, 'A')
           .replace(/beta|β/g, 'B')
           // Textbook power: variable followed by digit (e.g. x2 -> x²)

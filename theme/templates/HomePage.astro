@@ -5,7 +5,6 @@ import Faq from 'theme/components/Faq.astro';
 import HomeSchema from 'theme/components/HomeSchema.astro';
 import HowItWorks from 'theme/components/HowItWorks.astro';
 import RightTriangleTool from 'theme/components/RightTriangleTool.astro';
-import { RIGHT_TRIANGLE_GROUPED_PAGES } from 'src/data/rightTriangleGroupedPages';
 import { localizePath } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
@@ -79,84 +78,68 @@ const chartRows = [
   <section class="mt-8 section-shell prose-shell">
     <h2>Right Triangle Calculator for Students, Teachers, and Professionals</h2>
     <p>
-      Right Triangle Solver is built for real use cases where speed and accuracy both matter. You can solve missing
-      sides, angles, trigonometric ratios, area, altitude, projections, and circle relations in one connected
-      ecosystem of calculators.
+      Right Triangle Solver is designed for practical problem-solving. You can move from basic side and angle solving
+      to area, altitude, projection, and radius checks in one consistent workflow.
     </p>
 
-    <h2>Right Angle Triangle Definition</h2>
+    <h2>Right Triangle Basics</h2>
     <p>
-      A right angle triangle (also called a right triangle or right-angled triangle) is a triangle with one angle
-      exactly equal to 90 degrees. The side opposite the 90-degree angle is the hypotenuse, and it is always the
-      longest side. The other two sides are called legs.
+      A right triangle has one angle equal to 90 degrees. The side opposite this angle is the hypotenuse, and the
+      remaining two sides are legs.
     </p>
+    <h3>Core facts you should always remember</h3>
     <ul>
-      <li>The two acute angles always add up to 90 degrees.</li>
-      <li>The hypotenuse is always longer than each leg.</li>
-      <li>The Pythagorean relation is always true: a^2 + b^2 = c^2.</li>
+      <li>Acute angles satisfy A + B = 90°.</li>
+      <li>The hypotenuse is always the longest side.</li>
+      <li>The base identity is a² + b² = c².</li>
     </ul>
 
-    <h2>Right Triangle Explained with a Simple Example</h2>
-    <p>
-      Consider a triangle with legs 3 and 4 units. Using the Pythagorean theorem, the hypotenuse is 5 units, so this
-      is a classic 3-4-5 right triangle. Once sides are known, you can also find area, perimeter, and both acute
-      angles from the same set of values.
-    </p>
+    <h2>How To Solve Any Right Triangle</h2>
     <ol>
-      <li>Identify known values (for example, two sides or one side and one acute angle).</li>
-      <li>Use the matching calculator mode to find the missing side or angle.</li>
-      <li>Verify with area, altitude, or trig-ratio calculators for stronger accuracy.</li>
+      <li><strong>Start from known values:</strong> use two valid inputs with at least one side.</li>
+      <li><strong>Select the matching mode:</strong> side, angle, trig ratio, area, or geometry relation.</li>
+      <li><strong>Read the step-by-step output:</strong> formula -> substitution -> final answer.</li>
+      <li><strong>Verify once:</strong> cross-check with a related tool before final rounding.</li>
     </ol>
 
-    <h2>Complete Right Triangle Calculator Directory by Goal</h2>
+    <h2>Choose the Right Calculator by Your Goal</h2>
+    <h3>If you need missing sides</h3>
     <ul>
-      {RIGHT_TRIANGLE_GROUPED_PAGES.map((page) => (
-        <li>
-          <a href={localizePath(locale, page.url)}>{page.h1}</a>: {page.intent}
-        </li>
-      ))}
+      <li><a href={localizePath(locale, '/right-triangle-side-calculator/')}>Right Triangle Side Calculator</a> for hypotenuse or missing leg.</li>
+      <li><a href={localizePath(locale, '/right-triangle-side-from-angle-calculator/')}>Right Triangle Side from Angle Calculator</a> for trig-based side solving.</li>
+      <li><a href={localizePath(locale, '/special-right-triangle-calculator/')}>Special Right Triangle Calculator</a> for 45-45-90 and 30-60-90 cases.</li>
     </ul>
 
-    <h2>Recommended Right Triangle Solving Workflow</h2>
-    <ol>
-      <li>Start with the calculator matching your known values, such as side-based or angle-based inputs.</li>
-      <li>Use grouped tool modes to avoid jumping across thin pages and keep solving in one focused workflow.</li>
-      <li>Verify with one related calculator (for example, side -> angle -> area) before finalizing results.</li>
-      <li>Apply final rounding only at the end for cleaner, more reliable geometry outputs.</li>
-    </ol>
-
-    <h2>Common Input Mistakes and How to Avoid Them</h2>
+    <h3>If you need angles or trig ratios</h3>
     <ul>
-      <li>Mixing units across sides and angles in the same calculation flow.</li>
-      <li>Using a formula mode that does not match what is actually known.</li>
-      <li>Entering angle values in the wrong format for trig-based calculators.</li>
-      <li>Skipping validity checks such as hypotenuse being the longest side.</li>
+      <li><a href={localizePath(locale, '/right-triangle-angle-calculator/')}>Right Triangle Angle Calculator</a> to find angle A or B.</li>
+      <li><a href={localizePath(locale, '/right-triangle-trig-ratios-calculator/')}>Trigonometric Ratios Calculator</a> for sin, cos, tan, sec, csc, and cot.</li>
     </ul>
 
-    <h2>Why Use a Dedicated Right Triangle Solver Website</h2>
-    <p>
-      This platform is structured around user intent, not isolated formulas. That means you can complete a full
-      right triangle problem with fewer steps, better context, and stronger result verification through internal links.
-    </p>
-
-    <h2>Useful Pages Beyond the Calculators</h2>
+    <h3>If you need geometry properties</h3>
     <ul>
-      <li><a href={localizePath(locale, '/faqs/')}>FAQs</a> for quick answers and troubleshooting.</li>
-      <li><a href={localizePath(locale, '/library/')}>Library</a> for formula references and concept review.</li>
-      <li><a href={localizePath(locale, '/practice/')}>Practice</a> to train speed and accuracy.</li>
-      <li><a href={localizePath(locale, '/about-us/')}>About Us</a> and <a href={localizePath(locale, '/contact-us/')}>Contact Us</a> for support and trust signals.</li>
+      <li><a href={localizePath(locale, '/right-triangle-area-calculator/')}>Right Triangle Area Calculator</a> for multiple area methods.</li>
+      <li><a href={localizePath(locale, '/right-triangle-measurements-calculator/')}>Right Triangle Measurements Calculator</a> for perimeter and semiperimeter.</li>
+      <li><a href={localizePath(locale, '/right-triangle-altitude-calculator/')}>Right Triangle Altitude Calculator</a> for height relations.</li>
+      <li><a href={localizePath(locale, '/right-triangle-projection-calculator/')}>Right Triangle Projection Calculator</a> for segment and projection theorems.</li>
+      <li><a href={localizePath(locale, '/right-triangle-radius-calculator/')}>Right Triangle Radius Calculator</a> for inradius and circumradius.</li>
+    </ul>
+
+    <h2>Accuracy Checklist Before Final Answer</h2>
+    <ul>
+      <li>Keep units consistent across all side inputs.</li>
+      <li>Confirm the hypotenuse remains larger than both legs.</li>
+      <li>Match the angle mode correctly when using trigonometric tools.</li>
+      <li>Round only after the final computed value.</li>
+    </ul>
+
+    <h2>Helpful Pages Beyond Calculators</h2>
+    <ul>
+      <li><a href={localizePath(locale, '/faqs/')}>FAQs</a> for quick troubleshooting and usage questions.</li>
+      <li><a href={localizePath(locale, '/library/')}>Library</a> for formula explanations and concept revision.</li>
+      <li><a href={localizePath(locale, '/practice/')}>Practice</a> for drills and speed improvement.</li>
+      <li><a href={localizePath(locale, '/about-us/')}>About Us</a> and <a href={localizePath(locale, '/contact-us/')}>Contact Us</a> for support and trust details.</li>
       <li><a href={localizePath(locale, '/terms/')}>Terms</a> and <a href={localizePath(locale, '/privacy/')}>Privacy</a> for policy transparency.</li>
-    </ul>
-
-    <h2>How to Get More Accurate Results Every Time</h2>
-    <p>
-      Use consistent units, choose the mode that matches your known values, and cross-check with a second
-      related calculator when possible. This quickly catches input mistakes and improves confidence in the result.
-    </p>
-    <ul>
-      <li>Start with side or angle modes to establish a reliable base triangle.</li>
-      <li>Use area, altitude, projection, and radius pages for derived geometry checks.</li>
-      <li>Keep rounding to the final step so intermediate calculations stay stable.</li>
     </ul>
   </section>
 

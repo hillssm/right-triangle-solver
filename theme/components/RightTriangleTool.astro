@@ -394,47 +394,38 @@ const labelsJson = JSON.stringify(l);
       if (!cleanedLines.length) return [];
 
       const explanationParts: string[] = [];
+      const equationLines: string[] = [];
       let formula = '';
       let substitution = '';
       let answer = '';
 
       for (const line of cleanedLines) {
-        if (/^use\s+/i.test(line)) {
-          const useContent = line.replace(/^use\s+/i, '').trim();
-          if (!formula) {
-            formula = useContent;
-          } else if (!substitution) {
-            substitution = useContent;
-          } else {
-            explanationParts.push(line);
-          }
-          continue;
+        const normalizedLine = line.replace(/^use\s+/i, '').trim();
+        if (normalizedLine.includes('=')) {
+          equationLines.push(normalizedLine);
+        } else {
+          explanationParts.push(normalizedLine);
         }
-
-        if (!substitution && line.includes('=')) {
-          substitution = line;
-          continue;
-        }
-
-        explanationParts.push(line);
       }
 
-      if (!formula && substitution.includes('=')) {
-        const parts = substitution.split('=').map((part) => part.trim()).filter(Boolean);
-        if (parts.length >= 2) {
-          formula = `${parts[0]} = ${parts[1]}`;
-        }
+      if (equationLines.length > 0) {
+        formula = equationLines[0];
+        substitution = equationLines[equationLines.length - 1];
       }
 
       if (substitution) {
         const split = splitSubstitutionAndAnswer(substitution);
-        substitution = split.substitution;
+        if (split.answer) answer = split.answer;
+      } else if (formula) {
+        const split = splitSubstitutionAndAnswer(formula);
         if (split.answer) answer = split.answer;
       }
 
       const flow: Array<{ label: string; value: string }> = [];
       if (formula) flow.push({ label: 'Formula', value: formula });
-      if (substitution) flow.push({ label: 'Substitution', value: substitution });
+      if (substitution && substitution !== formula) {
+        flow.push({ label: 'Substitution', value: substitution });
+      }
       if (answer) flow.push({ label: 'Answer', value: answer });
 
       const explanation = explanationParts.join(' ').trim();

@@ -7,6 +7,7 @@ import {
 } from 'src/data/rightTriangleGroupedPages';
 import { GROUPED_PAGE_FAQS } from 'src/data/groupedPageFaqs';
 import FormulaCalculator from 'theme/components/FormulaCalculator.astro';
+import Faq from 'theme/components/Faq.astro';
 import { localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
@@ -368,15 +369,11 @@ const groupedPageFaqSchema = groupedPage && groupedPageFaqItems.length > 0
         </ul>
       </section>
 
-      <section class="mt-8 section-shell prose-shell">
-        <h2>Frequently Asked Questions</h2>
-        {groupedPageFaqItems.map((item) => (
-          <div>
-            <h3>{item.question}</h3>
-            <p>{item.answer}</p>
-          </div>
-        ))}
-      </section>
+      {groupedPageFaqItems.length > 0 && (
+        <div class="mt-8">
+          <Faq heading="Frequently Asked Questions" items={groupedPageFaqItems} />
+        </div>
+      )}
 
       <section class="mt-8 section-shell">
         <h2 class="text-2xl font-semibold">{uiRelated}</h2>

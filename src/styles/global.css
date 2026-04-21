@@ -573,6 +573,15 @@
     letter-spacing: 0.01em;
   }
 
+  .math-radical-content {
+    display: inline-block;
+    border-top: 1.5px solid currentColor;
+    margin-left: 0.08em;
+    padding: 0 0.14em 0.02em 0.12em;
+    line-height: 0.95;
+    vertical-align: baseline;
+  }
+
   /* Don't italicize numbers, parentheses, or operators in textbook style */
   .math-textbook :not(i):not(span.var) {
     /* This is a bit complex in CSS without specific markup, so I'll just use the class on the container and guide the user. */

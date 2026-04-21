@@ -1,4 +1,4 @@
----
+﻿---
 import type { RightTriangleFormula } from 'src/data/rightTriangleFormulas';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import katex from 'katex';
@@ -69,7 +69,7 @@ const scriptTranslations = {
   calculationComplete: "Calculation complete.", // I should add these to the bundle too
   unableToCalculate: "Unable to calculate.",
   fixErrors: "Please fix the errors in the fields above.",
-  angleSuffix: "Ã‚Â°",
+  angleSuffix: "\u00B0",
   sqUnits: (units.m ? ` ${units.m}<sup>2</sup>` : ' sq units'),
   resultLabel: pick(solver, 'resultLabel', 'Result'),
   solutionSteps: pick(solver, 'solutionSteps', 'Solution Steps'),
@@ -282,7 +282,7 @@ const scriptTranslations = {
             return {
               result: r,
               steps: [
-                `**Solve for Hypotenuse c**<br/>The longest side is found by summing the squares of both legs.<br/>Use c = Ã¢Ë†Å¡(aÃ‚Â² + bÃ‚Â²)<br/>c = Ã¢Ë†Å¡(${v.a}Ã‚Â² + ${v.b}Ã‚Â²) = Ã¢Ë†Å¡(${format(v.a ** 2)} + ${format(v.b ** 2)}) = ${format(r)}`
+                `**Solve for Hypotenuse c**<br/>The longest side is found by summing the squares of both legs.<br/>Use c = \u221A(a^2 + b^2)<br/>c = \u221A(${v.a}^2 + ${v.b}^2) = \u221A(${format(v.a ** 2)} + ${format(v.b ** 2)}) = ${format(r)}`
               ]
             };
           }
@@ -293,7 +293,7 @@ const scriptTranslations = {
             return {
               result: r,
               steps: [
-                `**Solve for Leg b**<br/>Subtract the leg's square from the hypotenuse's square.<br/>Use b = Ã¢Ë†Å¡(cÃ‚Â² - aÃ‚Â²)<br/>b = Ã¢Ë†Å¡(${v.c}Ã‚Â² - ${v.a}Ã‚Â²) = Ã¢Ë†Å¡(${format(v.c ** 2)} - ${format(v.a ** 2)}) = ${format(r)}`
+                `**Solve for Leg b**<br/>Subtract the leg's square from the hypotenuse's square.<br/>Use b = \u221A(c^2 - a^2)<br/>b = \u221A(${v.c}^2 - ${v.a}^2) = \u221A(${format(v.c ** 2)} - ${format(v.a ** 2)}) = ${format(r)}`
               ]
             };
           }
@@ -304,7 +304,7 @@ const scriptTranslations = {
             return {
               result: r,
               steps: [
-                `**Solve for Leg a**<br/>Derive the leg by subtracting squares from the hypotenuse.<br/>Use a = Ã¢Ë†Å¡(cÃ‚Â² - bÃ‚Â²)<br/>a = Ã¢Ë†Å¡(${v.c}Ã‚Â² - ${v.b}Ã‚Â²) = Ã¢Ë†Å¡(${format(v.c ** 2)} - ${format(v.b ** 2)}) = ${format(r)}`
+                `**Solve for Leg a**<br/>Derive the leg by subtracting squares from the hypotenuse.<br/>Use a = \u221A(c^2 - b^2)<br/>a = \u221A(${v.c}^2 - ${v.b}^2) = \u221A(${format(v.c ** 2)} - ${format(v.b ** 2)}) = ${format(r)}`
               ]
             };
           }
@@ -314,7 +314,7 @@ const scriptTranslations = {
             return {
               result: r,
               steps: [
-                `**Calculate Area**<br/>Multiply base and height, then divide by two for the inner space.<br/>Use Area = (a Ãƒâ€” b) / 2<br/>Area = (${v.a} Ãƒâ€” ${v.b}) / 2 = ${format(v.a * v.b)} / 2 = ${format(r)}`
+                `**Calculate Area**<br/>Multiply base and height, then divide by two for the inner space.<br/>Use Area = (a \u00D7 b) / 2<br/>Area = (${v.a} \u00D7 ${v.b}) / 2 = ${format(v.a * v.b)} / 2 = ${format(r)}`
               ]
             };
           }
@@ -376,7 +376,7 @@ const scriptTranslations = {
             return {
               result: r,
               steps: [
-                `**Find Angle A from Sine**<br/>Apply the inverse sine to find the angle in degrees.<br/>Use A = sinÃ¢ÂÂ»Ã‚Â¹(a / c)<br/>A = sinÃ¢ÂÂ»Ã‚Â¹(${v.a} / ${v.c}) = sinÃ¢ÂÂ»Ã‚Â¹(${format(v.a / v.c)}) = ${format(r)}Ã‚Â°`
+                `**Find Angle A from Sine**<br/>Apply the inverse sine to find the angle in degrees.<br/>Use A = sin^-1(a / c)<br/>A = sin^-1(${v.a} / ${v.c}) = sin^-1(${format(v.a / v.c)}) = ${format(r)}\u00B0`
               ]
             };
           }
@@ -386,7 +386,7 @@ const scriptTranslations = {
             return {
               result: r,
               steps: [
-                `**Find Angle A from Cosine**<br/>Apply the inverse cosine to find the angle in degrees.<br/>Use A = cosÃ¢ÂÂ»Ã‚Â¹(b / c)<br/>A = cosÃ¢ÂÂ»Ã‚Â¹(${v.b} / ${v.c}) = cosÃ¢ÂÂ»Ã‚Â¹(${format(v.b / v.c)}) = ${format(r)}Ã‚Â°`
+                `**Find Angle A from Cosine**<br/>Apply the inverse cosine to find the angle in degrees.<br/>Use A = cos^-1(b / c)<br/>A = cos^-1(${v.b} / ${v.c}) = cos^-1(${format(v.b / v.c)}) = ${format(r)}\u00B0`
               ]
             };
           }
@@ -396,7 +396,7 @@ const scriptTranslations = {
             return {
               result: r,
               steps: [
-                `**Find Angle A from Tangent**<br/>Apply the inverse tangent to find the angle in degrees.<br/>Use A = tanÃ¢ÂÂ»Ã‚Â¹(a / b)<br/>A = tanÃ¢ÂÂ»Ã‚Â¹(${v.a} / ${v.b}) = tanÃ¢ÂÂ»Ã‚Â¹(${format(v.a / v.b)}) = ${format(r)}Ã‚Â°`
+                `**Find Angle A from Tangent**<br/>Apply the inverse tangent to find the angle in degrees.<br/>Use A = tan^-1(a / b)<br/>A = tan^-1(${v.a} / ${v.b}) = tan^-1(${format(v.a / v.b)}) = ${format(r)}\u00B0`
               ]
             };
           }
@@ -408,7 +408,7 @@ const scriptTranslations = {
             return {
               result: r,
               steps: [
-                `**Find Altitude h**<br/>Calculate the height to the hypotenuse using the leg product ratio.<br/>Use h = (a Ãƒâ€” b) / c<br/>h = (${a} Ãƒâ€” ${b}) / ${format(c)} = ${format(a * b)} / ${format(c)} = ${format(r)}`
+                `**Find Altitude h**<br/>Calculate the height to the hypotenuse using the leg product ratio.<br/>Use h = (a \u00D7 b) / c<br/>h = (${a} \u00D7 ${b}) / ${format(c)} = ${format(a * b)} / ${format(c)} = ${format(r)}`
               ]
             };
           }
@@ -418,7 +418,7 @@ const scriptTranslations = {
             return {
               result: r,
               steps: [
-                `**Find Projection p**<br/>Calculate the segment of the hypotenuse adjacent to leg a.<br/>Use p = aÃ‚Â² / c<br/>p = ${v.a}Ã‚Â² / ${v.c} = ${format(v.a ** 2)} / ${v.c} = ${format(r)}`
+                `**Find Projection p**<br/>Calculate the segment of the hypotenuse adjacent to leg a.<br/>Use p = a^2 / c<br/>p = ${v.a}^2 / ${v.c} = ${format(v.a ** 2)} / ${v.c} = ${format(r)}`
               ]
             };
           }
@@ -428,7 +428,7 @@ const scriptTranslations = {
             return {
               result: r,
               steps: [
-                `**Find Projection q**<br/>Calculate the segment of the hypotenuse adjacent to leg b.<br/>Use q = bÃ‚Â² / c<br/>q = ${v.b}Ã‚Â² / ${v.c} = ${format(v.b ** 2)} / ${v.c} = ${format(r)}`
+                `**Find Projection q**<br/>Calculate the segment of the hypotenuse adjacent to leg b.<br/>Use q = b^2 / c<br/>q = ${v.b}^2 / ${v.c} = ${format(v.b ** 2)} / ${v.c} = ${format(r)}`
               ]
             };
           }
@@ -452,29 +452,29 @@ const scriptTranslations = {
               ]
             };
           }
-          case 'cotangent': { requirePositive(v.a, v.b); const r = v.b/v.a; return { result: r, steps: [`**Calculate cot(A)**<br/>The ratio of adjacent side to opposite side.<br/>Use cot(A) = b / a<br/>cot(A) = ${v.b} / ${v.a} = ${format(r)}`] }; }
-          case 'secant': { requirePositive(v.b, v.c); const r = v.c/v.b; return { result: r, steps: [`**Calculate sec(A)**<br/>The ratio of hypotenuse to adjacent side.<br/>Use sec(A) = c / b<br/>sec(A) = ${v.c} / ${v.b} = ${format(r)}`] }; }
-          case 'cosecant': { requirePositive(v.a, v.c); const r = v.c/v.a; return { result: r, steps: [`**Calculate csc(A)**<br/>The ratio of hypotenuse to opposite side.<br/>Use csc(A) = c / a<br/>csc(A) = ${v.c} / ${v.a} = ${format(r)}`] }; }
-          case 'leg_from_hc_sin': { requirePositive(v.c, v.A); const r = v.c * Math.sin(rad(v.A)); return { result: r, steps: [`**Solve for Leg a**<br/>Multiply hypotenuse by sine of the opposite angle.<br/>Use a = c Ãƒâ€” sin(A)<br/>a = ${v.c} Ãƒâ€” sin(${v.A}Ã‚Â°) = ${format(r)}`] }; }
-          case 'leg_from_hc_cos': { requirePositive(v.c, v.A); const r = v.c * Math.cos(rad(v.A)); return { result: r, steps: [`**Solve for Leg b**<br/>Multiply hypotenuse by cosine of the adjacent angle.<br/>Use b = c Ãƒâ€” cos(A)<br/>b = ${v.c} Ãƒâ€” cos(${v.A}Ã‚Â°) = ${format(r)}`] }; }
-          case 'leg_from_leg_tan': { requirePositive(v.b, v.A); const r = v.b * Math.tan(rad(v.A)); return { result: r, steps: [`**Solve for Leg a**<br/>Scale the adjacent leg by the tangent of angle A.<br/>Use a = b Ãƒâ€” tan(A)<br/>a = ${v.b} Ãƒâ€” tan(${v.A}Ã‚Â°) = ${format(r)}`] }; }
-          case 'leg_from_leg_tan_div': { requirePositive(v.a, v.A); const r = v.a / Math.tan(rad(v.A)); return { result: r, steps: [`**Solve for Leg b**<br/>Divide the opposite leg by the tangent of angle A.<br/>Use b = a / tan(A)<br/>b = ${v.a} / tan(${v.A}Ã‚Â°) = ${format(r)}`] }; }
-          case 'angle_b_from_a': { requirePositive(v.A); const r = 90 - v.A; return { result: r, steps: [`**Find Angle B**<br/>Subtract angle A from the triangle's 90-degree constant.<br/>Use B = 90Ã‚Â° - A<br/>B = 90Ã‚Â° - ${v.A}Ã‚Â° = ${format(r)}Ã‚Â°`] }; }
-          case 'angle_a_from_b': { requirePositive(v.B); const r = 90 - v.B; return { result: r, steps: [`**Find Angle A**<br/>Subtract angle B from the triangle's 90-degree constant.<br/>Use A = 90Ã‚Â° - B<br/>A = 90Ã‚Â° - ${v.B}Ã‚Â° = ${format(r)}Ã‚Â°`] }; }
-          case 'area_sin_a': { requirePositive(v.b, v.c, v.A); const r = 0.5 * v.b * v.c * Math.sin(rad(v.A)); return { result: r, steps: [`**Calculate Area**<br/>Find the area using two sides and the included angle.<br/>Use Area = 0.5 Ãƒâ€” b Ãƒâ€” c Ãƒâ€” sin(A)<br/>Area = 0.5 Ãƒâ€” ${v.b} Ãƒâ€” ${v.c} Ãƒâ€” sin(${v.A}Ã‚Â°) = ${format(r)}`] }; }
-          case 'area_sin_b': { requirePositive(v.a, v.c, v.B); const r = 0.5 * v.a * v.c * Math.sin(rad(v.B)); return { result: r, steps: [`**Calculate Area**<br/>Find the area using two sides and the included angle.<br/>Use Area = 0.5 Ãƒâ€” a Ãƒâ€” c Ãƒâ€” sin(B)<br/>Area = 0.5 Ãƒâ€” ${v.a} Ãƒâ€” ${v.c} Ãƒâ€” sin(${v.B}Ã‚Â°) = ${format(r)}`] }; }
-          case 'area_rs': { requirePositive(v.r, v.s); const r = v.r * v.s; return { result: r, steps: [`**Calculate Area**<br/>Derive the area from inradius and semiperimeter.<br/>Use Area = r Ãƒâ€” s<br/>Area = ${v.r} Ãƒâ€” ${v.s} = ${format(r)}`] }; }
-          case 'area_ch': { requirePositive(v.c, v.h); const r = 0.5 * v.c * v.h; return { result: r, steps: [`**Calculate Area**<br/>Standard base-height formula applied to the hypotenuse.<br/>Use Area = 0.5 Ãƒâ€” c Ãƒâ€” h<br/>Area = 0.5 Ãƒâ€” ${v.c} Ãƒâ€” ${v.h} = ${format(r)}`] }; }
-          case 'altitude_pq': { requirePositive(v.p, v.q); const r = Math.sqrt(v.p * v.q); return { result: r, steps: [`**Find Altitude h**<br/>The geometric mean of the hypotenuse segments.<br/>Use h = Ã¢Ë†Å¡(p Ãƒâ€” q)<br/>h = Ã¢Ë†Å¡(${v.p} Ãƒâ€” ${v.q}) = Ã¢Ë†Å¡(${format(v.p * v.q)}) = ${format(r)}`] }; }
-          case 'leg_from_cp': { requirePositive(v.c, v.p); const r = Math.sqrt(v.c * v.p); return { result: r, steps: [`**Solve for Leg a**<br/>Calculate leg a from its projection onto the hypotenuse.<br/>Use a = Ã¢Ë†Å¡(c Ãƒâ€” p)<br/>a = Ã¢Ë†Å¡(${v.c} Ãƒâ€” ${v.p}) = Ã¢Ë†Å¡(${format(v.c * v.p)}) = ${format(r)}`] }; }
-          case 'leg_from_cq': { requirePositive(v.c, v.q); const r = Math.sqrt(v.c * v.q); return { result: r, steps: [`**Solve for Leg b**<br/>Calculate leg b from its projection onto the hypotenuse.<br/>Use b = Ã¢Ë†Å¡(c Ãƒâ€” q)<br/>b = Ã¢Ë†Å¡(${v.c} Ãƒâ€” ${v.q}) = Ã¢Ë†Å¡(${format(v.c * v.q)}) = ${format(r)}`] }; }
+          case 'cotangent': { requirePositive(v.a, v.b); const r = v.b / v.a; return { result: r, steps: [`**Calculate cot(A)**<br/>The ratio of adjacent side to opposite side.<br/>Use cot(A) = b / a<br/>cot(A) = ${v.b} / ${v.a} = ${format(r)}`] }; }
+          case 'secant': { requirePositive(v.b, v.c); const r = v.c / v.b; return { result: r, steps: [`**Calculate sec(A)**<br/>The ratio of hypotenuse to adjacent side.<br/>Use sec(A) = c / b<br/>sec(A) = ${v.c} / ${v.b} = ${format(r)}`] }; }
+          case 'cosecant': { requirePositive(v.a, v.c); const r = v.c / v.a; return { result: r, steps: [`**Calculate csc(A)**<br/>The ratio of hypotenuse to opposite side.<br/>Use csc(A) = c / a<br/>csc(A) = ${v.c} / ${v.a} = ${format(r)}`] }; }
+          case 'leg_from_hc_sin': { requirePositive(v.c, v.A); const r = v.c * Math.sin(rad(v.A)); return { result: r, steps: [`**Solve for Leg a**<br/>Multiply hypotenuse by sine of the opposite angle.<br/>Use a = c \u00D7 sin(A)<br/>a = ${v.c} \u00D7 sin(${v.A}\u00B0) = ${format(r)}`] }; }
+          case 'leg_from_hc_cos': { requirePositive(v.c, v.A); const r = v.c * Math.cos(rad(v.A)); return { result: r, steps: [`**Solve for Leg b**<br/>Multiply hypotenuse by cosine of the adjacent angle.<br/>Use b = c \u00D7 cos(A)<br/>b = ${v.c} \u00D7 cos(${v.A}\u00B0) = ${format(r)}`] }; }
+          case 'leg_from_leg_tan': { requirePositive(v.b, v.A); const r = v.b * Math.tan(rad(v.A)); return { result: r, steps: [`**Solve for Leg a**<br/>Scale the adjacent leg by the tangent of angle A.<br/>Use a = b \u00D7 tan(A)<br/>a = ${v.b} \u00D7 tan(${v.A}\u00B0) = ${format(r)}`] }; }
+          case 'leg_from_leg_tan_div': { requirePositive(v.a, v.A); const r = v.a / Math.tan(rad(v.A)); return { result: r, steps: [`**Solve for Leg b**<br/>Divide the opposite leg by the tangent of angle A.<br/>Use b = a / tan(A)<br/>b = ${v.a} / tan(${v.A}\u00B0) = ${format(r)}`] }; }
+          case 'angle_b_from_a': { requirePositive(v.A); const r = 90 - v.A; return { result: r, steps: [`**Find Angle B**<br/>Subtract angle A from the triangle's 90-degree constant.<br/>Use B = 90\u00B0 - A<br/>B = 90\u00B0 - ${v.A}\u00B0 = ${format(r)}\u00B0`] }; }
+          case 'angle_a_from_b': { requirePositive(v.B); const r = 90 - v.B; return { result: r, steps: [`**Find Angle A**<br/>Subtract angle B from the triangle's 90-degree constant.<br/>Use A = 90\u00B0 - B<br/>A = 90\u00B0 - ${v.B}\u00B0 = ${format(r)}\u00B0`] }; }
+          case 'area_sin_a': { requirePositive(v.b, v.c, v.A); const r = 0.5 * v.b * v.c * Math.sin(rad(v.A)); return { result: r, steps: [`**Calculate Area**<br/>Find the area using two sides and the included angle.<br/>Use Area = 0.5 \u00D7 b \u00D7 c \u00D7 sin(A)<br/>Area = 0.5 \u00D7 ${v.b} \u00D7 ${v.c} \u00D7 sin(${v.A}\u00B0) = ${format(r)}`] }; }
+          case 'area_sin_b': { requirePositive(v.a, v.c, v.B); const r = 0.5 * v.a * v.c * Math.sin(rad(v.B)); return { result: r, steps: [`**Calculate Area**<br/>Find the area using two sides and the included angle.<br/>Use Area = 0.5 \u00D7 a \u00D7 c \u00D7 sin(B)<br/>Area = 0.5 \u00D7 ${v.a} \u00D7 ${v.c} \u00D7 sin(${v.B}\u00B0) = ${format(r)}`] }; }
+          case 'area_rs': { requirePositive(v.r, v.s); const r = v.r * v.s; return { result: r, steps: [`**Calculate Area**<br/>Derive the area from inradius and semiperimeter.<br/>Use Area = r \u00D7 s<br/>Area = ${v.r} \u00D7 ${v.s} = ${format(r)}`] }; }
+          case 'area_ch': { requirePositive(v.c, v.h); const r = 0.5 * v.c * v.h; return { result: r, steps: [`**Calculate Area**<br/>Standard base-height formula applied to the hypotenuse.<br/>Use Area = 0.5 \u00D7 c \u00D7 h<br/>Area = 0.5 \u00D7 ${v.c} \u00D7 ${v.h} = ${format(r)}`] }; }
+          case 'altitude_pq': { requirePositive(v.p, v.q); const r = Math.sqrt(v.p * v.q); return { result: r, steps: [`**Find Altitude h**<br/>The geometric mean of the hypotenuse segments.<br/>Use h = \u221A(p \u00D7 q)<br/>h = \u221A(${v.p} \u00D7 ${v.q}) = \u221A(${format(v.p * v.q)}) = ${format(r)}`] }; }
+          case 'leg_from_cp': { requirePositive(v.c, v.p); const r = Math.sqrt(v.c * v.p); return { result: r, steps: [`**Solve for Leg a**<br/>Calculate leg a from its projection onto the hypotenuse.<br/>Use a = \u221A(c \u00D7 p)<br/>a = \u221A(${v.c} \u00D7 ${v.p}) = \u221A(${format(v.c * v.p)}) = ${format(r)}`] }; }
+          case 'leg_from_cq': { requirePositive(v.c, v.q); const r = Math.sqrt(v.c * v.q); return { result: r, steps: [`**Solve for Leg b**<br/>Calculate leg b from its projection onto the hypotenuse.<br/>Use b = \u221A(c \u00D7 q)<br/>b = \u221A(${v.c} \u00D7 ${v.q}) = \u221A(${format(v.c * v.q)}) = ${format(r)}`] }; }
           case 'hyp_from_pq': { requirePositive(v.p, v.q); const r = v.p + v.q; return { result: r, steps: [`**Solve for Hypotenuse c**<br/>Sum the two segments of the hypotenuse.<br/>Use c = p + q<br/>c = ${v.p} + ${v.q} = ${format(r)}`] }; }
-          case 'identity_cos_from_sin': { requirePositive(v.sinA); const r = Math.sqrt(1 - (v.sinA * v.sinA)); return { result: r, steps: [`**Calculate cos(A)**<br/>Derive cosine from the sine value using the Pythagorean identity.<br/>Use cos(A) = Ã¢Ë†Å¡(1 - sinÃ‚Â²(A))<br/>cos(A) = Ã¢Ë†Å¡(1 - ${v.sinA}Ã‚Â²) = ${format(r)}`] }; }
+          case 'identity_cos_from_sin': { requirePositive(v.sinA); const r = Math.sqrt(1 - (v.sinA * v.sinA)); return { result: r, steps: [`**Calculate cos(A)**<br/>Derive cosine from the sine value using the Pythagorean identity.<br/>Use cos(A) = \u221A(1 - sin^2(A))<br/>cos(A) = \u221A(1 - ${v.sinA}^2) = ${format(r)}`] }; }
           case 'tan_from_sin_cos': { requirePositive(v.sinA, v.cosA); const r = v.sinA / v.cosA; return { result: r, steps: [`**Calculate tan(A)**<br/>Determine tangent using the fundamental sine-cosine ratio.<br/>Use tan(A) = sin(A) / cos(A)<br/>tan(A) = ${v.sinA} / ${v.cosA} = ${format(r)}`] }; }
-          case 'c_from_a_45': { requirePositive(v.a); const r = v.a * Math.SQRT2; return { result: r, steps: [`**Solve for Hypotenuse c**<br/>In a special 45-45-90 triangle, multiply leg by Ã¢Ë†Å¡2.<br/>Use c = a Ãƒâ€” Ã¢Ë†Å¡2<br/>c = ${v.a} Ãƒâ€” Ã¢Ë†Å¡2 = ${format(r)}`] }; }
-          case 'a_from_c_45': { requirePositive(v.c); const r = v.c / Math.SQRT2; return { result: r, steps: [`**Solve for Leg a**<br/>In a special 45-45-90 triangle, divide hypotenuse by Ã¢Ë†Å¡2.<br/>Use a = c / Ã¢Ë†Å¡2<br/>a = ${v.c} / Ã¢Ë†Å¡2 = ${format(r)}`] }; }
-          case 'long_from_short_30': { requirePositive(v.a); const r = v.a * Math.sqrt(3); return { result: r, steps: [`**Solve for Long Leg b**<br/>In a 30-60-90 triangle, the long leg is short leg Ãƒâ€” Ã¢Ë†Å¡3.<br/>Use b = a Ãƒâ€” Ã¢Ë†Å¡3<br/>b = ${v.a} Ãƒâ€” Ã¢Ë†Å¡3 = ${format(r)}`] }; }
-          case 'c_from_a_30': { requirePositive(v.a); const r = v.a * 2; return { result: r, steps: [`**Solve for Hypotenuse c**<br/>In a 30-60-90 triangle, the hypotenuse is double the short leg.<br/>Use c = 2 Ãƒâ€” a<br/>c = 2 Ãƒâ€” ${v.a} = ${v.a * 2}`] }; }
+          case 'c_from_a_45': { requirePositive(v.a); const r = v.a * Math.SQRT2; return { result: r, steps: [`**Solve for Hypotenuse c**<br/>In a special 45-45-90 triangle, multiply leg by \u221A2.<br/>Use c = a \u00D7 \u221A2<br/>c = ${v.a} \u00D7 \u221A2 = ${format(r)}`] }; }
+          case 'a_from_c_45': { requirePositive(v.c); const r = v.c / Math.SQRT2; return { result: r, steps: [`**Solve for Leg a**<br/>In a special 45-45-90 triangle, divide hypotenuse by \u221A2.<br/>Use a = c / \u221A2<br/>a = ${v.c} / \u221A2 = ${format(r)}`] }; }
+          case 'long_from_short_30': { requirePositive(v.a); const r = v.a * Math.sqrt(3); return { result: r, steps: [`**Solve for Long Leg b**<br/>In a 30-60-90 triangle, the long leg is short leg \u00D7 \u221A3.<br/>Use b = a \u00D7 \u221A3<br/>b = ${v.a} \u00D7 \u221A3 = ${format(r)}`] }; }
+          case 'c_from_a_30': { requirePositive(v.a); const r = v.a * 2; return { result: r, steps: [`**Solve for Hypotenuse c**<br/>In a 30-60-90 triangle, the hypotenuse is double the short leg.<br/>Use c = 2 \u00D7 a<br/>c = 2 \u00D7 ${v.a} = ${format(r)}`] }; }
           default:
             throw new Error(`Calculator type '${kind}' is not configured.`);
         }
@@ -578,7 +578,7 @@ const scriptTranslations = {
           const key = el.getAttribute('data-calc-svg-label');
           if (map[key] !== undefined) {
             let u = outputUnit ? ` ${outputUnit}` : '';
-            if (key === 'A' || key === 'B') u = 'Ã‚Â°';
+            if (key === 'A' || key === 'B') u = '\u00B0';
             if (outKey === key) {
               el.textContent = `${key} = ${format(map[key])}${u}`;
               el.setAttribute('fill', '#f1c97d');
@@ -603,14 +603,49 @@ const scriptTranslations = {
         resultWrap.classList.remove('hidden');
 
         const { result, steps } = resultData;
+        const applyRootBars = (value) => {
+          let output = '';
+          let cursor = 0;
+
+          while (cursor < value.length) {
+            if (value[cursor] === '\u221A' && value[cursor + 1] === '(') {
+              let depth = 0;
+              let end = cursor + 1;
+
+              for (; end < value.length; end++) {
+                const char = value[end];
+                if (char === '(') depth += 1;
+                if (char === ')') {
+                  depth -= 1;
+                  if (depth === 0) break;
+                }
+              }
+
+              if (depth === 0 && end < value.length) {
+                const inner = applyRootBars(value.slice(cursor + 2, end));
+                output += '&#8730;<span class="math-radical-content">' + inner + '</span>';
+                cursor = end + 1;
+                continue;
+              }
+            }
+
+            output += value[cursor];
+            cursor += 1;
+          }
+
+          return output;
+        };
+
         const formatStepText = (raw) =>
-          String(raw)
-            .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-            .replace(/([a-zA-Z])(\d+)/g, '<i>$1</i><sup>$2</sup>')
-            .replace(/\^(\d+)/g, '<sup>$1</sup>')
-            .replace(/²|Â²/g, '<sup>2</sup>')
-            .replace(/³|Â³/g, '<sup>3</sup>')
-            .replace(/(^|[^a-zA-Z<>])([a-zA-Z])(?![a-zA-Z<>])/g, '$1<i>$2</i>');
+          applyRootBars(
+            String(raw)
+              .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+              .replace(/([a-zA-Z])(\d+)/g, '<i>$1</i><sup>$2</sup>')
+              .replace(/\^(\d+)/g, '<sup>$1</sup>')
+              .replace(/²/g, '<sup>2</sup>')
+              .replace(/³/g, '<sup>3</sup>')
+              .replace(/(^|[^a-zA-Z<>])([a-zA-Z])(?![a-zA-Z<>])/g, '$1<i>$2</i>')
+          );
 
         const splitSubstitutionAndAnswer = (line) => {
           const normalized = String(line).trim();
@@ -696,7 +731,7 @@ const scriptTranslations = {
           if (isRatio) return '';
 
           if (k.includes('angle')) {
-            return outputUnit ? ` ${outputUnit}` : (translations.angleSuffix || 'Ã‚Â°');
+            return outputUnit ? ` ${outputUnit}` : (translations.angleSuffix || '\u00B0');
           }
 
           if (k.includes('area')) {
@@ -708,7 +743,7 @@ const scriptTranslations = {
         };
 
         const outSuffix = getUnitSuffix();
-        valueEl.innerHTML = `${format(result)}${outSuffix.replace(/²|Â²/g, '<sup>2</sup>')}`;
+        valueEl.innerHTML = `${format(result)}${outSuffix.replace(/²/g, '<sup>2</sup>')}`;
 
         const fragment = document.createDocumentFragment();
         stepBlocks.forEach((block, index) => {
@@ -806,3 +841,6 @@ const scriptTranslations = {
     })();
   </script>
 </section>
+
+
+

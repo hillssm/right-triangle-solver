@@ -338,6 +338,39 @@ const labelsJson = JSON.stringify(l);
       return parsed;
     };
     const formatMathText = (raw: string): string => {
+      const applyRootBars = (value: string): string => {
+        let output = '';
+        let cursor = 0;
+
+        while (cursor < value.length) {
+          if (value[cursor] === '\u221A' && value[cursor + 1] === '(') {
+            let depth = 0;
+            let end = cursor + 1;
+
+            for (; end < value.length; end++) {
+              const char = value[end];
+              if (char === '(') depth += 1;
+              if (char === ')') {
+                depth -= 1;
+                if (depth === 0) break;
+              }
+            }
+
+            if (depth === 0 && end < value.length) {
+              const inner = applyRootBars(value.slice(cursor + 2, end));
+              output += '&#8730;<span class="math-radical-content">' + inner + '</span>';
+              cursor = end + 1;
+              continue;
+            }
+          }
+
+          output += value[cursor];
+          cursor += 1;
+        }
+
+        return output;
+      };
+
       let text = String(raw)
         .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
         .replace(/alpha|\u03B1/g, 'A')
@@ -354,7 +387,7 @@ const labelsJson = JSON.stringify(l);
 
       // Italicize single letters representing variables if not already wrapped
       text = text.replace(/(^|[^a-zA-Z<>])([a-zA-Z])(?![a-zA-Z<>])/g, '$1<i>$2</i>');
-      return text;
+      return applyRootBars(text);
     };
 
     const parseStepBlock = (rawStep: string): { title: string; lines: string[] } => {

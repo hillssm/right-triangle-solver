@@ -1,14 +1,12 @@
 ---
-import FormulaToolPage from 'theme/templates/FormulaToolPage.astro';
+import { GROUPED_PAGE_SLUGS } from 'src/data/rightTriangleGroupedPages';
 import { DEFAULT_LOCALE } from 'theme/i18n/locales';
-import { RIGHT_TRIANGLE_FORMULAS } from 'src/data/rightTriangleFormulas';
+import GroupedCalculatorPage from 'theme/templates/GroupedCalculatorPage.astro';
 
 export function getStaticPaths() {
-  return RIGHT_TRIANGLE_FORMULAS.map((formula) => ({
-    params: { slug: formula.slug }
-  }));
+  return GROUPED_PAGE_SLUGS.map((slug) => ({ params: { slug } }));
 }
 
 const { slug } = Astro.params;
 ---
-<FormulaToolPage locale={DEFAULT_LOCALE} slug={slug!!} />
+<GroupedCalculatorPage locale={DEFAULT_LOCALE} slug={slug ?? ''} />

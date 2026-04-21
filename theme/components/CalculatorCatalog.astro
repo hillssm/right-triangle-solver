@@ -1,269 +1,75 @@
 ---
-import { RIGHT_TRIANGLE_FORMULAS, type RightTriangleFormula } from 'src/data/rightTriangleFormulas';
+import {
+  RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE,
+  RIGHT_TRIANGLE_GROUPED_PAGES
+} from 'src/data/rightTriangleGroupedPages';
 import { localizePath, type Locale } from 'theme/i18n/locales';
-import { getTranslations } from 'theme/i18n/translations';
 
 interface Props {
   locale: Locale;
   heading?: string;
   description?: string;
   uiTools?: string;
-  uiInput?: string;
-  uiOutput?: string;
 }
 
 const {
   locale,
-  heading = 'All Formula Solvers',
-  description = 'Each tool has its own dedicated page with title-specific inputs and precision output.',
-  uiTools = 'Precision Tools',
-  uiInput = 'Input',
-  uiOutput = 'Output'
+  heading = 'Grouped Right Triangle Calculators',
+  description = 'Choose a broad calculator page and switch between related tool modes in one place.',
+  uiTools = 'Calculator Groups'
 } = Astro.props;
 
-const bundle = getTranslations(locale);
-const formulaTranslations = bundle.formulas || {};
-
-const formulasRoot = localizePath(locale, '/');
-
-type SideFeature = 'a' | 'b' | 'c';
-type DiagramFeature =
-  | SideFeature
-  | 'area'
-  | 'perimeter'
-  | 'semiperimeter'
-  | 'angleA'
-  | 'altitude'
-  | 'projectionP'
-  | 'projectionQ'
-  | 'inradius'
-  | 'circumradius';
-
-const CATEGORY_THEMES: Record<string, { hex: string; rgbaBase: string }> = {
-  'Trigonometry': { hex: '#cba6f7', rgbaBase: '203, 166, 247' },           // Purple
-  'Side Calculations': { hex: '#89b4fa', rgbaBase: '137, 180, 250' },      // Blue
-  'Area & Geometry': { hex: '#a6e3a1', rgbaBase: '166, 227, 161' },        // Green
-  'Advanced Relations': { hex: '#f38ba8', rgbaBase: '243, 139, 168' },     // Pink
-  'Special Triangles': { hex: '#f1c97d', rgbaBase: '241, 201, 125' },      // Gold
-  'Core Side Relations': { hex: '#f1c97d', rgbaBase: '241, 201, 125' }, // Gold fallback
-  'Area and Perimeter': { hex: '#a6e3a1', rgbaBase: '166, 227, 161' }, // Pastel Green fallback
-  'Trigonometric Ratios': { hex: '#89b4fa', rgbaBase: '137, 180, 250' }, // Soft Blue fallback
-  'Inverse Angle Formulas': { hex: '#cba6f7', rgbaBase: '203, 166, 247' }, // Soft Purple fallback
-  'Derived Geometry': { hex: '#f38ba8', rgbaBase: '243, 139, 168' }  // Soft Pink fallback
-};
-
-const outputFeatureByKind: Record<string, DiagramFeature> = {
-  pythagorean_c: 'c',
-  leg_from_ac: 'b',
-  leg_from_bc: 'a',
-  area_legs: 'area',
-  perimeter: 'perimeter',
-  semiperimeter: 'semiperimeter',
-  sine: 'angleA',
-  cosine: 'angleA',
-  tangent: 'angleA',
-  angle_asin: 'angleA',
-  angle_acos: 'angleA',
-  angle_atan: 'angleA',
-  altitude: 'altitude',
-  projection_p: 'projectionP',
-  projection_q: 'projectionQ',
-  inradius: 'inradius',
-  circumradius: 'circumradius',
-  cotangent: 'angleA',
-  secant: 'angleA',
-  cosecant: 'angleA',
-  leg_from_hc_sin: 'a',
-  leg_from_hc_cos: 'b',
-  leg_from_leg_tan: 'a',
-  leg_from_leg_tan_div: 'b',
-  angle_b_from_a: 'angleA',
-  angle_a_from_b: 'angleA',
-  area_sin_a: 'area',
-  area_sin_b: 'area',
-  area_rs: 'area',
-  area_ch: 'area',
-  altitude_pq: 'altitude',
-  leg_from_cp: 'a',
-  leg_from_cq: 'b',
-  hyp_from_pq: 'c',
-  identity_cos_from_sin: 'angleA',
-  tan_from_sin_cos: 'angleA',
-  c_from_a_45: 'c',
-  a_from_c_45: 'a',
-  long_from_short_30: 'b',
-  c_from_a_30: 'c'
-};
-
-const sideFeatureByFieldKey: Partial<Record<string, SideFeature>> = {
-  a: 'a',
-  b: 'b',
-  c: 'c'
-};
-
-const buildDiagramState = (formula: RightTriangleFormula) => {
-  const inputSides = new Set<SideFeature>();
-  if (formula.calculator) {
-    for (const field of formula.calculator.fields) {
-      const side = sideFeatureByFieldKey[field.key];
-      if (side) inputSides.add(side);
-    }
-  }
-  return {
-    inputSides,
-    outputFeature: formula.calculator ? outputFeatureByKind[formula.calculator.kind] : undefined
-  };
-};
-
-const strokeForSide = (side: SideFeature, inputSides: Set<SideFeature>, outputFeature: DiagramFeature | undefined, themeHex: string) => {
-  if (outputFeature === 'perimeter' || outputFeature === 'semiperimeter') return themeHex;
-  if (outputFeature === side) return themeHex;
-  if (inputSides.has(side)) return 'var(--color-secondary-fixed)';
-  return 'var(--color-outline-variant)';
-};
-
-const strokeWidthForSide = (side: SideFeature, inputSides: Set<SideFeature>, outputFeature: DiagramFeature | undefined) => {
-  if (outputFeature === 'perimeter' || outputFeature === 'semiperimeter') return 2.5;
-  if (outputFeature === side) return 2.5;
-  if (inputSides.has(side)) return 2;
-  return 1.5;
-};
-
-const tools = RIGHT_TRIANGLE_FORMULAS.filter(f => f.calculator != null);
+const hubHref = localizePath(locale, RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.url);
 ---
 
-<section class="relative mt-12 w-full overflow-hidden rounded-3xl border border-outline-variant/40 bg-surface-container px-6 py-12 shadow-[var(--shadow-luxury)] sm:px-12 sm:py-16" aria-labelledby="calculator-catalog-heading">
-  <!-- Luxury Ambient Glows -->
+<section
+  class="relative mt-12 w-full overflow-hidden rounded-3xl border border-outline-variant/40 bg-surface-container px-6 py-12 shadow-[var(--shadow-luxury)] sm:px-12 sm:py-16"
+  aria-labelledby="calculator-catalog-heading"
+>
   <div class="pointer-events-none absolute -left-32 -top-32 h-96 w-96 rounded-full bg-primary/10 blur-[100px]"></div>
   <div class="pointer-events-none absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-tertiary-fixed/10 blur-[120px]"></div>
 
   <div class="relative z-10 flex flex-col items-center text-center">
     <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 backdrop-blur-md">
       <span class="material-symbols-outlined text-[14px] text-primary">auto_awesome</span>
-      <span class="font-label text-xs uppercase tracking-[0.2em] text-primary">{tools.length} {uiTools}</span>
+      <span class="font-label text-xs uppercase tracking-[0.2em] text-primary">
+        {RIGHT_TRIANGLE_GROUPED_PAGES.length} {uiTools}
+      </span>
     </div>
-    
+
     <h2 id="calculator-catalog-heading" class="text-glow-primary font-headline text-3xl tracking-tight text-on-surface sm:text-4xl lg:text-5xl">
       {heading}
     </h2>
     <p class="mx-auto mt-4 max-w-2xl text-base text-on-surface-variant/80 sm:text-lg">
       {description}
     </p>
+    <a href={hubHref} class="btn-primary mt-6">Open {RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.h1}</a>
   </div>
 
-  <div class="relative z-10 mx-auto mt-14 grid max-w-7xl gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-    {tools.map((formula, index) => {
-      const calculator = formula.calculator!!;
-      const diagram = buildDiagramState(formula);
-      const isArea = diagram.outputFeature === 'area';
-      const theme = CATEGORY_THEMES[formula.category] || CATEGORY_THEMES['Core Side Relations'];
-      
-      const translation = (formulaTranslations[formula.slug] as any) || {};
-      const displayTitle = translation.title || formula.title;
-      const displayDescription = translation.description || formula.description;
-      
-      return (
-        <a
-          href={`${formulasRoot}${formula.slug}/`}
-          class="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-outline-variant/30 bg-surface-container-lowest/50 p-6 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:bg-surface-container-low"
-          style={`border-color: rgba(${theme.rgbaBase}, 0.15); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);`}
-          aria-label={`${displayTitle} tool`}
-          onmouseover={`this.style.borderColor='rgba(${theme.rgbaBase},0.5)'; this.style.boxShadow='0 10px 30px -10px rgba(${theme.rgbaBase},0.3)';`}
-          onmouseout={`this.style.borderColor='rgba(${theme.rgbaBase},0.15)'; this.style.boxShadow='0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)';`}
-        >
-          <!-- Unique Hover Highlight -->
-          <div class="pointer-events-none absolute -inset-px rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100" style={`background: radial-gradient(400px circle at 50% 100%, rgba(${theme.rgbaBase}, 0.14), transparent 45%);`}></div>
+  <div class="relative z-10 mx-auto mt-12 grid max-w-7xl gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    {RIGHT_TRIANGLE_GROUPED_PAGES.map((page, index) => (
+      <a
+        href={localizePath(locale, page.url)}
+        class="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-outline-variant/30 bg-surface-container-lowest/50 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:bg-surface-container-low"
+      >
+        <div>
+          <p class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">
+            Group {String(index + 1).padStart(2, '0')}
+          </p>
+          <h3 class="mt-3 text-lg font-semibold leading-snug text-on-surface group-hover:text-primary">
+            {page.h1}
+          </h3>
+          <p class="mt-2 text-sm text-on-surface-variant">{page.intent}</p>
+        </div>
 
-          <div class="relative z-10">
-            <div class="flex items-center justify-between">
-              <span class="font-label text-[10px] uppercase tracking-[0.2em] text-outline transition-colors" style={`color: rgba(${theme.rgbaBase}, 0.7);`}>
-                Tool {String(index + 1).padStart(2, '0')}
-              </span>
-              <span class="material-symbols-outlined text-[16px] text-outline/50 transition-colors group-hover:scale-110" style={`color: rgba(${theme.rgbaBase}, 0.9);`}>arrow_outward</span>
-            </div>
-            <h3 class="mt-4 break-words text-lg font-semibold leading-snug tracking-tight text-on-surface transition-colors" style={`--hover-color: ${theme.hex};`} onmouseover="this.style.color='var(--hover-color)'" onmouseout="this.style.color=''">
-              {displayTitle}
-            </h3>
-            <p class="mt-2 text-xs text-on-surface-variant line-clamp-2">{displayDescription}</p>
-          </div>
-
-          <div class="relative z-10 mt-6 flex h-36 w-full items-center justify-center overflow-hidden rounded-xl bg-[rgba(15,15,15,0.4)] shadow-inner transition-all duration-700 group-hover:scale-[1.03]" style={`border: 1px solid rgba(${theme.rgbaBase}, 0.2);`}>
-            <!-- Glowing background gradient behind SVG -->
-            <div class="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100" style={`background: radial-gradient(circle at center, rgba(${theme.rgbaBase},0.15) 0%, transparent 70%);`}></div>
-
-            <!-- Highly Interactive SVG Diagram -->
-            <svg class="relative z-10 h-24 w-full transition-transform duration-700 ease-out group-hover:scale-110" viewBox="0 0 112 96" role="img" aria-label={`${formula.title} diagram`}>
-              <defs>
-                <linearGradient id={`grad-${index}`} x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color={`rgba(${theme.rgbaBase}, ${isArea ? '0.3' : '0.04'})`} />
-                  <stop offset="100%" stop-color={`rgba(${theme.rgbaBase}, 0)`} />
-                </linearGradient>
-              </defs>
-
-              <!-- Base Triangle Fill -->
-              <path d="M 24 14 L 24 82 L 88 82 Z" fill={`url(#grad-${index})`} stroke="none"></path>
-
-              <!-- Conditionally rendered advanced features -->
-              {diagram.outputFeature === 'altitude' && (
-                <line x1="24" y1="82" x2="54" y2="46" stroke={theme.hex} stroke-width="2" stroke-dasharray="3 3"></line>
-              )}
-              {diagram.outputFeature === 'projectionP' && (
-                <line x1="24" y1="14" x2="54" y2="46" stroke={theme.hex} stroke-width="2.5"></line>
-              )}
-              {diagram.outputFeature === 'projectionQ' && (
-                <line x1="54" y1="46" x2="88" y2="82" stroke={theme.hex} stroke-width="2.5"></line>
-              )}
-              {diagram.outputFeature === 'inradius' && (
-                <circle cx="43" cy="63" r="13" fill="none" stroke={theme.hex} stroke-width="2"></circle>
-              )}
-              {diagram.outputFeature === 'circumradius' && (
-                <circle cx="56" cy="48" r="41" fill="none" stroke={theme.hex} stroke-width="1.5" stroke-dasharray="3 3"></circle>
-              )}
-              {diagram.outputFeature === 'angleA' && (
-                <path d="M 75 82 A 13 13 0 0 0 78 72" fill="none" stroke={theme.hex} stroke-width="2" stroke-linecap="round"></path>
-              )}
-
-              <!-- Base Triangle Sides -->
-              <line
-                x1="24" y1="14" x2="24" y2="82"
-                stroke={strokeForSide('a', diagram.inputSides, diagram.outputFeature, theme.hex)}
-                stroke-width={strokeWidthForSide('a', diagram.inputSides, diagram.outputFeature)}
-                stroke-linecap="round"
-              ></line>
-              <line
-                x1="24" y1="82" x2="88" y2="82"
-                stroke={strokeForSide('b', diagram.inputSides, diagram.outputFeature, theme.hex)}
-                stroke-width={strokeWidthForSide('b', diagram.inputSides, diagram.outputFeature)}
-                stroke-linecap="round"
-              ></line>
-              <line
-                x1="24" y1="14" x2="88" y2="82"
-                stroke={strokeForSide('c', diagram.inputSides, diagram.outputFeature, theme.hex)}
-                stroke-width={strokeWidthForSide('c', diagram.inputSides, diagram.outputFeature)}
-                stroke-linecap="round"
-              ></line>
-
-              <!-- Right angle marker -->
-              <path d="M 24 73 L 33 73 L 33 82" fill="none" stroke="var(--color-outline-variant)" stroke-width="1"></path>
-            </svg>
-          </div>
-
-          <div class="relative z-10 mt-6 flex flex-col gap-3">
-            <div class="flex items-center gap-2">
-              <span class="rounded border border-outline-variant/30 bg-surface-container-high px-2 py-1 font-mono text-[10px] text-on-surface-variant/80">{uiInput}</span>
-              <span class="text-xs font-medium text-on-surface">
-                {calculator.fields.map((f) => f.label.replace('Leg ', '').replace('Hypotenuse ', '').replace('Adjacent ', '').replace('Opposite ', '')).join(' + ')}
-              </span>
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="rounded border px-2 py-1 font-mono text-[10px]" style={`color: ${theme.hex}; border-color: rgba(${theme.rgbaBase},0.3); background: rgba(${theme.rgbaBase},0.1);`}>{uiOutput}</span>
-              <span class="text-xs font-medium" style={`color: ${theme.hex};`}>
-                {calculator.outputLabel}
-              </span>
-            </div>
-          </div>
-        </a>
-      );
-    })}
+        <div class="mt-5 space-y-2">
+          <p class="text-[11px] uppercase tracking-widest text-primary">
+            {page.includedToolIds.length} tool modes
+          </p>
+          <p class="text-xs text-outline">{page.h2[0]}</p>
+          <p class="text-xs text-outline">{page.h2[1]}</p>
+        </div>
+      </a>
+    ))}
   </div>
 </section>

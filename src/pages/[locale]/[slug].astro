@@ -1,6 +1,6 @@
 ---
-import FormulaToolPage from 'theme/templates/FormulaToolPage.astro';
-import { RIGHT_TRIANGLE_FORMULAS } from 'src/data/rightTriangleFormulas';
+import { GROUPED_PAGE_SLUGS } from 'src/data/rightTriangleGroupedPages';
+import GroupedCalculatorPage from 'theme/templates/GroupedCalculatorPage.astro';
 import {
   getLocaleFromParams,
   getLocaleStaticPaths
@@ -8,8 +8,8 @@ import {
 
 export function getStaticPaths() {
   return getLocaleStaticPaths().flatMap((item) =>
-    RIGHT_TRIANGLE_FORMULAS.map((formula) => ({
-      params: { ...item.params, slug: formula.slug }
+    GROUPED_PAGE_SLUGS.map((slug) => ({
+      params: { ...item.params, slug }
     }))
   );
 }
@@ -17,4 +17,4 @@ export function getStaticPaths() {
 const { locale: rawLocale, slug = '' } = Astro.params;
 const locale = getLocaleFromParams(rawLocale);
 ---
-<FormulaToolPage locale={locale} slug={slug} />
+<GroupedCalculatorPage locale={locale} slug={slug} />

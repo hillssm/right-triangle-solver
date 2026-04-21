@@ -1,18 +1,12 @@
 ---
-import { RIGHT_TRIANGLE_FORMULAS } from 'src/data/rightTriangleFormulas';
+import {
+  RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE,
+  RIGHT_TRIANGLE_GROUPED_PAGES
+} from 'src/data/rightTriangleGroupedPages';
 import { DEFAULT_LOCALE, localizePath } from 'theme/i18n/locales';
-import { getTranslations } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 
 const locale = DEFAULT_LOCALE;
-const bundle = getTranslations('en');
-const content = bundle.content as Record<string, any>;
-const sitemapText = content.sitemap ?? {};
-
-const PAGE_SIZE = 12;
-const totalTools = RIGHT_TRIANGLE_FORMULAS.length;
-const totalBlogPosts = 0; // Simplified for now
-const totalFaqs = 0;
 ---
 
 <BaseLayout
@@ -28,11 +22,21 @@ const totalFaqs = 0;
 
   <div class="grid gap-8 lg:grid-cols-2">
     <section class="section-shell">
-      <h2 class="text-xl font-bold mb-4">Calculators & Tools</h2>
+      <h2 class="text-xl font-bold mb-4">Grouped Calculators</h2>
       <ul class="space-y-2">
-        {RIGHT_TRIANGLE_FORMULAS.slice(0, 50).map(f => (
+        <li>
+          <a
+            href={localizePath(locale, RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.url)}
+            class="text-primary hover:underline"
+          >
+            {RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.h1}
+          </a>
+        </li>
+        {RIGHT_TRIANGLE_GROUPED_PAGES.map((page) => (
           <li>
-            <a href={localizePath(locale, `/${f.slug}/`)} class="text-primary hover:underline">{f.title}</a>
+            <a href={localizePath(locale, page.url)} class="text-primary hover:underline">
+              {page.h1}
+            </a>
           </li>
         ))}
       </ul>

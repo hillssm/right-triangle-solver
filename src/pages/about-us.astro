@@ -7,6 +7,57 @@ const locale = getLocaleFromParams(undefined);
 const bundle = getTranslations('en');
 const content = bundle.content as Record<string, any>;
 const about = content.about ?? {};
+
+const highlights = [
+  {
+    icon: 'bolt',
+    title: 'Fast by Design',
+    description: 'Get right-triangle answers instantly, without unnecessary steps.'
+  },
+  {
+    icon: 'target',
+    title: 'Accuracy Focused',
+    description: 'Built to support precise calculations and clear geometric reasoning.'
+  },
+  {
+    icon: 'menu_book',
+    title: 'Learning Friendly',
+    description: 'Step-by-step explanations help students understand, not just copy answers.'
+  },
+  {
+    icon: 'shield',
+    title: 'Privacy Respectful',
+    description: 'We keep the experience practical and lightweight with minimal friction.'
+  }
+];
+
+const audiences = [
+  {
+    icon: 'school',
+    title: 'Students',
+    description:
+      'Practice homework, double-check solutions, and build confidence with clear triangle logic.'
+  },
+  {
+    icon: 'co_present',
+    title: 'Teachers',
+    description:
+      'Use quick demonstrations in class and provide visual references for right-triangle methods.'
+  },
+  {
+    icon: 'engineering',
+    title: 'Professionals',
+    description:
+      'Validate geometry quickly during drafting, estimation, and day-to-day technical tasks.'
+  }
+];
+
+const principles = [
+  'Clarity over complexity: the interface should be simple enough for beginners and efficient for experts.',
+  'Useful defaults: common right-triangle workflows should work immediately with minimal setup.',
+  'Transparent math: formulas and steps should be visible, not hidden behind a black box.',
+  'Continuous improvement: we evolve the product based on real feedback from learners and practitioners.'
+];
 ---
 
 <BaseLayout
@@ -22,50 +73,76 @@ const about = content.about ?? {};
     </div>
     <p class="font-label text-xs uppercase tracking-widest text-outline">{pick(about, 'subHeading', 'Who we are')}</p>
     <h1 class="mt-3 text-3xl font-headline sm:text-4xl lg:text-5xl text-on-surface">{pick(about, 'heading', 'About Us')}</h1>
+    <p class="mx-auto mt-4 max-w-3xl text-sm leading-relaxed text-on-surface-variant">
+      Right Triangle Solver is built to make geometry easier to understand, faster to solve, and more practical in
+      real learning and work scenarios.
+    </p>
   </header>
 
-  <article class="section-shell prose-shell" style="animation: fade-in-up 0.5s cubic-bezier(0.22,1,0.36,1) both;">
+  <section class="section-shell mb-8">
+    <div class="flex items-center gap-3 mb-3">
+      <span class="material-symbols-outlined text-lg text-primary">auto_awesome</span>
+      <h2 class="text-xl font-headline text-on-surface">{pick(about, 'missionTitle', 'Our Mission')}</h2>
+    </div>
+    <p class="leading-relaxed text-on-surface-variant">
+      {pick(
+        about,
+        'missionBody',
+        'We built Right Triangle Solver to simplify geometry for students, teachers, and professionals.'
+      )}
+    </p>
 
-    <div class="mt-8 space-y-8">
-      <div class="rounded-xl border border-outline-variant/15 bg-surface-container-lowest/50 p-6">
-        <div class="flex items-center gap-3 mb-3">
-          <span class="material-symbols-outlined text-lg text-primary">auto_awesome</span>
-          <h2 class="text-xl font-headline text-on-surface">{pick(about, 'missionTitle', 'Our Mission')}</h2>
-        </div>
-        <p class="leading-relaxed text-on-surface-variant">{pick(about, 'missionBody', 'We built Right Triangle Solver to simplify geometry for students, teachers, and professionals.')}</p>
+    <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 anim-stagger">
+      {highlights.map((item) => (
+        <article class="surface-card text-center">
+          <div class="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10">
+            <span class="material-symbols-outlined text-lg text-primary">{item.icon}</span>
+          </div>
+          <h3 class="text-sm font-semibold text-on-surface">{item.title}</h3>
+          <p class="mt-2 text-xs leading-relaxed text-on-surface-variant">{item.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section-shell mb-8">
+    <h2 class="text-xl font-headline text-on-surface">Who This Helps</h2>
+    <div class="mt-5 grid gap-4 md:grid-cols-3 anim-stagger">
+      {audiences.map((audience) => (
+        <article class="surface-card">
+          <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+            <span class="material-symbols-outlined text-lg text-primary">{audience.icon}</span>
+          </div>
+          <h3 class="text-base font-semibold text-on-surface">{audience.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-on-surface-variant">{audience.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section-shell mb-8 prose-shell">
+    <h2>How We Think About Product Quality</h2>
+    <ul>
+      {principles.map((principle) => <li>{principle}</li>)}
+    </ul>
+  </section>
+
+  <section class="section-shell">
+    <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <div>
+        <h2 class="text-xl font-headline text-on-surface">{pick(about, 'promiseTitle', 'Our Promise')}</h2>
+        <p class="mt-2 text-sm leading-relaxed text-on-surface-variant">
+          {pick(
+            about,
+            'promiseBody',
+            'The tool is free, practical, and designed with care. We continuously improve based on real user needs.'
+          )}
+        </p>
       </div>
-
-      <div class="grid gap-5 sm:grid-cols-3 anim-stagger">
-        <div class="surface-card flex flex-col items-center text-center gap-3 py-8">
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
-            <span class="material-symbols-outlined text-xl text-primary">precision_manufacturing</span>
-          </div>
-          <h3 class="font-semibold text-on-surface">{pick(about, 'precisionTitle', 'Precision')}</h3>
-          <p class="text-xs leading-relaxed text-on-surface-variant">{pick(about, 'precisionDesc', 'Accurate to 4+ decimal places.')}</p>
-        </div>
-        <div class="surface-card flex flex-col items-center text-center gap-3 py-8">
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
-            <span class="material-symbols-outlined text-xl text-primary">speed</span>
-          </div>
-          <h3 class="font-semibold text-on-surface">{pick(about, 'instantTitle', 'Instant')}</h3>
-          <p class="text-xs leading-relaxed text-on-surface-variant">{pick(about, 'instantDesc', 'Real-time calculation.')}</p>
-        </div>
-        <div class="surface-card flex flex-col items-center text-center gap-3 py-8">
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
-            <span class="material-symbols-outlined text-xl text-primary">school</span>
-          </div>
-          <h3 class="font-semibold text-on-surface">{pick(about, 'educationalTitle', 'Educational')}</h3>
-          <p class="text-xs leading-relaxed text-on-surface-variant">{pick(about, 'educationalDesc', 'Step-by-step guides.')}</p>
-        </div>
-      </div>
-
-      <div class="rounded-xl border border-outline-variant/15 bg-surface-container-lowest/50 p-6">
-        <div class="flex items-center gap-3 mb-3">
-          <span class="material-symbols-outlined text-lg text-primary">handshake</span>
-          <h2 class="text-xl font-headline text-on-surface">{pick(about, 'promiseTitle', 'Our Promise')}</h2>
-        </div>
-        <p class="leading-relaxed text-on-surface-variant">{pick(about, 'promiseBody', 'We respect your privacy and never collect personal data.')}</p>
+      <div class="flex gap-3">
+        <a href="/contact-us/" class="btn-primary">Contact Us</a>
+        <a href="/" class="btn-secondary">Open Solver</a>
       </div>
     </div>
-  </article>
+  </section>
 </BaseLayout>

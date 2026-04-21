@@ -2,11 +2,14 @@
 import { DEFAULT_LOCALE } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import { site } from 'theme/utils/site';
 
 const locale = DEFAULT_LOCALE;
 const bundle = getTranslations('en');
 const content = bundle.content as Record<string, any>;
 const terms = content.terms ?? {};
+const updatedLabel = pick(terms, 'updatedLabel', 'Last updated: April 12, 2026');
+const contactEmail = site.contactEmail || 'hello@righttrianglesolver.app';
 ---
 
 <BaseLayout
@@ -18,10 +21,148 @@ const terms = content.terms ?? {};
   <header class="mb-10 text-center">
     <p class="font-label text-xs uppercase tracking-widest text-primary">Agreement</p>
     <h1 class="mt-3 text-3xl font-headline sm:text-4xl lg:text-5xl text-on-surface">{pick(terms, 'heading', 'Terms of Use')}</h1>
-    <p class="mt-2 text-xs uppercase tracking-wide text-outline">{pick(terms, 'updatedLabel', '')}</p>
+    <p class="mt-2 text-xs uppercase tracking-wide text-outline">{updatedLabel}</p>
+    <p class="mx-auto mt-4 max-w-3xl text-sm leading-relaxed text-on-surface-variant">
+      These Terms explain what you can expect from Right Triangle Solver and what we ask from you in return.
+      We wrote this page to be clear, readable, and practical.
+    </p>
   </header>
 
+  <section class="section-shell mb-6">
+    <h2 class="text-xl font-headline text-on-surface">Quick Summary</h2>
+    <ul class="mt-4 space-y-2 text-sm leading-relaxed text-on-surface-variant">
+      <li>This tool is for educational and informational use.</li>
+      <li>You are responsible for how you use results in real projects.</li>
+      <li>Do not misuse, attack, scrape, or disrupt the service.</li>
+      <li>We may improve or update the service over time.</li>
+      <li>If you continue using the site, you agree to these Terms.</li>
+    </ul>
+  </section>
+
+  <section class="section-shell mb-6">
+    <h2 class="text-xl font-headline text-on-surface">Contents</h2>
+    <nav aria-label="Terms sections" class="mt-4 grid gap-2 sm:grid-cols-2">
+      <a href="#acceptance" class="text-sm text-primary hover:text-primary-fixed">1. Acceptance of Terms</a>
+      <a href="#service" class="text-sm text-primary hover:text-primary-fixed">2. Service Description</a>
+      <a href="#allowed-use" class="text-sm text-primary hover:text-primary-fixed">3. Allowed and Restricted Use</a>
+      <a href="#accounts-data" class="text-sm text-primary hover:text-primary-fixed">4. Data and Privacy</a>
+      <a href="#intellectual-property" class="text-sm text-primary hover:text-primary-fixed">5. Intellectual Property</a>
+      <a href="#disclaimer" class="text-sm text-primary hover:text-primary-fixed">6. Disclaimer</a>
+      <a href="#liability" class="text-sm text-primary hover:text-primary-fixed">7. Limitation of Liability</a>
+      <a href="#changes" class="text-sm text-primary hover:text-primary-fixed">8. Changes to Terms</a>
+      <a href="#contact" class="text-sm text-primary hover:text-primary-fixed">9. Contact</a>
+    </nav>
+  </section>
+
   <article class="section-shell prose-shell">
-    <p class="text-on-surface-variant font-body">{pick(terms, 'body', 'Our terms of use.')}</p>
+    <div class="space-y-8 text-on-surface-variant">
+      <section id="acceptance">
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+          By accessing or using Right Triangle Solver, you agree to these Terms of Use and to our Privacy Policy.
+          If you do not agree, please do not use the site.
+        </p>
+        <p>
+          You represent that you are using the site in compliance with local laws and that you have the authority
+          to accept these Terms.
+        </p>
+      </section>
+
+      <section id="service">
+        <h2>2. Service Description</h2>
+        <p>
+          Right Triangle Solver provides calculators, formula references, and educational geometry content.
+          We aim to keep calculations accurate and helpful, but we cannot guarantee that every result is error-free
+          for every possible input, interpretation, or real-world condition.
+        </p>
+        <p>
+          The service is intended to support learning and general problem-solving. It is not a substitute for
+          professional engineering, legal, academic, or safety-critical review.
+        </p>
+      </section>
+
+      <section id="allowed-use">
+        <h2>3. Allowed and Restricted Use</h2>
+        <h3>Allowed use includes:</h3>
+        <ul>
+          <li>Personal learning and classroom support.</li>
+          <li>Research and non-harmful educational reference.</li>
+          <li>Reasonable sharing of links to our public pages.</li>
+        </ul>
+
+        <h3>Restricted use includes:</h3>
+        <ul>
+          <li>Attempting to overload, scrape at abusive rates, or disrupt the site.</li>
+          <li>Reverse engineering, security probing, or bypassing access controls.</li>
+          <li>Using the site for unlawful, harmful, or deceptive activity.</li>
+          <li>Misrepresenting our content as official professional advice.</li>
+        </ul>
+      </section>
+
+      <section id="accounts-data">
+        <h2>4. Data and Privacy</h2>
+        <p>
+          Your use of the site is also governed by our Privacy Policy. Please review it to understand how we handle
+          information related to your use.
+        </p>
+        <p>
+          If you submit messages through a contact form, you are responsible for ensuring that the information you
+          provide is accurate and appropriate to share.
+        </p>
+      </section>
+
+      <section id="intellectual-property">
+        <h2>5. Intellectual Property</h2>
+        <p>
+          Site content, design elements, branding, and original educational material are protected by applicable
+          intellectual property laws unless otherwise noted.
+        </p>
+        <p>
+          You may reference or quote small portions of public content with clear attribution. Do not copy, republish,
+          or redistribute substantial parts of the site in a way that competes with or misrepresents our service.
+        </p>
+      </section>
+
+      <section id="disclaimer">
+        <h2>6. Disclaimer of Warranties</h2>
+        <p>
+          The service is provided on an "as is" and "as available" basis. To the maximum extent permitted by law,
+          we disclaim warranties of any kind, including implied warranties of merchantability, fitness for a particular
+          purpose, and non-infringement.
+        </p>
+      </section>
+
+      <section id="liability">
+        <h2>7. Limitation of Liability</h2>
+        <p>
+          To the maximum extent permitted by law, Right Triangle Solver and its operators are not liable for indirect,
+          incidental, special, consequential, or punitive damages, or for loss of profits, data, goodwill, or business
+          opportunities arising from your use of the service.
+        </p>
+        <p>
+          You are responsible for validating outputs before using them in exams, coursework submissions, engineering
+          calculations, or any high-impact decision.
+        </p>
+      </section>
+
+      <section id="changes">
+        <h2>8. Changes to Terms and Service</h2>
+        <p>
+          We may update these Terms to reflect product, legal, or operational changes. When updates are material, we
+          will revise the "Last updated" date on this page.
+        </p>
+        <p>
+          Continuing to use the site after updates means you accept the revised Terms.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>9. Contact</h2>
+        <p>
+          Questions about these Terms can be sent to
+          <a href={`mailto:${contactEmail}`}>{contactEmail}</a>.
+        </p>
+      </section>
+    </div>
   </article>
 </BaseLayout>

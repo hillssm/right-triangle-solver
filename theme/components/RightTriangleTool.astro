@@ -309,9 +309,9 @@ const labelsJson = JSON.stringify(l);
     type UnitOption = string;
 
     const UNIT_SCALE: Record<string, number> = {
-      m: 1, nm: 1e-9, 'µm': 1e-6, mm: 1e-3, cm: 1e-2, km: 1e3,
+      m: 1, nm: 1e-9, '\u00B5m': 1e-6, mm: 1e-3, cm: 1e-2, km: 1e3,
       in: 0.0254, ft: 0.3048, yd: 0.9144, mi: 1609.344, nmi: 1852,
-      'Å': 1e-10, mil: 0.0000254, pixel: 0.0002645833, pt: 0.0003527778,
+      '\u00C5': 1e-10, mil: 0.0000254, pixel: 0.0002645833, pt: 0.0003527778,
       foot_survey_us: 0.3048006096, fathom: 1.8288, au: 149597870700,
       light_second: 299792458, light_minute: 17987547480, light_hour: 1079252848800,
       light_day: 25902068371200, ly: 9460730472580800, kly: 9460730472580800000,
@@ -322,7 +322,7 @@ const labelsJson = JSON.stringify(l);
     const formatWithUnitRaw = (value: number, unit: UnitOption, digits = 4, squared = false): string => {
       const base = formatNumber(value, digits);
       if (!unit) return base;
-      return squared ? `${base} ${unit}²` : `${base} ${unit}`;
+      return squared ? `${base} ${unit}\u00B2` : `${base} ${unit}`;
     };
     const formatWithUnit = (value: number, unit: UnitOption, digits = 4, squared = false): string => {
       const base = formatNumber(value, digits);
@@ -332,50 +332,77 @@ const labelsJson = JSON.stringify(l);
     const formatAngle = (rad: number, mode: AngleMode): string => `${formatAngleForMode(rad, mode, 4)} ${mode === 'deg' ? 'deg' : 'rad'}`;
     const parseAngleInput = (raw: string, mode: AngleMode): number => {
       let parsed = parseMathExpression(raw);
-      if (mode === 'deg' && /pi|π/i.test(raw)) {
+      if (mode === 'deg' && /pi|\u03C0/i.test(raw)) {
         parsed = (parsed * 180) / Math.PI;
       }
       return parsed;
     };
+    const formatMathText = (raw: string): string => {
+      let text = String(raw)
+        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+        .replace(/alpha|\u03B1/g, 'A')
+        .replace(/beta|\u03B2/g, 'B')
+        // Textbook power: variable followed by digit (e.g. x2 -> x^2)
+        .replace(/([a-zA-Z])(\d+)/g, '<i>$1</i><sup>$2</sup>')
+        // Caret power: ^2 -> <sup>2</sup>
+        .replace(/\^(\d+)/g, '<sup>$1</sup>')
+        // Unicode power conversion
+        .replace(/\u00B9/g, '<sup>1</sup>')
+        .replace(/\u00B2/g, '<sup>2</sup>')
+        .replace(/\u00B3/g, '<sup>3</sup>')
+        .replace(/\u2074/g, '<sup>4</sup>');
+
+      // Italicize single letters representing variables if not already wrapped
+      text = text.replace(/(^|[^a-zA-Z<>])([a-zA-Z])(?![a-zA-Z<>])/g, '$1<i>$2</i>');
+      return text;
+    };
+
+    const parseStepBlock = (rawStep: string): { title: string; lines: string[] } => {
+      const lines = String(rawStep)
+        .split(/<br\s*\/?>/gi)
+        .map((line) => line.trim())
+        .filter(Boolean);
+
+      if (!lines.length) {
+        return { title: '', lines: [] };
+      }
+
+      const title = lines[0].replace(/\*\*(.+?)\*\*/g, '$1').replace(/\*/g, '').trim();
+      return { title: title || lines[0], lines: lines.slice(1) };
+    };
 
     const renderListItems = (listEl: HTMLElement, items: string[], isStep = false) => {
-      const normalizedItems = isStep
-        ? items
-            .flatMap((item) => String(item).split(/<br\s*\/?>/gi))
-            .map((item) => item.trim())
-            .filter(Boolean)
-        : items;
       const fragment = document.createDocumentFragment();
-      normalizedItems.forEach((item, index) => {
-        const li = document.createElement('li');
-        
-        let text = item
-          .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-          .replace(/alpha|α/g, 'A')
-          .replace(/beta|β/g, 'B')
-          // Textbook power: variable followed by digit (e.g. x2 -> x²)
-          .replace(/([a-zA-Z])(\d+)/g, '<i>$1</i><sup>$2</sup>')
-          // Caret power: ^2 -> <sup>2</sup>
-          .replace(/\^(\d+)/g, '<sup>$1</sup>')
-          // Unicode power conversion
-          .replace(/¹/g, '<sup>1</sup>')
-          .replace(/²/g, '<sup>2</sup>')
-          .replace(/³/g, '<sup>3</sup>')
-          .replace(/⁴/g, '<sup>4</sup>');
 
-        // Italicize single letters representing variables if not already wrapped
-        text = text.replace(/(^|[^a-zA-Z<>])([a-zA-Z])(?![a-zA-Z<>])/g, '$1<i>$2</i>');
-        
-        if (isStep) {
+      if (isStep) {
+        items.forEach((item, index) => {
+          const block = parseStepBlock(item);
+          if (!block.title && !block.lines.length) return;
+
+          const li = document.createElement('li');
           li.className = 'rounded-xl border border-outline-variant/10 bg-surface-container-lowest/40 p-3 text-sm text-on-surface-variant transition-colors hover:border-primary/20 hover:bg-surface-container-lowest/60 flex items-start gap-3';
           const num = (index + 1).toString().padStart(2, '0');
-          li.innerHTML = `<span class="mt-0.5 font-mono text-[10px] text-primary/60 flex-shrink-0">${num}</span><span class="math-textbook">${text}</span>`;
-        } else {
-          li.className = 'pl-1 math-textbook';
-          li.innerHTML = text;
-        }
+          const detailItems = block.lines.length
+            ? `<ul class="mt-2 space-y-1 border-l border-outline-variant/20 pl-3">${block.lines
+                .map((line) => `<li class="math-textbook text-on-surface-variant">${formatMathText(line)}</li>`)
+                .join('')}</ul>`
+            : '';
+
+          li.innerHTML = `<span class="mt-0.5 font-mono text-[10px] text-primary flex-shrink-0 rounded-md bg-primary/10 px-2 py-1">${num}</span><div class="min-w-0"><p class="math-textbook font-semibold text-on-surface">${formatMathText(block.title)}</p>${detailItems}</div>`;
+          fragment.append(li);
+        });
+
+        listEl.replaceChildren(fragment);
+        return;
+      }
+
+      items.forEach((item) => {
+        const li = document.createElement('li');
+        li.className = 'pl-1 math-textbook';
+        li.innerHTML = formatMathText(item);
         fragment.append(li);
       });
+
       listEl.replaceChildren(fragment);
     };
 

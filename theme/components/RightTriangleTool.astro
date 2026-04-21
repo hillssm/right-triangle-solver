@@ -34,6 +34,11 @@ interface Props {
     tanA?: string;
     solutionSteps?: string;
     solutionStepsDefault?: string;
+    formulaLabel?: string;
+    substitutionLabel?: string;
+    answerLabel?: string;
+    explanationLabel?: string;
+    detailLabel?: string;
     entered?: string;
     computed?: string;
     solvedFrom?: string;
@@ -83,6 +88,11 @@ const l = {
   tanA: labels.tanA ?? 'tan(A)',
   solutionSteps: labels.solutionSteps ?? 'Solution Steps',
   solutionStepsDefault: labels.solutionStepsDefault ?? 'Enter exactly 2 values with at least one side.',
+  formulaLabel: labels.formulaLabel ?? 'Formula',
+  substitutionLabel: labels.substitutionLabel ?? 'Substitution',
+  answerLabel: labels.answerLabel ?? 'Answer',
+  explanationLabel: labels.explanationLabel ?? 'Explanation',
+  detailLabel: labels.detailLabel ?? 'Detail',
   entered: labels.entered ?? 'entered',
   computed: labels.computed ?? 'computed',
   solvedFrom: labels.solvedFrom ?? 'Solved from',
@@ -404,6 +414,69 @@ const labelsJson = JSON.stringify(l);
       return { title: title || lines[0], lines: lines.slice(1) };
     };
 
+    type StepUiLabels = {
+      formulaLabel: string;
+      substitutionLabel: string;
+      answerLabel: string;
+      explanationLabel: string;
+      detailLabel: string;
+      sideA: string;
+      sideB: string;
+      hypotenuseC: string;
+      angleA: string;
+      angleB: string;
+      area: string;
+      perimeter: string;
+      altitude: string;
+      semiperimeter: string;
+      inradius: string;
+      circumradius: string;
+      segmentP: string;
+      segmentQ: string;
+    };
+
+    const DEFAULT_STEP_UI_LABELS: StepUiLabels = {
+      formulaLabel: 'Formula',
+      substitutionLabel: 'Substitution',
+      answerLabel: 'Answer',
+      explanationLabel: 'Explanation',
+      detailLabel: 'Detail',
+      sideA: 'Side a',
+      sideB: 'Side b',
+      hypotenuseC: 'Hypotenuse c',
+      angleA: 'Angle A',
+      angleB: 'Angle B',
+      area: 'Area',
+      perimeter: 'Perimeter',
+      altitude: 'Altitude h',
+      semiperimeter: 'Semiperimeter s',
+      inradius: 'Inradius r',
+      circumradius: 'Circumradius R',
+      segmentP: 'Segment p',
+      segmentQ: 'Segment q'
+    };
+
+    const localizeStepTitle = (title: string, labels: StepUiLabels): string => {
+      const normalized = title.trim();
+      if (!normalized) return normalized;
+
+      if (/hypotenuse\s*c/i.test(normalized)) return labels.hypotenuseC;
+      if (/leg\s*a/i.test(normalized)) return labels.sideA;
+      if (/leg\s*b/i.test(normalized)) return labels.sideB;
+      if (/\bangle\s*a\b/i.test(normalized)) return labels.angleA;
+      if (/\bangle\s*b\b/i.test(normalized)) return labels.angleB;
+      if (/calculate\s+area|^area$/i.test(normalized)) return labels.area;
+      if (/calculate\s+perimeter|^perimeter$/i.test(normalized)) return labels.perimeter;
+      if (/altitude/i.test(normalized)) return labels.altitude;
+      if (/semiperimeter/i.test(normalized)) return labels.semiperimeter;
+      if (/inradius/i.test(normalized)) return labels.inradius;
+      if (/circumradius/i.test(normalized)) return labels.circumradius;
+      if (/^segment\s*p\b/i.test(normalized)) return labels.segmentP;
+      if (/^segment\s*q\b/i.test(normalized)) return labels.segmentQ;
+
+      return normalized;
+    };
+
     const splitSubstitutionAndAnswer = (line: string): { substitution: string; answer: string | null } => {
       const normalized = line.trim();
       const parts = normalized.split('=').map((part) => part.trim()).filter(Boolean);
@@ -422,11 +495,10 @@ const labelsJson = JSON.stringify(l);
       return { substitution: normalized, answer: null };
     };
 
-    const buildStepFlow = (lines: string[]): Array<{ label: string; value: string }> => {
+    const buildStepFlow = (lines: string[], uiLabels: StepUiLabels): Array<{ label: string; value: string }> => {
       const cleanedLines = lines.map((line) => line.trim()).filter(Boolean);
       if (!cleanedLines.length) return [];
 
-      const explanationParts: string[] = [];
       const equationLines: string[] = [];
       let formula = '';
       let substitution = '';
@@ -436,8 +508,6 @@ const labelsJson = JSON.stringify(l);
         const normalizedLine = line.replace(/^use\s+/i, '').trim();
         if (normalizedLine.includes('=')) {
           equationLines.push(normalizedLine);
-        } else {
-          explanationParts.push(normalizedLine);
         }
       }
 
@@ -455,19 +525,16 @@ const labelsJson = JSON.stringify(l);
       }
 
       const flow: Array<{ label: string; value: string }> = [];
-      if (formula) flow.push({ label: 'Formula', value: formula });
+      if (formula) flow.push({ label: uiLabels.formulaLabel, value: formula });
       if (substitution && substitution !== formula) {
-        flow.push({ label: 'Substitution', value: substitution });
+        flow.push({ label: uiLabels.substitutionLabel, value: substitution });
       }
-      if (answer) flow.push({ label: 'Answer', value: answer });
+      if (answer) flow.push({ label: uiLabels.answerLabel, value: answer });
 
-      const explanation = explanationParts.join(' ').trim();
-      if (explanation) flow.push({ label: 'Explanation', value: explanation });
-
-      return flow.length ? flow : cleanedLines.map((line) => ({ label: 'Detail', value: line }));
+      return flow.length ? flow : cleanedLines.map((line) => ({ label: uiLabels.detailLabel, value: line }));
     };
 
-    const renderListItems = (listEl: HTMLElement, items: string[], isStep = false) => {
+    const renderListItems = (listEl: HTMLElement, items: string[], isStep = false, stepUiLabels: StepUiLabels = DEFAULT_STEP_UI_LABELS) => {
       const fragment = document.createDocumentFragment();
 
       if (isStep) {
@@ -478,11 +545,12 @@ const labelsJson = JSON.stringify(l);
           const li = document.createElement('li');
           li.className = 'rounded-xl border border-outline-variant/10 bg-surface-container-lowest/40 p-3 text-sm text-on-surface-variant transition-colors hover:border-primary/20 hover:bg-surface-container-lowest/60 flex items-start gap-3';
           const num = (index + 1).toString().padStart(2, '0');
-          const flowItems = buildStepFlow(block.lines);
+          const flowItems = buildStepFlow(block.lines, stepUiLabels);
+          const localizedTitle = localizeStepTitle(block.title, stepUiLabels);
           const detailItems = flowItems.length
             ? `<ul class="mt-2 space-y-1 border-l border-outline-variant/20 pl-3">${flowItems
                 .map((detail) => {
-                  const valueClass = detail.label === 'Answer'
+                  const valueClass = detail.label === stepUiLabels.answerLabel
                     ? 'math-textbook font-semibold text-primary'
                     : 'math-textbook text-on-surface-variant';
                   return `<li><span class="font-semibold text-on-surface">${detail.label}:</span> <span class="${valueClass}">${formatMathText(detail.value)}</span></li>`;
@@ -490,7 +558,7 @@ const labelsJson = JSON.stringify(l);
                 .join('')}</ul>`
             : '';
 
-          li.innerHTML = `<span class="mt-0.5 font-mono text-[10px] text-primary flex-shrink-0 rounded-md bg-primary/10 px-2 py-1">${num}</span><div class="min-w-0"><p class="math-textbook font-semibold text-on-surface">${formatMathText(block.title)}</p>${detailItems}</div>`;
+          li.innerHTML = `<span class="mt-0.5 font-mono text-[10px] text-primary flex-shrink-0 rounded-md bg-primary/10 px-2 py-1">${num}</span><div class="min-w-0"><p class="math-textbook font-semibold text-on-surface">${formatMathText(localizedTitle)}</p>${detailItems}</div>`;
           fragment.append(li);
         });
 
@@ -615,6 +683,26 @@ const labelsJson = JSON.stringify(l);
         const labelSolvedFrom = l.solvedFrom || 'Solved from';
         const labelStatusDefault = l.statusDefault || '';
         const labelSolutionStepsDefault = l.solutionStepsDefault || '';
+        const stepUiLabels: StepUiLabels = {
+          formulaLabel: l.formulaLabel || 'Formula',
+          substitutionLabel: l.substitutionLabel || 'Substitution',
+          answerLabel: l.answerLabel || 'Answer',
+          explanationLabel: l.explanationLabel || 'Explanation',
+          detailLabel: l.detailLabel || 'Detail',
+          sideA: l.sideA || 'Side a',
+          sideB: l.sideB || 'Side b',
+          hypotenuseC: l.hypotenuseC || 'Hypotenuse c',
+          angleA: l.angleA || 'Angle A',
+          angleB: l.angleB || 'Angle B',
+          area: l.area || 'Area',
+          perimeter: l.perimeter || 'Perimeter',
+          altitude: l.altitude || 'Altitude h',
+          semiperimeter: l.semiperimeter || 'Semiperimeter s',
+          inradius: l.inradius || 'Inradius r',
+          circumradius: l.circumradius || 'Circumradius R',
+          segmentP: l.segmentP || 'Segment p',
+          segmentQ: l.segmentQ || 'Segment q'
+        };
         const DEFAULT_PATH = 'M 70 70 L 70 260 L 380 260 Z';
 
         const setOriginState = (provided: CalculatorInputKey[] | null) => {
@@ -630,7 +718,7 @@ const labelsJson = JSON.stringify(l);
         for (const key of ['a', 'b', 'c', 'A', 'B', 'area', 'perimeter', 'h', 's', 'r', 'R', 'p', 'q', 'ratioA', 'ratioB', 'tanA']) r[key].textContent = '-';
         setOriginState(null);
         renderListItems(formulaListEl, []);
-        renderListItems(stepListEl, [labelSolutionStepsDefault], true);
+        renderListItems(stepListEl, [labelSolutionStepsDefault], true, stepUiLabels);
         pathEl.setAttribute('d', DEFAULT_PATH);
         fillEl.setAttribute('d', DEFAULT_PATH);
         altitudeLineEl.setAttribute('opacity', '0');
@@ -722,7 +810,7 @@ const labelsJson = JSON.stringify(l);
         setOriginState(solution.providedKeys);
         drawTriangle(solution);
         renderListItems(formulaListEl, solution.formulas);
-        renderListItems(stepListEl, solution.steps, true);
+        renderListItems(stepListEl, solution.steps, true, stepUiLabels);
 
         lastSolution = solution;
       };

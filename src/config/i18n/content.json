@@ -64,7 +64,12 @@
         "solutionStepsDefault": "Enter exactly 2 values with at least one side.",
         "entered": "entered",
         "computed": "computed",
-        "solvedFrom": "Solved from"
+        "solvedFrom": "Solved from",
+        "formulaLabel": "Formula",
+        "substitutionLabel": "Substitution",
+        "answerLabel": "Answer",
+        "explanationLabel": "Explanation",
+        "detailLabel": "Detail"
       },
       "longContent": {
         "introSection": {
@@ -1175,7 +1180,12 @@
         "solutionStepsDefault": "कम से कम एक भुजा के साथ ठीक 2 मान दर्ज करें।",
         "entered": "दर्ज",
         "computed": "गणित",
-        "solvedFrom": "इससे हल किया गया"
+        "solvedFrom": "इससे हल किया गया",
+        "formulaLabel": "सूत्र",
+        "substitutionLabel": "प्रतिस्थापन",
+        "answerLabel": "उत्तर",
+        "explanationLabel": "व्याख्या",
+        "detailLabel": "विवरण"
       },
       "longContent": {
         "introSection": {
@@ -2286,7 +2296,12 @@
         "solutionStepsDefault": "Ingrese exactamente 2 valores con al menos un lado.",
         "entered": "ingresado",
         "computed": "calculado",
-        "solvedFrom": "Resuelto a partir de"
+        "solvedFrom": "Resuelto a partir de",
+        "formulaLabel": "Fórmula",
+        "substitutionLabel": "Sustitución",
+        "answerLabel": "Respuesta",
+        "explanationLabel": "Explicación",
+        "detailLabel": "Detalle"
       },
       "longContent": {
         "introSection": {
@@ -3397,7 +3412,12 @@
         "solutionStepsDefault": "Введите ровно 2 значения, хотя бы одно из которых — сторона.",
         "entered": "введено",
         "computed": "вычислено",
-        "solvedFrom": "Решено на основе"
+        "solvedFrom": "Решено на основе",
+        "formulaLabel": "Формула",
+        "substitutionLabel": "Подстановка",
+        "answerLabel": "Ответ",
+        "explanationLabel": "Пояснение",
+        "detailLabel": "Деталь"
       },
       "longContent": {
         "introSection": {
@@ -4508,7 +4528,12 @@
         "solutionStepsDefault": "Entrez exactement 2 valeurs avec au moins un côté.",
         "entered": "entré",
         "computed": "calculé",
-        "solvedFrom": "Résolu à partir de"
+        "solvedFrom": "Résolu à partir de",
+        "formulaLabel": "Formule",
+        "substitutionLabel": "Substitution",
+        "answerLabel": "Réponse",
+        "explanationLabel": "Explication",
+        "detailLabel": "Détail"
       },
       "longContent": {
         "introSection": {
@@ -5619,7 +5644,12 @@
         "solutionStepsDefault": "Geben Sie genau 2 Werte mit mindestens einer Seite ein.",
         "entered": "eingegeben",
         "computed": "berechnet",
-        "solvedFrom": "Gelöst mit"
+        "solvedFrom": "Gelöst mit",
+        "formulaLabel": "Formel",
+        "substitutionLabel": "Einsetzen",
+        "answerLabel": "Antwort",
+        "explanationLabel": "Erklärung",
+        "detailLabel": "Detail"
       },
       "longContent": {
         "introSection": {
@@ -6730,7 +6760,12 @@
         "solutionStepsDefault": "Inserisci esattamente 2 valori con almeno un lato.",
         "entered": "inserito",
         "computed": "calcolato",
-        "solvedFrom": "Risolto da"
+        "solvedFrom": "Risolto da",
+        "formulaLabel": "Formula",
+        "substitutionLabel": "Sostituzione",
+        "answerLabel": "Risposta",
+        "explanationLabel": "Spiegazione",
+        "detailLabel": "Dettaglio"
       },
       "longContent": {
         "introSection": {
@@ -7841,7 +7876,12 @@
         "solutionStepsDefault": "Insira exatamente 2 valores com pelo menos um lado.",
         "entered": "inserido",
         "computed": "calculado",
-        "solvedFrom": "Resolvido a partir de"
+        "solvedFrom": "Resolvido a partir de",
+        "formulaLabel": "Fórmula",
+        "substitutionLabel": "Substituição",
+        "answerLabel": "Resposta",
+        "explanationLabel": "Explicação",
+        "detailLabel": "Detalhe"
       },
       "longContent": {
         "introSection": {
@@ -8952,7 +8992,12 @@
         "solutionStepsDefault": "অন্তত একটি বাহুসহ ঠিক ২টি মান লিখুন।",
         "entered": "প্রবেশ করানো",
         "computed": "গণনা করা",
-        "solvedFrom": "সমাধান করা হয়েছে"
+        "solvedFrom": "সমাধান করা হয়েছে",
+        "formulaLabel": "সূত্র",
+        "substitutionLabel": "প্রতিস্থাপন",
+        "answerLabel": "উত্তর",
+        "explanationLabel": "ব্যাখ্যা",
+        "detailLabel": "বিস্তারিত"
       },
       "longContent": {
         "introSection": {
@@ -10063,7 +10108,12 @@
         "solutionStepsDefault": "少なくとも1つの辺を含む正確に2つの値を入力してください。",
         "entered": "入力済み",
         "computed": "計算済み",
-        "solvedFrom": "解決元"
+        "solvedFrom": "解決元",
+        "formulaLabel": "公式",
+        "substitutionLabel": "代入",
+        "answerLabel": "答え",
+        "explanationLabel": "説明",
+        "detailLabel": "詳細"
       },
       "longContent": {
         "introSection": {
@@ -11174,7 +11224,12 @@
         "solutionStepsDefault": "적어도 하나의 변을 포함하여 정확히 2개의 값을 입력하세요.",
         "entered": "입력됨",
         "computed": "계산됨",
-        "solvedFrom": "풀이 근거"
+        "solvedFrom": "풀이 근거",
+        "formulaLabel": "공식",
+        "substitutionLabel": "대입",
+        "answerLabel": "정답",
+        "explanationLabel": "설명",
+        "detailLabel": "세부사항"
       },
       "longContent": {
         "introSection": {
@@ -12285,7 +12340,12 @@
         "solutionStepsDefault": "Masukkan tepat 2 nilai dengan sekurang-kurangnya satu sisi.",
         "entered": "dimasukkan",
         "computed": "dikira",
-        "solvedFrom": "Diselesaikan daripada"
+        "solvedFrom": "Diselesaikan daripada",
+        "formulaLabel": "Formula",
+        "substitutionLabel": "Penggantian",
+        "answerLabel": "Jawapan",
+        "explanationLabel": "Penjelasan",
+        "detailLabel": "Butiran"
       },
       "longContent": {
         "introSection": {
@@ -13396,7 +13456,12 @@
         "solutionStepsDefault": "Wprowadź dokładnie 2 wartości, w tym co najmniej jeden bok.",
         "entered": "wprowadzono",
         "computed": "obliczono",
-        "solvedFrom": "Rozwiązano na podstawie"
+        "solvedFrom": "Rozwiązano na podstawie",
+        "formulaLabel": "Wzór",
+        "substitutionLabel": "Podstawienie",
+        "answerLabel": "Odpowiedź",
+        "explanationLabel": "Wyjaśnienie",
+        "detailLabel": "Szczegół"
       },
       "longContent": {
         "introSection": {
@@ -14507,7 +14572,12 @@
         "solutionStepsDefault": "Masukkan tepat 2 nilai dengan setidaknya satu sisi.",
         "entered": "dimasukkan",
         "computed": "dihitung",
-        "solvedFrom": "Diselesaikan dari"
+        "solvedFrom": "Diselesaikan dari",
+        "formulaLabel": "Rumus",
+        "substitutionLabel": "Substitusi",
+        "answerLabel": "Jawaban",
+        "explanationLabel": "Penjelasan",
+        "detailLabel": "Detail"
       },
       "longContent": {
         "introSection": {
@@ -15618,7 +15688,12 @@
         "solutionStepsDefault": "أدخل قيمتين بالضبط مع ضلع واحد على الأقل.",
         "entered": "تم إدخاله",
         "computed": "تم حسابه",
-        "solvedFrom": "تم الحل من"
+        "solvedFrom": "تم الحل من",
+        "formulaLabel": "الصيغة",
+        "substitutionLabel": "التعويض",
+        "answerLabel": "الإجابة",
+        "explanationLabel": "الشرح",
+        "detailLabel": "التفاصيل"
       },
       "longContent": {
         "introSection": {
@@ -16729,7 +16804,12 @@
         "solutionStepsDefault": "Въведете точно 2 стойности с поне една страна.",
         "entered": "въведен",
         "computed": "изчислен",
-        "solvedFrom": "Решено от"
+        "solvedFrom": "Решено от",
+        "formulaLabel": "Формула",
+        "substitutionLabel": "Заместване",
+        "answerLabel": "Отговор",
+        "explanationLabel": "Обяснение",
+        "detailLabel": "Детайл"
       },
       "longContent": {
         "introSection": {
@@ -17840,7 +17920,12 @@
         "solutionStepsDefault": "En az bir kenar olmak üzere tam olarak 2 değer girin.",
         "entered": "girildi",
         "computed": "hesaplandı",
-        "solvedFrom": "Şuradan çözüldü"
+        "solvedFrom": "Şuradan çözüldü",
+        "formulaLabel": "Formül",
+        "substitutionLabel": "Yerine Koyma",
+        "answerLabel": "Cevap",
+        "explanationLabel": "Açıklama",
+        "detailLabel": "Detay"
       },
       "longContent": {
         "introSection": {
@@ -18951,7 +19036,12 @@
         "solutionStepsDefault": "Ange exakt 2 värden varav minst en sida.",
         "entered": "angivet",
         "computed": "beräknat",
-        "solvedFrom": "Löst från"
+        "solvedFrom": "Löst från",
+        "formulaLabel": "Formel",
+        "substitutionLabel": "Insättning",
+        "answerLabel": "Svar",
+        "explanationLabel": "Förklaring",
+        "detailLabel": "Detalj"
       },
       "longContent": {
         "introSection": {
@@ -20062,7 +20152,12 @@
         "solutionStepsDefault": "准确输入 2 个值，且至少包含一条边。",
         "entered": "已输入",
         "computed": "已计算",
-        "solvedFrom": "解题依据"
+        "solvedFrom": "解题依据",
+        "formulaLabel": "公式",
+        "substitutionLabel": "代入",
+        "answerLabel": "答案",
+        "explanationLabel": "说明",
+        "detailLabel": "细节"
       },
       "longContent": {
         "introSection": {

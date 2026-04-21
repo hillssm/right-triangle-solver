@@ -371,6 +371,78 @@ const labelsJson = JSON.stringify(l);
       return { title: title || lines[0], lines: lines.slice(1) };
     };
 
+    const splitSubstitutionAndAnswer = (line: string): { substitution: string; answer: string | null } => {
+      const normalized = line.trim();
+      const parts = normalized.split('=').map((part) => part.trim()).filter(Boolean);
+      if (parts.length >= 3) {
+        return {
+          substitution: parts.slice(0, -1).join(' = '),
+          answer: parts[parts.length - 1]
+        };
+      }
+      if (parts.length === 2) {
+        return {
+          substitution: normalized,
+          answer: parts[1]
+        };
+      }
+      return { substitution: normalized, answer: null };
+    };
+
+    const buildStepFlow = (lines: string[]): Array<{ label: string; value: string }> => {
+      const cleanedLines = lines.map((line) => line.trim()).filter(Boolean);
+      if (!cleanedLines.length) return [];
+
+      const explanationParts: string[] = [];
+      let formula = '';
+      let substitution = '';
+      let answer = '';
+
+      for (const line of cleanedLines) {
+        if (/^use\s+/i.test(line)) {
+          const useContent = line.replace(/^use\s+/i, '').trim();
+          if (!formula) {
+            formula = useContent;
+          } else if (!substitution) {
+            substitution = useContent;
+          } else {
+            explanationParts.push(line);
+          }
+          continue;
+        }
+
+        if (!substitution && line.includes('=')) {
+          substitution = line;
+          continue;
+        }
+
+        explanationParts.push(line);
+      }
+
+      if (!formula && substitution.includes('=')) {
+        const parts = substitution.split('=').map((part) => part.trim()).filter(Boolean);
+        if (parts.length >= 2) {
+          formula = `${parts[0]} = ${parts[1]}`;
+        }
+      }
+
+      if (substitution) {
+        const split = splitSubstitutionAndAnswer(substitution);
+        substitution = split.substitution;
+        if (split.answer) answer = split.answer;
+      }
+
+      const flow: Array<{ label: string; value: string }> = [];
+      if (formula) flow.push({ label: 'Formula', value: formula });
+      if (substitution) flow.push({ label: 'Substitution', value: substitution });
+      if (answer) flow.push({ label: 'Answer', value: answer });
+
+      const explanation = explanationParts.join(' ').trim();
+      if (explanation) flow.push({ label: 'Explanation', value: explanation });
+
+      return flow.length ? flow : cleanedLines.map((line) => ({ label: 'Detail', value: line }));
+    };
+
     const renderListItems = (listEl: HTMLElement, items: string[], isStep = false) => {
       const fragment = document.createDocumentFragment();
 
@@ -382,9 +454,15 @@ const labelsJson = JSON.stringify(l);
           const li = document.createElement('li');
           li.className = 'rounded-xl border border-outline-variant/10 bg-surface-container-lowest/40 p-3 text-sm text-on-surface-variant transition-colors hover:border-primary/20 hover:bg-surface-container-lowest/60 flex items-start gap-3';
           const num = (index + 1).toString().padStart(2, '0');
-          const detailItems = block.lines.length
-            ? `<ul class="mt-2 space-y-1 border-l border-outline-variant/20 pl-3">${block.lines
-                .map((line) => `<li class="math-textbook text-on-surface-variant">${formatMathText(line)}</li>`)
+          const flowItems = buildStepFlow(block.lines);
+          const detailItems = flowItems.length
+            ? `<ul class="mt-2 space-y-1 border-l border-outline-variant/20 pl-3">${flowItems
+                .map((detail) => {
+                  const valueClass = detail.label === 'Answer'
+                    ? 'math-textbook font-semibold text-primary'
+                    : 'math-textbook text-on-surface-variant';
+                  return `<li><span class="font-semibold text-on-surface">${detail.label}:</span> <span class="${valueClass}">${formatMathText(detail.value)}</span></li>`;
+                })
                 .join('')}</ul>`
             : '';
 

@@ -267,14 +267,26 @@ const uiOpen = pick(solver, 'openTool', 'Open Tool');
 
       <section class="mt-8 section-shell prose-shell">
         <h2>{groupedPage!.h2[0]}</h2>
-        <p>
-          This page combines related calculator modes into a single workflow so users can solve
-          the same intent without jumping between thin pages.
-        </p>
+        <p>{groupedPage!.content.intro}</p>
         <h2>{groupedPage!.h2[1]}</h2>
+        <p>{groupedPage!.content.method}</p>
+
+        <h3>Where This Calculator Helps</h3>
+        <ul>
+          {groupedPage!.content.useCases.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+
+        <h3>Input Tips for Better Results</h3>
+        <ul>
+          {groupedPage!.content.inputTips.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+
         <p>
-          Switch modes above to use the exact formula you need. The formula names stay inside the
-          page content and calculator modules while the page title remains broad and user-focused.
+          <strong>Pro Tip:</strong> {groupedPage!.content.proTip}
         </p>
       </section>
 

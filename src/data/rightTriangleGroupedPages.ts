@@ -11,6 +11,13 @@ export type GroupedCalculatorPage = {
   includedToolIds: number[];
   intent: string;
   relatedSlugs: string[];
+  content: {
+    intro: string;
+    method: string;
+    useCases: string[];
+    inputTips: string[];
+    proTip: string;
+  };
 };
 
 export type GroupedCalculatorHubPage = {
@@ -82,7 +89,25 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       'right-triangle-angle-calculator',
       'right-triangle-side-from-angle-calculator',
       'right-triangle-measurements-calculator'
-    ]
+    ],
+    content: {
+      intro:
+        'Use this page when you know any two sides of a right triangle and need the third side quickly. It combines hypotenuse and missing-leg modes in one place so you can solve a, b, or c without switching pages.',
+      method:
+        'All side modes are based on the Pythagorean theorem. The calculator applies c^2 = a^2 + b^2 for hypotenuse problems and rearranges it to c^2 - leg^2 for missing-leg problems.',
+      useCases: [
+        'Checking field measurements for construction, framing, and layout diagonals.',
+        'Validating math homework and exam answers for right triangle side problems.',
+        'Confirming CAD or drawing dimensions before cutting material.'
+      ],
+      inputTips: [
+        'Keep all side inputs in the same unit before calculating.',
+        'For missing-leg modes, the hypotenuse must be larger than the known leg.',
+        'Round only at the final step to avoid accumulated precision errors.'
+      ],
+      proTip:
+        'If your triangle is close to a known triple like 3-4-5 or 5-12-13, compare results as a quick sanity check.'
+    }
   },
   {
     slug: 'right-triangle-measurements-calculator',
@@ -98,7 +123,25 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       'right-triangle-area-calculator',
       'right-triangle-radius-calculator',
       'right-triangle-side-calculator'
-    ]
+    ],
+    content: {
+      intro:
+        'This page focuses on boundary-length measurements for right triangles. It helps you calculate perimeter and semiperimeter for planning, estimation, and geometry workflows.',
+      method:
+        'Perimeter adds all three sides, while semiperimeter is exactly half of that total. These measurements are especially useful as foundation values for advanced triangle formulas.',
+      useCases: [
+        'Estimating trim, edging, wiring, or border material around triangular shapes.',
+        'Preparing semiperimeter values for formulas that require s in later calculations.',
+        'Comparing triangle sizes quickly when multiple design options are available.'
+      ],
+      inputTips: [
+        'Enter all three side lengths in the same unit for reliable totals.',
+        'If one side is missing, solve it first in the side calculator, then return here.',
+        'Semiperimeter should always be exactly half of the computed perimeter.'
+      ],
+      proTip:
+        'Use semiperimeter as a checkpoint value before moving into area-by-radius methods.'
+    }
   },
   {
     slug: 'right-triangle-trig-ratios-calculator',
@@ -114,7 +157,25 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       'right-triangle-angle-calculator',
       'right-triangle-side-from-angle-calculator',
       'special-right-triangle-calculator'
-    ]
+    ],
+    content: {
+      intro:
+        'Use this calculator to get sine, cosine, tangent, secant, cosecant, and cotangent from right triangle side values. It is designed for quick ratio lookup and verification.',
+      method:
+        'Each ratio is computed from opposite, adjacent, and hypotenuse relationships around a selected acute angle. Reciprocal ratios are included so you can move between direct and inverse forms easily.',
+      useCases: [
+        'Converting slope-style side information into trig ratio values.',
+        'Checking trigonometry assignments without manually reworking each fraction.',
+        'Preparing ratio values for angle-finding or side-from-angle calculations.'
+      ],
+      inputTips: [
+        'Make sure opposite and adjacent sides are assigned correctly for the chosen angle.',
+        'Ratios are unitless, so units cancel out as long as input units are consistent.',
+        'For sine and cosine, the leg used in the numerator must be smaller than the hypotenuse.'
+      ],
+      proTip:
+        'Compare tan(A) with sin(A)/cos(A) as a fast consistency check when debugging inputs.'
+    }
   },
   {
     slug: 'right-triangle-angle-calculator',
@@ -130,7 +191,25 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       'right-triangle-trig-ratios-calculator',
       'right-triangle-side-from-angle-calculator',
       'right-triangle-side-calculator'
-    ]
+    ],
+    content: {
+      intro:
+        'This page helps you find acute angles in a right triangle from side ratios or from the angle-sum rule. It is ideal when dimensions are known but direction or pitch is not.',
+      method:
+        'Inverse trigonometric functions (arcsin, arccos, arctan) return angle A from side relationships, while angle-sum modes convert between A and B with A + B = 90 degrees.',
+      useCases: [
+        'Finding roof pitch and incline angles from measured side lengths.',
+        'Solving geometry and trigonometry problems that require angle recovery.',
+        'Converting side-based measurements into directional values for design and drafting.'
+      ],
+      inputTips: [
+        'Ensure the side ratio is valid before applying inverse trig (for example, a/c must be between 0 and 1).',
+        'Angles are output in degrees for practical interpretation.',
+        'If one acute angle is known, compute the other directly using 90 degrees minus that value.'
+      ],
+      proTip:
+        'When possible, compute the same angle with two ratio methods to confirm measurement quality.'
+    }
   },
   {
     slug: 'right-triangle-side-from-angle-calculator',
@@ -146,7 +225,25 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       'right-triangle-angle-calculator',
       'right-triangle-trig-ratios-calculator',
       'right-triangle-side-calculator'
-    ]
+    ],
+    content: {
+      intro:
+        'Use this page when you know an angle and at least one side and need a missing side. It combines sine, cosine, and tangent side-solvers in one practical workflow.',
+      method:
+        'The calculator applies direct trig side formulas such as a = c * sin(A), b = c * cos(A), and tangent-based conversions between opposite and adjacent legs.',
+      useCases: [
+        'Estimating ladder reach, ramp rise, or run from a known angle.',
+        'Solving field sketches where only one side and an angle were captured.',
+        'Converting angular design constraints into exact side dimensions.'
+      ],
+      inputTips: [
+        'Enter angle values in degrees, not radians.',
+        'Pick the mode that matches the side you already know (hypotenuse vs leg).',
+        'Avoid near-90-degree angle inputs in tangent modes when precision is critical.'
+      ],
+      proTip:
+        'After solving one side, use the side calculator to cross-check the full triangle.'
+    }
   },
   {
     slug: 'right-triangle-area-calculator',
@@ -162,7 +259,25 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       'right-triangle-measurements-calculator',
       'right-triangle-altitude-calculator',
       'right-triangle-radius-calculator'
-    ]
+    ],
+    content: {
+      intro:
+        'This page lets you calculate right triangle area using whichever inputs you already have. It supports area from legs, angle-based area forms, inradius-semiperimeter, and altitude-based formulas.',
+      method:
+        'Multiple area identities are available so you can solve from different known values without rewriting the triangle manually. This is useful when data comes from mixed sources.',
+      useCases: [
+        'Estimating floor, panel, or coverage area for triangular sections.',
+        'Comparing area outputs from different known inputs in engineering calculations.',
+        'Validating area values from drawings, classroom problems, or site measurements.'
+      ],
+      inputTips: [
+        'Use the mode that matches your known values instead of forcing conversions first.',
+        'Area outputs are squared units, so verify your unit interpretation.',
+        'If using angle-based area, ensure the angle is the included angle for that formula mode.'
+      ],
+      proTip:
+        'For high confidence, compute area with two different modes and compare the results.'
+    }
   },
   {
     slug: 'right-triangle-altitude-calculator',
@@ -178,7 +293,25 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       'right-triangle-area-calculator',
       'right-triangle-projection-calculator',
       'right-triangle-side-calculator'
-    ]
+    ],
+    content: {
+      intro:
+        'This calculator focuses on the altitude drawn from the right angle to the hypotenuse. It is useful when you need the internal height rather than an outer side length.',
+      method:
+        'You can solve altitude from sides using h = ab/c or from projection segments using h = sqrt(pq). Both are implemented as separate modes for different input scenarios.',
+      useCases: [
+        'Breaking a triangle into smaller geometric parts for analysis.',
+        'Deriving perpendicular distances in layout and surveying tasks.',
+        'Supporting area calculations that require hypotenuse-altitude form.'
+      ],
+      inputTips: [
+        'If entering sides, verify the hypotenuse is the largest side.',
+        'If entering projections, keep p and q non-negative and geometrically valid.',
+        'Altitude in a right triangle should be less than both leg lengths.'
+      ],
+      proTip:
+        'If you know p and q, also compute c = p + q to validate segment consistency.'
+    }
   },
   {
     slug: 'right-triangle-projection-calculator',
@@ -194,7 +327,25 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       'right-triangle-altitude-calculator',
       'right-triangle-side-calculator',
       'right-triangle-area-calculator'
-    ]
+    ],
+    content: {
+      intro:
+        'Use this page to solve hypotenuse segment and projection relationships (p and q). It is designed for projection theorems used in geometric proofs and derived-dimension problems.',
+      method:
+        'The modes apply projection identities such as a^2 = cp, b^2 = cq, and p + q = c, allowing you to move between legs, segments, and hypotenuse values efficiently.',
+      useCases: [
+        'Reconstructing missing dimensions when only diagonal segments are known.',
+        'Checking projection-theorem steps in geometry coursework.',
+        'Solving constrained design problems that are defined along a hypotenuse.'
+      ],
+      inputTips: [
+        'Projection segments p and q should be measured along the same hypotenuse.',
+        'Use non-negative values and check that segment totals make geometric sense.',
+        'After solving a leg from projection, verify with Pythagorean side relations.'
+      ],
+      proTip:
+        'Pair this calculator with altitude mode to verify h^2 = pq on the same triangle.'
+    }
   },
   {
     slug: 'right-triangle-radius-calculator',
@@ -210,7 +361,25 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       'right-triangle-measurements-calculator',
       'right-triangle-area-calculator',
       'right-triangle-side-calculator'
-    ]
+    ],
+    content: {
+      intro:
+        'This page calculates inradius and circumradius values for right triangles. It is useful for circle-based geometry tasks and clearance or fit calculations.',
+      method:
+        'Inradius is solved from side relations (r = (a + b - c)/2), while circumradius follows directly from the right-triangle rule R = c/2.',
+      useCases: [
+        'Designing inscribed or circumscribed circular features around triangular parts.',
+        'Checking geometry solutions involving triangle-circle relationships.',
+        'Deriving radius values needed for advanced area and construction formulas.'
+      ],
+      inputTips: [
+        'Ensure the triangle is valid and the hypotenuse is the longest side.',
+        'Circumradius depends only on hypotenuse, so c accuracy is critical.',
+        'Inradius should always return a positive value for a valid right triangle.'
+      ],
+      proTip:
+        'If radius values look unusual, re-check side validity with the side calculator first.'
+    }
   },
   {
     slug: 'special-right-triangle-calculator',
@@ -226,7 +395,25 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       'right-triangle-side-calculator',
       'right-triangle-trig-ratios-calculator',
       'right-triangle-angle-calculator'
-    ]
+    ],
+    content: {
+      intro:
+        'This page is optimized for 45-45-90 and 30-60-90 triangles, where side ratios are fixed. It gives instant results without full general-triangle solving.',
+      method:
+        'Each mode applies special-triangle identities like c = a * sqrt(2), a = c / sqrt(2), long leg = short leg * sqrt(3), and c = 2a, depending on the triangle type.',
+      useCases: [
+        'Fast exam solving when triangle type is known from the angle pattern.',
+        'Quick sanity checks before using full trigonometric workflows.',
+        'Drafting and fabrication tasks that commonly use standard angle triangles.'
+      ],
+      inputTips: [
+        'Confirm whether your triangle is 45-45-90 or 30-60-90 before selecting a mode.',
+        'In 30-60-90 problems, identify the short leg first to avoid ratio mistakes.',
+        'Keep radicals exact during intermediate steps, then round at the end if needed.'
+      ],
+      proTip:
+        'Use special-triangle output as a benchmark to check measurements from field data.'
+    }
   }
 ];
 
@@ -317,3 +504,4 @@ export const LEGACY_FORMULA_REDIRECTS: Record<string, string> = {
 export function getLegacyRedirectUrlBySlug(slug: string): string | undefined {
   return LEGACY_FORMULA_REDIRECTS[slug];
 }
+

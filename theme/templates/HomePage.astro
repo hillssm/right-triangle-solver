@@ -5,6 +5,7 @@ import Faq from 'theme/components/Faq.astro';
 import HomeSchema from 'theme/components/HomeSchema.astro';
 import HowItWorks from 'theme/components/HowItWorks.astro';
 import RightTriangleTool from 'theme/components/RightTriangleTool.astro';
+import { RIGHT_TRIANGLE_GROUPED_PAGES } from 'src/data/rightTriangleGroupedPages';
 import { localizePath } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
@@ -73,6 +74,35 @@ const chartRows = [
         labels={home.tool as any}
       />
     </div>
+  </section>
+
+  <section class="mt-8 section-shell prose-shell">
+    <h2>Right Triangle Calculator for Practical Problem Solving</h2>
+    <p>
+      This website is built to solve right triangle questions from real workflows, not only textbook examples.
+      You can move from side solving to angle finding, area, projections, altitude, and radius calculations with
+      clear formulas and step-by-step outputs.
+    </p>
+
+    <h2>Choose the Right Calculator by Goal</h2>
+    <ul>
+      {RIGHT_TRIANGLE_GROUPED_PAGES.map((page) => (
+        <li>
+          <a href={localizePath(locale, page.url)}>{page.h1}</a>: {page.intent}
+        </li>
+      ))}
+    </ul>
+
+    <h2>How to Get More Accurate Results</h2>
+    <p>
+      Use consistent units, choose the mode that matches your known values, and cross-check with a second
+      related calculator when possible. This quickly catches input mistakes and improves confidence in the result.
+    </p>
+    <ul>
+      <li>Start with side or angle modes to establish a reliable base triangle.</li>
+      <li>Use area, altitude, projection, and radius pages for derived geometry checks.</li>
+      <li>Keep rounding to the final step so intermediate calculations stay stable.</li>
+    </ul>
   </section>
 
   <div class="mt-8">

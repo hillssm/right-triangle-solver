@@ -4,6 +4,7 @@ import {
   RIGHT_TRIANGLE_GROUPED_PAGES
 } from 'src/data/rightTriangleGroupedPages';
 import { localizePath, type Locale } from 'theme/i18n/locales';
+import { getTranslations, pick } from 'theme/i18n/translations';
 
 interface Props {
   locale: Locale;
@@ -17,7 +18,20 @@ const {
   uiTools = 'Calculator Groups'
 } = Astro.props;
 
+const bundle = getTranslations(locale);
+const content = (bundle.content as Record<string, any>) ?? {};
+const grouped = (content.grouped as Record<string, any>) ?? {};
+const groupedUi = (grouped.ui as Record<string, any>) ?? {};
+const groupedHub = (grouped.hub as Record<string, any>) ?? {};
+const groupedPages = (grouped.pages as Record<string, any>) ?? {};
+
 const hubHref = localizePath(locale, RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.url);
+const hubTitle = pick(groupedHub, 'h1', RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.h1);
+const openToolLabel = pick(groupedUi, 'openTool', 'Open Tool');
+const getLocalizedPageTitle = (slug: string, fallback: string) => {
+  const localized = groupedPages[slug] as Record<string, unknown> | undefined;
+  return pick(localized ?? {}, 'h1', fallback);
+};
 const CARD_ICONS = [
   'calculate',
   'square_foot',
@@ -51,7 +65,7 @@ const CARD_ICONS = [
     <h2 id="calculator-catalog-heading" class="text-glow-primary font-headline text-3xl tracking-tight text-on-surface sm:text-4xl lg:text-5xl">
       {heading}
     </h2>
-    <a href={hubHref} class="btn-primary mt-6">Open {RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.h1}</a>
+    <a href={hubHref} class="btn-primary mt-6">{openToolLabel} {hubTitle}</a>
   </div>
 
   <div class="relative z-10 mx-auto mt-12 grid max-w-7xl gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
@@ -71,10 +85,10 @@ const CARD_ICONS = [
             </span>
           </div>
           <h3 class="mt-4 text-[15px] font-semibold leading-snug text-on-surface group-hover:text-primary">
-            {page.h1}
+            {getLocalizedPageTitle(page.slug, page.h1)}
           </h3>
         </div>
-        <p class="relative z-10 mt-5 text-[10px] uppercase tracking-[0.2em] text-primary">Open Tool</p>
+        <p class="relative z-10 mt-5 text-[10px] uppercase tracking-[0.2em] text-primary">{openToolLabel}</p>
       </a>
     ))}
   </div>

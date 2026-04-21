@@ -1,0 +1,12 @@
+---
+import AboutPage from 'theme/templates/AboutPage.astro';
+import { getLocaleFromParams, getLocaleStaticPaths } from 'theme/i18n/locales';
+
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
+
+const locale = getLocaleFromParams(Astro.params.locale);
+---
+
+<AboutPage locale={locale} />

@@ -111,11 +111,7 @@ export function stripLocalePrefix(path: string): string {
 }
 
 const EXCLUDED_FROM_LOCALIZATION = new Set([
-  'about-us',
-  'contact-us',
   'blog',
-  'terms',
-  'privacy',
   'sitemap'
 ]);
 

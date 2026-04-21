@@ -1,0 +1,295 @@
+---
+import type { Locale } from 'theme/i18n/locales';
+import { localizePath } from 'theme/i18n/locales';
+import { getTranslations, pick } from 'theme/i18n/translations';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import { site } from 'theme/utils/site';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const bundle = getTranslations(locale);
+const content = bundle.content as Record<string, any>;
+const terms = (content.terms as Record<string, any>) ?? {};
+const sections = (terms.sections as Record<string, any>) ?? {};
+const contactEmail = site.contactEmail || 'hello@righttrianglesolver.app';
+
+const updatedLabel = pick(terms, 'updatedLabel', 'Last updated: April 12, 2026');
+const summaryItems = Array.isArray(terms.quickSummaryItems)
+  ? terms.quickSummaryItems
+  : [
+      'This tool is for educational and informational use.',
+      'You are responsible for how you use results in real projects.',
+      'Do not misuse, attack, scrape, or disrupt the service.',
+      'We may improve or update the service over time.',
+      'If you continue using the site, you agree to these Terms.'
+    ];
+
+const defaultToc = {
+  acceptance: '1. Acceptance of Terms',
+  service: '2. Service Description',
+  allowedUse: '3. Allowed and Restricted Use',
+  accountsData: '4. Data and Privacy',
+  intellectualProperty: '5. Intellectual Property',
+  disclaimer: '6. Disclaimer',
+  liability: '7. Limitation of Liability',
+  changes: '8. Changes to Terms',
+  contact: '9. Contact'
+};
+
+const toc = (terms.toc as Record<string, string>) ?? {};
+const pageTitle = pick(terms, 'title', 'Terms');
+const pageDescription = pick(terms, 'description', 'Terms and conditions');
+const canonicalPath = localizePath(locale, '/terms/');
+
+const acceptanceSection = (sections.acceptance as Record<string, any>) ?? {};
+const serviceSection = (sections.service as Record<string, any>) ?? {};
+const allowedUseSection = (sections.allowedUse as Record<string, any>) ?? {};
+const accountsDataSection = (sections.accountsData as Record<string, any>) ?? {};
+const intellectualPropertySection = (sections.intellectualProperty as Record<string, any>) ?? {};
+const disclaimerSection = (sections.disclaimer as Record<string, any>) ?? {};
+const liabilitySection = (sections.liability as Record<string, any>) ?? {};
+const changesSection = (sections.changes as Record<string, any>) ?? {};
+const contactSection = (sections.contact as Record<string, any>) ?? {};
+
+const allowedItems = Array.isArray(allowedUseSection.allowedItems)
+  ? allowedUseSection.allowedItems
+  : [
+      'Personal learning and classroom support.',
+      'Research and non-harmful educational reference.',
+      'Reasonable sharing of links to our public pages.'
+    ];
+
+const restrictedItems = Array.isArray(allowedUseSection.restrictedItems)
+  ? allowedUseSection.restrictedItems
+  : [
+      'Attempting to overload, scrape at abusive rates, or disrupt the site.',
+      'Reverse engineering, security probing, or bypassing access controls.',
+      'Using the site for unlawful, harmful, or deceptive activity.',
+      'Misrepresenting our content as official professional advice.'
+    ];
+---
+
+<BaseLayout
+  locale={locale}
+  title={pageTitle}
+  description={pageDescription}
+  canonicalPath={canonicalPath}
+>
+  <header class="mx-auto mb-10 w-full max-w-4xl text-center">
+    <p class="font-label text-xs uppercase tracking-widest text-primary">
+      {pick(terms, 'badge', 'Agreement')}
+    </p>
+    <h1 class="mt-3 text-3xl font-headline text-on-surface sm:text-4xl lg:text-5xl">
+      {pick(terms, 'heading', 'Terms of Use')}
+    </h1>
+    <p class="mt-2 text-xs uppercase tracking-wide text-outline">{updatedLabel}</p>
+    <p class="mx-auto mt-4 max-w-3xl text-sm leading-relaxed text-on-surface-variant">
+      {pick(
+        terms,
+        'intro',
+        'These Terms explain what you can expect from Right Triangle Solver and what we ask from you in return. We wrote this page to be clear, readable, and practical.'
+      )}
+    </p>
+  </header>
+
+  <section class="mx-auto mb-6 w-full max-w-4xl section-shell">
+    <h2 class="text-xl font-headline text-on-surface">
+      {pick(terms, 'quickSummaryTitle', 'Quick Summary')}
+    </h2>
+    <ul class="mt-4 space-y-2 text-sm leading-relaxed text-on-surface-variant">
+      {summaryItems.map((item: string) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="mx-auto mb-6 w-full max-w-4xl section-shell">
+    <h2 class="text-xl font-headline text-on-surface">
+      {pick(terms, 'contentsTitle', 'Contents')}
+    </h2>
+    <nav aria-label="Terms sections" class="mt-4 grid gap-2 sm:grid-cols-2">
+      <a href="#acceptance" class="text-sm text-primary hover:text-primary-fixed">
+        {pick(toc, 'acceptance', defaultToc.acceptance)}
+      </a>
+      <a href="#service" class="text-sm text-primary hover:text-primary-fixed">
+        {pick(toc, 'service', defaultToc.service)}
+      </a>
+      <a href="#allowed-use" class="text-sm text-primary hover:text-primary-fixed">
+        {pick(toc, 'allowedUse', defaultToc.allowedUse)}
+      </a>
+      <a href="#accounts-data" class="text-sm text-primary hover:text-primary-fixed">
+        {pick(toc, 'accountsData', defaultToc.accountsData)}
+      </a>
+      <a href="#intellectual-property" class="text-sm text-primary hover:text-primary-fixed">
+        {pick(toc, 'intellectualProperty', defaultToc.intellectualProperty)}
+      </a>
+      <a href="#disclaimer" class="text-sm text-primary hover:text-primary-fixed">
+        {pick(toc, 'disclaimer', defaultToc.disclaimer)}
+      </a>
+      <a href="#liability" class="text-sm text-primary hover:text-primary-fixed">
+        {pick(toc, 'liability', defaultToc.liability)}
+      </a>
+      <a href="#changes" class="text-sm text-primary hover:text-primary-fixed">
+        {pick(toc, 'changes', defaultToc.changes)}
+      </a>
+      <a href="#contact" class="text-sm text-primary hover:text-primary-fixed">
+        {pick(toc, 'contact', defaultToc.contact)}
+      </a>
+    </nav>
+  </section>
+
+  <article class="mx-auto w-full max-w-4xl section-shell prose-shell">
+    <div class="space-y-8 text-on-surface-variant">
+      <section id="acceptance">
+        <h2>{pick(acceptanceSection, 'title', '1. Acceptance of Terms')}</h2>
+        <p>
+          {pick(
+            acceptanceSection,
+            'paragraph1',
+            'By accessing or using Right Triangle Solver, you agree to these Terms of Use and to our Privacy Policy. If you do not agree, please do not use the site.'
+          )}
+        </p>
+        <p>
+          {pick(
+            acceptanceSection,
+            'paragraph2',
+            'You represent that you are using the site in compliance with local laws and that you have the authority to accept these Terms.'
+          )}
+        </p>
+      </section>
+
+      <section id="service">
+        <h2>{pick(serviceSection, 'title', '2. Service Description')}</h2>
+        <p>
+          {pick(
+            serviceSection,
+            'paragraph1',
+            'Right Triangle Solver provides calculators, formula references, and educational geometry content. We aim to keep calculations accurate and helpful, but we cannot guarantee that every result is error-free for every possible input, interpretation, or real-world condition.'
+          )}
+        </p>
+        <p>
+          {pick(
+            serviceSection,
+            'paragraph2',
+            'The service is intended to support learning and general problem-solving. It is not a substitute for professional engineering, legal, academic, or safety-critical review.'
+          )}
+        </p>
+      </section>
+
+      <section id="allowed-use">
+        <h2>{pick(allowedUseSection, 'title', '3. Allowed and Restricted Use')}</h2>
+        <h3>{pick(allowedUseSection, 'allowedTitle', 'Allowed use includes:')}</h3>
+        <ul>
+          {allowedItems.map((item: string) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+
+        <h3>{pick(allowedUseSection, 'restrictedTitle', 'Restricted use includes:')}</h3>
+        <ul>
+          {restrictedItems.map((item: string) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section id="accounts-data">
+        <h2>{pick(accountsDataSection, 'title', '4. Data and Privacy')}</h2>
+        <p>
+          {pick(
+            accountsDataSection,
+            'paragraph1',
+            'Your use of the site is also governed by our Privacy Policy. Please review it to understand how we handle information related to your use.'
+          )}
+        </p>
+        <p>
+          {pick(
+            accountsDataSection,
+            'paragraph2',
+            'If you submit messages through a contact form, you are responsible for ensuring that the information you provide is accurate and appropriate to share.'
+          )}
+        </p>
+      </section>
+
+      <section id="intellectual-property">
+        <h2>{pick(intellectualPropertySection, 'title', '5. Intellectual Property')}</h2>
+        <p>
+          {pick(
+            intellectualPropertySection,
+            'paragraph1',
+            'Site content, design elements, branding, and original educational material are protected by applicable intellectual property laws unless otherwise noted.'
+          )}
+        </p>
+        <p>
+          {pick(
+            intellectualPropertySection,
+            'paragraph2',
+            'You may reference or quote small portions of public content with clear attribution. Do not copy, republish, or redistribute substantial parts of the site in a way that competes with or misrepresents our service.'
+          )}
+        </p>
+      </section>
+
+      <section id="disclaimer">
+        <h2>{pick(disclaimerSection, 'title', '6. Disclaimer of Warranties')}</h2>
+        <p>
+          {pick(
+            disclaimerSection,
+            'paragraph1',
+            'The service is provided on an "as is" and "as available" basis. To the maximum extent permitted by law, we disclaim warranties of any kind, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement.'
+          )}
+        </p>
+      </section>
+
+      <section id="liability">
+        <h2>{pick(liabilitySection, 'title', '7. Limitation of Liability')}</h2>
+        <p>
+          {pick(
+            liabilitySection,
+            'paragraph1',
+            'To the maximum extent permitted by law, Right Triangle Solver and its operators are not liable for indirect, incidental, special, consequential, or punitive damages, or for loss of profits, data, goodwill, or business opportunities arising from your use of the service.'
+          )}
+        </p>
+        <p>
+          {pick(
+            liabilitySection,
+            'paragraph2',
+            'You are responsible for validating outputs before using them in exams, coursework submissions, engineering calculations, or any high-impact decision.'
+          )}
+        </p>
+      </section>
+
+      <section id="changes">
+        <h2>{pick(changesSection, 'title', '8. Changes to Terms and Service')}</h2>
+        <p>
+          {pick(
+            changesSection,
+            'paragraph1',
+            'We may update these Terms to reflect product, legal, or operational changes. When updates are material, we will revise the "Last updated" date on this page.'
+          )}
+        </p>
+        <p>
+          {pick(
+            changesSection,
+            'paragraph2',
+            'Continuing to use the site after updates means you accept the revised Terms.'
+          )}
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>{pick(contactSection, 'title', '9. Contact')}</h2>
+        <p>
+          {pick(
+            contactSection,
+            'prefix',
+            'Questions about these Terms can be sent to'
+          )}{' '}
+          <a href={`mailto:${contactEmail}`}>{contactEmail}</a>.
+        </p>
+      </section>
+    </div>
+  </article>
+</BaseLayout>

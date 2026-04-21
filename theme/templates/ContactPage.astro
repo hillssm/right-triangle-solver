@@ -1,0 +1,168 @@
+---
+import ContactForm from 'theme/components/ContactForm.astro';
+import type { Locale } from 'theme/i18n/locales';
+import { localizePath } from 'theme/i18n/locales';
+import { getTranslations, pick } from 'theme/i18n/translations';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import { site } from 'theme/utils/site';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const bundle = getTranslations(locale);
+const content = bundle.content as Record<string, any>;
+const common = bundle.common as Record<string, any>;
+const contact = (content.contact as Record<string, any>) ?? {};
+const commonWords = (common.common as Record<string, any>) ?? {};
+const contactEmail = site.contactEmail || 'hello@righttrianglesolver.app';
+
+const supportIcons = ['mail', 'schedule', 'support_agent'];
+const defaultSupportChannels = [
+  {
+    title: 'Email Support',
+    value: contactEmail,
+    description: 'Best for bug reports, account issues, or detailed questions.'
+  },
+  {
+    title: 'Typical Reply Time',
+    value: 'Within 1 business day',
+    description: 'We usually respond quickly on weekdays.'
+  },
+  {
+    title: 'Best Message Format',
+    value: 'Short + specific',
+    description: 'Include what you tried, expected result, and what happened.'
+  }
+];
+
+const supportChannels = defaultSupportChannels.map((fallback, index) => {
+  const raw = Array.isArray(contact.supportChannels) ? contact.supportChannels[index] : null;
+  const rawMap = (raw as Record<string, unknown>) ?? {};
+  const valueFallback = index === 0 ? contactEmail : fallback.value;
+
+  return {
+    title: pick(rawMap, 'title', fallback.title),
+    value: pick(rawMap, 'value', valueFallback),
+    description: pick(rawMap, 'description', fallback.description),
+    href: index === 0 ? `mailto:${contactEmail}` : null
+  };
+});
+
+const beforeYouSend = Array.isArray(contact.beforeYouSendItems)
+  ? contact.beforeYouSendItems
+  : [
+      'Check our FAQs first for common calculator and formula questions.',
+      'Do not include sensitive personal, financial, or confidential data.',
+      'If reporting a bug, include the page URL and the exact values entered.'
+    ];
+
+const checklist = Array.isArray(contact.checklistItems)
+  ? contact.checklistItems
+  : [
+      'What you were trying to do',
+      'Inputs you entered',
+      'Expected outcome vs actual outcome',
+      'Device/browser information (if relevant)'
+    ];
+
+const pageTitle = pick(contact, 'title', 'Contact Us');
+const pageDescription = pick(contact, 'description', 'Get in touch');
+const canonicalPath = localizePath(locale, '/contact-us/');
+---
+
+<BaseLayout
+  locale={locale}
+  title={pageTitle}
+  description={pageDescription}
+  canonicalPath={canonicalPath}
+  schemaPage="contact"
+>
+  <header class="mx-auto mb-10 w-full max-w-4xl text-center">
+    <p class="font-label text-xs uppercase tracking-widest text-primary">
+      {pick(contact, 'badge', 'Support')}
+    </p>
+    <h1 class="mt-3 text-3xl font-headline text-on-surface sm:text-4xl lg:text-5xl">
+      {pick(contact, 'heading', 'Contact Us')}
+    </h1>
+    <p class="mx-auto mt-4 max-w-2xl text-on-surface-variant">
+      {pick(contact, 'helper', 'Send us your message.')}
+    </p>
+  </header>
+
+  <section class="mx-auto mb-8 w-full max-w-4xl section-shell">
+    <h2 class="text-xl font-headline text-on-surface">
+      {pick(contact, 'fastestWaysTitle', 'Fastest Ways to Reach Us')}
+    </h2>
+    <div class="anim-stagger mt-5 grid gap-4 md:grid-cols-3">
+      {supportChannels.map((channel, index) => (
+        <article class="surface-card">
+          <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+            <span class="material-symbols-outlined text-lg text-primary">
+              {supportIcons[index] ?? 'mail'}
+            </span>
+          </div>
+          <h3 class="text-sm font-semibold text-on-surface">{channel.title}</h3>
+          {channel.href ? (
+            <a href={channel.href} class="mt-1 block break-all text-sm text-primary hover:text-primary-fixed">
+              {channel.value}
+            </a>
+          ) : (
+            <p class="mt-1 text-sm text-on-surface">{channel.value}</p>
+          )}
+          <p class="mt-2 text-xs leading-relaxed text-on-surface-variant">{channel.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <div class="mx-auto grid w-full max-w-4xl gap-8 lg:grid-cols-[0.95fr_1.05fr]">
+    <section class="section-shell prose-shell">
+      <h2>{pick(contact, 'beforeYouSendTitle', 'Before You Send')}</h2>
+      <ul>
+        {beforeYouSend.map((item: string) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+
+      <h3>{pick(contact, 'checklistTitle', 'Include These Details for Faster Help')}</h3>
+      <ul>
+        {checklist.map((item: string) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+
+      <div class="mt-6 rounded-lg border border-outline-variant/40 bg-surface-container-low p-4">
+        <p class="text-xs uppercase tracking-widest text-outline">
+          {pick(contact, 'linksTitle', 'Helpful Links')}
+        </p>
+        <div class="mt-3 flex flex-wrap gap-2">
+          <a href={localizePath(locale, '/faqs/')} class="btn-secondary px-4 py-2 text-xs">
+            {pick(contact, 'faqCta', 'Browse FAQs')}
+          </a>
+          <a href={localizePath(locale, '/privacy/')} class="btn-secondary px-4 py-2 text-xs">
+            {pick(contact, 'privacyCta', 'Privacy Policy')}
+          </a>
+          <a href={localizePath(locale, '/terms/')} class="btn-secondary px-4 py-2 text-xs">
+            {pick(contact, 'termsCta', 'Terms of Use')}
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <ContactForm
+      labels={{
+        name: pick(commonWords, 'name', 'Name'),
+        email: pick(commonWords, 'email', 'Email'),
+        message: pick(commonWords, 'message', 'Message'),
+        send: pick(commonWords, 'send', 'Send Message'),
+        sending: pick(commonWords, 'sending', 'Sending...'),
+        success: pick(commonWords, 'success', 'Message sent successfully.'),
+        apiError: pick(commonWords, 'apiError', 'We could not send your message.'),
+        networkError: pick(commonWords, 'networkError', 'Network error. Please retry.'),
+        fallbackEmail: pick(commonWords, 'fallbackEmail', 'Or email us directly at')
+      }}
+    />
+  </div>
+</BaseLayout>

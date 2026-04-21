@@ -1,0 +1,12 @@
+---
+import TermsPage from 'theme/templates/TermsPage.astro';
+import { getLocaleFromParams, getLocaleStaticPaths } from 'theme/i18n/locales';
+
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
+
+const locale = getLocaleFromParams(Astro.params.locale);
+---
+
+<TermsPage locale={locale} />

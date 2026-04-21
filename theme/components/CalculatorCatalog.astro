@@ -8,18 +8,28 @@ import { localizePath, type Locale } from 'theme/i18n/locales';
 interface Props {
   locale: Locale;
   heading?: string;
-  description?: string;
   uiTools?: string;
 }
 
 const {
   locale,
-  heading = 'Grouped Right Triangle Calculators',
-  description = 'Choose a broad calculator page and switch between related tool modes in one place.',
+  heading = 'Premium Calculator Collection',
   uiTools = 'Calculator Groups'
 } = Astro.props;
 
 const hubHref = localizePath(locale, RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.url);
+const CARD_ICONS = [
+  'calculate',
+  'square_foot',
+  'functions',
+  'angle',
+  'timeline',
+  'grid_on',
+  'straighten',
+  'schema',
+  'radio_button_checked',
+  'diamond'
+];
 ---
 
 <section
@@ -28,9 +38,10 @@ const hubHref = localizePath(locale, RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.url);
 >
   <div class="pointer-events-none absolute -left-32 -top-32 h-96 w-96 rounded-full bg-primary/10 blur-[100px]"></div>
   <div class="pointer-events-none absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-tertiary-fixed/10 blur-[120px]"></div>
+  <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(241,201,125,0.08),transparent_45%)]"></div>
 
   <div class="relative z-10 flex flex-col items-center text-center">
-    <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 backdrop-blur-md">
+    <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 backdrop-blur-md">
       <span class="material-symbols-outlined text-[14px] text-primary">auto_awesome</span>
       <span class="font-label text-xs uppercase tracking-[0.2em] text-primary">
         {RIGHT_TRIANGLE_GROUPED_PAGES.length} {uiTools}
@@ -40,35 +51,30 @@ const hubHref = localizePath(locale, RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.url);
     <h2 id="calculator-catalog-heading" class="text-glow-primary font-headline text-3xl tracking-tight text-on-surface sm:text-4xl lg:text-5xl">
       {heading}
     </h2>
-    <p class="mx-auto mt-4 max-w-2xl text-base text-on-surface-variant/80 sm:text-lg">
-      {description}
-    </p>
     <a href={hubHref} class="btn-primary mt-6">Open {RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.h1}</a>
   </div>
 
-  <div class="relative z-10 mx-auto mt-12 grid max-w-7xl gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+  <div class="relative z-10 mx-auto mt-12 grid max-w-7xl gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
     {RIGHT_TRIANGLE_GROUPED_PAGES.map((page, index) => (
       <a
         href={localizePath(locale, page.url)}
-        class="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-outline-variant/30 bg-surface-container-lowest/50 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:bg-surface-container-low"
+        class="group relative flex h-full min-h-[180px] flex-col justify-between overflow-hidden rounded-2xl border border-outline-variant/30 bg-surface-container-lowest/70 p-5 transition-all duration-500 hover:-translate-y-1.5 hover:border-primary/45 hover:shadow-[0_18px_40px_-24px_rgba(241,201,125,0.6)]"
       >
+        <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(145deg,rgba(241,201,125,0.1),transparent_45%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
         <div>
-          <p class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">
-            Group {String(index + 1).padStart(2, '0')}
-          </p>
-          <h3 class="mt-3 text-lg font-semibold leading-snug text-on-surface group-hover:text-primary">
+          <div class="flex items-center justify-between">
+            <span class="font-label text-[10px] uppercase tracking-[0.22em] text-outline">
+              {String(index + 1).padStart(2, '0')}
+            </span>
+            <span class="flex h-8 w-8 items-center justify-center rounded-lg border border-primary/25 bg-primary/10 text-primary transition-transform duration-500 group-hover:scale-110">
+              <span class="material-symbols-outlined text-[16px]">{CARD_ICONS[index] ?? 'calculate'}</span>
+            </span>
+          </div>
+          <h3 class="mt-4 text-[15px] font-semibold leading-snug text-on-surface group-hover:text-primary">
             {page.h1}
           </h3>
-          <p class="mt-2 text-sm text-on-surface-variant">{page.intent}</p>
         </div>
-
-        <div class="mt-5 space-y-2">
-          <p class="text-[11px] uppercase tracking-widest text-primary">
-            {page.includedToolIds.length} tool modes
-          </p>
-          <p class="text-xs text-outline">{page.h2[0]}</p>
-          <p class="text-xs text-outline">{page.h2[1]}</p>
-        </div>
+        <p class="relative z-10 mt-5 text-[10px] uppercase tracking-[0.2em] text-primary">Open Tool</p>
       </a>
     ))}
   </div>

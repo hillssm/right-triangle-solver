@@ -13,15 +13,33 @@
   const btn = document.getElementById('back-to-top');
 
   if (btn) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 400) {
+    let isVisible = false;
+    let ticking = false;
+
+    const setVisibility = (nextVisible) => {
+      if (nextVisible === isVisible) return;
+      isVisible = nextVisible;
+
+      if (nextVisible) {
         btn.classList.remove('translate-y-20', 'opacity-0');
         btn.classList.add('translate-y-0', 'opacity-100');
       } else {
         btn.classList.add('translate-y-20', 'opacity-0');
         btn.classList.remove('translate-y-0', 'opacity-100');
       }
-    });
+    };
+
+    const handleScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(() => {
+        setVisibility(window.scrollY > 400);
+        ticking = false;
+      });
+    };
+
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     btn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });

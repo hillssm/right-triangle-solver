@@ -128,47 +128,59 @@ const normalizePath = (path: string) => {
       const header = currentScript.closest('header');
       if (!header) return;
 
-      const toggleButton = header.querySelector('[data-menu-toggle]');
-      const closeButton = header.querySelector('[data-menu-close]');
-      const panel = header.querySelector('[data-mobile-panel]');
-      const overlay = header.querySelector('[data-mobile-overlay]');
-      const openIcon = header.querySelector('[data-icon-open]');
-      const closeIcon = header.querySelector('[data-icon-close]');
-      const mobileLinks = header.querySelectorAll('[data-mobile-link]');
+      const initMobileMenu = () => {
+        const toggleButton = header.querySelector('[data-menu-toggle]');
+        const closeButton = header.querySelector('[data-menu-close]');
+        const panel = header.querySelector('[data-mobile-panel]');
+        const overlay = header.querySelector('[data-mobile-overlay]');
+        const openIcon = header.querySelector('[data-icon-open]');
+        const closeIcon = header.querySelector('[data-icon-close]');
+        const mobileLinks = header.querySelectorAll('[data-mobile-link]');
 
-      if (!toggleButton || !panel || !overlay || !openIcon || !closeIcon) {
-        return;
-      }
-
-      const setMenuState = (isOpen) => {
-        toggleButton.setAttribute('aria-expanded', String(isOpen));
-        panel.setAttribute('aria-hidden', String(!isOpen));
-        overlay.setAttribute('aria-hidden', String(!isOpen));
-        if (isOpen) {
-          panel.removeAttribute('inert');
-        } else {
-          panel.setAttribute('inert', '');
+        if (!toggleButton || !panel || !overlay || !openIcon || !closeIcon) {
+          return;
         }
 
-        panel.classList.toggle('translate-x-full', !isOpen);
-        overlay.classList.toggle('hidden', !isOpen);
-        openIcon.classList.toggle('hidden', isOpen);
-        closeIcon.classList.toggle('hidden', !isOpen);
+        const setMenuState = (isOpen) => {
+          toggleButton.setAttribute('aria-expanded', String(isOpen));
+          panel.setAttribute('aria-hidden', String(!isOpen));
+          overlay.setAttribute('aria-hidden', String(!isOpen));
+          if (isOpen) {
+            panel.removeAttribute('inert');
+          } else {
+            panel.setAttribute('inert', '');
+          }
 
-        document.body.style.overflow = isOpen ? 'hidden' : '';
+          panel.classList.toggle('translate-x-full', !isOpen);
+          overlay.classList.toggle('hidden', !isOpen);
+          openIcon.classList.toggle('hidden', isOpen);
+          closeIcon.classList.toggle('hidden', !isOpen);
+
+          document.body.style.overflow = isOpen ? 'hidden' : '';
+        };
+
+        toggleButton.addEventListener('click', () => {
+          const expanded = toggleButton.getAttribute('aria-expanded') === 'true';
+          setMenuState(!expanded);
+        });
+
+        closeButton?.addEventListener('click', () => setMenuState(false));
+        overlay.addEventListener('click', () => setMenuState(false));
+
+        mobileLinks.forEach((link) => {
+          link.addEventListener('click', () => setMenuState(false));
+        });
       };
 
-      toggleButton.addEventListener('click', () => {
-        const expanded = toggleButton.getAttribute('aria-expanded') === 'true';
-        setMenuState(!expanded);
-      });
+      const deferredInit = () => {
+        window.setTimeout(initMobileMenu, 0);
+      };
 
-      closeButton?.addEventListener('click', () => setMenuState(false));
-      overlay.addEventListener('click', () => setMenuState(false));
-
-      mobileLinks.forEach((link) => {
-        link.addEventListener('click', () => setMenuState(false));
-      });
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', deferredInit, { once: true });
+      } else {
+        deferredInit();
+      }
     })();
   </script>
 </header>

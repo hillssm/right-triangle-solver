@@ -261,6 +261,10 @@
       animation: none;
     }
 
+    .section-shell-lite {
+      box-shadow: none;
+    }
+
     .section-shell::before {
       display: none;
     }
@@ -269,6 +273,23 @@
     .lux-stat,
     .stat-value {
       animation: none;
+    }
+
+    .btn-primary::before {
+      display: none;
+      animation: none;
+    }
+
+    .text-gradient-primary {
+      background: none;
+      -webkit-text-fill-color: currentColor;
+      color: var(--color-primary);
+    }
+
+    .text-gradient-secondary {
+      background: none;
+      -webkit-text-fill-color: currentColor;
+      color: var(--color-tertiary);
     }
   }
 

@@ -1,5 +1,5 @@
 ---
-import 'src/styles/global.css';
+import globalStylesheetUrl from 'src/styles/global.css?url';
 
 import Footer from 'theme/components/Footer.astro';
 import Header from 'theme/components/Header.astro';
@@ -129,6 +129,8 @@ const footerCommonLabels = {
     <meta name="generator" content={Astro.generator} />
     <title>{siteTitle}</title>
     <meta name="description" content={pageDescription} />
+    <link rel="preload" href={globalStylesheetUrl} as="style" />
+    <link rel="stylesheet" href={globalStylesheetUrl} />
     <link rel="canonical" href={canonicalUrl} />
 
     {!isEnglishOnlyPath(Astro.url.pathname) && (

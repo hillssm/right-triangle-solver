@@ -133,6 +133,7 @@ const UNIT_LIST = [
 ];
 
 const labelsJson = JSON.stringify(l);
+const unitsJson = JSON.stringify(UNIT_LIST);
 const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
 ---
 
@@ -141,6 +142,7 @@ const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
   aria-labelledby="tool-heading" 
   data-right-triangle-tool
   data-labels={labelsJson}
+  data-unit-list={unitsJson}
   data-tool-module-url={rightTriangleToolModuleUrl}
 >
   <div class="grid gap-6 sm:grid-cols-[1.1fr_0.9fr] lg:gap-8">
@@ -155,7 +157,7 @@ const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
             <div class="relative flex min-w-0">
               <input class="input-shell min-w-0 flex-1 rounded-r-none border-r-0" type="text" inputmode="decimal" name="a" />
               <select name="a_unit" class="w-[6.25rem] shrink-0 truncate rounded-r-lg border border-outline/30 bg-surface-container px-2 text-[10px] text-on-surface-variant focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary sm:w-28 sm:text-xs">
-                {UNIT_LIST.map(u => <option value={u.val}>({u.val}) {u.label}</option>)}
+                <option value="m">(m) {units.m || 'meter'}</option>
               </select>
             </div>
             <span class="min-h-[1rem] text-xs text-error" data-error-for="a"></span>
@@ -166,7 +168,7 @@ const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
             <div class="relative flex min-w-0">
               <input class="input-shell min-w-0 flex-1 rounded-r-none border-r-0" type="text" inputmode="decimal" name="b" />
               <select name="b_unit" class="w-[6.25rem] shrink-0 truncate rounded-r-lg border border-outline/30 bg-surface-container px-2 text-[10px] text-on-surface-variant focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary sm:w-28 sm:text-xs">
-                {UNIT_LIST.map(u => <option value={u.val}>({u.val}) {u.label}</option>)}
+                <option value="m">(m) {units.m || 'meter'}</option>
               </select>
             </div>
             <span class="min-h-[1rem] text-xs text-error" data-error-for="b"></span>
@@ -177,7 +179,7 @@ const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
             <div class="relative flex min-w-0">
               <input class="input-shell min-w-0 flex-1 rounded-r-none border-r-0" type="text" inputmode="decimal" name="c" />
               <select name="c_unit" class="w-[6.25rem] shrink-0 truncate rounded-r-lg border border-outline/30 bg-surface-container px-2 text-[10px] text-on-surface-variant focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary sm:w-28 sm:text-xs">
-                {UNIT_LIST.map(u => <option value={u.val}>({u.val}) {u.label}</option>)}
+                <option value="m">(m) {units.m || 'meter'}</option>
               </select>
             </div>
             <span class="min-h-[1rem] text-xs text-error" data-error-for="c"></span>
@@ -318,8 +320,35 @@ const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
 
       const moduleUrl = section.getAttribute('data-tool-module-url');
       if (!moduleUrl) return;
+      const unitListRaw = section.getAttribute('data-unit-list');
 
       let isLoaded = false;
+      let unitsHydrated = false;
+
+      const hydrateUnitOptions = () => {
+        if (unitsHydrated || !unitListRaw) return;
+        let parsedList = [];
+        try {
+          parsedList = JSON.parse(unitListRaw);
+        } catch {
+          parsedList = [];
+        }
+        if (!Array.isArray(parsedList) || parsedList.length === 0) return;
+
+        const optionMarkup = parsedList
+          .map((unit) => `<option value="${unit.val}">(${unit.val}) ${unit.label}</option>`)
+          .join('');
+
+        section.querySelectorAll('select[name="a_unit"], select[name="b_unit"], select[name="c_unit"]').forEach((select) => {
+          const currentValue = select.value || 'm';
+          select.innerHTML = optionMarkup;
+          if (parsedList.some((unit) => unit.val === currentValue)) {
+            select.value = currentValue;
+          }
+        });
+
+        unitsHydrated = true;
+      };
 
       const loadTriangleTool = () => {
         if (isLoaded) return;
@@ -340,11 +369,15 @@ const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
       const shouldEagerLoadFromPreset = hasPresetSide && presentPresetCount >= 2;
 
       if (shouldEagerLoadFromPreset) {
+        hydrateUnitOptions();
         loadTriangleTool();
         return;
       }
 
-      const eagerIntentLoad = () => loadTriangleTool();
+      const eagerIntentLoad = () => {
+        hydrateUnitOptions();
+        loadTriangleTool();
+      };
 
       section.addEventListener('focusin', eagerIntentLoad, { once: true });
       section.addEventListener('pointerdown', eagerIntentLoad, { once: true, passive: true });

@@ -212,10 +212,18 @@ const footerCommonLabels = {
     <link rel="dns-prefetch" href="//fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href={textFontStylesheetUrl} media="print" onload="this.media='all'" />
+    <script is:inline define:vars={{ textFontStylesheetUrl }}>
+      (() => {
+        if (!window.matchMedia('(min-width: 40rem)').matches) return;
+        const textFonts = document.createElement('link');
+        textFonts.rel = 'stylesheet';
+        textFonts.href = textFontStylesheetUrl;
+        document.head.appendChild(textFonts);
+      })();
+    </script>
     <link rel="stylesheet" href={iconFontStylesheetUrl} media="print" onload="this.media='all'" />
     <noscript>
-      <link rel="stylesheet" href={textFontStylesheetUrl} />
+      <link rel="stylesheet" href={textFontStylesheetUrl} media="(min-width: 40rem)" />
       <link rel="stylesheet" href={iconFontStylesheetUrl} />
     </noscript>
 

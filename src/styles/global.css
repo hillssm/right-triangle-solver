@@ -253,6 +253,14 @@
   }
 
   @media (max-width: 39.999rem) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    body::before {
+      display: none;
+    }
+
     .defer-render-mobile {
       content-visibility: auto;
       contain-intrinsic-size: 900px;

@@ -31,7 +31,7 @@ const normalizePath = (path: string) => {
       data-mobile-link
     >
       <div class="flex h-9 w-9 items-center justify-center rounded-md border border-outline-variant/70 bg-surface-container-low shadow-[0_12px_28px_-20px_rgba(241,201,125,0.35)] transition-transform duration-300 group-hover:scale-105">
-        <img src={logo} alt={`${siteTitle} logo`} class="h-5 w-auto" loading="lazy" />
+        <img src={logo} alt={`${siteTitle} logo`} width="240" height="240" class="h-5 w-auto" loading="lazy" />
       </div>
       <span class="font-headline text-sm font-medium tracking-[-0.02em] text-on-surface sm:text-base">{siteTitle}</span>
     </a>
@@ -79,12 +79,13 @@ const normalizePath = (path: string) => {
     id="mobile-menu"
     data-mobile-panel
     aria-hidden="true"
+    inert
     class="fixed right-0 top-0 h-full w-[85%] max-w-sm translate-x-full border-l border-outline-variant/70 bg-surface-container-low p-6 shadow-[var(--shadow-luxury)] transition-transform duration-300 md:hidden"
   >
     <div class="mb-8 flex items-center justify-between">
       <div class="flex items-center gap-3">
         <div class="flex h-8 w-8 items-center justify-center rounded-md border border-outline-variant/70 bg-surface-container-high">
-          <img src={logo} alt="" class="h-4 w-auto" loading="lazy" />
+          <img src={logo} alt="" width="240" height="240" class="h-4 w-auto" loading="lazy" />
         </div>
         <span class="text-sm font-semibold text-on-surface">{siteTitle}</span>
       </div>
@@ -143,6 +144,11 @@ const normalizePath = (path: string) => {
         toggleButton.setAttribute('aria-expanded', String(isOpen));
         panel.setAttribute('aria-hidden', String(!isOpen));
         overlay.setAttribute('aria-hidden', String(!isOpen));
+        if (isOpen) {
+          panel.removeAttribute('inert');
+        } else {
+          panel.setAttribute('inert', '');
+        }
 
         panel.classList.toggle('translate-x-full', !isOpen);
         overlay.classList.toggle('hidden', !isOpen);

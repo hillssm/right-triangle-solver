@@ -62,7 +62,7 @@ export default defineConfig({
   site: 'https://righttrianglesolver.app',
   trailingSlash: 'always',
   build: {
-    inlineStylesheets: 'always'
+    inlineStylesheets: 'auto'
   },
   redirects: {
     ...legacyFormulaRedirects,

@@ -255,6 +255,21 @@
       content-visibility: auto;
       contain-intrinsic-size: 900px;
     }
+
+    .section-shell {
+      backdrop-filter: none;
+      animation: none;
+    }
+
+    .section-shell::before {
+      display: none;
+    }
+
+    .surface-card,
+    .lux-stat,
+    .stat-value {
+      animation: none;
+    }
   }
 
   .surface-card {

@@ -265,7 +265,7 @@ const localizedPath = localizePath(locale, '/');
     </div>
   </div>
 
-  <div class="mx-auto mt-8 grid w-full max-w-4xl gap-6 sm:gap-8">
+  <div class="defer-render-mobile mx-auto mt-8 grid w-full max-w-4xl gap-6 sm:gap-8">
     <section class="section-shell prose-shell">
       <h2>{pick(introSection, 'title', 'What Is a Right Triangle?')}</h2>
       <p>{pick(introSection, 'paragraph1', 'A right triangle is a triangle that has one angle exactly equal to 90°. That fixed right angle creates a stable geometry model used in school math, engineering layouts, architecture drawings, surveying, navigation, and technical design.')}</p>
@@ -374,7 +374,7 @@ const localizedPath = localizePath(locale, '/');
     </section>
   </div>
 
-  <div class="mt-8">
+  <div class="defer-render-mobile mt-8">
     <HowItWorks heading={pick(home, 'howHeading', 'How Right Triangle Solver works')}>
       <p slot="intro" class="mt-3 max-w-2xl text-sm text-on-surface-variant">
         {pick(home, 'howIntro', 'From input to proof-ready output in three clean steps.')}
@@ -405,7 +405,7 @@ const localizedPath = localizePath(locale, '/');
     </HowItWorks>
   </div>
 
-  <div class="mt-8">
+  <div class="defer-render-mobile mt-8">
     <ChartTableSection
       heading={pick(home, 'chartHeading', 'Reference Values')}
       subHeading={pick(home, 'chartSubHeading', 'Compare common right-triangle families and their hypotenuse values.')}
@@ -415,7 +415,7 @@ const localizedPath = localizePath(locale, '/');
     />
   </div>
 
-  <div class="mt-8">
+  <div class="defer-render-mobile mt-8">
     <CalculatorCatalog
       locale={locale}
       heading={pick(home, 'catalogHeading', 'Premium Calculator Collection')}
@@ -423,7 +423,7 @@ const localizedPath = localizePath(locale, '/');
     />
   </div>
 
-  <div class="mt-8">
+  <div class="defer-render-mobile mt-8">
     <Faq heading={pick(home, 'faqHeading', 'Frequently Asked Questions')} items={bundle.faq.slice(0, 6)} />
     <div class="mt-6 flex justify-center">
       <a href={localizePath(locale, '/faqs/')} class="btn-secondary flex items-center gap-2">

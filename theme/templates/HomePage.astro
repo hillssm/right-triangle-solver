@@ -242,15 +242,6 @@ const localizedPath = localizePath(locale, '/');
   canonicalPath={localizedPath}
   mainClass="mx-auto w-full max-w-[1200px] px-4 pb-8 sm:px-6 lg:px-8"
 >
-  <HomeSchema
-    slot="head"
-    locale={locale}
-    title={pageTitle}
-    description={pageDescription}
-    path={localizedPath}
-    faqs={bundle.faq}
-  />
-
   <header class="relative flex flex-col items-center justify-center py-10 text-center sm:py-16">
     <div class="pointer-events-none absolute -top-12 h-64 w-full bg-gradient-to-b from-[#1a1c19]/5 to-transparent opacity-30"></div>
     <h1 class="mx-auto max-w-4xl font-headline text-3xl font-bold tracking-tight text-[#5b4000] drop-shadow-sm sm:text-5xl lg:text-5xl">
@@ -440,4 +431,12 @@ const localizedPath = localizePath(locale, '/');
       </a>
     </div>
   </div>
+
+  <HomeSchema
+    locale={locale}
+    title={pageTitle}
+    description={pageDescription}
+    path={localizedPath}
+    faqs={bundle.faq}
+  />
 </BaseLayout>

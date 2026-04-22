@@ -2,6 +2,7 @@
 interface Props {
   heading: string;
   locale?: string;
+  shellClass?: string;
   labels?: {
     sideA?: string;
     sideB?: string;
@@ -51,7 +52,7 @@ interface Props {
 
 import { getTranslations } from '../i18n/translations';
 
-const { heading, locale = 'en', labels = {} } = Astro.props;
+const { heading, locale = 'en', shellClass = 'section-shell', labels = {} } = Astro.props;
 const bundle = getTranslations(locale as any);
 const units = bundle.units || {};
 
@@ -135,8 +136,8 @@ const labelsJson = JSON.stringify(l);
 const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
 ---
 
-<section 
-  class="section-shell h-full w-full min-w-0 justify-self-stretch" 
+<section
+  class:list={[shellClass, 'h-full w-full min-w-0 justify-self-stretch']}
   aria-labelledby="tool-heading" 
   data-right-triangle-tool
   data-labels={labelsJson}
@@ -234,7 +235,7 @@ const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
 
       </form>
 
-      <div class="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+      <div class="defer-render-mobile mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
         <div class="lux-data-cell"><div class="flex items-center justify-between gap-2"><span>{l.sideA}</span><span class="font-label text-[9px] uppercase tracking-[0.16em] text-outline" data-origin-a>-</span></div><strong data-result-a>-</strong></div>
         <div class="lux-data-cell"><div class="flex items-center justify-between gap-2"><span>{l.sideB}</span><span class="font-label text-[9px] uppercase tracking-[0.16em] text-outline" data-origin-b>-</span></div><strong data-result-b>-</strong></div>
         <div class="lux-data-cell"><div class="flex items-center justify-between gap-2"><span>{l.hypotenuseC}</span><span class="font-label text-[9px] uppercase tracking-[0.16em] text-outline" data-origin-c>-</span></div><strong data-result-hypotenuse>-</strong></div>
@@ -251,7 +252,7 @@ const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
       </div>
     </div>
 
-    <article class="surface-card border-outline-variant/65 bg-surface-container-low p-4 sm:p-6">
+    <article class="surface-card defer-render-mobile border-outline-variant/65 bg-surface-container-low p-4 sm:p-6">
       <div class="flex items-center justify-between gap-3">
         <div>
           <p class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">{l.visualizationTitle}</p>

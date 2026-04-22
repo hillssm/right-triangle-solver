@@ -224,6 +224,12 @@
     overflow: hidden;
   }
 
+  .section-shell-lite {
+    @apply rounded-xl border border-outline-variant/65 bg-surface-container p-6 shadow-[var(--shadow-soft)] sm:p-8;
+    position: relative;
+    overflow: hidden;
+  }
+
   .section-shell::before {
     content: "";
     position: absolute;
@@ -242,6 +248,13 @@
     mask-composite: exclude;
     -webkit-mask-composite: xor;
     pointer-events: none;
+  }
+
+  @media (max-width: 39.999rem) {
+    .defer-render-mobile {
+      content-visibility: auto;
+      contain-intrinsic-size: 900px;
+    }
   }
 
   .surface-card {

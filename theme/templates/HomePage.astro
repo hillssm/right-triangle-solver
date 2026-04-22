@@ -252,17 +252,18 @@ const localizedPath = localizePath(locale, '/');
     </p>
   </header>
 
-  <section class="section-shell relative w-full overflow-hidden">
+  <div class="relative w-full overflow-hidden">
     <div class="pointer-events-none absolute -left-10 -top-20 h-64 w-64 rounded-full bg-primary/14 blur-3xl"></div>
     <div class="pointer-events-none absolute -bottom-20 right-8 h-52 w-52 rounded-full bg-tertiary/14 blur-3xl"></div>
     <div class="relative w-full min-w-0">
       <RightTriangleTool
         locale={locale}
+        shellClass="section-shell-lite"
         heading={pick(home, 'toolHeading', 'Right Triangle Solver')}
         labels={home.tool as any}
       />
     </div>
-  </section>
+  </div>
 
   <div class="mx-auto mt-8 grid w-full max-w-4xl gap-6 sm:gap-8">
     <section class="section-shell prose-shell">

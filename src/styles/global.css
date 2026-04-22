@@ -171,6 +171,7 @@
   html {
     scroll-behavior: smooth;
     background: var(--color-background);
+    overflow-x: clip;
   }
 
   body {
@@ -180,6 +181,7 @@
     font-family: var(--font-body);
     min-height: 100vh;
     position: relative;
+    overflow-x: clip;
   }
 
   body::before {
@@ -259,10 +261,12 @@
     .section-shell {
       backdrop-filter: none;
       animation: none;
+      padding: 1rem;
     }
 
     .section-shell-lite {
       box-shadow: none;
+      padding: 1rem;
     }
 
     .section-shell::before {
@@ -290,6 +294,16 @@
       background: none;
       -webkit-text-fill-color: currentColor;
       color: var(--color-tertiary);
+    }
+
+    [data-triangle-form] .btn-primary,
+    [data-triangle-form] .btn-secondary {
+      width: 100%;
+      justify-content: center;
+    }
+
+    [data-triangle-form] .input-shell {
+      padding-inline: 0.75rem;
     }
   }
 

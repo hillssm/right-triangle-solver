@@ -1,8 +1,5 @@
 ---
 import {
-  LOCALE_LABELS,
-  SUPPORTED_LOCALES,
-  localizePath,
   type Locale
 } from 'theme/i18n/locales';
 
@@ -12,18 +9,11 @@ interface Props {
 }
 
 const { currentLocale } = Astro.props;
-const localeOptions = SUPPORTED_LOCALES.map((locale) => ({
-  locale,
-  label: LOCALE_LABELS[locale],
-  href: localizePath(locale, Astro.url.pathname),
-  active: locale === currentLocale
-}));
 ---
 
 <div
   class="relative inline-block text-left"
   data-language-switcher
-  data-switcher-options={JSON.stringify(localeOptions)}
 >
   <button
     type="button"
@@ -57,6 +47,14 @@ const localeOptions = SUPPORTED_LOCALES.map((locale) => ({
     const menuItemActiveClass = 'bg-primary/10 text-primary shadow-sm';
     const menuItemClass =
       'flex items-center justify-between rounded-lg px-2.5 py-2 text-[11px] font-medium transition-all duration-200 text-on-surface-variant hover:bg-surface-container-high hover:text-primary';
+
+    let sharedOptions: Array<{ locale: string; label: string; href: string; active: boolean }> = [];
+    try {
+      const sharedOptionsNode = document.getElementById('language-switcher-options');
+      sharedOptions = JSON.parse(sharedOptionsNode?.textContent || '[]');
+    } catch {
+      sharedOptions = [];
+    }
 
     const buildOptionsMarkup = (
       options: Array<{ locale: string; label: string; href: string; active: boolean }>
@@ -104,16 +102,9 @@ const localeOptions = SUPPORTED_LOCALES.map((locale) => ({
           return;
         }
 
-        let options: Array<{ locale: string; label: string; href: string; active: boolean }> = [];
-        try {
-          options = JSON.parse(switcher.getAttribute('data-switcher-options') || '[]');
-        } catch {
-          options = [];
-        }
-
         const ensureMenuBuilt = () => {
           if (panel.getAttribute('data-menu-built') === 'true') return;
-          panel.innerHTML = buildOptionsMarkup(options);
+          panel.innerHTML = buildOptionsMarkup(sharedOptions);
           panel.setAttribute('data-menu-built', 'true');
         };
 

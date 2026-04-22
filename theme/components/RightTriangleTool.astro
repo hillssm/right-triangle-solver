@@ -141,10 +141,11 @@ const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
   class:list={[shellClass, 'h-full w-full min-w-0 justify-self-stretch']}
   aria-labelledby="tool-heading" 
   data-right-triangle-tool
-  data-labels={labelsJson}
-  data-unit-list={unitsJson}
   data-tool-module-url={rightTriangleToolModuleUrl}
 >
+  <script type="application/json" data-labels-json set:html={labelsJson}></script>
+  <script type="application/json" data-unit-list-json set:html={unitsJson}></script>
+
   <div class="grid gap-6 sm:grid-cols-[1.1fr_0.9fr] lg:gap-8">
     <div>
       <h2 id="tool-heading" class="text-2xl sm:text-3xl">{heading}</h2>
@@ -320,7 +321,7 @@ const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
 
       const moduleUrl = section.getAttribute('data-tool-module-url');
       if (!moduleUrl) return;
-      const unitListRaw = section.getAttribute('data-unit-list');
+      const unitListRaw = section.querySelector('[data-unit-list-json]')?.textContent;
 
       let isLoaded = false;
       let unitsHydrated = false;

@@ -280,7 +280,13 @@
     };
 
     const initTriangleTool = (section: HTMLElement) => {
-      const l = JSON.parse(section.getAttribute('data-labels') || '{}');
+      const labelsNode = section.querySelector('[data-labels-json]');
+      let l: Record<string, string> = {};
+      try {
+        l = JSON.parse(labelsNode?.textContent || section.getAttribute('data-labels') || '{}');
+      } catch {
+        l = {};
+      }
       const form = section.querySelector('[data-triangle-form]') as HTMLFormElement | null;
       const statusEl = section.querySelector('[data-tool-status]') as HTMLElement | null;
       const formulaListEl = section.querySelector('[data-formula-list]') as HTMLElement | null;

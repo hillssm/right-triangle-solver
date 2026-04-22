@@ -6,6 +6,7 @@ import Header from 'theme/components/Header.astro';
 import BackToTop from 'theme/components/BackToTop.astro';
 import {
   DEFAULT_LOCALE,
+  LOCALE_LABELS,
   SUPPORTED_LOCALES,
   getDirection,
   getOgLocale,
@@ -68,63 +69,6 @@ const ogLocale = getOgLocale(locale);
 const ogImageUrl = toAbsoluteUrl(site.metaImage);
 const textFontStylesheetUrl =
   'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@200;300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=optional';
-const materialIconNames = [
-  'account_circle',
-  'add_circle',
-  'alternate_email',
-  'architecture',
-  'arrow_back',
-  'arrow_forward',
-  'auto_awesome',
-  'backspace',
-  'bar_chart',
-  'bolt',
-  'calculate',
-  'change_history',
-  'chat',
-  'check',
-  'check_circle',
-  'close',
-  'content_copy',
-  'diamond',
-  'edit',
-  'edit_note',
-  'emoji_events',
-  'expand_less',
-  'expand_more',
-  'explore',
-  'functions',
-  'groups',
-  'help',
-  'home',
-  'info',
-  'input',
-  'insights',
-  'language',
-  'library_books',
-  'lightbulb',
-  'local_fire_department',
-  'mail',
-  'menu',
-  'menu_book',
-  'person',
-  'play_arrow',
-  'precision_manufacturing',
-  'progress_activity',
-  'quiz',
-  'refresh',
-  'rocket_launch',
-  'search',
-  'send',
-  'settings',
-  'speed',
-  'star',
-  'target',
-  'timer',
-  'token',
-  'workspace_premium'
-];
-const iconFontStylesheetUrl = `https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=${materialIconNames.join(',')}&display=swap`;
 
 const socialUrls = Object.values(site.social).filter(Boolean);
 const headerNav = getLocalizedNavItems(locale, 'header', englishNav).map((item) => ({
@@ -174,6 +118,13 @@ const footerCommonLabels = {
   ...commonWords,
   ...footerWords
 };
+
+const languageSwitcherOptions = SUPPORTED_LOCALES.map((l) => ({
+  locale: l,
+  label: LOCALE_LABELS[l],
+  href: localizePath(l, Astro.url.pathname),
+  active: l === locale
+}));
 ---
 
 <!doctype html>
@@ -208,10 +159,6 @@ const footerCommonLabels = {
     <meta name="robots" content={robots} />
     <meta name="googlebot" content={googlebot} />
 
-    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script is:inline define:vars={{ textFontStylesheetUrl }}>
       (() => {
         if (!window.matchMedia('(min-width: 40rem)').matches) return;
@@ -221,10 +168,8 @@ const footerCommonLabels = {
         document.head.appendChild(textFonts);
       })();
     </script>
-    <link rel="stylesheet" href={iconFontStylesheetUrl} media="print" onload="this.media='all'" />
     <noscript>
       <link rel="stylesheet" href={textFontStylesheetUrl} media="(min-width: 40rem)" />
-      <link rel="stylesheet" href={iconFontStylesheetUrl} />
     </noscript>
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -257,6 +202,11 @@ const footerCommonLabels = {
     <meta name="twitter:card" content="summary_large_image" />
 
     <script is:inline type="application/ld+json" set:html={JSON.stringify(schemaGraph)}></script>
+    <script
+      id="language-switcher-options"
+      type="application/json"
+      set:html={JSON.stringify(languageSwitcherOptions)}
+    ></script>
 
     <slot name="head" />
   </head>

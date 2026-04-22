@@ -132,6 +132,7 @@ const UNIT_LIST = [
 ];
 
 const labelsJson = JSON.stringify(l);
+const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
 ---
 
 <section 
@@ -139,6 +140,7 @@ const labelsJson = JSON.stringify(l);
   aria-labelledby="tool-heading" 
   data-right-triangle-tool
   data-labels={labelsJson}
+  data-tool-module-url={rightTriangleToolModuleUrl}
 >
   <div class="grid gap-6 sm:grid-cols-[1.1fr_0.9fr] lg:gap-8">
     <div>
@@ -305,31 +307,49 @@ const labelsJson = JSON.stringify(l);
     </article>
   </div>
 
-  <script>
-    const loadTriangleTool = () => import('theme/scripts/right-triangle-tool');
+  <script is:inline>
+    (() => {
+      const currentScript = document.currentScript;
+      if (!currentScript) return;
 
-    const scheduleTriangleTool = () => {
-      const idleWindow = window as Window & {
-        requestIdleCallback?: (
-          callback: IdleRequestCallback,
-          options?: IdleRequestOptions
-        ) => number;
+      const section = currentScript.closest('[data-right-triangle-tool]');
+      if (!section) return;
+
+      const moduleUrl = section.getAttribute('data-tool-module-url');
+      if (!moduleUrl) return;
+
+      let isLoaded = false;
+
+      const loadTriangleTool = () => {
+        if (isLoaded) return;
+        isLoaded = true;
+        void import(moduleUrl);
       };
-      if (typeof idleWindow.requestIdleCallback === 'function') {
-        idleWindow.requestIdleCallback(() => {
-          void loadTriangleTool();
-        }, { timeout: 1200 });
-      } else {
-        window.setTimeout(() => {
-          void loadTriangleTool();
-        }, 300);
-      }
-    };
 
-    if (document.readyState === 'complete') {
-      scheduleTriangleTool();
-    } else {
-      window.addEventListener('load', scheduleTriangleTool, { once: true });
-    }
+      const scheduleIdleLoad = () => {
+        const idleWindow = window;
+        if (typeof idleWindow.requestIdleCallback === 'function') {
+          idleWindow.requestIdleCallback(() => {
+            loadTriangleTool();
+          }, { timeout: 5000 });
+        } else {
+          window.setTimeout(loadTriangleTool, 5000);
+        }
+      };
+
+      const eagerIntentLoad = () => {
+        loadTriangleTool();
+      };
+
+      section.addEventListener('focusin', eagerIntentLoad, { once: true });
+      section.addEventListener('pointerdown', eagerIntentLoad, { once: true, passive: true });
+      section.addEventListener('keydown', eagerIntentLoad, { once: true });
+
+      if (document.readyState === 'complete') {
+        scheduleIdleLoad();
+      } else {
+        window.addEventListener('load', scheduleIdleLoad, { once: true });
+      }
+    })();
   </script>
 </section>

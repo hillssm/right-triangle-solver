@@ -438,6 +438,6 @@ const localizedPath = localizePath(locale, '/');
     title={pageTitle}
     description={pageDescription}
     path={localizedPath}
-    faqs={bundle.faq}
+    faqs={bundle.faq.slice(0, 6)}
   />
 </BaseLayout>

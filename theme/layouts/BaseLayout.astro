@@ -68,8 +68,63 @@ const ogLocale = getOgLocale(locale);
 const ogImageUrl = toAbsoluteUrl(site.metaImage);
 const textFontStylesheetUrl =
   'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@200;300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=optional';
-const iconFontStylesheetUrl =
-  'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap';
+const materialIconNames = [
+  'account_circle',
+  'add_circle',
+  'alternate_email',
+  'architecture',
+  'arrow_back',
+  'arrow_forward',
+  'auto_awesome',
+  'backspace',
+  'bar_chart',
+  'bolt',
+  'calculate',
+  'change_history',
+  'chat',
+  'check',
+  'check_circle',
+  'close',
+  'content_copy',
+  'diamond',
+  'edit',
+  'edit_note',
+  'emoji_events',
+  'expand_less',
+  'expand_more',
+  'explore',
+  'functions',
+  'groups',
+  'help',
+  'home',
+  'info',
+  'input',
+  'insights',
+  'language',
+  'library_books',
+  'lightbulb',
+  'local_fire_department',
+  'mail',
+  'menu',
+  'menu_book',
+  'person',
+  'play_arrow',
+  'precision_manufacturing',
+  'progress_activity',
+  'quiz',
+  'refresh',
+  'rocket_launch',
+  'search',
+  'send',
+  'settings',
+  'speed',
+  'star',
+  'target',
+  'timer',
+  'token',
+  'workspace_premium'
+];
+const iconFontStylesheetUrl = `https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=${materialIconNames.join(',')}&display=swap`;
 
 const socialUrls = Object.values(site.social).filter(Boolean);
 const headerNav = getLocalizedNavItems(locale, 'header', englishNav).map((item) => ({

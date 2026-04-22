@@ -12,13 +12,22 @@ interface Props {
 }
 
 const { currentLocale } = Astro.props;
+const localeOptions = SUPPORTED_LOCALES.map((locale) => ({
+  locale,
+  label: LOCALE_LABELS[locale],
+  href: localizePath(locale, Astro.url.pathname),
+  active: locale === currentLocale
+}));
 ---
 
-<div class="relative inline-block text-left" data-language-switcher>
+<div
+  class="relative inline-block text-left"
+  data-language-switcher
+  data-switcher-options={JSON.stringify(localeOptions)}
+>
   <button
     type="button"
     class="inline-flex items-center gap-2 rounded-md border border-outline-variant/60 bg-surface-container-low px-3 py-1.5 text-xs font-medium text-on-surface-variant transition-all duration-200 hover:border-primary/35 hover:bg-primary/5 hover:text-primary focus:outline-none focus:ring-1 focus:ring-primary/25 shadow-sm"
-    id="language-options-menu"
     aria-expanded="false"
     aria-haspopup="true"
     data-switcher-toggle
@@ -32,72 +41,108 @@ const { currentLocale } = Astro.props;
     class="absolute right-0 z-50 mt-2 hidden w-64 origin-top-right overflow-hidden rounded-xl border border-outline-variant/70 bg-surface shadow-[var(--shadow-luxury)] backdrop-blur-3xl transition-opacity animate-in fade-in zoom-in-95"
     role="menu"
     aria-orientation="vertical"
-    aria-labelledby="language-options-menu"
+    aria-label="Language options"
     data-switcher-panel
-  >
-    <div class="max-h-72 overflow-y-auto p-2" role="none">
-      <div class="grid grid-cols-2 gap-1" role="none">
-        {SUPPORTED_LOCALES.map((locale) => {
-          const active = locale === currentLocale;
-          return (
-            <a
-              href={localizePath(locale, Astro.url.pathname)}
-              class:list={[
-                'flex items-center justify-between rounded-lg px-2.5 py-2 text-[11px] font-medium transition-all duration-200',
-                active
-                  ? 'bg-primary/10 text-primary shadow-sm'
-                  : 'text-on-surface-variant hover:bg-surface-container-high hover:text-primary'
-              ]}
-              role="menuitem"
-              lang={locale}
-            >
-              <div class="flex items-center gap-2">
-                <span class="uppercase opacity-70">{locale}</span>
-                <span class="truncate">{LOCALE_LABELS[locale]}</span>
-              </div>
-              {active && <span class="material-symbols-outlined text-[14px]">check</span>}
-            </a>
-          );
-        })}
-      </div>
-    </div>
-  </div>
+  ></div>
 </div>
 
 <script>
-  const initSwitchers = () => {
-    const switchers = document.querySelectorAll('[data-language-switcher]');
-    
-    switchers.forEach((switcher) => {
-      const toggle = switcher.querySelector('[data-switcher-toggle]') as HTMLButtonElement;
-      const panel = switcher.querySelector('[data-switcher-panel]') as HTMLElement;
-      const chevron = switcher.querySelector('[data-chevron]') as HTMLElement;
+  (() => {
+    const windowWithState = window as Window & { __languageSwitchersBound?: boolean };
+    if (windowWithState.__languageSwitchersBound) {
+      return;
+    }
+    windowWithState.__languageSwitchersBound = true;
 
-      const toggleMenu = (open?: boolean) => {
-        const isOpen = open ?? panel.classList.contains('hidden');
-        panel.classList.toggle('hidden', !isOpen);
-        toggle.setAttribute('aria-expanded', String(isOpen));
-        chevron.style.transform = isOpen ? 'rotate(180deg)' : '';
-      };
+    const menuItemActiveClass = 'bg-primary/10 text-primary shadow-sm';
+    const menuItemClass =
+      'flex items-center justify-between rounded-lg px-2.5 py-2 text-[11px] font-medium transition-all duration-200 text-on-surface-variant hover:bg-surface-container-high hover:text-primary';
 
-      toggle?.addEventListener('click', (e) => {
-        e.stopPropagation();
-        toggleMenu();
-      });
+    const buildOptionsMarkup = (
+      options: Array<{ locale: string; label: string; href: string; active: boolean }>
+    ) => {
+      const items = options
+        .map((option) => {
+          const itemClass = option.active ? `${menuItemClass} ${menuItemActiveClass}` : menuItemClass;
+          const checkIcon = option.active
+            ? '<span class="material-symbols-outlined text-[14px]">check</span>'
+            : '';
+          return `
+            <a href="${option.href}" class="${itemClass}" role="menuitem" lang="${option.locale}">
+              <div class="flex items-center gap-2">
+                <span class="uppercase opacity-70">${option.locale}</span>
+                <span class="truncate">${option.label}</span>
+              </div>
+              ${checkIcon}
+            </a>
+          `;
+        })
+        .join('');
 
-      document.addEventListener('click', (e) => {
-        if (!switcher.contains(e.target as Node)) {
-          toggleMenu(false);
+      return `
+        <div class="max-h-72 overflow-y-auto p-2" role="none">
+          <div class="grid grid-cols-2 gap-1" role="none">
+            ${items}
+          </div>
+        </div>
+      `;
+    };
+
+    const initSwitchers = () => {
+      const switchers = Array.from(document.querySelectorAll('[data-language-switcher]'));
+
+      switchers.forEach((switcher) => {
+        if (switcher.getAttribute('data-switcher-ready') === 'true') {
+          return;
         }
-      });
+        switcher.setAttribute('data-switcher-ready', 'true');
 
-      // Close on escape
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') toggleMenu(false);
-      });
-    });
-  };
+        const toggle = switcher.querySelector('[data-switcher-toggle]') as HTMLButtonElement | null;
+        const panel = switcher.querySelector('[data-switcher-panel]') as HTMLElement | null;
+        const chevron = switcher.querySelector('[data-chevron]') as HTMLElement | null;
+        if (!toggle || !panel || !chevron) {
+          return;
+        }
 
-  initSwitchers();
-  document.addEventListener('astro:after-swap', initSwitchers);
+        let options: Array<{ locale: string; label: string; href: string; active: boolean }> = [];
+        try {
+          options = JSON.parse(switcher.getAttribute('data-switcher-options') || '[]');
+        } catch {
+          options = [];
+        }
+
+        const ensureMenuBuilt = () => {
+          if (panel.getAttribute('data-menu-built') === 'true') return;
+          panel.innerHTML = buildOptionsMarkup(options);
+          panel.setAttribute('data-menu-built', 'true');
+        };
+
+        const setMenuState = (isOpen: boolean) => {
+          if (isOpen) ensureMenuBuilt();
+          panel.classList.toggle('hidden', !isOpen);
+          toggle.setAttribute('aria-expanded', String(isOpen));
+          chevron.style.transform = isOpen ? 'rotate(180deg)' : '';
+        };
+
+        toggle.addEventListener('click', (event) => {
+          event.stopPropagation();
+          const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+          setMenuState(!isOpen);
+        });
+
+        document.addEventListener('click', (event) => {
+          if (!switcher.contains(event.target as Node)) {
+            setMenuState(false);
+          }
+        });
+
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape') setMenuState(false);
+        });
+      });
+    };
+
+    initSwitchers();
+    document.addEventListener('astro:after-swap', initSwitchers);
+  })();
 </script>

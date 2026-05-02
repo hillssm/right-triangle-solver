@@ -59,7 +59,7 @@ const localizedLegacyFormulaRedirects = Object.fromEntries(
 );
 
 export default defineConfig({
-  site: 'https://righttrianglesolver.app',
+  site: 'https://www.righttrianglesolver.com',
   trailingSlash: 'always',
   build: {
     inlineStylesheets: 'auto'

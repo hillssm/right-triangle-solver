@@ -70,6 +70,18 @@ const calculatorMessages = {
   invalid: 'Please enter positive values.',
   hypotenuseKnownLeg: 'The hypotenuse c must be greater than the known leg.'
 };
+
+type DiagramSideStatus =
+  FocusedSideCalculatorPageData['diagram']['sides']['a']['status'];
+
+const getDiagramStroke = (status: DiagramSideStatus) =>
+  status === 'unknown' ? 'var(--color-tertiary-fixed)' : 'var(--color-primary)';
+
+const getDiagramDash = (status: DiagramSideStatus) =>
+  status === 'unknown' ? '12 8' : 'none';
+
+const getDiagramStatusLabel = (status: DiagramSideStatus) =>
+  status === 'unknown' ? 'Side to find' : 'Known side';
 ---
 
 <BaseLayout
@@ -122,6 +134,142 @@ const calculatorMessages = {
     messages={calculatorMessages}
   />
 
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+    <h2 class="text-2xl font-semibold">{page.quickSummary.h2}</h2>
+    <p class="mt-3 max-w-3xl leading-relaxed text-on-surface-variant">
+      {page.quickSummary.intro}
+    </p>
+    <div class="mt-5 grid gap-3 sm:grid-cols-2">
+      {page.quickSummary.cards.map((card) => (
+        <div class="min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-4">
+          <p class="font-label text-[11px] uppercase tracking-widest text-primary">
+            {card.label}
+          </p>
+          <p class="mt-2 break-words text-sm leading-relaxed text-on-surface">
+            {card.value}
+          </p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+    <div class="grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(17rem,0.85fr)] lg:items-center">
+      <div class="min-w-0">
+        <h2 class="text-2xl font-semibold">{page.diagram.h2}</h2>
+        <p class="mt-3 leading-relaxed text-on-surface-variant">{page.diagram.intro}</p>
+
+        <div class="focused-diagram-canvas mt-5 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-3">
+          <svg
+            class="focused-diagram-svg"
+            viewBox="0 0 520 340"
+            role="img"
+            aria-labelledby={`${page.slug}-diagram-title ${page.slug}-diagram-desc`}
+          >
+            <title id={`${page.slug}-diagram-title`}>{page.diagram.h2}</title>
+            <desc id={`${page.slug}-diagram-desc`}>{page.diagram.caption}</desc>
+            <rect
+              x="12"
+              y="12"
+              width="496"
+              height="316"
+              rx="18"
+              fill="var(--color-surface-container-low)"
+              stroke="var(--color-outline-variant)"
+              stroke-opacity="0.35"
+            />
+            <path
+              d="M90 250 L90 70 L390 250 Z"
+              fill="rgba(241, 201, 125, 0.05)"
+              stroke="var(--color-outline-variant)"
+              stroke-width="1.5"
+              stroke-opacity="0.45"
+            />
+            <path
+              d="M90 222 H118 V250"
+              fill="none"
+              stroke="var(--color-on-surface-variant)"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <line
+              x1="90"
+              y1="250"
+              x2="390"
+              y2="250"
+              stroke={getDiagramStroke(page.diagram.sides.a.status)}
+              stroke-width="8"
+              stroke-linecap="round"
+              stroke-dasharray={getDiagramDash(page.diagram.sides.a.status)}
+            />
+            <line
+              x1="90"
+              y1="250"
+              x2="90"
+              y2="70"
+              stroke={getDiagramStroke(page.diagram.sides.b.status)}
+              stroke-width="8"
+              stroke-linecap="round"
+              stroke-dasharray={getDiagramDash(page.diagram.sides.b.status)}
+            />
+            <line
+              x1="90"
+              y1="70"
+              x2="390"
+              y2="250"
+              stroke={getDiagramStroke(page.diagram.sides.c.status)}
+              stroke-width="8"
+              stroke-linecap="round"
+              stroke-dasharray={getDiagramDash(page.diagram.sides.c.status)}
+            />
+
+            <g class="focused-diagram-label" transform="translate(178 266)">
+              <rect width="132" height="34" rx="8" />
+              <text x="66" y="22" text-anchor="middle">{page.diagram.sides.a.label}</text>
+            </g>
+            <g class="focused-diagram-label" transform="translate(24 138)">
+              <rect width="132" height="34" rx="8" />
+              <text x="66" y="22" text-anchor="middle">{page.diagram.sides.b.label}</text>
+            </g>
+            <g class="focused-diagram-label" transform="translate(292 112)">
+              <rect width="132" height="34" rx="8" />
+              <text x="66" y="22" text-anchor="middle">{page.diagram.sides.c.label}</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/50 p-4">
+        <p class="font-label text-[11px] uppercase tracking-widest text-primary">
+          Diagram Key
+        </p>
+        <div class="mt-4 grid gap-3">
+          {Object.values(page.diagram.sides).map((side) => (
+            <div class="min-w-0 rounded-md border border-outline-variant/25 bg-surface-container-low/70 p-3">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="inline-flex rounded-md border border-outline-variant/30 px-2 py-1 font-label text-[10px] uppercase tracking-wider text-primary">
+                  {getDiagramStatusLabel(side.status)}
+                </span>
+                <span class="font-semibold text-on-surface">{side.label}</span>
+              </div>
+              <p class="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                {side.description}
+              </p>
+            </div>
+          ))}
+        </div>
+        <ul class="mt-4 grid gap-2 text-sm leading-relaxed text-on-surface-variant">
+          {page.diagram.notes.map((note) => (
+            <li class="min-w-0 rounded-md border border-outline-variant/20 bg-surface-container-low/50 px-3 py-2">
+              {note}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{page.formulaSection.h2}</h2>
     {page.formulaSection.paragraphs.map((paragraph) => (
@@ -129,9 +277,9 @@ const calculatorMessages = {
     ))}
     <div class="not-prose mt-5 grid gap-3">
       {page.formulaSection.formulas.map((expression) => (
-        <div class="rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-4 py-3">
+        <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-4 py-3">
           <div
-            class="math-textbook text-xl text-tertiary"
+            class="math-textbook min-w-max text-xl text-tertiary"
             set:html={renderMath(expression)}
           />
         </div>
@@ -151,11 +299,11 @@ const calculatorMessages = {
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{page.example.h2}</h2>
     <p>{page.example.intro}</p>
-    <div class="not-prose mt-5 rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-4 py-3">
+    <div class="not-prose mt-5 min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-4 py-3">
       <div class="grid gap-2">
         {page.example.lines.map((line) => (
           <div
-            class="math-textbook text-lg text-on-surface"
+            class="math-textbook min-w-max text-lg text-on-surface"
             set:html={renderMath(line, false)}
           />
         ))}
@@ -169,6 +317,16 @@ const calculatorMessages = {
       {section.paragraphs.map((paragraph) => (
         <p>{paragraph}</p>
       ))}
+      {section.listItems && section.listItems.length > 0 && (
+        <>
+          {section.listTitle && <h3>{section.listTitle}</h3>}
+          <ul>
+            {section.listItems.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </>
+      )}
     </section>
   ))}
 
@@ -195,3 +353,40 @@ const calculatorMessages = {
     <Faq heading="Frequently Asked Questions" items={page.faqs} />
   </div>
 </BaseLayout>
+
+<style>
+  .focused-diagram-canvas {
+    min-width: 0;
+  }
+
+  .focused-diagram-svg {
+    display: block;
+    width: 100%;
+    min-height: 15rem;
+    height: auto;
+  }
+
+  .focused-diagram-label rect {
+    fill: var(--color-surface-container-high);
+    stroke: var(--color-outline-variant);
+    stroke-opacity: 0.65;
+  }
+
+  .focused-diagram-label text {
+    fill: var(--color-on-surface);
+    font-family: var(--font-label);
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+
+  @media (max-width: 28rem) {
+    .focused-diagram-svg {
+      min-height: 13rem;
+    }
+
+    .focused-diagram-label text {
+      font-size: 0.8125rem;
+    }
+  }
+</style>

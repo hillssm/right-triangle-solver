@@ -119,15 +119,90 @@ const contentSections = page.extraSections.map((section, index) => ({
   id: makeSectionId(section.h2, index)
 }));
 
+const calculatorName = page.h1.replace(/\s+Calculator$/, '');
+const isExampleSection = (heading: string) => /example|triple/i.test(heading);
+const isCheckSection = (heading: string) => /unit|mistake|properties|tip|check/i.test(heading);
+const isUseSection = (heading: string) =>
+  /application|when to use|relationship|connects|matters|vs\.?|real-world/i.test(heading);
+
+const exampleSections = contentSections.filter((section) => isExampleSection(section.h2));
+const checkSections = contentSections.filter((section) => isCheckSection(section.h2));
+const useSections = contentSections.filter(
+  (section) => !isExampleSection(section.h2) && !isCheckSection(section.h2) && isUseSection(section.h2)
+);
+const conceptSections = contentSections.filter(
+  (section) =>
+    !isExampleSection(section.h2) &&
+    !isCheckSection(section.h2) &&
+    !isUseSection(section.h2)
+);
+
+const contentGroups = [
+  {
+    id: `${page.slug}-concepts`,
+    label: 'Core Concepts',
+    eyebrow: 'Learn',
+    h2: `Understand ${calculatorName}`,
+    intro: 'Start here for the meaning, side labels, and setup behind the calculator result.',
+    sections: conceptSections,
+    style: 'feature'
+  },
+  {
+    id: `${page.slug}-examples`,
+    label: 'Examples',
+    eyebrow: 'Practice',
+    h2: 'Worked Examples and Quick References',
+    intro: 'Use these examples to compare your inputs, verify common triples, and follow the arithmetic.',
+    sections: exampleSections,
+    style: 'examples'
+  },
+  {
+    id: `${page.slug}-uses`,
+    label: 'Uses',
+    eyebrow: 'Apply',
+    h2: 'Where This Result Is Used',
+    intro: 'These sections explain when the result matters and how it connects to nearby right-triangle formulas.',
+    sections: useSections,
+    style: 'split'
+  },
+  {
+    id: `${page.slug}-checks`,
+    label: 'Checks',
+    eyebrow: 'Verify',
+    h2: 'Accuracy Checks Before You Use the Answer',
+    intro: 'Review units, common mistakes, and validation rules before copying the result into another calculation.',
+    sections: checkSections,
+    style: 'checks'
+  }
+].filter((group) => group.sections.length > 0);
+
 const guideLinks = [
   { href: '#formula', label: 'Formula' },
   { href: '#steps', label: 'Steps' },
   { href: '#example', label: 'Example' },
-  ...contentSections.slice(0, 6).map((section) => ({
-    href: `#${section.id}`,
-    label: section.h2
+  ...contentGroups.map((group) => ({
+    href: `#${group.id}`,
+    label: group.label
   }))
-];
+].map((link, index) => ({
+  ...link,
+  number: String(index + 1).padStart(2, '0')
+}));
+
+const splitListItem = (item: string) => {
+  const separators = [' — ', ': ', ' → ', ' -> '];
+  for (const separator of separators) {
+    const index = item.indexOf(separator);
+    if (index > 0) {
+      return {
+        term: item.slice(0, index),
+        detail: item.slice(index + separator.length)
+      };
+    }
+  }
+
+  return { term: '', detail: item };
+};
 ---
 
 <BaseLayout
@@ -181,28 +256,28 @@ const guideLinks = [
   />
 
   {page.quickSummary && (
-    <section class="mx-auto mt-8 w-full max-w-5xl section-shell">
-      <h2 class="text-2xl font-semibold">{page.quickSummary.h2}</h2>
-      <p class="mt-3 max-w-3xl leading-relaxed text-on-surface-variant">
-        {page.quickSummary.intro}
-      </p>
-      <div class="mt-5 grid gap-3 sm:grid-cols-2">
+    <section
+      class="measurement-overview mx-auto mt-8 w-full max-w-5xl"
+      aria-labelledby={`${page.slug}-summary-heading`}
+    >
+      <div class="measurement-overview-copy">
+        <p class="measurement-section-kicker">Quick Answer</p>
+        <h2 id={`${page.slug}-summary-heading`}>{page.quickSummary.h2}</h2>
+        <p>{page.quickSummary.intro}</p>
+      </div>
+      <div class="measurement-overview-grid">
         {page.quickSummary.cards.map((card) => (
-          <div class="min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-4">
-            <p class="font-label text-[11px] uppercase tracking-widest text-primary">
-              {card.label}
-            </p>
-            <p class="mt-2 break-words text-sm leading-relaxed text-on-surface">
-              {card.value}
-            </p>
-          </div>
+          <article class="measurement-summary-card">
+            <span>{card.label}</span>
+            <p>{card.value}</p>
+          </article>
         ))}
       </div>
     </section>
   )}
 
   {page.diagram && (
-    <section class="mx-auto mt-8 w-full max-w-5xl section-shell">
+    <section class="measurement-visual-section mx-auto mt-8 w-full max-w-5xl">
       <div class="grid gap-6 lg:grid-cols-[minmax(0,1.12fr)_minmax(17rem,0.88fr)] lg:items-center">
         <div class="min-w-0">
           <h2 class="text-2xl font-semibold">{page.diagram.h2}</h2>
@@ -317,26 +392,26 @@ const guideLinks = [
     </section>
   )}
 
-  <section class="measurement-index mx-auto mt-8 w-full max-w-5xl section-shell">
-    <div class="grid gap-4 lg:grid-cols-[minmax(0,0.34fr)_minmax(0,0.66fr)] lg:items-center">
-      <div>
-        <p class="font-label text-[11px] uppercase tracking-widest text-primary">Structured Guide</p>
-        <h2 class="mt-2 text-2xl font-semibold">Jump to the main parts</h2>
-      </div>
-      <nav aria-label="Page sections" class="flex flex-wrap gap-2">
-        {guideLinks.map((link) => (
-          <a
-            href={link.href}
-            class="max-w-full rounded-md border border-outline-variant/30 bg-surface-container-lowest/65 px-3 py-2 text-sm text-on-surface-variant transition-colors hover:border-primary/45 hover:text-primary"
-          >
-            {link.label}
-          </a>
-        ))}
-      </nav>
+  <section class="measurement-page-map mx-auto mt-8 w-full max-w-5xl">
+    <div class="measurement-page-map-heading">
+      <p class="measurement-section-kicker">Structured Guide</p>
+      <h2>Choose the section you need</h2>
     </div>
+    <nav aria-label="Page sections">
+      <ol>
+        {guideLinks.map((link) => (
+          <li>
+            <a href={link.href}>
+              <span>{link.number}</span>
+              <strong>{link.label}</strong>
+            </a>
+          </li>
+        ))}
+      </ol>
+    </nav>
   </section>
 
-  <section id="formula" class="measurement-guide-section mx-auto mt-10 w-full max-w-5xl">
+  <section id="formula" class="measurement-guide-section measurement-guide-section--formula mx-auto mt-10 w-full max-w-5xl">
     <div class="measurement-section-header">
       <span>01</span>
       <div>
@@ -363,7 +438,7 @@ const guideLinks = [
     </div>
   </section>
 
-  <section id="steps" class="measurement-guide-section mx-auto mt-10 w-full max-w-5xl">
+  <section id="steps" class="measurement-guide-section measurement-guide-section--steps mx-auto mt-10 w-full max-w-5xl">
     <div class="measurement-section-header">
       <span>02</span>
       <div>
@@ -381,7 +456,7 @@ const guideLinks = [
     </ol>
   </section>
 
-  <section id="example" class="measurement-guide-section mx-auto mt-10 w-full max-w-5xl">
+  <section id="example" class="measurement-guide-section measurement-guide-section--example mx-auto mt-10 w-full max-w-5xl">
     <div class="measurement-section-header">
       <span>03</span>
       <div>
@@ -411,31 +486,49 @@ const guideLinks = [
     </div>
   </section>
 
-  {contentSections.map((section, index) => (
-    <section id={section.id} class="measurement-guide-section mx-auto mt-10 w-full max-w-5xl">
-      <div class="measurement-section-header">
-        <span>{String(index + 4).padStart(2, '0')}</span>
+  {contentGroups.map((group, groupIndex) => (
+    <section id={group.id} class="measurement-content-cluster mx-auto mt-12 w-full max-w-5xl">
+      <div class="measurement-cluster-header">
+        <span>{String(groupIndex + 4).padStart(2, '0')}</span>
         <div>
-          <p>Guide</p>
-          <h2>{section.h2}</h2>
+          <p>{group.eyebrow}</p>
+          <h2>{group.h2}</h2>
+          <small>{group.intro}</small>
         </div>
       </div>
-      <div class={`measurement-section-body grid gap-5 ${section.listItems && section.listItems.length > 0 ? 'lg:grid-cols-[minmax(0,0.42fr)_minmax(0,0.58fr)]' : ''}`}>
-        <div class="measurement-copy">
-          {section.paragraphs.map((paragraph) => (
-            <p>{paragraph}</p>
-          ))}
-        </div>
-        {section.listItems && section.listItems.length > 0 && (
-          <div class="measurement-list-panel">
-            {section.listTitle && <h3>{section.listTitle}</h3>}
-            <ul>
-              {section.listItems.map((item) => (
-                <li>{item}</li>
+
+      <div class={`measurement-topic-grid measurement-topic-grid--${group.style}`}>
+        {group.sections.map((section, sectionIndex) => (
+          <article id={section.id} class={`measurement-topic-card ${sectionIndex === 0 ? 'measurement-topic-card--lead' : ''}`}>
+            <div class="measurement-topic-card-heading">
+              <span>{String(sectionIndex + 1).padStart(2, '0')}</span>
+              <h3>{section.h2}</h3>
+            </div>
+
+            <div class="measurement-topic-copy">
+              {section.paragraphs.map((paragraph) => (
+                <p>{paragraph}</p>
               ))}
-            </ul>
-          </div>
-        )}
+            </div>
+
+            {section.listItems && section.listItems.length > 0 && (
+              <div class="measurement-topic-list">
+                {section.listTitle && <h4>{section.listTitle}</h4>}
+                <ul>
+                  {section.listItems.map((item) => {
+                    const parsed = splitListItem(item);
+                    return (
+                      <li>
+                        {parsed.term && <strong>{parsed.term}</strong>}
+                        <span>{parsed.detail}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            )}
+          </article>
+        ))}
       </div>
     </section>
   ))}
@@ -465,18 +558,171 @@ const guideLinks = [
 </BaseLayout>
 
 <style>
-  .measurement-index a {
-    overflow-wrap: anywhere;
+  .measurement-section-kicker {
+    margin: 0;
+    color: var(--color-primary);
+    font-family: var(--font-label);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
   }
 
+  .measurement-overview,
+  .measurement-visual-section,
   .measurement-guide-section {
     scroll-margin-top: 6rem;
     border: 1px solid color-mix(in srgb, var(--color-outline-variant) 34%, transparent);
     border-radius: 8px;
     background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.025), transparent 34%),
-      color-mix(in srgb, var(--color-surface-container-low) 82%, transparent);
+      linear-gradient(180deg, rgba(255, 255, 255, 0.026), transparent 32%),
+      color-mix(in srgb, var(--color-surface-container-low) 86%, transparent);
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.16);
+  }
+
+  .measurement-overview {
+    display: grid;
+    grid-template-columns: minmax(0, 0.42fr) minmax(0, 0.58fr);
+    gap: clamp(1rem, 2.4vw, 1.8rem);
+    align-items: stretch;
     padding: clamp(1.15rem, 2.6vw, 2rem);
+  }
+
+  .measurement-overview-copy {
+    min-width: 0;
+    align-self: center;
+  }
+
+  .measurement-overview-copy h2,
+  .measurement-page-map-heading h2,
+  .measurement-cluster-header h2 {
+    margin: 0;
+    color: var(--color-on-surface);
+    line-height: 1.12;
+  }
+
+  .measurement-overview-copy h2 {
+    margin-top: 0.55rem;
+    font-size: clamp(1.6rem, 2.7vw, 2.15rem);
+  }
+
+  .measurement-overview-copy p:last-child {
+    margin: 0.9rem 0 0;
+    color: var(--color-on-surface-variant);
+    line-height: 1.72;
+    overflow-wrap: anywhere;
+  }
+
+  .measurement-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    min-width: 0;
+  }
+
+  .measurement-summary-card {
+    min-width: 0;
+    border: 1px solid color-mix(in srgb, var(--color-outline-variant) 28%, transparent);
+    border-radius: 8px;
+    background: color-mix(in srgb, var(--color-surface-container-lowest) 72%, transparent);
+    padding: 1rem;
+  }
+
+  .measurement-summary-card span {
+    display: block;
+    color: var(--color-primary);
+    font-family: var(--font-label);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .measurement-summary-card p {
+    margin: 0.55rem 0 0;
+    color: var(--color-on-surface);
+    font-size: 0.92rem;
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+  }
+
+  .measurement-visual-section {
+    padding: clamp(1.15rem, 2.6vw, 2rem);
+  }
+
+  .measurement-page-map {
+    display: grid;
+    grid-template-columns: minmax(13rem, 0.28fr) minmax(0, 0.72fr);
+    gap: clamp(1rem, 2.4vw, 1.5rem);
+    align-items: center;
+    border-block: 1px solid color-mix(in srgb, var(--color-outline-variant) 28%, transparent);
+    padding-block: 1.1rem;
+  }
+
+  .measurement-page-map-heading {
+    min-width: 0;
+  }
+
+  .measurement-page-map-heading h2 {
+    margin-top: 0.45rem;
+    font-size: clamp(1.35rem, 2vw, 1.8rem);
+  }
+
+  .measurement-page-map ol {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 8.75rem), 1fr));
+    gap: 0.65rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .measurement-page-map a {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.65rem;
+    align-items: center;
+    min-height: 3.35rem;
+    border: 1px solid color-mix(in srgb, var(--color-outline-variant) 28%, transparent);
+    border-radius: 8px;
+    background: color-mix(in srgb, var(--color-surface-container-low) 62%, transparent);
+    padding: 0.7rem 0.8rem;
+  }
+
+  .measurement-page-map a:hover {
+    border-color: color-mix(in srgb, var(--color-primary) 48%, transparent);
+    color: var(--color-primary);
+  }
+
+  .measurement-page-map a span {
+    color: var(--color-primary);
+    font-family: var(--font-label);
+    font-size: 0.72rem;
+    font-weight: 700;
+  }
+
+  .measurement-page-map a strong {
+    min-width: 0;
+    color: var(--color-on-surface);
+    font-size: 0.86rem;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+  }
+
+  .measurement-guide-section {
+    padding: clamp(1.15rem, 2.6vw, 2rem);
+  }
+
+  .measurement-guide-section--formula {
+    border-left: 4px solid color-mix(in srgb, var(--color-primary) 72%, transparent);
+  }
+
+  .measurement-guide-section--steps {
+    border-left: 4px solid color-mix(in srgb, var(--color-tertiary) 58%, transparent);
+  }
+
+  .measurement-guide-section--example {
+    border-left: 4px solid color-mix(in srgb, var(--color-secondary) 58%, transparent);
   }
 
   .measurement-section-header {
@@ -487,7 +733,8 @@ const guideLinks = [
     margin-bottom: clamp(1.15rem, 2.4vw, 1.7rem);
   }
 
-  .measurement-section-header > span {
+  .measurement-section-header > span,
+  .measurement-cluster-header > span {
     display: inline-flex;
     width: 2.5rem;
     aspect-ratio: 1;
@@ -502,7 +749,8 @@ const guideLinks = [
     font-weight: 700;
   }
 
-  .measurement-section-header p {
+  .measurement-section-header p,
+  .measurement-cluster-header p {
     margin: 0 0 0.35rem;
     color: var(--color-primary);
     font-family: var(--font-label);
@@ -524,7 +772,8 @@ const guideLinks = [
     align-items: start;
   }
 
-  .measurement-copy {
+  .measurement-copy,
+  .measurement-topic-copy {
     display: grid;
     min-width: 0;
     gap: 1rem;
@@ -532,7 +781,8 @@ const guideLinks = [
     line-height: 1.75;
   }
 
-  .measurement-copy p {
+  .measurement-copy p,
+  .measurement-topic-copy p {
     margin: 0;
     max-width: 72ch;
     overflow-wrap: anywhere;
@@ -540,8 +790,8 @@ const guideLinks = [
 
   .measurement-step-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
-    gap: 0.9rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+    gap: 0.85rem;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -560,9 +810,16 @@ const guideLinks = [
   }
 
   .measurement-step-grid span {
+    display: inline-flex;
+    width: 2rem;
+    aspect-ratio: 1;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: color-mix(in srgb, var(--color-primary) 12%, transparent);
     color: var(--color-primary);
     font-family: var(--font-label);
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 700;
   }
 
@@ -574,25 +831,110 @@ const guideLinks = [
     overflow-wrap: anywhere;
   }
 
-  .measurement-list-panel {
-    min-width: 0;
-    border-radius: 8px;
-    border: 1px solid color-mix(in srgb, var(--color-outline-variant) 26%, transparent);
-    background: color-mix(in srgb, var(--color-surface-container-lowest) 68%, transparent);
-    padding: 1rem;
+  .measurement-content-cluster {
+    scroll-margin-top: 6rem;
   }
 
-  .measurement-list-panel h3 {
-    margin: 0 0 0.8rem;
+  .measurement-cluster-header {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 1rem;
+    align-items: start;
+    border-bottom: 1px solid color-mix(in srgb, var(--color-outline-variant) 28%, transparent);
+    margin-bottom: clamp(1rem, 2.5vw, 1.55rem);
+    padding-bottom: 1rem;
+  }
+
+  .measurement-cluster-header h2 {
+    font-size: clamp(1.5rem, 2.7vw, 2.15rem);
+  }
+
+  .measurement-cluster-header small {
+    display: block;
+    margin-top: 0.65rem;
+    color: var(--color-on-surface-variant);
+    font-size: 0.98rem;
+    line-height: 1.62;
+    overflow-wrap: anywhere;
+  }
+
+  .measurement-topic-grid {
+    display: grid;
+    gap: 1rem;
+    min-width: 0;
+  }
+
+  .measurement-topic-grid--feature,
+  .measurement-topic-grid--split,
+  .measurement-topic-grid--checks {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .measurement-topic-grid--examples {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  }
+
+  .measurement-topic-grid--feature .measurement-topic-card--lead {
+    grid-column: 1 / -1;
+  }
+
+  .measurement-topic-card {
+    min-width: 0;
+    border: 1px solid color-mix(in srgb, var(--color-outline-variant) 30%, transparent);
+    border-radius: 8px;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.022), transparent 35%),
+      color-mix(in srgb, var(--color-surface-container-low) 78%, transparent);
+    padding: clamp(1rem, 2.1vw, 1.35rem);
+  }
+
+  .measurement-topic-card--lead {
+    background:
+      linear-gradient(180deg, color-mix(in srgb, var(--color-primary) 7%, transparent), transparent 48%),
+      color-mix(in srgb, var(--color-surface-container-low) 84%, transparent);
+  }
+
+  .measurement-topic-card-heading {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.75rem;
+    align-items: start;
+    margin-bottom: 0.9rem;
+  }
+
+  .measurement-topic-card-heading span {
     color: var(--color-primary);
     font-family: var(--font-label);
-    font-size: 0.75rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  .measurement-topic-card-heading h3 {
+    margin: 0;
+    color: var(--color-on-surface);
+    font-size: clamp(1.12rem, 1.9vw, 1.35rem);
+    line-height: 1.22;
+    overflow-wrap: anywhere;
+  }
+
+  .measurement-topic-list {
+    margin-top: 1rem;
+    border-top: 1px solid color-mix(in srgb, var(--color-outline-variant) 24%, transparent);
+    padding-top: 1rem;
+  }
+
+  .measurement-topic-list h4 {
+    margin: 0 0 0.7rem;
+    color: var(--color-primary);
+    font-family: var(--font-label);
+    font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
   }
 
-  .measurement-list-panel ul {
+  .measurement-topic-list ul {
     display: grid;
     gap: 0.65rem;
     list-style: none;
@@ -600,14 +942,24 @@ const guideLinks = [
     padding: 0;
   }
 
-  .measurement-list-panel li {
+  .measurement-topic-list li {
+    display: grid;
+    gap: 0.25rem;
     min-width: 0;
-    border-radius: 8px;
-    border: 1px solid color-mix(in srgb, var(--color-outline-variant) 20%, transparent);
-    background: color-mix(in srgb, var(--color-surface-container-low) 55%, transparent);
-    padding: 0.85rem;
+    border-left: 2px solid color-mix(in srgb, var(--color-primary) 40%, transparent);
+    padding-left: 0.75rem;
     color: var(--color-on-surface-variant);
     line-height: 1.55;
+    overflow-wrap: anywhere;
+  }
+
+  .measurement-topic-list strong {
+    color: var(--color-on-surface);
+    font-size: 0.93rem;
+  }
+
+  .measurement-topic-list span {
+    min-width: 0;
     overflow-wrap: anywhere;
   }
 
@@ -642,17 +994,45 @@ const guideLinks = [
     fill: var(--color-primary);
   }
 
+  @media (max-width: 56rem) {
+    .measurement-overview,
+    .measurement-page-map {
+      grid-template-columns: 1fr;
+    }
+
+    .measurement-topic-grid--feature,
+    .measurement-topic-grid--split,
+    .measurement-topic-grid--checks {
+      grid-template-columns: 1fr;
+    }
+  }
+
   @media (max-width: 28rem) {
+    .measurement-overview,
+    .measurement-visual-section,
     .measurement-guide-section {
       padding: 1rem;
+    }
+
+    .measurement-overview-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .measurement-page-map ol {
+      grid-template-columns: 1fr;
     }
 
     .measurement-section-header {
       gap: 0.8rem;
     }
 
-    .measurement-section-header > span {
+    .measurement-section-header > span,
+    .measurement-cluster-header > span {
       width: 2.15rem;
+    }
+
+    .measurement-cluster-header {
+      gap: 0.8rem;
     }
 
     .measurement-diagram-svg {

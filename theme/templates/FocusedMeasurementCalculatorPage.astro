@@ -106,6 +106,28 @@ const relatedHeading = pick(groupedUi, 'relatedCalculatorsTitle', 'Related Calcu
 const openToolLabel = pick(solver, 'openTool', 'Open Tool');
 const faqHeading = pick(faqHub, 'heading', 'Frequently Asked Questions');
 const badge = 'Measurement Calculator';
+
+const makeSectionId = (heading: string, index: number) =>
+  `${page.slug}-section-${index}-${heading
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+    .slice(0, 42)}`;
+
+const contentSections = page.extraSections.map((section, index) => ({
+  ...section,
+  id: makeSectionId(section.h2, index)
+}));
+
+const guideLinks = [
+  { href: '#formula', label: 'Formula' },
+  { href: '#steps', label: 'Steps' },
+  { href: '#example', label: 'Example' },
+  ...contentSections.slice(0, 6).map((section) => ({
+    href: `#${section.id}`,
+    label: section.h2
+  }))
+];
 ---
 
 <BaseLayout
@@ -159,7 +181,7 @@ const badge = 'Measurement Calculator';
   />
 
   {page.quickSummary && (
-    <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+    <section class="mx-auto mt-8 w-full max-w-5xl section-shell">
       <h2 class="text-2xl font-semibold">{page.quickSummary.h2}</h2>
       <p class="mt-3 max-w-3xl leading-relaxed text-on-surface-variant">
         {page.quickSummary.intro}
@@ -180,7 +202,7 @@ const badge = 'Measurement Calculator';
   )}
 
   {page.diagram && (
-    <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+    <section class="mx-auto mt-8 w-full max-w-5xl section-shell">
       <div class="grid gap-6 lg:grid-cols-[minmax(0,1.12fr)_minmax(17rem,0.88fr)] lg:items-center">
         <div class="min-w-0">
           <h2 class="text-2xl font-semibold">{page.diagram.h2}</h2>
@@ -295,72 +317,130 @@ const badge = 'Measurement Calculator';
     </section>
   )}
 
-  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{page.formulaSection.h2}</h2>
-    {page.formulaSection.paragraphs.map((paragraph) => (
-      <p>{paragraph}</p>
-    ))}
-    <div class="not-prose mt-5 grid gap-3">
-      {page.formulaSection.formulas.map((expression) => (
-        <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-4 py-3">
-          <div
-            class="math-textbook min-w-max text-xl text-tertiary"
-            set:html={renderMath(expression)}
-          />
-        </div>
-      ))}
+  <section class="measurement-index mx-auto mt-8 w-full max-w-5xl section-shell">
+    <div class="grid gap-4 lg:grid-cols-[minmax(0,0.34fr)_minmax(0,0.66fr)] lg:items-center">
+      <div>
+        <p class="font-label text-[11px] uppercase tracking-widest text-primary">Structured Guide</p>
+        <h2 class="mt-2 text-2xl font-semibold">Jump to the main parts</h2>
+      </div>
+      <nav aria-label="Page sections" class="flex flex-wrap gap-2">
+        {guideLinks.map((link) => (
+          <a
+            href={link.href}
+            class="max-w-full rounded-md border border-outline-variant/30 bg-surface-container-lowest/65 px-3 py-2 text-sm text-on-surface-variant transition-colors hover:border-primary/45 hover:text-primary"
+          >
+            {link.label}
+          </a>
+        ))}
+      </nav>
     </div>
   </section>
 
-  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{page.howTo.h2}</h2>
-    <ol>
-      {page.howTo.steps.map((step) => (
-        <li>{step}</li>
+  <section id="formula" class="measurement-guide-section mx-auto mt-10 w-full max-w-5xl">
+    <div class="measurement-section-header">
+      <span>01</span>
+      <div>
+        <p>Formula</p>
+        <h2>{page.formulaSection.h2}</h2>
+      </div>
+    </div>
+    <div class="measurement-section-body grid gap-5 lg:grid-cols-[minmax(0,0.58fr)_minmax(18rem,0.42fr)]">
+      <div class="measurement-copy">
+        {page.formulaSection.paragraphs.map((paragraph) => (
+          <p>{paragraph}</p>
+        ))}
+      </div>
+      <div class="grid gap-3">
+        {page.formulaSection.formulas.map((expression) => (
+          <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-4 py-3">
+            <div
+              class="math-textbook min-w-max text-xl text-tertiary"
+              set:html={renderMath(expression)}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="steps" class="measurement-guide-section mx-auto mt-10 w-full max-w-5xl">
+    <div class="measurement-section-header">
+      <span>02</span>
+      <div>
+        <p>Steps</p>
+        <h2>{page.howTo.h2}</h2>
+      </div>
+    </div>
+    <ol class="measurement-step-grid">
+      {page.howTo.steps.map((step, index) => (
+        <li>
+          <span>{String(index + 1).padStart(2, '0')}</span>
+          <p>{step}</p>
+        </li>
       ))}
     </ol>
   </section>
 
-  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{page.example.h2}</h2>
-    <p>{page.example.intro}</p>
-    <div class="not-prose mt-5 min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-4 py-3">
-      <div class="grid gap-2">
+  <section id="example" class="measurement-guide-section mx-auto mt-10 w-full max-w-5xl">
+    <div class="measurement-section-header">
+      <span>03</span>
+      <div>
+        <p>Example</p>
+        <h2>{page.example.h2}</h2>
+      </div>
+    </div>
+    <div class="measurement-section-body grid gap-5 lg:grid-cols-[minmax(0,0.42fr)_minmax(0,0.58fr)]">
+      <div class="measurement-copy">
+        <p>{page.example.intro}</p>
+        {page.example.answer && (
+          <p class="rounded-lg border border-primary/20 bg-primary/10 p-4 font-semibold text-on-surface">
+            {page.example.answer}
+          </p>
+        )}
+      </div>
+      <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-4 py-3">
+        <div class="grid gap-2">
         {page.example.lines.map((line) => (
           <div
             class="math-textbook min-w-max text-lg text-on-surface"
             set:html={renderMath(line, false)}
           />
         ))}
+        </div>
       </div>
-      {page.example.answer && (
-        <p class="mt-4 border-t border-outline-variant/25 pt-3 text-sm font-semibold text-on-surface">
-          {page.example.answer}
-        </p>
-      )}
     </div>
   </section>
 
-  {page.extraSections.map((section) => (
-    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-      <h2>{section.h2}</h2>
-      {section.paragraphs.map((paragraph) => (
-        <p>{paragraph}</p>
-      ))}
-      {section.listItems && section.listItems.length > 0 && (
-        <>
-          {section.listTitle && <h3>{section.listTitle}</h3>}
-          <ul>
-            {section.listItems.map((item) => (
-              <li>{item}</li>
-            ))}
-          </ul>
-        </>
-      )}
+  {contentSections.map((section, index) => (
+    <section id={section.id} class="measurement-guide-section mx-auto mt-10 w-full max-w-5xl">
+      <div class="measurement-section-header">
+        <span>{String(index + 4).padStart(2, '0')}</span>
+        <div>
+          <p>Guide</p>
+          <h2>{section.h2}</h2>
+        </div>
+      </div>
+      <div class={`measurement-section-body grid gap-5 ${section.listItems && section.listItems.length > 0 ? 'lg:grid-cols-[minmax(0,0.42fr)_minmax(0,0.58fr)]' : ''}`}>
+        <div class="measurement-copy">
+          {section.paragraphs.map((paragraph) => (
+            <p>{paragraph}</p>
+          ))}
+        </div>
+        {section.listItems && section.listItems.length > 0 && (
+          <div class="measurement-list-panel">
+            {section.listTitle && <h3>{section.listTitle}</h3>}
+            <ul>
+              {section.listItems.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
     </section>
   ))}
 
-  <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+  <section class="mx-auto mt-10 w-full max-w-5xl section-shell">
     <h2 class="text-2xl font-semibold">{relatedHeading}</h2>
     <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {page.relatedLinks.map((link) => (
@@ -385,6 +465,152 @@ const badge = 'Measurement Calculator';
 </BaseLayout>
 
 <style>
+  .measurement-index a {
+    overflow-wrap: anywhere;
+  }
+
+  .measurement-guide-section {
+    scroll-margin-top: 6rem;
+    border: 1px solid color-mix(in srgb, var(--color-outline-variant) 34%, transparent);
+    border-radius: 8px;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.025), transparent 34%),
+      color-mix(in srgb, var(--color-surface-container-low) 82%, transparent);
+    padding: clamp(1.15rem, 2.6vw, 2rem);
+  }
+
+  .measurement-section-header {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 1rem;
+    align-items: start;
+    margin-bottom: clamp(1.15rem, 2.4vw, 1.7rem);
+  }
+
+  .measurement-section-header > span {
+    display: inline-flex;
+    width: 2.5rem;
+    aspect-ratio: 1;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid color-mix(in srgb, var(--color-primary) 36%, transparent);
+    background: color-mix(in srgb, var(--color-primary) 10%, transparent);
+    color: var(--color-primary);
+    font-family: var(--font-label);
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  .measurement-section-header p {
+    margin: 0 0 0.35rem;
+    color: var(--color-primary);
+    font-family: var(--font-label);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .measurement-section-header h2 {
+    margin: 0;
+    color: var(--color-on-surface);
+    font-size: clamp(1.45rem, 2.6vw, 2rem);
+    line-height: 1.12;
+  }
+
+  .measurement-section-body {
+    min-width: 0;
+    align-items: start;
+  }
+
+  .measurement-copy {
+    display: grid;
+    min-width: 0;
+    gap: 1rem;
+    color: var(--color-on-surface-variant);
+    line-height: 1.75;
+  }
+
+  .measurement-copy p {
+    margin: 0;
+    max-width: 72ch;
+    overflow-wrap: anywhere;
+  }
+
+  .measurement-step-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+    gap: 0.9rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .measurement-step-grid li {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.85rem;
+    align-items: start;
+    min-width: 0;
+    border: 1px solid color-mix(in srgb, var(--color-outline-variant) 24%, transparent);
+    border-radius: 8px;
+    background: color-mix(in srgb, var(--color-surface-container-lowest) 72%, transparent);
+    padding: 1rem;
+  }
+
+  .measurement-step-grid span {
+    color: var(--color-primary);
+    font-family: var(--font-label);
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  .measurement-step-grid p {
+    margin: 0;
+    min-width: 0;
+    color: var(--color-on-surface-variant);
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+
+  .measurement-list-panel {
+    min-width: 0;
+    border-radius: 8px;
+    border: 1px solid color-mix(in srgb, var(--color-outline-variant) 26%, transparent);
+    background: color-mix(in srgb, var(--color-surface-container-lowest) 68%, transparent);
+    padding: 1rem;
+  }
+
+  .measurement-list-panel h3 {
+    margin: 0 0 0.8rem;
+    color: var(--color-primary);
+    font-family: var(--font-label);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .measurement-list-panel ul {
+    display: grid;
+    gap: 0.65rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .measurement-list-panel li {
+    min-width: 0;
+    border-radius: 8px;
+    border: 1px solid color-mix(in srgb, var(--color-outline-variant) 20%, transparent);
+    background: color-mix(in srgb, var(--color-surface-container-low) 55%, transparent);
+    padding: 0.85rem;
+    color: var(--color-on-surface-variant);
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+  }
+
   .measurement-diagram-canvas {
     min-width: 0;
   }
@@ -417,6 +643,18 @@ const badge = 'Measurement Calculator';
   }
 
   @media (max-width: 28rem) {
+    .measurement-guide-section {
+      padding: 1rem;
+    }
+
+    .measurement-section-header {
+      gap: 0.8rem;
+    }
+
+    .measurement-section-header > span {
+      width: 2.15rem;
+    }
+
     .measurement-diagram-svg {
       min-height: 13rem;
     }

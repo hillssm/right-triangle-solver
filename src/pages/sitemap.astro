@@ -4,6 +4,7 @@ import {
   RIGHT_TRIANGLE_GROUPED_PAGES
 } from 'src/data/rightTriangleGroupedPages';
 import { FOCUSED_SIDE_CALCULATOR_PAGES } from 'src/data/focusedSideCalculatorPages';
+import { FOCUSED_MEASUREMENT_CALCULATOR_PAGES } from 'src/data/focusedMeasurementCalculatorPages';
 import { DEFAULT_LOCALE, localizePath } from 'theme/i18n/locales';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 
@@ -47,6 +48,19 @@ const locale = DEFAULT_LOCALE;
       <h2 class="text-xl font-bold mb-4">Side Calculators</h2>
       <ul class="space-y-2">
         {FOCUSED_SIDE_CALCULATOR_PAGES.map((page) => (
+          <li>
+            <a href={localizePath(locale, page.url)} class="text-primary hover:underline">
+              {page.h1}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="section-shell">
+      <h2 class="text-xl font-bold mb-4">Measurement Calculators</h2>
+      <ul class="space-y-2">
+        {FOCUSED_MEASUREMENT_CALCULATOR_PAGES.map((page) => (
           <li>
             <a href={localizePath(locale, page.url)} class="text-primary hover:underline">
               {page.h1}

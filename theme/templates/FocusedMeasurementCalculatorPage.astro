@@ -1,0 +1,239 @@
+---
+import type { FocusedMeasurementCalculatorPage as FocusedMeasurementCalculatorPageData } from 'src/data/focusedMeasurementCalculatorPages';
+import { getFormulaBySlug } from 'src/data/rightTriangleFormulas';
+import Faq from 'theme/components/Faq.astro';
+import FormulaCalculator from 'theme/components/FormulaCalculator.astro';
+import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
+import { getTranslations, pick } from 'theme/i18n/translations';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import { toAbsoluteUrl } from 'theme/utils/site';
+import katex from 'katex';
+import 'katex/dist/katex.min.css';
+
+interface Props {
+  page: FocusedMeasurementCalculatorPageData;
+  locale?: Locale;
+}
+
+const { page, locale = DEFAULT_LOCALE } = Astro.props;
+const formula = getFormulaBySlug(page.formulaSlug);
+
+if (!formula || !formula.calculator) {
+  throw new Error(`Focused measurement calculator formula is missing: ${page.formulaSlug}`);
+}
+
+const calculatorFormula = {
+  ...formula,
+  calculator: {
+    ...formula.calculator,
+    outputLabel: page.calculator.outputLabel,
+    fields: page.calculator.fields
+  }
+};
+
+const bundle = getTranslations(locale);
+const common = (bundle.common as Record<string, any>) || {};
+const content = (bundle.content as Record<string, any>) || {};
+const nav = (common.nav as Record<string, string>) || {};
+const solver = (common.solver as Record<string, string>) || {};
+const groupedPages = ((content.grouped as Record<string, any>)?.pages as Record<string, any>) || {};
+const groupedUi = ((content.grouped as Record<string, any>)?.ui as Record<string, string>) || {};
+const faqHub = (content.faqHub as Record<string, string>) || {};
+
+const homeLabel = pick(nav, 'home', 'Home');
+const measurementCalculatorLabel = pick(
+  groupedPages['right-triangle-measurements-calculator'] || {},
+  'h1',
+  'Right Triangle Measurements Calculator'
+);
+const canonicalPath = localizePath(locale, page.url);
+
+const renderMath = (expression: string, displayMode = true) =>
+  katex.renderToString(expression, {
+    throwOnError: false,
+    displayMode
+  });
+
+const breadcrumbItems = [
+  { label: homeLabel, href: localizePath(locale, '/') },
+  {
+    label: measurementCalculatorLabel,
+    href: localizePath(locale, '/right-triangle-measurements-calculator/')
+  },
+  { label: page.h1, href: canonicalPath }
+];
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbItems.map((item, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: item.label,
+    item: toAbsoluteUrl(item.href)
+  }))
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: page.faqs.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.answer
+    }
+  }))
+};
+
+const calculatorMessages = {
+  positive: 'Please enter positive values.',
+  invalid: 'Please enter positive values.',
+  hypotenuseKnownLeg: 'The hypotenuse c should be the longest side.'
+};
+
+const relatedHeading = pick(groupedUi, 'relatedCalculatorsTitle', 'Related Calculators');
+const openToolLabel = pick(solver, 'openTool', 'Open Tool');
+const faqHeading = pick(faqHub, 'heading', 'Frequently Asked Questions');
+const badge = 'Measurement Calculator';
+---
+
+<BaseLayout
+  locale={locale}
+  title={page.metaTitle}
+  description={page.metaDescription}
+  canonicalPath={canonicalPath}
+>
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(breadcrumbSchema)}
+  ></script>
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(faqSchema)}
+  ></script>
+
+  <nav class="mx-auto mb-6 w-full max-w-4xl" aria-label="Breadcrumb">
+    <ol class="flex flex-wrap items-center gap-2 text-xs text-on-surface-variant">
+      {breadcrumbItems.map((item, index) => (
+        <>
+          <li>
+            {index === breadcrumbItems.length - 1 ? (
+              <span aria-current="page" class="text-on-surface">{item.label}</span>
+            ) : (
+              <a href={item.href} class="hover:text-primary">{item.label}</a>
+            )}
+          </li>
+          {index < breadcrumbItems.length - 1 && (
+            <li aria-hidden="true" class="text-outline">/</li>
+          )}
+        </>
+      ))}
+    </ol>
+  </nav>
+
+  <header class="mx-auto mb-8 w-full max-w-4xl">
+    <p class="font-label text-xs uppercase tracking-widest text-primary">
+      {badge}
+    </p>
+    <h1 class="mt-3 text-3xl font-bold sm:text-4xl">{page.h1}</h1>
+    <p class="mt-4 max-w-3xl text-on-surface-variant">{page.intro}</p>
+  </header>
+
+  <FormulaCalculator
+    formula={calculatorFormula}
+    locale={locale}
+    messages={calculatorMessages}
+  />
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>{page.formulaSection.h2}</h2>
+    {page.formulaSection.paragraphs.map((paragraph) => (
+      <p>{paragraph}</p>
+    ))}
+    <div class="not-prose mt-5 grid gap-3">
+      {page.formulaSection.formulas.map((expression) => (
+        <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-4 py-3">
+          <div
+            class="math-textbook min-w-max text-xl text-tertiary"
+            set:html={renderMath(expression)}
+          />
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>{page.howTo.h2}</h2>
+    <ol>
+      {page.howTo.steps.map((step) => (
+        <li>{step}</li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>{page.example.h2}</h2>
+    <p>{page.example.intro}</p>
+    <div class="not-prose mt-5 min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-4 py-3">
+      <div class="grid gap-2">
+        {page.example.lines.map((line) => (
+          <div
+            class="math-textbook min-w-max text-lg text-on-surface"
+            set:html={renderMath(line, false)}
+          />
+        ))}
+      </div>
+      {page.example.answer && (
+        <p class="mt-4 border-t border-outline-variant/25 pt-3 text-sm font-semibold text-on-surface">
+          {page.example.answer}
+        </p>
+      )}
+    </div>
+  </section>
+
+  {page.extraSections.map((section) => (
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+      <h2>{section.h2}</h2>
+      {section.paragraphs.map((paragraph) => (
+        <p>{paragraph}</p>
+      ))}
+      {section.listItems && section.listItems.length > 0 && (
+        <>
+          {section.listTitle && <h3>{section.listTitle}</h3>}
+          <ul>
+            {section.listItems.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </>
+      )}
+    </section>
+  ))}
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+    <h2 class="text-2xl font-semibold">{relatedHeading}</h2>
+    <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {page.relatedLinks.map((link) => (
+        <a
+          href={localizePath(locale, link.href)}
+          class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
+        >
+          <h3 class="text-base font-semibold text-on-surface group-hover:text-primary">
+            {link.label}
+          </h3>
+          <p class="mt-3 text-[11px] uppercase tracking-widest text-primary">
+            {openToolLabel}
+          </p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <div class="mx-auto mt-8 w-full max-w-4xl">
+    <Faq heading={faqHeading} items={page.faqs} />
+  </div>
+</BaseLayout>

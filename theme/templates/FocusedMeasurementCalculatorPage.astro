@@ -538,7 +538,11 @@ const splitListItem = (item: string) => {
     </section>
   ))}
 
-  <section class="mx-auto mt-10 w-full max-w-5xl section-shell">
+  <div class="mx-auto mt-8 w-full max-w-4xl">
+    <Faq heading={faqHeading} items={page.faqs} />
+  </div>
+
+  <section class="mx-auto mt-8 w-full max-w-5xl section-shell">
     <h2 class="text-2xl font-semibold">{relatedHeading}</h2>
     <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {page.relatedLinks.map((link) => (
@@ -556,10 +560,6 @@ const splitListItem = (item: string) => {
       ))}
     </div>
   </section>
-
-  <div class="mx-auto mt-8 w-full max-w-4xl">
-    <Faq heading={faqHeading} items={page.faqs} />
-  </div>
 </BaseLayout>
 
 <style>

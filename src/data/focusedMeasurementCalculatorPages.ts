@@ -87,7 +87,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     metaDescription: 'Calculate the perimeter of a right triangle from leg a, leg b, and hypotenuse c. Includes formula, step-by-step solution, diagram, worked examples, and real-world applications.',
     formulaSlug: 'perimeter',
     toolPurpose: 'Enter all three sides of a right triangle to instantly compute the total distance around it. The calculator shows the formula, step-by-step work, and a live diagram so you can verify every value before using the result.',
-    intro: 'This right triangle perimeter calculator finds the total distance around a right triangle when you know all three sides. Enter leg a, leg b, and hypotenuse c to get the perimeter with a complete step-by-step solution and interactive diagram.',
+    intro: 'Enter leg a, leg b, and hypotenuse c to calculate the total perimeter of a right triangle.',
     quickSummary: {
       h2: 'What This Perimeter Calculator Solves',
       intro: 'Use this page when you already know all three side lengths of a right triangle and need the total boundary length. It is designed for quick arithmetic, unit-aware inputs, and easy visual checking.',
@@ -245,23 +245,6 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
         ]
       },
       {
-        h2: 'Perimeter of Common Pythagorean Triples',
-        paragraphs: [
-          'A Pythagorean triple is a set of three positive integers (a, b, c) where a\u00b2 + b\u00b2 = c\u00b2. These triples produce right triangles with whole-number sides, making perimeter calculations especially clean. The table below lists several common triples along with their perimeters.'
-        ],
-        listTitle: 'Quick reference triples and perimeters:',
-        listItems: [
-          '3, 4, 5 \u2192 Perimeter = 12',
-          '5, 12, 13 \u2192 Perimeter = 30',
-          '8, 15, 17 \u2192 Perimeter = 40',
-          '7, 24, 25 \u2192 Perimeter = 56',
-          '9, 40, 41 \u2192 Perimeter = 90',
-          '20, 21, 29 \u2192 Perimeter = 70',
-          '11, 60, 61 \u2192 Perimeter = 132',
-          '6, 8, 10 \u2192 Perimeter = 24 (scaled 3-4-5)'
-        ]
-      },
-      {
         h2: 'Perimeter vs. Area: What Is the Difference?',
         paragraphs: [
           'Perimeter and area both describe a triangle, but they measure different things. The perimeter measures the total edge length around the outside (a linear measurement), while the area measures the enclosed space inside the triangle (a square measurement).',
@@ -398,7 +381,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     metaDescription: 'Calculate right triangle semiperimeter s from leg a, leg b, and hypotenuse c. Includes formula, diagram, step-by-step work, examples, uses, and mistake checks.',
     formulaSlug: 'semiperimeter',
     toolPurpose: 'Find the semiperimeter s of a right triangle from all three side lengths, then use it as a clean checkpoint for area, inradius, and geometry formulas that depend on half the perimeter.',
-    intro: 'This right triangle semiperimeter calculator finds s, which is half of the triangle\u2019s perimeter. Enter leg a, leg b, and hypotenuse c to calculate s = (a + b + c) / 2 with a clear formula, step-by-step solution, and diagram.',
+    intro: 'Enter leg a, leg b, and hypotenuse c to calculate the right triangle semiperimeter s.',
     quickSummary: {
       h2: 'What This Semiperimeter Calculator Solves',
       intro: 'Use this page when you need the half-perimeter value s for a right triangle. It is especially helpful before using Heron-style area formulas, inradius formulas, or geometry identities that reference s.',

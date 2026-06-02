@@ -1,0 +1,12 @@
+---
+import { getFocusedSideCalculatorPage } from 'src/data/focusedSideCalculatorPages';
+import FocusedSideCalculatorPage from 'theme/templates/FocusedSideCalculatorPage.astro';
+
+const page = getFocusedSideCalculatorPage('pythagorean-theorem-calculator');
+
+if (!page) {
+  throw new Error('Missing page data for pythagorean-theorem-calculator');
+}
+---
+
+<FocusedSideCalculatorPage page={page} />

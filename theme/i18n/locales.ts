@@ -112,7 +112,10 @@ export function stripLocalePrefix(path: string): string {
 
 const EXCLUDED_FROM_LOCALIZATION = new Set([
   'blog',
-  'sitemap'
+  'sitemap',
+  'pythagorean-theorem-calculator',
+  'missing-leg-from-c-and-a-calculator',
+  'missing-leg-from-c-and-b-calculator'
 ]);
 
 export function isEnglishOnlyPath(path: string): boolean {

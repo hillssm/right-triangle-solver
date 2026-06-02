@@ -188,6 +188,22 @@ const uiOpen = pick(groupedUi, 'openTool', 'Open Tool');
 const uiBackTo = pick(groupedUi, 'backTo', 'Back To');
 
 const relatedPageNames = localizedRelatedPages.map((item) => item.copy.h1);
+const relatedSideCalculatorLinks = [
+  {
+    href: '/pythagorean-theorem-calculator/',
+    label: 'Pythagorean Theorem Calculator'
+  },
+  {
+    href: '/missing-leg-from-c-and-a-calculator/',
+    label: 'Missing Leg From c and a Calculator'
+  },
+  {
+    href: '/missing-leg-from-c-and-b-calculator/',
+    label: 'Missing Leg From c and b Calculator'
+  }
+];
+const showRelatedSideCalculators =
+  locale === 'en' && groupedPage?.slug === 'right-triangle-side-calculator';
 const quickStartTemplates = Array.isArray(groupedUi.quickStartSteps)
   ? groupedUi.quickStartSteps
   : defaultQuickStartTemplates;
@@ -537,6 +553,30 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
           ))}
         </div>
       </section>
+
+      {showRelatedSideCalculators && (
+        <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+          <h2 class="text-2xl font-semibold">Related Side Calculators</h2>
+          <p class="mt-3 max-w-3xl text-sm text-on-surface-variant">
+            Use these focused calculators if you want to solve one specific right triangle side case with formula and steps.
+          </p>
+          <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {relatedSideCalculatorLinks.map((link) => (
+              <a
+                href={link.href}
+                class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
+              >
+                <h3 class="text-base font-semibold text-on-surface group-hover:text-primary">
+                  {link.label}
+                </h3>
+                <p class="mt-3 text-[11px] uppercase tracking-widest text-primary">
+                  {uiOpen}
+                </p>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
     </>
   )}
 </BaseLayout>

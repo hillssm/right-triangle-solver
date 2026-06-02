@@ -7,9 +7,14 @@ import 'katex/dist/katex.min.css';
 interface Props {
   formula: RightTriangleFormula;
   locale: string;
+  messages?: {
+    positive?: string;
+    invalid?: string;
+    hypotenuseKnownLeg?: string;
+  };
 }
 
-const { formula, locale } = Astro.props;
+const { formula, locale, messages = {} } = Astro.props;
 
 if (!formula.calculator) {
   throw new Error('FormulaCalculator requires a formula with a calculator configuration.');
@@ -75,6 +80,8 @@ const scriptTranslations = {
   solutionSteps: pick(solver, 'solutionSteps', 'Solution Steps'),
   formula: pick(solver, 'formulaLabel', 'Formula')
 };
+
+const calculatorMessages = JSON.stringify(messages);
 ---
 
 <section
@@ -85,6 +92,7 @@ const scriptTranslations = {
   data-output-unit={calculator.outputUnit ?? ''}
   data-default-status={defaultStatus}
   data-translations={JSON.stringify(scriptTranslations)}
+  data-messages={calculatorMessages}
 >
   <h2 class="text-2xl font-semibold">{displayTitle} {pick(solver, 'calculateSuffix', 'Calculator')}</h2>
   <p class="mt-2 text-sm text-on-surface-variant">
@@ -202,6 +210,7 @@ const scriptTranslations = {
       if (!section) return;
 
       const translations = JSON.parse(section.getAttribute('data-translations') || '{}');
+      const messages = JSON.parse(section.getAttribute('data-messages') || '{}');
       const form = section.querySelector('[data-calc-form]');
       const statusEl = section.querySelector('[data-calc-status]');
       const resultWrap = section.querySelector('[data-calc-result-wrap]');
@@ -242,7 +251,7 @@ const scriptTranslations = {
           } else {
             const num = toNumber(val);
             if (!Number.isFinite(num)) {
-              throw new Error(`Invalid value for ${key}.`);
+              throw new Error(messages.invalid || `Invalid value for ${key}.`);
             }
             values[key] = num;
           }
@@ -270,7 +279,7 @@ const scriptTranslations = {
 
       const requirePositive = (...nums) => {
         if (nums.some((n) => !(n > 0))) {
-          throw new Error('All values must be positive.');
+          throw new Error(messages.positive || 'All values must be positive.');
         }
       };
 
@@ -288,7 +297,7 @@ const scriptTranslations = {
           }
           case 'leg_from_ac': {
             requirePositive(v.a, v.c);
-            if (v.c <= v.a) throw new Error('Hypotenuse c must be greater than leg a.');
+            if (v.c <= v.a) throw new Error(messages.hypotenuseKnownLeg || 'Hypotenuse c must be greater than leg a.');
             const r = Math.sqrt(v.c * v.c - v.a * v.a);
             return {
               result: r,
@@ -299,7 +308,7 @@ const scriptTranslations = {
           }
           case 'leg_from_bc': {
             requirePositive(v.b, v.c);
-            if (v.c <= v.b) throw new Error('Hypotenuse c must be greater than leg b.');
+            if (v.c <= v.b) throw new Error(messages.hypotenuseKnownLeg || 'Hypotenuse c must be greater than leg b.');
             const r = Math.sqrt(v.c * v.c - v.b * v.b);
             return {
               result: r,
@@ -795,7 +804,12 @@ const scriptTranslations = {
         }
 
         if (!foundField) {
-          statusEl.textContent = `Error: ${msg}`;
+          const directStatusMessages = [
+            messages.positive,
+            messages.invalid,
+            messages.hypotenuseKnownLeg
+          ].filter(Boolean);
+          statusEl.textContent = directStatusMessages.includes(msg) ? msg : `Error: ${msg}`;
           statusEl.classList.add('text-red-500', 'font-semibold', 'bg-red-500/10', 'px-3', 'py-2', 'rounded-lg', 'border', 'border-red-500/20');
           statusEl.classList.remove('text-on-surface-variant');
         } else {

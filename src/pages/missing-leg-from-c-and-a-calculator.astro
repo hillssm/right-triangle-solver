@@ -1,0 +1,12 @@
+---
+import { getFocusedSideCalculatorPage } from 'src/data/focusedSideCalculatorPages';
+import FocusedSideCalculatorPage from 'theme/templates/FocusedSideCalculatorPage.astro';
+
+const page = getFocusedSideCalculatorPage('missing-leg-from-c-and-a-calculator');
+
+if (!page) {
+  throw new Error('Missing page data for missing-leg-from-c-and-a-calculator');
+}
+---
+
+<FocusedSideCalculatorPage page={page} />

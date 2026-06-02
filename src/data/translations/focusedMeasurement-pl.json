@@ -1,0 +1,640 @@
+[
+  {
+    "slug": "right-triangle-perimeter-calculator",
+    "url": "/right-triangle-perimeter-calculator/",
+    "h1": "Kalkulator obwodu trójkąta prostokątnego",
+    "metaTitle": "Kalkulator obwodu trójkąta prostokątnego | Natychmiast znajdź obwód trójkąta prostokątnego",
+    "metaDescription": "Oblicz obwód trójkąta prostokątnego z nogi a, nogi b i przeciwprostokątnej c. Zawiera formułę, rozwiązanie krok po kroku, diagram, praktyczne przykłady i zastosowania w świecie rzeczywistym.",
+    "formulaSlug": "perimeter",
+    "toolPurpose": "Wprowadź wszystkie trzy boki trójkąta prostokątnego, aby natychmiast obliczyć całkowitą odległość wokół niego. Kalkulator pokazuje wzór, krok po kroku pracę oraz wykres na żywo, dzięki czemu możesz zweryfikować każdą wartość przed wykorzystaniem wyniku.",
+    "intro": "Wprowadź nogę a, nogę b i przeciwprostokątną c, aby obliczyć całkowity obwód trójkąta prostokątnego.",
+    "quickSummary": {
+      "h2": "Co rozwiązuje ten kalkulator obwodu",
+      "intro": "Użyj tej strony, jeśli znasz już długości wszystkich trzech boków trójkąta prostokątnego i potrzebujesz całkowitej długości krawędzi. Został zaprojektowany z myślą o szybkiej arytmetyce, wprowadzaniu danych z uwzględnieniem jednostek i łatwej kontroli wizualnej.",
+      "cards": [
+        {
+          "label": "Znane wartości",
+          "value": "Noga a, noga b i przeciwprostokątna c"
+        },
+        {
+          "label": "Znaleziska",
+          "value": "Obwód P, całkowita odległość wokół trójkąta"
+        },
+        {
+          "label": "Główna formuła",
+          "value": "P = a + b + c"
+        },
+        {
+          "label": "Najlepsze dla",
+          "value": "Ogrodzenie, przycinanie, sprawdzanie układu, praca domowa z geometrii i planowanie długości krawędzi"
+        }
+      ]
+    },
+    "calculator": {
+      "outputLabel": "Obwód P",
+      "fields": [
+        {
+          "key": "a",
+          "label": "Noga A",
+          "min": 0
+        },
+        {
+          "key": "b",
+          "label": "Noga b",
+          "min": 0
+        },
+        {
+          "key": "c",
+          "label": "Przeciwprostokątna c",
+          "min": 0
+        }
+      ]
+    },
+    "diagram": {
+      "h2": "Schemat trójkąta prostokątnego: obwód wykorzystuje wszystkie trzy boki",
+      "intro": "Diagram przedstawia pełną zewnętrzną ścieżkę prawego trójkąta. Obwód nie jest pomiarem wewnętrznym; jest to suma dwóch nóg i przeciwprostokątnej.",
+      "caption": "Schemat obwodu trójkąta prostokątnego przedstawiający bok a, bok b, przeciwprostokątną c i wzór P = a + b + c.",
+      "formulaLabel": "P = a + b + c",
+      "keyLabel": "Klucz do diagramu",
+      "sides": {
+        "a": {
+          "label": "a = first leg",
+          "description": "Noga a jest jedną stroną narożnika o kącie 90 stopni i jest zawarta raz w obwodzie."
+        },
+        "b": {
+          "label": "b = second leg",
+          "description": "Noga b jest drugą stroną kąta prostego i jest dodawana razem z a i c."
+        },
+        "c": {
+          "label": "c = hypotenuse",
+          "description": "Przeciwprostokątna c jest najdłuższym bokiem, przeciwległym do kąta prostego i uzupełnia granicę."
+        }
+      },
+      "result": {
+        "label": "P = total boundary length",
+        "description": "Kalkulator dodaje a + b + c i zwraca obwód w wybranej jednostce liniowej."
+      },
+      "notes": [
+        "Wszystkie trzy strony powinny użyć tej samej jednostki przed porównaniem lub ponownym użyciem odpowiedzi.",
+        "Jeśli brakuje jednego boku, rozwiąż go najpierw za pomocą twierdzenia Pitagorasa, a następnie wróć do obwodu.",
+        "Wynik obwodu to długość, a nie powierzchnia kwadratowa."
+      ]
+    },
+    "formulaSection": {
+      "h2": "Wzór na obwód trójkąta prostokątnego",
+      "paragraphs": [
+        "Obwód dowolnego wielokąta to całkowita długość jego granicy. W przypadku trójkąta prostokątnego granica składa się z dokładnie trzech prostych boków: dwóch ramion (a i b), które tworzą kąt 90°, i jednej przeciwprostokątnej (c), która rozciąga się od kąta prostego do przeciwległego wierzchołka.",
+        "Ponieważ trójkąt prostokątny ma tylko trzy boki, wzór na obwód jest najprostszą możliwą sumą. Nie jest wymagana żadna trygonometria, pierwiastek kwadratowy ani wykładniki — wystarczy dodawanie."
+      ],
+      "formulas": [
+        "P = a + b + c"
+      ]
+    },
+    "howTo": {
+      "h2": "Jak znaleźć obwód trójkąta prostokątnego",
+      "steps": [
+        "Znajdź wszystkie trzy boki trójkąta prostokątnego. Oznacz dwa krótsze boki jako nogę a i nogę b, a najdłuższy bok jako przeciwprostokątną c.",
+        "Upewnij się, że wszystkie trzy pomiary używają tej samej jednostki. W razie potrzeby przekonwertuj przed wprowadzeniem wartości.",
+        "Wprowadź nogę a w pierwszym polu wejściowym kalkulatora.",
+        "Wprowadź etap b w drugim polu wejściowym.",
+        "Wpisz przeciwprostokątną c w trzecim polu wejściowym.",
+        "Kliknij Oblicz. Kalkulator dodaje trzy wartości i wyświetla obwód P wraz z pracą krok po kroku.",
+        "Przejrzyj wynik na diagramie, aby wizualnie potwierdzić, że długości boków odpowiadają Twojemu trójkątowi."
+      ]
+    },
+    "example": {
+      "h2": "Przykład praktyczny: znajdź obwód trójkąta prostokątnego 3-4-5",
+      "intro": "Trójkąt 3-4-5 jest jedną z najczęstszych trójek pitagorejskich. Biorąc pod uwagę a = 3, b = 4, c = 5:",
+      "lines": [
+        "P = a + b + c",
+        "P = 3 + 4 + 5",
+        "P = 12"
+      ],
+      "answer": "Obwód tego trójkąta prostokątnego wynosi 12 jednostek. Ponieważ 3² + 4² = 9 + 16 = 25 = 5², boki spełniają twierdzenie Pitagorasa i potwierdzają ważny trójkąt prostokątny."
+    },
+    "extraSections": [
+      {
+        "h2": "Jaki jest obwód trójkąta prostokątnego?",
+        "paragraphs": [
+          "Obwód trójkąta prostokątnego to całkowita odległość, jaką przebyłbyś, przechodząc wzdłuż wszystkich trzech krawędzi trójkąta, zaczynając od jednego wierzchołka i wracając do tego samego wierzchołka. Reprezentuje zewnętrzną granicę trójkątnego kształtu.",
+          "Każdy trójkąt prostokątny ma trzy boki: dwie nogi zbiegające się pod kątem prostym (90°) i jedną przeciwprostokątną przeciwną do kąta prostego. Przeciwprostokątna jest zawsze najdłuższą z trzech stron. Jeśli dodasz długości wszystkich trzech boków, otrzymasz obwód.",
+          "Obwód to jednowymiarowa miara wyrażona w jednostkach liniowych (takich jak centymetry, metry, stopy lub cale). Różni się to od pola, które mierzy dwuwymiarową przestrzeń wewnątrz trójkąta i jest wyrażane w jednostkach kwadratowych."
+        ]
+      },
+      {
+        "h2": "Zrozumienie boków trójkąta prostokątnego",
+        "paragraphs": [
+          "Przed obliczeniem obwodu pomaga wyraźnie zidentyfikować każdy bok prawego trójkąta. Błędne oznaczenie strony jest najczęstszym źródłem błędów.",
+          "W standardowej konwencji etykietowania dwie strony tworzące kąt prosty nazywane są nogami. Strona przeciwna do kąta prostego nazywana jest przeciwprostokątną. Przeciwprostokątna jest zawsze dłuższa niż każda noga z osobna, ale zawsze jest krótsza niż suma obu nóg."
+        ],
+        "listTitle": "Trzy strony w skrócie:",
+        "listItems": [
+          "Noga a — Jedna z dwóch stron tworzących kąt 90°. Może to być strona pionowa lub pozioma, w zależności od orientacji.",
+          "Noga b — druga strona tworząca kąt 90°. Razem z nogą a wyznacza kąt prosty.",
+          "Przeciwprostokątna c — najdłuższy bok, rozciągający się od jednego wierzchołka kąta ostrego do drugiego, dokładnie naprzeciwko kąta prostego.",
+          "Zachodzi zależność pitagorejska: a² + b² = c². Dzięki temu możesz sprawdzić, czy Twoje trzy wartości faktycznie tworzą trójkąt prostokątny."
+        ]
+      },
+      {
+        "h2": "Jak wyprowadzono wzór na obwód",
+        "paragraphs": [
+          "Wzór na obwód P = a + b + c jest bezpośrednim zastosowaniem ogólnej definicji obwodu wielokąta: dodaj długości wszystkich boków. Trójkąt ma dokładnie trzy boki, więc obwód jest sumą trzech długości.",
+          "Nie jest potrzebne żadne wyprowadzenie ani przegrupowanie, ponieważ wzór jest najprostszym możliwym przypadkiem pomiaru obwodu. Jednak wzór staje się bardziej interesujący, gdy znane są tylko dwa boki, ponieważ można użyć twierdzenia Pitagorasa, aby znaleźć brakujący trzeci bok, a następnie obliczyć obwód."
+        ]
+      },
+      {
+        "h2": "Znajdowanie obwodu, gdy brakuje jednej strony",
+        "paragraphs": [
+          "Jeśli znasz tylko dwa z trzech boków trójkąta prostokątnego, nadal możesz znaleźć obwód. Skorzystaj z twierdzenia Pitagorasa (a² + b² = c²), aby najpierw obliczyć brakujący bok, a następnie dodać wszystkie trzy, aby otrzymać obwód.",
+          "Takie podejście pozwala pracować w dwóch najczęstszych scenariuszach: znając obie nogi, ale nie przeciwprostokątną, lub znając przeciwprostokątną i jedną nogę, ale nie drugą."
+        ],
+        "listTitle": "Wzory dla każdego przypadku brakującej strony:",
+        "listItems": [
+          "Jeśli brakuje c: c = √(a² + b²), to P = a + b + √(a² + b²)",
+          "Jeżeli brakuje b: b = √(c² – a²), to P = a + √(c² – a²) + c",
+          "Jeżeli brakuje a: a = √(c² – b²), to P = √(c² – b²) + b + c",
+          "Zawsze sprawdzaj, czy c > a i c > b, gdy używasz formy odejmowania, w przeciwnym razie wartości nie tworzą prawidłowego trójkąta prostokątnego."
+        ]
+      },
+      {
+        "h2": "Dodatkowe sprawdzone przykłady",
+        "paragraphs": [
+          "Ćwiczenia z różnymi trójkątami pomagają budować pewność siebie. Poniżej znajdują się trzy kolejne przykłady użycia typowych trójek pitagorejskich i wartości dziesiętnych."
+        ],
+        "listTitle": "Przykład 1 — Trójkąt 5-12-13:",
+        "listItems": [
+          "Dane: a = 5, b = 12, c = 13",
+          "P = 5 + 12 + 13 = 30 units",
+          "Weryfikacja: 5² + 12² = 25 + 144 = 169 = 13² ✓"
+        ]
+      },
+      {
+        "h2": "Przykład 2 — Trójkąt 8-15-17",
+        "paragraphs": [
+          "Dane: a = 8, b = 15, c = 17. To kolejna trójka pitagorejska, w której wszystkie boki są liczbami całkowitymi."
+        ],
+        "listItems": [
+          "P = 8 + 15 + 17 = 40 units",
+          "Weryfikacja: 8² + 15² = 64 + 225 = 289 = 17² ✓",
+          "Ten potrójny element jest przydatny w układach budowlanych, gdzie potrzebne jest 40-jednostkowe ogrodzenie lub listwa wykończeniowa."
+        ]
+      },
+      {
+        "h2": "Przykład 3 — Boki dziesiętne",
+        "paragraphs": [
+          "Nie wszystkie trójkąty prostokątne mają równe boki w postaci liczb całkowitych. Dane: a = 2,5, b = 6, c = 6,5."
+        ],
+        "listItems": [
+          "P = 2,5 + 6 + 6,5 = 15 jednostek",
+          "Weryfikacja: 2,5² + 6² = 6,25 + 36 = 42,25 = 6,5² ✓",
+          "Wartości dziesiętne działają w ten sam sposób — wystarczy je dodać bezpośrednio."
+        ]
+      },
+      {
+        "h2": "Obwód a powierzchnia: jaka jest różnica?",
+        "paragraphs": [
+          "Obwód i powierzchnia opisują trójkąt, ale mierzą różne rzeczy. Obwód mierzy całkowitą długość krawędzi na zewnątrz (pomiar liniowy), podczas gdy obszar mierzy zamkniętą przestrzeń wewnątrz trójkąta (pomiar kwadratowy).",
+          "W przypadku trójkąta prostokątnego o nogach a i b oraz przeciwprostokątnej c istnieją dwa wzory: P = a + b + c na obwód i A = (a × b) / 2 na pole powierzchni. Zauważ, że wzór na pole powierzchni wykorzystuje tylko dwie ramiona (ponieważ są prostopadłe), podczas gdy wzór na obwód wykorzystuje wszystkie trzy boki.",
+          "Częstym błędem jest mylenie tych dwóch pojęć. Jeśli problem dotyczy odległości ogrodzenia wokół trójkątnej działki, potrzebny jest obwód. Jeśli wymaga pokrycia powierzchni (np. Malowania lub kafelkowania), potrzebujesz obszaru."
+        ]
+      },
+      {
+        "h2": "Zastosowania w świecie rzeczywistym obwodu trójkąta prostokątnego",
+        "paragraphs": [
+          "Znajomość obwodu trójkąta prostokątnego jest niezbędna w wielu praktycznych sytuacjach. Ilekroć musisz zmierzyć, wyciąć lub kupić materiał otaczający krawędzie trójkąta prostokątnego, obwód informuje dokładnie, ile materiału potrzeba."
+        ],
+        "listTitle": "Typowe zastosowania w świecie rzeczywistym:",
+        "listItems": [
+          "Ogrodzenie — trójkątna grządka ogrodowa lub narożna działka wymaga ogrodzenia ze wszystkich trzech stron. Obwód informuje, ile metrów liniowych ogrodzenia kupić.",
+          "Przycinanie i formowanie — trójkątny element architektoniczny (np. szczyt) wymaga przycięcia wzdłuż krawędzi. Obwód określa całkowitą długość wykończenia.",
+          "Drut i lina — oprawienie prostokątnej ekspozycji, banera lub żagla wymaga liny, drutu lub krawędzi równej obwodowi.",
+          "Ścieżki do joggingu i spacerów — Trójkątna bieżnia lub ścieżka spacerowa wokół prostokątnego obszaru parku ma całkowitą długość równą obwodowi.",
+          "Układ konstrukcji — budowniczowie stosują zasadę 3-4-5, aby sprawdzić, czy narożnik jest kwadratowy. Znajomość obwodu pomaga w weryfikacji pomiarów.",
+          "Rękodzieło i szycie — wiązanie, lamówka lub koronka wokół trójkątnej poduszki lub proporczyka wymaga materiału o długości obwodowej.",
+          "Obliczenia mapowe i pomiarowe — Geodeci mierzą trójkątne działki i potrzebują obwodu do opisów granic i zapisów nieruchomości."
+        ]
+      },
+      {
+        "h2": "Związek między obwodem a półobwodem",
+        "paragraphs": [
+          "Półobwód (s) to dokładnie połowa obwodu: s = P / 2 = (a + b + c) / 2. Podczas gdy obwód podaje całkowitą długość granicy, półobwód jest wygodną wartością używaną w bardziej zaawansowanych wzorach.",
+          "Półobwód pojawia się we wzorze Herona na pole trójkąta: A = √[s(s–a)(s–b)(s–c)]. Służy również do obliczania promienia (promień okręgu wpisanego): r = A / s. Zatem obwód jest punktem wyjścia dla kilku ważnych obliczeń trójkąta.",
+          "Jeśli obliczyłeś już obwód za pomocą tego narzędzia, możesz znaleźć półobwód, dzieląc wynik przez 2 lub korzystając z naszego dedykowanego kalkulatora półobwodu."
+        ]
+      },
+      {
+        "h2": "Wskazówki dotyczące konwersji jednostek",
+        "paragraphs": [
+          "Wynik obwodu ma znaczenie tylko wtedy, gdy wszystkie trzy strony wejściowe używają tej samej jednostki. Jeśli pomiary są podane w różnych jednostkach, najpierw je przelicz. Kalkulator zawiera selektor jednostek dla każdego pola wejściowego, umożliwiający automatyczną obsługę konwersji.",
+          "Pamiętaj, że obwód jest miarą liniową, więc konwersje opierają się na standardowych współczynnikach długości, a nie współczynnikach powierzchni. Na przykład, aby przeliczyć stopy na metry, pomnóż przez 0,3048 (a nie przez 0,3048²)."
+        ],
+        "listTitle": "Szybkie przypomnienia o konwersji:",
+        "listItems": [
+          "1 cal = 2,54 cm",
+          "1 stopa = 12 cali = 0,3048 m",
+          "1 jard = 3 stopy = 0,9144 m",
+          "1 metr = 100 cm = 3,2808 stopy",
+          "1 kilometr = 1000 m = 0,6214 mili",
+          "1 mila = 5280 stóp = 1,6093 km"
+        ]
+      },
+      {
+        "h2": "Typowe błędy przy obliczaniu obwodu",
+        "paragraphs": [
+          "Wzór na obwód jest prosty, ale błędy wciąż się zdarzają. Większość błędów wynika z nieprawidłowych danych wejściowych, a nie z błędnej arytmetyki. Wychwytywanie tych problemów przed obliczeniem oszczędza czas i zapobiega błędnym odpowiedziom."
+        ],
+        "listTitle": "Uważaj na te pułapki:",
+        "listItems": [
+          "Używanie tylko dwóch stron — obwód wymaga wszystkich trzech boków. Zapomnienie przeciwprostokątnej lub jednej nogi daje niepełną odpowiedź.",
+          "Mieszanie jednostek — jeśli odnoga a jest wyrażona w calach, a odnoga b jest wyrażona w centymetrach, suma nie ma znaczenia. Najpierw zamień na pojedynczą jednostkę.",
+          "Mylenie obwodu z polem — obwód to długość (mierzona w jednostkach), podczas gdy powierzchnia to powierzchnia (mierzona w jednostkach kwadratowych). Upewnij się, że wiesz, którego dotyczy problem.",
+          "Korzystając z boków, które nie tworzą trójkąta prostokątnego — sprawdź, czy a² + b² = c². Jeśli to równanie nie jest spełnione, trójkąt nie jest trójkątem prostokątnym, a c nie jest prawdziwą przeciwprostokątną.",
+          "Zbyt wczesne zaokrąglanie — jeśli jedna strona jest irracjonalna (np. √2), zachowaj pełną precyzję aż do ostatniego dodania, aby uniknąć kumulowania się błędów zaokrągleń.",
+          "Wprowadzenie przeciwprostokątnej jako nogi — przeciwprostokątna musi być najdłuższym bokiem. Jeśli w polu przeciwprostokątnej umieścisz krótszą wartość, diagram będzie wyglądał błędnie, a kontrola pitagorejska zakończy się niepowodzeniem."
+        ]
+      },
+      {
+        "h2": "Właściwości obwodu trójkąta prostokątnego",
+        "paragraphs": [
+          "Trójkąty prostokątne mają specjalne właściwości obwodu, które odróżniają je od innych trójkątów. Zrozumienie tych właściwości może pomóc w weryfikacji obliczeń i wyłapaniu błędów.",
+          "W każdym trójkącie prostokątnym przeciwprostokątna c jest zawsze mniejsza niż suma dwóch nóg (a + b), ale większa niż każda z nich osobno. Oznacza to, że obwód P jest zawsze większy niż 2c (ponieważ a + b > c) i mniejszy niż 2(a + b), co równa się 2a + 2b."
+        ],
+        "listTitle": "Kluczowe właściwości obwodu:",
+        "listItems": [
+          "P jest zawsze większe niż 2 × (najdłuższy bok), ponieważ pozostałe dwa boki dodają dodatkową długość.",
+          "P jest zawsze mniejsze niż 3 × (najdłuższy bok), ponieważ c > a i c > b, więc a + b < 2c.",
+          "Dla trójkąta 45-45-90 o ramionach o długości k, P = k + k + k√2 = k(2 + √2) ≈ 3,414k.",
+          "Dla trójkąta 30-60-90 o najkrótszym ramieniu k, P = k + k√3 + 2k = k(3 + √3) ≈ 4,732k.",
+          "Spośród wszystkich trójkątów prostokątnych o tej samej przeciwprostokątnej największy obwód ma trójkąt prostokątny równoramienny (45-45-90)."
+        ]
+      }
+    ],
+    "relatedLinks": [
+      {
+        "href": "/right-triangle-measurements-calculator/",
+        "label": "Kalkulator pomiarów trójkąta prostokątnego"
+      },
+      {
+        "href": "/right-triangle-semiperimeter-calculator/",
+        "label": "Kalkulator półobwodu trójkąta prostokątnego"
+      },
+      {
+        "href": "/right-triangle-side-calculator/",
+        "label": "Kalkulator prawej strony trójkąta"
+      },
+      {
+        "href": "/right-triangle-area-calculator/",
+        "label": "Kalkulator powierzchni trójkąta prostokątnego"
+      },
+      {
+        "href": "/pythagorean-theorem-calculator/",
+        "label": "Kalkulator twierdzenia Pitagorasa"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Jaki jest wzór na obwód trójkąta prostokątnego?",
+        "answer": "Wzór na obwód to P = a + b + c, gdzie a i b to dwie nogi (boki tworzące kąt 90°), a c to przeciwprostokątna (najdłuższy bok, przeciwny do kąta prostego). Po prostu dodaj do siebie wszystkie trzy długości boków."
+      },
+      {
+        "question": "Co oznacza każda zmienna w P = a + b + c?",
+        "answer": "P to obwód (całkowita długość granicy). a jest jedną nogą trójkąta prostokątnego. b to druga noga. c to przeciwprostokątna — najdłuższy bok leżący naprzeciwko kąta prostego. Obie nogi tworzą narożnik 90°."
+      },
+      {
+        "question": "Czy mogę znaleźć obwód mający tylko dwa boki?",
+        "answer": "Tak, ale najpierw musisz obliczyć brakującą trzecią stronę, korzystając z twierdzenia Pitagorasa: c = √(a² + b²) w przypadku braku przeciwprostokątnej lub brakująca odnoga = √(c² – znana noga²). Następnie dodaj wszystkie trzy boki, aby uzyskać obwód."
+      },
+      {
+        "question": "Czy obwód to to samo co pole?",
+        "answer": "Nie. Obwód (P = a + b + c) mierzy całkowitą odległość wokół trójkąta w jednostkach liniowych (cm, m, ft). Pole (A = a×b/2) mierzy przestrzeń zamkniętą wewnątrz trójkąta w jednostkach kwadratowych (cm², m², ft²). Są to zasadniczo różne pomiary."
+      },
+      {
+        "question": "Czy wszystkie trzy strony muszą znajdować się w tej samej jednostce?",
+        "answer": "Tak. Przed dodaniem wszystkie trzy strony muszą być wyrażone w tej samej jednostce. Jeśli jedna strona jest wyrażona w calach, a druga w centymetrach, najpierw przelicz je na wspólną jednostkę. Kalkulator zawiera selektory jednostek na każdym wejściu, które obsługują to automatycznie."
+      },
+      {
+        "question": "Jaki jest obwód trójkąta prostokątnego 3-4-5?",
+        "answer": "Obwód wynosi 3 + 4 + 5 = 12 jednostek. Trójkąt 3-4-5 to najmniejsza trójka pitagorejska o bokach całkowitych. Każda skalowana wersja (np. 6-8-10 lub 9-12-15) zachowuje ten sam współczynnik przy proporcjonalnym skalowaniu obwodu."
+      },
+      {
+        "question": "Jak sprawdzić, czy mój trójkąt jest rzeczywiście trójkątem prostokątnym?",
+        "answer": "Sprawdź, że a² + b² = c², gdzie c jest najdłuższym bokiem. Jeśli to równanie jest prawdziwe, trójkąt ma kąt 90° i jest trójkątem prostokątnym. Jeśli to nie jest prawdą, wzór na obwód nadal działa, ale trójkąt nie jest prostokątny."
+      },
+      {
+        "question": "Jaki jest związek między obwodem a półobwodem?",
+        "answer": "Półobwód to dokładnie połowa obwodu: s = P/2. Jeżeli obwód P = 12, to półobwód s = 6. Półobwód jest używany we wzorze Herona i obliczeniach promienia."
+      },
+      {
+        "question": "Czy obwód trójkąta prostokątnego może być liczbą nieparzystą?",
+        "answer": "Tak. Obwód może być dowolną liczbą dodatnią — całkowitą, dziesiętną lub niewymierną. Na przykład trójkąt prostokątny o nogach 1 i 1 ma przeciwprostokątną √2 ≈ 1,414, co daje obwód ≈ 3,414, który nie jest ani liczbą całkowitą, ani wymierną."
+      },
+      {
+        "question": "Dlaczego przeciwprostokątna jest zawsze najdłuższym bokiem?",
+        "answer": "W trójkącie prostokątnym przeciwprostokątna leży naprzeciw największego kąta (90°). Podstawową zasadą geometrii jest to, że najdłuższy bok jest zawsze położony naprzeciw największego kąta. Ponieważ żaden kąt w trójkącie nie może być większy od kąta prostego, c jest zawsze najdłuższym bokiem."
+      }
+    ]
+  },
+  {
+    "slug": "right-triangle-semiperimeter-calculator",
+    "url": "/right-triangle-semiperimeter-calculator/",
+    "h1": "Kalkulator półobwodu trójkąta prostokątnego",
+    "metaTitle": "Kalkulator półobwodu trójkąta prostokątnego | Znajdź s z a, b i c",
+    "metaDescription": "Oblicz półobwód s trójkąta prostokątnego z nogi a, nogi b i przeciwprostokątnej c. Zawiera formułę, diagram, pracę krok po kroku, przykłady, zastosowania i sprawdzanie błędów.",
+    "formulaSlug": "semiperimeter",
+    "toolPurpose": "Znajdź półobwód trójkąta prostokątnego ze wszystkich trzech długości boków, a następnie użyj go jako czystego punktu kontrolnego dla wzorów na pole powierzchni, promień i geometrię, które zależą od połowy obwodu.",
+    "intro": "Wprowadź nogę a, nogę b i przeciwprostokątną c, aby obliczyć półobwód trójkąta prostokątnego s.",
+    "quickSummary": {
+      "h2": "Co rozwiązuje ten kalkulator półobwodowy",
+      "intro": "Użyj tej strony, jeśli potrzebujesz wartości połowy obwodu s dla trójkąta prostokątnego. Jest to szczególnie przydatne przed użyciem wzorów powierzchni w stylu Herona, wzorów na promień lub tożsamości geometrycznych, które odwołują się do s.",
+      "cards": [
+        {
+          "label": "Znane wartości",
+          "value": "Noga a, noga b i przeciwprostokątna c"
+        },
+        {
+          "label": "Znaleziska",
+          "value": "Półobwód s, dokładnie połowa P"
+        },
+        {
+          "label": "Główna formuła",
+          "value": "s = (a + b + c) / 2"
+        },
+        {
+          "label": "Najlepsze dla",
+          "value": "Sprawdzanie czapli, praca promienia, dowody geometrii i zapis trójkąta zwartego"
+        }
+      ]
+    },
+    "calculator": {
+      "outputLabel": "Półobwód s",
+      "fields": [
+        {
+          "key": "a",
+          "label": "Noga A",
+          "min": 0
+        },
+        {
+          "key": "b",
+          "label": "Noga b",
+          "min": 0
+        },
+        {
+          "key": "c",
+          "label": "Przeciwprostokątna c",
+          "min": 0
+        }
+      ]
+    },
+    "diagram": {
+      "h2": "Schemat trójkąta prostokątnego: półobwód to połowa granicy",
+      "intro": "Diagram pokazuje te same długości trzech boków użyte w obwodzie, ale wynik jest podzielony przez 2. Półobwód nadal opiera się na zewnętrznej krawędzi trójkąta, a nie na obszarze wewnętrznym.",
+      "caption": "Diagram półobwodu trójkąta prostokątnego przedstawiający bok a, bok b, przeciwprostokątną c i wzór s = (a + b + c) / 2.",
+      "formulaLabel": "s = (a + b + c) / 2",
+      "keyLabel": "Klucz do diagramu",
+      "sides": {
+        "a": {
+          "label": "a = first leg",
+          "description": "Noga a jest jednym z dwóch prostopadłych boków uwzględnionych w sumie przed podzieleniem przez 2."
+        },
+        "b": {
+          "label": "b = second leg",
+          "description": "Noga b tworzy kąt prosty z a i ma udział zarówno w obwodzie, jak i pół obwodzie."
+        },
+        "c": {
+          "label": "c = hypotenuse",
+          "description": "Przeciwprostokątna c jest najdłuższym bokiem i należy ją uwzględnić, zanim suma zostanie zmniejszona o połowę."
+        }
+      },
+      "result": {
+        "label": "s = half of the boundary total",
+        "description": "Kalkulator najpierw dodaje a + b + c, a następnie dzieli ten obwód przez 2."
+      },
+      "notes": [
+        "Półobwód jest miarą liniową, dlatego używa tej samej jednostki co długości boków.",
+        "Jeśli P jest już znane, użyj s = P / 2; jeśli P nie jest znane, użyj s = (a + b + c) / 2.",
+        "W przypadku prawidłowego trójkąta prostokątnego c powinno być najdłuższym bokiem i powinno spełniać a^2 + b^2 = c^2."
+      ]
+    },
+    "formulaSection": {
+      "h2": "Wzór na półobwód trójkąta prostokątnego",
+      "paragraphs": [
+        "Półobwód trójkąta to połowa jego obwodu. W przypadku trójkąta prostokątnego obwód wynosi P = a + b + c, zatem półobwód wynosi s = (a + b + c) / 2.",
+        "Litera s jest powszechnie używana, ponieważ w wielu wzorach geometrii zwartej pojawia się półobwód. Nawet jeśli trójkąt jest prostokątny, s jest przydatne jako pomost między długościami boków, powierzchnią i pomiarami okręgu, takimi jak promień.",
+        "Podobnie jak obwód, półobwód mierzy się w jednostkach liniowych. Jeśli boki są w metrach, s jest w metrach. Jeśli boki są w calach, s jest w calach."
+      ],
+      "formulas": [
+        "P = a + b + c",
+        "s = \\frac{P}{2}",
+        "s = \\frac{a + b + c}{2}"
+      ]
+    },
+    "howTo": {
+      "h2": "Jak znaleźć półobwód trójkąta prostokątnego",
+      "steps": [
+        "Wskaż dwie nogi trójkąta prostokątnego. Są to boki, które spotykają się pod kątem 90 stopni.",
+        "Zidentyfikuj przeciwprostokątną c. Jest to najdłuższy bok i leży naprzeciwko kąta prostego.",
+        "Upewnij się, że a, b i c używają tej samej jednostki miary.",
+        "Wprowadź nogę a, nogę b i przeciwprostokątną c do kalkulatora.",
+        "Kliknij przycisk Oblicz, aby dodać trzy boki i podzielić wynik przez 2.",
+        "Sprawdź wyświetlone kroki. Kalkulator powinien najpierw pokazać całkowity obwód, a następnie wynik półobwodu.",
+        "Użyj s w dowolnej późniejszej formule wymagającej półobwodu, takiej jak promień lub relacje powierzchni w stylu Herona."
+      ]
+    },
+    "example": {
+      "h2": "Przykład praktyczny: znajdź półobwód trójkąta prostokątnego 3-4-5",
+      "intro": "Biorąc pod uwagę a = 3, b = 4 i c = 5, najpierw dodaj trzy boki, aby otrzymać obwód, a następnie podziel przez 2:",
+      "lines": [
+        "s = \\frac{a + b + c}{2}",
+        "s = \\frac{3 + 4 + 5}{2}",
+        "s = \\frac{12}{2}",
+        "s = 6"
+      ],
+      "answer": "Półobwód wynosi 6 jednostek. Pełny obwód wynosi 12 jednostek, a s stanowi dokładnie połowę tej sumy."
+    },
+    "extraSections": [
+      {
+        "h2": "Co oznacza półperymetr?",
+        "paragraphs": [
+          "Półobwód dosłownie oznacza połowę obwodu. Zamiast wielokrotnie zapisywać (a + b + c) / 2 w dłuższych wzorach, w geometrii często używa się krótszego symbolu s.",
+          "W przypadku trójkąta prostokątnego wartość ta jest szczególnie wygodna, ponieważ etykiety boczne są już ustandaryzowane: a i b to nogi, a c to przeciwprostokątna. Gdy znane są długości tych trzech boków, s jest pojedynczą liczbą zwartą, która podsumowuje połowę długości granicy."
+        ]
+      },
+      {
+        "h2": "Półobwód a obwód",
+        "paragraphs": [
+          "Obwód P mierzy pełną odległość wokół zewnętrznej części trójkąta. Półobwód s mierzy połowę tej odległości. Obie wartości są ze sobą bezpośrednio powiązane: s = P / 2 i P = 2s.",
+          "Użyj obwodu, gdy problem wymaga podania całkowitej długości granicy, takiej jak przycięcie, ogrodzenie lub odległość od krawędzi. Użyj półobwodu, gdy formuła wyraźnie wymaga podania s lub gdy przygotowujesz wartości dla zależności pola i promienia."
+        ],
+        "listTitle": "Szybkie porównanie:",
+        "listItems": [
+          "Obwód: P = a + b + do",
+          "Półobwód: s = (a + b + c) / 2",
+          "Jeśli P = 30, to s = 15",
+          "Jeśli s = 15, to P = 30"
+        ]
+      },
+      {
+        "h2": "Dlaczego półobwód ma znaczenie w geometrii trójkąta prostokątnego",
+        "paragraphs": [
+          "Półobwód to coś więcej niż skrót. Jest to standardowa wartość pomocnicza używana we wzorach łączących długości boków z pomiarami powierzchni i okręgów.",
+          "W przypadku dowolnego trójkąta wzór Herona wykorzystuje s do obliczenia pola z trzech boków: A = sqrt(s(s-a)(s-b)(s-c)). W przypadku trójkąta prostokątnego często używasz A = (a x b) / 2, ale wzór Herona jest nadal przydatny do weryfikacji.",
+          "Półobwód łączy się również z promieniem. W wielu wzorach na trójkąty pole jest równe promieniowi razy półobwodowi: A = r x s. Gdy znane jest s, łatwiej jest znaleźć r lub zweryfikować wynik promienia."
+        ],
+        "listTitle": "Typowe formuły używające s:",
+        "listItems": [
+          "Obszar w stylu czapli: A = sqrt(s(s-a)(s-b)(s-c))",
+          "Relacja pole-promień: A = r x s",
+          "Przegrupowanie promienia: r = A / s",
+          "Odzysk obwodowy: P = 2s"
+        ]
+      },
+      {
+        "h2": "Dodatkowe przykłady półobwodów",
+        "paragraphs": [
+          "Te przykłady pokazują, jak ten sam wzór działa w przypadku trójek całkowitych i długości boków dziesiętnych. Kluczem jest dodanie wszystkich trzech stron przed podziałem."
+        ],
+        "listTitle": "Przykład 1 - trójkąt 5-12-13:",
+        "listItems": [
+          "Dane: a = 5, b = 12, c = 13",
+          "s = (5 + 12 + 13) / 2",
+          "s = 30 / 2 = 15 units"
+        ]
+      },
+      {
+        "h2": "Przykład 2 - Trójkąt 8-15-17",
+        "paragraphs": [
+          "Dla a = 8, b = 15 i c = 17 pełny obwód wynosi 40 jednostek."
+        ],
+        "listItems": [
+          "s = (8 + 15 + 17) / 2",
+          "s = 40 / 2",
+          "s = 20 units"
+        ]
+      },
+      {
+        "h2": "Przykład 3 – Długości boków dziesiętnych",
+        "paragraphs": [
+          "Ułamki dziesiętne działają tak samo jak liczby całkowite. Biorąc pod uwagę a = 2,5, b = 6 i c = 6,5:"
+        ],
+        "listItems": [
+          "s = (2,5 + 6 + 6,5) / 2",
+          "s = 15 / 2",
+          "s = 7,5 jednostki"
+        ]
+      },
+      {
+        "h2": "Kiedy używać tego kalkulatora półobwodowego",
+        "paragraphs": [
+          "Skorzystaj z tego kalkulatora, gdy w zadaniu z geometrii podane są długości wszystkich trzech boków trójkąta prostokątnego i wymagane jest podanie s, półobwodu lub wzór zależny od półobwodu.",
+          "Przydaje się również do szybkiego sprawdzenia po rozwiązaniu brakującej strony. Kiedy już znasz a, b i c, półobwód powinien być prosty i dokładny: dodaj boki, a następnie podziel przez 2."
+        ],
+        "listTitle": "Dobre przypadki użycia obejmują:",
+        "listItems": [
+          "Przygotowanie danych wejściowych do wzoru Herona z trzech długości boków.",
+          "Sprawdzanie obliczeń promienia za pomocą r = A / s.",
+          "Ograniczenie powtarzającej się arytmetyki w zadaniach domowych lub dowodach z geometrii.",
+          "Porównywanie rozmiarów trójkątów przy użyciu wartości półgranicznych.",
+          "Sprawdzanie, czy wyniki obwodu i półobwodu są zgodne: P powinno zawsze wynosić 2s."
+        ]
+      },
+      {
+        "h2": "Wskazówki dotyczące jednostek dla półperymetru",
+        "paragraphs": [
+          "Półobwód to długość, zatem podlega zwykłym zasadom konwersji jednostek długości. Nie mierzy się go w jednostkach kwadratowych.",
+          "Jeśli wejścia boczne używają różnych jednostek, przelicz je najpierw lub konsekwentnie korzystaj z selektorów jednostek kalkulatora. Bezpośrednie dodanie stóp, cali i centymetrów dałoby bezsensowny wynik."
+        ],
+        "listTitle": "Należy pamiętać o następujących zasadach dotyczących jednostek:",
+        "listItems": [
+          "Przed porównaniem wyników wszystkie długości boków powinny reprezentować ten sam układ jednostek.",
+          "Wynik s wykorzystuje jednostkę liniową, taką jak cm, m, in lub ft.",
+          "Nie należy kwadraturować jednostek przy obliczaniu półobwodu.",
+          "Jeśli po obliczeniu przeliczysz boki, przelicz s według tego samego liniowego współczynnika konwersji."
+        ]
+      },
+      {
+        "h2": "Typowe błędy półperymetryczne",
+        "paragraphs": [
+          "Większość błędów półobwodowych ma miejsce, ponieważ formuła wygląda na prostą. Arytmetyka jest łatwa, ale konfiguracja nadal ma znaczenie."
+        ],
+        "listTitle": "Uważaj na te błędy:",
+        "listItems": [
+          "Zapominanie o dzieleniu przez 2 po dodaniu boków.",
+          "Dzieląc najpierw każdą stronę przez 2, a potem tracąc kontrolę nad sumą.",
+          "Używając tylko dwóch nóg i pomijając przeciwprostokątną.",
+          "Mylimy s z obwodem P. Pamiętaj, że P = 2s.",
+          "Korzystanie z długości boków, które nie tworzą trójkąta prostokątnego.",
+          "Mieszanie różnych jednostek w tym samym obliczeniu."
+        ]
+      },
+      {
+        "h2": "Jak półobwód łączy się z powierzchnią i promieniem",
+        "paragraphs": [
+          "W trójkącie prostokątnym pole można obliczyć bezpośrednio za pomocą A = (a x b) / 2, ponieważ ramiona są prostopadłe. Gdy znane jest pole i półobwód, promień można sprawdzić za pomocą r = A / s.",
+          "To sprawia, że półobwód jest użyteczną wartością środkową. Nie zastępuje wzoru na pole powierzchni, ale pomaga połączyć długości boków z wymiarami okręgów wewnątrz trójkąta."
+        ],
+        "listTitle": "Przykład z trójkątem 3-4-5:",
+        "listItems": [
+          "Powierzchnia: A = (3 x 4) / 2 = 6",
+          "Półobwód: s = (3 + 4 + 5) / 2 = 6",
+          "Kontrola promienia: r = A / s = 6 / 6 = 1"
+        ]
+      }
+    ],
+    "relatedLinks": [
+      {
+        "href": "/right-triangle-measurements-calculator/",
+        "label": "Kalkulator pomiarów trójkąta prostokątnego"
+      },
+      {
+        "href": "/right-triangle-perimeter-calculator/",
+        "label": "Kalkulator obwodu trójkąta prostokątnego"
+      },
+      {
+        "href": "/right-triangle-area-calculator/",
+        "label": "Kalkulator powierzchni trójkąta prostokątnego"
+      },
+      {
+        "href": "/right-triangle-radius-calculator/",
+        "label": "Kalkulator promienia trójkąta prostokątnego"
+      },
+      {
+        "href": "/pythagorean-theorem-calculator/",
+        "label": "Kalkulator twierdzenia Pitagorasa"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Jaki jest wzór na półobwód trójkąta prostokątnego?",
+        "answer": "Wzór to s = (a + b + c) / 2, gdzie a i b to nogi prawego trójkąta, a c to przeciwprostokątna. Dodaj długości wszystkich trzech boków, a następnie podziel sumę przez 2."
+      },
+      {
+        "question": "Co znaczy półobwodowy?",
+        "answer": "Półobwód oznacza połowę obwodu trójkąta. Jeśli pełny obwód wynosi P, to s = P / 2. Jeśli długości boków są znane bezpośrednio, s = (a + b + c) / 2."
+      },
+      {
+        "question": "Czy półobwód to to samo co obwód?",
+        "answer": "Nie. Obwód to pełna długość granicy wokół trójkąta, natomiast półobwód to połowa tej długości. Są one powiązane przez P = 2s."
+      },
+      {
+        "question": "Dlaczego stosuje się półobwód?",
+        "answer": "Używa się półobwodu, ponieważ ułatwia pisanie i obliczanie dłuższych formuł. Występuje we wzorze Herona w relacji pole-promień A = r x s i przegrupowaniu promienia r = A / s."
+      },
+      {
+        "question": "Czy potrzebuję wszystkich trzech stron?",
+        "answer": "Tak. Aby bezpośrednio obliczyć półobwód, potrzebujesz nogi a, nogi b i przeciwprostokątnej c. Jeśli brakuje jednej strony, rozwiąż ją najpierw za pomocą twierdzenia Pitagorasa, a następnie oblicz s."
+      },
+      {
+        "question": "Jaki jest półobwód trójkąta prostokątnego 3-4-5?",
+        "answer": "Dla trójkąta prostokątnego 3-4-5 s = (3 + 4 + 5) / 2 = 12 / 2 = 6 jednostek."
+      },
+      {
+        "question": "Czy półobwód używa jednostek kwadratowych?",
+        "answer": "Nie. Półobwód to długość, więc używa się w niej jednostek liniowych, takich jak cm, m, cale lub stopy. W polu powierzchni podawane są jednostki kwadratowe, ale w przypadku półobwodu nie."
+      },
+      {
+        "question": "Jak mogę sprawdzić, czy moja odpowiedź półobwodowa jest poprawna?",
+        "answer": "Podwoić półobwód. Wynik powinien być równy całemu obwodowi. Na przykład, jeśli s = 15, wówczas P powinno wynosić 30."
+      }
+    ]
+  }
+]

@@ -1,0 +1,640 @@
+[
+  {
+    "slug": "right-triangle-perimeter-calculator",
+    "url": "/right-triangle-perimeter-calculator/",
+    "h1": "Kalkulator Keliling Segitiga Kanan",
+    "metaTitle": "Kalkulator Keliling Segitiga Kanan | Temukan Keliling Segitiga Siku-siku Secara Instan",
+    "metaDescription": "Hitung keliling segitiga siku-siku dari kaki a, kaki b, dan sisi miring c. Termasuk rumus, solusi langkah demi langkah, diagram, contoh kerja, dan aplikasi dunia nyata.",
+    "formulaSlug": "perimeter",
+    "toolPurpose": "Masukkan ketiga sisi segitiga siku-siku untuk langsung menghitung total jarak di sekelilingnya. Kalkulator menampilkan rumus, langkah demi langkah, dan diagram langsung sehingga Anda dapat memverifikasi setiap nilai sebelum menggunakan hasilnya.",
+    "intro": "Masukkan kaki a, kaki b, dan sisi miring c untuk menghitung keliling total segitiga siku-siku.",
+    "quickSummary": {
+      "h2": "Apa yang Dipecahkan Kalkulator Perimeter Ini",
+      "intro": "Gunakan halaman ini jika Anda sudah mengetahui ketiga panjang sisi segitiga siku-siku dan membutuhkan total panjang batasnya. Ini dirancang untuk aritmatika cepat, input unit-aware, dan pemeriksaan visual yang mudah.",
+      "cards": [
+        {
+          "label": "Nilai-nilai yang diketahui",
+          "value": "Kaki a, kaki b, dan sisi miring c"
+        },
+        {
+          "label": "Menemukan",
+          "value": "Keliling P, jumlah jarak keliling segitiga"
+        },
+        {
+          "label": "Rumus utama",
+          "value": "P = a + b + c"
+        },
+        {
+          "label": "Terbaik untuk",
+          "value": "Pemagaran, trim, pemeriksaan tata letak, pekerjaan rumah geometri, dan perencanaan panjang tepi"
+        }
+      ]
+    },
+    "calculator": {
+      "outputLabel": "Keliling P",
+      "fields": [
+        {
+          "key": "a",
+          "label": "Kaki a",
+          "min": 0
+        },
+        {
+          "key": "b",
+          "label": "Kaki b",
+          "min": 0
+        },
+        {
+          "key": "c",
+          "label": "Sisi miring c",
+          "min": 0
+        }
+      ]
+    },
+    "diagram": {
+      "h2": "Diagram Segitiga Kanan: Keliling Menggunakan Ketiga Sisinya",
+      "intro": "Diagram menyoroti jalur luar penuh dari segitiga siku-siku. Keliling bukanlah ukuran bagian dalam; itu adalah jumlah dari dua kaki dan sisi miring.",
+      "caption": "Diagram keliling segitiga siku-siku yang menunjukkan sisi a, sisi b, sisi miring c, dan rumus P = a + b + c.",
+      "formulaLabel": "P = a + b + c",
+      "keyLabel": "Kunci Diagram",
+      "sides": {
+        "a": {
+          "label": "a = first leg",
+          "description": "Kaki a merupakan salah satu sisi sudut 90 derajat dan dimasukkan satu kali dalam keliling."
+        },
+        "b": {
+          "label": "b = second leg",
+          "description": "Kaki b adalah sisi lain dari sudut siku-siku dan dijumlahkan dengan a dan c."
+        },
+        "c": {
+          "label": "c = hypotenuse",
+          "description": "Sisi miring c adalah sisi terpanjang yang berhadapan dengan sudut siku-siku dan melengkapi batasnya."
+        }
+      },
+      "result": {
+        "label": "P = total boundary length",
+        "description": "Kalkulator menambahkan a + b + c dan mengembalikan keliling dalam satuan linier yang dipilih."
+      },
+      "notes": [
+        "Ketiga pihak harus menggunakan satuan yang sama sebelum Anda membandingkan atau menggunakan kembali jawabannya.",
+        "Jika salah satu sisinya hilang, selesaikan dulu sisi tersebut dengan teorema Pythagoras, lalu kembali ke keliling.",
+        "Hasil kelilingnya adalah panjang, bukan satuan luas persegi."
+      ]
+    },
+    "formulaSection": {
+      "h2": "Rumus Keliling Segitiga Siku-siku",
+      "paragraphs": [
+        "Keliling suatu poligon adalah panjang total batasnya. Untuk segitiga siku-siku, batasnya terdiri dari tiga sisi lurus: dua kaki (a dan b) yang membentuk sudut 90°, dan satu sisi miring (c) yang membentang dari sudut siku-siku ke titik sudut di depannya.",
+        "Karena segitiga siku-siku hanya memiliki tiga sisi, rumus kelilingnya adalah jumlah yang paling sederhana. Tidak diperlukan trigonometri, akar kuadrat, atau eksponen — cukup penjumlahan."
+      ],
+      "formulas": [
+        "P = a + b + c"
+      ]
+    },
+    "howTo": {
+      "h2": "Cara Mencari Keliling Segitiga Siku-siku",
+      "steps": [
+        "Identifikasi ketiga sisi segitiga siku-siku. Beri label pada kedua sisi yang lebih pendek sebagai kaki a dan kaki b, dan sisi terpanjang sebagai sisi miring c.",
+        "Pastikan ketiga pengukuran menggunakan satuan yang sama. Konversikan jika perlu sebelum memasukkan nilai.",
+        "Masukkan kaki a ke dalam kolom input pertama kalkulator.",
+        "Masukkan bagian b ke dalam kolom masukan kedua.",
+        "Masukkan sisi miring c ke dalam kolom masukan ketiga.",
+        "Klik Hitung. Kalkulator menambahkan tiga nilai dan menampilkan keliling P beserta pekerjaan langkah demi langkah.",
+        "Tinjau hasil pada diagram untuk memastikan secara visual panjang sisinya cocok dengan segitiga Anda."
+      ]
+    },
+    "example": {
+      "h2": "Contoh yang Berhasil: Temukan Keliling Segitiga Siku-siku 3-4-5",
+      "intro": "Segitiga 3-4-5 adalah salah satu segitiga Pythagoras yang paling umum. Diketahui a = 3, b = 4, c = 5:",
+      "lines": [
+        "P = a + b + c",
+        "P = 3 + 4 + 5",
+        "P = 12"
+      ],
+      "answer": "Keliling segitiga siku-siku ini adalah 12 satuan. Karena 3² + 4² = 9 + 16 = 25 = 5², sisi-sisinya memenuhi teorema Pythagoras dan mengonfirmasi segitiga siku-siku yang valid."
+    },
+    "extraSections": [
+      {
+        "h2": "Berapa Keliling Segitiga Siku-siku?",
+        "paragraphs": [
+          "Keliling segitiga siku-siku adalah jarak total yang ditempuh jika Anda berjalan sepanjang ketiga sisi segitiga, dimulai dari satu titik sudut dan kembali ke titik sudut yang sama. Ini mewakili batas luar dari bentuk segitiga.",
+          "Setiap segitiga siku-siku mempunyai tiga sisi: dua kaki yang bertemu pada sudut siku-siku (90°) dan satu sisi miring yang berhadapan dengan sudut siku-siku. Sisi miring selalu merupakan sisi terpanjang di antara ketiga sisinya. Saat Anda menjumlahkan panjang ketiga sisinya, Anda mendapatkan kelilingnya.",
+          "Keliling adalah pengukuran satu dimensi yang dinyatakan dalam satuan linier (seperti sentimeter, meter, kaki, atau inci). Berbeda dengan luas yang mengukur ruang dua dimensi di dalam segitiga dan dinyatakan dalam satuan persegi."
+        ]
+      },
+      {
+        "h2": "Memahami Sisi-sisi Segitiga Siku-siku",
+        "paragraphs": [
+          "Sebelum menghitung keliling, ada baiknya mengidentifikasi dengan jelas setiap sisi segitiga siku-siku. Memberi label yang salah pada suatu sisi adalah sumber kesalahan yang paling umum.",
+          "Dalam konvensi pelabelan standar, kedua sisi yang membentuk sudut siku-siku disebut kaki. Sisi yang berhadapan dengan sudut siku-siku disebut sisi miring. Sisi miring selalu lebih panjang dari masing-masing kaki, tetapi selalu lebih pendek dari jumlah kedua kaki."
+        ],
+        "listTitle": "Sekilas tentang ketiga sisi:",
+        "listItems": [
+          "Kaki a — Salah satu dari dua sisi yang membentuk sudut 90°. Bisa sisi vertikal atau horizontal, tergantung orientasinya.",
+          "Kaki b — Sisi lain yang membentuk sudut 90°. Bersama dengan kaki a, ini menentukan sudut siku-siku.",
+          "Sisi miring c — Sisi terpanjang, membentang dari satu titik sudut lancip ke titik sudut lancip lainnya, berhadapan langsung dengan sudut siku-siku.",
+          "Hubungan Pythagoras berlaku: a² + b² = c². Ini memungkinkan Anda memverifikasi bahwa ketiga nilai Anda benar-benar membentuk segitiga siku-siku."
+        ]
+      },
+      {
+        "h2": "Bagaimana Rumus Keliling Diturunkan",
+        "paragraphs": [
+          "Rumus keliling P = a + b + c merupakan penerapan langsung dari definisi keliling poligon umum: jumlahkan panjang semua sisinya. Segitiga mempunyai tepat tiga sisi, jadi kelilingnya adalah jumlah dari tiga panjang.",
+          "Tidak diperlukan penurunan atau penataan ulang karena rumus ini merupakan kasus pengukuran keliling yang paling sederhana. Namun, rumusnya menjadi lebih menarik jika hanya dua sisi yang diketahui, karena Anda dapat menggunakan teorema Pythagoras untuk mencari sisi ketiga yang hilang lalu menghitung kelilingnya."
+        ]
+      },
+      {
+        "h2": "Menemukan Keliling Ketika Satu Sisi Hilang",
+        "paragraphs": [
+          "Jika Anda hanya mengetahui dua dari tiga sisi segitiga siku-siku, Anda masih dapat mencari kelilingnya. Gunakan teorema Pythagoras (a² + b² = c²) untuk menghitung sisi yang hilang terlebih dahulu, lalu jumlahkan ketiganya untuk mendapatkan kelilingnya.",
+          "Pendekatan ini memungkinkan Anda bekerja dengan dua skenario paling umum: mengetahui kedua kaki tetapi tidak mengetahui sisi miringnya, atau mengetahui sisi miring dan satu kaki tetapi tidak mengetahui sisi miringnya."
+        ],
+        "listTitle": "Rumus untuk setiap kasus sisi hilang:",
+        "listItems": [
+          "Jika c tidak ada: c = √(a² + b²), maka P = a + b + √(a² + b²)",
+          "Jika b tidak ada: b = √(c² – a²), maka P = a + √(c² – a²) + c",
+          "Jika a tidak ada: a = √(c² – b²), maka P = √(c² – b²) + b + c",
+          "Selalu verifikasi bahwa c > a dan c > b saat menggunakan bentuk pengurangan, jika tidak, nilainya tidak akan membentuk segitiga siku-siku yang valid."
+        ]
+      },
+      {
+        "h2": "Contoh Pekerjaan Tambahan",
+        "paragraphs": [
+          "Berlatih dengan segitiga yang berbeda membantu membangun kepercayaan diri. Di bawah ini adalah tiga contoh yang berhasil menggunakan tripel Pythagoras dan nilai desimal yang umum."
+        ],
+        "listTitle": "Contoh 1 — Segitiga 5-12-13:",
+        "listItems": [
+          "Diketahui: a = 5, b = 12, c = 13",
+          "P = 5 + 12 + 13 = 30 units",
+          "Verifikasi: 5² + 12² = 25 + 144 = 169 = 13² ✓"
+        ]
+      },
+      {
+        "h2": "Contoh 2 — Segitiga 8-15-17",
+        "paragraphs": [
+          "Diketahui: a = 8, b = 15, c = 17. Ini adalah tripel Pythagoras lainnya yang semua sisinya adalah bilangan bulat."
+        ],
+        "listItems": [
+          "P = 8 + 15 + 17 = 40 units",
+          "Verifikasi: 8² + 15² = 64 + 225 = 289 = 17² ✓",
+          "Triple ini berguna dalam tata letak konstruksi yang memerlukan pagar 40 unit atau panjang trim."
+        ]
+      },
+      {
+        "h2": "Contoh 3 — Sisi Desimal",
+        "paragraphs": [
+          "Tidak semua segitiga siku-siku mempunyai sisi-sisi yang tersusun rapi. Diketahui: a = 2,5, b = 6, c = 6,5."
+        ],
+        "listItems": [
+          "P = 2,5 + 6 + 6,5 = 15 satuan",
+          "Verifikasi: 2,5² + 6² = 6,25 + 36 = 42,25 = 6,5² ✓",
+          "Nilai desimal bekerja dengan cara yang sama — cukup tambahkan secara langsung."
+        ]
+      },
+      {
+        "h2": "Keliling vs. Luas: Apa Bedanya?",
+        "paragraphs": [
+          "Keliling dan luas sama-sama menggambarkan suatu segitiga, tetapi keduanya mengukur benda yang berbeda. Keliling mengukur panjang total tepi di sekeliling luar (ukuran linier), sedangkan luas mengukur ruang tertutup di dalam segitiga (ukuran persegi).",
+          "Untuk segitiga siku-siku dengan kaki a dan b serta sisi miring c, rumusnya adalah: P = a + b + c untuk keliling, dan A = (a × b) / 2 untuk luas. Perhatikan bahwa rumus luas hanya menggunakan kedua kakinya (karena tegak lurus), sedangkan rumus keliling menggunakan ketiga sisinya.",
+          "Kesalahan umum adalah membingungkan keduanya. Jika soal menanyakan jarak pagar di sekitar bidang segitiga, Anda memerlukan keliling. Jika meminta cakupan permukaan (seperti pengecatan atau ubin), Anda memerlukan luasnya."
+        ]
+      },
+      {
+        "h2": "Penerapan Keliling Segitiga Kanan di Dunia Nyata",
+        "paragraphs": [
+          "Mengetahui keliling segitiga siku-siku sangat penting dalam banyak situasi praktis. Kapan pun Anda perlu mengukur, memotong, atau membeli bahan yang mengelilingi tepi bentuk segitiga siku-siku, kelilingnya memberi tahu Anda berapa banyak bahan yang dibutuhkan."
+        ],
+        "listTitle": "Penggunaan umum di dunia nyata:",
+        "listItems": [
+          "Pagar - Tempat tidur taman berbentuk segitiga atau lahan sudut membutuhkan pagar di ketiga sisinya. Perimeter memberi tahu Anda berapa banyak pagar linier yang harus dibeli.",
+          "Trim dan cetakan — Fitur arsitektur segitiga (seperti ujung atap pelana) perlu dipangkas di sepanjang tepinya. Perimeter memberikan total panjang trim.",
+          "Kawat dan tali — Membingkai layar, spanduk, atau layar bersudut siku-siku memerlukan tali, kawat, atau tepian yang sama dengan kelilingnya.",
+          "Jalur joging dan jalan kaki — Lintasan lari berbentuk segitiga atau jalur jalan kaki yang mengelilingi area taman berbentuk siku-siku memiliki jarak total yang sama dengan kelilingnya.",
+          "Tata letak konstruksi — Pembangun menggunakan aturan 3-4-5 untuk memeriksa apakah suatu sudut berbentuk persegi. Mengetahui keliling membantu memverifikasi pengukuran.",
+          "Kerajinan dan menjahit — Mengikat, memipih, atau merenda di sekeliling bantalan atau panji berbentuk segitiga membutuhkan bahan sepanjang keliling.",
+          "Perhitungan peta dan survei — Surveyor mengukur bidang tanah berbentuk segitiga dan memerlukan keliling untuk deskripsi batas dan catatan properti."
+        ]
+      },
+      {
+        "h2": "Hubungan Antara Perimeter dan Semiperimeter",
+        "paragraphs": [
+          "Semiperimeter (s) sama persis dengan setengah keliling: s = P / 2 = (a + b + c) / 2. Meskipun keliling memberi Anda total panjang batas, semiperimeter adalah nilai praktis yang digunakan dalam rumus lebih lanjut.",
+          "Semiperimeter muncul dalam rumus Heron untuk luas segitiga: A = √[s(s–a)(s–b)(s–c)]. Ini juga digunakan untuk menghitung inradius (jari-jari lingkaran yang tertulis): r = A / s. Jadi keliling adalah titik awal untuk beberapa perhitungan penting segitiga.",
+          "Jika Anda sudah menghitung keliling menggunakan alat ini, Anda dapat mencari semiperimeter hanya dengan membagi hasilnya dengan 2, atau gunakan kalkulator semiperimeter khusus kami."
+        ]
+      },
+      {
+        "h2": "Tip Konversi Satuan",
+        "paragraphs": [
+          "Hasil keliling hanya bermakna jika ketiga sisi masukan menggunakan satuan yang sama. Jika pengukuran Anda berada dalam satuan yang berbeda, konversikan terlebih dahulu. Kalkulator menyertakan pemilih unit untuk setiap kolom masukan untuk menangani konversi secara otomatis.",
+          "Ingatlah bahwa keliling adalah pengukuran linier, jadi konversinya mengikuti rasio panjang standar — bukan rasio luas. Misalnya, untuk mengonversi dari kaki ke meter, kalikan dengan 0,3048 (bukan 0,3048²)."
+        ],
+        "listTitle": "Pengingat konversi cepat:",
+        "listItems": [
+          "1 inci = 2,54 cm",
+          "1 kaki = 12 inci = 0,3048 m",
+          "1 yard = 3 kaki = 0,9144 m",
+          "1 meter = 100 cm = 3,2808 kaki",
+          "1 kilometer = 1000 m = 0,6214 mil",
+          "1 mil = 5280 kaki = 1,6093 km"
+        ]
+      },
+      {
+        "h2": "Kesalahan Umum Saat Menghitung Keliling",
+        "paragraphs": [
+          "Rumus kelilingnya sederhana, namun kesalahan tetap saja terjadi. Kebanyakan kesalahan berasal dari input yang salah, bukan aritmatika yang salah. Mengatasi masalah ini sebelum Anda menghitung akan menghemat waktu dan mencegah jawaban yang salah."
+        ],
+        "listTitle": "Waspadai jebakan berikut:",
+        "listItems": [
+          "Hanya menggunakan dua sisi — Keliling membutuhkan ketiga sisinya. Melupakan sisi miring atau salah satu kaki memberikan jawaban yang tidak lengkap.",
+          "Satuan pencampur — Jika bagian a dalam inci dan bagian b dalam sentimeter, jumlahnya tidak ada artinya. Konversikan ke satuan terlebih dahulu.",
+          "Membingungkan keliling dengan luas — Keliling adalah panjang (diukur dalam satuan), sedangkan luas adalah permukaan (diukur dalam satuan persegi). Pastikan Anda tahu masalah mana yang ditanyakan.",
+          "Menggunakan sisi-sisi yang tidak membentuk segitiga siku-siku — Periksa apakah a² + b² = c². Jika persamaan ini tidak berlaku, berarti segitiga tersebut bukan segitiga siku-siku dan c bukan sisi miring sebenarnya.",
+          "Pembulatan terlalu dini — Jika satu sisi tidak rasional (seperti √2), pertahankan presisi penuh hingga penjumlahan terakhir untuk menghindari akumulasi kesalahan pembulatan.",
+          "Memasuki sisi miring sebagai kaki — Sisi miring harus merupakan sisi terpanjang. Jika Anda menempatkan nilai yang lebih pendek di bidang sisi miring, diagram akan terlihat salah dan pemeriksaan Pythagoras akan gagal."
+        ]
+      },
+      {
+        "h2": "Sifat Keliling Segitiga Siku-siku",
+        "paragraphs": [
+          "Segitiga siku-siku mempunyai sifat keliling khusus yang membedakannya dengan segitiga lainnya. Memahami properti ini dapat membantu Anda memverifikasi perhitungan dan menangkap kesalahan.",
+          "Pada segitiga siku-siku mana pun, sisi miring c selalu lebih kecil dari jumlah kedua kaki (a + b) tetapi lebih besar dari salah satu kaki saja. Artinya keliling P selalu lebih besar dari 2c (karena a + b > c) dan kurang dari 2(a + b), sehingga sama dengan 2a + 2b."
+        ],
+        "listTitle": "Properti perimeter utama:",
+        "listItems": [
+          "P selalu lebih besar dari 2 × (sisi terpanjang) karena dua sisi lainnya menambah panjang.",
+          "P selalu kurang dari 3 × (sisi terpanjang) karena c > a dan c > b, jadi a + b < 2c.",
+          "Untuk segitiga 45-45-90 dengan panjang kaki k, P = k + k + k√2 = k(2 + √2) ≈ 3,414k.",
+          "Untuk segitiga 30-60-90 dengan kaki terpendek k, P = k + k√3 + 2k = k(3 + √3) ≈ 4.732k.",
+          "Di antara semua segitiga siku-siku dengan sisi miring yang sama, segitiga siku-siku sama kaki (45-45-90) mempunyai keliling terbesar."
+        ]
+      }
+    ],
+    "relatedLinks": [
+      {
+        "href": "/right-triangle-measurements-calculator/",
+        "label": "Kalkulator Pengukuran Segitiga Kanan"
+      },
+      {
+        "href": "/right-triangle-semiperimeter-calculator/",
+        "label": "Kalkulator Semiperimeter Segitiga Kanan"
+      },
+      {
+        "href": "/right-triangle-side-calculator/",
+        "label": "Kalkulator Sisi Segitiga Kanan"
+      },
+      {
+        "href": "/right-triangle-area-calculator/",
+        "label": "Kalkulator Luas Segitiga Kanan"
+      },
+      {
+        "href": "/pythagorean-theorem-calculator/",
+        "label": "Kalkulator Teorema Pythagoras"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Apa rumus keliling segitiga siku-siku?",
+        "answer": "Rumus kelilingnya adalah P = a + b + c, dengan a dan b adalah kedua kaki (sisi-sisi yang membentuk sudut 90°) dan c adalah sisi miring (sisi terpanjang yang berhadapan dengan sudut siku-siku). Cukup jumlahkan ketiga panjang sisinya."
+      },
+      {
+        "question": "Apa arti setiap variabel pada P = a + b + c?",
+        "answer": "P adalah keliling (panjang batas total). a adalah salah satu kaki segitiga siku-siku. b adalah kaki lainnya. c adalah sisi miring — sisi terpanjang yang berhadapan dengan sudut siku-siku. Kedua kakinya membentuk sudut 90°."
+      },
+      {
+        "question": "Bisakah saya mencari keliling yang hanya memiliki dua sisi?",
+        "answer": "Ya, tetapi Anda harus menghitung terlebih dahulu sisi ketiga yang hilang menggunakan teorema Pythagoras: c = √(a² + b²) jika sisi miringnya hilang, atau ada kaki yang hilang = √(c² – diketahui kaki²). Kemudian tambahkan ketiga sisinya untuk mendapatkan kelilingnya."
+      },
+      {
+        "question": "Apakah keliling sama dengan luas?",
+        "answer": "Keliling (P = a + b + c) mengukur jarak total mengelilingi segitiga dalam satuan linier (cm, m, ft). Luas (A = a×b/2) mengukur ruang tertutup di dalam segitiga dalam satuan persegi (cm², m², ft²). Keduanya merupakan pengukuran yang berbeda secara mendasar."
+      },
+      {
+        "question": "Apakah ketiga sisi tersebut harus berada dalam unit yang sama?",
+        "answer": "Ya. Ketiga sisi harus dinyatakan dalam satuan yang sama sebelum dijumlahkan. Jika satu sisi dalam inci dan sisi lainnya dalam sentimeter, konversikan ke satuan umum terlebih dahulu. Kalkulator menyertakan pemilih satuan pada setiap masukan untuk menangani hal ini secara otomatis."
+      },
+      {
+        "question": "Berapa keliling segitiga siku-siku 3-4-5?",
+        "answer": "Kelilingnya adalah 3 + 4 + 5 = 12 satuan. Segitiga 3-4-5 adalah tripel Pythagoras terkecil yang sisi-sisinya bilangan bulat. Versi skala apa pun (seperti 6-8-10 atau 9-12-15) mempertahankan rasio yang sama dengan skala keliling secara proporsional."
+      },
+      {
+        "question": "Bagaimana cara memverifikasi bahwa segitiga saya benar-benar segitiga siku-siku?",
+        "answer": "Periksa apakah a² + b² = c², dimana c adalah sisi terpanjang. Jika persamaan ini benar, maka segitiga tersebut mempunyai sudut 90° dan merupakan segitiga siku-siku. Kalau tidak berlaku, rumus keliling tetap berfungsi tetapi segitiganya tidak siku-siku."
+      },
+      {
+        "question": "Apa hubungan keliling dan semiperimeter?",
+        "answer": "Semiperimeter sama dengan setengah keliling: s = P/2. Jika keliling P = 12, maka semiperimeter s = 6. Semiperimeter digunakan dalam rumus Heron dan perhitungan inradius."
+      },
+      {
+        "question": "Apakah keliling segitiga siku-siku bisa berupa bilangan ganjil?",
+        "answer": "Ya. Keliling dapat berupa bilangan positif apa pun — bilangan bulat, desimal, atau irasional. Misalnya, segitiga siku-siku dengan kaki 1 dan 1 memiliki sisi miring √2 ≈ 1,414, sehingga kelilingnya ≈ 3,414, yang bukan bilangan bulat dan bukan bilangan rasional."
+      },
+      {
+        "question": "Mengapa sisi miring selalu merupakan sisi terpanjang?",
+        "answer": "Pada segitiga siku-siku, sisi miringnya berhadapan dengan sudut terbesar (90°). Aturan dasar geometri adalah sisi terpanjang selalu berhadapan dengan sudut terbesar. Karena tidak ada sudut dalam segitiga yang melebihi sudut siku-siku, maka c selalu merupakan sisi terpanjang."
+      }
+    ]
+  },
+  {
+    "slug": "right-triangle-semiperimeter-calculator",
+    "url": "/right-triangle-semiperimeter-calculator/",
+    "h1": "Kalkulator Semiperimeter Segitiga Kanan",
+    "metaTitle": "Kalkulator Semiperimeter Segitiga Kanan | Temukan s dari a, b, dan c",
+    "metaDescription": "Hitung semiperimeter segitiga siku-siku s dari kaki a, kaki b, dan sisi miring c. Meliputi rumus, diagram, langkah kerja, contoh, kegunaan, dan pengecekan kesalahan.",
+    "formulaSlug": "semiperimeter",
+    "toolPurpose": "Temukan setengah keliling segitiga siku-siku dari ketiga panjang sisinya, lalu gunakan itu sebagai titik pemeriksaan untuk rumus luas, jari-jari, dan geometri yang bergantung pada setengah keliling.",
+    "intro": "Masukkan kaki a, kaki b, dan sisi miring c untuk menghitung semiperimeter segitiga siku-siku s.",
+    "quickSummary": {
+      "h2": "Apa yang Dipecahkan Kalkulator Semiperimeter Ini",
+      "intro": "Gunakan halaman ini ketika Anda memerlukan nilai setengah keliling s untuk segitiga siku-siku. Hal ini sangat berguna sebelum menggunakan rumus luas gaya Heron, rumus inradius, atau identitas geometri yang merujuk pada s.",
+      "cards": [
+        {
+          "label": "Nilai-nilai yang diketahui",
+          "value": "Kaki a, kaki b, dan sisi miring c"
+        },
+        {
+          "label": "Menemukan",
+          "value": "Semiperimeter s, tepat setengah dari P"
+        },
+        {
+          "label": "Rumus utama",
+          "value": "s = (a + b + c) / 2"
+        },
+        {
+          "label": "Terbaik untuk",
+          "value": "Pemeriksaan bangau, pekerjaan inradius, pembuktian geometri, dan notasi segitiga kompak"
+        }
+      ]
+    },
+    "calculator": {
+      "outputLabel": "Setengah keliling s",
+      "fields": [
+        {
+          "key": "a",
+          "label": "Kaki a",
+          "min": 0
+        },
+        {
+          "key": "b",
+          "label": "Kaki b",
+          "min": 0
+        },
+        {
+          "key": "c",
+          "label": "Sisi miring c",
+          "min": 0
+        }
+      ]
+    },
+    "diagram": {
+      "h2": "Diagram Segitiga Kanan: Semiperimeter Adalah Separuh Batas",
+      "intro": "Rajah menunjukkan tiga panjang sisi yang sama yang digunakan untuk keliling, tetapi hasilnya dibagi 2. Semiperimeter tetap berdasarkan tepi luar segitiga, bukan luas dalam.",
+      "caption": "Diagram semiperimeter segitiga siku-siku yang menunjukkan sisi a, sisi b, sisi miring c, dan rumus s = (a + b + c) / 2.",
+      "formulaLabel": "s = (a + b + c) / 2",
+      "keyLabel": "Kunci Diagram",
+      "sides": {
+        "a": {
+          "label": "a = first leg",
+          "description": "Kaki a adalah salah satu dari dua sisi tegak lurus yang dimasukkan ke dalam penjumlahan sebelum dibagi 2."
+        },
+        "b": {
+          "label": "b = second leg",
+          "description": "Kaki b membentuk sudut siku-siku dengan a dan menyumbang keliling dan semiperimeter."
+        },
+        "c": {
+          "label": "c = hypotenuse",
+          "description": "Sisi miring c adalah sisi terpanjang dan harus dimasukkan sebelum totalnya menjadi setengahnya."
+        }
+      },
+      "result": {
+        "label": "s = half of the boundary total",
+        "description": "Kalkulator terlebih dahulu menjumlahkan a + b + c, lalu membagi kelilingnya dengan 2."
+      },
+      "notes": [
+        "Semiperimeter merupakan pengukuran linier, sehingga menggunakan satuan yang sama dengan panjang sisinya.",
+        "Jika P sudah diketahui, gunakan s = P / 2; jika P tidak diketahui, gunakan s = (a + b + c) / 2.",
+        "Untuk segitiga siku-siku yang valid, c harus merupakan sisi terpanjang dan memenuhi a^2 + b^2 = c^2."
+      ]
+    },
+    "formulaSection": {
+      "h2": "Rumus Semiperimeter Segitiga Siku-siku",
+      "paragraphs": [
+        "Setengah keliling suatu segitiga adalah setengah kelilingnya. Segitiga siku-siku kelilingnya adalah P = a + b + c, jadi setengah kelilingnya adalah s = (a + b + c) / 2.",
+        "Huruf s biasa digunakan karena semiperimeter muncul dalam banyak rumus geometri kompak. Bahkan jika segitiga tersebut siku-siku, s berguna sebagai jembatan antara panjang sisi, luas, dan ukuran lingkaran seperti jari-jari.",
+        "Seperti keliling, semiperimeter diukur dalam satuan linier. Jika sisi-sisinya dalam meter, maka s dalam meter. Jika sisi-sisinya dalam inci, s dalam inci."
+      ],
+      "formulas": [
+        "P = a + b + c",
+        "s = \\frac{P}{2}",
+        "s = \\frac{a + b + c}{2}"
+      ]
+    },
+    "howTo": {
+      "h2": "Cara Mencari Setengah Keliling Segitiga Siku-siku",
+      "steps": [
+        "Identifikasi kedua kaki segitiga siku-siku. Ini adalah sisi-sisi yang bertemu pada sudut 90 derajat.",
+        "Identifikasi sisi miring c. Ini adalah sisi terpanjang dan terletak di seberang sudut siku-siku.",
+        "Pastikan a, b, dan c semuanya menggunakan satuan pengukuran yang sama.",
+        "Masukkan kaki a, kaki b, dan sisi miring c ke dalam kalkulator.",
+        "Klik Hitung untuk menjumlahkan ketiga sisi dan membagi totalnya dengan 2.",
+        "Periksa langkah-langkah yang ditampilkan. Kalkulator harus menampilkan total keliling terlebih dahulu, kemudian hasil semiperimeter.",
+        "Gunakan s dalam rumus selanjutnya yang meminta semiperimeter, seperti hubungan luas inradius atau gaya Heron."
+      ]
+    },
+    "example": {
+      "h2": "Contoh yang Berhasil: Temukan Semiperimeter Segitiga Siku-siku 3-4-5",
+      "intro": "Diketahui a = 3, b = 4, dan c = 5, jumlahkan ketiga sisinya terlebih dahulu untuk mendapatkan keliling, lalu bagi dengan 2:",
+      "lines": [
+        "s = \\frac{a + b + c}{2}",
+        "s = \\frac{3 + 4 + 5}{2}",
+        "s = \\frac{12}{2}",
+        "s = 6"
+      ],
+      "answer": "Setengah kelilingnya adalah 6 satuan. Keliling penuhnya adalah 12 satuan, dan s tepat setengah dari jumlah seluruhnya."
+    },
+    "extraSections": [
+      {
+        "h2": "Apa Arti Semiperimeter?",
+        "paragraphs": [
+          "Semiperimeter secara harafiah berarti setengah keliling. Daripada menulis berulang kali (a + b + c) / 2 dalam rumus yang lebih panjang, geometri sering kali menggunakan simbol s yang lebih pendek.",
+          "Untuk segitiga siku-siku, nilai ini sangat berguna karena label sisinya sudah terstandarisasi: a dan b adalah kaki-kakinya, dan c adalah sisi miringnya. Setelah ketiga panjang sisi tersebut diketahui, s adalah bilangan kompak tunggal yang merangkum setengah panjang batas."
+        ]
+      },
+      {
+        "h2": "Semiperimeter vs. Keliling",
+        "paragraphs": [
+          "Keliling P mengukur jarak penuh keliling luar segitiga. Semiperimeter s mengukur setengah dari jarak tersebut. Kedua nilai tersebut terhubung langsung: s = P / 2 dan P = 2s.",
+          "Gunakan keliling ketika soal menanyakan panjang batas total, seperti jarak tepi, pagar, atau tepi. Gunakan semiperimeter ketika rumus secara khusus meminta s, atau ketika Anda menyiapkan nilai untuk hubungan luas dan radius."
+        ],
+        "listTitle": "Perbandingan cepat:",
+        "listItems": [
+          "Keliling: P = a + b + c",
+          "Setengah keliling: s = (a + b + c) / 2",
+          "Jika P = 30, maka s = 15",
+          "Jika s = 15, maka P = 30"
+        ]
+      },
+      {
+        "h2": "Mengapa Semiperimeter Penting dalam Geometri Segitiga Kanan",
+        "paragraphs": [
+          "Semiperimeter lebih dari sekadar jalan pintas. Ini adalah nilai pembantu standar yang digunakan dalam rumus yang menghubungkan panjang sisi dengan pengukuran luas dan lingkaran.",
+          "Untuk segitiga apa pun, rumus Heron menggunakan s untuk menghitung luas dari tiga sisinya: A = persegi(s(s-a)(s-b)(s-c)). Untuk segitiga siku-siku sering menggunakan A = (a x b) / 2, namun rumus Heron tetap berguna untuk verifikasi.",
+          "Semiperimeter juga terhubung ke inradius. Dalam banyak rumus segitiga, luas sama dengan jari-jari dikalikan semiperimeter: A = r x s. Setelah s diketahui, akan lebih mudah untuk menyelesaikan r atau memverifikasi hasil inradius."
+        ],
+        "listTitle": "Rumus umum yang menggunakan s:",
+        "listItems": [
+          "Luas gaya bangau: A = sqrt(s(s-a)(s-b)(s-c))",
+          "Hubungan luas-inradius: A = r x s",
+          "Penataan ulang inradius: r = A / s",
+          "Pemulihan keliling: P = 2s"
+        ]
+      },
+      {
+        "h2": "Contoh Semiperimeter Tambahan",
+        "paragraphs": [
+          "Contoh berikut menunjukkan cara kerja rumus yang sama untuk bilangan bulat tiga kali lipat dan panjang sisi desimal. Kuncinya adalah menjumlahkan ketiga sisinya sebelum membagi."
+        ],
+        "listTitle": "Contoh 1 - 5-12-13 segitiga:",
+        "listItems": [
+          "Diketahui: a = 5, b = 12, c = 13",
+          "s = (5 + 12 + 13) / 2",
+          "s = 30 / 2 = 15 units"
+        ]
+      },
+      {
+        "h2": "Contoh 2 - 8-15-17 Segitiga",
+        "paragraphs": [
+          "Untuk a = 8, b = 15, dan c = 17, keliling penuhnya adalah 40 satuan."
+        ],
+        "listItems": [
+          "s = (8 + 15 + 17) / 2",
+          "s = 40 / 2",
+          "s = 20 units"
+        ]
+      },
+      {
+        "h2": "Contoh 3 - Panjang Sisi Desimal",
+        "paragraphs": [
+          "Desimal bekerja dengan cara yang sama seperti bilangan bulat. Diketahui a = 2,5, b = 6, dan c = 6,5:"
+        ],
+        "listItems": [
+          "s = (2,5 + 6 + 6,5) / 2",
+          "s = 15 / 2",
+          "s = 7,5 satuan"
+        ]
+      },
+      {
+        "h2": "Kapan Menggunakan Kalkulator Semiperimeter Ini",
+        "paragraphs": [
+          "Gunakan kalkulator ini ketika soal geometri memberikan ketiga panjang sisi segitiga siku-siku dan menanyakan s, setengah keliling, atau rumus yang bergantung pada semiperimeter.",
+          "Ini juga berguna sebagai pemeriksaan cepat setelah menyelesaikan sisi yang hilang. Setelah Anda mengetahui a, b, dan c, setengah kelilingnya harus sederhana dan tepat: jumlahkan sisi-sisinya, lalu bagi dengan 2."
+        ],
+        "listTitle": "Kasus penggunaan yang baik meliputi:",
+        "listItems": [
+          "Mempersiapkan masukan rumus Heron dari tiga panjang sisi.",
+          "Pengecekan perhitungan inradius dengan r = A/s.",
+          "Mengurangi aritmatika berulang dalam pekerjaan rumah atau pembuktian geometri.",
+          "Membandingkan ukuran segitiga menggunakan nilai setengah batas.",
+          "Memverifikasi bahwa hasil keliling dan semiperimeter cocok: P harus selalu sama dengan 2s."
+        ]
+      },
+      {
+        "h2": "Tip Satuan untuk Semiperimeter",
+        "paragraphs": [
+          "Semiperimeter adalah panjang, sehingga mengikuti aturan konversi satuan panjang biasa. Itu tidak diukur dalam satuan persegi.",
+          "Jika masukan samping menggunakan satuan yang berbeda, konversikan terlebih dahulu atau gunakan pemilih satuan kalkulator secara konsisten. Menambahkan kaki, inci, dan sentimeter secara langsung akan menghasilkan hasil yang tidak berarti."
+        ],
+        "listTitle": "Ingatlah aturan unit berikut:",
+        "listItems": [
+          "Semua panjang sisi harus mewakili sistem satuan yang sama sebelum membandingkan hasilnya.",
+          "Output s menggunakan satuan linier seperti cm, m, in, atau ft.",
+          "Jangan mengkuadratkan satuan saat menghitung semiperimeter.",
+          "Jika Anda mengonversi sisi-sisinya setelah menghitung, konversikan s dengan faktor konversi linier yang sama."
+        ]
+      },
+      {
+        "h2": "Kesalahan Umum Semiperimeter",
+        "paragraphs": [
+          "Kebanyakan kesalahan semiperimeter terjadi karena rumusnya terlihat sederhana. Menghitungnya mudah, namun pengaturannya tetap penting."
+        ],
+        "listTitle": "Hati-hati dengan kesalahan ini:",
+        "listItems": [
+          "Lupa membagi dengan 2 setelah menjumlahkan sisi-sisinya.",
+          "Membagi masing-masing sisi dengan 2 terlebih dahulu, lalu kehilangan jumlah totalnya.",
+          "Hanya menggunakan kedua kakinya dan meninggalkan sisi miringnya.",
+          "Membingungkan s dengan keliling P. Ingatlah bahwa P = 2s.",
+          "Menggunakan panjang sisi yang tidak membentuk segitiga siku-siku.",
+          "Mencampur unit yang berbeda dalam perhitungan yang sama."
+        ]
+      },
+      {
+        "h2": "Bagaimana Semiperimeter Terhubung ke Luas dan Inradius",
+        "paragraphs": [
+          "Pada segitiga siku-siku, luas dapat dihitung langsung dengan A = (a x b) / 2 karena kaki-kakinya tegak lurus. Setelah luas dan semiperimeter diketahui, inradius dapat diperiksa dengan r = A / s.",
+          "Hal ini menjadikan semiperimeter sebagai nilai tengah yang berguna. Rumus ini tidak menggantikan rumus luas, namun membantu menghubungkan panjang sisi dengan ukuran lingkaran di dalam segitiga."
+        ],
+        "listTitle": "Contoh dengan segitiga 3-4-5:",
+        "listItems": [
+          "Luas: A = (3 x 4) / 2 = 6",
+          "Setengah keliling: s = (3 + 4 + 5) / 2 = 6",
+          "Pemeriksaan inradius: r = A / s = 6/6 = 1"
+        ]
+      }
+    ],
+    "relatedLinks": [
+      {
+        "href": "/right-triangle-measurements-calculator/",
+        "label": "Kalkulator Pengukuran Segitiga Kanan"
+      },
+      {
+        "href": "/right-triangle-perimeter-calculator/",
+        "label": "Kalkulator Keliling Segitiga Kanan"
+      },
+      {
+        "href": "/right-triangle-area-calculator/",
+        "label": "Kalkulator Luas Segitiga Kanan"
+      },
+      {
+        "href": "/right-triangle-radius-calculator/",
+        "label": "Kalkulator Radius Segitiga Kanan"
+      },
+      {
+        "href": "/pythagorean-theorem-calculator/",
+        "label": "Kalkulator Teorema Pythagoras"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Apa rumus semiperimeter segitiga siku-siku?",
+        "answer": "Rumusnya adalah s = (a + b + c) / 2, dimana a dan b adalah kaki-kaki segitiga siku-siku dan c adalah sisi miringnya. Jumlahkan ketiga panjang sisinya, lalu bagi totalnya dengan 2."
+      },
+      {
+        "question": "Apa yang dimaksud dengan semiperimeter?",
+        "answer": "Semiperimeter artinya setengah keliling segitiga. Jika keliling penuhnya adalah P, maka s = P / 2. Jika panjang sisinya diketahui secara langsung, s = (a + b + c) / 2."
+      },
+      {
+        "question": "Apakah semiperimeter sama dengan keliling?",
+        "answer": "Keliling adalah seluruh panjang batas keliling segitiga, sedangkan semiperimeter adalah setengah dari panjang batas tersebut. Mereka berhubungan dengan P = 2s."
+      },
+      {
+        "question": "Mengapa semiperimeter digunakan?",
+        "answer": "Semiperimeter digunakan karena membuat rumus yang lebih panjang lebih mudah ditulis dan dihitung. Hal ini terlihat pada rumus Heron, relasi luas-inradius A = r x s, dan penataan ulang inradius r = A / s."
+      },
+      {
+        "question": "Apakah saya memerlukan ketiga sisinya?",
+        "answer": "Ya. Untuk menghitung setengah keliling secara langsung, Anda memerlukan kaki a, kaki b, dan sisi miring c. Jika salah satu sisinya hilang, selesaikan dulu dengan teorema Pythagoras, lalu hitung s."
+      },
+      {
+        "question": "Berapa keliling segitiga siku-siku 3-4-5?",
+        "answer": "Untuk segitiga siku-siku 3-4-5, s = (3 + 4 + 5) / 2 = 12 / 2 = 6 satuan."
+      },
+      {
+        "question": "Apakah semiperimeter menggunakan satuan persegi?",
+        "answer": "Semiperimeter itu panjang, jadi pakai satuan linier seperti cm, m, in, atau ft. Luas pakai satuan persegi, tapi semiperimeter tidak."
+      },
+      {
+        "question": "Bagaimana cara memastikan jawaban semiperimeter saya benar?",
+        "answer": "Gandakan setengah kelilingnya. Hasilnya harus sama dengan keliling penuh. Misalnya, jika s = 15, maka P seharusnya 30."
+      }
+    ]
+  }
+]

@@ -12,18 +12,42 @@
       "h2": "Apa Yang Diselesaikan Oleh Kalkulator Perimeter Ini",
       "intro": "Gunakan halaman ini apabila anda sudah mengetahui ketiga-tiga panjang sisi segi tiga bersudut tegak dan memerlukan jumlah panjang sempadannya. Ia direka untuk aritmetik pantas, input peka unit, dan semakan visual yang mudah.",
       "cards": [
-        { "label": "Nilai yang diketahui", "value": "Kaki a, kaki b, dan hipotenus c" },
-        { "label": "Mencari", "value": "Perimeter P, jumlah jarak di sekeliling segi tiga" },
-        { "label": "Formula utama", "value": "P = a + b + c" },
-        { "label": "Terbaik untuk", "value": "Pemagaran, kemasan, semakan susun atur, kerja rumah geometri, dan perancangan panjang tepi" }
+        {
+          "label": "Nilai yang diketahui",
+          "value": "Kaki a, kaki b, dan hipotenus c"
+        },
+        {
+          "label": "Mencari",
+          "value": "Perimeter P, jumlah jarak di sekeliling segi tiga"
+        },
+        {
+          "label": "Formula utama",
+          "value": "P = a + b + c"
+        },
+        {
+          "label": "Terbaik untuk",
+          "value": "Pemagaran, kemasan, semakan susun atur, kerja rumah geometri, dan perancangan panjang tepi"
+        }
       ]
     },
     "calculator": {
       "outputLabel": "Perimeter P",
       "fields": [
-        { "key": "a", "label": "Kaki a", "min": 0 },
-        { "key": "b", "label": "Kaki b", "min": 0 },
-        { "key": "c", "label": "Hipotenus c", "min": 0 }
+        {
+          "key": "a",
+          "label": "Kaki a",
+          "min": 0
+        },
+        {
+          "key": "b",
+          "label": "Kaki b",
+          "min": 0
+        },
+        {
+          "key": "c",
+          "label": "Hipotenus c",
+          "min": 0
+        }
       ]
     },
     "diagram": {
@@ -62,7 +86,9 @@
         "Perimeter mana-mana poligon ialah jumlah panjang sempadannya. Bagi segi tiga bersudut tegak, sempadannya terdiri daripada tepat tiga sisi lurus: dua kaki (a dan b) yang membentuk sudut 90°, dan satu hipotenus (c) yang membentang dari sudut tegak ke bucu yang bertentangan.",
         "Oleh kerana segi tiga bersudut tegak hanya mempunyai tiga sisi, formula perimeter ialah hasil tambah termudah yang mungkin. Tiada trigonometri, punca kuasa dua, atau eksponen diperlukan — hanya penambahan."
       ],
-      "formulas": ["P = a + b + c"]
+      "formulas": [
+        "P = a + b + c"
+      ]
     },
     "howTo": {
       "h2": "Cara Mencari Perimeter Segi Tiga Bersudut Tegak",
@@ -244,11 +270,26 @@
       }
     ],
     "relatedLinks": [
-      { "href": "/right-triangle-measurements-calculator/", "label": "Kalkulator Ukuran Segi Tiga Bersudut Tegak" },
-      { "href": "/right-triangle-semiperimeter-calculator/", "label": "Kalkulator Semiperimeter Segi Tiga Bersudut Tegak" },
-      { "href": "/right-triangle-side-calculator/", "label": "Kalkulator Sisi Segi Tiga Bersudut Tegak" },
-      { "href": "/right-triangle-area-calculator/", "label": "Kalkulator Luas Segi Tiga Bersudut Tegak" },
-      { "href": "/pythagorean-theorem-calculator/", "label": "Kalkulator Teorem Pythagoras" }
+      {
+        "href": "/right-triangle-measurements-calculator/",
+        "label": "Kalkulator Ukuran Segi Tiga Bersudut Tegak"
+      },
+      {
+        "href": "/right-triangle-semiperimeter-calculator/",
+        "label": "Kalkulator Semiperimeter Segi Tiga Bersudut Tegak"
+      },
+      {
+        "href": "/right-triangle-side-calculator/",
+        "label": "Kalkulator Sisi Segi Tiga Bersudut Tegak"
+      },
+      {
+        "href": "/right-triangle-area-calculator/",
+        "label": "Kalkulator Luas Segi Tiga Bersudut Tegak"
+      },
+      {
+        "href": "/pythagorean-theorem-calculator/",
+        "label": "Kalkulator Teorem Pythagoras"
+      }
     ],
     "faqs": [
       {
@@ -306,18 +347,42 @@
       "h2": "Apa Yang Diselesaikan Oleh Kalkulator Semiperimeter Ini",
       "intro": "Gunakan halaman ini apabila anda memerlukan nilai separuh perimeter s untuk segi tiga bersudut tegak. Ia amat berguna sebelum menggunakan formula luas gaya Heron, formula injejari atau identiti geometri yang merujuk pada s.",
       "cards": [
-        { "label": "Nilai yang diketahui", "value": "Kaki a, kaki b, dan hipotenus c" },
-        { "label": "Mencari", "value": "Semiperimeter s, tepat separuh daripada P" },
-        { "label": "Formula utama", "value": "s = (a + b + c) / 2" },
-        { "label": "Terbaik untuk", "value": "Semakan Heron, kerja injejari, pembuktian geometri, dan tatatanda segi tiga padat" }
+        {
+          "label": "Nilai yang diketahui",
+          "value": "Kaki a, kaki b, dan hipotenus c"
+        },
+        {
+          "label": "Mencari",
+          "value": "Semiperimeter s, tepat separuh daripada P"
+        },
+        {
+          "label": "Formula utama",
+          "value": "s = (a + b + c) / 2"
+        },
+        {
+          "label": "Terbaik untuk",
+          "value": "Semakan Heron, kerja injejari, pembuktian geometri, dan tatatanda segi tiga padat"
+        }
       ]
     },
     "calculator": {
       "outputLabel": "Semiperimeter s",
       "fields": [
-        { "key": "a", "label": "Kaki a", "min": 0 },
-        { "key": "b", "label": "Kaki b", "min": 0 },
-        { "key": "c", "label": "Hipotenus c", "min": 0 }
+        {
+          "key": "a",
+          "label": "Kaki a",
+          "min": 0
+        },
+        {
+          "key": "b",
+          "label": "Kaki b",
+          "min": 0
+        },
+        {
+          "key": "c",
+          "label": "Hipotenus c",
+          "min": 0
+        }
       ]
     },
     "diagram": {
@@ -516,11 +581,26 @@
       }
     ],
     "relatedLinks": [
-      { "href": "/right-triangle-measurements-calculator/", "label": "Kalkulator Ukuran Segi Tiga Bersudut Tegak" },
-      { "href": "/right-triangle-perimeter-calculator/", "label": "Kalkulator Perimeter Segi Tiga Bersudut Tegak" },
-      { "href": "/right-triangle-area-calculator/", "label": "Kalkulator Luas Segi Tiga Bersudut Tegak" },
-      { "href": "/right-triangle-radius-calculator/", "label": "Kalkulator Jejari Segi Tiga Bersudut Tegak" },
-      { "href": "/pythagorean-theorem-calculator/", "label": "Kalkulator Teorem Pythagoras" }
+      {
+        "href": "/right-triangle-measurements-calculator/",
+        "label": "Kalkulator Ukuran Segi Tiga Bersudut Tegak"
+      },
+      {
+        "href": "/right-triangle-perimeter-calculator/",
+        "label": "Kalkulator Perimeter Segi Tiga Bersudut Tegak"
+      },
+      {
+        "href": "/right-triangle-area-calculator/",
+        "label": "Kalkulator Luas Segi Tiga Bersudut Tegak"
+      },
+      {
+        "href": "/right-triangle-radius-calculator/",
+        "label": "Kalkulator Jejari Segi Tiga Bersudut Tegak"
+      },
+      {
+        "href": "/pythagorean-theorem-calculator/",
+        "label": "Kalkulator Teorem Pythagoras"
+      }
     ],
     "faqs": [
       {

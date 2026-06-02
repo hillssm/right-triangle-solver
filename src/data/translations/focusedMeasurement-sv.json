@@ -12,18 +12,42 @@
       "h2": "Vad denna omkretskalkylator löser",
       "intro": "Använd denna sida när du redan känner till alla tre sidlängderna i en rätvinklig triangel och behöver den totala gränslängden. Den är utformad för snabb beräkning, enhetskänsliga inmatningar och enkel visuell kontroll.",
       "cards": [
-        { "label": "Kända värden", "value": "Katet a, katet b och hypotenusa c" },
-        { "label": "Hittar", "value": "Omkrets P, det totala avståndet runt triangeln" },
-        { "label": "Huvudformel", "value": "P = a + b + c" },
-        { "label": "Bäst för", "value": "Stängsel, lister, layoutkontroller, geometriläxor och kantlängdsplanering" }
+        {
+          "label": "Kända värden",
+          "value": "Katet a, katet b och hypotenusa c"
+        },
+        {
+          "label": "Hittar",
+          "value": "Omkrets P, det totala avståndet runt triangeln"
+        },
+        {
+          "label": "Huvudformel",
+          "value": "P = a + b + c"
+        },
+        {
+          "label": "Bäst för",
+          "value": "Stängsel, lister, layoutkontroller, geometriläxor och kantlängdsplanering"
+        }
       ]
     },
     "calculator": {
       "outputLabel": "Omkrets P",
       "fields": [
-        { "key": "a", "label": "Katet a", "min": 0 },
-        { "key": "b", "label": "Katet b", "min": 0 },
-        { "key": "c", "label": "Hypotenusa c", "min": 0 }
+        {
+          "key": "a",
+          "label": "Katet a",
+          "min": 0
+        },
+        {
+          "key": "b",
+          "label": "Katet b",
+          "min": 0
+        },
+        {
+          "key": "c",
+          "label": "Hypotenusa c",
+          "min": 0
+        }
       ]
     },
     "diagram": {
@@ -62,7 +86,9 @@
         "Omkretsen av en polygon är dess gräns totala längd. För en rätvinklig triangel består gränsen av exakt tre raka sidor: två kateter (a och b) som bildar 90°-vinkeln, och en hypotenusa (c) som sträcker sig tvärs över från den räta vinkeln till det motsatta hörnet.",
         "Eftersom en rätvinklig triangel bara har tre sidor är omkretsformeln den enklast möjliga summan. Ingen trigonometri, kvadratrötter eller exponenter behövs — bara addition."
       ],
-      "formulas": ["P = a + b + c"]
+      "formulas": [
+        "P = a + b + c"
+      ]
     },
     "howTo": {
       "h2": "Hur man hittar omkretsen av en rätvinklig triangel",
@@ -244,11 +270,26 @@
       }
     ],
     "relatedLinks": [
-      { "href": "/right-triangle-measurements-calculator/", "label": "Måttkalkylator för rätvinklig triangel" },
-      { "href": "/right-triangle-semiperimeter-calculator/", "label": "Kalkylator för halv omkrets av rätvinklig triangel" },
-      { "href": "/right-triangle-side-calculator/", "label": "Sidkalkylator för rätvinklig triangel" },
-      { "href": "/right-triangle-area-calculator/", "label": "Areakalkylator för rätvinklig triangel" },
-      { "href": "/pythagorean-theorem-calculator/", "label": "Pythagoras sats kalkylator" }
+      {
+        "href": "/right-triangle-measurements-calculator/",
+        "label": "Måttkalkylator för rätvinklig triangel"
+      },
+      {
+        "href": "/right-triangle-semiperimeter-calculator/",
+        "label": "Kalkylator för halv omkrets av rätvinklig triangel"
+      },
+      {
+        "href": "/right-triangle-side-calculator/",
+        "label": "Sidkalkylator för rätvinklig triangel"
+      },
+      {
+        "href": "/right-triangle-area-calculator/",
+        "label": "Areakalkylator för rätvinklig triangel"
+      },
+      {
+        "href": "/pythagorean-theorem-calculator/",
+        "label": "Pythagoras sats kalkylator"
+      }
     ],
     "faqs": [
       {
@@ -306,18 +347,42 @@
       "h2": "Vad denna kalkylator för halv omkrets löser",
       "intro": "Använd denna sida när du behöver värdet för halva omkretsen s för en rätvinklig triangel. Det är särskilt användbart innan du använder Herons areaformler, inradieformler eller geometriska identiteter som refererar till s.",
       "cards": [
-        { "label": "Kända värden", "value": "Katet a, katet b och hypotenusa c" },
-        { "label": "Hittar", "value": "Halv omkrets s, exakt hälften av P" },
-        { "label": "Huvudformel", "value": "s = (a + b + c) / 2" },
-        { "label": "Bäst för", "value": "Heron-kontroller, inradiearbete, geometriska bevis och kompakt triangelnotation" }
+        {
+          "label": "Kända värden",
+          "value": "Katet a, katet b och hypotenusa c"
+        },
+        {
+          "label": "Hittar",
+          "value": "Halv omkrets s, exakt hälften av P"
+        },
+        {
+          "label": "Huvudformel",
+          "value": "s = (a + b + c) / 2"
+        },
+        {
+          "label": "Bäst för",
+          "value": "Heron-kontroller, inradiearbete, geometriska bevis och kompakt triangelnotation"
+        }
       ]
     },
     "calculator": {
       "outputLabel": "Halv omkrets s",
       "fields": [
-        { "key": "a", "label": "Katet a", "min": 0 },
-        { "key": "b", "label": "Katet b", "min": 0 },
-        { "key": "c", "label": "Hypotenusa c", "min": 0 }
+        {
+          "key": "a",
+          "label": "Katet a",
+          "min": 0
+        },
+        {
+          "key": "b",
+          "label": "Katet b",
+          "min": 0
+        },
+        {
+          "key": "c",
+          "label": "Hypotenusa c",
+          "min": 0
+        }
       ]
     },
     "diagram": {
@@ -452,7 +517,7 @@
           "Decimaler fungerar på samma sätt som heltal. Givet a = 2.5, b = 6 och c = 6.5:"
         ],
         "listItems": [
-          "s = (2.5 + 6 + 6.5) / 2",
+          "s = (2,5 + 6 + 6,5) / 2",
           "s = 15 / 2",
           "s = 7.5 enheter"
         ]
@@ -509,18 +574,33 @@
         ],
         "listTitle": "Exempel med en 3-4-5 triangel:",
         "listItems": [
-          "Area: A = (3 x 4) / 2 = 6",
+          "Yta: A = (3 x 4) / 2 = 6",
           "Halv omkrets: s = (3 + 4 + 5) / 2 = 6",
           "Inradiekontroll: r = A / s = 6 / 6 = 1"
         ]
       }
     ],
     "relatedLinks": [
-      { "href": "/right-triangle-measurements-calculator/", "label": "Måttkalkylator för rätvinklig triangel" },
-      { "href": "/right-triangle-perimeter-calculator/", "label": "Omkretskalkylator för rätvinklig triangel" },
-      { "href": "/right-triangle-area-calculator/", "label": "Areakalkylator för rätvinklig triangel" },
-      { "href": "/right-triangle-radius-calculator/", "label": "Radiekalkylator för rätvinklig triangel" },
-      { "href": "/pythagorean-theorem-calculator/", "label": "Pythagoras sats kalkylator" }
+      {
+        "href": "/right-triangle-measurements-calculator/",
+        "label": "Måttkalkylator för rätvinklig triangel"
+      },
+      {
+        "href": "/right-triangle-perimeter-calculator/",
+        "label": "Omkretskalkylator för rätvinklig triangel"
+      },
+      {
+        "href": "/right-triangle-area-calculator/",
+        "label": "Areakalkylator för rätvinklig triangel"
+      },
+      {
+        "href": "/right-triangle-radius-calculator/",
+        "label": "Radiekalkylator för rätvinklig triangel"
+      },
+      {
+        "href": "/pythagorean-theorem-calculator/",
+        "label": "Pythagoras sats kalkylator"
+      }
     ],
     "faqs": [
       {

@@ -12,18 +12,42 @@
       "h2": "Bu Çevre Hesaplayıcı Ne Çözer",
       "intro": "Bir dik üçgenin üç kenar uzunluğunu zaten biliyorsanız ve toplam sınır uzunluğuna ihtiyacınız varsa bu sayfayı kullanın. Hızlı aritmetik, birime duyarlı girdiler ve kolay görsel kontrol için tasarlanmıştır.",
       "cards": [
-        { "label": "Bilinen değerler", "value": "a dik kenarı, b dik kenarı ve c hipotenüsü" },
-        { "label": "Bulunan", "value": "Çevre P, üçgenin etrafındaki toplam mesafe" },
-        { "label": "Ana formül", "value": "P = a + b + c" },
-        { "label": "En uygun olduğu yerler", "value": "Çit çekme, pervaz, yerleşim kontrolleri, geometri ödevleri ve kenar uzunluğu planlaması" }
+        {
+          "label": "Bilinen değerler",
+          "value": "a dik kenarı, b dik kenarı ve c hipotenüsü"
+        },
+        {
+          "label": "Bulunan",
+          "value": "Çevre P, üçgenin etrafındaki toplam mesafe"
+        },
+        {
+          "label": "Ana formül",
+          "value": "P = a + b + c"
+        },
+        {
+          "label": "En uygun olduğu yerler",
+          "value": "Çit çekme, pervaz, yerleşim kontrolleri, geometri ödevleri ve kenar uzunluğu planlaması"
+        }
       ]
     },
     "calculator": {
       "outputLabel": "Çevre P",
       "fields": [
-        { "key": "a", "label": "a dik kenarı", "min": 0 },
-        { "key": "b", "label": "b dik kenarı", "min": 0 },
-        { "key": "c", "label": "c hipotenüsü", "min": 0 }
+        {
+          "key": "a",
+          "label": "a dik kenarı",
+          "min": 0
+        },
+        {
+          "key": "b",
+          "label": "b dik kenarı",
+          "min": 0
+        },
+        {
+          "key": "c",
+          "label": "c hipotenüsü",
+          "min": 0
+        }
       ]
     },
     "diagram": {
@@ -62,7 +86,9 @@
         "Herhangi bir çokgenin çevresi, sınırının toplam uzunluğudur. Bir dik üçgen için sınır tam olarak üç düz kenardan oluşur: 90°'lik açıyı oluşturan iki dik kenar (a ve b) ve dik açıdan karşı köşeye uzanan bir hipotenüs (c).",
         "Bir dik üçgenin sadece üç kenarı olduğu için, çevre formülü mümkün olan en basit toplamdır. Trigonometri, karekök veya üs gerekmez - sadece toplama."
       ],
-      "formulas": ["P = a + b + c"]
+      "formulas": [
+        "P = a + b + c"
+      ]
     },
     "howTo": {
       "h2": "Bir Dik Üçgenin Çevresi Nasıl Bulunur",
@@ -244,11 +270,26 @@
       }
     ],
     "relatedLinks": [
-      { "href": "/right-triangle-measurements-calculator/", "label": "Dik Üçgen Ölçümleri Hesaplayıcı" },
-      { "href": "/right-triangle-semiperimeter-calculator/", "label": "Dik Üçgen Yarıçevre Hesaplayıcı" },
-      { "href": "/right-triangle-side-calculator/", "label": "Dik Üçgen Kenar Hesaplayıcı" },
-      { "href": "/right-triangle-area-calculator/", "label": "Dik Üçgen Alan Hesaplayıcı" },
-      { "href": "/pythagorean-theorem-calculator/", "label": "Pisagor Teoremi Hesaplayıcı" }
+      {
+        "href": "/right-triangle-measurements-calculator/",
+        "label": "Dik Üçgen Ölçümleri Hesaplayıcı"
+      },
+      {
+        "href": "/right-triangle-semiperimeter-calculator/",
+        "label": "Dik Üçgen Yarıçevre Hesaplayıcı"
+      },
+      {
+        "href": "/right-triangle-side-calculator/",
+        "label": "Dik Üçgen Kenar Hesaplayıcı"
+      },
+      {
+        "href": "/right-triangle-area-calculator/",
+        "label": "Dik Üçgen Alan Hesaplayıcı"
+      },
+      {
+        "href": "/pythagorean-theorem-calculator/",
+        "label": "Pisagor Teoremi Hesaplayıcı"
+      }
     ],
     "faqs": [
       {
@@ -306,18 +347,42 @@
       "h2": "Bu Yarıçevre Hesaplayıcı Ne Çözer",
       "intro": "Bir dik üçgen için yarı çevre değeri s'ye ihtiyacınız olduğunda bu sayfayı kullanın. Heron tipi alan formülleri, içyarıçap formülleri veya s'ye atıfta bulunan geometri özdeşliklerini kullanmadan önce özellikle yararlıdır.",
       "cards": [
-        { "label": "Bilinen değerler", "value": "a dik kenarı, b dik kenarı ve c hipotenüsü" },
-        { "label": "Bulunan", "value": "Yarıçevre s, P'nin tam yarısı" },
-        { "label": "Ana formül", "value": "s = (a + b + c) / 2" },
-        { "label": "En uygun olduğu yerler", "value": "Heron kontrolleri, içyarıçap hesapları, geometri ispatları ve kompakt üçgen gösterimi" }
+        {
+          "label": "Bilinen değerler",
+          "value": "a dik kenarı, b dik kenarı ve c hipotenüsü"
+        },
+        {
+          "label": "Bulunan",
+          "value": "Yarıçevre s, P'nin tam yarısı"
+        },
+        {
+          "label": "Ana formül",
+          "value": "s = (a + b + c) / 2"
+        },
+        {
+          "label": "En uygun olduğu yerler",
+          "value": "Heron kontrolleri, içyarıçap hesapları, geometri ispatları ve kompakt üçgen gösterimi"
+        }
       ]
     },
     "calculator": {
       "outputLabel": "Yarıçevre s",
       "fields": [
-        { "key": "a", "label": "a dik kenarı", "min": 0 },
-        { "key": "b", "label": "b dik kenarı", "min": 0 },
-        { "key": "c", "label": "c hipotenüsü", "min": 0 }
+        {
+          "key": "a",
+          "label": "a dik kenarı",
+          "min": 0
+        },
+        {
+          "key": "b",
+          "label": "b dik kenarı",
+          "min": 0
+        },
+        {
+          "key": "c",
+          "label": "c hipotenüsü",
+          "min": 0
+        }
       ]
     },
     "diagram": {
@@ -452,7 +517,7 @@
           "Ondalık sayılar tam sayılarla aynı şekilde çalışır. Verilen a = 2.5, b = 6 ve c = 6.5:"
         ],
         "listItems": [
-          "s = (2.5 + 6 + 6.5) / 2",
+          "s = (2,5 + 6 + 6,5) / 2",
           "s = 15 / 2",
           "s = 7.5 birim"
         ]
@@ -516,11 +581,26 @@
       }
     ],
     "relatedLinks": [
-      { "href": "/right-triangle-measurements-calculator/", "label": "Dik Üçgen Ölçümleri Hesaplayıcı" },
-      { "href": "/right-triangle-perimeter-calculator/", "label": "Dik Üçgen Çevre Hesaplayıcı" },
-      { "href": "/right-triangle-area-calculator/", "label": "Dik Üçgen Alan Hesaplayıcı" },
-      { "href": "/right-triangle-radius-calculator/", "label": "Dik Üçgen Yarıçap Hesaplayıcı" },
-      { "href": "/pythagorean-theorem-calculator/", "label": "Pisagor Teoremi Hesaplayıcı" }
+      {
+        "href": "/right-triangle-measurements-calculator/",
+        "label": "Dik Üçgen Ölçümleri Hesaplayıcı"
+      },
+      {
+        "href": "/right-triangle-perimeter-calculator/",
+        "label": "Dik Üçgen Çevre Hesaplayıcı"
+      },
+      {
+        "href": "/right-triangle-area-calculator/",
+        "label": "Dik Üçgen Alan Hesaplayıcı"
+      },
+      {
+        "href": "/right-triangle-radius-calculator/",
+        "label": "Dik Üçgen Yarıçap Hesaplayıcı"
+      },
+      {
+        "href": "/pythagorean-theorem-calculator/",
+        "label": "Pisagor Teoremi Hesaplayıcı"
+      }
     ],
     "faqs": [
       {

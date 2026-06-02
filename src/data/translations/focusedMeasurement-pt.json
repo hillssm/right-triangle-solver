@@ -1,0 +1,640 @@
+[
+  {
+    "slug": "right-triangle-perimeter-calculator",
+    "url": "/right-triangle-perimeter-calculator/",
+    "h1": "Calculadora de Perímetro de Triângulo Retângulo",
+    "metaTitle": "Calculadora de Perímetro de Triângulo Retângulo | Encontre o Perímetro Instantaneamente",
+    "metaDescription": "Calcule o perímetro de um triângulo retângulo a partir do cateto a, cateto b e hipotenusa c. Inclui fórmula, solução passo a passo, diagrama, exemplos e aplicações reais.",
+    "formulaSlug": "perimeter",
+    "toolPurpose": "Insira todos os três lados de um triângulo retângulo para calcular instantaneamente a distância total ao redor dele. A calculadora mostra a fórmula, os cálculos passo a passo e um diagrama interativo para você verificar cada valor antes de usar o resultado.",
+    "intro": "Insira o cateto a, o cateto b e a hipotenusa c para calcular o perímetro total de um triângulo retângulo.",
+    "quickSummary": {
+      "h2": "O Que Esta Calculadora de Perímetro Resolve",
+      "intro": "Use esta página quando você já conhece os comprimentos de todos os três lados de um triângulo retângulo e precisa do comprimento total do limite. É projetado para cálculos rápidos, aceita unidades e permite fácil verificação visual.",
+      "cards": [
+        {
+          "label": "Valores conhecidos",
+          "value": "Cateto a, cateto b e hipotenusa c"
+        },
+        {
+          "label": "Encontra",
+          "value": "Perímetro P, a distância total ao redor do triângulo"
+        },
+        {
+          "label": "Fórmula principal",
+          "value": "P = a + b + c"
+        },
+        {
+          "label": "Ideal para",
+          "value": "Cercas, acabamentos, verificações de layout, tarefas de geometria e planejamento de bordas"
+        }
+      ]
+    },
+    "calculator": {
+      "outputLabel": "Perímetro P",
+      "fields": [
+        {
+          "key": "a",
+          "label": "Cateto a",
+          "min": 0
+        },
+        {
+          "key": "b",
+          "label": "Cateto b",
+          "min": 0
+        },
+        {
+          "key": "c",
+          "label": "Hipotenusa c",
+          "min": 0
+        }
+      ]
+    },
+    "diagram": {
+      "h2": "Diagrama do Triângulo Retângulo: O Perímetro Usa Todos os Três Lados",
+      "intro": "O diagrama destaca o caminho externo completo do triângulo retângulo. O perímetro não é uma medida interna; é a soma dos dois catetos e da hipotenusa.",
+      "caption": "Diagrama de perímetro de triângulo retângulo mostrando o lado a, lado b, hipotenusa c e a fórmula P = a + b + c.",
+      "formulaLabel": "P = a + b + c",
+      "keyLabel": "Legenda do Diagrama",
+      "sides": {
+        "a": {
+          "label": "a = primeiro cateto",
+          "description": "O cateto a é um dos lados que forma o ângulo de 90 graus e é incluído uma vez no perímetro."
+        },
+        "b": {
+          "label": "b = segundo cateto",
+          "description": "O cateto b é o outro lado do ângulo reto e é somado a a e c."
+        },
+        "c": {
+          "label": "c = hipotenusa",
+          "description": "A hipotenusa c é o lado mais longo, oposto ao ângulo reto, e completa o limite."
+        }
+      },
+      "result": {
+        "label": "P = comprimento total do limite",
+        "description": "A calculadora soma a + b + c e retorna o perímetro na unidade linear selecionada."
+      },
+      "notes": [
+        "Todos os três lados devem usar a mesma unidade antes de você comparar ou reutilizar a resposta.",
+        "Se faltar um lado, calcule-o primeiro com o teorema de Pitágoras e depois volte para o perímetro.",
+        "O resultado do perímetro é um comprimento, não uma área em unidades quadradas."
+      ]
+    },
+    "formulaSection": {
+      "h2": "Fórmula do Perímetro do Triângulo Retângulo",
+      "paragraphs": [
+        "O perímetro de qualquer polígono é o comprimento total do seu limite. Para um triângulo retângulo, o limite consiste exatamente em três lados retos: dois catetos (a e b) que formam o ângulo de 90° e uma hipotenusa (c) que se estende do ângulo reto até o vértice oposto.",
+        "Como um triângulo retângulo possui apenas três lados, a fórmula do perímetro é a soma mais simples possível. Não são necessárias trigonometria, raízes quadradas ou expoentes — apenas adição."
+      ],
+      "formulas": [
+        "P = a + b + c"
+      ]
+    },
+    "howTo": {
+      "h2": "Como Encontrar o Perímetro de um Triângulo Retângulo",
+      "steps": [
+        "Identifique todos os três lados do triângulo retângulo. Chame os dois lados mais curtos de cateto a e cateto b, e o lado mais longo de hipotenusa c.",
+        "Certifique-se de que todas as três medições usem a mesma unidade. Converta se necessário antes de inserir os valores.",
+        "Insira o cateto a no primeiro campo da calculadora.",
+        "Insira o cateto b no segundo campo.",
+        "Insira a hipotenusa c no terceiro campo.",
+        "Clique em Calcular. A calculadora soma os três valores e exibe o perímetro P junto com os cálculos passo a passo.",
+        "Revise o resultado no diagrama para confirmar visualmente se os comprimentos dos lados correspondem ao seu triângulo."
+      ]
+    },
+    "example": {
+      "h2": "Exemplo Resolvido: Encontre o Perímetro de um Triângulo Retângulo 3-4-5",
+      "intro": "O triângulo 3-4-5 é um dos trios pitagóricos mais comuns. Dados a = 3, b = 4, c = 5:",
+      "lines": [
+        "P = a + b + c",
+        "P = 3 + 4 + 5",
+        "P = 12"
+      ],
+      "answer": "O perímetro deste triângulo retângulo é 12 unidades. Como 3² + 4² = 9 + 16 = 25 = 5², os lados satisfazem o teorema de Pitágoras e confirmam um triângulo retângulo válido."
+    },
+    "extraSections": [
+      {
+        "h2": "O Que é o Perímetro de um Triângulo Retângulo?",
+        "paragraphs": [
+          "O perímetro de um triângulo retângulo é a distância total que você viajaria se andasse por todas as três bordas do triângulo, começando em um vértice e retornando ao mesmo vértice. Ele representa o limite externo da forma triangular.",
+          "Todo triângulo retângulo tem três lados: dois catetos que se encontram no ângulo reto (90°) e uma hipotenusa oposta ao ângulo reto. A hipotenusa é sempre a mais longa dos três lados. Quando você soma os comprimentos de todos os três lados, você obtém o perímetro.",
+          "O perímetro é uma medida unidimensional expressa em unidades lineares (como centímetros, metros, pés ou polegadas). Isso é diferente da área, que mede o espaço bidimensional dentro do triângulo e é expressa em unidades quadradas."
+        ]
+      },
+      {
+        "h2": "Entendendo os Lados de um Triângulo Retângulo",
+        "paragraphs": [
+          "Antes de calcular o perímetro, ajuda identificar claramente cada lado do triângulo retângulo. Rotular um lado incorretamente é a fonte mais comum de erros.",
+          "Na convenção padrão, os dois lados que formam o ângulo reto são chamados de catetos. O lado oposto ao ângulo reto é chamado de hipotenusa. A hipotenusa é sempre mais longa do que qualquer cateto individualmente, mas é sempre mais curta que a soma dos dois catetos."
+        ],
+        "listTitle": "Os três lados num relance:",
+        "listItems": [
+          "Cateto a — Um dos dois lados que forma o ângulo de 90°. Pode ser o lado vertical ou horizontal, dependendo da orientação.",
+          "Cateto b — O outro lado que forma o ângulo de 90°. Junto com o cateto a, define o ângulo reto.",
+          "Hipotenusa c — O lado mais longo, estendendo-se de um vértice de ângulo agudo ao outro, diretamente oposto ao ângulo reto.",
+          "A relação pitagórica se mantém: a² + b² = c². Isso permite que você verifique se seus três valores realmente formam um triângulo retângulo."
+        ]
+      },
+      {
+        "h2": "Como a Fórmula do Perímetro é Derivada",
+        "paragraphs": [
+          "A fórmula do perímetro P = a + b + c é uma aplicação direta da definição geral de perímetro de polígono: adicione os comprimentos de todos os lados. Para um triângulo, existem exatamente três lados, então o perímetro é a soma de três comprimentos.",
+          "Nenhuma derivação ou rearranjo é necessária porque a fórmula é o caso mais simples possível de medição de perímetro. No entanto, a fórmula torna-se mais interessante quando apenas dois lados são conhecidos, porque você pode usar o teorema de Pitágoras para encontrar o terceiro lado ausente e então calcular o perímetro."
+        ]
+      },
+      {
+        "h2": "Encontrando o Perímetro Quando Falta Um Lado",
+        "paragraphs": [
+          "Se você conhece apenas dois dos três lados de um triângulo retângulo, você ainda pode encontrar o perímetro. Use o teorema de Pitágoras (a² + b² = c²) para calcular primeiro o lado que falta e, em seguida, adicione os três para obter o perímetro.",
+          "Essa abordagem permite que você trabalhe com os dois cenários mais comuns: conhecer os dois catetos, mas não a hipotenusa, ou conhecer a hipotenusa e um cateto, mas não o outro."
+        ],
+        "listTitle": "Fórmulas para cada caso de lado ausente:",
+        "listItems": [
+          "Se faltar c: c = √(a² + b²), então P = a + b + √(a² + b²)",
+          "Se faltar b: b = √(c² – a²), então P = a + √(c² – a²) + c",
+          "Se faltar a: a = √(c² – b²), então P = √(c² – b²) + b + c",
+          "Sempre verifique se c > a e c > b ao usar a forma de subtração, caso contrário, os valores não formam um triângulo retângulo válido."
+        ]
+      },
+      {
+        "h2": "Exemplos Resolvidos Adicionais",
+        "paragraphs": [
+          "Praticar com triângulos diferentes ajuda a aumentar a confiança. Abaixo estão mais três exemplos resolvidos usando trios pitagóricos comuns e valores decimais."
+        ],
+        "listTitle": "Exemplo 1 — O triângulo 5-12-13:",
+        "listItems": [
+          "Dados: a = 5, b = 12, c = 13",
+          "P = 5 + 12 + 13 = 30 unidades",
+          "Verificação: 5² + 12² = 25 + 144 = 169 = 13² ✓"
+        ]
+      },
+      {
+        "h2": "Exemplo 2 — O Triângulo 8-15-17",
+        "paragraphs": [
+          "Dados: a = 8, b = 15, c = 17. Este é outro trio pitagórico onde todos os lados são números inteiros."
+        ],
+        "listItems": [
+          "P = 8 + 15 + 17 = 40 unidades",
+          "Verificação: 8² + 15² = 64 + 225 = 289 = 17² ✓",
+          "Este trio é útil em layouts de construção onde são necessários comprimentos de cerca ou acabamento de 40 unidades."
+        ]
+      },
+      {
+        "h2": "Exemplo 3 — Lados Decimais",
+        "paragraphs": [
+          "Nem todos os triângulos retângulos têm lados inteiros perfeitos. Dados: a = 2.5, b = 6, c = 6.5."
+        ],
+        "listItems": [
+          "P = 2.5 + 6 + 6.5 = 15 unidades",
+          "Verificação: 2.5² + 6² = 6.25 + 36 = 42.25 = 6.5² ✓",
+          "Os valores decimais funcionam da mesma forma — basta somá-los diretamente."
+        ]
+      },
+      {
+        "h2": "Perímetro vs. Área: Qual é a Diferença?",
+        "paragraphs": [
+          "O perímetro e a área descrevem um triângulo, mas medem coisas diferentes. O perímetro mede o comprimento total da borda externa (uma medida linear), enquanto a área mede o espaço interno fechado do triângulo (uma medida quadrada).",
+          "Para um triângulo retângulo com catetos a e b e hipotenusa c, as duas fórmulas são: P = a + b + c para o perímetro e A = (a × b) / 2 para a área. Note que a fórmula da área usa apenas os dois catetos (pois eles são perpendiculares), enquanto a fórmula do perímetro usa todos os três lados.",
+          "Um erro comum é confundir os dois. Se um problema perguntar sobre a distância da cerca ao redor de um terreno triangular, você precisa do perímetro. Se perguntar sobre a cobertura da superfície (como pintar ou colocar azulejos), você precisa da área."
+        ]
+      },
+      {
+        "h2": "Aplicações Reais do Perímetro de Triângulo Retângulo",
+        "paragraphs": [
+          "Conhecer o perímetro de um triângulo retângulo é essencial em muitas situações práticas. Sempre que você precisar medir, cortar ou comprar material que contorna as bordas de uma forma triangular em ângulo reto, o perímetro diz exatamente quanto material é necessário."
+        ],
+        "listTitle": "Usos comuns no mundo real:",
+        "listItems": [
+          "Cercas — Um canteiro triangular ou um lote de esquina exige cerca nos três lados. O perímetro indica quantos pés ou metros lineares de cerca comprar.",
+          "Acabamentos e molduras — Uma característica arquitetônica triangular (como uma empena) precisa de acabamento ao longo de suas bordas. O perímetro dá o comprimento total do acabamento.",
+          "Fio e corda — Enquadrar uma exibição em ângulo reto, banner ou vela requer corda, fio ou borda igual ao perímetro.",
+          "Caminhos de corrida e caminhada — Uma pista de corrida triangular ou um caminho a pé ao redor de uma área de parque com formato de triângulo retângulo tem uma distância total igual ao perímetro.",
+          "Layout de construção — Os construtores usam a regra 3-4-5 para verificar se um canto é reto. Conhecer o perímetro ajuda a verificar as medidas.",
+          "Artesanato e costura — Fita, viés ou renda ao redor de uma almofada ou bandeirola triangular requer material do comprimento do perímetro.",
+          "Mapas e cálculos topográficos — Os topógrafos medem lotes triangulares de terra e precisam do perímetro para descrições de limites e registros de propriedades."
+        ]
+      },
+      {
+        "h2": "Relação Entre Perímetro e Semiperímetro",
+        "paragraphs": [
+          "O semiperímetro (s) é exatamente a metade do perímetro: s = P / 2 = (a + b + c) / 2. Enquanto o perímetro dá o comprimento total do limite, o semiperímetro é um valor de conveniência usado em fórmulas mais avançadas.",
+          "O semiperímetro aparece na fórmula de Heron para a área do triângulo: A = √[s(s–a)(s–b)(s–c)]. Também é usado para calcular o inraio (o raio do círculo inscrito): r = A / s. Assim, o perímetro é o ponto de partida para vários cálculos importantes de triângulos.",
+          "Se você já calculou o perímetro usando esta ferramenta, pode encontrar o semiperímetro simplesmente dividindo o resultado por 2, ou use nossa calculadora de semiperímetro dedicada."
+        ]
+      },
+      {
+        "h2": "Dicas de Conversão de Unidades",
+        "paragraphs": [
+          "O resultado do perímetro só faz sentido quando os três lados fornecidos usam a mesma unidade. Se suas medições estiverem em unidades diferentes, converta-as primeiro. A calculadora inclui um seletor de unidades para cada campo de entrada para lidar automaticamente com as conversões.",
+          "Lembre-se de que o perímetro é uma medida linear, então as conversões seguem as proporções de comprimento padrão — não as proporções de área. Por exemplo, para converter de pés para metros, multiplique por 0.3048 (não por 0.3048²)."
+        ],
+        "listTitle": "Lembretes rápidos de conversão:",
+        "listItems": [
+          "1 polegada (in) = 2.54 cm",
+          "1 pé (ft) = 12 polegadas = 0.3048 m",
+          "1 jarda (yd) = 3 pés = 0.9144 m",
+          "1 metro (m) = 100 cm = 3.2808 pés",
+          "1 quilômetro (km) = 1000 m = 0.6214 milhas (mi)",
+          "1 milha (mi) = 5280 pés = 1.6093 km"
+        ]
+      },
+      {
+        "h2": "Erros Comuns ao Calcular o Perímetro",
+        "paragraphs": [
+          "A fórmula do perímetro é simples, mas os erros ainda acontecem. A maioria dos erros vem de entradas incorretas e não de matemática errada. Detectar esses problemas antes de calcular economiza tempo e evita respostas erradas."
+        ],
+        "listTitle": "Cuidado com estas armadilhas:",
+        "listItems": [
+          "Usar apenas dois lados — O perímetro requer todos os três lados. Esquecer a hipotenusa ou um cateto dá uma resposta incompleta.",
+          "Misturar unidades — Se o cateto a está em polegadas e o cateto b está em centímetros, a soma não tem significado. Converta para uma única unidade primeiro.",
+          "Confundir perímetro com área — O perímetro é um comprimento (medido em unidades), enquanto a área é uma superfície (medida em unidades quadradas). Certifique-se de saber qual deles o problema pede.",
+          "Usar lados que não formam um triângulo retângulo — Verifique se a² + b² = c². Se essa equação não se sustentar, o triângulo não é um triângulo retângulo e c não é uma verdadeira hipotenusa.",
+          "Arredondar muito cedo — Se um lado for irracional (como √2), mantenha precisão total até a adição final para evitar acumular erros de arredondamento.",
+          "Inserir a hipotenusa como um cateto — A hipotenusa deve ser o lado mais longo. Se você colocar um valor menor no campo da hipotenusa, o diagrama ficará incorreto e a verificação pitagórica falhará."
+        ]
+      },
+      {
+        "h2": "Propriedades de Perímetro de um Triângulo Retângulo",
+        "paragraphs": [
+          "Os triângulos retângulos têm propriedades de perímetro especiais que os diferenciam de outros triângulos. Compreender essas propriedades pode ajudá-lo a verificar seus cálculos e detectar erros.",
+          "Em qualquer triângulo retângulo, a hipotenusa c é sempre menor que a soma dos dois catetos (a + b), mas maior que qualquer cateto isoladamente. Isso significa que o perímetro P é sempre maior que 2c (já que a + b > c) e menor que 2(a + b), que é igual a 2a + 2b."
+        ],
+        "listTitle": "Propriedades chave do perímetro:",
+        "listItems": [
+          "P é sempre maior que 2 × (lado mais longo) porque os outros dois lados adicionam comprimento adicional.",
+          "P é sempre menor que 3 × (lado mais longo) porque c > a e c > b, então a + b < 2c.",
+          "Para um triângulo 45-45-90 com catetos de comprimento k, P = k + k + k√2 = k(2 + √2) ≈ 3.414k.",
+          "Para um triângulo 30-60-90 com o cateto mais curto k, P = k + k√3 + 2k = k(3 + √3) ≈ 4.732k.",
+          "Entre todos os triângulos retângulos com a mesma hipotenusa, o triângulo retângulo isósceles (45-45-90) tem o maior perímetro."
+        ]
+      }
+    ],
+    "relatedLinks": [
+      {
+        "href": "/right-triangle-measurements-calculator/",
+        "label": "Calculadora de Medidas de Triângulo Retângulo"
+      },
+      {
+        "href": "/right-triangle-semiperimeter-calculator/",
+        "label": "Calculadora de Semiperímetro de Triângulo Retângulo"
+      },
+      {
+        "href": "/right-triangle-side-calculator/",
+        "label": "Calculadora de Lado de Triângulo Retângulo"
+      },
+      {
+        "href": "/right-triangle-area-calculator/",
+        "label": "Calculadora de Área de Triângulo Retângulo"
+      },
+      {
+        "href": "/pythagorean-theorem-calculator/",
+        "label": "Calculadora do Teorema de Pitágoras"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Qual é a fórmula do perímetro de um triângulo retângulo?",
+        "answer": "A fórmula do perímetro é P = a + b + c, onde a e b são os dois catetos (os lados que formam o ângulo de 90°) e c é a hipotenusa (o lado mais longo, oposto ao ângulo reto). Basta somar as três medidas dos lados."
+      },
+      {
+        "question": "O que cada variável significa em P = a + b + c?",
+        "answer": "P é o perímetro (comprimento total do limite). a é um cateto do triângulo retângulo. b é o outro cateto. c é a hipotenusa — o lado mais longo que fica em frente ao ângulo reto. Os dois catetos formam o canto de 90°."
+      },
+      {
+        "question": "Posso encontrar o perímetro com apenas dois lados?",
+        "answer": "Sim, mas você deve primeiro calcular o terceiro lado ausente usando o teorema de Pitágoras: c = √(a² + b²) se faltar a hipotenusa, ou um cateto ausente = √(c² – cateto conhecido²). Em seguida, some os três lados para obter o perímetro."
+      },
+      {
+        "question": "O perímetro é o mesmo que a área?",
+        "answer": "Não. O perímetro (P = a + b + c) mede a distância total ao redor do triângulo em unidades lineares (cm, m, ft). A área (A = a×b/2) mede o espaço interno do triângulo em unidades quadradas (cm², m², ft²). São medidas fundamentalmente diferentes."
+      },
+      {
+        "question": "Todos os três lados precisam estar na mesma unidade?",
+        "answer": "Sim. Todos os três lados devem estar expressos na mesma unidade antes da adição. Se um lado estiver em polegadas e outro em centímetros, converta-os primeiro para uma unidade comum. A calculadora inclui seletores de unidade em cada entrada para lidar com isso automaticamente."
+      },
+      {
+        "question": "Qual é o perímetro de um triângulo retângulo 3-4-5?",
+        "answer": "O perímetro é 3 + 4 + 5 = 12 unidades. O triângulo 3-4-5 é o menor trio pitagórico com lados inteiros. Qualquer versão em escala (como 6-8-10 ou 9-12-15) mantém a mesma proporção com o perímetro escalando proporcionalmente."
+      },
+      {
+        "question": "Como eu verifico se meu triângulo é realmente um triângulo retângulo?",
+        "answer": "Verifique se a² + b² = c², onde c é o lado mais longo. Se esta equação for verdadeira, o triângulo tem um ângulo de 90° e é um triângulo retângulo. Se não for verdadeira, a fórmula do perímetro ainda funciona, mas o triângulo não é retângulo."
+      },
+      {
+        "question": "Qual é a relação entre perímetro e semiperímetro?",
+        "answer": "O semiperímetro é exatamente a metade do perímetro: s = P/2. Se o perímetro P = 12, então o semiperímetro s = 6. O semiperímetro é usado na fórmula de Heron e nos cálculos do inraio."
+      },
+      {
+        "question": "O perímetro de um triângulo retângulo pode ser um número ímpar?",
+        "answer": "Sim. O perímetro pode ser qualquer número positivo — inteiro, decimal ou irracional. Por exemplo, um triângulo retângulo com catetos 1 e 1 tem hipotenusa √2 ≈ 1.414, dando perímetro ≈ 3.414, que não é inteiro nem racional."
+      },
+      {
+        "question": "Por que a hipotenusa é sempre o lado mais longo?",
+        "answer": "Em um triângulo retângulo, a hipotenusa é oposta ao maior ângulo (90°). Uma regra fundamental na geometria é que o lado mais longo é sempre oposto ao maior ângulo. Como nenhum ângulo em um triângulo pode exceder o ângulo reto, c é sempre o lado mais longo."
+      }
+    ]
+  },
+  {
+    "slug": "right-triangle-semiperimeter-calculator",
+    "url": "/right-triangle-semiperimeter-calculator/",
+    "h1": "Calculadora de Semiperímetro de Triângulo Retângulo",
+    "metaTitle": "Calculadora de Semiperímetro de Triângulo Retângulo | Encontre s a partir de a, b e c",
+    "metaDescription": "Calcule o semiperímetro s de um triângulo retângulo a partir do cateto a, cateto b e hipotenusa c. Inclui fórmula, diagrama, solução passo a passo, exemplos e verificação de erros.",
+    "formulaSlug": "semiperimeter",
+    "toolPurpose": "Encontre o semiperímetro s de um triângulo retângulo a partir dos comprimentos dos três lados e depois o utilize como ponto de partida para calcular a área, o inraio e outras fórmulas de geometria que dependem da metade do perímetro.",
+    "intro": "Insira o cateto a, cateto b e hipotenusa c para calcular o semiperímetro s do triângulo retângulo.",
+    "quickSummary": {
+      "h2": "O Que Esta Calculadora de Semiperímetro Resolve",
+      "intro": "Use esta página quando precisar do valor do meio-perímetro s para um triângulo retângulo. É especialmente útil antes de usar fórmulas de área no estilo Heron, fórmulas de inraio ou identidades de geometria que se referem a s.",
+      "cards": [
+        {
+          "label": "Valores conhecidos",
+          "value": "Cateto a, cateto b e hipotenusa c"
+        },
+        {
+          "label": "Encontra",
+          "value": "Semiperímetro s, exatamente a metade de P"
+        },
+        {
+          "label": "Fórmula principal",
+          "value": "s = (a + b + c) / 2"
+        },
+        {
+          "label": "Ideal para",
+          "value": "Verificações de Heron, cálculos de inraio, provas de geometria e notação compacta de triângulos"
+        }
+      ]
+    },
+    "calculator": {
+      "outputLabel": "Semiperímetro s",
+      "fields": [
+        {
+          "key": "a",
+          "label": "Cateto a",
+          "min": 0
+        },
+        {
+          "key": "b",
+          "label": "Cateto b",
+          "min": 0
+        },
+        {
+          "key": "c",
+          "label": "Hipotenusa c",
+          "min": 0
+        }
+      ]
+    },
+    "diagram": {
+      "h2": "Diagrama do Triângulo Retângulo: Semiperímetro é Metade do Limite",
+      "intro": "O diagrama mostra os mesmos três comprimentos de lados usados para o perímetro, mas o resultado é dividido por 2. O semiperímetro ainda é baseado na borda externa do triângulo, não na área interna.",
+      "caption": "Diagrama de semiperímetro de triângulo retângulo mostrando o lado a, lado b, hipotenusa c e a fórmula s = (a + b + c) / 2.",
+      "formulaLabel": "s = (a + b + c) / 2",
+      "keyLabel": "Legenda do Diagrama",
+      "sides": {
+        "a": {
+          "label": "a = primeiro cateto",
+          "description": "O cateto a é um dos dois lados perpendiculares incluídos no total antes de dividir por 2."
+        },
+        "b": {
+          "label": "b = segundo cateto",
+          "description": "O cateto b forma o ângulo reto com a e contribui para o perímetro e o semiperímetro."
+        },
+        "c": {
+          "label": "c = hipotenusa",
+          "description": "A hipotenusa c é o lado mais longo e deve ser incluída antes do total ser reduzido à metade."
+        }
+      },
+      "result": {
+        "label": "s = metade do total do limite",
+        "description": "A calculadora primeiro soma a + b + c, e então divide esse perímetro por 2."
+      },
+      "notes": [
+        "O semiperímetro é uma medida linear, então usa a mesma unidade que os comprimentos dos lados.",
+        "Se P já for conhecido, use s = P / 2; se P não for conhecido, use s = (a + b + c) / 2.",
+        "Para um triângulo retângulo válido, c deve ser o lado mais longo e deve satisfazer a² + b² = c²."
+      ]
+    },
+    "formulaSection": {
+      "h2": "Fórmula do Semiperímetro do Triângulo Retângulo",
+      "paragraphs": [
+        "O semiperímetro de um triângulo é metade do seu perímetro. Para um triângulo retângulo, o perímetro é P = a + b + c, então o semiperímetro é s = (a + b + c) / 2.",
+        "A letra s é comumente usada porque o semiperímetro aparece em muitas fórmulas compactas de geometria. Mesmo quando o triângulo é retângulo, s é útil como uma ponte entre os comprimentos dos lados, a área e as medidas do círculo, como o inraio.",
+        "Assim como o perímetro, o semiperímetro é medido em unidades lineares. Se os lados estiverem em metros, s estará em metros. Se os lados estiverem em polegadas, s estará em polegadas."
+      ],
+      "formulas": [
+        "P = a + b + c",
+        "s = \\frac{P}{2}",
+        "s = \\frac{a + b + c}{2}"
+      ]
+    },
+    "howTo": {
+      "h2": "Como Encontrar o Semiperímetro de um Triângulo Retângulo",
+      "steps": [
+        "Identifique os dois catetos do triângulo retângulo. Estes são os lados que se encontram no ângulo de 90 graus.",
+        "Identifique a hipotenusa c. É o lado mais longo e fica em frente ao ângulo reto.",
+        "Certifique-se de que a, b e c usem todos a mesma unidade de medida.",
+        "Insira o cateto a, o cateto b e a hipotenusa c na calculadora.",
+        "Clique em Calcular para somar os três lados e dividir o total por 2.",
+        "Verifique as etapas exibidas. A calculadora deve mostrar o total do perímetro primeiro e, em seguida, o resultado do semiperímetro.",
+        "Use s em qualquer fórmula posterior que peça o semiperímetro, como nas relações de inraio ou área no estilo Heron."
+      ]
+    },
+    "example": {
+      "h2": "Exemplo Resolvido: Encontre o Semiperímetro de um Triângulo Retângulo 3-4-5",
+      "intro": "Dados a = 3, b = 4 e c = 5, some primeiro os três lados para obter o perímetro e depois divida por 2:",
+      "lines": [
+        "s = \\frac{a + b + c}{2}",
+        "s = \\frac{3 + 4 + 5}{2}",
+        "s = \\frac{12}{2}",
+        "s = 6"
+      ],
+      "answer": "O semiperímetro é de 6 unidades. O perímetro completo é de 12 unidades, e s é exatamente a metade desse total."
+    },
+    "extraSections": [
+      {
+        "h2": "O Que Significa Semiperímetro?",
+        "paragraphs": [
+          "Semiperímetro significa literalmente metade do perímetro. Em vez de escrever repetidamente (a + b + c) / 2 em fórmulas mais longas, a geometria frequentemente usa o símbolo mais curto s.",
+          "Para um triângulo retângulo, esse valor é especialmente conveniente porque os rótulos dos lados já estão padronizados: a e b são os catetos e c é a hipotenusa. Assim que as três medidas dos lados forem conhecidas, s é um único número compacto que resume a metade do comprimento do limite."
+        ]
+      },
+      {
+        "h2": "Semiperímetro vs. Perímetro",
+        "paragraphs": [
+          "O perímetro P mede a distância total ao redor do exterior do triângulo. O semiperímetro s mede a metade dessa distância. Os dois valores estão diretamente conectados: s = P / 2 e P = 2s.",
+          "Use o perímetro quando um problema perguntar sobre o comprimento total da fronteira, como acabamento, cercas ou distância da borda. Use o semiperímetro quando uma fórmula pedir especificamente por s, ou quando você estiver preparando valores para relações de área e raio."
+        ],
+        "listTitle": "Comparação rápida:",
+        "listItems": [
+          "Perímetro: P = a + b + c",
+          "Semiperímetro: s = (a + b + c) / 2",
+          "Se P = 30, então s = 15",
+          "Se s = 15, então P = 30"
+        ]
+      },
+      {
+        "h2": "Por Que o Semiperímetro Importa na Geometria do Triângulo Retângulo",
+        "paragraphs": [
+          "O semiperímetro é mais do que um atalho. É um valor auxiliar padrão usado em fórmulas que conectam os comprimentos dos lados à área e às medidas do círculo.",
+          "Para qualquer triângulo, a fórmula de Heron usa s para calcular a área a partir de três lados: A = √(s(s-a)(s-b)(s-c)). Para um triângulo retângulo, você geralmente usa A = (a × b) / 2, mas a fórmula de Heron ainda é útil para verificação.",
+          "O semiperímetro também se conecta ao inraio. Em muitas fórmulas de triângulos, a área é igual ao inraio vezes o semiperímetro: A = r × s. Uma vez que s é conhecido, torna-se mais fácil resolver para r ou verificar o resultado de um inraio."
+        ],
+        "listTitle": "Fórmulas comuns que usam s:",
+        "listItems": [
+          "Área estilo Heron: A = √(s(s-a)(s-b)(s-c))",
+          "Relação área-inraio: A = r × s",
+          "Reorganização do inraio: r = A / s",
+          "Recuperação do perímetro: P = 2s"
+        ]
+      },
+      {
+        "h2": "Exemplos Adicionais de Semiperímetro",
+        "paragraphs": [
+          "Esses exemplos mostram como a mesma fórmula funciona para trios de números inteiros e comprimentos de lados decimais. A chave é somar todos os três lados antes de dividir."
+        ],
+        "listTitle": "Exemplo 1 - Triângulo 5-12-13:",
+        "listItems": [
+          "Dados: a = 5, b = 12, c = 13",
+          "s = (5 + 12 + 13) / 2",
+          "s = 30 / 2 = 15 unidades"
+        ]
+      },
+      {
+        "h2": "Exemplo 2 - Triângulo 8-15-17",
+        "paragraphs": [
+          "Para a = 8, b = 15 e c = 17, o perímetro completo é de 40 unidades."
+        ],
+        "listItems": [
+          "s = (8 + 15 + 17) / 2",
+          "s = 40 / 2",
+          "s = 20 unidades"
+        ]
+      },
+      {
+        "h2": "Exemplo 3 - Comprimentos de Lado Decimais",
+        "paragraphs": [
+          "Os decimais funcionam da mesma forma que os números inteiros. Dados a = 2.5, b = 6 e c = 6.5:"
+        ],
+        "listItems": [
+          "s = (2,5 + 6 + 6,5) / 2",
+          "s = 15 / 2",
+          "s = 7.5 unidades"
+        ]
+      },
+      {
+        "h2": "Quando Usar Esta Calculadora de Semiperímetro",
+        "paragraphs": [
+          "Use esta calculadora quando um problema de geometria fornecer todos os três comprimentos dos lados do triângulo retângulo e pedir s, meio-perímetro ou uma fórmula que dependa do semiperímetro.",
+          "Também é útil como uma verificação rápida após encontrar um lado ausente. Uma vez que você saiba a, b e c, o semiperímetro deve ser simples e exato: some os lados e depois divida por 2."
+        ],
+        "listTitle": "Bons casos de uso incluem:",
+        "listItems": [
+          "Preparando entradas para a fórmula de Heron a partir de três comprimentos de lados.",
+          "Verificando cálculos de inraio com r = A / s.",
+          "Reduzindo a matemática repetitiva nas tarefas de geometria ou provas.",
+          "Comparando tamanhos de triângulos usando valores de meio limite.",
+          "Verificando se os resultados do perímetro e semiperímetro coincidem: P deve sempre igualar 2s."
+        ]
+      },
+      {
+        "h2": "Dicas de Unidades para o Semiperímetro",
+        "paragraphs": [
+          "O semiperímetro é um comprimento, portanto, segue as regras normais de conversão de unidades de comprimento. Não é medido em unidades quadradas.",
+          "Se as entradas dos lados usarem unidades diferentes, converta-as primeiro ou use os seletores de unidades da calculadora de forma consistente. Adicionar pés, polegadas e centímetros diretamente produziria um resultado sem sentido."
+        ],
+        "listTitle": "Tenha em mente estas regras de unidades:",
+        "listItems": [
+          "Todos os comprimentos dos lados devem representar o mesmo sistema de unidades antes da comparação dos resultados.",
+          "A saída s usa uma unidade linear como cm, m, in ou ft.",
+          "Não eleve as unidades ao quadrado ao calcular o semiperímetro.",
+          "Se você converter os lados após calcular, converta s pelo mesmo fator de conversão linear."
+        ]
+      },
+      {
+        "h2": "Erros Comuns no Semiperímetro",
+        "paragraphs": [
+          "A maioria dos erros de semiperímetro acontece porque a fórmula parece simples. A matemática é fácil, mas a configuração ainda importa."
+        ],
+        "listTitle": "Fique atento a estes erros:",
+        "listItems": [
+          "Esquecer de dividir por 2 após somar os lados.",
+          "Dividir cada lado por 2 primeiro e depois perder o controle do total.",
+          "Usar apenas os dois catetos e deixar de fora a hipotenusa.",
+          "Confundir s com o perímetro P. Lembre-se que P = 2s.",
+          "Usar comprimentos de lados que não formam um triângulo retângulo.",
+          "Misturar unidades diferentes no mesmo cálculo."
+        ]
+      },
+      {
+        "h2": "Como o Semiperímetro se Conecta a Área e Inraio",
+        "paragraphs": [
+          "Em um triângulo retângulo, a área pode ser calculada diretamente com A = (a × b) / 2 porque os catetos são perpendiculares. Uma vez que a área e o semiperímetro são conhecidos, o inraio pode ser verificado com r = A / s.",
+          "Isso torna o semiperímetro um valor médio útil. Não substitui a fórmula da área, mas ajuda a conectar os comprimentos dos lados às medidas do círculo dentro do triângulo."
+        ],
+        "listTitle": "Exemplo com um triângulo 3-4-5:",
+        "listItems": [
+          "Área: A = (3 × 4) / 2 = 6",
+          "Semiperímetro: s = (3 + 4 + 5) / 2 = 6",
+          "Verificação do inraio: r = A / s = 6 / 6 = 1"
+        ]
+      }
+    ],
+    "relatedLinks": [
+      {
+        "href": "/right-triangle-measurements-calculator/",
+        "label": "Calculadora de Medidas de Triângulo Retângulo"
+      },
+      {
+        "href": "/right-triangle-perimeter-calculator/",
+        "label": "Calculadora de Perímetro de Triângulo Retângulo"
+      },
+      {
+        "href": "/right-triangle-area-calculator/",
+        "label": "Calculadora de Área de Triângulo Retângulo"
+      },
+      {
+        "href": "/right-triangle-radius-calculator/",
+        "label": "Calculadora de Raio de Triângulo Retângulo"
+      },
+      {
+        "href": "/pythagorean-theorem-calculator/",
+        "label": "Calculadora do Teorema de Pitágoras"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Qual é a fórmula do semiperímetro do triângulo retângulo?",
+        "answer": "A fórmula é s = (a + b + c) / 2, onde a e b são os catetos do triângulo retângulo e c é a hipotenusa. Adicione todas as três medidas dos lados e depois divida o total por 2."
+      },
+      {
+        "question": "O que significa semiperímetro?",
+        "answer": "Semiperímetro significa a metade do perímetro do triângulo. Se o perímetro completo é P, então s = P / 2. Se as medidas dos lados são conhecidas diretamente, s = (a + b + c) / 2."
+      },
+      {
+        "question": "O semiperímetro é o mesmo que o perímetro?",
+        "answer": "Não. O perímetro é o comprimento total do limite ao redor do triângulo, enquanto o semiperímetro é metade desse comprimento. Eles estão relacionados por P = 2s."
+      },
+      {
+        "question": "Por que o semiperímetro é usado?",
+        "answer": "O semiperímetro é usado porque torna fórmulas mais longas mais fáceis de escrever e calcular. Ele aparece na fórmula de Heron, na relação entre área e inraio A = r × s e no rearranjo do inraio r = A / s."
+      },
+      {
+        "question": "Eu preciso de todos os três lados?",
+        "answer": "Sim. Para calcular o semiperímetro diretamente, você precisa do cateto a, cateto b e da hipotenusa c. Se faltar um lado, calcule-o primeiro com o teorema de Pitágoras e depois calcule s."
+      },
+      {
+        "question": "Qual é o semiperímetro de um triângulo retângulo 3-4-5?",
+        "answer": "Para um triângulo retângulo 3-4-5, s = (3 + 4 + 5) / 2 = 12 / 2 = 6 unidades."
+      },
+      {
+        "question": "O semiperímetro usa unidades quadradas?",
+        "answer": "Não. O semiperímetro é um comprimento, então ele usa unidades lineares como cm, m, in ou ft. A área usa unidades quadradas, mas o semiperímetro não."
+      },
+      {
+        "question": "Como posso verificar se minha resposta para o semiperímetro está correta?",
+        "answer": "Dobre o semiperímetro. O resultado deve ser igual ao perímetro completo. Por exemplo, se s = 15, então P deve ser 30."
+      }
+    ]
+  }
+]

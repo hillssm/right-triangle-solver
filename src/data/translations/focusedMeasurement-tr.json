@@ -1,0 +1,560 @@
+[
+  {
+    "slug": "right-triangle-perimeter-calculator",
+    "url": "/right-triangle-perimeter-calculator/",
+    "h1": "Dik Üçgen Çevre Hesaplayıcı",
+    "metaTitle": "Dik Üçgen Çevre Hesaplayıcı | Bir Dik Üçgenin Çevresini Anında Bulun",
+    "metaDescription": "a dik kenarı, b dik kenarı ve c hipotenüsünden bir dik üçgenin çevresini hesaplayın. Formül, adım adım çözüm, diyagram, çözümlü örnekler ve gerçek dünya uygulamaları içerir.",
+    "formulaSlug": "perimeter",
+    "toolPurpose": "Bir dik üçgenin etrafındaki toplam mesafeyi anında hesaplamak için üç kenarını da girin. Hesaplayıcı, sonucu kullanmadan önce her değeri doğrulayabilmeniz için formülü, adım adım işlemleri ve canlı bir diyagramı gösterir.",
+    "intro": "Bir dik üçgenin toplam çevresini hesaplamak için a dik kenarını, b dik kenarını ve c hipotenüsünü girin.",
+    "quickSummary": {
+      "h2": "Bu Çevre Hesaplayıcı Ne Çözer",
+      "intro": "Bir dik üçgenin üç kenar uzunluğunu zaten biliyorsanız ve toplam sınır uzunluğuna ihtiyacınız varsa bu sayfayı kullanın. Hızlı aritmetik, birime duyarlı girdiler ve kolay görsel kontrol için tasarlanmıştır.",
+      "cards": [
+        { "label": "Bilinen değerler", "value": "a dik kenarı, b dik kenarı ve c hipotenüsü" },
+        { "label": "Bulunan", "value": "Çevre P, üçgenin etrafındaki toplam mesafe" },
+        { "label": "Ana formül", "value": "P = a + b + c" },
+        { "label": "En uygun olduğu yerler", "value": "Çit çekme, pervaz, yerleşim kontrolleri, geometri ödevleri ve kenar uzunluğu planlaması" }
+      ]
+    },
+    "calculator": {
+      "outputLabel": "Çevre P",
+      "fields": [
+        { "key": "a", "label": "a dik kenarı", "min": 0 },
+        { "key": "b", "label": "b dik kenarı", "min": 0 },
+        { "key": "c", "label": "c hipotenüsü", "min": 0 }
+      ]
+    },
+    "diagram": {
+      "h2": "Dik Üçgen Diyagramı: Çevre Üç Kenarı da Kullanır",
+      "intro": "Diyagram, dik üçgenin tam dış yolunu vurgular. Çevre bir iç ölçüm değildir; iki dik kenarın ve hipotenüsün toplamıdır.",
+      "caption": "a kenarını, b kenarını, c hipotenüsünü ve P = a + b + c formülünü gösteren dik üçgen çevre diyagramı.",
+      "formulaLabel": "P = a + b + c",
+      "keyLabel": "Diyagram Anahtarı",
+      "sides": {
+        "a": {
+          "label": "a = birinci dik kenar",
+          "description": "a dik kenarı, 90 derecelik köşenin bir kenarıdır ve çevreye bir kez dahil edilir."
+        },
+        "b": {
+          "label": "b = ikinci dik kenar",
+          "description": "b dik kenarı, dik açının diğer kenarıdır ve a ve c ile birlikte toplanır."
+        },
+        "c": {
+          "label": "c = hipotenüs",
+          "description": "c hipotenüsü, dik açının karşısındaki en uzun kenardır ve sınırı tamamlar."
+        }
+      },
+      "result": {
+        "label": "P = toplam sınır uzunluğu",
+        "description": "Hesaplayıcı a + b + c'yi toplar ve seçilen doğrusal birimde çevreyi döndürür."
+      },
+      "notes": [
+        "Yanıtı karşılaştırmadan veya yeniden kullanmadan önce üç kenar da aynı birimi kullanmalıdır.",
+        "Eğer bir kenar eksikse, o kenarı önce Pisagor teoremi ile çözün, ardından çevreye dönün.",
+        "Çevre sonucu bir uzunluktur, metrekare cinsinden bir alan değildir."
+      ]
+    },
+    "formulaSection": {
+      "h2": "Dik Üçgen Çevre Formülü",
+      "paragraphs": [
+        "Herhangi bir çokgenin çevresi, sınırının toplam uzunluğudur. Bir dik üçgen için sınır tam olarak üç düz kenardan oluşur: 90°'lik açıyı oluşturan iki dik kenar (a ve b) ve dik açıdan karşı köşeye uzanan bir hipotenüs (c).",
+        "Bir dik üçgenin sadece üç kenarı olduğu için, çevre formülü mümkün olan en basit toplamdır. Trigonometri, karekök veya üs gerekmez - sadece toplama."
+      ],
+      "formulas": ["P = a + b + c"]
+    },
+    "howTo": {
+      "h2": "Bir Dik Üçgenin Çevresi Nasıl Bulunur",
+      "steps": [
+        "Dik üçgenin üç kenarını da belirleyin. İki kısa kenarı a dik kenarı ve b dik kenarı olarak, en uzun kenarı ise c hipotenüsü olarak etiketleyin.",
+        "Üç ölçümün de aynı birimi kullandığından emin olun. Değerleri girmeden önce gerekirse dönüştürün.",
+        "a dik kenarını hesaplayıcının ilk giriş alanına girin.",
+        "b dik kenarını ikinci giriş alanına girin.",
+        "c hipotenüsünü üçüncü giriş alanına girin.",
+        "Hesapla'ya tıklayın. Hesaplayıcı üç değeri toplar ve çevreyi P adım adım işlemlerle birlikte görüntüler.",
+        "Kenar uzunluklarının üçgeninizle eşleştiğini görsel olarak doğrulamak için diyagramdaki sonucu inceleyin."
+      ]
+    },
+    "example": {
+      "h2": "Çözümlü Örnek: 3-4-5 Dik Üçgeninin Çevresini Bulma",
+      "intro": "3-4-5 üçgeni en yaygın Pisagor üçlülerinden biridir. a = 3, b = 4, c = 5 verildiğinde:",
+      "lines": [
+        "P = a + b + c",
+        "P = 3 + 4 + 5",
+        "P = 12"
+      ],
+      "answer": "Bu dik üçgenin çevresi 12 birimdir. 3² + 4² = 9 + 16 = 25 = 5² olduğundan, kenarlar Pisagor teoremini sağlar ve geçerli bir dik üçgeni doğrular."
+    },
+    "extraSections": [
+      {
+        "h2": "Dik Üçgenin Çevresi Nedir?",
+        "paragraphs": [
+          "Bir dik üçgenin çevresi, üçgenin üç kenarı boyunca bir köşeden başlayıp aynı köşeye dönecek şekilde yürürseniz kat edeceğiniz toplam mesafedir. Üçgen şeklinin dış sınırını temsil eder.",
+          "Her dik üçgenin üç kenarı vardır: dik açıda (90°) buluşan iki dik kenar ve dik açının karşısındaki bir hipotenüs. Hipotenüs her zaman üç kenarın en uzunudur. Üç kenarın uzunluklarını topladığınızda çevreyi elde edersiniz.",
+          "Çevre, doğrusal birimlerle (santimetre, metre, feet veya inç gibi) ifade edilen tek boyutlu bir ölçümdür. Bu, üçgenin içindeki iki boyutlu alanı ölçen ve birimkarelerle ifade edilen alandan farklıdır."
+        ]
+      },
+      {
+        "h2": "Bir Dik Üçgenin Kenarlarını Anlamak",
+        "paragraphs": [
+          "Çevreyi hesaplamadan önce, dik üçgenin her bir kenarını açıkça belirlemek yararlıdır. Bir kenarı yanlış etiketlemek en yaygın hata kaynağıdır.",
+          "Standart etiketleme kuralında, dik açıyı oluşturan iki kenara dik kenar denir. Dik açının karşısındaki kenara hipotenüs denir. Hipotenüs her zaman her iki dik kenardan tek tek daha uzundur, ancak her zaman iki dik kenarın toplamından daha kısadır."
+        ],
+        "listTitle": "Bir bakışta üç kenar:",
+        "listItems": [
+          "a dik kenarı — 90° açıyı oluşturan iki kenardan biri. Yönelime bağlı olarak dikey veya yatay kenar olabilir.",
+          "b dik kenarı — 90° açıyı oluşturan diğer kenar. a dik kenarı ile birlikte dik açıyı tanımlar.",
+          "c hipotenüsü — En uzun kenar, bir dar açı köşesinden diğerine, doğrudan dik açının karşısına uzanır.",
+          "Pisagor ilişkisi geçerlidir: a² + b² = c². Bu, üç değerinizin gerçekten bir dik üçgen oluşturduğunu doğrulamanızı sağlar."
+        ]
+      },
+      {
+        "h2": "Çevre Formülü Nasıl Elde Edilir",
+        "paragraphs": [
+          "P = a + b + c çevre formülü, genel çokgen çevre tanımının doğrudan bir uygulamasıdır: tüm kenarların uzunluklarını ekleyin. Bir üçgen için tam olarak üç kenar vardır, dolayısıyla çevre üç uzunluğun toplamıdır.",
+          "Formül çevre ölçümünün mümkün olan en basit durumu olduğu için hiçbir türetme veya yeniden düzenlemeye gerek yoktur. Ancak, yalnızca iki kenar bilindiğinde formül daha ilginç hale gelir, çünkü eksik üçüncü kenarı bulmak için Pisagor teoremini kullanabilir ve ardından çevreyi hesaplayabilirsiniz."
+        ]
+      },
+      {
+        "h2": "Bir Kenar Eksik Olduğunda Çevreyi Bulmak",
+        "paragraphs": [
+          "Bir dik üçgenin üç kenarından sadece ikisini biliyorsanız, yine de çevreyi bulabilirsiniz. Önce eksik kenarı hesaplamak için Pisagor teoremini (a² + b² = c²) kullanın, ardından çevreyi elde etmek için üçünü de toplayın.",
+          "Bu yaklaşım, en yaygın iki senaryo ile çalışmanızı sağlar: hipotenüsü değil, her iki dik kenarı da bilmek veya hipotenüsü ve bir dik kenarı bilip diğerini bilmemek."
+        ],
+        "listTitle": "Her eksik kenar durumu için formüller:",
+        "listItems": [
+          "Eğer c eksikse: c = √(a² + b²), sonra P = a + b + √(a² + b²)",
+          "Eğer b eksikse: b = √(c² – a²), sonra P = a + √(c² – a²) + c",
+          "Eğer a eksikse: a = √(c² – b²), sonra P = √(c² – b²) + b + c",
+          "Çıkarma formunu kullanırken her zaman c > a ve c > b olduğunu doğrulayın, aksi takdirde değerler geçerli bir dik üçgen oluşturmaz."
+        ]
+      },
+      {
+        "h2": "Ek Çözümlü Örnekler",
+        "paragraphs": [
+          "Farklı üçgenlerle pratik yapmak güven oluşturmaya yardımcı olur. Aşağıda, yaygın Pisagor üçlüleri ve ondalık değerleri kullanan üç çözümlü örnek daha verilmiştir."
+        ],
+        "listTitle": "Örnek 1 — 5-12-13 üçgeni:",
+        "listItems": [
+          "Verilen: a = 5, b = 12, c = 13",
+          "P = 5 + 12 + 13 = 30 birim",
+          "Doğrulama: 5² + 12² = 25 + 144 = 169 = 13² ✓"
+        ]
+      },
+      {
+        "h2": "Örnek 2 — 8-15-17 Üçgeni",
+        "paragraphs": [
+          "Verilen: a = 8, b = 15, c = 17. Bu, tüm kenarların tam sayı olduğu başka bir Pisagor üçlüsüdür."
+        ],
+        "listItems": [
+          "P = 8 + 15 + 17 = 40 birim",
+          "Doğrulama: 8² + 15² = 64 + 225 = 289 = 17² ✓",
+          "Bu üçlü, 40 birimlik çit veya pervaz uzunluklarına ihtiyaç duyulan inşaat yerleşimlerinde kullanışlıdır."
+        ]
+      },
+      {
+        "h2": "Örnek 3 — Ondalık Kenarlar",
+        "paragraphs": [
+          "Tüm dik üçgenlerin düzgün tam sayı kenarları yoktur. Verilen: a = 2.5, b = 6, c = 6.5."
+        ],
+        "listItems": [
+          "P = 2.5 + 6 + 6.5 = 15 birim",
+          "Doğrulama: 2.5² + 6² = 6.25 + 36 = 42.25 = 6.5² ✓",
+          "Ondalık değerler aynı şekilde çalışır — bunları doğrudan toplayın."
+        ]
+      },
+      {
+        "h2": "Çevre ve Alan: Fark Nedir?",
+        "paragraphs": [
+          "Çevre ve alanın her ikisi de bir üçgeni tanımlar, ancak farklı şeyleri ölçerler. Çevre dış çevrenin toplam kenar uzunluğunu ölçerken (doğrusal bir ölçüm), alan üçgenin içindeki kapalı alanı ölçer (kare bir ölçüm).",
+          "a ve b dik kenarlarına ve c hipotenüsüne sahip bir dik üçgen için iki formül şunlardır: Çevre için P = a + b + c ve alan için A = (a × b) / 2. Alan formülünün yalnızca iki dik kenarı (çünkü birbirlerine diktirler) kullandığına, çevre formülünün ise üç kenarın hepsini kullandığına dikkat edin.",
+          "Yaygın bir hata bu ikisini karıştırmaktır. Eğer bir problem üçgen şeklindeki bir arsanın etrafındaki çitin mesafesini soruyorsa, çevreye ihtiyacınız vardır. Eğer yüzey kaplamasını soruyorsa (boyama veya fayans döşeme gibi), alana ihtiyacınız vardır."
+        ]
+      },
+      {
+        "h2": "Dik Üçgen Çevresinin Gerçek Dünya Uygulamaları",
+        "paragraphs": [
+          "Bir dik üçgenin çevresini bilmek birçok pratik durumda gereklidir. Dik açılı üçgen şeklinde bir nesnenin kenarları etrafında dolaşan malzemeyi ne zaman ölçmeniz, kesmeniz veya satın almanız gerekse, çevre size tam olarak ne kadar malzemenin gerekli olduğunu söyler."
+        ],
+        "listTitle": "Yaygın gerçek dünya kullanımları:",
+        "listItems": [
+          "Çit çekme — Üçgen bir bahçe yatağı veya köşe arsa, üç tarafın etrafına çit gerektirir. Çevre size kaç doğrusal feet çit alacağınızı söyler.",
+          "Pervaz ve kalıp — Üçgen bir mimari özellik (üçgen bir alınlık gibi), kenarları boyunca pervaz gerektirir. Çevre toplam pervaz uzunluğunu verir.",
+          "Tel ve halat — Dik açılı bir ekranı, afişi veya yelkeni çerçevelemek çevreye eşit halat, tel veya kenar gerektirir.",
+          "Koşu ve yürüyüş yolları — Dik açılı bir park alanının etrafındaki üçgen bir koşu parkuru veya yürüyüş yolu çevreye eşit bir toplam mesafeye sahiptir.",
+          "İnşaat yerleşimi — İnşaatçılar bir köşenin kare olup olmadığını kontrol etmek için 3-4-5 kuralını kullanırlar. Çevreyi bilmek ölçümleri doğrulamaya yardımcı olur.",
+          "El sanatları ve dikiş — Üçgen bir yastık veya flamaya etrafında bağlama, biye veya dantel çevre uzunluğunda malzeme gerektirir.",
+          "Harita ve anket hesaplamaları — Haritacılar üçgen arazi parsellerini ölçer ve sınır tanımlamaları ve mülk kayıtları için çevreye ihtiyaç duyarlar."
+        ]
+      },
+      {
+        "h2": "Çevre ve Yarıçevre Arasındaki İlişki",
+        "paragraphs": [
+          "Yarıçevre (s), çevrenin tam yarısıdır: s = P / 2 = (a + b + c) / 2. Çevre size toplam sınır uzunluğunu verirken, yarıçevre daha gelişmiş formüllerde kullanılan kolaylık sağlayan bir değerdir.",
+          "Yarıçevre, üçgen alanı için Heron formülünde görünür: A = √[s(s–a)(s–b)(s–c)]. Ayrıca iç teğet çemberin yarıçapını (içyarıçap) hesaplamak için de kullanılır: r = A / s. Dolayısıyla çevre, birkaç önemli üçgen hesaplamasının başlangıç noktasıdır.",
+          "Çevreyi bu aracı kullanarak zaten hesapladıysanız, yarıçevreyi sonucu sadece 2'ye bölerek bulabilir veya özel yarıçevre hesaplayıcımızı kullanabilirsiniz."
+        ]
+      },
+      {
+        "h2": "Birim Dönüştürme İpuçları",
+        "paragraphs": [
+          "Çevre sonucu sadece her üç giriş kenarı da aynı birimi kullandığında anlamlıdır. Ölçümleriniz farklı birimlerdeyse, önce onları dönüştürün. Hesaplayıcı, dönüşümleri otomatik olarak işlemek için her giriş alanında bir birim seçici içerir.",
+          "Çevrenin doğrusal bir ölçüm olduğunu unutmayın, bu nedenle dönüşümler standart uzunluk oranlarını takip eder - alan oranlarını değil. Örneğin, feet'ten metreye dönüştürmek için 0.3048 ile çarpın (0.3048² ile değil)."
+        ],
+        "listTitle": "Hızlı dönüştürme hatırlatıcıları:",
+        "listItems": [
+          "1 in = 2.54 cm",
+          "1 ft = 12 in = 0.3048 m",
+          "1 yd = 3 ft = 0.9144 m",
+          "1 m = 100 cm = 3.2808 ft",
+          "1 km = 1000 m = 0.6214 mi",
+          "1 mi = 5280 ft = 1.6093 km"
+        ]
+      },
+      {
+        "h2": "Çevreyi Hesaplarken Yapılan Yaygın Hatalar",
+        "paragraphs": [
+          "Çevre formülü basittir, ancak hatalar yine de olur. Çoğu hata, yanlış aritmetikten ziyade yanlış girişlerden kaynaklanır. Hesaplama yapmadan önce bu sorunları yakalamak zaman kazandırır ve yanlış cevapları önler."
+        ],
+        "listTitle": "Bu tuzaklara dikkat edin:",
+        "listItems": [
+          "Yalnızca iki kenar kullanmak — Çevre için üç kenar da gereklidir. Hipotenüsü veya bir dik kenarı unutmak eksik bir cevap verir.",
+          "Birimleri karıştırmak — Eğer a dik kenarı inç cinsinden ve b dik kenarı santimetre cinsinden ise toplamın hiçbir anlamı yoktur. Önce tek bir birime dönüştürün.",
+          "Çevreyi alanla karıştırmak — Çevre bir uzunluktur (birim cinsinden ölçülür), alan ise bir yüzeydir (birimkare cinsinden ölçülür). Problemin hangisini sorduğunu bildiğinizden emin olun.",
+          "Bir dik üçgen oluşturmayan kenarları kullanmak — a² + b² = c² olduğunu kontrol edin. Bu denklem geçerli değilse, üçgen bir dik üçgen değildir ve c gerçek bir hipotenüs değildir.",
+          "Çok erken yuvarlamak — Eğer bir kenar irrasyonel ise (örneğin √2), yuvarlama hatalarının birikmesini önlemek için son toplamaya kadar tam hassasiyeti koruyun.",
+          "Hipotenüsü bir dik kenar olarak girmek — Hipotenüs en uzun kenar olmalıdır. Hipotenüs alanına daha kısa bir değer yerleştirirseniz, diyagram yanlış görünecek ve Pisagor kontrolü başarısız olacaktır."
+        ]
+      },
+      {
+        "h2": "Bir Dik Üçgenin Çevre Özellikleri",
+        "paragraphs": [
+          "Dik üçgenler, onları diğer üçgenlerden ayıran özel çevre özelliklerine sahiptir. Bu özellikleri anlamak, hesaplamalarınızı doğrulamanıza ve hataları yakalamanıza yardımcı olabilir.",
+          "Herhangi bir dik üçgende c hipotenüsü her zaman iki dik kenarın (a + b) toplamından küçük, ancak tek başına her iki dik kenardan da büyüktür. Bu, P çevresinin her zaman 2c'den büyük (çünkü a + b > c) ve 2a + 2b'ye eşit olan 2(a + b)'den küçük olduğu anlamına gelir."
+        ],
+        "listTitle": "Önemli çevre özellikleri:",
+        "listItems": [
+          "P, diğer iki kenar ek uzunluk kattığı için her zaman 2 × (en uzun kenar) değerinden büyüktür.",
+          "P her zaman 3 × (en uzun kenar) değerinden küçüktür çünkü c > a ve c > b, yani a + b < 2c'dir.",
+          "k uzunluklu dik kenarları olan bir 45-45-90 üçgeni için, P = k + k + k√2 = k(2 + √2) ≈ 3.414k.",
+          "En kısa dik kenarı k olan bir 30-60-90 üçgeni için, P = k + k√3 + 2k = k(3 + √3) ≈ 4.732k.",
+          "Aynı hipotenüse sahip tüm dik üçgenler arasında, ikizkenar dik üçgen (45-45-90) en büyük çevreye sahiptir."
+        ]
+      }
+    ],
+    "relatedLinks": [
+      { "href": "/right-triangle-measurements-calculator/", "label": "Dik Üçgen Ölçümleri Hesaplayıcı" },
+      { "href": "/right-triangle-semiperimeter-calculator/", "label": "Dik Üçgen Yarıçevre Hesaplayıcı" },
+      { "href": "/right-triangle-side-calculator/", "label": "Dik Üçgen Kenar Hesaplayıcı" },
+      { "href": "/right-triangle-area-calculator/", "label": "Dik Üçgen Alan Hesaplayıcı" },
+      { "href": "/pythagorean-theorem-calculator/", "label": "Pisagor Teoremi Hesaplayıcı" }
+    ],
+    "faqs": [
+      {
+        "question": "Bir dik üçgenin çevresinin formülü nedir?",
+        "answer": "Çevre formülü P = a + b + c'dir, burada a ve b iki dik kenar (90° açıyı oluşturan kenarlar) ve c hipotenüstür (dik açının karşısındaki en uzun kenar). Üç kenar uzunluğunu da basitçe birbiriyle toplayın."
+      },
+      {
+        "question": "P = a + b + c formülündeki her değişkenin anlamı nedir?",
+        "answer": "P, çevredir (toplam sınır uzunluğu). a, dik üçgenin bir dik kenarıdır. b, diğer dik kenardır. c ise hipotenüstür — dik açının karşısında yer alan en uzun kenar. İki dik kenar 90° köşeyi oluşturur."
+      },
+      {
+        "question": "Çevreyi sadece iki kenarla bulabilir miyim?",
+        "answer": "Evet, ancak önce eksik üçüncü kenarı Pisagor teoremini kullanarak hesaplamalısınız: Eğer hipotenüs eksikse c = √(a² + b²) veya eksik dik kenar = √(c² – bilinen dik kenar²). Ardından çevreyi elde etmek için üç kenarı da toplayın."
+      },
+      {
+        "question": "Çevre alanla aynı mıdır?",
+        "answer": "Hayır. Çevre (P = a + b + c) üçgenin etrafındaki toplam mesafeyi doğrusal birimlerle (cm, m, ft) ölçer. Alan (A = a×b/2) ise üçgenin içindeki kapalı alanı birimkarelerle (cm², m², ft²) ölçer. Bunlar temelde farklı ölçümlerdir."
+      },
+      {
+        "question": "Üç kenarın da aynı birimde olması gerekiyor mu?",
+        "answer": "Evet. Üç kenar da toplanmadan önce aynı birimde ifade edilmelidir. Bir kenar inç, diğeri santimetre cinsindense, önce onları ortak bir birime dönüştürün. Hesaplayıcı, bunu otomatik olarak halletmek için her girişte birim seçicileri içerir."
+      },
+      {
+        "question": "Bir 3-4-5 dik üçgeninin çevresi nedir?",
+        "answer": "Çevre 3 + 4 + 5 = 12 birimdir. 3-4-5 üçgeni, tamsayı kenarlı en küçük Pisagor üçlüsüdür. Ölçeklendirilmiş herhangi bir versiyonu (6-8-10 veya 9-12-15 gibi), aynı oranı orantılı olarak ölçeklenen çevreyle korur."
+      },
+      {
+        "question": "Üçgenimin gerçekten bir dik üçgen olduğunu nasıl doğrularım?",
+        "answer": "a² + b² = c² olduğunu kontrol edin, burada c en uzun kenardır. Eğer bu denklem geçerliyse, üçgen 90°'lik bir açıya sahiptir ve bir dik üçgendir. Eğer geçerli değilse, çevre formülü hala çalışır ancak üçgen dik açılı değildir."
+      },
+      {
+        "question": "Çevre ve yarıçevre arasındaki ilişki nedir?",
+        "answer": "Yarıçevre, çevrenin tam yarısıdır: s = P/2. Eğer çevre P = 12 ise yarıçevre s = 6'dır. Yarıçevre, Heron formülünde ve içyarıçap hesaplamalarında kullanılır."
+      },
+      {
+        "question": "Bir dik üçgenin çevresi tek sayı olabilir mi?",
+        "answer": "Evet. Çevre herhangi bir pozitif sayı olabilir — tam sayı, ondalık veya irrasyonel. Örneğin, 1 ve 1 dik kenarlarına sahip bir dik üçgenin hipotenüsü √2 ≈ 1.414'tür, bu da ne tam sayı ne de rasyonel olan ≈ 3.414'lük bir çevre verir."
+      },
+      {
+        "question": "Neden hipotenüs her zaman en uzun kenardır?",
+        "answer": "Bir dik üçgende, hipotenüs en büyük açının (90°) karşısındadır. Geometride temel bir kural, en uzun kenarın her zaman en büyük açının karşısında olmasıdır. Bir üçgende hiçbir açı dik açıyı aşamayacağından c her zaman en uzun kenardır."
+      }
+    ]
+  },
+  {
+    "slug": "right-triangle-semiperimeter-calculator",
+    "url": "/right-triangle-semiperimeter-calculator/",
+    "h1": "Dik Üçgen Yarıçevre Hesaplayıcı",
+    "metaTitle": "Dik Üçgen Yarıçevre Hesaplayıcı | a, b ve c'den s'yi Bulun",
+    "metaDescription": "a dik kenarı, b dik kenarı ve c hipotenüsünden dik üçgen yarıçevresi s'yi hesaplayın. Formül, diyagram, adım adım çözüm, örnekler, kullanımlar ve hata kontrolleri içerir.",
+    "formulaSlug": "semiperimeter",
+    "toolPurpose": "Üç kenar uzunluğundan bir dik üçgenin yarıçevresi s'yi bulun, ardından bunu alan, içyarıçap ve çevrenin yarısına bağlı olan geometri formülleri için temiz bir kontrol noktası olarak kullanın.",
+    "intro": "Dik üçgen yarıçevresi s'yi hesaplamak için a dik kenarını, b dik kenarını ve c hipotenüsünü girin.",
+    "quickSummary": {
+      "h2": "Bu Yarıçevre Hesaplayıcı Ne Çözer",
+      "intro": "Bir dik üçgen için yarı çevre değeri s'ye ihtiyacınız olduğunda bu sayfayı kullanın. Heron tipi alan formülleri, içyarıçap formülleri veya s'ye atıfta bulunan geometri özdeşliklerini kullanmadan önce özellikle yararlıdır.",
+      "cards": [
+        { "label": "Bilinen değerler", "value": "a dik kenarı, b dik kenarı ve c hipotenüsü" },
+        { "label": "Bulunan", "value": "Yarıçevre s, P'nin tam yarısı" },
+        { "label": "Ana formül", "value": "s = (a + b + c) / 2" },
+        { "label": "En uygun olduğu yerler", "value": "Heron kontrolleri, içyarıçap hesapları, geometri ispatları ve kompakt üçgen gösterimi" }
+      ]
+    },
+    "calculator": {
+      "outputLabel": "Yarıçevre s",
+      "fields": [
+        { "key": "a", "label": "a dik kenarı", "min": 0 },
+        { "key": "b", "label": "b dik kenarı", "min": 0 },
+        { "key": "c", "label": "c hipotenüsü", "min": 0 }
+      ]
+    },
+    "diagram": {
+      "h2": "Dik Üçgen Diyagramı: Yarıçevre Sınırın Yarısıdır",
+      "intro": "Diyagram, çevre için kullanılan aynı üç kenar uzunluğunu gösterir, ancak sonuç 2'ye bölünür. Yarıçevre hala iç alana değil, üçgenin dış kenarına dayanmaktadır.",
+      "caption": "a kenarını, b kenarını, c hipotenüsünü ve s = (a + b + c) / 2 formülünü gösteren dik üçgen yarıçevre diyagramı.",
+      "formulaLabel": "s = (a + b + c) / 2",
+      "keyLabel": "Diyagram Anahtarı",
+      "sides": {
+        "a": {
+          "label": "a = birinci dik kenar",
+          "description": "a dik kenarı, ikiye bölünmeden önce toplama dahil edilen iki dik kenardan biridir."
+        },
+        "b": {
+          "label": "b = ikinci dik kenar",
+          "description": "b dik kenarı a ile dik açıyı oluşturur ve hem çevreye hem de yarıçevreye katkıda bulunur."
+        },
+        "c": {
+          "label": "c = hipotenüs",
+          "description": "c hipotenüsü en uzun kenardır ve toplam yarıya indirilmeden önce dahil edilmelidir."
+        }
+      },
+      "result": {
+        "label": "s = sınır toplamının yarısı",
+        "description": "Hesaplayıcı önce a + b + c'yi toplar, ardından bu çevreyi 2'ye böler."
+      },
+      "notes": [
+        "Yarıçevre doğrusal bir ölçümdür, bu nedenle kenar uzunluklarıyla aynı birimi kullanır.",
+        "Eğer P zaten biliniyorsa, s = P / 2 kullanın; P bilinmiyorsa s = (a + b + c) / 2 kullanın.",
+        "Geçerli bir dik üçgen için, c en uzun kenar olmalı ve a^2 + b^2 = c^2 koşulunu sağlamalıdır."
+      ]
+    },
+    "formulaSection": {
+      "h2": "Dik Üçgen Yarıçevre Formülü",
+      "paragraphs": [
+        "Bir üçgenin yarıçevresi, çevresinin yarısıdır. Bir dik üçgen için çevre P = a + b + c'dir, bu nedenle yarıçevre s = (a + b + c) / 2'dir.",
+        "s harfi yaygın olarak kullanılır çünkü yarıçevre birçok kompakt geometri formülünde görünür. Üçgen dik açılı olsa bile, s; kenar uzunlukları, alan ve içyarıçap gibi çember ölçümleri arasında bir köprü olarak yararlıdır.",
+        "Çevre gibi yarıçevre de doğrusal birimlerle ölçülür. Eğer kenarlar metre cinsindense, s metre cinsindendir. Kenarlar inç cinsindense, s inç cinsindendir."
+      ],
+      "formulas": [
+        "P = a + b + c",
+        "s = \\frac{P}{2}",
+        "s = \\frac{a + b + c}{2}"
+      ]
+    },
+    "howTo": {
+      "h2": "Bir Dik Üçgenin Yarıçevresi Nasıl Bulunur",
+      "steps": [
+        "Dik üçgenin iki dik kenarını belirleyin. Bunlar 90 derecelik açıda buluşan kenarlardır.",
+        "c hipotenüsünü belirleyin. En uzun kenardır ve dik açının karşısında oturur.",
+        "a, b ve c'nin hepsinin aynı ölçüm birimini kullandığından emin olun.",
+        "a dik kenarını, b dik kenarını ve c hipotenüsünü hesaplayıcıya girin.",
+        "Üç kenarı toplayıp toplamı 2'ye bölmek için Hesapla'ya tıklayın.",
+        "Görüntülenen adımları kontrol edin. Hesaplayıcı önce çevre toplamını, ardından yarıçevre sonucunu göstermelidir.",
+        "İçyarıçap veya Heron tarzı alan ilişkileri gibi yarıçevre isteyen herhangi bir sonraki formülde s'yi kullanın."
+      ]
+    },
+    "example": {
+      "h2": "Çözümlü Örnek: 3-4-5 Dik Üçgeninin Yarıçevresini Bulma",
+      "intro": "a = 3, b = 4 ve c = 5 verildiğinde, çevreyi elde etmek için önce üç kenarı toplayın, ardından 2'ye bölün:",
+      "lines": [
+        "s = \\frac{a + b + c}{2}",
+        "s = \\frac{3 + 4 + 5}{2}",
+        "s = \\frac{12}{2}",
+        "s = 6"
+      ],
+      "answer": "Yarıçevre 6 birimdir. Tam çevre 12 birimdir ve s bu toplamın tam olarak yarısıdır."
+    },
+    "extraSections": [
+      {
+        "h2": "Yarıçevre Ne Anlama Geliyor?",
+        "paragraphs": [
+          "Yarıçevre kelimenin tam anlamıyla çevrenin yarısı demektir. Geometri, daha uzun formüllerde (a + b + c) / 2'yi tekrar tekrar yazmak yerine genellikle daha kısa olan s sembolünü kullanır.",
+          "Bir dik üçgen için bu değer özellikle uygundur çünkü kenar etiketleri zaten standartlaştırılmıştır: a ve b dik kenarlardır ve c hipotenüstür. Bu üç kenar uzunluğu bilindiğinde s, sınır uzunluğunun yarısını özetleyen tek bir kompakt sayıdır."
+        ]
+      },
+      {
+        "h2": "Yarıçevre vs. Çevre",
+        "paragraphs": [
+          "Çevre P, üçgenin dışı etrafındaki tam mesafeyi ölçer. Yarıçevre s, bu mesafenin yarısını ölçer. İki değer doğrudan bağlantılıdır: s = P / 2 ve P = 2s.",
+          "Bir problem pervaz, çit çekme veya kenar mesafesi gibi toplam sınır uzunluğunu sorduğunda çevreyi kullanın. Bir formül özellikle s'yi sorduğunda veya alan ve yarıçap ilişkileri için değerler hazırladığınızda yarıçevreyi kullanın."
+        ],
+        "listTitle": "Hızlı karşılaştırma:",
+        "listItems": [
+          "Çevre: P = a + b + c",
+          "Yarıçevre: s = (a + b + c) / 2",
+          "Eğer P = 30 ise, s = 15",
+          "Eğer s = 15 ise, P = 30"
+        ]
+      },
+      {
+        "h2": "Yarıçevre Neden Dik Üçgen Geometrisinde Önemlidir",
+        "paragraphs": [
+          "Yarıçevre bir kısayoldan daha fazlasıdır. Kenar uzunluklarını alana ve daire ölçümlerine bağlayan formüllerde kullanılan standart bir yardımcı değerdir.",
+          "Herhangi bir üçgen için Heron formülü üç kenardan alanı hesaplamak için s'yi kullanır: A = sqrt(s(s-a)(s-b)(s-c)). Bir dik üçgen için genellikle A = (a x b) / 2 kullanırsınız, ancak Heron formülü doğrulama için hala faydalıdır.",
+          "Yarıçevre ayrıca içyarıçapa da bağlanır. Çoğu üçgen formülünde alan, içyarıçap ile yarıçevrenin çarpımına eşittir: A = r x s. s bilindiğinde r'yi çözmek veya bir içyarıçap sonucunu doğrulamak kolaylaşır."
+        ],
+        "listTitle": "s kullanan yaygın formüller:",
+        "listItems": [
+          "Heron tipi alan: A = sqrt(s(s-a)(s-b)(s-c))",
+          "Alan-içyarıçap ilişkisi: A = r x s",
+          "İçyarıçap düzenlemesi: r = A / s",
+          "Çevre bulma: P = 2s"
+        ]
+      },
+      {
+        "h2": "Ek Yarıçevre Örnekleri",
+        "paragraphs": [
+          "Bu örnekler aynı formülün tam sayı üçlüleri ve ondalık kenar uzunlukları için nasıl çalıştığını gösterir. Anahtar, bölmeden önce üç kenarı da toplamaktır."
+        ],
+        "listTitle": "Örnek 1 - 5-12-13 üçgeni:",
+        "listItems": [
+          "Verilen: a = 5, b = 12, c = 13",
+          "s = (5 + 12 + 13) / 2",
+          "s = 30 / 2 = 15 birim"
+        ]
+      },
+      {
+        "h2": "Örnek 2 - 8-15-17 Üçgeni",
+        "paragraphs": [
+          "a = 8, b = 15 ve c = 17 için tam çevre 40 birimdir."
+        ],
+        "listItems": [
+          "s = (8 + 15 + 17) / 2",
+          "s = 40 / 2",
+          "s = 20 birim"
+        ]
+      },
+      {
+        "h2": "Örnek 3 - Ondalık Kenar Uzunlukları",
+        "paragraphs": [
+          "Ondalık sayılar tam sayılarla aynı şekilde çalışır. Verilen a = 2.5, b = 6 ve c = 6.5:"
+        ],
+        "listItems": [
+          "s = (2.5 + 6 + 6.5) / 2",
+          "s = 15 / 2",
+          "s = 7.5 birim"
+        ]
+      },
+      {
+        "h2": "Bu Yarıçevre Hesaplayıcı Ne Zaman Kullanılır",
+        "paragraphs": [
+          "Bir geometri problemi her üç dik üçgen kenar uzunluğunu verip s, yarı çevre veya yarıçevreye bağlı bir formül istediğinde bu hesaplayıcıyı kullanın.",
+          "Eksik bir kenarı çözdükten sonra hızlı bir kontrol olarak da yararlıdır. a, b ve c'yi öğrendikten sonra yarıçevre basit ve kesin olmalıdır: kenarları toplayın, ardından 2'ye bölün."
+        ],
+        "listTitle": "İyi kullanım örnekleri şunları içerir:",
+        "listItems": [
+          "Üç kenar uzunluğundan Heron formülü girdilerini hazırlamak.",
+          "r = A / s ile içyarıçap hesaplamalarını kontrol etmek.",
+          "Geometri ödevlerinde veya ispatlarında tekrarlanan aritmetiği azaltmak.",
+          "Yarı sınır değerlerini kullanarak üçgen boyutlarını karşılaştırmak.",
+          "Çevre ve yarıçevre sonuçlarının eşleştiğini doğrulamak: P her zaman 2s'ye eşit olmalıdır."
+        ]
+      },
+      {
+        "h2": "Yarıçevre için Birim İpuçları",
+        "paragraphs": [
+          "Yarıçevre bir uzunluktur, bu nedenle sıradan uzunluk birimi dönüştürme kurallarını takip eder. Birimkare cinsinden ölçülmez.",
+          "Kenar girişleri farklı birimler kullanıyorsa, önce bunları dönüştürün veya hesaplayıcının birim seçicilerini tutarlı bir şekilde kullanın. Feet, inç ve santimetreleri doğrudan eklemek anlamsız bir sonuç üretecektir."
+        ],
+        "listTitle": "Bu birim kurallarını aklınızda bulundurun:",
+        "listItems": [
+          "Sonuçları karşılaştırmadan önce tüm kenar uzunlukları aynı birim sistemini temsil etmelidir.",
+          "Çıktı s, cm, m, in veya ft gibi doğrusal bir birim kullanır.",
+          "Yarıçevreyi hesaplarken birimlerin karesini almayın.",
+          "Hesapladıktan sonra kenarları dönüştürürseniz, s'yi aynı doğrusal dönüşüm faktörü ile dönüştürün."
+        ]
+      },
+      {
+        "h2": "Yaygın Yarıçevre Hataları",
+        "paragraphs": [
+          "Çoğu yarıçevre hatası formül basit göründüğü için olur. Aritmetik kolaydır, ancak kurulum hala önemlidir."
+        ],
+        "listTitle": "Bu hatalara dikkat edin:",
+        "listItems": [
+          "Kenarları topladıktan sonra 2'ye bölmeyi unutmak.",
+          "Önce her kenarı 2'ye bölüp, ardından toplamın takibini kaybetmek.",
+          "Yalnızca iki dik kenarı kullanıp hipotenüsü dışarıda bırakmak.",
+          "s'yi çevre P ile karıştırmak. P = 2s olduğunu unutmayın.",
+          "Bir dik üçgen oluşturmayan kenar uzunlukları kullanmak.",
+          "Aynı hesaplamada farklı birimleri karıştırmak."
+        ]
+      },
+      {
+        "h2": "Yarıçevre Alan ve İçyarıçapa Nasıl Bağlanır",
+        "paragraphs": [
+          "Bir dik üçgende alan, dik kenarlar birbirine dik olduğu için doğrudan A = (a x b) / 2 ile hesaplanabilir. Alan ve yarıçevre bilindiğinde, içyarıçap r = A / s ile kontrol edilebilir.",
+          "Bu, yarıçevreyi yararlı bir orta değer yapar. Alan formülünün yerini almaz, ancak kenar uzunluklarını üçgenin içindeki daire ölçümlerine bağlamaya yardımcı olur."
+        ],
+        "listTitle": "3-4-5 üçgeni ile örnek:",
+        "listItems": [
+          "Alan: A = (3 x 4) / 2 = 6",
+          "Yarıçevre: s = (3 + 4 + 5) / 2 = 6",
+          "İçyarıçap kontrolü: r = A / s = 6 / 6 = 1"
+        ]
+      }
+    ],
+    "relatedLinks": [
+      { "href": "/right-triangle-measurements-calculator/", "label": "Dik Üçgen Ölçümleri Hesaplayıcı" },
+      { "href": "/right-triangle-perimeter-calculator/", "label": "Dik Üçgen Çevre Hesaplayıcı" },
+      { "href": "/right-triangle-area-calculator/", "label": "Dik Üçgen Alan Hesaplayıcı" },
+      { "href": "/right-triangle-radius-calculator/", "label": "Dik Üçgen Yarıçap Hesaplayıcı" },
+      { "href": "/pythagorean-theorem-calculator/", "label": "Pisagor Teoremi Hesaplayıcı" }
+    ],
+    "faqs": [
+      {
+        "question": "Dik üçgen yarıçevresinin formülü nedir?",
+        "answer": "Formül s = (a + b + c) / 2'dir, burada a ve b dik üçgenin dik kenarlarıdır ve c hipotenüstür. Üç kenar uzunluğunu da toplayın, ardından toplamı 2'ye bölün."
+      },
+      {
+        "question": "Yarıçevre ne anlama geliyor?",
+        "answer": "Yarıçevre, üçgenin çevresinin yarısı anlamına gelir. Tam çevre P ise, s = P / 2'dir. Eğer kenar uzunlukları doğrudan biliniyorsa, s = (a + b + c) / 2'dir."
+      },
+      {
+        "question": "Yarıçevre çevreyle aynı mıdır?",
+        "answer": "Hayır. Çevre, üçgenin etrafındaki tam sınır uzunluğudur, yarıçevre ise bu sınır uzunluğunun yarısıdır. P = 2s ile ilişkilidirler."
+      },
+      {
+        "question": "Yarıçevre neden kullanılır?",
+        "answer": "Yarıçevre kullanılır çünkü daha uzun formülleri yazmayı ve hesaplamayı kolaylaştırır. Heron formülünde, A = r x s alan-içyarıçap ilişkisinde ve r = A / s içyarıçap düzenlemesinde görünür."
+      },
+      {
+        "question": "Üç kenara da ihtiyacım var mı?",
+        "answer": "Evet. Yarıçevreyi doğrudan hesaplamak için a dik kenarına, b dik kenarına ve c hipotenüsüne ihtiyacınız var. Eğer bir kenar eksikse, onu önce Pisagor teoremi ile çözün, ardından s'yi hesaplayın."
+      },
+      {
+        "question": "Bir 3-4-5 dik üçgeninin yarıçevresi nedir?",
+        "answer": "Bir 3-4-5 dik üçgeni için, s = (3 + 4 + 5) / 2 = 12 / 2 = 6 birimdir."
+      },
+      {
+        "question": "Yarıçevre birimkare mi kullanır?",
+        "answer": "Hayır. Yarıçevre bir uzunluktur, bu nedenle cm, m, in veya ft gibi doğrusal birimler kullanır. Alan birimkare kullanır, ancak yarıçevre kullanmaz."
+      },
+      {
+        "question": "Yarıçevre cevabımın doğru olduğunu nasıl kontrol edebilirim?",
+        "answer": "Yarıçevreyi ikiye katlayın. Sonuç tam çevreye eşit olmalıdır. Örneğin, eğer s = 15 ise, P 30 olmalıdır."
+      }
+    ]
+  }
+]

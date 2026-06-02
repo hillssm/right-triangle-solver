@@ -1,0 +1,640 @@
+[
+  {
+    "slug": "right-triangle-perimeter-calculator",
+    "url": "/right-triangle-perimeter-calculator/",
+    "h1": "Rechner für den Umfang eines rechten Dreiecks",
+    "metaTitle": "Rechner für den Umfang eines rechten Dreiecks | Finden Sie sofort den Umfang eines rechtwinkligen Dreiecks",
+    "metaDescription": "Berechnen Sie den Umfang eines rechtwinkligen Dreiecks aus Schenkel a, Schenkel b und Hypotenuse c. Enthält Formel, Schritt-für-Schritt-Lösung, Diagramm, ausgearbeitete Beispiele und reale Anwendungen.",
+    "formulaSlug": "perimeter",
+    "toolPurpose": "Geben Sie alle drei Seiten eines rechtwinkligen Dreiecks ein, um sofort die Gesamtentfernung um das Dreieck herum zu berechnen. Der Rechner zeigt die Formel, die schrittweise Arbeit und ein Live-Diagramm an, sodass Sie jeden Wert überprüfen können, bevor Sie das Ergebnis verwenden.",
+    "intro": "Geben Sie Schenkel a, Schenkel b und Hypotenuse c ein, um den Gesamtumfang eines rechtwinkligen Dreiecks zu berechnen.",
+    "quickSummary": {
+      "h2": "Was dieser Perimeterrechner löst",
+      "intro": "Verwenden Sie diese Seite, wenn Sie bereits alle drei Seitenlängen eines rechtwinkligen Dreiecks kennen und die gesamte Grenzlänge benötigen. Es ist für schnelle Arithmetik, einheitenbewusste Eingaben und einfache visuelle Überprüfung konzipiert.",
+      "cards": [
+        {
+          "label": "Bekannte Werte",
+          "value": "Bein a, Bein b und Hypotenuse c"
+        },
+        {
+          "label": "Funde",
+          "value": "Umfang P, die Gesamtstrecke um das Dreieck"
+        },
+        {
+          "label": "Hauptformel",
+          "value": "P = a + b + c"
+        },
+        {
+          "label": "Am besten für",
+          "value": "Zäune, Beschnitt, Layoutprüfungen, Geometrie-Hausaufgaben und Kantenlängenplanung"
+        }
+      ]
+    },
+    "calculator": {
+      "outputLabel": "Umfang P",
+      "fields": [
+        {
+          "key": "a",
+          "label": "Bein a",
+          "min": 0
+        },
+        {
+          "key": "b",
+          "label": "Bein b",
+          "min": 0
+        },
+        {
+          "key": "c",
+          "label": "Hypotenuse c",
+          "min": 0
+        }
+      ]
+    },
+    "diagram": {
+      "h2": "Diagramm eines rechtwinkligen Dreiecks: Der Umfang nutzt alle drei Seiten",
+      "intro": "Das Diagramm zeigt den vollständigen Außenpfad des rechtwinkligen Dreiecks. Der Umfang ist kein Innenmaß; es ist die Summe der beiden Katheten und der Hypotenuse.",
+      "caption": "Diagramm des Umfangs eines rechtwinkligen Dreiecks mit Seite a, Seite b, Hypotenuse c und der Formel P = a + b + c.",
+      "formulaLabel": "P = a + b + c",
+      "keyLabel": "Diagrammschlüssel",
+      "sides": {
+        "a": {
+          "label": "a = first leg",
+          "description": "Bein a ist eine Seite der 90-Grad-Ecke und wird einmal in den Umfang einbezogen."
+        },
+        "b": {
+          "label": "b = second leg",
+          "description": "Der Schenkel b ist die andere Seite des rechten Winkels und wird mit a und c addiert."
+        },
+        "c": {
+          "label": "c = hypotenuse",
+          "description": "Hypotenuse c ist die längste Seite gegenüber dem rechten Winkel und vervollständigt die Grenze."
+        }
+      },
+      "result": {
+        "label": "P = total boundary length",
+        "description": "Der Rechner addiert a + b + c und gibt den Umfang in der ausgewählten linearen Einheit zurück."
+      },
+      "notes": [
+        "Bevor Sie die Antwort vergleichen oder wiederverwenden, sollten alle drei Seiten dieselbe Einheit verwenden.",
+        "Wenn eine Seite fehlt, lösen Sie diese Seite zuerst mit dem Satz des Pythagoras und kehren Sie dann zum Umfang zurück.",
+        "Das Ergebnis des Umfangs ist eine Länge und keine quadratische Flächeneinheit."
+      ]
+    },
+    "formulaSection": {
+      "h2": "Formel für den Umfang eines rechten Dreiecks",
+      "paragraphs": [
+        "Der Umfang eines Polygons ist die Gesamtlänge seiner Grenze. Bei einem rechtwinkligen Dreieck besteht die Grenze aus genau drei geraden Seiten: zwei Schenkeln (a und b), die den 90°-Winkel bilden, und einer Hypotenuse (c), die sich vom rechten Winkel zum gegenüberliegenden Scheitelpunkt erstreckt.",
+        "Da ein rechtwinkliges Dreieck nur drei Seiten hat, ist die Umfangsformel die einfachste mögliche Summe. Es sind keine Trigonometrie, Quadratwurzeln oder Exponenten erforderlich – nur Addition."
+      ],
+      "formulas": [
+        "P = a + b + c"
+      ]
+    },
+    "howTo": {
+      "h2": "So finden Sie den Umfang eines rechtwinkligen Dreiecks",
+      "steps": [
+        "Identifizieren Sie alle drei Seiten des rechtwinkligen Dreiecks. Beschriften Sie die beiden kürzeren Seiten als Bein a und Bein b und die längste Seite als Hypotenuse c.",
+        "Stellen Sie sicher, dass alle drei Messungen dieselbe Einheit verwenden. Konvertieren Sie gegebenenfalls, bevor Sie Werte eingeben.",
+        "Geben Sie Bein a in das erste Eingabefeld des Rechners ein.",
+        "Geben Sie Bein b in das zweite Eingabefeld ein.",
+        "Geben Sie die Hypotenuse c in das dritte Eingabefeld ein.",
+        "Klicken Sie auf Berechnen. Der Rechner addiert die drei Werte und zeigt den Umfang P zusammen mit der schrittweisen Arbeit an.",
+        "Überprüfen Sie das Ergebnis im Diagramm, um visuell zu bestätigen, dass die Seitenlängen mit Ihrem Dreieck übereinstimmen."
+      ]
+    },
+    "example": {
+      "h2": "Arbeitsbeispiel: Ermitteln Sie den Umfang eines rechtwinkligen 3-4-5-Dreiecks",
+      "intro": "Das 3-4-5-Dreieck ist eines der häufigsten pythagoreischen Dreiecke. Gegeben sei a = 3, b = 4, c = 5:",
+      "lines": [
+        "P = a + b + c",
+        "P = 3 + 4 + 5",
+        "P = 12"
+      ],
+      "answer": "Der Umfang dieses rechtwinkligen Dreiecks beträgt 12 Einheiten. Da 3² + 4² = 9 + 16 = 25 = 5², erfüllen die Seiten den Satz des Pythagoras und bestätigen ein gültiges rechtwinkliges Dreieck."
+    },
+    "extraSections": [
+      {
+        "h2": "Was ist der Umfang eines rechtwinkligen Dreiecks?",
+        "paragraphs": [
+          "Der Umfang eines rechtwinkligen Dreiecks ist die Gesamtstrecke, die Sie zurücklegen würden, wenn Sie an allen drei Kanten des Dreiecks entlanggehen würden, beginnend an einem Scheitelpunkt und zurück zum gleichen Scheitelpunkt. Es stellt die äußere Grenze der Dreiecksform dar.",
+          "Jedes rechtwinklige Dreieck hat drei Seiten: zwei Schenkel, die sich im rechten Winkel (90°) treffen, und eine Hypotenuse gegenüber dem rechten Winkel. Die Hypotenuse ist immer die längste der drei Seiten. Wenn man die Längen aller drei Seiten addiert, erhält man den Umfang.",
+          "Der Umfang ist ein eindimensionales Maß, das in linearen Einheiten (z. B. Zentimeter, Meter, Fuß oder Zoll) ausgedrückt wird. Dies unterscheidet sich von der Fläche, die den zweidimensionalen Raum innerhalb des Dreiecks misst und in Quadrateinheiten ausgedrückt wird."
+        ]
+      },
+      {
+        "h2": "Die Seiten eines rechtwinkligen Dreiecks verstehen",
+        "paragraphs": [
+          "Bevor Sie den Umfang berechnen, ist es hilfreich, jede Seite des rechtwinkligen Dreiecks klar zu identifizieren. Eine falsche Beschriftung einer Seite ist die häufigste Fehlerquelle.",
+          "In der Standardbeschriftungskonvention werden die beiden Seiten, die den rechten Winkel bilden, als Beine bezeichnet. Die dem rechten Winkel gegenüberliegende Seite wird Hypotenuse genannt. Die Hypotenuse ist immer länger als jedes einzelne Bein, aber immer kürzer als die Summe der beiden Beine."
+        ],
+        "listTitle": "Die drei Seiten im Überblick:",
+        "listItems": [
+          "Bein a – Eine der beiden Seiten, die den 90°-Winkel bilden. Je nach Ausrichtung kann es sich um die vertikale oder horizontale Seite handeln.",
+          "Bein b – Die andere Seite, die den 90°-Winkel bildet. Zusammen mit dem Schenkel a definiert es den rechten Winkel.",
+          "Hypotenuse c – Die längste Seite, die sich von einem spitzen Winkelscheitelpunkt zum anderen erstreckt und dem rechten Winkel direkt gegenüberliegt.",
+          "Die pythagoräische Beziehung gilt: a² + b² = c². Dadurch können Sie überprüfen, ob Ihre drei Werte tatsächlich ein rechtwinkliges Dreieck bilden."
+        ]
+      },
+      {
+        "h2": "Wie die Umfangsformel abgeleitet wird",
+        "paragraphs": [
+          "Die Umfangsformel P = a + b + c ist eine direkte Anwendung der allgemeinen Polygonumfangsdefinition: Addieren Sie die Längen aller Seiten. Da ein Dreieck genau drei Seiten hat, ist der Umfang die Summe dreier Längen.",
+          "Es ist keine Ableitung oder Neuanordnung erforderlich, da es sich bei der Formel um den einfachsten möglichen Fall einer Umfangsmessung handelt. Allerdings wird die Formel interessanter, wenn nur zwei Seiten bekannt sind, da Sie den Satz des Pythagoras verwenden können, um die fehlende dritte Seite zu finden und dann den Umfang zu berechnen."
+        ]
+      },
+      {
+        "h2": "Finden des Umfangs, wenn eine Seite fehlt",
+        "paragraphs": [
+          "Wenn Sie nur zwei der drei Seiten eines rechtwinkligen Dreiecks kennen, können Sie trotzdem den Umfang ermitteln. Verwenden Sie den Satz des Pythagoras (a² + b² = c²), um zunächst die fehlende Seite zu berechnen, und addieren Sie dann alle drei, um den Umfang zu erhalten.",
+          "Mit diesem Ansatz können Sie mit den beiden häufigsten Szenarien arbeiten: Sie kennen beide Beine, aber nicht die Hypotenuse, oder Sie kennen die Hypotenuse und ein Bein, aber nicht das andere."
+        ],
+        "listTitle": "Formeln für jeden Fall der fehlenden Seite:",
+        "listItems": [
+          "Wenn c fehlt: c = √(a² + b²), dann P = a + b + √(a² + b²)",
+          "Wenn b fehlt: b = √(c² – a²), dann ist P = a + √(c² – a²) + c",
+          "Wenn a fehlt: a = √(c² – b²), dann ist P = √(c² – b²) + b + c",
+          "Stellen Sie immer sicher, dass c > a und c > b, wenn Sie die Subtraktionsform verwenden, andernfalls bilden die Werte kein gültiges rechtwinkliges Dreieck."
+        ]
+      },
+      {
+        "h2": "Zusätzliche Arbeitsbeispiele",
+        "paragraphs": [
+          "Das Üben mit verschiedenen Dreiecken hilft dabei, Selbstvertrauen aufzubauen. Nachfolgend finden Sie drei weitere Beispiele, bei denen übliche pythagoräische Tripel und Dezimalwerte verwendet werden."
+        ],
+        "listTitle": "Beispiel 1 – Das 5-12-13-Dreieck:",
+        "listItems": [
+          "Gegeben: a = 5, b = 12, c = 13",
+          "P = 5 + 12 + 13 = 30 units",
+          "Verifizierung: 5² + 12² = 25 + 144 = 169 = 13² ✓"
+        ]
+      },
+      {
+        "h2": "Beispiel 2 – Das 8-15-17-Dreieck",
+        "paragraphs": [
+          "Gegeben: a = 8, b = 15, c = 17. Dies ist ein weiteres pythagoräisches Tripel, bei dem alle Seiten ganze Zahlen sind."
+        ],
+        "listItems": [
+          "P = 8 + 15 + 17 = 40 units",
+          "Verifizierung: 8² + 15² = 64 + 225 = 289 = 17² ✓",
+          "Dieses Dreifach ist bei Bauplänen nützlich, bei denen Zaun- oder Trimmlängen von 40 Einheiten erforderlich sind."
+        ]
+      },
+      {
+        "h2": "Beispiel 3 – Dezimalseiten",
+        "paragraphs": [
+          "Nicht alle rechtwinkligen Dreiecke haben ordentliche ganzzahlige Seiten. Gegeben: a = 2,5, b = 6, c = 6,5."
+        ],
+        "listItems": [
+          "P = 2,5 + 6 + 6,5 = 15 Einheiten",
+          "Verifizierung: 2,5² + 6² = 6,25 + 36 = 42,25 = 6,5² ✓",
+          "Dezimalwerte funktionieren auf die gleiche Weise – addieren Sie sie einfach direkt."
+        ]
+      },
+      {
+        "h2": "Umfang vs. Fläche: Was ist der Unterschied?",
+        "paragraphs": [
+          "Umfang und Fläche beschreiben beide ein Dreieck, messen aber unterschiedliche Dinge. Der Umfang misst die gesamte Kantenlänge um die Außenseite (ein lineares Maß), während die Fläche den umschlossenen Raum innerhalb des Dreiecks misst (ein quadratisches Maß).",
+          "Für ein rechtwinkliges Dreieck mit den Schenkeln a und b und der Hypotenuse c lauten die beiden Formeln: P = a + b + c für den Umfang und A = (a × b) / 2 für die Fläche. Beachten Sie, dass die Flächenformel nur die beiden Schenkel verwendet (da diese senkrecht stehen), während die Umfangsformel alle drei Seiten verwendet.",
+          "Ein häufiger Fehler besteht darin, beides zu verwechseln. Wenn es um die Entfernung des Zauns um ein dreieckiges Grundstück geht, benötigen Sie den Umfang. Wenn es um die Oberflächenbedeckung (z. B. Streichen oder Fliesenlegen) geht, benötigen Sie die Fläche."
+        ]
+      },
+      {
+        "h2": "Reale Anwendungen des Umfangs eines rechtwinkligen Dreiecks",
+        "paragraphs": [
+          "In vielen praktischen Situationen ist es wichtig, den Umfang eines rechtwinkligen Dreiecks zu kennen. Wann immer Sie Material abmessen, schneiden oder kaufen müssen, das um die Kanten einer rechtwinkligen Dreiecksform herum verläuft, zeigt Ihnen der Umfang genau an, wie viel Material benötigt wird."
+        ],
+        "listTitle": "Häufige Anwendungen in der Praxis:",
+        "listItems": [
+          "Umzäunung – Ein dreieckiges Gartenbeet oder Eckgrundstück muss an allen drei Seiten eingezäunt werden. Der Umfang gibt an, wie viele Meter Zaun Sie kaufen müssen.",
+          "Beschneiden und Formen – Ein dreieckiges architektonisches Element (wie eine Giebelseite) muss an den Kanten beschnitten werden. Der Umfang gibt die gesamte Schnittlänge an.",
+          "Draht und Seil – Für die Umrahmung eines rechtwinkligen Displays, Banners oder Segels sind Seile, Drähte oder Kanten erforderlich, die dem Umfang entsprechen.",
+          "Jogging- und Spazierwege – Eine dreieckige Laufstrecke oder ein Spazierweg um einen rechtwinkligen Parkbereich herum hat eine Gesamtlänge, die dem Umfang entspricht.",
+          "Bauplan – Bauherren verwenden die 3-4-5-Regel, um zu prüfen, ob eine Ecke quadratisch ist. Die Kenntnis des Umfangs hilft bei der Überprüfung der Messungen.",
+          "Basteln und Nähen – Um ein dreieckiges Kissen oder einen Wimpel zu binden, zu paspeln oder zu schnüren, ist Material über den gesamten Umfang erforderlich.",
+          "Karten- und Vermessungsberechnungen – Vermessungsingenieure vermessen dreieckige Grundstücke und benötigen den Umfang für Grenzbeschreibungen und Grundstücksaufzeichnungen."
+        ]
+      },
+      {
+        "h2": "Beziehung zwischen Umfang und Halbumfang",
+        "paragraphs": [
+          "Der Halbumfang (s) entspricht genau der Hälfte des Umfangs: s = P / 2 = (a + b + c) / 2. Während der Umfang die gesamte Grenzlänge angibt, ist der Halbumfang ein praktischer Wert, der in komplexeren Formeln verwendet wird.",
+          "Der Halbumfang erscheint in Herons Formel für die Dreiecksfläche: A = √[s(s–a)(s–b)(s–c)]. Es wird auch verwendet, um den Inradius (den Radius des eingeschriebenen Kreises) zu berechnen: r = A / s. Daher ist der Umfang der Ausgangspunkt für mehrere wichtige Dreiecksberechnungen.",
+          "Wenn Sie den Umfang bereits mit diesem Tool berechnet haben, können Sie den Halbumfang ermitteln, indem Sie das Ergebnis einfach durch 2 dividieren oder unseren speziellen Halbumfangsrechner verwenden."
+        ]
+      },
+      {
+        "h2": "Tipps zur Einheitenumrechnung",
+        "paragraphs": [
+          "Das Umfangsergebnis ist nur dann aussagekräftig, wenn alle drei Eingabeseiten dieselbe Einheit verwenden. Wenn Ihre Maße in unterschiedlichen Einheiten vorliegen, rechnen Sie diese zuerst um. Der Rechner verfügt über eine Einheitenauswahl für jedes Eingabefeld, um Umrechnungen automatisch durchzuführen.",
+          "Denken Sie daran, dass es sich bei dem Umfang um eine lineare Messung handelt. Umrechnungen erfolgen daher nach Standardlängenverhältnissen und nicht nach Flächenverhältnissen. Um beispielsweise von Fuß in Meter umzurechnen, multiplizieren Sie mit 0,3048 (nicht mit 0,3048²)."
+        ],
+        "listTitle": "Schnelle Konvertierungserinnerungen:",
+        "listItems": [
+          "1 Zoll = 2,54 cm",
+          "1 Fuß = 12 Zoll = 0,3048 m",
+          "1 Yard = 3 Fuß = 0,9144 m",
+          "1 Meter = 100 cm = 3,2808 Fuß",
+          "1 Kilometer = 1000 m = 0,6214 Meilen",
+          "1 Meile = 5280 Fuß = 1,6093 km"
+        ]
+      },
+      {
+        "h2": "Häufige Fehler bei der Berechnung des Umfangs",
+        "paragraphs": [
+          "Die Umfangsformel ist einfach, aber es passieren immer noch Fehler. Die meisten Fehler entstehen durch falsche Eingaben und nicht durch falsche Berechnungen. Das Erkennen dieser Probleme vor der Berechnung spart Zeit und verhindert falsche Antworten."
+        ],
+        "listTitle": "Achten Sie auf diese Fallstricke:",
+        "listItems": [
+          "Nur zwei Seiten verwenden – Der Umfang erfordert alle drei Seiten. Das Vergessen der Hypotenuse oder eines Beins führt zu einer unvollständigen Antwort.",
+          "Einheiten mischen – Wenn Bein a in Zoll und Bein b in Zentimetern angegeben ist, hat die Summe keine Bedeutung. Konvertieren Sie zuerst in eine einzelne Einheit.",
+          "Verwechslung von Umfang und Fläche – Der Umfang ist eine Länge (gemessen in Einheiten), während die Fläche eine Fläche ist (gemessen in Quadrateinheiten). Stellen Sie sicher, dass Sie wissen, um welches Problem es sich handelt.",
+          "Verwenden Sie Seiten, die kein rechtwinkliges Dreieck bilden – Überprüfen Sie, dass a² + b² = c². Wenn diese Gleichung nicht gilt, ist das Dreieck kein rechtwinkliges Dreieck und c ist keine echte Hypotenuse.",
+          "Zu frühes Runden – Wenn eine Seite irrational ist (wie √2), behalten Sie die volle Präzision bis zur letzten Addition bei, um eine Anhäufung von Rundungsfehlern zu vermeiden.",
+          "Eingabe der Hypotenuse als Bein – Die Hypotenuse muss die längste Seite sein. Wenn Sie im Hypotenuse-Feld einen kürzeren Wert eingeben, sieht das Diagramm falsch aus und die Pythagoras-Prüfung schlägt fehl."
+        ]
+      },
+      {
+        "h2": "Umfangseigenschaften eines rechtwinkligen Dreiecks",
+        "paragraphs": [
+          "Rechtwinklige Dreiecke haben besondere Umfangseigenschaften, die sie von anderen Dreiecken unterscheiden. Wenn Sie diese Eigenschaften verstehen, können Sie Ihre Berechnungen überprüfen und Fehler erkennen.",
+          "In jedem rechtwinkligen Dreieck ist die Hypotenuse c immer kleiner als die Summe der beiden Schenkel (a + b), aber größer als jeder Schenkel allein. Das bedeutet, dass der Umfang P immer größer als 2c (da a + b > c) und kleiner als 2(a + b) ist, was 2a + 2b entspricht."
+        ],
+        "listTitle": "Wichtige Perimetereigenschaften:",
+        "listItems": [
+          "P ist immer größer als 2 × (längste Seite), da die anderen beiden Seiten zusätzliche Länge hinzufügen.",
+          "P ist immer kleiner als 3 × (längste Seite), weil c > a und c > b, also a + b < 2c.",
+          "Für ein 45-45-90-Dreieck mit Schenkeln der Länge k gilt P = k + k + k√2 = k(2 + √2) ≈ 3,414k.",
+          "Für ein 30-60-90-Dreieck mit dem kürzesten Schenkel k ist P = k + k√3 + 2k = k(3 + √3) ≈ 4,732k.",
+          "Unter allen rechtwinkligen Dreiecken mit gleicher Hypotenuse hat das gleichschenklige rechtwinklige Dreieck (45-45-90) den größten Umfang."
+        ]
+      }
+    ],
+    "relatedLinks": [
+      {
+        "href": "/right-triangle-measurements-calculator/",
+        "label": "Rechner für rechtwinklige Dreiecksmessungen"
+      },
+      {
+        "href": "/right-triangle-semiperimeter-calculator/",
+        "label": "Rechner für das rechtwinklige Dreieck-Semiperimeter"
+      },
+      {
+        "href": "/right-triangle-side-calculator/",
+        "label": "Seitenrechner für rechtwinklige Dreiecke"
+      },
+      {
+        "href": "/right-triangle-area-calculator/",
+        "label": "Flächenrechner für rechtwinklige Dreiecke"
+      },
+      {
+        "href": "/pythagorean-theorem-calculator/",
+        "label": "Rechner für den Satz des Pythagoras"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Wie lautet die Formel für den Umfang eines rechtwinkligen Dreiecks?",
+        "answer": "Die Umfangsformel lautet P = a + b + c, wobei a und b die beiden Schenkel sind (die Seiten, die den 90°-Winkel bilden) und c die Hypotenuse (die längste Seite, gegenüber dem rechten Winkel). Addieren Sie einfach alle drei Seitenlängen."
+      },
+      {
+        "question": "Was bedeutet jede Variable in P = a + b + c?",
+        "answer": "P ist der Umfang (Gesamtgrenzlänge). a ist ein Schenkel des rechtwinkligen Dreiecks. b ist das andere Bein. c ist die Hypotenuse – die längste Seite, die dem rechten Winkel gegenüberliegt. Die beiden Beine bilden die 90°-Ecke."
+      },
+      {
+        "question": "Kann ich den Umfang mit nur zwei Seiten finden?",
+        "answer": "Ja, aber Sie müssen zuerst die fehlende dritte Seite mithilfe des Satzes des Pythagoras berechnen: c = √(a² + b²), wenn die Hypotenuse fehlt, oder ein fehlender Schenkel = √(c² – bekannter Schenkel²). Fügen Sie dann alle drei Seiten hinzu, um den Umfang zu erhalten."
+      },
+      {
+        "question": "Ist Umfang gleich Fläche?",
+        "answer": "Nr. Der Umfang (P = a + b + c) misst die Gesamtentfernung um das Dreieck in linearen Einheiten (cm, m, ft). Fläche (A = a×b/2) misst den umschlossenen Raum innerhalb des Dreiecks in Quadrateinheiten (cm², m², ft²). Es handelt sich um grundsätzlich unterschiedliche Messungen."
+      },
+      {
+        "question": "Müssen alle drei Seiten in derselben Einheit sein?",
+        "answer": "Ja. Alle drei Seiten müssen vor dem Addieren in derselben Einheit ausgedrückt werden. Wenn eine Seite in Zoll und eine andere in Zentimetern angegeben ist, rechnen Sie sie zunächst in eine gemeinsame Einheit um. Der Rechner verfügt über Einheitenselektoren an jedem Eingang, um dies automatisch zu handhaben."
+      },
+      {
+        "question": "Wie groß ist der Umfang eines rechtwinkligen 3-4-5-Dreiecks?",
+        "answer": "Der Umfang beträgt 3 + 4 + 5 = 12 Einheiten. Das 3-4-5-Dreieck ist das kleinste pythagoräische Dreieck mit ganzzahligen Seiten. Jede skalierte Version (wie 6-8-10 oder 9-12-15) behält das gleiche Verhältnis bei, wobei der Umfang proportional skaliert wird."
+      },
+      {
+        "question": "Wie überprüfe ich, ob mein Dreieck tatsächlich ein rechtwinkliges Dreieck ist?",
+        "answer": "Überprüfen Sie, dass a² + b² = c², wobei c die längste Seite ist. Wenn diese Gleichung zutrifft, hat das Dreieck einen Winkel von 90° und ist ein rechtwinkliges Dreieck. Wenn dies nicht der Fall ist, funktioniert die Umfangsformel immer noch, aber das Dreieck ist nicht rechtwinklig."
+      },
+      {
+        "question": "Welche Beziehung besteht zwischen Umfang und Halbumfang?",
+        "answer": "Der Halbumfang ist genau die Hälfte des Umfangs: s = P/2. Wenn der Umfang P = 12, dann ist der Halbumfang s = 6. Der Halbumfang wird in Herons Formel und Inradiusberechnungen verwendet."
+      },
+      {
+        "question": "Kann der Umfang eines rechtwinkligen Dreiecks eine ungerade Zahl sein?",
+        "answer": "Ja. Der Umfang kann eine beliebige positive Zahl sein – ganzzahlig, dezimal oder irrational. Beispielsweise hat ein rechtwinkliges Dreieck mit den Schenkeln 1 und 1 die Hypotenuse √2 ≈ 1,414, was den Umfang ≈ 3,414 ergibt, was weder eine ganze Zahl noch rational ist."
+      },
+      {
+        "question": "Warum ist die Hypotenuse immer die längste Seite?",
+        "answer": "In einem rechtwinkligen Dreieck liegt die Hypotenuse gegenüber dem größten Winkel (90°). Eine grundlegende Regel in der Geometrie ist, dass die längste Seite immer dem größten Winkel gegenüberliegt. Da in einem Dreieck kein Winkel größer als der rechte Winkel sein kann, ist c immer die längste Seite."
+      }
+    ]
+  },
+  {
+    "slug": "right-triangle-semiperimeter-calculator",
+    "url": "/right-triangle-semiperimeter-calculator/",
+    "h1": "Rechner für das rechtwinklige Dreieck-Semiperimeter",
+    "metaTitle": "Rechner für das rechtwinklige Dreieck-Semiperimeter | Finden Sie s aus a, b und c",
+    "metaDescription": "Berechnen Sie den Halbumfang s eines rechtwinkligen Dreiecks aus Schenkel a, Schenkel b und Hypotenuse c. Enthält Formel, Diagramm, Schritt-für-Schritt-Anleitung, Beispiele, Verwendungsmöglichkeiten und Fehlerprüfungen.",
+    "formulaSlug": "semiperimeter",
+    "toolPurpose": "Finden Sie den Halbumfang s eines rechtwinkligen Dreiecks aus allen drei Seitenlängen und verwenden Sie ihn dann als sauberen Prüfpunkt für Flächen-, Innenradius- und Geometrieformeln, die vom halben Umfang abhängen.",
+    "intro": "Geben Sie Schenkel a, Schenkel b und Hypotenuse c ein, um den Halbumfang s des rechtwinkligen Dreiecks zu berechnen.",
+    "quickSummary": {
+      "h2": "Was dieser Semiperimeter-Rechner löst",
+      "intro": "Verwenden Sie diese Seite, wenn Sie den halben Umfangswert s für ein rechtwinkliges Dreieck benötigen. Dies ist besonders hilfreich, bevor Flächenformeln im Heron-Stil, Inradiusformeln oder Geometrieidentitäten verwendet werden, die auf s verweisen.",
+      "cards": [
+        {
+          "label": "Bekannte Werte",
+          "value": "Bein a, Bein b und Hypotenuse c"
+        },
+        {
+          "label": "Funde",
+          "value": "Halbumfang s, genau die Hälfte von P"
+        },
+        {
+          "label": "Hauptformel",
+          "value": "s = (a + b + c) / 2"
+        },
+        {
+          "label": "Am besten für",
+          "value": "Reiherprüfungen, Inradiusarbeiten, Geometriebeweise und kompakte Dreiecksnotation"
+        }
+      ]
+    },
+    "calculator": {
+      "outputLabel": "Semiperimeter s",
+      "fields": [
+        {
+          "key": "a",
+          "label": "Bein a",
+          "min": 0
+        },
+        {
+          "key": "b",
+          "label": "Bein b",
+          "min": 0
+        },
+        {
+          "key": "c",
+          "label": "Hypotenuse c",
+          "min": 0
+        }
+      ]
+    },
+    "diagram": {
+      "h2": "Diagramm eines rechtwinkligen Dreiecks: Halbumfang ist die Hälfte der Grenze",
+      "intro": "Das Diagramm zeigt die gleichen drei Seitenlängen wie für den Umfang, das Ergebnis ist jedoch durch 2 geteilt. Der Halbumfang basiert immer noch auf der Außenkante des Dreiecks, nicht auf der Innenfläche.",
+      "caption": "Semiperimeterdiagramm eines rechtwinkligen Dreiecks mit Seite a, Seite b, Hypotenuse c und der Formel s = (a + b + c) / 2.",
+      "formulaLabel": "s = (a + b + c) / 2",
+      "keyLabel": "Diagrammschlüssel",
+      "sides": {
+        "a": {
+          "label": "a = first leg",
+          "description": "Bein a ist eine der beiden senkrechten Seiten, die in der Summe vor der Division durch 2 enthalten sind."
+        },
+        "b": {
+          "label": "b = second leg",
+          "description": "Bein b bildet mit a den rechten Winkel und trägt sowohl zum Umfang als auch zum Halbumfang bei."
+        },
+        "c": {
+          "label": "c = hypotenuse",
+          "description": "Hypotenuse c ist die längste Seite und muss einbezogen werden, bevor die Summe halbiert wird."
+        }
+      },
+      "result": {
+        "label": "s = half of the boundary total",
+        "description": "Der Rechner addiert zunächst a + b + c und dividiert dann diesen Umfang durch 2."
+      },
+      "notes": [
+        "Der Halbumfang ist eine lineare Messung und verwendet daher dieselbe Einheit wie die Seitenlängen.",
+        "Wenn P bereits bekannt ist, verwenden Sie s = P / 2; Wenn P nicht bekannt ist, verwenden Sie s = (a + b + c) / 2.",
+        "Für ein gültiges rechtwinkliges Dreieck sollte c die längste Seite sein und a^2 + b^2 = c^2 erfüllen."
+      ]
+    },
+    "formulaSection": {
+      "h2": "Semiperimeterformel für ein rechtwinkliges Dreieck",
+      "paragraphs": [
+        "Der Halbumfang eines Dreiecks beträgt die Hälfte seines Umfangs. Für ein rechtwinkliges Dreieck ist der Umfang P = a + b + c, also ist der Halbumfang s = (a + b + c) / 2.",
+        "Der Buchstabe s wird häufig verwendet, da der Halbumfang in vielen kompakten Geometrieformeln vorkommt. Selbst wenn das Dreieck rechtwinklig ist, ist s als Brücke zwischen Seitenlängen, Fläche und Kreismaßen wie dem Innenradius nützlich.",
+        "Wie der Umfang wird auch der Halbumfang in linearen Einheiten gemessen. Wenn die Seiten in Metern angegeben sind, ist s in Metern. Wenn die Seiten in Zoll angegeben sind, ist s in Zoll."
+      ],
+      "formulas": [
+        "P = a + b + c",
+        "s = \\frac{P}{2}",
+        "s = \\frac{a + b + c}{2}"
+      ]
+    },
+    "howTo": {
+      "h2": "So finden Sie den Halbumfang eines rechtwinkligen Dreiecks",
+      "steps": [
+        "Identifizieren Sie die beiden Schenkel des rechtwinkligen Dreiecks. Dies sind die Seiten, die sich im 90-Grad-Winkel treffen.",
+        "Identifizieren Sie die Hypotenuse c. Es ist die längste Seite und liegt dem rechten Winkel gegenüber.",
+        "Stellen Sie sicher, dass a, b und c alle dieselbe Maßeinheit verwenden.",
+        "Geben Sie Schenkel a, Schenkel b und Hypotenuse c in den Rechner ein.",
+        "Klicken Sie auf Berechnen, um die drei Seiten zu addieren und die Summe durch 2 zu dividieren.",
+        "Überprüfen Sie die angezeigten Schritte. Der Rechner sollte zuerst den Gesamtumfang und dann das Halbumfangsergebnis anzeigen.",
+        "Verwenden Sie s in jeder späteren Formel, die nach einem Halbumfang fragt, z. B. Inradius- oder Heron-Flächenbeziehungen."
+      ]
+    },
+    "example": {
+      "h2": "Arbeitsbeispiel: Ermitteln Sie den Halbumfang eines rechtwinkligen 3-4-5-Dreiecks",
+      "intro": "Bei a = 3, b = 4 und c = 5 addieren Sie zunächst die drei Seiten, um den Umfang zu erhalten, und dividieren Sie dann durch 2:",
+      "lines": [
+        "s = \\frac{a + b + c}{2}",
+        "s = \\frac{3 + 4 + 5}{2}",
+        "s = \\frac{12}{2}",
+        "s = 6"
+      ],
+      "answer": "Der Halbumfang beträgt 6 Einheiten. Der gesamte Umfang beträgt 12 Einheiten und s ist genau die Hälfte davon."
+    },
+    "extraSections": [
+      {
+        "h2": "Was bedeutet Semiperimeter?",
+        "paragraphs": [
+          "Semiperimeter bedeutet wörtlich die Hälfte des Umfangs. Anstatt in längeren Formeln immer wieder (a + b + c) / 2 zu schreiben, verwendet die Geometrie oft das kürzere Symbol s.",
+          "Für ein rechtwinkliges Dreieck ist dieser Wert besonders praktisch, da die Seitenbeschriftungen bereits standardisiert sind: a und b sind die Schenkel und c ist die Hypotenuse. Sobald diese drei Seitenlängen bekannt sind, ist s eine einzelne kompakte Zahl, die die halbe Randlänge zusammenfasst."
+        ]
+      },
+      {
+        "h2": "Semiperimeter vs. Perimeter",
+        "paragraphs": [
+          "Umfang P misst die gesamte Entfernung um die Außenseite des Dreiecks. Der Halbumfang misst die Hälfte dieser Distanz. Die beiden Werte hängen direkt zusammen: s = P / 2 und P = 2s.",
+          "Verwenden Sie den Umfang, wenn bei einem Problem die Gesamtlänge der Begrenzung erforderlich ist, z. B. Beschnitt, Zaun oder Randabstand. Verwenden Sie Semiperimeter, wenn eine Formel speziell nach s fragt oder wenn Sie Werte für Flächen- und Radiusbeziehungen vorbereiten."
+        ],
+        "listTitle": "Schneller Vergleich:",
+        "listItems": [
+          "Umfang: P = a + b + c",
+          "Halbumfang: s = (a + b + c) / 2",
+          "Wenn P = 30, dann ist s = 15",
+          "Wenn s = 15, dann ist P = 30"
+        ]
+      },
+      {
+        "h2": "Warum Semiperimeter in der rechtwinkligen Dreiecksgeometrie wichtig sind",
+        "paragraphs": [
+          "Semiperimeter ist mehr als eine Abkürzung. Es handelt sich um einen Standardhilfswert, der in Formeln verwendet wird, die Seitenlängen mit Flächen- und Kreismaßen verbinden.",
+          "Für jedes Dreieck verwendet Herons Formel s, um die Fläche von drei Seiten zu berechnen: A = sqrt(s(s-a)(s-b)(s-c)). Für ein rechtwinkliges Dreieck verwenden Sie oft A = (a x b) / 2, aber die Formel von Heron ist immer noch zur Überprüfung nützlich.",
+          "Semiperimeter verbindet sich auch mit dem Inradius. In vielen Dreiecksformeln ist die Fläche gleich Innenradius mal Halbumfang: A = r x s. Sobald s bekannt ist, ist es einfacher, nach r aufzulösen oder ein Inradius-Ergebnis zu überprüfen."
+        ],
+        "listTitle": "Gängige Formeln, die s verwenden:",
+        "listItems": [
+          "Bereich im Heron-Stil: A = sqrt(s(s-a)(s-b)(s-c))",
+          "Flächen-Inradius-Beziehung: A = r x s",
+          "Inradius-Umordnung: r = A / s",
+          "Perimeter-Erholung: P = 2s"
+        ]
+      },
+      {
+        "h2": "Zusätzliche Semiperimeter-Beispiele",
+        "paragraphs": [
+          "Diese Beispiele zeigen, wie dieselbe Formel für ganzzahlige Tripel und dezimale Seitenlängen funktioniert. Der Schlüssel besteht darin, vor dem Teilen alle drei Seiten zu addieren."
+        ],
+        "listTitle": "Beispiel 1 – Dreieck 5-12-13:",
+        "listItems": [
+          "Gegeben: a = 5, b = 12, c = 13",
+          "s = (5 + 12 + 13) / 2",
+          "s = 30 / 2 = 15 units"
+        ]
+      },
+      {
+        "h2": "Beispiel 2 – 8-15-17 Dreieck",
+        "paragraphs": [
+          "Für a = 8, b = 15 und c = 17 beträgt der Gesamtumfang 40 Einheiten."
+        ],
+        "listItems": [
+          "s = (8 + 15 + 17) / 2",
+          "s = 40 / 2",
+          "s = 20 units"
+        ]
+      },
+      {
+        "h2": "Beispiel 3 – Dezimale Seitenlängen",
+        "paragraphs": [
+          "Dezimalzahlen funktionieren genauso wie ganze Zahlen. Gegeben sei a = 2,5, b = 6 und c = 6,5:"
+        ],
+        "listItems": [
+          "s = (2,5 + 6 + 6,5) / 2",
+          "s = 15 / 2",
+          "s = 7,5 Einheiten"
+        ]
+      },
+      {
+        "h2": "Wann Sie diesen Semiperimeter-Rechner verwenden sollten",
+        "paragraphs": [
+          "Verwenden Sie diesen Rechner, wenn ein Geometrieproblem alle drei Seitenlängen eines rechtwinkligen Dreiecks angibt und nach s, dem halben Umfang oder einer Formel fragt, die vom Halbumfang abhängt.",
+          "Es eignet sich auch als schnelle Überprüfung nach dem Lösen einer fehlenden Seite. Sobald Sie a, b und c kennen, sollte der Halbumfang einfach und genau sein: Addieren Sie die Seiten und dividieren Sie dann durch 2."
+        ],
+        "listTitle": "Zu den guten Anwendungsfällen gehören:",
+        "listItems": [
+          "Vorbereiten der Heron-Formeleingaben aus drei Seitenlängen.",
+          "Überprüfung der Inradiusberechnungen mit r = A / s.",
+          "Reduzierung wiederholter Arithmetik in Geometrie-Hausaufgaben oder Beweisen.",
+          "Vergleich der Dreiecksgrößen anhand halber Randwerte.",
+          "Überprüfung der Übereinstimmung der Perimeter- und Semiperimeter-Ergebnisse: P sollte immer gleich 2s sein."
+        ]
+      },
+      {
+        "h2": "Einheitentipps für Semiperimeter",
+        "paragraphs": [
+          "Der Halbumfang ist eine Länge und folgt daher den üblichen Regeln zur Umrechnung von Längeneinheiten. Es wird nicht in Quadrateinheiten gemessen.",
+          "Wenn die seitlichen Eingaben unterschiedliche Einheiten verwenden, konvertieren Sie diese zuerst oder verwenden Sie die Einheitenauswahl des Rechners konsistent. Die direkte Addition von Fuß, Zoll und Zentimetern würde zu einem bedeutungslosen Ergebnis führen."
+        ],
+        "listTitle": "Beachten Sie diese Einheitenregeln:",
+        "listItems": [
+          "Vor dem Vergleich der Ergebnisse sollten alle Seitenlängen dasselbe Einheitensystem darstellen.",
+          "Die Ausgabe s verwendet eine lineare Einheit wie cm, m, in oder ft.",
+          "Quadrieren Sie die Einheiten nicht, wenn Sie den Halbumfang berechnen.",
+          "Wenn Sie die Seiten nach der Berechnung umrechnen, konvertieren Sie s mit demselben linearen Umrechnungsfaktor."
+        ]
+      },
+      {
+        "h2": "Häufige Semiperimeter-Fehler",
+        "paragraphs": [
+          "Die meisten Semiperimeter-Fehler passieren, weil die Formel einfach aussieht. Das Rechnen ist einfach, aber der Aufbau ist trotzdem wichtig."
+        ],
+        "listTitle": "Achten Sie auf diese Fehler:",
+        "listItems": [
+          "Ich habe vergessen, nach dem Hinzufügen der Seiten durch 2 zu dividieren.",
+          "Zuerst jede Seite durch 2 dividieren und dann den Überblick über die Summe verlieren.",
+          "Verwenden Sie nur die beiden Beine und lassen Sie die Hypotenuse weg.",
+          "Verwechseln Sie s mit dem Umfang P. Denken Sie daran, dass P = 2s.",
+          "Verwenden von Seitenlängen, die kein rechtwinkliges Dreieck bilden.",
+          "Mischen verschiedener Einheiten in derselben Berechnung."
+        ]
+      },
+      {
+        "h2": "Wie sich Semiperimeter mit Fläche und Inradius verbindet",
+        "paragraphs": [
+          "In einem rechtwinkligen Dreieck kann die Fläche direkt mit A = (a x b) / 2 berechnet werden, da die Schenkel senkrecht zueinander stehen. Sobald Fläche und Halbumfang bekannt sind, kann der Inradius mit r = A / s überprüft werden.",
+          "Dies macht den Halbumfang zu einem nützlichen Mittelwert. Sie ersetzt nicht die Flächenformel, hilft aber dabei, Seitenlängen mit Kreismaßen innerhalb des Dreiecks zu verbinden."
+        ],
+        "listTitle": "Beispiel mit einem 3-4-5-Dreieck:",
+        "listItems": [
+          "Fläche: A = (3 x 4) / 2 = 6",
+          "Halbumfang: s = (3 + 4 + 5) / 2 = 6",
+          "Inradiusprüfung: r = A / s = 6 / 6 = 1"
+        ]
+      }
+    ],
+    "relatedLinks": [
+      {
+        "href": "/right-triangle-measurements-calculator/",
+        "label": "Rechner für rechtwinklige Dreiecksmessungen"
+      },
+      {
+        "href": "/right-triangle-perimeter-calculator/",
+        "label": "Rechner für den Umfang eines rechten Dreiecks"
+      },
+      {
+        "href": "/right-triangle-area-calculator/",
+        "label": "Flächenrechner für rechtwinklige Dreiecke"
+      },
+      {
+        "href": "/right-triangle-radius-calculator/",
+        "label": "Rechner für den Radius des rechten Dreiecks"
+      },
+      {
+        "href": "/pythagorean-theorem-calculator/",
+        "label": "Rechner für den Satz des Pythagoras"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Wie lautet die Formel für den Halbumfang eines rechtwinkligen Dreiecks?",
+        "answer": "Die Formel lautet s = (a + b + c) / 2, wobei a und b die Schenkel des rechtwinkligen Dreiecks und c die Hypotenuse sind. Addieren Sie alle drei Seitenlängen und dividieren Sie dann die Summe durch 2."
+      },
+      {
+        "question": "Was bedeutet Semiperimeter?",
+        "answer": "Halbumfang bedeutet die Hälfte des Umfangs des Dreiecks. Wenn der volle Umfang P ist, dann ist s = P / 2. Wenn die Seitenlängen direkt bekannt sind, ist s = (a + b + c) / 2."
+      },
+      {
+        "question": "Ist Halbumfang dasselbe wie Umfang?",
+        "answer": "Nein. Der Umfang ist die volle Grenzlänge um das Dreieck herum, während der Halbumfang die Hälfte dieser Grenzlänge ist. Sie sind durch P = 2s miteinander verbunden."
+      },
+      {
+        "question": "Warum wird Semiperimeter verwendet?",
+        "answer": "Semiperimeter wird verwendet, weil es das Schreiben und Berechnen längerer Formeln erleichtert. Es erscheint in Herons Formel, der Flächen-Inradius-Beziehung A = r x s und der Inradius-Umordnung r = A / s."
+      },
+      {
+        "question": "Brauche ich alle drei Seiten?",
+        "answer": "Ja. Um den Semiumfang direkt zu berechnen, benötigen Sie Bein a, Bein b und Hypotenuse c. Wenn eine Seite fehlt, lösen Sie sie zuerst mit dem Satz des Pythagoras und berechnen Sie dann s."
+      },
+      {
+        "question": "Was ist der Halbumfang eines rechtwinkligen 3-4-5-Dreiecks?",
+        "answer": "Für ein rechtwinkliges Dreieck 3-4-5 ist s = (3 + 4 + 5) / 2 = 12 / 2 = 6 Einheiten."
+      },
+      {
+        "question": "Verwendet der Halbumfang quadratische Einheiten?",
+        "answer": "Nein. Halbumfang ist eine Länge und verwendet daher lineare Einheiten wie cm, m, Zoll oder Fuß. Für Fläche werden quadratische Einheiten verwendet, Halbumfang jedoch nicht."
+      },
+      {
+        "question": "Wie kann ich überprüfen, ob meine Semiperimeter-Antwort korrekt ist?",
+        "answer": "Verdoppeln Sie den Halbumfang. Das Ergebnis sollte dem gesamten Umfang entsprechen. Wenn beispielsweise s = 15, dann sollte P 30 sein."
+      }
+    ]
+  }
+]

@@ -1,0 +1,560 @@
+[
+  {
+    "slug": "right-triangle-perimeter-calculator",
+    "url": "/right-triangle-perimeter-calculator/",
+    "h1": "Kalkulator Perimeter Segi Tiga Bersudut Tegak",
+    "metaTitle": "Kalkulator Perimeter Segi Tiga Bersudut Tegak | Cari Perimeter Segi Tiga Bersudut Tegak dengan Segera",
+    "metaDescription": "Kira perimeter segi tiga bersudut tegak dari kaki a, kaki b, dan hipotenus c. Termasuk formula, penyelesaian langkah demi langkah, gambar rajah, contoh penyelesaian, dan aplikasi dunia nyata.",
+    "formulaSlug": "perimeter",
+    "toolPurpose": "Masukkan ketiga-tiga sisi segi tiga bersudut tegak untuk mengira jumlah jarak di sekelilingnya dengan segera. Kalkulator ini menunjukkan formula, jalan kerja langkah demi langkah, dan gambar rajah secara langsung supaya anda dapat mengesahkan setiap nilai sebelum menggunakan hasil tersebut.",
+    "intro": "Masukkan kaki a, kaki b, dan hipotenus c untuk mengira jumlah perimeter segi tiga bersudut tegak.",
+    "quickSummary": {
+      "h2": "Apa Yang Diselesaikan Oleh Kalkulator Perimeter Ini",
+      "intro": "Gunakan halaman ini apabila anda sudah mengetahui ketiga-tiga panjang sisi segi tiga bersudut tegak dan memerlukan jumlah panjang sempadannya. Ia direka untuk aritmetik pantas, input peka unit, dan semakan visual yang mudah.",
+      "cards": [
+        { "label": "Nilai yang diketahui", "value": "Kaki a, kaki b, dan hipotenus c" },
+        { "label": "Mencari", "value": "Perimeter P, jumlah jarak di sekeliling segi tiga" },
+        { "label": "Formula utama", "value": "P = a + b + c" },
+        { "label": "Terbaik untuk", "value": "Pemagaran, kemasan, semakan susun atur, kerja rumah geometri, dan perancangan panjang tepi" }
+      ]
+    },
+    "calculator": {
+      "outputLabel": "Perimeter P",
+      "fields": [
+        { "key": "a", "label": "Kaki a", "min": 0 },
+        { "key": "b", "label": "Kaki b", "min": 0 },
+        { "key": "c", "label": "Hipotenus c", "min": 0 }
+      ]
+    },
+    "diagram": {
+      "h2": "Gambar Rajah Segi Tiga Bersudut Tegak: Perimeter Menggunakan Ketiga-tiga Sisi",
+      "intro": "Gambar rajah ini menyerlahkan laluan luar penuh segi tiga bersudut tegak. Perimeter bukanlah ukuran dalaman; ia adalah jumlah kedua-dua kaki dan hipotenus.",
+      "caption": "Gambar rajah perimeter segi tiga bersudut tegak yang menunjukkan sisi a, sisi b, hipotenus c, dan formula P = a + b + c.",
+      "formulaLabel": "P = a + b + c",
+      "keyLabel": "Kunci Gambar Rajah",
+      "sides": {
+        "a": {
+          "label": "a = kaki pertama",
+          "description": "Kaki a ialah satu sisi sudut 90 darjah dan disertakan sekali dalam perimeter."
+        },
+        "b": {
+          "label": "b = kaki kedua",
+          "description": "Kaki b ialah sisi lain sudut tegak dan ditambah bersama a dan c."
+        },
+        "c": {
+          "label": "c = hipotenus",
+          "description": "Hipotenus c ialah sisi terpanjang, bertentangan dengan sudut tegak, dan melengkapkan sempadan."
+        }
+      },
+      "result": {
+        "label": "P = jumlah panjang sempadan",
+        "description": "Kalkulator menambah a + b + c dan mengembalikan perimeter dalam unit linear yang dipilih."
+      },
+      "notes": [
+        "Ketiga-tiga sisi harus menggunakan unit yang sama sebelum anda membandingkan atau menggunakan semula jawapan.",
+        "Jika satu sisi hilang, selesaikan sisi itu terlebih dahulu dengan teorem Pythagoras, kemudian kembali kepada perimeter.",
+        "Hasil perimeter ialah panjang, bukan luas unit persegi."
+      ]
+    },
+    "formulaSection": {
+      "h2": "Formula Perimeter Segi Tiga Bersudut Tegak",
+      "paragraphs": [
+        "Perimeter mana-mana poligon ialah jumlah panjang sempadannya. Bagi segi tiga bersudut tegak, sempadannya terdiri daripada tepat tiga sisi lurus: dua kaki (a dan b) yang membentuk sudut 90°, dan satu hipotenus (c) yang membentang dari sudut tegak ke bucu yang bertentangan.",
+        "Oleh kerana segi tiga bersudut tegak hanya mempunyai tiga sisi, formula perimeter ialah hasil tambah termudah yang mungkin. Tiada trigonometri, punca kuasa dua, atau eksponen diperlukan — hanya penambahan."
+      ],
+      "formulas": ["P = a + b + c"]
+    },
+    "howTo": {
+      "h2": "Cara Mencari Perimeter Segi Tiga Bersudut Tegak",
+      "steps": [
+        "Kenal pasti ketiga-tiga sisi segi tiga bersudut tegak. Labelkan dua sisi yang lebih pendek sebagai kaki a dan kaki b, dan sisi terpanjang sebagai hipotenus c.",
+        "Pastikan ketiga-tiga ukuran menggunakan unit yang sama. Tukar jika perlu sebelum memasukkan nilai.",
+        "Masukkan kaki a ke dalam medan input pertama kalkulator.",
+        "Masukkan kaki b ke dalam medan input kedua.",
+        "Masukkan hipotenus c ke dalam medan input ketiga.",
+        "Klik Kira. Kalkulator menambah tiga nilai dan memaparkan perimeter P berserta jalan kerja langkah demi langkah.",
+        "Semak hasil pada gambar rajah untuk mengesahkan panjang sisi sepadan dengan segi tiga anda secara visual."
+      ]
+    },
+    "example": {
+      "h2": "Contoh Penyelesaian: Cari Perimeter Segi Tiga Bersudut Tegak 3-4-5",
+      "intro": "Segi tiga 3-4-5 ialah salah satu trirangkap Pythagoras yang paling biasa. Diberi a = 3, b = 4, c = 5:",
+      "lines": [
+        "P = a + b + c",
+        "P = 3 + 4 + 5",
+        "P = 12"
+      ],
+      "answer": "Perimeter segi tiga bersudut tegak ini ialah 12 unit. Memandangkan 3² + 4² = 9 + 16 = 25 = 5², sisi-sisi tersebut memenuhi teorem Pythagoras dan mengesahkan segi tiga bersudut tegak yang sah."
+    },
+    "extraSections": [
+      {
+        "h2": "Apakah Perimeter Segi Tiga Bersudut Tegak?",
+        "paragraphs": [
+          "Perimeter segi tiga bersudut tegak ialah jumlah jarak yang anda akan lalui jika anda berjalan di sepanjang ketiga-tiga pinggir segi tiga, bermula dari satu bucu dan kembali ke bucu yang sama. Ia mewakili sempadan luar bentuk segi tiga itu.",
+          "Setiap segi tiga bersudut tegak mempunyai tiga sisi: dua kaki yang bertemu pada sudut tegak (90°) dan satu hipotenus yang bertentangan dengan sudut tegak. Hipotenus sentiasa menjadi sisi terpanjang daripada ketiga-tiga sisi. Apabila anda menambah panjang ketiga-tiga sisi tersebut, anda mendapat perimeter.",
+          "Perimeter ialah ukuran satu dimensi yang dinyatakan dalam unit linear (seperti cm, m, ft, atau in). Ini berbeza dengan luas, yang mengukur ruang dua dimensi di dalam segi tiga dan dinyatakan dalam unit persegi."
+        ]
+      },
+      {
+        "h2": "Memahami Sisi Segi Tiga Bersudut Tegak",
+        "paragraphs": [
+          "Sebelum mengira perimeter, ia membantu untuk mengenal pasti setiap sisi segi tiga bersudut tegak dengan jelas. Salah melabel sisi ialah punca ralat yang paling biasa.",
+          "Dalam konvensyen pelabelan standard, dua sisi yang membentuk sudut tegak dipanggil kaki. Sisi yang bertentangan dengan sudut tegak dipanggil hipotenus. Hipotenus sentiasa lebih panjang daripada mana-mana kaki secara individu, tetapi ia sentiasa lebih pendek daripada jumlah kedua-dua kaki."
+        ],
+        "listTitle": "Sekilas pandang tentang ketiga-tiga sisi:",
+        "listItems": [
+          "Kaki a — Salah satu daripada dua sisi yang membentuk sudut 90°. Ia boleh menjadi sisi menegak atau mendatar, bergantung pada orientasi.",
+          "Kaki b — Sisi lain yang membentuk sudut 90°. Bersama dengan kaki a, ia mentakrifkan sudut tegak.",
+          "Hipotenus c — Sisi terpanjang, yang membentang dari satu bucu sudut tirus ke bucu yang lain, bertentangan secara langsung dengan sudut tegak.",
+          "Hubungan Pythagoras kekal: a² + b² = c². Ini membolehkan anda mengesahkan bahawa tiga nilai anda sebenarnya membentuk segi tiga bersudut tegak."
+        ]
+      },
+      {
+        "h2": "Bagaimana Formula Perimeter Diterbitkan",
+        "paragraphs": [
+          "Formula perimeter P = a + b + c ialah aplikasi langsung takrifan perimeter poligon am: tambahkan panjang semua sisi. Bagi segi tiga, terdapat tepat tiga sisi, jadi perimeternya ialah jumlah tiga panjang.",
+          "Tiada penerbitan atau penyusunan semula diperlukan kerana formula ini ialah kes paling mudah dalam pengukuran perimeter. Walau bagaimanapun, formula ini menjadi lebih menarik apabila hanya dua sisi yang diketahui, kerana anda boleh menggunakan teorem Pythagoras untuk mencari sisi ketiga yang hilang dan kemudian mengira perimeter."
+        ]
+      },
+      {
+        "h2": "Mencari Perimeter Apabila Satu Sisi Hilang",
+        "paragraphs": [
+          "Jika anda hanya mengetahui dua daripada tiga sisi segi tiga bersudut tegak, anda masih boleh mencari perimeter. Gunakan teorem Pythagoras (a² + b² = c²) untuk mengira sisi yang hilang terlebih dahulu, kemudian tambahkan ketiga-tiganya untuk mendapatkan perimeter.",
+          "Pendekatan ini membolehkan anda bekerja dengan dua senario yang paling biasa: mengetahui kedua-dua kaki tetapi bukan hipotenus, atau mengetahui hipotenus dan satu kaki tetapi bukan yang lain."
+        ],
+        "listTitle": "Formula untuk setiap kes sisi yang hilang:",
+        "listItems": [
+          "Jika c hilang: c = √(a² + b²), maka P = a + b + √(a² + b²)",
+          "Jika b hilang: b = √(c² – a²), maka P = a + √(c² – a²) + c",
+          "Jika a hilang: a = √(c² – b²), maka P = √(c² – b²) + b + c",
+          "Sentiasa pastikan bahawa c > a dan c > b apabila menggunakan bentuk penolakan, jika tidak nilai tersebut tidak membentuk segi tiga bersudut tegak yang sah."
+        ]
+      },
+      {
+        "h2": "Contoh Penyelesaian Tambahan",
+        "paragraphs": [
+          "Berlatih dengan segi tiga yang berbeza membantu membina keyakinan. Di bawah ialah tiga lagi contoh penyelesaian menggunakan trirangkap Pythagoras dan nilai perpuluhan yang biasa."
+        ],
+        "listTitle": "Contoh 1 — Segi tiga 5-12-13:",
+        "listItems": [
+          "Diberi: a = 5, b = 12, c = 13",
+          "P = 5 + 12 + 13 = 30 unit",
+          "Pengesahan: 5² + 12² = 25 + 144 = 169 = 13² ✓"
+        ]
+      },
+      {
+        "h2": "Contoh 2 — Segi Tiga 8-15-17",
+        "paragraphs": [
+          "Diberi: a = 8, b = 15, c = 17. Ini ialah trirangkap Pythagoras yang lain di mana semua sisinya ialah nombor bulat."
+        ],
+        "listItems": [
+          "P = 8 + 15 + 17 = 40 unit",
+          "Pengesahan: 8² + 15² = 64 + 225 = 289 = 17² ✓",
+          "Trirangkap ini berguna dalam susun atur pembinaan di mana panjang pagar atau kemasan 40 unit diperlukan."
+        ]
+      },
+      {
+        "h2": "Contoh 3 — Sisi Perpuluhan",
+        "paragraphs": [
+          "Bukan semua segi tiga bersudut tegak mempunyai sisi nombor bulat yang kemas. Diberi: a = 2.5, b = 6, c = 6.5."
+        ],
+        "listItems": [
+          "P = 2.5 + 6 + 6.5 = 15 unit",
+          "Pengesahan: 2.5² + 6² = 6.25 + 36 = 42.25 = 6.5² ✓",
+          "Nilai perpuluhan berfungsi dengan cara yang sama — cuma tambahkan secara langsung."
+        ]
+      },
+      {
+        "h2": "Perimeter berbanding Luas: Apakah Perbezaannya?",
+        "paragraphs": [
+          "Perimeter dan luas kedua-duanya menerangkan sebuah segi tiga, tetapi ia mengukur perkara yang berbeza. Perimeter mengukur jumlah panjang tepi di bahagian luar (ukuran linear), manakala luas mengukur ruang tertutup di dalam segi tiga (ukuran persegi).",
+          "Bagi segi tiga bersudut tegak dengan kaki a dan b serta hipotenus c, dua formulanya ialah: P = a + b + c untuk perimeter, dan A = (a × b) / 2 untuk luas. Perhatikan bahawa formula luas hanya menggunakan dua kaki (kerana ia berserenjang), manakala formula perimeter menggunakan ketiga-tiga sisi.",
+          "Kesilapan biasa ialah mengelirukan kedua-duanya. Jika satu masalah meminta jarak pemagaran di sekeliling petak segi tiga, anda memerlukan perimeter. Jika ia meminta litupan permukaan (seperti mengecat atau memasang jubin), anda memerlukan luas."
+        ]
+      },
+      {
+        "h2": "Aplikasi Dunia Nyata Perimeter Segi Tiga Bersudut Tegak",
+        "paragraphs": [
+          "Mengetahui perimeter segi tiga bersudut tegak adalah penting dalam banyak situasi praktikal. Apabila anda perlu mengukur, memotong, atau membeli bahan yang melilit pinggir bentuk segi tiga bersudut tegak, perimeter memberitahu anda dengan tepat berapa banyak bahan yang diperlukan."
+        ],
+        "listTitle": "Kegunaan dunia nyata yang biasa:",
+        "listItems": [
+          "Pemagaran — Batas taman segi tiga atau lot sudut memerlukan pagar di sekeliling ketiga-tiga sisi. Perimeter memberitahu anda berapa banyak kaki linear pagar yang perlu dibeli.",
+          "Kemasan dan acuan — Ciri seni bina segi tiga (seperti hujung tebeng bumbung) memerlukan kemasan di sepanjang pinggirnya. Perimeter memberikan jumlah panjang kemasan.",
+          "Dawai dan tali — Membingkai paparan, sepanduk atau layar bersudut tegak memerlukan tali, dawai atau tepian yang sama dengan perimeter.",
+          "Laluan berjoging dan berjalan kaki — Trek larian atau laluan berjalan kaki segi tiga di sekitar kawasan taman bersudut tegak mempunyai jumlah jarak yang sama dengan perimeter.",
+          "Susun atur pembinaan — Pembina menggunakan peraturan 3-4-5 untuk memeriksa sama ada sudut itu persegi. Mengetahui perimeter membantu mengesahkan ukuran.",
+          "Kraf dan jahitan — Pengikat, paip, atau renda di sekeliling kusyen atau panji segi tiga memerlukan bahan sepanjang perimeter.",
+          "Pengiraan peta dan ukur — Juruukur mengukur plot tanah segi tiga dan memerlukan perimeter untuk perihalan sempadan dan rekod hartanah."
+        ]
+      },
+      {
+        "h2": "Hubungan Antara Perimeter dan Semiperimeter",
+        "paragraphs": [
+          "Semiperimeter (s) ialah separuh tepat daripada perimeter: s = P / 2 = (a + b + c) / 2. Walaupun perimeter memberikan anda jumlah panjang sempadan, semiperimeter ialah nilai kemudahan yang digunakan dalam formula yang lebih lanjutan.",
+          "Semiperimeter muncul dalam formula Heron untuk luas segi tiga: A = √[s(s–a)(s–b)(s–c)]. Ia juga digunakan untuk mengira injejari (jejari bulatan terterap): r = A / s. Jadi perimeter ialah titik permulaan untuk beberapa pengiraan segi tiga yang penting.",
+          "Jika anda telah mengira perimeter menggunakan alat ini, anda boleh mencari semiperimeter dengan hanya membahagikan hasilnya dengan 2, atau menggunakan kalkulator semiperimeter khusus kami."
+        ]
+      },
+      {
+        "h2": "Petua Penukaran Unit",
+        "paragraphs": [
+          "Hasil perimeter hanya bermakna apabila ketiga-tiga sisi input menggunakan unit yang sama. Jika ukuran anda menggunakan unit yang berbeza, tukarkannya terlebih dahulu. Kalkulator menyertakan pemilih unit untuk setiap medan input bagi mengendalikan penukaran secara automatik.",
+          "Ingat bahawa perimeter ialah ukuran linear, jadi penukaran mengikut nisbah panjang piawai — bukan nisbah luas. Sebagai contoh, untuk menukar kaki kepada meter, darabkan dengan 0.3048 (bukan dengan 0.3048²)."
+        ],
+        "listTitle": "Peringatan penukaran pantas:",
+        "listItems": [
+          "1 in = 2.54 cm",
+          "1 ft = 12 in = 0.3048 m",
+          "1 yd = 3 ft = 0.9144 m",
+          "1 m = 100 cm = 3.2808 ft",
+          "1 km = 1000 m = 0.6214 mi",
+          "1 mi = 5280 ft = 1.6093 km"
+        ]
+      },
+      {
+        "h2": "Kesilapan Biasa Apabila Mengira Perimeter",
+        "paragraphs": [
+          "Formula perimeter adalah ringkas, tetapi kesilapan masih berlaku. Kebanyakan ralat berpunca daripada input yang salah dan bukannya aritmetik yang salah. Mengenal pasti isu ini sebelum anda mengira dapat menjimatkan masa dan mencegah jawapan yang salah."
+        ],
+        "listTitle": "Berhati-hati dengan perangkap ini:",
+        "listItems": [
+          "Menggunakan hanya dua sisi — Perimeter memerlukan ketiga-tiga sisi. Terlupa hipotenus atau satu kaki memberikan jawapan yang tidak lengkap.",
+          "Mencampurkan unit — Jika kaki a dalam in dan kaki b dalam cm, jumlahnya tiada makna. Tukar kepada satu unit terlebih dahulu.",
+          "Mengelirukan perimeter dengan luas — Perimeter ialah panjang (diukur dalam unit), manakala luas ialah permukaan (diukur dalam unit persegi). Pastikan anda tahu yang mana satu diminta oleh soalan.",
+          "Menggunakan sisi yang tidak membentuk segi tiga bersudut tegak — Semak bahawa a² + b² = c². Jika persamaan ini tidak sah, segi tiga itu bukanlah segi tiga bersudut tegak dan c bukan hipotenus yang sebenar.",
+          "Membundar terlalu awal — Jika satu sisi ialah bukan nisbah (seperti √2), kekalkan ketepatan penuh sehingga penambahan terakhir untuk mengelakkan ralat pembundaran terkumpul.",
+          "Memasukkan hipotenus sebagai kaki — Hipotenus mestilah sisi terpanjang. Jika anda meletakkan nilai yang lebih pendek dalam medan hipotenus, gambar rajah akan kelihatan salah dan semakan Pythagoras akan gagal."
+        ]
+      },
+      {
+        "h2": "Sifat Perimeter Segi Tiga Bersudut Tegak",
+        "paragraphs": [
+          "Segi tiga bersudut tegak mempunyai sifat perimeter istimewa yang membezakannya daripada segi tiga yang lain. Memahami sifat ini boleh membantu anda mengesahkan pengiraan anda dan mengenal pasti ralat.",
+          "Dalam mana-mana segi tiga bersudut tegak, hipotenus c sentiasa kurang daripada jumlah kedua-dua kaki (a + b) tetapi lebih besar daripada mana-mana kaki sahaja. Ini bermakna perimeter P sentiasa lebih besar daripada 2c (kerana a + b > c) dan kurang daripada 2(a + b), yang bersamaan dengan 2a + 2b."
+        ],
+        "listTitle": "Sifat perimeter utama:",
+        "listItems": [
+          "P sentiasa lebih besar daripada 2 × (sisi terpanjang) kerana dua sisi yang lain menambahkan panjang tambahan.",
+          "P sentiasa kurang daripada 3 × (sisi terpanjang) kerana c > a dan c > b, jadi a + b < 2c.",
+          "Untuk segi tiga 45-45-90 dengan panjang kaki k, P = k + k + k√2 = k(2 + √2) ≈ 3.414k.",
+          "Untuk segi tiga 30-60-90 dengan kaki terpendek k, P = k + k√3 + 2k = k(3 + √3) ≈ 4.732k.",
+          "Di antara semua segi tiga bersudut tegak dengan hipotenus yang sama, segi tiga bersudut tegak sama kaki (45-45-90) mempunyai perimeter terbesar."
+        ]
+      }
+    ],
+    "relatedLinks": [
+      { "href": "/right-triangle-measurements-calculator/", "label": "Kalkulator Ukuran Segi Tiga Bersudut Tegak" },
+      { "href": "/right-triangle-semiperimeter-calculator/", "label": "Kalkulator Semiperimeter Segi Tiga Bersudut Tegak" },
+      { "href": "/right-triangle-side-calculator/", "label": "Kalkulator Sisi Segi Tiga Bersudut Tegak" },
+      { "href": "/right-triangle-area-calculator/", "label": "Kalkulator Luas Segi Tiga Bersudut Tegak" },
+      { "href": "/pythagorean-theorem-calculator/", "label": "Kalkulator Teorem Pythagoras" }
+    ],
+    "faqs": [
+      {
+        "question": "Apakah formula untuk perimeter segi tiga bersudut tegak?",
+        "answer": "Formula perimeter ialah P = a + b + c, di mana a dan b ialah dua kaki (sisi yang membentuk sudut 90°) dan c ialah hipotenus (sisi terpanjang, bertentangan dengan sudut tegak). Hanya tambahkan panjang ketiga-tiga sisi bersama-sama."
+      },
+      {
+        "question": "Apakah maksud setiap pemboleh ubah dalam P = a + b + c?",
+        "answer": "P ialah perimeter (jumlah panjang sempadan). a ialah satu kaki segi tiga bersudut tegak. b ialah kaki yang satu lagi. c ialah hipotenus — sisi terpanjang yang bertentangan dengan sudut tegak. Kedua-dua kaki membentuk sudut 90°."
+      },
+      {
+        "question": "Bolehkah saya mencari perimeter dengan hanya dua sisi?",
+        "answer": "Ya, tetapi anda mesti mengira sisi ketiga yang hilang terlebih dahulu menggunakan teorem Pythagoras: c = √(a² + b²) jika hipotenus hilang, atau kaki yang hilang = √(c² – kaki yang diketahui²). Kemudian tambahkan ketiga-tiga sisi untuk mendapatkan perimeter."
+      },
+      {
+        "question": "Adakah perimeter sama dengan luas?",
+        "answer": "Tidak. Perimeter (P = a + b + c) mengukur jumlah jarak di sekeliling segi tiga dalam unit linear (cm, m, ft). Luas (A = a×b/2) mengukur ruang tertutup di dalam segi tiga dalam unit persegi (cm², m², ft²). Ia adalah ukuran yang pada asasnya berbeza."
+      },
+      {
+        "question": "Adakah ketiga-tiga sisi perlu dalam unit yang sama?",
+        "answer": "Ya. Ketiga-tiga sisi mesti dinyatakan dalam unit yang sama sebelum ditambahkan. Jika satu sisi dalam in dan satu lagi dalam cm, tukarkannya kepada unit yang sama terlebih dahulu. Kalkulator menyertakan pemilih unit pada setiap input untuk mengendalikan ini secara automatik."
+      },
+      {
+        "question": "Apakah perimeter bagi segi tiga bersudut tegak 3-4-5?",
+        "answer": "Perimeternya ialah 3 + 4 + 5 = 12 unit. Segi tiga 3-4-5 ialah trirangkap Pythagoras terkecil dengan sisi integer. Mana-mana versi berskala (seperti 6-8-10 atau 9-12-15) mengekalkan nisbah yang sama dengan perimeter berskala secara berkadar."
+      },
+      {
+        "question": "Bagaimanakah saya mengesahkan segi tiga saya sebenarnya ialah segi tiga bersudut tegak?",
+        "answer": "Semak bahawa a² + b² = c², di mana c ialah sisi terpanjang. Jika persamaan ini benar, segi tiga tersebut mempunyai sudut 90° dan merupakan segi tiga bersudut tegak. Jika ia tidak benar, formula perimeter masih berfungsi tetapi segi tiga itu bukan bersudut tegak."
+      },
+      {
+        "question": "Apakah hubungan antara perimeter dan semiperimeter?",
+        "answer": "Semiperimeter ialah tepat separuh daripada perimeter: s = P/2. Jika perimeter P = 12, maka semiperimeter s = 6. Semiperimeter digunakan dalam formula Heron dan pengiraan injejari."
+      },
+      {
+        "question": "Bolehkah perimeter segi tiga bersudut tegak menjadi nombor ganjil?",
+        "answer": "Ya. Perimeter boleh menjadi sebarang nombor positif — integer, perpuluhan, atau bukan nisbah. Sebagai contoh, segi tiga bersudut tegak dengan kaki 1 dan 1 mempunyai hipotenus √2 ≈ 1.414, memberikan perimeter ≈ 3.414, yang bukan integer atau nisbah."
+      },
+      {
+        "question": "Mengapakah hipotenus sentiasa menjadi sisi terpanjang?",
+        "answer": "Dalam segi tiga bersudut tegak, hipotenus bertentangan dengan sudut terbesar (90°). Peraturan asas dalam geometri ialah sisi terpanjang sentiasa bertentangan dengan sudut terbesar. Memandangkan tiada sudut dalam segi tiga yang boleh melebihi sudut tegak, c sentiasa menjadi sisi terpanjang."
+      }
+    ]
+  },
+  {
+    "slug": "right-triangle-semiperimeter-calculator",
+    "url": "/right-triangle-semiperimeter-calculator/",
+    "h1": "Kalkulator Semiperimeter Segi Tiga Bersudut Tegak",
+    "metaTitle": "Kalkulator Semiperimeter Segi Tiga Bersudut Tegak | Cari s daripada a, b, dan c",
+    "metaDescription": "Kira semiperimeter segi tiga bersudut tegak s daripada kaki a, kaki b, dan hipotenus c. Termasuk formula, gambar rajah, jalan kerja langkah demi langkah, contoh, kegunaan, dan semakan kesilapan.",
+    "formulaSlug": "semiperimeter",
+    "toolPurpose": "Cari semiperimeter s bagi segi tiga bersudut tegak daripada ketiga-tiga panjang sisi, kemudian gunakannya sebagai titik semak yang jelas untuk luas, injejari dan formula geometri yang bergantung pada separuh perimeter.",
+    "intro": "Masukkan kaki a, kaki b, dan hipotenus c untuk mengira semiperimeter segi tiga bersudut tegak s.",
+    "quickSummary": {
+      "h2": "Apa Yang Diselesaikan Oleh Kalkulator Semiperimeter Ini",
+      "intro": "Gunakan halaman ini apabila anda memerlukan nilai separuh perimeter s untuk segi tiga bersudut tegak. Ia amat berguna sebelum menggunakan formula luas gaya Heron, formula injejari atau identiti geometri yang merujuk pada s.",
+      "cards": [
+        { "label": "Nilai yang diketahui", "value": "Kaki a, kaki b, dan hipotenus c" },
+        { "label": "Mencari", "value": "Semiperimeter s, tepat separuh daripada P" },
+        { "label": "Formula utama", "value": "s = (a + b + c) / 2" },
+        { "label": "Terbaik untuk", "value": "Semakan Heron, kerja injejari, pembuktian geometri, dan tatatanda segi tiga padat" }
+      ]
+    },
+    "calculator": {
+      "outputLabel": "Semiperimeter s",
+      "fields": [
+        { "key": "a", "label": "Kaki a", "min": 0 },
+        { "key": "b", "label": "Kaki b", "min": 0 },
+        { "key": "c", "label": "Hipotenus c", "min": 0 }
+      ]
+    },
+    "diagram": {
+      "h2": "Gambar Rajah Segi Tiga Bersudut Tegak: Semiperimeter Ialah Separuh Sempadan",
+      "intro": "Gambar rajah ini menunjukkan tiga panjang sisi yang sama digunakan untuk perimeter, tetapi hasilnya dibahagikan dengan 2. Semiperimeter masih berdasarkan pinggir luar segi tiga, bukan luas dalaman.",
+      "caption": "Gambar rajah semiperimeter segi tiga bersudut tegak yang menunjukkan sisi a, sisi b, hipotenus c, dan formula s = (a + b + c) / 2.",
+      "formulaLabel": "s = (a + b + c) / 2",
+      "keyLabel": "Kunci Gambar Rajah",
+      "sides": {
+        "a": {
+          "label": "a = kaki pertama",
+          "description": "Kaki a ialah salah satu daripada dua sisi berserenjang yang disertakan dalam jumlah sebelum dibahagikan dengan 2."
+        },
+        "b": {
+          "label": "b = kaki kedua",
+          "description": "Kaki b membentuk sudut tegak dengan a dan menyumbang kepada kedua-dua perimeter dan semiperimeter."
+        },
+        "c": {
+          "label": "c = hipotenus",
+          "description": "Hipotenus c ialah sisi terpanjang dan mesti disertakan sebelum jumlahnya diseparuhkan."
+        }
+      },
+      "result": {
+        "label": "s = separuh daripada jumlah sempadan",
+        "description": "Kalkulator mulanya menambah a + b + c, kemudian membahagikan perimeter itu dengan 2."
+      },
+      "notes": [
+        "Semiperimeter ialah ukuran linear, jadi ia menggunakan unit yang sama seperti panjang sisi.",
+        "Jika P sudah diketahui, gunakan s = P / 2; jika P tidak diketahui, gunakan s = (a + b + c) / 2.",
+        "Bagi segi tiga bersudut tegak yang sah, c hendaklah sisi terpanjang dan hendaklah memenuhi a^2 + b^2 = c^2."
+      ]
+    },
+    "formulaSection": {
+      "h2": "Formula Semiperimeter Segi Tiga Bersudut Tegak",
+      "paragraphs": [
+        "Semiperimeter bagi sebuah segi tiga ialah satu perdua daripada perimeternya. Untuk segi tiga bersudut tegak, perimeternya ialah P = a + b + c, jadi semiperimeternya ialah s = (a + b + c) / 2.",
+        "Huruf s lazim digunakan kerana semiperimeter muncul dalam banyak formula geometri yang padat. Walaupun segi tiga itu bersudut tegak, s berguna sebagai jambatan antara panjang sisi, luas, dan ukuran bulatan seperti injejari.",
+        "Seperti perimeter, semiperimeter diukur dalam unit linear. Jika sisinya dalam m, s adalah dalam m. Jika sisinya dalam in, s adalah dalam in."
+      ],
+      "formulas": [
+        "P = a + b + c",
+        "s = \\frac{P}{2}",
+        "s = \\frac{a + b + c}{2}"
+      ]
+    },
+    "howTo": {
+      "h2": "Cara Mencari Semiperimeter Segi Tiga Bersudut Tegak",
+      "steps": [
+        "Kenal pasti dua kaki segi tiga bersudut tegak. Ini adalah sisi yang bertemu pada sudut 90 darjah.",
+        "Kenal pasti hipotenus c. Ia ialah sisi terpanjang dan bertentangan dengan sudut tegak.",
+        "Pastikan a, b, dan c semuanya menggunakan unit ukuran yang sama.",
+        "Masukkan kaki a, kaki b, dan hipotenus c ke dalam kalkulator.",
+        "Klik Kira untuk menambah ketiga-tiga sisi dan membahagikan jumlahnya dengan 2.",
+        "Semak langkah-langkah yang dipaparkan. Kalkulator harus menunjukkan jumlah perimeter terlebih dahulu, kemudian hasil semiperimeter.",
+        "Gunakan s dalam mana mana formula kemudian yang meminta semiperimeter, seperti injejari atau hubungan luas gaya Heron."
+      ]
+    },
+    "example": {
+      "h2": "Contoh Penyelesaian: Cari Semiperimeter Segi Tiga Bersudut Tegak 3-4-5",
+      "intro": "Diberi a = 3, b = 4, dan c = 5, tambahkan ketiga-tiga sisi dahulu untuk mendapatkan perimeter, kemudian bahagi dengan 2:",
+      "lines": [
+        "s = \\frac{a + b + c}{2}",
+        "s = \\frac{3 + 4 + 5}{2}",
+        "s = \\frac{12}{2}",
+        "s = 6"
+      ],
+      "answer": "Semiperimeter ialah 6 unit. Perimeter penuh ialah 12 unit, dan s adalah separuh tepat daripada jumlah itu."
+    },
+    "extraSections": [
+      {
+        "h2": "Apakah Maksud Semiperimeter?",
+        "paragraphs": [
+          "Semiperimeter secara harfiah bermaksud separuh daripada perimeter. Daripada menulis berulang kali (a + b + c) / 2 dalam formula yang lebih panjang, geometri selalunya menggunakan simbol s yang lebih pendek.",
+          "Untuk segi tiga bersudut tegak, nilai ini sangat mudah kerana label sisi sudah diseragamkan: a dan b ialah kaki, dan c ialah hipotenus. Sebaik sahaja ketiga-tiga panjang sisi diketahui, s ialah nombor padat tunggal yang meringkaskan separuh panjang sempadan."
+        ]
+      },
+      {
+        "h2": "Semiperimeter berbanding Perimeter",
+        "paragraphs": [
+          "Perimeter P mengukur jarak penuh di sekeliling bahagian luar segi tiga. Semiperimeter s mengukur separuh daripada jarak itu. Kedua-dua nilai disambungkan secara langsung: s = P / 2 dan P = 2s.",
+          "Gunakan perimeter apabila masalah meminta jumlah panjang sempadan, seperti kemasan, pemagaran atau jarak tepi. Gunakan semiperimeter apabila formula meminta s secara khusus, atau apabila anda sedang menyediakan nilai untuk hubungan luas dan jejari."
+        ],
+        "listTitle": "Perbandingan pantas:",
+        "listItems": [
+          "Perimeter: P = a + b + c",
+          "Semiperimeter: s = (a + b + c) / 2",
+          "Jika P = 30, maka s = 15",
+          "Jika s = 15, maka P = 30"
+        ]
+      },
+      {
+        "h2": "Mengapakah Semiperimeter Penting dalam Geometri Segi Tiga Bersudut Tegak",
+        "paragraphs": [
+          "Semiperimeter lebih daripada sekadar jalan pintas. Ia ialah nilai pembantu piawai yang digunakan dalam formula yang menghubungkan panjang sisi ke ukuran luas dan bulatan.",
+          "Bagi mana-mana segi tiga, formula Heron menggunakan s untuk mengira luas daripada tiga sisi: A = sqrt(s(s-a)(s-b)(s-c)). Untuk segi tiga bersudut tegak, anda selalunya menggunakan A = (a x b) / 2, tetapi formula Heron masih berguna untuk pengesahan.",
+          "Semiperimeter juga bersambung dengan injejari. Dalam banyak formula segi tiga, luas sama dengan injejari didarabkan dengan semiperimeter: A = r x s. Setelah s diketahui, ia menjadi lebih mudah untuk menyelesaikan r atau mengesahkan hasil injejari."
+        ],
+        "listTitle": "Formula biasa yang menggunakan s:",
+        "listItems": [
+          "Luas gaya Heron: A = sqrt(s(s-a)(s-b)(s-c))",
+          "Hubungan luas-injejari: A = r x s",
+          "Penyusunan semula injejari: r = A / s",
+          "Pemulihan perimeter: P = 2s"
+        ]
+      },
+      {
+        "h2": "Contoh Semiperimeter Tambahan",
+        "paragraphs": [
+          "Contoh-contoh ini menunjukkan bagaimana formula yang sama berfungsi untuk trirangkap nombor bulat dan panjang sisi perpuluhan. Kuncinya ialah untuk menambah ketiga-tiga sisi sebelum membahagi."
+        ],
+        "listTitle": "Contoh 1 - Segi tiga 5-12-13:",
+        "listItems": [
+          "Diberi: a = 5, b = 12, c = 13",
+          "s = (5 + 12 + 13) / 2",
+          "s = 30 / 2 = 15 unit"
+        ]
+      },
+      {
+        "h2": "Contoh 2 - Segi Tiga 8-15-17",
+        "paragraphs": [
+          "Untuk a = 8, b = 15, dan c = 17, perimeter penuh ialah 40 unit."
+        ],
+        "listItems": [
+          "s = (8 + 15 + 17) / 2",
+          "s = 40 / 2",
+          "s = 20 unit"
+        ]
+      },
+      {
+        "h2": "Contoh 3 - Panjang Sisi Perpuluhan",
+        "paragraphs": [
+          "Perpuluhan berfungsi dengan cara yang sama seperti nombor bulat. Diberi a = 2.5, b = 6, dan c = 6.5:"
+        ],
+        "listItems": [
+          "s = (2.5 + 6 + 6.5) / 2",
+          "s = 15 / 2",
+          "s = 7.5 unit"
+        ]
+      },
+      {
+        "h2": "Bila Menggunakan Kalkulator Semiperimeter Ini",
+        "paragraphs": [
+          "Guna kalkulator ini apabila masalah geometri memberikan ketiga-tiga panjang sisi segi tiga bersudut tegak dan meminta s, separuh perimeter atau formula yang bergantung pada semiperimeter.",
+          "Ia juga berguna sebagai semakan pantas selepas menyelesaikan sisi yang hilang. Apabila anda tahu a, b, dan c, semiperimeter haruslah ringkas dan tepat: tambah sisi, kemudian bahagi dengan 2."
+        ],
+        "listTitle": "Kes penggunaan yang baik termasuk:",
+        "listItems": [
+          "Menyediakan input formula Heron daripada tiga panjang sisi.",
+          "Menyemak pengiraan injejari dengan r = A / s.",
+          "Mengurangkan aritmetik berulang dalam kerja rumah atau pembuktian geometri.",
+          "Membandingkan saiz segi tiga menggunakan nilai separuh sempadan.",
+          "Mengesahkan bahawa hasil perimeter dan semiperimeter sepadan: P harus sentiasa sama dengan 2s."
+        ]
+      },
+      {
+        "h2": "Petua Unit untuk Semiperimeter",
+        "paragraphs": [
+          "Semiperimeter ialah panjang, jadi ia mematuhi peraturan penukaran unit panjang biasa. Ia tidak diukur dalam unit persegi.",
+          "Jika input sisi menggunakan unit yang berbeza, tukarkannya terlebih dahulu atau gunakan pemilih unit kalkulator secara konsisten. Menambah ft, in, dan cm secara langsung akan menghasilkan keputusan yang tidak bermakna."
+        ],
+        "listTitle": "Ingat peraturan unit ini:",
+        "listItems": [
+          "Semua panjang sisi harus mewakili sistem unit yang sama sebelum membandingkan keputusan.",
+          "Output s menggunakan unit linear seperti cm, m, in, atau ft.",
+          "Jangan kuasa duakan unit semasa mengira semiperimeter.",
+          "Jika anda menukar sisi selepas mengira, tukar s dengan faktor penukaran linear yang sama."
+        ]
+      },
+      {
+        "h2": "Kesilapan Semiperimeter Biasa",
+        "paragraphs": [
+          "Kebanyakan kesilapan semiperimeter berlaku kerana formula nampak mudah. Aritmetiknya mudah, tetapi tetapannya masih penting."
+        ],
+        "listTitle": "Berhati-hati dengan ralat ini:",
+        "listItems": [
+          "Terlupa untuk membahagi dengan 2 selepas menambah sisi.",
+          "Membahagikan setiap sisi dengan 2 terlebih dahulu, kemudian hilang jejak mengenai jumlahnya.",
+          "Menggunakan hanya dua kaki dan meninggalkan hipotenus.",
+          "Mengelirukan s dengan perimeter P. Ingat bahawa P = 2s.",
+          "Menggunakan panjang sisi yang tidak membentuk segi tiga bersudut tegak.",
+          "Mencampurkan unit yang berbeza dalam pengiraan yang sama."
+        ]
+      },
+      {
+        "h2": "Bagaimana Semiperimeter Menyambung ke Luas dan Injejari",
+        "paragraphs": [
+          "Dalam segi tiga bersudut tegak, luas boleh dikira secara langsung dengan A = (a x b) / 2 kerana kakinya berserenjang. Setelah luas dan semiperimeter diketahui, injejari boleh disemak dengan r = A / s.",
+          "Ini menjadikan semiperimeter satu nilai pertengahan yang berguna. Ia tidak menggantikan formula luas, tetapi ia membantu menyambung panjang sisi kepada ukuran bulatan di dalam segi tiga."
+        ],
+        "listTitle": "Contoh dengan segi tiga 3-4-5:",
+        "listItems": [
+          "Luas: A = (3 x 4) / 2 = 6",
+          "Semiperimeter: s = (3 + 4 + 5) / 2 = 6",
+          "Semakan Injejari: r = A / s = 6 / 6 = 1"
+        ]
+      }
+    ],
+    "relatedLinks": [
+      { "href": "/right-triangle-measurements-calculator/", "label": "Kalkulator Ukuran Segi Tiga Bersudut Tegak" },
+      { "href": "/right-triangle-perimeter-calculator/", "label": "Kalkulator Perimeter Segi Tiga Bersudut Tegak" },
+      { "href": "/right-triangle-area-calculator/", "label": "Kalkulator Luas Segi Tiga Bersudut Tegak" },
+      { "href": "/right-triangle-radius-calculator/", "label": "Kalkulator Jejari Segi Tiga Bersudut Tegak" },
+      { "href": "/pythagorean-theorem-calculator/", "label": "Kalkulator Teorem Pythagoras" }
+    ],
+    "faqs": [
+      {
+        "question": "Apakah formula untuk semiperimeter segi tiga bersudut tegak?",
+        "answer": "Formulanya ialah s = (a + b + c) / 2, di mana a dan b ialah kaki segi tiga bersudut tegak dan c ialah hipotenus. Tambahkan ketiga-tiga panjang sisi, kemudian bahagikan jumlahnya dengan 2."
+      },
+      {
+        "question": "Apakah maksud semiperimeter?",
+        "answer": "Semiperimeter bermaksud separuh daripada perimeter segi tiga. Jika perimeter penuh ialah P, maka s = P / 2. Jika panjang sisi diketahui secara langsung, s = (a + b + c) / 2."
+      },
+      {
+        "question": "Adakah semiperimeter sama dengan perimeter?",
+        "answer": "Tidak. Perimeter ialah panjang sempadan penuh mengelilingi segi tiga, manakala semiperimeter ialah separuh daripada panjang sempadan tersebut. Ia dihubungkan oleh P = 2s."
+      },
+      {
+        "question": "Mengapakah semiperimeter digunakan?",
+        "answer": "Semiperimeter digunakan kerana ia menjadikan formula yang lebih panjang lebih mudah ditulis dan dikira. Ia muncul dalam formula Heron, hubungan luas-injejari A = r x s, dan penyusunan semula injejari r = A / s."
+      },
+      {
+        "question": "Adakah saya memerlukan ketiga-tiga sisi?",
+        "answer": "Ya. Untuk mengira semiperimeter secara langsung, anda memerlukan kaki a, kaki b, dan hipotenus c. Jika satu sisi hilang, selesaikannya dahulu dengan teorem Pythagoras, kemudian kira s."
+      },
+      {
+        "question": "Apakah semiperimeter bagi segi tiga bersudut tegak 3-4-5?",
+        "answer": "Untuk segi tiga bersudut tegak 3-4-5, s = (3 + 4 + 5) / 2 = 12 / 2 = 6 unit."
+      },
+      {
+        "question": "Adakah semiperimeter menggunakan unit persegi?",
+        "answer": "Tidak. Semiperimeter ialah panjang, jadi ia menggunakan unit linear seperti cm, m, in, atau ft. Luas menggunakan unit persegi, tetapi semiperimeter tidak."
+      },
+      {
+        "question": "Bagaimanakah saya boleh menyemak bahawa jawapan semiperimeter saya adalah betul?",
+        "answer": "Gandakan semiperimeter itu. Hasilnya mesti sama dengan perimeter penuh. Sebagai contoh, jika s = 15, maka P sepatutnya 30."
+      }
+    ]
+  }
+]

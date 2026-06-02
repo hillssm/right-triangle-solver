@@ -1,0 +1,640 @@
+[
+  {
+    "slug": "right-triangle-perimeter-calculator",
+    "url": "/right-triangle-perimeter-calculator/",
+    "h1": "Calculatrice du Périmètre d'un Triangle Rectangle",
+    "metaTitle": "Calculatrice du Périmètre d'un Triangle Rectangle | Trouvez le Périmètre Instantanément",
+    "metaDescription": "Calculez le périmètre d'un triangle rectangle à partir du côté a, du côté b et de l'hypoténuse c. Comprend la formule, la solution étape par étape, le diagramme, des exemples et des applications.",
+    "formulaSlug": "perimeter",
+    "toolPurpose": "Entrez les trois côtés d'un triangle rectangle pour calculer instantanément la distance totale autour de celui-ci. La calculatrice montre la formule, le travail étape par étape et un diagramme pour que vous puissiez vérifier chaque valeur avant d'utiliser le résultat.",
+    "intro": "Entrez le côté a, le côté b et l'hypoténuse c pour calculer le périmètre total d'un triangle rectangle.",
+    "quickSummary": {
+      "h2": "Ce Que Résout Cette Calculatrice de Périmètre",
+      "intro": "Utilisez cette page lorsque vous connaissez déjà les trois longueurs des côtés d'un triangle rectangle et que vous avez besoin de la longueur totale de sa bordure. Elle est conçue pour des calculs rapides, prend en compte les unités et permet une vérification visuelle facile.",
+      "cards": [
+        {
+          "label": "Valeurs connues",
+          "value": "Côté a, côté b et hypoténuse c"
+        },
+        {
+          "label": "Trouve",
+          "value": "Le périmètre P, la distance totale autour du triangle"
+        },
+        {
+          "label": "Formule principale",
+          "value": "P = a + b + c"
+        },
+        {
+          "label": "Idéal pour",
+          "value": "Les clôtures, les moulures, les vérifications de tracé, les devoirs de géométrie et la planification de longueurs de bord"
+        }
+      ]
+    },
+    "calculator": {
+      "outputLabel": "Périmètre P",
+      "fields": [
+        {
+          "key": "a",
+          "label": "Côté a",
+          "min": 0
+        },
+        {
+          "key": "b",
+          "label": "Côté b",
+          "min": 0
+        },
+        {
+          "key": "c",
+          "label": "Hypoténuse c",
+          "min": 0
+        }
+      ]
+    },
+    "diagram": {
+      "h2": "Diagramme du Triangle Rectangle : Le Périmètre Utilise les Trois Côtés",
+      "intro": "Le diagramme met en évidence le parcours extérieur complet du triangle rectangle. Le périmètre n'est pas une mesure intérieure ; c'est la somme des deux côtés de l'angle droit et de l'hypoténuse.",
+      "caption": "Diagramme du périmètre du triangle rectangle montrant le côté a, le côté b, l'hypoténuse c et la formule P = a + b + c.",
+      "formulaLabel": "P = a + b + c",
+      "keyLabel": "Légende du Diagramme",
+      "sides": {
+        "a": {
+          "label": "a = premier côté",
+          "description": "Le côté a est l'un des côtés de l'angle à 90 degrés et est inclus une fois dans le périmètre."
+        },
+        "b": {
+          "label": "b = deuxième côté",
+          "description": "Le côté b est l'autre côté de l'angle droit et est additionné à a et c."
+        },
+        "c": {
+          "label": "c = hypoténuse",
+          "description": "L'hypoténuse c est le côté le plus long, opposé à l'angle droit, et complète la bordure extérieure."
+        }
+      },
+      "result": {
+        "label": "P = longueur totale de la bordure",
+        "description": "La calculatrice additionne a + b + c et renvoie le périmètre dans l'unité linéaire sélectionnée."
+      },
+      "notes": [
+        "Les trois côtés doivent utiliser la même unité avant que vous ne compariez ou ne réutilisiez la réponse.",
+        "Si un côté manque, résolvez d'abord ce côté avec le théorème de Pythagore, puis revenez au périmètre.",
+        "Le résultat du périmètre est une longueur, pas une surface en unités carrées."
+      ]
+    },
+    "formulaSection": {
+      "h2": "Formule du Périmètre d'un Triangle Rectangle",
+      "paragraphs": [
+        "Le périmètre de tout polygone est la longueur totale de sa limite. Pour un triangle rectangle, la limite se compose d'exactement trois côtés droits : deux côtés de l'angle droit (a et b) qui forment l'angle de 90° et une hypoténuse (c) qui s'étend de l'angle droit au sommet opposé.",
+        "Puisqu'un triangle rectangle ne comporte que trois côtés, la formule du périmètre est la somme la plus simple possible. Aucune trigonométrie, racine carrée ou exposant n'est nécessaire — juste une addition."
+      ],
+      "formulas": [
+        "P = a + b + c"
+      ]
+    },
+    "howTo": {
+      "h2": "Comment Trouver le Périmètre d'un Triangle Rectangle",
+      "steps": [
+        "Identifiez les trois côtés du triangle rectangle. Étiquetez les deux côtés les plus courts comme côté a et côté b, et le côté le plus long comme hypoténuse c.",
+        "Assurez-vous que les trois mesures utilisent la même unité. Convertissez si nécessaire avant de saisir les valeurs.",
+        "Entrez le côté a dans le premier champ de la calculatrice.",
+        "Entrez le côté b dans le deuxième champ de la calculatrice.",
+        "Entrez l'hypoténuse c dans le troisième champ de la calculatrice.",
+        "Cliquez sur Calculer. La calculatrice additionne les trois valeurs et affiche le périmètre P avec le travail étape par étape.",
+        "Vérifiez le résultat dans le diagramme pour confirmer visuellement que les longueurs des côtés correspondent à votre triangle."
+      ]
+    },
+    "example": {
+      "h2": "Exemple Résolu : Trouver le Périmètre d'un Triangle Rectangle 3-4-5",
+      "intro": "Le triangle 3-4-5 est l'un des triplets pythagoriciens les plus courants. Étant donné a = 3, b = 4, c = 5 :",
+      "lines": [
+        "P = a + b + c",
+        "P = 3 + 4 + 5",
+        "P = 12"
+      ],
+      "answer": "Le périmètre de ce triangle rectangle est de 12 unités. Puisque 3² + 4² = 9 + 16 = 25 = 5², les côtés satisfont le théorème de Pythagore et confirment un triangle rectangle valide."
+    },
+    "extraSections": [
+      {
+        "h2": "Qu'est-ce que le Périmètre d'un Triangle Rectangle ?",
+        "paragraphs": [
+          "Le périmètre d'un triangle rectangle est la distance totale que vous parcourriez si vous marchiez le long des trois bords du triangle, en commençant par un sommet et en revenant au même sommet. Il représente la limite extérieure de la forme triangulaire.",
+          "Chaque triangle rectangle a trois côtés : deux côtés qui se rencontrent à l'angle droit (90°) et une hypoténuse opposée à l'angle droit. L'hypoténuse est toujours le plus long des trois côtés. Lorsque vous additionnez les longueurs des trois côtés, vous obtenez le périmètre.",
+          "Le périmètre est une mesure unidimensionnelle exprimée en unités linéaires (comme cm, m, ft ou in). C'est différent de la surface, qui mesure l'espace bidimensionnel à l'intérieur du triangle et s'exprime en unités carrées."
+        ]
+      },
+      {
+        "h2": "Comprendre les Côtés d'un Triangle Rectangle",
+        "paragraphs": [
+          "Avant de calculer le périmètre, il est utile d'identifier clairement chaque côté du triangle rectangle. Mal étiqueter un côté est la source d'erreur la plus courante.",
+          "Dans la convention d'étiquetage standard, les deux côtés qui forment l'angle droit sont appelés les côtés (ou cathètes). Le côté opposé à l'angle droit s'appelle l'hypoténuse. L'hypoténuse est toujours plus longue que l'un ou l'autre des côtés individuellement, mais elle est toujours plus courte que la somme des deux côtés."
+        ],
+        "listTitle": "Les trois côtés en un coup d'œil :",
+        "listItems": [
+          "Côté a — L'un des deux côtés qui forment l'angle à 90°. Ce peut être le côté vertical ou horizontal, selon l'orientation.",
+          "Côté b — L'autre côté qui forme l'angle à 90°. Avec le côté a, il définit l'angle droit.",
+          "Hypoténuse c — Le côté le plus long, s'étendant d'un sommet d'angle aigu à l'autre, directement opposé à l'angle droit.",
+          "La relation pythagoricienne est vérifiée : a² + b² = c². Cela vous permet de vérifier que vos trois valeurs forment bien un triangle rectangle."
+        ]
+      },
+      {
+        "h2": "Comment est Dérivée la Formule du Périmètre",
+        "paragraphs": [
+          "La formule du périmètre P = a + b + c est une application directe de la définition générale du périmètre des polygones : additionner les longueurs de tous les côtés. Pour un triangle, il y a exactement trois côtés, le périmètre est donc la somme de trois longueurs.",
+          "Aucune dérivation ou réarrangement n'est nécessaire car la formule est le cas le plus simple possible de mesure du périmètre. Cependant, la formule devient plus intéressante lorsque seuls deux côtés sont connus, car vous pouvez utiliser le théorème de Pythagore pour trouver le troisième côté manquant puis calculer le périmètre."
+        ]
+      },
+      {
+        "h2": "Trouver le Périmètre Lorsqu'un Côté est Manquant",
+        "paragraphs": [
+          "Si vous ne connaissez que deux des trois côtés d'un triangle rectangle, vous pouvez quand même trouver le périmètre. Utilisez le théorème de Pythagore (a² + b² = c²) pour calculer d'abord le côté manquant, puis additionnez les trois pour obtenir le périmètre.",
+          "Cette approche vous permet de travailler avec les deux scénarios les plus courants : connaître les deux côtés de l'angle droit mais pas l'hypoténuse, ou connaître l'hypoténuse et un côté mais pas l'autre."
+        ],
+        "listTitle": "Formules pour chaque cas de côté manquant :",
+        "listItems": [
+          "Si c manque : c = √(a² + b²), puis P = a + b + √(a² + b²)",
+          "Si b manque : b = √(c² - a²), puis P = a + √(c² - a²) + c",
+          "Si a manque : a = √(c² - b²), puis P = √(c² - b²) + b + c",
+          "Vérifiez toujours que c > a et c > b lorsque vous utilisez la forme de soustraction, sinon les valeurs ne forment pas un triangle rectangle valide."
+        ]
+      },
+      {
+        "h2": "Exemples Résolus Supplémentaires",
+        "paragraphs": [
+          "S'entraîner avec différents triangles aide à prendre confiance. Voici trois autres exemples résolus utilisant des triplets pythagoriciens courants et des valeurs décimales."
+        ],
+        "listTitle": "Exemple 1 — Le triangle 5-12-13 :",
+        "listItems": [
+          "Étant donné : a = 5, b = 12, c = 13",
+          "P = 5 + 12 + 13 = 30 unités",
+          "Vérification : 5² + 12² = 25 + 144 = 169 = 13² ✓"
+        ]
+      },
+      {
+        "h2": "Exemple 2 — Le Triangle 8-15-17",
+        "paragraphs": [
+          "Étant donné : a = 8, b = 15, c = 17. Il s'agit d'un autre triplet pythagoricien où tous les côtés sont des nombres entiers."
+        ],
+        "listItems": [
+          "P = 8 + 15 + 17 = 40 unités",
+          "Vérification : 8² + 15² = 64 + 225 = 289 = 17² ✓",
+          "Ce triplet est utile dans les tracés de construction où des longueurs de clôture ou de moulure de 40 unités sont nécessaires."
+        ]
+      },
+      {
+        "h2": "Exemple 3 — Côtés Décimaux",
+        "paragraphs": [
+          "Tous les triangles rectangles n'ont pas des côtés en nombres entiers. Étant donné : a = 2.5, b = 6, c = 6.5."
+        ],
+        "listItems": [
+          "P = 2.5 + 6 + 6.5 = 15 unités",
+          "Vérification : 2.5² + 6² = 6.25 + 36 = 42.25 = 6.5² ✓",
+          "Les valeurs décimales fonctionnent de la même manière — il suffit de les additionner directement."
+        ]
+      },
+      {
+        "h2": "Périmètre vs. Surface : Quelle est la Différence ?",
+        "paragraphs": [
+          "Le périmètre et la surface décrivent tous deux un triangle, mais ils mesurent des choses différentes. Le périmètre mesure la longueur totale du bord extérieur (une mesure linéaire), tandis que la surface mesure l'espace clos à l'intérieur du triangle (une mesure carrée).",
+          "Pour un triangle rectangle avec les côtés a et b et l'hypoténuse c, les deux formules sont : P = a + b + c pour le périmètre, et A = (a × b) / 2 pour la surface. Remarquez que la formule de surface n'utilise que les deux côtés de l'angle droit (car ils sont perpendiculaires), tandis que la formule du périmètre utilise les trois côtés.",
+          "Une erreur courante consiste à confondre les deux. Si un problème demande la distance d'une clôture autour d'une parcelle triangulaire, vous avez besoin du périmètre. S'il demande la couverture de la surface (comme peindre ou carreler), vous avez besoin de la surface."
+        ]
+      },
+      {
+        "h2": "Applications du Périmètre d'un Triangle Rectangle dans le Monde Réel",
+        "paragraphs": [
+          "Connaître le périmètre d'un triangle rectangle est essentiel dans de nombreuses situations pratiques. Chaque fois que vous devez mesurer, couper ou acheter un matériau qui fait le tour des bords d'une forme triangulaire à angle droit, le périmètre vous indique exactement la quantité de matériau requise."
+        ],
+        "listTitle": "Utilisations courantes dans le monde réel :",
+        "listItems": [
+          "Clôtures — Un parterre de jardin triangulaire ou un terrain d'angle nécessite une clôture sur les trois côtés. Le périmètre vous indique combien de ft de clôture linéaire acheter.",
+          "Garnitures et moulures — Un élément architectural triangulaire (comme un pignon) a besoin de moulures le long de ses bords. Le périmètre donne la longueur totale de la moulure.",
+          "Fil et corde — L'encadrement d'un affichage à angle droit, d'une bannière ou d'une voile nécessite une corde, un fil ou une bordure égale au périmètre.",
+          "Pistes de jogging et de marche — Une piste de course triangulaire ou un sentier pédestre autour d'un parc à angle droit a une distance totale égale au périmètre.",
+          "Tracé de construction — Les constructeurs utilisent la règle 3-4-5 pour vérifier si un coin est carré. Connaître le périmètre aide à vérifier les mesures.",
+          "Artisanat et couture — La reliure, le passepoil ou la dentelle autour d'un coussin ou d'un fanion triangulaire nécessite un matériau d'une longueur égale au périmètre.",
+          "Calculs cartographiques et topographiques — Les géomètres mesurent des parcelles de terrain triangulaires et ont besoin du périmètre pour les descriptions de limites et les registres de propriété."
+        ]
+      },
+      {
+        "h2": "Relation Entre le Périmètre et le Demi-périmètre",
+        "paragraphs": [
+          "Le demi-périmètre (s) est exactement la moitié du périmètre : s = P / 2 = (a + b + c) / 2. Bien que le périmètre vous donne la longueur totale de la bordure, le demi-périmètre est une valeur de commodité utilisée dans des formules plus avancées.",
+          "Le demi-périmètre apparaît dans la formule de Héron pour la surface d'un triangle : A = √[s(s-a)(s-b)(s-c)]. Il est également utilisé pour calculer le rayon du cercle inscrit (inrayon) : r = A / s. Le périmètre est donc le point de départ de plusieurs calculs triangulaires importants.",
+          "Si vous avez déjà calculé le périmètre avec cet outil, vous pouvez trouver le demi-périmètre en divisant simplement le résultat par 2, ou utiliser notre calculatrice de demi-périmètre dédiée."
+        ]
+      },
+      {
+        "h2": "Conseils de Conversion d'Unités",
+        "paragraphs": [
+          "Le résultat du périmètre n'a de sens que si les trois côtés entrés utilisent la même unité. Si vos mesures sont dans des unités différentes, convertissez-les d'abord. La calculatrice comprend un sélecteur d'unité pour chaque champ d'entrée afin de gérer automatiquement les conversions.",
+          "N'oubliez pas que le périmètre est une mesure linéaire, de sorte que les conversions suivent les rapports de longueur standard, et non les rapports de surface. Par exemple, pour convertir des ft en m, multipliez par 0.3048 (pas par 0.3048²)."
+        ],
+        "listTitle": "Rappels de conversion rapides :",
+        "listItems": [
+          "1 in = 2.54 cm",
+          "1 ft = 12 in = 0.3048 m",
+          "1 yd = 3 ft = 0.9144 m",
+          "1 m = 100 cm = 3.2808 ft",
+          "1 km = 1000 m = 0.6214 mi",
+          "1 mi = 5280 ft = 1.6093 km"
+        ]
+      },
+      {
+        "h2": "Erreurs Courantes Lors du Calcul du Périmètre",
+        "paragraphs": [
+          "La formule du périmètre est simple, mais des erreurs se produisent toujours. La plupart des erreurs proviennent d'entrées incorrectes plutôt que de mauvais calculs. Détecter ces problèmes avant de calculer fait gagner du temps et évite de mauvaises réponses."
+        ],
+        "listTitle": "Faites attention à ces pièges :",
+        "listItems": [
+          "N'utiliser que deux côtés — Le périmètre nécessite les trois côtés. Oublier l'hypoténuse ou un côté donne une réponse incomplète.",
+          "Mélanger les unités — Si le côté a est en in et le côté b est en cm, la somme n'a aucun sens. Convertissez d'abord en une seule unité.",
+          "Confondre le périmètre avec la surface — Le périmètre est une longueur (mesurée en unités), tandis que la surface est une zone (mesurée en unités carrées). Assurez-vous de savoir ce que le problème demande.",
+          "Utiliser des côtés qui ne forment pas un triangle rectangle — Vérifiez que a² + b² = c². Si cette équation n'est pas vérifiée, le triangle n'est pas rectangle et c n'est pas une véritable hypoténuse.",
+          "Arrondir trop tôt — Si un côté est irrationnel (comme √2), conservez la précision complète jusqu'à l'addition finale pour éviter d'accumuler les erreurs d'arrondi.",
+          "Entrer l'hypoténuse comme un côté de l'angle droit — L'hypoténuse doit être le côté le plus long. Si vous placez une valeur plus courte dans le champ de l'hypoténuse, le diagramme sera erroné et la vérification pythagoricienne échouera."
+        ]
+      },
+      {
+        "h2": "Propriétés du Périmètre d'un Triangle Rectangle",
+        "paragraphs": [
+          "Les triangles rectangles ont des propriétés de périmètre spéciales qui les distinguent des autres triangles. Comprendre ces propriétés peut vous aider à vérifier vos calculs et à détecter les erreurs.",
+          "Dans tout triangle rectangle, l'hypoténuse c est toujours inférieure à la somme des deux autres côtés (a + b) mais supérieure à l'un ou l'autre de ces côtés seul. Cela signifie que le périmètre P est toujours supérieur à 2c (puisque a + b > c) et inférieur à 2(a + b), qui équivaut à 2a + 2b."
+        ],
+        "listTitle": "Propriétés clés du périmètre :",
+        "listItems": [
+          "P est toujours supérieur à 2 × (le côté le plus long) car les deux autres côtés ajoutent de la longueur supplémentaire.",
+          "P est toujours inférieur à 3 × (le côté le plus long) car c > a et c > b, donc a + b < 2c.",
+          "Pour un triangle 45-45-90 avec des côtés de longueur k, P = k + k + k√2 = k(2 + √2) ≈ 3.414k.",
+          "Pour un triangle 30-60-90 avec le côté le plus court k, P = k + k√3 + 2k = k(3 + √3) ≈ 4.732k.",
+          "Parmi tous les triangles rectangles avec la même hypoténuse, le triangle rectangle isocèle (45-45-90) a le plus grand périmètre."
+        ]
+      }
+    ],
+    "relatedLinks": [
+      {
+        "href": "/right-triangle-measurements-calculator/",
+        "label": "Calculatrice de Mesures d'un Triangle Rectangle"
+      },
+      {
+        "href": "/right-triangle-semiperimeter-calculator/",
+        "label": "Calculatrice du Demi-périmètre d'un Triangle Rectangle"
+      },
+      {
+        "href": "/right-triangle-side-calculator/",
+        "label": "Calculatrice de Côté d'un Triangle Rectangle"
+      },
+      {
+        "href": "/right-triangle-area-calculator/",
+        "label": "Calculatrice de Surface d'un Triangle Rectangle"
+      },
+      {
+        "href": "/pythagorean-theorem-calculator/",
+        "label": "Calculatrice du Théorème de Pythagore"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Quelle est la formule du périmètre d'un triangle rectangle ?",
+        "answer": "La formule du périmètre est P = a + b + c, où a et b sont les deux côtés (les côtés formant l'angle de 90°) et c est l'hypoténuse (le côté le plus long, opposé à l'angle droit). Additionnez simplement les trois longueurs de côté."
+      },
+      {
+        "question": "Que signifie chaque variable dans P = a + b + c ?",
+        "answer": "P est le périmètre (longueur totale de la limite). a est un côté du triangle rectangle. b est l'autre côté de l'angle droit. c est l'hypoténuse — le côté le plus long qui se trouve à l'opposé de l'angle droit. Les deux côtés a et b forment le coin à 90°."
+      },
+      {
+        "question": "Puis-je trouver le périmètre avec seulement deux côtés ?",
+        "answer": "Oui, mais vous devez d'abord calculer le troisième côté manquant en utilisant le théorème de Pythagore : c = √(a² + b²) si l'hypoténuse manque, ou côté manquant = √(c² - côté connu²). Ensuite, additionnez les trois côtés pour obtenir le périmètre."
+      },
+      {
+        "question": "Le périmètre est-il la même chose que la surface ?",
+        "answer": "Non. Le périmètre (P = a + b + c) mesure la distance totale autour du triangle en unités linéaires (cm, m, ft). La surface (A = a×b/2) mesure l'espace clos à l'intérieur du triangle en unités carrées (cm², m², ft²). Ce sont des mesures fondamentalement différentes."
+      },
+      {
+        "question": "Les trois côtés doivent-ils être dans la même unité ?",
+        "answer": "Oui. Les trois côtés doivent être exprimés dans la même unité avant d'être additionnés. Si un côté est en in et un autre en cm, convertissez-les d'abord en une unité commune. La calculatrice comprend des sélecteurs d'unités sur chaque entrée pour gérer cela automatiquement."
+      },
+      {
+        "question": "Quel est le périmètre d'un triangle rectangle 3-4-5 ?",
+        "answer": "Le périmètre est de 3 + 4 + 5 = 12 unités. Le triangle 3-4-5 est le plus petit triplet pythagoricien avec des côtés entiers. Toute version mise à l'échelle (comme 6-8-10 ou 9-12-15) maintient le même rapport avec le périmètre mis à l'échelle proportionnellement."
+      },
+      {
+        "question": "Comment vérifier que mon triangle est bien un triangle rectangle ?",
+        "answer": "Vérifiez que a² + b² = c², où c est le côté le plus long. Si cette équation est vraie, le triangle a un angle de 90° et est un triangle rectangle. Si elle n'est pas vérifiée, la formule du périmètre fonctionne toujours mais le triangle n'est pas rectangle."
+      },
+      {
+        "question": "Quelle est la relation entre le périmètre et le demi-périmètre ?",
+        "answer": "Le demi-périmètre est exactement la moitié du périmètre : s = P/2. Si le périmètre P = 12, alors le demi-périmètre s = 6. Le demi-périmètre est utilisé dans la formule de Héron et les calculs du rayon du cercle inscrit."
+      },
+      {
+        "question": "Le périmètre d'un triangle rectangle peut-il être un nombre impair ?",
+        "answer": "Oui. Le périmètre peut être n'importe quel nombre positif — entier, décimal ou irrationnel. Par exemple, un triangle rectangle avec des côtés 1 et 1 a une hypoténuse √2 ≈ 1.414, ce qui donne un périmètre ≈ 3.414, qui n'est ni un entier ni un rationnel."
+      },
+      {
+        "question": "Pourquoi l'hypoténuse est-elle toujours le côté le plus long ?",
+        "answer": "Dans un triangle rectangle, l'hypoténuse est opposée à l'angle le plus grand (90°). Une règle fondamentale en géométrie est que le côté le plus long est toujours opposé à l'angle le plus grand. Puisqu'aucun angle dans un triangle ne peut dépasser l'angle droit, c est toujours le côté le plus long."
+      }
+    ]
+  },
+  {
+    "slug": "right-triangle-semiperimeter-calculator",
+    "url": "/right-triangle-semiperimeter-calculator/",
+    "h1": "Calculatrice de Demi-périmètre d'un Triangle Rectangle",
+    "metaTitle": "Calculatrice de Demi-périmètre d'un Triangle Rectangle | Trouvez s à partir de a, b et c",
+    "metaDescription": "Calculez le demi-périmètre s d'un triangle rectangle à partir du côté a, du côté b et de l'hypoténuse c. Comprend la formule, le diagramme, le travail étape par étape, des exemples, des utilisations et des vérifications d'erreurs.",
+    "formulaSlug": "semiperimeter",
+    "toolPurpose": "Trouvez le demi-périmètre s d'un triangle rectangle à partir des trois longueurs de côté, puis utilisez-le comme point de contrôle pour la surface, le rayon du cercle inscrit et les formules géométriques qui dépendent de la moitié du périmètre.",
+    "intro": "Entrez le côté a, le côté b et l'hypoténuse c pour calculer le demi-périmètre s du triangle rectangle.",
+    "quickSummary": {
+      "h2": "Ce Que Résout Cette Calculatrice de Demi-périmètre",
+      "intro": "Utilisez cette page lorsque vous avez besoin de la valeur du demi-périmètre s pour un triangle rectangle. C'est particulièrement utile avant d'utiliser les formules de surface de type Héron, les formules du rayon du cercle inscrit ou les identités géométriques qui font référence à s.",
+      "cards": [
+        {
+          "label": "Valeurs connues",
+          "value": "Côté a, côté b et hypoténuse c"
+        },
+        {
+          "label": "Trouve",
+          "value": "Le demi-périmètre s, exactement la moitié de P"
+        },
+        {
+          "label": "Formule principale",
+          "value": "s = (a + b + c) / 2"
+        },
+        {
+          "label": "Idéal pour",
+          "value": "La vérification de Héron, les calculs du rayon inscrit, les preuves géométriques et la notation de triangle compacte"
+        }
+      ]
+    },
+    "calculator": {
+      "outputLabel": "Demi-périmètre s",
+      "fields": [
+        {
+          "key": "a",
+          "label": "Côté a",
+          "min": 0
+        },
+        {
+          "key": "b",
+          "label": "Côté b",
+          "min": 0
+        },
+        {
+          "key": "c",
+          "label": "Hypoténuse c",
+          "min": 0
+        }
+      ]
+    },
+    "diagram": {
+      "h2": "Diagramme du Triangle Rectangle : Le Demi-périmètre Est la Moitié de la Limite",
+      "intro": "Le diagramme montre les trois mêmes longueurs de côté utilisées pour le périmètre, mais le résultat est divisé par 2. Le demi-périmètre est toujours basé sur le bord extérieur du triangle, pas sur la surface intérieure.",
+      "caption": "Diagramme du demi-périmètre du triangle rectangle montrant le côté a, le côté b, l'hypoténuse c et la formule s = (a + b + c) / 2.",
+      "formulaLabel": "s = (a + b + c) / 2",
+      "keyLabel": "Légende du Diagramme",
+      "sides": {
+        "a": {
+          "label": "a = premier côté",
+          "description": "Le côté a est l'un des deux côtés perpendiculaires inclus dans le total avant la division par 2."
+        },
+        "b": {
+          "label": "b = deuxième côté",
+          "description": "Le côté b forme l'angle droit avec a et contribue à la fois au périmètre et au demi-périmètre."
+        },
+        "c": {
+          "label": "c = hypoténuse",
+          "description": "L'hypoténuse c est le côté le plus long et doit être incluse avant que le total ne soit réduit de moitié."
+        }
+      },
+      "result": {
+        "label": "s = la moitié du total de la limite",
+        "description": "La calculatrice additionne d'abord a + b + c, puis divise ce périmètre par 2."
+      },
+      "notes": [
+        "Le demi-périmètre est une mesure linéaire, il utilise donc la même unité que les longueurs de côté.",
+        "Si P est déjà connu, utilisez s = P / 2 ; si P n'est pas connu, utilisez s = (a + b + c) / 2.",
+        "Pour un triangle rectangle valide, c doit être le côté le plus long et doit satisfaire a^2 + b^2 = c^2."
+      ]
+    },
+    "formulaSection": {
+      "h2": "Formule du Demi-périmètre d'un Triangle Rectangle",
+      "paragraphs": [
+        "Le demi-périmètre d'un triangle est la moitié de son périmètre. Pour un triangle rectangle, le périmètre est P = a + b + c, le demi-périmètre est donc s = (a + b + c) / 2.",
+        "La lettre s est couramment utilisée car le demi-périmètre apparaît dans de nombreuses formules géométriques compactes. Même lorsque le triangle est rectangle, s est utile comme pont entre les longueurs de côté, la surface et les mesures du cercle telles que le rayon du cercle inscrit.",
+        "Comme le périmètre, le demi-périmètre est mesuré en unités linéaires. Si les côtés sont en m, s est en m. Si les côtés sont en in, s est en in."
+      ],
+      "formulas": [
+        "P = a + b + c",
+        "s = \\frac{P}{2}",
+        "s = \\frac{a + b + c}{2}"
+      ]
+    },
+    "howTo": {
+      "h2": "Comment Trouver le Demi-périmètre d'un Triangle Rectangle",
+      "steps": [
+        "Identifiez les deux côtés de l'angle droit du triangle rectangle. Ce sont les côtés qui se rencontrent à l'angle de 90 degrés.",
+        "Identifiez l'hypoténuse c. C'est le côté le plus long et il se trouve à l'opposé de l'angle droit.",
+        "Assurez-vous que a, b et c utilisent tous la même unité de mesure.",
+        "Entrez le côté a, le côté b et l'hypoténuse c dans la calculatrice.",
+        "Cliquez sur Calculer pour additionner les trois côtés et diviser le total par 2.",
+        "Vérifiez les étapes affichées. La calculatrice doit d'abord afficher le total du périmètre, puis le résultat du demi-périmètre.",
+        "Utilisez s dans toute formule ultérieure qui demande le demi-périmètre, comme pour le rayon du cercle inscrit ou les relations de surface de type Héron."
+      ]
+    },
+    "example": {
+      "h2": "Exemple Résolu : Trouver le Demi-périmètre d'un Triangle Rectangle 3-4-5",
+      "intro": "Étant donné a = 3, b = 4 et c = 5, additionnez d'abord les trois côtés pour obtenir le périmètre, puis divisez par 2 :",
+      "lines": [
+        "s = \\frac{a + b + c}{2}",
+        "s = \\frac{3 + 4 + 5}{2}",
+        "s = \\frac{12}{2}",
+        "s = 6"
+      ],
+      "answer": "Le demi-périmètre est de 6 unités. Le périmètre complet est de 12 unités, et s est exactement la moitié de ce total."
+    },
+    "extraSections": [
+      {
+        "h2": "Que Signifie Demi-périmètre ?",
+        "paragraphs": [
+          "Demi-périmètre signifie littéralement la moitié du périmètre. Au lieu d'écrire de manière répétée (a + b + c) / 2 dans des formules plus longues, la géométrie utilise souvent le symbole plus court s.",
+          "Pour un triangle rectangle, cette valeur est particulièrement pratique car les étiquettes des côtés sont déjà standardisées : a et b sont les côtés de l'angle droit, et c est l'hypoténuse. Une fois que ces trois longueurs de côté sont connues, s est un nombre compact unique qui résume la moitié de la longueur de la limite."
+        ]
+      },
+      {
+        "h2": "Demi-périmètre vs. Périmètre",
+        "paragraphs": [
+          "Le périmètre P mesure la distance totale autour de l'extérieur du triangle. Le demi-périmètre s mesure la moitié de cette distance. Les deux valeurs sont directement liées : s = P / 2 et P = 2s.",
+          "Utilisez le périmètre lorsqu'un problème demande la longueur totale de la bordure, comme pour les moulures, les clôtures ou la distance de bord. Utilisez le demi-périmètre lorsqu'une formule demande spécifiquement s, ou lorsque vous préparez des valeurs pour les relations de surface et de rayon."
+        ],
+        "listTitle": "Comparaison rapide :",
+        "listItems": [
+          "Périmètre : P = a + b + c",
+          "Demi-périmètre : s = (a + b + c) / 2",
+          "Si P = 30, alors s = 15",
+          "Si s = 15, alors P = 30"
+        ]
+      },
+      {
+        "h2": "Pourquoi le Demi-périmètre Compte dans la Géométrie du Triangle Rectangle",
+        "paragraphs": [
+          "Le demi-périmètre est plus qu'un raccourci. C'est une valeur auxiliaire standard utilisée dans les formules qui relient les longueurs des côtés à la surface et aux mesures du cercle.",
+          "Pour n'importe quel triangle, la formule de Héron utilise s pour calculer la surface à partir de trois côtés : A = sqrt(s(s-a)(s-b)(s-c)). Pour un triangle rectangle, vous utilisez souvent A = (a x b) / 2, mais la formule de Héron reste utile pour la vérification.",
+          "Le demi-périmètre se connecte également au rayon du cercle inscrit (inrayon). Dans de nombreuses formules de triangle, la surface est égale au rayon inscrit multiplié par le demi-périmètre : A = r x s. Une fois que s est connu, il devient plus facile de résoudre pour r ou de vérifier un résultat d'inrayon."
+        ],
+        "listTitle": "Formules courantes qui utilisent s :",
+        "listItems": [
+          "Surface de type Héron : A = sqrt(s(s-a)(s-b)(s-c))",
+          "Relation surface-inrayon : A = r x s",
+          "Réarrangement pour l'inrayon : r = A / s",
+          "Récupération du périmètre : P = 2s"
+        ]
+      },
+      {
+        "h2": "Exemples Supplémentaires de Demi-périmètre",
+        "paragraphs": [
+          "Ces exemples montrent comment la même formule fonctionne pour des triplets de nombres entiers et des longueurs de côté décimales. L'essentiel est d'additionner les trois côtés avant de diviser."
+        ],
+        "listTitle": "Exemple 1 - Triangle 5-12-13 :",
+        "listItems": [
+          "Étant donné : a = 5, b = 12, c = 13",
+          "s = (5 + 12 + 13) / 2",
+          "s = 30 / 2 = 15 unités"
+        ]
+      },
+      {
+        "h2": "Exemple 2 - Triangle 8-15-17",
+        "paragraphs": [
+          "Pour a = 8, b = 15 et c = 17, le périmètre complet est de 40 unités."
+        ],
+        "listItems": [
+          "s = (8 + 15 + 17) / 2",
+          "s = 40 / 2",
+          "s = 20 unités"
+        ]
+      },
+      {
+        "h2": "Exemple 3 - Longueurs de Côté Décimales",
+        "paragraphs": [
+          "Les décimales fonctionnent de la même manière que les nombres entiers. Étant donné a = 2.5, b = 6 et c = 6.5 :"
+        ],
+        "listItems": [
+          "s = (2,5 + 6 + 6,5) / 2",
+          "s = 15 / 2",
+          "s = 7.5 unités"
+        ]
+      },
+      {
+        "h2": "Quand Utiliser Cette Calculatrice de Demi-périmètre",
+        "paragraphs": [
+          "Utilisez cette calculatrice lorsqu'un problème de géométrie donne les trois longueurs des côtés d'un triangle rectangle et demande s, la moitié du périmètre ou une formule qui dépend du demi-périmètre.",
+          "C'est également utile comme vérification rapide après avoir résolu un côté manquant. Une fois que vous connaissez a, b et c, le demi-périmètre doit être simple et exact : additionnez les côtés, puis divisez par 2."
+        ],
+        "listTitle": "De bons cas d'utilisation incluent :",
+        "listItems": [
+          "Préparation des entrées de la formule de Héron à partir de trois longueurs de côté.",
+          "Vérification des calculs du rayon inscrit avec r = A / s.",
+          "Réduction de l'arithmétique répétée dans les devoirs de géométrie ou les preuves.",
+          "Comparaison des tailles de triangle en utilisant les valeurs de la moitié de la limite.",
+          "Vérification que les résultats du périmètre et du demi-périmètre correspondent : P doit toujours être égal à 2s."
+        ]
+      },
+      {
+        "h2": "Conseils d'Unités pour le Demi-périmètre",
+        "paragraphs": [
+          "Le demi-périmètre est une longueur, il suit donc les règles ordinaires de conversion des unités de longueur. Il n'est pas mesuré en unités carrées.",
+          "Si les entrées de côté utilisent des unités différentes, convertissez-les d'abord ou utilisez les sélecteurs d'unité de la calculatrice de manière cohérente. Additionner des ft, des in et des cm directement produirait un résultat dénué de sens."
+        ],
+        "listTitle": "Gardez ces règles d'unités à l'esprit :",
+        "listItems": [
+          "Toutes les longueurs de côté doivent représenter le même système d'unités avant de comparer les résultats.",
+          "Le résultat s utilise une unité linéaire telle que cm, m, in ou ft.",
+          "N'élevez pas les unités au carré lors du calcul du demi-périmètre.",
+          "Si vous convertissez les côtés après le calcul, convertissez s par le même facteur de conversion linéaire."
+        ]
+      },
+      {
+        "h2": "Erreurs Courantes Concernant le Demi-périmètre",
+        "paragraphs": [
+          "La plupart des erreurs de demi-périmètre se produisent parce que la formule semble simple. L'arithmétique est facile, mais la configuration compte toujours."
+        ],
+        "listTitle": "Faites attention à ces erreurs :",
+        "listItems": [
+          "Oublier de diviser par 2 après avoir additionné les côtés.",
+          "Diviser d'abord chaque côté par 2, puis perdre le fil du total.",
+          "N'utiliser que les deux côtés de l'angle droit et omettre l'hypoténuse.",
+          "Confondre s avec le périmètre P. N'oubliez pas que P = 2s.",
+          "Utiliser des longueurs de côté qui ne forment pas un triangle rectangle.",
+          "Mélanger différentes unités dans le même calcul."
+        ]
+      },
+      {
+        "h2": "Comment le Demi-périmètre se Connecte à la Surface et au Rayon Inscrit",
+        "paragraphs": [
+          "Dans un triangle rectangle, la surface peut être calculée directement avec A = (a x b) / 2 car les deux côtés sont perpendiculaires. Une fois que la surface et le demi-périmètre sont connus, le rayon du cercle inscrit peut être vérifié avec r = A / s.",
+          "Cela fait du demi-périmètre une valeur intermédiaire utile. Il ne remplace pas la formule de surface, mais il aide à relier les longueurs des côtés aux mesures du cercle à l'intérieur du triangle."
+        ],
+        "listTitle": "Exemple avec un triangle 3-4-5 :",
+        "listItems": [
+          "Surface : A = (3 x 4) / 2 = 6",
+          "Demi-périmètre : s = (3 + 4 + 5) / 2 = 6",
+          "Vérification du rayon inscrit : r = A / s = 6 / 6 = 1"
+        ]
+      }
+    ],
+    "relatedLinks": [
+      {
+        "href": "/right-triangle-measurements-calculator/",
+        "label": "Calculatrice de Mesures d'un Triangle Rectangle"
+      },
+      {
+        "href": "/right-triangle-perimeter-calculator/",
+        "label": "Calculatrice du Périmètre d'un Triangle Rectangle"
+      },
+      {
+        "href": "/right-triangle-area-calculator/",
+        "label": "Calculatrice de Surface d'un Triangle Rectangle"
+      },
+      {
+        "href": "/right-triangle-radius-calculator/",
+        "label": "Calculatrice de Rayon d'un Triangle Rectangle"
+      },
+      {
+        "href": "/pythagorean-theorem-calculator/",
+        "label": "Calculatrice du Théorème de Pythagore"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Quelle est la formule du demi-périmètre d'un triangle rectangle ?",
+        "answer": "La formule est s = (a + b + c) / 2, où a et b sont les côtés du triangle rectangle et c est l'hypoténuse. Additionnez les trois longueurs de côté, puis divisez le total par 2."
+      },
+      {
+        "question": "Que signifie demi-périmètre ?",
+        "answer": "Le demi-périmètre désigne la moitié du périmètre du triangle. Si le périmètre complet est P, alors s = P / 2. Si les longueurs des côtés sont connues directement, s = (a + b + c) / 2."
+      },
+      {
+        "question": "Le demi-périmètre est-il la même chose que le périmètre ?",
+        "answer": "Non. Le périmètre est la longueur de la limite complète autour du triangle, tandis que le demi-périmètre est la moitié de cette longueur de limite. Ils sont liés par P = 2s."
+      },
+      {
+        "question": "Pourquoi le demi-périmètre est-il utilisé ?",
+        "answer": "Le demi-périmètre est utilisé car il facilite l'écriture et le calcul des formules plus longues. Il apparaît dans la formule de Héron, la relation surface-inrayon A = r x s, et le réarrangement de l'inrayon r = A / s."
+      },
+      {
+        "question": "Ai-je besoin des trois côtés ?",
+        "answer": "Oui. Pour calculer le demi-périmètre directement, vous avez besoin du côté a, du côté b et de l'hypoténuse c. Si un côté manque, résolvez-le d'abord avec le théorème de Pythagore, puis calculez s."
+      },
+      {
+        "question": "Quel est le demi-périmètre d'un triangle rectangle 3-4-5 ?",
+        "answer": "Pour un triangle rectangle 3-4-5, s = (3 + 4 + 5) / 2 = 12 / 2 = 6 unités."
+      },
+      {
+        "question": "Le demi-périmètre utilise-t-il des unités carrées ?",
+        "answer": "Non. Le demi-périmètre est une longueur, il utilise donc des unités linéaires telles que cm, m, in ou ft. La surface utilise des unités carrées, mais pas le demi-périmètre."
+      },
+      {
+        "question": "Comment puis-je vérifier que ma réponse pour le demi-périmètre est correcte ?",
+        "answer": "Doublez le demi-périmètre. Le résultat doit être égal au périmètre complet. Par exemple, si s = 15, alors P doit être 30."
+      }
+    ]
+  }
+]

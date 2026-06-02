@@ -639,6 +639,10 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
   }
 ];
 
+export const FOCUSED_MEASUREMENT_CALCULATOR_PAGE_SLUGS = FOCUSED_MEASUREMENT_CALCULATOR_PAGES.map(
+  (page) => page.slug
+);
+
 export function getFocusedMeasurementCalculatorPage(slug: string) {
   return FOCUSED_MEASUREMENT_CALCULATOR_PAGES.find((page) => page.slug === slug);
 }

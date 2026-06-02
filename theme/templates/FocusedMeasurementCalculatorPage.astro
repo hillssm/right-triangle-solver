@@ -93,6 +93,15 @@ const calculatorMessages = {
   hypotenuseKnownLeg: 'The hypotenuse c should be the longest side.'
 };
 
+const measurementSideEntries = page.diagram
+  ? [
+      page.diagram.sides.a,
+      page.diagram.sides.b,
+      page.diagram.sides.c,
+      page.diagram.result
+    ]
+  : [];
+
 const relatedHeading = pick(groupedUi, 'relatedCalculatorsTitle', 'Related Calculators');
 const openToolLabel = pick(solver, 'openTool', 'Open Tool');
 const faqHeading = pick(faqHub, 'heading', 'Frequently Asked Questions');
@@ -148,6 +157,143 @@ const badge = 'Measurement Calculator';
     locale={locale}
     messages={calculatorMessages}
   />
+
+  {page.quickSummary && (
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+      <h2 class="text-2xl font-semibold">{page.quickSummary.h2}</h2>
+      <p class="mt-3 max-w-3xl leading-relaxed text-on-surface-variant">
+        {page.quickSummary.intro}
+      </p>
+      <div class="mt-5 grid gap-3 sm:grid-cols-2">
+        {page.quickSummary.cards.map((card) => (
+          <div class="min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-4">
+            <p class="font-label text-[11px] uppercase tracking-widest text-primary">
+              {card.label}
+            </p>
+            <p class="mt-2 break-words text-sm leading-relaxed text-on-surface">
+              {card.value}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {page.diagram && (
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+      <div class="grid gap-6 lg:grid-cols-[minmax(0,1.12fr)_minmax(17rem,0.88fr)] lg:items-center">
+        <div class="min-w-0">
+          <h2 class="text-2xl font-semibold">{page.diagram.h2}</h2>
+          <p class="mt-3 leading-relaxed text-on-surface-variant">{page.diagram.intro}</p>
+
+          <div class="measurement-diagram-canvas mt-5 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-3">
+            <svg
+              class="measurement-diagram-svg"
+              viewBox="0 0 560 380"
+              role="img"
+              aria-labelledby={`${page.slug}-measurement-diagram-title ${page.slug}-measurement-diagram-desc`}
+            >
+              <title id={`${page.slug}-measurement-diagram-title`}>{page.diagram.h2}</title>
+              <desc id={`${page.slug}-measurement-diagram-desc`}>{page.diagram.caption}</desc>
+              <rect
+                x="14"
+                y="14"
+                width="532"
+                height="352"
+                rx="18"
+                fill="var(--color-surface-container-low)"
+                stroke="var(--color-outline-variant)"
+                stroke-opacity="0.35"
+              />
+              <path
+                d="M100 274 L100 82 L430 274 Z"
+                fill="rgba(241, 201, 125, 0.06)"
+                stroke="var(--color-outline-variant)"
+                stroke-width="1.5"
+                stroke-opacity="0.45"
+              />
+              <path
+                d="M100 242 H132 V274"
+                fill="none"
+                stroke="var(--color-on-surface-variant)"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M100 274 L100 82 L430 274 L100 274"
+                fill="none"
+                stroke="var(--color-primary)"
+                stroke-width="8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <line
+                x1="100"
+                y1="274"
+                x2="430"
+                y2="274"
+                stroke="var(--color-tertiary-fixed)"
+                stroke-width="3"
+                stroke-dasharray="8 8"
+                stroke-linecap="round"
+              />
+              <line
+                x1="100"
+                y1="82"
+                x2="430"
+                y2="274"
+                stroke="var(--color-tertiary-fixed)"
+                stroke-width="3"
+                stroke-dasharray="8 8"
+                stroke-linecap="round"
+              />
+
+              <g class="measurement-diagram-label" transform="translate(224 293)">
+                <rect width="92" height="34" rx="8" />
+                <text x="46" y="22" text-anchor="middle">a</text>
+              </g>
+              <g class="measurement-diagram-label" transform="translate(54 158)">
+                <rect width="92" height="34" rx="8" />
+                <text x="46" y="22" text-anchor="middle">b</text>
+              </g>
+              <g class="measurement-diagram-label" transform="translate(332 136)">
+                <rect width="92" height="34" rx="8" />
+                <text x="46" y="22" text-anchor="middle">c</text>
+              </g>
+              <g class="measurement-diagram-formula" transform="translate(174 188)">
+                <rect width="210" height="42" rx="10" />
+                <text x="105" y="27" text-anchor="middle">{page.diagram.formulaLabel}</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <div class="min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/50 p-4">
+          <p class="font-label text-[11px] uppercase tracking-widest text-primary">
+            {page.diagram.keyLabel}
+          </p>
+          <div class="mt-4 grid gap-3">
+            {measurementSideEntries.map((item) => (
+              <div class="min-w-0 rounded-md border border-outline-variant/25 bg-surface-container-low/70 p-3">
+                <p class="break-words font-semibold text-on-surface">{item.label}</p>
+                <p class="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+          <ul class="mt-4 grid gap-2 text-sm leading-relaxed text-on-surface-variant">
+            {page.diagram.notes.map((note) => (
+              <li class="min-w-0 rounded-md border border-outline-variant/20 bg-surface-container-low/50 px-3 py-2">
+                {note}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  )}
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{page.formulaSection.h2}</h2>
@@ -237,3 +383,47 @@ const badge = 'Measurement Calculator';
     <Faq heading={faqHeading} items={page.faqs} />
   </div>
 </BaseLayout>
+
+<style>
+  .measurement-diagram-canvas {
+    min-width: 0;
+  }
+
+  .measurement-diagram-svg {
+    display: block;
+    width: 100%;
+    min-height: 15rem;
+    height: auto;
+  }
+
+  .measurement-diagram-label rect,
+  .measurement-diagram-formula rect {
+    fill: var(--color-surface-container-high);
+    stroke: var(--color-outline-variant);
+    stroke-opacity: 0.65;
+  }
+
+  .measurement-diagram-label text,
+  .measurement-diagram-formula text {
+    fill: var(--color-on-surface);
+    font-family: var(--font-label);
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+
+  .measurement-diagram-formula text {
+    fill: var(--color-primary);
+  }
+
+  @media (max-width: 28rem) {
+    .measurement-diagram-svg {
+      min-height: 13rem;
+    }
+
+    .measurement-diagram-label text,
+    .measurement-diagram-formula text {
+      font-size: 0.8125rem;
+    }
+  }
+</style>

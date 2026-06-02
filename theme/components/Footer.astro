@@ -18,6 +18,8 @@ const footerNav = getLocalizedNavItems(locale, 'footer', navLabels);
 const socialLinks = getEnabledSocialLinks();
 const year = new Date().getFullYear();
 const rights = commonLabels.rights ?? 'All rights reserved.';
+const sectionsLabel = commonLabels.sections ?? 'Sections';
+const languagesLabel = commonLabels.languages ?? 'Languages';
 const homeHref = localizePath(locale, '/');
 ---
 
@@ -54,7 +56,7 @@ const homeHref = localizePath(locale, '/');
 
     <div class="grid gap-8 sm:grid-cols-2">
       <div>
-        <h3 class="font-label text-xs font-bold uppercase tracking-widest text-on-surface mb-6 opacity-80 decoration-primary/30 decoration-2 underline-offset-8">Sections</h3>
+        <h3 class="font-label text-xs font-bold uppercase tracking-widest text-on-surface mb-6 opacity-80 decoration-primary/30 decoration-2 underline-offset-8">{sectionsLabel}</h3>
         <nav aria-label="Footer navigation" class="grid gap-4 text-sm">
           {footerNav.map((item) => (
             <a
@@ -68,7 +70,7 @@ const homeHref = localizePath(locale, '/');
       </div>
 
       <div>
-        <h3 class="font-headline text-lg font-bold uppercase tracking-tight text-on-surface mb-6">Languages</h3>
+        <h3 class="font-headline text-lg font-bold uppercase tracking-tight text-on-surface mb-6">{languagesLabel}</h3>
         <div class="grid grid-cols-4 gap-2 sm:gap-3">
           {SUPPORTED_LOCALES.map((l) => (
             <a

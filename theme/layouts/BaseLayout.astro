@@ -52,6 +52,10 @@ const footerWords = (common.footer as Record<string, string>) ?? {};
 const defaultBundle = getTranslations(DEFAULT_LOCALE);
 const defaultCommon = defaultBundle.common as Record<string, unknown>;
 const englishNav = (defaultCommon.nav as Record<string, string>) ?? commonNav;
+const localizedNav = {
+  ...englishNav,
+  ...commonNav
+};
 
 const localizedSite = (content.site as Record<string, string>) ?? {};
 const localizedFooter = (content.footer as Record<string, string>) ?? {};
@@ -71,7 +75,7 @@ const textFontStylesheetUrl =
   'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@200;300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=optional';
 
 const socialUrls = Object.values(site.social).filter(Boolean);
-const headerNav = getLocalizedNavItems(locale, 'header', englishNav).map((item) => ({
+const headerNav = getLocalizedNavItems(locale, 'header', localizedNav).map((item) => ({
   '@type': 'SiteNavigationElement',
   name: item.label,
   url: toAbsoluteUrl(item.href)
@@ -216,7 +220,7 @@ const languageSwitcherOptions = SUPPORTED_LOCALES.map((l) => ({
         locale={locale}
         siteTitle={pick(localizedSite, 'title', site.brandName)}
         logo={site.logo}
-        navLabels={englishNav}
+        navLabels={localizedNav}
       />
     )}
 
@@ -230,7 +234,7 @@ const languageSwitcherOptions = SUPPORTED_LOCALES.map((l) => ({
         siteTitle={pick(localizedSite, 'title', site.brandName)}
         logo={site.logo}
         description={pick(localizedFooter, 'description', site.description)}
-        navLabels={englishNav}
+        navLabels={localizedNav}
         commonLabels={footerCommonLabels}
       />
     )}

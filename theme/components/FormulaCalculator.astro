@@ -73,15 +73,99 @@ const UNIT_SCALE = {
 
 const LENGTH_KEYS = ['a', 'b', 'c', 'p', 'q', 'h', 'r', 's', 'R'];
 
-const scriptTranslations = {
-  calculationComplete: "Calculation complete.", // I should add these to the bundle too
-  unableToCalculate: "Unable to calculate.",
-  fixErrors: "Please fix the errors in the fields above.",
-  angleSuffix: "\u00B0",
+const calculatorUiDefaults = {
+  calculationComplete: 'Calculation complete.',
+  unableToCalculate: 'Unable to calculate.',
+  fixErrors: 'Please fix the errors in the fields above.',
   sqUnits: (units.m ? ` ${units.m}<sup>2</sup>` : ' sq units'),
+  errorPrefix: 'Error',
+  stepLabels: {
+    formula: 'Formula',
+    substitution: 'Substitution',
+    answer: 'Answer',
+    explanation: 'Explanation',
+    detail: 'Detail'
+  },
+  calculationSteps: {
+    perimeter: {
+      title: 'Calculate Perimeter',
+      description: "Find the total length of the triangle's boundaries."
+    },
+    semiperimeter: {
+      title: 'Determine Semiperimeter',
+      description: 'Calculate half of the perimeter for further area derivations.'
+    }
+  }
+};
+
+const calculatorUiByLocale: Partial<Record<Locale, Partial<typeof calculatorUiDefaults>>> = {
+  hi: {
+    calculationComplete: 'गणना पूरी हुई।',
+    unableToCalculate: 'गणना नहीं हो सकी।',
+    fixErrors: 'कृपया ऊपर दिए गए फ़ील्ड की त्रुटियां ठीक करें।',
+    sqUnits: (units.m ? ` ${units.m}<sup>2</sup>` : ' वर्ग इकाई'),
+    errorPrefix: 'त्रुटि',
+    stepLabels: {
+      formula: 'सूत्र',
+      substitution: 'प्रतिस्थापन',
+      answer: 'उत्तर',
+      explanation: 'व्याख्या',
+      detail: 'विवरण'
+    },
+    calculationSteps: {
+      perimeter: {
+        title: 'परिधि की गणना करें',
+        description: 'त्रिभुज की तीनों बाहरी भुजाओं की लंबाई जोड़ें।'
+      },
+      semiperimeter: {
+        title: 'अर्धपरिधि निकालें',
+        description: 'पहले परिधि निकालें, फिर उसे 2 से विभाजित करें।'
+      }
+    }
+  },
+  ko: {
+    calculationComplete: '계산이 완료되었습니다.',
+    unableToCalculate: '계산할 수 없습니다.',
+    fixErrors: '위 입력란의 오류를 수정하세요.',
+    sqUnits: (units.m ? ` ${units.m}<sup>2</sup>` : ' 제곱 단위'),
+    errorPrefix: '오류',
+    stepLabels: {
+      formula: '공식',
+      substitution: '대입',
+      answer: '답',
+      explanation: '설명',
+      detail: '세부 내용'
+    },
+    calculationSteps: {
+      perimeter: {
+        title: '둘레 계산',
+        description: '삼각형의 세 변 길이를 모두 더합니다.'
+      },
+      semiperimeter: {
+        title: '반둘레 계산',
+        description: '전체 둘레를 구한 뒤 2로 나눕니다.'
+      }
+    }
+  }
+};
+
+const calculatorUi = {
+  ...calculatorUiDefaults,
+  ...(calculatorUiByLocale[locale] || {})
+};
+
+const scriptTranslations = {
+  calculationComplete: calculatorUi.calculationComplete,
+  unableToCalculate: calculatorUi.unableToCalculate,
+  fixErrors: calculatorUi.fixErrors,
+  angleSuffix: "\u00B0",
+  sqUnits: calculatorUi.sqUnits,
   resultLabel: pick(solver, 'resultLabel', 'Result'),
   solutionSteps: pick(solver, 'solutionSteps', 'Solution Steps'),
-  formula: pick(solver, 'formulaLabel', 'Formula')
+  formula: pick(solver, 'formulaLabel', 'Formula'),
+  errorPrefix: calculatorUi.errorPrefix,
+  stepLabels: calculatorUi.stepLabels,
+  calculationSteps: calculatorUi.calculationSteps
 };
 
 const calculatorMessages = JSON.stringify(messages);
@@ -254,7 +338,7 @@ const calculatorMessages = JSON.stringify(messages);
           } else {
             const num = toNumber(val);
             if (!Number.isFinite(num)) {
-              throw new Error(messages.invalid || `Invalid value for ${key}.`);
+              throw new Error(messages.invalid || translations.unableToCalculate || '');
             }
             values[key] = num;
           }
@@ -282,7 +366,7 @@ const calculatorMessages = JSON.stringify(messages);
 
       const requirePositive = (...nums) => {
         if (nums.some((n) => !(n > 0))) {
-          throw new Error(messages.positive || 'All values must be positive.');
+          throw new Error(messages.positive || translations.unableToCalculate || '');
         }
       };
 
@@ -300,7 +384,7 @@ const calculatorMessages = JSON.stringify(messages);
           }
           case 'leg_from_ac': {
             requirePositive(v.a, v.c);
-            if (v.c <= v.a) throw new Error(messages.hypotenuseKnownLeg || 'Hypotenuse c must be greater than leg a.');
+            if (v.c <= v.a) throw new Error(messages.hypotenuseKnownLeg || translations.unableToCalculate || '');
             const r = Math.sqrt(v.c * v.c - v.a * v.a);
             return {
               result: r,
@@ -311,7 +395,7 @@ const calculatorMessages = JSON.stringify(messages);
           }
           case 'leg_from_bc': {
             requirePositive(v.b, v.c);
-            if (v.c <= v.b) throw new Error(messages.hypotenuseKnownLeg || 'Hypotenuse c must be greater than leg b.');
+            if (v.c <= v.b) throw new Error(messages.hypotenuseKnownLeg || translations.unableToCalculate || '');
             const r = Math.sqrt(v.c * v.c - v.b * v.b);
             return {
               result: r,
@@ -333,20 +417,26 @@ const calculatorMessages = JSON.stringify(messages);
           case 'perimeter': {
             requirePositive(v.a, v.b, v.c);
             const r = v.a + v.b + v.c;
+            const stepCopy = translations.calculationSteps?.perimeter || {};
+            const title = stepCopy.title || '';
+            const description = stepCopy.description || '';
             return {
               result: r,
               steps: [
-                `**Calculate Perimeter**<br/>Find the total length of the triangle's boundaries.<br/>Use P = a + b + c<br/>P = ${v.a} + ${v.b} + ${v.c} = ${format(r)}`
+                `**${title}**<br/>${description}<br/>P = a + b + c<br/>P = ${v.a} + ${v.b} + ${v.c} = ${format(r)}`
               ]
             };
           }
           case 'semiperimeter': {
             requirePositive(v.a, v.b, v.c);
             const r = (v.a + v.b + v.c) / 2;
+            const stepCopy = translations.calculationSteps?.semiperimeter || {};
+            const title = stepCopy.title || '';
+            const description = stepCopy.description || '';
             return {
               result: r,
               steps: [
-                `**Determine Semiperimeter**<br/>Calculate half of the perimeter for further area derivations.<br/>Use s = (a + b + c) / 2<br/>s = (${v.a} + ${v.b} + ${v.c}) / 2 = ${format(v.a + v.b + v.c)} / 2 = ${format(r)}`
+                `**${title}**<br/>${description}<br/>s = (a + b + c) / 2<br/>s = (${v.a} + ${v.b} + ${v.c}) / 2 = ${format(v.a + v.b + v.c)} / 2 = ${format(r)}`
               ]
             };
           }
@@ -609,7 +699,7 @@ const calculatorMessages = JSON.stringify(messages);
       };
 
       const renderSuccess = (resultData, primaryUnit, inputs) => {
-        statusEl.textContent = translations.calculationComplete || 'Calculation complete.';
+        statusEl.textContent = translations.calculationComplete || '';
         statusEl.classList.remove('text-red-500', 'font-semibold', 'bg-red-500/10', 'px-3', 'py-2', 'rounded-lg', 'border', 'border-red-500/20');
         statusEl.classList.add('text-on-surface-variant');
         resultWrap.classList.remove('hidden');
@@ -680,6 +770,7 @@ const calculatorMessages = JSON.stringify(messages);
         const buildStepFlow = (lines) => {
           const cleanedLines = lines.map((line) => String(line).trim()).filter(Boolean);
           if (!cleanedLines.length) return [];
+          const stepLabels = translations.stepLabels || {};
 
           const explanationParts = [];
           const equationLines = [];
@@ -710,16 +801,18 @@ const calculatorMessages = JSON.stringify(messages);
           }
 
           const flow = [];
-          if (formula) flow.push({ label: 'Formula', value: formula });
+          if (formula) flow.push({ type: 'formula', label: stepLabels.formula || translations.formula || '', value: formula });
           if (substitution && substitution !== formula) {
-            flow.push({ label: 'Substitution', value: substitution });
+            flow.push({ type: 'substitution', label: stepLabels.substitution || '', value: substitution });
           }
-          if (answer) flow.push({ label: 'Answer', value: answer });
+          if (answer) flow.push({ type: 'answer', label: stepLabels.answer || '', value: answer });
 
           const explanation = explanationParts.join(' ').trim();
-          if (explanation) flow.push({ label: 'Explanation', value: explanation });
+          if (explanation) flow.push({ type: 'explanation', label: stepLabels.explanation || '', value: explanation });
 
-          return flow.length ? flow : cleanedLines.map((line) => ({ label: 'Detail', value: line }));
+          return flow.length
+            ? flow
+            : cleanedLines.map((line) => ({ type: 'detail', label: stepLabels.detail || '', value: line }));
         };
 
         const stepBlocks = steps
@@ -747,7 +840,7 @@ const calculatorMessages = JSON.stringify(messages);
           }
 
           if (k.includes('area')) {
-            return (translations.sqUnits || ' sq units');
+            return translations.sqUnits || '';
           }
 
           if (primaryUnit) return ` ${primaryUnit}`;
@@ -766,7 +859,7 @@ const calculatorMessages = JSON.stringify(messages);
           const detailItems = flowItems.length
             ? `<ul class="mt-2 space-y-1 border-l border-outline-variant/20 pl-3">${flowItems
                 .map((detail) => {
-                  const valueClass = detail.label === 'Answer'
+                  const valueClass = detail.type === 'answer'
                     ? 'math-textbook font-semibold text-primary'
                     : 'math-textbook text-on-surface-variant';
                   return `<li><span class="font-semibold text-on-surface">${detail.label}:</span> <span class="${valueClass}">${formatStepText(detail.value)}</span></li>`;
@@ -781,7 +874,7 @@ const calculatorMessages = JSON.stringify(messages);
       };
 
       const renderError = (err) => {
-        const msg = err instanceof Error ? err.message : (translations.unableToCalculate || 'Unable to calculate.');
+        const msg = err instanceof Error ? err.message : (translations.unableToCalculate || '');
         
         const errorBoxes = section.querySelectorAll('[data-calc-input-error]');
         errorBoxes.forEach(el => el.classList.add('hidden'));
@@ -812,11 +905,12 @@ const calculatorMessages = JSON.stringify(messages);
             messages.invalid,
             messages.hypotenuseKnownLeg
           ].filter(Boolean);
-          statusEl.textContent = directStatusMessages.includes(msg) ? msg : `Error: ${msg}`;
+          const errorPrefix = translations.errorPrefix || '';
+          statusEl.textContent = directStatusMessages.includes(msg) ? msg : (errorPrefix ? `${errorPrefix}: ${msg}` : msg);
           statusEl.classList.add('text-red-500', 'font-semibold', 'bg-red-500/10', 'px-3', 'py-2', 'rounded-lg', 'border', 'border-red-500/20');
           statusEl.classList.remove('text-on-surface-variant');
         } else {
-          statusEl.textContent = translations.fixErrors || 'Please fix the errors in the fields above.';
+          statusEl.textContent = translations.fixErrors || '';
           statusEl.classList.add('text-red-500', 'font-semibold');
           statusEl.classList.remove('text-on-surface-variant', 'bg-red-500/10', 'px-3', 'py-2', 'rounded-lg', 'border', 'border-red-500/20');
         }

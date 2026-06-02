@@ -4,9 +4,14 @@ import type { FaqItem } from 'theme/i18n/translations';
 interface Props {
   heading: string;
   items: FaqItem[];
+  description?: string;
 }
 
-const { heading, items } = Astro.props;
+const {
+  heading,
+  items,
+  description = 'Answers to the most common right-triangle solving questions.'
+} = Astro.props;
 const visibleItems = items.filter((item) => item.display !== false);
 ---
 
@@ -18,7 +23,7 @@ const visibleItems = items.filter((item) => item.display !== false);
     <h2 id="faq-heading" class="text-2xl sm:text-3xl">{heading}</h2>
   </div>
   <p class="mt-3 max-w-2xl text-sm text-on-surface-variant">
-    Answers to the most common right-triangle solving questions.
+    {description}
   </p>
 
   <div class="mt-6 grid gap-3 anim-stagger">

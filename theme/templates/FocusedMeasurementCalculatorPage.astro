@@ -40,7 +40,109 @@ const groupedPages = ((content.grouped as Record<string, any>)?.pages as Record<
 const groupedUi = ((content.grouped as Record<string, any>)?.ui as Record<string, string>) || {};
 const faqHub = (content.faqHub as Record<string, string>) || {};
 
-const homeLabel = pick(nav, 'home', 'Home');
+const measurementUiDefaults = {
+  home: 'Home',
+  badge: 'Measurement Calculator',
+  quickAnswer: 'Quick Answer',
+  structuredGuide: 'Structured Guide',
+  chooseSection: 'Choose the section you need',
+  pageSections: 'Page sections',
+  formula: 'Formula',
+  steps: 'Steps',
+  example: 'Example',
+  coreConcepts: 'Core Concepts',
+  learn: 'Learn',
+  conceptsHeading: 'Understand {name}',
+  conceptsIntro: 'Start here for the meaning, side labels, and setup behind the calculator result.',
+  examples: 'Examples',
+  practice: 'Practice',
+  examplesHeading: 'Worked Examples and Quick References',
+  examplesIntro: 'Use these examples to compare your inputs, verify common triples, and follow the arithmetic.',
+  uses: 'Uses',
+  apply: 'Apply',
+  usesHeading: 'Where This Result Is Used',
+  usesIntro: 'These sections explain when the result matters and how it connects to nearby right-triangle formulas.',
+  checks: 'Checks',
+  verify: 'Verify',
+  checksHeading: 'Accuracy Checks Before You Use the Answer',
+  checksIntro: 'Review units, common mistakes, and validation rules before copying the result into another calculation.',
+  faqDescription: 'Answers to the most common right-triangle solving questions.',
+  positiveError: 'Please enter positive values.',
+  invalidError: 'Please enter positive values.',
+  hypotenuseKnownLegError: 'The hypotenuse c should be the longest side.'
+};
+
+const measurementUiByLocale: Partial<Record<Locale, Partial<typeof measurementUiDefaults>>> = {
+  hi: {
+    home: 'होम',
+    badge: 'माप कैलकुलेटर',
+    quickAnswer: 'त्वरित उत्तर',
+    structuredGuide: 'संरचित मार्गदर्शिका',
+    chooseSection: 'अपना अनुभाग चुनें',
+    pageSections: 'पृष्ठ अनुभाग',
+    formula: 'सूत्र',
+    steps: 'चरण',
+    example: 'उदाहरण',
+    coreConcepts: 'मुख्य बातें',
+    learn: 'सीखें',
+    conceptsHeading: 'समझें: {name}',
+    conceptsIntro: 'कैलकुलेटर के परिणाम का अर्थ, भुजाओं के नाम और सही सेटअप यहां देखें।',
+    examples: 'उदाहरण',
+    practice: 'अभ्यास',
+    examplesHeading: 'हल किए गए छोटे उदाहरण',
+    examplesIntro: 'इन उदाहरणों से अपने इनपुट और गणना को जल्दी जांचें।',
+    uses: 'उपयोग',
+    apply: 'लागू करें',
+    usesHeading: 'यह परिणाम कहाँ उपयोग होता है',
+    usesIntro: 'ये अनुभाग बताते हैं कि परिणाम कब उपयोगी है और वह पास के सूत्रों से कैसे जुड़ता है।',
+    checks: 'जांच',
+    verify: 'सत्यापित करें',
+    checksHeading: 'उत्तर उपयोग करने से पहले जांचें',
+    checksIntro: 'उत्तर को आगे उपयोग करने से पहले इकाई, सामान्य गलती और मान्यता नियम देखें।',
+    faqDescription: 'इस कैलकुलेटर और समकोण त्रिभुज माप से जुड़े सामान्य प्रश्नों के सरल उत्तर।',
+    positiveError: 'कृपया धनात्मक मान दर्ज करें।',
+    invalidError: 'कृपया मान सही दर्ज करें।',
+    hypotenuseKnownLegError: 'कर्ण c सबसे लंबी भुजा होना चाहिए।'
+  },
+  ko: {
+    home: '홈',
+    badge: '측정 계산기',
+    quickAnswer: '빠른 답',
+    structuredGuide: '구성된 안내',
+    chooseSection: '필요한 섹션을 선택하세요',
+    pageSections: '페이지 섹션',
+    formula: '공식',
+    steps: '단계',
+    example: '예제',
+    coreConcepts: '핵심 개념',
+    learn: '학습',
+    conceptsHeading: '{name} 이해하기',
+    conceptsIntro: '계산 결과의 의미, 변 이름, 올바른 입력 설정을 먼저 확인하세요.',
+    examples: '예제',
+    practice: '연습',
+    examplesHeading: '풀이 예제와 빠른 참고',
+    examplesIntro: '예제로 입력값을 비교하고 계산 과정을 빠르게 확인하세요.',
+    uses: '사용',
+    apply: '적용',
+    usesHeading: '이 결과가 쓰이는 곳',
+    usesIntro: '결과가 언제 필요한지, 관련 직각삼각형 공식과 어떻게 연결되는지 설명합니다.',
+    checks: '확인',
+    verify: '검산',
+    checksHeading: '답을 사용하기 전 확인할 점',
+    checksIntro: '다른 계산에 사용하기 전에 단위, 흔한 실수, 검산 규칙을 확인하세요.',
+    faqDescription: '이 계산기와 직각삼각형 측정에 대해 자주 묻는 질문을 간단히 정리했습니다.',
+    positiveError: '양수 값을 입력하세요.',
+    invalidError: '올바른 값을 입력하세요.',
+    hypotenuseKnownLegError: '빗변 c는 가장 긴 변이어야 합니다.'
+  }
+};
+
+const measurementUi = {
+  ...measurementUiDefaults,
+  ...(measurementUiByLocale[locale] || {})
+};
+
+const homeLabel = pick(nav, 'home', measurementUi.home);
 const measurementCalculatorLabel = pick(
   groupedPages['right-triangle-measurements-calculator'] || {},
   'h1',
@@ -88,9 +190,9 @@ const faqSchema = {
 };
 
 const calculatorMessages = {
-  positive: 'Please enter positive values.',
-  invalid: 'Please enter positive values.',
-  hypotenuseKnownLeg: 'The hypotenuse c should be the longest side.'
+  positive: measurementUi.positiveError,
+  invalid: measurementUi.invalidError,
+  hypotenuseKnownLeg: measurementUi.hypotenuseKnownLegError
 };
 
 const measurementSideEntries = page.diagram
@@ -105,7 +207,7 @@ const measurementSideEntries = page.diagram
 const relatedHeading = pick(groupedUi, 'relatedCalculatorsTitle', 'Related Calculators');
 const openToolLabel = pick(solver, 'openTool', 'Open Tool');
 const faqHeading = pick(faqHub, 'heading', 'Frequently Asked Questions');
-const badge = 'Measurement Calculator';
+const badge = measurementUi.badge;
 
 const makeSectionId = (heading: string, index: number) =>
   `${page.slug}-section-${index}-${heading
@@ -120,10 +222,10 @@ const contentSections = page.extraSections.map((section, index) => ({
 }));
 
 const calculatorName = page.h1.replace(/\s+Calculator$/, '');
-const isExampleSection = (heading: string) => /example|triple/i.test(heading);
-const isCheckSection = (heading: string) => /unit|mistake|properties|tip|check/i.test(heading);
+const isExampleSection = (heading: string) => /example|triple|उदाहरण|예시|예제|계산 예/i.test(heading);
+const isCheckSection = (heading: string) => /unit|mistake|properties|tip|check|इकाई|गलती|जांच|단위|실수|확인/i.test(heading);
 const isUseSection = (heading: string) =>
-  /application|when to use|relationship|connects|matters|vs\.?|real-world/i.test(heading);
+  /application|when to use|relationship|connects|matters|vs\.?|real-world|उपयोग|कब|संबंध|사용|쓰이는|차이/i.test(heading);
 
 const exampleSections = contentSections.filter((section) => isExampleSection(section.h2));
 const checkSections = contentSections.filter((section) => isCheckSection(section.h2));
@@ -140,46 +242,46 @@ const conceptSections = contentSections.filter(
 const contentGroups = [
   {
     id: `${page.slug}-concepts`,
-    label: 'Core Concepts',
-    eyebrow: 'Learn',
-    h2: `Understand ${calculatorName}`,
-    intro: 'Start here for the meaning, side labels, and setup behind the calculator result.',
+    label: measurementUi.coreConcepts,
+    eyebrow: measurementUi.learn,
+    h2: measurementUi.conceptsHeading.replace('{name}', calculatorName),
+    intro: measurementUi.conceptsIntro,
     sections: conceptSections,
     style: 'feature'
   },
   {
     id: `${page.slug}-examples`,
-    label: 'Examples',
-    eyebrow: 'Practice',
-    h2: 'Worked Examples and Quick References',
-    intro: 'Use these examples to compare your inputs, verify common triples, and follow the arithmetic.',
+    label: measurementUi.examples,
+    eyebrow: measurementUi.practice,
+    h2: measurementUi.examplesHeading,
+    intro: measurementUi.examplesIntro,
     sections: exampleSections,
     style: 'examples'
   },
   {
     id: `${page.slug}-uses`,
-    label: 'Uses',
-    eyebrow: 'Apply',
-    h2: 'Where This Result Is Used',
-    intro: 'These sections explain when the result matters and how it connects to nearby right-triangle formulas.',
+    label: measurementUi.uses,
+    eyebrow: measurementUi.apply,
+    h2: measurementUi.usesHeading,
+    intro: measurementUi.usesIntro,
     sections: useSections,
     style: 'split'
   },
   {
     id: `${page.slug}-checks`,
-    label: 'Checks',
-    eyebrow: 'Verify',
-    h2: 'Accuracy Checks Before You Use the Answer',
-    intro: 'Review units, common mistakes, and validation rules before copying the result into another calculation.',
+    label: measurementUi.checks,
+    eyebrow: measurementUi.verify,
+    h2: measurementUi.checksHeading,
+    intro: measurementUi.checksIntro,
     sections: checkSections,
     style: 'checks'
   }
 ].filter((group) => group.sections.length > 0);
 
 const guideLinks = [
-  { href: '#formula', label: 'Formula' },
-  { href: '#steps', label: 'Steps' },
-  { href: '#example', label: 'Example' },
+  { href: '#formula', label: measurementUi.formula },
+  { href: '#steps', label: measurementUi.steps },
+  { href: '#example', label: measurementUi.example },
   ...contentGroups.map((group) => ({
     href: `#${group.id}`,
     label: group.label
@@ -266,7 +368,7 @@ const splitListItem = (item: string) => {
       aria-labelledby={`${page.slug}-summary-heading`}
     >
       <div class="measurement-overview-copy">
-        <p class="measurement-section-kicker">Quick Answer</p>
+        <p class="measurement-section-kicker">{measurementUi.quickAnswer}</p>
         <h2 id={`${page.slug}-summary-heading`}>{page.quickSummary.h2}</h2>
         <p>{page.quickSummary.intro}</p>
       </div>
@@ -399,10 +501,10 @@ const splitListItem = (item: string) => {
 
   <section class="measurement-page-map mx-auto mt-8 w-full max-w-5xl">
     <div class="measurement-page-map-heading">
-      <p class="measurement-section-kicker">Structured Guide</p>
-      <h2>Choose the section you need</h2>
+      <p class="measurement-section-kicker">{measurementUi.structuredGuide}</p>
+      <h2>{measurementUi.chooseSection}</h2>
     </div>
-    <nav aria-label="Page sections">
+    <nav aria-label={measurementUi.pageSections}>
       <ol>
         {guideLinks.map((link) => (
           <li>
@@ -420,7 +522,7 @@ const splitListItem = (item: string) => {
     <div class="measurement-section-header">
       <span>01</span>
       <div>
-        <p>Formula</p>
+        <p>{measurementUi.formula}</p>
         <h2>{page.formulaSection.h2}</h2>
       </div>
     </div>
@@ -447,7 +549,7 @@ const splitListItem = (item: string) => {
     <div class="measurement-section-header">
       <span>02</span>
       <div>
-        <p>Steps</p>
+        <p>{measurementUi.steps}</p>
         <h2>{page.howTo.h2}</h2>
       </div>
     </div>
@@ -465,7 +567,7 @@ const splitListItem = (item: string) => {
     <div class="measurement-section-header">
       <span>03</span>
       <div>
-        <p>Example</p>
+        <p>{measurementUi.example}</p>
         <h2>{page.example.h2}</h2>
       </div>
     </div>
@@ -539,7 +641,7 @@ const splitListItem = (item: string) => {
   ))}
 
   <div class="mx-auto mt-8 w-full max-w-4xl">
-    <Faq heading={faqHeading} items={page.faqs} />
+    <Faq heading={faqHeading} description={measurementUi.faqDescription} items={page.faqs} />
   </div>
 
   <section class="mx-auto mt-8 w-full max-w-5xl section-shell">

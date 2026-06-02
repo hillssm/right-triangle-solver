@@ -40,7 +40,9 @@
       "switchLanguage": "Language"
     },
     "footer": {
-      "rights": "All rights reserved. © 2026"
+      "rights": "All rights reserved. © 2026",
+      "sections": "Sections",
+      "languages": "Languages"
     },
     "solver": {
       "mainFormula": "Main Formula",
@@ -142,16 +144,16 @@
       "special": "विशेष त्रिभुज"
     },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
-      "blog": "Blog",
-      "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "home": "होम",
+      "practice": "अभ्यास",
+      "formulas": "सूत्र",
+      "aboutUs": "हमारे बारे में",
+      "contactUs": "संपर्क करें",
+      "blog": "ब्लॉग",
+      "faq": "प्रश्नोत्तर",
+      "terms": "शर्तें",
+      "privacy": "गोपनीयता",
+      "sitemap": "साइटमैप"
     },
     "common": {
       "readMore": "लेख पढ़ें",
@@ -174,7 +176,9 @@
       "switchLanguage": "भाषा"
     },
     "footer": {
-      "rights": "सर्वाधिकार सुरक्षित। © 2026"
+      "rights": "सर्वाधिकार सुरक्षित। © 2026",
+      "sections": "अनुभाग",
+      "languages": "भाषाएं"
     },
     "solver": {
       "mainFormula": "मुख्य सूत्र",
@@ -276,16 +280,16 @@
       "special": "Triángulos Especiales"
     },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
-      "blog": "Blog",
-      "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "home": "홈",
+      "practice": "연습",
+      "formulas": "공식",
+      "aboutUs": "소개",
+      "contactUs": "문의",
+      "blog": "블로그",
+      "faq": "자주 묻는 질문",
+      "terms": "이용 약관",
+      "privacy": "개인정보 보호",
+      "sitemap": "사이트맵"
     },
     "common": {
       "readMore": "Leer artículo",
@@ -1348,16 +1352,16 @@
       "special": "특수 삼각형"
     },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
-      "blog": "Blog",
-      "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "home": "홈",
+      "practice": "연습",
+      "formulas": "공식",
+      "aboutUs": "소개",
+      "contactUs": "문의",
+      "blog": "블로그",
+      "faq": "자주 묻는 질문",
+      "terms": "이용 약관",
+      "privacy": "개인정보 보호",
+      "sitemap": "사이트맵"
     },
     "common": {
       "readMore": "기사 읽기",
@@ -1380,7 +1384,9 @@
       "switchLanguage": "언어"
     },
     "footer": {
-      "rights": "모든 권리 보유. © 2026"
+      "rights": "모든 권리 보유. © 2026",
+      "sections": "섹션",
+      "languages": "언어"
     },
     "solver": {
       "mainFormula": "주요 공식",

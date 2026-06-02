@@ -1,9 +1,11 @@
 ---
 import type { FocusedSideCalculatorPage as FocusedSideCalculatorPageData } from 'src/data/focusedSideCalculatorPages';
+import { getFocusedSideCalculatorUi } from 'src/data/focusedSideCalculatorUiTranslations';
 import { getFormulaBySlug } from 'src/data/rightTriangleFormulas';
 import Faq from 'theme/components/Faq.astro';
 import FormulaCalculator from 'theme/components/FormulaCalculator.astro';
-import { DEFAULT_LOCALE } from 'theme/i18n/locales';
+import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
+import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
 import katex from 'katex';
@@ -11,9 +13,10 @@ import 'katex/dist/katex.min.css';
 
 interface Props {
   page: FocusedSideCalculatorPageData;
+  locale?: Locale;
 }
 
-const { page } = Astro.props;
+const { page, locale = DEFAULT_LOCALE } = Astro.props;
 const formula = getFormulaBySlug(page.formulaSlug);
 
 if (!formula || !formula.calculator) {
@@ -29,6 +32,24 @@ const calculatorFormula = {
   }
 };
 
+const bundle = getTranslations(locale);
+const common = (bundle.common as Record<string, any>) || {};
+const content = (bundle.content as Record<string, any>) || {};
+const nav = (common.nav as Record<string, string>) || {};
+const solver = (common.solver as Record<string, string>) || {};
+const groupedPages = ((content.grouped as Record<string, any>)?.pages as Record<string, any>) || {};
+const groupedUi = ((content.grouped as Record<string, any>)?.ui as Record<string, string>) || {};
+const faqHub = (content.faqHub as Record<string, string>) || {};
+const focusedUi = getFocusedSideCalculatorUi(locale);
+
+const homeLabel = pick(nav, 'home', 'Home');
+const sideCalculatorLabel = pick(
+  groupedPages['right-triangle-side-calculator'] || {},
+  'h1',
+  'Right Triangle Side Calculator'
+);
+const canonicalPath = localizePath(locale, page.url);
+
 const renderMath = (expression: string, displayMode = true) =>
   katex.renderToString(expression, {
     throwOnError: false,
@@ -36,9 +57,12 @@ const renderMath = (expression: string, displayMode = true) =>
   });
 
 const breadcrumbItems = [
-  { label: 'Home', href: '/' },
-  { label: 'Right Triangle Side Calculator', href: '/right-triangle-side-calculator/' },
-  { label: page.h1, href: page.url }
+  { label: homeLabel, href: localizePath(locale, '/') },
+  {
+    label: sideCalculatorLabel,
+    href: localizePath(locale, '/right-triangle-side-calculator/')
+  },
+  { label: page.h1, href: canonicalPath }
 ];
 
 const breadcrumbSchema = {
@@ -66,9 +90,9 @@ const faqSchema = {
 };
 
 const calculatorMessages = {
-  positive: 'Please enter positive values.',
-  invalid: 'Please enter positive values.',
-  hypotenuseKnownLeg: 'The hypotenuse c must be greater than the known leg.'
+  positive: focusedUi.positive,
+  invalid: focusedUi.positive,
+  hypotenuseKnownLeg: focusedUi.hypotenuseKnownLeg
 };
 
 type DiagramSideStatus =
@@ -81,14 +105,19 @@ const getDiagramDash = (status: DiagramSideStatus) =>
   status === 'unknown' ? '12 8' : 'none';
 
 const getDiagramStatusLabel = (status: DiagramSideStatus) =>
-  status === 'unknown' ? 'Side to find' : 'Known side';
+  status === 'unknown' ? focusedUi.sideToFind : focusedUi.knownSide;
+
+const relatedHeading = pick(groupedUi, 'relatedCalculatorsTitle', 'Related Calculators');
+const openToolLabel = pick(solver, 'openTool', 'Open Tool');
+const faqHeading = pick(faqHub, 'heading', 'Frequently Asked Questions');
+const sideCalculatorBadge = pick(common.categories || {}, 'sides', 'Side Calculator');
 ---
 
 <BaseLayout
-  locale={DEFAULT_LOCALE}
+  locale={locale}
   title={page.metaTitle}
   description={page.metaDescription}
-  canonicalPath={page.url}
+  canonicalPath={canonicalPath}
 >
   <script
     slot="head"
@@ -122,7 +151,7 @@ const getDiagramStatusLabel = (status: DiagramSideStatus) =>
 
   <header class="mx-auto mb-8 w-full max-w-4xl">
     <p class="font-label text-xs uppercase tracking-widest text-primary">
-      Side Calculator
+      {sideCalculatorBadge}
     </p>
     <h1 class="mt-3 text-3xl font-bold sm:text-4xl">{page.h1}</h1>
     <p class="mt-4 max-w-3xl text-on-surface-variant">{page.intro}</p>
@@ -130,7 +159,7 @@ const getDiagramStatusLabel = (status: DiagramSideStatus) =>
 
   <FormulaCalculator
     formula={calculatorFormula}
-    locale={DEFAULT_LOCALE}
+    locale={locale}
     messages={calculatorMessages}
   />
 
@@ -242,7 +271,7 @@ const getDiagramStatusLabel = (status: DiagramSideStatus) =>
 
       <div class="min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/50 p-4">
         <p class="font-label text-[11px] uppercase tracking-widest text-primary">
-          Diagram Key
+          {focusedUi.diagramKey}
         </p>
         <div class="mt-4 grid gap-3">
           {Object.values(page.diagram.sides).map((side) => (
@@ -331,18 +360,18 @@ const getDiagramStatusLabel = (status: DiagramSideStatus) =>
   ))}
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-    <h2 class="text-2xl font-semibold">Related Calculators</h2>
+    <h2 class="text-2xl font-semibold">{relatedHeading}</h2>
     <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {page.relatedLinks.map((link) => (
         <a
-          href={link.href}
+          href={localizePath(locale, link.href)}
           class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
         >
           <h3 class="text-base font-semibold text-on-surface group-hover:text-primary">
             {link.label}
           </h3>
           <p class="mt-3 text-[11px] uppercase tracking-widest text-primary">
-            Open Tool
+            {openToolLabel}
           </p>
         </a>
       ))}
@@ -350,7 +379,7 @@ const getDiagramStatusLabel = (status: DiagramSideStatus) =>
   </section>
 
   <div class="mx-auto mt-8 w-full max-w-4xl">
-    <Faq heading="Frequently Asked Questions" items={page.faqs} />
+    <Faq heading={faqHeading} items={page.faqs} />
   </div>
 </BaseLayout>
 

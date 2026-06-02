@@ -1,4 +1,6 @@
 import type { FormulaCalculatorField } from 'src/data/rightTriangleFormulas';
+import { FOCUSED_SIDE_CALCULATOR_TRANSLATIONS } from 'src/data/focusedSideCalculatorTranslations';
+import { DEFAULT_LOCALE, type Locale } from 'theme/i18n/locales';
 
 type DiagramSideStatus = 'known' | 'unknown';
 
@@ -629,6 +631,25 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
   }
 ];
 
-export function getFocusedSideCalculatorPage(slug: string) {
+export const FOCUSED_SIDE_CALCULATOR_PAGE_SLUGS = FOCUSED_SIDE_CALCULATOR_PAGES.map(
+  (page) => page.slug
+);
+
+export function getFocusedSideCalculatorPage(
+  slug: string,
+  locale: Locale = DEFAULT_LOCALE
+) {
+  if (locale !== DEFAULT_LOCALE) {
+    const translationsByLocale = FOCUSED_SIDE_CALCULATOR_TRANSLATIONS as unknown as Record<
+      string,
+      Record<string, FocusedSideCalculatorPage>
+    >;
+    const localizedPage = translationsByLocale[locale]?.[slug];
+
+    if (localizedPage) {
+      return localizedPage;
+    }
+  }
+
   return FOCUSED_SIDE_CALCULATOR_PAGES.find((page) => page.slug === slug);
 }

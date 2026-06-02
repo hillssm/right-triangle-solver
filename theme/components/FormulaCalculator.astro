@@ -1,12 +1,13 @@
 ﻿---
 import type { RightTriangleFormula } from 'src/data/rightTriangleFormulas';
+import type { Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 
 interface Props {
   formula: RightTriangleFormula;
-  locale: string;
+  locale: Locale;
   messages?: {
     positive?: string;
     invalid?: string;
@@ -21,12 +22,14 @@ if (!formula.calculator) {
 }
 
 const bundle = getTranslations(locale);
-const solver = (bundle.solver as any) || {};
-const units = (bundle.units as any) || {};
+const common = (bundle.common as any) || {};
+const formulasBundle = (bundle.formulas as any) || {};
+const solver = (common.solver as any) || {};
+const units = (common.units as any) || {};
 
 const calculator = formula.calculator!!;
 
-const displayTitle = (bundle.formulas?.[formula.slug] as any)?.title || formula.title;
+const displayTitle = (formulasBundle?.[formula.slug] as any)?.title || formula.title;
 const defaultStatus = pick(solver, 'statusDefault', `Enter inputs to calculate {label}.`).replace('{label}', calculator.outputLabel);
 
 const UNIT_LIST = [

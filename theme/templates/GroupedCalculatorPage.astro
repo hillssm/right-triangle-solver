@@ -205,6 +205,17 @@ const relatedSideCalculatorLinks = [
 const showRelatedSideCalculators =
   locale === 'en' && groupedPage?.slug === 'right-triangle-side-calculator';
 
+const relatedTrigRatioCalculatorLinks = [
+  { href: '/sine-ratio-calculator/', label: 'Sine Ratio Calculator' },
+  { href: '/cosine-ratio-calculator/', label: 'Cosine Ratio Calculator' },
+  { href: '/tangent-ratio-calculator/', label: 'Tangent Ratio Calculator' },
+  { href: '/cotangent-ratio-calculator/', label: 'Cotangent Ratio Calculator' },
+  { href: '/secant-ratio-calculator/', label: 'Secant Ratio Calculator' },
+  { href: '/cosecant-ratio-calculator/', label: 'Cosecant Ratio Calculator' }
+];
+const showRelatedTrigRatioCalculators =
+  locale === 'en' && groupedPage?.slug === 'right-triangle-trig-ratios-calculator';
+
 const relatedMeasurementCalculatorLinks = [
   {
     href: '/right-triangle-perimeter-calculator/',
@@ -600,6 +611,27 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
           </p>
           <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {relatedMeasurementCalculatorLinks.map((link) => (
+              <a
+                href={link.href}
+                class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
+              >
+                <h3 class="text-base font-semibold text-on-surface group-hover:text-primary">
+                  {link.label}
+                </h3>
+                <p class="mt-3 text-[11px] uppercase tracking-widest text-primary">
+                  {uiOpen}
+                </p>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {showRelatedTrigRatioCalculators && (
+        <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+          <h2 class="text-2xl font-semibold">Related Trigonometric Ratio Calculators</h2>
+          <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {relatedTrigRatioCalculatorLinks.map((link) => (
               <a
                 href={link.href}
                 class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"

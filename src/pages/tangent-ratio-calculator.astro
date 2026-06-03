@@ -1,0 +1,22 @@
+---
+import FocusedTrigRatioCalculatorPage from 'theme/templates/FocusedTrigRatioCalculatorPage.astro';
+
+const relatedLinks = [
+  { href: '/sine-ratio-calculator/', label: 'Sine Ratio Calculator' },
+  { href: '/cosine-ratio-calculator/', label: 'Cosine Ratio Calculator' },
+  { href: '/right-triangle-trig-ratios-calculator/', label: 'Right Triangle Trig Ratios Calculator' }
+];
+---
+<FocusedTrigRatioCalculatorPage
+  h1="Tangent Ratio Calculator"
+  metaTitle="Tangent Ratio Calculator | Right Triangle tan(A)"
+  metaDescription="Use this tangent ratio calculator to find tan(A) in a right triangle using opposite side a and adjacent side b."
+  formulaSlug="tangent-ratio"
+  calculatorOutputLabel="tan(A)"
+  fields={[
+    { key: 'a', label: 'Opposite side a', min: 0 },
+    { key: 'b', label: 'Adjacent side b', min: 0 }
+  ]}
+  formulaDisplay="tan(A) = a / b"
+  relatedLinks={relatedLinks}
+/>

@@ -1,0 +1,22 @@
+---
+import FocusedTrigRatioCalculatorPage from 'theme/templates/FocusedTrigRatioCalculatorPage.astro';
+
+const relatedLinks = [
+  { href: '/sine-ratio-calculator/', label: 'Sine Ratio Calculator' },
+  { href: '/tangent-ratio-calculator/', label: 'Tangent Ratio Calculator' },
+  { href: '/right-triangle-trig-ratios-calculator/', label: 'Right Triangle Trig Ratios Calculator' }
+];
+---
+<FocusedTrigRatioCalculatorPage
+  h1="Cosine Ratio Calculator"
+  metaTitle="Cosine Ratio Calculator | Right Triangle cos(A)"
+  metaDescription="Use this cosine ratio calculator to find cos(A) in a right triangle using adjacent side b and hypotenuse c."
+  formulaSlug="cosine-ratio"
+  calculatorOutputLabel="cos(A)"
+  fields={[
+    { key: 'b', label: 'Adjacent side b', min: 0 },
+    { key: 'c', label: 'Hypotenuse c', min: 0 }
+  ]}
+  formulaDisplay="cos(A) = b / c"
+  relatedLinks={relatedLinks}
+/>

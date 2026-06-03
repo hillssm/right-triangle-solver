@@ -638,8 +638,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     formulaSlug: 'a-c-sin',
     toolPurpose:
       'This calculator is built for one job: finding opposite side a when you already know an acute angle and the hypotenuse. Enter your two values and the result appears instantly with step-by-step work.',
-    intro:
-      'When you know angle A and hypotenuse c in a right triangle, the fastest way to find the opposite side is through the sine ratio. This tool does exactly that. Enter the angle and hypotenuse, and it returns side a in one step.',
+    intro: 'Use this calculator to find opposite side a from angle A and hypotenuse c.',
     quickSummary: {
       h2: 'What This Sine Side Calculator Solves',
       intro:
@@ -796,8 +795,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     formulaSlug: 'b-c-cos',
     toolPurpose:
       'This calculator solves for the adjacent side b when you already have angle A and the hypotenuse c. It handles the cosine computation and shows the full solution path so you can follow or verify each step.',
-    intro:
-      'Need the adjacent side of a right triangle? If you know one acute angle and the hypotenuse, the cosine ratio gives you the answer directly. This page runs that calculation for you and breaks down every step.',
+    intro: 'Use this calculator to find adjacent side b from angle A and hypotenuse c.',
     quickSummary: {
       h2: 'What This Cosine Side Calculator Solves',
       intro:
@@ -954,8 +952,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     formulaSlug: 'a-b-tan',
     toolPurpose:
       'This tool finds the opposite side a when you know the adjacent side b and an acute angle A. It uses the tangent ratio, which links the two legs directly without needing the hypotenuse.',
-    intro:
-      'If you have the adjacent side and an angle but not the hypotenuse, tangent is the ratio you need. This calculator multiplies the adjacent side by the tangent of the angle to give you the opposite side. No extra steps required.',
+    intro: 'Use this calculator to find opposite side a from angle A and adjacent side b.',
     quickSummary: {
       h2: 'What This Tangent Side Calculator Solves',
       intro:
@@ -1113,8 +1110,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     formulaSlug: 'b-a-tan',
     toolPurpose:
       'This tool finds the adjacent side b when you have the opposite side a and an acute angle A. It reverses the tangent formula, dividing instead of multiplying, so you get the base length directly.',
-    intro:
-      'Sometimes you know the height and the angle but need the base distance. This calculator handles that by dividing the opposite side by the tangent of the angle. Enter your values and get adjacent side b with a full breakdown.',
+    intro: 'Use this calculator to find adjacent side b from angle A and opposite side a.',
     quickSummary: {
       h2: 'What This Adjacent Side Calculator Solves',
       intro:

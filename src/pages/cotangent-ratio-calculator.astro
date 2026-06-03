@@ -1,22 +1,12 @@
 ---
+import { getFocusedTrigRatioCalculatorPage } from 'src/data/focusedTrigRatioCalculatorPages';
 import FocusedTrigRatioCalculatorPage from 'theme/templates/FocusedTrigRatioCalculatorPage.astro';
 
-const relatedLinks = [
-  { href: '/tangent-ratio-calculator/', label: 'Tangent Ratio Calculator' },
-  { href: '/secant-ratio-calculator/', label: 'Secant Ratio Calculator' },
-  { href: '/cosecant-ratio-calculator/', label: 'Cosecant Ratio Calculator' }
-];
+const page = getFocusedTrigRatioCalculatorPage('cotangent-ratio-calculator');
+
+if (!page) {
+  throw new Error('Missing page data for cotangent-ratio-calculator');
+}
 ---
-<FocusedTrigRatioCalculatorPage
-  h1="Cotangent Ratio Calculator"
-  metaTitle="Cotangent Ratio Calculator | Right Triangle cot(A)"
-  metaDescription="Use this cotangent ratio calculator to find cot(A) in a right triangle using adjacent side b and opposite side a."
-  formulaSlug="cotangent-exact"
-  calculatorOutputLabel="cot(A)"
-  fields={[
-    { key: 'b', label: 'Adjacent side b', min: 0 },
-    { key: 'a', label: 'Opposite side a', min: 0 }
-  ]}
-  formulaDisplay="cot(A) = b / a"
-  relatedLinks={relatedLinks}
-/>
+
+<FocusedTrigRatioCalculatorPage page={page} />

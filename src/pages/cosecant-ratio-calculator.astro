@@ -1,22 +1,12 @@
 ---
+import { getFocusedTrigRatioCalculatorPage } from 'src/data/focusedTrigRatioCalculatorPages';
 import FocusedTrigRatioCalculatorPage from 'theme/templates/FocusedTrigRatioCalculatorPage.astro';
 
-const relatedLinks = [
-  { href: '/sine-ratio-calculator/', label: 'Sine Ratio Calculator' },
-  { href: '/secant-ratio-calculator/', label: 'Secant Ratio Calculator' },
-  { href: '/cotangent-ratio-calculator/', label: 'Cotangent Ratio Calculator' }
-];
+const page = getFocusedTrigRatioCalculatorPage('cosecant-ratio-calculator');
+
+if (!page) {
+  throw new Error('Missing page data for cosecant-ratio-calculator');
+}
 ---
-<FocusedTrigRatioCalculatorPage
-  h1="Cosecant Ratio Calculator"
-  metaTitle="Cosecant Ratio Calculator | Right Triangle csc(A)"
-  metaDescription="Use this cosecant ratio calculator to find csc(A) in a right triangle using hypotenuse c and opposite side a."
-  formulaSlug="cosecant-exact"
-  calculatorOutputLabel="csc(A)"
-  fields={[
-    { key: 'c', label: 'Hypotenuse c', min: 0 },
-    { key: 'a', label: 'Opposite side a', min: 0 }
-  ]}
-  formulaDisplay="csc(A) = c / a"
-  relatedLinks={relatedLinks}
-/>
+
+<FocusedTrigRatioCalculatorPage page={page} />

@@ -1,57 +1,41 @@
 ---
-import FormulaCalculator from 'theme/components/FormulaCalculator.astro';
-import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import type { FocusedTrigRatioCalculatorPage as PageData } from 'src/data/focusedTrigRatioCalculatorPages';
 import { getFormulaBySlug } from 'src/data/rightTriangleFormulas';
+import FormulaCalculator from 'theme/components/FormulaCalculator.astro';
+import Faq from 'theme/components/Faq.astro';
+import { DEFAULT_LOCALE, localizePath } from 'theme/i18n/locales';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
-import { localizePath, DEFAULT_LOCALE } from 'theme/i18n/locales';
 
-export interface Props {
-  h1: string;
-  metaTitle: string;
-  metaDescription: string;
-  formulaSlug: string;
-  calculatorOutputLabel: string;
-  fields: { key: string; label: string; min?: number }[];
-  formulaDisplay: string;
-  relatedLinks: { href: string; label: string; }[];
+interface Props {
+  page: PageData;
 }
 
-const {
-  h1,
-  metaTitle,
-  metaDescription,
-  formulaSlug,
-  calculatorOutputLabel,
-  fields,
-  formulaDisplay,
-  relatedLinks
-} = Astro.props;
-
+const { page } = Astro.props;
 const locale = DEFAULT_LOCALE;
-const formula = getFormulaBySlug(formulaSlug);
 
+const formula = getFormulaBySlug(page.formulaSlug);
 if (!formula || !formula.calculator) {
-  throw new Error(`Formula not found: ${formulaSlug}`);
+  throw new Error(`Formula not found: ${page.formulaSlug}`);
 }
 
 const calculatorFormula = {
   ...formula,
   calculator: {
     ...formula.calculator,
-    outputLabel: calculatorOutputLabel,
-    fields: fields
+    outputLabel: page.calculator.outputLabel,
+    fields: page.calculator.fields
   }
 };
 
-const pageSlug = formulaSlug + '-calculator';
-const canonicalPath = localizePath(locale, `/${pageSlug}/`);
+const canonicalPath = localizePath(locale, page.url);
 const parentPageLabel = 'Right Triangle Trig Ratios Calculator';
 const parentPageHref = localizePath(locale, '/right-triangle-trig-ratios-calculator/');
 
 const breadcrumbItems = [
   { label: 'Home', href: localizePath(locale, '/') },
   { label: parentPageLabel, href: parentPageHref },
-  { label: h1, href: canonicalPath }
+  { label: page.h1, href: canonicalPath }
 ];
 
 const breadcrumbSchema = {
@@ -65,16 +49,30 @@ const breadcrumbSchema = {
   }))
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: page.faqs.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.answer
+    }
+  }))
+};
+
 const calculatorMessages = {
   positive: 'Please enter positive values.',
   invalid: 'Please enter positive values.',
   hypotenuseKnownLeg: 'The hypotenuse c must be greater than the known side.'
 };
 ---
+
 <BaseLayout
   locale={locale}
-  title={metaTitle}
-  description={metaDescription}
+  title={page.metaTitle}
+  description={page.metaDescription}
   canonicalPath={canonicalPath}
 >
   <script
@@ -82,7 +80,13 @@ const calculatorMessages = {
     type="application/ld+json"
     set:html={JSON.stringify(breadcrumbSchema)}
   ></script>
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(faqSchema)}
+  ></script>
 
+  <!-- Breadcrumb -->
   <nav class="mx-auto mb-6 w-full max-w-4xl" aria-label="Breadcrumb">
     <ol class="flex flex-wrap items-center gap-2 text-xs text-on-surface-variant">
       {breadcrumbItems.map((item, index) => (
@@ -102,42 +106,241 @@ const calculatorMessages = {
     </ol>
   </nav>
 
+  <!-- Header -->
   <header class="mx-auto mb-8 w-full max-w-4xl">
-    <h1 class="mt-3 text-3xl font-bold sm:text-4xl">{h1}</h1>
+    <p class="font-label text-xs uppercase tracking-widest text-primary">
+      Trigonometric Ratio Calculator
+    </p>
+    <h1 class="mt-3 text-3xl font-bold sm:text-4xl">{page.h1}</h1>
+    <div class="mt-4 max-w-3xl space-y-3 text-on-surface-variant">
+      {page.intro.map((paragraph) => (
+        <p>{paragraph}</p>
+      ))}
+    </div>
   </header>
 
+  <!-- Calculator note -->
+  <p class="mx-auto mb-2 w-full max-w-4xl text-sm text-on-surface-variant">
+    {page.calculatorNote}
+  </p>
+
+  <!-- Calculator -->
   <FormulaCalculator
     formula={calculatorFormula}
     locale={locale}
     messages={calculatorMessages}
   />
-  
+
+  <!-- Formula -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>Formula</h2>
-    <div class="not-prose mt-5 grid gap-3">
-      <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-4 py-3">
-        <div class="min-w-max text-xl text-tertiary font-mono">
-          {formulaDisplay}
+    <div class="not-prose mt-4 grid gap-3">
+      <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
+        <div class="min-w-max text-2xl text-tertiary font-mono tracking-wide">
+          {page.formula.display}
         </div>
       </div>
     </div>
-    
-    <h2>How to Use This Calculator</h2>
-    <p>Content will be added soon.</p>
-    
-    <h2>Example</h2>
-    <p>Content will be added soon.</p>
+    {page.formula.paragraphs.map((p) => (
+      <p>{p}</p>
+    ))}
+  </section>
 
-    <h2>Related Calculators</h2>
+  <!-- Triangle Diagram -->
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+    <h2 class="text-2xl font-semibold">Triangle Diagram</h2>
+    <div class="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(14rem,0.85fr)] lg:items-start">
+      <div class="min-w-0">
+        <div class="rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-3">
+          <svg
+            class="block w-full max-w-md mx-auto"
+            viewBox="0 0 520 370"
+            role="img"
+            aria-label="Right triangle diagram showing angle A, sides a, b, and c"
+          >
+            <rect
+              x="10" y="10" width="500" height="350" rx="16"
+              fill="var(--color-surface-container-low)"
+              stroke="var(--color-outline-variant)" stroke-opacity="0.3"
+            />
+            <!-- Triangle fill -->
+            <path
+              d="M100 290 L100 80 L400 290 Z"
+              fill="rgba(241, 201, 125, 0.06)"
+              stroke="var(--color-outline-variant)"
+              stroke-width="1.5"
+              stroke-opacity="0.4"
+            />
+            <!-- Right angle marker at B (100, 290) -->
+            <path
+              d="M100 262 L128 262 L128 290"
+              fill="none"
+              stroke="var(--color-on-surface-variant)"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <!-- Side a — vertical (opposite) -->
+            <line x1="100" y1="290" x2="100" y2="80"
+              stroke="var(--color-primary)" stroke-width="6" stroke-linecap="round" />
+            <!-- Side b — horizontal (adjacent) -->
+            <line x1="100" y1="290" x2="400" y2="290"
+              stroke="var(--color-primary)" stroke-width="6" stroke-linecap="round" />
+            <!-- Side c — hypotenuse -->
+            <line x1="100" y1="80" x2="400" y2="290"
+              stroke="var(--color-tertiary-fixed)" stroke-width="6" stroke-linecap="round" />
+
+            <!-- Angle A arc near vertex A (400, 290) -->
+            <path
+              d="M 365 290 A 35 35 0 0 0 378 268"
+              fill="none"
+              stroke="var(--color-tertiary)"
+              stroke-width="2.5"
+              stroke-linecap="round"
+            />
+
+            <!-- Label: angle A -->
+            <text x="348" y="278" fill="var(--color-tertiary)"
+              font-family="'Noto Serif', serif" font-size="15" font-weight="700"
+              text-anchor="end">A</text>
+            <!-- Label: vertex B -->
+            <text x="82" y="308" fill="var(--color-on-surface-variant)"
+              font-family="'Noto Serif', serif" font-size="14" font-style="italic"
+              text-anchor="end">B</text>
+            <!-- Label: vertex C -->
+            <text x="82" y="72" fill="var(--color-on-surface-variant)"
+              font-family="'Noto Serif', serif" font-size="14" font-style="italic"
+              text-anchor="end">C</text>
+            <!-- Label: side a (opposite) — left of vertical -->
+            <text x="56" y="188" fill="var(--color-primary)"
+              font-family="'Noto Serif', serif" font-size="16" font-weight="700"
+              text-anchor="middle">a</text>
+            <text x="56" y="206" fill="var(--color-on-surface-variant)"
+              font-family="'Noto Serif', serif" font-size="10"
+              text-anchor="middle">(opposite)</text>
+            <!-- Label: side b (adjacent) — below horizontal -->
+            <text x="250" y="324" fill="var(--color-primary)"
+              font-family="'Noto Serif', serif" font-size="16" font-weight="700"
+              text-anchor="middle">b</text>
+            <text x="250" y="342" fill="var(--color-on-surface-variant)"
+              font-family="'Noto Serif', serif" font-size="10"
+              text-anchor="middle">(adjacent)</text>
+            <!-- Label: side c (hypotenuse) — right of diagonal -->
+            <text x="286" y="160" fill="var(--color-tertiary-fixed)"
+              font-family="'Noto Serif', serif" font-size="16" font-weight="700"
+              text-anchor="start">c</text>
+            <text x="286" y="178" fill="var(--color-on-surface-variant)"
+              font-family="'Noto Serif', serif" font-size="10"
+              text-anchor="start">(hypotenuse)</text>
+            <!-- Right angle label -->
+            <text x="140" y="258" fill="var(--color-on-surface-variant)"
+              font-family="'Noto Serif', serif" font-size="12"
+              text-anchor="start">90°</text>
+          </svg>
+        </div>
+      </div>
+      <div class="min-w-0 space-y-3">
+        {page.diagramExplanation.map((p) => (
+          <p class="text-sm leading-relaxed text-on-surface-variant">{p}</p>
+        ))}
+        <div class="mt-4 rounded-lg border border-outline-variant/25 bg-surface-container-lowest/50 p-4">
+          <p class="font-label text-[11px] uppercase tracking-widest text-primary">
+            Side Key
+          </p>
+          <ul class="mt-3 grid gap-2 text-sm text-on-surface-variant">
+            <li class="rounded-md border border-outline-variant/20 bg-surface-container-low/50 px-3 py-2">
+              <strong class="text-on-surface">a</strong> = opposite side (across from angle A)
+            </li>
+            <li class="rounded-md border border-outline-variant/20 bg-surface-container-low/50 px-3 py-2">
+              <strong class="text-on-surface">b</strong> = adjacent side (next to angle A)
+            </li>
+            <li class="rounded-md border border-outline-variant/20 bg-surface-container-low/50 px-3 py-2">
+              <strong class="text-on-surface">c</strong> = hypotenuse (longest side, opposite 90°)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Use -->
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>How to Use This Calculator</h2>
+    <ol>
+      {page.howToSteps.map((step) => (
+        <li>{step}</li>
+      ))}
+    </ol>
+  </section>
+
+  <!-- Step-by-Step Example -->
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>Step-by-Step Example</h2>
+    <p>{page.example.intro}</p>
+    <div class="not-prose mt-5 min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
+      <div class="grid gap-2">
+        {page.example.steps.map((line) => (
+          <div class="min-w-max text-lg text-on-surface font-mono">
+            {line}
+          </div>
+        ))}
+      </div>
+    </div>
+    <p class="mt-4">{page.example.conclusion}</p>
+  </section>
+
+  <!-- What the Result Means -->
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>What the Result Means</h2>
+    {page.whatResultMeans.map((p) => (
+      <p>{p}</p>
+    ))}
+  </section>
+
+  <!-- When to Use This Ratio -->
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>When to Use This Ratio</h2>
+    <p>{page.whenToUse.intro}</p>
     <ul>
-      {relatedLinks.map((link) => (
-        <li>
-          <a href={link.href}>{link.label}</a>
-        </li>
+      {page.whenToUse.items.map((item) => (
+        <li>{item}</li>
       ))}
     </ul>
-
-    <h2>FAQs</h2>
-    <p>Content will be added soon.</p>
   </section>
+
+  <!-- Common Mistakes -->
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>Common Mistakes</h2>
+    <p>{page.commonMistakes.intro}</p>
+    <ul>
+      {page.commonMistakes.items.map((item) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+  </section>
+
+  <!-- Related Calculators -->
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+    <h2 class="text-2xl font-semibold">Related Calculators</h2>
+    <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {page.relatedLinks.map((link) => (
+        <a
+          href={localizePath(locale, link.href)}
+          class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
+        >
+          <h3 class="text-base font-semibold text-on-surface group-hover:text-primary">
+            {link.label}
+          </h3>
+          <p class="mt-3 text-[11px] uppercase tracking-widest text-primary">
+            Open Tool
+          </p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <div class="mx-auto mt-8 w-full max-w-4xl">
+    <Faq heading="Frequently Asked Questions" items={page.faqs} />
+  </div>
 </BaseLayout>

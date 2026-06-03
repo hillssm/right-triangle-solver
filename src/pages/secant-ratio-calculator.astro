@@ -1,22 +1,12 @@
 ---
+import { getFocusedTrigRatioCalculatorPage } from 'src/data/focusedTrigRatioCalculatorPages';
 import FocusedTrigRatioCalculatorPage from 'theme/templates/FocusedTrigRatioCalculatorPage.astro';
 
-const relatedLinks = [
-  { href: '/cosine-ratio-calculator/', label: 'Cosine Ratio Calculator' },
-  { href: '/cosecant-ratio-calculator/', label: 'Cosecant Ratio Calculator' },
-  { href: '/cotangent-ratio-calculator/', label: 'Cotangent Ratio Calculator' }
-];
+const page = getFocusedTrigRatioCalculatorPage('secant-ratio-calculator');
+
+if (!page) {
+  throw new Error('Missing page data for secant-ratio-calculator');
+}
 ---
-<FocusedTrigRatioCalculatorPage
-  h1="Secant Ratio Calculator"
-  metaTitle="Secant Ratio Calculator | Right Triangle sec(A)"
-  metaDescription="Use this secant ratio calculator to find sec(A) in a right triangle using hypotenuse c and adjacent side b."
-  formulaSlug="secant-exact"
-  calculatorOutputLabel="sec(A)"
-  fields={[
-    { key: 'c', label: 'Hypotenuse c', min: 0 },
-    { key: 'b', label: 'Adjacent side b', min: 0 }
-  ]}
-  formulaDisplay="sec(A) = c / b"
-  relatedLinks={relatedLinks}
-/>
+
+<FocusedTrigRatioCalculatorPage page={page} />

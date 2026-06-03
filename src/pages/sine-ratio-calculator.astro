@@ -1,22 +1,12 @@
 ---
+import { getFocusedTrigRatioCalculatorPage } from 'src/data/focusedTrigRatioCalculatorPages';
 import FocusedTrigRatioCalculatorPage from 'theme/templates/FocusedTrigRatioCalculatorPage.astro';
 
-const relatedLinks = [
-  { href: '/cosine-ratio-calculator/', label: 'Cosine Ratio Calculator' },
-  { href: '/tangent-ratio-calculator/', label: 'Tangent Ratio Calculator' },
-  { href: '/right-triangle-trig-ratios-calculator/', label: 'Right Triangle Trig Ratios Calculator' }
-];
+const page = getFocusedTrigRatioCalculatorPage('sine-ratio-calculator');
+
+if (!page) {
+  throw new Error('Missing page data for sine-ratio-calculator');
+}
 ---
-<FocusedTrigRatioCalculatorPage
-  h1="Sine Ratio Calculator"
-  metaTitle="Sine Ratio Calculator | Right Triangle sin(A)"
-  metaDescription="Use this sine ratio calculator to find sin(A) in a right triangle using opposite side a and hypotenuse c."
-  formulaSlug="sine-ratio"
-  calculatorOutputLabel="sin(A)"
-  fields={[
-    { key: 'a', label: 'Opposite side a', min: 0 },
-    { key: 'c', label: 'Hypotenuse c', min: 0 }
-  ]}
-  formulaDisplay="sin(A) = a / c"
-  relatedLinks={relatedLinks}
-/>
+
+<FocusedTrigRatioCalculatorPage page={page} />

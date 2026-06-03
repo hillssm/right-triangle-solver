@@ -67,6 +67,115 @@ const calculatorMessages = {
   invalid: 'Please enter positive values.',
   hypotenuseKnownLeg: 'The hypotenuse c must be greater than the known side.'
 };
+
+type TriangleSide = 'a' | 'b' | 'c';
+
+type RatioDiagram = {
+  label: string;
+  numerator: TriangleSide;
+  denominator: TriangleSide;
+  numeratorLabel: string;
+  denominatorLabel: string;
+  relationship: string;
+  rangeNote: string;
+};
+
+const sideInfo: Record<TriangleSide, { role: string; description: string }> = {
+  a: {
+    role: 'opposite side',
+    description: 'across from angle A'
+  },
+  b: {
+    role: 'adjacent side',
+    description: 'next to angle A'
+  },
+  c: {
+    role: 'hypotenuse',
+    description: 'longest side, opposite 90 degrees'
+  }
+};
+
+const ratioDiagrams: Record<string, RatioDiagram> = {
+  'sine-ratio-calculator': {
+    label: 'sin(A)',
+    numerator: 'a',
+    denominator: 'c',
+    numeratorLabel: 'opposite side a',
+    denominatorLabel: 'hypotenuse c',
+    relationship: 'Sine compares the height across from angle A with the full slanted side.',
+    rangeNote: 'For an acute right-triangle angle, sin(A) is greater than 0 and less than 1.'
+  },
+  'cosine-ratio-calculator': {
+    label: 'cos(A)',
+    numerator: 'b',
+    denominator: 'c',
+    numeratorLabel: 'adjacent side b',
+    denominatorLabel: 'hypotenuse c',
+    relationship: 'Cosine compares the base next to angle A with the full slanted side.',
+    rangeNote: 'For an acute right-triangle angle, cos(A) is greater than 0 and less than 1.'
+  },
+  'tangent-ratio-calculator': {
+    label: 'tan(A)',
+    numerator: 'a',
+    denominator: 'b',
+    numeratorLabel: 'opposite side a',
+    denominatorLabel: 'adjacent side b',
+    relationship: 'Tangent compares vertical rise with horizontal run from angle A.',
+    rangeNote: 'tan(A) can be below 1, equal to 1, or above 1 depending on the two leg lengths.'
+  },
+  'cotangent-ratio-calculator': {
+    label: 'cot(A)',
+    numerator: 'b',
+    denominator: 'a',
+    numeratorLabel: 'adjacent side b',
+    denominatorLabel: 'opposite side a',
+    relationship: 'Cotangent flips tangent and compares horizontal run with vertical rise.',
+    rangeNote: 'cot(A) can be any positive value, and it equals 1 when both legs are equal.'
+  },
+  'secant-ratio-calculator': {
+    label: 'sec(A)',
+    numerator: 'c',
+    denominator: 'b',
+    numeratorLabel: 'hypotenuse c',
+    denominatorLabel: 'adjacent side b',
+    relationship: 'Secant compares the full slanted side with the base next to angle A.',
+    rangeNote: 'sec(A) is always greater than 1 for an acute right-triangle angle.'
+  },
+  'cosecant-ratio-calculator': {
+    label: 'csc(A)',
+    numerator: 'c',
+    denominator: 'a',
+    numeratorLabel: 'hypotenuse c',
+    denominatorLabel: 'opposite side a',
+    relationship: 'Cosecant compares the full slanted side with the height across from angle A.',
+    rangeNote: 'csc(A) is always greater than 1 for an acute right-triangle angle.'
+  }
+};
+
+const ratioDiagram = ratioDiagrams[page.slug];
+if (!ratioDiagram) {
+  throw new Error(`Ratio diagram not found: ${page.slug}`);
+}
+
+const sideKeys = ['a', 'b', 'c'] as TriangleSide[];
+const usedSideSet = new Set<TriangleSide>([
+  ratioDiagram.numerator,
+  ratioDiagram.denominator
+]);
+
+const sideVisual = (side: TriangleSide) => {
+  const active = usedSideSet.has(side);
+  return {
+    stroke: active ? 'var(--color-primary)' : 'var(--color-outline)',
+    labelFill: active ? 'var(--color-primary)' : 'var(--color-on-surface-variant)',
+    strokeWidth: active ? 7 : 4,
+    opacity: active ? 1 : 0.45
+  };
+};
+
+const sideAVisual = sideVisual('a');
+const sideBVisual = sideVisual('b');
+const sideCVisual = sideVisual('c');
 ---
 
 <BaseLayout
@@ -111,18 +220,9 @@ const calculatorMessages = {
     <p class="font-label text-xs uppercase tracking-widest text-primary">
       Trigonometric Ratio Calculator
     </p>
-    <h1 class="mt-3 text-3xl font-bold sm:text-4xl">{page.h1}</h1>
-    <div class="mt-4 max-w-3xl space-y-3 text-on-surface-variant">
-      {page.intro.map((paragraph) => (
-        <p>{paragraph}</p>
-      ))}
-    </div>
+    <h1 class="mt-3 break-words text-3xl font-bold leading-tight sm:text-4xl">{page.h1}</h1>
+    <p class="mt-4 max-w-3xl break-words text-on-surface-variant">{page.headerSummary}</p>
   </header>
-
-  <!-- Calculator note -->
-  <p class="mx-auto mb-2 w-full max-w-4xl text-sm text-on-surface-variant">
-    {page.calculatorNote}
-  </p>
 
   <!-- Calculator -->
   <FormulaCalculator
@@ -130,6 +230,17 @@ const calculatorMessages = {
     locale={locale}
     messages={calculatorMessages}
   />
+
+  <!-- Intro -->
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>About This Calculator</h2>
+    {page.intro.map((paragraph) => (
+      <p>{paragraph}</p>
+    ))}
+    <div class="not-prose mt-5 rounded-lg border border-outline-variant/25 bg-surface-container-lowest/55 p-4">
+      <p class="text-sm leading-relaxed text-on-surface-variant">{page.calculatorNote}</p>
+    </div>
+  </section>
 
   <!-- Formula -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
@@ -156,7 +267,7 @@ const calculatorMessages = {
             class="block w-full max-w-md mx-auto"
             viewBox="0 0 520 370"
             role="img"
-            aria-label="Right triangle diagram showing angle A, sides a, b, and c"
+            aria-label={`Right triangle diagram showing ${ratioDiagram.label} uses ${ratioDiagram.numeratorLabel} and ${ratioDiagram.denominatorLabel}`}
           >
             <rect
               x="10" y="10" width="500" height="350" rx="16"
@@ -182,13 +293,13 @@ const calculatorMessages = {
             />
             <!-- Side a — vertical (opposite) -->
             <line x1="100" y1="290" x2="100" y2="80"
-              stroke="var(--color-primary)" stroke-width="6" stroke-linecap="round" />
+              stroke={sideAVisual.stroke} stroke-width={sideAVisual.strokeWidth} stroke-linecap="round" opacity={sideAVisual.opacity} />
             <!-- Side b — horizontal (adjacent) -->
             <line x1="100" y1="290" x2="400" y2="290"
-              stroke="var(--color-primary)" stroke-width="6" stroke-linecap="round" />
+              stroke={sideBVisual.stroke} stroke-width={sideBVisual.strokeWidth} stroke-linecap="round" opacity={sideBVisual.opacity} />
             <!-- Side c — hypotenuse -->
             <line x1="100" y1="80" x2="400" y2="290"
-              stroke="var(--color-tertiary-fixed)" stroke-width="6" stroke-linecap="round" />
+              stroke={sideCVisual.stroke} stroke-width={sideCVisual.strokeWidth} stroke-linecap="round" opacity={sideCVisual.opacity} />
 
             <!-- Angle A arc near vertex A (400, 290) -->
             <path
@@ -212,21 +323,21 @@ const calculatorMessages = {
               font-family="'Noto Serif', serif" font-size="14" font-style="italic"
               text-anchor="end">C</text>
             <!-- Label: side a (opposite) — left of vertical -->
-            <text x="56" y="188" fill="var(--color-primary)"
+            <text x="56" y="188" fill={sideAVisual.labelFill}
               font-family="'Noto Serif', serif" font-size="16" font-weight="700"
               text-anchor="middle">a</text>
             <text x="56" y="206" fill="var(--color-on-surface-variant)"
               font-family="'Noto Serif', serif" font-size="10"
               text-anchor="middle">(opposite)</text>
             <!-- Label: side b (adjacent) — below horizontal -->
-            <text x="250" y="324" fill="var(--color-primary)"
+            <text x="250" y="324" fill={sideBVisual.labelFill}
               font-family="'Noto Serif', serif" font-size="16" font-weight="700"
               text-anchor="middle">b</text>
             <text x="250" y="342" fill="var(--color-on-surface-variant)"
               font-family="'Noto Serif', serif" font-size="10"
               text-anchor="middle">(adjacent)</text>
             <!-- Label: side c (hypotenuse) — right of diagonal -->
-            <text x="286" y="160" fill="var(--color-tertiary-fixed)"
+            <text x="286" y="160" fill={sideCVisual.labelFill}
               font-family="'Noto Serif', serif" font-size="16" font-weight="700"
               text-anchor="start">c</text>
             <text x="286" y="178" fill="var(--color-on-surface-variant)"
@@ -245,19 +356,44 @@ const calculatorMessages = {
         ))}
         <div class="mt-4 rounded-lg border border-outline-variant/25 bg-surface-container-lowest/50 p-4">
           <p class="font-label text-[11px] uppercase tracking-widest text-primary">
+            Ratio Highlight
+          </p>
+          <div class="mt-3 flex flex-col gap-3 sm:flex-row sm:items-stretch">
+            <div class="min-w-0 flex-1 rounded-md border border-primary/30 bg-primary/10 px-3 py-3">
+              <span class="block text-[11px] uppercase tracking-widest text-primary">Numerator</span>
+              <strong class="mt-1 block break-words text-on-surface">{ratioDiagram.numeratorLabel}</strong>
+            </div>
+            <div class="flex items-center justify-center text-xl text-outline" aria-hidden="true">/</div>
+            <div class="min-w-0 flex-1 rounded-md border border-primary/30 bg-primary/10 px-3 py-3">
+              <span class="block text-[11px] uppercase tracking-widest text-primary">Denominator</span>
+              <strong class="mt-1 block break-words text-on-surface">{ratioDiagram.denominatorLabel}</strong>
+            </div>
+          </div>
+          <p class="mt-3 text-sm leading-relaxed text-on-surface-variant">
+            {ratioDiagram.relationship}
+          </p>
+        </div>
+        <div class="mt-4 rounded-lg border border-outline-variant/25 bg-surface-container-lowest/50 p-4">
+          <p class="font-label text-[11px] uppercase tracking-widest text-primary">
             Side Key
           </p>
           <ul class="mt-3 grid gap-2 text-sm text-on-surface-variant">
-            <li class="rounded-md border border-outline-variant/20 bg-surface-container-low/50 px-3 py-2">
-              <strong class="text-on-surface">a</strong> = opposite side (across from angle A)
-            </li>
-            <li class="rounded-md border border-outline-variant/20 bg-surface-container-low/50 px-3 py-2">
-              <strong class="text-on-surface">b</strong> = adjacent side (next to angle A)
-            </li>
-            <li class="rounded-md border border-outline-variant/20 bg-surface-container-low/50 px-3 py-2">
-              <strong class="text-on-surface">c</strong> = hypotenuse (longest side, opposite 90°)
-            </li>
+            {sideKeys.map((side) => {
+              const info = sideInfo[side];
+              const active = usedSideSet.has(side);
+              return (
+                <li class={`rounded-md border px-3 py-2 ${active ? 'border-primary/30 bg-primary/10' : 'border-outline-variant/20 bg-surface-container-low/50'}`}>
+                  <strong class="text-on-surface">{side}</strong> = {info.role} ({info.description})
+                  <span class="mt-1 block text-xs text-outline">
+                    {active ? `Used in ${ratioDiagram.label}` : `Not used in ${ratioDiagram.label}`}
+                  </span>
+                </li>
+              );
+            })}
           </ul>
+          <p class="mt-3 text-sm leading-relaxed text-on-surface-variant">
+            {ratioDiagram.rangeNote}
+          </p>
         </div>
       </div>
     </div>

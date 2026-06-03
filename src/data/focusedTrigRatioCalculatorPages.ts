@@ -4,6 +4,7 @@ export type FocusedTrigRatioCalculatorPage = {
   slug: string;
   url: string;
   h1: string;
+  headerSummary: string;
   metaTitle: string;
   metaDescription: string;
   formulaSlug: string;
@@ -45,6 +46,8 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
     slug: 'sine-ratio-calculator',
     url: '/sine-ratio-calculator/',
     h1: 'Sine Ratio Calculator',
+    headerSummary:
+      'Find sin(A) from the opposite side a and hypotenuse c in a right triangle.',
     metaTitle: 'Sine Ratio Calculator | Right Triangle sin(A)',
     metaDescription:
       'Use this sine ratio calculator to find sin(A) in a right triangle using opposite side a and hypotenuse c with formula, steps, and examples.',
@@ -162,6 +165,8 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
     slug: 'cosine-ratio-calculator',
     url: '/cosine-ratio-calculator/',
     h1: 'Cosine Ratio Calculator',
+    headerSummary:
+      'Calculate cos(A) from the adjacent side b and hypotenuse c with clear right-triangle steps.',
     metaTitle: 'Cosine Ratio Calculator | Right Triangle cos(A)',
     metaDescription:
       'Use this cosine ratio calculator to find cos(A) in a right triangle using adjacent side b and hypotenuse c with formula, steps, and examples.',
@@ -279,6 +284,8 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
     slug: 'tangent-ratio-calculator',
     url: '/tangent-ratio-calculator/',
     h1: 'Tangent Ratio Calculator',
+    headerSummary:
+      'Find tan(A) from opposite side a and adjacent side b for slope, rise, and run problems.',
     metaTitle: 'Tangent Ratio Calculator | Right Triangle tan(A)',
     metaDescription:
       'Use this tangent ratio calculator to find tan(A) in a right triangle using opposite side a and adjacent side b with formula, steps, and examples.',
@@ -396,6 +403,8 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
     slug: 'cotangent-ratio-calculator',
     url: '/cotangent-ratio-calculator/',
     h1: 'Cotangent Ratio Calculator',
+    headerSummary:
+      'Calculate cot(A) from adjacent side b over opposite side a in a right triangle.',
     metaTitle: 'Cotangent Ratio Calculator | Right Triangle cot(A)',
     metaDescription:
       'Use this cotangent ratio calculator to find cot(A) in a right triangle using adjacent side b and opposite side a with formula, steps, and examples.',
@@ -512,6 +521,8 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
     slug: 'secant-ratio-calculator',
     url: '/secant-ratio-calculator/',
     h1: 'Secant Ratio Calculator',
+    headerSummary:
+      'Find sec(A) by comparing hypotenuse c with adjacent side b, the reciprocal of cosine.',
     metaTitle: 'Secant Ratio Calculator | Right Triangle sec(A)',
     metaDescription:
       'Use this secant ratio calculator to find sec(A) in a right triangle using hypotenuse c and adjacent side b with formula, steps, and examples.',
@@ -628,6 +639,8 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
     slug: 'cosecant-ratio-calculator',
     url: '/cosecant-ratio-calculator/',
     h1: 'Cosecant Ratio Calculator',
+    headerSummary:
+      'Calculate csc(A) from hypotenuse c and opposite side a, the reciprocal of sine.',
     metaTitle: 'Cosecant Ratio Calculator | Right Triangle csc(A)',
     metaDescription:
       'Use this cosecant ratio calculator to find csc(A) in a right triangle using hypotenuse c and opposite side a with formula, steps, and examples.',

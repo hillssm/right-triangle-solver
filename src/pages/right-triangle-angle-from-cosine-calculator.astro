@@ -1,0 +1,12 @@
+---
+import { getFocusedAngleCalculatorPage } from 'src/data/focusedAngleCalculatorPages';
+import FocusedAngleCalculatorPage from 'theme/templates/FocusedAngleCalculatorPage.astro';
+
+const page = getFocusedAngleCalculatorPage('right-triangle-angle-from-cosine-calculator');
+
+if (!page) {
+  throw new Error('Missing page data for right-triangle-angle-from-cosine-calculator');
+}
+---
+
+<FocusedAngleCalculatorPage page={page} />

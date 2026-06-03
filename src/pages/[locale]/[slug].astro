@@ -11,14 +11,23 @@ import {
   FOCUSED_TRIG_RATIO_CALCULATOR_PAGE_SLUGS,
   getFocusedTrigRatioCalculatorPage
 } from 'src/data/focusedTrigRatioCalculatorPages';
+import {
+  FOCUSED_ANGLE_CALCULATOR_PAGE_SLUGS,
+  FOCUSED_ANGLE_LEGACY_REDIRECT_SLUGS,
+  getFocusedAngleCalculatorPage,
+  getFocusedAngleLegacyRedirect
+} from 'src/data/focusedAngleCalculatorPages';
 import { GROUPED_PAGE_SLUGS } from 'src/data/rightTriangleGroupedPages';
 import FocusedSideCalculatorPage from 'theme/templates/FocusedSideCalculatorPage.astro';
 import FocusedMeasurementCalculatorPage from 'theme/templates/FocusedMeasurementCalculatorPage.astro';
 import FocusedTrigRatioCalculatorPage from 'theme/templates/FocusedTrigRatioCalculatorPage.astro';
+import FocusedAngleCalculatorPage from 'theme/templates/FocusedAngleCalculatorPage.astro';
 import GroupedCalculatorPage from 'theme/templates/GroupedCalculatorPage.astro';
+import LegacyRedirectPage from 'theme/templates/LegacyRedirectPage.astro';
 import {
   getLocaleFromParams,
-  getLocaleStaticPaths
+  getLocaleStaticPaths,
+  localizePath
 } from 'theme/i18n/locales';
 
 export function getStaticPaths() {
@@ -27,7 +36,9 @@ export function getStaticPaths() {
       ...GROUPED_PAGE_SLUGS,
       ...FOCUSED_SIDE_CALCULATOR_PAGE_SLUGS,
       ...FOCUSED_MEASUREMENT_CALCULATOR_PAGE_SLUGS,
-      ...FOCUSED_TRIG_RATIO_CALCULATOR_PAGE_SLUGS
+      ...FOCUSED_TRIG_RATIO_CALCULATOR_PAGE_SLUGS,
+      ...FOCUSED_ANGLE_CALCULATOR_PAGE_SLUGS,
+      ...FOCUSED_ANGLE_LEGACY_REDIRECT_SLUGS
     ].map((slug) => ({
       params: { ...item.params, slug }
     }))
@@ -39,14 +50,23 @@ const locale = getLocaleFromParams(rawLocale);
 const focusedPage = getFocusedSideCalculatorPage(slug, locale);
 const measurementPage = getFocusedMeasurementCalculatorPage(slug, locale);
 const trigRatioPage = getFocusedTrigRatioCalculatorPage(slug, locale);
+const anglePage = getFocusedAngleCalculatorPage(slug, locale);
+const legacyRedirectUrl = getFocusedAngleLegacyRedirect(slug);
+const localizedLegacyRedirectUrl = legacyRedirectUrl
+  ? localizePath(locale, legacyRedirectUrl)
+  : undefined;
 ---
 {
-  focusedPage ? (
+  localizedLegacyRedirectUrl ? (
+    <LegacyRedirectPage destination={localizedLegacyRedirectUrl} locale={locale} />
+  ) : focusedPage ? (
     <FocusedSideCalculatorPage page={focusedPage} locale={locale} />
   ) : measurementPage ? (
     <FocusedMeasurementCalculatorPage page={measurementPage} locale={locale} />
   ) : trigRatioPage ? (
     <FocusedTrigRatioCalculatorPage page={trigRatioPage} locale={locale} />
+  ) : anglePage ? (
+    <FocusedAngleCalculatorPage page={anglePage} locale={locale} />
   ) : (
     <GroupedCalculatorPage locale={locale} slug={slug} />
   )

@@ -1,12 +1,27 @@
 ---
+import {
+  FOCUSED_ANGLE_LEGACY_REDIRECT_SLUGS,
+  getFocusedAngleLegacyRedirect
+} from 'src/data/focusedAngleCalculatorPages';
 import { GROUPED_PAGE_SLUGS } from 'src/data/rightTriangleGroupedPages';
 import { DEFAULT_LOCALE } from 'theme/i18n/locales';
 import GroupedCalculatorPage from 'theme/templates/GroupedCalculatorPage.astro';
+import LegacyRedirectPage from 'theme/templates/LegacyRedirectPage.astro';
 
 export function getStaticPaths() {
-  return GROUPED_PAGE_SLUGS.map((slug) => ({ params: { slug } }));
+  return [
+    ...GROUPED_PAGE_SLUGS,
+    ...FOCUSED_ANGLE_LEGACY_REDIRECT_SLUGS
+  ].map((slug) => ({ params: { slug } }));
 }
 
 const { slug } = Astro.params;
+const legacyRedirectUrl = getFocusedAngleLegacyRedirect(slug ?? '');
 ---
-<GroupedCalculatorPage locale={DEFAULT_LOCALE} slug={slug ?? ''} />
+{
+  legacyRedirectUrl ? (
+    <LegacyRedirectPage destination={legacyRedirectUrl} locale={DEFAULT_LOCALE} />
+  ) : (
+    <GroupedCalculatorPage locale={DEFAULT_LOCALE} slug={slug ?? ''} />
+  )
+}

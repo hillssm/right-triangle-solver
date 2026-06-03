@@ -1,0 +1,37 @@
+---
+import { DEFAULT_LOCALE, type Locale } from 'theme/i18n/locales';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+
+interface Props {
+  destination: string;
+  locale?: Locale;
+  title?: string;
+}
+
+const {
+  destination,
+  locale = DEFAULT_LOCALE,
+  title = 'Calculator Moved'
+} = Astro.props;
+---
+
+<BaseLayout
+  locale={locale}
+  title={`${title} | Right Triangle Solver`}
+  description="This calculator has moved to a focused right triangle calculator page."
+  canonicalPath={destination}
+  noindex
+>
+  <meta slot="head" http-equiv="refresh" content={`0; url=${destination}`} />
+  <script slot="head" is:inline define:vars={{ destination }}>
+    window.location.replace(destination);
+  </script>
+
+  <section class="mx-auto w-full max-w-4xl section-shell prose-shell">
+    <h1>{title}</h1>
+    <p>This calculator now has a focused page with a clearer formula, diagram, example, and related links.</p>
+    <p>
+      <a href={destination}>Open the updated calculator</a>
+    </p>
+  </section>
+</BaseLayout>

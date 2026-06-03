@@ -67,477 +67,634 @@ export type FocusedAngleCalculatorPage = {
 
 export const FOCUSED_ANGLE_CALCULATOR_PAGES: FocusedAngleCalculatorPage[] = [
   {
-    slug: 'right-triangle-angle-from-sine-calculator',
-    url: '/right-triangle-angle-from-sine-calculator/',
-    h1: 'Right Triangle Angle From Sine Calculator',
-    metaTitle: 'Right Triangle Angle From Sine Calculator | Find Angle A',
-    metaDescription:
-      'Find angle A in a right triangle from opposite side a and hypotenuse c using inverse sine, with formula, diagram, example, and input checks.',
-    formulaSlug: 'angle-from-sine',
-    headerSummary:
-      'Calculate angle A from the sine ratio when you know the opposite side and the hypotenuse.',
-    calculator: {
-      heading: 'Calculate Angle From Sine',
-      outputLabel: 'Angle A',
-      fields: [
-        { key: 'a', label: 'Opposite leg a', min: 0 },
-        { key: 'c', label: 'Hypotenuse c', min: 0 }
-      ]
-    },
-    howItWorks: {
-      h2: 'How This Angle From Sine Calculator Works',
-      paragraphs: [
-        'This calculator uses inverse sine to recover angle A from a right-triangle side ratio. Enter the side across from angle A as a and the hypotenuse as c, then the tool computes A = sin^-1(a / c).',
-        'The sine method is best when your known sides are the opposite leg and hypotenuse. The calculator returns the angle in degrees and shows the substitution so you can check the ratio before using the answer.'
-      ],
-      cards: [
-        { label: 'Known values', value: 'Opposite leg a and hypotenuse c' },
-        { label: 'Finds', value: 'Angle A in degrees' },
-        { label: 'Formula', value: 'A = sin^-1(a / c)' },
-        { label: 'Valid input', value: 'a must be positive and smaller than c' }
-      ]
-    },
-    formula: {
-      h2: 'Angle From Sine Formula',
-      display: 'A = \\sin^{-1}\\left(\\frac{a}{c}\\right)',
-      paragraphs: [
-        'Sine compares the opposite side to the hypotenuse. To reverse that relationship, divide a by c first, then apply inverse sine.',
-        'Because c is the hypotenuse, it must be the longest side. If a is equal to or larger than c, the ratio is not valid for an acute right-triangle angle.'
-      ]
-    },
-    diagram: {
-      h2: 'Right Triangle Diagram for Inverse Sine',
-      intro:
-        'The highlighted sides show the exact ratio used by inverse sine. Side a is opposite angle A, and side c is the hypotenuse.',
-      activeSides: ['a', 'c'],
-      activeAngles: ['A'],
-      focusLabel: 'sin(A) = a / c',
-      focusDetail:
-        'First calculate the ratio a / c, then use inverse sine to convert that ratio into angle A.',
-      notes: [
-        'Side a sits across from angle A.',
-        'Side c is opposite the 90 degree angle and must be longest.',
-        'The answer is an acute angle between 0 and 90 degrees.'
-      ]
-    },
-    howToSteps: [
-      'Identify angle A, the acute angle you want to find.',
-      'Measure the side opposite angle A and enter it as a.',
-      'Measure the hypotenuse and enter it as c.',
-      'Make sure c is larger than a.',
-      'Click Calculate to get angle A in degrees.'
-    ],
-    example: {
-      h2: 'Example: Find Angle A From Sine',
-      intro: 'Suppose a = 3 and c = 5.',
-      steps: [
-        'A = sin^-1(a / c)',
-        'A = sin^-1(3 / 5)',
-        'A = sin^-1(0.6)',
-        'A = 36.87 degrees'
-      ],
-      answer:
-        'Angle A is approximately 36.87 degrees. The complementary acute angle is about 53.13 degrees.'
-    },
-    resultMeaning: [
-      'The result is the angle whose sine equals a / c. A larger opposite side relative to the hypotenuse creates a larger angle A.',
-      'For example, if a is half of c, then sin(A) = 0.5 and angle A is 30 degrees.'
-    ],
-    whenToUse: {
-      intro: 'Use this inverse sine calculator when:',
-      items: [
-        'You know the opposite leg and hypotenuse.',
-        'You need the incline, pitch, or direction angle from height and diagonal length.',
-        'You want to check an arcsin step in a right-triangle problem.',
-        'You already calculated sin(A) and want the angle in degrees.'
-      ]
-    },
-    commonMistakes: {
-      intro: 'Avoid these inverse sine mistakes:',
-      items: [
-        'Entering the adjacent leg instead of the opposite leg.',
-        'Using c / a instead of a / c.',
-        'Entering a hypotenuse that is not longer than the opposite side.',
-        'Mixing units before forming the ratio.'
-      ]
-    },
-    relatedLinks: [
-      { href: '/right-triangle-angle-calculator/', label: 'Right Triangle Angle Calculator' },
-      { href: '/right-triangle-angle-from-cosine-calculator/', label: 'Angle From Cosine Calculator' },
-      { href: '/right-triangle-angle-from-tangent-calculator/', label: 'Angle From Tangent Calculator' },
-      { href: '/sine-ratio-calculator/', label: 'Sine Ratio Calculator' }
-    ],
-    faqs: [
+  slug: "right-triangle-angle-from-sine-calculator",
+  url: "/right-triangle-angle-from-sine-calculator/",
+  h1: "Right Triangle Angle From Sine Calculator",
+  metaTitle: "Right Triangle Angle From Sine Calculator | Find A = arcsin(a / c)",
+  metaDescription: "Use this right triangle angle from sine calculator to find angle A from opposite side a and hypotenuse c with formula, steps, and examples.",
+  formulaSlug: "angle-from-sine",
+  headerSummary: "When you know the length of the opposite side and the hypotenuse, you can easily find the missing angle using the sine ratio. This method takes the two sides and runs them through the inverse sine function to tell you exactly how wide the angle opens.",
+  calculator: {
+    heading: "Calculate Angle From Sine",
+    outputLabel: "Angle A",
+    fields: [
       {
-        question: 'What is the formula to find angle A from sine?',
-        answer:
-          'Use A = sin^-1(a / c), where a is opposite angle A and c is the hypotenuse.'
+        key: "a",
+        label: "Opposite leg a",
+        min: 0
       },
       {
-        question: 'Can the opposite side be equal to the hypotenuse?',
-        answer:
-          'No. In a real right triangle with an acute angle A, the hypotenuse must be longer than the opposite leg.'
-      },
-      {
-        question: 'Is the answer shown in degrees?',
-        answer:
-          'Yes. The calculator converts the inverse sine result to degrees.'
+        key: "c",
+        label: "Hypotenuse c",
+        min: 0
       }
     ]
   },
-  {
-    slug: 'right-triangle-angle-from-cosine-calculator',
-    url: '/right-triangle-angle-from-cosine-calculator/',
-    h1: 'Right Triangle Angle From Cosine Calculator',
-    metaTitle: 'Right Triangle Angle From Cosine Calculator | Find Angle A',
-    metaDescription:
-      'Find angle A in a right triangle from adjacent side b and hypotenuse c using inverse cosine, with formula, diagram, example, and clear steps.',
-    formulaSlug: 'angle-from-cosine',
-    headerSummary:
-      'Calculate angle A from the cosine ratio when you know the adjacent side and hypotenuse.',
-    calculator: {
-      heading: 'Calculate Angle From Cosine',
-      outputLabel: 'Angle A',
-      fields: [
-        { key: 'b', label: 'Adjacent leg b', min: 0 },
-        { key: 'c', label: 'Hypotenuse c', min: 0 }
-      ]
-    },
-    howItWorks: {
-      h2: 'How This Angle From Cosine Calculator Works',
-      paragraphs: [
-        'This calculator uses inverse cosine to find angle A from the adjacent side and hypotenuse. Enter b as the side next to angle A and c as the hypotenuse, then the tool computes A = cos^-1(b / c).',
-        'Cosine is useful when the known leg touches angle A. The result is shown in degrees, with the ratio and inverse-trig step displayed in the solution.'
-      ],
-      cards: [
-        { label: 'Known values', value: 'Adjacent leg b and hypotenuse c' },
-        { label: 'Finds', value: 'Angle A in degrees' },
-        { label: 'Formula', value: 'A = cos^-1(b / c)' },
-        { label: 'Valid input', value: 'b must be positive and smaller than c' }
-      ]
-    },
-    formula: {
-      h2: 'Angle From Cosine Formula',
-      display: 'A = \\cos^{-1}\\left(\\frac{b}{c}\\right)',
-      paragraphs: [
-        'Cosine compares the adjacent side to the hypotenuse. To solve backward for the angle, divide b by c and apply inverse cosine.',
-        'As angle A grows, the adjacent side becomes smaller compared with the hypotenuse. That is why cosine decreases as the acute angle gets larger.'
-      ]
-    },
-    diagram: {
-      h2: 'Right Triangle Diagram for Inverse Cosine',
-      intro:
-        'The highlighted sides show the cosine relationship around angle A: adjacent leg b over hypotenuse c.',
-      activeSides: ['b', 'c'],
-      activeAngles: ['A'],
-      focusLabel: 'cos(A) = b / c',
-      focusDetail:
-        'First calculate b / c, then use inverse cosine to convert that ratio into angle A.',
-      notes: [
-        'Side b is next to angle A.',
-        'Side c is the hypotenuse and must be longest.',
-        'The output is an acute angle measured in degrees.'
-      ]
-    },
-    howToSteps: [
-      'Locate angle A in the right triangle.',
-      'Enter the side adjacent to angle A as b.',
-      'Enter the hypotenuse as c.',
-      'Confirm that c is larger than b.',
-      'Click Calculate to find angle A.'
+  howItWorks: {
+    h2: "How to Use This Calculator",
+    paragraphs: [
+      "Whether you are solving a geometry homework problem or checking measurements for a construction project, the sine ratio is a reliable way to find your angle. You don't need to know the third side to get a perfect result.",
+      "The calculator finds angle A when you enter opposite side a and hypotenuse c. Just make sure your hypotenuse is the longest side."
     ],
-    example: {
-      h2: 'Example: Find Angle A From Cosine',
-      intro: 'Suppose b = 4 and c = 5.',
-      steps: [
-        'A = cos^-1(b / c)',
-        'A = cos^-1(4 / 5)',
-        'A = cos^-1(0.8)',
-        'A = 36.87 degrees'
-      ],
-      answer:
-        'Angle A is approximately 36.87 degrees. This matches the same 3-4-5 triangle angle found by sine.'
-    },
-    resultMeaning: [
-      'The result is the angle whose cosine equals b / c. A longer adjacent leg relative to the hypotenuse means angle A is smaller.',
-      'If b / c equals 0.5, angle A is 60 degrees. If b / c is close to 1, angle A is small.'
-    ],
-    whenToUse: {
-      intro: 'Use this inverse cosine calculator when:',
-      items: [
-        'You know the adjacent leg and hypotenuse.',
-        'You need to recover an angle from base length and diagonal length.',
-        'You are checking a cos^-1 step from a textbook or worksheet.',
-        'You want a second method to verify an angle found from sine.'
-      ]
-    },
-    commonMistakes: {
-      intro: 'Watch for these inverse cosine errors:',
-      items: [
-        'Using the opposite side instead of the adjacent side.',
-        'Putting c over b instead of b over c.',
-        'Using a value of b that is equal to or larger than c.',
-        'Forgetting that the calculator returns degrees, not radians.'
-      ]
-    },
-    relatedLinks: [
-      { href: '/right-triangle-angle-calculator/', label: 'Right Triangle Angle Calculator' },
-      { href: '/right-triangle-angle-from-sine-calculator/', label: 'Angle From Sine Calculator' },
-      { href: '/right-triangle-angle-from-tangent-calculator/', label: 'Angle From Tangent Calculator' },
-      { href: '/cosine-ratio-calculator/', label: 'Cosine Ratio Calculator' }
-    ],
-    faqs: [
+    cards: [
       {
-        question: 'What is the formula to find angle A from cosine?',
-        answer:
-          'Use A = cos^-1(b / c), where b is adjacent to angle A and c is the hypotenuse.'
+        label: "Known values",
+        value: "Opposite side a and hypotenuse c"
       },
       {
-        question: 'Why does the hypotenuse need to be larger than b?',
-        answer:
-          'The hypotenuse is always the longest side in a right triangle, so b / c must be less than 1 for an acute angle.'
+        label: "Finds",
+        value: "Angle A"
       },
       {
-        question: 'When should I use cosine instead of sine?',
-        answer:
-          'Use cosine when your known leg is adjacent to angle A. Use sine when your known leg is opposite angle A.'
+        label: "Formula",
+        value: "A = arcsin(a / c)"
+      },
+      {
+        label: "Rule",
+        value: "c must be greater than a"
       }
     ]
   },
+  formula: {
+    h2: "Formula",
+    display: "A = \\arcsin\\left(\\frac{a}{c}\\right)",
+    paragraphs: [
+      "To find your angle, you need the inverse sine function, which is also called arcsin. You simply divide the opposite side by the hypotenuse and find the arcsin of that number."
+    ]
+  },
+  diagram: {
+    h2: "Triangle Diagram",
+    intro: "For angle A, side a is opposite, side b is adjacent, and side c is the hypotenuse.",
+    activeSides: [
+      "a",
+      "c"
+    ],
+    activeAngles: [
+      "A"
+    ],
+    focusLabel: "A = arcsin(a / c)",
+    focusDetail: "This method uses the sine ratio because sine compares the opposite side to the hypotenuse.",
+    notes: [
+      "c is always the hypotenuse.",
+      "Never call c a leg.",
+      "a is the opposite side."
+    ]
+  },
+  howToSteps: [
+    "Measure or identify your opposite side (a).",
+    "Measure or identify your hypotenuse (c), which must be the longest side.",
+    "Enter both values into the tool.",
+    "Click calculate to instantly see the exact measurement of angle A."
+  ],
+  example: {
+    h2: "Step-by-Step Example",
+    intro: "Let's say you have a triangle where opposite side a is 3 and hypotenuse c is 5.",
+    steps: [
+      "A = arcsin(a / c)",
+      "A = arcsin(3 / 5)",
+      "A = arcsin(0.6)",
+      "A ≈ 36.87°"
+    ],
+    answer: "The final result tells you the exact degree measurement of angle A. In our example, the angle opens to roughly 36.87 degrees."
+  },
+  resultMeaning: [
+    "The final result tells you the exact degree measurement of angle A.",
+    "This means if you were drawing the triangle on paper, you would set your protractor to 36.87° at the corner where the hypotenuse meets the adjacent side."
+  ],
+  whenToUse: {
+    intro: "This specific method is perfect when you only have measurements for the opposite side and the hypotenuse.",
+    items: [
+      "Heavily used in physics to find launch angles.",
+      "In carpentry for cutting roof pitches.",
+      "In standard trigonometry exams where the adjacent side is left completely blank."
+    ]
+  },
+  commonMistakes: {
+    intro: "Avoid these common mistakes:",
+    items: [
+      "Using the adjacent side instead of the opposite side.",
+      "Forgetting that side c must always be the hypotenuse.",
+      "Entering a hypotenuse that is shorter than the opposite side.",
+      "Using sin instead of arcsin on a keypad."
+    ]
+  },
+  relatedLinks: [
+    {
+      href: "/right-triangle-angle-calculator/",
+      label: "Right Triangle Angle Calculator"
+    },
+    {
+      href: "/right-triangle-angle-from-cosine-calculator/",
+      label: "Right Triangle Angle From Cosine Calculator"
+    },
+    {
+      href: "/right-triangle-angle-from-tangent-calculator/",
+      label: "Right Triangle Angle From Tangent Calculator"
+    },
+    {
+      href: "/right-triangle-missing-angle-calculator/",
+      label: "Right Triangle Missing Angle Calculator"
+    },
+    {
+      href: "/right-triangle-trig-ratios-calculator/",
+      label: "Right Triangle Trig Ratios Calculator"
+    },
+    {
+      href: "/sine-ratio-calculator/",
+      label: "Sine Ratio Calculator"
+    }
+  ],
+  faqs: [
+    {
+      question: "What does the arcsin formula actually do?",
+      answer: "Arcsin takes a ratio of two sides and reverses the math to tell you the specific angle that created that ratio."
+    },
+    {
+      question: "What does the final result mean?",
+      answer: "The result gives you the exact degree measurement of angle A. This tells you how sharply the hypotenuse angles away from the base."
+    },
+    {
+      question: "Why do I get an error if my opposite side is bigger than my hypotenuse?",
+      answer: "In a right triangle, the hypotenuse must always be the longest side. If side a is larger than side c, the triangle is physically impossible to draw."
+    },
+    {
+      question: "Do I need to know the adjacent side to use this method?",
+      answer: "No, you only need the opposite side and the hypotenuse. The adjacent side is completely ignored here."
+    },
+    {
+      question: "Is inverse sine the same thing as arcsin?",
+      answer: "Yes, they are two different names for the exact same mathematical operation. You might see it written as sin⁻¹ on a handheld calculator."
+    }
+  ]
+},
   {
-    slug: 'right-triangle-angle-from-tangent-calculator',
-    url: '/right-triangle-angle-from-tangent-calculator/',
-    h1: 'Right Triangle Angle From Tangent Calculator',
-    metaTitle: 'Right Triangle Angle From Tangent Calculator | Find Angle A',
-    metaDescription:
-      'Find angle A in a right triangle from opposite side a and adjacent side b using inverse tangent, with formula, diagram, example, and usage tips.',
-    formulaSlug: 'angle-from-tangent',
-    headerSummary:
-      'Calculate angle A from the tangent ratio when you know both legs of the right triangle.',
-    calculator: {
-      heading: 'Calculate Angle From Tangent',
-      outputLabel: 'Angle A',
-      fields: [
-        { key: 'a', label: 'Opposite leg a', min: 0 },
-        { key: 'b', label: 'Adjacent leg b', min: 0 }
-      ]
-    },
-    howItWorks: {
-      h2: 'How This Angle From Tangent Calculator Works',
-      paragraphs: [
-        'This calculator uses inverse tangent to find angle A from the two legs of a right triangle. Enter a as the opposite leg and b as the adjacent leg, then the calculator computes A = tan^-1(a / b).',
-        'Tangent is often the most practical angle method when you know rise and run. It does not require the hypotenuse, so it works well for slopes, ramps, pitches, and layout checks.'
-      ],
-      cards: [
-        { label: 'Known values', value: 'Opposite leg a and adjacent leg b' },
-        { label: 'Finds', value: 'Angle A in degrees' },
-        { label: 'Formula', value: 'A = tan^-1(a / b)' },
-        { label: 'Best for', value: 'Rise-run problems, slopes, and angle checks from two legs' }
-      ]
-    },
-    formula: {
-      h2: 'Angle From Tangent Formula',
-      display: 'A = \\tan^{-1}\\left(\\frac{a}{b}\\right)',
-      paragraphs: [
-        'Tangent compares the opposite leg to the adjacent leg. To find the angle, divide a by b and apply inverse tangent.',
-        'Unlike sine and cosine, the tangent ratio does not use the hypotenuse. That makes it a strong choice when your measurements are vertical rise and horizontal run.'
-      ]
-    },
-    diagram: {
-      h2: 'Right Triangle Diagram for Inverse Tangent',
-      intro:
-        'The highlighted legs show the tangent relationship around angle A: opposite leg a over adjacent leg b.',
-      activeSides: ['a', 'b'],
-      activeAngles: ['A'],
-      focusLabel: 'tan(A) = a / b',
-      focusDetail:
-        'First calculate a / b, then use inverse tangent to convert that ratio into angle A.',
-      notes: [
-        'Side a is opposite angle A.',
-        'Side b is adjacent to angle A.',
-        'The hypotenuse is not needed for this angle method.'
-      ]
-    },
-    howToSteps: [
-      'Find the angle A you want to solve.',
-      'Enter the side opposite angle A as a.',
-      'Enter the side adjacent to angle A as b.',
-      'Keep both leg inputs positive and in the same unit.',
-      'Click Calculate to get angle A in degrees.'
-    ],
-    example: {
-      h2: 'Example: Find Angle A From Tangent',
-      intro: 'Suppose a = 3 and b = 4.',
-      steps: [
-        'A = tan^-1(a / b)',
-        'A = tan^-1(3 / 4)',
-        'A = tan^-1(0.75)',
-        'A = 36.87 degrees'
-      ],
-      answer:
-        'Angle A is approximately 36.87 degrees. This is the same acute angle in a 3-4-5 right triangle.'
-    },
-    resultMeaning: [
-      'The result is the angle whose tangent equals a / b. A larger opposite leg compared with the adjacent leg gives a larger angle.',
-      'If a and b are equal, tan(A) = 1 and angle A is 45 degrees.'
-    ],
-    whenToUse: {
-      intro: 'Use this inverse tangent calculator when:',
-      items: [
-        'You know both legs but not the hypotenuse.',
-        'You are calculating slope angle from rise and run.',
-        'You need a quick angle check from horizontal and vertical measurements.',
-        'You want to avoid solving the hypotenuse first.'
-      ]
-    },
-    commonMistakes: {
-      intro: 'Avoid these inverse tangent mistakes:',
-      items: [
-        'Swapping opposite and adjacent sides.',
-        'Using the hypotenuse in the tangent ratio.',
-        'Entering sides with different units.',
-        'Reading the answer as radians when the tool shows degrees.'
-      ]
-    },
-    relatedLinks: [
-      { href: '/right-triangle-angle-calculator/', label: 'Right Triangle Angle Calculator' },
-      { href: '/right-triangle-angle-from-sine-calculator/', label: 'Angle From Sine Calculator' },
-      { href: '/right-triangle-angle-from-cosine-calculator/', label: 'Angle From Cosine Calculator' },
-      { href: '/tangent-ratio-calculator/', label: 'Tangent Ratio Calculator' }
-    ],
-    faqs: [
+  slug: "right-triangle-angle-from-cosine-calculator",
+  url: "/right-triangle-angle-from-cosine-calculator/",
+  h1: "Right Triangle Angle From Cosine Calculator",
+  metaTitle: "Right Triangle Angle From Cosine Calculator | Find A = arccos(b / c)",
+  metaDescription: "Use this right triangle angle from cosine calculator to find angle A from adjacent side b and hypotenuse c with formula, steps, and examples.",
+  formulaSlug: "angle-from-cosine",
+  headerSummary: "Finding an angle is simple when you have the adjacent side and the hypotenuse. By using the inverse cosine function, you can determine exactly how sharp or wide the corner of your triangle is.",
+  calculator: {
+    heading: "Calculate Angle From Cosine",
+    outputLabel: "Angle A",
+    fields: [
       {
-        question: 'What is the formula to find angle A from tangent?',
-        answer:
-          'Use A = tan^-1(a / b), where a is opposite angle A and b is adjacent to angle A.'
+        key: "b",
+        label: "Adjacent leg b",
+        min: 0
       },
       {
-        question: 'Do I need the hypotenuse for inverse tangent?',
-        answer:
-          'No. Inverse tangent only needs the two legs: opposite over adjacent.'
-      },
-      {
-        question: 'What angle do I get if a and b are equal?',
-        answer:
-          'If the legs are equal, a / b = 1 and angle A is 45 degrees.'
+        key: "c",
+        label: "Hypotenuse c",
+        min: 0
       }
     ]
   },
-  {
-    slug: 'right-triangle-missing-angle-calculator',
-    url: '/right-triangle-missing-angle-calculator/',
-    h1: 'Right Triangle Missing Angle Calculator',
-    metaTitle: 'Right Triangle Missing Angle Calculator | Find the Other Acute Angle',
-    metaDescription:
-      'Find the missing acute angle in a right triangle from the known acute angle using A + B = 90 degrees, with formula, diagram, example, and checks.',
-    formulaSlug: 'angle-sum-exact',
-    headerSummary:
-      'Find the other acute angle in a right triangle when one acute angle is already known.',
-    calculator: {
-      heading: 'Calculate Missing Angle',
-      outputLabel: 'Angle B',
-      fields: [{ key: 'A', label: 'Angle A (deg)', min: 0, unit: 'deg' }]
-    },
-    howItWorks: {
-      h2: 'How This Missing Angle Calculator Works',
-      paragraphs: [
-        'Every right triangle has one 90 degree angle, so the two remaining acute angles must add to 90 degrees. If angle A is known, the calculator subtracts it from 90 to find angle B.',
-        'This is the fastest angle method when you already have one acute angle. It is also a useful check after solving angle A from sine, cosine, or tangent.'
-      ],
-      cards: [
-        { label: 'Known value', value: 'Angle A in degrees' },
-        { label: 'Finds', value: 'Angle B in degrees' },
-        { label: 'Formula', value: 'B = 90 - A' },
-        { label: 'Valid input', value: 'Angle A must be greater than 0 and less than 90' }
-      ]
-    },
-    formula: {
-      h2: 'Missing Angle Formula',
-      display: 'B = 90^\\circ - A',
-      paragraphs: [
-        'A triangle always contains 180 degrees total. In a right triangle, one angle is already 90 degrees, leaving 90 degrees to be shared by the two acute angles.',
-        'That means A + B = 90 degrees. Rearranging gives B = 90 degrees - A.'
-      ]
-    },
-    diagram: {
-      h2: 'Right Triangle Diagram for Missing Angles',
-      intro:
-        'The diagram highlights the two acute angles. When one acute angle is known, the other is its complement to 90 degrees.',
-      activeSides: [],
-      activeAngles: ['A', 'B'],
-      focusLabel: 'A + B = 90 degrees',
-      focusDetail:
-        'Subtract the known acute angle from 90 degrees to find the other acute angle.',
-      notes: [
-        'Angle B is at the top-left vertex in this diagram.',
-        'Angle A is at the bottom-right vertex.',
-        'Both acute angles must be greater than 0 and less than 90 degrees.'
-      ]
-    },
-    howToSteps: [
-      'Enter the known acute angle as angle A.',
-      'Confirm that the value is greater than 0 and less than 90 degrees.',
-      'Click Calculate.',
-      'Read the missing angle B in degrees.',
-      'Check that A + B equals 90 degrees.'
+  howItWorks: {
+    h2: "How to Use This Calculator",
+    paragraphs: [
+      "This specific approach skips the need for the opposite side entirely. It is a fantastic shortcut for surveying, navigation, and everyday math problems where you only know how far along the base you've traveled and the direct diagonal path.",
+      "The calculator finds angle A when you enter adjacent side b and hypotenuse c. The hypotenuse must always be larger than the adjacent side."
     ],
-    example: {
-      h2: 'Example: Find the Missing Acute Angle',
-      intro: 'Suppose angle A = 36.87 degrees.',
-      steps: [
-        'B = 90 - A',
-        'B = 90 - 36.87',
-        'B = 53.13 degrees'
-      ],
-      answer:
-        'The missing acute angle B is approximately 53.13 degrees, and the two acute angles sum to 90 degrees.'
-    },
-    resultMeaning: [
-      'The output is the other acute angle in the same right triangle. It is not the right angle, because the right angle is fixed at 90 degrees.',
-      'A smaller known angle gives a larger missing angle, and a larger known angle gives a smaller missing angle.'
-    ],
-    whenToUse: {
-      intro: 'Use this missing angle calculator when:',
-      items: [
-        'One acute angle is already known.',
-        'You want to check that two acute angles add to 90 degrees.',
-        'You solved angle A from a side ratio and need angle B.',
-        'You are completing a right-triangle diagram for homework, drafting, or layout.'
-      ]
-    },
-    commonMistakes: {
-      intro: 'Watch for these missing-angle mistakes:',
-      items: [
-        'Subtracting from 180 instead of 90 after the right angle is already accounted for.',
-        'Entering the 90 degree angle as angle A.',
-        'Using an acute angle value that is 90 or greater.',
-        'Rounding angle A too early before finding angle B.'
-      ]
-    },
-    relatedLinks: [
-      { href: '/right-triangle-angle-calculator/', label: 'Right Triangle Angle Calculator' },
-      { href: '/right-triangle-angle-from-sine-calculator/', label: 'Angle From Sine Calculator' },
-      { href: '/right-triangle-angle-from-cosine-calculator/', label: 'Angle From Cosine Calculator' },
-      { href: '/right-triangle-angle-from-tangent-calculator/', label: 'Angle From Tangent Calculator' }
-    ],
-    faqs: [
+    cards: [
       {
-        question: 'How do I find the missing angle in a right triangle?',
-        answer:
-          'Subtract the known acute angle from 90 degrees. The two acute angles in a right triangle always add to 90 degrees.'
+        label: "Known values",
+        value: "Adjacent side b and hypotenuse c"
       },
       {
-        question: 'Why do I subtract from 90 instead of 180?',
-        answer:
-          'A right triangle already has one 90 degree angle. Since all triangle angles total 180 degrees, the two acute angles share the remaining 90 degrees.'
+        label: "Finds",
+        value: "Angle A"
       },
       {
-        question: 'Can angle A be 90 degrees?',
-        answer:
-          'No. Angle A on this calculator is one of the acute angles, so it must be greater than 0 and less than 90 degrees.'
+        label: "Formula",
+        value: "A = arccos(b / c)"
+      },
+      {
+        label: "Rule",
+        value: "c must be greater than b"
       }
     ]
-  }
+  },
+  formula: {
+    h2: "Formula",
+    display: "A = \\arccos\\left(\\frac{b}{c}\\right)",
+    paragraphs: [
+      "To figure out your angle, you will use the inverse cosine function, often called arccos. You divide the adjacent side by the hypotenuse, then apply arccos to the result."
+    ]
+  },
+  diagram: {
+    h2: "Triangle Diagram",
+    intro: "For angle A, side a is opposite, side b is adjacent, and side c is the hypotenuse.",
+    activeSides: [
+      "b",
+      "c"
+    ],
+    activeAngles: [
+      "A"
+    ],
+    focusLabel: "A = arccos(b / c)",
+    focusDetail: "This method uses the cosine ratio because cosine compares the adjacent side to the hypotenuse.",
+    notes: [
+      "c is always the hypotenuse.",
+      "Never call c a leg.",
+      "b is the adjacent side."
+    ]
+  },
+  howToSteps: [
+    "Locate your adjacent side (b), which is the leg touching your target angle.",
+    "Locate the hypotenuse (c), which is the long diagonal side.",
+    "Type these two numbers into the input boxes.",
+    "Hit calculate to instantly reveal the degree measurement of angle A."
+  ],
+  example: {
+    h2: "Step-by-Step Example",
+    intro: "Imagine you are working with an adjacent side b of 4 and a hypotenuse c of 5.",
+    steps: [
+      "A = arccos(b / c)",
+      "A = arccos(4 / 5)",
+      "A = arccos(0.8)",
+      "A ≈ 36.87°"
+    ],
+    answer: "Angle A is approximately 36.87 degrees."
+  },
+  resultMeaning: [
+    "The number you get at the end is the actual physical angle, measured in degrees, between the adjacent side and the hypotenuse.",
+    "If the result is 36.87°, that is exactly how much you would need to pivot from the baseline to point straight down the hypotenuse."
+  ],
+  whenToUse: {
+    intro: "You should rely on this tool whenever a problem provides you with the base (or the side touching your angle) and the long diagonal.",
+    items: [
+      "Incredibly useful for calculating ground slopes.",
+      "Determining shadow angles.",
+      "Solving standard trig homework without needing the Pythagorean theorem first."
+    ]
+  },
+  commonMistakes: {
+    intro: "Avoid these common mistakes:",
+    items: [
+      "Using the opposite side instead of the adjacent side.",
+      "Using arccos with the wrong side ratio.",
+      "Entering b greater than c.",
+      "Confusing arccos with regular cosine on a calculator keypad."
+    ]
+  },
+  relatedLinks: [
+    {
+      href: "/right-triangle-angle-calculator/",
+      label: "Right Triangle Angle Calculator"
+    },
+    {
+      href: "/right-triangle-angle-from-sine-calculator/",
+      label: "Right Triangle Angle From Sine Calculator"
+    },
+    {
+      href: "/right-triangle-angle-from-tangent-calculator/",
+      label: "Right Triangle Angle From Tangent Calculator"
+    },
+    {
+      href: "/right-triangle-missing-angle-calculator/",
+      label: "Right Triangle Missing Angle Calculator"
+    },
+    {
+      href: "/right-triangle-trig-ratios-calculator/",
+      label: "Right Triangle Trig Ratios Calculator"
+    },
+    {
+      href: "/cosine-ratio-calculator/",
+      label: "Cosine Ratio Calculator"
+    }
+  ],
+  faqs: [
+    {
+      question: "What does the formula A = arccos(b / c) actually mean?",
+      answer: "It means you are taking the length of the adjacent side, dividing it by the hypotenuse, and working backward from that decimal to find the original angle."
+    },
+    {
+      question: "What does the degree result mean in real life?",
+      answer: "The result is the actual angle you would measure with a protractor. It defines the exact tilt or slope where the adjacent side meets the hypotenuse."
+    },
+    {
+      question: "Why am I getting a math error?",
+      answer: "You likely entered a value for b that is larger than c. The adjacent side can never be longer than the hypotenuse in a right triangle."
+    },
+    {
+      question: "Can I use this if I don't know the opposite side?",
+      answer: "Absolutely. This calculation is designed specifically to work without needing the opposite side at all."
+    },
+    {
+      question: "What happens if the adjacent side is exactly half the hypotenuse?",
+      answer: "If b is exactly half of c, your ratio is 0.5. The arccos of 0.5 is exactly 60°, which is a very common special triangle."
+    }
+  ]
+},
+  {
+  slug: "right-triangle-angle-from-tangent-calculator",
+  url: "/right-triangle-angle-from-tangent-calculator/",
+  h1: "Right Triangle Angle From Tangent Calculator",
+  metaTitle: "Right Triangle Angle From Tangent Calculator | Find A = arctan(a / b)",
+  metaDescription: "Use this right triangle angle from tangent calculator to find angle A from opposite side a and adjacent side b with formula, steps, and examples.",
+  formulaSlug: "angle-from-tangent",
+  headerSummary: "When you know the two perpendicular legs of a right triangle, you can quickly find the missing angle using the tangent ratio. This approach is highly practical because it completely ignores the long diagonal hypotenuse.",
+  calculator: {
+    heading: "Calculate Angle From Tangent",
+    outputLabel: "Angle A",
+    fields: [
+      {
+        key: "a",
+        label: "Opposite leg a",
+        min: 0
+      },
+      {
+        key: "b",
+        label: "Adjacent leg b",
+        min: 0
+      }
+    ]
+  },
+  howItWorks: {
+    h2: "How to Use This Calculator",
+    paragraphs: [
+      "Using the inverse tangent function lets you translate a simple rise-over-run ratio into a precise angle. It is one of the most common ways to calculate slopes, stairs, and roof pitches in the real world.",
+      "The calculator finds angle A when you enter opposite side a and adjacent side b. Neither number can be zero or negative."
+    ],
+    cards: [
+      {
+        label: "Known values",
+        value: "Opposite side a and adjacent side b"
+      },
+      {
+        label: "Finds",
+        value: "Angle A"
+      },
+      {
+        label: "Formula",
+        value: "A = arctan(a / b)"
+      },
+      {
+        label: "Rule",
+        value: "a and b must be positive"
+      }
+    ]
+  },
+  formula: {
+    h2: "Formula",
+    display: "A = \\arctan\\left(\\frac{a}{b}\\right)",
+    paragraphs: [
+      "To find the angle, you divide the opposite side by the adjacent side, and then apply the inverse tangent function, also known as arctan."
+    ]
+  },
+  diagram: {
+    h2: "Triangle Diagram",
+    intro: "For angle A, side a is opposite, side b is adjacent, and side c is the hypotenuse.",
+    activeSides: [
+      "a",
+      "b"
+    ],
+    activeAngles: [
+      "A"
+    ],
+    focusLabel: "A = arctan(a / b)",
+    focusDetail: "This method uses the tangent ratio because tangent compares the opposite side to the adjacent side.",
+    notes: [
+      "c is always the hypotenuse.",
+      "Never call c a leg.",
+      "The hypotenuse is not needed for this calculation."
+    ]
+  },
+  howToSteps: [
+    "Find your opposite side (a), which is the leg across from your target angle.",
+    "Find your adjacent side (b), which is the leg touching your target angle.",
+    "Enter both lengths into the calculator inputs.",
+    "Click calculate to find the exact angle in degrees."
+  ],
+  example: {
+    h2: "Step-by-Step Example",
+    intro: "Let's assume your opposite side a is 3 and your adjacent side b is 4.",
+    steps: [
+      "A = arctan(a / b)",
+      "A = arctan(3 / 4)",
+      "A = arctan(0.75)",
+      "A ≈ 36.87°"
+    ],
+    answer: "Angle A is approximately 36.87 degrees."
+  },
+  resultMeaning: [
+    "Your answer is the specific degree angle formed where the adjacent side meets the hypotenuse.",
+    "A result of 36.87° means the slope is rising at a moderately steep pace. In construction, this tells you exactly what angle to cut your materials."
+  ],
+  whenToUse: {
+    intro: "Use this tool whenever you only have measurements for the two straight legs.",
+    items: [
+      "Extremely popular in woodworking.",
+      "Architecture and graphic design.",
+      "Mimics the classic \"rise over run\" calculation for finding a pitch or gradient."
+    ]
+  },
+  commonMistakes: {
+    intro: "Avoid these common mistakes:",
+    items: [
+      "Using hypotenuse in the ratio.",
+      "Switching a and b.",
+      "Using tan instead of arctan.",
+      "Trying to calculate with a side length of zero."
+    ]
+  },
+  relatedLinks: [
+    {
+      href: "/right-triangle-angle-calculator/",
+      label: "Right Triangle Angle Calculator"
+    },
+    {
+      href: "/right-triangle-angle-from-sine-calculator/",
+      label: "Right Triangle Angle From Sine Calculator"
+    },
+    {
+      href: "/right-triangle-angle-from-cosine-calculator/",
+      label: "Right Triangle Angle From Cosine Calculator"
+    },
+    {
+      href: "/right-triangle-missing-angle-calculator/",
+      label: "Right Triangle Missing Angle Calculator"
+    },
+    {
+      href: "/right-triangle-trig-ratios-calculator/",
+      label: "Right Triangle Trig Ratios Calculator"
+    },
+    {
+      href: "/tangent-ratio-calculator/",
+      label: "Tangent Ratio Calculator"
+    }
+  ],
+  faqs: [
+    {
+      question: "How does the arctan formula work?",
+      answer: "The arctan formula takes the raw decimal ratio of your opposite side divided by your adjacent side and translates it back into a precise degree angle."
+    },
+    {
+      question: "What does the calculated angle mean?",
+      answer: "The result tells you exactly how steep the angle is in degrees. A larger number means a steeper slope, while a smaller number means a gentler rise."
+    },
+    {
+      question: "Does it matter which leg is a and which is b?",
+      answer: "Yes, it is critical. Side a must be the leg completely opposite your angle, and side b must be the leg touching it. If you swap them, you will find angle B instead."
+    },
+    {
+      question: "Can the opposite side be larger than the adjacent side?",
+      answer: "Absolutely. If the opposite side is larger, the resulting angle will simply be greater than 45 degrees."
+    },
+    {
+      question: "Why don't I need the hypotenuse for this?",
+      answer: "The tangent ratio is specifically defined by the two perpendicular legs. The hypotenuse is locked in place once the legs are set, so you don't need its measurement."
+    }
+  ]
+},
+  {
+  slug: "right-triangle-missing-angle-calculator",
+  url: "/right-triangle-missing-angle-calculator/",
+  h1: "Right Triangle Missing Angle Calculator",
+  metaTitle: "Right Triangle Missing Angle Calculator | Find the Missing Acute Angle",
+  metaDescription: "Use this right triangle missing angle calculator to find the other acute angle using A + B = 90° with formula, steps, and examples.",
+  formulaSlug: "angle-sum-exact",
+  headerSummary: "Finding a missing angle in a right triangle is the easiest calculation in geometry. Because the corner angle is permanently locked at 90 degrees, the other two acute angles must perfectly balance each other out.",
+  calculator: {
+    heading: "Calculate Missing Angle",
+    outputLabel: "Angle B",
+    fields: [
+      {
+        key: "A",
+        label: "Angle A (deg)",
+        min: 0,
+        unit: "deg"
+      }
+    ]
+  },
+  howItWorks: {
+    h2: "How to Use This Calculator",
+    paragraphs: [
+      "This means you never need complex trigonometry or side lengths to solve for the missing piece. If you know one of the small angles, simple subtraction is all it takes to reveal the other.",
+      "The calculator finds the missing acute angle when you enter the other acute angle. The input must be greater than 0° and less than 90°."
+    ],
+    cards: [
+      {
+        label: "Known values",
+        value: "One acute angle"
+      },
+      {
+        label: "Finds",
+        value: "The missing acute angle"
+      },
+      {
+        label: "Formula",
+        value: "B = 90° - A"
+      },
+      {
+        label: "Rule",
+        value: "Input must be strictly between 0° and 90°"
+      }
+    ]
+  },
+  formula: {
+    h2: "Formulas",
+    display: "B = 90^\\circ - A",
+    paragraphs: [
+      "In every right triangle, the two smaller angles always add up to exactly 90 degrees. You can flip this rule around depending on which angle you need to find.",
+      "A + B = 90°",
+      "A = 90° - B"
+    ]
+  },
+  diagram: {
+    h2: "Triangle Diagram",
+    intro: "Angle A and Angle B are the two acute angles. Together, they add up to the 90° angle at corner C, which means A + B = 90°.",
+    activeSides: [],
+    activeAngles: [
+      "A",
+      "B"
+    ],
+    focusLabel: "A + B = 90°",
+    focusDetail: "In every right triangle, the two acute angles always add up to 90° because the third angle is already 90°.",
+    notes: [
+      "The 90° angle is at corner C.",
+      "Both acute angles must be less than 90°."
+    ]
+  },
+  howToSteps: [
+    "Identify the one acute angle you already know.",
+    "Enter that angle in degrees into the calculator.",
+    "Click calculate to instantly find the remaining missing angle.",
+    "There is no need to enter side lengths or the 90° corner."
+  ],
+  example: {
+    h2: "Step-by-Step Example",
+    intro: "Let's assume you know that angle A is exactly 36.87°.",
+    steps: [
+      "B = 90° − A",
+      "B = 90° − 36.87°",
+      "B = 53.13°"
+    ],
+    answer: "The missing angle B is 53.13 degrees."
+  },
+  resultMeaning: [
+    "The result represents the exact degree measurement of the final empty corner in your triangle.",
+    "Because all three corners must total exactly 180°, and the right angle takes up 90°, your result ensures the remaining 90° is perfectly split between the two acute corners."
+  ],
+  whenToUse: {
+    intro: "This calculation is the go-to final step for nearly every geometry problem.",
+    items: [
+      "Once you've used trigonometry to find your first angle, you should instantly use this method to find the second one.",
+      "Completes the triangle without having to do complex math all over again."
+    ]
+  },
+  commonMistakes: {
+    intro: "Avoid these common mistakes:",
+    items: [
+      "Subtracting from 180° instead of 90°.",
+      "Entering the 90° angle.",
+      "Using an angle bigger than 90°.",
+      "Forgetting that only the two acute angles add to 90°."
+    ]
+  },
+  relatedLinks: [
+    {
+      href: "/right-triangle-angle-calculator/",
+      label: "Right Triangle Angle Calculator"
+    },
+    {
+      href: "/right-triangle-angle-from-sine-calculator/",
+      label: "Right Triangle Angle From Sine Calculator"
+    },
+    {
+      href: "/right-triangle-angle-from-cosine-calculator/",
+      label: "Right Triangle Angle From Cosine Calculator"
+    },
+    {
+      href: "/right-triangle-angle-from-tangent-calculator/",
+      label: "Right Triangle Angle From Tangent Calculator"
+    }
+  ],
+  faqs: [
+    {
+      question: "What does the formula B = 90° - A actually do?",
+      answer: "This simple subtraction formula takes the total available 90 degrees shared by the acute corners and removes the angle you already know, leaving exactly what is left for the missing corner."
+    },
+    {
+      question: "What does the final missing angle result mean?",
+      answer: "It represents the exact degree measurement of the final empty corner in your right triangle. Finding this number completes the triangle so all three corners add perfectly to 180 degrees."
+    },
+    {
+      question: "Why do the two angles always add up to 90 degrees?",
+      answer: "Every triangle holds exactly 180 degrees. Since a right triangle always has one 90-degree corner, that leaves exactly 90 degrees left over to be shared between the remaining two corners."
+    },
+    {
+      question: "Can one of the acute angles be exactly 90 degrees?",
+      answer: "No. If one of them was 90 degrees, the other would have to be 0 degrees, which means the triangle would flatten into a single straight line."
+    },
+    {
+      question: "Do I need to know the lengths of the sides to find the missing angle?",
+      answer: "Not at all. As long as you know one of the acute angles, the sides don't matter for this specific calculation."
+    }
+  ]
+}
 ];
 
 export const FOCUSED_ANGLE_CALCULATOR_PAGE_SLUGS =

@@ -628,33 +628,57 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
           'Square the hypotenuse (c\u00b2), square the known leg (b\u00b2), subtract b\u00b2 from c\u00b2, and take the square root of the result. The formula is a = \u221a(c\u00b2 \u2212 b\u00b2). You can also just enter your values into this calculator to get the answer automatically.'
       }
     ]
-  }
-
-  ,
+  },
   {
     slug: 'right-triangle-side-from-sine-calculator',
     url: '/right-triangle-side-from-sine-calculator/',
     h1: 'Right Triangle Side From Sine Calculator',
-    metaTitle: 'Right Triangle Side From Sine Calculator | Find a = c × sin(A)',
-    metaDescription: 'Use this right triangle side from sine calculator to find opposite side a from angle A and hypotenuse c.',
+    metaTitle: 'Right Triangle Side From Sine Calculator | Find a = c \u00d7 sin(A)',
+    metaDescription: 'Use this right triangle side from sine calculator to find opposite side a from angle A and hypotenuse c with formula, steps, and examples.',
     formulaSlug: 'a-c-sin',
-    toolPurpose: 'Content will be added soon.',
-    intro: 'Content will be added soon.',
+    toolPurpose:
+      'This calculator is built for one job: finding opposite side a when you already know an acute angle and the hypotenuse. Enter your two values and the result appears instantly with step-by-step work.',
+    intro:
+      'When you know angle A and hypotenuse c in a right triangle, the fastest way to find the opposite side is through the sine ratio. This tool does exactly that. Enter the angle and hypotenuse, and it returns side a in one step.',
     quickSummary: {
-      h2: 'How to Use This Calculator',
-      intro: 'Content will be added soon.',
-      cards: []
+      h2: 'What This Sine Side Calculator Solves',
+      intro:
+        'This page focuses on finding the opposite side from an angle and hypotenuse pair. The sine function connects these three values directly, so no extra steps or rearranging are needed.',
+      cards: [
+        { label: 'Known values', value: 'Angle A and hypotenuse c' },
+        { label: 'Finds', value: 'Opposite side a' },
+        { label: 'Main formula', value: 'a = c \u00d7 sin(A)' },
+        { label: 'Best for', value: 'Finding height, rise, or vertical reach from a slope angle' }
+      ]
     },
     diagram: {
-      h2: 'Formula',
-      intro: 'Content will be added soon.',
-      caption: 'Content will be added soon.',
+      h2: 'Right Triangle Diagram: Side a from Sine',
+      intro:
+        'In this diagram, angle A sits at the bottom-right corner. The side directly across from angle A is the opposite side a, which is the value this calculator finds. Side c, the hypotenuse, is the longest side and runs from angle A up to the top vertex.',
+      caption:
+        'Right triangle showing angle A, known hypotenuse c, and unknown opposite side a.',
       sides: {
-        a: { label: 'a', description: 'Content will be added soon.', status: 'unknown' },
-        b: { label: 'b', description: 'Content will be added soon.', status: 'unknown' },
-        c: { label: 'c', description: 'Content will be added soon.', status: 'known' }
+        a: {
+          label: 'a = find',
+          description: 'Opposite side a is the vertical leg across from angle A. This is the unknown value.',
+          status: 'unknown'
+        },
+        b: {
+          label: 'b',
+          description: 'Adjacent side b sits along the base next to angle A. It is not used in this calculation.',
+          status: 'unknown'
+        },
+        c: {
+          label: 'c = known',
+          description: 'Hypotenuse c is the longest side, opposite the 90-degree angle. You enter this value.',
+          status: 'known'
+        }
       },
-      notes: []
+      notes: [
+        'For angle A, side a is opposite, side b is adjacent, and side c is the hypotenuse.',
+        'The hypotenuse is always the longest side in a right triangle.',
+        'The result a will always be shorter than c.'
+      ]
     },
     calculator: {
       outputLabel: 'Opposite side a',
@@ -664,54 +688,155 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       ]
     },
     formulaSection: {
-      h2: 'Formula',
-      paragraphs: ['Content will be added soon.'],
+      h2: 'Side From Sine Formula',
+      paragraphs: [
+        'The sine of an angle in a right triangle equals the length of the opposite side divided by the hypotenuse. Written as a ratio: sin(A) = a / c. Rearranging this gives the formula used by the calculator.',
+        'In this formula, c is the hypotenuse (the longest side, opposite the right angle), A is the acute angle you know, and a is the opposite side you want to find. The sine function handles the conversion from angle to side ratio automatically.'
+      ],
       formulas: ['a = c \\times \\sin(A)']
     },
     howTo: {
       h2: 'How to Use This Calculator',
-      steps: ['Content will be added soon.']
+      steps: [
+        'Identify the hypotenuse c in your triangle. It is always the side opposite the 90-degree angle and the longest side.',
+        'Identify your known acute angle A. Make sure it is measured in degrees.',
+        'Enter the hypotenuse c into the first input field.',
+        'Enter angle A into the second input field.',
+        'Click Calculate to find the opposite side a with step-by-step work.'
+      ]
     },
     example: {
-      h2: 'Example',
-      intro: 'Content will be added soon.',
-      lines: ['Content will be added soon.']
+      h2: 'Step-by-Step Example: Find Opposite Side a',
+      intro: 'Given: A = 36.87 degrees, c = 5. Find opposite side a using the sine formula.',
+      lines: [
+        'a = c \\times \\sin(A)',
+        'a = 5 \\times \\sin(36.87)',
+        'a = 5 \\times 0.6',
+        'a = 3'
+      ]
     },
-    extraSections: [],
+    extraSections: [
+      {
+        h2: 'What the Result Means',
+        paragraphs: [
+          'The output labeled Opposite side a is the length of the side that sits directly across from angle A. In practical terms, this is often the vertical height or rise in a slope problem.',
+          'The result will always be a positive number smaller than the hypotenuse. If a equals c, the angle would be 90 degrees, which means the triangle has collapsed into a straight line. If a is very small, the angle is close to zero.'
+        ]
+      },
+      {
+        h2: 'When to Use This Calculator',
+        paragraphs: [
+          'Use this tool whenever you have the hypotenuse and an angle and need the opposite side. This comes up more often than you might expect.',
+          'It is the right choice when the sloped distance is known (like a rope, ramp, or ladder length) and you need the vertical component.'
+        ],
+        listTitle: 'Common situations:',
+        listItems: [
+          'Finding the height a ladder reaches on a wall when you know the ladder length and lean angle.',
+          'Calculating the vertical rise of a ramp from the ramp length and incline angle.',
+          'Determining the altitude of a kite or drone from the string length and elevation angle.',
+          'Solving physics problems where a force vector is broken into a vertical component.'
+        ]
+      },
+      {
+        h2: 'Common Mistakes',
+        paragraphs: [
+          'Most errors happen when the wrong side is identified as the hypotenuse or when the angle is entered in the wrong unit. A few minutes of checking your triangle setup can save a wrong answer.'
+        ],
+        listTitle: 'Watch out for:',
+        listItems: [
+          'Using the adjacent side instead of the hypotenuse as your known side.',
+          'Using cosine instead of sine. Cosine finds the adjacent side, not the opposite.',
+          'Entering angle A in radians when the calculator expects degrees.',
+          'Forgetting that c is always the hypotenuse, not a leg.',
+          'Expecting a result larger than c. The opposite side is always shorter than the hypotenuse.'
+        ]
+      }
+    ],
     relatedLinks: [
       { href: '/right-triangle-side-from-angle-calculator/', label: 'Right Triangle Side From Angle Calculator' },
       { href: '/right-triangle-side-from-cosine-calculator/', label: 'Right Triangle Side From Cosine Calculator' },
       { href: '/right-triangle-side-from-tangent-calculator/', label: 'Right Triangle Side From Tangent Calculator' },
+      { href: '/right-triangle-angle-from-sine-calculator/', label: 'Right Triangle Angle From Sine Calculator' },
       { href: '/sine-ratio-calculator/', label: 'Sine Ratio Calculator' }
     ],
     faqs: [
-      { question: 'FAQs', answer: 'Content will be added soon.' }
+      {
+        question: 'What does a = c \u00d7 sin(A) calculate?',
+        answer:
+          'It calculates the length of the opposite side a in a right triangle. You need the hypotenuse c and an acute angle A to use this formula.'
+      },
+      {
+        question: 'Why do I use sine instead of cosine here?',
+        answer:
+          'Sine relates the opposite side to the hypotenuse. Cosine relates the adjacent side to the hypotenuse. Since this calculator finds the opposite side, sine is the correct function.'
+      },
+      {
+        question: 'Can the result be larger than the hypotenuse?',
+        answer:
+          'No. The opposite side is always shorter than the hypotenuse in a right triangle. If your result is larger, one of the inputs is wrong.'
+      },
+      {
+        question: 'What if my angle is exactly 90 degrees?',
+        answer:
+          'A 90-degree input is not valid here. In a right triangle, the two acute angles must each be between 0 and 90 degrees. The 90-degree angle is already fixed at the right angle vertex.'
+      },
+      {
+        question: 'Does the angle need to be in degrees?',
+        answer:
+          'Yes. This calculator expects angle A in degrees. If your angle is in radians, convert it to degrees first by multiplying by 180 and dividing by pi.'
+      }
     ]
   },
   {
     slug: 'right-triangle-side-from-cosine-calculator',
     url: '/right-triangle-side-from-cosine-calculator/',
     h1: 'Right Triangle Side From Cosine Calculator',
-    metaTitle: 'Right Triangle Side From Cosine Calculator | Find b = c × cos(A)',
-    metaDescription: 'Use this right triangle side from cosine calculator to find adjacent side b from angle A and hypotenuse c.',
+    metaTitle: 'Right Triangle Side From Cosine Calculator | Find b = c \u00d7 cos(A)',
+    metaDescription: 'Use this right triangle side from cosine calculator to find adjacent side b from angle A and hypotenuse c with formula, steps, and examples.',
     formulaSlug: 'b-c-cos',
-    toolPurpose: 'Content will be added soon.',
-    intro: 'Content will be added soon.',
+    toolPurpose:
+      'This calculator solves for the adjacent side b when you already have angle A and the hypotenuse c. It handles the cosine computation and shows the full solution path so you can follow or verify each step.',
+    intro:
+      'Need the adjacent side of a right triangle? If you know one acute angle and the hypotenuse, the cosine ratio gives you the answer directly. This page runs that calculation for you and breaks down every step.',
     quickSummary: {
-      h2: 'How to Use This Calculator',
-      intro: 'Content will be added soon.',
-      cards: []
+      h2: 'What This Cosine Side Calculator Solves',
+      intro:
+        'This calculator takes angle A and hypotenuse c as inputs and returns the adjacent side b. Cosine is the ratio that links these three values, so the formula needs no rearranging.',
+      cards: [
+        { label: 'Known values', value: 'Angle A and hypotenuse c' },
+        { label: 'Finds', value: 'Adjacent side b' },
+        { label: 'Main formula', value: 'b = c \u00d7 cos(A)' },
+        { label: 'Best for', value: 'Finding horizontal run, base distance, or ground projection' }
+      ]
     },
     diagram: {
-      h2: 'Formula',
-      intro: 'Content will be added soon.',
-      caption: 'Content will be added soon.',
+      h2: 'Right Triangle Diagram: Side b from Cosine',
+      intro:
+        'In this layout, angle A is at the bottom-right. The adjacent side b runs along the base, sitting right next to angle A. The hypotenuse c stretches from angle A up to the top vertex. The calculator uses these two known values to find b.',
+      caption:
+        'Right triangle showing angle A, known hypotenuse c, and unknown adjacent side b.',
       sides: {
-        a: { label: 'a', description: 'Content will be added soon.', status: 'unknown' },
-        b: { label: 'b', description: 'Content will be added soon.', status: 'unknown' },
-        c: { label: 'c', description: 'Content will be added soon.', status: 'known' }
+        a: {
+          label: 'a',
+          description: 'Opposite side a is the vertical leg across from angle A. It is not needed for this calculation.',
+          status: 'unknown'
+        },
+        b: {
+          label: 'b = find',
+          description: 'Adjacent side b runs along the base next to angle A. This is the value the calculator returns.',
+          status: 'unknown'
+        },
+        c: {
+          label: 'c = known',
+          description: 'Hypotenuse c is the longest side, opposite the right angle. You provide this as input.',
+          status: 'known'
+        }
       },
-      notes: []
+      notes: [
+        'For angle A, side a is opposite, side b is adjacent, and side c is the hypotenuse.',
+        'The adjacent side is always the leg that touches the angle and the right angle.',
+        'The result b will always be shorter than c.'
+      ]
     },
     calculator: {
       outputLabel: 'Adjacent side b',
@@ -721,54 +846,155 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       ]
     },
     formulaSection: {
-      h2: 'Formula',
-      paragraphs: ['Content will be added soon.'],
+      h2: 'Side From Cosine Formula',
+      paragraphs: [
+        'The cosine of an angle in a right triangle equals the adjacent side divided by the hypotenuse. Written as a ratio: cos(A) = b / c. Multiplying both sides by c gives the direct formula below.',
+        'Here, c is the hypotenuse (the longest side, opposite the 90-degree angle), A is the acute angle, and b is the adjacent side you want. The cosine function converts the angle into the exact fraction of the hypotenuse that equals the adjacent leg.'
+      ],
       formulas: ['b = c \\times \\cos(A)']
     },
     howTo: {
       h2: 'How to Use This Calculator',
-      steps: ['Content will be added soon.']
+      steps: [
+        'Find the hypotenuse c in your right triangle. It is the side across from the right angle and always the longest side.',
+        'Identify your known acute angle A. Confirm the value is in degrees.',
+        'Type the hypotenuse c into the first field.',
+        'Type angle A into the second field.',
+        'Press Calculate to see the adjacent side b and the step-by-step solution.'
+      ]
     },
     example: {
-      h2: 'Example',
-      intro: 'Content will be added soon.',
-      lines: ['Content will be added soon.']
+      h2: 'Step-by-Step Example: Find Adjacent Side b',
+      intro: 'Given: A = 36.87 degrees, c = 5. Find adjacent side b using the cosine formula.',
+      lines: [
+        'b = c \\times \\cos(A)',
+        'b = 5 \\times \\cos(36.87)',
+        'b = 5 \\times 0.8',
+        'b = 4'
+      ]
     },
-    extraSections: [],
+    extraSections: [
+      {
+        h2: 'What the Result Means',
+        paragraphs: [
+          'The output labeled Adjacent side b is the leg that sits next to angle A and also touches the right angle. In real-world problems, this is often the horizontal distance, ground run, or base measurement.',
+          'Like the opposite side, the adjacent side is always shorter than the hypotenuse. If the angle is small, b will be close to c. If the angle is large (near 90 degrees), b shrinks toward zero.'
+        ]
+      },
+      {
+        h2: 'When to Use This Calculator',
+        paragraphs: [
+          'Choose this tool when you have the hypotenuse and an angle and need the horizontal or base component. This pattern appears in slope calculations, shadow problems, and structural layout tasks.',
+          'It pairs naturally with the sine calculator. Together, they let you split the hypotenuse into its opposite and adjacent components from the same angle.'
+        ],
+        listTitle: 'Common situations:',
+        listItems: [
+          'Finding the horizontal distance a ladder covers on the ground from ladder length and angle.',
+          'Calculating the ground run of a ramp when the ramp length and angle are known.',
+          'Determining the shadow length cast by a pole when the sun angle and pole-to-tip distance are given.',
+          'Breaking a force vector into its horizontal component in physics problems.'
+        ]
+      },
+      {
+        h2: 'Common Mistakes',
+        paragraphs: [
+          'The most frequent error is mixing up which trig function to use. Sine and cosine both use the hypotenuse, but they return different sides. Cosine gives the adjacent side, sine gives the opposite.'
+        ],
+        listTitle: 'Watch out for:',
+        listItems: [
+          'Using sine instead of cosine. Sine returns the opposite side, not the adjacent.',
+          'Entering the opposite side instead of the hypotenuse.',
+          'Confusing side b with side a. Side b is adjacent to angle A, side a is opposite.',
+          'Forgetting that c is the hypotenuse and never a leg.',
+          'Using an angle in radians when the calculator expects degrees.'
+        ]
+      }
+    ],
     relatedLinks: [
       { href: '/right-triangle-side-from-angle-calculator/', label: 'Right Triangle Side From Angle Calculator' },
       { href: '/right-triangle-side-from-sine-calculator/', label: 'Right Triangle Side From Sine Calculator' },
       { href: '/right-triangle-side-from-tangent-calculator/', label: 'Right Triangle Side From Tangent Calculator' },
+      { href: '/right-triangle-angle-from-cosine-calculator/', label: 'Right Triangle Angle From Cosine Calculator' },
       { href: '/cosine-ratio-calculator/', label: 'Cosine Ratio Calculator' }
     ],
     faqs: [
-      { question: 'FAQs', answer: 'Content will be added soon.' }
+      {
+        question: 'What does b = c \u00d7 cos(A) calculate?',
+        answer:
+          'It calculates the adjacent side b of a right triangle when you know the hypotenuse c and an acute angle A. The cosine function converts the angle into the correct ratio.'
+      },
+      {
+        question: 'How is this different from the sine calculator?',
+        answer:
+          'The sine calculator finds the opposite side a. This cosine calculator finds the adjacent side b. Both use the hypotenuse, but they return different legs of the triangle.'
+      },
+      {
+        question: 'What does adjacent side mean?',
+        answer:
+          'The adjacent side is the leg that touches the angle you are using and also touches the right angle. For angle A, the adjacent side is b.'
+      },
+      {
+        question: 'Can b be larger than the hypotenuse?',
+        answer:
+          'No. In a right triangle, both legs are always shorter than the hypotenuse. If your result is larger than c, check your inputs.'
+      },
+      {
+        question: 'What happens if I enter a very small angle?',
+        answer:
+          'As angle A gets closer to 0 degrees, cos(A) approaches 1, so b gets closer to c. The adjacent side is nearly the full length of the hypotenuse at very small angles.'
+      }
     ]
   },
   {
     slug: 'right-triangle-side-from-tangent-calculator',
     url: '/right-triangle-side-from-tangent-calculator/',
     h1: 'Right Triangle Side From Tangent Calculator',
-    metaTitle: 'Right Triangle Side From Tangent Calculator | Find a = b × tan(A)',
-    metaDescription: 'Use this right triangle side from tangent calculator to find opposite side a from angle A and adjacent side b.',
+    metaTitle: 'Right Triangle Side From Tangent Calculator | Find a = b \u00d7 tan(A)',
+    metaDescription: 'Use this right triangle side from tangent calculator to find opposite side a from angle A and adjacent side b with formula, steps, and examples.',
     formulaSlug: 'a-b-tan',
-    toolPurpose: 'Content will be added soon.',
-    intro: 'Content will be added soon.',
+    toolPurpose:
+      'This tool finds the opposite side a when you know the adjacent side b and an acute angle A. It uses the tangent ratio, which links the two legs directly without needing the hypotenuse.',
+    intro:
+      'If you have the adjacent side and an angle but not the hypotenuse, tangent is the ratio you need. This calculator multiplies the adjacent side by the tangent of the angle to give you the opposite side. No extra steps required.',
     quickSummary: {
-      h2: 'How to Use This Calculator',
-      intro: 'Content will be added soon.',
-      cards: []
+      h2: 'What This Tangent Side Calculator Solves',
+      intro:
+        'Unlike sine and cosine, the tangent ratio works with the two legs of the triangle instead of involving the hypotenuse. This makes it ideal when the hypotenuse is unknown or not needed.',
+      cards: [
+        { label: 'Known values', value: 'Angle A and adjacent side b' },
+        { label: 'Finds', value: 'Opposite side a' },
+        { label: 'Main formula', value: 'a = b \u00d7 tan(A)' },
+        { label: 'Best for', value: 'Finding height or rise from a base distance and angle' }
+      ]
     },
     diagram: {
-      h2: 'Formula',
-      intro: 'Content will be added soon.',
-      caption: 'Content will be added soon.',
+      h2: 'Right Triangle Diagram: Side a from Tangent',
+      intro:
+        'Angle A sits at the bottom-right. The adjacent side b is the horizontal base, right next to angle A. The opposite side a is the vertical leg across from angle A. Tangent connects these two legs directly.',
+      caption:
+        'Right triangle showing angle A, known adjacent side b, and unknown opposite side a.',
       sides: {
-        a: { label: 'a', description: 'Content will be added soon.', status: 'unknown' },
-        b: { label: 'b', description: 'Content will be added soon.', status: 'known' },
-        c: { label: 'c', description: 'Content will be added soon.', status: 'unknown' }
+        a: {
+          label: 'a = find',
+          description: 'Opposite side a is the vertical leg across from angle A. This is the value the calculator returns.',
+          status: 'unknown'
+        },
+        b: {
+          label: 'b = known',
+          description: 'Adjacent side b runs along the base next to angle A. You enter this value.',
+          status: 'known'
+        },
+        c: {
+          label: 'c',
+          description: 'Hypotenuse c is the longest side. It is not required for this calculation.',
+          status: 'unknown'
+        }
       },
-      notes: []
+      notes: [
+        'For angle A, side a is opposite, side b is adjacent, and side c is the hypotenuse.',
+        'Tangent uses only the two legs; the hypotenuse is not needed.',
+        'As angle A grows larger, the opposite side a increases relative to b.'
+      ]
     },
     calculator: {
       outputLabel: 'Opposite side a',
@@ -778,29 +1004,104 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       ]
     },
     formulaSection: {
-      h2: 'Formula',
-      paragraphs: ['Content will be added soon.'],
+      h2: 'Side From Tangent Formula',
+      paragraphs: [
+        'Tangent of an angle equals the opposite side divided by the adjacent side: tan(A) = a / b. Multiplying both sides by b isolates the opposite side a.',
+        'In this formula, b is the adjacent leg (the side next to angle A that also touches the right angle), A is the known acute angle in degrees, and a is the opposite leg you want to find. No hypotenuse is involved.'
+      ],
       formulas: ['a = b \\times \\tan(A)']
     },
     howTo: {
       h2: 'How to Use This Calculator',
-      steps: ['Content will be added soon.']
+      steps: [
+        'Identify the adjacent side b. This is the leg that sits next to angle A and also connects to the right angle.',
+        'Confirm the angle A is in degrees and is between 0 and 90.',
+        'Enter adjacent side b into the first input field.',
+        'Enter angle A into the second input field.',
+        'Click Calculate to see opposite side a and the full solution steps.'
+      ]
     },
     example: {
-      h2: 'Example',
-      intro: 'Content will be added soon.',
-      lines: ['Content will be added soon.']
+      h2: 'Step-by-Step Example: Find Opposite Side a',
+      intro: 'Given: A = 36.87 degrees, b = 4. Find opposite side a using the tangent formula.',
+      lines: [
+        'a = b \\times \\tan(A)',
+        'a = 4 \\times \\tan(36.87)',
+        'a = 4 \\times 0.75',
+        'a = 3'
+      ]
     },
-    extraSections: [],
+    extraSections: [
+      {
+        h2: 'What the Result Means',
+        paragraphs: [
+          'The output labeled Opposite side a is the leg across from angle A. It tells you the vertical distance, height, or rise that corresponds to the base distance and angle you entered.',
+          'Unlike sine and cosine results, the tangent result is not limited to being smaller than any particular input. If the angle is large (close to 90 degrees), tan(A) becomes very large, and a can exceed b significantly.'
+        ]
+      },
+      {
+        h2: 'When to Use This Calculator',
+        paragraphs: [
+          'This is the right tool when you have a base measurement and an angle of elevation or depression and need to find the height or vertical distance. It skips the hypotenuse entirely.',
+          'Tangent is especially useful in surveying, construction, and field measurement problems where the horizontal distance is known from a map or tape measure and the angle is read from an inclinometer or clinometer.'
+        ],
+        listTitle: 'Common situations:',
+        listItems: [
+          'Finding the height of a building when you know your distance from the base and the angle of elevation.',
+          'Calculating the rise of a hill from the horizontal run and slope angle.',
+          'Determining the depth of a trench from the edge distance and the angle of descent.',
+          'Converting a roof pitch angle into the actual rise per unit of horizontal run.'
+        ]
+      },
+      {
+        h2: 'Common Mistakes',
+        paragraphs: [
+          'Tangent problems often go wrong when the hypotenuse is used where the adjacent side should be, or when the two legs are swapped. Double-check which side sits next to the angle and which one is across from it.'
+        ],
+        listTitle: 'Watch out for:',
+        listItems: [
+          'Using the hypotenuse instead of the adjacent side b. Tangent does not use the hypotenuse.',
+          'Switching a and b. The adjacent side is the input, the opposite side is the output.',
+          'Using division instead of multiplication. To find a from b, you multiply by tan(A).',
+          'Using an angle of exactly 90 degrees. Tangent of 90 is undefined and will produce an error.',
+          'Entering the angle in radians rather than degrees.'
+        ]
+      }
+    ],
     relatedLinks: [
       { href: '/right-triangle-side-from-angle-calculator/', label: 'Right Triangle Side From Angle Calculator' },
       { href: '/right-triangle-side-from-sine-calculator/', label: 'Right Triangle Side From Sine Calculator' },
       { href: '/right-triangle-side-from-cosine-calculator/', label: 'Right Triangle Side From Cosine Calculator' },
       { href: '/right-triangle-adjacent-side-from-tangent-calculator/', label: 'Right Triangle Adjacent Side From Tangent Calculator' },
+      { href: '/right-triangle-angle-from-tangent-calculator/', label: 'Right Triangle Angle From Tangent Calculator' },
       { href: '/tangent-ratio-calculator/', label: 'Tangent Ratio Calculator' }
     ],
     faqs: [
-      { question: 'FAQs', answer: 'Content will be added soon.' }
+      {
+        question: 'What does a = b \u00d7 tan(A) calculate?',
+        answer:
+          'It calculates the opposite side a of a right triangle when you know the adjacent side b and an acute angle A. Tangent is the ratio that connects the two legs.'
+      },
+      {
+        question: 'Why does this calculator not need the hypotenuse?',
+        answer:
+          'The tangent ratio is defined as opposite over adjacent (a / b). It only involves the two legs, so the hypotenuse is not part of the formula.'
+      },
+      {
+        question: 'What happens when the angle is close to 90 degrees?',
+        answer:
+          'Tangent values grow extremely large as the angle approaches 90 degrees. The opposite side becomes much longer than the adjacent side, and at exactly 90 degrees the tangent is undefined.'
+      },
+      {
+        question: 'Can I use this to find the adjacent side instead?',
+        answer:
+          'No. This calculator finds the opposite side from the adjacent side. To find the adjacent side from the opposite side, use the adjacent side from tangent calculator with the formula b = a / tan(A).'
+      },
+      {
+        question: 'Is there a difference between tan and tangent?',
+        answer:
+          'No. They are the same function. "tan" is the standard abbreviation used in calculators and math notation. Both refer to the tangent trigonometric function.'
+      }
     ]
   },
   {
@@ -808,25 +1109,51 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     url: '/right-triangle-adjacent-side-from-tangent-calculator/',
     h1: 'Right Triangle Adjacent Side From Tangent Calculator',
     metaTitle: 'Right Triangle Adjacent Side From Tangent Calculator | Find b = a / tan(A)',
-    metaDescription: 'Use this right triangle adjacent side from tangent calculator to find adjacent side b from angle A and opposite side a.',
+    metaDescription: 'Use this right triangle adjacent side from tangent calculator to find adjacent side b from angle A and opposite side a with formula, steps, and examples.',
     formulaSlug: 'b-a-tan',
-    toolPurpose: 'Content will be added soon.',
-    intro: 'Content will be added soon.',
+    toolPurpose:
+      'This tool finds the adjacent side b when you have the opposite side a and an acute angle A. It reverses the tangent formula, dividing instead of multiplying, so you get the base length directly.',
+    intro:
+      'Sometimes you know the height and the angle but need the base distance. This calculator handles that by dividing the opposite side by the tangent of the angle. Enter your values and get adjacent side b with a full breakdown.',
     quickSummary: {
-      h2: 'How to Use This Calculator',
-      intro: 'Content will be added soon.',
-      cards: []
+      h2: 'What This Adjacent Side Calculator Solves',
+      intro:
+        'This is the reverse of the standard tangent side calculator. Instead of multiplying by tangent to find the opposite side, you divide by tangent to find the adjacent side. The hypotenuse is not involved.',
+      cards: [
+        { label: 'Known values', value: 'Angle A and opposite side a' },
+        { label: 'Finds', value: 'Adjacent side b' },
+        { label: 'Main formula', value: 'b = a / tan(A)' },
+        { label: 'Best for', value: 'Finding base distance, horizontal run, or ground offset from height and angle' }
+      ]
     },
     diagram: {
-      h2: 'Formula',
-      intro: 'Content will be added soon.',
-      caption: 'Content will be added soon.',
+      h2: 'Right Triangle Diagram: Side b from Tangent',
+      intro:
+        'Angle A is at the bottom-right corner. The opposite side a is the vertical leg across from it, which you already know. The adjacent side b is the horizontal base next to angle A, and this is what the calculator finds by dividing a by tan(A).',
+      caption:
+        'Right triangle showing angle A, known opposite side a, and unknown adjacent side b.',
       sides: {
-        a: { label: 'a', description: 'Content will be added soon.', status: 'known' },
-        b: { label: 'b', description: 'Content will be added soon.', status: 'unknown' },
-        c: { label: 'c', description: 'Content will be added soon.', status: 'unknown' }
+        a: {
+          label: 'a = known',
+          description: 'Opposite side a is the vertical leg across from angle A. You enter this value.',
+          status: 'known'
+        },
+        b: {
+          label: 'b = find',
+          description: 'Adjacent side b runs along the base next to angle A. This is the value the calculator returns.',
+          status: 'unknown'
+        },
+        c: {
+          label: 'c',
+          description: 'Hypotenuse c is the longest side. It is not part of this calculation.',
+          status: 'unknown'
+        }
       },
-      notes: []
+      notes: [
+        'For angle A, side a is opposite, side b is adjacent, and side c is the hypotenuse.',
+        'This calculation uses division, not multiplication.',
+        'As angle A increases, the adjacent side b decreases for the same opposite side a.'
+      ]
     },
     calculator: {
       outputLabel: 'Adjacent side b',
@@ -836,29 +1163,104 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       ]
     },
     formulaSection: {
-      h2: 'Formula',
-      paragraphs: ['Content will be added soon.'],
+      h2: 'Adjacent Side From Tangent Formula',
+      paragraphs: [
+        'The tangent ratio states that tan(A) = a / b, where a is the opposite side and b is the adjacent side. Rearranging to solve for b gives the formula below.',
+        'In this formula, a is the opposite leg (the side across from angle A), A is the acute angle in degrees, and b is the adjacent leg you want to find. The division by tan(A) converts the known height and angle into the corresponding base length.'
+      ],
       formulas: ['b = a / \\tan(A)']
     },
     howTo: {
       h2: 'How to Use This Calculator',
-      steps: ['Content will be added soon.']
+      steps: [
+        'Identify the opposite side a. This is the leg across from angle A, often the vertical height or rise.',
+        'Confirm the angle A is in degrees and falls between 0 and 90.',
+        'Enter opposite side a into the first input field.',
+        'Enter angle A into the second input field.',
+        'Click Calculate to see adjacent side b and the complete solution.'
+      ]
     },
     example: {
-      h2: 'Example',
-      intro: 'Content will be added soon.',
-      lines: ['Content will be added soon.']
+      h2: 'Step-by-Step Example: Find Adjacent Side b',
+      intro: 'Given: A = 36.87 degrees, a = 3. Find adjacent side b using the tangent division formula.',
+      lines: [
+        'b = a / \\tan(A)',
+        'b = 3 / \\tan(36.87)',
+        'b = 3 / 0.75',
+        'b = 4'
+      ]
     },
-    extraSections: [],
+    extraSections: [
+      {
+        h2: 'What the Result Means',
+        paragraphs: [
+          'The output labeled Adjacent side b is the horizontal base of the triangle. It represents the ground distance, run, or offset that corresponds to the height and angle you provided.',
+          'When the angle is small, the base will be much longer than the height, because a gentle slope covers a lot of horizontal distance. When the angle is steep (close to 90 degrees), the base shrinks because the triangle is nearly vertical.'
+        ]
+      },
+      {
+        h2: 'When to Use This Calculator',
+        paragraphs: [
+          'This tool is ideal when you know a vertical measurement and a slope angle and want to find how far out the base extends. It flips the usual tangent problem around.',
+          'It comes up in building setbacks, foundation offsets, and situations where height restrictions or clearance distances determine how far back something must be placed.'
+        ],
+        listTitle: 'Common situations:',
+        listItems: [
+          'Finding how far from a wall you need to stand based on wall height and viewing angle.',
+          'Calculating the horizontal run needed for a staircase from the total rise and stair angle.',
+          'Determining the setback distance for a retaining wall from the wall height and soil angle of repose.',
+          'Solving surveying problems where elevation and angle are measured and horizontal distance is needed.'
+        ]
+      },
+      {
+        h2: 'Common Mistakes',
+        paragraphs: [
+          'The biggest mistake with this calculator is using multiplication instead of division. The standard tangent formula multiplies to find the opposite side. This reversed version divides to find the adjacent side. Mixing them up swaps the answer completely.'
+        ],
+        listTitle: 'Watch out for:',
+        listItems: [
+          'Multiplying a by tan(A) instead of dividing. That formula finds the opposite side, not the adjacent.',
+          'Using b = a \u00d7 tan(A), which is the wrong formula for this calculator.',
+          'Switching opposite and adjacent sides. Side a is across from angle A; side b is next to it.',
+          'Using an angle outside the valid range. Angle A must be greater than 0 and less than 90 degrees.',
+          'Entering the angle in radians instead of degrees.'
+        ]
+      }
+    ],
     relatedLinks: [
       { href: '/right-triangle-side-from-angle-calculator/', label: 'Right Triangle Side From Angle Calculator' },
       { href: '/right-triangle-side-from-tangent-calculator/', label: 'Right Triangle Side From Tangent Calculator' },
       { href: '/right-triangle-side-from-sine-calculator/', label: 'Right Triangle Side From Sine Calculator' },
       { href: '/right-triangle-side-from-cosine-calculator/', label: 'Right Triangle Side From Cosine Calculator' },
+      { href: '/right-triangle-angle-from-tangent-calculator/', label: 'Right Triangle Angle From Tangent Calculator' },
       { href: '/tangent-ratio-calculator/', label: 'Tangent Ratio Calculator' }
     ],
     faqs: [
-      { question: 'FAQs', answer: 'Content will be added soon.' }
+      {
+        question: 'What does b = a / tan(A) calculate?',
+        answer:
+          'It calculates the adjacent side b when you know the opposite side a and an acute angle A. It is the rearranged version of the tangent formula tan(A) = a / b.'
+      },
+      {
+        question: 'Why does this formula use division instead of multiplication?',
+        answer:
+          'The standard tangent formula multiplies b by tan(A) to find a. This calculator does the reverse: it divides a by tan(A) to find b. Division is needed because b is in the denominator of the original ratio.'
+      },
+      {
+        question: 'What is the difference between this and the tangent side calculator?',
+        answer:
+          'The tangent side calculator finds the opposite side a from the adjacent side b. This calculator does the opposite: it finds the adjacent side b from the opposite side a. They are inverse operations.'
+      },
+      {
+        question: 'Can the result be larger than the opposite side?',
+        answer:
+          'Yes. When the angle is less than 45 degrees, the adjacent side is longer than the opposite side. The two sides are equal only when the angle is exactly 45 degrees.'
+      },
+      {
+        question: 'What happens if I divide by a very small tangent value?',
+        answer:
+          'When the angle is very close to 0 degrees, tan(A) is nearly zero, and dividing by it produces a very large result. This means the base is extremely long compared to the height, which makes geometric sense for a nearly flat triangle.'
+      }
     ]
   }
 ];

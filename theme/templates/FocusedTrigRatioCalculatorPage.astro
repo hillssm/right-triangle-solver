@@ -3,16 +3,16 @@ import type { FocusedTrigRatioCalculatorPage as PageData } from 'src/data/focuse
 import { getFormulaBySlug } from 'src/data/rightTriangleFormulas';
 import FormulaCalculator from 'theme/components/FormulaCalculator.astro';
 import Faq from 'theme/components/Faq.astro';
-import { DEFAULT_LOCALE, localizePath } from 'theme/i18n/locales';
+import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
 
 interface Props {
   page: PageData;
+  locale?: Locale;
 }
 
-const { page } = Astro.props;
-const locale = DEFAULT_LOCALE;
+const { page, locale = DEFAULT_LOCALE } = Astro.props;
 
 const formula = getFormulaBySlug(page.formulaSlug);
 if (!formula || !formula.calculator) {

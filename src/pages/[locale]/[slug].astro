@@ -7,9 +7,14 @@ import {
   FOCUSED_MEASUREMENT_CALCULATOR_PAGE_SLUGS,
   getFocusedMeasurementCalculatorPage
 } from 'src/data/focusedMeasurementCalculatorPages';
+import {
+  FOCUSED_TRIG_RATIO_CALCULATOR_PAGE_SLUGS,
+  getFocusedTrigRatioCalculatorPage
+} from 'src/data/focusedTrigRatioCalculatorPages';
 import { GROUPED_PAGE_SLUGS } from 'src/data/rightTriangleGroupedPages';
 import FocusedSideCalculatorPage from 'theme/templates/FocusedSideCalculatorPage.astro';
 import FocusedMeasurementCalculatorPage from 'theme/templates/FocusedMeasurementCalculatorPage.astro';
+import FocusedTrigRatioCalculatorPage from 'theme/templates/FocusedTrigRatioCalculatorPage.astro';
 import GroupedCalculatorPage from 'theme/templates/GroupedCalculatorPage.astro';
 import {
   getLocaleFromParams,
@@ -21,7 +26,8 @@ export function getStaticPaths() {
     [
       ...GROUPED_PAGE_SLUGS,
       ...FOCUSED_SIDE_CALCULATOR_PAGE_SLUGS,
-      ...FOCUSED_MEASUREMENT_CALCULATOR_PAGE_SLUGS
+      ...FOCUSED_MEASUREMENT_CALCULATOR_PAGE_SLUGS,
+      ...FOCUSED_TRIG_RATIO_CALCULATOR_PAGE_SLUGS
     ].map((slug) => ({
       params: { ...item.params, slug }
     }))
@@ -32,12 +38,15 @@ const { locale: rawLocale, slug = '' } = Astro.params;
 const locale = getLocaleFromParams(rawLocale);
 const focusedPage = getFocusedSideCalculatorPage(slug, locale);
 const measurementPage = getFocusedMeasurementCalculatorPage(slug, locale);
+const trigRatioPage = getFocusedTrigRatioCalculatorPage(slug);
 ---
 {
   focusedPage ? (
     <FocusedSideCalculatorPage page={focusedPage} locale={locale} />
   ) : measurementPage ? (
     <FocusedMeasurementCalculatorPage page={measurementPage} locale={locale} />
+  ) : trigRatioPage ? (
+    <FocusedTrigRatioCalculatorPage page={trigRatioPage} locale={locale} />
   ) : (
     <GroupedCalculatorPage locale={locale} slug={slug} />
   )

@@ -240,6 +240,27 @@ const relatedAngleCalculatorLinks = FOCUSED_ANGLE_CALCULATOR_PAGES.map((page) =>
 const showRelatedAngleCalculators =
   locale === 'en' && groupedPage?.slug === 'right-triangle-angle-calculator';
 
+const relatedSideFromAngleCalculatorLinks = [
+  {
+    href: '/right-triangle-side-from-sine-calculator/',
+    label: 'Right Triangle Side From Sine Calculator'
+  },
+  {
+    href: '/right-triangle-side-from-cosine-calculator/',
+    label: 'Right Triangle Side From Cosine Calculator'
+  },
+  {
+    href: '/right-triangle-side-from-tangent-calculator/',
+    label: 'Right Triangle Side From Tangent Calculator'
+  },
+  {
+    href: '/right-triangle-adjacent-side-from-tangent-calculator/',
+    label: 'Right Triangle Adjacent Side From Tangent Calculator'
+  }
+];
+const showRelatedSideFromAngleCalculators =
+  locale === 'en' && groupedPage?.slug === 'right-triangle-side-from-angle-calculator';
+
 const quickStartTemplates = Array.isArray(groupedUi.quickStartSteps)
   ? groupedUi.quickStartSteps
   : defaultQuickStartTemplates;
@@ -668,6 +689,30 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
           <h2 class="text-2xl font-semibold">Related Trigonometric Ratio Calculators</h2>
           <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {relatedTrigRatioCalculatorLinks.map((link) => (
+              <a
+                href={link.href}
+                class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
+              >
+                <h3 class="text-base font-semibold text-on-surface group-hover:text-primary">
+                  {link.label}
+                </h3>
+                <p class="mt-3 text-[11px] uppercase tracking-widest text-primary">
+                  {uiOpen}
+                </p>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {showRelatedSideFromAngleCalculators && (
+        <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+          <h2 class="text-2xl font-semibold">Related Side From Angle Calculators</h2>
+          <p class="mt-3 max-w-3xl text-sm text-on-surface-variant">
+            Use these focused calculators if you want to find one right triangle side from an angle and a known side.
+          </p>
+          <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
+            {relatedSideFromAngleCalculatorLinks.map((link) => (
               <a
                 href={link.href}
                 class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"

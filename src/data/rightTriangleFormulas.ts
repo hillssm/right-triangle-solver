@@ -433,7 +433,7 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     slug: 'b-a-tan',
     title: 'Leg b from Tangent',
     category: 'Trigonometry',
-    expression: 'b = \\frac{a}{\\tan(A)}',
+    expression: 'b = a / \\tan(A)',
     description: 'Find leg b using leg a and the tangent of A.',
     variables: ['a = opposite leg', 'b = adjacent leg', 'A = acute angle'],
     notes: [],

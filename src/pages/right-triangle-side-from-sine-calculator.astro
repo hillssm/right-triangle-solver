@@ -1,0 +1,12 @@
+---
+import { getFocusedSideCalculatorPage } from 'src/data/focusedSideCalculatorPages';
+import FocusedSideCalculatorPage from 'theme/templates/FocusedSideCalculatorPage.astro';
+
+const page = getFocusedSideCalculatorPage('right-triangle-side-from-sine-calculator');
+
+if (!page) {
+  throw new Error('Missing page data for right-triangle-side-from-sine-calculator');
+}
+---
+
+<FocusedSideCalculatorPage page={page} />

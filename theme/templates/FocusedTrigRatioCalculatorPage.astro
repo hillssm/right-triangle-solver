@@ -1,5 +1,10 @@
 ---
 import type { FocusedTrigRatioCalculatorPage as PageData } from 'src/data/focusedTrigRatioCalculatorPages';
+import { getFocusedSideCalculatorUi } from 'src/data/focusedSideCalculatorUiTranslations';
+import {
+  getFocusedTrigRatioRuntimeTranslations,
+  getFocusedTrigRatioUi
+} from 'src/data/focusedTrigRatioCalculatorTranslations';
 import { getFormulaBySlug } from 'src/data/rightTriangleFormulas';
 import FormulaCalculator from 'theme/components/FormulaCalculator.astro';
 import Faq from 'theme/components/Faq.astro';
@@ -13,6 +18,9 @@ interface Props {
 }
 
 const { page, locale = DEFAULT_LOCALE } = Astro.props;
+const trigUi = getFocusedTrigRatioUi(locale);
+const runtimeTranslations = getFocusedTrigRatioRuntimeTranslations(page, locale);
+const sharedCalculatorUi = getFocusedSideCalculatorUi(locale);
 
 const formula = getFormulaBySlug(page.formulaSlug);
 if (!formula || !formula.calculator) {
@@ -29,11 +37,11 @@ const calculatorFormula = {
 };
 
 const canonicalPath = localizePath(locale, page.url);
-const parentPageLabel = 'Right Triangle Trig Ratios Calculator';
+const parentPageLabel = trigUi.parentPageLabel;
 const parentPageHref = localizePath(locale, '/right-triangle-trig-ratios-calculator/');
 
 const breadcrumbItems = [
-  { label: 'Home', href: localizePath(locale, '/') },
+  { label: trigUi.home, href: localizePath(locale, '/') },
   { label: parentPageLabel, href: parentPageHref },
   { label: page.h1, href: canonicalPath }
 ];
@@ -63,9 +71,9 @@ const faqSchema = {
 };
 
 const calculatorMessages = {
-  positive: 'Please enter positive values.',
-  invalid: 'Please enter positive values.',
-  hypotenuseKnownLeg: 'The hypotenuse c must be greater than the known side.'
+  positive: sharedCalculatorUi.positive,
+  invalid: sharedCalculatorUi.positive,
+  hypotenuseKnownLeg: sharedCalculatorUi.hypotenuseKnownLeg
 };
 
 type TriangleSide = 'a' | 'b' | 'c';
@@ -82,16 +90,16 @@ type RatioDiagram = {
 
 const sideInfo: Record<TriangleSide, { role: string; description: string }> = {
   a: {
-    role: 'opposite side',
-    description: 'across from angle A'
+    role: trigUi.sideRoles.a.role,
+    description: trigUi.sideRoles.a.description
   },
   b: {
-    role: 'adjacent side',
-    description: 'next to angle A'
+    role: trigUi.sideRoles.b.role,
+    description: trigUi.sideRoles.b.description
   },
   c: {
-    role: 'hypotenuse',
-    description: 'longest side, opposite 90 degrees'
+    role: trigUi.sideRoles.c.role,
+    description: trigUi.sideRoles.c.description
   }
 };
 
@@ -152,10 +160,18 @@ const ratioDiagrams: Record<string, RatioDiagram> = {
   }
 };
 
-const ratioDiagram = ratioDiagrams[page.slug];
-if (!ratioDiagram) {
+const baseRatioDiagram = ratioDiagrams[page.slug];
+if (!baseRatioDiagram) {
   throw new Error(`Ratio diagram not found: ${page.slug}`);
 }
+
+const ratioDiagram = {
+  ...baseRatioDiagram,
+  numeratorLabel: trigUi.sideRoles[baseRatioDiagram.numerator].label,
+  denominatorLabel: trigUi.sideRoles[baseRatioDiagram.denominator].label,
+  relationship: page.diagramExplanation[1] || baseRatioDiagram.relationship,
+  rangeNote: page.whatResultMeans[1] || baseRatioDiagram.rangeNote
+};
 
 const sideKeys = ['a', 'b', 'c'] as TriangleSide[];
 const usedSideSet = new Set<TriangleSide>([
@@ -218,7 +234,7 @@ const sideCVisual = sideVisual('c');
   <!-- Header -->
   <header class="mx-auto mb-8 w-full max-w-4xl">
     <p class="font-label text-xs uppercase tracking-widest text-primary">
-      Trigonometric Ratio Calculator
+      {trigUi.badge}
     </p>
     <h1 class="mt-3 break-words text-3xl font-bold leading-tight sm:text-4xl">{page.h1}</h1>
     <p class="mt-4 max-w-3xl break-words text-on-surface-variant">{page.headerSummary}</p>
@@ -230,6 +246,7 @@ const sideCVisual = sideVisual('c');
     locale={locale}
     heading={page.calculator.heading}
     messages={calculatorMessages}
+    runtimeTranslations={runtimeTranslations}
   />
 
   <!-- Intro -->
@@ -245,7 +262,7 @@ const sideCVisual = sideVisual('c');
 
   <!-- Formula -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>Formula</h2>
+    <h2>{trigUi.formula}</h2>
     <div class="not-prose mt-4 grid gap-3">
       <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
         <div class="min-w-max text-2xl text-tertiary font-mono tracking-wide">
@@ -260,7 +277,7 @@ const sideCVisual = sideVisual('c');
 
   <!-- Triangle Diagram -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-    <h2 class="text-2xl font-semibold">Triangle Diagram</h2>
+    <h2 class="text-2xl font-semibold">{trigUi.triangleDiagram}</h2>
     <div class="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(14rem,0.85fr)] lg:items-start">
       <div class="min-w-0">
         <div class="rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-3">
@@ -268,7 +285,7 @@ const sideCVisual = sideVisual('c');
             class="block w-full max-w-md mx-auto"
             viewBox="0 0 520 370"
             role="img"
-            aria-label={`Right triangle diagram showing ${ratioDiagram.label} uses ${ratioDiagram.numeratorLabel} and ${ratioDiagram.denominatorLabel}`}
+            aria-label={`${trigUi.triangleDiagram}: ${ratioDiagram.label}, ${ratioDiagram.numeratorLabel}, ${ratioDiagram.denominatorLabel}`}
           >
             <rect
               x="10" y="10" width="500" height="350" rx="16"
@@ -329,21 +346,21 @@ const sideCVisual = sideVisual('c');
               text-anchor="middle">a</text>
             <text x="56" y="206" fill="var(--color-on-surface-variant)"
               font-family="'Noto Serif', serif" font-size="10"
-              text-anchor="middle">(opposite)</text>
+              text-anchor="middle">{`(${trigUi.sideRoles.a.short})`}</text>
             <!-- Label: side b (adjacent) — below horizontal -->
             <text x="250" y="324" fill={sideBVisual.labelFill}
               font-family="'Noto Serif', serif" font-size="16" font-weight="700"
               text-anchor="middle">b</text>
             <text x="250" y="342" fill="var(--color-on-surface-variant)"
               font-family="'Noto Serif', serif" font-size="10"
-              text-anchor="middle">(adjacent)</text>
+              text-anchor="middle">{`(${trigUi.sideRoles.b.short})`}</text>
             <!-- Label: side c (hypotenuse) — right of diagonal -->
             <text x="286" y="160" fill={sideCVisual.labelFill}
               font-family="'Noto Serif', serif" font-size="16" font-weight="700"
               text-anchor="start">c</text>
             <text x="286" y="178" fill="var(--color-on-surface-variant)"
               font-family="'Noto Serif', serif" font-size="10"
-              text-anchor="start">(hypotenuse)</text>
+              text-anchor="start">{`(${trigUi.sideRoles.c.short})`}</text>
             <!-- Right angle label -->
             <text x="140" y="258" fill="var(--color-on-surface-variant)"
               font-family="'Noto Serif', serif" font-size="12"
@@ -357,16 +374,16 @@ const sideCVisual = sideVisual('c');
         ))}
         <div class="mt-4 rounded-lg border border-outline-variant/25 bg-surface-container-lowest/50 p-4">
           <p class="font-label text-[11px] uppercase tracking-widest text-primary">
-            Ratio Highlight
+            {trigUi.ratioHighlight}
           </p>
           <div class="mt-3 flex flex-col gap-3 sm:flex-row sm:items-stretch">
             <div class="min-w-0 flex-1 rounded-md border border-primary/30 bg-primary/10 px-3 py-3">
-              <span class="block text-[11px] uppercase tracking-widest text-primary">Numerator</span>
+              <span class="block text-[11px] uppercase tracking-widest text-primary">{trigUi.numerator}</span>
               <strong class="mt-1 block break-words text-on-surface">{ratioDiagram.numeratorLabel}</strong>
             </div>
             <div class="flex items-center justify-center text-xl text-outline" aria-hidden="true">/</div>
             <div class="min-w-0 flex-1 rounded-md border border-primary/30 bg-primary/10 px-3 py-3">
-              <span class="block text-[11px] uppercase tracking-widest text-primary">Denominator</span>
+              <span class="block text-[11px] uppercase tracking-widest text-primary">{trigUi.denominator}</span>
               <strong class="mt-1 block break-words text-on-surface">{ratioDiagram.denominatorLabel}</strong>
             </div>
           </div>
@@ -376,7 +393,7 @@ const sideCVisual = sideVisual('c');
         </div>
         <div class="mt-4 rounded-lg border border-outline-variant/25 bg-surface-container-lowest/50 p-4">
           <p class="font-label text-[11px] uppercase tracking-widest text-primary">
-            Side Key
+            {trigUi.sideKey}
           </p>
           <ul class="mt-3 grid gap-2 text-sm text-on-surface-variant">
             {sideKeys.map((side) => {
@@ -386,7 +403,7 @@ const sideCVisual = sideVisual('c');
                 <li class={`rounded-md border px-3 py-2 ${active ? 'border-primary/30 bg-primary/10' : 'border-outline-variant/20 bg-surface-container-low/50'}`}>
                   <strong class="text-on-surface">{side}</strong> = {info.role} ({info.description})
                   <span class="mt-1 block text-xs text-outline">
-                    {active ? `Used in ${ratioDiagram.label}` : `Not used in ${ratioDiagram.label}`}
+                    {active ? trigUi.usedIn(ratioDiagram.label) : trigUi.notUsedIn(ratioDiagram.label)}
                   </span>
                 </li>
               );
@@ -402,7 +419,7 @@ const sideCVisual = sideVisual('c');
 
   <!-- How to Use -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>How to Use This Calculator</h2>
+    <h2>{trigUi.howToUse}</h2>
     <ol>
       {page.howToSteps.map((step) => (
         <li>{step}</li>
@@ -412,7 +429,7 @@ const sideCVisual = sideVisual('c');
 
   <!-- Step-by-Step Example -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>Step-by-Step Example</h2>
+    <h2>{trigUi.stepByStepExample}</h2>
     <p>{page.example.intro}</p>
     <div class="not-prose mt-5 min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
       <div class="grid gap-2">
@@ -428,7 +445,7 @@ const sideCVisual = sideVisual('c');
 
   <!-- What the Result Means -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>What the Result Means</h2>
+    <h2>{trigUi.whatResultMeans}</h2>
     {page.whatResultMeans.map((p) => (
       <p>{p}</p>
     ))}
@@ -436,7 +453,7 @@ const sideCVisual = sideVisual('c');
 
   <!-- When to Use This Ratio -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>When to Use This Ratio</h2>
+    <h2>{trigUi.whenToUse}</h2>
     <p>{page.whenToUse.intro}</p>
     <ul>
       {page.whenToUse.items.map((item) => (
@@ -447,7 +464,7 @@ const sideCVisual = sideVisual('c');
 
   <!-- Common Mistakes -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>Common Mistakes</h2>
+    <h2>{trigUi.commonMistakes}</h2>
     <p>{page.commonMistakes.intro}</p>
     <ul>
       {page.commonMistakes.items.map((item) => (
@@ -458,12 +475,12 @@ const sideCVisual = sideVisual('c');
 
   <!-- FAQs -->
   <div class="mx-auto mt-8 w-full max-w-4xl">
-    <Faq heading="Frequently Asked Questions" items={page.faqs} />
+    <Faq heading={trigUi.faqHeading} items={page.faqs} />
   </div>
 
   <!-- Related Calculators -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-    <h2 class="text-2xl font-semibold">Related Calculators</h2>
+    <h2 class="text-2xl font-semibold">{trigUi.relatedCalculators}</h2>
     <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {page.relatedLinks.map((link) => (
         <a
@@ -474,7 +491,7 @@ const sideCVisual = sideVisual('c');
             {link.label}
           </h3>
           <p class="mt-3 text-[11px] uppercase tracking-widest text-primary">
-            Open Tool
+            {trigUi.openTool}
           </p>
         </a>
       ))}

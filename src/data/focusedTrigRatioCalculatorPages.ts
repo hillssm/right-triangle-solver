@@ -1,5 +1,5 @@
 import type { FormulaCalculatorField } from 'src/data/rightTriangleFormulas';
-import { FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS } from 'src/data/focusedTrigRatioCalculatorTranslations';
+import { localizeFocusedTrigRatioCalculatorPage } from 'src/data/focusedTrigRatioCalculatorTranslations';
 import { DEFAULT_LOCALE, type Locale } from 'theme/i18n/locales';
 
 export type FocusedTrigRatioCalculatorPage = {
@@ -777,22 +777,7 @@ export function getFocusedTrigRatioCalculatorPage(
   const englishPage = FOCUSED_TRIG_RATIO_CALCULATOR_PAGES.find((page) => page.slug === slug);
   if (!englishPage) return undefined;
 
-  if (locale !== DEFAULT_LOCALE) {
-    const translationsByLocale = FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS as any;
-    const localizedData = translationsByLocale[locale]?.[slug];
-
-    if (localizedData) {
-      return {
-        ...englishPage,
-        url: localizedData.url || englishPage.url,
-        h1: localizedData.h1 || englishPage.h1,
-        metaTitle: localizedData.metaTitle || englishPage.metaTitle,
-        metaDescription: localizedData.metaDescription || englishPage.metaDescription,
-        intro: localizedData.intro?.length ? localizedData.intro : englishPage.intro,
-        faqs: localizedData.faqs?.length ? localizedData.faqs : englishPage.faqs
-      };
-    }
-  }
-
-  return englishPage;
+  return locale === DEFAULT_LOCALE
+    ? englishPage
+    : localizeFocusedTrigRatioCalculatorPage(englishPage, locale);
 }

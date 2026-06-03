@@ -14,9 +14,10 @@ interface Props {
     invalid?: string;
     hypotenuseKnownLeg?: string;
   };
+  runtimeTranslations?: Record<string, unknown>;
 }
 
-const { formula, locale, heading, messages = {} } = Astro.props;
+const { formula, locale, heading, messages = {}, runtimeTranslations = {} } = Astro.props;
 
 if (!formula.calculator) {
   throw new Error('FormulaCalculator requires a formula with a calculator configuration.');
@@ -170,6 +171,17 @@ const scriptTranslations = {
   calculationSteps: calculatorUi.calculationSteps
 };
 
+const runtimeTranslationData = runtimeTranslations as Record<string, any>;
+const mergedScriptTranslations = {
+  ...scriptTranslations,
+  ...runtimeTranslationData,
+  stepLabels: {
+    ...scriptTranslations.stepLabels,
+    ...(runtimeTranslationData.stepLabels || {})
+  },
+  calculationSteps: runtimeTranslationData.calculationSteps || scriptTranslations.calculationSteps
+};
+
 const calculatorMessages = JSON.stringify(messages);
 ---
 
@@ -180,7 +192,7 @@ const calculatorMessages = JSON.stringify(messages);
   data-output-label={calculator.outputLabel}
   data-output-unit={calculator.outputUnit ?? ''}
   data-default-status={defaultStatus}
-  data-translations={JSON.stringify(scriptTranslations)}
+  data-translations={JSON.stringify(mergedScriptTranslations)}
   data-messages={calculatorMessages}
 >
   <h2 class="break-words text-2xl font-semibold leading-tight">{calculatorHeading}</h2>
@@ -372,6 +384,19 @@ const calculatorMessages = JSON.stringify(messages);
         }
       };
 
+      const buildCalculationStep = (
+        stepKey,
+        fallbackTitle,
+        fallbackDescription,
+        formulaLine,
+        substitutionLine
+      ) => {
+        const stepCopy = translations.calculationSteps?.[stepKey] || {};
+        const title = stepCopy.title || fallbackTitle;
+        const description = stepCopy.description || fallbackDescription;
+        return `**${title}**<br/>${description}<br/>${formulaLine}<br/>${substitutionLine}`;
+      };
+
       const solve = (v) => {
         switch (kind) {
           case 'pythagorean_c': {
@@ -444,23 +469,35 @@ const calculatorMessages = JSON.stringify(messages);
           }
           case 'sine': {
             requirePositive(v.a, v.c);
-            if (v.a >= v.c) throw new Error('Leg a must be smaller than hypotenuse c.');
+            if (v.a >= v.c) throw new Error(messages.hypotenuseKnownLeg || translations.unableToCalculate || '');
             const r = v.a / v.c;
             return {
               result: r,
               steps: [
-                `**Solve for sin(A)**<br/>The sine ratio compares the opposite side to the hypotenuse.<br/>Use sin(A) = a / c<br/>sin(A) = ${v.a} / ${v.c} = ${format(r)}`
+                buildCalculationStep(
+                  'sine',
+                  'sin(A)',
+                  '',
+                  'sin(A) = a / c',
+                  `sin(A) = ${v.a} / ${v.c} = ${format(r)}`
+                )
               ]
             };
           }
           case 'cosine': {
             requirePositive(v.b, v.c);
-            if (v.b >= v.c) throw new Error('Leg b must be smaller than hypotenuse c.');
+            if (v.b >= v.c) throw new Error(messages.hypotenuseKnownLeg || translations.unableToCalculate || '');
             const r = v.b / v.c;
             return {
               result: r,
               steps: [
-                `**Solve for cos(A)**<br/>The cosine ratio compares the adjacent side to the hypotenuse.<br/>Use cos(A) = b / c<br/>cos(A) = ${v.b} / ${v.c} = ${format(r)}`
+                buildCalculationStep(
+                  'cosine',
+                  'cos(A)',
+                  '',
+                  'cos(A) = b / c',
+                  `cos(A) = ${v.b} / ${v.c} = ${format(r)}`
+                )
               ]
             };
           }
@@ -470,7 +507,13 @@ const calculatorMessages = JSON.stringify(messages);
             return {
               result: r,
               steps: [
-                `**Solve for tan(A)**<br/>The tangent ratio compares the opposite leg to the adjacent leg.<br/>Use tan(A) = a / b<br/>tan(A) = ${v.a} / ${v.b} = ${format(r)}`
+                buildCalculationStep(
+                  'tangent',
+                  'tan(A)',
+                  '',
+                  'tan(A) = a / b',
+                  `tan(A) = ${v.a} / ${v.b} = ${format(r)}`
+                )
               ]
             };
           }
@@ -556,9 +599,56 @@ const calculatorMessages = JSON.stringify(messages);
               ]
             };
           }
-          case 'cotangent': { requirePositive(v.a, v.b); const r = v.b / v.a; return { result: r, steps: [`**Calculate cot(A)**<br/>The ratio of adjacent side to opposite side.<br/>Use cot(A) = b / a<br/>cot(A) = ${v.b} / ${v.a} = ${format(r)}`] }; }
-          case 'secant': { requirePositive(v.b, v.c); const r = v.c / v.b; return { result: r, steps: [`**Calculate sec(A)**<br/>The ratio of hypotenuse to adjacent side.<br/>Use sec(A) = c / b<br/>sec(A) = ${v.c} / ${v.b} = ${format(r)}`] }; }
-          case 'cosecant': { requirePositive(v.a, v.c); const r = v.c / v.a; return { result: r, steps: [`**Calculate csc(A)**<br/>The ratio of hypotenuse to opposite side.<br/>Use csc(A) = c / a<br/>csc(A) = ${v.c} / ${v.a} = ${format(r)}`] }; }
+          case 'cotangent': {
+            requirePositive(v.a, v.b);
+            const r = v.b / v.a;
+            return {
+              result: r,
+              steps: [
+                buildCalculationStep(
+                  'cotangent',
+                  'cot(A)',
+                  '',
+                  'cot(A) = b / a',
+                  `cot(A) = ${v.b} / ${v.a} = ${format(r)}`
+                )
+              ]
+            };
+          }
+          case 'secant': {
+            requirePositive(v.b, v.c);
+            if (v.c <= v.b) throw new Error(messages.hypotenuseKnownLeg || translations.unableToCalculate || '');
+            const r = v.c / v.b;
+            return {
+              result: r,
+              steps: [
+                buildCalculationStep(
+                  'secant',
+                  'sec(A)',
+                  '',
+                  'sec(A) = c / b',
+                  `sec(A) = ${v.c} / ${v.b} = ${format(r)}`
+                )
+              ]
+            };
+          }
+          case 'cosecant': {
+            requirePositive(v.a, v.c);
+            if (v.c <= v.a) throw new Error(messages.hypotenuseKnownLeg || translations.unableToCalculate || '');
+            const r = v.c / v.a;
+            return {
+              result: r,
+              steps: [
+                buildCalculationStep(
+                  'cosecant',
+                  'csc(A)',
+                  '',
+                  'csc(A) = c / a',
+                  `csc(A) = ${v.c} / ${v.a} = ${format(r)}`
+                )
+              ]
+            };
+          }
           case 'leg_from_hc_sin': { requirePositive(v.c, v.A); const r = v.c * Math.sin(rad(v.A)); return { result: r, steps: [`**Solve for Leg a**<br/>Multiply hypotenuse by sine of the opposite angle.<br/>Use a = c \u00D7 sin(A)<br/>a = ${v.c} \u00D7 sin(${v.A}\u00B0) = ${format(r)}`] }; }
           case 'leg_from_hc_cos': { requirePositive(v.c, v.A); const r = v.c * Math.cos(rad(v.A)); return { result: r, steps: [`**Solve for Leg b**<br/>Multiply hypotenuse by cosine of the adjacent angle.<br/>Use b = c \u00D7 cos(A)<br/>b = ${v.c} \u00D7 cos(${v.A}\u00B0) = ${format(r)}`] }; }
           case 'leg_from_leg_tan': { requirePositive(v.b, v.A); const r = v.b * Math.tan(rad(v.A)); return { result: r, steps: [`**Solve for Leg a**<br/>Scale the adjacent leg by the tangent of angle A.<br/>Use a = b \u00D7 tan(A)<br/>a = ${v.b} \u00D7 tan(${v.A}\u00B0) = ${format(r)}`] }; }

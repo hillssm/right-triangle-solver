@@ -9,9 +9,11 @@ export type FocusedTrigRatioCalculatorPage = {
   metaDescription: string;
   formulaSlug: string;
   calculator: {
+    heading: string;
     outputLabel: string;
     fields: FormulaCalculatorField[];
   };
+  introHeading: string;
   intro: string[];
   calculatorNote: string;
   formula: {
@@ -53,12 +55,14 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
       'Use this sine ratio calculator to find sin(A) in a right triangle using opposite side a and hypotenuse c with formula, steps, and examples.',
     formulaSlug: 'sine-ratio',
     calculator: {
+      heading: 'Calculate Sine Ratio',
       outputLabel: 'sin(A)',
       fields: [
         { key: 'a', label: 'Opposite side a', min: 0 },
         { key: 'c', label: 'Hypotenuse c', min: 0 }
       ]
     },
+    introHeading: 'Sine Ratio Formula',
     intro: [
       'The sine ratio is one of the first trigonometric functions you learn in geometry. It connects a specific angle in a right triangle to two of its sides \u2014 the opposite side and the hypotenuse. If you know these two measurements, this calculator gives you sin(A) instantly.',
       'Whether you are working through a homework problem, checking a test answer, or solving a real measurement task, this tool removes the manual division step. Enter your values and get the result with the formula shown.'
@@ -172,12 +176,14 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
       'Use this cosine ratio calculator to find cos(A) in a right triangle using adjacent side b and hypotenuse c with formula, steps, and examples.',
     formulaSlug: 'cosine-ratio',
     calculator: {
+      heading: 'Calculate Cosine Ratio',
       outputLabel: 'cos(A)',
       fields: [
         { key: 'b', label: 'Adjacent side b', min: 0 },
         { key: 'c', label: 'Hypotenuse c', min: 0 }
       ]
     },
+    introHeading: 'Cosine Ratio Formula',
     intro: [
       'The cosine ratio measures how the adjacent side of a right triangle compares to the hypotenuse. It is the second part of SOH-CAH-TOA and one of the most commonly used trig functions in geometry, physics, and engineering.',
       'This calculator takes two inputs \u2014 the adjacent side b and the hypotenuse c \u2014 and returns cos(A). It handles the division for you and shows the result immediately, so you can focus on understanding the geometry instead of the arithmetic.'
@@ -291,12 +297,14 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
       'Use this tangent ratio calculator to find tan(A) in a right triangle using opposite side a and adjacent side b with formula, steps, and examples.',
     formulaSlug: 'tangent-ratio',
     calculator: {
+      heading: 'Calculate Tangent Ratio',
       outputLabel: 'tan(A)',
       fields: [
         { key: 'a', label: 'Opposite side a', min: 0 },
         { key: 'b', label: 'Adjacent side b', min: 0 }
       ]
     },
+    introHeading: 'Tangent Ratio Formula',
     intro: [
       'Tangent is the third of the primary trig ratios, and it works a little differently from sine and cosine. Instead of comparing a leg to the hypotenuse, tangent compares one leg to the other \u2014 specifically, the opposite side to the adjacent side. This makes it especially useful in slope and angle-of-elevation problems.',
       'This calculator divides the opposite side a by the adjacent side b and gives you tan(A). No need to pull out a calculator app \u2014 just enter your two leg lengths and get the answer.'
@@ -410,12 +418,14 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
       'Use this cotangent ratio calculator to find cot(A) in a right triangle using adjacent side b and opposite side a with formula, steps, and examples.',
     formulaSlug: 'cotangent-exact',
     calculator: {
+      heading: 'Calculate Cotangent Ratio',
       outputLabel: 'cot(A)',
       fields: [
         { key: 'b', label: 'Adjacent side b', min: 0 },
         { key: 'a', label: 'Opposite side a', min: 0 }
       ]
     },
+    introHeading: 'Cotangent Ratio Formula',
     intro: [
       'Cotangent is the reciprocal of tangent. While tangent divides the opposite side by the adjacent side, cotangent flips that fraction \u2014 it divides the adjacent side by the opposite side. It shows up less often in basic geometry classes, but it plays an important role in advanced trigonometry and calculus.',
       'This calculator takes the adjacent side b and the opposite side a, then returns cot(A) = b / a. If you are used to working with tangent, cotangent is simply the inverse fraction.'
@@ -528,12 +538,14 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
       'Use this secant ratio calculator to find sec(A) in a right triangle using hypotenuse c and adjacent side b with formula, steps, and examples.',
     formulaSlug: 'secant-exact',
     calculator: {
+      heading: 'Calculate Secant Ratio',
       outputLabel: 'sec(A)',
       fields: [
         { key: 'c', label: 'Hypotenuse c', min: 0 },
         { key: 'b', label: 'Adjacent side b', min: 0 }
       ]
     },
+    introHeading: 'Secant Ratio Formula',
     intro: [
       'Secant is the reciprocal of cosine. Where cosine divides the adjacent side by the hypotenuse, secant flips that \u2014 it divides the hypotenuse by the adjacent side. The result is always greater than or equal to 1 because the hypotenuse is always the longest side in a right triangle.',
       'This calculator takes two inputs \u2014 hypotenuse c and adjacent side b \u2014 and returns sec(A). It is a quick way to get this reciprocal ratio without doing the division by hand or computing cosine first.'
@@ -646,12 +658,14 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
       'Use this cosecant ratio calculator to find csc(A) in a right triangle using hypotenuse c and opposite side a with formula, steps, and examples.',
     formulaSlug: 'cosecant-exact',
     calculator: {
+      heading: 'Calculate Cosecant Ratio',
       outputLabel: 'csc(A)',
       fields: [
         { key: 'c', label: 'Hypotenuse c', min: 0 },
         { key: 'a', label: 'Opposite side a', min: 0 }
       ]
     },
+    introHeading: 'Cosecant Ratio Formula',
     intro: [
       'Cosecant is the reciprocal of sine. It divides the hypotenuse by the opposite side, giving you a ratio that is always greater than 1 in a right triangle. You might not see it as often as sine or cosine in basic courses, but it is essential in more advanced math and certain physics applications.',
       'This calculator makes it simple. Enter the hypotenuse c and the opposite side a, and it returns csc(A) immediately. No need to calculate sine first and then flip the fraction.'

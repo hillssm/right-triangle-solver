@@ -228,12 +228,13 @@ const sideCVisual = sideVisual('c');
   <FormulaCalculator
     formula={calculatorFormula}
     locale={locale}
+    heading={page.calculator.heading}
     messages={calculatorMessages}
   />
 
   <!-- Intro -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>About This Calculator</h2>
+    <h2>{page.introHeading}</h2>
     {page.intro.map((paragraph) => (
       <p>{paragraph}</p>
     ))}
@@ -455,6 +456,11 @@ const sideCVisual = sideVisual('c');
     </ul>
   </section>
 
+  <!-- FAQs -->
+  <div class="mx-auto mt-8 w-full max-w-4xl">
+    <Faq heading="Frequently Asked Questions" items={page.faqs} />
+  </div>
+
   <!-- Related Calculators -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
     <h2 class="text-2xl font-semibold">Related Calculators</h2>
@@ -474,9 +480,4 @@ const sideCVisual = sideVisual('c');
       ))}
     </div>
   </section>
-
-  <!-- FAQs -->
-  <div class="mx-auto mt-8 w-full max-w-4xl">
-    <Faq heading="Frequently Asked Questions" items={page.faqs} />
-  </div>
 </BaseLayout>

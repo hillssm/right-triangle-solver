@@ -8,6 +8,7 @@ import 'katex/dist/katex.min.css';
 interface Props {
   formula: RightTriangleFormula;
   locale: Locale;
+  heading?: string;
   messages?: {
     positive?: string;
     invalid?: string;
@@ -15,7 +16,7 @@ interface Props {
   };
 }
 
-const { formula, locale, messages = {} } = Astro.props;
+const { formula, locale, heading, messages = {} } = Astro.props;
 
 if (!formula.calculator) {
   throw new Error('FormulaCalculator requires a formula with a calculator configuration.');
@@ -30,6 +31,7 @@ const units = (common.units as any) || {};
 const calculator = formula.calculator!!;
 
 const displayTitle = (formulasBundle?.[formula.slug] as any)?.title || formula.title;
+const calculatorHeading = heading || `${displayTitle} ${pick(solver, 'calculateSuffix', 'Calculator')}`;
 const defaultStatus = pick(solver, 'statusDefault', `Enter inputs to calculate {label}.`).replace('{label}', calculator.outputLabel);
 
 const UNIT_LIST = [
@@ -181,7 +183,7 @@ const calculatorMessages = JSON.stringify(messages);
   data-translations={JSON.stringify(scriptTranslations)}
   data-messages={calculatorMessages}
 >
-  <h2 class="break-words text-2xl font-semibold leading-tight">{displayTitle} {pick(solver, 'calculateSuffix', 'Calculator')}</h2>
+  <h2 class="break-words text-2xl font-semibold leading-tight">{calculatorHeading}</h2>
   <p class="mt-2 text-sm text-on-surface-variant">
     {(() => {
       const text = pick(solver, 'calculatorIntro', `This calculator follows {expression} and returns {label}.`).replace('{label}', calculator.outputLabel);

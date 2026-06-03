@@ -62,7 +62,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
         { key: 'c', label: 'Hypotenuse c', min: 0 }
       ]
     },
-    introHeading: 'Sine Ratio Formula',
+    introHeading: 'How This Sine Ratio Calculator Works',
     intro: [
       'The sine ratio is one of the first trigonometric functions you learn in geometry. It connects a specific angle in a right triangle to two of its sides \u2014 the opposite side and the hypotenuse. If you know these two measurements, this calculator gives you sin(A) instantly.',
       'Whether you are working through a homework problem, checking a test answer, or solving a real measurement task, this tool removes the manual division step. Enter your values and get the result with the formula shown.'
@@ -183,7 +183,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
         { key: 'c', label: 'Hypotenuse c', min: 0 }
       ]
     },
-    introHeading: 'Cosine Ratio Formula',
+    introHeading: 'How This Cosine Ratio Calculator Works',
     intro: [
       'The cosine ratio measures how the adjacent side of a right triangle compares to the hypotenuse. It is the second part of SOH-CAH-TOA and one of the most commonly used trig functions in geometry, physics, and engineering.',
       'This calculator takes two inputs \u2014 the adjacent side b and the hypotenuse c \u2014 and returns cos(A). It handles the division for you and shows the result immediately, so you can focus on understanding the geometry instead of the arithmetic.'
@@ -304,7 +304,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
         { key: 'b', label: 'Adjacent side b', min: 0 }
       ]
     },
-    introHeading: 'Tangent Ratio Formula',
+    introHeading: 'How This Tangent Ratio Calculator Works',
     intro: [
       'Tangent is the third of the primary trig ratios, and it works a little differently from sine and cosine. Instead of comparing a leg to the hypotenuse, tangent compares one leg to the other \u2014 specifically, the opposite side to the adjacent side. This makes it especially useful in slope and angle-of-elevation problems.',
       'This calculator divides the opposite side a by the adjacent side b and gives you tan(A). No need to pull out a calculator app \u2014 just enter your two leg lengths and get the answer.'
@@ -425,7 +425,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
         { key: 'a', label: 'Opposite side a', min: 0 }
       ]
     },
-    introHeading: 'Cotangent Ratio Formula',
+    introHeading: 'How This Cotangent Ratio Calculator Works',
     intro: [
       'Cotangent is the reciprocal of tangent. While tangent divides the opposite side by the adjacent side, cotangent flips that fraction \u2014 it divides the adjacent side by the opposite side. It shows up less often in basic geometry classes, but it plays an important role in advanced trigonometry and calculus.',
       'This calculator takes the adjacent side b and the opposite side a, then returns cot(A) = b / a. If you are used to working with tangent, cotangent is simply the inverse fraction.'
@@ -545,7 +545,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
         { key: 'b', label: 'Adjacent side b', min: 0 }
       ]
     },
-    introHeading: 'Secant Ratio Formula',
+    introHeading: 'How This Secant Ratio Calculator Works',
     intro: [
       'Secant is the reciprocal of cosine. Where cosine divides the adjacent side by the hypotenuse, secant flips that \u2014 it divides the hypotenuse by the adjacent side. The result is always greater than or equal to 1 because the hypotenuse is always the longest side in a right triangle.',
       'This calculator takes two inputs \u2014 hypotenuse c and adjacent side b \u2014 and returns sec(A). It is a quick way to get this reciprocal ratio without doing the division by hand or computing cosine first.'
@@ -665,7 +665,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
         { key: 'a', label: 'Opposite side a', min: 0 }
       ]
     },
-    introHeading: 'Cosecant Ratio Formula',
+    introHeading: 'How This Cosecant Ratio Calculator Works',
     intro: [
       'Cosecant is the reciprocal of sine. It divides the hypotenuse by the opposite side, giving you a ratio that is always greater than 1 in a right triangle. You might not see it as often as sine or cosine in basic courses, but it is essential in more advanced math and certain physics applications.',
       'This calculator makes it simple. Enter the hypotenuse c and the opposite side a, and it returns csc(A) immediately. No need to calculate sine first and then flip the fraction.'

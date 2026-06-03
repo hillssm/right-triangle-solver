@@ -1,0 +1,907 @@
+// Generated localized copy for focused trig ratio calculator pages.
+// Partial translations fallback to English in the getter.
+
+export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS = {
+  "hi": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/hi/sine-ratio-calculator/",
+      h1: "साइन अनुपात कैलकुलेटर",
+      metaTitle: "साइन अनुपात कैलकुलेटर | समकोण त्रिभुज sin(A)",
+      metaDescription: "सम्मुख भुजा a और कर्ण c का उपयोग करके समकोण त्रिभुज में sin(A) खोजने के लिए सूत्र, चरण और उदाहरण के साथ इस साइन अनुपात कैलकुलेटर का उपयोग करें।",
+      intro: [
+        "साइन अनुपात उन पहले त्रिकोणमितीय अनुपातों में से एक है जिन्हें आप ज्यामिति में सीखते हैं। यह एक समकोण त्रिभुज में एक विशिष्ट कोण को उसकी दो भुजाओं - सम्मुख भुजा और कर्ण से जोड़ता है। यदि आप इन दो मापों को जानते हैं, तो यह कैलकुलेटर आपको तुरंत sin(A) देता है।",
+        "चाहे आप होमवर्क की समस्",
+        "<truncated 65596 bytes>",
+        "ण त्रिभुज त्रिकोणमितीय अनुपात कैलकुलेटर",
+        "- साइन अनुपात कैलकुलेटर",
+        "- सीकेंट अनुपात कैलकुलेटर",
+        "- कोटेंजेंट अनुपात कैलकुलेटर",
+      ],
+      faqs: [
+        {
+          question: "एक समकोण त्रिभुज में कोसीकेंट सूत्र क्या है?",
+          answer: "यह csc(A) = c / a है, जहाँ c कर्ण है और a सम्मुख भुजा है। कोसीकेंट साइन का व्युत्क्रम है।"
+        },
+        {
+          question: "कोसीकेंट साइन से कैसे संबंधित है?",
+          answer: "csc(A) = 1 / sin(A)। यदि sin(A) = 0.6 है, तो csc(A) = 1 / 0.6 ≈ 1.6667।"
+        },
+        {
+          question: "कोसीकेंट हमेशा 1 से अधिक क्यों होता है?",
+          answer: "क्योंकि समकोण त्रिभुज में कर्ण हमेशा सम्मुख भुजा से लंबा होता है। भिन्न c / a हमेशा 1 से अधिक होता है।"
+        },
+        {
+          question: "csc(30°) क्या है?",
+          answer: "30-60-90 त्रिभुज में, sin(30°) = 0.5, इसलिए csc(30°) = 1 / 0.5 = 2। कर्ण सम्मुख भुजा का ठीक दोगुना है।"
+        },
+        {
+          question: "मैं साइन के बजाय कोसीकेंट का उपयोग कब करूँगा?",
+          answer: "जब कोई सूत्र सीधे इसकी आवश्यकता करता है, या जब आप सम्मुख भुजा से कर्ण खोजना चाहते हैं तो कोसीकेंट का उपयोग करें: c = a × csc(A)। यह साइन से विभाजित करने के चरण को बचाता है। ---"
+        },
+      ]
+    },
+  },
+  "es": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/es/sine-ratio-calculator/",
+      h1: "Calculadora de razón seno",
+      metaTitle: "Calculadora de razón seno | Triángulo rectángulo sin(A)",
+      metaDescription: "Use esta calculadora de razón seno para encontrar sin(A) en un triángulo rectángulo usando el lado opuesto a y la hipotenusa c con fórmula, pasos y ejemplos.",
+      intro: [
+        "La razón seno es una de las primeras funciones trigonométricas que se aprenden en geometría. Conecta un ángulo específico en un triángulo rectángulo con dos de sus lados: el lado opuesto y la hipotenusa. Si conoce estas dos medidas, esta calculadora le da sin(A) al instante.",
+        "Ya sea que esté resolviendo un problema de tarea, comprobando una respuesta de un examen o trabajando en una tarea de medición real, esta herramienta elimina el paso de división manual. Ingrese sus valores y obtenga el resultado junto con la fórmula mostrada.",
+      ],
+      faqs: [
+        {
+          question: "¿Cuál es la fórmula de la cosecante en un triángulo rectángulo?",
+          answer: "Es csc(A) = c / a, donde c es la hipotenusa y a es el lado opuesto. La cosecante es el recíproco del seno."
+        },
+        {
+          question: "¿Cómo se relaciona la cosecante con el seno?",
+          answer: "csc(A) = 1 / sin(A). Si sin(A) = 0.6, entonces csc(A) = 1 / 0.6 ≈ 1.6667."
+        },
+        {
+          question: "¿Por qué la cosecante siempre es mayor que 1?",
+          answer: "Porque la hipotenusa siempre es más larga que el lado opuesto en un triángulo rectángulo. La fracción c / a siempre excede a 1."
+        },
+        {
+          question: "¿Cuánto es csc(30°)?",
+          answer: "En un triángulo 30-60-90, sin(30°) = 0.5, por lo que csc(30°) = 1 / 0.5 = 2. La hipotenusa es exactamente el doble del lado opuesto."
+        },
+        {
+          question: "¿Cuándo usaría la cosecante en lugar del seno?",
+          answer: "Use la cosecante cuando una fórmula la requiera directamente, o cuando desee encontrar la hipotenusa a partir del lado opuesto: c = a × csc(A). Ahorra el paso de dividir por el seno. ---"
+        },
+      ]
+    },
+  },
+  "ru": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/ru/sine-ratio-calculator/",
+      h1: "Калькулятор отношения синуса",
+      metaTitle: "Калькулятор отношения синуса | Прямоугольный треугольник sin(A)",
+      metaDescription: "Используйте этот калькулятор отношения синуса, чтобы найти sin(A) в прямоугольном треугольнике, используя противолежащий катет a и гипотенузу c с формулой, шагами и примерами.",
+      intro: [
+        "Отношение синуса — одно из первых тригонометрических отношений, которые вы изучаете в геометрии. Оно связывает определенный угол в прямоугольном треугольнике с двумя его сторонами: противолежащим катетом и гипотенузой. Если вы знаете эти два измерения, этот калькулятор мгновенно выда",
+        "<truncated 54952 bytes>",
+        "язи косеканса и косинуса по названию. Несмотря на приставку «ко-», косеканс является обратным синусу, а не косинусу.",
+      ],
+      faqs: [
+        {
+          question: "Какова формула косеканса в прямоугольном треугольнике?",
+          answer: "Это csc(A) = c / a, где c — гипотенуза, а a — противолежащий катет. Косеканс является величиной, обратной синусу."
+        },
+        {
+          question: "Как косеканс связан с синусом?",
+          answer: "csc(A) = 1 / sin(A). Если sin(A) = 0.6, то csc(A) = 1 / 0.6 ≈ 1.6667."
+        },
+        {
+          question: "Почему косеканс всегда больше 1?",
+          answer: "Потому что гипотенуза всегда длиннее противолежащего катета в прямоугольном треугольнике. Дробь c / a всегда превышает 1."
+        },
+        {
+          question: "Чему равен csc(30°)?",
+          answer: "В треугольнике 30-60-90 sin(30°) = 0.5, поэтому csc(30°) = 1 / 0.5 = 2. Гипотенуза ровно в два раза больше противолежащего катета."
+        },
+        {
+          question: "Когда следует использовать косеканс вместо синуса?",
+          answer: "Используйте косеканс, когда это непосредственно требуется в формуле или когда вы хотите найти гипотенузу по противолежащему катету: c = a × csc(A). Это избавляет от шага деления на синус. ---"
+        },
+      ]
+    },
+  },
+  "fr": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/fr/sine-ratio-calculator/",
+      h1: "Calculateur de rapport sinus",
+      metaTitle: "Calculateur de rapport sinus | Triangle rectangle sin(A)",
+      metaDescription: "Utilisez ce calculateur de rapport sinus pour trouver sin(A) dans un triangle rectangle en utilisant le côté opposé a et l'hypoténuse c avec la formule, les étapes et des exemples.",
+      intro: [
+        "Le rapport sinus est l'un des premiers rapports trigonométriques que vous apprenez en géométrie. Il relie un angle spécifique dans un triangle rectangle à deux de ses côtés : le côté opposé et l'hypoténuse. Si vous connaissez ces deux mesures, ce calculateur vous donne sin(A) instantanément.",
+        "Que vous résolviez un problème de devoirs, vérifiiez une réponse de test ou travailliez sur une tâche de mesure réelle, cet outil élimine l'étape de division manuelle. Entrez vos valeurs et obtenez le résultat avec la formule affichée.",
+      ],
+      faqs: [
+        {
+          question: "Quelle est la formule de la cosécante dans un triangle rectangle ?",
+          answer: "C'est csc(A) = c / a, où c est l'hypoténuse et a est le côté opposé. La cosécante est l'inverse du sinus."
+        },
+        {
+          question: "Comment la cosécante est-elle liée au sinus ?",
+          answer: "csc(A) = 1 / sin(A). Si sin(A) = 0.6, alors csc(A) = 1 / 0.6 ≈ 1.6667."
+        },
+        {
+          question: "Pourquoi la cosécante est-elle toujours supérieure à 1 ?",
+          answer: "Parce que l'hypoténuse est toujours plus longue que le côté opposé dans un triangle rectangle. La fraction c / a dépasse toujours 1."
+        },
+        {
+          question: "Quelle est la valeur de csc(30°) ?",
+          answer: "Dans un triangle 30-60-90, sin(30°) = 0.5, donc csc(30°) = 1 / 0.5 = 2. L'hypoténuse correspond exactement au double du côté opposé."
+        },
+        {
+          question: "Quand dois-je utiliser la cosécante au lieu du sinus ?",
+          answer: "Utilisez la cosécante lorsqu'une formule l'exige directement, ou lorsque vous voulez trouver l'hypoténuse à partir du côté opposé : c = a × csc(A). Cela évite l'étape de la division par le sinus. ---"
+        },
+      ]
+    },
+  },
+  "de": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/de/sine-ratio-calculator/",
+      h1: "Sinus-Verhältnis-Rechner",
+      metaTitle: "Sinus-Verhältnis-Rechner | Rechtwinkliges Dreieck sin(A)",
+      metaDescription: "Verwenden Sie diesen Sinus-Verhältnis-Rechner, um sin(A) in einem rechtwinkligen Dreieck mithilfe der Gegenkathete a und der Hypotenuse c mit Formel, Schritten und Beispielen zu finden.",
+      intro: [
+        "Das Sinus-Verhältnis ist eines der ersten trigonometrischen Verhältnisse, die Sie in der Geometrie lernen. Es verbindet einen bestimmten Winkel in einem rechtwinkligen Dreieck mit zwei seiner Seiten – der Gegenkathete und der Hypotenuse. Wenn Sie diese beiden Maße kennen, liefert Ihnen dieser Rechner sofort sin(A).",
+        "Egal, ob Sie eine Hausaufgabe lösen, eine Testergebnis überprüfen oder an einer echten Messaufgabe arbeiten, dieses Werkzeug nimmt Ihnen den Schritt der manuellen Division ab. Geben Sie Ihre Werte ein und erhalten Sie das Ergebnis zusammen mit der angezeigten Formel.",
+      ],
+      faqs: [
+        {
+          question: "Wie lautet die Kosekansformel in einem rechtwinkligen Dreieck?",
+          answer: "Sie lautet csc(A) = c / a, wobei c die Hypotenuse und a die Gegenkathete ist. Der Kosekans ist der Kehrwert des Sinus."
+        },
+        {
+          question: "In welchem Verhältnis steht der Kosekans zum Sinus?",
+          answer: "csc(A) = 1 / sin(A). Wenn sin(A) = 0.6 ist, dann ist csc(A) = 1 / 0.6 ≈ 1.6667."
+        },
+        {
+          question: "Warum ist der Kosekans immer größer als 1?",
+          answer: "Weil die Hypotenuse in einem rechtwinkligen Dreieck immer länger ist als die Gegenkathete. Der Bruch c / a ist immer größer als 1."
+        },
+        {
+          question: "Was ist csc(30°)?",
+          answer: "In einem 30-60-90-Dreieck ist sin(30°) = 0.5, also ist csc(30°) = 1 / 0.5 = 2. Die Hypotenuse ist exakt doppelt so lang wie die Gegenkathete."
+        },
+        {
+          question: "Wann sollte ich den Kosekans anstelle des Sinus verwenden?",
+          answer: "Verwenden Sie den Kosekans, wenn eine Formel ihn direkt verlangt, oder wenn Sie die Hypotenuse anhand der Gegenkathete ermitteln möchten: c = a × csc(A). Dies erspart den Schritt der Division durch den Sinus. ---"
+        },
+      ]
+    },
+  },
+  "it": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/it/sine-ratio-calculator/",
+      h1: "Calcolatore del rapporto seno",
+      metaTitle: "Calcolatore del rapporto seno | Triangolo rettangolo sin(A)",
+      metaDescription: "Usa questo calcolatore del rapporto seno per trovare sin(A) in un triangolo rettangolo usando il lato opposto a e l'ipotenusa c con formula, passaggi ed esempi.",
+      intro: [
+        "Il rapporto seno è uno dei primi rapporti trigonometrici che si imparano in geometria. Collega un angolo specifico in un triangolo rettangolo a due dei suoi lati: il lato opposto e l'ipotenusa. Se conosci queste due misure, questo calcolatore ti fornisce istantaneamente sin(A).",
+        "Che tu stia risolvendo un problema per i compiti, controllando una risposta di un test o lavorando a un compito di misurazione reale, questo strumento elimina il passaggio della divisione manuale. Inserisci i tuoi valori e ottieni il risultato con la formula mostrata.",
+      ],
+      faqs: [
+        {
+          question: "Qual è la formula della cosecante in un triangolo rettangolo?",
+          answer: "È csc(A) = c / a, dove c è l'ipotenusa e a è il lato opposto. La cosecante è il reciproco del seno."
+        },
+        {
+          question: "In che modo la cosecante è correlata al seno?",
+          answer: "csc(A) = 1 / sin(A). Se sin(A) = 0.6, allora csc(A) = 1 / 0.6 ≈ 1.6667."
+        },
+        {
+          question: "Perché la cosecante è sempre maggiore di 1?",
+          answer: "Perché l'ipotenusa è sempre più lunga del lato opposto in un triangolo rettangolo. La frazione c / a supera sempre 1."
+        },
+        {
+          question: "Quanto vale csc(30°)?",
+          answer: "In un triangolo 30-60-90, sin(30°) = 0.5, quindi csc(30°) = 1 / 0.5 = 2. L'ipotenusa è esattamente il doppio del lato opposto."
+        },
+        {
+          question: "Quando dovrei usare la cosecante invece del seno?",
+          answer: "Usa la cosecante quando una formula lo richiede direttamente o quando desideri trovare l'ipotenusa dal lato opposto: c = a × csc(A). Fa risparmiare il passaggio della divisione per il seno. ---"
+        },
+      ]
+    },
+  },
+  "pt": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/pt/sine-ratio-calculator/",
+      h1: "Calculadora da Razão Seno",
+      metaTitle: "Calculadora da Razão Seno | Triângulo Retângulo sin(A)",
+      metaDescription: "Use esta calculadora da razão seno para encontrar sin(A) em um triângulo retângulo usando o cateto oposto a e a hipotenusa c com fórmula, passos e exemplos.",
+      intro: [
+        "A razão seno é uma das primeiras razões trigonométricas que você aprende na geometria. Ela relaciona um ângulo específico em um triângulo retângulo a dois dos seus lados: o cateto oposto e a hipotenusa. Se você conhece essas duas medidas, esta calculadora fornece o sin(A) instantaneamente.",
+        "Esteja você resolvendo um problema de casa, verificando uma resposta de teste ou trabalhando em uma tarefa de medição do mundo real, esta ferramenta elimina a etapa de divisão manual. Insira seus valores e obtenha o resultado junto com a fórmula mostrada.",
+      ],
+      faqs: [
+        {
+          question: "Qual é a fórmula da cossecante em um triângulo retângulo?",
+          answer: "É csc(A) = c / a, onde c é a hipotenusa e a é o cateto oposto. A cossecante é a recíproca do seno."
+        },
+        {
+          question: "Como a cossecante se relaciona com o seno?",
+          answer: "csc(A) = 1 / sin(A). Se sin(A) = 0.6, então csc(A) = 1 / 0.6 ≈ 1.6667."
+        },
+        {
+          question: "Por que a cossecante é sempre maior que 1?",
+          answer: "Porque a hipotenusa é sempre mais longa que o cateto oposto em um triângulo retângulo. A fração c / a sempre excede 1."
+        },
+        {
+          question: "Quanto é csc(30°)?",
+          answer: "Em um triângulo 30-60-90, sin(30°) = 0.5, então csc(30°) = 1 / 0.5 = 2. A hipotenusa é exatamente o dobro do cateto oposto."
+        },
+        {
+          question: "Quando devo usar a cossecante em vez do seno?",
+          answer: "Use a cossecante quando uma fórmula a exigir diretamente, ou quando você quiser encontrar a hipotenusa a partir do cateto oposto: c = a × csc(A). Isso evita a etapa de divisão pelo seno. ---"
+        },
+      ]
+    },
+  },
+  "bn": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/bn/sine-ratio-calculator/",
+      h1: "সাইন অনুপাত ক্যালকুলেটর",
+      metaTitle: "সাইন অনুপাত ক্যালকুলেটর | সমকোণী ত্রিভুজ sin(A)",
+      metaDescription: "বিপরীত বাহু a এবং অতিভুজ c ব্যবহার করে সমকোণী ত্রিভুজে sin(A) বের করতে সূত্র, ধাপ এবং উদাহরণ সহ এই সাইন অনুপাত ক্যালকুলেটরটি ব্যবহার করুন।",
+      intro: [
+        "সাইন অনুপাত হলো প্রথম ত্রিকোণমিতিক অনুপাতগুলোর একটি যা আপনি জ্যামিতিতে শিখেন। এটি একটি সমকোণী ত্রিভুজের একটি নির্দিষ্ট কোণকে তার দুটি বাহুর সাথে যুক্ত করে: বিপরীত ব",
+        "<truncated 68185 bytes>",
+        "পাত ক্যালকুলেটর",
+        "- সেক্যান্ট অনুপাত ক্যালকুলেটর",
+        "- কোট্যানজেন্ট অনুপাত ক্যালকুলেটর",
+      ],
+      faqs: [
+        {
+          question: "সমকোণী ত্রিভুজে কোসেক্যান্ট সূত্র কী?",
+          answer: "এটি হলো csc(A) = c / a, যেখানে c হলো অতিভুজ এবং a হলো বিপরীত বাহু। কোসেক্যান্ট হলো সাইনের বিপরীত।"
+        },
+        {
+          question: "কোসেক্যান্ট সাইনের সাথে কীভাবে সম্পর্কিত?",
+          answer: "csc(A) = 1 / sin(A)। যদি sin(A) = 0.6 হয়, তবে csc(A) = 1 / 0.6 ≈ 1.6667।"
+        },
+        {
+          question: "কোসেক্যান্ট কেন সর্বদা 1-এর চেয়ে বড় হয়?",
+          answer: "কারণ সমকোণী ত্রিভুজে অতিভুজ সর্বদা বিপরীত বাহুর চেয়ে দীর্ঘ হয়। c / a ভগ্নাংশটি সর্বদা 1 ছাড়িয়ে যায়।"
+        },
+        {
+          question: "csc(30°) কত?",
+          answer: "একটি 30-60-90 ত্রিভুজে, sin(30°) = 0.5, তাই csc(30°) = 1 / 0.5 = 2। অতিভুজ ঠিক বিপরীত বাহুর দ্বিগুণ।"
+        },
+        {
+          question: "সাইনের পরিবর্তে আমার কখন কোসেক্যান্ট ব্যবহার করা উচিত?",
+          answer: "যখন কোনো সূত্রে এটি সরাসরি প্রয়োজন হয় বা যখন আপনি বিপরীত বাহু থেকে অতিভুজ বের করতে চান তখন কোসেক্যান্ট ব্যবহার করুন: c = a × csc(A)। এটি সাইন দ্বারা ভাগ করার ধাপটি বাঁচায়। ---"
+        },
+      ]
+    },
+  },
+  "ja": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/ja/sine-ratio-calculator/",
+      h1: "サイン比計算機",
+      metaTitle: "サイン比計算機 | 直角三角形 sin(A)",
+      metaDescription: "このサイン比計算機を使用して、対辺 a と斜辺 c の長さから直角三角形の sin(A) を素早く正確に計算します。",
+      intro: [
+        "サイン比計算機は、直角三角形の対辺と斜辺の長さからサイン（正弦）の値を簡単に求めるための無料オンラインツールです。直角三角形における sin(A) は、角度 A の対辺の長さを斜辺の長さで割ることで計算されます。数値を入力するだけで、即座に結果と計算過程が表示されます。",
+      ],
+      faqs: [
+        {
+          question: "サイン比とは何ですか？",
+          answer: "サイン比（正弦）は、直角三角形において特定の角度に対する「対辺」と「斜辺」の長さの比率を表します。公式は sin(A) = a / c です。"
+        },
+        {
+          question: "サインの値は1より大きくなりますか？",
+          answer: "いいえ。直角三角形において斜辺は常に最も長い辺であるため、対辺を斜辺で割った値（サイン）は常に1以下になります。"
+        },
+        {
+          question: "sin(30°) の値はいくつですか？",
+          answer: "30度-60度-90度の直角三角形において、sin(30°) = 0.5 です。これは、対辺の長さが斜辺の長さのちょうど半分であることを意味します。"
+        },
+      ]
+    },
+    "cosine-ratio-calculator": {
+      slug: "cosine-ratio-calculator",
+      url: "/ja/cosine-ratio-calculator/",
+      faqs: [
+        {
+          question: "セカント比とは何ですか？",
+          answer: "セカント比は、直角三角形における「斜辺」と「隣辺」の比率です。公式は sec(A) = c / b です。"
+        },
+        {
+          question: "セカントの値が1より小さくなることはありますか？",
+          answer: "いいえ。斜辺は常に隣辺より長いため、セカントの値（c / b）は常に1より大きくなります。"
+        },
+        {
+          question: "コサインとセカントの関係は何ですか？",
+          answer: "セカントはコサインの逆数です（sec(A) = 1 / cos(A)）。"
+        },
+      ]
+    },
+    "cosecant-ratio-calculator": {
+      slug: "cosecant-ratio-calculator",
+      url: "/ja/cosecant-ratio-calculator/",
+      h1: "コセカント比計算機",
+      metaTitle: "コセカント比計算機 | 直角三角形 csc(A)",
+      metaDescription: "このコセカント比計算機を使用して、斜辺 c と対辺 a の長さから直角三角形の csc(A) を素早く正確に計算します。",
+      intro: [
+        "コセカント比計算機は、直角三角形の斜辺と対辺の長さからコセカント（余割）の値を計算するツールです。csc(A) はサインの逆数であり、斜辺を対辺で割ることで求められます。",
+      ],
+      faqs: [
+        {
+          question: "コセカント比とは何ですか？",
+          answer: "コセカント比は、直角三角形における「斜辺」と「対辺」の比率です。公式は csc(A) = c / a です。"
+        },
+        {
+          question: "サインとコセカントの関係は何ですか？",
+          answer: "コセカントはサインの逆数です（csc(A) = 1 / sin(A)）。例えば、sin(A) が 0.5 の場合、csc(A) は 2 になります。"
+        },
+        {
+          question: "いつコセカントを使用するべきですか？",
+          answer: "コセカントは数式で直接要求された場合や、対辺の長さから斜辺の長さを求める際（c = a × csc(A)）に役立ちます。これによりサインで割るステップを省略できます。 ---"
+        },
+      ]
+    },
+  },
+  "ko": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/ko/sine-ratio-calculator/",
+      h1: "사인 비 계산기",
+      metaTitle: "사인 비 계산기 | 직각 삼각형 sin(A)",
+      metaDescription: "이 사인 비 계산기를 사용하여 대변 a와 빗변 c의 길이를 통해 직각 삼각형의 sin(A)를 빠르고 정확하게 계산합니다.",
+      intro: [
+        "사인 비 계산기는 직각 삼각형의 대변과 빗변의 길이에서 사인(sine) 값을 쉽게 구할 수 있는 무료 온라인 도구입니다. 직각 삼각형에서 sin(A)는 각 A의 대변 길이를 빗변 길이로 나누어 계산됩니다. 수치를 입력하기만 하면 즉시 결과와 계산 과정이 표시됩니다.",
+      ],
+      faqs: [
+        {
+          question: "사인 비란 무엇입니까?",
+          answer: "사인 비(sine)는 직각 삼각형에서 특정 각에 대한 '대변'과 '빗변' 길이의 비율을 나타냅니다. 공식은 sin(A) = a / c 입니다."
+        },
+        {
+          question: "사인 값이 1보다 클 수 있습니까?",
+          answer: "아니요. 직각 삼각형에서 빗변은 항상 가장 긴 변이므로, 대변을 빗변으로 나눈 값(사인)은 항상 1 이하가 됩니다."
+        },
+        {
+          question: "sin(30°)의 값은 얼마입니까?",
+          answer: "30도-60도-90도의 직각 삼각형에서 sin(30°) = 0.5 입니다. 이는 대변의 길이가 빗변 길이의 정확히 절반임을 의미합니다."
+        },
+      ]
+    },
+    "cosine-ratio-calculator": {
+      slug: "cosine-ratio-calculator",
+      url: "/ko/cosine-ratio-calculator/",
+      faqs: [
+        {
+          question: "시컨트 비란 무엇입니까?",
+          answer: "시컨트 비는 직각 삼각형에서 '빗변'과 '밑변'의 비율입니다. 공식은 sec(A) = c / b 입니다."
+        },
+        {
+          question: "시컨트 값이 1보다 작아질 수 있습니까?",
+          answer: "아니요. 빗변은 항상 밑변보다 길기 때문에 시컨트 값(c / b)은 항상 1보다 큽니다."
+        },
+        {
+          question: "코사인과 시컨트의 관계는 무엇입니까?",
+          answer: "시컨트는 코사인의 역수입니다 (sec(A) = 1 / cos(A))."
+        },
+      ]
+    },
+    "cosecant-ratio-calculator": {
+      slug: "cosecant-ratio-calculator",
+      url: "/ko/cosecant-ratio-calculator/",
+      h1: "코시컨트 비 계산기",
+      metaTitle: "코시컨트 비 계산기 | 직각 삼각형 csc(A)",
+      metaDescription: "이 코시컨트 비 계산기를 사용하여 빗변 c와 대변 a의 길이를 통해 직각 삼각형의 csc(A)를 빠르고 정확하게 계산합니다.",
+      intro: [
+        "코시컨트 비 계산기는 직각 삼각형의 빗변과 대변의 길이에서 코시컨트(cosecant) 값을 계산하는 도구입니다. csc(A)는 사인의 역수이며, 빗변을 대변으로 나누어 구해집니다.",
+      ],
+      faqs: [
+        {
+          question: "코시컨트 비란 무엇입니까?",
+          answer: "코시컨트 비는 직각 삼각형에서 '빗변'과 '대변'의 비율입니다. 공식은 csc(A) = c / a 입니다."
+        },
+        {
+          question: "사인과 코시컨트의 관계는 무엇입니까?",
+          answer: "코시컨트는 사인의 역수입니다 (csc(A) = 1 / sin(A)). 예를 들어, sin(A)가 0.5일 경우 csc(A)는 2가 됩니다."
+        },
+        {
+          question: "언제 코시컨트를 사용해야 합니까?",
+          answer: "코시컨트는 수식에서 직접 요구될 때나, 대변의 길이에서 빗변의 길이를 구할 때(c = a × csc(A)) 유용합니다. 이를 통해 사인으로 나누는 단계를 생략할 수 있습니다. ---"
+        },
+      ]
+    },
+  },
+  "ms": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/ms/sine-ratio-calculator/",
+      h1: "Kalkulator Nisbah Sinus",
+      metaTitle: "Kalkulator Nisbah Sinus | sin(A) Segi Tiga Bersudut Tegak",
+      metaDescription: "Gunakan kalkulator nisbah sinus ini untuk mencari sin(A) dalam segi tiga bersudut tegak menggunakan sisi bertentangan a dan hipotenus c dengan cepat dan tepat.",
+      intro: [
+        "Kalkulator nisbah sinus ialah alat dalam talian percuma untuk mencari nilai sinus dengan mudah daripada panjang sisi bertentangan dan hipotenus sebuah segi tiga bersudut tegak. Dalam segi tiga bersudut tegak, sin(A) dikira dengan membahagikan panjang sisi bertentangan sudut A dengan panjang hipotenus. Hanya masukkan nilai dan lihat hasil serta jalan pengiraannya dengan segera.",
+      ],
+      faqs: [
+        {
+          question: "Apakah itu nisbah sinus?",
+          answer: "Nisbah sinus ialah nisbah panjang \"sisi bertentangan\" kepada \"hipotenus\" untuk sudut tertentu dalam segi tiga bersudut tegak. Formulanya ialah sin(A) = a / c."
+        },
+        {
+          question: "Bolehkah nilai sinus lebih besar daripada 1?",
+          answer: "Tidak. Memandangkan hipotenus sentiasa merupakan sisi terpanjang dalam segi tiga bersudut tegak, nilai sisi bertentangan dibahagikan dengan hipotenus (sinus) sentiasa 1 atau kurang."
+        },
+        {
+          question: "Apakah nilai sin(30°)?",
+          answer: "Dalam segi tiga bersudut tegak 30-60-90, sin(30°) = 0.5. Ini bermakna panjang sisi bertentangan adalah tepat separuh daripada panjang hipotenus."
+        },
+      ]
+    },
+    "cosine-ratio-calculator": {
+      slug: "cosine-ratio-calculator",
+      url: "/ms/cosine-ratio-calculator/",
+      faqs: [
+        {
+          question: "Apakah itu nisbah sekan?",
+          answer: "Nisbah sekan ialah nisbah \"hipotenus\" kepada \"sisi bersebelahan\" dalam segi tiga bersudut tegak. Formulanya ialah sec(A) = c / b."
+        },
+        {
+          question: "Bolehkah nilai sekan kurang daripada 1?",
+          answer: "Tidak. Oleh kerana hipotenus sentiasa lebih panjang daripada sisi bersebelahan, nilai sekan (c / b) sentiasa lebih besar daripada 1."
+        },
+        {
+          question: "Apakah kaitan antara kosinus dan sekan?",
+          answer: "Sekan ialah salingan kepada kosinus (sec(A) = 1 / cos(A))."
+        },
+      ]
+    },
+    "cosecant-ratio-calculator": {
+      slug: "cosecant-ratio-calculator",
+      url: "/ms/cosecant-ratio-calculator/",
+      h1: "Kalkulator Nisbah Kosekan",
+      metaTitle: "Kalkulator Nisbah Kosekan | csc(A) Segi Tiga Bersudut Tegak",
+      metaDescription: "Gunakan kalkulator nisbah kosekan ini untuk mencari csc(A) dalam segi tiga bersudut tegak menggunakan hipotenus c dan sisi bertentangan a dengan cepat dan tepat.",
+      intro: [
+        "Kalkulator nisbah kosekan ialah alat untuk mengira nilai kosekan daripada panjang hipotenus dan sisi bertentangan segi tiga bersudut tegak. csc(A) adalah salingan kepada sinus, dan dicari dengan membahagikan hipotenus dengan sisi bertentangan.",
+      ],
+      faqs: [
+        {
+          question: "Apakah itu nisbah kosekan?",
+          answer: "Nisbah kosekan ialah nisbah \"hipotenus\" kepada \"sisi bertentangan\" dalam segi tiga bersudut tegak. Formulanya ialah csc(A) = c / a."
+        },
+        {
+          question: "Apakah kaitan antara sinus dan kosekan?",
+          answer: "Kosekan ialah salingan kepada sinus (csc(A) = 1 / sin(A)). Sebagai contoh, jika sin(A) ialah 0.5, maka csc(A) ialah 2."
+        },
+        {
+          question: "Bilakah kosekan patut digunakan?",
+          answer: "Kosekan berguna apabila ia diperlukan secara langsung dalam formula, atau apabila anda ingin mencari panjang hipotenus daripada panjang sisi bertentangan (c = a × csc(A)). Ini membolehkan anda melangkau langkah pembahagian dengan sinus. ---"
+        },
+      ]
+    },
+  },
+  "pl": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/pl/sine-ratio-calculator/",
+      h1: "Kalkulator Sinusa",
+      metaTitle: "Kalkulator Sinusa | sin(A) w Trójkącie Prostokątnym",
+      metaDescription: "Użyj tego kalkulatora sinusa, aby szybko i dokładnie obliczyć sin(A) w trójkącie prostokątnym, używając przyprostokątnej przeciwległej a i przeciwprostokątnej c.",
+      intro: [
+        "Kalkulator sinusa to bezpłatne narzędzie online do łatwego obliczania wartości sinusa na podstawie długości przyprostokątnej przeciwległej i przeciwprostokątnej w trójkącie prostokątnym. W trójkącie prostokątnym sin(A) oblicza się, dzieląc długość przyprostokątnej przeciwległej do kąta A przez długość przeciwprostokątnej. Po prostu wprowadź wartości, a natychmiast zobaczysz wynik i procedurę obliczeniową.",
+      ],
+      faqs: [
+        {
+          question: "Czym jest stosunek sinusa?",
+          answer: "Sinus to stosunek długości \"przyprostokątnej przeciwległej\" do \"przeciwprostokątnej\" dla danego kąta w trójkącie prostokątnym. Wzór to sin(A) = a / c."
+        },
+        {
+          question: "Czy wartość sinusa może być większa niż 1?",
+          answer: "Nie. Ponieważ przeciwprostokątna jest zawsze najdłuższym bokiem w trójkącie prostokątnym, wartość przyprostokątnej podzielonej przez przeciwprostokątną (sinus) zawsze będzie wynosić 1 lub mniej."
+        },
+        {
+          question: "Ile wynosi sin(30°)?",
+          answer: "Secans to stosunek \"przeciwprostokątnej\" do \"przyprostokątnej przyległej\" w trójkącie prostokątnym. Wzór to sec(A) = c / b."
+        },
+        {
+          question: "Czy wartość secansa może być mniejsza niż 1?",
+          answer: "Nie. Ponieważ przeciwprostokątna jest zawsze dłuższa od przyprostokątnej przyległej, wartość secansa (c / b) zawsze jest większa niż 1."
+        },
+        {
+          question: "Jaki jest związek między cosinusem i secansem?",
+          answer: "Secans jest odwrotnością cosinusa (sec(A) = 1 / cos(A))."
+        },
+      ]
+    },
+    "cosecant-ratio-calculator": {
+      slug: "cosecant-ratio-calculator",
+      url: "/pl/cosecant-ratio-calculator/",
+      h1: "Kalkulator Cosecansa",
+      metaTitle: "Kalkulator Cosecansa | csc(A) w Trójkącie Prostokątnym",
+      metaDescription: "Użyj tego kalkulatora cosecansa, aby szybko i dokładnie obliczyć csc(A) w trójkącie prostokątnym, używając przeciwprostokątnej c i przyprostokątnej przeciwległej a.",
+      intro: [
+        "Kalkulator cosecansa służy do obliczania wartości cosecansa na podstawie długości przeciwprostokątnej i przyprostokątnej przeciwległej w trójkącie prostokątnym. csc(A) jest odwrotnością sinusa i wyznacza się go, dzieląc przeciwprostokątną przez przyprostokątną przeciwległą.",
+      ],
+      faqs: [
+        {
+          question: "Czym jest stosunek cosecansa?",
+          answer: "Cosecans to stosunek \"przeciwprostokątnej\" do \"przyprostokątnej przeciwległej\" w trójkącie prostokątnym. Wzór to csc(A) = c / a."
+        },
+        {
+          question: "Jaki jest związek między sinusem i cosecansem?",
+          answer: "Cosecans jest odwrotnością sinusa (csc(A) = 1 / sin(A)). Na przykład, jeśli sin(A) wynosi 0.5, to csc(A) wynosi 2."
+        },
+        {
+          question: "Kiedy należy używać cosecansa?",
+          answer: "Cosecans przydaje się, gdy wzór wymaga go bezpośrednio, lub gdy chcesz znaleźć długość przeciwprostokątnej mając daną przyprostokątną przeciwległą (c = a × csc(A)). Pozwala to uniknąć etapu dzielenia przez sinus. ---"
+        },
+      ]
+    },
+  },
+  "id": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/id/sine-ratio-calculator/",
+      h1: "Kalkulator Rasio Sinus",
+      metaTitle: "Kalkulator Rasio Sinus | sin(A) Segitiga Siku-Siku",
+      metaDescription: "Gunakan kalkulator rasio sinus ini untuk menemukan sin(A) dalam segitiga siku-siku menggunakan sisi depan a dan sisi miring c dengan cepat dan akurat.",
+      intro: [
+        "Kalkulator rasio sinus adalah alat online gratis untuk dengan mudah menghitung nilai sinus dari panjang sisi depan dan sisi miring segitiga siku-siku. Dalam segitiga siku-siku, sin(A) dihitung dengan membagi panjang sisi depan sudut A dengan panjang sisi miring. Cukup masukkan nilai dan lihat hasil serta proses perhitungannya secara instan.",
+      ],
+      faqs: [
+        {
+          question: "Apa itu rasio sinus?",
+          answer: "Rasio sinus adalah perbandingan panjang \"sisi depan\" dengan \"sisi miring\" untuk sudut tertentu dalam segitiga siku-siku. Rumusnya adalah sin(A) = a / c."
+        },
+        {
+          question: "Bisakah nilai sinus lebih besar dari 1?",
+          answer: "Tidak. Karena sisi miring selalu merupakan sisi terpanjang dalam segitiga siku-siku, nilai sisi depan dibagi dengan sisi miring (sinus) selalu 1 atau kurang dari 1."
+        },
+        {
+          question: "Berapa nilai sin(30°)?",
+          answer: "Dalam segitiga siku-siku 30-60-90, sin(30°) = 0.5. Ini berarti panjang sisi depan tepat setengah dari panjang sisi miring."
+        },
+      ]
+    },
+    "cosine-ratio-calculator": {
+      slug: "cosine-ratio-calculator",
+      url: "/id/cosine-ratio-calculator/",
+      faqs: [
+        {
+          question: "Apa itu rasio sekan?",
+          answer: "Rasio sekan adalah perbandingan \"sisi miring\" dengan \"sisi samping\" dalam segitiga siku-siku. Rumusnya adalah sec(A) = c / b."
+        },
+        {
+          question: "Bisakah nilai sekan kurang dari 1?",
+          answer: "Tidak. Karena sisi miring selalu lebih panjang dari sisi samping, nilai sekan (c / b) selalu lebih besar dari 1."
+        },
+        {
+          question: "Apa hubungan antara kosinus dan sekan?",
+          answer: "Sekan adalah kebalikan dari kosinus (sec(A) = 1 / cos(A))."
+        },
+      ]
+    },
+    "cosecant-ratio-calculator": {
+      slug: "cosecant-ratio-calculator",
+      url: "/id/cosecant-ratio-calculator/",
+      h1: "Kalkulator Rasio Kosekan",
+      metaTitle: "Kalkulator Rasio Kosekan | csc(A) Segitiga Siku-Siku",
+      metaDescription: "Gunakan kalkulator rasio kosekan ini untuk menemukan csc(A) dalam segitiga siku-siku menggunakan sisi miring c dan sisi depan a dengan cepat dan akurat.",
+      intro: [
+        "Kalkulator rasio kosekan adalah alat untuk menghitung nilai kosekan dari panjang sisi miring dan sisi depan segitiga siku-siku. csc(A) adalah kebalikan dari sinus, dan dicari dengan membagi sisi miring dengan sisi depan.",
+      ],
+      faqs: [
+        {
+          question: "Apa itu rasio kosekan?",
+          answer: "Rasio kosekan adalah perbandingan \"sisi miring\" dengan \"sisi depan\" dalam segitiga siku-siku. Rumusnya adalah csc(A) = c / a."
+        },
+        {
+          question: "Apa hubungan antara sinus dan kosekan?",
+          answer: "Kosekan adalah kebalikan dari sinus (csc(A) = 1 / sin(A)). Sebagai contoh, jika sin(A) adalah 0.5, maka csc(A) adalah 2."
+        },
+        {
+          question: "Kapan sebaiknya kosekan digunakan?",
+          answer: "Kosekan berguna ketika langsung dibutuhkan dalam suatu rumus, atau ketika Anda ingin mencari panjang sisi miring dari panjang sisi depan (c = a × csc(A)). Ini memungkinkan Anda untuk melewati langkah pembagian dengan sinus. ---"
+        },
+      ]
+    },
+  },
+  "ar": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/ar/sine-ratio-calculator/",
+      h1: "حاسبة نسبة الجيب",
+      metaTitle: "حاسبة نسبة الجيب | sin(A) مثلث قائم الزاوية",
+      metaDescription: "استخدم حاسبة نسبة الجيب هذه لإيجاد sin(A) في مثلث قائم الزاوية باستخدام الضلع المقابل a والوتر c بسرعة ودقة.",
+      intro: [
+        "حاسبة نسبة الجيب هي أداة مجانية عبر الإنترنت لحساب قيمة الجيب (Sine) بسهولة من طول الضلع المقابل والوتر في مثلث قائم الزاوية. في المثلث قائم الزاوية، يتم حساب sin(A) بقسمة طول الضلع المقابل للزاوية A على طول الوتر. ببساطة أدخل القيم وشاهد النتيجة وخطوات الحساب على الفور.",
+      ],
+      faqs: [
+        {
+          question: "ما هي نسبة الجيب؟",
+          answer: "نسبة الجيب هي نسبة طول \"الضلع المقابل\" إلى \"الوتر\" لزاوية معينة في مثلث قائم الزاوية. الصيغة هي sin(A) = a / c."
+        },
+        {
+          question: "هل يمكن أن تكون قيمة الجيب أكبر من 1؟",
+          answer: "القاطع هو مقلوب جيب التمام (sec(A) = 1 / cos(A))."
+        },
+      ]
+    },
+    "cosecant-ratio-calculator": {
+      slug: "cosecant-ratio-calculator",
+      url: "/ar/cosecant-ratio-calculator/",
+      h1: "حاسبة نسبة قاطع التمام",
+      metaTitle: "حاسبة نسبة قاطع التمام | csc(A) مثلث قائم الزاوية",
+      metaDescription: "استخدم حاسبة نسبة قاطع التمام هذه لإيجاد csc(A) في مثلث قائم الزاوية باستخدام الوتر c والضلع المقابل a بسرعة ودقة.",
+      intro: [
+        "حاسبة نسبة قاطع التمام هي أداة لحساب قيمة قاطع التمام (Cosecant) من طول الوتر والضلع المقابل في مثلث قائم الزاوية. إن csc(A) هو مقلوب الجيب، ويتم حسابه بقسمة الوتر على الضلع المقابل.",
+      ],
+      faqs: [
+        {
+          question: "ما هي نسبة قاطع التمام؟",
+          answer: "نسبة قاطع التمام هي نسبة \"الوتر\" إلى \"الضلع المقابل\" في مثلث قائم الزاوية. الصيغة هي csc(A) = c / a."
+        },
+        {
+          question: "ما هي العلاقة بين الجيب وقاطع التمام؟",
+          answer: "قاطع التمام هو مقلوب الجيب (csc(A) = 1 / sin(A)). على سبيل المثال، إذا كان sin(A) يساوي 0.5، فإن csc(A) يساوي 2."
+        },
+        {
+          question: "متى يجب استخدام قاطع التمام؟",
+          answer: "يكون قاطع التمام مفيداً عندما يكون مطلوباً بشكل مباشر في المعادلة، أو عندما تريد إيجاد طول الوتر من طول الضلع المقابل (c = a × csc(A)). هذا يسمح لك بتخطي خطوة القسمة على الجيب. ---"
+        },
+      ]
+    },
+  },
+  "bg": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/bg/sine-ratio-calculator/",
+      h1: "Калкулатор за косеканс",
+      metaTitle: "Калкулатор за косеканс | csc(A) на Правоъгълен Триъгълник",
+      metaDescription: "Използвайте този калкулатор за косеканс, за да намерите бързо и точно csc(A) в правоъгълен триъгълник, използвайки хипотенузата c и срещулежащия катет a.",
+      intro: [
+        "Калкулаторът за синус е безплатен онлайн инструмент за лесно изчисляване на стойността на синуса (sine) от дължината на срещулежащия катет и хипотенузата в правоъгълен триъгълник. В правоъгълния триъгълник sin(A) се изчислява чрез разделяне на дължината на срещулежащия катет на ъгъл A на дължината на хипотенузата. Просто въведете стойностите и веднага ще видите резултата и стъпките на изчисление.",
+        "Калкулаторът за косеканс е инструмент за изчисляване на стойността на косеканса (cosecant) от дължината на хипотенузата и срещулежащия катет на правоъгълен триъгълник. csc(A) е реципрочната стойност на синуса и се намира чрез разделяне на хипотенузата на срещулежащия катет.",
+      ],
+      faqs: [
+        {
+          question: "Какво е косеканс?",
+          answer: "Косекансът е отношението на \"хипотенузата\" към \"срещулежащия катет\" в правоъгълен триъгълник. Формулата е csc(A) = c / a."
+        },
+        {
+          question: "Каква е връзката между синус и косеканс?",
+          answer: "Косекансът е реципрочната стойност на синуса (csc(A) = 1 / sin(A)). Например, ако sin(A) е 0.5, тогава csc(A) е 2."
+        },
+        {
+          question: "Кога трябва да се използва косеканс?",
+          answer: "Косекансът е полезен, когато се изисква директно във формула, или когато искате да намерите дължината на хипотенузата от дължината на срещулежащия катет (c = a × csc(A)). Това ви позволява да пропуснете стъпката на разделяне на синус. ---"
+        },
+      ]
+    },
+  },
+  "tr": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/tr/sine-ratio-calculator/",
+      h1: "Sinüs Oranı Hesaplayıcı",
+      metaTitle: "Sinüs Oranı Hesaplayıcı | Dik Üçgen sin(A)",
+      metaDescription: "Karşı dik kenar a ve hipotenüs c'yi kullanarak dik üçgendeki sin(A) değerini hızlı ve doğru bir şekilde bulmak için bu sinüs oranı hesaplayıcısını kullanın.",
+      intro: [
+        "Sinüs oranı hesaplayıcı, bir dik üçgenin karşı dik kenar ve hipotenüs uzunluğundan sinüs değerini kolayca bulmak için kullanılan ücretsiz bir çevrimiçi araçtır. Dik üçgende sin(A), A açısının karşı dik kenar uzunluğunun hipotenüs uzunluğuna bölünmesiyle hesaplanır. Değerleri girin ve sonucu, hesaplama adımlarıyla birlikte anında görün.",
+      ],
+      faqs: [
+        {
+          question: "Sinüs oranı nedir?",
+          answer: "Sinüs oranı, bir dik üçgende belirli bir açı için \"karşı dik kenarın\" \"hipotenüse\" oranıdır. Formülü sin(A) = a / c'dir."
+        },
+        {
+          question: "Sinüs değeri 1'den büyük olabilir mi?",
+          answer: "Hayır. Hipotenüs dik üçgendeki en uzun kenar olduğu için, karşı dik kenarın hipotenüse bölümü (sinüs) her zaman 1 veya daha küçüktür."
+        },
+        {
+          question: "sin(30°) değeri kaçtır?",
+          answer: "30-60-90 dik üçgeninde, sin(30°) = 0.5'tir. Bu, karşı dik kenarın uzunluğunun hipotenüs uzunluğunun tam olarak yarısı olduğu anlamına gelir."
+        },
+      ]
+    },
+    "cosine-ratio-calculator": {
+      slug: "cosine-ratio-calculator",
+      url: "/tr/cosine-ratio-calculator/",
+      faqs: [
+        {
+          question: "Sekant oranı nedir?",
+          answer: "Sekant oranı, bir dik üçgende \"hipotenüsün\" \"komşu dik kenara\" oranıdır. Formülü sec(A) = c / b'dir."
+        },
+        {
+          question: "Sekant değeri 1'den küçük olabilir mi?",
+          answer: "Hayır. Hipotenüs her zaman komşu dik kenardan daha uzun olduğu için sekant değeri (c / b) her zaman 1'den büyüktür."
+        },
+        {
+          question: "Kosinüs ve sekant arasındaki ilişki nedir?",
+          answer: "Sekant, kosinüsün çarpmaya göre tersidir (sec(A) = 1 / cos(A))."
+        },
+      ]
+    },
+    "cosecant-ratio-calculator": {
+      slug: "cosecant-ratio-calculator",
+      url: "/tr/cosecant-ratio-calculator/",
+      h1: "Kosekant Oranı Hesaplayıcı",
+      metaTitle: "Kosekant Oranı Hesaplayıcı | Dik Üçgen csc(A)",
+      metaDescription: "Hipotenüs c ve karşı dik kenar a'yı kullanarak dik üçgendeki csc(A) değerini hızlı ve doğru bir şekilde bulmak için bu kosekant oranı hesaplayıcısını kullanın.",
+      intro: [
+        "Kosekant oranı hesaplayıcı, bir dik üçgenin hipotenüs ve karşı dik kenar uzunluğundan kosekant değerini hesaplamak için kullanılan bir araçtır. csc(A), sinüsün çarpmaya göre tersidir ve hipotenüsün karşı dik kenara bölünmesiyle bulunur.",
+      ],
+      faqs: [
+        {
+          question: "Kosekant oranı nedir?",
+          answer: "Kosekant oranı, bir dik üçgende \"hipotenüsün\" \"karşı dik kenara\" oranıdır. Formülü csc(A) = c / a'dır."
+        },
+        {
+          question: "Sinüs ve kosekant arasındaki ilişki nedir?",
+          answer: "Kosekant, sinüsün çarpmaya göre tersidir (csc(A) = 1 / sin(A)). Örneğin, sin(A) değeri 0.5 ise, csc(A) değeri 2 olur."
+        },
+        {
+          question: "Kosekant ne zaman kullanılmalıdır?",
+          answer: "Kosekant, bir formülde doğrudan gerektiğinde veya karşı dik kenarın uzunluğundan hipotenüsün uzunluğunu bulmak istediğinizde kullanışlıdır (c = a × csc(A)). Bu, sinüse bölme adımını atlamanıza olanak tanır. ---"
+        },
+      ]
+    },
+  },
+  "sv": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/sv/sine-ratio-calculator/",
+      h1: "Sinus Kalkylator",
+      metaTitle: "Sinus Kalkylator | Rätvinklig Triangel sin(A)",
+      metaDescription: "Använd denna sinus kalkylator för att snabbt och exakt beräkna sin(A) i en rätvinklig triangel med hjälp av motstående katet a och hypotenusa c.",
+      intro: [
+        "Sinus kalkylator är ett gratis onlineverktyg för att enkelt beräkna sinusvärdet (sine) från längden på den motstående kateten och hypotenusan i en rätvinklig triangel. I en rätvinklig triangel beräknas sin(A) genom att dividera längden på den motstående kateten till vinkel A med hypotenusans längd. Skriv bara in värdena och se resultatet samt beräkningsstegen direkt.",
+      ],
+      faqs: [
+        {
+          question: "Vad är ett sinusförhållande?",
+          answer: "Sinus är förhållandet mellan längden på den \"motstående kateten\" och \"hypotenusan\" för en specifik vinkel i en rätvinklig triangel. Formeln är sin(A) = a / c."
+        },
+        {
+          question: "Kan sinusvärdet vara större än 1?",
+          answer: "Nej. Eftersom hypotenusan alltid är den längsta sidan i en rätvinklig triangel, kommer värdet av den motstående kateten dividerat med hypotenusan (sinus) alltid att vara 1 eller mindre."
+        },
+        {
+          question: "Vad är värdet på sin(30°)?",
+          answer: "I en 30-60-90 rätvinklig triangel är sin(30°) = 0.5. Detta innebär att längden på den motstående kateten är exakt hälften av hypotenusans längd."
+        },
+      ]
+    },
+    "cosine-ratio-calculator": {
+      slug: "cosine-ratio-calculator",
+      url: "/sv/cosine-ratio-calculator/",
+      faqs: [
+        {
+          question: "Vad är ett sekantförhållande?",
+          answer: "Sekant är förhållandet mellan \"hypotenusan\" och den \"närliggande kateten\" i en rätvinklig triangel. Formeln är sec(A) = c / b."
+        },
+        {
+          question: "Kan sekantvärdet vara mindre än 1?",
+          answer: "Nej. Eftersom hypotenusan alltid är längre än den närliggande kateten är sekantvärdet (c / b) alltid större än 1."
+        },
+        {
+          question: "Vad är förhållandet mellan cosinus och sekant?",
+          answer: "Sekant är det reciproka värdet av cosinus (sec(A) = 1 / cos(A))."
+        },
+      ]
+    },
+    "cosecant-ratio-calculator": {
+      slug: "cosecant-ratio-calculator",
+      url: "/sv/cosecant-ratio-calculator/",
+      h1: "Cosekant Kalkylator",
+      metaTitle: "Cosekant Kalkylator | Rätvinklig Triangel csc(A)",
+      metaDescription: "Använd denna cosekant kalkylator för att snabbt och exakt beräkna csc(A) i en rätvinklig triangel med hjälp av hypotenusa c och motstående katet a.",
+      intro: [
+        "Cosekant kalkylator är ett verktyg för att beräkna cosekantvärdet (cosecant) från längden på hypotenusan och den motstående kateten i en rätvinklig triangel. csc(A) är det reciproka värdet av sinus, och hittas genom att dividera hypotenusan med den motstående kateten.",
+      ],
+      faqs: [
+        {
+          question: "Vad är ett cosekantförhållande?",
+          answer: "Cosekant är förhållandet mellan \"hypotenusan\" och den \"motstående kateten\" i en rätvinklig triangel. Formeln är csc(A) = c / a."
+        },
+        {
+          question: "Vad är förhållandet mellan sinus och cosekant?",
+          answer: "Cosekant är det reciproka värdet av sinus (csc(A) = 1 / sin(A)). Till exempel, om sin(A) är 0.5, så är csc(A) 2."
+        },
+        {
+          question: "När ska cosekant användas?",
+          answer: "Cosekant är användbart när det krävs direkt i en formel, eller när du vill hitta hypotenusans längd från den motstående katetens längd (c = a × csc(A)). Detta gör att du kan hoppa över steget med att dividera med sinus. ---"
+        },
+      ]
+    },
+  },
+  "zh": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/zh/sine-ratio-calculator/",
+      h1: "正弦计算器",
+      metaTitle: "正弦计算器 | 直角三角形 sin(A)",
+      metaDescription: "使用此正弦计算器，通过对边 a 和斜边 c 快速准确地计算直角三角形中的 sin(A) 值。",
+      intro: [
+        "正弦计算器是一个免费的在线工具，可通过直角三角形的对边和斜边长度轻松计算正弦 (sine) 值。在直角三角形中，sin(A) 是通过将角 A 的对边长度除以斜边长度来计算的。只需输入数值，即可立即查看结果和计算步骤。",
+      ],
+      faqs: [
+        {
+          question: "什么是正弦比？",
+          answer: "正弦比是直角三角形中特定角的“对边”长度与“斜边”长度的比值。公式为 sin(A) = a / c。"
+        },
+        {
+          question: "正弦值可以大于 1 吗？",
+          answer: "不能。因为斜边始终是直角三角形中最长的边，所以对边除以斜边的值（正弦值）始终为 1 或更小。"
+        },
+        {
+          question: "sin(30°) 的值是多少？",
+          answer: "在 30-60-90 度的直角三角形中，sin(30°) = 0.5。这意味着对边的长度恰好是斜边长度的一半。"
+        },
+      ]
+    },
+    "cosine-ratio-calculator": {
+      slug: "cosine-ratio-calculator",
+      url: "/zh/cosine-ratio-calculator/",
+      h1: "正割计算器",
+      metaTitle: "余弦计算器 | 直角三角形 cos(A)",
+      metaDescription: "使用此正割计算器，通过斜边 c 和邻边 b 快速准确地计算直角三角形中的 sec(A) 值。",
+      intro: [
+        "正割计算器是一款用于通过直角三角形的斜边和邻边长度来计算正割 (secant) 值的工具。sec(A) 是余弦的倒数，通过将斜边除以邻边来求得。",
+      ],
+      faqs: [
+        {
+          question: "什么是正割比？",
+          answer: "正割比是直角三角形中“斜边”与“邻边”的比值。公式为 sec(A) = c / b。"
+        },
+        {
+          question: "正割值可以小于 1 吗？",
+          answer: "不能。因为斜边总是长于邻边，所以正割值 (c / b) 始终大于 1。"
+        },
+        {
+          question: "余弦和正割之间有什么关系？",
+          answer: "正割是余弦的倒数 (sec(A) = 1 / cos(A))。"
+        },
+      ]
+    },
+    "cosecant-ratio-calculator": {
+      slug: "cosecant-ratio-calculator",
+      url: "/zh/cosecant-ratio-calculator/",
+      h1: "余割计算器",
+      metaTitle: "余割计算器 | 直角三角形 csc(A)",
+      metaDescription: "使用此余割计算器，通过斜边 c 和对边 a 快速准确地计算直角三角形中的 csc(A) 值。",
+      intro: [
+        "余割计算器是一款用于通过直角三角形的斜边和对边长度来计算余割 (cosecant) 值的工具。csc(A) 是正弦的倒数，通过将斜边除以对边来求得。",
+      ],
+      faqs: [
+        {
+          question: "什么是余割比？",
+          answer: "余割比是直角三角形中“斜边”与“对边”的比值。公式为 csc(A) = c / a。"
+        },
+        {
+          question: "正弦和余割之间有什么关系？",
+          answer: "余割是正弦的倒数 (csc(A) = 1 / sin(A))。例如，如果 sin(A) 为 0.5，则 csc(A) 为 2。"
+        },
+        {
+          question: "什么时候应该使用余割？",
+          answer: "当公式中直接需要余割时，或者当您想通过对边长度求斜边长度时 (c = a × csc(A))，余割非常有用。这样您可以省去计算中除以正弦的步骤。 ---"
+        },
+      ]
+    },
+  },
+};

@@ -38,7 +38,7 @@ const { locale: rawLocale, slug = '' } = Astro.params;
 const locale = getLocaleFromParams(rawLocale);
 const focusedPage = getFocusedSideCalculatorPage(slug, locale);
 const measurementPage = getFocusedMeasurementCalculatorPage(slug, locale);
-const trigRatioPage = getFocusedTrigRatioCalculatorPage(slug);
+const trigRatioPage = getFocusedTrigRatioCalculatorPage(slug, locale);
 ---
 {
   focusedPage ? (

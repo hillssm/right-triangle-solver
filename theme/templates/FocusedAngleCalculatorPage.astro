@@ -1,6 +1,7 @@
 ---
 import type { FocusedAngleCalculatorPage as PageData } from 'src/data/focusedAngleCalculatorPages';
 import { getFormulaBySlug } from 'src/data/rightTriangleFormulas';
+import { formatListItem } from 'src/utils/formatList';
 import Faq from 'theme/components/Faq.astro';
 import FormulaCalculator from 'theme/components/FormulaCalculator.astro';
 import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
@@ -488,7 +489,7 @@ const angleKeyItems = [
     <p>{page.whenToUse.intro}</p>
     <ul>
       {page.whenToUse.items.map((item) => (
-        <li>{item}</li>
+        <li set:html={formatListItem(item)} />
       ))}
     </ul>
   </section>
@@ -498,7 +499,7 @@ const angleKeyItems = [
     <p>{page.commonMistakes.intro}</p>
     <ul>
       {page.commonMistakes.items.map((item) => (
-        <li>{item}</li>
+        <li set:html={formatListItem(item)} />
       ))}
     </ul>
   </section>

@@ -8,6 +8,7 @@ import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
+import { formatListItem } from 'src/utils/formatList';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 
@@ -320,7 +321,7 @@ const sideCalculatorBadge = pick(common.categories || {}, 'sides', 'Side Calcula
     <h2>{page.howTo.h2}</h2>
     <ol>
       {page.howTo.steps.map((step) => (
-        <li>{step}</li>
+        <li set:html={formatListItem(step)} />
       ))}
     </ol>
   </section>
@@ -351,7 +352,7 @@ const sideCalculatorBadge = pick(common.categories || {}, 'sides', 'Side Calcula
           {section.listTitle && <h3>{section.listTitle}</h3>}
           <ul>
             {section.listItems.map((item) => (
-              <li>{item}</li>
+              <li set:html={formatListItem(item)} />
             ))}
           </ul>
         </>

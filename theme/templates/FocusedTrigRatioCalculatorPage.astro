@@ -11,6 +11,7 @@ import Faq from 'theme/components/Faq.astro';
 import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
+import { formatListItem } from 'src/utils/formatList';
 
 interface Props {
   page: PageData;
@@ -422,7 +423,7 @@ const sideCVisual = sideVisual('c');
     <h2>{trigUi.howToUse}</h2>
     <ol>
       {page.howToSteps.map((step) => (
-        <li>{step}</li>
+        <li set:html={formatListItem(step)} />
       ))}
     </ol>
   </section>
@@ -457,7 +458,7 @@ const sideCVisual = sideVisual('c');
     <p>{page.whenToUse.intro}</p>
     <ul>
       {page.whenToUse.items.map((item) => (
-        <li>{item}</li>
+        <li set:html={formatListItem(item)} />
       ))}
     </ul>
   </section>
@@ -468,7 +469,7 @@ const sideCVisual = sideVisual('c');
     <p>{page.commonMistakes.intro}</p>
     <ul>
       {page.commonMistakes.items.map((item) => (
-        <li>{item}</li>
+        <li set:html={formatListItem(item)} />
       ))}
     </ul>
   </section>

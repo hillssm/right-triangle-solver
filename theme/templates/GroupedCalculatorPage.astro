@@ -10,9 +10,11 @@ import { GROUPED_PAGE_FAQS } from 'src/data/groupedPageFaqs';
 import FormulaCalculator from 'theme/components/FormulaCalculator.astro';
 import Faq from 'theme/components/Faq.astro';
 import { localizePath, type Locale } from 'theme/i18n/locales';
-import { getTranslations, pick } from 'theme/i18n/translations';
+import RightTriangleGraphic from 'theme/components/RightTriangleGraphic.astro';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
+import { formatListItem } from 'src/utils/formatList';
+import { getTranslations, pick } from 'theme/i18n/translations';
 
 interface Props {
   locale: Locale;
@@ -521,14 +523,14 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
         <h3>{pick(groupedUi, 'whereThisCalculatorHelps', 'Where This Calculator Helps')}</h3>
         <ul>
           {activePage.content!.useCases.map((item: string) => (
-            <li>{item}</li>
+            <li set:html={formatListItem(item)} />
           ))}
         </ul>
 
         <h3>{pick(groupedUi, 'inputTipsTitle', 'Input Tips for Better Results')}</h3>
         <ul>
           {activePage.content!.inputTips.map((item: string) => (
-            <li>{item}</li>
+            <li set:html={formatListItem(item)} />
           ))}
         </ul>
 
@@ -541,7 +543,7 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
         <h2>{pick(groupedUi, 'howToUseTitle', 'How To Use This Calculator')}</h2>
         <ol>
           {quickStartSteps.map((step: string) => (
-            <li>{step}</li>
+            <li set:html={formatListItem(step)} />
           ))}
         </ol>
 
@@ -557,7 +559,7 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
         <h2>{pick(groupedUi, 'commonMistakesTitle', 'Common Mistakes and Quick Fixes')}</h2>
         <ul>
           {commonMistakes.map((item: string) => (
-            <li>{item}</li>
+            <li set:html={formatListItem(item)} />
           ))}
         </ul>
       </section>

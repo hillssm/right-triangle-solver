@@ -9,6 +9,7 @@ import { localizePath } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import type { Locale } from 'theme/i18n/locales';
+import { formatListItem } from 'src/utils/formatList';
 
 interface Props {
   locale: Locale;
@@ -278,7 +279,7 @@ const localizedPath = localizePath(locale, '/');
       <h3>{pick(introSection, 'notationTitle', 'Standard notation used in the solver')}</h3>
       <ul>
         {introNotationItems.map((item: string) => (
-          <li>{item}</li>
+          <li set:html={formatListItem(item)} />
         ))}
       </ul>
     </section>
@@ -289,19 +290,19 @@ const localizedPath = localizePath(locale, '/');
       <h3>{pick(formulaSection, 'sideTitle', 'Side formulas')}</h3>
       <ul>
         {formulaSideItems.map((item: string) => (
-          <li>{item}</li>
+          <li set:html={formatListItem(item)} />
         ))}
       </ul>
       <h3>{pick(formulaSection, 'angleTitle', 'Angle and trigonometric formulas')}</h3>
       <ul>
         {formulaAngleItems.map((item: string) => (
-          <li>{item}</li>
+          <li set:html={formatListItem(item)} />
         ))}
       </ul>
       <h3>{pick(formulaSection, 'geometryTitle', 'Measurement and geometry formulas')}</h3>
       <ul>
         {formulaGeometryItems.map((item: string) => (
-          <li>{item}</li>
+          <li set:html={formatListItem(item)} />
         ))}
       </ul>
     </section>
@@ -310,7 +311,7 @@ const localizedPath = localizePath(locale, '/');
       <h2>{pick(solveSection, 'title', 'How To Solve Any Right Triangle (Clear Process)')}</h2>
       <ol>
         {solveSteps.map((item: string) => (
-          <li>{item}</li>
+          <li set:html={formatListItem(item)} />
         ))}
       </ol>
 
@@ -318,7 +319,7 @@ const localizedPath = localizePath(locale, '/');
       <p>{pick(solveSection, 'resultsIntro', 'Every calculator mode is designed to show a useful solution flow, not only a final number. You see the formula, then value substitution, then computed answer, followed by a short explanation line so each step is easier to verify and reuse.')}</p>
       <ul>
         {resultItems.map((item: string) => (
-          <li>{item}</li>
+          <li set:html={formatListItem(item)} />
         ))}
       </ul>
     </section>
@@ -355,14 +356,14 @@ const localizedPath = localizePath(locale, '/');
       <h2>{pick(validationSection, 'practicalTitle', 'Practical Use Cases')}</h2>
       <ul>
         {practicalItems.map((item: string) => (
-          <li>{item}</li>
+          <li set:html={formatListItem(item)} />
         ))}
       </ul>
 
       <h2>{pick(validationSection, 'checklistTitle', 'Accuracy Checklist Before You Finalize')}</h2>
       <ul>
         {checklistItems.map((item: string) => (
-          <li>{item}</li>
+          <li set:html={formatListItem(item)} />
         ))}
       </ul>
 

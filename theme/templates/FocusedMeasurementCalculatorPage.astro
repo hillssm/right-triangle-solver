@@ -7,6 +7,7 @@ import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
+import { formatListItem } from 'src/utils/formatList';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 
@@ -151,26 +152,7 @@ const measurementSideEntries = page.diagram
     ]
   : [];
 
-const splitListItem = (item: string) => {
-  const separators = [
-    ` ${String.fromCharCode(0x2014)} `,
-    ': ',
-    ` ${String.fromCharCode(0x2192)} `,
-    ' -> '
-  ];
 
-  for (const separator of separators) {
-    const index = item.indexOf(separator);
-    if (index > 0) {
-      return {
-        term: item.slice(0, index),
-        detail: item.slice(index + separator.length)
-      };
-    }
-  }
-
-  return { term: '', detail: item };
-};
 ---
 
 <BaseLayout
@@ -380,7 +362,7 @@ const splitListItem = (item: string) => {
     <h2>{page.howTo.h2}</h2>
     <ol>
       {page.howTo.steps.map((step) => (
-        <li>{step}</li>
+        <li set:html={formatListItem(step)} />
       ))}
     </ol>
   </section>
@@ -412,20 +394,9 @@ const splitListItem = (item: string) => {
         <>
           {section.listTitle && <h3>{section.listTitle}</h3>}
           <ul>
-            {section.listItems.map((item) => {
-              const parsed = splitListItem(item);
-              return (
-                <li>
-                  {parsed.term ? (
-                    <>
-                      <strong>{parsed.term}</strong>: {parsed.detail}
-                    </>
-                  ) : (
-                    parsed.detail
-                  )}
-                </li>
-              );
-            })}
+            {section.listItems.map((item) => (
+              <li set:html={formatListItem(item)} />
+            ))}
           </ul>
         </>
       )}

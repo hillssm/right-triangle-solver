@@ -43,29 +43,9 @@ const faqHub = (content.faqHub as Record<string, string>) || {};
 const measurementUiDefaults = {
   home: 'Home',
   badge: 'Measurement Calculator',
-  quickAnswer: 'Quick Answer',
-  structuredGuide: 'Structured Guide',
-  chooseSection: 'Choose the section you need',
-  pageSections: 'Page sections',
-  formula: 'Formula',
-  steps: 'Steps',
-  example: 'Example',
-  coreConcepts: 'Core Concepts',
-  learn: 'Learn',
-  conceptsHeading: 'Understand {name}',
-  conceptsIntro: 'Start here for the meaning, side labels, and setup behind the calculator result.',
-  examples: 'Examples',
-  practice: 'Practice',
-  examplesHeading: 'Worked Examples and Quick References',
-  examplesIntro: 'Use these examples to compare your inputs, verify common triples, and follow the arithmetic.',
-  uses: 'Uses',
-  apply: 'Apply',
-  usesHeading: 'Where This Result Is Used',
-  usesIntro: 'These sections explain when the result matters and how it connects to nearby right-triangle formulas.',
-  checks: 'Checks',
-  verify: 'Verify',
-  checksHeading: 'Accuracy Checks Before You Use the Answer',
-  checksIntro: 'Review units, common mistakes, and validation rules before copying the result into another calculation.',
+  relatedCalculators: 'Related Calculators',
+  openTool: 'Open Tool',
+  faqHeading: 'Frequently Asked Questions',
   faqDescription: 'Answers to the most common right-triangle solving questions.',
   positiveError: 'Please enter positive values.',
   invalidError: 'Please enter positive values.',
@@ -74,66 +54,20 @@ const measurementUiDefaults = {
 
 const measurementUiByLocale: Partial<Record<Locale, Partial<typeof measurementUiDefaults>>> = {
   hi: {
-    home: 'होम',
-    badge: 'माप कैलकुलेटर',
-    quickAnswer: 'त्वरित उत्तर',
-    structuredGuide: 'संरचित मार्गदर्शिका',
-    chooseSection: 'अपना अनुभाग चुनें',
-    pageSections: 'पृष्ठ अनुभाग',
-    formula: 'सूत्र',
-    steps: 'चरण',
-    example: 'उदाहरण',
-    coreConcepts: 'मुख्य बातें',
-    learn: 'सीखें',
-    conceptsHeading: 'समझें: {name}',
-    conceptsIntro: 'कैलकुलेटर के परिणाम का अर्थ, भुजाओं के नाम और सही सेटअप यहां देखें।',
-    examples: 'उदाहरण',
-    practice: 'अभ्यास',
-    examplesHeading: 'हल किए गए छोटे उदाहरण',
-    examplesIntro: 'इन उदाहरणों से अपने इनपुट और गणना को जल्दी जांचें।',
-    uses: 'उपयोग',
-    apply: 'लागू करें',
-    usesHeading: 'यह परिणाम कहाँ उपयोग होता है',
-    usesIntro: 'ये अनुभाग बताते हैं कि परिणाम कब उपयोगी है और वह पास के सूत्रों से कैसे जुड़ता है।',
-    checks: 'जांच',
-    verify: 'सत्यापित करें',
-    checksHeading: 'उत्तर उपयोग करने से पहले जांचें',
-    checksIntro: 'उत्तर को आगे उपयोग करने से पहले इकाई, सामान्य गलती और मान्यता नियम देखें।',
-    faqDescription: 'इस कैलकुलेटर और समकोण त्रिभुज माप से जुड़े सामान्य प्रश्नों के सरल उत्तर।',
-    positiveError: 'कृपया धनात्मक मान दर्ज करें।',
-    invalidError: 'कृपया मान सही दर्ज करें।',
-    hypotenuseKnownLegError: 'कर्ण c सबसे लंबी भुजा होना चाहिए।'
+    home: 'à¤¹à¥‹à¤®',
+    badge: 'à¤®à¤¾à¤ª à¤•à¥ˆà¤²à¤•à¥à¤²à¥‡à¤Ÿà¤°',
+    faqDescription: 'à¤‡à¤¸ à¤•à¥ˆà¤²à¤•à¥à¤²à¥‡à¤Ÿà¤° à¤”à¤° à¤¸à¤®à¤•à¥‹à¤£ à¤¤à¥à¤°à¤¿à¤­à¥à¤œ à¤®à¤¾à¤ª à¤¸à¥‡ à¤œà¥à¤¡à¤¼à¥‡ à¤¸à¤¾à¤®à¤¾à¤¨à¥à¤¯ à¤ªà¥à¤°à¤¶à¥à¤¨à¥‹à¤‚ à¤•à¥‡ à¤¸à¤°à¤² à¤‰à¤¤à¥à¤¤à¤°à¥¤',
+    positiveError: 'à¤•à¥ƒà¤ªà¤¯à¤¾ à¤§à¤¨à¤¾à¤¤à¥à¤®à¤• à¤®à¤¾à¤¨ à¤¦à¤°à¥à¤œ à¤•à¤°à¥‡à¤‚à¥¤',
+    invalidError: 'à¤•à¥ƒà¤ªà¤¯à¤¾ à¤®à¤¾à¤¨ à¤¸à¤¹à¥€ à¤¦à¤°à¥à¤œ à¤•à¤°à¥‡à¤‚à¥¤',
+    hypotenuseKnownLegError: 'à¤•à¤°à¥à¤£ c à¤¸à¤¬à¤¸à¥‡ à¤²à¤‚à¤¬à¥€ à¤­à¥à¤œà¤¾ à¤¹à¥‹à¤¨à¤¾ à¤šà¤¾à¤¹à¤¿à¤à¥¤'
   },
   ko: {
-    home: '홈',
-    badge: '측정 계산기',
-    quickAnswer: '빠른 답',
-    structuredGuide: '구성된 안내',
-    chooseSection: '필요한 섹션을 선택하세요',
-    pageSections: '페이지 섹션',
-    formula: '공식',
-    steps: '단계',
-    example: '예제',
-    coreConcepts: '핵심 개념',
-    learn: '학습',
-    conceptsHeading: '{name} 이해하기',
-    conceptsIntro: '계산 결과의 의미, 변 이름, 올바른 입력 설정을 먼저 확인하세요.',
-    examples: '예제',
-    practice: '연습',
-    examplesHeading: '풀이 예제와 빠른 참고',
-    examplesIntro: '예제로 입력값을 비교하고 계산 과정을 빠르게 확인하세요.',
-    uses: '사용',
-    apply: '적용',
-    usesHeading: '이 결과가 쓰이는 곳',
-    usesIntro: '결과가 언제 필요한지, 관련 직각삼각형 공식과 어떻게 연결되는지 설명합니다.',
-    checks: '확인',
-    verify: '검산',
-    checksHeading: '답을 사용하기 전 확인할 점',
-    checksIntro: '다른 계산에 사용하기 전에 단위, 흔한 실수, 검산 규칙을 확인하세요.',
-    faqDescription: '이 계산기와 직각삼각형 측정에 대해 자주 묻는 질문을 간단히 정리했습니다.',
-    positiveError: '양수 값을 입력하세요.',
-    invalidError: '올바른 값을 입력하세요.',
-    hypotenuseKnownLegError: '빗변 c는 가장 긴 변이어야 합니다.'
+    home: 'í™ˆ',
+    badge: 'ì¸¡ì • ê³„ì‚°ê¸°',
+    faqDescription: 'ì´ ê³„ì‚°ê¸°ì™€ ì§ê°ì‚¼ê°í˜• ì¸¡ì •ì— ëŒ€í•´ ìžì£¼ ë¬»ëŠ” ì§ˆë¬¸ì„ ê°„ë‹¨ížˆ ì •ë¦¬í–ˆìŠµë‹ˆë‹¤.',
+    positiveError: 'ì–‘ìˆ˜ ê°’ì„ ìž…ë ¥í•˜ì„¸ìš”.',
+    invalidError: 'ì˜¬ë°”ë¥¸ ê°’ì„ ìž…ë ¥í•˜ì„¸ìš”.',
+    hypotenuseKnownLegError: 'ë¹—ë³€ cëŠ” ê°€ìž¥ ê¸´ ë³€ì´ì–´ì•¼ í•©ë‹ˆë‹¤.'
   }
 };
 
@@ -149,12 +83,6 @@ const measurementCalculatorLabel = pick(
   'Right Triangle Measurements Calculator'
 );
 const canonicalPath = localizePath(locale, page.url);
-
-const renderMath = (expression: string, displayMode = true) =>
-  katex.renderToString(expression, {
-    throwOnError: false,
-    displayMode
-  });
 
 const breadcrumbItems = [
   { label: homeLabel, href: localizePath(locale, '/') },
@@ -195,6 +123,25 @@ const calculatorMessages = {
   hypotenuseKnownLeg: measurementUi.hypotenuseKnownLegError
 };
 
+const renderMath = (expression: string, displayMode = true) =>
+  katex.renderToString(expression, {
+    throwOnError: false,
+    displayMode
+  });
+
+const calculatorName = page.h1.replace(/\s+Calculator$/, '');
+const calculatorHeading =
+  locale === DEFAULT_LOCALE ? `Calculate ${calculatorName}` : undefined;
+const howItWorksHeading =
+  locale === DEFAULT_LOCALE
+    ? `How This ${calculatorName} Calculator Works`
+    : page.quickSummary?.h2 || page.h1;
+
+const relatedHeading = pick(groupedUi, 'relatedCalculatorsTitle', measurementUi.relatedCalculators);
+const openToolLabel = pick(solver, 'openTool', measurementUi.openTool);
+const faqHeading = pick(faqHub, 'heading', measurementUi.faqHeading);
+const badge = measurementUi.badge;
+
 const measurementSideEntries = page.diagram
   ? [
       page.diagram.sides.a,
@@ -204,93 +151,6 @@ const measurementSideEntries = page.diagram
     ]
   : [];
 
-const relatedHeading = pick(groupedUi, 'relatedCalculatorsTitle', 'Related Calculators');
-const openToolLabel = pick(solver, 'openTool', 'Open Tool');
-const faqHeading = pick(faqHub, 'heading', 'Frequently Asked Questions');
-const badge = measurementUi.badge;
-
-const makeSectionId = (heading: string, index: number) =>
-  `${page.slug}-section-${index}-${heading
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-|-$/g, '')
-    .slice(0, 42)}`;
-
-const contentSections = page.extraSections.map((section, index) => ({
-  ...section,
-  id: makeSectionId(section.h2, index)
-}));
-
-const calculatorName = page.h1.replace(/\s+Calculator$/, '');
-const isExampleSection = (heading: string) => /example|triple|उदाहरण|예시|예제|계산 예/i.test(heading);
-const isCheckSection = (heading: string) => /unit|mistake|properties|tip|check|इकाई|गलती|जांच|단위|실수|확인/i.test(heading);
-const isUseSection = (heading: string) =>
-  /application|when to use|relationship|connects|matters|vs\.?|real-world|उपयोग|कब|संबंध|사용|쓰이는|차이/i.test(heading);
-
-const exampleSections = contentSections.filter((section) => isExampleSection(section.h2));
-const checkSections = contentSections.filter((section) => isCheckSection(section.h2));
-const useSections = contentSections.filter(
-  (section) => !isExampleSection(section.h2) && !isCheckSection(section.h2) && isUseSection(section.h2)
-);
-const conceptSections = contentSections.filter(
-  (section) =>
-    !isExampleSection(section.h2) &&
-    !isCheckSection(section.h2) &&
-    !isUseSection(section.h2)
-);
-
-const contentGroups = [
-  {
-    id: `${page.slug}-concepts`,
-    label: measurementUi.coreConcepts,
-    eyebrow: measurementUi.learn,
-    h2: measurementUi.conceptsHeading.replace('{name}', calculatorName),
-    intro: measurementUi.conceptsIntro,
-    sections: conceptSections,
-    style: 'feature'
-  },
-  {
-    id: `${page.slug}-examples`,
-    label: measurementUi.examples,
-    eyebrow: measurementUi.practice,
-    h2: measurementUi.examplesHeading,
-    intro: measurementUi.examplesIntro,
-    sections: exampleSections,
-    style: 'examples'
-  },
-  {
-    id: `${page.slug}-uses`,
-    label: measurementUi.uses,
-    eyebrow: measurementUi.apply,
-    h2: measurementUi.usesHeading,
-    intro: measurementUi.usesIntro,
-    sections: useSections,
-    style: 'split'
-  },
-  {
-    id: `${page.slug}-checks`,
-    label: measurementUi.checks,
-    eyebrow: measurementUi.verify,
-    h2: measurementUi.checksHeading,
-    intro: measurementUi.checksIntro,
-    sections: checkSections,
-    style: 'checks'
-  }
-].filter((group) => group.sections.length > 0);
-
-const guideLinks = [
-  { href: '#formula', label: measurementUi.formula },
-  { href: '#steps', label: measurementUi.steps },
-  { href: '#example', label: measurementUi.example },
-  ...contentGroups.map((group) => ({
-    href: `#${group.id}`,
-    label: group.label
-  }))
-].map((link, index) => ({
-  ...link,
-  number: String(index + 1).padStart(2, '0')
-}));
-
 const splitListItem = (item: string) => {
   const separators = [
     ` ${String.fromCharCode(0x2014)} `,
@@ -298,6 +158,7 @@ const splitListItem = (item: string) => {
     ` ${String.fromCharCode(0x2192)} `,
     ' -> '
   ];
+
   for (const separator of separators) {
     const index = item.indexOf(separator);
     if (index > 0) {
@@ -352,45 +213,61 @@ const splitListItem = (item: string) => {
     <p class="font-label text-xs uppercase tracking-widest text-primary">
       {badge}
     </p>
-    <h1 class="mt-3 text-3xl font-bold sm:text-4xl">{page.h1}</h1>
-    <p class="mt-4 max-w-3xl text-on-surface-variant">{page.intro}</p>
+    <h1 class="mt-3 break-words text-3xl font-bold leading-tight sm:text-4xl">{page.h1}</h1>
+    <p class="mt-4 max-w-3xl break-words text-on-surface-variant">{page.intro}</p>
   </header>
 
   <FormulaCalculator
     formula={calculatorFormula}
     locale={locale}
+    heading={calculatorHeading}
     messages={calculatorMessages}
   />
 
-  {page.quickSummary && (
-    <section
-      class="measurement-overview mx-auto mt-8 w-full max-w-5xl"
-      aria-labelledby={`${page.slug}-summary-heading`}
-    >
-      <div class="measurement-overview-copy">
-        <p class="measurement-section-kicker">{measurementUi.quickAnswer}</p>
-        <h2 id={`${page.slug}-summary-heading`}>{page.quickSummary.h2}</h2>
-        <p>{page.quickSummary.intro}</p>
-      </div>
-      <div class="measurement-overview-grid">
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>{howItWorksHeading}</h2>
+    <p>{page.toolPurpose}</p>
+    {page.quickSummary?.intro && <p>{page.quickSummary.intro}</p>}
+    {page.quickSummary?.cards && (
+      <div class="not-prose mt-5 grid gap-3 sm:grid-cols-2">
         {page.quickSummary.cards.map((card) => (
-          <article class="measurement-summary-card">
-            <span>{card.label}</span>
-            <p>{card.value}</p>
-          </article>
+          <div class="min-w-0 rounded-lg border border-outline-variant/25 bg-surface-container-lowest/55 p-4">
+            <p class="font-label text-[11px] uppercase tracking-widest text-primary">
+              {card.label}
+            </p>
+            <p class="mt-2 break-words text-sm leading-relaxed text-on-surface-variant">
+              {card.value}
+            </p>
+          </div>
         ))}
       </div>
-    </section>
-  )}
+    )}
+  </section>
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>{page.formulaSection.h2}</h2>
+    <div class="not-prose mt-4 grid gap-3">
+      {page.formulaSection.formulas.map((expression) => (
+        <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
+          <div
+            class="math-textbook min-w-max text-2xl text-tertiary"
+            set:html={renderMath(expression)}
+          />
+        </div>
+      ))}
+    </div>
+    {page.formulaSection.paragraphs.map((paragraph) => (
+      <p>{paragraph}</p>
+    ))}
+  </section>
 
   {page.diagram && (
-    <section class="measurement-visual-section mx-auto mt-8 w-full max-w-5xl">
-      <div class="grid gap-6 lg:grid-cols-[minmax(0,1.12fr)_minmax(17rem,0.88fr)] lg:items-center">
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+      <h2 class="text-2xl font-semibold">{page.diagram.h2}</h2>
+      <p class="mt-3 leading-relaxed text-on-surface-variant">{page.diagram.intro}</p>
+      <div class="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(14rem,0.85fr)] lg:items-start">
         <div class="min-w-0">
-          <h2 class="text-2xl font-semibold">{page.diagram.h2}</h2>
-          <p class="mt-3 leading-relaxed text-on-surface-variant">{page.diagram.intro}</p>
-
-          <div class="measurement-diagram-canvas mt-5 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-3">
+          <div class="rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-3">
             <svg
               class="measurement-diagram-svg"
               viewBox="0 0 560 380"
@@ -465,9 +342,9 @@ const splitListItem = (item: string) => {
                 <rect width="92" height="34" rx="8" />
                 <text x="46" y="22" text-anchor="middle">c</text>
               </g>
-              <g class="measurement-diagram-formula" transform="translate(174 188)">
-                <rect width="210" height="42" rx="10" />
-                <text x="105" y="27" text-anchor="middle">{page.diagram.formulaLabel}</text>
+              <g class="measurement-diagram-formula" transform="translate(164 188)">
+                <rect width="230" height="42" rx="10" />
+                <text x="115" y="27" text-anchor="middle">{page.diagram.formulaLabel}</text>
               </g>
             </svg>
           </div>
@@ -499,144 +376,59 @@ const splitListItem = (item: string) => {
     </section>
   )}
 
-  <section class="measurement-page-map mx-auto mt-8 w-full max-w-5xl">
-    <div class="measurement-page-map-heading">
-      <p class="measurement-section-kicker">{measurementUi.structuredGuide}</p>
-      <h2>{measurementUi.chooseSection}</h2>
-    </div>
-    <nav aria-label={measurementUi.pageSections}>
-      <ol>
-        {guideLinks.map((link) => (
-          <li>
-            <a href={link.href}>
-              <span>{link.number}</span>
-              <strong>{link.label}</strong>
-            </a>
-          </li>
-        ))}
-      </ol>
-    </nav>
-  </section>
-
-  <section id="formula" class="measurement-guide-section measurement-guide-section--formula mx-auto mt-10 w-full max-w-5xl">
-    <div class="measurement-section-header">
-      <span>01</span>
-      <div>
-        <p>{measurementUi.formula}</p>
-        <h2>{page.formulaSection.h2}</h2>
-      </div>
-    </div>
-    <div class="measurement-section-body grid gap-5 lg:grid-cols-[minmax(0,0.58fr)_minmax(18rem,0.42fr)]">
-      <div class="measurement-copy">
-        {page.formulaSection.paragraphs.map((paragraph) => (
-          <p>{paragraph}</p>
-        ))}
-      </div>
-      <div class="grid gap-3">
-        {page.formulaSection.formulas.map((expression) => (
-          <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-4 py-3">
-            <div
-              class="math-textbook min-w-max text-xl text-tertiary"
-              set:html={renderMath(expression)}
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section id="steps" class="measurement-guide-section measurement-guide-section--steps mx-auto mt-10 w-full max-w-5xl">
-    <div class="measurement-section-header">
-      <span>02</span>
-      <div>
-        <p>{measurementUi.steps}</p>
-        <h2>{page.howTo.h2}</h2>
-      </div>
-    </div>
-    <ol class="measurement-step-grid">
-      {page.howTo.steps.map((step, index) => (
-        <li>
-          <span>{String(index + 1).padStart(2, '0')}</span>
-          <p>{step}</p>
-        </li>
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>{page.howTo.h2}</h2>
+    <ol>
+      {page.howTo.steps.map((step) => (
+        <li>{step}</li>
       ))}
     </ol>
   </section>
 
-  <section id="example" class="measurement-guide-section measurement-guide-section--example mx-auto mt-10 w-full max-w-5xl">
-    <div class="measurement-section-header">
-      <span>03</span>
-      <div>
-        <p>{measurementUi.example}</p>
-        <h2>{page.example.h2}</h2>
-      </div>
-    </div>
-    <div class="measurement-section-body grid gap-5 lg:grid-cols-[minmax(0,0.42fr)_minmax(0,0.58fr)]">
-      <div class="measurement-copy">
-        <p>{page.example.intro}</p>
-        {page.example.answer && (
-          <p class="rounded-lg border border-primary/20 bg-primary/10 p-4 font-semibold text-on-surface">
-            {page.example.answer}
-          </p>
-        )}
-      </div>
-      <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-4 py-3">
-        <div class="grid gap-2">
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>{page.example.h2}</h2>
+    <p>{page.example.intro}</p>
+    <div class="not-prose mt-5 min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
+      <div class="grid gap-2">
         {page.example.lines.map((line) => (
           <div
             class="math-textbook min-w-max text-lg text-on-surface"
             set:html={renderMath(line, false)}
           />
         ))}
-        </div>
       </div>
     </div>
+    {page.example.answer && <p class="mt-4">{page.example.answer}</p>}
   </section>
 
-  {contentGroups.map((group, groupIndex) => (
-    <section id={group.id} class="measurement-content-cluster mx-auto mt-12 w-full max-w-5xl">
-      <div class="measurement-cluster-header">
-        <span>{String(groupIndex + 4).padStart(2, '0')}</span>
-        <div>
-          <p>{group.eyebrow}</p>
-          <h2>{group.h2}</h2>
-          <small>{group.intro}</small>
-        </div>
-      </div>
+  {page.extraSections.map((section) => (
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+      <h2>{section.h2}</h2>
+      {section.paragraphs.map((paragraph) => (
+        <p>{paragraph}</p>
+      ))}
 
-      <div class={`measurement-topic-grid measurement-topic-grid--${group.style}`}>
-        {group.sections.map((section, sectionIndex) => (
-          <article id={section.id} class={`measurement-topic-card ${sectionIndex === 0 ? 'measurement-topic-card--lead' : ''}`}>
-            <div class="measurement-topic-card-heading">
-              <span>{String(sectionIndex + 1).padStart(2, '0')}</span>
-              <h3>{section.h2}</h3>
-            </div>
-
-            <div class="measurement-topic-copy">
-              {section.paragraphs.map((paragraph) => (
-                <p>{paragraph}</p>
-              ))}
-            </div>
-
-            {section.listItems && section.listItems.length > 0 && (
-              <div class="measurement-topic-list">
-                {section.listTitle && <h4>{section.listTitle}</h4>}
-                <ul>
-                  {section.listItems.map((item) => {
-                    const parsed = splitListItem(item);
-                    return (
-                      <li>
-                        {parsed.term && <strong>{parsed.term}</strong>}
-                        <span>{parsed.detail}</span>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-            )}
-          </article>
-        ))}
-      </div>
+      {section.listItems && section.listItems.length > 0 && (
+        <>
+          {section.listTitle && <h3>{section.listTitle}</h3>}
+          <ul>
+            {section.listItems.map((item) => {
+              const parsed = splitListItem(item);
+              return (
+                <li>
+                  {parsed.term ? (
+                    <>
+                      <strong>{parsed.term}</strong>: {parsed.detail}
+                    </>
+                  ) : (
+                    parsed.detail
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </>
+      )}
     </section>
   ))}
 
@@ -644,7 +436,7 @@ const splitListItem = (item: string) => {
     <Faq heading={faqHeading} description={measurementUi.faqDescription} items={page.faqs} />
   </div>
 
-  <section class="mx-auto mt-8 w-full max-w-5xl section-shell">
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
     <h2 class="text-2xl font-semibold">{relatedHeading}</h2>
     <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {page.relatedLinks.map((link) => (
@@ -665,420 +457,12 @@ const splitListItem = (item: string) => {
 </BaseLayout>
 
 <style>
-  .measurement-section-kicker {
-    margin: 0;
-    color: var(--color-primary);
-    font-family: var(--font-label);
-    font-size: 0.6875rem;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-  }
-
-  .measurement-overview,
-  .measurement-visual-section,
-  .measurement-guide-section {
-    scroll-margin-top: 6rem;
-    border: 1px solid color-mix(in srgb, var(--color-outline-variant) 34%, transparent);
-    border-radius: 8px;
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.026), transparent 32%),
-      color-mix(in srgb, var(--color-surface-container-low) 86%, transparent);
-    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.16);
-  }
-
-  .measurement-overview {
-    display: grid;
-    grid-template-columns: minmax(0, 0.42fr) minmax(0, 0.58fr);
-    gap: clamp(1rem, 2.4vw, 1.8rem);
-    align-items: stretch;
-    padding: clamp(1.15rem, 2.6vw, 2rem);
-  }
-
-  .measurement-overview-copy {
-    min-width: 0;
-    align-self: center;
-  }
-
-  .measurement-overview-copy h2,
-  .measurement-page-map-heading h2,
-  .measurement-cluster-header h2 {
-    margin: 0;
-    color: var(--color-on-surface);
-    line-height: 1.12;
-  }
-
-  .measurement-overview-copy h2 {
-    margin-top: 0.55rem;
-    font-size: clamp(1.6rem, 2.7vw, 2.15rem);
-  }
-
-  .measurement-overview-copy p:last-child {
-    margin: 0.9rem 0 0;
-    color: var(--color-on-surface-variant);
-    line-height: 1.72;
-    overflow-wrap: anywhere;
-  }
-
-  .measurement-overview-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.75rem;
-    min-width: 0;
-  }
-
-  .measurement-summary-card {
-    min-width: 0;
-    border: 1px solid color-mix(in srgb, var(--color-outline-variant) 28%, transparent);
-    border-radius: 8px;
-    background: color-mix(in srgb, var(--color-surface-container-lowest) 72%, transparent);
-    padding: 1rem;
-  }
-
-  .measurement-summary-card span {
-    display: block;
-    color: var(--color-primary);
-    font-family: var(--font-label);
-    font-size: 0.6875rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-  }
-
-  .measurement-summary-card p {
-    margin: 0.55rem 0 0;
-    color: var(--color-on-surface);
-    font-size: 0.92rem;
-    line-height: 1.55;
-    overflow-wrap: anywhere;
-  }
-
-  .measurement-visual-section {
-    padding: clamp(1.15rem, 2.6vw, 2rem);
-  }
-
-  .measurement-page-map {
-    display: grid;
-    grid-template-columns: minmax(13rem, 0.28fr) minmax(0, 0.72fr);
-    gap: clamp(1rem, 2.4vw, 1.5rem);
-    align-items: center;
-    border-block: 1px solid color-mix(in srgb, var(--color-outline-variant) 28%, transparent);
-    padding-block: 1.1rem;
-  }
-
-  .measurement-page-map-heading {
-    min-width: 0;
-  }
-
-  .measurement-page-map-heading h2 {
-    margin-top: 0.45rem;
-    font-size: clamp(1.35rem, 2vw, 1.8rem);
-  }
-
-  .measurement-page-map ol {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 8.75rem), 1fr));
-    gap: 0.65rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .measurement-page-map a {
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr);
-    gap: 0.65rem;
-    align-items: center;
-    min-height: 3.35rem;
-    border: 1px solid color-mix(in srgb, var(--color-outline-variant) 28%, transparent);
-    border-radius: 8px;
-    background: color-mix(in srgb, var(--color-surface-container-low) 62%, transparent);
-    padding: 0.7rem 0.8rem;
-  }
-
-  .measurement-page-map a:hover {
-    border-color: color-mix(in srgb, var(--color-primary) 48%, transparent);
-    color: var(--color-primary);
-  }
-
-  .measurement-page-map a span {
-    color: var(--color-primary);
-    font-family: var(--font-label);
-    font-size: 0.72rem;
-    font-weight: 700;
-  }
-
-  .measurement-page-map a strong {
-    min-width: 0;
-    color: var(--color-on-surface);
-    font-size: 0.86rem;
-    line-height: 1.25;
-    overflow-wrap: anywhere;
-  }
-
-  .measurement-guide-section {
-    padding: clamp(1.15rem, 2.6vw, 2rem);
-  }
-
-  .measurement-guide-section--formula {
-    border-left: 4px solid color-mix(in srgb, var(--color-primary) 72%, transparent);
-  }
-
-  .measurement-guide-section--steps {
-    border-left: 4px solid color-mix(in srgb, var(--color-tertiary) 58%, transparent);
-  }
-
-  .measurement-guide-section--example {
-    border-left: 4px solid color-mix(in srgb, var(--color-secondary) 58%, transparent);
-  }
-
-  .measurement-section-header {
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr);
-    gap: 1rem;
-    align-items: start;
-    margin-bottom: clamp(1.15rem, 2.4vw, 1.7rem);
-  }
-
-  .measurement-section-header > span,
-  .measurement-cluster-header > span {
-    display: inline-flex;
-    width: 2.5rem;
-    aspect-ratio: 1;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    border: 1px solid color-mix(in srgb, var(--color-primary) 36%, transparent);
-    background: color-mix(in srgb, var(--color-primary) 10%, transparent);
-    color: var(--color-primary);
-    font-family: var(--font-label);
-    font-size: 0.75rem;
-    font-weight: 700;
-  }
-
-  .measurement-section-header p,
-  .measurement-cluster-header p {
-    margin: 0 0 0.35rem;
-    color: var(--color-primary);
-    font-family: var(--font-label);
-    font-size: 0.6875rem;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-  }
-
-  .measurement-section-header h2 {
-    margin: 0;
-    color: var(--color-on-surface);
-    font-size: clamp(1.45rem, 2.6vw, 2rem);
-    line-height: 1.12;
-  }
-
-  .measurement-section-body {
-    min-width: 0;
-    align-items: start;
-  }
-
-  .measurement-copy,
-  .measurement-topic-copy {
-    display: grid;
-    min-width: 0;
-    gap: 1rem;
-    color: var(--color-on-surface-variant);
-    line-height: 1.75;
-  }
-
-  .measurement-copy p,
-  .measurement-topic-copy p {
-    margin: 0;
-    max-width: 72ch;
-    overflow-wrap: anywhere;
-  }
-
-  .measurement-step-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
-    gap: 0.85rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .measurement-step-grid li {
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr);
-    gap: 0.85rem;
-    align-items: start;
-    min-width: 0;
-    border: 1px solid color-mix(in srgb, var(--color-outline-variant) 24%, transparent);
-    border-radius: 8px;
-    background: color-mix(in srgb, var(--color-surface-container-lowest) 72%, transparent);
-    padding: 1rem;
-  }
-
-  .measurement-step-grid span {
-    display: inline-flex;
-    width: 2rem;
-    aspect-ratio: 1;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    background: color-mix(in srgb, var(--color-primary) 12%, transparent);
-    color: var(--color-primary);
-    font-family: var(--font-label);
-    font-size: 0.72rem;
-    font-weight: 700;
-  }
-
-  .measurement-step-grid p {
-    margin: 0;
-    min-width: 0;
-    color: var(--color-on-surface-variant);
-    line-height: 1.6;
-    overflow-wrap: anywhere;
-  }
-
-  .measurement-content-cluster {
-    scroll-margin-top: 6rem;
-  }
-
-  .measurement-cluster-header {
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr);
-    gap: 1rem;
-    align-items: start;
-    border-bottom: 1px solid color-mix(in srgb, var(--color-outline-variant) 28%, transparent);
-    margin-bottom: clamp(1rem, 2.5vw, 1.55rem);
-    padding-bottom: 1rem;
-  }
-
-  .measurement-cluster-header h2 {
-    font-size: clamp(1.5rem, 2.7vw, 2.15rem);
-  }
-
-  .measurement-cluster-header small {
-    display: block;
-    margin-top: 0.65rem;
-    color: var(--color-on-surface-variant);
-    font-size: 0.98rem;
-    line-height: 1.62;
-    overflow-wrap: anywhere;
-  }
-
-  .measurement-topic-grid {
-    display: grid;
-    gap: 1rem;
-    min-width: 0;
-  }
-
-  .measurement-topic-grid--feature,
-  .measurement-topic-grid--split,
-  .measurement-topic-grid--checks {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .measurement-topic-grid--examples {
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
-  }
-
-  .measurement-topic-grid--feature .measurement-topic-card--lead {
-    grid-column: 1 / -1;
-  }
-
-  .measurement-topic-card {
-    min-width: 0;
-    border: 1px solid color-mix(in srgb, var(--color-outline-variant) 30%, transparent);
-    border-radius: 8px;
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.022), transparent 35%),
-      color-mix(in srgb, var(--color-surface-container-low) 78%, transparent);
-    padding: clamp(1rem, 2.1vw, 1.35rem);
-  }
-
-  .measurement-topic-card--lead {
-    background:
-      linear-gradient(180deg, color-mix(in srgb, var(--color-primary) 7%, transparent), transparent 48%),
-      color-mix(in srgb, var(--color-surface-container-low) 84%, transparent);
-  }
-
-  .measurement-topic-card-heading {
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr);
-    gap: 0.75rem;
-    align-items: start;
-    margin-bottom: 0.9rem;
-  }
-
-  .measurement-topic-card-heading span {
-    color: var(--color-primary);
-    font-family: var(--font-label);
-    font-size: 0.72rem;
-    font-weight: 700;
-    line-height: 1.5;
-  }
-
-  .measurement-topic-card-heading h3 {
-    margin: 0;
-    color: var(--color-on-surface);
-    font-size: clamp(1.12rem, 1.9vw, 1.35rem);
-    line-height: 1.22;
-    overflow-wrap: anywhere;
-  }
-
-  .measurement-topic-list {
-    margin-top: 1rem;
-    border-top: 1px solid color-mix(in srgb, var(--color-outline-variant) 24%, transparent);
-    padding-top: 1rem;
-  }
-
-  .measurement-topic-list h4 {
-    margin: 0 0 0.7rem;
-    color: var(--color-primary);
-    font-family: var(--font-label);
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-  }
-
-  .measurement-topic-list ul {
-    display: grid;
-    gap: 0.65rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .measurement-topic-list li {
-    display: grid;
-    gap: 0.25rem;
-    min-width: 0;
-    border-left: 2px solid color-mix(in srgb, var(--color-primary) 40%, transparent);
-    padding-left: 0.75rem;
-    color: var(--color-on-surface-variant);
-    line-height: 1.55;
-    overflow-wrap: anywhere;
-  }
-
-  .measurement-topic-list strong {
-    color: var(--color-on-surface);
-    font-size: 0.93rem;
-  }
-
-  .measurement-topic-list span {
-    min-width: 0;
-    overflow-wrap: anywhere;
-  }
-
-  .measurement-diagram-canvas {
-    min-width: 0;
-  }
-
   .measurement-diagram-svg {
     display: block;
     width: 100%;
-    min-height: 15rem;
+    max-width: 34rem;
     height: auto;
+    margin-inline: auto;
   }
 
   .measurement-diagram-label rect,
@@ -1101,51 +485,7 @@ const splitListItem = (item: string) => {
     fill: var(--color-primary);
   }
 
-  @media (max-width: 56rem) {
-    .measurement-overview,
-    .measurement-page-map {
-      grid-template-columns: 1fr;
-    }
-
-    .measurement-topic-grid--feature,
-    .measurement-topic-grid--split,
-    .measurement-topic-grid--checks {
-      grid-template-columns: 1fr;
-    }
-  }
-
   @media (max-width: 28rem) {
-    .measurement-overview,
-    .measurement-visual-section,
-    .measurement-guide-section {
-      padding: 1rem;
-    }
-
-    .measurement-overview-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .measurement-page-map ol {
-      grid-template-columns: 1fr;
-    }
-
-    .measurement-section-header {
-      gap: 0.8rem;
-    }
-
-    .measurement-section-header > span,
-    .measurement-cluster-header > span {
-      width: 2.15rem;
-    }
-
-    .measurement-cluster-header {
-      gap: 0.8rem;
-    }
-
-    .measurement-diagram-svg {
-      min-height: 13rem;
-    }
-
     .measurement-diagram-label text,
     .measurement-diagram-formula text {
       font-size: 0.8125rem;

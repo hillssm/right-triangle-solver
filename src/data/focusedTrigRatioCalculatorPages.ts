@@ -44,7 +44,7 @@ export type FocusedTrigRatioCalculatorPage = {
 
 export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage[] = [
   // ================================================================
-  // PAGE 1 — SINE RATIO CALCULATOR
+  // PAGE 1 - SINE RATIO CALCULATOR
   // ================================================================
   {
     slug: 'sine-ratio-calculator',
@@ -165,7 +165,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
   },
 
   // ================================================================
-  // PAGE 2 — COSINE RATIO CALCULATOR
+  // PAGE 2 - COSINE RATIO CALCULATOR
   // ================================================================
   {
     slug: 'cosine-ratio-calculator',
@@ -286,7 +286,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
   },
 
   // ================================================================
-  // PAGE 3 — TANGENT RATIO CALCULATOR
+  // PAGE 3 - TANGENT RATIO CALCULATOR
   // ================================================================
   {
     slug: 'tangent-ratio-calculator',
@@ -407,7 +407,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
   },
 
   // ================================================================
-  // PAGE 4 — COTANGENT RATIO CALCULATOR
+  // PAGE 4 - COTANGENT RATIO CALCULATOR
   // ================================================================
   {
     slug: 'cotangent-ratio-calculator',
@@ -527,7 +527,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
   },
 
   // ================================================================
-  // PAGE 5 — SECANT RATIO CALCULATOR
+  // PAGE 5 - SECANT RATIO CALCULATOR
   // ================================================================
   {
     slug: 'secant-ratio-calculator',
@@ -647,7 +647,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
   },
 
   // ================================================================
-  // PAGE 6 — COSECANT RATIO CALCULATOR
+  // PAGE 6 - COSECANT RATIO CALCULATOR
   // ================================================================
   {
     slug: 'cosecant-ratio-calculator',

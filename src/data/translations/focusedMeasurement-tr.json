@@ -129,9 +129,9 @@
         ],
         "listTitle": "Bir bakışta üç kenar:",
         "listItems": [
-          "a dik kenarı — 90° açıyı oluşturan iki kenardan biri. Yönelime bağlı olarak dikey veya yatay kenar olabilir.",
-          "b dik kenarı — 90° açıyı oluşturan diğer kenar. a dik kenarı ile birlikte dik açıyı tanımlar.",
-          "c hipotenüsü — En uzun kenar, bir dar açı köşesinden diğerine, doğrudan dik açının karşısına uzanır.",
+          "a dik kenarı - 90° açıyı oluşturan iki kenardan biri. Yönelime bağlı olarak dikey veya yatay kenar olabilir.",
+          "b dik kenarı - 90° açıyı oluşturan diğer kenar. a dik kenarı ile birlikte dik açıyı tanımlar.",
+          "c hipotenüsü - En uzun kenar, bir dar açı köşesinden diğerine, doğrudan dik açının karşısına uzanır.",
           "Pisagor ilişkisi geçerlidir: a² + b² = c². Bu, üç değerinizin gerçekten bir dik üçgen oluşturduğunu doğrulamanızı sağlar."
         ]
       },
@@ -161,7 +161,7 @@
         "paragraphs": [
           "Farklı üçgenlerle pratik yapmak güven oluşturmaya yardımcı olur. Aşağıda, yaygın Pisagor üçlüleri ve ondalık değerleri kullanan üç çözümlü örnek daha verilmiştir."
         ],
-        "listTitle": "Örnek 1 — 5-12-13 üçgeni:",
+        "listTitle": "Örnek 1 - 5-12-13 üçgeni:",
         "listItems": [
           "Verilen: a = 5, b = 12, c = 13",
           "P = 5 + 12 + 13 = 30 birim",
@@ -169,7 +169,7 @@
         ]
       },
       {
-        "h2": "Örnek 2 — 8-15-17 Üçgeni",
+        "h2": "Örnek 2 - 8-15-17 Üçgeni",
         "paragraphs": [
           "Verilen: a = 8, b = 15, c = 17. Bu, tüm kenarların tam sayı olduğu başka bir Pisagor üçlüsüdür."
         ],
@@ -180,14 +180,14 @@
         ]
       },
       {
-        "h2": "Örnek 3 — Ondalık Kenarlar",
+        "h2": "Örnek 3 - Ondalık Kenarlar",
         "paragraphs": [
           "Tüm dik üçgenlerin düzgün tam sayı kenarları yoktur. Verilen: a = 2.5, b = 6, c = 6.5."
         ],
         "listItems": [
           "P = 2.5 + 6 + 6.5 = 15 birim",
           "Doğrulama: 2.5² + 6² = 6.25 + 36 = 42.25 = 6.5² ✓",
-          "Ondalık değerler aynı şekilde çalışır — bunları doğrudan toplayın."
+          "Ondalık değerler aynı şekilde çalışır - bunları doğrudan toplayın."
         ]
       },
       {
@@ -205,13 +205,13 @@
         ],
         "listTitle": "Yaygın gerçek dünya kullanımları:",
         "listItems": [
-          "Çit çekme — Üçgen bir bahçe yatağı veya köşe arsa, üç tarafın etrafına çit gerektirir. Çevre size kaç doğrusal feet çit alacağınızı söyler.",
-          "Pervaz ve kalıp — Üçgen bir mimari özellik (üçgen bir alınlık gibi), kenarları boyunca pervaz gerektirir. Çevre toplam pervaz uzunluğunu verir.",
-          "Tel ve halat — Dik açılı bir ekranı, afişi veya yelkeni çerçevelemek çevreye eşit halat, tel veya kenar gerektirir.",
-          "Koşu ve yürüyüş yolları — Dik açılı bir park alanının etrafındaki üçgen bir koşu parkuru veya yürüyüş yolu çevreye eşit bir toplam mesafeye sahiptir.",
-          "İnşaat yerleşimi — İnşaatçılar bir köşenin kare olup olmadığını kontrol etmek için 3-4-5 kuralını kullanırlar. Çevreyi bilmek ölçümleri doğrulamaya yardımcı olur.",
-          "El sanatları ve dikiş — Üçgen bir yastık veya flamaya etrafında bağlama, biye veya dantel çevre uzunluğunda malzeme gerektirir.",
-          "Harita ve anket hesaplamaları — Haritacılar üçgen arazi parsellerini ölçer ve sınır tanımlamaları ve mülk kayıtları için çevreye ihtiyaç duyarlar."
+          "Çit çekme - Üçgen bir bahçe yatağı veya köşe arsa, üç tarafın etrafına çit gerektirir. Çevre size kaç doğrusal feet çit alacağınızı söyler.",
+          "Pervaz ve kalıp - Üçgen bir mimari özellik (üçgen bir alınlık gibi), kenarları boyunca pervaz gerektirir. Çevre toplam pervaz uzunluğunu verir.",
+          "Tel ve halat - Dik açılı bir ekranı, afişi veya yelkeni çerçevelemek çevreye eşit halat, tel veya kenar gerektirir.",
+          "Koşu ve yürüyüş yolları - Dik açılı bir park alanının etrafındaki üçgen bir koşu parkuru veya yürüyüş yolu çevreye eşit bir toplam mesafeye sahiptir.",
+          "İnşaat yerleşimi - İnşaatçılar bir köşenin kare olup olmadığını kontrol etmek için 3-4-5 kuralını kullanırlar. Çevreyi bilmek ölçümleri doğrulamaya yardımcı olur.",
+          "El sanatları ve dikiş - Üçgen bir yastık veya flamaya etrafında bağlama, biye veya dantel çevre uzunluğunda malzeme gerektirir.",
+          "Harita ve anket hesaplamaları - Haritacılar üçgen arazi parsellerini ölçer ve sınır tanımlamaları ve mülk kayıtları için çevreye ihtiyaç duyarlar."
         ]
       },
       {
@@ -245,12 +245,12 @@
         ],
         "listTitle": "Bu tuzaklara dikkat edin:",
         "listItems": [
-          "Yalnızca iki kenar kullanmak — Çevre için üç kenar da gereklidir. Hipotenüsü veya bir dik kenarı unutmak eksik bir cevap verir.",
-          "Birimleri karıştırmak — Eğer a dik kenarı inç cinsinden ve b dik kenarı santimetre cinsinden ise toplamın hiçbir anlamı yoktur. Önce tek bir birime dönüştürün.",
-          "Çevreyi alanla karıştırmak — Çevre bir uzunluktur (birim cinsinden ölçülür), alan ise bir yüzeydir (birimkare cinsinden ölçülür). Problemin hangisini sorduğunu bildiğinizden emin olun.",
-          "Bir dik üçgen oluşturmayan kenarları kullanmak — a² + b² = c² olduğunu kontrol edin. Bu denklem geçerli değilse, üçgen bir dik üçgen değildir ve c gerçek bir hipotenüs değildir.",
-          "Çok erken yuvarlamak — Eğer bir kenar irrasyonel ise (örneğin √2), yuvarlama hatalarının birikmesini önlemek için son toplamaya kadar tam hassasiyeti koruyun.",
-          "Hipotenüsü bir dik kenar olarak girmek — Hipotenüs en uzun kenar olmalıdır. Hipotenüs alanına daha kısa bir değer yerleştirirseniz, diyagram yanlış görünecek ve Pisagor kontrolü başarısız olacaktır."
+          "Yalnızca iki kenar kullanmak - Çevre için üç kenar da gereklidir. Hipotenüsü veya bir dik kenarı unutmak eksik bir cevap verir.",
+          "Birimleri karıştırmak - Eğer a dik kenarı inç cinsinden ve b dik kenarı santimetre cinsinden ise toplamın hiçbir anlamı yoktur. Önce tek bir birime dönüştürün.",
+          "Çevreyi alanla karıştırmak - Çevre bir uzunluktur (birim cinsinden ölçülür), alan ise bir yüzeydir (birimkare cinsinden ölçülür). Problemin hangisini sorduğunu bildiğinizden emin olun.",
+          "Bir dik üçgen oluşturmayan kenarları kullanmak - a² + b² = c² olduğunu kontrol edin. Bu denklem geçerli değilse, üçgen bir dik üçgen değildir ve c gerçek bir hipotenüs değildir.",
+          "Çok erken yuvarlamak - Eğer bir kenar irrasyonel ise (örneğin √2), yuvarlama hatalarının birikmesini önlemek için son toplamaya kadar tam hassasiyeti koruyun.",
+          "Hipotenüsü bir dik kenar olarak girmek - Hipotenüs en uzun kenar olmalıdır. Hipotenüs alanına daha kısa bir değer yerleştirirseniz, diyagram yanlış görünecek ve Pisagor kontrolü başarısız olacaktır."
         ]
       },
       {
@@ -298,7 +298,7 @@
       },
       {
         "question": "P = a + b + c formülündeki her değişkenin anlamı nedir?",
-        "answer": "P, çevredir (toplam sınır uzunluğu). a, dik üçgenin bir dik kenarıdır. b, diğer dik kenardır. c ise hipotenüstür — dik açının karşısında yer alan en uzun kenar. İki dik kenar 90° köşeyi oluşturur."
+        "answer": "P, çevredir (toplam sınır uzunluğu). a, dik üçgenin bir dik kenarıdır. b, diğer dik kenardır. c ise hipotenüstür - dik açının karşısında yer alan en uzun kenar. İki dik kenar 90° köşeyi oluşturur."
       },
       {
         "question": "Çevreyi sadece iki kenarla bulabilir miyim?",
@@ -326,7 +326,7 @@
       },
       {
         "question": "Bir dik üçgenin çevresi tek sayı olabilir mi?",
-        "answer": "Evet. Çevre herhangi bir pozitif sayı olabilir — tam sayı, ondalık veya irrasyonel. Örneğin, 1 ve 1 dik kenarlarına sahip bir dik üçgenin hipotenüsü √2 ≈ 1.414'tür, bu da ne tam sayı ne de rasyonel olan ≈ 3.414'lük bir çevre verir."
+        "answer": "Evet. Çevre herhangi bir pozitif sayı olabilir - tam sayı, ondalık veya irrasyonel. Örneğin, 1 ve 1 dik kenarlarına sahip bir dik üçgenin hipotenüsü √2 ≈ 1.414'tür, bu da ne tam sayı ne de rasyonel olan ≈ 3.414'lük bir çevre verir."
       },
       {
         "question": "Neden hipotenüs her zaman en uzun kenardır?",

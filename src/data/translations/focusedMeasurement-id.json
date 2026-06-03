@@ -84,7 +84,7 @@
       "h2": "Rumus Keliling Segitiga Siku-siku",
       "paragraphs": [
         "Keliling suatu poligon adalah panjang total batasnya. Untuk segitiga siku-siku, batasnya terdiri dari tiga sisi lurus: dua kaki (a dan b) yang membentuk sudut 90°, dan satu sisi miring (c) yang membentang dari sudut siku-siku ke titik sudut di depannya.",
-        "Karena segitiga siku-siku hanya memiliki tiga sisi, rumus kelilingnya adalah jumlah yang paling sederhana. Tidak diperlukan trigonometri, akar kuadrat, atau eksponen — cukup penjumlahan."
+        "Karena segitiga siku-siku hanya memiliki tiga sisi, rumus kelilingnya adalah jumlah yang paling sederhana. Tidak diperlukan trigonometri, akar kuadrat, atau eksponen - cukup penjumlahan."
       ],
       "formulas": [
         "P = a + b + c"
@@ -129,9 +129,9 @@
         ],
         "listTitle": "Sekilas tentang ketiga sisi:",
         "listItems": [
-          "Kaki a — Salah satu dari dua sisi yang membentuk sudut 90°. Bisa sisi vertikal atau horizontal, tergantung orientasinya.",
-          "Kaki b — Sisi lain yang membentuk sudut 90°. Bersama dengan kaki a, ini menentukan sudut siku-siku.",
-          "Sisi miring c — Sisi terpanjang, membentang dari satu titik sudut lancip ke titik sudut lancip lainnya, berhadapan langsung dengan sudut siku-siku.",
+          "Kaki a - Salah satu dari dua sisi yang membentuk sudut 90°. Bisa sisi vertikal atau horizontal, tergantung orientasinya.",
+          "Kaki b - Sisi lain yang membentuk sudut 90°. Bersama dengan kaki a, ini menentukan sudut siku-siku.",
+          "Sisi miring c - Sisi terpanjang, membentang dari satu titik sudut lancip ke titik sudut lancip lainnya, berhadapan langsung dengan sudut siku-siku.",
           "Hubungan Pythagoras berlaku: a² + b² = c². Ini memungkinkan Anda memverifikasi bahwa ketiga nilai Anda benar-benar membentuk segitiga siku-siku."
         ]
       },
@@ -161,7 +161,7 @@
         "paragraphs": [
           "Berlatih dengan segitiga yang berbeda membantu membangun kepercayaan diri. Di bawah ini adalah tiga contoh yang berhasil menggunakan tripel Pythagoras dan nilai desimal yang umum."
         ],
-        "listTitle": "Contoh 1 — Segitiga 5-12-13:",
+        "listTitle": "Contoh 1 - Segitiga 5-12-13:",
         "listItems": [
           "Diketahui: a = 5, b = 12, c = 13",
           "P = 5 + 12 + 13 = 30 units",
@@ -169,7 +169,7 @@
         ]
       },
       {
-        "h2": "Contoh 2 — Segitiga 8-15-17",
+        "h2": "Contoh 2 - Segitiga 8-15-17",
         "paragraphs": [
           "Diketahui: a = 8, b = 15, c = 17. Ini adalah tripel Pythagoras lainnya yang semua sisinya adalah bilangan bulat."
         ],
@@ -180,14 +180,14 @@
         ]
       },
       {
-        "h2": "Contoh 3 — Sisi Desimal",
+        "h2": "Contoh 3 - Sisi Desimal",
         "paragraphs": [
           "Tidak semua segitiga siku-siku mempunyai sisi-sisi yang tersusun rapi. Diketahui: a = 2,5, b = 6, c = 6,5."
         ],
         "listItems": [
           "P = 2,5 + 6 + 6,5 = 15 satuan",
           "Verifikasi: 2,5² + 6² = 6,25 + 36 = 42,25 = 6,5² ✓",
-          "Nilai desimal bekerja dengan cara yang sama — cukup tambahkan secara langsung."
+          "Nilai desimal bekerja dengan cara yang sama - cukup tambahkan secara langsung."
         ]
       },
       {
@@ -206,12 +206,12 @@
         "listTitle": "Penggunaan umum di dunia nyata:",
         "listItems": [
           "Pagar - Tempat tidur taman berbentuk segitiga atau lahan sudut membutuhkan pagar di ketiga sisinya. Perimeter memberi tahu Anda berapa banyak pagar linier yang harus dibeli.",
-          "Trim dan cetakan — Fitur arsitektur segitiga (seperti ujung atap pelana) perlu dipangkas di sepanjang tepinya. Perimeter memberikan total panjang trim.",
-          "Kawat dan tali — Membingkai layar, spanduk, atau layar bersudut siku-siku memerlukan tali, kawat, atau tepian yang sama dengan kelilingnya.",
-          "Jalur joging dan jalan kaki — Lintasan lari berbentuk segitiga atau jalur jalan kaki yang mengelilingi area taman berbentuk siku-siku memiliki jarak total yang sama dengan kelilingnya.",
-          "Tata letak konstruksi — Pembangun menggunakan aturan 3-4-5 untuk memeriksa apakah suatu sudut berbentuk persegi. Mengetahui keliling membantu memverifikasi pengukuran.",
-          "Kerajinan dan menjahit — Mengikat, memipih, atau merenda di sekeliling bantalan atau panji berbentuk segitiga membutuhkan bahan sepanjang keliling.",
-          "Perhitungan peta dan survei — Surveyor mengukur bidang tanah berbentuk segitiga dan memerlukan keliling untuk deskripsi batas dan catatan properti."
+          "Trim dan cetakan - Fitur arsitektur segitiga (seperti ujung atap pelana) perlu dipangkas di sepanjang tepinya. Perimeter memberikan total panjang trim.",
+          "Kawat dan tali - Membingkai layar, spanduk, atau layar bersudut siku-siku memerlukan tali, kawat, atau tepian yang sama dengan kelilingnya.",
+          "Jalur joging dan jalan kaki - Lintasan lari berbentuk segitiga atau jalur jalan kaki yang mengelilingi area taman berbentuk siku-siku memiliki jarak total yang sama dengan kelilingnya.",
+          "Tata letak konstruksi - Pembangun menggunakan aturan 3-4-5 untuk memeriksa apakah suatu sudut berbentuk persegi. Mengetahui keliling membantu memverifikasi pengukuran.",
+          "Kerajinan dan menjahit - Mengikat, memipih, atau merenda di sekeliling bantalan atau panji berbentuk segitiga membutuhkan bahan sepanjang keliling.",
+          "Perhitungan peta dan survei - Surveyor mengukur bidang tanah berbentuk segitiga dan memerlukan keliling untuk deskripsi batas dan catatan properti."
         ]
       },
       {
@@ -226,7 +226,7 @@
         "h2": "Tip Konversi Satuan",
         "paragraphs": [
           "Hasil keliling hanya bermakna jika ketiga sisi masukan menggunakan satuan yang sama. Jika pengukuran Anda berada dalam satuan yang berbeda, konversikan terlebih dahulu. Kalkulator menyertakan pemilih unit untuk setiap kolom masukan untuk menangani konversi secara otomatis.",
-          "Ingatlah bahwa keliling adalah pengukuran linier, jadi konversinya mengikuti rasio panjang standar — bukan rasio luas. Misalnya, untuk mengonversi dari kaki ke meter, kalikan dengan 0,3048 (bukan 0,3048²)."
+          "Ingatlah bahwa keliling adalah pengukuran linier, jadi konversinya mengikuti rasio panjang standar - bukan rasio luas. Misalnya, untuk mengonversi dari kaki ke meter, kalikan dengan 0,3048 (bukan 0,3048²)."
         ],
         "listTitle": "Pengingat konversi cepat:",
         "listItems": [
@@ -245,12 +245,12 @@
         ],
         "listTitle": "Waspadai jebakan berikut:",
         "listItems": [
-          "Hanya menggunakan dua sisi — Keliling membutuhkan ketiga sisinya. Melupakan sisi miring atau salah satu kaki memberikan jawaban yang tidak lengkap.",
-          "Satuan pencampur — Jika bagian a dalam inci dan bagian b dalam sentimeter, jumlahnya tidak ada artinya. Konversikan ke satuan terlebih dahulu.",
-          "Membingungkan keliling dengan luas — Keliling adalah panjang (diukur dalam satuan), sedangkan luas adalah permukaan (diukur dalam satuan persegi). Pastikan Anda tahu masalah mana yang ditanyakan.",
-          "Menggunakan sisi-sisi yang tidak membentuk segitiga siku-siku — Periksa apakah a² + b² = c². Jika persamaan ini tidak berlaku, berarti segitiga tersebut bukan segitiga siku-siku dan c bukan sisi miring sebenarnya.",
-          "Pembulatan terlalu dini — Jika satu sisi tidak rasional (seperti √2), pertahankan presisi penuh hingga penjumlahan terakhir untuk menghindari akumulasi kesalahan pembulatan.",
-          "Memasuki sisi miring sebagai kaki — Sisi miring harus merupakan sisi terpanjang. Jika Anda menempatkan nilai yang lebih pendek di bidang sisi miring, diagram akan terlihat salah dan pemeriksaan Pythagoras akan gagal."
+          "Hanya menggunakan dua sisi - Keliling membutuhkan ketiga sisinya. Melupakan sisi miring atau salah satu kaki memberikan jawaban yang tidak lengkap.",
+          "Satuan pencampur - Jika bagian a dalam inci dan bagian b dalam sentimeter, jumlahnya tidak ada artinya. Konversikan ke satuan terlebih dahulu.",
+          "Membingungkan keliling dengan luas - Keliling adalah panjang (diukur dalam satuan), sedangkan luas adalah permukaan (diukur dalam satuan persegi). Pastikan Anda tahu masalah mana yang ditanyakan.",
+          "Menggunakan sisi-sisi yang tidak membentuk segitiga siku-siku - Periksa apakah a² + b² = c². Jika persamaan ini tidak berlaku, berarti segitiga tersebut bukan segitiga siku-siku dan c bukan sisi miring sebenarnya.",
+          "Pembulatan terlalu dini - Jika satu sisi tidak rasional (seperti √2), pertahankan presisi penuh hingga penjumlahan terakhir untuk menghindari akumulasi kesalahan pembulatan.",
+          "Memasuki sisi miring sebagai kaki - Sisi miring harus merupakan sisi terpanjang. Jika Anda menempatkan nilai yang lebih pendek di bidang sisi miring, diagram akan terlihat salah dan pemeriksaan Pythagoras akan gagal."
         ]
       },
       {
@@ -298,7 +298,7 @@
       },
       {
         "question": "Apa arti setiap variabel pada P = a + b + c?",
-        "answer": "P adalah keliling (panjang batas total). a adalah salah satu kaki segitiga siku-siku. b adalah kaki lainnya. c adalah sisi miring — sisi terpanjang yang berhadapan dengan sudut siku-siku. Kedua kakinya membentuk sudut 90°."
+        "answer": "P adalah keliling (panjang batas total). a adalah salah satu kaki segitiga siku-siku. b adalah kaki lainnya. c adalah sisi miring - sisi terpanjang yang berhadapan dengan sudut siku-siku. Kedua kakinya membentuk sudut 90°."
       },
       {
         "question": "Bisakah saya mencari keliling yang hanya memiliki dua sisi?",
@@ -326,7 +326,7 @@
       },
       {
         "question": "Apakah keliling segitiga siku-siku bisa berupa bilangan ganjil?",
-        "answer": "Ya. Keliling dapat berupa bilangan positif apa pun — bilangan bulat, desimal, atau irasional. Misalnya, segitiga siku-siku dengan kaki 1 dan 1 memiliki sisi miring √2 ≈ 1,414, sehingga kelilingnya ≈ 3,414, yang bukan bilangan bulat dan bukan bilangan rasional."
+        "answer": "Ya. Keliling dapat berupa bilangan positif apa pun - bilangan bulat, desimal, atau irasional. Misalnya, segitiga siku-siku dengan kaki 1 dan 1 memiliki sisi miring √2 ≈ 1,414, sehingga kelilingnya ≈ 3,414, yang bukan bilangan bulat dan bukan bilangan rasional."
       },
       {
         "question": "Mengapa sisi miring selalu merupakan sisi terpanjang?",

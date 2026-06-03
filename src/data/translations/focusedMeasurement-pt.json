@@ -84,7 +84,7 @@
       "h2": "Fórmula do Perímetro do Triângulo Retângulo",
       "paragraphs": [
         "O perímetro de qualquer polígono é o comprimento total do seu limite. Para um triângulo retângulo, o limite consiste exatamente em três lados retos: dois catetos (a e b) que formam o ângulo de 90° e uma hipotenusa (c) que se estende do ângulo reto até o vértice oposto.",
-        "Como um triângulo retângulo possui apenas três lados, a fórmula do perímetro é a soma mais simples possível. Não são necessárias trigonometria, raízes quadradas ou expoentes — apenas adição."
+        "Como um triângulo retângulo possui apenas três lados, a fórmula do perímetro é a soma mais simples possível. Não são necessárias trigonometria, raízes quadradas ou expoentes - apenas adição."
       ],
       "formulas": [
         "P = a + b + c"
@@ -129,9 +129,9 @@
         ],
         "listTitle": "Os três lados num relance:",
         "listItems": [
-          "Cateto a — Um dos dois lados que forma o ângulo de 90°. Pode ser o lado vertical ou horizontal, dependendo da orientação.",
-          "Cateto b — O outro lado que forma o ângulo de 90°. Junto com o cateto a, define o ângulo reto.",
-          "Hipotenusa c — O lado mais longo, estendendo-se de um vértice de ângulo agudo ao outro, diretamente oposto ao ângulo reto.",
+          "Cateto a - Um dos dois lados que forma o ângulo de 90°. Pode ser o lado vertical ou horizontal, dependendo da orientação.",
+          "Cateto b - O outro lado que forma o ângulo de 90°. Junto com o cateto a, define o ângulo reto.",
+          "Hipotenusa c - O lado mais longo, estendendo-se de um vértice de ângulo agudo ao outro, diretamente oposto ao ângulo reto.",
           "A relação pitagórica se mantém: a² + b² = c². Isso permite que você verifique se seus três valores realmente formam um triângulo retângulo."
         ]
       },
@@ -161,7 +161,7 @@
         "paragraphs": [
           "Praticar com triângulos diferentes ajuda a aumentar a confiança. Abaixo estão mais três exemplos resolvidos usando trios pitagóricos comuns e valores decimais."
         ],
-        "listTitle": "Exemplo 1 — O triângulo 5-12-13:",
+        "listTitle": "Exemplo 1 - O triângulo 5-12-13:",
         "listItems": [
           "Dados: a = 5, b = 12, c = 13",
           "P = 5 + 12 + 13 = 30 unidades",
@@ -169,7 +169,7 @@
         ]
       },
       {
-        "h2": "Exemplo 2 — O Triângulo 8-15-17",
+        "h2": "Exemplo 2 - O Triângulo 8-15-17",
         "paragraphs": [
           "Dados: a = 8, b = 15, c = 17. Este é outro trio pitagórico onde todos os lados são números inteiros."
         ],
@@ -180,14 +180,14 @@
         ]
       },
       {
-        "h2": "Exemplo 3 — Lados Decimais",
+        "h2": "Exemplo 3 - Lados Decimais",
         "paragraphs": [
           "Nem todos os triângulos retângulos têm lados inteiros perfeitos. Dados: a = 2.5, b = 6, c = 6.5."
         ],
         "listItems": [
           "P = 2.5 + 6 + 6.5 = 15 unidades",
           "Verificação: 2.5² + 6² = 6.25 + 36 = 42.25 = 6.5² ✓",
-          "Os valores decimais funcionam da mesma forma — basta somá-los diretamente."
+          "Os valores decimais funcionam da mesma forma - basta somá-los diretamente."
         ]
       },
       {
@@ -205,13 +205,13 @@
         ],
         "listTitle": "Usos comuns no mundo real:",
         "listItems": [
-          "Cercas — Um canteiro triangular ou um lote de esquina exige cerca nos três lados. O perímetro indica quantos pés ou metros lineares de cerca comprar.",
-          "Acabamentos e molduras — Uma característica arquitetônica triangular (como uma empena) precisa de acabamento ao longo de suas bordas. O perímetro dá o comprimento total do acabamento.",
-          "Fio e corda — Enquadrar uma exibição em ângulo reto, banner ou vela requer corda, fio ou borda igual ao perímetro.",
-          "Caminhos de corrida e caminhada — Uma pista de corrida triangular ou um caminho a pé ao redor de uma área de parque com formato de triângulo retângulo tem uma distância total igual ao perímetro.",
-          "Layout de construção — Os construtores usam a regra 3-4-5 para verificar se um canto é reto. Conhecer o perímetro ajuda a verificar as medidas.",
-          "Artesanato e costura — Fita, viés ou renda ao redor de uma almofada ou bandeirola triangular requer material do comprimento do perímetro.",
-          "Mapas e cálculos topográficos — Os topógrafos medem lotes triangulares de terra e precisam do perímetro para descrições de limites e registros de propriedades."
+          "Cercas - Um canteiro triangular ou um lote de esquina exige cerca nos três lados. O perímetro indica quantos pés ou metros lineares de cerca comprar.",
+          "Acabamentos e molduras - Uma característica arquitetônica triangular (como uma empena) precisa de acabamento ao longo de suas bordas. O perímetro dá o comprimento total do acabamento.",
+          "Fio e corda - Enquadrar uma exibição em ângulo reto, banner ou vela requer corda, fio ou borda igual ao perímetro.",
+          "Caminhos de corrida e caminhada - Uma pista de corrida triangular ou um caminho a pé ao redor de uma área de parque com formato de triângulo retângulo tem uma distância total igual ao perímetro.",
+          "Layout de construção - Os construtores usam a regra 3-4-5 para verificar se um canto é reto. Conhecer o perímetro ajuda a verificar as medidas.",
+          "Artesanato e costura - Fita, viés ou renda ao redor de uma almofada ou bandeirola triangular requer material do comprimento do perímetro.",
+          "Mapas e cálculos topográficos - Os topógrafos medem lotes triangulares de terra e precisam do perímetro para descrições de limites e registros de propriedades."
         ]
       },
       {
@@ -226,7 +226,7 @@
         "h2": "Dicas de Conversão de Unidades",
         "paragraphs": [
           "O resultado do perímetro só faz sentido quando os três lados fornecidos usam a mesma unidade. Se suas medições estiverem em unidades diferentes, converta-as primeiro. A calculadora inclui um seletor de unidades para cada campo de entrada para lidar automaticamente com as conversões.",
-          "Lembre-se de que o perímetro é uma medida linear, então as conversões seguem as proporções de comprimento padrão — não as proporções de área. Por exemplo, para converter de pés para metros, multiplique por 0.3048 (não por 0.3048²)."
+          "Lembre-se de que o perímetro é uma medida linear, então as conversões seguem as proporções de comprimento padrão - não as proporções de área. Por exemplo, para converter de pés para metros, multiplique por 0.3048 (não por 0.3048²)."
         ],
         "listTitle": "Lembretes rápidos de conversão:",
         "listItems": [
@@ -245,12 +245,12 @@
         ],
         "listTitle": "Cuidado com estas armadilhas:",
         "listItems": [
-          "Usar apenas dois lados — O perímetro requer todos os três lados. Esquecer a hipotenusa ou um cateto dá uma resposta incompleta.",
-          "Misturar unidades — Se o cateto a está em polegadas e o cateto b está em centímetros, a soma não tem significado. Converta para uma única unidade primeiro.",
-          "Confundir perímetro com área — O perímetro é um comprimento (medido em unidades), enquanto a área é uma superfície (medida em unidades quadradas). Certifique-se de saber qual deles o problema pede.",
-          "Usar lados que não formam um triângulo retângulo — Verifique se a² + b² = c². Se essa equação não se sustentar, o triângulo não é um triângulo retângulo e c não é uma verdadeira hipotenusa.",
-          "Arredondar muito cedo — Se um lado for irracional (como √2), mantenha precisão total até a adição final para evitar acumular erros de arredondamento.",
-          "Inserir a hipotenusa como um cateto — A hipotenusa deve ser o lado mais longo. Se você colocar um valor menor no campo da hipotenusa, o diagrama ficará incorreto e a verificação pitagórica falhará."
+          "Usar apenas dois lados - O perímetro requer todos os três lados. Esquecer a hipotenusa ou um cateto dá uma resposta incompleta.",
+          "Misturar unidades - Se o cateto a está em polegadas e o cateto b está em centímetros, a soma não tem significado. Converta para uma única unidade primeiro.",
+          "Confundir perímetro com área - O perímetro é um comprimento (medido em unidades), enquanto a área é uma superfície (medida em unidades quadradas). Certifique-se de saber qual deles o problema pede.",
+          "Usar lados que não formam um triângulo retângulo - Verifique se a² + b² = c². Se essa equação não se sustentar, o triângulo não é um triângulo retângulo e c não é uma verdadeira hipotenusa.",
+          "Arredondar muito cedo - Se um lado for irracional (como √2), mantenha precisão total até a adição final para evitar acumular erros de arredondamento.",
+          "Inserir a hipotenusa como um cateto - A hipotenusa deve ser o lado mais longo. Se você colocar um valor menor no campo da hipotenusa, o diagrama ficará incorreto e a verificação pitagórica falhará."
         ]
       },
       {
@@ -298,7 +298,7 @@
       },
       {
         "question": "O que cada variável significa em P = a + b + c?",
-        "answer": "P é o perímetro (comprimento total do limite). a é um cateto do triângulo retângulo. b é o outro cateto. c é a hipotenusa — o lado mais longo que fica em frente ao ângulo reto. Os dois catetos formam o canto de 90°."
+        "answer": "P é o perímetro (comprimento total do limite). a é um cateto do triângulo retângulo. b é o outro cateto. c é a hipotenusa - o lado mais longo que fica em frente ao ângulo reto. Os dois catetos formam o canto de 90°."
       },
       {
         "question": "Posso encontrar o perímetro com apenas dois lados?",
@@ -326,7 +326,7 @@
       },
       {
         "question": "O perímetro de um triângulo retângulo pode ser um número ímpar?",
-        "answer": "Sim. O perímetro pode ser qualquer número positivo — inteiro, decimal ou irracional. Por exemplo, um triângulo retângulo com catetos 1 e 1 tem hipotenusa √2 ≈ 1.414, dando perímetro ≈ 3.414, que não é inteiro nem racional."
+        "answer": "Sim. O perímetro pode ser qualquer número positivo - inteiro, decimal ou irracional. Por exemplo, um triângulo retângulo com catetos 1 e 1 tem hipotenusa √2 ≈ 1.414, dando perímetro ≈ 3.414, que não é inteiro nem racional."
       },
       {
         "question": "Por que a hipotenusa é sempre o lado mais longo?",

@@ -84,7 +84,7 @@
       "h2": "Formula Perimeter Segi Tiga Bersudut Tegak",
       "paragraphs": [
         "Perimeter mana-mana poligon ialah jumlah panjang sempadannya. Bagi segi tiga bersudut tegak, sempadannya terdiri daripada tepat tiga sisi lurus: dua kaki (a dan b) yang membentuk sudut 90°, dan satu hipotenus (c) yang membentang dari sudut tegak ke bucu yang bertentangan.",
-        "Oleh kerana segi tiga bersudut tegak hanya mempunyai tiga sisi, formula perimeter ialah hasil tambah termudah yang mungkin. Tiada trigonometri, punca kuasa dua, atau eksponen diperlukan — hanya penambahan."
+        "Oleh kerana segi tiga bersudut tegak hanya mempunyai tiga sisi, formula perimeter ialah hasil tambah termudah yang mungkin. Tiada trigonometri, punca kuasa dua, atau eksponen diperlukan - hanya penambahan."
       ],
       "formulas": [
         "P = a + b + c"
@@ -129,9 +129,9 @@
         ],
         "listTitle": "Sekilas pandang tentang ketiga-tiga sisi:",
         "listItems": [
-          "Kaki a — Salah satu daripada dua sisi yang membentuk sudut 90°. Ia boleh menjadi sisi menegak atau mendatar, bergantung pada orientasi.",
-          "Kaki b — Sisi lain yang membentuk sudut 90°. Bersama dengan kaki a, ia mentakrifkan sudut tegak.",
-          "Hipotenus c — Sisi terpanjang, yang membentang dari satu bucu sudut tirus ke bucu yang lain, bertentangan secara langsung dengan sudut tegak.",
+          "Kaki a - Salah satu daripada dua sisi yang membentuk sudut 90°. Ia boleh menjadi sisi menegak atau mendatar, bergantung pada orientasi.",
+          "Kaki b - Sisi lain yang membentuk sudut 90°. Bersama dengan kaki a, ia mentakrifkan sudut tegak.",
+          "Hipotenus c - Sisi terpanjang, yang membentang dari satu bucu sudut tirus ke bucu yang lain, bertentangan secara langsung dengan sudut tegak.",
           "Hubungan Pythagoras kekal: a² + b² = c². Ini membolehkan anda mengesahkan bahawa tiga nilai anda sebenarnya membentuk segi tiga bersudut tegak."
         ]
       },
@@ -161,7 +161,7 @@
         "paragraphs": [
           "Berlatih dengan segi tiga yang berbeza membantu membina keyakinan. Di bawah ialah tiga lagi contoh penyelesaian menggunakan trirangkap Pythagoras dan nilai perpuluhan yang biasa."
         ],
-        "listTitle": "Contoh 1 — Segi tiga 5-12-13:",
+        "listTitle": "Contoh 1 - Segi tiga 5-12-13:",
         "listItems": [
           "Diberi: a = 5, b = 12, c = 13",
           "P = 5 + 12 + 13 = 30 unit",
@@ -169,7 +169,7 @@
         ]
       },
       {
-        "h2": "Contoh 2 — Segi Tiga 8-15-17",
+        "h2": "Contoh 2 - Segi Tiga 8-15-17",
         "paragraphs": [
           "Diberi: a = 8, b = 15, c = 17. Ini ialah trirangkap Pythagoras yang lain di mana semua sisinya ialah nombor bulat."
         ],
@@ -180,14 +180,14 @@
         ]
       },
       {
-        "h2": "Contoh 3 — Sisi Perpuluhan",
+        "h2": "Contoh 3 - Sisi Perpuluhan",
         "paragraphs": [
           "Bukan semua segi tiga bersudut tegak mempunyai sisi nombor bulat yang kemas. Diberi: a = 2.5, b = 6, c = 6.5."
         ],
         "listItems": [
           "P = 2.5 + 6 + 6.5 = 15 unit",
           "Pengesahan: 2.5² + 6² = 6.25 + 36 = 42.25 = 6.5² ✓",
-          "Nilai perpuluhan berfungsi dengan cara yang sama — cuma tambahkan secara langsung."
+          "Nilai perpuluhan berfungsi dengan cara yang sama - cuma tambahkan secara langsung."
         ]
       },
       {
@@ -205,13 +205,13 @@
         ],
         "listTitle": "Kegunaan dunia nyata yang biasa:",
         "listItems": [
-          "Pemagaran — Batas taman segi tiga atau lot sudut memerlukan pagar di sekeliling ketiga-tiga sisi. Perimeter memberitahu anda berapa banyak kaki linear pagar yang perlu dibeli.",
-          "Kemasan dan acuan — Ciri seni bina segi tiga (seperti hujung tebeng bumbung) memerlukan kemasan di sepanjang pinggirnya. Perimeter memberikan jumlah panjang kemasan.",
-          "Dawai dan tali — Membingkai paparan, sepanduk atau layar bersudut tegak memerlukan tali, dawai atau tepian yang sama dengan perimeter.",
-          "Laluan berjoging dan berjalan kaki — Trek larian atau laluan berjalan kaki segi tiga di sekitar kawasan taman bersudut tegak mempunyai jumlah jarak yang sama dengan perimeter.",
-          "Susun atur pembinaan — Pembina menggunakan peraturan 3-4-5 untuk memeriksa sama ada sudut itu persegi. Mengetahui perimeter membantu mengesahkan ukuran.",
-          "Kraf dan jahitan — Pengikat, paip, atau renda di sekeliling kusyen atau panji segi tiga memerlukan bahan sepanjang perimeter.",
-          "Pengiraan peta dan ukur — Juruukur mengukur plot tanah segi tiga dan memerlukan perimeter untuk perihalan sempadan dan rekod hartanah."
+          "Pemagaran - Batas taman segi tiga atau lot sudut memerlukan pagar di sekeliling ketiga-tiga sisi. Perimeter memberitahu anda berapa banyak kaki linear pagar yang perlu dibeli.",
+          "Kemasan dan acuan - Ciri seni bina segi tiga (seperti hujung tebeng bumbung) memerlukan kemasan di sepanjang pinggirnya. Perimeter memberikan jumlah panjang kemasan.",
+          "Dawai dan tali - Membingkai paparan, sepanduk atau layar bersudut tegak memerlukan tali, dawai atau tepian yang sama dengan perimeter.",
+          "Laluan berjoging dan berjalan kaki - Trek larian atau laluan berjalan kaki segi tiga di sekitar kawasan taman bersudut tegak mempunyai jumlah jarak yang sama dengan perimeter.",
+          "Susun atur pembinaan - Pembina menggunakan peraturan 3-4-5 untuk memeriksa sama ada sudut itu persegi. Mengetahui perimeter membantu mengesahkan ukuran.",
+          "Kraf dan jahitan - Pengikat, paip, atau renda di sekeliling kusyen atau panji segi tiga memerlukan bahan sepanjang perimeter.",
+          "Pengiraan peta dan ukur - Juruukur mengukur plot tanah segi tiga dan memerlukan perimeter untuk perihalan sempadan dan rekod hartanah."
         ]
       },
       {
@@ -226,7 +226,7 @@
         "h2": "Petua Penukaran Unit",
         "paragraphs": [
           "Hasil perimeter hanya bermakna apabila ketiga-tiga sisi input menggunakan unit yang sama. Jika ukuran anda menggunakan unit yang berbeza, tukarkannya terlebih dahulu. Kalkulator menyertakan pemilih unit untuk setiap medan input bagi mengendalikan penukaran secara automatik.",
-          "Ingat bahawa perimeter ialah ukuran linear, jadi penukaran mengikut nisbah panjang piawai — bukan nisbah luas. Sebagai contoh, untuk menukar kaki kepada meter, darabkan dengan 0.3048 (bukan dengan 0.3048²)."
+          "Ingat bahawa perimeter ialah ukuran linear, jadi penukaran mengikut nisbah panjang piawai - bukan nisbah luas. Sebagai contoh, untuk menukar kaki kepada meter, darabkan dengan 0.3048 (bukan dengan 0.3048²)."
         ],
         "listTitle": "Peringatan penukaran pantas:",
         "listItems": [
@@ -245,12 +245,12 @@
         ],
         "listTitle": "Berhati-hati dengan perangkap ini:",
         "listItems": [
-          "Menggunakan hanya dua sisi — Perimeter memerlukan ketiga-tiga sisi. Terlupa hipotenus atau satu kaki memberikan jawapan yang tidak lengkap.",
-          "Mencampurkan unit — Jika kaki a dalam in dan kaki b dalam cm, jumlahnya tiada makna. Tukar kepada satu unit terlebih dahulu.",
-          "Mengelirukan perimeter dengan luas — Perimeter ialah panjang (diukur dalam unit), manakala luas ialah permukaan (diukur dalam unit persegi). Pastikan anda tahu yang mana satu diminta oleh soalan.",
-          "Menggunakan sisi yang tidak membentuk segi tiga bersudut tegak — Semak bahawa a² + b² = c². Jika persamaan ini tidak sah, segi tiga itu bukanlah segi tiga bersudut tegak dan c bukan hipotenus yang sebenar.",
-          "Membundar terlalu awal — Jika satu sisi ialah bukan nisbah (seperti √2), kekalkan ketepatan penuh sehingga penambahan terakhir untuk mengelakkan ralat pembundaran terkumpul.",
-          "Memasukkan hipotenus sebagai kaki — Hipotenus mestilah sisi terpanjang. Jika anda meletakkan nilai yang lebih pendek dalam medan hipotenus, gambar rajah akan kelihatan salah dan semakan Pythagoras akan gagal."
+          "Menggunakan hanya dua sisi - Perimeter memerlukan ketiga-tiga sisi. Terlupa hipotenus atau satu kaki memberikan jawapan yang tidak lengkap.",
+          "Mencampurkan unit - Jika kaki a dalam in dan kaki b dalam cm, jumlahnya tiada makna. Tukar kepada satu unit terlebih dahulu.",
+          "Mengelirukan perimeter dengan luas - Perimeter ialah panjang (diukur dalam unit), manakala luas ialah permukaan (diukur dalam unit persegi). Pastikan anda tahu yang mana satu diminta oleh soalan.",
+          "Menggunakan sisi yang tidak membentuk segi tiga bersudut tegak - Semak bahawa a² + b² = c². Jika persamaan ini tidak sah, segi tiga itu bukanlah segi tiga bersudut tegak dan c bukan hipotenus yang sebenar.",
+          "Membundar terlalu awal - Jika satu sisi ialah bukan nisbah (seperti √2), kekalkan ketepatan penuh sehingga penambahan terakhir untuk mengelakkan ralat pembundaran terkumpul.",
+          "Memasukkan hipotenus sebagai kaki - Hipotenus mestilah sisi terpanjang. Jika anda meletakkan nilai yang lebih pendek dalam medan hipotenus, gambar rajah akan kelihatan salah dan semakan Pythagoras akan gagal."
         ]
       },
       {
@@ -298,7 +298,7 @@
       },
       {
         "question": "Apakah maksud setiap pemboleh ubah dalam P = a + b + c?",
-        "answer": "P ialah perimeter (jumlah panjang sempadan). a ialah satu kaki segi tiga bersudut tegak. b ialah kaki yang satu lagi. c ialah hipotenus — sisi terpanjang yang bertentangan dengan sudut tegak. Kedua-dua kaki membentuk sudut 90°."
+        "answer": "P ialah perimeter (jumlah panjang sempadan). a ialah satu kaki segi tiga bersudut tegak. b ialah kaki yang satu lagi. c ialah hipotenus - sisi terpanjang yang bertentangan dengan sudut tegak. Kedua-dua kaki membentuk sudut 90°."
       },
       {
         "question": "Bolehkah saya mencari perimeter dengan hanya dua sisi?",
@@ -326,7 +326,7 @@
       },
       {
         "question": "Bolehkah perimeter segi tiga bersudut tegak menjadi nombor ganjil?",
-        "answer": "Ya. Perimeter boleh menjadi sebarang nombor positif — integer, perpuluhan, atau bukan nisbah. Sebagai contoh, segi tiga bersudut tegak dengan kaki 1 dan 1 mempunyai hipotenus √2 ≈ 1.414, memberikan perimeter ≈ 3.414, yang bukan integer atau nisbah."
+        "answer": "Ya. Perimeter boleh menjadi sebarang nombor positif - integer, perpuluhan, atau bukan nisbah. Sebagai contoh, segi tiga bersudut tegak dengan kaki 1 dan 1 mempunyai hipotenus √2 ≈ 1.414, memberikan perimeter ≈ 3.414, yang bukan integer atau nisbah."
       },
       {
         "question": "Mengapakah hipotenus sentiasa menjadi sisi terpanjang?",

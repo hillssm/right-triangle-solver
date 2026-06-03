@@ -663,9 +663,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Los tres lados de un vistazo:",
           "listItems": [
-            "Cateto a — Uno de los dos lados que forma el ángulo de 90°. Puede ser el lado vertical u horizontal, dependiendo de la orientación.",
-            "Cateto b — El otro lado que forma el ángulo de 90°. Junto con el cateto a, define el ángulo recto.",
-            "Hipotenusa c — El lado más largo, que se extiende desde un vértice de ángulo agudo hasta el otro, directamente opuesto al ángulo recto.",
+            "Cateto a - Uno de los dos lados que forma el ángulo de 90°. Puede ser el lado vertical u horizontal, dependiendo de la orientación.",
+            "Cateto b - El otro lado que forma el ángulo de 90°. Junto con el cateto a, define el ángulo recto.",
+            "Hipotenusa c - El lado más largo, que se extiende desde un vértice de ángulo agudo hasta el otro, directamente opuesto al ángulo recto.",
             "La relación pitagórica se mantiene: a² + b² = c². Esto te permite verificar que tus tres valores realmente forman un triángulo rectángulo."
           ]
         },
@@ -695,7 +695,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "paragraphs": [
             "Practicar con diferentes triángulos ayuda a ganar confianza. A continuación, se muestran tres ejemplos más resueltos usando ternas pitagóricas comunes y valores decimales."
           ],
-          "listTitle": "Ejemplo 1 — El triángulo 5-12-13:",
+          "listTitle": "Ejemplo 1 - El triángulo 5-12-13:",
           "listItems": [
             "Dado: a = 5, b = 12, c = 13",
             "P = 5 + 12 + 13 = 30 unidades",
@@ -703,7 +703,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Ejemplo 2 — El Triángulo 8-15-17",
+          "h2": "Ejemplo 2 - El Triángulo 8-15-17",
           "paragraphs": [
             "Dado: a = 8, b = 15, c = 17. Esta es otra terna pitagórica donde todos los lados son números enteros."
           ],
@@ -714,7 +714,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Ejemplo 3 — Lados Decimales",
+          "h2": "Ejemplo 3 - Lados Decimales",
           "paragraphs": [
             "No todos los triángulos rectángulos tienen lados con números enteros limpios. Dado: a = 2.5, b = 6, c = 6.5."
           ],
@@ -739,13 +739,13 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Usos comunes en el mundo real:",
           "listItems": [
-            "Cercado — Un jardín triangular o un lote en esquina requiere cercar los tres lados. El perímetro te indica cuántos ft lineales de cerca comprar.",
-            "Molduras y recortes — Un elemento arquitectónico triangular (como un hastial) necesita molduras a lo largo de sus bordes. El perímetro proporciona la longitud total de la moldura.",
-            "Alambre y cuerda — Enmarcar un panel publicitario en ángulo recto, un estandarte o una vela requiere cuerda, alambre o bordes iguales al perímetro.",
-            "Senderos para trotar o caminar — Una pista para correr o un sendero que bordea un área de parque triangular en ángulo recto tiene una distancia total igual al perímetro.",
-            "Diseño de construcción — Los constructores usan la regla 3-4-5 para verificar si una esquina es perpendicular. Conocer el perímetro ayuda a verificar las medidas.",
-            "Manualidades y costura — Los ribetes, cordones o encajes alrededor de un cojín o banderín triangular requieren material del tamaño del perímetro.",
-            "Cálculos de mapas y topografía — Los topógrafos miden parcelas de tierra triangulares y necesitan el perímetro para descripciones de límites y registros de propiedad."
+            "Cercado - Un jardín triangular o un lote en esquina requiere cercar los tres lados. El perímetro te indica cuántos ft lineales de cerca comprar.",
+            "Molduras y recortes - Un elemento arquitectónico triangular (como un hastial) necesita molduras a lo largo de sus bordes. El perímetro proporciona la longitud total de la moldura.",
+            "Alambre y cuerda - Enmarcar un panel publicitario en ángulo recto, un estandarte o una vela requiere cuerda, alambre o bordes iguales al perímetro.",
+            "Senderos para trotar o caminar - Una pista para correr o un sendero que bordea un área de parque triangular en ángulo recto tiene una distancia total igual al perímetro.",
+            "Diseño de construcción - Los constructores usan la regla 3-4-5 para verificar si una esquina es perpendicular. Conocer el perímetro ayuda a verificar las medidas.",
+            "Manualidades y costura - Los ribetes, cordones o encajes alrededor de un cojín o banderín triangular requieren material del tamaño del perímetro.",
+            "Cálculos de mapas y topografía - Los topógrafos miden parcelas de tierra triangulares y necesitan el perímetro para descripciones de límites y registros de propiedad."
           ]
         },
         {
@@ -779,12 +779,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Presta atención a estos errores comunes:",
           "listItems": [
-            "Usar solo dos lados — El perímetro requiere los tres lados. Olvidar la hipotenusa o un cateto da una respuesta incompleta.",
-            "Mezclar unidades — Si el cateto a está en in y el cateto b está en cm, la suma no tiene sentido. Convierte a una sola unidad primero.",
-            "Confundir el perímetro con el área — El perímetro es una longitud (medida en unidades), mientras que el área es una superficie (medida en unidades cuadradas). Asegúrate de saber cuál pide el problema.",
-            "Usar lados que no forman un triángulo rectángulo — Comprueba que a² + b² = c². Si esta ecuación no se cumple, el triángulo no es un triángulo rectángulo y c no es una verdadera hipotenusa.",
-            "Redondear demasiado pronto — Si un lado es irracional (como √2), mantén la precisión completa hasta la suma final para evitar acumular errores de redondeo.",
-            "Introducir la hipotenusa como un cateto — La hipotenusa debe ser el lado más largo. Si colocas un valor más corto en el campo de la hipotenusa, el diagrama se verá mal y la comprobación pitagórica fallará."
+            "Usar solo dos lados - El perímetro requiere los tres lados. Olvidar la hipotenusa o un cateto da una respuesta incompleta.",
+            "Mezclar unidades - Si el cateto a está en in y el cateto b está en cm, la suma no tiene sentido. Convierte a una sola unidad primero.",
+            "Confundir el perímetro con el área - El perímetro es una longitud (medida en unidades), mientras que el área es una superficie (medida en unidades cuadradas). Asegúrate de saber cuál pide el problema.",
+            "Usar lados que no forman un triángulo rectángulo - Comprueba que a² + b² = c². Si esta ecuación no se cumple, el triángulo no es un triángulo rectángulo y c no es una verdadera hipotenusa.",
+            "Redondear demasiado pronto - Si un lado es irracional (como √2), mantén la precisión completa hasta la suma final para evitar acumular errores de redondeo.",
+            "Introducir la hipotenusa como un cateto - La hipotenusa debe ser el lado más largo. Si colocas un valor más corto en el campo de la hipotenusa, el diagrama se verá mal y la comprobación pitagórica fallará."
           ]
         },
         {
@@ -832,7 +832,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "¿Qué significa cada variable en P = a + b + c?",
-          "answer": "P es el perímetro (longitud total del límite). a es un cateto del triángulo rectángulo. b es el otro cateto. c es la hipotenusa — el lado más largo que se encuentra opuesto al ángulo recto. Los dos catetos forman el ángulo de 90°."
+          "answer": "P es el perímetro (longitud total del límite). a es un cateto del triángulo rectángulo. b es el otro cateto. c es la hipotenusa - el lado más largo que se encuentra opuesto al ángulo recto. Los dos catetos forman el ángulo de 90°."
         },
         {
           "question": "¿Puedo calcular el perímetro con solo dos lados?",
@@ -1237,11 +1237,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           },
           "b": {
             "label": "b = second leg",
-            "description": "Катет b — это другая сторона прямого угла, она складывается с а и с."
+            "description": "Катет b - это другая сторона прямого угла, она складывается с а и с."
           },
           "c": {
             "label": "c = hypotenuse",
-            "description": "Гипотенуза c — самая длинная сторона, противолежащая прямому углу, завершающая границу."
+            "description": "Гипотенуза c - самая длинная сторона, противолежащая прямому углу, завершающая границу."
           }
         },
         "result": {
@@ -1257,8 +1257,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
       "formulaSection": {
         "h2": "Формула периметра прямоугольного треугольника",
         "paragraphs": [
-          "Периметр любого многоугольника — это общая длина его границы. Для прямоугольного треугольника граница состоит ровно из трёх прямых сторон: двух катетов (a и b), образующих угол 90°, и одной гипотенузы (c), проходящей поперек от прямого угла к противоположной вершине.",
-          "Поскольку у прямоугольного треугольника только три стороны, формула периметра представляет собой простейшую возможную сумму. Никакой тригонометрии, квадратных корней или показателей степени не требуется — просто сложение."
+          "Периметр любого многоугольника - это общая длина его границы. Для прямоугольного треугольника граница состоит ровно из трёх прямых сторон: двух катетов (a и b), образующих угол 90°, и одной гипотенузы (c), проходящей поперек от прямого угла к противоположной вершине.",
+          "Поскольку у прямоугольного треугольника только три стороны, формула периметра представляет собой простейшую возможную сумму. Никакой тригонометрии, квадратных корней или показателей степени не требуется - просто сложение."
         ],
         "formulas": [
           "P = a + b + c"
@@ -1267,7 +1267,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
       "howTo": {
         "h2": "Как найти периметр прямоугольного треугольника",
         "steps": [
-          "Назовите все три стороны прямоугольного треугольника. Обозначьте две более короткие стороны катетом а и катетом b, а самую длинную сторону — гипотенузой с.",
+          "Назовите все три стороны прямоугольного треугольника. Обозначьте две более короткие стороны катетом а и катетом b, а самую длинную сторону - гипотенузой с.",
           "Убедитесь, что для всех трех измерений используются одни и те же единицы измерения. При необходимости преобразуйте перед вводом значений.",
           "Введите ногу а в первое поле ввода калькулятора.",
           "Введите ногу b во второе поле ввода.",
@@ -1290,9 +1290,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "h2": "Что такое периметр прямоугольного треугольника?",
           "paragraphs": [
-            "Периметр прямоугольного треугольника — это общее расстояние, которое вы бы прошли, если бы прошли по всем трем ребрам треугольника, начиная с одной вершины и возвращаясь в ту же вершину. Он представляет собой внешнюю границу треугольной формы.",
+            "Периметр прямоугольного треугольника - это общее расстояние, которое вы бы прошли, если бы прошли по всем трем ребрам треугольника, начиная с одной вершины и возвращаясь в ту же вершину. Он представляет собой внешнюю границу треугольной формы.",
             "Каждый прямоугольный треугольник имеет три стороны: два катета, сходящихся под прямым углом (90°), и одну гипотенузу, лежащую напротив прямого угла. Гипотенуза всегда самая длинная из трёх сторон. Сложив длины всех трех сторон, вы получите периметр.",
-            "Периметр — это одномерное измерение, выраженное в линейных единицах (например, сантиметрах, метрах, футах или дюймах). Это отличается от площади, которая измеряет двумерное пространство внутри треугольника и выражается в квадратных единицах."
+            "Периметр - это одномерное измерение, выраженное в линейных единицах (например, сантиметрах, метрах, футах или дюймах). Это отличается от площади, которая измеряет двумерное пространство внутри треугольника и выражается в квадратных единицах."
           ]
         },
         {
@@ -1303,9 +1303,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Три стороны вкратце:",
           "listItems": [
-            "Полоса а — одна из двух сторон, образующих угол 90°. Это может быть вертикальная или горизонтальная сторона, в зависимости от ориентации.",
-            "Нога b — другая сторона, образующая угол 90°. Вместе с катетом а он определяет прямой угол.",
-            "Гипотенуза с — Самая длинная сторона, простирающаяся от одной вершины острого угла к другой, прямо противоположной прямому углу.",
+            "Полоса а - одна из двух сторон, образующих угол 90°. Это может быть вертикальная или горизонтальная сторона, в зависимости от ориентации.",
+            "Нога b - другая сторона, образующая угол 90°. Вместе с катетом а он определяет прямой угол.",
+            "Гипотенуза с - Самая длинная сторона, простирающаяся от одной вершины острого угла к другой, прямо противоположной прямому углу.",
             "Соотношение Пифагора имеет место: a² + b² = c². Это позволит вам убедиться, что ваши три значения действительно образуют прямоугольный треугольник."
           ]
         },
@@ -1345,7 +1345,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "h2": "Пример 2. Треугольник 8-15-17.",
           "paragraphs": [
-            "Дано: a = 8, b = 15, c = 17. Это еще одна пифагорова тройка, все стороны которой — целые числа."
+            "Дано: a = 8, b = 15, c = 17. Это еще одна пифагорова тройка, все стороны которой - целые числа."
           ],
           "listItems": [
             "P = 8 + 15 + 17 = 40 units",
@@ -1354,14 +1354,14 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Пример 3 — Десятичные стороны",
+          "h2": "Пример 3 - Десятичные стороны",
           "paragraphs": [
             "Не все прямоугольные треугольники имеют аккуратные целые стороны. Дано: а = 2,5, b = 6, с = 6,5."
           ],
           "listItems": [
             "Р = 2,5 + 6 + 6,5 = 15 единиц",
             "Проверка: 2,5² + 6² = 6,25 + 36 = 42,25 = 6,5² ✓",
-            "Десятичные значения работают таким же образом — просто добавьте их напрямую."
+            "Десятичные значения работают таким же образом - просто добавьте их напрямую."
           ]
         },
         {
@@ -1391,7 +1391,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "h2": "Связь между периметром и полупериметром",
           "paragraphs": [
-            "Полупериметр (s) равен ровно половине периметра: s = P/2 = (a + b + c)/2. Хотя периметр дает вам общую длину границы, полупериметр — это удобное значение, используемое в более сложных формулах.",
+            "Полупериметр (s) равен ровно половине периметра: s = P/2 = (a + b + c)/2. Хотя периметр дает вам общую длину границы, полупериметр - это удобное значение, используемое в более сложных формулах.",
             "Полупериметр появляется в формуле Герона для площади треугольника: A = √[s(s–a)(s–b)(s–c)]. Он также используется для расчета внутреннего радиуса (радиуса вписанной окружности): r = A/s. Таким образом, периметр является отправной точкой для нескольких важных расчетов треугольника.",
             "Если вы уже рассчитали периметр с помощью этого инструмента, вы можете найти полупериметр, просто разделив результат на 2, или воспользоваться нашим специальным калькулятором полупериметра."
           ]
@@ -1400,7 +1400,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "h2": "Советы по преобразованию единиц измерения",
           "paragraphs": [
             "Результат по периметру имеет смысл только в том случае, если все три входные стороны используют одну и ту же единицу измерения. Если ваши измерения выражены в разных единицах, сначала преобразуйте их. Калькулятор включает в себя переключатель единиц измерения для каждого поля ввода для автоматической обработки преобразований.",
-            "Помните, что периметр — это линейное измерение, поэтому преобразования выполняются в соответствии со стандартными соотношениями длин, а не соотношениями площадей. Например, чтобы перевести футы в метры, умножьте на 0,3048 (а не на 0,3048²)."
+            "Помните, что периметр - это линейное измерение, поэтому преобразования выполняются в соответствии со стандартными соотношениями длин, а не соотношениями площадей. Например, чтобы перевести футы в метры, умножьте на 0,3048 (а не на 0,3048²)."
           ],
           "listTitle": "Напоминания о быстрой конверсии:",
           "listItems": [
@@ -1420,11 +1420,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listTitle": "Остерегайтесь этих ловушек:",
           "listItems": [
             "Использование только двух сторон. Для периметра требуются все три стороны. Забвение гипотенузы или одного катета дает неполный ответ.",
-            "Единицы смешивания. Если участок a указан в дюймах, а участок b — в сантиметрах, сумма не имеет значения. Сначала преобразуйте в единую единицу.",
-            "Путаница периметра с площадью. Периметр — это длина (измеряется в квадратных единицах), а площадь — это поверхность (измеряется в квадратных единицах). Убедитесь, что вы знаете, о каком из них идет речь.",
+            "Единицы смешивания. Если участок a указан в дюймах, а участок b - в сантиметрах, сумма не имеет значения. Сначала преобразуйте в единую единицу.",
+            "Путаница периметра с площадью. Периметр - это длина (измеряется в квадратных единицах), а площадь - это поверхность (измеряется в квадратных единицах). Убедитесь, что вы знаете, о каком из них идет речь.",
             "Использование сторон, не образующих прямоугольный треугольник. Убедитесь, что a² + b² = c². Если это уравнение не выполняется, то треугольник не является прямоугольным и c не является истинной гипотенузой.",
             "Слишком раннее округление. Если одна сторона иррациональна (например, √2), сохраняйте полную точность до последнего сложения, чтобы избежать накопления ошибок округления.",
-            "Ввод гипотенузы как катета — Гипотенуза должна быть самой длинной стороной. Если вы поместите в поле гипотенузы меньшее значение, диаграмма будет выглядеть неправильно, и проверка Пифагора не удастся."
+            "Ввод гипотенузы как катета - Гипотенуза должна быть самой длинной стороной. Если вы поместите в поле гипотенузы меньшее значение, диаграмма будет выглядеть неправильно, и проверка Пифагора не удастся."
           ]
         },
         {
@@ -1468,11 +1468,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "По какой формуле находится периметр прямоугольного треугольника?",
-          "answer": "Формула периметра: P = a + b + c, где a и b — два катета (стороны, образующие угол 90 °), а c — гипотенуза (самая длинная сторона, противоположная прямому углу). Просто сложите длины всех трех сторон."
+          "answer": "Формула периметра: P = a + b + c, где a и b - два катета (стороны, образующие угол 90 °), а c - гипотенуза (самая длинная сторона, противоположная прямому углу). Просто сложите длины всех трех сторон."
         },
         {
           "question": "Что означает каждая переменная в P = a + b + c?",
-          "answer": "P — периметр (общая длина границы). а — один катет прямоугольного треугольника. б — другая нога. с — гипотенуза — самая длинная сторона, лежащая напротив прямого угла. Две ножки образуют угол 90°."
+          "answer": "P - периметр (общая длина границы). а - один катет прямоугольного треугольника. б - другая нога. с - гипотенуза - самая длинная сторона, лежащая напротив прямого угла. Две ножки образуют угол 90°."
         },
         {
           "question": "Можно ли найти периметр только с двумя сторонами?",
@@ -1488,11 +1488,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Каков периметр прямоугольного треугольника 3-4-5?",
-          "answer": "The perimeter is 3 + 4 + 5 = 12 units. Треугольник 3-4-5 — это наименьшая пифагорова тройка с целыми сторонами. Любая масштабированная версия (например, 6-8-10 или 9-12-15) сохраняет то же соотношение с пропорциональным масштабированием периметра."
+          "answer": "The perimeter is 3 + 4 + 5 = 12 units. Треугольник 3-4-5 - это наименьшая пифагорова тройка с целыми сторонами. Любая масштабированная версия (например, 6-8-10 или 9-12-15) сохраняет то же соотношение с пропорциональным масштабированием периметра."
         },
         {
           "question": "Как проверить, что мой треугольник на самом деле является прямоугольным?",
-          "answer": "Убедитесь, что a² + b² = c², где c — самая длинная сторона. Если это уравнение верно, то треугольник имеет угол 90° и является прямоугольным треугольником. Если это не так, формула периметра все равно работает, но треугольник не является прямоугольным."
+          "answer": "Убедитесь, что a² + b² = c², где c - самая длинная сторона. Если это уравнение верно, то треугольник имеет угол 90° и является прямоугольным треугольником. Если это не так, формула периметра все равно работает, но треугольник не является прямоугольным."
         },
         {
           "question": "Какая связь между периметром и полупериметром?",
@@ -1500,7 +1500,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Может ли периметр прямоугольного треугольника быть нечетным числом?",
-          "answer": "Да. Периметром может быть любое положительное число — целое, десятичное или иррациональное. Например, прямоугольный треугольник с катетами 1 и 1 имеет гипотенузу √2 ≈ 1,414, что дает периметр ≈ 3,414, что не является ни целым, ни рациональным числом."
+          "answer": "Да. Периметром может быть любое положительное число - целое, десятичное или иррациональное. Например, прямоугольный треугольник с катетами 1 и 1 имеет гипотенузу √2 ≈ 1,414, что дает периметр ≈ 3,414, что не является ни целым, ни рациональным числом."
         },
         {
           "question": "Why is the hypotenuse always the longest side?",
@@ -1560,7 +1560,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         ]
       },
       "diagram": {
-        "h2": "Диаграмма прямоугольного треугольника: полупериметр — это половина границы",
+        "h2": "Диаграмма прямоугольного треугольника: полупериметр - это половина границы",
         "intro": "На диаграмме показаны те же длины трех сторон, которые использовались для периметра, но результат разделен на 2. Полупериметр по-прежнему основан на внешнем крае треугольника, а не на внутренней площади.",
         "caption": "Диаграмма полупериметра прямоугольного треугольника, показывающая сторону a, сторону b, гипотенузу c и формулу s = (a + b + c) / 2.",
         "formulaLabel": "s = (a + b + c) / 2",
@@ -1568,7 +1568,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         "sides": {
           "a": {
             "label": "a = first leg",
-            "description": "Катет a — это одна из двух перпендикулярных сторон, включенных в сумму до деления на 2."
+            "description": "Катет a - это одна из двух перпендикулярных сторон, включенных в сумму до деления на 2."
           },
           "b": {
             "label": "b = second leg",
@@ -1576,7 +1576,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           },
           "c": {
             "label": "c = hypotenuse",
-            "description": "Гипотенуза c — самая длинная сторона, и ее необходимо включить до того, как сумма будет разделена пополам."
+            "description": "Гипотенуза c - самая длинная сторона, и ее необходимо включить до того, как сумма будет разделена пополам."
           }
         },
         "result": {
@@ -1584,7 +1584,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "description": "Калькулятор сначала складывает a + b + c, затем делит полученный периметр на 2."
         },
         "notes": [
-          "Полупериметр — это линейное измерение, поэтому для него используются те же единицы измерения, что и для длин сторон.",
+          "Полупериметр - это линейное измерение, поэтому для него используются те же единицы измерения, что и для длин сторон.",
           "Если P уже известно, используйте s = P/2; если P неизвестен, используйте s = (a + b + c)/2.",
           "Для правильного прямоугольного треугольника c должна быть самой длинной стороной и должна удовлетворять условиям a^2 + b^2 = c^2."
         ]
@@ -1594,7 +1594,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         "paragraphs": [
           "Полупериметр треугольника равен половине его периметра. Периметр прямоугольного треугольника равен P = a + b + c, поэтому полупериметр равен s = (a + b + c)/2.",
           "Буква s обычно используется, потому что полупериметр встречается во многих формулах компактной геометрии. Даже если треугольник прямоугольный, s полезен в качестве моста между длинами сторон, площадью и измерениями окружности, такими как внутренний радиус.",
-          "Как и периметр, полупериметр измеряется в линейных единицах. Если стороны указаны в метрах, то s — в метрах. Если стороны указаны в дюймах, s — в дюймах."
+          "Как и периметр, полупериметр измеряется в линейных единицах. Если стороны указаны в метрах, то s - в метрах. Если стороны указаны в дюймах, s - в дюймах."
         ],
         "formulas": [
           "P = a + b + c",
@@ -1623,14 +1623,14 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "s = \\frac{12}{2}",
           "s = 6"
         ],
-        "answer": "Полупериметр равен 6 единицам. Полный периметр равен 12 единицам, а s — ровно половина от этой суммы."
+        "answer": "Полупериметр равен 6 единицам. Полный периметр равен 12 единицам, а s - ровно половина от этой суммы."
       },
       "extraSections": [
         {
           "h2": "Что означает полупериметр?",
           "paragraphs": [
             "Полупериметр буквально означает половину периметра. Вместо многократного написания (a + b + c)/2 в более длинных формулах геометрия часто использует более короткий символ s.",
-            "Для прямоугольного треугольника это значение особенно удобно, поскольку обозначения сторон уже стандартизированы: а и b — катеты, а с — гипотенуза. Если известны длины этих трех сторон, s становится одним компактным числом, суммирующим половину длины границы."
+            "Для прямоугольного треугольника это значение особенно удобно, поскольку обозначения сторон уже стандартизированы: а и b - катеты, а с - гипотенуза. Если известны длины этих трех сторон, s становится одним компактным числом, суммирующим половину длины границы."
           ]
         },
         {
@@ -1650,7 +1650,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "h2": "Почему полупериметр имеет значение в геометрии прямоугольного треугольника",
           "paragraphs": [
-            "Полупериметр — это больше, чем ярлык. Это стандартное вспомогательное значение, используемое в формулах, связывающих длины сторон с измерениями площади и круга.",
+            "Полупериметр - это больше, чем ярлык. Это стандартное вспомогательное значение, используемое в формулах, связывающих длины сторон с измерениями площади и круга.",
             "Для любого треугольника формула Герона использует s для вычисления площади с трех сторон: A = sqrt(s(s-a)(s-b)(s-c)). Для прямоугольного треугольника вы часто используете A = (a x b)/2, но формула Герона по-прежнему полезна для проверки.",
             "Полупериметр также соединяется с внутренним радиусом. Во многих формулах треугольника площадь равна произведению радиуса на полупериметр: A = r x s. Как только s известно, становится легче найти r или проверить результат радиуса."
           ],
@@ -1667,7 +1667,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "paragraphs": [
             "Эти примеры показывают, как одна и та же формула работает для троек целых чисел и длин десятичных чисел. Ключевым моментом является сложение всех трех сторон перед разделением."
           ],
-          "listTitle": "Пример 1 — треугольник 5-12-13:",
+          "listTitle": "Пример 1 - треугольник 5-12-13:",
           "listItems": [
             "Дано: а = 5, b = 12, c = 13.",
             "s = (5 + 12 + 13) / 2",
@@ -1714,7 +1714,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "h2": "Советы по единицам измерения полупериметра",
           "paragraphs": [
-            "Полупериметр — это длина, поэтому он подчиняется обычным правилам преобразования единиц длины. Она не измеряется в квадратных единицах.",
+            "Полупериметр - это длина, поэтому он подчиняется обычным правилам преобразования единиц длины. Она не измеряется в квадратных единицах.",
             "Если на боковых входах используются разные единицы измерения, сначала преобразуйте их или последовательно используйте переключатели единиц измерения калькулятора. Непосредственное добавление футов, дюймов и сантиметров привело бы к бессмысленному результату."
           ],
           "listTitle": "Помните о следующих правилах для отрядов:",
@@ -1779,15 +1779,15 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "По какой формуле полупериметр прямоугольного треугольника?",
-          "answer": "Формула: s = (a + b + c)/2, где a и b — катеты прямоугольного треугольника, а с — гипотенуза. Сложите длины всех трех сторон, затем разделите сумму на 2."
+          "answer": "Формула: s = (a + b + c)/2, где a и b - катеты прямоугольного треугольника, а с - гипотенуза. Сложите длины всех трех сторон, затем разделите сумму на 2."
         },
         {
           "question": "Что означает полупериметр?",
           "answer": "Полупериметр означает половину периметра треугольника. Если полный периметр равен P, то s = P/2. Если длины сторон известны непосредственно, s = (a + b + c)/2."
         },
         {
-          "question": "Полупериметр — это то же самое, что периметр?",
-          "answer": "Нет. Периметр — это полная длина границы вокруг треугольника, а полупериметр — половина этой длины границы. Они связаны соотношением P = 2s."
+          "question": "Полупериметр - это то же самое, что периметр?",
+          "answer": "Нет. Периметр - это полная длина границы вокруг треугольника, а полупериметр - половина этой длины границы. Они связаны соотношением P = 2s."
         },
         {
           "question": "Почему используется полупериметр?",
@@ -1803,7 +1803,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Используются ли в полупериметре квадратные единицы?",
-          "answer": "Нет. Полупериметр — это длина, поэтому в нем используются линейные единицы, такие как см, м, дюйм или фут. Для площади используются квадратные единицы, а для полупериметра — нет."
+          "answer": "Нет. Полупериметр - это длина, поэтому в нем используются линейные единицы, такие как см, м, дюйм или фут. Для площади используются квадратные единицы, а для полупериметра - нет."
         },
         {
           "question": "Как я могу проверить правильность ответа на полупериметр?",
@@ -1898,7 +1898,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         "h2": "Formule du Périmètre d'un Triangle Rectangle",
         "paragraphs": [
           "Le périmètre de tout polygone est la longueur totale de sa limite. Pour un triangle rectangle, la limite se compose d'exactement trois côtés droits : deux côtés de l'angle droit (a et b) qui forment l'angle de 90° et une hypoténuse (c) qui s'étend de l'angle droit au sommet opposé.",
-          "Puisqu'un triangle rectangle ne comporte que trois côtés, la formule du périmètre est la somme la plus simple possible. Aucune trigonométrie, racine carrée ou exposant n'est nécessaire — juste une addition."
+          "Puisqu'un triangle rectangle ne comporte que trois côtés, la formule du périmètre est la somme la plus simple possible. Aucune trigonométrie, racine carrée ou exposant n'est nécessaire - juste une addition."
         ],
         "formulas": [
           "P = a + b + c"
@@ -1943,9 +1943,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Les trois côtés en un coup d'œil :",
           "listItems": [
-            "Côté a — L'un des deux côtés qui forment l'angle à 90°. Ce peut être le côté vertical ou horizontal, selon l'orientation.",
-            "Côté b — L'autre côté qui forme l'angle à 90°. Avec le côté a, il définit l'angle droit.",
-            "Hypoténuse c — Le côté le plus long, s'étendant d'un sommet d'angle aigu à l'autre, directement opposé à l'angle droit.",
+            "Côté a - L'un des deux côtés qui forment l'angle à 90°. Ce peut être le côté vertical ou horizontal, selon l'orientation.",
+            "Côté b - L'autre côté qui forme l'angle à 90°. Avec le côté a, il définit l'angle droit.",
+            "Hypoténuse c - Le côté le plus long, s'étendant d'un sommet d'angle aigu à l'autre, directement opposé à l'angle droit.",
             "La relation pythagoricienne est vérifiée : a² + b² = c². Cela vous permet de vérifier que vos trois valeurs forment bien un triangle rectangle."
           ]
         },
@@ -1975,7 +1975,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "paragraphs": [
             "S'entraîner avec différents triangles aide à prendre confiance. Voici trois autres exemples résolus utilisant des triplets pythagoriciens courants et des valeurs décimales."
           ],
-          "listTitle": "Exemple 1 — Le triangle 5-12-13 :",
+          "listTitle": "Exemple 1 - Le triangle 5-12-13 :",
           "listItems": [
             "Étant donné : a = 5, b = 12, c = 13",
             "P = 5 + 12 + 13 = 30 unités",
@@ -1983,7 +1983,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Exemple 2 — Le Triangle 8-15-17",
+          "h2": "Exemple 2 - Le Triangle 8-15-17",
           "paragraphs": [
             "Étant donné : a = 8, b = 15, c = 17. Il s'agit d'un autre triplet pythagoricien où tous les côtés sont des nombres entiers."
           ],
@@ -1994,14 +1994,14 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Exemple 3 — Côtés Décimaux",
+          "h2": "Exemple 3 - Côtés Décimaux",
           "paragraphs": [
             "Tous les triangles rectangles n'ont pas des côtés en nombres entiers. Étant donné : a = 2.5, b = 6, c = 6.5."
           ],
           "listItems": [
             "P = 2.5 + 6 + 6.5 = 15 unités",
             "Vérification : 2.5² + 6² = 6.25 + 36 = 42.25 = 6.5² ✓",
-            "Les valeurs décimales fonctionnent de la même manière — il suffit de les additionner directement."
+            "Les valeurs décimales fonctionnent de la même manière - il suffit de les additionner directement."
           ]
         },
         {
@@ -2019,13 +2019,13 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Utilisations courantes dans le monde réel :",
           "listItems": [
-            "Clôtures — Un parterre de jardin triangulaire ou un terrain d'angle nécessite une clôture sur les trois côtés. Le périmètre vous indique combien de ft de clôture linéaire acheter.",
-            "Garnitures et moulures — Un élément architectural triangulaire (comme un pignon) a besoin de moulures le long de ses bords. Le périmètre donne la longueur totale de la moulure.",
-            "Fil et corde — L'encadrement d'un affichage à angle droit, d'une bannière ou d'une voile nécessite une corde, un fil ou une bordure égale au périmètre.",
-            "Pistes de jogging et de marche — Une piste de course triangulaire ou un sentier pédestre autour d'un parc à angle droit a une distance totale égale au périmètre.",
-            "Tracé de construction — Les constructeurs utilisent la règle 3-4-5 pour vérifier si un coin est carré. Connaître le périmètre aide à vérifier les mesures.",
-            "Artisanat et couture — La reliure, le passepoil ou la dentelle autour d'un coussin ou d'un fanion triangulaire nécessite un matériau d'une longueur égale au périmètre.",
-            "Calculs cartographiques et topographiques — Les géomètres mesurent des parcelles de terrain triangulaires et ont besoin du périmètre pour les descriptions de limites et les registres de propriété."
+            "Clôtures - Un parterre de jardin triangulaire ou un terrain d'angle nécessite une clôture sur les trois côtés. Le périmètre vous indique combien de ft de clôture linéaire acheter.",
+            "Garnitures et moulures - Un élément architectural triangulaire (comme un pignon) a besoin de moulures le long de ses bords. Le périmètre donne la longueur totale de la moulure.",
+            "Fil et corde - L'encadrement d'un affichage à angle droit, d'une bannière ou d'une voile nécessite une corde, un fil ou une bordure égale au périmètre.",
+            "Pistes de jogging et de marche - Une piste de course triangulaire ou un sentier pédestre autour d'un parc à angle droit a une distance totale égale au périmètre.",
+            "Tracé de construction - Les constructeurs utilisent la règle 3-4-5 pour vérifier si un coin est carré. Connaître le périmètre aide à vérifier les mesures.",
+            "Artisanat et couture - La reliure, le passepoil ou la dentelle autour d'un coussin ou d'un fanion triangulaire nécessite un matériau d'une longueur égale au périmètre.",
+            "Calculs cartographiques et topographiques - Les géomètres mesurent des parcelles de terrain triangulaires et ont besoin du périmètre pour les descriptions de limites et les registres de propriété."
           ]
         },
         {
@@ -2059,12 +2059,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Faites attention à ces pièges :",
           "listItems": [
-            "N'utiliser que deux côtés — Le périmètre nécessite les trois côtés. Oublier l'hypoténuse ou un côté donne une réponse incomplète.",
-            "Mélanger les unités — Si le côté a est en in et le côté b est en cm, la somme n'a aucun sens. Convertissez d'abord en une seule unité.",
-            "Confondre le périmètre avec la surface — Le périmètre est une longueur (mesurée en unités), tandis que la surface est une zone (mesurée en unités carrées). Assurez-vous de savoir ce que le problème demande.",
-            "Utiliser des côtés qui ne forment pas un triangle rectangle — Vérifiez que a² + b² = c². Si cette équation n'est pas vérifiée, le triangle n'est pas rectangle et c n'est pas une véritable hypoténuse.",
-            "Arrondir trop tôt — Si un côté est irrationnel (comme √2), conservez la précision complète jusqu'à l'addition finale pour éviter d'accumuler les erreurs d'arrondi.",
-            "Entrer l'hypoténuse comme un côté de l'angle droit — L'hypoténuse doit être le côté le plus long. Si vous placez une valeur plus courte dans le champ de l'hypoténuse, le diagramme sera erroné et la vérification pythagoricienne échouera."
+            "N'utiliser que deux côtés - Le périmètre nécessite les trois côtés. Oublier l'hypoténuse ou un côté donne une réponse incomplète.",
+            "Mélanger les unités - Si le côté a est en in et le côté b est en cm, la somme n'a aucun sens. Convertissez d'abord en une seule unité.",
+            "Confondre le périmètre avec la surface - Le périmètre est une longueur (mesurée en unités), tandis que la surface est une zone (mesurée en unités carrées). Assurez-vous de savoir ce que le problème demande.",
+            "Utiliser des côtés qui ne forment pas un triangle rectangle - Vérifiez que a² + b² = c². Si cette équation n'est pas vérifiée, le triangle n'est pas rectangle et c n'est pas une véritable hypoténuse.",
+            "Arrondir trop tôt - Si un côté est irrationnel (comme √2), conservez la précision complète jusqu'à l'addition finale pour éviter d'accumuler les erreurs d'arrondi.",
+            "Entrer l'hypoténuse comme un côté de l'angle droit - L'hypoténuse doit être le côté le plus long. Si vous placez une valeur plus courte dans le champ de l'hypoténuse, le diagramme sera erroné et la vérification pythagoricienne échouera."
           ]
         },
         {
@@ -2112,7 +2112,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Que signifie chaque variable dans P = a + b + c ?",
-          "answer": "P est le périmètre (longueur totale de la limite). a est un côté du triangle rectangle. b est l'autre côté de l'angle droit. c est l'hypoténuse — le côté le plus long qui se trouve à l'opposé de l'angle droit. Les deux côtés a et b forment le coin à 90°."
+          "answer": "P est le périmètre (longueur totale de la limite). a est un côté du triangle rectangle. b est l'autre côté de l'angle droit. c est l'hypoténuse - le côté le plus long qui se trouve à l'opposé de l'angle droit. Les deux côtés a et b forment le coin à 90°."
         },
         {
           "question": "Puis-je trouver le périmètre avec seulement deux côtés ?",
@@ -2140,7 +2140,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Le périmètre d'un triangle rectangle peut-il être un nombre impair ?",
-          "answer": "Oui. Le périmètre peut être n'importe quel nombre positif — entier, décimal ou irrationnel. Par exemple, un triangle rectangle avec des côtés 1 et 1 a une hypoténuse √2 ≈ 1.414, ce qui donne un périmètre ≈ 3.414, qui n'est ni un entier ni un rationnel."
+          "answer": "Oui. Le périmètre peut être n'importe quel nombre positif - entier, décimal ou irrationnel. Par exemple, un triangle rectangle avec des côtés 1 et 1 a une hypoténuse √2 ≈ 1.414, ce qui donne un périmètre ≈ 3.414, qui n'est ni un entier ni un rationnel."
         },
         {
           "question": "Pourquoi l'hypoténuse est-elle toujours le côté le plus long ?",
@@ -3223,9 +3223,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "I tre lati in sintesi:",
           "listItems": [
-            "Cateto a — Uno dei due lati che forma l'angolo di 90°. Può essere il lato verticale o orizzontale, a seconda dell'orientamento.",
-            "Cateto b — L'altro lato che forma l'angolo di 90°. Insieme al cateto a, definisce l'angolo retto.",
-            "Ipotenusa c — Il lato più lungo, che si estende da un vertice dell'angolo acuto all'altro, direttamente opposto all'angolo retto.",
+            "Cateto a - Uno dei due lati che forma l'angolo di 90°. Può essere il lato verticale o orizzontale, a seconda dell'orientamento.",
+            "Cateto b - L'altro lato che forma l'angolo di 90°. Insieme al cateto a, definisce l'angolo retto.",
+            "Ipotenusa c - Il lato più lungo, che si estende da un vertice dell'angolo acuto all'altro, direttamente opposto all'angolo retto.",
             "La relazione pitagorica è valida: a² + b² = c². Questo ti consente di verificare che i tuoi tre valori formino effettivamente un triangolo rettangolo."
           ]
         },
@@ -3255,7 +3255,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "paragraphs": [
             "Fare pratica con triangoli diversi aiuta a creare sicurezza. Di seguito sono riportati altri tre esempi svolti utilizzando terne pitagoriche comuni e valori decimali."
           ],
-          "listTitle": "Esempio 1 — Il triangolo 5-12-13:",
+          "listTitle": "Esempio 1 - Il triangolo 5-12-13:",
           "listItems": [
             "Dati: a = 5, b = 12, c = 13",
             "P = 5 + 12 + 13 = 30 unità",
@@ -3263,7 +3263,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Esempio 2 — Il Triangolo 8-15-17",
+          "h2": "Esempio 2 - Il Triangolo 8-15-17",
           "paragraphs": [
             "Dati: a = 8, b = 15, c = 17. Questa è un'altra terna pitagorica in cui tutti i lati sono numeri interi."
           ],
@@ -3274,14 +3274,14 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Esempio 3 — Lati Decimali",
+          "h2": "Esempio 3 - Lati Decimali",
           "paragraphs": [
             "Non tutti i triangoli rettangoli hanno lati interi perfetti. Dati: a = 2.5, b = 6, c = 6.5."
           ],
           "listItems": [
             "P = 2.5 + 6 + 6.5 = 15 unità",
             "Verifica: 2.5² + 6² = 6.25 + 36 = 42.25 = 6.5² ✓",
-            "I valori decimali funzionano allo stesso modo — basta sommarli direttamente."
+            "I valori decimali funzionano allo stesso modo - basta sommarli direttamente."
           ]
         },
         {
@@ -3299,13 +3299,13 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Usi comuni nel mondo reale:",
           "listItems": [
-            "Recinzioni — Un'aiuola triangolare o un lotto d'angolo richiede recinzione su tutti e tre i lati. Il perimetro ti dice quanti piedi o metri lineari di recinzione acquistare.",
-            "Finiture e modanature — Una caratteristica architettonica triangolare (come un timpano) necessita di finiture lungo i suoi bordi. Il perimetro fornisce la lunghezza totale della finitura.",
-            "Filo e corda — L'incorniciatura di un display, di uno striscione o di una vela ad angolo retto richiede una corda, un filo o un bordo uguale al perimetro.",
-            "Percorsi per jogging e passeggiate — Una pista da corsa o un percorso pedonale triangolare attorno a un'area del parco ad angolo retto ha una distanza totale uguale al perimetro.",
-            "Layout di costruzione — I costruttori usano la regola 3-4-5 per controllare se un angolo è squadrato. Conoscere il perimetro aiuta a verificare le misurazioni.",
-            "Artigianato e cucito — La rilegatura, il piping o il pizzo attorno a un cuscino o un gagliardetto triangolare richiedono materiale pari alla lunghezza del perimetro.",
-            "Mappe e calcoli topografici — I geometri misurano i lotti di terreno triangolari e hanno bisogno del perimetro per le descrizioni dei confini e i registri delle proprietà."
+            "Recinzioni - Un'aiuola triangolare o un lotto d'angolo richiede recinzione su tutti e tre i lati. Il perimetro ti dice quanti piedi o metri lineari di recinzione acquistare.",
+            "Finiture e modanature - Una caratteristica architettonica triangolare (come un timpano) necessita di finiture lungo i suoi bordi. Il perimetro fornisce la lunghezza totale della finitura.",
+            "Filo e corda - L'incorniciatura di un display, di uno striscione o di una vela ad angolo retto richiede una corda, un filo o un bordo uguale al perimetro.",
+            "Percorsi per jogging e passeggiate - Una pista da corsa o un percorso pedonale triangolare attorno a un'area del parco ad angolo retto ha una distanza totale uguale al perimetro.",
+            "Layout di costruzione - I costruttori usano la regola 3-4-5 per controllare se un angolo è squadrato. Conoscere il perimetro aiuta a verificare le misurazioni.",
+            "Artigianato e cucito - La rilegatura, il piping o il pizzo attorno a un cuscino o un gagliardetto triangolare richiedono materiale pari alla lunghezza del perimetro.",
+            "Mappe e calcoli topografici - I geometri misurano i lotti di terreno triangolari e hanno bisogno del perimetro per le descrizioni dei confini e i registri delle proprietà."
           ]
         },
         {
@@ -3320,7 +3320,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "h2": "Suggerimenti per la Conversione delle Unità",
           "paragraphs": [
             "Il risultato del perimetro ha senso solo quando tutti e tre i lati in ingresso usano la stessa unità. Se le tue misurazioni sono in unità diverse, convertile prima. Il calcolatore include un selettore di unità per ogni campo di input per gestire automaticamente le conversioni.",
-            "Ricorda che il perimetro è una misura lineare, quindi le conversioni seguono i rapporti di lunghezza standard — non i rapporti di area. Ad esempio, per convertire da piedi a metri, moltiplica per 0.3048 (non per 0.3048²)."
+            "Ricorda che il perimetro è una misura lineare, quindi le conversioni seguono i rapporti di lunghezza standard - non i rapporti di area. Ad esempio, per convertire da piedi a metri, moltiplica per 0.3048 (non per 0.3048²)."
           ],
           "listTitle": "Promemoria rapidi per la conversione:",
           "listItems": [
@@ -3339,12 +3339,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Attenzione a queste insidie:",
           "listItems": [
-            "Usare solo due lati — Il perimetro richiede tutti e tre i lati. Dimenticare l'ipotenusa o un cateto dà una risposta incompleta.",
-            "Mischiare le unità — Se il cateto a è in pollici e il cateto b è in centimetri, la somma non ha alcun significato. Converti prima in una singola unità.",
-            "Confondere il perimetro con l'area — Il perimetro è una lunghezza (misurata in unità), mentre l'area è una superficie (misurata in unità quadrate). Assicurati di sapere cosa sta chiedendo il problema.",
-            "Usare lati che non formano un triangolo rettangolo — Controlla che a² + b² = c². Se questa equazione non è valida, il triangolo non è un triangolo rettangolo e c non è una vera ipotenusa.",
-            "Arrotondare troppo presto — Se un lato è irrazionale (come √2), mantieni la precisione completa fino all'addizione finale per evitare di accumulare errori di arrotondamento.",
-            "Inserire l'ipotenusa come un cateto — L'ipotenusa deve essere il lato più lungo. Se posizioni un valore più corto nel campo dell'ipotenusa, il diagramma sembrerà sbagliato e il controllo pitagorico fallirà."
+            "Usare solo due lati - Il perimetro richiede tutti e tre i lati. Dimenticare l'ipotenusa o un cateto dà una risposta incompleta.",
+            "Mischiare le unità - Se il cateto a è in pollici e il cateto b è in centimetri, la somma non ha alcun significato. Converti prima in una singola unità.",
+            "Confondere il perimetro con l'area - Il perimetro è una lunghezza (misurata in unità), mentre l'area è una superficie (misurata in unità quadrate). Assicurati di sapere cosa sta chiedendo il problema.",
+            "Usare lati che non formano un triangolo rettangolo - Controlla che a² + b² = c². Se questa equazione non è valida, il triangolo non è un triangolo rettangolo e c non è una vera ipotenusa.",
+            "Arrotondare troppo presto - Se un lato è irrazionale (come √2), mantieni la precisione completa fino all'addizione finale per evitare di accumulare errori di arrotondamento.",
+            "Inserire l'ipotenusa come un cateto - L'ipotenusa deve essere il lato più lungo. Se posizioni un valore più corto nel campo dell'ipotenusa, il diagramma sembrerà sbagliato e il controllo pitagorico fallirà."
           ]
         },
         {
@@ -3392,7 +3392,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Cosa significa ogni variabile in P = a + b + c?",
-          "answer": "P è il perimetro (lunghezza totale del confine). a è un cateto del triangolo rettangolo. b è l'altro cateto. c è l'ipotenusa — il lato più lungo che si trova di fronte all'angolo retto. I due cateti formano l'angolo di 90°."
+          "answer": "P è il perimetro (lunghezza totale del confine). a è un cateto del triangolo rettangolo. b è l'altro cateto. c è l'ipotenusa - il lato più lungo che si trova di fronte all'angolo retto. I due cateti formano l'angolo di 90°."
         },
         {
           "question": "Posso trovare il perimetro con solo due lati?",
@@ -3420,7 +3420,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Il perimetro di un triangolo rettangolo può essere un numero dispari?",
-          "answer": "Sì. Il perimetro può essere qualsiasi numero positivo — intero, decimale o irrazionale. Ad esempio, un triangolo rettangolo con cateti 1 e 1 ha ipotenusa √2 ≈ 1.414, dando un perimetro ≈ 3.414, che non è né un intero né razionale."
+          "answer": "Sì. Il perimetro può essere qualsiasi numero positivo - intero, decimale o irrazionale. Ad esempio, un triangolo rettangolo con cateti 1 e 1 ha ipotenusa √2 ≈ 1.414, dando un perimetro ≈ 3.414, che non è né un intero né razionale."
         },
         {
           "question": "Perché l'ipotenusa è sempre il lato più lungo?",
@@ -3818,7 +3818,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         "h2": "Fórmula do Perímetro do Triângulo Retângulo",
         "paragraphs": [
           "O perímetro de qualquer polígono é o comprimento total do seu limite. Para um triângulo retângulo, o limite consiste exatamente em três lados retos: dois catetos (a e b) que formam o ângulo de 90° e uma hipotenusa (c) que se estende do ângulo reto até o vértice oposto.",
-          "Como um triângulo retângulo possui apenas três lados, a fórmula do perímetro é a soma mais simples possível. Não são necessárias trigonometria, raízes quadradas ou expoentes — apenas adição."
+          "Como um triângulo retângulo possui apenas três lados, a fórmula do perímetro é a soma mais simples possível. Não são necessárias trigonometria, raízes quadradas ou expoentes - apenas adição."
         ],
         "formulas": [
           "P = a + b + c"
@@ -3863,9 +3863,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Os três lados num relance:",
           "listItems": [
-            "Cateto a — Um dos dois lados que forma o ângulo de 90°. Pode ser o lado vertical ou horizontal, dependendo da orientação.",
-            "Cateto b — O outro lado que forma o ângulo de 90°. Junto com o cateto a, define o ângulo reto.",
-            "Hipotenusa c — O lado mais longo, estendendo-se de um vértice de ângulo agudo ao outro, diretamente oposto ao ângulo reto.",
+            "Cateto a - Um dos dois lados que forma o ângulo de 90°. Pode ser o lado vertical ou horizontal, dependendo da orientação.",
+            "Cateto b - O outro lado que forma o ângulo de 90°. Junto com o cateto a, define o ângulo reto.",
+            "Hipotenusa c - O lado mais longo, estendendo-se de um vértice de ângulo agudo ao outro, diretamente oposto ao ângulo reto.",
             "A relação pitagórica se mantém: a² + b² = c². Isso permite que você verifique se seus três valores realmente formam um triângulo retângulo."
           ]
         },
@@ -3895,7 +3895,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "paragraphs": [
             "Praticar com triângulos diferentes ajuda a aumentar a confiança. Abaixo estão mais três exemplos resolvidos usando trios pitagóricos comuns e valores decimais."
           ],
-          "listTitle": "Exemplo 1 — O triângulo 5-12-13:",
+          "listTitle": "Exemplo 1 - O triângulo 5-12-13:",
           "listItems": [
             "Dados: a = 5, b = 12, c = 13",
             "P = 5 + 12 + 13 = 30 unidades",
@@ -3903,7 +3903,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Exemplo 2 — O Triângulo 8-15-17",
+          "h2": "Exemplo 2 - O Triângulo 8-15-17",
           "paragraphs": [
             "Dados: a = 8, b = 15, c = 17. Este é outro trio pitagórico onde todos os lados são números inteiros."
           ],
@@ -3914,14 +3914,14 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Exemplo 3 — Lados Decimais",
+          "h2": "Exemplo 3 - Lados Decimais",
           "paragraphs": [
             "Nem todos os triângulos retângulos têm lados inteiros perfeitos. Dados: a = 2.5, b = 6, c = 6.5."
           ],
           "listItems": [
             "P = 2.5 + 6 + 6.5 = 15 unidades",
             "Verificação: 2.5² + 6² = 6.25 + 36 = 42.25 = 6.5² ✓",
-            "Os valores decimais funcionam da mesma forma — basta somá-los diretamente."
+            "Os valores decimais funcionam da mesma forma - basta somá-los diretamente."
           ]
         },
         {
@@ -3939,13 +3939,13 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Usos comuns no mundo real:",
           "listItems": [
-            "Cercas — Um canteiro triangular ou um lote de esquina exige cerca nos três lados. O perímetro indica quantos pés ou metros lineares de cerca comprar.",
-            "Acabamentos e molduras — Uma característica arquitetônica triangular (como uma empena) precisa de acabamento ao longo de suas bordas. O perímetro dá o comprimento total do acabamento.",
-            "Fio e corda — Enquadrar uma exibição em ângulo reto, banner ou vela requer corda, fio ou borda igual ao perímetro.",
-            "Caminhos de corrida e caminhada — Uma pista de corrida triangular ou um caminho a pé ao redor de uma área de parque com formato de triângulo retângulo tem uma distância total igual ao perímetro.",
-            "Layout de construção — Os construtores usam a regra 3-4-5 para verificar se um canto é reto. Conhecer o perímetro ajuda a verificar as medidas.",
-            "Artesanato e costura — Fita, viés ou renda ao redor de uma almofada ou bandeirola triangular requer material do comprimento do perímetro.",
-            "Mapas e cálculos topográficos — Os topógrafos medem lotes triangulares de terra e precisam do perímetro para descrições de limites e registros de propriedades."
+            "Cercas - Um canteiro triangular ou um lote de esquina exige cerca nos três lados. O perímetro indica quantos pés ou metros lineares de cerca comprar.",
+            "Acabamentos e molduras - Uma característica arquitetônica triangular (como uma empena) precisa de acabamento ao longo de suas bordas. O perímetro dá o comprimento total do acabamento.",
+            "Fio e corda - Enquadrar uma exibição em ângulo reto, banner ou vela requer corda, fio ou borda igual ao perímetro.",
+            "Caminhos de corrida e caminhada - Uma pista de corrida triangular ou um caminho a pé ao redor de uma área de parque com formato de triângulo retângulo tem uma distância total igual ao perímetro.",
+            "Layout de construção - Os construtores usam a regra 3-4-5 para verificar se um canto é reto. Conhecer o perímetro ajuda a verificar as medidas.",
+            "Artesanato e costura - Fita, viés ou renda ao redor de uma almofada ou bandeirola triangular requer material do comprimento do perímetro.",
+            "Mapas e cálculos topográficos - Os topógrafos medem lotes triangulares de terra e precisam do perímetro para descrições de limites e registros de propriedades."
           ]
         },
         {
@@ -3960,7 +3960,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "h2": "Dicas de Conversão de Unidades",
           "paragraphs": [
             "O resultado do perímetro só faz sentido quando os três lados fornecidos usam a mesma unidade. Se suas medições estiverem em unidades diferentes, converta-as primeiro. A calculadora inclui um seletor de unidades para cada campo de entrada para lidar automaticamente com as conversões.",
-            "Lembre-se de que o perímetro é uma medida linear, então as conversões seguem as proporções de comprimento padrão — não as proporções de área. Por exemplo, para converter de pés para metros, multiplique por 0.3048 (não por 0.3048²)."
+            "Lembre-se de que o perímetro é uma medida linear, então as conversões seguem as proporções de comprimento padrão - não as proporções de área. Por exemplo, para converter de pés para metros, multiplique por 0.3048 (não por 0.3048²)."
           ],
           "listTitle": "Lembretes rápidos de conversão:",
           "listItems": [
@@ -3979,12 +3979,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Cuidado com estas armadilhas:",
           "listItems": [
-            "Usar apenas dois lados — O perímetro requer todos os três lados. Esquecer a hipotenusa ou um cateto dá uma resposta incompleta.",
-            "Misturar unidades — Se o cateto a está em polegadas e o cateto b está em centímetros, a soma não tem significado. Converta para uma única unidade primeiro.",
-            "Confundir perímetro com área — O perímetro é um comprimento (medido em unidades), enquanto a área é uma superfície (medida em unidades quadradas). Certifique-se de saber qual deles o problema pede.",
-            "Usar lados que não formam um triângulo retângulo — Verifique se a² + b² = c². Se essa equação não se sustentar, o triângulo não é um triângulo retângulo e c não é uma verdadeira hipotenusa.",
-            "Arredondar muito cedo — Se um lado for irracional (como √2), mantenha precisão total até a adição final para evitar acumular erros de arredondamento.",
-            "Inserir a hipotenusa como um cateto — A hipotenusa deve ser o lado mais longo. Se você colocar um valor menor no campo da hipotenusa, o diagrama ficará incorreto e a verificação pitagórica falhará."
+            "Usar apenas dois lados - O perímetro requer todos os três lados. Esquecer a hipotenusa ou um cateto dá uma resposta incompleta.",
+            "Misturar unidades - Se o cateto a está em polegadas e o cateto b está em centímetros, a soma não tem significado. Converta para uma única unidade primeiro.",
+            "Confundir perímetro com área - O perímetro é um comprimento (medido em unidades), enquanto a área é uma superfície (medida em unidades quadradas). Certifique-se de saber qual deles o problema pede.",
+            "Usar lados que não formam um triângulo retângulo - Verifique se a² + b² = c². Se essa equação não se sustentar, o triângulo não é um triângulo retângulo e c não é uma verdadeira hipotenusa.",
+            "Arredondar muito cedo - Se um lado for irracional (como √2), mantenha precisão total até a adição final para evitar acumular erros de arredondamento.",
+            "Inserir a hipotenusa como um cateto - A hipotenusa deve ser o lado mais longo. Se você colocar um valor menor no campo da hipotenusa, o diagrama ficará incorreto e a verificação pitagórica falhará."
           ]
         },
         {
@@ -4032,7 +4032,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "O que cada variável significa em P = a + b + c?",
-          "answer": "P é o perímetro (comprimento total do limite). a é um cateto do triângulo retângulo. b é o outro cateto. c é a hipotenusa — o lado mais longo que fica em frente ao ângulo reto. Os dois catetos formam o canto de 90°."
+          "answer": "P é o perímetro (comprimento total do limite). a é um cateto do triângulo retângulo. b é o outro cateto. c é a hipotenusa - o lado mais longo que fica em frente ao ângulo reto. Os dois catetos formam o canto de 90°."
         },
         {
           "question": "Posso encontrar o perímetro com apenas dois lados?",
@@ -4060,7 +4060,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "O perímetro de um triângulo retângulo pode ser um número ímpar?",
-          "answer": "Sim. O perímetro pode ser qualquer número positivo — inteiro, decimal ou irracional. Por exemplo, um triângulo retângulo com catetos 1 e 1 tem hipotenusa √2 ≈ 1.414, dando perímetro ≈ 3.414, que não é inteiro nem racional."
+          "answer": "Sim. O perímetro pode ser qualquer número positivo - inteiro, decimal ou irracional. Por exemplo, um triângulo retângulo com catetos 1 e 1 tem hipotenusa √2 ≈ 1.414, dando perímetro ≈ 3.414, que não é inteiro nem racional."
         },
         {
           "question": "Por que a hipotenusa é sempre o lado mais longo?",
@@ -4458,7 +4458,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         "h2": "সমকোণী ত্রিভুজ পরিধি সূত্র",
         "paragraphs": [
           "যেকোনো বহুভুজের পরিধি হল এর সীমানার মোট দৈর্ঘ্য। একটি সমকোণ ত্রিভুজের জন্য, সীমানাটি ঠিক তিনটি সরল বাহু নিয়ে গঠিত: দুটি পা (a এবং b) যা 90° কোণ গঠন করে এবং একটি কর্ণ (c) যা সমকোণ থেকে বিপরীত শীর্ষে প্রসারিত হয়।",
-          "যেহেতু একটি সমকোণী ত্রিভুজের মাত্র তিনটি বাহু রয়েছে, তাই পরিধি সূত্রটি সম্ভাব্য সহজতম যোগফল। কোনো ত্রিকোণমিতি, বর্গমূল বা সূচকের প্রয়োজন নেই — শুধু যোগ।"
+          "যেহেতু একটি সমকোণী ত্রিভুজের মাত্র তিনটি বাহু রয়েছে, তাই পরিধি সূত্রটি সম্ভাব্য সহজতম যোগফল। কোনো ত্রিকোণমিতি, বর্গমূল বা সূচকের প্রয়োজন নেই - শুধু যোগ।"
         ],
         "formulas": [
           "P = a + b + c"
@@ -4503,9 +4503,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "এক নজরে তিনটি দিক:",
           "listItems": [
-            "লেগ a — দুটি বাহুর একটি যা 90° কোণ গঠন করে। এটি উল্লম্ব বা অনুভূমিক দিক হতে পারে, ওরিয়েন্টেশনের উপর নির্ভর করে।",
-            "লেগ b — অন্য দিকে যা 90° কোণ গঠন করে। লেগ a এর সাথে একসাথে, এটি সঠিক কোণকে সংজ্ঞায়িত করে।",
-            "হাইপোটেনাস c — দীর্ঘতম দিক, একটি তীব্র কোণ শীর্ষ থেকে অন্য দিকে প্রসারিত, সরাসরি ডান কোণের বিপরীতে।",
+            "লেগ a - দুটি বাহুর একটি যা 90° কোণ গঠন করে। এটি উল্লম্ব বা অনুভূমিক দিক হতে পারে, ওরিয়েন্টেশনের উপর নির্ভর করে।",
+            "লেগ b - অন্য দিকে যা 90° কোণ গঠন করে। লেগ a এর সাথে একসাথে, এটি সঠিক কোণকে সংজ্ঞায়িত করে।",
+            "হাইপোটেনাস c - দীর্ঘতম দিক, একটি তীব্র কোণ শীর্ষ থেকে অন্য দিকে প্রসারিত, সরাসরি ডান কোণের বিপরীতে।",
             "পিথাগোরিয়ান সম্পর্ক ধারণ করে: a² + b² = c²। এটি আপনাকে যাচাই করতে দেয় যে আপনার তিনটি মান আসলে একটি সমকোণী ত্রিভুজ গঠন করে।"
           ]
         },
@@ -4535,7 +4535,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "paragraphs": [
             "বিভিন্ন ত্রিভুজ নিয়ে অনুশীলন আত্মবিশ্বাস তৈরি করতে সাহায্য করে। নীচে সাধারণ পিথাগোরিয়ান ট্রিপল এবং দশমিক মান ব্যবহার করে আরও তিনটি কাজের উদাহরণ দেওয়া হল।"
           ],
-          "listTitle": "উদাহরণ 1 — 5-12-13 ত্রিভুজ:",
+          "listTitle": "উদাহরণ 1 - 5-12-13 ত্রিভুজ:",
           "listItems": [
             "দেওয়া হয়েছে: a = 5, b = 12, c = 13",
             "P = 5 + 12 + 13 = 30 units",
@@ -4543,7 +4543,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "উদাহরণ 2 — 8-15-17 ত্রিভুজ",
+          "h2": "উদাহরণ 2 - 8-15-17 ত্রিভুজ",
           "paragraphs": [
             "প্রদত্ত: a = 8, b = 15, c = 17। এটি আরেকটি পিথাগোরিয়ান ট্রিপল যেখানে সমস্ত বাহু পূর্ণ সংখ্যা।"
           ],
@@ -4554,14 +4554,14 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "উদাহরণ 3 — দশমিক বাহু",
+          "h2": "উদাহরণ 3 - দশমিক বাহু",
           "paragraphs": [
             "সমস্ত সমকোণী ত্রিভুজের পরিচ্ছন্ন পূর্ণ-সংখ্যার বাহু থাকে না। দেওয়া হয়েছে: a = 2.5, b = 6, c = 6.5।"
           ],
           "listItems": [
             "P = 2.5 + 6 + 6.5 = 15 একক",
             "যাচাইকরণ: 2.5² + 6² = 6.25 + 36 = 42.25 = 6.5² ✓",
-            "দশমিক মান একই ভাবে কাজ করে — শুধু সরাসরি যোগ করুন।"
+            "দশমিক মান একই ভাবে কাজ করে - শুধু সরাসরি যোগ করুন।"
           ]
         },
         {
@@ -4579,13 +4579,13 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "সাধারণ বাস্তব-বিশ্ব ব্যবহার:",
           "listItems": [
-            "বেড়া দেওয়া — একটি ত্রিভুজাকার বাগানের বিছানা বা কোণার লটের জন্য তিন দিকেই বেড়া দেওয়া প্রয়োজন। পরিধি আপনাকে বলে বেড়ার কত রৈখিক ফুট কিনতে হবে।",
-            "ছাঁটা এবং ছাঁচনির্মাণ — একটি ত্রিভুজাকার স্থাপত্য বৈশিষ্ট্য (একটি গ্যাবল প্রান্তের মতো) এর প্রান্ত বরাবর ছাঁটাই করা প্রয়োজন। পরিধি মোট ছাঁটা দৈর্ঘ্য দেয়।",
-            "তার এবং দড়ি — একটি সমকোণ ডিসপ্লে, ব্যানার বা পাল তৈরি করতে ঘেরের সমান দড়ি, তার বা প্রান্ত প্রয়োজন।",
-            "জগিং এবং হাঁটার পথ — একটি ত্রিভুজাকার চলমান ট্র্যাক বা একটি সমকোণী পার্ক এলাকার চারপাশে হাঁটার পথের ঘেরের সমান দূরত্ব রয়েছে।",
-            "নির্মাণ বিন্যাস — নির্মাতারা 3-4-5 নিয়ম ব্যবহার করে একটি কোণা বর্গাকার কিনা তা পরীক্ষা করে। পরিধি জানা পরিমাপ যাচাই করতে সাহায্য করে।",
-            "কারুকাজ এবং সেলাই — একটি ত্রিভুজাকার কুশন বা পেন্যান্টের চারপাশে বাঁধাই, পাইপিং বা লেইসের জন্য ঘের-দৈর্ঘ্যের উপাদান প্রয়োজন।",
-            "মানচিত্র এবং জরিপ গণনা — সার্ভেয়াররা ত্রিভুজাকার জমির প্লট পরিমাপ করে এবং সীমানা বর্ণনা এবং সম্পত্তির রেকর্ডের জন্য পরিধি প্রয়োজন।"
+            "বেড়া দেওয়া - একটি ত্রিভুজাকার বাগানের বিছানা বা কোণার লটের জন্য তিন দিকেই বেড়া দেওয়া প্রয়োজন। পরিধি আপনাকে বলে বেড়ার কত রৈখিক ফুট কিনতে হবে।",
+            "ছাঁটা এবং ছাঁচনির্মাণ - একটি ত্রিভুজাকার স্থাপত্য বৈশিষ্ট্য (একটি গ্যাবল প্রান্তের মতো) এর প্রান্ত বরাবর ছাঁটাই করা প্রয়োজন। পরিধি মোট ছাঁটা দৈর্ঘ্য দেয়।",
+            "তার এবং দড়ি - একটি সমকোণ ডিসপ্লে, ব্যানার বা পাল তৈরি করতে ঘেরের সমান দড়ি, তার বা প্রান্ত প্রয়োজন।",
+            "জগিং এবং হাঁটার পথ - একটি ত্রিভুজাকার চলমান ট্র্যাক বা একটি সমকোণী পার্ক এলাকার চারপাশে হাঁটার পথের ঘেরের সমান দূরত্ব রয়েছে।",
+            "নির্মাণ বিন্যাস - নির্মাতারা 3-4-5 নিয়ম ব্যবহার করে একটি কোণা বর্গাকার কিনা তা পরীক্ষা করে। পরিধি জানা পরিমাপ যাচাই করতে সাহায্য করে।",
+            "কারুকাজ এবং সেলাই - একটি ত্রিভুজাকার কুশন বা পেন্যান্টের চারপাশে বাঁধাই, পাইপিং বা লেইসের জন্য ঘের-দৈর্ঘ্যের উপাদান প্রয়োজন।",
+            "মানচিত্র এবং জরিপ গণনা - সার্ভেয়াররা ত্রিভুজাকার জমির প্লট পরিমাপ করে এবং সীমানা বর্ণনা এবং সম্পত্তির রেকর্ডের জন্য পরিধি প্রয়োজন।"
           ]
         },
         {
@@ -4600,7 +4600,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "h2": "ইউনিট রূপান্তর টিপস",
           "paragraphs": [
             "পরিধির ফলাফল শুধুমাত্র তখনই অর্থবহ হয় যখন তিনটি ইনপুট দিক একই ইউনিট ব্যবহার করে। যদি আপনার পরিমাপ বিভিন্ন ইউনিটে থাকে তবে প্রথমে সেগুলি রূপান্তর করুন। ক্যালকুলেটর স্বয়ংক্রিয়ভাবে রূপান্তরগুলি পরিচালনা করার জন্য প্রতিটি ইনপুট ক্ষেত্রের জন্য একটি ইউনিট নির্বাচক অন্তর্ভুক্ত করে।",
-            "মনে রাখবেন যে পরিধি একটি রৈখিক পরিমাপ, তাই রূপান্তরগুলি মানক দৈর্ঘ্যের অনুপাত অনুসরণ করে — এলাকা অনুপাত নয়। উদাহরণস্বরূপ, ফুট থেকে মিটারে রূপান্তর করতে, 0.3048 দ্বারা গুণ করুন (0.3048² দ্বারা নয়)।"
+            "মনে রাখবেন যে পরিধি একটি রৈখিক পরিমাপ, তাই রূপান্তরগুলি মানক দৈর্ঘ্যের অনুপাত অনুসরণ করে - এলাকা অনুপাত নয়। উদাহরণস্বরূপ, ফুট থেকে মিটারে রূপান্তর করতে, 0.3048 দ্বারা গুণ করুন (0.3048² দ্বারা নয়)।"
           ],
           "listTitle": "দ্রুত রূপান্তর অনুস্মারক:",
           "listItems": [
@@ -4619,12 +4619,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "এই ক্ষতির জন্য সতর্ক থাকুন:",
           "listItems": [
-            "শুধুমাত্র দুটি দিক ব্যবহার করা — পরিধির জন্য তিনটি দিকই প্রয়োজন। কর্ণ বা এক পা ভুলে যাওয়া একটি অসম্পূর্ণ উত্তর দেয়।",
-            "মিক্সিং একক — যদি লেগ a ইঞ্চি এবং লেগ b সেন্টিমিটারে হয় তবে যোগফলের কোন অর্থ নেই। প্রথমে একটি একক ইউনিটে রূপান্তর করুন।",
-            "ক্ষেত্রফলের সাথে পরিধি বিভ্রান্তিকর — ঘের হল একটি দৈর্ঘ্য (এককে পরিমাপ করা), যখন ক্ষেত্রফল হল একটি পৃষ্ঠ (বর্গ এককে পরিমাপ করা)। নিশ্চিত করুন যে আপনি জানেন কোনটি সমস্যাটি চাচ্ছে।",
-            "একটি সমকোণী ত্রিভুজ গঠন করে না এমন বাহুগুলি ব্যবহার করে — পরীক্ষা করুন যে a² + b² = c²। যদি এই সমীকরণটি ধরে না থাকে, ত্রিভুজটি একটি সমকোণী ত্রিভুজ নয় এবং c একটি সত্যিকারের কর্ণিক নয়।",
-            "খুব তাড়াতাড়ি রাউন্ডিং — যদি এক পাশ অযৌক্তিক হয় (যেমন √2), বৃত্তাকার ত্রুটি জমা এড়াতে চূড়ান্ত সংযোজন পর্যন্ত সম্পূর্ণ নির্ভুলতা রাখুন।",
-            "একটি পা হিসাবে কর্ণের প্রবেশ করা — কর্ণেরটি অবশ্যই দীর্ঘতম দিক হতে হবে। আপনি যদি কর্ণের ক্ষেত্রে একটি ছোট মান রাখেন, তাহলে চিত্রটি ভুল দেখাবে এবং পিথাগোরিয়ান চেক ব্যর্থ হবে।"
+            "শুধুমাত্র দুটি দিক ব্যবহার করা - পরিধির জন্য তিনটি দিকই প্রয়োজন। কর্ণ বা এক পা ভুলে যাওয়া একটি অসম্পূর্ণ উত্তর দেয়।",
+            "মিক্সিং একক - যদি লেগ a ইঞ্চি এবং লেগ b সেন্টিমিটারে হয় তবে যোগফলের কোন অর্থ নেই। প্রথমে একটি একক ইউনিটে রূপান্তর করুন।",
+            "ক্ষেত্রফলের সাথে পরিধি বিভ্রান্তিকর - ঘের হল একটি দৈর্ঘ্য (এককে পরিমাপ করা), যখন ক্ষেত্রফল হল একটি পৃষ্ঠ (বর্গ এককে পরিমাপ করা)। নিশ্চিত করুন যে আপনি জানেন কোনটি সমস্যাটি চাচ্ছে।",
+            "একটি সমকোণী ত্রিভুজ গঠন করে না এমন বাহুগুলি ব্যবহার করে - পরীক্ষা করুন যে a² + b² = c²। যদি এই সমীকরণটি ধরে না থাকে, ত্রিভুজটি একটি সমকোণী ত্রিভুজ নয় এবং c একটি সত্যিকারের কর্ণিক নয়।",
+            "খুব তাড়াতাড়ি রাউন্ডিং - যদি এক পাশ অযৌক্তিক হয় (যেমন √2), বৃত্তাকার ত্রুটি জমা এড়াতে চূড়ান্ত সংযোজন পর্যন্ত সম্পূর্ণ নির্ভুলতা রাখুন।",
+            "একটি পা হিসাবে কর্ণের প্রবেশ করা - কর্ণেরটি অবশ্যই দীর্ঘতম দিক হতে হবে। আপনি যদি কর্ণের ক্ষেত্রে একটি ছোট মান রাখেন, তাহলে চিত্রটি ভুল দেখাবে এবং পিথাগোরিয়ান চেক ব্যর্থ হবে।"
           ]
         },
         {
@@ -4672,7 +4672,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "P = a + b + c তে প্রতিটি চলকের অর্থ কী?",
-          "answer": "P হল পরিধি (মোট সীমানা দৈর্ঘ্য)। a হল সমকোণী ত্রিভুজের এক পা। b হল অন্য পা। c হল কর্ণ — দীর্ঘতম দিক যা সমকোণের বিপরীতে বসে। দুটি পা 90° কোণে গঠন করে।"
+          "answer": "P হল পরিধি (মোট সীমানা দৈর্ঘ্য)। a হল সমকোণী ত্রিভুজের এক পা। b হল অন্য পা। c হল কর্ণ - দীর্ঘতম দিক যা সমকোণের বিপরীতে বসে। দুটি পা 90° কোণে গঠন করে।"
         },
         {
           "question": "আমি কি শুধুমাত্র দুটি পক্ষের সাথে পরিধি খুঁজে পেতে পারি?",
@@ -4700,7 +4700,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "সমকোণী ত্রিভুজের পরিধি কি বিজোড় সংখ্যা হতে পারে?",
-          "answer": "হ্যাঁ। পরিধি যেকোনো ধনাত্মক সংখ্যা হতে পারে — পূর্ণসংখ্যা, দশমিক বা অমূলদ। উদাহরণস্বরূপ, 1 এবং 1 পা বিশিষ্ট একটি সমকোণী ত্রিভুজের কর্ণ √2 ≈ 1.414 আছে, যা পরিসীমা ≈ 3.414 দেয়, যা একটি পূর্ণসংখ্যা বা মূলদও নয়।"
+          "answer": "হ্যাঁ। পরিধি যেকোনো ধনাত্মক সংখ্যা হতে পারে - পূর্ণসংখ্যা, দশমিক বা অমূলদ। উদাহরণস্বরূপ, 1 এবং 1 পা বিশিষ্ট একটি সমকোণী ত্রিভুজের কর্ণ √2 ≈ 1.414 আছে, যা পরিসীমা ≈ 3.414 দেয়, যা একটি পূর্ণসংখ্যা বা মূলদও নয়।"
         },
         {
           "question": "কর্ণের সর্বদা দীর্ঘতম দিক কেন?",
@@ -5143,9 +5143,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "3 つの側面の概要:",
           "listItems": [
-            "脚 a — 90° の角度を形成する 2 つの側面のうちの 1 つ。方向に応じて、垂直方向または水平方向になります。",
-            "脚 b — 90° の角度を形成する反対側。脚 a と合わせて直角を定義します。",
-            "斜辺 c — 鋭角の 1 つの頂点からもう 1 つの頂点まで、直角の真向かいに伸びる最長の辺。",
+            "脚 a - 90° の角度を形成する 2 つの側面のうちの 1 つ。方向に応じて、垂直方向または水平方向になります。",
+            "脚 b - 90° の角度を形成する反対側。脚 a と合わせて直角を定義します。",
+            "斜辺 c - 鋭角の 1 つの頂点からもう 1 つの頂点まで、直角の真向かいに伸びる最長の辺。",
             "ピタゴラスの関係は成立します: a² + b² = c²。これにより、3 つの値が実際に直角三角形を形成していることを確認できます。"
           ]
         },
@@ -5175,7 +5175,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "paragraphs": [
             "さまざまな三角形を使って練習すると、自信がつきます。以下は、一般的なピタゴラス 3 倍と 10 進数値を使用したさらに 3 つの実際の例です。"
           ],
-          "listTitle": "例 1 — 5-12-13 の三角形:",
+          "listTitle": "例 1 - 5-12-13 の三角形:",
           "listItems": [
             "与えられた場合: a = 5、b = 12、c = 13",
             "P = 5 + 12 + 13 = 30 units",
@@ -5183,7 +5183,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "例 2 — 8-15-17 のトライアングル",
+          "h2": "例 2 - 8-15-17 のトライアングル",
           "paragraphs": [
             "与えられた値: a = 8、b = 15、c = 17。これは、すべての辺が整数である別のピタゴラス トリプルです。"
           ],
@@ -5194,7 +5194,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "例 3 — 小数点の辺",
+          "h2": "例 3 - 小数点の辺",
           "paragraphs": [
             "すべての直角三角形がきれいな整数の辺を持っているわけではありません。与えられた場合: a = 2.5、b = 6、c = 6.5。"
           ],
@@ -5219,13 +5219,13 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "現実世界での一般的な用途:",
           "listItems": [
-            "フェンス — 三角形の庭壇や角地では、三方すべてをフェンスで囲む必要があります。周囲の長さは、購入するフェンスの直線フィート数を示します。",
-            "トリムとモールディング — 三角形の建築フィーチャ (切妻端など) は、エッジに沿ってトリムする必要があります。周囲の長さはトリムの全長を示します。",
-            "ワイヤーとロープ — 直角のディスプレイ、バナー、帆を組み立てるには、周囲と同じロープ、ワイヤー、または縁取りが必要です。",
+            "フェンス - 三角形の庭壇や角地では、三方すべてをフェンスで囲む必要があります。周囲の長さは、購入するフェンスの直線フィート数を示します。",
+            "トリムとモールディング - 三角形の建築フィーチャ (切妻端など) は、エッジに沿ってトリムする必要があります。周囲の長さはトリムの全長を示します。",
+            "ワイヤーとロープ - 直角のディスプレイ、バナー、帆を組み立てるには、周囲と同じロープ、ワイヤー、または縁取りが必要です。",
             "ジョギングおよびウォーキング パス - 直角の公園エリアを囲む三角形のランニング トラックまたはウォーキング パスの総距離は、周囲と同じになります。",
-            "Construction layout — Builders use the 3-4-5 rule to check if a corner is square.周囲を知ることは、測定値を検証するのに役立ちます。",
-            "工作と縫製 — 三角クッションやペナントの周りにバインディング、パイピング、レースを付けるには、周囲の長さの材料が必要です。",
-            "地図と測量の計算 — 測量士は三角形の土地区画を測定するため、境界の説明や財産記録のために周囲を必要とします。"
+            "Construction layout - Builders use the 3-4-5 rule to check if a corner is square.周囲を知ることは、測定値を検証するのに役立ちます。",
+            "工作と縫製 - 三角クッションやペナントの周りにバインディング、パイピング、レースを付けるには、周囲の長さの材料が必要です。",
+            "地図と測量の計算 - 測量士は三角形の土地区画を測定するため、境界の説明や財産記録のために周囲を必要とします。"
           ]
         },
         {
@@ -5259,11 +5259,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "次のような落とし穴に注意してください。",
           "listItems": [
-            "2 つの側面のみを使用する — 周囲には 3 つの側面すべてが必要です。斜辺または片脚を忘れると、不完全な答えが得られます。",
-            "単位の混合 — 脚 a がインチで脚 b がセンチメートルの場合、合計には意味がありません。まず単一ユニットに変換します。",
-            "周囲と面積の混同 — 周囲は長さ (単位で測定) ですが、面積は表面 (平方単位で測定) です。問題がどれを求めているかを確認してください。",
-            "直角三角形を形成しない辺を使用する — a² + b² = c² であることを確認します。この方程式が成り立たない場合、三角形は直角三角形ではなく、c は真の斜辺ではありません。",
-            "丸めが早すぎる — 一方の辺が無理数である場合 (√2 など)、丸め誤差の蓄積を避けるために、最後の加算まで完全な精度を維持します。",
+            "2 つの側面のみを使用する - 周囲には 3 つの側面すべてが必要です。斜辺または片脚を忘れると、不完全な答えが得られます。",
+            "単位の混合 - 脚 a がインチで脚 b がセンチメートルの場合、合計には意味がありません。まず単一ユニットに変換します。",
+            "周囲と面積の混同 - 周囲は長さ (単位で測定) ですが、面積は表面 (平方単位で測定) です。問題がどれを求めているかを確認してください。",
+            "直角三角形を形成しない辺を使用する - a² + b² = c² であることを確認します。この方程式が成り立たない場合、三角形は直角三角形ではなく、c は真の斜辺ではありません。",
+            "丸めが早すぎる - 一方の辺が無理数である場合 (√2 など)、丸め誤差の蓄積を避けるために、最後の加算まで完全な精度を維持します。",
             "斜辺を脚として入力する - 斜辺は最も長い辺でなければなりません。斜辺フィールドに短い値を入力すると、図が正しく表示されず、ピタゴラス チェックが失敗します。"
           ]
         },
@@ -5783,9 +5783,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "세 가지 측면을 한 눈에 살펴보면 다음과 같습니다.",
           "listItems": [
-            "다리 a — 90° 각도를 형성하는 두 변 중 하나입니다. 방향에 따라 수직 또는 수평 측면이 될 수 있습니다.",
-            "다리 b — 90° 각도를 형성하는 반대쪽입니다. 다리 a와 함께 직각을 정의합니다.",
-            "빗변 c — 한 예각 꼭지점에서 다른 예각 꼭지점까지 뻗어 있으며 직각의 정반대인 가장 긴 변입니다.",
+            "다리 a - 90° 각도를 형성하는 두 변 중 하나입니다. 방향에 따라 수직 또는 수평 측면이 될 수 있습니다.",
+            "다리 b - 90° 각도를 형성하는 반대쪽입니다. 다리 a와 함께 직각을 정의합니다.",
+            "빗변 c - 한 예각 꼭지점에서 다른 예각 꼭지점까지 뻗어 있으며 직각의 정반대인 가장 긴 변입니다.",
             "피타고라스 관계는 다음과 같습니다: a² + b² = c². 이를 통해 세 개의 값이 실제로 직각 삼각형을 형성하는지 확인할 수 있습니다."
           ]
         },
@@ -5834,7 +5834,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "예 3 — 소수변",
+          "h2": "예 3 - 소수변",
           "paragraphs": [
             "모든 직각삼각형이 깔끔한 정수 변을 갖는 것은 아닙니다. 주어진 값: a = 2.5, b = 6, c = 6.5."
           ],
@@ -5859,13 +5859,13 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "일반적인 실제 용도:",
           "listItems": [
-            "울타리 — 삼각형 정원 침대 또는 코너 부지에는 세 면 모두에 울타리가 있어야 합니다. 둘레는 구매할 펜싱의 선형 피트 수를 알려줍니다.",
-            "다듬기 및 몰딩 — 삼각형 건축 특징(예: 박공 끝)은 가장자리를 따라 다듬어야 합니다. 둘레는 전체 트림 길이를 나타냅니다.",
-            "와이어 및 로프 — 직각 디스플레이, 배너 또는 돛을 구성하려면 둘레와 동일한 로프, 와이어 또는 테두리가 필요합니다.",
+            "울타리 - 삼각형 정원 침대 또는 코너 부지에는 세 면 모두에 울타리가 있어야 합니다. 둘레는 구매할 펜싱의 선형 피트 수를 알려줍니다.",
+            "다듬기 및 몰딩 - 삼각형 건축 특징(예: 박공 끝)은 가장자리를 따라 다듬어야 합니다. 둘레는 전체 트림 길이를 나타냅니다.",
+            "와이어 및 로프 - 직각 디스플레이, 배너 또는 돛을 구성하려면 둘레와 동일한 로프, 와이어 또는 테두리가 필요합니다.",
             "조깅 및 걷기 경로 - 직각 공원 주변의 삼각형 달리기 트랙 또는 걷기 경로의 총 거리는 둘레와 동일합니다.",
-            "건축 레이아웃 — 건축업자는 3-4-5 규칙을 사용하여 모서리가 정사각형인지 확인합니다. 둘레를 알면 측정값을 확인하는 데 도움이 됩니다.",
+            "건축 레이아웃 - 건축업자는 3-4-5 규칙을 사용하여 모서리가 정사각형인지 확인합니다. 둘레를 알면 측정값을 확인하는 데 도움이 됩니다.",
             "공예 및 재봉 - 삼각형 쿠션이나 페넌트 주위의 바인딩, 파이핑 또는 레이스에는 둘레 길이의 재료가 필요합니다.",
-            "지도 및 측량 계산 — 측량사는 삼각형 토지 구획을 측정하고 경계 설명 및 부동산 기록을 위한 둘레가 필요합니다."
+            "지도 및 측량 계산 - 측량사는 삼각형 토지 구획을 측정하고 경계 설명 및 부동산 기록을 위한 둘레가 필요합니다."
           ]
         },
         {
@@ -5899,11 +5899,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "다음과 같은 함정에 주의하세요.",
           "listItems": [
-            "양면만 사용 — 둘레에는 세 면이 모두 필요합니다. 빗변이나 한쪽 다리를 잊어버리면 불완전한 답이 나옵니다.",
-            "혼합 단위 — 다리 a가 인치이고 다리 b가 센티미터인 경우 합계는 의미가 없습니다. 먼저 단일 단위로 변환하십시오.",
+            "양면만 사용 - 둘레에는 세 면이 모두 필요합니다. 빗변이나 한쪽 다리를 잊어버리면 불완전한 답이 나옵니다.",
+            "혼합 단위 - 다리 a가 인치이고 다리 b가 센티미터인 경우 합계는 의미가 없습니다. 먼저 단일 단위로 변환하십시오.",
             "둘레와 면적의 혼동 - 둘레는 길이(단위로 측정)이고 면적은 표면(제곱 단위로 측정)입니다. 문제가 요구하는 것이 무엇인지 확인하십시오.",
-            "직각 삼각형을 형성하지 않는 변을 사용하는 경우 — a² + b² = c²인지 확인하세요. 이 방정식이 성립하지 않으면 삼각형은 직각삼각형이 아니며 c는 실제 빗변이 아닙니다.",
-            "너무 일찍 반올림 — 한쪽이 비합리적인 경우(예: √2) 반올림 오류가 누적되지 않도록 최종 추가까지 전체 정밀도를 유지하십시오.",
+            "직각 삼각형을 형성하지 않는 변을 사용하는 경우 - a² + b² = c²인지 확인하세요. 이 방정식이 성립하지 않으면 삼각형은 직각삼각형이 아니며 c는 실제 빗변이 아닙니다.",
+            "너무 일찍 반올림 - 한쪽이 비합리적인 경우(예: √2) 반올림 오류가 누적되지 않도록 최종 추가까지 전체 정밀도를 유지하십시오.",
             "빗변을 다리로 입력 - 빗변은 가장 긴 변이어야 합니다. 빗변 필드에 더 짧은 값을 배치하면 다이어그램이 잘못된 것처럼 보이고 피타고라스 검사가 실패합니다."
           ]
         },
@@ -6306,7 +6306,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         "h2": "Formula Perimeter Segi Tiga Bersudut Tegak",
         "paragraphs": [
           "Perimeter mana-mana poligon ialah jumlah panjang sempadannya. Bagi segi tiga bersudut tegak, sempadannya terdiri daripada tepat tiga sisi lurus: dua kaki (a dan b) yang membentuk sudut 90°, dan satu hipotenus (c) yang membentang dari sudut tegak ke bucu yang bertentangan.",
-          "Oleh kerana segi tiga bersudut tegak hanya mempunyai tiga sisi, formula perimeter ialah hasil tambah termudah yang mungkin. Tiada trigonometri, punca kuasa dua, atau eksponen diperlukan — hanya penambahan."
+          "Oleh kerana segi tiga bersudut tegak hanya mempunyai tiga sisi, formula perimeter ialah hasil tambah termudah yang mungkin. Tiada trigonometri, punca kuasa dua, atau eksponen diperlukan - hanya penambahan."
         ],
         "formulas": [
           "P = a + b + c"
@@ -6351,9 +6351,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Sekilas pandang tentang ketiga-tiga sisi:",
           "listItems": [
-            "Kaki a — Salah satu daripada dua sisi yang membentuk sudut 90°. Ia boleh menjadi sisi menegak atau mendatar, bergantung pada orientasi.",
-            "Kaki b — Sisi lain yang membentuk sudut 90°. Bersama dengan kaki a, ia mentakrifkan sudut tegak.",
-            "Hipotenus c — Sisi terpanjang, yang membentang dari satu bucu sudut tirus ke bucu yang lain, bertentangan secara langsung dengan sudut tegak.",
+            "Kaki a - Salah satu daripada dua sisi yang membentuk sudut 90°. Ia boleh menjadi sisi menegak atau mendatar, bergantung pada orientasi.",
+            "Kaki b - Sisi lain yang membentuk sudut 90°. Bersama dengan kaki a, ia mentakrifkan sudut tegak.",
+            "Hipotenus c - Sisi terpanjang, yang membentang dari satu bucu sudut tirus ke bucu yang lain, bertentangan secara langsung dengan sudut tegak.",
             "Hubungan Pythagoras kekal: a² + b² = c². Ini membolehkan anda mengesahkan bahawa tiga nilai anda sebenarnya membentuk segi tiga bersudut tegak."
           ]
         },
@@ -6383,7 +6383,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "paragraphs": [
             "Berlatih dengan segi tiga yang berbeza membantu membina keyakinan. Di bawah ialah tiga lagi contoh penyelesaian menggunakan trirangkap Pythagoras dan nilai perpuluhan yang biasa."
           ],
-          "listTitle": "Contoh 1 — Segi tiga 5-12-13:",
+          "listTitle": "Contoh 1 - Segi tiga 5-12-13:",
           "listItems": [
             "Diberi: a = 5, b = 12, c = 13",
             "P = 5 + 12 + 13 = 30 unit",
@@ -6391,7 +6391,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Contoh 2 — Segi Tiga 8-15-17",
+          "h2": "Contoh 2 - Segi Tiga 8-15-17",
           "paragraphs": [
             "Diberi: a = 8, b = 15, c = 17. Ini ialah trirangkap Pythagoras yang lain di mana semua sisinya ialah nombor bulat."
           ],
@@ -6402,14 +6402,14 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Contoh 3 — Sisi Perpuluhan",
+          "h2": "Contoh 3 - Sisi Perpuluhan",
           "paragraphs": [
             "Bukan semua segi tiga bersudut tegak mempunyai sisi nombor bulat yang kemas. Diberi: a = 2.5, b = 6, c = 6.5."
           ],
           "listItems": [
             "P = 2.5 + 6 + 6.5 = 15 unit",
             "Pengesahan: 2.5² + 6² = 6.25 + 36 = 42.25 = 6.5² ✓",
-            "Nilai perpuluhan berfungsi dengan cara yang sama — cuma tambahkan secara langsung."
+            "Nilai perpuluhan berfungsi dengan cara yang sama - cuma tambahkan secara langsung."
           ]
         },
         {
@@ -6427,13 +6427,13 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Kegunaan dunia nyata yang biasa:",
           "listItems": [
-            "Pemagaran — Batas taman segi tiga atau lot sudut memerlukan pagar di sekeliling ketiga-tiga sisi. Perimeter memberitahu anda berapa banyak kaki linear pagar yang perlu dibeli.",
-            "Kemasan dan acuan — Ciri seni bina segi tiga (seperti hujung tebeng bumbung) memerlukan kemasan di sepanjang pinggirnya. Perimeter memberikan jumlah panjang kemasan.",
-            "Dawai dan tali — Membingkai paparan, sepanduk atau layar bersudut tegak memerlukan tali, dawai atau tepian yang sama dengan perimeter.",
-            "Laluan berjoging dan berjalan kaki — Trek larian atau laluan berjalan kaki segi tiga di sekitar kawasan taman bersudut tegak mempunyai jumlah jarak yang sama dengan perimeter.",
-            "Susun atur pembinaan — Pembina menggunakan peraturan 3-4-5 untuk memeriksa sama ada sudut itu persegi. Mengetahui perimeter membantu mengesahkan ukuran.",
-            "Kraf dan jahitan — Pengikat, paip, atau renda di sekeliling kusyen atau panji segi tiga memerlukan bahan sepanjang perimeter.",
-            "Pengiraan peta dan ukur — Juruukur mengukur plot tanah segi tiga dan memerlukan perimeter untuk perihalan sempadan dan rekod hartanah."
+            "Pemagaran - Batas taman segi tiga atau lot sudut memerlukan pagar di sekeliling ketiga-tiga sisi. Perimeter memberitahu anda berapa banyak kaki linear pagar yang perlu dibeli.",
+            "Kemasan dan acuan - Ciri seni bina segi tiga (seperti hujung tebeng bumbung) memerlukan kemasan di sepanjang pinggirnya. Perimeter memberikan jumlah panjang kemasan.",
+            "Dawai dan tali - Membingkai paparan, sepanduk atau layar bersudut tegak memerlukan tali, dawai atau tepian yang sama dengan perimeter.",
+            "Laluan berjoging dan berjalan kaki - Trek larian atau laluan berjalan kaki segi tiga di sekitar kawasan taman bersudut tegak mempunyai jumlah jarak yang sama dengan perimeter.",
+            "Susun atur pembinaan - Pembina menggunakan peraturan 3-4-5 untuk memeriksa sama ada sudut itu persegi. Mengetahui perimeter membantu mengesahkan ukuran.",
+            "Kraf dan jahitan - Pengikat, paip, atau renda di sekeliling kusyen atau panji segi tiga memerlukan bahan sepanjang perimeter.",
+            "Pengiraan peta dan ukur - Juruukur mengukur plot tanah segi tiga dan memerlukan perimeter untuk perihalan sempadan dan rekod hartanah."
           ]
         },
         {
@@ -6448,7 +6448,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "h2": "Petua Penukaran Unit",
           "paragraphs": [
             "Hasil perimeter hanya bermakna apabila ketiga-tiga sisi input menggunakan unit yang sama. Jika ukuran anda menggunakan unit yang berbeza, tukarkannya terlebih dahulu. Kalkulator menyertakan pemilih unit untuk setiap medan input bagi mengendalikan penukaran secara automatik.",
-            "Ingat bahawa perimeter ialah ukuran linear, jadi penukaran mengikut nisbah panjang piawai — bukan nisbah luas. Sebagai contoh, untuk menukar kaki kepada meter, darabkan dengan 0.3048 (bukan dengan 0.3048²)."
+            "Ingat bahawa perimeter ialah ukuran linear, jadi penukaran mengikut nisbah panjang piawai - bukan nisbah luas. Sebagai contoh, untuk menukar kaki kepada meter, darabkan dengan 0.3048 (bukan dengan 0.3048²)."
           ],
           "listTitle": "Peringatan penukaran pantas:",
           "listItems": [
@@ -6467,12 +6467,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Berhati-hati dengan perangkap ini:",
           "listItems": [
-            "Menggunakan hanya dua sisi — Perimeter memerlukan ketiga-tiga sisi. Terlupa hipotenus atau satu kaki memberikan jawapan yang tidak lengkap.",
-            "Mencampurkan unit — Jika kaki a dalam in dan kaki b dalam cm, jumlahnya tiada makna. Tukar kepada satu unit terlebih dahulu.",
-            "Mengelirukan perimeter dengan luas — Perimeter ialah panjang (diukur dalam unit), manakala luas ialah permukaan (diukur dalam unit persegi). Pastikan anda tahu yang mana satu diminta oleh soalan.",
-            "Menggunakan sisi yang tidak membentuk segi tiga bersudut tegak — Semak bahawa a² + b² = c². Jika persamaan ini tidak sah, segi tiga itu bukanlah segi tiga bersudut tegak dan c bukan hipotenus yang sebenar.",
-            "Membundar terlalu awal — Jika satu sisi ialah bukan nisbah (seperti √2), kekalkan ketepatan penuh sehingga penambahan terakhir untuk mengelakkan ralat pembundaran terkumpul.",
-            "Memasukkan hipotenus sebagai kaki — Hipotenus mestilah sisi terpanjang. Jika anda meletakkan nilai yang lebih pendek dalam medan hipotenus, gambar rajah akan kelihatan salah dan semakan Pythagoras akan gagal."
+            "Menggunakan hanya dua sisi - Perimeter memerlukan ketiga-tiga sisi. Terlupa hipotenus atau satu kaki memberikan jawapan yang tidak lengkap.",
+            "Mencampurkan unit - Jika kaki a dalam in dan kaki b dalam cm, jumlahnya tiada makna. Tukar kepada satu unit terlebih dahulu.",
+            "Mengelirukan perimeter dengan luas - Perimeter ialah panjang (diukur dalam unit), manakala luas ialah permukaan (diukur dalam unit persegi). Pastikan anda tahu yang mana satu diminta oleh soalan.",
+            "Menggunakan sisi yang tidak membentuk segi tiga bersudut tegak - Semak bahawa a² + b² = c². Jika persamaan ini tidak sah, segi tiga itu bukanlah segi tiga bersudut tegak dan c bukan hipotenus yang sebenar.",
+            "Membundar terlalu awal - Jika satu sisi ialah bukan nisbah (seperti √2), kekalkan ketepatan penuh sehingga penambahan terakhir untuk mengelakkan ralat pembundaran terkumpul.",
+            "Memasukkan hipotenus sebagai kaki - Hipotenus mestilah sisi terpanjang. Jika anda meletakkan nilai yang lebih pendek dalam medan hipotenus, gambar rajah akan kelihatan salah dan semakan Pythagoras akan gagal."
           ]
         },
         {
@@ -6520,7 +6520,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Apakah maksud setiap pemboleh ubah dalam P = a + b + c?",
-          "answer": "P ialah perimeter (jumlah panjang sempadan). a ialah satu kaki segi tiga bersudut tegak. b ialah kaki yang satu lagi. c ialah hipotenus — sisi terpanjang yang bertentangan dengan sudut tegak. Kedua-dua kaki membentuk sudut 90°."
+          "answer": "P ialah perimeter (jumlah panjang sempadan). a ialah satu kaki segi tiga bersudut tegak. b ialah kaki yang satu lagi. c ialah hipotenus - sisi terpanjang yang bertentangan dengan sudut tegak. Kedua-dua kaki membentuk sudut 90°."
         },
         {
           "question": "Bolehkah saya mencari perimeter dengan hanya dua sisi?",
@@ -6548,7 +6548,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Bolehkah perimeter segi tiga bersudut tegak menjadi nombor ganjil?",
-          "answer": "Ya. Perimeter boleh menjadi sebarang nombor positif — integer, perpuluhan, atau bukan nisbah. Sebagai contoh, segi tiga bersudut tegak dengan kaki 1 dan 1 mempunyai hipotenus √2 ≈ 1.414, memberikan perimeter ≈ 3.414, yang bukan integer atau nisbah."
+          "answer": "Ya. Perimeter boleh menjadi sebarang nombor positif - integer, perpuluhan, atau bukan nisbah. Sebagai contoh, segi tiga bersudut tegak dengan kaki 1 dan 1 mempunyai hipotenus √2 ≈ 1.414, memberikan perimeter ≈ 3.414, yang bukan integer atau nisbah."
         },
         {
           "question": "Mengapakah hipotenus sentiasa menjadi sisi terpanjang?",
@@ -6946,7 +6946,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         "h2": "Wzór na obwód trójkąta prostokątnego",
         "paragraphs": [
           "Obwód dowolnego wielokąta to całkowita długość jego granicy. W przypadku trójkąta prostokątnego granica składa się z dokładnie trzech prostych boków: dwóch ramion (a i b), które tworzą kąt 90°, i jednej przeciwprostokątnej (c), która rozciąga się od kąta prostego do przeciwległego wierzchołka.",
-          "Ponieważ trójkąt prostokątny ma tylko trzy boki, wzór na obwód jest najprostszą możliwą sumą. Nie jest wymagana żadna trygonometria, pierwiastek kwadratowy ani wykładniki — wystarczy dodawanie."
+          "Ponieważ trójkąt prostokątny ma tylko trzy boki, wzór na obwód jest najprostszą możliwą sumą. Nie jest wymagana żadna trygonometria, pierwiastek kwadratowy ani wykładniki - wystarczy dodawanie."
         ],
         "formulas": [
           "P = a + b + c"
@@ -6991,9 +6991,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Trzy strony w skrócie:",
           "listItems": [
-            "Noga a — Jedna z dwóch stron tworzących kąt 90°. Może to być strona pionowa lub pozioma, w zależności od orientacji.",
-            "Noga b — druga strona tworząca kąt 90°. Razem z nogą a wyznacza kąt prosty.",
-            "Przeciwprostokątna c — najdłuższy bok, rozciągający się od jednego wierzchołka kąta ostrego do drugiego, dokładnie naprzeciwko kąta prostego.",
+            "Noga a - Jedna z dwóch stron tworzących kąt 90°. Może to być strona pionowa lub pozioma, w zależności od orientacji.",
+            "Noga b - druga strona tworząca kąt 90°. Razem z nogą a wyznacza kąt prosty.",
+            "Przeciwprostokątna c - najdłuższy bok, rozciągający się od jednego wierzchołka kąta ostrego do drugiego, dokładnie naprzeciwko kąta prostego.",
             "Zachodzi zależność pitagorejska: a² + b² = c². Dzięki temu możesz sprawdzić, czy Twoje trzy wartości faktycznie tworzą trójkąt prostokątny."
           ]
         },
@@ -7023,7 +7023,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "paragraphs": [
             "Ćwiczenia z różnymi trójkątami pomagają budować pewność siebie. Poniżej znajdują się trzy kolejne przykłady użycia typowych trójek pitagorejskich i wartości dziesiętnych."
           ],
-          "listTitle": "Przykład 1 — Trójkąt 5-12-13:",
+          "listTitle": "Przykład 1 - Trójkąt 5-12-13:",
           "listItems": [
             "Dane: a = 5, b = 12, c = 13",
             "P = 5 + 12 + 13 = 30 units",
@@ -7031,7 +7031,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Przykład 2 — Trójkąt 8-15-17",
+          "h2": "Przykład 2 - Trójkąt 8-15-17",
           "paragraphs": [
             "Dane: a = 8, b = 15, c = 17. To kolejna trójka pitagorejska, w której wszystkie boki są liczbami całkowitymi."
           ],
@@ -7042,14 +7042,14 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Przykład 3 — Boki dziesiętne",
+          "h2": "Przykład 3 - Boki dziesiętne",
           "paragraphs": [
             "Nie wszystkie trójkąty prostokątne mają równe boki w postaci liczb całkowitych. Dane: a = 2,5, b = 6, c = 6,5."
           ],
           "listItems": [
             "P = 2,5 + 6 + 6,5 = 15 jednostek",
             "Weryfikacja: 2,5² + 6² = 6,25 + 36 = 42,25 = 6,5² ✓",
-            "Wartości dziesiętne działają w ten sam sposób — wystarczy je dodać bezpośrednio."
+            "Wartości dziesiętne działają w ten sam sposób - wystarczy je dodać bezpośrednio."
           ]
         },
         {
@@ -7067,13 +7067,13 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Typowe zastosowania w świecie rzeczywistym:",
           "listItems": [
-            "Ogrodzenie — trójkątna grządka ogrodowa lub narożna działka wymaga ogrodzenia ze wszystkich trzech stron. Obwód informuje, ile metrów liniowych ogrodzenia kupić.",
-            "Przycinanie i formowanie — trójkątny element architektoniczny (np. szczyt) wymaga przycięcia wzdłuż krawędzi. Obwód określa całkowitą długość wykończenia.",
-            "Drut i lina — oprawienie prostokątnej ekspozycji, banera lub żagla wymaga liny, drutu lub krawędzi równej obwodowi.",
-            "Ścieżki do joggingu i spacerów — Trójkątna bieżnia lub ścieżka spacerowa wokół prostokątnego obszaru parku ma całkowitą długość równą obwodowi.",
-            "Układ konstrukcji — budowniczowie stosują zasadę 3-4-5, aby sprawdzić, czy narożnik jest kwadratowy. Znajomość obwodu pomaga w weryfikacji pomiarów.",
-            "Rękodzieło i szycie — wiązanie, lamówka lub koronka wokół trójkątnej poduszki lub proporczyka wymaga materiału o długości obwodowej.",
-            "Obliczenia mapowe i pomiarowe — Geodeci mierzą trójkątne działki i potrzebują obwodu do opisów granic i zapisów nieruchomości."
+            "Ogrodzenie - trójkątna grządka ogrodowa lub narożna działka wymaga ogrodzenia ze wszystkich trzech stron. Obwód informuje, ile metrów liniowych ogrodzenia kupić.",
+            "Przycinanie i formowanie - trójkątny element architektoniczny (np. szczyt) wymaga przycięcia wzdłuż krawędzi. Obwód określa całkowitą długość wykończenia.",
+            "Drut i lina - oprawienie prostokątnej ekspozycji, banera lub żagla wymaga liny, drutu lub krawędzi równej obwodowi.",
+            "Ścieżki do joggingu i spacerów - Trójkątna bieżnia lub ścieżka spacerowa wokół prostokątnego obszaru parku ma całkowitą długość równą obwodowi.",
+            "Układ konstrukcji - budowniczowie stosują zasadę 3-4-5, aby sprawdzić, czy narożnik jest kwadratowy. Znajomość obwodu pomaga w weryfikacji pomiarów.",
+            "Rękodzieło i szycie - wiązanie, lamówka lub koronka wokół trójkątnej poduszki lub proporczyka wymaga materiału o długości obwodowej.",
+            "Obliczenia mapowe i pomiarowe - Geodeci mierzą trójkątne działki i potrzebują obwodu do opisów granic i zapisów nieruchomości."
           ]
         },
         {
@@ -7107,12 +7107,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Uważaj na te pułapki:",
           "listItems": [
-            "Używanie tylko dwóch stron — obwód wymaga wszystkich trzech boków. Zapomnienie przeciwprostokątnej lub jednej nogi daje niepełną odpowiedź.",
-            "Mieszanie jednostek — jeśli odnoga a jest wyrażona w calach, a odnoga b jest wyrażona w centymetrach, suma nie ma znaczenia. Najpierw zamień na pojedynczą jednostkę.",
-            "Mylenie obwodu z polem — obwód to długość (mierzona w jednostkach), podczas gdy powierzchnia to powierzchnia (mierzona w jednostkach kwadratowych). Upewnij się, że wiesz, którego dotyczy problem.",
-            "Korzystając z boków, które nie tworzą trójkąta prostokątnego — sprawdź, czy a² + b² = c². Jeśli to równanie nie jest spełnione, trójkąt nie jest trójkątem prostokątnym, a c nie jest prawdziwą przeciwprostokątną.",
-            "Zbyt wczesne zaokrąglanie — jeśli jedna strona jest irracjonalna (np. √2), zachowaj pełną precyzję aż do ostatniego dodania, aby uniknąć kumulowania się błędów zaokrągleń.",
-            "Wprowadzenie przeciwprostokątnej jako nogi — przeciwprostokątna musi być najdłuższym bokiem. Jeśli w polu przeciwprostokątnej umieścisz krótszą wartość, diagram będzie wyglądał błędnie, a kontrola pitagorejska zakończy się niepowodzeniem."
+            "Używanie tylko dwóch stron - obwód wymaga wszystkich trzech boków. Zapomnienie przeciwprostokątnej lub jednej nogi daje niepełną odpowiedź.",
+            "Mieszanie jednostek - jeśli odnoga a jest wyrażona w calach, a odnoga b jest wyrażona w centymetrach, suma nie ma znaczenia. Najpierw zamień na pojedynczą jednostkę.",
+            "Mylenie obwodu z polem - obwód to długość (mierzona w jednostkach), podczas gdy powierzchnia to powierzchnia (mierzona w jednostkach kwadratowych). Upewnij się, że wiesz, którego dotyczy problem.",
+            "Korzystając z boków, które nie tworzą trójkąta prostokątnego - sprawdź, czy a² + b² = c². Jeśli to równanie nie jest spełnione, trójkąt nie jest trójkątem prostokątnym, a c nie jest prawdziwą przeciwprostokątną.",
+            "Zbyt wczesne zaokrąglanie - jeśli jedna strona jest irracjonalna (np. √2), zachowaj pełną precyzję aż do ostatniego dodania, aby uniknąć kumulowania się błędów zaokrągleń.",
+            "Wprowadzenie przeciwprostokątnej jako nogi - przeciwprostokątna musi być najdłuższym bokiem. Jeśli w polu przeciwprostokątnej umieścisz krótszą wartość, diagram będzie wyglądał błędnie, a kontrola pitagorejska zakończy się niepowodzeniem."
           ]
         },
         {
@@ -7160,7 +7160,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Co oznacza każda zmienna w P = a + b + c?",
-          "answer": "P to obwód (całkowita długość granicy). a jest jedną nogą trójkąta prostokątnego. b to druga noga. c to przeciwprostokątna — najdłuższy bok leżący naprzeciwko kąta prostego. Obie nogi tworzą narożnik 90°."
+          "answer": "P to obwód (całkowita długość granicy). a jest jedną nogą trójkąta prostokątnego. b to druga noga. c to przeciwprostokątna - najdłuższy bok leżący naprzeciwko kąta prostego. Obie nogi tworzą narożnik 90°."
         },
         {
           "question": "Czy mogę znaleźć obwód mający tylko dwa boki?",
@@ -7188,7 +7188,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Czy obwód trójkąta prostokątnego może być liczbą nieparzystą?",
-          "answer": "Tak. Obwód może być dowolną liczbą dodatnią — całkowitą, dziesiętną lub niewymierną. Na przykład trójkąt prostokątny o nogach 1 i 1 ma przeciwprostokątną √2 ≈ 1,414, co daje obwód ≈ 3,414, który nie jest ani liczbą całkowitą, ani wymierną."
+          "answer": "Tak. Obwód może być dowolną liczbą dodatnią - całkowitą, dziesiętną lub niewymierną. Na przykład trójkąt prostokątny o nogach 1 i 1 ma przeciwprostokątną √2 ≈ 1,414, co daje obwód ≈ 3,414, który nie jest ani liczbą całkowitą, ani wymierną."
         },
         {
           "question": "Dlaczego przeciwprostokątna jest zawsze najdłuższym bokiem?",
@@ -7586,7 +7586,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         "h2": "Rumus Keliling Segitiga Siku-siku",
         "paragraphs": [
           "Keliling suatu poligon adalah panjang total batasnya. Untuk segitiga siku-siku, batasnya terdiri dari tiga sisi lurus: dua kaki (a dan b) yang membentuk sudut 90°, dan satu sisi miring (c) yang membentang dari sudut siku-siku ke titik sudut di depannya.",
-          "Karena segitiga siku-siku hanya memiliki tiga sisi, rumus kelilingnya adalah jumlah yang paling sederhana. Tidak diperlukan trigonometri, akar kuadrat, atau eksponen — cukup penjumlahan."
+          "Karena segitiga siku-siku hanya memiliki tiga sisi, rumus kelilingnya adalah jumlah yang paling sederhana. Tidak diperlukan trigonometri, akar kuadrat, atau eksponen - cukup penjumlahan."
         ],
         "formulas": [
           "P = a + b + c"
@@ -7631,9 +7631,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Sekilas tentang ketiga sisi:",
           "listItems": [
-            "Kaki a — Salah satu dari dua sisi yang membentuk sudut 90°. Bisa sisi vertikal atau horizontal, tergantung orientasinya.",
-            "Kaki b — Sisi lain yang membentuk sudut 90°. Bersama dengan kaki a, ini menentukan sudut siku-siku.",
-            "Sisi miring c — Sisi terpanjang, membentang dari satu titik sudut lancip ke titik sudut lancip lainnya, berhadapan langsung dengan sudut siku-siku.",
+            "Kaki a - Salah satu dari dua sisi yang membentuk sudut 90°. Bisa sisi vertikal atau horizontal, tergantung orientasinya.",
+            "Kaki b - Sisi lain yang membentuk sudut 90°. Bersama dengan kaki a, ini menentukan sudut siku-siku.",
+            "Sisi miring c - Sisi terpanjang, membentang dari satu titik sudut lancip ke titik sudut lancip lainnya, berhadapan langsung dengan sudut siku-siku.",
             "Hubungan Pythagoras berlaku: a² + b² = c². Ini memungkinkan Anda memverifikasi bahwa ketiga nilai Anda benar-benar membentuk segitiga siku-siku."
           ]
         },
@@ -7663,7 +7663,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "paragraphs": [
             "Berlatih dengan segitiga yang berbeda membantu membangun kepercayaan diri. Di bawah ini adalah tiga contoh yang berhasil menggunakan tripel Pythagoras dan nilai desimal yang umum."
           ],
-          "listTitle": "Contoh 1 — Segitiga 5-12-13:",
+          "listTitle": "Contoh 1 - Segitiga 5-12-13:",
           "listItems": [
             "Diketahui: a = 5, b = 12, c = 13",
             "P = 5 + 12 + 13 = 30 units",
@@ -7671,7 +7671,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Contoh 2 — Segitiga 8-15-17",
+          "h2": "Contoh 2 - Segitiga 8-15-17",
           "paragraphs": [
             "Diketahui: a = 8, b = 15, c = 17. Ini adalah tripel Pythagoras lainnya yang semua sisinya adalah bilangan bulat."
           ],
@@ -7682,14 +7682,14 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Contoh 3 — Sisi Desimal",
+          "h2": "Contoh 3 - Sisi Desimal",
           "paragraphs": [
             "Tidak semua segitiga siku-siku mempunyai sisi-sisi yang tersusun rapi. Diketahui: a = 2,5, b = 6, c = 6,5."
           ],
           "listItems": [
             "P = 2,5 + 6 + 6,5 = 15 satuan",
             "Verifikasi: 2,5² + 6² = 6,25 + 36 = 42,25 = 6,5² ✓",
-            "Nilai desimal bekerja dengan cara yang sama — cukup tambahkan secara langsung."
+            "Nilai desimal bekerja dengan cara yang sama - cukup tambahkan secara langsung."
           ]
         },
         {
@@ -7708,12 +7708,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listTitle": "Penggunaan umum di dunia nyata:",
           "listItems": [
             "Pagar - Tempat tidur taman berbentuk segitiga atau lahan sudut membutuhkan pagar di ketiga sisinya. Perimeter memberi tahu Anda berapa banyak pagar linier yang harus dibeli.",
-            "Trim dan cetakan — Fitur arsitektur segitiga (seperti ujung atap pelana) perlu dipangkas di sepanjang tepinya. Perimeter memberikan total panjang trim.",
-            "Kawat dan tali — Membingkai layar, spanduk, atau layar bersudut siku-siku memerlukan tali, kawat, atau tepian yang sama dengan kelilingnya.",
-            "Jalur joging dan jalan kaki — Lintasan lari berbentuk segitiga atau jalur jalan kaki yang mengelilingi area taman berbentuk siku-siku memiliki jarak total yang sama dengan kelilingnya.",
-            "Tata letak konstruksi — Pembangun menggunakan aturan 3-4-5 untuk memeriksa apakah suatu sudut berbentuk persegi. Mengetahui keliling membantu memverifikasi pengukuran.",
-            "Kerajinan dan menjahit — Mengikat, memipih, atau merenda di sekeliling bantalan atau panji berbentuk segitiga membutuhkan bahan sepanjang keliling.",
-            "Perhitungan peta dan survei — Surveyor mengukur bidang tanah berbentuk segitiga dan memerlukan keliling untuk deskripsi batas dan catatan properti."
+            "Trim dan cetakan - Fitur arsitektur segitiga (seperti ujung atap pelana) perlu dipangkas di sepanjang tepinya. Perimeter memberikan total panjang trim.",
+            "Kawat dan tali - Membingkai layar, spanduk, atau layar bersudut siku-siku memerlukan tali, kawat, atau tepian yang sama dengan kelilingnya.",
+            "Jalur joging dan jalan kaki - Lintasan lari berbentuk segitiga atau jalur jalan kaki yang mengelilingi area taman berbentuk siku-siku memiliki jarak total yang sama dengan kelilingnya.",
+            "Tata letak konstruksi - Pembangun menggunakan aturan 3-4-5 untuk memeriksa apakah suatu sudut berbentuk persegi. Mengetahui keliling membantu memverifikasi pengukuran.",
+            "Kerajinan dan menjahit - Mengikat, memipih, atau merenda di sekeliling bantalan atau panji berbentuk segitiga membutuhkan bahan sepanjang keliling.",
+            "Perhitungan peta dan survei - Surveyor mengukur bidang tanah berbentuk segitiga dan memerlukan keliling untuk deskripsi batas dan catatan properti."
           ]
         },
         {
@@ -7728,7 +7728,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "h2": "Tip Konversi Satuan",
           "paragraphs": [
             "Hasil keliling hanya bermakna jika ketiga sisi masukan menggunakan satuan yang sama. Jika pengukuran Anda berada dalam satuan yang berbeda, konversikan terlebih dahulu. Kalkulator menyertakan pemilih unit untuk setiap kolom masukan untuk menangani konversi secara otomatis.",
-            "Ingatlah bahwa keliling adalah pengukuran linier, jadi konversinya mengikuti rasio panjang standar — bukan rasio luas. Misalnya, untuk mengonversi dari kaki ke meter, kalikan dengan 0,3048 (bukan 0,3048²)."
+            "Ingatlah bahwa keliling adalah pengukuran linier, jadi konversinya mengikuti rasio panjang standar - bukan rasio luas. Misalnya, untuk mengonversi dari kaki ke meter, kalikan dengan 0,3048 (bukan 0,3048²)."
           ],
           "listTitle": "Pengingat konversi cepat:",
           "listItems": [
@@ -7747,12 +7747,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Waspadai jebakan berikut:",
           "listItems": [
-            "Hanya menggunakan dua sisi — Keliling membutuhkan ketiga sisinya. Melupakan sisi miring atau salah satu kaki memberikan jawaban yang tidak lengkap.",
-            "Satuan pencampur — Jika bagian a dalam inci dan bagian b dalam sentimeter, jumlahnya tidak ada artinya. Konversikan ke satuan terlebih dahulu.",
-            "Membingungkan keliling dengan luas — Keliling adalah panjang (diukur dalam satuan), sedangkan luas adalah permukaan (diukur dalam satuan persegi). Pastikan Anda tahu masalah mana yang ditanyakan.",
-            "Menggunakan sisi-sisi yang tidak membentuk segitiga siku-siku — Periksa apakah a² + b² = c². Jika persamaan ini tidak berlaku, berarti segitiga tersebut bukan segitiga siku-siku dan c bukan sisi miring sebenarnya.",
-            "Pembulatan terlalu dini — Jika satu sisi tidak rasional (seperti √2), pertahankan presisi penuh hingga penjumlahan terakhir untuk menghindari akumulasi kesalahan pembulatan.",
-            "Memasuki sisi miring sebagai kaki — Sisi miring harus merupakan sisi terpanjang. Jika Anda menempatkan nilai yang lebih pendek di bidang sisi miring, diagram akan terlihat salah dan pemeriksaan Pythagoras akan gagal."
+            "Hanya menggunakan dua sisi - Keliling membutuhkan ketiga sisinya. Melupakan sisi miring atau salah satu kaki memberikan jawaban yang tidak lengkap.",
+            "Satuan pencampur - Jika bagian a dalam inci dan bagian b dalam sentimeter, jumlahnya tidak ada artinya. Konversikan ke satuan terlebih dahulu.",
+            "Membingungkan keliling dengan luas - Keliling adalah panjang (diukur dalam satuan), sedangkan luas adalah permukaan (diukur dalam satuan persegi). Pastikan Anda tahu masalah mana yang ditanyakan.",
+            "Menggunakan sisi-sisi yang tidak membentuk segitiga siku-siku - Periksa apakah a² + b² = c². Jika persamaan ini tidak berlaku, berarti segitiga tersebut bukan segitiga siku-siku dan c bukan sisi miring sebenarnya.",
+            "Pembulatan terlalu dini - Jika satu sisi tidak rasional (seperti √2), pertahankan presisi penuh hingga penjumlahan terakhir untuk menghindari akumulasi kesalahan pembulatan.",
+            "Memasuki sisi miring sebagai kaki - Sisi miring harus merupakan sisi terpanjang. Jika Anda menempatkan nilai yang lebih pendek di bidang sisi miring, diagram akan terlihat salah dan pemeriksaan Pythagoras akan gagal."
           ]
         },
         {
@@ -7800,7 +7800,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Apa arti setiap variabel pada P = a + b + c?",
-          "answer": "P adalah keliling (panjang batas total). a adalah salah satu kaki segitiga siku-siku. b adalah kaki lainnya. c adalah sisi miring — sisi terpanjang yang berhadapan dengan sudut siku-siku. Kedua kakinya membentuk sudut 90°."
+          "answer": "P adalah keliling (panjang batas total). a adalah salah satu kaki segitiga siku-siku. b adalah kaki lainnya. c adalah sisi miring - sisi terpanjang yang berhadapan dengan sudut siku-siku. Kedua kakinya membentuk sudut 90°."
         },
         {
           "question": "Bisakah saya mencari keliling yang hanya memiliki dua sisi?",
@@ -7828,7 +7828,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Apakah keliling segitiga siku-siku bisa berupa bilangan ganjil?",
-          "answer": "Ya. Keliling dapat berupa bilangan positif apa pun — bilangan bulat, desimal, atau irasional. Misalnya, segitiga siku-siku dengan kaki 1 dan 1 memiliki sisi miring √2 ≈ 1,414, sehingga kelilingnya ≈ 3,414, yang bukan bilangan bulat dan bukan bilangan rasional."
+          "answer": "Ya. Keliling dapat berupa bilangan positif apa pun - bilangan bulat, desimal, atau irasional. Misalnya, segitiga siku-siku dengan kaki 1 dan 1 memiliki sisi miring √2 ≈ 1,414, sehingga kelilingnya ≈ 3,414, yang bukan bilangan bulat dan bukan bilangan rasional."
         },
         {
           "question": "Mengapa sisi miring selalu merupakan sisi terpanjang?",
@@ -8271,7 +8271,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "الجوانب الثلاثة في لمحة:",
           "listItems": [
-            "Leg a — One of the two sides that forms the 90° angle. It can be the vertical or horizontal side, depending on orientation.",
+            "Leg a - One of the two sides that forms the 90° angle. It can be the vertical or horizontal side, depending on orientation.",
             "الساق ب - الجانب الآخر الذي يشكل زاوية 90 درجة. جنبًا إلى جنب مع الساق أ، فإنه يحدد الزاوية القائمة.",
             "الوتر ج - الضلع الأطول، يمتد من قمة زاوية حادة إلى أخرى، مقابل الزاوية القائمة مباشرة.",
             "علاقة فيثاغورس هي: a² + b² = c². يتيح لك هذا التحقق من أن قيمك الثلاث تشكل في الواقع مثلثًا قائمًا."
@@ -8329,7 +8329,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listItems": [
             "ف = 2.5 + 6 + 6.5 = 15 وحدة",
             "التحقق: 2.5² + 6² = 6.25 + 36 = 42.25 = 6.5² ✓",
-            "تعمل القيم العشرية بنفس الطريقة — ما عليك سوى إضافتها مباشرةً."
+            "تعمل القيم العشرية بنفس الطريقة - ما عليك سوى إضافتها مباشرةً."
           ]
         },
         {
@@ -8350,8 +8350,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "المبارزة - يتطلب سرير الحديقة المثلث أو قطعة الأرض سياجًا حول الجوانب الثلاثة. يخبرك المحيط بعدد الأقدام الخطية من السياج التي يجب شراؤها.",
             "التشذيب والقولبة - تحتاج الميزة المعمارية المثلثة (مثل نهاية الجملون) إلى تقليم على طول حوافها. محيط يعطي طول القطع الكلي.",
             "الأسلاك والحبل - يتطلب تأطير شاشة العرض أو اللافتة أو الشراع ذات الزاوية اليمنى حبلًا أو سلكًا أو حواف مساوية للمحيط.",
-            "مسارات الركض والمشي — مسار الجري أو مسار المشي المثلث حول منطقة حديقة قائمة الزاوية له مسافة إجمالية تساوي المحيط.",
-            "تخطيط البناء — يستخدم البناؤون قاعدة 3-4-5 للتحقق مما إذا كانت الزاوية مربعة. تساعد معرفة المحيط في التحقق من القياسات.",
+            "مسارات الركض والمشي - مسار الجري أو مسار المشي المثلث حول منطقة حديقة قائمة الزاوية له مسافة إجمالية تساوي المحيط.",
+            "تخطيط البناء - يستخدم البناؤون قاعدة 3-4-5 للتحقق مما إذا كانت الزاوية مربعة. تساعد معرفة المحيط في التحقق من القياسات.",
             "الحرف اليدوية والخياطة - يتطلب التجليد أو التزيين أو الدانتيل حول وسادة مثلثة أو راية مادة بطول محيطي.",
             "حسابات الخرائط والمسح - يقوم المساحون بقياس قطع الأراضي المثلثة ويحتاجون إلى المحيط لأوصاف الحدود وسجلات الممتلكات."
           ]
@@ -8391,8 +8391,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "وحدات الخلط - إذا كان الساق أ بالبوصة والضلع ب بالسنتيمتر، فإن المجموع ليس له معنى. تحويل إلى وحدة واحدة أولا.",
             "الخلط بين المحيط والمساحة - المحيط هو الطول (يقاس بالوحدات)، في حين أن المساحة عبارة عن سطح (تقاس بالوحدات المربعة). تأكد من أنك تعرف أي واحد تطلب المشكلة.",
             "استخدام الأضلاع التي لا تشكل مثلثًا قائمًا - تأكد من أن a² + b² = c². إذا لم تكن هذه المعادلة صحيحة، فإن المثلث ليس مثلثًا قائمًا و c ليس وترًا حقيقيًا.",
-            "التقريب مبكرًا جدًا — إذا كان أحد الجوانب غير منطقي (مثل √2)، فاحتفظ بالدقة الكاملة حتى الإضافة النهائية لتجنب تراكم أخطاء التقريب.",
-            "دخول الوتر كساق — يجب أن يكون الوتر هو الجانب الأطول. إذا قمت بوضع قيمة أقصر في حقل الوتر، فسيبدو الرسم التخطيطي خاطئًا وسيفشل فحص فيثاغورس."
+            "التقريب مبكرًا جدًا - إذا كان أحد الجوانب غير منطقي (مثل √2)، فاحتفظ بالدقة الكاملة حتى الإضافة النهائية لتجنب تراكم أخطاء التقريب.",
+            "دخول الوتر كساق - يجب أن يكون الوتر هو الجانب الأطول. إذا قمت بوضع قيمة أقصر في حقل الوتر، فسيبدو الرسم التخطيطي خاطئًا وسيفشل فحص فيثاغورس."
           ]
         },
         {
@@ -8440,7 +8440,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "ماذا يعني كل متغير في P = a + b + c؟",
-          "answer": "P هو المحيط (إجمالي طول الحدود). أ هي إحدى ساقي المثلث الأيمن. ب هي الساق الأخرى. ج هو الوتر — أطول ضلع يقع مقابل الزاوية القائمة. تشكل الساقين زاوية 90 درجة."
+          "answer": "P هو المحيط (إجمالي طول الحدود). أ هي إحدى ساقي المثلث الأيمن. ب هي الساق الأخرى. ج هو الوتر - أطول ضلع يقع مقابل الزاوية القائمة. تشكل الساقين زاوية 90 درجة."
         },
         {
           "question": "هل يمكنني العثور على المحيط الذي يحتوي على ضلعين فقط؟",
@@ -8468,7 +8468,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "هل يمكن أن يكون محيط المثلث القائم عددا فرديا؟",
-          "answer": "نعم. يمكن أن يكون المحيط أي رقم موجب — عدد صحيح أو عشري أو غير نسبي. على سبيل المثال، مثلث قائم الزاوية ذو ساقين 1 و1 به وتر √2 ≈ 1.414، مما يعطي المحيط ≈ 3.414، وهو ليس عددًا صحيحًا ولا عقلانيًا."
+          "answer": "نعم. يمكن أن يكون المحيط أي رقم موجب - عدد صحيح أو عشري أو غير نسبي. على سبيل المثال، مثلث قائم الزاوية ذو ساقين 1 و1 به وتر √2 ≈ 1.414، مما يعطي المحيط ≈ 3.414، وهو ليس عددًا صحيحًا ولا عقلانيًا."
         },
         {
           "question": "لماذا يكون الوتر دائمًا هو الضلع الأطول؟",
@@ -8866,7 +8866,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         "h2": "Формула за периметър на правоъгълен триъгълник",
         "paragraphs": [
           "Периметърът на всеки полигон е общата дължина на неговата граница. За правоъгълен триъгълник границата се състои от точно три прави страни: два катета (a и b), които образуват ъгъл от 90°, и една хипотенуза (c), която се простира от правия ъгъл до противоположния връх.",
-          "Тъй като правоъгълният триъгълник има само три страни, формулата за периметър е възможно най-простата сума. Не са необходими тригонометрия, квадратни корени или показатели — просто събиране."
+          "Тъй като правоъгълният триъгълник има само три страни, формулата за периметър е възможно най-простата сума. Не са необходими тригонометрия, квадратни корени или показатели - просто събиране."
         ],
         "formulas": [
           "P = a + b + c"
@@ -8911,9 +8911,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Трите страни с един поглед:",
           "listItems": [
-            "Крак a — Една от двете страни, която образува ъгъл от 90°. Тя може да бъде вертикална или хоризонтална страна, в зависимост от ориентацията.",
-            "Крак b — Другата страна, която образува ъгъл от 90°. Заедно с крака a, той определя правия ъгъл.",
-            "Хипотенуза c — най-дългата страна, простираща се от един връх на остър ъгъл до другия, точно срещу правия ъгъл.",
+            "Крак a - Една от двете страни, която образува ъгъл от 90°. Тя може да бъде вертикална или хоризонтална страна, в зависимост от ориентацията.",
+            "Крак b - Другата страна, която образува ъгъл от 90°. Заедно с крака a, той определя правия ъгъл.",
+            "Хипотенуза c - най-дългата страна, простираща се от един връх на остър ъгъл до другия, точно срещу правия ъгъл.",
             "Съотношението на Питагор е валидно: a² + b² = c². Това ви позволява да проверите дали вашите три стойности всъщност образуват правоъгълен триъгълник."
           ]
         },
@@ -8943,7 +8943,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "paragraphs": [
             "Упражненията с различни триъгълници помагат за изграждането на увереност. По-долу са дадени още три обработени примера, използващи обикновени питагорови тройки и десетични стойности."
           ],
-          "listTitle": "Пример 1 — Триъгълникът 5-12-13:",
+          "listTitle": "Пример 1 - Триъгълникът 5-12-13:",
           "listItems": [
             "Дадено е: a = 5, b = 12, c = 13",
             "P = 5 + 12 + 13 = 30 units",
@@ -8951,7 +8951,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Пример 2 — Триъгълникът 8-15-17",
+          "h2": "Пример 2 - Триъгълникът 8-15-17",
           "paragraphs": [
             "Дадено е: a = 8, b = 15, c = 17. Това е друга питагорова тройка, където всички страни са цели числа."
           ],
@@ -8962,7 +8962,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Пример 3 — десетични страни",
+          "h2": "Пример 3 - десетични страни",
           "paragraphs": [
             "Не всички правоъгълни триъгълници имат чисти цели числа. Дадено е: a = 2,5, b = 6, c = 6,5."
           ],
@@ -8988,12 +8988,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listTitle": "Често срещани употреби в реалния свят:",
           "listItems": [
             "Фехтовка - Триъгълно градинско легло или ъглово място изисква ограда около трите страни. Периметърът ви казва колко линейни фута ограда да купите.",
-            "Облицовка и корнизи — Триъгълна архитектурна характеристика (като фронтон) се нуждае от облицовка по ръбовете. Периметърът дава общата дължина на подстригването.",
-            "Тел и въже — Рамкирането на правоъгълен дисплей, банер или платно изисква въже, тел или кант, равен на периметъра.",
-            "Пътеки за джогинг и разходка — Триъгълна пътека за бягане или пешеходна пътека около паркова зона с прав ъгъл има общо разстояние, равно на периметъра.",
-            "Оформление на конструкцията — Строителите използват правилото 3-4-5, за да проверят дали даден ъгъл е квадратен. Познаването на периметъра помага да се проверят измерванията.",
-            "Занаяти и шиене — Подвързването, кантите или дантелата около триъгълна възглавница или флаг изисква материал с дължина по периметъра.",
-            "Изчисления на карта и проучване — Геодезистите измерват триъгълни парцели и се нуждаят от периметъра за описания на граници и записи на имоти."
+            "Облицовка и корнизи - Триъгълна архитектурна характеристика (като фронтон) се нуждае от облицовка по ръбовете. Периметърът дава общата дължина на подстригването.",
+            "Тел и въже - Рамкирането на правоъгълен дисплей, банер или платно изисква въже, тел или кант, равен на периметъра.",
+            "Пътеки за джогинг и разходка - Триъгълна пътека за бягане или пешеходна пътека около паркова зона с прав ъгъл има общо разстояние, равно на периметъра.",
+            "Оформление на конструкцията - Строителите използват правилото 3-4-5, за да проверят дали даден ъгъл е квадратен. Познаването на периметъра помага да се проверят измерванията.",
+            "Занаяти и шиене - Подвързването, кантите или дантелата около триъгълна възглавница или флаг изисква материал с дължина по периметъра.",
+            "Изчисления на карта и проучване - Геодезистите измерват триъгълни парцели и се нуждаят от периметъра за описания на граници и записи на имоти."
           ]
         },
         {
@@ -9027,12 +9027,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Внимавайте за тези капани:",
           "listItems": [
-            "Използване само на две страни — Периметърът изисква и трите страни. Забравянето на хипотенузата или единия катет дава непълен отговор.",
-            "Единици за смесване — Ако катет a е в инчове, а катет b е в сантиметри, сумата няма значение. Първо преобразувайте в единична единица.",
-            "Объркване на периметър с площ — Периметърът е дължина (измерена в единици), докато площта е повърхност (измерена в квадратни единици). Уверете се, че знаете кой е проблемът.",
-            "Използване на страни, които не образуват правоъгълен триъгълник — Проверете дали a² + b² = c². Ако това уравнение не е валидно, триъгълникът не е правоъгълен триъгълник и c не е истинска хипотенуза.",
-            "Закръгляване твърде рано — Ако едната страна е ирационална (като √2), поддържайте пълна точност до последното добавяне, за да избегнете натрупването на грешка при закръгляване.",
-            "Въвеждане на хипотенузата като катет — Хипотенузата трябва да е най-дългата страна. Ако поставите по-къса стойност в полето на хипотенузата, диаграмата ще изглежда грешна и проверката на Питагор няма да успее."
+            "Използване само на две страни - Периметърът изисква и трите страни. Забравянето на хипотенузата или единия катет дава непълен отговор.",
+            "Единици за смесване - Ако катет a е в инчове, а катет b е в сантиметри, сумата няма значение. Първо преобразувайте в единична единица.",
+            "Объркване на периметър с площ - Периметърът е дължина (измерена в единици), докато площта е повърхност (измерена в квадратни единици). Уверете се, че знаете кой е проблемът.",
+            "Използване на страни, които не образуват правоъгълен триъгълник - Проверете дали a² + b² = c². Ако това уравнение не е валидно, триъгълникът не е правоъгълен триъгълник и c не е истинска хипотенуза.",
+            "Закръгляване твърде рано - Ако едната страна е ирационална (като √2), поддържайте пълна точност до последното добавяне, за да избегнете натрупването на грешка при закръгляване.",
+            "Въвеждане на хипотенузата като катет - Хипотенузата трябва да е най-дългата страна. Ако поставите по-къса стойност в полето на хипотенузата, диаграмата ще изглежда грешна и проверката на Питагор няма да успее."
           ]
         },
         {
@@ -9551,9 +9551,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Bir bakışta üç kenar:",
           "listItems": [
-            "a dik kenarı — 90° açıyı oluşturan iki kenardan biri. Yönelime bağlı olarak dikey veya yatay kenar olabilir.",
-            "b dik kenarı — 90° açıyı oluşturan diğer kenar. a dik kenarı ile birlikte dik açıyı tanımlar.",
-            "c hipotenüsü — En uzun kenar, bir dar açı köşesinden diğerine, doğrudan dik açının karşısına uzanır.",
+            "a dik kenarı - 90° açıyı oluşturan iki kenardan biri. Yönelime bağlı olarak dikey veya yatay kenar olabilir.",
+            "b dik kenarı - 90° açıyı oluşturan diğer kenar. a dik kenarı ile birlikte dik açıyı tanımlar.",
+            "c hipotenüsü - En uzun kenar, bir dar açı köşesinden diğerine, doğrudan dik açının karşısına uzanır.",
             "Pisagor ilişkisi geçerlidir: a² + b² = c². Bu, üç değerinizin gerçekten bir dik üçgen oluşturduğunu doğrulamanızı sağlar."
           ]
         },
@@ -9583,7 +9583,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "paragraphs": [
             "Farklı üçgenlerle pratik yapmak güven oluşturmaya yardımcı olur. Aşağıda, yaygın Pisagor üçlüleri ve ondalık değerleri kullanan üç çözümlü örnek daha verilmiştir."
           ],
-          "listTitle": "Örnek 1 — 5-12-13 üçgeni:",
+          "listTitle": "Örnek 1 - 5-12-13 üçgeni:",
           "listItems": [
             "Verilen: a = 5, b = 12, c = 13",
             "P = 5 + 12 + 13 = 30 birim",
@@ -9591,7 +9591,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Örnek 2 — 8-15-17 Üçgeni",
+          "h2": "Örnek 2 - 8-15-17 Üçgeni",
           "paragraphs": [
             "Verilen: a = 8, b = 15, c = 17. Bu, tüm kenarların tam sayı olduğu başka bir Pisagor üçlüsüdür."
           ],
@@ -9602,14 +9602,14 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Örnek 3 — Ondalık Kenarlar",
+          "h2": "Örnek 3 - Ondalık Kenarlar",
           "paragraphs": [
             "Tüm dik üçgenlerin düzgün tam sayı kenarları yoktur. Verilen: a = 2.5, b = 6, c = 6.5."
           ],
           "listItems": [
             "P = 2.5 + 6 + 6.5 = 15 birim",
             "Doğrulama: 2.5² + 6² = 6.25 + 36 = 42.25 = 6.5² ✓",
-            "Ondalık değerler aynı şekilde çalışır — bunları doğrudan toplayın."
+            "Ondalık değerler aynı şekilde çalışır - bunları doğrudan toplayın."
           ]
         },
         {
@@ -9627,13 +9627,13 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Yaygın gerçek dünya kullanımları:",
           "listItems": [
-            "Çit çekme — Üçgen bir bahçe yatağı veya köşe arsa, üç tarafın etrafına çit gerektirir. Çevre size kaç doğrusal feet çit alacağınızı söyler.",
-            "Pervaz ve kalıp — Üçgen bir mimari özellik (üçgen bir alınlık gibi), kenarları boyunca pervaz gerektirir. Çevre toplam pervaz uzunluğunu verir.",
-            "Tel ve halat — Dik açılı bir ekranı, afişi veya yelkeni çerçevelemek çevreye eşit halat, tel veya kenar gerektirir.",
-            "Koşu ve yürüyüş yolları — Dik açılı bir park alanının etrafındaki üçgen bir koşu parkuru veya yürüyüş yolu çevreye eşit bir toplam mesafeye sahiptir.",
-            "İnşaat yerleşimi — İnşaatçılar bir köşenin kare olup olmadığını kontrol etmek için 3-4-5 kuralını kullanırlar. Çevreyi bilmek ölçümleri doğrulamaya yardımcı olur.",
-            "El sanatları ve dikiş — Üçgen bir yastık veya flamaya etrafında bağlama, biye veya dantel çevre uzunluğunda malzeme gerektirir.",
-            "Harita ve anket hesaplamaları — Haritacılar üçgen arazi parsellerini ölçer ve sınır tanımlamaları ve mülk kayıtları için çevreye ihtiyaç duyarlar."
+            "Çit çekme - Üçgen bir bahçe yatağı veya köşe arsa, üç tarafın etrafına çit gerektirir. Çevre size kaç doğrusal feet çit alacağınızı söyler.",
+            "Pervaz ve kalıp - Üçgen bir mimari özellik (üçgen bir alınlık gibi), kenarları boyunca pervaz gerektirir. Çevre toplam pervaz uzunluğunu verir.",
+            "Tel ve halat - Dik açılı bir ekranı, afişi veya yelkeni çerçevelemek çevreye eşit halat, tel veya kenar gerektirir.",
+            "Koşu ve yürüyüş yolları - Dik açılı bir park alanının etrafındaki üçgen bir koşu parkuru veya yürüyüş yolu çevreye eşit bir toplam mesafeye sahiptir.",
+            "İnşaat yerleşimi - İnşaatçılar bir köşenin kare olup olmadığını kontrol etmek için 3-4-5 kuralını kullanırlar. Çevreyi bilmek ölçümleri doğrulamaya yardımcı olur.",
+            "El sanatları ve dikiş - Üçgen bir yastık veya flamaya etrafında bağlama, biye veya dantel çevre uzunluğunda malzeme gerektirir.",
+            "Harita ve anket hesaplamaları - Haritacılar üçgen arazi parsellerini ölçer ve sınır tanımlamaları ve mülk kayıtları için çevreye ihtiyaç duyarlar."
           ]
         },
         {
@@ -9667,12 +9667,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Bu tuzaklara dikkat edin:",
           "listItems": [
-            "Yalnızca iki kenar kullanmak — Çevre için üç kenar da gereklidir. Hipotenüsü veya bir dik kenarı unutmak eksik bir cevap verir.",
-            "Birimleri karıştırmak — Eğer a dik kenarı inç cinsinden ve b dik kenarı santimetre cinsinden ise toplamın hiçbir anlamı yoktur. Önce tek bir birime dönüştürün.",
-            "Çevreyi alanla karıştırmak — Çevre bir uzunluktur (birim cinsinden ölçülür), alan ise bir yüzeydir (birimkare cinsinden ölçülür). Problemin hangisini sorduğunu bildiğinizden emin olun.",
-            "Bir dik üçgen oluşturmayan kenarları kullanmak — a² + b² = c² olduğunu kontrol edin. Bu denklem geçerli değilse, üçgen bir dik üçgen değildir ve c gerçek bir hipotenüs değildir.",
-            "Çok erken yuvarlamak — Eğer bir kenar irrasyonel ise (örneğin √2), yuvarlama hatalarının birikmesini önlemek için son toplamaya kadar tam hassasiyeti koruyun.",
-            "Hipotenüsü bir dik kenar olarak girmek — Hipotenüs en uzun kenar olmalıdır. Hipotenüs alanına daha kısa bir değer yerleştirirseniz, diyagram yanlış görünecek ve Pisagor kontrolü başarısız olacaktır."
+            "Yalnızca iki kenar kullanmak - Çevre için üç kenar da gereklidir. Hipotenüsü veya bir dik kenarı unutmak eksik bir cevap verir.",
+            "Birimleri karıştırmak - Eğer a dik kenarı inç cinsinden ve b dik kenarı santimetre cinsinden ise toplamın hiçbir anlamı yoktur. Önce tek bir birime dönüştürün.",
+            "Çevreyi alanla karıştırmak - Çevre bir uzunluktur (birim cinsinden ölçülür), alan ise bir yüzeydir (birimkare cinsinden ölçülür). Problemin hangisini sorduğunu bildiğinizden emin olun.",
+            "Bir dik üçgen oluşturmayan kenarları kullanmak - a² + b² = c² olduğunu kontrol edin. Bu denklem geçerli değilse, üçgen bir dik üçgen değildir ve c gerçek bir hipotenüs değildir.",
+            "Çok erken yuvarlamak - Eğer bir kenar irrasyonel ise (örneğin √2), yuvarlama hatalarının birikmesini önlemek için son toplamaya kadar tam hassasiyeti koruyun.",
+            "Hipotenüsü bir dik kenar olarak girmek - Hipotenüs en uzun kenar olmalıdır. Hipotenüs alanına daha kısa bir değer yerleştirirseniz, diyagram yanlış görünecek ve Pisagor kontrolü başarısız olacaktır."
           ]
         },
         {
@@ -9720,7 +9720,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "P = a + b + c formülündeki her değişkenin anlamı nedir?",
-          "answer": "P, çevredir (toplam sınır uzunluğu). a, dik üçgenin bir dik kenarıdır. b, diğer dik kenardır. c ise hipotenüstür — dik açının karşısında yer alan en uzun kenar. İki dik kenar 90° köşeyi oluşturur."
+          "answer": "P, çevredir (toplam sınır uzunluğu). a, dik üçgenin bir dik kenarıdır. b, diğer dik kenardır. c ise hipotenüstür - dik açının karşısında yer alan en uzun kenar. İki dik kenar 90° köşeyi oluşturur."
         },
         {
           "question": "Çevreyi sadece iki kenarla bulabilir miyim?",
@@ -9748,7 +9748,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Bir dik üçgenin çevresi tek sayı olabilir mi?",
-          "answer": "Evet. Çevre herhangi bir pozitif sayı olabilir — tam sayı, ondalık veya irrasyonel. Örneğin, 1 ve 1 dik kenarlarına sahip bir dik üçgenin hipotenüsü √2 ≈ 1.414'tür, bu da ne tam sayı ne de rasyonel olan ≈ 3.414'lük bir çevre verir."
+          "answer": "Evet. Çevre herhangi bir pozitif sayı olabilir - tam sayı, ondalık veya irrasyonel. Örneğin, 1 ve 1 dik kenarlarına sahip bir dik üçgenin hipotenüsü √2 ≈ 1.414'tür, bu da ne tam sayı ne de rasyonel olan ≈ 3.414'lük bir çevre verir."
         },
         {
           "question": "Neden hipotenüs her zaman en uzun kenardır?",
@@ -10146,7 +10146,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         "h2": "Omkretsformel för rätvinklig triangel",
         "paragraphs": [
           "Omkretsen av en polygon är dess gräns totala längd. För en rätvinklig triangel består gränsen av exakt tre raka sidor: två kateter (a och b) som bildar 90°-vinkeln, och en hypotenusa (c) som sträcker sig tvärs över från den räta vinkeln till det motsatta hörnet.",
-          "Eftersom en rätvinklig triangel bara har tre sidor är omkretsformeln den enklast möjliga summan. Ingen trigonometri, kvadratrötter eller exponenter behövs — bara addition."
+          "Eftersom en rätvinklig triangel bara har tre sidor är omkretsformeln den enklast möjliga summan. Ingen trigonometri, kvadratrötter eller exponenter behövs - bara addition."
         ],
         "formulas": [
           "P = a + b + c"
@@ -10191,9 +10191,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "De tre sidorna i korthet:",
           "listItems": [
-            "Katet a — En av de två sidorna som bildar 90°-vinkeln. Den kan vara den vertikala eller horisontella sidan, beroende på orientering.",
-            "Katet b — Den andra sidan som bildar 90°-vinkeln. Tillsammans med katet a definierar den den räta vinkeln.",
-            "Hypotenusa c — Den längsta sidan, som sträcker sig från det ena spetsiga hörnet till det andra, direkt mittemot den räta vinkeln.",
+            "Katet a - En av de två sidorna som bildar 90°-vinkeln. Den kan vara den vertikala eller horisontella sidan, beroende på orientering.",
+            "Katet b - Den andra sidan som bildar 90°-vinkeln. Tillsammans med katet a definierar den den räta vinkeln.",
+            "Hypotenusa c - Den längsta sidan, som sträcker sig från det ena spetsiga hörnet till det andra, direkt mittemot den räta vinkeln.",
             "Pythagoras samband gäller: a² + b² = c². Detta låter dig verifiera att dina tre värden faktiskt bildar en rätvinklig triangel."
           ]
         },
@@ -10223,7 +10223,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "paragraphs": [
             "Att öva med olika trianglar hjälper till att bygga förtroende. Nedan finns tre fler lösta exempel som använder vanliga Pythagoreiska tripplar och decimalvärden."
           ],
-          "listTitle": "Exempel 1 — 5-12-13-triangeln:",
+          "listTitle": "Exempel 1 - 5-12-13-triangeln:",
           "listItems": [
             "Givet: a = 5, b = 12, c = 13",
             "P = 5 + 12 + 13 = 30 enheter",
@@ -10231,7 +10231,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Exempel 2 — 8-15-17-triangeln",
+          "h2": "Exempel 2 - 8-15-17-triangeln",
           "paragraphs": [
             "Givet: a = 8, b = 15, c = 17. Detta är en annan Pythagoreisk trippel där alla sidor är heltal."
           ],
@@ -10242,14 +10242,14 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Exempel 3 — Decimalsidor",
+          "h2": "Exempel 3 - Decimalsidor",
           "paragraphs": [
             "Inte alla rätvinkliga trianglar har jämna heltalssidor. Givet: a = 2.5, b = 6, c = 6.5."
           ],
           "listItems": [
             "P = 2.5 + 6 + 6.5 = 15 enheter",
             "Verifiering: 2.5² + 6² = 6.25 + 36 = 42.25 = 6.5² ✓",
-            "Decimalvärden fungerar på samma sätt — bara addera dem direkt."
+            "Decimalvärden fungerar på samma sätt - bara addera dem direkt."
           ]
         },
         {
@@ -10267,13 +10267,13 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Vanliga användningsområden i verkligheten:",
           "listItems": [
-            "Stängsel — En triangulär rabatt eller hörntomt kräver stängsel runt alla tre sidorna. Omkretsen talar om hur många löpmeter stängsel du ska köpa.",
-            "Lister — En triangulär arkitektonisk detalj (som en gavel) behöver lister längs sina kanter. Omkretsen ger den totala listlängden.",
-            "Tråd och rep — Att rama in en rätvinklig skärm, banderoll eller segel kräver rep, tråd eller kantning lika med omkretsen.",
-            "Löp- och promenadspår — Ett triangulärt löpspår eller promenadspår runt ett rätvinkligt parkområde har ett totalt avstånd lika med omkretsen.",
-            "Byggnadslayout — Byggare använder 3-4-5-regeln för att kontrollera om ett hörn är rätvinkligt. Att känna till omkretsen hjälper till att verifiera mätningar.",
-            "Hantverk och sömnad — Kantband, passpoal eller spets runt en triangulär kudde eller vimpel kräver material av omkretslängd.",
-            "Kart- och lantmäteriberäkningar — Lantmätare mäter triangulära landstycken och behöver omkretsen för gränsbeskrivningar och fastighetsregister."
+            "Stängsel - En triangulär rabatt eller hörntomt kräver stängsel runt alla tre sidorna. Omkretsen talar om hur många löpmeter stängsel du ska köpa.",
+            "Lister - En triangulär arkitektonisk detalj (som en gavel) behöver lister längs sina kanter. Omkretsen ger den totala listlängden.",
+            "Tråd och rep - Att rama in en rätvinklig skärm, banderoll eller segel kräver rep, tråd eller kantning lika med omkretsen.",
+            "Löp- och promenadspår - Ett triangulärt löpspår eller promenadspår runt ett rätvinkligt parkområde har ett totalt avstånd lika med omkretsen.",
+            "Byggnadslayout - Byggare använder 3-4-5-regeln för att kontrollera om ett hörn är rätvinkligt. Att känna till omkretsen hjälper till att verifiera mätningar.",
+            "Hantverk och sömnad - Kantband, passpoal eller spets runt en triangulär kudde eller vimpel kräver material av omkretslängd.",
+            "Kart- och lantmäteriberäkningar - Lantmätare mäter triangulära landstycken och behöver omkretsen för gränsbeskrivningar och fastighetsregister."
           ]
         },
         {
@@ -10288,7 +10288,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "h2": "Tips för enhetskonvertering",
           "paragraphs": [
             "Omkretsresultatet är endast meningsfullt när alla tre inmatningssidorna använder samma enhet. Om dina mått är i olika enheter, konvertera dem först. Kalkylatorn innehåller en enhetsväljare för varje inmatningsfält för att hantera konverteringar automatiskt.",
-            "Kom ihåg att omkretsen är en linjär mätning, så konverteringar följer standardlängdförhållanden — inte arealförhållanden. För att till exempel konvertera från fot till meter, multiplicera med 0.3048 (inte med 0.3048²)."
+            "Kom ihåg att omkretsen är en linjär mätning, så konverteringar följer standardlängdförhållanden - inte arealförhållanden. För att till exempel konvertera från fot till meter, multiplicera med 0.3048 (inte med 0.3048²)."
           ],
           "listTitle": "Snabba påminnelser om konvertering:",
           "listItems": [
@@ -10307,12 +10307,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Se upp för dessa fallgropar:",
           "listItems": [
-            "Att bara använda två sidor — Omkretsen kräver alla tre sidorna. Att glömma hypotenusan eller en katet ger ett ofullständigt svar.",
-            "Att blanda enheter — Om katet a är i tum och katet b är i centimeter har summan ingen mening. Konvertera till en gemensam enhet först.",
-            "Att förväxla omkrets med area — Omkrets är en längd (mätt i enheter), medan area är en yta (mätt i kvadratenheter). Se till att du vet vilken problemet frågar efter.",
-            "Att använda sidor som inte bildar en rätvinklig triangel — Kontrollera att a² + b² = c². Om denna ekvation inte stämmer är triangeln inte en rätvinklig triangel och c är inte en sann hypotenusa.",
-            "Att avrunda för tidigt — Om en sida är irrationell (som √2), behåll full precision fram till den slutliga additionen för att undvika att ackumulera avrundningsfel.",
-            "Att ange hypotenusan som en katet — Hypotenusan måste vara den längsta sidan. Om du placerar ett kortare värde i hypotenusafältet kommer diagrammet att se fel ut och Pythagoras kontroll kommer att misslyckas."
+            "Att bara använda två sidor - Omkretsen kräver alla tre sidorna. Att glömma hypotenusan eller en katet ger ett ofullständigt svar.",
+            "Att blanda enheter - Om katet a är i tum och katet b är i centimeter har summan ingen mening. Konvertera till en gemensam enhet först.",
+            "Att förväxla omkrets med area - Omkrets är en längd (mätt i enheter), medan area är en yta (mätt i kvadratenheter). Se till att du vet vilken problemet frågar efter.",
+            "Att använda sidor som inte bildar en rätvinklig triangel - Kontrollera att a² + b² = c². Om denna ekvation inte stämmer är triangeln inte en rätvinklig triangel och c är inte en sann hypotenusa.",
+            "Att avrunda för tidigt - Om en sida är irrationell (som √2), behåll full precision fram till den slutliga additionen för att undvika att ackumulera avrundningsfel.",
+            "Att ange hypotenusan som en katet - Hypotenusan måste vara den längsta sidan. Om du placerar ett kortare värde i hypotenusafältet kommer diagrammet att se fel ut och Pythagoras kontroll kommer att misslyckas."
           ]
         },
         {
@@ -10360,7 +10360,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Vad betyder varje variabel i P = a + b + c?",
-          "answer": "P är omkretsen (total gränslängd). a är den ena kateten i den rätvinkliga triangeln. b är den andra kateten. c är hypotenusan — den längsta sidan som sitter mittemot den räta vinkeln. De två kateterna bildar 90°-hörnet."
+          "answer": "P är omkretsen (total gränslängd). a är den ena kateten i den rätvinkliga triangeln. b är den andra kateten. c är hypotenusan - den längsta sidan som sitter mittemot den räta vinkeln. De två kateterna bildar 90°-hörnet."
         },
         {
           "question": "Kan jag hitta omkretsen med endast två sidor?",
@@ -10388,7 +10388,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Kan omkretsen av en rätvinklig triangel vara ett udda tal?",
-          "answer": "Ja. Omkretsen kan vara vilket positivt tal som helst — heltal, decimaltal eller irrationellt. Till exempel har en rätvinklig triangel med kateterna 1 och 1 hypotenusan √2 ≈ 1.414, vilket ger omkretsen ≈ 3.414, vilket varken är ett heltal eller rationellt."
+          "answer": "Ja. Omkretsen kan vara vilket positivt tal som helst - heltal, decimaltal eller irrationellt. Till exempel har en rätvinklig triangel med kateterna 1 och 1 hypotenusan √2 ≈ 1.414, vilket ger omkretsen ≈ 3.414, vilket varken är ett heltal eller rationellt."
         },
         {
           "question": "Varför är hypotenusan alltid den längsta sidan?",
@@ -10786,7 +10786,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         "h2": "直角三角形周长公式",
         "paragraphs": [
           "任何多边形的周长都是其边界的总长度。对于直角三角形，边界恰好由三个直边组成：形成 90° 角的两条边（a 和 b），以及从直角延伸到相反顶点的一条斜边 (c)。",
-          "由于直角三角形只有三条边，因此周长公式是最简单的求和公式。不需要三角函数、平方根或指数——只需加法。"
+          "由于直角三角形只有三条边，因此周长公式是最简单的求和公式。不需要三角函数、平方根或指数--只需加法。"
         ],
         "formulas": [
           "P = a + b + c"
@@ -10831,9 +10831,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "三个方面一目了然：",
           "listItems": [
-            "边 a — 形成 90° 角的两条边之一。它可以是垂直侧或水平侧，具体取决于方向。",
-            "边 b — 形成 90° 角的另一边。它与腿 a 一起定义直角。",
-            "斜边 c — 最长的边，从一个锐角顶点延伸到另一个锐角顶点，与直角直接相对。",
+            "边 a - 形成 90° 角的两条边之一。它可以是垂直侧或水平侧，具体取决于方向。",
+            "边 b - 形成 90° 角的另一边。它与腿 a 一起定义直角。",
+            "斜边 c - 最长的边，从一个锐角顶点延伸到另一个锐角顶点，与直角直接相对。",
             "毕达哥拉斯关系成立：a² + b² = c²。这可以让您验证三个值是否确实形成直角三角形。"
           ]
         },
@@ -10863,7 +10863,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "paragraphs": [
             "练习不同的三角形有助于建立信心。下面是使用常见毕达哥拉斯三元组和十进制值的另外三个示例。"
           ],
-          "listTitle": "示例 1 — 5-12-13 三角形：",
+          "listTitle": "示例 1 - 5-12-13 三角形：",
           "listItems": [
             "给定：a = 5，b = 12，c = 13",
             "P = 5 + 12 + 13 = 30 units",
@@ -10871,7 +10871,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "示例 2 — 8-15-17 三角形",
+          "h2": "示例 2 - 8-15-17 三角形",
           "paragraphs": [
             "给定：a = 8，b = 15，c = 17。这是另一个毕达哥拉斯三元组，其中所有边都是整数。"
           ],
@@ -10882,7 +10882,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "示例 3 — 小数边",
+          "h2": "示例 3 - 小数边",
           "paragraphs": [
             "并非所有直角三角形都有整齐的整数边。已知：a = 2.5，b = 6，c = 6.5。"
           ],
@@ -10907,13 +10907,13 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "现实世界中常见的用途：",
           "listItems": [
-            "围栏——三角形花园床或角落地段需要在所有三个侧面周围都有围栏。周长告诉您要购买多少线性英尺的围栏。",
-            "修剪和造型——三角形的建筑特征（如山墙末端）需要沿其边缘进行修剪。周长给出了总修剪长度。",
-            "金属丝和绳索——搭建直角展示架、横幅或帆需要使用与周长相等的绳索、金属丝或边缘。",
-            "慢跑道和步行道 — 围绕直角公园区域的三角形跑道或步行道的总距离等于周长。",
-            "施工布局 — 施工人员使用 3-4-5 规则来检查角是否是方形的。了解周长有助于验证测量结果。",
-            "工艺和缝纫——三角形垫子或三角旗周围的装订、滚边或花边需要周长的材料。",
-            "地图和测量计算——测量员测量三角形地块，需要周长来描述边界和财产记录。"
+            "围栏--三角形花园床或角落地段需要在所有三个侧面周围都有围栏。周长告诉您要购买多少线性英尺的围栏。",
+            "修剪和造型--三角形的建筑特征（如山墙末端）需要沿其边缘进行修剪。周长给出了总修剪长度。",
+            "金属丝和绳索--搭建直角展示架、横幅或帆需要使用与周长相等的绳索、金属丝或边缘。",
+            "慢跑道和步行道 - 围绕直角公园区域的三角形跑道或步行道的总距离等于周长。",
+            "施工布局 - 施工人员使用 3-4-5 规则来检查角是否是方形的。了解周长有助于验证测量结果。",
+            "工艺和缝纫--三角形垫子或三角旗周围的装订、滚边或花边需要周长的材料。",
+            "地图和测量计算--测量员测量三角形地块，需要周长来描述边界和财产记录。"
           ]
         },
         {
@@ -10947,12 +10947,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "留意这些陷阱：",
           "listItems": [
-            "仅使用两侧 — 周界需要所有三个边。忘记斜边或一条腿会给出不完整的答案。",
-            "混合单位 — 如果边 a 的单位为英寸，边 b 的单位为厘米，则总和没有意义。先换算成一个单位。",
+            "仅使用两侧 - 周界需要所有三个边。忘记斜边或一条腿会给出不完整的答案。",
+            "混合单位 - 如果边 a 的单位为英寸，边 b 的单位为厘米，则总和没有意义。先换算成一个单位。",
             "混淆周长和面积 - 周长是长度（以单位测量），而面积是表面（以平方单位测量）。确保您知道问题所在。",
-            "使用不形成直角三角形的边 — 检查 a² + b² = c²。如果这个方程不成立，则三角形不是直角三角形，c 也不是真正的斜边。",
+            "使用不形成直角三角形的边 - 检查 a² + b² = c²。如果这个方程不成立，则三角形不是直角三角形，c 也不是真正的斜边。",
             "舍入太早 - 如果一侧是无理数（如 √2），请保持完全精度直到最终加法，以避免累积舍入误差。",
-            "输入斜边作为一条边 — 斜边必须是最长的边。如果在斜边字段中放置较短的值，图表将看起来错误，毕达哥拉斯检查将失败。"
+            "输入斜边作为一条边 - 斜边必须是最长的边。如果在斜边字段中放置较短的值，图表将看起来错误，毕达哥拉斯检查将失败。"
           ]
         },
         {
@@ -11000,7 +11000,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "P = a + b + c 中每个变量的含义是什么？",
-          "answer": "P 是周长（总边界长度）。 a 是直角三角形的一条边。 b 是另一条腿。 c 是斜边——与直角相对的最长边。两条腿形成90°角。"
+          "answer": "P 是周长（总边界长度）。 a 是直角三角形的一条边。 b 是另一条腿。 c 是斜边--与直角相对的最长边。两条腿形成90°角。"
         },
         {
           "question": "我能求出只有两条边的周长吗？",
@@ -11028,7 +11028,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "直角三角形的周长可以是奇数吗？",
-          "answer": "是的。周长可以是任何正数——整数、小数或无理数。例如，边为 1 和 1 的直角三角形的斜边 √2 ≈ 1.414，周长 ≈ 3.414，它既不是整数也不是有理数。"
+          "answer": "是的。周长可以是任何正数--整数、小数或无理数。例如，边为 1 和 1 的直角三角形的斜边 √2 ≈ 1.414，周长 ≈ 3.414，它既不是整数也不是有理数。"
         },
         {
           "question": "为什么斜边总是最长的边？",

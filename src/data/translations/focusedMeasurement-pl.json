@@ -84,7 +84,7 @@
       "h2": "Wzór na obwód trójkąta prostokątnego",
       "paragraphs": [
         "Obwód dowolnego wielokąta to całkowita długość jego granicy. W przypadku trójkąta prostokątnego granica składa się z dokładnie trzech prostych boków: dwóch ramion (a i b), które tworzą kąt 90°, i jednej przeciwprostokątnej (c), która rozciąga się od kąta prostego do przeciwległego wierzchołka.",
-        "Ponieważ trójkąt prostokątny ma tylko trzy boki, wzór na obwód jest najprostszą możliwą sumą. Nie jest wymagana żadna trygonometria, pierwiastek kwadratowy ani wykładniki — wystarczy dodawanie."
+        "Ponieważ trójkąt prostokątny ma tylko trzy boki, wzór na obwód jest najprostszą możliwą sumą. Nie jest wymagana żadna trygonometria, pierwiastek kwadratowy ani wykładniki - wystarczy dodawanie."
       ],
       "formulas": [
         "P = a + b + c"
@@ -129,9 +129,9 @@
         ],
         "listTitle": "Trzy strony w skrócie:",
         "listItems": [
-          "Noga a — Jedna z dwóch stron tworzących kąt 90°. Może to być strona pionowa lub pozioma, w zależności od orientacji.",
-          "Noga b — druga strona tworząca kąt 90°. Razem z nogą a wyznacza kąt prosty.",
-          "Przeciwprostokątna c — najdłuższy bok, rozciągający się od jednego wierzchołka kąta ostrego do drugiego, dokładnie naprzeciwko kąta prostego.",
+          "Noga a - Jedna z dwóch stron tworzących kąt 90°. Może to być strona pionowa lub pozioma, w zależności od orientacji.",
+          "Noga b - druga strona tworząca kąt 90°. Razem z nogą a wyznacza kąt prosty.",
+          "Przeciwprostokątna c - najdłuższy bok, rozciągający się od jednego wierzchołka kąta ostrego do drugiego, dokładnie naprzeciwko kąta prostego.",
           "Zachodzi zależność pitagorejska: a² + b² = c². Dzięki temu możesz sprawdzić, czy Twoje trzy wartości faktycznie tworzą trójkąt prostokątny."
         ]
       },
@@ -161,7 +161,7 @@
         "paragraphs": [
           "Ćwiczenia z różnymi trójkątami pomagają budować pewność siebie. Poniżej znajdują się trzy kolejne przykłady użycia typowych trójek pitagorejskich i wartości dziesiętnych."
         ],
-        "listTitle": "Przykład 1 — Trójkąt 5-12-13:",
+        "listTitle": "Przykład 1 - Trójkąt 5-12-13:",
         "listItems": [
           "Dane: a = 5, b = 12, c = 13",
           "P = 5 + 12 + 13 = 30 units",
@@ -169,7 +169,7 @@
         ]
       },
       {
-        "h2": "Przykład 2 — Trójkąt 8-15-17",
+        "h2": "Przykład 2 - Trójkąt 8-15-17",
         "paragraphs": [
           "Dane: a = 8, b = 15, c = 17. To kolejna trójka pitagorejska, w której wszystkie boki są liczbami całkowitymi."
         ],
@@ -180,14 +180,14 @@
         ]
       },
       {
-        "h2": "Przykład 3 — Boki dziesiętne",
+        "h2": "Przykład 3 - Boki dziesiętne",
         "paragraphs": [
           "Nie wszystkie trójkąty prostokątne mają równe boki w postaci liczb całkowitych. Dane: a = 2,5, b = 6, c = 6,5."
         ],
         "listItems": [
           "P = 2,5 + 6 + 6,5 = 15 jednostek",
           "Weryfikacja: 2,5² + 6² = 6,25 + 36 = 42,25 = 6,5² ✓",
-          "Wartości dziesiętne działają w ten sam sposób — wystarczy je dodać bezpośrednio."
+          "Wartości dziesiętne działają w ten sam sposób - wystarczy je dodać bezpośrednio."
         ]
       },
       {
@@ -205,13 +205,13 @@
         ],
         "listTitle": "Typowe zastosowania w świecie rzeczywistym:",
         "listItems": [
-          "Ogrodzenie — trójkątna grządka ogrodowa lub narożna działka wymaga ogrodzenia ze wszystkich trzech stron. Obwód informuje, ile metrów liniowych ogrodzenia kupić.",
-          "Przycinanie i formowanie — trójkątny element architektoniczny (np. szczyt) wymaga przycięcia wzdłuż krawędzi. Obwód określa całkowitą długość wykończenia.",
-          "Drut i lina — oprawienie prostokątnej ekspozycji, banera lub żagla wymaga liny, drutu lub krawędzi równej obwodowi.",
-          "Ścieżki do joggingu i spacerów — Trójkątna bieżnia lub ścieżka spacerowa wokół prostokątnego obszaru parku ma całkowitą długość równą obwodowi.",
-          "Układ konstrukcji — budowniczowie stosują zasadę 3-4-5, aby sprawdzić, czy narożnik jest kwadratowy. Znajomość obwodu pomaga w weryfikacji pomiarów.",
-          "Rękodzieło i szycie — wiązanie, lamówka lub koronka wokół trójkątnej poduszki lub proporczyka wymaga materiału o długości obwodowej.",
-          "Obliczenia mapowe i pomiarowe — Geodeci mierzą trójkątne działki i potrzebują obwodu do opisów granic i zapisów nieruchomości."
+          "Ogrodzenie - trójkątna grządka ogrodowa lub narożna działka wymaga ogrodzenia ze wszystkich trzech stron. Obwód informuje, ile metrów liniowych ogrodzenia kupić.",
+          "Przycinanie i formowanie - trójkątny element architektoniczny (np. szczyt) wymaga przycięcia wzdłuż krawędzi. Obwód określa całkowitą długość wykończenia.",
+          "Drut i lina - oprawienie prostokątnej ekspozycji, banera lub żagla wymaga liny, drutu lub krawędzi równej obwodowi.",
+          "Ścieżki do joggingu i spacerów - Trójkątna bieżnia lub ścieżka spacerowa wokół prostokątnego obszaru parku ma całkowitą długość równą obwodowi.",
+          "Układ konstrukcji - budowniczowie stosują zasadę 3-4-5, aby sprawdzić, czy narożnik jest kwadratowy. Znajomość obwodu pomaga w weryfikacji pomiarów.",
+          "Rękodzieło i szycie - wiązanie, lamówka lub koronka wokół trójkątnej poduszki lub proporczyka wymaga materiału o długości obwodowej.",
+          "Obliczenia mapowe i pomiarowe - Geodeci mierzą trójkątne działki i potrzebują obwodu do opisów granic i zapisów nieruchomości."
         ]
       },
       {
@@ -245,12 +245,12 @@
         ],
         "listTitle": "Uważaj na te pułapki:",
         "listItems": [
-          "Używanie tylko dwóch stron — obwód wymaga wszystkich trzech boków. Zapomnienie przeciwprostokątnej lub jednej nogi daje niepełną odpowiedź.",
-          "Mieszanie jednostek — jeśli odnoga a jest wyrażona w calach, a odnoga b jest wyrażona w centymetrach, suma nie ma znaczenia. Najpierw zamień na pojedynczą jednostkę.",
-          "Mylenie obwodu z polem — obwód to długość (mierzona w jednostkach), podczas gdy powierzchnia to powierzchnia (mierzona w jednostkach kwadratowych). Upewnij się, że wiesz, którego dotyczy problem.",
-          "Korzystając z boków, które nie tworzą trójkąta prostokątnego — sprawdź, czy a² + b² = c². Jeśli to równanie nie jest spełnione, trójkąt nie jest trójkątem prostokątnym, a c nie jest prawdziwą przeciwprostokątną.",
-          "Zbyt wczesne zaokrąglanie — jeśli jedna strona jest irracjonalna (np. √2), zachowaj pełną precyzję aż do ostatniego dodania, aby uniknąć kumulowania się błędów zaokrągleń.",
-          "Wprowadzenie przeciwprostokątnej jako nogi — przeciwprostokątna musi być najdłuższym bokiem. Jeśli w polu przeciwprostokątnej umieścisz krótszą wartość, diagram będzie wyglądał błędnie, a kontrola pitagorejska zakończy się niepowodzeniem."
+          "Używanie tylko dwóch stron - obwód wymaga wszystkich trzech boków. Zapomnienie przeciwprostokątnej lub jednej nogi daje niepełną odpowiedź.",
+          "Mieszanie jednostek - jeśli odnoga a jest wyrażona w calach, a odnoga b jest wyrażona w centymetrach, suma nie ma znaczenia. Najpierw zamień na pojedynczą jednostkę.",
+          "Mylenie obwodu z polem - obwód to długość (mierzona w jednostkach), podczas gdy powierzchnia to powierzchnia (mierzona w jednostkach kwadratowych). Upewnij się, że wiesz, którego dotyczy problem.",
+          "Korzystając z boków, które nie tworzą trójkąta prostokątnego - sprawdź, czy a² + b² = c². Jeśli to równanie nie jest spełnione, trójkąt nie jest trójkątem prostokątnym, a c nie jest prawdziwą przeciwprostokątną.",
+          "Zbyt wczesne zaokrąglanie - jeśli jedna strona jest irracjonalna (np. √2), zachowaj pełną precyzję aż do ostatniego dodania, aby uniknąć kumulowania się błędów zaokrągleń.",
+          "Wprowadzenie przeciwprostokątnej jako nogi - przeciwprostokątna musi być najdłuższym bokiem. Jeśli w polu przeciwprostokątnej umieścisz krótszą wartość, diagram będzie wyglądał błędnie, a kontrola pitagorejska zakończy się niepowodzeniem."
         ]
       },
       {
@@ -298,7 +298,7 @@
       },
       {
         "question": "Co oznacza każda zmienna w P = a + b + c?",
-        "answer": "P to obwód (całkowita długość granicy). a jest jedną nogą trójkąta prostokątnego. b to druga noga. c to przeciwprostokątna — najdłuższy bok leżący naprzeciwko kąta prostego. Obie nogi tworzą narożnik 90°."
+        "answer": "P to obwód (całkowita długość granicy). a jest jedną nogą trójkąta prostokątnego. b to druga noga. c to przeciwprostokątna - najdłuższy bok leżący naprzeciwko kąta prostego. Obie nogi tworzą narożnik 90°."
       },
       {
         "question": "Czy mogę znaleźć obwód mający tylko dwa boki?",
@@ -326,7 +326,7 @@
       },
       {
         "question": "Czy obwód trójkąta prostokątnego może być liczbą nieparzystą?",
-        "answer": "Tak. Obwód może być dowolną liczbą dodatnią — całkowitą, dziesiętną lub niewymierną. Na przykład trójkąt prostokątny o nogach 1 i 1 ma przeciwprostokątną √2 ≈ 1,414, co daje obwód ≈ 3,414, który nie jest ani liczbą całkowitą, ani wymierną."
+        "answer": "Tak. Obwód może być dowolną liczbą dodatnią - całkowitą, dziesiętną lub niewymierną. Na przykład trójkąt prostokątny o nogach 1 i 1 ma przeciwprostokątną √2 ≈ 1,414, co daje obwód ≈ 3,414, który nie jest ani liczbą całkowitą, ani wymierną."
       },
       {
         "question": "Dlaczego przeciwprostokątna jest zawsze najdłuższym bokiem?",

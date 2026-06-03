@@ -129,9 +129,9 @@
         ],
         "listTitle": "Los tres lados de un vistazo:",
         "listItems": [
-          "Cateto a — Uno de los dos lados que forma el ángulo de 90°. Puede ser el lado vertical u horizontal, dependiendo de la orientación.",
-          "Cateto b — El otro lado que forma el ángulo de 90°. Junto con el cateto a, define el ángulo recto.",
-          "Hipotenusa c — El lado más largo, que se extiende desde un vértice de ángulo agudo hasta el otro, directamente opuesto al ángulo recto.",
+          "Cateto a - Uno de los dos lados que forma el ángulo de 90°. Puede ser el lado vertical u horizontal, dependiendo de la orientación.",
+          "Cateto b - El otro lado que forma el ángulo de 90°. Junto con el cateto a, define el ángulo recto.",
+          "Hipotenusa c - El lado más largo, que se extiende desde un vértice de ángulo agudo hasta el otro, directamente opuesto al ángulo recto.",
           "La relación pitagórica se mantiene: a² + b² = c². Esto te permite verificar que tus tres valores realmente forman un triángulo rectángulo."
         ]
       },
@@ -161,7 +161,7 @@
         "paragraphs": [
           "Practicar con diferentes triángulos ayuda a ganar confianza. A continuación, se muestran tres ejemplos más resueltos usando ternas pitagóricas comunes y valores decimales."
         ],
-        "listTitle": "Ejemplo 1 — El triángulo 5-12-13:",
+        "listTitle": "Ejemplo 1 - El triángulo 5-12-13:",
         "listItems": [
           "Dado: a = 5, b = 12, c = 13",
           "P = 5 + 12 + 13 = 30 unidades",
@@ -169,7 +169,7 @@
         ]
       },
       {
-        "h2": "Ejemplo 2 — El Triángulo 8-15-17",
+        "h2": "Ejemplo 2 - El Triángulo 8-15-17",
         "paragraphs": [
           "Dado: a = 8, b = 15, c = 17. Esta es otra terna pitagórica donde todos los lados son números enteros."
         ],
@@ -180,7 +180,7 @@
         ]
       },
       {
-        "h2": "Ejemplo 3 — Lados Decimales",
+        "h2": "Ejemplo 3 - Lados Decimales",
         "paragraphs": [
           "No todos los triángulos rectángulos tienen lados con números enteros limpios. Dado: a = 2.5, b = 6, c = 6.5."
         ],
@@ -205,13 +205,13 @@
         ],
         "listTitle": "Usos comunes en el mundo real:",
         "listItems": [
-          "Cercado — Un jardín triangular o un lote en esquina requiere cercar los tres lados. El perímetro te indica cuántos ft lineales de cerca comprar.",
-          "Molduras y recortes — Un elemento arquitectónico triangular (como un hastial) necesita molduras a lo largo de sus bordes. El perímetro proporciona la longitud total de la moldura.",
-          "Alambre y cuerda — Enmarcar un panel publicitario en ángulo recto, un estandarte o una vela requiere cuerda, alambre o bordes iguales al perímetro.",
-          "Senderos para trotar o caminar — Una pista para correr o un sendero que bordea un área de parque triangular en ángulo recto tiene una distancia total igual al perímetro.",
-          "Diseño de construcción — Los constructores usan la regla 3-4-5 para verificar si una esquina es perpendicular. Conocer el perímetro ayuda a verificar las medidas.",
-          "Manualidades y costura — Los ribetes, cordones o encajes alrededor de un cojín o banderín triangular requieren material del tamaño del perímetro.",
-          "Cálculos de mapas y topografía — Los topógrafos miden parcelas de tierra triangulares y necesitan el perímetro para descripciones de límites y registros de propiedad."
+          "Cercado - Un jardín triangular o un lote en esquina requiere cercar los tres lados. El perímetro te indica cuántos ft lineales de cerca comprar.",
+          "Molduras y recortes - Un elemento arquitectónico triangular (como un hastial) necesita molduras a lo largo de sus bordes. El perímetro proporciona la longitud total de la moldura.",
+          "Alambre y cuerda - Enmarcar un panel publicitario en ángulo recto, un estandarte o una vela requiere cuerda, alambre o bordes iguales al perímetro.",
+          "Senderos para trotar o caminar - Una pista para correr o un sendero que bordea un área de parque triangular en ángulo recto tiene una distancia total igual al perímetro.",
+          "Diseño de construcción - Los constructores usan la regla 3-4-5 para verificar si una esquina es perpendicular. Conocer el perímetro ayuda a verificar las medidas.",
+          "Manualidades y costura - Los ribetes, cordones o encajes alrededor de un cojín o banderín triangular requieren material del tamaño del perímetro.",
+          "Cálculos de mapas y topografía - Los topógrafos miden parcelas de tierra triangulares y necesitan el perímetro para descripciones de límites y registros de propiedad."
         ]
       },
       {
@@ -245,12 +245,12 @@
         ],
         "listTitle": "Presta atención a estos errores comunes:",
         "listItems": [
-          "Usar solo dos lados — El perímetro requiere los tres lados. Olvidar la hipotenusa o un cateto da una respuesta incompleta.",
-          "Mezclar unidades — Si el cateto a está en in y el cateto b está en cm, la suma no tiene sentido. Convierte a una sola unidad primero.",
-          "Confundir el perímetro con el área — El perímetro es una longitud (medida en unidades), mientras que el área es una superficie (medida en unidades cuadradas). Asegúrate de saber cuál pide el problema.",
-          "Usar lados que no forman un triángulo rectángulo — Comprueba que a² + b² = c². Si esta ecuación no se cumple, el triángulo no es un triángulo rectángulo y c no es una verdadera hipotenusa.",
-          "Redondear demasiado pronto — Si un lado es irracional (como √2), mantén la precisión completa hasta la suma final para evitar acumular errores de redondeo.",
-          "Introducir la hipotenusa como un cateto — La hipotenusa debe ser el lado más largo. Si colocas un valor más corto en el campo de la hipotenusa, el diagrama se verá mal y la comprobación pitagórica fallará."
+          "Usar solo dos lados - El perímetro requiere los tres lados. Olvidar la hipotenusa o un cateto da una respuesta incompleta.",
+          "Mezclar unidades - Si el cateto a está en in y el cateto b está en cm, la suma no tiene sentido. Convierte a una sola unidad primero.",
+          "Confundir el perímetro con el área - El perímetro es una longitud (medida en unidades), mientras que el área es una superficie (medida en unidades cuadradas). Asegúrate de saber cuál pide el problema.",
+          "Usar lados que no forman un triángulo rectángulo - Comprueba que a² + b² = c². Si esta ecuación no se cumple, el triángulo no es un triángulo rectángulo y c no es una verdadera hipotenusa.",
+          "Redondear demasiado pronto - Si un lado es irracional (como √2), mantén la precisión completa hasta la suma final para evitar acumular errores de redondeo.",
+          "Introducir la hipotenusa como un cateto - La hipotenusa debe ser el lado más largo. Si colocas un valor más corto en el campo de la hipotenusa, el diagrama se verá mal y la comprobación pitagórica fallará."
         ]
       },
       {
@@ -298,7 +298,7 @@
       },
       {
         "question": "¿Qué significa cada variable en P = a + b + c?",
-        "answer": "P es el perímetro (longitud total del límite). a es un cateto del triángulo rectángulo. b es el otro cateto. c es la hipotenusa — el lado más largo que se encuentra opuesto al ángulo recto. Los dos catetos forman el ángulo de 90°."
+        "answer": "P es el perímetro (longitud total del límite). a es un cateto del triángulo rectángulo. b es el otro cateto. c es la hipotenusa - el lado más largo que se encuentra opuesto al ángulo recto. Los dos catetos forman el ángulo de 90°."
       },
       {
         "question": "¿Puedo calcular el perímetro con solo dos lados?",

@@ -1208,7 +1208,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "Калькулятор: Теорема Пифагора | Right Triangle Solver",
       "metaDescription": "Вычислите гипотенузу, когда известны оба катета. Это основное тождество для любого прямоугольного треугольника.",
       "formulaSlug": "pythagorean-theorem",
-      "toolPurpose": "Независимо от того, решаете ли вы домашнюю задачу или измеряете диагональ в реальной жизни, этот инструмент даст вам ответ за считанные секунды — полное решение показано шаг за шагом.",
+      "toolPurpose": "Независимо от того, решаете ли вы домашнюю задачу или измеряете диагональ в реальной жизни, этот инструмент даст вам ответ за считанные секунды - полное решение показано шаг за шагом.",
       "intro": "Вычислите гипотенузу, когда известны оба катета. Это основное тождество для любого прямоугольного треугольника.",
       "quickSummary": {
         "h2": "Что решает этот пифагорейский калькулятор",
@@ -1234,7 +1234,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       },
       "diagram": {
         "h2": "Схема прямоугольного треугольника: нахождение гипотенузы",
-        "intro": "На диаграмме показано точное соотношение сторон, используемое инструментом. Два катета — это известные входные значения, а наклонная сторона c — это гипотенуза, которую находит калькулятор.",
+        "intro": "На диаграмме показано точное соотношение сторон, используемое инструментом. Два катета - это известные входные значения, а наклонная сторона c - это гипотенуза, которую находит калькулятор.",
         "caption": "Диаграмма прямоугольного треугольника с известными катетами a и b и неизвестной гипотенузой c.",
         "sides": {
           "a": {
@@ -1244,12 +1244,12 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           },
           "b": {
             "label": "b = известно",
-            "description": "Ножка b — это другая сторона, образующая прямой угол.",
+            "description": "Ножка b - это другая сторона, образующая прямой угол.",
             "status": "known"
           },
           "c": {
             "label": "c = найти",
-            "description": "Гипотенуза c — самая длинная сторона и расположена напротив угла 90°.",
+            "description": "Гипотенуза c - самая длинная сторона и расположена напротив угла 90°.",
             "status": "unknown"
           }
         },
@@ -1278,7 +1278,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "h2": "Формула теоремы Пифагора",
         "paragraphs": [
           "Теорема Пифагора гласит, что в прямоугольном треугольнике квадрат гипотенузы равен сумме квадратов двух катетов. Чтобы найти гипотенузу, извлеките квадратный корень из обеих сторон.",
-          "В этой формуле a и b — это две катеты прямоугольного треугольника — стороны, образующие прямой угол. c — гипотенуза, самая длинная сторона, противолежащая прямому углу. Эта формула работает только для прямоугольных треугольников."
+          "В этой формуле a и b - это две катеты прямоугольного треугольника - стороны, образующие прямой угол. c - гипотенуза, самая длинная сторона, противолежащая прямому углу. Эта формула работает только для прямоугольных треугольников."
         ],
         "formulas": [
           "c^2 = a^2 + b^2",
@@ -1324,11 +1324,11 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           "h2": "Советы по вводу для лучших результатов",
           "paragraphs": [
             "Введите обе длины ног как положительные числа. Десятичные дроби подходят, и калькулятор будет сохранять достаточную точность, чтобы сделать пошаговую работу полезной.",
-            "Два входа должны использовать один и тот же блок. Если a измеряется в футах, а b — в дюймах, сначала преобразуйте одно измерение, чтобы результат был значимым."
+            "Два входа должны использовать один и тот же блок. Если a измеряется в футах, а b - в дюймах, сначала преобразуйте одно измерение, чтобы результат был значимым."
           ],
           "listTitle": "Прежде чем производить расчет, проверьте, что:",
           "listItems": [
-            "a и b — стороны, соприкасающиеся с углом 90°.",
+            "a и b - стороны, соприкасающиеся с углом 90°.",
             "Ни один вход не является нулевым или отрицательным.",
             "Обе величины измеряются в одних и тех же единицах.",
             "Вы ищете гипотенузу, а не отсутствующий катет."
@@ -1352,7 +1352,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           "h2": "Распространенные ошибки",
           "paragraphs": [
             "Большинство неправильных ответов на гипотенузу возникают из-за использования правильной формулы не с той стороны. Ножки должны представлять собой две стороны, образующие прямой угол; гипотенуза никогда не является входными данными на этой странице.",
-            "Другая распространенная проблема — остановка на a² + b². Это значение c², а не c. Шаг квадратного корня — это то, что превращает квадратное значение обратно в фактическую длину стороны."
+            "Другая распространенная проблема - остановка на a² + b². Это значение c², а не c. Шаг квадратного корня - это то, что превращает квадратное значение обратно в фактическую длину стороны."
           ],
           "listTitle": "Избегайте этих ошибок:",
           "listItems": [
@@ -1380,11 +1380,11 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "Что такое теорема Пифагора?",
-          "answer": "Теорема Пифагора — это формула, связывающая три стороны прямоугольного треугольника: a² + b² = c². Он гласит, что квадрат гипотенузы равен сумме квадратов двух катетов. Это применимо только к прямоугольным треугольникам."
+          "answer": "Теорема Пифагора - это формула, связывающая три стороны прямоугольного треугольника: a² + b² = c². Он гласит, что квадрат гипотенузы равен сумме квадратов двух катетов. Это применимо только к прямоугольным треугольникам."
         },
         {
           "question": "Что означает c в формуле?",
-          "answer": "В формуле c² = a² + b² c — это гипотенуза — самая длинная сторона прямоугольного треугольника. Это сторона прямо напротив угла 90°."
+          "answer": "В формуле c² = a² + b² c - это гипотенуза - самая длинная сторона прямоугольного треугольника. Это сторона прямо напротив угла 90°."
         },
         {
           "question": "Могу ли я использовать этот калькулятор для любого треугольника?",
@@ -1396,7 +1396,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Что такое a и b в прямоугольном треугольнике?",
-          "answer": "a и b — две ноги — стороны, образующие прямой угол. Они могут иметь любую положительную длину, и не имеет значения, какой из них вы называете a или b. Гипотенуза (c) всегда является оставшейся стороной."
+          "answer": "a и b - две ноги - стороны, образующие прямой угол. Они могут иметь любую положительную длину, и не имеет значения, какой из них вы называете a или b. Гипотенуза (c) всегда является оставшейся стороной."
         }
       ]
     },
@@ -1407,7 +1407,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "Калькулятор: Поиск катета по c и a | Right Triangle Solver",
       "metaDescription": "Найдите катет b, когда известны гипотенуза c и другой катет a.",
       "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "Помните: c — это всегда гипотенуза — самая длинная сторона, противоположная прямому углу. Это не нога. Если у вас два катета и вместо него вам нужна гипотенуза, воспользуйтесь калькулятором теоремы Пифагора.",
+      "toolPurpose": "Помните: c - это всегда гипотенуза - самая длинная сторона, противоположная прямому углу. Это не нога. Если у вас два катета и вместо него вам нужна гипотенуза, воспользуйтесь калькулятором теоремы Пифагора.",
       "intro": "Найдите катет b, когда известны гипотенуза c и другой катет a.",
       "quickSummary": {
         "h2": "Что решает этот калькулятор отсутствующей ноги",
@@ -1438,17 +1438,17 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "sides": {
           "a": {
             "label": "a = известно",
-            "description": "Катет a — известный катет по основанию прямоугольного треугольника.",
+            "description": "Катет a - известный катет по основанию прямоугольного треугольника.",
             "status": "known"
           },
           "b": {
             "label": "b = найти",
-            "description": "Участок b — это неизвестный участок, который решается путем вычитания a^2 из c^2.",
+            "description": "Участок b - это неизвестный участок, который решается путем вычитания a^2 из c^2.",
             "status": "unknown"
           },
           "c": {
             "label": "c = известно",
-            "description": "Гипотенуза c — это известная самая длинная сторона, лежащая против прямого угла.",
+            "description": "Гипотенуза c - это известная самая длинная сторона, лежащая против прямого угла.",
             "status": "known"
           }
         },
@@ -1477,7 +1477,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "h2": "Отсутствует ветвь формулы b",
         "paragraphs": [
           "Формула для нахождения участка b выведена из теоремы Пифагора (a² + b² = c²). Перестановка для b дает формулу ниже.",
-          "Где c — гипотенуза (самая длинная сторона прямоугольного треугольника), a — известный катет, а b — недостающий катет, который вы ищете. Обратите внимание на вычитание: вы вычитаете квадрат известного катета из квадрата гипотенузы, а затем извлекаете квадратный корень."
+          "Где c - гипотенуза (самая длинная сторона прямоугольного треугольника), a - известный катет, а b - недостающий катет, который вы ищете. Обратите внимание на вычитание: вы вычитаете квадрат известного катета из квадрата гипотенузы, а затем извлекаете квадратный корень."
         ],
         "formulas": [
           "b = \\sqrt{c^2 - a^2}"
@@ -1486,7 +1486,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "howTo": {
         "h2": "Как найти ногу b из c и a",
         "steps": [
-          "Убедитесь, что c — гипотенуза, а a — катет. Гипотенуза всегда самая длинная сторона.",
+          "Убедитесь, что c - гипотенуза, а a - катет. Гипотенуза всегда самая длинная сторона.",
           "Введите гипотенузу c в первое поле ввода.",
           "Введите известную ногу a во второе поле ввода.",
           "Нажмите «Рассчитать», чтобы найти недостающую ногу.",
@@ -1535,7 +1535,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         {
           "h2": "Как прочитать ответ",
           "paragraphs": [
-            "Выходные данные с надписью «Отсутствует отрезок b» — это длина другого отрезка, который образует прямой угол с a. Это не гипотенуза, и она должна быть короче c.",
+            "Выходные данные с надписью «Отсутствует отрезок b» - это длина другого отрезка, который образует прямой угол с a. Это не гипотенуза, и она должна быть короче c.",
             "Если вычисленное значение b чрезвычайно мало, ваш известный катет a очень близок к гипотенузе c. Это может быть действительно так, но перед использованием значения стоит проверить диаграмму и единицы измерения."
           ],
           "listTitle": "Действительный результат должен удовлетворять:",
@@ -1549,8 +1549,8 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         {
           "h2": "Распространенные ошибки",
           "paragraphs": [
-            "Самая распространенная ошибка — рассматривать c как ногу. В этом калькуляторе c должна быть гипотенузой, то есть самой длинной стороной и стороной, противоположной прямому углу.",
-            "Другая частая ошибка — сложение квадратов вместо вычитания. Сложение находит гипотенузу; вычитание находит недостающий катет гипотенузы."
+            "Самая распространенная ошибка - рассматривать c как ногу. В этом калькуляторе c должна быть гипотенузой, то есть самой длинной стороной и стороной, противоположной прямому углу.",
+            "Другая частая ошибка - сложение квадратов вместо вычитания. Сложение находит гипотенузу; вычитание находит недостающий катет гипотенузы."
           ],
           "listTitle": "Избегайте этих ошибок:",
           "listItems": [
@@ -1579,11 +1579,11 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "Что означает c в этом калькуляторе?",
-          "answer": "c — гипотенуза прямоугольного треугольника — самая длинная сторона, расположенная напротив угла 90°. Это не нога. Вы вводите c в качестве одного из двух известных значений в этом калькуляторе."
+          "answer": "c - гипотенуза прямоугольного треугольника - самая длинная сторона, расположенная напротив угла 90°. Это не нога. Вы вводите c в качестве одного из двух известных значений в этом калькуляторе."
         },
         {
           "question": "Что означает в этом калькуляторе?",
-          "answer": "а — одна из двух катетов прямоугольного треугольника. Это одна из сторон, образующая прямой угол. В этом калькуляторе a — это уже известная вам нога."
+          "answer": "а - одна из двух катетов прямоугольного треугольника. Это одна из сторон, образующая прямой угол. В этом калькуляторе a - это уже известная вам нога."
         },
         {
           "question": "Что находит этот калькулятор?",
@@ -1606,7 +1606,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "Калькулятор: Поиск катета по c и b | Right Triangle Solver",
       "metaDescription": "Найдите катет a, когда известны гипотенуза c и катет b.",
       "formulaSlug": "other-leg-from-hypotenuse-and-leg",
-      "toolPurpose": "Имейте в виду: c — это гипотенуза, а не катет. Это самая длинная сторона треугольника, расположенная напротив угла 90°. Если у вас есть обе ноги и вам нужна гипотенуза, воспользуйтесь калькулятором теоремы Пифагора.",
+      "toolPurpose": "Имейте в виду: c - это гипотенуза, а не катет. Это самая длинная сторона треугольника, расположенная напротив угла 90°. Если у вас есть обе ноги и вам нужна гипотенуза, воспользуйтесь калькулятором теоремы Пифагора.",
       "intro": "Найдите катет a, когда известны гипотенуза c и катет b.",
       "quickSummary": {
         "h2": "Что решает этот калькулятор отсутствующей ноги",
@@ -1632,22 +1632,22 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       },
       "diagram": {
         "h2": "Схема прямоугольного треугольника: нахождение катета a",
-        "intro": "На диаграмме c показана как известная гипотенуза, а b — как известный катет. Базовая нога a выделена как недостающее значение, возвращаемое калькулятором.",
+        "intro": "На диаграмме c показана как известная гипотенуза, а b - как известный катет. Базовая нога a выделена как недостающее значение, возвращаемое калькулятором.",
         "caption": "Диаграмма прямоугольного треугольника с известной гипотенузой c, известным катетом b и неизвестным катетом a.",
         "sides": {
           "a": {
             "label": "a = найти",
-            "description": "Нога a — это неизвестная базовая нога, решенная из c и b.",
+            "description": "Нога a - это неизвестная базовая нога, решенная из c и b.",
             "status": "unknown"
           },
           "b": {
             "label": "b = известно",
-            "description": "Нога b — это известная нога, образующая прямой угол с a.",
+            "description": "Нога b - это известная нога, образующая прямой угол с a.",
             "status": "known"
           },
           "c": {
             "label": "c = известно",
-            "description": "Гипотенуза c — известная самая длинная сторона прямоугольного треугольника.",
+            "description": "Гипотенуза c - известная самая длинная сторона прямоугольного треугольника.",
             "status": "known"
           }
         },
@@ -1676,7 +1676,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "h2": "Недостающая нога Формулы a",
         "paragraphs": [
           "Начиная с теоремы Пифагора (a² + b² = c²), найдите a, чтобы получить формулу, приведенную ниже.",
-          "Где c — гипотенуза (самая длинная сторона, противоположная прямому углу), b — известный катет, а a — недостающий катет, который вы хотите найти. Ключевая операция — вычитание: возведите гипотенузу в квадрат, вычтите квадрат известного катета, затем извлеките квадратный корень из оставшегося."
+          "Где c - гипотенуза (самая длинная сторона, противоположная прямому углу), b - известный катет, а a - недостающий катет, который вы хотите найти. Ключевая операция - вычитание: возведите гипотенузу в квадрат, вычтите квадрат известного катета, затем извлеките квадратный корень из оставшегося."
         ],
         "formulas": [
           "a = \\sqrt{c^2 - b^2}"
@@ -1711,7 +1711,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Сначала используйте эти проверки:",
           "listItems": [
-            "c — сторона, противолежащая прямому углу.",
+            "c - сторона, противолежащая прямому углу.",
             "c больше, чем b.",
             "Оба входных параметра являются положительными числами.",
             "c и b используют одну и ту же единицу измерения."
@@ -1720,7 +1720,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         {
           "h2": "Где полезен этот калькулятор",
           "paragraphs": [
-            "Этот калькулятор станет подходящим инструментом, если вы знаете гипотенузу и катет b и вам нужно найти катет a. Это особенно полезно, когда на диаграмме известный участок помечен как b, а неизвестное основание или высота — как a.",
+            "Этот калькулятор станет подходящим инструментом, если вы знаете гипотенузу и катет b и вам нужно найти катет a. Это особенно полезно, когда на диаграмме известный участок помечен как b, а неизвестное основание или высота - как a.",
             "Страница также работает как проверка измерений. Если вычисленная сторона a сильно отличается от измеренной стороны a, возможно, треугольник не включает истинный угол 90° или одно из известных значений может быть скопировано неправильно."
           ],
           "listTitle": "Общие примеры включают в себя:",
@@ -1734,7 +1734,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         {
           "h2": "Как прочитать ответ",
           "paragraphs": [
-            "Результат с надписью «Отсутствует ветвь a» — это другая сторона, которая образует прямой угол с b. Оно должно быть короче гипотенузы c и больше нуля.",
+            "Результат с надписью «Отсутствует ветвь a» - это другая сторона, которая образует прямой угол с b. Оно должно быть короче гипотенузы c и больше нуля.",
             "Если результат близок к c, известная часть b относительно мала. Если результат близок к нулю, длина b почти равна длине c. И то, и другое может произойти, но перед использованием ответа следует проверить метки ввода."
           ],
           "listTitle": "Действительный результат должен удовлетворять:",
@@ -1749,7 +1749,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           "h2": "Распространенные ошибки",
           "paragraphs": [
             "Самый большой риск – поменять местами гипотенузу с катетом. В этом калькуляторе предполагается, что c уже является самой длинной стороной, поэтому неверно указанное значение c сделает результат неверным.",
-            "Вторая распространенная проблема — ошибочное использование формулы гипотенузы. Чтобы найти недостающий катет, вы вычитаете известный квадрат катета из квадрата гипотенузы, а затем извлекаете квадратный корень."
+            "Вторая распространенная проблема - ошибочное использование формулы гипотенузы. Чтобы найти недостающий катет, вы вычитаете известный квадрат катета из квадрата гипотенузы, а затем извлекаете квадратный корень."
           ],
           "listTitle": "Избегайте этих ошибок:",
           "listItems": [
@@ -1778,11 +1778,11 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "Что означает c в этом калькуляторе?",
-          "answer": "c — гипотенуза — самая длинная сторона прямоугольного треугольника, противоположная углу 90°. В этом калькуляторе вы вводите c в качестве одного из двух известных значений."
+          "answer": "c - гипотенуза - самая длинная сторона прямоугольного треугольника, противоположная углу 90°. В этом калькуляторе вы вводите c в качестве одного из двух известных значений."
         },
         {
           "question": "Что означает b в этом калькуляторе?",
-          "answer": "b — одна из двух сторон прямоугольного треугольника. Это сторона, образующая прямой угол. Здесь b — это уже известная вам нога, и калькулятор использует ее вместе с c, чтобы найти недостающую ногу a."
+          "answer": "b - одна из двух сторон прямоугольного треугольника. Это сторона, образующая прямой угол. Здесь b - это уже известная вам нога, и калькулятор использует ее вместе с c, чтобы найти недостающую ногу a."
         },
         {
           "question": "Что находит этот калькулятор?",
@@ -1877,7 +1877,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "h2": "Formule du théorème de Pythagore",
         "paragraphs": [
           "Le théorème de Pythagore stipule que dans un triangle rectangle, le carré de l'hypoténuse est égal à la somme des carrés des deux branches. Pour trouver l’hypoténuse, prenez la racine carrée des deux côtés.",
-          "Dans cette formule, a et b sont les deux branches du triangle rectangle — les côtés qui forment l'angle droit. c est l'hypoténuse, le côté le plus long, opposé à l'angle droit. Cette formule ne fonctionne que pour les triangles rectangles."
+          "Dans cette formule, a et b sont les deux branches du triangle rectangle - les côtés qui forment l'angle droit. c est l'hypoténuse, le côté le plus long, opposé à l'angle droit. Cette formule ne fonctionne que pour les triangles rectangles."
         ],
         "formulas": [
           "c^2 = a^2 + b^2",
@@ -1983,7 +1983,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Que signifie c dans la formule?",
-          "answer": "Dans la formule c² = a² + b², c est l'hypoténuse — le côté le plus long du triangle rectangle. C'est le côté directement en face de l'angle 90°."
+          "answer": "Dans la formule c² = a² + b², c est l'hypoténuse - le côté le plus long du triangle rectangle. C'est le côté directement en face de l'angle 90°."
         },
         {
           "question": "Puis-je utiliser cette calculatrice pour n’importe quel triangle?",
@@ -1995,7 +1995,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Que sont a et b dans un triangle rectangle?",
-          "answer": "a et b sont les deux cotes — les côtés qui forment l'angle droit. Ils peuvent avoir n’importe quelle longueur positive, et peu importe celui que vous appelez a ou b. L'hypoténuse (c) est toujours le côté restant."
+          "answer": "a et b sont les deux cotes - les côtés qui forment l'angle droit. Ils peuvent avoir n’importe quelle longueur positive, et peu importe celui que vous appelez a ou b. L'hypoténuse (c) est toujours le côté restant."
         }
       ]
     },
@@ -2178,7 +2178,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "Que signifie c dans cette calculatrice?",
-          "answer": "c est l'hypoténuse du triangle rectangle — le côté le plus long, situé à l'opposé de l'angle 90°. Ce n'est pas une cote. Vous entrez c comme l’une des deux valeurs connues dans cette calculatrice."
+          "answer": "c est l'hypoténuse du triangle rectangle - le côté le plus long, situé à l'opposé de l'angle 90°. Ce n'est pas une cote. Vous entrez c comme l’une des deux valeurs connues dans cette calculatrice."
         },
         {
           "question": "Que signifie un dans cette calculatrice?",
@@ -3604,7 +3604,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "Calculadora: Teorema de Pitágoras | Right Triangle Solver",
       "metaDescription": "Encontre a hipotenusa quando ambos os catetos são conhecidos. Esta é a principal identidade para qualquer triângulo retângulo.",
       "formulaSlug": "pythagorean-theorem",
-      "toolPurpose": "Esteja você resolvendo um problema de lição de casa ou medindo uma diagonal na vida real, esta ferramenta lhe dá a resposta em segundos — com a solução completa mostrada passo a passo.",
+      "toolPurpose": "Esteja você resolvendo um problema de lição de casa ou medindo uma diagonal na vida real, esta ferramenta lhe dá a resposta em segundos - com a solução completa mostrada passo a passo.",
       "intro": "Encontre a hipotenusa quando ambos os catetos são conhecidos. Esta é a principal identidade para qualquer triângulo retângulo.",
       "quickSummary": {
         "h2": "O que esta calculadora pitagórica resolve",
@@ -3803,7 +3803,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "Calculadora: Cateto ausente por c e a | Right Triangle Solver",
       "metaDescription": "Encontre o cateto b quando a hipotenusa c e o outro cateto a são conhecidos.",
       "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "Lembre-se: c é sempre a hipotenusa — o lado mais longo, oposto ao ângulo reto. Não é uma cateto. Se você tem duas catetos e precisa da hipotenusa, use a Calculadora do Teorema de Pitágoras.",
+      "toolPurpose": "Lembre-se: c é sempre a hipotenusa - o lado mais longo, oposto ao ângulo reto. Não é uma cateto. Se você tem duas catetos e precisa da hipotenusa, use a Calculadora do Teorema de Pitágoras.",
       "intro": "Encontre o cateto b quando a hipotenusa c e o outro cateto a são conhecidos.",
       "quickSummary": {
         "h2": "O que esta calculadora de cateto perdida resolve",
@@ -4203,7 +4203,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "ক্যালকুলেটর: পিথাগোরাস উপপাদ্য | Right Triangle Solver",
       "metaDescription": "উভয় বাহুর দৈর্ঘ্য জানা থাকলে অতিভুজ নির্ণয় করুন। এটি প্রতিটি সমকোণী ত্রিভুজের প্রাথমিক সূত্র।",
       "formulaSlug": "pythagorean-theorem",
-      "toolPurpose": "আপনি হোমওয়ার্ক সমস্যার সমাধান করছেন বা বাস্তব জীবনে একটি তির্যক পরিমাপ করছেন না কেন, এই টুলটি আপনাকে সেকেন্ডের মধ্যে উত্তর দেয় — ধাপে ধাপে দেখানো সম্পূর্ণ সমাধান সহ।",
+      "toolPurpose": "আপনি হোমওয়ার্ক সমস্যার সমাধান করছেন বা বাস্তব জীবনে একটি তির্যক পরিমাপ করছেন না কেন, এই টুলটি আপনাকে সেকেন্ডের মধ্যে উত্তর দেয় - ধাপে ধাপে দেখানো সম্পূর্ণ সমাধান সহ।",
       "intro": "উভয় বাহুর দৈর্ঘ্য জানা থাকলে অতিভুজ নির্ণয় করুন। এটি প্রতিটি সমকোণী ত্রিভুজের প্রাথমিক সূত্র।",
       "quickSummary": {
         "h2": "এই পিথাগোরিয়ান ক্যালকুলেটর কি সমাধান করে",
@@ -4273,7 +4273,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "h2": "পিথাগোরিয়ান থিওরেম সূত্র",
         "paragraphs": [
           "পিথাগোরিয়ান উপপাদ্য বলে যে একটি সমকোণী ত্রিভুজে, কর্ণের বর্গ দুই পায়ের বর্গক্ষেত্রের সমষ্টির সমান। কর্ণের সমাধান করতে, উভয় বাহুর বর্গমূল নিন।",
-          "এই সূত্রে, a এবং b হল সমকোণ ত্রিভুজের দুটি পা — যে বাহুগুলি সমকোণ গঠন করে। c হল কর্ণ, দীর্ঘতম দিক, সমকোণের বিপরীত। এই সূত্রটি শুধুমাত্র সমকোণী ত্রিভুজের জন্য কাজ করে।"
+          "এই সূত্রে, a এবং b হল সমকোণ ত্রিভুজের দুটি পা - যে বাহুগুলি সমকোণ গঠন করে। c হল কর্ণ, দীর্ঘতম দিক, সমকোণের বিপরীত। এই সূত্রটি শুধুমাত্র সমকোণী ত্রিভুজের জন্য কাজ করে।"
         ],
         "formulas": [
           "c^2 = a^2 + b^2",
@@ -4379,7 +4379,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "c সূত্রে কী বোঝায়?",
-          "answer": "c² = a² + b² সূত্রে, c হল কর্ণ — সমকোণী ত্রিভুজের দীর্ঘতম বাহু। এটি 90° কোণ থেকে সরাসরি জুড়ে রয়েছে।"
+          "answer": "c² = a² + b² সূত্রে, c হল কর্ণ - সমকোণী ত্রিভুজের দীর্ঘতম বাহু। এটি 90° কোণ থেকে সরাসরি জুড়ে রয়েছে।"
         },
         {
           "question": "আমি কি কোন ত্রিভুজের জন্য এই ক্যালকুলেটর ব্যবহার করতে পারি?",
@@ -4391,7 +4391,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "একটি সমকোণী ত্রিভুজে a এবং b কি?",
-          "answer": "a and b are the two legs — the sides that form the right angle. এগুলি যে কোনও ইতিবাচক দৈর্ঘ্য হতে পারে, এবং আপনি কোনটিকে a বা b বলবেন তাতে কিছু যায় আসে না। কর্ণ (c) সর্বদা অবশিষ্ট দিক।"
+          "answer": "a and b are the two legs - the sides that form the right angle. এগুলি যে কোনও ইতিবাচক দৈর্ঘ্য হতে পারে, এবং আপনি কোনটিকে a বা b বলবেন তাতে কিছু যায় আসে না। কর্ণ (c) সর্বদা অবশিষ্ট দিক।"
         }
       ]
     },
@@ -4402,7 +4402,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "ক্যালকুলেটর: c এবং a থেকে অন্য বাহু নির্ণয় | Right Triangle Solver",
       "metaDescription": "অতিভুজ c এবং অন্য একটি বাহু a জানা থাকলে বাহু b নির্ণয় করুন।",
       "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "মনে রাখবেন: c সর্বদা কর্ণ হয় — দীর্ঘতম দিক, সমকোণের বিপরীত। এটি একটি পা নয়। আপনার যদি দুটি পা থাকে এবং এর পরিবর্তে কর্ণের প্রয়োজন হয়, তাহলে পিথাগোরিয়ান থিওরেম ক্যালকুলেটর ব্যবহার করুন।",
+      "toolPurpose": "মনে রাখবেন: c সর্বদা কর্ণ হয় - দীর্ঘতম দিক, সমকোণের বিপরীত। এটি একটি পা নয়। আপনার যদি দুটি পা থাকে এবং এর পরিবর্তে কর্ণের প্রয়োজন হয়, তাহলে পিথাগোরিয়ান থিওরেম ক্যালকুলেটর ব্যবহার করুন।",
       "intro": "অতিভুজ c এবং অন্য একটি বাহু a জানা থাকলে বাহু b নির্ণয় করুন।",
       "quickSummary": {
         "h2": "এই অনুপস্থিত লেগ ক্যালকুলেটর কি সমাধান করে",
@@ -4574,7 +4574,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "এই ক্যালকুলেটরে c এর অর্থ কী?",
-          "answer": "c হল সমকোণী ত্রিভুজের কর্ণ — দীর্ঘতম দিক, 90° কোণের বিপরীতে অবস্থিত। এটি একটি পা নয়। আপনি এই ক্যালকুলেটরে দুটি পরিচিত মানগুলির একটি হিসাবে c লিখুন৷"
+          "answer": "c হল সমকোণী ত্রিভুজের কর্ণ - দীর্ঘতম দিক, 90° কোণের বিপরীতে অবস্থিত। এটি একটি পা নয়। আপনি এই ক্যালকুলেটরে দুটি পরিচিত মানগুলির একটি হিসাবে c লিখুন৷"
         },
         {
           "question": "এই ক্যালকুলেটরে একটি মানে কি?",
@@ -4773,7 +4773,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "এই ক্যালকুলেটরে c এর অর্থ কী?",
-          "answer": "c হল কর্ণ — 90° কোণের বিপরীতে সমকোণী ত্রিভুজের দীর্ঘতম বাহু। এই ক্যালকুলেটরে, আপনি আপনার দুটি পরিচিত মানগুলির মধ্যে একটি হিসাবে c লিখবেন।"
+          "answer": "c হল কর্ণ - 90° কোণের বিপরীতে সমকোণী ত্রিভুজের দীর্ঘতম বাহু। এই ক্যালকুলেটরে, আপনি আপনার দুটি পরিচিত মানগুলির মধ্যে একটি হিসাবে c লিখবেন।"
         },
         {
           "question": "এই ক্যালকুলেটরে b এর অর্থ কী?",
@@ -6000,7 +6000,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "Kalkulator: Teorem Pythagoras | Right Triangle Solver",
       "metaDescription": "Cari hipotenus apabila kedua-dua sisi diketahui. Ini adalah identiti utama untuk setiap segitiga bersudut tegak.",
       "formulaSlug": "pythagorean-theorem",
-      "toolPurpose": "Sama ada anda menyelesaikan masalah kerja rumah atau mengukur pepenjuru dalam kehidupan sebenar, alat ini memberi anda jawapan dalam beberapa saat — dengan penyelesaian penuh ditunjukkan langkah demi langkah.",
+      "toolPurpose": "Sama ada anda menyelesaikan masalah kerja rumah atau mengukur pepenjuru dalam kehidupan sebenar, alat ini memberi anda jawapan dalam beberapa saat - dengan penyelesaian penuh ditunjukkan langkah demi langkah.",
       "intro": "Cari hipotenus apabila kedua-dua sisi diketahui. Ini adalah identiti utama untuk setiap segitiga bersudut tegak.",
       "quickSummary": {
         "h2": "Perkara yang Selesaikan Kalkulator Pythagoras Ini",
@@ -6070,7 +6070,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "h2": "Formula Teorem Pythagoras",
         "paragraphs": [
           "Teorem Pythagoras menyatakan bahawa dalam segi tiga tepat, kuasa dua hipotenus sama dengan hasil tambah kuasa dua dua sisi. Untuk menyelesaikan hipotenus, ambil punca kuasa dua kedua-dua belah.",
-          "Dalam formula ini, a dan b ialah dua sisi segi tiga tepat — sisi yang membentuk sudut tepat. c ialah hipotenus, sisi terpanjang, bertentangan dengan sudut tepat. Formula ini hanya berfungsi untuk segi tiga tepat."
+          "Dalam formula ini, a dan b ialah dua sisi segi tiga tepat - sisi yang membentuk sudut tepat. c ialah hipotenus, sisi terpanjang, bertentangan dengan sudut tepat. Formula ini hanya berfungsi untuk segi tiga tepat."
         ],
         "formulas": [
           "c^2 = a^2 + b^2",
@@ -6176,7 +6176,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Apakah maksud c dalam formula?",
-          "answer": "Dalam formula c² = a² + b², c ialah hipotenus — sisi terpanjang bagi segi tiga tepat. Ia adalah sisi tepat di seberang sudut 90°."
+          "answer": "Dalam formula c² = a² + b², c ialah hipotenus - sisi terpanjang bagi segi tiga tepat. Ia adalah sisi tepat di seberang sudut 90°."
         },
         {
           "question": "Bolehkah saya menggunakan kalkulator ini untuk mana-mana segi tiga?",
@@ -6188,7 +6188,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Apakah a dan b dalam segi tiga tepat?",
-          "answer": "a dan b ialah dua sisi — sisi yang membentuk sudut tepat. Ia boleh menjadi apa-apa panjang positif, dan tidak kira yang mana satu yang anda panggil a atau b. Hipotenus (c) sentiasa bahagian yang tinggal."
+          "answer": "a dan b ialah dua sisi - sisi yang membentuk sudut tepat. Ia boleh menjadi apa-apa panjang positif, dan tidak kira yang mana satu yang anda panggil a atau b. Hipotenus (c) sentiasa bahagian yang tinggal."
         }
       ]
     },
@@ -6199,7 +6199,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "Kalkulator: Cari Sisi dari c dan a | Right Triangle Solver",
       "metaDescription": "Cari sisi b apabila hipotenus c and sisi lain a diketahui.",
       "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "Ingat: c sentiasa hipotenus — sisi terpanjang, bertentangan dengan sudut kanan. Ia bukan sisi. Jika anda mempunyai dua sisi dan sebaliknya memerlukan hipotenus, gunakan Kalkulator Teorem Pythagoras.",
+      "toolPurpose": "Ingat: c sentiasa hipotenus - sisi terpanjang, bertentangan dengan sudut kanan. Ia bukan sisi. Jika anda mempunyai dua sisi dan sebaliknya memerlukan hipotenus, gunakan Kalkulator Teorem Pythagoras.",
       "intro": "Cari sisi b apabila hipotenus c and sisi lain a diketahui.",
       "quickSummary": {
         "h2": "Perkara yang Selesaikan Kalkulator sisi Yang Hilang Ini",
@@ -6371,7 +6371,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "Apakah maksud c dalam kalkulator ini?",
-          "answer": "c ialah hipotenus bagi segi tiga tepat — sisi terpanjang, terletak bertentangan dengan sudut 90°. Ia bukan sisi. Anda memasukkan c sebagai salah satu daripada dua nilai yang diketahui dalam kalkulator ini."
+          "answer": "c ialah hipotenus bagi segi tiga tepat - sisi terpanjang, terletak bertentangan dengan sudut 90°. Ia bukan sisi. Anda memasukkan c sebagai salah satu daripada dua nilai yang diketahui dalam kalkulator ini."
         },
         {
           "question": "Apakah maksud dalam kalkulator ini?",
@@ -6570,7 +6570,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "Apakah maksud c dalam kalkulator ini?",
-          "answer": "c ialah hipotenus — sisi terpanjang bagi segi tiga tepat, bertentangan dengan sudut 90°. Dalam kalkulator ini, anda memasukkan c sebagai salah satu daripada dua nilai anda yang diketahui."
+          "answer": "c ialah hipotenus - sisi terpanjang bagi segi tiga tepat, bertentangan dengan sudut 90°. Dalam kalkulator ini, anda memasukkan c sebagai salah satu daripada dua nilai anda yang diketahui."
         },
         {
           "question": "Apakah maksud b dalam kalkulator ini?",
@@ -6599,7 +6599,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "Kalkulator: Twierdzenie Pitagorasa | Right Triangle Solver",
       "metaDescription": "Znajdź przeciwprostokątną, gdy znane są obie przyprostokątne. Jest to podstawowa zależność dla każdego trójkąta prostokątnego.",
       "formulaSlug": "pythagorean-theorem",
-      "toolPurpose": "Niezależnie od tego, czy rozwiązujesz zadanie domowe, czy mierzysz przekątną w prawdziwym życiu, to narzędzie da Ci odpowiedź w ciągu kilku sekund — z pełnym rozwiązaniem pokazanym krok po kroku.",
+      "toolPurpose": "Niezależnie od tego, czy rozwiązujesz zadanie domowe, czy mierzysz przekątną w prawdziwym życiu, to narzędzie da Ci odpowiedź w ciągu kilku sekund - z pełnym rozwiązaniem pokazanym krok po kroku.",
       "intro": "Znajdź przeciwprostokątną, gdy znane są obie przyprostokątne. Jest to podstawowa zależność dla każdego trójkąta prostokątnego.",
       "quickSummary": {
         "h2": "Co rozwiązuje ten kalkulator pitagorejski",
@@ -6669,7 +6669,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "h2": "Wzór twierdzenia Pitagorasa",
         "paragraphs": [
           "Twierdzenie Pitagorasa stwierdza, że ​​w trójkącie prostokątnym kwadrat przeciwprostokątnej jest równy sumie kwadratów dwóch nóg. Aby obliczyć przeciwprostokątną, weź pierwiastek kwadratowy z obu stron.",
-          "W tym wzorze a i b to dwie nogi trójkąta prostokątnego — boki tworzące kąt prosty. c to przeciwprostokątna, najdłuższy bok przeciwny do kąta prostego. Ta formuła działa tylko w przypadku trójkątów prostokątnych."
+          "W tym wzorze a i b to dwie nogi trójkąta prostokątnego - boki tworzące kąt prosty. c to przeciwprostokątna, najdłuższy bok przeciwny do kąta prostego. Ta formuła działa tylko w przypadku trójkątów prostokątnych."
         ],
         "formulas": [
           "c^2 = a^2 + b^2",
@@ -6775,7 +6775,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Co oznacza c we wzorze?",
-          "answer": "We wzorze c² = a² + b² c jest przeciwprostokątną — najdłuższym bokiem trójkąta prostokątnego. Jest to strona znajdująca się naprzeciwko kąta 90°."
+          "answer": "We wzorze c² = a² + b² c jest przeciwprostokątną - najdłuższym bokiem trójkąta prostokątnego. Jest to strona znajdująca się naprzeciwko kąta 90°."
         },
         {
           "question": "Czy mogę użyć tego kalkulatora do obliczenia dowolnego trójkąta?",
@@ -6787,7 +6787,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Co to są a i b w trójkącie prostokątnym?",
-          "answer": "a i b to dwie nogi — boki tworzące kąt prosty. Mogą mieć dowolną dodatnią długość i nie ma znaczenia, który z nich nazwiesz a czy b. Przeciwprostokątna (c) jest zawsze pozostałą stroną."
+          "answer": "a i b to dwie nogi - boki tworzące kąt prosty. Mogą mieć dowolną dodatnią długość i nie ma znaczenia, który z nich nazwiesz a czy b. Przeciwprostokątna (c) jest zawsze pozostałą stroną."
         }
       ]
     },
@@ -6798,7 +6798,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "Kalkulator: Brakująca przyprostokątna (z c i a) | Right Triangle Solver",
       "metaDescription": "Znajdź przyprostokątną b, gdy znana jest przeciwprostokątna c i druga przyprostokątna a.",
       "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "Pamiętaj: c to zawsze przeciwprostokątna — najdłuższy bok, przeciwny do kąta prostego. To nie jest noga. Jeśli masz dwie nogi i zamiast tego potrzebujesz przeciwprostokątnej, użyj kalkulatora twierdzenia Pitagorasa.",
+      "toolPurpose": "Pamiętaj: c to zawsze przeciwprostokątna - najdłuższy bok, przeciwny do kąta prostego. To nie jest noga. Jeśli masz dwie nogi i zamiast tego potrzebujesz przeciwprostokątnej, użyj kalkulatora twierdzenia Pitagorasa.",
       "intro": "Znajdź przyprostokątną b, gdy znana jest przeciwprostokątna c i druga przyprostokątna a.",
       "quickSummary": {
         "h2": "Co rozwiązuje ten kalkulator brakującej nogi",
@@ -6970,7 +6970,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "Co oznacza c w tym kalkulatorze?",
-          "answer": "c jest przeciwprostokątną trójkąta prostokątnego — najdłuższego boku, położonego naprzeciw kąta 90°. To nie jest noga. Wpisz c jako jedną z dwóch znanych wartości w tym kalkulatorze."
+          "answer": "c jest przeciwprostokątną trójkąta prostokątnego - najdłuższego boku, położonego naprzeciw kąta 90°. To nie jest noga. Wpisz c jako jedną z dwóch znanych wartości w tym kalkulatorze."
         },
         {
           "question": "Co oznacza „w tym kalkulatorze”?",
@@ -7169,7 +7169,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "Co oznacza c w tym kalkulatorze?",
-          "answer": "c to przeciwprostokątna — najdłuższy bok trójkąta prostokątnego, położony naprzeciw kąta 90°. W tym kalkulatorze wprowadzasz c jako jedną z dwóch znanych wartości."
+          "answer": "c to przeciwprostokątna - najdłuższy bok trójkąta prostokątnego, położony naprzeciw kąta 90°. W tym kalkulatorze wprowadzasz c jako jedną z dwóch znanych wartości."
         },
         {
           "question": "Co oznacza b w tym kalkulatorze?",
@@ -7198,7 +7198,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "Kalkulator: Teorema Pythagoras | Right Triangle Solver",
       "metaDescription": "Cari hipotenusa ketika kedua kaki diketahui. Ini adalah identitas utama untuk setiap segitiga siku-siku.",
       "formulaSlug": "pythagorean-theorem",
-      "toolPurpose": "Baik Anda menyelesaikan soal pekerjaan rumah atau mengukur diagonal di kehidupan nyata, alat ini memberi Anda jawabannya dalam hitungan detik — dengan solusi lengkap ditampilkan langkah demi langkah.",
+      "toolPurpose": "Baik Anda menyelesaikan soal pekerjaan rumah atau mengukur diagonal di kehidupan nyata, alat ini memberi Anda jawabannya dalam hitungan detik - dengan solusi lengkap ditampilkan langkah demi langkah.",
       "intro": "Cari hipotenusa ketika kedua kaki diketahui. Ini adalah identitas utama untuk setiap segitiga siku-siku.",
       "quickSummary": {
         "h2": "Apa yang Dipecahkan Kalkulator Pythagoras Ini",
@@ -7268,7 +7268,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "h2": "Rumus Teorema Pythagoras",
         "paragraphs": [
           "Teorema Pythagoras menyatakan bahwa pada segitiga siku-siku, kuadrat sisi miring sama dengan jumlah kuadrat kedua sisinya. Untuk mencari sisi miring, ambil akar kuadrat kedua sisinya.",
-          "Dalam rumus ini, a dan b adalah dua sisi segitiga siku-siku — sisi-sisi yang membentuk sudut siku-siku. c adalah sisi miring, sisi terpanjang yang berhadapan dengan sudut siku-siku. Rumus ini hanya berlaku untuk segitiga siku-siku."
+          "Dalam rumus ini, a dan b adalah dua sisi segitiga siku-siku - sisi-sisi yang membentuk sudut siku-siku. c adalah sisi miring, sisi terpanjang yang berhadapan dengan sudut siku-siku. Rumus ini hanya berlaku untuk segitiga siku-siku."
         ],
         "formulas": [
           "c^2 = a^2 + b^2",
@@ -7374,7 +7374,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Apa arti c dalam rumusnya?",
-          "answer": "Dalam rumus c² = a² + b², c adalah sisi miring — sisi terpanjang dari segitiga siku-siku. Itu adalah sisi yang berhadapan langsung dengan sudut 90°."
+          "answer": "Dalam rumus c² = a² + b², c adalah sisi miring - sisi terpanjang dari segitiga siku-siku. Itu adalah sisi yang berhadapan langsung dengan sudut 90°."
         },
         {
           "question": "Bisakah saya menggunakan kalkulator ini untuk segitiga apa pun?",
@@ -7386,7 +7386,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Berapakah a dan b pada segitiga siku-siku?",
-          "answer": "a dan b adalah dua sisi — sisi yang membentuk sudut siku-siku. Panjangnya bisa berapa saja, dan tidak masalah yang mana yang Anda sebut a atau b. Sisi miring (c) selalu merupakan sisi sisanya."
+          "answer": "a dan b adalah dua sisi - sisi yang membentuk sudut siku-siku. Panjangnya bisa berapa saja, dan tidak masalah yang mana yang Anda sebut a atau b. Sisi miring (c) selalu merupakan sisi sisanya."
         }
       ]
     },
@@ -7397,7 +7397,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "Kalkulator: Kaki yang hilang dari c dan a | Right Triangle Solver",
       "metaDescription": "Cari kaki b ketika hipotenusa c dan kaki lainnya a diketahui.",
       "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "Ingat: c selalu merupakan sisi miring — sisi terpanjang, berhadapan dengan sudut siku-siku. Itu bukan sisi. Jika Anda memiliki dua sisi dan membutuhkan sisi miring, gunakan Kalkulator Teorema Pythagoras.",
+      "toolPurpose": "Ingat: c selalu merupakan sisi miring - sisi terpanjang, berhadapan dengan sudut siku-siku. Itu bukan sisi. Jika Anda memiliki dua sisi dan membutuhkan sisi miring, gunakan Kalkulator Teorema Pythagoras.",
       "intro": "Cari kaki b ketika hipotenusa c dan kaki lainnya a diketahui.",
       "quickSummary": {
         "h2": "Apa yang Dipecahkan Kalkulator sisi yang Hilang Ini",
@@ -7569,7 +7569,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "Apa arti c dalam kalkulator ini?",
-          "answer": "c adalah sisi miring dari segitiga siku-siku — sisi terpanjang, terletak di seberang sudut 90°. Itu bukan sisi. Anda memasukkan c sebagai salah satu dari dua nilai yang diketahui dalam kalkulator ini."
+          "answer": "c adalah sisi miring dari segitiga siku-siku - sisi terpanjang, terletak di seberang sudut 90°. Itu bukan sisi. Anda memasukkan c sebagai salah satu dari dua nilai yang diketahui dalam kalkulator ini."
         },
         {
           "question": "Apa arti dari kalkulator ini?",
@@ -7768,7 +7768,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "Apa arti c dalam kalkulator ini?",
-          "answer": "c adalah sisi miring — sisi terpanjang dari segitiga siku-siku, berhadapan dengan sudut 90°. Di kalkulator ini, Anda memasukkan c sebagai salah satu dari dua nilai yang diketahui."
+          "answer": "c adalah sisi miring - sisi terpanjang dari segitiga siku-siku, berhadapan dengan sudut 90°. Di kalkulator ini, Anda memasukkan c sebagai salah satu dari dua nilai yang diketahui."
         },
         {
           "question": "Apa arti b dalam kalkulator ini?",
@@ -7973,7 +7973,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "ماذا يعني c في الصيغة؟",
-          "answer": "في الصيغة c² = a² + b²، c هو الوتر — الضلع الأطول في المثلث القائم. إنه الجانب المقابل مباشرة لزاوية 90°."
+          "answer": "في الصيغة c² = a² + b²، c هو الوتر - الضلع الأطول في المثلث القائم. إنه الجانب المقابل مباشرة لزاوية 90°."
         },
         {
           "question": "هل يمكنني استخدام هذه الآلة الحاسبة لأي مثلث؟",
@@ -7996,7 +7996,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "حاسبة: الضلع المفقود بدلالة c و a | Right Triangle Solver",
       "metaDescription": "أوجد الضلع b عندما يكون الوتر c والضلع الآخر a معروفين.",
       "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "تذكر: c هو دائمًا الوتر — الضلع الأطول، المقابل للزاوية القائمة. إنها ليست ساق. إذا كان لديك ساقان وتحتاج إلى الوتر بدلًا من ذلك، فاستخدم حاسبة نظرية فيثاغورس.",
+      "toolPurpose": "تذكر: c هو دائمًا الوتر - الضلع الأطول، المقابل للزاوية القائمة. إنها ليست ساق. إذا كان لديك ساقان وتحتاج إلى الوتر بدلًا من ذلك، فاستخدم حاسبة نظرية فيثاغورس.",
       "intro": "أوجد الضلع b عندما يكون الوتر c والضلع الآخر a معروفين.",
       "quickSummary": {
         "h2": "ما الذي تحله هذه الآلة الحاسبة للساق المفقودة؟",
@@ -8367,7 +8367,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "ماذا يعني c في هذه الآلة الحاسبة؟",
-          "answer": "c هو الوتر — أطول ضلع في المثلث القائم، مقابل زاوية 90°. في هذه الآلة الحاسبة، تقوم بإدخال c كواحدة من القيمتين المعروفتين لديك."
+          "answer": "c هو الوتر - أطول ضلع في المثلث القائم، مقابل زاوية 90°. في هذه الآلة الحاسبة، تقوم بإدخال c كواحدة من القيمتين المعروفتين لديك."
         },
         {
           "question": "ماذا يعني b في هذه الآلة الحاسبة؟",
@@ -8396,7 +8396,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "Калкулатор: Питагорова теорема | Right Triangle Solver",
       "metaDescription": "Намерете хипотенузата, когато са известни двата катета. Това е основното тъждество за всеки правоъгълен триъгълник.",
       "formulaSlug": "pythagorean-theorem",
-      "toolPurpose": "Независимо дали решавате домашна задача или измервате диагонал в реалния живот, този инструмент ви дава отговора за секунди — с пълното решение, показано стъпка по стъпка.",
+      "toolPurpose": "Независимо дали решавате домашна задача или измервате диагонал в реалния живот, този инструмент ви дава отговора за секунди - с пълното решение, показано стъпка по стъпка.",
       "intro": "Намерете хипотенузата, когато са известни двата катета. Това е основното тъждество за всеки правоъгълен триъгълник.",
       "quickSummary": {
         "h2": "Какво решава този калкулатор на Питагор",
@@ -8572,7 +8572,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Какво означава c във формулата?",
-          "answer": "Във формулата c² = a² + b² c е хипотенузата — най-дългата страна на правоъгълния триъгълник. Това е страната точно срещу ъгъла 90°."
+          "answer": "Във формулата c² = a² + b² c е хипотенузата - най-дългата страна на правоъгълния триъгълник. Това е страната точно срещу ъгъла 90°."
         },
         {
           "question": "Мога ли да използвам този калкулатор за всеки триъгълник?",
@@ -8595,7 +8595,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "Калкулатор: Липсващ катет (чрез c и a) | Right Triangle Solver",
       "metaDescription": "Намерете катета b, когато са известни хипотенузата c и другият катет a.",
       "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "Запомнете: c винаги е хипотенузата — най-дългата страна, срещу правия ъгъл. Това не е крак. Ако имате два крака и вместо това се нуждаете от хипотенузата, използвайте калкулатора на Питагоровата теорема.",
+      "toolPurpose": "Запомнете: c винаги е хипотенузата - най-дългата страна, срещу правия ъгъл. Това не е крак. Ако имате два крака и вместо това се нуждаете от хипотенузата, използвайте калкулатора на Питагоровата теорема.",
       "intro": "Намерете катета b, когато са известни хипотенузата c и другият катет a.",
       "quickSummary": {
         "h2": "Какво решава този калкулатор за липсващи крака",
@@ -8767,7 +8767,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "Какво означава c в този калкулатор?",
-          "answer": "c е хипотенузата на правоъгълния триъгълник — най-дългата страна, разположена срещу ъгъла 90°. Това не е крак. Въвеждате c като една от двете известни стойности в този калкулатор."
+          "answer": "c е хипотенузата на правоъгълния триъгълник - най-дългата страна, разположена срещу ъгъла 90°. Това не е крак. Въвеждате c като една от двете известни стойности в този калкулатор."
         },
         {
           "question": "Какво означава в този калкулатор?",
@@ -8966,7 +8966,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "Какво означава c в този калкулатор?",
-          "answer": "c е хипотенузата — най-дългата страна на правоъгълния триъгълник, срещу ъгъла 90°. В този калкулатор въвеждате c като една от двете ви известни стойности."
+          "answer": "c е хипотенузата - най-дългата страна на правоъгълния триъгълник, срещу ъгъла 90°. В този калкулатор въвеждате c като една от двете ви известни стойности."
         },
         {
           "question": "Какво означава b в този калкулатор?",
@@ -9793,7 +9793,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "Kalkylator: Saknad katet (från c och a) | Right Triangle Solver",
       "metaDescription": "Hitta kateten b när hypotenusan c och den andra kateten a är kända.",
       "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "Kom ihåg: c är alltid hypotenusan — den längsta sidan, mitt emot rät vinkel. Det är inte ett katet. Om du har två katet och behöver hypotenusan istället, använd Pythagorean Theorem Calculator.",
+      "toolPurpose": "Kom ihåg: c är alltid hypotenusan - den längsta sidan, mitt emot rät vinkel. Det är inte ett katet. Om du har två katet och behöver hypotenusan istället, använd Pythagorean Theorem Calculator.",
       "intro": "Hitta kateten b när hypotenusan c och den andra kateten a är kända.",
       "quickSummary": {
         "h2": "Vad den här missade kateträknaren löser",
@@ -10164,7 +10164,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "Vad betyder c i den här kalkylatorn?",
-          "answer": "c är hypotenusan — den längsta sidan av den räta triangeln, mittemot 90°-vinkeln. I den här kalkylatorn anger du c som ett av dina två kända värden."
+          "answer": "c är hypotenusan - den längsta sidan av den räta triangeln, mittemot 90°-vinkeln. I den här kalkylatorn anger du c som ett av dina två kända värden."
         },
         {
           "question": "Vad betyder b i den här kalkylatorn?",
@@ -10263,7 +10263,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "h2": "毕达哥拉斯定理公式",
         "paragraphs": [
           "毕达哥拉斯定理指出，在直角三角形中，斜边的平方等于两条边的平方和。要求解斜边，请取两边的平方根。",
-          "在此公式中，a 和 b 是直角三角形的两条边——形成直角的边。 c 是斜边，最长的边，与直角相对。该公式仅适用于直角三角形。"
+          "在此公式中，a 和 b 是直角三角形的两条边--形成直角的边。 c 是斜边，最长的边，与直角相对。该公式仅适用于直角三角形。"
         ],
         "formulas": [
           "c^2 = a^2 + b^2",
@@ -10369,7 +10369,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "公式中的c是什么意思？",
-          "answer": "在公式 c² = a² + b² 中，c 是斜边——直角三角形的最长边。它是 90° 角正对面的一侧。"
+          "answer": "在公式 c² = a² + b² 中，c 是斜边--直角三角形的最长边。它是 90° 角正对面的一侧。"
         },
         {
           "question": "我可以用这个计算器计算任何三角形吗？",
@@ -10381,7 +10381,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "直角三角形中的 a 和 b 是什么？",
-          "answer": "a 和 b 是两条腿——形成直角的边。它们可以是任意正长度，并且无论您称之为 a 还是 b 都没有关系。斜边 (c) 始终是余下的一边。"
+          "answer": "a 和 b 是两条腿--形成直角的边。它们可以是任意正长度，并且无论您称之为 a 还是 b 都没有关系。斜边 (c) 始终是余下的一边。"
         }
       ]
     },
@@ -10392,7 +10392,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "计算器: 求直角边 (已知 c 和 a) | Right Triangle Solver",
       "metaDescription": "已知斜边 c 和另一条直角边 a 时，寻找直角边 b。",
       "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "请记住：c 始终是斜边——最长的边，与直角相对。它不是一条腿。如果您有两条腿并且需要斜边，请使用毕达哥拉斯定理计算器。",
+      "toolPurpose": "请记住：c 始终是斜边--最长的边，与直角相对。它不是一条腿。如果您有两条腿并且需要斜边，请使用毕达哥拉斯定理计算器。",
       "intro": "已知斜边 c 和另一条直角边 a 时，寻找直角边 b。",
       "quickSummary": {
         "h2": "这个缺腿计算器可以解决什么问题",
@@ -10564,7 +10564,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "c 在此计算器中意味着什么？",
-          "answer": "c 是直角三角形的斜边——最长的边，位于 90° 角的对面。它不是一条腿。您在此计算器中输入 c 作为两个已知值之一。"
+          "answer": "c 是直角三角形的斜边--最长的边，位于 90° 角的对面。它不是一条腿。您在此计算器中输入 c 作为两个已知值之一。"
         },
         {
           "question": "这个计算器中的 a 是什么意思？",
@@ -10763,7 +10763,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "c 在此计算器中意味着什么？",
-          "answer": "c 是斜边——直角三角形的最长边，与 90° 角相对。在此计算器中，您输入 c 作为两个已知值之一。"
+          "answer": "c 是斜边--直角三角形的最长边，与 90° 角相对。在此计算器中，您输入 c 作为两个已知值之一。"
         },
         {
           "question": "b在此计算器中意味着什么？",

@@ -84,7 +84,7 @@
       "h2": "Formule du Périmètre d'un Triangle Rectangle",
       "paragraphs": [
         "Le périmètre de tout polygone est la longueur totale de sa limite. Pour un triangle rectangle, la limite se compose d'exactement trois côtés droits : deux côtés de l'angle droit (a et b) qui forment l'angle de 90° et une hypoténuse (c) qui s'étend de l'angle droit au sommet opposé.",
-        "Puisqu'un triangle rectangle ne comporte que trois côtés, la formule du périmètre est la somme la plus simple possible. Aucune trigonométrie, racine carrée ou exposant n'est nécessaire — juste une addition."
+        "Puisqu'un triangle rectangle ne comporte que trois côtés, la formule du périmètre est la somme la plus simple possible. Aucune trigonométrie, racine carrée ou exposant n'est nécessaire - juste une addition."
       ],
       "formulas": [
         "P = a + b + c"
@@ -129,9 +129,9 @@
         ],
         "listTitle": "Les trois côtés en un coup d'œil :",
         "listItems": [
-          "Côté a — L'un des deux côtés qui forment l'angle à 90°. Ce peut être le côté vertical ou horizontal, selon l'orientation.",
-          "Côté b — L'autre côté qui forme l'angle à 90°. Avec le côté a, il définit l'angle droit.",
-          "Hypoténuse c — Le côté le plus long, s'étendant d'un sommet d'angle aigu à l'autre, directement opposé à l'angle droit.",
+          "Côté a - L'un des deux côtés qui forment l'angle à 90°. Ce peut être le côté vertical ou horizontal, selon l'orientation.",
+          "Côté b - L'autre côté qui forme l'angle à 90°. Avec le côté a, il définit l'angle droit.",
+          "Hypoténuse c - Le côté le plus long, s'étendant d'un sommet d'angle aigu à l'autre, directement opposé à l'angle droit.",
           "La relation pythagoricienne est vérifiée : a² + b² = c². Cela vous permet de vérifier que vos trois valeurs forment bien un triangle rectangle."
         ]
       },
@@ -161,7 +161,7 @@
         "paragraphs": [
           "S'entraîner avec différents triangles aide à prendre confiance. Voici trois autres exemples résolus utilisant des triplets pythagoriciens courants et des valeurs décimales."
         ],
-        "listTitle": "Exemple 1 — Le triangle 5-12-13 :",
+        "listTitle": "Exemple 1 - Le triangle 5-12-13 :",
         "listItems": [
           "Étant donné : a = 5, b = 12, c = 13",
           "P = 5 + 12 + 13 = 30 unités",
@@ -169,7 +169,7 @@
         ]
       },
       {
-        "h2": "Exemple 2 — Le Triangle 8-15-17",
+        "h2": "Exemple 2 - Le Triangle 8-15-17",
         "paragraphs": [
           "Étant donné : a = 8, b = 15, c = 17. Il s'agit d'un autre triplet pythagoricien où tous les côtés sont des nombres entiers."
         ],
@@ -180,14 +180,14 @@
         ]
       },
       {
-        "h2": "Exemple 3 — Côtés Décimaux",
+        "h2": "Exemple 3 - Côtés Décimaux",
         "paragraphs": [
           "Tous les triangles rectangles n'ont pas des côtés en nombres entiers. Étant donné : a = 2.5, b = 6, c = 6.5."
         ],
         "listItems": [
           "P = 2.5 + 6 + 6.5 = 15 unités",
           "Vérification : 2.5² + 6² = 6.25 + 36 = 42.25 = 6.5² ✓",
-          "Les valeurs décimales fonctionnent de la même manière — il suffit de les additionner directement."
+          "Les valeurs décimales fonctionnent de la même manière - il suffit de les additionner directement."
         ]
       },
       {
@@ -205,13 +205,13 @@
         ],
         "listTitle": "Utilisations courantes dans le monde réel :",
         "listItems": [
-          "Clôtures — Un parterre de jardin triangulaire ou un terrain d'angle nécessite une clôture sur les trois côtés. Le périmètre vous indique combien de ft de clôture linéaire acheter.",
-          "Garnitures et moulures — Un élément architectural triangulaire (comme un pignon) a besoin de moulures le long de ses bords. Le périmètre donne la longueur totale de la moulure.",
-          "Fil et corde — L'encadrement d'un affichage à angle droit, d'une bannière ou d'une voile nécessite une corde, un fil ou une bordure égale au périmètre.",
-          "Pistes de jogging et de marche — Une piste de course triangulaire ou un sentier pédestre autour d'un parc à angle droit a une distance totale égale au périmètre.",
-          "Tracé de construction — Les constructeurs utilisent la règle 3-4-5 pour vérifier si un coin est carré. Connaître le périmètre aide à vérifier les mesures.",
-          "Artisanat et couture — La reliure, le passepoil ou la dentelle autour d'un coussin ou d'un fanion triangulaire nécessite un matériau d'une longueur égale au périmètre.",
-          "Calculs cartographiques et topographiques — Les géomètres mesurent des parcelles de terrain triangulaires et ont besoin du périmètre pour les descriptions de limites et les registres de propriété."
+          "Clôtures - Un parterre de jardin triangulaire ou un terrain d'angle nécessite une clôture sur les trois côtés. Le périmètre vous indique combien de ft de clôture linéaire acheter.",
+          "Garnitures et moulures - Un élément architectural triangulaire (comme un pignon) a besoin de moulures le long de ses bords. Le périmètre donne la longueur totale de la moulure.",
+          "Fil et corde - L'encadrement d'un affichage à angle droit, d'une bannière ou d'une voile nécessite une corde, un fil ou une bordure égale au périmètre.",
+          "Pistes de jogging et de marche - Une piste de course triangulaire ou un sentier pédestre autour d'un parc à angle droit a une distance totale égale au périmètre.",
+          "Tracé de construction - Les constructeurs utilisent la règle 3-4-5 pour vérifier si un coin est carré. Connaître le périmètre aide à vérifier les mesures.",
+          "Artisanat et couture - La reliure, le passepoil ou la dentelle autour d'un coussin ou d'un fanion triangulaire nécessite un matériau d'une longueur égale au périmètre.",
+          "Calculs cartographiques et topographiques - Les géomètres mesurent des parcelles de terrain triangulaires et ont besoin du périmètre pour les descriptions de limites et les registres de propriété."
         ]
       },
       {
@@ -245,12 +245,12 @@
         ],
         "listTitle": "Faites attention à ces pièges :",
         "listItems": [
-          "N'utiliser que deux côtés — Le périmètre nécessite les trois côtés. Oublier l'hypoténuse ou un côté donne une réponse incomplète.",
-          "Mélanger les unités — Si le côté a est en in et le côté b est en cm, la somme n'a aucun sens. Convertissez d'abord en une seule unité.",
-          "Confondre le périmètre avec la surface — Le périmètre est une longueur (mesurée en unités), tandis que la surface est une zone (mesurée en unités carrées). Assurez-vous de savoir ce que le problème demande.",
-          "Utiliser des côtés qui ne forment pas un triangle rectangle — Vérifiez que a² + b² = c². Si cette équation n'est pas vérifiée, le triangle n'est pas rectangle et c n'est pas une véritable hypoténuse.",
-          "Arrondir trop tôt — Si un côté est irrationnel (comme √2), conservez la précision complète jusqu'à l'addition finale pour éviter d'accumuler les erreurs d'arrondi.",
-          "Entrer l'hypoténuse comme un côté de l'angle droit — L'hypoténuse doit être le côté le plus long. Si vous placez une valeur plus courte dans le champ de l'hypoténuse, le diagramme sera erroné et la vérification pythagoricienne échouera."
+          "N'utiliser que deux côtés - Le périmètre nécessite les trois côtés. Oublier l'hypoténuse ou un côté donne une réponse incomplète.",
+          "Mélanger les unités - Si le côté a est en in et le côté b est en cm, la somme n'a aucun sens. Convertissez d'abord en une seule unité.",
+          "Confondre le périmètre avec la surface - Le périmètre est une longueur (mesurée en unités), tandis que la surface est une zone (mesurée en unités carrées). Assurez-vous de savoir ce que le problème demande.",
+          "Utiliser des côtés qui ne forment pas un triangle rectangle - Vérifiez que a² + b² = c². Si cette équation n'est pas vérifiée, le triangle n'est pas rectangle et c n'est pas une véritable hypoténuse.",
+          "Arrondir trop tôt - Si un côté est irrationnel (comme √2), conservez la précision complète jusqu'à l'addition finale pour éviter d'accumuler les erreurs d'arrondi.",
+          "Entrer l'hypoténuse comme un côté de l'angle droit - L'hypoténuse doit être le côté le plus long. Si vous placez une valeur plus courte dans le champ de l'hypoténuse, le diagramme sera erroné et la vérification pythagoricienne échouera."
         ]
       },
       {
@@ -298,7 +298,7 @@
       },
       {
         "question": "Que signifie chaque variable dans P = a + b + c ?",
-        "answer": "P est le périmètre (longueur totale de la limite). a est un côté du triangle rectangle. b est l'autre côté de l'angle droit. c est l'hypoténuse — le côté le plus long qui se trouve à l'opposé de l'angle droit. Les deux côtés a et b forment le coin à 90°."
+        "answer": "P est le périmètre (longueur totale de la limite). a est un côté du triangle rectangle. b est l'autre côté de l'angle droit. c est l'hypoténuse - le côté le plus long qui se trouve à l'opposé de l'angle droit. Les deux côtés a et b forment le coin à 90°."
       },
       {
         "question": "Puis-je trouver le périmètre avec seulement deux côtés ?",
@@ -326,7 +326,7 @@
       },
       {
         "question": "Le périmètre d'un triangle rectangle peut-il être un nombre impair ?",
-        "answer": "Oui. Le périmètre peut être n'importe quel nombre positif — entier, décimal ou irrationnel. Par exemple, un triangle rectangle avec des côtés 1 et 1 a une hypoténuse √2 ≈ 1.414, ce qui donne un périmètre ≈ 3.414, qui n'est ni un entier ni un rationnel."
+        "answer": "Oui. Le périmètre peut être n'importe quel nombre positif - entier, décimal ou irrationnel. Par exemple, un triangle rectangle avec des côtés 1 et 1 a une hypoténuse √2 ≈ 1.414, ce qui donne un périmètre ≈ 3.414, qui n'est ni un entier ni un rationnel."
       },
       {
         "question": "Pourquoi l'hypoténuse est-elle toujours le côté le plus long ?",

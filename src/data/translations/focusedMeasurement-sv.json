@@ -84,7 +84,7 @@
       "h2": "Omkretsformel för rätvinklig triangel",
       "paragraphs": [
         "Omkretsen av en polygon är dess gräns totala längd. För en rätvinklig triangel består gränsen av exakt tre raka sidor: två kateter (a och b) som bildar 90°-vinkeln, och en hypotenusa (c) som sträcker sig tvärs över från den räta vinkeln till det motsatta hörnet.",
-        "Eftersom en rätvinklig triangel bara har tre sidor är omkretsformeln den enklast möjliga summan. Ingen trigonometri, kvadratrötter eller exponenter behövs — bara addition."
+        "Eftersom en rätvinklig triangel bara har tre sidor är omkretsformeln den enklast möjliga summan. Ingen trigonometri, kvadratrötter eller exponenter behövs - bara addition."
       ],
       "formulas": [
         "P = a + b + c"
@@ -129,9 +129,9 @@
         ],
         "listTitle": "De tre sidorna i korthet:",
         "listItems": [
-          "Katet a — En av de två sidorna som bildar 90°-vinkeln. Den kan vara den vertikala eller horisontella sidan, beroende på orientering.",
-          "Katet b — Den andra sidan som bildar 90°-vinkeln. Tillsammans med katet a definierar den den räta vinkeln.",
-          "Hypotenusa c — Den längsta sidan, som sträcker sig från det ena spetsiga hörnet till det andra, direkt mittemot den räta vinkeln.",
+          "Katet a - En av de två sidorna som bildar 90°-vinkeln. Den kan vara den vertikala eller horisontella sidan, beroende på orientering.",
+          "Katet b - Den andra sidan som bildar 90°-vinkeln. Tillsammans med katet a definierar den den räta vinkeln.",
+          "Hypotenusa c - Den längsta sidan, som sträcker sig från det ena spetsiga hörnet till det andra, direkt mittemot den räta vinkeln.",
           "Pythagoras samband gäller: a² + b² = c². Detta låter dig verifiera att dina tre värden faktiskt bildar en rätvinklig triangel."
         ]
       },
@@ -161,7 +161,7 @@
         "paragraphs": [
           "Att öva med olika trianglar hjälper till att bygga förtroende. Nedan finns tre fler lösta exempel som använder vanliga Pythagoreiska tripplar och decimalvärden."
         ],
-        "listTitle": "Exempel 1 — 5-12-13-triangeln:",
+        "listTitle": "Exempel 1 - 5-12-13-triangeln:",
         "listItems": [
           "Givet: a = 5, b = 12, c = 13",
           "P = 5 + 12 + 13 = 30 enheter",
@@ -169,7 +169,7 @@
         ]
       },
       {
-        "h2": "Exempel 2 — 8-15-17-triangeln",
+        "h2": "Exempel 2 - 8-15-17-triangeln",
         "paragraphs": [
           "Givet: a = 8, b = 15, c = 17. Detta är en annan Pythagoreisk trippel där alla sidor är heltal."
         ],
@@ -180,14 +180,14 @@
         ]
       },
       {
-        "h2": "Exempel 3 — Decimalsidor",
+        "h2": "Exempel 3 - Decimalsidor",
         "paragraphs": [
           "Inte alla rätvinkliga trianglar har jämna heltalssidor. Givet: a = 2.5, b = 6, c = 6.5."
         ],
         "listItems": [
           "P = 2.5 + 6 + 6.5 = 15 enheter",
           "Verifiering: 2.5² + 6² = 6.25 + 36 = 42.25 = 6.5² ✓",
-          "Decimalvärden fungerar på samma sätt — bara addera dem direkt."
+          "Decimalvärden fungerar på samma sätt - bara addera dem direkt."
         ]
       },
       {
@@ -205,13 +205,13 @@
         ],
         "listTitle": "Vanliga användningsområden i verkligheten:",
         "listItems": [
-          "Stängsel — En triangulär rabatt eller hörntomt kräver stängsel runt alla tre sidorna. Omkretsen talar om hur många löpmeter stängsel du ska köpa.",
-          "Lister — En triangulär arkitektonisk detalj (som en gavel) behöver lister längs sina kanter. Omkretsen ger den totala listlängden.",
-          "Tråd och rep — Att rama in en rätvinklig skärm, banderoll eller segel kräver rep, tråd eller kantning lika med omkretsen.",
-          "Löp- och promenadspår — Ett triangulärt löpspår eller promenadspår runt ett rätvinkligt parkområde har ett totalt avstånd lika med omkretsen.",
-          "Byggnadslayout — Byggare använder 3-4-5-regeln för att kontrollera om ett hörn är rätvinkligt. Att känna till omkretsen hjälper till att verifiera mätningar.",
-          "Hantverk och sömnad — Kantband, passpoal eller spets runt en triangulär kudde eller vimpel kräver material av omkretslängd.",
-          "Kart- och lantmäteriberäkningar — Lantmätare mäter triangulära landstycken och behöver omkretsen för gränsbeskrivningar och fastighetsregister."
+          "Stängsel - En triangulär rabatt eller hörntomt kräver stängsel runt alla tre sidorna. Omkretsen talar om hur många löpmeter stängsel du ska köpa.",
+          "Lister - En triangulär arkitektonisk detalj (som en gavel) behöver lister längs sina kanter. Omkretsen ger den totala listlängden.",
+          "Tråd och rep - Att rama in en rätvinklig skärm, banderoll eller segel kräver rep, tråd eller kantning lika med omkretsen.",
+          "Löp- och promenadspår - Ett triangulärt löpspår eller promenadspår runt ett rätvinkligt parkområde har ett totalt avstånd lika med omkretsen.",
+          "Byggnadslayout - Byggare använder 3-4-5-regeln för att kontrollera om ett hörn är rätvinkligt. Att känna till omkretsen hjälper till att verifiera mätningar.",
+          "Hantverk och sömnad - Kantband, passpoal eller spets runt en triangulär kudde eller vimpel kräver material av omkretslängd.",
+          "Kart- och lantmäteriberäkningar - Lantmätare mäter triangulära landstycken och behöver omkretsen för gränsbeskrivningar och fastighetsregister."
         ]
       },
       {
@@ -226,7 +226,7 @@
         "h2": "Tips för enhetskonvertering",
         "paragraphs": [
           "Omkretsresultatet är endast meningsfullt när alla tre inmatningssidorna använder samma enhet. Om dina mått är i olika enheter, konvertera dem först. Kalkylatorn innehåller en enhetsväljare för varje inmatningsfält för att hantera konverteringar automatiskt.",
-          "Kom ihåg att omkretsen är en linjär mätning, så konverteringar följer standardlängdförhållanden — inte arealförhållanden. För att till exempel konvertera från fot till meter, multiplicera med 0.3048 (inte med 0.3048²)."
+          "Kom ihåg att omkretsen är en linjär mätning, så konverteringar följer standardlängdförhållanden - inte arealförhållanden. För att till exempel konvertera från fot till meter, multiplicera med 0.3048 (inte med 0.3048²)."
         ],
         "listTitle": "Snabba påminnelser om konvertering:",
         "listItems": [
@@ -245,12 +245,12 @@
         ],
         "listTitle": "Se upp för dessa fallgropar:",
         "listItems": [
-          "Att bara använda två sidor — Omkretsen kräver alla tre sidorna. Att glömma hypotenusan eller en katet ger ett ofullständigt svar.",
-          "Att blanda enheter — Om katet a är i tum och katet b är i centimeter har summan ingen mening. Konvertera till en gemensam enhet först.",
-          "Att förväxla omkrets med area — Omkrets är en längd (mätt i enheter), medan area är en yta (mätt i kvadratenheter). Se till att du vet vilken problemet frågar efter.",
-          "Att använda sidor som inte bildar en rätvinklig triangel — Kontrollera att a² + b² = c². Om denna ekvation inte stämmer är triangeln inte en rätvinklig triangel och c är inte en sann hypotenusa.",
-          "Att avrunda för tidigt — Om en sida är irrationell (som √2), behåll full precision fram till den slutliga additionen för att undvika att ackumulera avrundningsfel.",
-          "Att ange hypotenusan som en katet — Hypotenusan måste vara den längsta sidan. Om du placerar ett kortare värde i hypotenusafältet kommer diagrammet att se fel ut och Pythagoras kontroll kommer att misslyckas."
+          "Att bara använda två sidor - Omkretsen kräver alla tre sidorna. Att glömma hypotenusan eller en katet ger ett ofullständigt svar.",
+          "Att blanda enheter - Om katet a är i tum och katet b är i centimeter har summan ingen mening. Konvertera till en gemensam enhet först.",
+          "Att förväxla omkrets med area - Omkrets är en längd (mätt i enheter), medan area är en yta (mätt i kvadratenheter). Se till att du vet vilken problemet frågar efter.",
+          "Att använda sidor som inte bildar en rätvinklig triangel - Kontrollera att a² + b² = c². Om denna ekvation inte stämmer är triangeln inte en rätvinklig triangel och c är inte en sann hypotenusa.",
+          "Att avrunda för tidigt - Om en sida är irrationell (som √2), behåll full precision fram till den slutliga additionen för att undvika att ackumulera avrundningsfel.",
+          "Att ange hypotenusan som en katet - Hypotenusan måste vara den längsta sidan. Om du placerar ett kortare värde i hypotenusafältet kommer diagrammet att se fel ut och Pythagoras kontroll kommer att misslyckas."
         ]
       },
       {
@@ -298,7 +298,7 @@
       },
       {
         "question": "Vad betyder varje variabel i P = a + b + c?",
-        "answer": "P är omkretsen (total gränslängd). a är den ena kateten i den rätvinkliga triangeln. b är den andra kateten. c är hypotenusan — den längsta sidan som sitter mittemot den räta vinkeln. De två kateterna bildar 90°-hörnet."
+        "answer": "P är omkretsen (total gränslängd). a är den ena kateten i den rätvinkliga triangeln. b är den andra kateten. c är hypotenusan - den längsta sidan som sitter mittemot den räta vinkeln. De två kateterna bildar 90°-hörnet."
       },
       {
         "question": "Kan jag hitta omkretsen med endast två sidor?",
@@ -326,7 +326,7 @@
       },
       {
         "question": "Kan omkretsen av en rätvinklig triangel vara ett udda tal?",
-        "answer": "Ja. Omkretsen kan vara vilket positivt tal som helst — heltal, decimaltal eller irrationellt. Till exempel har en rätvinklig triangel med kateterna 1 och 1 hypotenusan √2 ≈ 1.414, vilket ger omkretsen ≈ 3.414, vilket varken är ett heltal eller rationellt."
+        "answer": "Ja. Omkretsen kan vara vilket positivt tal som helst - heltal, decimaltal eller irrationellt. Till exempel har en rätvinklig triangel med kateterna 1 och 1 hypotenusan √2 ≈ 1.414, vilket ger omkretsen ≈ 3.414, vilket varken är ett heltal eller rationellt."
       },
       {
         "question": "Varför är hypotenusan alltid den längsta sidan?",

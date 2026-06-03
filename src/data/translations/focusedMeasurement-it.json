@@ -129,9 +129,9 @@
         ],
         "listTitle": "I tre lati in sintesi:",
         "listItems": [
-          "Cateto a — Uno dei due lati che forma l'angolo di 90°. Può essere il lato verticale o orizzontale, a seconda dell'orientamento.",
-          "Cateto b — L'altro lato che forma l'angolo di 90°. Insieme al cateto a, definisce l'angolo retto.",
-          "Ipotenusa c — Il lato più lungo, che si estende da un vertice dell'angolo acuto all'altro, direttamente opposto all'angolo retto.",
+          "Cateto a - Uno dei due lati che forma l'angolo di 90°. Può essere il lato verticale o orizzontale, a seconda dell'orientamento.",
+          "Cateto b - L'altro lato che forma l'angolo di 90°. Insieme al cateto a, definisce l'angolo retto.",
+          "Ipotenusa c - Il lato più lungo, che si estende da un vertice dell'angolo acuto all'altro, direttamente opposto all'angolo retto.",
           "La relazione pitagorica è valida: a² + b² = c². Questo ti consente di verificare che i tuoi tre valori formino effettivamente un triangolo rettangolo."
         ]
       },
@@ -161,7 +161,7 @@
         "paragraphs": [
           "Fare pratica con triangoli diversi aiuta a creare sicurezza. Di seguito sono riportati altri tre esempi svolti utilizzando terne pitagoriche comuni e valori decimali."
         ],
-        "listTitle": "Esempio 1 — Il triangolo 5-12-13:",
+        "listTitle": "Esempio 1 - Il triangolo 5-12-13:",
         "listItems": [
           "Dati: a = 5, b = 12, c = 13",
           "P = 5 + 12 + 13 = 30 unità",
@@ -169,7 +169,7 @@
         ]
       },
       {
-        "h2": "Esempio 2 — Il Triangolo 8-15-17",
+        "h2": "Esempio 2 - Il Triangolo 8-15-17",
         "paragraphs": [
           "Dati: a = 8, b = 15, c = 17. Questa è un'altra terna pitagorica in cui tutti i lati sono numeri interi."
         ],
@@ -180,14 +180,14 @@
         ]
       },
       {
-        "h2": "Esempio 3 — Lati Decimali",
+        "h2": "Esempio 3 - Lati Decimali",
         "paragraphs": [
           "Non tutti i triangoli rettangoli hanno lati interi perfetti. Dati: a = 2.5, b = 6, c = 6.5."
         ],
         "listItems": [
           "P = 2.5 + 6 + 6.5 = 15 unità",
           "Verifica: 2.5² + 6² = 6.25 + 36 = 42.25 = 6.5² ✓",
-          "I valori decimali funzionano allo stesso modo — basta sommarli direttamente."
+          "I valori decimali funzionano allo stesso modo - basta sommarli direttamente."
         ]
       },
       {
@@ -205,13 +205,13 @@
         ],
         "listTitle": "Usi comuni nel mondo reale:",
         "listItems": [
-          "Recinzioni — Un'aiuola triangolare o un lotto d'angolo richiede recinzione su tutti e tre i lati. Il perimetro ti dice quanti piedi o metri lineari di recinzione acquistare.",
-          "Finiture e modanature — Una caratteristica architettonica triangolare (come un timpano) necessita di finiture lungo i suoi bordi. Il perimetro fornisce la lunghezza totale della finitura.",
-          "Filo e corda — L'incorniciatura di un display, di uno striscione o di una vela ad angolo retto richiede una corda, un filo o un bordo uguale al perimetro.",
-          "Percorsi per jogging e passeggiate — Una pista da corsa o un percorso pedonale triangolare attorno a un'area del parco ad angolo retto ha una distanza totale uguale al perimetro.",
-          "Layout di costruzione — I costruttori usano la regola 3-4-5 per controllare se un angolo è squadrato. Conoscere il perimetro aiuta a verificare le misurazioni.",
-          "Artigianato e cucito — La rilegatura, il piping o il pizzo attorno a un cuscino o un gagliardetto triangolare richiedono materiale pari alla lunghezza del perimetro.",
-          "Mappe e calcoli topografici — I geometri misurano i lotti di terreno triangolari e hanno bisogno del perimetro per le descrizioni dei confini e i registri delle proprietà."
+          "Recinzioni - Un'aiuola triangolare o un lotto d'angolo richiede recinzione su tutti e tre i lati. Il perimetro ti dice quanti piedi o metri lineari di recinzione acquistare.",
+          "Finiture e modanature - Una caratteristica architettonica triangolare (come un timpano) necessita di finiture lungo i suoi bordi. Il perimetro fornisce la lunghezza totale della finitura.",
+          "Filo e corda - L'incorniciatura di un display, di uno striscione o di una vela ad angolo retto richiede una corda, un filo o un bordo uguale al perimetro.",
+          "Percorsi per jogging e passeggiate - Una pista da corsa o un percorso pedonale triangolare attorno a un'area del parco ad angolo retto ha una distanza totale uguale al perimetro.",
+          "Layout di costruzione - I costruttori usano la regola 3-4-5 per controllare se un angolo è squadrato. Conoscere il perimetro aiuta a verificare le misurazioni.",
+          "Artigianato e cucito - La rilegatura, il piping o il pizzo attorno a un cuscino o un gagliardetto triangolare richiedono materiale pari alla lunghezza del perimetro.",
+          "Mappe e calcoli topografici - I geometri misurano i lotti di terreno triangolari e hanno bisogno del perimetro per le descrizioni dei confini e i registri delle proprietà."
         ]
       },
       {
@@ -226,7 +226,7 @@
         "h2": "Suggerimenti per la Conversione delle Unità",
         "paragraphs": [
           "Il risultato del perimetro ha senso solo quando tutti e tre i lati in ingresso usano la stessa unità. Se le tue misurazioni sono in unità diverse, convertile prima. Il calcolatore include un selettore di unità per ogni campo di input per gestire automaticamente le conversioni.",
-          "Ricorda che il perimetro è una misura lineare, quindi le conversioni seguono i rapporti di lunghezza standard — non i rapporti di area. Ad esempio, per convertire da piedi a metri, moltiplica per 0.3048 (non per 0.3048²)."
+          "Ricorda che il perimetro è una misura lineare, quindi le conversioni seguono i rapporti di lunghezza standard - non i rapporti di area. Ad esempio, per convertire da piedi a metri, moltiplica per 0.3048 (non per 0.3048²)."
         ],
         "listTitle": "Promemoria rapidi per la conversione:",
         "listItems": [
@@ -245,12 +245,12 @@
         ],
         "listTitle": "Attenzione a queste insidie:",
         "listItems": [
-          "Usare solo due lati — Il perimetro richiede tutti e tre i lati. Dimenticare l'ipotenusa o un cateto dà una risposta incompleta.",
-          "Mischiare le unità — Se il cateto a è in pollici e il cateto b è in centimetri, la somma non ha alcun significato. Converti prima in una singola unità.",
-          "Confondere il perimetro con l'area — Il perimetro è una lunghezza (misurata in unità), mentre l'area è una superficie (misurata in unità quadrate). Assicurati di sapere cosa sta chiedendo il problema.",
-          "Usare lati che non formano un triangolo rettangolo — Controlla che a² + b² = c². Se questa equazione non è valida, il triangolo non è un triangolo rettangolo e c non è una vera ipotenusa.",
-          "Arrotondare troppo presto — Se un lato è irrazionale (come √2), mantieni la precisione completa fino all'addizione finale per evitare di accumulare errori di arrotondamento.",
-          "Inserire l'ipotenusa come un cateto — L'ipotenusa deve essere il lato più lungo. Se posizioni un valore più corto nel campo dell'ipotenusa, il diagramma sembrerà sbagliato e il controllo pitagorico fallirà."
+          "Usare solo due lati - Il perimetro richiede tutti e tre i lati. Dimenticare l'ipotenusa o un cateto dà una risposta incompleta.",
+          "Mischiare le unità - Se il cateto a è in pollici e il cateto b è in centimetri, la somma non ha alcun significato. Converti prima in una singola unità.",
+          "Confondere il perimetro con l'area - Il perimetro è una lunghezza (misurata in unità), mentre l'area è una superficie (misurata in unità quadrate). Assicurati di sapere cosa sta chiedendo il problema.",
+          "Usare lati che non formano un triangolo rettangolo - Controlla che a² + b² = c². Se questa equazione non è valida, il triangolo non è un triangolo rettangolo e c non è una vera ipotenusa.",
+          "Arrotondare troppo presto - Se un lato è irrazionale (come √2), mantieni la precisione completa fino all'addizione finale per evitare di accumulare errori di arrotondamento.",
+          "Inserire l'ipotenusa come un cateto - L'ipotenusa deve essere il lato più lungo. Se posizioni un valore più corto nel campo dell'ipotenusa, il diagramma sembrerà sbagliato e il controllo pitagorico fallirà."
         ]
       },
       {
@@ -298,7 +298,7 @@
       },
       {
         "question": "Cosa significa ogni variabile in P = a + b + c?",
-        "answer": "P è il perimetro (lunghezza totale del confine). a è un cateto del triangolo rettangolo. b è l'altro cateto. c è l'ipotenusa — il lato più lungo che si trova di fronte all'angolo retto. I due cateti formano l'angolo di 90°."
+        "answer": "P è il perimetro (lunghezza totale del confine). a è un cateto del triangolo rettangolo. b è l'altro cateto. c è l'ipotenusa - il lato più lungo che si trova di fronte all'angolo retto. I due cateti formano l'angolo di 90°."
       },
       {
         "question": "Posso trovare il perimetro con solo due lati?",
@@ -326,7 +326,7 @@
       },
       {
         "question": "Il perimetro di un triangolo rettangolo può essere un numero dispari?",
-        "answer": "Sì. Il perimetro può essere qualsiasi numero positivo — intero, decimale o irrazionale. Ad esempio, un triangolo rettangolo con cateti 1 e 1 ha ipotenusa √2 ≈ 1.414, dando un perimetro ≈ 3.414, che non è né un intero né razionale."
+        "answer": "Sì. Il perimetro può essere qualsiasi numero positivo - intero, decimale o irrazionale. Ad esempio, un triangolo rettangolo con cateti 1 e 1 ha ipotenusa √2 ≈ 1.414, dando un perimetro ≈ 3.414, che non è né un intero né razionale."
       },
       {
         "question": "Perché l'ipotenusa è sempre il lato più lungo?",

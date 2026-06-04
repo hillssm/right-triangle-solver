@@ -1,0 +1,121 @@
+---
+import type { FocusedAltitudeCalculatorPage as FocusedAltitudeCalculatorPageData } from 'src/data/focusedAltitudeCalculatorPages';
+import FormulaCalculator from 'theme/components/FormulaCalculator.astro';
+import { DEFAULT_LOCALE, type Locale } from 'theme/i18n/locales';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import { toAbsoluteUrl } from 'theme/utils/site';
+
+interface Props {
+  page: FocusedAltitudeCalculatorPageData;
+  locale?: Locale;
+}
+
+const { page, locale = DEFAULT_LOCALE } = Astro.props;
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  {
+    label: 'Right Triangle Altitude Calculator',
+    href: '/right-triangle-altitude-calculator/'
+  },
+  { label: page.h1, href: page.url }
+];
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbItems.map((item, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: item.label,
+    item: toAbsoluteUrl(item.href)
+  }))
+};
+
+const calculatorMessages = {
+  positive: 'Please enter positive values.',
+  invalid: 'Please enter positive values.',
+  hypotenuseKnownLeg: 'The hypotenuse c should be the longest side.',
+  hypotenuseLongest: 'The hypotenuse c should be the longest side.',
+  invalidTriangle: 'These side lengths may not form a valid right triangle.'
+};
+
+const placeholderSections = [
+  'Formula',
+  'How to Use This Calculator',
+  'Example',
+  'Related Calculators',
+  'FAQs'
+];
+---
+
+<BaseLayout
+  locale={locale}
+  title={page.metaTitle}
+  description={page.metaDescription}
+  canonicalPath={page.url}
+>
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(breadcrumbSchema)}
+  ></script>
+
+  <nav class="mx-auto mb-6 w-full max-w-4xl" aria-label="Breadcrumb">
+    <ol class="flex flex-wrap items-center gap-2 text-xs text-on-surface-variant">
+      {breadcrumbItems.map((item, index) => (
+        <>
+          <li>
+            {index === breadcrumbItems.length - 1 ? (
+              <span aria-current="page" class="text-on-surface">{item.label}</span>
+            ) : (
+              <a href={item.href} class="hover:text-primary">{item.label}</a>
+            )}
+          </li>
+          {index < breadcrumbItems.length - 1 && (
+            <li aria-hidden="true" class="text-outline">/</li>
+          )}
+        </>
+      ))}
+    </ol>
+  </nav>
+
+  <header class="mx-auto mb-8 w-full max-w-4xl">
+    <p class="font-label text-xs uppercase tracking-widest text-primary">
+      Altitude Calculator
+    </p>
+    <h1 class="mt-3 break-words text-3xl font-bold leading-tight sm:text-4xl">{page.h1}</h1>
+  </header>
+
+  <FormulaCalculator
+    formula={page.formula}
+    locale={locale}
+    heading={page.calculatorHeading}
+    messages={calculatorMessages}
+  />
+
+  {placeholderSections.map((heading) => (
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+      <h2>{heading}</h2>
+      <p>Content will be added soon.</p>
+
+      {heading === 'Related Calculators' && (
+        <div class="not-prose mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
+          {page.relatedLinks.map((link) => (
+            <a
+              href={link.href}
+              class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
+            >
+              <h3 class="break-words text-base font-semibold text-on-surface group-hover:text-primary">
+                {link.label}
+              </h3>
+              <p class="mt-3 text-[11px] uppercase tracking-widest text-primary">
+                Open Tool
+              </p>
+            </a>
+          ))}
+        </div>
+      )}
+    </section>
+  ))}
+</BaseLayout>

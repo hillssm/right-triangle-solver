@@ -1,0 +1,12 @@
+---
+import { getFocusedAltitudeCalculatorPage } from 'src/data/focusedAltitudeCalculatorPages';
+import FocusedAltitudeCalculatorPage from 'theme/templates/FocusedAltitudeCalculatorPage.astro';
+
+const page = getFocusedAltitudeCalculatorPage('right-triangle-altitude-from-projections-calculator');
+
+if (!page) {
+  throw new Error('Missing page data for right-triangle-altitude-from-projections-calculator');
+}
+---
+
+<FocusedAltitudeCalculatorPage page={page} />

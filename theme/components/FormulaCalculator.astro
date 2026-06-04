@@ -14,6 +14,8 @@ interface Props {
     invalid?: string;
     angleRange?: string;
     hypotenuseKnownLeg?: string;
+    hypotenuseLongest?: string;
+    invalidTriangle?: string;
   };
   runtimeTranslations?: Record<string, unknown>;
 }
@@ -582,6 +584,26 @@ const calculatorMessages = JSON.stringify(messages);
               ]
             };
           }
+          case 'altitude_strict': {
+            requirePositive(v.a, v.b, v.c);
+            if (v.c <= v.a || v.c <= v.b) {
+              throw new Error(messages.hypotenuseLongest || messages.hypotenuseKnownLeg || translations.unableToCalculate || '');
+            }
+
+            const pythagoreanGap = Math.abs(v.a * v.a + v.b * v.b - v.c * v.c);
+            const pythagoreanScale = Math.max(v.c * v.c, 1);
+            if (pythagoreanGap > 1e-8 * pythagoreanScale) {
+              throw new Error(messages.invalidTriangle || messages.invalid || translations.unableToCalculate || '');
+            }
+
+            const r = (v.a * v.b) / v.c;
+            return {
+              result: r,
+              steps: [
+                `**Find Altitude h**<br/>Calculate the height to the hypotenuse using the leg product ratio.<br/>Use h = (a \u00D7 b) / c<br/>h = (${v.a} \u00D7 ${v.b}) / ${v.c} = ${format(v.a * v.b)} / ${v.c} = ${format(r)}`
+              ]
+            };
+          }
           case 'projection_p': {
             requirePositive(v.a, v.c);
             const r = (v.a * v.a) / v.c;
@@ -794,7 +816,7 @@ const calculatorMessages = JSON.stringify(messages);
         // --- Derive A and B for visual shape scaling ---
         let drawA = map.a;
         let drawB = map.b;
-        const drawC = map.c;
+        let drawC = map.c;
         const A_ang = map.A;
         const B_ang = map.B;
 
@@ -1072,7 +1094,7 @@ const calculatorMessages = JSON.stringify(messages);
         const lowMsg = msg.toLowerCase();
         
         let targetKey = null;
-        if (lowMsg.includes('c must be greater than leg a') || lowMsg.includes('larger than side a') || lowMsg.includes('hypotenuse c must be')) targetKey = 'c';
+        if (lowMsg.includes('c must be greater than leg a') || lowMsg.includes('larger than side a') || lowMsg.includes('hypotenuse c must be') || lowMsg.includes('hypotenuse c should')) targetKey = 'c';
         else if (lowMsg.includes('c must be greater than leg b') || lowMsg.includes('larger than side b')) targetKey = 'c';
         else if (lowMsg.includes('side a') && !lowMsg.includes('hypotenuse')) targetKey = 'a';
         else if (lowMsg.includes('side b') && !lowMsg.includes('hypotenuse')) targetKey = 'b';
@@ -1093,7 +1115,9 @@ const calculatorMessages = JSON.stringify(messages);
             messages.positive,
             messages.invalid,
             angleRangeMessage,
-            messages.hypotenuseKnownLeg
+            messages.hypotenuseKnownLeg,
+            messages.hypotenuseLongest,
+            messages.invalidTriangle
           ].filter(Boolean);
           const errorPrefix = translations.errorPrefix || '';
           statusEl.textContent = directStatusMessages.includes(msg) ? msg : (errorPrefix ? `${errorPrefix}: ${msg}` : msg);

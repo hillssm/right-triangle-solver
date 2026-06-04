@@ -545,7 +545,7 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     slug: 'h-sq-pq',
     title: 'Altitude squared',
     category: 'Advanced Relations',
-    expression: 'h^2 = p \\times q',
+    expression: 'h = \\sqrt{p \\times q}\\quad\\left(h^2 = p \\times q\\right)',
     description: 'Altitude geometric mean theorem.',
     variables: ['h = altitude', 'p = projection', 'q = projection'],
     notes: [],

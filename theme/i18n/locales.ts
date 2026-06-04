@@ -112,7 +112,9 @@ export function stripLocalePrefix(path: string): string {
 
 const EXCLUDED_FROM_LOCALIZATION = new Set([
   'blog',
-  'sitemap'
+  'sitemap',
+  'right-triangle-altitude-from-sides-calculator',
+  'right-triangle-altitude-from-projections-calculator'
 ]);
 
 export function isEnglishOnlyPath(path: string): boolean {

@@ -241,6 +241,19 @@ const relatedAreaCalculatorLinks = [
 const showRelatedAreaCalculators =
   locale === 'en' && groupedPage?.slug === 'right-triangle-area-calculator';
 
+const relatedAltitudeCalculatorLinks = [
+  {
+    href: '/right-triangle-altitude-from-sides-calculator/',
+    label: 'Right Triangle Altitude From Sides Calculator'
+  },
+  {
+    href: '/right-triangle-altitude-from-projections-calculator/',
+    label: 'Right Triangle Altitude From Projections Calculator'
+  }
+];
+const showRelatedAltitudeCalculators =
+  locale === 'en' && groupedPage?.slug === 'right-triangle-altitude-calculator';
+
 const relatedAngleCalculatorLinks = FOCUSED_ANGLE_CALCULATOR_PAGES.map((page) => ({
   href: page.url,
   label: page.h1,
@@ -644,6 +657,30 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
           ))}
         </div>
       </section>
+
+      {showRelatedAltitudeCalculators && (
+        <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+          <h2 class="text-2xl font-semibold">Related Altitude Calculators</h2>
+          <p class="mt-3 max-w-3xl text-sm text-on-surface-variant">
+            Use these focused calculators if you want to find right triangle altitude using one specific method.
+          </p>
+          <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
+            {relatedAltitudeCalculatorLinks.map((link) => (
+              <a
+                href={link.href}
+                class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
+              >
+                <h3 class="text-base font-semibold text-on-surface group-hover:text-primary">
+                  {link.label}
+                </h3>
+                <p class="mt-3 text-[11px] uppercase tracking-widest text-primary">
+                  {uiOpen}
+                </p>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
 
       {showRelatedSideCalculators && (
         <section class="mx-auto mt-8 w-full max-w-4xl section-shell">

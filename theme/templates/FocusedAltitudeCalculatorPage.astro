@@ -40,13 +40,27 @@ const calculatorMessages = {
   invalidTriangle: 'These side lengths may not form a valid right triangle.'
 };
 
-const placeholderSections = [
-  'Formula',
-  'How to Use This Calculator',
-  'Example',
-  'Related Calculators',
-  'FAQs'
-];
+const readableMath = (expression: string): string =>
+  expression
+    .replace(/\\frac\{([^{}]+)\}\{([^{}]+)\}/g, (_match, numerator, denominator) => {
+      const cleanNumerator = readableMath(numerator);
+      const cleanDenominator = readableMath(denominator);
+      return cleanNumerator.includes('×')
+        ? `(${cleanNumerator}) / ${cleanDenominator}`
+        : `${cleanNumerator} / ${cleanDenominator}`;
+    })
+    .replace(/\\sqrt\{([^{}]+)\}/g, (_match, radicand) => `√(${readableMath(radicand)})`)
+    .replace(/\\times/g, '×')
+    .replace(/\^2/g, '²')
+    .replace(/\\approx/g, '≈')
+    .trim();
+
+const findSection = (heading: string) =>
+  page.extraSections.find((section) => section.h2 === heading);
+
+const resultSection = findSection('What the Result Means');
+const whenSection = findSection('When to Use This Calculator');
+const mistakesSection = findSection('Common Mistakes');
 ---
 
 <BaseLayout
@@ -85,6 +99,13 @@ const placeholderSections = [
       Altitude Calculator
     </p>
     <h1 class="mt-3 break-words text-3xl font-bold leading-tight sm:text-4xl">{page.h1}</h1>
+    <div class="mt-4 grid gap-3 text-on-surface-variant">
+      <p>{page.intro}</p>
+      {page.quickSummary?.intro && <p>{page.quickSummary.intro}</p>}
+    </div>
+    <div class="mt-5 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/70 p-4 text-sm text-on-surface-variant">
+      <p><strong class="text-on-surface">Calculator note:</strong> {page.toolPurpose}</p>
+    </div>
   </header>
 
   <FormulaCalculator
@@ -94,28 +115,269 @@ const placeholderSections = [
     messages={calculatorMessages}
   />
 
-  {placeholderSections.map((heading) => (
-    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-      <h2>{heading}</h2>
-      <p>Content will be added soon.</p>
-
-      {heading === 'Related Calculators' && (
-        <div class="not-prose mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
-          {page.relatedLinks.map((link) => (
-            <a
-              href={link.href}
-              class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
-            >
-              <h3 class="break-words text-base font-semibold text-on-surface group-hover:text-primary">
-                {link.label}
-              </h3>
-              <p class="mt-3 text-[11px] uppercase tracking-widest text-primary">
-                Open Tool
-              </p>
-            </a>
-          ))}
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>Formula</h2>
+    <div class="not-prose mt-4 grid gap-3">
+      {page.formulaSection.formulas.map((formula) => (
+        <div class="overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
+          <p class="math-textbook min-w-max text-2xl text-tertiary" dir="ltr">
+            {readableMath(formula)}
+          </p>
         </div>
+      ))}
+    </div>
+    {page.formulaSection.paragraphs.map((paragraph) => (
+      <p>{paragraph}</p>
+    ))}
+  </section>
+
+  {page.diagram && (
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+      <h2 class="text-2xl font-semibold">Triangle Diagram</h2>
+      <p class="mt-3 leading-relaxed text-on-surface-variant">{page.diagram.intro}</p>
+
+      <div class="mt-5 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-3">
+        {page.slug === 'right-triangle-altitude-from-sides-calculator' ? (
+          <svg
+            class="altitude-diagram-svg"
+            viewBox="0 0 620 390"
+            role="img"
+            aria-labelledby={`${page.slug}-diagram-title ${page.slug}-diagram-desc`}
+          >
+            <title id={`${page.slug}-diagram-title`}>Right triangle altitude from sides diagram</title>
+            <desc id={`${page.slug}-diagram-desc`}>{page.diagram.caption}</desc>
+            <path class="altitude-diagram-triangle-fill" d="M120 70 L120 300 L500 300 Z" />
+            <path class="altitude-diagram-triangle-line" d="M120 70 L120 300 L500 300 Z" />
+            <path class="altitude-diagram-right-angle" d="M120 265 H155 V300" />
+            <line class="altitude-diagram-altitude" x1="120" y1="300" x2="222" y2="132" />
+            <g class="altitude-diagram-label" transform="translate(24 176)">
+              <rect width="82" height="32" rx="7" />
+              <text x="41" y="21" text-anchor="middle">leg a</text>
+            </g>
+            <g class="altitude-diagram-label" transform="translate(268 318)">
+              <rect width="82" height="32" rx="7" />
+              <text x="41" y="21" text-anchor="middle">leg b</text>
+            </g>
+            <g class="altitude-diagram-label" transform="translate(345 155)">
+              <rect width="116" height="32" rx="7" />
+              <text x="58" y="21" text-anchor="middle">hypotenuse c</text>
+            </g>
+            <g class="altitude-diagram-label altitude-diagram-h-label" transform="translate(166 232)">
+              <rect width="82" height="32" rx="7" />
+              <text x="41" y="21" text-anchor="middle">altitude h</text>
+            </g>
+          </svg>
+        ) : (
+          <svg
+            class="altitude-diagram-svg"
+            viewBox="0 0 620 390"
+            role="img"
+            aria-labelledby={`${page.slug}-diagram-title ${page.slug}-diagram-desc`}
+          >
+            <title id={`${page.slug}-diagram-title`}>Right triangle altitude from projections diagram</title>
+            <desc id={`${page.slug}-diagram-desc`}>{page.diagram.caption}</desc>
+            <path class="altitude-diagram-triangle-fill" d="M100 300 L260 90 L536 300 Z" />
+            <path class="altitude-diagram-triangle-line" d="M100 300 L260 90 L536 300 Z" />
+            <line class="altitude-diagram-altitude" x1="260" y1="90" x2="260" y2="300" />
+            <circle cx="260" cy="300" r="4" fill="var(--color-tertiary-fixed)" />
+            <g class="altitude-diagram-label" transform="translate(140 318)">
+              <rect width="82" height="32" rx="7" />
+              <text x="41" y="21" text-anchor="middle">p</text>
+            </g>
+            <g class="altitude-diagram-label" transform="translate(370 318)">
+              <rect width="82" height="32" rx="7" />
+              <text x="41" y="21" text-anchor="middle">q</text>
+            </g>
+            <g class="altitude-diagram-label" transform="translate(250 352)">
+              <rect width="132" height="32" rx="7" />
+              <text x="66" y="21" text-anchor="middle">hypotenuse c</text>
+            </g>
+            <g class="altitude-diagram-label altitude-diagram-h-label" transform="translate(282 184)">
+              <rect width="82" height="32" rx="7" />
+              <text x="41" y="21" text-anchor="middle">altitude h</text>
+            </g>
+          </svg>
+        )}
+      </div>
+
+      <p class="mt-3 text-sm leading-relaxed text-on-surface-variant">{page.diagram.caption}</p>
+      <div class="mt-5 grid gap-3 sm:grid-cols-2">
+        {[
+          page.diagram.sides.a,
+          page.diagram.sides.b,
+          page.diagram.sides.c,
+          page.diagram.result
+        ].map((item) => (
+          <div class="rounded-lg border border-outline-variant/25 bg-surface-container-lowest/55 p-4">
+            <p class="font-semibold text-on-surface">{item.label}</p>
+            <p class="mt-2 text-sm leading-relaxed text-on-surface-variant">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>How to Use This Calculator</h2>
+    <ol>
+      {page.howTo.steps.map((step) => (
+        <li>{step}</li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>Step-by-Step Example</h2>
+    <p>{page.example.intro}</p>
+    <div class="not-prose mt-4 grid gap-2 rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 p-5">
+      {page.example.lines.map((line) => (
+        <p class="math-textbook text-lg text-tertiary" dir="ltr">{readableMath(line)}</p>
+      ))}
+    </div>
+    <p>{page.example.answer}</p>
+  </section>
+
+  {resultSection && (
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+      <h2>What the Result Means</h2>
+      {resultSection.paragraphs.map((paragraph) => (
+        <p>{paragraph}</p>
+      ))}
+    </section>
+  )}
+
+  {whenSection && (
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+      <h2>When to Use This Calculator</h2>
+      {whenSection.paragraphs.map((paragraph) => (
+        <p>{paragraph}</p>
+      ))}
+      {whenSection.listTitle && <h3>{whenSection.listTitle}</h3>}
+      {whenSection.listItems && (
+        <ul>
+          {whenSection.listItems.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
       )}
     </section>
-  ))}
+  )}
+
+  {mistakesSection && (
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+      <h2>Common Mistakes</h2>
+      {mistakesSection.paragraphs.map((paragraph) => (
+        <p>{paragraph}</p>
+      ))}
+      {mistakesSection.listItems && (
+        <ul>
+          {mistakesSection.listItems.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      )}
+    </section>
+  )}
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+    <h2 class="text-2xl font-semibold">Related Calculators</h2>
+    <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
+      {page.relatedLinks.map((link) => (
+        <a
+          href={link.href}
+          class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
+        >
+          <h3 class="break-words text-base font-semibold text-on-surface group-hover:text-primary">
+            {link.label}
+          </h3>
+          <p class="mt-3 text-[11px] uppercase tracking-widest text-primary">
+            Open Tool
+          </p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+    <h2 class="text-2xl font-semibold">FAQs</h2>
+    <div class="mt-6 grid gap-3">
+      {page.faqs.map((faq, index) => (
+        <details class="group overflow-hidden rounded-xl border border-outline-variant/20 bg-surface-container-lowest/55 transition-all duration-300 hover:border-primary/30" name={`${page.slug}-faq`}>
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-sm font-semibold text-on-surface">
+            <span class="flex items-center gap-3">
+              <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-primary/12 font-label text-[10px] uppercase tracking-[0.14em] text-primary">
+                {String(index + 1).padStart(2, '0')}
+              </span>
+              {faq.question}
+            </span>
+            <span class="material-symbols-outlined text-lg text-outline transition-transform duration-300 group-open:rotate-180">
+              expand_more
+            </span>
+          </summary>
+          <div class="border-t border-outline-variant/15 px-5 py-4">
+            <p class="pl-10 text-sm leading-relaxed text-on-surface-variant">{faq.answer}</p>
+          </div>
+        </details>
+      ))}
+    </div>
+  </section>
 </BaseLayout>
+
+<style>
+  .altitude-diagram-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 220px;
+  }
+
+  .altitude-diagram-triangle-fill {
+    fill: rgba(241, 201, 125, 0.06);
+  }
+
+  .altitude-diagram-triangle-line {
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-width: 7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .altitude-diagram-altitude {
+    stroke: var(--color-tertiary-fixed);
+    stroke-width: 4;
+    stroke-dasharray: 9 8;
+    stroke-linecap: round;
+  }
+
+  .altitude-diagram-right-angle {
+    fill: none;
+    stroke: var(--color-on-surface-variant);
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .altitude-diagram-label rect {
+    fill: var(--color-surface);
+    stroke: var(--color-outline-variant);
+    stroke-opacity: 0.65;
+  }
+
+  .altitude-diagram-label text {
+    fill: var(--color-on-surface);
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 650;
+  }
+
+  .altitude-diagram-h-label rect {
+    fill: var(--color-surface-container-low);
+    stroke: var(--color-tertiary-fixed);
+    stroke-opacity: 0.8;
+  }
+
+  .altitude-diagram-h-label text {
+    fill: var(--color-tertiary);
+  }
+</style>

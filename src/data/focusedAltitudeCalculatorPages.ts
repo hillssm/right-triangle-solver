@@ -423,10 +423,9 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
       intro:
         'Suppose the altitude splits the hypotenuse into p = 3.6 and q = 6.4. These correspond to a 6-8-10 right triangle.',
       lines: [
-        'h^2 = p \\times q',
-        'h^2 = 3.6 \\times 6.4',
-        'h^2 = 23.04',
-        'h = \\sqrt{23.04}',
+        'h = \\sqrt{p \\times q}',
+        'h = \\sqrt{3.6 \\times 6.4}',
+        'h = \u221A23.04',
         'h = 4.8'
       ],
       answer:
@@ -504,16 +503,16 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
         label: 'Right Triangle Altitude From Sides Calculator'
       },
       {
+        href: '/right-triangle-projection-calculator/',
+        label: 'Right Triangle Projection Calculator'
+      },
+      {
         href: '/right-triangle-area-from-altitude-calculator/',
         label: 'Right Triangle Area From Altitude Calculator'
       },
       {
         href: '/right-triangle-side-calculator/',
         label: 'Right Triangle Side Calculator'
-      },
-      {
-        href: '/right-triangle-area-calculator/',
-        label: 'Right Triangle Area Calculator'
       }
     ],
     faqs: [

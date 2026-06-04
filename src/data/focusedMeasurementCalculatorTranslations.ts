@@ -1,6 +1,11 @@
 // Generated localized copy for focused measurement calculator pages.
 // Formulas, URL slugs, and variable names are intentionally preserved.
 
+import focusedMeasurementAreaPagesSource from 'src/data/translations/focusedMeasurementAreaPages.json';
+
+export const FOCUSED_MEASUREMENT_AREA_CALCULATOR_TRANSLATIONS =
+  focusedMeasurementAreaPagesSource;
+
 export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
   "hi": {
     "right-triangle-perimeter-calculator": {

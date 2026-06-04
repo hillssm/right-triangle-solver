@@ -90,9 +90,157 @@ const measurementUiByLocale: Partial<Record<Locale, Partial<typeof measurementUi
   }
 };
 
+const measurementUiOverridesByLocale: Partial<Record<Locale, Partial<typeof measurementUiDefaults>>> = {
+  hi: {
+    badge: 'माप कैलकुलेटर',
+    faqDescription: 'समकोण त्रिभुज माप और क्षेत्रफल से जुड़े सामान्य प्रश्नों के उत्तर।',
+    positiveError: 'कृपया धनात्मक मान दर्ज करें।',
+    invalidError: 'कृपया मान सही दर्ज करें।',
+    angleRangeError: 'कोण 0° से बड़ा और 90° से छोटा होना चाहिए।',
+    hypotenuseKnownLegError: 'कर्ण c ज्ञात भुजा से बड़ा होना चाहिए।'
+  },
+  es: {
+    badge: 'Calculadora de medidas',
+    faqDescription: 'Respuestas a preguntas comunes sobre medidas y área de triángulos rectángulos.',
+    positiveError: 'Introduce valores positivos.',
+    invalidError: 'Introduce valores válidos.',
+    angleRangeError: 'El ángulo debe ser mayor que 0° y menor que 90°.',
+    hypotenuseKnownLegError: 'La hipotenusa c debe ser mayor que el cateto conocido.'
+  },
+  ru: {
+    badge: 'Калькулятор измерений',
+    faqDescription: 'Ответы на частые вопросы об измерениях и площади прямоугольного треугольника.',
+    positiveError: 'Введите положительные значения.',
+    invalidError: 'Введите корректные значения.',
+    angleRangeError: 'Угол должен быть больше 0° и меньше 90°.',
+    hypotenuseKnownLegError: 'Гипотенуза c должна быть больше известного катета.'
+  },
+  fr: {
+    badge: 'Calculateur de mesures',
+    faqDescription: 'Réponses aux questions courantes sur les mesures et l’aire du triangle rectangle.',
+    positiveError: 'Saisissez des valeurs positives.',
+    invalidError: 'Saisissez des valeurs valides.',
+    angleRangeError: 'L’angle doit être supérieur à 0° et inférieur à 90°.',
+    hypotenuseKnownLegError: 'L’hypoténuse c doit être supérieure au côté connu.'
+  },
+  de: {
+    badge: 'Messrechner',
+    faqDescription: 'Antworten auf häufige Fragen zu Messungen und Flächeninhalt rechtwinkliger Dreiecke.',
+    positiveError: 'Bitte positive Werte eingeben.',
+    invalidError: 'Bitte gültige Werte eingeben.',
+    angleRangeError: 'Der Winkel muss größer als 0° und kleiner als 90° sein.',
+    hypotenuseKnownLegError: 'Die Hypotenuse c muss größer als die bekannte Kathete sein.'
+  },
+  it: {
+    badge: 'Calcolatore di misure',
+    faqDescription: 'Risposte alle domande comuni su misure e area del triangolo rettangolo.',
+    positiveError: 'Inserisci valori positivi.',
+    invalidError: 'Inserisci valori validi.',
+    angleRangeError: 'L’angolo deve essere maggiore di 0° e minore di 90°.',
+    hypotenuseKnownLegError: 'L’ipotenusa c deve essere maggiore del cateto noto.'
+  },
+  pt: {
+    badge: 'Calculadora de medidas',
+    faqDescription: 'Respostas a perguntas comuns sobre medidas e área de triângulos retângulos.',
+    positiveError: 'Insira valores positivos.',
+    invalidError: 'Insira valores válidos.',
+    angleRangeError: 'O ângulo deve ser maior que 0° e menor que 90°.',
+    hypotenuseKnownLegError: 'A hipotenusa c deve ser maior que o cateto conhecido.'
+  },
+  bn: {
+    badge: 'মাপ ক্যালকুলেটর',
+    faqDescription: 'সমকোণী ত্রিভুজের মাপ ও ক্ষেত্রফল নিয়ে সাধারণ প্রশ্নের উত্তর।',
+    positiveError: 'ধনাত্মক মান লিখুন।',
+    invalidError: 'সঠিক মান লিখুন।',
+    angleRangeError: 'কোণ 0°-এর বেশি এবং 90°-এর কম হতে হবে।',
+    hypotenuseKnownLegError: 'অতিভুজ c জানা বাহুর চেয়ে বড় হতে হবে।'
+  },
+  ja: {
+    badge: '測定計算機',
+    faqDescription: '直角三角形の測定と面積に関するよくある質問への回答。',
+    positiveError: '正の値を入力してください。',
+    invalidError: '有効な値を入力してください。',
+    angleRangeError: '角は 0° より大きく 90° より小さい必要があります。',
+    hypotenuseKnownLegError: '斜辺 c は既知の辺より大きい必要があります。'
+  },
+  ko: {
+    badge: '측정 계산기',
+    faqDescription: '직각삼각형 측정과 넓이에 관한 자주 묻는 질문의 답변입니다.',
+    positiveError: '양수 값을 입력하세요.',
+    invalidError: '올바른 값을 입력하세요.',
+    angleRangeError: '각은 0°보다 크고 90°보다 작아야 합니다.',
+    hypotenuseKnownLegError: '빗변 c는 알려진 변보다 커야 합니다.'
+  },
+  ms: {
+    badge: 'Kalkulator ukuran',
+    faqDescription: 'Jawapan kepada soalan lazim tentang ukuran dan luas segi tiga bersudut tegak.',
+    positiveError: 'Masukkan nilai positif.',
+    invalidError: 'Masukkan nilai yang sah.',
+    angleRangeError: 'Sudut mesti lebih daripada 0° dan kurang daripada 90°.',
+    hypotenuseKnownLegError: 'Hipotenus c mesti lebih besar daripada sisi yang diketahui.'
+  },
+  pl: {
+    badge: 'Kalkulator miar',
+    faqDescription: 'Odpowiedzi na częste pytania o miary i pole trójkąta prostokątnego.',
+    positiveError: 'Wpisz wartości dodatnie.',
+    invalidError: 'Wpisz prawidłowe wartości.',
+    angleRangeError: 'Kąt musi być większy niż 0° i mniejszy niż 90°.',
+    hypotenuseKnownLegError: 'Przeciwprostokątna c musi być większa od znanej przyprostokątnej.'
+  },
+  id: {
+    badge: 'Kalkulator ukuran',
+    faqDescription: 'Jawaban untuk pertanyaan umum tentang ukuran dan luas segitiga siku-siku.',
+    positiveError: 'Masukkan nilai positif.',
+    invalidError: 'Masukkan nilai yang valid.',
+    angleRangeError: 'Sudut harus lebih dari 0° dan kurang dari 90°.',
+    hypotenuseKnownLegError: 'Hipotenusa c harus lebih besar dari sisi yang diketahui.'
+  },
+  ar: {
+    badge: 'حاسبة القياسات',
+    faqDescription: 'إجابات عن الأسئلة الشائعة حول قياسات ومساحة المثلث القائم.',
+    positiveError: 'أدخل قيماً موجبة.',
+    invalidError: 'أدخل قيماً صحيحة.',
+    angleRangeError: 'يجب أن تكون الزاوية أكبر من 0° وأقل من 90°.',
+    hypotenuseKnownLegError: 'يجب أن يكون الوتر c أكبر من الضلع المعروف.'
+  },
+  bg: {
+    badge: 'Калкулатор за измервания',
+    faqDescription: 'Отговори на чести въпроси за измервания и лице на правоъгълен триъгълник.',
+    positiveError: 'Въведете положителни стойности.',
+    invalidError: 'Въведете валидни стойности.',
+    angleRangeError: 'Ъгълът трябва да е по-голям от 0° и по-малък от 90°.',
+    hypotenuseKnownLegError: 'Хипотенузата c трябва да е по-голяма от известния катет.'
+  },
+  tr: {
+    badge: 'Ölçüm hesaplayıcı',
+    faqDescription: 'Dik üçgen ölçüleri ve alanı hakkında sık sorulan soruların yanıtları.',
+    positiveError: 'Pozitif değerler girin.',
+    invalidError: 'Geçerli değerler girin.',
+    angleRangeError: 'Açı 0° değerinden büyük ve 90° değerinden küçük olmalıdır.',
+    hypotenuseKnownLegError: 'Hipotenüs c bilinen dik kenardan büyük olmalıdır.'
+  },
+  sv: {
+    badge: 'Måttberäknare',
+    faqDescription: 'Svar på vanliga frågor om mått och area för rätvinkliga trianglar.',
+    positiveError: 'Ange positiva värden.',
+    invalidError: 'Ange giltiga värden.',
+    angleRangeError: 'Vinkeln måste vara större än 0° och mindre än 90°.',
+    hypotenuseKnownLegError: 'Hypotenusan c måste vara större än den kända kateten.'
+  },
+  zh: {
+    badge: '测量计算器',
+    faqDescription: '关于直角三角形测量和面积的常见问题解答。',
+    positiveError: '请输入正数。',
+    invalidError: '请输入有效数值。',
+    angleRangeError: '角必须大于 0° 且小于 90°。',
+    hypotenuseKnownLegError: '斜边 c 必须大于已知直角边。'
+  }
+};
+
 const measurementUi = {
   ...measurementUiDefaults,
-  ...(measurementUiByLocale[locale] || {})
+  ...(measurementUiByLocale[locale] || {}),
+  ...(measurementUiOverridesByLocale[locale] || {})
 };
 
 const homeLabel = pick(nav, 'home', measurementUi.home);
@@ -114,6 +262,7 @@ const areaChildCalculatorSlugs = new Set([
   'right-triangle-area-from-altitude-calculator'
 ]);
 const isAreaChildCalculator = areaChildCalculatorSlugs.has(page.slug);
+const showDiagramFormula = !isAreaChildCalculator;
 const parentCalculatorLabel = isAreaChildCalculator
   ? areaCalculatorLabel
   : measurementCalculatorLabel;
@@ -400,6 +549,7 @@ const measurementSideEntries = page.diagram
         <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
           <div
             class="math-textbook min-w-max text-2xl text-tertiary"
+            dir="ltr"
             set:html={renderMath(expression)}
           />
         </div>
@@ -491,10 +641,12 @@ const measurementSideEntries = page.diagram
                 <rect width="92" height="34" rx="8" />
                 <text x="46" y="22" text-anchor="middle">c</text>
               </g>
-              <g class="measurement-diagram-formula" transform="translate(164 188)">
-                <rect width="230" height="42" rx="10" />
-                <text x="115" y="27" text-anchor="middle">{page.diagram.formulaLabel}</text>
-              </g>
+              {showDiagramFormula && (
+                <g class="measurement-diagram-formula" transform="translate(164 188)">
+                  <rect width="230" height="42" rx="10" />
+                  <text x="115" y="27" text-anchor="middle">{page.diagram.formulaLabel}</text>
+                </g>
+              )}
             </svg>
           </div>
         </div>
@@ -542,6 +694,7 @@ const measurementSideEntries = page.diagram
         {page.example.lines.map((line) => (
           <div
             class="math-textbook min-w-max text-lg text-on-surface"
+            dir="ltr"
             set:html={renderMath(line, false)}
           />
         ))}

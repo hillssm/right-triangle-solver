@@ -1,6 +1,9 @@
 import type { FormulaCalculatorField } from 'src/data/rightTriangleFormulas';
 import { DEFAULT_LOCALE, type Locale } from 'theme/i18n/locales';
-import { FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS } from 'src/data/focusedMeasurementCalculatorTranslations';
+import {
+  FOCUSED_MEASUREMENT_AREA_CALCULATOR_TRANSLATIONS,
+  FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS
+} from 'src/data/focusedMeasurementCalculatorTranslations';
 
 export type FocusedMeasurementCalculatorPage = {
   slug: string;
@@ -708,7 +711,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
         'The two legs of a right triangle meet at a perfect 90\u00B0 angle. That means one leg is automatically perpendicular to the other. In any triangle, area equals half the base times the height. Since the legs are already base and height, no extra geometry is needed.',
         'This is why the legs formula is the simplest way to find a right triangle\u2019s area. You skip finding angles, the hypotenuse, or any trigonometric ratios. Just multiply and divide by two.'
       ],
-      formulas: ['\\text{Area} = \\frac{a \\times b}{2}']
+      formulas: ['\\text{Area} = (a \\times b) / 2']
     },
     howTo: {
       h2: 'How to Use This Calculator',
@@ -725,9 +728,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       h2: 'Worked Example: Area of a 6-8-10 Right Triangle',
       intro: 'Suppose you have a right triangle with leg a = 6 and leg b = 8. The hypotenuse would be 10, but you do not need it for this formula.',
       lines: [
-        '\\text{Area} = \\frac{a \\times b}{2}',
-        '\\text{Area} = \\frac{6 \\times 8}{2}',
-        '\\text{Area} = \\frac{48}{2}',
+        '\\text{Area} = (a \\times b) / 2',
+        '\\text{Area} = (6 \\times 8) / 2',
+        '\\text{Area} = 48 / 2',
         '\\text{Area} = 24'
       ],
       answer: 'The area is 24 square units. You can verify this: a 6 \u00D7 8 rectangle has area 48, and the right triangle is exactly half of that rectangle.'
@@ -790,7 +793,6 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       { href: '/right-triangle-area-calculator/', label: 'Right Triangle Area Calculator' },
       { href: '/right-triangle-area-from-angle-calculator/', label: 'Right Triangle Area From Angle Calculator' },
       { href: '/right-triangle-area-from-semiperimeter-calculator/', label: 'Right Triangle Area From Semiperimeter Calculator' },
-      { href: '/right-triangle-area-from-altitude-calculator/', label: 'Right Triangle Area From Altitude Calculator' },
       { href: '/right-triangle-side-calculator/', label: 'Right Triangle Side Calculator' },
       { href: '/right-triangle-perimeter-calculator/', label: 'Right Triangle Perimeter Calculator' }
     ],
@@ -872,7 +874,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       h2: 'Triangle Diagram: Area Using Angle and Sine',
       intro: 'This diagram labels both acute angles (A and B), the two legs (a and b), and the hypotenuse (c). In Mode 1, the calculator uses side b, hypotenuse c, and angle A. In Mode 2, it uses side a, hypotenuse c, and angle B.',
       caption: 'Right triangle diagram showing legs a and b, hypotenuse c, acute angles A and B, and the sine area formulas.',
-      formulaLabel: 'Area = (b \u00D7 c \u00D7 sin A) / 2',
+      formulaLabel: 'Area = (b \u00D7 c \u00D7 sin(A)) / 2',
       keyLabel: 'Diagram Key',
       sides: {
         a: {
@@ -906,8 +908,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
         'This approach is especially handy in surveying and physics where angle measurements are easier to take than direct side measurements.'
       ],
       formulas: [
-        '\\text{Area} = \\frac{b \\times c \\times \\sin(A)}{2}',
-        '\\text{Area} = \\frac{a \\times c \\times \\sin(B)}{2}'
+        '\\text{Area} = (b \\times c \\times \\sin(A)) / 2',
+        '\\text{Area} = (a \\times c \\times \\sin(B)) / 2'
       ]
     },
     howTo: {
@@ -926,10 +928,10 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       h2: 'Worked Example: Mode 1 \u2014 Using Side b, Hypotenuse c, and Angle A',
       intro: 'Given b = 4, c = 5, and angle A = 36.87\u00B0:',
       lines: [
-        '\\text{Area} = \\frac{b \\times c \\times \\sin(A)}{2}',
-        '\\text{Area} = \\frac{4 \\times 5 \\times \\sin(36.87^\\circ)}{2}',
-        '\\text{Area} = \\frac{20 \\times 0.6}{2}',
-        '\\text{Area} = \\frac{12}{2}',
+        '\\text{Area} = (b \\times c \\times \\sin(A)) / 2',
+        '\\text{Area} = (4 \\times 5 \\times \\sin(36.87^\\circ)) / 2',
+        '\\text{Area} = (20 \\times 0.6) / 2',
+        '\\text{Area} = 12 / 2',
         '\\text{Area} = 6'
       ],
       answer: 'The area is 6 square units. This matches the 3-4-5 triangle (since sin(36.87\u00B0) \u2248 0.6, and the area of a 3-4-5 triangle is (3 \u00D7 4) / 2 = 6).'
@@ -986,7 +988,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     relatedLinks: [
       { href: '/right-triangle-area-calculator/', label: 'Right Triangle Area Calculator' },
       { href: '/right-triangle-area-from-legs-calculator/', label: 'Right Triangle Area From Legs Calculator' },
-      { href: '/right-triangle-area-from-semiperimeter-calculator/', label: 'Right Triangle Area From Semiperimeter Calculator' },
+      { href: '/right-triangle-side-from-angle-calculator/', label: 'Right Triangle Side From Angle Calculator' },
       { href: '/right-triangle-angle-calculator/', label: 'Right Triangle Angle Calculator' },
       { href: '/right-triangle-trig-ratios-calculator/', label: 'Right Triangle Trig Ratios Calculator' }
     ],
@@ -1162,7 +1164,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       { href: '/right-triangle-semiperimeter-calculator/', label: 'Right Triangle Semiperimeter Calculator' },
       { href: '/right-triangle-radius-calculator/', label: 'Right Triangle Radius Calculator' },
       { href: '/right-triangle-area-from-altitude-calculator/', label: 'Right Triangle Area From Altitude Calculator' },
-      { href: '/right-triangle-area-from-legs-calculator/', label: 'Right Triangle Area From Legs Calculator' }
+      { href: '/right-triangle-inradius-and-circumradius-calculator/', label: 'Right Triangle Inradius and Circumradius Calculator' }
     ],
     faqs: [
       {
@@ -1250,7 +1252,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
         'For a right triangle, this altitude h drops from the right-angle vertex straight down to the hypotenuse. It creates two smaller right triangles inside the original one, each similar to the whole triangle. This relationship is the foundation of the geometric mean theorem.',
         'The altitude h is related to the legs by h = (a \u00D7 b) / c. So even though this formula uses h and c instead of a and b, it produces the same area as the legs formula. They are algebraically equivalent.'
       ],
-      formulas: ['\\text{Area} = \\frac{c \\times h}{2}']
+      formulas: ['\\text{Area} = (c \\times h) / 2']
     },
     howTo: {
       h2: 'How to Use This Calculator',
@@ -1267,9 +1269,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       h2: 'Worked Example: Area of a Right Triangle With c = 10 and h = 4.8',
       intro: 'Suppose the hypotenuse is 10 and the altitude to the hypotenuse is 4.8:',
       lines: [
-        '\\text{Area} = \\frac{c \\times h}{2}',
-        '\\text{Area} = \\frac{10 \\times 4.8}{2}',
-        '\\text{Area} = \\frac{48}{2}',
+        '\\text{Area} = (c \\times h) / 2',
+        '\\text{Area} = (10 \\times 4.8) / 2',
+        '\\text{Area} = 48 / 2',
         '\\text{Area} = 24'
       ],
       answer: 'The area is 24 square units. This matches a 6-8-10 right triangle where the altitude to the hypotenuse is h = (6 \u00D7 8) / 10 = 4.8.'
@@ -1332,7 +1334,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     relatedLinks: [
       { href: '/right-triangle-area-calculator/', label: 'Right Triangle Area Calculator' },
       { href: '/right-triangle-area-from-legs-calculator/', label: 'Right Triangle Area From Legs Calculator' },
-      { href: '/right-triangle-altitude-calculator/', label: 'Right Triangle Altitude Calculator' },
+      { href: '/right-triangle-height-calculator/', label: 'Right Triangle Height Calculator' },
       { href: '/right-triangle-area-from-semiperimeter-calculator/', label: 'Right Triangle Area From Semiperimeter Calculator' },
       { href: '/right-triangle-side-calculator/', label: 'Right Triangle Side Calculator' }
     ],
@@ -1757,6 +1759,16 @@ export function getFocusedMeasurementCalculatorPage(
   locale: Locale = DEFAULT_LOCALE
 ) {
   if (locale !== DEFAULT_LOCALE) {
+    const areaTranslationsByLocale = FOCUSED_MEASUREMENT_AREA_CALCULATOR_TRANSLATIONS as unknown as Record<
+      string,
+      Record<string, FocusedMeasurementCalculatorPage>
+    >;
+    const localizedAreaPage = areaTranslationsByLocale[locale]?.[slug];
+
+    if (localizedAreaPage) {
+      return localizedAreaPage;
+    }
+
     const translationsByLocale = FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS as unknown as Record<
       string,
       Record<string, FocusedMeasurementCalculatorPage>

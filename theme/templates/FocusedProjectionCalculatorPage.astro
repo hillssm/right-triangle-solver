@@ -22,31 +22,9 @@ const common = (bundle.common as Record<string, any>) || {};
 const nav = (common.nav as Record<string, string>) || {};
 const solver = (common.solver as Record<string, string>) || {};
 
-const homeLabel = pick(nav, 'home', 'Home');
-const parentCalculatorLabel = 'Right Triangle Projection Calculator';
 const parentCalculatorPath = '/right-triangle-projection-calculator/';
 const canonicalPath = localizePath(locale, page.url);
 const openToolLabel = pick(solver, 'openTool', 'Open Tool');
-
-const breadcrumbItems = [
-  { label: homeLabel, href: localizePath(locale, '/') },
-  {
-    label: parentCalculatorLabel,
-    href: localizePath(locale, parentCalculatorPath)
-  },
-  { label: page.h1, href: canonicalPath }
-];
-
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: breadcrumbItems.map((item, index) => ({
-    '@type': 'ListItem',
-    position: index + 1,
-    name: item.label,
-    item: toAbsoluteUrl(item.href)
-  }))
-};
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -61,7 +39,7 @@ const faqSchema = {
   }))
 };
 
-const calculatorMessages = {
+const defaultCalculatorMessages = {
   positive: 'Please enter positive values.',
   invalid: 'These values may not form a valid right triangle.',
   hypotenuseKnownLeg: 'The hypotenuse c must be greater than the known side.',
@@ -269,22 +247,90 @@ const projectionPageStructure: Record<string, ProjectionPageStructure> = {
   }
 };
 
-const pageStructure = projectionPageStructure[page.slug];
+const pageStructure = page.structure ?? projectionPageStructure[page.slug];
 
 if (!pageStructure) {
   throw new Error(`Missing projection page structure for ${page.slug}`);
 }
 
 const calculatorName = page.h1.replace(/\s+Calculator$/, '');
-const calculatorHeading = `Calculate ${calculatorName}`;
-const howItWorksHeading = `How This ${calculatorName} Calculator Works`;
+const quickSummaryLabels = {
+  knownValues: 'Known values',
+  finds: 'Finds',
+  mainFormula: 'Main formula',
+  bestFor: 'Best for',
+  ...(page.ui?.quickSummaryLabels ?? {})
+};
+const calculatorMessages = {
+  ...defaultCalculatorMessages,
+  ...(page.ui?.calculatorMessages ?? {})
+};
+const calculatorRuntimeTranslations = page.ui?.calculationSteps
+  ? { calculationSteps: page.ui.calculationSteps }
+  : {};
+const pageUi = {
+  badge: page.ui?.badge ?? 'Projection Calculator',
+  calculatorHeading: page.ui?.calculatorHeading ?? `Calculate ${calculatorName}`,
+  howItWorksHeading:
+    page.ui?.howItWorksHeading ?? `How This ${calculatorName} Calculator Works`,
+  howToHeading: page.ui?.howToHeading ?? 'How to Use This Calculator',
+  resultMeaningHeading: page.ui?.resultMeaningHeading ?? 'What the Result Means',
+  whenUseHeading: page.ui?.whenUseHeading ?? 'When to Use This Calculator',
+  whenUseIntro:
+    page.ui?.whenUseIntro ??
+    'This method is useful when your known values match this projection relation and you want a direct result.',
+  whenUseListTitle:
+    page.ui?.whenUseListTitle ?? 'Common situations where this calculator helps:',
+  whyFormulaWorksHeading: page.ui?.whyFormulaWorksHeading ?? 'Why This Formula Works',
+  commonMistakesHeading: page.ui?.commonMistakesHeading ?? 'Common Mistakes',
+  commonMistakesIntro:
+    page.ui?.commonMistakesIntro ??
+    'Projection formulas are short, but it is easy to use the wrong segment or stop one step early. Check these points before trusting the result.',
+  faqHeading: page.ui?.faqHeading ?? 'Frequently Asked Questions',
+  faqDescription:
+    page.ui?.faqDescription ??
+    'Answers to common questions about right-triangle projection calculations.',
+  relatedHeading: page.ui?.relatedHeading ?? 'Related Calculators',
+  diagramKeyLabel: page.ui?.diagramKeyLabel ?? 'Diagram Key',
+  homeLabel: page.ui?.homeLabel ?? pick(nav, 'home', 'Home'),
+  parentCalculatorLabel:
+    page.ui?.parentCalculatorLabel ?? 'Right Triangle Projection Calculator'
+};
+const diagramSvgLabels = {
+  rightAngle: '90°',
+  legA: 'leg a',
+  legB: 'leg b',
+  hypotenuseC: 'hypotenuse c',
+  projectionP: 'projection p',
+  projectionQ: 'projection q',
+  altitudeH: 'altitude h',
+  ...(page.diagram.svgLabels ?? {})
+};
+const breadcrumbItems = [
+  { label: pageUi.homeLabel, href: localizePath(locale, '/') },
+  {
+    label: pageUi.parentCalculatorLabel,
+    href: localizePath(locale, parentCalculatorPath)
+  },
+  { label: page.h1, href: canonicalPath }
+];
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbItems.map((item, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: item.label,
+    item: toAbsoluteUrl(item.href)
+  }))
+};
 const introText = page.intro[0];
 const howItWorksIntro = page.intro[1] || page.calculatorNote;
 const quickSummaryCards = [
-  { label: 'Known values', value: pageStructure.knownValues },
-  { label: 'Finds', value: pageStructure.finds },
-  { label: 'Main formula', value: pageStructure.mainFormula },
-  { label: 'Best for', value: pageStructure.bestFor }
+  { label: quickSummaryLabels.knownValues, value: pageStructure.knownValues },
+  { label: quickSummaryLabels.finds, value: pageStructure.finds },
+  { label: quickSummaryLabels.mainFormula, value: pageStructure.mainFormula },
+  { label: quickSummaryLabels.bestFor, value: pageStructure.bestFor }
 ];
 ---
 
@@ -328,7 +374,7 @@ const quickSummaryCards = [
 
   <header class="mx-auto mb-8 w-full max-w-4xl">
     <p class="font-label text-xs uppercase tracking-widest text-primary">
-      Projection Calculator
+      {pageUi.badge}
     </p>
     <h1 class="mt-3 break-words text-3xl font-bold leading-tight sm:text-4xl">{page.h1}</h1>
     <p class="truncate mt-4 max-w-3xl break-words text-on-surface-variant">{introText}</p>
@@ -337,12 +383,13 @@ const quickSummaryCards = [
   <FormulaCalculator
     formula={page.formula}
     locale={locale}
-    heading={calculatorHeading}
+    heading={pageUi.calculatorHeading}
     messages={calculatorMessages}
+    runtimeTranslations={calculatorRuntimeTranslations}
   />
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{howItWorksHeading}</h2>
+    <h2>{pageUi.howItWorksHeading}</h2>
     <p>{howItWorksIntro}</p>
     <p>{page.calculatorNote}</p>
     <div class="not-prose mt-5 grid gap-3 sm:grid-cols-2">
@@ -452,13 +499,13 @@ const quickSummaryCards = [
             stroke-width="3"
             stroke-linejoin="round"
           />
-          <text x="250" y="73" text-anchor="middle" class="math-textbook fill-on-surface text-[18px]">90°</text>
-          <text x="145" y="185" text-anchor="middle" class="math-textbook fill-on-surface text-[18px]">leg a</text>
-          <text x="420" y="182" text-anchor="middle" class="math-textbook fill-on-surface text-[18px]">leg b</text>
-          <text x="310" y="285" text-anchor="middle" class="math-textbook fill-on-surface text-[18px]">hypotenuse c</text>
-          <text x="170" y="335" text-anchor="middle" class="math-textbook fill-primary text-[18px]">projection p</text>
-          <text x="390" y="335" text-anchor="middle" class="math-textbook fill-secondary text-[18px]">projection q</text>
-          <text x="222" y="202" text-anchor="end" class="math-textbook fill-tertiary text-[18px]">altitude h</text>
+          <text x="250" y="73" text-anchor="middle" class="math-textbook fill-on-surface text-[18px]">{diagramSvgLabels.rightAngle}</text>
+          <text x="145" y="185" text-anchor="middle" class="math-textbook fill-on-surface text-[18px]">{diagramSvgLabels.legA}</text>
+          <text x="420" y="182" text-anchor="middle" class="math-textbook fill-on-surface text-[18px]">{diagramSvgLabels.legB}</text>
+          <text x="310" y="285" text-anchor="middle" class="math-textbook fill-on-surface text-[18px]">{diagramSvgLabels.hypotenuseC}</text>
+          <text x="170" y="335" text-anchor="middle" class="math-textbook fill-primary text-[18px]">{diagramSvgLabels.projectionP}</text>
+          <text x="390" y="335" text-anchor="middle" class="math-textbook fill-secondary text-[18px]">{diagramSvgLabels.projectionQ}</text>
+          <text x="222" y="202" text-anchor="end" class="math-textbook fill-tertiary text-[18px]">{diagramSvgLabels.altitudeH}</text>
           <circle cx="90" cy="300" r="4" fill="var(--color-outline)" />
           <circle cx="250" cy="300" r="4" fill="var(--color-tertiary)" />
           <circle cx="530" cy="300" r="4" fill="var(--color-outline)" />
@@ -470,7 +517,7 @@ const quickSummaryCards = [
 
       <div class="min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/50 p-4">
         <p class="font-label text-[11px] uppercase tracking-widest text-primary">
-          Diagram Key
+          {pageUi.diagramKeyLabel}
         </p>
         <div class="mt-4 grid gap-3">
           {pageStructure.diagramKey.map((item) => (
@@ -494,7 +541,7 @@ const quickSummaryCards = [
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>How to Use This Calculator</h2>
+    <h2>{pageUi.howToHeading}</h2>
     <ol>
       {page.howTo.map((step) => (
         <li set:html={formatListItem(step)} />
@@ -520,16 +567,16 @@ const quickSummaryCards = [
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>What the Result Means</h2>
+    <h2>{pageUi.resultMeaningHeading}</h2>
     {page.resultMeaning.map((paragraph) => (
       <p>{paragraph}</p>
     ))}
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>When to Use This Calculator</h2>
-    <p>This method is useful when your known values match this projection relation and you want a direct result.</p>
-    <h3>Common situations where this calculator helps:</h3>
+    <h2>{pageUi.whenUseHeading}</h2>
+    <p>{pageUi.whenUseIntro}</p>
+    <h3>{pageUi.whenUseListTitle}</h3>
     <ul>
       {page.whenUse.map((item) => (
         <li set:html={formatListItem(item)} />
@@ -538,15 +585,15 @@ const quickSummaryCards = [
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>Why This Formula Works</h2>
+    <h2>{pageUi.whyFormulaWorksHeading}</h2>
     {pageStructure.whyFormulaWorks.map((paragraph) => (
       <p>{paragraph}</p>
     ))}
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>Common Mistakes</h2>
-    <p>Projection formulas are short, but it is easy to use the wrong segment or stop one step early. Check these points before trusting the result.</p>
+    <h2>{pageUi.commonMistakesHeading}</h2>
+    <p>{pageUi.commonMistakesIntro}</p>
     <ul>
       {page.commonMistakes.map((item) => (
         <li set:html={formatListItem(item)} />
@@ -566,14 +613,14 @@ const quickSummaryCards = [
 
   <div class="mx-auto mt-8 w-full max-w-4xl">
     <Faq
-      heading="Frequently Asked Questions"
-      description="Answers to common questions about right-triangle projection calculations."
+      heading={pageUi.faqHeading}
+      description={pageUi.faqDescription}
       items={page.faqs}
     />
   </div>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-    <h2 class="text-2xl font-semibold">Related Calculators</h2>
+    <h2 class="text-2xl font-semibold">{pageUi.relatedHeading}</h2>
     <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {page.relatedLinks.map((link) => (
         <a

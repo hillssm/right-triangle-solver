@@ -636,7 +636,13 @@ const calculatorMessages = JSON.stringify(messages);
             return {
               result: r,
               steps: [
-                `**Find Projection p**<br/>Calculate the segment of the hypotenuse adjacent to leg a.<br/>Use p = a² / c<br/>p = ${v.a}² / ${v.c} = ${format(v.a ** 2)} / ${v.c} = ${format(r)}`
+                buildCalculationStep(
+                  'projectionP',
+                  'Find Projection p',
+                  'Calculate the segment of the hypotenuse adjacent to leg a.',
+                  'p = a² / c',
+                  `p = ${v.a}² / ${v.c} = ${format(v.a ** 2)} / ${v.c} = ${format(r)}`
+                )
               ]
             };
           }
@@ -659,7 +665,13 @@ const calculatorMessages = JSON.stringify(messages);
             return {
               result: r,
               steps: [
-                `**Find Projection q**<br/>Calculate the segment of the hypotenuse adjacent to leg b.<br/>Use q = b² / c<br/>q = ${v.b}² / ${v.c} = ${format(v.b ** 2)} / ${v.c} = ${format(r)}`
+                buildCalculationStep(
+                  'projectionQ',
+                  'Find Projection q',
+                  'Calculate the segment of the hypotenuse adjacent to leg b.',
+                  'q = b² / c',
+                  `q = ${v.b}² / ${v.c} = ${format(v.b ** 2)} / ${v.c} = ${format(r)}`
+                )
               ]
             };
           }
@@ -841,7 +853,13 @@ const calculatorMessages = JSON.stringify(messages);
             return {
               result: r,
               steps: [
-                `**Solve for Leg a**<br/>Calculate leg a from hypotenuse c and projection p.<br/>Use a² = c \u00D7 p<br/>a² = ${v.c} \u00D7 ${v.p} = ${format(v.c * v.p)}<br/>a = \u221A(c \u00D7 p)<br/>a = \u221A(${v.c} \u00D7 ${v.p}) = \u221A(${format(v.c * v.p)}) = ${format(r)}`
+                buildCalculationStep(
+                  'legAFromProjection',
+                  'Solve for Leg a',
+                  'Calculate leg a from hypotenuse c and projection p.',
+                  'a² = c \u00D7 p<br/>a = \u221A(c \u00D7 p)',
+                  `a² = ${v.c} \u00D7 ${v.p} = ${format(v.c * v.p)}<br/>a = \u221A(${v.c} \u00D7 ${v.p}) = \u221A(${format(v.c * v.p)}) = ${format(r)}`
+                )
               ]
             };
           }
@@ -855,11 +873,32 @@ const calculatorMessages = JSON.stringify(messages);
             return {
               result: r,
               steps: [
-                `**Solve for Leg b**<br/>Calculate leg b from hypotenuse c and projection q.<br/>Use b² = c \u00D7 q<br/>b² = ${v.c} \u00D7 ${v.q} = ${format(v.c * v.q)}<br/>b = \u221A(c \u00D7 q)<br/>b = \u221A(${v.c} \u00D7 ${v.q}) = \u221A(${format(v.c * v.q)}) = ${format(r)}`
+                buildCalculationStep(
+                  'legBFromProjection',
+                  'Solve for Leg b',
+                  'Calculate leg b from hypotenuse c and projection q.',
+                  'b² = c \u00D7 q<br/>b = \u221A(c \u00D7 q)',
+                  `b² = ${v.c} \u00D7 ${v.q} = ${format(v.c * v.q)}<br/>b = \u221A(${v.c} \u00D7 ${v.q}) = \u221A(${format(v.c * v.q)}) = ${format(r)}`
+                )
               ]
             };
           }
-          case 'hyp_from_pq': { requirePositive(v.p, v.q); const r = v.p + v.q; return { result: r, steps: [`**Solve for Hypotenuse c**<br/>Sum the two segments of the hypotenuse.<br/>Use c = p + q<br/>c = ${v.p} + ${v.q} = ${format(r)}`] }; }
+          case 'hyp_from_pq': {
+            requirePositive(v.p, v.q);
+            const r = v.p + v.q;
+            return {
+              result: r,
+              steps: [
+                buildCalculationStep(
+                  'hypotenuseFromProjections',
+                  'Solve for Hypotenuse c',
+                  'Sum the two segments of the hypotenuse.',
+                  'c = p + q',
+                  `c = ${v.p} + ${v.q} = ${format(r)}`
+                )
+              ]
+            };
+          }
           case 'identity_cos_from_sin': { requirePositive(v.sinA); const r = Math.sqrt(1 - (v.sinA * v.sinA)); return { result: r, steps: [`**Calculate cos(A)**<br/>Derive cosine from the sine value using the Pythagorean identity.<br/>Use cos(A) = \u221A(1 - sin^2(A))<br/>cos(A) = \u221A(1 - ${v.sinA}^2) = ${format(r)}`] }; }
           case 'tan_from_sin_cos': { requirePositive(v.sinA, v.cosA); const r = v.sinA / v.cosA; return { result: r, steps: [`**Calculate tan(A)**<br/>Determine tangent using the fundamental sine-cosine ratio.<br/>Use tan(A) = sin(A) / cos(A)<br/>tan(A) = ${v.sinA} / ${v.cosA} = ${format(r)}`] }; }
           case 'c_from_a_45': { requirePositive(v.a); const r = v.a * Math.SQRT2; return { result: r, steps: [`**Solve for Hypotenuse c**<br/>In a special 45-45-90 triangle, multiply leg by \u221A2.<br/>Use c = a \u00D7 \u221A2<br/>c = ${v.a} \u00D7 \u221A2 = ${format(r)}`] }; }
@@ -1201,7 +1240,8 @@ const calculatorMessages = JSON.stringify(messages);
             angleRangeMessage,
             messages.hypotenuseKnownLeg,
             messages.hypotenuseLongest,
-            messages.invalidTriangle
+            messages.invalidTriangle,
+            messages.projectionLessThanHypotenuse
           ].filter(Boolean);
           const errorPrefix = translations.errorPrefix || '';
           statusEl.textContent = directStatusMessages.includes(msg) ? msg : (errorPrefix ? `${errorPrefix}: ${msg}` : msg);

@@ -1,8 +1,71 @@
 import type { RightTriangleFormula } from 'src/data/rightTriangleFormulas';
+import focusedProjectionCalculatorTranslations from 'src/data/translations/focusedProjectionCalculatorPages.json';
+import { DEFAULT_LOCALE, type Locale } from 'theme/i18n/locales';
 
 type FaqItem = {
   question: string;
   answer: string;
+};
+
+type ProjectionPageStructure = {
+  formulaHeading: string;
+  diagramHeading: string;
+  knownValues: string;
+  finds: string;
+  mainFormula: string;
+  bestFor: string;
+  exampleHeading: string;
+  exampleLines: string[];
+  whyFormulaWorks: string[];
+  additionalExample: {
+    h2: string;
+    intro: string;
+    listItems: string[];
+  };
+  diagramKey: {
+    label: string;
+    description: string;
+  }[];
+};
+
+type ProjectionPageUi = {
+  badge?: string;
+  homeLabel?: string;
+  parentCalculatorLabel?: string;
+  calculatorHeading?: string;
+  howItWorksHeading?: string;
+  quickSummaryLabels?: {
+    knownValues?: string;
+    finds?: string;
+    mainFormula?: string;
+    bestFor?: string;
+  };
+  howToHeading?: string;
+  resultMeaningHeading?: string;
+  whenUseHeading?: string;
+  whenUseIntro?: string;
+  whenUseListTitle?: string;
+  whyFormulaWorksHeading?: string;
+  commonMistakesHeading?: string;
+  commonMistakesIntro?: string;
+  faqHeading?: string;
+  faqDescription?: string;
+  relatedHeading?: string;
+  diagramKeyLabel?: string;
+  calculatorMessages?: {
+    positive?: string;
+    invalid?: string;
+    hypotenuseKnownLeg?: string;
+    projectionLessThanHypotenuse?: string;
+    invalidTriangle?: string;
+  };
+  calculationSteps?: Record<
+    string,
+    {
+      title: string;
+      description: string;
+    }
+  >;
 };
 
 export type FocusedProjectionCalculatorPage = {
@@ -26,6 +89,15 @@ export type FocusedProjectionCalculatorPage = {
     intro: string;
     caption: string;
     notes: string[];
+    svgLabels?: {
+      rightAngle?: string;
+      legA?: string;
+      legB?: string;
+      hypotenuseC?: string;
+      projectionP?: string;
+      projectionQ?: string;
+      altitudeH?: string;
+    };
   };
   howTo: string[];
   example: {
@@ -41,6 +113,8 @@ export type FocusedProjectionCalculatorPage = {
     label: string;
   }[];
   faqs: FaqItem[];
+  structure?: ProjectionPageStructure;
+  ui?: ProjectionPageUi;
 };
 
 export const FOCUSED_PROJECTION_CALCULATOR_PAGES: FocusedProjectionCalculatorPage[] = [
@@ -678,8 +752,22 @@ export const FOCUSED_PROJECTION_CALCULATOR_PAGES: FocusedProjectionCalculatorPag
 export const FOCUSED_PROJECTION_CALCULATOR_PAGE_SLUGS =
   FOCUSED_PROJECTION_CALCULATOR_PAGES.map((page) => page.slug);
 
+export const FOCUSED_PROJECTION_CALCULATOR_TRANSLATIONS =
+  focusedProjectionCalculatorTranslations as Record<
+    string,
+    Record<string, FocusedProjectionCalculatorPage>
+  >;
+
 export function getFocusedProjectionCalculatorPage(
-  slug: string
+  slug: string,
+  locale: Locale = DEFAULT_LOCALE
 ): FocusedProjectionCalculatorPage | undefined {
+  if (locale !== DEFAULT_LOCALE) {
+    const localizedPage = FOCUSED_PROJECTION_CALCULATOR_TRANSLATIONS[locale]?.[slug];
+    if (localizedPage) {
+      return localizedPage;
+    }
+  }
+
   return FOCUSED_PROJECTION_CALCULATOR_PAGES.find((page) => page.slug === slug);
 }

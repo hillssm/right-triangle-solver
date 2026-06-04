@@ -3,7 +3,7 @@ export function formatListItem(item: string): string {
 
   const separators = [
     ' - ',
-    ' — ',
+    ' - ',
     ': ',
     ' -> ',
     ' → '

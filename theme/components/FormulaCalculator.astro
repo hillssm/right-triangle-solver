@@ -12,6 +12,7 @@ interface Props {
   messages?: {
     positive?: string;
     invalid?: string;
+    angleRange?: string;
     hypotenuseKnownLeg?: string;
   };
   runtimeTranslations?: Record<string, unknown>;
@@ -312,6 +313,8 @@ const calculatorMessages = JSON.stringify(messages);
 
       const translations = JSON.parse(section.getAttribute('data-translations') || '{}');
       const messages = JSON.parse(section.getAttribute('data-messages') || '{}');
+      const angleRangeMessage =
+        messages.angleRange || 'Angle must be greater than 0\u00B0 and less than 90\u00B0.';
       const form = section.querySelector('[data-calc-form]');
       const statusEl = section.querySelector('[data-calc-status]');
       const resultWrap = section.querySelector('[data-calc-result-wrap]');
@@ -735,8 +738,20 @@ const calculatorMessages = JSON.stringify(messages);
           }
           case 'angle_b_from_a': { requirePositive(v.A); if (v.A >= 90) throw new Error(messages.invalid || translations.unableToCalculate || ''); const r = 90 - v.A; return { result: r, steps: [buildCalculationStep('angleBFromA', 'Find Angle B', "Subtract angle A from the triangle's 90-degree constant.", 'B = 90\u00B0 \u2212 A', `B = 90\u00B0 \u2212 ${v.A}\u00B0 = ${format(r)}\u00B0`)] }; }
           case 'angle_a_from_b': { requirePositive(v.B); if (v.B >= 90) throw new Error(messages.invalid || translations.unableToCalculate || ''); const r = 90 - v.B; return { result: r, steps: [buildCalculationStep('angleAFromB', 'Find Angle A', "Subtract angle B from the triangle's 90-degree constant.", 'A = 90\u00B0 \u2212 B', `A = 90\u00B0 \u2212 ${v.B}\u00B0 = ${format(r)}\u00B0`)] }; }
-          case 'area_sin_a': { requirePositive(v.b, v.c, v.A); const r = 0.5 * v.b * v.c * Math.sin(rad(v.A)); return { result: r, steps: [`**Calculate Area**<br/>Find the area using two sides and the included angle.<br/>Use Area = 0.5 \u00D7 b \u00D7 c \u00D7 sin(A)<br/>Area = 0.5 \u00D7 ${v.b} \u00D7 ${v.c} \u00D7 sin(${v.A}\u00B0) = ${format(r)}`] }; }
-          case 'area_sin_b': { requirePositive(v.a, v.c, v.B); const r = 0.5 * v.a * v.c * Math.sin(rad(v.B)); return { result: r, steps: [`**Calculate Area**<br/>Find the area using two sides and the included angle.<br/>Use Area = 0.5 \u00D7 a \u00D7 c \u00D7 sin(B)<br/>Area = 0.5 \u00D7 ${v.a} \u00D7 ${v.c} \u00D7 sin(${v.B}\u00B0) = ${format(r)}`] }; }
+          case 'area_sin_a': {
+            requirePositive(v.b, v.c);
+            if (v.A <= 0 || v.A >= 90) throw new Error(angleRangeMessage);
+            if (v.c <= v.b) throw new Error(messages.hypotenuseKnownLeg || translations.unableToCalculate || '');
+            const r = 0.5 * v.b * v.c * Math.sin(rad(v.A));
+            return { result: r, steps: [`**Calculate Area**<br/>Find the area using two sides and the included angle.<br/>Use Area = 0.5 \u00D7 b \u00D7 c \u00D7 sin(A)<br/>Area = 0.5 \u00D7 ${v.b} \u00D7 ${v.c} \u00D7 sin(${v.A}\u00B0) = ${format(r)}`] };
+          }
+          case 'area_sin_b': {
+            requirePositive(v.a, v.c);
+            if (v.B <= 0 || v.B >= 90) throw new Error(angleRangeMessage);
+            if (v.c <= v.a) throw new Error(messages.hypotenuseKnownLeg || translations.unableToCalculate || '');
+            const r = 0.5 * v.a * v.c * Math.sin(rad(v.B));
+            return { result: r, steps: [`**Calculate Area**<br/>Find the area using two sides and the included angle.<br/>Use Area = 0.5 \u00D7 a \u00D7 c \u00D7 sin(B)<br/>Area = 0.5 \u00D7 ${v.a} \u00D7 ${v.c} \u00D7 sin(${v.B}\u00B0) = ${format(r)}`] };
+          }
           case 'area_rs': { requirePositive(v.r, v.s); const r = v.r * v.s; return { result: r, steps: [`**Calculate Area**<br/>Derive the area from inradius and semiperimeter.<br/>Use Area = r \u00D7 s<br/>Area = ${v.r} \u00D7 ${v.s} = ${format(r)}`] }; }
           case 'area_ch': { requirePositive(v.c, v.h); const r = 0.5 * v.c * v.h; return { result: r, steps: [`**Calculate Area**<br/>Standard base-height formula applied to the hypotenuse.<br/>Use Area = 0.5 \u00D7 c \u00D7 h<br/>Area = 0.5 \u00D7 ${v.c} \u00D7 ${v.h} = ${format(r)}`] }; }
           case 'altitude_pq': { requirePositive(v.p, v.q); const r = Math.sqrt(v.p * v.q); return { result: r, steps: [`**Find Altitude h**<br/>The geometric mean of the hypotenuse segments.<br/>Use h = \u221A(p \u00D7 q)<br/>h = \u221A(${v.p} \u00D7 ${v.q}) = \u221A(${format(v.p * v.q)}) = ${format(r)}`] }; }
@@ -1077,6 +1092,7 @@ const calculatorMessages = JSON.stringify(messages);
           const directStatusMessages = [
             messages.positive,
             messages.invalid,
+            angleRangeMessage,
             messages.hypotenuseKnownLeg
           ].filter(Boolean);
           const errorPrefix = translations.errorPrefix || '';

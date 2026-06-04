@@ -1,6 +1,6 @@
 ---
 import type { FocusedMeasurementCalculatorPage as FocusedMeasurementCalculatorPageData } from 'src/data/focusedMeasurementCalculatorPages';
-import { getFormulaBySlug } from 'src/data/rightTriangleFormulas';
+import { getFormulaBySlug, type FormulaCalculatorField } from 'src/data/rightTriangleFormulas';
 import Faq from 'theme/components/Faq.astro';
 import FormulaCalculator from 'theme/components/FormulaCalculator.astro';
 import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
@@ -17,20 +17,37 @@ interface Props {
 }
 
 const { page, locale = DEFAULT_LOCALE } = Astro.props;
-const formula = getFormulaBySlug(page.formulaSlug);
 
-if (!formula || !formula.calculator) {
-  throw new Error(`Focused measurement calculator formula is missing: ${page.formulaSlug}`);
-}
+const buildCalculatorFormula = ({
+  formulaSlug,
+  outputLabel,
+  fields
+}: {
+  formulaSlug: string;
+  outputLabel: string;
+  fields: FormulaCalculatorField[];
+}) => {
+  const formula = getFormulaBySlug(formulaSlug);
 
-const calculatorFormula = {
-  ...formula,
-  calculator: {
-    ...formula.calculator,
-    outputLabel: page.calculator.outputLabel,
-    fields: page.calculator.fields
+  if (!formula || !formula.calculator) {
+    throw new Error(`Focused measurement calculator formula is missing: ${formulaSlug}`);
   }
+
+  return {
+    ...formula,
+    calculator: {
+      ...formula.calculator,
+      outputLabel,
+      fields
+    }
+  };
 };
+
+const calculatorFormula = buildCalculatorFormula({
+  formulaSlug: page.formulaSlug,
+  outputLabel: page.calculator.outputLabel,
+  fields: page.calculator.fields
+});
 
 const bundle = getTranslations(locale);
 const common = (bundle.common as Record<string, any>) || {};
@@ -50,7 +67,8 @@ const measurementUiDefaults = {
   faqDescription: 'Answers to the most common right-triangle solving questions.',
   positiveError: 'Please enter positive values.',
   invalidError: 'Please enter positive values.',
-  hypotenuseKnownLegError: 'The hypotenuse c should be the longest side.'
+  angleRangeError: 'Angle must be greater than 0\u00B0 and less than 90\u00B0.',
+  hypotenuseKnownLegError: 'The hypotenuse c must be greater than the known leg.'
 };
 
 const measurementUiByLocale: Partial<Record<Locale, Partial<typeof measurementUiDefaults>>> = {
@@ -83,13 +101,31 @@ const measurementCalculatorLabel = pick(
   'h1',
   'Right Triangle Measurements Calculator'
 );
+const areaCalculatorLabel = pick(
+  groupedPages['right-triangle-area-calculator'] || {},
+  'h1',
+  'Right Triangle Area Calculator'
+);
 const canonicalPath = localizePath(locale, page.url);
+const areaChildCalculatorSlugs = new Set([
+  'right-triangle-area-from-legs-calculator',
+  'right-triangle-area-from-angle-calculator',
+  'right-triangle-area-from-semiperimeter-calculator',
+  'right-triangle-area-from-altitude-calculator'
+]);
+const isAreaChildCalculator = areaChildCalculatorSlugs.has(page.slug);
+const parentCalculatorLabel = isAreaChildCalculator
+  ? areaCalculatorLabel
+  : measurementCalculatorLabel;
+const parentCalculatorPath = isAreaChildCalculator
+  ? '/right-triangle-area-calculator/'
+  : '/right-triangle-measurements-calculator/';
 
 const breadcrumbItems = [
   { label: homeLabel, href: localizePath(locale, '/') },
   {
-    label: measurementCalculatorLabel,
-    href: localizePath(locale, '/right-triangle-measurements-calculator/')
+    label: parentCalculatorLabel,
+    href: localizePath(locale, parentCalculatorPath)
   },
   { label: page.h1, href: canonicalPath }
 ];
@@ -121,6 +157,7 @@ const faqSchema = {
 const calculatorMessages = {
   positive: measurementUi.positiveError,
   invalid: measurementUi.invalidError,
+  angleRange: measurementUi.angleRangeError,
   hypotenuseKnownLeg: measurementUi.hypotenuseKnownLegError
 };
 
@@ -133,12 +170,34 @@ const renderMath = (expression: string, displayMode = true) =>
 const calculatorName = page.h1.replace(/\s+Calculator$/, '');
 const calculatorHeading =
   locale === DEFAULT_LOCALE ? `Calculate ${calculatorName}` : undefined;
+const calculatorModes = page.calculatorModes?.length
+  ? page.calculatorModes.map((mode) => ({
+      ...mode,
+      formula: buildCalculatorFormula({
+        formulaSlug: mode.formulaSlug,
+        outputLabel: mode.outputLabel,
+        fields: mode.fields
+      })
+    }))
+  : [
+      {
+        formulaSlug: page.formulaSlug,
+        label: page.h1,
+        heading: calculatorHeading,
+        outputLabel: page.calculator.outputLabel,
+        fields: page.calculator.fields,
+        formula: calculatorFormula
+      }
+    ];
+const hasMultipleCalculatorModes = calculatorModes.length > 1;
 const howItWorksHeading =
   locale === DEFAULT_LOCALE
     ? `How This ${calculatorName} Calculator Works`
     : page.quickSummary?.h2 || page.h1;
 
 const relatedHeading = pick(groupedUi, 'relatedCalculatorsTitle', measurementUi.relatedCalculators);
+const modeTitle = pick(groupedUi, 'calculatorModeTitle', 'Calculator Mode');
+const modeSelectLabel = pick(groupedUi, 'chooseCalculatorMode', 'Choose calculator mode');
 const openToolLabel = pick(solver, 'openTool', measurementUi.openTool);
 const faqHeading = pick(faqHub, 'heading', measurementUi.faqHeading);
 const badge = measurementUi.badge;
@@ -199,12 +258,120 @@ const measurementSideEntries = page.diagram
     <p class="mt-4 max-w-3xl break-words text-on-surface-variant">{page.intro}</p>
   </header>
 
-  <FormulaCalculator
-    formula={calculatorFormula}
-    locale={locale}
-    heading={calculatorHeading}
-    messages={calculatorMessages}
-  />
+  {hasMultipleCalculatorModes ? (
+    <section class="mx-auto w-full max-w-4xl section-shell" data-focused-measurement-modes>
+      <div class="flex flex-wrap items-start justify-between gap-4">
+        <h2 class="text-2xl font-semibold">{modeTitle}</h2>
+      </div>
+
+      <label class="mt-6 block text-sm font-medium text-on-surface-variant sm:hidden">
+        {modeSelectLabel}
+        <select
+          class="input-shell mt-2 rounded-lg border border-outline-variant/40"
+          data-focused-measurement-mode-select
+        >
+          {calculatorModes.map((mode) => (
+            <option value={mode.formulaSlug}>{mode.label}</option>
+          ))}
+        </select>
+      </label>
+
+      <div class="mt-6 hidden flex-wrap gap-2 sm:flex" role="tablist" aria-label={modeSelectLabel}>
+        {calculatorModes.map((mode, index) => (
+          <button
+            type="button"
+            role="tab"
+            aria-selected={index === 0 ? 'true' : 'false'}
+            data-focused-measurement-mode-button
+            data-mode={mode.formulaSlug}
+            class={`interactive-chip ${index === 0 ? 'is-active' : ''}`}
+          >
+            {mode.label}
+          </button>
+        ))}
+      </div>
+
+      <div class="mt-8 space-y-8">
+        {calculatorModes.map((mode, index) => (
+          <div
+            data-focused-measurement-mode-panel
+            data-mode={mode.formulaSlug}
+            class={index === 0 ? '' : 'hidden'}
+            role="tabpanel"
+          >
+            <FormulaCalculator
+              formula={mode.formula}
+              locale={locale}
+              heading={mode.heading}
+              messages={calculatorMessages}
+            />
+          </div>
+        ))}
+      </div>
+
+      <script is:inline>
+        (() => {
+          const currentScript = document.currentScript;
+          if (!currentScript) return;
+
+          const root = currentScript.closest('[data-focused-measurement-modes]');
+          if (!root) return;
+
+          const buttons = Array.from(
+            root.querySelectorAll('[data-focused-measurement-mode-button]')
+          );
+          const panels = Array.from(
+            root.querySelectorAll('[data-focused-measurement-mode-panel]')
+          );
+          const select = root.querySelector('[data-focused-measurement-mode-select]');
+
+          if (!panels.length) return;
+
+          const setMode = (mode) => {
+            panels.forEach((panel) => {
+              const isActive = panel.getAttribute('data-mode') === mode;
+              panel.classList.toggle('hidden', !isActive);
+            });
+
+            buttons.forEach((button) => {
+              const isActive = button.getAttribute('data-mode') === mode;
+              button.classList.toggle('is-active', isActive);
+              button.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+
+            if (select && select.value !== mode) {
+              select.value = mode;
+            }
+          };
+
+          const defaultMode = panels[0].getAttribute('data-mode');
+          if (defaultMode) setMode(defaultMode);
+
+          buttons.forEach((button) => {
+            button.addEventListener('click', () => {
+              const mode = button.getAttribute('data-mode');
+              if (mode) setMode(mode);
+            });
+          });
+
+          if (select) {
+            select.addEventListener('change', (event) => {
+              const target = event.target;
+              if (!(target instanceof HTMLSelectElement)) return;
+              setMode(target.value);
+            });
+          }
+        })();
+      </script>
+    </section>
+  ) : (
+    <FormulaCalculator
+      formula={calculatorModes[0].formula}
+      locale={locale}
+      heading={calculatorModes[0].heading}
+      messages={calculatorMessages}
+    />
+  )}
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{howItWorksHeading}</h2>

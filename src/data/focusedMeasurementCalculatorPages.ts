@@ -23,6 +23,13 @@ export type FocusedMeasurementCalculatorPage = {
     outputLabel: string;
     fields: FormulaCalculatorField[];
   };
+  calculatorModes?: {
+    formulaSlug: string;
+    label: string;
+    heading: string;
+    outputLabel: string;
+    fields: FormulaCalculatorField[];
+  }[];
   diagram?: {
     h2: string;
     intro: string;
@@ -643,8 +650,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     slug: 'right-triangle-area-from-legs-calculator',
     url: '/right-triangle-area-from-legs-calculator/',
     h1: 'Right Triangle Area From Legs Calculator',
-    metaTitle: 'Right Triangle Area From Legs Calculator',
-    metaDescription: 'Content will be added soon.',
+    metaTitle: 'Right Triangle Area From Legs Calculator | Find Area = (a \u00D7 b) / 2',
+    metaDescription: 'Use this right triangle area from legs calculator to find area from leg a and leg b.',
     formulaSlug: 'area-from-legs',
     toolPurpose: 'Content will be added soon.',
     intro: 'Content will be added soon.',
@@ -658,7 +665,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     formulaSection: {
       h2: 'Formula',
       paragraphs: ['Content will be added soon.'],
-      formulas: ['A = (a \\times b) / 2']
+      formulas: ['\\text{Area} = (a \\times b) / 2']
     },
     howTo: {
       h2: 'How to Use This Calculator',
@@ -672,7 +679,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     },
     extraSections: [
       {
-        h2: 'Related Area Calculators',
+        h2: 'Related Calculators',
         paragraphs: ['Content will be added soon.']
       }
     ],
@@ -680,7 +687,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       { href: '/right-triangle-area-calculator/', label: 'Right Triangle Area Calculator' },
       { href: '/right-triangle-area-from-angle-calculator/', label: 'Right Triangle Area From Angle Calculator' },
       { href: '/right-triangle-area-from-semiperimeter-calculator/', label: 'Right Triangle Area From Semiperimeter Calculator' },
-      { href: '/right-triangle-area-from-altitude-calculator/', label: 'Right Triangle Area From Altitude Calculator' }
+      { href: '/right-triangle-side-calculator/', label: 'Right Triangle Side Calculator' }
     ],
     faqs: [
       {
@@ -693,23 +700,50 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     slug: 'right-triangle-area-from-angle-calculator',
     url: '/right-triangle-area-from-angle-calculator/',
     h1: 'Right Triangle Area From Angle Calculator',
-    metaTitle: 'Right Triangle Area From Angle Calculator',
-    metaDescription: 'Content will be added soon.',
+    metaTitle: 'Right Triangle Area From Angle Calculator | Find Area Using Angle',
+    metaDescription: 'Use this right triangle area from angle calculator to find area using a side, hypotenuse, and an acute angle.',
     formulaSlug: 'area-sin-a',
     toolPurpose: 'Content will be added soon.',
     intro: 'Content will be added soon.',
     calculator: {
       outputLabel: 'Area',
       fields: [
-        { key: 'b', label: 'Leg b', min: 0 },
+        { key: 'b', label: 'Adjacent side b', min: 0 },
         { key: 'c', label: 'Hypotenuse c', min: 0 },
         { key: 'A', label: 'Angle A', min: 0 }
       ]
     },
+    calculatorModes: [
+      {
+        formulaSlug: 'area-sin-a',
+        label: 'Adjacent side b, hypotenuse c, angle A',
+        heading: 'Find Area From Adjacent Side b, Hypotenuse c, and Angle A',
+        outputLabel: 'Area',
+        fields: [
+          { key: 'b', label: 'Adjacent side b', min: 0 },
+          { key: 'c', label: 'Hypotenuse c', min: 0 },
+          { key: 'A', label: 'Angle A', min: 0 }
+        ]
+      },
+      {
+        formulaSlug: 'area-sin-b',
+        label: 'Opposite side a, hypotenuse c, angle B',
+        heading: 'Find Area From Opposite Side a, Hypotenuse c, and Angle B',
+        outputLabel: 'Area',
+        fields: [
+          { key: 'a', label: 'Opposite side a', min: 0 },
+          { key: 'c', label: 'Hypotenuse c', min: 0 },
+          { key: 'B', label: 'Angle B', min: 0 }
+        ]
+      }
+    ],
     formulaSection: {
       h2: 'Formula',
       paragraphs: ['Content will be added soon.'],
-      formulas: ['A = (b \\times c \\times \\sin(A)) / 2']
+      formulas: [
+        '\\text{Area} = (b \\times c \\times \\sin(A)) / 2',
+        '\\text{Area} = (a \\times c \\times \\sin(B)) / 2'
+      ]
     },
     howTo: {
       h2: 'How to Use This Calculator',
@@ -723,15 +757,15 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     },
     extraSections: [
       {
-        h2: 'Related Area Calculators',
+        h2: 'Related Calculators',
         paragraphs: ['Content will be added soon.']
       }
     ],
     relatedLinks: [
       { href: '/right-triangle-area-calculator/', label: 'Right Triangle Area Calculator' },
       { href: '/right-triangle-area-from-legs-calculator/', label: 'Right Triangle Area From Legs Calculator' },
-      { href: '/right-triangle-area-from-semiperimeter-calculator/', label: 'Right Triangle Area From Semiperimeter Calculator' },
-      { href: '/right-triangle-area-from-altitude-calculator/', label: 'Right Triangle Area From Altitude Calculator' }
+      { href: '/right-triangle-side-from-angle-calculator/', label: 'Right Triangle Side From Angle Calculator' },
+      { href: '/right-triangle-angle-calculator/', label: 'Right Triangle Angle Calculator' }
     ],
     faqs: [
       {
@@ -744,8 +778,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     slug: 'right-triangle-area-from-semiperimeter-calculator',
     url: '/right-triangle-area-from-semiperimeter-calculator/',
     h1: 'Right Triangle Area From Semiperimeter Calculator',
-    metaTitle: 'Right Triangle Area From Semiperimeter Calculator',
-    metaDescription: 'Content will be added soon.',
+    metaTitle: 'Right Triangle Area From Semiperimeter Calculator | Find Area = r \u00D7 s',
+    metaDescription: 'Use this right triangle area from semiperimeter calculator to find area from inradius r and semiperimeter s.',
     formulaSlug: 'area-rs',
     toolPurpose: 'Content will be added soon.',
     intro: 'Content will be added soon.',
@@ -759,7 +793,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     formulaSection: {
       h2: 'Formula',
       paragraphs: ['Content will be added soon.'],
-      formulas: ['A = r \\times s']
+      formulas: ['\\text{Area} = r \\times s']
     },
     howTo: {
       h2: 'How to Use This Calculator',
@@ -773,14 +807,14 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     },
     extraSections: [
       {
-        h2: 'Related Area Calculators',
+        h2: 'Related Calculators',
         paragraphs: ['Content will be added soon.']
       }
     ],
     relatedLinks: [
       { href: '/right-triangle-area-calculator/', label: 'Right Triangle Area Calculator' },
-      { href: '/right-triangle-area-from-legs-calculator/', label: 'Right Triangle Area From Legs Calculator' },
-      { href: '/right-triangle-area-from-angle-calculator/', label: 'Right Triangle Area From Angle Calculator' },
+      { href: '/right-triangle-semiperimeter-calculator/', label: 'Right Triangle Semiperimeter Calculator' },
+      { href: '/right-triangle-radius-calculator/', label: 'Right Triangle Radius Calculator' },
       { href: '/right-triangle-area-from-altitude-calculator/', label: 'Right Triangle Area From Altitude Calculator' }
     ],
     faqs: [
@@ -794,8 +828,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     slug: 'right-triangle-area-from-altitude-calculator',
     url: '/right-triangle-area-from-altitude-calculator/',
     h1: 'Right Triangle Area From Altitude Calculator',
-    metaTitle: 'Right Triangle Area From Altitude Calculator',
-    metaDescription: 'Content will be added soon.',
+    metaTitle: 'Right Triangle Area From Altitude Calculator | Find Area = (c \u00D7 h) / 2',
+    metaDescription: 'Use this right triangle area from altitude calculator to find area from hypotenuse c and altitude h.',
     formulaSlug: 'area-ch',
     toolPurpose: 'Content will be added soon.',
     intro: 'Content will be added soon.',
@@ -809,7 +843,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     formulaSection: {
       h2: 'Formula',
       paragraphs: ['Content will be added soon.'],
-      formulas: ['A = (c \\times h) / 2']
+      formulas: ['\\text{Area} = (c \\times h) / 2']
     },
     howTo: {
       h2: 'How to Use This Calculator',
@@ -823,14 +857,14 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     },
     extraSections: [
       {
-        h2: 'Related Area Calculators',
+        h2: 'Related Calculators',
         paragraphs: ['Content will be added soon.']
       }
     ],
     relatedLinks: [
       { href: '/right-triangle-area-calculator/', label: 'Right Triangle Area Calculator' },
       { href: '/right-triangle-area-from-legs-calculator/', label: 'Right Triangle Area From Legs Calculator' },
-      { href: '/right-triangle-area-from-angle-calculator/', label: 'Right Triangle Area From Angle Calculator' },
+      { href: '/right-triangle-altitude-calculator/', label: 'Right Triangle Altitude Calculator' },
       { href: '/right-triangle-area-from-semiperimeter-calculator/', label: 'Right Triangle Area From Semiperimeter Calculator' }
     ],
     faqs: [

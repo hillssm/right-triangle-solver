@@ -383,10 +383,11 @@ const quickSummaryCards = [
 
     <div class="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(14rem,0.85fr)] lg:items-start">
       <div class="min-w-0">
-        <div class="overflow-x-auto rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-3">
+        <div class="overflow-hidden rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-3">
         <svg
-          class="mx-auto block h-auto min-w-[560px] max-w-full"
+          class="mx-auto block h-auto w-full max-w-full"
           viewBox="0 0 620 390"
+          preserveAspectRatio="xMidYMid meet"
           role="img"
           aria-labelledby={`${page.slug}-diagram-title ${page.slug}-diagram-desc`}
         >

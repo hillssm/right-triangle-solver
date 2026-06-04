@@ -1,0 +1,12 @@
+---
+import { getFocusedProjectionCalculatorPage } from 'src/data/focusedProjectionCalculatorPages';
+import FocusedProjectionCalculatorPage from 'theme/templates/FocusedProjectionCalculatorPage.astro';
+
+const page = getFocusedProjectionCalculatorPage('right-triangle-leg-b-from-projection-calculator');
+
+if (!page) {
+  throw new Error('Missing page data for right-triangle-leg-b-from-projection-calculator');
+}
+---
+
+<FocusedProjectionCalculatorPage page={page} />

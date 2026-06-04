@@ -254,6 +254,31 @@ const relatedAltitudeCalculatorLinks = [
 const showRelatedAltitudeCalculators =
   locale === 'en' && groupedPage?.slug === 'right-triangle-altitude-calculator';
 
+const relatedProjectionCalculatorLinks = [
+  {
+    href: '/right-triangle-projection-p-calculator/',
+    label: 'Right Triangle Projection p Calculator'
+  },
+  {
+    href: '/right-triangle-projection-q-calculator/',
+    label: 'Right Triangle Projection q Calculator'
+  },
+  {
+    href: '/right-triangle-leg-a-from-projection-calculator/',
+    label: 'Right Triangle Leg a From Projection Calculator'
+  },
+  {
+    href: '/right-triangle-leg-b-from-projection-calculator/',
+    label: 'Right Triangle Leg b From Projection Calculator'
+  },
+  {
+    href: '/right-triangle-hypotenuse-from-projections-calculator/',
+    label: 'Right Triangle Hypotenuse From Projections Calculator'
+  }
+];
+const showRelatedProjectionCalculators =
+  locale === 'en' && groupedPage?.slug === 'right-triangle-projection-calculator';
+
 const relatedAngleCalculatorLinks = FOCUSED_ANGLE_CALCULATOR_PAGES.map((page) => ({
   href: page.url,
   label: page.h1,
@@ -657,6 +682,30 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
           ))}
         </div>
       </section>
+
+      {showRelatedProjectionCalculators && (
+        <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+          <h2 class="text-2xl font-semibold">Related Projection Calculators</h2>
+          <p class="mt-3 max-w-3xl text-sm text-on-surface-variant">
+            Use these focused calculators if you want to solve one specific right triangle projection case.
+          </p>
+          <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {relatedProjectionCalculatorLinks.map((link) => (
+              <a
+                href={link.href}
+                class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
+              >
+                <h3 class="text-base font-semibold text-on-surface group-hover:text-primary">
+                  {link.label}
+                </h3>
+                <p class="mt-3 text-[11px] uppercase tracking-widest text-primary">
+                  {uiOpen}
+                </p>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
 
       {showRelatedAltitudeCalculators && (
         <section class="mx-auto mt-8 w-full max-w-4xl section-shell">

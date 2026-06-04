@@ -16,6 +16,7 @@ interface Props {
     hypotenuseKnownLeg?: string;
     hypotenuseLongest?: string;
     invalidTriangle?: string;
+    projectionLessThanHypotenuse?: string;
   };
   runtimeTranslations?: Record<string, unknown>;
 }
@@ -626,6 +627,19 @@ const calculatorMessages = JSON.stringify(messages);
               ]
             };
           }
+          case 'projection_p_strict': {
+            requirePositive(v.a, v.c);
+            if (v.c <= v.a) {
+              throw new Error(messages.hypotenuseKnownLeg || translations.unableToCalculate || '');
+            }
+            const r = (v.a * v.a) / v.c;
+            return {
+              result: r,
+              steps: [
+                `**Find Projection p**<br/>Calculate the segment of the hypotenuse adjacent to leg a.<br/>Use p = a² / c<br/>p = ${v.a}² / ${v.c} = ${format(v.a ** 2)} / ${v.c} = ${format(r)}`
+              ]
+            };
+          }
           case 'projection_q': {
             requirePositive(v.b, v.c);
             const r = (v.b * v.b) / v.c;
@@ -633,6 +647,19 @@ const calculatorMessages = JSON.stringify(messages);
               result: r,
               steps: [
                 `**Find Projection q**<br/>Calculate the segment of the hypotenuse adjacent to leg b.<br/>Use q = b^2 / c<br/>q = ${v.b}^2 / ${v.c} = ${format(v.b ** 2)} / ${v.c} = ${format(r)}`
+              ]
+            };
+          }
+          case 'projection_q_strict': {
+            requirePositive(v.b, v.c);
+            if (v.c <= v.b) {
+              throw new Error(messages.hypotenuseKnownLeg || translations.unableToCalculate || '');
+            }
+            const r = (v.b * v.b) / v.c;
+            return {
+              result: r,
+              steps: [
+                `**Find Projection q**<br/>Calculate the segment of the hypotenuse adjacent to leg b.<br/>Use q = b² / c<br/>q = ${v.b}² / ${v.c} = ${format(v.b ** 2)} / ${v.c} = ${format(r)}`
               ]
             };
           }
@@ -805,7 +832,33 @@ const calculatorMessages = JSON.stringify(messages);
             };
           }
           case 'leg_from_cp': { requirePositive(v.c, v.p); const r = Math.sqrt(v.c * v.p); return { result: r, steps: [`**Solve for Leg a**<br/>Calculate leg a from its projection onto the hypotenuse.<br/>Use a = \u221A(c \u00D7 p)<br/>a = \u221A(${v.c} \u00D7 ${v.p}) = \u221A(${format(v.c * v.p)}) = ${format(r)}`] }; }
+          case 'leg_from_cp_strict': {
+            requirePositive(v.c, v.p);
+            if (v.p >= v.c) {
+              throw new Error(messages.projectionLessThanHypotenuse || messages.invalidTriangle || translations.unableToCalculate || '');
+            }
+            const r = Math.sqrt(v.c * v.p);
+            return {
+              result: r,
+              steps: [
+                `**Solve for Leg a**<br/>Calculate leg a from hypotenuse c and projection p.<br/>Use a² = c \u00D7 p<br/>a² = ${v.c} \u00D7 ${v.p} = ${format(v.c * v.p)}<br/>a = \u221A(c \u00D7 p)<br/>a = \u221A(${v.c} \u00D7 ${v.p}) = \u221A(${format(v.c * v.p)}) = ${format(r)}`
+              ]
+            };
+          }
           case 'leg_from_cq': { requirePositive(v.c, v.q); const r = Math.sqrt(v.c * v.q); return { result: r, steps: [`**Solve for Leg b**<br/>Calculate leg b from its projection onto the hypotenuse.<br/>Use b = \u221A(c \u00D7 q)<br/>b = \u221A(${v.c} \u00D7 ${v.q}) = \u221A(${format(v.c * v.q)}) = ${format(r)}`] }; }
+          case 'leg_from_cq_strict': {
+            requirePositive(v.c, v.q);
+            if (v.q >= v.c) {
+              throw new Error(messages.projectionLessThanHypotenuse || messages.invalidTriangle || translations.unableToCalculate || '');
+            }
+            const r = Math.sqrt(v.c * v.q);
+            return {
+              result: r,
+              steps: [
+                `**Solve for Leg b**<br/>Calculate leg b from hypotenuse c and projection q.<br/>Use b² = c \u00D7 q<br/>b² = ${v.c} \u00D7 ${v.q} = ${format(v.c * v.q)}<br/>b = \u221A(c \u00D7 q)<br/>b = \u221A(${v.c} \u00D7 ${v.q}) = \u221A(${format(v.c * v.q)}) = ${format(r)}`
+              ]
+            };
+          }
           case 'hyp_from_pq': { requirePositive(v.p, v.q); const r = v.p + v.q; return { result: r, steps: [`**Solve for Hypotenuse c**<br/>Sum the two segments of the hypotenuse.<br/>Use c = p + q<br/>c = ${v.p} + ${v.q} = ${format(r)}`] }; }
           case 'identity_cos_from_sin': { requirePositive(v.sinA); const r = Math.sqrt(1 - (v.sinA * v.sinA)); return { result: r, steps: [`**Calculate cos(A)**<br/>Derive cosine from the sine value using the Pythagorean identity.<br/>Use cos(A) = \u221A(1 - sin^2(A))<br/>cos(A) = \u221A(1 - ${v.sinA}^2) = ${format(r)}`] }; }
           case 'tan_from_sin_cos': { requirePositive(v.sinA, v.cosA); const r = v.sinA / v.cosA; return { result: r, steps: [`**Calculate tan(A)**<br/>Determine tangent using the fundamental sine-cosine ratio.<br/>Use tan(A) = sin(A) / cos(A)<br/>tan(A) = ${v.sinA} / ${v.cosA} = ${format(r)}`] }; }

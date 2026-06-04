@@ -1,2339 +1,2419 @@
-import type { Locale } from 'theme/i18n/locales';
-import type { FocusedTrigRatioCalculatorPage } from 'src/data/focusedTrigRatioCalculatorPages';
+// Generated localized copy for focused trig ratio calculator pages.
+// Partial translations fallback to English in the getter.
 
-type RatioKey = 'sine' | 'cosine' | 'tangent' | 'cotangent' | 'secant' | 'cosecant';
-type SideRole = 'opposite' | 'adjacent' | 'hypotenuse';
-type RangeKind = 'zeroOne' | 'positiveAny' | 'greaterOne';
-
-type RatioConfig = {
-  slug: string;
-  url: string;
-  key: RatioKey;
-  symbol: string;
-  formula: string;
-  numerator: SideRole;
-  denominator: SideRole;
-  reciprocal: RatioKey;
-  range: RangeKind;
-  exampleValues: string;
-  exampleLines: string[];
-  exampleResult: string;
-  exampleAngle: string;
+export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS = {
+  "hi": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/hi/sine-ratio-calculator/",
+      h1: "साइन अनुपात कैलकुलेटर",
+      metaTitle: "साइन अनुपात कैलकुलेटर | समकोण त्रिभुज sin(A)",
+      metaDescription: "सम्मुख भुजा a और कर्ण c का उपयोग करके समकोण त्रिभुज में sin(A) खोजने के लिए सूत्र, चरण और उदाहरण के साथ इस साइन अनुपात कैलकुलेटर का उपयोग करें।",
+      intro: [
+        "साइन अनुपात उन पहले त्रिकोणमितीय अनुपातों में से एक है जिन्हें आप ज्यामिति में सीखते हैं। यह एक समकोण त्रिभुज में एक विशिष्ट कोण को उसकी दो भुजाओं - सम्मुख भुजा और कर्ण से जोड़ता है। यदि आप इन दो मापों को जानते हैं, तो यह कैलकुलेटर आपको तुरंत sin(A) देता है।",
+        "चाहे आप होमवर्क की समस्",
+        "<truncated 65596 bytes>",
+        "ण त्रिभुज त्रिकोणमितीय अनुपात कैलकुलेटर",
+        "- साइन अनुपात कैलकुलेटर",
+        "- सीकेंट अनुपात कैलकुलेटर",
+        "- कोटेंजेंट अनुपात कैलकुलेटर",
+      ],
+      faqs: [
+        {
+          question: "एक समकोण त्रिभुज में कोसीकेंट सूत्र क्या है?",
+          answer: "यह csc(A) = c / a है, जहाँ c कर्ण है और a सम्मुख भुजा है। कोसीकेंट साइन का व्युत्क्रम है।"
+        },
+        {
+          question: "कोसीकेंट साइन से कैसे संबंधित है?",
+          answer: "csc(A) = 1 / sin(A)। यदि sin(A) = 0.6 है, तो csc(A) = 1 / 0.6 ≈ 1.6667।"
+        },
+        {
+          question: "कोसीकेंट हमेशा 1 से अधिक क्यों होता है?",
+          answer: "क्योंकि समकोण त्रिभुज में कर्ण हमेशा सम्मुख भुजा से लंबा होता है। भिन्न c / a हमेशा 1 से अधिक होता है।"
+        },
+        {
+          question: "csc(30°) क्या है?",
+          answer: "30-60-90 त्रिभुज में, sin(30°) = 0.5, इसलिए csc(30°) = 1 / 0.5 = 2। कर्ण सम्मुख भुजा का ठीक दोगुना है।"
+        },
+        {
+          question: "मैं साइन के बजाय कोसीकेंट का उपयोग कब करूँगा?",
+          answer: "जब कोई सूत्र सीधे इसकी आवश्यकता करता है, या जब आप सम्मुख भुजा से कर्ण खोजना चाहते हैं तो कोसीकेंट का उपयोग करें: c = a × csc(A)। यह साइन से विभाजित करने के चरण को बचाता है। ---"
+        },
+      ]
+    },
+    "angle-from-sine-calculator": {
+      slug: "angle-from-sine-calculator",
+      h1: "समकोण त्रिभुज साइन से कोण कैलकुलेटर",
+      metaTitle: "समकोण त्रिभुज साइन से कोण कैलकुलेटर | खोजें A = arcsin(a / c)",
+      metaDescription: "इस समकोण त्रिभुज साइन से कोण कैलकुलेटर का उपयोग सूत्र, चरणों और उदाहरणों के साथ सम्मुख भुजा a और कर्ण c से कोण A ज्ञात करने के लिए करें।",
+      faqs: [
+        {
+          question: "arcsin सूत्र वास्तव में क्या करता है?",
+          answer: "Arcsin दो भुजाओं का अनुपात लेता है और गणित को उलट कर आपको वह विशिष्ट कोण बताता है जिससे वह अनुपात बना।"
+        },
+        {
+          question: "अंतिम परिणाम का क्या अर्थ है?",
+          answer: "परिणाम आपको कोण A की सटीक डिग्री माप देता है। यह आपको बताता है कि कर्ण आधार से कितने तीखेपन से दूर जाता है।"
+        },
+        {
+          question: "यदि मेरी सम्मुख भुजा मेरे कर्ण से बड़ी है तो मुझे त्रुटि क्यों मिलती है?",
+          answer: "एक समकोण त्रिभुज में, कर्ण हमेशा सबसे लंबी भुजा होनी चाहिए। यदि भुजा a भुजा c से बड़ी है, तो त्रिभुज को भौतिक रूप से खींचना असंभव है।"
+        },
+        {
+          question: "क्या मुझे इस पद्धति का उपयोग करने के लिए संलग्न भुजा को जानने की आवश्यकता है?",
+          answer: "नहीं, आपको केवल सम्मुख भुजा और कर्ण की आवश्यकता है। संलग्न भुजा को यहाँ पूरी तरह से अनदेखा कर दिया गया है।"
+        },
+        {
+          question: "क्या व्युत्क्रम साइन (inverse sine) और arcsin एक ही बात हैं?",
+          answer: "हाँ, वे एक ही गणितीय प्रक्रिया के दो अलग-अलग नाम हैं। आप इसे हैंडहेल्ड कैलकुलेटर पर sin⁻¹ के रूप में लिखा हुआ देख सकते हैं।"
+        },
+      ]
+    },
+    "angle-from-cosine-calculator": {
+      slug: "angle-from-cosine-calculator",
+      h1: "समकोण त्रिभुज कोसाइन से कोण कैलकुलेटर",
+      metaTitle: "समकोण त्रिभुज कोसाइन से कोण कैलकुलेटर | खोजें A = arccos(b / c)",
+      metaDescription: "इस समकोण त्रिभुज कोसाइन से कोण कैलकुलेटर का उपयोग सूत्र, चरणों और उदाहरणों के साथ संलग्न भुजा b और कर्ण c से कोण A ज्ञात करने के लिए करें।",
+      faqs: [
+        {
+          question: "A = arccos(b / c) सूत्र का वास्तव में क्या अर्थ है?",
+          answer: "इसका मतलब है कि आप संलग्न भुजा की लंबाई ले रहे हैं, इसे कर्ण से विभाजित कर रहे हैं, और मूल कोण को खोजने के लिए उस दशमलव से पीछे की ओर काम कर रहे हैं।"
+        },
+        {
+          question: "वास्तविक जीवन में डिग्री परिणाम का क्या अर्थ है?",
+          answer: "परिणाम वह वास्तविक कोण है जिसे आप चांदा (protractor) से मापेंगे। यह सटीक झुकाव या ढलान को परिभाषित करता है जहाँ संलग्न भुजा कर्ण से मिलती है।"
+        },
+        {
+          question: "मुझे गणित त्रुटि क्यों मिल रही है?",
+          answer: "आपने संभवतः b के लिए एक ऐसा मान दर्ज किया है जो c से बड़ा है। एक समकोण त्रिभुज में संलग्न भुजा कभी भी कर्ण से लंबी नहीं हो सकती है।"
+        },
+        {
+          question: "क्या मैं इसका उपयोग कर सकता हूं यदि मुझे सम्मुख भुजा नहीं पता है?",
+          answer: "बिलकुल। यह गणना विशेष रूप से सम्मुख भुजा की आवश्यकता के बिना काम करने के लिए डिज़ाइन की गई है।"
+        },
+        {
+          question: "क्या होता है यदि संलग्न भुजा कर्ण की ठीक आधी हो?",
+          answer: "यदि b, c का ठीक आधा है, तो आपका अनुपात 0.5 है। 0.5 का arccos ठीक 60° है, जो एक बहुत ही सामान्य विशेष त्रिभुज है।"
+        },
+      ]
+    },
+    "angle-from-tangent-calculator": {
+      slug: "angle-from-tangent-calculator",
+      h1: "समकोण त्रिभुज टेंजेंट से कोण कैलकुलेटर",
+      metaTitle: "समकोण त्रिभुज टेंजेंट से कोण कैलकुलेटर | खोजें A = arctan(a / b)",
+      metaDescription: "इस समकोण त्रिभुज टेंजेंट से कोण कैलकुलेटर का उपयोग सूत्र, चरणों और उदाहरणों के साथ सम्मुख भुजा a और संलग्न भुजा b से कोण A ज्ञात करने के लिए करें।",
+      faqs: [
+        {
+          question: "arctan सूत्र कैसे काम करता है?",
+          answer: "arctan सूत्र आपकी सम्मुख भुजा को आपकी संलग्न भुजा से विभाजित करने के कच्चे दशमलव अनुपात को लेता है और इसे वापस एक सटीक डिग्री कोण में अनुवाद करता है।"
+        },
+        {
+          question: "गणना किए गए कोण का क्या अर्थ है?",
+          answer: "परिणाम आपको ठीक-ठीक बताता है कि कोण डिग्री में कितना ढलान वाला है। एक बड़ी संख्या का अर्थ है एक खड़ी ढलान, जबकि एक छोटी संख्या का अर्थ है एक हल्की वृद्धि।"
+        },
+        {
+          question: "क्या इससे कोई फर्क पड़ता है कि कौन सी भुजा a है और कौन सी b है?",
+          answer: "हाँ, यह बहुत महत्वपूर्ण है। भुजा a वह भुजा होनी चाहिए जो आपके कोण के पूरी तरह से विपरीत हो, और भुजा b वह भुजा होनी चाहिए जो इसे छू रही हो। यदि आप उन्हें स्वैप करते हैं, तो आपको इसके बजाय कोण B मिलेगा।"
+        },
+        {
+          question: "क्या सम्मुख भुजा संलग्न भुजा से बड़ी हो सकती है?",
+          answer: "बिलकुल। यदि सम्मुख भुजा बड़ी है, तो परिणामी कोण 45 डिग्री से अधिक होगा।"
+        },
+        {
+          question: "मुझे इसके लिए कर्ण की आवश्यकता क्यों नहीं है?",
+          answer: "टेंजेंट अनुपात विशेष रूप से दो लंबवत भुजाओं a और b द्वारा परिभाषित किया गया है। एक बार वे भुजाएं सेट हो जाने के बाद कर्ण अपनी जगह पर लॉक हो जाता है, इसलिए आपको इसके माप की आवश्यकता नहीं है।"
+        },
+      ]
+    },
+  },
+  "es": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/es/sine-ratio-calculator/",
+      h1: "Calculadora de razón seno",
+      metaTitle: "Calculadora de razón seno | Triángulo rectángulo sin(A)",
+      metaDescription: "Use esta calculadora de razón seno para encontrar sin(A) en un triángulo rectángulo usando el lado opuesto a y la hipotenusa c con fórmula, pasos y ejemplos.",
+      intro: [
+        "La razón seno es una de las primeras funciones trigonométricas que se aprenden en geometría. Conecta un ángulo específico en un triángulo rectángulo con dos de sus lados: el lado opuesto y la hipotenusa. Si conoce estas dos medidas, esta calculadora le da sin(A) al instante.",
+        "Ya sea que esté resolviendo un problema de tarea, comprobando una respuesta de un examen o trabajando en una tarea de medición real, esta herramienta elimina el paso de división manual. Ingrese sus valores y obtenga el resultado junto con la fórmula mostrada.",
+      ],
+      faqs: [
+        {
+          question: "¿Cuál es la fórmula de la cosecante en un triángulo rectángulo?",
+          answer: "Es csc(A) = c / a, donde c es la hipotenusa y a es el lado opuesto. La cosecante es el recíproco del seno."
+        },
+        {
+          question: "¿Cómo se relaciona la cosecante con el seno?",
+          answer: "csc(A) = 1 / sin(A). Si sin(A) = 0.6, entonces csc(A) = 1 / 0.6 ≈ 1.6667."
+        },
+        {
+          question: "¿Por qué la cosecante siempre es mayor que 1?",
+          answer: "Porque la hipotenusa siempre es más larga que el lado opuesto en un triángulo rectángulo. La fracción c / a siempre excede a 1."
+        },
+        {
+          question: "¿Cuánto es csc(30°)?",
+          answer: "En un triángulo 30-60-90, sin(30°) = 0.5, por lo que csc(30°) = 1 / 0.5 = 2. La hipotenusa es exactamente el doble del lado opuesto."
+        },
+        {
+          question: "¿Cuándo usaría la cosecante en lugar del seno?",
+          answer: "Use la cosecante cuando una fórmula la requiera directamente, o cuando desee encontrar la hipotenusa a partir del lado opuesto: c = a × csc(A). Ahorra el paso de dividir por el seno. ---"
+        },
+      ]
+    },
+    "angle-from-sine-calculator": {
+      slug: "angle-from-sine-calculator",
+      h1: "Calculadora del Ángulo de un Triángulo Rectángulo a Partir del Seno",
+      metaTitle: "Calculadora del Ángulo de un Triángulo Rectángulo a Partir del Seno | Hallar A = arcsen(a / c)",
+      metaDescription: "Usa esta calculadora del ángulo de un triángulo rectángulo a partir del seno para encontrar el ángulo A desde el cateto opuesto a y la hipotenusa c con fórmula, pasos y ejemplos.",
+      faqs: [
+        {
+          question: "¿Qué hace exactamente la fórmula de arcsen?",
+          answer: "El arcoseno toma una proporción de dos lados e invierte las matemáticas para decirte el ángulo específico que creó esa proporción."
+        },
+        {
+          question: "¿Qué significa el resultado final?",
+          answer: "El resultado te da la medida exacta en grados del ángulo A. Esto te dice qué tan pronunciado se aleja la hipotenusa de la base."
+        },
+        {
+          question: "¿Por qué obtengo un error si mi cateto opuesto es más grande que mi hipotenusa?",
+          answer: "En un triángulo rectángulo, la hipotenusa debe ser siempre el lado más largo. Si el lado a es mayor que el lado c, es físicamente imposible dibujar el triángulo."
+        },
+        {
+          question: "¿Necesito conocer el cateto adyacente para usar este método?",
+          answer: "No, solo necesitas el cateto opuesto y la hipotenusa. El cateto adyacente se ignora por completo aquí."
+        },
+        {
+          question: "¿El seno inverso es lo mismo que el arcoseno?",
+          answer: "Sí, son dos nombres diferentes para exactamente la misma operación matemática. Es posible que lo veas escrito como sin⁻¹ en una calculadora de mano."
+        },
+      ]
+    },
+    "angle-from-cosine-calculator": {
+      slug: "angle-from-cosine-calculator",
+      h1: "Calculadora del Ángulo de un Triángulo Rectángulo a Partir del Coseno",
+      metaTitle: "Calculadora del Ángulo de un Triángulo Rectángulo a Partir del Coseno | Hallar A = arccos(b / c)",
+      metaDescription: "Usa esta calculadora del ángulo de un triángulo rectángulo a partir del coseno para encontrar el ángulo A usando el cateto adyacente b y la hipotenusa c con fórmula, pasos y ejemplos.",
+      faqs: [
+        {
+          question: "¿Qué significa realmente la fórmula A = arccos(b / c)?",
+          answer: "Significa que estás tomando la longitud del cateto adyacente, dividiéndola por la hipotenusa y trabajando hacia atrás desde ese decimal para encontrar el ángulo original."
+        },
+        {
+          question: "¿Qué significa el resultado en grados en la vida real?",
+          answer: "El resultado es el ángulo real que medirías con un transportador. Define la inclinación o pendiente exacta donde el cateto adyacente se encuentra con la hipotenusa."
+        },
+        {
+          question: "¿Por qué me da un error matemático?",
+          answer: "Probablemente introdujiste un valor para b que es mayor que c. El cateto adyacente nunca puede ser más largo que la hipotenusa en un triángulo rectángulo."
+        },
+        {
+          question: "¿Puedo usar esto si no conozco el cateto opuesto?",
+          answer: "Absolutamente. Este cálculo está diseñado específicamente para funcionar sin necesidad del cateto opuesto en absoluto."
+        },
+        {
+          question: "¿Qué sucede si el cateto adyacente es exactamente la mitad de la hipotenusa?",
+          answer: "Si b es exactamente la mitad de c, tu proporción es 0.5. El arccos de 0.5 es exactamente 60°, que es un triángulo especial muy común."
+        },
+      ]
+    },
+    "angle-from-tangent-calculator": {
+      slug: "angle-from-tangent-calculator",
+      h1: "Calculadora del Ángulo de un Triángulo Rectángulo a Partir de la Tangente",
+      metaTitle: "Calculadora del Ángulo de un Triángulo Rectángulo a Partir de la Tangente | Hallar A = arctan(a / b)",
+      metaDescription: "Usa esta calculadora del ángulo de un triángulo rectángulo a partir de la tangente para encontrar el ángulo A desde el cateto opuesto a y el cateto adyacente b con fórmula, pasos y ejemplos.",
+      faqs: [
+        {
+          question: "¿Cómo funciona la fórmula de arctan?",
+          answer: "La fórmula de arctan toma la proporción decimal bruta de tu cateto opuesto dividido por tu cateto adyacente y la traduce de nuevo a un ángulo preciso en grados."
+        },
+        {
+          question: "¿Qué significa el ángulo calculado?",
+          answer: "El resultado te dice exactamente qué tan pronunciado es el ángulo en grados. Un número mayor significa una pendiente más pronunciada, mientras que un número menor significa una subida más suave."
+        },
+        {
+          question: "¿Importa qué cateto es a y cuál es b?",
+          answer: "Sí, es fundamental. El lado a debe ser el cateto completamente opuesto a tu ángulo, y el lado b debe ser el cateto que lo toca. Si los intercambias, encontrarás el ángulo B en su lugar."
+        },
+        {
+          question: "¿Puede el cateto opuesto ser mayor que el cateto adyacente?",
+          answer: "Absolutamente. Si el cateto opuesto es mayor, el ángulo resultante simplemente será mayor a 45 grados."
+        },
+        {
+          question: "¿Por qué no necesito la hipotenusa para esto?",
+          answer: "La proporción de la tangente está definida específicamente por los dos lados perpendiculares a y b. La hipotenusa queda fijada una vez que se establecen esos lados, por lo que no necesitas su medida."
+        },
+      ]
+    },
+  },
+  "ru": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/ru/sine-ratio-calculator/",
+      h1: "Калькулятор отношения синуса",
+      metaTitle: "Калькулятор отношения синуса | Прямоугольный треугольник sin(A)",
+      metaDescription: "Используйте этот калькулятор отношения синуса, чтобы найти sin(A) в прямоугольном треугольнике, используя противолежащий катет a и гипотенузу c с формулой, шагами и примерами.",
+      intro: [
+        "Отношение синуса — одно из первых тригонометрических отношений, которые вы изучаете в геометрии. Оно связывает определенный угол в прямоугольном треугольнике с двумя его сторонами: противолежащим катетом и гипотенузой. Если вы знаете эти два измерения, этот калькулятор мгновенно выда",
+        "<truncated 54952 bytes>",
+        "язи косеканса и косинуса по названию. Несмотря на приставку «ко-», косеканс является обратным синусу, а не косинусу.",
+      ],
+      faqs: [
+        {
+          question: "Какова формула косеканса в прямоугольном треугольнике?",
+          answer: "Это csc(A) = c / a, где c — гипотенуза, а a — противолежащий катет. Косеканс является величиной, обратной синусу."
+        },
+        {
+          question: "Как косеканс связан с синусом?",
+          answer: "csc(A) = 1 / sin(A). Если sin(A) = 0.6, то csc(A) = 1 / 0.6 ≈ 1.6667."
+        },
+        {
+          question: "Почему косеканс всегда больше 1?",
+          answer: "Потому что гипотенуза всегда длиннее противолежащего катета в прямоугольном треугольнике. Дробь c / a всегда превышает 1."
+        },
+        {
+          question: "Чему равен csc(30°)?",
+          answer: "В треугольнике 30-60-90 sin(30°) = 0.5, поэтому csc(30°) = 1 / 0.5 = 2. Гипотенуза ровно в два раза больше противолежащего катета."
+        },
+        {
+          question: "Когда следует использовать косеканс вместо синуса?",
+          answer: "Используйте косеканс, когда это непосредственно требуется в формуле или когда вы хотите найти гипотенузу по противолежащему катету: c = a × csc(A). Это избавляет от шага деления на синус. ---"
+        },
+      ]
+    },
+    "angle-from-sine-calculator": {
+      slug: "angle-from-sine-calculator",
+      h1: "Калькулятор угла прямоугольного треугольника через синус",
+      metaTitle: "Калькулятор угла прямоугольного треугольника через синус | Найти A = arcsin(a / c)",
+      metaDescription: "Используйте этот калькулятор угла прямоугольного треугольника через синус, чтобы найти угол A по противолежащему катету a и гипотенузе c с помощью формулы, шагов и примеров.",
+      faqs: [
+        {
+          question: "Что на самом деле делает формула арксинуса?",
+          answer: "Арксинус берет отношение двух сторон и выполняет обратное математическое действие, чтобы показать конкретный угол, который создал это отношение."
+        },
+        {
+          question: "Что означает конечный результат?",
+          answer: "Результат дает вам точное измерение угла А в градусах. Это показывает, насколько круто гипотенуза отклоняется от основания."
+        },
+        {
+          question: "Почему я получаю ошибку, если мой противолежащий катет больше гипотенузы?",
+          answer: "В прямоугольном треугольнике гипотенуза всегда должна быть самой длинной стороной. Если сторона a больше стороны c, треугольник физически невозможно нарисовать."
+        },
+        {
+          question: "Нужно ли мне знать прилежащий катет, чтобы использовать этот метод?",
+          answer: "Нет, вам нужны только противолежащий катет и гипотенуза. Прилежащий катет здесь полностью игнорируется."
+        },
+        {
+          question: "Является ли обратный синус тем же самым, что и арксинус?",
+          answer: "Да, это два разных названия одной и той же математической операции. На карманном калькуляторе вы можете увидеть ее запись как sin⁻¹."
+        },
+      ]
+    },
+    "angle-from-cosine-calculator": {
+      slug: "angle-from-cosine-calculator",
+      h1: "Калькулятор угла прямоугольного треугольника через косинус",
+      metaTitle: "Калькулятор угла прямоугольного треугольника через косинус | Найти A = arccos(b / c)",
+      metaDescription: "Используйте этот калькулятор угла прямоугольного треугольника через косинус, чтобы найти угол A по прилежащему катету b и гипотенузе c с помощью формулы, шагов и примеров.",
+      faqs: [
+        {
+          question: "Что на самом деле означает формула A = arccos(b / c)?",
+          answer: "Это означает, что вы берете длину прилежащего катета, делите ее на гипотенузу и работаете в обратном направлении от этого десятичного числа, чтобы найти исходный угол."
+        },
+        {
+          question: "Что означает результат в градусах в реальной жизни?",
+          answer: "Результат — это фактический угол, который вы бы измерили транспортиром. Он определяет точный наклон или уклон в месте соединения прилежащего катета и гипотенузы."
+        },
+        {
+          question: "Почему я получаю математическую ошибку?",
+          answer: "Скорее всего, вы ввели значение для b, которое больше, чем c. Прилежащий катет никогда не может быть длиннее гипотенузы в прямоугольном треугольнике."
+        },
+        {
+          question: "Могу ли я использовать это, если я не знаю противолежащий катет?",
+          answer: "Абсолютно. Этот расчет разработан специально для того, чтобы работать без необходимости знания противолежащего катета."
+        },
+        {
+          question: "Что произойдет, если прилежащий катет составляет ровно половину гипотенузы?",
+          answer: "Если b составляет ровно половину от c, ваше отношение равно 0.5. Арккосинус 0.5 равен ровно 60°, что является очень распространенным особым треугольником."
+        },
+      ]
+    },
+    "angle-from-tangent-calculator": {
+      slug: "angle-from-tangent-calculator",
+      h1: "Калькулятор угла прямоугольного треугольника через тангенс",
+      metaTitle: "Калькулятор угла прямоугольного треугольника через тангенс | Найти A = arctan(a / b)",
+      metaDescription: "Используйте этот калькулятор угла прямоугольного треугольника через тангенс, чтобы найти угол A по противолежащему катету a и прилежащему катету b с помощью формулы, шагов и примеров.",
+      faqs: [
+        {
+          question: "Как работает формула арктангенса?",
+          answer: "Формула арктангенса берет десятичное отношение вашего противолежащего катета, разделенного на прилежащий катет, и переводит его обратно в точный угол в градусах."
+        },
+        {
+          question: "Что означает вычисленный угол?",
+          answer: "Результат говорит вам точно, насколько крутым является угол в градусах. Большее число означает более крутой склон, тогда как меньшее число означает более пологий подъем."
+        },
+        {
+          question: "Имеет ли значение, какой катет a, а какой b?",
+          answer: "Да, это критически важно. Сторона a должна быть катетом, полностью противоположным вашему углу, а сторона b должна быть катетом, касающимся его. Если вы поменяете их местами, вы найдете угол B вместо этого."
+        },
+        {
+          question: "Может ли противолежащий катет быть больше прилежащего катета?",
+          answer: "Абсолютно. Если противолежащий катет больше, полученный угол просто будет больше 45 градусов."
+        },
+        {
+          question: "Почему мне не нужна гипотенуза для этого?",
+          answer: "Отношение тангенса специально определяется двумя перпендикулярными сторонами a и b. Гипотенуза фиксируется на месте, как только эти стороны установлены, поэтому вам не нужно ее измерять."
+        },
+      ]
+    },
+  },
+  "fr": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/fr/sine-ratio-calculator/",
+      h1: "Calculateur de rapport sinus",
+      metaTitle: "Calculateur de rapport sinus | Triangle rectangle sin(A)",
+      metaDescription: "Utilisez ce calculateur de rapport sinus pour trouver sin(A) dans un triangle rectangle en utilisant le côté opposé a et l'hypoténuse c avec la formule, les étapes et des exemples.",
+      intro: [
+        "Le rapport sinus est l'un des premiers rapports trigonométriques que vous apprenez en géométrie. Il relie un angle spécifique dans un triangle rectangle à deux de ses côtés : le côté opposé et l'hypoténuse. Si vous connaissez ces deux mesures, ce calculateur vous donne sin(A) instantanément.",
+        "Que vous résolviez un problème de devoirs, vérifiiez une réponse de test ou travailliez sur une tâche de mesure réelle, cet outil élimine l'étape de division manuelle. Entrez vos valeurs et obtenez le résultat avec la formule affichée.",
+      ],
+      faqs: [
+        {
+          question: "Quelle est la formule de la cosécante dans un triangle rectangle ?",
+          answer: "C'est csc(A) = c / a, où c est l'hypoténuse et a est le côté opposé. La cosécante est l'inverse du sinus."
+        },
+        {
+          question: "Comment la cosécante est-elle liée au sinus ?",
+          answer: "csc(A) = 1 / sin(A). Si sin(A) = 0.6, alors csc(A) = 1 / 0.6 ≈ 1.6667."
+        },
+        {
+          question: "Pourquoi la cosécante est-elle toujours supérieure à 1 ?",
+          answer: "Parce que l'hypoténuse est toujours plus longue que le côté opposé dans un triangle rectangle. La fraction c / a dépasse toujours 1."
+        },
+        {
+          question: "Quelle est la valeur de csc(30°) ?",
+          answer: "Dans un triangle 30-60-90, sin(30°) = 0.5, donc csc(30°) = 1 / 0.5 = 2. L'hypoténuse correspond exactement au double du côté opposé."
+        },
+        {
+          question: "Quand dois-je utiliser la cosécante au lieu du sinus ?",
+          answer: "Utilisez la cosécante lorsqu'une formule l'exige directement, ou lorsque vous voulez trouver l'hypoténuse à partir du côté opposé : c = a × csc(A). Cela évite l'étape de la division par le sinus. ---"
+        },
+      ]
+    },
+    "angle-from-sine-calculator": {
+      slug: "angle-from-sine-calculator",
+      h1: "Calculateur d'angle de triangle rectangle à partir du sinus",
+      metaTitle: "Calculateur d'angle de triangle rectangle à partir du sinus | Trouver A = arcsin(a / c)",
+      metaDescription: "Utilisez ce calculateur d'angle de triangle rectangle à partir du sinus pour trouver l'angle A à partir du côté opposé a et de l'hypoténuse c avec la formule, les étapes et des exemples.",
+      faqs: [
+        {
+          question: "Que fait réellement la formule arcsin ?",
+          answer: "L'arcsinus prend le rapport de deux côtés et inverse le calcul pour vous donner l'angle spécifique qui a créé ce rapport."
+        },
+        {
+          question: "Que signifie le résultat final ?",
+          answer: "Le résultat vous donne la mesure exacte en degrés de l'angle A. Cela vous indique à quel point l'hypoténuse s'incline par rapport à la base."
+        },
+        {
+          question: "Pourquoi est-ce que j'obtiens une erreur si mon côté opposé est plus grand que mon hypoténuse ?",
+          answer: "Dans un triangle rectangle, l'hypoténuse doit toujours être le côté le plus long. Si le côté a est plus grand que le côté c, le triangle est physiquement impossible à dessiner."
+        },
+        {
+          question: "Ai-je besoin de connaître le côté adjacent pour utiliser cette méthode ?",
+          answer: "Non, vous n'avez besoin que du côté opposé et de l'hypoténuse. Le côté adjacent est complètement ignoré ici."
+        },
+        {
+          question: "Le sinus inverse est-il la même chose que l'arcsinus ?",
+          answer: "Oui, ce sont deux noms différents pour la même opération mathématique exacte. Vous pourriez le voir écrit comme sin⁻¹ sur une calculatrice."
+        },
+      ]
+    },
+    "angle-from-cosine-calculator": {
+      slug: "angle-from-cosine-calculator",
+      h1: "Calculateur d'angle de triangle rectangle à partir du cosinus",
+      metaTitle: "Calculateur d'angle de triangle rectangle à partir du cosinus | Trouver A = arccos(b / c)",
+      metaDescription: "Utilisez ce calculateur d'angle de triangle rectangle à partir du cosinus pour trouver l'angle A à partir du côté adjacent b et de l'hypoténuse c avec la formule, les étapes et des exemples.",
+      faqs: [
+        {
+          question: "Que signifie réellement la formule A = arccos(b / c) ?",
+          answer: "Cela signifie que vous prenez la longueur du côté adjacent, que vous la divisez par l'hypoténuse et que vous remontez à partir de cette décimale pour trouver l'angle d'origine."
+        },
+        {
+          question: "Que signifie le résultat en degrés dans la vraie vie ?",
+          answer: "Le résultat est l'angle réel que vous mesureriez avec un rapporteur. Il définit l'inclinaison exacte ou la pente où le côté adjacent rencontre l'hypoténuse."
+        },
+        {
+          question: "Pourquoi est-ce que j'obtiens une erreur mathématique ?",
+          answer: "Vous avez probablement entré une valeur pour b qui est plus grande que c. Le côté adjacent ne peut jamais être plus long que l'hypoténuse dans un triangle rectangle."
+        },
+        {
+          question: "Puis-je l'utiliser si je ne connais pas le côté opposé ?",
+          answer: "Absolument. Ce calcul est spécialement conçu pour fonctionner sans avoir besoin du côté opposé."
+        },
+        {
+          question: "Que se passe-t-il si le côté adjacent fait exactement la moitié de l'hypoténuse ?",
+          answer: "Si b correspond exactement à la moitié de c, votre rapport est de 0,5. L'arccos de 0,5 est exactement de 60°, ce qui est un triangle spécial très courant."
+        },
+      ]
+    },
+    "angle-from-tangent-calculator": {
+      slug: "angle-from-tangent-calculator",
+      h1: "Calculateur d'angle de triangle rectangle à partir de la tangente",
+      metaTitle: "Calculateur d'angle de triangle rectangle à partir de la tangente | Trouver A = arctan(a / b)",
+      metaDescription: "Utilisez ce calculateur d'angle de triangle rectangle à partir de la tangente pour trouver l'angle A à partir du côté opposé a et du côté adjacent b avec la formule, les étapes et des exemples.",
+      faqs: [
+        {
+          question: "Comment fonctionne la formule arctan ?",
+          answer: "La formule arctan prend le rapport décimal de votre côté opposé divisé par votre côté adjacent et le traduit de nouveau en un angle précis en degrés."
+        },
+        {
+          question: "Que signifie l'angle calculé ?",
+          answer: "Le résultat vous indique exactement à quel point l'angle est raide en degrés. Un nombre plus grand signifie une pente plus raide, tandis qu'un nombre plus petit signifie une pente plus douce."
+        },
+        {
+          question: "Est-ce important de savoir quel côté est a et lequel est b ?",
+          answer: "Oui, c'est crucial. Le côté a doit être le côté complètement opposé à votre angle, et le côté b doit être le côté qui le touche. Si vous les échangez, vous trouverez l'angle B à la place."
+        },
+        {
+          question: "Le côté opposé peut-il être plus grand que le côté adjacent ?",
+          answer: "Absolument. Si le côté opposé est plus grand, l'angle résultant sera simplement supérieur à 45 degrés."
+        },
+        {
+          question: "Pourquoi n'ai-je pas besoin de l'hypoténuse pour cela ?",
+          answer: "Le rapport de la tangente est spécifiquement défini par les deux côtés perpendiculaires a et b. L'hypoténuse est fixée une fois que ces côtés sont définis, vous n'avez donc pas besoin de sa mesure."
+        },
+      ]
+    },
+  },
+  "de": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/de/sine-ratio-calculator/",
+      h1: "Sinus-Verhältnis-Rechner",
+      metaTitle: "Sinus-Verhältnis-Rechner | Rechtwinkliges Dreieck sin(A)",
+      metaDescription: "Verwenden Sie diesen Sinus-Verhältnis-Rechner, um sin(A) in einem rechtwinkligen Dreieck mithilfe der Gegenkathete a und der Hypotenuse c mit Formel, Schritten und Beispielen zu finden.",
+      intro: [
+        "Das Sinus-Verhältnis ist eines der ersten trigonometrischen Verhältnisse, die Sie in der Geometrie lernen. Es verbindet einen bestimmten Winkel in einem rechtwinkligen Dreieck mit zwei seiner Seiten – der Gegenkathete und der Hypotenuse. Wenn Sie diese beiden Maße kennen, liefert Ihnen dieser Rechner sofort sin(A).",
+        "Egal, ob Sie eine Hausaufgabe lösen, eine Testergebnis überprüfen oder an einer echten Messaufgabe arbeiten, dieses Werkzeug nimmt Ihnen den Schritt der manuellen Division ab. Geben Sie Ihre Werte ein und erhalten Sie das Ergebnis zusammen mit der angezeigten Formel.",
+      ],
+      faqs: [
+        {
+          question: "Wie lautet die Kosekansformel in einem rechtwinkligen Dreieck?",
+          answer: "Sie lautet csc(A) = c / a, wobei c die Hypotenuse und a die Gegenkathete ist. Der Kosekans ist der Kehrwert des Sinus."
+        },
+        {
+          question: "In welchem Verhältnis steht der Kosekans zum Sinus?",
+          answer: "csc(A) = 1 / sin(A). Wenn sin(A) = 0.6 ist, dann ist csc(A) = 1 / 0.6 ≈ 1.6667."
+        },
+        {
+          question: "Warum ist der Kosekans immer größer als 1?",
+          answer: "Weil die Hypotenuse in einem rechtwinkligen Dreieck immer länger ist als die Gegenkathete. Der Bruch c / a ist immer größer als 1."
+        },
+        {
+          question: "Was ist csc(30°)?",
+          answer: "In einem 30-60-90-Dreieck ist sin(30°) = 0.5, also ist csc(30°) = 1 / 0.5 = 2. Die Hypotenuse ist exakt doppelt so lang wie die Gegenkathete."
+        },
+        {
+          question: "Wann sollte ich den Kosekans anstelle des Sinus verwenden?",
+          answer: "Verwenden Sie den Kosekans, wenn eine Formel ihn direkt verlangt, oder wenn Sie die Hypotenuse anhand der Gegenkathete ermitteln möchten: c = a × csc(A). Dies erspart den Schritt der Division durch den Sinus. ---"
+        },
+      ]
+    },
+    "angle-from-sine-calculator": {
+      slug: "angle-from-sine-calculator",
+      h1: "Rechtwinkliges Dreieck Winkel aus Sinus Rechner",
+      metaTitle: "Rechtwinkliges Dreieck Winkel aus Sinus Rechner | Finde A = arcsin(a / c)",
+      metaDescription: "Verwenden Sie diesen rechtwinkligen Dreieck-Winkel-aus-Sinus-Rechner, um Winkel A aus der Gegenkathete a und der Hypotenuse c mit Formel, Schritten und Beispielen zu finden.",
+      faqs: [
+        {
+          question: "Was macht die arcsin-Formel eigentlich?",
+          answer: "Arcsin nimmt ein Verhältnis von zwei Seiten und kehrt die Mathematik um, um Ihnen den spezifischen Winkel zu sagen, der dieses Verhältnis erzeugt hat."
+        },
+        {
+          question: "Was bedeutet das Endergebnis?",
+          answer: "Das Ergebnis gibt Ihnen die genaue Gradmessung von Winkel A. Dies sagt Ihnen, wie scharf die Hypotenuse von der Basis abwinkelt."
+        },
+        {
+          question: "Warum erhalte ich einen Fehler, wenn meine Gegenkathete größer als meine Hypotenuse ist?",
+          answer: "In einem rechtwinkligen Dreieck muss die Hypotenuse immer die längste Seite sein. Wenn Seite a größer als Seite c ist, ist das Dreieck physisch unmöglich zu zeichnen."
+        },
+        {
+          question: "Muss ich die Ankathete kennen, um diese Methode anzuwenden?",
+          answer: "Nein, Sie benötigen nur die Gegenkathete und die Hypotenuse. Die Ankathete wird hier komplett ignoriert."
+        },
+        {
+          question: "Ist der Arkussinus das Gleiche wie arcsin?",
+          answer: "Ja, es sind zwei verschiedene Namen für genau dieselbe mathematische Operation. Sie könnten es als sin⁻¹ auf einem Taschenrechner geschrieben sehen."
+        },
+      ]
+    },
+    "angle-from-cosine-calculator": {
+      slug: "angle-from-cosine-calculator",
+      h1: "Rechtwinkliges Dreieck Winkel aus Kosinus Rechner",
+      metaTitle: "Rechtwinkliges Dreieck Winkel aus Kosinus Rechner | Finde A = arccos(b / c)",
+      metaDescription: "Verwenden Sie diesen rechtwinkligen Dreieck-Winkel-aus-Kosinus-Rechner, um Winkel A aus der Ankathete b und der Hypotenuse c mit Formel, Schritten und Beispielen zu finden.",
+      faqs: [
+        {
+          question: "Was bedeutet die Formel A = arccos(b / c) eigentlich?",
+          answer: "Es bedeutet, dass Sie die Länge der Ankathete nehmen, sie durch die Hypotenuse teilen und von dieser Dezimalzahl rückwärts arbeiten, um den ursprünglichen Winkel zu finden."
+        },
+        {
+          question: "Was bedeutet das Gradergebnis im echten Leben?",
+          answer: "Das Ergebnis ist der tatsächliche Winkel, den Sie mit einem Winkelmesser messen würden. Er definiert die genaue Neigung oder Steigung, wo die Ankathete auf die Hypotenuse trifft."
+        },
+        {
+          question: "Warum erhalte ich einen mathematischen Fehler?",
+          answer: "Sie haben wahrscheinlich einen Wert für b eingegeben, der größer als c ist. Die Ankathete kann in einem rechtwinkligen Dreieck niemals länger als die Hypotenuse sein."
+        },
+        {
+          question: "Kann ich dies verwenden, wenn ich die Gegenkathete nicht kenne?",
+          answer: "Absolut. Diese Berechnung ist speziell dafür ausgelegt, ohne die Gegenkathete zu funktionieren."
+        },
+        {
+          question: "Was passiert, wenn die Ankathete genau halb so lang wie die Hypotenuse ist?",
+          answer: "Wenn b genau die Hälfte von c ist, ist Ihr Verhältnis 0,5. Der arccos von 0,5 ist genau 60°, was ein sehr häufiges spezielles Dreieck ist."
+        },
+      ]
+    },
+    "angle-from-tangent-calculator": {
+      slug: "angle-from-tangent-calculator",
+      h1: "Rechtwinkliges Dreieck Winkel aus Tangens Rechner",
+      metaTitle: "Rechtwinkliges Dreieck Winkel aus Tangens Rechner | Finde A = arctan(a / b)",
+      metaDescription: "Verwenden Sie diesen rechtwinkligen Dreieck-Winkel-aus-Tangens-Rechner, um Winkel A aus der Gegenkathete a und der Ankathete b mit Formel, Schritten und Beispielen zu finden.",
+      faqs: [
+        {
+          question: "Wie funktioniert die arctan-Formel?",
+          answer: "Die arctan-Formel nimmt das rohe dezimale Verhältnis Ihrer Gegenkathete geteilt durch Ihre Ankathete und übersetzt es zurück in einen präzisen Gradwinkel."
+        },
+        {
+          question: "Was bedeutet der berechnete Winkel?",
+          answer: "Das Ergebnis sagt Ihnen genau, wie steil der Winkel in Grad ist. Eine größere Zahl bedeutet eine steilere Neigung, während eine kleinere Zahl einen sanfteren Anstieg bedeutet."
+        },
+        {
+          question: "Spielt es eine Rolle, welches Bein a und welches b ist?",
+          answer: "Ja, das ist entscheidend. Seite a muss das Bein sein, das Ihrem Winkel komplett gegenüberliegt, und Seite b muss das Bein sein, das ihn berührt. Wenn Sie sie vertauschen, finden Sie stattdessen Winkel B."
+        },
+        {
+          question: "Kann die Gegenkathete größer als die Ankathete sein?",
+          answer: "Absolut. Wenn die Gegenkathete größer ist, wird der resultierende Winkel einfach größer als 45 Grad sein."
+        },
+        {
+          question: "Warum brauche ich die Hypotenuse dafür nicht?",
+          answer: "Das Tangens-Verhältnis ist spezifisch durch die beiden senkrechten Seiten a und b definiert. Die Hypotenuse ist festgesetzt, sobald diese Seiten festgelegt sind, also benötigen Sie ihre Messung nicht."
+        },
+      ]
+    },
+  },
+  "it": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/it/sine-ratio-calculator/",
+      h1: "Calcolatore del rapporto seno",
+      metaTitle: "Calcolatore del rapporto seno | Triangolo rettangolo sin(A)",
+      metaDescription: "Usa questo calcolatore del rapporto seno per trovare sin(A) in un triangolo rettangolo usando il lato opposto a e l'ipotenusa c con formula, passaggi ed esempi.",
+      intro: [
+        "Il rapporto seno è uno dei primi rapporti trigonometrici che si imparano in geometria. Collega un angolo specifico in un triangolo rettangolo a due dei suoi lati: il lato opposto e l'ipotenusa. Se conosci queste due misure, questo calcolatore ti fornisce istantaneamente sin(A).",
+        "Che tu stia risolvendo un problema per i compiti, controllando una risposta di un test o lavorando a un compito di misurazione reale, questo strumento elimina il passaggio della divisione manuale. Inserisci i tuoi valori e ottieni il risultato con la formula mostrata.",
+      ],
+      faqs: [
+        {
+          question: "Qual è la formula della cosecante in un triangolo rettangolo?",
+          answer: "È csc(A) = c / a, dove c è l'ipotenusa e a è il lato opposto. La cosecante è il reciproco del seno."
+        },
+        {
+          question: "In che modo la cosecante è correlata al seno?",
+          answer: "csc(A) = 1 / sin(A). Se sin(A) = 0.6, allora csc(A) = 1 / 0.6 ≈ 1.6667."
+        },
+        {
+          question: "Perché la cosecante è sempre maggiore di 1?",
+          answer: "Perché l'ipotenusa è sempre più lunga del lato opposto in un triangolo rettangolo. La frazione c / a supera sempre 1."
+        },
+        {
+          question: "Quanto vale csc(30°)?",
+          answer: "In un triangolo 30-60-90, sin(30°) = 0.5, quindi csc(30°) = 1 / 0.5 = 2. L'ipotenusa è esattamente il doppio del lato opposto."
+        },
+        {
+          question: "Quando dovrei usare la cosecante invece del seno?",
+          answer: "Usa la cosecante quando una formula lo richiede direttamente o quando desideri trovare l'ipotenusa dal lato opposto: c = a × csc(A). Fa risparmiare il passaggio della divisione per il seno. ---"
+        },
+      ]
+    },
+    "angle-from-sine-calculator": {
+      slug: "angle-from-sine-calculator",
+      h1: "Calcolatore dell'angolo del triangolo rettangolo dal seno",
+      metaTitle: "Calcolatore dell'angolo del triangolo rettangolo dal seno | Trova A = arcsin(a / c)",
+      metaDescription: "Usa questo calcolatore dell'angolo del triangolo rettangolo dal seno per trovare l'angolo A dal cateto opposto a e l'ipotenusa c con formule, passaggi ed esempi.",
+      faqs: [
+        {
+          question: "Cosa fa in realtà la formula dell'arcoseno?",
+          answer: "L'arcoseno prende un rapporto di due lati e inverte la matematica per dirti l'angolo specifico che ha creato quel rapporto."
+        },
+        {
+          question: "Cosa significa il risultato finale?",
+          answer: "Il risultato ti dà l'esatta misurazione in gradi dell'angolo A. Questo ti dice quanto bruscamente l'ipotenusa si allontana dalla base."
+        },
+        {
+          question: "Perché ricevo un errore se il mio cateto opposto è più grande della mia ipotenusa?",
+          answer: "In un triangolo rettangolo, l'ipotenusa deve essere sempre il lato più lungo. Se il lato a è maggiore del lato c, il triangolo è fisicamente impossibile da disegnare."
+        },
+        {
+          question: "Devo conoscere il cateto adiacente per utilizzare questo metodo?",
+          answer: "No, hai solo bisogno del cateto opposto e dell'ipotenusa. Il cateto adiacente viene completamente ignorato qui."
+        },
+        {
+          question: "Il seno inverso è la stessa cosa dell'arcoseno?",
+          answer: "Sì, sono due nomi diversi per l'esatta operazione matematica. Potresti vederlo scritto come sin⁻¹ su un calcolatore tascabile."
+        },
+      ]
+    },
+    "angle-from-cosine-calculator": {
+      slug: "angle-from-cosine-calculator",
+      h1: "Calcolatore dell'angolo del triangolo rettangolo dal coseno",
+      metaTitle: "Calcolatore dell'angolo del triangolo rettangolo dal coseno | Trova A = arccos(b / c)",
+      metaDescription: "Usa questo calcolatore dell'angolo del triangolo rettangolo dal coseno per trovare l'angolo A dal cateto adiacente b e l'ipotenusa c con formule, passaggi ed esempi.",
+      faqs: [
+        {
+          question: "Cosa significa effettivamente la formula A = arccos(b / c)?",
+          answer: "Significa che stai prendendo la lunghezza del cateto adiacente, la dividi per l'ipotenusa e lavori a ritroso da quel decimale per trovare l'angolo originale."
+        },
+        {
+          question: "Cosa significa il risultato in gradi nella vita reale?",
+          answer: "Il risultato è l'angolo reale che misureresti con un goniometro. Definisce l'esatta inclinazione o pendenza dove il lato adiacente incontra l'ipotenusa."
+        },
+        {
+          question: "Perché ottengo un errore matematico?",
+          answer: "Probabilmente hai inserito un valore per b maggiore di c. Il cateto adiacente non può mai essere più lungo dell'ipotenusa in un triangolo rettangolo."
+        },
+        {
+          question: "Posso usarlo se non conosco il cateto opposto?",
+          answer: "Assolutamente. Questo calcolo è progettato specificamente per funzionare senza aver bisogno affatto del cateto opposto."
+        },
+        {
+          question: "Cosa succede se il lato adiacente è esattamente la metà dell'ipotenusa?",
+          answer: "Se b è esattamente la metà di c, il tuo rapporto è 0,5. L'arcocoseno di 0,5 è esattamente 60°, che è un triangolo speciale molto comune."
+        },
+      ]
+    },
+    "angle-from-tangent-calculator": {
+      slug: "angle-from-tangent-calculator",
+      h1: "Calcolatore dell'angolo del triangolo rettangolo dalla tangente",
+      metaTitle: "Calcolatore dell'angolo del triangolo rettangolo dalla tangente | Trova A = arctan(a / b)",
+      metaDescription: "Usa questo calcolatore dell'angolo del triangolo rettangolo dalla tangente per trovare l'angolo A dal cateto opposto a e il cateto adiacente b con formule, passaggi ed esempi.",
+      faqs: [
+        {
+          question: "Come funziona la formula dell'arcotangente?",
+          answer: "La formula dell'arcotangente prende il rapporto decimale grezzo del tuo lato opposto diviso per il tuo lato adiacente e lo traduce di nuovo in un angolo in gradi preciso."
+        },
+        {
+          question: "Cosa significa l'angolo calcolato?",
+          answer: "Il risultato ti dice esattamente quanto è ripido l'angolo in gradi. Un numero più grande significa una pendenza più ripida, mentre un numero più piccolo significa una salita più dolce."
+        },
+        {
+          question: "Importa quale cateto è a e quale è b?",
+          answer: "Sì, è critico. Il lato a deve essere il cateto completamente opposto al tuo angolo, e il lato b deve essere il cateto che lo tocca. Se li scambi, troverai invece l'angolo B."
+        },
+        {
+          question: "Il cateto opposto può essere più grande del cateto adiacente?",
+          answer: "Assolutamente. Se il cateto opposto è più grande, l'angolo risultante sarà semplicemente maggiore di 45 gradi."
+        },
+        {
+          question: "Perché non ho bisogno dell'ipotenusa per questo?",
+          answer: "Il rapporto della tangente è definito specificamente dai due lati perpendicolari a e b. L'ipotenusa è bloccata al suo posto una volta che quei lati sono impostati, quindi non hai bisogno della sua misura."
+        },
+      ]
+    },
+  },
+  "pt": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/pt/sine-ratio-calculator/",
+      h1: "Calculadora da Razão Seno",
+      metaTitle: "Calculadora da Razão Seno | Triângulo Retângulo sin(A)",
+      metaDescription: "Use esta calculadora da razão seno para encontrar sin(A) em um triângulo retângulo usando o cateto oposto a e a hipotenusa c com fórmula, passos e exemplos.",
+      intro: [
+        "A razão seno é uma das primeiras razões trigonométricas que você aprende na geometria. Ela relaciona um ângulo específico em um triângulo retângulo a dois dos seus lados: o cateto oposto e a hipotenusa. Se você conhece essas duas medidas, esta calculadora fornece o sin(A) instantaneamente.",
+        "Esteja você resolvendo um problema de casa, verificando uma resposta de teste ou trabalhando em uma tarefa de medição do mundo real, esta ferramenta elimina a etapa de divisão manual. Insira seus valores e obtenha o resultado junto com a fórmula mostrada.",
+      ],
+      faqs: [
+        {
+          question: "Qual é a fórmula da cossecante em um triângulo retângulo?",
+          answer: "É csc(A) = c / a, onde c é a hipotenusa e a é o cateto oposto. A cossecante é a recíproca do seno."
+        },
+        {
+          question: "Como a cossecante se relaciona com o seno?",
+          answer: "csc(A) = 1 / sin(A). Se sin(A) = 0.6, então csc(A) = 1 / 0.6 ≈ 1.6667."
+        },
+        {
+          question: "Por que a cossecante é sempre maior que 1?",
+          answer: "Porque a hipotenusa é sempre mais longa que o cateto oposto em um triângulo retângulo. A fração c / a sempre excede 1."
+        },
+        {
+          question: "Quanto é csc(30°)?",
+          answer: "Em um triângulo 30-60-90, sin(30°) = 0.5, então csc(30°) = 1 / 0.5 = 2. A hipotenusa é exatamente o dobro do cateto oposto."
+        },
+        {
+          question: "Quando devo usar a cossecante em vez do seno?",
+          answer: "Use a cossecante quando uma fórmula a exigir diretamente, ou quando você quiser encontrar a hipotenusa a partir do cateto oposto: c = a × csc(A). Isso evita a etapa de divisão pelo seno. ---"
+        },
+      ]
+    },
+    "angle-from-sine-calculator": {
+      slug: "angle-from-sine-calculator",
+      h1: "Calculadora de Ângulo de Triângulo Retângulo a partir do Seno",
+      metaTitle: "Calculadora de Ângulo de Triângulo Retângulo a partir do Seno | Encontre A = arcsen(a / c)",
+      metaDescription: "Use esta calculadora de ângulo de triângulo retângulo a partir do seno para encontrar o ângulo A a partir do cateto oposto a e da hipotenusa c, com fórmula, etapas e exemplos.",
+      faqs: [
+        {
+          question: "O que a fórmula do arcoseno realmente faz?",
+          answer: "O arcoseno pega a razão entre dois lados e inverte a matemática para dizer o ângulo específico que criou essa razão."
+        },
+        {
+          question: "O que significa o resultado final?",
+          answer: "O resultado fornece a medida exata em graus do ângulo A. Isso diz a você o quão acentuadamente a hipotenusa se inclina em relação à base."
+        },
+        {
+          question: "Por que recebo um erro se meu cateto oposto for maior que minha hipotenusa?",
+          answer: "Em um triângulo retângulo, a hipotenusa deve ser sempre o lado mais longo. Se o lado a for maior que o lado c, o triângulo é fisicamente impossível de desenhar."
+        },
+        {
+          question: "Preciso saber o cateto adjacente para usar este método?",
+          answer: "Não, você só precisa do cateto oposto e da hipotenusa. O cateto adjacente é completamente ignorado aqui."
+        },
+        {
+          question: "Seno inverso é a mesma coisa que arcoseno?",
+          answer: "Sim, são dois nomes diferentes para a mesma operação matemática exata. Você pode ver escrito como sen⁻¹ em uma calculadora portátil."
+        },
+      ]
+    },
+    "angle-from-cosine-calculator": {
+      slug: "angle-from-cosine-calculator",
+      h1: "Calculadora de Ângulo de Triângulo Retângulo a partir do Cosseno",
+      metaTitle: "Calculadora de Ângulo de Triângulo Retângulo a partir do Cosseno | Encontre A = arccos(b / c)",
+      metaDescription: "Use esta calculadora de ângulo de triângulo retângulo a partir do cosseno para encontrar o ângulo A a partir do cateto adjacente b e da hipotenusa c, com fórmula, etapas e exemplos.",
+      faqs: [
+        {
+          question: "O que a fórmula A = arccos(b / c) realmente significa?",
+          answer: "Significa que você está pegando o comprimento do cateto adjacente, dividindo-o pela hipotenusa, e trabalhando de trás para frente a partir desse decimal para encontrar o ângulo original."
+        },
+        {
+          question: "O que o resultado em graus significa na vida real?",
+          answer: "O resultado é o ângulo real que você mediria com um transferidor. Ele define a inclinação exata ou declive onde o cateto adjacente encontra a hipotenusa."
+        },
+        {
+          question: "Por que estou recebendo um erro matemático?",
+          answer: "Você provavelmente inseriu um valor para b que é maior que c. O cateto adjacente nunca pode ser mais longo que a hipotenusa em um triângulo retângulo."
+        },
+        {
+          question: "Posso usar isso se não souber o cateto oposto?",
+          answer: "Absolutamente. Este cálculo é projetado especificamente para funcionar sem precisar do cateto oposto."
+        },
+        {
+          question: "O que acontece se o cateto adjacente for exatamente a metade da hipotenusa?",
+          answer: "Se b é exatamente a metade de c, sua razão é 0,5. O arccos de 0,5 é exatamente 60°, que é um triângulo especial muito comum."
+        },
+      ]
+    },
+    "angle-from-tangent-calculator": {
+      slug: "angle-from-tangent-calculator",
+      h1: "Calculadora de Ângulo de Triângulo Retângulo a partir da Tangente",
+      metaTitle: "Calculadora de Ângulo de Triângulo Retângulo a partir da Tangente | Encontre A = arctan(a / b)",
+      metaDescription: "Use esta calculadora de ângulo de triângulo retângulo a partir da tangente para encontrar o ângulo A a partir do cateto oposto a e do cateto adjacente b, com fórmula, etapas e exemplos.",
+      faqs: [
+        {
+          question: "Como a fórmula da arcotangente funciona?",
+          answer: "A fórmula da arcotangente pega a razão decimal bruta do seu cateto oposto dividido pelo seu cateto adjacente e a traduz de volta para um ângulo preciso em graus."
+        },
+        {
+          question: "O que o ângulo calculado significa?",
+          answer: "O resultado diz exatamente quão íngreme é o ângulo em graus. Um número maior significa uma inclinação mais íngreme, enquanto um número menor significa uma elevação mais suave."
+        },
+        {
+          question: "Importa qual cateto é a e qual é b?",
+          answer: "Sim, é fundamental. O lado a deve ser o cateto completamente oposto ao seu ângulo, e o lado b deve ser o cateto que o toca. Se você trocá-los, você encontrará o ângulo B."
+        },
+        {
+          question: "O cateto oposto pode ser maior que o cateto adjacente?",
+          answer: "Absolutamente. Se o cateto oposto for maior, o ângulo resultante será simplesmente maior que 45 graus."
+        },
+        {
+          question: "Por que não preciso da hipotenusa para isso?",
+          answer: "A razão da tangente é especificamente definida pelos dois lados perpendiculares a e b. A hipotenusa é fixada no lugar uma vez que esses lados são definidos, então você não precisa de sua medida."
+        },
+      ]
+    },
+  },
+  "bn": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/bn/sine-ratio-calculator/",
+      h1: "সাইন অনুপাত ক্যালকুলেটর",
+      metaTitle: "সাইন অনুপাত ক্যালকুলেটর | সমকোণী ত্রিভুজ sin(A)",
+      metaDescription: "বিপরীত বাহু a এবং অতিভুজ c ব্যবহার করে সমকোণী ত্রিভুজে sin(A) বের করতে সূত্র, ধাপ এবং উদাহরণ সহ এই সাইন অনুপাত ক্যালকুলেটরটি ব্যবহার করুন।",
+      intro: [
+        "সাইন অনুপাত হলো প্রথম ত্রিকোণমিতিক অনুপাতগুলোর একটি যা আপনি জ্যামিতিতে শিখেন। এটি একটি সমকোণী ত্রিভুজের একটি নির্দিষ্ট কোণকে তার দুটি বাহুর সাথে যুক্ত করে: বিপরীত ব",
+        "<truncated 68185 bytes>",
+        "পাত ক্যালকুলেটর",
+        "- সেক্যান্ট অনুপাত ক্যালকুলেটর",
+        "- কোট্যানজেন্ট অনুপাত ক্যালকুলেটর",
+      ],
+      faqs: [
+        {
+          question: "সমকোণী ত্রিভুজে কোসেক্যান্ট সূত্র কী?",
+          answer: "এটি হলো csc(A) = c / a, যেখানে c হলো অতিভুজ এবং a হলো বিপরীত বাহু। কোসেক্যান্ট হলো সাইনের বিপরীত।"
+        },
+        {
+          question: "কোসেক্যান্ট সাইনের সাথে কীভাবে সম্পর্কিত?",
+          answer: "csc(A) = 1 / sin(A)। যদি sin(A) = 0.6 হয়, তবে csc(A) = 1 / 0.6 ≈ 1.6667।"
+        },
+        {
+          question: "কোসেক্যান্ট কেন সর্বদা 1-এর চেয়ে বড় হয়?",
+          answer: "কারণ সমকোণী ত্রিভুজে অতিভুজ সর্বদা বিপরীত বাহুর চেয়ে দীর্ঘ হয়। c / a ভগ্নাংশটি সর্বদা 1 ছাড়িয়ে যায়।"
+        },
+        {
+          question: "csc(30°) কত?",
+          answer: "একটি 30-60-90 ত্রিভুজে, sin(30°) = 0.5, তাই csc(30°) = 1 / 0.5 = 2। অতিভুজ ঠিক বিপরীত বাহুর দ্বিগুণ।"
+        },
+        {
+          question: "সাইনের পরিবর্তে আমার কখন কোসেক্যান্ট ব্যবহার করা উচিত?",
+          answer: "যখন কোনো সূত্রে এটি সরাসরি প্রয়োজন হয় বা যখন আপনি বিপরীত বাহু থেকে অতিভুজ বের করতে চান তখন কোসেক্যান্ট ব্যবহার করুন: c = a × csc(A)। এটি সাইন দ্বারা ভাগ করার ধাপটি বাঁচায়। ---"
+        },
+      ]
+    },
+    "angle-from-sine-calculator": {
+      slug: "angle-from-sine-calculator",
+      h1: "সাইন থেকে সমকোণী ত্রিভুজের কোণ ক্যালকুলেটর",
+      metaTitle: "সাইন থেকে সমকোণী ত্রিভুজের কোণ ক্যালকুলেটর | খুঁজুন A = arcsin(a / c)",
+      metaDescription: "বিপরীত বাহু a এবং অতিভুজ c থেকে কোণ A নির্ণয় করতে এই সাইন থেকে সমকোণী ত্রিভুজের কোণ ক্যালকুলেটরটি ব্যবহার করুন, যার মধ্যে সূত্র, ধাপ এবং উদাহরণ রয়েছে।",
+      faqs: [
+        {
+          question: "আর্কসাইন (arcsin) সূত্রটি আসলে কী করে?",
+          answer: "আর্কসাইন দুটি বাহুর অনুপাত নেয় এবং সেই অনুপাতটি তৈরি করা নির্দিষ্ট কোণটি জানাতে গণিতকে বিপরীত করে।"
+        },
+        {
+          question: "চূড়ান্ত ফলাফলের অর্থ কী?",
+          answer: "ফলাফল আপনাকে কোণ A-এর সঠিক ডিগ্রি পরিমাপ দেয়। এটি আপনাকে বলে যে অতিভুজটি ভিত্তি থেকে কতটা তীক্ষ্ণভাবে কোণ তৈরি করে।"
+        },
+        {
+          question: "আমার বিপরীত বাহু অতিভুজের চেয়ে বড় হলে কেন আমি একটি ত্রুটি পাই?",
+          answer: "একটি সমকোণী ত্রিভুজে, অতিভুজ সর্বদা সবচেয়ে বড় বাহু হতে হবে। যদি বাহু a বাহু c এর চেয়ে বড় হয়, তবে ত্রিভুজটি শারীরিকভাবে আঁকা অসম্ভব।"
+        },
+        {
+          question: "এই পদ্ধতিটি ব্যবহার করতে আমার কি সন্নিহিত বাহু জানার দরকার আছে?",
+          answer: "না, আপনার কেবল বিপরীত বাহু এবং অতিভুজ প্রয়োজন। সন্নিহিত বাহুটি এখানে সম্পূর্ণভাবে উপেক্ষা করা হয়।"
+        },
+        {
+          question: "বিপরীত সাইন (inverse sine) এবং আর্কসাইন (arcsin) কি একই জিনিস?",
+          answer: "হ্যাঁ, এগুলো হলো একদম একই গাণিতিক অপারেশনের দুটি ভিন্ন নাম। আপনি এটি একটি হ্যান্ডহেল্ড ক্যালকুলেটরে sin⁻¹ হিসেবে লেখা দেখতে পারেন।"
+        },
+      ]
+    },
+    "angle-from-cosine-calculator": {
+      slug: "angle-from-cosine-calculator",
+      h1: "কোসাইন থেকে সমকোণী ত্রিভুজের কোণ ক্যালকুলেটর",
+      metaTitle: "কোসাইন থেকে সমকোণী ত্রিভুজের কোণ ক্যালকুলেটর | খুঁজুন A = arccos(b / c)",
+      metaDescription: "সন্নিহিত বাহু b এবং অতিভুজ c থেকে কোণ A নির্ণয় করতে এই কোসাইন থেকে সমকোণী ত্রিভুজের কোণ ক্যালকুলেটরটি ব্যবহার করুন, যার মধ্যে সূত্র, ধাপ এবং উদাহরণ রয়েছে।",
+      faqs: [
+        {
+          question: "A = arccos(b / c) সূত্রটির আসলে অর্থ কী?",
+          answer: "এর অর্থ হলো আপনি সন্নিহিত বাহুর দৈর্ঘ্য নিচ্ছেন, এটিকে অতিভুজ দিয়ে ভাগ করছেন এবং আসল কোণটি খুঁজে পেতে সেই দশমিক থেকে পিছনের দিকে কাজ করছেন।"
+        },
+        {
+          question: "বাস্তব জীবনে ডিগ্রি ফলাফলের অর্থ কী?",
+          answer: "ফলাফলটি হলো আসল কোণ যা আপনি একটি প্রটেক্টর (চাঁদা) দিয়ে পরিমাপ করবেন। এটি সেই সঠিক কাত বা ঢালকে সংজ্ঞায়িত করে যেখানে সন্নিহিত বাহু অতিভুজের সাথে মিলিত হয়।"
+        },
+        {
+          question: "কেন আমি একটি গাণিতিক ত্রুটি পাচ্ছি?",
+          answer: "আপনি সম্ভবত b এর জন্য এমন একটি মান লিখেছেন যা c এর চেয়ে বড়। একটি সমকোণী ত্রিভুজে সন্নিহিত বাহু কখনও অতিভুজের চেয়ে বড় হতে পারেলগ্ন।"
+        },
+        {
+          question: "আমি যদি বিপরীত বাহুটি না জানি তবে কি আমি এটি ব্যবহার করতে পারি?",
+          answer: "অবশ্যই। এই গণনাটি বিশেষভাবে বিপরীত বাহুর কোনো প্রয়োজন ছাড়াই কাজ করার জন্য ডিজাইন করা হয়েছে।"
+        },
+        {
+          question: "সন্নিহিত বাহুটি অতিভুজের ঠিক অর্ধেক হলে কী হয়?",
+          answer: "যদি b ঠিক c এর অর্ধেক হয়, তবে আপনার অনুপাত হলো ০.৫। ০.৫ এর arccos হলো ঠিক ৬০°, যা একটি খুব সাধারণ বিশেষ ত্রিভুজ।"
+        },
+      ]
+    },
+    "angle-from-tangent-calculator": {
+      slug: "angle-from-tangent-calculator",
+      h1: "ট্যানজেন্ট থেকে সমকোণী ত্রিভুজের কোণ ক্যালকুলেটর",
+      metaTitle: "ট্যানজেন্ট থেকে সমকোণী ত্রিভুজের কোণ ক্যালকুলেটর | খুঁজুন A = arctan(a / b)",
+      metaDescription: "বিপরীত বাহু a এবং সন্নিহিত বাহু b থেকে কোণ A নির্ণয় করতে এই ট্যানজেন্ট থেকে সমকোণী ত্রিভুজের কোণ ক্যালকুলেটরটি ব্যবহার করুন, যার মধ্যে সূত্র, ধাপ এবং উদাহরণ রয়েছে।",
+      faqs: [
+        {
+          question: "আর্কট্যান (arctan) সূত্রটি কীভাবে কাজ করে?",
+          answer: "আর্কট্যান সূত্রটি আপনার বিপরীত বাহুকে আপনার সন্নিহিত বাহু দিয়ে ভাগ করা কাঁচা দশমিক অনুপাতটি নেয় এবং এটিকে একটি সুনির্দিষ্ট ডিগ্রি কোণে অনুবাদ করে।"
+        },
+        {
+          question: "গণনা করা কোণের অর্থ কী?",
+          answer: "ফলাফল আপনাকে ডিগ্রিতে কোণটি ঠিক কতটা খাড়া তা বলে। একটি বৃহত্তর সংখ্যার অর্থ হলো খাড়া ঢাল, যেখানে একটি ছোট সংখ্যার অর্থ হলো মৃদু উত্থান।"
+        },
+        {
+          question: "কোন বাহুটি a এবং কোনটি b তা কি গুরুত্বপূর্ণ?",
+          answer: "হ্যাঁ, এটি অত্যন্ত গুরুত্বপূর্ণ। বাহু a অবশ্যই আপনার কোণের সম্পূর্ণ বিপরীত বাহু হতে হবে, এবং বাহু b অবশ্যই এটি স্পর্শ করা বাহু হতে হবে। আপনি যদি সেগুলোকে অদলবদল করেন, তবে আপনি তার পরিবর্তে কোণ B পাবেন।"
+        },
+        {
+          question: "বিপরীত বাহু কি সন্নিহিত বাহুর চেয়ে বড় হতে পারে?",
+          answer: "অবশ্যই। যদি বিপরীত বাহুটি বড় হয়, তবে ফলস্বরূপ কোণটি কেবল ৪৫ ডিগ্রির বেশি হবে।"
+        },
+        {
+          question: "এর জন্য আমার অতিভুজটির প্রয়োজন নেই কেন?",
+          answer: "ট্যানজেন্ট অনুপাতটি বিশেষভাবে দুটি লম্ব বাহু a এবং b দ্বারা সংজ্ঞায়িত করা হয়। একবার সেই বাহুগুলো সেট হয়ে গেলে অতিভুজটি তার জায়গায় লক হয়ে যায়, তাই আপনার এর পরিমাপের প্রয়োজন নেই।"
+        },
+      ]
+    },
+  },
+  "ja": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/ja/sine-ratio-calculator/",
+      h1: "サイン比計算機",
+      metaTitle: "サイン比計算機 | 直角三角形 sin(A)",
+      metaDescription: "このサイン比計算機を使用して、対辺 a と斜辺 c の長さから直角三角形の sin(A) を素早く正確に計算します。",
+      intro: [
+        "サイン比計算機は、直角三角形の対辺と斜辺の長さからサイン（正弦）の値を簡単に求めるための無料オンラインツールです。直角三角形における sin(A) は、角度 A の対辺の長さを斜辺の長さで割ることで計算されます。数値を入力するだけで、即座に結果と計算過程が表示されます。",
+      ],
+      faqs: [
+        {
+          question: "サイン比とは何ですか？",
+          answer: "サイン比（正弦）は、直角三角形において特定の角度に対する「対辺」と「斜辺」の長さの比率を表します。公式は sin(A) = a / c です。"
+        },
+        {
+          question: "サインの値は1より大きくなりますか？",
+          answer: "いいえ。直角三角形において斜辺は常に最も長い辺であるため、対辺を斜辺で割った値（サイン）は常に1以下になります。"
+        },
+        {
+          question: "sin(30°) の値はいくつですか？",
+          answer: "30度-60度-90度の直角三角形において、sin(30°) = 0.5 です。これは、対辺の長さが斜辺の長さのちょうど半分であることを意味します。"
+        },
+      ]
+    },
+    "cosine-ratio-calculator": {
+      slug: "cosine-ratio-calculator",
+      url: "/ja/cosine-ratio-calculator/",
+      faqs: [
+        {
+          question: "セカント比とは何ですか？",
+          answer: "セカント比は、直角三角形における「斜辺」と「隣辺」の比率です。公式は sec(A) = c / b です。"
+        },
+        {
+          question: "セカントの値が1より小さくなることはありますか？",
+          answer: "いいえ。斜辺は常に隣辺より長いため、セカントの値（c / b）は常に1より大きくなります。"
+        },
+        {
+          question: "コサインとセカントの関係は何ですか？",
+          answer: "セカントはコサインの逆数です（sec(A) = 1 / cos(A)）。"
+        },
+      ]
+    },
+    "cosecant-ratio-calculator": {
+      slug: "cosecant-ratio-calculator",
+      url: "/ja/cosecant-ratio-calculator/",
+      h1: "コセカント比計算機",
+      metaTitle: "コセカント比計算機 | 直角三角形 csc(A)",
+      metaDescription: "このコセカント比計算機を使用して、斜辺 c と対辺 a の長さから直角三角形の csc(A) を素早く正確に計算します。",
+      intro: [
+        "コセカント比計算機は、直角三角形の斜辺と対辺の長さからコセカント（余割）の値を計算するツールです。csc(A) はサインの逆数であり、斜辺を対辺で割ることで求められます。",
+      ],
+      faqs: [
+        {
+          question: "コセカント比とは何ですか？",
+          answer: "コセカント比は、直角三角形における「斜辺」と「対辺」の比率です。公式は csc(A) = c / a です。"
+        },
+        {
+          question: "サインとコセカントの関係は何ですか？",
+          answer: "コセカントはサインの逆数です（csc(A) = 1 / sin(A)）。例えば、sin(A) が 0.5 の場合、csc(A) は 2 になります。"
+        },
+        {
+          question: "いつコセカントを使用するべきですか？",
+          answer: "コセカントは数式で直接要求された場合や、対辺の長さから斜辺の長さを求める際（c = a × csc(A)）に役立ちます。これによりサインで割るステップを省略できます。 ---"
+        },
+      ]
+    },
+    "angle-from-sine-calculator": {
+      slug: "angle-from-sine-calculator",
+      h1: "直角三角形のサインから角度を求める計算機",
+      metaTitle: "直角三角形のサインから角度を求める計算機 | A = arcsin(a / c)を計算する",
+      metaDescription: "この直角三角形のサインから角度を求める計算機を使って、対辺aと斜辺cから角度Aを求める方法、公式、手順、例題を確認してください。",
+      faqs: [
+        {
+          question: "アークサインの公式は実際に何をするものですか？",
+          answer: "アークサインは2辺の比率から計算を逆行させ、その比率を生み出した特定の角度を教えてくれます。"
+        },
+        {
+          question: "最終的な結果は何を意味しますか？",
+          answer: "結果は角度Aの正確な度数測定値を提供します。これにより、底辺に対して斜辺がどれだけ急な角度で傾いているかがわかります。"
+        },
+        {
+          question: "対辺が斜辺より大きい場合にエラーになるのはなぜですか？",
+          answer: "直角三角形において、斜辺は常に最も長い辺でなければなりません。辺aが辺cより大きい場合、その三角形は物理的に描くことが不可能です。"
+        },
+        {
+          question: "この方法を使用するには隣辺を知る必要がありますか？",
+          answer: "いいえ、対辺と斜辺だけが必要です。この計算において隣辺は完全に無視されます。"
+        },
+        {
+          question: "逆正弦（インバースサイン）はアークサインと同じものですか？",
+          answer: "はい、全く同じ数学的操作に対する2つの異なる名前です。関数電卓ではsin⁻¹と表記されることもあります。"
+        },
+      ]
+    },
+    "angle-from-cosine-calculator": {
+      slug: "angle-from-cosine-calculator",
+      h1: "直角三角形のコサインから角度を求める計算機",
+      metaTitle: "直角三角形のコサインから角度を求める計算機 | A = arccos(b / c)を計算する",
+      metaDescription: "この直角三角形のコサインから角度を求める計算機を使って、隣辺bと斜辺cから角度Aを求める方法、公式、手順、例題を確認してください。",
+      faqs: [
+        {
+          question: "A = arccos(b / c) という公式は実際にはどういう意味ですか？",
+          answer: "これは、隣辺の長さを斜辺で割り、その小数から逆算して元の角度を求めることを意味します。"
+        },
+        {
+          question: "結果の度数は実際の生活で何を意味しますか？",
+          answer: "結果は分度器で測定する実際の角度です。隣辺が斜辺と交わる正確な傾きまたは傾斜を定義します。"
+        },
+        {
+          question: "数学エラーが出るのはなぜですか？",
+          answer: "cより大きいbの値を入力した可能性があります。直角三角形において、隣辺が斜辺より長くなることは決してありません。"
+        },
+        {
+          question: "対辺がわからなくても使えますか？",
+          answer: "もちろんです。この計算は対辺を全く必要とせずに機能するように特別に設計されています。"
+        },
+        {
+          question: "隣辺が斜辺のちょうど半分の場合はどうなりますか？",
+          answer: "bがcのちょうど半分の場合、比率は0.5になります。0.5のアークコサインはちょうど60度であり、これは非常に一般的な特別な三角形です。"
+        },
+      ]
+    },
+    "angle-from-tangent-calculator": {
+      slug: "angle-from-tangent-calculator",
+      h1: "直角三角形のタンジェントから角度を求める計算機",
+      metaTitle: "直角三角形のタンジェントから角度を求める計算機 | A = arctan(a / b)を計算する",
+      metaDescription: "この直角三角形のタンジェントから角度を求める計算機を使って、対辺aと隣辺bから角度Aを求める方法、公式、手順、例題を確認してください。",
+      faqs: [
+        {
+          question: "アークタンジェントの公式はどのように機能しますか？",
+          answer: "アークタンジェントの公式は、対辺を隣辺で割った生の小数の比率を、正確な角度の度数に変換します。"
+        },
+        {
+          question: "計算された角度は何を意味しますか？",
+          answer: "結果は、角度が何度でどれだけ急であるかを正確に示します。数値が大きいほど傾斜が急であり、数値が小さいほど緩やかな上昇を意味します。"
+        },
+        {
+          question: "どちらの辺がaでどちらがbかは重要ですか？",
+          answer: "はい、非常に重要です。辺aは求める角度の完全に反対側にある辺でなければならず、辺bはその角度に接する辺でなければなりません。これらを入れ替えると、代わりに角度Bが求められます。"
+        },
+        {
+          question: "対辺が隣辺より大きくなることはありますか？",
+          answer: "もちろんです。対辺が大きい場合、結果の角度は単に45度より大きくなります。"
+        },
+        {
+          question: "なぜこの計算に斜辺は必要ないのですか？",
+          answer: "タンジェント比は、2つの直交する辺aとbによって特別に定義されます。これらの辺が決まれば斜辺は自動的に固定されるため、その測定値は必要ありません。"
+        },
+      ]
+    },
+  },
+  "ko": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/ko/sine-ratio-calculator/",
+      h1: "사인 비 계산기",
+      metaTitle: "사인 비 계산기 | 직각 삼각형 sin(A)",
+      metaDescription: "이 사인 비 계산기를 사용하여 대변 a와 빗변 c의 길이를 통해 직각 삼각형의 sin(A)를 빠르고 정확하게 계산합니다.",
+      intro: [
+        "사인 비 계산기는 직각 삼각형의 대변과 빗변의 길이에서 사인(sine) 값을 쉽게 구할 수 있는 무료 온라인 도구입니다. 직각 삼각형에서 sin(A)는 각 A의 대변 길이를 빗변 길이로 나누어 계산됩니다. 수치를 입력하기만 하면 즉시 결과와 계산 과정이 표시됩니다.",
+      ],
+      faqs: [
+        {
+          question: "사인 비란 무엇입니까?",
+          answer: "사인 비(sine)는 직각 삼각형에서 특정 각에 대한 '대변'과 '빗변' 길이의 비율을 나타냅니다. 공식은 sin(A) = a / c 입니다."
+        },
+        {
+          question: "사인 값이 1보다 클 수 있습니까?",
+          answer: "아니요. 직각 삼각형에서 빗변은 항상 가장 긴 변이므로, 대변을 빗변으로 나눈 값(사인)은 항상 1 이하가 됩니다."
+        },
+        {
+          question: "sin(30°)의 값은 얼마입니까?",
+          answer: "30도-60도-90도의 직각 삼각형에서 sin(30°) = 0.5 입니다. 이는 대변의 길이가 빗변 길이의 정확히 절반임을 의미합니다."
+        },
+      ]
+    },
+    "cosine-ratio-calculator": {
+      slug: "cosine-ratio-calculator",
+      url: "/ko/cosine-ratio-calculator/",
+      faqs: [
+        {
+          question: "시컨트 비란 무엇입니까?",
+          answer: "시컨트 비는 직각 삼각형에서 '빗변'과 '밑변'의 비율입니다. 공식은 sec(A) = c / b 입니다."
+        },
+        {
+          question: "시컨트 값이 1보다 작아질 수 있습니까?",
+          answer: "아니요. 빗변은 항상 밑변보다 길기 때문에 시컨트 값(c / b)은 항상 1보다 큽니다."
+        },
+        {
+          question: "코사인과 시컨트의 관계는 무엇입니까?",
+          answer: "시컨트는 코사인의 역수입니다 (sec(A) = 1 / cos(A))."
+        },
+      ]
+    },
+    "cosecant-ratio-calculator": {
+      slug: "cosecant-ratio-calculator",
+      url: "/ko/cosecant-ratio-calculator/",
+      h1: "코시컨트 비 계산기",
+      metaTitle: "코시컨트 비 계산기 | 직각 삼각형 csc(A)",
+      metaDescription: "이 코시컨트 비 계산기를 사용하여 빗변 c와 대변 a의 길이를 통해 직각 삼각형의 csc(A)를 빠르고 정확하게 계산합니다.",
+      intro: [
+        "코시컨트 비 계산기는 직각 삼각형의 빗변과 대변의 길이에서 코시컨트(cosecant) 값을 계산하는 도구입니다. csc(A)는 사인의 역수이며, 빗변을 대변으로 나누어 구해집니다.",
+      ],
+      faqs: [
+        {
+          question: "코시컨트 비란 무엇입니까?",
+          answer: "코시컨트 비는 직각 삼각형에서 '빗변'과 '대변'의 비율입니다. 공식은 csc(A) = c / a 입니다."
+        },
+        {
+          question: "사인과 코시컨트의 관계는 무엇입니까?",
+          answer: "코시컨트는 사인의 역수입니다 (csc(A) = 1 / sin(A)). 예를 들어, sin(A)가 0.5일 경우 csc(A)는 2가 됩니다."
+        },
+        {
+          question: "언제 코시컨트를 사용해야 합니까?",
+          answer: "코시컨트는 수식에서 직접 요구될 때나, 대변의 길이에서 빗변의 길이를 구할 때(c = a × csc(A)) 유용합니다. 이를 통해 사인으로 나누는 단계를 생략할 수 있습니다. ---"
+        },
+      ]
+    },
+    "angle-from-sine-calculator": {
+      slug: "angle-from-sine-calculator",
+      h1: "직각 삼각형 사인 값으로 각도 구하기 계산기",
+      metaTitle: "직각 삼각형 사인 값으로 각도 구하기 계산기 | A = arcsin(a / c) 구하기",
+      metaDescription: "이 직각 삼각형 계산기를 사용하여 대변 a와 빗변 c에서 공식, 단계 및 예제를 통해 각도 A를 구해보세요.",
+      faqs: [
+        {
+          question: "아크사인 공식은 실제로 어떤 역할을 하나요?",
+          answer: "아크사인은 두 변의 비율을 취하고 역산하여 해당 비율을 만든 특정 각도를 알려줍니다."
+        },
+        {
+          question: "최종 결과는 무엇을 의미하나요?",
+          answer: "결과는 각도 A의 정확한 각도 측정값을 제공합니다. 이는 빗변이 밑변에서 얼마나 급격하게 꺾이는지 알려줍니다."
+        },
+        {
+          question: "대변이 빗변보다 크면 오류가 발생하는 이유는 무엇인가요?",
+          answer: "직각 삼각형에서 빗변은 항상 가장 긴 변이어야 합니다. 변 a가 변 c보다 크면, 해당 삼각형은 물리적으로 그리는 것이 불가능합니다."
+        },
+        {
+          question: "이 방법을 사용하려면 인접변을 알아야 하나요?",
+          answer: "아니요, 대변과 빗변만 있으면 됩니다. 인접변은 여기에서 완전히 무시됩니다."
+        },
+        {
+          question: "역사인은 아크사인과 같은 것인가요?",
+          answer: "네, 두 용어는 정확히 동일한 수학 연산을 나타내는 다른 이름입니다. 휴대용 계산기에서는 sin⁻¹로 표기된 것을 볼 수 있습니다."
+        },
+      ]
+    },
+    "angle-from-cosine-calculator": {
+      slug: "angle-from-cosine-calculator",
+      h1: "직각 삼각형 코사인 값으로 각도 구하기 계산기",
+      metaTitle: "직각 삼각형 코사인 값으로 각도 구하기 계산기 | A = arccos(b / c) 구하기",
+      metaDescription: "이 직각 삼각형 계산기를 사용하여 인접변 b와 빗변 c에서 공식, 단계 및 예제를 통해 각도 A를 구해보세요.",
+      faqs: [
+        {
+          question: "A = arccos(b / c) 공식은 실제로 무엇을 의미하나요?",
+          answer: "인접변의 길이를 취하여 빗변으로 나누고, 그 소수값에서 역산하여 원래의 각도를 찾는 것을 의미합니다."
+        },
+        {
+          question: "실제 생활에서 각도 결과는 무엇을 의미하나요?",
+          answer: "결과는 각도기로 측정할 실제 각도입니다. 이는 인접변이 빗변과 만나는 정확한 기울기나 경사를 정의합니다."
+        },
+        {
+          question: "왜 수학 오류가 발생하나요?",
+          answer: "c보다 큰 b 값을 입력했을 가능성이 높습니다. 직각 삼각형에서 인접변은 빗변보다 길 수 없습니다."
+        },
+        {
+          question: "대변을 몰라도 이것을 사용할 수 있나요?",
+          answer: "물론입니다. 이 계산은 대변이 전혀 필요 없이 작동하도록 특별히 설계되었습니다."
+        },
+        {
+          question: "인접변이 빗변의 정확히 절반이면 어떻게 되나요?",
+          answer: "b가 c의 정확히 절반이면 비율은 0.5입니다. 0.5의 아크코사인은 정확히 60°이며, 이는 매우 흔한 특수 삼각형입니다."
+        },
+      ]
+    },
+    "angle-from-tangent-calculator": {
+      slug: "angle-from-tangent-calculator",
+      h1: "직각 삼각형 탄젠트 값으로 각도 구하기 계산기",
+      metaTitle: "직각 삼각형 탄젠트 값으로 각도 구하기 계산기 | A = arctan(a / b) 구하기",
+      metaDescription: "이 직각 삼각형 계산기를 사용하여 대변 a와 인접변 b에서 공식, 단계 및 예제를 통해 각도 A를 구해보세요.",
+      faqs: [
+        {
+          question: "아크탄젠트 공식은 어떻게 작동하나요?",
+          answer: "아크탄젠트 공식은 대변을 인접변으로 나눈 원시 소수 비율을 취하여 정확한 각도로 다시 변환합니다."
+        },
+        {
+          question: "계산된 각도는 무엇을 의미하나요?",
+          answer: "결과는 각도가 도 단위로 얼마나 가파른지를 정확히 알려줍니다. 숫자가 클수록 더 가파른 경사를 의미하며, 작을수록 완만한 상승을 의미합니다."
+        },
+        {
+          question: "어느 변이 a이고 어느 변이 b인지 중요한가요?",
+          answer: "네, 매우 중요합니다. 변 a는 각도의 완전한 대변이어야 하고, 변 b는 각도와 맞닿아 있는 변이어야 합니다. 이 두 변을 바꾸면 각도 A 대신 각도 B를 구하게 됩니다."
+        },
+        {
+          question: "대변이 인접변보다 클 수 있나요?",
+          answer: "물론입니다. 대변이 더 크면 결과 각도는 단순히 45도보다 커지게 됩니다."
+        },
+        {
+          question: "이 계산을 위해 빗변이 필요 없는 이유는 무엇인가요?",
+          answer: "탄젠트 비율은 두 수직 변 a와 b에 의해 특별히 정의됩니다. 이 두 변이 설정되면 빗변의 위치는 고정되므로 그 길이를 잴 필요가 없습니다."
+        },
+      ]
+    },
+  },
+  "ms": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/ms/sine-ratio-calculator/",
+      h1: "Kalkulator Nisbah Sinus",
+      metaTitle: "Kalkulator Nisbah Sinus | sin(A) Segi Tiga Bersudut Tegak",
+      metaDescription: "Gunakan kalkulator nisbah sinus ini untuk mencari sin(A) dalam segi tiga bersudut tegak menggunakan sisi bertentangan a dan hipotenus c dengan cepat dan tepat.",
+      intro: [
+        "Kalkulator nisbah sinus ialah alat dalam talian percuma untuk mencari nilai sinus dengan mudah daripada panjang sisi bertentangan dan hipotenus sebuah segi tiga bersudut tegak. Dalam segi tiga bersudut tegak, sin(A) dikira dengan membahagikan panjang sisi bertentangan sudut A dengan panjang hipotenus. Hanya masukkan nilai dan lihat hasil serta jalan pengiraannya dengan segera.",
+      ],
+      faqs: [
+        {
+          question: "Apakah itu nisbah sinus?",
+          answer: "Nisbah sinus ialah nisbah panjang \"sisi bertentangan\" kepada \"hipotenus\" untuk sudut tertentu dalam segi tiga bersudut tegak. Formulanya ialah sin(A) = a / c."
+        },
+        {
+          question: "Bolehkah nilai sinus lebih besar daripada 1?",
+          answer: "Tidak. Memandangkan hipotenus sentiasa merupakan sisi terpanjang dalam segi tiga bersudut tegak, nilai sisi bertentangan dibahagikan dengan hipotenus (sinus) sentiasa 1 atau kurang."
+        },
+        {
+          question: "Apakah nilai sin(30°)?",
+          answer: "Dalam segi tiga bersudut tegak 30-60-90, sin(30°) = 0.5. Ini bermakna panjang sisi bertentangan adalah tepat separuh daripada panjang hipotenus."
+        },
+      ]
+    },
+    "cosine-ratio-calculator": {
+      slug: "cosine-ratio-calculator",
+      url: "/ms/cosine-ratio-calculator/",
+      faqs: [
+        {
+          question: "Apakah itu nisbah sekan?",
+          answer: "Nisbah sekan ialah nisbah \"hipotenus\" kepada \"sisi bersebelahan\" dalam segi tiga bersudut tegak. Formulanya ialah sec(A) = c / b."
+        },
+        {
+          question: "Bolehkah nilai sekan kurang daripada 1?",
+          answer: "Tidak. Oleh kerana hipotenus sentiasa lebih panjang daripada sisi bersebelahan, nilai sekan (c / b) sentiasa lebih besar daripada 1."
+        },
+        {
+          question: "Apakah kaitan antara kosinus dan sekan?",
+          answer: "Sekan ialah salingan kepada kosinus (sec(A) = 1 / cos(A))."
+        },
+      ]
+    },
+    "cosecant-ratio-calculator": {
+      slug: "cosecant-ratio-calculator",
+      url: "/ms/cosecant-ratio-calculator/",
+      h1: "Kalkulator Nisbah Kosekan",
+      metaTitle: "Kalkulator Nisbah Kosekan | csc(A) Segi Tiga Bersudut Tegak",
+      metaDescription: "Gunakan kalkulator nisbah kosekan ini untuk mencari csc(A) dalam segi tiga bersudut tegak menggunakan hipotenus c dan sisi bertentangan a dengan cepat dan tepat.",
+      intro: [
+        "Kalkulator nisbah kosekan ialah alat untuk mengira nilai kosekan daripada panjang hipotenus dan sisi bertentangan segi tiga bersudut tegak. csc(A) adalah salingan kepada sinus, dan dicari dengan membahagikan hipotenus dengan sisi bertentangan.",
+      ],
+      faqs: [
+        {
+          question: "Apakah itu nisbah kosekan?",
+          answer: "Nisbah kosekan ialah nisbah \"hipotenus\" kepada \"sisi bertentangan\" dalam segi tiga bersudut tegak. Formulanya ialah csc(A) = c / a."
+        },
+        {
+          question: "Apakah kaitan antara sinus dan kosekan?",
+          answer: "Kosekan ialah salingan kepada sinus (csc(A) = 1 / sin(A)). Sebagai contoh, jika sin(A) ialah 0.5, maka csc(A) ialah 2."
+        },
+        {
+          question: "Bilakah kosekan patut digunakan?",
+          answer: "Kosekan berguna apabila ia diperlukan secara langsung dalam formula, atau apabila anda ingin mencari panjang hipotenus daripada panjang sisi bertentangan (c = a × csc(A)). Ini membolehkan anda melangkau langkah pembahagian dengan sinus. ---"
+        },
+      ]
+    },
+    "angle-from-sine-calculator": {
+      slug: "angle-from-sine-calculator",
+      h1: "Kalkulator Sudut Segi Tiga Bersudut Tegak Daripada Sinus",
+      metaTitle: "Kalkulator Sudut Segi Tiga Bersudut Tegak Daripada Sinus | Cari A = arcsin(a / c)",
+      metaDescription: "Gunakan kalkulator sudut segi tiga bersudut tegak daripada sinus ini untuk mencari sudut A daripada sisi bertentangan a dan hipotenus c dengan formula, langkah dan contoh.",
+      faqs: [
+        {
+          question: "Apa yang formula arcsin sebenarnya lakukan?",
+          answer: "Arcsin mengambil nisbah dua sisi dan menterbalikkan matematik untuk memberitahu anda sudut tertentu yang menghasilkan nisbah tersebut."
+        },
+        {
+          question: "Apakah maksud hasil akhir?",
+          answer: "Hasilnya memberikan anda ukuran darjah tepat untuk sudut A. Ini memberitahu anda betapa tajamnya sudut hipotenus dari tapak."
+        },
+        {
+          question: "Mengapakah saya mendapat ralat jika sisi bertentangan saya lebih besar daripada hipotenus saya?",
+          answer: "Dalam segi tiga bersudut tegak, hipotenus mestilah sentiasa menjadi sisi terpanjang. Jika sisi a lebih besar daripada sisi c, segi tiga itu secara fizikal mustahil untuk dilukis."
+        },
+        {
+          question: "Adakah saya perlu mengetahui sisi bersebelahan untuk menggunakan kaedah ini?",
+          answer: "Tidak, anda hanya perlukan sisi bertentangan dan hipotenus. Sisi bersebelahan diabaikan sepenuhnya di sini."
+        },
+        {
+          question: "Adakah sinus songsang perkara yang sama dengan arcsin?",
+          answer: "Ya, ia adalah dua nama berbeza untuk operasi matematik yang sama. Anda mungkin melihat ia ditulis sebagai sin⁻¹ pada kalkulator tangan."
+        },
+      ]
+    },
+    "angle-from-cosine-calculator": {
+      slug: "angle-from-cosine-calculator",
+      h1: "Kalkulator Sudut Segi Tiga Bersudut Tegak Daripada Kosinus",
+      metaTitle: "Kalkulator Sudut Segi Tiga Bersudut Tegak Daripada Kosinus | Cari A = arccos(b / c)",
+      metaDescription: "Gunakan kalkulator sudut segi tiga bersudut tegak daripada kosinus ini untuk mencari sudut A daripada sisi bersebelahan b dan hipotenus c dengan formula, langkah dan contoh.",
+      faqs: [
+        {
+          question: "Apakah maksud sebenar formula A = arccos(b / c)?",
+          answer: "Ini bermakna anda mengambil panjang sisi bersebelahan, membahagikannya dengan hipotenus, dan mengira ke belakang dari perpuluhan tersebut untuk mencari sudut asal."
+        },
+        {
+          question: "Apakah maksud hasil darjah dalam kehidupan sebenar?",
+          answer: "Hasilnya ialah sudut sebenar yang akan anda ukur dengan protraktor. Ia mentakrifkan kecondongan atau kecerunan tepat di mana sisi bersebelahan bertemu hipotenus."
+        },
+        {
+          question: "Mengapa saya mendapat ralat matematik?",
+          answer: "Anda mungkin memasukkan nilai untuk b yang lebih besar daripada c. Sisi bersebelahan tidak boleh lebih panjang daripada hipotenus dalam segi tiga bersudut tegak."
+        },
+        {
+          question: "Bolehkah saya menggunakan ini jika saya tidak mengetahui sisi bertentangan?",
+          answer: "Boleh. Pengiraan ini direka khusus untuk berfungsi tanpa memerlukan sisi bertentangan sama sekali."
+        },
+        {
+          question: "Apakah yang berlaku jika sisi bersebelahan adalah tepat separuh daripada hipotenus?",
+          answer: "Jika b adalah tepat separuh daripada c, nisbah anda ialah 0.5. Arccos bagi 0.5 adalah tepat 60°, yang merupakan segi tiga istimewa yang sangat biasa."
+        },
+      ]
+    },
+    "angle-from-tangent-calculator": {
+      slug: "angle-from-tangent-calculator",
+      h1: "Kalkulator Sudut Segi Tiga Bersudut Tegak Daripada Tangen",
+      metaTitle: "Kalkulator Sudut Segi Tiga Bersudut Tegak Daripada Tangen | Cari A = arctan(a / b)",
+      metaDescription: "Gunakan kalkulator sudut segi tiga bersudut tegak daripada tangen ini untuk mencari sudut A daripada sisi bertentangan a dan sisi bersebelahan b dengan formula, langkah dan contoh.",
+      faqs: [
+        {
+          question: "Bagaimanakah formula arctan berfungsi?",
+          answer: "Formula arctan mengambil nisbah perpuluhan mentah untuk sisi bertentangan anda dibahagikan dengan sisi bersebelahan anda dan menterjemahkannya semula menjadi sudut darjah yang tepat."
+        },
+        {
+          question: "Apakah maksud sudut yang dikira?",
+          answer: "Hasilnya memberitahu anda dengan tepat betapa curam sudut itu dalam darjah. Nombor yang lebih besar bermakna kecerunan yang lebih curam, manakala nombor yang lebih kecil bermakna kenaikan yang lebih landai."
+        },
+        {
+          question: "Adakah penting kaki mana yang merupakan a dan yang mana b?",
+          answer: "Ya, ia adalah sangat penting. Sisi a mestilah kaki yang bertentangan sepenuhnya dengan sudut anda, dan sisi b mestilah kaki yang menyentuhnya. Jika anda menukarnya, anda akan menjumpai sudut B sebagai ganti."
+        },
+        {
+          question: "Bolehkah sisi bertentangan lebih besar daripada sisi bersebelahan?",
+          answer: "Boleh. Jika sisi bertentangan lebih besar, sudut yang terhasil akan menjadi lebih besar daripada 45 darjah."
+        },
+        {
+          question: "Mengapa saya tidak perlukan hipotenus untuk ini?",
+          answer: "Nisbah tangen ditakrifkan secara khusus oleh dua sisi serenjang a dan b. Hipotenus dikunci di tempatnya sebaik sahaja sisi tersebut ditetapkan, jadi anda tidak memerlukan ukurannya."
+        },
+      ]
+    },
+  },
+  "pl": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/pl/sine-ratio-calculator/",
+      h1: "Kalkulator Sinusa",
+      metaTitle: "Kalkulator Sinusa | sin(A) w Trójkącie Prostokątnym",
+      metaDescription: "Użyj tego kalkulatora sinusa, aby szybko i dokładnie obliczyć sin(A) w trójkącie prostokątnym, używając przyprostokątnej przeciwległej a i przeciwprostokątnej c.",
+      intro: [
+        "Kalkulator sinusa to bezpłatne narzędzie online do łatwego obliczania wartości sinusa na podstawie długości przyprostokątnej przeciwległej i przeciwprostokątnej w trójkącie prostokątnym. W trójkącie prostokątnym sin(A) oblicza się, dzieląc długość przyprostokątnej przeciwległej do kąta A przez długość przeciwprostokątnej. Po prostu wprowadź wartości, a natychmiast zobaczysz wynik i procedurę obliczeniową.",
+      ],
+      faqs: [
+        {
+          question: "Czym jest stosunek sinusa?",
+          answer: "Sinus to stosunek długości \"przyprostokątnej przeciwległej\" do \"przeciwprostokątnej\" dla danego kąta w trójkącie prostokątnym. Wzór to sin(A) = a / c."
+        },
+        {
+          question: "Czy wartość sinusa może być większa niż 1?",
+          answer: "Nie. Ponieważ przeciwprostokątna jest zawsze najdłuższym bokiem w trójkącie prostokątnym, wartość przyprostokątnej podzielonej przez przeciwprostokątną (sinus) zawsze będzie wynosić 1 lub mniej."
+        },
+        {
+          question: "Ile wynosi sin(30°)?",
+          answer: "Secans to stosunek \"przeciwprostokątnej\" do \"przyprostokątnej przyległej\" w trójkącie prostokątnym. Wzór to sec(A) = c / b."
+        },
+        {
+          question: "Czy wartość secansa może być mniejsza niż 1?",
+          answer: "Nie. Ponieważ przeciwprostokątna jest zawsze dłuższa od przyprostokątnej przyległej, wartość secansa (c / b) zawsze jest większa niż 1."
+        },
+        {
+          question: "Jaki jest związek między cosinusem i secansem?",
+          answer: "Secans jest odwrotnością cosinusa (sec(A) = 1 / cos(A))."
+        },
+      ]
+    },
+    "cosecant-ratio-calculator": {
+      slug: "cosecant-ratio-calculator",
+      url: "/pl/cosecant-ratio-calculator/",
+      h1: "Kalkulator Cosecansa",
+      metaTitle: "Kalkulator Cosecansa | csc(A) w Trójkącie Prostokątnym",
+      metaDescription: "Użyj tego kalkulatora cosecansa, aby szybko i dokładnie obliczyć csc(A) w trójkącie prostokątnym, używając przeciwprostokątnej c i przyprostokątnej przeciwległej a.",
+      intro: [
+        "Kalkulator cosecansa służy do obliczania wartości cosecansa na podstawie długości przeciwprostokątnej i przyprostokątnej przeciwległej w trójkącie prostokątnym. csc(A) jest odwrotnością sinusa i wyznacza się go, dzieląc przeciwprostokątną przez przyprostokątną przeciwległą.",
+      ],
+      faqs: [
+        {
+          question: "Czym jest stosunek cosecansa?",
+          answer: "Cosecans to stosunek \"przeciwprostokątnej\" do \"przyprostokątnej przeciwległej\" w trójkącie prostokątnym. Wzór to csc(A) = c / a."
+        },
+        {
+          question: "Jaki jest związek między sinusem i cosecansem?",
+          answer: "Cosecans jest odwrotnością sinusa (csc(A) = 1 / sin(A)). Na przykład, jeśli sin(A) wynosi 0.5, to csc(A) wynosi 2."
+        },
+        {
+          question: "Kiedy należy używać cosecansa?",
+          answer: "Cosecans przydaje się, gdy wzór wymaga go bezpośrednio, lub gdy chcesz znaleźć długość przeciwprostokątnej mając daną przyprostokątną przeciwległą (c = a × csc(A)). Pozwala to uniknąć etapu dzielenia przez sinus. ---"
+        },
+      ]
+    },
+    "angle-from-sine-calculator": {
+      slug: "angle-from-sine-calculator",
+      h1: "Kalkulator kąta w trójkącie prostokątnym z sinusa",
+      metaTitle: "Kalkulator kąta w trójkącie prostokątnym z sinusa | Oblicz A = arcsin(a / c)",
+      metaDescription: "Użyj tego kalkulatora kąta w trójkącie prostokątnym z sinusa, aby znaleźć kąt A z przyprostokątnej przeciwległej a i przeciwprostokątnej c ze wzorem, krokami i przykładami.",
+      faqs: [
+        {
+          question: "Co właściwie robi wzór na arcsin?",
+          answer: "Arcsin przyjmuje stosunek dwóch boków i odwraca matematykę, aby podać konkretny kąt, który stworzył ten stosunek."
+        },
+        {
+          question: "Co oznacza wynik końcowy?",
+          answer: "Wynik podaje dokładną miarę kąta A w stopniach. Mówi to, jak ostro przeciwprostokątna odchyla się od podstawy."
+        },
+        {
+          question: "Dlaczego pojawia się błąd, jeśli moja przyprostokątna przeciwległa jest większa niż przeciwprostokątna?",
+          answer: "W trójkącie prostokątnym przeciwprostokątna musi być zawsze najdłuższym bokiem. Jeśli bok a jest większy niż bok c, narysowanie trójkąta jest fizycznie niemożliwe."
+        },
+        {
+          question: "Czy muszę znać przyprostokątną przyległą, aby użyć tej metody?",
+          answer: "Nie, potrzebujesz tylko przyprostokątnej przeciwległej i przeciwprostokątnej. Przyprostokątna przyległa jest tu całkowicie pomijana."
+        },
+        {
+          question: "Czy funkcja odwrotna do sinusa to to samo co arcsin?",
+          answer: "Tak, są to dwie różne nazwy tej samej operacji matematycznej. Na kalkulatorze ręcznym możesz zobaczyć zapis sin⁻¹."
+        },
+      ]
+    },
+    "angle-from-cosine-calculator": {
+      slug: "angle-from-cosine-calculator",
+      h1: "Kalkulator kąta w trójkącie prostokątnym z cosinusa",
+      metaTitle: "Kalkulator kąta w trójkącie prostokątnym z cosinusa | Oblicz A = arccos(b / c)",
+      metaDescription: "Użyj tego kalkulatora kąta w trójkącie prostokątnym z cosinusa, aby znaleźć kąt A z przyprostokątnej przyległej b i przeciwprostokątnej c ze wzorem, krokami i przykładami.",
+      faqs: [
+        {
+          question: "Co właściwie oznacza wzór A = arccos(b / c)?",
+          answer: "Oznacza to, że bierzesz długość przyprostokątnej przyległej, dzielisz ją przez przeciwprostokątną i pracujesz wstecz od tego ułamka dziesiętnego, aby znaleźć oryginalny kąt."
+        },
+        {
+          question: "Co oznacza wynik w stopniach w prawdziwym życiu?",
+          answer: "Wynik to rzeczywisty kąt, który zmierzyłbyś kątomierzem. Określa dokładne nachylenie lub spadek w miejscu, gdzie przyprostokątna przyległa spotyka się z przeciwprostokątną."
+        },
+        {
+          question: "Dlaczego otrzymuję błąd matematyczny?",
+          answer: "Prawdopodobnie wprowadzono wartość b, która jest większa niż c. Przyprostokątna przyległa nigdy nie może być dłuższa od przeciwprostokątnej w trójkącie prostokątnym."
+        },
+        {
+          question: "Czy mogę z tego skorzystać, jeśli nie znam przyprostokątnej przeciwległej?",
+          answer: "Oczywiście. To obliczenie jest zaprojektowane specjalnie tak, aby działać bez konieczności znajomości przyprostokątnej przeciwległej."
+        },
+        {
+          question: "Co się stanie, jeśli przyprostokątna przyległa jest dokładnie połową przeciwprostokątnej?",
+          answer: "Jeśli b jest dokładnie połową c, stosunek wynosi 0,5. Arccos 0,5 to dokładnie 60°, co jest bardzo powszechnym trójkątem specjalnym."
+        },
+      ]
+    },
+    "angle-from-tangent-calculator": {
+      slug: "angle-from-tangent-calculator",
+      h1: "Kalkulator kąta w trójkącie prostokątnym z tangensa",
+      metaTitle: "Kalkulator kąta w trójkącie prostokątnym z tangensa | Oblicz A = arctan(a / b)",
+      metaDescription: "Użyj tego kalkulatora kąta w trójkącie prostokątnym z tangensa, aby znaleźć kąt A z przyprostokątnej przeciwległej a i przyprostokątnej przyległej b ze wzorem, krokami i przykładami.",
+      faqs: [
+        {
+          question: "Jak działa wzór na arctan?",
+          answer: "Wzór arctan przyjmuje surowy stosunek dziesiętny przyprostokątnej przeciwległej podzielonej przez przyprostokątną przyległą i tłumaczy go z powrotem na precyzyjny kąt w stopniach."
+        },
+        {
+          question: "Co oznacza obliczony kąt?",
+          answer: "Wynik dokładnie określa, jak stromy jest kąt w stopniach. Większa liczba oznacza bardziej strome nachylenie, podczas gdy mniejsza liczba oznacza łagodniejszy wznios."
+        },
+        {
+          question: "Czy ma znaczenie, która przyprostokątna to a, a która to b?",
+          answer: "Tak, to kluczowe. Bok a musi być przyprostokątną całkowicie przeciwległą do twojego kąta, a bok b musi być przyprostokątną, która go dotyka. Jeśli je zamienisz, znajdziesz zamiast tego kąt B."
+        },
+        {
+          question: "Czy przyprostokątna przeciwległa może być większa niż przyprostokątna przyległa?",
+          answer: "Oczywiście. Jeśli przyprostokątna przeciwległa jest większa, otrzymany kąt będzie po prostu większy niż 45 stopni."
+        },
+        {
+          question: "Dlaczego nie potrzebuję do tego przeciwprostokątnej?",
+          answer: "Stosunek tangensa jest specjalnie zdefiniowany przez dwa prostopadłe boki a i b. Przeciwprostokątna jest zablokowana na swoim miejscu po ustawieniu tych boków, więc nie potrzebujesz jej pomiaru."
+        },
+      ]
+    },
+  },
+  "id": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/id/sine-ratio-calculator/",
+      h1: "Kalkulator Rasio Sinus",
+      metaTitle: "Kalkulator Rasio Sinus | sin(A) Segitiga Siku-Siku",
+      metaDescription: "Gunakan kalkulator rasio sinus ini untuk menemukan sin(A) dalam segitiga siku-siku menggunakan sisi depan a dan sisi miring c dengan cepat dan akurat.",
+      intro: [
+        "Kalkulator rasio sinus adalah alat online gratis untuk dengan mudah menghitung nilai sinus dari panjang sisi depan dan sisi miring segitiga siku-siku. Dalam segitiga siku-siku, sin(A) dihitung dengan membagi panjang sisi depan sudut A dengan panjang sisi miring. Cukup masukkan nilai dan lihat hasil serta proses perhitungannya secara instan.",
+      ],
+      faqs: [
+        {
+          question: "Apa itu rasio sinus?",
+          answer: "Rasio sinus adalah perbandingan panjang \"sisi depan\" dengan \"sisi miring\" untuk sudut tertentu dalam segitiga siku-siku. Rumusnya adalah sin(A) = a / c."
+        },
+        {
+          question: "Bisakah nilai sinus lebih besar dari 1?",
+          answer: "Tidak. Karena sisi miring selalu merupakan sisi terpanjang dalam segitiga siku-siku, nilai sisi depan dibagi dengan sisi miring (sinus) selalu 1 atau kurang dari 1."
+        },
+        {
+          question: "Berapa nilai sin(30°)?",
+          answer: "Dalam segitiga siku-siku 30-60-90, sin(30°) = 0.5. Ini berarti panjang sisi depan tepat setengah dari panjang sisi miring."
+        },
+      ]
+    },
+    "cosine-ratio-calculator": {
+      slug: "cosine-ratio-calculator",
+      url: "/id/cosine-ratio-calculator/",
+      faqs: [
+        {
+          question: "Apa itu rasio sekan?",
+          answer: "Rasio sekan adalah perbandingan \"sisi miring\" dengan \"sisi samping\" dalam segitiga siku-siku. Rumusnya adalah sec(A) = c / b."
+        },
+        {
+          question: "Bisakah nilai sekan kurang dari 1?",
+          answer: "Tidak. Karena sisi miring selalu lebih panjang dari sisi samping, nilai sekan (c / b) selalu lebih besar dari 1."
+        },
+        {
+          question: "Apa hubungan antara kosinus dan sekan?",
+          answer: "Sekan adalah kebalikan dari kosinus (sec(A) = 1 / cos(A))."
+        },
+      ]
+    },
+    "cosecant-ratio-calculator": {
+      slug: "cosecant-ratio-calculator",
+      url: "/id/cosecant-ratio-calculator/",
+      h1: "Kalkulator Rasio Kosekan",
+      metaTitle: "Kalkulator Rasio Kosekan | csc(A) Segitiga Siku-Siku",
+      metaDescription: "Gunakan kalkulator rasio kosekan ini untuk menemukan csc(A) dalam segitiga siku-siku menggunakan sisi miring c dan sisi depan a dengan cepat dan akurat.",
+      intro: [
+        "Kalkulator rasio kosekan adalah alat untuk menghitung nilai kosekan dari panjang sisi miring dan sisi depan segitiga siku-siku. csc(A) adalah kebalikan dari sinus, dan dicari dengan membagi sisi miring dengan sisi depan.",
+      ],
+      faqs: [
+        {
+          question: "Apa itu rasio kosekan?",
+          answer: "Rasio kosekan adalah perbandingan \"sisi miring\" dengan \"sisi depan\" dalam segitiga siku-siku. Rumusnya adalah csc(A) = c / a."
+        },
+        {
+          question: "Apa hubungan antara sinus dan kosekan?",
+          answer: "Kosekan adalah kebalikan dari sinus (csc(A) = 1 / sin(A)). Sebagai contoh, jika sin(A) adalah 0.5, maka csc(A) adalah 2."
+        },
+        {
+          question: "Kapan sebaiknya kosekan digunakan?",
+          answer: "Kosekan berguna ketika langsung dibutuhkan dalam suatu rumus, atau ketika Anda ingin mencari panjang sisi miring dari panjang sisi depan (c = a × csc(A)). Ini memungkinkan Anda untuk melewati langkah pembagian dengan sinus. ---"
+        },
+      ]
+    },
+    "angle-from-sine-calculator": {
+      slug: "angle-from-sine-calculator",
+      h1: "Kalkulator Sudut Segitiga Siku-Siku dari Sinus",
+      metaTitle: "Kalkulator Sudut Segitiga Siku-Siku dari Sinus | Temukan A = arcsin(a / c)",
+      metaDescription: "Gunakan kalkulator sudut segitiga siku-siku dari sinus ini untuk menemukan sudut A dari sisi depan a dan sisi miring c dengan rumus, langkah-langkah, dan contoh.",
+      faqs: [
+        {
+          question: "Apa yang sebenarnya dilakukan oleh rumus arcsin?",
+          answer: "Arcsin mengambil rasio dua sisi dan membalikkan matematika untuk memberi tahu Anda sudut spesifik yang menciptakan rasio tersebut."
+        },
+        {
+          question: "Apa arti dari hasil akhirnya?",
+          answer: "Hasilnya memberi Anda ukuran derajat yang tepat dari sudut A. Ini memberi tahu Anda seberapa tajam sisi miring menjauh dari alas."
+        },
+        {
+          question: "Mengapa saya mendapatkan kesalahan jika sisi depan saya lebih besar dari sisi miring saya?",
+          answer: "Dalam segitiga siku-siku, sisi miring harus selalu menjadi sisi yang paling panjang. Jika sisi a lebih besar dari sisi c, segitiga tersebut secara fisik tidak mungkin digambar."
+        },
+        {
+          question: "Apakah saya perlu mengetahui sisi samping untuk menggunakan metode ini?",
+          answer: "Tidak, Anda hanya membutuhkan sisi depan dan sisi miring. Sisi samping sepenuhnya diabaikan di sini."
+        },
+        {
+          question: "Apakah invers sinus sama dengan arcsin?",
+          answer: "Ya, itu adalah dua nama berbeda untuk operasi matematika yang persis sama. Anda mungkin melihatnya ditulis sebagai sin⁻¹ di kalkulator genggam."
+        },
+      ]
+    },
+    "angle-from-cosine-calculator": {
+      slug: "angle-from-cosine-calculator",
+      h1: "Kalkulator Sudut Segitiga Siku-Siku dari Cosinus",
+      metaTitle: "Kalkulator Sudut Segitiga Siku-Siku dari Cosinus | Temukan A = arccos(b / c)",
+      metaDescription: "Gunakan kalkulator sudut segitiga siku-siku dari cosinus ini untuk menemukan sudut A dari sisi samping b dan sisi miring c dengan rumus, langkah-langkah, dan contoh.",
+      faqs: [
+        {
+          question: "Apa arti sebenarnya dari rumus A = arccos(b / c)?",
+          answer: "Itu berarti Anda mengambil panjang sisi samping, membaginya dengan sisi miring, dan bekerja mundur dari desimal tersebut untuk menemukan sudut aslinya."
+        },
+        {
+          question: "Apa arti hasil derajat di kehidupan nyata?",
+          answer: "Hasilnya adalah sudut sebenarnya yang akan Anda ukur dengan busur derajat. Ini menentukan kemiringan atau lereng yang tepat di mana sisi samping bertemu dengan sisi miring."
+        },
+        {
+          question: "Mengapa saya mendapatkan kesalahan matematika?",
+          answer: "Anda mungkin memasukkan nilai untuk b yang lebih besar dari c. Sisi samping tidak akan pernah bisa lebih panjang dari sisi miring dalam segitiga siku-siku."
+        },
+        {
+          question: "Bisakah saya menggunakan ini jika saya tidak mengetahui sisi depan?",
+          answer: "Tentu saja. Perhitungan ini dirancang khusus untuk bekerja tanpa perlu mengetahui sisi depan sama sekali."
+        },
+        {
+          question: "Apa yang terjadi jika sisi samping persis setengah dari sisi miring?",
+          answer: "Jika b persis setengah dari c, rasio Anda adalah 0,5. Arccos dari 0,5 tepatnya adalah 60°, yang merupakan segitiga istimewa yang sangat umum."
+        },
+      ]
+    },
+    "angle-from-tangent-calculator": {
+      slug: "angle-from-tangent-calculator",
+      h1: "Kalkulator Sudut Segitiga Siku-Siku dari Tangen",
+      metaTitle: "Kalkulator Sudut Segitiga Siku-Siku dari Tangen | Temukan A = arctan(a / b)",
+      metaDescription: "Gunakan kalkulator sudut segitiga siku-siku dari tangen ini untuk menemukan sudut A dari sisi depan a dan sisi samping b dengan rumus, langkah-langkah, dan contoh.",
+      faqs: [
+        {
+          question: "Bagaimana cara kerja rumus arctan?",
+          answer: "Rumus arctan mengambil rasio desimal mentah dari sisi depan Anda dibagi dengan sisi samping Anda dan menerjemahkannya kembali menjadi sudut derajat yang tepat."
+        },
+        {
+          question: "Apa arti sudut yang dihitung?",
+          answer: "Hasilnya memberi tahu Anda seberapa curam sudut tersebut dalam derajat. Angka yang lebih besar berarti lereng yang lebih curam, sementara angka yang lebih kecil berarti kenaikan yang lebih landai."
+        },
+        {
+          question: "Apakah penting kaki mana yang a dan mana yang b?",
+          answer: "Ya, itu sangat penting. Sisi a haruslah kaki yang sepenuhnya berlawanan dengan sudut Anda, dan sisi b haruslah kaki yang menyentuhnya. Jika Anda menukarnya, Anda akan menemukan sudut B sebagai gantinya."
+        },
+        {
+          question: "Bolehkah sisi depan lebih besar dari sisi samping?",
+          answer: "Tentu saja. Jika sisi depan lebih besar, sudut yang dihasilkan akan lebih dari 45 derajat."
+        },
+        {
+          question: "Mengapa saya tidak membutuhkan sisi miring untuk ini?",
+          answer: "Rasio tangen secara khusus didefinisikan oleh dua sisi tegak lurus a dan b. Sisi miring terkunci pada tempatnya setelah sisi-sisi tersebut ditetapkan, jadi Anda tidak memerlukan ukurannya."
+        },
+      ]
+    },
+  },
+  "ar": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/ar/sine-ratio-calculator/",
+      h1: "حاسبة نسبة الجيب",
+      metaTitle: "حاسبة نسبة الجيب | sin(A) مثلث قائم الزاوية",
+      metaDescription: "استخدم حاسبة نسبة الجيب هذه لإيجاد sin(A) في مثلث قائم الزاوية باستخدام الضلع المقابل a والوتر c بسرعة ودقة.",
+      intro: [
+        "حاسبة نسبة الجيب هي أداة مجانية عبر الإنترنت لحساب قيمة الجيب (Sine) بسهولة من طول الضلع المقابل والوتر في مثلث قائم الزاوية. في المثلث قائم الزاوية، يتم حساب sin(A) بقسمة طول الضلع المقابل للزاوية A على طول الوتر. ببساطة أدخل القيم وشاهد النتيجة وخطوات الحساب على الفور.",
+      ],
+      faqs: [
+        {
+          question: "ما هي نسبة الجيب؟",
+          answer: "نسبة الجيب هي نسبة طول \"الضلع المقابل\" إلى \"الوتر\" لزاوية معينة في مثلث قائم الزاوية. الصيغة هي sin(A) = a / c."
+        },
+        {
+          question: "هل يمكن أن تكون قيمة الجيب أكبر من 1؟",
+          answer: "القاطع هو مقلوب جيب التمام (sec(A) = 1 / cos(A))."
+        },
+      ]
+    },
+    "cosecant-ratio-calculator": {
+      slug: "cosecant-ratio-calculator",
+      url: "/ar/cosecant-ratio-calculator/",
+      h1: "حاسبة نسبة قاطع التمام",
+      metaTitle: "حاسبة نسبة قاطع التمام | csc(A) مثلث قائم الزاوية",
+      metaDescription: "استخدم حاسبة نسبة قاطع التمام هذه لإيجاد csc(A) في مثلث قائم الزاوية باستخدام الوتر c والضلع المقابل a بسرعة ودقة.",
+      intro: [
+        "حاسبة نسبة قاطع التمام هي أداة لحساب قيمة قاطع التمام (Cosecant) من طول الوتر والضلع المقابل في مثلث قائم الزاوية. إن csc(A) هو مقلوب الجيب، ويتم حسابه بقسمة الوتر على الضلع المقابل.",
+      ],
+      faqs: [
+        {
+          question: "ما هي نسبة قاطع التمام؟",
+          answer: "نسبة قاطع التمام هي نسبة \"الوتر\" إلى \"الضلع المقابل\" في مثلث قائم الزاوية. الصيغة هي csc(A) = c / a."
+        },
+        {
+          question: "ما هي العلاقة بين الجيب وقاطع التمام؟",
+          answer: "قاطع التمام هو مقلوب الجيب (csc(A) = 1 / sin(A)). على سبيل المثال، إذا كان sin(A) يساوي 0.5، فإن csc(A) يساوي 2."
+        },
+        {
+          question: "متى يجب استخدام قاطع التمام؟",
+          answer: "يكون قاطع التمام مفيداً عندما يكون مطلوباً بشكل مباشر في المعادلة، أو عندما تريد إيجاد طول الوتر من طول الضلع المقابل (c = a × csc(A)). هذا يسمح لك بتخطي خطوة القسمة على الجيب. ---"
+        },
+      ]
+    },
+    "angle-from-sine-calculator": {
+      slug: "angle-from-sine-calculator",
+      h1: "حاسبة زاوية المثلث القائم من الجيب",
+      metaTitle: "حاسبة زاوية المثلث القائم من الجيب | إيجاد A = arcsin(a / c)",
+      metaDescription: "استخدم حاسبة زاوية المثلث القائم من الجيب هذه لإيجاد الزاوية A من الضلع المقابل a والوتر c مع الصيغة والخطوات والأمثلة.",
+      faqs: [
+        {
+          question: "ما الذي تفعله صيغة arcsin في الواقع؟",
+          answer: "تأخذ صيغة arcsin نسبة ضلعين وتعكس العملية الحسابية لتخبرك بالزاوية المحددة التي أوجدت هذه النسبة."
+        },
+        {
+          question: "ماذا تعني النتيجة النهائية؟",
+          answer: "تعطيك النتيجة القياس الدقيق للزاوية A بالدرجات. هذا يخبرك بمدى حدة انحراف الوتر عن القاعدة."
+        },
+        {
+          question: "لماذا أحصل على خطأ إذا كان الضلع المقابل أكبر من الوتر؟",
+          answer: "في المثلث القائم الزاوية، يجب أن يكون الوتر دائماً أطول ضلع. إذا كان الضلع a أكبر من الضلع c، فمن المستحيل رسم المثلث من الناحية المادية."
+        },
+        {
+          question: "هل أحتاج إلى معرفة الضلع المجاور لاستخدام هذه الطريقة؟",
+          answer: "لا، تحتاج فقط إلى الضلع المقابل والوتر. يتم تجاهل الضلع المجاور تماماً هنا."
+        },
+        {
+          question: "هل الجيب العكسي هو نفسه arcsin؟",
+          answer: "نعم، هما اسمان مختلفان لنفس العملية الرياضية بالضبط. قد تراها مكتوبة كـ sin⁻¹ على الآلة الحاسبة اليدوية."
+        },
+      ]
+    },
+    "angle-from-cosine-calculator": {
+      slug: "angle-from-cosine-calculator",
+      h1: "حاسبة زاوية المثلث القائم من جيب التمام",
+      metaTitle: "حاسبة زاوية المثلث القائم من جيب التمام | إيجاد A = arccos(b / c)",
+      metaDescription: "استخدم حاسبة زاوية المثلث القائم من جيب التمام هذه لإيجاد الزاوية A من الضلع المجاور b والوتر c مع الصيغة والخطوات والأمثلة.",
+      faqs: [
+        {
+          question: "ماذا تعني الصيغة A = arccos(b / c) في الواقع؟",
+          answer: "يعني ذلك أنك تأخذ طول الضلع المجاور، وتقسمه على الوتر، وتعمل بشكل عكسي من هذا الرقم العشري لإيجاد الزاوية الأصلية."
+        },
+        {
+          question: "ماذا تعني النتيجة بالدرجات في الحياة الواقعية؟",
+          answer: "النتيجة هي الزاوية الفعلية التي ستقيسها بالمنقلة. إنها تحدد الميل أو الانحدار الدقيق حيث يلتقي الضلع المجاور بالوتر."
+        },
+        {
+          question: "لماذا أحصل على خطأ حسابي؟",
+          answer: "من المحتمل أنك أدخلت قيمة لـ b أكبر من c. لا يمكن أبداً أن يكون الضلع المجاور أطول من الوتر في المثلث القائم الزاوية."
+        },
+        {
+          question: "هل يمكنني استخدام هذا إذا كنت لا أعرف الضلع المقابل؟",
+          answer: "بالتأكيد. تم تصميم هذا الحساب خصيصاً للعمل دون الحاجة إلى الضلع المقابل على الإطلاق."
+        },
+        {
+          question: "ماذا يحدث إذا كان الضلع المجاور يمثل نصف الوتر بالضبط؟",
+          answer: "إذا كان b نصف c تماماً، فإن النسبة تكون 0.5. قيمة arccos لـ 0.5 هي بالضبط 60 درجة، وهو مثلث خاص شائع جداً."
+        },
+      ]
+    },
+    "angle-from-tangent-calculator": {
+      slug: "angle-from-tangent-calculator",
+      h1: "حاسبة زاوية المثلث القائم من الظل",
+      metaTitle: "حاسبة زاوية المثلث القائم من الظل | إيجاد A = arctan(a / b)",
+      metaDescription: "استخدم حاسبة زاوية المثلث القائم من الظل هذه لإيجاد الزاوية A من الضلع المقابل a والضلع المجاور b مع الصيغة والخطوات والأمثلة.",
+      faqs: [
+        {
+          question: "كيف تعمل صيغة arctan؟",
+          answer: "تأخذ صيغة arctan النسبة العشرية للضلع المقابل مقسوماً على الضلع المجاور وتترجمها مرة أخرى إلى زاوية دقيقة بالدرجات."
+        },
+        {
+          question: "ماذا تعني الزاوية المحسوبة؟",
+          answer: "تخبرك النتيجة بمدى انحدار الزاوية بالدرجات بالضبط. الرقم الأكبر يعني انحداراً أشد، بينما الرقم الأصغر يعني ارتفاعاً أكثر تدرجاً."
+        },
+        {
+          question: "هل يهم أي ساق هي a وأيها b؟",
+          answer: "نعم، هذا بالغ الأهمية. يجب أن يكون الضلع a هو الساق المقابلة تماماً لزاويتك، ويجب أن يكون الضلع b هو الساق الملامسة لها. إذا قمت بتبديلهما، فستجد الزاوية B بدلاً من ذلك."
+        },
+        {
+          question: "هل يمكن أن يكون الضلع المقابل أكبر من الضلع المجاور؟",
+          answer: "بالتأكيد. إذا كان الضلع المقابل أكبر، فستكون الزاوية الناتجة ببساطة أكبر من 45 درجة."
+        },
+        {
+          question: "لماذا لا أحتاج إلى الوتر لهذا؟",
+          answer: "يتم تعريف نسبة الظل تحديداً بواسطة الضلعين المتعامدين a و b. يتم تثبيت الوتر في مكانه بمجرد تحديد هذين الضلعين، لذلك لا تحتاج إلى قياسه."
+        },
+      ]
+    },
+  },
+  "bg": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/bg/sine-ratio-calculator/",
+      h1: "Калкулатор за косеканс",
+      metaTitle: "Калкулатор за косеканс | csc(A) на Правоъгълен Триъгълник",
+      metaDescription: "Използвайте този калкулатор за косеканс, за да намерите бързо и точно csc(A) в правоъгълен триъгълник, използвайки хипотенузата c и срещулежащия катет a.",
+      intro: [
+        "Калкулаторът за синус е безплатен онлайн инструмент за лесно изчисляване на стойността на синуса (sine) от дължината на срещулежащия катет и хипотенузата в правоъгълен триъгълник. В правоъгълния триъгълник sin(A) се изчислява чрез разделяне на дължината на срещулежащия катет на ъгъл A на дължината на хипотенузата. Просто въведете стойностите и веднага ще видите резултата и стъпките на изчисление.",
+        "Калкулаторът за косеканс е инструмент за изчисляване на стойността на косеканса (cosecant) от дължината на хипотенузата и срещулежащия катет на правоъгълен триъгълник. csc(A) е реципрочната стойност на синуса и се намира чрез разделяне на хипотенузата на срещулежащия катет.",
+      ],
+      faqs: [
+        {
+          question: "Какво е косеканс?",
+          answer: "Косекансът е отношението на \"хипотенузата\" към \"срещулежащия катет\" в правоъгълен триъгълник. Формулата е csc(A) = c / a."
+        },
+        {
+          question: "Каква е връзката между синус и косеканс?",
+          answer: "Косекансът е реципрочната стойност на синуса (csc(A) = 1 / sin(A)). Например, ако sin(A) е 0.5, тогава csc(A) е 2."
+        },
+        {
+          question: "Кога трябва да се използва косеканс?",
+          answer: "Косекансът е полезен, когато се изисква директно във формула, или когато искате да намерите дължината на хипотенузата от дължината на срещулежащия катет (c = a × csc(A)). Това ви позволява да пропуснете стъпката на разделяне на синус. ---"
+        },
+      ]
+    },
+    "angle-from-sine-calculator": {
+      slug: "angle-from-sine-calculator",
+      h1: "Калкулатор за ъгъл на правоъгълен триъгълник от синус",
+      metaTitle: "Калкулатор за ъгъл на правоъгълен триъгълник от синус | Намери A = arcsin(a / c)",
+      metaDescription: "Използвайте този калкулатор за ъгъл на правоъгълен триъгълник от синус, за да намерите ъгъл А от срещулежащия катет a и хипотенузата c с формула, стъпки и примери.",
+      faqs: [
+        {
+          question: "Какво всъщност прави формулата за аркуссинус?",
+          answer: "Аркуссинусът взема отношението на две страни и обръща математиката, за да ви каже специфичния ъгъл, който е създал това отношение."
+        },
+        {
+          question: "Какво означава крайният резултат?",
+          answer: "Резултатът ви дава точната мярка в градуси на ъгъл А. Това ви показва колко остро хипотенузата се отклонява от основата."
+        },
+        {
+          question: "Защо получавам грешка, ако срещулежащият катет е по-голям от хипотенузата?",
+          answer: "В правоъгълен триъгълник хипотенузата винаги трябва да бъде най-дългата страна. Ако страната a е по-голяма от страната c, триъгълникът е физически невъзможно да се начертае."
+        },
+        {
+          question: "Трябва ли да знам прилежащия катет, за да използвам този метод?",
+          answer: "Не, имате нужда само от срещулежащия катет и хипотенузата. Прилежащият катет тук се игнорира напълно."
+        },
+        {
+          question: "Дали обратният синус е същото като аркуссинус?",
+          answer: "Да, това са две различни имена за абсолютно същата математическа операция. Може да го видите изписано като sin⁻¹ на ръчен калкулатор."
+        },
+      ]
+    },
+    "angle-from-cosine-calculator": {
+      slug: "angle-from-cosine-calculator",
+      h1: "Калкулатор за ъгъл на правоъгълен триъгълник от косинус",
+      metaTitle: "Калкулатор за ъгъл на правоъгълен триъгълник от косинус | Намери A = arccos(b / c)",
+      metaDescription: "Използвайте този калкулатор за ъгъл на правоъгълен триъгълник от косинус, за да намерите ъгъл А от прилежащия катет b и хипотенузата c с формула, стъпки и примери.",
+      faqs: [
+        {
+          question: "Какво всъщност означава формулата A = arccos(b / c)?",
+          answer: "Означава, че вземате дължината на прилежащия катет, разделяте я на хипотенузата и работите в обратна посока от тази десетична дроб, за да намерите първоначалния ъгъл."
+        },
+        {
+          question: "Какво означава резултатът в градуси в реалния живот?",
+          answer: "Резултатът е действителният ъгъл, който бихте измерили с транспортир. Той определя точния наклон, където прилежащият катет се среща с хипотенузата."
+        },
+        {
+          question: "Защо получавам математическа грешка?",
+          answer: "Вероятно сте въвели стойност за b, която е по-голяма от c. Прилежащият катет никога не може да бъде по-дълъг от хипотенузата в правоъгълен триъгълник."
+        },
+        {
+          question: "Мога ли да използвам това, ако не знам срещулежащия катет?",
+          answer: "Абсолютно. Това изчисление е създадено специално да работи без изобщо да е необходим срещулежащият катет."
+        },
+        {
+          question: "Какво се случва, ако прилежащият катет е точно половината от хипотенузата?",
+          answer: "Ако b е точно половината от c, вашето отношение е 0,5. Аркускосинусът на 0,5 е точно 60°, което е много често срещан специален триъгълник."
+        },
+      ]
+    },
+    "angle-from-tangent-calculator": {
+      slug: "angle-from-tangent-calculator",
+      h1: "Калкулатор за ъгъл на правоъгълен триъгълник от тангенс",
+      metaTitle: "Калкулатор за ъгъл на правоъгълен триъгълник от тангенс | Намери A = arctan(a / b)",
+      metaDescription: "Използвайте този калкулатор за ъгъл на правоъгълен триъгълник от тангенс, за да намерите ъгъл А от срещулежащия катет a и прилежащия катет b с формула, стъпки и примери.",
+      faqs: [
+        {
+          question: "Как работи формулата за аркустангенс?",
+          answer: "Формулата за аркустангенс взема суровото десетично отношение на вашия срещулежащ катет, разделен на вашия прилежащ катет, и го превежда обратно в точен ъгъл в градуси."
+        },
+        {
+          question: "Какво означава изчисленият ъгъл?",
+          answer: "Резултатът ви казва точно колко стръмен е ъгълът в градуси. По-голямо число означава по-стръмен наклон, докато по-малко число означава по-полегато издигане."
+        },
+        {
+          question: "Има ли значение кой катет е a и кой е b?",
+          answer: "Да, това е критично. Страната a трябва да бъде катетът, който е напълно срещу вашия ъгъл, а страната b трябва да бъде катетът, който го докосва. Ако ги размените, вместо това ще намерите ъгъл B."
+        },
+        {
+          question: "Може ли срещулежащият катет да бъде по-голям от прилежащия катет?",
+          answer: "Абсолютно. Ако срещулежащият катет е по-голям, полученият ъгъл просто ще бъде по-голям от 45 градуса."
+        },
+        {
+          question: "Защо не ми е необходима хипотенузата за това?",
+          answer: "Отношението на тангенса се определя специфично от двете перпендикулярни страни a и b. Хипотенузата е фиксирана на място, след като тези страни са зададени, така че нямате нужда от нейното измерване."
+        },
+      ]
+    },
+  },
+  "tr": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/tr/sine-ratio-calculator/",
+      h1: "Sinüs Oranı Hesaplayıcı",
+      metaTitle: "Sinüs Oranı Hesaplayıcı | Dik Üçgen sin(A)",
+      metaDescription: "Karşı dik kenar a ve hipotenüs c'yi kullanarak dik üçgendeki sin(A) değerini hızlı ve doğru bir şekilde bulmak için bu sinüs oranı hesaplayıcısını kullanın.",
+      intro: [
+        "Sinüs oranı hesaplayıcı, bir dik üçgenin karşı dik kenar ve hipotenüs uzunluğundan sinüs değerini kolayca bulmak için kullanılan ücretsiz bir çevrimiçi araçtır. Dik üçgende sin(A), A açısının karşı dik kenar uzunluğunun hipotenüs uzunluğuna bölünmesiyle hesaplanır. Değerleri girin ve sonucu, hesaplama adımlarıyla birlikte anında görün.",
+      ],
+      faqs: [
+        {
+          question: "Sinüs oranı nedir?",
+          answer: "Sinüs oranı, bir dik üçgende belirli bir açı için \"karşı dik kenarın\" \"hipotenüse\" oranıdır. Formülü sin(A) = a / c'dir."
+        },
+        {
+          question: "Sinüs değeri 1'den büyük olabilir mi?",
+          answer: "Hayır. Hipotenüs dik üçgendeki en uzun kenar olduğu için, karşı dik kenarın hipotenüse bölümü (sinüs) her zaman 1 veya daha küçüktür."
+        },
+        {
+          question: "sin(30°) değeri kaçtır?",
+          answer: "30-60-90 dik üçgeninde, sin(30°) = 0.5'tir. Bu, karşı dik kenarın uzunluğunun hipotenüs uzunluğunun tam olarak yarısı olduğu anlamına gelir."
+        },
+      ]
+    },
+    "cosine-ratio-calculator": {
+      slug: "cosine-ratio-calculator",
+      url: "/tr/cosine-ratio-calculator/",
+      faqs: [
+        {
+          question: "Sekant oranı nedir?",
+          answer: "Sekant oranı, bir dik üçgende \"hipotenüsün\" \"komşu dik kenara\" oranıdır. Formülü sec(A) = c / b'dir."
+        },
+        {
+          question: "Sekant değeri 1'den küçük olabilir mi?",
+          answer: "Hayır. Hipotenüs her zaman komşu dik kenardan daha uzun olduğu için sekant değeri (c / b) her zaman 1'den büyüktür."
+        },
+        {
+          question: "Kosinüs ve sekant arasındaki ilişki nedir?",
+          answer: "Sekant, kosinüsün çarpmaya göre tersidir (sec(A) = 1 / cos(A))."
+        },
+      ]
+    },
+    "cosecant-ratio-calculator": {
+      slug: "cosecant-ratio-calculator",
+      url: "/tr/cosecant-ratio-calculator/",
+      h1: "Kosekant Oranı Hesaplayıcı",
+      metaTitle: "Kosekant Oranı Hesaplayıcı | Dik Üçgen csc(A)",
+      metaDescription: "Hipotenüs c ve karşı dik kenar a'yı kullanarak dik üçgendeki csc(A) değerini hızlı ve doğru bir şekilde bulmak için bu kosekant oranı hesaplayıcısını kullanın.",
+      intro: [
+        "Kosekant oranı hesaplayıcı, bir dik üçgenin hipotenüs ve karşı dik kenar uzunluğundan kosekant değerini hesaplamak için kullanılan bir araçtır. csc(A), sinüsün çarpmaya göre tersidir ve hipotenüsün karşı dik kenara bölünmesiyle bulunur.",
+      ],
+      faqs: [
+        {
+          question: "Kosekant oranı nedir?",
+          answer: "Kosekant oranı, bir dik üçgende \"hipotenüsün\" \"karşı dik kenara\" oranıdır. Formülü csc(A) = c / a'dır."
+        },
+        {
+          question: "Sinüs ve kosekant arasındaki ilişki nedir?",
+          answer: "Kosekant, sinüsün çarpmaya göre tersidir (csc(A) = 1 / sin(A)). Örneğin, sin(A) değeri 0.5 ise, csc(A) değeri 2 olur."
+        },
+        {
+          question: "Kosekant ne zaman kullanılmalıdır?",
+          answer: "Kosekant, bir formülde doğrudan gerektiğinde veya karşı dik kenarın uzunluğundan hipotenüsün uzunluğunu bulmak istediğinizde kullanışlıdır (c = a × csc(A)). Bu, sinüse bölme adımını atlamanıza olanak tanır. ---"
+        },
+      ]
+    },
+    "angle-from-sine-calculator": {
+      slug: "angle-from-sine-calculator",
+      h1: "Sinüsten Dik Üçgen Açısı Hesaplayıcı",
+      metaTitle: "Sinüsten Dik Üçgen Açısı Hesaplayıcı | A = arcsin(a / c) Bulun",
+      metaDescription: "Formül, adımlar ve örneklerle karşı kenar a ve hipotenüs c'den A açısını bulmak için bu sinüsten dik üçgen açısı hesaplayıcısını kullanın.",
+      faqs: [
+        {
+          question: "Arcsin formülü aslında ne yapar?",
+          answer: "Arcsin, iki kenarın oranını alır ve o oranı oluşturan belirli açıyı size söylemek için matematiği tersine çevirir."
+        },
+        {
+          question: "Nihai sonuç ne anlama geliyor?",
+          answer: "Sonuç size A açısının kesin derece ölçümünü verir. Bu, hipotenüsün tabandan ne kadar keskin bir şekilde açıldığını söyler."
+        },
+        {
+          question: "Karşı kenarım hipotenüsümden büyükse neden bir hata alıyorum?",
+          answer: "Bir dik üçgende, hipotenüs her zaman en uzun kenar olmalıdır. Eğer a kenarı c kenarından daha büyükse, üçgeni fiziksel olarak çizmek imkansızdır."
+        },
+        {
+          question: "Bu yöntemi kullanmak için komşu kenarı bilmem gerekiyor mu?",
+          answer: "Hayır, sadece karşı kenara ve hipotenüse ihtiyacınız var. Komşu kenar burada tamamen göz ardı edilir."
+        },
+        {
+          question: "Ters sinüs arcsin ile aynı şey mi?",
+          answer: "Evet, bunlar tamamen aynı matematiksel işlem için iki farklı isimdir. Bir el hesap makinesinde sin⁻¹ olarak yazıldığını görebilirsiniz."
+        },
+      ]
+    },
+    "angle-from-cosine-calculator": {
+      slug: "angle-from-cosine-calculator",
+      h1: "Kosinüsten Dik Üçgen Açısı Hesaplayıcı",
+      metaTitle: "Kosinüsten Dik Üçgen Açısı Hesaplayıcı | A = arccos(b / c) Bulun",
+      metaDescription: "Formül, adımlar ve örneklerle komşu kenar b ve hipotenüs c'den A açısını bulmak için bu kosinüsten dik üçgen açısı hesaplayıcısını kullanın.",
+      faqs: [
+        {
+          question: "A = arccos(b / c) formülü aslında ne anlama geliyor?",
+          answer: "Bu, komşu kenarın uzunluğunu alıp hipotenüse böldüğünüz ve orijinal açıyı bulmak için o ondalık sayıdan geriye doğru çalıştığınız anlamına gelir."
+        },
+        {
+          question: "Derece sonucu gerçek hayatta ne anlama geliyor?",
+          answer: "Sonuç, bir açıölçer ile ölçeceğiniz gerçek açıdır. Komşu kenarın hipotenüsle buluştuğu yerdeki tam eğimi tanımlar."
+        },
+        {
+          question: "Neden matematik hatası alıyorum?",
+          answer: "Muhtemelen b için c'den daha büyük bir değer girdiniz. Bir dik üçgende komşu kenar hiçbir zaman hipotenüsten daha uzun olamaz."
+        },
+        {
+          question: "Karşı kenarı bilmiyorsam bunu kullanabilir miyim?",
+          answer: "Kesinlikle. Bu hesaplama, karşı kenara hiç ihtiyaç duymadan çalışacak şekilde özel olarak tasarlanmıştır."
+        },
+        {
+          question: "Komşu kenar hipotenüsün tam olarak yarısıysa ne olur?",
+          answer: "Eğer b tam olarak c'nin yarısıysa, oranınız 0,5'tir. 0,5'in arccos'u tam olarak 60°'dir, ki bu çok yaygın özel bir üçgendir."
+        },
+      ]
+    },
+    "angle-from-tangent-calculator": {
+      slug: "angle-from-tangent-calculator",
+      h1: "Tanjanttan Dik Üçgen Açısı Hesaplayıcı",
+      metaTitle: "Tanjanttan Dik Üçgen Açısı Hesaplayıcı | A = arctan(a / b) Bulun",
+      metaDescription: "Formül, adımlar ve örneklerle karşı kenar a ve komşu kenar b'den A açısını bulmak için bu tanjanttan dik üçgen açısı hesaplayıcısını kullanın.",
+      faqs: [
+        {
+          question: "Arctan formülü nasıl çalışır?",
+          answer: "Arctan formülü, karşı kenarınızın komşu kenarınıza bölünmesiyle elde edilen ondalık oranı alır ve bunu kesin bir derece açısına geri çevirir."
+        },
+        {
+          question: "Hesaplanan açı ne anlama geliyor?",
+          answer: "Sonuç size açının derece cinsinden tam olarak ne kadar dik olduğunu söyler. Daha büyük bir sayı daha dik bir eğim anlamına gelirken, daha küçük bir sayı daha hafif bir yükseliş anlamına gelir."
+        },
+        {
+          question: "Hangi dik kenarın a ve hangisinin b olduğu önemli mi?",
+          answer: "Evet, bu çok önemlidir. a kenarı, açınızın tam karşısındaki dik kenar olmalı ve b kenarı ise ona temas eden dik kenar olmalıdır. Bunları değiştirirseniz, bunun yerine B açısını bulursunuz."
+        },
+        {
+          question: "Karşı kenar komşu kenardan daha büyük olabilir mi?",
+          answer: "Kesinlikle. Karşı kenar daha büyükse, ortaya çıkan açı 45 dereceden büyük olacaktır."
+        },
+        {
+          question: "Bunun için neden hipotenüse ihtiyacım yok?",
+          answer: "Tanjant oranı özel olarak a ve b dikey kenarları tarafından tanımlanır. Bu kenarlar ayarlandıktan sonra hipotenüs yerine kilitlenir, bu nedenle ölçümüne ihtiyacınız yoktur."
+        },
+      ]
+    },
+  },
+  "sv": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/sv/sine-ratio-calculator/",
+      h1: "Sinus Kalkylator",
+      metaTitle: "Sinus Kalkylator | Rätvinklig Triangel sin(A)",
+      metaDescription: "Använd denna sinus kalkylator för att snabbt och exakt beräkna sin(A) i en rätvinklig triangel med hjälp av motstående katet a och hypotenusa c.",
+      intro: [
+        "Sinus kalkylator är ett gratis onlineverktyg för att enkelt beräkna sinusvärdet (sine) från längden på den motstående kateten och hypotenusan i en rätvinklig triangel. I en rätvinklig triangel beräknas sin(A) genom att dividera längden på den motstående kateten till vinkel A med hypotenusans längd. Skriv bara in värdena och se resultatet samt beräkningsstegen direkt.",
+      ],
+      faqs: [
+        {
+          question: "Vad är ett sinusförhållande?",
+          answer: "Sinus är förhållandet mellan längden på den \"motstående kateten\" och \"hypotenusan\" för en specifik vinkel i en rätvinklig triangel. Formeln är sin(A) = a / c."
+        },
+        {
+          question: "Kan sinusvärdet vara större än 1?",
+          answer: "Nej. Eftersom hypotenusan alltid är den längsta sidan i en rätvinklig triangel, kommer värdet av den motstående kateten dividerat med hypotenusan (sinus) alltid att vara 1 eller mindre."
+        },
+        {
+          question: "Vad är värdet på sin(30°)?",
+          answer: "I en 30-60-90 rätvinklig triangel är sin(30°) = 0.5. Detta innebär att längden på den motstående kateten är exakt hälften av hypotenusans längd."
+        },
+      ]
+    },
+    "cosine-ratio-calculator": {
+      slug: "cosine-ratio-calculator",
+      url: "/sv/cosine-ratio-calculator/",
+      faqs: [
+        {
+          question: "Vad är ett sekantförhållande?",
+          answer: "Sekant är förhållandet mellan \"hypotenusan\" och den \"närliggande kateten\" i en rätvinklig triangel. Formeln är sec(A) = c / b."
+        },
+        {
+          question: "Kan sekantvärdet vara mindre än 1?",
+          answer: "Nej. Eftersom hypotenusan alltid är längre än den närliggande kateten är sekantvärdet (c / b) alltid större än 1."
+        },
+        {
+          question: "Vad är förhållandet mellan cosinus och sekant?",
+          answer: "Sekant är det reciproka värdet av cosinus (sec(A) = 1 / cos(A))."
+        },
+      ]
+    },
+    "cosecant-ratio-calculator": {
+      slug: "cosecant-ratio-calculator",
+      url: "/sv/cosecant-ratio-calculator/",
+      h1: "Cosekant Kalkylator",
+      metaTitle: "Cosekant Kalkylator | Rätvinklig Triangel csc(A)",
+      metaDescription: "Använd denna cosekant kalkylator för att snabbt och exakt beräkna csc(A) i en rätvinklig triangel med hjälp av hypotenusa c och motstående katet a.",
+      intro: [
+        "Cosekant kalkylator är ett verktyg för att beräkna cosekantvärdet (cosecant) från längden på hypotenusan och den motstående kateten i en rätvinklig triangel. csc(A) är det reciproka värdet av sinus, och hittas genom att dividera hypotenusan med den motstående kateten.",
+      ],
+      faqs: [
+        {
+          question: "Vad är ett cosekantförhållande?",
+          answer: "Cosekant är förhållandet mellan \"hypotenusan\" och den \"motstående kateten\" i en rätvinklig triangel. Formeln är csc(A) = c / a."
+        },
+        {
+          question: "Vad är förhållandet mellan sinus och cosekant?",
+          answer: "Cosekant är det reciproka värdet av sinus (csc(A) = 1 / sin(A)). Till exempel, om sin(A) är 0.5, så är csc(A) 2."
+        },
+        {
+          question: "När ska cosekant användas?",
+          answer: "Cosekant är användbart när det krävs direkt i en formel, eller när du vill hitta hypotenusans längd från den motstående katetens längd (c = a × csc(A)). Detta gör att du kan hoppa över steget med att dividera med sinus. ---"
+        },
+      ]
+    },
+    "angle-from-sine-calculator": {
+      slug: "angle-from-sine-calculator",
+      h1: "Kalkylator för vinkel från sinus i rätvinklig triangel",
+      metaTitle: "Kalkylator för vinkel från sinus i rätvinklig triangel | Hitta A = arcsin(a / c)",
+      metaDescription: "Använd denna kalkylator för vinkel från sinus i rätvinklig triangel för att hitta vinkel A från motstående katet a och hypotenusan c med formel, steg och exempel.",
+      faqs: [
+        {
+          question: "Vad gör egentligen arcsin-formeln?",
+          answer: "Arcsin tar ett förhållande mellan två sidor och vänder på matematiken för att ge dig den specifika vinkeln som skapade det förhållandet."
+        },
+        {
+          question: "Vad betyder slutresultatet?",
+          answer: "Resultatet ger dig det exakta gradmåttet på vinkel A. Det berättar hur kraftigt hypotenusan vinklas från basen."
+        },
+        {
+          question: "Varför får jag ett felmeddelande om min motstående katet är större än min hypotenusa?",
+          answer: "I en rätvinklig triangel måste hypotenusan alltid vara den längsta sidan. Om sida a är större än sida c är triangeln fysiskt omöjlig att rita."
+        },
+        {
+          question: "Behöver jag veta den närliggande kateten för att använda den här metoden?",
+          answer: "Nej, du behöver bara den motstående kateten och hypotenusan. Den närliggande kateten ignoreras helt här."
+        },
+        {
+          question: "Är invers sinus samma sak som arcsin?",
+          answer: "Ja, det är två olika namn för exakt samma matematiska operation. Du kanske ser den skriven som sin⁻¹ på en miniräknare."
+        },
+      ]
+    },
+    "angle-from-cosine-calculator": {
+      slug: "angle-from-cosine-calculator",
+      h1: "Kalkylator för vinkel från cosinus i rätvinklig triangel",
+      metaTitle: "Kalkylator för vinkel från cosinus i rätvinklig triangel | Hitta A = arccos(b / c)",
+      metaDescription: "Använd denna kalkylator för vinkel från cosinus i rätvinklig triangel för att hitta vinkel A från närliggande katet b och hypotenusan c med formel, steg och exempel.",
+      faqs: [
+        {
+          question: "Vad betyder egentligen formeln A = arccos(b / c)?",
+          answer: "Det betyder att du tar längden på den närliggande kateten, delar den med hypotenusan och arbetar baklänges från det decimaltalet för att hitta den ursprungliga vinkeln."
+        },
+        {
+          question: "Vad betyder gradresultatet i verkligheten?",
+          answer: "Resultatet är den faktiska vinkeln du skulle mäta med en gradskiva. Det definierar den exakta lutningen där den närliggande kateten möter hypotenusan."
+        },
+        {
+          question: "Varför får jag ett matematiskt fel?",
+          answer: "Du angav förmodligen ett värde för b som är större än c. Den närliggande kateten kan aldrig vara längre än hypotenusan i en rätvinklig triangel."
+        },
+        {
+          question: "Kan jag använda detta om jag inte vet den motstående kateten?",
+          answer: "Absolut. Denna beräkning är utformad specifikt för att fungera utan att den motstående kateten behövs överhuvudtaget."
+        },
+        {
+          question: "Vad händer om den närliggande kateten är exakt hälften av hypotenusan?",
+          answer: "Om b är exakt hälften av c är ditt förhållande 0,5. Arccos av 0,5 är exakt 60°, vilket är en mycket vanlig speciell triangel."
+        },
+      ]
+    },
+    "angle-from-tangent-calculator": {
+      slug: "angle-from-tangent-calculator",
+      h1: "Kalkylator för vinkel från tangens i rätvinklig triangel",
+      metaTitle: "Kalkylator för vinkel från tangens i rätvinklig triangel | Hitta A = arctan(a / b)",
+      metaDescription: "Använd denna kalkylator för vinkel från tangens i rätvinklig triangel för att hitta vinkel A från motstående katet a och närliggande katet b med formel, steg och exempel.",
+      faqs: [
+        {
+          question: "Hur fungerar arctan-formeln?",
+          answer: "Arctan-formeln tar det råa decimala förhållandet mellan din motstående katet dividerad med din närliggande katet och översätter det tillbaka till en exakt vinkel i grader."
+        },
+        {
+          question: "Vad betyder den beräknade vinkeln?",
+          answer: "Resultatet berättar exakt hur brant vinkeln är i grader. Ett högre tal betyder en brantare lutning, medan ett lägre tal betyder en svagare stigning."
+        },
+        {
+          question: "Spelar det någon roll vilken katet som är a och vilken som är b?",
+          answer: "Ja, det är avgörande. Sida a måste vara den katet som är helt motstående din vinkel, och sida b måste vara den katet som rör vid den. Om du byter plats på dem hittar du vinkel B istället."
+        },
+        {
+          question: "Kan den motstående kateten vara större än den närliggande kateten?",
+          answer: "Absolut. Om den motstående kateten är större kommer den resulterande vinkeln helt enkelt att vara större än 45 grader."
+        },
+        {
+          question: "Varför behöver jag inte hypotenusan för detta?",
+          answer: "Tangensförhållandet är specifikt definierat av de två vinkelräta sidorna a och b. Hypotenusan är låst på plats när dessa sidor väl är bestämda, så du behöver inte dess mått."
+        },
+      ]
+    },
+  },
+  "zh": {
+    "sine-ratio-calculator": {
+      slug: "sine-ratio-calculator",
+      url: "/zh/sine-ratio-calculator/",
+      h1: "正弦计算器",
+      metaTitle: "正弦计算器 | 直角三角形 sin(A)",
+      metaDescription: "使用此正弦计算器，通过对边 a 和斜边 c 快速准确地计算直角三角形中的 sin(A) 值。",
+      intro: [
+        "正弦计算器是一个免费的在线工具，可通过直角三角形的对边和斜边长度轻松计算正弦 (sine) 值。在直角三角形中，sin(A) 是通过将角 A 的对边长度除以斜边长度来计算的。只需输入数值，即可立即查看结果和计算步骤。",
+      ],
+      faqs: [
+        {
+          question: "什么是正弦比？",
+          answer: "正弦比是直角三角形中特定角的“对边”长度与“斜边”长度的比值。公式为 sin(A) = a / c。"
+        },
+        {
+          question: "正弦值可以大于 1 吗？",
+          answer: "不能。因为斜边始终是直角三角形中最长的边，所以对边除以斜边的值（正弦值）始终为 1 或更小。"
+        },
+        {
+          question: "sin(30°) 的值是多少？",
+          answer: "在 30-60-90 度的直角三角形中，sin(30°) = 0.5。这意味着对边的长度恰好是斜边长度的一半。"
+        },
+      ]
+    },
+    "cosine-ratio-calculator": {
+      slug: "cosine-ratio-calculator",
+      url: "/zh/cosine-ratio-calculator/",
+      h1: "正割计算器",
+      metaTitle: "余弦计算器 | 直角三角形 cos(A)",
+      metaDescription: "使用此正割计算器，通过斜边 c 和邻边 b 快速准确地计算直角三角形中的 sec(A) 值。",
+      intro: [
+        "正割计算器是一款用于通过直角三角形的斜边和邻边长度来计算正割 (secant) 值的工具。sec(A) 是余弦的倒数，通过将斜边除以邻边来求得。",
+      ],
+      faqs: [
+        {
+          question: "什么是正割比？",
+          answer: "正割比是直角三角形中“斜边”与“邻边”的比值。公式为 sec(A) = c / b。"
+        },
+        {
+          question: "正割值可以小于 1 吗？",
+          answer: "不能。因为斜边总是长于邻边，所以正割值 (c / b) 始终大于 1。"
+        },
+        {
+          question: "余弦和正割之间有什么关系？",
+          answer: "正割是余弦的倒数 (sec(A) = 1 / cos(A))。"
+        },
+      ]
+    },
+    "cosecant-ratio-calculator": {
+      slug: "cosecant-ratio-calculator",
+      url: "/zh/cosecant-ratio-calculator/",
+      h1: "余割计算器",
+      metaTitle: "余割计算器 | 直角三角形 csc(A)",
+      metaDescription: "使用此余割计算器，通过斜边 c 和对边 a 快速准确地计算直角三角形中的 csc(A) 值。",
+      intro: [
+        "余割计算器是一款用于通过直角三角形的斜边和对边长度来计算余割 (cosecant) 值的工具。csc(A) 是正弦的倒数，通过将斜边除以对边来求得。",
+      ],
+      faqs: [
+        {
+          question: "什么是余割比？",
+          answer: "余割比是直角三角形中“斜边”与“对边”的比值。公式为 csc(A) = c / a。"
+        },
+        {
+          question: "正弦和余割之间有什么关系？",
+          answer: "余割是正弦的倒数 (csc(A) = 1 / sin(A))。例如，如果 sin(A) 为 0.5，则 csc(A) 为 2。"
+        },
+        {
+          question: "什么时候应该使用余割？",
+          answer: "当公式中直接需要余割时，或者当您想通过对边长度求斜边长度时 (c = a × csc(A))，余割非常有用。这样您可以省去计算中除以正弦的步骤。 ---"
+        },
+      ]
+    },
+    "angle-from-sine-calculator": {
+      slug: "angle-from-sine-calculator",
+      h1: "直角三角形正弦求角计算器",
+      metaTitle: "直角三角形正弦求角计算器 | 计算 A = arcsin(a / c)",
+      metaDescription: "使用这个直角三角形正弦求角计算器，通过对边 a 和斜边 c 来计算角度 A，包含公式、步骤和示例。",
+      faqs: [
+        {
+          question: "反正弦公式实际上有什么作用？",
+          answer: "反正弦利用两条边的比值进行逆运算，从而求出产生该比值的具体角度。"
+        },
+        {
+          question: "最终结果代表什么？",
+          answer: "结果给出了角度 A 的精确度数。这表示斜边偏离底边的倾斜程度。"
+        },
+        {
+          question: "为什么我的对边比斜边长时会报错？",
+          answer: "在直角三角形中，斜边必须始终是最长的一条边。如果边 a 大于边 c，那么在物理上就不可能画出这个三角形。"
+        },
+        {
+          question: "使用这种方法需要知道邻边吗？",
+          answer: "不需要，你只需要对边和斜边。邻边在这里完全可以被忽略。"
+        },
+        {
+          question: "反正弦 (inverse sine) 和 arcsin 是一样的吗？",
+          answer: "是的，它们是完全相同的数学运算的两个不同名称。在手持计算器上，您可能会看到它写成 sin⁻¹。"
+        },
+      ]
+    },
+    "angle-from-cosine-calculator": {
+      slug: "angle-from-cosine-calculator",
+      h1: "直角三角形余弦求角计算器",
+      metaTitle: "直角三角形余弦求角计算器 | 计算 A = arccos(b / c)",
+      metaDescription: "使用这个直角三角形余弦求角计算器，通过邻边 b 和斜边 c 来计算角度 A，包含公式、步骤和示例。",
+      faqs: [
+        {
+          question: "公式 A = arccos(b / c) 到底是什么意思？",
+          answer: "它的意思是，将邻边的长度除以斜边，然后利用这个小数结果进行逆运算，从而求出原始角度。"
+        },
+        {
+          question: "度数结果在现实生活中意味着什么？",
+          answer: "该结果是您使用量角器测量出的实际角度。它定义了邻边与斜边相交处的精确倾斜度或坡度。"
+        },
+        {
+          question: "为什么我遇到数学错误？",
+          answer: "您输入的 b 值可能大于 c。在直角三角形中，邻边的长度绝不能超过斜边。"
+        },
+        {
+          question: "如果我不知道对边也可以使用吗？",
+          answer: "当然可以。这种计算方法是专门设计的，完全不需要用到对边。"
+        },
+        {
+          question: "如果邻边恰好是斜边的一半会怎样？",
+          answer: "如果 b 恰好是 c 的一半，比值就是 0.5。0.5 的反余弦值精确等于 60°，这是一个非常常见的特殊三角形。"
+        },
+      ]
+    },
+    "angle-from-tangent-calculator": {
+      slug: "angle-from-tangent-calculator",
+      h1: "直角三角形正切求角计算器",
+      metaTitle: "直角三角形正切求角计算器 | 计算 A = arctan(a / b)",
+      metaDescription: "使用这个直角三角形正切求角计算器，通过对边 a 和邻边 b 来计算角度 A，包含公式、步骤和示例。",
+      faqs: [
+        {
+          question: "反正切公式是如何运作的？",
+          answer: "反正切公式利用对边除以邻边所得的原始小数比值，将其转换回精确的度数角度。"
+        },
+        {
+          question: "计算出的角度代表什么？",
+          answer: "结果以度数的形式精确地告诉你角度有多陡。数值越大代表坡度越陡，数值越小代表坡度越缓。"
+        },
+        {
+          question: "哪条直角边是 a 哪条是 b 有关系吗？",
+          answer: "是的，这非常关键。边 a 必须是完全对着你的角的直角边，而边 b 必须是与该角相邻的直角边。如果将它们互换，你将求出角度 B。"
+        },
+        {
+          question: "对边可以比邻边长吗？",
+          answer: "当然可以。如果对边更长，那么得出的角度就会大于 45 度。"
+        },
+        {
+          question: "为什么在这里我不需要斜边？",
+          answer: "正切比完全是由两条相互垂直的直角边 a 和 b 定义的。一旦这两条边确定下来，斜边也就固定了，因此你不需要知道它的尺寸。"
+        },
+      ]
+    },
+  },
 };
-
-export type FocusedTrigRatioUi = {
-  home: string;
-  badge: string;
-  parentPageLabel: string;
-  formula: string;
-  triangleDiagram: string;
-  ratioHighlight: string;
-  numerator: string;
-  denominator: string;
-  sideKey: string;
-  howToUse: string;
-  stepByStepExample: string;
-  whatResultMeans: string;
-  whenToUse: string;
-  commonMistakes: string;
-  relatedCalculators: string;
-  openTool: string;
-  faqHeading: string;
-  rightAngle: string;
-  sideRoles: Record<'a' | 'b' | 'c', { role: string; description: string; short: string; label: string }>;
-  usedIn: (label: string) => string;
-  notUsedIn: (label: string) => string;
-};
-
-type CopyPack = {
-  ratioNames: Record<RatioKey, string>;
-  sideNames: Record<SideRole, string>;
-  ui: FocusedTrigRatioUi;
-  relatedAngleCalculator: string;
-  pageTitle: string;
-  headerSummary: string;
-  metaTitle: string;
-  metaDescription: string;
-  calculatorHeading: string;
-  introHeading: string;
-  intro: string[];
-  calculatorNote: string;
-  formulaParagraphs: string[];
-  diagramExplanation: string[];
-  howToSteps: string[];
-  exampleIntro: string;
-  exampleConclusion: string;
-  resultMeaning: string[];
-  rangeNotes: Record<RangeKind, string>;
-  whenIntro: string;
-  whenItems: string[];
-  mistakesIntro: string;
-  mistakeItems: string[];
-  faqs: { question: string; answer: string }[];
-};
-
-type RuntimeUi = {
-  calculationComplete: string;
-  unableToCalculate: string;
-  fixErrors: string;
-  errorPrefix: string;
-  stepLabels: {
-    formula: string;
-    substitution: string;
-    answer: string;
-    explanation: string;
-    detail: string;
-  };
-};
-
-const RATIO_CONFIGS: Record<string, RatioConfig> = {
-  'sine-ratio-calculator': {
-    slug: 'sine-ratio-calculator',
-    url: '/sine-ratio-calculator/',
-    key: 'sine',
-    symbol: 'sin(A)',
-    formula: 'sin(A) = a / c',
-    numerator: 'opposite',
-    denominator: 'hypotenuse',
-    reciprocal: 'cosecant',
-    range: 'zeroOne',
-    exampleValues: 'a = 3, c = 5',
-    exampleLines: ['sin(A) = a / c', 'sin(A) = 3 / 5', 'sin(A) = 0.6'],
-    exampleResult: '0.6',
-    exampleAngle: '36.87 degrees'
-  },
-  'cosine-ratio-calculator': {
-    slug: 'cosine-ratio-calculator',
-    url: '/cosine-ratio-calculator/',
-    key: 'cosine',
-    symbol: 'cos(A)',
-    formula: 'cos(A) = b / c',
-    numerator: 'adjacent',
-    denominator: 'hypotenuse',
-    reciprocal: 'secant',
-    range: 'zeroOne',
-    exampleValues: 'b = 4, c = 5',
-    exampleLines: ['cos(A) = b / c', 'cos(A) = 4 / 5', 'cos(A) = 0.8'],
-    exampleResult: '0.8',
-    exampleAngle: '36.87 degrees'
-  },
-  'tangent-ratio-calculator': {
-    slug: 'tangent-ratio-calculator',
-    url: '/tangent-ratio-calculator/',
-    key: 'tangent',
-    symbol: 'tan(A)',
-    formula: 'tan(A) = a / b',
-    numerator: 'opposite',
-    denominator: 'adjacent',
-    reciprocal: 'cotangent',
-    range: 'positiveAny',
-    exampleValues: 'a = 3, b = 4',
-    exampleLines: ['tan(A) = a / b', 'tan(A) = 3 / 4', 'tan(A) = 0.75'],
-    exampleResult: '0.75',
-    exampleAngle: '36.87 degrees'
-  },
-  'cotangent-ratio-calculator': {
-    slug: 'cotangent-ratio-calculator',
-    url: '/cotangent-ratio-calculator/',
-    key: 'cotangent',
-    symbol: 'cot(A)',
-    formula: 'cot(A) = b / a',
-    numerator: 'adjacent',
-    denominator: 'opposite',
-    reciprocal: 'tangent',
-    range: 'positiveAny',
-    exampleValues: 'b = 4, a = 3',
-    exampleLines: ['cot(A) = b / a', 'cot(A) = 4 / 3', 'cot(A) = 1.3333'],
-    exampleResult: '1.3333',
-    exampleAngle: '36.87 degrees'
-  },
-  'secant-ratio-calculator': {
-    slug: 'secant-ratio-calculator',
-    url: '/secant-ratio-calculator/',
-    key: 'secant',
-    symbol: 'sec(A)',
-    formula: 'sec(A) = c / b',
-    numerator: 'hypotenuse',
-    denominator: 'adjacent',
-    reciprocal: 'cosine',
-    range: 'greaterOne',
-    exampleValues: 'c = 5, b = 4',
-    exampleLines: ['sec(A) = c / b', 'sec(A) = 5 / 4', 'sec(A) = 1.25'],
-    exampleResult: '1.25',
-    exampleAngle: '36.87 degrees'
-  },
-  'cosecant-ratio-calculator': {
-    slug: 'cosecant-ratio-calculator',
-    url: '/cosecant-ratio-calculator/',
-    key: 'cosecant',
-    symbol: 'csc(A)',
-    formula: 'csc(A) = c / a',
-    numerator: 'hypotenuse',
-    denominator: 'opposite',
-    reciprocal: 'sine',
-    range: 'greaterOne',
-    exampleValues: 'c = 5, a = 3',
-    exampleLines: ['csc(A) = c / a', 'csc(A) = 5 / 3', 'csc(A) = 1.6667'],
-    exampleResult: '1.6667',
-    exampleAngle: '36.87 degrees'
-  }
-};
-
-const sideLetters: Record<SideRole, 'a' | 'b' | 'c'> = {
-  opposite: 'a',
-  adjacent: 'b',
-  hypotenuse: 'c'
-};
-
-const fill = (template: string, values: Record<string, string>) =>
-  template.replace(/\{([a-zA-Z0-9]+)\}/g, (_, key: string) => values[key] ?? '');
-
-const sideText = (copy: CopyPack, side: SideRole) => `${copy.sideNames[side]} ${sideLetters[side]}`;
-
-const createUi = (
-  labels: Omit<FocusedTrigRatioUi, 'usedIn' | 'notUsedIn'> & {
-    usedInPattern: string;
-    notUsedInPattern: string;
-  }
-): FocusedTrigRatioUi => ({
-  ...labels,
-  usedIn: (label) => fill(labels.usedInPattern, { label }),
-  notUsedIn: (label) => fill(labels.notUsedInPattern, { label })
-});
-
-const EN_UI = createUi({
-  home: 'Home',
-  badge: 'Trigonometric Ratio Calculator',
-  parentPageLabel: 'Right Triangle Trig Ratios Calculator',
-  formula: 'Formula',
-  triangleDiagram: 'Triangle Diagram',
-  ratioHighlight: 'Ratio Highlight',
-  numerator: 'Numerator',
-  denominator: 'Denominator',
-  sideKey: 'Side Key',
-  howToUse: 'How to Use This Calculator',
-  stepByStepExample: 'Step-by-Step Example',
-  whatResultMeans: 'What the Result Means',
-  whenToUse: 'When to Use This Ratio',
-  commonMistakes: 'Common Mistakes',
-  relatedCalculators: 'Related Calculators',
-  openTool: 'Open Tool',
-  faqHeading: 'Frequently Asked Questions',
-  rightAngle: '90 degrees',
-  sideRoles: {
-    a: { role: 'opposite side', description: 'across from angle A', short: 'opposite', label: 'a = opposite side' },
-    b: { role: 'adjacent side', description: 'next to angle A', short: 'adjacent', label: 'b = adjacent side' },
-    c: { role: 'hypotenuse', description: 'longest side, opposite 90 degrees', short: 'hypotenuse', label: 'c = hypotenuse' }
-  },
-  usedInPattern: 'Used in {label}',
-  notUsedInPattern: 'Not used in {label}'
-});
-
-const EN_RUNTIME_UI: RuntimeUi = {
-  calculationComplete: 'Calculation complete.',
-  unableToCalculate: 'Unable to calculate.',
-  fixErrors: 'Please fix the errors in the fields above.',
-  errorPrefix: 'Error',
-  stepLabels: {
-    formula: 'Formula',
-    substitution: 'Substitution',
-    answer: 'Answer',
-    explanation: 'Explanation',
-    detail: 'Detail'
-  }
-};
-
-const RUNTIME_UI: Partial<Record<Locale, RuntimeUi>> = {
-  hi: {
-    calculationComplete: 'गणना पूरी हुई।',
-    unableToCalculate: 'गणना नहीं हो सकी।',
-    fixErrors: 'कृपया ऊपर दिए गए फ़ील्ड की त्रुटियां ठीक करें।',
-    errorPrefix: 'त्रुटि',
-    stepLabels: {
-      formula: 'सूत्र',
-      substitution: 'प्रतिस्थापन',
-      answer: 'उत्तर',
-      explanation: 'व्याख्या',
-      detail: 'विवरण'
-    }
-  },
-  es: {
-    calculationComplete: 'Cálculo completado.',
-    unableToCalculate: 'No se pudo calcular.',
-    fixErrors: 'Corrige los errores en los campos superiores.',
-    errorPrefix: 'Error',
-    stepLabels: {
-      formula: 'Fórmula',
-      substitution: 'Sustitución',
-      answer: 'Respuesta',
-      explanation: 'Explicación',
-      detail: 'Detalle'
-    }
-  },
-  ru: {
-    calculationComplete: 'Расчет выполнен.',
-    unableToCalculate: 'Не удалось выполнить расчет.',
-    fixErrors: 'Исправьте ошибки в полях выше.',
-    errorPrefix: 'Ошибка',
-    stepLabels: {
-      formula: 'Формула',
-      substitution: 'Подстановка',
-      answer: 'Ответ',
-      explanation: 'Пояснение',
-      detail: 'Деталь'
-    }
-  },
-  fr: {
-    calculationComplete: 'Calcul terminé.',
-    unableToCalculate: 'Impossible de calculer.',
-    fixErrors: 'Corrigez les erreurs dans les champs ci-dessus.',
-    errorPrefix: 'Erreur',
-    stepLabels: {
-      formula: 'Formule',
-      substitution: 'Substitution',
-      answer: 'Réponse',
-      explanation: 'Explication',
-      detail: 'Détail'
-    }
-  },
-  de: {
-    calculationComplete: 'Berechnung abgeschlossen.',
-    unableToCalculate: 'Berechnung nicht möglich.',
-    fixErrors: 'Bitte korrigieren Sie die Fehler in den obigen Feldern.',
-    errorPrefix: 'Fehler',
-    stepLabels: {
-      formula: 'Formel',
-      substitution: 'Einsetzen',
-      answer: 'Antwort',
-      explanation: 'Erklärung',
-      detail: 'Detail'
-    }
-  },
-  it: {
-    calculationComplete: 'Calcolo completato.',
-    unableToCalculate: 'Impossibile calcolare.',
-    fixErrors: 'Correggi gli errori nei campi sopra.',
-    errorPrefix: 'Errore',
-    stepLabels: {
-      formula: 'Formula',
-      substitution: 'Sostituzione',
-      answer: 'Risposta',
-      explanation: 'Spiegazione',
-      detail: 'Dettaglio'
-    }
-  },
-  pt: {
-    calculationComplete: 'Cálculo concluído.',
-    unableToCalculate: 'Não foi possível calcular.',
-    fixErrors: 'Corrija os erros nos campos acima.',
-    errorPrefix: 'Erro',
-    stepLabels: {
-      formula: 'Fórmula',
-      substitution: 'Substituição',
-      answer: 'Resposta',
-      explanation: 'Explicação',
-      detail: 'Detalhe'
-    }
-  },
-  bn: {
-    calculationComplete: 'গণনা সম্পন্ন হয়েছে।',
-    unableToCalculate: 'গণনা করা যায়নি।',
-    fixErrors: 'উপরের ক্ষেত্রগুলোর ত্রুটি ঠিক করুন।',
-    errorPrefix: 'ত্রুটি',
-    stepLabels: {
-      formula: 'সূত্র',
-      substitution: 'প্রতিস্থাপন',
-      answer: 'উত্তর',
-      explanation: 'ব্যাখ্যা',
-      detail: 'বিবরণ'
-    }
-  },
-  ja: {
-    calculationComplete: '計算が完了しました。',
-    unableToCalculate: '計算できません。',
-    fixErrors: '上の入力欄のエラーを修正してください。',
-    errorPrefix: 'エラー',
-    stepLabels: {
-      formula: '公式',
-      substitution: '代入',
-      answer: '答え',
-      explanation: '説明',
-      detail: '詳細'
-    }
-  },
-  ko: {
-    calculationComplete: '계산이 완료되었습니다.',
-    unableToCalculate: '계산할 수 없습니다.',
-    fixErrors: '위 입력란의 오류를 수정하세요.',
-    errorPrefix: '오류',
-    stepLabels: {
-      formula: '공식',
-      substitution: '대입',
-      answer: '답',
-      explanation: '설명',
-      detail: '세부 내용'
-    }
-  },
-  ms: {
-    calculationComplete: 'Pengiraan selesai.',
-    unableToCalculate: 'Tidak dapat mengira.',
-    fixErrors: 'Betulkan ralat dalam medan di atas.',
-    errorPrefix: 'Ralat',
-    stepLabels: {
-      formula: 'Formula',
-      substitution: 'Penggantian',
-      answer: 'Jawapan',
-      explanation: 'Penjelasan',
-      detail: 'Butiran'
-    }
-  },
-  pl: {
-    calculationComplete: 'Obliczenie zakończone.',
-    unableToCalculate: 'Nie można obliczyć.',
-    fixErrors: 'Popraw błędy w polach powyżej.',
-    errorPrefix: 'Błąd',
-    stepLabels: {
-      formula: 'Wzór',
-      substitution: 'Podstawienie',
-      answer: 'Odpowiedź',
-      explanation: 'Wyjaśnienie',
-      detail: 'Szczegół'
-    }
-  },
-  id: {
-    calculationComplete: 'Perhitungan selesai.',
-    unableToCalculate: 'Tidak dapat menghitung.',
-    fixErrors: 'Perbaiki kesalahan pada kolom di atas.',
-    errorPrefix: 'Kesalahan',
-    stepLabels: {
-      formula: 'Rumus',
-      substitution: 'Substitusi',
-      answer: 'Jawaban',
-      explanation: 'Penjelasan',
-      detail: 'Detail'
-    }
-  },
-  ar: {
-    calculationComplete: 'اكتملت العملية الحسابية.',
-    unableToCalculate: 'تعذر الحساب.',
-    fixErrors: 'يرجى تصحيح الأخطاء في الحقول أعلاه.',
-    errorPrefix: 'خطأ',
-    stepLabels: {
-      formula: 'الصيغة',
-      substitution: 'التعويض',
-      answer: 'الإجابة',
-      explanation: 'الشرح',
-      detail: 'التفاصيل'
-    }
-  },
-  bg: {
-    calculationComplete: 'Изчислението е готово.',
-    unableToCalculate: 'Не може да се изчисли.',
-    fixErrors: 'Поправете грешките в полетата по-горе.',
-    errorPrefix: 'Грешка',
-    stepLabels: {
-      formula: 'Формула',
-      substitution: 'Заместване',
-      answer: 'Отговор',
-      explanation: 'Обяснение',
-      detail: 'Детайл'
-    }
-  },
-  tr: {
-    calculationComplete: 'Hesaplama tamamlandı.',
-    unableToCalculate: 'Hesaplama yapılamadı.',
-    fixErrors: 'Yukarıdaki alanlardaki hataları düzeltin.',
-    errorPrefix: 'Hata',
-    stepLabels: {
-      formula: 'Formül',
-      substitution: 'Yerine koyma',
-      answer: 'Cevap',
-      explanation: 'Açıklama',
-      detail: 'Detay'
-    }
-  },
-  sv: {
-    calculationComplete: 'Beräkningen är klar.',
-    unableToCalculate: 'Det går inte att beräkna.',
-    fixErrors: 'Rätta felen i fälten ovan.',
-    errorPrefix: 'Fel',
-    stepLabels: {
-      formula: 'Formel',
-      substitution: 'Insättning',
-      answer: 'Svar',
-      explanation: 'Förklaring',
-      detail: 'Detalj'
-    }
-  },
-  zh: {
-    calculationComplete: '计算完成。',
-    unableToCalculate: '无法计算。',
-    fixErrors: '请修正上方字段中的错误。',
-    errorPrefix: '错误',
-    stepLabels: {
-      formula: '公式',
-      substitution: '代入',
-      answer: '答案',
-      explanation: '说明',
-      detail: '详情'
-    }
-  }
-};
-
-const COPIES: Partial<Record<Locale, CopyPack>> = {
-  hi: {
-    ratioNames: { sine: 'साइन', cosine: 'कोसाइन', tangent: 'टैन्जेंट', cotangent: 'कोटैन्जेंट', secant: 'सेकेंट', cosecant: 'कोसेकेंट' },
-    sideNames: { opposite: 'विपरीत भुजा', adjacent: 'सन्निकट भुजा', hypotenuse: 'कर्ण' },
-    ui: createUi({
-      home: 'होम',
-      badge: 'त्रिकोणमितीय अनुपात कैलकुलेटर',
-      parentPageLabel: 'समकोण त्रिभुज त्रिकोणमितीय अनुपात कैलकुलेटर',
-      formula: 'सूत्र',
-      triangleDiagram: 'त्रिभुज आरेख',
-      ratioHighlight: 'अनुपात हाइलाइट',
-      numerator: 'अंश',
-      denominator: 'हर',
-      sideKey: 'भुजा कुंजी',
-      howToUse: 'इस कैलकुलेटर का उपयोग कैसे करें',
-      stepByStepExample: 'चरण-दर-चरण उदाहरण',
-      whatResultMeans: 'परिणाम का अर्थ',
-      whenToUse: 'इस अनुपात का उपयोग कब करें',
-      commonMistakes: 'सामान्य गलतियां',
-      relatedCalculators: 'संबंधित कैलकुलेटर',
-      openTool: 'टूल खोलें',
-      faqHeading: 'अक्सर पूछे जाने वाले प्रश्न',
-      rightAngle: '90 डिग्री',
-      sideRoles: {
-        a: { role: 'विपरीत भुजा', description: 'कोण A के सामने', short: 'विपरीत', label: 'a = विपरीत भुजा' },
-        b: { role: 'सन्निकट भुजा', description: 'कोण A के पास', short: 'सन्निकट', label: 'b = सन्निकट भुजा' },
-        c: { role: 'कर्ण', description: 'सबसे लंबी भुजा, 90 डिग्री के सामने', short: 'कर्ण', label: 'c = कर्ण' }
-      },
-      usedInPattern: '{label} में उपयोग',
-      notUsedInPattern: '{label} में उपयोग नहीं'
-    }),
-    relatedAngleCalculator: 'समकोण त्रिभुज कोण कैलकुलेटर',
-    pageTitle: '{name} अनुपात कैलकुलेटर',
-    headerSummary: '{symbol} को {num} और {den} से समकोण त्रिभुज में निकालें।',
-    metaTitle: '{title} | समकोण त्रिभुज {symbol}',
-    metaDescription: '{title} से {symbol} निकालें। सूत्र {formula}, चरण, उदाहरण, आरेख और सामान्य गलतियां देखें।',
-    calculatorHeading: '{name} अनुपात की गणना करें',
-    introHeading: 'यह {title} कैसे काम करता है',
-    intro: [
-      '{name} अनुपात कोण A को {num} और {den} से जोड़ता है। सही दो भुजाएं दर्ज करने पर यह टूल {symbol} तुरंत देता है।',
-      'यह कैलकुलेटर हाथ से भाग देने की गलती कम करता है और वही सूत्र दिखाता है जो ज्यामिति में उपयोग होता है: {formula}।'
-    ],
-    calculatorNote: '{num} और {den} के सकारात्मक मान दर्ज करें। यदि कर्ण c शामिल है, तो वह संबंधित पैर से लंबा होना चाहिए।',
-    formulaParagraphs: [
-      '{symbol} का मान {num} को {den} से भाग देकर मिलता है। इसलिए सूत्र {formula} है।',
-      'भुजाएं हमेशा कोण A के सापेक्ष पहचानें। दोनों माप एक ही इकाई में हों तो अनुपात बिना इकाई का रहता है।'
-    ],
-    diagramExplanation: [
-      'आरेख में a विपरीत भुजा, b सन्निकट भुजा और c कर्ण है।',
-      '{symbol} केवल {num} और {den} का उपयोग करता है। बाकी भुजा पहचानने में मदद करती है, लेकिन इस अनुपात में शामिल नहीं होती।'
-    ],
-    howToSteps: [
-      'समकोण त्रिभुज में कोण A पहचानें।',
-      '{num} खोजें।',
-      '{den} खोजें।',
-      'पहला मान कैलकुलेटर में दर्ज करें।',
-      'दूसरा मान उसी इकाई में दर्ज करें।',
-      'Calculate बटन दबाकर {symbol} देखें।',
-      'परिणाम की जांच करें: {range}'
-    ],
-    exampleIntro: 'मान लें कि {values} हैं।',
-    exampleConclusion: 'परिणाम {symbol} = {result} है। यदि कोण चाहिए, तो inverse trig से A लगभग {angle} मिलता है।',
-    resultMeaning: [
-      '{symbol} बताता है कि {num} की लंबाई {den} की तुलना में कितनी है।',
-      '{range}',
-      'अनुपात में इकाई नहीं होती, इसलिए सेंटीमीटर, इंच या मीटर में मापने पर भी मान वही रहता है।'
-    ],
-    rangeNotes: {
-      zeroOne: 'समकोण त्रिभुज के तीव्र कोण के लिए मान 0 और 1 के बीच रहता है।',
-      positiveAny: 'यह मान कोई भी सकारात्मक संख्या हो सकता है।',
-      greaterOne: 'यह मान हमेशा 1 से बड़ा या बराबर होता है।'
-    },
-    whenIntro: '{name} अनुपात कैलकुलेटर का उपयोग तब करें जब:',
-    whenItems: [
-      'आपके पास {num} और {den} हैं और {symbol} चाहिए।',
-      'आप homework या परीक्षा का उत्तर जांच रहे हैं।',
-      'आप inverse trig से कोण A निकालने की तैयारी कर रहे हैं।',
-      'आप बल, ढलान, रैंप या दूरी के घटक पर काम कर रहे हैं।',
-      'आप दूसरे त्रिकोणमितीय अनुपात से तुलना करना चाहते हैं।'
-    ],
-    mistakesIntro: '{name} अनुपात निकालते समय इन गलतियों से बचें:',
-    mistakeItems: [
-      'गलत भुजा चुनना। हमेशा कोण A के सापेक्ष {num} और {den} पहचानें।',
-      'भिन्न को उल्टा लिखना। सही सूत्र {formula} है।',
-      'अलग-अलग इकाइयों को बिना बदलें जोड़ना या भाग देना।',
-      '90 डिग्री कोण को कोण A मान लेना। अनुपात तीव्र कोण के लिए है।',
-      'कर्ण c को सबसे लंबी भुजा के रूप में जांचना भूल जाना।'
-    ],
-    faqs: [
-      { question: '{symbol} का सूत्र क्या है?', answer: 'सूत्र {formula} है, जहां {num} अंश में और {den} हर में होता है।' },
-      { question: 'क्या {symbol} की कोई इकाई होती है?', answer: 'नहीं। यह दो लंबाइयों का अनुपात है, इसलिए इकाई रद्द हो जाती है।' },
-      { question: 'क्या इससे कोण A मिल सकता है?', answer: 'यह पेज अनुपात देता है। कोण के लिए inverse trig या right triangle angle calculator उपयोग करें।' },
-      { question: '{name} और {reciprocalName} में क्या संबंध है?', answer: '{reciprocalName} {name} का reciprocal अनुपात है। एक मान पता हो तो दूसरा 1 से भाग देकर मिल सकता है।' },
-      { question: 'कौन सी भुजाएं दर्ज करनी हैं?', answer: '{symbol} के लिए {num} और {den} दर्ज करें।' }
-    ]
-  },
-  es: {
-    ratioNames: { sine: 'seno', cosine: 'coseno', tangent: 'tangente', cotangent: 'cotangente', secant: 'secante', cosecant: 'cosecante' },
-    sideNames: { opposite: 'lado opuesto', adjacent: 'lado adyacente', hypotenuse: 'hipotenusa' },
-    ui: createUi({
-      home: 'Inicio',
-      badge: 'Calculadora de razones trigonométricas',
-      parentPageLabel: 'Calculadora de razones trigonométricas de triángulo rectángulo',
-      formula: 'Fórmula',
-      triangleDiagram: 'Diagrama del triángulo',
-      ratioHighlight: 'Razón destacada',
-      numerator: 'Numerador',
-      denominator: 'Denominador',
-      sideKey: 'Clave de lados',
-      howToUse: 'Cómo usar esta calculadora',
-      stepByStepExample: 'Ejemplo paso a paso',
-      whatResultMeans: 'Qué significa el resultado',
-      whenToUse: 'Cuándo usar esta razón',
-      commonMistakes: 'Errores comunes',
-      relatedCalculators: 'Calculadoras relacionadas',
-      openTool: 'Abrir herramienta',
-      faqHeading: 'Preguntas frecuentes',
-      rightAngle: '90 grados',
-      sideRoles: {
-        a: { role: 'lado opuesto', description: 'frente al ángulo A', short: 'opuesto', label: 'a = lado opuesto' },
-        b: { role: 'lado adyacente', description: 'junto al ángulo A', short: 'adyacente', label: 'b = lado adyacente' },
-        c: { role: 'hipotenusa', description: 'lado más largo, opuesto a 90 grados', short: 'hipotenusa', label: 'c = hipotenusa' }
-      },
-      usedInPattern: 'Usado en {label}',
-      notUsedInPattern: 'No se usa en {label}'
-    }),
-    relatedAngleCalculator: 'Calculadora de ángulos de triángulo rectángulo',
-    pageTitle: 'Calculadora de razón de {name}',
-    headerSummary: 'Calcula {symbol} con {num} y {den} en un triángulo rectángulo.',
-    metaTitle: '{title} | {symbol} en triángulo rectángulo',
-    metaDescription: 'Usa esta {title} para calcular {symbol} con la fórmula {formula}, pasos claros, ejemplo y diagrama.',
-    calculatorHeading: 'Calcular razón de {name}',
-    introHeading: 'Cómo funciona esta {title}',
-    intro: [
-      'La razón de {name} conecta el ángulo A con {num} y {den}. Al escribir esas dos longitudes, la herramienta devuelve {symbol}.',
-      'La calculadora evita la división manual y muestra la misma relación usada en geometría: {formula}.'
-    ],
-    calculatorNote: 'Introduce valores positivos para {num} y {den}. Si aparece la hipotenusa c, debe ser mayor que el cateto correspondiente.',
-    formulaParagraphs: [
-      '{symbol} se obtiene dividiendo {num} entre {den}. Por eso la fórmula es {formula}.',
-      'Identifica siempre los lados respecto al ángulo A. Si las medidas tienen la misma unidad, la razón no tiene unidad.'
-    ],
-    diagramExplanation: [
-      'En el diagrama, a es el lado opuesto, b es el lado adyacente y c es la hipotenusa.',
-      '{symbol} usa solo {num} y {den}. El otro lado ayuda a orientar el triángulo, pero no entra en esta razón.'
-    ],
-    howToSteps: [
-      'Localiza el ángulo A en el triángulo rectángulo.',
-      'Identifica {num}.',
-      'Identifica {den}.',
-      'Escribe el primer valor en la calculadora.',
-      'Escribe el segundo valor con la misma unidad.',
-      'Pulsa Calculate para obtener {symbol}.',
-      'Comprueba el resultado: {range}'
-    ],
-    exampleIntro: 'Supón que {values}.',
-    exampleConclusion: 'El resultado es {symbol} = {result}. Si necesitas el ángulo, usa la función inversa y obtendrás A aproximadamente {angle}.',
-    resultMeaning: [
-      '{symbol} indica qué tan grande es {num} en comparación con {den}.',
-      '{range}',
-      'El resultado no tiene unidades porque es una comparación entre dos longitudes.'
-    ],
-    rangeNotes: {
-      zeroOne: 'Para un ángulo agudo de un triángulo rectángulo, el valor está entre 0 y 1.',
-      positiveAny: 'El valor puede ser cualquier número positivo.',
-      greaterOne: 'El valor siempre es mayor o igual que 1.'
-    },
-    whenIntro: 'Usa la calculadora de {name} cuando:',
-    whenItems: [
-      'conoces {num} y {den} y necesitas {symbol}.',
-      'quieres revisar una respuesta de tarea o examen.',
-      'vas a calcular el ángulo A con una función inversa.',
-      'trabajas con pendiente, rampas, fuerzas o componentes de distancia.',
-      'quieres comparar esta razón con otra razón trigonométrica.'
-    ],
-    mistakesIntro: 'Evita estos errores al calcular {name}:',
-    mistakeItems: [
-      'Elegir el lado equivocado. Identifica {num} y {den} desde el ángulo A.',
-      'Invertir la fracción. La fórmula correcta es {formula}.',
-      'Mezclar unidades diferentes sin convertirlas.',
-      'Usar el ángulo de 90 grados como ángulo A.',
-      'Olvidar que la hipotenusa c debe ser el lado más largo.'
-    ],
-    faqs: [
-      { question: '¿Cuál es la fórmula de {symbol}?', answer: 'La fórmula es {formula}; {num} va en el numerador y {den} en el denominador.' },
-      { question: '¿{symbol} tiene unidades?', answer: 'No. Es una razón entre dos longitudes, así que las unidades se cancelan.' },
-      { question: '¿Puedo encontrar el ángulo A?', answer: 'Esta página da la razón. Para el ángulo, usa la función inversa o la calculadora de ángulos.' },
-      { question: '¿Cómo se relacionan {name} y {reciprocalName}?', answer: '{reciprocalName} es la razón recíproca de {name}. Si conoces una, puedes obtener la otra con 1 dividido por ese valor.' },
-      { question: '¿Qué lados debo introducir?', answer: 'Para {symbol}, introduce {num} y {den}.' }
-    ]
-  },
-  ru: {
-    ratioNames: { sine: 'синуса', cosine: 'косинуса', tangent: 'тангенса', cotangent: 'котангенса', secant: 'секанса', cosecant: 'косеканса' },
-    sideNames: { opposite: 'противолежащий катет', adjacent: 'прилежащий катет', hypotenuse: 'гипотенуза' },
-    ui: createUi({
-      home: 'Главная',
-      badge: 'Калькулятор тригонометрических отношений',
-      parentPageLabel: 'Калькулятор тригонометрических отношений прямоугольного треугольника',
-      formula: 'Формула',
-      triangleDiagram: 'Схема треугольника',
-      ratioHighlight: 'Выделенное отношение',
-      numerator: 'Числитель',
-      denominator: 'Знаменатель',
-      sideKey: 'Обозначения сторон',
-      howToUse: 'Как пользоваться калькулятором',
-      stepByStepExample: 'Пошаговый пример',
-      whatResultMeans: 'Что означает результат',
-      whenToUse: 'Когда использовать это отношение',
-      commonMistakes: 'Частые ошибки',
-      relatedCalculators: 'Связанные калькуляторы',
-      openTool: 'Открыть инструмент',
-      faqHeading: 'Частые вопросы',
-      rightAngle: '90 градусов',
-      sideRoles: {
-        a: { role: 'противолежащий катет', description: 'напротив угла A', short: 'противолежащий', label: 'a = противолежащий катет' },
-        b: { role: 'прилежащий катет', description: 'рядом с углом A', short: 'прилежащий', label: 'b = прилежащий катет' },
-        c: { role: 'гипотенуза', description: 'самая длинная сторона, напротив 90 градусов', short: 'гипотенуза', label: 'c = гипотенуза' }
-      },
-      usedInPattern: 'Используется в {label}',
-      notUsedInPattern: 'Не используется в {label}'
-    }),
-    relatedAngleCalculator: 'Калькулятор углов прямоугольного треугольника',
-    pageTitle: 'Калькулятор отношения {name}',
-    headerSummary: 'Вычислите {symbol} по {num} и {den} в прямоугольном треугольнике.',
-    metaTitle: '{title} | {symbol} в прямоугольном треугольнике',
-    metaDescription: 'Используйте {title}, чтобы найти {symbol}: формула {formula}, шаги, пример и схема.',
-    calculatorHeading: 'Вычислить отношение {name}',
-    introHeading: 'Как работает {title}',
-    intro: [
-      'Отношение {name} связывает угол A с величинами {num} и {den}. Введите эти две длины, и инструмент найдет {symbol}.',
-      'Калькулятор убирает ручное деление и показывает геометрическую формулу: {formula}.'
-    ],
-    calculatorNote: 'Введите положительные значения для {num} и {den}. Если используется гипотенуза c, она должна быть длиннее соответствующего катета.',
-    formulaParagraphs: [
-      '{symbol} равно {num}, деленному на {den}. Поэтому формула имеет вид {formula}.',
-      'Определяйте стороны относительно угла A. При одинаковых единицах измерения результат является безразмерным отношением.'
-    ],
-    diagramExplanation: [
-      'На схеме a - противолежащий катет, b - прилежащий катет, c - гипотенуза.',
-      '{symbol} использует только {num} и {den}. Третья сторона нужна для ориентации, но в это отношение не входит.'
-    ],
-    howToSteps: [
-      'Найдите угол A в прямоугольном треугольнике.',
-      'Определите {num}.',
-      'Определите {den}.',
-      'Введите первое значение в калькулятор.',
-      'Введите второе значение в той же единице.',
-      'Нажмите Calculate, чтобы получить {symbol}.',
-      'Проверьте результат: {range}'
-    ],
-    exampleIntro: 'Пусть {values}.',
-    exampleConclusion: 'Получаем {symbol} = {result}. Если нужен угол, примените обратную функцию: A примерно {angle}.',
-    resultMeaning: [
-      '{symbol} показывает, как {num} соотносится с {den}.',
-      '{range}',
-      'Единицы сокращаются, поэтому отношение не зависит от того, измерены стороны в сантиметрах, метрах или дюймах.'
-    ],
-    rangeNotes: {
-      zeroOne: 'Для острого угла прямоугольного треугольника значение лежит между 0 и 1.',
-      positiveAny: 'Значение может быть любым положительным числом.',
-      greaterOne: 'Значение всегда больше или равно 1.'
-    },
-    whenIntro: 'Используйте калькулятор {name}, когда:',
-    whenItems: [
-      'известны {num} и {den}, а нужно найти {symbol}.',
-      'нужно проверить ответ в задаче или домашней работе.',
-      'вы готовитесь найти угол A через обратную тригонометрическую функцию.',
-      'вы работаете с уклоном, рампой, силой или компонентами расстояния.',
-      'нужно сравнить это отношение с другим тригонометрическим отношением.'
-    ],
-    mistakesIntro: 'При вычислении {name} избегайте ошибок:',
-    mistakeItems: [
-      'Не выбирайте неправильную сторону. Определяйте {num} и {den} от угла A.',
-      'Не переворачивайте дробь. Правильная формула: {formula}.',
-      'Не смешивайте разные единицы без перевода.',
-      'Не берите угол 90 градусов за угол A.',
-      'Помните, что гипотенуза c должна быть самой длинной стороной.'
-    ],
-    faqs: [
-      { question: 'Какая формула для {symbol}?', answer: 'Формула: {formula}. Здесь {num} стоит в числителе, а {den} в знаменателе.' },
-      { question: 'Есть ли у {symbol} единицы?', answer: 'Нет. Это отношение двух длин, поэтому единицы сокращаются.' },
-      { question: 'Можно ли найти угол A?', answer: 'Эта страница дает отношение. Для угла используйте обратную функцию или калькулятор углов.' },
-      { question: 'Как связаны {name} и {reciprocalName}?', answer: '{reciprocalName} является обратным отношением к {name}. Если известно одно значение, второе равно 1, деленному на него.' },
-      { question: 'Какие стороны вводить?', answer: 'Для {symbol} введите {num} и {den}.' }
-    ]
-  },
-  fr: {
-    ratioNames: { sine: 'sinus', cosine: 'cosinus', tangent: 'tangente', cotangent: 'cotangente', secant: 'sécante', cosecant: 'cosécante' },
-    sideNames: { opposite: 'côté opposé', adjacent: 'côté adjacent', hypotenuse: 'hypoténuse' },
-    ui: createUi({
-      home: 'Accueil',
-      badge: 'Calculateur de rapports trigonométriques',
-      parentPageLabel: 'Calculateur de rapports trigonométriques du triangle rectangle',
-      formula: 'Formule',
-      triangleDiagram: 'Schéma du triangle',
-      ratioHighlight: 'Rapport mis en évidence',
-      numerator: 'Numérateur',
-      denominator: 'Dénominateur',
-      sideKey: 'Clé des côtés',
-      howToUse: 'Comment utiliser ce calculateur',
-      stepByStepExample: 'Exemple étape par étape',
-      whatResultMeans: 'Signification du résultat',
-      whenToUse: 'Quand utiliser ce rapport',
-      commonMistakes: 'Erreurs courantes',
-      relatedCalculators: 'Calculateurs associés',
-      openTool: 'Ouvrir l outil',
-      faqHeading: 'Questions fréquentes',
-      rightAngle: '90 degrés',
-      sideRoles: {
-        a: { role: 'côté opposé', description: 'en face de l angle A', short: 'opposé', label: 'a = côté opposé' },
-        b: { role: 'côté adjacent', description: 'à côté de l angle A', short: 'adjacent', label: 'b = côté adjacent' },
-        c: { role: 'hypoténuse', description: 'côté le plus long, opposé à 90 degrés', short: 'hypoténuse', label: 'c = hypoténuse' }
-      },
-      usedInPattern: 'Utilisé dans {label}',
-      notUsedInPattern: 'Non utilisé dans {label}'
-    }),
-    relatedAngleCalculator: 'Calculateur d angle de triangle rectangle',
-    pageTitle: 'Calculateur du rapport de {name}',
-    headerSummary: 'Calculez {symbol} avec {num} et {den} dans un triangle rectangle.',
-    metaTitle: '{title} | {symbol} dans un triangle rectangle',
-    metaDescription: 'Utilisez ce {title} pour trouver {symbol} avec la formule {formula}, des étapes, un exemple et un schéma.',
-    calculatorHeading: 'Calculer le rapport de {name}',
-    introHeading: 'Fonctionnement de ce {title}',
-    intro: [
-      'Le rapport de {name} relie l angle A à {num} et {den}. Entrez ces deux longueurs pour obtenir {symbol}.',
-      'Le calculateur évite la division manuelle et affiche la relation géométrique: {formula}.'
-    ],
-    calculatorNote: 'Entrez des valeurs positives pour {num} et {den}. Si l hypoténuse c est utilisée, elle doit être plus longue que le côté concerné.',
-    formulaParagraphs: [
-      '{symbol} est égal à {num} divisé par {den}. La formule est donc {formula}.',
-      'Identifiez toujours les côtés par rapport à l angle A. Avec les mêmes unités, le résultat est un rapport sans unité.'
-    ],
-    diagramExplanation: [
-      'Dans le schéma, a est le côté opposé, b est le côté adjacent et c est l hypoténuse.',
-      '{symbol} utilise seulement {num} et {den}. Le troisième côté aide à lire le triangle, mais il ne fait pas partie du rapport.'
-    ],
-    howToSteps: [
-      'Repérez l angle A dans le triangle rectangle.',
-      'Identifiez {num}.',
-      'Identifiez {den}.',
-      'Saisissez la première valeur dans le calculateur.',
-      'Saisissez la deuxième valeur dans la même unité.',
-      'Appuyez sur Calculate pour obtenir {symbol}.',
-      'Vérifiez le résultat: {range}'
-    ],
-    exampleIntro: 'Supposons que {values}.',
-    exampleConclusion: 'Le résultat est {symbol} = {result}. Pour trouver l angle, utilisez la fonction inverse: A vaut environ {angle}.',
-    resultMeaning: [
-      '{symbol} indique la taille de {num} par rapport à {den}.',
-      '{range}',
-      'Le rapport n a pas d unité, car deux longueurs de même unité sont comparées.'
-    ],
-    rangeNotes: {
-      zeroOne: 'Pour un angle aigu de triangle rectangle, la valeur est comprise entre 0 et 1.',
-      positiveAny: 'La valeur peut être n importe quel nombre positif.',
-      greaterOne: 'La valeur est toujours supérieure ou égale à 1.'
-    },
-    whenIntro: 'Utilisez le calculateur de {name} lorsque:',
-    whenItems: [
-      'vous connaissez {num} et {den} et vous voulez {symbol}.',
-      'vous vérifiez un devoir ou une réponse d examen.',
-      'vous préparez le calcul de l angle A avec une fonction inverse.',
-      'vous travaillez sur une pente, une rampe, une force ou une composante de distance.',
-      'vous voulez comparer ce rapport à un autre rapport trigonométrique.'
-    ],
-    mistakesIntro: 'Évitez ces erreurs avec {name}:',
-    mistakeItems: [
-      'Choisir le mauvais côté. Déterminez {num} et {den} depuis l angle A.',
-      'Inverser la fraction. La bonne formule est {formula}.',
-      'Mélanger des unités différentes sans conversion.',
-      'Utiliser l angle droit comme angle A.',
-      'Oublier que l hypoténuse c doit être le côté le plus long.'
-    ],
-    faqs: [
-      { question: 'Quelle est la formule de {symbol}?', answer: 'La formule est {formula}: {num} est au numérateur et {den} au dénominateur.' },
-      { question: '{symbol} a-t-il une unité?', answer: 'Non. C est un rapport entre deux longueurs, donc les unités se simplifient.' },
-      { question: 'Puis-je trouver l angle A?', answer: 'Cette page donne le rapport. Pour l angle, utilisez la fonction inverse ou le calculateur d angles.' },
-      { question: 'Quel est le lien entre {name} et {reciprocalName}?', answer: '{reciprocalName} est le rapport réciproque de {name}. Si vous connaissez l un, l autre vaut 1 divisé par cette valeur.' },
-      { question: 'Quels côtés faut-il entrer?', answer: 'Pour {symbol}, entrez {num} et {den}.' }
-    ]
-  },
-  de: {
-    ratioNames: { sine: 'Sinus', cosine: 'Kosinus', tangent: 'Tangens', cotangent: 'Kotangens', secant: 'Sekans', cosecant: 'Kosekans' },
-    sideNames: { opposite: 'Gegenkathete', adjacent: 'Ankathete', hypotenuse: 'Hypotenuse' },
-    ui: createUi({
-      home: 'Startseite',
-      badge: 'Rechner für trigonometrische Verhältnisse',
-      parentPageLabel: 'Rechner für trigonometrische Verhältnisse im rechtwinkligen Dreieck',
-      formula: 'Formel',
-      triangleDiagram: 'Dreiecksdiagramm',
-      ratioHighlight: 'Verhältnis im Fokus',
-      numerator: 'Zähler',
-      denominator: 'Nenner',
-      sideKey: 'Seitenschlüssel',
-      howToUse: 'So verwenden Sie diesen Rechner',
-      stepByStepExample: 'Beispiel Schritt für Schritt',
-      whatResultMeans: 'Was das Ergebnis bedeutet',
-      whenToUse: 'Wann dieses Verhältnis nützlich ist',
-      commonMistakes: 'Häufige Fehler',
-      relatedCalculators: 'Verwandte Rechner',
-      openTool: 'Tool öffnen',
-      faqHeading: 'Häufige Fragen',
-      rightAngle: '90 Grad',
-      sideRoles: {
-        a: { role: 'Gegenkathete', description: 'gegenüber von Winkel A', short: 'gegenüber', label: 'a = Gegenkathete' },
-        b: { role: 'Ankathete', description: 'neben Winkel A', short: 'anliegend', label: 'b = Ankathete' },
-        c: { role: 'Hypotenuse', description: 'längste Seite, gegenüber 90 Grad', short: 'Hypotenuse', label: 'c = Hypotenuse' }
-      },
-      usedInPattern: 'Verwendet in {label}',
-      notUsedInPattern: 'Nicht verwendet in {label}'
-    }),
-    relatedAngleCalculator: 'Winkelrechner für rechtwinklige Dreiecke',
-    pageTitle: '{name}-Verhältnis-Rechner',
-    headerSummary: 'Berechnen Sie {symbol} aus {num} und {den} im rechtwinkligen Dreieck.',
-    metaTitle: '{title} | {symbol} im rechtwinkligen Dreieck',
-    metaDescription: 'Nutzen Sie den {title}, um {symbol} mit Formel {formula}, Schritten, Beispiel und Diagramm zu bestimmen.',
-    calculatorHeading: '{name}-Verhältnis berechnen',
-    introHeading: 'So funktioniert dieser {title}',
-    intro: [
-      'Das {name}-Verhältnis verbindet Winkel A mit {num} und {den}. Geben Sie diese zwei Längen ein, um {symbol} zu erhalten.',
-      'Der Rechner übernimmt die Division und zeigt die geometrische Beziehung: {formula}.'
-    ],
-    calculatorNote: 'Geben Sie positive Werte für {num} und {den} ein. Wenn Hypotenuse c vorkommt, muss sie länger als die betreffende Kathete sein.',
-    formulaParagraphs: [
-      '{symbol} ist {num} geteilt durch {den}. Daher lautet die Formel {formula}.',
-      'Bestimmen Sie die Seiten immer relativ zu Winkel A. Bei gleichen Einheiten ist das Ergebnis ein einheitenloses Verhältnis.'
-    ],
-    diagramExplanation: [
-      'Im Diagramm ist a die Gegenkathete, b die Ankathete und c die Hypotenuse.',
-      '{symbol} verwendet nur {num} und {den}. Die dritte Seite hilft bei der Orientierung, gehört aber nicht zu diesem Verhältnis.'
-    ],
-    howToSteps: [
-      'Suchen Sie Winkel A im rechtwinkligen Dreieck.',
-      'Bestimmen Sie {num}.',
-      'Bestimmen Sie {den}.',
-      'Geben Sie den ersten Wert in den Rechner ein.',
-      'Geben Sie den zweiten Wert in derselben Einheit ein.',
-      'Klicken Sie auf Calculate, um {symbol} zu sehen.',
-      'Prüfen Sie das Ergebnis: {range}'
-    ],
-    exampleIntro: 'Angenommen, {values}.',
-    exampleConclusion: 'Das Ergebnis ist {symbol} = {result}. Für den Winkel verwenden Sie die Umkehrfunktion: A ist ungefähr {angle}.',
-    resultMeaning: [
-      '{symbol} zeigt, wie groß {num} im Vergleich zu {den} ist.',
-      '{range}',
-      'Das Ergebnis hat keine Einheit, weil zwei Längen miteinander verglichen werden.'
-    ],
-    rangeNotes: {
-      zeroOne: 'Für einen spitzen Winkel im rechtwinkligen Dreieck liegt der Wert zwischen 0 und 1.',
-      positiveAny: 'Der Wert kann jede positive Zahl sein.',
-      greaterOne: 'Der Wert ist immer größer oder gleich 1.'
-    },
-    whenIntro: 'Verwenden Sie den {name}-Rechner, wenn:',
-    whenItems: [
-      'Sie {num} und {den} kennen und {symbol} benötigen.',
-      'Sie eine Hausaufgabe oder Prüfungslösung prüfen.',
-      'Sie Winkel A mit einer Umkehrfunktion bestimmen möchten.',
-      'Sie mit Steigung, Rampe, Kraft oder Distanzkomponenten arbeiten.',
-      'Sie dieses Verhältnis mit einem anderen trigonometrischen Verhältnis vergleichen.'
-    ],
-    mistakesIntro: 'Vermeiden Sie diese Fehler beim {name}:',
-    mistakeItems: [
-      'Die falsche Seite wählen. Bestimmen Sie {num} und {den} vom Winkel A aus.',
-      'Den Bruch umdrehen. Die richtige Formel ist {formula}.',
-      'Unterschiedliche Einheiten ohne Umrechnung verwenden.',
-      'Den rechten Winkel als Winkel A verwenden.',
-      'Vergessen, dass die Hypotenuse c die längste Seite sein muss.'
-    ],
-    faqs: [
-      { question: 'Wie lautet die Formel für {symbol}?', answer: 'Die Formel lautet {formula}. {num} steht im Zähler und {den} im Nenner.' },
-      { question: 'Hat {symbol} eine Einheit?', answer: 'Nein. Es ist ein Verhältnis zweier Längen, daher kürzen sich die Einheiten weg.' },
-      { question: 'Kann ich Winkel A finden?', answer: 'Diese Seite liefert das Verhältnis. Für den Winkel nutzen Sie die Umkehrfunktion oder den Winkelrechner.' },
-      { question: 'Wie hängen {name} und {reciprocalName} zusammen?', answer: '{reciprocalName} ist das Kehrwert-Verhältnis von {name}. Ist ein Wert bekannt, erhalten Sie den anderen durch 1 geteilt durch diesen Wert.' },
-      { question: 'Welche Seiten gebe ich ein?', answer: 'Für {symbol} geben Sie {num} und {den} ein.' }
-    ]
-  },
-  it: {
-    ratioNames: { sine: 'seno', cosine: 'coseno', tangent: 'tangente', cotangent: 'cotangente', secant: 'secante', cosecant: 'cosecante' },
-    sideNames: { opposite: 'lato opposto', adjacent: 'lato adiacente', hypotenuse: 'ipotenusa' },
-    ui: createUi({
-      home: 'Home',
-      badge: 'Calcolatore di rapporti trigonometrici',
-      parentPageLabel: 'Calcolatore dei rapporti trigonometrici del triangolo rettangolo',
-      formula: 'Formula',
-      triangleDiagram: 'Diagramma del triangolo',
-      ratioHighlight: 'Rapporto evidenziato',
-      numerator: 'Numeratore',
-      denominator: 'Denominatore',
-      sideKey: 'Legenda dei lati',
-      howToUse: 'Come usare questo calcolatore',
-      stepByStepExample: 'Esempio passo passo',
-      whatResultMeans: 'Significato del risultato',
-      whenToUse: 'Quando usare questo rapporto',
-      commonMistakes: 'Errori comuni',
-      relatedCalculators: 'Calcolatori correlati',
-      openTool: 'Apri strumento',
-      faqHeading: 'Domande frequenti',
-      rightAngle: '90 gradi',
-      sideRoles: {
-        a: { role: 'lato opposto', description: 'di fronte all angolo A', short: 'opposto', label: 'a = lato opposto' },
-        b: { role: 'lato adiacente', description: 'vicino all angolo A', short: 'adiacente', label: 'b = lato adiacente' },
-        c: { role: 'ipotenusa', description: 'lato più lungo, opposto a 90 gradi', short: 'ipotenusa', label: 'c = ipotenusa' }
-      },
-      usedInPattern: 'Usato in {label}',
-      notUsedInPattern: 'Non usato in {label}'
-    }),
-    relatedAngleCalculator: 'Calcolatore degli angoli del triangolo rettangolo',
-    pageTitle: 'Calcolatore del rapporto di {name}',
-    headerSummary: 'Calcola {symbol} da {num} e {den} in un triangolo rettangolo.',
-    metaTitle: '{title} | {symbol} nel triangolo rettangolo',
-    metaDescription: 'Usa questo {title} per trovare {symbol} con formula {formula}, passaggi, esempio e diagramma.',
-    calculatorHeading: 'Calcola il rapporto di {name}',
-    introHeading: 'Come funziona questo {title}',
-    intro: [
-      'Il rapporto di {name} collega l angolo A con {num} e {den}. Inserendo queste due lunghezze ottieni {symbol}.',
-      'Il calcolatore evita la divisione manuale e mostra la relazione geometrica: {formula}.'
-    ],
-    calculatorNote: 'Inserisci valori positivi per {num} e {den}. Se è presente l ipotenusa c, deve essere più lunga del cateto corrispondente.',
-    formulaParagraphs: [
-      '{symbol} è uguale a {num} diviso per {den}. La formula è quindi {formula}.',
-      'Identifica sempre i lati rispetto all angolo A. Con la stessa unità di misura il risultato è un rapporto senza unità.'
-    ],
-    diagramExplanation: [
-      'Nel diagramma, a è il lato opposto, b è il lato adiacente e c è l ipotenusa.',
-      '{symbol} usa solo {num} e {den}. L altro lato aiuta a orientare il triangolo, ma non entra nel rapporto.'
-    ],
-    howToSteps: [
-      'Trova l angolo A nel triangolo rettangolo.',
-      'Individua {num}.',
-      'Individua {den}.',
-      'Inserisci il primo valore nel calcolatore.',
-      'Inserisci il secondo valore nella stessa unità.',
-      'Premi Calculate per ottenere {symbol}.',
-      'Controlla il risultato: {range}'
-    ],
-    exampleIntro: 'Supponiamo che {values}.',
-    exampleConclusion: 'Il risultato è {symbol} = {result}. Per trovare l angolo, usa la funzione inversa: A è circa {angle}.',
-    resultMeaning: [
-      '{symbol} mostra quanto è grande {num} rispetto a {den}.',
-      '{range}',
-      'Il risultato non ha unità perché confronta due lunghezze.'
-    ],
-    rangeNotes: {
-      zeroOne: 'Per un angolo acuto di un triangolo rettangolo, il valore è tra 0 e 1.',
-      positiveAny: 'Il valore può essere qualsiasi numero positivo.',
-      greaterOne: 'Il valore è sempre maggiore o uguale a 1.'
-    },
-    whenIntro: 'Usa il calcolatore di {name} quando:',
-    whenItems: [
-      'conosci {num} e {den} e ti serve {symbol}.',
-      'devi verificare un compito o una risposta d esame.',
-      'vuoi trovare l angolo A con una funzione inversa.',
-      'lavori con pendenze, rampe, forze o componenti di distanza.',
-      'vuoi confrontare questo rapporto con un altro rapporto trigonometrico.'
-    ],
-    mistakesIntro: 'Evita questi errori nel calcolo di {name}:',
-    mistakeItems: [
-      'Scegliere il lato sbagliato. Identifica {num} e {den} dall angolo A.',
-      'Invertire la frazione. La formula corretta è {formula}.',
-      'Mescolare unità diverse senza conversione.',
-      'Usare l angolo di 90 gradi come angolo A.',
-      'Dimenticare che l ipotenusa c deve essere il lato più lungo.'
-    ],
-    faqs: [
-      { question: 'Qual è la formula di {symbol}?', answer: 'La formula è {formula}; {num} è al numeratore e {den} al denominatore.' },
-      { question: '{symbol} ha unità?', answer: 'No. È un rapporto tra due lunghezze, quindi le unità si annullano.' },
-      { question: 'Posso trovare l angolo A?', answer: 'Questa pagina restituisce il rapporto. Per l angolo usa la funzione inversa o il calcolatore degli angoli.' },
-      { question: 'Come sono collegati {name} e {reciprocalName}?', answer: '{reciprocalName} è il rapporto reciproco di {name}. Se conosci uno, l altro è 1 diviso quel valore.' },
-      { question: 'Quali lati devo inserire?', answer: 'Per {symbol}, inserisci {num} e {den}.' }
-    ]
-  },
-  pt: {
-    ratioNames: { sine: 'seno', cosine: 'cosseno', tangent: 'tangente', cotangent: 'cotangente', secant: 'secante', cosecant: 'cossecante' },
-    sideNames: { opposite: 'lado oposto', adjacent: 'lado adjacente', hypotenuse: 'hipotenusa' },
-    ui: createUi({
-      home: 'Início',
-      badge: 'Calculadora de razões trigonométricas',
-      parentPageLabel: 'Calculadora de razões trigonométricas de triângulo retângulo',
-      formula: 'Fórmula',
-      triangleDiagram: 'Diagrama do triângulo',
-      ratioHighlight: 'Razão em destaque',
-      numerator: 'Numerador',
-      denominator: 'Denominador',
-      sideKey: 'Chave dos lados',
-      howToUse: 'Como usar esta calculadora',
-      stepByStepExample: 'Exemplo passo a passo',
-      whatResultMeans: 'O que o resultado significa',
-      whenToUse: 'Quando usar esta razão',
-      commonMistakes: 'Erros comuns',
-      relatedCalculators: 'Calculadoras relacionadas',
-      openTool: 'Abrir ferramenta',
-      faqHeading: 'Perguntas frequentes',
-      rightAngle: '90 graus',
-      sideRoles: {
-        a: { role: 'lado oposto', description: 'em frente ao ângulo A', short: 'oposto', label: 'a = lado oposto' },
-        b: { role: 'lado adjacente', description: 'junto ao ângulo A', short: 'adjacente', label: 'b = lado adjacente' },
-        c: { role: 'hipotenusa', description: 'lado mais longo, oposto a 90 graus', short: 'hipotenusa', label: 'c = hipotenusa' }
-      },
-      usedInPattern: 'Usado em {label}',
-      notUsedInPattern: 'Não usado em {label}'
-    }),
-    relatedAngleCalculator: 'Calculadora de ângulos de triângulo retângulo',
-    pageTitle: 'Calculadora da razão de {name}',
-    headerSummary: 'Calcule {symbol} usando {num} e {den} em um triângulo retângulo.',
-    metaTitle: '{title} | {symbol} no triângulo retângulo',
-    metaDescription: 'Use esta {title} para encontrar {symbol} com a fórmula {formula}, passos, exemplo e diagrama.',
-    calculatorHeading: 'Calcular razão de {name}',
-    introHeading: 'Como esta {title} funciona',
-    intro: [
-      'A razão de {name} liga o ângulo A a {num} e {den}. Informe essas duas medidas para obter {symbol}.',
-      'A calculadora evita a divisão manual e mostra a relação geométrica: {formula}.'
-    ],
-    calculatorNote: 'Digite valores positivos para {num} e {den}. Se a hipotenusa c aparecer, ela deve ser maior que o cateto correspondente.',
-    formulaParagraphs: [
-      '{symbol} é {num} dividido por {den}. Por isso a fórmula é {formula}.',
-      'Identifique os lados sempre em relação ao ângulo A. Com a mesma unidade, o resultado é uma razão sem unidade.'
-    ],
-    diagramExplanation: [
-      'No diagrama, a é o lado oposto, b é o lado adjacente e c é a hipotenusa.',
-      '{symbol} usa apenas {num} e {den}. O outro lado ajuda na leitura do triângulo, mas não entra nessa razão.'
-    ],
-    howToSteps: [
-      'Localize o ângulo A no triângulo retângulo.',
-      'Identifique {num}.',
-      'Identifique {den}.',
-      'Digite o primeiro valor na calculadora.',
-      'Digite o segundo valor na mesma unidade.',
-      'Pressione Calculate para obter {symbol}.',
-      'Confira o resultado: {range}'
-    ],
-    exampleIntro: 'Suponha que {values}.',
-    exampleConclusion: 'O resultado é {symbol} = {result}. Se precisar do ângulo, use a função inversa: A é aproximadamente {angle}.',
-    resultMeaning: [
-      '{symbol} mostra o tamanho de {num} em comparação com {den}.',
-      '{range}',
-      'A razão não tem unidade porque compara duas medidas de comprimento.'
-    ],
-    rangeNotes: {
-      zeroOne: 'Para um ângulo agudo de um triângulo retângulo, o valor fica entre 0 e 1.',
-      positiveAny: 'O valor pode ser qualquer número positivo.',
-      greaterOne: 'O valor é sempre maior ou igual a 1.'
-    },
-    whenIntro: 'Use a calculadora de {name} quando:',
-    whenItems: [
-      'você conhece {num} e {den} e precisa de {symbol}.',
-      'quer conferir uma resposta de tarefa ou prova.',
-      'vai encontrar o ângulo A com uma função inversa.',
-      'trabalha com inclinação, rampas, forças ou componentes de distância.',
-      'quer comparar esta razão com outra razão trigonométrica.'
-    ],
-    mistakesIntro: 'Evite estes erros ao calcular {name}:',
-    mistakeItems: [
-      'Escolher o lado errado. Identifique {num} e {den} a partir do ângulo A.',
-      'Inverter a fração. A fórmula correta é {formula}.',
-      'Misturar unidades diferentes sem converter.',
-      'Usar o ângulo de 90 graus como ângulo A.',
-      'Esquecer que a hipotenusa c deve ser o lado mais longo.'
-    ],
-    faqs: [
-      { question: 'Qual é a fórmula de {symbol}?', answer: 'A fórmula é {formula}; {num} fica no numerador e {den} no denominador.' },
-      { question: '{symbol} tem unidade?', answer: 'Não. É uma razão entre duas medidas, então as unidades se cancelam.' },
-      { question: 'Posso encontrar o ângulo A?', answer: 'Esta página fornece a razão. Para o ângulo, use a função inversa ou a calculadora de ângulos.' },
-      { question: 'Como {name} e {reciprocalName} se relacionam?', answer: '{reciprocalName} é a razão recíproca de {name}. Se você conhece uma, a outra é 1 dividido por esse valor.' },
-      { question: 'Quais lados devo inserir?', answer: 'Para {symbol}, insira {num} e {den}.' }
-    ]
-  },
-  bn: {
-    ratioNames: { sine: 'সাইন', cosine: 'কোসাইন', tangent: 'ট্যানজেন্ট', cotangent: 'কোট্যানজেন্ট', secant: 'সেক্যান্ট', cosecant: 'কোসেক্যান্ট' },
-    sideNames: { opposite: 'বিপরীত বাহু', adjacent: 'সংলগ্ন বাহু', hypotenuse: 'অতিভুজ' },
-    ui: createUi({
-      home: 'হোম',
-      badge: 'ত্রিকোণমিতিক অনুপাত ক্যালকুলেটর',
-      parentPageLabel: 'সমকোণী ত্রিভুজ ত্রিকোণমিতিক অনুপাত ক্যালকুলেটর',
-      formula: 'সূত্র',
-      triangleDiagram: 'ত্রিভুজ চিত্র',
-      ratioHighlight: 'অনুপাত হাইলাইট',
-      numerator: 'লব',
-      denominator: 'হর',
-      sideKey: 'বাহুর চাবি',
-      howToUse: 'এই ক্যালকুলেটর কীভাবে ব্যবহার করবেন',
-      stepByStepExample: 'ধাপে ধাপে উদাহরণ',
-      whatResultMeans: 'ফলাফলের অর্থ',
-      whenToUse: 'কখন এই অনুপাত ব্যবহার করবেন',
-      commonMistakes: 'সাধারণ ভুল',
-      relatedCalculators: 'সম্পর্কিত ক্যালকুলেটর',
-      openTool: 'টুল খুলুন',
-      faqHeading: 'প্রায়শই জিজ্ঞাসিত প্রশ্ন',
-      rightAngle: '90 ডিগ্রি',
-      sideRoles: {
-        a: { role: 'বিপরীত বাহু', description: 'কোণ A এর বিপরীতে', short: 'বিপরীত', label: 'a = বিপরীত বাহু' },
-        b: { role: 'সংলগ্ন বাহু', description: 'কোণ A এর পাশে', short: 'সংলগ্ন', label: 'b = সংলগ্ন বাহু' },
-        c: { role: 'অতিভুজ', description: 'সবচেয়ে দীর্ঘ বাহু, 90 ডিগ্রির বিপরীতে', short: 'অতিভুজ', label: 'c = অতিভুজ' }
-      },
-      usedInPattern: '{label} এ ব্যবহৃত',
-      notUsedInPattern: '{label} এ ব্যবহৃত নয়'
-    }),
-    relatedAngleCalculator: 'সমকোণী ত্রিভুজ কোণ ক্যালকুলেটর',
-    pageTitle: '{name} অনুপাত ক্যালকুলেটর',
-    headerSummary: 'সমকোণী ত্রিভুজে {num} ও {den} থেকে {symbol} বের করুন।',
-    metaTitle: '{title} | সমকোণী ত্রিভুজ {symbol}',
-    metaDescription: '{title} দিয়ে {symbol} বের করুন। সূত্র {formula}, ধাপ, উদাহরণ ও চিত্র দেখুন।',
-    calculatorHeading: '{name} অনুপাত গণনা করুন',
-    introHeading: 'এই {title} কীভাবে কাজ করে',
-    intro: [
-      '{name} অনুপাত কোণ A কে {num} ও {den} এর সঙ্গে যুক্ত করে। দুইটি মান দিলে টুলটি {symbol} দেয়।',
-      'ক্যালকুলেটর হাতে ভাগ করার কাজ কমায় এবং জ্যামিতির সূত্র দেখায়: {formula}।'
-    ],
-    calculatorNote: '{num} ও {den} এর ধনাত্মক মান লিখুন। অতিভুজ c থাকলে সেটি সংশ্লিষ্ট বাহুর চেয়ে বড় হতে হবে।',
-    formulaParagraphs: [
-      '{symbol} হলো {num} ভাগ {den}। তাই সূত্র {formula}।',
-      'সব সময় কোণ A অনুযায়ী বাহু চিহ্নিত করুন। একই এককে মাপলে অনুপাতের কোনো একক থাকে না।'
-    ],
-    diagramExplanation: [
-      'চিত্রে a বিপরীত বাহু, b সংলগ্ন বাহু এবং c অতিভুজ।',
-      '{symbol} শুধু {num} ও {den} ব্যবহার করে। অন্য বাহু দিক বুঝতে সাহায্য করে, কিন্তু এই অনুপাতে লাগে না।'
-    ],
-    howToSteps: [
-      'সমকোণী ত্রিভুজে কোণ A খুঁজুন।',
-      '{num} শনাক্ত করুন।',
-      '{den} শনাক্ত করুন।',
-      'প্রথম মান ক্যালকুলেটরে লিখুন।',
-      'দ্বিতীয় মান একই এককে লিখুন।',
-      'Calculate চাপুন এবং {symbol} দেখুন।',
-      'ফলাফল যাচাই করুন: {range}'
-    ],
-    exampleIntro: 'ধরা যাক {values}।',
-    exampleConclusion: 'ফলাফল {symbol} = {result}। কোণ দরকার হলে inverse trig ব্যবহার করুন: A প্রায় {angle}।',
-    resultMeaning: [
-      '{symbol} দেখায় {num}, {den} এর তুলনায় কত বড়।',
-      '{range}',
-      'এটি এককবিহীন, কারণ দুইটি দৈর্ঘ্যের অনুপাত নেওয়া হয়।'
-    ],
-    rangeNotes: {
-      zeroOne: 'সমকোণী ত্রিভুজের সূক্ষ্ম কোণের জন্য মান 0 ও 1 এর মধ্যে থাকে।',
-      positiveAny: 'মান যেকোনো ধনাত্মক সংখ্যা হতে পারে।',
-      greaterOne: 'মান সবসময় 1 বা তার বেশি হয়।'
-    },
-    whenIntro: '{name} ক্যালকুলেটর ব্যবহার করুন যখন:',
-    whenItems: [
-      'আপনার কাছে {num} ও {den} আছে এবং {symbol} দরকার।',
-      'আপনি homework বা পরীক্ষার উত্তর যাচাই করছেন।',
-      'আপনি inverse trig দিয়ে কোণ A বের করতে চান।',
-      'আপনি ঢাল, র্যাম্প, বল বা দূরত্বের উপাংশ নিয়ে কাজ করছেন।',
-      'আপনি অন্য ত্রিকোণমিতিক অনুপাতের সঙ্গে তুলনা করতে চান।'
-    ],
-    mistakesIntro: '{name} গণনায় এই ভুলগুলো এড়িয়ে চলুন:',
-    mistakeItems: [
-      'ভুল বাহু নেওয়া। কোণ A থেকে {num} ও {den} শনাক্ত করুন।',
-      'ভগ্নাংশ উল্টে ফেলা। সঠিক সূত্র {formula}।',
-      'একক না মিলিয়ে মান ব্যবহার করা।',
-      '90 ডিগ্রি কোণকে A ধরে নেওয়া।',
-      'অতিভুজ c যে সবচেয়ে দীর্ঘ বাহু তা যাচাই না করা।'
-    ],
-    faqs: [
-      { question: '{symbol} এর সূত্র কী?', answer: 'সূত্র {formula}; {num} লবে এবং {den} হরে থাকে।' },
-      { question: '{symbol} এর কি একক আছে?', answer: 'না। এটি দুই দৈর্ঘ্যের অনুপাত, তাই একক বাদ যায়।' },
-      { question: 'কোণ A কি বের করা যায়?', answer: 'এই পেজ অনুপাত দেয়। কোণের জন্য inverse trig বা angle calculator ব্যবহার করুন।' },
-      { question: '{name} ও {reciprocalName} এর সম্পর্ক কী?', answer: '{reciprocalName} হলো {name} এর reciprocal অনুপাত। একটি জানা থাকলে অন্যটি 1 ভাগ সেই মান।' },
-      { question: 'কোন বাহুগুলো লিখব?', answer: '{symbol} এর জন্য {num} ও {den} লিখুন।' }
-    ]
-  },
-  ja: {
-    ratioNames: { sine: 'サイン', cosine: 'コサイン', tangent: 'タンジェント', cotangent: 'コタンジェント', secant: 'セカント', cosecant: 'コセカント' },
-    sideNames: { opposite: '対辺', adjacent: '隣辺', hypotenuse: '斜辺' },
-    ui: createUi({
-      home: 'ホーム',
-      badge: '三角比計算機',
-      parentPageLabel: '直角三角形の三角比計算機',
-      formula: '公式',
-      triangleDiagram: '三角形の図',
-      ratioHighlight: '比の注目点',
-      numerator: '分子',
-      denominator: '分母',
-      sideKey: '辺の説明',
-      howToUse: 'この計算機の使い方',
-      stepByStepExample: '手順付きの例',
-      whatResultMeans: '結果の意味',
-      whenToUse: 'この比を使う場面',
-      commonMistakes: 'よくある間違い',
-      relatedCalculators: '関連する計算機',
-      openTool: 'ツールを開く',
-      faqHeading: 'よくある質問',
-      rightAngle: '90度',
-      sideRoles: {
-        a: { role: '対辺', description: '角Aの向かい側', short: '対辺', label: 'a = 対辺' },
-        b: { role: '隣辺', description: '角Aに接する辺', short: '隣辺', label: 'b = 隣辺' },
-        c: { role: '斜辺', description: '最も長い辺で90度の向かい側', short: '斜辺', label: 'c = 斜辺' }
-      },
-      usedInPattern: '{label}で使用',
-      notUsedInPattern: '{label}では未使用'
-    }),
-    relatedAngleCalculator: '直角三角形の角度計算機',
-    pageTitle: '{name}比計算機',
-    headerSummary: '直角三角形で{num}と{den}から{symbol}を求めます。',
-    metaTitle: '{title} | 直角三角形の{symbol}',
-    metaDescription: '{title}で{symbol}を計算します。公式{formula}、手順、例、図を確認できます。',
-    calculatorHeading: '{name}比を計算',
-    introHeading: 'この{title}のしくみ',
-    intro: [
-      '{name}比は角Aと{num}、{den}を結び付けます。2つの長さを入力すると{symbol}が求まります。',
-      'この計算機は手計算の割り算を省き、幾何で使う関係{formula}を表示します。'
-    ],
-    calculatorNote: '{num}と{den}には正の値を入力してください。斜辺cを使う場合、対応する脚より長くなければなりません。',
-    formulaParagraphs: [
-      '{symbol}は{num}を{den}で割った値です。したがって公式は{formula}です。',
-      '辺は必ず角Aを基準に見分けます。同じ単位で測れば、結果は単位を持たない比になります。'
-    ],
-    diagramExplanation: [
-      '図ではaが対辺、bが隣辺、cが斜辺です。',
-      '{symbol}は{num}と{den}だけを使います。残りの辺は向きを確認する助けになりますが、この比には入りません。'
-    ],
-    howToSteps: [
-      '直角三角形の角Aを確認します。',
-      '{num}を見つけます。',
-      '{den}を見つけます。',
-      '最初の値を入力します。',
-      '2つ目の値を同じ単位で入力します。',
-      'Calculateを押して{symbol}を表示します。',
-      '結果を確認します: {range}'
-    ],
-    exampleIntro: '{values}とします。',
-    exampleConclusion: '結果は{symbol} = {result}です。角度が必要なら逆三角関数を使うと、Aは約{angle}です。',
-    resultMeaning: [
-      '{symbol}は{num}が{den}に対してどれくらいの長さかを示します。',
-      '{range}',
-      '2つの長さを比べるため、結果に単位はありません。'
-    ],
-    rangeNotes: {
-      zeroOne: '直角三角形の鋭角では、値は0から1の間になります。',
-      positiveAny: '値は任意の正の数になります。',
-      greaterOne: '値は常に1以上になります。'
-    },
-    whenIntro: '{name}計算機は次の場合に使います:',
-    whenItems: [
-      '{num}と{den}が分かっていて{symbol}が必要なとき。',
-      '宿題や試験の答えを確認したいとき。',
-      '逆三角関数で角Aを求める前に比を出したいとき。',
-      '傾き、斜面、力、距離の成分を扱うとき。',
-      '他の三角比と比べたいとき。'
-    ],
-    mistakesIntro: '{name}を計算するときは次に注意してください:',
-    mistakeItems: [
-      '違う辺を選ばないこと。角Aから見て{num}と{den}を確認します。',
-      '分数を逆にしないこと。正しい公式は{formula}です。',
-      '単位をそろえずに入力しないこと。',
-      '90度の角を角Aとして使わないこと。',
-      '斜辺cが最も長い辺であることを確認すること。'
-    ],
-    faqs: [
-      { question: '{symbol}の公式は何ですか?', answer: '公式は{formula}です。{num}が分子、{den}が分母です。' },
-      { question: '{symbol}に単位はありますか?', answer: 'ありません。2つの長さの比なので単位は消えます。' },
-      { question: '角Aも求められますか?', answer: 'このページは比を返します。角度は逆三角関数または角度計算機を使ってください。' },
-      { question: '{name}と{reciprocalName}の関係は?', answer: '{reciprocalName}は{name}の逆数の比です。一方が分かれば、もう一方は1をその値で割って求めます。' },
-      { question: 'どの辺を入力しますか?', answer: '{symbol}には{num}と{den}を入力します。' }
-    ]
-  },
-  ko: {
-    ratioNames: { sine: '사인', cosine: '코사인', tangent: '탄젠트', cotangent: '코탄젠트', secant: '시컨트', cosecant: '코시컨트' },
-    sideNames: { opposite: '맞은편 변', adjacent: '인접 변', hypotenuse: '빗변' },
-    ui: createUi({
-      home: '홈',
-      badge: '삼각비 계산기',
-      parentPageLabel: '직각삼각형 삼각비 계산기',
-      formula: '공식',
-      triangleDiagram: '삼각형 도식',
-      ratioHighlight: '비율 강조',
-      numerator: '분자',
-      denominator: '분모',
-      sideKey: '변 설명',
-      howToUse: '이 계산기 사용 방법',
-      stepByStepExample: '단계별 예제',
-      whatResultMeans: '결과의 의미',
-      whenToUse: '이 비율을 사용할 때',
-      commonMistakes: '흔한 실수',
-      relatedCalculators: '관련 계산기',
-      openTool: '도구 열기',
-      faqHeading: '자주 묻는 질문',
-      rightAngle: '90도',
-      sideRoles: {
-        a: { role: '맞은편 변', description: '각 A의 반대쪽', short: '맞은편', label: 'a = 맞은편 변' },
-        b: { role: '인접 변', description: '각 A 옆의 변', short: '인접', label: 'b = 인접 변' },
-        c: { role: '빗변', description: '가장 긴 변, 90도 반대쪽', short: '빗변', label: 'c = 빗변' }
-      },
-      usedInPattern: '{label}에 사용',
-      notUsedInPattern: '{label}에 사용 안 함'
-    }),
-    relatedAngleCalculator: '직각삼각형 각도 계산기',
-    pageTitle: '{name} 비율 계산기',
-    headerSummary: '직각삼각형에서 {num}과 {den}으로 {symbol}을 계산합니다.',
-    metaTitle: '{title} | 직각삼각형 {symbol}',
-    metaDescription: '{title}로 {symbol}을 계산하고 공식 {formula}, 단계, 예제, 도식을 확인하세요.',
-    calculatorHeading: '{name} 비율 계산',
-    introHeading: '이 {title} 작동 방식',
-    intro: [
-      '{name} 비율은 각 A와 {num}, {den}을 연결합니다. 두 길이를 입력하면 {symbol}이 계산됩니다.',
-      '계산기는 직접 나눗셈을 줄이고 기하에서 쓰는 관계 {formula}를 보여줍니다.'
-    ],
-    calculatorNote: '{num}과 {den}에 양수를 입력하세요. 빗변 c가 포함되면 해당 변보다 길어야 합니다.',
-    formulaParagraphs: [
-      '{symbol}은 {num}을 {den}으로 나눈 값입니다. 따라서 공식은 {formula}입니다.',
-      '변은 항상 각 A를 기준으로 구분합니다. 같은 단위를 쓰면 결과는 단위가 없는 비율입니다.'
-    ],
-    diagramExplanation: [
-      '도식에서 a는 맞은편 변, b는 인접 변, c는 빗변입니다.',
-      '{symbol}은 {num}과 {den}만 사용합니다. 나머지 변은 방향 확인에 도움이 되지만 이 비율에는 들어가지 않습니다.'
-    ],
-    howToSteps: [
-      '직각삼각형에서 각 A를 찾습니다.',
-      '{num}을 확인합니다.',
-      '{den}을 확인합니다.',
-      '첫 번째 값을 계산기에 입력합니다.',
-      '두 번째 값을 같은 단위로 입력합니다.',
-      'Calculate를 눌러 {symbol}을 확인합니다.',
-      '결과를 확인합니다: {range}'
-    ],
-    exampleIntro: '{values}라고 가정합니다.',
-    exampleConclusion: '결과는 {symbol} = {result}입니다. 각도가 필요하면 역삼각함수를 사용하여 A가 약 {angle}임을 구합니다.',
-    resultMeaning: [
-      '{symbol}은 {num}이 {den}에 비해 얼마나 큰지 보여줍니다.',
-      '{range}',
-      '두 길이를 비교하므로 결과에는 단위가 없습니다.'
-    ],
-    rangeNotes: {
-      zeroOne: '직각삼각형의 예각에서는 값이 0과 1 사이입니다.',
-      positiveAny: '값은 어떤 양수도 될 수 있습니다.',
-      greaterOne: '값은 항상 1 이상입니다.'
-    },
-    whenIntro: '{name} 계산기는 다음 경우에 사용합니다:',
-    whenItems: [
-      '{num}과 {den}을 알고 {symbol}이 필요할 때.',
-      '숙제나 시험 답을 확인할 때.',
-      '역삼각함수로 각 A를 구하기 전 비율이 필요할 때.',
-      '기울기, 경사로, 힘, 거리 성분을 다룰 때.',
-      '다른 삼각비와 비교할 때.'
-    ],
-    mistakesIntro: '{name} 계산에서 다음 실수를 피하세요:',
-    mistakeItems: [
-      '잘못된 변을 선택하지 마세요. 각 A 기준으로 {num}과 {den}을 확인하세요.',
-      '분수를 뒤집지 마세요. 올바른 공식은 {formula}입니다.',
-      '서로 다른 단위를 변환 없이 섞지 마세요.',
-      '90도 각을 각 A로 사용하지 마세요.',
-      '빗변 c가 가장 긴 변인지 확인하세요.'
-    ],
-    faqs: [
-      { question: '{symbol} 공식은 무엇인가요?', answer: '공식은 {formula}입니다. {num}이 분자이고 {den}이 분모입니다.' },
-      { question: '{symbol}에 단위가 있나요?', answer: '아니요. 두 길이의 비율이므로 단위가 없어집니다.' },
-      { question: '각 A도 구할 수 있나요?', answer: '이 페이지는 비율을 제공합니다. 각도는 역삼각함수나 각도 계산기를 사용하세요.' },
-      { question: '{name}과 {reciprocalName}은 어떤 관계인가요?', answer: '{reciprocalName}은 {name}의 역수 비율입니다. 하나를 알면 다른 하나는 1을 그 값으로 나누어 구합니다.' },
-      { question: '어떤 변을 입력해야 하나요?', answer: '{symbol}에는 {num}과 {den}을 입력합니다.' }
-    ]
-  },
-  ms: {
-    ratioNames: { sine: 'sinus', cosine: 'kosinus', tangent: 'tangen', cotangent: 'kotangen', secant: 'sekan', cosecant: 'kosekan' },
-    sideNames: { opposite: 'sisi bertentangan', adjacent: 'sisi bersebelahan', hypotenuse: 'hipotenus' },
-    ui: createUi({
-      home: 'Laman utama',
-      badge: 'Kalkulator nisbah trigonometri',
-      parentPageLabel: 'Kalkulator nisbah trigonometri segi tiga tepat',
-      formula: 'Formula',
-      triangleDiagram: 'Rajah segi tiga',
-      ratioHighlight: 'Sorotan nisbah',
-      numerator: 'Pengangka',
-      denominator: 'Penyebut',
-      sideKey: 'Kunci sisi',
-      howToUse: 'Cara menggunakan kalkulator ini',
-      stepByStepExample: 'Contoh langkah demi langkah',
-      whatResultMeans: 'Maksud keputusan',
-      whenToUse: 'Bila menggunakan nisbah ini',
-      commonMistakes: 'Kesilapan biasa',
-      relatedCalculators: 'Kalkulator berkaitan',
-      openTool: 'Buka alat',
-      faqHeading: 'Soalan lazim',
-      rightAngle: '90 darjah',
-      sideRoles: {
-        a: { role: 'sisi bertentangan', description: 'bertentangan dengan sudut A', short: 'bertentangan', label: 'a = sisi bertentangan' },
-        b: { role: 'sisi bersebelahan', description: 'bersebelahan dengan sudut A', short: 'bersebelahan', label: 'b = sisi bersebelahan' },
-        c: { role: 'hipotenus', description: 'sisi terpanjang, bertentangan 90 darjah', short: 'hipotenus', label: 'c = hipotenus' }
-      },
-      usedInPattern: 'Digunakan dalam {label}',
-      notUsedInPattern: 'Tidak digunakan dalam {label}'
-    }),
-    relatedAngleCalculator: 'Kalkulator sudut segi tiga tepat',
-    pageTitle: 'Kalkulator nisbah {name}',
-    headerSummary: 'Kira {symbol} daripada {num} dan {den} dalam segi tiga tepat.',
-    metaTitle: '{title} | {symbol} segi tiga tepat',
-    metaDescription: 'Gunakan {title} untuk mencari {symbol} dengan formula {formula}, langkah, contoh dan rajah.',
-    calculatorHeading: 'Kira nisbah {name}',
-    introHeading: 'Cara {title} ini berfungsi',
-    intro: [
-      'Nisbah {name} menghubungkan sudut A dengan {num} dan {den}. Masukkan dua panjang ini untuk mendapatkan {symbol}.',
-      'Kalkulator ini mengurangkan pembahagian manual dan menunjukkan hubungan geometri: {formula}.'
-    ],
-    calculatorNote: 'Masukkan nilai positif untuk {num} dan {den}. Jika hipotenus c digunakan, ia mesti lebih panjang daripada sisi berkaitan.',
-    formulaParagraphs: [
-      '{symbol} ialah {num} dibahagi dengan {den}. Oleh itu formulanya ialah {formula}.',
-      'Kenal pasti sisi berbanding sudut A. Jika unit sama, hasilnya ialah nisbah tanpa unit.'
-    ],
-    diagramExplanation: [
-      'Dalam rajah, a ialah sisi bertentangan, b ialah sisi bersebelahan dan c ialah hipotenus.',
-      '{symbol} hanya menggunakan {num} dan {den}. Sisi lain membantu orientasi, tetapi tidak digunakan dalam nisbah ini.'
-    ],
-    howToSteps: [
-      'Cari sudut A dalam segi tiga tepat.',
-      'Kenal pasti {num}.',
-      'Kenal pasti {den}.',
-      'Masukkan nilai pertama dalam kalkulator.',
-      'Masukkan nilai kedua dengan unit yang sama.',
-      'Tekan Calculate untuk mendapatkan {symbol}.',
-      'Semak keputusan: {range}'
-    ],
-    exampleIntro: 'Andaikan {values}.',
-    exampleConclusion: 'Keputusannya ialah {symbol} = {result}. Jika perlu sudut, gunakan fungsi songsang: A kira-kira {angle}.',
-    resultMeaning: [
-      '{symbol} menunjukkan saiz {num} berbanding {den}.',
-      '{range}',
-      'Nisbah ini tiada unit kerana dua panjang dibandingkan.'
-    ],
-    rangeNotes: {
-      zeroOne: 'Untuk sudut tirus dalam segi tiga tepat, nilai berada antara 0 dan 1.',
-      positiveAny: 'Nilai boleh menjadi sebarang nombor positif.',
-      greaterOne: 'Nilai sentiasa lebih besar atau sama dengan 1.'
-    },
-    whenIntro: 'Gunakan kalkulator {name} apabila:',
-    whenItems: [
-      'anda tahu {num} dan {den} serta memerlukan {symbol}.',
-      'anda menyemak jawapan kerja rumah atau peperiksaan.',
-      'anda mahu mencari sudut A menggunakan fungsi songsang.',
-      'anda bekerja dengan cerun, tanjakan, daya atau komponen jarak.',
-      'anda mahu membandingkan nisbah ini dengan nisbah trigonometri lain.'
-    ],
-    mistakesIntro: 'Elakkan kesilapan ini ketika mengira {name}:',
-    mistakeItems: [
-      'Memilih sisi yang salah. Kenal pasti {num} dan {den} dari sudut A.',
-      'Menterbalikkan pecahan. Formula yang betul ialah {formula}.',
-      'Mencampurkan unit berbeza tanpa penukaran.',
-      'Menggunakan sudut 90 darjah sebagai sudut A.',
-      'Lupa bahawa hipotenus c mesti menjadi sisi terpanjang.'
-    ],
-    faqs: [
-      { question: 'Apakah formula {symbol}?', answer: 'Formulanya ialah {formula}; {num} di pengangka dan {den} di penyebut.' },
-      { question: 'Adakah {symbol} mempunyai unit?', answer: 'Tidak. Ia nisbah dua panjang, jadi unit terbatal.' },
-      { question: 'Bolehkah saya mencari sudut A?', answer: 'Halaman ini memberi nisbah. Untuk sudut, gunakan fungsi songsang atau kalkulator sudut.' },
-      { question: 'Apakah hubungan {name} dan {reciprocalName}?', answer: '{reciprocalName} ialah nisbah salingan bagi {name}. Jika satu diketahui, satu lagi ialah 1 dibahagi nilai itu.' },
-      { question: 'Sisi mana perlu dimasukkan?', answer: 'Untuk {symbol}, masukkan {num} dan {den}.' }
-    ]
-  },
-  pl: {
-    ratioNames: { sine: 'sinusa', cosine: 'cosinusa', tangent: 'tangensa', cotangent: 'cotangensa', secant: 'secansa', cosecant: 'cosecansa' },
-    sideNames: { opposite: 'przyprostokątna przeciwległa', adjacent: 'przyprostokątna przyległa', hypotenuse: 'przeciwprostokątna' },
-    ui: createUi({
-      home: 'Strona główna',
-      badge: 'Kalkulator stosunków trygonometrycznych',
-      parentPageLabel: 'Kalkulator stosunków trygonometrycznych trójkąta prostokątnego',
-      formula: 'Wzór',
-      triangleDiagram: 'Diagram trójkąta',
-      ratioHighlight: 'Wyróżniony stosunek',
-      numerator: 'Licznik',
-      denominator: 'Mianownik',
-      sideKey: 'Opis boków',
-      howToUse: 'Jak używać tego kalkulatora',
-      stepByStepExample: 'Przykład krok po kroku',
-      whatResultMeans: 'Co oznacza wynik',
-      whenToUse: 'Kiedy używać tego stosunku',
-      commonMistakes: 'Częste błędy',
-      relatedCalculators: 'Powiązane kalkulatory',
-      openTool: 'Otwórz narzędzie',
-      faqHeading: 'Częste pytania',
-      rightAngle: '90 stopni',
-      sideRoles: {
-        a: { role: 'przyprostokątna przeciwległa', description: 'naprzeciw kąta A', short: 'przeciwległa', label: 'a = przyprostokątna przeciwległa' },
-        b: { role: 'przyprostokątna przyległa', description: 'przy kącie A', short: 'przyległa', label: 'b = przyprostokątna przyległa' },
-        c: { role: 'przeciwprostokątna', description: 'najdłuższy bok, naprzeciw 90 stopni', short: 'przeciwprostokątna', label: 'c = przeciwprostokątna' }
-      },
-      usedInPattern: 'Używane w {label}',
-      notUsedInPattern: 'Nie używane w {label}'
-    }),
-    relatedAngleCalculator: 'Kalkulator kątów trójkąta prostokątnego',
-    pageTitle: 'Kalkulator stosunku {name}',
-    headerSummary: 'Oblicz {symbol} z {num} i {den} w trójkącie prostokątnym.',
-    metaTitle: '{title} | {symbol} w trójkącie prostokątnym',
-    metaDescription: 'Użyj {title}, aby znaleźć {symbol} ze wzorem {formula}, krokami, przykładem i diagramem.',
-    calculatorHeading: 'Oblicz stosunek {name}',
-    introHeading: 'Jak działa {title}',
-    intro: [
-      'Stosunek {name} łączy kąt A z {num} i {den}. Wpisz dwie długości, aby otrzymać {symbol}.',
-      'Kalkulator eliminuje ręczne dzielenie i pokazuje zależność geometryczną: {formula}.'
-    ],
-    calculatorNote: 'Wpisz dodatnie wartości dla {num} i {den}. Jeśli używana jest przeciwprostokątna c, musi być dłuższa od odpowiedniego boku.',
-    formulaParagraphs: [
-      '{symbol} to {num} podzielona przez {den}. Wzór ma więc postać {formula}.',
-      'Boki zawsze określaj względem kąta A. Przy tych samych jednostkach wynik jest stosunkiem bez jednostki.'
-    ],
-    diagramExplanation: [
-      'Na diagramie a jest bokiem przeciwległym, b bokiem przyległym, a c przeciwprostokątną.',
-      '{symbol} używa tylko {num} i {den}. Trzeci bok pomaga w orientacji, ale nie wchodzi do tego stosunku.'
-    ],
-    howToSteps: [
-      'Znajdź kąt A w trójkącie prostokątnym.',
-      'Określ {num}.',
-      'Określ {den}.',
-      'Wpisz pierwszą wartość w kalkulatorze.',
-      'Wpisz drugą wartość w tej samej jednostce.',
-      'Naciśnij Calculate, aby otrzymać {symbol}.',
-      'Sprawdź wynik: {range}'
-    ],
-    exampleIntro: 'Załóżmy, że {values}.',
-    exampleConclusion: 'Wynik to {symbol} = {result}. Jeśli potrzebujesz kąta, użyj funkcji odwrotnej: A wynosi około {angle}.',
-    resultMeaning: [
-      '{symbol} pokazuje, jak duża jest {num} w porównaniu z {den}.',
-      '{range}',
-      'Wynik nie ma jednostki, bo porównywane są dwie długości.'
-    ],
-    rangeNotes: {
-      zeroOne: 'Dla kąta ostrego w trójkącie prostokątnym wartość leży między 0 a 1.',
-      positiveAny: 'Wartość może być dowolną liczbą dodatnią.',
-      greaterOne: 'Wartość zawsze jest większa lub równa 1.'
-    },
-    whenIntro: 'Użyj kalkulatora {name}, gdy:',
-    whenItems: [
-      'znasz {num} i {den}, a potrzebujesz {symbol}.',
-      'sprawdzasz odpowiedź z pracy domowej lub testu.',
-      'chcesz znaleźć kąt A funkcją odwrotną.',
-      'pracujesz ze spadkiem, rampą, siłą lub składowymi odległości.',
-      'chcesz porównać ten stosunek z innym stosunkiem trygonometrycznym.'
-    ],
-    mistakesIntro: 'Unikaj tych błędów przy obliczaniu {name}:',
-    mistakeItems: [
-      'Nie wybieraj złego boku. Określ {num} i {den} względem kąta A.',
-      'Nie odwracaj ułamka. Poprawny wzór to {formula}.',
-      'Nie mieszaj różnych jednostek bez konwersji.',
-      'Nie używaj kąta 90 stopni jako kąta A.',
-      'Pamiętaj, że przeciwprostokątna c musi być najdłuższym bokiem.'
-    ],
-    faqs: [
-      { question: 'Jaki jest wzór na {symbol}?', answer: 'Wzór to {formula}; {num} jest w liczniku, a {den} w mianowniku.' },
-      { question: 'Czy {symbol} ma jednostkę?', answer: 'Nie. To stosunek dwóch długości, więc jednostki się skracają.' },
-      { question: 'Czy mogę znaleźć kąt A?', answer: 'Ta strona podaje stosunek. Do kąta użyj funkcji odwrotnej lub kalkulatora kątów.' },
-      { question: 'Jak łączą się {name} i {reciprocalName}?', answer: '{reciprocalName} jest stosunkiem odwrotnym do {name}. Jeśli znasz jeden, drugi to 1 podzielone przez tę wartość.' },
-      { question: 'Jakie boki mam wpisać?', answer: 'Dla {symbol} wpisz {num} i {den}.' }
-    ]
-  },
-  id: {
-    ratioNames: { sine: 'sinus', cosine: 'kosinus', tangent: 'tangen', cotangent: 'kotangen', secant: 'sekan', cosecant: 'kosekan' },
-    sideNames: { opposite: 'sisi depan', adjacent: 'sisi samping', hypotenuse: 'hipotenusa' },
-    ui: createUi({
-      home: 'Beranda',
-      badge: 'Kalkulator rasio trigonometri',
-      parentPageLabel: 'Kalkulator rasio trigonometri segitiga siku-siku',
-      formula: 'Rumus',
-      triangleDiagram: 'Diagram segitiga',
-      ratioHighlight: 'Sorotan rasio',
-      numerator: 'Pembilang',
-      denominator: 'Penyebut',
-      sideKey: 'Keterangan sisi',
-      howToUse: 'Cara menggunakan kalkulator ini',
-      stepByStepExample: 'Contoh langkah demi langkah',
-      whatResultMeans: 'Arti hasil',
-      whenToUse: 'Kapan memakai rasio ini',
-      commonMistakes: 'Kesalahan umum',
-      relatedCalculators: 'Kalkulator terkait',
-      openTool: 'Buka alat',
-      faqHeading: 'Pertanyaan umum',
-      rightAngle: '90 derajat',
-      sideRoles: {
-        a: { role: 'sisi depan', description: 'berhadapan dengan sudut A', short: 'depan', label: 'a = sisi depan' },
-        b: { role: 'sisi samping', description: 'dekat dengan sudut A', short: 'samping', label: 'b = sisi samping' },
-        c: { role: 'hipotenusa', description: 'sisi terpanjang, berhadapan dengan 90 derajat', short: 'hipotenusa', label: 'c = hipotenusa' }
-      },
-      usedInPattern: 'Dipakai dalam {label}',
-      notUsedInPattern: 'Tidak dipakai dalam {label}'
-    }),
-    relatedAngleCalculator: 'Kalkulator sudut segitiga siku-siku',
-    pageTitle: 'Kalkulator rasio {name}',
-    headerSummary: 'Hitung {symbol} dari {num} dan {den} pada segitiga siku-siku.',
-    metaTitle: '{title} | {symbol} segitiga siku-siku',
-    metaDescription: 'Gunakan {title} untuk mencari {symbol} dengan rumus {formula}, langkah, contoh, dan diagram.',
-    calculatorHeading: 'Hitung rasio {name}',
-    introHeading: 'Cara kerja {title}',
-    intro: [
-      'Rasio {name} menghubungkan sudut A dengan {num} dan {den}. Masukkan dua panjang ini untuk mendapatkan {symbol}.',
-      'Kalkulator mengurangi pembagian manual dan menampilkan hubungan geometri: {formula}.'
-    ],
-    calculatorNote: 'Masukkan nilai positif untuk {num} dan {den}. Jika hipotenusa c digunakan, nilainya harus lebih panjang dari sisi terkait.',
-    formulaParagraphs: [
-      '{symbol} adalah {num} dibagi {den}. Jadi rumusnya adalah {formula}.',
-      'Kenali sisi selalu dari sudut A. Jika satuannya sama, hasilnya adalah rasio tanpa satuan.'
-    ],
-    diagramExplanation: [
-      'Pada diagram, a adalah sisi depan, b sisi samping, dan c hipotenusa.',
-      '{symbol} hanya memakai {num} dan {den}. Sisi lain membantu orientasi, tetapi tidak masuk ke rasio ini.'
-    ],
-    howToSteps: [
-      'Temukan sudut A pada segitiga siku-siku.',
-      'Kenali {num}.',
-      'Kenali {den}.',
-      'Masukkan nilai pertama ke kalkulator.',
-      'Masukkan nilai kedua dengan satuan yang sama.',
-      'Tekan Calculate untuk mendapatkan {symbol}.',
-      'Periksa hasil: {range}'
-    ],
-    exampleIntro: 'Misalkan {values}.',
-    exampleConclusion: 'Hasilnya {symbol} = {result}. Jika perlu sudut, gunakan fungsi invers: A sekitar {angle}.',
-    resultMeaning: [
-      '{symbol} menunjukkan ukuran {num} dibandingkan dengan {den}.',
-      '{range}',
-      'Rasio tidak memiliki satuan karena membandingkan dua panjang.'
-    ],
-    rangeNotes: {
-      zeroOne: 'Untuk sudut lancip segitiga siku-siku, nilai berada di antara 0 dan 1.',
-      positiveAny: 'Nilai dapat berupa bilangan positif apa pun.',
-      greaterOne: 'Nilai selalu lebih besar atau sama dengan 1.'
-    },
-    whenIntro: 'Gunakan kalkulator {name} saat:',
-    whenItems: [
-      'Anda mengetahui {num} dan {den} serta membutuhkan {symbol}.',
-      'Anda memeriksa jawaban tugas atau ujian.',
-      'Anda akan mencari sudut A dengan fungsi invers.',
-      'Anda bekerja dengan kemiringan, ramp, gaya, atau komponen jarak.',
-      'Anda ingin membandingkan rasio ini dengan rasio trigonometri lain.'
-    ],
-    mistakesIntro: 'Hindari kesalahan ini saat menghitung {name}:',
-    mistakeItems: [
-      'Memilih sisi yang salah. Kenali {num} dan {den} dari sudut A.',
-      'Membalik pecahan. Rumus yang benar adalah {formula}.',
-      'Mencampur satuan berbeda tanpa konversi.',
-      'Menggunakan sudut 90 derajat sebagai sudut A.',
-      'Lupa bahwa hipotenusa c harus menjadi sisi terpanjang.'
-    ],
-    faqs: [
-      { question: 'Apa rumus {symbol}?', answer: 'Rumusnya {formula}; {num} berada di pembilang dan {den} di penyebut.' },
-      { question: 'Apakah {symbol} memiliki satuan?', answer: 'Tidak. Ini rasio dua panjang, jadi satuan saling hilang.' },
-      { question: 'Bisakah saya mencari sudut A?', answer: 'Halaman ini memberi rasio. Untuk sudut, gunakan fungsi invers atau kalkulator sudut.' },
-      { question: 'Apa hubungan {name} dan {reciprocalName}?', answer: '{reciprocalName} adalah rasio kebalikan dari {name}. Jika satu diketahui, yang lain adalah 1 dibagi nilai itu.' },
-      { question: 'Sisi mana yang harus dimasukkan?', answer: 'Untuk {symbol}, masukkan {num} dan {den}.' }
-    ]
-  },
-  ar: {
-    ratioNames: { sine: 'الجيب', cosine: 'جيب التمام', tangent: 'الظل', cotangent: 'ظل التمام', secant: 'القاطع', cosecant: 'قاطع التمام' },
-    sideNames: { opposite: 'الضلع المقابل', adjacent: 'الضلع المجاور', hypotenuse: 'الوتر' },
-    ui: createUi({
-      home: 'الرئيسية',
-      badge: 'حاسبة النسب المثلثية',
-      parentPageLabel: 'حاسبة نسب المثلث القائم',
-      formula: 'الصيغة',
-      triangleDiagram: 'رسم المثلث',
-      ratioHighlight: 'إبراز النسبة',
-      numerator: 'البسط',
-      denominator: 'المقام',
-      sideKey: 'دليل الأضلاع',
-      howToUse: 'كيفية استخدام هذه الحاسبة',
-      stepByStepExample: 'مثال خطوة بخطوة',
-      whatResultMeans: 'معنى النتيجة',
-      whenToUse: 'متى تستخدم هذه النسبة',
-      commonMistakes: 'أخطاء شائعة',
-      relatedCalculators: 'حاسبات ذات صلة',
-      openTool: 'افتح الأداة',
-      faqHeading: 'أسئلة شائعة',
-      rightAngle: '90 درجة',
-      sideRoles: {
-        a: { role: 'الضلع المقابل', description: 'مقابل للزاوية A', short: 'مقابل', label: 'a = الضلع المقابل' },
-        b: { role: 'الضلع المجاور', description: 'بجانب الزاوية A', short: 'مجاور', label: 'b = الضلع المجاور' },
-        c: { role: 'الوتر', description: 'أطول ضلع، مقابل 90 درجة', short: 'وتر', label: 'c = الوتر' }
-      },
-      usedInPattern: 'مستخدم في {label}',
-      notUsedInPattern: 'غير مستخدم في {label}'
-    }),
-    relatedAngleCalculator: 'حاسبة زاوية المثلث القائم',
-    pageTitle: 'حاسبة نسبة {name}',
-    headerSummary: 'احسب {symbol} من {num} و {den} في مثلث قائم.',
-    metaTitle: '{title} | {symbol} في المثلث القائم',
-    metaDescription: 'استخدم {title} لإيجاد {symbol} مع الصيغة {formula} والخطوات والمثال والرسم.',
-    calculatorHeading: 'احسب نسبة {name}',
-    introHeading: 'كيف تعمل {title}',
-    intro: [
-      'نسبة {name} تربط الزاوية A مع {num} و {den}. أدخل الطولين لتحصل على {symbol}.',
-      'تقلل الحاسبة القسمة اليدوية وتعرض العلاقة الهندسية: {formula}.'
-    ],
-    calculatorNote: 'أدخل قيما موجبة لـ {num} و {den}. إذا كان الوتر c موجودا فيجب أن يكون أطول من الضلع المرتبط.',
-    formulaParagraphs: [
-      '{symbol} يساوي {num} مقسوما على {den}. لذلك الصيغة هي {formula}.',
-      'حدد الأضلاع دائما بالنسبة إلى الزاوية A. عند استخدام نفس الوحدة تكون النتيجة نسبة بلا وحدة.'
-    ],
-    diagramExplanation: [
-      'في الرسم، a هو الضلع المقابل، و b هو الضلع المجاور، و c هو الوتر.',
-      '{symbol} يستخدم فقط {num} و {den}. الضلع الآخر يساعد على قراءة المثلث لكنه لا يدخل في هذه النسبة.'
-    ],
-    howToSteps: [
-      'حدد الزاوية A في المثلث القائم.',
-      'حدد {num}.',
-      'حدد {den}.',
-      'أدخل القيمة الأولى في الحاسبة.',
-      'أدخل القيمة الثانية بنفس الوحدة.',
-      'اضغط Calculate للحصول على {symbol}.',
-      'راجع النتيجة: {range}'
-    ],
-    exampleIntro: 'افترض أن {values}.',
-    exampleConclusion: 'النتيجة هي {symbol} = {result}. إذا أردت الزاوية فاستخدم الدالة العكسية: A تقريبا {angle}.',
-    resultMeaning: [
-      '{symbol} يوضح حجم {num} مقارنة بـ {den}.',
-      '{range}',
-      'النسبة بلا وحدة لأنها تقارن طولين.'
-    ],
-    rangeNotes: {
-      zeroOne: 'للزاوية الحادة في المثلث القائم تكون القيمة بين 0 و 1.',
-      positiveAny: 'يمكن أن تكون القيمة أي عدد موجب.',
-      greaterOne: 'القيمة دائما أكبر من أو تساوي 1.'
-    },
-    whenIntro: 'استخدم حاسبة {name} عندما:',
-    whenItems: [
-      'تعرف {num} و {den} وتحتاج إلى {symbol}.',
-      'تراجع إجابة واجب أو اختبار.',
-      'تريد إيجاد الزاوية A بدالة عكسية.',
-      'تعمل مع الميل أو المنحدرات أو القوى أو مركبات المسافة.',
-      'تريد مقارنة هذه النسبة بنسبة مثلثية أخرى.'
-    ],
-    mistakesIntro: 'تجنب هذه الأخطاء عند حساب {name}:',
-    mistakeItems: [
-      'اختيار الضلع الخطأ. حدد {num} و {den} من الزاوية A.',
-      'قلب الكسر. الصيغة الصحيحة هي {formula}.',
-      'خلط وحدات مختلفة دون تحويل.',
-      'استخدام زاوية 90 درجة على أنها الزاوية A.',
-      'نسيان أن الوتر c يجب أن يكون أطول ضلع.'
-    ],
-    faqs: [
-      { question: 'ما صيغة {symbol}؟', answer: 'الصيغة هي {formula}؛ {num} في البسط و {den} في المقام.' },
-      { question: 'هل لـ {symbol} وحدة؟', answer: 'لا. إنه نسبة بين طولين، لذلك تلغى الوحدات.' },
-      { question: 'هل يمكن إيجاد الزاوية A؟', answer: 'هذه الصفحة تعطي النسبة. للزاوية استخدم الدالة العكسية أو حاسبة الزوايا.' },
-      { question: 'ما العلاقة بين {name} و {reciprocalName}؟', answer: '{reciprocalName} هو النسبة المقلوبة لـ {name}. إذا عرفت إحداهما فالأخرى تساوي 1 مقسوما على تلك القيمة.' },
-      { question: 'ما الأضلاع التي أدخلها؟', answer: 'من أجل {symbol} أدخل {num} و {den}.' }
-    ]
-  },
-  bg: {
-    ratioNames: { sine: 'синус', cosine: 'косинус', tangent: 'тангенс', cotangent: 'котангенс', secant: 'секанс', cosecant: 'косеканс' },
-    sideNames: { opposite: 'срещулежащ катет', adjacent: 'прилежащ катет', hypotenuse: 'хипотенуза' },
-    ui: createUi({
-      home: 'Начало',
-      badge: 'Калкулатор за тригонометрични отношения',
-      parentPageLabel: 'Калкулатор за тригонометрични отношения на правоъгълен триъгълник',
-      formula: 'Формула',
-      triangleDiagram: 'Диаграма на триъгълника',
-      ratioHighlight: 'Подчертано отношение',
-      numerator: 'Числител',
-      denominator: 'Знаменател',
-      sideKey: 'Обяснение на страните',
-      howToUse: 'Как да използвате този калкулатор',
-      stepByStepExample: 'Пример стъпка по стъпка',
-      whatResultMeans: 'Какво означава резултатът',
-      whenToUse: 'Кога да използвате това отношение',
-      commonMistakes: 'Чести грешки',
-      relatedCalculators: 'Свързани калкулатори',
-      openTool: 'Отвори инструмента',
-      faqHeading: 'Често задавани въпроси',
-      rightAngle: '90 градуса',
-      sideRoles: {
-        a: { role: 'срещулежащ катет', description: 'срещу ъгъл A', short: 'срещулежащ', label: 'a = срещулежащ катет' },
-        b: { role: 'прилежащ катет', description: 'до ъгъл A', short: 'прилежащ', label: 'b = прилежащ катет' },
-        c: { role: 'хипотенуза', description: 'най-дългата страна, срещу 90 градуса', short: 'хипотенуза', label: 'c = хипотенуза' }
-      },
-      usedInPattern: 'Използва се в {label}',
-      notUsedInPattern: 'Не се използва в {label}'
-    }),
-    relatedAngleCalculator: 'Калкулатор за ъгли на правоъгълен триъгълник',
-    pageTitle: 'Калкулатор за отношение {name}',
-    headerSummary: 'Изчислете {symbol} от {num} и {den} в правоъгълен триъгълник.',
-    metaTitle: '{title} | {symbol} в правоъгълен триъгълник',
-    metaDescription: 'Използвайте {title}, за да намерите {symbol} с формула {formula}, стъпки, пример и диаграма.',
-    calculatorHeading: 'Изчисли отношение {name}',
-    introHeading: 'Как работи {title}',
-    intro: [
-      'Отношението {name} свързва ъгъл A с {num} и {den}. Въведете двете дължини, за да получите {symbol}.',
-      'Калкулаторът премахва ръчното деление и показва геометричната връзка: {formula}.'
-    ],
-    calculatorNote: 'Въведете положителни стойности за {num} и {den}. Ако участва хипотенуза c, тя трябва да е по-дълга от съответния катет.',
-    formulaParagraphs: [
-      '{symbol} е {num}, разделен на {den}. Затова формулата е {formula}.',
-      'Определяйте страните спрямо ъгъл A. При еднакви единици резултатът е безразмерно отношение.'
-    ],
-    diagramExplanation: [
-      'В диаграмата a е срещулежащият катет, b е прилежащият катет, а c е хипотенузата.',
-      '{symbol} използва само {num} и {den}. Другата страна помага за ориентация, но не участва в отношението.'
-    ],
-    howToSteps: [
-      'Намерете ъгъл A в правоъгълния триъгълник.',
-      'Определете {num}.',
-      'Определете {den}.',
-      'Въведете първата стойност в калкулатора.',
-      'Въведете втората стойност в същата единица.',
-      'Натиснете Calculate, за да получите {symbol}.',
-      'Проверете резултата: {range}'
-    ],
-    exampleIntro: 'Нека {values}.',
-    exampleConclusion: 'Резултатът е {symbol} = {result}. Ако ви трябва ъгълът, използвайте обратна функция: A е приблизително {angle}.',
-    resultMeaning: [
-      '{symbol} показва колко голям е {num} спрямо {den}.',
-      '{range}',
-      'Резултатът няма единица, защото сравнява две дължини.'
-    ],
-    rangeNotes: {
-      zeroOne: 'За остър ъгъл в правоъгълен триъгълник стойността е между 0 и 1.',
-      positiveAny: 'Стойността може да бъде всяко положително число.',
-      greaterOne: 'Стойността винаги е по-голяма или равна на 1.'
-    },
-    whenIntro: 'Използвайте калкулатора за {name}, когато:',
-    whenItems: [
-      'знаете {num} и {den} и ви трябва {symbol}.',
-      'проверявате домашна работа или отговор от тест.',
-      'искате да намерите ъгъл A с обратна функция.',
-      'работите с наклон, рампа, сила или компоненти на разстояние.',
-      'искате да сравните това отношение с друго тригонометрично отношение.'
-    ],
-    mistakesIntro: 'Избягвайте тези грешки при изчисляване на {name}:',
-    mistakeItems: [
-      'Избор на грешна страна. Определете {num} и {den} от ъгъл A.',
-      'Обръщане на дробта. Правилната формула е {formula}.',
-      'Смесване на различни единици без преобразуване.',
-      'Използване на ъгъла 90 градуса като ъгъл A.',
-      'Забравяне, че хипотенуза c трябва да е най-дългата страна.'
-    ],
-    faqs: [
-      { question: 'Каква е формулата за {symbol}?', answer: 'Формулата е {formula}; {num} е в числителя, а {den} в знаменателя.' },
-      { question: '{symbol} има ли единица?', answer: 'Не. Това е отношение на две дължини, така че единиците се съкращават.' },
-      { question: 'Мога ли да намеря ъгъл A?', answer: 'Тази страница дава отношението. За ъгъла използвайте обратна функция или калкулатор за ъгли.' },
-      { question: 'Как са свързани {name} и {reciprocalName}?', answer: '{reciprocalName} е реципрочното отношение на {name}. Ако знаете едното, другото е 1, разделено на тази стойност.' },
-      { question: 'Кои страни да въведа?', answer: 'За {symbol} въведете {num} и {den}.' }
-    ]
-  },
-  tr: {
-    ratioNames: { sine: 'sinüs', cosine: 'kosinüs', tangent: 'tanjant', cotangent: 'kotanjant', secant: 'sekant', cosecant: 'kosekant' },
-    sideNames: { opposite: 'karşı kenar', adjacent: 'komşu kenar', hypotenuse: 'hipotenüs' },
-    ui: createUi({
-      home: 'Ana sayfa',
-      badge: 'Trigonometrik oran hesaplayıcı',
-      parentPageLabel: 'Dik üçgen trigonometrik oran hesaplayıcı',
-      formula: 'Formül',
-      triangleDiagram: 'Üçgen diyagramı',
-      ratioHighlight: 'Oran vurgusu',
-      numerator: 'Pay',
-      denominator: 'Payda',
-      sideKey: 'Kenar anahtarı',
-      howToUse: 'Bu hesaplayıcı nasıl kullanılır',
-      stepByStepExample: 'Adım adım örnek',
-      whatResultMeans: 'Sonucun anlamı',
-      whenToUse: 'Bu oran ne zaman kullanılır',
-      commonMistakes: 'Yaygın hatalar',
-      relatedCalculators: 'İlgili hesaplayıcılar',
-      openTool: 'Aracı aç',
-      faqHeading: 'Sık sorulan sorular',
-      rightAngle: '90 derece',
-      sideRoles: {
-        a: { role: 'karşı kenar', description: 'A açısının karşısında', short: 'karşı', label: 'a = karşı kenar' },
-        b: { role: 'komşu kenar', description: 'A açısının yanında', short: 'komşu', label: 'b = komşu kenar' },
-        c: { role: 'hipotenüs', description: 'en uzun kenar, 90 derecenin karşısında', short: 'hipotenüs', label: 'c = hipotenüs' }
-      },
-      usedInPattern: '{label} içinde kullanılır',
-      notUsedInPattern: '{label} içinde kullanılmaz'
-    }),
-    relatedAngleCalculator: 'Dik üçgen açı hesaplayıcı',
-    pageTitle: '{name} oranı hesaplayıcı',
-    headerSummary: 'Dik üçgende {num} ve {den} ile {symbol} hesaplayın.',
-    metaTitle: '{title} | Dik üçgende {symbol}',
-    metaDescription: '{title} ile {symbol} değerini bulun. Formül {formula}, adımlar, örnek ve diyagram içerir.',
-    calculatorHeading: '{name} oranını hesapla',
-    introHeading: 'Bu {title} nasıl çalışır',
-    intro: [
-      '{name} oranı A açısını {num} ve {den} ile ilişkilendirir. Bu iki uzunluğu girince araç {symbol} verir.',
-      'Hesaplayıcı elle bölme hatasını azaltır ve geometrideki ilişkiyi gösterir: {formula}.'
-    ],
-    calculatorNote: '{num} ve {den} için pozitif değerler girin. Hipotenüs c varsa, ilgili kenardan uzun olmalıdır.',
-    formulaParagraphs: [
-      '{symbol}, {num} değerinin {den} değerine bölünmesidir. Bu yüzden formül {formula}.',
-      'Kenarları her zaman A açısına göre belirleyin. Birimler aynıysa sonuç birimsiz bir orandır.'
-    ],
-    diagramExplanation: [
-      'Diyagramda a karşı kenar, b komşu kenar ve c hipotenüstür.',
-      '{symbol} yalnızca {num} ve {den} kullanır. Diğer kenar yön bulmaya yardım eder, ancak bu orana girmez.'
-    ],
-    howToSteps: [
-      'Dik üçgende A açısını bulun.',
-      '{num} değerini belirleyin.',
-      '{den} değerini belirleyin.',
-      'İlk değeri hesaplayıcıya girin.',
-      'İkinci değeri aynı birimle girin.',
-      '{symbol} için Calculate düğmesine basın.',
-      'Sonucu kontrol edin: {range}'
-    ],
-    exampleIntro: '{values} olduğunu varsayalım.',
-    exampleConclusion: 'Sonuç {symbol} = {result}. Açı gerekiyorsa ters trigonometrik fonksiyonla A yaklaşık {angle} bulunur.',
-    resultMeaning: [
-      '{symbol}, {num} değerinin {den} ile karşılaştırıldığında ne kadar büyük olduğunu gösterir.',
-      '{range}',
-      'Sonuç birimsizdir, çünkü iki uzunluk oranlanır.'
-    ],
-    rangeNotes: {
-      zeroOne: 'Dik üçgendeki dar açı için değer 0 ile 1 arasındadır.',
-      positiveAny: 'Değer herhangi bir pozitif sayı olabilir.',
-      greaterOne: 'Değer her zaman 1 veya daha büyüktür.'
-    },
-    whenIntro: '{name} hesaplayıcıyı şu durumlarda kullanın:',
-    whenItems: [
-      '{num} ve {den} biliniyorsa ve {symbol} gerekiyorsa.',
-      'ödev veya sınav cevabını kontrol ediyorsanız.',
-      'ters fonksiyonla A açısını bulmak istiyorsanız.',
-      'eğim, rampa, kuvvet veya mesafe bileşenleriyle çalışıyorsanız.',
-      'bu oranı başka bir trigonometrik oranla karşılaştırmak istiyorsanız.'
-    ],
-    mistakesIntro: '{name} hesaplarken şu hatalardan kaçının:',
-    mistakeItems: [
-      'Yanlış kenarı seçmek. {num} ve {den} değerlerini A açısına göre belirleyin.',
-      'Kesri ters çevirmek. Doğru formül {formula}.',
-      'Farklı birimleri dönüştürmeden karıştırmak.',
-      '90 derece açıyı A açısı olarak kullanmak.',
-      'Hipotenüs c nin en uzun kenar olması gerektiğini unutmak.'
-    ],
-    faqs: [
-      { question: '{symbol} formülü nedir?', answer: 'Formül {formula}; {num} payda, {den} paydadadır.' },
-      { question: '{symbol} birime sahip mi?', answer: 'Hayır. İki uzunluğun oranı olduğu için birimler sadeleşir.' },
-      { question: 'A açısını bulabilir miyim?', answer: 'Bu sayfa oranı verir. Açı için ters fonksiyon veya açı hesaplayıcı kullanın.' },
-      { question: '{name} ve {reciprocalName} nasıl ilişkilidir?', answer: '{reciprocalName}, {name} oranının tersidir. Biri biliniyorsa diğeri 1 in o değere bölünmesiyle bulunur.' },
-      { question: 'Hangi kenarları girmeliyim?', answer: '{symbol} için {num} ve {den} girin.' }
-    ]
-  },
-  sv: {
-    ratioNames: { sine: 'sinus', cosine: 'cosinus', tangent: 'tangens', cotangent: 'cotangens', secant: 'sekant', cosecant: 'cosekant' },
-    sideNames: { opposite: 'motstående sida', adjacent: 'närliggande sida', hypotenuse: 'hypotenusa' },
-    ui: createUi({
-      home: 'Hem',
-      badge: 'Kalkylator för trigonometriska förhållanden',
-      parentPageLabel: 'Kalkylator för trigonometriska förhållanden i rätvinklig triangel',
-      formula: 'Formel',
-      triangleDiagram: 'Triangeldiagram',
-      ratioHighlight: 'Förhållande i fokus',
-      numerator: 'Täljare',
-      denominator: 'Nämnare',
-      sideKey: 'Sidnyckel',
-      howToUse: 'Så använder du kalkylatorn',
-      stepByStepExample: 'Exempel steg för steg',
-      whatResultMeans: 'Vad resultatet betyder',
-      whenToUse: 'När detta förhållande används',
-      commonMistakes: 'Vanliga misstag',
-      relatedCalculators: 'Relaterade kalkylatorer',
-      openTool: 'Öppna verktyg',
-      faqHeading: 'Vanliga frågor',
-      rightAngle: '90 grader',
-      sideRoles: {
-        a: { role: 'motstående sida', description: 'mittemot vinkel A', short: 'motstående', label: 'a = motstående sida' },
-        b: { role: 'närliggande sida', description: 'intill vinkel A', short: 'närliggande', label: 'b = närliggande sida' },
-        c: { role: 'hypotenusa', description: 'längsta sidan, mittemot 90 grader', short: 'hypotenusa', label: 'c = hypotenusa' }
-      },
-      usedInPattern: 'Används i {label}',
-      notUsedInPattern: 'Används inte i {label}'
-    }),
-    relatedAngleCalculator: 'Vinkelkalkylator för rätvinklig triangel',
-    pageTitle: 'Kalkylator för {name}förhållande',
-    headerSummary: 'Beräkna {symbol} från {num} och {den} i en rätvinklig triangel.',
-    metaTitle: '{title} | {symbol} i rätvinklig triangel',
-    metaDescription: 'Använd {title} för att hitta {symbol} med formeln {formula}, steg, exempel och diagram.',
-    calculatorHeading: 'Beräkna {name}förhållande',
-    introHeading: 'Så fungerar {title}',
-    intro: [
-      '{name}förhållandet kopplar vinkel A till {num} och {den}. Ange två längder för att få {symbol}.',
-      'Kalkylatorn tar bort manuell division och visar den geometriska relationen: {formula}.'
-    ],
-    calculatorNote: 'Ange positiva värden för {num} och {den}. Om hypotenusan c ingår måste den vara längre än den aktuella kateten.',
-    formulaParagraphs: [
-      '{symbol} är {num} dividerad med {den}. Därför är formeln {formula}.',
-      'Identifiera alltid sidorna relativt vinkel A. Med samma enhet blir resultatet ett enhetslöst förhållande.'
-    ],
-    diagramExplanation: [
-      'I diagrammet är a motstående sida, b närliggande sida och c hypotenusa.',
-      '{symbol} använder bara {num} och {den}. Den tredje sidan hjälper orienteringen men ingår inte i förhållandet.'
-    ],
-    howToSteps: [
-      'Hitta vinkel A i den rätvinkliga triangeln.',
-      'Identifiera {num}.',
-      'Identifiera {den}.',
-      'Skriv in det första värdet i kalkylatorn.',
-      'Skriv in det andra värdet i samma enhet.',
-      'Tryck på Calculate för att få {symbol}.',
-      'Kontrollera resultatet: {range}'
-    ],
-    exampleIntro: 'Anta att {values}.',
-    exampleConclusion: 'Resultatet är {symbol} = {result}. Om du behöver vinkeln, använd invers trigonometrisk funktion: A är ungefär {angle}.',
-    resultMeaning: [
-      '{symbol} visar hur stor {num} är jämfört med {den}.',
-      '{range}',
-      'Resultatet saknar enhet eftersom två längder jämförs.'
-    ],
-    rangeNotes: {
-      zeroOne: 'För en spetsig vinkel i en rätvinklig triangel ligger värdet mellan 0 och 1.',
-      positiveAny: 'Värdet kan vara vilket positivt tal som helst.',
-      greaterOne: 'Värdet är alltid större än eller lika med 1.'
-    },
-    whenIntro: 'Använd kalkylatorn för {name} när:',
-    whenItems: [
-      'du känner till {num} och {den} och behöver {symbol}.',
-      'du kontrollerar en läxa eller ett provsvar.',
-      'du vill hitta vinkel A med en invers funktion.',
-      'du arbetar med lutning, ramp, kraft eller avståndskomponenter.',
-      'du vill jämföra detta förhållande med ett annat trigonometriskt förhållande.'
-    ],
-    mistakesIntro: 'Undvik dessa misstag när du beräknar {name}:',
-    mistakeItems: [
-      'Välj inte fel sida. Identifiera {num} och {den} från vinkel A.',
-      'Vänd inte bråket. Rätt formel är {formula}.',
-      'Blanda inte olika enheter utan omvandling.',
-      'Använd inte 90 graders vinkel som vinkel A.',
-      'Glöm inte att hypotenusan c måste vara längst.'
-    ],
-    faqs: [
-      { question: 'Vad är formeln för {symbol}?', answer: 'Formeln är {formula}; {num} är täljare och {den} är nämnare.' },
-      { question: 'Har {symbol} en enhet?', answer: 'Nej. Det är ett förhållande mellan två längder, så enheterna försvinner.' },
-      { question: 'Kan jag hitta vinkel A?', answer: 'Den här sidan ger förhållandet. För vinkeln använder du invers funktion eller vinkelkalkylatorn.' },
-      { question: 'Hur hänger {name} och {reciprocalName} ihop?', answer: '{reciprocalName} är det reciproka förhållandet till {name}. Om du känner ett värde är det andra 1 dividerat med värdet.' },
-      { question: 'Vilka sidor ska jag ange?', answer: 'För {symbol}, ange {num} och {den}.' }
-    ]
-  },
-  zh: {
-    ratioNames: { sine: '正弦', cosine: '余弦', tangent: '正切', cotangent: '余切', secant: '正割', cosecant: '余割' },
-    sideNames: { opposite: '对边', adjacent: '邻边', hypotenuse: '斜边' },
-    ui: createUi({
-      home: '首页',
-      badge: '三角比计算器',
-      parentPageLabel: '直角三角形三角比计算器',
-      formula: '公式',
-      triangleDiagram: '三角形示意图',
-      ratioHighlight: '比值重点',
-      numerator: '分子',
-      denominator: '分母',
-      sideKey: '边的说明',
-      howToUse: '如何使用此计算器',
-      stepByStepExample: '分步示例',
-      whatResultMeans: '结果含义',
-      whenToUse: '何时使用此比值',
-      commonMistakes: '常见错误',
-      relatedCalculators: '相关计算器',
-      openTool: '打开工具',
-      faqHeading: '常见问题',
-      rightAngle: '90度',
-      sideRoles: {
-        a: { role: '对边', description: '位于角A的对面', short: '对边', label: 'a = 对边' },
-        b: { role: '邻边', description: '紧邻角A', short: '邻边', label: 'b = 邻边' },
-        c: { role: '斜边', description: '最长的边，位于90度角对面', short: '斜边', label: 'c = 斜边' }
-      },
-      usedInPattern: '用于 {label}',
-      notUsedInPattern: '不用于 {label}'
-    }),
-    relatedAngleCalculator: '直角三角形角度计算器',
-    pageTitle: '{name}比计算器',
-    headerSummary: '在直角三角形中，用{num}和{den}计算{symbol}。',
-    metaTitle: '{title} | 直角三角形 {symbol}',
-    metaDescription: '使用{title}求{symbol}，包含公式{formula}、步骤、示例和图示。',
-    calculatorHeading: '计算{name}比',
-    introHeading: '此{title}如何工作',
-    intro: [
-      '{name}比把角A与{num}和{den}联系起来。输入这两个边长即可得到{symbol}。',
-      '此计算器减少手动除法，并显示几何关系: {formula}。'
-    ],
-    calculatorNote: '请输入{num}和{den}的正数值。如果包含斜边c，它必须长于对应的直角边。',
-    formulaParagraphs: [
-      '{symbol}等于{num}除以{den}。因此公式为{formula}。',
-      '始终相对于角A识别各边。若单位相同，结果是无单位比值。'
-    ],
-    diagramExplanation: [
-      '图中a是对边，b是邻边，c是斜边。',
-      '{symbol}只使用{num}和{den}。另一条边有助于辨认方向，但不参与此比值。'
-    ],
-    howToSteps: [
-      '在直角三角形中找到角A。',
-      '确定{num}。',
-      '确定{den}。',
-      '在计算器中输入第一个值。',
-      '用相同单位输入第二个值。',
-      '点击Calculate得到{symbol}。',
-      '检查结果: {range}'
-    ],
-    exampleIntro: '假设{values}。',
-    exampleConclusion: '结果为{symbol} = {result}。若需要角度，可使用反三角函数，A约为{angle}。',
-    resultMeaning: [
-      '{symbol}表示{num}相对于{den}的大小。',
-      '{range}',
-      '该比值没有单位，因为它比较的是两个长度。'
-    ],
-    rangeNotes: {
-      zeroOne: '对于直角三角形的锐角，数值在0和1之间。',
-      positiveAny: '数值可以是任意正数。',
-      greaterOne: '数值始终大于或等于1。'
-    },
-    whenIntro: '在以下情况使用{name}计算器:',
-    whenItems: [
-      '已知{num}和{den}，需要{symbol}。',
-      '检查作业或考试答案。',
-      '准备使用反三角函数求角A。',
-      '处理坡度、斜坡、力或距离分量。',
-      '想把此比值与其他三角比比较。'
-    ],
-    mistakesIntro: '计算{name}时请避免这些错误:',
-    mistakeItems: [
-      '选择错误的边。应从角A出发确定{num}和{den}。',
-      '把分数颠倒。正确公式是{formula}。',
-      '未换算就混用不同单位。',
-      '把90度角当作角A。',
-      '忘记斜边c必须是最长边。'
-    ],
-    faqs: [
-      { question: '{symbol}的公式是什么?', answer: '公式是{formula}; {num}在分子，{den}在分母。' },
-      { question: '{symbol}有单位吗?', answer: '没有。它是两个长度的比，因此单位会抵消。' },
-      { question: '能求角A吗?', answer: '本页给出比值。要求角度，请使用反三角函数或角度计算器。' },
-      { question: '{name}和{reciprocalName}有什么关系?', answer: '{reciprocalName}是{name}的倒数比。知道一个值后，另一个值等于1除以该值。' },
-      { question: '需要输入哪些边?', answer: '对于{symbol}，请输入{num}和{den}。' }
-    ]
-  }
-};
-
-const ALIASES: Partial<Record<Locale, Locale>> = {
-  // These languages receive full localized page data through closely related
-  // fallback packs when a dedicated pack is not needed for math terminology.
-};
-
-const getCopy = (locale: Locale): CopyPack | undefined =>
-  COPIES[locale] || (ALIASES[locale] ? COPIES[ALIASES[locale]!] : undefined);
-
-const buildValues = (copy: CopyPack, config: RatioConfig) => {
-  const name = copy.ratioNames[config.key];
-  const reciprocalName = copy.ratioNames[config.reciprocal];
-  const num = sideText(copy, config.numerator);
-  const den = sideText(copy, config.denominator);
-  const title = fill(copy.pageTitle, { name });
-  const range = copy.rangeNotes[config.range];
-
-  return {
-    name,
-    reciprocalName,
-    num,
-    den,
-    title,
-    range,
-    symbol: config.symbol,
-    formula: config.formula,
-    values: config.exampleValues,
-    result: config.exampleResult,
-    angle: config.exampleAngle
-  };
-};
-
-const translateRelatedLinks = (
-  copy: CopyPack,
-  links: FocusedTrigRatioCalculatorPage['relatedLinks']
-) => {
-  const ratioLabels = Object.values(RATIO_CONFIGS).reduce<Record<string, string>>((acc, config) => {
-    acc[config.url] = fill(copy.pageTitle, { name: copy.ratioNames[config.key] });
-    return acc;
-  }, {});
-
-  const commonLabels: Record<string, string> = {
-    '/right-triangle-trig-ratios-calculator/': copy.ui.parentPageLabel,
-    '/right-triangle-angle-calculator/': copy.relatedAngleCalculator
-  };
-
-  return links.map((link) => ({
-    ...link,
-    label: ratioLabels[link.href] || commonLabels[link.href] || link.label
-  }));
-};
-
-const translateList = (templates: string[], values: Record<string, string>) =>
-  templates.map((template) => fill(template, values));
-
-export function localizeFocusedTrigRatioCalculatorPage(
-  page: FocusedTrigRatioCalculatorPage,
-  locale: Locale
-): FocusedTrigRatioCalculatorPage {
-  const copy = getCopy(locale);
-  const config = RATIO_CONFIGS[page.slug];
-
-  if (!copy || !config) {
-    return page;
-  }
-
-  const values = buildValues(copy, config);
-  const fields = [config.numerator, config.denominator].map((side) => ({
-    key: sideLetters[side],
-    label: sideText(copy, side),
-    min: 0
-  }));
-
-  return {
-    ...page,
-    h1: fill(copy.pageTitle, values),
-    headerSummary: fill(copy.headerSummary, values),
-    metaTitle: fill(copy.metaTitle, values),
-    metaDescription: fill(copy.metaDescription, values),
-    calculator: {
-      heading: fill(copy.calculatorHeading, values),
-      outputLabel: config.symbol,
-      fields
-    },
-    introHeading: fill(copy.introHeading, values),
-    intro: translateList(copy.intro, values),
-    calculatorNote: fill(copy.calculatorNote, values),
-    formula: {
-      display: config.formula,
-      paragraphs: translateList(copy.formulaParagraphs, values)
-    },
-    diagramExplanation: translateList(copy.diagramExplanation, values),
-    howToSteps: translateList(copy.howToSteps, values),
-    example: {
-      intro: fill(copy.exampleIntro, values),
-      steps: config.exampleLines,
-      conclusion: fill(copy.exampleConclusion, values)
-    },
-    whatResultMeans: translateList(copy.resultMeaning, values),
-    whenToUse: {
-      intro: fill(copy.whenIntro, values),
-      items: translateList(copy.whenItems, values)
-    },
-    commonMistakes: {
-      intro: fill(copy.mistakesIntro, values),
-      items: translateList(copy.mistakeItems, values)
-    },
-    relatedLinks: translateRelatedLinks(copy, page.relatedLinks),
-    faqs: copy.faqs.map((faq) => ({
-      question: fill(faq.question, values),
-      answer: fill(faq.answer, values)
-    }))
-  };
-}
-
-export function getFocusedTrigRatioUi(locale: Locale): FocusedTrigRatioUi {
-  return getCopy(locale)?.ui || EN_UI;
-}
-
-export function getFocusedTrigRatioRuntimeTranslations(
-  page: FocusedTrigRatioCalculatorPage,
-  locale: Locale
-) {
-  const runtimeUi = locale === 'en' ? EN_RUNTIME_UI : RUNTIME_UI[locale] ?? EN_RUNTIME_UI;
-  const config = RATIO_CONFIGS[page.slug];
-
-  return {
-    ...runtimeUi,
-    calculationSteps: config
-      ? {
-          [config.key]: {
-            title: page.calculator.heading,
-            description: page.formula.paragraphs[0] || page.calculatorNote
-          }
-        }
-      : {}
-  };
-}
-
-export function getFocusedTrigRatioSideLabel(
-  locale: Locale,
-  side: 'a' | 'b' | 'c'
-) {
-  return getFocusedTrigRatioUi(locale).sideRoles[side].label;
-}

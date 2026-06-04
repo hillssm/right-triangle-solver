@@ -639,23 +639,207 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       }
     ]
   },
-  {
-  slug: "right-triangle-area-from-legs-calculator",
-  url: "/right-triangle-area-from-legs-calculator/",
-  h1: "Right Triangle Area from Legs Calculator",
-  metaTitle: "Right Triangle Area from Legs Calculator | Calculate Area Instantly",
-  metaDescription: "Calculate the area of a right triangle directly from leg a and leg b. Includes the formula A = (a × b) / 2, step-by-step solution, diagrams, and examples.",
-  formulaSlug: "area-from-legs",
-  toolPurpose: "Enter the two perpendicular legs of a right triangle to calculate the total enclosed area. The calculator shows the exact formula, step-by-step arithmetic, and a diagram to verify your inputs.",
-  intro: "Enter leg a and leg b to calculate the exact area of your right triangle.",
-  quickSummary: {
-    h2: "What This Area Calculator Solves",
-    intro: "Use this calculator when you know the lengths of the two perpendicular legs (the sides that form the 90° angle) and need the internal area. This is the most common and direct way to find right triangle area.",
-    cards: [
+    {
+    slug: 'right-triangle-area-from-legs-calculator',
+    url: '/right-triangle-area-from-legs-calculator/',
+    h1: 'Right Triangle Area From Legs Calculator',
+    metaTitle: 'Right Triangle Area From Legs Calculator',
+    metaDescription: 'Content will be added soon.',
+    formulaSlug: 'area-from-legs',
+    toolPurpose: 'Content will be added soon.',
+    intro: 'Content will be added soon.',
+    calculator: {
+      outputLabel: 'Area',
+      fields: [
+        { key: 'a', label: 'Leg a', min: 0 },
+        { key: 'b', label: 'Leg b', min: 0 }
+      ]
+    },
+    formulaSection: {
+      h2: 'Formula',
+      paragraphs: ['Content will be added soon.'],
+      formulas: ['A = (a \\times b) / 2']
+    },
+    howTo: {
+      h2: 'How to Use This Calculator',
+      steps: ['Content will be added soon.']
+    },
+    example: {
+      h2: 'Example',
+      intro: 'Content will be added soon.',
+      lines: ['Content will be added soon.'],
+      answer: 'Content will be added soon.'
+    },
+    extraSections: [
       {
-        label: "Known values",
-        value: "Leg a and leg b"
-      },
+        h2: 'Related Area Calculators',
+        paragraphs: ['Content will be added soon.']
+      }
+    ],
+    relatedLinks: [
+      { href: '/right-triangle-area-calculator/', label: 'Right Triangle Area Calculator' },
+      { href: '/right-triangle-area-from-angle-calculator/', label: 'Right Triangle Area From Angle Calculator' },
+      { href: '/right-triangle-area-from-semiperimeter-calculator/', label: 'Right Triangle Area From Semiperimeter Calculator' },
+      { href: '/right-triangle-area-from-altitude-calculator/', label: 'Right Triangle Area From Altitude Calculator' }
+    ],
+    faqs: [
+      {
+        question: 'Content will be added soon?',
+        answer: 'Content will be added soon.'
+      }
+    ]
+  },
+  {
+    slug: 'right-triangle-area-from-angle-calculator',
+    url: '/right-triangle-area-from-angle-calculator/',
+    h1: 'Right Triangle Area From Angle Calculator',
+    metaTitle: 'Right Triangle Area From Angle Calculator',
+    metaDescription: 'Content will be added soon.',
+    formulaSlug: 'area-sin-a',
+    toolPurpose: 'Content will be added soon.',
+    intro: 'Content will be added soon.',
+    calculator: {
+      outputLabel: 'Area',
+      fields: [
+        { key: 'b', label: 'Leg b', min: 0 },
+        { key: 'c', label: 'Hypotenuse c', min: 0 },
+        { key: 'A', label: 'Angle A', min: 0 }
+      ]
+    },
+    formulaSection: {
+      h2: 'Formula',
+      paragraphs: ['Content will be added soon.'],
+      formulas: ['A = (b \\times c \\times \\sin(A)) / 2']
+    },
+    howTo: {
+      h2: 'How to Use This Calculator',
+      steps: ['Content will be added soon.']
+    },
+    example: {
+      h2: 'Example',
+      intro: 'Content will be added soon.',
+      lines: ['Content will be added soon.'],
+      answer: 'Content will be added soon.'
+    },
+    extraSections: [
+      {
+        h2: 'Related Area Calculators',
+        paragraphs: ['Content will be added soon.']
+      }
+    ],
+    relatedLinks: [
+      { href: '/right-triangle-area-calculator/', label: 'Right Triangle Area Calculator' },
+      { href: '/right-triangle-area-from-legs-calculator/', label: 'Right Triangle Area From Legs Calculator' },
+      { href: '/right-triangle-area-from-semiperimeter-calculator/', label: 'Right Triangle Area From Semiperimeter Calculator' },
+      { href: '/right-triangle-area-from-altitude-calculator/', label: 'Right Triangle Area From Altitude Calculator' }
+    ],
+    faqs: [
+      {
+        question: 'Content will be added soon?',
+        answer: 'Content will be added soon.'
+      }
+    ]
+  },
+  {
+    slug: 'right-triangle-area-from-semiperimeter-calculator',
+    url: '/right-triangle-area-from-semiperimeter-calculator/',
+    h1: 'Right Triangle Area From Semiperimeter Calculator',
+    metaTitle: 'Right Triangle Area From Semiperimeter Calculator',
+    metaDescription: 'Content will be added soon.',
+    formulaSlug: 'area-rs',
+    toolPurpose: 'Content will be added soon.',
+    intro: 'Content will be added soon.',
+    calculator: {
+      outputLabel: 'Area',
+      fields: [
+        { key: 'r', label: 'Inradius r', min: 0 },
+        { key: 's', label: 'Semiperimeter s', min: 0 }
+      ]
+    },
+    formulaSection: {
+      h2: 'Formula',
+      paragraphs: ['Content will be added soon.'],
+      formulas: ['A = r \\times s']
+    },
+    howTo: {
+      h2: 'How to Use This Calculator',
+      steps: ['Content will be added soon.']
+    },
+    example: {
+      h2: 'Example',
+      intro: 'Content will be added soon.',
+      lines: ['Content will be added soon.'],
+      answer: 'Content will be added soon.'
+    },
+    extraSections: [
+      {
+        h2: 'Related Area Calculators',
+        paragraphs: ['Content will be added soon.']
+      }
+    ],
+    relatedLinks: [
+      { href: '/right-triangle-area-calculator/', label: 'Right Triangle Area Calculator' },
+      { href: '/right-triangle-area-from-legs-calculator/', label: 'Right Triangle Area From Legs Calculator' },
+      { href: '/right-triangle-area-from-angle-calculator/', label: 'Right Triangle Area From Angle Calculator' },
+      { href: '/right-triangle-area-from-altitude-calculator/', label: 'Right Triangle Area From Altitude Calculator' }
+    ],
+    faqs: [
+      {
+        question: 'Content will be added soon?',
+        answer: 'Content will be added soon.'
+      }
+    ]
+  },
+  {
+    slug: 'right-triangle-area-from-altitude-calculator',
+    url: '/right-triangle-area-from-altitude-calculator/',
+    h1: 'Right Triangle Area From Altitude Calculator',
+    metaTitle: 'Right Triangle Area From Altitude Calculator',
+    metaDescription: 'Content will be added soon.',
+    formulaSlug: 'area-ch',
+    toolPurpose: 'Content will be added soon.',
+    intro: 'Content will be added soon.',
+    calculator: {
+      outputLabel: 'Area',
+      fields: [
+        { key: 'c', label: 'Hypotenuse c', min: 0 },
+        { key: 'h', label: 'Altitude h', min: 0 }
+      ]
+    },
+    formulaSection: {
+      h2: 'Formula',
+      paragraphs: ['Content will be added soon.'],
+      formulas: ['A = (c \\times h) / 2']
+    },
+    howTo: {
+      h2: 'How to Use This Calculator',
+      steps: ['Content will be added soon.']
+    },
+    example: {
+      h2: 'Example',
+      intro: 'Content will be added soon.',
+      lines: ['Content will be added soon.'],
+      answer: 'Content will be added soon.'
+    },
+    extraSections: [
+      {
+        h2: 'Related Area Calculators',
+        paragraphs: ['Content will be added soon.']
+      }
+    ],
+    relatedLinks: [
+      { href: '/right-triangle-area-calculator/', label: 'Right Triangle Area Calculator' },
+      { href: '/right-triangle-area-from-legs-calculator/', label: 'Right Triangle Area From Legs Calculator' },
+      { href: '/right-triangle-area-from-angle-calculator/', label: 'Right Triangle Area From Angle Calculator' },
+      { href: '/right-triangle-area-from-semiperimeter-calculator/', label: 'Right Triangle Area From Semiperimeter Calculator' }
+    ],
+    faqs: [
+      {
+        question: 'Content will be added soon?',
+        answer: 'Content will be added soon.'
+      }
+    ]
+  },
       {
         label: "Finds",
         value: "Area (A), the total enclosed surface"

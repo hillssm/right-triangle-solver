@@ -1,0 +1,12 @@
+---
+import { getFocusedMeasurementCalculatorPage } from 'src/data/focusedMeasurementCalculatorPages';
+import FocusedMeasurementCalculatorPage from 'theme/templates/FocusedMeasurementCalculatorPage.astro';
+
+const page = getFocusedMeasurementCalculatorPage('right-triangle-area-from-altitude-calculator');
+
+if (!page) {
+  throw new Error('Missing page data for right-triangle-area-from-altitude-calculator');
+}
+---
+
+<FocusedMeasurementCalculatorPage page={page} />

@@ -1,4 +1,6 @@
 import type { RightTriangleFormula } from 'src/data/rightTriangleFormulas';
+import { localizeFocusedAltitudeCalculatorPage } from 'src/data/focusedAltitudeCalculatorTranslations';
+import { DEFAULT_LOCALE, type Locale } from 'theme/i18n/locales';
 
 export type FocusedAltitudeCalculatorPage = {
   slug: string;
@@ -6,6 +8,19 @@ export type FocusedAltitudeCalculatorPage = {
   h1: string;
   metaTitle: string;
   metaDescription: string;
+  badge?: string;
+  parentBreadcrumbLabel?: string;
+  howItWorksHeading?: string;
+  relatedHeading?: string;
+  faqHeading?: string;
+  faqDescription?: string;
+  calculatorMessages?: {
+    positive?: string;
+    invalid?: string;
+    hypotenuseLongest?: string;
+    invalidTriangle?: string;
+  };
+  runtimeTranslations?: Record<string, unknown>;
   calculatorHeading: string;
   formula: RightTriangleFormula;
   toolPurpose: string;
@@ -425,7 +440,7 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
       lines: [
         'h = \\sqrt{p \\times q}',
         'h = \\sqrt{3.6 \\times 6.4}',
-        'h = \u221A23.04',
+        'h = \\sqrt{23.04}',
         'h = 4.8'
       ],
       answer:
@@ -553,7 +568,16 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGE_SLUGS =
   FOCUSED_ALTITUDE_CALCULATOR_PAGES.map((page) => page.slug);
 
 export function getFocusedAltitudeCalculatorPage(
-  slug: string
+  slug: string,
+  locale: Locale = DEFAULT_LOCALE
 ): FocusedAltitudeCalculatorPage | undefined {
-  return FOCUSED_ALTITUDE_CALCULATOR_PAGES.find((page) => page.slug === slug);
+  const page = FOCUSED_ALTITUDE_CALCULATOR_PAGES.find((item) => item.slug === slug);
+
+  if (!page) {
+    return undefined;
+  }
+
+  return locale === DEFAULT_LOCALE
+    ? page
+    : localizeFocusedAltitudeCalculatorPage(page, locale);
 }

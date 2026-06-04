@@ -580,7 +580,13 @@ const calculatorMessages = JSON.stringify(messages);
             return {
               result: r,
               steps: [
-                `**Find Altitude h**<br/>Calculate the height to the hypotenuse using the leg product ratio.<br/>Use h = (a \u00D7 b) / c<br/>h = (${a} \u00D7 ${b}) / ${format(c)} = ${format(a * b)} / ${format(c)} = ${format(r)}`
+                buildCalculationStep(
+                  'altitudeFromSides',
+                  'Find Altitude h',
+                  'Calculate the height to the hypotenuse using the leg product ratio.',
+                  'h = (a \u00D7 b) / c',
+                  `h = (${a} \u00D7 ${b}) / ${format(c)} = ${format(a * b)} / ${format(c)} = ${format(r)}`
+                )
               ]
             };
           }
@@ -600,7 +606,13 @@ const calculatorMessages = JSON.stringify(messages);
             return {
               result: r,
               steps: [
-                `**Find Altitude h**<br/>Calculate the height to the hypotenuse using the leg product ratio.<br/>Use h = (a \u00D7 b) / c<br/>h = (${v.a} \u00D7 ${v.b}) / ${v.c} = ${format(v.a * v.b)} / ${v.c} = ${format(r)}`
+                buildCalculationStep(
+                  'altitudeFromSides',
+                  'Find Altitude h',
+                  'Calculate the height to the hypotenuse using the leg product ratio.',
+                  'h = (a \u00D7 b) / c',
+                  `h = (${v.a} \u00D7 ${v.b}) / ${v.c} = ${format(v.a * v.b)} / ${v.c} = ${format(r)}`
+                )
               ]
             };
           }
@@ -776,7 +788,22 @@ const calculatorMessages = JSON.stringify(messages);
           }
           case 'area_rs': { requirePositive(v.r, v.s); const r = v.r * v.s; return { result: r, steps: [`**Calculate Area**<br/>Derive the area from inradius and semiperimeter.<br/>Use Area = r \u00D7 s<br/>Area = ${v.r} \u00D7 ${v.s} = ${format(r)}`] }; }
           case 'area_ch': { requirePositive(v.c, v.h); const r = 0.5 * v.c * v.h; return { result: r, steps: [`**Calculate Area**<br/>Standard base-height formula applied to the hypotenuse.<br/>Use Area = 0.5 \u00D7 c \u00D7 h<br/>Area = 0.5 \u00D7 ${v.c} \u00D7 ${v.h} = ${format(r)}`] }; }
-          case 'altitude_pq': { requirePositive(v.p, v.q); const r = Math.sqrt(v.p * v.q); return { result: r, steps: [`**Find Altitude h**<br/>The geometric mean of the hypotenuse segments.<br/>Use h = \u221A(p \u00D7 q)<br/>h = \u221A(${v.p} \u00D7 ${v.q}) = \u221A(${format(v.p * v.q)}) = ${format(r)}`] }; }
+          case 'altitude_pq': {
+            requirePositive(v.p, v.q);
+            const r = Math.sqrt(v.p * v.q);
+            return {
+              result: r,
+              steps: [
+                buildCalculationStep(
+                  'altitudeFromProjections',
+                  'Find Altitude h',
+                  'The geometric mean of the hypotenuse segments.',
+                  'h = \u221A(p \u00D7 q)',
+                  `h = \u221A(${v.p} \u00D7 ${v.q}) = \u221A(${format(v.p * v.q)}) = ${format(r)}`
+                )
+              ]
+            };
+          }
           case 'leg_from_cp': { requirePositive(v.c, v.p); const r = Math.sqrt(v.c * v.p); return { result: r, steps: [`**Solve for Leg a**<br/>Calculate leg a from its projection onto the hypotenuse.<br/>Use a = \u221A(c \u00D7 p)<br/>a = \u221A(${v.c} \u00D7 ${v.p}) = \u221A(${format(v.c * v.p)}) = ${format(r)}`] }; }
           case 'leg_from_cq': { requirePositive(v.c, v.q); const r = Math.sqrt(v.c * v.q); return { result: r, steps: [`**Solve for Leg b**<br/>Calculate leg b from its projection onto the hypotenuse.<br/>Use b = \u221A(c \u00D7 q)<br/>b = \u221A(${v.c} \u00D7 ${v.q}) = \u221A(${format(v.c * v.q)}) = ${format(r)}`] }; }
           case 'hyp_from_pq': { requirePositive(v.p, v.q); const r = v.p + v.q; return { result: r, steps: [`**Solve for Hypotenuse c**<br/>Sum the two segments of the hypotenuse.<br/>Use c = p + q<br/>c = ${v.p} + ${v.q} = ${format(r)}`] }; }
@@ -800,7 +827,8 @@ const calculatorMessages = JSON.stringify(messages);
         
         let outKey = null;
         const lowL = outputLabel.toLowerCase();
-        if (lowL.includes('leg a') || outputLabel === 'Leg a' || lowL === 'opposite a' || lowL === 'long leg') outKey = 'a';
+        if (kind.toLowerCase().includes('altitude')) outKey = 'h';
+        else if (lowL.includes('leg a') || outputLabel === 'Leg a' || lowL === 'opposite a' || lowL === 'long leg') outKey = 'a';
         else if (lowL.includes('leg b') || outputLabel === 'Leg b' || lowL === 'adjacent b') outKey = 'b';
         else if (lowL.includes('hypotenuse c') || outputLabel === 'Hypotenuse c') outKey = 'c';
         else if (lowL.includes('angle a') || lowL.includes('sin(a)') || lowL.includes('cos(a)') || lowL.includes('tan(a)') || lowL.includes('cot(a)') || lowL.includes('sec(a)') || lowL.includes('csc(a)')) outKey = 'A';
@@ -1073,7 +1101,10 @@ const calculatorMessages = JSON.stringify(messages);
                   const valueClass = detail.type === 'answer'
                     ? 'math-textbook font-semibold text-primary'
                     : 'math-textbook text-on-surface-variant';
-                  return `<li><span class="font-semibold text-on-surface">${detail.label}:</span> <span class="${valueClass}">${formatStepText(detail.value)}</span></li>`;
+                  const valueDir = ['formula', 'substitution', 'answer'].includes(detail.type)
+                    ? ' dir="ltr"'
+                    : '';
+                  return `<li><span class="font-semibold text-on-surface">${detail.label}:</span> <span class="${valueClass}"${valueDir}>${formatStepText(detail.value)}</span></li>`;
                 })
                 .join('')}</ul>`
             : '';

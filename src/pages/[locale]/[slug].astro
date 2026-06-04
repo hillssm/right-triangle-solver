@@ -17,11 +17,16 @@ import {
   getFocusedAngleCalculatorPage,
   getFocusedAngleLegacyRedirect
 } from 'src/data/focusedAngleCalculatorPages';
+import {
+  FOCUSED_ALTITUDE_CALCULATOR_PAGE_SLUGS,
+  getFocusedAltitudeCalculatorPage
+} from 'src/data/focusedAltitudeCalculatorPages';
 import { GROUPED_PAGE_SLUGS } from 'src/data/rightTriangleGroupedPages';
 import FocusedSideCalculatorPage from 'theme/templates/FocusedSideCalculatorPage.astro';
 import FocusedMeasurementCalculatorPage from 'theme/templates/FocusedMeasurementCalculatorPage.astro';
 import FocusedTrigRatioCalculatorPage from 'theme/templates/FocusedTrigRatioCalculatorPage.astro';
 import FocusedAngleCalculatorPage from 'theme/templates/FocusedAngleCalculatorPage.astro';
+import FocusedAltitudeCalculatorPage from 'theme/templates/FocusedAltitudeCalculatorPage.astro';
 import GroupedCalculatorPage from 'theme/templates/GroupedCalculatorPage.astro';
 import LegacyRedirectPage from 'theme/templates/LegacyRedirectPage.astro';
 import {
@@ -38,6 +43,7 @@ export function getStaticPaths() {
       ...FOCUSED_MEASUREMENT_CALCULATOR_PAGE_SLUGS,
       ...FOCUSED_TRIG_RATIO_CALCULATOR_PAGE_SLUGS,
       ...FOCUSED_ANGLE_CALCULATOR_PAGE_SLUGS,
+      ...FOCUSED_ALTITUDE_CALCULATOR_PAGE_SLUGS,
       ...FOCUSED_ANGLE_LEGACY_REDIRECT_SLUGS
     ].map((slug) => ({
       params: { ...item.params, slug }
@@ -51,6 +57,7 @@ const focusedPage = getFocusedSideCalculatorPage(slug, locale);
 const measurementPage = getFocusedMeasurementCalculatorPage(slug, locale);
 const trigRatioPage = getFocusedTrigRatioCalculatorPage(slug, locale);
 const anglePage = getFocusedAngleCalculatorPage(slug, locale);
+const altitudePage = getFocusedAltitudeCalculatorPage(slug, locale);
 const legacyRedirectUrl = getFocusedAngleLegacyRedirect(slug);
 const localizedLegacyRedirectUrl = legacyRedirectUrl
   ? localizePath(locale, legacyRedirectUrl)
@@ -67,6 +74,8 @@ const localizedLegacyRedirectUrl = legacyRedirectUrl
     <FocusedTrigRatioCalculatorPage page={trigRatioPage} locale={locale} />
   ) : anglePage ? (
     <FocusedAngleCalculatorPage page={anglePage} locale={locale} />
+  ) : altitudePage ? (
+    <FocusedAltitudeCalculatorPage page={altitudePage} locale={locale} />
   ) : (
     <GroupedCalculatorPage locale={locale} slug={slug} />
   )

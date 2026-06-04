@@ -1,5 +1,10 @@
 ---
 import type { FocusedSideCalculatorPage as FocusedSideCalculatorPageData } from 'src/data/focusedSideCalculatorPages';
+import {
+  getFocusedSideAngleCalculatorMessages,
+  getFocusedSideAngleCalculatorRuntimeTranslations,
+  isFocusedSideAngleCalculatorSlug
+} from 'src/data/focusedSideAngleCalculatorTranslations';
 import { getFocusedSideCalculatorUi } from 'src/data/focusedSideCalculatorUiTranslations';
 import { getFormulaBySlug } from 'src/data/rightTriangleFormulas';
 import Faq from 'theme/components/Faq.astro';
@@ -42,12 +47,21 @@ const groupedPages = ((content.grouped as Record<string, any>)?.pages as Record<
 const groupedUi = ((content.grouped as Record<string, any>)?.ui as Record<string, string>) || {};
 const faqHub = (content.faqHub as Record<string, string>) || {};
 const focusedUi = getFocusedSideCalculatorUi(locale);
+const isSideAngleChild = isFocusedSideAngleCalculatorSlug(page.slug);
+const sideAngleMessages = getFocusedSideAngleCalculatorMessages(locale);
+const sideAngleRuntimeTranslations = getFocusedSideAngleCalculatorRuntimeTranslations(page, locale);
 
 const homeLabel = pick(nav, 'home', 'Home');
+const parentPageSlug = isSideAngleChild
+  ? 'right-triangle-side-from-angle-calculator'
+  : 'right-triangle-side-calculator';
+const parentPageFallback = isSideAngleChild
+  ? 'Right Triangle Side From Angle Calculator'
+  : 'Right Triangle Side Calculator';
 const sideCalculatorLabel = pick(
-  groupedPages['right-triangle-side-calculator'] || {},
+  groupedPages[parentPageSlug] || {},
   'h1',
-  'Right Triangle Side Calculator'
+  parentPageFallback
 );
 const canonicalPath = localizePath(locale, page.url);
 
@@ -61,7 +75,7 @@ const breadcrumbItems = [
   { label: homeLabel, href: localizePath(locale, '/') },
   {
     label: sideCalculatorLabel,
-    href: localizePath(locale, '/right-triangle-side-calculator/')
+    href: localizePath(locale, `/${parentPageSlug}/`)
   },
   { label: page.h1, href: canonicalPath }
 ];
@@ -91,9 +105,11 @@ const faqSchema = {
 };
 
 const calculatorMessages = {
-  positive: focusedUi.positive,
-  invalid: focusedUi.positive,
-  hypotenuseKnownLeg: focusedUi.hypotenuseKnownLeg
+  positive: isSideAngleChild ? sideAngleMessages.positive : focusedUi.positive,
+  invalid: isSideAngleChild ? sideAngleMessages.angleRange : focusedUi.positive,
+  hypotenuseKnownLeg: isSideAngleChild
+    ? sideAngleMessages.hypotenuseKnownSide
+    : focusedUi.hypotenuseKnownLeg
 };
 
 type DiagramSideStatus =
@@ -162,6 +178,7 @@ const sideCalculatorBadge = pick(common.categories || {}, 'sides', 'Side Calcula
     formula={calculatorFormula}
     locale={locale}
     messages={calculatorMessages}
+    runtimeTranslations={sideAngleRuntimeTranslations}
   />
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
@@ -175,7 +192,7 @@ const sideCalculatorBadge = pick(common.categories || {}, 'sides', 'Side Calcula
           <p class="font-label text-[11px] uppercase tracking-widest text-primary">
             {card.label}
           </p>
-          <p class="mt-2 break-words text-sm leading-relaxed text-on-surface">
+          <p class="mt-2 break-words text-sm leading-relaxed text-on-surface" dir={card.value.includes('=') ? 'ltr' : undefined}>
             {card.value}
           </p>
         </div>
@@ -310,6 +327,7 @@ const sideCalculatorBadge = pick(common.categories || {}, 'sides', 'Side Calcula
         <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-4 py-3">
           <div
             class="math-textbook min-w-max text-xl text-tertiary"
+            dir="ltr"
             set:html={renderMath(expression)}
           />
         </div>
@@ -334,6 +352,7 @@ const sideCalculatorBadge = pick(common.categories || {}, 'sides', 'Side Calcula
         {page.example.lines.map((line) => (
           <div
             class="math-textbook min-w-max text-lg text-on-surface"
+            dir="ltr"
             set:html={renderMath(line, false)}
           />
         ))}

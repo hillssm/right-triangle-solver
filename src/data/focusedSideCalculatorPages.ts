@@ -1,4 +1,8 @@
 import type { FormulaCalculatorField } from 'src/data/rightTriangleFormulas';
+import {
+  isFocusedSideAngleCalculatorSlug,
+  localizeFocusedSideAngleCalculatorPage
+} from 'src/data/focusedSideAngleCalculatorTranslations';
 import { FOCUSED_SIDE_CALCULATOR_TRANSLATIONS } from 'src/data/focusedSideCalculatorTranslations';
 import { DEFAULT_LOCALE, type Locale } from 'theme/i18n/locales';
 
@@ -659,7 +663,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       sides: {
         a: {
           label: 'a = find',
-          description: 'Opposite side a is the vertical leg across from angle A. This is the unknown value.',
+          description: 'Opposite side a is directly across from angle A. This is the unknown value.',
           status: 'unknown'
         },
         b: {
@@ -746,7 +750,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
           'Using the adjacent side instead of the hypotenuse as your known side.',
           'Using cosine instead of sine. Cosine finds the adjacent side, not the opposite.',
           'Entering angle A in radians when the calculator expects degrees.',
-          'Forgetting that c is always the hypotenuse, not a leg.',
+          'Forgetting that c is always the hypotenuse, not side a or side b.',
           'Expecting a result larger than c. The opposite side is always shorter than the hypotenuse.'
         ]
       }
@@ -816,7 +820,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       sides: {
         a: {
           label: 'a',
-          description: 'Opposite side a is the vertical leg across from angle A. It is not needed for this calculation.',
+          description: 'Opposite side a is directly across from angle A. It is not needed for this calculation.',
           status: 'unknown'
         },
         b: {
@@ -832,7 +836,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       },
       notes: [
         'For angle A, side a is opposite, side b is adjacent, and side c is the hypotenuse.',
-        'The adjacent side is always the leg that touches the angle and the right angle.',
+        'The adjacent side is always the side that touches angle A and the right angle.',
         'The result b will always be shorter than c.'
       ]
     },
@@ -847,7 +851,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       h2: 'Side From Cosine Formula',
       paragraphs: [
         'The cosine of an angle in a right triangle equals the adjacent side divided by the hypotenuse. Written as a ratio: cos(A) = b / c. Multiplying both sides by c gives the direct formula below.',
-        'Here, c is the hypotenuse (the longest side, opposite the 90-degree angle), A is the acute angle, and b is the adjacent side you want. The cosine function converts the angle into the exact fraction of the hypotenuse that equals the adjacent leg.'
+        'Here, c is the hypotenuse (the longest side, opposite the 90-degree angle), A is the acute angle, and b is the adjacent side you want. The cosine function converts the angle into the exact fraction of the hypotenuse that equals the adjacent side.'
       ],
       formulas: ['b = c \\times \\cos(A)']
     },
@@ -875,7 +879,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         h2: 'What the Result Means',
         paragraphs: [
-          'The output labeled Adjacent side b is the leg that sits next to angle A and also touches the right angle. In real-world problems, this is often the horizontal distance, ground run, or base measurement.',
+          'The output labeled Adjacent side b is the side that sits next to angle A and also touches the right angle. In real-world problems, this is often the horizontal distance, ground run, or base measurement.',
           'Like the opposite side, the adjacent side is always shorter than the hypotenuse. If the angle is small, b will be close to c. If the angle is large (near 90 degrees), b shrinks toward zero.'
         ]
       },
@@ -903,7 +907,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
           'Using sine instead of cosine. Sine returns the opposite side, not the adjacent.',
           'Entering the opposite side instead of the hypotenuse.',
           'Confusing side b with side a. Side b is adjacent to angle A, side a is opposite.',
-          'Forgetting that c is the hypotenuse and never a leg.',
+          'Forgetting that c is the hypotenuse and never side a or side b.',
           'Using an angle in radians when the calculator expects degrees.'
         ]
       }
@@ -924,17 +928,17 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         question: 'How is this different from the sine calculator?',
         answer:
-          'The sine calculator finds the opposite side a. This cosine calculator finds the adjacent side b. Both use the hypotenuse, but they return different legs of the triangle.'
+          'The sine calculator finds the opposite side a. This cosine calculator finds the adjacent side b. Both use the hypotenuse, but they return different sides of the triangle.'
       },
       {
         question: 'What does adjacent side mean?',
         answer:
-          'The adjacent side is the leg that touches the angle you are using and also touches the right angle. For angle A, the adjacent side is b.'
+          'The adjacent side is the side that touches the angle you are using and also touches the right angle. For angle A, the adjacent side is b.'
       },
       {
         question: 'Can b be larger than the hypotenuse?',
         answer:
-          'No. In a right triangle, both legs are always shorter than the hypotenuse. If your result is larger than c, check your inputs.'
+          'No. In a right triangle, both non-hypotenuse sides are always shorter than the hypotenuse. If your result is larger than c, check your inputs.'
       },
       {
         question: 'What happens if I enter a very small angle?',
@@ -951,12 +955,12 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     metaDescription: 'Use this right triangle side from tangent calculator to find opposite side a from angle A and adjacent side b with formula, steps, and examples.',
     formulaSlug: 'a-b-tan',
     toolPurpose:
-      'This tool finds the opposite side a when you know the adjacent side b and an acute angle A. It uses the tangent ratio, which links the two legs directly without needing the hypotenuse.',
+      'This tool finds the opposite side a when you know the adjacent side b and an acute angle A. It uses the tangent ratio, which links the opposite and adjacent sides directly without needing the hypotenuse.',
     intro: 'Use this calculator to find opposite side a from angle A and adjacent side b.',
     quickSummary: {
       h2: 'What This Tangent Side Calculator Solves',
       intro:
-        'Unlike sine and cosine, the tangent ratio works with the two legs of the triangle instead of involving the hypotenuse. This makes it ideal when the hypotenuse is unknown or not needed.',
+        'Unlike sine and cosine, the tangent ratio works with sides a and b instead of involving the hypotenuse. This makes it ideal when the hypotenuse is unknown or not needed.',
       cards: [
         { label: 'Known values', value: 'Angle A and adjacent side b' },
         { label: 'Finds', value: 'Opposite side a' },
@@ -967,13 +971,13 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     diagram: {
       h2: 'Right Triangle Diagram: Side a from Tangent',
       intro:
-        'Angle A sits at the bottom-right. The adjacent side b is the horizontal base, right next to angle A. The opposite side a is the vertical leg across from angle A. Tangent connects these two legs directly.',
+        'Angle A sits at the bottom-right. The adjacent side b is the horizontal base, right next to angle A. The opposite side a is directly across from angle A. Tangent connects these two sides directly.',
       caption:
         'Right triangle showing angle A, known adjacent side b, and unknown opposite side a.',
       sides: {
         a: {
           label: 'a = find',
-          description: 'Opposite side a is the vertical leg across from angle A. This is the value the calculator returns.',
+          description: 'Opposite side a is directly across from angle A. This is the value the calculator returns.',
           status: 'unknown'
         },
         b: {
@@ -989,7 +993,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       },
       notes: [
         'For angle A, side a is opposite, side b is adjacent, and side c is the hypotenuse.',
-        'Tangent uses only the two legs; the hypotenuse is not needed.',
+        'Tangent uses only sides a and b; the hypotenuse is not needed.',
         'As angle A grows larger, the opposite side a increases relative to b.'
       ]
     },
@@ -1004,14 +1008,14 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       h2: 'Side From Tangent Formula',
       paragraphs: [
         'Tangent of an angle equals the opposite side divided by the adjacent side: tan(A) = a / b. Multiplying both sides by b isolates the opposite side a.',
-        'In this formula, b is the adjacent leg (the side next to angle A that also touches the right angle), A is the known acute angle in degrees, and a is the opposite leg you want to find. No hypotenuse is involved.'
+        'In this formula, b is the adjacent side (the side next to angle A that also touches the right angle), A is the known acute angle in degrees, and a is the opposite side you want to find. No hypotenuse is involved.'
       ],
       formulas: ['a = b \\times \\tan(A)']
     },
     howTo: {
       h2: 'How to Use This Calculator',
       steps: [
-        'Identify the adjacent side b. This is the leg that sits next to angle A and also connects to the right angle.',
+        'Identify the adjacent side b. This is the side that sits next to angle A and also connects to the right angle.',
         'Confirm the angle A is in degrees and is between 0 and 90.',
         'Enter adjacent side b into the first input field.',
         'Enter angle A into the second input field.',
@@ -1032,7 +1036,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         h2: 'What the Result Means',
         paragraphs: [
-          'The output labeled Opposite side a is the leg across from angle A. It tells you the vertical distance, height, or rise that corresponds to the base distance and angle you entered.',
+          'The output labeled Opposite side a is the side across from angle A. It tells you the vertical distance, height, or rise that corresponds to the base distance and angle you entered.',
           'Unlike sine and cosine results, the tangent result is not limited to being smaller than any particular input. If the angle is large (close to 90 degrees), tan(A) becomes very large, and a can exceed b significantly.'
         ]
       },
@@ -1053,7 +1057,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         h2: 'Common Mistakes',
         paragraphs: [
-          'Tangent problems often go wrong when the hypotenuse is used where the adjacent side should be, or when the two legs are swapped. Double-check which side sits next to the angle and which one is across from it.'
+          'Tangent problems often go wrong when the hypotenuse is used where the adjacent side should be, or when sides a and b are swapped. Double-check which side sits next to the angle and which one is across from it.'
         ],
         listTitle: 'Watch out for:',
         listItems: [
@@ -1077,12 +1081,12 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         question: 'What does a = b \u00d7 tan(A) calculate?',
         answer:
-          'It calculates the opposite side a of a right triangle when you know the adjacent side b and an acute angle A. Tangent is the ratio that connects the two legs.'
+          'It calculates the opposite side a of a right triangle when you know the adjacent side b and an acute angle A. Tangent is the ratio that connects the opposite and adjacent sides.'
       },
       {
         question: 'Why does this calculator not need the hypotenuse?',
         answer:
-          'The tangent ratio is defined as opposite over adjacent (a / b). It only involves the two legs, so the hypotenuse is not part of the formula.'
+          'The tangent ratio is defined as opposite over adjacent (a / b). It only involves sides a and b, so the hypotenuse is not part of the formula.'
       },
       {
         question: 'What happens when the angle is close to 90 degrees?',
@@ -1125,13 +1129,13 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     diagram: {
       h2: 'Right Triangle Diagram: Side b from Tangent',
       intro:
-        'Angle A is at the bottom-right corner. The opposite side a is the vertical leg across from it, which you already know. The adjacent side b is the horizontal base next to angle A, and this is what the calculator finds by dividing a by tan(A).',
+        'Angle A is at the bottom-right corner. The opposite side a is directly across from it, which you already know. The adjacent side b is the horizontal base next to angle A, and this is what the calculator finds by dividing a by tan(A).',
       caption:
         'Right triangle showing angle A, known opposite side a, and unknown adjacent side b.',
       sides: {
         a: {
           label: 'a = known',
-          description: 'Opposite side a is the vertical leg across from angle A. You enter this value.',
+          description: 'Opposite side a is directly across from angle A. You enter this value.',
           status: 'known'
         },
         b: {
@@ -1162,14 +1166,14 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       h2: 'Adjacent Side From Tangent Formula',
       paragraphs: [
         'The tangent ratio states that tan(A) = a / b, where a is the opposite side and b is the adjacent side. Rearranging to solve for b gives the formula below.',
-        'In this formula, a is the opposite leg (the side across from angle A), A is the acute angle in degrees, and b is the adjacent leg you want to find. The division by tan(A) converts the known height and angle into the corresponding base length.'
+        'In this formula, a is the opposite side (the side across from angle A), A is the acute angle in degrees, and b is the adjacent side you want to find. The division by tan(A) converts the known height and angle into the corresponding base length.'
       ],
       formulas: ['b = a / \\tan(A)']
     },
     howTo: {
       h2: 'How to Use This Calculator',
       steps: [
-        'Identify the opposite side a. This is the leg across from angle A, often the vertical height or rise.',
+        'Identify the opposite side a. This is the side across from angle A, often the vertical height or rise.',
         'Confirm the angle A is in degrees and falls between 0 and 90.',
         'Enter opposite side a into the first input field.',
         'Enter angle A into the second input field.',
@@ -1269,7 +1273,17 @@ export function getFocusedSideCalculatorPage(
   slug: string,
   locale: Locale = DEFAULT_LOCALE
 ) {
+  const page = FOCUSED_SIDE_CALCULATOR_PAGES.find((item) => item.slug === slug);
+
+  if (!page) {
+    return undefined;
+  }
+
   if (locale !== DEFAULT_LOCALE) {
+    if (isFocusedSideAngleCalculatorSlug(slug)) {
+      return localizeFocusedSideAngleCalculatorPage(page, locale);
+    }
+
     const translationsByLocale = FOCUSED_SIDE_CALCULATOR_TRANSLATIONS as unknown as Record<
       string,
       Record<string, FocusedSideCalculatorPage>
@@ -1281,5 +1295,5 @@ export function getFocusedSideCalculatorPage(
     }
   }
 
-  return FOCUSED_SIDE_CALCULATOR_PAGES.find((page) => page.slug === slug);
+  return page;
 }

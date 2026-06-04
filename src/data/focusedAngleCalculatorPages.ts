@@ -1,4 +1,5 @@
 import type { FormulaCalculatorField } from 'src/data/rightTriangleFormulas';
+import { localizeFocusedAngleCalculatorPage } from 'src/data/focusedAngleCalculatorTranslations';
 import { DEFAULT_LOCALE, type Locale } from 'theme/i18n/locales';
 
 type TriangleSide = 'a' | 'b' | 'c';
@@ -80,7 +81,7 @@ export const FOCUSED_ANGLE_CALCULATOR_PAGES: FocusedAngleCalculatorPage[] = [
     fields: [
       {
         key: "a",
-        label: "Opposite leg a",
+        label: "Opposite side a",
         min: 0
       },
       {
@@ -243,7 +244,7 @@ export const FOCUSED_ANGLE_CALCULATOR_PAGES: FocusedAngleCalculatorPage[] = [
     fields: [
       {
         key: "b",
-        label: "Adjacent leg b",
+        label: "Adjacent side b",
         min: 0
       },
       {
@@ -326,7 +327,7 @@ export const FOCUSED_ANGLE_CALCULATOR_PAGES: FocusedAngleCalculatorPage[] = [
     "If b is exactly half of c, the ratio is 0.5 and angle A is 60° - a well-known value from the 30-60-90 special triangle."
   ],
   whenToUse: {
-    intro: "Pick the cosine method when you have the adjacent leg and the hypotenuse but the opposite side is unknown.",
+    intro: "Pick the cosine method when you have adjacent side b and the hypotenuse but the opposite side is unknown.",
     items: [
       "Surveying - finding the angle of a ground slope from horizontal distance and slant distance.",
       "Shadow problems - calculating the sun elevation angle from shadow length and light-ray distance.",
@@ -399,19 +400,19 @@ export const FOCUSED_ANGLE_CALCULATOR_PAGES: FocusedAngleCalculatorPage[] = [
   metaTitle: "Right Triangle Angle From Tangent Calculator | Find A = arctan(a / b)",
   metaDescription: "Use this right triangle angle from tangent calculator to find angle A from opposite side a and adjacent side b with formula, steps, and examples.",
   formulaSlug: "angle-from-tangent",
-  headerSummary: "Enter both legs of a right triangle to find angle A using the inverse tangent (arctan) formula - no hypotenuse needed.",
+  headerSummary: "Enter both sides a and b of a right triangle to find angle A using the inverse tangent (arctan) formula - no hypotenuse needed.",
   calculator: {
     heading: "Calculate Angle From Tangent",
     outputLabel: "Angle A",
     fields: [
       {
         key: "a",
-        label: "Opposite leg a",
+        label: "Opposite side a",
         min: 0
       },
       {
         key: "b",
-        label: "Adjacent leg b",
+        label: "Adjacent side b",
         min: 0
       }
     ]
@@ -419,7 +420,7 @@ export const FOCUSED_ANGLE_CALCULATOR_PAGES: FocusedAngleCalculatorPage[] = [
   howItWorks: {
     h2: "What This Inverse Tangent Calculator Does",
     paragraphs: [
-      "Tangent is the ratio of the opposite leg to the adjacent leg. This calculator reverses that ratio using arctan to find the exact angle - no hypotenuse measurement required.",
+      "Tangent is the ratio of the opposite side to the adjacent side. This calculator reverses that ratio using arctan to find the exact angle - no hypotenuse measurement required.",
       "Enter opposite side a and adjacent side b. The tool divides a by b, applies inverse tangent, and returns angle A in degrees."
     ],
     cards: [
@@ -445,7 +446,7 @@ export const FOCUSED_ANGLE_CALCULATOR_PAGES: FocusedAngleCalculatorPage[] = [
     h2: "Angle From Tangent Formula",
     display: "A = \\arctan\\left(\\frac{a}{b}\\right)",
     paragraphs: [
-      "Divide the opposite leg by the adjacent leg. The result can be any positive number (it is not limited to 0–1 like sine or cosine). Apply inverse tangent (arctan) to convert that ratio into angle A."
+      "Divide the opposite side by the adjacent side. The result can be any positive number (it is not limited to 0–1 like sine or cosine). Apply inverse tangent (arctan) to convert that ratio into angle A."
     ]
   },
   diagram: {
@@ -469,7 +470,7 @@ export const FOCUSED_ANGLE_CALCULATOR_PAGES: FocusedAngleCalculatorPage[] = [
   howToSteps: [
     "Identify the opposite side a - the leg directly across from angle A.",
     "Identify the adjacent side b - the leg that touches angle A at its vertex.",
-    "Enter both leg lengths in the fields above.",
+    "Enter both side lengths in the fields above.",
     "Press Calculate to see angle A in degrees.",
     "If a equals b, the angle should be exactly 45° - a quick sanity check."
   ],
@@ -485,16 +486,16 @@ export const FOCUSED_ANGLE_CALCULATOR_PAGES: FocusedAngleCalculatorPage[] = [
     answer: "Angle A is approximately 36.87 degrees."
   },
   resultMeaning: [
-    "The output is the acute angle whose tangent equals a / b. When the opposite leg is longer than the adjacent leg, angle A exceeds 45°.",
-    "When the two legs are equal, tan(A) = 1 and angle A is exactly 45° - the hallmark of an isosceles right triangle."
+    "The output is the acute angle whose tangent equals a / b. When opposite side a is longer than adjacent side b, angle A exceeds 45°.",
+    "When sides a and b are equal, tan(A) = 1 and angle A is exactly 45° - the hallmark of an isosceles right triangle."
   ],
   whenToUse: {
-    intro: "Choose the tangent method when you know both legs but have no hypotenuse measurement.",
+    intro: "Choose the tangent method when you know sides a and b but have no hypotenuse measurement.",
     items: [
       "Slope and grade - calculating road or ramp angle from rise and run.",
       "Woodworking - finding miter or bevel angles from vertical and horizontal cuts.",
       "Architecture - determining pitch angle from wall height and floor depth.",
-      "Quick field checks - verifying angle values when only the two legs are accessible."
+      "Quick field checks - verifying angle values when only sides a and b are accessible."
     ]
   },
   commonMistakes: {
@@ -551,7 +552,7 @@ export const FOCUSED_ANGLE_CALCULATOR_PAGES: FocusedAngleCalculatorPage[] = [
     },
     {
       question: "Why don't I need the hypotenuse for this?",
-      answer: "The tangent ratio is specifically defined by the two perpendicular legs. The hypotenuse is locked in place once the legs are set, so you don't need its measurement."
+      answer: "The tangent ratio is specifically defined by the two perpendicular sides a and b. The hypotenuse is locked in place once those sides are set, so you don't need its measurement."
     }
   ]
 },
@@ -727,6 +728,10 @@ export function getFocusedAngleCalculatorPage(
   slug: string,
   locale: Locale = DEFAULT_LOCALE
 ): FocusedAngleCalculatorPage | undefined {
-  void locale;
-  return FOCUSED_ANGLE_CALCULATOR_PAGES.find((page) => page.slug === slug);
+  const page = FOCUSED_ANGLE_CALCULATOR_PAGES.find((item) => item.slug === slug);
+  if (!page) return undefined;
+
+  return locale === DEFAULT_LOCALE
+    ? page
+    : localizeFocusedAngleCalculatorPage(page, locale);
 }

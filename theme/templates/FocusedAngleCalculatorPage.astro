@@ -1,5 +1,9 @@
 ---
 import type { FocusedAngleCalculatorPage as PageData } from 'src/data/focusedAngleCalculatorPages';
+import {
+  getFocusedAngleCalculatorRuntimeTranslations,
+  getFocusedAngleCalculatorUi
+} from 'src/data/focusedAngleCalculatorTranslations';
 import { getFormulaBySlug } from 'src/data/rightTriangleFormulas';
 import { formatListItem } from 'src/utils/formatList';
 import Faq from 'theme/components/Faq.astro';
@@ -46,6 +50,8 @@ const parentLabel = pick(
 );
 const canonicalPath = localizePath(locale, page.url);
 const parentPath = localizePath(locale, '/right-triangle-angle-calculator/');
+const angleUi = getFocusedAngleCalculatorUi(locale);
+const runtimeTranslations = getFocusedAngleCalculatorRuntimeTranslations(page, locale);
 
 const breadcrumbItems = [
   { label: homeLabel, href: localizePath(locale, '/') },
@@ -78,9 +84,9 @@ const faqSchema = {
 };
 
 const calculatorMessages = {
-  positive: 'Please enter positive values.',
-  invalid: 'Enter an acute angle below 90 degrees.',
-  hypotenuseKnownLeg: 'The hypotenuse must be longer than the known leg.'
+  positive: angleUi.messages.positive,
+  invalid: angleUi.messages.angleRange,
+  hypotenuseKnownLeg: angleUi.messages.hypotenuseKnownSide
 };
 
 const renderMath = (expression: string, displayMode = true) =>
@@ -124,31 +130,31 @@ const angleB = angleVisual('B');
 const sideKeyItems = [
   {
     key: 'a',
-    label: 'a = opposite leg',
-    description: 'The side across from angle A.'
+    label: angleUi.sideKey.a.label,
+    description: angleUi.sideKey.a.description
   },
   {
     key: 'b',
-    label: 'b = adjacent leg',
-    description: 'The side next to angle A.'
+    label: angleUi.sideKey.b.label,
+    description: angleUi.sideKey.b.description
   },
   {
     key: 'c',
-    label: 'c = hypotenuse',
-    description: 'The longest side, opposite the right angle.'
+    label: angleUi.sideKey.c.label,
+    description: angleUi.sideKey.c.description
   }
 ] as const;
 
 const angleKeyItems = [
   {
     key: 'A',
-    label: 'A = angle at the base',
-    description: 'The acute angle used by sine, cosine, and tangent on these pages.'
+    label: angleUi.angleKey.A.label,
+    description: angleUi.angleKey.A.description
   },
   {
     key: 'B',
-    label: 'B = other acute angle',
-    description: 'The complementary acute angle in the same right triangle.'
+    label: angleUi.angleKey.B.label,
+    description: angleUi.angleKey.B.description
   }
 ] as const;
 ---
@@ -191,7 +197,7 @@ const angleKeyItems = [
 
   <header class="mx-auto mb-8 w-full max-w-4xl">
     <p class="font-label text-xs uppercase tracking-widest text-primary">
-      Angle Calculator
+      {angleUi.badge}
     </p>
     <h1 class="mt-3 break-words text-3xl font-bold leading-tight sm:text-4xl">{page.h1}</h1>
     <p class="mt-4 max-w-3xl break-words text-on-surface-variant">{page.headerSummary}</p>
@@ -202,6 +208,7 @@ const angleKeyItems = [
     locale={locale}
     heading={page.calculator.heading}
     messages={calculatorMessages}
+    runtimeTranslations={runtimeTranslations}
   />
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
@@ -215,7 +222,10 @@ const angleKeyItems = [
           <p class="font-label text-[11px] uppercase tracking-widest text-primary">
             {card.label}
           </p>
-          <p class="mt-2 break-words text-sm leading-relaxed text-on-surface-variant">
+          <p
+            class="mt-2 break-words text-sm leading-relaxed text-on-surface-variant"
+            dir={card.value.includes('=') ? 'ltr' : undefined}
+          >
             {card.value}
           </p>
         </div>
@@ -349,7 +359,7 @@ const angleKeyItems = [
               font-family="'Noto Serif', serif"
               font-size="14"
               text-anchor="end"
-            >90 deg</text>
+            >{angleUi.svg.rightAngle}</text>
 
             <text
               x="70"
@@ -367,7 +377,7 @@ const angleKeyItems = [
               font-family="'Noto Serif', serif"
               font-size="10"
               text-anchor="middle"
-            >opposite</text>
+            >{angleUi.svg.opposite}</text>
             <text
               x="275"
               y="350"
@@ -384,7 +394,7 @@ const angleKeyItems = [
               font-family="'Noto Serif', serif"
               font-size="10"
               text-anchor="middle"
-            >adjacent</text>
+            >{angleUi.svg.adjacent}</text>
             <text
               x="300"
               y="174"
@@ -401,7 +411,7 @@ const angleKeyItems = [
               font-family="'Noto Serif', serif"
               font-size="10"
               text-anchor="start"
-            >hypotenuse</text>
+            >{angleUi.svg.hypotenuse}</text>
           </svg>
         </div>
       </div>
@@ -409,9 +419,9 @@ const angleKeyItems = [
       <div class="min-w-0 space-y-4">
         <div class="rounded-lg border border-primary/25 bg-primary/10 p-4">
           <p class="font-label text-[11px] uppercase tracking-widest text-primary">
-            Highlighted relationship
+            {angleUi.highlightedRelationship}
           </p>
-          <p class="mt-2 break-words text-lg font-semibold text-on-surface">
+          <p class="mt-2 break-words text-lg font-semibold text-on-surface" dir="ltr">
             {page.diagram.focusLabel}
           </p>
           <p class="mt-3 text-sm leading-relaxed text-on-surface-variant">
@@ -421,7 +431,7 @@ const angleKeyItems = [
 
         <div class="rounded-lg border border-outline-variant/25 bg-surface-container-lowest/50 p-4">
           <p class="font-label text-[11px] uppercase tracking-widest text-primary">
-            Diagram Key
+            {angleUi.diagramKey}
           </p>
           <ul class="mt-3 grid gap-2 text-sm text-on-surface-variant">
             {sideKeyItems.map((item) => (
@@ -441,7 +451,7 @@ const angleKeyItems = [
 
         <div class="rounded-lg border border-outline-variant/25 bg-surface-container-lowest/50 p-4">
           <p class="font-label text-[11px] uppercase tracking-widest text-primary">
-            Quick Checks
+            {angleUi.quickChecks}
           </p>
           <ul class="mt-3 grid gap-2 text-sm leading-relaxed text-on-surface-variant">
             {page.diagram.notes.map((note) => (
@@ -454,7 +464,7 @@ const angleKeyItems = [
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>How to Use This Calculator</h2>
+    <h2>{angleUi.howToUse}</h2>
     <ol>
       {page.howToSteps.map((step) => (
         <li>{step}</li>
@@ -468,7 +478,7 @@ const angleKeyItems = [
     <div class="not-prose mt-5 min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
       <div class="grid gap-2">
         {page.example.steps.map((line) => (
-          <div class="min-w-max text-lg font-mono text-on-surface">
+          <div class="min-w-max text-lg font-mono text-on-surface" dir="ltr">
             {line}
           </div>
         ))}
@@ -478,14 +488,14 @@ const angleKeyItems = [
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>What the Result Means</h2>
+    <h2>{angleUi.whatResultMeans}</h2>
     {page.resultMeaning.map((paragraph) => (
       <p>{paragraph}</p>
     ))}
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>When to Use This Calculator</h2>
+    <h2>{angleUi.whenToUse}</h2>
     <p>{page.whenToUse.intro}</p>
     <ul>
       {page.whenToUse.items.map((item) => (
@@ -495,7 +505,7 @@ const angleKeyItems = [
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>Common Mistakes</h2>
+    <h2>{angleUi.commonMistakes}</h2>
     <p>{page.commonMistakes.intro}</p>
     <ul>
       {page.commonMistakes.items.map((item) => (
@@ -505,11 +515,11 @@ const angleKeyItems = [
   </section>
 
   <div class="mx-auto mt-8 w-full max-w-4xl">
-    <Faq heading="Frequently Asked Questions" items={page.faqs} />
+    <Faq heading={angleUi.faqHeading} items={page.faqs} />
   </div>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-    <h2 class="break-words text-2xl font-semibold">Related Angle Calculators</h2>
+    <h2 class="break-words text-2xl font-semibold">{angleUi.relatedAngleCalculators}</h2>
     <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {page.relatedLinks.map((link) => (
         <a
@@ -520,7 +530,7 @@ const angleKeyItems = [
             {link.label}
           </h3>
           <p class="mt-3 text-[11px] uppercase tracking-widest text-primary">
-            Open Tool
+            {angleUi.openTool}
           </p>
         </a>
       ))}

@@ -1,0 +1,1118 @@
+{
+  "hi": {
+    "badge": "कोण कैलकुलेटर",
+    "highlightedRelationship": "रिश्ते पर प्रकाश डाला",
+    "diagramKey": "आरेख कुंजी",
+    "quickChecks": "त्वरित जांच",
+    "howToUse": "इस कैलकुलेटर का उपयोग कैसे करें",
+    "whatResultMeans": "परिणाम का क्या मतलब है",
+    "whenToUse": "इस कैलकुलेटर का उपयोग कब करें",
+    "commonMistakes": "सामान्य गलतियाँ",
+    "faqHeading": "अक्सर पूछे जाने वाले प्रश्न",
+    "relatedAngleCalculators": "संबंधित कोण कैलकुलेटर",
+    "openTool": "टूल खोलें",
+    "svg": {
+      "opposite": "विपरीत",
+      "adjacent": "आसन्न",
+      "hypotenuse": "कर्ण",
+      "rightAngle": "90°"
+    },
+    "sideKey": {
+      "a": {
+        "label": "a = विपरीत भुजा",
+        "description": "कोण A के पार की भुजा।"
+      },
+      "b": {
+        "label": "b = आसन्न भुजा",
+        "description": "कोण A के बगल वाली भुजा।"
+      },
+      "c": {
+        "label": "c = कर्ण",
+        "description": "सबसे लंबी भुजा, समकोण के विपरीत।"
+      }
+    },
+    "angleKey": {
+      "A": {
+        "label": "A = संदर्भ कोण",
+        "description": "इन पृष्ठों पर साइन, कोसाइन और स्पर्शरेखा द्वारा उपयोग किया जाने वाला न्यून कोण।"
+      },
+      "B": {
+        "label": "B = अन्य न्यून कोण",
+        "description": "एक ही समकोण त्रिभुज में पूरक न्यून कोण."
+      }
+    },
+    "messages": {
+      "positive": "कृपया सकारात्मक मान दर्ज करें.",
+      "angleRange": "कोण 0° से बड़ा और 90° से कम होना चाहिए।",
+      "hypotenuseKnownSide": "कर्ण c ज्ञात पक्ष से बड़ा होना चाहिए।",
+      "invalidTriangle": "ये मान एक वैध समकोण त्रिभुज नहीं बना सकते हैं।"
+    },
+    "runtime": {
+      "calculationComplete": "गणना पूर्ण.",
+      "unableToCalculate": "गणना करने में असमर्थ.",
+      "fixErrors": "कृपया उपरोक्त फ़ील्ड में त्रुटियाँ ठीक करें।",
+      "errorPrefix": "त्रुटि",
+      "stepLabels": {
+        "formula": "सूत्र",
+        "substitution": "प्रतिस्थापन",
+        "answer": "उत्तर",
+        "explanation": "स्पष्टीकरण",
+        "detail": "विवरण"
+      }
+    }
+  },
+  "es": {
+    "badge": "Calculadora de ángulos",
+    "highlightedRelationship": "Relación destacada",
+    "diagramKey": "Clave del diagrama",
+    "quickChecks": "Comprobaciones rápidas",
+    "howToUse": "Cómo utilizar esta calculadora",
+    "whatResultMeans": "Qué significa el resultado",
+    "whenToUse": "Cuándo utilizar esta calculadora",
+    "commonMistakes": "Errores comunes",
+    "faqHeading": "Preguntas frecuentes",
+    "relatedAngleCalculators": "Calculadoras de ángulos relacionados",
+    "openTool": "Abrir herramienta",
+    "svg": {
+      "opposite": "opuesto",
+      "adjacent": "adyacente",
+      "hypotenuse": "hipotenusa",
+      "rightAngle": "90°"
+    },
+    "sideKey": {
+      "a": {
+        "label": "a = lado opuesto",
+        "description": "El lado opuesto al ángulo A."
+      },
+      "b": {
+        "label": "b = lado adyacente",
+        "description": "El lado al lado del ángulo A."
+      },
+      "c": {
+        "label": "c = hipotenusa",
+        "description": "El lado más largo, opuesto al ángulo recto."
+      }
+    },
+    "angleKey": {
+      "A": {
+        "label": "A = ángulo de referencia",
+        "description": "El ángulo agudo utilizado por el seno, el coseno y la tangente en estas páginas."
+      },
+      "B": {
+        "label": "B = otro ángulo agudo",
+        "description": "El ángulo agudo complementario en un mismo triángulo rectángulo."
+      }
+    },
+    "messages": {
+      "positive": "Por favor introduzca valores positivos.",
+      "angleRange": "El ángulo debe ser mayor que 0° y menor que 90°.",
+      "hypotenuseKnownSide": "La hipotenusa c debe ser mayor que el lado conocido.",
+      "invalidTriangle": "Es posible que estos valores no formen un triángulo rectángulo válido."
+    },
+    "runtime": {
+      "calculationComplete": "Cálculo completo.",
+      "unableToCalculate": "No se puede calcular.",
+      "fixErrors": "Corrija los errores en los campos anteriores.",
+      "errorPrefix": "error",
+      "stepLabels": {
+        "formula": "Fórmula",
+        "substitution": "Sustitución",
+        "answer": "respuesta",
+        "explanation": "Explicación",
+        "detail": "Detalle"
+      }
+    }
+  },
+  "ru": {
+    "badge": "Калькулятор угла",
+    "highlightedRelationship": "Выделенные отношения",
+    "diagramKey": "Ключ к диаграмме",
+    "quickChecks": "Быстрые проверки",
+    "howToUse": "Как использовать этот калькулятор",
+    "whatResultMeans": "Что означает результат",
+    "whenToUse": "Когда использовать этот калькулятор",
+    "commonMistakes": "Распространенные ошибки",
+    "faqHeading": "Часто задаваемые вопросы",
+    "relatedAngleCalculators": "Сопутствующие угловые калькуляторы",
+    "openTool": "Открыть инструмент",
+    "svg": {
+      "opposite": "напротив",
+      "adjacent": "соседний",
+      "hypotenuse": "гипотенуза",
+      "rightAngle": "90°"
+    },
+    "sideKey": {
+      "a": {
+        "label": "a = противоположная сторона",
+        "description": "Сторона напротив угла A."
+      },
+      "b": {
+        "label": "b = прилегающая сторона",
+        "description": "Сторона рядом с углом A."
+      },
+      "c": {
+        "label": "c = гипотенуза",
+        "description": "Самая длинная сторона, противолежащая прямому углу."
+      }
+    },
+    "angleKey": {
+      "A": {
+        "label": "A = опорный угол",
+        "description": "Острый угол, используемый синусом, косинусом и тангенсом на этих страницах."
+      },
+      "B": {
+        "label": "B = другой острый угол",
+        "description": "Дополнительный острый угол в том же прямоугольном треугольнике."
+      }
+    },
+    "messages": {
+      "positive": "Пожалуйста, введите положительные значения.",
+      "angleRange": "Угол должен быть больше 0° и меньше 90°.",
+      "hypotenuseKnownSide": "Гипотенуза c должна быть больше известной стороны.",
+      "invalidTriangle": "Эти значения могут не образовывать правильный прямоугольный треугольник."
+    },
+    "runtime": {
+      "calculationComplete": "Расчет завершен.",
+      "unableToCalculate": "Невозможно рассчитать.",
+      "fixErrors": "Пожалуйста, исправьте ошибки в полях выше.",
+      "errorPrefix": "Ошибка",
+      "stepLabels": {
+        "formula": "Формула",
+        "substitution": "Замена",
+        "answer": "Ответ",
+        "explanation": "Объяснение",
+        "detail": "Деталь"
+      }
+    }
+  },
+  "fr": {
+    "badge": "Calculateur d'angles",
+    "highlightedRelationship": "Relation mise en évidence",
+    "diagramKey": "Clé du diagramme",
+    "quickChecks": "Vérifications rapides",
+    "howToUse": "Comment utiliser cette calculatrice",
+    "whatResultMeans": "Ce que signifie le résultat",
+    "whenToUse": "Quand utiliser cette calculatrice",
+    "commonMistakes": "Erreurs courantes",
+    "faqHeading": "Foire aux questions",
+    "relatedAngleCalculators": "Calculateurs d'angle associés",
+    "openTool": "Ouvrir l'outil",
+    "svg": {
+      "opposite": "en face",
+      "adjacent": "adjacent",
+      "hypotenuse": "hypoténuse",
+      "rightAngle": "90°"
+    },
+    "sideKey": {
+      "a": {
+        "label": "a = côté opposé",
+        "description": "Le côté en face de l'angle A."
+      },
+      "b": {
+        "label": "b = côté adjacent",
+        "description": "Le côté à côté de l'angle A."
+      },
+      "c": {
+        "label": "c = hypoténuse",
+        "description": "Le côté le plus long, opposé à l’angle droit."
+      }
+    },
+    "angleKey": {
+      "A": {
+        "label": "A = angle de référence",
+        "description": "L'angle aigu utilisé par le sinus, le cosinus et la tangente sur ces pages."
+      },
+      "B": {
+        "label": "B = autre angle aigu",
+        "description": "L'angle aigu complémentaire dans le même triangle rectangle."
+      }
+    },
+    "messages": {
+      "positive": "Veuillez saisir des valeurs positives.",
+      "angleRange": "L'angle doit être supérieur à 0° et inférieur à 90°.",
+      "hypotenuseKnownSide": "L'hypoténuse c doit être supérieure au côté connu.",
+      "invalidTriangle": "Ces valeurs peuvent ne pas former un triangle rectangle valide."
+    },
+    "runtime": {
+      "calculationComplete": "Calcul terminé.",
+      "unableToCalculate": "Impossible de calculer.",
+      "fixErrors": "Veuillez corriger les erreurs dans les champs ci-dessus.",
+      "errorPrefix": "Erreur",
+      "stepLabels": {
+        "formula": "Formule",
+        "substitution": "Remplacement",
+        "answer": "Réponse",
+        "explanation": "Explication",
+        "detail": "Détail"
+      }
+    }
+  },
+  "de": {
+    "badge": "Winkelrechner",
+    "highlightedRelationship": "Hervorgehobene Beziehung",
+    "diagramKey": "Diagrammschlüssel",
+    "quickChecks": "Schnelle Checks",
+    "howToUse": "So verwenden Sie diesen Rechner",
+    "whatResultMeans": "Was das Ergebnis bedeutet",
+    "whenToUse": "Wann sollte dieser Rechner verwendet werden?",
+    "commonMistakes": "Häufige Fehler",
+    "faqHeading": "Häufig gestellte Fragen",
+    "relatedAngleCalculators": "Verwandte Winkelrechner",
+    "openTool": "Öffnen Sie das Tool",
+    "svg": {
+      "opposite": "gegenüber",
+      "adjacent": "angrenzend",
+      "hypotenuse": "Hypotenuse",
+      "rightAngle": "90°"
+    },
+    "sideKey": {
+      "a": {
+        "label": "a = Gegenseite",
+        "description": "Die Seite gegenüber dem Winkel A."
+      },
+      "b": {
+        "label": "b = angrenzende Seite",
+        "description": "Die Seite neben dem Winkel A."
+      },
+      "c": {
+        "label": "c = Hypotenuse",
+        "description": "Die längste Seite, gegenüber dem rechten Winkel."
+      }
+    },
+    "angleKey": {
+      "A": {
+        "label": "A = Referenzwinkel",
+        "description": "Der spitze Winkel, der auf diesen Seiten von Sinus, Kosinus und Tangens verwendet wird."
+      },
+      "B": {
+        "label": "B = anderer spitzer Winkel",
+        "description": "Der komplementäre spitze Winkel im selben rechtwinkligen Dreieck."
+      }
+    },
+    "messages": {
+      "positive": "Bitte geben Sie positive Werte ein.",
+      "angleRange": "Der Winkel muss größer als 0° und kleiner als 90° sein.",
+      "hypotenuseKnownSide": "Die Hypotenuse c muss größer als die bekannte Seite sein.",
+      "invalidTriangle": "Diese Werte bilden möglicherweise kein gültiges rechtwinkliges Dreieck."
+    },
+    "runtime": {
+      "calculationComplete": "Berechnung abgeschlossen.",
+      "unableToCalculate": "Berechnung nicht möglich.",
+      "fixErrors": "Bitte beheben Sie die Fehler in den Feldern oben.",
+      "errorPrefix": "Fehler",
+      "stepLabels": {
+        "formula": "Formel",
+        "substitution": "Ersatz",
+        "answer": "Antwort",
+        "explanation": "Erklärung",
+        "detail": "Detailliert"
+      }
+    }
+  },
+  "it": {
+    "badge": "Calcolatore dell'angolo",
+    "highlightedRelationship": "Relazione evidenziata",
+    "diagramKey": "Chiave del diagramma",
+    "quickChecks": "Controlli rapidi",
+    "howToUse": "Come utilizzare questa calcolatrice",
+    "whatResultMeans": "Cosa significa il risultato",
+    "whenToUse": "Quando utilizzare questa calcolatrice",
+    "commonMistakes": "Errori comuni",
+    "faqHeading": "Domande frequenti",
+    "relatedAngleCalculators": "Calcolatori dell'angolo correlati",
+    "openTool": "Apri strumento",
+    "svg": {
+      "opposite": "opposto",
+      "adjacent": "adiacente",
+      "hypotenuse": "ipotenusa",
+      "rightAngle": "90°"
+    },
+    "sideKey": {
+      "a": {
+        "label": "a = lato opposto",
+        "description": "Il lato opposto all'angolo A."
+      },
+      "b": {
+        "label": "b = lato adiacente",
+        "description": "Il lato vicino all'angolo A."
+      },
+      "c": {
+        "label": "c = ipotenusa",
+        "description": "Il lato più lungo, opposto all'angolo retto."
+      }
+    },
+    "angleKey": {
+      "A": {
+        "label": "A = angolo di riferimento",
+        "description": "L'angolo acuto utilizzato da seno, coseno e tangente in queste pagine."
+      },
+      "B": {
+        "label": "B = altro angolo acuto",
+        "description": "L'angolo acuto complementare nello stesso triangolo rettangolo."
+      }
+    },
+    "messages": {
+      "positive": "Inserisci valori positivi.",
+      "angleRange": "L'angolo deve essere maggiore di 0° e minore di 90°.",
+      "hypotenuseKnownSide": "L'ipotenusa c deve essere maggiore del lato noto.",
+      "invalidTriangle": "Questi valori potrebbero non formare un triangolo rettangolo valido."
+    },
+    "runtime": {
+      "calculationComplete": "Calcolo completato.",
+      "unableToCalculate": "Impossibile calcolare.",
+      "fixErrors": "Correggi gli errori nei campi sopra.",
+      "errorPrefix": "Errore",
+      "stepLabels": {
+        "formula": "Formula",
+        "substitution": "Sostituzione",
+        "answer": "Rispondi",
+        "explanation": "Spiegazione",
+        "detail": "Dettaglio"
+      }
+    }
+  },
+  "pt": {
+    "badge": "Calculadora de Ângulo",
+    "highlightedRelationship": "Relacionamento em destaque",
+    "diagramKey": "Chave do Diagrama",
+    "quickChecks": "Verificações rápidas",
+    "howToUse": "Como usar esta calculadora",
+    "whatResultMeans": "O que o resultado significa",
+    "whenToUse": "Quando usar esta calculadora",
+    "commonMistakes": "Erros Comuns",
+    "faqHeading": "Perguntas frequentes",
+    "relatedAngleCalculators": "Calculadoras de ângulo relacionadas",
+    "openTool": "Abrir ferramenta",
+    "svg": {
+      "opposite": "oposto",
+      "adjacent": "adjacente",
+      "hypotenuse": "hipotenusa",
+      "rightAngle": "90°"
+    },
+    "sideKey": {
+      "a": {
+        "label": "a = lado oposto",
+        "description": "O lado oposto ao ângulo A."
+      },
+      "b": {
+        "label": "b = lado adjacente",
+        "description": "O lado próximo ao ângulo A."
+      },
+      "c": {
+        "label": "c = hipotenusa",
+        "description": "O lado mais longo, oposto ao ângulo reto."
+      }
+    },
+    "angleKey": {
+      "A": {
+        "label": "A = ângulo de referência",
+        "description": "O ângulo agudo usado por seno, cosseno e tangente nestas páginas."
+      },
+      "B": {
+        "label": "B = outro ângulo agudo",
+        "description": "O ângulo agudo complementar no mesmo triângulo retângulo."
+      }
+    },
+    "messages": {
+      "positive": "Insira valores positivos.",
+      "angleRange": "O ângulo deve ser maior que 0° e menor que 90°.",
+      "hypotenuseKnownSide": "A hipotenusa c deve ser maior que o lado conhecido.",
+      "invalidTriangle": "Esses valores podem não formar um triângulo retângulo válido."
+    },
+    "runtime": {
+      "calculationComplete": "Cálculo concluído.",
+      "unableToCalculate": "Não é possível calcular.",
+      "fixErrors": "Corrija os erros nos campos acima.",
+      "errorPrefix": "Erro",
+      "stepLabels": {
+        "formula": "Fórmula",
+        "substitution": "Substituição",
+        "answer": "Resposta",
+        "explanation": "Explicação",
+        "detail": "Detalhe"
+      }
+    }
+  },
+  "bn": {
+    "badge": "অ্যাঙ্গেল ক্যালকুলেটর",
+    "highlightedRelationship": "হাইলাইট সম্পর্ক",
+    "diagramKey": "ডায়াগ্রাম কী",
+    "quickChecks": "দ্রুত চেক",
+    "howToUse": "এই ক্যালকুলেটর কিভাবে ব্যবহার করবেন",
+    "whatResultMeans": "ফলাফল মানে কি",
+    "whenToUse": "এই ক্যালকুলেটর কখন ব্যবহার করবেন",
+    "commonMistakes": "সাধারণ ভুল",
+    "faqHeading": "প্রায়শই জিজ্ঞাসিত প্রশ্নাবলী",
+    "relatedAngleCalculators": "সম্পর্কিত কোণ ক্যালকুলেটর",
+    "openTool": "ওপেন টুল",
+    "svg": {
+      "opposite": "বিপরীত",
+      "adjacent": "সংলগ্ন",
+      "hypotenuse": "কর্ণ",
+      "rightAngle": "90°"
+    },
+    "sideKey": {
+      "a": {
+        "label": "a = বিপরীত দিক",
+        "description": "কোণ A থেকে পাশ জুড়ে।"
+      },
+      "b": {
+        "label": "b = সংলগ্ন দিক",
+        "description": "কোণ A এর পাশের দিক।"
+      },
+      "c": {
+        "label": "c = কর্ণ",
+        "description": "দীর্ঘতম দিক, সমকোণের বিপরীত।"
+      }
+    },
+    "angleKey": {
+      "A": {
+        "label": "A = রেফারেন্স কোণ",
+        "description": "এই পৃষ্ঠাগুলিতে সাইন, কোসাইন এবং স্পর্শক দ্বারা ব্যবহৃত তীব্র কোণ।"
+      },
+      "B": {
+        "label": "B = অন্যান্য তীব্র কোণ",
+        "description": "একই সমকোণী ত্রিভুজের সম্পূরক তীব্র কোণ।"
+      }
+    },
+    "messages": {
+      "positive": "অনুগ্রহ করে ইতিবাচক মান লিখুন।",
+      "angleRange": "কোণ অবশ্যই 0°-এর থেকে বড় এবং 90°-এর থেকে কম হতে হবে৷",
+      "hypotenuseKnownSide": "কর্ণ c পরিচিত বাহুর থেকে বড় হতে হবে।",
+      "invalidTriangle": "এই মানগুলি একটি বৈধ সমকোণী ত্রিভুজ গঠন নাও করতে পারে।"
+    },
+    "runtime": {
+      "calculationComplete": "হিসাব সম্পূর্ণ।",
+      "unableToCalculate": "হিসাব করতে অক্ষম।",
+      "fixErrors": "অনুগ্রহ করে উপরের ক্ষেত্রগুলিতে ত্রুটিগুলি ঠিক করুন৷",
+      "errorPrefix": "ত্রুটি",
+      "stepLabels": {
+        "formula": "সূত্র",
+        "substitution": "প্রতিস্থাপন",
+        "answer": "উত্তর",
+        "explanation": "ব্যাখ্যা",
+        "detail": "বিস্তারিত"
+      }
+    }
+  },
+  "ja": {
+    "badge": "角度計算機",
+    "highlightedRelationship": "強調表示された関係",
+    "diagramKey": "ダイアグラムキー",
+    "quickChecks": "クイックチェック",
+    "howToUse": "この計算機の使い方",
+    "whatResultMeans": "結果が意味するもの",
+    "whenToUse": "この計算ツールを使用する場合",
+    "commonMistakes": "よくある間違い",
+    "faqHeading": "よくある質問",
+    "relatedAngleCalculators": "関連する角度計算機",
+    "openTool": "オープンツール",
+    "svg": {
+      "opposite": "反対側",
+      "adjacent": "隣接する",
+      "hypotenuse": "斜辺",
+      "rightAngle": "90°"
+    },
+    "sideKey": {
+      "a": {
+        "label": "a = 反対側",
+        "description": "角度 A の反対側。"
+      },
+      "b": {
+        "label": "b = 隣接する側",
+        "description": "角Aの隣の面。"
+      },
+      "c": {
+        "label": "c = 斜辺",
+        "description": "直角の反対側の最も長い辺。"
+      }
+    },
+    "angleKey": {
+      "A": {
+        "label": "A = 基準角度",
+        "description": "これらのページのサイン、コサイン、タンジェントで使用される鋭角。"
+      },
+      "B": {
+        "label": "B = その他の鋭角",
+        "description": "同じ直角三角形の相補的な鋭角。"
+      }
+    },
+    "messages": {
+      "positive": "正の値を入力してください。",
+      "angleRange": "角度は、0° より大きく、90° より小さい必要があります。",
+      "hypotenuseKnownSide": "斜辺 c は既知の辺より大きくなければなりません。",
+      "invalidTriangle": "これらの値は有効な直角三角形を形成しない可能性があります。"
+    },
+    "runtime": {
+      "calculationComplete": "計算が完了しました。",
+      "unableToCalculate": "計算できません。",
+      "fixErrors": "上のフィールドのエラーを修正してください。",
+      "errorPrefix": "エラー",
+      "stepLabels": {
+        "formula": "計算式",
+        "substitution": "代用",
+        "answer": "答え",
+        "explanation": "説明",
+        "detail": "詳細"
+      }
+    }
+  },
+  "ko": {
+    "badge": "각도 계산기",
+    "highlightedRelationship": "강조된 관계",
+    "diagramKey": "다이어그램 키",
+    "quickChecks": "빠른 점검",
+    "howToUse": "이 계산기를 사용하는 방법",
+    "whatResultMeans": "결과의 의미",
+    "whenToUse": "이 계산기를 사용하는 경우",
+    "commonMistakes": "일반적인 실수",
+    "faqHeading": "자주 묻는 질문",
+    "relatedAngleCalculators": "관련 각도 계산기",
+    "openTool": "도구 열기",
+    "svg": {
+      "opposite": "반대편",
+      "adjacent": "인접한",
+      "hypotenuse": "빗변",
+      "rightAngle": "90°"
+    },
+    "sideKey": {
+      "a": {
+        "label": "a = 반대편",
+        "description": "각도 A의 맞은편 측면입니다."
+      },
+      "b": {
+        "label": "b = 인접면",
+        "description": "각도 A 옆의 측면입니다."
+      },
+      "c": {
+        "label": "c = 빗변",
+        "description": "가장 긴 변, 직각 반대편."
+      }
+    },
+    "angleKey": {
+      "A": {
+        "label": "A = 기준 각도",
+        "description": "이 페이지에서 사인, 코사인, 탄젠트에 사용되는 예각입니다."
+      },
+      "B": {
+        "label": "B = 기타 예각",
+        "description": "동일한 직각 삼각형의 보완적인 예각입니다."
+      }
+    },
+    "messages": {
+      "positive": "양수 값을 입력하세요.",
+      "angleRange": "각도는 0°보다 크고 90°보다 작아야 합니다.",
+      "hypotenuseKnownSide": "빗변 c는 알려진 변보다 커야 합니다.",
+      "invalidTriangle": "이러한 값은 유효한 직각 삼각형을 형성하지 못할 수 있습니다."
+    },
+    "runtime": {
+      "calculationComplete": "계산이 완료되었습니다.",
+      "unableToCalculate": "계산할 수 없습니다.",
+      "fixErrors": "위 필드의 오류를 수정하세요.",
+      "errorPrefix": "오류",
+      "stepLabels": {
+        "formula": "공식",
+        "substitution": "대체",
+        "answer": "답변",
+        "explanation": "설명",
+        "detail": "세부정보"
+      }
+    }
+  },
+  "ms": {
+    "badge": "Kalkulator Sudut",
+    "highlightedRelationship": "Hubungan yang ditonjolkan",
+    "diagramKey": "Kunci Rajah",
+    "quickChecks": "Semakan Pantas",
+    "howToUse": "Cara Menggunakan Kalkulator Ini",
+    "whatResultMeans": "Apa Makna Hasilnya",
+    "whenToUse": "Bila Perlu Menggunakan Kalkulator Ini",
+    "commonMistakes": "Kesilapan Biasa",
+    "faqHeading": "Soalan Lazim",
+    "relatedAngleCalculators": "Kalkulator Sudut Berkaitan",
+    "openTool": "Buka Alat",
+    "svg": {
+      "opposite": "bertentangan",
+      "adjacent": "bersebelahan",
+      "hypotenuse": "hipotenus",
+      "rightAngle": "90°"
+    },
+    "sideKey": {
+      "a": {
+        "label": "a = sebelah bertentangan",
+        "description": "Sisi di seberang sudut A."
+      },
+      "b": {
+        "label": "b = sebelah bersebelahan",
+        "description": "Bahagian di sebelah sudut A."
+      },
+      "c": {
+        "label": "c = hipotenus",
+        "description": "Sisi terpanjang, bertentangan dengan sudut kanan."
+      }
+    },
+    "angleKey": {
+      "A": {
+        "label": "A = sudut rujukan",
+        "description": "Sudut akut yang digunakan oleh sinus, kosinus dan tangen pada halaman ini."
+      },
+      "B": {
+        "label": "B = sudut akut yang lain",
+        "description": "Sudut akut pelengkap dalam segi tiga tepat yang sama."
+      }
+    },
+    "messages": {
+      "positive": "Sila masukkan nilai positif.",
+      "angleRange": "Sudut mestilah lebih besar daripada 0° dan kurang daripada 90°.",
+      "hypotenuseKnownSide": "Hipotenus c mestilah lebih besar daripada sisi yang diketahui.",
+      "invalidTriangle": "Nilai ini mungkin tidak membentuk segi tiga tepat yang sah."
+    },
+    "runtime": {
+      "calculationComplete": "Pengiraan selesai.",
+      "unableToCalculate": "Tidak dapat mengira.",
+      "fixErrors": "Sila betulkan ralat dalam medan di atas.",
+      "errorPrefix": "ralat",
+      "stepLabels": {
+        "formula": "Formula",
+        "substitution": "Penggantian",
+        "answer": "Jawab",
+        "explanation": "Penjelasan",
+        "detail": "Perincian"
+      }
+    }
+  },
+  "pl": {
+    "badge": "Kalkulator kąta",
+    "highlightedRelationship": "Podkreślona relacja",
+    "diagramKey": "Klucz do diagramu",
+    "quickChecks": "Szybkie kontrole",
+    "howToUse": "Jak korzystać z tego kalkulatora",
+    "whatResultMeans": "Co oznacza wynik",
+    "whenToUse": "Kiedy używać tego kalkulatora",
+    "commonMistakes": "Typowe błędy",
+    "faqHeading": "Często zadawane pytania",
+    "relatedAngleCalculators": "Powiązane kalkulatory kąta",
+    "openTool": "Otwórz narzędzie",
+    "svg": {
+      "opposite": "naprzeciwko",
+      "adjacent": "sąsiadujący",
+      "hypotenuse": "przeciwprostokątna",
+      "rightAngle": "90°"
+    },
+    "sideKey": {
+      "a": {
+        "label": "a = strona przeciwna",
+        "description": "Strona naprzeciwko kąta A."
+      },
+      "b": {
+        "label": "b = strona sąsiadująca",
+        "description": "Strona obok kąta A."
+      },
+      "c": {
+        "label": "c = przeciwprostokątna",
+        "description": "Najdłuższy bok, naprzeciwko kąta prostego."
+      }
+    },
+    "angleKey": {
+      "A": {
+        "label": "A = kąt odniesienia",
+        "description": "Kąt ostry używany przez sinus, cosinus i tangens na tych stronach."
+      },
+      "B": {
+        "label": "B = inny kąt ostry",
+        "description": "Dopełniający kąt ostry w tym samym trójkącie prostokątnym."
+      }
+    },
+    "messages": {
+      "positive": "Proszę wprowadzić wartości dodatnie.",
+      "angleRange": "Kąt musi być większy niż 0° i mniejszy niż 90°.",
+      "hypotenuseKnownSide": "Przeciwprostokątna c musi być większa niż znany bok.",
+      "invalidTriangle": "Wartości te mogą nie tworzyć prawidłowego trójkąta prostokątnego."
+    },
+    "runtime": {
+      "calculationComplete": "Obliczenia zakończone.",
+      "unableToCalculate": "Nie można obliczyć.",
+      "fixErrors": "Popraw błędy w powyższych polach.",
+      "errorPrefix": "Błąd",
+      "stepLabels": {
+        "formula": "Formuła",
+        "substitution": "Zastąpienie",
+        "answer": "Odpowiedź",
+        "explanation": "Wyjaśnienie",
+        "detail": "Szczegół"
+      }
+    }
+  },
+  "id": {
+    "badge": "Kalkulator Sudut",
+    "highlightedRelationship": "Hubungan yang disorot",
+    "diagramKey": "Kunci Diagram",
+    "quickChecks": "Pemeriksaan Cepat",
+    "howToUse": "Cara Menggunakan Kalkulator Ini",
+    "whatResultMeans": "Apa Arti Hasilnya",
+    "whenToUse": "Kapan Menggunakan Kalkulator Ini",
+    "commonMistakes": "Kesalahan Umum",
+    "faqHeading": "Pertanyaan yang Sering Diajukan",
+    "relatedAngleCalculators": "Kalkulator Sudut Terkait",
+    "openTool": "Buka Alat",
+    "svg": {
+      "opposite": "sebaliknya",
+      "adjacent": "berdekatan",
+      "hypotenuse": "sisi miring",
+      "rightAngle": "90°"
+    },
+    "sideKey": {
+      "a": {
+        "label": "a = sisi berhadapan",
+        "description": "Sisi di seberang sudut A."
+      },
+      "b": {
+        "label": "b = sisi yang berdekatan",
+        "description": "Sisi di sebelah sudut A."
+      },
+      "c": {
+        "label": "c = sisi miring",
+        "description": "Sisi terpanjang, berhadapan dengan sudut siku-siku."
+      }
+    },
+    "angleKey": {
+      "A": {
+        "label": "A = sudut referensi",
+        "description": "Sudut lancip yang digunakan sinus, cosinus, dan tangen pada halaman ini."
+      },
+      "B": {
+        "label": "B = sudut lancip lainnya",
+        "description": "Sudut lancip komplementer pada segitiga siku-siku yang sama."
+      }
+    },
+    "messages": {
+      "positive": "Silakan masukkan nilai positif.",
+      "angleRange": "Sudut harus lebih besar dari 0° dan lebih kecil dari 90°.",
+      "hypotenuseKnownSide": "Sisi miring c harus lebih besar dari sisi yang diketahui.",
+      "invalidTriangle": "Nilai-nilai ini mungkin tidak membentuk segitiga siku-siku yang valid."
+    },
+    "runtime": {
+      "calculationComplete": "Perhitungan selesai.",
+      "unableToCalculate": "Tidak dapat menghitung.",
+      "fixErrors": "Harap perbaiki kesalahan pada kolom di atas.",
+      "errorPrefix": "Kesalahan",
+      "stepLabels": {
+        "formula": "Rumus",
+        "substitution": "Pergantian",
+        "answer": "Jawaban",
+        "explanation": "Penjelasan",
+        "detail": "Detil"
+      }
+    }
+  },
+  "ar": {
+    "badge": "حاسبة الزاوية",
+    "highlightedRelationship": "العلاقة المميزة",
+    "diagramKey": "مفتاح الرسم البياني",
+    "quickChecks": "الشيكات السريعة",
+    "howToUse": "كيفية استخدام هذه الآلة الحاسبة",
+    "whatResultMeans": "ماذا تعني النتيجة",
+    "whenToUse": "متى تستخدم هذه الآلة الحاسبة",
+    "commonMistakes": "الأخطاء الشائعة",
+    "faqHeading": "الأسئلة المتداولة",
+    "relatedAngleCalculators": "حاسبات الزوايا ذات الصلة",
+    "openTool": "أداة مفتوحة",
+    "svg": {
+      "opposite": "عكس ذلك",
+      "adjacent": "المجاورة",
+      "hypotenuse": "الوتر",
+      "rightAngle": "90°"
+    },
+    "sideKey": {
+      "a": {
+        "label": "a = الجانب المقابل",
+        "description": "الجانب المقابل للزاوية A."
+      },
+      "b": {
+        "label": "b = الجانب المجاور",
+        "description": "الضلع المجاور للزاوية A."
+      },
+      "c": {
+        "label": "c = الوتر",
+        "description": "الضلع الأطول، مقابل الزاوية القائمة."
+      }
+    },
+    "angleKey": {
+      "A": {
+        "label": "A = الزاوية المرجعية",
+        "description": "الزاوية الحادة المستخدمة بواسطة الجيب وجيب التمام والظل في هذه الصفحات."
+      },
+      "B": {
+        "label": "B = الزاوية الحادة الأخرى",
+        "description": "الزاوية الحادة المكملة في نفس المثلث القائم."
+      }
+    },
+    "messages": {
+      "positive": "الرجاء إدخال القيم الإيجابية.",
+      "angleRange": "يجب أن تكون الزاوية أكبر من 0° وأقل من 90°.",
+      "hypotenuseKnownSide": "يجب أن يكون الوتر c أكبر من الضلع المعلوم.",
+      "invalidTriangle": "قد لا تشكل هذه القيم مثلثًا صحيحًا."
+    },
+    "runtime": {
+      "calculationComplete": "اكتمل الحساب.",
+      "unableToCalculate": "غير قادر على الحساب.",
+      "fixErrors": "الرجاء إصلاح الأخطاء في الحقول أعلاه.",
+      "errorPrefix": "خطأ",
+      "stepLabels": {
+        "formula": "صيغة",
+        "substitution": "الاستبدال",
+        "answer": "الإجابة",
+        "explanation": "شرح",
+        "detail": "التفاصيل"
+      }
+    }
+  },
+  "bg": {
+    "badge": "Калкулатор за ъгли",
+    "highlightedRelationship": "Подчертана връзка",
+    "diagramKey": "Диаграма Ключ",
+    "quickChecks": "Бързи проверки",
+    "howToUse": "Как да използвате този калкулатор",
+    "whatResultMeans": "Какво означава резултатът",
+    "whenToUse": "Кога да използвате този калкулатор",
+    "commonMistakes": "Често срещани грешки",
+    "faqHeading": "Често задавани въпроси",
+    "relatedAngleCalculators": "Свързани ъглови калкулатори",
+    "openTool": "Отваряне на инструмента",
+    "svg": {
+      "opposite": "противоположност",
+      "adjacent": "съседен",
+      "hypotenuse": "хипотенуза",
+      "rightAngle": "90°"
+    },
+    "sideKey": {
+      "a": {
+        "label": "a = срещуположната страна",
+        "description": "Страната срещу ъгъл A."
+      },
+      "b": {
+        "label": "b = съседна страна",
+        "description": "Страната до ъгъл A."
+      },
+      "c": {
+        "label": "c = хипотенуза",
+        "description": "Най-дългата страна, срещу правия ъгъл."
+      }
+    },
+    "angleKey": {
+      "A": {
+        "label": "A = референтен ъгъл",
+        "description": "Острият ъгъл, използван от синус, косинус и тангенс на тези страници."
+      },
+      "B": {
+        "label": "B = друг остър ъгъл",
+        "description": "Допълнителният остър ъгъл в същия правоъгълен триъгълник."
+      }
+    },
+    "messages": {
+      "positive": "Моля, въведете положителни стойности.",
+      "angleRange": "Ъгълът трябва да е по-голям от 0° и по-малък от 90°.",
+      "hypotenuseKnownSide": "Хипотенузата c трябва да е по-голяма от известната страна.",
+      "invalidTriangle": "Тези стойности може да не образуват валиден правоъгълен триъгълник."
+    },
+    "runtime": {
+      "calculationComplete": "Изчислението е завършено.",
+      "unableToCalculate": "Не може да се изчисли.",
+      "fixErrors": "Моля, коригирайте грешките в полетата по-горе.",
+      "errorPrefix": "Грешка",
+      "stepLabels": {
+        "formula": "Формула",
+        "substitution": "Заместване",
+        "answer": "отговор",
+        "explanation": "Обяснение",
+        "detail": "детайл"
+      }
+    }
+  },
+  "tr": {
+    "badge": "Açı Hesaplayıcı",
+    "highlightedRelationship": "Vurgulanan ilişki",
+    "diagramKey": "Diyagram Anahtarı",
+    "quickChecks": "Hızlı Kontroller",
+    "howToUse": "Bu Hesap Makinesi Nasıl Kullanılır?",
+    "whatResultMeans": "Sonuç Ne Anlama Geliyor?",
+    "whenToUse": "Bu Hesap Makinesi Ne Zaman Kullanılmalı",
+    "commonMistakes": "Yaygın Hatalar",
+    "faqHeading": "Sıkça Sorulan Sorular",
+    "relatedAngleCalculators": "İlgili Açı Hesaplayıcılar",
+    "openTool": "Aracı Aç",
+    "svg": {
+      "opposite": "karşısında",
+      "adjacent": "bitişik",
+      "hypotenuse": "hipotenüs",
+      "rightAngle": "90°"
+    },
+    "sideKey": {
+      "a": {
+        "label": "a = karşı taraf",
+        "description": "A açısının karşısındaki kenar."
+      },
+      "b": {
+        "label": "b = bitişik taraf",
+        "description": "A açısının yanındaki kenar."
+      },
+      "c": {
+        "label": "c = hipotenüs",
+        "description": "En uzun kenar, dik açının karşısındadır."
+      }
+    },
+    "angleKey": {
+      "A": {
+        "label": "A = referans açısı",
+        "description": "Bu sayfalarda sinüs, kosinüs ve tanjant tarafından kullanılan dar açı."
+      },
+      "B": {
+        "label": "B = diğer dar açı",
+        "description": "Aynı dik üçgendeki tamamlayıcı dar açı."
+      }
+    },
+    "messages": {
+      "positive": "Lütfen pozitif değerler girin.",
+      "angleRange": "Açı 0°'den büyük ve 90°'den küçük olmalıdır.",
+      "hypotenuseKnownSide": "Hipotenüs c bilinen kenardan büyük olmalıdır.",
+      "invalidTriangle": "Bu değerler geçerli bir dik üçgen oluşturmayabilir."
+    },
+    "runtime": {
+      "calculationComplete": "Hesaplama tamamlandı.",
+      "unableToCalculate": "Hesaplanamıyor.",
+      "fixErrors": "Lütfen yukarıdaki alanlardaki hataları düzeltin.",
+      "errorPrefix": "Hata",
+      "stepLabels": {
+        "formula": "Formül",
+        "substitution": "Oyuncu değişikliği",
+        "answer": "Cevap",
+        "explanation": "Açıklama",
+        "detail": "Detay"
+      }
+    }
+  },
+  "sv": {
+    "badge": "Vinkelräknare",
+    "highlightedRelationship": "Markerad relation",
+    "diagramKey": "Diagramtangent",
+    "quickChecks": "Snabbkontroller",
+    "howToUse": "Hur man använder den här kalkylatorn",
+    "whatResultMeans": "Vad resultatet betyder",
+    "whenToUse": "När ska man använda denna kalkylator",
+    "commonMistakes": "Vanliga misstag",
+    "faqHeading": "Vanliga frågor",
+    "relatedAngleCalculators": "Relaterade vinkelräknare",
+    "openTool": "Öppna Verktyg",
+    "svg": {
+      "opposite": "motsatsen",
+      "adjacent": "intilliggande",
+      "hypotenuse": "hypotenusa",
+      "rightAngle": "90°"
+    },
+    "sideKey": {
+      "a": {
+        "label": "a = motsatt sida",
+        "description": "Sidan mittemot vinkeln A."
+      },
+      "b": {
+        "label": "b = intilliggande sida",
+        "description": "Sidan bredvid vinkeln A."
+      },
+      "c": {
+        "label": "c = hypotenusa",
+        "description": "Den längsta sidan, mitt emot rät vinkel."
+      }
+    },
+    "angleKey": {
+      "A": {
+        "label": "A = referensvinkel",
+        "description": "Den spetsiga vinkeln som används av sinus, cosinus och tangens på dessa sidor."
+      },
+      "B": {
+        "label": "B = annan spetsig vinkel",
+        "description": "Den komplementära spetsiga vinkeln i samma räta triangel."
+      }
+    },
+    "messages": {
+      "positive": "Ange positiva värden.",
+      "angleRange": "Vinkeln måste vara större än 0° och mindre än 90°.",
+      "hypotenuseKnownSide": "Hypotenusan c måste vara större än den kända sidan.",
+      "invalidTriangle": "Dessa värden kanske inte bildar en giltig rätvinklig triangel."
+    },
+    "runtime": {
+      "calculationComplete": "Beräkningen klar.",
+      "unableToCalculate": "Det går inte att beräkna.",
+      "fixErrors": "Vänligen åtgärda felen i fälten ovan.",
+      "errorPrefix": "Fel",
+      "stepLabels": {
+        "formula": "Formel",
+        "substitution": "Substitution",
+        "answer": "Svara",
+        "explanation": "Förklaring",
+        "detail": "Detalj"
+      }
+    }
+  },
+  "zh": {
+    "badge": "角度计算器",
+    "highlightedRelationship": "突出显示的关系",
+    "diagramKey": "图键",
+    "quickChecks": "快速检查",
+    "howToUse": "如何使用此计算器",
+    "whatResultMeans": "结果意味着什么",
+    "whenToUse": "何时使用此计算器",
+    "commonMistakes": "常见错误",
+    "faqHeading": "常见问题解答",
+    "relatedAngleCalculators": "相关角度计算器",
+    "openTool": "打开工具",
+    "svg": {
+      "opposite": "对面",
+      "adjacent": "相邻的",
+      "hypotenuse": "斜边",
+      "rightAngle": "90°"
+    },
+    "sideKey": {
+      "a": {
+        "label": "a = 对侧",
+        "description": "角 A 对面的一侧。"
+      },
+      "b": {
+        "label": "b = 邻边",
+        "description": "角 A 旁边的一侧。"
+      },
+      "c": {
+        "label": "c = 斜边",
+        "description": "最长的边，与直角相对。"
+      }
+    },
+    "angleKey": {
+      "A": {
+        "label": "A = 参考角度",
+        "description": "这些页面上的正弦、余弦和正切使用的锐角。"
+      },
+      "B": {
+        "label": "B = 其他锐角",
+        "description": "同一个直角三角形中的锐角互补。"
+      }
+    },
+    "messages": {
+      "positive": "请输入正值。",
+      "angleRange": "角度必须大于 0° 且小于 90°。",
+      "hypotenuseKnownSide": "斜边 c 必须大于已知边。",
+      "invalidTriangle": "这些值可能无法形成有效的直角三角形。"
+    },
+    "runtime": {
+      "calculationComplete": "计算完成。",
+      "unableToCalculate": "无法计算。",
+      "fixErrors": "请修正上述字段中的错误。",
+      "errorPrefix": "错误",
+      "stepLabels": {
+        "formula": "公式",
+        "substitution": "替代",
+        "answer": "回答",
+        "explanation": "说明",
+        "detail": "详情"
+      }
+    }
+  }
+}

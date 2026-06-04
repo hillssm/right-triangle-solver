@@ -1,0 +1,488 @@
+{
+  "hi": {
+    "messages": {
+      "positive": "कृपया सकारात्मक मान दर्ज करें.",
+      "angleRange": "कोण A 0° से अधिक और 90° से कम होना चाहिए।",
+      "hypotenuseKnownSide": "कर्ण c ज्ञात पक्ष से बड़ा होना चाहिए।"
+    },
+    "runtime": {
+      "calculationSteps": {
+        "legFromHcSin": {
+          "title": "विपरीत भुजा a ज्ञात कीजिए",
+          "description": "कोण A से भुजा प्राप्त करने के लिए कर्ण c को sin(A) से गुणा करें।"
+        },
+        "legFromHcCos": {
+          "title": "आसन्न भुजा b ज्ञात कीजिए",
+          "description": "कोण A के आगे की भुजा प्राप्त करने के लिए कर्ण c को cos(A) से गुणा करें।"
+        },
+        "legFromLegTan": {
+          "title": "विपरीत भुजा a ज्ञात कीजिए",
+          "description": "कोण A से विपरीत भुजा प्राप्त करने के लिए आसन्न भुजा b को tan(A) से गुणा करें।"
+        },
+        "legFromLegTanDiv": {
+          "title": "आसन्न भुजा b ज्ञात कीजिए",
+          "description": "कोण A के बगल वाली भुजा प्राप्त करने के लिए विपरीत भुजा a को tan(A) से विभाजित करें।"
+        }
+      }
+    }
+  },
+  "es": {
+    "messages": {
+      "positive": "Por favor introduzca valores positivos.",
+      "angleRange": "El ángulo A debe ser mayor que 0° y menor que 90°.",
+      "hypotenuseKnownSide": "La hipotenusa c debe ser mayor que el lado conocido."
+    },
+    "runtime": {
+      "calculationSteps": {
+        "legFromHcSin": {
+          "title": "Encuentra el lado opuesto a",
+          "description": "Multiplica la hipotenusa c por sin(A) para obtener el lado opuesto al ángulo A."
+        },
+        "legFromHcCos": {
+          "title": "Encuentra el lado adyacente b",
+          "description": "Multiplica la hipotenusa c por cos(A) para obtener el lado al lado del ángulo A."
+        },
+        "legFromLegTan": {
+          "title": "Encuentra el lado opuesto a",
+          "description": "Multiplique el lado adyacente b por tan(A) para obtener el lado opuesto al ángulo A."
+        },
+        "legFromLegTanDiv": {
+          "title": "Encuentra el lado adyacente b",
+          "description": "Divida el lado opuesto a entre tan(A) para obtener el lado al lado del ángulo A."
+        }
+      }
+    }
+  },
+  "ru": {
+    "messages": {
+      "positive": "Пожалуйста, введите положительные значения.",
+      "angleRange": "Угол A должен быть больше 0° и меньше 90°.",
+      "hypotenuseKnownSide": "Гипотенуза c должна быть больше известной стороны."
+    },
+    "runtime": {
+      "calculationSteps": {
+        "legFromHcSin": {
+          "title": "Найдите противоположную сторону a",
+          "description": "Умножьте гипотенузу c на sin(A), чтобы получить сторону, пересекающую угол A."
+        },
+        "legFromHcCos": {
+          "title": "Найти прилегающую сторону b",
+          "description": "Умножьте гипотенузу c на cos(A), чтобы получить сторону, следующую за углом A."
+        },
+        "legFromLegTan": {
+          "title": "Найдите противоположную сторону a",
+          "description": "Умножьте смежную сторону b на tan(A), чтобы получить сторону, пересекающую угол A."
+        },
+        "legFromLegTanDiv": {
+          "title": "Найти прилегающую сторону b",
+          "description": "Разделите противоположную сторону a на tan(A), чтобы получить сторону, следующую за углом A."
+        }
+      }
+    }
+  },
+  "fr": {
+    "messages": {
+      "positive": "Veuillez saisir des valeurs positives.",
+      "angleRange": "L'angle A doit être supérieur à 0° et inférieur à 90°.",
+      "hypotenuseKnownSide": "L'hypoténuse c doit être supérieure au côté connu."
+    },
+    "runtime": {
+      "calculationSteps": {
+        "legFromHcSin": {
+          "title": "Trouver le côté opposé a",
+          "description": "Multipliez l'hypoténuse c par sin(A) pour obtenir le côté opposé à l'angle A."
+        },
+        "legFromHcCos": {
+          "title": "Trouver le côté adjacent b",
+          "description": "Multipliez l'hypoténuse c par cos(A) pour obtenir le côté à côté de l'angle A."
+        },
+        "legFromLegTan": {
+          "title": "Trouver le côté opposé a",
+          "description": "Multipliez le côté adjacent b par tan(A) pour obtenir le côté en face de l'angle A."
+        },
+        "legFromLegTanDiv": {
+          "title": "Trouver le côté adjacent b",
+          "description": "Divisez le côté opposé a par tan(A) pour obtenir le côté à côté de l'angle A."
+        }
+      }
+    }
+  },
+  "de": {
+    "messages": {
+      "positive": "Bitte geben Sie positive Werte ein.",
+      "angleRange": "Der Winkel A muss größer als 0° und kleiner als 90° sein.",
+      "hypotenuseKnownSide": "Die Hypotenuse c muss größer als die bekannte Seite sein."
+    },
+    "runtime": {
+      "calculationSteps": {
+        "legFromHcSin": {
+          "title": "Finden Sie die gegenüberliegende Seite a",
+          "description": "Multiplizieren Sie die Hypotenuse c mit sin(A), um die Seite gegenüber dem Winkel A zu erhalten."
+        },
+        "legFromHcCos": {
+          "title": "Finden Sie die benachbarte Seite b",
+          "description": "Multiplizieren Sie die Hypotenuse c mit cos(A), um die Seite neben dem Winkel A zu erhalten."
+        },
+        "legFromLegTan": {
+          "title": "Finden Sie die gegenüberliegende Seite a",
+          "description": "Multiplizieren Sie die angrenzende Seite b mit tan(A), um die Seite gegenüber dem Winkel A zu erhalten."
+        },
+        "legFromLegTanDiv": {
+          "title": "Finden Sie die benachbarte Seite b",
+          "description": "Teilen Sie die gegenüberliegende Seite a durch tan(A), um die Seite neben dem Winkel A zu erhalten."
+        }
+      }
+    }
+  },
+  "it": {
+    "messages": {
+      "positive": "Inserisci valori positivi.",
+      "angleRange": "L'angolo A deve essere maggiore di 0° e minore di 90°.",
+      "hypotenuseKnownSide": "L'ipotenusa c deve essere maggiore del lato noto."
+    },
+    "runtime": {
+      "calculationSteps": {
+        "legFromHcSin": {
+          "title": "Trova il lato opposto a",
+          "description": "Moltiplica l'ipotenusa c per sin(A) per ottenere il lato opposto all'angolo A."
+        },
+        "legFromHcCos": {
+          "title": "Trova il lato adiacente b",
+          "description": "Moltiplica l'ipotenusa c per cos(A) per ottenere il lato vicino all'angolo A."
+        },
+        "legFromLegTan": {
+          "title": "Trova il lato opposto a",
+          "description": "Moltiplica il lato adiacente b per tan(A) per ottenere il lato opposto all'angolo A."
+        },
+        "legFromLegTanDiv": {
+          "title": "Trova il lato adiacente b",
+          "description": "Dividi il lato opposto a per tan(A) per ottenere il lato vicino all'angolo A."
+        }
+      }
+    }
+  },
+  "pt": {
+    "messages": {
+      "positive": "Insira valores positivos.",
+      "angleRange": "O ângulo A deve ser maior que 0° e menor que 90°.",
+      "hypotenuseKnownSide": "A hipotenusa c deve ser maior que o lado conhecido."
+    },
+    "runtime": {
+      "calculationSteps": {
+        "legFromHcSin": {
+          "title": "Encontre o lado oposto a",
+          "description": "Multiplique a hipotenusa c por sin(A) para obter o lado oposto ao ângulo A."
+        },
+        "legFromHcCos": {
+          "title": "Encontre o lado adjacente b",
+          "description": "Multiplique a hipotenusa c por cos(A) para obter o lado próximo ao ângulo A."
+        },
+        "legFromLegTan": {
+          "title": "Encontre o lado oposto a",
+          "description": "Multiplique o lado adjacente b por tan(A) para obter o lado oposto ao ângulo A."
+        },
+        "legFromLegTanDiv": {
+          "title": "Encontre o lado adjacente b",
+          "description": "Divida o lado oposto a por tan(A) para obter o lado próximo ao ângulo A."
+        }
+      }
+    }
+  },
+  "bn": {
+    "messages": {
+      "positive": "অনুগ্রহ করে ইতিবাচক মান লিখুন।",
+      "angleRange": "কোণ A অবশ্যই 0° এর বেশি এবং 90° এর কম হতে হবে।",
+      "hypotenuseKnownSide": "কর্ণ c পরিচিত বাহুর থেকে বড় হতে হবে।"
+    },
+    "runtime": {
+      "calculationSteps": {
+        "legFromHcSin": {
+          "title": "a বিপরীত দিকে খুঁজুন",
+          "description": "A কোণ থেকে পাশ পেতে sin(A) দ্বারা কর্ণ c গুণ করুন।"
+        },
+        "legFromHcCos": {
+          "title": "b সংলগ্ন পার্শ্ব খুঁজুন",
+          "description": "A কোণের পাশের দিকটি পেতে cos(A) দ্বারা কর্ণ c গুণ করুন।"
+        },
+        "legFromLegTan": {
+          "title": "a বিপরীত দিকে খুঁজুন",
+          "description": "A কোণ থেকে পাশ পেতে tan(A) দ্বারা সন্নিহিত পার্শ্ব b গুণ করুন।"
+        },
+        "legFromLegTanDiv": {
+          "title": "b সংলগ্ন পার্শ্ব খুঁজুন",
+          "description": "A কোণের পাশের দিক পেতে tan(A) দ্বারা বিপরীত দিক a কে ভাগ করুন।"
+        }
+      }
+    }
+  },
+  "ja": {
+    "messages": {
+      "positive": "正の値を入力してください。",
+      "angleRange": "角度 A は 0° より大きく 90° 未満である必要があります。",
+      "hypotenuseKnownSide": "斜辺 c は既知の辺より大きくなければなりません。"
+    },
+    "runtime": {
+      "calculationSteps": {
+        "legFromHcSin": {
+          "title": "反対側を検索 a",
+          "description": "斜辺 c に sin(A) を乗じて、角度 A から側面を取得します。"
+        },
+        "legFromHcCos": {
+          "title": "隣接する辺を検索 b",
+          "description": "斜辺 c と cos(A) を乗算して、角度 A の隣の辺を取得します。"
+        },
+        "legFromLegTan": {
+          "title": "反対側を検索 a",
+          "description": "隣接する辺 b に tan(A) を乗算して、角度 A を横切る辺を取得します。"
+        },
+        "legFromLegTanDiv": {
+          "title": "隣接する辺を検索 b",
+          "description": "反対側の辺 a を tan(A) で割って、角度 A の次の辺を取得します。"
+        }
+      }
+    }
+  },
+  "ko": {
+    "messages": {
+      "positive": "양수 값을 입력하세요.",
+      "angleRange": "각도 A는 0°보다 크고 90°보다 작아야 합니다.",
+      "hypotenuseKnownSide": "빗변 c는 알려진 변보다 커야 합니다."
+    },
+    "runtime": {
+      "calculationSteps": {
+        "legFromHcSin": {
+          "title": "반대편 a 찾기",
+          "description": "빗변 c에 sin(A)를 곱하여 변이 각도 A와 교차하도록 합니다."
+        },
+        "legFromHcCos": {
+          "title": "인접한 변 찾기 b",
+          "description": "빗변 c에 cos(A)를 곱하여 각도 A 옆의 변을 구합니다."
+        },
+        "legFromLegTan": {
+          "title": "반대편 a 찾기",
+          "description": "인접한 변 b에 tan(A)를 곱하여 각도 A와 마주보는 변을 얻습니다."
+        },
+        "legFromLegTanDiv": {
+          "title": "인접한 변 찾기 b",
+          "description": "반대편 a를 tan(A)로 나누어 각도 A 옆에 있는 변을 얻습니다."
+        }
+      }
+    }
+  },
+  "ms": {
+    "messages": {
+      "positive": "Sila masukkan nilai positif.",
+      "angleRange": "Sudut A mestilah lebih besar daripada 0° dan kurang daripada 90°.",
+      "hypotenuseKnownSide": "Hipotenus c mestilah lebih besar daripada sisi yang diketahui."
+    },
+    "runtime": {
+      "calculationSteps": {
+        "legFromHcSin": {
+          "title": "Cari bahagian bertentangan a",
+          "description": "Darabkan hipotenus c dengan sin(A) untuk menyeberang dari sudut A."
+        },
+        "legFromHcCos": {
+          "title": "Cari bahagian bersebelahan b",
+          "description": "Darabkan hipotenus c dengan cos(A) untuk mendapatkan sisi bersebelahan dengan sudut A."
+        },
+        "legFromLegTan": {
+          "title": "Cari bahagian bertentangan a",
+          "description": "Darab sisi bersebelahan b dengan tan(A) untuk mendapatkan sisi menyeberang dari sudut A."
+        },
+        "legFromLegTanDiv": {
+          "title": "Cari bahagian bersebelahan b",
+          "description": "Bahagikan sisi bertentangan a dengan tan(A) untuk mendapatkan sisi bersebelahan dengan sudut A."
+        }
+      }
+    }
+  },
+  "pl": {
+    "messages": {
+      "positive": "Proszę wprowadzić wartości dodatnie.",
+      "angleRange": "Kąt A musi być większy niż 0° i mniejszy niż 90°.",
+      "hypotenuseKnownSide": "Przeciwprostokątna c musi być większa niż znany bok."
+    },
+    "runtime": {
+      "calculationSteps": {
+        "legFromHcSin": {
+          "title": "Znajdź przeciwną stronę a",
+          "description": "Pomnóż przeciwprostokątną c przez sin(A), aby otrzymać bok leżący naprzeciwko kąta A."
+        },
+        "legFromHcCos": {
+          "title": "Znajdź sąsiednią stronę b",
+          "description": "Pomnóż przeciwprostokątną c przez cos(A), aby otrzymać bok sąsiadujący z kątem A."
+        },
+        "legFromLegTan": {
+          "title": "Znajdź przeciwną stronę a",
+          "description": "Pomnóż sąsiedni bok b przez tan(A), aby otrzymać bok leżący naprzeciwko kąta A."
+        },
+        "legFromLegTanDiv": {
+          "title": "Znajdź sąsiednią stronę b",
+          "description": "Podziel przeciwny bok a przez tan(A), aby otrzymać bok sąsiadujący z kątem A."
+        }
+      }
+    }
+  },
+  "id": {
+    "messages": {
+      "positive": "Silakan masukkan nilai positif.",
+      "angleRange": "Sudut A harus lebih besar dari 0° dan kurang dari 90°.",
+      "hypotenuseKnownSide": "Sisi miring c harus lebih besar dari sisi yang diketahui."
+    },
+    "runtime": {
+      "calculationSteps": {
+        "legFromHcSin": {
+          "title": "Temukan sisi berlawanan a",
+          "description": "Kalikan sisi miring c dengan sin(A) untuk mendapatkan sisi yang berhadapan dengan sudut A."
+        },
+        "legFromHcCos": {
+          "title": "Temukan sisi yang berdekatan b",
+          "description": "Kalikan sisi miring c dengan cos(A) untuk mendapatkan sisi di sebelah sudut A."
+        },
+        "legFromLegTan": {
+          "title": "Temukan sisi berlawanan a",
+          "description": "Kalikan sisi yang berdekatan b dengan tan(A) untuk mendapatkan sisi yang bersilangan dengan sudut A."
+        },
+        "legFromLegTanDiv": {
+          "title": "Temukan sisi yang berdekatan b",
+          "description": "Bagilah sisi berhadapan a dengan tan(A) untuk mendapatkan sisi di sebelah sudut A."
+        }
+      }
+    }
+  },
+  "ar": {
+    "messages": {
+      "positive": "الرجاء إدخال القيم الإيجابية.",
+      "angleRange": "يجب أن تكون زاوية A أكبر من 0° وأقل من 90°.",
+      "hypotenuseKnownSide": "يجب أن يكون الوتر c أكبر من الضلع المعلوم."
+    },
+    "runtime": {
+      "calculationSteps": {
+        "legFromHcSin": {
+          "title": "البحث عن الجانب الآخر a",
+          "description": "اضرب الوتر c في sin(A) لتحصل على الضلع المقابل للزاوية A."
+        },
+        "legFromHcCos": {
+          "title": "ابحث عن الجانب المجاور b",
+          "description": "اضرب الوتر c في cos(A) لتحصل على الضلع المجاور للزاوية A."
+        },
+        "legFromLegTan": {
+          "title": "البحث عن الجانب الآخر a",
+          "description": "اضرب الجانب المجاور b في tan(A) للحصول على الجانب المقابل من الزاوية A."
+        },
+        "legFromLegTanDiv": {
+          "title": "ابحث عن الجانب المجاور b",
+          "description": "اقسم الجانب المقابل a على tan(A) للحصول على الجانب المجاور للزاوية A."
+        }
+      }
+    }
+  },
+  "bg": {
+    "messages": {
+      "positive": "Моля, въведете положителни стойности.",
+      "angleRange": "Ъгълът A трябва да бъде по-голям от 0° и по-малък от 90°.",
+      "hypotenuseKnownSide": "Хипотенузата c трябва да е по-голяма от известната страна."
+    },
+    "runtime": {
+      "calculationSteps": {
+        "legFromHcSin": {
+          "title": "Намерете срещуположната страна a",
+          "description": "Умножете хипотенузата c по sin(A), за да получите страната срещу ъгъл A."
+        },
+        "legFromHcCos": {
+          "title": "Намерете съседната страна b",
+          "description": "Умножете хипотенузата c по cos(A), за да получите страната до ъгъл A."
+        },
+        "legFromLegTan": {
+          "title": "Намерете срещуположната страна a",
+          "description": "Умножете съседната страна b по tan(A), за да получите страната срещу ъгъл A."
+        },
+        "legFromLegTanDiv": {
+          "title": "Намерете съседната страна b",
+          "description": "Разделете противоположната страна a на tan(A), за да получите страната до ъгъл A."
+        }
+      }
+    }
+  },
+  "tr": {
+    "messages": {
+      "positive": "Lütfen pozitif değerler girin.",
+      "angleRange": "A açısı 0°'den büyük ve 90°'den küçük olmalıdır.",
+      "hypotenuseKnownSide": "Hipotenüs c bilinen kenardan büyük olmalıdır."
+    },
+    "runtime": {
+      "calculationSteps": {
+        "legFromHcSin": {
+          "title": "Karşı tarafı bulun a",
+          "description": "A açısından karşı tarafı elde etmek için c hipotenüsünü sin(A) ile çarpın."
+        },
+        "legFromHcCos": {
+          "title": "Bitişik kenarı bulun b",
+          "description": "A açısının yanındaki kenarı elde etmek için c hipotenüsünü cos(A) ile çarpın."
+        },
+        "legFromLegTan": {
+          "title": "Karşı tarafı bulun a",
+          "description": "A açısından karşı tarafı elde etmek için b komşu kenarını tan(A) ile çarpın."
+        },
+        "legFromLegTanDiv": {
+          "title": "Bitişik kenarı bulun b",
+          "description": "A açısının yanındaki tarafı elde etmek için a karşı kenarını tan(A)'ye bölün."
+        }
+      }
+    }
+  },
+  "sv": {
+    "messages": {
+      "positive": "Ange positiva värden.",
+      "angleRange": "Vinkeln A måste vara större än 0° och mindre än 90°.",
+      "hypotenuseKnownSide": "Hypotenusan c måste vara större än den kända sidan."
+    },
+    "runtime": {
+      "calculationSteps": {
+        "legFromHcSin": {
+          "title": "Hitta motsatt sida a",
+          "description": "Multiplicera hypotenusan c med sin(A) för att få sidan mot vinkeln A."
+        },
+        "legFromHcCos": {
+          "title": "Hitta intilliggande sida b",
+          "description": "Multiplicera hypotenusan c med cos(A) för att få sidan intill vinkeln A."
+        },
+        "legFromLegTan": {
+          "title": "Hitta motsatt sida a",
+          "description": "Multiplicera intilliggande sida b med tan(A) för att få sidan över från vinkeln A."
+        },
+        "legFromLegTanDiv": {
+          "title": "Hitta intilliggande sida b",
+          "description": "Dela motsatt sida a med tan(A) för att få sidan intill vinkeln A."
+        }
+      }
+    }
+  },
+  "zh": {
+    "messages": {
+      "positive": "请输入正值。",
+      "angleRange": "角度 A 必须大于 0° 且小于 90°。",
+      "hypotenuseKnownSide": "斜边 c 必须大于已知边。"
+    },
+    "runtime": {
+      "calculationSteps": {
+        "legFromHcSin": {
+          "title": "找到对边 a",
+          "description": "将斜边 c 乘以 sin(A)，得到角度 A 对面的边。"
+        },
+        "legFromHcCos": {
+          "title": "求邻边b",
+          "description": "将斜边 c 乘以 cos(A)，得到角 A 旁边的边。"
+        },
+        "legFromLegTan": {
+          "title": "找到对边 a",
+          "description": "将相邻边 b 乘以 tan(A)，得到角度 A 对面的边。"
+        },
+        "legFromLegTanDiv": {
+          "title": "求邻边b",
+          "description": "将对边 a 除以 tan(A)，得到角 A 旁边的边。"
+        }
+      }
+    }
+  }
+}

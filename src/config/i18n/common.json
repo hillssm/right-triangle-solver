@@ -40,7 +40,7 @@
       "switchLanguage": "Language"
     },
     "footer": {
-      "rights": "All rights reserved. © 2026",
+      "rights": "All rights reserved.",
       "sections": "Sections",
       "languages": "Languages"
     },
@@ -176,7 +176,7 @@
       "switchLanguage": "भाषा"
     },
     "footer": {
-      "rights": "सर्वाधिकार सुरक्षित। © 2026",
+      "rights": "सर्वाधिकार सुरक्षित।",
       "sections": "अनुभाग",
       "languages": "भाषाएं"
     },
@@ -312,7 +312,7 @@
       "switchLanguage": "Idioma"
     },
     "footer": {
-      "rights": "Todos los derechos reservados. © 2026"
+      "rights": "Todos los derechos reservados."
     },
     "solver": {
       "mainFormula": "Fórmula Principal",
@@ -446,7 +446,7 @@
       "switchLanguage": "Язык"
     },
     "footer": {
-      "rights": "Все права защищены. © 2026"
+      "rights": "Все права защищены."
     },
     "solver": {
       "mainFormula": "Основная формула",
@@ -580,7 +580,7 @@
       "switchLanguage": "Langue"
     },
     "footer": {
-      "rights": "Tous droits réservés. © 2026"
+      "rights": "Tous droits réservés."
     },
     "solver": {
       "mainFormula": "Formule Principale",
@@ -714,7 +714,7 @@
       "switchLanguage": "Sprache"
     },
     "footer": {
-      "rights": "Alle Rechte vorbehalten. © 2026"
+      "rights": "Alle Rechte vorbehalten."
     },
     "solver": {
       "mainFormula": "Hauptformel",
@@ -848,7 +848,7 @@
       "switchLanguage": "Lingua"
     },
     "footer": {
-      "rights": "Tutti i diritti riservati. © 2026"
+      "rights": "Tutti i diritti riservati."
     },
     "solver": {
       "mainFormula": "Formula Principale",
@@ -982,7 +982,7 @@
       "switchLanguage": "Idioma"
     },
     "footer": {
-      "rights": "Todos os direitos reservados. © 2026"
+      "rights": "Todos os direitos reservados."
     },
     "solver": {
       "mainFormula": "Fórmula Principal",
@@ -1116,7 +1116,7 @@
       "switchLanguage": "ভাষা"
     },
     "footer": {
-      "rights": "সর্বস্বত্ব সংরক্ষিত। © ২০২৬"
+      "rights": "সর্বস্বত্ব সংরক্ষিত।"
     },
     "solver": {
       "resultsTitle": "সমকোণী ত্রিভুজ সমাধানকারী ফলাফল",
@@ -1250,7 +1250,7 @@
       "switchLanguage": "言語"
     },
     "footer": {
-      "rights": "無断複写・転載を禁じます。© 2026"
+      "rights": "無断複写・転載を禁じます。"
     },
     "solver": {
       "mainFormula": "主な公式",
@@ -1384,7 +1384,7 @@
       "switchLanguage": "언어"
     },
     "footer": {
-      "rights": "모든 권리 보유. © 2026",
+      "rights": "모든 권리 보유.",
       "sections": "섹션",
       "languages": "언어"
     },
@@ -1520,7 +1520,7 @@
       "switchLanguage": "Bahasa"
     },
     "footer": {
-      "rights": "Hak cipta terpelihara. © 2026"
+      "rights": "Hak cipta terpelihara."
     },
     "solver": {
       "resultsTitle": "Keputusan Penyelesai Segi Tiga Kanan",
@@ -1654,7 +1654,7 @@
       "switchLanguage": "Język"
     },
     "footer": {
-      "rights": "Wszelkie prawa zastrzeżone. © 2026"
+      "rights": "Wszelkie prawa zastrzeżone."
     },
     "solver": {
       "mainFormula": "Główny wzór",
@@ -1788,7 +1788,7 @@
       "switchLanguage": "Bahasa"
     },
     "footer": {
-      "rights": "Hak cipta dilindungi undang-undang. © 2026"
+      "rights": "Hak cipta dilindungi undang-undang."
     },
     "solver": {
       "mainFormula": "Formula Utama",
@@ -1922,7 +1922,7 @@
       "switchLanguage": "اللغة"
     },
     "footer": {
-      "rights": "جميع الحقوق محفوظة. © 2026"
+      "rights": "جميع الحقوق محفوظة."
     },
     "solver": {
       "mainFormula": "الصيغة الرئيسية",
@@ -2056,7 +2056,7 @@
       "switchLanguage": "Език"
     },
     "footer": {
-      "rights": "Всички права запазени. © 2026"
+      "rights": "Всички права запазени."
     },
     "solver": {
       "resultsTitle": "Резултати от решаването на правоъгълен триъгълник",
@@ -2190,7 +2190,7 @@
       "switchLanguage": "Dil"
     },
     "footer": {
-      "rights": "Tüm hakları saklıdır. © 2026"
+      "rights": "Tüm hakları saklıdır."
     },
     "solver": {
       "mainFormula": "Ana Formül",
@@ -2324,7 +2324,7 @@
       "switchLanguage": "Språk"
     },
     "footer": {
-      "rights": "Alla rättigheter förbehållna. © 2026"
+      "rights": "Alla rättigheter förbehållna."
     },
     "solver": {
       "mainFormula": "Huvudformel",
@@ -2458,7 +2458,7 @@
       "switchLanguage": "语言"
     },
     "footer": {
-      "rights": "版权所有。© 2026"
+      "rights": "版权所有。"
     },
     "solver": {
       "mainFormula": "主公式",

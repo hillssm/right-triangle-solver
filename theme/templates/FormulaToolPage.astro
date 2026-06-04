@@ -98,7 +98,7 @@ const formulaPath = `${formulasRoot}${formula.slug}/`;
   <header class="mx-auto mb-8 w-full max-w-4xl">
     <p class="font-label text-xs uppercase tracking-widest text-primary">{displayCategory}</p>
     <h1 class="mt-3 text-3xl font-bold sm:text-4xl">{displayTitle}</h1>
-    <p class="mt-4 text-on-surface-variant max-w-3xl">{displayDescription}</p>
+    <p class="truncate mt-4 text-on-surface-variant max-w-3xl">{displayDescription}</p>
   </header>
 
   {formula.calculator && <FormulaCalculator formula={formula} locale={locale} />}

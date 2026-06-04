@@ -354,7 +354,7 @@
         const inputs = inputRefs as Record<CalculatorInputKey, HTMLInputElement>;
         const errors = errorRefs as Record<CalculatorInputKey, HTMLElement>;
         const origins = originRefs as Record<CalculatorInputKey, HTMLElement>;
-        const r = resultEls as Record<string, HTMLElement>;
+        const r = resultEls as unknown as Record<string, HTMLElement>;
 
         let angleMode: AngleMode = 'deg';
         let unit: UnitOption = '';
@@ -597,7 +597,7 @@
           } catch (error) {
             const msg = error instanceof Error ? error.message : 'Unable to solve.';
             const lowMsg = msg.toLowerCase();
-            let targetKey = null;
+            let targetKey: CalculatorInputKey | null = null;
 
             if (lowMsg.includes('c must be larger than side a') || lowMsg.includes('c must be greater than leg a') || lowMsg.includes('hypotenuse c must be')) targetKey = 'c';
             else if (lowMsg.includes('c must be larger than side b') || lowMsg.includes('c must be greater than leg b')) targetKey = 'c';

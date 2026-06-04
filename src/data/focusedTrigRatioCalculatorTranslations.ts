@@ -2417,3 +2417,16 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS = {
     },
   },
 };
+
+import type { FocusedTrigRatioCalculatorPage } from './focusedTrigRatioCalculatorPages';
+import type { Locale } from 'theme/i18n/locales';
+
+export function localizeFocusedTrigRatioCalculatorPage(
+  page: FocusedTrigRatioCalculatorPage,
+  locale: Locale
+): FocusedTrigRatioCalculatorPage {
+  const translations: any = FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS;
+  const translation = translations[locale]?.[page.slug];
+  if (!translation) return page;
+  return { ...page, ...translation };
+}

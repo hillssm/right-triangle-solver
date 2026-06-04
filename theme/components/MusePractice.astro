@@ -17,9 +17,9 @@ const {
   locale
 } = Astro.props;
 
-const bundle = getTranslations(locale);
-const practice = (bundle.practice as any) || {};
-const solver = (bundle.solver as any) || {};
+const bundle = getTranslations(locale as any);
+const practice = (bundle.content?.practice as any) || {};
+const solver = (bundle.content?.solver as any) || {};
 
 const diffMap = {
   1: practice.easy || 'Easy',

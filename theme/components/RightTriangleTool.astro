@@ -54,7 +54,7 @@ import { getTranslations } from '../i18n/translations';
 
 const { heading, locale = 'en', shellClass = 'section-shell', labels = {} } = Astro.props;
 const bundle = getTranslations(locale as any);
-const units = bundle.units || {};
+const units = (bundle.common?.units as any) || {};
 
 // Default labels in English for fallback
 const l = {

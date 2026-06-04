@@ -6,6 +6,7 @@ import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
+import { formatListItem } from 'src/utils/formatList';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 
@@ -73,6 +74,218 @@ const renderMath = (expression: string, displayMode = true) =>
     throwOnError: false,
     displayMode
   });
+
+type ProjectionPageStructure = {
+  formulaHeading: string;
+  diagramHeading: string;
+  knownValues: string;
+  finds: string;
+  mainFormula: string;
+  bestFor: string;
+  exampleHeading: string;
+  exampleLines: string[];
+  whyFormulaWorks: string[];
+  additionalExample: {
+    h2: string;
+    intro: string;
+    listItems: string[];
+  };
+  diagramKey: {
+    label: string;
+    description: string;
+  }[];
+};
+
+const projectionPageStructure: Record<string, ProjectionPageStructure> = {
+  'right-triangle-projection-p-calculator': {
+    formulaHeading: 'Right Triangle Projection p Formula',
+    diagramHeading: 'Triangle Diagram: Projection p on the Hypotenuse',
+    knownValues: 'Leg a and hypotenuse c',
+    finds: 'Projection p, the hypotenuse segment paired with leg a',
+    mainFormula: 'p = a\u00b2 / c',
+    bestFor: 'Finding the p segment without solving the full triangle',
+    exampleHeading: 'Worked Example: Find Projection p From a = 6 and c = 10',
+    exampleLines: ['p = a^2 / c', 'p = 6^2 / 10', 'p = 36 / 10', 'p = 3.6'],
+    whyFormulaWorks: [
+      'Dropping altitude h to the hypotenuse creates smaller right triangles that are similar to the original triangle.',
+      'From those similar triangles, leg a is the geometric mean between the full hypotenuse c and projection p. That gives a\u00b2 = c \u00d7 p, and solving for p gives p = a\u00b2 / c.'
+    ],
+    additionalExample: {
+      h2: 'Additional Example: Projection p With Decimal Result',
+      intro: 'Suppose leg a = 7 and hypotenuse c = 14.',
+      listItems: [
+        'p = 7\u00b2 / 14',
+        'p = 49 / 14',
+        'p = 3.5 units',
+        'Projection p takes 3.5 units of the hypotenuse.'
+      ]
+    },
+    diagramKey: [
+      { label: 'a = leg paired with p', description: 'Leg a is the known leg used in this calculator.' },
+      { label: 'b = other leg', description: 'Leg b is shown for orientation, but it is not entered here.' },
+      { label: 'c = full hypotenuse', description: 'c is the longest side and must be greater than leg a.' },
+      { label: 'p = projection result', description: 'p is the segment on the hypotenuse associated with leg a.' },
+      { label: 'q = other projection', description: 'q is the remaining hypotenuse segment.' },
+      { label: 'h = altitude', description: 'h divides the hypotenuse into p and q.' }
+    ]
+  },
+  'right-triangle-projection-q-calculator': {
+    formulaHeading: 'Right Triangle Projection q Formula',
+    diagramHeading: 'Triangle Diagram: Projection q on the Hypotenuse',
+    knownValues: 'Leg b and hypotenuse c',
+    finds: 'Projection q, the hypotenuse segment paired with leg b',
+    mainFormula: 'q = b\u00b2 / c',
+    bestFor: 'Finding the q segment from the leg b side of the triangle',
+    exampleHeading: 'Worked Example: Find Projection q From b = 8 and c = 10',
+    exampleLines: ['q = b^2 / c', 'q = 8^2 / 10', 'q = 64 / 10', 'q = 6.4'],
+    whyFormulaWorks: [
+      'The altitude to the hypotenuse splits the original right triangle into two smaller triangles with the same angle relationships.',
+      'That similarity links leg b with the full hypotenuse c and its projection q. The relation is b\u00b2 = c \u00d7 q, so q = b\u00b2 / c.'
+    ],
+    additionalExample: {
+      h2: 'Additional Example: Projection q From a Larger Triangle',
+      intro: 'Suppose leg b = 12 and hypotenuse c = 15.',
+      listItems: [
+        'q = 12\u00b2 / 15',
+        'q = 144 / 15',
+        'q = 9.6 units',
+        'Projection q is 9.6 units along the hypotenuse.'
+      ]
+    },
+    diagramKey: [
+      { label: 'a = other leg', description: 'Leg a is part of the triangle but is not used in the q calculation.' },
+      { label: 'b = leg paired with q', description: 'Leg b is the known leg used to find q.' },
+      { label: 'c = full hypotenuse', description: 'c is the longest side and must be greater than leg b.' },
+      { label: 'p = other projection', description: 'p is the projection associated with leg a.' },
+      { label: 'q = projection result', description: 'q is the segment associated with leg b.' },
+      { label: 'h = altitude', description: 'h marks the split point between p and q.' }
+    ]
+  },
+  'right-triangle-leg-a-from-projection-calculator': {
+    formulaHeading: 'Right Triangle Leg a From Projection Formula',
+    diagramHeading: 'Triangle Diagram: Leg a From Projection p',
+    knownValues: 'Hypotenuse c and projection p',
+    finds: 'Leg a, the side paired with projection p',
+    mainFormula: 'a = \u221a(c \u00d7 p)',
+    bestFor: 'Recovering leg a from a hypotenuse projection',
+    exampleHeading: 'Worked Example: Find Leg a From c = 10 and p = 3.6',
+    exampleLines: [
+      'a = \\sqrt{c \\times p}',
+      'a = \\sqrt{10 \\times 3.6}',
+      'a = \\sqrt{36}',
+      'a = 6'
+    ],
+    whyFormulaWorks: [
+      'Projection p is tied to leg a through similar triangles formed by the altitude to the hypotenuse.',
+      'The theorem says a\u00b2 = c \u00d7 p. Multiplying c by p gives the squared side length, so the final step is taking the square root to get a.'
+    ],
+    additionalExample: {
+      h2: 'Additional Example: Leg a From c and p',
+      intro: 'Suppose hypotenuse c = 20 and projection p = 5.',
+      listItems: [
+        'a = \u221a(20 \u00d7 5)',
+        'a = \u221a100',
+        'a = 10 units',
+        'The result is a side length, not a squared value.'
+      ]
+    },
+    diagramKey: [
+      { label: 'a = leg result', description: 'Leg a is the side this calculator finds.' },
+      { label: 'b = other leg', description: 'Leg b is shown to complete the right triangle.' },
+      { label: 'c = full hypotenuse', description: 'c is known and must be greater than projection p.' },
+      { label: 'p = known projection', description: 'p is the hypotenuse segment paired with leg a.' },
+      { label: 'q = other projection', description: 'q is not entered, but it is the remaining part of c.' },
+      { label: 'h = altitude', description: 'h creates the projection segments on the hypotenuse.' }
+    ]
+  },
+  'right-triangle-leg-b-from-projection-calculator': {
+    formulaHeading: 'Right Triangle Leg b From Projection Formula',
+    diagramHeading: 'Triangle Diagram: Leg b From Projection q',
+    knownValues: 'Hypotenuse c and projection q',
+    finds: 'Leg b, the side paired with projection q',
+    mainFormula: 'b = \u221a(c \u00d7 q)',
+    bestFor: 'Recovering leg b from its hypotenuse projection',
+    exampleHeading: 'Worked Example: Find Leg b From c = 10 and q = 6.4',
+    exampleLines: [
+      'b = \\sqrt{c \\times q}',
+      'b = \\sqrt{10 \\times 6.4}',
+      'b = \\sqrt{64}',
+      'b = 8'
+    ],
+    whyFormulaWorks: [
+      'The altitude from the right angle creates similar triangles, and projection q belongs to the same side relationship as leg b.',
+      'That relationship is b\u00b2 = c \u00d7 q. After multiplying c and q, the square root changes b\u00b2 into the actual leg length b.'
+    ],
+    additionalExample: {
+      h2: 'Additional Example: Leg b From c and q',
+      intro: 'Suppose hypotenuse c = 25 and projection q = 9.',
+      listItems: [
+        'b = \u221a(25 \u00d7 9)',
+        'b = \u221a225',
+        'b = 15 units',
+        'Leg b is shorter than the hypotenuse, as it should be.'
+      ]
+    },
+    diagramKey: [
+      { label: 'a = other leg', description: 'Leg a is shown but is not part of this calculation.' },
+      { label: 'b = leg result', description: 'Leg b is the side this calculator finds.' },
+      { label: 'c = full hypotenuse', description: 'c is known and must be greater than projection q.' },
+      { label: 'p = other projection', description: 'p is the segment paired with leg a.' },
+      { label: 'q = known projection', description: 'q is the hypotenuse segment paired with leg b.' },
+      { label: 'h = altitude', description: 'h separates projection p from projection q.' }
+    ]
+  },
+  'right-triangle-hypotenuse-from-projections-calculator': {
+    formulaHeading: 'Right Triangle Hypotenuse From Projections Formula',
+    diagramHeading: 'Triangle Diagram: Hypotenuse From p and q',
+    knownValues: 'Projection p and projection q',
+    finds: 'Hypotenuse c, the full side made from both projections',
+    mainFormula: 'c = p + q',
+    bestFor: 'Adding the two hypotenuse segments into one full length',
+    exampleHeading: 'Worked Example: Find Hypotenuse c From p = 3.6 and q = 6.4',
+    exampleLines: ['c = p + q', 'c = 3.6 + 6.4', 'c = 10'],
+    whyFormulaWorks: [
+      'The altitude touches the hypotenuse at one point, dividing the same straight side into two adjacent segments.',
+      'Since p and q are neighboring pieces of c, the whole hypotenuse is their sum. That is why the formula is c = p + q.'
+    ],
+    additionalExample: {
+      h2: 'Additional Example: Hypotenuse From Two Projection Segments',
+      intro: 'Suppose projection p = 5 and projection q = 12.',
+      listItems: [
+        'c = p + q',
+        'c = 5 + 12',
+        'c = 17 units',
+        'The two projection segments combine to make the full hypotenuse.'
+      ]
+    },
+    diagramKey: [
+      { label: 'a = leg paired with p', description: 'Leg a is shown to identify the p side of the split.' },
+      { label: 'b = leg paired with q', description: 'Leg b is shown to identify the q side of the split.' },
+      { label: 'c = hypotenuse result', description: 'c is the full side found by adding p and q.' },
+      { label: 'p = first projection', description: 'p is one part of the hypotenuse.' },
+      { label: 'q = second projection', description: 'q is the other part of the hypotenuse.' },
+      { label: 'h = altitude', description: 'h marks where the hypotenuse is divided.' }
+    ]
+  }
+};
+
+const pageStructure = projectionPageStructure[page.slug];
+
+if (!pageStructure) {
+  throw new Error(`Missing projection page structure for ${page.slug}`);
+}
+
+const calculatorName = page.h1.replace(/\s+Calculator$/, '');
+const calculatorHeading = `Calculate ${calculatorName}`;
+const howItWorksHeading = `How This ${calculatorName} Calculator Works`;
+const introText = page.intro[0];
+const howItWorksIntro = page.intro[1] || page.calculatorNote;
+const quickSummaryCards = [
+  { label: 'Known values', value: pageStructure.knownValues },
+  { label: 'Finds', value: pageStructure.finds },
+  { label: 'Main formula', value: pageStructure.mainFormula },
+  { label: 'Best for', value: pageStructure.bestFor }
+];
 ---
 
 <BaseLayout
@@ -118,26 +331,36 @@ const renderMath = (expression: string, displayMode = true) =>
       Projection Calculator
     </p>
     <h1 class="mt-3 break-words text-3xl font-bold leading-tight sm:text-4xl">{page.h1}</h1>
-    <div class="mt-4 grid gap-3 text-on-surface-variant">
-      {page.intro.map((paragraph) => (
-        <p class="max-w-3xl break-words leading-relaxed">{paragraph}</p>
-      ))}
-    </div>
+    <p class="truncate mt-4 max-w-3xl break-words text-on-surface-variant">{introText}</p>
   </header>
-
-  <section class="mx-auto mb-8 w-full max-w-4xl section-shell">
-    <p class="text-sm leading-relaxed text-on-surface-variant">{page.calculatorNote}</p>
-  </section>
 
   <FormulaCalculator
     formula={page.formula}
     locale={locale}
-    heading={page.calculatorHeading}
+    heading={calculatorHeading}
     messages={calculatorMessages}
   />
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>Formula</h2>
+    <h2>{howItWorksHeading}</h2>
+    <p>{howItWorksIntro}</p>
+    <p>{page.calculatorNote}</p>
+    <div class="not-prose mt-5 grid gap-3 sm:grid-cols-2">
+      {quickSummaryCards.map((card) => (
+        <div class="min-w-0 rounded-lg border border-outline-variant/25 bg-surface-container-lowest/55 p-4">
+          <p class="font-label text-[11px] uppercase tracking-widest text-primary">
+            {card.label}
+          </p>
+          <p class="mt-2 break-words text-sm leading-relaxed text-on-surface-variant">
+            {card.value}
+          </p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>{pageStructure.formulaHeading}</h2>
     <div class="not-prose mt-4 grid gap-3">
       {page.formulaSection.formulas.map((expression) => (
         <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
@@ -152,26 +375,22 @@ const renderMath = (expression: string, displayMode = true) =>
     {page.formulaSection.paragraphs.map((paragraph) => (
       <p>{paragraph}</p>
     ))}
-    <ul>
-      {page.formulaSection.validation.map((item) => (
-        <li>{item}</li>
-      ))}
-    </ul>
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-    <h2 class="text-2xl font-semibold">Triangle Diagram</h2>
-    <p class="mt-3 max-w-3xl leading-relaxed text-on-surface-variant">{page.diagram.intro}</p>
+    <h2 class="text-2xl font-semibold">{pageStructure.diagramHeading}</h2>
+    <p class="mt-3 leading-relaxed text-on-surface-variant">{page.diagram.intro}</p>
 
-    <figure class="mt-5">
-      <div class="overflow-x-auto rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-3">
+    <div class="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(14rem,0.85fr)] lg:items-start">
+      <div class="min-w-0">
+        <div class="overflow-x-auto rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-3">
         <svg
           class="mx-auto block h-auto min-w-[560px] max-w-full"
           viewBox="0 0 620 390"
           role="img"
           aria-labelledby={`${page.slug}-diagram-title ${page.slug}-diagram-desc`}
         >
-          <title id={`${page.slug}-diagram-title`}>Triangle Diagram</title>
+          <title id={`${page.slug}-diagram-title`}>{pageStructure.diagramHeading}</title>
           <desc id={`${page.slug}-diagram-desc`}>{page.diagram.caption}</desc>
           <rect
             x="16"
@@ -243,38 +462,60 @@ const renderMath = (expression: string, displayMode = true) =>
           <circle cx="250" cy="300" r="4" fill="var(--color-tertiary)" />
           <circle cx="530" cy="300" r="4" fill="var(--color-outline)" />
           <circle cx="250" cy="88" r="4" fill="var(--color-primary)" />
-        </svg>
+          </svg>
+        </div>
+        <p class="mt-3 text-sm text-on-surface-variant">{page.diagram.caption}</p>
       </div>
-      <figcaption class="mt-3 text-sm text-on-surface-variant">{page.diagram.caption}</figcaption>
-    </figure>
 
-    <ul class="mt-4 grid gap-2 text-sm text-on-surface-variant sm:grid-cols-3">
-      {page.diagram.notes.map((note) => (
-        <li class="rounded-lg border border-outline-variant/20 bg-surface-container-lowest/45 p-3">{note}</li>
-      ))}
-    </ul>
+      <div class="min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/50 p-4">
+        <p class="font-label text-[11px] uppercase tracking-widest text-primary">
+          Diagram Key
+        </p>
+        <div class="mt-4 grid gap-3">
+          {pageStructure.diagramKey.map((item) => (
+            <div class="min-w-0 rounded-md border border-outline-variant/25 bg-surface-container-low/70 p-3">
+              <p class="break-words font-semibold text-on-surface">{item.label}</p>
+              <p class="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
+        <ul class="mt-4 grid gap-2 text-sm leading-relaxed text-on-surface-variant">
+          {page.diagram.notes.map((note) => (
+            <li class="min-w-0 rounded-md border border-outline-variant/20 bg-surface-container-low/50 px-3 py-2">
+              {note}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>How to Use This Calculator</h2>
     <ol>
       {page.howTo.map((step) => (
-        <li>{step}</li>
+        <li set:html={formatListItem(step)} />
       ))}
     </ol>
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>Step-by-Step Example</h2>
+    <h2>{pageStructure.exampleHeading}</h2>
     <p>{page.example.intro}</p>
-    <div class="not-prose mt-4 rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 p-4">
-      <ol class="grid gap-2">
-        {page.example.lines.map((line) => (
-          <li class="math-textbook text-lg text-on-surface" dir="ltr">{line}</li>
+    <div class="not-prose mt-5 min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
+      <div class="grid gap-2">
+        {pageStructure.exampleLines.map((line) => (
+          <div
+            class="math-textbook min-w-max text-lg text-on-surface"
+            dir="ltr"
+            set:html={renderMath(line, false)}
+          />
         ))}
-      </ol>
+      </div>
     </div>
-    <p>{page.example.explanation}</p>
+    <p class="mt-4">{page.example.explanation}</p>
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
@@ -286,29 +527,57 @@ const renderMath = (expression: string, displayMode = true) =>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>When to Use This Calculator</h2>
+    <p>This method is useful when your known values match this projection relation and you want a direct result.</p>
+    <h3>Common situations where this calculator helps:</h3>
     <ul>
       {page.whenUse.map((item) => (
-        <li>{item}</li>
+        <li set:html={formatListItem(item)} />
       ))}
     </ul>
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>Why This Formula Works</h2>
+    {pageStructure.whyFormulaWorks.map((paragraph) => (
+      <p>{paragraph}</p>
+    ))}
+  </section>
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>Common Mistakes</h2>
+    <p>Projection formulas are short, but it is easy to use the wrong segment or stop one step early. Check these points before trusting the result.</p>
     <ul>
       {page.commonMistakes.map((item) => (
-        <li>{item}</li>
+        <li set:html={formatListItem(item)} />
       ))}
     </ul>
   </section>
 
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>{pageStructure.additionalExample.h2}</h2>
+    <p>{pageStructure.additionalExample.intro}</p>
+    <ul>
+      {pageStructure.additionalExample.listItems.map((item) => (
+        <li set:html={formatListItem(item)} />
+      ))}
+    </ul>
+  </section>
+
+  <div class="mx-auto mt-8 w-full max-w-4xl">
+    <Faq
+      heading="Frequently Asked Questions"
+      description="Answers to common questions about right-triangle projection calculations."
+      items={page.faqs}
+    />
+  </div>
+
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
     <h2 class="text-2xl font-semibold">Related Calculators</h2>
-    <div class="mt-5 grid gap-4 sm:grid-cols-2">
+    <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {page.relatedLinks.map((link) => (
         <a
           href={localizePath(locale, link.href)}
-          class="group rounded-lg border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
+          class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
         >
           <h3 class="break-words text-base font-semibold text-on-surface group-hover:text-primary">
             {link.label}
@@ -320,12 +589,4 @@ const renderMath = (expression: string, displayMode = true) =>
       ))}
     </div>
   </section>
-
-  <div class="mx-auto mt-8 w-full max-w-4xl">
-    <Faq
-      heading="FAQs"
-      description="Short answers to common questions about this projection calculator."
-      items={page.faqs}
-    />
-  </div>
 </BaseLayout>

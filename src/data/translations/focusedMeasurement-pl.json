@@ -151,8 +151,8 @@
         "listTitle": "Wzory dla każdego przypadku brakującej strony:",
         "listItems": [
           "Jeśli brakuje c: c = √(a² + b²), to P = a + b + √(a² + b²)",
-          "Jeżeli brakuje b: b = √(c² – a²), to P = a + √(c² – a²) + c",
-          "Jeżeli brakuje a: a = √(c² – b²), to P = √(c² – b²) + b + c",
+          "Jeżeli brakuje b: b = √(c² - a²), to P = a + √(c² - a²) + c",
+          "Jeżeli brakuje a: a = √(c² - b²), to P = √(c² - b²) + b + c",
           "Zawsze sprawdzaj, czy c > a i c > b, gdy używasz formy odejmowania, w przeciwnym razie wartości nie tworzą prawidłowego trójkąta prostokątnego."
         ]
       },
@@ -218,7 +218,7 @@
         "h2": "Związek między obwodem a półobwodem",
         "paragraphs": [
           "Półobwód (s) to dokładnie połowa obwodu: s = P / 2 = (a + b + c) / 2. Podczas gdy obwód podaje całkowitą długość granicy, półobwód jest wygodną wartością używaną w bardziej zaawansowanych wzorach.",
-          "Półobwód pojawia się we wzorze Herona na pole trójkąta: A = √[s(s–a)(s–b)(s–c)]. Służy również do obliczania promienia (promień okręgu wpisanego): r = A / s. Zatem obwód jest punktem wyjścia dla kilku ważnych obliczeń trójkąta.",
+          "Półobwód pojawia się we wzorze Herona na pole trójkąta: A = √[s(s-a)(s-b)(s-c)]. Służy również do obliczania promienia (promień okręgu wpisanego): r = A / s. Zatem obwód jest punktem wyjścia dla kilku ważnych obliczeń trójkąta.",
           "Jeśli obliczyłeś już obwód za pomocą tego narzędzia, możesz znaleźć półobwód, dzieląc wynik przez 2 lub korzystając z naszego dedykowanego kalkulatora półobwodu."
         ]
       },
@@ -302,7 +302,7 @@
       },
       {
         "question": "Czy mogę znaleźć obwód mający tylko dwa boki?",
-        "answer": "Tak, ale najpierw musisz obliczyć brakującą trzecią stronę, korzystając z twierdzenia Pitagorasa: c = √(a² + b²) w przypadku braku przeciwprostokątnej lub brakująca odnoga = √(c² – znana noga²). Następnie dodaj wszystkie trzy boki, aby uzyskać obwód."
+        "answer": "Tak, ale najpierw musisz obliczyć brakującą trzecią stronę, korzystając z twierdzenia Pitagorasa: c = √(a² + b²) w przypadku braku przeciwprostokątnej lub brakująca odnoga = √(c² - znana noga²). Następnie dodaj wszystkie trzy boki, aby uzyskać obwód."
       },
       {
         "question": "Czy obwód to to samo co pole?",
@@ -512,7 +512,7 @@
         ]
       },
       {
-        "h2": "Przykład 3 – Długości boków dziesiętnych",
+        "h2": "Przykład 3 - Długości boków dziesiętnych",
         "paragraphs": [
           "Ułamki dziesiętne działają tak samo jak liczby całkowite. Biorąc pod uwagę a = 2,5, b = 6 i c = 6,5:"
         ],

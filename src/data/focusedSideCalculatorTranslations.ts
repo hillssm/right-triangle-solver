@@ -1239,7 +1239,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "sides": {
           "a": {
             "label": "a = известно",
-            "description": "Нога a – это одна из двух сторон, образующая прямой угол.",
+            "description": "Нога a - это одна из двух сторон, образующая прямой угол.",
             "status": "known"
           },
           "b": {
@@ -1748,7 +1748,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         {
           "h2": "Распространенные ошибки",
           "paragraphs": [
-            "Самый большой риск – поменять местами гипотенузу с катетом. В этом калькуляторе предполагается, что c уже является самой длинной стороной, поэтому неверно указанное значение c сделает результат неверным.",
+            "Самый большой риск - поменять местами гипотенузу с катетом. В этом калькуляторе предполагается, что c уже является самой длинной стороной, поэтому неверно указанное значение c сделает результат неверным.",
             "Вторая распространенная проблема - ошибочное использование формулы гипотенузы. Чтобы найти недостающий катет, вы вычитаете известный квадрат катета из квадрата гипотенузы, а затем извлекаете квадратный корень."
           ],
           "listTitle": "Избегайте этих ошибок:",
@@ -2006,7 +2006,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "Calculatrice: Côté manquant par c et a | Right Triangle Solver",
       "metaDescription": "Trouvez le côté b lorsque l'hypoténuse c et l'autre côté a sont connus.",
       "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "N'oubliez pas: c est toujours l'hypoténuse – le côté le plus long, opposé à l'angle droit. Ce n'est pas une cote. Si vous avez deux cotes et avez besoin de l'hypoténuse à la place, utilisez la calculatrice du théorème de Pythagore.",
+      "toolPurpose": "N'oubliez pas: c est toujours l'hypoténuse - le côté le plus long, opposé à l'angle droit. Ce n'est pas une cote. Si vous avez deux cotes et avez besoin de l'hypoténuse à la place, utilisez la calculatrice du théorème de Pythagore.",
       "intro": "Trouvez le côté b lorsque l'hypoténuse c et l'autre côté a sont connus.",
       "quickSummary": {
         "h2": "Ce que résout ce calculateur de cote manquante",
@@ -2406,7 +2406,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "Rechner: Satz des Pythagoras | Right Triangle Solver",
       "metaDescription": "Finden Sie die Hypotenuse, wenn beide Katheten bekannt sind. Dies ist die primäre Identität für jedes rechtwinklige Dreieck.",
       "formulaSlug": "pythagorean-theorem",
-      "toolPurpose": "Egal, ob Sie eine Hausaufgabe lösen oder im echten Leben eine Diagonale messen, dieses Tool liefert Ihnen in Sekundenschnelle die Antwort – mit der vollständigen Lösung Schritt für Schritt.",
+      "toolPurpose": "Egal, ob Sie eine Hausaufgabe lösen oder im echten Leben eine Diagonale messen, dieses Tool liefert Ihnen in Sekundenschnelle die Antwort - mit der vollständigen Lösung Schritt für Schritt.",
       "intro": "Finden Sie die Hypotenuse, wenn beide Katheten bekannt sind. Dies ist die primäre Identität für jedes rechtwinklige Dreieck.",
       "quickSummary": {
         "h2": "Was dieser pythagoräische Rechner löst",
@@ -2476,7 +2476,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "h2": "Formel des Satzes des Pythagoras",
         "paragraphs": [
           "Der Satz des Pythagoras besagt, dass in einem rechtwinkligen Dreieck das Quadrat der Hypotenuse gleich der Summe der Quadrate der beiden Schenkel ist. Um die Hypotenuse zu ermitteln, ziehen Sie die Quadratwurzel aus beiden Seiten.",
-          "In dieser Formel sind a und b die beiden Schenkel des rechtwinkligen Dreiecks – die Seiten, die den rechten Winkel bilden. c ist die Hypotenuse, die längste Seite gegenüber dem rechten Winkel. Diese Formel funktioniert nur für rechtwinklige Dreiecke."
+          "In dieser Formel sind a und b die beiden Schenkel des rechtwinkligen Dreiecks - die Seiten, die den rechten Winkel bilden. c ist die Hypotenuse, die längste Seite gegenüber dem rechten Winkel. Diese Formel funktioniert nur für rechtwinklige Dreiecke."
         ],
         "formulas": [
           "c^2 = a^2 + b^2",
@@ -2582,7 +2582,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Was bedeutet c in der Formel?",
-          "answer": "In der Formel c² = a² + b² ist c die Hypotenuse – die längste Seite des rechtwinkligen Dreiecks. Es ist die Seite direkt gegenüber dem 90°-Winkel."
+          "answer": "In der Formel c² = a² + b² ist c die Hypotenuse - die längste Seite des rechtwinkligen Dreiecks. Es ist die Seite direkt gegenüber dem 90°-Winkel."
         },
         {
           "question": "Kann ich diesen Rechner für jedes Dreieck verwenden?",
@@ -2594,7 +2594,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Was sind a und b in einem rechtwinkligen Dreieck?",
-          "answer": "a und b sind die beiden Katheten – die Seiten, die den rechten Winkel bilden. Sie können jede positive Länge haben und es spielt keine Rolle, welche Sie a oder b nennen. Die Hypotenuse (c) ist immer die verbleibende Seite."
+          "answer": "a und b sind die beiden Katheten - die Seiten, die den rechten Winkel bilden. Sie können jede positive Länge haben und es spielt keine Rolle, welche Sie a oder b nennen. Die Hypotenuse (c) ist immer die verbleibende Seite."
         }
       ]
     },
@@ -2605,7 +2605,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "Rechner: Fehlende Kathete b aus c und a | Right Triangle Solver",
       "metaDescription": "Finden Sie die Kathete b, wenn die Hypotenuse c und die andere Kathete a bekannt sind.",
       "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "Denken Sie daran: c ist immer die Hypotenuse – die längste Seite, gegenüber dem rechten Winkel. Es ist kein Kathete. Wenn Sie zwei Katheten haben und stattdessen die Hypotenuse benötigen, verwenden Sie den Rechner zum Satz des Pythagoras.",
+      "toolPurpose": "Denken Sie daran: c ist immer die Hypotenuse - die längste Seite, gegenüber dem rechten Winkel. Es ist kein Kathete. Wenn Sie zwei Katheten haben und stattdessen die Hypotenuse benötigen, verwenden Sie den Rechner zum Satz des Pythagoras.",
       "intro": "Finden Sie die Kathete b, wenn die Hypotenuse c und die andere Kathete a bekannt sind.",
       "quickSummary": {
         "h2": "Was dieser Rechner für fehlende Katheten löst",
@@ -2777,7 +2777,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "Was bedeutet c in diesem Rechner?",
-          "answer": "c ist die Hypotenuse des rechtwinkligen Dreiecks – die längste Seite, die dem Winkel 90° gegenüberliegt. Es ist kein Kathete. Sie geben c als einen der beiden bekannten Werte in diesen Rechner ein."
+          "answer": "c ist die Hypotenuse des rechtwinkligen Dreiecks - die längste Seite, die dem Winkel 90° gegenüberliegt. Es ist kein Kathete. Sie geben c als einen der beiden bekannten Werte in diesen Rechner ein."
         },
         {
           "question": "Was bedeutet a in diesem Rechner?",
@@ -2976,7 +2976,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "Was bedeutet c in diesem Rechner?",
-          "answer": "c ist die Hypotenuse – die längste Seite des rechtwinkligen Dreiecks, gegenüber dem Winkel 90°. In diesem Rechner geben Sie c als einen Ihrer beiden bekannten Werte ein."
+          "answer": "c ist die Hypotenuse - die längste Seite des rechtwinkligen Dreiecks, gegenüber dem Winkel 90°. In diesem Rechner geben Sie c als einen Ihrer beiden bekannten Werte ein."
         },
         {
           "question": "Was bedeutet b in diesem Rechner?",
@@ -3674,7 +3674,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "h2": "Fórmula do Teorema de Pitágoras",
         "paragraphs": [
           "O teorema de Pitágoras afirma que em um triângulo retângulo, o quadrado da hipotenusa é igual à soma dos quadrados dos dois catetos. Para resolver a hipotenusa, tire a raiz quadrada de ambos os lados.",
-          "Nesta fórmula, a e b são os dois catetos do triângulo retângulo – os lados que formam o ângulo reto. c é a hipotenusa, o lado mais longo, oposto ao ângulo reto. Esta fórmula só funciona para triângulos retângulos."
+          "Nesta fórmula, a e b são os dois catetos do triângulo retângulo - os lados que formam o ângulo reto. c é a hipotenusa, o lado mais longo, oposto ao ângulo reto. Esta fórmula só funciona para triângulos retângulos."
         ],
         "formulas": [
           "c^2 = a^2 + b^2",
@@ -3780,7 +3780,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "O que c significa na fórmula?",
-          "answer": "Na fórmula c² = a² + b², c é a hipotenusa – o lado mais longo do triângulo retângulo. É o lado diretamente oposto ao ângulo 90°."
+          "answer": "Na fórmula c² = a² + b², c é a hipotenusa - o lado mais longo do triângulo retângulo. É o lado diretamente oposto ao ângulo 90°."
         },
         {
           "question": "Posso usar esta calculadora para qualquer triângulo?",
@@ -3792,7 +3792,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "O que são a e b em um triângulo retângulo?",
-          "answer": "a e b são as duas catetos – os lados que formam o ângulo reto. Eles podem ter qualquer comprimento positivo e não importa qual deles você chama de a ou b. A hipotenusa (c) é sempre o lado restante."
+          "answer": "a e b são as duas catetos - os lados que formam o ângulo reto. Eles podem ter qualquer comprimento positivo e não importa qual deles você chama de a ou b. A hipotenusa (c) é sempre o lado restante."
         }
       ]
     },
@@ -3975,7 +3975,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "O que c significa nesta calculadora?",
-          "answer": "c é a hipotenusa do triângulo retângulo – o lado mais longo, localizado oposto ao ângulo 90°. Não é uma cateto. Você insere c como um dos dois valores conhecidos nesta calculadora."
+          "answer": "c é a hipotenusa do triângulo retângulo - o lado mais longo, localizado oposto ao ângulo 90°. Não é uma cateto. Você insere c como um dos dois valores conhecidos nesta calculadora."
         },
         {
           "question": "O que significa nesta calculadora?",
@@ -4174,7 +4174,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "faqs": [
         {
           "question": "O que c significa nesta calculadora?",
-          "answer": "c é a hipotenusa – o lado mais longo do triângulo retângulo, oposto ao ângulo 90°. Nesta calculadora, você insere c como um dos seus dois valores conhecidos."
+          "answer": "c é a hipotenusa - o lado mais longo do triângulo retângulo, oposto ao ângulo 90°. Nesta calculadora, você insere c como um dos seus dois valores conhecidos."
         },
         {
           "question": "O que b significa nesta calculadora?",
@@ -9594,7 +9594,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
       "metaTitle": "Kalkylator: Pythagoras sats | Right Triangle Solver",
       "metaDescription": "Hitta hypotenusan när båda kateterna är kända. Detta är den grundläggande identiteten för varje rätvinklig triangel.",
       "formulaSlug": "pythagorean-theorem",
-      "toolPurpose": "Oavsett om du löser ett läxproblem eller mäter en diagonal i verkligheten, ger det här verktyget dig svaret på några sekunder – med hela lösningen steg för steg.",
+      "toolPurpose": "Oavsett om du löser ett läxproblem eller mäter en diagonal i verkligheten, ger det här verktyget dig svaret på några sekunder - med hela lösningen steg för steg.",
       "intro": "Hitta hypotenusan när båda kateterna är kända. Detta är den grundläggande identiteten för varje rätvinklig triangel.",
       "quickSummary": {
         "h2": "Vad den här Pythagoras-kalkylatorn löser",

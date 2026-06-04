@@ -492,7 +492,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS = {
       metaTitle: "Sinus-Verhältnis-Rechner | Rechtwinkliges Dreieck sin(A)",
       metaDescription: "Verwenden Sie diesen Sinus-Verhältnis-Rechner, um sin(A) in einem rechtwinkligen Dreieck mithilfe der Gegenkathete a und der Hypotenuse c mit Formel, Schritten und Beispielen zu finden.",
       intro: [
-        "Das Sinus-Verhältnis ist eines der ersten trigonometrischen Verhältnisse, die Sie in der Geometrie lernen. Es verbindet einen bestimmten Winkel in einem rechtwinkligen Dreieck mit zwei seiner Seiten – der Gegenkathete und der Hypotenuse. Wenn Sie diese beiden Maße kennen, liefert Ihnen dieser Rechner sofort sin(A).",
+        "Das Sinus-Verhältnis ist eines der ersten trigonometrischen Verhältnisse, die Sie in der Geometrie lernen. Es verbindet einen bestimmten Winkel in einem rechtwinkligen Dreieck mit zwei seiner Seiten - der Gegenkathete und der Hypotenuse. Wenn Sie diese beiden Maße kennen, liefert Ihnen dieser Rechner sofort sin(A).",
         "Egal, ob Sie eine Hausaufgabe lösen, eine Testergebnis überprüfen oder an einer echten Messaufgabe arbeiten, dieses Werkzeug nimmt Ihnen den Schritt der manuellen Division ab. Geben Sie Ihre Werte ein und erhalten Sie das Ergebnis zusammen mit der angezeigten Formel.",
       ],
       faqs: [

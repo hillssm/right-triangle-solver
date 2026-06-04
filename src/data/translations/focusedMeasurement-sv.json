@@ -151,8 +151,8 @@
         "listTitle": "Formler för varje fall med saknad sida:",
         "listItems": [
           "Om c saknas: c = √(a² + b²), sedan P = a + b + √(a² + b²)",
-          "Om b saknas: b = √(c² – a²), sedan P = a + √(c² – a²) + c",
-          "Om a saknas: a = √(c² – b²), sedan P = √(c² – b²) + b + c",
+          "Om b saknas: b = √(c² - a²), sedan P = a + √(c² - a²) + c",
+          "Om a saknas: a = √(c² - b²), sedan P = √(c² - b²) + b + c",
           "Verifiera alltid att c > a och c > b när du använder subtraktionsformen, annars bildar värdena inte en giltig rätvinklig triangel."
         ]
       },
@@ -218,7 +218,7 @@
         "h2": "Förhållandet mellan omkrets och halv omkrets",
         "paragraphs": [
           "Den halva omkretsen (s) är exakt hälften av omkretsen: s = P / 2 = (a + b + c) / 2. Medan omkretsen ger dig den totala gränslängden, är den halva omkretsen ett bekvämlighetsvärde som används i mer avancerade formler.",
-          "Den halva omkretsen dyker upp i Herons formel för triangelns area: A = √[s(s–a)(s–b)(s–c)]. Den används också för att beräkna inskrivna cirkelns radie (inradien): r = A / s. Så omkretsen är startpunkten för flera viktiga triangelberäkningar.",
+          "Den halva omkretsen dyker upp i Herons formel för triangelns area: A = √[s(s-a)(s-b)(s-c)]. Den används också för att beräkna inskrivna cirkelns radie (inradien): r = A / s. Så omkretsen är startpunkten för flera viktiga triangelberäkningar.",
           "Om du redan har beräknat omkretsen med detta verktyg kan du hitta den halva omkretsen genom att helt enkelt dela resultatet med 2, eller använda vår dedikerade kalkylator för halv omkrets."
         ]
       },
@@ -302,7 +302,7 @@
       },
       {
         "question": "Kan jag hitta omkretsen med endast två sidor?",
-        "answer": "Ja, men du måste först beräkna den saknade tredje sidan med hjälp av Pythagoras sats: c = √(a² + b²) om hypotenusan saknas, eller en saknad katet = √(c² – känd katet²). Addera sedan alla tre sidorna för att få omkretsen."
+        "answer": "Ja, men du måste först beräkna den saknade tredje sidan med hjälp av Pythagoras sats: c = √(a² + b²) om hypotenusan saknas, eller en saknad katet = √(c² - känd katet²). Addera sedan alla tre sidorna för att få omkretsen."
       },
       {
         "question": "Är omkrets samma sak som area?",

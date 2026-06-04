@@ -151,8 +151,8 @@
         "listTitle": "Fórmulas para cada caso de lado ausente:",
         "listItems": [
           "Se faltar c: c = √(a² + b²), então P = a + b + √(a² + b²)",
-          "Se faltar b: b = √(c² – a²), então P = a + √(c² – a²) + c",
-          "Se faltar a: a = √(c² – b²), então P = √(c² – b²) + b + c",
+          "Se faltar b: b = √(c² - a²), então P = a + √(c² - a²) + c",
+          "Se faltar a: a = √(c² - b²), então P = √(c² - b²) + b + c",
           "Sempre verifique se c > a e c > b ao usar a forma de subtração, caso contrário, os valores não formam um triângulo retângulo válido."
         ]
       },
@@ -218,7 +218,7 @@
         "h2": "Relação Entre Perímetro e Semiperímetro",
         "paragraphs": [
           "O semiperímetro (s) é exatamente a metade do perímetro: s = P / 2 = (a + b + c) / 2. Enquanto o perímetro dá o comprimento total do limite, o semiperímetro é um valor de conveniência usado em fórmulas mais avançadas.",
-          "O semiperímetro aparece na fórmula de Heron para a área do triângulo: A = √[s(s–a)(s–b)(s–c)]. Também é usado para calcular o inraio (o raio do círculo inscrito): r = A / s. Assim, o perímetro é o ponto de partida para vários cálculos importantes de triângulos.",
+          "O semiperímetro aparece na fórmula de Heron para a área do triângulo: A = √[s(s-a)(s-b)(s-c)]. Também é usado para calcular o inraio (o raio do círculo inscrito): r = A / s. Assim, o perímetro é o ponto de partida para vários cálculos importantes de triângulos.",
           "Se você já calculou o perímetro usando esta ferramenta, pode encontrar o semiperímetro simplesmente dividindo o resultado por 2, ou use nossa calculadora de semiperímetro dedicada."
         ]
       },
@@ -302,7 +302,7 @@
       },
       {
         "question": "Posso encontrar o perímetro com apenas dois lados?",
-        "answer": "Sim, mas você deve primeiro calcular o terceiro lado ausente usando o teorema de Pitágoras: c = √(a² + b²) se faltar a hipotenusa, ou um cateto ausente = √(c² – cateto conhecido²). Em seguida, some os três lados para obter o perímetro."
+        "answer": "Sim, mas você deve primeiro calcular o terceiro lado ausente usando o teorema de Pitágoras: c = √(a² + b²) se faltar a hipotenusa, ou um cateto ausente = √(c² - cateto conhecido²). Em seguida, some os três lados para obter o perímetro."
       },
       {
         "question": "O perímetro é o mesmo que a área?",

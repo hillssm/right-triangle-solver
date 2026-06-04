@@ -151,8 +151,8 @@
         "listTitle": "Formule per ogni caso di lato mancante:",
         "listItems": [
           "Se manca c: c = √(a² + b²), poi P = a + b + √(a² + b²)",
-          "Se manca b: b = √(c² – a²), poi P = a + √(c² – a²) + c",
-          "Se manca a: a = √(c² – b²), poi P = √(c² – b²) + b + c",
+          "Se manca b: b = √(c² - a²), poi P = a + √(c² - a²) + c",
+          "Se manca a: a = √(c² - b²), poi P = √(c² - b²) + b + c",
           "Verifica sempre che c > a e c > b quando usi la forma con sottrazione, altrimenti i valori non formano un triangolo rettangolo valido."
         ]
       },
@@ -218,7 +218,7 @@
         "h2": "Relazione tra Perimetro e Semiperimetro",
         "paragraphs": [
           "Il semiperimetro (s) è esattamente la metà del perimetro: s = P / 2 = (a + b + c) / 2. Mentre il perimetro ti dà la lunghezza totale del confine, il semiperimetro è un valore di convenienza utilizzato in formule più avanzate.",
-          "Il semiperimetro appare nella formula di Erone per l'area del triangolo: A = √[s(s–a)(s–b)(s–c)]. È anche usato per calcolare l'inraggio (il raggio del cerchio inscritto): r = A / s. Quindi il perimetro è il punto di partenza per diversi importanti calcoli sui triangoli.",
+          "Il semiperimetro appare nella formula di Erone per l'area del triangolo: A = √[s(s-a)(s-b)(s-c)]. È anche usato per calcolare l'inraggio (il raggio del cerchio inscritto): r = A / s. Quindi il perimetro è il punto di partenza per diversi importanti calcoli sui triangoli.",
           "Se hai già calcolato il perimetro utilizzando questo strumento, puoi trovare il semiperimetro semplicemente dividendo il risultato per 2, oppure usare il nostro calcolatore di semiperimetro dedicato."
         ]
       },
@@ -302,7 +302,7 @@
       },
       {
         "question": "Posso trovare il perimetro con solo due lati?",
-        "answer": "Sì, ma prima devi calcolare il terzo lato mancante usando il teorema di Pitagora: c = √(a² + b²) se manca l'ipotenusa, o un cateto mancante = √(c² – cateto noto²). Quindi somma tutti e tre i lati per ottenere il perimetro."
+        "answer": "Sì, ma prima devi calcolare il terzo lato mancante usando il teorema di Pitagora: c = √(a² + b²) se manca l'ipotenusa, o un cateto mancante = √(c² - cateto noto²). Quindi somma tutti e tre i lati per ottenere il perimetro."
       },
       {
         "question": "Il perimetro è la stessa cosa dell'area?",

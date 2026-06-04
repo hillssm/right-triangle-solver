@@ -151,8 +151,8 @@
         "listTitle": "الصيغ لكل حالة من حالات الجانب المفقود:",
         "listItems": [
           "If c is missing: c = √(a² + b²), then P = a + b + √(a² + b²)",
-          "If b is missing: b = √(c² – a²), then P = a + √(c² – a²) + c",
-          "If a is missing: a = √(c² – b²), then P = √(c² – b²) + b + c",
+          "If b is missing: b = √(c² - a²), then P = a + √(c² - a²) + c",
+          "If a is missing: a = √(c² - b²), then P = √(c² - b²) + b + c",
           "Always verify that c > a and c > b when using the subtraction form, otherwise the values do not form a valid right triangle."
         ]
       },
@@ -161,7 +161,7 @@
         "paragraphs": [
           "Practicing with different triangles helps build confidence. Below are three more worked examples using common Pythagorean triples and decimal values."
         ],
-        "listTitle": "مثال 1 – المثلث 5-12-13:",
+        "listTitle": "مثال 1 - المثلث 5-12-13:",
         "listItems": [
           "بالنظر إلى: أ = 5، ب = 12، ج = 13",
           "P = 5 + 12 + 13 = 30 units",
@@ -218,7 +218,7 @@
         "h2": "العلاقة بين المحيط وشبه المحيط",
         "paragraphs": [
           "نصف المحيط هو بالضبط نصف المحيط: s = P / 2 = (a + b + c) / 2. بينما يمنحك المحيط إجمالي طول الحد، فإن نصف المحيط هو قيمة ملائمة تستخدم في الصيغ الأكثر تقدمًا.",
-          "يظهر نصف المحيط في صيغة هيرون لمساحة المثلث: A = √[s(s–a)(s–b)(s–c)]. يتم استخدامه أيضًا لحساب نصف القطر (نصف قطر الدائرة المنقوشة): r = A / s. لذا فإن المحيط هو نقطة البداية للعديد من حسابات المثلث المهمة.",
+          "يظهر نصف المحيط في صيغة هيرون لمساحة المثلث: A = √[s(s-a)(s-b)(s-c)]. يتم استخدامه أيضًا لحساب نصف القطر (نصف قطر الدائرة المنقوشة): r = A / s. لذا فإن المحيط هو نقطة البداية للعديد من حسابات المثلث المهمة.",
           "إذا كنت قد قمت بالفعل بحساب المحيط باستخدام هذه الأداة، فيمكنك العثور على نصف المحيط ببساطة عن طريق قسمة النتيجة على 2، أو استخدام حاسبة نصف المحيط المخصصة لدينا."
         ]
       },

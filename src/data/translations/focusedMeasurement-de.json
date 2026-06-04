@@ -84,7 +84,7 @@
       "h2": "Formel für den Umfang eines rechten Dreiecks",
       "paragraphs": [
         "Der Umfang eines Polygons ist die Gesamtlänge seiner Grenze. Bei einem rechtwinkligen Dreieck besteht die Grenze aus genau drei geraden Seiten: zwei Schenkeln (a und b), die den 90°-Winkel bilden, und einer Hypotenuse (c), die sich vom rechten Winkel zum gegenüberliegenden Scheitelpunkt erstreckt.",
-        "Da ein rechtwinkliges Dreieck nur drei Seiten hat, ist die Umfangsformel die einfachste mögliche Summe. Es sind keine Trigonometrie, Quadratwurzeln oder Exponenten erforderlich – nur Addition."
+        "Da ein rechtwinkliges Dreieck nur drei Seiten hat, ist die Umfangsformel die einfachste mögliche Summe. Es sind keine Trigonometrie, Quadratwurzeln oder Exponenten erforderlich - nur Addition."
       ],
       "formulas": [
         "P = a + b + c"
@@ -129,9 +129,9 @@
         ],
         "listTitle": "Die drei Seiten im Überblick:",
         "listItems": [
-          "Bein a – Eine der beiden Seiten, die den 90°-Winkel bilden. Je nach Ausrichtung kann es sich um die vertikale oder horizontale Seite handeln.",
-          "Bein b – Die andere Seite, die den 90°-Winkel bildet. Zusammen mit dem Schenkel a definiert es den rechten Winkel.",
-          "Hypotenuse c – Die längste Seite, die sich von einem spitzen Winkelscheitelpunkt zum anderen erstreckt und dem rechten Winkel direkt gegenüberliegt.",
+          "Bein a - Eine der beiden Seiten, die den 90°-Winkel bilden. Je nach Ausrichtung kann es sich um die vertikale oder horizontale Seite handeln.",
+          "Bein b - Die andere Seite, die den 90°-Winkel bildet. Zusammen mit dem Schenkel a definiert es den rechten Winkel.",
+          "Hypotenuse c - Die längste Seite, die sich von einem spitzen Winkelscheitelpunkt zum anderen erstreckt und dem rechten Winkel direkt gegenüberliegt.",
           "Die pythagoräische Beziehung gilt: a² + b² = c². Dadurch können Sie überprüfen, ob Ihre drei Werte tatsächlich ein rechtwinkliges Dreieck bilden."
         ]
       },
@@ -151,8 +151,8 @@
         "listTitle": "Formeln für jeden Fall der fehlenden Seite:",
         "listItems": [
           "Wenn c fehlt: c = √(a² + b²), dann P = a + b + √(a² + b²)",
-          "Wenn b fehlt: b = √(c² – a²), dann ist P = a + √(c² – a²) + c",
-          "Wenn a fehlt: a = √(c² – b²), dann ist P = √(c² – b²) + b + c",
+          "Wenn b fehlt: b = √(c² - a²), dann ist P = a + √(c² - a²) + c",
+          "Wenn a fehlt: a = √(c² - b²), dann ist P = √(c² - b²) + b + c",
           "Stellen Sie immer sicher, dass c > a und c > b, wenn Sie die Subtraktionsform verwenden, andernfalls bilden die Werte kein gültiges rechtwinkliges Dreieck."
         ]
       },
@@ -161,7 +161,7 @@
         "paragraphs": [
           "Das Üben mit verschiedenen Dreiecken hilft dabei, Selbstvertrauen aufzubauen. Nachfolgend finden Sie drei weitere Beispiele, bei denen übliche pythagoräische Tripel und Dezimalwerte verwendet werden."
         ],
-        "listTitle": "Beispiel 1 – Das 5-12-13-Dreieck:",
+        "listTitle": "Beispiel 1 - Das 5-12-13-Dreieck:",
         "listItems": [
           "Gegeben: a = 5, b = 12, c = 13",
           "P = 5 + 12 + 13 = 30 units",
@@ -169,7 +169,7 @@
         ]
       },
       {
-        "h2": "Beispiel 2 – Das 8-15-17-Dreieck",
+        "h2": "Beispiel 2 - Das 8-15-17-Dreieck",
         "paragraphs": [
           "Gegeben: a = 8, b = 15, c = 17. Dies ist ein weiteres pythagoräisches Tripel, bei dem alle Seiten ganze Zahlen sind."
         ],
@@ -180,14 +180,14 @@
         ]
       },
       {
-        "h2": "Beispiel 3 – Dezimalseiten",
+        "h2": "Beispiel 3 - Dezimalseiten",
         "paragraphs": [
           "Nicht alle rechtwinkligen Dreiecke haben ordentliche ganzzahlige Seiten. Gegeben: a = 2,5, b = 6, c = 6,5."
         ],
         "listItems": [
           "P = 2,5 + 6 + 6,5 = 15 Einheiten",
           "Verifizierung: 2,5² + 6² = 6,25 + 36 = 42,25 = 6,5² ✓",
-          "Dezimalwerte funktionieren auf die gleiche Weise – addieren Sie sie einfach direkt."
+          "Dezimalwerte funktionieren auf die gleiche Weise - addieren Sie sie einfach direkt."
         ]
       },
       {
@@ -205,20 +205,20 @@
         ],
         "listTitle": "Häufige Anwendungen in der Praxis:",
         "listItems": [
-          "Umzäunung – Ein dreieckiges Gartenbeet oder Eckgrundstück muss an allen drei Seiten eingezäunt werden. Der Umfang gibt an, wie viele Meter Zaun Sie kaufen müssen.",
-          "Beschneiden und Formen – Ein dreieckiges architektonisches Element (wie eine Giebelseite) muss an den Kanten beschnitten werden. Der Umfang gibt die gesamte Schnittlänge an.",
-          "Draht und Seil – Für die Umrahmung eines rechtwinkligen Displays, Banners oder Segels sind Seile, Drähte oder Kanten erforderlich, die dem Umfang entsprechen.",
-          "Jogging- und Spazierwege – Eine dreieckige Laufstrecke oder ein Spazierweg um einen rechtwinkligen Parkbereich herum hat eine Gesamtlänge, die dem Umfang entspricht.",
-          "Bauplan – Bauherren verwenden die 3-4-5-Regel, um zu prüfen, ob eine Ecke quadratisch ist. Die Kenntnis des Umfangs hilft bei der Überprüfung der Messungen.",
-          "Basteln und Nähen – Um ein dreieckiges Kissen oder einen Wimpel zu binden, zu paspeln oder zu schnüren, ist Material über den gesamten Umfang erforderlich.",
-          "Karten- und Vermessungsberechnungen – Vermessungsingenieure vermessen dreieckige Grundstücke und benötigen den Umfang für Grenzbeschreibungen und Grundstücksaufzeichnungen."
+          "Umzäunung - Ein dreieckiges Gartenbeet oder Eckgrundstück muss an allen drei Seiten eingezäunt werden. Der Umfang gibt an, wie viele Meter Zaun Sie kaufen müssen.",
+          "Beschneiden und Formen - Ein dreieckiges architektonisches Element (wie eine Giebelseite) muss an den Kanten beschnitten werden. Der Umfang gibt die gesamte Schnittlänge an.",
+          "Draht und Seil - Für die Umrahmung eines rechtwinkligen Displays, Banners oder Segels sind Seile, Drähte oder Kanten erforderlich, die dem Umfang entsprechen.",
+          "Jogging- und Spazierwege - Eine dreieckige Laufstrecke oder ein Spazierweg um einen rechtwinkligen Parkbereich herum hat eine Gesamtlänge, die dem Umfang entspricht.",
+          "Bauplan - Bauherren verwenden die 3-4-5-Regel, um zu prüfen, ob eine Ecke quadratisch ist. Die Kenntnis des Umfangs hilft bei der Überprüfung der Messungen.",
+          "Basteln und Nähen - Um ein dreieckiges Kissen oder einen Wimpel zu binden, zu paspeln oder zu schnüren, ist Material über den gesamten Umfang erforderlich.",
+          "Karten- und Vermessungsberechnungen - Vermessungsingenieure vermessen dreieckige Grundstücke und benötigen den Umfang für Grenzbeschreibungen und Grundstücksaufzeichnungen."
         ]
       },
       {
         "h2": "Beziehung zwischen Umfang und Halbumfang",
         "paragraphs": [
           "Der Halbumfang (s) entspricht genau der Hälfte des Umfangs: s = P / 2 = (a + b + c) / 2. Während der Umfang die gesamte Grenzlänge angibt, ist der Halbumfang ein praktischer Wert, der in komplexeren Formeln verwendet wird.",
-          "Der Halbumfang erscheint in Herons Formel für die Dreiecksfläche: A = √[s(s–a)(s–b)(s–c)]. Es wird auch verwendet, um den Inradius (den Radius des eingeschriebenen Kreises) zu berechnen: r = A / s. Daher ist der Umfang der Ausgangspunkt für mehrere wichtige Dreiecksberechnungen.",
+          "Der Halbumfang erscheint in Herons Formel für die Dreiecksfläche: A = √[s(s-a)(s-b)(s-c)]. Es wird auch verwendet, um den Inradius (den Radius des eingeschriebenen Kreises) zu berechnen: r = A / s. Daher ist der Umfang der Ausgangspunkt für mehrere wichtige Dreiecksberechnungen.",
           "Wenn Sie den Umfang bereits mit diesem Tool berechnet haben, können Sie den Halbumfang ermitteln, indem Sie das Ergebnis einfach durch 2 dividieren oder unseren speziellen Halbumfangsrechner verwenden."
         ]
       },
@@ -245,12 +245,12 @@
         ],
         "listTitle": "Achten Sie auf diese Fallstricke:",
         "listItems": [
-          "Nur zwei Seiten verwenden – Der Umfang erfordert alle drei Seiten. Das Vergessen der Hypotenuse oder eines Beins führt zu einer unvollständigen Antwort.",
-          "Einheiten mischen – Wenn Bein a in Zoll und Bein b in Zentimetern angegeben ist, hat die Summe keine Bedeutung. Konvertieren Sie zuerst in eine einzelne Einheit.",
-          "Verwechslung von Umfang und Fläche – Der Umfang ist eine Länge (gemessen in Einheiten), während die Fläche eine Fläche ist (gemessen in Quadrateinheiten). Stellen Sie sicher, dass Sie wissen, um welches Problem es sich handelt.",
-          "Verwenden Sie Seiten, die kein rechtwinkliges Dreieck bilden – Überprüfen Sie, dass a² + b² = c². Wenn diese Gleichung nicht gilt, ist das Dreieck kein rechtwinkliges Dreieck und c ist keine echte Hypotenuse.",
-          "Zu frühes Runden – Wenn eine Seite irrational ist (wie √2), behalten Sie die volle Präzision bis zur letzten Addition bei, um eine Anhäufung von Rundungsfehlern zu vermeiden.",
-          "Eingabe der Hypotenuse als Bein – Die Hypotenuse muss die längste Seite sein. Wenn Sie im Hypotenuse-Feld einen kürzeren Wert eingeben, sieht das Diagramm falsch aus und die Pythagoras-Prüfung schlägt fehl."
+          "Nur zwei Seiten verwenden - Der Umfang erfordert alle drei Seiten. Das Vergessen der Hypotenuse oder eines Beins führt zu einer unvollständigen Antwort.",
+          "Einheiten mischen - Wenn Bein a in Zoll und Bein b in Zentimetern angegeben ist, hat die Summe keine Bedeutung. Konvertieren Sie zuerst in eine einzelne Einheit.",
+          "Verwechslung von Umfang und Fläche - Der Umfang ist eine Länge (gemessen in Einheiten), während die Fläche eine Fläche ist (gemessen in Quadrateinheiten). Stellen Sie sicher, dass Sie wissen, um welches Problem es sich handelt.",
+          "Verwenden Sie Seiten, die kein rechtwinkliges Dreieck bilden - Überprüfen Sie, dass a² + b² = c². Wenn diese Gleichung nicht gilt, ist das Dreieck kein rechtwinkliges Dreieck und c ist keine echte Hypotenuse.",
+          "Zu frühes Runden - Wenn eine Seite irrational ist (wie √2), behalten Sie die volle Präzision bis zur letzten Addition bei, um eine Anhäufung von Rundungsfehlern zu vermeiden.",
+          "Eingabe der Hypotenuse als Bein - Die Hypotenuse muss die längste Seite sein. Wenn Sie im Hypotenuse-Feld einen kürzeren Wert eingeben, sieht das Diagramm falsch aus und die Pythagoras-Prüfung schlägt fehl."
         ]
       },
       {
@@ -298,11 +298,11 @@
       },
       {
         "question": "Was bedeutet jede Variable in P = a + b + c?",
-        "answer": "P ist der Umfang (Gesamtgrenzlänge). a ist ein Schenkel des rechtwinkligen Dreiecks. b ist das andere Bein. c ist die Hypotenuse – die längste Seite, die dem rechten Winkel gegenüberliegt. Die beiden Beine bilden die 90°-Ecke."
+        "answer": "P ist der Umfang (Gesamtgrenzlänge). a ist ein Schenkel des rechtwinkligen Dreiecks. b ist das andere Bein. c ist die Hypotenuse - die längste Seite, die dem rechten Winkel gegenüberliegt. Die beiden Beine bilden die 90°-Ecke."
       },
       {
         "question": "Kann ich den Umfang mit nur zwei Seiten finden?",
-        "answer": "Ja, aber Sie müssen zuerst die fehlende dritte Seite mithilfe des Satzes des Pythagoras berechnen: c = √(a² + b²), wenn die Hypotenuse fehlt, oder ein fehlender Schenkel = √(c² – bekannter Schenkel²). Fügen Sie dann alle drei Seiten hinzu, um den Umfang zu erhalten."
+        "answer": "Ja, aber Sie müssen zuerst die fehlende dritte Seite mithilfe des Satzes des Pythagoras berechnen: c = √(a² + b²), wenn die Hypotenuse fehlt, oder ein fehlender Schenkel = √(c² - bekannter Schenkel²). Fügen Sie dann alle drei Seiten hinzu, um den Umfang zu erhalten."
       },
       {
         "question": "Ist Umfang gleich Fläche?",
@@ -326,7 +326,7 @@
       },
       {
         "question": "Kann der Umfang eines rechtwinkligen Dreiecks eine ungerade Zahl sein?",
-        "answer": "Ja. Der Umfang kann eine beliebige positive Zahl sein – ganzzahlig, dezimal oder irrational. Beispielsweise hat ein rechtwinkliges Dreieck mit den Schenkeln 1 und 1 die Hypotenuse √2 ≈ 1,414, was den Umfang ≈ 3,414 ergibt, was weder eine ganze Zahl noch rational ist."
+        "answer": "Ja. Der Umfang kann eine beliebige positive Zahl sein - ganzzahlig, dezimal oder irrational. Beispielsweise hat ein rechtwinkliges Dreieck mit den Schenkeln 1 und 1 die Hypotenuse √2 ≈ 1,414, was den Umfang ≈ 3,414 ergibt, was weder eine ganze Zahl noch rational ist."
       },
       {
         "question": "Warum ist die Hypotenuse immer die längste Seite?",
@@ -493,7 +493,7 @@
         "paragraphs": [
           "Diese Beispiele zeigen, wie dieselbe Formel für ganzzahlige Tripel und dezimale Seitenlängen funktioniert. Der Schlüssel besteht darin, vor dem Teilen alle drei Seiten zu addieren."
         ],
-        "listTitle": "Beispiel 1 – Dreieck 5-12-13:",
+        "listTitle": "Beispiel 1 - Dreieck 5-12-13:",
         "listItems": [
           "Gegeben: a = 5, b = 12, c = 13",
           "s = (5 + 12 + 13) / 2",
@@ -501,7 +501,7 @@
         ]
       },
       {
-        "h2": "Beispiel 2 – 8-15-17 Dreieck",
+        "h2": "Beispiel 2 - 8-15-17 Dreieck",
         "paragraphs": [
           "Für a = 8, b = 15 und c = 17 beträgt der Gesamtumfang 40 Einheiten."
         ],
@@ -512,7 +512,7 @@
         ]
       },
       {
-        "h2": "Beispiel 3 – Dezimale Seitenlängen",
+        "h2": "Beispiel 3 - Dezimale Seitenlängen",
         "paragraphs": [
           "Dezimalzahlen funktionieren genauso wie ganze Zahlen. Gegeben sei a = 2,5, b = 6 und c = 6,5:"
         ],

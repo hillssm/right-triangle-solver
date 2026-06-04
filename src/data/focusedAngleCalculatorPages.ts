@@ -446,7 +446,7 @@ export const FOCUSED_ANGLE_CALCULATOR_PAGES: FocusedAngleCalculatorPage[] = [
     h2: "Angle From Tangent Formula",
     display: "A = \\arctan\\left(\\frac{a}{b}\\right)",
     paragraphs: [
-      "Divide the opposite side by the adjacent side. The result can be any positive number (it is not limited to 0–1 like sine or cosine). Apply inverse tangent (arctan) to convert that ratio into angle A."
+      "Divide the opposite side by the adjacent side. The result can be any positive number (it is not limited to 0-1 like sine or cosine). Apply inverse tangent (arctan) to convert that ratio into angle A."
     ]
   },
   diagram: {

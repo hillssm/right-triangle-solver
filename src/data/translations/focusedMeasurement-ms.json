@@ -151,8 +151,8 @@
         "listTitle": "Formula untuk setiap kes sisi yang hilang:",
         "listItems": [
           "Jika c hilang: c = √(a² + b²), maka P = a + b + √(a² + b²)",
-          "Jika b hilang: b = √(c² – a²), maka P = a + √(c² – a²) + c",
-          "Jika a hilang: a = √(c² – b²), maka P = √(c² – b²) + b + c",
+          "Jika b hilang: b = √(c² - a²), maka P = a + √(c² - a²) + c",
+          "Jika a hilang: a = √(c² - b²), maka P = √(c² - b²) + b + c",
           "Sentiasa pastikan bahawa c > a dan c > b apabila menggunakan bentuk penolakan, jika tidak nilai tersebut tidak membentuk segi tiga bersudut tegak yang sah."
         ]
       },
@@ -218,7 +218,7 @@
         "h2": "Hubungan Antara Perimeter dan Semiperimeter",
         "paragraphs": [
           "Semiperimeter (s) ialah separuh tepat daripada perimeter: s = P / 2 = (a + b + c) / 2. Walaupun perimeter memberikan anda jumlah panjang sempadan, semiperimeter ialah nilai kemudahan yang digunakan dalam formula yang lebih lanjutan.",
-          "Semiperimeter muncul dalam formula Heron untuk luas segi tiga: A = √[s(s–a)(s–b)(s–c)]. Ia juga digunakan untuk mengira injejari (jejari bulatan terterap): r = A / s. Jadi perimeter ialah titik permulaan untuk beberapa pengiraan segi tiga yang penting.",
+          "Semiperimeter muncul dalam formula Heron untuk luas segi tiga: A = √[s(s-a)(s-b)(s-c)]. Ia juga digunakan untuk mengira injejari (jejari bulatan terterap): r = A / s. Jadi perimeter ialah titik permulaan untuk beberapa pengiraan segi tiga yang penting.",
           "Jika anda telah mengira perimeter menggunakan alat ini, anda boleh mencari semiperimeter dengan hanya membahagikan hasilnya dengan 2, atau menggunakan kalkulator semiperimeter khusus kami."
         ]
       },
@@ -302,7 +302,7 @@
       },
       {
         "question": "Bolehkah saya mencari perimeter dengan hanya dua sisi?",
-        "answer": "Ya, tetapi anda mesti mengira sisi ketiga yang hilang terlebih dahulu menggunakan teorem Pythagoras: c = √(a² + b²) jika hipotenus hilang, atau kaki yang hilang = √(c² – kaki yang diketahui²). Kemudian tambahkan ketiga-tiga sisi untuk mendapatkan perimeter."
+        "answer": "Ya, tetapi anda mesti mengira sisi ketiga yang hilang terlebih dahulu menggunakan teorem Pythagoras: c = √(a² + b²) jika hipotenus hilang, atau kaki yang hilang = √(c² - kaki yang diketahui²). Kemudian tambahkan ketiga-tiga sisi untuk mendapatkan perimeter."
       },
       {
         "question": "Adakah perimeter sama dengan luas?",

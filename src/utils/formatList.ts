@@ -3,6 +3,7 @@ export function formatListItem(item: string): string {
 
   const separators = [
     ' - ',
+    ' — ',
     ' - ',
     ': ',
     ' -> ',
@@ -16,7 +17,7 @@ export function formatListItem(item: string): string {
     if (index > 0 && index <= 80) {
       const term = item.slice(0, index);
       const detail = item.slice(index + separator.length);
-      return `<strong class="font-bold text-white">${term}:</strong> ${detail}`;
+      return `<strong class="font-bold text-on-surface">${term}:</strong> ${detail}`;
     }
   }
 

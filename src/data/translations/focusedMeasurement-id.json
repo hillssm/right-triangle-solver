@@ -151,8 +151,8 @@
         "listTitle": "Rumus untuk setiap kasus sisi hilang:",
         "listItems": [
           "Jika c tidak ada: c = √(a² + b²), maka P = a + b + √(a² + b²)",
-          "Jika b tidak ada: b = √(c² – a²), maka P = a + √(c² – a²) + c",
-          "Jika a tidak ada: a = √(c² – b²), maka P = √(c² – b²) + b + c",
+          "Jika b tidak ada: b = √(c² - a²), maka P = a + √(c² - a²) + c",
+          "Jika a tidak ada: a = √(c² - b²), maka P = √(c² - b²) + b + c",
           "Selalu verifikasi bahwa c > a dan c > b saat menggunakan bentuk pengurangan, jika tidak, nilainya tidak akan membentuk segitiga siku-siku yang valid."
         ]
       },
@@ -218,7 +218,7 @@
         "h2": "Hubungan Antara Perimeter dan Semiperimeter",
         "paragraphs": [
           "Semiperimeter (s) sama persis dengan setengah keliling: s = P / 2 = (a + b + c) / 2. Meskipun keliling memberi Anda total panjang batas, semiperimeter adalah nilai praktis yang digunakan dalam rumus lebih lanjut.",
-          "Semiperimeter muncul dalam rumus Heron untuk luas segitiga: A = √[s(s–a)(s–b)(s–c)]. Ini juga digunakan untuk menghitung inradius (jari-jari lingkaran yang tertulis): r = A / s. Jadi keliling adalah titik awal untuk beberapa perhitungan penting segitiga.",
+          "Semiperimeter muncul dalam rumus Heron untuk luas segitiga: A = √[s(s-a)(s-b)(s-c)]. Ini juga digunakan untuk menghitung inradius (jari-jari lingkaran yang tertulis): r = A / s. Jadi keliling adalah titik awal untuk beberapa perhitungan penting segitiga.",
           "Jika Anda sudah menghitung keliling menggunakan alat ini, Anda dapat mencari semiperimeter hanya dengan membagi hasilnya dengan 2, atau gunakan kalkulator semiperimeter khusus kami."
         ]
       },
@@ -302,7 +302,7 @@
       },
       {
         "question": "Bisakah saya mencari keliling yang hanya memiliki dua sisi?",
-        "answer": "Ya, tetapi Anda harus menghitung terlebih dahulu sisi ketiga yang hilang menggunakan teorema Pythagoras: c = √(a² + b²) jika sisi miringnya hilang, atau ada kaki yang hilang = √(c² – diketahui kaki²). Kemudian tambahkan ketiga sisinya untuk mendapatkan kelilingnya."
+        "answer": "Ya, tetapi Anda harus menghitung terlebih dahulu sisi ketiga yang hilang menggunakan teorema Pythagoras: c = √(a² + b²) jika sisi miringnya hilang, atau ada kaki yang hilang = √(c² - diketahui kaki²). Kemudian tambahkan ketiga sisinya untuk mendapatkan kelilingnya."
       },
       {
         "question": "Apakah keliling sama dengan luas?",

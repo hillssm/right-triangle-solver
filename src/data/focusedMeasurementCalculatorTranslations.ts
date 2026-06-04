@@ -1283,7 +1283,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
       },
       "example": {
         "h2": "Рабочий пример: найдите периметр прямоугольного треугольника 3-4-5.",
-        "intro": "Треугольник 3-4-5 – одна из самых распространенных пифагорейских троек. Учитывая a = 3, b = 4, c = 5:",
+        "intro": "Треугольник 3-4-5 - одна из самых распространенных пифагорейских троек. Учитывая a = 3, b = 4, c = 5:",
         "lines": [
           "P = a + b + c",
           "P = 3 + 4 + 5",
@@ -1330,8 +1330,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listTitle": "Формулы для каждого случая недостающей стороны:",
           "listItems": [
             "Если c отсутствует: c = √(a² + b²), тогда P = a + b + √(a² + b²)",
-            "Если b отсутствует: b = √(c² – a²), то P = a + √(c² – a²) + c",
-            "Если a отсутствует: a = √(c² – b²), то P = √(c² – b²) + b + c",
+            "Если b отсутствует: b = √(c² - a²), то P = a + √(c² - a²) + c",
+            "Если a отсутствует: a = √(c² - b²), то P = √(c² - b²) + b + c",
             "Всегда проверяйте, что c > a и c > b при использовании формы вычитания, иначе значения не образуют правильный прямоугольный треугольник."
           ]
         },
@@ -1374,7 +1374,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "paragraphs": [
             "Периметр и площадь описывают треугольник, но измеряют разные вещи. Периметр измеряет общую длину края снаружи (линейное измерение), а площадь измеряет замкнутое пространство внутри треугольника (квадратное измерение).",
             "Для прямоугольного треугольника с катетами a и b и гипотенузой c действуют две формулы: P = a + b + c для периметра и A = (a × b)/2 для площади. Обратите внимание, что в формуле площади используются только два катета (поскольку они перпендикулярны), а в формуле периметра используются все три стороны.",
-            "Распространенная ошибка – путать эти два понятия. Если задача требует определения расстояния ограждения треугольного участка, вам понадобится периметр. Если требуется покрытие поверхности (например, покраска или плитка), вам нужна площадь."
+            "Распространенная ошибка - путать эти два понятия. Если задача требует определения расстояния ограждения треугольного участка, вам понадобится периметр. Если требуется покрытие поверхности (например, покраска или плитка), вам нужна площадь."
           ]
         },
         {
@@ -1397,7 +1397,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "h2": "Связь между периметром и полупериметром",
           "paragraphs": [
             "Полупериметр (s) равен ровно половине периметра: s = P/2 = (a + b + c)/2. Хотя периметр дает вам общую длину границы, полупериметр - это удобное значение, используемое в более сложных формулах.",
-            "Полупериметр появляется в формуле Герона для площади треугольника: A = √[s(s–a)(s–b)(s–c)]. Он также используется для расчета внутреннего радиуса (радиуса вписанной окружности): r = A/s. Таким образом, периметр является отправной точкой для нескольких важных расчетов треугольника.",
+            "Полупериметр появляется в формуле Герона для площади треугольника: A = √[s(s-a)(s-b)(s-c)]. Он также используется для расчета внутреннего радиуса (радиуса вписанной окружности): r = A/s. Таким образом, периметр является отправной точкой для нескольких важных расчетов треугольника.",
             "Если вы уже рассчитали периметр с помощью этого инструмента, вы можете найти полупериметр, просто разделив результат на 2, или воспользоваться нашим специальным калькулятором полупериметра."
           ]
         },
@@ -1481,7 +1481,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Можно ли найти периметр только с двумя сторонами?",
-          "answer": "Да, но сначала необходимо вычислить недостающую третью сторону, используя теорему Пифагора: c = √(a² + b²), если отсутствует гипотенуза, или недостающий катет = √(c² – известный катет²). Затем сложите все три стороны, чтобы получить периметр."
+          "answer": "Да, но сначала необходимо вычислить недостающую третью сторону, используя теорему Пифагора: c = √(a² + b²), если отсутствует гипотенуза, или недостающий катет = √(c² - известный катет²). Затем сложите все три стороны, чтобы получить периметр."
         },
         {
           "question": "Периметр равен площади?",
@@ -2543,7 +2543,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         "h2": "Formel für den Umfang eines rechten Dreiecks",
         "paragraphs": [
           "Der Umfang eines Polygons ist die Gesamtlänge seiner Grenze. Bei einem rechtwinkligen Dreieck besteht die Grenze aus genau drei geraden Seiten: zwei Schenkeln (a und b), die den 90°-Winkel bilden, und einer Hypotenuse (c), die sich vom rechten Winkel zum gegenüberliegenden Scheitelpunkt erstreckt.",
-          "Da ein rechtwinkliges Dreieck nur drei Seiten hat, ist die Umfangsformel die einfachste mögliche Summe. Es sind keine Trigonometrie, Quadratwurzeln oder Exponenten erforderlich – nur Addition."
+          "Da ein rechtwinkliges Dreieck nur drei Seiten hat, ist die Umfangsformel die einfachste mögliche Summe. Es sind keine Trigonometrie, Quadratwurzeln oder Exponenten erforderlich - nur Addition."
         ],
         "formulas": [
           "P = a + b + c"
@@ -2588,9 +2588,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Die drei Seiten im Überblick:",
           "listItems": [
-            "Bein a – Eine der beiden Seiten, die den 90°-Winkel bilden. Je nach Ausrichtung kann es sich um die vertikale oder horizontale Seite handeln.",
-            "Bein b – Die andere Seite, die den 90°-Winkel bildet. Zusammen mit dem Schenkel a definiert es den rechten Winkel.",
-            "Hypotenuse c – Die längste Seite, die sich von einem spitzen Winkelscheitelpunkt zum anderen erstreckt und dem rechten Winkel direkt gegenüberliegt.",
+            "Bein a - Eine der beiden Seiten, die den 90°-Winkel bilden. Je nach Ausrichtung kann es sich um die vertikale oder horizontale Seite handeln.",
+            "Bein b - Die andere Seite, die den 90°-Winkel bildet. Zusammen mit dem Schenkel a definiert es den rechten Winkel.",
+            "Hypotenuse c - Die längste Seite, die sich von einem spitzen Winkelscheitelpunkt zum anderen erstreckt und dem rechten Winkel direkt gegenüberliegt.",
             "Die pythagoräische Beziehung gilt: a² + b² = c². Dadurch können Sie überprüfen, ob Ihre drei Werte tatsächlich ein rechtwinkliges Dreieck bilden."
           ]
         },
@@ -2610,8 +2610,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listTitle": "Formeln für jeden Fall der fehlenden Seite:",
           "listItems": [
             "Wenn c fehlt: c = √(a² + b²), dann P = a + b + √(a² + b²)",
-            "Wenn b fehlt: b = √(c² – a²), dann ist P = a + √(c² – a²) + c",
-            "Wenn a fehlt: a = √(c² – b²), dann ist P = √(c² – b²) + b + c",
+            "Wenn b fehlt: b = √(c² - a²), dann ist P = a + √(c² - a²) + c",
+            "Wenn a fehlt: a = √(c² - b²), dann ist P = √(c² - b²) + b + c",
             "Stellen Sie immer sicher, dass c > a und c > b, wenn Sie die Subtraktionsform verwenden, andernfalls bilden die Werte kein gültiges rechtwinkliges Dreieck."
           ]
         },
@@ -2620,7 +2620,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "paragraphs": [
             "Das Üben mit verschiedenen Dreiecken hilft dabei, Selbstvertrauen aufzubauen. Nachfolgend finden Sie drei weitere Beispiele, bei denen übliche pythagoräische Tripel und Dezimalwerte verwendet werden."
           ],
-          "listTitle": "Beispiel 1 – Das 5-12-13-Dreieck:",
+          "listTitle": "Beispiel 1 - Das 5-12-13-Dreieck:",
           "listItems": [
             "Gegeben: a = 5, b = 12, c = 13",
             "P = 5 + 12 + 13 = 30 units",
@@ -2628,7 +2628,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Beispiel 2 – Das 8-15-17-Dreieck",
+          "h2": "Beispiel 2 - Das 8-15-17-Dreieck",
           "paragraphs": [
             "Gegeben: a = 8, b = 15, c = 17. Dies ist ein weiteres pythagoräisches Tripel, bei dem alle Seiten ganze Zahlen sind."
           ],
@@ -2639,14 +2639,14 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Beispiel 3 – Dezimalseiten",
+          "h2": "Beispiel 3 - Dezimalseiten",
           "paragraphs": [
             "Nicht alle rechtwinkligen Dreiecke haben ordentliche ganzzahlige Seiten. Gegeben: a = 2,5, b = 6, c = 6,5."
           ],
           "listItems": [
             "P = 2,5 + 6 + 6,5 = 15 Einheiten",
             "Verifizierung: 2,5² + 6² = 6,25 + 36 = 42,25 = 6,5² ✓",
-            "Dezimalwerte funktionieren auf die gleiche Weise – addieren Sie sie einfach direkt."
+            "Dezimalwerte funktionieren auf die gleiche Weise - addieren Sie sie einfach direkt."
           ]
         },
         {
@@ -2664,20 +2664,20 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Häufige Anwendungen in der Praxis:",
           "listItems": [
-            "Umzäunung – Ein dreieckiges Gartenbeet oder Eckgrundstück muss an allen drei Seiten eingezäunt werden. Der Umfang gibt an, wie viele Meter Zaun Sie kaufen müssen.",
-            "Beschneiden und Formen – Ein dreieckiges architektonisches Element (wie eine Giebelseite) muss an den Kanten beschnitten werden. Der Umfang gibt die gesamte Schnittlänge an.",
-            "Draht und Seil – Für die Umrahmung eines rechtwinkligen Displays, Banners oder Segels sind Seile, Drähte oder Kanten erforderlich, die dem Umfang entsprechen.",
-            "Jogging- und Spazierwege – Eine dreieckige Laufstrecke oder ein Spazierweg um einen rechtwinkligen Parkbereich herum hat eine Gesamtlänge, die dem Umfang entspricht.",
-            "Bauplan – Bauherren verwenden die 3-4-5-Regel, um zu prüfen, ob eine Ecke quadratisch ist. Die Kenntnis des Umfangs hilft bei der Überprüfung der Messungen.",
-            "Basteln und Nähen – Um ein dreieckiges Kissen oder einen Wimpel zu binden, zu paspeln oder zu schnüren, ist Material über den gesamten Umfang erforderlich.",
-            "Karten- und Vermessungsberechnungen – Vermessungsingenieure vermessen dreieckige Grundstücke und benötigen den Umfang für Grenzbeschreibungen und Grundstücksaufzeichnungen."
+            "Umzäunung - Ein dreieckiges Gartenbeet oder Eckgrundstück muss an allen drei Seiten eingezäunt werden. Der Umfang gibt an, wie viele Meter Zaun Sie kaufen müssen.",
+            "Beschneiden und Formen - Ein dreieckiges architektonisches Element (wie eine Giebelseite) muss an den Kanten beschnitten werden. Der Umfang gibt die gesamte Schnittlänge an.",
+            "Draht und Seil - Für die Umrahmung eines rechtwinkligen Displays, Banners oder Segels sind Seile, Drähte oder Kanten erforderlich, die dem Umfang entsprechen.",
+            "Jogging- und Spazierwege - Eine dreieckige Laufstrecke oder ein Spazierweg um einen rechtwinkligen Parkbereich herum hat eine Gesamtlänge, die dem Umfang entspricht.",
+            "Bauplan - Bauherren verwenden die 3-4-5-Regel, um zu prüfen, ob eine Ecke quadratisch ist. Die Kenntnis des Umfangs hilft bei der Überprüfung der Messungen.",
+            "Basteln und Nähen - Um ein dreieckiges Kissen oder einen Wimpel zu binden, zu paspeln oder zu schnüren, ist Material über den gesamten Umfang erforderlich.",
+            "Karten- und Vermessungsberechnungen - Vermessungsingenieure vermessen dreieckige Grundstücke und benötigen den Umfang für Grenzbeschreibungen und Grundstücksaufzeichnungen."
           ]
         },
         {
           "h2": "Beziehung zwischen Umfang und Halbumfang",
           "paragraphs": [
             "Der Halbumfang (s) entspricht genau der Hälfte des Umfangs: s = P / 2 = (a + b + c) / 2. Während der Umfang die gesamte Grenzlänge angibt, ist der Halbumfang ein praktischer Wert, der in komplexeren Formeln verwendet wird.",
-            "Der Halbumfang erscheint in Herons Formel für die Dreiecksfläche: A = √[s(s–a)(s–b)(s–c)]. Es wird auch verwendet, um den Inradius (den Radius des eingeschriebenen Kreises) zu berechnen: r = A / s. Daher ist der Umfang der Ausgangspunkt für mehrere wichtige Dreiecksberechnungen.",
+            "Der Halbumfang erscheint in Herons Formel für die Dreiecksfläche: A = √[s(s-a)(s-b)(s-c)]. Es wird auch verwendet, um den Inradius (den Radius des eingeschriebenen Kreises) zu berechnen: r = A / s. Daher ist der Umfang der Ausgangspunkt für mehrere wichtige Dreiecksberechnungen.",
             "Wenn Sie den Umfang bereits mit diesem Tool berechnet haben, können Sie den Halbumfang ermitteln, indem Sie das Ergebnis einfach durch 2 dividieren oder unseren speziellen Halbumfangsrechner verwenden."
           ]
         },
@@ -2704,12 +2704,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "Achten Sie auf diese Fallstricke:",
           "listItems": [
-            "Nur zwei Seiten verwenden – Der Umfang erfordert alle drei Seiten. Das Vergessen der Hypotenuse oder eines Beins führt zu einer unvollständigen Antwort.",
-            "Einheiten mischen – Wenn Bein a in Zoll und Bein b in Zentimetern angegeben ist, hat die Summe keine Bedeutung. Konvertieren Sie zuerst in eine einzelne Einheit.",
-            "Verwechslung von Umfang und Fläche – Der Umfang ist eine Länge (gemessen in Einheiten), während die Fläche eine Fläche ist (gemessen in Quadrateinheiten). Stellen Sie sicher, dass Sie wissen, um welches Problem es sich handelt.",
-            "Verwenden Sie Seiten, die kein rechtwinkliges Dreieck bilden – Überprüfen Sie, dass a² + b² = c². Wenn diese Gleichung nicht gilt, ist das Dreieck kein rechtwinkliges Dreieck und c ist keine echte Hypotenuse.",
-            "Zu frühes Runden – Wenn eine Seite irrational ist (wie √2), behalten Sie die volle Präzision bis zur letzten Addition bei, um eine Anhäufung von Rundungsfehlern zu vermeiden.",
-            "Eingabe der Hypotenuse als Bein – Die Hypotenuse muss die längste Seite sein. Wenn Sie im Hypotenuse-Feld einen kürzeren Wert eingeben, sieht das Diagramm falsch aus und die Pythagoras-Prüfung schlägt fehl."
+            "Nur zwei Seiten verwenden - Der Umfang erfordert alle drei Seiten. Das Vergessen der Hypotenuse oder eines Beins führt zu einer unvollständigen Antwort.",
+            "Einheiten mischen - Wenn Bein a in Zoll und Bein b in Zentimetern angegeben ist, hat die Summe keine Bedeutung. Konvertieren Sie zuerst in eine einzelne Einheit.",
+            "Verwechslung von Umfang und Fläche - Der Umfang ist eine Länge (gemessen in Einheiten), während die Fläche eine Fläche ist (gemessen in Quadrateinheiten). Stellen Sie sicher, dass Sie wissen, um welches Problem es sich handelt.",
+            "Verwenden Sie Seiten, die kein rechtwinkliges Dreieck bilden - Überprüfen Sie, dass a² + b² = c². Wenn diese Gleichung nicht gilt, ist das Dreieck kein rechtwinkliges Dreieck und c ist keine echte Hypotenuse.",
+            "Zu frühes Runden - Wenn eine Seite irrational ist (wie √2), behalten Sie die volle Präzision bis zur letzten Addition bei, um eine Anhäufung von Rundungsfehlern zu vermeiden.",
+            "Eingabe der Hypotenuse als Bein - Die Hypotenuse muss die längste Seite sein. Wenn Sie im Hypotenuse-Feld einen kürzeren Wert eingeben, sieht das Diagramm falsch aus und die Pythagoras-Prüfung schlägt fehl."
           ]
         },
         {
@@ -2757,11 +2757,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Was bedeutet jede Variable in P = a + b + c?",
-          "answer": "P ist der Umfang (Gesamtgrenzlänge). a ist ein Schenkel des rechtwinkligen Dreiecks. b ist das andere Bein. c ist die Hypotenuse – die längste Seite, die dem rechten Winkel gegenüberliegt. Die beiden Beine bilden die 90°-Ecke."
+          "answer": "P ist der Umfang (Gesamtgrenzlänge). a ist ein Schenkel des rechtwinkligen Dreiecks. b ist das andere Bein. c ist die Hypotenuse - die längste Seite, die dem rechten Winkel gegenüberliegt. Die beiden Beine bilden die 90°-Ecke."
         },
         {
           "question": "Kann ich den Umfang mit nur zwei Seiten finden?",
-          "answer": "Ja, aber Sie müssen zuerst die fehlende dritte Seite mithilfe des Satzes des Pythagoras berechnen: c = √(a² + b²), wenn die Hypotenuse fehlt, oder ein fehlender Schenkel = √(c² – bekannter Schenkel²). Fügen Sie dann alle drei Seiten hinzu, um den Umfang zu erhalten."
+          "answer": "Ja, aber Sie müssen zuerst die fehlende dritte Seite mithilfe des Satzes des Pythagoras berechnen: c = √(a² + b²), wenn die Hypotenuse fehlt, oder ein fehlender Schenkel = √(c² - bekannter Schenkel²). Fügen Sie dann alle drei Seiten hinzu, um den Umfang zu erhalten."
         },
         {
           "question": "Ist Umfang gleich Fläche?",
@@ -2785,7 +2785,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Kann der Umfang eines rechtwinkligen Dreiecks eine ungerade Zahl sein?",
-          "answer": "Ja. Der Umfang kann eine beliebige positive Zahl sein – ganzzahlig, dezimal oder irrational. Beispielsweise hat ein rechtwinkliges Dreieck mit den Schenkeln 1 und 1 die Hypotenuse √2 ≈ 1,414, was den Umfang ≈ 3,414 ergibt, was weder eine ganze Zahl noch rational ist."
+          "answer": "Ja. Der Umfang kann eine beliebige positive Zahl sein - ganzzahlig, dezimal oder irrational. Beispielsweise hat ein rechtwinkliges Dreieck mit den Schenkeln 1 und 1 die Hypotenuse √2 ≈ 1,414, was den Umfang ≈ 3,414 ergibt, was weder eine ganze Zahl noch rational ist."
         },
         {
           "question": "Warum ist die Hypotenuse immer die längste Seite?",
@@ -2952,7 +2952,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "paragraphs": [
             "Diese Beispiele zeigen, wie dieselbe Formel für ganzzahlige Tripel und dezimale Seitenlängen funktioniert. Der Schlüssel besteht darin, vor dem Teilen alle drei Seiten zu addieren."
           ],
-          "listTitle": "Beispiel 1 – Dreieck 5-12-13:",
+          "listTitle": "Beispiel 1 - Dreieck 5-12-13:",
           "listItems": [
             "Gegeben: a = 5, b = 12, c = 13",
             "s = (5 + 12 + 13) / 2",
@@ -2960,7 +2960,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Beispiel 2 – 8-15-17 Dreieck",
+          "h2": "Beispiel 2 - 8-15-17 Dreieck",
           "paragraphs": [
             "Für a = 8, b = 15 und c = 17 beträgt der Gesamtumfang 40 Einheiten."
           ],
@@ -2971,7 +2971,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Beispiel 3 – Dezimale Seitenlängen",
+          "h2": "Beispiel 3 - Dezimale Seitenlängen",
           "paragraphs": [
             "Dezimalzahlen funktionieren genauso wie ganze Zahlen. Gegeben sei a = 2,5, b = 6 und c = 6,5:"
           ],
@@ -3250,8 +3250,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listTitle": "Formule per ogni caso di lato mancante:",
           "listItems": [
             "Se manca c: c = √(a² + b²), poi P = a + b + √(a² + b²)",
-            "Se manca b: b = √(c² – a²), poi P = a + √(c² – a²) + c",
-            "Se manca a: a = √(c² – b²), poi P = √(c² – b²) + b + c",
+            "Se manca b: b = √(c² - a²), poi P = a + √(c² - a²) + c",
+            "Se manca a: a = √(c² - b²), poi P = √(c² - b²) + b + c",
             "Verifica sempre che c > a e c > b quando usi la forma con sottrazione, altrimenti i valori non formano un triangolo rettangolo valido."
           ]
         },
@@ -3317,7 +3317,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "h2": "Relazione tra Perimetro e Semiperimetro",
           "paragraphs": [
             "Il semiperimetro (s) è esattamente la metà del perimetro: s = P / 2 = (a + b + c) / 2. Mentre il perimetro ti dà la lunghezza totale del confine, il semiperimetro è un valore di convenienza utilizzato in formule più avanzate.",
-            "Il semiperimetro appare nella formula di Erone per l'area del triangolo: A = √[s(s–a)(s–b)(s–c)]. È anche usato per calcolare l'inraggio (il raggio del cerchio inscritto): r = A / s. Quindi il perimetro è il punto di partenza per diversi importanti calcoli sui triangoli.",
+            "Il semiperimetro appare nella formula di Erone per l'area del triangolo: A = √[s(s-a)(s-b)(s-c)]. È anche usato per calcolare l'inraggio (il raggio del cerchio inscritto): r = A / s. Quindi il perimetro è il punto di partenza per diversi importanti calcoli sui triangoli.",
             "Se hai già calcolato il perimetro utilizzando questo strumento, puoi trovare il semiperimetro semplicemente dividendo il risultato per 2, oppure usare il nostro calcolatore di semiperimetro dedicato."
           ]
         },
@@ -3401,7 +3401,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Posso trovare il perimetro con solo due lati?",
-          "answer": "Sì, ma prima devi calcolare il terzo lato mancante usando il teorema di Pitagora: c = √(a² + b²) se manca l'ipotenusa, o un cateto mancante = √(c² – cateto noto²). Quindi somma tutti e tre i lati per ottenere il perimetro."
+          "answer": "Sì, ma prima devi calcolare il terzo lato mancante usando il teorema di Pitagora: c = √(a² + b²) se manca l'ipotenusa, o un cateto mancante = √(c² - cateto noto²). Quindi somma tutti e tre i lati per ottenere il perimetro."
         },
         {
           "question": "Il perimetro è la stessa cosa dell'area?",
@@ -3890,8 +3890,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listTitle": "Fórmulas para cada caso de lado ausente:",
           "listItems": [
             "Se faltar c: c = √(a² + b²), então P = a + b + √(a² + b²)",
-            "Se faltar b: b = √(c² – a²), então P = a + √(c² – a²) + c",
-            "Se faltar a: a = √(c² – b²), então P = √(c² – b²) + b + c",
+            "Se faltar b: b = √(c² - a²), então P = a + √(c² - a²) + c",
+            "Se faltar a: a = √(c² - b²), então P = √(c² - b²) + b + c",
             "Sempre verifique se c > a e c > b ao usar a forma de subtração, caso contrário, os valores não formam um triângulo retângulo válido."
           ]
         },
@@ -3957,7 +3957,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "h2": "Relação Entre Perímetro e Semiperímetro",
           "paragraphs": [
             "O semiperímetro (s) é exatamente a metade do perímetro: s = P / 2 = (a + b + c) / 2. Enquanto o perímetro dá o comprimento total do limite, o semiperímetro é um valor de conveniência usado em fórmulas mais avançadas.",
-            "O semiperímetro aparece na fórmula de Heron para a área do triângulo: A = √[s(s–a)(s–b)(s–c)]. Também é usado para calcular o inraio (o raio do círculo inscrito): r = A / s. Assim, o perímetro é o ponto de partida para vários cálculos importantes de triângulos.",
+            "O semiperímetro aparece na fórmula de Heron para a área do triângulo: A = √[s(s-a)(s-b)(s-c)]. Também é usado para calcular o inraio (o raio do círculo inscrito): r = A / s. Assim, o perímetro é o ponto de partida para vários cálculos importantes de triângulos.",
             "Se você já calculou o perímetro usando esta ferramenta, pode encontrar o semiperímetro simplesmente dividindo o resultado por 2, ou use nossa calculadora de semiperímetro dedicada."
           ]
         },
@@ -4041,7 +4041,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Posso encontrar o perímetro com apenas dois lados?",
-          "answer": "Sim, mas você deve primeiro calcular o terceiro lado ausente usando o teorema de Pitágoras: c = √(a² + b²) se faltar a hipotenusa, ou um cateto ausente = √(c² – cateto conhecido²). Em seguida, some os três lados para obter o perímetro."
+          "answer": "Sim, mas você deve primeiro calcular o terceiro lado ausente usando o teorema de Pitágoras: c = √(a² + b²) se faltar a hipotenusa, ou um cateto ausente = √(c² - cateto conhecido²). Em seguida, some os três lados para obter o perímetro."
         },
         {
           "question": "O perímetro é o mesmo que a área?",
@@ -4530,8 +4530,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listTitle": "প্রতিটি অনুপস্থিত-সাইড কেসের জন্য সূত্র:",
           "listItems": [
             "যদি c অনুপস্থিত থাকে: c = √(a² + b²), তাহলে P = a + b + √(a² + b²)",
-            "যদি b অনুপস্থিত থাকে: b = √(c² – a²), তাহলে P = a + √(c² – a²) + c",
-            "যদি a অনুপস্থিত থাকে: a = √(c² – b²), তাহলে P = √(c² – b²) + b + c",
+            "যদি b অনুপস্থিত থাকে: b = √(c² - a²), তাহলে P = a + √(c² - a²) + c",
+            "যদি a অনুপস্থিত থাকে: a = √(c² - b²), তাহলে P = √(c² - b²) + b + c",
             "সর্বদা যাচাই করুন যে c > a এবং c > b বিয়োগ ফর্ম ব্যবহার করার সময়, অন্যথায় মানগুলি একটি বৈধ সমকোণী ত্রিভুজ গঠন করবে না।"
           ]
         },
@@ -4597,7 +4597,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "h2": "পেরিমিটার এবং সেমিপিরিমিটারের মধ্যে সম্পর্ক",
           "paragraphs": [
             "সেমিপিরিমিটার (গুলি) ঘেরের ঠিক অর্ধেক: s = P / 2 = (a + b + c) / 2। ঘেরটি আপনাকে মোট সীমানা দৈর্ঘ্য দেয়, সেমিপিরিমিটার হল আরও উন্নত সূত্রে ব্যবহৃত একটি সুবিধার মান।",
-            "সেমিপিরিমিটার ত্রিভুজ ক্ষেত্রফলের জন্য হেরনের সূত্রে প্রদর্শিত হয়: A = √[s(s–a)(s–b)(s–c)]। এটি inradius (খোদিত বৃত্তের ব্যাসার্ধ) গণনা করতেও ব্যবহৃত হয়: r = A/s. তাই পরিধি হল বেশ কিছু গুরুত্বপূর্ণ ত্রিভুজ গণনার সূচনা বিন্দু।",
+            "সেমিপিরিমিটার ত্রিভুজ ক্ষেত্রফলের জন্য হেরনের সূত্রে প্রদর্শিত হয়: A = √[s(s-a)(s-b)(s-c)]। এটি inradius (খোদিত বৃত্তের ব্যাসার্ধ) গণনা করতেও ব্যবহৃত হয়: r = A/s. তাই পরিধি হল বেশ কিছু গুরুত্বপূর্ণ ত্রিভুজ গণনার সূচনা বিন্দু।",
             "আপনি যদি ইতিমধ্যে এই টুলটি ব্যবহার করে পরিধি গণনা করে থাকেন, তাহলে আপনি ফলাফলটিকে 2 দ্বারা ভাগ করে সেমিপিরিমিটার খুঁজে পেতে পারেন অথবা আমাদের ডেডিকেটেড সেমিপিরিমিটার ক্যালকুলেটর ব্যবহার করুন।"
           ]
         },
@@ -5170,8 +5170,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listTitle": "各欠損辺の場合の公式は次のとおりです。",
           "listItems": [
             "c が欠落している場合: c = √(a² + b²)、P = a + b + √(a² + b²)",
-            "b が欠落している場合: b = √(c² – a²)、P = a + √(c² – a²) + c",
-            "a が欠落している場合: a = √(c² – b²)、P = √(c² – b²) + b + c",
+            "b が欠落している場合: b = √(c² - a²)、P = a + √(c² - a²) + c",
+            "a が欠落している場合: a = √(c² - b²)、P = √(c² - b²) + b + c",
             "減算形式を使用する場合は、c > a および c > b であることを常に確認してください。そうでない場合、値は有効な直角三角形を形成しません。"
           ]
         },
@@ -5321,7 +5321,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "2 辺だけの周囲を見つけることはできますか?",
-          "answer": "はい、ただし、最初にピタゴラスの定理を使用して、欠落している 3 番目の辺を計算する必要があります。斜辺が欠落している場合は c = √(a² + b²)、欠落している脚 = √(c² – 既知の脚 ²) です。次に、3 つの辺をすべて追加して周囲を取得します。"
+          "answer": "はい、ただし、最初にピタゴラスの定理を使用して、欠落している 3 番目の辺を計算する必要があります。斜辺が欠落している場合は c = √(a² + b²)、欠落している脚 = √(c² - 既知の脚 ²) です。次に、3 つの辺をすべて追加して周囲を取得します。"
         },
         {
           "question": "周長は面積と同じですか?",
@@ -5810,8 +5810,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listTitle": "누락된 각 사례에 대한 공식:",
           "listItems": [
             "c가 누락된 경우: c = √(a² + b²)이면 P = a + b + √(a² + b²)",
-            "b가 누락된 경우: b = √(c² – a²), 그러면 P = a + √(c² – a²) + c",
-            "a가 누락된 경우: a = √(c² – b²), 그러면 P = √(c² – b²) + b + c",
+            "b가 누락된 경우: b = √(c² - a²), 그러면 P = a + √(c² - a²) + c",
+            "a가 누락된 경우: a = √(c² - b²), 그러면 P = √(c² - b²) + b + c",
             "뺄셈 형식을 사용할 때 항상 c > a 및 c > b인지 확인하십시오. 그렇지 않으면 값이 유효한 직각 삼각형을 형성하지 않습니다."
           ]
         },
@@ -5877,7 +5877,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "h2": "둘레와 반둘레의 관계",
           "paragraphs": [
             "반주변(s)은 둘레의 정확히 절반입니다: s = P / 2 = (a + b + c) / 2. 둘레는 전체 경계 길이를 제공하지만 반주변은 고급 공식에 사용되는 편의 값입니다.",
-            "반둘레는 헤론(Heron)의 삼각형 면적 공식: A = √[s(s–a)(s–b)(s–c)]에 나타납니다. 또한 내부 반경(내접원의 반경)을 계산하는 데에도 사용됩니다: r = A / s. 따라서 둘레는 몇 가지 중요한 삼각형 계산의 시작점입니다.",
+            "반둘레는 헤론(Heron)의 삼각형 면적 공식: A = √[s(s-a)(s-b)(s-c)]에 나타납니다. 또한 내부 반경(내접원의 반경)을 계산하는 데에도 사용됩니다: r = A / s. 따라서 둘레는 몇 가지 중요한 삼각형 계산의 시작점입니다.",
             "이 도구를 사용하여 이미 둘레를 계산한 경우 결과를 2로 나누거나 전용 반둘레 계산기를 사용하여 반둘레를 찾을 수 있습니다."
           ]
         },
@@ -5961,7 +5961,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "두 변만으로 둘레를 구할 수 있나요?",
-          "answer": "예, 하지만 먼저 피타고라스 정리를 사용하여 누락된 세 번째 변을 계산해야 합니다. 빗변이 없는 경우 c = √(a² + b²)이거나 누락된 다리 = √(c² – 알려진 다리²)입니다. 그런 다음 세 변을 모두 추가하여 둘레를 얻습니다."
+          "answer": "예, 하지만 먼저 피타고라스 정리를 사용하여 누락된 세 번째 변을 계산해야 합니다. 빗변이 없는 경우 c = √(a² + b²)이거나 누락된 다리 = √(c² - 알려진 다리²)입니다. 그런 다음 세 변을 모두 추가하여 둘레를 얻습니다."
         },
         {
           "question": "둘레는 면적과 동일합니까?",
@@ -6378,8 +6378,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listTitle": "Formula untuk setiap kes sisi yang hilang:",
           "listItems": [
             "Jika c hilang: c = √(a² + b²), maka P = a + b + √(a² + b²)",
-            "Jika b hilang: b = √(c² – a²), maka P = a + √(c² – a²) + c",
-            "Jika a hilang: a = √(c² – b²), maka P = √(c² – b²) + b + c",
+            "Jika b hilang: b = √(c² - a²), maka P = a + √(c² - a²) + c",
+            "Jika a hilang: a = √(c² - b²), maka P = √(c² - b²) + b + c",
             "Sentiasa pastikan bahawa c > a dan c > b apabila menggunakan bentuk penolakan, jika tidak nilai tersebut tidak membentuk segi tiga bersudut tegak yang sah."
           ]
         },
@@ -6445,7 +6445,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "h2": "Hubungan Antara Perimeter dan Semiperimeter",
           "paragraphs": [
             "Semiperimeter (s) ialah separuh tepat daripada perimeter: s = P / 2 = (a + b + c) / 2. Walaupun perimeter memberikan anda jumlah panjang sempadan, semiperimeter ialah nilai kemudahan yang digunakan dalam formula yang lebih lanjutan.",
-            "Semiperimeter muncul dalam formula Heron untuk luas segi tiga: A = √[s(s–a)(s–b)(s–c)]. Ia juga digunakan untuk mengira injejari (jejari bulatan terterap): r = A / s. Jadi perimeter ialah titik permulaan untuk beberapa pengiraan segi tiga yang penting.",
+            "Semiperimeter muncul dalam formula Heron untuk luas segi tiga: A = √[s(s-a)(s-b)(s-c)]. Ia juga digunakan untuk mengira injejari (jejari bulatan terterap): r = A / s. Jadi perimeter ialah titik permulaan untuk beberapa pengiraan segi tiga yang penting.",
             "Jika anda telah mengira perimeter menggunakan alat ini, anda boleh mencari semiperimeter dengan hanya membahagikan hasilnya dengan 2, atau menggunakan kalkulator semiperimeter khusus kami."
           ]
         },
@@ -6529,7 +6529,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Bolehkah saya mencari perimeter dengan hanya dua sisi?",
-          "answer": "Ya, tetapi anda mesti mengira sisi ketiga yang hilang terlebih dahulu menggunakan teorem Pythagoras: c = √(a² + b²) jika hipotenus hilang, atau kaki yang hilang = √(c² – kaki yang diketahui²). Kemudian tambahkan ketiga-tiga sisi untuk mendapatkan perimeter."
+          "answer": "Ya, tetapi anda mesti mengira sisi ketiga yang hilang terlebih dahulu menggunakan teorem Pythagoras: c = √(a² + b²) jika hipotenus hilang, atau kaki yang hilang = √(c² - kaki yang diketahui²). Kemudian tambahkan ketiga-tiga sisi untuk mendapatkan perimeter."
         },
         {
           "question": "Adakah perimeter sama dengan luas?",
@@ -7018,8 +7018,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listTitle": "Wzory dla każdego przypadku brakującej strony:",
           "listItems": [
             "Jeśli brakuje c: c = √(a² + b²), to P = a + b + √(a² + b²)",
-            "Jeżeli brakuje b: b = √(c² – a²), to P = a + √(c² – a²) + c",
-            "Jeżeli brakuje a: a = √(c² – b²), to P = √(c² – b²) + b + c",
+            "Jeżeli brakuje b: b = √(c² - a²), to P = a + √(c² - a²) + c",
+            "Jeżeli brakuje a: a = √(c² - b²), to P = √(c² - b²) + b + c",
             "Zawsze sprawdzaj, czy c > a i c > b, gdy używasz formy odejmowania, w przeciwnym razie wartości nie tworzą prawidłowego trójkąta prostokątnego."
           ]
         },
@@ -7085,7 +7085,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "h2": "Związek między obwodem a półobwodem",
           "paragraphs": [
             "Półobwód (s) to dokładnie połowa obwodu: s = P / 2 = (a + b + c) / 2. Podczas gdy obwód podaje całkowitą długość granicy, półobwód jest wygodną wartością używaną w bardziej zaawansowanych wzorach.",
-            "Półobwód pojawia się we wzorze Herona na pole trójkąta: A = √[s(s–a)(s–b)(s–c)]. Służy również do obliczania promienia (promień okręgu wpisanego): r = A / s. Zatem obwód jest punktem wyjścia dla kilku ważnych obliczeń trójkąta.",
+            "Półobwód pojawia się we wzorze Herona na pole trójkąta: A = √[s(s-a)(s-b)(s-c)]. Służy również do obliczania promienia (promień okręgu wpisanego): r = A / s. Zatem obwód jest punktem wyjścia dla kilku ważnych obliczeń trójkąta.",
             "Jeśli obliczyłeś już obwód za pomocą tego narzędzia, możesz znaleźć półobwód, dzieląc wynik przez 2 lub korzystając z naszego dedykowanego kalkulatora półobwodu."
           ]
         },
@@ -7169,7 +7169,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Czy mogę znaleźć obwód mający tylko dwa boki?",
-          "answer": "Tak, ale najpierw musisz obliczyć brakującą trzecią stronę, korzystając z twierdzenia Pitagorasa: c = √(a² + b²) w przypadku braku przeciwprostokątnej lub brakująca odnoga = √(c² – znana noga²). Następnie dodaj wszystkie trzy boki, aby uzyskać obwód."
+          "answer": "Tak, ale najpierw musisz obliczyć brakującą trzecią stronę, korzystając z twierdzenia Pitagorasa: c = √(a² + b²) w przypadku braku przeciwprostokątnej lub brakująca odnoga = √(c² - znana noga²). Następnie dodaj wszystkie trzy boki, aby uzyskać obwód."
         },
         {
           "question": "Czy obwód to to samo co pole?",
@@ -7379,7 +7379,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Przykład 3 – Długości boków dziesiętnych",
+          "h2": "Przykład 3 - Długości boków dziesiętnych",
           "paragraphs": [
             "Ułamki dziesiętne działają tak samo jak liczby całkowite. Biorąc pod uwagę a = 2,5, b = 6 i c = 6,5:"
           ],
@@ -7658,8 +7658,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listTitle": "Rumus untuk setiap kasus sisi hilang:",
           "listItems": [
             "Jika c tidak ada: c = √(a² + b²), maka P = a + b + √(a² + b²)",
-            "Jika b tidak ada: b = √(c² – a²), maka P = a + √(c² – a²) + c",
-            "Jika a tidak ada: a = √(c² – b²), maka P = √(c² – b²) + b + c",
+            "Jika b tidak ada: b = √(c² - a²), maka P = a + √(c² - a²) + c",
+            "Jika a tidak ada: a = √(c² - b²), maka P = √(c² - b²) + b + c",
             "Selalu verifikasi bahwa c > a dan c > b saat menggunakan bentuk pengurangan, jika tidak, nilainya tidak akan membentuk segitiga siku-siku yang valid."
           ]
         },
@@ -7725,7 +7725,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "h2": "Hubungan Antara Perimeter dan Semiperimeter",
           "paragraphs": [
             "Semiperimeter (s) sama persis dengan setengah keliling: s = P / 2 = (a + b + c) / 2. Meskipun keliling memberi Anda total panjang batas, semiperimeter adalah nilai praktis yang digunakan dalam rumus lebih lanjut.",
-            "Semiperimeter muncul dalam rumus Heron untuk luas segitiga: A = √[s(s–a)(s–b)(s–c)]. Ini juga digunakan untuk menghitung inradius (jari-jari lingkaran yang tertulis): r = A / s. Jadi keliling adalah titik awal untuk beberapa perhitungan penting segitiga.",
+            "Semiperimeter muncul dalam rumus Heron untuk luas segitiga: A = √[s(s-a)(s-b)(s-c)]. Ini juga digunakan untuk menghitung inradius (jari-jari lingkaran yang tertulis): r = A / s. Jadi keliling adalah titik awal untuk beberapa perhitungan penting segitiga.",
             "Jika Anda sudah menghitung keliling menggunakan alat ini, Anda dapat mencari semiperimeter hanya dengan membagi hasilnya dengan 2, atau gunakan kalkulator semiperimeter khusus kami."
           ]
         },
@@ -7809,7 +7809,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Bisakah saya mencari keliling yang hanya memiliki dua sisi?",
-          "answer": "Ya, tetapi Anda harus menghitung terlebih dahulu sisi ketiga yang hilang menggunakan teorema Pythagoras: c = √(a² + b²) jika sisi miringnya hilang, atau ada kaki yang hilang = √(c² – diketahui kaki²). Kemudian tambahkan ketiga sisinya untuk mendapatkan kelilingnya."
+          "answer": "Ya, tetapi Anda harus menghitung terlebih dahulu sisi ketiga yang hilang menggunakan teorema Pythagoras: c = √(a² + b²) jika sisi miringnya hilang, atau ada kaki yang hilang = √(c² - diketahui kaki²). Kemudian tambahkan ketiga sisinya untuk mendapatkan kelilingnya."
         },
         {
           "question": "Apakah keliling sama dengan luas?",
@@ -8298,8 +8298,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listTitle": "الصيغ لكل حالة من حالات الجانب المفقود:",
           "listItems": [
             "If c is missing: c = √(a² + b²), then P = a + b + √(a² + b²)",
-            "If b is missing: b = √(c² – a²), then P = a + √(c² – a²) + c",
-            "If a is missing: a = √(c² – b²), then P = √(c² – b²) + b + c",
+            "If b is missing: b = √(c² - a²), then P = a + √(c² - a²) + c",
+            "If a is missing: a = √(c² - b²), then P = √(c² - b²) + b + c",
             "Always verify that c > a and c > b when using the subtraction form, otherwise the values do not form a valid right triangle."
           ]
         },
@@ -8308,7 +8308,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "paragraphs": [
             "Practicing with different triangles helps build confidence. Below are three more worked examples using common Pythagorean triples and decimal values."
           ],
-          "listTitle": "مثال 1 – المثلث 5-12-13:",
+          "listTitle": "مثال 1 - المثلث 5-12-13:",
           "listItems": [
             "بالنظر إلى: أ = 5، ب = 12، ج = 13",
             "P = 5 + 12 + 13 = 30 units",
@@ -8365,7 +8365,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "h2": "العلاقة بين المحيط وشبه المحيط",
           "paragraphs": [
             "نصف المحيط هو بالضبط نصف المحيط: s = P / 2 = (a + b + c) / 2. بينما يمنحك المحيط إجمالي طول الحد، فإن نصف المحيط هو قيمة ملائمة تستخدم في الصيغ الأكثر تقدمًا.",
-            "يظهر نصف المحيط في صيغة هيرون لمساحة المثلث: A = √[s(s–a)(s–b)(s–c)]. يتم استخدامه أيضًا لحساب نصف القطر (نصف قطر الدائرة المنقوشة): r = A / s. لذا فإن المحيط هو نقطة البداية للعديد من حسابات المثلث المهمة.",
+            "يظهر نصف المحيط في صيغة هيرون لمساحة المثلث: A = √[s(s-a)(s-b)(s-c)]. يتم استخدامه أيضًا لحساب نصف القطر (نصف قطر الدائرة المنقوشة): r = A / s. لذا فإن المحيط هو نقطة البداية للعديد من حسابات المثلث المهمة.",
             "إذا كنت قد قمت بالفعل بحساب المحيط باستخدام هذه الأداة، فيمكنك العثور على نصف المحيط ببساطة عن طريق قسمة النتيجة على 2، أو استخدام حاسبة نصف المحيط المخصصة لدينا."
           ]
         },
@@ -8938,8 +8938,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listTitle": "Формули за всеки случай на липсваща страна:",
           "listItems": [
             "Ако c липсва: c = √(a² + b²), тогава P = a + b + √(a² + b²)",
-            "Ако b липсва: b = √(c² – a²), тогава P = a + √(c² – a²) + c",
-            "Ако a липсва: a = √(c² – b²), тогава P = √(c² – b²) + b + c",
+            "Ако b липсва: b = √(c² - a²), тогава P = a + √(c² - a²) + c",
+            "Ако a липсва: a = √(c² - b²), тогава P = √(c² - b²) + b + c",
             "Винаги проверявайте дали c > a и c > b, когато използвате формата за изваждане, в противен случай стойностите не образуват валиден правоъгълен триъгълник."
           ]
         },
@@ -9005,7 +9005,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "h2": "Връзка между периметър и полупериметър",
           "paragraphs": [
             "Полупериметърът (s) е точно половината от периметъра: s = P / 2 = (a + b + c) / 2. Докато периметърът ви дава общата дължина на границата, полупериметърът е удобна стойност, използвана в по-усъвършенствани формули.",
-            "Полупериметърът се появява във формулата на Heron за площта на триъгълника: A = √[s(s–a)(s–b)(s–c)]. Използва се и за изчисляване на вътрешния радиус (радиуса на вписаната окръжност): r = A / s. Така че периметърът е отправната точка за няколко важни изчисления на триъгълник.",
+            "Полупериметърът се появява във формулата на Heron за площта на триъгълника: A = √[s(s-a)(s-b)(s-c)]. Използва се и за изчисляване на вътрешния радиус (радиуса на вписаната окръжност): r = A / s. Така че периметърът е отправната точка за няколко важни изчисления на триъгълник.",
             "Ако вече сте изчислили периметъра с помощта на този инструмент, можете да намерите полупериметъра, като просто разделите резултата на 2, или използвайте нашия специален калкулатор за полупериметър."
           ]
         },
@@ -9089,7 +9089,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Мога ли да намеря периметъра само с две страни?",
-          "answer": "Да, но първо трябва да изчислите липсващата трета страна, като използвате Питагоровата теорема: c = √(a² + b²), ако хипотенузата липсва, или липсващ катет = √(c² – известен катет²). След това добавете и трите страни, за да получите периметъра."
+          "answer": "Да, но първо трябва да изчислите липсващата трета страна, като използвате Питагоровата теорема: c = √(a² + b²), ако хипотенузата липсва, или липсващ катет = √(c² - известен катет²). След това добавете и трите страни, за да получите периметъра."
         },
         {
           "question": "Периметърът е същият като площта?",
@@ -9578,8 +9578,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listTitle": "Her eksik kenar durumu için formüller:",
           "listItems": [
             "Eğer c eksikse: c = √(a² + b²), sonra P = a + b + √(a² + b²)",
-            "Eğer b eksikse: b = √(c² – a²), sonra P = a + √(c² – a²) + c",
-            "Eğer a eksikse: a = √(c² – b²), sonra P = √(c² – b²) + b + c",
+            "Eğer b eksikse: b = √(c² - a²), sonra P = a + √(c² - a²) + c",
+            "Eğer a eksikse: a = √(c² - b²), sonra P = √(c² - b²) + b + c",
             "Çıkarma formunu kullanırken her zaman c > a ve c > b olduğunu doğrulayın, aksi takdirde değerler geçerli bir dik üçgen oluşturmaz."
           ]
         },
@@ -9645,7 +9645,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "h2": "Çevre ve Yarıçevre Arasındaki İlişki",
           "paragraphs": [
             "Yarıçevre (s), çevrenin tam yarısıdır: s = P / 2 = (a + b + c) / 2. Çevre size toplam sınır uzunluğunu verirken, yarıçevre daha gelişmiş formüllerde kullanılan kolaylık sağlayan bir değerdir.",
-            "Yarıçevre, üçgen alanı için Heron formülünde görünür: A = √[s(s–a)(s–b)(s–c)]. Ayrıca iç teğet çemberin yarıçapını (içyarıçap) hesaplamak için de kullanılır: r = A / s. Dolayısıyla çevre, birkaç önemli üçgen hesaplamasının başlangıç noktasıdır.",
+            "Yarıçevre, üçgen alanı için Heron formülünde görünür: A = √[s(s-a)(s-b)(s-c)]. Ayrıca iç teğet çemberin yarıçapını (içyarıçap) hesaplamak için de kullanılır: r = A / s. Dolayısıyla çevre, birkaç önemli üçgen hesaplamasının başlangıç noktasıdır.",
             "Çevreyi bu aracı kullanarak zaten hesapladıysanız, yarıçevreyi sonucu sadece 2'ye bölerek bulabilir veya özel yarıçevre hesaplayıcımızı kullanabilirsiniz."
           ]
         },
@@ -9729,7 +9729,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Çevreyi sadece iki kenarla bulabilir miyim?",
-          "answer": "Evet, ancak önce eksik üçüncü kenarı Pisagor teoremini kullanarak hesaplamalısınız: Eğer hipotenüs eksikse c = √(a² + b²) veya eksik dik kenar = √(c² – bilinen dik kenar²). Ardından çevreyi elde etmek için üç kenarı da toplayın."
+          "answer": "Evet, ancak önce eksik üçüncü kenarı Pisagor teoremini kullanarak hesaplamalısınız: Eğer hipotenüs eksikse c = √(a² + b²) veya eksik dik kenar = √(c² - bilinen dik kenar²). Ardından çevreyi elde etmek için üç kenarı da toplayın."
         },
         {
           "question": "Çevre alanla aynı mıdır?",
@@ -10218,8 +10218,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listTitle": "Formler för varje fall med saknad sida:",
           "listItems": [
             "Om c saknas: c = √(a² + b²), sedan P = a + b + √(a² + b²)",
-            "Om b saknas: b = √(c² – a²), sedan P = a + √(c² – a²) + c",
-            "Om a saknas: a = √(c² – b²), sedan P = √(c² – b²) + b + c",
+            "Om b saknas: b = √(c² - a²), sedan P = a + √(c² - a²) + c",
+            "Om a saknas: a = √(c² - b²), sedan P = √(c² - b²) + b + c",
             "Verifiera alltid att c > a och c > b när du använder subtraktionsformen, annars bildar värdena inte en giltig rätvinklig triangel."
           ]
         },
@@ -10285,7 +10285,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "h2": "Förhållandet mellan omkrets och halv omkrets",
           "paragraphs": [
             "Den halva omkretsen (s) är exakt hälften av omkretsen: s = P / 2 = (a + b + c) / 2. Medan omkretsen ger dig den totala gränslängden, är den halva omkretsen ett bekvämlighetsvärde som används i mer avancerade formler.",
-            "Den halva omkretsen dyker upp i Herons formel för triangelns area: A = √[s(s–a)(s–b)(s–c)]. Den används också för att beräkna inskrivna cirkelns radie (inradien): r = A / s. Så omkretsen är startpunkten för flera viktiga triangelberäkningar.",
+            "Den halva omkretsen dyker upp i Herons formel för triangelns area: A = √[s(s-a)(s-b)(s-c)]. Den används också för att beräkna inskrivna cirkelns radie (inradien): r = A / s. Så omkretsen är startpunkten för flera viktiga triangelberäkningar.",
             "Om du redan har beräknat omkretsen med detta verktyg kan du hitta den halva omkretsen genom att helt enkelt dela resultatet med 2, eller använda vår dedikerade kalkylator för halv omkrets."
           ]
         },
@@ -10369,7 +10369,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "Kan jag hitta omkretsen med endast två sidor?",
-          "answer": "Ja, men du måste först beräkna den saknade tredje sidan med hjälp av Pythagoras sats: c = √(a² + b²) om hypotenusan saknas, eller en saknad katet = √(c² – känd katet²). Addera sedan alla tre sidorna för att få omkretsen."
+          "answer": "Ja, men du måste först beräkna den saknade tredje sidan med hjälp av Pythagoras sats: c = √(a² + b²) om hypotenusan saknas, eller en saknad katet = √(c² - känd katet²). Addera sedan alla tre sidorna för att få omkretsen."
         },
         {
           "question": "Är omkrets samma sak som area?",
@@ -10858,8 +10858,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listTitle": "每个缺失边情况的公式：",
           "listItems": [
             "如果缺少 c：c = √(a² + b²)，则 P = a + b + √(a² + b²)",
-            "如果缺少 b：b = √(c² – a²)，则 P = a + √(c² – a²) + c",
-            "如果缺少 a：a = √(c2 – b2)，则 P = √(c2 – b2) + b + c",
+            "如果缺少 b：b = √(c² - a²)，则 P = a + √(c² - a²) + c",
+            "如果缺少 a：a = √(c2 - b2)，则 P = √(c2 - b2) + b + c",
             "使用减法形式时，始终验证 c > a 且 c > b，否则这些值不会形成有效的直角三角形。"
           ]
         },
@@ -10925,7 +10925,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "h2": "周长和半周长之间的关系",
           "paragraphs": [
             "半周长 (s) 恰好是周长的一半：s = P / 2 = (a + b + c) / 2。虽然周长给出了总边界长度，但半周长是更高级公式中使用的方便值。",
-            "半周长出现在海伦三角形面积公式中：A = √[s(s–a)(s–b)(s–c)]。它还用于计算内半径（内切圆的半径）：r = A / s。所以周长是几个重要的三角形计算的起点。",
+            "半周长出现在海伦三角形面积公式中：A = √[s(s-a)(s-b)(s-c)]。它还用于计算内半径（内切圆的半径）：r = A / s。所以周长是几个重要的三角形计算的起点。",
             "如果您已经使用此工具计算过周长，则只需将结果除以 2 即可得出半周长，或者使用我们专用的半周长计算器。"
           ]
         },
@@ -11009,7 +11009,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "question": "我能求出只有两条边的周长吗？",
-          "answer": "是的，但您必须首先使用毕达哥拉斯定理计算缺失的第三条边：如果斜边缺失，则 c = √(a² + b²)，或者缺失的边 = √(c² – 已知边²)。然后将所有三个边相加即可得到周长。"
+          "answer": "是的，但您必须首先使用毕达哥拉斯定理计算缺失的第三条边：如果斜边缺失，则 c = √(a² + b²)，或者缺失的边 = √(c² - 已知边²)。然后将所有三个边相加即可得到周长。"
         },
         {
           "question": "周长和面积一样吗",

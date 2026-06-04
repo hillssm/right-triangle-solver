@@ -151,8 +151,8 @@
         "listTitle": "Her eksik kenar durumu için formüller:",
         "listItems": [
           "Eğer c eksikse: c = √(a² + b²), sonra P = a + b + √(a² + b²)",
-          "Eğer b eksikse: b = √(c² – a²), sonra P = a + √(c² – a²) + c",
-          "Eğer a eksikse: a = √(c² – b²), sonra P = √(c² – b²) + b + c",
+          "Eğer b eksikse: b = √(c² - a²), sonra P = a + √(c² - a²) + c",
+          "Eğer a eksikse: a = √(c² - b²), sonra P = √(c² - b²) + b + c",
           "Çıkarma formunu kullanırken her zaman c > a ve c > b olduğunu doğrulayın, aksi takdirde değerler geçerli bir dik üçgen oluşturmaz."
         ]
       },
@@ -218,7 +218,7 @@
         "h2": "Çevre ve Yarıçevre Arasındaki İlişki",
         "paragraphs": [
           "Yarıçevre (s), çevrenin tam yarısıdır: s = P / 2 = (a + b + c) / 2. Çevre size toplam sınır uzunluğunu verirken, yarıçevre daha gelişmiş formüllerde kullanılan kolaylık sağlayan bir değerdir.",
-          "Yarıçevre, üçgen alanı için Heron formülünde görünür: A = √[s(s–a)(s–b)(s–c)]. Ayrıca iç teğet çemberin yarıçapını (içyarıçap) hesaplamak için de kullanılır: r = A / s. Dolayısıyla çevre, birkaç önemli üçgen hesaplamasının başlangıç noktasıdır.",
+          "Yarıçevre, üçgen alanı için Heron formülünde görünür: A = √[s(s-a)(s-b)(s-c)]. Ayrıca iç teğet çemberin yarıçapını (içyarıçap) hesaplamak için de kullanılır: r = A / s. Dolayısıyla çevre, birkaç önemli üçgen hesaplamasının başlangıç noktasıdır.",
           "Çevreyi bu aracı kullanarak zaten hesapladıysanız, yarıçevreyi sonucu sadece 2'ye bölerek bulabilir veya özel yarıçevre hesaplayıcımızı kullanabilirsiniz."
         ]
       },
@@ -302,7 +302,7 @@
       },
       {
         "question": "Çevreyi sadece iki kenarla bulabilir miyim?",
-        "answer": "Evet, ancak önce eksik üçüncü kenarı Pisagor teoremini kullanarak hesaplamalısınız: Eğer hipotenüs eksikse c = √(a² + b²) veya eksik dik kenar = √(c² – bilinen dik kenar²). Ardından çevreyi elde etmek için üç kenarı da toplayın."
+        "answer": "Evet, ancak önce eksik üçüncü kenarı Pisagor teoremini kullanarak hesaplamalısınız: Eğer hipotenüs eksikse c = √(a² + b²) veya eksik dik kenar = √(c² - bilinen dik kenar²). Ardından çevreyi elde etmek için üç kenarı da toplayın."
       },
       {
         "question": "Çevre alanla aynı mıdır?",

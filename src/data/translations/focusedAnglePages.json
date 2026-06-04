@@ -1376,9 +1376,9 @@
         "intro": "Выбирайте метод синуса, если вам известна противоположная сторона и гипотенуза, но не прилежащая сторона.",
         "items": [
           "Задачи по физике - нахождение углов запуска или углов наклона по высоте и наклонной дистанции.",
-          "Плотницкие и кровельные работы – расчет угла наклона по высоте стропил и длине стропил.",
+          "Плотницкие и кровельные работы - расчет угла наклона по высоте стропил и длине стропил.",
           "Домашнее задание по триггеру - решение задач о прямоугольном треугольнике, где заданы только a и c.",
-          "Навигация – определение пеленговых углов по вертикальному смещению и прямолинейному расстоянию."
+          "Навигация - определение пеленговых углов по вертикальному смещению и прямолинейному расстоянию."
         ]
       },
       "commonMistakes": {
@@ -1510,7 +1510,7 @@
         "notes": [
           "c всегда является гипотенузой.",
           "Никогда не называйте ногу.",
-          "b – прилежащая сторона."
+          "b - прилежащая сторона."
         ]
       },
       "howToSteps": [
@@ -1538,10 +1538,10 @@
       "whenToUse": {
         "intro": "Выберите метод косинуса, если у вас есть прилежащая сторона и гипотенуза, но противоположная сторона неизвестна.",
         "items": [
-          "Геодезия – определение угла уклона местности по горизонтальному и наклонному расстояниям.",
+          "Геодезия - определение угла уклона местности по горизонтальному и наклонному расстояниям.",
           "Проблемы с тенями - расчет угла возвышения солнца по длине тени и расстоянию световых лучей.",
           "Домашнее задание по триггеру - решение угла, когда в задаче встречаются только b и c.",
-          "Инженерное дело – определение углов отклонения по базовым размерам и диагональным связям."
+          "Инженерное дело - определение углов отклонения по базовым размерам и диагональным связям."
         ]
       },
       "commonMistakes": {
@@ -1629,7 +1629,7 @@
       "howItWorks": {
         "h2": "Что делает этот калькулятор обратного тангенса",
         "paragraphs": [
-          "Тангенс – это отношение противоположной стороны к прилежащей стороне. Этот калькулятор меняет это соотношение на противоположное, используя arctan, чтобы найти точный угол - измерение гипотенузы не требуется.",
+          "Тангенс - это отношение противоположной стороны к прилежащей стороне. Этот калькулятор меняет это соотношение на противоположное, используя arctan, чтобы найти точный угол - измерение гипотенузы не требуется.",
           "Введите противоположную сторону a и прилегающую сторону b. Инструмент делит a на b, применяет обратную касательную и возвращает угол A в градусах."
         ],
         "cards": [
@@ -1655,7 +1655,7 @@
         "h2": "Angle From Tangent Formula",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
-          "Разделите противоположную сторону на соседнюю сторону. Результатом может быть любое положительное число (оно не ограничивается 0–1, как синус или косинус). Примените обратный тангенс (arctan), чтобы преобразовать это соотношение в угол A."
+          "Разделите противоположную сторону на соседнюю сторону. Результатом может быть любое положительное число (оно не ограничивается 0-1, как синус или косинус). Примените обратный тангенс (arctan), чтобы преобразовать это соотношение в угол A."
         ]
       },
       "diagram": {
@@ -1704,7 +1704,7 @@
           "Уклон и уклон - расчет угла дороги или съезда на основе подъема и спуска.",
           "Деревообработка - определение углов скоса или скоса по вертикальным и горизонтальным разрезам.",
           "Architecture - determining pitch angle from wall height and floor depth.",
-          "Быстрая проверка в полевых условиях – проверка значений угла, когда доступны только две стороны a и b."
+          "Быстрая проверка в полевых условиях - проверка значений угла, когда доступны только две стороны a и b."
         ]
       },
       "commonMistakes": {
@@ -1789,7 +1789,7 @@
         "h2": "Что делает этот калькулятор недостающих углов",
         "paragraphs": [
           "Каждый прямоугольный треугольник имеет один фиксированный угол 90°, поэтому два оставшихся острых угла должны иметь ровно 90°. Этот калькулятор вычитает угол, который вы знаете, из 90°, чтобы получить угол, которого вы не знаете.",
-          "Никакие длины сторон не нужны – просто введите известный острый угол (от 0° до 90°), и дополнительный угол появится мгновенно."
+          "Никакие длины сторон не нужны - просто введите известный острый угол (от 0° до 90°), и дополнительный угол появится мгновенно."
         ],
         "cards": [
           {
@@ -1942,7 +1942,7 @@
         "h2": "Que fait ce calculateur de sinus inverse",
         "paragraphs": [
           "Le rapport sinusoïdal compare le côté opposé à l’hypoténuse. Cette calculatrice inverse ce rapport en utilisant arcsin pour vous donner l'angle exact en degrés.",
-          "Entrez simplement le côté opposé a et l’hypoténuse c. L’hypoténuse doit être le côté le plus long – si elle est plus courte que a, le triangle ne peut pas exister."
+          "Entrez simplement le côté opposé a et l’hypoténuse c. L’hypoténuse doit être le côté le plus long - si elle est plus courte que a, le triangle ne peut pas exister."
         ],
         "cards": [
           {
@@ -2476,7 +2476,7 @@
         "Saisissez l'angle aigu que vous connaissez déjà (doit être compris entre 0° et 90°).",
         "Appuyez sur Calculer.",
         "Lisez l'angle aigu complémentaire à partir du résultat.",
-        "Vérifiez en additionnant les deux angles – ils doivent être exactement égaux à 90°."
+        "Vérifiez en additionnant les deux angles - ils doivent être exactement égaux à 90°."
       ],
       "example": {
         "h2": "Exemple étape par étape",
@@ -2559,7 +2559,7 @@
       "metaTitle": "Rechter Dreieckswinkel vom Sinus-Rechner | Finden Sie A = arcsin(a / c)",
       "metaDescription": "Verwenden Sie diesen rechtwinkligen Dreieckswinkel-aus-Sinus-Rechner, um den Winkel A von der gegenüberliegenden Seite a und der Hypotenuse c mit Formel, Schritten und Beispielen zu ermitteln.",
       "formulaSlug": "angle-from-sine",
-      "headerSummary": "Finden Sie den Winkel A sofort, indem Sie die Gegenkathete und die Hypotenuse eingeben – dieser Rechner wendet die Umkehrsinusformel für Sie an.",
+      "headerSummary": "Finden Sie den Winkel A sofort, indem Sie die Gegenkathete und die Hypotenuse eingeben - dieser Rechner wendet die Umkehrsinusformel für Sie an.",
       "calculator": {
         "heading": "Berechnen Sie den Winkel aus dem Sinus",
         "outputLabel": "Winkel A",
@@ -2580,7 +2580,7 @@
         "h2": "Was dieser Umkehrsinus-Rechner macht",
         "paragraphs": [
           "Das Sinusverhältnis vergleicht die Gegenkathete mit der Hypotenuse. Dieser Rechner kehrt dieses Verhältnis mithilfe von arcsin um, um den genauen Winkel in Grad zu erhalten.",
-          "Geben Sie einfach die Gegenkathete a und die Hypotenuse c ein. Die Hypotenuse muss die längste Seite sein – ist sie kürzer als a, kann das Dreieck nicht existieren."
+          "Geben Sie einfach die Gegenkathete a und die Hypotenuse c ein. Die Hypotenuse muss die längste Seite sein - ist sie kürzer als a, kann das Dreieck nicht existieren."
         ],
         "cards": [
           {
@@ -2627,7 +2627,7 @@
         ]
       },
       "howToSteps": [
-        "Identifizieren Sie die Seite direkt gegenüber von Winkel A – das ist Ihre gegenüberliegende Seite a.",
+        "Identifizieren Sie die Seite direkt gegenüber von Winkel A - das ist Ihre gegenüberliegende Seite a.",
         "Identifizieren Sie die Hypotenuse c, die längste Seite gegenüber der 90°-Ecke.",
         "Geben Sie beide Werte in die Felder oben ein.",
         "Drücken Sie Berechnen, um den Winkel A in Grad anzuzeigen.",
@@ -2646,15 +2646,15 @@
       },
       "resultMeaning": [
         "Die Ausgabe ist der spitze Winkel, dessen Sinus gleich a / c ist. Eine größere gegenüberliegende Seite relativ zur Hypotenuse führt zu einem größeren Winkel.",
-        "Wenn a beispielsweise genau die Hälfte von c ist, dann ist sin(A) = 0,5 und der Winkel A beträgt 30° – einer der häufigsten Sonderdreieckswerte."
+        "Wenn a beispielsweise genau die Hälfte von c ist, dann ist sin(A) = 0,5 und der Winkel A beträgt 30° - einer der häufigsten Sonderdreieckswerte."
       ],
       "whenToUse": {
         "intro": "Wählen Sie die Sinusmethode immer dann, wenn Sie die Gegenkathete und die Hypotenuse kennen, aber nicht die Ankathete.",
         "items": [
-          "Physikalische Probleme – Ermittlung von Startwinkeln oder Neigungswinkeln aus Höhe und Neigungsentfernung.",
-          "Zimmerei und Dachdeckerarbeiten – Berechnung des Neigungswinkels aus Sparrenhöhe und Sparrenlänge.",
-          "Trig-Hausaufgabe – Lösen von rechtwinkligen Dreiecksproblemen, bei denen nur a und c gegeben sind.",
-          "Navigation – Bestimmung von Peilwinkeln aus vertikaler Verschiebung und geradliniger Entfernung."
+          "Physikalische Probleme - Ermittlung von Startwinkeln oder Neigungswinkeln aus Höhe und Neigungsentfernung.",
+          "Zimmerei und Dachdeckerarbeiten - Berechnung des Neigungswinkels aus Sparrenhöhe und Sparrenlänge.",
+          "Trig-Hausaufgabe - Lösen von rechtwinkligen Dreiecksproblemen, bei denen nur a und c gegeben sind.",
+          "Navigation - Bestimmung von Peilwinkeln aus vertikaler Verschiebung und geradliniger Entfernung."
         ]
       },
       "commonMistakes": {
@@ -2790,8 +2790,8 @@
         ]
       },
       "howToSteps": [
-        "Identifizieren Sie die angrenzende Seite b – das Bein, das Winkel A physisch berührt.",
-        "Identifizieren Sie die Hypotenuse c – die längste Seite, direkt gegenüber dem rechten Winkel.",
+        "Identifizieren Sie die angrenzende Seite b - das Bein, das Winkel A physisch berührt.",
+        "Identifizieren Sie die Hypotenuse c - die längste Seite, direkt gegenüber dem rechten Winkel.",
         "Geben Sie beide Werte in die Felder oben ein.",
         "Drücken Sie Berechnen, um den Winkel A in Grad zu ermitteln.",
         "Überprüfen Sie vor dem Absenden noch einmal, ob b kürzer als c ist."
@@ -2809,15 +2809,15 @@
       },
       "resultMeaning": [
         "Die Ausgabe ist der spitze Winkel, dessen Kosinus gleich b / c ist. Eine kürzere Ankathete im Vergleich zur Hypotenuse bedeutet einen größeren Winkel.",
-        "Wenn b genau die Hälfte von c ist, beträgt das Verhältnis 0,5 und der Winkel A beträgt 60° – ein bekannter Wert aus dem speziellen Dreieck 30-60-90."
+        "Wenn b genau die Hälfte von c ist, beträgt das Verhältnis 0,5 und der Winkel A beträgt 60° - ein bekannter Wert aus dem speziellen Dreieck 30-60-90."
       ],
       "whenToUse": {
         "intro": "Wählen Sie die Kosinusmethode, wenn Sie die Ankathete und die Hypotenuse haben, die Gegenkathete jedoch unbekannt ist.",
         "items": [
-          "Vermessung – Ermitteln des Winkels einer Bodenneigung aus der horizontalen Entfernung und der Neigungsentfernung.",
-          "Schattenprobleme – Berechnung des Sonnenhöhenwinkels aus Schattenlänge und Lichtstrahlabstand.",
-          "Trig-Hausaufgabe – Lösung für einen Winkel, wenn nur b und c im Problem vorkommen.",
-          "Ingenieurwesen – Bestimmung der Ablenkwinkel aus Basismaßen und Diagonalaussteifungen."
+          "Vermessung - Ermitteln des Winkels einer Bodenneigung aus der horizontalen Entfernung und der Neigungsentfernung.",
+          "Schattenprobleme - Berechnung des Sonnenhöhenwinkels aus Schattenlänge und Lichtstrahlabstand.",
+          "Trig-Hausaufgabe - Lösung für einen Winkel, wenn nur b und c im Problem vorkommen.",
+          "Ingenieurwesen - Bestimmung der Ablenkwinkel aus Basismaßen und Diagonalaussteifungen."
         ]
       },
       "commonMistakes": {
@@ -2885,7 +2885,7 @@
       "metaTitle": "Rechtwinkliger Dreieckswinkel vom Tangentenrechner | Finden Sie A = arctan(a / b)",
       "metaDescription": "Verwenden Sie diesen rechtwinkligen Dreieckswinkel-aus-Tangens-Rechner, um den Winkel A von der gegenüberliegenden Seite a und der angrenzenden Seite b mit Formeln, Schritten und Beispielen zu ermitteln.",
       "formulaSlug": "angle-from-tangent",
-      "headerSummary": "Geben Sie beide Seiten a und b eines rechtwinkligen Dreiecks ein, um den Winkel A mithilfe der Umkehrtangensformel (arctan) zu ermitteln – eine Hypotenuse ist nicht erforderlich.",
+      "headerSummary": "Geben Sie beide Seiten a und b eines rechtwinkligen Dreiecks ein, um den Winkel A mithilfe der Umkehrtangensformel (arctan) zu ermitteln - eine Hypotenuse ist nicht erforderlich.",
       "calculator": {
         "heading": "Berechnen Sie den Winkel aus der Tangente",
         "outputLabel": "Winkel A",
@@ -2905,7 +2905,7 @@
       "howItWorks": {
         "h2": "Was dieser Umkehrtangens-Rechner macht",
         "paragraphs": [
-          "Tangens ist das Verhältnis der gegenüberliegenden Seite zur benachbarten Seite. Dieser Rechner kehrt dieses Verhältnis mithilfe von arctan um, um den genauen Winkel zu ermitteln – eine Hypotenusenmessung ist nicht erforderlich.",
+          "Tangens ist das Verhältnis der gegenüberliegenden Seite zur benachbarten Seite. Dieser Rechner kehrt dieses Verhältnis mithilfe von arctan um, um den genauen Winkel zu ermitteln - eine Hypotenusenmessung ist nicht erforderlich.",
           "Geben Sie die gegenüberliegende Seite a und die angrenzende Seite b ein. Das Werkzeug dividiert a durch b, wendet einen Umkehrtangens an und gibt den Winkel A in Grad zurück."
         ],
         "cards": [
@@ -2931,7 +2931,7 @@
         "h2": "Angle From Tangent Formula",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
-          "Teilen Sie die gegenüberliegende Seite durch die angrenzende Seite. Das Ergebnis kann eine beliebige positive Zahl sein (es ist nicht auf 0–1 wie Sinus oder Cosinus beschränkt). Wenden Sie den Umkehrtangens (arctan) an, um dieses Verhältnis in den Winkel A umzuwandeln."
+          "Teilen Sie die gegenüberliegende Seite durch die angrenzende Seite. Das Ergebnis kann eine beliebige positive Zahl sein (es ist nicht auf 0-1 wie Sinus oder Cosinus beschränkt). Wenden Sie den Umkehrtangens (arctan) an, um dieses Verhältnis in den Winkel A umzuwandeln."
         ]
       },
       "diagram": {
@@ -2953,11 +2953,11 @@
         ]
       },
       "howToSteps": [
-        "Identifizieren Sie die gegenüberliegende Seite a – das Bein direkt gegenüber von Winkel A.",
-        "Identifizieren Sie die angrenzende Seite b – den Schenkel, der den Winkel A an seinem Scheitelpunkt berührt.",
+        "Identifizieren Sie die gegenüberliegende Seite a - das Bein direkt gegenüber von Winkel A.",
+        "Identifizieren Sie die angrenzende Seite b - den Schenkel, der den Winkel A an seinem Scheitelpunkt berührt.",
         "Geben Sie beide Beinlängen in die Felder oben ein.",
         "Drücken Sie Berechnen, um den Winkel A in Grad anzuzeigen.",
-        "Wenn a gleich b ist, sollte der Winkel genau 45° betragen – eine schnelle Überprüfung der Plausibilität."
+        "Wenn a gleich b ist, sollte der Winkel genau 45° betragen - eine schnelle Überprüfung der Plausibilität."
       ],
       "example": {
         "h2": "Schritt-für-Schritt-Beispiel",
@@ -2972,15 +2972,15 @@
       },
       "resultMeaning": [
         "Die Ausgabe ist der spitze Winkel, dessen Tangens gleich a / b ist. Wenn die gegenüberliegende Seite a länger als die benachbarte Seite b ist, überschreitet der Winkel A 45°.",
-        "Wenn die beiden Seiten a und b gleich sind, ist tan(A) = 1 und der Winkel A beträgt genau 45° – das Kennzeichen eines gleichschenkligen rechtwinkligen Dreiecks."
+        "Wenn die beiden Seiten a und b gleich sind, ist tan(A) = 1 und der Winkel A beträgt genau 45° - das Kennzeichen eines gleichschenkligen rechtwinkligen Dreiecks."
       ],
       "whenToUse": {
         "intro": "Wählen Sie die Tangentenmethode, wenn Sie beide Seiten a und b kennen, aber keine Hypotenusenmessung haben.",
         "items": [
-          "Neigung und Gefälle – Berechnung des Straßen- oder Rampenwinkels aus Steigung und Gefälle.",
-          "Holzbearbeitung – Ermitteln von Gehrungs- oder Fasenwinkeln bei vertikalen und horizontalen Schnitten.",
+          "Neigung und Gefälle - Berechnung des Straßen- oder Rampenwinkels aus Steigung und Gefälle.",
+          "Holzbearbeitung - Ermitteln von Gehrungs- oder Fasenwinkeln bei vertikalen und horizontalen Schnitten.",
           "Architecture - determining pitch angle from wall height and floor depth.",
-          "Schnelle Feldprüfungen – Überprüfung der Winkelwerte, wenn nur die beiden Seiten a und b zugänglich sind."
+          "Schnelle Feldprüfungen - Überprüfung der Winkelwerte, wenn nur die beiden Seiten a und b zugänglich sind."
         ]
       },
       "commonMistakes": {
@@ -3048,7 +3048,7 @@
       "metaTitle": "Rechner für fehlende Winkel im rechten Dreieck | Finden Sie den fehlenden spitzen Winkel",
       "metaDescription": "Verwenden Sie diesen Rechner für fehlende Winkel im rechten Dreieck, um den anderen spitzen Winkel unter Verwendung von A + B = 90° mit Formel, Schritten und Beispielen zu ermitteln.",
       "formulaSlug": "angle-sum-exact",
-      "headerSummary": "Geben Sie einen spitzen Winkel ein und finden Sie sofort den anderen – die beiden spitzen Winkel in jedem rechtwinkligen Dreieck ergeben zusammen immer 90°.",
+      "headerSummary": "Geben Sie einen spitzen Winkel ein und finden Sie sofort den anderen - die beiden spitzen Winkel in jedem rechtwinkligen Dreieck ergeben zusammen immer 90°.",
       "calculator": {
         "heading": "Berechnen Sie den fehlenden Winkel",
         "outputLabel": "Winkel B",
@@ -3065,7 +3065,7 @@
         "h2": "Was dieser Rechner für fehlende Winkel macht",
         "paragraphs": [
           "Jedes rechtwinklige Dreieck hat einen festen Winkel von 90°, daher müssen die beiden verbleibenden spitzen Winkel genau 90° bilden. Dieser Rechner subtrahiert den Winkel, den Sie kennen, von 90°, um den Winkel zu ermitteln, den Sie nicht kennen.",
-          "Es sind keine Seitenlängen erforderlich – geben Sie einfach den bekannten spitzen Winkel (zwischen 0° und 90°) ein und der Komplementärwinkel erscheint sofort."
+          "Es sind keine Seitenlängen erforderlich - geben Sie einfach den bekannten spitzen Winkel (zwischen 0° und 90°) ein und der Komplementärwinkel erscheint sofort."
         ],
         "cards": [
           {
@@ -3114,7 +3114,7 @@
         "Geben Sie den Ihnen bereits bekannten spitzen Winkel ein (muss zwischen 0° und 90° liegen).",
         "Drücken Sie Berechnen.",
         "Lesen Sie aus dem Ergebnis den komplementären spitzen Winkel ab.",
-        "Überprüfen Sie dies, indem Sie beide Winkel addieren – sie müssen genau 90° betragen."
+        "Überprüfen Sie dies, indem Sie beide Winkel addieren - sie müssen genau 90° betragen."
       ],
       "example": {
         "h2": "Schritt-für-Schritt-Beispiel",
@@ -3569,7 +3569,7 @@
         "h2": "Angle From Tangent Formula",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
-          "Dividi il lato opposto per il lato adiacente. Il risultato può essere qualsiasi numero positivo (non è limitato a 0–1 come seno o coseno). Applicare la tangente inversa (arctan) per convertire tale rapporto nell'angolo A."
+          "Dividi il lato opposto per il lato adiacente. Il risultato può essere qualsiasi numero positivo (non è limitato a 0-1 come seno o coseno). Applicare la tangente inversa (arctan) per convertire tale rapporto nell'angolo A."
         ]
       },
       "diagram": {
@@ -3856,7 +3856,7 @@
         "h2": "O que esta calculadora de seno inverso faz",
         "paragraphs": [
           "A razão seno compara o lado oposto à hipotenusa. Esta calculadora inverte essa proporção usando arcsin para fornecer o ângulo exato em graus.",
-          "Basta inserir o lado oposto a e a hipotenusa c. A hipotenusa deve ser o lado mais longo – se for menor que a, o triângulo não pode existir."
+          "Basta inserir o lado oposto a e a hipotenusa c. A hipotenusa deve ser o lado mais longo - se for menor que a, o triângulo não pode existir."
         ],
         "cards": [
           {
@@ -4207,7 +4207,7 @@
         "h2": "Angle From Tangent Formula",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
-          "Divida o lado oposto pelo lado adjacente. O resultado pode ser qualquer número positivo (não está limitado a 0–1 como seno ou cosseno). Aplique tangente inversa (arctan) para converter essa relação em ângulo A."
+          "Divida o lado oposto pelo lado adjacente. O resultado pode ser qualquer número positivo (não está limitado a 0-1 como seno ou cosseno). Aplique tangente inversa (arctan) para converter essa relação em ângulo A."
         ]
       },
       "diagram": {
@@ -5842,7 +5842,7 @@
         "intro": "대변과 빗변은 알지만 인접변은 알 수 없는 경우에는 사인법을 선택하십시오.",
         "items": [
           "물리학 문제 - 높이와 경사 거리에서 발사 각도나 경사 각도를 찾는 것입니다.",
-          "목공 및 지붕 – 서까래 높이와 서까래 길이로부터 피치 각도를 계산합니다.",
+          "목공 및 지붕 - 서까래 높이와 서까래 길이로부터 피치 각도를 계산합니다.",
           "삼각 숙제 - a와 c만 주어지는 직각삼각형 문제를 푸는 것입니다.",
           "내비게이션 - 수직 변위와 직선 거리로부터 베어링 각도를 결정합니다."
         ]
@@ -6759,7 +6759,7 @@
         "h2": "Angle From Tangent Formula",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
-          "Bahagikan bahagian yang bertentangan dengan bahagian yang bersebelahan. Hasilnya boleh menjadi sebarang nombor positif (ia tidak terhad kepada 0–1 seperti sinus atau kosinus). Gunakan tangen songsang (arctan) untuk menukar nisbah itu kepada sudut A."
+          "Bahagikan bahagian yang bertentangan dengan bahagian yang bersebelahan. Hasilnya boleh menjadi sebarang nombor positif (ia tidak terhad kepada 0-1 seperti sinus atau kosinus). Gunakan tangen songsang (arctan) untuk menukar nisbah itu kepada sudut A."
         ]
       },
       "diagram": {
@@ -7046,7 +7046,7 @@
         "h2": "Co robi ten kalkulator odwrotnego sinusa",
         "paragraphs": [
           "Stosunek sinus porównuje przeciwną stronę do przeciwprostokątnej. Ten kalkulator odwraca ten stosunek za pomocą arcsin, aby uzyskać dokładny kąt w stopniach.",
-          "Wystarczy wpisać przeciwną stronę a i przeciwprostokątną c. Przeciwprostokątna musi być najdłuższym bokiem – jeśli jest krótsza niż a, trójkąt nie może istnieć."
+          "Wystarczy wpisać przeciwną stronę a i przeciwprostokątną c. Przeciwprostokątna musi być najdłuższym bokiem - jeśli jest krótsza niż a, trójkąt nie może istnieć."
         ],
         "cards": [
           {
@@ -7112,7 +7112,7 @@
       },
       "resultMeaning": [
         "Wynikiem jest kąt ostry, którego sinus jest równy a / c. Większy przeciwny bok w stosunku do przeciwprostokątnej tworzy większy kąt.",
-        "Na przykład, jeśli a wynosi dokładnie połowę c, wówczas sin(A) = 0,5, a kąt A wynosi 30° – jest to jedna z najczęstszych wartości trójkątów specjalnych."
+        "Na przykład, jeśli a wynosi dokładnie połowę c, wówczas sin(A) = 0,5, a kąt A wynosi 30° - jest to jedna z najczęstszych wartości trójkątów specjalnych."
       ],
       "whenToUse": {
         "intro": "Wybierz metodę sinus, jeśli znasz przeciwną stronę i przeciwprostokątną, ale nie sąsiednią stronę.",
@@ -7282,7 +7282,7 @@
         "items": [
           "Geodezja - wyznaczanie kąta nachylenia terenu na podstawie odległości poziomej i odległości skośnej.",
           "Zagadnienia cieni - obliczanie kąta elewacji słońca na podstawie długości cienia i odległości promieni świetlnych.",
-          "Zadanie domowe z trygonometrią – znalezienie kąta, gdy w zadaniu pojawiają się tylko b i c.",
+          "Zadanie domowe z trygonometrią - znalezienie kąta, gdy w zadaniu pojawiają się tylko b i c.",
           "Inżynieria - wyznaczanie kątów odchylenia na podstawie wymiarów bazowych i stężeń ukośnych."
         ]
       },
@@ -7397,7 +7397,7 @@
         "h2": "Angle From Tangent Formula",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
-          "Podziel przeciwną stronę przez sąsiednią stronę. Wynikiem może być dowolna liczba dodatnia (nie jest ograniczona do 0–1, jak sinus lub cosinus). Zastosuj odwrotną tangens (arctan), aby przekonwertować ten stosunek na kąt A."
+          "Podziel przeciwną stronę przez sąsiednią stronę. Wynikiem może być dowolna liczba dodatnia (nie jest ograniczona do 0-1, jak sinus lub cosinus). Zastosuj odwrotną tangens (arctan), aby przekonwertować ten stosunek na kąt A."
         ]
       },
       "diagram": {
@@ -7423,7 +7423,7 @@
         "Wskaż sąsiedni bok b - nogę, która styka się z kątem A w jego wierzchołku.",
         "Wprowadź obie długości nogawek w powyższych polach.",
         "Naciśnij Oblicz, aby zobaczyć kąt A w stopniach.",
-        "Jeśli a równa się b, kąt powinien wynosić dokładnie 45° – szybka kontrola poprawności."
+        "Jeśli a równa się b, kąt powinien wynosić dokładnie 45° - szybka kontrola poprawności."
       ],
       "example": {
         "h2": "Przykład krok po kroku",
@@ -7438,7 +7438,7 @@
       },
       "resultMeaning": [
         "Wynikiem jest kąt ostry, którego tangens jest równy a / b. Jeżeli przeciwległy bok a jest dłuższy od sąsiedniego boku b, to kąt A przekracza 45°.",
-        "Gdy dwa boki a i b są równe, tan(A) = 1, a kąt A wynosi dokładnie 45° – jest to cecha charakterystyczna trójkąta prostokątnego równoramiennego."
+        "Gdy dwa boki a i b są równe, tan(A) = 1, a kąt A wynosi dokładnie 45° - jest to cecha charakterystyczna trójkąta prostokątnego równoramiennego."
       ],
       "whenToUse": {
         "intro": "Wybierz metodę styczną, jeśli znasz obie strony a i b, ale nie masz pomiaru przeciwprostokątnej.",
@@ -8035,7 +8035,7 @@
         "h2": "Angle From Tangent Formula",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
-          "Bagilah sisi yang berlawanan dengan sisi yang berdekatan. Hasilnya bisa berupa bilangan positif apa pun (tidak terbatas pada 0–1 seperti sinus atau cosinus). Terapkan tangen terbalik (arctan) untuk mengubah perbandingan tersebut menjadi sudut A."
+          "Bagilah sisi yang berlawanan dengan sisi yang berdekatan. Hasilnya bisa berupa bilangan positif apa pun (tidak terbatas pada 0-1 seperti sinus atau cosinus). Terapkan tangen terbalik (arctan) untuk mengubah perbandingan tersebut menjadi sudut A."
         ]
       },
       "diagram": {
@@ -9311,7 +9311,7 @@
         "h2": "Angle From Tangent Formula",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
-          "Разделете противоположната страна на съседната страна. Резултатът може да бъде всяко положително число (не се ограничава до 0–1 като синус или косинус). Приложете обратна тангенс (arctan), за да преобразувате това съотношение в ъгъл A."
+          "Разделете противоположната страна на съседната страна. Резултатът може да бъде всяко положително число (не се ограничава до 0-1 като синус или косинус). Приложете обратна тангенс (arctan), за да преобразувате това съотношение в ъгъл A."
         ]
       },
       "diagram": {
@@ -9671,7 +9671,7 @@
         "items": [
           "Fizik problemleri - yükseklikten ve eğik mesafeden fırlatma açılarını veya eğim açılarını bulma.",
           "Marangozluk ve çatı kaplama - kiriş yükselişi ve kiriş uzunluğundan eğim açısının hesaplanması.",
-          "Trigonometrik ödev – yalnızca a ve c'nin verildiği dik üçgen problemlerini çözme.",
+          "Trigonometrik ödev - yalnızca a ve c'nin verildiği dik üçgen problemlerini çözme.",
           "Navigasyon - dikey yer değiştirme ve düz çizgi mesafesinden yön açılarının belirlenmesi."
         ]
       },
@@ -9833,7 +9833,7 @@
         "intro": "Bitişik kenar ve hipotenüs varken karşı kenar bilinmiyorsa kosinüs yöntemini seçin.",
         "items": [
           "Ölçme - yatay mesafeden ve eğik mesafeden zemin eğiminin açısını bulma.",
-          "Gölge problemleri – gölge uzunluğundan ve ışık ışını mesafesinden güneşin yükselme açısının hesaplanması.",
+          "Gölge problemleri - gölge uzunluğundan ve ışık ışını mesafesinden güneşin yükselme açısının hesaplanması.",
           "Trigonometri ödevi - problemde yalnızca b ve c göründüğünde bir açıyı çözme.",
           "Mühendislik - taban ölçümlerinden ve çapraz desteklerden sapma açılarının belirlenmesi."
         ]
@@ -10587,7 +10587,7 @@
         "h2": "Angle From Tangent Formula",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
-          "Dela den motsatta sidan med den intilliggande sidan. Resultatet kan bli vilket positivt tal som helst (det är inte begränsat till 0–1 som sinus eller cosinus). Använd invers tangent (arctan) för att omvandla det förhållandet till vinkel A."
+          "Dela den motsatta sidan med den intilliggande sidan. Resultatet kan bli vilket positivt tal som helst (det är inte begränsat till 0-1 som sinus eller cosinus). Använd invers tangent (arctan) för att omvandla det förhållandet till vinkel A."
         ]
       },
       "diagram": {

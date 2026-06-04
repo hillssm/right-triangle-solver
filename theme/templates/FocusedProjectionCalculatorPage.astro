@@ -1,11 +1,13 @@
 ---
 import type { FocusedProjectionCalculatorPage as FocusedProjectionCalculatorPageData } from 'src/data/focusedProjectionCalculatorPages';
-import { FOCUSED_PROJECTION_PLACEHOLDER_TEXT } from 'src/data/focusedProjectionCalculatorPages';
+import Faq from 'theme/components/Faq.astro';
 import FormulaCalculator from 'theme/components/FormulaCalculator.astro';
 import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
+import katex from 'katex';
+import 'katex/dist/katex.min.css';
 
 interface Props {
   page: FocusedProjectionCalculatorPageData;
@@ -45,6 +47,19 @@ const breadcrumbSchema = {
   }))
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: page.faqs.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.answer
+    }
+  }))
+};
+
 const calculatorMessages = {
   positive: 'Please enter positive values.',
   invalid: 'These values may not form a valid right triangle.',
@@ -52,6 +67,12 @@ const calculatorMessages = {
   projectionLessThanHypotenuse: 'Projection value must be less than hypotenuse c.',
   invalidTriangle: 'These values may not form a valid right triangle.'
 };
+
+const renderMath = (expression: string, displayMode = true) =>
+  katex.renderToString(expression, {
+    throwOnError: false,
+    displayMode
+  });
 ---
 
 <BaseLayout
@@ -65,6 +86,12 @@ const calculatorMessages = {
     slot="head"
     type="application/ld+json"
     set:html={JSON.stringify(breadcrumbSchema)}
+  ></script>
+  <script
+    is:inline
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(faqSchema)}
   ></script>
 
   <nav class="mx-auto mb-6 w-full max-w-4xl" aria-label="Breadcrumb">
@@ -91,8 +118,16 @@ const calculatorMessages = {
       Projection Calculator
     </p>
     <h1 class="mt-3 break-words text-3xl font-bold leading-tight sm:text-4xl">{page.h1}</h1>
-    <p class="mt-4 max-w-3xl break-words text-on-surface-variant">{page.metaDescription}</p>
+    <div class="mt-4 grid gap-3 text-on-surface-variant">
+      {page.intro.map((paragraph) => (
+        <p class="max-w-3xl break-words leading-relaxed">{paragraph}</p>
+      ))}
+    </div>
   </header>
+
+  <section class="mx-auto mb-8 w-full max-w-4xl section-shell">
+    <p class="text-sm leading-relaxed text-on-surface-variant">{page.calculatorNote}</p>
+  </section>
 
   <FormulaCalculator
     formula={page.formula}
@@ -101,27 +136,196 @@ const calculatorMessages = {
     messages={calculatorMessages}
   />
 
-  {page.placeholderSections.map((heading) => (
-    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-      <h2>{heading}</h2>
-      <p>{FOCUSED_PROJECTION_PLACEHOLDER_TEXT}</p>
-      {heading === 'Related Calculators' && (
-        <div class="not-prose mt-5 grid gap-4 sm:grid-cols-2">
-          {page.relatedLinks.map((link) => (
-            <a
-              href={localizePath(locale, link.href)}
-              class="group rounded-lg border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
-            >
-              <h3 class="break-words text-base font-semibold text-on-surface group-hover:text-primary">
-                {link.label}
-              </h3>
-              <p class="mt-3 text-[11px] uppercase tracking-widest text-primary">
-                {openToolLabel}
-              </p>
-            </a>
-          ))}
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>Formula</h2>
+    <div class="not-prose mt-4 grid gap-3">
+      {page.formulaSection.formulas.map((expression) => (
+        <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
+          <div
+            class="math-textbook min-w-max text-2xl text-tertiary"
+            dir="ltr"
+            set:html={renderMath(expression)}
+          />
         </div>
-      )}
-    </section>
-  ))}
+      ))}
+    </div>
+    {page.formulaSection.paragraphs.map((paragraph) => (
+      <p>{paragraph}</p>
+    ))}
+    <ul>
+      {page.formulaSection.validation.map((item) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+    <h2 class="text-2xl font-semibold">Triangle Diagram</h2>
+    <p class="mt-3 max-w-3xl leading-relaxed text-on-surface-variant">{page.diagram.intro}</p>
+
+    <figure class="mt-5">
+      <div class="overflow-x-auto rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-3">
+        <svg
+          class="mx-auto block h-auto min-w-[560px] max-w-full"
+          viewBox="0 0 620 390"
+          role="img"
+          aria-labelledby={`${page.slug}-diagram-title ${page.slug}-diagram-desc`}
+        >
+          <title id={`${page.slug}-diagram-title`}>Triangle Diagram</title>
+          <desc id={`${page.slug}-diagram-desc`}>{page.diagram.caption}</desc>
+          <rect
+            x="16"
+            y="16"
+            width="588"
+            height="358"
+            rx="18"
+            fill="var(--color-surface-container-low)"
+            stroke="var(--color-outline-variant)"
+            stroke-opacity="0.35"
+          />
+          <path
+            d="M90 300 L250 88 L530 300 Z"
+            fill="rgba(241, 201, 125, 0.06)"
+            stroke="var(--color-outline-variant)"
+            stroke-width="2"
+            stroke-opacity="0.7"
+          />
+          <line
+            x1="250"
+            y1="88"
+            x2="250"
+            y2="300"
+            stroke="var(--color-tertiary)"
+            stroke-width="2.5"
+            stroke-dasharray="8 7"
+            stroke-linecap="round"
+          />
+          <line
+            x1="90"
+            y1="300"
+            x2="250"
+            y2="300"
+            stroke="var(--color-primary)"
+            stroke-width="4"
+            stroke-linecap="round"
+          />
+          <line
+            x1="250"
+            y1="300"
+            x2="530"
+            y2="300"
+            stroke="var(--color-secondary)"
+            stroke-width="4"
+            stroke-linecap="round"
+          />
+          <path
+            d="M233 110 L255 127 L272 105"
+            fill="none"
+            stroke="var(--color-primary)"
+            stroke-width="3"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M238 276 H262 V300"
+            fill="none"
+            stroke="var(--color-tertiary)"
+            stroke-width="3"
+            stroke-linejoin="round"
+          />
+          <text x="250" y="73" text-anchor="middle" class="math-textbook fill-on-surface text-[18px]">90°</text>
+          <text x="145" y="185" text-anchor="middle" class="math-textbook fill-on-surface text-[18px]">leg a</text>
+          <text x="420" y="182" text-anchor="middle" class="math-textbook fill-on-surface text-[18px]">leg b</text>
+          <text x="310" y="285" text-anchor="middle" class="math-textbook fill-on-surface text-[18px]">hypotenuse c</text>
+          <text x="170" y="335" text-anchor="middle" class="math-textbook fill-primary text-[18px]">projection p</text>
+          <text x="390" y="335" text-anchor="middle" class="math-textbook fill-secondary text-[18px]">projection q</text>
+          <text x="222" y="202" text-anchor="end" class="math-textbook fill-tertiary text-[18px]">altitude h</text>
+          <circle cx="90" cy="300" r="4" fill="var(--color-outline)" />
+          <circle cx="250" cy="300" r="4" fill="var(--color-tertiary)" />
+          <circle cx="530" cy="300" r="4" fill="var(--color-outline)" />
+          <circle cx="250" cy="88" r="4" fill="var(--color-primary)" />
+        </svg>
+      </div>
+      <figcaption class="mt-3 text-sm text-on-surface-variant">{page.diagram.caption}</figcaption>
+    </figure>
+
+    <ul class="mt-4 grid gap-2 text-sm text-on-surface-variant sm:grid-cols-3">
+      {page.diagram.notes.map((note) => (
+        <li class="rounded-lg border border-outline-variant/20 bg-surface-container-lowest/45 p-3">{note}</li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>How to Use This Calculator</h2>
+    <ol>
+      {page.howTo.map((step) => (
+        <li>{step}</li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>Step-by-Step Example</h2>
+    <p>{page.example.intro}</p>
+    <div class="not-prose mt-4 rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 p-4">
+      <ol class="grid gap-2">
+        {page.example.lines.map((line) => (
+          <li class="math-textbook text-lg text-on-surface" dir="ltr">{line}</li>
+        ))}
+      </ol>
+    </div>
+    <p>{page.example.explanation}</p>
+  </section>
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>What the Result Means</h2>
+    {page.resultMeaning.map((paragraph) => (
+      <p>{paragraph}</p>
+    ))}
+  </section>
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>When to Use This Calculator</h2>
+    <ul>
+      {page.whenUse.map((item) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <h2>Common Mistakes</h2>
+    <ul>
+      {page.commonMistakes.map((item) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+    <h2 class="text-2xl font-semibold">Related Calculators</h2>
+    <div class="mt-5 grid gap-4 sm:grid-cols-2">
+      {page.relatedLinks.map((link) => (
+        <a
+          href={localizePath(locale, link.href)}
+          class="group rounded-lg border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
+        >
+          <h3 class="break-words text-base font-semibold text-on-surface group-hover:text-primary">
+            {link.label}
+          </h3>
+          <p class="mt-3 text-[11px] uppercase tracking-widest text-primary">
+            {openToolLabel}
+          </p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <div class="mx-auto mt-8 w-full max-w-4xl">
+    <Faq
+      heading="FAQs"
+      description="Short answers to common questions about this projection calculator."
+      items={page.faqs}
+    />
+  </div>
 </BaseLayout>

@@ -101,7 +101,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     toolPurpose: 'Enter all three sides of a right triangle to instantly compute the total distance around it. The calculator shows the formula, step-by-step work, and a live diagram so you can verify every value before using the result.',
     intro: 'Enter leg a, leg b, and hypotenuse c to calculate the total perimeter of a right triangle.',
     quickSummary: {
-      h2: 'What This Perimeter Calculator Solves',
+      h2: 'What This Tool Solves',
       intro: 'Use this page when you already know all three side lengths of a right triangle and need the total boundary length. It is designed for quick arithmetic, unit-aware inputs, and easy visual checking.',
       cards: [
         { label: 'Known values', value: 'Leg a, leg b, and hypotenuse c' },
@@ -395,7 +395,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     toolPurpose: 'Find the semiperimeter s of a right triangle from all three side lengths, then use it as a clean checkpoint for area, inradius, and geometry formulas that depend on half the perimeter.',
     intro: 'Enter leg a, leg b, and hypotenuse c to calculate the right triangle semiperimeter s.',
     quickSummary: {
-      h2: 'What This Semiperimeter Calculator Solves',
+      h2: 'What This Tool Solves',
       intro: 'Use this page when you need the half-perimeter value s for a right triangle. It is especially helpful before using Heron-style area formulas, inradius formulas, or geometry identities that reference s.',
       cards: [
         { label: 'Known values', value: 'Leg a, leg b, and hypotenuse c' },
@@ -550,7 +550,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
         ]
       },
       {
-        h2: 'When to Use This Semiperimeter Calculator',
+        h2: 'When to Use This Tool',
         paragraphs: [
           'Use this calculator when a geometry problem gives all three right-triangle side lengths and asks for s, half-perimeter, or a formula that depends on semiperimeter.',
           'It is also useful as a quick check after solving a missing side. Once you know a, b, and c, the semiperimeter should be simple and exact: add the sides, then divide by 2.'
@@ -659,7 +659,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     toolPurpose: 'Enter the two legs of a right triangle and this calculator instantly computes the area. It shows the formula used, a full step-by-step breakdown, and a live diagram so you can double-check every value before copying the result.',
     intro: 'Need the area of a right triangle when you already know both legs? This is the fastest method. Just type in leg a and leg b, and the calculator does the rest.',
     quickSummary: {
-      h2: 'What This Area From Legs Calculator Solves',
+      h2: 'What This Tool Solves',
       intro: 'This page is built for the simplest and most common area scenario: you know both perpendicular sides of a right triangle and want the enclosed area. No angles, no hypotenuse, no extra steps.',
       cards: [
         { label: 'Known values', value: 'Leg a and leg b (the two sides forming the right angle)' },
@@ -829,7 +829,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     toolPurpose: 'Enter one leg, the hypotenuse, and an acute angle to find the area of a right triangle. The calculator supports two modes\u2014one for angle A with side b, and one for angle B with side a\u2014so you can use whichever values you already have.',
     intro: 'Don\u2019t know both legs? No problem. If you have one leg, the hypotenuse, and an acute angle, you can still find the area. This calculator uses the sine-based area rule to get you there.',
     quickSummary: {
-      h2: 'What This Area From Angle Calculator Solves',
+      h2: 'What This Tool Solves',
       intro: 'This page handles the scenario where you know one side, the hypotenuse c, and one acute angle. Instead of finding the missing leg first, the sine area formula jumps straight to the answer.',
       cards: [
         { label: 'Known values', value: 'One leg, hypotenuse c, and one acute angle (A or B)' },
@@ -1025,7 +1025,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     toolPurpose: 'Enter the inradius and semiperimeter of a right triangle and this calculator gives you the area instantly. It displays the formula, the substitution, and the final answer so you can verify the math at every step.',
     intro: 'Already know the inradius and semiperimeter of your right triangle? Then finding the area is just one multiplication away. This calculator handles that specific case.',
     quickSummary: {
-      h2: 'What This Area From Semiperimeter Calculator Solves',
+      h2: 'What This Tool Solves',
       intro: 'This page covers a less common but powerful area method: using the incircle radius (r) and the semiperimeter (s). It is most useful in advanced geometry problems and competition math where these values are already computed.',
       cards: [
         { label: 'Known values', value: 'Inradius r and semiperimeter s' },
@@ -1199,7 +1199,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     toolPurpose: 'Enter the hypotenuse and the altitude drawn to it, and this calculator computes the area of the right triangle. It shows the formula, step-by-step substitution, and a diagram that makes the geometry easy to visualize.',
     intro: 'When you know the hypotenuse and the perpendicular distance from the right-angle vertex to the hypotenuse, you can find the area in one step. This calculator handles that case.',
     quickSummary: {
-      h2: 'What This Area From Altitude Calculator Solves',
+      h2: 'What This Tool Solves',
       intro: 'This page covers the altitude-based area method. The altitude h is the perpendicular line segment from the right-angle vertex to the hypotenuse. Combined with the hypotenuse length, it gives the area directly.',
       cards: [
         { label: 'Known values', value: 'Hypotenuse c and altitude h (drawn to the hypotenuse)' },
@@ -1371,7 +1371,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
   toolPurpose: "Enter one leg, the hypotenuse, and the included angle to calculate area using trigonometric formulas.",
   intro: "Enter leg b, hypotenuse c, and angle A to find the exact area of your right triangle.",
   quickSummary: {
-    h2: "What This Area Calculator Solves",
+    h2: 'What This Tool Solves',
     intro: "Use this calculator when you only know two sides and the included angle. This method uses trigonometry to find the exact area without needing the third side.",
     cards: [
       {

@@ -1,6 +1,8 @@
 ---
 import {
+  FOCUSED_ANGLE_CALCULATOR_PAGE_SLUGS,
   FOCUSED_ANGLE_LEGACY_REDIRECT_SLUGS,
+  getFocusedAngleCalculatorPage,
   getFocusedAngleLegacyRedirect
 } from 'src/data/focusedAngleCalculatorPages';
 import {
@@ -15,10 +17,36 @@ import {
   FOCUSED_TRIPLES_CALCULATOR_PAGE_SLUGS,
   getFocusedTriplesCalculatorPage
 } from 'src/data/focusedTriplesCalculatorPages';
+import {
+  FOCUSED_SIDE_CALCULATOR_PAGE_SLUGS,
+  getFocusedSideCalculatorPage
+} from 'src/data/focusedSideCalculatorPages';
+import {
+  FOCUSED_MEASUREMENT_CALCULATOR_PAGE_SLUGS,
+  getFocusedMeasurementCalculatorPage
+} from 'src/data/focusedMeasurementCalculatorPages';
+import {
+  FOCUSED_TRIG_RATIO_CALCULATOR_PAGE_SLUGS,
+  getFocusedTrigRatioCalculatorPage
+} from 'src/data/focusedTrigRatioCalculatorPages';
+import {
+  FOCUSED_ALTITUDE_CALCULATOR_PAGE_SLUGS,
+  getFocusedAltitudeCalculatorPage
+} from 'src/data/focusedAltitudeCalculatorPages';
+import {
+  FOCUSED_PROJECTION_CALCULATOR_PAGE_SLUGS,
+  getFocusedProjectionCalculatorPage
+} from 'src/data/focusedProjectionCalculatorPages';
 import { GROUPED_PAGE_SLUGS } from 'src/data/rightTriangleGroupedPages';
 import FocusedRadiusCalculatorPage from 'theme/templates/FocusedRadiusCalculatorPage.astro';
 import FocusedSpecialTriangleCalculatorPage from 'theme/templates/FocusedSpecialTriangleCalculatorPage.astro';
 import FocusedTriplesCalculatorPage from 'theme/templates/FocusedTriplesCalculatorPage.astro';
+import FocusedSideCalculatorPage from 'theme/templates/FocusedSideCalculatorPage.astro';
+import FocusedMeasurementCalculatorPage from 'theme/templates/FocusedMeasurementCalculatorPage.astro';
+import FocusedTrigRatioCalculatorPage from 'theme/templates/FocusedTrigRatioCalculatorPage.astro';
+import FocusedAngleCalculatorPage from 'theme/templates/FocusedAngleCalculatorPage.astro';
+import FocusedAltitudeCalculatorPage from 'theme/templates/FocusedAltitudeCalculatorPage.astro';
+import FocusedProjectionCalculatorPage from 'theme/templates/FocusedProjectionCalculatorPage.astro';
 import { DEFAULT_LOCALE } from 'theme/i18n/locales';
 import GroupedCalculatorPage from 'theme/templates/GroupedCalculatorPage.astro';
 import LegacyRedirectPage from 'theme/templates/LegacyRedirectPage.astro';

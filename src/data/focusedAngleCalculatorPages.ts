@@ -92,7 +92,7 @@ export const FOCUSED_ANGLE_CALCULATOR_PAGES: FocusedAngleCalculatorPage[] = [
     ]
   },
   howItWorks: {
-    h2: "What This Inverse Sine Calculator Does",
+    h2: 'What This Tool Does',
     paragraphs: [
       "The sine ratio compares the opposite side to the hypotenuse. This calculator reverses that ratio using arcsin to give you the exact angle in degrees.",
       "Just enter opposite side a and hypotenuse c. The hypotenuse must be the longest side - if it is shorter than a, the triangle cannot exist."
@@ -255,7 +255,7 @@ export const FOCUSED_ANGLE_CALCULATOR_PAGES: FocusedAngleCalculatorPage[] = [
     ]
   },
   howItWorks: {
-    h2: "What This Inverse Cosine Calculator Does",
+    h2: 'What This Tool Does',
     paragraphs: [
       "Cosine links the adjacent side to the hypotenuse. This calculator reverses that link using arccos so you get the angle without needing the opposite side at all.",
       "Type in adjacent side b and hypotenuse c. The tool divides b by c, applies inverse cosine, and returns angle A in degrees."
@@ -418,7 +418,7 @@ export const FOCUSED_ANGLE_CALCULATOR_PAGES: FocusedAngleCalculatorPage[] = [
     ]
   },
   howItWorks: {
-    h2: "What This Inverse Tangent Calculator Does",
+    h2: 'What This Tool Does',
     paragraphs: [
       "Tangent is the ratio of the opposite side to the adjacent side. This calculator reverses that ratio using arctan to find the exact angle - no hypotenuse measurement required.",
       "Enter opposite side a and adjacent side b. The tool divides a by b, applies inverse tangent, and returns angle A in degrees."
@@ -577,7 +577,7 @@ export const FOCUSED_ANGLE_CALCULATOR_PAGES: FocusedAngleCalculatorPage[] = [
     ]
   },
   howItWorks: {
-    h2: "What This Missing Angle Calculator Does",
+    h2: 'What This Tool Does',
     paragraphs: [
       "Every right triangle has one fixed 90° angle, so the two remaining acute angles must share exactly 90°. This calculator subtracts the angle you know from 90° to reveal the one you don't.",
       "No side lengths are needed - just type in the known acute angle (between 0° and 90°) and the complementary angle appears instantly."

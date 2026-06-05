@@ -8,7 +8,7 @@ export function formatRootBars(value: string): string {
   processed = processed.replace(/(?:√|\u221A|\bsqrt\b)([\w\d.]+)/g, '<span class="whitespace-nowrap">&#8730;<span class="math-radical-content">$1</span></span>');
 
   // Also format ^2, ^3 etc
-  processed = processed.replace(/\^(\d+)/g, '<sup>$1</sup>');
+  processed = processed.replace(/\^2/g, '²').replace(/\^3/g, '³').replace(/\^(\d+)/g, '<sup>$1</sup>');
 
   return processed;
 }

@@ -96,7 +96,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     intro:
       'This calculator finds the hypotenuse (c) of a right triangle when you know both legs (a and b). Enter your two leg values and get the result instantly.',
     quickSummary: {
-      h2: 'What This Pythagorean Calculator Solves',
+      h2: 'What This Tool Solves',
       intro:
         'Use this page when the two sides that meet at the 90° angle are known and the diagonal side is missing. The calculator focuses on the classic hypotenuse case, so the inputs stay simple and the result is easy to check.',
       cards: [
@@ -151,7 +151,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       formulas: ['c^2 = a^2 + b^2', 'c = \\sqrt{a^2 + b^2}']
     },
     howTo: {
-      h2: 'How to Use the Pythagorean Theorem Calculator',
+      h2: 'How to Use This Tool',
       steps: [
         'Identify the two legs of your right triangle. These are the sides that form the right angle.',
         'Enter leg a into the first input field.',
@@ -280,7 +280,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     intro:
       'This calculator finds the missing leg b of a right triangle when you already know the hypotenuse c and one leg a. Just enter your two known values and get leg b instantly.',
     quickSummary: {
-      h2: 'What This Missing Leg Calculator Solves',
+      h2: 'What This Tool Solves',
       intro:
         'Use this page when the hypotenuse and leg a are known, but the other leg is missing. The calculator rearranges the Pythagorean theorem to subtract the known leg from the hypotenuse before taking the square root.',
       cards: [
@@ -463,7 +463,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     intro:
       'This calculator finds the missing leg a of a right triangle when you know the hypotenuse c and the other leg b. Enter your values above to get the result with a full step-by-step breakdown.',
     quickSummary: {
-      h2: 'What This Missing Leg Calculator Solves',
+      h2: 'What This Tool Solves',
       intro:
         'Use this page when you know the hypotenuse and leg b, but need leg a. It keeps the known side b separate from the unknown side a so the formula and result match the labels on your triangle.',
       cards: [
@@ -644,7 +644,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       'This calculator is built for one job: finding opposite side a when you already know an acute angle and the hypotenuse. Enter your two values and the result appears instantly with step-by-step work.',
     intro: 'Use this calculator to find opposite side a from angle A and hypotenuse c.',
     quickSummary: {
-      h2: 'What This Sine Side Calculator Solves',
+      h2: 'What This Tool Solves',
       intro:
         'This page focuses on finding the opposite side from an angle and hypotenuse pair. The sine function connects these three values directly, so no extra steps or rearranging are needed.',
       cards: [
@@ -801,7 +801,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       'This calculator solves for the adjacent side b when you already have angle A and the hypotenuse c. It handles the cosine computation and shows the full solution path so you can follow or verify each step.',
     intro: 'Use this calculator to find adjacent side b from angle A and hypotenuse c.',
     quickSummary: {
-      h2: 'What This Cosine Side Calculator Solves',
+      h2: 'What This Tool Solves',
       intro:
         'This calculator takes angle A and hypotenuse c as inputs and returns the adjacent side b. Cosine is the ratio that links these three values, so the formula needs no rearranging.',
       cards: [
@@ -958,7 +958,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       'This tool finds the opposite side a when you know the adjacent side b and an acute angle A. It uses the tangent ratio, which links the opposite and adjacent sides directly without needing the hypotenuse.',
     intro: 'Use this calculator to find opposite side a from angle A and adjacent side b.',
     quickSummary: {
-      h2: 'What This Tangent Side Calculator Solves',
+      h2: 'What This Tool Solves',
       intro:
         'Unlike sine and cosine, the tangent ratio works with sides a and b instead of involving the hypotenuse. This makes it ideal when the hypotenuse is unknown or not needed.',
       cards: [
@@ -1116,7 +1116,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       'This tool finds the adjacent side b when you have the opposite side a and an acute angle A. It reverses the tangent formula, dividing instead of multiplying, so you get the base length directly.',
     intro: 'Use this calculator to find adjacent side b from angle A and opposite side a.',
     quickSummary: {
-      h2: 'What This Adjacent Side Calculator Solves',
+      h2: 'What This Tool Solves',
       intro:
         'This is the reverse of the standard tangent side calculator. Instead of multiplying by tangent to find the opposite side, you divide by tangent to find the adjacent side. The hypotenuse is not involved.',
       cards: [

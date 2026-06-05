@@ -167,7 +167,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     ],
 
     quickSummary: {
-      h2: 'What This Pythagorean Triples Calculator Solves',
+      h2: 'What This Tool Solves',
       intro:
         'Use this page when you want to check whether whole-number side lengths form a right triangle or generate a new Pythagorean triple from two integer values.',
       cards: [
@@ -385,7 +385,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     ],
 
     quickSummary: {
-      h2: 'What This 3 4 5 Triangle Calculator Solves',
+      h2: 'What This Tool Solves',
       intro:
         'Use this page when a right triangle follows the 3 : 4 : 5 ratio and you want to scale its sides, area, and perimeter from one scale factor.',
       cards: [
@@ -607,7 +607,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     ],
 
     quickSummary: {
-      h2: 'What This 5 12 13 Triangle Calculator Solves',
+      h2: 'What This Tool Solves',
       intro:
         'Use this page when a right triangle follows the 5 : 12 : 13 ratio and you want the scaled side lengths, area, and perimeter from one scale factor.',
       cards: [
@@ -846,7 +846,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     ],
 
     quickSummary: {
-      h2: 'What This Similar Right Triangles Calculator Solves',
+      h2: 'What This Tool Solves',
       intro:
         'Use this page when two right triangles have matching angles and you need to find the scale factor or a missing corresponding side.',
       cards: [

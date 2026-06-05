@@ -45,16 +45,16 @@ const defaultStatus = pick(solver, 'statusDefault', `Enter inputs to calculate {
 const plainExpression = formula.plainExpression;
 
 const UNIT_LIST = [
-  { val: 'm', label: units.m || 'meter' },
-  { val: 'nm', label: units.nm || 'nanometer' },
-  { val: 'um', label: units.um || 'micrometer' },
-  { val: 'mm', label: units.mm || 'millimeter' },
   { val: 'cm', label: units.cm || 'centimeter' },
-  { val: 'km', label: units.km || 'kilometer' },
   { val: 'in', label: units.in || 'inch' },
+  { val: 'm', label: units.m || 'meter' },
   { val: 'ft', label: units.ft || 'foot' },
+  { val: 'mm', label: units.mm || 'millimeter' },
+  { val: 'km', label: units.km || 'kilometer' },
   { val: 'yd', label: units.yd || 'yard' },
   { val: 'mi', label: units.mi || 'mile' },
+  { val: 'nm', label: units.nm || 'nanometer' },
+  { val: 'um', label: units.um || 'micrometer' },
   { val: 'nmi', label: units.nmi || 'nautical mile' },
   { val: 'ang', label: units.ang || 'angstrom' },
   { val: 'mil', label: units.mil || 'mil' },
@@ -309,12 +309,12 @@ const calculatorMessages = JSON.stringify(messages);
         <path d="M 60 240 L 80 240 L 80 260" fill="none" stroke="#99907c" stroke-width="1.5" data-calc-svg-path-stroke></path>
         <path d="M 70 70 L 70 260 L 380 260 Z" fill="url(#rt-fill-gradient2)" stroke="#f1c97d" stroke-width="2.5" stroke-linejoin="round" data-calc-svg-path-fill></path>
         <line x1="70" y1="260" x2="196" y2="184" stroke="#f1c97d" stroke-width="2" stroke-dasharray="5 4" opacity="0.6" data-calc-svg-altitude></line>
-        <text x="50" y="170" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="14" text-anchor="end" data-calc-svg-label="a">a = -</text>
-        <text x="226" y="284" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="14" text-anchor="middle" data-calc-svg-label="b">b = -</text>
-        <text x="246" y="152" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="15" text-anchor="start" data-calc-svg-label="c">c = -</text>
-        <text x="316" y="248" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="12" text-anchor="end" data-calc-svg-label="A">A = -</text>
-        <text x="88" y="94" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="12" text-anchor="start" data-calc-svg-label="B">B = -</text>
-        <text x="146" y="210" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="13" text-anchor="end" data-calc-svg-label="h">h = -</text>
+        <text x="50" y="170" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="14" text-anchor="end" data-calc-svg-label="a">a</text>
+        <text x="226" y="284" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="14" text-anchor="middle" data-calc-svg-label="b">b</text>
+        <text x="246" y="152" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="15" text-anchor="start" data-calc-svg-label="c">c</text>
+        <text x="316" y="248" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="12" text-anchor="end" data-calc-svg-label="A">A</text>
+        <text x="88" y="94" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="12" text-anchor="start" data-calc-svg-label="B">B</text>
+        <text x="146" y="210" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="13" text-anchor="end" data-calc-svg-label="h">h</text>
       </svg>
     </div>
   </div>
@@ -649,7 +649,7 @@ const calculatorMessages = JSON.stringify(messages);
             return {
               result: r,
               steps: [
-                `**Find Projection p**<br/>Calculate the segment of the hypotenuse adjacent to leg a.<br/>Use p = a^2 / c<br/>p = ${v.a}^2 / ${v.c} = ${format(v.a ** 2)} / ${v.c} = ${format(r)}`
+                `**Find Projection p**<br/>Calculate the segment of the hypotenuse adjacent to leg a.<br/>Use p = a² / c<br/>p = ${v.a}^2 / ${v.c} = ${format(v.a ** 2)} / ${v.c} = ${format(r)}`
               ]
             };
           }
@@ -678,7 +678,7 @@ const calculatorMessages = JSON.stringify(messages);
             return {
               result: r,
               steps: [
-                `**Find Projection q**<br/>Calculate the segment of the hypotenuse adjacent to leg b.<br/>Use q = b^2 / c<br/>q = ${v.b}^2 / ${v.c} = ${format(v.b ** 2)} / ${v.c} = ${format(r)}`
+                `**Find Projection q**<br/>Calculate the segment of the hypotenuse adjacent to leg b.<br/>Use q = b² / c<br/>q = ${v.b}^2 / ${v.c} = ${format(v.b ** 2)} / ${v.c} = ${format(r)}`
               ]
             };
           }

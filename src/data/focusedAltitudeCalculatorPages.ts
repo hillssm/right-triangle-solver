@@ -114,7 +114,7 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
     intro:
       'If you already know all three sides of a right triangle, finding the altitude to the hypotenuse takes one quick calculation. This page handles that exact scenario\u2014type in the two legs and the hypotenuse, and the altitude appears instantly.',
     quickSummary: {
-      h2: 'What This Altitude From Sides Calculator Solves',
+      h2: 'What This Tool Solves',
       intro:
         'This calculator is designed for the case where you know leg a, leg b, and hypotenuse c and need the perpendicular distance from the right-angle vertex to the hypotenuse. No angles or projections required.',
       cards: [
@@ -351,7 +351,7 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
     intro:
       'When the altitude drops from the right-angle vertex to the hypotenuse, it splits the hypotenuse into two segments called projections. If you know those two projections, the altitude is just one square root away. This calculator does that math for you.',
     quickSummary: {
-      h2: 'What This Altitude From Projections Calculator Solves',
+      h2: 'What This Tool Solves',
       intro:
         'This page handles the geometric mean scenario: you know the two segments p and q that the altitude creates on the hypotenuse, and you need the altitude itself. No side lengths or angles required.',
       cards: [

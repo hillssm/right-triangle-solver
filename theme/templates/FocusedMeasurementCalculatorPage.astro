@@ -255,14 +255,21 @@ const areaCalculatorLabel = pick(
   'h1',
   'Right Triangle Area Calculator'
 );
-const canonicalPath = localizePath(locale, page.url);
 const areaChildCalculatorSlugs = new Set([
   'right-triangle-area-from-legs-calculator',
   'right-triangle-area-from-angle-calculator',
+  'right-triangle-area-from-leg-and-angle-calculator',
   'right-triangle-area-from-semiperimeter-calculator',
-  'right-triangle-area-from-altitude-calculator'
+  'right-triangle-area-from-inradius-and-semiperimeter-calculator',
+  'right-triangle-area-from-altitude-calculator',
+  'right-triangle-area-from-hypotenuse-and-altitude-calculator'
 ]);
 const isAreaChildCalculator = areaChildCalculatorSlugs.has(page.slug);
+
+// Option C: Consolidate overlapping area pages via canonical tags
+const canonicalPath = isAreaChildCalculator 
+  ? localizePath(locale, '/right-triangle-area-calculator/')
+  : localizePath(locale, page.url);
 const showDiagramFormula = !isAreaChildCalculator;
 const parentCalculatorLabel = isAreaChildCalculator
   ? areaCalculatorLabel

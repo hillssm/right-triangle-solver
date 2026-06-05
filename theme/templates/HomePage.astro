@@ -40,13 +40,16 @@ const calculatorSection = (longContent.calculatorSection as Record<string, any>)
 const validationSection = (longContent.validationSection as Record<string, any>) ?? {};
 
 const defaultChartRows = [
-  { label: '3-4-5 triangle', value: '5.000', ratio: 5 },
-  { label: '5-12-13 triangle', value: '13.000', ratio: 13 },
+  { label: '3-4-5 triangle', value: '5.000', ratio: 5, href: '/3-4-5-triangle-calculator/' },
+  { label: '5-12-13 triangle', value: '13.000', ratio: 13, href: '/5-12-13-triangle-calculator/' },
   { label: '8-15-17 triangle', value: '17.000', ratio: 17 },
   { label: '9-12-15 triangle', value: '15.000', ratio: 15 }
 ];
 
-const chartRows = Array.isArray(homeAny.chartRows) ? homeAny.chartRows : defaultChartRows;
+const chartRows = (Array.isArray(homeAny.chartRows) ? homeAny.chartRows : defaultChartRows).map((row) => ({
+  ...row,
+  href: row.href ? localizePath(locale, row.href) : undefined
+}));
 
 const introNotationItems = Array.isArray(introSection.notationItems)
   ? introSection.notationItems
@@ -417,29 +420,11 @@ const localizedPath = localizePath(locale, '/');
       label2={pick(home, 'chartLabel2', 'Hypotenuse')}
       rows={chartRows}
     />
-  </div>
-
-  <div class="defer-render-mobile mt-8">
-    <section class="mx-auto w-full max-w-4xl section-shell">
-      <h2 class="text-2xl font-semibold">Right Triangle Patterns and Triples</h2>
-      <p class="mt-3 leading-relaxed text-on-surface-variant">
-        Use these calculators to check common right triangle patterns, Pythagorean triples, and similar right triangles.
-      </p>
-      <div class="mt-5 grid gap-4 sm:grid-cols-2">
-        <a href={localizePath(locale, '/pythagorean-triples-calculator/')} class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm">
-          <h3 class="text-base font-semibold text-on-surface group-hover:text-primary">Pythagorean Triples Calculator</h3>
-        </a>
-        <a href={localizePath(locale, '/3-4-5-triangle-calculator/')} class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm">
-          <h3 class="text-base font-semibold text-on-surface group-hover:text-primary">3 4 5 Triangle Calculator</h3>
-        </a>
-        <a href={localizePath(locale, '/5-12-13-triangle-calculator/')} class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm">
-          <h3 class="text-base font-semibold text-on-surface group-hover:text-primary">5 12 13 Triangle Calculator</h3>
-        </a>
-        <a href={localizePath(locale, '/similar-right-triangles-calculator/')} class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm">
-          <h3 class="text-base font-semibold text-on-surface group-hover:text-primary">Similar Right Triangles Calculator</h3>
-        </a>
-      </div>
-    </section>
+    <div class="mx-auto mt-4 w-full max-w-4xl">
+      <a href={localizePath(locale, '/pythagorean-triples-calculator/')} class="text-sm font-medium text-primary transition-colors hover:text-tertiary">
+        View all Pythagorean triples
+      </a>
+    </div>
   </div>
 
   <div class="defer-render-mobile mt-8">

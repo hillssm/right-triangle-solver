@@ -1,4 +1,4 @@
-﻿---
+---
 import type { RightTriangleFormula } from 'src/data/rightTriangleFormulas';
 import type { Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
@@ -238,7 +238,7 @@ const calculatorMessages = JSON.stringify(messages);
                 required
               />
               {LENGTH_KEYS.includes(field.key) ? (
-                <select name={`${field.key}_unit`} class="shrink-0 bg-surface-container border border-outline/30 rounded-r-lg px-2 text-[10px] sm:text-xs focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary w-24 sm:w-28 text-on-surface-variant truncate">
+                <select name={`${field.key}_unit`} class="shrink-0 bg-surface-container border border-outline/30 rounded-r-lg px-1.5 sm:px-2 text-[10px] sm:text-[11px] focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary w-20 sm:w-24 text-on-surface-variant truncate">
                   {UNIT_LIST.map(u => (
                     <option value={u.val}>({u.val}) {u.label}</option>
                   ))}

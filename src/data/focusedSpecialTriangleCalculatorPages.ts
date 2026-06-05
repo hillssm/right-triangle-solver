@@ -97,8 +97,7 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
       },
     ],
     intro: [
-      'A 45 45 90 triangle is also called an isosceles right triangle because both legs are equal and both acute angles are 45°.',
-      'Use this calculator to quickly solve for any missing part of the triangle. By just knowing one value, you can find the hypotenuse, leg, area, and perimeter instantly.',
+      'Use this 45-45-90 triangle calculator to quickly find the hypotenuse, leg, area, and perimeter of any isosceles right triangle using standard 45 45 90 triangle formulas and ratios.',
     ],
     calculatorNote: 'All input values must be greater than 0.',
     formulaSection: {
@@ -119,10 +118,10 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
       ],
     },
     howToUse: [
-      'Choose the calculator mode based on what you already know.',
+      'Choose the 45 45 90 calculator mode based on what you already know.',
       'Enter the known value (either the leg or the hypotenuse).',
       'Ensure your input is greater than 0.',
-      'Read the calculated result directly from the output field.',
+      'Read the calculated result directly from the isosceles right triangle calculator output field.',
     ],
     example: [
       {
@@ -139,18 +138,18 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
       },
     ],
     resultMeaning: [
-      'The results you get represent the physical dimensions of your 45 45 90 triangle. A calculated leg or hypotenuse is the exact side length needed to maintain the 45-degree angles.',
-      'The area and perimeter help you understand the total 2D space inside the triangle and the total distance around its edges.',
+      'The results you get represent the physical dimensions of your triangle. A calculated leg or hypotenuse is the exact side length needed to maintain the 45-degree angles.',
+      'Using our 45 45 90 area calculator and 45 45 90 perimeter calculator features helps you understand the total 2D space inside the triangle and the total distance around its edges.',
     ],
     sideRatio: [
       'The side ratio for every 45 45 90 triangle is a : a : a√2.',
       'This means both legs are always exactly the same length, and the hypotenuse is always the leg length multiplied by the square root of 2.',
     ],
     useCases: [
-      'Solving geometry and trigonometry homework problems.',
-      'Calculating dimensions for square-based constructions or diagonal cuts.',
+      'Solving geometry and trigonometry homework problems as a 45 45 90 missing side calculator.',
+      'Calculating dimensions for square-based constructions or diagonal cuts with the isosceles right triangle formula.',
       'Designing isometric grids and drafting standard angles.',
-      'Finding the shortest distance across a square diagonal.',
+      'Finding the shortest distance across a square diagonal using the 45 45 90 hypotenuse calculator.',
     ],
     commonMistakes: [
       'Using 30 60 90 ratios by mistake.',
@@ -279,8 +278,7 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
       },
     ],
     intro: [
-      'A 30 60 90 triangle has a fixed side ratio. The short leg is opposite the 30° angle, the long leg is opposite the 60° angle, and the hypotenuse is opposite the 90° angle.',
-      'This calculator makes it incredibly easy to find any missing side, area, or perimeter simply by knowing one measurement. It saves time by automatically applying the specific ratios.',
+      'Use this 30-60-90 triangle calculator to easily find the short leg, long leg, hypotenuse, area, and perimeter using the exact 30 60 90 triangle formula and ratio.',
     ],
     calculatorNote: 'All input values must be greater than 0.',
     formulaSection: {
@@ -304,10 +302,10 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
       ],
     },
     howToUse: [
-      'Select what you want to find from the calculator modes.',
+      'Select what you want to find from the 30 60 90 calculator modes.',
       'Enter your known side length (short leg, long leg, or hypotenuse).',
       'Verify the number is positive and greater than zero.',
-      'Check the result box for your perfectly scaled answer.',
+      'Check the result box for your perfectly scaled answer from our 30 60 90 triangle solver.',
     ],
     example: [
       {
@@ -336,18 +334,18 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
       },
     ],
     resultMeaning: [
-      'The calculated sides show exactly how long each part of the triangle needs to be to maintain the 30 and 60 degree angles. They are perfectly proportional.',
-      'The area and perimeter results give you the exact bounded 2D size and the total outline length of your triangle.',
+      'The calculated 30 60 90 triangle sides show exactly how long each part of the triangle needs to be to maintain the 30 and 60 degree angles. They are perfectly proportional.',
+      'The 30 60 90 area calculator and 30 60 90 perimeter calculator results give you the exact bounded 2D size and the total outline length of your triangle.',
     ],
     sideRatio: [
       'The standard side ratio for a 30 60 90 triangle is a : a√3 : 2a.',
       'The short leg is a, the long leg is a times the square root of 3, and the hypotenuse is exactly twice the short leg.',
     ],
     useCases: [
-      'Checking trigonometry assignments involving special right triangles.',
-      'Determining the height of an equilateral triangle.',
+      'Checking trigonometry assignments involving special right triangles as a 30 60 90 missing side calculator.',
+      'Determining the height of an equilateral triangle using the 30 60 90 long leg calculator.',
       'Drafting angles and structural supports in engineering or architecture.',
-      'Solving complex vector problems in physics.',
+      'Solving complex vector problems in physics with the 30 60 90 hypotenuse calculator.',
     ],
     commonMistakes: [
       'Mixing up the short leg and the long leg.',

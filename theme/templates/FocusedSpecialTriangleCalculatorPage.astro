@@ -24,9 +24,24 @@ const calculatorModes = page.modes.map((mode) => {
     throw new Error(`Focused special triangle calculator formula is missing: ${mode.formulaSlug}`);
   }
 
+  const localizedFields = mode.calculator?.fields
+    ? formula.calculator.fields.map((field) => ({
+        ...field,
+        ...(mode.calculator?.fields?.find((item) => item.key === field.key) || {})
+      }))
+    : formula.calculator.fields;
+
   return {
     ...mode,
-    formula
+    formula: {
+      ...formula,
+      calculator: {
+        ...formula.calculator,
+        outputLabel: mode.calculator?.outputLabel ?? formula.calculator.outputLabel,
+        outputUnit: mode.calculator?.outputUnit ?? formula.calculator.outputUnit,
+        fields: localizedFields
+      }
+    }
   };
 });
 
@@ -68,10 +83,38 @@ const faqSchema = page.faqs.length > 0 ? {
   }))
 } : null;
 
-const calculatorMessages = {
-  positive: 'Please enter a positive value.',
-  invalid: 'Input value must be greater than 0.'
+const specialUiDefaults = {
+  modeTitle: 'Calculator Mode',
+  modeSelectLabel: 'Choose calculator mode',
+  formulaHeading: 'Formula',
+  diagramHeading: 'Triangle Diagram',
+  howToUseHeading: 'How to Use This Calculator',
+  examplesHeading: 'Step-by-Step Examples',
+  resultMeaningHeading: 'What the Result Means',
+  sideRatioHeading: 'Side Ratio',
+  useCasesHeading: 'When to Use This Calculator',
+  commonMistakesHeading: 'Common Mistakes',
+  relatedHeading: 'Related Calculators',
+  faqHeading: 'FAQs',
+  faqDescription: 'Answers to the most common right-triangle solving questions.',
+  diagramAriaLabel45: '45-45-90 Triangle Diagram',
+  diagramAriaLabel30: '30-60-90 Triangle Diagram',
+  calculatorMessages: {
+    positive: 'Please enter a positive value.',
+    invalid: 'Input value must be greater than 0.'
+  }
 };
+
+const specialUi = {
+  ...specialUiDefaults,
+  ...(page.ui || {}),
+  calculatorMessages: {
+    ...specialUiDefaults.calculatorMessages,
+    ...(page.ui?.calculatorMessages || {})
+  }
+};
+
+const calculatorMessages = specialUi.calculatorMessages;
 
 const renderMath = (expression: string, displayMode = true) =>
   katex.renderToString(expression, {
@@ -79,9 +122,12 @@ const renderMath = (expression: string, displayMode = true) =>
     displayMode
   });
 
-const modeTitle = 'Calculator Mode';
-const modeSelectLabel = 'Choose calculator mode';
+const modeTitle = specialUi.modeTitle;
+const modeSelectLabel = specialUi.modeSelectLabel;
 const openToolLabel = pick(solver, 'openTool', 'Open Tool');
+const diagramAriaLabel = page.diagram.kind === '45-45-90'
+  ? specialUi.diagramAriaLabel45
+  : specialUi.diagramAriaLabel30;
 ---
 
 <BaseLayout
@@ -184,6 +230,13 @@ const openToolLabel = pick(solver, 'openTool', 'Open Tool');
             locale={locale}
             heading={mode.heading}
             messages={calculatorMessages}
+            runtimeTranslations={locale === DEFAULT_LOCALE ? {} : {
+              specialTriangleSteps: {
+                [mode.formula.calculator.kind]: {
+                  title: mode.heading
+                }
+              }
+            }}
           />
         </div>
       ))}
@@ -250,7 +303,7 @@ const openToolLabel = pick(solver, 'openTool', 'Open Tool');
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>Formula</h2>
+    <h2>{specialUi.formulaHeading}</h2>
     <div class="not-prose mt-4 grid gap-3 sm:grid-cols-2">
       {page.formulaSection.formulas.map((expression) => (
         <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
@@ -265,7 +318,7 @@ const openToolLabel = pick(solver, 'openTool', 'Open Tool');
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-    <h2 class="text-2xl font-semibold">Triangle Diagram</h2>
+    <h2 class="text-2xl font-semibold">{specialUi.diagramHeading}</h2>
     <div class="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(14rem,0.85fr)] lg:items-start">
       <div class="min-w-0">
         <div class="rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-3">
@@ -274,7 +327,7 @@ const openToolLabel = pick(solver, 'openTool', 'Open Tool');
               class="special-diagram-svg"
               viewBox="0 0 640 420"
               role="img"
-              aria-label="45-45-90 Triangle Diagram"
+              aria-label={diagramAriaLabel}
             >
               <path class="diagram-fill" d="M120 340 L420 340 L120 40 Z"></path>
               <path class="diagram-side" d="M120 340 L420 340 L120 40 Z"></path>
@@ -293,7 +346,7 @@ const openToolLabel = pick(solver, 'openTool', 'Open Tool');
               class="special-diagram-svg"
               viewBox="0 0 640 420"
               role="img"
-              aria-label="30-60-90 Triangle Diagram"
+              aria-label={diagramAriaLabel}
             >
               <path class="diagram-fill" d="M120 340 L460 340 L120 144 Z"></path>
               <path class="diagram-side" d="M120 340 L460 340 L120 144 Z"></path>
@@ -326,14 +379,14 @@ const openToolLabel = pick(solver, 'openTool', 'Open Tool');
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>How to Use This Calculator</h2>
+    <h2>{specialUi.howToUseHeading}</h2>
     <ol>
       {page.howToUse.map((step) => <li>{step}</li>)}
     </ol>
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>Step-by-Step Examples</h2>
+    <h2>{specialUi.examplesHeading}</h2>
     <div class="space-y-6 mt-4">
       {page.example.map((ex) => (
         <div>
@@ -355,24 +408,24 @@ const openToolLabel = pick(solver, 'openTool', 'Open Tool');
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>What the Result Means</h2>
+    <h2>{specialUi.resultMeaningHeading}</h2>
     {page.resultMeaning.map((paragraph) => <p>{paragraph}</p>)}
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>Side Ratio</h2>
+    <h2>{specialUi.sideRatioHeading}</h2>
     {page.sideRatio.map((paragraph) => <p>{paragraph}</p>)}
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>When to Use This Calculator</h2>
+    <h2>{specialUi.useCasesHeading}</h2>
     <ul>
       {page.useCases.map((useCase) => <li>{useCase}</li>)}
     </ul>
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>Common Mistakes</h2>
+    <h2>{specialUi.commonMistakesHeading}</h2>
     <ul>
       {page.commonMistakes.map((mistake) => <li>{mistake}</li>)}
     </ul>
@@ -380,12 +433,16 @@ const openToolLabel = pick(solver, 'openTool', 'Open Tool');
 
   {page.faqs.length > 0 && (
     <div class="mx-auto mt-8 w-full max-w-4xl">
-      <Faq heading="FAQs" items={page.faqs} />
+      <Faq
+        heading={specialUi.faqHeading}
+        description={specialUi.faqDescription}
+        items={page.faqs}
+      />
     </div>
   )}
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-    <h2 class="text-2xl font-semibold">Related Calculators</h2>
+    <h2 class="text-2xl font-semibold">{specialUi.relatedHeading}</h2>
     <div class="not-prose mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {page.relatedLinks.map((link) => (
         <a

@@ -1,7 +1,16 @@
+import type { FormulaCalculatorField } from 'src/data/rightTriangleFormulas';
+import { localizeFocusedSpecialTriangleCalculatorPage } from 'src/data/focusedSpecialTriangleCalculatorTranslations';
+import { DEFAULT_LOCALE, type Locale } from 'theme/i18n/locales';
+
 export type FocusedSpecialTriangleCalculatorMode = {
   formulaSlug: string;
   label: string;
   heading: string;
+  calculator?: {
+    outputLabel?: string;
+    outputUnit?: string;
+    fields?: FormulaCalculatorField[];
+  };
 };
 
 export type FocusedSpecialTriangleRelatedLink = {
@@ -45,6 +54,29 @@ export type FocusedSpecialTriangleCalculatorPage = {
     question: string;
     answer: string;
   }>;
+  ui?: FocusedSpecialTriangleCalculatorUi;
+};
+
+export type FocusedSpecialTriangleCalculatorUi = {
+  modeTitle: string;
+  modeSelectLabel: string;
+  formulaHeading: string;
+  diagramHeading: string;
+  howToUseHeading: string;
+  examplesHeading: string;
+  resultMeaningHeading: string;
+  sideRatioHeading: string;
+  useCasesHeading: string;
+  commonMistakesHeading: string;
+  relatedHeading: string;
+  faqHeading: string;
+  faqDescription: string;
+  diagramAriaLabel45: string;
+  diagramAriaLabel30: string;
+  calculatorMessages: {
+    positive: string;
+    invalid: string;
+  };
 };
 
 export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalculatorPage[] = [
@@ -414,6 +446,15 @@ export const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_PAGES = focusedSpecialTriangleC
 export const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_PAGE_SLUGS =
   focusedSpecialTriangleCalculatorPages.map((page) => page.slug);
 
-export function getFocusedSpecialTriangleCalculatorPage(slug: string) {
-  return focusedSpecialTriangleCalculatorPages.find((page) => page.slug === slug);
+export function getFocusedSpecialTriangleCalculatorPage(
+  slug: string,
+  locale: Locale = DEFAULT_LOCALE
+) {
+  const page = focusedSpecialTriangleCalculatorPages.find((item) => item.slug === slug);
+
+  if (!page) return undefined;
+
+  return locale === DEFAULT_LOCALE
+    ? page
+    : localizeFocusedSpecialTriangleCalculatorPage(page, locale);
 }

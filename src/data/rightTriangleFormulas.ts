@@ -650,6 +650,7 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     title: '45-45-90: c',
     category: 'Special Triangles',
     expression: 'c = a \\sqrt{2}',
+    plainExpression: 'c = a × √2',
     description: 'Hypotenuse of a 45-45-90 triangle.',
     variables: ['a = leg', 'c = hypotenuse'],
     notes: [],
@@ -663,6 +664,7 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     title: '45-45-90: a',
     category: 'Special Triangles',
     expression: 'a = \\frac{c}{\\sqrt{2}}',
+    plainExpression: 'a = c / √2',
     description: 'Leg of a 45-45-90 triangle.',
     variables: ['c = hypotenuse', 'a = leg'],
     notes: [],
@@ -672,10 +674,39 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     }
   },
   {
+    slug: 'area-45-leg',
+    title: '45-45-90: Area',
+    category: 'Special Triangles',
+    expression: '\\text{Area} = \\frac{a^2}{2}',
+    plainExpression: 'Area = a² / 2',
+    description: 'Area of a 45-45-90 triangle from one leg.',
+    variables: ['a = leg'],
+    notes: [],
+    calculator: {
+      kind: 'area_from_leg_45', outputLabel: 'Area', outputUnit: 'sq units',
+      fields: [{ key: 'a', label: 'Leg a', min: 0 }]
+    }
+  },
+  {
+    slug: 'perimeter-45-leg',
+    title: '45-45-90: Perimeter',
+    category: 'Special Triangles',
+    expression: 'P = 2a + a\\sqrt{2}',
+    plainExpression: 'P = 2a + a√2',
+    description: 'Perimeter of a 45-45-90 triangle from one leg.',
+    variables: ['a = leg', 'P = perimeter'],
+    notes: [],
+    calculator: {
+      kind: 'perimeter_from_leg_45', outputLabel: 'Perimeter P', outputUnit: 'units',
+      fields: [{ key: 'a', label: 'Leg a', min: 0 }]
+    }
+  },
+  {
     slug: 'long-a-rt3',
     title: '30-60-90: Long Leg',
     category: 'Special Triangles',
     expression: '\\text{long leg} = a \\sqrt{3}',
+    plainExpression: 'long leg = a × √3',
     description: 'Longer leg in a 30-60-90 triangle.',
     variables: ['a = short leg'],
     notes: [],
@@ -689,11 +720,82 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     title: '30-60-90: c',
     category: 'Special Triangles',
     expression: 'c = 2a',
+    plainExpression: 'c = 2a',
     description: 'Hypotenuse in a 30-60-90 triangle is twice the short leg.',
     variables: ['a = short leg', 'c = hypotenuse'],
     notes: [],
     calculator: {
       kind: 'c_from_a_30', outputLabel: 'Hypotenuse c', outputUnit: 'units',
+      fields: [{ key: 'a', label: 'Short leg a', min: 0 }]
+    }
+  },
+  {
+    slug: 'short-c-30',
+    title: '30-60-90: Short Leg from Hypotenuse',
+    category: 'Special Triangles',
+    expression: 'a = \\frac{c}{2}',
+    plainExpression: 'a = c / 2',
+    description: 'Short leg of a 30-60-90 triangle from the hypotenuse.',
+    variables: ['c = hypotenuse', 'a = short leg'],
+    notes: [],
+    calculator: {
+      kind: 'short_from_c_30', outputLabel: 'Short leg a', outputUnit: 'units',
+      fields: [{ key: 'c', label: 'Hypotenuse c', min: 0 }]
+    }
+  },
+  {
+    slug: 'short-long-30',
+    title: '30-60-90: Short Leg from Long Leg',
+    category: 'Special Triangles',
+    expression: 'a = \\frac{\\text{long leg}}{\\sqrt{3}}',
+    plainExpression: 'a = long leg / √3',
+    description: 'Short leg of a 30-60-90 triangle from the long leg.',
+    variables: ['long leg = longer leg', 'a = short leg'],
+    notes: [],
+    calculator: {
+      kind: 'short_from_long_30', outputLabel: 'Short leg a', outputUnit: 'units',
+      fields: [{ key: 'b', label: 'Long leg', min: 0 }]
+    }
+  },
+  {
+    slug: 'long-c-30',
+    title: '30-60-90: Long Leg from Hypotenuse',
+    category: 'Special Triangles',
+    expression: '\\text{long leg} = \\frac{c\\sqrt{3}}{2}',
+    plainExpression: 'long leg = (c × √3) / 2',
+    description: 'Long leg of a 30-60-90 triangle from the hypotenuse.',
+    variables: ['c = hypotenuse', 'long leg = longer leg'],
+    notes: [],
+    calculator: {
+      kind: 'long_from_c_30', outputLabel: 'Long leg', outputUnit: 'units',
+      fields: [{ key: 'c', label: 'Hypotenuse c', min: 0 }]
+    }
+  },
+  {
+    slug: 'area-short-30',
+    title: '30-60-90: Area',
+    category: 'Special Triangles',
+    expression: '\\text{Area} = \\frac{a \\cdot a\\sqrt{3}}{2}',
+    plainExpression: 'Area = (short leg × long leg) / 2',
+    description: 'Area of a 30-60-90 triangle from the short leg.',
+    variables: ['a = short leg'],
+    notes: [],
+    calculator: {
+      kind: 'area_from_short_30', outputLabel: 'Area', outputUnit: 'sq units',
+      fields: [{ key: 'a', label: 'Short leg a', min: 0 }]
+    }
+  },
+  {
+    slug: 'perimeter-short-30',
+    title: '30-60-90: Perimeter',
+    category: 'Special Triangles',
+    expression: 'P = a + a\\sqrt{3} + 2a',
+    plainExpression: 'P = a + a√3 + 2a',
+    description: 'Perimeter of a 30-60-90 triangle from the short leg.',
+    variables: ['a = short leg', 'P = perimeter'],
+    notes: [],
+    calculator: {
+      kind: 'perimeter_from_short_30', outputLabel: 'Perimeter P', outputUnit: 'units',
       fields: [{ key: 'a', label: 'Short leg a', min: 0 }]
     }
   },

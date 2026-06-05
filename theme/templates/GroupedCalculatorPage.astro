@@ -292,6 +292,19 @@ const relatedRadiusCalculatorLinks = [
 const showRelatedRadiusCalculators =
   locale === 'en' && groupedPage?.slug === 'right-triangle-radius-calculator';
 
+const relatedSpecialTriangleCalculatorLinks = [
+  {
+    href: '/45-45-90-triangle-calculator/',
+    label: '45 45 90 Triangle Calculator'
+  },
+  {
+    href: '/30-60-90-triangle-calculator/',
+    label: '30 60 90 Triangle Calculator'
+  }
+];
+const showRelatedSpecialTriangleCalculators =
+  locale === 'en' && groupedPage?.slug === 'special-right-triangle-calculator';
+
 const relatedAngleCalculatorLinks = FOCUSED_ANGLE_CALCULATOR_PAGES.map((page) => ({
   href: page.url,
   label: page.h1,
@@ -704,6 +717,30 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
           </p>
           <div class="mt-5 grid gap-4 sm:grid-cols-2">
             {relatedRadiusCalculatorLinks.map((link) => (
+              <a
+                href={link.href}
+                class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
+              >
+                <h3 class="text-base font-semibold text-on-surface group-hover:text-primary">
+                  {link.label}
+                </h3>
+                <p class="mt-3 text-[11px] uppercase tracking-widest text-primary">
+                  {uiOpen}
+                </p>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {showRelatedSpecialTriangleCalculators && (
+        <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+          <h2 class="text-2xl font-semibold">Related Special Right Triangle Calculators</h2>
+          <p class="mt-3 max-w-3xl text-sm text-on-surface-variant">
+            Use these focused calculators if you want to solve a specific special right triangle type.
+          </p>
+          <div class="mt-5 grid gap-4 sm:grid-cols-2">
+            {relatedSpecialTriangleCalculatorLinks.map((link) => (
               <a
                 href={link.href}
                 class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"

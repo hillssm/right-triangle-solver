@@ -690,7 +690,13 @@ const calculatorMessages = JSON.stringify(messages);
             return {
               result: r,
               steps: [
-                `**Calculate Inradius r**<br/>Find the radius of the largest circle that fits inside the triangle.<br/>Use r = (a + b - c) / 2<br/>r = (${v.a} + ${v.b} - ${v.c}) / 2 = ${format(v.a + v.b - v.c)} / 2 = ${format(r)}`
+                buildCalculationStep(
+                  'inradius',
+                  'Calculate Inradius r',
+                  'Find the radius of the largest circle that fits inside the triangle.',
+                  'r = (a + b − c) / 2',
+                  `r = (${v.a} + ${v.b} − ${v.c}) / 2 = ${format(v.a + v.b - v.c)} / 2 = ${format(r)}`
+                )
               ]
             };
           }
@@ -710,7 +716,13 @@ const calculatorMessages = JSON.stringify(messages);
             return {
               result: r,
               steps: [
-                `**Calculate Inradius r**<br/>Find the radius of the largest circle that fits inside the triangle.<br/>Use r = (a + b - c) / 2<br/>r = (${v.a} + ${v.b} - ${v.c}) / 2 = ${format(v.a + v.b - v.c)} / 2 = ${format(r)}`
+                buildCalculationStep(
+                  'inradiusStrict',
+                  'Calculate Inradius r',
+                  'Find the radius of the largest circle that fits inside the triangle.',
+                  'r = (a + b − c) / 2',
+                  `r = (${v.a} + ${v.b} − ${v.c}) / 2 = ${format(v.a + v.b - v.c)} / 2 = ${format(r)}`
+                )
               ]
             };
           }
@@ -720,7 +732,13 @@ const calculatorMessages = JSON.stringify(messages);
             return {
               result: r,
               steps: [
-                `**Calculate Circumradius R**<br/>The circumradius is simply half of the hypotenuse.<br/>Use R = c / 2<br/>R = ${v.c} / 2 = ${format(r)}`
+                buildCalculationStep(
+                  'circumradius',
+                  'Calculate Circumradius R',
+                  'The circumradius is simply half of the hypotenuse.',
+                  'R = c / 2',
+                  `R = ${v.c} / 2 = ${format(r)}`
+                )
               ]
             };
           }
@@ -932,8 +950,15 @@ const calculatorMessages = JSON.stringify(messages);
           case 'tan_from_sin_cos': { requirePositive(v.sinA, v.cosA); const r = v.sinA / v.cosA; return { result: r, steps: [`**Calculate tan(A)**<br/>Determine tangent using the fundamental sine-cosine ratio.<br/>Use tan(A) = sin(A) / cos(A)<br/>tan(A) = ${v.sinA} / ${v.cosA} = ${format(r)}`] }; }
           case 'c_from_a_45': { requirePositive(v.a); const r = v.a * Math.SQRT2; return { result: r, steps: [`**Solve for Hypotenuse c**<br/>In a special 45-45-90 triangle, multiply leg by \u221A2.<br/>Use c = a \u00D7 \u221A2<br/>c = ${v.a} \u00D7 \u221A2 = ${format(r)}`] }; }
           case 'a_from_c_45': { requirePositive(v.c); const r = v.c / Math.SQRT2; return { result: r, steps: [`**Solve for Leg a**<br/>In a special 45-45-90 triangle, divide hypotenuse by \u221A2.<br/>Use a = c / \u221A2<br/>a = ${v.c} / \u221A2 = ${format(r)}`] }; }
+          case 'area_from_leg_45': { requirePositive(v.a); const r = (v.a * v.a) / 2; return { result: r, steps: [`**Calculate Area**<br/>In a 45-45-90 triangle, both legs are equal, so area is a\u00B2 / 2.<br/>Use Area = a\u00B2 / 2<br/>Area = ${v.a}\u00B2 / 2 = ${format(v.a * v.a)} / 2 = ${format(r)}`] }; }
+          case 'perimeter_from_leg_45': { requirePositive(v.a); const r = (2 * v.a) + (v.a * Math.SQRT2); return { result: r, steps: [`**Calculate Perimeter P**<br/>Add both equal legs and the hypotenuse a\u221A2.<br/>Use P = 2a + a\u221A2<br/>P = 2(${v.a}) + ${v.a}\u221A2 = ${format(r)}`] }; }
           case 'long_from_short_30': { requirePositive(v.a); const r = v.a * Math.sqrt(3); return { result: r, steps: [`**Solve for Long Leg b**<br/>In a 30-60-90 triangle, the long leg is short leg \u00D7 \u221A3.<br/>Use b = a \u00D7 \u221A3<br/>b = ${v.a} \u00D7 \u221A3 = ${format(r)}`] }; }
           case 'c_from_a_30': { requirePositive(v.a); const r = v.a * 2; return { result: r, steps: [`**Solve for Hypotenuse c**<br/>In a 30-60-90 triangle, the hypotenuse is double the short leg.<br/>Use c = 2 \u00D7 a<br/>c = 2 \u00D7 ${v.a} = ${format(r)}`] }; }
+          case 'short_from_c_30': { requirePositive(v.c); const r = v.c / 2; return { result: r, steps: [`**Solve for Short Leg a**<br/>In a 30-60-90 triangle, the short leg is half of the hypotenuse.<br/>Use a = c / 2<br/>a = ${v.c} / 2 = ${format(r)}`] }; }
+          case 'short_from_long_30': { requirePositive(v.b); const r = v.b / Math.sqrt(3); return { result: r, steps: [`**Solve for Short Leg a**<br/>Divide the long leg by \u221A3.<br/>Use a = long leg / \u221A3<br/>a = ${v.b} / \u221A3 = ${format(r)}`] }; }
+          case 'long_from_c_30': { requirePositive(v.c); const r = (v.c * Math.sqrt(3)) / 2; return { result: r, steps: [`**Solve for Long Leg**<br/>The long leg is the hypotenuse scaled by \u221A3 / 2.<br/>Use long leg = (c \u00D7 \u221A3) / 2<br/>long leg = (${v.c} \u00D7 \u221A3) / 2 = ${format(r)}`] }; }
+          case 'area_from_short_30': { requirePositive(v.a); const longLeg = v.a * Math.sqrt(3); const r = (v.a * longLeg) / 2; return { result: r, steps: [`**Calculate Area**<br/>Use the short leg and long leg relationship for a 30-60-90 triangle.<br/>Use Area = (short leg \u00D7 long leg) / 2<br/>Area = (${v.a} \u00D7 ${format(longLeg)}) / 2 = ${format(r)}`] }; }
+          case 'perimeter_from_short_30': { requirePositive(v.a); const longLeg = v.a * Math.sqrt(3); const hypotenuse = 2 * v.a; const r = v.a + longLeg + hypotenuse; return { result: r, steps: [`**Calculate Perimeter P**<br/>Add the short leg, long leg, and hypotenuse.<br/>Use P = short leg + long leg + c<br/>P = ${v.a} + ${format(longLeg)} + ${format(hypotenuse)} = ${format(r)}`] }; }
           default:
             throw new Error(`Calculator type '${kind}' is not configured.`);
         }

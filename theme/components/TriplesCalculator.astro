@@ -67,11 +67,9 @@ const solver = ((bundle.common as any)?.solver as Record<string, string>) || {};
 
   <script>
     (() => {
-      const currentScript = document.currentScript as HTMLScriptElement | null;
-      if (!currentScript) return;
-
-      const section = currentScript.closest('[data-triples-calculator]') as HTMLElement;
-      if (!section) return;
+      const initializeTriplesCalculator = (section: HTMLElement) => {
+      if (section.dataset.triplesCalculatorReady === 'true') return;
+      section.dataset.triplesCalculatorReady = 'true';
 
       const modes = JSON.parse(section.getAttribute('data-modes') || '[]');
       const tabs = section.querySelectorAll<HTMLButtonElement>('[data-mode-tab]');
@@ -85,6 +83,7 @@ const solver = ((bundle.common as any)?.solver as Record<string, string>) || {};
       if (!form || !errorEl || !resultWrap || !outputContainer || !formulaDisplay) return;
 
       let currentModeId = modes[0]?.id;
+      if (!currentModeId) return;
 
       const renderForm = (modeId: string) => {
         const mode = modes.find((m: any) => m.id === modeId);
@@ -219,6 +218,19 @@ const solver = ((bundle.common as any)?.solver as Record<string, string>) || {};
 
       // Initialize
       renderForm(currentModeId);
+      };
+
+      const initializeAllTriplesCalculators = () => {
+        document
+          .querySelectorAll<HTMLElement>('[data-triples-calculator]')
+          .forEach(initializeTriplesCalculator);
+      };
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initializeAllTriplesCalculators, { once: true });
+      } else {
+        initializeAllTriplesCalculators();
+      }
     })();
   </script>
 </section>

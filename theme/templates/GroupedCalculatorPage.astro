@@ -279,6 +279,19 @@ const relatedProjectionCalculatorLinks = [
 const showRelatedProjectionCalculators =
   locale === 'en' && groupedPage?.slug === 'right-triangle-projection-calculator';
 
+const relatedRadiusCalculatorLinks = [
+  {
+    href: '/right-triangle-inradius-calculator/',
+    label: 'Right Triangle Inradius Calculator'
+  },
+  {
+    href: '/right-triangle-circumradius-calculator/',
+    label: 'Right Triangle Circumradius Calculator'
+  }
+];
+const showRelatedRadiusCalculators =
+  locale === 'en' && groupedPage?.slug === 'right-triangle-radius-calculator';
+
 const relatedAngleCalculatorLinks = FOCUSED_ANGLE_CALCULATOR_PAGES.map((page) => ({
   href: page.url,
   label: page.h1,
@@ -682,6 +695,30 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
           ))}
         </div>
       </section>
+
+      {showRelatedRadiusCalculators && (
+        <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+          <h2 class="text-2xl font-semibold">Related Radius Calculators</h2>
+          <p class="mt-3 max-w-3xl text-sm text-on-surface-variant">
+            Use these focused calculators if you want to calculate one specific right triangle radius.
+          </p>
+          <div class="mt-5 grid gap-4 sm:grid-cols-2">
+            {relatedRadiusCalculatorLinks.map((link) => (
+              <a
+                href={link.href}
+                class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
+              >
+                <h3 class="text-base font-semibold text-on-surface group-hover:text-primary">
+                  {link.label}
+                </h3>
+                <p class="mt-3 text-[11px] uppercase tracking-widest text-primary">
+                  {uiOpen}
+                </p>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
 
       {showRelatedProjectionCalculators && (
         <section class="mx-auto mt-8 w-full max-w-4xl section-shell">

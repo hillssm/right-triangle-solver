@@ -38,6 +38,7 @@ const calculator = formula.calculator!!;
 const displayTitle = (formulasBundle?.[formula.slug] as any)?.title || formula.title;
 const calculatorHeading = heading || `${displayTitle} ${pick(solver, 'calculateSuffix', 'Calculator')}`;
 const defaultStatus = pick(solver, 'statusDefault', `Enter inputs to calculate {label}.`).replace('{label}', calculator.outputLabel);
+const plainExpression = formula.plainExpression;
 
 const UNIT_LIST = [
   { val: 'm', label: units.m || 'meter' },
@@ -208,7 +209,11 @@ const calculatorMessages = JSON.stringify(messages);
         return (
           <Fragment>
             {parts[0]}
-            <span class="math-textbook text-tertiary" set:html={katex.renderToString(formula.expression, { throwOnError: false })} />
+            {plainExpression ? (
+              <span class="math-textbook text-tertiary" dir="ltr">{plainExpression}</span>
+            ) : (
+              <span class="math-textbook text-tertiary" set:html={katex.renderToString(formula.expression, { throwOnError: false })} />
+            )}
             {parts[1]}
           </Fragment>
         );
@@ -275,7 +280,11 @@ const calculatorMessages = JSON.stringify(messages);
 
         <p class="mt-4 text-xs italic text-on-surface-variant flex items-center gap-2">
           <span>{pick(solver, 'formulaLabel', 'Formula')}:</span>
-          <span class="math-textbook" set:html={katex.renderToString(formula.expression, { throwOnError: false })} />
+          {plainExpression ? (
+            <span class="math-textbook" dir="ltr">{plainExpression}</span>
+          ) : (
+            <span class="math-textbook" set:html={katex.renderToString(formula.expression, { throwOnError: false })} />
+          )}
         </p>
       </div>
     </div>
@@ -677,6 +686,26 @@ const calculatorMessages = JSON.stringify(messages);
           }
           case 'inradius': {
             requirePositive(v.a, v.b, v.c);
+            const r = (v.a + v.b - v.c) / 2;
+            return {
+              result: r,
+              steps: [
+                `**Calculate Inradius r**<br/>Find the radius of the largest circle that fits inside the triangle.<br/>Use r = (a + b - c) / 2<br/>r = (${v.a} + ${v.b} - ${v.c}) / 2 = ${format(v.a + v.b - v.c)} / 2 = ${format(r)}`
+              ]
+            };
+          }
+          case 'inradius_strict': {
+            requirePositive(v.a, v.b, v.c);
+            if (v.c <= v.a || v.c <= v.b) {
+              throw new Error(messages.hypotenuseLongest || messages.hypotenuseKnownLeg || translations.unableToCalculate || '');
+            }
+
+            const pythagoreanGap = Math.abs(v.a * v.a + v.b * v.b - v.c * v.c);
+            const pythagoreanScale = Math.max(v.c * v.c, 1);
+            if (pythagoreanGap > 1e-8 * pythagoreanScale) {
+              throw new Error(messages.invalidTriangle || messages.invalid || translations.unableToCalculate || '');
+            }
+
             const r = (v.a + v.b - v.c) / 2;
             return {
               result: r,

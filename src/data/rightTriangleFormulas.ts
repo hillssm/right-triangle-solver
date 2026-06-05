@@ -22,6 +22,7 @@ export type RightTriangleFormula = {
     | 'Advanced Relations'
     | 'Special Triangles';
   expression: string;
+  plainExpression?: string;
   description: string;
   variables: string[];
   notes: string[];
@@ -316,6 +317,7 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     title: 'Inradius',
     category: 'Advanced Relations',
     expression: 'r = \\frac{a + b - c}{2}',
+    plainExpression: 'r = (a + b − c) / 2',
     description: 'Radius of the inscribed circle in a right triangle.',
     variables: ['a = leg', 'b = leg', 'c = hypotenuse', 'r = inradius'],
     notes: ['For valid right triangles, r is always positive.'],
@@ -335,6 +337,7 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     title: 'Circumradius',
     category: 'Advanced Relations',
     expression: 'R = \\frac{c}{2}',
+    plainExpression: 'R = c / 2',
     description: 'Radius of the circumscribed circle in a right triangle.',
     variables: ['c = hypotenuse', 'R = circumradius'],
     notes: ['The hypotenuse is the diameter of the circumcircle.'],
@@ -602,6 +605,7 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     title: 'Radius Relation r',
     category: 'Advanced Relations',
     expression: 'r = \\frac{a + b - c}{2}',
+    plainExpression: 'r = (a + b − c) / 2',
     description: 'Inradius of a right triangle.',
     variables: ['a, b = legs', 'c = hypotenuse', 'r = inradius'],
     notes: [],
@@ -698,6 +702,7 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     title: 'Radius Relation R',
     category: 'Advanced Relations',
     expression: 'R = \\frac{c}{2}',
+    plainExpression: 'R = c / 2',
     description: 'Circumradius of a right triangle.',
     variables: ['c = hypotenuse', 'R = circumradius'],
     notes: [],

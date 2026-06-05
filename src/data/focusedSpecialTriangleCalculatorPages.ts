@@ -28,6 +28,8 @@ export type FocusedSpecialTriangleCalculatorPage = {
   };
   diagram: {
     kind: '45-45-90' | '30-60-90';
+    keyLabel: string;
+    notes: string[];
   };
   howToUse: string[];
   example: {
@@ -101,14 +103,20 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
     calculatorNote: 'All input values must be greater than 0.',
     formulaSection: {
       formulas: [
-        'c = a × √2',
-        'a = c / √2',
-        'Area = a² / 2',
-        'P = 2a + a√2',
+        'c = a \\times \\sqrt{2}',
+        'a = \\frac{c}{\\sqrt{2}}',
+        '\\text{Area} = \\frac{a^2}{2}',
+        'P = 2a + a\\sqrt{2}',
       ],
     },
     diagram: {
       kind: '45-45-90',
+      keyLabel: 'Triangle Diagram Key',
+      notes: [
+        'Leg a represents the two equal sides of the isosceles right triangle.',
+        'Hypotenuse c is the longest side opposite the 90° angle.',
+        'Both acute angles are exactly 45 degrees.'
+      ],
     },
     howToUse: [
       'Choose the calculator mode based on what you already know.',
@@ -119,15 +127,15 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
     example: [
       {
         title: 'Example 1: Find hypotenuse when a = 5.',
-        steps: ['c = a × √2', 'c = 5 × √2', 'c ≈ 7.071'],
+        steps: ['c = a \\times \\sqrt{2}', 'c = 5 \\times \\sqrt{2}', 'c \\approx 7.071'],
       },
       {
         title: 'Example 2: Find leg when c = 10.',
-        steps: ['a = c / √2', 'a = 10 / √2', 'a ≈ 7.071'],
+        steps: ['a = \\frac{c}{\\sqrt{2}}', 'a = \\frac{10}{\\sqrt{2}}', 'a \\approx 7.071'],
       },
       {
         title: 'Example 3: Find area when a = 6.',
-        steps: ['Area = a² / 2', 'Area = 6² / 2', 'Area = 36 / 2', 'Area = 18'],
+        steps: ['\\text{Area} = \\frac{a^2}{2}', '\\text{Area} = \\frac{6^2}{2}', '\\text{Area} = \\frac{36}{2}', '\\text{Area} = 18'],
       },
     ],
     resultMeaning: [
@@ -277,17 +285,23 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
     calculatorNote: 'All input values must be greater than 0.',
     formulaSection: {
       formulas: [
-        'long leg = a × √3',
+        '\\text{long leg} = a \\times \\sqrt{3}',
         'c = 2a',
-        'a = c / 2',
-        'a = long leg / √3',
-        'long leg = (c × √3) / 2',
-        'Area = (short leg × long leg) / 2',
-        'P = short leg + long leg + c',
+        'a = \\frac{c}{2}',
+        'a = \\frac{\\text{long leg}}{\\sqrt{3}}',
+        '\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}',
+        '\\text{Area} = \\frac{\\text{short leg} \\times \\text{long leg}}{2}',
+        'P = \\text{short leg} + \\text{long leg} + c',
       ],
     },
     diagram: {
       kind: '30-60-90',
+      keyLabel: 'Triangle Diagram Key',
+      notes: [
+        'Short leg a is opposite the 30-degree angle.',
+        'Long leg a√3 is opposite the 60-degree angle.',
+        'Hypotenuse c is exactly twice the length of the short leg a.'
+      ],
     },
     howToUse: [
       'Select what you want to find from the calculator modes.',
@@ -299,25 +313,25 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
       {
         title: 'Example 1: Find long leg and hypotenuse when short leg a = 5.',
         steps: [
-          'long leg = a × √3',
-          'long leg = 5 × √3',
-          'long leg ≈ 8.660',
+          '\\text{long leg} = a \\times \\sqrt{3}',
+          '\\text{long leg} = 5 \\times \\sqrt{3}',
+          '\\text{long leg} \\approx 8.660',
           'c = 2a',
-          'c = 2 × 5',
+          'c = 2 \\times 5',
           'c = 10',
         ],
       },
       {
         title: 'Example 2: Find short leg when c = 14.',
-        steps: ['a = c / 2', 'a = 14 / 2', 'a = 7'],
+        steps: ['a = \\frac{c}{2}', 'a = \\frac{14}{2}', 'a = 7'],
       },
       {
         title: 'Example 3: Find long leg from hypotenuse c = 10.',
         steps: [
-          'long leg = (c × √3) / 2',
-          'long leg = (10 × √3) / 2',
-          'long leg = 5√3',
-          'long leg ≈ 8.660',
+          '\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}',
+          '\\text{long leg} = \\frac{10 \\times \\sqrt{3}}{2}',
+          '\\text{long leg} = 5\\sqrt{3}',
+          '\\text{long leg} \\approx 8.660',
         ],
       },
     ],

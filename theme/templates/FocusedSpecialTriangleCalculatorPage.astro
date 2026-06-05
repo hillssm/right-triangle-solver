@@ -7,6 +7,8 @@ import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
+import katex from 'katex';
+import 'katex/dist/katex.min.css';
 
 interface Props {
   page: FocusedSpecialTriangleCalculatorPageData;
@@ -71,6 +73,12 @@ const calculatorMessages = {
   invalid: 'Input value must be greater than 0.'
 };
 
+const renderMath = (expression: string, displayMode = true) =>
+  katex.renderToString(expression, {
+    throwOnError: false,
+    displayMode
+  });
+
 const modeTitle = 'Calculator Mode';
 const modeSelectLabel = 'Choose calculator mode';
 const openToolLabel = pick(solver, 'openTool', 'Open Tool');
@@ -127,10 +135,6 @@ const openToolLabel = pick(solver, 'openTool', 'Open Tool');
       {page.intro.map((paragraph) => <p>{paragraph}</p>)}
     </div>
   </header>
-
-  <section class="mx-auto mb-8 w-full max-w-4xl section-shell prose-shell">
-    <p>{page.calculatorNote}</p>
-  </section>
 
   <section class="mx-auto w-full max-w-4xl section-shell" data-focused-special-triangle-page>
     <div class="flex flex-wrap items-start justify-between gap-4">
@@ -242,56 +246,82 @@ const openToolLabel = pick(solver, 'openTool', 'Open Tool');
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+    <p>{page.calculatorNote}</p>
+  </section>
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>Formula</h2>
-    <div class="space-y-3 mt-4">
-      {page.formulaSection.formulas.map((formula) => (
-        <p class="math-textbook text-tertiary" dir="ltr">{formula}</p>
+    <div class="not-prose mt-4 grid gap-3">
+      {page.formulaSection.formulas.map((expression) => (
+        <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
+          <div
+            class="math-textbook min-w-max text-2xl text-tertiary"
+            dir="ltr"
+            set:html={renderMath(expression)}
+          />
+        </div>
       ))}
     </div>
   </section>
 
-  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>Triangle Diagram</h2>
-    <div class="not-prose mt-6 overflow-x-auto rounded-lg border border-outline-variant/30 bg-surface-container-low p-4">
-      {page.diagram.kind === '45-45-90' ? (
-        <svg
-          class="special-diagram-svg"
-          viewBox="0 0 640 420"
-          role="img"
-          aria-label="45-45-90 Triangle Diagram"
-        >
-          <path class="diagram-fill" d="M120 340 L420 340 L120 40 Z"></path>
-          <path class="diagram-side" d="M120 340 L420 340 L120 40 Z"></path>
-          <path class="diagram-angle" d="M120 308 L152 308 L152 340"></path>
-          <path class="diagram-angle" d="M370 340 A 50 50 0 0 1 384.6 304.6"></path>
-          <path class="diagram-angle" d="M120 90 A 50 50 0 0 0 155.4 75.4"></path>
-          <text class="diagram-label" x="90" y="200">a</text>
-          <text class="diagram-label" x="260" y="375">a</text>
-          <text class="diagram-label" x="285" y="170">c</text>
-          <text class="diagram-label small" x="325" y="325">45°</text>
-          <text class="diagram-label small" x="135" y="125">45°</text>
-          <text class="diagram-label small" x="160" y="325">90°</text>
-        </svg>
-      ) : (
-        <svg
-          class="special-diagram-svg"
-          viewBox="0 0 640 420"
-          role="img"
-          aria-label="30-60-90 Triangle Diagram"
-        >
-          <path class="diagram-fill" d="M120 340 L460 340 L120 144 Z"></path>
-          <path class="diagram-side" d="M120 340 L460 340 L120 144 Z"></path>
-          <path class="diagram-angle" d="M120 308 L152 308 L152 340"></path>
-          <path class="diagram-angle" d="M400 340 A 60 60 0 0 1 408 310"></path>
-          <path class="diagram-angle" d="M120 194 A 50 50 0 0 0 163.3 169"></path>
-          <text class="diagram-label" x="90" y="250">a</text>
-          <text class="diagram-label" x="270" y="375">a√3</text>
-          <text class="diagram-label" x="290" y="225">c</text>
-          <text class="diagram-label small" x="375" y="328">30°</text>
-          <text class="diagram-label small" x="140" y="210">60°</text>
-          <text class="diagram-label small" x="160" y="325">90°</text>
-        </svg>
-      )}
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+    <h2 class="text-2xl font-semibold">Triangle Diagram</h2>
+    <div class="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(14rem,0.85fr)] lg:items-start">
+      <div class="min-w-0">
+        <div class="rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-3">
+          {page.diagram.kind === '45-45-90' ? (
+            <svg
+              class="special-diagram-svg"
+              viewBox="0 0 640 420"
+              role="img"
+              aria-label="45-45-90 Triangle Diagram"
+            >
+              <path class="diagram-fill" d="M120 340 L420 340 L120 40 Z"></path>
+              <path class="diagram-side" d="M120 340 L420 340 L120 40 Z"></path>
+              <path class="diagram-angle" d="M120 308 L152 308 L152 340"></path>
+              <path class="diagram-angle" d="M370 340 A 50 50 0 0 1 384.6 304.6"></path>
+              <path class="diagram-angle" d="M120 90 A 50 50 0 0 0 155.4 75.4"></path>
+              <text class="diagram-label" x="90" y="200">a</text>
+              <text class="diagram-label" x="260" y="375">a</text>
+              <text class="diagram-label" x="285" y="170">c</text>
+              <text class="diagram-label small" x="325" y="325">45°</text>
+              <text class="diagram-label small" x="135" y="125">45°</text>
+              <text class="diagram-label small" x="160" y="325">90°</text>
+            </svg>
+          ) : (
+            <svg
+              class="special-diagram-svg"
+              viewBox="0 0 640 420"
+              role="img"
+              aria-label="30-60-90 Triangle Diagram"
+            >
+              <path class="diagram-fill" d="M120 340 L460 340 L120 144 Z"></path>
+              <path class="diagram-side" d="M120 340 L460 340 L120 144 Z"></path>
+              <path class="diagram-angle" d="M120 308 L152 308 L152 340"></path>
+              <path class="diagram-angle" d="M400 340 A 60 60 0 0 1 408 310"></path>
+              <path class="diagram-angle" d="M120 194 A 50 50 0 0 0 163.3 169"></path>
+              <text class="diagram-label" x="90" y="250">a</text>
+              <text class="diagram-label" x="270" y="375">a√3</text>
+              <text class="diagram-label" x="290" y="225">c</text>
+              <text class="diagram-label small" x="375" y="328">30°</text>
+              <text class="diagram-label small" x="140" y="210">60°</text>
+              <text class="diagram-label small" x="160" y="325">90°</text>
+            </svg>
+          )}
+        </div>
+      </div>
+      <div class="min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/50 p-4">
+        <p class="font-label text-[11px] uppercase tracking-widest text-primary">
+          {page.diagram.keyLabel}
+        </p>
+        <ul class="mt-4 grid gap-2 text-sm leading-relaxed text-on-surface-variant">
+          {page.diagram.notes.map((note) => (
+            <li class="min-w-0 rounded-md border border-outline-variant/20 bg-surface-container-low/50 px-3 py-2">
+              {note}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -308,12 +338,16 @@ const openToolLabel = pick(solver, 'openTool', 'Open Tool');
       {page.example.map((ex) => (
         <div>
           <p class="font-semibold">{ex.title}</p>
-          <div class="not-prose my-3 rounded-lg border border-outline-variant/30 bg-surface-container-low p-4">
-            <ol class="space-y-2 text-sm text-on-surface-variant list-none pl-0">
+          <div class="not-prose mt-3 min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
+            <div class="grid gap-2">
               {ex.steps.map((step) => (
-                <li class="math-textbook text-tertiary" dir="ltr">{step}</li>
+                <div
+                  class="math-textbook min-w-max text-lg text-on-surface"
+                  dir="ltr"
+                  set:html={renderMath(step, false)}
+                />
               ))}
-            </ol>
+            </div>
           </div>
         </div>
       ))}
@@ -344,13 +378,19 @@ const openToolLabel = pick(solver, 'openTool', 'Open Tool');
     </ul>
   </section>
 
-  <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>Related Calculators</h2>
+  {page.faqs.length > 0 && (
+    <div class="mx-auto mt-8 w-full max-w-4xl">
+      <Faq heading="FAQs" items={page.faqs} />
+    </div>
+  )}
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+    <h2 class="text-2xl font-semibold">Related Calculators</h2>
     <div class="not-prose mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {page.relatedLinks.map((link) => (
         <a
           href={localizePath(locale, link.href)}
-          class="group rounded-lg border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
+          class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
         >
           <h3 class="text-base font-semibold text-on-surface group-hover:text-primary">
             {link.label}
@@ -362,20 +402,15 @@ const openToolLabel = pick(solver, 'openTool', 'Open Tool');
       ))}
     </div>
   </section>
-
-  {page.faqs.length > 0 && (
-    <div class="mx-auto mt-8 w-full max-w-4xl">
-      <Faq heading="FAQs" items={page.faqs} />
-    </div>
-  )}
 </BaseLayout>
 
 <style>
   .special-diagram-svg {
     display: block;
-    min-width: 520px;
     width: 100%;
+    max-width: 34rem;
     height: auto;
+    margin-inline: auto;
   }
 
   .diagram-fill {

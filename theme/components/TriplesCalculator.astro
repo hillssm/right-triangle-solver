@@ -2,7 +2,6 @@
 import type { FocusedTriplesCalculatorPage } from 'src/data/focusedTriplesCalculatorPages';
 import type { Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
-import katex from 'katex';
 import 'katex/dist/katex.min.css';
 
 interface Props {
@@ -36,6 +35,11 @@ const solver = ((bundle.common as any)?.solver as Record<string, string>) || {};
   <h2 class="break-words text-2xl font-semibold leading-tight" data-calc-heading>
     {page.modes[0]?.heading}
   </h2>
+  {page.calculatorNote && (
+    <p class="mt-2 text-sm text-on-surface-variant">
+      {page.calculatorNote}
+    </p>
+  )}
 
   <div class="mt-6 flex flex-col gap-6 lg:flex-row lg:items-start">
     <div class="min-w-0 flex-1 w-full space-y-4">

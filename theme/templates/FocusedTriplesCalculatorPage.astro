@@ -6,6 +6,7 @@ import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
+import { formatListItem } from 'src/utils/formatList';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 
@@ -18,15 +19,27 @@ const { page, locale = DEFAULT_LOCALE } = Astro.props;
 
 const bundle = getTranslations(locale);
 const common = (bundle.common as Record<string, any>) || {};
+const content = (bundle.content as Record<string, any>) || {};
 const nav = (common.nav as Record<string, string>) || {};
 const solver = (common.solver as Record<string, string>) || {};
+const faqHub = (content.faqHub as Record<string, string>) || {};
 
 const canonicalPath = localizePath(locale, page.url);
 const homeLabel = pick(nav, 'home', 'Home');
 const openToolLabel = pick(solver, 'openTool', 'Open Tool');
+const relatedHeading = 'Related Calculators';
+const faqHeading = pick(faqHub, 'heading', 'Frequently Asked Questions');
 
 const breadcrumbItems = [
   { label: homeLabel, href: localizePath(locale, '/') },
+  ...(page.breadcrumbParent
+    ? [
+        {
+          label: page.breadcrumbParent.label,
+          href: localizePath(locale, page.breadcrumbParent.href)
+        }
+      ]
+    : []),
   { label: page.h1, href: canonicalPath }
 ];
 
@@ -119,33 +132,29 @@ const renderMath = (expression: string, displayMode = true) =>
 
   <TriplesCalculator page={page} locale={locale} />
 
-  {page.calculatorNote && (
-    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-      <p>{page.calculatorNote}</p>
-    </section>
-  )}
-
-  {page.formulaSection && (
-    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-      <h2>Formula</h2>
-      {page.formulaSection.paragraphs.map((p) => <p>{p}</p>)}
-      <div class="not-prose mt-4 grid gap-3 sm:grid-cols-2">
-        {page.formulaSection.formulas.map((expression) => (
-          <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
-            <div
-              class="math-textbook min-w-max text-2xl text-tertiary"
-              dir="ltr"
-              set:html={renderMath(expression)}
-            />
-          </div>
-        ))}
-      </div>
-    </section>
-  )}
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+    <h2 class="text-2xl font-semibold">{page.quickSummary.h2}</h2>
+    <p class="mt-3 max-w-3xl leading-relaxed text-on-surface-variant">
+      {page.quickSummary.intro}
+    </p>
+    <div class="mt-5 grid gap-3 sm:grid-cols-2">
+      {page.quickSummary.cards.map((card) => (
+        <div class="min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-4">
+          <p class="font-label text-[11px] uppercase tracking-widest text-primary">
+            {card.label}
+          </p>
+          <p class="mt-2 break-words text-sm leading-relaxed text-on-surface" dir={card.value.includes('=') ? 'ltr' : undefined}>
+            {card.value}
+          </p>
+        </div>
+      ))}
+    </div>
+  </section>
 
   {page.diagram && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-      <h2 class="text-2xl font-semibold">Triangle Diagram</h2>
+      <h2 class="text-2xl font-semibold">{page.diagram.h2}</h2>
+      <p class="mt-3 leading-relaxed text-on-surface-variant">{page.diagram.intro}</p>
       <div class="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(14rem,0.85fr)] lg:items-start">
         <div class="min-w-0">
           <div class="rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-3">
@@ -154,7 +163,7 @@ const renderMath = (expression: string, displayMode = true) =>
                 class="triples-diagram-svg"
                 viewBox="0 0 640 420"
                 role="img"
-                aria-label="3-4-5 Right Triangle Diagram"
+                aria-label={page.diagram.caption}
               >
                 <path class="diagram-fill" d="M120 340 L420 340 L120 140 Z"></path>
                 <path class="diagram-side" d="M120 340 L420 340 L120 140 Z"></path>
@@ -169,7 +178,7 @@ const renderMath = (expression: string, displayMode = true) =>
                 class="triples-diagram-svg"
                 viewBox="0 0 640 420"
                 role="img"
-                aria-label="5-12-13 Right Triangle Diagram"
+                aria-label={page.diagram.caption}
               >
                 <path class="diagram-fill" d="M80 340 L520 340 L80 220 Z"></path>
                 <path class="diagram-side" d="M80 340 L520 340 L80 220 Z"></path>
@@ -184,7 +193,7 @@ const renderMath = (expression: string, displayMode = true) =>
                 class="triples-diagram-svg"
                 viewBox="0 0 640 420"
                 role="img"
-                aria-label="Two Similar Right Triangles Diagram"
+                aria-label={page.diagram.caption}
               >
                 <path class="diagram-fill-secondary" d="M60 360 L320 360 L60 200 Z"></path>
                 <path class="diagram-side-secondary" d="M60 360 L320 360 L60 200 Z"></path>
@@ -207,7 +216,7 @@ const renderMath = (expression: string, displayMode = true) =>
                 class="triples-diagram-svg"
                 viewBox="0 0 640 420"
                 role="img"
-                aria-label="General Right Triangle Diagram"
+                aria-label={page.diagram.caption}
               >
                 <path class="diagram-fill" d="M120 340 L420 340 L120 80 Z"></path>
                 <path class="diagram-side" d="M120 340 L420 340 L120 80 Z"></path>
@@ -236,11 +245,29 @@ const renderMath = (expression: string, displayMode = true) =>
     </section>
   )}
 
+  {page.formulaSection && (
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+      <h2>Formula</h2>
+      {page.formulaSection.paragraphs.map((p) => <p>{p}</p>)}
+      <div class="not-prose mt-4 grid gap-3 sm:grid-cols-2">
+        {page.formulaSection.formulas.map((expression) => (
+          <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
+            <div
+              class="math-textbook min-w-max text-2xl text-tertiary"
+              dir="ltr"
+              set:html={renderMath(expression)}
+            />
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
   {page.howToUse && page.howToUse.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2>How to Use This Calculator</h2>
       <ol>
-        {page.howToUse.map((step) => <li>{step}</li>)}
+        {page.howToUse.map((step) => <li set:html={formatListItem(step)} />)}
       </ol>
     </section>
   )}
@@ -280,7 +307,7 @@ const renderMath = (expression: string, displayMode = true) =>
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2>When to Use This Calculator</h2>
       <ul>
-        {page.useCases.map((useCase) => <li>{useCase}</li>)}
+        {page.useCases.map((useCase) => <li set:html={formatListItem(useCase)} />)}
       </ul>
     </section>
   )}
@@ -289,19 +316,13 @@ const renderMath = (expression: string, displayMode = true) =>
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2>Common Mistakes</h2>
       <ul>
-        {page.commonMistakes.map((mistake) => <li>{mistake}</li>)}
+        {page.commonMistakes.map((mistake) => <li set:html={formatListItem(mistake)} />)}
       </ul>
     </section>
   )}
 
-  {page.faqs && page.faqs.length > 0 && (
-    <div class="mx-auto mt-8 w-full max-w-4xl">
-      <Faq heading="FAQs" items={page.faqs} />
-    </div>
-  )}
-
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-    <h2 class="text-2xl font-semibold">Related Calculators</h2>
+    <h2 class="text-2xl font-semibold">{relatedHeading}</h2>
     <div class="not-prose mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {page.relatedLinks.map((link) => (
         <a
@@ -318,6 +339,12 @@ const renderMath = (expression: string, displayMode = true) =>
       ))}
     </div>
   </section>
+
+  {page.faqs && page.faqs.length > 0 && (
+    <div class="mx-auto mt-8 w-full max-w-4xl">
+      <Faq heading={faqHeading} items={page.faqs} />
+    </div>
+  )}
 </BaseLayout>
 
 <style>

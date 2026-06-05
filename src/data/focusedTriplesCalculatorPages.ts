@@ -15,15 +15,30 @@ export type FocusedTriplesCalculatorPage = {
   metaTitle: string;
   metaDescription: string;
   badge: string;
+  breadcrumbParent?: {
+    href: string;
+    label: string;
+  };
   intro: string[];
   calculatorNote: string;
   modes: FocusedTriplesCalculatorMode[];
+  quickSummary: {
+    h2: string;
+    intro: string;
+    cards: {
+      label: string;
+      value: string;
+    }[];
+  };
   formulaSection: {
     paragraphs: string[];
     formulas: string[];
   };
   diagram: {
     kind: 'general' | '3-4-5' | '5-12-13' | 'similar';
+    h2: string;
+    intro: string;
+    caption: string;
     notes: string[];
   };
   howToUse: string[];
@@ -49,6 +64,10 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     metaDescription:
       'Use this Pythagorean triples calculator to check or generate whole-number right triangle side lengths with formulas, steps, and examples.',
     badge: 'Pythagorean Triples',
+    breadcrumbParent: {
+      href: '/right-triangle-side-calculator/',
+      label: 'Right Triangle Side Calculator',
+    },
 
     intro: [
       'A Pythagorean triple is a set of three whole numbers that perfectly fit the rule a\u00B2 + b\u00B2 = c\u00B2. When three numbers satisfy this equation, they can always form the sides of a right triangle. The most familiar example is 3, 4, 5 \u2014 but there are infinitely many others.',
@@ -92,6 +111,18 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
       },
     ],
 
+    quickSummary: {
+      h2: 'What This Pythagorean Triples Calculator Solves',
+      intro:
+        'Use this page when you want to check whether whole-number side lengths form a right triangle or generate a new Pythagorean triple from two integer values.',
+      cards: [
+        { label: 'Known values', value: 'Sides a, b, c or integers m and n' },
+        { label: 'Finds', value: 'Triple status or generated sides a, b, c' },
+        { label: 'Main formula', value: 'a^2 + b^2 = c^2' },
+        { label: 'Best for', value: 'Whole-number right triangle patterns' },
+      ],
+    },
+
     formulaSection: {
       paragraphs: [
         'Every Pythagorean triple satisfies the equation a\u00B2 + b\u00B2 = c\u00B2, where c is the hypotenuse and a and b are the two legs. If all three values are whole numbers and the equation holds true, you have a valid Pythagorean triple.',
@@ -107,6 +138,11 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
 
     diagram: {
       kind: 'general',
+      h2: 'Right Triangle Diagram: Pythagorean Triples',
+      intro:
+        'The diagram shows the standard side labels used when checking or generating triples. The two legs are a and b, and c is the hypotenuse opposite the right angle.',
+      caption:
+        'Right triangle diagram showing legs a and b, hypotenuse c, and the right angle.',
       notes: [
         'a and b are the two legs of the right triangle.',
         'c is always the hypotenuse \u2014 the longest side, opposite the right angle.',
@@ -242,6 +278,10 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     metaDescription:
       'Use this 3 4 5 triangle calculator to scale a 3 4 5 right triangle and find sides, area, and perimeter with formulas and steps.',
     badge: '3 4 5 Triangle',
+    breadcrumbParent: {
+      href: '/pythagorean-triples-calculator/',
+      label: 'Pythagorean Triples Calculator',
+    },
 
     intro: [
       'The 3 4 5 triangle is the smallest and most well-known Pythagorean triple. Its sides follow the ratio 3 : 4 : 5, and it always forms a perfect right angle. Builders, carpenters, and surveyors have relied on this pattern for centuries to create square corners without any special tools.',
@@ -275,6 +315,18 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
       },
     ],
 
+    quickSummary: {
+      h2: 'What This 3 4 5 Triangle Calculator Solves',
+      intro:
+        'Use this page when a right triangle follows the 3 : 4 : 5 ratio and you want to scale its sides, area, and perimeter from one scale factor.',
+      cards: [
+        { label: 'Known value', value: 'Scale factor k' },
+        { label: 'Finds', value: 'Sides 3k, 4k, 5k, area, and perimeter' },
+        { label: 'Main formula', value: 'a = 3k, b = 4k, c = 5k' },
+        { label: 'Best for', value: '3-4-5 right angle checks and scaled triples' },
+      ],
+    },
+
     formulaSection: {
       paragraphs: [
         'The 3 4 5 triangle uses the simplest Pythagorean triple. You can scale every side by the same factor k to create a larger or smaller version that is still a right triangle. The ratio between the sides stays the same no matter what value of k you use.',
@@ -291,6 +343,11 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
 
     diagram: {
       kind: '3-4-5',
+      h2: 'Right Triangle Diagram: 3 4 5 Triangle',
+      intro:
+        'The diagram marks the 3 : 4 : 5 relationship with the scale factor k. Multiplying all three sides by k keeps the right angle and preserves the triangle shape.',
+      caption:
+        'Right triangle diagram showing a 3 4 5 triangle scaled by factor k.',
       notes: [
         'The base ratio is 3 : 4 : 5.',
         'Side a = 3k is the shorter leg.',
@@ -429,6 +486,10 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     metaDescription:
       'Use this 5 12 13 triangle calculator to scale a 5 12 13 right triangle and find sides, area, and perimeter with formulas and steps.',
     badge: '5 12 13 Triangle',
+    breadcrumbParent: {
+      href: '/pythagorean-triples-calculator/',
+      label: 'Pythagorean Triples Calculator',
+    },
 
     intro: [
       'The 5 12 13 triangle is one of the most commonly used Pythagorean triples beyond the classic 3 4 5. Its sides satisfy 5\u00B2 + 12\u00B2 = 13\u00B2, making it a guaranteed right triangle. You will see this triple in math courses, standardized tests, and real-world measurement problems.',
@@ -462,6 +523,18 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
       },
     ],
 
+    quickSummary: {
+      h2: 'What This 5 12 13 Triangle Calculator Solves',
+      intro:
+        'Use this page when a right triangle follows the 5 : 12 : 13 ratio and you want the scaled side lengths, area, and perimeter from one scale factor.',
+      cards: [
+        { label: 'Known value', value: 'Scale factor k' },
+        { label: 'Finds', value: 'Sides 5k, 12k, 13k, area, and perimeter' },
+        { label: 'Main formula', value: 'a = 5k, b = 12k, c = 13k' },
+        { label: 'Best for', value: '5-12-13 triples, multiples, and right angle checks' },
+      ],
+    },
+
     formulaSection: {
       paragraphs: [
         'The 5 12 13 triple satisfies a\u00B2 + b\u00B2 = c\u00B2 because 25 + 144 = 169. Multiplying each side by the same factor k preserves the ratio, so the scaled triangle is always a right triangle.',
@@ -478,6 +551,11 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
 
     diagram: {
       kind: '5-12-13',
+      h2: 'Right Triangle Diagram: 5 12 13 Triangle',
+      intro:
+        'The diagram shows the 5 : 12 : 13 side relationship after scaling. The hypotenuse is 13k, and the two legs are 5k and 12k.',
+      caption:
+        'Right triangle diagram showing a 5 12 13 triangle scaled by factor k.',
       notes: [
         'The base ratio is 5 : 12 : 13.',
         'Side a = 5k is the shorter leg.',
@@ -618,6 +696,10 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     metaDescription:
       'Use this similar right triangles calculator to find missing sides, matching side ratios, and scale factor with formulas and examples.',
     badge: 'Similar Right Triangles',
+    breadcrumbParent: {
+      href: '/right-triangle-side-calculator/',
+      label: 'Right Triangle Side Calculator',
+    },
 
     intro: [
       'Two right triangles are similar when they share the same angle measurements. Their sides may differ in length, but the ratios between corresponding sides are always equal. This constant ratio is called the scale factor.',
@@ -666,6 +748,18 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
       },
     ],
 
+    quickSummary: {
+      h2: 'What This Similar Right Triangles Calculator Solves',
+      intro:
+        'Use this page when two right triangles have matching angles and you need to find the scale factor or a missing corresponding side.',
+      cards: [
+        { label: 'Known values', value: 'One matching side pair, or one side and k' },
+        { label: 'Finds', value: 'Scale factor, similar side, or original side' },
+        { label: 'Main formula', value: 'k = similar side / original side' },
+        { label: 'Best for', value: 'Proportions, scale models, and matching sides' },
+      ],
+    },
+
     formulaSection: {
       paragraphs: [
         'Similar right triangles have equal angles, so every pair of matching sides shares the same ratio. If you know one pair of corresponding sides, you can find the scale factor k. Once you have k, you can calculate any missing side on either triangle.',
@@ -680,6 +774,11 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
 
     diagram: {
       kind: 'similar',
+      h2: 'Right Triangle Diagram: Similar Right Triangles',
+      intro:
+        'The diagram compares two right triangles with the same angles. Matching sides stay proportional, and the ratio between each matching pair is the same scale factor k.',
+      caption:
+        'Two similar right triangles showing corresponding sides and scale factor k.',
       notes: [
         'Both triangles have the same angle measures.',
         'Corresponding sides share the same ratio k.',

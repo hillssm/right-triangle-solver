@@ -33,6 +33,10 @@ import {
   FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_PAGE_SLUGS,
   getFocusedSpecialTriangleCalculatorPage
 } from 'src/data/focusedSpecialTriangleCalculatorPages';
+import {
+  FOCUSED_TRIPLES_CALCULATOR_PAGE_SLUGS,
+  getFocusedTriplesCalculatorPage
+} from 'src/data/focusedTriplesCalculatorPages';
 import { GROUPED_PAGE_SLUGS } from 'src/data/rightTriangleGroupedPages';
 import FocusedSideCalculatorPage from 'theme/templates/FocusedSideCalculatorPage.astro';
 import FocusedMeasurementCalculatorPage from 'theme/templates/FocusedMeasurementCalculatorPage.astro';
@@ -42,6 +46,7 @@ import FocusedAltitudeCalculatorPage from 'theme/templates/FocusedAltitudeCalcul
 import FocusedProjectionCalculatorPage from 'theme/templates/FocusedProjectionCalculatorPage.astro';
 import FocusedRadiusCalculatorPage from 'theme/templates/FocusedRadiusCalculatorPage.astro';
 import FocusedSpecialTriangleCalculatorPage from 'theme/templates/FocusedSpecialTriangleCalculatorPage.astro';
+import FocusedTriplesCalculatorPage from 'theme/templates/FocusedTriplesCalculatorPage.astro';
 import GroupedCalculatorPage from 'theme/templates/GroupedCalculatorPage.astro';
 import LegacyRedirectPage from 'theme/templates/LegacyRedirectPage.astro';
 import {
@@ -62,6 +67,7 @@ export function getStaticPaths() {
       ...FOCUSED_PROJECTION_CALCULATOR_PAGE_SLUGS,
       ...FOCUSED_RADIUS_CALCULATOR_PAGE_SLUGS,
       ...FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_PAGE_SLUGS,
+      ...FOCUSED_TRIPLES_CALCULATOR_PAGE_SLUGS,
       ...FOCUSED_ANGLE_LEGACY_REDIRECT_SLUGS
     ].map((slug) => ({
       params: { ...item.params, slug }
@@ -79,6 +85,7 @@ const altitudePage = getFocusedAltitudeCalculatorPage(slug, locale);
 const projectionPage = getFocusedProjectionCalculatorPage(slug, locale);
 const radiusPage = getFocusedRadiusCalculatorPage(slug);
 const specialTrianglePage = getFocusedSpecialTriangleCalculatorPage(slug, locale);
+const triplesPage = getFocusedTriplesCalculatorPage(slug, locale);
 const legacyRedirectUrl = getFocusedAngleLegacyRedirect(slug);
 const localizedLegacyRedirectUrl = legacyRedirectUrl
   ? localizePath(locale, legacyRedirectUrl)
@@ -103,6 +110,8 @@ const localizedLegacyRedirectUrl = legacyRedirectUrl
     <FocusedRadiusCalculatorPage page={radiusPage} locale={locale} />
   ) : specialTrianglePage ? (
     <FocusedSpecialTriangleCalculatorPage page={specialTrianglePage} locale={locale} />
+  ) : triplesPage ? (
+    <FocusedTriplesCalculatorPage page={triplesPage} locale={locale} />
   ) : (
     <GroupedCalculatorPage locale={locale} slug={slug} />
   )

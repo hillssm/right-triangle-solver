@@ -25,21 +25,24 @@ const solver = (common.solver as Record<string, string>) || {};
 
 const canonicalPath = localizePath(locale, page.url);
 const homeLabel = pick(nav, 'home', 'Home');
-const openToolLabel = pick(solver, 'openTool', 'Open Tool');
+const pageUi = page.calculatorUi ?? {};
+const openToolLabel = pageUi.openToolLabel ?? pick(solver, 'openTool', 'Open Tool');
 const relatedHeading = 'Related Calculators';
 const faqHeading = 'FAQs';
 const sectionHeadings = {
-  formula: seoSectionHeading(page, 'formula'),
-  diagram: seoSectionHeading(page, 'diagram'),
-  howTo: seoSectionHeading(page, 'howTo'),
-  examples: seoSectionHeading(page, 'examples'),
-  result: seoSectionHeading(page, 'result'),
-  sideRatio: seoSectionHeading(page, 'sideRatio'),
-  useCases: seoSectionHeading(page, 'useCases'),
-  commonMistakes: seoSectionHeading(page, 'commonMistakes'),
-  related: seoSectionHeading(page, 'related'),
-  faqs: seoSectionHeading(page, 'faqs')
+  formula: pageUi.sectionHeadings?.formula ?? seoSectionHeading(page, 'formula'),
+  diagram: pageUi.sectionHeadings?.diagram ?? seoSectionHeading(page, 'diagram'),
+  howTo: pageUi.sectionHeadings?.howTo ?? seoSectionHeading(page, 'howTo'),
+  examples: pageUi.sectionHeadings?.examples ?? seoSectionHeading(page, 'examples'),
+  result: pageUi.sectionHeadings?.result ?? seoSectionHeading(page, 'result'),
+  sideRatio: pageUi.sectionHeadings?.sideRatio ?? seoSectionHeading(page, 'sideRatio'),
+  useCases: pageUi.sectionHeadings?.useCases ?? seoSectionHeading(page, 'useCases'),
+  commonMistakes: pageUi.sectionHeadings?.commonMistakes ?? seoSectionHeading(page, 'commonMistakes'),
+  related: pageUi.sectionHeadings?.related ?? seoSectionHeading(page, 'related'),
+  faqs: pageUi.sectionHeadings?.faqs ?? seoSectionHeading(page, 'faqs')
 };
+const diagramKeyLabel = pageUi.diagramKeyLabel ?? 'Triangle Diagram Key';
+const diagramScaleFactorLabel = pageUi.diagramScaleFactorLabel ?? 'k = scale factor';
 
 const breadcrumbItems = [
   { label: homeLabel, href: localizePath(locale, '/') },
@@ -230,7 +233,7 @@ const renderMath = (expression: string, displayMode = true) =>
                 <text class="diagram-label small" x="452" y="390">b·k</text>
                 <text class="diagram-label small" x="490" y="290">c·k</text>
 
-                <text class="diagram-label callout" x="300" y="190">k = scale factor</text>
+                <text class="diagram-label callout" x="300" y="190">{diagramScaleFactorLabel}</text>
               </svg>
             ) : (
               <svg
@@ -252,7 +255,7 @@ const renderMath = (expression: string, displayMode = true) =>
         </div>
         <div class="min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/50 p-4">
           <p class="font-label text-[11px] uppercase tracking-widest text-primary">
-            Triangle Diagram Key
+            {diagramKeyLabel}
           </p>
           <ul class="mt-4 grid gap-2 text-sm leading-relaxed text-on-surface-variant">
             {page.diagram.notes.map((note) => (
@@ -333,7 +336,11 @@ const renderMath = (expression: string, displayMode = true) =>
 
   {page.faqs && page.faqs.length > 0 && (
     <div class="mx-auto mt-8 w-full max-w-4xl">
-      <Faq heading={sectionHeadings.faqs || faqHeading} items={page.faqs} />
+      <Faq
+        heading={sectionHeadings.faqs || faqHeading}
+        items={page.faqs}
+        description={pageUi.faqDescription}
+      />
     </div>
   )}
 

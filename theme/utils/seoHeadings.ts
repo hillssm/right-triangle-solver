@@ -111,52 +111,40 @@ export const seoSectionHeading = (
   intent: SeoHeadingIntent,
   fallback?: string
 ) => {
-  const subject = toTitleCase(subjectFromPage(page));
-  const calculatorName = toTitleCase(pageCalculatorName(page));
-
   switch (intent) {
     case 'formula':
-      return suffixIfMissing(
-        findSecondaryKeyword(page, (keyword) => keyword.includes('formula')) || subject,
-        'Formula'
-      );
+      return fallback || 'Formula';
     case 'diagram':
-      return suffixIfMissing(subject, subject.toLowerCase().includes('triangle') ? 'Diagram' : 'Triangle Diagram');
+      return fallback || 'Triangle Diagram';
     case 'howTo':
-      return `How to Use the ${calculatorName}`;
+      return fallback || 'How to Use This Calculator';
     case 'examples':
-      return `${calculatorName} Step-by-Step Examples`;
+      return fallback || 'Step-by-Step Examples';
     case 'result':
-      return `${calculatorName} Results Explained`;
+      return fallback || 'What the Result Means';
     case 'sideRatio':
-      return findSecondaryKeyword(page, (keyword) => keyword.includes('ratio'))
-        ? toTitleCase(findSecondaryKeyword(page, (keyword) => keyword.includes('ratio'))!)
-        : suffixIfMissing(subject, 'Side Ratio');
+      return fallback || 'Side Ratio';
     case 'useCases':
-      return `When to Use the ${calculatorName}`;
+      return fallback || 'When to Use This Calculator';
     case 'commonMistakes':
-      return `${subject} Common Mistakes`;
+      return fallback || 'Common Mistakes';
     case 'whyFormulaWorks':
-      return `${subject} Formula Explanation`;
+      return fallback || 'Why This Formula Works';
     case 'calculatorMode':
-      return `${calculatorName} Modes`;
+      return fallback || 'Calculator Mode';
     case 'related':
-      return `Related ${subject} Calculators`;
+      return fallback || 'Related Calculators';
     case 'faqs':
-      return `${calculatorName} FAQs`;
+      return fallback || 'FAQs';
     default:
-      return fallback || calculatorName;
+      return fallback || page.h1 || page.primaryKeyword || 'Right Triangle Calculator';
   }
 };
 
 export const replaceGenericSeoHeading = (
-  heading: string | undefined,
+  heading: string,
   page: SeoHeadingPage,
   intent?: SeoHeadingIntent
 ) => {
-  if (intent) return seoSectionHeading(page, intent, heading);
-  if (!heading) return heading;
-
-  const mappedIntent = GENERIC_HEADING_INTENTS[normalize(heading).toLowerCase()];
-  return mappedIntent ? seoSectionHeading(page, mappedIntent, heading) : heading;
+  return heading;
 };

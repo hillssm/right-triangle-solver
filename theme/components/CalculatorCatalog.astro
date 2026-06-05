@@ -3,6 +3,7 @@ import {
   RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE,
   RIGHT_TRIANGLE_GROUPED_PAGES
 } from 'src/data/rightTriangleGroupedPages';
+import { getFocusedTriplesHomeUi } from 'src/data/focusedTriplesCalculatorTranslations';
 import { localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 
@@ -28,6 +29,7 @@ const groupedPages = (grouped.pages as Record<string, any>) ?? {};
 const hubHref = localizePath(locale, RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.url);
 const hubTitle = pick(groupedHub, 'h1', RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.h1);
 const openToolLabel = pick(groupedUi, 'openTool', 'Open Tool');
+const triplesHomeUi = getFocusedTriplesHomeUi(locale);
 const getLocalizedPageTitle = (slug: string, fallback: string) => {
   const localized = groupedPages[slug] as Record<string, unknown> | undefined;
   return pick(localized ?? {}, 'h1', fallback);
@@ -45,32 +47,11 @@ const CARD_ICONS = [
   'diamond'
 ];
 
-const SUPPORT_TOOL_PAGES = [
-  {
-    title: 'Pythagorean Triples Calculator',
-    href: '/pythagorean-triples-calculator/',
-    description: 'Check or generate whole-number right triangle triples.',
-    icon: 'format_list_numbered'
-  },
-  {
-    title: '3 4 5 Triangle Calculator',
-    href: '/3-4-5-triangle-calculator/',
-    description: 'Solve the most common Pythagorean triple and scale its sides.',
-    icon: 'looks_3'
-  },
-  {
-    title: '5 12 13 Triangle Calculator',
-    href: '/5-12-13-triangle-calculator/',
-    description: 'Scale a 5 12 13 right triangle and find sides, area, and perimeter.',
-    icon: 'looks_5'
-  },
-  {
-    title: 'Similar Right Triangles Calculator',
-    href: '/similar-right-triangles-calculator/',
-    description: 'Find scale factor and missing matching sides in similar right triangles.',
-    icon: 'compare_arrows'
-  }
-];
+const SUPPORT_TOOL_ICONS = ['format_list_numbered', 'looks_3', 'looks_5', 'compare_arrows'];
+const SUPPORT_TOOL_PAGES = triplesHomeUi.tools.map((tool, index) => ({
+  ...tool,
+  icon: SUPPORT_TOOL_ICONS[index] ?? 'calculate'
+}));
 
 const totalToolCount = RIGHT_TRIANGLE_GROUPED_PAGES.length + SUPPORT_TOOL_PAGES.length;
 ---
@@ -99,7 +80,7 @@ const totalToolCount = RIGHT_TRIANGLE_GROUPED_PAGES.length + SUPPORT_TOOL_PAGES.
 
   <div class="relative z-10 mx-auto mt-12 max-w-7xl">
     <h3 class="font-label text-xs uppercase tracking-[0.2em] text-outline">
-      Core Right Triangle Calculators
+      {triplesHomeUi.coreHeading}
     </h3>
 
     <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
@@ -129,7 +110,7 @@ const totalToolCount = RIGHT_TRIANGLE_GROUPED_PAGES.length + SUPPORT_TOOL_PAGES.
 
     <div class="mt-10 border-t border-outline-variant/30 pt-8">
       <h3 class="font-label text-xs uppercase tracking-[0.2em] text-outline">
-        Right Triangle Patterns and Triples
+        {triplesHomeUi.supportHeading}
       </h3>
 
       <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

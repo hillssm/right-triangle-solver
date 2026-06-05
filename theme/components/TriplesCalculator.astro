@@ -14,16 +14,48 @@ const { page, locale } = Astro.props;
 
 const bundle = getTranslations(locale);
 const solver = ((bundle.common as any)?.solver as Record<string, string>) || {};
+const calculatorUi = {
+  calculatorModeHeading: page.calculatorUi?.calculatorModeHeading,
+  resultLabel: page.calculatorUi?.resultLabel ?? pick(solver, 'resultLabel', 'Result'),
+  formulaLabel: page.calculatorUi?.formulaLabel ?? pick(solver, 'formulaLabel', 'Formula'),
+  calculateLabel: page.calculatorUi?.calculateLabel ?? pick(solver, 'calculate', 'Calculate'),
+  resetLabel: page.calculatorUi?.resetLabel ?? pick(solver, 'reset', 'Reset'),
+  errors: {
+    positiveValues: page.calculatorUi?.errors?.positiveValues ?? 'Please enter positive values.',
+    hypotenuseLongest:
+      page.calculatorUi?.errors?.hypotenuseLongest ?? 'The hypotenuse c should be the largest side.',
+    notTriple:
+      page.calculatorUi?.errors?.notTriple ?? 'These values do not form a Pythagorean triple.',
+    positiveIntegers:
+      page.calculatorUi?.errors?.positiveIntegers ?? 'm and n must be positive integers.',
+    mGreaterThanN: page.calculatorUi?.errors?.mGreaterThanN ?? 'm must be greater than n.',
+    positiveScaleFactor:
+      page.calculatorUi?.errors?.positiveScaleFactor ?? 'Scale factor must be greater than 0.',
+    originalAndScalePositive:
+      page.calculatorUi?.errors?.originalAndScalePositive ?? 'Original side and k must be greater than 0.',
+    similarAndScalePositive:
+      page.calculatorUi?.errors?.similarAndScalePositive ?? 'Similar side and k must be greater than 0.',
+    unableToCalculate:
+      page.calculatorUi?.errors?.unableToCalculate ?? 'Unable to calculate.'
+  },
+  results: {
+    validTriple: page.calculatorUi?.results?.validTriple ?? 'Valid Pythagorean triple',
+    notTriple:
+      page.calculatorUi?.results?.notTriple ?? 'These values do not form a Pythagorean triple.'
+  }
+};
 const calculatorModeHeading =
-  locale === DEFAULT_LOCALE
+  calculatorUi.calculatorModeHeading ??
+  (locale === DEFAULT_LOCALE
     ? seoSectionHeading(page, 'calculatorMode', 'Calculator Mode')
-    : 'Calculator Mode';
+    : 'Calculator Mode');
 ---
 
 <section
   class="section-shell min-w-0 max-w-full"
   data-triples-calculator
   data-modes={JSON.stringify(page.modes)}
+  data-calculator-ui={JSON.stringify(calculatorUi)}
 >
   <div class="mb-6 flex flex-wrap items-start justify-between gap-4">
     <h2 class="text-2xl font-semibold">{calculatorModeHeading}</h2>
@@ -56,7 +88,7 @@ const calculatorModeHeading =
       <div class="hidden surface-card border-primary/30 bg-surface-container-high" data-calc-result-wrap>
         <div class="flex items-center justify-between">
           <p class="font-label text-xs uppercase tracking-widest text-primary">
-            Result
+            {calculatorUi.resultLabel}
           </p>
         </div>
         <div class="mt-4 grid gap-3" data-calc-output-container>
@@ -65,7 +97,7 @@ const calculatorModeHeading =
 
         <div class="mt-6 border-t border-outline-variant/30 pt-4">
           <p class="text-xs italic text-on-surface-variant flex flex-col gap-2">
-            <span>{pick(solver, 'formulaLabel', 'Formula')}:</span>
+            <span>{calculatorUi.formulaLabel}:</span>
             <span class="math-textbook" data-calc-formula-display dir="ltr"></span>
           </p>
         </div>
@@ -80,6 +112,7 @@ const calculatorModeHeading =
       section.dataset.triplesCalculatorReady = 'true';
 
       const modes = JSON.parse(section.getAttribute('data-modes') || '[]');
+      const ui = JSON.parse(section.getAttribute('data-calculator-ui') || '{}');
       const tabs = section.querySelectorAll<HTMLButtonElement>('[data-mode-tab]');
       const headingEl = section.querySelector('[data-calc-heading]');
       const form = section.querySelector<HTMLFormElement>('[data-calc-form]');
@@ -108,8 +141,8 @@ const calculatorModeHeading =
 
         fieldsHtml += `
           <div class="sm:col-span-2 lg:col-span-1 xl:col-span-2 flex flex-wrap gap-3">
-            <button type="submit" class="btn-primary">Calculate</button>
-            <button type="reset" class="btn-secondary">Reset</button>
+            <button type="submit" class="btn-primary">${ui.calculateLabel || 'Calculate'}</button>
+            <button type="reset" class="btn-secondary">${ui.resetLabel || 'Reset'}</button>
           </div>
         `;
 
@@ -158,16 +191,16 @@ const calculatorModeHeading =
           if (currentModeId === 'check-triple') {
             const { a, b, c } = v;
             if (a <= 0 || b <= 0 || c <= 0) throw new Error(mode.validation);
-            if (c <= a || c <= b) throw new Error('The hypotenuse c should be the largest side.');
+            if (c <= a || c <= b) throw new Error(ui.errors?.hypotenuseLongest || 'The hypotenuse c should be the largest side.');
             
             const isTriple = Math.abs(a*a + b*b - c*c) < 1e-8;
-            results = [isTriple ? 'Valid Pythagorean triple' : 'These values do not form a Pythagorean triple.'];
+            results = [isTriple ? ui.results?.validTriple || 'Valid Pythagorean triple' : ui.results?.notTriple || 'These values do not form a Pythagorean triple.'];
             
-            if (!isTriple) throw new Error('These values do not form a Pythagorean triple.');
+            if (!isTriple) throw new Error(ui.errors?.notTriple || 'These values do not form a Pythagorean triple.');
           } else if (currentModeId === 'generate-triple') {
             const { m, n } = v;
-            if (m <= 0 || n <= 0 || !Number.isInteger(m) || !Number.isInteger(n)) throw new Error('m and n must be positive integers.');
-            if (m <= n) throw new Error('m must be greater than n.');
+            if (m <= 0 || n <= 0 || !Number.isInteger(m) || !Number.isInteger(n)) throw new Error(ui.errors?.positiveIntegers || 'm and n must be positive integers.');
+            if (m <= n) throw new Error(ui.errors?.mGreaterThanN || 'm must be greater than n.');
             
             results = [
               String(m*m - n*n),
@@ -176,29 +209,29 @@ const calculatorModeHeading =
             ];
           } else if (currentModeId === 'scale-3-4-5') {
             const { k } = v;
-            if (k <= 0) throw new Error('Scale factor must be greater than 0.');
+            if (k <= 0) throw new Error(ui.errors?.positiveScaleFactor || 'Scale factor must be greater than 0.');
             const a = 3*k, b = 4*k, c = 5*k;
             results = [
               format(a), format(b), format(c), format((a*b)/2), format(a+b+c)
             ];
           } else if (currentModeId === 'scale-5-12-13') {
             const { k } = v;
-            if (k <= 0) throw new Error('Scale factor must be greater than 0.');
+            if (k <= 0) throw new Error(ui.errors?.positiveScaleFactor || 'Scale factor must be greater than 0.');
             const a = 5*k, b = 12*k, c = 13*k;
             results = [
               format(a), format(b), format(c), format((a*b)/2), format(a+b+c)
             ];
           } else if (currentModeId === 'find-scale-factor') {
             const { original_side, similar_side } = v;
-            if (original_side <= 0 || similar_side <= 0) throw new Error('Please enter positive values.');
+            if (original_side <= 0 || similar_side <= 0) throw new Error(ui.errors?.positiveValues || 'Please enter positive values.');
             results = [format(similar_side / original_side)];
           } else if (currentModeId === 'find-similar-side') {
             const { original_side, k } = v;
-            if (original_side <= 0 || k <= 0) throw new Error('Original side and k must be greater than 0.');
+            if (original_side <= 0 || k <= 0) throw new Error(ui.errors?.originalAndScalePositive || 'Original side and k must be greater than 0.');
             results = [format(original_side * k)];
           } else if (currentModeId === 'find-original-side') {
             const { similar_side, k } = v;
-            if (similar_side <= 0 || k <= 0) throw new Error('Similar side and k must be greater than 0.');
+            if (similar_side <= 0 || k <= 0) throw new Error(ui.errors?.similarAndScalePositive || 'Similar side and k must be greater than 0.');
             results = [format(similar_side / k)];
           }
 
@@ -214,7 +247,7 @@ const calculatorModeHeading =
           
         } catch (err: any) {
           resultWrap.classList.add('hidden');
-          errorEl.textContent = err.message || 'Unable to calculate.';
+          errorEl.textContent = err.message || ui.errors?.unableToCalculate || 'Unable to calculate.';
           errorEl.classList.remove('hidden');
         }
       });

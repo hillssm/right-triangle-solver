@@ -5,6 +5,7 @@ import Faq from 'theme/components/Faq.astro';
 import HomeSchema from 'theme/components/HomeSchema.astro';
 import HowItWorks from 'theme/components/HowItWorks.astro';
 import RightTriangleTool from 'theme/components/RightTriangleTool.astro';
+import { getFocusedTriplesHomeUi } from 'src/data/focusedTriplesCalculatorTranslations';
 import { localizePath } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
@@ -23,6 +24,7 @@ const content = bundle.content as Record<string, unknown>;
 const home = (content.home as Record<string, unknown>) ?? {};
 const homeAny = home as Record<string, any>;
 const siteContent = (content.site as Record<string, string>) ?? {};
+const triplesHomeUi = getFocusedTriplesHomeUi(locale);
 
 const siteTitle = pick(siteContent, 'title', 'Right Triangle Solver');
 const pageTitle = pick(home, 'title', `${siteTitle} | Geometry`);
@@ -40,10 +42,10 @@ const calculatorSection = (longContent.calculatorSection as Record<string, any>)
 const validationSection = (longContent.validationSection as Record<string, any>) ?? {};
 
 const defaultChartRows = [
-  { label: '3-4-5 triangle', value: '5.000', ratio: 5, href: '/3-4-5-triangle-calculator/' },
-  { label: '5-12-13 triangle', value: '13.000', ratio: 13, href: '/5-12-13-triangle-calculator/' },
-  { label: '8-15-17 triangle', value: '17.000', ratio: 17 },
-  { label: '9-12-15 triangle', value: '15.000', ratio: 15 }
+  { label: triplesHomeUi.chartRows.triangle345, value: '5.000', ratio: 5, href: '/3-4-5-triangle-calculator/' },
+  { label: triplesHomeUi.chartRows.triangle51213, value: '13.000', ratio: 13, href: '/5-12-13-triangle-calculator/' },
+  { label: triplesHomeUi.chartRows.triangle81517, value: '17.000', ratio: 17 },
+  { label: triplesHomeUi.chartRows.triangle91215, value: '15.000', ratio: 15 }
 ];
 
 const chartRows = (Array.isArray(homeAny.chartRows) ? homeAny.chartRows : defaultChartRows).map((row) => ({
@@ -422,7 +424,7 @@ const localizedPath = localizePath(locale, '/');
     />
     <div class="mx-auto mt-4 w-full max-w-4xl">
       <a href={localizePath(locale, '/pythagorean-triples-calculator/')} class="text-sm font-medium text-primary transition-colors hover:text-tertiary">
-        View all Pythagorean triples
+        {triplesHomeUi.viewAllPythagoreanTriples}
       </a>
     </div>
   </div>

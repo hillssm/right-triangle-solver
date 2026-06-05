@@ -1,3 +1,6 @@
+import { localizeFocusedTriplesCalculatorPage } from './focusedTriplesCalculatorTranslations';
+import { DEFAULT_LOCALE, type Locale } from 'theme/i18n/locales';
+
 export type FocusedTriplesCalculatorMode = {
   id: string;
   label: string;
@@ -6,6 +9,45 @@ export type FocusedTriplesCalculatorMode = {
   outputLabels: string[];
   formulas: string[];
   validation: string;
+};
+
+export type FocusedTriplesCalculatorUi = {
+  calculatorModeHeading?: string;
+  resultLabel?: string;
+  formulaLabel?: string;
+  calculateLabel?: string;
+  resetLabel?: string;
+  openToolLabel?: string;
+  diagramKeyLabel?: string;
+  diagramScaleFactorLabel?: string;
+  faqDescription?: string;
+  sectionHeadings?: {
+    formula?: string;
+    diagram?: string;
+    howTo?: string;
+    examples?: string;
+    result?: string;
+    sideRatio?: string;
+    useCases?: string;
+    commonMistakes?: string;
+    related?: string;
+    faqs?: string;
+  };
+  errors?: {
+    positiveValues?: string;
+    hypotenuseLongest?: string;
+    notTriple?: string;
+    positiveIntegers?: string;
+    mGreaterThanN?: string;
+    positiveScaleFactor?: string;
+    originalAndScalePositive?: string;
+    similarAndScalePositive?: string;
+    unableToCalculate?: string;
+  };
+  results?: {
+    validTriple?: string;
+    notTriple?: string;
+  };
 };
 
 export type FocusedTriplesCalculatorPage = {
@@ -54,6 +96,7 @@ export type FocusedTriplesCalculatorPage = {
   commonMistakes: string[];
   relatedLinks: { href: string; label: string }[];
   faqs: { question: string; answer: string }[];
+  calculatorUi?: FocusedTriplesCalculatorUi;
 };
 
 export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
@@ -962,6 +1005,15 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
 export const FOCUSED_TRIPLES_CALCULATOR_PAGE_SLUGS =
   focusedTriplesCalculatorPages.map((page) => page.slug);
 
-export function getFocusedTriplesCalculatorPage(slug: string) {
-  return focusedTriplesCalculatorPages.find((page) => page.slug === slug);
+export function getFocusedTriplesCalculatorPage(
+  slug: string,
+  locale: Locale = DEFAULT_LOCALE
+) {
+  const page = focusedTriplesCalculatorPages.find((item) => item.slug === slug);
+
+  if (!page) return undefined;
+
+  return locale === DEFAULT_LOCALE
+    ? page
+    : localizeFocusedTriplesCalculatorPage(page, locale);
 }

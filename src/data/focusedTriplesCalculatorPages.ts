@@ -47,6 +47,7 @@ export type FocusedTriplesCalculatorPage = {
     steps: string[];
   }[];
   resultMeaning: string[];
+  sideRatio: string[];
   useCases: string[];
   commonMistakes: string[];
   relatedLinks: { href: string; label: string }[];
@@ -194,6 +195,11 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     resultMeaning: [
       'When checking a triple, the calculator tells you whether the three numbers satisfy a\u00B2 + b\u00B2 = c\u00B2. If the left side equals the right side, the numbers form a valid Pythagorean triple and can be the sides of a right triangle.',
       'When generating a triple, the calculator produces three whole numbers using the m and n formulas. These numbers are guaranteed to form a right triangle. If m and n share no common factor and are not both odd, the triple is primitive \u2014 meaning it cannot be simplified further.',
+    ],
+
+    sideRatio: [
+      'A Pythagorean triple has whole-number side lengths in the form a : b : c.',
+      'The exact ratio changes from one triple to another, but every valid triple satisfies a\u00B2 + b\u00B2 = c\u00B2 with c as the hypotenuse.',
     ],
 
     useCases: [
@@ -403,6 +409,11 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
       'The area tells you the space inside the triangle in square units. The perimeter gives you the total length around the outside. Both values grow as you increase k, but the triangle always keeps its right angle.',
     ],
 
+    sideRatio: [
+      'The side ratio for every 3 4 5 triangle is 3 : 4 : 5.',
+      'A scaled version keeps the same ratio as 3k : 4k : 5k, so the hypotenuse is always the side matched with 5k.',
+    ],
+
     useCases: [
       'Checking a right angle in construction by measuring 3, 6, or 9 feet along one side and 4, 8, or 12 feet along another.',
       'Solving geometry homework that involves 3 4 5 triangle scaling.',
@@ -609,6 +620,11 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     resultMeaning: [
       'The output gives you the three scaled sides, the enclosed area, and the outer perimeter. Side a is the shorter leg, side b is the longer leg, and c is the hypotenuse.',
       'A larger k stretches the triangle while keeping the same proportions. Doubling k quadruples the area but only doubles the perimeter. This relationship holds for all scaled triangles.',
+    ],
+
+    sideRatio: [
+      'The side ratio for every 5 12 13 triangle is 5 : 12 : 13.',
+      'A scaled version keeps the same ratio as 5k : 12k : 13k, so each side is multiplied by the same scale factor k.',
     ],
 
     useCases: [
@@ -823,6 +839,11 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     resultMeaning: [
       'The scale factor k tells you how many times larger or smaller the similar triangle is compared to the original. A scale factor of 2 means every side on the similar triangle is twice as long.',
       'When you find a missing side, the result is the length of the corresponding side on the other triangle. This works because similar triangles maintain constant proportions across all pairs of matching sides.',
+    ],
+
+    sideRatio: [
+      'Similar right triangles keep the same matching-side ratios across both triangles.',
+      'If the scale factor is k, each side on the similar triangle equals its corresponding original side multiplied by k.',
     ],
 
     useCases: [

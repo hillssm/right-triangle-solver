@@ -19,16 +19,14 @@ const { page, locale = DEFAULT_LOCALE } = Astro.props;
 
 const bundle = getTranslations(locale);
 const common = (bundle.common as Record<string, any>) || {};
-const content = (bundle.content as Record<string, any>) || {};
 const nav = (common.nav as Record<string, string>) || {};
 const solver = (common.solver as Record<string, string>) || {};
-const faqHub = (content.faqHub as Record<string, string>) || {};
 
 const canonicalPath = localizePath(locale, page.url);
 const homeLabel = pick(nav, 'home', 'Home');
 const openToolLabel = pick(solver, 'openTool', 'Open Tool');
 const relatedHeading = 'Related Calculators';
-const faqHeading = pick(faqHub, 'heading', 'Frequently Asked Questions');
+const faqHeading = 'FAQs';
 
 const breadcrumbItems = [
   { label: homeLabel, href: localizePath(locale, '/') },
@@ -132,29 +130,33 @@ const renderMath = (expression: string, displayMode = true) =>
 
   <TriplesCalculator page={page} locale={locale} />
 
-  <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-    <h2 class="text-2xl font-semibold">{page.quickSummary.h2}</h2>
-    <p class="mt-3 max-w-3xl leading-relaxed text-on-surface-variant">
-      {page.quickSummary.intro}
-    </p>
-    <div class="mt-5 grid gap-3 sm:grid-cols-2">
-      {page.quickSummary.cards.map((card) => (
-        <div class="min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-4">
-          <p class="font-label text-[11px] uppercase tracking-widest text-primary">
-            {card.label}
-          </p>
-          <p class="mt-2 break-words text-sm leading-relaxed text-on-surface" dir={card.value.includes('=') ? 'ltr' : undefined}>
-            {card.value}
-          </p>
-        </div>
-      ))}
-    </div>
-  </section>
+  {page.calculatorNote && (
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+      <p>{page.calculatorNote}</p>
+    </section>
+  )}
+
+  {page.formulaSection && (
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+      <h2>Formula</h2>
+      {page.formulaSection.paragraphs.map((p) => <p>{p}</p>)}
+      <div class="not-prose mt-4 grid gap-3 sm:grid-cols-2">
+        {page.formulaSection.formulas.map((expression) => (
+          <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
+            <div
+              class="math-textbook min-w-max text-2xl text-tertiary"
+              dir="ltr"
+              set:html={renderMath(expression)}
+            />
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
 
   {page.diagram && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-      <h2 class="text-2xl font-semibold">{page.diagram.h2}</h2>
-      <p class="mt-3 leading-relaxed text-on-surface-variant">{page.diagram.intro}</p>
+      <h2 class="text-2xl font-semibold">Triangle Diagram</h2>
       <div class="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(14rem,0.85fr)] lg:items-start">
         <div class="min-w-0">
           <div class="rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-3">
@@ -231,7 +233,7 @@ const renderMath = (expression: string, displayMode = true) =>
         </div>
         <div class="min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/50 p-4">
           <p class="font-label text-[11px] uppercase tracking-widest text-primary">
-            Key
+            Triangle Diagram Key
           </p>
           <ul class="mt-4 grid gap-2 text-sm leading-relaxed text-on-surface-variant">
             {page.diagram.notes.map((note) => (
@@ -241,24 +243,6 @@ const renderMath = (expression: string, displayMode = true) =>
             ))}
           </ul>
         </div>
-      </div>
-    </section>
-  )}
-
-  {page.formulaSection && (
-    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-      <h2>Formula</h2>
-      {page.formulaSection.paragraphs.map((p) => <p>{p}</p>)}
-      <div class="not-prose mt-4 grid gap-3 sm:grid-cols-2">
-        {page.formulaSection.formulas.map((expression) => (
-          <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
-            <div
-              class="math-textbook min-w-max text-2xl text-tertiary"
-              dir="ltr"
-              set:html={renderMath(expression)}
-            />
-          </div>
-        ))}
       </div>
     </section>
   )}
@@ -303,6 +287,13 @@ const renderMath = (expression: string, displayMode = true) =>
     </section>
   )}
 
+  {page.sideRatio && page.sideRatio.length > 0 && (
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+      <h2>Side Ratio</h2>
+      {page.sideRatio.map((paragraph) => <p>{paragraph}</p>)}
+    </section>
+  )}
+
   {page.useCases && page.useCases.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2>When to Use This Calculator</h2>
@@ -319,6 +310,12 @@ const renderMath = (expression: string, displayMode = true) =>
         {page.commonMistakes.map((mistake) => <li set:html={formatListItem(mistake)} />)}
       </ul>
     </section>
+  )}
+
+  {page.faqs && page.faqs.length > 0 && (
+    <div class="mx-auto mt-8 w-full max-w-4xl">
+      <Faq heading={faqHeading} items={page.faqs} />
+    </div>
   )}
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
@@ -339,12 +336,6 @@ const renderMath = (expression: string, displayMode = true) =>
       ))}
     </div>
   </section>
-
-  {page.faqs && page.faqs.length > 0 && (
-    <div class="mx-auto mt-8 w-full max-w-4xl">
-      <Faq heading={faqHeading} items={page.faqs} />
-    </div>
-  )}
 </BaseLayout>
 
 <style>

@@ -1,0 +1,224 @@
+---
+import type { FocusedTriplesCalculatorPage } from 'src/data/focusedTriplesCalculatorPages';
+import type { Locale } from 'theme/i18n/locales';
+import { getTranslations, pick } from 'theme/i18n/translations';
+import katex from 'katex';
+import 'katex/dist/katex.min.css';
+
+interface Props {
+  page: FocusedTriplesCalculatorPage;
+  locale: Locale;
+}
+
+const { page, locale } = Astro.props;
+
+const bundle = getTranslations(locale);
+const solver = ((bundle.common as any)?.solver as Record<string, string>) || {};
+---
+
+<section
+  class="section-shell min-w-0 max-w-full"
+  data-triples-calculator
+  data-modes={JSON.stringify(page.modes)}
+>
+  <div class="mb-6 flex flex-wrap gap-2 border-b border-outline-variant/30 pb-4" data-calc-tabs>
+    {page.modes.map((mode, index) => (
+      <button
+        type="button"
+        class={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${index === 0 ? 'bg-primary text-on-primary' : 'bg-surface-container text-on-surface hover:bg-surface-container-high'}`}
+        data-mode-tab={mode.id}
+      >
+        {mode.label}
+      </button>
+    ))}
+  </div>
+
+  <h2 class="break-words text-2xl font-semibold leading-tight" data-calc-heading>
+    {page.modes[0]?.heading}
+  </h2>
+
+  <div class="mt-6 flex flex-col gap-6 lg:flex-row lg:items-start">
+    <div class="min-w-0 flex-1 w-full space-y-4">
+      <form class="grid min-w-0 gap-4 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2" data-calc-form>
+        <!-- Fields injected by JS -->
+      </form>
+
+      <p class="text-sm text-error mt-2 hidden" data-calc-error role="alert"></p>
+
+      <div class="hidden surface-card border-primary/30 bg-surface-container-high" data-calc-result-wrap>
+        <div class="flex items-center justify-between">
+          <p class="font-label text-xs uppercase tracking-widest text-primary">
+            Result
+          </p>
+        </div>
+        <div class="mt-4 grid gap-3" data-calc-output-container>
+          <!-- Results injected here -->
+        </div>
+
+        <div class="mt-6 border-t border-outline-variant/30 pt-4">
+          <p class="text-xs italic text-on-surface-variant flex flex-col gap-2">
+            <span>{pick(solver, 'formulaLabel', 'Formula')}:</span>
+            <span class="math-textbook" data-calc-formula-display dir="ltr"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const currentScript = document.currentScript as HTMLScriptElement | null;
+      if (!currentScript) return;
+
+      const section = currentScript.closest('[data-triples-calculator]') as HTMLElement;
+      if (!section) return;
+
+      const modes = JSON.parse(section.getAttribute('data-modes') || '[]');
+      const tabs = section.querySelectorAll<HTMLButtonElement>('[data-mode-tab]');
+      const headingEl = section.querySelector('[data-calc-heading]');
+      const form = section.querySelector<HTMLFormElement>('[data-calc-form]');
+      const errorEl = section.querySelector('[data-calc-error]');
+      const resultWrap = section.querySelector('[data-calc-result-wrap]');
+      const outputContainer = section.querySelector('[data-calc-output-container]');
+      const formulaDisplay = section.querySelector('[data-calc-formula-display]');
+
+      if (!form || !errorEl || !resultWrap || !outputContainer || !formulaDisplay) return;
+
+      let currentModeId = modes[0]?.id;
+
+      const renderForm = (modeId: string) => {
+        const mode = modes.find((m: any) => m.id === modeId);
+        if (!mode) return;
+
+        headingEl!.textContent = mode.heading;
+
+        let fieldsHtml = mode.fields.map((field: any) => `
+          <label class="grid min-w-0 gap-2 text-sm font-medium">
+            <span>${field.label}</span>
+            <input class="input-shell min-w-0" type="number" step="any" name="${field.key}" required />
+          </label>
+        `).join('');
+
+        fieldsHtml += `
+          <div class="sm:col-span-2 lg:col-span-1 xl:col-span-2 flex flex-wrap gap-3">
+            <button type="submit" class="btn-primary">Calculate</button>
+            <button type="reset" class="btn-secondary">Reset</button>
+          </div>
+        `;
+
+        form.innerHTML = fieldsHtml;
+        resultWrap.classList.add('hidden');
+        errorEl.classList.add('hidden');
+        
+        formulaDisplay.innerHTML = mode.formulas.join('<br/>');
+      };
+
+      const handleTabClick = (e: MouseEvent) => {
+        const target = e.currentTarget as HTMLButtonElement;
+        const modeId = target.getAttribute('data-mode-tab');
+        if (!modeId || modeId === currentModeId) return;
+
+        currentModeId = modeId;
+        tabs.forEach(tab => {
+          if (tab.getAttribute('data-mode-tab') === currentModeId) {
+            tab.className = 'rounded-full px-4 py-1.5 text-sm font-medium transition-colors bg-primary text-on-primary';
+          } else {
+            tab.className = 'rounded-full px-4 py-1.5 text-sm font-medium transition-colors bg-surface-container text-on-surface hover:bg-surface-container-high';
+          }
+        });
+
+        renderForm(currentModeId);
+      };
+
+      tabs.forEach(tab => tab.addEventListener('click', handleTabClick));
+
+      const format = (n: number) => Number(n).toFixed(4).replace(/\.?0+$/, '');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const mode = modes.find((m: any) => m.id === currentModeId);
+        if (!mode) return;
+
+        const data = new FormData(form);
+        const v: Record<string, number> = {};
+        for (const [key, val] of data.entries()) {
+          v[key] = Number(val);
+        }
+
+        try {
+          let results: string[] = [];
+
+          if (currentModeId === 'check-triple') {
+            const { a, b, c } = v;
+            if (a <= 0 || b <= 0 || c <= 0) throw new Error(mode.validation);
+            if (c <= a || c <= b) throw new Error('The hypotenuse c should be the largest side.');
+            
+            const isTriple = Math.abs(a*a + b*b - c*c) < 1e-8;
+            results = [isTriple ? 'Valid Pythagorean triple' : 'These values do not form a Pythagorean triple.'];
+            
+            if (!isTriple) throw new Error('These values do not form a Pythagorean triple.');
+          } else if (currentModeId === 'generate-triple') {
+            const { m, n } = v;
+            if (m <= 0 || n <= 0 || !Number.isInteger(m) || !Number.isInteger(n)) throw new Error('m and n must be positive integers.');
+            if (m <= n) throw new Error('m must be greater than n.');
+            
+            results = [
+              String(m*m - n*n),
+              String(2*m*n),
+              String(m*m + n*n)
+            ];
+          } else if (currentModeId === 'scale-3-4-5') {
+            const { k } = v;
+            if (k <= 0) throw new Error('Scale factor must be greater than 0.');
+            const a = 3*k, b = 4*k, c = 5*k;
+            results = [
+              format(a), format(b), format(c), format((a*b)/2), format(a+b+c)
+            ];
+          } else if (currentModeId === 'scale-5-12-13') {
+            const { k } = v;
+            if (k <= 0) throw new Error('Scale factor must be greater than 0.');
+            const a = 5*k, b = 12*k, c = 13*k;
+            results = [
+              format(a), format(b), format(c), format((a*b)/2), format(a+b+c)
+            ];
+          } else if (currentModeId === 'find-scale-factor') {
+            const { original_side, similar_side } = v;
+            if (original_side <= 0 || similar_side <= 0) throw new Error('Please enter positive values.');
+            results = [format(similar_side / original_side)];
+          } else if (currentModeId === 'find-similar-side') {
+            const { original_side, k } = v;
+            if (original_side <= 0 || k <= 0) throw new Error('Original side and k must be greater than 0.');
+            results = [format(original_side * k)];
+          } else if (currentModeId === 'find-original-side') {
+            const { similar_side, k } = v;
+            if (similar_side <= 0 || k <= 0) throw new Error('Similar side and k must be greater than 0.');
+            results = [format(similar_side / k)];
+          }
+
+          errorEl.classList.add('hidden');
+          resultWrap.classList.remove('hidden');
+          
+          outputContainer.innerHTML = mode.outputLabels.map((label: string, i: number) => `
+            <div class="flex items-center justify-between border-b border-outline-variant/20 pb-2 last:border-0 last:pb-0">
+              <span class="text-sm font-medium text-on-surface-variant">${label}</span>
+              <span class="font-mono text-xl text-tertiary">${results[i]}</span>
+            </div>
+          `).join('');
+          
+        } catch (err: any) {
+          resultWrap.classList.add('hidden');
+          errorEl.textContent = err.message || 'Unable to calculate.';
+          errorEl.classList.remove('hidden');
+        }
+      });
+
+      form.addEventListener('reset', () => {
+        resultWrap.classList.add('hidden');
+        errorEl.classList.add('hidden');
+      });
+
+      // Initialize
+      renderForm(currentModeId);
+    })();
+  </script>
+</section>

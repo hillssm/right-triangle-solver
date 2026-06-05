@@ -9,6 +9,7 @@ import { FOCUSED_MEASUREMENT_CALCULATOR_PAGES } from 'src/data/focusedMeasuremen
 import { FOCUSED_TRIG_RATIO_CALCULATOR_PAGES } from 'src/data/focusedTrigRatioCalculatorPages';
 import { FOCUSED_ANGLE_CALCULATOR_PAGES } from 'src/data/focusedAngleCalculatorPages';
 import { FOCUSED_RADIUS_CALCULATOR_PAGES } from 'src/data/focusedRadiusCalculatorPages';
+import { focusedTriplesCalculatorPages } from 'src/data/focusedTriplesCalculatorPages';
 import { DEFAULT_LOCALE, localizePath } from 'theme/i18n/locales';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 
@@ -117,6 +118,19 @@ const locale = DEFAULT_LOCALE;
       <h2 class="text-xl font-bold mb-4">Angle Calculators</h2>
       <ul class="space-y-2">
         {FOCUSED_ANGLE_CALCULATOR_PAGES.map((page) => (
+          <li>
+            <a href={localizePath(locale, page.url)} class="text-primary hover:underline">
+              {page.h1}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="section-shell">
+      <h2 class="text-xl font-bold mb-4">Patterns and Triples Calculators</h2>
+      <ul class="space-y-2">
+        {focusedTriplesCalculatorPages.map((page) => (
           <li>
             <a href={localizePath(locale, page.url)} class="text-primary hover:underline">
               {page.h1}

@@ -1,0 +1,96 @@
+---
+import type { FocusedTriplesCalculatorPage } from 'src/data/focusedTriplesCalculatorPages';
+import TriplesCalculator from 'theme/components/TriplesCalculator.astro';
+import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import { toAbsoluteUrl } from 'theme/utils/site';
+
+interface Props {
+  page: FocusedTriplesCalculatorPage;
+  locale?: Locale;
+}
+
+const { page, locale = DEFAULT_LOCALE } = Astro.props;
+
+const canonicalPath = localizePath(locale, page.url);
+
+const breadcrumbItems = [
+  { label: 'Home', href: localizePath(locale, '/') },
+  { label: page.h1, href: canonicalPath }
+];
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbItems.map((item, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: item.label,
+    item: toAbsoluteUrl(item.href)
+  }))
+};
+---
+
+<BaseLayout
+  locale={locale}
+  title={page.metaTitle}
+  description={page.metaDescription}
+  canonicalPath={canonicalPath}
+>
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(breadcrumbSchema)}
+  ></script>
+
+  <nav class="mx-auto mb-6 w-full max-w-4xl" aria-label="Breadcrumb">
+    <ol class="flex flex-wrap items-center gap-2 text-xs text-on-surface-variant">
+      {breadcrumbItems.map((item, index) => (
+        <>
+          <li>
+            {index === breadcrumbItems.length - 1 ? (
+              <span aria-current="page" class="text-on-surface">{item.label}</span>
+            ) : (
+              <a href={item.href} class="hover:text-primary">{item.label}</a>
+            )}
+          </li>
+          {index < breadcrumbItems.length - 1 && (
+            <li aria-hidden="true" class="text-outline">/</li>
+          )}
+        </>
+      ))}
+    </ol>
+  </nav>
+
+  <header class="mx-auto mb-8 w-full max-w-4xl">
+    <h1 class="mt-3 text-3xl font-bold sm:text-4xl">{page.h1}</h1>
+  </header>
+
+  <TriplesCalculator page={page} locale={locale} />
+
+  {page.placeholderSections.map((section) => (
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+      <h2>{section.h2}</h2>
+      <p>{section.text}</p>
+    </section>
+  ))}
+
+  <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+    <h2 class="text-2xl font-semibold">Related Calculators</h2>
+    <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {page.relatedLinks.map((link) => (
+        <a
+          href={localizePath(locale, link.href)}
+          class="group rounded-xl border border-outline-variant/30 bg-surface-container-low p-4 transition-all hover:border-primary/45 hover:shadow-sm"
+        >
+          <h3 class="text-base font-semibold text-on-surface group-hover:text-primary">
+            {link.label}
+          </h3>
+          <p class="mt-3 text-[11px] uppercase tracking-widest text-primary">
+            Open Tool
+          </p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

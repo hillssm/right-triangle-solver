@@ -8,7 +8,7 @@ import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
 import { replaceGenericSeoHeading, seoSectionHeading } from 'theme/utils/seoHeadings';
-import { formatListItem } from 'src/utils/formatList';
+import { formatListItem, formatRootBars } from 'src/utils/formatList';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 
@@ -541,9 +541,7 @@ const measurementSideEntries = page.diagram
             <p class="font-label text-[11px] uppercase tracking-widest text-primary">
               {card.label}
             </p>
-            <p class="mt-2 break-words text-sm leading-relaxed text-on-surface-variant">
-              {card.value}
-            </p>
+            <p class="mt-2 break-words text-sm leading-relaxed text-on-surface-variant" set:html={formatRootBars(card.value)} />
           </div>
         ))}
       </div>
@@ -564,7 +562,7 @@ const measurementSideEntries = page.diagram
       ))}
     </div>
     {page.formulaSection.paragraphs.map((paragraph) => (
-      <p>{paragraph}</p>
+      <p set:html={formatRootBars(paragraph)} />
     ))}
   </section>
 
@@ -715,7 +713,7 @@ const measurementSideEntries = page.diagram
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2>{sectionHeading(section.h2)}</h2>
       {section.paragraphs.map((paragraph) => (
-        <p>{paragraph}</p>
+        <p set:html={formatRootBars(paragraph)} />
       ))}
 
       {section.listItems && section.listItems.length > 0 && (

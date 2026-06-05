@@ -1,5 +1,6 @@
 ---
 import type { FaqItem } from 'theme/i18n/translations';
+import { formatRootBars } from 'src/utils/formatList';
 
 interface Props {
   heading: string;
@@ -41,7 +42,7 @@ const visibleItems = items.filter((item) => item.display !== false);
           </span>
         </summary>
         <div class="border-t border-outline-variant/15 px-5 py-4">
-          <p class="pl-10 text-sm leading-relaxed text-on-surface-variant">{item.answer}</p>
+          <p class="pl-10 text-sm leading-relaxed text-on-surface-variant" set:html={formatRootBars(item.answer)}></p>
         </div>
       </details>
     ))}

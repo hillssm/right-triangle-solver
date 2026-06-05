@@ -7,7 +7,7 @@ import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
 import { seoSectionHeading } from 'theme/utils/seoHeadings';
-import { formatListItem } from 'src/utils/formatList';
+import { formatListItem, formatRootBars } from 'src/utils/formatList';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 
@@ -148,20 +148,20 @@ const renderMath = (expression: string, displayMode = true) =>
 
   {page.intro && page.intro.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-      {page.intro.map((paragraph) => <p>{paragraph}</p>)}
+      {page.intro.map((paragraph) => <p set:html={formatRootBars(paragraph)} />)}
     </section>
   )}
 
   {page.calculatorNote && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-      <p>{page.calculatorNote}</p>
+      <p set:html={formatRootBars(page.calculatorNote)} />
     </section>
   )}
 
   {page.formulaSection && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2>{sectionHeadings.formula}</h2>
-      {page.formulaSection.paragraphs.map((p) => <p>{p}</p>)}
+      {page.formulaSection.paragraphs.map((p) => <p set:html={formatRootBars(p)} />)}
       <div class="not-prose mt-4 grid gap-3 sm:grid-cols-2">
         {page.formulaSection.formulas.map((expression) => (
           <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
@@ -305,14 +305,14 @@ const renderMath = (expression: string, displayMode = true) =>
   {page.resultMeaning && page.resultMeaning.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2>{sectionHeadings.result}</h2>
-      {page.resultMeaning.map((paragraph) => <p>{paragraph}</p>)}
+      {page.resultMeaning.map((paragraph) => <p set:html={formatRootBars(paragraph)} />)}
     </section>
   )}
 
   {page.sideRatio && page.sideRatio.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2>{sectionHeadings.sideRatio}</h2>
-      {page.sideRatio.map((paragraph) => <p>{paragraph}</p>)}
+      {page.sideRatio.map((paragraph) => <p set:html={formatRootBars(paragraph)} />)}
     </section>
   )}
 

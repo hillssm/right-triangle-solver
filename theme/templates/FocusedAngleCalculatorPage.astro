@@ -5,7 +5,7 @@ import {
   getFocusedAngleCalculatorUi
 } from 'src/data/focusedAngleCalculatorTranslations';
 import { getFormulaBySlug } from 'src/data/rightTriangleFormulas';
-import { formatListItem } from 'src/utils/formatList';
+import { formatListItem, formatRootBars } from 'src/utils/formatList';
 import Faq from 'theme/components/Faq.astro';
 import FormulaCalculator from 'theme/components/FormulaCalculator.astro';
 import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
@@ -223,7 +223,7 @@ const sectionHeading = (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading(page.howItWorks.h2)}</h2>
     {page.howItWorks.paragraphs.map((paragraph) => (
-      <p>{paragraph}</p>
+      <p set:html={formatRootBars(paragraph)} />
     ))}
     <div class="not-prose mt-5 grid gap-3 sm:grid-cols-2">
       {page.howItWorks.cards.map((card) => (
@@ -234,9 +234,8 @@ const sectionHeading = (
           <p
             class="mt-2 break-words text-sm leading-relaxed text-on-surface-variant"
             dir={card.value.includes('=') ? 'ltr' : undefined}
-          >
-            {card.value}
-          </p>
+            set:html={formatRootBars(card.value)}
+          />
         </div>
       ))}
     </div>
@@ -251,7 +250,7 @@ const sectionHeading = (
       />
     </div>
     {page.formula.paragraphs.map((paragraph) => (
-      <p>{paragraph}</p>
+      <p set:html={formatRootBars(paragraph)} />
     ))}
   </section>
 
@@ -499,7 +498,7 @@ const sectionHeading = (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading(angleUi.whatResultMeans, 'result')}</h2>
     {page.resultMeaning.map((paragraph) => (
-      <p>{paragraph}</p>
+      <p set:html={formatRootBars(paragraph)} />
     ))}
   </section>
 

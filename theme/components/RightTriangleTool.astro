@@ -55,6 +55,10 @@ import { getTranslations } from '../i18n/translations';
 const { heading, locale = 'en', shellClass = 'section-shell', labels = {} } = Astro.props;
 const bundle = getTranslations(locale as any);
 const units = (bundle.common?.units as any) || {};
+const defaultVisualizationSub =
+  locale === 'en'
+    ? `${heading.replace(/\s+Calculator$/i, '')} Diagram`
+    : 'Right Triangle Diagram';
 
 // Default labels in English for fallback
 const l = {
@@ -82,7 +86,7 @@ const l = {
   segmentP: labels.segmentP ?? 'Segment p',
   segmentQ: labels.segmentQ ?? 'Segment q',
   visualizationTitle: labels.visualizationTitle ?? 'Live Visualization',
-  visualizationSub: labels.visualizationSub ?? 'Right Triangle Diagram',
+  visualizationSub: labels.visualizationSub ?? defaultVisualizationSub,
   visualizationBadge: labels.visualizationBadge ?? 'Scaled',
   ratioAC: labels.ratioAC ?? 'a:c ratio',
   ratioBC: labels.ratioBC ?? 'b:c ratio',

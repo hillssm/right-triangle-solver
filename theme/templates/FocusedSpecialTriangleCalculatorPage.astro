@@ -7,6 +7,7 @@ import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
+import { seoSectionHeading } from 'theme/utils/seoHeadings';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 
@@ -128,7 +129,9 @@ const openToolLabel = pick(solver, 'openTool', 'Open Tool');
 const diagramAriaLabel = page.diagram.kind === '45-45-90'
   ? specialUi.diagramAriaLabel45
   : specialUi.diagramAriaLabel30;
----
+const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallback: string) =>
+  locale === DEFAULT_LOCALE ? seoSectionHeading(page, intent, fallback) : fallback;
+--- 
 
 <BaseLayout
   locale={locale}
@@ -184,7 +187,7 @@ const diagramAriaLabel = page.diagram.kind === '45-45-90'
 
   <section class="mx-auto w-full max-w-4xl section-shell" data-focused-special-triangle-page>
     <div class="flex flex-wrap items-start justify-between gap-4">
-      <h2 class="text-2xl font-semibold">{modeTitle}</h2>
+      <h2 class="text-2xl font-semibold">{sectionHeading('calculatorMode', modeTitle)}</h2>
       <a href={localizePath(locale, page.parentPath)} class="btn-secondary text-xs sm:text-sm">
         {page.parentLabel}
       </a>
@@ -303,7 +306,7 @@ const diagramAriaLabel = page.diagram.kind === '45-45-90'
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{specialUi.formulaHeading}</h2>
+    <h2>{sectionHeading('formula', specialUi.formulaHeading)}</h2>
     <div class="not-prose mt-4 grid gap-3 sm:grid-cols-2">
       {page.formulaSection.formulas.map((expression) => (
         <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
@@ -318,7 +321,7 @@ const diagramAriaLabel = page.diagram.kind === '45-45-90'
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-    <h2 class="text-2xl font-semibold">{specialUi.diagramHeading}</h2>
+    <h2 class="text-2xl font-semibold">{sectionHeading('diagram', specialUi.diagramHeading)}</h2>
     <div class="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(14rem,0.85fr)] lg:items-start">
       <div class="min-w-0">
         <div class="rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-3">
@@ -379,14 +382,14 @@ const diagramAriaLabel = page.diagram.kind === '45-45-90'
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{specialUi.howToUseHeading}</h2>
+    <h2>{sectionHeading('howTo', specialUi.howToUseHeading)}</h2>
     <ol>
       {page.howToUse.map((step) => <li>{step}</li>)}
     </ol>
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{specialUi.examplesHeading}</h2>
+    <h2>{sectionHeading('examples', specialUi.examplesHeading)}</h2>
     <div class="space-y-6 mt-4">
       {page.example.map((ex) => (
         <div>
@@ -408,24 +411,24 @@ const diagramAriaLabel = page.diagram.kind === '45-45-90'
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{specialUi.resultMeaningHeading}</h2>
+    <h2>{sectionHeading('result', specialUi.resultMeaningHeading)}</h2>
     {page.resultMeaning.map((paragraph) => <p>{paragraph}</p>)}
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{specialUi.sideRatioHeading}</h2>
+    <h2>{sectionHeading('sideRatio', specialUi.sideRatioHeading)}</h2>
     {page.sideRatio.map((paragraph) => <p>{paragraph}</p>)}
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{specialUi.useCasesHeading}</h2>
+    <h2>{sectionHeading('useCases', specialUi.useCasesHeading)}</h2>
     <ul>
       {page.useCases.map((useCase) => <li>{useCase}</li>)}
     </ul>
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{specialUi.commonMistakesHeading}</h2>
+    <h2>{sectionHeading('commonMistakes', specialUi.commonMistakesHeading)}</h2>
     <ul>
       {page.commonMistakes.map((mistake) => <li>{mistake}</li>)}
     </ul>
@@ -434,7 +437,7 @@ const diagramAriaLabel = page.diagram.kind === '45-45-90'
   {page.faqs.length > 0 && (
     <div class="mx-auto mt-8 w-full max-w-4xl">
       <Faq
-        heading={specialUi.faqHeading}
+        heading={sectionHeading('faqs', specialUi.faqHeading)}
         description={specialUi.faqDescription}
         items={page.faqs}
       />
@@ -442,7 +445,7 @@ const diagramAriaLabel = page.diagram.kind === '45-45-90'
   )}
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-    <h2 class="text-2xl font-semibold">{specialUi.relatedHeading}</h2>
+    <h2 class="text-2xl font-semibold">{sectionHeading('related', specialUi.relatedHeading)}</h2>
     <div class="not-prose mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {page.relatedLinks.map((link) => (
         <a

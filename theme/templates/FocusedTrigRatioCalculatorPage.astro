@@ -11,6 +11,7 @@ import Faq from 'theme/components/Faq.astro';
 import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
+import { seoSectionHeading } from 'theme/utils/seoHeadings';
 import { formatListItem } from 'src/utils/formatList';
 
 interface Props {
@@ -193,6 +194,8 @@ const sideVisual = (side: TriangleSide) => {
 const sideAVisual = sideVisual('a');
 const sideBVisual = sideVisual('b');
 const sideCVisual = sideVisual('c');
+const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallback: string) =>
+  locale === DEFAULT_LOCALE ? seoSectionHeading(page, intent, fallback) : fallback;
 ---
 
 <BaseLayout
@@ -263,7 +266,7 @@ const sideCVisual = sideVisual('c');
 
   <!-- Formula -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{trigUi.formula}</h2>
+    <h2>{sectionHeading('formula', trigUi.formula)}</h2>
     <div class="not-prose mt-4 grid gap-3">
       <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
         <div class="min-w-max text-2xl text-tertiary font-mono tracking-wide">
@@ -278,7 +281,7 @@ const sideCVisual = sideVisual('c');
 
   <!-- Triangle Diagram -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-    <h2 class="text-2xl font-semibold">{trigUi.triangleDiagram}</h2>
+    <h2 class="text-2xl font-semibold">{sectionHeading('diagram', trigUi.triangleDiagram)}</h2>
     <div class="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(14rem,0.85fr)] lg:items-start">
       <div class="min-w-0">
         <div class="rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-3">
@@ -420,7 +423,7 @@ const sideCVisual = sideVisual('c');
 
   <!-- How to Use -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{trigUi.howToUse}</h2>
+    <h2>{sectionHeading('howTo', trigUi.howToUse)}</h2>
     <ol>
       {page.howToSteps.map((step) => (
         <li set:html={formatListItem(step)} />
@@ -430,7 +433,7 @@ const sideCVisual = sideVisual('c');
 
   <!-- Step-by-Step Example -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{trigUi.stepByStepExample}</h2>
+    <h2>{sectionHeading('examples', trigUi.stepByStepExample)}</h2>
     <p>{page.example.intro}</p>
     <div class="not-prose mt-5 min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
       <div class="grid gap-2">
@@ -446,7 +449,7 @@ const sideCVisual = sideVisual('c');
 
   <!-- What the Result Means -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{trigUi.whatResultMeans}</h2>
+    <h2>{sectionHeading('result', trigUi.whatResultMeans)}</h2>
     {page.whatResultMeans.map((p) => (
       <p>{p}</p>
     ))}
@@ -454,7 +457,7 @@ const sideCVisual = sideVisual('c');
 
   <!-- When to Use This Ratio -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{trigUi.whenToUse}</h2>
+    <h2>{sectionHeading('useCases', trigUi.whenToUse)}</h2>
     <p>{page.whenToUse.intro}</p>
     <ul>
       {page.whenToUse.items.map((item) => (
@@ -465,7 +468,7 @@ const sideCVisual = sideVisual('c');
 
   <!-- Common Mistakes -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{trigUi.commonMistakes}</h2>
+    <h2>{sectionHeading('commonMistakes', trigUi.commonMistakes)}</h2>
     <p>{page.commonMistakes.intro}</p>
     <ul>
       {page.commonMistakes.items.map((item) => (
@@ -476,12 +479,12 @@ const sideCVisual = sideVisual('c');
 
   <!-- FAQs -->
   <div class="mx-auto mt-8 w-full max-w-4xl">
-    <Faq heading={trigUi.faqHeading} items={page.faqs} />
+    <Faq heading={sectionHeading('faqs', trigUi.faqHeading)} items={page.faqs} />
   </div>
 
   <!-- Related Calculators -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-    <h2 class="text-2xl font-semibold">{trigUi.relatedCalculators}</h2>
+    <h2 class="text-2xl font-semibold">{sectionHeading('related', trigUi.relatedCalculators)}</h2>
     <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {page.relatedLinks.map((link) => (
         <a

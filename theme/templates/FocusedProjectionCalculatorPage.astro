@@ -6,6 +6,7 @@ import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
+import { seoSectionHeading } from 'theme/utils/seoHeadings';
 import { formatListItem } from 'src/utils/formatList';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
@@ -268,29 +269,35 @@ const calculatorMessages = {
 const calculatorRuntimeTranslations = page.ui?.calculationSteps
   ? { calculationSteps: page.ui.calculationSteps }
   : {};
+const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallback: string) =>
+  locale === DEFAULT_LOCALE ? seoSectionHeading(page, intent, fallback) : fallback;
 const pageUi = {
   badge: page.ui?.badge ?? 'Projection Calculator',
   calculatorHeading: page.ui?.calculatorHeading ?? `Calculate ${calculatorName}`,
   howItWorksHeading:
     page.ui?.howItWorksHeading ?? `How This ${calculatorName} Calculator Works`,
-  howToHeading: page.ui?.howToHeading ?? 'How to Use This Calculator',
-  resultMeaningHeading: page.ui?.resultMeaningHeading ?? 'What the Result Means',
-  whenUseHeading: page.ui?.whenUseHeading ?? 'When to Use This Calculator',
+  howToHeading: page.ui?.howToHeading ?? sectionHeading('howTo', 'How to Use This Calculator'),
+  resultMeaningHeading:
+    page.ui?.resultMeaningHeading ?? sectionHeading('result', 'What the Result Means'),
+  whenUseHeading:
+    page.ui?.whenUseHeading ?? sectionHeading('useCases', 'When to Use This Calculator'),
   whenUseIntro:
     page.ui?.whenUseIntro ??
     'This method is useful when your known values match this projection relation and you want a direct result.',
   whenUseListTitle:
     page.ui?.whenUseListTitle ?? 'Common situations where this calculator helps:',
-  whyFormulaWorksHeading: page.ui?.whyFormulaWorksHeading ?? 'Why This Formula Works',
-  commonMistakesHeading: page.ui?.commonMistakesHeading ?? 'Common Mistakes',
+  whyFormulaWorksHeading:
+    page.ui?.whyFormulaWorksHeading ?? sectionHeading('whyFormulaWorks', 'Why This Formula Works'),
+  commonMistakesHeading:
+    page.ui?.commonMistakesHeading ?? sectionHeading('commonMistakes', 'Common Mistakes'),
   commonMistakesIntro:
     page.ui?.commonMistakesIntro ??
     'Projection formulas are short, but it is easy to use the wrong segment or stop one step early. Check these points before trusting the result.',
-  faqHeading: page.ui?.faqHeading ?? 'Frequently Asked Questions',
+  faqHeading: page.ui?.faqHeading ?? sectionHeading('faqs', 'Frequently Asked Questions'),
   faqDescription:
     page.ui?.faqDescription ??
     'Answers to common questions about right-triangle projection calculations.',
-  relatedHeading: page.ui?.relatedHeading ?? 'Related Calculators',
+  relatedHeading: page.ui?.relatedHeading ?? sectionHeading('related', 'Related Calculators'),
   diagramKeyLabel: page.ui?.diagramKeyLabel ?? 'Diagram Key',
   homeLabel: page.ui?.homeLabel ?? pick(nav, 'home', 'Home'),
   parentCalculatorLabel:

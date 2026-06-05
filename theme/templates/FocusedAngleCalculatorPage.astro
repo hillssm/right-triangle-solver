@@ -12,6 +12,7 @@ import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
+import { replaceGenericSeoHeading, seoSectionHeading } from 'theme/utils/seoHeadings';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 
@@ -157,6 +158,14 @@ const angleKeyItems = [
     description: angleUi.angleKey.B.description
   }
 ] as const;
+
+const sectionHeading = (
+  heading: string,
+  intent?: Parameters<typeof seoSectionHeading>[1]
+) =>
+  locale === DEFAULT_LOCALE
+    ? replaceGenericSeoHeading(heading, page, intent)
+    : heading;
 ---
 
 <BaseLayout
@@ -212,7 +221,7 @@ const angleKeyItems = [
   />
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{page.howItWorks.h2}</h2>
+    <h2>{sectionHeading(page.howItWorks.h2)}</h2>
     {page.howItWorks.paragraphs.map((paragraph) => (
       <p>{paragraph}</p>
     ))}
@@ -234,7 +243,7 @@ const angleKeyItems = [
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{page.formula.h2}</h2>
+    <h2>{sectionHeading(page.formula.h2)}</h2>
     <div class="not-prose mt-4 min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
       <div
         class="math-textbook min-w-max text-2xl text-tertiary"
@@ -247,7 +256,7 @@ const angleKeyItems = [
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-    <h2 class="break-words text-2xl font-semibold">{page.diagram.h2}</h2>
+    <h2 class="break-words text-2xl font-semibold">{sectionHeading(page.diagram.h2)}</h2>
     <p class="mt-3 max-w-3xl text-sm leading-relaxed text-on-surface-variant">
       {page.diagram.intro}
     </p>
@@ -464,7 +473,7 @@ const angleKeyItems = [
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{angleUi.howToUse}</h2>
+    <h2>{sectionHeading(angleUi.howToUse, 'howTo')}</h2>
     <ol>
       {page.howToSteps.map((step) => (
         <li>{step}</li>
@@ -473,7 +482,7 @@ const angleKeyItems = [
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{page.example.h2}</h2>
+    <h2>{sectionHeading(page.example.h2)}</h2>
     <p>{page.example.intro}</p>
     <div class="not-prose mt-5 min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
       <div class="grid gap-2">
@@ -488,14 +497,14 @@ const angleKeyItems = [
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{angleUi.whatResultMeans}</h2>
+    <h2>{sectionHeading(angleUi.whatResultMeans, 'result')}</h2>
     {page.resultMeaning.map((paragraph) => (
       <p>{paragraph}</p>
     ))}
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{angleUi.whenToUse}</h2>
+    <h2>{sectionHeading(angleUi.whenToUse, 'useCases')}</h2>
     <p>{page.whenToUse.intro}</p>
     <ul>
       {page.whenToUse.items.map((item) => (
@@ -505,7 +514,7 @@ const angleKeyItems = [
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{angleUi.commonMistakes}</h2>
+    <h2>{sectionHeading(angleUi.commonMistakes, 'commonMistakes')}</h2>
     <p>{page.commonMistakes.intro}</p>
     <ul>
       {page.commonMistakes.items.map((item) => (
@@ -515,11 +524,11 @@ const angleKeyItems = [
   </section>
 
   <div class="mx-auto mt-8 w-full max-w-4xl">
-    <Faq heading={angleUi.faqHeading} items={page.faqs} />
+    <Faq heading={sectionHeading(angleUi.faqHeading, 'faqs')} items={page.faqs} />
   </div>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-    <h2 class="break-words text-2xl font-semibold">{angleUi.relatedAngleCalculators}</h2>
+    <h2 class="break-words text-2xl font-semibold">{sectionHeading(angleUi.relatedAngleCalculators, 'related')}</h2>
     <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {page.relatedLinks.map((link) => (
         <a

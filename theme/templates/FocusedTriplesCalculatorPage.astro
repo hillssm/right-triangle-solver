@@ -6,6 +6,7 @@ import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
+import { seoSectionHeading } from 'theme/utils/seoHeadings';
 import { formatListItem } from 'src/utils/formatList';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
@@ -27,6 +28,18 @@ const homeLabel = pick(nav, 'home', 'Home');
 const openToolLabel = pick(solver, 'openTool', 'Open Tool');
 const relatedHeading = 'Related Calculators';
 const faqHeading = 'FAQs';
+const sectionHeadings = {
+  formula: seoSectionHeading(page, 'formula'),
+  diagram: seoSectionHeading(page, 'diagram'),
+  howTo: seoSectionHeading(page, 'howTo'),
+  examples: seoSectionHeading(page, 'examples'),
+  result: seoSectionHeading(page, 'result'),
+  sideRatio: seoSectionHeading(page, 'sideRatio'),
+  useCases: seoSectionHeading(page, 'useCases'),
+  commonMistakes: seoSectionHeading(page, 'commonMistakes'),
+  related: seoSectionHeading(page, 'related'),
+  faqs: seoSectionHeading(page, 'faqs')
+};
 
 const breadcrumbItems = [
   { label: homeLabel, href: localizePath(locale, '/') },
@@ -144,7 +157,7 @@ const renderMath = (expression: string, displayMode = true) =>
 
   {page.formulaSection && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-      <h2>Formula</h2>
+      <h2>{sectionHeadings.formula}</h2>
       {page.formulaSection.paragraphs.map((p) => <p>{p}</p>)}
       <div class="not-prose mt-4 grid gap-3 sm:grid-cols-2">
         {page.formulaSection.formulas.map((expression) => (
@@ -162,7 +175,7 @@ const renderMath = (expression: string, displayMode = true) =>
 
   {page.diagram && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-      <h2 class="text-2xl font-semibold">Triangle Diagram</h2>
+      <h2 class="text-2xl font-semibold">{sectionHeadings.diagram}</h2>
       <div class="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(14rem,0.85fr)] lg:items-start">
         <div class="min-w-0">
           <div class="rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-3">
@@ -255,7 +268,7 @@ const renderMath = (expression: string, displayMode = true) =>
 
   {page.howToUse && page.howToUse.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-      <h2>How to Use This Calculator</h2>
+      <h2>{sectionHeadings.howTo}</h2>
       <ol>
         {page.howToUse.map((step) => <li set:html={formatListItem(step)} />)}
       </ol>
@@ -264,7 +277,7 @@ const renderMath = (expression: string, displayMode = true) =>
 
   {page.example && page.example.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-      <h2>Step-by-Step Examples</h2>
+      <h2>{sectionHeadings.examples}</h2>
       <div class="space-y-6 mt-4">
         {page.example.map((ex) => (
           <div>
@@ -288,21 +301,21 @@ const renderMath = (expression: string, displayMode = true) =>
 
   {page.resultMeaning && page.resultMeaning.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-      <h2>What the Result Means</h2>
+      <h2>{sectionHeadings.result}</h2>
       {page.resultMeaning.map((paragraph) => <p>{paragraph}</p>)}
     </section>
   )}
 
   {page.sideRatio && page.sideRatio.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-      <h2>Side Ratio</h2>
+      <h2>{sectionHeadings.sideRatio}</h2>
       {page.sideRatio.map((paragraph) => <p>{paragraph}</p>)}
     </section>
   )}
 
   {page.useCases && page.useCases.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-      <h2>When to Use This Calculator</h2>
+      <h2>{sectionHeadings.useCases}</h2>
       <ul>
         {page.useCases.map((useCase) => <li set:html={formatListItem(useCase)} />)}
       </ul>
@@ -311,7 +324,7 @@ const renderMath = (expression: string, displayMode = true) =>
 
   {page.commonMistakes && page.commonMistakes.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-      <h2>Common Mistakes</h2>
+      <h2>{sectionHeadings.commonMistakes}</h2>
       <ul>
         {page.commonMistakes.map((mistake) => <li set:html={formatListItem(mistake)} />)}
       </ul>
@@ -320,12 +333,12 @@ const renderMath = (expression: string, displayMode = true) =>
 
   {page.faqs && page.faqs.length > 0 && (
     <div class="mx-auto mt-8 w-full max-w-4xl">
-      <Faq heading={faqHeading} items={page.faqs} />
+      <Faq heading={sectionHeadings.faqs || faqHeading} items={page.faqs} />
     </div>
   )}
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-    <h2 class="text-2xl font-semibold">{relatedHeading}</h2>
+    <h2 class="text-2xl font-semibold">{sectionHeadings.related || relatedHeading}</h2>
     <div class="not-prose mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {page.relatedLinks.map((link) => (
         <a

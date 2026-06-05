@@ -13,6 +13,7 @@ export type FocusedTriplesCalculatorPage = {
   url: string;
   h1: string;
   introLine: string;
+  secondaryKeywords: string[];
   metaTitle: string;
   metaDescription: string;
   badge: string;
@@ -63,6 +64,13 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     h1: 'Pythagorean Triples Calculator',
     introLine:
       'Check or generate whole-number right triangle triples with step-by-step results.',
+    secondaryKeywords: [
+      'pythagorean triples calculator',
+      'pythagorean triple formula',
+      'whole number right triangle triples',
+      'generate pythagorean triples',
+      'check pythagorean triple',
+    ],
     metaTitle:
       'Pythagorean Triples Calculator | Check and Generate Right Triangle Triples',
     metaDescription:
@@ -284,6 +292,13 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     h1: '3 4 5 Triangle Calculator',
     introLine:
       'Scale a 3 4 5 right triangle and find sides, area, and perimeter.',
+    secondaryKeywords: [
+      '3 4 5 triangle calculator',
+      '3 4 5 triangle formula',
+      '3 4 5 triangle ratio',
+      '3 4 5 right triangle',
+      '3 4 5 scale factor',
+    ],
     metaTitle:
       '3 4 5 Triangle Calculator | Solve the 3 4 5 Right Triangle',
     metaDescription:
@@ -499,6 +514,13 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     h1: '5 12 13 Triangle Calculator',
     introLine:
       'Scale a 5 12 13 right triangle and find sides, area, and perimeter.',
+    secondaryKeywords: [
+      '5 12 13 triangle calculator',
+      '5 12 13 triangle formula',
+      '5 12 13 triangle ratio',
+      '5 12 13 right triangle',
+      '5 12 13 scale factor',
+    ],
     metaTitle:
       '5 12 13 Triangle Calculator | Solve the 5 12 13 Right Triangle',
     metaDescription:
@@ -716,6 +738,13 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     h1: 'Similar Right Triangles Calculator',
     introLine:
       'Find scale factor and missing matching sides in similar right triangles.',
+    secondaryKeywords: [
+      'similar right triangles calculator',
+      'similar right triangles formula',
+      'similar right triangles scale factor',
+      'matching sides in similar triangles',
+      'right triangle similarity calculator',
+    ],
     metaTitle:
       'Similar Right Triangles Calculator | Find Missing Sides and Scale Factor',
     metaDescription:

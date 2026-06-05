@@ -1,6 +1,6 @@
 ---
 import type { RightTriangleFormula } from 'src/data/rightTriangleFormulas';
-import type { Locale } from 'theme/i18n/locales';
+import { DEFAULT_LOCALE, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
@@ -37,6 +37,10 @@ const calculator = formula.calculator!!;
 
 const displayTitle = (formulasBundle?.[formula.slug] as any)?.title || formula.title;
 const calculatorHeading = heading || `${displayTitle} ${pick(solver, 'calculateSuffix', 'Calculator')}`;
+const formulaDiagramHeading =
+  locale === DEFAULT_LOCALE
+    ? `${displayTitle} Diagram`
+    : pick(solver, 'formulaDiagram', 'Formula Diagram');
 const defaultStatus = pick(solver, 'statusDefault', `Enter inputs to calculate {label}.`).replace('{label}', calculator.outputLabel);
 const plainExpression = formula.plainExpression;
 
@@ -293,7 +297,7 @@ const calculatorMessages = JSON.stringify(messages);
       <div class="dot-grid pointer-events-none absolute inset-0 opacity-[0.08]"></div>
       <div class="mb-2">
         <p class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">{pick(solver, 'liveVisualization', 'Live Visualization')}</p>
-        <h3 class="mt-1 text-lg text-on-surface">{pick(solver, 'formulaDiagram', 'Formula Diagram')}</h3>
+        <h3 class="mt-1 text-lg text-on-surface">{formulaDiagramHeading}</h3>
       </div>
       <svg class="relative h-auto w-full max-w-sm mx-auto" viewBox="0 0 460 300" aria-label="Dynamic right triangle">
         <defs>

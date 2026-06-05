@@ -9,10 +9,11 @@ import { FOCUSED_ANGLE_CALCULATOR_PAGES } from 'src/data/focusedAngleCalculatorP
 import { GROUPED_PAGE_FAQS } from 'src/data/groupedPageFaqs';
 import FormulaCalculator from 'theme/components/FormulaCalculator.astro';
 import Faq from 'theme/components/Faq.astro';
-import { localizePath, type Locale } from 'theme/i18n/locales';
+import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
+import { replaceGenericSeoHeading, seoSectionHeading } from 'theme/utils/seoHeadings';
 import { formatListItem } from 'src/utils/formatList';
 import { getTranslations, pick } from 'theme/i18n/translations';
 
@@ -150,6 +151,14 @@ const activePage = isHubPage
       content: null
     }
   : localizeGroupedPage(groupedPage!);
+
+const sectionHeading = (
+  heading: string,
+  intent?: Parameters<typeof seoSectionHeading>[1]
+) =>
+  locale === DEFAULT_LOCALE
+    ? replaceGenericSeoHeading(heading, { h1: activePage.h1 }, intent)
+    : heading;
 
 const canonicalPath = localizePath(locale, isHubPage ? RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.url : groupedPage!.url);
 const pageTitle = `${activePage.h1} | Right Triangle Solver`;
@@ -508,7 +517,7 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
     <>
       <section class="section-shell" data-grouped-calculator-page>
         <div class="flex flex-wrap items-start justify-between gap-4">
-          <h2 class="text-2xl font-semibold">{uiModeTitle}</h2>
+          <h2 class="text-2xl font-semibold">{sectionHeading(uiModeTitle, 'calculatorMode')}</h2>
           <a href={hubPath} class="btn-secondary text-xs sm:text-sm">{uiBackTo} {uiHub}</a>
         </div>
 
@@ -609,12 +618,12 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
       </section>
 
       <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-        <h2>{activePage.h2[0]}</h2>
+        <h2>{sectionHeading(activePage.h2[0])}</h2>
         <p>{activePage.content!.intro}</p>
-        <h2>{activePage.h2[1]}</h2>
+        <h2>{sectionHeading(activePage.h2[1])}</h2>
         <p>{activePage.content!.method}</p>
 
-        <h3>{pick(groupedUi, 'whereThisCalculatorHelps', 'Where This Calculator Helps')}</h3>
+        <h3>{sectionHeading(pick(groupedUi, 'whereThisCalculatorHelps', 'Where This Calculator Helps'), 'useCases')}</h3>
         <ul>
           {activePage.content!.useCases.map((item: string) => (
             <li set:html={formatListItem(item)} />
@@ -634,14 +643,14 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
       </section>
 
       <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-        <h2>{pick(groupedUi, 'howToUseTitle', 'How To Use This Calculator')}</h2>
+        <h2>{sectionHeading(pick(groupedUi, 'howToUseTitle', 'How To Use This Calculator'), 'howTo')}</h2>
         <ol>
           {quickStartSteps.map((step: string) => (
             <li set:html={formatListItem(step)} />
           ))}
         </ol>
 
-        <h2>{pick(groupedUi, 'calculatorModesAvailable', 'Calculator Modes Available')}</h2>
+        <h2>{sectionHeading(pick(groupedUi, 'calculatorModesAvailable', 'Calculator Modes Available'), 'calculatorMode')}</h2>
         <ul>
           {formulas.map((formula) => (
             <li>
@@ -650,7 +659,7 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
           ))}
         </ul>
 
-        <h2>{pick(groupedUi, 'commonMistakesTitle', 'Common Mistakes and Quick Fixes')}</h2>
+        <h2>{sectionHeading(pick(groupedUi, 'commonMistakesTitle', 'Common Mistakes and Quick Fixes'), 'commonMistakes')}</h2>
         <ul>
           {commonMistakes.map((item: string) => (
             <li set:html={formatListItem(item)} />
@@ -660,7 +669,7 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
 
       {groupedPageFaqItems.length > 0 && (
         <div class="mx-auto mt-8 w-full max-w-4xl">
-          <Faq heading={pick(groupedUi, 'faqHeading', 'Frequently Asked Questions')} items={groupedPageFaqItems} />
+          <Faq heading={sectionHeading(pick(groupedUi, 'faqHeading', 'Frequently Asked Questions'), 'faqs')} items={groupedPageFaqItems} />
         </div>
       )}
 
@@ -690,7 +699,7 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
       )}
 
       <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-        <h2 class="text-2xl font-semibold">{uiRelated}</h2>
+        <h2 class="text-2xl font-semibold">{sectionHeading(uiRelated, 'related')}</h2>
         <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {localizedRelatedPages.map(({ base, copy }) => (
             <a

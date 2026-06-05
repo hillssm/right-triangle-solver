@@ -11,6 +11,7 @@ import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
+import { seoSectionHeading } from 'theme/utils/seoHeadings';
 
 interface Props {
   page: FocusedRadiusCalculatorPageData;
@@ -66,6 +67,14 @@ const calculatorMessages = radiusUi.messages;
 
 const openToolLabel = pick(solver, 'openTool', radiusUi.openTool);
 const calculatorHeading = radiusUi.calculatorHeadings[page.calculatorKind];
+const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallback: string) =>
+  locale === DEFAULT_LOCALE ? seoSectionHeading(page, intent, fallback) : fallback;
+const radiusRelationHeading =
+  locale === DEFAULT_LOCALE
+    ? page.calculatorKind === 'inradius'
+      ? 'Right Triangle Inradius Relation r'
+      : 'Right Triangle Circumradius Relation R'
+    : radiusUi.sectionHeadings.radiusRelation;
 ---
 
 <BaseLayout
@@ -127,7 +136,7 @@ const calculatorHeading = radiusUi.calculatorHeadings[page.calculatorKind];
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{radiusUi.sectionHeadings.formula}</h2>
+    <h2>{sectionHeading('formula', radiusUi.sectionHeadings.formula)}</h2>
     <p class="math-textbook text-tertiary" dir="ltr">{page.formulaSection.formula}</p>
     {page.formulaSection.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
     <ul>
@@ -136,7 +145,7 @@ const calculatorHeading = radiusUi.calculatorHeadings[page.calculatorKind];
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{radiusUi.sectionHeadings.diagram}</h2>
+    <h2>{sectionHeading('diagram', radiusUi.sectionHeadings.diagram)}</h2>
     {page.diagram.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
 
     <div class="not-prose mt-6 overflow-x-auto rounded-lg border border-outline-variant/30 bg-surface-container-low p-4">
@@ -198,14 +207,14 @@ const calculatorHeading = radiusUi.calculatorHeadings[page.calculatorKind];
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{radiusUi.sectionHeadings.howToUse}</h2>
+    <h2>{sectionHeading('howTo', radiusUi.sectionHeadings.howToUse)}</h2>
     <ol>
       {page.howToUse.map((step) => <li>{step}</li>)}
     </ol>
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{radiusUi.sectionHeadings.example}</h2>
+    <h2>{sectionHeading('examples', radiusUi.sectionHeadings.example)}</h2>
     <p>{radiusUi.sectionHeadings.given}</p>
     <ul>
       {page.example.given.map((item) => <li>{item}</li>)}
@@ -221,31 +230,31 @@ const calculatorHeading = radiusUi.calculatorHeadings[page.calculatorKind];
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{radiusUi.sectionHeadings.resultMeaning}</h2>
+    <h2>{sectionHeading('result', radiusUi.sectionHeadings.resultMeaning)}</h2>
     {page.resultMeaning.map((paragraph) => <p>{paragraph}</p>)}
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{radiusUi.sectionHeadings.radiusRelation}</h2>
+    <h2>{radiusRelationHeading}</h2>
     {page.radiusRelation.map((paragraph) => <p>{paragraph}</p>)}
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{radiusUi.sectionHeadings.useCases}</h2>
+    <h2>{sectionHeading('useCases', radiusUi.sectionHeadings.useCases)}</h2>
     <ul>
       {page.useCases.map((item) => <li>{item}</li>)}
     </ul>
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{radiusUi.sectionHeadings.commonMistakes}</h2>
+    <h2>{sectionHeading('commonMistakes', radiusUi.sectionHeadings.commonMistakes)}</h2>
     <ul>
       {page.commonMistakes.map((mistake) => <li>{mistake}</li>)}
     </ul>
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{radiusUi.sectionHeadings.relatedCalculators}</h2>
+    <h2>{sectionHeading('related', radiusUi.sectionHeadings.relatedCalculators)}</h2>
     <div class="not-prose mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {page.relatedLinks.map((link) => (
         <a
@@ -265,7 +274,7 @@ const calculatorHeading = radiusUi.calculatorHeadings[page.calculatorKind];
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{radiusUi.sectionHeadings.faqs}</h2>
+    <h2>{sectionHeading('faqs', radiusUi.sectionHeadings.faqs)}</h2>
     <div class="not-prose mt-5 space-y-4">
       {page.faqs.map((faq) => (
         <article class="rounded-lg border border-outline-variant/30 bg-surface-container-low p-4">

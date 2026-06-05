@@ -16,27 +16,40 @@ export function formatRootBars(value: string): string {
 export function formatListItem(item: string): string {
   if (typeof item !== 'string') return item;
 
-  let formattedItem = formatRootBars(item);
-
   const separators = [
     ' - ',
     ' — ',
-    ' - ',
+    ' \u2010 ',
     ': ',
     ' -> ',
-    ' → '
+    ' \u2192 '
   ];
 
+  // Detect separators on the RAW text (before HTML injection) and skip
+  // any separator that falls inside parentheses — this protects formulas
+  // like √(c² - a²) from being split.
   for (const separator of separators) {
-    const index = formattedItem.indexOf(separator);
-    // If we find a separator, and the left side is relatively short (<= 150 chars to account for HTML) 
-    // it's likely a heading/label.
-    if (index > 0 && index <= 150 && !formattedItem.substring(0, index).includes('</')) {
-      const term = formattedItem.slice(0, index);
-      const detail = formattedItem.slice(index + separator.length);
-      return `<strong class="font-bold text-on-surface">${term}:</strong> ${detail}`;
+    let searchFrom = 0;
+    while (searchFrom < item.length) {
+      const index = item.indexOf(separator, searchFrom);
+      if (index < 0 || index > 150) break;
+
+      // Count parenthesis depth at this position
+      let depth = 0;
+      for (let i = 0; i < index; i++) {
+        if (item[i] === '(') depth++;
+        if (item[i] === ')') depth--;
+      }
+
+      if (depth === 0) {
+        const term = item.slice(0, index);
+        const detail = item.slice(index + separator.length);
+        return `<strong class="font-bold text-on-surface">${formatRootBars(term)}:</strong> ${formatRootBars(detail)}`;
+      }
+
+      searchFrom = index + separator.length;
     }
   }
 
-  return formattedItem;
+  return formatRootBars(item);
 }

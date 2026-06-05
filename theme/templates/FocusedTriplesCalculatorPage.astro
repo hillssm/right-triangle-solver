@@ -1,21 +1,32 @@
 ---
-import type { FocusedTriplesCalculatorPage } from 'src/data/focusedTriplesCalculatorPages';
+import type { FocusedTriplesCalculatorPage as FocusedTriplesCalculatorPageData } from 'src/data/focusedTriplesCalculatorPages';
 import TriplesCalculator from 'theme/components/TriplesCalculator.astro';
+import Faq from 'theme/components/Faq.astro';
 import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
+import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
+import katex from 'katex';
+import 'katex/dist/katex.min.css';
 
 interface Props {
-  page: FocusedTriplesCalculatorPage;
+  page: FocusedTriplesCalculatorPageData;
   locale?: Locale;
 }
 
 const { page, locale = DEFAULT_LOCALE } = Astro.props;
 
+const bundle = getTranslations(locale);
+const common = (bundle.common as Record<string, any>) || {};
+const nav = (common.nav as Record<string, string>) || {};
+const solver = (common.solver as Record<string, string>) || {};
+
 const canonicalPath = localizePath(locale, page.url);
+const homeLabel = pick(nav, 'home', 'Home');
+const openToolLabel = pick(solver, 'openTool', 'Open Tool');
 
 const breadcrumbItems = [
-  { label: 'Home', href: localizePath(locale, '/') },
+  { label: homeLabel, href: localizePath(locale, '/') },
   { label: page.h1, href: canonicalPath }
 ];
 
@@ -29,6 +40,25 @@ const breadcrumbSchema = {
     item: toAbsoluteUrl(item.href)
   }))
 };
+
+const faqSchema = page.faqs && page.faqs.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: page.faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer
+    }
+  }))
+} : null;
+
+const renderMath = (expression: string, displayMode = true) =>
+  katex.renderToString(expression, {
+    throwOnError: false,
+    displayMode
+  });
 ---
 
 <BaseLayout
@@ -38,10 +68,19 @@ const breadcrumbSchema = {
   canonicalPath={canonicalPath}
 >
   <script
+    is:inline
     slot="head"
     type="application/ld+json"
     set:html={JSON.stringify(breadcrumbSchema)}
   ></script>
+  {faqSchema && (
+    <script
+      is:inline
+      slot="head"
+      type="application/ld+json"
+      set:html={JSON.stringify(faqSchema)}
+    ></script>
+  )}
 
   <nav class="mx-auto mb-6 w-full max-w-4xl" aria-label="Breadcrumb">
     <ol class="flex flex-wrap items-center gap-2 text-xs text-on-surface-variant">
@@ -63,21 +102,207 @@ const breadcrumbSchema = {
   </nav>
 
   <header class="mx-auto mb-8 w-full max-w-4xl">
-    <h1 class="mt-3 text-3xl font-bold sm:text-4xl">{page.h1}</h1>
+    {page.badge && (
+      <p class="font-label text-xs uppercase tracking-widest text-primary">
+        {page.badge}
+      </p>
+    )}
+    <h1 class="mt-3 break-words text-3xl font-bold leading-tight sm:text-4xl">
+      {page.h1}
+    </h1>
+    {page.intro && page.intro.length > 0 && (
+      <div class="mt-5 max-w-3xl space-y-3 text-base leading-7 text-on-surface-variant">
+        {page.intro.map((paragraph) => <p>{paragraph}</p>)}
+      </div>
+    )}
   </header>
 
   <TriplesCalculator page={page} locale={locale} />
 
-  {page.placeholderSections.map((section) => (
+  {page.calculatorNote && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-      <h2>{section.h2}</h2>
-      <p>{section.text}</p>
+      <p>{page.calculatorNote}</p>
     </section>
-  ))}
+  )}
+
+  {page.formulaSection && (
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+      <h2>Formula</h2>
+      {page.formulaSection.paragraphs.map((p) => <p>{p}</p>)}
+      <div class="not-prose mt-4 grid gap-3 sm:grid-cols-2">
+        {page.formulaSection.formulas.map((expression) => (
+          <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
+            <div
+              class="math-textbook min-w-max text-2xl text-tertiary"
+              dir="ltr"
+              set:html={renderMath(expression)}
+            />
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {page.diagram && (
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
+      <h2 class="text-2xl font-semibold">Triangle Diagram</h2>
+      <div class="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(14rem,0.85fr)] lg:items-start">
+        <div class="min-w-0">
+          <div class="rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-3">
+            {page.diagram.kind === '3-4-5' ? (
+              <svg
+                class="triples-diagram-svg"
+                viewBox="0 0 640 420"
+                role="img"
+                aria-label="3-4-5 Right Triangle Diagram"
+              >
+                <path class="diagram-fill" d="M120 340 L420 340 L120 140 Z"></path>
+                <path class="diagram-side" d="M120 340 L420 340 L120 140 Z"></path>
+                <path class="diagram-angle" d="M120 308 L152 308 L152 340"></path>
+                <text class="diagram-label" x="90" y="245">a = 3k</text>
+                <text class="diagram-label" x="245" y="375">b = 4k</text>
+                <text class="diagram-label" x="290" y="218">c = 5k</text>
+                <text class="diagram-label small" x="160" y="325">90°</text>
+              </svg>
+            ) : page.diagram.kind === '5-12-13' ? (
+              <svg
+                class="triples-diagram-svg"
+                viewBox="0 0 640 420"
+                role="img"
+                aria-label="5-12-13 Right Triangle Diagram"
+              >
+                <path class="diagram-fill" d="M80 340 L520 340 L80 220 Z"></path>
+                <path class="diagram-side" d="M80 340 L520 340 L80 220 Z"></path>
+                <path class="diagram-angle" d="M80 308 L112 308 L112 340"></path>
+                <text class="diagram-label" x="50" y="285">a = 5k</text>
+                <text class="diagram-label" x="270" y="375">b = 12k</text>
+                <text class="diagram-label" x="310" y="262">c = 13k</text>
+                <text class="diagram-label small" x="120" y="325">90°</text>
+              </svg>
+            ) : page.diagram.kind === 'similar' ? (
+              <svg
+                class="triples-diagram-svg"
+                viewBox="0 0 640 420"
+                role="img"
+                aria-label="Two Similar Right Triangles Diagram"
+              >
+                <path class="diagram-fill-secondary" d="M60 360 L320 360 L60 200 Z"></path>
+                <path class="diagram-side-secondary" d="M60 360 L320 360 L60 200 Z"></path>
+                <path class="diagram-angle" d="M60 328 L92 328 L92 360"></path>
+                <text class="diagram-label small" x="35" y="286">a</text>
+                <text class="diagram-label small" x="175" y="390">b</text>
+                <text class="diagram-label small" x="210" y="262">c</text>
+
+                <path class="diagram-fill" d="M360 360 L580 360 L360 252 Z"></path>
+                <path class="diagram-side" d="M360 360 L580 360 L360 252 Z"></path>
+                <path class="diagram-angle" d="M360 328 L392 328 L392 360"></path>
+                <text class="diagram-label small" x="332" y="312">a·k</text>
+                <text class="diagram-label small" x="452" y="390">b·k</text>
+                <text class="diagram-label small" x="490" y="290">c·k</text>
+
+                <text class="diagram-label callout" x="300" y="190">k = scale factor</text>
+              </svg>
+            ) : (
+              <svg
+                class="triples-diagram-svg"
+                viewBox="0 0 640 420"
+                role="img"
+                aria-label="General Right Triangle Diagram"
+              >
+                <path class="diagram-fill" d="M120 340 L420 340 L120 80 Z"></path>
+                <path class="diagram-side" d="M120 340 L420 340 L120 80 Z"></path>
+                <path class="diagram-angle" d="M120 308 L152 308 L152 340"></path>
+                <text class="diagram-label" x="90" y="218">a</text>
+                <text class="diagram-label" x="255" y="375">b</text>
+                <text class="diagram-label" x="290" y="190">c</text>
+                <text class="diagram-label small" x="160" y="325">90°</text>
+              </svg>
+            )}
+          </div>
+        </div>
+        <div class="min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/50 p-4">
+          <p class="font-label text-[11px] uppercase tracking-widest text-primary">
+            Key
+          </p>
+          <ul class="mt-4 grid gap-2 text-sm leading-relaxed text-on-surface-variant">
+            {page.diagram.notes.map((note) => (
+              <li class="min-w-0 rounded-md border border-outline-variant/20 bg-surface-container-low/50 px-3 py-2">
+                {note}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  )}
+
+  {page.howToUse && page.howToUse.length > 0 && (
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+      <h2>How to Use This Calculator</h2>
+      <ol>
+        {page.howToUse.map((step) => <li>{step}</li>)}
+      </ol>
+    </section>
+  )}
+
+  {page.example && page.example.length > 0 && (
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+      <h2>Step-by-Step Examples</h2>
+      <div class="space-y-6 mt-4">
+        {page.example.map((ex) => (
+          <div>
+            <p class="font-semibold">{ex.title}</p>
+            <div class="not-prose mt-3 min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
+              <div class="grid gap-2">
+                {ex.steps.map((step) => (
+                  <div
+                    class="math-textbook min-w-max text-lg text-on-surface"
+                    dir="ltr"
+                    set:html={renderMath(step, false)}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {page.resultMeaning && page.resultMeaning.length > 0 && (
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+      <h2>What the Result Means</h2>
+      {page.resultMeaning.map((paragraph) => <p>{paragraph}</p>)}
+    </section>
+  )}
+
+  {page.useCases && page.useCases.length > 0 && (
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+      <h2>When to Use This Calculator</h2>
+      <ul>
+        {page.useCases.map((useCase) => <li>{useCase}</li>)}
+      </ul>
+    </section>
+  )}
+
+  {page.commonMistakes && page.commonMistakes.length > 0 && (
+    <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
+      <h2>Common Mistakes</h2>
+      <ul>
+        {page.commonMistakes.map((mistake) => <li>{mistake}</li>)}
+      </ul>
+    </section>
+  )}
+
+  {page.faqs && page.faqs.length > 0 && (
+    <div class="mx-auto mt-8 w-full max-w-4xl">
+      <Faq heading="FAQs" items={page.faqs} />
+    </div>
+  )}
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
     <h2 class="text-2xl font-semibold">Related Calculators</h2>
-    <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="not-prose mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {page.relatedLinks.map((link) => (
         <a
           href={localizePath(locale, link.href)}
@@ -87,10 +312,71 @@ const breadcrumbSchema = {
             {link.label}
           </h3>
           <p class="mt-3 text-[11px] uppercase tracking-widest text-primary">
-            Open Tool
+            {openToolLabel}
           </p>
         </a>
       ))}
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .triples-diagram-svg {
+    display: block;
+    width: 100%;
+    max-width: 34rem;
+    height: auto;
+    margin-inline: auto;
+  }
+
+  .diagram-fill {
+    fill: rgb(99 102 241 / 0.08);
+  }
+
+  .diagram-fill-secondary {
+    fill: rgb(234 179 8 / 0.08);
+  }
+
+  .diagram-side,
+  .diagram-side-secondary,
+  .diagram-angle {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .diagram-side {
+    stroke: currentColor;
+    stroke-width: 4;
+    color: rgb(var(--color-on-surface, 17 24 39));
+  }
+
+  .diagram-side-secondary {
+    stroke: rgb(234 179 8);
+    stroke-width: 3;
+    stroke-dasharray: 8 4;
+  }
+
+  .diagram-angle {
+    stroke: rgb(var(--color-primary, 79 70 229));
+    stroke-width: 3;
+  }
+
+  .diagram-label {
+    fill: currentColor;
+    color: rgb(var(--color-on-surface, 17 24 39));
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .diagram-label.small {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .diagram-label.callout {
+    font-size: 16px;
+    font-weight: 600;
+    fill: rgb(var(--color-primary, 79 70 229));
+  }
+</style>

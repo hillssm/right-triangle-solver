@@ -12,6 +12,7 @@ export type FocusedTriplesCalculatorPage = {
   slug: string;
   url: string;
   h1: string;
+  introLine: string;
   metaTitle: string;
   metaDescription: string;
   badge: string;
@@ -60,6 +61,8 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     slug: 'pythagorean-triples-calculator',
     url: '/pythagorean-triples-calculator/',
     h1: 'Pythagorean Triples Calculator',
+    introLine:
+      'Check or generate whole-number right triangle triples with step-by-step results.',
     metaTitle:
       'Pythagorean Triples Calculator | Check and Generate Right Triangle Triples',
     metaDescription:
@@ -279,6 +282,8 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     slug: '3-4-5-triangle-calculator',
     url: '/3-4-5-triangle-calculator/',
     h1: '3 4 5 Triangle Calculator',
+    introLine:
+      'Scale a 3 4 5 right triangle and find sides, area, and perimeter.',
     metaTitle:
       '3 4 5 Triangle Calculator | Solve the 3 4 5 Right Triangle',
     metaDescription:
@@ -492,6 +497,8 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     slug: '5-12-13-triangle-calculator',
     url: '/5-12-13-triangle-calculator/',
     h1: '5 12 13 Triangle Calculator',
+    introLine:
+      'Scale a 5 12 13 right triangle and find sides, area, and perimeter.',
     metaTitle:
       '5 12 13 Triangle Calculator | Solve the 5 12 13 Right Triangle',
     metaDescription:
@@ -707,6 +714,8 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     slug: 'similar-right-triangles-calculator',
     url: '/similar-right-triangles-calculator/',
     h1: 'Similar Right Triangles Calculator',
+    introLine:
+      'Find scale factor and missing matching sides in similar right triangles.',
     metaTitle:
       'Similar Right Triangles Calculator | Find Missing Sides and Scale Factor',
     metaDescription:

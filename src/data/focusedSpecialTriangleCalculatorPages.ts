@@ -212,8 +212,8 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
         label: 'right triangle perimeter calculator',
       },
       {
-        href: '/right-triangle-hypotenuse-calculator/',
-        label: 'right triangle hypotenuse calculator',
+        href: '/pythagorean-theorem-calculator/',
+        label: 'pythagorean theorem calculator',
       },
     ],
     faqs: [
@@ -408,8 +408,8 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
         label: 'right triangle perimeter calculator',
       },
       {
-        href: '/right-triangle-hypotenuse-calculator/',
-        label: 'right triangle hypotenuse calculator',
+        href: '/pythagorean-theorem-calculator/',
+        label: 'pythagorean theorem calculator',
       },
     ],
     faqs: [

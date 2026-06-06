@@ -17,7 +17,11 @@ const { locale, siteTitle, logo, description, navLabels, commonLabels } = Astro.
 const footerNav = getLocalizedNavItems(locale, 'footer', navLabels);
 const socialLinks = getEnabledSocialLinks();
 const year = new Date().getFullYear();
-const rights = commonLabels.rights ?? 'All rights reserved.';
+const rawRights = commonLabels.rights ?? 'All rights reserved.';
+const rights = rawRights
+  .replace(new RegExp(`^\\s*(?:©|&copy;)\\s*${year}\\s*${siteTitle}\\.?\\s*`, 'i'), '')
+  .replace(new RegExp(`\\s*(?:©|&copy;)\\s*${year}\\s*$`, 'i'), '')
+  .trim();
 const sectionsLabel = commonLabels.sections ?? 'Sections';
 const languagesLabel = commonLabels.languages ?? 'Languages';
 const homeHref = localizePath(locale, '/');
@@ -93,6 +97,6 @@ const homeHref = localizePath(locale, '/');
   </div>
 
   <div class="relative border-t border-outline-variant/50 px-4 py-8 text-center text-xs text-outline sm:px-6 lg:px-8">
-    <p>&copy; {year} {siteTitle}. {rights}</p>
+    <p>&copy; {year} {siteTitle}.{rights && ` ${rights}`}</p>
   </div>
 </footer>

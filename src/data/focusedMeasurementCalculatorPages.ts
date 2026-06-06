@@ -1334,7 +1334,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     relatedLinks: [
       { href: '/right-triangle-area-calculator/', label: 'Right Triangle Area Calculator' },
       { href: '/right-triangle-area-from-legs-calculator/', label: 'Right Triangle Area From Legs Calculator' },
-      { href: '/right-triangle-height-calculator/', label: 'Right Triangle Height Calculator' },
+      { href: '/right-triangle-altitude-calculator/', label: 'Right Triangle Altitude Calculator' },
       { href: '/right-triangle-area-from-semiperimeter-calculator/', label: 'Right Triangle Area From Semiperimeter Calculator' },
       { href: '/right-triangle-side-calculator/', label: 'Right Triangle Side Calculator' }
     ],

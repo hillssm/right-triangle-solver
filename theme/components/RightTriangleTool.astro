@@ -107,17 +107,20 @@ const l = {
   fixErrors: labels.fixErrors ?? 'Please fix the errors in the highlighted fields.'
 };
 
-const UNIT_LIST = [
+const COMMON_UNIT_LIST = [
   { val: 'm', label: units.m || 'meter' },
-  { val: 'nm', label: units.nm || 'nanometer' },
-  { val: 'um', label: units.um || 'micrometer' },
-  { val: 'mm', label: units.mm || 'millimeter' },
   { val: 'cm', label: units.cm || 'centimeter' },
+  { val: 'mm', label: units.mm || 'millimeter' },
   { val: 'km', label: units.km || 'kilometer' },
   { val: 'in', label: units.in || 'inch' },
   { val: 'ft', label: units.ft || 'foot' },
   { val: 'yd', label: units.yd || 'yard' },
-  { val: 'mi', label: units.mi || 'mile' },
+  { val: 'mi', label: units.mi || 'mile' }
+];
+
+const ADVANCED_UNIT_LIST = [
+  { val: 'nm', label: units.nm || 'nanometer' },
+  { val: 'um', label: units.um || 'micrometer' },
   { val: 'nmi', label: units.nmi || 'nautical mile' },
   { val: 'ang', label: units.ang || 'angstrom' },
   { val: 'mil', label: units.mil || 'mil' },
@@ -135,6 +138,12 @@ const UNIT_LIST = [
   { val: 'pc', label: units.pc || 'parsec' },
   { val: 'mpc', label: units.mpc || 'megaparsec' }
 ];
+const moreUnitsLabel = units.more || 'More units';
+const UNIT_LIST = {
+  common: COMMON_UNIT_LIST,
+  advanced: ADVANCED_UNIT_LIST,
+  moreLabel: moreUnitsLabel
+};
 
 const labelsJson = JSON.stringify(l);
 const unitsJson = JSON.stringify(UNIT_LIST);
@@ -162,7 +171,14 @@ const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
             <div class="relative flex min-w-0">
               <input class="input-shell min-w-0 flex-1 rounded-r-none border-r-0" type="text" inputmode="decimal" name="a" />
               <select name="a_unit" class="w-[6.25rem] shrink-0 truncate rounded-r-lg border border-outline/30 bg-surface-container px-2 text-[10px] text-on-surface-variant focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary sm:w-28 sm:text-xs">
-                <option value="m">(m) {units.m || 'meter'}</option>
+                {COMMON_UNIT_LIST.map((unit) => (
+                  <option value={unit.val}>({unit.val}) {unit.label}</option>
+                ))}
+                <optgroup label={moreUnitsLabel}>
+                  {ADVANCED_UNIT_LIST.map((unit) => (
+                    <option value={unit.val}>({unit.val}) {unit.label}</option>
+                  ))}
+                </optgroup>
               </select>
             </div>
             <span class="min-h-[1rem] text-xs text-error" data-error-for="a"></span>
@@ -173,7 +189,14 @@ const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
             <div class="relative flex min-w-0">
               <input class="input-shell min-w-0 flex-1 rounded-r-none border-r-0" type="text" inputmode="decimal" name="b" />
               <select name="b_unit" class="w-[6.25rem] shrink-0 truncate rounded-r-lg border border-outline/30 bg-surface-container px-2 text-[10px] text-on-surface-variant focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary sm:w-28 sm:text-xs">
-                <option value="m">(m) {units.m || 'meter'}</option>
+                {COMMON_UNIT_LIST.map((unit) => (
+                  <option value={unit.val}>({unit.val}) {unit.label}</option>
+                ))}
+                <optgroup label={moreUnitsLabel}>
+                  {ADVANCED_UNIT_LIST.map((unit) => (
+                    <option value={unit.val}>({unit.val}) {unit.label}</option>
+                  ))}
+                </optgroup>
               </select>
             </div>
             <span class="min-h-[1rem] text-xs text-error" data-error-for="b"></span>
@@ -184,7 +207,14 @@ const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
             <div class="relative flex min-w-0">
               <input class="input-shell min-w-0 flex-1 rounded-r-none border-r-0" type="text" inputmode="decimal" name="c" />
               <select name="c_unit" class="w-[6.25rem] shrink-0 truncate rounded-r-lg border border-outline/30 bg-surface-container px-2 text-[10px] text-on-surface-variant focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary sm:w-28 sm:text-xs">
-                <option value="m">(m) {units.m || 'meter'}</option>
+                {COMMON_UNIT_LIST.map((unit) => (
+                  <option value={unit.val}>({unit.val}) {unit.label}</option>
+                ))}
+                <optgroup label={moreUnitsLabel}>
+                  {ADVANCED_UNIT_LIST.map((unit) => (
+                    <option value={unit.val}>({unit.val}) {unit.label}</option>
+                  ))}
+                </optgroup>
               </select>
             </div>
             <span class="min-h-[1rem] text-xs text-error" data-error-for="c"></span>
@@ -283,12 +313,12 @@ const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
           <path d="M 70 70 L 70 260 L 380 260 Z" fill="url(#rt-fill-gradient)" data-triangle-fill></path>
           <line x1="70" y1="260" x2="196" y2="184" stroke="#f1c97d" stroke-width="2" stroke-dasharray="5 4" opacity="0" data-altitude-line></line>
 
-          <text x="54" y="170" fill="#d0c5af" font-family="'Noto Serif', serif" font-style="italic" font-size="13" text-anchor="end" data-label-a>a = -</text>
-          <text x="226" y="284" fill="#d0c5af" font-family="'Noto Serif', serif" font-style="italic" font-size="13" text-anchor="middle" data-label-b>b = -</text>
-          <text x="250" y="145" fill="#f1c97d" font-family="'Noto Serif', serif" font-style="italic" font-size="14" font-weight="700" data-label-c>c = -</text>
-          <text x="310" y="252" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="11" data-label-angle-alpha>A = -</text>
-          <text x="90" y="105" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="11" data-label-angle-beta>B = -</text>
-          <text x="208" y="196" fill="#f1c97d" font-family="'Noto Serif', serif" font-style="italic" font-size="11" opacity="0" data-label-h>h = -</text>
+          <text x="54" y="170" fill="#d0c5af" font-family="'Noto Serif', serif" font-style="italic" font-size="13" text-anchor="end" data-label-a>a = input</text>
+          <text x="226" y="284" fill="#d0c5af" font-family="'Noto Serif', serif" font-style="italic" font-size="13" text-anchor="middle" data-label-b>b = input</text>
+          <text x="250" y="145" fill="#f1c97d" font-family="'Noto Serif', serif" font-style="italic" font-size="14" font-weight="700" data-label-c>c = result</text>
+          <text x="310" y="252" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="11" data-label-angle-alpha>A = —</text>
+          <text x="90" y="105" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="11" data-label-angle-beta>B = —</text>
+          <text x="208" y="196" fill="#f1c97d" font-family="'Noto Serif', serif" font-style="italic" font-size="11" opacity="0" data-label-h>h = —</text>
         </svg>
       </div>
 
@@ -338,16 +368,33 @@ const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
         } catch {
           parsedList = [];
         }
-        if (!Array.isArray(parsedList) || parsedList.length === 0) return;
+        if (
+          (!Array.isArray(parsedList) || parsedList.length === 0) &&
+          (!parsedList || typeof parsedList !== 'object')
+        ) return;
 
-        const optionMarkup = parsedList
-          .map((unit) => `<option value="${unit.val}">(${unit.val}) ${unit.label}</option>`)
-          .join('');
+        const unitGroups = Array.isArray(parsedList)
+          ? { common: parsedList, advanced: [], moreLabel: 'More units' }
+          : {
+              common: Array.isArray(parsedList.common) ? parsedList.common : [],
+              advanced: Array.isArray(parsedList.advanced) ? parsedList.advanced : [],
+              moreLabel: parsedList.moreLabel || 'More units'
+            };
+        const allUnits = [...unitGroups.common, ...unitGroups.advanced];
+        if (allUnits.length === 0) return;
+        const optionMarkup = [
+          ...unitGroups.common.map((unit) => `<option value="${unit.val}">(${unit.val}) ${unit.label}</option>`),
+          unitGroups.advanced.length
+            ? `<optgroup label="${unitGroups.moreLabel}">${unitGroups.advanced
+                .map((unit) => `<option value="${unit.val}">(${unit.val}) ${unit.label}</option>`)
+                .join('')}</optgroup>`
+            : ''
+        ].join('');
 
         section.querySelectorAll('select[name="a_unit"], select[name="b_unit"], select[name="c_unit"]').forEach((select) => {
           const currentValue = select.value || 'm';
           select.innerHTML = optionMarkup;
-          if (parsedList.some((unit) => unit.val === currentValue)) {
+          if (allUnits.some((unit) => unit.val === currentValue)) {
             select.value = currentValue;
           }
         });

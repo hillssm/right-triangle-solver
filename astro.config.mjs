@@ -17,6 +17,7 @@ const legacyFormulaRedirects = {
   '/tangent-ratio/': '/right-triangle-trig-ratios-calculator/',
   '/altitude-to-hypotenuse/': '/right-triangle-altitude-calculator/',
   '/right-triangle-height-calculator/': '/right-triangle-altitude-calculator/',
+  '/right-triangle-hypotenuse-calculator/': '/pythagorean-theorem-calculator/',
   '/projection-of-a-on-hypotenuse/': '/right-triangle-projection-calculator/',
   '/projection-of-b-on-hypotenuse/': '/right-triangle-projection-calculator/',
   '/inradius/': '/right-triangle-radius-calculator/',

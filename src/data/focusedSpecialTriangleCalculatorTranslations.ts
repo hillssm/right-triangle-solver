@@ -191,7 +191,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "समकोण त्रिभुज परिधि कैलकुलेटर"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "समकोण त्रिभुज कर्ण कैलकुलेटर"
         }
       ],
@@ -488,7 +488,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "समकोण त्रिभुज परिधि कैलकुलेटर"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "समकोण त्रिभुज कर्ण कैलकुलेटर"
         }
       ],
@@ -730,7 +730,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "Calculadora del perímetro de un triángulo rectángulo."
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "calculadora de hipotenusa de triángulo rectángulo"
         }
       ],
@@ -1027,7 +1027,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "Calculadora del perímetro de un triángulo rectángulo."
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "calculadora de hipotenusa de triángulo rectángulo"
         }
       ],
@@ -1269,7 +1269,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "калькулятор периметра прямоугольного треугольника"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "Калькулятор гипотенузы прямоугольного треугольника"
         }
       ],
@@ -1566,7 +1566,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "калькулятор периметра прямоугольного треугольника"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "Калькулятор гипотенузы прямоугольного треугольника"
         }
       ],
@@ -1808,7 +1808,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "calculateur de périmètre d'un triangle rectangle"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "calculateur d'hypoténuse triangle rectangle"
         }
       ],
@@ -2105,7 +2105,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "calculateur de périmètre d'un triangle rectangle"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "calculateur d'hypoténuse triangle rectangle"
         }
       ],
@@ -2347,7 +2347,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "Rechner für den Umfang eines rechtwinkligen Dreiecks"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "Rechner für die Hypotenuse eines rechtwinkligen Dreiecks"
         }
       ],
@@ -2644,7 +2644,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "Rechner für den Umfang eines rechtwinkligen Dreiecks"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "Rechner für die Hypotenuse eines rechtwinkligen Dreiecks"
         }
       ],
@@ -2886,7 +2886,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "Calcolatore del perimetro del triangolo rettangolo"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "Calcolatore dell'ipotenusa del triangolo rettangolo"
         }
       ],
@@ -3183,7 +3183,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "Calcolatore del perimetro del triangolo rettangolo"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "Calcolatore dell'ipotenusa del triangolo rettangolo"
         }
       ],
@@ -3425,7 +3425,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "calculadora de perímetro de triângulo retângulo"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "calculadora de hipotenusa de triângulo retângulo"
         }
       ],
@@ -3722,7 +3722,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "calculadora de perímetro de triângulo retângulo"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "calculadora de hipotenusa de triângulo retângulo"
         }
       ],
@@ -3964,7 +3964,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "সমকোণী ত্রিভুজ পরিধি ক্যালকুলেটর"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "সমকোণী ত্রিভুজ কর্ণের ক্যালকুলেটর"
         }
       ],
@@ -4261,7 +4261,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "সমকোণী ত্রিভুজ পরিধি ক্যালকুলেটর"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "সমকোণী ত্রিভুজ কর্ণের ক্যালকুলেটর"
         }
       ],
@@ -4503,7 +4503,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "直角三角形の周囲長計算機"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "直角三角形斜辺計算機"
         }
       ],
@@ -4800,7 +4800,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "直角三角形の周囲長計算機"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "直角三角形斜辺計算機"
         }
       ],
@@ -5042,7 +5042,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "직각 삼각형 둘레 계산기"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "직각삼각형 빗변 계산기"
         }
       ],
@@ -5339,7 +5339,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "직각 삼각형 둘레 계산기"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "직각삼각형 빗변 계산기"
         }
       ],
@@ -5581,7 +5581,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "kalkulator perimeter segi tiga tepat"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "kalkulator hipotenus segi tiga tepat"
         }
       ],
@@ -5878,7 +5878,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "kalkulator perimeter segi tiga tepat"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "kalkulator hipotenus segi tiga tepat"
         }
       ],
@@ -6120,7 +6120,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "kalkulator obwodu trójkąta prostokątnego"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "kalkulator przeciwprostokątnej trójkąta prostokątnego"
         }
       ],
@@ -6417,7 +6417,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "kalkulator obwodu trójkąta prostokątnego"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "kalkulator przeciwprostokątnej trójkąta prostokątnego"
         }
       ],
@@ -6659,7 +6659,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "kalkulator keliling segitiga siku-siku"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "kalkulator sisi miring segitiga siku-siku"
         }
       ],
@@ -6956,7 +6956,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "kalkulator keliling segitiga siku-siku"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "kalkulator sisi miring segitiga siku-siku"
         }
       ],
@@ -7198,7 +7198,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "حاسبة محيط المثلث الأيمن"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "حاسبة الوتر في المثلث الأيمن"
         }
       ],
@@ -7495,7 +7495,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "حاسبة محيط المثلث الأيمن"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "حاسبة الوتر في المثلث الأيمن"
         }
       ],
@@ -7737,7 +7737,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "калкулатор за периметър на правоъгълен триъгълник"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "калкулатор за хипотенуза на правоъгълен триъгълник"
         }
       ],
@@ -8034,7 +8034,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "калкулатор за периметър на правоъгълен триъгълник"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "калкулатор за хипотенуза на правоъгълен триъгълник"
         }
       ],
@@ -8276,7 +8276,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "sağ üçgenin çevre hesaplaması"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "dik üçgen hipotenüs hesaplayıcısı"
         }
       ],
@@ -8573,7 +8573,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "sağ üçgenin çevre hesaplaması"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "dik üçgen hipotenüs hesaplayıcısı"
         }
       ],
@@ -8815,7 +8815,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "rätvinklig omkretsräknare"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "rät triangel hypotenusa räknare"
         }
       ],
@@ -9112,7 +9112,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "rätvinklig omkretsräknare"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "rät triangel hypotenusa räknare"
         }
       ],
@@ -9354,7 +9354,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "直角三角形周长计算器"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "直角三角形斜边计算器"
         }
       ],
@@ -9651,7 +9651,7 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
           "label": "直角三角形周长计算器"
         },
         {
-          "href": "/right-triangle-hypotenuse-calculator/",
+          "href": "/pythagorean-theorem-calculator/",
           "label": "直角三角形斜边计算器"
         }
       ],

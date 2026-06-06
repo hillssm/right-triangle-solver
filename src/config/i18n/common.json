@@ -52,7 +52,7 @@
       "exploreOther": "Explore other calculators in the {category} category.",
       "openTool": "Open Tool",
       "calculateSuffix": "Calculator",
-      "calculatorIntro": "This calculator follows {expression} and returns {label}.",
+      "calculatorIntro": "This calculator finds {label} using {expression}.",
       "calculate": "Calculate",
       "reset": "Reset",
       "statusDefault": "Enter inputs to calculate {label}.",

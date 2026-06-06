@@ -421,12 +421,12 @@
         fillEl.setAttribute('d', DEFAULT_PATH);
         altitudeLineEl.setAttribute('opacity', '0');
         labelH.setAttribute('opacity', '0');
-        labelA.textContent = 'a = -';
-        labelB.textContent = 'b = -';
-        labelC.textContent = 'c = -';
-        labelAngleAlpha.textContent = 'A = -';
-        labelAngleBeta.textContent = 'B = -';
-        labelH.textContent = 'h = -';
+        labelA.textContent = 'a = input';
+        labelB.textContent = 'b = input';
+        labelC.textContent = 'c = result';
+        labelAngleAlpha.textContent = 'A = —';
+        labelAngleBeta.textContent = 'B = —';
+        labelH.textContent = 'h = —';
         labelA.setAttribute('fill', '#d0c5af');
         labelB.setAttribute('fill', '#d0c5af');
         labelC.setAttribute('fill', '#f1c97d');

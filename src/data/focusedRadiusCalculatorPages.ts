@@ -325,7 +325,7 @@ export const focusedRadiusCalculatorPages: FocusedRadiusCalculatorPage[] = [
       },
       {
         href: '/pythagorean-theorem-calculator/',
-        label: 'right triangle hypotenuse calculator',
+        label: 'pythagorean theorem calculator',
         description: 'Find the hypotenuse from the two legs when c is not known yet.',
       },
     ],

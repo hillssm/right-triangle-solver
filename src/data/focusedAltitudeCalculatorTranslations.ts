@@ -2669,7 +2669,7 @@ function createRomanceCopy(input: Record<string, any>): AltitudeLocaleCopy {
         description: input.projLegBDesc
       },
       sideC: {
-        label: input.projHypLabel ?? `${input.hypotenuse} (= p + q)`,
+        label: input.projHypLabel ?? `${input.hypotenuse ?? input.hypotenuseC} (= p + q)`,
         description: input.projHypDesc
       },
       result: {
@@ -2777,7 +2777,7 @@ function createSimpleCopy(input: SimpleCopyInput): AltitudeLocaleCopy {
     projDiagramCaption: input.projDiagram,
     projLegADesc: `a² = p × c`,
     projLegBDesc: `b² = q × c`,
-    projHypLabel: `${input.hypotenuse} (= p + q)`,
+    projHypLabel: `${input.hypotenuse ?? input.hypotenuseC} (= p + q)`,
     projHypDesc: input.pqSum,
     projResult: input.geometricMean,
     projResultDesc: input.projFormula,

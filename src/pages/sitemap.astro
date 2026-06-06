@@ -9,6 +9,8 @@ import { FOCUSED_MEASUREMENT_CALCULATOR_PAGES } from 'src/data/focusedMeasuremen
 import { FOCUSED_TRIG_RATIO_CALCULATOR_PAGES } from 'src/data/focusedTrigRatioCalculatorPages';
 import { FOCUSED_ANGLE_CALCULATOR_PAGES } from 'src/data/focusedAngleCalculatorPages';
 import { FOCUSED_RADIUS_CALCULATOR_PAGES } from 'src/data/focusedRadiusCalculatorPages';
+import { FOCUSED_PROJECTION_CALCULATOR_PAGES } from 'src/data/focusedProjectionCalculatorPages';
+import { FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_PAGES } from 'src/data/focusedSpecialTriangleCalculatorPages';
 import { focusedTriplesCalculatorPages } from 'src/data/focusedTriplesCalculatorPages';
 import { DEFAULT_LOCALE, localizePath } from 'theme/i18n/locales';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
@@ -102,6 +104,19 @@ const locale = DEFAULT_LOCALE;
     </section>
 
     <section class="section-shell">
+      <h2 class="text-xl font-bold mb-4">Projection Calculators</h2>
+      <ul class="space-y-2">
+        {FOCUSED_PROJECTION_CALCULATOR_PAGES.map((page) => (
+          <li>
+            <a href={localizePath(locale, page.url)} class="text-primary hover:underline">
+              {page.h1}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="section-shell">
       <h2 class="text-xl font-bold mb-4">Trigonometric Ratio Calculators</h2>
       <ul class="space-y-2">
         {FOCUSED_TRIG_RATIO_CALCULATOR_PAGES.map((page) => (
@@ -118,6 +133,19 @@ const locale = DEFAULT_LOCALE;
       <h2 class="text-xl font-bold mb-4">Angle Calculators</h2>
       <ul class="space-y-2">
         {FOCUSED_ANGLE_CALCULATOR_PAGES.map((page) => (
+          <li>
+            <a href={localizePath(locale, page.url)} class="text-primary hover:underline">
+              {page.h1}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="section-shell">
+      <h2 class="text-xl font-bold mb-4">Special Triangle Calculators</h2>
+      <ul class="space-y-2">
+        {FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_PAGES.map((page) => (
           <li>
             <a href={localizePath(locale, page.url)} class="text-primary hover:underline">
               {page.h1}

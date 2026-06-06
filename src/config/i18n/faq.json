@@ -81,7 +81,7 @@
     {
       "category": "Trigonometry & Formulas",
       "question": "Does this calculator verify identities like sin²θ + cos²θ = 1?",
-      "answer": "Yes. In the Advanced Relations category, you can map numerical inputs against foundational Pythagorean identities to test or verify geometric rules dynamically.",
+      "answer": "Yes. In the Advanced Relations category, you can map numerical inputs against foundational Pythagorean identities to check or verify geometric rules dynamically.",
       "display": true
     },
     {

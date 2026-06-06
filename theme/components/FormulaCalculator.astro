@@ -44,15 +44,18 @@ const formulaDiagramHeading =
 const defaultStatus = pick(solver, 'statusDefault', `Enter inputs to calculate {label}.`).replace('{label}', calculator.outputLabel);
 const plainExpression = formula.plainExpression;
 
-const UNIT_LIST = [
-  { val: 'cm', label: units.cm || 'centimeter' },
-  { val: 'in', label: units.in || 'inch' },
+const COMMON_UNIT_LIST = [
   { val: 'm', label: units.m || 'meter' },
-  { val: 'ft', label: units.ft || 'foot' },
+  { val: 'cm', label: units.cm || 'centimeter' },
   { val: 'mm', label: units.mm || 'millimeter' },
   { val: 'km', label: units.km || 'kilometer' },
+  { val: 'in', label: units.in || 'inch' },
+  { val: 'ft', label: units.ft || 'foot' },
   { val: 'yd', label: units.yd || 'yard' },
-  { val: 'mi', label: units.mi || 'mile' },
+  { val: 'mi', label: units.mi || 'mile' }
+];
+
+const ADVANCED_UNIT_LIST = [
   { val: 'nm', label: units.nm || 'nanometer' },
   { val: 'um', label: units.um || 'micrometer' },
   { val: 'nmi', label: units.nmi || 'nautical mile' },
@@ -72,6 +75,7 @@ const UNIT_LIST = [
   { val: 'pc', label: units.pc || 'parsec' },
   { val: 'mpc', label: units.mpc || 'megaparsec' }
 ];
+const moreUnitsLabel = units.more || 'More units';
 
 const UNIT_SCALE = {
   m: 1, nm: 1e-9, um: 1e-6, mm: 1e-3, cm: 1e-2, km: 1e3,
@@ -207,7 +211,7 @@ const calculatorMessages = JSON.stringify(messages);
   <h2 class="break-words text-2xl font-semibold leading-tight">{calculatorHeading}</h2>
   <p class="mt-2 text-sm text-on-surface-variant">
     {(() => {
-      const text = pick(solver, 'calculatorIntro', `This calculator follows {expression} and returns {label}.`).replace('{label}', calculator.outputLabel);
+      const text = pick(solver, 'calculatorIntro', `This calculator finds {label} using {expression}.`).replace('{label}', calculator.outputLabel);
       if (text.includes('{expression}')) {
         const parts = text.split('{expression}');
         return (
@@ -243,9 +247,14 @@ const calculatorMessages = JSON.stringify(messages);
               />
               {LENGTH_KEYS.includes(field.key) ? (
                 <select name={`${field.key}_unit`} class="shrink-0 bg-surface-container border border-outline/30 rounded-r-lg px-1.5 sm:px-2 text-[10px] sm:text-[11px] focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary w-20 sm:w-24 text-on-surface-variant truncate">
-                  {UNIT_LIST.map(u => (
+                  {COMMON_UNIT_LIST.map(u => (
                     <option value={u.val}>({u.val}) {u.label}</option>
                   ))}
+                  <optgroup label={moreUnitsLabel}>
+                    {ADVANCED_UNIT_LIST.map(u => (
+                      <option value={u.val}>({u.val}) {u.label}</option>
+                    ))}
+                  </optgroup>
                 </select>
               ) : field.unit ? (
                 <span class="pointer-events-none absolute top-1/2 right-3 -translate-y-1/2 text-xs text-on-surface-variant">
@@ -309,12 +318,12 @@ const calculatorMessages = JSON.stringify(messages);
         <path d="M 60 240 L 80 240 L 80 260" fill="none" stroke="#99907c" stroke-width="1.5" data-calc-svg-path-stroke></path>
         <path d="M 70 70 L 70 260 L 380 260 Z" fill="url(#rt-fill-gradient2)" stroke="#f1c97d" stroke-width="2.5" stroke-linejoin="round" data-calc-svg-path-fill></path>
         <line x1="70" y1="260" x2="196" y2="184" stroke="#f1c97d" stroke-width="2" stroke-dasharray="5 4" opacity="0.6" data-calc-svg-altitude></line>
-        <text x="50" y="170" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="14" text-anchor="end" data-calc-svg-label="a">a</text>
-        <text x="226" y="284" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="14" text-anchor="middle" data-calc-svg-label="b">b</text>
-        <text x="246" y="152" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="15" text-anchor="start" data-calc-svg-label="c">c</text>
-        <text x="316" y="248" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="12" text-anchor="end" data-calc-svg-label="A">A</text>
-        <text x="88" y="94" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="12" text-anchor="start" data-calc-svg-label="B">B</text>
-        <text x="146" y="210" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="13" text-anchor="end" data-calc-svg-label="h">h</text>
+        <text x="50" y="170" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="14" text-anchor="end" data-calc-svg-label="a">a = input</text>
+        <text x="226" y="284" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="14" text-anchor="middle" data-calc-svg-label="b">b = input</text>
+        <text x="246" y="152" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="15" text-anchor="start" data-calc-svg-label="c">c = result</text>
+        <text x="316" y="248" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="12" text-anchor="end" data-calc-svg-label="A">A = &#8212;</text>
+        <text x="88" y="94" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="12" text-anchor="start" data-calc-svg-label="B">B = &#8212;</text>
+        <text x="146" y="210" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="13" text-anchor="end" data-calc-svg-label="h">h = &#8212;</text>
       </svg>
     </div>
   </div>
@@ -1078,6 +1087,15 @@ const calculatorMessages = JSON.stringify(messages);
         setPath(drawA, drawB);
         // ---
 
+        const emptyLabel = {
+          a: 'a = input',
+          b: 'b = input',
+          c: 'c = result',
+          A: 'A = \u2014',
+          B: 'B = \u2014',
+          h: 'h = \u2014'
+        };
+
         for (const el of svgLabels) {
           const key = el.getAttribute('data-calc-svg-label');
           if (map[key] !== undefined) {
@@ -1093,7 +1111,7 @@ const calculatorMessages = JSON.stringify(messages);
               el.setAttribute('font-weight', 'normal');
             }
           } else {
-            el.textContent = `${key} = -`;
+            el.textContent = emptyLabel[key] || `${key} = \u2014`;
             el.setAttribute('fill', '#b6b5b4');
             el.setAttribute('font-weight', 'normal');
           }

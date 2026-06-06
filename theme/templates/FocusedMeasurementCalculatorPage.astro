@@ -238,10 +238,20 @@ const measurementUiOverridesByLocale: Partial<Record<Locale, Partial<typeof meas
   }
 };
 
+const looksLikeMojibake = (value: string) =>
+  /[\uFFFD\u0080-\u009F]|[ÃÂÐÑØÙÄÅ]|[\u00E0-\u00EF][\u00A0-\u00BF]|\u00E2[\u0080-\u017F]/u.test(value);
+
+const cleanMeasurementUi = (values: Partial<typeof measurementUiDefaults> | undefined) =>
+  Object.fromEntries(
+    Object.entries(values || {}).filter(
+      ([, value]) => typeof value !== 'string' || !looksLikeMojibake(value)
+    )
+  ) as Partial<typeof measurementUiDefaults>;
+
 const measurementUi = {
   ...measurementUiDefaults,
-  ...(measurementUiByLocale[locale] || {}),
-  ...(measurementUiOverridesByLocale[locale] || {})
+  ...cleanMeasurementUi(measurementUiByLocale[locale]),
+  ...cleanMeasurementUi(measurementUiOverridesByLocale[locale])
 };
 
 const homeLabel = pick(nav, 'home', measurementUi.home);

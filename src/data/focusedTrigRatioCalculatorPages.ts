@@ -67,7 +67,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
     introHeading: 'How This Sine Ratio Calculator Works',
     intro: [
       'The sine ratio is one of the first trigonometric functions you learn in geometry. It connects a specific angle in a right triangle to two of its sides \u2014 the opposite side and the hypotenuse. If you know these two measurements, this calculator gives you sin(A) instantly.',
-      'Whether you are working through a homework problem, checking a test answer, or solving a real measurement task, this tool removes the manual division step. Enter your values and get the result with the formula shown.'
+      'Whether you are working through a homework problem, checking an exam-style answer, or solving a real measurement task, this tool removes the manual division step. Enter your values and get the result with the formula shown.'
     ],
     calculatorNote:
       'Enter the length of the opposite side a and the hypotenuse c into the fields above. The calculator divides a by c and returns sin(A). Both values must be positive, and c must be larger than a.',

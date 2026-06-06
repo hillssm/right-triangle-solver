@@ -700,7 +700,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     ],
 
     useCases: [
-      'Solving test problems that reference the 5 12 13 triple or its multiples.',
+      'Solving practice problems that reference the 5 12 13 triple or its multiples.',
       'Double-checking right angle measurements when sides are multiples of 5, 12, and 13.',
       'Calculating areas and perimeters for geometry assignments involving Pythagorean triples.',
       'Planning construction layouts that use the 5 12 13 ratio for accuracy.',

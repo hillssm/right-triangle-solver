@@ -1064,7 +1064,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
           'Using the hypotenuse instead of the adjacent side b. Tangent does not use the hypotenuse.',
           'Switching a and b. The adjacent side is the input, the opposite side is the output.',
           'Using division instead of multiplication. To find a from b, you multiply by tan(A).',
-          'Using an angle of exactly 90 degrees. Tangent of 90 is undefined and will produce an error.',
+          'Using an angle of exactly 90 degrees. Tangent of 90 degrees is not defined, so the calculator will show an error.',
           'Entering the angle in radians rather than degrees.'
         ]
       }
@@ -1091,7 +1091,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         question: 'What happens when the angle is close to 90 degrees?',
         answer:
-          'Tangent values grow extremely large as the angle approaches 90 degrees. The opposite side becomes much longer than the adjacent side, and at exactly 90 degrees the tangent is undefined.'
+          'Tangent values grow extremely large as the angle approaches 90 degrees. The opposite side becomes much longer than the adjacent side, and at exactly 90 degrees the tangent is not defined.'
       },
       {
         question: 'Can I use this to find the adjacent side instead?',

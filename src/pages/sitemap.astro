@@ -16,6 +16,18 @@ import { DEFAULT_LOCALE, localizePath } from 'theme/i18n/locales';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 
 const locale = DEFAULT_LOCALE;
+
+const GENERAL_PAGES = [
+  { href: '/', label: 'Home' },
+  { href: '/about-us/', label: 'About Us' },
+  { href: '/contact-us/', label: 'Contact Us' },
+  { href: '/faqs/', label: 'FAQs' },
+  { href: '/library/', label: 'Library' },
+  { href: '/practice/', label: 'Practice' },
+  { href: '/blog/', label: 'Blog' },
+  { href: '/privacy/', label: 'Privacy Policy' },
+  { href: '/terms/', label: 'Terms of Use' }
+];
 ---
 
 <BaseLayout
@@ -171,12 +183,13 @@ const locale = DEFAULT_LOCALE;
     <section class="section-shell">
       <h2 class="text-xl font-bold mb-4">Pages</h2>
       <ul class="space-y-2">
-        <li><a href={localizePath(locale, '/')} class="text-primary hover:underline">Home</a></li>
-        <li><a href={localizePath(locale, '/about-us/')} class="text-primary hover:underline">About Us</a></li>
-        <li><a href={localizePath(locale, '/contact-us/')} class="text-primary hover:underline">Contact Us</a></li>
-        <li><a href={localizePath(locale, '/faqs/')} class="text-primary hover:underline">FAQs</a></li>
-        <li><a href={localizePath(locale, '/privacy/')} class="text-primary hover:underline">Privacy Policy</a></li>
-        <li><a href={localizePath(locale, '/terms/')} class="text-primary hover:underline">Terms of Use</a></li>
+        {GENERAL_PAGES.map((page) => (
+          <li>
+            <a href={localizePath(locale, page.href)} class="text-primary hover:underline">
+              {page.label}
+            </a>
+          </li>
+        ))}
       </ul>
     </section>
   </div>

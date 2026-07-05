@@ -1,4 +1,5 @@
 ---
+import { formatRootBars } from 'src/utils/formatList';
 import type { FocusedSpecialTriangleCalculatorPage as FocusedSpecialTriangleCalculatorPageData } from 'src/data/focusedSpecialTriangleCalculatorPages';
 import { getFormulaBySlug } from 'src/data/rightTriangleFormulas';
 import FormulaCalculator from 'theme/components/FormulaCalculator.astro';
@@ -372,9 +373,7 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
         </p>
         <ul class="mt-4 grid gap-2 text-sm leading-relaxed text-on-surface-variant">
           {page.diagram.notes.map((note) => (
-            <li class="min-w-0 rounded-md border border-outline-variant/20 bg-surface-container-low/50 px-3 py-2">
-              {note}
-            </li>
+            <li class="min-w-0 rounded-md border border-outline-variant/20 bg-surface-container-low/50 px-3 py-2" set:html={formatRootBars(note)} />
           ))}
         </ul>
       </div>

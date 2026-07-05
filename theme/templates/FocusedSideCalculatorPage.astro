@@ -179,7 +179,7 @@ const sectionHeading = (
       {sideCalculatorBadge}
     </p>
     <h1 class="mt-3 text-3xl font-bold sm:text-4xl">{page.h1}</h1>
-    <p class="truncate mt-4 max-w-3xl text-on-surface-variant">{page.intro}</p>
+    <p class="truncate mt-4 max-w-3xl text-on-surface-variant" set:html={formatRootBars(page.intro)} />
   </header>
 
   <FormulaCalculator
@@ -191,9 +191,7 @@ const sectionHeading = (
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
     <h2 class="text-2xl font-semibold">{sectionHeading(page.quickSummary.h2)}</h2>
-    <p class="mt-3 max-w-3xl leading-relaxed text-on-surface-variant">
-      {page.quickSummary.intro}
-    </p>
+    <p class="mt-3 max-w-3xl leading-relaxed text-on-surface-variant" set:html={formatRootBars(page.quickSummary.intro)} />
     <div class="mt-5 grid gap-3 sm:grid-cols-2">
       {page.quickSummary.cards.map((card) => (
         <div class="min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-4">
@@ -210,7 +208,7 @@ const sectionHeading = (
     <div class="grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(17rem,0.85fr)] lg:items-center">
       <div class="min-w-0">
         <h2 class="text-2xl font-semibold">{sectionHeading(page.diagram.h2)}</h2>
-        <p class="mt-3 leading-relaxed text-on-surface-variant">{page.diagram.intro}</p>
+        <p class="mt-3 leading-relaxed text-on-surface-variant" set:html={formatRootBars(page.diagram.intro)} />
 
         <div class="focused-diagram-canvas mt-5 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/60 p-3">
           <svg
@@ -314,9 +312,7 @@ const sectionHeading = (
         </div>
         <ul class="mt-4 grid gap-2 text-sm leading-relaxed text-on-surface-variant">
           {page.diagram.notes.map((note) => (
-            <li class="min-w-0 rounded-md border border-outline-variant/20 bg-surface-container-low/50 px-3 py-2">
-              {note}
-            </li>
+            <li class="min-w-0 rounded-md border border-outline-variant/20 bg-surface-container-low/50 px-3 py-2" set:html={formatRootBars(note)} />
           ))}
         </ul>
       </div>
@@ -352,7 +348,7 @@ const sectionHeading = (
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading(page.example.h2)}</h2>
-    <p>{page.example.intro}</p>
+    <p set:html={formatRootBars(page.example.intro)} />
     <div class="not-prose mt-5 min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-4 py-3">
       <div class="grid gap-2">
         {page.example.lines.map((line) => (

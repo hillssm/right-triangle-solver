@@ -257,9 +257,7 @@ const sectionHeading = (
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
     <h2 class="break-words text-2xl font-semibold">{sectionHeading(page.diagram.h2)}</h2>
-    <p class="mt-3 max-w-3xl text-sm leading-relaxed text-on-surface-variant">
-      {page.diagram.intro}
-    </p>
+    <p class="mt-3 max-w-3xl text-sm leading-relaxed text-on-surface-variant" set:html={formatRootBars(page.diagram.intro)} />
 
     <div class="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(14rem,0.85fr)] lg:items-start">
       <div class="min-w-0">
@@ -446,13 +444,13 @@ const sectionHeading = (
             {sideKeyItems.map((item) => (
               <li class={`rounded-md border px-3 py-2 ${activeSides.has(item.key) ? 'border-primary/30 bg-primary/10' : 'border-outline-variant/20 bg-surface-container-low/50'}`}>
                 <strong class="text-on-surface">{item.label}</strong>
-                <span class="mt-1 block">{item.description}</span>
+                <span class="mt-1 block" set:html={formatRootBars(item.description)} />
               </li>
             ))}
             {angleKeyItems.map((item) => (
               <li class={`rounded-md border px-3 py-2 ${activeAngles.has(item.key) ? 'border-tertiary/40 bg-tertiary/10' : 'border-outline-variant/20 bg-surface-container-low/50'}`}>
                 <strong class="text-on-surface">{item.label}</strong>
-                <span class="mt-1 block">{item.description}</span>
+                <span class="mt-1 block" set:html={formatRootBars(item.description)} />
               </li>
             ))}
           </ul>
@@ -464,7 +462,7 @@ const sectionHeading = (
           </p>
           <ul class="mt-3 grid gap-2 text-sm leading-relaxed text-on-surface-variant">
             {page.diagram.notes.map((note) => (
-              <li>{note}</li>
+              <li set:html={formatRootBars(note)} />
             ))}
           </ul>
         </div>
@@ -483,7 +481,7 @@ const sectionHeading = (
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading(page.example.h2)}</h2>
-    <p>{page.example.intro}</p>
+    <p set:html={formatRootBars(page.example.intro)} />
     <div class="not-prose mt-5 min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
       <div class="grid gap-2">
         {page.example.steps.map((line) => (
@@ -493,7 +491,7 @@ const sectionHeading = (
         ))}
       </div>
     </div>
-    <p class="mt-4">{page.example.answer}</p>
+    <p class="mt-4" set:html={formatRootBars(page.example.answer)} />
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">

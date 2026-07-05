@@ -12,7 +12,7 @@ import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
 import { seoSectionHeading } from 'theme/utils/seoHeadings';
-import { formatListItem } from 'src/utils/formatList';
+import { formatListItem, formatRootBars } from 'src/utils/formatList';
 
 interface Props {
   page: PageData;
@@ -434,7 +434,7 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
   <!-- Step-by-Step Example -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('examples', trigUi.stepByStepExample)}</h2>
-    <p>{page.example.intro}</p>
+    <p set:html={formatRootBars(page.example.intro)} />
     <div class="not-prose mt-5 min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
       <div class="grid gap-2">
         {page.example.steps.map((line) => (

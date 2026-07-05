@@ -1,4 +1,5 @@
 ---
+import { formatRootBars } from 'src/utils/formatList';
 import type { FocusedRadiusCalculatorPage as FocusedRadiusCalculatorPageData } from 'src/data/focusedRadiusCalculatorPages';
 import {
   getFocusedRadiusCalculatorRuntimeTranslations,
@@ -202,7 +203,7 @@ const radiusRelationHeading =
     </div>
 
     <ul>
-      {page.diagram.notes.map((note) => <li>{note}</li>)}
+      {page.diagram.notes.map((note) => <li set:html={formatRootBars(note)} />)}
     </ul>
   </section>
 

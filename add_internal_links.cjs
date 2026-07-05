@@ -4,33 +4,49 @@ const path = require('path');
 const dataDir = path.join(__dirname, 'src/data');
 const filesToProcess = fs.readdirSync(dataDir).filter(f => f.endsWith('Pages.ts') || f === 'rightTriangleGroupedPages.ts');
 
-const linkDefinitions = [
-  { slug: 'pythagorean-theorem-calculator', keywords: ['Pythagorean theorem', 'Pythagoras theorem', 'Pythagorean equation'] },
-  { slug: 'right-triangle-perimeter-calculator', keywords: ['perimeter formula', 'perimeter of a right triangle', 'perimeter'] },
-  { slug: 'right-triangle-semiperimeter-calculator', keywords: ['semiperimeter', 'half the perimeter', 'half-perimeter'] },
-  { slug: 'right-triangle-area-calculator', keywords: ['area of a right triangle', 'area formula', 'triangle area', 'area'] },
-  { slug: 'right-triangle-altitude-calculator', keywords: ['altitude to the hypotenuse', 'altitude formula', 'altitude'] },
-  { slug: 'right-triangle-inradius-calculator', keywords: ['inradius', 'inscribed circle radius'] },
-  { slug: 'right-triangle-circumradius-calculator', keywords: ['circumradius', 'circumscribed circle radius'] },
-  { slug: '45-45-90-triangle-calculator', keywords: ['45-45-90 triangle', '45-45-90', 'isosceles right triangle'] },
-  { slug: '30-60-90-triangle-calculator', keywords: ['30-60-90 triangle', '30-60-90'] },
-  { slug: 'sine-ratio-calculator', keywords: ['sine ratio', 'sine function'] },
-  { slug: 'cosine-ratio-calculator', keywords: ['cosine ratio', 'cosine function'] },
-  { slug: 'tangent-ratio-calculator', keywords: ['tangent ratio', 'tangent function'] },
-  { slug: 'pythagorean-triples-calculator', keywords: ['Pythagorean triple', 'Pythagorean triples'] },
-  { slug: 'similar-right-triangles-calculator', keywords: ['similar right triangles', 'similar triangles'] },
-  { slug: 'right-triangle-trig-ratios-calculator', keywords: ['trigonometric ratios', 'trig ratios', 'SOH CAH TOA', 'SOHCAHTOA'] },
-  { slug: 'right-triangle-angle-calculator', keywords: ['missing angle', 'calculate the angle'] },
-  { slug: 'right-triangle-side-calculator', keywords: ['missing side', 'side lengths'] },
-  { slug: 'right-triangle-measurements-calculator', keywords: ['right triangle measurements'] },
-];
+// 1. Extract all slugs and h1 titles to build dynamic keywords
+let allSlugs = new Set();
+let slugToKeywords = {};
 
+filesToProcess.forEach(f => {
+  const content = fs.readFileSync(path.join(dataDir, f), 'utf8');
+  const regex = /slug:\s*'([^']+)'/g;
+  let match;
+  while ((match = regex.exec(content)) !== null) {
+    const slug = match[1];
+    allSlugs.add(slug);
+    
+    // Generate base keyword from slug
+    let kw = slug.replace('right-triangle-', '').replace('-calculator', '').replace(/-/g, ' ');
+    if (!slugToKeywords[slug]) {
+      slugToKeywords[slug] = new Set();
+    }
+    slugToKeywords[slug].add(kw);
+    
+    // Add variations
+    if (slug === 'pythagorean-theorem-calculator') {
+      slugToKeywords[slug].add('Pythagorean theorem');
+      slugToKeywords[slug].add('Pythagoras theorem');
+    }
+    if (slug === 'right-triangle-area-calculator') slugToKeywords[slug].add('area');
+    if (slug === 'right-triangle-perimeter-calculator') slugToKeywords[slug].add('perimeter');
+    if (slug === 'right-triangle-semiperimeter-calculator') slugToKeywords[slug].add('semiperimeter');
+    if (slug === 'right-triangle-altitude-calculator') slugToKeywords[slug].add('altitude');
+    if (slug === 'right-triangle-inradius-calculator') slugToKeywords[slug].add('inradius');
+    if (slug === 'right-triangle-circumradius-calculator') slugToKeywords[slug].add('circumradius');
+  }
+});
+
+// Compile all replacements
 const allReplacements = [];
-for (const def of linkDefinitions) {
-  for (const kw of def.keywords) {
-    allReplacements.push({ keyword: kw, slug: def.slug, len: kw.length });
+for (const [slug, keywords] of Object.entries(slugToKeywords)) {
+  for (const kw of keywords) {
+    if (kw.length > 3) { // Avoid linking very short words
+      allReplacements.push({ keyword: kw, slug: slug, len: kw.length });
+    }
   }
 }
+// Sort by length descending to match longest phrases first
 allReplacements.sort((a, b) => b.len - a.len);
 
 function replaceText(text, currentSlug) {
@@ -77,6 +93,7 @@ function processFile(filePath) {
     
     if (currentSlug) {
       const line = lines[i];
+      // Target any string properties that are likely text blocks
       if (
         line.includes('intro:') || 
         line.includes('answer:') || 
@@ -109,4 +126,4 @@ filesToProcess.forEach(f => {
   processFile(path.join(dataDir, f));
 });
 
-console.log('All files processed.');
+console.log(`All files processed. Generated keywords for ${allSlugs.size} slugs.`);

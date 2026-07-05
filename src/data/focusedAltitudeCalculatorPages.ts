@@ -110,13 +110,13 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
       }
     },
     toolPurpose:
-      'Enter leg a, leg b, and hypotenuse c to find the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> drawn from the right-angle vertex to the hypotenuse. The calculator shows the formula, substitution, and result so you can follow every step.',
+      'Enter leg a, leg b, and hypotenuse c to find the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> drawn from the right-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex to the hypotenuse. The calculator shows the formula, substitution, and result so you can follow every step.',
     intro:
       'If you already know all three sides of a right triangle, finding the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude to the hypotenuse</a> takes one quick calculation. This page handles that exact scenario\u2014type in the two legs and the hypotenuse, and the altitude appears instantly.',
     quickSummary: {
       h2: 'What This Tool Solves',
       intro:
-        'This calculator is designed for the case where you know leg a, leg b, and hypotenuse c and need the perpendicular distance from the right-angle vertex to the hypotenuse. No angles or projections required.',
+        'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> is designed for the case where you know leg a, leg b, and hypotenuse c and need the perpendicular distance from the right-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex to the hypotenuse. No angles or projections required.',
       cards: [
         {
           label: 'Known values',
@@ -140,43 +140,43 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
     diagram: {
       h2: 'Triangle Diagram: Altitude From Sides',
       intro:
-        'The diagram shows a right triangle with legs a and b forming the 90\u00B0 angle and hypotenuse c opposite it. The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h drops from the right-angle vertex perpendicular to the hypotenuse, splitting it into two segments.',
+        'The diagram shows a right triangle with legs a and b forming the 90\u00B0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and hypotenuse c opposite it. The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h drops from the right-angle vertex perpendicular to the hypotenuse, splitting it into two segments.',
       caption:
-        'Right triangle diagram showing leg a, leg b, hypotenuse c, and <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h drawn perpendicular from the right-angle vertex to the hypotenuse.',
+        'Right triangle diagram showing leg a, leg b, hypotenuse c, and <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h drawn perpendicular from the right-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex to the hypotenuse.',
       formulaLabel: 'h = (a \u00D7 b) / c',
       keyLabel: 'Diagram Key',
       sides: {
         a: {
           label: 'a = first leg',
           description:
-            'One of the two sides forming the right angle. Used as a factor in the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude formula</a>.'
+            'One of the two sides forming the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. Used as a factor in the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude formula</a>.'
         },
         b: {
           label: 'b = second leg',
           description:
-            'The other side forming the right angle. Multiplied with leg a in the formula.'
+            'The other <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> forming the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. Multiplied with leg a in the formula.'
         },
         c: {
           label: 'c = hypotenuse',
           description:
-            'The longest side, opposite the right angle. The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h is drawn to this side, and c appears in the denominator of the formula.'
+            'The longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h is drawn to this side, and c appears in the denominator of the formula.'
         }
       },
       result: {
         label: 'h = altitude to the hypotenuse',
         description:
-          'The perpendicular segment from the right-angle vertex to the hypotenuse. Calculated as (a \u00D7 b) / c.'
+          'The perpendicular segment from the right-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex to the hypotenuse. Calculated as (a \u00D7 b) / c.'
       },
       notes: [
         'All three sides must use the same unit before you calculate.',
-        'The hypotenuse c must be the longest side. If c is shorter than a or b, the triangle is not valid.',
+        'The hypotenuse c must be the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. If c is shorter than a or b, the triangle is not valid.',
         'The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h will always be shorter than either leg individually.'
       ]
     },
     formulaSection: {
       h2: 'Right Triangle Altitude From Sides Formula',
       paragraphs: [
-        'The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude to the hypotenuse</a> connects the right-angle vertex to the hypotenuse at a perfect 90\u00B0 angle. Its length comes from a simple relationship between the triangle\u2019s <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> and its sides.',
+        'The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude to the hypotenuse</a> connects the right-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex to the hypotenuse at a perfect 90\u00B0 angle. Its length comes from a simple relationship between the triangle\u2019s <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> and its sides.',
         'The <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area of a right triangle</a> can be written two ways. First, using the legs: Area = (a \u00D7 b) / 2. Second, using the hypotenuse as the base and the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> as the height: Area = (c \u00D7 h) / 2. Setting these equal and solving for h gives the formula.',
         'Because both expressions describe the same <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>, they must be equal: (a \u00D7 b) / 2 = (c \u00D7 h) / 2. Cancel the 2 from both sides, then divide by c to isolate h. The result is h = (a \u00D7 b) / c.'
       ],
@@ -185,9 +185,9 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
     howTo: {
       h2: 'How to Use This Calculator',
       steps: [
-        'Identify the two legs of your right triangle. These are the sides that form the 90\u00B0 angle. Label them a and b.',
-        'Identify the hypotenuse c. This is the longest side, opposite the right angle.',
-        'Make sure all three measurements are in the same unit. Convert if needed.',
+        'Identify the two legs of your right triangle. These are the sides that form the 90\u00B0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. Label them a and b.',
+        'Identify the hypotenuse c. This is the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
+        'Make sure all three <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a> are in the same unit. Convert if needed.',
         'Enter leg a into the first field.',
         'Enter leg b into the second field.',
         'Enter hypotenuse c into the third field.',
@@ -211,7 +211,7 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
       {
         h2: 'What the Result Means',
         paragraphs: [
-          'The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h is the shortest distance from the right-angle vertex to the hypotenuse. Think of it as the \u201Cheight\u201D of the triangle when the hypotenuse is laid flat as the base.',
+          'The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h is the shortest distance from the right-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex to the hypotenuse. Think of it as the \u201Cheight\u201D of the triangle when the hypotenuse is laid flat as the base.',
           'This value is always positive, always shorter than either leg, and always shorter than the hypotenuse. If your answer is larger than one of the legs, double-check your inputs\u2014something is likely entered incorrectly.'
         ]
       },
@@ -244,7 +244,7 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
         ],
         listItems: [
           'Using the hypotenuse c as a leg \u2014 If you accidentally put c in the numerator and a leg in the denominator, the result will be too large and incorrect.',
-          'Entering a hypotenuse shorter than a leg \u2014 The hypotenuse must be the longest side. If c < a or c < b, your side labels are wrong or the triangle is not a right triangle.',
+          'Entering a hypotenuse shorter than a leg \u2014 The hypotenuse must be the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. If c < a or c < b, your side labels are wrong or the triangle is not a right triangle.',
           'Forgetting to divide by c \u2014 The product a \u00D7 b alone is not the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>. You must divide by the hypotenuse.',
           'Mixing different units \u2014 If leg a is in centimeters and leg b is in meters, the result is meaningless. Convert to the same unit first.',
           'Confusing <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h with leg a or leg b \u2014 The altitude is a separate segment inside the triangle, not one of the original sides. It is always shorter than either leg.'
@@ -300,17 +300,17 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
       {
         question: 'What does the altitude result represent?',
         answer:
-          'It is the perpendicular distance from the right-angle vertex to the hypotenuse. It is always shorter than either leg and always lies inside the triangle.'
+          'It is the perpendicular distance from the right-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex to the hypotenuse. It is always shorter than either leg and always lies inside the triangle.'
       },
       {
         question: 'Do I need to know the angles to find the altitude?',
         answer:
-          'No. This formula uses only the three <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a>. No angle measurements are needed.'
+          'No. This formula uses only the three <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a>. No <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a> are needed.'
       },
       {
         question: 'Can the altitude ever be longer than a leg?',
         answer:
-          'No. The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude to the hypotenuse</a> is always shorter than both legs. If your calculated h is larger than a or b, check that c is correctly identified as the longest side.'
+          'No. The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude to the hypotenuse</a> is always shorter than both legs. If your calculated h is larger than a or b, check that c is correctly identified as the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>.'
       }
     ]
   },
@@ -347,9 +347,9 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
       }
     },
     toolPurpose:
-      'Enter the two hypotenuse projections p and q, and this calculator finds the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h to the hypotenuse using the geometric mean relation. It shows the formula, squared intermediate step, and the final square root result.',
+      'Enter the two hypotenuse projections p and q, and this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h to the hypotenuse using the geometric mean relation. It shows the formula, squared intermediate step, and the final square root result.',
     intro:
-      'When the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> drops from the right-angle vertex to the hypotenuse, it splits the hypotenuse into two segments called projections. If you know those two projections, the altitude is just one square root away. This calculator does that math for you.',
+      'When the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> drops from the right-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex to the hypotenuse, it splits the hypotenuse into two segments called projections. If you know those two projections, the altitude is just one square root away. This calculator does that math for you.',
     quickSummary: {
       h2: 'What This Tool Solves',
       intro:
@@ -370,14 +370,14 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
         {
           label: 'Best for',
           value:
-            'Geometric mean problems, projection exercises, similarity proofs, and advanced geometry homework'
+            'Geometric mean problems, <a href="/right-triangle-projection-calculator/" class="text-primary hover:underline">projection</a> exercises, similarity proofs, and advanced geometry homework'
         }
       ]
     },
     diagram: {
       h2: 'Triangle Diagram: Altitude From Projections',
       intro:
-        'The diagram shows the right triangle with the hypotenuse split into two segments. Projection p sits on one side of the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>\u2019s foot, and projection q sits on the other. The altitude h connects the right-angle vertex to the point where p and q meet.',
+        'The diagram shows the right triangle with the hypotenuse split into two segments. <a href="/right-triangle-projection-p-calculator/" class="text-primary hover:underline">Projection p</a> sits on one <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> of the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>\u2019s foot, and <a href="/right-triangle-projection-q-calculator/" class="text-primary hover:underline">projection q</a> sits on the other. The altitude h connects the right-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex to the point where p and q meet.',
       caption:
         'Right triangle diagram showing hypotenuse c divided into projections p and q by the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h, with the formula h = \u221A(p \u00D7 q).',
       formulaLabel: 'h = \u221A(p \u00D7 q)',
@@ -386,17 +386,17 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
         a: {
           label: 'a = first leg',
           description:
-            'One of the two sides forming the right angle. Not directly used in this formula, but leg a is related to projection p by a\u00B2 = p \u00D7 c.'
+            'One of the two sides forming the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. Not directly used in this formula, but leg a is related to <a href="/right-triangle-projection-p-calculator/" class="text-primary hover:underline">projection p</a> by a\u00B2 = p \u00D7 c.'
         },
         b: {
           label: 'b = second leg',
           description:
-            'The other side forming the right angle. Related to projection q by b\u00B2 = q \u00D7 c.'
+            'The other <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> forming the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. Related to <a href="/right-triangle-projection-q-calculator/" class="text-primary hover:underline">projection q</a> by b\u00B2 = q \u00D7 c.'
         },
         c: {
           label: 'c = hypotenuse (= p + q)',
           description:
-            'The longest side, opposite the right angle. It equals the sum of the two projections: c = p + q.'
+            'The longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. It equals the sum of the two projections: c = p + q.'
         }
       },
       result: {
@@ -406,14 +406,14 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
       },
       notes: [
         'p and q must both be positive. If either is zero, the triangle is degenerate.',
-        'The sum p + q equals the hypotenuse c. You can use this to verify your projection values.',
+        'The sum p + q equals the hypotenuse c. You can use this to verify your <a href="/right-triangle-projection-calculator/" class="text-primary hover:underline">projection</a> values.',
         'The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h will always be less than or equal to (p + q) / 2. It equals that value only when p = q (an <a href="/45-45-90-triangle-calculator/" class="text-primary hover:underline">isosceles right triangle</a>).'
       ]
     },
     formulaSection: {
       h2: 'Right Triangle Altitude From Projections Formula',
       paragraphs: [
-        'When the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h drops from the right-angle vertex to the hypotenuse, it creates two smaller right triangles inside the original one. Both of these smaller triangles are similar to the original triangle and to each other.',
+        'When the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h drops from the right-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex to the hypotenuse, it creates two smaller right triangles inside the original one. Both of these smaller triangles are similar to the original triangle and to each other.',
         'Because the triangles are similar, their corresponding sides are proportional. This proportionality leads to the relation h\u00B2 = p \u00D7 q, which means the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> is the geometric mean of the two projections.',
         'Taking the square root of both sides gives the working formula: h = \u221A(p \u00D7 q). This is one of the most elegant results in right triangle geometry and appears frequently in proofs and competition problems.'
       ],
@@ -425,11 +425,11 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
     howTo: {
       h2: 'How to Use This Calculator',
       steps: [
-        'Identify the two projections on the hypotenuse. These are the segments created when the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> from the right-angle vertex meets the hypotenuse.',
+        'Identify the two projections on the hypotenuse. These are the segments created when the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> from the right-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex meets the hypotenuse.',
         'Label the shorter segment p and the longer segment q (or vice versa\u2014order does not matter since multiplication is commutative).',
         'Make sure both values are in the same unit.',
-        'Enter projection p into the first field.',
-        'Enter projection q into the second field.',
+        'Enter <a href="/right-triangle-projection-p-calculator/" class="text-primary hover:underline">projection p</a> into the first field.',
+        'Enter <a href="/right-triangle-projection-q-calculator/" class="text-primary hover:underline">projection q</a> into the second field.',
         'Click Calculate. The tool multiplies p and q, takes the square root, and displays the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h with step-by-step work.'
       ]
     },
@@ -450,14 +450,14 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
       {
         h2: 'What the Result Means',
         paragraphs: [
-          'The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h is the perpendicular distance from the right-angle vertex to the hypotenuse. It tells you how \u201Ctall\u201D the triangle is when the hypotenuse is used as the base.',
+          'The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h is the perpendicular distance from the right-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex to the hypotenuse. It tells you how \u201Ctall\u201D the triangle is when the hypotenuse is used as the base.',
           'In practical terms, if you were building a triangular truss and the hypotenuse was the bottom chord, h is the maximum height of the truss at its peak. It determines the clearance or depth of the structure.'
         ]
       },
       {
         h2: 'When to Use This Calculator',
         paragraphs: [
-          'This calculator is useful whenever you have the two hypotenuse segments but not all three <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a>. That scenario shows up more often than you might expect.'
+          'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> is useful whenever you have the two hypotenuse segments but not all three <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a>. That scenario shows up more often than you might expect.'
         ],
         listTitle: 'Typical situations:',
         listItems: [
@@ -484,7 +484,7 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
           'Adding p and q instead of multiplying \u2014 The formula requires the product p \u00D7 q, not the sum p + q. The sum gives you the hypotenuse c, not the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>.',
           'Forgetting the square root \u2014 The product p \u00D7 q gives h\u00B2, not h. You must take the square root to get the actual <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>.',
           'Confusing projections with legs \u2014 The projections p and q are the two segments of the hypotenuse, not the triangle\u2019s legs. They are always smaller than the corresponding legs.',
-          'Using zero or negative values \u2014 Both projections must be positive. A zero projection means no triangle exists.',
+          'Using zero or negative values \u2014 Both projections must be positive. A zero <a href="/right-triangle-projection-calculator/" class="text-primary hover:underline">projection</a> means no triangle exists.',
           'Thinking h\u00B2 is the final answer \u2014 The intermediate result h\u00B2 = p \u00D7 q is a squared value. The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> itself is the square root of that number.'
         ]
       },
@@ -503,7 +503,7 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
       {
         h2: 'Connection to the Full Triangle',
         paragraphs: [
-          'If you know p and q, you can reconstruct the full triangle without any other measurements. The hypotenuse is c = p + q. The legs are a = \u221A(p \u00D7 c) and b = \u221A(q \u00D7 c). And the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> is h = \u221A(p \u00D7 q).',
+          'If you know p and q, you can reconstruct the full triangle without any other <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a>. The hypotenuse is c = p + q. The legs are a = \u221A(p \u00D7 c) and b = \u221A(q \u00D7 c). And the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> is h = \u221A(p \u00D7 q).',
           'These three geometric mean relations\u2014one for each of h, a, and b\u2014are a complete description of the right triangle. They are all consequences of the similarity between the original triangle and the two sub-triangles created by the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>.'
         ]
       }
@@ -546,7 +546,7 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
         question:
           'What does the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> value represent?',
         answer:
-          'It is the perpendicular distance from the right-angle vertex to the hypotenuse. It is the height of the triangle when the hypotenuse is the base.'
+          'It is the perpendicular distance from the right-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex to the hypotenuse. It is the height of the triangle when the hypotenuse is the base.'
       },
       {
         question:

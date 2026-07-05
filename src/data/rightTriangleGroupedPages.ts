@@ -86,9 +86,9 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
     includedToolIds: [1, 2, 3],
     intent: 'Find any missing side (a, b, or c).',
     relatedSlugs: [
-      'right-triangle-angle-calculator',
-      'right-triangle-side-from-angle-calculator',
-      'right-triangle-measurements-calculator'
+      'right-triangle-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
+      'right-triangle-side-from-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
+      'right-triangle-<a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a>-calculator'
     ],
     content: {
       intro:
@@ -96,7 +96,7 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       method:
         'All side modes are based on the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem</a>. The calculator applies c^2 = a^2 + b^2 for hypotenuse problems and rearranges it to c^2 - leg^2 for missing-leg problems.',
       useCases: [
-        'Checking field measurements for construction, framing, and layout diagonals.',
+        'Checking field <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a> for construction, framing, and layout diagonals.',
         'Validating math homework and exam answers for right triangle side problems.',
         'Confirming CAD or drawing dimensions before cutting material.'
       ],
@@ -121,8 +121,8 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
     intent: 'Calculate right triangle perimeter and semiperimeter.',
     relatedSlugs: [
       'right-triangle-<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-calculator',
-      'right-triangle-radius-calculator',
-      'right-triangle-side-calculator'
+      'right-triangle-<a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
+      'right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>'
     ],
     content: {
       intro:
@@ -136,11 +136,11 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       ],
       inputTips: [
         'Enter all three <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> in the same unit for reliable totals.',
-        'If one side is missing, solve it first in the side calculator, then return here.',
+        'If one <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is missing, solve it first in the side <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>, then return here.',
         '<a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">Semiperimeter</a> should always be exactly half of the computed <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>.'
       ],
       proTip:
-        'Use <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> as a checkpoint value before moving into <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-by-radius methods.'
+        'Use <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> as a checkpoint value before moving into <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-by-<a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a> methods.'
     }
   },
   {
@@ -154,22 +154,22 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
     includedToolIds: [7, 8, 9, 18, 19, 20],
     intent: 'Calculate trig ratios.',
     relatedSlugs: [
-      'right-triangle-angle-calculator',
-      'right-triangle-side-from-angle-calculator',
-      'special-right-triangle-calculator'
+      'right-triangle-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
+      'right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-from-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
+      '<a href="/special-right-triangle-calculator/" class="text-primary hover:underline">special</a>-right-triangle-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>'
     ],
     content: {
       intro:
-        'Use this calculator to get sine, cosine, tangent, secant, cosecant, and cotangent from right triangle side values. It is designed for quick ratio lookup and verification.',
+        'Use this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> to get sine, cosine, tangent, secant, cosecant, and cotangent from right triangle <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> values. It is designed for quick ratio lookup and verification.',
       method:
-        'Each ratio is computed from opposite, adjacent, and hypotenuse relationships around a selected acute angle. Reciprocal ratios are included so you can move between direct and inverse forms easily.',
+        'Each ratio is computed from opposite, adjacent, and hypotenuse relationships around a selected acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. Reciprocal ratios are included so you can move between direct and inverse forms easily.',
       useCases: [
-        'Converting slope-style side information into trig ratio values.',
+        'Converting slope-style <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> information into trig ratio values.',
         'Checking trigonometry assignments without manually reworking each fraction.',
-        'Preparing ratio values for angle-finding or side-from-angle calculations.'
+        'Preparing ratio values for <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-finding or <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-from-angle calculations.'
       ],
       inputTips: [
-        'Make sure opposite and adjacent sides are assigned correctly for the chosen angle.',
+        'Make sure opposite and adjacent sides are assigned correctly for the chosen <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
         'Ratios are unitless, so units cancel out as long as input units are consistent.',
         'For sine and cosine, the leg used in the numerator must be smaller than the hypotenuse.'
       ],
@@ -188,22 +188,22 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
     includedToolIds: [10, 11, 12, 25, 26],
     intent: 'Find triangle angles.',
     relatedSlugs: [
-      'right-triangle-trig-ratios-calculator',
-      'right-triangle-side-from-angle-calculator',
-      'right-triangle-side-calculator'
+      'right-triangle-trig-ratios-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
+      'right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-from-angle-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
+      'right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>'
     ],
     content: {
       intro:
-        'This page helps you find acute angles in a right triangle from side ratios or from the angle-sum rule. It is ideal when dimensions are known but direction or pitch is not.',
+        'This page helps you find acute angles in a right triangle from <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> ratios or from the angle-sum rule. It is ideal when dimensions are known but direction or pitch is not.',
       method:
-        'Inverse trigonometric functions (arcsin, arccos, arctan) return angle A from side relationships, while angle-sum modes convert between A and B with A + B = 90 degrees.',
+        'Inverse trigonometric functions (arcsin, arccos, arctan) return angle A from <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> relationships, while angle-sum modes convert between A and B with A + B = 90 degrees.',
       useCases: [
         'Finding roof pitch and incline angles from measured <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a>.',
         'Solving geometry and trigonometry problems that require angle recovery.',
-        'Converting side-based measurements into directional values for design and drafting.'
+        'Converting <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-based <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a> into directional values for design and drafting.'
       ],
       inputTips: [
-        'Ensure the side ratio is valid before applying inverse trig (for example, a/c must be between 0 and 1).',
+        'Ensure the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> ratio is valid before applying inverse trig (for example, a/c must be between 0 and 1).',
         'Angles are output in degrees for practical interpretation.',
         'If one acute angle is known, compute the other directly using 90 degrees minus that value.'
       ],
@@ -217,32 +217,32 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
     h1: 'Right Triangle Side Calculator Using Angle',
     h2: [
       'Find <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">Missing Side</a> Using Angles',
-      'Trigonometric Side Formulas'
+      'Trigonometric <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">Side</a> Formulas'
     ],
     includedToolIds: [21, 22, 23, 24],
     intent: 'Find side using angle.',
     relatedSlugs: [
-      'right-triangle-angle-calculator',
-      'right-triangle-trig-ratios-calculator',
-      'right-triangle-side-calculator'
+      'right-triangle-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
+      'right-triangle-trig-ratios-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
+      'right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>'
     ],
     content: {
       intro:
-        'Use this page when you know an angle and at least one side and need a <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">missing side</a>. It combines sine, cosine, and tangent side-solvers in one practical workflow.',
+        'Use this page when you know an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and at least one <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> and need a <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">missing side</a>. It combines sine, cosine, and tangent side-solvers in one practical workflow.',
       method:
-        'The calculator applies direct trig side formulas such as a = c * sin(A), b = c * cos(A), and tangent-based conversions between opposite and adjacent legs.',
+        'The <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> applies direct trig <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> formulas such as a = c * sin(A), b = c * cos(A), and tangent-based conversions between opposite and adjacent legs.',
       useCases: [
-        'Estimating ladder reach, ramp rise, or run from a known angle.',
-        'Solving field sketches where only one side and an angle were captured.',
-        'Converting angular design constraints into exact side dimensions.'
+        'Estimating ladder reach, ramp rise, or run from a known <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
+        'Solving field sketches where only one <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> and an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> were captured.',
+        'Converting angular design constraints into exact <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> dimensions.'
       ],
       inputTips: [
-        'Enter angle values in degrees, not radians.',
-        'Pick the mode that matches the side you already know (hypotenuse vs leg).',
-        'Avoid near-90-degree angle inputs in tangent modes when precision is critical.'
+        'Enter <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> values in degrees, not radians.',
+        'Pick the mode that matches the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> you already know (hypotenuse vs leg).',
+        'Avoid near-90-degree <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> inputs in tangent modes when precision is critical.'
       ],
       proTip:
-        'After solving one side, use the side calculator to cross-check the full triangle.'
+        'After solving one <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, use the side <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> to cross-check the full triangle.'
     }
   },
   {
@@ -256,24 +256,24 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
     includedToolIds: [4, 27, 28, 29, 31],
     intent: 'Find area using any method.',
     relatedSlugs: [
-      'right-triangle-measurements-calculator',
+      'right-triangle-<a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a>-calculator',
       'right-triangle-<a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>-calculator',
-      'right-triangle-radius-calculator'
+      'right-triangle-<a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>'
     ],
     content: {
       intro:
-        'This page lets you calculate right triangle area using whichever inputs you already have. It supports area from legs, angle-based area forms, <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a>-<a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a>, and <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>-based formulas.',
+        'This page lets you calculate right triangle area using whichever inputs you already have. It supports <a href="/right-triangle-area-from-legs-calculator/" class="text-primary hover:underline">area from legs</a>, <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-based area forms, <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a>-<a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a>, and <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>-based formulas.',
       method:
         'Multiple area identities are available so you can solve from different known values without rewriting the triangle manually. This is useful when data comes from mixed sources.',
       useCases: [
         'Estimating floor, panel, or coverage area for triangular sections.',
         'Comparing area outputs from different known inputs in engineering calculations.',
-        'Validating area values from drawings, classroom problems, or site measurements.'
+        'Validating area values from drawings, classroom problems, or site <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a>.'
       ],
       inputTips: [
         'Use the mode that matches your known values instead of forcing conversions first.',
         'Area outputs are squared units, so verify your unit interpretation.',
-        'If using angle-based area, ensure the angle is the included angle for that formula mode.'
+        'If using <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-based area, ensure the angle is the included angle for that formula mode.'
       ],
       proTip:
         'For high confidence, compute area with two different modes and compare the results.'
@@ -291,21 +291,21 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
     intent: 'Find triangle height.',
     relatedSlugs: [
       'right-triangle-<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-calculator',
-      'right-triangle-projection-calculator',
-      'right-triangle-side-calculator'
+      'right-triangle-<a href="/right-triangle-projection-calculator/" class="text-primary hover:underline">projection</a>-calculator',
+      'right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>'
     ],
     content: {
       intro:
-        'This calculator focuses on the altitude drawn from the right angle to the hypotenuse. It is useful when you need the internal height rather than an outer side length.',
+        'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> focuses on the altitude drawn from the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> to the hypotenuse. It is useful when you need the internal height rather than an outer <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> length.',
       method:
-        'You can solve altitude from sides using h = ab/c or from projection segments using h = sqrt(pq). Both are implemented as separate modes for different input scenarios.',
+        'You can solve <a href="/right-triangle-altitude-from-sides-calculator/" class="text-primary hover:underline">altitude from sides</a> using h = ab/c or from <a href="/right-triangle-projection-calculator/" class="text-primary hover:underline">projection</a> segments using h = sqrt(pq). Both are implemented as separate modes for different input scenarios.',
       useCases: [
         'Breaking a triangle into smaller geometric parts for analysis.',
         'Deriving perpendicular distances in layout and surveying tasks.',
         'Supporting <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> calculations that require hypotenuse-altitude form.'
       ],
       inputTips: [
-        'If entering sides, verify the hypotenuse is the largest side.',
+        'If entering sides, verify the hypotenuse is the largest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>.',
         'If entering projections, keep p and q non-negative and geometrically valid.',
         'Altitude in a right triangle should be less than both leg lengths.'
       ],
@@ -325,7 +325,7 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
     intent: 'Find projections and segment relations.',
     relatedSlugs: [
       'right-triangle-<a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>-calculator',
-      'right-triangle-side-calculator',
+      'right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
       'right-triangle-<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-calculator'
     ],
     content: {
@@ -341,10 +341,10 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       inputTips: [
         'Projection segments p and q should be measured along the same hypotenuse.',
         'Use non-negative values and check that segment totals make geometric sense.',
-        'After solving a leg from projection, verify with Pythagorean side relations.'
+        'After solving a leg from projection, verify with Pythagorean <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> relations.'
       ],
       proTip:
-        'Pair this calculator with <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> mode to verify h^2 = pq on the same triangle.'
+        'Pair this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> with <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> mode to verify h^2 = pq on the same triangle.'
     }
   },
   {
@@ -358,27 +358,27 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
     includedToolIds: [16, 17, 36, 43],
     intent: 'Find triangle radii.',
     relatedSlugs: [
-      'right-triangle-measurements-calculator',
+      'right-triangle-<a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a>-calculator',
       'right-triangle-<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-calculator',
-      'right-triangle-side-calculator'
+      'right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>'
     ],
     content: {
       intro:
         'This page calculates <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a> and <a href="/right-triangle-circumradius-calculator/" class="text-primary hover:underline">circumradius</a> values for right triangles. It is useful for circle-based geometry tasks and clearance or fit calculations.',
       method:
-        '<a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">Inradius</a> is solved from side relations (r = (a + b - c)/2), while <a href="/right-triangle-circumradius-calculator/" class="text-primary hover:underline">circumradius</a> follows directly from the right-triangle rule R = c/2.',
+        '<a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">Inradius</a> is solved from <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> relations (r = (a + b - c)/2), while <a href="/right-triangle-circumradius-calculator/" class="text-primary hover:underline">circumradius</a> follows directly from the right-triangle rule R = c/2.',
       useCases: [
         'Designing inscribed or circumscribed circular features around triangular parts.',
         'Checking geometry solutions involving triangle-circle relationships.',
         'Deriving radius values needed for advanced <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> and construction formulas.'
       ],
       inputTips: [
-        'Ensure the triangle is valid and the hypotenuse is the longest side.',
+        'Ensure the triangle is valid and the hypotenuse is the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>.',
         '<a href="/right-triangle-circumradius-calculator/" class="text-primary hover:underline">Circumradius</a> depends only on hypotenuse, so c accuracy is critical.',
         '<a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">Inradius</a> should always return a positive value for a valid right triangle.'
       ],
       proTip:
-        'If radius values look unusual, re-check side validity with the side calculator first.'
+        'If radius values look unusual, re-check <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> validity with the side <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> first.'
     }
   },
   {
@@ -387,24 +387,24 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
     h1: 'Special Right Triangle Calculator',
     h2: [
       '<a href="/30-60-90-triangle-calculator/" class="text-primary hover:underline">30-60-90</a> and <a href="/45-45-90-triangle-calculator/" class="text-primary hover:underline">45-45-90 Triangle</a> Solver',
-      'Quick Side Relationships'
+      'Quick <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">Side</a> Relationships'
     ],
     includedToolIds: [39, 40, 41, 42],
     intent: 'Solve special right triangles quickly.',
     relatedSlugs: [
-      'right-triangle-side-calculator',
-      'right-triangle-trig-ratios-calculator',
-      'right-triangle-angle-calculator'
+      'right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
+      'right-triangle-trig-ratios-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
+      'right-triangle-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>'
     ],
     content: {
       intro:
-        'This page is optimized for <a href="/45-45-90-triangle-calculator/" class="text-primary hover:underline">45-45-90</a> and <a href="/30-60-90-triangle-calculator/" class="text-primary hover:underline">30-60-90</a> triangles, where side ratios are fixed. It gives instant results without full general-triangle solving.',
+        'This page is optimized for <a href="/45-45-90-triangle-calculator/" class="text-primary hover:underline">45-45-90</a> and <a href="/30-60-90-triangle-calculator/" class="text-primary hover:underline">30-60-90</a> triangles, where <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> ratios are fixed. It gives instant results without full general-triangle solving.',
       method:
         'Each mode applies special-triangle identities like c = a * sqrt(2), a = c / sqrt(2), long leg = short leg * sqrt(3), and c = 2a, depending on the triangle type.',
       useCases: [
-        'Fast exam solving when triangle type is known from the angle pattern.',
+        'Fast exam solving when triangle type is known from the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> pattern.',
         'Quick sanity checks before using full trigonometric workflows.',
-        'Drafting and fabrication tasks that commonly use standard angle triangles.'
+        'Drafting and fabrication tasks that commonly use standard <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> triangles.'
       ],
       inputTips: [
         'Confirm whether your triangle is <a href="/45-45-90-triangle-calculator/" class="text-primary hover:underline">45-45-90</a> or <a href="/30-60-90-triangle-calculator/" class="text-primary hover:underline">30-60-90</a> before selecting a mode.',
@@ -412,7 +412,7 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
         'Keep radicals exact during intermediate steps, then round at the end if needed.'
       ],
       proTip:
-        'Use special-triangle output as a benchmark to check measurements from field data.'
+        'Use special-triangle output as a benchmark to check <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a> from field data.'
     }
   }
 ];
@@ -456,49 +456,49 @@ export const GROUPED_PAGE_SLUGS = [
 ];
 
 export const LEGACY_FORMULA_REDIRECTS: Record<string, string> = {
-  'pythagorean-theorem': '/right-triangle-side-calculator/',
-  'leg-from-hypotenuse-and-other-leg': '/right-triangle-side-calculator/',
-  'other-leg-from-hypotenuse-and-leg': '/right-triangle-side-calculator/',
+  'pythagorean-theorem': '/right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-calculator/',
+  'leg-from-hypotenuse-and-other-leg': '/right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-calculator/',
+  'other-leg-from-hypotenuse-and-leg': '/right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-calculator/',
   '<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-from-legs': '/right-triangle-area-calculator/',
-  '<a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>': '/right-triangle-measurements-calculator/',
-  '<a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a>': '/right-triangle-measurements-calculator/',
+  '<a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>': '/right-triangle-<a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a>-calculator/',
+  '<a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a>': '/right-triangle-<a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a>-calculator/',
   'sine-ratio': '/right-triangle-trig-ratios-calculator/',
   'cosine-ratio': '/right-triangle-trig-ratios-calculator/',
   'tangent-ratio': '/right-triangle-trig-ratios-calculator/',
-  'angle-from-sine': '/right-triangle-angle-from-sine-calculator/',
-  'angle-from-cosine': '/right-triangle-angle-from-cosine-calculator/',
-  'angle-from-tangent': '/right-triangle-angle-from-tangent-calculator/',
+  '<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-from-sine': '/right-triangle-angle-from-sine-calculator/',
+  '<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-from-cosine': '/right-triangle-angle-from-cosine-calculator/',
+  '<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-from-tangent': '/right-triangle-angle-from-tangent-calculator/',
   '<a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>-to-hypotenuse': '/right-triangle-altitude-calculator/',
-  'projection-of-a-on-hypotenuse': '/right-triangle-projection-calculator/',
-  'projection-of-b-on-hypotenuse': '/right-triangle-projection-calculator/',
-  '<a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a>': '/right-triangle-radius-calculator/',
-  '<a href="/right-triangle-circumradius-calculator/" class="text-primary hover:underline">circumradius</a>': '/right-triangle-radius-calculator/',
+  '<a href="/right-triangle-projection-calculator/" class="text-primary hover:underline">projection</a>-of-a-on-hypotenuse': '/right-triangle-projection-calculator/',
+  '<a href="/right-triangle-projection-calculator/" class="text-primary hover:underline">projection</a>-of-b-on-hypotenuse': '/right-triangle-projection-calculator/',
+  '<a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a>': '/right-triangle-<a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a>-calculator/',
+  '<a href="/right-triangle-circumradius-calculator/" class="text-primary hover:underline">circumradius</a>': '/right-triangle-<a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a>-calculator/',
   'cotangent-exact': '/right-triangle-trig-ratios-calculator/',
   'secant-exact': '/right-triangle-trig-ratios-calculator/',
   'cosecant-exact': '/right-triangle-trig-ratios-calculator/',
-  'a-c-sin': '/right-triangle-side-from-angle-calculator/',
-  'b-c-cos': '/right-triangle-side-from-angle-calculator/',
-  'a-b-tan': '/right-triangle-side-from-angle-calculator/',
-  'b-a-tan': '/right-triangle-side-from-angle-calculator/',
-  'angle-sum-exact': '/right-triangle-missing-angle-calculator/',
-  'angle-b-exact': '/right-triangle-missing-angle-calculator/',
+  'a-c-sin': '/right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-from-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-calculator/',
+  'b-c-cos': '/right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-from-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-calculator/',
+  'a-b-tan': '/right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-from-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-calculator/',
+  'b-a-tan': '/right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-from-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-calculator/',
+  '<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-sum-exact': '/right-triangle-missing-angle-calculator/',
+  '<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-b-exact': '/right-triangle-missing-angle-calculator/',
   '<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-sin-a': '/right-triangle-area-calculator/',
   '<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-sin-b': '/right-triangle-area-calculator/',
   '<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-rs': '/right-triangle-area-calculator/',
   'alt-rel-h': '/right-triangle-<a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>-calculator/',
   '<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-ch': '/right-triangle-area-calculator/',
   'h-sq-pq': '/right-triangle-<a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>-calculator/',
-  'a-sq-cp': '/right-triangle-projection-calculator/',
-  'b-sq-cq': '/right-triangle-projection-calculator/',
-  'pq-c': '/right-triangle-projection-calculator/',
-  'radius-r': '/right-triangle-radius-calculator/',
+  'a-sq-cp': '/right-triangle-<a href="/right-triangle-projection-calculator/" class="text-primary hover:underline">projection</a>-calculator/',
+  'b-sq-cq': '/right-triangle-<a href="/right-triangle-projection-calculator/" class="text-primary hover:underline">projection</a>-calculator/',
+  'pq-c': '/right-triangle-<a href="/right-triangle-projection-calculator/" class="text-primary hover:underline">projection</a>-calculator/',
+  '<a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a>-r': '/right-triangle-radius-calculator/',
   'sin2-cos2': '/right-triangle-trig-ratios-calculator/',
   'tan-sin-cos': '/right-triangle-trig-ratios-calculator/',
-  'c-a-rt2': '/special-right-triangle-calculator/',
-  'a-c-rt2': '/special-right-triangle-calculator/',
-  'long-a-rt3': '/special-right-triangle-calculator/',
-  'c-2a': '/special-right-triangle-calculator/',
-  'radius-R-cap': '/right-triangle-radius-calculator/'
+  'c-a-rt2': '/<a href="/special-right-triangle-calculator/" class="text-primary hover:underline">special</a>-right-triangle-calculator/',
+  'a-c-rt2': '/<a href="/special-right-triangle-calculator/" class="text-primary hover:underline">special</a>-right-triangle-calculator/',
+  'long-a-rt3': '/<a href="/special-right-triangle-calculator/" class="text-primary hover:underline">special</a>-right-triangle-calculator/',
+  'c-2a': '/<a href="/special-right-triangle-calculator/" class="text-primary hover:underline">special</a>-right-triangle-calculator/',
+  '<a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a>-R-cap': '/right-triangle-radius-calculator/'
 };
 
 export function getLegacyRedirectUrlBySlug(slug: string): string | undefined {

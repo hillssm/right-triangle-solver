@@ -89,16 +89,16 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     h1: 'Pythagorean Theorem Calculator',
     metaTitle: 'Pythagorean Theorem Calculator | Find the Hypotenuse',
     metaDescription:
-      'Find hypotenuse c from legs a and b with a Pythagorean theorem calculator, diagram, formula, examples, validation tips, and step-by-step work.',
+      'Find hypotenuse c from legs a and b with a Pythagorean theorem <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>, diagram, formula, examples, validation tips, and step-by-step work.',
     formulaSlug: 'pythagorean-theorem',
     toolPurpose:
       'Whether you\u2019re solving a homework problem or measuring a diagonal in real life, this tool gives you the answer in seconds \u2014 with the full solution shown step by step.',
     intro:
-      'This calculator finds the hypotenuse (c) of a right triangle when you know both legs (a and b). Enter your two leg values and get the result instantly.',
+      'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the hypotenuse (c) of a right triangle when you know both legs (a and b). Enter your two leg values and get the result instantly.',
     quickSummary: {
       h2: 'What This Tool Solves',
       intro:
-        'Use this page when the two sides that meet at the 90° angle are known and the diagonal side is missing. The calculator focuses on the classic hypotenuse case, so the inputs stay simple and the result is easy to check.',
+        'Use this page when the two sides that meet at the 90° <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> are known and the diagonal <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is missing. The <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> focuses on the classic hypotenuse case, so the inputs stay simple and the result is easy to check.',
       cards: [
         { label: 'Known values', value: 'Leg a and leg b' },
         { label: 'Finds', value: 'Hypotenuse c' },
@@ -109,23 +109,23 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     diagram: {
       h2: 'Right Triangle Diagram: Finding the Hypotenuse',
       intro:
-        'The diagram shows the exact side relationship used by the tool. The two legs are the known input values, and the slanted side c is the hypotenuse that the calculator finds.',
+        'The diagram shows the exact <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> relationship used by the tool. The two legs are the known input values, and the slanted side c is the hypotenuse that the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds.',
       caption:
         'Right triangle diagram with known legs a and b and unknown hypotenuse c.',
       sides: {
         a: {
           label: 'a = known',
-          description: 'Leg a is one of the two sides that forms the right angle.',
+          description: 'Leg a is one of the two sides that forms the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
           status: 'known'
         },
         b: {
           label: 'b = known',
-          description: 'Leg b is the other side that forms the right angle.',
+          description: 'Leg b is the other <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> that forms the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
           status: 'known'
         },
         c: {
           label: 'c = find',
-          description: 'Hypotenuse c is the longest side and sits opposite the 90° angle.',
+          description: 'Hypotenuse c is the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> and sits opposite the 90° <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
           status: 'unknown'
         }
       },
@@ -146,14 +146,14 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       h2: 'Pythagorean Theorem Formula',
       paragraphs: [
         'The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the two legs. To solve for the hypotenuse, take the square root of both sides.',
-        'In this formula, a and b are the two legs of the right triangle \u2014 the sides that form the right angle. c is the hypotenuse, the longest side, opposite the right angle. This formula only works for right triangles.'
+        'In this formula, a and b are the two legs of the right triangle \u2014 the sides that form the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. c is the hypotenuse, the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, opposite the right angle. This formula only works for right triangles.'
       ],
       formulas: ['c^2 = a^2 + b^2', 'c = \\sqrt{a^2 + b^2}']
     },
     howTo: {
       h2: 'How to Use This Tool',
       steps: [
-        'Identify the two legs of your right triangle. These are the sides that form the right angle.',
+        'Identify the two legs of your right triangle. These are the sides that form the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
         'Enter leg a into the first input field.',
         'Enter leg b into the second input field.',
         'Click Calculate to find the hypotenuse.',
@@ -174,8 +174,8 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         h2: 'Where This Calculator Is Useful',
         paragraphs: [
-          'The hypotenuse calculator is useful whenever two perpendicular distances combine into one diagonal distance. It is especially helpful when a drawing, floor plan, or homework problem gives the horizontal and vertical sides but leaves the diagonal side blank.',
-          'Because this page only solves for c, it avoids the confusion of switching between side modes. If your known values are the two legs, this is the focused Pythagorean theorem tool to use.'
+          'The hypotenuse <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> is useful whenever two perpendicular distances combine into one diagonal distance. It is especially helpful when a drawing, floor plan, or homework problem gives the horizontal and vertical sides but leaves the diagonal <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> blank.',
+          'Because this page only solves for c, it avoids the confusion of switching between <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> modes. If your known values are the two legs, this is the focused Pythagorean theorem tool to use.'
         ],
         listTitle: 'Common examples include:',
         listItems: [
@@ -188,12 +188,12 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         h2: 'Input Tips for Better Results',
         paragraphs: [
-          'Enter both leg lengths as positive numbers. Decimals are fine, and the calculator will keep enough precision to make the step-by-step work useful.',
+          'Enter both leg lengths as positive numbers. Decimals are fine, and the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> will keep enough precision to make the step-by-step work useful.',
           'The two inputs must use the same unit. If a is measured in feet and b is measured in inches, convert one measurement first so the result is meaningful.'
         ],
         listTitle: 'Before you calculate, check that:',
         listItems: [
-          'a and b are the sides that touch the 90° angle.',
+          'a and b are the sides that touch the 90° <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
           'Neither input is zero or negative.',
           'Both values are measured in the same unit.',
           'You are solving for the hypotenuse, not a missing leg.'
@@ -202,7 +202,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         h2: 'How to Read the Answer',
         paragraphs: [
-          'The output labeled Hypotenuse c is the side opposite the right angle. It is the diagonal side in the diagram and should be longer than both input legs.',
+          'The output labeled Hypotenuse c is the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. It is the diagonal side in the diagram and should be longer than both input legs.',
           'If your result looks smaller than a or b, that is a sign that one of the inputs was mislabeled or that the triangle is not actually a right triangle.'
         ],
         listTitle: 'A quick reasonableness check:',
@@ -216,13 +216,13 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         h2: 'Common Mistakes',
         paragraphs: [
-          'Most wrong hypotenuse answers come from using the right formula on the wrong sides. The legs must be the two sides that make the right angle; the hypotenuse is never an input on this page.',
-          'Another common issue is stopping at a² + b². That value is c², not c. The square root step is what turns the squared value back into the actual side length.'
+          'Most wrong hypotenuse answers come from using the right formula on the wrong sides. The legs must be the two sides that make the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>; the hypotenuse is never an input on this page.',
+          'Another common issue is stopping at a² + b². That value is c², not c. The square root step is what turns the squared value back into the actual <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> length.'
         ],
         listTitle: 'Avoid these mistakes:',
         listItems: [
-          'Using the formula on a triangle that does not have a 90° angle.',
-          'Entering the diagonal side as a or b.',
+          'Using the formula on a triangle that does not have a 90° <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
+          'Entering the diagonal <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> as a or b.',
           'Forgetting to take the square root at the end.',
           'Mixing units such as inches and feet in the same calculation.'
         ]
@@ -248,22 +248,22 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         question: 'What does c mean in the formula?',
         answer:
-          'In the formula c\u00b2 = a\u00b2 + b\u00b2, c is the hypotenuse \u2014 the longest side of the right triangle. It\u2019s the side directly across from the 90\u00b0 angle.'
+          'In the formula c\u00b2 = a\u00b2 + b\u00b2, c is the hypotenuse \u2014 the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> of the right triangle. It\u2019s the side directly across from the 90\u00b0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.'
       },
       {
         question: 'Can I use this calculator for any triangle?',
         answer:
-          'No. This calculator uses the Pythagorean theorem, which only works for right triangles. If your triangle doesn\u2019t have a 90\u00b0 angle, the formula won\u2019t give a correct result.'
+          'No. This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> uses the Pythagorean theorem, which only works for right triangles. If your triangle doesn\u2019t have a 90\u00b0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>, the formula won\u2019t give a correct result.'
       },
       {
         question: 'How do I find the hypotenuse?',
         answer:
-          'To find the hypotenuse, square both legs (a\u00b2 and b\u00b2), add them together, and take the square root of the sum. The formula is c = \u221a(a\u00b2 + b\u00b2). Or just enter your values above and let the calculator do it.'
+          'To find the hypotenuse, square both legs (a\u00b2 and b\u00b2), add them together, and take the square root of the sum. The formula is c = \u221a(a\u00b2 + b\u00b2). Or just enter your values above and let the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> do it.'
       },
       {
         question: 'What are a and b in a right triangle?',
         answer:
-          'a and b are the two legs \u2014 the sides that form the right angle. They can be any positive length, and it doesn\u2019t matter which one you call a or b. The hypotenuse (c) is always the remaining side.'
+          'a and b are the two legs \u2014 the sides that form the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. They can be any positive length, and it doesn\u2019t matter which one you call a or b. The hypotenuse (c) is always the remaining <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>.'
       }
     ]
   },
@@ -276,13 +276,13 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       'Find missing leg b when hypotenuse c and leg a are known. Includes diagram, formula b = sqrt(c^2 - a^2), input checks, and examples.',
     formulaSlug: 'leg-from-hypotenuse-and-other-leg',
     toolPurpose:
-      'Remember: c is always the hypotenuse \u2014 the longest side, opposite the right angle. It is not a leg. If you have two legs and need the hypotenuse instead, use the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean Theorem</a> Calculator.',
+      'Remember: c is always the hypotenuse \u2014 the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. It is not a leg. If you have two legs and need the hypotenuse instead, use the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean Theorem</a> Calculator.',
     intro:
-      'This calculator finds the missing leg b of a right triangle when you already know the hypotenuse c and one leg a. Just enter your two known values and get leg b instantly.',
+      'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the missing leg b of a right triangle when you already know the hypotenuse c and one leg a. Just enter your two known values and get leg b instantly.',
     quickSummary: {
       h2: 'What This Tool Solves',
       intro:
-        'Use this page when the hypotenuse and leg a are known, but the other leg is missing. The calculator rearranges the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem</a> to subtract the known leg from the hypotenuse before taking the square root.',
+        'Use this page when the hypotenuse and leg a are known, but the other leg is missing. The <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> rearranges the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem</a> to subtract the known leg from the hypotenuse before taking the square root.',
       cards: [
         { label: 'Known values', value: 'Hypotenuse c and leg a' },
         { label: 'Finds', value: 'Missing leg b' },
@@ -309,7 +309,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
         },
         c: {
           label: 'c = known',
-          description: 'Hypotenuse c is the known longest side opposite the right angle.',
+          description: 'Hypotenuse c is the known longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
           status: 'known'
         }
       },
@@ -330,14 +330,14 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       h2: 'Missing Leg b Formula',
       paragraphs: [
         'The formula to find leg b is derived from the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem</a> (a\u00b2 + b\u00b2 = c\u00b2). Rearranging for b gives the formula below.',
-        'Where c is the hypotenuse (longest side of the right triangle), a is the known leg, and b is the missing leg you\u2019re solving for. Notice the subtraction: you subtract the square of the known leg from the square of the hypotenuse, then take the square root.'
+        'Where c is the hypotenuse (longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> of the right triangle), a is the known leg, and b is the missing leg you\u2019re solving for. Notice the subtraction: you subtract the square of the known leg from the square of the hypotenuse, then take the square root.'
       ],
       formulas: ['b = \\sqrt{c^2 - a^2}']
     },
     howTo: {
       h2: 'How to Find Leg b From c and a',
       steps: [
-        'Confirm that c is the hypotenuse and a is a leg. The hypotenuse is always the longest side.',
+        'Confirm that c is the hypotenuse and a is a leg. The hypotenuse is always the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>.',
         'Enter the hypotenuse c into the first input field.',
         'Enter the known leg a into the second input field.',
         'Click Calculate to find the missing leg.',
@@ -359,12 +359,12 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         h2: 'Important Check Before Calculating',
         paragraphs: [
-          'Before you use this formula, make sure c is greater than a. The hypotenuse is always the longest side of a right triangle. If c equals a, you would get b = 0, which means no triangle exists.',
+          'Before you use this formula, make sure c is greater than a. The hypotenuse is always the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> of a right triangle. If c equals a, you would get b = 0, which means no triangle exists.',
           'If c is less than a, the expression under the square root becomes negative. That means the two input values cannot describe a real right triangle with c as the hypotenuse.'
         ],
         listTitle: 'Use these checks first:',
         listItems: [
-          'c is opposite the 90° angle.',
+          'c is opposite the 90° <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
           'c is greater than a.',
           'Both values are positive.',
           'c and a use the same unit.'
@@ -373,21 +373,21 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         h2: 'Where This Calculator Is Useful',
         paragraphs: [
-          'This calculator is useful when a diagonal or sloped measurement is known, one perpendicular side is known, and the other perpendicular side is missing. It is the focused tool for the c-and-a case, so every explanation on the page points toward finding b.',
-          'It can also help verify measurements. If a measured value for b does not match the calculator result, the triangle may not be right, the hypotenuse may be mislabeled, or one measurement may use a different unit.'
+          'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> is useful when a diagonal or sloped measurement is known, one perpendicular <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is known, and the other perpendicular side is missing. It is the focused tool for the c-and-a case, so every explanation on the page points toward finding b.',
+          'It can also help verify <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a>. If a measured value for b does not match the calculator result, the triangle may not be right, the hypotenuse may be mislabeled, or one measurement may use a different unit.'
         ],
         listTitle: 'Common examples include:',
         listItems: [
           'Finding wall height when ladder length c and ground distance a are known.',
           'Finding the vertical rise of a slope when the slope length and horizontal run are known.',
           'Checking a right triangle homework problem that gives c and a.',
-          'Confirming layout measurements for framing, landscaping, ramps, or floor plans.'
+          'Confirming layout <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a> for framing, landscaping, ramps, or floor plans.'
         ]
       },
       {
         h2: 'How to Read the Answer',
         paragraphs: [
-          'The output labeled Missing leg b is the length of the other leg that forms the right angle with a. It is not the hypotenuse and should be shorter than c.',
+          'The output labeled Missing leg b is the length of the other leg that forms the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> with a. It is not the hypotenuse and should be shorter than c.',
           'If the calculated b is extremely small, your known leg a is very close to the hypotenuse c. That can be valid, but it is worth checking the diagram and the units before using the value.'
         ],
         listTitle: 'A valid result should satisfy:',
@@ -401,7 +401,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         h2: 'Common Mistakes',
         paragraphs: [
-          'The most common error is treating c as a leg. In this calculator, c must be the hypotenuse, which is the longest side and the side opposite the right angle.',
+          'The most common error is treating c as a leg. In this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>, c must be the hypotenuse, which is the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> and the side opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
           'Another frequent mistake is adding the squares instead of subtracting. Addition finds a hypotenuse; subtraction finds a missing leg from the hypotenuse.'
         ],
         listTitle: 'Avoid these mistakes:',
@@ -426,27 +426,27 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         question: 'What does c mean in this calculator?',
         answer:
-          'c is the hypotenuse of the right triangle \u2014 the longest side, located opposite the 90\u00b0 angle. It is not a leg. You enter c as one of the two known values in this calculator.'
+          'c is the hypotenuse of the right triangle \u2014 the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, located opposite the 90\u00b0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. It is not a leg. You enter c as one of the two known values in this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>.'
       },
       {
         question: 'What does a mean in this calculator?',
         answer:
-          'a is one of the two legs of the right triangle. It\u2019s one of the sides that forms the right angle. In this calculator, a is the leg you already know.'
+          'a is one of the two legs of the right triangle. It\u2019s one of the sides that forms the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. In this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>, a is the leg you already know.'
       },
       {
         question: 'What does this calculator find?',
         answer:
-          'This calculator finds the missing leg b. Given hypotenuse c and leg a, it computes b = \u221a(c\u00b2 \u2212 a\u00b2) and shows you the step-by-step solution.'
+          'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the missing leg b. Given hypotenuse c and leg a, it computes b = \u221a(c\u00b2 \u2212 a\u00b2) and shows you the step-by-step solution.'
       },
       {
         question: 'Can c be smaller than a?',
         answer:
-          'No. In a right triangle, the hypotenuse is always the longest side. If c is smaller than a, the values don\u2019t form a valid right triangle. Check which measurement is the hypotenuse before calculating.'
+          'No. In a right triangle, the hypotenuse is always the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. If c is smaller than a, the values don\u2019t form a valid right triangle. Check which measurement is the hypotenuse before calculating.'
       },
       {
         question: 'How do I find b from c and a?',
         answer:
-          'Square the hypotenuse (c\u00b2), square the known leg (a\u00b2), subtract a\u00b2 from c\u00b2, and take the square root. The formula is b = \u221a(c\u00b2 \u2212 a\u00b2). Or enter your values into this calculator for an instant answer.'
+          'Square the hypotenuse (c\u00b2), square the known leg (a\u00b2), subtract a\u00b2 from c\u00b2, and take the square root. The formula is b = \u221a(c\u00b2 \u2212 a\u00b2). Or enter your values into this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> for an instant answer.'
       }
     ]
   },
@@ -459,13 +459,13 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       'Find missing leg a when hypotenuse c and leg b are known. Includes diagram, formula a = sqrt(c^2 - b^2), input checks, and examples.',
     formulaSlug: 'other-leg-from-hypotenuse-and-leg',
     toolPurpose:
-      'Keep in mind: c is the hypotenuse, not a leg. It\u2019s the longest side of the triangle and sits opposite the 90\u00b0 angle. If you have both legs and need the hypotenuse, use the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean Theorem</a> Calculator instead.',
+      'Keep in mind: c is the hypotenuse, not a leg. It\u2019s the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> of the triangle and sits opposite the 90\u00b0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. If you have both legs and need the hypotenuse, use the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean Theorem</a> Calculator instead.',
     intro:
-      'This calculator finds the missing leg a of a right triangle when you know the hypotenuse c and the other leg b. Enter your values above to get the result with a full step-by-step breakdown.',
+      'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the missing leg a of a right triangle when you know the hypotenuse c and the other leg b. Enter your values above to get the result with a full step-by-step breakdown.',
     quickSummary: {
       h2: 'What This Tool Solves',
       intro:
-        'Use this page when you know the hypotenuse and leg b, but need leg a. It keeps the known side b separate from the unknown side a so the formula and result match the labels on your triangle.',
+        'Use this page when you know the hypotenuse and leg b, but need leg a. It keeps the known <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b separate from the unknown side a so the formula and result match the labels on your triangle.',
       cards: [
         { label: 'Known values', value: 'Hypotenuse c and leg b' },
         { label: 'Finds', value: 'Missing leg a' },
@@ -476,7 +476,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     diagram: {
       h2: 'Right Triangle Diagram: Finding Leg a',
       intro:
-        'The diagram shows c as the known hypotenuse and b as the known leg. The base leg a is highlighted as the missing value returned by the calculator.',
+        'The diagram shows c as the known hypotenuse and b as the known leg. The base leg a is highlighted as the missing value returned by the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>.',
       caption:
         'Right triangle diagram with known hypotenuse c, known leg b, and unknown leg a.',
       sides: {
@@ -487,17 +487,17 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
         },
         b: {
           label: 'b = known',
-          description: 'Leg b is the known leg that forms the right angle with a.',
+          description: 'Leg b is the known leg that forms the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> with a.',
           status: 'known'
         },
         c: {
           label: 'c = known',
-          description: 'Hypotenuse c is the known longest side of the right triangle.',
+          description: 'Hypotenuse c is the known longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> of the right triangle.',
           status: 'known'
         }
       },
       notes: [
-        'The hypotenuse c must be the longest side in the input pair.',
+        'The hypotenuse c must be the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> in the input pair.',
         'If c is less than or equal to b, re-check which value is the hypotenuse.',
         'The calculated a has the same unit as the values you entered.'
       ]
@@ -513,14 +513,14 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       h2: 'Missing Leg a Formula',
       paragraphs: [
         'Starting from the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem</a> (a\u00b2 + b\u00b2 = c\u00b2), solve for a to get the formula below.',
-        'Where c is the hypotenuse (the longest side, opposite the right angle), b is the known leg, and a is the missing leg you want to find. The key operation is subtraction: square the hypotenuse, subtract the square of the known leg, then take the square root of what\u2019s left.'
+        'Where c is the hypotenuse (the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>), b is the known leg, and a is the missing leg you want to find. The key operation is subtraction: square the hypotenuse, subtract the square of the known leg, then take the square root of what\u2019s left.'
       ],
       formulas: ['a = \\sqrt{c^2 - b^2}']
     },
     howTo: {
       h2: 'How to Find Leg a From c and b',
       steps: [
-        'Make sure you\u2019ve correctly identified the hypotenuse (c) and the known leg (b). The hypotenuse is always across from the 90\u00b0 angle.',
+        'Make sure you\u2019ve correctly identified the hypotenuse (c) and the known leg (b). The hypotenuse is always across from the 90\u00b0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
         'Enter the hypotenuse c into the first input field.',
         'Enter the known leg b into the second input field.',
         'Click Calculate to find leg a.',
@@ -542,12 +542,12 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         h2: 'Important Check Before Calculating',
         paragraphs: [
-          'The hypotenuse c must be greater than b for the calculation to work. In every right triangle, the hypotenuse is the longest side. If c equals b, the formula gives a = 0, which means no triangle can be formed.',
-          'If c is less than b, the expression under the square root becomes negative and there is no real side length for a. In that case, re-check which side is opposite the 90° angle.'
+          'The hypotenuse c must be greater than b for the calculation to work. In every right triangle, the hypotenuse is the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. If c equals b, the formula gives a = 0, which means no triangle can be formed.',
+          'If c is less than b, the expression under the square root becomes negative and there is no real <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> length for a. In that case, re-check which side is opposite the 90° <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.'
         ],
         listTitle: 'Use these checks first:',
         listItems: [
-          'c is the side opposite the right angle.',
+          'c is the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
           'c is greater than b.',
           'Both inputs are positive numbers.',
           'c and b use the same measurement unit.'
@@ -556,21 +556,21 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         h2: 'Where This Calculator Is Useful',
         paragraphs: [
-          'This calculator is the right tool when you know the hypotenuse and leg b and need to find leg a. It is especially helpful when your diagram labels the known leg as b and the unknown base or height as a.',
-          'The page also works as a measurement check. If the calculated side a is very different from a measured side, the triangle may not include a true 90° angle or one of the known values may have been copied incorrectly.'
+          'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> is the right tool when you know the hypotenuse and leg b and need to find leg a. It is especially helpful when your diagram labels the known leg as b and the unknown base or height as a.',
+          'The page also works as a measurement check. If the calculated <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a is very different from a measured side, the triangle may not include a true 90° <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> or one of the known values may have been copied incorrectly.'
         ],
         listTitle: 'Common examples include:',
         listItems: [
           'Finding a base distance when the slope length c and height b are known.',
           'Finding a vertical height when the hypotenuse and horizontal distance are known.',
           'Solving geometry problems that give c and b and ask for a.',
-          'Checking construction, mapping, or floor-plan measurements that form a right triangle.'
+          'Checking construction, mapping, or floor-plan <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a> that form a right triangle.'
         ]
       },
       {
         h2: 'How to Read the Answer',
         paragraphs: [
-          'The output labeled Missing leg a is the other side that forms the right angle with b. It should be shorter than the hypotenuse c and greater than zero.',
+          'The output labeled Missing leg a is the other <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> that forms the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> with b. It should be shorter than the hypotenuse c and greater than zero.',
           'If the result is close to c, the known leg b is relatively small. If the result is close to zero, b is almost as long as c. Both can happen, but the input labels should be checked before using the answer.'
         ],
         listTitle: 'A valid result should satisfy:',
@@ -584,7 +584,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         h2: 'Common Mistakes',
         paragraphs: [
-          'The biggest risk is swapping the hypotenuse with a leg. This calculator assumes c is already the longest side, so a mislabeled c value will make the result incorrect.',
+          'The biggest risk is swapping the hypotenuse with a leg. This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> assumes c is already the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, so a mislabeled c value will make the result incorrect.',
           'A second common issue is using the hypotenuse formula by mistake. To find a missing leg, you subtract the known leg square from the hypotenuse square, then take the square root.'
         ],
         listTitle: 'Avoid these mistakes:',
@@ -593,7 +593,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
           'Using c² + b² instead of c² - b².',
           'Entering b greater than or equal to c.',
           'Forgetting the square root after subtracting.',
-          'Combining measurements that use different units.'
+          'Combining <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a> that use different units.'
         ]
       }
     ],
@@ -609,27 +609,27 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         question: 'What does c mean in this calculator?',
         answer:
-          'c is the hypotenuse \u2014 the longest side of the right triangle, opposite the 90\u00b0 angle. In this calculator, you enter c as one of your two known values.'
+          'c is the hypotenuse \u2014 the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> of the right triangle, opposite the 90\u00b0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. In this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>, you enter c as one of your two known values.'
       },
       {
         question: 'What does b mean in this calculator?',
         answer:
-          'b is one of the two legs of the right triangle. It\u2019s a side that forms the right angle. Here, b is the leg you already know, and the calculator uses it along with c to find the missing leg a.'
+          'b is one of the two legs of the right triangle. It\u2019s a <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> that forms the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. Here, b is the leg you already know, and the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> uses it along with c to find the missing leg a.'
       },
       {
         question: 'What does this calculator find?',
         answer:
-          'It finds the missing leg a. You provide the hypotenuse (c) and one leg (b), and the calculator applies the formula a = \u221a(c\u00b2 \u2212 b\u00b2) to give you the unknown leg with a step-by-step solution.'
+          'It finds the missing leg a. You provide the hypotenuse (c) and one leg (b), and the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> applies the formula a = \u221a(c\u00b2 \u2212 b\u00b2) to give you the unknown leg with a step-by-step solution.'
       },
       {
         question: 'Can c be smaller than b?',
         answer:
-          'No. The hypotenuse is always the longest side in a right triangle. If your value for c is smaller than b, the inputs don\u2019t represent a valid right triangle. Re-check which measurement corresponds to the hypotenuse.'
+          'No. The hypotenuse is always the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> in a right triangle. If your value for c is smaller than b, the inputs don\u2019t represent a valid right triangle. Re-check which measurement corresponds to the hypotenuse.'
       },
       {
         question: 'How do I find a from c and b?',
         answer:
-          'Square the hypotenuse (c\u00b2), square the known leg (b\u00b2), subtract b\u00b2 from c\u00b2, and take the square root of the result. The formula is a = \u221a(c\u00b2 \u2212 b\u00b2). You can also just enter your values into this calculator to get the answer automatically.'
+          'Square the hypotenuse (c\u00b2), square the known leg (b\u00b2), subtract b\u00b2 from c\u00b2, and take the square root of the result. The formula is a = \u221a(c\u00b2 \u2212 b\u00b2). You can also just enter your values into this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> to get the answer automatically.'
       }
     ]
   },
@@ -641,12 +641,12 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     metaDescription: 'Use this right triangle side from sine calculator to find opposite side a from angle A and hypotenuse c with formula, steps, and examples.',
     formulaSlug: 'a-c-sin',
     toolPurpose:
-      'This calculator is built for one job: finding opposite side a when you already know an acute angle and the hypotenuse. Enter your two values and the result appears instantly with step-by-step work.',
-    intro: 'Use this calculator to find opposite side a from angle A and hypotenuse c.',
+      'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> is built for one job: finding opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a when you already know an acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and the hypotenuse. Enter your two values and the result appears instantly with step-by-step work.',
+    intro: 'Use this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> to find opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A and hypotenuse c.',
     quickSummary: {
       h2: 'What This Tool Solves',
       intro:
-        'This page focuses on finding the opposite side from an angle and hypotenuse pair. The <a href="/sine-ratio-calculator/" class="text-primary hover:underline">sine function</a> connects these three values directly, so no extra steps or rearranging are needed.',
+        'This page focuses on finding the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> from an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and hypotenuse pair. The <a href="/sine-ratio-calculator/" class="text-primary hover:underline">sine function</a> connects these three values directly, so no extra steps or rearranging are needed.',
       cards: [
         { label: 'Known values', value: 'Angle A and hypotenuse c' },
         { label: 'Finds', value: 'Opposite side a' },
@@ -657,29 +657,29 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     diagram: {
       h2: 'Right Triangle Diagram: Side a from Sine',
       intro:
-        'In this diagram, angle A sits at the bottom-right corner. The side directly across from angle A is the opposite side a, which is the value this calculator finds. Side c, the hypotenuse, is the longest side and runs from angle A up to the top vertex.',
+        'In this diagram, <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A sits at the bottom-right corner. The <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> directly across from angle A is the opposite side a, which is the value this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds. Side c, the hypotenuse, is the longest side and runs from angle A up to the top vertex.',
       caption:
-        'Right triangle showing angle A, known hypotenuse c, and unknown opposite side a.',
+        'Right triangle showing <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A, known hypotenuse c, and unknown opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a.',
       sides: {
         a: {
           label: 'a = find',
-          description: 'Opposite side a is directly across from angle A. This is the unknown value.',
+          description: 'Opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a is directly across from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. This is the unknown value.',
           status: 'unknown'
         },
         b: {
           label: 'b',
-          description: 'Adjacent side b sits along the base next to angle A. It is not used in this calculation.',
+          description: 'Adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b sits along the base next to <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. It is not used in this calculation.',
           status: 'unknown'
         },
         c: {
           label: 'c = known',
-          description: 'Hypotenuse c is the longest side, opposite the 90-degree angle. You enter this value.',
+          description: 'Hypotenuse c is the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, opposite the 90-degree <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. You enter this value.',
           status: 'known'
         }
       },
       notes: [
-        'For angle A, side a is opposite, side b is adjacent, and side c is the hypotenuse.',
-        'The hypotenuse is always the longest side in a right triangle.',
+        'For <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A, <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a is opposite, side b is adjacent, and side c is the hypotenuse.',
+        'The hypotenuse is always the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> in a right triangle.',
         'The result a will always be shorter than c.'
       ]
     },
@@ -693,24 +693,24 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     formulaSection: {
       h2: 'Side From Sine Formula',
       paragraphs: [
-        'The sine of an angle in a right triangle equals the length of the opposite side divided by the hypotenuse. Written as a ratio: sin(A) = a / c. Rearranging this gives the formula used by the calculator.',
-        'In this formula, c is the hypotenuse (the longest side, opposite the right angle), A is the acute angle you know, and a is the opposite side you want to find. The <a href="/sine-ratio-calculator/" class="text-primary hover:underline">sine function</a> handles the conversion from angle to side ratio automatically.'
+        'The sine of an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> in a right triangle equals the length of the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> divided by the hypotenuse. Written as a ratio: sin(A) = a / c. Rearranging this gives the formula used by the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>.',
+        'In this formula, c is the hypotenuse (the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>), A is the acute angle you know, and a is the opposite side you want to find. The <a href="/sine-ratio-calculator/" class="text-primary hover:underline">sine function</a> handles the conversion from angle to side ratio automatically.'
       ],
       formulas: ['a = c \\times \\sin(A)']
     },
     howTo: {
       h2: 'How to Use This Calculator',
       steps: [
-        'Identify the hypotenuse c in your triangle. It is always the side opposite the 90-degree angle and the longest side.',
-        'Identify your known acute angle A. Make sure it is measured in degrees.',
+        'Identify the hypotenuse c in your triangle. It is always the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> opposite the 90-degree <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and the longest side.',
+        'Identify your known acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. Make sure it is measured in degrees.',
         'Enter the hypotenuse c into the first input field.',
-        'Enter angle A into the second input field.',
-        'Click Calculate to find the opposite side a with step-by-step work.'
+        'Enter <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A into the second input field.',
+        'Click Calculate to find the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a with step-by-step work.'
       ]
     },
     example: {
       h2: 'Step-by-Step Example: Find Opposite Side a',
-      intro: 'Given: A = 36.87 degrees, c = 5. Find opposite side a using the sine formula.',
+      intro: 'Given: A = 36.87 degrees, c = 5. Find opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a using the sine formula.',
       lines: [
         'a = c \\times \\sin(A)',
         'a = 5 \\times \\sin(36.87)',
@@ -722,36 +722,36 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         h2: 'What the Result Means',
         paragraphs: [
-          'The output labeled Opposite side a is the length of the side that sits directly across from angle A. In practical terms, this is often the vertical height or rise in a slope problem.',
-          'The result will always be a positive number smaller than the hypotenuse. If a equals c, the angle would be 90 degrees, which means the triangle has collapsed into a straight line. If a is very small, the angle is close to zero.'
+          'The output labeled Opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a is the length of the side that sits directly across from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. In practical terms, this is often the vertical height or rise in a slope problem.',
+          'The result will always be a positive number smaller than the hypotenuse. If a equals c, the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> would be 90 degrees, which means the triangle has collapsed into a straight line. If a is very small, the angle is close to zero.'
         ]
       },
       {
         h2: 'When to Use This Calculator',
         paragraphs: [
-          'Use this tool whenever you have the hypotenuse and an angle and need the opposite side. This comes up more often than you might expect.',
+          'Use this tool whenever you have the hypotenuse and an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and need the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. This comes up more often than you might expect.',
           'It is the right choice when the sloped distance is known (like a rope, ramp, or ladder length) and you need the vertical component.'
         ],
         listTitle: 'Common situations:',
         listItems: [
-          'Finding the height a ladder reaches on a wall when you know the ladder length and lean angle.',
-          'Calculating the vertical rise of a ramp from the ramp length and incline angle.',
-          'Determining the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> of a kite or drone from the string length and elevation angle.',
+          'Finding the height a ladder reaches on a wall when you know the ladder length and lean <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
+          'Calculating the vertical rise of a ramp from the ramp length and incline <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
+          'Determining the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> of a kite or drone from the string length and elevation <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
           'Solving physics problems where a force vector is broken into a vertical component.'
         ]
       },
       {
         h2: 'Common Mistakes',
         paragraphs: [
-          'Most errors happen when the wrong side is identified as the hypotenuse or when the angle is entered in the wrong unit. A few minutes of checking your triangle setup can save a wrong answer.'
+          'Most errors happen when the wrong <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is identified as the hypotenuse or when the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is entered in the wrong unit. A few minutes of checking your triangle setup can save a wrong answer.'
         ],
         listTitle: 'Watch out for:',
         listItems: [
-          'Using the adjacent side instead of the hypotenuse as your known side.',
-          'Using cosine instead of sine. Cosine finds the adjacent side, not the opposite.',
-          'Entering angle A in radians when the calculator expects degrees.',
-          'Forgetting that c is always the hypotenuse, not side a or side b.',
-          'Expecting a result larger than c. The opposite side is always shorter than the hypotenuse.'
+          'Using the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> instead of the hypotenuse as your known side.',
+          'Using cosine instead of sine. Cosine finds the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, not the opposite.',
+          'Entering <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A in radians when the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> expects degrees.',
+          'Forgetting that c is always the hypotenuse, not <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a or side b.',
+          'Expecting a result larger than c. The opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is always shorter than the hypotenuse.'
         ]
       }
     ],
@@ -766,27 +766,27 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         question: 'What does a = c \u00d7 sin(A) calculate?',
         answer:
-          'It calculates the length of the opposite side a in a right triangle. You need the hypotenuse c and an acute angle A to use this formula.'
+          'It calculates the length of the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a in a right triangle. You need the hypotenuse c and an acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A to use this formula.'
       },
       {
         question: 'Why do I use sine instead of cosine here?',
         answer:
-          'Sine relates the opposite side to the hypotenuse. Cosine relates the adjacent side to the hypotenuse. Since this calculator finds the opposite side, sine is the correct function.'
+          'Sine relates the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> to the hypotenuse. Cosine relates the adjacent side to the hypotenuse. Since this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the opposite side, sine is the correct function.'
       },
       {
         question: 'Can the result be larger than the hypotenuse?',
         answer:
-          'No. The opposite side is always shorter than the hypotenuse in a right triangle. If your result is larger, one of the inputs is wrong.'
+          'No. The opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is always shorter than the hypotenuse in a right triangle. If your result is larger, one of the inputs is wrong.'
       },
       {
         question: 'What if my angle is exactly 90 degrees?',
         answer:
-          'A 90-degree input is not valid here. In a right triangle, the two acute angles must each be between 0 and 90 degrees. The 90-degree angle is already fixed at the right angle vertex.'
+          'A 90-degree input is not valid here. In a right triangle, the two acute angles must each be between 0 and 90 degrees. The 90-degree <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is already fixed at the right angle vertex.'
       },
       {
         question: 'Does the angle need to be in degrees?',
         answer:
-          'Yes. This calculator expects angle A in degrees. If your angle is in radians, convert it to degrees first by multiplying by 180 and dividing by pi.'
+          'Yes. This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> expects <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A in degrees. If your angle is in radians, convert it to degrees first by multiplying by 180 and dividing by pi.'
       }
     ]
   },
@@ -798,12 +798,12 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     metaDescription: 'Use this right triangle side from cosine calculator to find adjacent side b from angle A and hypotenuse c with formula, steps, and examples.',
     formulaSlug: 'b-c-cos',
     toolPurpose:
-      'This calculator solves for the adjacent side b when you already have angle A and the hypotenuse c. It handles the cosine computation and shows the full solution path so you can follow or verify each step.',
-    intro: 'Use this calculator to find adjacent side b from angle A and hypotenuse c.',
+      'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> solves for the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b when you already have <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A and the hypotenuse c. It handles the cosine computation and shows the full solution path so you can follow or verify each step.',
+    intro: 'Use this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> to find adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A and hypotenuse c.',
     quickSummary: {
       h2: 'What This Tool Solves',
       intro:
-        'This calculator takes angle A and hypotenuse c as inputs and returns the adjacent side b. Cosine is the ratio that links these three values, so the formula needs no rearranging.',
+        'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> takes <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A and hypotenuse c as inputs and returns the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b. Cosine is the ratio that links these three values, so the formula needs no rearranging.',
       cards: [
         { label: 'Known values', value: 'Angle A and hypotenuse c' },
         { label: 'Finds', value: 'Adjacent side b' },
@@ -814,29 +814,29 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     diagram: {
       h2: 'Right Triangle Diagram: Side b from Cosine',
       intro:
-        'In this layout, angle A is at the bottom-right. The adjacent side b runs along the base, sitting right next to angle A. The hypotenuse c stretches from angle A up to the top vertex. The calculator uses these two known values to find b.',
+        'In this layout, <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A is at the bottom-right. The adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b runs along the base, sitting right next to angle A. The hypotenuse c stretches from angle A up to the top vertex. The <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> uses these two known values to find b.',
       caption:
-        'Right triangle showing angle A, known hypotenuse c, and unknown adjacent side b.',
+        'Right triangle showing <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A, known hypotenuse c, and unknown adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b.',
       sides: {
         a: {
           label: 'a',
-          description: 'Opposite side a is directly across from angle A. It is not needed for this calculation.',
+          description: 'Opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a is directly across from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. It is not needed for this calculation.',
           status: 'unknown'
         },
         b: {
           label: 'b = find',
-          description: 'Adjacent side b runs along the base next to angle A. This is the value the calculator returns.',
+          description: 'Adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b runs along the base next to <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. This is the value the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> returns.',
           status: 'unknown'
         },
         c: {
           label: 'c = known',
-          description: 'Hypotenuse c is the longest side, opposite the right angle. You provide this as input.',
+          description: 'Hypotenuse c is the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. You provide this as input.',
           status: 'known'
         }
       },
       notes: [
-        'For angle A, side a is opposite, side b is adjacent, and side c is the hypotenuse.',
-        'The adjacent side is always the side that touches angle A and the right angle.',
+        'For <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A, <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a is opposite, side b is adjacent, and side c is the hypotenuse.',
+        'The adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is always the side that touches <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A and the right angle.',
         'The result b will always be shorter than c.'
       ]
     },
@@ -850,24 +850,24 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     formulaSection: {
       h2: 'Side From Cosine Formula',
       paragraphs: [
-        'The cosine of an angle in a right triangle equals the adjacent side divided by the hypotenuse. Written as a ratio: cos(A) = b / c. Multiplying both sides by c gives the direct formula below.',
-        'Here, c is the hypotenuse (the longest side, opposite the 90-degree angle), A is the acute angle, and b is the adjacent side you want. The <a href="/cosine-ratio-calculator/" class="text-primary hover:underline">cosine function</a> converts the angle into the exact fraction of the hypotenuse that equals the adjacent side.'
+        'The cosine of an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> in a right triangle equals the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> divided by the hypotenuse. Written as a ratio: cos(A) = b / c. Multiplying both sides by c gives the direct formula below.',
+        'Here, c is the hypotenuse (the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, opposite the 90-degree <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>), A is the acute angle, and b is the adjacent side you want. The <a href="/cosine-ratio-calculator/" class="text-primary hover:underline">cosine function</a> converts the angle into the exact fraction of the hypotenuse that equals the adjacent side.'
       ],
       formulas: ['b = c \\times \\cos(A)']
     },
     howTo: {
       h2: 'How to Use This Calculator',
       steps: [
-        'Find the hypotenuse c in your right triangle. It is the side across from the right angle and always the longest side.',
-        'Identify your known acute angle A. Confirm the value is in degrees.',
+        'Find the hypotenuse c in your right triangle. It is the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> across from the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and always the longest side.',
+        'Identify your known acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. Confirm the value is in degrees.',
         'Type the hypotenuse c into the first field.',
-        'Type angle A into the second field.',
-        'Press Calculate to see the adjacent side b and the step-by-step solution.'
+        'Type <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A into the second field.',
+        'Press Calculate to see the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b and the step-by-step solution.'
       ]
     },
     example: {
       h2: 'Step-by-Step Example: Find Adjacent Side b',
-      intro: 'Given: A = 36.87 degrees, c = 5. Find adjacent side b using the cosine formula.',
+      intro: 'Given: A = 36.87 degrees, c = 5. Find adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b using the cosine formula.',
       lines: [
         'b = c \\times \\cos(A)',
         'b = 5 \\times \\cos(36.87)',
@@ -879,36 +879,36 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         h2: 'What the Result Means',
         paragraphs: [
-          'The output labeled Adjacent side b is the side that sits next to angle A and also touches the right angle. In real-world problems, this is often the horizontal distance, ground run, or base measurement.',
-          'Like the opposite side, the adjacent side is always shorter than the hypotenuse. If the angle is small, b will be close to c. If the angle is large (near 90 degrees), b shrinks toward zero.'
+          'The output labeled Adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b is the side that sits next to <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A and also touches the right angle. In real-world problems, this is often the horizontal distance, ground run, or base measurement.',
+          'Like the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, the adjacent side is always shorter than the hypotenuse. If the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is small, b will be close to c. If the angle is large (near 90 degrees), b shrinks toward zero.'
         ]
       },
       {
         h2: 'When to Use This Calculator',
         paragraphs: [
-          'Choose this tool when you have the hypotenuse and an angle and need the horizontal or base component. This pattern appears in slope calculations, shadow problems, and structural layout tasks.',
-          'It pairs naturally with the sine calculator. Together, they let you split the hypotenuse into its opposite and adjacent components from the same angle.'
+          'Choose this tool when you have the hypotenuse and an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and need the horizontal or base component. This pattern appears in slope calculations, shadow problems, and structural layout tasks.',
+          'It pairs naturally with the sine <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>. Together, they let you split the hypotenuse into its opposite and adjacent components from the same <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.'
         ],
         listTitle: 'Common situations:',
         listItems: [
-          'Finding the horizontal distance a ladder covers on the ground from ladder length and angle.',
-          'Calculating the ground run of a ramp when the ramp length and angle are known.',
-          'Determining the shadow length cast by a pole when the sun angle and pole-to-tip distance are given.',
+          'Finding the horizontal distance a ladder covers on the ground from ladder length and <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
+          'Calculating the ground run of a ramp when the ramp length and <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> are known.',
+          'Determining the shadow length cast by a pole when the sun <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and pole-to-tip distance are given.',
           'Breaking a force vector into its horizontal component in physics problems.'
         ]
       },
       {
         h2: 'Common Mistakes',
         paragraphs: [
-          'The most frequent error is mixing up which trig function to use. Sine and cosine both use the hypotenuse, but they return different sides. Cosine gives the adjacent side, sine gives the opposite.'
+          'The most frequent error is mixing up which trig function to use. Sine and cosine both use the hypotenuse, but they return different sides. Cosine gives the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, sine gives the opposite.'
         ],
         listTitle: 'Watch out for:',
         listItems: [
-          'Using sine instead of cosine. Sine returns the opposite side, not the adjacent.',
-          'Entering the opposite side instead of the hypotenuse.',
-          'Confusing side b with side a. Side b is adjacent to angle A, side a is opposite.',
-          'Forgetting that c is the hypotenuse and never side a or side b.',
-          'Using an angle in radians when the calculator expects degrees.'
+          'Using sine instead of cosine. Sine returns the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, not the adjacent.',
+          'Entering the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> instead of the hypotenuse.',
+          'Confusing <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b with side a. Side b is adjacent to <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A, side a is opposite.',
+          'Forgetting that c is the hypotenuse and never <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a or side b.',
+          'Using an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> in radians when the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> expects degrees.'
         ]
       }
     ],
@@ -923,17 +923,17 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         question: 'What does b = c \u00d7 cos(A) calculate?',
         answer:
-          'It calculates the adjacent side b of a right triangle when you know the hypotenuse c and an acute angle A. The <a href="/cosine-ratio-calculator/" class="text-primary hover:underline">cosine function</a> converts the angle into the correct ratio.'
+          'It calculates the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b of a right triangle when you know the hypotenuse c and an acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. The <a href="/cosine-ratio-calculator/" class="text-primary hover:underline">cosine function</a> converts the angle into the correct ratio.'
       },
       {
         question: 'How is this different from the sine calculator?',
         answer:
-          'The sine calculator finds the opposite side a. This cosine calculator finds the adjacent side b. Both use the hypotenuse, but they return different sides of the triangle.'
+          'The sine <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a. This cosine calculator finds the adjacent side b. Both use the hypotenuse, but they return different sides of the triangle.'
       },
       {
         question: 'What does adjacent side mean?',
         answer:
-          'The adjacent side is the side that touches the angle you are using and also touches the right angle. For angle A, the adjacent side is b.'
+          'The adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is the side that touches the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> you are using and also touches the right angle. For angle A, the adjacent side is b.'
       },
       {
         question: 'Can b be larger than the hypotenuse?',
@@ -943,7 +943,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         question: 'What happens if I enter a very small angle?',
         answer:
-          'As angle A gets closer to 0 degrees, cos(A) approaches 1, so b gets closer to c. The adjacent side is nearly the full length of the hypotenuse at very small angles.'
+          'As <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A gets closer to 0 degrees, cos(A) approaches 1, so b gets closer to c. The adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is nearly the full length of the hypotenuse at very small angles.'
       }
     ]
   },
@@ -955,8 +955,8 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     metaDescription: 'Use this right triangle side from tangent calculator to find opposite side a from angle A and adjacent side b with formula, steps, and examples.',
     formulaSlug: 'a-b-tan',
     toolPurpose:
-      'This tool finds the opposite side a when you know the adjacent side b and an acute angle A. It uses the <a href="/tangent-ratio-calculator/" class="text-primary hover:underline">tangent ratio</a>, which links the opposite and adjacent sides directly without needing the hypotenuse.',
-    intro: 'Use this calculator to find opposite side a from angle A and adjacent side b.',
+      'This tool finds the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a when you know the adjacent side b and an acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. It uses the <a href="/tangent-ratio-calculator/" class="text-primary hover:underline">tangent ratio</a>, which links the opposite and adjacent sides directly without needing the hypotenuse.',
+    intro: 'Use this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> to find opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A and adjacent side b.',
     quickSummary: {
       h2: 'What This Tool Solves',
       intro:
@@ -971,30 +971,30 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     diagram: {
       h2: 'Right Triangle Diagram: Side a from Tangent',
       intro:
-        'Angle A sits at the bottom-right. The adjacent side b is the horizontal base, right next to angle A. The opposite side a is directly across from angle A. Tangent connects these two sides directly.',
+        '<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">Angle</a> A sits at the bottom-right. The adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b is the horizontal base, right next to angle A. The opposite side a is directly across from angle A. Tangent connects these two sides directly.',
       caption:
-        'Right triangle showing angle A, known adjacent side b, and unknown opposite side a.',
+        'Right triangle showing <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A, known adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b, and unknown opposite side a.',
       sides: {
         a: {
           label: 'a = find',
-          description: 'Opposite side a is directly across from angle A. This is the value the calculator returns.',
+          description: 'Opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a is directly across from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. This is the value the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> returns.',
           status: 'unknown'
         },
         b: {
           label: 'b = known',
-          description: 'Adjacent side b runs along the base next to angle A. You enter this value.',
+          description: 'Adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b runs along the base next to <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. You enter this value.',
           status: 'known'
         },
         c: {
           label: 'c',
-          description: 'Hypotenuse c is the longest side. It is not required for this calculation.',
+          description: 'Hypotenuse c is the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. It is not required for this calculation.',
           status: 'unknown'
         }
       },
       notes: [
-        'For angle A, side a is opposite, side b is adjacent, and side c is the hypotenuse.',
+        'For <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A, <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a is opposite, side b is adjacent, and side c is the hypotenuse.',
         'Tangent uses only sides a and b; the hypotenuse is not needed.',
-        'As angle A grows larger, the opposite side a increases relative to b.'
+        'As <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A grows larger, the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a increases relative to b.'
       ]
     },
     calculator: {
@@ -1007,24 +1007,24 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     formulaSection: {
       h2: 'Side From Tangent Formula',
       paragraphs: [
-        'Tangent of an angle equals the opposite side divided by the adjacent side: tan(A) = a / b. Multiplying both sides by b isolates the opposite side a.',
-        'In this formula, b is the adjacent side (the side next to angle A that also touches the right angle), A is the known acute angle in degrees, and a is the opposite side you want to find. No hypotenuse is involved.'
+        'Tangent of an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> equals the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> divided by the adjacent side: tan(A) = a / b. Multiplying both sides by b isolates the opposite side a.',
+        'In this formula, b is the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> (the side next to <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A that also touches the right angle), A is the known acute angle in degrees, and a is the opposite side you want to find. No hypotenuse is involved.'
       ],
       formulas: ['a = b \\times \\tan(A)']
     },
     howTo: {
       h2: 'How to Use This Calculator',
       steps: [
-        'Identify the adjacent side b. This is the side that sits next to angle A and also connects to the right angle.',
-        'Confirm the angle A is in degrees and is between 0 and 90.',
-        'Enter adjacent side b into the first input field.',
-        'Enter angle A into the second input field.',
-        'Click Calculate to see opposite side a and the full solution steps.'
+        'Identify the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b. This is the side that sits next to <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A and also connects to the right angle.',
+        'Confirm the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A is in degrees and is between 0 and 90.',
+        'Enter adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b into the first input field.',
+        'Enter <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A into the second input field.',
+        'Click Calculate to see opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a and the full solution steps.'
       ]
     },
     example: {
       h2: 'Step-by-Step Example: Find Opposite Side a',
-      intro: 'Given: A = 36.87 degrees, b = 4. Find opposite side a using the tangent formula.',
+      intro: 'Given: A = 36.87 degrees, b = 4. Find opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a using the tangent formula.',
       lines: [
         'a = b \\times \\tan(A)',
         'a = 4 \\times \\tan(36.87)',
@@ -1036,36 +1036,36 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         h2: 'What the Result Means',
         paragraphs: [
-          'The output labeled Opposite side a is the side across from angle A. It tells you the vertical distance, height, or rise that corresponds to the base distance and angle you entered.',
-          'Unlike sine and cosine results, the tangent result is not limited to being smaller than any particular input. If the angle is large (close to 90 degrees), tan(A) becomes very large, and a can exceed b significantly.'
+          'The output labeled Opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a is the side across from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. It tells you the vertical distance, height, or rise that corresponds to the base distance and angle you entered.',
+          'Unlike sine and cosine results, the tangent result is not limited to being smaller than any particular input. If the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is large (close to 90 degrees), tan(A) becomes very large, and a can exceed b significantly.'
         ]
       },
       {
         h2: 'When to Use This Calculator',
         paragraphs: [
-          'This is the right tool when you have a base measurement and an angle of elevation or depression and need to find the height or vertical distance. It skips the hypotenuse entirely.',
-          'Tangent is especially useful in surveying, construction, and field measurement problems where the horizontal distance is known from a map or tape measure and the angle is read from an inclinometer or clinometer.'
+          'This is the right tool when you have a base measurement and an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of elevation or depression and need to find the height or vertical distance. It skips the hypotenuse entirely.',
+          'Tangent is especially useful in surveying, construction, and field measurement problems where the horizontal distance is known from a map or tape measure and the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is read from an inclinometer or clinometer.'
         ],
         listTitle: 'Common situations:',
         listItems: [
-          'Finding the height of a building when you know your distance from the base and the angle of elevation.',
-          'Calculating the rise of a hill from the horizontal run and slope angle.',
-          'Determining the depth of a trench from the edge distance and the angle of descent.',
-          'Converting a roof pitch angle into the actual rise per unit of horizontal run.'
+          'Finding the height of a building when you know your distance from the base and the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of elevation.',
+          'Calculating the rise of a hill from the horizontal run and slope <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
+          'Determining the depth of a trench from the edge distance and the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of descent.',
+          'Converting a roof pitch <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> into the actual rise per unit of horizontal run.'
         ]
       },
       {
         h2: 'Common Mistakes',
         paragraphs: [
-          'Tangent problems often go wrong when the hypotenuse is used where the adjacent side should be, or when sides a and b are swapped. Double-check which side sits next to the angle and which one is across from it.'
+          'Tangent problems often go wrong when the hypotenuse is used where the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> should be, or when sides a and b are swapped. Double-check which side sits next to the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and which one is across from it.'
         ],
         listTitle: 'Watch out for:',
         listItems: [
-          'Using the hypotenuse instead of the adjacent side b. Tangent does not use the hypotenuse.',
-          'Switching a and b. The adjacent side is the input, the opposite side is the output.',
+          'Using the hypotenuse instead of the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b. Tangent does not use the hypotenuse.',
+          'Switching a and b. The adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is the input, the opposite side is the output.',
           'Using division instead of multiplication. To find a from b, you multiply by tan(A).',
-          'Using an angle of exactly 90 degrees. Tangent of 90 degrees is not defined, so the calculator will show an error.',
-          'Entering the angle in radians rather than degrees.'
+          'Using an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of exactly 90 degrees. Tangent of 90 degrees is not defined, so the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> will show an error.',
+          'Entering the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> in radians rather than degrees.'
         ]
       }
     ],
@@ -1081,7 +1081,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         question: 'What does a = b \u00d7 tan(A) calculate?',
         answer:
-          'It calculates the opposite side a of a right triangle when you know the adjacent side b and an acute angle A. Tangent is the ratio that connects the opposite and adjacent sides.'
+          'It calculates the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a of a right triangle when you know the adjacent side b and an acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. Tangent is the ratio that connects the opposite and adjacent sides.'
       },
       {
         question: 'Why does this calculator not need the hypotenuse?',
@@ -1091,12 +1091,12 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         question: 'What happens when the angle is close to 90 degrees?',
         answer:
-          'Tangent values grow extremely large as the angle approaches 90 degrees. The opposite side becomes much longer than the adjacent side, and at exactly 90 degrees the tangent is not defined.'
+          'Tangent values grow extremely large as the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> approaches 90 degrees. The opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> becomes much longer than the adjacent side, and at exactly 90 degrees the tangent is not defined.'
       },
       {
         question: 'Can I use this to find the adjacent side instead?',
         answer:
-          'No. This calculator finds the opposite side from the adjacent side. To find the adjacent side from the opposite side, use the adjacent side from tangent calculator with the formula b = a / tan(A).'
+          'No. This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> from the adjacent side. To find the adjacent side from the opposite side, use the <a href="/right-triangle-adjacent-side-from-tangent-calculator/" class="text-primary hover:underline">adjacent side from tangent</a> calculator with the formula b = a / tan(A).'
       },
       {
         question: 'Is there a difference between tan and tangent?',
@@ -1113,12 +1113,12 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     metaDescription: 'Use this right triangle adjacent side from tangent calculator to find adjacent side b from angle A and opposite side a with formula, steps, and examples.',
     formulaSlug: 'b-a-tan',
     toolPurpose:
-      'This tool finds the adjacent side b when you have the opposite side a and an acute angle A. It reverses the tangent formula, dividing instead of multiplying, so you get the base length directly.',
-    intro: 'Use this calculator to find adjacent side b from angle A and opposite side a.',
+      'This tool finds the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b when you have the opposite side a and an acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. It reverses the tangent formula, dividing instead of multiplying, so you get the base length directly.',
+    intro: 'Use this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> to find adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A and opposite side a.',
     quickSummary: {
       h2: 'What This Tool Solves',
       intro:
-        'This is the reverse of the standard tangent side calculator. Instead of multiplying by tangent to find the opposite side, you divide by tangent to find the adjacent side. The hypotenuse is not involved.',
+        'This is the reverse of the standard tangent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>. Instead of multiplying by tangent to find the opposite side, you divide by tangent to find the adjacent side. The hypotenuse is not involved.',
       cards: [
         { label: 'Known values', value: 'Angle A and opposite side a' },
         { label: 'Finds', value: 'Adjacent side b' },
@@ -1129,30 +1129,30 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     diagram: {
       h2: 'Right Triangle Diagram: Side b from Tangent',
       intro:
-        'Angle A is at the bottom-right corner. The opposite side a is directly across from it, which you already know. The adjacent side b is the horizontal base next to angle A, and this is what the calculator finds by dividing a by tan(A).',
+        '<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">Angle</a> A is at the bottom-right corner. The opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a is directly across from it, which you already know. The adjacent side b is the horizontal base next to angle A, and this is what the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds by dividing a by tan(A).',
       caption:
-        'Right triangle showing angle A, known opposite side a, and unknown adjacent side b.',
+        'Right triangle showing <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A, known opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a, and unknown adjacent side b.',
       sides: {
         a: {
           label: 'a = known',
-          description: 'Opposite side a is directly across from angle A. You enter this value.',
+          description: 'Opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a is directly across from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. You enter this value.',
           status: 'known'
         },
         b: {
           label: 'b = find',
-          description: 'Adjacent side b runs along the base next to angle A. This is the value the calculator returns.',
+          description: 'Adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b runs along the base next to <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. This is the value the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> returns.',
           status: 'unknown'
         },
         c: {
           label: 'c',
-          description: 'Hypotenuse c is the longest side. It is not part of this calculation.',
+          description: 'Hypotenuse c is the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. It is not part of this calculation.',
           status: 'unknown'
         }
       },
       notes: [
-        'For angle A, side a is opposite, side b is adjacent, and side c is the hypotenuse.',
+        'For <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A, <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a is opposite, side b is adjacent, and side c is the hypotenuse.',
         'This calculation uses division, not multiplication.',
-        'As angle A increases, the adjacent side b decreases for the same opposite side a.'
+        'As <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A increases, the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b decreases for the same opposite side a.'
       ]
     },
     calculator: {
@@ -1165,24 +1165,24 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     formulaSection: {
       h2: 'Adjacent Side From Tangent Formula',
       paragraphs: [
-        'The <a href="/tangent-ratio-calculator/" class="text-primary hover:underline">tangent ratio</a> states that tan(A) = a / b, where a is the opposite side and b is the adjacent side. Rearranging to solve for b gives the formula below.',
-        'In this formula, a is the opposite side (the side across from angle A), A is the acute angle in degrees, and b is the adjacent side you want to find. The division by tan(A) converts the known height and angle into the corresponding base length.'
+        'The <a href="/tangent-ratio-calculator/" class="text-primary hover:underline">tangent ratio</a> states that tan(A) = a / b, where a is the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> and b is the adjacent side. Rearranging to solve for b gives the formula below.',
+        'In this formula, a is the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> (the side across from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A), A is the acute angle in degrees, and b is the adjacent side you want to find. The division by tan(A) converts the known height and angle into the corresponding base length.'
       ],
       formulas: ['b = a / \\tan(A)']
     },
     howTo: {
       h2: 'How to Use This Calculator',
       steps: [
-        'Identify the opposite side a. This is the side across from angle A, often the vertical height or rise.',
-        'Confirm the angle A is in degrees and falls between 0 and 90.',
-        'Enter opposite side a into the first input field.',
-        'Enter angle A into the second input field.',
-        'Click Calculate to see adjacent side b and the complete solution.'
+        'Identify the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a. This is the side across from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A, often the vertical height or rise.',
+        'Confirm the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A is in degrees and falls between 0 and 90.',
+        'Enter opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a into the first input field.',
+        'Enter <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A into the second input field.',
+        'Click Calculate to see adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b and the complete solution.'
       ]
     },
     example: {
       h2: 'Step-by-Step Example: Find Adjacent Side b',
-      intro: 'Given: A = 36.87 degrees, a = 3. Find adjacent side b using the tangent division formula.',
+      intro: 'Given: A = 36.87 degrees, a = 3. Find adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b using the tangent division formula.',
       lines: [
         'b = a / \\tan(A)',
         'b = 3 / \\tan(36.87)',
@@ -1194,36 +1194,36 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         h2: 'What the Result Means',
         paragraphs: [
-          'The output labeled Adjacent side b is the horizontal base of the triangle. It represents the ground distance, run, or offset that corresponds to the height and angle you provided.',
-          'When the angle is small, the base will be much longer than the height, because a gentle slope covers a lot of horizontal distance. When the angle is steep (close to 90 degrees), the base shrinks because the triangle is nearly vertical.'
+          'The output labeled Adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b is the horizontal base of the triangle. It represents the ground distance, run, or offset that corresponds to the height and <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> you provided.',
+          'When the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is small, the base will be much longer than the height, because a gentle slope covers a lot of horizontal distance. When the angle is steep (close to 90 degrees), the base shrinks because the triangle is nearly vertical.'
         ]
       },
       {
         h2: 'When to Use This Calculator',
         paragraphs: [
-          'This tool is ideal when you know a vertical measurement and a slope angle and want to find how far out the base extends. It flips the usual tangent problem around.',
+          'This tool is ideal when you know a vertical measurement and a slope <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and want to find how far out the base extends. It flips the usual tangent problem around.',
           'It comes up in building setbacks, foundation offsets, and situations where height restrictions or clearance distances determine how far back something must be placed.'
         ],
         listTitle: 'Common situations:',
         listItems: [
-          'Finding how far from a wall you need to stand based on wall height and viewing angle.',
-          'Calculating the horizontal run needed for a staircase from the total rise and stair angle.',
-          'Determining the setback distance for a retaining wall from the wall height and soil angle of repose.',
-          'Solving surveying problems where elevation and angle are measured and horizontal distance is needed.'
+          'Finding how far from a wall you need to stand based on wall height and viewing <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
+          'Calculating the horizontal run needed for a staircase from the total rise and stair <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
+          'Determining the setback distance for a retaining wall from the wall height and soil <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of repose.',
+          'Solving surveying problems where elevation and <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> are measured and horizontal distance is needed.'
         ]
       },
       {
         h2: 'Common Mistakes',
         paragraphs: [
-          'The biggest mistake with this calculator is using multiplication instead of division. The standard tangent formula multiplies to find the opposite side. This reversed version divides to find the adjacent side. Mixing them up swaps the answer completely.'
+          'The biggest mistake with this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> is using multiplication instead of division. The standard tangent formula multiplies to find the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. This reversed version divides to find the adjacent side. Mixing them up swaps the answer completely.'
         ],
         listTitle: 'Watch out for:',
         listItems: [
-          'Multiplying a by tan(A) instead of dividing. That formula finds the opposite side, not the adjacent.',
-          'Using b = a \u00d7 tan(A), which is the wrong formula for this calculator.',
-          'Switching opposite and adjacent sides. Side a is across from angle A; side b is next to it.',
-          'Using an angle outside the valid range. Angle A must be greater than 0 and less than 90 degrees.',
-          'Entering the angle in radians instead of degrees.'
+          'Multiplying a by tan(A) instead of dividing. That formula finds the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, not the adjacent.',
+          'Using b = a \u00d7 tan(A), which is the wrong formula for this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>.',
+          'Switching opposite and adjacent sides. <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">Side</a> a is across from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A; side b is next to it.',
+          'Using an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> outside the valid range. Angle A must be greater than 0 and less than 90 degrees.',
+          'Entering the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> in radians instead of degrees.'
         ]
       }
     ],
@@ -1239,27 +1239,27 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         question: 'What does b = a / tan(A) calculate?',
         answer:
-          'It calculates the adjacent side b when you know the opposite side a and an acute angle A. It is the rearranged version of the tangent formula tan(A) = a / b.'
+          'It calculates the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b when you know the opposite side a and an acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. It is the rearranged version of the tangent formula tan(A) = a / b.'
       },
       {
         question: 'Why does this formula use division instead of multiplication?',
         answer:
-          'The standard tangent formula multiplies b by tan(A) to find a. This calculator does the reverse: it divides a by tan(A) to find b. Division is needed because b is in the denominator of the original ratio.'
+          'The standard tangent formula multiplies b by tan(A) to find a. This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> does the reverse: it divides a by tan(A) to find b. Division is needed because b is in the denominator of the original ratio.'
       },
       {
         question: 'What is the difference between this and the tangent side calculator?',
         answer:
-          'The tangent side calculator finds the opposite side a from the adjacent side b. This calculator does the opposite: it finds the adjacent side b from the opposite side a. They are inverse operations.'
+          'The tangent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the opposite side a from the adjacent side b. This calculator does the opposite: it finds the adjacent side b from the opposite side a. They are inverse operations.'
       },
       {
         question: 'Can the result be larger than the opposite side?',
         answer:
-          'Yes. When the angle is less than 45 degrees, the adjacent side is longer than the opposite side. The two sides are equal only when the angle is exactly 45 degrees.'
+          'Yes. When the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is less than 45 degrees, the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is longer than the opposite side. The two sides are equal only when the angle is exactly 45 degrees.'
       },
       {
         question: 'What happens if I divide by a very small tangent value?',
         answer:
-          'When the angle is very close to 0 degrees, tan(A) is nearly zero, and dividing by it produces a very large result. This means the base is extremely long compared to the height, which makes geometric sense for a nearly flat triangle.'
+          'When the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is very close to 0 degrees, tan(A) is nearly zero, and dividing by it produces a very large result. This means the base is extremely long compared to the height, which makes geometric sense for a nearly flat triangle.'
       }
     ]
   }

@@ -127,31 +127,31 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       sides: {
         a: {
           label: 'a = first leg',
-          description: 'Leg a is one side of the 90 degree corner and is included once in the perimeter.'
+          description: 'Leg a is one <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> of the 90 degree corner and is included once in the perimeter.'
         },
         b: {
           label: 'b = second leg',
-          description: 'Leg b is the other side of the right angle and is added together with a and c.'
+          description: 'Leg b is the other <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> of the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and is added together with a and c.'
         },
         c: {
           label: 'c = hypotenuse',
-          description: 'Hypotenuse c is the longest side, opposite the right angle, and completes the boundary.'
+          description: 'Hypotenuse c is the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>, and completes the boundary.'
         }
       },
       result: {
         label: 'P = total boundary length',
-        description: 'The calculator adds a + b + c and returns the perimeter in the selected linear unit.'
+        description: 'The <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> adds a + b + c and returns the perimeter in the selected linear unit.'
       },
       notes: [
         'All three sides should use the same unit before you compare or reuse the answer.',
-        'If one side is missing, solve that side first with the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem</a>, then return to perimeter.',
+        'If one <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is missing, solve that side first with the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem</a>, then return to perimeter.',
         'The perimeter result is a length, not a square-unit <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>.'
       ]
     },
     formulaSection: {
       h2: 'Right Triangle Perimeter Formula',
       paragraphs: [
-        'The perimeter of any polygon is the total length of its boundary. For a right triangle, the boundary consists of exactly three straight sides: two legs (a and b) that form the 90\u00b0 angle, and one hypotenuse (c) that stretches across from the right angle to the opposite vertex.',
+        'The perimeter of any polygon is the total length of its boundary. For a right triangle, the boundary consists of exactly three straight sides: two legs (a and b) that form the 90\u00b0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>, and one hypotenuse (c) that stretches across from the right angle to the opposite vertex.',
         'Because a right triangle has only three sides, the perimeter formula is the simplest possible sum. No trigonometry, square roots, or exponents are needed \u2014 just addition.'
       ],
       formulas: ['P = a + b + c']
@@ -159,12 +159,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     howTo: {
       h2: 'How to Find the Perimeter of a Right Triangle',
       steps: [
-        'Identify all three sides of the right triangle. Label the two shorter sides as leg a and leg b, and the longest side as hypotenuse c.',
-        'Make sure all three measurements use the same unit. Convert if necessary before entering values.',
-        'Enter leg a into the first input field of the calculator.',
+        'Identify all three sides of the right triangle. Label the two shorter sides as leg a and leg b, and the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> as hypotenuse c.',
+        'Make sure all three <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a> use the same unit. Convert if necessary before entering values.',
+        'Enter leg a into the first input field of the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>.',
         'Enter leg b into the second input field.',
         'Enter hypotenuse c into the third input field.',
-        'Click Calculate. The calculator adds the three values and displays the perimeter P along with step-by-step work.',
+        'Click Calculate. The <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> adds the three values and displays the perimeter P along with step-by-step work.',
         'Review the result in the diagram to visually confirm the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> match your triangle.'
       ]
     },
@@ -183,21 +183,21 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
         h2: 'What Is the Perimeter of a Right Triangle?',
         paragraphs: [
           'The perimeter of a right triangle is the total distance you would travel if you walked along all three edges of the triangle, starting at one vertex and returning to the same vertex. It represents the outer boundary of the triangular shape.',
-          'Every right triangle has three sides: two legs that meet at the right angle (90\u00b0) and one hypotenuse opposite the right angle. The hypotenuse is always the longest of the three sides. When you add the lengths of all three sides together, you get the perimeter.',
+          'Every right triangle has three sides: two legs that meet at the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> (90\u00b0) and one hypotenuse opposite the right angle. The hypotenuse is always the longest of the three sides. When you add the lengths of all three sides together, you get the perimeter.',
           'The perimeter is a one-dimensional measurement expressed in linear units (such as centimeters, meters, feet, or inches). This is different from the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>, which measures the two-dimensional space inside the triangle and is expressed in square units.'
         ]
       },
       {
         h2: 'Understanding the Sides of a Right Triangle',
         paragraphs: [
-          'Before calculating the perimeter, it helps to clearly identify each side of the right triangle. Mislabeling a side is the most common source of errors.',
-          'In the standard labeling convention, the two sides that form the right angle are called legs. The side opposite the right angle is called the hypotenuse. The hypotenuse is always longer than either leg individually, but it is always shorter than the sum of the two legs.'
+          'Before calculating the perimeter, it helps to clearly identify each <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> of the right triangle. Mislabeling a side is the most common source of errors.',
+          'In the standard labeling convention, the two sides that form the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> are called legs. The <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> opposite the right angle is called the hypotenuse. The hypotenuse is always longer than either leg individually, but it is always shorter than the sum of the two legs.'
         ],
         listTitle: 'The three sides at a glance:',
         listItems: [
-          'Leg a \u2014 One of the two sides that forms the 90\u00b0 angle. It can be the vertical or horizontal side, depending on orientation.',
-          'Leg b \u2014 The other side that forms the 90\u00b0 angle. Together with leg a, it defines the right angle.',
-          'Hypotenuse c \u2014 The longest side, stretching from one acute angle vertex to the other, directly opposite the right angle.',
+          'Leg a \u2014 One of the two sides that forms the 90\u00b0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. It can be the vertical or horizontal <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, depending on orientation.',
+          'Leg b \u2014 The other <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> that forms the 90\u00b0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. Together with leg a, it defines the right angle.',
+          'Hypotenuse c \u2014 The longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, stretching from one acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex to the other, directly opposite the right angle.',
           'The Pythagorean relationship holds: a\u00b2 + b\u00b2 = c\u00b2. This lets you verify that your three values actually form a right triangle.'
         ]
       },
@@ -205,7 +205,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
         h2: 'How the Perimeter Formula Is Derived',
         paragraphs: [
           'The perimeter formula P = a + b + c is a direct application of the general polygon perimeter definition: add the lengths of all sides. For a triangle, there are exactly three sides, so the perimeter is the sum of three lengths.',
-          'No derivation or rearrangement is needed because the formula is the simplest possible case of perimeter measurement. However, the formula becomes more interesting when only two sides are known, because you can use the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem</a> to find the missing third side and then compute the perimeter.'
+          'No derivation or rearrangement is needed because the formula is the simplest possible case of perimeter measurement. However, the formula becomes more interesting when only two sides are known, because you can use the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem</a> to find the missing third <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> and then compute the perimeter.'
         ]
       },
       {
@@ -275,7 +275,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
           'Trim and molding \u2014 A triangular architectural feature (like a gable end) needs trim along its edges. The perimeter gives the total trim length.',
           'Wire and rope \u2014 Framing a right-angled display, banner, or sail requires rope, wire, or edging equal to the perimeter.',
           'Jogging and walking paths \u2014 A triangular running track or walking path around a right-angled park <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> has a total distance equal to the perimeter.',
-          'Construction layout \u2014 Builders use the 3-4-5 rule to check if a corner is square. Knowing the perimeter helps verify measurements.',
+          'Construction layout \u2014 Builders use the 3-4-5 rule to check if a corner is square. Knowing the perimeter helps verify <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a>.',
           'Craft and sewing \u2014 Binding, piping, or lace around a triangular cushion or pennant requires perimeter-length material.',
           'Map and survey calculations \u2014 Surveyors measure triangular land plots and need the perimeter for boundary descriptions and property records.'
         ]
@@ -284,14 +284,14 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
         h2: 'Relationship Between Perimeter and Semiperimeter',
         paragraphs: [
           'The <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> (s) is exactly <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">half the perimeter</a>: s = P / 2 = (a + b + c) / 2. While the perimeter gives you the total boundary length, the semiperimeter is a convenience value used in more advanced formulas.',
-          'The <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> appears in Heron\u2019s formula for <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">triangle area</a>: A = \u221a[s(s\u2013a)(s\u2013b)(s\u2013c)]. It is also used to calculate the <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a> (the radius of the inscribed circle): r = A / s. So the perimeter is the starting point for several important triangle calculations.',
+          'The <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> appears in Heron\u2019s formula for <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">triangle area</a>: A = \u221a[s(s\u2013a)(s\u2013b)(s\u2013c)]. It is also used to calculate the <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a> (the <a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a> of the inscribed circle): r = A / s. So the perimeter is the starting point for several important triangle calculations.',
           'If you have already calculated the perimeter using this tool, you can find the <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> by simply dividing the result by 2, or use our dedicated semiperimeter calculator.'
         ]
       },
       {
         h2: 'Unit Conversion Tips',
         paragraphs: [
-          'The perimeter result is only meaningful when all three input sides use the same unit. If your measurements are in different units, convert them first. The calculator includes a unit selector for each input field to handle conversions automatically.',
+          'The perimeter result is only meaningful when all three input sides use the same unit. If your <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a> are in different units, convert them first. The calculator includes a unit selector for each input field to handle conversions automatically.',
           'Remember that the perimeter is a linear measurement, so conversions follow standard length ratios \u2014 not <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> ratios. For example, to convert from feet to meters, multiply by 0.3048 (not by 0.3048\u00b2).'
         ],
         listTitle: 'Quick conversion reminders:',
@@ -315,20 +315,20 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
           'Mixing units \u2014 If leg a is in inches and leg b is in centimeters, the sum has no meaning. Convert to a single unit first.',
           'Confusing perimeter with <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> \u2014 Perimeter is a length (measured in units), while area is a surface (measured in square units). Make sure you know which one the problem is asking for.',
           'Using sides that don\u2019t form a right triangle \u2014 Check that a\u00b2 + b\u00b2 = c\u00b2. If this equation doesn\u2019t hold, the triangle isn\u2019t a right triangle and c is not a true hypotenuse.',
-          'Rounding too early \u2014 If one side is irrational (like \u221a2), keep full precision until the final addition to avoid accumulating rounding error.',
-          'Entering the hypotenuse as a leg \u2014 The hypotenuse must be the longest side. If you place a shorter value in the hypotenuse field, the diagram will look wrong and the Pythagorean check will fail.'
+          'Rounding too early \u2014 If one <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is irrational (like \u221a2), keep full precision until the final addition to avoid accumulating rounding error.',
+          'Entering the hypotenuse as a leg \u2014 The hypotenuse must be the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. If you place a shorter value in the hypotenuse field, the diagram will look wrong and the Pythagorean check will fail.'
         ]
       },
       {
         h2: 'Perimeter Properties of a Right Triangle',
         paragraphs: [
-          'Right triangles have special perimeter properties that set them apart from other triangles. Understanding these properties can help you verify your calculations and catch errors.',
+          'Right triangles have <a href="/special-right-triangle-calculator/" class="text-primary hover:underline">special</a> perimeter properties that set them apart from other triangles. Understanding these properties can help you verify your calculations and catch errors.',
           'In any right triangle, the hypotenuse c is always less than the sum of the two legs (a + b) but greater than either leg alone. This means the perimeter P is always greater than 2c (since a + b > c) and less than 2(a + b), which equals 2a + 2b.'
         ],
         listTitle: 'Key perimeter properties:',
         listItems: [
-          'P is always greater than 2 \u00d7 (longest side) because the other two sides add additional length.',
-          'P is always less than 3 \u00d7 (longest side) because c > a and c > b, so a + b < 2c.',
+          'P is always greater than 2 \u00d7 (longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>) because the other two sides add additional length.',
+          'P is always less than 3 \u00d7 (longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>) because c > a and c > b, so a + b < 2c.',
           'For a <a href="/45-45-90-triangle-calculator/" class="text-primary hover:underline">45-45-90 triangle</a> with legs of length k, P = k + k + k\u221a2 = k(2 + \u221a2) \u2248 3.414k.',
           'For a <a href="/30-60-90-triangle-calculator/" class="text-primary hover:underline">30-60-90 triangle</a> with shortest leg k, P = k + k\u221a3 + 2k = k(3 + \u221a3) \u2248 4.732k.',
           'Among all right triangles with the same hypotenuse, the <a href="/45-45-90-triangle-calculator/" class="text-primary hover:underline">isosceles right triangle</a> (45-45-90) has the largest perimeter.'
@@ -345,23 +345,23 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     faqs: [
       {
         question: 'What is the formula for the perimeter of a right triangle?',
-        answer: 'The perimeter formula is P = a + b + c, where a and b are the two legs (the sides forming the 90\u00b0 angle) and c is the hypotenuse (the longest side, opposite the right angle). Simply add all three <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> together.'
+        answer: 'The perimeter formula is P = a + b + c, where a and b are the two legs (the sides forming the 90\u00b0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>) and c is the hypotenuse (the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, opposite the right angle). Simply add all three <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> together.'
       },
       {
         question: 'What does each variable mean in P = a + b + c?',
-        answer: 'P is the perimeter (total boundary length). a is one leg of the right triangle. b is the other leg. c is the hypotenuse \u2014 the longest side that sits opposite the right angle. The two legs form the 90\u00b0 corner.'
+        answer: 'P is the perimeter (total boundary length). a is one leg of the right triangle. b is the other leg. c is the hypotenuse \u2014 the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> that sits opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. The two legs form the 90\u00b0 corner.'
       },
       {
         question: 'Can I find the perimeter with only two sides?',
-        answer: 'Yes, but you must first calculate the missing third side using the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem</a>: c = \u221a(a\u00b2 + b\u00b2) if the hypotenuse is missing, or a missing leg = \u221a(c\u00b2 \u2013 known leg\u00b2). Then add all three sides to get the perimeter.'
+        answer: 'Yes, but you must first calculate the missing third <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> using the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem</a>: c = \u221a(a\u00b2 + b\u00b2) if the hypotenuse is missing, or a missing leg = \u221a(c\u00b2 \u2013 known leg\u00b2). Then add all three sides to get the perimeter.'
       },
       {
         question: 'Is perimeter the same as area?',
-        answer: 'No. Perimeter (P = a + b + c) measures the total distance around the triangle in linear units (cm, m, ft). <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a> (A = a\u00d7b/2) measures the enclosed space inside the triangle in square units (cm\u00b2, m\u00b2, ft\u00b2). They are fundamentally different measurements.'
+        answer: 'No. Perimeter (P = a + b + c) measures the total distance around the triangle in linear units (cm, m, ft). <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a> (A = a\u00d7b/2) measures the enclosed space inside the triangle in square units (cm\u00b2, m\u00b2, ft\u00b2). They are fundamentally different <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a>.'
       },
       {
         question: 'Do all three sides need to be in the same unit?',
-        answer: 'Yes. All three sides must be expressed in the same unit before adding. If one side is in inches and another in centimeters, convert them to a common unit first. The calculator includes unit selectors on each input to handle this automatically.'
+        answer: 'Yes. All three sides must be expressed in the same unit before adding. If one <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is in inches and another in centimeters, convert them to a common unit first. The <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> includes unit selectors on each input to handle this automatically.'
       },
       {
         question: 'What is the perimeter of a 3-4-5 right triangle?',
@@ -369,7 +369,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       },
       {
         question: 'How do I verify my triangle is actually a right triangle?',
-        answer: 'Check that a\u00b2 + b\u00b2 = c\u00b2, where c is the longest side. If this equation holds true, the triangle has a 90\u00b0 angle and is a right triangle. If it doesn\u2019t hold, the perimeter formula still works but the triangle is not right-angled.'
+        answer: 'Check that a\u00b2 + b\u00b2 = c\u00b2, where c is the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. If this equation holds true, the triangle has a 90\u00b0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and is a right triangle. If it doesn\u2019t hold, the perimeter formula still works but the triangle is not right-angled.'
       },
       {
         question: 'What is the relationship between perimeter and semiperimeter?',
@@ -381,7 +381,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       },
       {
         question: 'Why is the hypotenuse always the longest side?',
-        answer: 'In a right triangle, the hypotenuse is opposite the largest angle (90\u00b0). A fundamental rule in geometry is that the longest side is always opposite the largest angle. Since no angle in a triangle can exceed the right angle, c is always the longest side.'
+        answer: 'In a right triangle, the hypotenuse is opposite the largest <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> (90\u00b0). A fundamental rule in geometry is that the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is always opposite the largest angle. Since no angle in a triangle can exceed the right angle, c is always the longest side.'
       }
     ]
   },
@@ -425,28 +425,28 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
         },
         b: {
           label: 'b = second leg',
-          description: 'Leg b forms the right angle with a and contributes to both <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> and semiperimeter.'
+          description: 'Leg b forms the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> with a and contributes to both <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> and semiperimeter.'
         },
         c: {
           label: 'c = hypotenuse',
-          description: 'Hypotenuse c is the longest side and must be included before the total is halved.'
+          description: 'Hypotenuse c is the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> and must be included before the total is halved.'
         }
       },
       result: {
         label: 's = half of the boundary total',
-        description: 'The calculator first adds a + b + c, then divides that <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> by 2.'
+        description: 'The <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> first adds a + b + c, then divides that <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> by 2.'
       },
       notes: [
         'Semiperimeter is a linear measurement, so it uses the same unit as the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a>.',
         'If P is already known, use s = P / 2; if P is not known, use s = (a + b + c) / 2.',
-        'For a valid right triangle, c should be the longest side and should satisfy a^2 + b^2 = c^2.'
+        'For a valid right triangle, c should be the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> and should satisfy a^2 + b^2 = c^2.'
       ]
     },
     formulaSection: {
       h2: 'Right Triangle Semiperimeter Formula',
       paragraphs: [
         'The semiperimeter of a triangle is one-half of its <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>. For a right triangle, the perimeter is P = a + b + c, so the semiperimeter is s = (a + b + c) / 2.',
-        'The letter s is commonly used because semiperimeter appears in many compact geometry formulas. Even when the triangle is right-angled, s is useful as a bridge between <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a>, <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>, and circle measurements such as the <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a>.',
+        'The letter s is commonly used because semiperimeter appears in many compact geometry formulas. Even when the triangle is right-angled, s is useful as a bridge between <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a>, <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>, and circle <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a> such as the <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a>.',
         'Like <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>, semiperimeter is measured in linear units. If the sides are in meters, s is in meters. If the sides are in inches, s is in inches.'
       ],
       formulas: [
@@ -458,12 +458,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     howTo: {
       h2: 'How to Find the Semiperimeter of a Right Triangle',
       steps: [
-        'Identify the two legs of the right triangle. These are the sides that meet at the 90 degree angle.',
-        'Identify the hypotenuse c. It is the longest side and sits opposite the right angle.',
+        'Identify the two legs of the right triangle. These are the sides that meet at the 90 degree <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
+        'Identify the hypotenuse c. It is the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> and sits opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
         'Make sure a, b, and c all use the same measurement unit.',
-        'Enter leg a, leg b, and hypotenuse c into the calculator.',
+        'Enter leg a, leg b, and hypotenuse c into the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>.',
         'Click Calculate to add the three sides and divide the total by 2.',
-        'Check the displayed steps. The calculator should show the <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> total first, then the semiperimeter result.',
+        'Check the displayed steps. The <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> should show the <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> total first, then the semiperimeter result.',
         'Use s in any later formula that asks for semiperimeter, such as <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a> or Heron-style <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> relationships.'
       ]
     },
@@ -483,14 +483,14 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
         h2: 'What Does Semiperimeter Mean?',
         paragraphs: [
           'Semiperimeter literally means half of the <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>. Instead of repeatedly writing (a + b + c) / 2 in longer formulas, geometry often uses the shorter symbol s.',
-          'For a right triangle, this value is especially convenient because the side labels are already standardized: a and b are the legs, and c is the hypotenuse. Once those three <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> are known, s is a single compact number that summarizes half the boundary length.'
+          'For a right triangle, this value is especially convenient because the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> labels are already standardized: a and b are the legs, and c is the hypotenuse. Once those three <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> are known, s is a single compact number that summarizes half the boundary length.'
         ]
       },
       {
         h2: 'Semiperimeter vs. Perimeter',
         paragraphs: [
           '<a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">Perimeter</a> P measures the full distance around the outside of the triangle. Semiperimeter s measures half of that distance. The two values are directly connected: s = P / 2 and P = 2s.',
-          'Use <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> when a problem asks for the total boundary length, such as trim, fencing, or edge distance. Use semiperimeter when a formula specifically asks for s, or when you are preparing values for <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> and radius relationships.'
+          'Use <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> when a problem asks for the total boundary length, such as trim, fencing, or edge distance. Use semiperimeter when a formula specifically asks for s, or when you are preparing values for <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> and <a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a> relationships.'
         ],
         listTitle: 'Quick comparison:',
         listItems: [
@@ -503,7 +503,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       {
         h2: 'Why Semiperimeter Matters in Right Triangle Geometry',
         paragraphs: [
-          'Semiperimeter is more than a shortcut. It is a standard helper value used in formulas that connect <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> to <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> and circle measurements.',
+          'Semiperimeter is more than a shortcut. It is a standard helper value used in formulas that connect <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> to <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> and circle <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a>.',
           'For any triangle, Heron\u2019s formula uses s to calculate <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> from three sides: A = sqrt(s(s-a)(s-b)(s-c)). For a right triangle you often use A = (a x b) / 2, but Heron\u2019s formula is still useful for verification.',
           'Semiperimeter also connects to the <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a>. In many triangle formulas, <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> equals inradius times semiperimeter: A = r x s. Once s is known, it becomes easier to solve for r or verify an inradius result.'
         ],
@@ -552,7 +552,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       {
         h2: 'When to Use This Tool',
         paragraphs: [
-          'Use this calculator when a geometry problem gives all three right-triangle <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> and asks for s, half-<a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>, or a formula that depends on semiperimeter.',
+          'Use this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> when a geometry problem gives all three right-triangle <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> and asks for s, half-<a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>, or a formula that depends on semiperimeter.',
           'It is also useful as a quick check after solving a <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">missing side</a>. Once you know a, b, and c, the semiperimeter should be simple and exact: add the sides, then divide by 2.'
         ],
         listTitle: 'Good use cases include:',
@@ -568,7 +568,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
         h2: 'Unit Tips for Semiperimeter',
         paragraphs: [
           'Semiperimeter is a length, so it follows ordinary length-unit conversion rules. It is not measured in square units.',
-          'If the side inputs use different units, convert them first or use the calculator\u2019s unit selectors consistently. Adding feet, inches, and centimeters directly would produce a meaningless result.'
+          'If the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> inputs use different units, convert them first or use the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>\u2019s unit selectors consistently. Adding feet, inches, and centimeters directly would produce a meaningless result.'
         ],
         listTitle: 'Keep these unit rules in mind:',
         listItems: [
@@ -586,7 +586,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
         listTitle: 'Watch out for these errors:',
         listItems: [
           'Forgetting to divide by 2 after adding the sides.',
-          'Dividing each side by 2 first, then losing track of the total.',
+          'Dividing each <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> by 2 first, then losing track of the total.',
           'Using only the two legs and leaving out the hypotenuse.',
           'Confusing s with <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> P. Remember that P = 2s.',
           'Using <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> that do not form a right triangle.',
@@ -597,7 +597,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
         h2: 'How Semiperimeter Connects to Area and Inradius',
         paragraphs: [
           'In a right triangle, <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> can be calculated directly with A = (a x b) / 2 because the legs are perpendicular. Once area and semiperimeter are known, the <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a> can be checked with r = A / s.',
-          'This makes semiperimeter a useful middle value. It does not replace the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area formula</a>, but it helps connect <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> to circle measurements inside the triangle.'
+          'This makes semiperimeter a useful middle value. It does not replace the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area formula</a>, but it helps connect <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> to circle <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a> inside the triangle.'
         ],
         listTitle: 'Example with a 3-4-5 triangle:',
         listItems: [
@@ -633,7 +633,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       },
       {
         question: 'Do I need all three sides?',
-        answer: 'Yes. To calculate semiperimeter directly, you need leg a, leg b, and hypotenuse c. If one side is missing, solve it first with the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem</a>, then calculate s.'
+        answer: 'Yes. To calculate semiperimeter directly, you need leg a, leg b, and hypotenuse c. If one <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is missing, solve it first with the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem</a>, then calculate s.'
       },
       {
         question: 'What is the semiperimeter of a 3-4-5 right triangle?',
@@ -677,22 +677,22 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     },
     diagram: {
       h2: 'Triangle Diagram: Area From Two Legs',
-      intro: 'The diagram below highlights the two legs that form the 90\u00B0 angle. In this method, one leg serves as the base and the other as the height. The <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> is exactly half the rectangle those two legs would form.',
+      intro: 'The diagram below highlights the two legs that form the 90\u00B0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. In this method, one leg serves as the base and the other as the height. The <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> is exactly half the rectangle those two legs would form.',
       caption: 'Right triangle area diagram showing leg a as the base, leg b as the height, the right angle marker, and the formula Area = (a \u00D7 b) / 2.',
       formulaLabel: 'Area = (a \u00D7 b) / 2',
       keyLabel: 'Diagram Key',
       sides: {
         a: {
           label: 'a = first leg (base)',
-          description: 'Leg a is one of the two sides that form the right angle. In this formula it acts as the base of the triangle.'
+          description: 'Leg a is one of the two sides that form the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. In this formula it acts as the base of the triangle.'
         },
         b: {
           label: 'b = second leg (height)',
-          description: 'Leg b is the other side of the 90\u00B0 corner. It acts as the perpendicular height for the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> calculation.'
+          description: 'Leg b is the other <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> of the 90\u00B0 corner. It acts as the perpendicular height for the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> calculation.'
         },
         c: {
           label: 'c = hypotenuse (not needed)',
-          description: 'The hypotenuse is the longest side, opposite the right angle. It is not used in this <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area formula</a>.'
+          description: 'The hypotenuse is the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. It is not used in this <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area formula</a>.'
         }
       },
       result: {
@@ -708,7 +708,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     formulaSection: {
       h2: 'Right Triangle Area From Legs Formula',
       paragraphs: [
-        'The two legs of a right triangle meet at a perfect 90\u00B0 angle. That means one leg is automatically perpendicular to the other. In any triangle, <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> equals half the base times the height. Since the legs are already base and height, no extra geometry is needed.',
+        'The two legs of a right triangle meet at a perfect 90\u00B0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. That means one leg is automatically perpendicular to the other. In any triangle, <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> equals half the base times the height. Since the legs are already base and height, no extra geometry is needed.',
         'This is why the legs formula is the simplest way to find a right triangle\u2019s <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>. You skip finding angles, the hypotenuse, or any <a href="/right-triangle-trig-ratios-calculator/" class="text-primary hover:underline">trigonometric ratios</a>. Just multiply and divide by two.'
       ],
       formulas: ['\\text{Area} = (a \\times b) / 2']
@@ -716,7 +716,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     howTo: {
       h2: 'How to Use This Calculator',
       steps: [
-        'Identify the two legs of your right triangle. These are the sides that form the 90\u00B0 angle. Do not use the hypotenuse here.',
+        'Identify the two legs of your right triangle. These are the sides that form the 90\u00B0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. Do not use the hypotenuse here.',
         'Make sure both legs are measured in the same unit. If one leg is 3 feet and the other is 24 inches, convert one so both match.',
         'Enter leg a into the first input field.',
         'Enter leg b into the second input field.',
@@ -750,7 +750,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
         ],
         listTitle: 'Common situations where this calculator helps:',
         listItems: [
-          'You measured two walls that meet at a right angle and want the floor <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> of the triangular corner.',
+          'You measured two walls that meet at a right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and want the floor <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> of the triangular corner.',
           'A geometry textbook gives you both legs and asks for the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>.',
           'You are cutting a triangular piece from a rectangular sheet and need to know how much material the cutoff uses.',
           'You are estimating paint, tile, or fabric for a right-angled triangular section.'
@@ -769,7 +769,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
           'Even a simple formula can trip you up if you are not careful. Here are the errors students and professionals make most often with this method.'
         ],
         listItems: [
-          'Using the hypotenuse instead of a leg \u2014 The hypotenuse c is the longest side, opposite the right angle. It is not a leg. Plugging c into this formula gives a wrong, inflated <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>.',
+          'Using the hypotenuse instead of a leg \u2014 The hypotenuse c is the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. It is not a leg. Plugging c into this formula gives a wrong, inflated <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>.',
           'Forgetting to divide by 2 \u2014 Multiplying a \u00D7 b gives the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> of the rectangle, not the triangle. You must halve it.',
           'Mixing units \u2014 If one leg is in centimeters and the other in meters, your answer will be nonsense. Convert to the same unit before calculating.',
           'Using only one leg \u2014 You need both legs. If you only know one leg and the hypotenuse, use the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem</a> first to find the missing leg.',
@@ -785,7 +785,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
           '<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a> = (3.5 \u00D7 9.2) / 2',
           'Area = 32.2 / 2',
           '<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a> = 16.1 square units',
-          'The calculator handles decimals the same way it handles whole numbers.'
+          'The <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> handles decimals the same way it handles whole numbers.'
         ]
       }
     ],
@@ -799,7 +799,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     faqs: [
       {
         question: 'What is the formula for the area of a right triangle from its legs?',
-        answer: 'The formula is <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a> = (a \u00D7 b) / 2, where a and b are the two legs that form the right angle.'
+        answer: 'The formula is <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a> = (a \u00D7 b) / 2, where a and b are the two legs that form the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.'
       },
       {
         question: 'Do I need the hypotenuse to find the area from legs?',
@@ -827,10 +827,10 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     metaDescription: 'Use this right triangle area from angle calculator to find area using a side, hypotenuse, and an acute angle with formula and steps.',
     formulaSlug: 'area-sin-a',
     toolPurpose: 'Enter one leg, the hypotenuse, and an acute angle to find the area of a right triangle. The calculator supports two modes\u2014one for angle A with side b, and one for angle B with side a\u2014so you can use whichever values you already have.',
-    intro: 'Don\u2019t know both legs? No problem. If you have one leg, the hypotenuse, and an acute angle, you can still find the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>. This calculator uses the sine-based area rule to get you there.',
+    intro: 'Don\u2019t know both legs? No problem. If you have one leg, the hypotenuse, and an acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>, you can still find the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>. This calculator uses the sine-based area rule to get you there.',
     quickSummary: {
       h2: 'What This Tool Solves',
-      intro: 'This page handles the scenario where you know one side, the hypotenuse c, and one acute angle. Instead of finding the missing leg first, the sine <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area formula</a> jumps straight to the answer.',
+      intro: 'This page handles the scenario where you know one <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, the hypotenuse c, and one acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. Instead of finding the missing leg first, the sine <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area formula</a> jumps straight to the answer.',
       cards: [
         { label: 'Known values', value: 'One leg, hypotenuse c, and one acute angle (A or B)' },
         { label: 'Finds', value: 'Area of the right triangle in square units' },
@@ -872,40 +872,40 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     ],
     diagram: {
       h2: 'Triangle Diagram: Area Using Angle and Sine',
-      intro: 'This diagram labels both acute angles (A and B), the two legs (a and b), and the hypotenuse (c). In Mode 1, the calculator uses side b, hypotenuse c, and angle A. In Mode 2, it uses side a, hypotenuse c, and angle B.',
+      intro: 'This diagram labels both acute angles (A and B), the two legs (a and b), and the hypotenuse (c). In Mode 1, the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> uses <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b, hypotenuse c, and <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. In Mode 2, it uses side a, hypotenuse c, and angle B.',
       caption: 'Right triangle diagram showing legs a and b, hypotenuse c, acute angles A and B, and the sine area formulas.',
       formulaLabel: 'Area = (b \u00D7 c \u00D7 sin(A)) / 2',
       keyLabel: 'Diagram Key',
       sides: {
         a: {
           label: 'a = leg opposite angle A',
-          description: 'Leg a is opposite angle A and adjacent to angle B. It is used in Mode 2 with angle B.'
+          description: 'Leg a is opposite <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A and adjacent to angle B. It is used in Mode 2 with angle B.'
         },
         b: {
           label: 'b = leg opposite angle B',
-          description: 'Leg b is opposite angle B and adjacent to angle A. It is used in Mode 1 with angle A.'
+          description: 'Leg b is opposite <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> B and adjacent to angle A. It is used in Mode 1 with angle A.'
         },
         c: {
           label: 'c = hypotenuse',
-          description: 'The hypotenuse is the longest side, opposite the 90\u00B0 angle. It appears in both <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> formulas.'
+          description: 'The hypotenuse is the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, opposite the 90\u00B0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. It appears in both <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> formulas.'
         }
       },
       result: {
         label: 'Area = half the product of side, hypotenuse, and sine of included angle',
-        description: 'The <a href="/sine-ratio-calculator/" class="text-primary hover:underline">sine function</a> extracts the effective height from the known angle, so the formula computes <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> without needing the missing leg directly.'
+        description: 'The <a href="/sine-ratio-calculator/" class="text-primary hover:underline">sine function</a> extracts the effective height from the known <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>, so the formula computes <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> without needing the missing leg directly.'
       },
       notes: [
-        'Make sure the angle corresponds to the correct side. Angle A pairs with side b; angle B pairs with side a.',
-        'The angle must be in degrees for this calculator. Convert radians to degrees first if needed.',
+        'Make sure the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> corresponds to the correct <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. Angle A pairs with side b; angle B pairs with side a.',
+        'The <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> must be in degrees for this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>. Convert radians to degrees first if needed.',
         'The hypotenuse c must be longer than either leg, or the triangle is not valid.'
       ]
     },
     formulaSection: {
       h2: 'Right Triangle Area From Angle Formulas',
       paragraphs: [
-        'The general <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">triangle area</a> rule says Area = (1/2) \u00D7 side \u00D7 side \u00D7 sin(included angle). In a right triangle, you can apply this using either acute angle together with the hypotenuse and the leg adjacent to that angle.',
-        'Mode 1 uses leg b (adjacent to angle A) and hypotenuse c. Mode 2 uses leg a (adjacent to angle B) and hypotenuse c. Both modes give the same <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> because they describe the same triangle\u2014just from different angle perspectives.',
-        'This approach is especially handy in surveying and physics where angle measurements are easier to take than direct side measurements.'
+        'The general <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">triangle area</a> rule says Area = (1/2) \u00D7 <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> \u00D7 side \u00D7 sin(included <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>). In a right triangle, you can apply this using either acute angle together with the hypotenuse and the leg adjacent to that angle.',
+        'Mode 1 uses leg b (adjacent to <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A) and hypotenuse c. Mode 2 uses leg a (adjacent to angle B) and hypotenuse c. Both modes give the same <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> because they describe the same triangle\u2014just from different angle perspectives.',
+        'This approach is especially handy in surveying and physics where <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a> are easier to take than direct <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> measurements.'
       ],
       formulas: [
         '\\text{<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a>} = (b \\times c \\times \\sin(A)) / 2',
@@ -915,18 +915,18 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     howTo: {
       h2: 'How to Use This Calculator',
       steps: [
-        'Decide which values you know. If you have leg b, hypotenuse c, and angle A, use Mode 1. If you have leg a, hypotenuse c, and angle B, switch to Mode 2.',
-        'Select the correct mode using the tabs or dropdown at the top of the calculator.',
-        'Enter the known leg value into the side field.',
-        'Enter the hypotenuse c. Remember, c must be the longest side.',
-        'Enter the acute angle in degrees. The angle must be between 0\u00B0 and 90\u00B0 (exclusive).',
+        'Decide which values you know. If you have leg b, hypotenuse c, and <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A, use Mode 1. If you have leg a, hypotenuse c, and angle B, switch to Mode 2.',
+        'Select the correct mode using the tabs or dropdown at the top of the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>.',
+        'Enter the known leg value into the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> field.',
+        'Enter the hypotenuse c. Remember, c must be the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>.',
+        'Enter the acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> in degrees. The angle must be between 0\u00B0 and 90\u00B0 (exclusive).',
         'Click Calculate. The result appears with step-by-step substitution so you can follow the math.',
         'Verify the answer makes sense: the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> should be a positive number smaller than (leg \u00D7 hypotenuse) / 2.'
       ]
     },
     example: {
       h2: 'Worked Example: Mode 1 \u2014 Using Side b, Hypotenuse c, and Angle A',
-      intro: 'Given b = 4, c = 5, and angle A = 36.87\u00B0:',
+      intro: 'Given b = 4, c = 5, and <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A = 36.87\u00B0:',
       lines: [
         '\\text{<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a>} = (b \\times c \\times \\sin(A)) / 2',
         '\\text{<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a>} = (4 \\times 5 \\times \\sin(36.87^\\circ)) / 2',
@@ -940,7 +940,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       {
         h2: 'Second Example: Mode 2 \u2014 Using Side a, Hypotenuse c, and Angle B',
         paragraphs: [
-          'Given a = 3, c = 5, and angle B = 53.13\u00B0:'
+          'Given a = 3, c = 5, and <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> B = 53.13\u00B0:'
         ],
         listItems: [
           '<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a> = (a \u00D7 c \u00D7 sin(B)) / 2',
@@ -954,34 +954,34 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       {
         h2: 'What the Result Means',
         paragraphs: [
-          'The <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> tells you the flat space inside the triangle, measured in square units. If your <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> are in meters and the angle is in degrees, the area is in square meters.',
-          'A larger angle (closer to 90\u00B0) with the same sides produces a larger <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>. A smaller angle produces a smaller area. At exactly 0\u00B0 or 90\u00B0, the formula breaks down because sin(0) = 0 and sin(90) = 1 would make this a degenerate case or reduce to the legs formula.'
+          'The <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> tells you the flat space inside the triangle, measured in square units. If your <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> are in meters and the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is in degrees, the area is in square meters.',
+          'A larger <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> (closer to 90\u00B0) with the same sides produces a larger <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>. A smaller angle produces a smaller area. At exactly 0\u00B0 or 90\u00B0, the formula breaks down because sin(0) = 0 and sin(90) = 1 would make this a degenerate case or reduce to the legs formula.'
         ]
       },
       {
         h2: 'When to Use This Calculator',
         paragraphs: [
-          'This calculator saves time when you have partial measurements. Instead of finding the missing leg first and then using the legs formula, you jump straight to the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>.'
+          'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> saves time when you have partial <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a>. Instead of finding the missing leg first and then using the legs formula, you jump straight to the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>.'
         ],
         listTitle: 'Typical scenarios:',
         listItems: [
-          'A surveyor knows the distance to two points and the angle between sightlines.',
-          'A physics problem gives you a force vector magnitude (hypotenuse), a component (leg), and the angle.',
-          'A roofing contractor knows the rafter length (hypotenuse), the run (leg), and the roof pitch angle.',
-          'You measured one wall, the diagonal, and the corner angle in a room layout.'
+          'A surveyor knows the distance to two points and the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> between sightlines.',
+          'A physics problem gives you a force vector magnitude (hypotenuse), a component (leg), and the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
+          'A roofing contractor knows the rafter length (hypotenuse), the run (leg), and the roof pitch <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
+          'You measured one wall, the diagonal, and the corner <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> in a room layout.'
         ]
       },
       {
         h2: 'Common Mistakes',
         paragraphs: [
-          'The angle-based <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area formula</a> has more moving parts than the legs method, so mistakes happen more often. Watch out for these.'
+          'The <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-based <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area formula</a> has more moving parts than the legs method, so mistakes happen more often. Watch out for these.'
         ],
         listItems: [
-          'Using degrees when the calculator expects radians, or vice versa \u2014 This calculator expects degrees. If your angle is in radians, convert it first (multiply by 180/\u03C0).',
-          'Pairing the wrong angle with the wrong side \u2014 Angle A must go with side b (adjacent to A). Angle B must go with side a (adjacent to B). Swapping them gives a wrong answer.',
-          'Using the wrong side with the hypotenuse \u2014 The formula needs one leg and the hypotenuse. Do not enter two legs or two angles.',
+          'Using degrees when the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> expects radians, or vice versa \u2014 This calculator expects degrees. If your <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is in radians, convert it first (multiply by 180/\u03C0).',
+          'Pairing the wrong <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> with the wrong <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> \u2014 Angle A must go with side b (adjacent to A). Angle B must go with side a (adjacent to B). Swapping them gives a wrong answer.',
+          'Using the wrong <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> with the hypotenuse \u2014 The formula needs one leg and the hypotenuse. Do not enter two legs or two angles.',
           'Forgetting to divide by 2 \u2014 The product b \u00D7 c \u00D7 sin(A) is double the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>. You must halve it.',
-          'Entering an angle of 0\u00B0 or 90\u00B0 \u2014 An angle of 0\u00B0 gives zero <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>. An angle of 90\u00B0 is the right angle itself, not an acute angle. Both are invalid inputs.'
+          'Entering an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of 0\u00B0 or 90\u00B0 \u2014 An angle of 0\u00B0 gives zero <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>. An angle of 90\u00B0 is the right angle itself, not an acute angle. Both are invalid inputs.'
         ]
       }
     ],
@@ -999,7 +999,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       },
       {
         question: 'Why does the formula use the sine function?',
-        answer: 'The sine of the included angle converts the hypotenuse and adjacent leg into an effective base-times-height product. It extracts the perpendicular height without measuring it directly.'
+        answer: 'The sine of the included <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> converts the hypotenuse and adjacent leg into an effective base-times-height product. It extracts the perpendicular height without measuring it directly.'
       },
       {
         question: 'What does the area result actually tell me?',
@@ -1007,11 +1007,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       },
       {
         question: 'Can I use this if I know both legs?',
-        answer: 'You can, but the legs formula <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a> = (a \u00D7 b) / 2 is simpler and does not need an angle. Use the right <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">triangle area</a> from legs calculator instead.'
+        answer: 'You can, but the legs formula <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a> = (a \u00D7 b) / 2 is simpler and does not need an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. Use the right <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">triangle area</a> from legs calculator instead.'
       },
       {
         question: 'Does the angle need to be in degrees or radians?',
-        answer: 'This calculator expects degrees. If your angle is in radians, multiply by 180/\u03C0 to convert it before entering.'
+        answer: 'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> expects degrees. If your <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is in radians, multiply by 180/\u03C0 to convert it before entering.'
       }
     ]
   },
@@ -1026,7 +1026,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     intro: 'Already know the <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a> and <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> of your right triangle? Then finding the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> is just one multiplication away. This calculator handles that specific case.',
     quickSummary: {
       h2: 'What This Tool Solves',
-      intro: 'This page covers a less common but powerful <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> method: using the incircle radius (r) and the <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> (s). It is most useful in advanced geometry problems and competition math where these values are already computed.',
+      intro: 'This page covers a less common but powerful <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> method: using the incircle <a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a> (r) and the <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> (s). It is most useful in advanced geometry problems and competition math where these values are already computed.',
       cards: [
         { label: 'Known values', value: 'Inradius r and semiperimeter s' },
         { label: 'Finds', value: 'Area of the right triangle in square units' },
@@ -1043,22 +1043,22 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     },
     diagram: {
       h2: 'Triangle Diagram: Area From Inradius and Semiperimeter',
-      intro: 'The diagram shows a right triangle with its inscribed circle (incircle). The incircle touches all three sides. Its radius is r, and the <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> s is half the sum of all three sides.',
+      intro: 'The diagram shows a right triangle with its inscribed circle (incircle). The incircle touches all three sides. Its <a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a> is r, and the <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> s is half the sum of all three sides.',
       caption: 'Right triangle diagram showing the incircle with radius r, the three sides a, b, and c, and the semiperimeter relationship s = (a + b + c) / 2.',
       formulaLabel: 'Area = r \u00D7 s',
       keyLabel: 'Diagram Key',
       sides: {
         a: {
           label: 'a = first leg',
-          description: 'One of the two sides forming the right angle. It is tangent to the inscribed circle.'
+          description: 'One of the two sides forming the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. It is tangent to the inscribed circle.'
         },
         b: {
           label: 'b = second leg',
-          description: 'The other side forming the right angle. Also tangent to the inscribed circle.'
+          description: 'The other <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> forming the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. Also tangent to the inscribed circle.'
         },
         c: {
           label: 'c = hypotenuse',
-          description: 'The longest side, opposite the right angle. The incircle touches it at one tangent point.'
+          description: 'The longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. The incircle touches it at one tangent point.'
         }
       },
       result: {
@@ -1074,7 +1074,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     formulaSection: {
       h2: 'Right Triangle Area From Semiperimeter Formula',
       paragraphs: [
-        'Every triangle has an inscribed circle (incircle) that touches all three sides. The radius of this circle is called the <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a>, labeled r. The <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> s is half the total <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>: s = (a + b + c) / 2.',
+        'Every triangle has an inscribed circle (incircle) that touches all three sides. The <a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a> of this circle is called the <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a>, labeled r. The <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> s is half the total <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>: s = (a + b + c) / 2.',
         'The beautiful identity <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a> = r \u00D7 s connects these two values directly to the area. It works because the incircle divides the triangle into three smaller triangles, each with the same height r and bases equal to the three sides. Their combined area equals r \u00D7 s.',
         'For right triangles specifically, there is a handy shortcut: r = (a + b \u2013 c) / 2. So if you know the three sides, you can find r and s quickly and then multiply.'
       ],
@@ -1141,7 +1141,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
         ],
         listItems: [
           'Confusing <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> s with <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> P \u2014 The semiperimeter is <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">half the perimeter</a>. If you enter the full perimeter instead of s, your <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> will be doubled.',
-          'Using the <a href="/right-triangle-circumradius-calculator/" class="text-primary hover:underline">circumradius</a> instead of the <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a> \u2014 The circumradius R is the radius of the circle around the triangle, not the one inside it. For a right triangle, R = c / 2. The inradius r is always smaller.',
+          'Using the <a href="/right-triangle-circumradius-calculator/" class="text-primary hover:underline">circumradius</a> instead of the <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a> \u2014 The circumradius R is the <a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a> of the circle around the triangle, not the one inside it. For a right triangle, R = c / 2. The inradius r is always smaller.',
           'Forgetting the formula is <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a> = r \u00D7 s \u2014 Some students try to divide by 2 again, but that is already built into the <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a>. Just multiply r and s directly.',
           'Entering zero or negative values \u2014 Both r and s must be positive. A zero or negative <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a> means your triangle data is incorrect.'
         ]
@@ -1149,13 +1149,13 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       {
         h2: 'How to Find r and s From the Three Sides',
         paragraphs: [
-          'If you know legs a and b and hypotenuse c, you can compute r and s yourself before using this calculator.'
+          'If you know legs a and b and hypotenuse c, you can compute r and s yourself before using this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>.'
         ],
         listItems: [
           '<a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">Semiperimeter</a>: s = (a + b + c) / 2',
           '<a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">Inradius</a> for any right triangle: r = (a + b \u2013 c) / 2',
           'Example: For a 5-12-13 triangle, s = 15 and r = 2',
-          'You can also find r using the <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> calculator and the radius calculator on this site.'
+          'You can also find r using the <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> calculator and the <a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a> calculator on this site.'
         ]
       }
     ],
@@ -1169,7 +1169,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     faqs: [
       {
         question: 'What is the formula for area using inradius and semiperimeter?',
-        answer: 'The formula is <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a> = r \u00D7 s, where r is the <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a> (radius of the inscribed circle) and s is the <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> (<a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">half the perimeter</a>).'
+        answer: 'The formula is <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a> = r \u00D7 s, where r is the <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a> (<a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a> of the inscribed circle) and s is the <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> (<a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">half the perimeter</a>).'
       },
       {
         question: 'How do I find the inradius of a right triangle?',
@@ -1197,10 +1197,10 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     metaDescription: 'Use this right triangle area from altitude calculator to find area from hypotenuse c and altitude h with formula, steps, and examples.',
     formulaSlug: 'area-ch',
     toolPurpose: 'Enter the hypotenuse and the altitude drawn to it, and this calculator computes the area of the right triangle. It shows the formula, step-by-step substitution, and a diagram that makes the geometry easy to visualize.',
-    intro: 'When you know the hypotenuse and the perpendicular distance from the right-angle vertex to the hypotenuse, you can find the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> in one step. This calculator handles that case.',
+    intro: 'When you know the hypotenuse and the perpendicular distance from the right-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex to the hypotenuse, you can find the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> in one step. This calculator handles that case.',
     quickSummary: {
       h2: 'What This Tool Solves',
-      intro: 'This page covers the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>-based <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> method. The altitude h is the perpendicular line segment from the right-angle vertex to the hypotenuse. Combined with the hypotenuse length, it gives the area directly.',
+      intro: 'This page covers the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>-based <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> method. The altitude h is the perpendicular line segment from the right-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex to the hypotenuse. Combined with the hypotenuse length, it gives the area directly.',
       cards: [
         { label: 'Known values', value: 'Hypotenuse c and altitude h (drawn to the hypotenuse)' },
         { label: 'Finds', value: 'Area of the right triangle in square units' },
@@ -1217,27 +1217,27 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     },
     diagram: {
       h2: 'Triangle Diagram: Area From Hypotenuse and Altitude',
-      intro: 'The diagram shows the right triangle with the hypotenuse c as the base and the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h drawn perpendicular from the right-angle vertex down to c. This altitude splits the hypotenuse into two segments.',
+      intro: 'The diagram shows the right triangle with the hypotenuse c as the base and the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h drawn perpendicular from the right-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex down to c. This altitude splits the hypotenuse into two segments.',
       caption: 'Right triangle diagram showing hypotenuse c as the base, altitude h drawn from the right-angle vertex perpendicular to c, and the formula Area = (c \u00D7 h) / 2.',
       formulaLabel: 'Area = (c \u00D7 h) / 2',
       keyLabel: 'Diagram Key',
       sides: {
         a: {
           label: 'a = first leg',
-          description: 'One of the two sides forming the right angle. Not directly used in this formula, but the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h is derived from both legs and the hypotenuse.'
+          description: 'One of the two sides forming the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. Not directly used in this formula, but the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h is derived from both legs and the hypotenuse.'
         },
         b: {
           label: 'b = second leg',
-          description: 'The other side forming the right angle. Together with leg a, it determines the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>: h = (a \u00D7 b) / c.'
+          description: 'The other <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> forming the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. Together with leg a, it determines the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>: h = (a \u00D7 b) / c.'
         },
         c: {
           label: 'c = hypotenuse (base in this method)',
-          description: 'The longest side of the right triangle. In this formula, c acts as the base of the triangle.'
+          description: 'The longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> of the right triangle. In this formula, c acts as the base of the triangle.'
         }
       },
       result: {
         label: 'h = altitude to the hypotenuse',
-        description: 'The perpendicular distance from the right-angle vertex to the hypotenuse. Multiplied by c and divided by 2, it gives the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>.'
+        description: 'The perpendicular distance from the right-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex to the hypotenuse. Multiplied by c and divided by 2, it gives the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>.'
       },
       notes: [
         'The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h is NOT the same as leg a or leg b. It is the perpendicular dropped from the 90\u00B0 vertex to the hypotenuse.',
@@ -1249,7 +1249,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       h2: 'Right Triangle Area From Altitude Formula',
       paragraphs: [
         'The standard <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area formula</a> for any triangle is Area = (base \u00D7 height) / 2. In this method, the hypotenuse c is the base, and the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h is the corresponding height\u2014the perpendicular distance from the opposite vertex to that base.',
-        'For a right triangle, this <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h drops from the right-angle vertex straight down to the hypotenuse. It creates two smaller right triangles inside the original one, each similar to the whole triangle. This relationship is the foundation of the geometric mean theorem.',
+        'For a right triangle, this <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h drops from the right-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex straight down to the hypotenuse. It creates two smaller right triangles inside the original one, each similar to the whole triangle. This relationship is the foundation of the geometric mean theorem.',
         'The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h is related to the legs by h = (a \u00D7 b) / c. So even though this formula uses h and c instead of a and b, it produces the same <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> as the legs formula. They are algebraically equivalent.'
       ],
       formulas: ['\\text{Area} = (c \\times h) / 2']
@@ -1257,11 +1257,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     howTo: {
       h2: 'How to Use This Calculator',
       steps: [
-        'Identify the hypotenuse c of your right triangle. This is the side opposite the right angle and always the longest side.',
-        'Identify the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h. This is the perpendicular line from the right-angle vertex to the hypotenuse. It is not the same as either leg.',
+        'Identify the hypotenuse c of your right triangle. This is the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and always the longest side.',
+        'Identify the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h. This is the perpendicular line from the right-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex to the hypotenuse. It is not the same as either leg.',
         'Enter c into the Hypotenuse field.',
         'Enter h into the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">Altitude</a> field.',
-        'Click Calculate. The calculator multiplies c by h, divides by 2, and shows the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> with step-by-step work.',
+        'Click Calculate. The <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> multiplies c by h, divides by 2, and shows the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> with step-by-step work.',
         'Check the diagram to make sure you used the correct <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>, not a leg.'
       ]
     },
@@ -1294,7 +1294,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
           'A geometry problem gives you the hypotenuse and the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> and asks for the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> directly.',
           'You are studying the geometric mean theorem and need to verify <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> relationships.',
           'A construction drawing shows the span (hypotenuse) and the perpendicular height of a triangular brace.',
-          'You calculated h from other measurements and want a quick <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> check without reconstructing both legs.'
+          'You calculated h from other <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a> and want a quick <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> check without reconstructing both legs.'
         ]
       },
       {
@@ -1307,13 +1307,13 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       {
         h2: 'Common Mistakes',
         paragraphs: [
-          'The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude formula</a> is straightforward, but confusing h with other measurements is the top source of wrong answers.'
+          'The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude formula</a> is straightforward, but confusing h with other <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a> is the top source of wrong answers.'
         ],
         listItems: [
           'Using a leg instead of the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> \u2014 Leg a or leg b is not the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude to the hypotenuse</a>. The altitude h is a separate segment drawn inside the triangle, perpendicular to c.',
           'Forgetting to divide by 2 \u2014 Multiplying c \u00D7 h gives the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> of a parallelogram, not the triangle. Always divide by 2.',
-          'Confusing h with the hypotenuse c \u2014 The variable h stands for <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> (height), not hypotenuse. They are completely different measurements.',
-          'Using an <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> that belongs to a different base \u2014 This formula specifically uses the altitude drawn to the hypotenuse. The altitude from a different vertex to a different side is a different length.',
+          'Confusing h with the hypotenuse c \u2014 The variable h stands for <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> (height), not hypotenuse. They are completely different <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a>.',
+          'Using an <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> that belongs to a different base \u2014 This formula specifically uses the altitude drawn to the hypotenuse. The altitude from a different vertex to a different <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is a different length.',
           'Entering the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> of a different triangle \u2014 Make sure h actually belongs to the triangle with hypotenuse c. If h was measured for a different triangle, the result is meaningless.'
         ]
       },
@@ -1341,7 +1341,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     faqs: [
       {
         question: 'What is the altitude h in a right triangle?',
-        answer: 'The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h is the perpendicular line segment drawn from the right-angle vertex to the hypotenuse. It is not the same as either leg.'
+        answer: 'The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h is the perpendicular line segment drawn from the right-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex to the hypotenuse. It is not the same as either leg.'
       },
       {
         question: 'What is the formula for area using the altitude?',

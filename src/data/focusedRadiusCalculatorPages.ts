@@ -105,10 +105,10 @@ export const focusedRadiusCalculatorPages: FocusedRadiusCalculatorPage[] = [
     modes: ['Inradius', 'Radius Relation r'],
     intro: [
       'Use this right triangle inradius calculator when you know leg a, leg b, and hypotenuse c and want to find the inradius r. The inradius is the radius of the incircle, the circle that fits inside the right triangle and touches all three sides.',
-      'This focused calculator is helpful when a geometry problem gives all three side lengths and asks for the circle inside the triangle. It uses the standard right triangle inradius formula, so the side labeled c must be the hypotenuse.',
+      'This focused calculator is helpful when a geometry problem gives all three <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> and asks for the circle inside the triangle. It uses the standard right triangle inradius formula, so the side labeled c must be the hypotenuse.',
     ],
     calculatorNote:
-      'Enter positive values for a, b, and c. The hypotenuse c should be the longest side, and the three side lengths should form a valid right triangle.',
+      'Enter positive values for a, b, and c. The hypotenuse c should be the longest side, and the three <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> should form a valid right triangle.',
     formulaSection: {
       formula: 'r = (a + b − c) / 2',
       paragraphs: [
@@ -136,7 +136,7 @@ export const focusedRadiusCalculatorPages: FocusedRadiusCalculatorPage[] = [
       'Enter the length of leg a.',
       'Enter the length of leg b.',
       'Enter the length of hypotenuse c.',
-      'Check that c is the longest side and that the side lengths describe a right triangle.',
+      'Check that c is the longest side and that the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> describe a right triangle.',
       'Select Calculate Inradius to get r.',
     ],
     example: {
@@ -146,7 +146,7 @@ export const focusedRadiusCalculatorPages: FocusedRadiusCalculatorPage[] = [
     },
     resultMeaning: [
       'The result r is the radius of the incircle. If r = 2, then a circle with radius 2 units can fit inside the right triangle while touching all three sides.',
-      'The inradius is useful when you need the size of the inscribed circle, the distance from the incenter to each side, or a quick way to connect side lengths with area and semiperimeter.',
+      'The inradius is useful when you need the size of the inscribed circle, the distance from the incenter to each side, or a quick way to connect <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> with <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> and <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a>.',
     ],
     radiusRelation: [
       'On the main right triangle radius calculator, this same calculation appears as the Inradius and Radius Relation r mode.',
@@ -154,43 +154,43 @@ export const focusedRadiusCalculatorPages: FocusedRadiusCalculatorPage[] = [
     ],
     useCases: [
       'Finding the radius of the incircle in a right triangle.',
-      'Checking homework problems that give all three side lengths.',
-      'Using area and semiperimeter relationships with right triangles.',
-      'Comparing the inradius r with the circumradius R.',
+      'Checking homework problems that give all three <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a>.',
+      'Using <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> and <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> relationships with right triangles.',
+      'Comparing the inradius r with the <a href="/right-triangle-circumradius-calculator/" class="text-primary hover:underline">circumradius</a> R.',
       'Solving geometry problems where an inner circle touches all three sides.',
     ],
     commonMistakes: [
       'Using c as a leg instead of the hypotenuse.',
       'Forgetting to divide a + b − c by 2.',
-      'Using the circumradius formula R = c / 2 when the question asks for inradius r.',
-      'Entering side lengths that do not form a valid right triangle.',
+      'Using the <a href="/right-triangle-circumradius-calculator/" class="text-primary hover:underline">circumradius</a> formula R = c / 2 when the question asks for inradius r.',
+      'Entering <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> that do not form a valid right triangle.',
       'Mixing units, such as entering two sides in inches and one side in centimeters.',
     ],
     relatedLinks: [
       {
         href: '/right-triangle-radius-calculator/',
         label: 'right triangle radius calculator',
-        description: 'Use the parent calculator for inradius, circumradius, and radius relation modes.',
+        description: 'Use the parent calculator for inradius, <a href="/right-triangle-circumradius-calculator/" class="text-primary hover:underline">circumradius</a>, and radius relation modes.',
       },
       {
         href: '/right-triangle-circumradius-calculator/',
         label: 'right triangle circumradius calculator',
-        description: 'Find circumradius R from the hypotenuse c.',
+        description: 'Find <a href="/right-triangle-circumradius-calculator/" class="text-primary hover:underline">circumradius</a> R from the hypotenuse c.',
       },
       {
         href: '/right-triangle-area-calculator/',
         label: 'right triangle area calculator',
-        description: 'Calculate area from the right triangle side lengths.',
+        description: 'Calculate <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> from the right triangle <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a>.',
       },
       {
         href: '/right-triangle-semiperimeter-calculator/',
         label: 'right triangle semiperimeter calculator',
-        description: 'Find semiperimeter before using formulas that involve s.',
+        description: 'Find <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> before using formulas that involve s.',
       },
       {
         href: '/right-triangle-side-calculator/',
         label: 'right triangle side calculator',
-        description: 'Find a missing side before calculating the inradius.',
+        description: 'Find a <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">missing side</a> before calculating the inradius.',
       },
     ],
     faqs: [
@@ -212,12 +212,12 @@ export const focusedRadiusCalculatorPages: FocusedRadiusCalculatorPage[] = [
       {
         question: 'Can I find the inradius if I only know the two legs?',
         answer:
-          'Yes, but first find the hypotenuse c using the Pythagorean theorem or a right triangle side calculator, then use r = (a + b − c) / 2.',
+          'Yes, but first find the hypotenuse c using the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem</a> or a right triangle side calculator, then use r = (a + b − c) / 2.',
       },
       {
         question: 'Is the inradius the same as the circumradius?',
         answer:
-          'No. The inradius r belongs to the circle inside the triangle, while the circumradius R belongs to the circle passing through the three vertices.',
+          'No. The inradius r belongs to the circle inside the triangle, while the <a href="/right-triangle-circumradius-calculator/" class="text-primary hover:underline">circumradius</a> R belongs to the circle passing through the three vertices.',
       },
     ],
   },
@@ -292,13 +292,13 @@ export const focusedRadiusCalculatorPages: FocusedRadiusCalculatorPage[] = [
       'Finding the radius of the circle through all three vertices of a right triangle.',
       'Using a known hypotenuse to work with circumcircle geometry.',
       'Checking whether a radius or diameter value matches a right triangle diagram.',
-      'Comparing circumradius R with inradius r.',
+      'Comparing circumradius R with <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a> r.',
       'Solving problems that mention the midpoint of the hypotenuse.',
     ],
     commonMistakes: [
       'Entering a leg length instead of the hypotenuse c.',
       'Forgetting that R is half of c, not the full hypotenuse.',
-      'Confusing circumradius R with inradius r.',
+      'Confusing circumradius R with <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a> r.',
       'Calling the hypotenuse c a leg.',
       'Using zero or a negative value for c.',
     ],
@@ -306,22 +306,22 @@ export const focusedRadiusCalculatorPages: FocusedRadiusCalculatorPage[] = [
       {
         href: '/right-triangle-radius-calculator/',
         label: 'right triangle radius calculator',
-        description: 'Use the parent calculator for inradius, circumradius, and radius relation modes.',
+        description: 'Use the parent calculator for <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a>, circumradius, and radius relation modes.',
       },
       {
         href: '/right-triangle-inradius-calculator/',
         label: 'right triangle inradius calculator',
-        description: 'Find inradius r from both legs and the hypotenuse.',
+        description: 'Find <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a> r from both legs and the hypotenuse.',
       },
       {
         href: '/right-triangle-side-calculator/',
         label: 'right triangle side calculator',
-        description: 'Find a missing side before using radius formulas.',
+        description: 'Find a <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">missing side</a> before using radius formulas.',
       },
       {
         href: '/right-triangle-area-calculator/',
         label: 'right triangle area calculator',
-        description: 'Calculate the area of a right triangle from side lengths.',
+        description: 'Calculate the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area of a right triangle</a> from <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a>.',
       },
       {
         href: '/pythagorean-theorem-calculator/',

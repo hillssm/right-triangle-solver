@@ -155,7 +155,7 @@ export const FOCUSED_PROJECTION_CALCULATOR_PAGES: FocusedProjectionCalculatorPag
     },
     intro: [
       'Use this calculator when you know leg a and the hypotenuse c, and you need the projection segment p on the hypotenuse. It focuses on one projection theorem only, so the inputs stay simple.',
-      'Projection p is the part of the hypotenuse connected with leg a. In many geometry problems, this small segment is the missing piece needed before finding altitude, the other projection, or checking similar-triangle work.'
+      'Projection p is the part of the hypotenuse connected with leg a. In many geometry problems, this small segment is the missing piece needed before finding <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>, the other projection, or checking similar-triangle work.'
     ],
     calculatorNote:
       'Enter positive values for leg a and hypotenuse c. Since c is always the hypotenuse, c must be greater than a.',
@@ -173,9 +173,9 @@ export const FOCUSED_PROJECTION_CALCULATOR_PAGES: FocusedProjectionCalculatorPag
     },
     diagram: {
       intro:
-        'The diagram marks the altitude h dropped to the hypotenuse c. That altitude divides c into projection p beside leg a and projection q beside leg b.',
+        'The diagram marks the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h dropped to the hypotenuse c. That altitude divides c into projection p beside leg a and projection q beside leg b.',
       caption:
-        'Right triangle with leg a, leg b, hypotenuse c, altitude h, and hypotenuse projections p and q.',
+        'Right triangle with leg a, leg b, hypotenuse c, <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h, and hypotenuse projections p and q.',
       notes: [
         'Projection p lies on the hypotenuse, not on leg a.',
         'The full hypotenuse is c, and the two pieces satisfy c = p + q.',
@@ -194,11 +194,11 @@ export const FOCUSED_PROJECTION_CALCULATOR_PAGES: FocusedProjectionCalculatorPag
       intro: 'Suppose leg a = 6 and hypotenuse c = 10.',
       lines: ['p = a² / c', 'p = 6² / 10', 'p = 36 / 10', 'p = 3.6'],
       explanation:
-        'Projection p is 3.6 units. That means the altitude touches the hypotenuse at a point 3.6 units along the side associated with leg a.'
+        'Projection p is 3.6 units. That means the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> touches the hypotenuse at a point 3.6 units along the side associated with leg a.'
     },
     resultMeaning: [
       'The result is a length on the hypotenuse, not a new side outside the triangle.',
-      'A smaller p means the foot of the altitude is closer to the end of the hypotenuse near leg a. A larger p means that endpoint takes up more of the hypotenuse.',
+      'A smaller p means the foot of the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> is closer to the end of the hypotenuse near leg a. A larger p means that endpoint takes up more of the hypotenuse.',
       'If you also know q, the two projection segments should add to c.'
     ],
     whenUse: [
@@ -228,7 +228,7 @@ export const FOCUSED_PROJECTION_CALCULATOR_PAGES: FocusedProjectionCalculatorPag
       },
       {
         question: 'What does projection p mean in a right triangle?',
-        answer: 'Projection p is the part of the hypotenuse associated with leg a. It is created when the altitude from the right angle meets the hypotenuse.'
+        answer: 'Projection p is the part of the hypotenuse associated with leg a. It is created when the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> from the right angle meets the hypotenuse.'
       },
       {
         question: 'Can projection p be longer than the hypotenuse?',
@@ -299,9 +299,9 @@ export const FOCUSED_PROJECTION_CALCULATOR_PAGES: FocusedProjectionCalculatorPag
     },
     diagram: {
       intro:
-        'In the diagram, altitude h splits the hypotenuse c into p and q. Projection q is the hypotenuse segment associated with leg b.',
+        'In the diagram, <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h splits the hypotenuse c into p and q. Projection q is the hypotenuse segment associated with leg b.',
       caption:
-        'Right triangle diagram showing leg a, leg b, hypotenuse c, altitude h, projection p, and projection q.',
+        'Right triangle diagram showing leg a, leg b, hypotenuse c, <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h, projection p, and projection q.',
       notes: [
         'q is measured along the hypotenuse.',
         'q is paired with leg b in the formula q = b² / c.',
@@ -330,7 +330,7 @@ export const FOCUSED_PROJECTION_CALCULATOR_PAGES: FocusedProjectionCalculatorPag
     whenUse: [
       'You know leg b and hypotenuse c.',
       'A geometry problem asks for the projection of leg b on the hypotenuse.',
-      'You need q before finding altitude h from h² = p × q.',
+      'You need q before finding <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h from h² = p × q.',
       'You want to compare the two hypotenuse segments p and q.'
     ],
     commonMistakes: [
@@ -354,7 +354,7 @@ export const FOCUSED_PROJECTION_CALCULATOR_PAGES: FocusedProjectionCalculatorPag
       },
       {
         question: 'What does q represent?',
-        answer: 'q is the projection segment on the hypotenuse that corresponds to leg b. It is one of the two pieces created by the altitude.'
+        answer: 'q is the projection segment on the hypotenuse that corresponds to leg b. It is one of the two pieces created by the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>.'
       },
       {
         question: 'Is q the same as leg b?',
@@ -427,7 +427,7 @@ export const FOCUSED_PROJECTION_CALCULATOR_PAGES: FocusedProjectionCalculatorPag
       intro:
         'The diagram shows projection p on the hypotenuse beside leg a. When c and p are known, leg a is found from the product c × p.',
       caption:
-        'Right triangle with labeled leg a, leg b, hypotenuse c, altitude h, and projections p and q.',
+        'Right triangle with labeled leg a, leg b, hypotenuse c, <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h, and projections p and q.',
       notes: [
         'Projection p is paired with leg a.',
         'The value c is the whole hypotenuse, not the other leg.',
@@ -553,7 +553,7 @@ export const FOCUSED_PROJECTION_CALCULATOR_PAGES: FocusedProjectionCalculatorPag
       intro:
         'The diagram places q on the hypotenuse near leg b. That pairing is why q appears in the formula for leg b.',
       caption:
-        'Right triangle diagram with leg a, leg b, hypotenuse c, altitude h, projection p, and projection q.',
+        'Right triangle diagram with leg a, leg b, hypotenuse c, <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h, projection p, and projection q.',
       notes: [
         'Projection q is the segment connected with leg b.',
         'Projection p belongs to leg a, so it is not used here.',
@@ -582,7 +582,7 @@ export const FOCUSED_PROJECTION_CALCULATOR_PAGES: FocusedProjectionCalculatorPag
     whenUse: [
       'You have c and q from a diagram or word problem.',
       'You need leg b without first solving for angles.',
-      'You are working with similar triangles formed by the altitude.',
+      'You are working with <a href="/similar-right-triangles-calculator/" class="text-primary hover:underline">similar triangles</a> formed by the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>.',
       'You want to verify that q was labeled on the correct side.'
     ],
     commonMistakes: [
@@ -659,7 +659,7 @@ export const FOCUSED_PROJECTION_CALCULATOR_PAGES: FocusedProjectionCalculatorPag
     },
     intro: [
       'Use this calculator when the two hypotenuse projection segments p and q are known and the full hypotenuse c is missing.',
-      'The altitude from the right angle divides the hypotenuse into two pieces. Add those two pieces together, and you get the whole hypotenuse.'
+      'The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> from the right angle divides the hypotenuse into two pieces. Add those two pieces together, and you get the whole hypotenuse.'
     ],
     calculatorNote:
       'Enter positive values for projection p and projection q. Both values are lengths along the hypotenuse.',
@@ -676,9 +676,9 @@ export const FOCUSED_PROJECTION_CALCULATOR_PAGES: FocusedProjectionCalculatorPag
     },
     diagram: {
       intro:
-        'The diagram shows c as the whole hypotenuse. The altitude h touches c at a point that separates it into p and q.',
+        'The diagram shows c as the whole hypotenuse. The <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h touches c at a point that separates it into p and q.',
       caption:
-        'Right triangle with hypotenuse c split into projection p and projection q by altitude h.',
+        'Right triangle with hypotenuse c split into projection p and projection q by <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h.',
       notes: [
         'Projection p and projection q are measured on the same straight hypotenuse.',
         'The two projection segments do not overlap.',
@@ -691,7 +691,7 @@ export const FOCUSED_PROJECTION_CALCULATOR_PAGES: FocusedProjectionCalculatorPag
       'Enter p in the first field.',
       'Enter q in the second field.',
       'Calculate to find hypotenuse c.',
-      'Use c with other projection formulas if you need leg a, leg b, or altitude h.'
+      'Use c with other projection formulas if you need leg a, leg b, or <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> h.'
     ],
     example: {
       intro: 'Suppose projection p = 3.6 and projection q = 6.4.',
@@ -701,7 +701,7 @@ export const FOCUSED_PROJECTION_CALCULATOR_PAGES: FocusedProjectionCalculatorPag
     },
     resultMeaning: [
       'The result is the total hypotenuse length c.',
-      'It is not a leg, and it is not the altitude. It is the side opposite the right angle.',
+      'It is not a leg, and it is not the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>. It is the side opposite the right angle.',
       'If p and q came from the same triangle, the output should match the hypotenuse shown in the diagram.'
     ],
     whenUse: [

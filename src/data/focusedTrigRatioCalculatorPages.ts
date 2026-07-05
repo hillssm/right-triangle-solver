@@ -103,7 +103,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
         'The sine of angle A is 0.6. This means the opposite side is 60% of the hypotenuse length. If you need the actual angle, take the inverse sine: A = arcsin(0.6) \u2248 36.87\u00b0.'
     },
     whatResultMeans: [
-      'The output is a unitless ratio. It tells you how the opposite side compares to the hypotenuse in size. A result of 0.5 means the opposite side is exactly half the hypotenuse \u2014 which happens in a 30-60-90 triangle where A = 30\u00b0.',
+      'The output is a unitless ratio. It tells you how the opposite side compares to the hypotenuse in size. A result of 0.5 means the opposite side is exactly half the hypotenuse \u2014 which happens in a <a href="/30-60-90-triangle-calculator/" class="text-primary hover:underline">30-60-90 triangle</a> where A = 30\u00b0.',
       'Small values (close to 0) mean angle A is small and the opposite side is short relative to the hypotenuse. Values closer to 1 mean angle A is large (approaching 90\u00b0) and the opposite side is nearly as long as the hypotenuse.',
       'Since sin(A) is a ratio of two lengths, it has no units. Whether your triangle is measured in centimeters, inches, or meters, the sine value stays the same as long as both sides use the same unit.'
     ],
@@ -247,7 +247,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
         'Entering b larger than c. In a valid right triangle, the hypotenuse is always the longest side. If b exceeds c, your values do not form a right triangle.',
         'Reversing the fraction. Writing c / b gives the secant, not the cosine.',
         'Mixing the adjacent side with the hypotenuse label. Double-check which side is opposite the right angle (that is the hypotenuse) and which forms part of angle A (that is the adjacent side).',
-        'Using side lengths measured in different units without converting first.'
+        'Using <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> measured in different units without converting first.'
       ]
     },
     relatedLinks: [
@@ -308,7 +308,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
     },
     introHeading: 'How This Tangent Ratio Calculator Works',
     intro: [
-      'Tangent is the third of the primary trig ratios, and it works a little differently from sine and cosine. Instead of comparing a leg to the hypotenuse, tangent compares one leg to the other \u2014 specifically, the opposite side to the adjacent side. This makes it especially useful in slope and angle-of-elevation problems.',
+      'Tangent is the third of the primary <a href="/right-triangle-trig-ratios-calculator/" class="text-primary hover:underline">trig ratios</a>, and it works a little differently from sine and cosine. Instead of comparing a leg to the hypotenuse, tangent compares one leg to the other \u2014 specifically, the opposite side to the adjacent side. This makes it especially useful in slope and angle-of-elevation problems.',
       'This calculator divides the opposite side a by the adjacent side b and gives you tan(A). No need to pull out a calculator app \u2014 just enter your two leg lengths and get the answer.'
     ],
     calculatorNote:
@@ -346,7 +346,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
     },
     whatResultMeans: [
       'Tangent tells you the steepness of the triangle from angle A\u2019s perspective. Think of it as a rise-over-run calculation.',
-      'A tangent of 1 means the opposite and adjacent sides are equal, which happens in a 45-45-90 triangle. Values below 1 mean the opposite side is shorter than the adjacent side \u2014 the triangle is wider than it is tall. Values above 1 mean the opposite side is longer \u2014 the triangle is taller than it is wide.',
+      'A tangent of 1 means the opposite and adjacent sides are equal, which happens in a <a href="/45-45-90-triangle-calculator/" class="text-primary hover:underline">45-45-90 triangle</a>. Values below 1 mean the opposite side is shorter than the adjacent side \u2014 the triangle is wider than it is tall. Values above 1 mean the opposite side is longer \u2014 the triangle is taller than it is wide.',
       'In practical terms, tangent is the slope of the hypotenuse line when you stand at angle A.'
     ],
     whenToUse: {
@@ -636,7 +636,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
       {
         question: 'What is sec(45\u00b0)?',
         answer:
-          'In a 45-45-90 triangle, the hypotenuse is \u221a2 times the leg. So sec(45\u00b0) = \u221a2 \u2248 1.4142.'
+          'In a <a href="/45-45-90-triangle-calculator/" class="text-primary hover:underline">45-45-90 triangle</a>, the hypotenuse is \u221a2 times the leg. So sec(45\u00b0) = \u221a2 \u2248 1.4142.'
       },
       {
         question: 'Is secant used in real-world applications?',
@@ -756,7 +756,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
       {
         question: 'What is csc(30\u00b0)?',
         answer:
-          'In a 30-60-90 triangle, sin(30\u00b0) = 0.5, so csc(30\u00b0) = 1 / 0.5 = 2. The hypotenuse is exactly twice the opposite side.'
+          'In a <a href="/30-60-90-triangle-calculator/" class="text-primary hover:underline">30-60-90 triangle</a>, sin(30\u00b0) = 0.5, so csc(30\u00b0) = 1 / 0.5 = 2. The hypotenuse is exactly twice the opposite side.'
       },
       {
         question: 'When would I use cosecant instead of sine?',

@@ -117,7 +117,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     metaTitle:
       'Pythagorean Triples Calculator | Check and Generate Right Triangle Triples',
     metaDescription:
-      'Use this Pythagorean triples calculator to check or generate whole-number right triangle side lengths with formulas, steps, and examples.',
+      'Use this Pythagorean triples calculator to check or generate whole-number right triangle <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> with formulas, steps, and examples.',
     badge: 'Pythagorean Triples',
     breadcrumbParent: {
       href: '/right-triangle-side-calculator/',
@@ -130,7 +130,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     ],
 
     calculatorNote:
-      'Enter three side lengths to check a triple, or use m and n values to generate one. The calculator validates your inputs and shows detailed solution steps.',
+      'Enter three <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> to check a triple, or use m and n values to generate one. The calculator validates your inputs and shows detailed solution steps.',
 
     modes: [
       {
@@ -169,7 +169,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     quickSummary: {
       h2: 'What This Tool Solves',
       intro:
-        'Use this page when you want to check whether whole-number side lengths form a right triangle or generate a new Pythagorean triple from two integer values.',
+        'Use this page when you want to check whether whole-number <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> form a right triangle or generate a new Pythagorean triple from two integer values.',
       cards: [
         { label: 'Known values', value: 'Sides a, b, c or integers m and n' },
         { label: 'Finds', value: 'Triple status or generated sides a, b, c' },
@@ -252,13 +252,13 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     ],
 
     sideRatio: [
-      'A Pythagorean triple has whole-number side lengths in the form a : b : c.',
+      'A Pythagorean triple has whole-number <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> in the form a : b : c.',
       'The exact ratio changes from one triple to another, but every valid triple satisfies a\u00B2 + b\u00B2 = c\u00B2 with c as the hypotenuse.',
     ],
 
     useCases: [
-      'Checking homework answers involving right triangle side lengths.',
-      'Verifying whether measured side lengths form a true right angle.',
+      'Checking homework answers involving right triangle <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a>.',
+      'Verifying whether measured <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> form a true right angle.',
       'Generating triples for math competitions and practice problems.',
       'Building a reference list of Pythagorean triples for study.',
       'Confirming construction measurements that rely on the 3-4-5 rule or similar patterns.',
@@ -296,7 +296,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
       {
         question: 'What is a Pythagorean triple?',
         answer:
-          'A Pythagorean triple is a set of three whole numbers a, b, and c that satisfy the equation a\u00B2 + b\u00B2 = c\u00B2. These three numbers can always be the side lengths of a right triangle.',
+          'A Pythagorean triple is a set of three whole numbers a, b, and c that satisfy the equation a\u00B2 + b\u00B2 = c\u00B2. These three numbers can always be the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> of a right triangle.',
       },
       {
         question:
@@ -334,7 +334,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     url: '/3-4-5-triangle-calculator/',
     h1: '3 4 5 Triangle Calculator',
     introLine:
-      'Scale a 3 4 5 right triangle and find sides, area, and perimeter.',
+      'Scale a 3 4 5 right triangle and find sides, <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>, and <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>.',
     secondaryKeywords: [
       '3 4 5 triangle calculator',
       '3 4 5 triangle formula',
@@ -345,7 +345,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     metaTitle:
       '3 4 5 Triangle Calculator | Solve the 3 4 5 Right Triangle',
     metaDescription:
-      'Use this 3 4 5 triangle calculator to scale a 3 4 5 right triangle and find sides, area, and perimeter with formulas and steps.',
+      'Use this 3 4 5 triangle calculator to scale a 3 4 5 right triangle and find sides, <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>, and <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> with formulas and steps.',
     badge: '3 4 5 Triangle',
     breadcrumbParent: {
       href: '/pythagorean-triples-calculator/',
@@ -353,12 +353,12 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     },
 
     intro: [
-      'The 3 4 5 triangle is the smallest and most well-known Pythagorean triple. Its sides follow the ratio 3 : 4 : 5, and it always forms a perfect right angle. Builders, carpenters, and surveyors have relied on this pattern for centuries to create square corners without any special tools.',
-      'This calculator lets you scale the 3 4 5 triangle by any factor you choose. Enter a scale factor k, and the calculator will multiply each side by that value. It also computes the area and perimeter of the scaled triangle with full step-by-step math.',
+      'The 3 4 5 triangle is the smallest and most well-known <a href="/pythagorean-triples-calculator/" class="text-primary hover:underline">Pythagorean triple</a>. Its sides follow the ratio 3 : 4 : 5, and it always forms a perfect right angle. Builders, carpenters, and surveyors have relied on this pattern for centuries to create square corners without any special tools.',
+      'This calculator lets you scale the 3 4 5 triangle by any factor you choose. Enter a scale factor k, and the calculator will multiply each side by that value. It also computes the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> and <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> of the scaled triangle with full step-by-step math.',
     ],
 
     calculatorNote:
-      'Enter a positive scale factor k. The calculator multiplies 3, 4, and 5 by that factor and computes the resulting area and perimeter.',
+      'Enter a positive scale factor k. The calculator multiplies 3, 4, and 5 by that factor and computes the resulting <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> and <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>.',
 
     modes: [
       {
@@ -377,7 +377,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
           'a = 3k',
           'b = 4k',
           'c = 5k',
-          'Area = (a \u00D7 b) / 2',
+          '<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a> = (a \u00D7 b) / 2',
           'P = a + b + c',
         ],
         validation: 'k must be greater than 0.',
@@ -387,7 +387,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     quickSummary: {
       h2: 'What This Tool Solves',
       intro:
-        'Use this page when a right triangle follows the 3 : 4 : 5 ratio and you want to scale its sides, area, and perimeter from one scale factor.',
+        'Use this page when a right triangle follows the 3 : 4 : 5 ratio and you want to scale its sides, <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>, and <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> from one scale factor.',
       cards: [
         { label: 'Known value', value: 'Scale factor k' },
         { label: 'Finds', value: 'Sides 3k, 4k, 5k, area, and perimeter' },
@@ -398,14 +398,14 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
 
     formulaSection: {
       paragraphs: [
-        'The 3 4 5 triangle uses the simplest Pythagorean triple. You can scale every side by the same factor k to create a larger or smaller version that is still a right triangle. The ratio between the sides stays the same no matter what value of k you use.',
-        'After scaling, the area is half the product of the two legs, and the perimeter is the sum of all three sides. Because the ratio never changes, a 3 4 5 triangle at any scale always has the same angles.',
+        'The 3 4 5 triangle uses the simplest <a href="/pythagorean-triples-calculator/" class="text-primary hover:underline">Pythagorean triple</a>. You can scale every side by the same factor k to create a larger or smaller version that is still a right triangle. The ratio between the sides stays the same no matter what value of k you use.',
+        'After scaling, the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> is half the product of the two legs, and the <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> is the sum of all three sides. Because the ratio never changes, a 3 4 5 triangle at any scale always has the same angles.',
       ],
       formulas: [
         'a = 3k',
         'b = 4k',
         'c = 5k',
-        '\\text{Area} = \\frac{a \\times b}{2}',
+        '\\text{<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a>} = \\frac{a \\times b}{2}',
         'P = a + b + c',
       ],
     },
@@ -428,7 +428,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
 
     howToUse: [
       'Enter a scale factor k in the input field.',
-      'Click Calculate to see the scaled side lengths, area, and perimeter.',
+      'Click Calculate to see the scaled <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a>, <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>, and <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>.',
       'Review the step-by-step solution below the result.',
       'Try different values of k to compare triangle sizes.',
       'Click Reset to clear the input and start fresh.',
@@ -441,7 +441,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
           'a = 3k = 3 \\times 2 = 6',
           'b = 4k = 4 \\times 2 = 8',
           'c = 5k = 5 \\times 2 = 10',
-          '\\text{Area} = \\frac{a \\times b}{2} = \\frac{6 \\times 8}{2} = \\frac{48}{2} = 24',
+          '\\text{<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a>} = \\frac{a \\times b}{2} = \\frac{6 \\times 8}{2} = \\frac{48}{2} = 24',
           'P = a + b + c = 6 + 8 + 10 = 24',
         ],
       },
@@ -451,7 +451,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
           'a = 3k = 3 \\times 5 = 15',
           'b = 4k = 4 \\times 5 = 20',
           'c = 5k = 5 \\times 5 = 25',
-          '\\text{Area} = \\frac{a \\times b}{2} = \\frac{15 \\times 20}{2} = \\frac{300}{2} = 150',
+          '\\text{<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a>} = \\frac{a \\times b}{2} = \\frac{15 \\times 20}{2} = \\frac{300}{2} = 150',
           'P = a + b + c = 15 + 20 + 25 = 60',
         ],
       },
@@ -461,15 +461,15 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
           'a = 3k = 3 \\times 0.5 = 1.5',
           'b = 4k = 4 \\times 0.5 = 2',
           'c = 5k = 5 \\times 0.5 = 2.5',
-          '\\text{Area} = \\frac{a \\times b}{2} = \\frac{1.5 \\times 2}{2} = \\frac{3}{2} = 1.5',
+          '\\text{<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a>} = \\frac{a \\times b}{2} = \\frac{1.5 \\times 2}{2} = \\frac{3}{2} = 1.5',
           'P = a + b + c = 1.5 + 2 + 2.5 = 6',
         ],
       },
     ],
 
     resultMeaning: [
-      'The calculator gives you five values: the three scaled sides, the area, and the perimeter. Side a is always the shorter leg (3k), side b is the longer leg (4k), and c is the hypotenuse (5k).',
-      'The area tells you the space inside the triangle in square units. The perimeter gives you the total length around the outside. Both values grow as you increase k, but the triangle always keeps its right angle.',
+      'The calculator gives you five values: the three scaled sides, the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>, and the <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>. Side a is always the shorter leg (3k), side b is the longer leg (4k), and c is the hypotenuse (5k).',
+      'The <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> tells you the space inside the triangle in square units. The <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> gives you the total length around the outside. Both values grow as you increase k, but the triangle always keeps its right angle.',
     ],
 
     sideRatio: [
@@ -482,14 +482,14 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
       'Solving geometry homework that involves 3 4 5 triangle scaling.',
       'Designing layouts or floor plans that require exact 90-degree corners.',
       'Quickly estimating areas and perimeters without a full right triangle solver.',
-      'Teaching students how scaling preserves angles in similar triangles.',
+      'Teaching students how scaling preserves angles in <a href="/similar-right-triangles-calculator/" class="text-primary hover:underline">similar triangles</a>.',
     ],
 
     commonMistakes: [
       'Scaling only one or two sides instead of all three \u2014 all sides must be multiplied by the same k.',
       'Treating 5 as a leg instead of the hypotenuse \u2014 5 is always the longest side.',
       'Thinking only exact values of 3, 4, 5 work \u2014 any multiple like 6, 8, 10 or 15, 20, 25 is also valid.',
-      'Mixing up area and perimeter formulas \u2014 area uses multiplication and division by 2, perimeter uses addition.',
+      'Mixing up <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> and <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> formulas \u2014 area uses multiplication and division by 2, perimeter uses addition.',
       'Using a negative or zero scale factor \u2014 k must be greater than 0.',
     ],
 
@@ -520,7 +520,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
       {
         question: 'What is the 3 4 5 triangle rule?',
         answer:
-          'The 3 4 5 rule states that a triangle with sides in the ratio 3 : 4 : 5 always forms a right angle. This works because 3\u00B2 + 4\u00B2 = 9 + 16 = 25 = 5\u00B2, satisfying the Pythagorean theorem.',
+          'The 3 4 5 rule states that a triangle with sides in the ratio 3 : 4 : 5 always forms a right angle. This works because 3\u00B2 + 4\u00B2 = 9 + 16 = 25 = 5\u00B2, satisfying the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem</a>.',
       },
       {
         question: 'How do I scale a 3 4 5 triangle?',
@@ -530,7 +530,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
       {
         question: 'What is the area of a 3 4 5 triangle?',
         answer:
-          'The base 3 4 5 triangle has an area of (3 \u00D7 4) / 2 = 6 square units. For a scaled version, use Area = (3k \u00D7 4k) / 2.',
+          'The base 3 4 5 triangle has an <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> of (3 \u00D7 4) / 2 = 6 square units. For a scaled version, use Area = (3k \u00D7 4k) / 2.',
       },
       {
         question: 'Is 6, 8, 10 a 3 4 5 triangle?',
@@ -545,7 +545,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
       {
         question: 'What is the perimeter of a 3 4 5 triangle?',
         answer:
-          'The base perimeter is 3 + 4 + 5 = 12 units. For any scaled version, the perimeter is 12k, where k is the scale factor.',
+          'The base <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> is 3 + 4 + 5 = 12 units. For any scaled version, the perimeter is 12k, where k is the scale factor.',
       },
     ],
   },
@@ -556,7 +556,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     url: '/5-12-13-triangle-calculator/',
     h1: '5 12 13 Triangle Calculator',
     introLine:
-      'Scale a 5 12 13 right triangle and find sides, area, and perimeter.',
+      'Scale a 5 12 13 right triangle and find sides, <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>, and <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>.',
     secondaryKeywords: [
       '5 12 13 triangle calculator',
       '5 12 13 triangle formula',
@@ -567,7 +567,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     metaTitle:
       '5 12 13 Triangle Calculator | Solve the 5 12 13 Right Triangle',
     metaDescription:
-      'Use this 5 12 13 triangle calculator to scale a 5 12 13 right triangle and find sides, area, and perimeter with formulas and steps.',
+      'Use this 5 12 13 triangle calculator to scale a 5 12 13 right triangle and find sides, <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>, and <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> with formulas and steps.',
     badge: '5 12 13 Triangle',
     breadcrumbParent: {
       href: '/pythagorean-triples-calculator/',
@@ -575,12 +575,12 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     },
 
     intro: [
-      'The 5 12 13 triangle is one of the most commonly used Pythagorean triples beyond the classic 3 4 5. Its sides satisfy 5\u00B2 + 12\u00B2 = 13\u00B2, making it a guaranteed right triangle. You will see this triple in math courses, standardized tests, and real-world measurement problems.',
-      'This calculator scales the 5 12 13 triangle by any factor you provide. Enter a value for k, and the tool calculates the new side lengths along with the area and perimeter. Each calculation includes a full breakdown of the math so you can verify every step.',
+      'The 5 12 13 triangle is one of the most commonly used <a href="/pythagorean-triples-calculator/" class="text-primary hover:underline">Pythagorean triples</a> beyond the classic 3 4 5. Its sides satisfy 5\u00B2 + 12\u00B2 = 13\u00B2, making it a guaranteed right triangle. You will see this triple in math courses, standardized tests, and real-world measurement problems.',
+      'This calculator scales the 5 12 13 triangle by any factor you provide. Enter a value for k, and the tool calculates the new <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> along with the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> and <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>. Each calculation includes a full breakdown of the math so you can verify every step.',
     ],
 
     calculatorNote:
-      'Type in a positive scale factor k. The calculator multiplies 5, 12, and 13 by that value, then computes area and perimeter automatically.',
+      'Type in a positive scale factor k. The calculator multiplies 5, 12, and 13 by that value, then computes <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> and <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> automatically.',
 
     modes: [
       {
@@ -599,7 +599,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
           'a = 5k',
           'b = 12k',
           'c = 13k',
-          'Area = (a \u00D7 b) / 2',
+          '<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a> = (a \u00D7 b) / 2',
           'P = a + b + c',
         ],
         validation: 'k must be greater than 0.',
@@ -609,7 +609,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     quickSummary: {
       h2: 'What This Tool Solves',
       intro:
-        'Use this page when a right triangle follows the 5 : 12 : 13 ratio and you want the scaled side lengths, area, and perimeter from one scale factor.',
+        'Use this page when a right triangle follows the 5 : 12 : 13 ratio and you want the scaled <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a>, <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>, and <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> from one scale factor.',
       cards: [
         { label: 'Known value', value: 'Scale factor k' },
         { label: 'Finds', value: 'Sides 5k, 12k, 13k, area, and perimeter' },
@@ -621,13 +621,13 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     formulaSection: {
       paragraphs: [
         'The 5 12 13 triple satisfies a\u00B2 + b\u00B2 = c\u00B2 because 25 + 144 = 169. Multiplying each side by the same factor k preserves the ratio, so the scaled triangle is always a right triangle.',
-        'Once you find the scaled sides, the area equals half the product of the two legs. The perimeter is simply the sum of all three sides. The shape stays the same \u2014 only the size changes.',
+        'Once you find the scaled sides, the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> equals half the product of the two legs. The <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> is simply the sum of all three sides. The shape stays the same \u2014 only the size changes.',
       ],
       formulas: [
         'a = 5k',
         'b = 12k',
         'c = 13k',
-        '\\text{Area} = \\frac{a \\times b}{2}',
+        '\\text{<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a>} = \\frac{a \\times b}{2}',
         'P = a + b + c',
       ],
     },
@@ -650,7 +650,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
 
     howToUse: [
       'Enter a positive number for the scale factor k.',
-      'Press Calculate to get the scaled sides, area, and perimeter.',
+      'Press Calculate to get the scaled sides, <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>, and <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>.',
       'Read through the step-by-step breakdown below the results.',
       'Change k to see how different scale factors affect the triangle.',
       'Press Reset to start a new calculation.',
@@ -663,7 +663,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
           'a = 5k = 5 \\times 2 = 10',
           'b = 12k = 12 \\times 2 = 24',
           'c = 13k = 13 \\times 2 = 26',
-          '\\text{Area} = \\frac{a \\times b}{2} = \\frac{10 \\times 24}{2} = \\frac{240}{2} = 120',
+          '\\text{<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a>} = \\frac{a \\times b}{2} = \\frac{10 \\times 24}{2} = \\frac{240}{2} = 120',
           'P = a + b + c = 10 + 24 + 26 = 60',
         ],
       },
@@ -673,7 +673,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
           'a = 5k = 5 \\times 3 = 15',
           'b = 12k = 12 \\times 3 = 36',
           'c = 13k = 13 \\times 3 = 39',
-          '\\text{Area} = \\frac{a \\times b}{2} = \\frac{15 \\times 36}{2} = \\frac{540}{2} = 270',
+          '\\text{<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a>} = \\frac{a \\times b}{2} = \\frac{15 \\times 36}{2} = \\frac{540}{2} = 270',
           'P = a + b + c = 15 + 36 + 39 = 90',
         ],
       },
@@ -683,15 +683,15 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
           'a = 5k = 5 \\times 10 = 50',
           'b = 12k = 12 \\times 10 = 120',
           'c = 13k = 13 \\times 10 = 130',
-          '\\text{Area} = \\frac{a \\times b}{2} = \\frac{50 \\times 120}{2} = \\frac{6000}{2} = 3000',
+          '\\text{<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a>} = \\frac{a \\times b}{2} = \\frac{50 \\times 120}{2} = \\frac{6000}{2} = 3000',
           'P = a + b + c = 50 + 120 + 130 = 300',
         ],
       },
     ],
 
     resultMeaning: [
-      'The output gives you the three scaled sides, the enclosed area, and the outer perimeter. Side a is the shorter leg, side b is the longer leg, and c is the hypotenuse.',
-      'A larger k stretches the triangle while keeping the same proportions. Doubling k quadruples the area but only doubles the perimeter. This relationship holds for all scaled triangles.',
+      'The output gives you the three scaled sides, the enclosed <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>, and the outer <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>. Side a is the shorter leg, side b is the longer leg, and c is the hypotenuse.',
+      'A larger k stretches the triangle while keeping the same proportions. Doubling k quadruples the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> but only doubles the <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>. This relationship holds for all scaled triangles.',
     ],
 
     sideRatio: [
@@ -702,17 +702,17 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     useCases: [
       'Solving practice problems that reference the 5 12 13 triple or its multiples.',
       'Double-checking right angle measurements when sides are multiples of 5, 12, and 13.',
-      'Calculating areas and perimeters for geometry assignments involving Pythagorean triples.',
+      'Calculating areas and perimeters for geometry assignments involving <a href="/pythagorean-triples-calculator/" class="text-primary hover:underline">Pythagorean triples</a>.',
       'Planning construction layouts that use the 5 12 13 ratio for accuracy.',
-      'Exploring how scaling a triangle changes its area and perimeter.',
+      'Exploring how scaling a triangle changes its <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> and <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>.',
     ],
 
     commonMistakes: [
       'Treating 13 as a leg \u2014 13 is always the hypotenuse because it is the largest side.',
       'Scaling only one or two sides instead of all three \u2014 every side must be multiplied by k.',
-      'Forgetting that 5, 12, 13 is a Pythagorean triple \u2014 some students do not recognize it as one.',
+      'Forgetting that 5, 12, 13 is a <a href="/pythagorean-triples-calculator/" class="text-primary hover:underline">Pythagorean triple</a> \u2014 some students do not recognize it as one.',
       'Writing sides in the wrong order like 5, 13, 12 and placing the hypotenuse in the middle.',
-      'Using only the legs for perimeter \u2014 the perimeter includes all three sides, not just the two legs.',
+      'Using only the legs for <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> \u2014 the perimeter includes all three sides, not just the two legs.',
     ],
 
     relatedLinks: [
@@ -742,7 +742,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
       {
         question: 'Is 5, 12, 13 a right triangle?',
         answer:
-          'Yes. Since 5\u00B2 + 12\u00B2 = 25 + 144 = 169 = 13\u00B2, the three sides satisfy the Pythagorean theorem and form a right triangle.',
+          'Yes. Since 5\u00B2 + 12\u00B2 = 25 + 144 = 169 = 13\u00B2, the three sides satisfy the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem</a> and form a right triangle.',
       },
       {
         question: 'How do I scale a 5 12 13 triangle?',
@@ -752,7 +752,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
       {
         question: 'What is the area of a 5 12 13 triangle?',
         answer:
-          'The base area is (5 \u00D7 12) / 2 = 30 square units. For a scaled version, use Area = (5k \u00D7 12k) / 2.',
+          'The base <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> is (5 \u00D7 12) / 2 = 30 square units. For a scaled version, use Area = (5k \u00D7 12k) / 2.',
       },
       {
         question: 'Is 10, 24, 26 a 5 12 13 triangle?',
@@ -763,7 +763,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
         question:
           'What is the difference between a 3 4 5 and a 5 12 13 triangle?',
         answer:
-          'Both are Pythagorean triples, but they have different side ratios and angles. A 3 4 5 triangle has a steeper shape, while a 5 12 13 triangle is flatter because the longer leg is much larger relative to the shorter leg.',
+          'Both are <a href="/pythagorean-triples-calculator/" class="text-primary hover:underline">Pythagorean triples</a>, but they have different side ratios and angles. A 3 4 5 triangle has a steeper shape, while a 5 12 13 triangle is flatter because the longer leg is much larger relative to the shorter leg.',
       },
       {
         question:
@@ -800,7 +800,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
 
     intro: [
       'Two right triangles are similar when they share the same angle measurements. Their sides may differ in length, but the ratios between corresponding sides are always equal. This constant ratio is called the scale factor.',
-      'This calculator helps you work with similar right triangles in three ways. You can find the scale factor between two triangles, calculate a missing side on the similar triangle, or reverse the process to find the original side. Each mode walks you through the formula step by step.',
+      'This calculator helps you work with similar right triangles in three ways. You can find the scale factor between two triangles, calculate a <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">missing side</a> on the similar triangle, or reverse the process to find the original side. Each mode walks you through the formula step by step.',
     ],
 
     calculatorNote:
@@ -859,7 +859,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
 
     formulaSection: {
       paragraphs: [
-        'Similar right triangles have equal angles, so every pair of matching sides shares the same ratio. If you know one pair of corresponding sides, you can find the scale factor k. Once you have k, you can calculate any missing side on either triangle.',
+        'Similar right triangles have equal angles, so every pair of matching sides shares the same ratio. If you know one pair of corresponding sides, you can find the scale factor k. Once you have k, you can calculate any <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">missing side</a> on either triangle.',
         'The scale factor works in one direction. If k = 2, the similar triangle is twice as large. To go the other way, divide by k instead of multiplying. The formulas cover all three situations: finding k, finding a scaled side, and finding the original side.',
       ],
       formulas: [
@@ -919,7 +919,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
 
     resultMeaning: [
       'The scale factor k tells you how many times larger or smaller the similar triangle is compared to the original. A scale factor of 2 means every side on the similar triangle is twice as long.',
-      'When you find a missing side, the result is the length of the corresponding side on the other triangle. This works because similar triangles maintain constant proportions across all pairs of matching sides.',
+      'When you find a <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">missing side</a>, the result is the length of the corresponding side on the other triangle. This works because similar triangles maintain constant proportions across all pairs of matching sides.',
     ],
 
     sideRatio: [
@@ -928,7 +928,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
     ],
 
     useCases: [
-      'Finding unknown side lengths in geometry problems involving similar triangles.',
+      'Finding unknown <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> in geometry problems involving similar triangles.',
       'Calculating dimensions for scale models or architectural drawings.',
       'Solving proportion problems on standardized math tests.',
       'Comparing shadow measurements to estimate the height of tall objects.',

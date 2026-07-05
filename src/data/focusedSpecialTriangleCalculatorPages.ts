@@ -92,9 +92,9 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
       '45 45 90 triangle sides',
       '45 45 90 hypotenuse calculator',
       '45 45 90 leg calculator',
-      '45 45 90 missing side calculator',
-      '45 45 90 area calculator',
-      '45 45 90 perimeter calculator',
+      '45 45 90 <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">missing side</a> calculator',
+      '45 45 90 <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> calculator',
+      '45 45 90 <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> calculator',
       'isosceles right triangle calculator',
       'isosceles right triangle formula',
       'isosceles right triangle hypotenuse',
@@ -102,7 +102,7 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
     h1: '45 45 90 Triangle Calculator',
     metaTitle: '45 45 90 Triangle Calculator | Find Sides, Area and Perimeter',
     metaDescription:
-      'Use this 45 45 90 triangle calculator to find the hypotenuse, leg, area, and perimeter of an isosceles right triangle with formulas and steps.',
+      'Use this 45 45 90 triangle calculator to find the hypotenuse, leg, <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>, and <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> of an isosceles right triangle with formulas and steps.',
     badge: 'Special Right Triangle Calculator',
     parentLabel: 'Special Right Triangle Calculator',
     parentPath: '/special-right-triangle-calculator/',
@@ -129,14 +129,14 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
       },
     ],
     intro: [
-      'Use this 45-45-90 triangle calculator to quickly find the hypotenuse, leg, area, and perimeter of any isosceles right triangle using standard 45 45 90 triangle formulas and ratios.',
+      'Use this 45-45-90 triangle calculator to quickly find the hypotenuse, leg, <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>, and <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> of any isosceles right triangle using standard 45 45 90 triangle formulas and ratios.',
     ],
     calculatorNote: 'All input values must be greater than 0.',
     formulaSection: {
       formulas: [
         'c = a \\times \\sqrt{2}',
         'a = \\frac{c}{\\sqrt{2}}',
-        '\\text{Area} = \\frac{a^2}{2}',
+        '\\text{<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a>} = \\frac{a^2}{2}',
         'P = 2a + a\\sqrt{2}',
       ],
     },
@@ -171,14 +171,14 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
     ],
     resultMeaning: [
       'The results you get represent the physical dimensions of your triangle. A calculated leg or hypotenuse is the exact side length needed to maintain the 45-degree angles.',
-      'Using our 45 45 90 area calculator and 45 45 90 perimeter calculator features helps you understand the total 2D space inside the triangle and the total distance around its edges.',
+      'Using our 45 45 90 <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> calculator and 45 45 90 <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> calculator features helps you understand the total 2D space inside the triangle and the total distance around its edges.',
     ],
     sideRatio: [
       'The side ratio for every 45 45 90 triangle is a : a : a√2.',
       'This means both legs are always exactly the same length, and the hypotenuse is always the leg length multiplied by the square root of 2.',
     ],
     useCases: [
-      'Solving geometry and trigonometry homework problems as a 45 45 90 missing side calculator.',
+      'Solving geometry and trigonometry homework problems as a 45 45 90 <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">missing side</a> calculator.',
       'Calculating dimensions for square-based constructions or diagonal cuts with the isosceles right triangle formula.',
       'Designing isometric grids and drafting standard angles.',
       'Finding the shortest distance across a square diagonal using the 45 45 90 hypotenuse calculator.',
@@ -188,7 +188,7 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
       'Forgetting that both legs are equal.',
       'Using c = 2a instead of c = a × √2.',
       'Dividing by 2 instead of √2 when finding the leg.',
-      'Forgetting to square the leg when calculating area.',
+      'Forgetting to square the leg when calculating <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>.',
     ],
     relatedLinks: [
       {
@@ -219,7 +219,7 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
     faqs: [
       {
         question: 'What is a 45 45 90 triangle calculator?',
-        answer: 'It is a specific tool designed to solve an isosceles right triangle by finding the hypotenuse, leg, area, or perimeter based on the fixed side ratios.',
+        answer: 'It is a specific tool designed to solve an isosceles right triangle by finding the hypotenuse, leg, <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>, or <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> based on the fixed side ratios.',
       },
       {
         question: 'What is an isosceles right triangle?',
@@ -231,7 +231,7 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
       },
       {
         question: 'What does the calculated area mean?',
-        answer: 'The area result means the total amount of flat space contained inside the three sides of the triangle.',
+        answer: 'The <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> result means the total amount of flat space contained inside the three sides of the triangle.',
       },
       {
         question: 'Can I find the leg if I only know the hypotenuse?',
@@ -256,9 +256,9 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
       '30 60 90 hypotenuse calculator',
       '30 60 90 short leg calculator',
       '30 60 90 long leg calculator',
-      '30 60 90 missing side calculator',
-      '30 60 90 area calculator',
-      '30 60 90 perimeter calculator',
+      '30 60 90 <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">missing side</a> calculator',
+      '30 60 90 <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> calculator',
+      '30 60 90 <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> calculator',
       '30 60 90 triangle solver',
       '30 60 90 side length calculator',
       '30 60 90 given hypotenuse',
@@ -268,7 +268,7 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
     h1: '30 60 90 Triangle Calculator',
     metaTitle: '30 60 90 Triangle Calculator | Find Short Leg, Long Leg and Hypotenuse',
     metaDescription:
-      'Use this 30 60 90 triangle calculator to find the short leg, long leg, hypotenuse, area, and perimeter with formulas and steps.',
+      'Use this 30 60 90 triangle calculator to find the short leg, long leg, hypotenuse, <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>, and <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> with formulas and steps.',
     badge: 'Special Right Triangle Calculator',
     parentLabel: 'Special Right Triangle Calculator',
     parentPath: '/special-right-triangle-calculator/',
@@ -310,7 +310,7 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
       },
     ],
     intro: [
-      'Use this 30-60-90 triangle calculator to easily find the short leg, long leg, hypotenuse, area, and perimeter using the exact 30 60 90 triangle formula and ratio.',
+      'Use this 30-60-90 triangle calculator to easily find the short leg, long leg, hypotenuse, <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>, and <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> using the exact 30 60 90 triangle formula and ratio.',
     ],
     calculatorNote: 'All input values must be greater than 0.',
     formulaSection: {
@@ -320,7 +320,7 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
         'a = \\frac{c}{2}',
         'a = \\frac{\\text{long leg}}{\\sqrt{3}}',
         '\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}',
-        '\\text{Area} = \\frac{\\text{short leg} \\times \\text{long leg}}{2}',
+        '\\text{<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Area</a>} = \\frac{\\text{short leg} \\times \\text{long leg}}{2}',
         'P = \\text{short leg} + \\text{long leg} + c',
       ],
     },
@@ -367,14 +367,14 @@ export const focusedSpecialTriangleCalculatorPages: FocusedSpecialTriangleCalcul
     ],
     resultMeaning: [
       'The calculated 30 60 90 triangle sides show exactly how long each part of the triangle needs to be to maintain the 30 and 60 degree angles. They are perfectly proportional.',
-      'The 30 60 90 area calculator and 30 60 90 perimeter calculator results give you the exact bounded 2D size and the total outline length of your triangle.',
+      'The 30 60 90 <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a> calculator and 30 60 90 <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a> calculator results give you the exact bounded 2D size and the total outline length of your triangle.',
     ],
     sideRatio: [
       'The standard side ratio for a 30 60 90 triangle is a : a√3 : 2a.',
       'The short leg is a, the long leg is a times the square root of 3, and the hypotenuse is exactly twice the short leg.',
     ],
     useCases: [
-      'Checking trigonometry assignments involving special right triangles as a 30 60 90 missing side calculator.',
+      'Checking trigonometry assignments involving special right triangles as a 30 60 90 <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">missing side</a> calculator.',
       'Determining the height of an equilateral triangle using the 30 60 90 long leg calculator.',
       'Drafting angles and structural supports in engineering or architecture.',
       'Solving complex vector problems in physics with the 30 60 90 hypotenuse calculator.',

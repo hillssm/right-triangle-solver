@@ -1,3 +1,11 @@
+function hasMeaningfulContent(children) {
+  return children.some(node => {
+    if (node.type === 'element') return true;
+    if (node.type === 'text' && node.value.trim() !== '') return true;
+    return false;
+  });
+}
+
 export default function rehypeSectionWrapper() {
   return (tree) => {
     const newChildren = [];
@@ -16,7 +24,7 @@ export default function rehypeSectionWrapper() {
       }
 
       if (node.type === 'element' && node.tagName === 'h2') {
-        if (currentSection.children.length > 0) {
+        if (hasMeaningfulContent(currentSection.children)) {
           newChildren.push(currentSection);
         }
         currentSection = {
@@ -30,7 +38,7 @@ export default function rehypeSectionWrapper() {
       }
     }
     
-    if (currentSection.children.length > 0) {
+    if (hasMeaningfulContent(currentSection.children)) {
       newChildren.push(currentSection);
     }
     

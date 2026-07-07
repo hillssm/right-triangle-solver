@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 @source "../**/*.{astro,ts,tsx,md,mdx}";
 @source "../../theme/**/*.{astro,ts,tsx,md,mdx}";
 

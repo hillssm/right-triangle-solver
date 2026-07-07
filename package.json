@@ -22,5 +22,8 @@
     "katex": "^0.16.45",
     "tailwindcss": "^4.2.2",
     "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "png-to-ico": "^3.0.2"
   }
 }

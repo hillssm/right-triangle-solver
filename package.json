@@ -20,6 +20,8 @@
     "@types/katex": "^0.16.8",
     "astro": "^6.1.5",
     "katex": "^0.16.45",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0",
     "tailwindcss": "^4.2.2",
     "typescript": "^5.9.3"
   },

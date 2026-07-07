@@ -1,9 +1,11 @@
-﻿import { defineConfig } from 'astro/config';
+import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import vercel from '@astrojs/vercel';
 import tailwindcss from '@tailwindcss/vite';
 import { fileURLToPath } from 'node:url';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 const legacyFormulaRedirects = {
   '/pythagorean-theorem/': '/right-triangle-side-calculator/',
@@ -66,7 +68,13 @@ export default defineConfig({
     ...legacyFormulaRedirects,
     ...localizedLegacyFormulaRedirects
   },
-  integrations: [mdx(), sitemap()],
+  integrations: [
+    mdx({
+      remarkPlugins: [remarkMath],
+      rehypePlugins: [rehypeKatex],
+    }),
+    sitemap()
+  ],
   adapter: vercel(),
   vite: {
     plugins: [tailwindcss()],

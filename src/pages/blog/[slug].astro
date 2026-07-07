@@ -4,6 +4,7 @@ import { DEFAULT_LOCALE, localizePath } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
+import 'katex/dist/katex.min.css';
 
 export async function getStaticPaths() {
   const allPosts = await getCollection('blog');

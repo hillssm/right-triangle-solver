@@ -6,6 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 import { fileURLToPath } from 'node:url';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import rehypeSectionWrapper from './rehype-section-wrapper.mjs';
 
 const legacyFormulaRedirects = {
   '/pythagorean-theorem/': '/right-triangle-side-calculator/',
@@ -71,7 +72,7 @@ export default defineConfig({
   integrations: [
     mdx({
       remarkPlugins: [remarkMath],
-      rehypePlugins: [rehypeKatex],
+      rehypePlugins: [rehypeKatex, rehypeSectionWrapper],
     }),
     sitemap()
   ],

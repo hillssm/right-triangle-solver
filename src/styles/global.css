@@ -672,23 +672,40 @@
     /* This is a bit complex in CSS without specific markup, so I'll just use the class on the container and guide the user. */
   }
 
+  .prose-luxury, .prose-luxury p, .prose-luxury ul, .prose-luxury ol, .prose-luxury li {
+    color: var(--color-on-surface-variant) !important;
+  }
+  .prose-luxury h1, .prose-luxury h2, .prose-luxury h3, .prose-luxury h4, .prose-luxury h5, .prose-luxury h6, .prose-luxury strong, .prose-luxury b {
+    color: var(--color-on-surface) !important;
+  }
+  .prose-luxury code:not(pre code) {
+    color: var(--color-primary-fixed) !important;
+  }
+  .prose-luxury blockquote {
+    color: var(--color-on-surface) !important;
+    border-color: var(--color-primary) !important;
+  }
+  .prose-luxury hr {
+    border-color: var(--color-outline-variant) !important;
+  }
+
   .prose-luxury {
-    --tw-prose-body: var(--color-on-surface-variant);
-    --tw-prose-headings: var(--color-on-surface);
-    --tw-prose-lead: var(--color-on-surface-variant);
-    --tw-prose-links: var(--color-primary);
-    --tw-prose-bold: var(--color-on-surface);
-    --tw-prose-counters: var(--color-primary);
-    --tw-prose-bullets: var(--color-primary);
-    --tw-prose-hr: var(--color-outline-variant);
-    --tw-prose-quotes: var(--color-on-surface);
-    --tw-prose-quote-borders: var(--color-primary);
-    --tw-prose-captions: var(--color-on-surface-variant);
-    --tw-prose-code: var(--color-primary-fixed);
-    --tw-prose-pre-code: var(--color-on-surface);
-    --tw-prose-pre-bg: var(--color-surface-container-low);
-    --tw-prose-th-borders: var(--color-outline-variant);
-    --tw-prose-td-borders: var(--color-outline-variant);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     font-family: var(--font-body);
   }

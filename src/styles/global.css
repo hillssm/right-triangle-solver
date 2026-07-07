@@ -718,6 +718,25 @@
     letter-spacing: 0.01em;
   }
 
+  .prose-luxury p, .prose-luxury ul, .prose-luxury ol, .prose-luxury li {
+    font-size: 1rem !important;
+    line-height: 1.625 !important;
+  }
+
+  .prose-luxury h2 {
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .prose-luxury h3 {
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
   .prose-luxury a {
     text-decoration-color: rgba(241, 201, 125, 0.4);
     text-underline-offset: 4px;

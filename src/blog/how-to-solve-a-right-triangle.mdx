@@ -9,9 +9,6 @@ category: "Geometry"
 
 import Faq from 'theme/components/Faq.astro';
 
-# How to Solve a Right Triangle: The Complete Guide
-
-![Hero Image](/images/blog/how-to-solve-right-triangle-guide.svg)
 
 
 Welcome to the definitive guide on solving right triangles. Whether you are a student preparing for a geometry exam, a DIY homeowner calculating roof pitch, or an engineer designing a bridge, mastering right triangles is an essential skill. 
@@ -433,67 +430,85 @@ Test your knowledge with these 40 practice questions. (Answers provided below).
 
 ---
 
-## Frequently Asked Questions
-
-**1. How do you solve a right triangle?**
-Identify known sides and angles. Use the Pythagorean theorem if you have two sides. Use SOHCAHTOA if you have an angle and a side.
-
-**2. How do you find a missing side?**
-Use a² + b² = c² if two sides are known, or trigonometry (sin, cos, tan) if an angle and one side are known.
-
-**3. How do you find a missing angle?**
-Subtract the known acute angle from 90°, or use inverse trigonometric functions (sin⁻¹, cos⁻¹, tan⁻¹) with two known sides.
-
-**4. When should I use the Pythagorean Theorem?**
-Use it strictly when you know two sides of a right triangle and need to calculate the third side.
-
-**5. What is SOHCAHTOA?**
-A mnemonic for Sine=Opp/Hyp, Cosine=Adj/Hyp, Tangent=Opp/Adj.
-
-**6. When should I use sine?**
-When your problem involves the opposite side and the hypotenuse.
-
-**7. When should I use cosine?**
-When your problem involves the adjacent side and the hypotenuse.
-
-**8. When should I use tangent?**
-When your problem involves the opposite and adjacent sides, without the hypotenuse.
-
-**9. Can a right triangle be solved without trigonometry?**
-Yes, if you have two sides (using Pythagoras) or if it is a special triangle (30-60-90 or 45-45-90).
-
-**10. What information do I need?**
-You need the 90-degree angle, plus at least two other measurements (one must be a side).
-
-**11. How do professionals solve right triangles?**
-Engineers and architects use right triangle calculators, CAD software, and trigonometry to solve complex geometric problems.
-
-**12. What is the hypotenuse?**
-The longest side of a right triangle, located directly opposite the 90-degree angle.
-
-**13. What is an adjacent side?**
-The side next to the angle in question that is not the hypotenuse.
-
-**14. What is an opposite side?**
-The side directly across from the angle in question.
-
-**15. What are Pythagorean Triples?**
-Sets of three whole numbers that fit the a² + b² = c² rule perfectly, like 3-4-5 or 5-12-13.
-
-**16. Why do the acute angles add to 90?**
-The interior angles of any triangle sum to 180°. Since the right angle is 90°, the other two must sum to 90°.
-
-**17. What is an inverse function?**
-Functions on a calculator (like sin⁻¹) that allow you to input a ratio of sides and output an angle in degrees.
-
-**18. Can the hypotenuse equal a leg?**
-No, the hypotenuse is mathematically always the longest side.
-
-**19. How do you calculate area of a right triangle?**
-Area = ½ × base × height. (The two legs act as the base and height).
-
-**20. What is a 45-45-90 triangle?**
-An isosceles right triangle where the two legs are equal in length.
-
-*(Note: For brevity and reading flow, questions 21-40 continue the theme covering topics like calculators, coordinate grids, altitude rules, and specific math check procedures).*
-
+<Faq heading="Frequently Asked Questions" description="We have compiled the top questions people ask about this topic." items={[
+  {
+    "question": "How do you solve a right triangle?",
+    "answer": "Identify known sides and angles. Use the Pythagorean theorem if you have two sides. Use SOHCAHTOA if you have an angle and a side."
+  },
+  {
+    "question": "How do you find a missing side?",
+    "answer": "Use a² + b² = c² if two sides are known, or trigonometry (sin, cos, tan) if an angle and one side are known."
+  },
+  {
+    "question": "How do you find a missing angle?",
+    "answer": "Subtract the known acute angle from 90°, or use inverse trigonometric functions (sin⁻¹, cos⁻¹, tan⁻¹) with two known sides."
+  },
+  {
+    "question": "When should I use the Pythagorean Theorem?",
+    "answer": "Use it strictly when you know two sides of a right triangle and need to calculate the third side."
+  },
+  {
+    "question": "What is SOHCAHTOA?",
+    "answer": "A mnemonic for Sine=Opp/Hyp, Cosine=Adj/Hyp, Tangent=Opp/Adj."
+  },
+  {
+    "question": "When should I use sine?",
+    "answer": "When your problem involves the opposite side and the hypotenuse."
+  },
+  {
+    "question": "When should I use cosine?",
+    "answer": "When your problem involves the adjacent side and the hypotenuse."
+  },
+  {
+    "question": "When should I use tangent?",
+    "answer": "When your problem involves the opposite and adjacent sides, without the hypotenuse."
+  },
+  {
+    "question": "Can a right triangle be solved without trigonometry?",
+    "answer": "Yes, if you have two sides (using Pythagoras) or if it is a special triangle (30-60-90 or 45-45-90)."
+  },
+  {
+    "question": "What information do I need?",
+    "answer": "You need the 90-degree angle, plus at least two other measurements (one must be a side)."
+  },
+  {
+    "question": "How do professionals solve right triangles?",
+    "answer": "Engineers and architects use right triangle calculators, CAD software, and trigonometry to solve complex geometric problems."
+  },
+  {
+    "question": "What is the hypotenuse?",
+    "answer": "The longest side of a right triangle, located directly opposite the 90-degree angle."
+  },
+  {
+    "question": "What is an adjacent side?",
+    "answer": "The side next to the angle in question that is not the hypotenuse."
+  },
+  {
+    "question": "What is an opposite side?",
+    "answer": "The side directly across from the angle in question."
+  },
+  {
+    "question": "What are Pythagorean Triples?",
+    "answer": "Sets of three whole numbers that fit the a² + b² = c² rule perfectly, like 3-4-5 or 5-12-13."
+  },
+  {
+    "question": "Why do the acute angles add to 90?",
+    "answer": "The interior angles of any triangle sum to 180°. Since the right angle is 90°, the other two must sum to 90°."
+  },
+  {
+    "question": "What is an inverse function?",
+    "answer": "Functions on a calculator (like sin⁻¹) that allow you to input a ratio of sides and output an angle in degrees."
+  },
+  {
+    "question": "Can the hypotenuse equal a leg?",
+    "answer": "No, the hypotenuse is mathematically always the longest side."
+  },
+  {
+    "question": "How do you calculate area of a right triangle?",
+    "answer": "Area = ½ × base × height. (The two legs act as the base and height)."
+  },
+  {
+    "question": "What is a 45-45-90 triangle?",
+    "answer": "An isosceles right triangle where the two legs are equal in length."
+  }
+]} />

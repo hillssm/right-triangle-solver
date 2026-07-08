@@ -1,4 +1,33 @@
-<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
-  <rect width="800" height="400" fill="#f0f4f8"/>
-  <text x="400" y="200" font-family="Arial" font-size="36" fill="#333" text-anchor="middle" dominant-baseline="middle">sine-cosine-tangent</text>
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  
+  <!-- Right Triangle -->
+  <g transform="translate(600, 150)">
+    <path d="M -200 250 L 200 250 L 200 -50 Z" fill="rgba(56, 189, 248, 0.1)" stroke="#38bdf8" stroke-width="6" stroke-linejoin="round"/>
+    <!-- Right Angle Square -->
+    <path d="M 160 250 L 160 210 L 200 210" fill="none" stroke="#38bdf8" stroke-width="4"/>
+    <!-- Labels -->
+    <text x="0" y="290" font-family="system-ui, sans-serif" font-size="32" font-weight="600" fill="#cbd5e1" text-anchor="middle">Adjacent (a)</text>
+    <text x="230" y="120" font-family="system-ui, sans-serif" font-size="32" font-weight="600" fill="#cbd5e1" text-anchor="start">Opposite (b)</text>
+    <text x="-40" y="60" font-family="system-ui, sans-serif" font-size="36" font-weight="bold" fill="#facc15" text-anchor="middle" transform="rotate(-37, -40, 60)">Hypotenuse (c)</text>
+    <text x="-120" y="235" font-family="system-ui, sans-serif" font-size="32" font-weight="bold" fill="#f472b6">θ</text>
+  </g>
+
+  <!-- Text Overlay -->
+  <text x="80" y="120" font-family="system-ui, sans-serif" font-size="64" font-weight="800" fill="#ffffff">Sine, Cosine, Tangent</text>
+  <text x="80" y="180" font-family="system-ui, sans-serif" font-size="32" font-weight="500" fill="#94a3b8">Trigonometry Ratios Explained</text>
+  
+  <!-- Formula Box -->
+  <rect x="80" y="240" width="350" height="120" rx="16" fill="rgba(255,255,255,0.05)" stroke="#475569" stroke-width="2"/>
+  <text x="255" y="315" font-family="monospace" font-size="42" font-weight="bold" fill="#10b981" text-anchor="middle">sin(θ) = Opp/Hyp</text>
 </svg>

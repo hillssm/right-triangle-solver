@@ -366,7 +366,7 @@ const quickSummaryCards = [
         <>
           <li>
             {index === breadcrumbItems.length - 1 ? (
-              <span aria-current="page" class="text-on-surface">{item.label}</span>
+              <span aria-current="page" class="text-on-surface" set:html={item.label} />
             ) : (
               <a href={item.href} class="hover:text-primary">{item.label}</a>
             )}
@@ -384,7 +384,7 @@ const quickSummaryCards = [
       {pageUi.badge}
     </p>
     <h1 class="mt-3 break-words text-3xl font-bold leading-tight sm:text-4xl">{page.h1}</h1>
-    <p class="truncate mt-4 max-w-3xl break-words text-on-surface-variant">{introText}</p>
+    <p class="truncate mt-4 max-w-3xl break-words text-on-surface-variant" set:html={introText} />
   </header>
 
   <FormulaCalculator
@@ -396,9 +396,9 @@ const quickSummaryCards = [
   />
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{pageUi.howItWorksHeading}</h2>
-    <p>{howItWorksIntro}</p>
-    <p>{page.calculatorNote}</p>
+    <h2 set:html={pageUi.howItWorksHeading} />
+    <p set:html={howItWorksIntro} />
+    <p set:html={page.calculatorNote} />
     <div class="not-prose mt-5 grid gap-3 sm:grid-cols-2">
       {quickSummaryCards.map((card) => (
         <div class="min-w-0 rounded-lg border border-outline-variant/25 bg-surface-container-lowest/55 p-4">
@@ -414,7 +414,7 @@ const quickSummaryCards = [
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{pageStructure.formulaHeading}</h2>
+    <h2 set:html={pageStructure.formulaHeading} />
     <div class="not-prose mt-4 grid gap-3">
       {page.formulaSection.formulas.map((expression) => (
         <div class="min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
@@ -427,12 +427,12 @@ const quickSummaryCards = [
       ))}
     </div>
     {page.formulaSection.paragraphs.map((paragraph) => (
-      <p>{paragraph}</p>
+      <p set:html={paragraph} />
     ))}
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-    <h2 class="text-2xl font-semibold">{pageStructure.diagramHeading}</h2>
+    <h2 class="text-2xl font-semibold" set:html={pageStructure.diagramHeading} />
     <p class="mt-3 leading-relaxed text-on-surface-variant" set:html={formatRootBars(page.diagram.intro)} />
 
     <div class="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(14rem,0.85fr)] lg:items-start">
@@ -519,7 +519,7 @@ const quickSummaryCards = [
           <circle cx="250" cy="88" r="4" fill="var(--color-primary)" />
           </svg>
         </div>
-        <p class="mt-3 text-sm text-on-surface-variant">{page.diagram.caption}</p>
+        <p class="mt-3 text-sm text-on-surface-variant" set:html={page.diagram.caption} />
       </div>
 
       <div class="min-w-0 rounded-lg border border-outline-variant/30 bg-surface-container-lowest/50 p-4">
@@ -529,7 +529,7 @@ const quickSummaryCards = [
         <div class="mt-4 grid gap-3">
           {pageStructure.diagramKey.map((item) => (
             <div class="min-w-0 rounded-md border border-outline-variant/25 bg-surface-container-low/70 p-3">
-              <p class="break-words font-semibold text-on-surface">{item.label}</p>
+              <p class="break-words font-semibold text-on-surface" set:html={item.label} />
               <p class="mt-2 text-sm leading-relaxed text-on-surface-variant" set:html={formatRootBars(item.description)} />
             </div>
           ))}
@@ -544,7 +544,7 @@ const quickSummaryCards = [
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{pageUi.howToHeading}</h2>
+    <h2 set:html={pageUi.howToHeading} />
     <ol>
       {page.howTo.map((step) => (
         <li set:html={formatListItem(step)} />
@@ -553,7 +553,7 @@ const quickSummaryCards = [
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{pageStructure.exampleHeading}</h2>
+    <h2 set:html={pageStructure.exampleHeading} />
     <p set:html={formatRootBars(page.example.intro)} />
     <div class="not-prose mt-5 min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
       <div class="grid gap-2">
@@ -566,20 +566,20 @@ const quickSummaryCards = [
         ))}
       </div>
     </div>
-    <p class="mt-4">{page.example.explanation}</p>
+    <p class="mt-4" set:html={page.example.explanation} />
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{pageUi.resultMeaningHeading}</h2>
+    <h2 set:html={pageUi.resultMeaningHeading} />
     {page.resultMeaning.map((paragraph) => (
-      <p>{paragraph}</p>
+      <p set:html={paragraph} />
     ))}
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{pageUi.whenUseHeading}</h2>
-    <p>{pageUi.whenUseIntro}</p>
-    <h3>{pageUi.whenUseListTitle}</h3>
+    <h2 set:html={pageUi.whenUseHeading} />
+    <p set:html={pageUi.whenUseIntro} />
+    <h3 set:html={pageUi.whenUseListTitle} />
     <ul>
       {page.whenUse.map((item) => (
         <li set:html={formatListItem(item)} />
@@ -588,15 +588,15 @@ const quickSummaryCards = [
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{pageUi.whyFormulaWorksHeading}</h2>
+    <h2 set:html={pageUi.whyFormulaWorksHeading} />
     {pageStructure.whyFormulaWorks.map((paragraph) => (
-      <p>{paragraph}</p>
+      <p set:html={paragraph} />
     ))}
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{pageUi.commonMistakesHeading}</h2>
-    <p>{pageUi.commonMistakesIntro}</p>
+    <h2 set:html={pageUi.commonMistakesHeading} />
+    <p set:html={pageUi.commonMistakesIntro} />
     <ul>
       {page.commonMistakes.map((item) => (
         <li set:html={formatListItem(item)} />
@@ -605,8 +605,8 @@ const quickSummaryCards = [
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{pageStructure.additionalExample.h2}</h2>
-    <p>{pageStructure.additionalExample.intro}</p>
+    <h2 set:html={pageStructure.additionalExample.h2} />
+    <p set:html={pageStructure.additionalExample.intro} />
     <ul>
       {pageStructure.additionalExample.listItems.map((item) => (
         <li set:html={formatListItem(item)} />
@@ -623,7 +623,7 @@ const quickSummaryCards = [
   </div>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
-    <h2 class="text-2xl font-semibold">{pageUi.relatedHeading}</h2>
+    <h2 class="text-2xl font-semibold" set:html={pageUi.relatedHeading} />
     <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {page.relatedLinks.map((link) => (
         <a

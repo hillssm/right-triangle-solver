@@ -411,7 +411,7 @@ const measurementSideEntries = page.diagram
         <>
           <li>
             {index === breadcrumbItems.length - 1 ? (
-              <span aria-current="page" class="text-on-surface">{item.label}</span>
+              <span aria-current="page" class="text-on-surface" set:html={item.label} />
             ) : (
               <a href={item.href} class="hover:text-primary">{item.label}</a>
             )}
@@ -548,7 +548,7 @@ const measurementSideEntries = page.diagram
   )}
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{howItWorksHeading}</h2>
+    <h2 set:html={howItWorksHeading} />
     <p set:html={formatRootBars(page.toolPurpose)} />
     {page.quickSummary?.intro && <p set:html={formatRootBars(page.quickSummary.intro)} />}
     {page.quickSummary?.cards && (
@@ -681,7 +681,7 @@ const measurementSideEntries = page.diagram
           <div class="mt-4 grid gap-3">
             {measurementSideEntries.map((item) => (
               <div class="min-w-0 rounded-md border border-outline-variant/25 bg-surface-container-low/70 p-3">
-                <p class="break-words font-semibold text-on-surface">{item.label}</p>
+                <p class="break-words font-semibold text-on-surface" set:html={item.label} />
                 <p class="mt-2 text-sm leading-relaxed text-on-surface-variant" set:html={formatRootBars(item.description)} />
               </div>
             ))}

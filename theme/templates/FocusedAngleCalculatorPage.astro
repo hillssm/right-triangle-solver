@@ -191,7 +191,7 @@ const sectionHeading = (
         <>
           <li>
             {index === breadcrumbItems.length - 1 ? (
-              <span aria-current="page" class="text-on-surface">{item.label}</span>
+              <span aria-current="page" class="text-on-surface" set:html={item.label} />
             ) : (
               <a href={item.href} class="hover:text-primary">{item.label}</a>
             )}
@@ -209,7 +209,7 @@ const sectionHeading = (
       {angleUi.badge}
     </p>
     <h1 class="mt-3 break-words text-3xl font-bold leading-tight sm:text-4xl">{page.h1}</h1>
-    <p class="truncate mt-4 max-w-3xl break-words text-on-surface-variant">{page.headerSummary}</p>
+    <p class="truncate mt-4 max-w-3xl break-words text-on-surface-variant" set:html={page.headerSummary} />
   </header>
 
   <FormulaCalculator
@@ -474,7 +474,7 @@ const sectionHeading = (
     <h2>{sectionHeading(angleUi.howToUse, 'howTo')}</h2>
     <ol>
       {page.howToSteps.map((step) => (
-        <li>{step}</li>
+        <li set:html={step} />
       ))}
     </ol>
   </section>
@@ -503,7 +503,7 @@ const sectionHeading = (
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading(angleUi.whenToUse, 'useCases')}</h2>
-    <p>{page.whenToUse.intro}</p>
+    <p set:html={page.whenToUse.intro} />
     <ul>
       {page.whenToUse.items.map((item) => (
         <li set:html={formatListItem(item)} />
@@ -513,7 +513,7 @@ const sectionHeading = (
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading(angleUi.commonMistakes, 'commonMistakes')}</h2>
-    <p>{page.commonMistakes.intro}</p>
+    <p set:html={page.commonMistakes.intro} />
     <ul>
       {page.commonMistakes.items.map((item) => (
         <li set:html={formatListItem(item)} />

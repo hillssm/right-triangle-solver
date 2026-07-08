@@ -161,7 +161,7 @@ const sectionHeading = (
         <>
           <li>
             {index === breadcrumbItems.length - 1 ? (
-              <span aria-current="page" class="text-on-surface">{item.label}</span>
+              <span aria-current="page" class="text-on-surface" set:html={item.label} />
             ) : (
               <a href={item.href} class="hover:text-primary">{item.label}</a>
             )}
@@ -302,7 +302,7 @@ const sectionHeading = (
                 <span class="inline-flex rounded-md border border-outline-variant/30 px-2 py-1 font-label text-[10px] uppercase tracking-wider text-primary">
                   {getDiagramStatusLabel(side.status)}
                 </span>
-                <span class="font-semibold text-on-surface">{side.label}</span>
+                <span class="font-semibold text-on-surface" set:html={side.label} />
               </div>
               <p class="mt-2 text-sm leading-relaxed text-on-surface-variant">
                 {side.description}

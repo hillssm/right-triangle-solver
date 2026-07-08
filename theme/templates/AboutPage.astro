@@ -130,8 +130,8 @@ const canonicalPath = localizePath(locale, '/about-us/');
               {highlightIcons[index] ?? 'bolt'}
             </span>
           </div>
-          <h3 class="text-sm font-semibold text-on-surface">{item.title}</h3>
-          <p class="mt-2 text-xs leading-relaxed text-on-surface-variant">{item.description}</p>
+          <h3 class="text-sm font-semibold text-on-surface" set:html={item.title} />
+          <p class="mt-2 text-xs leading-relaxed text-on-surface-variant" set:html={item.description} />
         </article>
       ))}
     </div>
@@ -149,8 +149,8 @@ const canonicalPath = localizePath(locale, '/about-us/');
               {audienceIcons[index] ?? 'school'}
             </span>
           </div>
-          <h3 class="text-base font-semibold text-on-surface">{audience.title}</h3>
-          <p class="mt-2 text-sm leading-relaxed text-on-surface-variant">{audience.description}</p>
+          <h3 class="text-base font-semibold text-on-surface" set:html={audience.title} />
+          <p class="mt-2 text-sm leading-relaxed text-on-surface-variant" set:html={audience.description} />
         </article>
       ))}
     </div>
@@ -160,7 +160,7 @@ const canonicalPath = localizePath(locale, '/about-us/');
     <h2>{pick(about, 'qualityTitle', 'How We Think About Product Quality')}</h2>
     <ul>
       {principles.map((principle: string) => (
-        <li>{principle}</li>
+        <li set:html={principle} />
       ))}
     </ul>
   </section>

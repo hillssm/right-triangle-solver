@@ -161,7 +161,7 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
         <>
           <li>
             {index === breadcrumbItems.length - 1 ? (
-              <span aria-current="page" class="text-on-surface">{item.label}</span>
+              <span aria-current="page" class="text-on-surface" set:html={item.label} />
             ) : (
               <a href={item.href} class="hover:text-primary">{item.label}</a>
             )}
@@ -182,7 +182,7 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
       {page.h1}
     </h1>
     <div class="mt-5 max-w-3xl space-y-3 text-base leading-7 text-on-surface-variant">
-      {page.intro.map((paragraph) => <p>{paragraph}</p>)}
+      {page.intro.map((paragraph) => <p set:html={paragraph} />)}
     </div>
   </header>
 
@@ -303,7 +303,7 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <p>{page.calculatorNote}</p>
+    <p set:html={page.calculatorNote} />
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
@@ -383,7 +383,7 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('howTo', specialUi.howToUseHeading)}</h2>
     <ol>
-      {page.howToUse.map((step) => <li>{step}</li>)}
+      {page.howToUse.map((step) => <li set:html={step} />)}
     </ol>
   </section>
 
@@ -392,7 +392,7 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
     <div class="space-y-6 mt-4">
       {page.example.map((ex) => (
         <div>
-          <p class="font-semibold">{ex.title}</p>
+          <p class="font-semibold" set:html={ex.title} />
           <div class="not-prose mt-3 min-w-0 overflow-x-auto rounded-lg border border-outline-variant/25 bg-surface-container-lowest/65 px-5 py-4">
             <div class="grid gap-2">
               {ex.steps.map((step) => (
@@ -411,25 +411,25 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('result', specialUi.resultMeaningHeading)}</h2>
-    {page.resultMeaning.map((paragraph) => <p>{paragraph}</p>)}
+    {page.resultMeaning.map((paragraph) => <p set:html={paragraph} />)}
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('sideRatio', specialUi.sideRatioHeading)}</h2>
-    {page.sideRatio.map((paragraph) => <p>{paragraph}</p>)}
+    {page.sideRatio.map((paragraph) => <p set:html={paragraph} />)}
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('useCases', specialUi.useCasesHeading)}</h2>
     <ul>
-      {page.useCases.map((useCase) => <li>{useCase}</li>)}
+      {page.useCases.map((useCase) => <li set:html={useCase} />)}
     </ul>
   </section>
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('commonMistakes', specialUi.commonMistakesHeading)}</h2>
     <ul>
-      {page.commonMistakes.map((mistake) => <li>{mistake}</li>)}
+      {page.commonMistakes.map((mistake) => <li set:html={mistake} />)}
     </ul>
   </section>
 

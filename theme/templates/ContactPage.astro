@@ -103,15 +103,15 @@ const canonicalPath = localizePath(locale, '/contact-us/');
               {supportIcons[index] ?? 'mail'}
             </span>
           </div>
-          <h3 class="text-sm font-semibold text-on-surface">{channel.title}</h3>
+          <h3 class="text-sm font-semibold text-on-surface" set:html={channel.title} />
           {channel.href ? (
             <a href={channel.href} class="mt-1 block break-all text-sm text-primary hover:text-primary-fixed">
               {channel.value}
             </a>
           ) : (
-            <p class="mt-1 text-sm text-on-surface">{channel.value}</p>
+            <p class="mt-1 text-sm text-on-surface" set:html={channel.value} />
           )}
-          <p class="mt-2 text-xs leading-relaxed text-on-surface-variant">{channel.description}</p>
+          <p class="mt-2 text-xs leading-relaxed text-on-surface-variant" set:html={channel.description} />
         </article>
       ))}
     </div>
@@ -122,14 +122,14 @@ const canonicalPath = localizePath(locale, '/contact-us/');
       <h2>{pick(contact, 'beforeYouSendTitle', 'Before You Send')}</h2>
       <ul>
         {beforeYouSend.map((item: string) => (
-          <li>{item}</li>
+          <li set:html={item} />
         ))}
       </ul>
 
       <h3>{pick(contact, 'checklistTitle', 'Include These Details for Faster Help')}</h3>
       <ul>
         {checklist.map((item: string) => (
-          <li>{item}</li>
+          <li set:html={item} />
         ))}
       </ul>
 

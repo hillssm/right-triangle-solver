@@ -222,7 +222,7 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
         <>
           <li>
             {index === breadcrumbItems.length - 1 ? (
-              <span aria-current="page" class="text-on-surface">{item.label}</span>
+              <span aria-current="page" class="text-on-surface" set:html={item.label} />
             ) : (
               <a href={item.href} class="hover:text-primary">{item.label}</a>
             )}
@@ -241,7 +241,7 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
       {trigUi.badge}
     </p>
     <h1 class="mt-3 break-words text-3xl font-bold leading-tight sm:text-4xl">{page.h1}</h1>
-    <p class="truncate mt-4 max-w-3xl break-words text-on-surface-variant">{page.headerSummary}</p>
+    <p class="truncate mt-4 max-w-3xl break-words text-on-surface-variant" set:html={page.headerSummary} />
   </header>
 
   <!-- Calculator -->
@@ -255,12 +255,12 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
 
   <!-- Intro -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
-    <h2>{page.introHeading}</h2>
+    <h2 set:html={page.introHeading} />
     {page.intro.map((paragraph) => (
-      <p>{paragraph}</p>
+      <p set:html={paragraph} />
     ))}
     <div class="not-prose mt-5 rounded-lg border border-outline-variant/25 bg-surface-container-lowest/55 p-4">
-      <p class="text-sm leading-relaxed text-on-surface-variant">{page.calculatorNote}</p>
+      <p class="text-sm leading-relaxed text-on-surface-variant" set:html={page.calculatorNote} />
     </div>
   </section>
 
@@ -275,7 +275,7 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
       </div>
     </div>
     {page.formula.paragraphs.map((p) => (
-      <p>{p}</p>
+      <p set:html={p} />
     ))}
   </section>
 
@@ -374,7 +374,7 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
       </div>
       <div class="min-w-0 space-y-3">
         {page.diagramExplanation.map((p) => (
-          <p class="text-sm leading-relaxed text-on-surface-variant">{p}</p>
+          <p class="text-sm leading-relaxed text-on-surface-variant" set:html={p} />
         ))}
         <div class="mt-4 rounded-lg border border-outline-variant/25 bg-surface-container-lowest/50 p-4">
           <p class="font-label text-[11px] uppercase tracking-widest text-primary">
@@ -382,12 +382,12 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
           </p>
           <div class="mt-3 flex flex-col gap-3 sm:flex-row sm:items-stretch">
             <div class="min-w-0 flex-1 rounded-md border border-primary/30 bg-primary/10 px-3 py-3">
-              <span class="block text-[11px] uppercase tracking-widest text-primary">{trigUi.numerator}</span>
+              <span class="block text-[11px] uppercase tracking-widest text-primary" set:html={trigUi.numerator} />
               <strong class="mt-1 block break-words text-on-surface">{ratioDiagram.numeratorLabel}</strong>
             </div>
             <div class="flex items-center justify-center text-xl text-outline" aria-hidden="true">/</div>
             <div class="min-w-0 flex-1 rounded-md border border-primary/30 bg-primary/10 px-3 py-3">
-              <span class="block text-[11px] uppercase tracking-widest text-primary">{trigUi.denominator}</span>
+              <span class="block text-[11px] uppercase tracking-widest text-primary" set:html={trigUi.denominator} />
               <strong class="mt-1 block break-words text-on-surface">{ratioDiagram.denominatorLabel}</strong>
             </div>
           </div>
@@ -444,21 +444,21 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
         ))}
       </div>
     </div>
-    <p class="mt-4">{page.example.conclusion}</p>
+    <p class="mt-4" set:html={page.example.conclusion} />
   </section>
 
   <!-- What the Result Means -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('result', trigUi.whatResultMeans)}</h2>
     {page.whatResultMeans.map((p) => (
-      <p>{p}</p>
+      <p set:html={p} />
     ))}
   </section>
 
   <!-- When to Use This Ratio -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('useCases', trigUi.whenToUse)}</h2>
-    <p>{page.whenToUse.intro}</p>
+    <p set:html={page.whenToUse.intro} />
     <ul>
       {page.whenToUse.items.map((item) => (
         <li set:html={formatListItem(item)} />
@@ -469,7 +469,7 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
   <!-- Common Mistakes -->
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('commonMistakes', trigUi.commonMistakes)}</h2>
-    <p>{page.commonMistakes.intro}</p>
+    <p set:html={page.commonMistakes.intro} />
     <ul>
       {page.commonMistakes.items.map((item) => (
         <li set:html={formatListItem(item)} />

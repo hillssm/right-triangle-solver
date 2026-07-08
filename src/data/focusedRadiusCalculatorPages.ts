@@ -240,10 +240,7 @@ export const focusedRadiusCalculatorPages: FocusedRadiusCalculatorPage[] = [
     formulaSlug: 'circumradius',
     calculator: circumradiusCalculator,
     modes: ['Circumradius', 'Radius Relation R'],
-    intro: [
-      'Use this right triangle circumradius <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> when you know the hypotenuse c and want to find the circumradius R. The circumradius is the <a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a> of the circle that passes through all three vertices of the right triangle.',
-      'In a right triangle, the hypotenuse is the diameter of the circumcircle. That makes the circumradius especially simple: it is one half of the hypotenuse.',
-    ],
+    intro: [],
     calculatorNote:
       'Enter a positive value for hypotenuse c. This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> assumes c is the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
     formulaSection: {

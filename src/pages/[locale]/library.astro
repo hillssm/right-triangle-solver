@@ -9,7 +9,7 @@ import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 
 export function getStaticPaths() {
-  return getLocaleStaticPaths();
+  return getLocaleStaticPaths().filter(path => path.params.locale !== 'id');
 }
 
 const locale = getLocaleFromParams(Astro.params.locale);

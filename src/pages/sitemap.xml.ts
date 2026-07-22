@@ -23,7 +23,6 @@ const LOCALIZED_STATIC_PATHS = [
   '/contact-us/',
   '/faqs/',
   '/library/',
-  '/practice/',
   '/privacy/',
   '/terms/'
 ];
@@ -64,7 +63,10 @@ export async function GET() {
   const blogPostPaths = posts.map((post) => `/blog/${post.id}/`);
 
   const localizedPaths = [...LOCALIZED_STATIC_PATHS, ...CALCULATOR_PATHS].flatMap((path) =>
-    SUPPORTED_LOCALES.map((locale) => localizePath(locale, path))
+    SUPPORTED_LOCALES.map((locale) => {
+      if (locale === 'id' && path === '/library/') return null;
+      return localizePath(locale, path);
+    }).filter((p): p is string => p !== null)
   );
 
   const paths = Array.from(

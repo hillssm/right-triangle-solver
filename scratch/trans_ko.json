@@ -1,0 +1,557 @@
+{
+  "sine-ratio-calculator": {
+    "slug": "사인비 계산기",
+    "h1": "사인비 계산기",
+    "headerSummary": "직각삼각형의 대변 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a와 빗변 c에서 sin(A)를 구합니다.",
+    "metaTitle": "사인비 계산기 | 직각삼각형 죄(A)",
+    "metaDescription": "이 사인비 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>를 사용하여 대변 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a와 빗변 c를 공식, 단계 및 예와 함께 사용하여 직각삼각형에서 sin(A)를 구합니다.",
+    "calculator_heading": "사인비 계산",
+    "calculator_outputLabel": "죄(A)",
+    "calculator_fields": [
+      "반대편 A",
+      "빗변 c"
+    ],
+    "introHeading": "이 사인비 계산기의 작동 방식",
+    "intro": [
+      "사인비는 기하학에서 배우는 첫 번째 삼각함수 중 하나입니다. 직각삼각형의 특정 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a>을 두 변, 즉 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>과 빗변에 연결합니다. 이 두 가지 <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">측정값</a>을 알고 있다면 이 계산기는 sin(A)를 즉시 제공합니다.",
+      "숙제를 하든, 시험 스타일의 답을 확인하든, 실제 측정 작업을 해결하든 이 도구는 수동 분할 단계를 제거합니다. 값을 입력하고 표시된 수식으로 결과를 얻으세요."
+    ],
+    "calculatorNote": "위의 필드에 대변 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a와 빗변 c의 길이를 입력합니다. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>는 a를 c로 나누고 sin(A)를 반환합니다. 두 값은 모두 양수여야 하며 c는 a보다 커야 합니다.",
+    "formula_display": "죄(A) = a / c",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A의 사인은 대변 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>의 길이를 빗변의 길이로 나눈 값과 같습니다. 이는 SOH-CAH-TOA의 SOH 부분으로 종종 기억됩니다.",
+      "직각 삼각형에서 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>은 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> A의 바로 맞은편에 있습니다. 빗변은 항상 가장 긴 변, 즉 90° 각도를 향하는 변입니다. 빗변은 항상 다리보다 길기 때문에 sin(A)는 예각에 대해 항상 0과 1 사이에 속합니다."
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> A의 경우, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a는 대향이고, 변 b는 인접하며, 변 c는 빗변입니다.",
+      "사인 비율은 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a(<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> A의 바로 맞은편)와 빗변 c(가장 긴 변, B에서 직각과 반대되는 변) 중 두 변만 사용합니다."
+    ],
+    "howToSteps": [
+      "직각삼각형에서 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> A를 찾아보세요. 90° 각도가 아닌 두 개의 예각 중 하나여야 합니다.",
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A 반대편의 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>을 찾습니다. 이것이 변 a입니다.",
+      "빗변을 찾아보세요. 이것은 오른쪽 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> 반대편에 있는 가장 긴 변인 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> c입니다.",
+      "첫 번째 입력 필드에 a 값을 입력합니다.",
+      "두 번째 입력 필드에 c 값을 입력합니다.",
+      "sin(A)를 보려면 계산을 클릭하세요.",
+      "결과를 검토합니다. 0과 1 사이의 소수여야 합니다."
+    ],
+    "example_intro": "대변 ​​<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a = 3이고 빗변 c = 5인 직각삼각형이 있다고 가정합니다.",
+    "example_steps": [
+      "죄(A) = a / c",
+      "죄(A) = 3 / 5",
+      "죄(A) = 0.6"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A의 사인은 0.6입니다. 이는 대변 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>이 빗변 길이의 60%임을 의미합니다. 실제 각도가 필요한 경우 역사인을 취합니다. A = arcsin(0.6) ≒ 36.87°.",
+    "whatResultMeans": [
+      "출력은 단위 없는 비율입니다. 반대편 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>의 크기가 빗변과 어떻게 비교되는지 알려줍니다. 결과가 0.5라는 것은 반대편이 정확히 빗변의 절반이라는 것을 의미합니다. 이는 A = 30°인 <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90 삼각형</a>에서 발생합니다.",
+      "작은 값(0에 가까움)은 빗변에 비해 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A가 작고 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>이 짧다는 것을 의미합니다. 1에 가까운 값은 평균 각도 A가 크고(90°에 가까움) 대변의 길이가 거의 빗변과 같습니다.",
+      "sin(A)는 두 길이의 비율이므로 단위가 없습니다. 삼각형의 측정 단위가 센티미터, 인치, 미터인지에 관계없이 양쪽이 동일한 단위를 사용하는 한 사인 값은 동일하게 유지됩니다."
+    ],
+    "whenToUse_intro": "다음 상황에서는 이 사인비<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>를 사용하세요.",
+    "whenToUse_items": [
+      "반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>과 빗변을 알고 있고 사인 값을 원합니다.",
+      "역사인 함수를 사용하여 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A를 구하려고 준비 중입니다.",
+      "교과서 답안을 확인하거나 자신의 삼각법 작업을 확인해야 합니다.",
+      "경사로의 높이나 경사면의 수직력과 같은 수직 구성 요소와 관련된 물리학 문제를 해결하고 있습니다.",
+      "벡터를 수직 부분과 수평 부분으로 나눕니다."
+    ],
+    "commonMistakes_intro": "사인을 계산할 때 다음과 같은 일반적인 오류에 주의하세요.",
+    "commonMistakes_items": [
+      "반대쪽 대신 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">쪽</a>을 사용합니다. 사인은 옆면이 아닌 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A의 맞은편면을 사용합니다.",
+      "수식에서 a와 c를 바꿉니다. 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>이 분자에 들어가고, 빗변이 분모에 들어가요. c / a를 쓰면 사인이 아닌 코시컨트가 제공됩니다.",
+      "다른 단위로 측정된 변을 사용합니다. a가 센티미터이고 c가 인치라면 그 비율은 의미가 없습니다. 먼저 동일한 단위로 변환하십시오.",
+      "c가 a보다 커야 한다는 사실을 잊어버린 것입니다. 유효한 직각삼각형에서 빗변은 항상 가장 긴 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>입니다.",
+      "각도 A로 오른쪽 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a>(90°)를 입력합니다. 사인은 예각에만 적용됩니다. 90° 각도는 꼭지점 B에 있습니다."
+    ],
+    "relatedLinks": [
+      "직각삼각형 삼각비 계산기",
+      "코사인 비율 계산기",
+      "탄젠트 비율 계산기",
+      "직각삼각형 각도 계산기"
+    ],
+    "faqs": [
+      {
+        "question": "직각삼각형에서 sin(A)의 공식은 무엇입니까?",
+        "answer": "공식은 sin(A) = a / c입니다. 여기서 a는 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> A의 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>이고 c는 빗변입니다. 반대쪽을 빗변으로 나눕니다."
+      },
+      {
+        "question": "직각삼각형에서 sin(A)가 항상 1보다 작은 이유는 무엇입니까?",
+        "answer": "빗변 c는 항상 가장 긴 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>이기 때문입니다. a는 c보다 짧으므로 분수 a/c는 항상 1보다 작습니다."
+      },
+      {
+        "question": "이 계산기를 사용하여 각도 자체를 찾을 수 있나요?",
+        "answer": "이 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>는 사인 값을 제공합니다. <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a>를 찾으려면 역사인 함수(A = arcsin(sin(A)))를 사용하십시오. 직각삼각형 각도 계산기를 사용하면 이 작업을 수행할 수 있습니다."
+      },
+      {
+        "question": "sin(A) 결과가 0.5라는 것은 무엇을 의미합니까?",
+        "answer": "이는 대변 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>이 정확히 빗변 길이의 절반이라는 뜻입니다. 이는 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A가 30°인 것에 해당합니다."
+      },
+      {
+        "question": "사인을 계산하려면 인접변을 입력해야 하나요?",
+        "answer": "아니요. 사인은 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a와 빗변 c만 사용합니다. 인접한 변 b는 사인 공식의 일부가 아닙니다."
+      }
+    ]
+  },
+  "cosine-ratio-calculator": {
+    "slug": "코사인 비율 계산기",
+    "h1": "코사인 비율 계산기",
+    "headerSummary": "명확한 직각삼각형 단계를 사용하여 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> b와 빗변 c로부터 cos(A)를 계산합니다.",
+    "metaTitle": "코사인 비율 계산기 | 직각삼각형 cos(A)",
+    "metaDescription": "이 코사인 비율 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>를 사용하여 수식, 단계 및 예와 함께 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> b와 빗변 c를 사용하여 직각삼각형에서 cos(A)를 구합니다.",
+    "calculator_heading": "코사인 비율 계산",
+    "calculator_outputLabel": "코스(A)",
+    "calculator_fields": [
+      "인접면 b",
+      "빗변 c"
+    ],
+    "introHeading": "이 코사인 비율 계산기의 작동 방식",
+    "intro": [
+      "코사인 비율은 직각삼각형의 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>이 빗변과 어떻게 비교되는지를 측정합니다. SOH-CAH-TOA의 두 번째 부분이며 기하학, 물리학 및 공학에서 가장 일반적으로 사용되는 삼각 함수 중 하나입니다.",
+      "이 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>는 두 개의 입력, 즉 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> b와 빗변 c를 취하고 cos(A)를 반환합니다. 나눗셈을 처리하고 결과를 즉시 표시하므로 산술 대신 기하학 이해에 집중할 수 있습니다."
+    ],
+    "calculatorNote": "위의 입력 필드에 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> b와 빗변 c를 입력합니다. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>는 cos(A) = b / c를 계산합니다. 두 값은 모두 양수여야 하며 c는 b보다 커야 합니다.",
+    "formula_display": "cos(A) = b / c",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A의 코사인은 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>을 빗변으로 나눈 값과 같습니다. 이것이 SOH-CAH-TOA의 CAH입니다.",
+      "인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> b는 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A와 직각에 닿는 다리입니다. 빗변 c는 직각의 맞은편에 위치하며 항상 가장 긴 변입니다. 빗변은 다리보다 길기 때문에 cos(A)는 예각에 대해 항상 0과 1 사이의 값을 생성합니다."
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> A의 경우, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a는 대향이고, 변 b는 인접하며, 변 c는 빗변입니다.",
+      "코사인 비율은 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> b(빗변과 함께 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> A를 형성하는 다리)와 빗변 c를 사용합니다. a면은 코사인 계산의 일부가 아닙니다."
+    ],
+    "howToSteps": [
+      "직각 삼각형에서 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A를 찾으세요. 두 개의 예각 중 하나입니다.",
+      "인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>을 식별합니다. 이것은 b 변입니다. 빗변과 함께 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> A를 형성하는 다리입니다.",
+      "90° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> 반대편의 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>인 빗변 c를 식별합니다.",
+      "첫 번째 필드에 b 값을 입력합니다.",
+      "두 번째 필드에 c 값을 입력합니다.",
+      "cos(A)를 보려면 계산을 누르세요.",
+      "결과가 0과 1 사이인지 확인합니다."
+    ],
+    "example_intro": "직각삼각형은 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> b = 4이고 빗변 c = 5입니다.",
+    "example_steps": [
+      "cos(A) = b / c",
+      "cos(A) = 4 / 5",
+      "cos(A) = 0.8"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a>의 코사인 A는 0.8입니다. 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>은 빗변 길이의 80%입니다. 각도를 찾으려면: A = arccos(0.8) ≒ 36.87°.",
+    "whatResultMeans": [
+      "코사인은 빗변 길이가 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>에 얼마나 많이 포함되는지 알려줍니다. 코사인이 0.8이면 인접한 변이 빗변만큼 80% 늘어난다는 의미입니다.",
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> A가 작을 때, 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>은 빗변만큼 길기 때문에 cos(A)는 1에 가깝습니다. 각도 A가 크면(90°에 가까움), 인접한 변은 빗변에 비해 수축되어 cos(A)를 0 쪽으로 밀어냅니다.",
+      "결과는 무차원입니다. <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">측정</a>이 피트, 미터 또는 기타 단위인지는 중요하지 않습니다. 코사인은 순수 비율입니다."
+    ],
+    "whenToUse_intro": "다음과 같은 경우에 이 코사인 비율 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>에 도달하세요.",
+    "whenToUse_items": [
+      "인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>과 빗변을 알고 있으며 코사인 값이 필요합니다.",
+      "힘, 속도 또는 변위 벡터의 수평 구성요소를 찾고 있습니다.",
+      "교과서나 문제 세트에서 삼각값을 확인하고 싶습니다.",
+      "수평 거리와 관련된 탐색 또는 측량 문제를 연구하고 있습니다.",
+      "시컨트나 탄젠트와 같은 다른 파생 수량을 계산하기 전에 cos(A)가 필요합니다."
+    ],
+    "commonMistakes_intro": "학생들이 가장 자주 범하는 코사인 오류는 다음과 같습니다.",
+    "commonMistakes_items": [
+      "인접한 변 대신 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>을 사용합니다. 코사인은 건너편 다리가 아닌 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A 옆에 있는 다리를 사용합니다.",
+      "c보다 큰 b를 입력합니다. 유효한 직각삼각형에서 빗변은 항상 가장 긴 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>입니다. b가 c를 초과하면 값이 직각 삼각형을 형성하지 않습니다.",
+      "분수를 뒤집습니다. c / b를 쓰면 코사인이 아닌 시컨트가 제공됩니다.",
+      "인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>과 빗변 레이블을 혼합합니다. 오른쪽 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a>의 반대쪽 변(즉, 빗변)과 각도 A의 일부를 형성하는 변(즉, 인접한 변)을 다시 확인하세요.",
+      "먼저 변환하지 않고 다양한 단위로 측정된 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변 길이</a>를 사용합니다."
+    ],
+    "relatedLinks": [
+      "직각삼각형 삼각비 계산기",
+      "사인비 계산기",
+      "탄젠트 비율 계산기",
+      "직각삼각형 각도 계산기"
+    ],
+    "faqs": [
+      {
+        "question": "직각 삼각형의 코사인 비율 공식은 무엇입니까?",
+        "answer": "cos(A) = b / c입니다. 여기서 b는 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>이고 c는 빗변입니다. 인접은 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A에 닿는 다리를 의미합니다."
+      },
+      {
+        "question": "코사인은 사인과 어떻게 다른가요?",
+        "answer": "사인은 빗변(a / c)에 대해 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>을 사용합니다. 코사인은 빗변(b/c) 위에 인접한 변을 사용합니다. 동일한 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a>를 기준으로 서로 다른 측면을 측정합니다."
+      },
+      {
+        "question": "cos(A) = 0.5이면 무엇을 의미하나요?",
+        "answer": "이는 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>이 빗변의 정확히 절반이라는 의미입니다. 이는 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A가 60°일 때 발생합니다."
+      },
+      {
+        "question": "코사인이 1보다 클 수 있나요?",
+        "answer": "아니요. 직각삼각형에서 빗변은 항상 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>보다 길기 때문에 b / c는 항상 1보다 작습니다."
+      },
+      {
+        "question": "코사인에는 왜 양면만 필요합니까?",
+        "answer": "코사인 공식에는 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>과 빗변만 포함됩니다. 반대편은 계산에 포함되지 않습니다."
+      }
+    ]
+  },
+  "tangent-ratio-calculator": {
+    "slug": "탄젠트 비율 계산기",
+    "h1": "탄젠트 비율 계산기",
+    "headerSummary": "기울기, 상승 및 주행 문제에 대해 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a와 인접한 변 b에서 tan(A)를 구합니다.",
+    "metaTitle": "탄젠트 비율 계산기 | 직각삼각형 tan(A)",
+    "metaDescription": "이 접선비 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>를 사용하여 공식, 단계 및 예와 함께 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a와 인접한 변 b를 사용하여 직각삼각형에서 tan(A)를 구합니다.",
+    "calculator_heading": "탄젠트 비율 계산",
+    "calculator_outputLabel": "황갈색(A)",
+    "calculator_fields": [
+      "반대편 A",
+      "인접면 b"
+    ],
+    "introHeading": "이 탄젠트 비율 계산기의 작동 방식",
+    "intro": [
+      "탄젠트는 기본 <a href=\"/right-triangle-trig-ratios-calculator/\" class=\"text-primary hover:underline\">삼각비</a>의 세 번째 비율이며 사인 및 코사인과 약간 다르게 작동합니다. 다리를 빗변과 비교하는 대신 접선은 한쪽 다리를 다른 다리와 비교합니다. 즉, 인접한 쪽의 반대편 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>을 비교합니다. 이는 경사와 고도각</a> 문제에 특히 유용합니다.",
+      "이 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>는 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a를 인접한 변 b로 나누고 tan(A)를 제공합니다. 계산기 앱을 꺼낼 필요 없이 두 다리 길이를 입력하고 답을 얻으세요."
+    ],
+    "calculatorNote": "위의 입력란에 반대편 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a와 인접변 b를 입력하세요. 이 도구는 tan(A) = a / b를 계산합니다. 두 값 모두 양수여야 합니다.",
+    "formula_display": "탄(A) = a / b",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a>의 탄젠트 A는 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>을 인접한 변으로 나눈 값과 같습니다. 이는 SOH-CAH-TOA의 TOA 부분입니다.",
+      "사인 및 코사인과 달리 탄젠트는 빗변을 포함하지 않습니다. 두 다리만 사용합니다. 이는 또한 접선이 1로 제한되지 않음을 의미합니다. 예각의 경우 양수일 수 있으며 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A가 90°에 접근하면 제한 없이 커집니다."
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> A의 경우, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a는 대향이고, 변 b는 인접하며, 변 c는 빗변입니다.",
+      "탄젠트는 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a와 인접한 변 b의 두 다리만 사용합니다. 빗변 c는 탄젠트 공식에 나타나지 않습니다."
+    ],
+    "howToSteps": [
+      "직각삼각형에서 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A를 찾으세요.",
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A의 바로 맞은편에 있는 다리인 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a를 식별합니다.",
+      "빗변과 함께 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> A를 형성하는 다리인 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> b를 식별합니다.",
+      "첫 번째 필드에 a 값을 입력합니다.",
+      "두 번째 필드에 b 값을 입력합니다.",
+      "계산을 클릭하여 tan(A)를 구합니다.",
+      "결과는 1보다 작거나, 1과 같거나, 1보다 클 수 있습니다."
+    ],
+    "example_intro": "직각삼각형은 대변 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>이 a = 3이고 인접변 b = 4입니다.",
+    "example_steps": [
+      "탄(A) = a / b",
+      "탄(A) = 3 / 4",
+      "황갈색(A) = 0.75"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A의 탄젠트는 0.75입니다. 각도를 찾으려면: A = arctan(0.75) ≒ 36.87°.",
+    "whatResultMeans": [
+      "탄젠트는 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A의 관점에서 삼각형의 가파른 정도를 알려줍니다. 이를 상승-오버-런 계산이라고 생각하십시오.",
+      "탄젠트가 1이라는 것은 반대편과 인접한 변이 동일하다는 것을 의미하며, 이는 <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90 삼각형</a>에서 발생합니다. 1 미만의 값은 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>이 인접한 변보다 짧다는 것을 의미합니다. 즉, 삼각형의 높이보다 폭이 더 넓습니다. 1보다 큰 값은 반대쪽이 더 길다는 것을 의미합니다. 즉, 삼각형의 너비가 너비보다 높습니다.",
+      "실제로 접선은 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A에 서 있을 때 빗변선의 기울기입니다."
+    ],
+    "whenToUse_intro": "이 접선 비율<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>는 다음과 같은 경우에 가장 유용합니다.",
+    "whenToUse_items": [
+      "삼각형의 양쪽 다리가 있고 접선 비율이 필요합니다.",
+      "경사, 기울기 또는 피치 문제(상승 오버런)를 해결하고 있습니다.",
+      "상승 또는 하강의 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a>를 찾아야 합니다.",
+      "경사로, 지붕 또는 경사가 얼마나 가파른지 확인하려고 합니다.",
+      "빗변을 사용하지 않고 다리 길이와 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> 측정값 간을 변환하고 있습니다."
+    ],
+    "commonMistakes_intro": "다음과 같은 일반적인 접선 실수를 피하세요.",
+    "commonMistakes_items": [
+      "접선 공식에 빗변을 포함합니다. 탄젠트는 다리 두 개만 사용하며 빗변은 포함하지 않습니다.",
+      "인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>을 분자에 넣습니다. 수식은 b/a가 아닌 a/b(인접에 대한 반대)입니다. 이를 반대로 하면 코탄젠트가 됩니다.",
+      "결과는 항상 1보다 작을 것으로 예상됩니다. 사인 및 코사인과 달리 탄젠트는 양수일 수 있습니다.",
+      "어느 다리가 반대쪽이고 어느 다리가 인접한지 혼동됩니다. 항상 직각이 아닌 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A를 기준으로 식별하십시오.",
+      "잘못된 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a>에 대한 공식을 사용했습니다. 각도 A 대신 각도 B로 라벨을 붙인 경우 반대쪽과 인접한 쪽이 서로 바뀝니다."
+    ],
+    "relatedLinks": [
+      "직각삼각형 삼각비 계산기",
+      "사인비 계산기",
+      "코사인 비율 계산기",
+      "직각삼각형 각도 계산기"
+    ],
+    "faqs": [
+      {
+        "question": "탄젠트 비율 공식은 무엇입니까?",
+        "answer": "tan(A) = a / b입니다. 여기서 a는 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>이고 b는 인접한 변입니다. 반대편을 인접한 것으로 나눕니다."
+      },
+      {
+        "question": "tan(A)가 1보다 클 수 있습니까?",
+        "answer": "예. 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>이 인접한 변보다 길면 탄젠트가 1을 초과합니다. 예를 들어 tan(60°) ≒ 1.732입니다."
+      },
+      {
+        "question": "접선은 기울기와 어떤 관련이 있습니까?",
+        "answer": "접선은 본질적으로 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>이 수평 런이고 반대쪽이 수직 상승일 때 빗변의 기울기입니다. tan(A) = 상승 / 실행."
+      },
+      {
+        "question": "탄젠트는 빗변을 사용하지 않는 이유는 무엇입니까?",
+        "answer": "탄젠트는 두 다리 사이의 비율을 직접 측정합니다. 접선은 척도가 아니라 삼각형의 모양(경사도)을 나타내기 때문에 빗변은 필요하지 않습니다."
+      },
+      {
+        "question": "a = b이면 어떻게 되나요?",
+        "answer": "두 다리가 동일할 때 tan(A) = 1이고 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A는 정확히 45°입니다."
+      }
+    ]
+  },
+  "cotangent-ratio-calculator": {
+    "slug": "코탄젠트 비율 계산기",
+    "h1": "코탄젠트 비율 계산기",
+    "headerSummary": "직각삼각형의 반대쪽 a 위에 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> b로부터 cot(A)를 계산합니다.",
+    "metaTitle": "코탄젠트 비율 계산기 | 직삼각형 유아용침대(A)",
+    "metaDescription": "이 코탄젠트 비율 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>를 사용하여 수식, 단계 및 예와 함께 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> b와 반대 변 a를 사용하여 직각 삼각형에서 cot(A)를 찾습니다.",
+    "calculator_heading": "코탄젠트 비율 계산",
+    "calculator_outputLabel": "유아용침대(A)",
+    "calculator_fields": [
+      "인접면 b",
+      "반대편 A"
+    ],
+    "introHeading": "이 코탄젠트 비율 계산기의 작동 방식",
+    "intro": [
+      "코탄젠트는 탄젠트의 역수입니다. 탄젠트는 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>을 인접 변으로 나누는 반면, 코탄젠트는 해당 분수를 뒤집습니다. 즉, 인접 변을 반대 변으로 나눕니다. 기본 기하학 수업에서는 덜 자주 등장하지만 고급 삼각법과 미적분학에서는 중요한 역할을 합니다.",
+      "이 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>는 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> b와 반대 변 a를 취한 다음 cot(A) = b / a를 반환합니다. 탄젠트 작업에 익숙하다면 코탄젠트는 단순히 역분수입니다."
+    ],
+    "calculatorNote": "위 필드에 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">면</a> b와 반대편 a를 입력합니다. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>는 cot(A) = b / a를 반환합니다. 두 값 모두 양수여야 합니다.",
+    "formula_display": "침대(A) = b / a",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a>의 코탄젠트 A는 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>을 반대쪽 변으로 나눈 값과 같습니다. 이는 탄젠트의 역수입니다: cot(A) = 1 / tan(A).",
+      "탄젠트와 마찬가지로 코탄젠트는 직각 삼각형의 두 다리만 사용합니다. 빗변은 관련되지 않습니다. 코탄젠트는 예각에 대해 양수 값을 사용할 수 있습니다."
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> A의 경우, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a는 대향이고, 변 b는 인접하며, 변 c는 빗변입니다.",
+      "코탄젠트는 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> b(<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> A 옆의 다리)를 분자로 사용하고 반대 변 a(각 A의 건너편)를 분모로 사용합니다. 빗변 c는 사용되지 않습니다."
+    ],
+    "howToSteps": [
+      "직각삼각형에서 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> A를 찾아보세요.",
+      "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> b, 인접한 다리 — <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A 옆에 있는 다리와 직각을 찾습니다.",
+      "반대쪽 다리인 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">측면</a> a를 찾으세요. - <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A 건너편에 있는 다리입니다.",
+      "첫 번째 입력란에 b를 입력합니다.",
+      "두 번째 입력 필드에 a를 입력합니다.",
+      "계산을 클릭합니다.",
+      "결과는 cot(A)이며 양수일 수 있습니다."
+    ],
+    "example_intro": "직각삼각형은 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> b = 4이고 반대변 a = 3입니다.",
+    "example_steps": [
+      "침대(A) = b / a",
+      "침대(A) = 4 / 3",
+      "침대(A) ≒ 1.3333"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A의 코탄젠트는 약 1.3333입니다. 이를 확인할 수 있습니다: tan(A) = 3/4 = 0.75, 및 1/0.75 = 1.3333.",
+    "whatResultMeans": [
+      "코탄젠트는 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>이 반대편 변에 비해 몇 번이나 맞는지 알려줍니다. 이는 가파른 비율의 런오버라이즈(run-over-rise) 버전입니다.",
+      "코탄젠트 1은 두 다리가 동일함을 의미합니다(45° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a>). 1보다 큰 값은 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>이 반대쪽 변보다 길다는 것을 의미합니다. 즉, 삼각형은 더 넓고 각도는 더 작습니다. 1보다 작은 값은 반대쪽이 더 길다는 것을 의미합니다. 즉, 각도가 더 크고 삼각형이 더 가파릅니다.",
+      "코탄젠트는 탄젠트의 역수이므로 항상 cot(A) = 1 / tan(A) 및 tan(A) = 1 / cot(A) 사이에서 변환할 수 있습니다."
+    ],
+    "whenToUse_intro": "다음과 같은 경우에 이 코탄젠트 비율 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>를 선택하세요.",
+    "whenToUse_items": [
+      "1 / tan(A)를 수동으로 계산하지 않고 탄젠트의 역수가 필요합니다.",
+      "특정 미적분학 항등식과 같이 코탄젠트를 특별히 요구하는 공식을 사용하고 있습니다.",
+      "당신은 상승-오버-런보다는 런-오버-상승의 관점에서 생각하는 것을 선호합니다.",
+      "당신은 측량, 건축 또는 삼각법 교정의 문제를 해결하고 있습니다."
+    ],
+    "commonMistakes_intro": "다음과 같은 코탄젠트 함정에 주의하세요.",
+    "commonMistakes_items": [
+      "b/a 대신 a/b를 씁니다. 코탄젠트는 반대편이 아닌 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>을 맨 위에 놓습니다. 그들을 교환하면 탄젠트가 제공됩니다.",
+      "코탄젠트와 코사인을 혼동합니다. 코탄젠트는 b/a(인접 대 반대)입니다. 코사인은 b/c(빗변 위에 인접)입니다. 그들은 다른 비율입니다.",
+      "계산에 빗변을 사용합니다. 코탄젠트는 두 개의 다리에만 관련됩니다.",
+      "그것을 잊어버리는 것은 접선의 역수이다. 이미 tan(A)를 알고 있다면 1 / tan(A)를 사용하여 cot(A)를 얻으세요.",
+      "어느 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">쪽</a>이 인접하고 반대편인지 혼동합니다. 항상 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A를 기준으로 측면을 식별합니다."
+    ],
+    "relatedLinks": [
+      "직각삼각형 삼각비 계산기",
+      "탄젠트 비율 계산기",
+      "사인비 계산기",
+      "코사인 비율 계산기"
+    ],
+    "faqs": [
+      {
+        "question": "직각 삼각형의 코탄젠트 공식은 무엇입니까?",
+        "answer": "cot(A) = b / a입니다. 여기서 b는 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>이고 a는 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> A의 반대쪽입니다. 이는 접선 분수의 반대입니다."
+      },
+      {
+        "question": "코탄젠트는 탄젠트와 어떤 관련이 있습니까?",
+        "answer": "코탄젠트는 탄젠트의 역수입니다. tan(A) = 0.75이면 cot(A) = 1 / 0.75 ≒ 1.3333입니다."
+      },
+      {
+        "question": "탄젠트 대신 코탄젠트를 언제 사용합니까?",
+        "answer": "수식에서 특별히 요구하거나 인접 대 반대 비율을 직접 원하는 경우 코탄젠트를 사용합니다. 많은 미적분학 및 물리학 맥락에서 코탄젠트는 항등식과 미분 공식에 나타납니다."
+      },
+      {
+        "question": "직각삼각형에서 cot(A)가 0이 될 수 있나요?",
+        "answer": "예각만 있는 직각삼각형에서 cot(A)는 항상 양수입니다. <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A가 90°에 접근하면 코탄젠트는 0에 접근하지만 90° 각도는 측정할 예각이 아니라 직각 자체입니다."
+      },
+      {
+        "question": "코탄젠트는 1을 탄젠트로 나눈 것과 같나요?",
+        "answer": "예. cot(A) = 1 / tan(A) = b / a. 두 표현식 모두 동일한 결과를 제공합니다."
+      }
+    ]
+  },
+  "secant-ratio-calculator": {
+    "slug": "secant-ratio-calculator",
+    "h1": "Secant Ratio Calculator",
+    "headerSummary": "Find sec(A) by comparing hypotenuse c with adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b, the reciprocal of cosine.",
+    "metaTitle": "Secant Ratio Calculator | Right Triangle sec(A)",
+    "metaDescription": "Use this secant ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> to find sec(A) in a right triangle using hypotenuse c and adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b with formula, steps, and examples.",
+    "calculator_heading": "Calculate Secant Ratio",
+    "calculator_outputLabel": "sec(A)",
+    "calculator_fields": [
+      "Hypotenuse c",
+      "Adjacent side b"
+    ],
+    "introHeading": "How This Secant Ratio Calculator Works",
+    "intro": [
+      "Secant is the reciprocal of cosine. Where cosine divides the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> by the hypotenuse, secant flips that — it divides the hypotenuse by the adjacent side. The result is always greater than or equal to 1 because the hypotenuse is always the longest side in a right triangle.",
+      "This <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> takes two inputs — hypotenuse c and adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b — and returns sec(A). It is a quick way to get this reciprocal ratio without doing the division by hand or computing cosine first."
+    ],
+    "calculatorNote": "Enter the hypotenuse c and adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b in the fields above. The <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> computes sec(A) = c / b. Both values must be positive, and c must be greater than b.",
+    "formula_display": "sec(A) = c / b",
+    "formula_paragraphs": [
+      "Secant of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A equals the hypotenuse divided by the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. This is the reciprocal of cosine: sec(A) = 1 / cos(A).",
+      "Because the hypotenuse is always longer than the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> in a right triangle, sec(A) is always greater than 1. As <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A gets larger, the adjacent side shrinks relative to the hypotenuse, so secant increases."
+    ],
+    "diagramExplanation": [
+      "For <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a is opposite, side b is adjacent, and side c is the hypotenuse.",
+      "Secant uses the hypotenuse c as the numerator and the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b as the denominator. The opposite side a is not part of the secant calculation."
+    ],
+    "howToSteps": [
+      "Identify <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A in your right triangle.",
+      "Find <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> c, the hypotenuse — the longest side, across from the right <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a>.",
+      "Find <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b, the adjacent leg — the side that touches both <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A and the right angle.",
+      "Enter c in the first input field.",
+      "Enter b in the second input field.",
+      "Click Calculate.",
+      "The result is sec(A), which is always greater than or equal to 1."
+    ],
+    "example_intro": "A right triangle has hypotenuse c = 5 and adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b = 4.",
+    "example_steps": [
+      "sec(A) = c / b",
+      "sec(A) = 5 / 4",
+      "sec(A) = 1.25"
+    ],
+    "example_conclusion": "The secant of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is 1.25. To verify: cos(A) = 4 / 5 = 0.8, and 1 / 0.8 = 1.25.",
+    "whatResultMeans": [
+      "Secant tells you how many times longer the hypotenuse is compared to the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. A secant of 1.25 means the hypotenuse is 25% longer than the adjacent side.",
+      "The minimum value of secant in a right triangle is slightly above 1, which occurs when <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is very small and the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is nearly as long as the hypotenuse. As angle A increases, the adjacent side shortens relative to the hypotenuse, and secant grows larger.",
+      "Secant is useful whenever you need to scale from the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> to the hypotenuse, or when a formula calls for 1 / cos(A)."
+    ],
+    "whenToUse_intro": "This secant ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> is the right choice when:",
+    "whenToUse_items": [
+      "A formula requires secant or 1 / cos(A) and you want the value directly.",
+      "You need to find how much longer the hypotenuse is compared to the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>.",
+      "You are working with calculus problems that involve secant in derivatives or integrals.",
+      "You are checking structural calculations where the hypotenuse represents the actual length and the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> represents the horizontal <a href=\"/right-triangle-projection-calculator/\" class=\"text-primary hover:underline\">projection</a>."
+    ],
+    "commonMistakes_intro": "These secant errors trip up students most often:",
+    "commonMistakes_items": [
+      "Confusing secant with cosine. Cosine is b / c (adjacent over hypotenuse). Secant is the reciprocal: c / b (hypotenuse over adjacent).",
+      "Getting a result less than 1. If your answer is below 1, you likely reversed the fraction. In a valid right triangle, sec(A) is always greater than or equal to 1.",
+      "Using the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> instead of the adjacent side. Secant pairs the hypotenuse with the adjacent side, not the opposite side.",
+      "Mixing up secant and cosecant. Secant is the reciprocal of cosine. Cosecant is the reciprocal of sine. They use different sides.",
+      "Entering b larger than c. The hypotenuse must always be longer than the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>."
+    ],
+    "relatedLinks": [
+      "Right Triangle Trig Ratios Calculator",
+      "Cosine Ratio Calculator",
+      "Cosecant Ratio Calculator",
+      "Cotangent Ratio Calculator"
+    ],
+    "faqs": [
+      {
+        "question": "What is the secant ratio in a right triangle?",
+        "answer": "Secant is defined as sec(A) = c / b, where c is the hypotenuse and b is the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. It is the reciprocal of cosine."
+      },
+      {
+        "question": "시컨트가 항상 1보다 큰 이유는 무엇입니까?",
+        "answer": "직각삼각형에서 빗변 c는 항상 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> 중 가장 길기 때문입니다. 더 큰 숫자(c)를 더 작은 숫자(b)로 나누면 항상 1보다 큰 결과가 나옵니다."
+      },
+      {
+        "question": "시컨트와 코사인을 어떻게 변환합니까?",
+        "answer": "sec(A) = 1 / cos(A)이고, cos(A) = 1 / sec(A)입니다. 하나를 알고 있으면 역수를 취하여 다른 하나를 찾을 수 있습니다."
+      },
+      {
+        "question": "초(45°)란 무엇입니까?",
+        "answer": "<a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90 삼각형</a>에서 빗변은 다리의 √2배입니다. 따라서 sec(45°) = √2 ≒ 1.4142입니다."
+      },
+      {
+        "question": "실제 응용 프로그램에서 시컨트가 사용됩니까?",
+        "answer": "예. 시컨트는 물리학 공식, 공학 계산 및 미적분학에 나타납니다. 경사를 따라 수평 거리를 실제 경로 길이로 조정해야 할 때 사용됩니다."
+      }
+    ]
+  },
+  "cosecant-ratio-calculator": {
+    "slug": "코시컨트 비율 계산기",
+    "h1": "코시컨트 비율 계산기",
+    "headerSummary": "빗변 c와 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a(사인의 역수)로부터 csc(A)를 계산합니다.",
+    "metaTitle": "코시컨트 비율 계산기 | 직각 삼각형 csc(A)",
+    "metaDescription": "이 코시컨트 비율 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>를 사용하여 빗변 c와 대변 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a를 공식, 단계 및 예와 함께 사용하여 직각삼각형에서 csc(A)를 구합니다.",
+    "calculator_heading": "코시컨트 비율 계산",
+    "calculator_outputLabel": "csc(A)",
+    "calculator_fields": [
+      "빗변 c",
+      "반대편 A"
+    ],
+    "introHeading": "코시컨트 비율 계산기의 작동 방식",
+    "intro": [
+      "코시컨트는 사인의 역수입니다. 빗변을 대변<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>으로 나누어 직각삼각형에서 항상 1보다 큰 비율을 제공합니다. 기본 과정에서는 사인이나 코사인만큼 자주 볼 수 없지만 고급 수학 및 특정 물리학 응용 프로그램에서는 필수적입니다.",
+      "이 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>를 사용하면 간단해집니다. 빗변 c와 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a를 입력하면 즉시 csc(A)가 반환됩니다. 사인을 먼저 계산한 다음 분수를 뒤집을 필요가 없습니다."
+    ],
+    "calculatorNote": "위 필드에 빗변 c와 반대편 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a를 입력합니다. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>는 csc(A) = c / a를 계산합니다. 두 값은 모두 양수여야 하며 c는 a보다 커야 합니다.",
+    "formula_display": "csc(A) = c / a",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a>의 코시컨트 A는 빗변을 대변 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>으로 나눈 값과 같습니다. 이는 사인의 역수입니다: csc(A) = 1 / sin(A).",
+      "빗변은 항상 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>보다 길므로 csc(A)는 예각에 대해 항상 1보다 큰 값을 생성합니다. <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> A가 감소함에 따라 빗변에 비해 대변이 짧아지고 코시컨트가 증가합니다."
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> A의 경우, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a는 대향이고, 변 b는 인접하며, 변 c는 빗변입니다.",
+      "코시컨트는 빗변 c를 분자로 사용하고 반대편 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a를 분모로 사용합니다. 인접변 b는 코시컨트 공식에서 아무런 역할을 하지 않습니다."
+    ],
+    "howToSteps": [
+      "직각삼각형에서 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> A를 찾아보세요.",
+      "빗변 c(오른쪽 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> 반대편의 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> 및 가장 긴 변))을 찾습니다.",
+      "반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a를 찾습니다. 즉 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A의 바로 맞은편에 있는 다리입니다.",
+      "첫 번째 입력 필드에 c를 입력합니다.",
+      "두 번째 입력 필드에 a를 입력합니다.",
+      "계산을 클릭합니다.",
+      "결과는 csc(A)이며 항상 1보다 큽니다."
+    ],
+    "example_intro": "직각삼각형은 빗변 c = 5이고 대변 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a = 3입니다.",
+    "example_steps": [
+      "csc(A) = c / a",
+      "csc(A) = 5 / 3",
+      "csc(A) ≒ 1.6667"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A의 코시컨트는 약 1.6667입니다. 검증: sin(A) = 3 / 5 = 0.6, 및 1 / 0.6 ≒ 1.6667.",
+    "whatResultMeans": [
+      "코시컨트는 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>에 비해 빗변이 몇 배나 더 긴지 알려줍니다. 코시컨트가 1.6667이라는 것은 빗변이 반대변보다 약 67% 더 길다는 것을 의미합니다.",
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> A가 크면(90°에 가까움) 반대편 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>은 거의 빗변만큼 길기 때문에 csc(A)는 1에 가깝습니다. 각도 A가 작으면 반대 변은 훨씬 짧아지고 코시컨트는 커집니다.",
+      "이렇게 생각해보세요: 대변 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>을 알고 빗변을 찾고 싶다면 반대변에 csc(A)를 곱하세요. 그러면 c = a × csc(A)가 됩니다."
+    ],
+    "whenToUse_intro": "다음과 같은 경우에 이 코시컨트 비율 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>에 도달할 수 있습니다.",
+    "whenToUse_items": [
+      "먼저 sin(A)를 계산하지 않고 사인의 역수가 필요합니다.",
+      "공식은 특히 특정 삼각법 항등식에 나타나는 코시컨트를 요구합니다.",
+      "반대편 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>을 전체 빗변 길이까지 확장하고 있습니다.",
+      "당신은 힘, 파동 함수 또는 코시컨트를 사용하는 진동 공식과 관련된 물리학 또는 공학 문제를 연구하고 있습니다."
+    ],
+    "commonMistakes_intro": "다음 코시컨트 오류에 주의하세요.",
+    "commonMistakes_items": [
+      "코시컨트와 사인을 혼동합니다. 사인은 a/c입니다(빗변의 반대). 코시컨트는 역수입니다: c / a (대변에 대한 빗변).",
+      "코시컨트와 시컨트를 혼동합니다. 코시컨트는 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>(사인의 역수)을 기반으로 합니다. 시컨트는 인접한 변(코사인의 역수)을 기준으로 합니다. 그들은 다른 다리를 사용합니다.",
+      "1보다 작은 결과를 얻습니다. 대답이 1 미만인 경우 값을 잘못된 순서로 입력했을 수 있습니다. csc(A)는 항상 1보다 큽니다.",
+      "반대쪽 대신 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">쪽</a>을 사용합니다. 코시컨트는 빗변과 반대편만 쌍을 이룹니다.",
+      "코시컨트와 코사인이 이름으로 연결될 것으로 예상됩니다. 공동 접두사에도 불구하고 코시컨트는 코사인이 아니라 사인의 역수입니다."
+    ],
+    "relatedLinks": [
+      "직각삼각형 삼각비 계산기",
+      "사인비 계산기",
+      "시컨트 비율 계산기",
+      "코탄젠트 비율 계산기"
+    ],
+    "faqs": [
+      {
+        "question": "직각삼각형의 코시컨트 공식은 무엇입니까?",
+        "answer": "csc(A) = c / a입니다. 여기서 c는 빗변이고 a는 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>입니다. 코시컨트는 사인의 역수입니다."
+      },
+      {
+        "question": "코시컨트는 사인과 어떤 관련이 있나요?",
+        "answer": "csc(A) = 1 / 죄(A). sin(A) = 0.6이면 csc(A) = 1 / 0.6 ≒ 1.6667입니다."
+      },
+      {
+        "question": "코시컨트가 항상 1보다 큰 이유는 무엇입니까?",
+        "answer": "직각삼각형의 빗변은 항상 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>보다 길기 때문입니다. 분수 c / a는 항상 1을 초과합니다."
+      },
+      {
+        "question": "csc(30°)란 무엇입니까?",
+        "answer": "<a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90 삼각형</a>에서 sin(30°) = 0.5이므로 csc(30°) = 1 / 0.5 = 2입니다. 빗변은 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>의 정확히 두 배입니다."
+      },
+      {
+        "question": "사인 대신 코시컨트를 언제 사용합니까?",
+        "answer": "공식에서 코시컨트를 직접 요구하거나 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>에서 빗변을 구하려는 경우에 사용합니다: c = a × csc(A). 사인으로 나누는 단계를 저장합니다."
+      }
+    ]
+  }
+}

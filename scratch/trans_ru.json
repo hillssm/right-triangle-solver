@@ -1,0 +1,557 @@
+{
+  "sine-ratio-calculator": {
+    "slug": "калькулятор синусоидального отношения",
+    "h1": "Калькулятор коэффициента синуса",
+    "headerSummary": "Найдите sin(A) от противоположной <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> стороны</a> a и гипотенузы c в прямоугольном треугольнике.",
+    "metaTitle": "Калькулятор коэффициента синуса | Грех прямоугольного треугольника (A)",
+    "metaDescription": "Используйте этот калькулятор соотношения синусов <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a>, чтобы найти sin(A) в прямоугольном треугольнике, используя противолежащую <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> a и гипотенузу c с формулой, шагами и примерами.",
+    "calculator_heading": "Вычислить соотношение синуса",
+    "calculator_outputLabel": "грех(А)",
+    "calculator_fields": [
+      "Противоположная сторона а",
+      "Гипотенуза c"
+    ],
+    "introHeading": "Как работает этот калькулятор синусоидального соотношения",
+    "intro": [
+      "Отношение синуса — одна из первых тригонометрических функций, которые вы изучаете в геометрии. Он соединяет определенный <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угол</a> в прямоугольном треугольнике с двумя его сторонами — противоположной <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">стороной</a> и гипотенузой. Если вы знаете эти два <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">измерения</a>, этот калькулятор мгновенно выдаст вам sin(A).",
+      "Независимо от того, решаете ли вы домашнее задание, проверяете ответ в стиле экзамена или решаете реальную измерительную задачу, этот инструмент устраняет шаг ручного деления. Введите значения и получите результат по показанной формуле."
+    ],
+    "calculatorNote": "Введите длину противоположной <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">стороны</a> a и гипотенузы c в поля выше. Калькулятор <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> делит a на c и возвращает sin(A). Оба значения должны быть положительными, а c должно быть больше a.",
+    "formula_display": "грех(А) = а/с",
+    "formula_paragraphs": [
+      "Синус <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A равен длине противоположной <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">стороны</a> деленной на длину гипотенузы. Об этом часто вспоминают с помощью части SOH в SOH-CAH-TOA.",
+      "В прямоугольном треугольнике противолежащая <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> — это сторона, расположенная прямо напротив <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A. Гипотенуза всегда является самой длинной стороной — той, которая обращена к углу 90°. Поскольку гипотенуза всегда длиннее любого катета, sin(A) всегда находится в диапазоне от 0 до 1 для острых углов."
+    ],
+    "diagramExplanation": [
+      "Для <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> a противоположна, сторона b примыкает, а сторона c является гипотенузой.",
+      "В пропорции синуса используются только две из этих трех сторон: противоположная <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> a (прямо напротив <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A) и гипотенуза c (самая длинная сторона, противоположная прямому углу в точке B)."
+    ],
+    "howToSteps": [
+      "Определите <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угол</a> A в прямоугольном треугольнике. Это должен быть один из двух острых углов, а не угол 90°.",
+      "Найдите <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> против <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A. Это сторона a.",
+      "Найдите гипотенузу. Это <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> c, самая длинная сторона, противоположная правому <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">углу</a>.",
+      "Введите значение a в первое поле ввода.",
+      "Введите значение c во второе поле ввода.",
+      "Нажмите «Рассчитать», чтобы увидеть грех (A).",
+      "Просмотрите результат. Это должно быть десятичное число от 0 до 1."
+    ],
+    "example_intro": "Предположим, у вас есть прямоугольный треугольник, у которого противолежащая сторона <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a = 3, а гипотенуза c = 5.",
+    "example_steps": [
+      "грех(А) = а/с",
+      "грех(А) = 3/5",
+      "грех(А) = 0,6"
+    ],
+    "example_conclusion": "Синус <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A равен 0,6. Это означает, что противоположная сторона <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> составляет 60% длины гипотенузы. Если вам нужен реальный угол, возьмите обратный синус: A = arcsin(0,6) ≈ 36,87°.",
+    "whatResultMeans": [
+      "Результатом является безразмерное соотношение. Он показывает, как противоположная сторона <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> соотносится с размером гипотенузы. Результат 0,5 означает, что противоположная сторона равна ровно половине гипотенузы — что происходит в треугольнике <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90</a>, где A = 30°.",
+      "Маленькие значения (близкие к 0) означают, что <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угол</a> A мал, а противоположная сторона <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> коротка относительно гипотенузы. Значения ближе к 1 означают, что угол A велик (около 90°), а длина противоположной стороны почти равна длине гипотенузы.",
+      "Поскольку sin(A) представляет собой отношение двух длин, он не имеет единиц измерения. Независимо от того, измеряется ли ваш треугольник в сантиметрах, дюймах или метрах, значение синуса остается неизменным, пока обе стороны используют одну и ту же единицу измерения."
+    ],
+    "whenToUse_intro": "Используйте этот калькулятор синусоидального соотношения <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> в любой из этих ситуаций:",
+    "whenToUse_items": [
+      "Вы знаете противоположную <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> и гипотенузу и хотите получить значение синуса.",
+      "Вы готовитесь найти <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угол</a> A с помощью функции обратного синуса.",
+      "Вам нужно проверить ответ из учебника или проверить свою работу по тригонометрии.",
+      "Вы решаете физические задачи, включающие вертикальные компоненты, такие как высота пандуса или вертикальная сила на уклоне.",
+      "Вы разбиваете вектор на вертикальную и горизонтальную части."
+    ],
+    "commonMistakes_intro": "Обратите внимание на следующие распространенные ошибки при вычислении синуса:",
+    "commonMistakes_items": [
+      "Использование соседней стороны <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> вместо противоположной стороны. Для синуса используется сторона, лежащая напротив <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A, а не сторона, следующая за ним.",
+      "Меняем местами a и c в формуле. Противоположная сторона <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> стоит в числителе, а гипотенуза — в знаменателе. Написание с/а дает косеканс, а не синус.",
+      "Использование сторон, измеряемых в разных единицах. Если а указано в сантиметрах, а с — в дюймах, соотношение не имеет смысла. Сначала переведите в ту же единицу измерения.",
+      "Забывая, что c должно быть больше a. В правильном прямоугольном треугольнике гипотенуза всегда является самой длинной <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">стороной</a>.",
+      "Ввод прямого <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> (90°) в качестве угла A. Синус применяется только к острым углам. Угол 90° находится в вершине В."
+    ],
+    "relatedLinks": [
+      "Калькулятор коэффициентов тригонометрии прямоугольного треугольника",
+      "Калькулятор косинуса",
+      "Калькулятор тангенса",
+      "Калькулятор угла прямоугольного треугольника"
+    ],
+    "faqs": [
+      {
+        "question": "Какова формула sin(A) в прямоугольном треугольнике?",
+        "answer": "Формула: sin(A) = a / c, где a — <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> против <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A, а c — гипотенуза. Противоположную сторону делим на гипотенузу."
+      },
+      {
+        "question": "Почему в прямоугольном треугольнике sin(A) всегда меньше 1?",
+        "answer": "Потому что гипотенуза c всегда является самой длинной стороной <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>. Поскольку а короче с, дробь а/с всегда меньше 1."
+      },
+      {
+        "question": "Могу ли я использовать этот калькулятор, чтобы найти сам угол?",
+        "answer": "Этот <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">калькулятор</a> выдает значение синуса. Чтобы найти угол <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"></a>, используйте функцию обратного синуса: A = arcsin(sin(A)). Вы можете сделать это с помощью нашего калькулятора угла прямоугольного треугольника."
+      },
+      {
+        "question": "Что означает результат sin(A), равный 0,5?",
+        "answer": "Это означает, что противоположная сторона <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> равна ровно половине длины гипотенузы. Это соответствует тому, что <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угол</a> A равен 30°."
+      },
+      {
+        "question": "Нужно ли мне вводить прилегающую сторону для расчета синуса?",
+        "answer": "Нет. Синус использует только противоположную <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> сторону</a> a и гипотенузу c. Соседняя сторона b не является частью формулы синуса."
+      }
+    ]
+  },
+  "cosine-ratio-calculator": {
+    "slug": "cosine-ratio-calculator",
+    "h1": "Cosine Ratio Calculator",
+    "headerSummary": "Calculate cos(A) from the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b and hypotenuse c with clear right-triangle steps.",
+    "metaTitle": "Cosine Ratio Calculator | Right Triangle cos(A)",
+    "metaDescription": "Use this cosine ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> to find cos(A) in a right triangle using adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b and hypotenuse c with formula, steps, and examples.",
+    "calculator_heading": "Calculate Cosine Ratio",
+    "calculator_outputLabel": "cos(A)",
+    "calculator_fields": [
+      "Adjacent side b",
+      "Hypotenuse c"
+    ],
+    "introHeading": "How This Cosine Ratio Calculator Works",
+    "intro": [
+      "The cosine ratio measures how the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> of a right triangle compares to the hypotenuse. It is the second part of SOH-CAH-TOA and one of the most commonly used trig functions in geometry, physics, and engineering.",
+      "This <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> takes two inputs — the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b and the hypotenuse c — and returns cos(A). It handles the division for you and shows the result immediately, so you can focus on understanding the geometry instead of the arithmetic."
+    ],
+    "calculatorNote": "Type the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b and hypotenuse c into the input fields above. The <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> computes cos(A) = b / c. Both values must be positive, and c must be larger than b.",
+    "formula_display": "cos(A) = b / c",
+    "formula_paragraphs": [
+      "The cosine of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A equals the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> divided by the hypotenuse. This is the CAH in SOH-CAH-TOA.",
+      "The adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b is the leg that touches <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A and the right angle. The hypotenuse c sits across from the right angle and is always the longest side. Because the hypotenuse is longer than any leg, cos(A) always produces a value between 0 and 1 for acute angles."
+    ],
+    "diagramExplanation": [
+      "For <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a is opposite, side b is adjacent, and side c is the hypotenuse.",
+      "The cosine ratio uses the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b (the leg that forms <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A along with the hypotenuse) and the hypotenuse c. Side a is not part of the cosine calculation."
+    ],
+    "howToSteps": [
+      "Locate <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A in your right triangle. It is one of the two acute angles.",
+      "Identify the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. This is side b — the leg that forms <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A together with the hypotenuse.",
+      "Identify the hypotenuse c, the <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> opposite the 90° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a>.",
+      "Enter the value of b in the first field.",
+      "Enter the value of c in the second field.",
+      "Press Calculate to see cos(A).",
+      "Check that the result is between 0 and 1."
+    ],
+    "example_intro": "A right triangle has adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b = 4 and hypotenuse c = 5.",
+    "example_steps": [
+      "cos(A) = b / c",
+      "cos(A) = 4 / 5",
+      "cos(A) = 0.8"
+    ],
+    "example_conclusion": "Cosine of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is 0.8. The adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is 80% of the hypotenuse length. To find the angle: A = arccos(0.8) ≈ 36.87°.",
+    "whatResultMeans": [
+      "Cosine tells you how much of the hypotenuse length is covered by the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. A cosine of 0.8 means the adjacent side stretches 80% as far as the hypotenuse does.",
+      "When <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is small, the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is nearly as long as the hypotenuse, so cos(A) is close to 1. When angle A is large (near 90°), the adjacent side shrinks relative to the hypotenuse, pushing cos(A) toward 0.",
+      "The result is dimensionless. It does not matter whether your <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">measurements</a> are in feet, meters, or any other unit — cosine is a pure ratio."
+    ],
+    "whenToUse_intro": "Reach for this cosine ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> when:",
+    "whenToUse_items": [
+      "You know the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> and hypotenuse and need the cosine value.",
+      "You are finding the horizontal component of a force, velocity, or displacement vector.",
+      "You want to verify a trig value from a textbook or problem set.",
+      "You are working on navigation or surveying problems that involve horizontal distances.",
+      "You need cos(A) before computing another derived quantity, like secant or tangent."
+    ],
+    "commonMistakes_intro": "These are the most frequent cosine errors students make:",
+    "commonMistakes_items": [
+      "Using the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> instead of the adjacent side. Cosine uses the leg next to <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A, not the one across from it.",
+      "Entering b larger than c. In a valid right triangle, the hypotenuse is always the longest <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. If b exceeds c, your values do not form a right triangle.",
+      "Reversing the fraction. Writing c / b gives the secant, not the cosine.",
+      "Mixing the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> with the hypotenuse label. Double-check which side is opposite the right <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> (that is the hypotenuse) and which forms part of angle A (that is the adjacent side).",
+      "Using <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side lengths</a> measured in different units without converting first."
+    ],
+    "relatedLinks": [
+      "Right Triangle Trig Ratios Calculator",
+      "Sine Ratio Calculator",
+      "Tangent Ratio Calculator",
+      "Right Triangle Angle Calculator"
+    ],
+    "faqs": [
+      {
+        "question": "What is the cosine ratio formula for a right triangle?",
+        "answer": "Это cos(A) = b / c, где b — прилегающая сторона <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>, а c — гипотенуза. Смежный означает участок, который касается <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A."
+      },
+      {
+        "question": "Чем косинус отличается от синуса?",
+        "answer": "Синус использует противоположную сторону <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> над гипотенузой (a / c). Косинус использует прилежащую сторону над гипотенузой (b/c). Они измеряют разные стороны относительно одного и того же <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a>."
+      },
+      {
+        "question": "Что означает, если cos(A) = 0,5?",
+        "answer": "Это означает, что смежная сторона <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> равна ровно половине гипотенузы. Это происходит, когда <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угол</a> A равен 60°."
+      },
+      {
+        "question": "Может ли косинус быть больше 1?",
+        "answer": "Нет. В прямоугольном треугольнике гипотенуза всегда длиннее прилегающей стороны <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>, поэтому b/c всегда меньше 1."
+      },
+      {
+        "question": "Почему мне нужны только две стороны косинуса?",
+        "answer": "Формула косинуса включает только прилегающую сторону <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> и гипотенузу. Противоположная сторона не участвует в расчете."
+      }
+    ]
+  },
+  "tangent-ratio-calculator": {
+    "slug": "калькулятор тангенса",
+    "h1": "Калькулятор тангенса",
+    "headerSummary": "Найдите tan(A) с противоположной <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> стороны</a> a и прилегающей стороны b для задач уклона, подъема и движения.",
+    "metaTitle": "Калькулятор тангенса | Прямоугольный треугольник (A)",
+    "metaDescription": "Используйте этот калькулятор соотношения тангенсов <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a>, чтобы найти tan(A) в прямоугольном треугольнике, используя противолежащую <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> сторону</a> a и прилегающую сторону b с формулой, шагами и примерами.",
+    "calculator_heading": "Вычислить коэффициент касательной",
+    "calculator_outputLabel": "загар(А)",
+    "calculator_fields": [
+      "Противоположная сторона а",
+      "Соседняя сторона б"
+    ],
+    "introHeading": "Как работает этот калькулятор тангенса",
+    "intro": [
+      "Тангенс — это третье из основных <a href=\"/right-triangle-trig-ratios-calculator/\" class=\"text-primary hover:underline\">тригональных отношений</a>, и он работает немного иначе, чем синус и косинус. Вместо сравнения катета с гипотенузой, касательная сравнивает один катет с другим — в частности, противоположную <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> с примыкающей стороной. Это делает его особенно полезным в задачах наклона и <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> подъема.",
+      "Этот <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">калькулятор</a> делит противоположную <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> a на соседнюю сторону b и дает tan(A). Не нужно открывать приложение-калькулятор — просто введите длину двух ног и получите ответ."
+    ],
+    "calculatorNote": "Введите противоположную <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> a и прилегающую сторону b в поля ввода выше. Инструмент вычисляет tan(A) = a / b. Оба значения должны быть положительными.",
+    "formula_display": "загар(А) = а/б",
+    "formula_paragraphs": [
+      "Тангенс <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A равен противоположной <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">стороне</a> деленной на примыкающую сторону. Это часть TOA SOH-CAH-TOA.",
+      "В отличие от синуса и косинуса, тангенс не включает гипотенузу. Он использует только две ноги. Это также означает, что тангенс не ограничен единицей — это может быть любое положительное число для острых углов, и оно неограниченно растет по мере того, как <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угол</a> A приближается к 90°."
+    ],
+    "diagramExplanation": [
+      "Для <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> a противоположна, сторона b примыкает, а сторона c является гипотенузой.",
+      "Касательная использует только два участка: противоположную <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> a и прилегающую сторону b. Гипотенуза c не фигурирует в формуле тангенса."
+    ],
+    "howToSteps": [
+      "Найдите <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угол</a> A в прямоугольном треугольнике.",
+      "Определите <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> a, участок прямо напротив <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A.",
+      "Определите <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> b, катет, образующий <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угол</a> A вдоль гипотенузы.",
+      "Введите значение a в первое поле.",
+      "Введите значение b во второе поле.",
+      "Нажмите «Рассчитать», чтобы получить загар (A).",
+      "Результат может быть меньше 1, равен 1 или больше 1."
+    ],
+    "example_intro": "В прямоугольном треугольнике противолежащая <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> a = 3 и примыкающая к ней сторона b = 4.",
+    "example_steps": [
+      "загар(А) = а/б",
+      "загар(А) = 3/4",
+      "Тан(А) = 0,75"
+    ],
+    "example_conclusion": "Тангенс <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A равен 0,75. Чтобы найти угол: A = arctan(0,75) ≈ 36,87°.",
+    "whatResultMeans": [
+      "Тангенс сообщает вам крутизну треугольника с точки зрения <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> А. Думайте об этом как о расчете превышения роста.",
+      "Тангенс, равный 1, означает, что противоположные и смежные стороны равны, что происходит в треугольнике <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90</a>. Значения ниже 1 означают, что противоположная <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> короче соседней стороны — ширина треугольника превышает его высоту. Значения выше 1 означают, что противоположная сторона длиннее — высота треугольника превышает его ширину.",
+      "На практике тангенс — это наклон гипотенузы, когда вы стоите под <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">углом</a> A."
+    ],
+    "whenToUse_intro": "Этот калькулятор тангенса <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> наиболее полезен в следующих случаях:",
+    "whenToUse_items": [
+      "У вас есть обе стороны треугольника, и вам нужно соотношение касательных.",
+      "Вы решаете проблемы уклона, уклона или тангажа (перебег).",
+      "Вам нужно найти <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угол</a> подъема или опускания.",
+      "Вы хотите определить, насколько крутой скат, крыша или уклон.",
+      "Вы выполняете преобразование между длинами катетов и мерами <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">углов</a> без использования гипотенузы."
+    ],
+    "commonMistakes_intro": "Избегайте следующих распространенных ошибок касательной:",
+    "commonMistakes_items": [
+      "Включение гипотенузы в формулу тангенса. Тангенс использует только два катета — гипотенуза не задействована.",
+      "Помещаем соседнюю сторону <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> в числитель. Формула — a/b (противоположное над соседним), а не b/a. Перестановка дает котангенс.",
+      "Ожидается, что результат всегда будет меньше 1. В отличие от синуса и косинуса, тангенс может быть любым положительным числом.",
+      "Путаемся, какая нога противоположная, а какая соседняя. Всегда идентифицируйте их относительно <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A, а не прямого угла.",
+      "Использование формулы неправильного <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a>. Если вы обозначили угол B вместо угла A, противоположная и прилегающая стороны поменяются местами."
+    ],
+    "relatedLinks": [
+      "Калькулятор коэффициентов тригонометрии прямоугольного треугольника",
+      "Калькулятор коэффициента синуса",
+      "Калькулятор косинуса",
+      "Калькулятор угла прямоугольного треугольника"
+    ],
+    "faqs": [
+      {
+        "question": "Какова формула отношения тангенса?",
+        "answer": "Это tan(A) = a / b, где a — противоположная сторона <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>, а b — примыкающая сторона. Вы делите противоположное на соседнее."
+      },
+      {
+        "question": "Может ли tan(A) быть больше 1?",
+        "answer": "Да. Когда противоположная сторона <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> длиннее соседней стороны, тангенс превышает 1. Например, tan(60°) ≈ 1,732."
+      },
+      {
+        "question": "Как тангенс связан с наклоном?",
+        "answer": "Тангенс - это, по сути, наклон гипотенузы, когда прилегающая сторона <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> представляет собой горизонтальный участок, а противоположная сторона - это вертикальный подъем. tan(A) = подъем/бег."
+      },
+      {
+        "question": "Почему тангенс не использует гипотенузу?",
+        "answer": "Тангенс напрямую измеряет соотношение между двумя катетами. Гипотенуза не нужна, поскольку тангенс описывает форму (крутизну) треугольника, а не масштаб."
+      },
+      {
+        "question": "Что произойдет, если а = b?",
+        "answer": "Когда обе стороны равны, tan(A) = 1 и <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угол</a> A равен точно 45°."
+      }
+    ]
+  },
+  "cotangent-ratio-calculator": {
+    "slug": "калькулятор котангенса",
+    "h1": "Калькулятор коэффициента котангенса",
+    "headerSummary": "Вычислите cot(A) от смежной <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">стороны</a> b над противоположной стороной a в прямоугольном треугольнике.",
+    "metaTitle": "Калькулятор котангенса | Треугольная детская кроватка (A)",
+    "metaDescription": "Используйте этот калькулятор котангенса <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a>, чтобы найти детскую решетку (A) в прямоугольном треугольнике, используя соседнюю <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> сторону</a> b и противоположную сторону a с формулой, шагами и примерами.",
+    "calculator_heading": "Вычислить коэффициент котангенса",
+    "calculator_outputLabel": "детская кроватка(А)",
+    "calculator_fields": [
+      "Соседняя сторона б",
+      "Противоположная сторона а"
+    ],
+    "introHeading": "Как работает этот калькулятор котангенса",
+    "intro": [
+      "Котангенс является обратной величиной тангенса. В то время как тангенс делит противоположную сторону <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> на соседнюю сторону, котангенс переворачивает эту дробь — он делит соседнюю сторону на противоположную сторону. Он реже встречается на уроках базовой геометрии, но играет важную роль в углубленной тригонометрии и исчислении.",
+      "Этот <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">калькулятор</a> берет соседнюю <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> b и противоположную сторону a, а затем возвращает cot(A) = b / a. Если вы привыкли работать с тангенсом, котангенс — это просто обратная дробь."
+    ],
+    "calculatorNote": "Введите соседнюю <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> b и противоположную сторону a в поля выше. Калькулятор <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> возвращает cot(A) = b / a. Оба значения должны быть положительными.",
+    "formula_display": "детская кроватка(А) = б/а",
+    "formula_paragraphs": [
+      "Котангенс <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A равен прилежащей <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">стороне</a> деленной на противоположную сторону. Это обратная величина тангенса: cot(A) = 1 / tan(A).",
+      "Как и тангенс, котангенс использует только две стороны прямоугольного треугольника. Гипотенуза не участвует. Котангенс может принимать любое положительное значение для острых углов."
+    ],
+    "diagramExplanation": [
+      "Для <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> a противоположна, сторона b примыкает, а сторона c является гипотенузой.",
+      "В котангенсе смежная сторона <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> b (катет рядом с <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">уголом</a> A) используется в качестве числителя, а противоположная сторона a (напротив угла A) — в качестве знаменателя. Гипотенуза c не используется."
+    ],
+    "howToSteps": [
+      "Определите <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угол</a> A в прямоугольном треугольнике.",
+      "Найдите <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> b, соседний катет — тот, что рядом с <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">уголом</a> A и прямой угол.",
+      "Найдите <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> a, противоположный катет — тот, который лежит напротив <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A.",
+      "Введите b в первое поле ввода.",
+      "Введите a во второе поле ввода.",
+      "Нажмите «Рассчитать».",
+      "Результатом является cot(A), который может быть любым положительным числом."
+    ],
+    "example_intro": "Прямоугольный треугольник имеет смежную <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> b = 4 и противоположную сторону a = 3.",
+    "example_steps": [
+      "детская кроватка(А) = б/а",
+      "детская кроватка(А) = 4/3",
+      "детская кроватка(А) ≈ 1,3333"
+    ],
+    "example_conclusion": "Котангенс угла <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A равен примерно 1,3333. Вы можете убедиться в этом: tan(A) = 3/4 = 0,75 и 1/0,75 = 1,3333.",
+    "whatResultMeans": [
+      "Котангенс показывает, сколько раз соседняя сторона <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> подходит относительно противоположной стороны. Это версия коэффициента крутизны с превышением подъема.",
+      "Котангенс, равный 1, означает, что оба катета равны (угол 45° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"></a>). Значения больше 1 означают, что соседняя <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> длиннее противоположной стороны — треугольник шире, а угол меньше. Значения меньше 1 означают, что противоположная сторона длиннее — угол больше, а треугольник круче.",
+      "Поскольку котангенс является обратной величиной тангенса, вы всегда можете выполнить преобразование между ними: cot(A) = 1/tan(A) и tan(A) = 1/cot(A)."
+    ],
+    "whenToUse_intro": "Выберите этот котангенс <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">калькулятор</a>, когда:",
+    "whenToUse_items": [
+      "Вам нужно обратное значение тангенса без ручного вычисления 1 / tan(A).",
+      "Вы работаете с формулами, которые специально требуют котангенса, например, с некоторыми тождествами исчисления.",
+      "Вы предпочитаете думать в терминах «превышение-рост», а не «рост-превышение».",
+      "Вы решаете задачи по геодезии, строительству или тригонометрическим доказательствам."
+    ],
+    "commonMistakes_intro": "Следите за этими котангенсными ловушками:",
+    "commonMistakes_items": [
+      "Написание а/б вместо б/а. Котангенс помещает смежную сторону <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> сверху, а не противоположную сторону. Меняя их местами, вы получаете касательную.",
+      "Путаница с котангенсом и косинусом. Котангенс – это б/а (смежный над противоположным). Косинус – b/c (прилегает к гипотенузе). Это разные соотношения.",
+      "Использование гипотенузы в расчете. Котангенс включает в себя только два катета.",
+      "Забыть об этом — обратное значение тангенса. Если вы уже знаете tan(A), просто возьмите 1 / tan(A), чтобы получить кроватку(A).",
+      "Перепутывание того, какая <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> является соседней, а какая противолежащей. Всегда идентифицируйте стороны относительно <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A."
+    ],
+    "relatedLinks": [
+      "Калькулятор коэффициентов тригонометрии прямоугольного треугольника",
+      "Калькулятор тангенса",
+      "Калькулятор коэффициента синуса",
+      "Калькулятор косинуса"
+    ],
+    "faqs": [
+      {
+        "question": "Какова формула котангенса прямоугольного треугольника?",
+        "answer": "Это cot(A) = b / a, где b — смежная <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> и a — противоположная сторона <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A. Это обратная касательная дробь."
+      },
+      {
+        "question": "Как котангенс связан с тангенсом?",
+        "answer": "Котангенс является обратной величиной тангенса. Если tan(A) = 0,75, то cot(A) = 1/0,75 ≈ 1,3333."
+      },
+      {
+        "question": "Когда мне следует использовать котангенс вместо тангенса?",
+        "answer": "Используйте котангенс, когда этого требует формула или когда вы хотите напрямую получить соотношение смежных и противоположных чисел. Во многих контекстах исчисления и физики котангенс появляется в тождествах и формулах производных."
+      },
+      {
+        "question": "Может ли cot(A) равняться нулю в прямоугольном треугольнике?",
+        "answer": "В прямоугольном треугольнике, имеющем только острые углы, cot(A) всегда положителен. Котангенс приближается к нулю, когда <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угол</a> A приближается к 90°, но угол 90° сам по себе является прямым углом, а не острым углом, который вы могли бы измерить."
+      },
+      {
+        "question": "Котангенс — это то же самое, что 1, разделенное на тангенс?",
+        "answer": "Да. кроватка(А) = 1/tan(А) = б/а. Оба выражения дают один и тот же результат."
+      }
+    ]
+  },
+  "secant-ratio-calculator": {
+    "slug": "калькулятор секущего отношения",
+    "h1": "Калькулятор секущего отношения",
+    "headerSummary": "Найдите sec(A), сравнив гипотенузу c с прилегающей к ней стороной <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> b, обратной величине косинуса.",
+    "metaTitle": "Калькулятор секущего коэффициента | Прямоугольный треугольник сек(А)",
+    "metaDescription": "Используйте этот калькулятор сечения <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a>, чтобы найти sec(A) в прямоугольном треугольнике, используя гипотенузу c и прилегающую <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> b с формулой, шагами и примерами.",
+    "calculator_heading": "Вычислить секущее соотношение",
+    "calculator_outputLabel": "сек(А)",
+    "calculator_fields": [
+      "Гипотенуза c",
+      "Соседняя сторона б"
+    ],
+    "introHeading": "Как работает калькулятор секущего отношения",
+    "intro": [
+      "Секанс является обратной величиной косинуса. Если косинус делит смежную сторону <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> на гипотенузу, секущая меняет это положение — она делит гипотенузу на прилежащую сторону. Результат всегда больше или равен 1, поскольку гипотенуза всегда является самой длинной стороной прямоугольного треугольника.",
+      "Этот <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">калькулятор</a> принимает два входных параметра — гипотенузу c и прилегающую <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> b — и возвращает sec(A). Это быстрый способ получить обратное соотношение без предварительного деления вручную или вычисления косинуса."
+    ],
+    "calculatorNote": "Введите гипотенузу c и прилегающую к ней сторону <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> b в полях выше. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Калькулятор</a> вычисляет sec(A) = c / b. Оба значения должны быть положительными, а c должно быть больше b.",
+    "formula_display": "сек(А) = с/б",
+    "formula_paragraphs": [
+      "Секанс <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A равен гипотенузе, разделенной на прилежащую <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a>. Это обратная величина косинуса: sec(A) = 1 / cos(A).",
+      "Поскольку гипотенуза всегда длиннее, чем соседняя <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> в прямоугольном треугольнике, sec(A) всегда больше 1. По мере того, как <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угол</a> A становится больше, примыкающая сторона сжимается относительно гипотенузы, поэтому секущая увеличивается."
+    ],
+    "diagramExplanation": [
+      "Для <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> a противоположна, сторона b примыкает, а сторона c является гипотенузой.",
+      "Секанс использует гипотенузу c в качестве числителя и прилегающую сторону <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> b в качестве знаменателя. Противоположная сторона a не является частью вычисления секущей."
+    ],
+    "howToSteps": [
+      "Определите <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угол</a> A в прямоугольном треугольнике.",
+      "Найдите <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> c, гипотенузу — самую длинную сторону, лежащую напротив правого <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a>.",
+      "Найдите <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> b, соседний катет — сторону, которая касается как <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A, так и прямого угла.",
+      "Введите c в первое поле ввода.",
+      "Введите b во второе поле ввода.",
+      "Нажмите «Рассчитать».",
+      "Результатом является sec(A), который всегда больше или равен 1."
+    ],
+    "example_intro": "Прямоугольный треугольник имеет гипотенузу c = 5 и прилегающую к нему сторону <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> b = 4.",
+    "example_steps": [
+      "сек(А) = с/б",
+      "сек(А) = 5/4",
+      "сек(А) = 1,25"
+    ],
+    "example_conclusion": "Секанс <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A равен 1,25. Для проверки: cos(A) = 4/5 = 0,8 и 1/0,8 = 1,25.",
+    "whatResultMeans": [
+      "Секанс показывает, во сколько раз гипотенуза длиннее прилегающей стороны <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>. Секанс 1,25 означает, что гипотенуза на 25% длиннее прилежащей стороны.",
+      "Минимальное значение секущей в прямоугольном треугольнике немного превышает 1, что происходит, когда <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угол</a> A очень мал, а длина прилегающей <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">стороны</a> почти равна длине гипотенузы. По мере увеличения угла А прилежащая сторона укорачивается относительно гипотенузы, а секущая увеличивается.",
+      "Секанс полезен, когда вам нужно масштабировать от соседней стороны <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> до гипотенузы или когда формула требует 1 / cos(A)."
+    ],
+    "whenToUse_intro": "Этот калькулятор секущего отношения <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> является правильным выбором, когда:",
+    "whenToUse_items": [
+      "Для формулы требуется секущее или 1/cos(A), и вам нужно непосредственное значение.",
+      "Вам нужно найти, на сколько длиннее гипотенуза по сравнению с прилегающей <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">стороной</a>.",
+      "Вы работаете с задачами исчисления, в которых используются секансы производных или интегралов.",
+      "Вы проверяете структурные расчеты, в которых гипотенуза представляет фактическую длину, а прилегающая <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> представляет собой горизонтальную <a href=\"/right-triangle-projection-calculator/\" class=\"text-primary hover:underline\">проекцию</a>."
+    ],
+    "commonMistakes_intro": "Эти секущие ошибки чаще всего сбивают студентов с толку:",
+    "commonMistakes_items": [
+      "Сбивает с толку секанс с косинусом. Косинус – b/c (прилегает к гипотенузе). Секанс – обратная величина: c/b (гипотенуза над соседней).",
+      "Получение результата меньше 1. Если ваш ответ меньше 1, скорее всего, вы перевернули дробь. В правильном прямоугольном треугольнике sec(A) всегда больше или равно 1.",
+      "Использование противоположной стороны <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> вместо соседней стороны. Секанс соединяет гипотенузу с прилежащей к ней стороной, а не с противоположной стороной.",
+      "Путаница секущей и косеканса. Секанс является обратной величиной косинуса. Косеканс является обратной величиной синуса. Они используют разные стороны.",
+      "Ввод b больше, чем c. Гипотенуза всегда должна быть длиннее прилегающей <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">стороны</a>."
+    ],
+    "relatedLinks": [
+      "Калькулятор коэффициентов тригонометрии прямоугольного треугольника",
+      "Калькулятор косинуса",
+      "Калькулятор косеканса",
+      "Калькулятор коэффициента котангенса"
+    ],
+    "faqs": [
+      {
+        "question": "Каково соотношение секущих в прямоугольном треугольнике?",
+        "answer": "Секанс определяется как sec(A) = c / b, где c — гипотенуза, а b — прилежащая сторона <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>. Это обратная величина косинуса."
+      },
+      {
+        "question": "Почему секанс всегда больше 1?",
+        "answer": "Потому что гипотенуза c всегда является самой длинной <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">стороной</a> в прямоугольном треугольнике. Деление большего числа (в) на меньшее (б) всегда дает результат больше 1."
+      },
+      {
+        "question": "Как преобразовать секанс в косинус?",
+        "answer": "сек(А) = 1/соз(А) и соз(А) = 1/с(А). Если вы знаете одно, вы можете найти другое, взяв обратное."
+      },
+      {
+        "question": "Что такое сек(45°)?",
+        "answer": "В треугольнике <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90</a> гипотенуза в √2 раза больше катета. Итак, sec(45°) = √2 ≈ 1,4142."
+      },
+      {
+        "question": "Используется ли секущая в реальных приложениях?",
+        "answer": "Да. Секанс появляется в физических формулах, инженерных расчетах и ​​исчислениях. Он используется, когда вам нужно масштабировать горизонтальное расстояние до фактической длины пути по уклону."
+      }
+    ]
+  },
+  "cosecant-ratio-calculator": {
+    "slug": "калькулятор косеканса",
+    "h1": "Калькулятор косеканса",
+    "headerSummary": "Вычислите csc(A) по гипотенузе c и противоположной <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> стороне</a> a, обратной величине синуса.",
+    "metaTitle": "Калькулятор косеканса | Прямоугольный треугольник csc(A)",
+    "metaDescription": "Используйте этот калькулятор косеканса <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">]</a>, чтобы найти csc(A) в прямоугольном треугольнике, используя гипотенузу c и противолежащую <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> a с формулой, шагами и примерами.",
+    "calculator_heading": "Вычислить коэффициент косеканса",
+    "calculator_outputLabel": "csc(А)",
+    "calculator_fields": [
+      "Гипотенуза c",
+      "Противоположная сторона а"
+    ],
+    "introHeading": "Как работает этот калькулятор косеканса",
+    "intro": [
+      "Косеканс является обратной величиной синуса. Он делит гипотенузу на противоположную сторону <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>, давая вам отношение, которое всегда больше 1 в прямоугольном треугольнике. Возможно, вы не встретите его так часто, как синус или косинус, в базовых курсах, но он важен в более сложных математических и некоторых физических приложениях.",
+      "Этот <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">калькулятор</a> упрощает задачу. Введите гипотенузу c и противоположную <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> a, и он немедленно вернет csc(A). Не нужно сначала вычислять синус, а затем переворачивать дробь."
+    ],
+    "calculatorNote": "Введите гипотенузу c и противолежащую <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> a в полях выше. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Калькулятор</a> вычисляет csc(A) = c / a. Оба значения должны быть положительными, а c должно быть больше a.",
+    "formula_display": "csc(A) = с/а",
+    "formula_paragraphs": [
+      "Косеканс <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A равен гипотенузе, разделенной на противоположную сторону <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">стороны</a>. Это обратная величина синуса: csc(A) = 1/sin(A).",
+      "Гипотенуза всегда длиннее противоположной стороны <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>, поэтому csc(A) всегда дает значение больше 1 для острых углов. При уменьшении <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A противоположная сторона становится короче относительно гипотенузы, а косеканс увеличивается."
+    ],
+    "diagramExplanation": [
+      "Для <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> a противоположна, сторона b примыкает, а сторона c является гипотенузой.",
+      "Косеканс использует гипотенузу c в качестве числителя и противоположную сторону <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a в качестве знаменателя. Соседняя сторона b не играет роли в формуле косеканса."
+    ],
+    "howToSteps": [
+      "Определите <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угол</a> A в прямоугольном треугольнике.",
+      "Найдите гипотенузу c — <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> напротив правого <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> и самой длинной стороны.",
+      "Найдите противоположную <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> a — опору прямо напротив <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A.",
+      "Введите c в первое поле ввода.",
+      "Введите a во второе поле ввода.",
+      "Нажмите «Рассчитать».",
+      "Результатом будет csc(A), всегда больше 1."
+    ],
+    "example_intro": "В прямоугольном треугольнике гипотенуза c = 5, а противолежащая сторона <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a = 3.",
+    "example_steps": [
+      "csc(A) = с/а",
+      "сск(А) = 5/3",
+      "сск(А) ≈ 1,6667"
+    ],
+    "example_conclusion": "Косеканс <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A равен примерно 1,6667. Проверка: sin(A) = 3/5 = 0,6 и 1/0,6 ≈ 1,6667.",
+    "whatResultMeans": [
+      "Косеканс показывает, во сколько раз гипотенуза длиннее противоположной стороны <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>. Косеканс 1,6667 означает, что гипотенуза примерно на 67% длиннее противоположной стороны.",
+      "Когда <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угол</a> A велик (близок к 90°), противоположная сторона <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> почти равна длине гипотенузы, поэтому csc(A) близко к 1. Когда угол A мал, противоположная сторона становится намного короче, и косеканс увеличивается.",
+      "Подумайте об этом так: если вы знаете противоположную сторону <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> и хотите найти гипотенузу, умножьте противоположную сторону на csc(A). Это дает вам c = a × csc(A)."
+    ],
+    "whenToUse_intro": "Используйте этот косекансный коэффициент <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">калькулятор</a> когда:",
+    "whenToUse_items": [
+      "Вам нужно получить обратную величину синуса, не вычисляя сначала sin(A).",
+      "Формула специально требует косеканса, который появляется в некоторых тригонометрических тождествах.",
+      "Вы масштабируете противоположную <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> до полной длины гипотенузы.",
+      "Вы работаете над физическими или инженерными задачами, связанными с силами, волновыми функциями или формулами колебаний, в которых используется косеканс."
+    ],
+    "commonMistakes_intro": "Следите за этими косекансными ошибками:",
+    "commonMistakes_items": [
+      "Путаница косеканса с синусом. Синус – это а/с (противоположный гипотенузе). Косеканс обратен: с/а (гипотенуза напротив).",
+      "Путаница косеканса с секансом. Косеканс основан на противоположной стороне <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> (обратной синусу). Секанс основан на прилегающей стороне (обратной косинусу). Они используют разные ноги.",
+      "Получен результат меньше 1. Если ваш ответ ниже 1, возможно, вы ввели значения в неправильном порядке. csc(A) всегда больше 1.",
+      "Использование соседней стороны <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> вместо противоположной стороны. Косеканс соединяет гипотенузу только с противоположной стороной.",
+      "Ожидается, что косеканс и косинус будут связаны по имени. Несмотря на префикс со-, косеканс является обратной величиной синуса, а не косинуса."
+    ],
+    "relatedLinks": [
+      "Калькулятор коэффициентов тригонометрии прямоугольного треугольника",
+      "Калькулятор коэффициента синуса",
+      "Калькулятор секущего отношения",
+      "Калькулятор коэффициента котангенса"
+    ],
+    "faqs": [
+      {
+        "question": "Какова формула косеканса в прямоугольном треугольнике?",
+        "answer": "Это csc(A) = c/a, где c — гипотенуза, а a — противоположная сторона <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>. Косеканс является обратной величиной синуса."
+      },
+      {
+        "question": "Как косеканс связан с синусом?",
+        "answer": "csc(А) = 1/sin(А). Если sin(A) = 0,6, то csc(A) = 1/0,6 ≈ 1,6667."
+      },
+      {
+        "question": "Почему косеканс всегда больше 1?",
+        "answer": "Потому что гипотенуза всегда длиннее противоположной стороны <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> в прямоугольном треугольнике. Дробь с/а всегда превышает 1."
+      },
+      {
+        "question": "Что такое csc(30°)?",
+        "answer": "В треугольнике <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90</a> sin(30°) = 0,5, поэтому csc(30°) = 1 / 0,5 = 2. Гипотенуза ровно в два раза больше противоположной стороны <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>."
+      },
+      {
+        "question": "Когда я буду использовать косеканс вместо синуса?",
+        "answer": "Используйте косеканс, если это требуется напрямую в формуле или если вы хотите найти гипотенузу с противоположной стороны <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>: c = a × csc(A). Это сохраняет шаг деления на синус."
+      }
+    ]
+  }
+}

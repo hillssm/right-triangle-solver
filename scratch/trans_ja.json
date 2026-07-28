@@ -1,0 +1,557 @@
+{
+  "sine-ratio-calculator": {
+    "slug": "正弦比計算機",
+    "h1": "正弦比計算機",
+    "headerSummary": "直角三角形の反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> a と斜辺 c から sin(A) を求めます。",
+    "metaTitle": "正弦比計算ツール |直角三角形 sin(A)",
+    "metaDescription": "この正弦比 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機 </a> を使用して、反対側 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺 </a> a と斜辺 c を使用して直角三角形の sin(A) を数式、手順、例とともに求めます。",
+    "calculator_heading": "正弦比の計算",
+    "calculator_outputLabel": "罪(A)",
+    "calculator_fields": [
+      "反対側a",
+      "斜辺 c"
+    ],
+    "introHeading": "この正弦比計算ツールの仕組み",
+    "intro": [
+      "正弦比は、幾何学で最初に学ぶ三角関数の 1 つです。直角三角形の特定の <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> を、その 2 つの辺、つまり反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> と斜辺に接続します。これら 2 つの <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">測定値 </a> を知っている場合、この計算機は即座に sin(A) を与えます。",
+      "宿題の問題に取り組んでいる場合でも、試験形式の解答を確認している場合でも、実際の測定タスクを解決している場合でも、このツールを使用すると、手動による除算の手順が不要になります。値を入力すると、表示されている式で結果が得られます。"
+    ],
+    "calculatorNote": "反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> a の長さと斜辺 c を上のフィールドに入力します。 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機</a> は a を c で除算し、sin(A) を返します。どちらの値も正でなければならず、c は a より大きくなければなりません。",
+    "formula_display": "sin(A) = a / c",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A のサインは、反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> の長さを斜辺の長さで割ったものに等しくなります。これは、SOH-CAH-TOA の SOH 部分でよく思い出されます。",
+      "直角三角形では、反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> は、<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A の真向かいの辺です。斜辺は常に最も長い辺、つまり 90° の角度を向いている辺になります。斜辺は常にどの脚よりも長いため、鋭角の場合、sin(A) は常に 0 と 1 の間に収まります。"
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A の場合、<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a は反対側、side b は隣接し、side c は斜辺になります。",
+      "正弦比では、これら 3 つの辺のうち 2 つだけが使用されます。反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> a (<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A の真向かい)と斜辺 c (B での直角の反対側の最長の辺)です。"
+    ],
+    "howToSteps": [
+      "直角三角形の <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A を特定します。 90° ではなく、2 つの鋭角のいずれかでなければなりません。",
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A の反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> を見つけます。これが辺 a です。",
+      "斜辺を見つけます。これは <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> c で、右側の <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> の反対側にある最長の辺です。",
+      "最初の入力フィールドに a の値を入力します。",
+      "2 番目の入力フィールドに c の値を入力します。",
+      "「計算」をクリックすると、sin(A) が表示されます。",
+      "結果を確認します。 0 から 1 までの 10 進数である必要があります。"
+    ],
+    "example_intro": "反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> a = 3、斜辺 c = 5 である直角三角形があるとします。",
+    "example_steps": [
+      "sin(A) = a / c",
+      "sin(A) = 3 / 5",
+      "sin(A) = 0.6"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A のサインは 0.6 です。これは、反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 側 </a> が斜辺の長さの 60% であることを意味します。実際の角度が必要な場合は、逆正弦を計算します: A = arcsin(0.6) ≈ 36.87°。",
+    "whatResultMeans": [
+      "出力は単位のない比率です。これは、反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 辺 </a> と斜辺のサイズを比較する方法を示します。結果 0.5 は、反対側が斜辺のちょうど半分であることを意味します。これは、<a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90 の三角形</a> (A = 30°) で発生します。",
+      "値が小さい (0 に近い) ことは、<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A が小さく、反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> が斜辺に対して短いことを意味します。値が 1 に近いほど、角度 A が大きく (90° に近づき)、反対側の長さが斜辺とほぼ同じになります。",
+      "sin(A) は 2 つの長さの比であるため、単位はありません。三角形の測定単位がセンチメートル、インチ、メートルのいずれであっても、両側が同じ単位を使用している限り、正弦値は同じままです。"
+    ],
+    "whenToUse_intro": "この正弦比 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機 </a> は、次のいずれかの状況で使用します。",
+    "whenToUse_items": [
+      "反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">側</a> と斜辺がわかっており、正弦値が必要です。",
+      "逆正弦関数を使用して <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A を求める準備をしています。",
+      "教科書の答えを確認するか、自分の三角関数の作業を確認する必要があります。",
+      "あなたは、スロープの高さや斜面にかかる垂直方向の力など、垂直方向の成分を含む物理学の問題を解決しています。",
+      "ベクトルを垂直部分と水平部分に分割します。"
+    ],
+    "commonMistakes_intro": "サインを計算するときは、次の一般的なエラーに注意してください。",
+    "commonMistakes_items": [
+      "反対側の代わりに隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 側 </a> を使用します。 Sine は、<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A の隣の側面ではなく、その向かい側の側面を使用します。",
+      "式の a と c を入れ替えます。反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">側</a> が分子に入り、斜辺が分母に入ります。 c / a と書くと、サインではなくコセカントが得られます。",
+      "異なる単位で測定された辺を使用します。 a の単位がセンチメートル、c の単位がインチの場合、比率には意味がありません。まず同じ単位に変換してください。",
+      "c は a より大きくなければならないことを忘れています。有効な直角三角形では、斜辺は常に最長の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> になります。",
+      "角度 A として右 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> (90°) を入力します。正弦は鋭角にのみ適用されます。 90°の角度は頂点 B にあります。"
+    ],
+    "relatedLinks": [
+      "直角三角形の三角比計算機",
+      "コサイン比計算機",
+      "正接比計算機",
+      "直角三角形の角度計算機"
+    ],
+    "faqs": [
+      {
+        "question": "直角三角形のsin(A)の公式は何ですか?",
+        "answer": "式は sin(A) = a / c です。ここで、a は <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度 </a> A の反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a>、c は斜辺です。反対側を斜辺で割ります。"
+      },
+      {
+        "question": "直角三角形では、sin(A) が常に 1 より小さいのはなぜですか?",
+        "answer": "斜辺 c は常に最長の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 辺 </a> であるためです。 a は c より短いため、分数 a / c は常に 1 より小さくなります。"
+      },
+      {
+        "question": "この計算機を使用して角度そのものを求めることはできますか?",
+        "answer": "この <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機</a> は正弦値を与えます。 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> を見つけるには、逆サイン関数 A = arcsin(sin(A)) を使用します。これは、直角三角形の角度計算ツールを使用して行うことができます。"
+      },
+      {
+        "question": "sin(A) の結果 0.5 は何を意味しますか?",
+        "answer": "これは、反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> が斜辺の長さのちょうど半分であることを意味します。これは、<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A が 30°であることに対応します。"
+      },
+      {
+        "question": "正弦を計算するには隣接する辺を入力する必要がありますか?",
+        "answer": "いいえ。Sine は反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">側</a> a と斜辺 c のみを使用します。隣接する辺 b は正弦公式の一部ではありません。"
+      }
+    ]
+  },
+  "cosine-ratio-calculator": {
+    "slug": "コサイン比計算機",
+    "h1": "コサイン比計算機",
+    "headerSummary": "隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b と斜辺 c から明確な直角三角形のステップで cos(A) を計算します。",
+    "metaTitle": "コサイン比計算ツール |直角三角形 cos(A)",
+    "metaDescription": "このコサイン比 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機 </a> を使用して、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> b と斜辺 c を使用して直角三角形の cos(A) を数式、手順、例とともに求めます。",
+    "calculator_heading": "コサイン比を計算する",
+    "calculator_outputLabel": "cos(A)",
+    "calculator_fields": [
+      "隣接する辺 b",
+      "斜辺 c"
+    ],
+    "introHeading": "このコサイン比計算機の仕組み",
+    "intro": [
+      "コサイン比は、直角三角形の隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> が斜辺とどのように比較されるかを測定します。これは SOH-CAH-TOA の 2 番目の部分であり、幾何学、物理学、工学で最も一般的に使用される三角関数の 1 つです。",
+      "この <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> は、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b と斜辺 c の 2 つの入力を受け取り、cos(A) を返します。割り算が自動的に処理され、結果がすぐに表示されるため、算術ではなく幾何学を理解することに集中できます。"
+    ],
+    "calculatorNote": "隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b と斜辺 c を上の入力フィールドに入力します。 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機</a> は cos(A) = b / c を計算します。どちらの値も正でなければならず、c は b より大きくなければなりません。",
+    "formula_display": "cos(A) = b / c",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A のコサインは、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> を斜辺で割ったものに等しくなります。 SOH-CAH-TOA の CAH です。",
+      "隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> b は、<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A と直角に接する脚です。斜辺 c は直角の向かい側にあり、常に最長の辺になります。斜辺はどの脚よりも長いため、鋭角の場合、cos(A) は常に 0 ～ 1 の値を生成します。"
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A の場合、<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a は反対側、side b は隣接し、side c は斜辺になります。",
+      "コサイン比は、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b (斜辺とともに <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a>] A を形成する脚) と斜辺 c を使用します。辺 a はコサイン計算の一部ではありません。"
+    ],
+    "howToSteps": [
+      "直角三角形で <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A を見つけます。これは 2 つの鋭角のうちの 1 つです。",
+      "隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> サイド </a> を特定します。これは辺 b、つまり斜辺とともに <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A を形成する脚です。",
+      "斜辺 c、90° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a>の反対側の<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a>を特定します。",
+      "最初のフィールドに b の値を入力します。",
+      "2 番目のフィールドに c の値を入力します。",
+      "[計算]を押して cos(A) を確認します。",
+      "結果が 0 から 1 の間であることを確認します。"
+    ],
+    "example_intro": "直角三角形には隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> b = 4 と斜辺 c = 5 があります。",
+    "example_steps": [
+      "cos(A) = b / c",
+      "cos(A) = 4 / 5",
+      "cos(A) = 0.8"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A のコサインは 0.8 です。隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> は斜辺の長さの 80% です。角度を求めるには: A = arccos(0.8) ≈ 36.87°。",
+    "whatResultMeans": [
+      "コサインは、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 辺 </a> によって斜辺の長さがどれだけカバーされるかを示します。コサイン 0.8 は、隣接する辺が斜辺まで 80% 伸びることを意味します。",
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A が小さい場合、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> は斜辺とほぼ同じ長さになるため、cos(A) は 1 に近づきます。角度 A が大きい場合 (90° 近く)、隣接する辺は斜辺に対して縮小し、cos(A) が 0 に近づきます。",
+      "結果は無次元になります。 <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">測定値</a>がフィート、メートル、またはその他の単位であるかどうかは関係ありません。コサインは純粋な比率です。"
+    ],
+    "whenToUse_intro": "次の場合に、このコサイン比 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">電卓 </a> を計算します。",
+    "whenToUse_items": [
+      "隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> と斜辺がわかっており、コサイン値が必要です。",
+      "力、速度、変位ベクトルの水平成分を求めています。",
+      "教科書や問題集の三角値を確認したい。",
+      "あなたは、水平距離を含むナビゲーションまたは測量の問題に取り組んでいます。",
+      "セカントやタンジェントなど、別の派生量を計算する前に cos(A) が必要です。"
+    ],
+    "commonMistakes_intro": "学生が犯す最も頻繁なコサイン間違いは次のとおりです。",
+    "commonMistakes_items": [
+      "隣接する側の代わりに反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">側</a> を使用します。 Cosine は、<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A の向かい側の脚ではなく、その隣の脚を使用します。",
+      "cより大きいbを入力します。有効な直角三角形では、斜辺は常に最長の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> になります。 b が c を超える場合、値は直角三角形を形成しません。",
+      "分数を反転します。 c / b と書くと、コサインではなくセカントが得られます。",
+      "隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> を斜辺ラベルと混合します。右 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> の反対側 (斜辺) と、角度 A の一部を形成する側 (隣接する側) を再確認します。",
+      "最初に変換せずに、さまざまな単位で測定された <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺の長さ</a> を使用します。"
+    ],
+    "relatedLinks": [
+      "直角三角形の三角比計算機",
+      "正弦比計算機",
+      "正接比計算機",
+      "直角三角形の角度計算機"
+    ],
+    "faqs": [
+      {
+        "question": "直角三角形のコサイン比の公式は何ですか?",
+        "answer": "cos(A) = b / c です。ここで、b は隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 辺 </a> で、c は斜辺です。隣接とは、<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A に接触する脚を意味します。"
+      },
+      {
+        "question": "コサインはサインとどう違うのですか?",
+        "answer": "Sine は、斜辺 (a / c) 上の反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">側</a> を使用します。コサインは、斜辺 (b / c) 上の隣接する辺を使用します。これらは、同じ <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> に対して異なる側面を測定します。"
+      },
+      {
+        "question": "cos(A) = 0.5 の場合は何を意味しますか?",
+        "answer": "これは、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> が斜辺のちょうど半分であることを意味します。これは、<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A が 60°の場合に発生します。"
+      },
+      {
+        "question": "コサインは 1 より大きくなることはありますか?",
+        "answer": "いいえ。直角三角形では、斜辺は常に隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> よりも長いため、b / c は常に 1 より小さくなります。"
+      },
+      {
+        "question": "コサインに 2 つの辺だけが必要なのはなぜですか?",
+        "answer": "コサインの式には、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> と斜辺のみが含まれます。反対側は計算に含まれません。"
+      }
+    ]
+  },
+  "tangent-ratio-calculator": {
+    "slug": "正接比計算機",
+    "h1": "正接比計算機",
+    "headerSummary": "傾斜、立ち上がり、および走行の問題について、反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">側 </a> a と隣接する側 b から Tan(A) を求めます。",
+    "metaTitle": "正接比計算ツール |直角三角形tan(A)",
+    "metaDescription": "この正接比 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機 </a> を使用して、反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺 </a> a と隣接する辺 b を使用して直角三角形のtan(A) を計算式、手順、例とともに求めます。",
+    "calculator_heading": "正接比の計算",
+    "calculator_outputLabel": "タン(A)",
+    "calculator_fields": [
+      "反対側a",
+      "隣接する辺 b"
+    ],
+    "introHeading": "この正接比計算ツールの仕組み",
+    "intro": [
+      "タンジェントは主要な <a href=\"/right-triangle-trig-ratios-calculator/\" class=\"text-primary hover:underline\">三角比 </a> の 3 番目であり、サインやコサインとは少し異なる動作をします。脚を斜辺と比較する代わりに、tangent は一方の脚をもう一方の脚と比較します。具体的には、反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 側 </a> と隣接する側を比較します。これは、傾斜と <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"> 角度 </a> の高さの問題で特に役立ちます。",
+      "この <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機</a> は、反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> a を隣接する辺 b で割って、tan(A) を求めます。電卓アプリを起動する必要はありません。両脚の長さを入力するだけで答えが得られます。"
+    ],
+    "calculatorNote": "上の入力フィールドに、反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">側</a> a と隣接する側 b を入力します。このツールは、tan(A) = a / b を計算します。どちらの値も正である必要があります。",
+    "formula_display": "Tan(A) = a / b",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> の正接 A は、反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> を隣接する辺で割った値に等しくなります。これは、SOH-CAH-TOA の TOA 部分です。",
+      "サインやコサインとは異なり、タンジェントには斜辺が含まれません。使うのは二本の足だけです。これは、接線の上限が 1 ではないことも意味します。接線は、鋭角の場合は任意の正の数にすることができ、<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A が 90°に近づくにつれて無制限に増加します。"
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A の場合、<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a は反対側、side b は隣接し、side c は斜辺になります。",
+      "Tangent は、反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">側</a> a と隣接する側 b の 2 本の脚のみを使用します。斜辺 c は接線の式には現れません。"
+    ],
+    "howToSteps": [
+      "直角三角形で <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A を見つけます。",
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A の真向かいの脚である <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a を特定します。",
+      "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b、斜辺に沿って <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A を形成する脚を特定します。",
+      "最初のフィールドに a の値を入力します。",
+      "2 番目のフィールドに b の値を入力します。",
+      "[計算]をクリックしてtan(A)を取得します。",
+      "結果は 1 未満、1 に等しい、または 1 より大きくなる可能性があります。"
+    ],
+    "example_intro": "直角三角形には、反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> a = 3 と隣接する辺 b = 4 があります。",
+    "example_steps": [
+      "Tan(A) = a / b",
+      "Tan(A) = 3 / 4",
+      "Tan(A) = 0.75"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A の正接は 0.75 です。角度を求めるには: A = arctan(0.75) ≈ 36.87°。",
+    "whatResultMeans": [
+      "Tangent は、<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A の視点から見た三角形の急勾配を示します。これを上昇オーバーランの計算と考えてください。",
+      "接線 1 は、反対側と隣接する辺が等しいことを意味します。これは、<a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90 三角形</a> で発生します。 1 未満の値は、反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> が隣接する辺より短いことを意味します。つまり、三角形の幅が高さよりも広いことを意味します。 1 を超える値は、反対側の辺が長くなることを意味します。つまり、三角形の幅が幅よりも高くなっています。",
+      "実際には、接線は、<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A に立ったときの斜辺の線の傾きです。"
+    ],
+    "whenToUse_intro": "この正接比 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"> 計算機 </a> は、次の場合に最も役に立ちます。",
+    "whenToUse_items": [
+      "三角形の両脚があり、接線比が必要です。",
+      "あなたは、傾斜、勾配、またはピッチの問題 (ライズオーバーラン) を解決しています。",
+      "仰角または俯角の <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> を見つける必要があります。",
+      "スロープ、屋根、または傾斜がどの程度急であるかを判断したいとします。",
+      "斜辺を使用せずに、脚の長さと <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> の測定値の間を変換しています。"
+    ],
+    "commonMistakes_intro": "次のようなよくある接線の間違いを避けてください。",
+    "commonMistakes_items": [
+      "接線の式に斜辺を含めます。 Tangent は 2 本の脚のみを使用します。斜辺は関係しません。",
+      "隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> を分子に置きます。式は b / a ではなく、a / b (反対方向と隣接する方向) です。逆にするとコタンジェントが得られます。",
+      "結果は常に 1 未満であることが期待されます。サインやコサインとは異なり、タンジェントは任意の正の数にすることができます。",
+      "どの脚が反対側で、どちらが隣接しているのか混乱します。直角ではなく、常に <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A を基準にして識別してください。",
+      "間違った<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a>の数式を使用しています。角度 A の代わりに角度 B にラベルを付けた場合、反対側と隣接する側が入れ替わります。"
+    ],
+    "relatedLinks": [
+      "直角三角形の三角比計算機",
+      "正弦比計算機",
+      "コサイン比計算機",
+      "直角三角形の角度計算機"
+    ],
+    "faqs": [
+      {
+        "question": "接線比の公式とは何ですか?",
+        "answer": "それはtan(A) = a / bであり、aは反対側の<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">側</a>、bは隣接する側です。反対側を隣接で分割します。"
+      },
+      {
+        "question": "Tan(A) は 1 より大きくてもよいでしょうか?",
+        "answer": "はい。反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> が隣接する辺より長い場合、tangent は 1 を超えます。たとえば、tan(60°) ≈ 1.732 となります。"
+      },
+      {
+        "question": "接線は傾きとどのように関係しますか?",
+        "answer": "接線は本質的に、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 側 </a> が水平方向の面であり、反対側が垂直方向の立ち上がりである場合の斜辺の傾きです。 Tan(A) = 上昇 / 走行。"
+      },
+      {
+        "question": "タンジェントはなぜ斜辺を使用しないのでしょうか?",
+        "answer": "Tangent は 2 本の脚の間の比率を直接測定します。接線はスケールではなく三角形の形状 (急峻さ) を表すため、斜辺は必要ありません。"
+      },
+      {
+        "question": "a = b の場合はどうなるでしょうか?",
+        "answer": "両方の脚が等しい場合、tan(A) = 1、<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A は正確に 45° になります。"
+      }
+    ]
+  },
+  "cotangent-ratio-calculator": {
+    "slug": "コタンジェント比計算機",
+    "h1": "コタンジェント比計算機",
+    "headerSummary": "直角三角形の反対側の辺 a 上の隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> b から cot(A) を計算します。",
+    "metaTitle": "コタンジェント比計算ツール |直角三角コット(A)",
+    "metaDescription": "この余接比 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機 </a> を使用して、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> b と反対側 a を使用して直角三角形の cot(A) を数式、手順、および例で求めます。",
+    "calculator_heading": "コタンジェント比の計算",
+    "calculator_outputLabel": "ベビーベッド(A)",
+    "calculator_fields": [
+      "隣接する辺 b",
+      "反対側a"
+    ],
+    "introHeading": "この余接比計算ツールの仕組み",
+    "intro": [
+      "コタンジェントはタンジェントの逆数です。タンジェントは反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">サイド</a> を隣接するサイドで割りますが、コタンジェントはその分数を反転します。つまり、隣接するサイドを反対側で割ります。基本的な幾何学の授業ではあまり登場しませんが、高度な三角法や微積分では重要な役割を果たします。",
+      "この <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> は、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b と反対側 a を取得し、cot(A) = b / a を返します。タンジェントの操作に慣れている場合、コタンジェントは単に逆分数です。"
+    ],
+    "calculatorNote": "上のフィールドに、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 側 </a> b と反対側 a を入力します。 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機</a> は cot(A) = b / a を返します。どちらの値も正である必要があります。",
+    "formula_display": "cot(A) = b / a",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> のコタンジェント A は、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> を反対側の辺で割ったものと等しくなります。これはタンジェントの逆数です: cot(A) = 1 / Tan(A)。",
+      "タンジェントと同様に、コタンジェントは直角三角形の 2 本の脚のみを使用します。斜辺は関係ありません。コタンジェントは、鋭角の場合は任意の正の値を取ることができます。"
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A の場合、<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a は反対側、side b は隣接し、side c は斜辺になります。",
+      "コタンジェントは、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b (<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A の隣の脚) を分子として使用し、反対側の a (角度 A の向かい側) を分母として使用します。斜辺 c は使用されません。"
+    ],
+    "howToSteps": [
+      "直角三角形の <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A を特定します。",
+      "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b、隣接する脚、つまり <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A の隣にある脚、および直角を見つけます。",
+      "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a、反対側の脚、つまり <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A の向かい側の脚を見つけます。",
+      "最初の入力フィールドに「b」と入力します。",
+      "2 番目の入力フィールドに「a」と入力します。",
+      "「計算」をクリックします。",
+      "結果は cot(A) であり、任意の正の数を指定できます。"
+    ],
+    "example_intro": "直角三角形には、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> b = 4 と反対側の a = 3 があります。",
+    "example_steps": [
+      "cot(A) = b / a",
+      "コット(A) = 4 / 3",
+      "コット(A) ≈ 1.3333"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A のコタンジェントは約 1.3333 です。これは、tan(A) = 3 / 4 = 0.75、および 1 / 0.75 = 1.3333 であることを確認できます。",
+    "whatResultMeans": [
+      "コタンジェントは、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">側</a> が反対側に対して何倍適合するかを示します。急勾配比のランオーバーライズバージョンです。",
+      "コタンジェント 1 は、両方の脚が等しい (45 度 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"> 角度 </a>) ことを意味します。 1 より大きい値は、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> が反対側の辺よりも長いことを意味します。つまり、三角形の幅が広くなり、角度が小さくなります。 1 未満の値は、反対側が長く、角度が大きく、三角形が急であることを意味します。",
+      "コタンジェントはタンジェントの逆数であるため、いつでもそれらの間で変換できます: cot(A) = 1 / Tan(A) と Tan(A) = 1 / cot(A)。"
+    ],
+    "whenToUse_intro": "次の場合に、この余接比 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機 </a> を選択します。",
+    "whenToUse_items": [
+      "1 / Tan(A) を手動で計算せずに、タンジェントの逆数が必要になります。",
+      "特定の微積分の恒等式など、コタンジェントを特に必要とする式を操作しています。",
+      "あなたは、上昇と上昇よりも、上昇と上昇の観点から考えることを好みます。",
+      "あなたは測量、建設、または三角関数の証明の問題を解決しています。"
+    ],
+    "commonMistakes_intro": "次の余接の落とし穴に注意してください。",
+    "commonMistakes_items": [
+      "b / a ではなく a / b と書きます。コタンジェントは、反対側ではなく、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">側</a> を上に置きます。それらを交換すると接線が得られます。",
+      "コタンジェントとコサインを混同します。コタンジェントは b / a (隣接、反対) です。コサインは b / c (斜辺に隣接) です。それらは異なる比率です。",
+      "計算に斜辺を使用します。コタンジェントには 2 本の脚のみが含まれます。",
+      "それを忘れると正接の逆数になります。 Tan(A) がすでにわかっている場合は、1 / Tan(A) を計算するだけで cot(A) が得られます。",
+      "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">面</a>のどちらが隣接し、どちらが反対であるかを混同します。常に <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A を基準にして辺を識別します。"
+    ],
+    "relatedLinks": [
+      "直角三角形の三角比計算機",
+      "正接比計算機",
+      "正弦比計算機",
+      "コサイン比計算機"
+    ],
+    "faqs": [
+      {
+        "question": "直角三角形の余接公式は何ですか?",
+        "answer": "これは cot(A) = b / a です。ここで、b は隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>、a は <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A の反対側です。これは接線分数の逆です。"
+      },
+      {
+        "question": "コタンジェントはタンジェントとどのような関係にありますか?",
+        "answer": "コタンジェントはタンジェントの逆数です。 Tan(A) = 0.75 の場合、cot(A) = 1 / 0.75 ≈ 1.3333 となります。"
+      },
+      {
+        "question": "タンジェントの代わりにコタンジェントを使用するのはどのような場合ですか?",
+        "answer": "コタンジェントは、数式で特に必要な場合、または隣接対反対の比率を直接求める場合に使用します。多くの微積分や物理学の文脈では、コタンジェントは恒等式や微分公式に現れます。"
+      },
+      {
+        "question": "直角三角形で cot(A) がゼロになることはありますか?",
+        "answer": "鋭角のみを持つ直角三角形では、cot(A) は常に正になります。 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A が 90° に近づくと、コタンジェントは 0 に近づきますが、90° の角度は直角そのものであり、測定するような鋭角ではありません。"
+      },
+      {
+        "question": "コタンジェントは1をタンジェントで割ったものと同じですか?",
+        "answer": "はい。 cot(A) = 1 / Tan(A) = b / a。どちらの式でも同じ結果が得られます。"
+      }
+    ]
+  },
+  "secant-ratio-calculator": {
+    "slug": "セカント比計算機",
+    "h1": "セカント比計算機",
+    "headerSummary": "斜辺 c と隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> b (コサインの逆数) を比較して、sec(A) を求めます。",
+    "metaTitle": "セカント比計算ツール |直角三角形秒(A)",
+    "metaDescription": "この正割比 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機 </a> を使用して、斜辺 c と隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> b を使用して直角三角形の sec(A) を計算式、手順、例とともに求めます。",
+    "calculator_heading": "正割比の計算",
+    "calculator_outputLabel": "秒(A)",
+    "calculator_fields": [
+      "斜辺 c",
+      "隣接する辺 b"
+    ],
+    "introHeading": "この正割比計算ツールの仕組み",
+    "intro": [
+      "セカントはコサインの逆数です。コサインが隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> を斜辺で割る場合、セカントはそれを反転します。つまり、斜辺を隣接する辺で割ります。斜辺は常に直角三角形の最長の辺であるため、結果は常に 1 以上になります。",
+      "この <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> は 2 つの入力 — 斜辺 c と隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b — を受け取り、sec(A) を返します。これは、手動で除算したり、最初にコサインを計算したりせずに、この逆数比を取得する簡単な方法です。"
+    ],
+    "calculatorNote": "上のフィールドに斜辺 c と隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> b を入力します。 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機</a> は sec(A) = c / b を計算します。どちらの値も正でなければならず、c は b より大きくなければなりません。",
+    "formula_display": "秒(A) = c / b",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> の正割 A は、斜辺を隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> で割ったものと等しくなります。これはコサインの逆数です: sec(A) = 1 / cos(A)。",
+      "直角三角形では斜辺は常に隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> よりも長いため、sec(A) は常に 1 より大きくなります。 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A が大きくなるにつれて、隣接する辺は斜辺に対して縮小するため、セカントは増加します。"
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A の場合、<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a は反対側、side b は隣接し、side c は斜辺になります。",
+      "セカントでは、斜辺 c を分子として使用し、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> b を分母として使用します。反対側 a はセカント計算の一部ではありません。"
+    ],
+    "howToSteps": [
+      "直角三角形の <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A を特定します。",
+      "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> c、斜辺、つまり右側の <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> の向かい側の最長の辺を見つけます。",
+      "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b、隣接する脚、つまり <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A と直角の両方に接する辺を見つけます。",
+      "最初の入力フィールドに「c」と入力します。",
+      "2 番目の入力フィールドに「b」と入力します。",
+      "「計算」をクリックします。",
+      "結果は sec(A) で、常に 1 以上になります。"
+    ],
+    "example_intro": "直角三角形には斜辺 c = 5 と隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> b = 4 があります。",
+    "example_steps": [
+      "秒(A) = c / b",
+      "秒(A) = 5 / 4",
+      "秒(A) = 1.25"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A の正割は 1.25 です。検証するには: cos(A) = 4 / 5 = 0.8、および 1 / 0.8 = 1.25。",
+    "whatResultMeans": [
+      "セカントは、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 辺 </a> と比較して斜辺が何倍長いかを示します。セカント 1.25 は、斜辺が隣接する辺より 25% 長いことを意味します。",
+      "直角三角形のセカントの最小値は 1 よりわずかに大きく、<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A が非常に小さく、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> が斜辺とほぼ同じ長さの場合に発生します。角度 A が増加すると、隣接する辺が斜辺に対して短くなり、セカントが大きくなります。",
+      "セカントは、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">側</a> から斜辺までスケールする必要がある場合、または数式で 1 ​​/ cos(A) が必要な場合に便利です。"
+    ],
+    "whenToUse_intro": "このセカント比 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機 </a> は、次の場合に適切な選択です。",
+    "whenToUse_items": [
+      "数式にはセカントまたは 1 / cos(A) が必要で、値を直接必要とします。",
+      "斜辺が隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 辺 </a> と比較してどのくらい長いかを見つける必要があります。",
+      "あなたは、微分または積分のセカントを含む微積分の問題を扱っています。",
+      "斜辺が実際の長さを表し、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> が水平の<a href=\"/right-triangle-projection-calculator/\" class=\"text-primary hover:underline\">投影</a>を表す構造計算をチェックしています。"
+    ],
+    "commonMistakes_intro": "最も頻繁に生徒がつまずくのは、次のような割線の間違いです。",
+    "commonMistakes_items": [
+      "セカントとコサインを混同します。コサインは b / c (斜辺に隣接) です。セカントは、c / b (隣接する斜辺) の逆数です。",
+      "1 未満の結果が得られます。答えが 1 未満の場合は、分数を反転した可能性があります。有効な直角三角形では、sec(A) は常に 1 以上です。",
+      "隣接する側の代わりに反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">側</a> を使用します。セカントは、斜辺を反対側ではなく隣接する側とペアにします。",
+      "セカントとコセカントを混同します。セカントはコサインの逆数です。コセカントはサインの逆数です。彼らは異なる側面を使用します。",
+      "cより大きいbを入力します。斜辺は常に、隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> よりも長くなければなりません。"
+    ],
+    "relatedLinks": [
+      "直角三角形の三角比計算機",
+      "コサイン比計算機",
+      "コセカント比計算機",
+      "コタンジェント比計算機"
+    ],
+    "faqs": [
+      {
+        "question": "直角三角形の正割比は何ですか?",
+        "answer": "セカントは sec(A) = c / b として定義されます。ここで、c は斜辺、b は隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> です。コサインの逆数です。"
+      },
+      {
+        "question": "セカントが常に 1 より大きいのはなぜですか?",
+        "answer": "斜辺 c は常に直角三角形の最長の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> であるためです。大きい数 (c) を小さい数 (b) で割ると、常に 1 より大きい結果が得られます。"
+      },
+      {
+        "question": "セカントとコサインの間で変換するにはどうすればよいですか?",
+        "answer": "sec(A) = 1 / cos(A)、cos(A) = 1 / sec(A)。一方がわかっていれば、逆数を取ることでもう一方を見つけることができます。"
+      },
+      {
+        "question": "秒(45°)とは何ですか?",
+        "answer": "<a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90 の三角形</a> では、斜辺は脚の √2 倍です。したがって、sec(45°) = √2 ≈ 1.4142 となります。"
+      },
+      {
+        "question": "セカントは現実世界のアプリケーションで使用されますか?",
+        "answer": "はい。セカントは物理学の公式、工学計算、微積分に現れます。これは、水平距離を傾斜に沿った実際のパスの長さに合わせてスケールする必要がある場合に使用されます。"
+      }
+    ]
+  },
+  "cosecant-ratio-calculator": {
+    "slug": "コセカント比計算機",
+    "h1": "コセカント比計算機",
+    "headerSummary": "斜辺 c と反対側 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> a (sin の逆数) から csc(A) を計算します。",
+    "metaTitle": "コセカント比計算ツール |直角三角形 csc(A)",
+    "metaDescription": "このコセカント比 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機 </a> を使用して、斜辺 c と反対側 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> a を使用して直角三角形の csc(A) を数式、手順、および例で求めます。",
+    "calculator_heading": "コセカント比の計算",
+    "calculator_outputLabel": "csc(A)",
+    "calculator_fields": [
+      "斜辺 c",
+      "反対側a"
+    ],
+    "introHeading": "このコセカント比計算ツールの仕組み",
+    "intro": [
+      "コセカントはサインの逆数です。斜辺を反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> で割ると、直角三角形では常に 1 より大きい比率が得られます。基礎コースではサインやコサインほど頻繁には目にしないかもしれませんが、より高度な数学や特定の物理アプリケーションでは不可欠です。",
+      "この <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">電卓</a> を使用すると、それが簡単になります。斜辺 c とその反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> a を入力すると、すぐに csc(A) が返されます。最初に正弦を計算してから分数を反転する必要はありません。"
+    ],
+    "calculatorNote": "上のフィールドに斜辺 c と反対側 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">側 </a> a を入力します。 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機</a> は csc(A) = c / a を計算します。どちらの値も正でなければならず、c は a より大きくなければなりません。",
+    "formula_display": "csc(A) = c / a",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a>のコセカント A は、斜辺を反対側の<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a>で割ったものに等しくなります。これは正弦の逆数です: csc(A) = 1 / sin(A)。",
+      "斜辺は常に反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> よりも長いため、csc(A) は常に鋭角の場合 1 より大きい値を生成します。 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A が減少すると、斜辺に対して反対側が短くなり、コセカントが増加します。"
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A の場合、<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a は反対側、side b は隣接し、side c は斜辺になります。",
+      "コセカントでは、斜辺 c を分子として使用し、反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> a を分母として使用します。隣接する辺 b はコセカントの公式では何の役割も果たしません。"
+    ],
+    "howToSteps": [
+      "直角三角形の <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A を特定します。",
+      "斜辺 c、つまり右 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> の反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> および最長辺を見つけます。",
+      "反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a、つまり <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A の真向かいの脚を見つけます。",
+      "最初の入力フィールドに「c」と入力します。",
+      "2 番目の入力フィールドに「a」と入力します。",
+      "「計算」をクリックします。",
+      "結果は csc(A) で、常に 1 より大きくなります。"
+    ],
+    "example_intro": "直角三角形の斜辺 c = 5、反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> a = 3 があります。",
+    "example_steps": [
+      "csc(A) = c / a",
+      "csc(A) = 5 / 3",
+      "csc(A) ≈ 1.6667"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A の余割は約 1.6667 です。検証: sin(A) = 3 / 5 = 0.6、および 1 / 0.6 ≈ 1.6667。",
+    "whatResultMeans": [
+      "コセカントは、斜辺が反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 側 </a> と比較して何倍長いかを示します。コセカント 1.6667 は、斜辺が反対側より約 67% 長いことを意味します。",
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A が大きい(90°に近い)場合、反対側の<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a>は斜辺とほぼ同じ長さになるため、csc(A) は 1 に近づきます。角度 A が小さい場合、反対側の辺は非常に短くなり、コセカントは大きくなります。",
+      "次のように考えてください。反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 側 </a> がわかっていて、斜辺を見つけたい場合は、反対側に csc(A) を掛けます。これにより、c = a × csc(A) が得られます。"
+    ],
+    "whenToUse_intro": "次の場合に、このコセカント比 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> を計算します。",
+    "whenToUse_items": [
+      "最初に sin(A) を計算せずに、sin の逆数が必要になります。",
+      "公式では特にコセカントが必要になります。コセカントは、特定の三角関数の恒等式に表示されます。",
+      "反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> を斜辺の長さ全体までスケールアップしています。",
+      "あなたは、コセカントを使用する力、波動関数、または振動公式を含む物理学または工学の問題に取り組んでいます。"
+    ],
+    "commonMistakes_intro": "次のコセカント誤差に注意してください。",
+    "commonMistakes_items": [
+      "コセカントとサインを混同します。サインは a / c (斜辺の反対側) です。コセカントは逆数です: c / a (反対側の斜辺)。",
+      "コセカントとセカントを混同します。コセカントは、反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">側</a> (正弦の逆数) に基づきます。セカントは隣接する辺 (コサインの逆数) に基づきます。彼らは異なる足を使います。",
+      "1 未満の結果が得られます。答えが 1 未満の場合は、値を間違った順序で入力した可能性があります。 csc(A) は常に 1 より大きくなります。",
+      "反対側の代わりに隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 側 </a> を使用します。コセカントは、斜辺を反対側のみとペアにします。",
+      "コセカントとコサインが名前で関連付けられていることが期待されます。 co-prefix にもかかわらず、コセカントはコサインではなくサインの逆数です。"
+    ],
+    "relatedLinks": [
+      "直角三角形の三角比計算機",
+      "正弦比計算機",
+      "セカント比計算機",
+      "コタンジェント比計算機"
+    ],
+    "faqs": [
+      {
+        "question": "直角三角形のコセカントの公式は何ですか?",
+        "answer": "これは csc(A) = c / a です。ここで、c は斜辺、a は反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">側</a> です。コセカントはサインの逆数です。"
+      },
+      {
+        "question": "コセカントはサインとどのように関係しますか?",
+        "answer": "csc(A) = 1 / sin(A)。 sin(A) = 0.6 の場合、csc(A) = 1 / 0.6 ≈ 1.6667 となります。"
+      },
+      {
+        "question": "コセカントが常に 1 より大きいのはなぜですか?",
+        "answer": "直角三角形の斜辺は常に反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 辺 </a> よりも長いためです。分数 c / a は常に 1 を超えます。"
+      },
+      {
+        "question": "csc(30°)とは何ですか?",
+        "answer": "<a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90 の三角形 </a> では、sin(30°) = 0.5 であるため、csc(30°) = 1 / 0.5 = 2 となります。斜辺は反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> のちょうど 2 倍です。"
+      },
+      {
+        "question": "サインの代わりにコセカントを使用するのはどのような場合ですか?",
+        "answer": "コセカントは、数式で直接必要な場合、または反対側の <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">側</a> から斜辺を求めたい場合に使用します: c = a × csc(A)。サインで割るステップが省けます。"
+      }
+    ]
+  }
+}

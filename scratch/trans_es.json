@@ -1,0 +1,557 @@
+{
+  "sine-ratio-calculator": {
+    "slug": "calculadora-de-relación-seno",
+    "h1": "Calculadora de relación seno",
+    "headerSummary": "Encuentra el pecado (A) del lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a y la hipotenusa c en un triángulo rectángulo.",
+    "metaTitle": "Calculadora de relación seno | Pecado del triángulo rectángulo (A)",
+    "metaDescription": "Usa esta calculadora de razón de senos <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> para encontrar el pecado(A) en un triángulo rectángulo usando el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a y la hipotenusa c con fórmula, pasos y ejemplos.",
+    "calculator_heading": "Calcular la relación seno",
+    "calculator_outputLabel": "pecado(A)",
+    "calculator_fields": [
+      "lado opuesto a",
+      "hipotenusa c"
+    ],
+    "introHeading": "Cómo funciona esta calculadora de relación seno",
+    "intro": [
+      "La razón del seno es una de las primeras funciones trigonométricas que aprendes en geometría. Conecta un <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> específico en un triángulo rectángulo con dos de sus lados: el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> opuesto</a> y la hipotenusa. Si conoces estas dos <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">medidas</a>, esta calculadora te dará sen(A) al instante.",
+      "Ya sea que esté resolviendo un problema de tarea, verificando una respuesta estilo examen o resolviendo una tarea de medición real, esta herramienta elimina el paso de división manual. Ingrese sus valores y obtenga el resultado con la fórmula que se muestra."
+    ],
+    "calculatorNote": "Ingrese la longitud del lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a y la hipotenusa c en los campos de arriba. La <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculadora</a> divide a por c y devuelve sin(A). Ambos valores deben ser positivos y c debe ser mayor que a.",
+    "formula_display": "pecado(A) = a/c",
+    "formula_paragraphs": [
+      "El seno del <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es igual a la longitud del <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> opuesto dividido por la longitud de la hipotenusa. Esto suele recordarse con la parte SOH de SOH-CAH-TOA.",
+      "En un triángulo rectángulo, el <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> opuesto es el que está directamente frente al <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A. La hipotenusa es siempre el lado más largo, el que mira al ángulo de 90°. Dado que la hipotenusa siempre es más larga que cualquier cateto, sen(A) siempre cae entre 0 y 1 para ángulos agudos."
+    ],
+    "diagramExplanation": [
+      "Para <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> a es opuesto, el lado b es adyacente y el lado c es la hipotenusa.",
+      "La razón seno solo usa dos de estos tres lados: el <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> opuesto a (directamente frente al <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A) y la hipotenusa c (el lado más largo, opuesto al ángulo recto en B)."
+    ],
+    "howToSteps": [
+      "Identifica <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A en tu triángulo rectángulo. Debe ser uno de los dos ángulos agudos, no el ángulo de 90°.",
+      "Encuentra el <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> opuesto al <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A. Este es el lado a.",
+      "Encuentra la hipotenusa. Este es el <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> c, el lado más largo, opuesto al <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> derecho.",
+      "Ingrese el valor de a en el primer campo de entrada.",
+      "Ingrese el valor de c en el segundo campo de entrada.",
+      "Haga clic en Calcular para ver el pecado (A).",
+      "Revisa el resultado. Debe ser un decimal entre 0 y 1."
+    ],
+    "example_intro": "Supongamos que tienes un triángulo rectángulo donde el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a = 3 y la hipotenusa c = 5.",
+    "example_steps": [
+      "pecado(A) = a/c",
+      "pecado(A) = 3/5",
+      "pecado(A) = 0,6"
+    ],
+    "example_conclusion": "El seno de <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es 0,6. Esto significa que el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> opuesto </a> es el 60% de la longitud de la hipotenusa. Si necesita el ángulo real, tome el seno inverso: A = arcsin(0,6) ≈ 36,87°.",
+    "whatResultMeans": [
+      "La salida es una relación sin unidades. Te indica cómo se compara el tamaño del lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> opuesto </a> con la hipotenusa. Un resultado de 0,5 significa que el lado opuesto es exactamente la mitad de la hipotenusa, lo que ocurre en un triángulo <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90</a> donde A = 30°.",
+      "Los valores pequeños (cercanos a 0) significan que <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es pequeño y el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> es corto en relación con la hipotenusa. Los valores más cercanos a 1 significan que el ángulo A es grande (se acerca a 90°) y el lado opuesto es casi tan largo como la hipotenusa.",
+      "Dado que sin(A) es una razón de dos longitudes, no tiene unidades. Ya sea que su triángulo se mida en centímetros, pulgadas o metros, el valor del seno permanece igual siempre que ambos lados usen la misma unidad."
+    ],
+    "whenToUse_intro": "Utilice esta calculadora de relación sinusoidal <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> en cualquiera de estas situaciones:",
+    "whenToUse_items": [
+      "Conoces el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> opuesto </a> y la hipotenusa y quieres el valor del seno.",
+      "Te estás preparando para encontrar <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A usando la función seno inversa.",
+      "Debe verificar la respuesta de un libro de texto o verificar su propio trabajo de trigonometría.",
+      "Estás resolviendo problemas de física que involucran componentes verticales, como la altura de una rampa o la fuerza vertical en una pendiente.",
+      "Estás dividiendo un vector en sus partes vertical y horizontal."
+    ],
+    "commonMistakes_intro": "Tenga cuidado con estos errores comunes al calcular el seno:",
+    "commonMistakes_items": [
+      "Usando el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a> en lugar del lado opuesto. Sine usa el lado opuesto al <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A, no el lado contiguo.",
+      "Intercambiando a y c en la fórmula. El lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> va en el numerador y la hipotenusa va en el denominador. Escribir c/a da la cosecante, no el seno.",
+      "Usando lados medidos en diferentes unidades. Si a está en centímetros y c está en pulgadas, la relación no tiene sentido. Primero convierta a la misma unidad.",
+      "Olvidando que c debe ser mayor que a. En un triángulo rectángulo válido, la hipotenusa es siempre el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> más largo </a>.",
+      "Ingresando el <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> derecho (90°) como ángulo A. El seno se aplica solo a los ángulos agudos. El ángulo de 90° está en el vértice B."
+    ],
+    "relatedLinks": [
+      "Calculadora de relaciones trigonométricas de triángulo rectángulo",
+      "Calculadora de relación de coseno",
+      "Calculadora de razón tangente",
+      "Calculadora del ángulo del triángulo rectángulo"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuál es la fórmula del pecado (A) en un triángulo rectángulo?",
+        "answer": "La fórmula es sin(A) = a / c, donde a es el <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> opuesto al <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A y c es la hipotenusa. Divides el lado opuesto por la hipotenusa."
+      },
+      {
+        "question": "¿Por qué sin(A) es siempre menor que 1 en un triángulo rectángulo?",
+        "answer": "Porque la hipotenusa c es siempre el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> más largo. Como a es más corto que c, la fracción a/c siempre es menor que 1."
+      },
+      {
+        "question": "¿Puedo usar esta calculadora para encontrar el ángulo en sí?",
+        "answer": "Esta <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculadora</a> te da el valor del seno. Para encontrar el ángulo <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"></a>, use la función seno inversa: A = arcsin(sin(A)). Puedes hacer esto con nuestra calculadora de ángulos de triángulo rectángulo."
+      },
+      {
+        "question": "¿Qué significa un resultado sin(A) de 0,5?",
+        "answer": "Significa que el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> opuesto </a> es exactamente la mitad de la longitud de la hipotenusa. Esto corresponde a que <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A sea 30°."
+      },
+      {
+        "question": "¿Necesito ingresar el lado adyacente para calcular el seno?",
+        "answer": "No. El seno solo usa el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a y la hipotenusa c. El lado adyacente b no forma parte de la fórmula del seno."
+      }
+    ]
+  },
+  "cosine-ratio-calculator": {
+    "slug": "cosine-ratio-calculator",
+    "h1": "Cosine Ratio Calculator",
+    "headerSummary": "Calculate cos(A) from the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b and hypotenuse c with clear right-triangle steps.",
+    "metaTitle": "Cosine Ratio Calculator | Right Triangle cos(A)",
+    "metaDescription": "Use this cosine ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> to find cos(A) in a right triangle using adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b and hypotenuse c with formula, steps, and examples.",
+    "calculator_heading": "Calculate Cosine Ratio",
+    "calculator_outputLabel": "cos(A)",
+    "calculator_fields": [
+      "Adjacent side b",
+      "Hypotenuse c"
+    ],
+    "introHeading": "How This Cosine Ratio Calculator Works",
+    "intro": [
+      "The cosine ratio measures how the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> of a right triangle compares to the hypotenuse. It is the second part of SOH-CAH-TOA and one of the most commonly used trig functions in geometry, physics, and engineering.",
+      "This <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> takes two inputs — the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b and the hypotenuse c — and returns cos(A). It handles the division for you and shows the result immediately, so you can focus on understanding the geometry instead of the arithmetic."
+    ],
+    "calculatorNote": "Type the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b and hypotenuse c into the input fields above. The <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> computes cos(A) = b / c. Both values must be positive, and c must be larger than b.",
+    "formula_display": "cos(A) = b / c",
+    "formula_paragraphs": [
+      "The cosine of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A equals the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> divided by the hypotenuse. This is the CAH in SOH-CAH-TOA.",
+      "The adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b is the leg that touches <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A and the right angle. The hypotenuse c sits across from the right angle and is always the longest side. Because the hypotenuse is longer than any leg, cos(A) always produces a value between 0 and 1 for acute angles."
+    ],
+    "diagramExplanation": [
+      "For <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a is opposite, side b is adjacent, and side c is the hypotenuse.",
+      "The cosine ratio uses the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b (the leg that forms <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A along with the hypotenuse) and the hypotenuse c. Side a is not part of the cosine calculation."
+    ],
+    "howToSteps": [
+      "Locate <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A in your right triangle. It is one of the two acute angles.",
+      "Identify the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. This is side b — the leg that forms <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A together with the hypotenuse.",
+      "Identify the hypotenuse c, the <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> opposite the 90° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a>.",
+      "Enter the value of b in the first field.",
+      "Enter the value of c in the second field.",
+      "Press Calculate to see cos(A).",
+      "Check that the result is between 0 and 1."
+    ],
+    "example_intro": "A right triangle has adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b = 4 and hypotenuse c = 5.",
+    "example_steps": [
+      "cos(A) = b / c",
+      "cos(A) = 4 / 5",
+      "cos(A) = 0.8"
+    ],
+    "example_conclusion": "Cosine of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is 0.8. The adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is 80% of the hypotenuse length. To find the angle: A = arccos(0.8) ≈ 36.87°.",
+    "whatResultMeans": [
+      "Cosine tells you how much of the hypotenuse length is covered by the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. A cosine of 0.8 means the adjacent side stretches 80% as far as the hypotenuse does.",
+      "When <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is small, the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is nearly as long as the hypotenuse, so cos(A) is close to 1. When angle A is large (near 90°), the adjacent side shrinks relative to the hypotenuse, pushing cos(A) toward 0.",
+      "The result is dimensionless. It does not matter whether your <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">measurements</a> are in feet, meters, or any other unit — cosine is a pure ratio."
+    ],
+    "whenToUse_intro": "Reach for this cosine ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> when:",
+    "whenToUse_items": [
+      "You know the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> and hypotenuse and need the cosine value.",
+      "You are finding the horizontal component of a force, velocity, or displacement vector.",
+      "You want to verify a trig value from a textbook or problem set.",
+      "You are working on navigation or surveying problems that involve horizontal distances.",
+      "You need cos(A) before computing another derived quantity, like secant or tangent."
+    ],
+    "commonMistakes_intro": "These are the most frequent cosine errors students make:",
+    "commonMistakes_items": [
+      "Using the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> instead of the adjacent side. Cosine uses the leg next to <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A, not the one across from it.",
+      "Entering b larger than c. In a valid right triangle, the hypotenuse is always the longest <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. If b exceeds c, your values do not form a right triangle.",
+      "Reversing the fraction. Writing c / b gives the secant, not the cosine.",
+      "Mixing the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> with the hypotenuse label. Double-check which side is opposite the right <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> (that is the hypotenuse) and which forms part of angle A (that is the adjacent side).",
+      "Using <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side lengths</a> measured in different units without converting first."
+    ],
+    "relatedLinks": [
+      "Right Triangle Trig Ratios Calculator",
+      "Sine Ratio Calculator",
+      "Tangent Ratio Calculator",
+      "Right Triangle Angle Calculator"
+    ],
+    "faqs": [
+      {
+        "question": "What is the cosine ratio formula for a right triangle?",
+        "answer": "Es cos(A) = b / c, donde b es el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a> y c es la hipotenusa. Adyacente significa el cateto que toca <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A."
+      },
+      {
+        "question": "¿En qué se diferencia el coseno del seno?",
+        "answer": "El seno usa el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> sobre la hipotenusa (a/c). El coseno utiliza el lado adyacente sobre la hipotenusa (b/c). Miden diferentes lados con respecto al mismo <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a>."
+      },
+      {
+        "question": "¿Qué significa si cos(A) = 0,5?",
+        "answer": "Significa que el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a> es exactamente la mitad de la hipotenusa. Esto sucede cuando <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es de 60°."
+      },
+      {
+        "question": "¿Puede el coseno ser mayor que 1?",
+        "answer": "No. En un triángulo rectángulo, la hipotenusa siempre es más larga que el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a>, por lo que b/c siempre es menor que 1."
+      },
+      {
+        "question": "¿Por qué sólo necesito dos lados para el coseno?",
+        "answer": "La fórmula del coseno solo involucra el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a> y la hipotenusa. El lado opuesto no forma parte del cálculo."
+      }
+    ]
+  },
+  "tangent-ratio-calculator": {
+    "slug": "calculadora-de-ratio-tangente",
+    "h1": "Calculadora de razón tangente",
+    "headerSummary": "Encuentre tan(A) desde el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a y el lado adyacente b para problemas de pendiente, elevación y recorrido.",
+    "metaTitle": "Calculadora de razón tangente | Bronceado del triángulo rectángulo (A)",
+    "metaDescription": "Utilice esta calculadora de razón de tangente <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> para encontrar tan(A) en un triángulo rectángulo usando el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a y el lado adyacente b con fórmula, pasos y ejemplos.",
+    "calculator_heading": "Calcular la relación tangente",
+    "calculator_outputLabel": "bronceado(A)",
+    "calculator_fields": [
+      "lado opuesto a",
+      "Lado adyacente b"
+    ],
+    "introHeading": "Cómo funciona esta calculadora de razón tangente",
+    "intro": [
+      "La tangente es la tercera de las relaciones trigonométricas primarias <a href=\"/right-triangle-trig-ratios-calculator/\" class=\"text-primary hover:underline\"></a> y funciona de manera un poco diferente que el seno y el coseno. En lugar de comparar un cateto con la hipotenusa, la tangente compara un cateto con el otro, específicamente, el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> opuesto </a> con el lado adyacente. Esto lo hace especialmente útil en problemas de pendiente y <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a>de elevación.",
+      "Esta <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculadora</a> divide el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a por el lado adyacente by da tan(A). No es necesario utilizar una aplicación de calculadora: simplemente ingrese la longitud de sus dos piernas y obtenga la respuesta."
+    ],
+    "calculatorNote": "Ingrese el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a y el lado adyacente b en los campos de entrada de arriba. La herramienta calcula tan(A) = a / b. Ambos valores deben ser positivos.",
+    "formula_display": "bronceado(A) = a/b",
+    "formula_paragraphs": [
+      "La tangente de <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es igual al <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> opuesto dividido por el lado adyacente. Esta es la parte TOA de SOH-CAH-TOA.",
+      "A diferencia del seno y el coseno, la tangente no involucra la hipotenusa. Sólo usa las dos piernas. Esto también significa que la tangente no tiene un límite de 1; puede ser cualquier número positivo para ángulos agudos y crece sin límite a medida que <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A se aproxima a 90°."
+    ],
+    "diagramExplanation": [
+      "Para <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> a es opuesto, el lado b es adyacente y el lado c es la hipotenusa.",
+      "La tangente usa solo los dos catetos: el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a y el lado adyacente b. La hipotenusa c no aparece en la fórmula de la tangente."
+    ],
+    "howToSteps": [
+      "Encuentra <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A en el triángulo rectángulo.",
+      "Identifique <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> a, el cateto directamente enfrente del <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A.",
+      "Identifica <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> b, el cateto que forma <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A junto a la hipotenusa.",
+      "Introduzca el valor de a en el primer campo.",
+      "Ingrese el valor de b en el segundo campo.",
+      "Haga clic en Calcular para obtener bronceado (A).",
+      "El resultado puede ser menor que 1, igual a 1 o mayor que 1."
+    ],
+    "example_intro": "Un triángulo rectángulo tiene el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a = 3 y el lado adyacente b = 4.",
+    "example_steps": [
+      "bronceado(A) = a/b",
+      "bronceado(A) = 3/4",
+      "bronceado(A) = 0,75"
+    ],
+    "example_conclusion": "La tangente de <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es 0,75. Para encontrar el ángulo: A = arctan(0,75) ≈ 36,87°.",
+    "whatResultMeans": [
+      "La tangente te indica la inclinación del triángulo desde la perspectiva de <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A. Piense en ello como un cálculo de aumento sobre el rendimiento.",
+      "Una tangente de 1 significa que los lados opuesto y adyacente son iguales, lo que ocurre en un triángulo <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90</a>. Los valores inferiores a 1 significan que el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> opuesto </a> es más corto que el lado adyacente: el triángulo es más ancho que alto. Los valores superiores a 1 significan que el lado opuesto es más largo: el triángulo es más alto que ancho.",
+      "En términos prácticos, la tangente es la pendiente de la recta de hipotenusa cuando te encuentras en <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A."
+    ],
+    "whenToUse_intro": "Esta calculadora de razón tangente <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> es más útil cuando:",
+    "whenToUse_items": [
+      "Tienes ambos catetos del triángulo y quieres la razón tangente.",
+      "Está resolviendo problemas de pendiente, pendiente o inclinación (elevación sobre carrera).",
+      "Necesita encontrar el <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> de elevación o depresión.",
+      "Quiere determinar qué tan pronunciada es una rampa, un techo o una pendiente.",
+      "Estás convirtiendo entre longitudes de catetos y medidas de <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> sin usar la hipotenusa."
+    ],
+    "commonMistakes_intro": "Evite estos errores tangentes comunes:",
+    "commonMistakes_items": [
+      "Incluyendo la hipotenusa en la fórmula de la tangente. La tangente solo usa los dos catetos, sin hipotenusa involucrada.",
+      "Poniendo el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a> en el numerador. La fórmula es a/b (opuesto sobre adyacente), no b/a. Revertirlo da cotangente.",
+      "Esperar que el resultado sea siempre menor que 1. A diferencia del seno y el coseno, la tangente puede ser cualquier número positivo.",
+      "Confundir qué pierna es la opuesta y cuál es la adyacente. Identifíquelos siempre en relación con <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A, no con el ángulo recto.",
+      "Usando la fórmula para el <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> incorrecto. Si etiquetó el ángulo B en lugar del ángulo A, los lados opuesto y adyacente se intercambian."
+    ],
+    "relatedLinks": [
+      "Calculadora de relaciones trigonométricas de triángulo rectángulo",
+      "Calculadora de relación seno",
+      "Calculadora de relación de coseno",
+      "Calculadora del ángulo del triángulo rectángulo"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuál es la fórmula de la razón tangente?",
+        "answer": "Es tan(A) = a / b, donde a es el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> opuesto </a> y b es el lado adyacente. Se divide opuesto por adyacente."
+      },
+      {
+        "question": "¿Puede tan(A) ser mayor que 1?",
+        "answer": "Sí. Cuando el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> opuesto </a> es más largo que el lado adyacente, la tangente excede 1. Por ejemplo, tan(60°) ≈ 1,732."
+      },
+      {
+        "question": "¿Cómo se relaciona la tangente con la pendiente?",
+        "answer": "La tangente es esencialmente la pendiente de la hipotenusa cuando el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a> es el tramo horizontal y el lado opuesto es la elevación vertical. tan(A) = subir/correr."
+      },
+      {
+        "question": "¿Por qué la tangente no usa la hipotenusa?",
+        "answer": "La tangente mide la relación entre los dos catetos directamente. La hipotenusa no es necesaria porque la tangente describe la forma (inclinación) del triángulo, no la escala."
+      },
+      {
+        "question": "¿Qué pasa cuando a = b?",
+        "answer": "Cuando ambos catetos son iguales, tan(A) = 1 y <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A mide exactamente 45°."
+      }
+    ]
+  },
+  "cotangent-ratio-calculator": {
+    "slug": "calculadora-de-relación-cotangente",
+    "h1": "Calculadora de relación cotangente",
+    "headerSummary": "Calcula cot(A) desde el lado adyacente <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> b sobre el lado opuesto a en un triángulo rectángulo.",
+    "metaTitle": "Calculadora de relación cotangente | Cuna Triángulo Rectángulo(A)",
+    "metaDescription": "Utilice esta calculadora de razón cotangente <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> para encontrar cot(A) en un triángulo rectángulo usando el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> adyacente by el lado opuesto a con fórmula, pasos y ejemplos.",
+    "calculator_heading": "Calcular la relación cotangente",
+    "calculator_outputLabel": "cuna(A)",
+    "calculator_fields": [
+      "Lado adyacente b",
+      "lado opuesto a"
+    ],
+    "introHeading": "Cómo funciona esta calculadora de relación cotangente",
+    "intro": [
+      "La cotangente es el recíproco de la tangente. Mientras que la tangente divide el <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> opuesto por el lado adyacente, la cotangente invierte esa fracción: divide el lado adyacente por el lado opuesto. Aparece con menos frecuencia en las clases de geometría básica, pero juega un papel importante en trigonometría y cálculo avanzados.",
+      "Esta <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculadora</a> toma el lado adyacente <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> b y el lado opuesto a, luego devuelve cot(A) = b / a. Si estás acostumbrado a trabajar con tangente, la cotangente es simplemente la fracción inversa."
+    ],
+    "calculatorNote": "Ingrese el lado adyacente <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> b y el lado opuesto a en los campos de arriba. La calculadora <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> devuelve cot(A) = b / a. Ambos valores deben ser positivos.",
+    "formula_display": "cuna(A) = b / a",
+    "formula_paragraphs": [
+      "La cotangente de <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es igual al <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> adyacente dividido por el lado opuesto. Es el recíproco de la tangente: cot(A) = 1 / tan(A).",
+      "Al igual que la tangente, la cotangente usa solo los dos catetos del triángulo rectángulo. La hipotenusa no está involucrada. La cotangente puede tomar cualquier valor positivo para ángulos agudos."
+    ],
+    "diagramExplanation": [
+      "Para <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> a es opuesto, el lado b es adyacente y el lado c es la hipotenusa.",
+      "La cotangente usa el <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> b adyacente (el cateto al lado del <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A) como numerador y el lado opuesto a (frente al ángulo A) como denominador. La hipotenusa c no se utiliza."
+    ],
+    "howToSteps": [
+      "Identifica <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A en tu triángulo rectángulo.",
+      "Encuentra <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> b, el cateto adyacente, el que está al lado de <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A y el ángulo recto.",
+      "Encuentra el <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> a, el cateto opuesto, el que está frente al <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A.",
+      "Ingrese b en el primer campo de entrada.",
+      "Ingrese a en el segundo campo de entrada.",
+      "Haga clic en Calcular.",
+      "El resultado es cot(A), que puede ser cualquier número positivo."
+    ],
+    "example_intro": "Un triángulo rectángulo tiene <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> adyacente b = 4 y lado opuesto a = 3.",
+    "example_steps": [
+      "cuna(A) = b / a",
+      "cuna(A) = 4 / 3",
+      "cuna(A) ≈ 1.3333"
+    ],
+    "example_conclusion": "La cotangente de <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es aproximadamente 1,3333. Puedes verificar esto: tan(A) = 3/4 = 0,75 y 1/0,75 = 1,3333.",
+    "whatResultMeans": [
+      "La cotangente te dice cuántas veces el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a> encaja en relación con el lado opuesto. Es la versión atropellada del índice de pendiente.",
+      "Una cotangente de 1 significa que ambos catetos son iguales (un ángulo <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"> de 45°</a>). Los valores mayores que 1 significan que el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> adyacente es más largo que el lado opuesto: el triángulo es más ancho y el ángulo es más pequeño. Los valores inferiores a 1 significan que el lado opuesto es más largo: el ángulo es mayor y el triángulo es más pronunciado.",
+      "Dado que la cotangente es el recíproco de la tangente, siempre puedes convertir entre ellas: cot(A) = 1 / tan(A) y tan(A) = 1 / cot(A)."
+    ],
+    "whenToUse_intro": "Elija esta calculadora de relación cotangente <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> cuando:",
+    "whenToUse_items": [
+      "Necesita el recíproco de la tangente sin calcular manualmente 1 / tan(A).",
+      "Está trabajando con fórmulas que requieren específicamente cotangente, como ciertas identidades de cálculo.",
+      "Prefieres pensar en términos de atropello-aumento en lugar de aumento-sobre-aumento.",
+      "Estás resolviendo problemas de topografía, construcción o pruebas trigonométricas."
+    ],
+    "commonMistakes_intro": "Esté atento a estos errores cotangentes:",
+    "commonMistakes_items": [
+      "Escribiendo a/b en lugar de b/a. La cotangente coloca el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> adyacente en la parte superior, no el lado opuesto. Intercambiarlos te da tangente.",
+      "Confundir cotangente con coseno. La cotangente es b/a (adyacente sobre opuesto). El coseno es b/c (adyacente a la hipotenusa). Son proporciones diferentes.",
+      "Usando la hipotenusa en el cálculo. La cotangente solo involucra los dos catetos.",
+      "Olvidarlo es el recíproco de la tangente. Si ya conoce tan(A), simplemente tome 1 / tan(A) para obtener cot(A).",
+      "Mezclando qué lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> es adyacente y cuál es opuesto. Identifique siempre los lados relativos al <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A."
+    ],
+    "relatedLinks": [
+      "Calculadora de relaciones trigonométricas de triángulo rectángulo",
+      "Calculadora de razón tangente",
+      "Calculadora de relación seno",
+      "Calculadora de relación de coseno"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuál es la fórmula de la cotangente de un triángulo rectángulo?",
+        "answer": "Es cot(A) = b / a, donde b es el <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> adyacente y a es el lado opuesto del <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A. Este es el reverso de la fracción tangente."
+      },
+      {
+        "question": "¿Cómo se relaciona la cotangente con la tangente?",
+        "answer": "La cotangente es el recíproco de la tangente. Si tan(A) = 0,75, entonces cot(A) = 1 / 0,75 ≈ 1,3333."
+      },
+      {
+        "question": "¿Cuándo usaría cotangente en lugar de tangente?",
+        "answer": "Utilice la cotangente cuando una fórmula lo requiera específicamente o cuando desee obtener la relación adyacente a opuesta directamente. En muchos contextos de cálculo y física, la cotangente aparece en identidades y fórmulas derivadas."
+      },
+      {
+        "question": "¿Puede cot(A) ser igual a cero en un triángulo rectángulo?",
+        "answer": "En un triángulo rectángulo solo con ángulos agudos, cot(A) siempre es positivo. La cotangente tiende a cero cuando <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A se acerca a 90°, pero el ángulo de 90° es el ángulo recto en sí, no un ángulo agudo que puedas medir."
+      },
+      {
+        "question": "¿Es cotangente lo mismo que 1 dividido por tangente?",
+        "answer": "Sí. cuna(A) = 1 / tan(A) = b / a. Ambas expresiones dan el mismo resultado."
+      }
+    ]
+  },
+  "secant-ratio-calculator": {
+    "slug": "calculadora-de-ratio-secante",
+    "h1": "Calculadora de razón secante",
+    "headerSummary": "Encuentre la sección (A) comparando la hipotenusa c con el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a> b, el recíproco del coseno.",
+    "metaTitle": "Calculadora de razón secante | Triángulo rectángulo seg(A)",
+    "metaDescription": "Utilice esta calculadora de razón secante <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> para encontrar la sección (A) en un triángulo rectángulo usando la hipotenusa c y el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a> b con fórmula, pasos y ejemplos.",
+    "calculator_heading": "Calcular la razón secante",
+    "calculator_outputLabel": "segundo(A)",
+    "calculator_fields": [
+      "hipotenusa c",
+      "Lado adyacente b"
+    ],
+    "introHeading": "Cómo funciona esta calculadora de razón secante",
+    "intro": [
+      "La secante es el recíproco del coseno. Donde el coseno divide el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a> por la hipotenusa, la secante le da la vuelta: divide la hipotenusa por el lado adyacente. El resultado siempre es mayor o igual a 1 porque la hipotenusa es siempre el lado más largo de un triángulo rectángulo.",
+      "Esta calculadora <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> toma dos entradas: la hipotenusa c y el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente</a> b — y devuelve sec(A). Es una forma rápida de obtener esta relación recíproca sin hacer la división a mano ni calcular el coseno primero."
+    ],
+    "calculatorNote": "Ingrese la hipotenusa c y el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a> b en los campos de arriba. La calculadora <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> calcula sec(A) = c / b. Ambos valores deben ser positivos y c debe ser mayor que b.",
+    "formula_display": "segundo(A) = c / b",
+    "formula_paragraphs": [
+      "La secante de <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es igual a la hipotenusa dividida por el lado adyacente <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>. Este es el recíproco del coseno: sec(A) = 1 / cos(A).",
+      "Debido a que la hipotenusa siempre es más larga que el <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> adyacente en un triángulo rectángulo, sec(A) siempre es mayor que 1. A medida que <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A aumenta, el lado adyacente se encoge en relación con la hipotenusa, por lo que la secante aumenta."
+    ],
+    "diagramExplanation": [
+      "Para <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> a es opuesto, el lado b es adyacente y el lado c es la hipotenusa.",
+      "La secante usa la hipotenusa c como numerador y el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a> b como denominador. El lado opuesto a no forma parte del cálculo de la secante."
+    ],
+    "howToSteps": [
+      "Identifica <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A en tu triángulo rectángulo.",
+      "Encuentra el <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> c, la hipotenusa: el lado más largo, frente al <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> derecho.",
+      "Encuentra <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> b, el cateto adyacente: el lado que toca tanto el <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A como el ángulo recto.",
+      "Ingrese c en el primer campo de entrada.",
+      "Ingrese b en el segundo campo de entrada.",
+      "Haga clic en Calcular.",
+      "El resultado es sec(A), que siempre es mayor o igual a 1."
+    ],
+    "example_intro": "Un triángulo rectángulo tiene hipotenusa c = 5 y lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a> b = 4.",
+    "example_steps": [
+      "segundo(A) = c / b",
+      "segundo(A) = 5/4",
+      "segundo(A) = 1,25"
+    ],
+    "example_conclusion": "La secante de <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es 1,25. Para verificar: cos(A) = 4/5 = 0,8 y 1/0,8 = 1,25.",
+    "whatResultMeans": [
+      "La secante te dice cuántas veces más se compara la hipotenusa con el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a>. Una secante de 1,25 significa que la hipotenusa es un 25% más larga que el lado adyacente.",
+      "El valor mínimo de la secante en un triángulo rectángulo está ligeramente por encima de 1, lo que ocurre cuando <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es muy pequeño y el <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> adyacente es casi tan largo como la hipotenusa. A medida que el ángulo A aumenta, el lado adyacente se acorta con respecto a la hipotenusa y la secante crece.",
+      "La secante es útil siempre que necesites escalar desde el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a> a la hipotenusa, o cuando una fórmula requiere 1 / cos(A)."
+    ],
+    "whenToUse_intro": "Esta calculadora de razón secante <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> es la elección correcta cuando:",
+    "whenToUse_items": [
+      "Una fórmula requiere secante o 1/cos(A) y quieres el valor directamente.",
+      "Necesita encontrar cuánto más larga es la hipotenusa en comparación con el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a>.",
+      "Estás trabajando con problemas de cálculo que involucran secante en derivadas o integrales.",
+      "Estás verificando cálculos estructurales donde la hipotenusa representa la longitud real y el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a> representa la proyección horizontal <a href=\"/right-triangle-projection-calculator/\" class=\"text-primary hover:underline\"> </a>."
+    ],
+    "commonMistakes_intro": "Estos errores secantes hacen tropezar a los estudiantes con mayor frecuencia:",
+    "commonMistakes_items": [
+      "Confundir secante con coseno. El coseno es b/c (adyacente a la hipotenusa). La secante es la recíproca: c/b (hipotenusa sobre adyacente).",
+      "Obteniendo un resultado menor que 1. Si tu respuesta es menor que 1, probablemente hayas invertido la fracción. En un triángulo rectángulo válido, sec(A) siempre es mayor o igual a 1.",
+      "Usando el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> opuesto </a> en lugar del lado adyacente. La secante empareja la hipotenusa con el lado adyacente, no con el lado opuesto.",
+      "Mezclar secante y cosecante. La secante es el recíproco del coseno. La cosecante es el recíproco del seno. Usan diferentes lados.",
+      "Introduciendo b mayor que c. La hipotenusa siempre debe ser más larga que el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a>."
+    ],
+    "relatedLinks": [
+      "Calculadora de relaciones trigonométricas de triángulo rectángulo",
+      "Calculadora de relación de coseno",
+      "Calculadora de relación cosecante",
+      "Calculadora de relación cotangente"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuál es la razón secante en un triángulo rectángulo?",
+        "answer": "La secante se define como sec(A) = c / b, donde c es la hipotenusa y b es el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a>. Es el recíproco del coseno."
+      },
+      {
+        "question": "¿Por qué la secante es siempre mayor que 1?",
+        "answer": "Porque la hipotenusa c es siempre el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> más largo de un triángulo rectángulo. Dividir un número mayor (c) por uno menor (b) siempre da un resultado mayor que 1."
+      },
+      {
+        "question": "¿Cómo convierto entre secante y coseno?",
+        "answer": "seg(A) = 1 / cos(A), y cos(A) = 1 / seg(A). Si conoces uno, puedes encontrar el otro tomando el recíproco."
+      },
+      {
+        "question": "¿Qué es el segundo (45°)?",
+        "answer": "En un triángulo <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90</a>, la hipotenusa es √2 veces el cateto. Entonces sec(45°) = √2 ≈ 1,4142."
+      },
+      {
+        "question": "¿Se utiliza la secante en aplicaciones del mundo real?",
+        "answer": "Sí. La secante aparece en fórmulas físicas, cálculos de ingeniería y cálculo. Se utiliza cuando necesita escalar una distancia horizontal a la longitud real del camino a lo largo de una pendiente."
+      }
+    ]
+  },
+  "cosecant-ratio-calculator": {
+    "slug": "calculadora-de-cosecante-ratio",
+    "h1": "Calculadora de relación cosecante",
+    "headerSummary": "Calcula csc(A) a partir de la hipotenusa c y el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a, el recíproco del seno.",
+    "metaTitle": "Calculadora de relación cosecante | Triángulo rectángulo csc(A)",
+    "metaDescription": "Usa esta calculadora de razón cosecante <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> para encontrar csc(A) en un triángulo rectángulo usando la hipotenusa c y el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> opuesto</a> a con fórmula, pasos y ejemplos.",
+    "calculator_heading": "Calcular la relación cosecante",
+    "calculator_outputLabel": "csc(A)",
+    "calculator_fields": [
+      "hipotenusa c",
+      "lado opuesto a"
+    ],
+    "introHeading": "Cómo funciona esta calculadora de razón cosecante",
+    "intro": [
+      "La cosecante es el recíproco del seno. Divide la hipotenusa por el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>, lo que da una razón que siempre es mayor que 1 en un triángulo rectángulo. Puede que no lo veas con tanta frecuencia como el seno o el coseno en los cursos básicos, pero es esencial en matemáticas más avanzadas y ciertas aplicaciones de física.",
+      "Esta <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculadora</a> lo hace simple. Ingrese la hipotenusa c y el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> opuesto </a> a, y devuelve csc(A) inmediatamente. No es necesario calcular el seno primero y luego invertir la fracción."
+    ],
+    "calculatorNote": "Ingrese la hipotenusa c y el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a en los campos de arriba. La calculadora <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> calcula csc(A) = c / a. Ambos valores deben ser positivos y c debe ser mayor que a.",
+    "formula_display": "csc(A) = c/a",
+    "formula_paragraphs": [
+      "La cosecante de <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es igual a la hipotenusa dividida por el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>. Es el recíproco del seno: csc(A) = 1 / sin(A).",
+      "La hipotenusa siempre es más larga que el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> opuesto </a>, por lo que csc(A) siempre produce un valor mayor que 1 para ángulos agudos. A medida que <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A disminuye, el lado opuesto se acorta en relación con la hipotenusa y la cosecante aumenta."
+    ],
+    "diagramExplanation": [
+      "Para <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> a es opuesto, el lado b es adyacente y el lado c es la hipotenusa.",
+      "La cosecante usa la hipotenusa c como numerador y el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a como denominador. El lado adyacente b no juega ningún papel en la fórmula cosecante."
+    ],
+    "howToSteps": [
+      "Identifica <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A en tu triángulo rectángulo.",
+      "Ubique la hipotenusa c: el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> opuesto al <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> derecho y el lado más largo.",
+      "Ubique el <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> opuesto: el cateto directamente frente al <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A.",
+      "Escriba c en el primer campo de entrada.",
+      "Escriba a en el segundo campo de entrada.",
+      "Haga clic en Calcular.",
+      "El resultado es csc(A), siempre mayor que 1."
+    ],
+    "example_intro": "Un triángulo rectángulo tiene hipotenusa c = 5 y lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a = 3.",
+    "example_steps": [
+      "csc(A) = c/a",
+      "csc(A) = 5 / 3",
+      "csc(A) ≈ 1,6667"
+    ],
+    "example_conclusion": "La cosecante del <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es aproximadamente 1,6667. Verificación: sin(A) = 3/5 = 0,6, y 1/0,6 ≈ 1,6667.",
+    "whatResultMeans": [
+      "La cosecante te dice cuántas veces más se compara la hipotenusa con el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>. Una cosecante de 1,6667 significa que la hipotenusa es aproximadamente un 67 % más larga que el lado opuesto.",
+      "Cuando <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es grande (cerca de 90°), el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> es casi tan largo como la hipotenusa, por lo que csc(A) está cerca de 1. Cuando el ángulo A es pequeño, el lado opuesto es mucho más corto y la cosecante crece.",
+      "Piénsalo de esta manera: si conoces el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> y quieres encontrar la hipotenusa, multiplica el lado opuesto por csc(A). Eso te da c = a × csc(A)."
+    ],
+    "whenToUse_intro": "Utilice esta calculadora de relación cosecante <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> cuando:",
+    "whenToUse_items": [
+      "Necesitas el recíproco del seno sin calcular primero el seno (A).",
+      "Una fórmula requiere específicamente la cosecante, que aparece en ciertas identidades trigonométricas.",
+      "Estás escalando el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> opuesto </a> hasta la longitud completa de la hipotenusa.",
+      "Estás trabajando en problemas de física o ingeniería que involucran fuerzas, funciones de onda o fórmulas de oscilación que usan cosecante."
+    ],
+    "commonMistakes_intro": "Cuidado con estos errores cosecantes:",
+    "commonMistakes_items": [
+      "Confundir cosecante con seno. El seno es a/c (opuesto a hipotenusa). Cosecante es el recíproco: c/a (hipotenusa sobre opuesto).",
+      "Confundir cosecante con secante. La cosecante se basa en el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> (recíproco del seno). La secante se basa en el lado adyacente (recíproco del coseno). Usan diferentes piernas.",
+      "Obteniendo un resultado menor que 1. Si su respuesta es menor que 1, es posible que haya ingresado los valores en el orden incorrecto. csc(A) siempre es mayor que 1.",
+      "Usando el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a> en lugar del lado opuesto. La cosecante une la hipotenusa únicamente con el lado opuesto.",
+      "Esperando que la cosecante y el coseno estén relacionados por su nombre. A pesar del coprefijo, la cosecante es el recíproco del seno, no del coseno."
+    ],
+    "relatedLinks": [
+      "Calculadora de relaciones trigonométricas de triángulo rectángulo",
+      "Calculadora de relación seno",
+      "Calculadora de razón secante",
+      "Calculadora de relación cotangente"
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuál es la fórmula de la cosecante en un triángulo rectángulo?",
+        "answer": "Es csc(A) = c / a, donde c es la hipotenusa y a es el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> opuesto </a>. La cosecante es el recíproco del seno."
+      },
+      {
+        "question": "¿Cómo se relaciona la cosecante con el seno?",
+        "answer": "csc(A) = 1 / pecado(A). Si sin(A) = 0,6, entonces csc(A) = 1 / 0,6 ≈ 1,6667."
+      },
+      {
+        "question": "¿Por qué la cosecante es siempre mayor que 1?",
+        "answer": "Porque la hipotenusa siempre es más larga que el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> opuesto </a> en un triángulo rectángulo. La fracción c/a siempre supera 1."
+      },
+      {
+        "question": "¿Qué es csc(30°)?",
+        "answer": "En un triángulo <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90</a>, sin(30°) = 0.5, entonces csc(30°) = 1 / 0.5 = 2. La hipotenusa es exactamente el doble del lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> opuesto</a>."
+      },
+      {
+        "question": "¿Cuándo usaría cosecante en lugar de seno?",
+        "answer": "Usa la cosecante cuando una fórmula lo requiera directamente, o cuando quieras encontrar la hipotenusa desde el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>: c = a × csc(A). Ahorra el paso de dividir por seno."
+      }
+    ]
+  }
+}

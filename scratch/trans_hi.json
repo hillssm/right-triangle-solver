@@ -1,0 +1,557 @@
+{
+  "sine-ratio-calculator": {
+    "slug": "साइन-अनुपात-कैलकुलेटर",
+    "h1": "साइन अनुपात कैलकुलेटर",
+    "headerSummary": "एक समकोण त्रिभुज में विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> ए और कर्ण सी से पाप (ए) खोजें।",
+    "metaTitle": "साइन अनुपात कैलकुलेटर | समकोण त्रिभुज पाप(ए)",
+    "metaDescription": "सूत्र, चरणों और उदाहरणों के साथ विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> ए और कर्ण सी का उपयोग करके एक समकोण त्रिभुज में पाप (ए) खोजने के लिए इस साइन अनुपात <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"> कैलकुलेटर </a> का उपयोग करें।",
+    "calculator_heading": "साइन अनुपात की गणना करें",
+    "calculator_outputLabel": "पाप(ए)",
+    "calculator_fields": [
+      "विपरीत पक्ष ए",
+      "कर्ण सी"
+    ],
+    "introHeading": "यह साइन अनुपात कैलकुलेटर कैसे काम करता है",
+    "intro": [
+      "साइन अनुपात ज्यामिति में आपके द्वारा सीखे गए पहले त्रिकोणमितीय कार्यों में से एक है। यह एक समकोण त्रिभुज में एक विशिष्ट <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> को उसकी दो भुजाओं से जोड़ता है - विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> और कर्ण। यदि आप इन दो <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">मापों</a> को जानते हैं, तो यह कैलकुलेटर आपको तुरंत पाप(ए) देता है।",
+      "चाहे आप होमवर्क की समस्या पर काम कर रहे हों, परीक्षा-शैली के उत्तर की जाँच कर रहे हों, या वास्तविक माप कार्य को हल कर रहे हों, यह टूल मैन्युअल विभाजन चरण को हटा देता है। अपने मान दर्ज करें और दिखाए गए सूत्र से परिणाम प्राप्त करें।"
+    ],
+    "calculatorNote": "उपरोक्त फ़ील्ड में विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए की लंबाई और कर्ण सी दर्ज करें। <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> ए को सी से विभाजित करता है और पाप(ए) लौटाता है। दोनों मान सकारात्मक होने चाहिए, और c, a से बड़ा होना चाहिए।",
+    "formula_display": "पाप(ए) = ए/सी",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए की ज्या विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a> की लंबाई को कर्ण की लंबाई से विभाजित करने के बराबर होती है। इसे अक्सर SOH-CAH-TOA के SOH भाग के साथ याद किया जाता है।",
+      "एक समकोण त्रिभुज में, विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> वह है जो <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के ठीक सामने है। कर्ण हमेशा सबसे लंबी भुजा होती है - जो 90° कोण का सामना करती है। चूँकि कर्ण हमेशा किसी भी पैर से लंबा होता है, न्यून कोणों के लिए पाप (ए) हमेशा 0 और 1 के बीच आता है।"
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के लिए, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए विपरीत है, पक्ष बी आसन्न है, और पक्ष सी कर्ण है।",
+      "साइन अनुपात इन तीन भुजाओं में से केवल दो का उपयोग करता है: विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए (सीधे <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के सामने) और कर्ण सी (सबसे लंबी भुजा, बी पर समकोण के विपरीत)।"
+    ],
+    "howToSteps": [
+      "अपने समकोण त्रिभुज में <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए को पहचानें। यह दो न्यून कोणों में से एक होना चाहिए, न कि 90° का कोण।",
+      "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> को <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के विपरीत खोजें। यह पक्ष ए है।",
+      "कर्ण ज्ञात कीजिये. यह <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> सी है, सबसे लंबी भुजा, दाएं <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> के विपरीत।",
+      "पहले इनपुट फ़ील्ड में a का मान दर्ज करें।",
+      "दूसरे इनपुट फ़ील्ड में c का मान दर्ज करें।",
+      "पाप(ए) देखने के लिए गणना पर क्लिक करें।",
+      "परिणाम की समीक्षा करें. यह 0 और 1 के बीच दशमलव होना चाहिए."
+    ],
+    "example_intro": "मान लीजिए कि आपके पास एक समकोण त्रिभुज है जहां विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a> a = 3 और कर्ण c = 5 है।",
+    "example_steps": [
+      "पाप(ए) = ए/सी",
+      "पाप(ए) = 3/5",
+      "पाप(ए) = 0.6"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए की ज्या 0.6 है। इसका मतलब है कि विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> कर्ण की लंबाई का 60% है। यदि आपको वास्तविक कोण की आवश्यकता है, तो व्युत्क्रम ज्या लें: A = आर्क्सिन(0.6) ≈ 36.87°।",
+    "whatResultMeans": [
+      "आउटपुट एक इकाई रहित अनुपात है। यह आपको बताता है कि विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> आकार में कर्ण से कैसे तुलना करता है। 0.5 के परिणाम का मतलब है कि विपरीत भुजा कर्ण का ठीक आधा है - जो कि <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90 त्रिभुज </a> में होता है जहां ए = 30° है।",
+      "छोटे मान (0 के करीब) का मतलब है <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए छोटा है और विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> कर्ण के सापेक्ष छोटा है। 1 माध्य कोण A के करीब का मान बड़ा है (90° के करीब) और विपरीत पक्ष लगभग कर्ण जितना लंबा है।",
+      "चूँकि पाप(ए) दो लंबाई का अनुपात है, इसकी कोई इकाई नहीं है। चाहे आपके त्रिभुज को सेंटीमीटर, इंच या मीटर में मापा जाए, ज्या का मान तब तक समान रहता है जब तक दोनों पक्ष एक ही इकाई का उपयोग करते हैं।"
+    ],
+    "whenToUse_intro": "इनमें से किसी भी स्थिति में इस साइन अनुपात <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> का उपयोग करें:",
+    "whenToUse_items": [
+      "आप विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> और कर्ण को जानते हैं और ज्या मान चाहते हैं।",
+      "आप व्युत्क्रम ज्या फ़ंक्शन का उपयोग करके <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए खोजने की तैयारी कर रहे हैं।",
+      "आपको पाठ्यपुस्तक के उत्तर को सत्यापित करना होगा या अपने स्वयं के त्रिकोणमिति कार्य की जाँच करनी होगी।",
+      "आप ऊर्ध्वाधर घटकों से संबंधित भौतिकी की समस्याओं को हल कर रहे हैं, जैसे रैंप की ऊंचाई या ढलान पर ऊर्ध्वाधर बल।",
+      "आप एक वेक्टर को उसके ऊर्ध्वाधर और क्षैतिज भागों में तोड़ रहे हैं।"
+    ],
+    "commonMistakes_intro": "ज्या की गणना करते समय इन सामान्य त्रुटियों पर ध्यान दें:",
+    "commonMistakes_items": [
+      "विपरीत पक्ष के बजाय आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> का उपयोग करना। साइन, <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के पार वाली भुजा का उपयोग करती है, उसके बगल वाली भुजा का नहीं।",
+      "सूत्र में a और c की अदला-बदली। विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> अंश में जाता है, और कर्ण हर में जाता है। c/a लिखने से सहसंयोजक प्राप्त होता है, ज्या नहीं।",
+      "विभिन्न इकाइयों में मापी गई भुजाओं का उपयोग करना। यदि a सेंटीमीटर में है और c इंच में है, तो अनुपात अर्थहीन है। पहले उसी इकाई में कनवर्ट करें.",
+      "यह भूल जाना कि c, a से बड़ा होना चाहिए। एक वैध समकोण त्रिभुज में, कर्ण हमेशा सबसे लंबी <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा</a> होता है।",
+      "सही <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> (90°) को कोण ए के रूप में दर्ज करना। साइन केवल न्यून कोणों पर लागू होता है। 90° का कोण शीर्ष B पर है।"
+    ],
+    "relatedLinks": [
+      "समकोण त्रिभुज ट्रिग अनुपात कैलकुलेटर",
+      "कोसाइन अनुपात कैलकुलेटर",
+      "स्पर्शरेखा अनुपात कैलकुलेटर",
+      "समकोण त्रिभुज कोण कैलकुलेटर"
+    ],
+    "faqs": [
+      {
+        "question": "समकोण त्रिभुज में पाप(ए) का सूत्र क्या है?",
+        "answer": "सूत्र पाप(ए) = ए / सी है, जहां ए <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> विपरीत <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए है और सी कर्ण है। आप विपरीत भुजा को कर्ण से विभाजित करते हैं।"
+      },
+      {
+        "question": "एक समकोण त्रिभुज में पाप(ए) हमेशा 1 से कम क्यों होता है?",
+        "answer": "क्योंकि कर्ण c सदैव सबसे लंबी <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा</a> होती है। चूँकि a, c से छोटा है, भिन्न a/c सदैव 1 से कम होता है।"
+      },
+      {
+        "question": "क्या मैं कोण ज्ञात करने के लिए इस कैलकुलेटर का उपयोग कर सकता हूँ?",
+        "answer": "यह <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> आपको साइन मान देता है। <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> खोजने के लिए, व्युत्क्रम ज्या फ़ंक्शन का उपयोग करें: ए = आर्क्सिन(पाप(ए))। आप इसे हमारे समकोण त्रिभुज कोण कैलकुलेटर से कर सकते हैं।"
+      },
+      {
+        "question": "0.5 के पाप(ए) परिणाम का क्या मतलब है?",
+        "answer": "इसका मतलब है कि विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> कर्ण की लंबाई से बिल्कुल आधी है। यह <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के 30° से मेल खाता है।"
+      },
+      {
+        "question": "क्या मुझे साइन की गणना करने के लिए आसन्न पक्ष में प्रवेश करने की आवश्यकता है?",
+        "answer": "नहीं, साइन केवल विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए और कर्ण सी का उपयोग करता है। आसन्न भुजा b, ज्या सूत्र का भाग नहीं है।"
+      }
+    ]
+  },
+  "cosine-ratio-calculator": {
+    "slug": "कोसाइन-अनुपात-कैलकुलेटर",
+    "h1": "कोसाइन अनुपात कैलकुलेटर",
+    "headerSummary": "स्पष्ट समकोण-त्रिकोण चरणों के साथ आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> बी और कर्ण सी से कॉस(ए) की गणना करें।",
+    "metaTitle": "कोसाइन अनुपात कैलकुलेटर | समकोण त्रिभुज क्योंकि(ए)",
+    "metaDescription": "सूत्र, चरणों और उदाहरणों के साथ आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> बी और कर्ण सी का उपयोग करके एक समकोण त्रिभुज में कॉस (ए) खोजने के लिए इस कोसाइन अनुपात <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"> कैलकुलेटर </a> का उपयोग करें।",
+    "calculator_heading": "कोसाइन अनुपात की गणना करें",
+    "calculator_outputLabel": "क्योंकि(ए)",
+    "calculator_fields": [
+      "आसन्न पक्ष बी",
+      "कर्ण सी"
+    ],
+    "introHeading": "यह कोसाइन अनुपात कैलकुलेटर कैसे काम करता है",
+    "intro": [
+      "कोज्या अनुपात मापता है कि एक समकोण त्रिभुज की आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> की तुलना कर्ण से कैसे की जाती है। यह SOH-CAH-TOA का दूसरा भाग है और ज्यामिति, भौतिकी और इंजीनियरिंग में सबसे अधिक उपयोग किए जाने वाले ट्रिगर फ़ंक्शन में से एक है।",
+      "यह <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> दो इनपुट लेता है - आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> बी और कर्ण सी - और कॉस(ए) लौटाता है। यह आपके लिए विभाजन को संभालता है और तुरंत परिणाम दिखाता है, ताकि आप अंकगणित के बजाय ज्यामिति को समझने पर ध्यान केंद्रित कर सकें।"
+    ],
+    "calculatorNote": "उपरोक्त इनपुट फ़ील्ड में आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> बी और कर्ण सी टाइप करें। <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> कॉस(ए) = बी/सी की गणना करता है। दोनों मान सकारात्मक होने चाहिए, और c, b से बड़ा होना चाहिए।",
+    "formula_display": "कॉस(ए) = बी/सी",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए की कोज्या कर्ण से विभाजित आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> के बराबर होती है। यह SOH-CAH-TOA में CAH है।",
+      "आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> बी वह पैर है जो <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए और समकोण को छूता है। कर्ण c समकोण के सामने बैठता है और हमेशा सबसे लंबी भुजा होती है। चूँकि कर्ण किसी भी पाद से अधिक लंबा होता है, इसलिए न्यून कोणों के लिए cos(A) हमेशा 0 और 1 के बीच मान उत्पन्न करता है।"
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के लिए, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए विपरीत है, पक्ष बी आसन्न है, और पक्ष सी कर्ण है।",
+      "कोसाइन अनुपात आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> बी (वह पैर जो कर्ण के साथ <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए बनाता है) और कर्ण सी का उपयोग करता है। पक्ष a कोसाइन गणना का हिस्सा नहीं है।"
+    ],
+    "howToSteps": [
+      "अपने समकोण त्रिभुज में <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए का पता लगाएँ। यह दो न्यूनकोणों में से एक है।",
+      "आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> को पहचानें। यह भुजा बी है - पैर जो कर्ण के साथ मिलकर <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए बनाता है।",
+      "90° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> के विपरीत कर्ण c, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> को पहचानें।",
+      "पहले फ़ील्ड में b का मान दर्ज करें.",
+      "दूसरे फ़ील्ड में c का मान दर्ज करें।",
+      "कॉस(ए) देखने के लिए कैलकुलेट दबाएँ।",
+      "जांचें कि परिणाम 0 और 1 के बीच है।"
+    ],
+    "example_intro": "एक समकोण त्रिभुज की आसन्न भुजा </a> b = 4 और कर्ण c = 5 है।",
+    "example_steps": [
+      "कॉस(ए) = बी/सी",
+      "कॉस(ए) = 4/5",
+      "कॉस(ए) = 0.8"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए की कोज्या 0.8 है। आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> कर्ण की लंबाई का 80% है। कोण ज्ञात करने के लिए: A = आर्ककोस(0.8) ≈ 36.87°.",
+    "whatResultMeans": [
+      "कोसाइन आपको बताता है कि कर्ण की कितनी लंबाई आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> द्वारा कवर की गई है। 0.8 की कोज्या का मतलब है कि आसन्न भुजा कर्ण की दूरी तक 80% फैली हुई है।",
+      "जब <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए छोटा होता है, तो आसन्न पक्ष <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> लगभग कर्ण जितना लंबा होता है, इसलिए कॉस(ए) 1 के करीब होता है। जब कोण ए बड़ा होता है (90 डिग्री के करीब), तो आसन्न पक्ष कर्ण के सापेक्ष सिकुड़ जाता है, कॉस(ए) को 0 की ओर धकेलता है।",
+      "परिणाम आयामहीन है. इससे कोई फर्क नहीं पड़ता कि आपका <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">माप</a> फुट, मीटर या किसी अन्य इकाई में है - कोसाइन एक शुद्ध अनुपात है।"
+    ],
+    "whenToUse_intro": "इस कोसाइन अनुपात तक पहुंचें <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> जब:",
+    "whenToUse_items": [
+      "आप आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> और कर्ण को जानते हैं और आपको कोसाइन मान की आवश्यकता है।",
+      "आप किसी बल, वेग या विस्थापन वेक्टर का क्षैतिज घटक ढूंढ रहे हैं।",
+      "आप किसी पाठ्यपुस्तक या समस्या सेट से ट्रिगर मान सत्यापित करना चाहते हैं।",
+      "आप नेविगेशन या सर्वेक्षण समस्याओं पर काम कर रहे हैं जिनमें क्षैतिज दूरी शामिल है।",
+      "किसी अन्य व्युत्पन्न मात्रा, जैसे छेदक या स्पर्शरेखा की गणना करने से पहले आपको cos(A) की आवश्यकता होती है।"
+    ],
+    "commonMistakes_intro": "ये सबसे अधिक बार होने वाली कोसाइन त्रुटियाँ हैं जो छात्र करते हैं:",
+    "commonMistakes_items": [
+      "आसन्न भुजा के बजाय विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> का उपयोग करना। कोसाइन <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के बगल वाले पैर का उपयोग करता है, उसके पार वाले पैर का नहीं।",
+      "b को c से बड़ा दर्ज करना। एक वैध समकोण त्रिभुज में, कर्ण हमेशा सबसे लंबी <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा</a> होता है। यदि b, c से अधिक है, तो आपके मान एक समकोण त्रिभुज नहीं बनाते हैं।",
+      "भिन्न को उलटना. c/b लिखने से सेकेंट मिलता है, कोज्या नहीं।",
+      "निकटवर्ती <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> को कर्ण लेबल के साथ मिलाना। दोबारा जांचें कि कौन सी भुजा दाएं <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> के विपरीत है (वह कर्ण है) और कौन सी भुजा कोण ए का हिस्सा है (वह आसन्न भुजा है)।",
+      "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">साइड लंबाई</a> का उपयोग करके पहले परिवर्तित किए बिना विभिन्न इकाइयों में मापा जाता है।"
+    ],
+    "relatedLinks": [
+      "समकोण त्रिभुज ट्रिग अनुपात कैलकुलेटर",
+      "साइन अनुपात कैलकुलेटर",
+      "स्पर्शरेखा अनुपात कैलकुलेटर",
+      "समकोण त्रिभुज कोण कैलकुलेटर"
+    ],
+    "faqs": [
+      {
+        "question": "एक समकोण त्रिभुज के लिए कोज्या अनुपात सूत्र क्या है?",
+        "answer": "यह cos(A) = b/c है, जहां b आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> है और c कर्ण है। आसन्न का अर्थ है वह पैर जो <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए को छूता है।"
+      },
+      {
+        "question": "कोसाइन, साइन से किस प्रकार भिन्न है?",
+        "answer": "ज्या कर्ण (ए/सी) के ऊपर विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> का उपयोग करती है। कोसाइन कर्ण (बी/सी) के ऊपर आसन्न पक्ष का उपयोग करता है। वे एक ही <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> के सापेक्ष विभिन्न भुजाओं को मापते हैं।"
+      },
+      {
+        "question": "यदि cos(A) = 0.5 है तो इसका क्या अर्थ है?",
+        "answer": "इसका मतलब है कि आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> कर्ण का ठीक आधा है। ऐसा तब होता है जब <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए 60° होता है।"
+      },
+      {
+        "question": "क्या कोज्या 1 से बड़ी हो सकती है?",
+        "answer": "नहीं, एक समकोण त्रिभुज में, कर्ण हमेशा आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a> से लंबा होता है, इसलिए b/c हमेशा 1 से कम होता है।"
+      },
+      {
+        "question": "मुझे कोसाइन के लिए केवल दो पक्षों की आवश्यकता क्यों है?",
+        "answer": "कोसाइन सूत्र में केवल आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> और कर्ण शामिल होता है। विपरीत पक्ष गणना का हिस्सा नहीं है."
+      }
+    ]
+  },
+  "tangent-ratio-calculator": {
+    "slug": "स्पर्शरेखा-अनुपात-कैलकुलेटर",
+    "h1": "स्पर्शरेखा अनुपात कैलकुलेटर",
+    "headerSummary": "ढलान, वृद्धि और दौड़ की समस्याओं के लिए विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए और आसन्न पक्ष बी से टैन(ए) खोजें।",
+    "metaTitle": "स्पर्शरेखा अनुपात कैलकुलेटर | समकोण त्रिभुज tan(A)",
+    "metaDescription": "सूत्र, चरणों और उदाहरणों के साथ विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> ए और आसन्न भुजा बी का उपयोग करके एक समकोण त्रिभुज में टैन (ए) खोजने के लिए इस स्पर्शरेखा अनुपात <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"> कैलकुलेटर </a> का उपयोग करें।",
+    "calculator_heading": "स्पर्शरेखा अनुपात की गणना करें",
+    "calculator_outputLabel": "तन(ए)",
+    "calculator_fields": [
+      "विपरीत पक्ष ए",
+      "आसन्न पक्ष बी"
+    ],
+    "introHeading": "यह स्पर्शरेखा अनुपात कैलकुलेटर कैसे काम करता है",
+    "intro": [
+      "स्पर्शरेखा प्राथमिक <a href=\"/right-triangle-trig-ratios-calculator/\" class=\"text-primary hover:underline\">ट्रिग अनुपातों</a> का तीसरा है, और यह साइन और कोसाइन से थोड़ा अलग तरीके से काम करता है। एक पैर की तुलना कर्ण से करने के बजाय, स्पर्शरेखा एक पैर की तुलना दूसरे पैर से करती है - विशेष रूप से, विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> की आसन्न भुजा से। यह इसे ढलान और <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a>-ऊंचाई की समस्याओं में विशेष रूप से उपयोगी बनाता है।",
+      "यह <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> a को आसन्न पक्ष b से विभाजित करता है और आपको tan(A) देता है। कैलकुलेटर ऐप निकालने की कोई आवश्यकता नहीं है - बस अपने दोनों पैरों की लंबाई दर्ज करें और उत्तर प्राप्त करें।"
+    ],
+    "calculatorNote": "उपरोक्त इनपुट फ़ील्ड में विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए और आसन्न पक्ष बी दर्ज करें। उपकरण tan(A) = a/b की गणना करता है। दोनों मान सकारात्मक होने चाहिए.",
+    "formula_display": "तन(ए) = ए / बी",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए की स्पर्शरेखा विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> को आसन्न पक्ष से विभाजित करने के बराबर होती है। यह SOH-CAH-TOA का TOA भाग है।",
+      "साइन और कोसाइन के विपरीत, स्पर्शरेखा में कर्ण शामिल नहीं होता है। यह केवल दो पैरों का उपयोग करता है। इसका मतलब यह भी है कि स्पर्शरेखा को 1 पर सीमित नहीं किया गया है - यह न्यून कोणों के लिए कोई भी सकारात्मक संख्या हो सकती है, और जैसे-जैसे <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए 90° तक पहुंचता है, यह बिना किसी सीमा के बढ़ता है।"
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के लिए, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए विपरीत है, पक्ष बी आसन्न है, और पक्ष सी कर्ण है।",
+      "स्पर्शरेखा केवल दो पैरों का उपयोग करती है: विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए और आसन्न पक्ष बी। कर्ण c स्पर्शरेखा सूत्र में प्रकट नहीं होता है।"
+    ],
+    "howToSteps": [
+      "समकोण त्रिभुज में <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए खोजें।",
+      "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए को पहचानें, पैर सीधे <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के पार।",
+      "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> बी को पहचानें, वह पैर जो कर्ण के साथ-साथ <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए बनाता है।",
+      "पहले फ़ील्ड में a का मान दर्ज करें.",
+      "दूसरे फ़ील्ड में b का मान दर्ज करें।",
+      "टैन(ए) पाने के लिए कैलकुलेट पर क्लिक करें।",
+      "परिणाम 1 से कम, 1 के बराबर या 1 से अधिक हो सकता है।"
+    ],
+    "example_intro": "एक समकोण त्रिभुज की विपरीत भुजा <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> a = 3 और आसन्न भुजा b = 4 है।",
+    "example_steps": [
+      "तन(ए) = ए / बी",
+      "तन(ए) = 3/4",
+      "टैन(ए) = 0.75"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए की स्पर्श रेखा 0.75 है। कोण ज्ञात करने के लिए: A = arctan(0.75) ≈ 36.87°.",
+    "whatResultMeans": [
+      "स्पर्शरेखा आपको <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के दृष्टिकोण से त्रिभुज की ढलान बताती है। इसे राइज़-ओवर-रन गणना के रूप में सोचें।",
+      "1 की स्पर्शरेखा का अर्थ है कि विपरीत और आसन्न भुजाएँ बराबर हैं, जो कि <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90 त्रिभुज</a> में होता है। 1 से नीचे के मानों का मतलब है कि विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> आसन्न भुजा से छोटी है - त्रिभुज जितना लंबा है, उससे अधिक चौड़ा है। 1 से ऊपर के मान का मतलब है कि विपरीत भुजा लंबी है - त्रिभुज चौड़ा होने की तुलना में लंबा है।",
+      "व्यावहारिक रूप में, जब आप <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए पर खड़े होते हैं तो स्पर्शरेखा कर्ण रेखा का ढलान होता है।"
+    ],
+    "whenToUse_intro": "यह स्पर्शरेखा अनुपात <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> सबसे अधिक सहायक होता है जब:",
+    "whenToUse_items": [
+      "आपके पास त्रिभुज के दोनों पैर हैं और आप स्पर्श रेखा का अनुपात चाहते हैं।",
+      "आप ढलान, ग्रेड, या पिच समस्याओं (राइज़ ओवर रन) को हल कर रहे हैं।",
+      "आपको उन्नयन या अवनमन का <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ढूंढना होगा।",
+      "आप यह निर्धारित करना चाहते हैं कि रैंप, छत या ढलान कितनी ऊंची है।",
+      "आप कर्ण का उपयोग किए बिना पैर की लंबाई और <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> माप के बीच रूपांतरण कर रहे हैं।"
+    ],
+    "commonMistakes_intro": "इन सामान्य स्पर्शरेखा गलतियों से बचें:",
+    "commonMistakes_items": [
+      "स्पर्शरेखा सूत्र में कर्ण को शामिल करते हुए। स्पर्शरेखा केवल दो पैरों का उपयोग करती है - कोई कर्ण शामिल नहीं है।",
+      "अंश में आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> डालना। सूत्र ए/बी (आसन्न के विपरीत) है, बी/ए नहीं। इसे उलटने पर कोटैंजेंट प्राप्त होता है।",
+      "परिणाम हमेशा 1 से कम होने की उम्मीद करना। साइन और कोसाइन के विपरीत, स्पर्शरेखा कोई भी सकारात्मक संख्या हो सकती है।",
+      "उलझन में है कि कौन सा पैर विपरीत है और कौन सा आसन्न है। उन्हें हमेशा <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के सापेक्ष पहचानें, समकोण से नहीं।",
+      "ग़लत <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> के लिए सूत्र का उपयोग करना। यदि आपने कोण A के बजाय कोण B को लेबल किया है, तो विपरीत और आसन्न भुजाएँ बदल जाती हैं।"
+    ],
+    "relatedLinks": [
+      "समकोण त्रिभुज ट्रिग अनुपात कैलकुलेटर",
+      "साइन अनुपात कैलकुलेटर",
+      "कोसाइन अनुपात कैलकुलेटर",
+      "समकोण त्रिभुज कोण कैलकुलेटर"
+    ],
+    "faqs": [
+      {
+        "question": "स्पर्शरेखा अनुपात सूत्र क्या है?",
+        "answer": "यह tan(A) = a/b है, जहां a विपरीत पक्ष <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> है और b आसन्न पक्ष है। आप विपरीत को आसन्न से विभाजित करते हैं।"
+      },
+      {
+        "question": "क्या tan(A) 1 से अधिक हो सकता है?",
+        "answer": "हाँ। जब विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> आसन्न पक्ष से लंबा होता है, तो स्पर्शरेखा 1 से अधिक होती है। उदाहरण के लिए, tan(60°) ≈ 1.732।"
+      },
+      {
+        "question": "स्पर्शरेखा ढलान से किस प्रकार संबंधित है?",
+        "answer": "स्पर्शरेखा अनिवार्य रूप से कर्ण का ढलान है जब आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> क्षैतिज रन होता है और विपरीत पक्ष ऊर्ध्वाधर उत्थान होता है। टैन(ए) = उठना/भागना।"
+      },
+      {
+        "question": "स्पर्शरेखा कर्ण का उपयोग क्यों नहीं करती?",
+        "answer": "स्पर्शरेखा सीधे दो पैरों के बीच के अनुपात को मापती है। कर्ण की आवश्यकता नहीं है क्योंकि स्पर्शरेखा त्रिभुज के आकार (स्थिरता) का वर्णन करती है, पैमाने का नहीं।"
+      },
+      {
+        "question": "क्या होता है जब a = b?",
+        "answer": "जब दोनों पैर बराबर होते हैं, tan(A) = 1, और <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> A बिल्कुल 45° होता है।"
+      }
+    ]
+  },
+  "cotangent-ratio-calculator": {
+    "slug": "कोटैंजेंट-अनुपात-कैलकुलेटर",
+    "h1": "कोटैंजेंट अनुपात कैलकुलेटर",
+    "headerSummary": "एक समकोण त्रिभुज में आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> बी से विपरीत भुजा ए से खाट (ए) की गणना करें।",
+    "metaTitle": "कोटैंजेंट अनुपात कैलकुलेटर | समकोण त्रिभुज खाट(ए)",
+    "metaDescription": "सूत्र, चरणों और उदाहरणों के साथ आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> बी और विपरीत भुजा ए का उपयोग करके एक समकोण त्रिभुज में खाट (ए) खोजने के लिए इस कोटैंजेंट अनुपात <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"> कैलकुलेटर </a> का उपयोग करें।",
+    "calculator_heading": "कोटैंजेंट अनुपात की गणना करें",
+    "calculator_outputLabel": "खाट(ए)",
+    "calculator_fields": [
+      "आसन्न पक्ष बी",
+      "विपरीत पक्ष ए"
+    ],
+    "introHeading": "यह कोटैंजेंट अनुपात कैलकुलेटर कैसे काम करता है",
+    "intro": [
+      "कोटैंजेंट स्पर्शरेखा का व्युत्क्रम है। जबकि स्पर्शरेखा विपरीत पक्ष <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> को आसन्न पक्ष से विभाजित करती है, कोटैंजेंट उस भिन्न को पलट देती है - यह आसन्न पक्ष को विपरीत पक्ष से विभाजित करती है। यह बुनियादी ज्यामिति कक्षाओं में कम बार दिखाई देता है, लेकिन यह उन्नत त्रिकोणमिति और कैलकुलस में एक महत्वपूर्ण भूमिका निभाता है।",
+      "यह <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> बी और विपरीत पक्ष ए लेता है, फिर cot(A) = b/a लौटाता है। यदि आप स्पर्शरेखा के साथ काम करने के आदी हैं, तो कोटैंजेंट केवल व्युत्क्रम भिन्न है।"
+    ],
+    "calculatorNote": "उपरोक्त फ़ील्ड में आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> बी और विपरीत पक्ष ए दर्ज करें। <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> खाट(ए) = बी/ए लौटाता है। दोनों मान सकारात्मक होने चाहिए.",
+    "formula_display": "खाट(ए) = बी/ए",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए का कोटैंजेंट आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> को विपरीत पक्ष से विभाजित करने के बराबर होता है। यह स्पर्शरेखा का व्युत्क्रम है: cot(A) = 1 / tan(A)।",
+      "स्पर्शरेखा की तरह, कोटैंजेंट समकोण त्रिभुज के केवल दो पैरों का उपयोग करता है। कर्ण शामिल नहीं है. कोटैंजेंट न्यून कोणों के लिए कोई भी धनात्मक मान ले सकता है।"
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के लिए, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए विपरीत है, पक्ष बी आसन्न है, और पक्ष सी कर्ण है।",
+      "कोटैंजेंट आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> बी (<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के बगल वाला पैर) को अंश के रूप में और विपरीत पक्ष ए (कोण ए के पार) को हर के रूप में उपयोग करता है। कर्ण c का प्रयोग नहीं किया गया है।"
+    ],
+    "howToSteps": [
+      "अपने समकोण त्रिभुज में <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए को पहचानें।",
+      "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> बी, आसन्न पैर - <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के बगल वाला और समकोण खोजें।",
+      "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए, विपरीत पैर खोजें - जो कि <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के पार है।",
+      "पहले इनपुट फ़ील्ड में b दर्ज करें।",
+      "दूसरे इनपुट फ़ील्ड में a दर्ज करें।",
+      "गणना करें पर क्लिक करें.",
+      "परिणाम cot(A) है, जो कोई भी धनात्मक संख्या हो सकती है।"
+    ],
+    "example_intro": "एक समकोण त्रिभुज की आसन्न भुजा <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> b = 4 और विपरीत भुजा a = 3 है।",
+    "example_steps": [
+      "खाट(ए) = बी/ए",
+      "खाट(ए) = 4/3",
+      "खाट(ए) ≈ 1.3333"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए का कोटैंजेंट लगभग 1.3333 है। आप इसे सत्यापित कर सकते हैं: tan(A) = 3/4 = 0.75, और 1/0.75 = 1.3333।",
+    "whatResultMeans": [
+      "कोटैंजेंट आपको बताता है कि आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> कितनी बार विपरीत पक्ष के सापेक्ष फिट बैठता है। यह स्टीपनेस अनुपात का रन-ओवर-राइज़ संस्करण है।",
+      "1 के कोटैंजेंट का मतलब है कि दोनों पैर बराबर हैं (एक 45° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a>)। 1 से अधिक मान का मतलब है कि आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> विपरीत भुजा से लंबी है - त्रिभुज चौड़ा है और कोण छोटा है। 1 से कम मान का मतलब है कि विपरीत भुजा लंबी है - कोण बड़ा है और त्रिभुज अधिक तीव्र है।",
+      "चूँकि कोटैंजेंट स्पर्शरेखा का व्युत्क्रम है, आप हमेशा उनके बीच परिवर्तित कर सकते हैं: cot(A) = 1 / tan(A) और tan(A) = 1 / cot(A)।"
+    ],
+    "whenToUse_intro": "इस कोटैंजेंट अनुपात <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> को चुनें जब:",
+    "whenToUse_items": [
+      "आपको मैन्युअल रूप से 1 / tan(A) की गणना किए बिना स्पर्शरेखा के व्युत्क्रम की आवश्यकता है।",
+      "आप ऐसे सूत्रों के साथ काम कर रहे हैं जिनमें विशेष रूप से कोटैंजेंट की आवश्यकता होती है, जैसे कि कुछ कैलकुलस पहचान।",
+      "आप राइज-ओवर-रन के बजाय रन-ओवर-राइज के संदर्भ में सोचना पसंद करते हैं।",
+      "आप सर्वेक्षण, निर्माण, या त्रिकोणमितीय प्रमाणों में समस्याओं का समाधान कर रहे हैं।"
+    ],
+    "commonMistakes_intro": "इन कोटैंजेंट खतरों पर नजर रखें:",
+    "commonMistakes_items": [
+      "b/a की जगह a/b लिखना. कोटैंजेंट आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> को शीर्ष पर रखता है, विपरीत पक्ष को नहीं। उन्हें स्वैप करने से आपको स्पर्शरेखा मिलती है।",
+      "कोसाइन के साथ कोटैंजेंट को भ्रमित करना। कोटैंजेंट बी/ए (विपरीत पर आसन्न) है। कोसाइन b/c (कर्ण के समीपस्थ) है। वे अलग-अलग अनुपात हैं.",
+      "गणना में कर्ण का उपयोग करना। कोटैंजेंट में केवल दो पैर शामिल होते हैं।",
+      "इसे भूलना स्पर्शरेखा का व्युत्क्रम है। यदि आप पहले से ही tan(A) जानते हैं, तो cot(A) प्राप्त करने के लिए बस 1 / tan(A) लें।",
+      "मिश्रण करें कि कौन सी <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> आसन्न है और कौन सी विपरीत है। हमेशा <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के सापेक्ष भुजाओं की पहचान करें।"
+    ],
+    "relatedLinks": [
+      "समकोण त्रिभुज ट्रिग अनुपात कैलकुलेटर",
+      "स्पर्शरेखा अनुपात कैलकुलेटर",
+      "साइन अनुपात कैलकुलेटर",
+      "कोसाइन अनुपात कैलकुलेटर"
+    ],
+    "faqs": [
+      {
+        "question": "समकोण त्रिभुज के लिए कोटैंजेंट सूत्र क्या है?",
+        "answer": "यह cot(A) = b/a है, जहां b आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> है और a, <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> A का विपरीत पक्ष है। यह स्पर्शरेखा भिन्न का विपरीत है।"
+      },
+      {
+        "question": "कोटैंजेंट स्पर्शरेखा से किस प्रकार संबंधित है?",
+        "answer": "कोटैंजेंट स्पर्शरेखा का व्युत्क्रम है। यदि tan(A) = 0.75, तो cot(A) = 1 / 0.75 ≈ 1.3333।"
+      },
+      {
+        "question": "मैं स्पर्शरेखा के स्थान पर कोटैंजेंट का उपयोग कब करूंगा?",
+        "answer": "जब किसी सूत्र को विशेष रूप से इसकी आवश्यकता होती है, या जब आप सीधे आसन्न-से-विपरीत अनुपात चाहते हैं तो कोटैंजेंट का उपयोग करें। कई कलन और भौतिकी संदर्भों में, कोटैंजेंट पहचान और व्युत्पन्न सूत्रों में प्रकट होता है।"
+      },
+      {
+        "question": "क्या किसी समकोण त्रिभुज में cot(A) शून्य के बराबर हो सकता है?",
+        "answer": "केवल न्यूनकोण वाले समकोण त्रिभुज में, cot(A) सदैव धनात्मक होता है। जैसे ही <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए 90° की ओर बढ़ता है, कोटैंजेंट शून्य की ओर बढ़ता है, लेकिन 90° का कोण स्वयं समकोण है, कोई न्यूनकोण नहीं जिसे आप मापेंगे।"
+      },
+      {
+        "question": "क्या कोटैंजेंट 1 को स्पर्शरेखा से विभाजित करने के समान है?",
+        "answer": "हाँ। खाट(ए) = 1 / टैन(ए) = बी / ए। दोनों भाव एक ही परिणाम देते हैं."
+      }
+    ]
+  },
+  "secant-ratio-calculator": {
+    "slug": "छेदक-अनुपात-कैलकुलेटर",
+    "h1": "सेकेंट अनुपात कैलकुलेटर",
+    "headerSummary": "कर्ण c की आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> b, कोज्या के व्युत्क्रम से तुलना करके sec(A) ज्ञात कीजिए।",
+    "metaTitle": "सेकेंट अनुपात कैलकुलेटर | समकोण त्रिभुज sec(A)",
+    "metaDescription": "सूत्र, चरणों और उदाहरणों के साथ कर्ण सी और आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> बी का उपयोग करके एक समकोण त्रिभुज में सेकंड (ए) खोजने के लिए इस छेदक अनुपात <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"> कैलकुलेटर </a> का उपयोग करें।",
+    "calculator_heading": "सेकेंट अनुपात की गणना करें",
+    "calculator_outputLabel": "सेकंड(ए)",
+    "calculator_fields": [
+      "कर्ण सी",
+      "आसन्न पक्ष बी"
+    ],
+    "introHeading": "यह सेकेंट रेशियो कैलकुलेटर कैसे काम करता है",
+    "intro": [
+      "सेकेंट कोसाइन का व्युत्क्रम है। जहां कोज्या आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> को कर्ण से विभाजित करती है, छेदक रेखा उसे पलट देती है - यह कर्ण को आसन्न भुजा से विभाजित करती है। परिणाम हमेशा 1 से बड़ा या उसके बराबर होता है क्योंकि एक समकोण त्रिभुज में कर्ण हमेशा सबसे लंबी भुजा होती है।",
+      "यह <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> दो इनपुट लेता है - कर्ण सी और आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> बी - और सेकंड(ए) लौटाता है। यह हाथ से विभाजन किए बिना या पहले कोसाइन की गणना किए बिना इस पारस्परिक अनुपात को प्राप्त करने का एक त्वरित तरीका है।"
+    ],
+    "calculatorNote": "उपरोक्त फ़ील्ड में कर्ण c और आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> b दर्ज करें। <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> सेकंड(ए) = सी/बी की गणना करता है। दोनों मान सकारात्मक होने चाहिए, और c, b से बड़ा होना चाहिए।",
+    "formula_display": "सेकंड(ए) = सी/बी",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए का छेदक, आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a> से विभाजित कर्ण के बराबर होता है। यह कोज्या का व्युत्क्रम है: sec(A) = 1 / cos(A)।",
+      "चूँकि एक समकोण त्रिभुज में कर्ण हमेशा आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> से अधिक लंबा होता है, सेकंड (ए) हमेशा 1 से बड़ा होता है। जैसे-जैसे <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"> कोण </a> ए बड़ा होता है, आसन्न पक्ष कर्ण के सापेक्ष सिकुड़ता है, इसलिए छेदक बढ़ता है।"
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के लिए, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए विपरीत है, पक्ष बी आसन्न है, और पक्ष सी कर्ण है।",
+      "सेकेंट कर्ण c को अंश के रूप में और आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> b को हर के रूप में उपयोग करता है। विपरीत पक्ष ए सेकेंड गणना का हिस्सा नहीं है।"
+    ],
+    "howToSteps": [
+      "अपने समकोण त्रिभुज में <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए को पहचानें।",
+      "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> सी, कर्ण - सबसे लंबी भुजा, दाएं <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> के पार खोजें।",
+      "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> बी, आसन्न पैर खोजें - वह पक्ष जो <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए और समकोण दोनों को छूता है।",
+      "पहले इनपुट फ़ील्ड में c दर्ज करें।",
+      "दूसरे इनपुट फ़ील्ड में b दर्ज करें।",
+      "गणना करें पर क्लिक करें.",
+      "परिणाम sec(A) है, जो हमेशा 1 से बड़ा या उसके बराबर होता है।"
+    ],
+    "example_intro": "एक समकोण त्रिभुज में कर्ण c = 5 और आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> b = 4 है।",
+    "example_steps": [
+      "सेकंड(ए) = सी/बी",
+      "सेकंड(ए) = 5/4",
+      "सेकंड(ए) = 1.25"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए का छेदक 1.25 है। सत्यापित करने के लिए: cos(A) = 4/5 = 0.8, और 1/0.8 = 1.25।",
+    "whatResultMeans": [
+      "सेकेंट आपको बताता है कि आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> की तुलना में कर्ण कितनी गुना लंबा है। 1.25 के एक छेदक का अर्थ है कि कर्ण आसन्न भुजा से 25% लंबा है।",
+      "एक समकोण त्रिभुज में छेदक का न्यूनतम मान 1 से थोड़ा ऊपर होता है, जो तब होता है जब <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"> कोण </a> ए बहुत छोटा होता है और आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> लगभग कर्ण जितनी लंबी होती है। जैसे-जैसे कोण A बढ़ता है, आसन्न भुजा कर्ण के सापेक्ष छोटी हो जाती है, और छेदक बड़ा हो जाता है।",
+      "जब भी आपको आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> से कर्ण तक स्केल करने की आवश्यकता होती है, या जब कोई सूत्र 1 / कॉस(ए) की मांग करता है, तो सेकेंट उपयोगी होता है।"
+    ],
+    "whenToUse_intro": "यह सेकेंट अनुपात <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> सही विकल्प है जब:",
+    "whenToUse_items": [
+      "एक सूत्र के लिए सेकेंट या 1/cos(A) की आवश्यकता होती है और आप सीधे मान चाहते हैं।",
+      "आपको यह पता लगाना होगा कि आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> की तुलना में कर्ण कितना लंबा है।",
+      "आप कैलकुलस समस्याओं के साथ काम कर रहे हैं जिनमें डेरिवेटिव या इंटीग्रल में सेकेंट शामिल है।",
+      "आप संरचनात्मक गणनाओं की जाँच कर रहे हैं जहाँ कर्ण वास्तविक लंबाई का प्रतिनिधित्व करता है और आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> क्षैतिज <a href=\"/right-triangle-projection-calculator/\" class=\"text-primary hover:underline\">प्रक्षेपण</a> का प्रतिनिधित्व करता है।"
+    ],
+    "commonMistakes_intro": "ये गुप्त त्रुटियाँ विद्यार्थियों को सबसे अधिक परेशान करती हैं:",
+    "commonMistakes_items": [
+      "कोसाइन के साथ सेकेंट को भ्रमित करना। कोसाइन b/c (कर्ण के समीपस्थ) है। छेदक व्युत्क्रम है: c/b (आसन्न पर कर्ण)।",
+      "1 से कम परिणाम प्राप्त करना। यदि आपका उत्तर 1 से कम है, तो संभवतः आपने भिन्न को उलट दिया है। एक वैध समकोण त्रिभुज में, sec(A) हमेशा 1 से बड़ा या उसके बराबर होता है।",
+      "आसन्न भुजा के बजाय विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> का उपयोग करना। छेदक कर्ण को आसन्न भुजा से जोड़ता है, विपरीत भुजा से नहीं।",
+      "सेकेंट और कोसेकेंट को मिलाना. सेकेंट कोसाइन का व्युत्क्रम है। कोसेकेंट साइन का व्युत्क्रम है। वे विभिन्न पक्षों का उपयोग करते हैं.",
+      "b को c से बड़ा दर्ज करना। कर्ण हमेशा आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> से लंबा होना चाहिए।"
+    ],
+    "relatedLinks": [
+      "समकोण त्रिभुज ट्रिग अनुपात कैलकुलेटर",
+      "कोसाइन अनुपात कैलकुलेटर",
+      "सहसंयोजक अनुपात कैलकुलेटर",
+      "कोटैंजेंट अनुपात कैलकुलेटर"
+    ],
+    "faqs": [
+      {
+        "question": "एक समकोण त्रिभुज में छेदक अनुपात क्या होता है?",
+        "answer": "सेकेंट को sec(A) = c/b के रूप में परिभाषित किया गया है, जहां c कर्ण है और b आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> है। यह कोज्या का व्युत्क्रम है।"
+      },
+      {
+        "question": "सेकेंट हमेशा 1 से बड़ा क्यों होता है?",
+        "answer": "क्योंकि एक समकोण त्रिभुज में कर्ण c हमेशा सबसे लंबी <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा</a> होती है। बड़ी संख्या (सी) को छोटी संख्या (बी) से विभाजित करने पर हमेशा 1 से अधिक परिणाम मिलता है।"
+      },
+      {
+        "question": "मैं सेकेंड और कोसाइन के बीच कैसे परिवर्तित करूं?",
+        "answer": "सेकंड(ए) = 1 / कॉस(ए), और कॉस(ए) = 1 / सेकंड(ए)। यदि आप एक को जानते हैं, तो आप व्युत्क्रम लेकर दूसरे को पा सकते हैं।"
+      },
+      {
+        "question": "सेकंड(45°) क्या है?",
+        "answer": "<a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90 त्रिभुज</a> में, कर्ण पैर का √2 गुना है। तो सेकंड(45°) = √2 ≈ 1.4142।"
+      },
+      {
+        "question": "क्या वास्तविक दुनिया के अनुप्रयोगों में सेकेंट का उपयोग किया जाता है?",
+        "answer": "हाँ। सेकेंट भौतिकी सूत्रों, इंजीनियरिंग गणनाओं और कैलकुलस में दिखाई देता है। इसका उपयोग तब किया जाता है जब आपको किसी झुकाव के साथ क्षैतिज दूरी को वास्तविक पथ की लंबाई तक मापने की आवश्यकता होती है।"
+      }
+    ]
+  },
+  "cosecant-ratio-calculator": {
+    "slug": "सहसंयोजक-अनुपात-कैलकुलेटर",
+    "h1": "सहसंयोजक अनुपात कैलकुलेटर",
+    "headerSummary": "कर्ण c और विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> a, ज्या के व्युत्क्रम से csc(A) की गणना करें।",
+    "metaTitle": "सहसंयोजक अनुपात कैलक्यूलेटर | समकोण त्रिभुज सीएससी(ए)",
+    "metaDescription": "सूत्र, चरणों और उदाहरणों के साथ कर्ण सी और विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> ए का उपयोग करके एक समकोण त्रिभुज में सीएससी (ए) खोजने के लिए इस सहसंयोजक अनुपात <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"> कैलकुलेटर </a> का उपयोग करें।",
+    "calculator_heading": "सहसंयोजक अनुपात की गणना करें",
+    "calculator_outputLabel": "सीएससी(ए)",
+    "calculator_fields": [
+      "कर्ण सी",
+      "विपरीत पक्ष ए"
+    ],
+    "introHeading": "यह कोसेकेंट अनुपात कैलकुलेटर कैसे काम करता है",
+    "intro": [
+      "कोसेकेंट साइन का व्युत्क्रम है। यह कर्ण को विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा</a> से विभाजित करता है, जिससे आपको एक अनुपात मिलता है जो एक समकोण त्रिभुज में हमेशा 1 से अधिक होता है। हो सकता है कि आप इसे बुनियादी पाठ्यक्रमों में साइन या कोसाइन जितनी बार न देखें, लेकिन अधिक उन्नत गणित और कुछ भौतिकी अनुप्रयोगों में यह आवश्यक है।",
+      "यह <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> इसे सरल बनाता है। कर्ण c और विपरीत पक्ष <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> a दर्ज करें, और यह तुरंत csc(A) लौटाता है। पहले ज्या की गणना करने और फिर भिन्न को पलटने की आवश्यकता नहीं है।"
+    ],
+    "calculatorNote": "उपरोक्त फ़ील्ड में कर्ण c और विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> a दर्ज करें। <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> सीएससी(ए) = सी/ए की गणना करता है। दोनों मान सकारात्मक होने चाहिए, और c, a से बड़ा होना चाहिए।",
+    "formula_display": "सीएससी(ए) = सी/ए",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए का सहसंयोजक विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> से विभाजित कर्ण के बराबर होता है। यह ज्या का व्युत्क्रम है: सीएससी(ए) = 1 / पाप(ए)।",
+      "कर्ण हमेशा विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> से लंबा होता है, इसलिए सीएससी (ए) न्यून कोणों के लिए हमेशा 1 से अधिक मान उत्पन्न करता है। जैसे-जैसे <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए घटता है, विपरीत भुजा कर्ण के सापेक्ष छोटी हो जाती है, और सहसंयोजक बढ़ जाता है।"
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के लिए, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए विपरीत है, पक्ष बी आसन्न है, और पक्ष सी कर्ण है।",
+      "कोसेकेंट कर्ण c को अंश के रूप में और विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> a को हर के रूप में उपयोग करता है। आसन्न भुजा b सहसंयोजक सूत्र में कोई भूमिका नहीं निभाती है।"
+    ],
+    "howToSteps": [
+      "अपने समकोण त्रिभुज में <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए को पहचानें।",
+      "कर्ण c का पता लगाएं - <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> दाएं <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> के विपरीत और सबसे लंबी भुजा।",
+      "विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए का पता लगाएं - पैर सीधे <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के पार।",
+      "पहले इनपुट फ़ील्ड में c टाइप करें।",
+      "दूसरे इनपुट फ़ील्ड में a टाइप करें।",
+      "गणना करें पर क्लिक करें.",
+      "परिणाम सीएससी(ए) है, हमेशा 1 से बड़ा।"
+    ],
+    "example_intro": "एक समकोण त्रिभुज का कर्ण c = 5 और विपरीत पक्ष <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> a = 3 है।",
+    "example_steps": [
+      "सीएससी(ए) = सी/ए",
+      "सीएससी(ए) = 5/3",
+      "सीएससी(ए) ≈ 1.6667"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए का सहसंयोजक लगभग 1.6667 है। सत्यापन: पाप(ए) = 3/5 = 0.6, और 1/0.6 ≈ 1.6667।",
+    "whatResultMeans": [
+      "कोसेकैंट आपको बताता है कि विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> की तुलना में कर्ण कितनी गुना लंबा है। 1.6667 के सहसंयोजक का अर्थ है कि कर्ण विपरीत भुजा से लगभग 67% लंबा है।",
+      "जब <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए बड़ा होता है (90° के करीब), विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> लगभग कर्ण जितना लंबा होता है, इसलिए सीएससी(ए) 1 के करीब होता है। जब कोण ए छोटा होता है, तो विपरीत पक्ष बहुत छोटा होता है, और सहसंयोजक बड़ा होता है।",
+      "इसे इस तरह से सोचें: यदि आप विपरीत पक्ष <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> जानते हैं और कर्ण ज्ञात करना चाहते हैं, तो विपरीत पक्ष को सीएससी(ए) से गुणा करें। इससे आपको c = a × csc(A) प्राप्त होता है।"
+    ],
+    "whenToUse_intro": "इस सहसंयोजक अनुपात तक पहुंचें <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> जब:",
+    "whenToUse_items": [
+      "आपको पहले पाप(ए) की गणना किए बिना साइन के व्युत्क्रम की आवश्यकता है।",
+      "एक सूत्र विशेष रूप से कोसेकेंट की मांग करता है, जो कुछ निश्चित त्रिकोणमितीय पहचानों में प्रकट होता है।",
+      "आप विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> को पूर्ण कर्ण लंबाई तक माप रहे हैं।",
+      "आप भौतिकी या इंजीनियरिंग समस्याओं पर काम कर रहे हैं जिसमें बल, तरंग फ़ंक्शन, या दोलन सूत्र शामिल हैं जो कोसेकेंट का उपयोग करते हैं।"
+    ],
+    "commonMistakes_intro": "इन सहसंयोजक त्रुटियों से सावधान रहें:",
+    "commonMistakes_items": [
+      "साइन के साथ कोसेकेंट को भ्रमित करना। ज्या a/c (कर्ण के विपरीत) है। कोसेकेंट व्युत्क्रम है: c/a (विपरीत पर कर्ण)।",
+      "सेकेंट के साथ कोसेकेंट को भ्रमित करना। कोसेकेंट विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> (साइन का व्युत्क्रम) पर आधारित है। सेकेंट आसन्न पक्ष (कोसाइन के व्युत्क्रम) पर आधारित है। वे अलग-अलग पैरों का उपयोग करते हैं।",
+      "1 से कम परिणाम प्राप्त करना। यदि आपका उत्तर 1 से नीचे है, तो हो सकता है कि आपने मान गलत क्रम में दर्ज किया हो। सीएससी(ए) हमेशा 1 से बड़ा होता है।",
+      "विपरीत पक्ष के बजाय आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> का उपयोग करना। कोसेकेंट कर्ण को केवल विपरीत भुजा से जोड़ता है।",
+      "कोसेकेंट और कोसाइन के नाम से संबंधित होने की उम्मीद है। सह-उपसर्ग के बावजूद, कोसेकेंट साइन का व्युत्क्रम है, कोसाइन नहीं।"
+    ],
+    "relatedLinks": [
+      "समकोण त्रिभुज ट्रिग अनुपात कैलकुलेटर",
+      "साइन अनुपात कैलकुलेटर",
+      "सेकेंट अनुपात कैलकुलेटर",
+      "कोटैंजेंट अनुपात कैलकुलेटर"
+    ],
+    "faqs": [
+      {
+        "question": "समकोण त्रिभुज में सहसंयोजक सूत्र क्या होता है?",
+        "answer": "यह csc(A) = c/a है, जहां c कर्ण है और a विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> है। कोसेकेंट साइन का व्युत्क्रम है।"
+      },
+      {
+        "question": "कोसेकेंट साइन से किस प्रकार संबंधित है?",
+        "answer": "सीएससी(ए) = 1 / पाप(ए)। यदि पाप(ए) = 0.6, तो सीएससी(ए) = 1 / 0.6 ≈ 1.6667।"
+      },
+      {
+        "question": "कोसेकेंट हमेशा 1 से बड़ा क्यों होता है?",
+        "answer": "क्योंकि एक समकोण त्रिभुज में कर्ण सदैव विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a> से बड़ा होता है। भिन्न c/a सदैव 1 से अधिक होता है।"
+      },
+      {
+        "question": "सीएससी(30°) क्या है?",
+        "answer": "<a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90 त्रिभुज</a> में, पाप(30°) = 0.5, इसलिए सीएससी(30°) = 1 / 0.5 = 2। कर्ण विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a> से ठीक दोगुना है।"
+      },
+      {
+        "question": "मैं साइन के स्थान पर कोसेकैंट का उपयोग कब करूँगा?",
+        "answer": "जब किसी सूत्र को सीधे इसकी आवश्यकता होती है, या जब आप विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> से कर्ण ज्ञात करना चाहते हैं, तो सहसंयोजक का उपयोग करें: c = a × csc(A)। यह ज्या से विभाजित करने के चरण को बचाता है।"
+      }
+    ]
+  }
+}

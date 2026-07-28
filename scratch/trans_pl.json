@@ -1,0 +1,557 @@
+{
+  "sine-ratio-calculator": {
+    "slug": "sine-ratio-calculator",
+    "h1": "Sine Ratio Calculator",
+    "headerSummary": "Find sin(A) from the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a and hypotenuse c in a right triangle.",
+    "metaTitle": "Sine Ratio Calculator | Right Triangle sin(A)",
+    "metaDescription": "Use this sine ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> to find sin(A) in a right triangle using opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a and hypotenuse c with formula, steps, and examples.",
+    "calculator_heading": "Calculate Sine Ratio",
+    "calculator_outputLabel": "sin(A)",
+    "calculator_fields": [
+      "Opposite side a",
+      "Hypotenuse c"
+    ],
+    "introHeading": "How This Sine Ratio Calculator Works",
+    "intro": [
+      "The sine ratio is one of the first trigonometric functions you learn in geometry. It connects a specific <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> in a right triangle to two of its sides — the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> and the hypotenuse. If you know these two <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">measurements</a>, this calculator gives you sin(A) instantly.",
+      "Whether you are working through a homework problem, checking an exam-style answer, or solving a real measurement task, this tool removes the manual division step. Enter your values and get the result with the formula shown."
+    ],
+    "calculatorNote": "Enter the length of the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a and the hypotenuse c into the fields above. The <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> divides a by c and returns sin(A). Both values must be positive, and c must be larger than a.",
+    "formula_display": "sin(A) = a / c",
+    "formula_paragraphs": [
+      "The sine of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A equals the length of the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> divided by the length of the hypotenuse. This is often remembered with the SOH part of SOH-CAH-TOA.",
+      "In a right triangle, the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is the one directly across from <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A. The hypotenuse is always the longest side — the one facing the 90° angle. Since the hypotenuse is always longer than any leg, sin(A) always falls between 0 and 1 for acute angles."
+    ],
+    "diagramExplanation": [
+      "For <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a is opposite, side b is adjacent, and side c is the hypotenuse.",
+      "The sine ratio only uses two of these three sides: the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a (directly across from <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A) and the hypotenuse c (the longest side, opposite the right angle at B)."
+    ],
+    "howToSteps": [
+      "Identify <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A in your right triangle. It must be one of the two acute angles, not the 90° angle.",
+      "Find the <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> opposite <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A. This is side a.",
+      "Find the hypotenuse. This is <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> c, the longest side, opposite the right <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a>.",
+      "Enter the value of a in the first input field.",
+      "Enter the value of c in the second input field.",
+      "Click Calculate to see sin(A).",
+      "Review the result. It should be a decimal between 0 and 1."
+    ],
+    "example_intro": "Suppose you have a right triangle where the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a = 3 and the hypotenuse c = 5.",
+    "example_steps": [
+      "sin(A) = a / c",
+      "sin(A) = 3 / 5",
+      "sin(A) = 0.6"
+    ],
+    "example_conclusion": "The sine of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is 0.6. This means the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is 60% of the hypotenuse length. If you need the actual angle, take the inverse sine: A = arcsin(0.6) ≈ 36.87°.",
+    "whatResultMeans": [
+      "The output is a unitless ratio. It tells you how the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> compares to the hypotenuse in size. A result of 0.5 means the opposite side is exactly half the hypotenuse — which happens in a <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90 triangle</a> where A = 30°.",
+      "Small values (close to 0) mean <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is small and the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is short relative to the hypotenuse. Values closer to 1 mean angle A is large (approaching 90°) and the opposite side is nearly as long as the hypotenuse.",
+      "Since sin(A) is a ratio of two lengths, it has no units. Whether your triangle is measured in centimeters, inches, or meters, the sine value stays the same as long as both sides use the same unit."
+    ],
+    "whenToUse_intro": "Use this sine ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> in any of these situations:",
+    "whenToUse_items": [
+      "You know the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> and hypotenuse and want the sine value.",
+      "You are preparing to find <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A using the inverse sine function.",
+      "You need to verify a textbook answer or check your own trigonometry work.",
+      "You are solving physics problems involving vertical components, like the height of a ramp or the vertical force on an incline.",
+      "You are breaking a vector into its vertical and horizontal parts."
+    ],
+    "commonMistakes_intro": "Watch out for these common errors when calculating sine:",
+    "commonMistakes_items": [
+      "Using the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> instead of the opposite side. Sine uses the side across from <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A, not the side next to it.",
+      "Swapping a and c in the formula. The opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> goes in the numerator, and the hypotenuse goes in the denominator. Writing c / a gives the cosecant, not the sine.",
+      "Using sides measured in different units. If a is in centimeters and c is in inches, the ratio is meaningless. Convert to the same unit first.",
+      "Forgetting that c must be greater than a. In a valid right triangle, the hypotenuse is always the longest <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>.",
+      "Entering the right <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> (90°) as angle A. Sine applies to the acute angles only. The 90° angle is at vertex B."
+    ],
+    "relatedLinks": [
+      "Right Triangle Trig Ratios Calculator",
+      "Cosine Ratio Calculator",
+      "Tangent Ratio Calculator",
+      "Right Triangle Angle Calculator"
+    ],
+    "faqs": [
+      {
+        "question": "What is the formula for sin(A) in a right triangle?",
+        "answer": "Wzór to sin(A) = a / c, gdzie a to <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> przeciwny <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąt</a> A i c to przeciwprostokątna. Dzielisz przeciwną stronę przez przeciwprostokątną."
+      },
+      {
+        "question": "Dlaczego sin(A) w trójkącie prostokątnym jest zawsze mniejszy od 1?",
+        "answer": "Ponieważ przeciwprostokątna c jest zawsze najdłuższym <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bokiem</a>. Ponieważ a jest krótsze niż c, ułamek a/c jest zawsze mniejszy niż 1."
+      },
+      {
+        "question": "Czy mogę użyć tego kalkulatora, aby znaleźć sam kąt?",
+        "answer": "Ten <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> podaje wartość sinus. Aby znaleźć <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąt</a>, użyj odwrotnej funkcji sinus: A = arcsin(sin(A)). Możesz to zrobić za pomocą naszego kalkulatora kąta trójkąta prostokątnego."
+      },
+      {
+        "question": "Co oznacza wynik sin(A) wynoszący 0,5?",
+        "answer": "Oznacza to, że przeciwna <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">strona</a> ma dokładnie połowę długości przeciwprostokątnej. Odpowiada to <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kątowi</a> A wynoszącemu 30°."
+      },
+      {
+        "question": "Czy muszę wprowadzić sąsiedni bok, aby obliczyć sinus?",
+        "answer": "Nie. Sinus wykorzystuje tylko przeciwną <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">stronę</a> a i przeciwprostokątną c. Sąsiednia strona b nie jest częścią wzoru sinusoidalnego."
+      }
+    ]
+  },
+  "cosine-ratio-calculator": {
+    "slug": "kalkulator współczynnika cosinus",
+    "h1": "Kalkulator współczynnika cosinusa",
+    "headerSummary": "Oblicz cos(A) z sąsiedniej <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">boku</a>b i przeciwprostokątnej c z wyraźnymi krokami trójkąta prostokątnego.",
+    "metaTitle": "Kalkulator współczynnika cosinusa | Trójkąt prostokątny cos(A)",
+    "metaDescription": "Użyj tego współczynnika cosinus <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a>, aby znaleźć cos(A) w trójkącie prostokątnym, używając sąsiedniego <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">boku</a>b i przeciwprostokątnej c wraz ze wzorem, krokami i przykładami.",
+    "calculator_heading": "Oblicz współczynnik cosinus",
+    "calculator_outputLabel": "cos(A)",
+    "calculator_fields": [
+      "Sąsiednia strona b",
+      "Przeciwprostokątna c"
+    ],
+    "introHeading": "Jak działa ten kalkulator współczynnika cosinusa",
+    "intro": [
+      "Współczynnik cosinus mierzy porównanie sąsiedniego <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">boku</a> trójkąta prostokątnego z przeciwprostokątną. Jest to druga część SOH-CAH-TOA i jedna z najczęściej używanych funkcji trygonometrycznych w geometrii, fizyce i inżynierii.",
+      "Ten <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> pobiera dwa dane wejściowe — sąsiednią <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> b i przeciwprostokątną c — i zwraca cos(A). Obsługuje dzielenie za Ciebie i natychmiast pokazuje wynik, dzięki czemu możesz skupić się na zrozumieniu geometrii zamiast na arytmetyce."
+    ],
+    "calculatorNote": "Wpisz sąsiadującą <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a>b i przeciwprostokątną c w powyższych polach wejściowych. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Kalkulator</a> oblicza cos(A) = b / c. Obie wartości muszą być dodatnie, a c musi być większe niż b.",
+    "formula_display": "cos(A) = b/c",
+    "formula_paragraphs": [
+      "Cosinus <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> A równa się sąsiedniemu <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bokowi</a> podzielonemu przez przeciwprostokątną. To jest CAH w SOH-CAH-TOA.",
+      "Sąsiednia <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> b to noga, która styka się z <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kątem</a> A i kątem prostym. Przeciwprostokątna c leży naprzeciwko kąta prostego i jest zawsze najdłuższym bokiem. Ponieważ przeciwprostokątna jest dłuższa niż jakakolwiek noga, cos(A) zawsze daje wartość od 0 do 1 dla kątów ostrych."
+    ],
+    "diagramExplanation": [
+      "Dla <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> a jest przeciwny, bok b sąsiaduje, a bok c jest przeciwprostokątną.",
+      "Stosunek cosinus wykorzystuje sąsiednią <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> b (nogę tworzącą <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąt</a> A wraz z przeciwprostokątną) i przeciwprostokątną c. Strona a nie jest częścią obliczeń cosinusa."
+    ],
+    "howToSteps": [
+      "Znajdź <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąt</a> A w prawym trójkącie. Jest to jeden z dwóch kątów ostrych.",
+      "Zidentyfikuj sąsiednią <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">stronę</a>. To jest bok b — noga tworząca <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąt</a> A wraz z przeciwprostokątną.",
+      "Wskaż przeciwprostokątną c, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">stronę</a> przeciwną do kąta 90° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a>.",
+      "Wpisz wartość b w pierwszym polu.",
+      "Wpisz wartość c w drugim polu.",
+      "Naciśnij Oblicz, aby zobaczyć cos(A).",
+      "Sprawdź, czy wynik mieści się w przedziale od 0 do 1."
+    ],
+    "example_intro": "Trójkąt prostokątny ma sąsiadujący <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> b = 4 i przeciwprostokątną c = 5.",
+    "example_steps": [
+      "cos(A) = b/c",
+      "cos(A) = 4/5",
+      "cos(A) = 0,8"
+    ],
+    "example_conclusion": "Cosinus <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> A wynosi 0,8. Sąsiednia <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> stanowi 80% długości przeciwprostokątnej. Aby znaleźć kąt: A = arccos(0,8) ≈ 36,87°.",
+    "whatResultMeans": [
+      "Cosinus informuje, jaka część długości przeciwprostokątnej jest pokryta przez sąsiedni <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a>. Cosinus równy 0,8 oznacza, że ​​sąsiedni bok rozciąga się o 80% w stosunku do przeciwprostokątnej.",
+      "Gdy <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąt</a> A jest mały, sąsiedni <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> jest prawie tak długi jak przeciwprostokątna, więc cos(A) jest bliski 1. Kiedy kąt A jest duży (blisko 90°), sąsiedni bok kurczy się względem przeciwprostokątnej, przesuwając cos(A) w kierunku 0.",
+      "Wynik jest bezwymiarowy. Nie ma znaczenia, czy Twoje <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">pomiary</a> są wyrażone w stopach, metrach czy jakiejkolwiek innej jednostce — cosinus to czysty stosunek."
+    ],
+    "whenToUse_intro": "Sięgnij po ten współczynnik cosinus <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> gdy:",
+    "whenToUse_items": [
+      "Znasz sąsiednią <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> i przeciwprostokątną i potrzebujesz wartości cosinusa.",
+      "Znajdujesz poziomą składową wektora siły, prędkości lub przemieszczenia.",
+      "Chcesz zweryfikować wartość trygonometryczną na podstawie podręcznika lub zestawu problemów.",
+      "Pracujesz nad problemami związanymi z nawigacją lub pomiarami, które dotyczą odległości poziomych.",
+      "Cos(A) jest potrzebne przed obliczeniem innej wielkości pochodnej, np. siecznej lub stycznej."
+    ],
+    "commonMistakes_intro": "Oto najczęstsze błędy cosinusowe popełniane przez uczniów:",
+    "commonMistakes_items": [
+      "Używanie przeciwnej <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">strony</a> zamiast strony sąsiedniej. Cosinus wykorzystuje nogę obok <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> A, a nie tej naprzeciwko.",
+      "Wpisanie b większego niż c. W prawidłowym trójkącie prostokątnym przeciwprostokątna jest zawsze najdłuższym <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bokiem</a>. Jeśli b przekracza c, twoje wartości nie tworzą trójkąta prostokątnego.",
+      "Odwracanie ułamka. Zapisanie c/b daje secans, a nie cosinus.",
+      "Mieszanie sąsiedniej <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">strony</a> z etykietą przeciwprostokątnej. Sprawdź dokładnie, która strona leży naprzeciwko prawego <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> (czyli przeciwprostokątnej), a która stanowi część kąta A (czyli sąsiedniej strony).",
+      "Używanie <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">długości boków</a> mierzonych w różnych jednostkach bez uprzedniego przeliczania."
+    ],
+    "relatedLinks": [
+      "Kalkulator współczynników trygonometrycznych trójkąta prostokątnego",
+      "Kalkulator współczynnika sinusoidalnego",
+      "Kalkulator współczynnika stycznej",
+      "Kalkulator kąta trójkąta prostokątnego"
+    ],
+    "faqs": [
+      {
+        "question": "Jaki jest wzór na współczynnik cosinus dla trójkąta prostokątnego?",
+        "answer": "Jest to cos(A) = b / c, gdzie b jest sąsiednim <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bokiem</a>, a c jest przeciwprostokątną. Przylegająca oznacza nogę dotykającą <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> A."
+      },
+      {
+        "question": "Czym różni się cosinus od sinusa?",
+        "answer": "Sinus wykorzystuje przeciwną <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">stronę</a> przeciwprostokątnej (a/c). Cosinus wykorzystuje sąsiednią stronę nad przeciwprostokątną (b/c). Mierzą różne boki względem tego samego <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a>."
+      },
+      {
+        "question": "Co to znaczy, że cos(A) = 0,5?",
+        "answer": "Oznacza to, że sąsiednia <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> jest dokładnie połową przeciwprostokątnej. Dzieje się tak, gdy <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąt</a> A wynosi 60°."
+      },
+      {
+        "question": "Czy cosinus może być większy niż 1?",
+        "answer": "Nie. W trójkącie prostokątnym przeciwprostokątna jest zawsze dłuższa niż sąsiedni <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a>, zatem b/c jest zawsze mniejsze niż 1."
+      },
+      {
+        "question": "Dlaczego potrzebuję tylko dwóch stron cosinusa?",
+        "answer": "Wzór na cosinus uwzględnia tylko sąsiadującą <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">stronę</a> i przeciwprostokątną. Strona przeciwna nie jest uwzględniana w obliczeniach."
+      }
+    ]
+  },
+  "tangent-ratio-calculator": {
+    "slug": "kalkulator współczynnika stycznych",
+    "h1": "Kalkulator współczynnika stycznej",
+    "headerSummary": "Znajdź tg(A) z przeciwnej <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">strony</a> a i sąsiedniej strony b dla problemów z nachyleniem, wzniesieniem i przebiegiem.",
+    "metaTitle": "Kalkulator współczynnika stycznej | Prawy trójkąt brązowy (A)",
+    "metaDescription": "Użyj tego współczynnika stycznych <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulatora</a>, aby znaleźć tg(A) w trójkącie prostokątnym, używając przeciwległego <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">boku</a> a i sąsiedniego boku b wraz ze wzorem, krokami i przykładami.",
+    "calculator_heading": "Oblicz współczynnik styczny",
+    "calculator_outputLabel": "opalony(A)",
+    "calculator_fields": [
+      "Strona przeciwna A",
+      "Sąsiednia strona b"
+    ],
+    "introHeading": "Jak działa ten kalkulator współczynnika stycznej",
+    "intro": [
+      "Tangens to trzeci z głównych <a href=\"/right-triangle-trig-ratios-calculator/\" class=\"text-primary hover:underline\">stosunków trygonometrycznych</a> i działa nieco inaczej niż sinus i cosinus. Zamiast porównywać nogę z przeciwprostokątną, tangens porównuje jedną nogę z drugą — konkretnie przeciwną <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">stroną</a> do sąsiedniej strony. Dzięki temu jest on szczególnie przydatny w przypadku problemów z nachyleniem i <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kątem</a>-elewacją.",
+      "Ten <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> dzieli przeciwną <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">stronę</a> a przez sąsiednią stronę b i daje opaleniznę(A). Nie musisz wyciągać aplikacji kalkulatora — po prostu wpisz dwie długości nóg i uzyskaj odpowiedź."
+    ],
+    "calculatorNote": "Wprowadź przeciwną <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">stronę</a> a i sąsiadującą stronę b w powyższych polach wejściowych. Narzędzie oblicza tg(A) = a / b. Obie wartości muszą być dodatnie.",
+    "formula_display": "tan(A) = a / b",
+    "formula_paragraphs": [
+      "Tangens <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> A równa się przeciwnemu <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bokowi</a> podzielonemu przez sąsiedni bok. To jest część TOA SOH-CAH-TOA.",
+      "W przeciwieństwie do sinusa i cosinusa, tangens nie obejmuje przeciwprostokątnej. Używa tylko dwóch nóg. Oznacza to również, że tangens nie jest ograniczony do 1 — może to być dowolna liczba dodatnia dla kątów ostrych i rośnie bez ograniczeń, gdy <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąt</a> A zbliża się do 90°."
+    ],
+    "diagramExplanation": [
+      "Dla <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> a jest przeciwny, bok b sąsiaduje, a bok c jest przeciwprostokątną.",
+      "Styczna wykorzystuje tylko dwie nogi: przeciwną <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">stronę</a> a i sąsiednią stronę b. Przeciwprostokątna c nie pojawia się we wzorze na styczną."
+    ],
+    "howToSteps": [
+      "Znajdź <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąt</a> A w trójkącie prostokątnym.",
+      "Wskaż <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> a, nogę znajdującą się naprzeciwko <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> A.",
+      "Wskaż <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> b, nogę tworzącą <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąt</a> A obok przeciwprostokątnej.",
+      "Wpisz wartość a w pierwszym polu.",
+      "Wpisz wartość b w drugim polu.",
+      "Kliknij Oblicz, aby uzyskać opaleniznę (A).",
+      "Wynik może być mniejszy niż 1, równy 1 lub większy niż 1."
+    ],
+    "example_intro": "Trójkąt prostokątny ma przeciwny <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> a = 3 i sąsiedni bok b = 4.",
+    "example_steps": [
+      "tan(A) = a / b",
+      "tan(A) = 3 / 4",
+      "tan(A) = 0,75"
+    ],
+    "example_conclusion": "Tangens <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> A wynosi 0,75. Aby znaleźć kąt: A = arctan(0,75) ≈ 36,87°.",
+    "whatResultMeans": [
+      "Tangens informuje o nachyleniu trójkąta z perspektywy <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> A. Pomyśl o tym jak o obliczeniu wzrostu ponad przebieg.",
+      "Tangens 1 oznacza, że ​​przeciwne i sąsiednie boki są równe, co ma miejsce w trójkącie <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90</a>. Wartości poniżej 1 oznaczają, że przeciwległy <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> jest krótszy niż sąsiedni bok — trójkąt jest szerszy niż wyższy. Wartości powyżej 1 oznaczają, że przeciwny bok jest dłuższy — trójkąt jest wyższy niż szerszy.",
+      "W praktyce styczna to nachylenie linii przeciwprostokątnej, gdy stoisz pod <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kątem</a> A."
+    ],
+    "whenToUse_intro": "Ten współczynnik stycznych <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> jest najbardziej pomocny, gdy:",
+    "whenToUse_items": [
+      "Masz obie nogi trójkąta i chcesz stosunek stycznej.",
+      "Rozwiązujesz problemy ze nachyleniem, nachyleniem lub nachyleniem (wzniesienie ponad biegiem).",
+      "Musisz znaleźć <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąt</a> wzniesienia lub obniżenia.",
+      "Chcesz określić, jak stroma jest rampa, dach lub nachylenie.",
+      "Dokonujesz konwersji między długościami nóg a miarami <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> bez użycia przeciwprostokątnej."
+    ],
+    "commonMistakes_intro": "Unikaj tych typowych błędów stycznych:",
+    "commonMistakes_items": [
+      "Uwzględnij przeciwprostokątną we wzorze stycznym. Styczna wykorzystuje tylko dwie nogi – bez przeciwprostokątnej.",
+      "Umieszczenie sąsiedniej <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">strony</a> w liczniku. Formuła to a / b (naprzeciwko sąsiadującego), a nie b / a. Odwrócenie daje cotangens.",
+      "Oczekiwanie, że wynik będzie zawsze mniejszy niż 1. W przeciwieństwie do sinusa i cosinusa, tangens może być dowolną liczbą dodatnią.",
+      "Mylenie, która noga jest przeciwna, a która przylega. Zawsze identyfikuj je w odniesieniu do <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> A, a nie kąta prostego.",
+      "Użycie wzoru na błędny <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąt</a>. Jeśli oznaczysz etykietą kąt B zamiast kąta A, przeciwne i sąsiednie strony zamienią się miejscami."
+    ],
+    "relatedLinks": [
+      "Kalkulator współczynników trygonometrycznych trójkąta prostokątnego",
+      "Kalkulator współczynnika sinusoidalnego",
+      "Kalkulator współczynnika cosinusa",
+      "Kalkulator kąta trójkąta prostokątnego"
+    ],
+    "faqs": [
+      {
+        "question": "Jaki jest wzór na stosunek styczny?",
+        "answer": "To jest tan(A) = a / b, gdzie a jest przeciwną <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">stroną</a> i b jest stroną sąsiednią. Dzielisz przeciwne przez sąsiadujące."
+      },
+      {
+        "question": "Czy tan(A) może być większy niż 1?",
+        "answer": "Tak. Gdy przeciwny <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> jest dłuższy niż sąsiedni bok, tangens przekracza 1. Na przykład tan(60°) ≈ 1,732."
+      },
+      {
+        "question": "Jak tangens jest powiązany z nachyleniem?",
+        "answer": "Styczna to zasadniczo nachylenie przeciwprostokątnej, gdy sąsiadująca <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">strona</a> jest biegiem poziomym, a strona przeciwna jest wzniesieniem pionowym. tan(A) = wzrost / bieg."
+      },
+      {
+        "question": "Dlaczego tangens nie korzysta z przeciwprostokątnej?",
+        "answer": "Styczna mierzy bezpośrednio stosunek między dwiema nogami. Przeciwprostokątna nie jest potrzebna, ponieważ tangens opisuje kształt (stromość) trójkąta, a nie skalę."
+      },
+      {
+        "question": "Co się stanie, gdy a = b?",
+        "answer": "Gdy obie nogi są równe, tg(A) = 1, a <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąt</a> A wynosi dokładnie 45°."
+      }
+    ]
+  },
+  "cotangent-ratio-calculator": {
+    "slug": "cotangent-ratio-calculator",
+    "h1": "Cotangent Ratio Calculator",
+    "headerSummary": "Calculate cot(A) from adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b over opposite side a in a right triangle.",
+    "metaTitle": "Cotangent Ratio Calculator | Right Triangle cot(A)",
+    "metaDescription": "Use this cotangent ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> to find cot(A) in a right triangle using adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b and opposite side a with formula, steps, and examples.",
+    "calculator_heading": "Calculate Cotangent Ratio",
+    "calculator_outputLabel": "cot(A)",
+    "calculator_fields": [
+      "Adjacent side b",
+      "Opposite side a"
+    ],
+    "introHeading": "How This Cotangent Ratio Calculator Works",
+    "intro": [
+      "Cotangent is the reciprocal of tangent. While tangent divides the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> by the adjacent side, cotangent flips that fraction — it divides the adjacent side by the opposite side. It shows up less often in basic geometry classes, but it plays an important role in advanced trigonometry and calculus.",
+      "This <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> takes the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b and the opposite side a, then returns cot(A) = b / a. If you are used to working with tangent, cotangent is simply the inverse fraction."
+    ],
+    "calculatorNote": "Enter adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b and opposite side a in the fields above. The <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> returns cot(A) = b / a. Both values must be positive.",
+    "formula_display": "cot(A) = b / a",
+    "formula_paragraphs": [
+      "Cotangent of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A equals the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> divided by the opposite side. It is the reciprocal of tangent: cot(A) = 1 / tan(A).",
+      "Like tangent, cotangent uses only the two legs of the right triangle. The hypotenuse is not involved. Cotangent can take any positive value for acute angles."
+    ],
+    "diagramExplanation": [
+      "For <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a is opposite, side b is adjacent, and side c is the hypotenuse.",
+      "Cotangent uses the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b (the leg next to <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A) as the numerator and the opposite side a (across from angle A) as the denominator. The hypotenuse c is not used."
+    ],
+    "howToSteps": [
+      "Identify <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A in your right triangle.",
+      "Find <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b, the adjacent leg — the one next to <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A and the right angle.",
+      "Find <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a, the opposite leg — the one across from <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A.",
+      "Enter b in the first input field.",
+      "Enter a in the second input field.",
+      "Click Calculate.",
+      "The result is cot(A), which can be any positive number."
+    ],
+    "example_intro": "A right triangle has adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b = 4 and opposite side a = 3.",
+    "example_steps": [
+      "cot(A) = b / a",
+      "cot(A) = 4 / 3",
+      "cot(A) ≈ 1.3333"
+    ],
+    "example_conclusion": "The cotangent of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is approximately 1.3333. You can verify this: tan(A) = 3 / 4 = 0.75, and 1 / 0.75 = 1.3333.",
+    "whatResultMeans": [
+      "Cotangent tells you how many times the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> fits relative to the opposite side. It is the run-over-rise version of the steepness ratio.",
+      "A cotangent of 1 means both legs are equal (a 45° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a>). Values greater than 1 mean the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is longer than the opposite side — the triangle is wider and the angle is smaller. Values less than 1 mean the opposite side is longer — the angle is larger and the triangle is steeper.",
+      "Since cotangent is the reciprocal of tangent, you can always convert between them: cot(A) = 1 / tan(A) and tan(A) = 1 / cot(A)."
+    ],
+    "whenToUse_intro": "Pick this cotangent ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> when:",
+    "whenToUse_items": [
+      "You need the reciprocal of tangent without manually computing 1 / tan(A).",
+      "You are working with formulas that specifically call for cotangent, such as certain calculus identities.",
+      "You prefer to think in terms of run-over-rise rather than rise-over-run.",
+      "You are solving problems in surveying, construction, or trigonometric proofs."
+    ],
+    "commonMistakes_intro": "Keep an eye out for these cotangent pitfalls:",
+    "commonMistakes_items": [
+      "Writing a / b instead of b / a. Cotangent puts the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> on top, not the opposite side. Swapping them gives you tangent.",
+      "Confusing cotangent with cosine. Cotangent is b / a (adjacent over opposite). Cosine is b / c (adjacent over hypotenuse). They are different ratios.",
+      "Using the hypotenuse in the calculation. Cotangent only involves the two legs.",
+      "Forgetting it is the reciprocal of tangent. If you already know tan(A), just take 1 / tan(A) to get cot(A).",
+      "Mixing up which <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is adjacent and which is opposite. Always identify sides relative to <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A."
+    ],
+    "relatedLinks": [
+      "Right Triangle Trig Ratios Calculator",
+      "Tangent Ratio Calculator",
+      "Sine Ratio Calculator",
+      "Cosine Ratio Calculator"
+    ],
+    "faqs": [
+      {
+        "question": "What is the cotangent formula for a right triangle?",
+        "answer": "It is cot(A) = b / a, where b is the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> and a is the opposite side of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A. This is the reverse of the tangent fraction."
+      },
+      {
+        "question": "Jak kotangens ma się do stycznej?",
+        "answer": "Cotangens jest odwrotnością tangensu. Jeśli tan(A) = 0,75, to łóżeczko(A) = 1 / 0,75 ≈ 1,3333."
+      },
+      {
+        "question": "Kiedy użyłbym cotangens zamiast stycznego?",
+        "answer": "Użyj cotangensu, gdy formuła tego wyraźnie wymaga lub gdy chcesz bezpośrednio uzyskać stosunek sąsiadującego do przeciwnego. W wielu kontekstach rachunku różniczkowego i fizyki cotangens pojawia się w tożsamościach i wzorach pochodnych."
+      },
+      {
+        "question": "Czy cot(A) może być równe zeru w trójkącie prostokątnym?",
+        "answer": "W trójkącie prostokątnym zawierającym tylko kąty ostre, cot(A) jest zawsze dodatnie. Cotangens zbliża się do zera, gdy <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąt</a> A zbliża się do 90°, ale kąt 90° sam w sobie jest kątem prostym, a nie kątem ostrym, który można by zmierzyć."
+      },
+      {
+        "question": "Czy cotangens to to samo, co 1 podzielone przez tangens?",
+        "answer": "Tak. łóżko(A) = 1 / tan(A) = b / a. Obydwa wyrażenia dają ten sam wynik."
+      }
+    ]
+  },
+  "secant-ratio-calculator": {
+    "slug": "kalkulator ilorazu siecznych",
+    "h1": "Kalkulator stosunku siecznych",
+    "headerSummary": "Znajdź sec(A), porównując przeciwprostokątną c z sąsiednim <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bokiem</a> b, odwrotnością cosinusa.",
+    "metaTitle": "Kalkulator stosunku siecznych | Trójkąt prostokątny sec(A)",
+    "metaDescription": "Użyj tego siecznego współczynnika <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a>, aby znaleźć sec(A) w trójkącie prostokątnym, używając przeciwprostokątnej c i sąsiadującej <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">boku</a> b wraz ze wzorem, krokami i przykładami.",
+    "calculator_heading": "Oblicz stosunek siecznych",
+    "calculator_outputLabel": "s(A)",
+    "calculator_fields": [
+      "Przeciwprostokątna c",
+      "Sąsiednia strona b"
+    ],
+    "introHeading": "Jak działa ten kalkulator siecznej proporcji",
+    "intro": [
+      "Sieczna jest odwrotnością cosinusa. Tam, gdzie cosinus dzieli sąsiednią <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">stronę</a> przez przeciwprostokątną, sieczna odwraca tę wartość — dzieli przeciwprostokątną przez sąsiednią stronę. Wynik jest zawsze większy lub równy 1, ponieważ przeciwprostokątna jest zawsze najdłuższym bokiem trójkąta prostokątnego.",
+      "Ten <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> pobiera dwa dane wejściowe — przeciwprostokątną c i sąsiednią <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> b — i zwraca sec(A). Jest to szybki sposób na uzyskanie tego stosunku odwrotności bez konieczności ręcznego dzielenia lub obliczania cosinusa."
+    ],
+    "calculatorNote": "Wprowadź przeciwprostokątną c i przyległy <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> b w powyższych polach. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Kalkulator</a> oblicza sec(A) = c / b. Obie wartości muszą być dodatnie, a c musi być większe niż b.",
+    "formula_display": "s(A) = c / b",
+    "formula_paragraphs": [
+      "Sieczna <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> A równa się przeciwprostokątnej podzielonej przez sąsiedni <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a>. To jest odwrotność cosinusa: sec(A) = 1 / cos(A).",
+      "Ponieważ przeciwprostokątna jest zawsze dłuższa niż sąsiedni <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> w trójkącie prostokątnym, sec(A) jest zawsze większa od 1. Gdy <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąt</a> A staje się większy, sąsiedni bok kurczy się względem przeciwprostokątnej, więc sieczna rośnie."
+    ],
+    "diagramExplanation": [
+      "Dla <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> a jest przeciwny, bok b sąsiaduje, a bok c jest przeciwprostokątną.",
+      "Sieczna używa przeciwprostokątnej c jako licznika i sąsiedniej <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">boku</a> b jako mianownika. Przeciwna strona a nie jest częścią obliczenia siecznej."
+    ],
+    "howToSteps": [
+      "Znajdź <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąt</a> A w trójkącie prostokątnym.",
+      "Znajdź <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> c, przeciwprostokątną — najdłuższy bok naprzeciwko prawego <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a>.",
+      "Znajdź <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> b, sąsiednią nogę — stronę, która dotyka zarówno <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> A, jak i kąta prostego.",
+      "Wpisz c w pierwszym polu wejściowym.",
+      "Wpisz b w drugim polu wejściowym.",
+      "Kliknij Oblicz.",
+      "Wynikiem jest sec(A), która jest zawsze większa lub równa 1."
+    ],
+    "example_intro": "Trójkąt prostokątny ma przeciwprostokątną c = 5 i sąsiedni <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> b = 4.",
+    "example_steps": [
+      "s(A) = c / b",
+      "s(A) = 5 / 4",
+      "s(A) = 1,25"
+    ],
+    "example_conclusion": "Sekans <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> A wynosi 1,25. Aby sprawdzić: cos(A) = 4 / 5 = 0,8 i 1 / 0,8 = 1,25.",
+    "whatResultMeans": [
+      "Sieczna informuje, ile razy przeciwprostokątna jest porównywana z sąsiednim <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bokiem</a>. Sieczna 1,25 oznacza, że ​​przeciwprostokątna jest o 25% dłuższa od sąsiedniej strony.",
+      "Minimalna wartość siecznej w trójkącie prostokątnym wynosi nieco powyżej 1, co ma miejsce, gdy <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąt</a> A jest bardzo mały, a sąsiedni <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> jest prawie tak długi jak przeciwprostokątna. Wraz ze wzrostem kąta A sąsiedni bok skraca się w stosunku do przeciwprostokątnej, a sieczna rośnie.",
+      "Sieczna jest przydatna, gdy trzeba skalować od sąsiedniej <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">boku</a> do przeciwprostokątnej lub gdy wzór wymaga 1/cos(A)."
+    ],
+    "whenToUse_intro": "Ten sieczny współczynnik <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> jest właściwym wyborem, gdy:",
+    "whenToUse_items": [
+      "Formuła wymaga siecznej lub 1 / cos(A) i chcesz bezpośrednio podać wartość.",
+      "Musisz dowiedzieć się, jak długo przeciwprostokątna jest porównywana z sąsiednim <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bokiem</a>.",
+      "Pracujesz z problemami rachunku różniczkowego, które obejmują sieczne w pochodnych lub całkach.",
+      "Sprawdzasz obliczenia konstrukcyjne, w których przeciwprostokątna reprezentuje rzeczywistą długość, a sąsiedni <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> reprezentuje poziomy <a href=\"/right-triangle-projection-calculator/\" class=\"text-primary hover:underline\">rzut</a>."
+    ],
+    "commonMistakes_intro": "Te sieczne błędy najczęściej potykają uczniów:",
+    "commonMistakes_items": [
+      "Mylisz secans z cosinusem. Cosinus to b/c (sąsiadujący z przeciwprostokątną). Sieczna jest odwrotnością: c / b (przeciwprostokątna nad sąsiednim).",
+      "Uzyskanie wyniku mniejszego niż 1. Jeśli Twoja odpowiedź jest niższa niż 1, prawdopodobnie odwróciłeś ułamek. W prawidłowym trójkącie prostokątnym sec(A) jest zawsze większe lub równe 1.",
+      "Używanie przeciwnej <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">strony</a> zamiast strony sąsiedniej. Sieczna łączy przeciwprostokątną z sąsiednią stroną, a nie przeciwną.",
+      "Mieszanie siecznej i cosekansowej. Sieczna jest odwrotnością cosinusa. Cosecans jest odwrotnością sinusa. Używają różnych stron.",
+      "Wpisanie b większego niż c. Przeciwprostokątna musi zawsze być dłuższa niż sąsiedni <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a>."
+    ],
+    "relatedLinks": [
+      "Kalkulator współczynników trygonometrycznych trójkąta prostokątnego",
+      "Kalkulator współczynnika cosinusa",
+      "Kalkulator współczynnika cosecans",
+      "Kalkulator stosunku Cotangens"
+    ],
+    "faqs": [
+      {
+        "question": "Jaki jest stosunek siecznej w trójkącie prostokątnym?",
+        "answer": "Sieczną definiuje się jako sec(A) = c / b, gdzie c jest przeciwprostokątną, a b jest sąsiednim <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bokiem</a>. Jest to odwrotność cosinusa."
+      },
+      {
+        "question": "Dlaczego sieczna jest zawsze większa niż 1?",
+        "answer": "Ponieważ przeciwprostokątna c jest zawsze najdłuższym <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bokiem</a> w trójkącie prostokątnym. Dzielenie większej liczby (c) przez mniejszą (b) zawsze daje wynik większy niż 1."
+      },
+      {
+        "question": "Jak przekonwertować sieczną i cosinus?",
+        "answer": "sec(A) = 1 / cos(A) i cos(A) = 1 / sec(A). Jeśli znasz jedno, możesz znaleźć drugie, stosując zasadę wzajemności."
+      },
+      {
+        "question": "Co to jest sekunda (45°)?",
+        "answer": "W trójkącie <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90</a> przeciwprostokątna jest √2 razy większa od nogi. Zatem sec(45°) = √2 ≈ 1,4142."
+      },
+      {
+        "question": "Czy secans jest używany w zastosowaniach w świecie rzeczywistym?",
+        "answer": "Tak. Sieczna pojawia się we wzorach fizycznych, obliczeniach inżynierskich i rachunku różniczkowym. Jest używany, gdy trzeba przeskalować odległość poziomą do rzeczywistej długości ścieżki wzdłuż pochyłości."
+      }
+    ]
+  },
+  "cosecant-ratio-calculator": {
+    "slug": "kalkulator współczynnika cosecans",
+    "h1": "Kalkulator współczynnika cosecans",
+    "headerSummary": "Oblicz csc(A) z przeciwprostokątnej c i przeciwnej <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">boku</a> a, odwrotności sinusa.",
+    "metaTitle": "Kalkulator współczynnika cosekansu | Trójkąt prostokątny csc(A)",
+    "metaDescription": "Użyj tego współczynnika cosecans <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a>, aby znaleźć csc(A) w trójkącie prostokątnym, używając przeciwprostokątnej c i przeciwnej <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">boku</a> a wraz ze wzorem, krokami i przykładami.",
+    "calculator_heading": "Oblicz współczynnik cosecansu",
+    "calculator_outputLabel": "csc(A)",
+    "calculator_fields": [
+      "Przeciwprostokątna c",
+      "Strona przeciwna A"
+    ],
+    "introHeading": "Jak działa ten kalkulator współczynnika cosecans",
+    "intro": [
+      "Cosecans jest odwrotnością sinusa. Dzieli przeciwprostokątną przez przeciwną <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">stronę</a>, dając stosunek, który w trójkącie prostokątnym jest zawsze większy niż 1. Być może na kursach podstawowych nie spotyka się go tak często jak sinus czy cosinus, ale jest on niezbędny w bardziej zaawansowanych zastosowaniach matematyki i niektórych zastosowań fizyki.",
+      "Dzięki temu <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulatorowi</a> jest to proste. Wprowadź przeciwprostokątną c i przeciwną <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">stronę </a> a, a natychmiast zwrócisz csc(A). Nie ma potrzeby najpierw obliczać sinusa, a następnie odwracać ułamek."
+    ],
+    "calculatorNote": "Wprowadź przeciwprostokątną c i przeciwprostokątną <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> a w powyższych polach. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Kalkulator</a> oblicza csc(A) = c / a. Obie wartości muszą być dodatnie, a c musi być większe niż a.",
+    "formula_display": "csc(A) = c/a",
+    "formula_paragraphs": [
+      "Cosecans <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> A równa się przeciwprostokątnej podzielonej przez przeciwną <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">stronę</a>. Jest to odwrotność sinusa: csc(A) = 1 / sin(A).",
+      "Przeciwprostokątna jest zawsze dłuższa niż przeciwna <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a>, więc csc(A) zawsze daje wartość większą niż 1 dla kątów ostrych. Gdy <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąt</a> A maleje, przeciwna strona staje się krótsza w stosunku do przeciwprostokątnej, a cosecans rośnie."
+    ],
+    "diagramExplanation": [
+      "Dla <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> a jest przeciwny, bok b sąsiaduje, a bok c jest przeciwprostokątną.",
+      "Cosecant używa przeciwprostokątnej c jako licznika i przeciwnej <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">strony </a> a jako mianownika. Sąsiednia strona b nie odgrywa żadnej roli we wzorze na cosecans."
+    ],
+    "howToSteps": [
+      "Znajdź <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąt</a> A w trójkącie prostokątnym.",
+      "Znajdź przeciwprostokątną c — <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> przeciwny do prawego <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> i najdłuższy bok.",
+      "Znajdź przeciwną <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">stronę</a> a — nogę bezpośrednio naprzeciwko <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> A.",
+      "Wpisz c w pierwszym polu wejściowym.",
+      "Wpisz a w drugim polu wejściowym.",
+      "Kliknij Oblicz.",
+      "Wynikiem jest csc(A), zawsze większe od 1."
+    ],
+    "example_intro": "Trójkąt prostokątny ma przeciwprostokątną c = 5 i przeciwprostokątną <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> a = 3.",
+    "example_steps": [
+      "csc(A) = c/a",
+      "csc(A) = 5 / 3",
+      "csc(A) ≈ 1,6667"
+    ],
+    "example_conclusion": "Cosecans <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> A wynosi w przybliżeniu 1,6667. Weryfikacja: sin(A) = 3 / 5 = 0,6 i 1 / 0,6 ≈ 1,6667.",
+    "whatResultMeans": [
+      "Cosecant informuje, ile razy przeciwprostokątna jest porównywana z przeciwną <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">stroną</a>. Cosecans 1,6667 oznacza, że ​​przeciwprostokątna jest o około 67% dłuższa niż przeciwna strona.",
+      "Gdy <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąt</a> A jest duży (blisko 90°), przeciwny <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> jest prawie tak długi jak przeciwprostokątna, więc csc(A) jest bliskie 1. Gdy kąt A jest mały, przeciwny bok jest znacznie krótszy, a cosecans rośnie.",
+      "Pomyśl o tym w ten sposób: jeśli znasz przeciwną <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">stronę</a> i chcesz znaleźć przeciwprostokątną, pomnóż przeciwną stronę przez csc(A). To daje c = a × csc(A)."
+    ],
+    "whenToUse_intro": "Sięgnij po ten współczynnik cosekansu <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> gdy:",
+    "whenToUse_items": [
+      "Potrzebujesz odwrotności sinusa bez obliczania najpierw sin(A).",
+      "Formuła w szczególności wymaga cosecansu, który pojawia się w niektórych tożsamościach trygonometrycznych.",
+      "Skalujesz przeciwną <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">stronę</a> aż do pełnej długości przeciwprostokątnej.",
+      "Pracujesz nad problemami fizycznymi lub inżynieryjnymi dotyczącymi sił, funkcji falowych lub wzorów oscylacyjnych wykorzystujących cosecans."
+    ],
+    "commonMistakes_intro": "Uważaj na te błędy współistniejące:",
+    "commonMistakes_items": [
+      "Mylisz cosecans z sinusem. Sinus to a/c (przeciwieństwo przeciwprostokątnej). Cosecans jest odwrotnością: c / a (przeciwprostokątna nad przeciwną).",
+      "Mylisz cosecans z secans. Cosecans opiera się na przeciwnej <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">stronie</a> (odwrotności sinusa). Sieczna opiera się na sąsiednim boku (odwrotność cosinusa). Używają różnych nóg.",
+      "Uzyskanie wyniku mniejszego niż 1. Jeśli Twoja odpowiedź jest niższa niż 1, być może wprowadziłeś wartości w niewłaściwej kolejności. csc(A) jest zawsze większe niż 1.",
+      "Używanie sąsiedniej <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">strony</a> zamiast strony przeciwnej. Cosecant łączy przeciwprostokątną tylko z przeciwną stroną.",
+      "Oczekiwanie, że cosecans i cosinus będą powiązane po nazwie. Pomimo współprzedrostka, cosecans jest odwrotnością sinusa, a nie cosinusa."
+    ],
+    "relatedLinks": [
+      "Kalkulator współczynników trygonometrycznych trójkąta prostokątnego",
+      "Kalkulator współczynnika sinusoidalnego",
+      "Kalkulator stosunku siecznych",
+      "Kalkulator stosunku Cotangens"
+    ],
+    "faqs": [
+      {
+        "question": "Jaki jest wzór na cosecans w trójkącie prostokątnym?",
+        "answer": "To jest csc(A) = c / a, gdzie c jest przeciwprostokątną, a a jest przeciwną <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">boczną</a>. Cosecans jest odwrotnością sinusa."
+      },
+      {
+        "question": "Jak cosecans jest powiązany z sinusem?",
+        "answer": "csc(A) = 1 / sin(A). Jeśli sin(A) = 0,6, to csc(A) = 1 / 0,6 ≈ 1,6667."
+      },
+      {
+        "question": "Dlaczego cosecans jest zawsze większy niż 1?",
+        "answer": "Ponieważ przeciwprostokątna jest zawsze dłuższa niż przeciwny <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> w trójkącie prostokątnym. Ułamek c / a zawsze przekracza 1."
+      },
+      {
+        "question": "Co to jest csc(30°)?",
+        "answer": "W trójkącie <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90</a> sin(30°) = 0,5, więc csc(30°) = 1 / 0,5 = 2. Przeciwprostokątna jest dokładnie dwa razy przeciwna <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">boku</a>."
+      },
+      {
+        "question": "Kiedy użyłbym cosecant zamiast sinusa?",
+        "answer": "Użyj cosecans, gdy wzór wymaga tego bezpośrednio lub gdy chcesz znaleźć przeciwprostokątną z przeciwnej <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">strony</a>: c = a × csc(A). Oszczędza to etap dzielenia przez sinus."
+      }
+    ]
+  }
+}

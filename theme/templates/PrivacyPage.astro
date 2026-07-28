@@ -104,7 +104,7 @@ const choicesItems = Array.isArray(choicesSection.items)
     <h1 class="mt-3 text-3xl font-headline text-on-surface sm:text-4xl lg:text-5xl">
       {pick(privacy, 'heading', 'Privacy Policy')}
     </h1>
-    <p class="truncate mt-2 text-xs uppercase tracking-wide text-outline" set:html={updatedLabel} />
+    <p class="mt-2 text-xs uppercase tracking-wide text-outline" set:html={updatedLabel} />
     <p class="mx-auto mt-4 max-w-3xl text-sm leading-relaxed text-on-surface-variant">
       {pick(
         privacy,

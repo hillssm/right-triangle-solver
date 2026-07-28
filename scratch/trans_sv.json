@@ -1,0 +1,557 @@
+{
+  "sine-ratio-calculator": {
+    "slug": "sinusförhållande-kalkylator",
+    "h1": "Sinuskvotskalkylator",
+    "headerSummary": "Hitta sin(A) från den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> a och hypotenusan c i en rätvinklig triangel.",
+    "metaTitle": "Sinuskvotskalkylator | Rätt triangel sin(A)",
+    "metaDescription": "Använd denna sinuskvot <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> för att hitta sin(A) i en rätvinklig triangel med hjälp av motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> a och hypotenusa c med formel, steg och exempel.",
+    "calculator_heading": "Beräkna sinusförhållande",
+    "calculator_outputLabel": "synd(A)",
+    "calculator_fields": [
+      "Motsatt sida a",
+      "Hypotenus c"
+    ],
+    "introHeading": "Hur den här sinuskvotskalkylatorn fungerar",
+    "intro": [
+      "Sinusförhållandet är en av de första trigonometriska funktionerna du lär dig inom geometri. Den förbinder en specifik <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> i en rätvinklig triangel med två av dess sidor - den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> och hypotenusan. Om du känner till dessa två <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">mått</a>, ger den här kalkylatorn dig sin(A) direkt.",
+      "Oavsett om du arbetar igenom ett läxproblem, kontrollerar ett svar i examensstil eller löser en riktig mätuppgift, tar det här verktyget bort steget för manuell uppdelning. Ange dina värden och få resultatet med formeln som visas."
+    ],
+    "calculatorNote": "Ange längden på den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> a och hypotenusan c i fälten ovan. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylatorn</a> dividerar a med c och returnerar sin(A). Båda värdena måste vara positiva och c måste vara större än a.",
+    "formula_display": "sin(A) = a/c",
+    "formula_paragraphs": [
+      "Sinus för <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är lika med längden på den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> dividerat med längden på hypotenusan. Detta kommer ofta ihåg med SOH-delen av SOH-CAH-TOA.",
+      "I en rätvinklig triangel är den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> den som är mittemot <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A. Hypotenusan är alltid den längsta sidan – den som är vänd mot 90°-vinkeln. Eftersom hypotenusan alltid är längre än något ben, faller sin(A) alltid mellan 0 och 1 för spetsiga vinklar."
+    ],
+    "diagramExplanation": [
+      "För <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> a motsatt, sidan b ligger intill och sidan c är hypotenusan.",
+      "Sinusförhållandet använder bara två av dessa tre sidor: den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> a (direkt mittemot <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkeln</a> A) och hypotenusan c (den längsta sidan, mittemot den räta vinkeln vid B)."
+    ],
+    "howToSteps": [
+      "Identifiera <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A i din högra triangel. Det måste vara en av de två spetsiga vinklarna, inte 90°-vinkeln.",
+      "Hitta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> mittemot <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkeln</a> A. Detta är sidan a.",
+      "Hitta hypotenusan. Detta är <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> c, den längsta sidan, mittemot den högra <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkeln</a>.",
+      "Ange värdet på a i det första inmatningsfältet.",
+      "Ange värdet på c i det andra inmatningsfältet.",
+      "Klicka på Beräkna för att se sin(A).",
+      "Granska resultatet. Det ska vara en decimal mellan 0 och 1."
+    ],
+    "example_intro": "Anta att du har en rätvinklig triangel där den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> a = 3 och hypotenusan c = 5.",
+    "example_steps": [
+      "sin(A) = a/c",
+      "sin(A) = 3/5",
+      "sin(A) = 0,6"
+    ],
+    "example_conclusion": "Sinus för <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är 0,6. Detta betyder att den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> är 60 % av hypotenusans längd. Om du behöver den faktiska vinkeln, ta invers sinus: A = arcsin(0,6) ≈ 36,87°.",
+    "whatResultMeans": [
+      "Utgången är ett enhetslöst förhållande. Den berättar hur den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> jämförs med hypotenusan i storlek. Ett resultat på 0,5 betyder att den motsatta sidan är exakt halva hypotenusan - vilket sker i en <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90 triangel</a> där A = 30°.",
+      "Små värden (nära 0) betyder att <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är liten och den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> är kort i förhållande till hypotenusan. Värden närmare 1 medelvinkel A är stor (närmar sig 90°) och den motsatta sidan är nästan lika lång som hypotenusan.",
+      "Eftersom sin(A) är ett förhållande mellan två längder, har det inga enheter. Oavsett om din triangel mäts i centimeter, tum eller meter, förblir sinusvärdet detsamma så länge båda sidor använder samma enhet."
+    ],
+    "whenToUse_intro": "Använd denna sinusförhållande <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> i någon av dessa situationer:",
+    "whenToUse_items": [
+      "Du känner till den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> och hypotenusan och vill ha sinusvärdet.",
+      "Du förbereder dig för att hitta <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A med invers sinusfunktionen.",
+      "Du måste verifiera ett lärobokssvar eller kontrollera ditt eget trigonometriarbete.",
+      "Du löser fysikproblem som involverar vertikala komponenter, som höjden på en ramp eller den vertikala kraften i en lutning.",
+      "Du delar upp en vektor i dess vertikala och horisontella delar."
+    ],
+    "commonMistakes_intro": "Se upp för dessa vanliga fel när du beräknar sinus:",
+    "commonMistakes_items": [
+      "Använd den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> istället för den motsatta sidan. Sinus använder sidan mittemot <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A, inte sidan bredvid.",
+      "Byt a och c i formeln. Den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> går i täljaren, och hypotenusan går i nämnaren. Att skriva c/a ger cosecanten, inte sinus.",
+      "Använda sidor mätta i olika enheter. Om a är i centimeter och c är i tum är förhållandet meningslöst. Konvertera till samma enhet först.",
+      "Att glömma att c måste vara större än a. I en giltig rätvinklig triangel är hypotenusan alltid den längsta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>.",
+      "Ange rätt <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> (90°) som vinkel A. Sinus gäller endast de spetsiga vinklarna. 90° vinkeln är vid spets B."
+    ],
+    "relatedLinks": [
+      "Räknare för rätt triangel trigkvoter",
+      "Cosinuskvotskalkylator",
+      "Tangentkvotskalkylator",
+      "Räknare för rät triangelvinkel"
+    ],
+    "faqs": [
+      {
+        "question": "Vad är formeln för sin(A) i en rätvinklig triangel?",
+        "answer": "Formeln är sin(A) = a / c, där a är <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> mittemot <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkeln</a> A och c är hypotenusan. Man delar den motsatta sidan med hypotenusan."
+      },
+      {
+        "question": "Varför är sin(A) alltid mindre än 1 i en rätvinklig triangel?",
+        "answer": "Eftersom hypotenusan c alltid är den längsta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>. Eftersom a är kortare än c är bråkdelen a/c alltid mindre än 1."
+      },
+      {
+        "question": "Kan jag använda den här kalkylatorn för att hitta själva vinkeln?",
+        "answer": "Denna <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> ger dig sinusvärdet. För att hitta <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkeln</a>, använd invers sinusfunktionen: A = arcsin(sin(A)). Du kan göra detta med vår rätvinkliga vinkelräknare."
+      },
+      {
+        "question": "Vad betyder ett sin(A)-resultat på 0,5?",
+        "answer": "Det betyder att den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> är exakt halva längden på hypotenusan. Detta motsvarar att <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är 30°."
+      },
+      {
+        "question": "Behöver jag ange den intilliggande sidan för att beräkna sinus?",
+        "answer": "Nej. Sinus använder bara den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> a och hypotenusan c. Den intilliggande sidan b är inte en del av sinusformeln."
+      }
+    ]
+  },
+  "cosine-ratio-calculator": {
+    "slug": "cosinus-förhållande-kalkylator",
+    "h1": "Cosinuskvotskalkylator",
+    "headerSummary": "Beräkna cos(A) från den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> b och hypotenusan c med tydliga rätvinkliga steg.",
+    "metaTitle": "Cosinuskvotskalkylator | Rätt triangel cos(A)",
+    "metaDescription": "Använd denna cosinusförhållande <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> för att hitta cos(A) i en rätvinklig triangel med hjälp av intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b och hypotenusa c med formel, steg och exempel.",
+    "calculator_heading": "Beräkna cosinusförhållande",
+    "calculator_outputLabel": "cos(A)",
+    "calculator_fields": [
+      "Intilliggande sida b",
+      "Hypotenus c"
+    ],
+    "introHeading": "Hur den här Cosinuskvotskalkylatorn fungerar",
+    "intro": [
+      "Cosinusförhållandet mäter hur den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> av en rätvinklig triangel kan jämföras med hypotenusan. Det är den andra delen av SOH-CAH-TOA och en av de mest använda trigfunktionerna inom geometri, fysik och teknik.",
+      "Denna <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> tar två ingångar – den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> b och hypotenusan c – och returnerar cos(A). Den sköter divisionen åt dig och visar resultatet direkt, så att du kan fokusera på att förstå geometrin istället för aritmetiken."
+    ],
+    "calculatorNote": "Skriv in den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> b och hypotenusan c i inmatningsfälten ovan. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylatorn</a> beräknar cos(A) = b / c. Båda värdena måste vara positiva och c måste vara större än b.",
+    "formula_display": "cos(A) = b/c",
+    "formula_paragraphs": [
+      "Cosinus för <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är lika med den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> dividerat med hypotenusan. Detta är CAH i SOH-CAH-TOA.",
+      "Den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> b är benet som rör <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A och den rätta vinkeln. Hypotenusan c sitter mittemot rät vinkel och är alltid den längsta sidan. Eftersom hypotenusan är längre än något ben, ger cos(A) alltid ett värde mellan 0 och 1 för spetsiga vinklar."
+    ],
+    "diagramExplanation": [
+      "För <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> a motsatt, sidan b ligger intill och sidan c är hypotenusan.",
+      "Cosinusförhållandet använder den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> b (benet som bildar <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkeln</a> A tillsammans med hypotenusan) och hypotenusan c. Sida a ingår inte i cosinusberäkningen."
+    ],
+    "howToSteps": [
+      "Leta reda på <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A i din högra triangel. Det är en av de två spetsiga vinklarna.",
+      "Identifiera den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>. Detta är sidan b — benet som bildar <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A tillsammans med hypotenusan.",
+      "Identifiera hypotenusan c, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> mittemot 90° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkeln</a>.",
+      "Ange värdet på b i det första fältet.",
+      "Ange värdet på c i det andra fältet.",
+      "Tryck på Beräkna för att se cos(A).",
+      "Kontrollera att resultatet är mellan 0 och 1."
+    ],
+    "example_intro": "En rätvinklig triangel har intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b = 4 och hypotenusan c = 5.",
+    "example_steps": [
+      "cos(A) = b/c",
+      "cos(A) = 4/5",
+      "cos(A) = 0,8"
+    ],
+    "example_conclusion": "Cosinus för <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är 0,8. Den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> är 80 % av hypotenusans längd. För att hitta vinkeln: A = arccos(0,8) ≈ 36,87°.",
+    "whatResultMeans": [
+      "Cosinus berättar hur mycket av hypotenusans längd som täcks av den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>. En cosinus på 0,8 betyder att den intilliggande sidan sträcker sig 80 % så långt som hypotenusan gör.",
+      "När <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är liten, är den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> nästan lika lång som hypotenusan, så cos(A) är nära 1. När vinkeln A är stor (nära 90°), krymper den intilliggande sidan relativt hypotenusan, vilket pressar cos(A) mot 0.",
+      "Resultatet är dimensionslöst. Det spelar ingen roll om dina <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">mått</a> är i fot, meter eller någon annan enhet – cosinus är ett rent förhållande."
+    ],
+    "whenToUse_intro": "Nå efter denna cosinusförhållande <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> när:",
+    "whenToUse_items": [
+      "Du känner till den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> och hypotenusan och behöver cosinusvärdet.",
+      "Du hittar den horisontella komponenten av en kraft-, hastighets- eller förskjutningsvektor.",
+      "Du vill verifiera ett triggvärde från en lärobok eller problemuppsättning.",
+      "Du arbetar med navigerings- eller lantmäteriproblem som involverar horisontella avstånd.",
+      "Du behöver cos(A) innan du beräknar en annan härledd kvantitet, som sekant eller tangent."
+    ],
+    "commonMistakes_intro": "Det här är de vanligaste cosinusfelen som elever gör:",
+    "commonMistakes_items": [
+      "Använd den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> istället för den intilliggande sidan. Cosinus använder benet bredvid <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A, inte det som ligger mittemot det.",
+      "Ange b större än c. I en giltig rätvinklig triangel är hypotenusan alltid den längsta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>. Om b överstiger c, bildar dina värden inte en rätvinklig triangel.",
+      "Vända bråkdelen. Att skriva c/b ger sekanten, inte cosinus.",
+      "Blanda den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> med hypotenusetiketten. Dubbelkolla vilken sida som är motsatt den högra <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkeln</a> (det vill säga hypotenusan) och vilken som ingår i vinkeln A (det vill säga den intilliggande sidan).",
+      "Använder <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidolängder</a> mätt i olika enheter utan att konvertera först."
+    ],
+    "relatedLinks": [
+      "Räknare för rätt triangel trigkvoter",
+      "Sinuskvotskalkylator",
+      "Tangentkvotskalkylator",
+      "Räknare för rät triangelvinkel"
+    ],
+    "faqs": [
+      {
+        "question": "Vad är formeln för cosinusförhållandet för en rätvinklig triangel?",
+        "answer": "Det är cos(A) = b / c, där b är den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> och c är hypotenusan. Intilliggande betyder benet som rör <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A."
+      },
+      {
+        "question": "Hur skiljer sig cosinus från sinus?",
+        "answer": "Sinus använder den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> över hypotenusan (a / c). Cosinus använder den intilliggande sidan över hypotenusan (b / c). De mäter olika sidor i förhållande till samma <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a>."
+      },
+      {
+        "question": "Vad betyder det om cos(A) = 0,5?",
+        "answer": "Det betyder att den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> är exakt halva hypotenusan. Detta händer när <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är 60°."
+      },
+      {
+        "question": "Kan cosinus vara större än 1?",
+        "answer": "Nej. I en rätvinklig triangel är hypotenusan alltid längre än den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>, så b/c är alltid mindre än 1."
+      },
+      {
+        "question": "Varför behöver jag bara två sidor för cosinus?",
+        "answer": "Cosinusformeln involverar endast den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> och hypotenusan. Den motsatta sidan är inte en del av beräkningen."
+      }
+    ]
+  },
+  "tangent-ratio-calculator": {
+    "slug": "tangent-förhållande-kalkylator",
+    "h1": "Tangentkvotskalkylator",
+    "headerSummary": "Hitta tan(A) från motsatt <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> a och intilliggande sida b för problem med lutning, stigning och löpning.",
+    "metaTitle": "Tangentkvotskalkylator | Rätt triangel tan(A)",
+    "metaDescription": "Använd denna tangentförhållande <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> för att hitta tan(A) i en rätvinklig triangel med motsatt <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> a och intilliggande sida b med formel, steg och exempel.",
+    "calculator_heading": "Beräkna Tangentkvot",
+    "calculator_outputLabel": "brun(A)",
+    "calculator_fields": [
+      "Motsatt sida a",
+      "Intilliggande sida b"
+    ],
+    "introHeading": "Hur den här Tangent Ratio Calculator fungerar",
+    "intro": [
+      "Tangent är den tredje av de primära <a href=\"/right-triangle-trig-ratios-calculator/\" class=\"text-primary hover:underline\">trig-förhållandena</a>, och den fungerar lite annorlunda än sinus och cosinus. Istället för att jämföra ett ben med hypotenusan, jämför tangent ett ben med det andra - närmare bestämt den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> till den intilliggande sidan. Detta gör den särskilt användbar vid problem med lutning och <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a>.",
+      "Denna <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> delar den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> a med den intilliggande sidan b och ger dig tan(A). Du behöver inte ta fram en kalkylatorapp – skriv bara in dina två benlängder och få svaret."
+    ],
+    "calculatorNote": "Ange motsatt <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> a och intilliggande sida b i inmatningsfälten ovan. Verktyget beräknar tan(A) = a / b. Båda värdena måste vara positiva.",
+    "formula_display": "tan(A) = a/b",
+    "formula_paragraphs": [
+      "Tangenten för <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är lika med motsatt <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> dividerat med den intilliggande sidan. Detta är TOA-delen av SOH-CAH-TOA.",
+      "Till skillnad från sinus och cosinus involverar tangent inte hypotenusan. Den använder bara de två benen. Detta betyder också att tangenten inte är begränsad till 1 – den kan vara vilket positivt tal som helst för spetsiga vinklar, och den växer utan gräns när <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A närmar sig 90°."
+    ],
+    "diagramExplanation": [
+      "För <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> a motsatt, sidan b ligger intill och sidan c är hypotenusan.",
+      "Tangent använder bara de två benen: den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> a och den intilliggande sidan b. Hypotenusan c förekommer inte i tangentformeln."
+    ],
+    "howToSteps": [
+      "Hitta <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A i den högra triangeln.",
+      "Identifiera <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> a, benet mittemot <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A.",
+      "Identifiera <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b, benet som bildar <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A längs hypotenusan.",
+      "Ange värdet på a i det första fältet.",
+      "Ange värdet på b i det andra fältet.",
+      "Klicka på Beräkna för att få brun(A).",
+      "Resultatet kan vara mindre än 1, lika med 1 eller större än 1."
+    ],
+    "example_intro": "En rätvinklig triangel har motsatt <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> a = 3 och intilliggande sida b = 4.",
+    "example_steps": [
+      "tan(A) = a/b",
+      "tan(A) = 3/4",
+      "tan(A) = 0,75"
+    ],
+    "example_conclusion": "Tangenten för <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är 0,75. För att hitta vinkeln: A = arctan(0,75) ≈ 36,87°.",
+    "whatResultMeans": [
+      "Tangent berättar om triangelns branthet från <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A:s perspektiv. Se det som en beräkning av ökningar över körning.",
+      "En tangent på 1 betyder att de motsatta och intilliggande sidorna är lika, vilket sker i en <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90 triangel</a>. Värden under 1 betyder att den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> är kortare än den intilliggande sidan – triangeln är bredare än den är hög. Värden över 1 betyder att den motsatta sidan är längre - triangeln är högre än den är bred.",
+      "I praktiska termer är tangent lutningen på hypotenuslinjen när du står vid <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A."
+    ],
+    "whenToUse_intro": "Denna tangentförhållande <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> är mest användbar när:",
+    "whenToUse_items": [
+      "Du har båda benen i triangeln och vill ha tangentförhållandet.",
+      "Du löser problem med lutning, lutning eller tonhöjd (stiga över körning).",
+      "Du måste hitta <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkeln</a> för höjd eller depression.",
+      "Du vill bestämma hur brant en ramp, tak eller lutning är.",
+      "Du konverterar mellan benlängder och <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a>-mått utan att använda hypotenusan."
+    ],
+    "commonMistakes_intro": "Undvik dessa vanliga tangentmisstag:",
+    "commonMistakes_items": [
+      "Inklusive hypotenusan i tangentformeln. Tangent använder bara de två benen - ingen hypotenusa inblandad.",
+      "Lägger in den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> i täljaren. Formeln är a / b (motsatt över intilliggande), inte b / a. Att vända det ger cotangens.",
+      "Förväntar sig att resultatet alltid ska vara mindre än 1. Till skillnad från sinus och cosinus kan tangent vara vilket positivt tal som helst.",
+      "Förvirrande vilket ben som är mitt emot och vilket som ligger intill. Identifiera dem alltid i förhållande till <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A, inte den rätta vinkeln.",
+      "Använd formeln för fel <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a>. Om du märkte vinkel B istället för vinkel A, byter de motsatta och intilliggande sidorna."
+    ],
+    "relatedLinks": [
+      "Räknare för rätt triangel trigkvoter",
+      "Sinuskvotskalkylator",
+      "Cosinuskvotskalkylator",
+      "Räknare för rät triangelvinkel"
+    ],
+    "faqs": [
+      {
+        "question": "Vad är formeln för tangentförhållandet?",
+        "answer": "Det är tan(A) = a / b, där a är den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> och b är den intilliggande sidan. Man delar mitt emot med intilliggande."
+      },
+      {
+        "question": "Kan tan(A) vara större än 1?",
+        "answer": "Ja. När den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> är längre än den intilliggande sidan, överstiger tangenten 1. Till exempel, tan(60°) ≈ 1,732."
+      },
+      {
+        "question": "Hur är tangent relaterad till lutning?",
+        "answer": "Tangent är i huvudsak hypotenusans lutning när den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> är den horisontella löpningen och den motsatta sidan är den vertikala stigningen. tan(A) = stiga/köra."
+      },
+      {
+        "question": "Varför använder tangenten inte hypotenusan?",
+        "answer": "Tangent mäter förhållandet mellan de två benen direkt. Hypotenusan behövs inte eftersom tangent beskriver formen (brantheten) på triangeln, inte skalan."
+      },
+      {
+        "question": "Vad händer när a = b?",
+        "answer": "När båda benen är lika är tan(A) = 1 och <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är exakt 45°."
+      }
+    ]
+  },
+  "cotangent-ratio-calculator": {
+    "slug": "cotangens-förhållande-kalkylator",
+    "h1": "Cotangens Ratio Calculator",
+    "headerSummary": "Beräkna cot(A) från intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b över motsatt sida a i en rätvinklig triangel.",
+    "metaTitle": "Cotangens Ratio Calculator | Rätt triangelsäng (A)",
+    "metaDescription": "Använd denna kotangensförhållande <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> för att hitta cot(A) i en rätvinklig triangel med hjälp av intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b och motsatt sida a med formel, steg och exempel.",
+    "calculator_heading": "Beräkna Cotangens Ratio",
+    "calculator_outputLabel": "spjälsäng(A)",
+    "calculator_fields": [
+      "Intilliggande sida b",
+      "Motsatt sida a"
+    ],
+    "introHeading": "Hur den här Cotangens Ratio Calculator fungerar",
+    "intro": [
+      "Cotangens är det reciproka av tangent. Medan tangent delar den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> med den intilliggande sidan, vänder cotangenten den bråkdelen – den delar den intilliggande sidan med den motsatta sidan. Det dyker upp mindre ofta i grundläggande geometriklasser, men det spelar en viktig roll i avancerad trigonometri och kalkyl.",
+      "Denna <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> tar den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> b och den motsatta sidan a, och returnerar sedan cot(A) = b / a. Om du är van vid att arbeta med tangent är cotangens helt enkelt den omvända bråkdelen."
+    ],
+    "calculatorNote": "Ange intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b och motsatt sida a i fälten ovan. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylatorn</a> returnerar cot(A) = b / a. Båda värdena måste vara positiva.",
+    "formula_display": "barnsäng(A) = b/a",
+    "formula_paragraphs": [
+      "Cotangens för <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är lika med den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> dividerat med den motsatta sidan. Det är det reciproka av tangent: cot(A) = 1 / tan(A).",
+      "Liksom tangent använder cotangent endast de två benen i den räta triangeln. Hypotenusan är inte inblandad. Cotangens kan ha vilket positivt värde som helst för spetsiga vinklar."
+    ],
+    "diagramExplanation": [
+      "För <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> a motsatt, sidan b ligger intill och sidan c är hypotenusan.",
+      "Cotangent använder den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> b (benet bredvid <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A) som täljare och den motsatta sidan a (mot vinkel A) som nämnare. Hypotenusan c används inte."
+    ],
+    "howToSteps": [
+      "Identifiera <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A i din högra triangel.",
+      "Hitta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b, det intilliggande benet — det bredvid <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A och den rätta vinkeln.",
+      "Hitta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> a, det motsatta benet – det som är mitt emot <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A.",
+      "Ange b i det första inmatningsfältet.",
+      "Ange a i det andra inmatningsfältet.",
+      "Klicka på Beräkna.",
+      "Resultatet är cot(A), vilket kan vara vilket positivt tal som helst."
+    ],
+    "example_intro": "En rätvinklig triangel har intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b = 4 och motsatt sida a = 3.",
+    "example_steps": [
+      "barnsäng(A) = b/a",
+      "spjälsäng(A) = 4/3",
+      "barnsäng (A) ≈ 1,3333"
+    ],
+    "example_conclusion": "Cotangensen för <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är ungefär 1,3333. Du kan verifiera detta: tan(A) = 3/4 = 0,75 och 1/0,75 = 1,3333.",
+    "whatResultMeans": [
+      "Cotangens talar om hur många gånger den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> passar i förhållande till den motsatta sidan. Det är den överkörda versionen av branthetsförhållandet.",
+      "En cotangens på 1 betyder att båda benen är lika (en 45° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a>). Värden större än 1 betyder att den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> är längre än den motsatta sidan — triangeln är bredare och vinkeln är mindre. Värden mindre än 1 betyder att den motsatta sidan är längre - vinkeln är större och triangeln är brantare.",
+      "Eftersom cotangens är det reciproka till tangent kan du alltid konvertera mellan dem: cot(A) = 1 / tan(A) och tan(A) = 1 / cot(A)."
+    ],
+    "whenToUse_intro": "Välj denna kotangensförhållande <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> när:",
+    "whenToUse_items": [
+      "Du behöver den reciproka tangenten utan att manuellt beräkna 1 / tan(A).",
+      "Du arbetar med formler som specifikt kräver cotangens, såsom vissa kalkylidentiteter.",
+      "Du föredrar att tänka i termer av run-over-rise snarare än rise-over-run.",
+      "Du löser problem inom mätning, konstruktion eller trigonometriska bevis."
+    ],
+    "commonMistakes_intro": "Håll utkik efter dessa kotangenta fallgropar:",
+    "commonMistakes_items": [
+      "Att skriva a/b istället för b/a. Cotangent placerar den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> överst, inte den motsatta sidan. Att byta dem ger dig tangent.",
+      "Förvirrande cotangens med cosinus. Cotangens är b/a (intill motstående). Cosinus är b/c (intill hypotenusan). De är olika förhållanden.",
+      "Använd hypotenusan i beräkningen. Cotangent involverar bara de två benen.",
+      "Att glömma det är tangentens ömsesidighet. Om du redan känner till tan(A), ta bara 1 / tan(A) för att få cot(A).",
+      "Blandar ihop vilken <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> som ligger intill och vilken som är motsatt. Identifiera alltid sidor i förhållande till <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A."
+    ],
+    "relatedLinks": [
+      "Räknare för rätt triangel trigkvoter",
+      "Tangentkvotskalkylator",
+      "Sinuskvotskalkylator",
+      "Cosinuskvotskalkylator"
+    ],
+    "faqs": [
+      {
+        "question": "Vad är kotangensformeln för en rätvinklig triangel?",
+        "answer": "Det är cot(A) = b / a, där b är den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> och a är den motsatta sidan av <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkeln</a> A. Detta är motsatsen till tangentfraktionen."
+      },
+      {
+        "question": "Hur förhåller sig cotangens till tangent?",
+        "answer": "Cotangens är det reciproka av tangent. Om tan(A) = 0,75, då cot(A) = 1 / 0,75 ≈ 1,3333."
+      },
+      {
+        "question": "När skulle jag använda cotangens istället för tangent?",
+        "answer": "Använd cotangens när en formel specifikt kräver det, eller när du vill ha förhållandet angränsande till motsatt direkt. I många kalkyl- och fysiksammanhang förekommer cotangens i identiteter och derivatformler."
+      },
+      {
+        "question": "Kan barnsäng(A) vara lika med noll i en rätvinklig triangel?",
+        "answer": "I en rätvinklig triangel med endast spetsiga vinklar är cot(A) alltid positiv. Cotangens närmar sig noll när <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A närmar sig 90°, men 90°-vinkeln är den räta vinkeln i sig, inte en spetsig vinkel du skulle mäta."
+      },
+      {
+        "question": "Är cotangens detsamma som 1 dividerat med tangent?",
+        "answer": "Ja. barnsäng(A) = 1 / brun(A) = b / a. Båda uttrycken ger samma resultat."
+      }
+    ]
+  },
+  "secant-ratio-calculator": {
+    "slug": "sekant-förhållande-kalkylator",
+    "h1": "Secant Ratio Calculator",
+    "headerSummary": "Hitta sec(A) genom att jämföra hypotenusa c med intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b, den reciproka av cosinus.",
+    "metaTitle": "Sekantskvotskalkylator | Rätt triangel sek(A)",
+    "metaDescription": "Använd denna sekantförhållande <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> för att hitta sek(A) i en rätvinklig triangel med hypotenusa c och intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b med formel, steg och exempel.",
+    "calculator_heading": "Beräkna sekantförhållande",
+    "calculator_outputLabel": "sek(A)",
+    "calculator_fields": [
+      "Hypotenus c",
+      "Intilliggande sida b"
+    ],
+    "introHeading": "Hur den här sekantskvotskalkylatorn fungerar",
+    "intro": [
+      "Secant är det ömsesidiga av cosinus. Där cosinus delar den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> med hypotenusan, vänder sekanten på det — den delar hypotenusan med den intilliggande sidan. Resultatet är alltid större än eller lika med 1 eftersom hypotenusan alltid är den längsta sidan i en rätvinklig triangel.",
+      "Denna <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> tar två ingångar – hypotenusa c och intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b – och returnerar sek(A). Det är ett snabbt sätt att få detta ömsesidiga förhållande utan att göra divisionen för hand eller beräkna cosinus först."
+    ],
+    "calculatorNote": "Ange hypotenusan c och intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b i fälten ovan. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylatorn</a> beräknar sek(A) = c / b. Båda värdena måste vara positiva och c måste vara större än b.",
+    "formula_display": "sek(A) = c/b",
+    "formula_paragraphs": [
+      "Sekant av <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är lika med hypotenusan dividerat med den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>. Detta är den reciproka av cosinus: sek(A) = 1 / cos(A).",
+      "Eftersom hypotenusan alltid är längre än den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> i en rätvinklig triangel, är sek(A) alltid större än 1. När <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkeln</a> A blir större, krymper den intilliggande sidan relativt hypotenusan, så sekanten ökar."
+    ],
+    "diagramExplanation": [
+      "För <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> a motsatt, sidan b ligger intill och sidan c är hypotenusan.",
+      "Secant använder hypotenusan c som täljare och den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> b som nämnare. Den motsatta sidan a är inte en del av sekantberäkningen."
+    ],
+    "howToSteps": [
+      "Identifiera <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A i din högra triangel.",
+      "Hitta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> c, hypotenusan — den längsta sidan, mittemot den högra <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkeln</a>.",
+      "Hitta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b, det intilliggande benet — sidan som rör både <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A och den räta vinkeln.",
+      "Ange c i det första inmatningsfältet.",
+      "Ange b i det andra inmatningsfältet.",
+      "Klicka på Beräkna.",
+      "Resultatet är sek(A), som alltid är större än eller lika med 1."
+    ],
+    "example_intro": "En rätvinklig triangel har hypotenusan c = 5 och intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b = 4.",
+    "example_steps": [
+      "sek(A) = c/b",
+      "sek(A) = 5/4",
+      "sek(A) = 1,25"
+    ],
+    "example_conclusion": "Sekanten för <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är 1,25. För att verifiera: cos(A) = 4 / 5 = 0,8 och 1 / 0,8 = 1,25.",
+    "whatResultMeans": [
+      "Secant berättar hur många gånger längre hypotenusan är jämfört med den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>. En sekant på 1,25 betyder att hypotenusan är 25 % längre än den intilliggande sidan.",
+      "Minsta värdet på sekant i en rätvinklig triangel är något över 1, vilket inträffar när <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är mycket liten och den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> är nästan lika lång som hypotenusan. När vinkeln A ökar förkortas den intilliggande sidan i förhållande till hypotenusan och sekanten blir större.",
+      "Sekant är användbart när du behöver skala från den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> till hypotenusan, eller när en formel kräver 1 / cos(A)."
+    ],
+    "whenToUse_intro": "Denna sekantförhållande <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> är det rätta valet när:",
+    "whenToUse_items": [
+      "En formel kräver sekant eller 1 / cos(A) och du vill ha värdet direkt.",
+      "Du måste ta reda på hur mycket längre hypotenusan är jämfört med den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>.",
+      "Du arbetar med kalkylproblem som involverar sekant i derivator eller integraler.",
+      "Du kontrollerar strukturella beräkningar där hypotenusan representerar den faktiska längden och den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> representerar den horisontella <a href=\"/right-triangle-projection-calculator/\" class=\"text-primary hover:underline\">projektionen</a>."
+    ],
+    "commonMistakes_intro": "Dessa sekantfel slår upp eleverna oftast:",
+    "commonMistakes_items": [
+      "Förvirrande sekant med cosinus. Cosinus är b/c (intill hypotenusan). Sekant är den reciproka: c / b (hypotenus över angränsande).",
+      "Få ett resultat som är mindre än 1. Om ditt svar är under 1 har du sannolikt vänt bråkdelen. I en giltig rätvinklig triangel är sek(A) alltid större än eller lika med 1.",
+      "Använd den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> istället för den intilliggande sidan. Secant parar hypotenusan med den intilliggande sidan, inte den motsatta sidan.",
+      "Blandar ihop sekant och cosekant. Secant är det ömsesidiga av cosinus. Cosecant är det reciproka av sinus. De använder olika sidor.",
+      "Ange b större än c. Hypotenusan måste alltid vara längre än den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>."
+    ],
+    "relatedLinks": [
+      "Räknare för rätt triangel trigkvoter",
+      "Cosinuskvotskalkylator",
+      "Cosecant Ratio Calculator",
+      "Cotangens Ratio Calculator"
+    ],
+    "faqs": [
+      {
+        "question": "Vad är sekantförhållandet i en rätvinklig triangel?",
+        "answer": "Sekant definieras som sec(A) = c / b, där c är hypotenusan och b är den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>. Det är cosinusets ömsesidighet."
+      },
+      {
+        "question": "Varför är sekant alltid större än 1?",
+        "answer": "Eftersom hypotenusan c alltid är den längsta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> i en rätvinklig triangel. Att dividera ett större tal (c) med ett mindre (b) ger alltid ett resultat som är större än 1."
+      },
+      {
+        "question": "Hur konverterar jag mellan sekant och cosinus?",
+        "answer": "sek(A) = 1/cos(A) och cos(A) = 1/sek(A). Om du känner till den ena kan du hitta den andra genom att ta det ömsesidiga."
+      },
+      {
+        "question": "Vad är sek(45°)?",
+        "answer": "I en <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90 triangel</a> är hypotenusan √2 gånger benet. Så sek(45°) = √2 ≈ 1,4142."
+      },
+      {
+        "question": "Används secant i verkliga applikationer?",
+        "answer": "Ja. Secant visas i fysikformler, tekniska beräkningar och kalkyler. Den används när du behöver skala ett horisontellt avstånd till den faktiska väglängden längs en lutning."
+      }
+    ]
+  },
+  "cosecant-ratio-calculator": {
+    "slug": "cosecant-ratio-kalkylator",
+    "h1": "Cosecant Ratio Calculator",
+    "headerSummary": "Beräkna csc(A) från hypotenusan c och motsatt <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> a, den reciproka av sinus.",
+    "metaTitle": "Cosecant Ratio Calculator | Rätt triangel csc(A)",
+    "metaDescription": "Använd denna cosecant ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> för att hitta csc(A) i en rätvinklig triangel med hypotenusa c och motsatt <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> a med formel, steg och exempel.",
+    "calculator_heading": "Beräkna Cosecant Ratio",
+    "calculator_outputLabel": "csc(A)",
+    "calculator_fields": [
+      "Hypotenus c",
+      "Motsatt sida a"
+    ],
+    "introHeading": "Hur denna Cosecant Ratio Calculator fungerar",
+    "intro": [
+      "Cosecant är det reciproka av sinus. Den dividerar hypotenusan med den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>, vilket ger dig ett förhållande som alltid är större än 1 i en rätvinklig triangel. Du kanske inte ser det så ofta som sinus eller cosinus i grundkurser, men det är viktigt i mer avancerad matematik och vissa fysiktillämpningar.",
+      "Denna <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> gör det enkelt. Ange hypotenusan c och den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> a, och den returnerar csc(A) omedelbart. Du behöver inte beräkna sinus först och sedan vända bråket."
+    ],
+    "calculatorNote": "Ange hypotenusa c och motsatt <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> a i fälten ovan. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylatorn</a> beräknar csc(A) = c/a. Båda värdena måste vara positiva och c måste vara större än a.",
+    "formula_display": "csc(A) = c/a",
+    "formula_paragraphs": [
+      "Cosecant av <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är lika med hypotenusan dividerat med den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>. Det är det reciproka av sinus: csc(A) = 1 / sin(A).",
+      "Hypotenusan är alltid längre än den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>, så csc(A) ger alltid ett värde större än 1 för spetsiga vinklar. När <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkeln</a> A minskar blir den motsatta sidan kortare i förhållande till hypotenusan och cosecanten ökar."
+    ],
+    "diagramExplanation": [
+      "För <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> a motsatt, sidan b ligger intill och sidan c är hypotenusan.",
+      "Cosecant använder hypotenusan c som täljare och den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> a som nämnare. Den intilliggande sidan b spelar ingen roll i cosecantformeln."
+    ],
+    "howToSteps": [
+      "Identifiera <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A i din högra triangel.",
+      "Lokalisera hypotenusan c — <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> mittemot den högra <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkeln</a> och den längsta sidan.",
+      "Leta upp den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> a — benet mittemot <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A.",
+      "Skriv c i det första inmatningsfältet.",
+      "Skriv a i det andra inmatningsfältet.",
+      "Klicka på Beräkna.",
+      "Resultatet är csc(A), alltid större än 1."
+    ],
+    "example_intro": "En rätvinklig triangel har hypotenusan c = 5 och motsatt <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> a = 3.",
+    "example_steps": [
+      "csc(A) = c/a",
+      "csc(A) = 5/3",
+      "csc(A) ≈ 1,6667"
+    ],
+    "example_conclusion": "Kosekanten för <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är ungefär 1,6667. Verifiering: sin(A) = 3/5 = 0,6 och 1/0,6 ≈ 1,6667.",
+    "whatResultMeans": [
+      "Cosecant berättar hur många gånger längre hypotenusan är jämfört med den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>. En cosecant på 1,6667 betyder att hypotenusan är cirka 67 % längre än den motsatta sidan.",
+      "När <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är stor (nära 90°) är den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> nästan lika lång som hypotenusan, så csc(A) är nära 1. När vinkeln A är liten är den motsatta sidan mycket kortare och cosecanten blir stor.",
+      "Tänk på det så här: om du känner till den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> och vill hitta hypotenusan, multiplicera den motsatta sidan med csc(A). Det ger dig c = a × csc(A)."
+    ],
+    "whenToUse_intro": "Nå för denna cosecant ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> när:",
+    "whenToUse_items": [
+      "Du behöver det reciproka av sinus utan att först beräkna sin(A).",
+      "En formel kräver specifikt cosecant, som förekommer i vissa trigonometriska identiteter.",
+      "Du skalar den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> upp till hela hypotenusans längd.",
+      "Du arbetar med fysik eller ingenjörsproblem som involverar krafter, vågfunktioner eller oscillationsformler som använder cosecant."
+    ],
+    "commonMistakes_intro": "Se upp för dessa cosecant-fel:",
+    "commonMistakes_items": [
+      "Förväxlar cosecant med sinus. Sinus är a/c (motsatt över hypotenusan). Cosecant är den reciproka: c / a (hypotenus över motsatt).",
+      "Blandar ihop cosecant med secant. Cosecant är baserad på den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> (reciprok av sinus). Sekant är baserad på den intilliggande sidan (reciprok av cosinus). De använder olika ben.",
+      "Få ett resultat mindre än 1. Om ditt svar är under 1 kan du ha angett värdena i fel ordning. csc(A) är alltid större än 1.",
+      "Använd den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> istället för den motsatta sidan. Cosecant parar hypotenusan endast med den motsatta sidan.",
+      "Förväntar sig att cosecant och cosinus är relaterade till namnet. Trots co-prefixet är cosecant det reciproka av sinus, inte cosinus."
+    ],
+    "relatedLinks": [
+      "Räknare för rätt triangel trigkvoter",
+      "Sinuskvotskalkylator",
+      "Secant Ratio Calculator",
+      "Cotangens Ratio Calculator"
+    ],
+    "faqs": [
+      {
+        "question": "Vad är kosekantformeln i en rätvinklig triangel?",
+        "answer": "Det är csc(A) = c / a, där c är hypotenusan och a är den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>. Cosecant är det reciproka av sinus."
+      },
+      {
+        "question": "Hur är cosecant relaterad till sinus?",
+        "answer": "csc(A) = 1 / sin(A). Om sin(A) = 0,6, då csc(A) = 1 / 0,6 ≈ 1,6667."
+      },
+      {
+        "question": "Varför är cosecant alltid större än 1?",
+        "answer": "Eftersom hypotenusan alltid är längre än den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> i en rätvinklig triangel. Bråket c/a överstiger alltid 1."
+      },
+      {
+        "question": "Vad är csc(30°)?",
+        "answer": "I en <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90 triangel</a>, sin(30°) = 0,5, så csc(30°) = 1 / 0,5 = 2. Hypotenusan är exakt två gånger motsatt <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a>."
+      },
+      {
+        "question": "När skulle jag använda cosecant istället för sinus?",
+        "answer": "Använd cosecant när en formel kräver det direkt, eller när du vill hitta hypotenusan från den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>: c = a × csc(A). Det sparar steget att dividera med sinus."
+      }
+    ]
+  }
+}

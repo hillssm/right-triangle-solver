@@ -1,0 +1,557 @@
+{
+  "sine-ratio-calculator": {
+    "slug": "正弦比计算器",
+    "h1": "正弦比计算器",
+    "headerSummary": "从直角三角形的对边 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a 和斜边 c 求 sin(A)。",
+    "metaTitle": "正弦比计算器|直角三角形 sin(A)",
+    "metaDescription": "使用此正弦比 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">计算器</a> 通过公式、步骤和示例，使用对边 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">边</a> a 和斜边 c 求直角三角形中的 sin(A)。",
+    "calculator_heading": "计算正弦比",
+    "calculator_outputLabel": "罪恶(A)",
+    "calculator_fields": [
+      "对面a",
+      "斜边c"
+    ],
+    "introHeading": "正弦比计算器的工作原理",
+    "intro": [
+      "正弦比是您在几何中学习的第一个三角函数之一。它将直角三角形中的特定 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"> 角 </a> 连接到其两条边 - 对边 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> 和斜边。如果您知道这两个 <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\"> 测量值 </a>，此计算器会立即计算出 sin(A)。",
+      "无论您是在解决家庭作业问题、检查考试式答案，还是解决实际测量任务，该工具都消除了手动划分步骤。输入您的值并使用所示公式得出结果。"
+    ],
+    "calculatorNote": "在上面的字段中输入对边 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> a 和斜边 c 的长度。 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">计算器</a>将a除以c并返回sin(A)。两个值都必须为正，并且 c 必须大于 a。",
+    "formula_display": "正弦(A) = a / c",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角</a> A 的正弦等于对边<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">边</a> 的长度除以斜边的长度。这通常与 SOH-CAH-TOA 的 SOH 部分一起记住。",
+      "在直角三角形中，相对的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> 是 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"> 角 </a> A 的直接对面。斜边始终是最长的边 — 面向 90° 角的边。由于斜边始终比任何边都长，因此对于锐角，sin(A) 始终落在 0 和 1 之间。"
+    ],
+    "diagramExplanation": [
+      "对于 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角</a> A，<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">边</a> a 是对边，b 边是相邻边，c 边是斜边。",
+      "正弦比仅使用这三条边中的两条：相对的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> a（直接与 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"> 角 </a> A 相对）和斜边 c（最长的边，与 B 处的直角相对）。"
+    ],
+    "howToSteps": [
+      "确定直角三角形中的 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角</a> A。它必须是两个锐角之一，而不是 90° 角。",
+      "找到 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"> 角 </a> A 对面的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a>。这是 a 边。",
+      "找到斜边。这是<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">边</a> c，最长的边，与右<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角</a>相对。",
+      "在第一个输入字段中输入 a 的值。",
+      "在第二个输入字段中输入 c 的值。",
+      "单击“计算”可查看 sin(A)。",
+      "查看结果。它应该是 0 到 1 之间的小数。"
+    ],
+    "example_intro": "假设有一个直角三角形，其对边 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> a = 3，斜边 c = 5。",
+    "example_steps": [
+      "正弦(A) = a / c",
+      "正弦(A) = 3 / 5",
+      "正弦(A) = 0.6"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A 的正弦值为 0.6。这意味着相对的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> 是斜边长度的 60%。如果您需要实际角度，请取反正弦：A = arcsin(0.6) ≈ 36.87°。",
+    "whatResultMeans": [
+      "输出是无单位的比率。它告诉您相对的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> 与斜边的大小相比如何。结果 0.5 意味着对边正好是斜边的一半 — 这发生在 <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90 三角形 </a> 中，其中 A = 30°。",
+      "小值（接近 0）意味着 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A 较小，相对于斜边而言，相对的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> 较短。接近 1 的值意味着角度 A 较大（接近 90°），并且对边几乎与斜边一样长。",
+      "由于 sin(A) 是两个长度的比，因此它没有单位。无论三角形的测量单位是厘米、英寸还是米，只要两边使用相同的单位，正弦值就保持不变。"
+    ],
+    "whenToUse_intro": "在以下任何情况下使用此正弦比 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">计算器</a>：",
+    "whenToUse_items": [
+      "您知道相反的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> 和斜边，并且需要正弦值。",
+      "您准备使用反正弦函数求 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A。",
+      "您需要验证教科书的答案或检查您自己的三角学工作。",
+      "您正在解决涉及垂直分量的物理问题，例如坡道的高度或斜坡上的垂直力。",
+      "您正在将向量分解为垂直部分和水平部分。"
+    ],
+    "commonMistakes_intro": "计算正弦时请注意以下常见错误：",
+    "commonMistakes_items": [
+      "使用相邻的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> 而不是相反的边。正弦使用 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A 对面的边，而不是它旁边的边。",
+      "交换公式中的 a 和 c。相反的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> 放入分子，斜边放入分母。写 c / a 给出的是余割，而不是正弦。",
+      "使用以不同单位测量的边长。如果a的单位是厘米，c的单位是英寸，则该比率没有意义。先换算成同一单位。",
+      "忘记了 c 必须大于 a。在有效的直角三角形中，斜边始终是最长的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a>。",
+      "输入右 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> (90°) 作为角度 A。正弦仅适用于锐角。 90°角位于顶点B。"
+    ],
+    "relatedLinks": [
+      "直角三角形三角比率计算器",
+      "余弦比计算器",
+      "正切比计算器",
+      "直角三角形角度计算器"
+    ],
+    "faqs": [
+      {
+        "question": "直角三角形中sin(A)的公式是什么？",
+        "answer": "公式为 sin(A) = a / c，其中 a 是 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"> 角 </a> A 的对边 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a>，c 是斜边。将对面除以斜边。"
+      },
+      {
+        "question": "为什么直角三角形中sin(A)总是小于1？",
+        "answer": "因为斜边 c 始终是最长的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a>。由于 a 比 c 短，因此分数 a / c 始终小于 1。"
+      },
+      {
+        "question": "我可以使用这个计算器来计算角度吗？",
+        "answer": "此 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"> 计算器 </a> 为您提供正弦值。要查找 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"> 角度 </a>，请使用反正弦函数：A = arcsin(sin(A))。您可以使用我们的直角三角形角度计算器来完成此操作。"
+      },
+      {
+        "question": "sin(A) 结果为 0.5 意味着什么？",
+        "answer": "这意味着相对的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> 恰好是斜边长度的一半。这对应于 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A 为 30°。"
+      },
+      {
+        "question": "我需要输入邻边来计算正弦吗？",
+        "answer": "不会。正弦仅使用相反的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> a 和斜边 c。邻边 b 不是正弦公式的一部分。"
+      }
+    ]
+  },
+  "cosine-ratio-calculator": {
+    "slug": "cosine-ratio-calculator",
+    "h1": "Cosine Ratio Calculator",
+    "headerSummary": "Calculate cos(A) from the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b and hypotenuse c with clear right-triangle steps.",
+    "metaTitle": "Cosine Ratio Calculator | Right Triangle cos(A)",
+    "metaDescription": "Use this cosine ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> to find cos(A) in a right triangle using adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b and hypotenuse c with formula, steps, and examples.",
+    "calculator_heading": "Calculate Cosine Ratio",
+    "calculator_outputLabel": "cos(A)",
+    "calculator_fields": [
+      "Adjacent side b",
+      "Hypotenuse c"
+    ],
+    "introHeading": "How This Cosine Ratio Calculator Works",
+    "intro": [
+      "The cosine ratio measures how the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> of a right triangle compares to the hypotenuse. It is the second part of SOH-CAH-TOA and one of the most commonly used trig functions in geometry, physics, and engineering.",
+      "This <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> takes two inputs — the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b and the hypotenuse c — and returns cos(A). It handles the division for you and shows the result immediately, so you can focus on understanding the geometry instead of the arithmetic."
+    ],
+    "calculatorNote": "Type the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b and hypotenuse c into the input fields above. The <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> computes cos(A) = b / c. Both values must be positive, and c must be larger than b.",
+    "formula_display": "cos(A) = b / c",
+    "formula_paragraphs": [
+      "The cosine of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A equals the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> divided by the hypotenuse. This is the CAH in SOH-CAH-TOA.",
+      "The adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b is the leg that touches <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A and the right angle. The hypotenuse c sits across from the right angle and is always the longest side. Because the hypotenuse is longer than any leg, cos(A) always produces a value between 0 and 1 for acute angles."
+    ],
+    "diagramExplanation": [
+      "For <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a is opposite, side b is adjacent, and side c is the hypotenuse.",
+      "The cosine ratio uses the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b (the leg that forms <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A along with the hypotenuse) and the hypotenuse c. Side a is not part of the cosine calculation."
+    ],
+    "howToSteps": [
+      "Locate <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A in your right triangle. It is one of the two acute angles.",
+      "Identify the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. This is side b — the leg that forms <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A together with the hypotenuse.",
+      "Identify the hypotenuse c, the <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> opposite the 90° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a>.",
+      "Enter the value of b in the first field.",
+      "Enter the value of c in the second field.",
+      "Press Calculate to see cos(A).",
+      "Check that the result is between 0 and 1."
+    ],
+    "example_intro": "A right triangle has adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b = 4 and hypotenuse c = 5.",
+    "example_steps": [
+      "cos(A) = b / c",
+      "cos(A) = 4 / 5",
+      "cos(A) = 0.8"
+    ],
+    "example_conclusion": "Cosine of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is 0.8. The adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is 80% of the hypotenuse length. To find the angle: A = arccos(0.8) ≈ 36.87°.",
+    "whatResultMeans": [
+      "Cosine tells you how much of the hypotenuse length is covered by the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. A cosine of 0.8 means the adjacent side stretches 80% as far as the hypotenuse does.",
+      "When <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is small, the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is nearly as long as the hypotenuse, so cos(A) is close to 1. When angle A is large (near 90°), the adjacent side shrinks relative to the hypotenuse, pushing cos(A) toward 0.",
+      "The result is dimensionless. It does not matter whether your <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">measurements</a> are in feet, meters, or any other unit — cosine is a pure ratio."
+    ],
+    "whenToUse_intro": "Reach for this cosine ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> when:",
+    "whenToUse_items": [
+      "You know the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> and hypotenuse and need the cosine value.",
+      "You are finding the horizontal component of a force, velocity, or displacement vector.",
+      "You want to verify a trig value from a textbook or problem set.",
+      "You are working on navigation or surveying problems that involve horizontal distances.",
+      "You need cos(A) before computing another derived quantity, like secant or tangent."
+    ],
+    "commonMistakes_intro": "These are the most frequent cosine errors students make:",
+    "commonMistakes_items": [
+      "Using the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> instead of the adjacent side. Cosine uses the leg next to <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A, not the one across from it.",
+      "Entering b larger than c. In a valid right triangle, the hypotenuse is always the longest <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. If b exceeds c, your values do not form a right triangle.",
+      "Reversing the fraction. Writing c / b gives the secant, not the cosine.",
+      "Mixing the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> with the hypotenuse label. Double-check which side is opposite the right <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> (that is the hypotenuse) and which forms part of angle A (that is the adjacent side).",
+      "Using <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side lengths</a> measured in different units without converting first."
+    ],
+    "relatedLinks": [
+      "Right Triangle Trig Ratios Calculator",
+      "Sine Ratio Calculator",
+      "Tangent Ratio Calculator",
+      "Right Triangle Angle Calculator"
+    ],
+    "faqs": [
+      {
+        "question": "What is the cosine ratio formula for a right triangle?",
+        "answer": "它是 cos(A) = b / c，其中 b 是相邻的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a>，c 是斜边。相邻是指接触 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A 的边。"
+      },
+      {
+        "question": "余弦与正弦有何不同？",
+        "answer": "正弦使用斜边 (a / c) 的相反 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a>。余弦使用斜边 (b / c) 的邻边。他们测量相对于相同<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a>的不同边。"
+      },
+      {
+        "question": "如果 cos(A) = 0.5，这意味着什么？",
+        "answer": "这意味着相邻的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> 恰好是斜边的一半。当 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A 为 60° 时会发生这种情况。"
+      },
+      {
+        "question": "余弦可以大于1吗？",
+        "answer": "不会。在直角三角形中，斜边始终比相邻的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> 长，因此 b / c 始终小于 1。"
+      },
+      {
+        "question": "为什么余弦只需要两侧？",
+        "answer": "余弦公式只涉及相邻的<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">边</a>和斜边。对面不计算在内。"
+      }
+    ]
+  },
+  "tangent-ratio-calculator": {
+    "slug": "正切比计算器",
+    "h1": "正切比计算器",
+    "headerSummary": "对于斜率、上升和运行问题，从相对的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> a 和相邻边 b 求 tan(A)。",
+    "metaTitle": "正切比计算器 |直角三角形 tan(A)",
+    "metaDescription": "使用此正切比<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">计算器</a>通过公式、步骤和示例，使用对边<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">边</a> a 和相邻边 b 求直角三角形中的 tan(A)。",
+    "calculator_heading": "计算正切比",
+    "calculator_outputLabel": "棕褐色(A)",
+    "calculator_fields": [
+      "对面a",
+      "相邻边b"
+    ],
+    "introHeading": "正切比计算器的工作原理",
+    "intro": [
+      "正切是主要 <a href=\"/right-triangle-trig-ratios-calculator/\" class=\"text-primary hover:underline\"> 三角比 </a> 的第三个，它的工作方式与正弦和余弦略有不同。切线不是将一条边与斜边进行比较，而是将一条边与另一条边进行比较，具体来说，是将相对的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边</a> 与相邻边进行比较。这使得它在坡度和<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a>高程问题中特别有用。",
+      "此 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"> 计算器 </a> 将相反的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> a 除以相邻边 b，得到 tan(A)。无需拿出计算器应用程序 - 只需输入您的两条腿长即可得到答案。"
+    ],
+    "calculatorNote": "在上面的输入字段中输入相对的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> a 和相邻的边 b。该工具计算 tan(A) = a / b。两个值都必须为正。",
+    "formula_display": "tan(A) = a / b",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A 的正切等于对边<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">边</a>除以相邻边。这是 SOH-CAH-TOA 的 TOA 部分。",
+      "与正弦和余弦不同，正切不涉及斜边。它只使用两条腿。这也意味着正切值的上限不为 1 — 对于锐角，它可以是任何正数，并且当 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A 接近 90° 时，它会无限增长。"
+    ],
+    "diagramExplanation": [
+      "对于 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角</a> A，<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">边</a> a 是对边，b 边是相邻边，c 边是斜边。",
+      "切线仅使用两条边：相对的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> a 和相邻的边 b。斜边 c 不会出现在正切公式中。"
+    ],
+    "howToSteps": [
+      "找到直角三角形中的 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角</a> A。",
+      "识别 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> a，即 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"> 角 </a> A 正对面的腿。",
+      "确定 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b，即沿斜边形成 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A 的边。",
+      "在第一个字段中输入 a 的值。",
+      "在第二个字段中输入 b 的值。",
+      "单击“计算”即可得到 tan(A)。",
+      "结果可以小于 1、等于 1 或大于 1。"
+    ],
+    "example_intro": "直角三角形的对边 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">边</a> a = 3，邻边 b = 4。",
+    "example_steps": [
+      "tan(A) = a / b",
+      "tan(A) = 3 / 4",
+      "tan(A) = 0.75"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A 的正切值为 0.75。求角度：A = arctan(0.75) ≈ 36.87°。",
+    "whatResultMeans": [
+      "正切告诉您从 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A 的角度来看三角形的陡度。将其视为上升超过运行的计算。",
+      "正切为 1 表示对边和相邻边相等，这发生在 <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90 三角形</a> 中。低于 1 的值意味着相对的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> 比相邻边短 - 三角形的宽度大于高度。值高于 1 意味着对边更长 - 三角形的高度大于宽度。",
+      "实际上，切线是当您站在 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A 时斜边线的斜率。"
+    ],
+    "whenToUse_intro": "此正切比 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">计算器</a> 在以下情况下最有用：",
+    "whenToUse_items": [
+      "您有三角形的两条边并需要正切比。",
+      "您正在解决坡度、坡度或坡度问题（上升超过运行）。",
+      "您需要找到仰角或俯角的<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a>。",
+      "您想要确定坡道、屋顶或斜坡的陡度。",
+      "您无需使用斜边即可在腿长和 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> 度量之间进行转换。"
+    ],
+    "commonMistakes_intro": "避免这些常见的切线错误：",
+    "commonMistakes_items": [
+      "包括正切公式中的斜边。切线仅使用两条边——不涉及斜边。",
+      "将相邻的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> 放入分子中。公式是a/b（相反比相邻），而不是b/a。将其反转即可得到余切。",
+      "期望结果始终小于 1。与正弦和余弦不同，正切可以是任何正数。",
+      "混淆哪条腿是相对的，哪条腿是相邻的。始终相对于 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A 识别它们，而不是直角。",
+      "使用错误的<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a>公式。如果您将角 A 标记为 B 角，则对边和相邻边会交换。"
+    ],
+    "relatedLinks": [
+      "直角三角形三角比率计算器",
+      "正弦比计算器",
+      "余弦比计算器",
+      "直角三角形角度计算器"
+    ],
+    "faqs": [
+      {
+        "question": "正切比公式是什么？",
+        "answer": "tan(A) = a / b，其中a是<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">边</a>的对边，b是相邻边。你将对面除以相邻。"
+      },
+      {
+        "question": "tan(A) 可以大于 1 吗？",
+        "answer": "是的。当对边<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">边</a>比相邻边长时，正切值超过1。例如，tan(60°) ≈ 1.732。"
+      },
+      {
+        "question": "切线与斜率有何关系？",
+        "answer": "当相邻的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> 是水平延伸而相对的一侧是垂直上升时，切线本质上是斜边的斜率。 tan(A) = 上升/运行。"
+      },
+      {
+        "question": "为什么切线不使用斜边？",
+        "answer": "切线直接测量两条腿之间的比例。不需要斜边，因为正切描述的是三角形的形状（陡度），而不是比例。"
+      },
+      {
+        "question": "当 a = b 时会发生什么？",
+        "answer": "当两条腿相等时，tan(A) = 1，并且 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A 正好是 45°。"
+      }
+    ]
+  },
+  "cotangent-ratio-calculator": {
+    "slug": "余切比计算器",
+    "h1": "余切比计算器",
+    "headerSummary": "从直角三角形中相邻的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> b 到对边 a 计算 cot(A)。",
+    "metaTitle": "余切比计算器 |直角三角床(A)",
+    "metaDescription": "使用此余切比 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">计算器</a>，通过公式、步骤和示例，使用相邻的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> b 和对边 a 求直角三角形中的 cot(A)。",
+    "calculator_heading": "计算余切比",
+    "calculator_outputLabel": "婴儿床(A)",
+    "calculator_fields": [
+      "相邻边b",
+      "对面a"
+    ],
+    "introHeading": "余切比计算器的工作原理",
+    "intro": [
+      "余切是正切的倒数。正切将相反的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边</a> 除以相邻边，而余切则翻转该分数 - 它将相邻边除以相反的边。它在基础几何课程中很少出现，但在高级三角学和微积分中发挥着重要作用。",
+      "此 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"> 计算器 </a> 采用相邻的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> b 和相反的边 a，然后返回 cot(A) = b / a。如果您习惯使用正切，则余切只是倒数。"
+    ],
+    "calculatorNote": "在上面的字段中输入相邻的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> b 和相对的边 a。 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">计算器</a>返回cot(A) = b / a。两个值都必须为正。",
+    "formula_display": "cot(A) = b / a",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A 的余切等于相邻的<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">边</a>除以对边。它是正切的倒数：cot(A) = 1 / tan(A)。",
+      "与正切一样，余切仅使用直角三角形的两条边。不涉及斜边。对于锐角，余切可以取任何正值。"
+    ],
+    "diagramExplanation": [
+      "对于 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角</a> A，<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">边</a> a 是对边，b 边是相邻边，c 边是斜边。",
+      "余切使用相邻的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> b（<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"> 角 </a> A 的边）作为分子，并使用相对边 a（角度 A 的对面）作为分母。不使用斜边 c。"
+    ],
+    "howToSteps": [
+      "确定直角三角形中的 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角</a> A。",
+      "找到 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b，相邻边 — <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A 旁边的边和直角。",
+      "找到 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a，另一条腿 — <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A 对面的那条腿。",
+      "在第一个输入字段中输入 b。",
+      "在第二个输入字段中输入 a。",
+      "单击计算。",
+      "结果是 cot(A)，它可以是任何正数。"
+    ],
+    "example_intro": "直角三角形的相邻边 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> b = 4，对边 a = 3。",
+    "example_steps": [
+      "cot(A) = b / a",
+      "婴儿床(A) = 4 / 3",
+      "cot(A) ≈ 1.3333"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A 的余切约为 1.3333。您可以验证这一点：tan(A) = 3 / 4 = 0.75，以及 1 / 0.75 = 1.3333。",
+    "whatResultMeans": [
+      "余切告诉您相邻的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> 相对于对边拟合了多少次。它是陡度比的超越版本。",
+      "余切值为 1 表示两条腿相等（45° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角</a>）。值大于 1 意味着相邻的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> 比对边长 - 三角形更宽且角度更小。值小于 1 意味着对边更长 - 角度更大且三角形更陡。",
+      "由于余切是正切的倒数，因此您始终可以在它们之间进行转换：cot(A) = 1 / tan(A) 和 tan(A) = 1 / cot(A)。"
+    ],
+    "whenToUse_intro": "在以下情况下选择此余切比 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">计算器</a>：",
+    "whenToUse_items": [
+      "您需要正切的倒数，而无需手动计算 1 / tan(A)。",
+      "您正在使用专门需要余切的公式，例如某些微积分恒等式。",
+      "你更喜欢用超越上升的方式来思考，而不是用上升超过奔跑的方式来思考。",
+      "您正在解决测量、建筑或三角证明中的问题。"
+    ],
+    "commonMistakes_intro": "请留意这些余切陷阱：",
+    "commonMistakes_items": [
+      "写 a / b 而不是 b / a。余切将相邻的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> 放在顶部，而不是相反的边。交换它们就可以得到切线。",
+      "混淆余切和余弦。余切为 b / a（相邻与相反）。余弦是 b / c（在斜边上相邻）。它们是不同的比例。",
+      "在计算中使用斜边。余切仅涉及两条腿。",
+      "忘记它是正切的倒数。如果您已经知道 tan(A)，只需取 1 / tan(A) 即可得到 cot(A)。",
+      "混淆哪条 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> 相邻，哪条相反。始终确定相对于 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A 的边。"
+    ],
+    "relatedLinks": [
+      "直角三角形三角比率计算器",
+      "正切比计算器",
+      "正弦比计算器",
+      "余弦比计算器"
+    ],
+    "faqs": [
+      {
+        "question": "直角三角形的余切公式是什么？",
+        "answer": "cot(A) = b / a，其中 b 是相邻的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a>，a 是 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"> 角 </a> A 的对边。这是正切分数的倒数。"
+      },
+      {
+        "question": "余切与正切有何关系？",
+        "answer": "余切是正切的倒数。如果 tan(A) = 0.75，则 cot(A) = 1 / 0.75 ≈ 1.3333。"
+      },
+      {
+        "question": "什么时候应该使用余切而不是正切？",
+        "answer": "当公式明确需要余切时，或者当您需要直接求邻边与对边之比时，请使用余切。在许多微积分和物理背景中，余切出现在恒等式和导数公式中。"
+      },
+      {
+        "question": "直角三角形中 cot(A) 可以等于 0 吗？",
+        "answer": "在仅具有锐角的直角三角形中，cot(A) 始终为正。当 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A 接近 90° 时，余切值接近零，但 90° 角本身就是直角，而不是您要测量的锐角。"
+      },
+      {
+        "question": "余切等于 1 除以正切吗？",
+        "answer": "是的。 cot(A) = 1 / tan(A) = b / a。两个表达式给出相同的结果。"
+      }
+    ]
+  },
+  "secant-ratio-calculator": {
+    "slug": "secant-ratio-calculator",
+    "h1": "Secant Ratio Calculator",
+    "headerSummary": "Find sec(A) by comparing hypotenuse c with adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b, the reciprocal of cosine.",
+    "metaTitle": "Secant Ratio Calculator | Right Triangle sec(A)",
+    "metaDescription": "Use this secant ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> to find sec(A) in a right triangle using hypotenuse c and adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b with formula, steps, and examples.",
+    "calculator_heading": "Calculate Secant Ratio",
+    "calculator_outputLabel": "sec(A)",
+    "calculator_fields": [
+      "Hypotenuse c",
+      "Adjacent side b"
+    ],
+    "introHeading": "How This Secant Ratio Calculator Works",
+    "intro": [
+      "Secant is the reciprocal of cosine. Where cosine divides the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> by the hypotenuse, secant flips that — it divides the hypotenuse by the adjacent side. The result is always greater than or equal to 1 because the hypotenuse is always the longest side in a right triangle.",
+      "This <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> takes two inputs — hypotenuse c and adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b — and returns sec(A). It is a quick way to get this reciprocal ratio without doing the division by hand or computing cosine first."
+    ],
+    "calculatorNote": "Enter the hypotenuse c and adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b in the fields above. The <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> computes sec(A) = c / b. Both values must be positive, and c must be greater than b.",
+    "formula_display": "sec(A) = c / b",
+    "formula_paragraphs": [
+      "Secant of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A equals the hypotenuse divided by the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. This is the reciprocal of cosine: sec(A) = 1 / cos(A).",
+      "Because the hypotenuse is always longer than the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> in a right triangle, sec(A) is always greater than 1. As <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A gets larger, the adjacent side shrinks relative to the hypotenuse, so secant increases."
+    ],
+    "diagramExplanation": [
+      "For <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a is opposite, side b is adjacent, and side c is the hypotenuse.",
+      "Secant uses the hypotenuse c as the numerator and the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b as the denominator. The opposite side a is not part of the secant calculation."
+    ],
+    "howToSteps": [
+      "Identify <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A in your right triangle.",
+      "Find <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> c, the hypotenuse — the longest side, across from the right <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a>.",
+      "Find <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b, the adjacent leg — the side that touches both <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A and the right angle.",
+      "Enter c in the first input field.",
+      "Enter b in the second input field.",
+      "Click Calculate.",
+      "The result is sec(A), which is always greater than or equal to 1."
+    ],
+    "example_intro": "A right triangle has hypotenuse c = 5 and adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b = 4.",
+    "example_steps": [
+      "sec(A) = c / b",
+      "sec(A) = 5 / 4",
+      "sec(A) = 1.25"
+    ],
+    "example_conclusion": "The secant of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is 1.25. To verify: cos(A) = 4 / 5 = 0.8, and 1 / 0.8 = 1.25.",
+    "whatResultMeans": [
+      "Secant tells you how many times longer the hypotenuse is compared to the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. A secant of 1.25 means the hypotenuse is 25% longer than the adjacent side.",
+      "The minimum value of secant in a right triangle is slightly above 1, which occurs when <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is very small and the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is nearly as long as the hypotenuse. As angle A increases, the adjacent side shortens relative to the hypotenuse, and secant grows larger.",
+      "Secant is useful whenever you need to scale from the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> to the hypotenuse, or when a formula calls for 1 / cos(A)."
+    ],
+    "whenToUse_intro": "This secant ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> is the right choice when:",
+    "whenToUse_items": [
+      "A formula requires secant or 1 / cos(A) and you want the value directly.",
+      "You need to find how much longer the hypotenuse is compared to the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>.",
+      "You are working with calculus problems that involve secant in derivatives or integrals.",
+      "You are checking structural calculations where the hypotenuse represents the actual length and the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> represents the horizontal <a href=\"/right-triangle-projection-calculator/\" class=\"text-primary hover:underline\">projection</a>."
+    ],
+    "commonMistakes_intro": "These secant errors trip up students most often:",
+    "commonMistakes_items": [
+      "Confusing secant with cosine. Cosine is b / c (adjacent over hypotenuse). Secant is the reciprocal: c / b (hypotenuse over adjacent).",
+      "Getting a result less than 1. If your answer is below 1, you likely reversed the fraction. In a valid right triangle, sec(A) is always greater than or equal to 1.",
+      "Using the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> instead of the adjacent side. Secant pairs the hypotenuse with the adjacent side, not the opposite side.",
+      "Mixing up secant and cosecant. Secant is the reciprocal of cosine. Cosecant is the reciprocal of sine. They use different sides.",
+      "Entering b larger than c. The hypotenuse must always be longer than the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>."
+    ],
+    "relatedLinks": [
+      "Right Triangle Trig Ratios Calculator",
+      "Cosine Ratio Calculator",
+      "Cosecant Ratio Calculator",
+      "Cotangent Ratio Calculator"
+    ],
+    "faqs": [
+      {
+        "question": "What is the secant ratio in a right triangle?",
+        "answer": "Secant is defined as sec(A) = c / b, where c is the hypotenuse and b is the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. It is the reciprocal of cosine."
+      },
+      {
+        "question": "为什么割线总是大于1？",
+        "answer": "因为斜边 c 始终是直角三角形中最长的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a>。将较大的数 (c) 除以较小的数 (b) 所得结果始终大于 1。"
+      },
+      {
+        "question": "如何在正割和余弦之间转换？",
+        "answer": "秒(A) = 1 / cos(A)，并且 cos(A) = 1 / 秒(A)。如果你知道一个，你可以通过取倒数找到另一个。"
+      },
+      {
+        "question": "什么是秒（45°）？",
+        "answer": "在 <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90 三角形</a> 中，斜边是边的 √2 倍。所以 sec(45°) = √2 ≈ 1.4142。"
+      },
+      {
+        "question": "割线在实际应用中使用吗？",
+        "answer": "是的。正割出现在物理公式、工程计算和微积分中。当您需要将水平距离缩放为沿斜坡的实际路径长度时，可以使用它。"
+      }
+    ]
+  },
+  "cosecant-ratio-calculator": {
+    "slug": "cosecant-ratio-calculator",
+    "h1": "Cosecant Ratio Calculator",
+    "headerSummary": "Calculate csc(A) from hypotenuse c and opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a, the reciprocal of sine.",
+    "metaTitle": "Cosecant Ratio Calculator | Right Triangle csc(A)",
+    "metaDescription": "Use this cosecant ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> to find csc(A) in a right triangle using hypotenuse c and opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a with formula, steps, and examples.",
+    "calculator_heading": "Calculate Cosecant Ratio",
+    "calculator_outputLabel": "csc(A)",
+    "calculator_fields": [
+      "Hypotenuse c",
+      "Opposite side a"
+    ],
+    "introHeading": "How This Cosecant Ratio Calculator Works",
+    "intro": [
+      "Cosecant is the reciprocal of sine. It divides the hypotenuse by the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>, giving you a ratio that is always greater than 1 in a right triangle. You might not see it as often as sine or cosine in basic courses, but it is essential in more advanced math and certain physics applications.",
+      "This <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> makes it simple. Enter the hypotenuse c and the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a, and it returns csc(A) immediately. No need to calculate sine first and then flip the fraction."
+    ],
+    "calculatorNote": "Enter hypotenuse c and opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a in the fields above. The <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> computes csc(A) = c / a. Both values must be positive, and c must be greater than a.",
+    "formula_display": "csc(A) = c / a",
+    "formula_paragraphs": [
+      "Cosecant of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A equals the hypotenuse divided by the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. It is the reciprocal of sine: csc(A) = 1 / sin(A).",
+      "The hypotenuse is always longer than the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>, so csc(A) always produces a value greater than 1 for acute angles. As <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A decreases, the opposite side gets shorter relative to the hypotenuse, and cosecant increases."
+    ],
+    "diagramExplanation": [
+      "For <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a is opposite, side b is adjacent, and side c is the hypotenuse.",
+      "Cosecant uses the hypotenuse c as the numerator and the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a as the denominator. The adjacent side b plays no role in the cosecant formula."
+    ],
+    "howToSteps": [
+      "Identify <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A in your right triangle.",
+      "Locate the hypotenuse c — the <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> opposite the right <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> and the longest side.",
+      "Locate the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a — the leg directly across from <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A.",
+      "Type c into the first input field.",
+      "Type a into the second input field.",
+      "Click Calculate.",
+      "The result is csc(A), always greater than 1."
+    ],
+    "example_intro": "A right triangle has hypotenuse c = 5 and opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a = 3.",
+    "example_steps": [
+      "csc(A) = c / a",
+      "csc(A) = 5 / 3",
+      "csc(A) ≈ 1.6667"
+    ],
+    "example_conclusion": "The cosecant of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is approximately 1.6667. Verification: sin(A) = 3 / 5 = 0.6, and 1 / 0.6 ≈ 1.6667.",
+    "whatResultMeans": [
+      "Cosecant tells you how many times longer the hypotenuse is compared to the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. A cosecant of 1.6667 means the hypotenuse is about 67% longer than the opposite side.",
+      "When <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is large (close to 90°), the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is nearly as long as the hypotenuse, so csc(A) is close to 1. When angle A is small, the opposite side is much shorter, and cosecant grows large.",
+      "Think of it this way: if you know the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> and want to find the hypotenuse, multiply the opposite side by csc(A). That gives you c = a × csc(A)."
+    ],
+    "whenToUse_intro": "Reach for this cosecant ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> when:",
+    "whenToUse_items": [
+      "You need the reciprocal of sine without computing sin(A) first.",
+      "A formula specifically calls for cosecant, which appears in certain trigonometric identities.",
+      "You are scaling the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> up to the full hypotenuse length.",
+      "You are working on physics or engineering problems involving forces, wave functions, or oscillation formulas that use cosecant."
+    ],
+    "commonMistakes_intro": "Watch out for these cosecant errors:",
+    "commonMistakes_items": [
+      "Confusing cosecant with sine. Sine is a / c (opposite over hypotenuse). Cosecant is the reciprocal: c / a (hypotenuse over opposite).",
+      "Confusing cosecant with secant. Cosecant is based on the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> (reciprocal of sine). Secant is based on the adjacent side (reciprocal of cosine). They use different legs.",
+      "Getting a result less than 1. If your answer is below 1, you may have entered the values in the wrong order. csc(A) is always greater than 1.",
+      "Using the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> instead of the opposite side. Cosecant pairs the hypotenuse with the opposite side only.",
+      "Expecting cosecant and cosine to be related by name. Despite the co- prefix, cosecant is the reciprocal of sine, not cosine."
+    ],
+    "relatedLinks": [
+      "Right Triangle Trig Ratios Calculator",
+      "Sine Ratio Calculator",
+      "Secant Ratio Calculator",
+      "Cotangent Ratio Calculator"
+    ],
+    "faqs": [
+      {
+        "question": "What is the cosecant formula in a right triangle?",
+        "answer": "It is csc(A) = c / a, where c is the hypotenuse and a is the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. Cosecant is the reciprocal of sine."
+      },
+      {
+        "question": "余割与正弦有何关系？",
+        "answer": "csc(A) = 1 / sin(A)。如果 sin(A) = 0.6，则 csc(A) = 1 / 0.6 ≈ 1.6667。"
+      },
+      {
+        "question": "为什么余割总是大于1？",
+        "answer": "因为直角三角形中斜边总是比对边 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> 长。分数 c / a 始终超过 1。"
+      },
+      {
+        "question": "什么是 csc(30°)？",
+        "answer": "在 <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90 三角形 </a> 中，sin(30°) = 0.5，因此 csc(30°) = 1 / 0.5 = 2。斜边正好是对边 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> 的两倍。"
+      },
+      {
+        "question": "什么时候应该使用余割代替正弦？",
+        "answer": "当公式直接需要余割时，或者当您想要从相反的 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> 求斜边时，请使用余割：c = a × csc(A)。省去了除以正弦的步骤。"
+      }
+    ]
+  }
+}

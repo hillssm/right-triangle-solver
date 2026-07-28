@@ -465,7 +465,7 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
         : pick(groupedUi, 'groupedBadge', 'Grouped Calculator')}
     </p>
     <h1 class="mt-3 text-3xl font-bold sm:text-4xl">{activePage.h1}</h1>
-    <p class="truncate mt-4 max-w-3xl text-on-surface-variant" set:html={activePage.intent} />
+    <p class="mt-4 max-w-3xl text-on-surface-variant" set:html={activePage.intent} />
   </header>
 
   {isHubPage ? (

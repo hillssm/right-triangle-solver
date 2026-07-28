@@ -1,0 +1,557 @@
+{
+  "sine-ratio-calculator": {
+    "slug": "حاسبة نسبة الجيب",
+    "h1": "حاسبة نسبة الجيب",
+    "headerSummary": "أوجد sin(A) من الضلع المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a والوتر c في المثلث القائم.",
+    "metaTitle": "حاسبة نسبة الجيب | خطيئة المثلث القائم الزاوية (أ)",
+    "metaDescription": "استخدم نسبة الجيب <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">الآلة الحاسبة</a> للعثور على sin(A) في المثلث القائم باستخدام <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع المتقابل</a> a والوتر c مع الصيغة والخطوات والأمثلة.",
+    "calculator_heading": "حساب نسبة الجيب",
+    "calculator_outputLabel": "الخطيئة (أ)",
+    "calculator_fields": [
+      "الجهة المقابلة أ",
+      "الوتر ج"
+    ],
+    "introHeading": "كيف تعمل حاسبة نسبة الجيب هذه",
+    "intro": [
+      "تعد نسبة الجيب إحدى أولى الدوال المثلثية التي تتعلمها في الهندسة. فهو يربط <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">زاوية</a> محددة في مثلث قائم باثنين من أضلاعه - الضلع المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> والوتر. إذا كنت تعرف هذين <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">القياسين</a>، فإن هذه الآلة الحاسبة تعطيك الخطيئة(أ) على الفور.",
+      "سواء كنت تعمل على حل مشكلة في الواجب المنزلي، أو التحقق من إجابة بأسلوب الامتحان، أو حل مهمة قياس حقيقية، فإن هذه الأداة تزيل خطوة القسمة اليدوية. أدخل القيم الخاصة بك واحصل على النتيجة باستخدام الصيغة المعروضة."
+    ],
+    "calculatorNote": "أدخل طول الضلع المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a والوتر c في الحقول أعلاه. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">الآلة الحاسبة</a> تقسم a على c وترجع sin(A). يجب أن تكون كلا القيمتين موجبتين، ويجب أن تكون c أكبر من a.",
+    "formula_display": "الخطيئة (أ) = أ / ج",
+    "formula_paragraphs": [
+      "جيب <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A يساوي طول الضلع المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> مقسومًا على طول الوتر. غالبًا ما يتم تذكر ذلك مع جزء SOH من SOH-CAH-TOA.",
+      "في المثلث القائم الزاوية، الضلع المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> هو الضلع المقابل مباشرة للزاوية <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"></a> A. الوتر هو دائمًا الضلع الأطول — الضلع المواجه للزاوية 90 درجة. نظرًا لأن الوتر دائمًا أطول من أي ساق، فإن sin(A) يقع دائمًا بين 0 و1 للزوايا الحادة."
+    ],
+    "diagramExplanation": [
+      "بالنسبة إلى <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A، <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> a هو المقابل، والضلع b مجاور، والضلع c هو الوتر.",
+      "تستخدم نسبة الجيب اثنين فقط من هذه الجوانب الثلاثة: الجانب المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a (مباشرة عبر <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A) والوتر c (الضلع الأطول، المقابل للزاوية القائمة عند B)."
+    ],
+    "howToSteps": [
+      "حدد <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A في المثلث الأيمن. ويجب أن تكون إحدى الزاويتين الحادتين وليس الزاوية 90 درجة.",
+      "ابحث عن <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> المقابل لـ <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A. هذا هو الضلع أ.",
+      "أوجد الوتر. هذا هو <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> c، الضلع الأطول، المقابل للزاوية اليمنى <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"></a>.",
+      "أدخل قيمة a في حقل الإدخال الأول.",
+      "أدخل قيمة c في حقل الإدخال الثاني.",
+      "انقر فوق \"حساب\" لرؤية الخطيئة (أ).",
+      "قم بمراجعة النتيجة. يجب أن يكون رقمًا عشريًا بين 0 و1."
+    ],
+    "example_intro": "لنفترض أن لديك مثلثًا قائمًا حيث الضلع المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a = 3 والوتر c = 5.",
+    "example_steps": [
+      "الخطيئة (أ) = أ / ج",
+      "الخطيئة (أ) = 3 / 5",
+      "الخطيئة (أ) = 0.6"
+    ],
+    "example_conclusion": "جيب <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A هو 0.6. وهذا يعني أن الضلع المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> يمثل 60% من طول الوتر. إذا كنت تريد الزاوية الفعلية، فخذ الجيب العكسي: A = arcsin(0.6) ≈ 36.87°.",
+    "whatResultMeans": [
+      "الناتج هو نسبة بدون وحدة. ويخبرك بكيفية مقارنة الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> المقابل بالوتر من حيث الحجم. نتيجة 0.5 تعني أن الجانب المقابل هو بالضبط نصف الوتر - وهو ما يحدث في مثلث <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90</a> حيث A = 30°.",
+      "القيم الصغيرة (قريبة من 0) تعني <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A صغيرة والضلع المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> قصير بالنسبة إلى الوتر. القيم الأقرب إلى 1 تعني أن الزاوية A كبيرة (تقترب من 90 درجة) والجانب المقابل يبلغ طول الوتر تقريبًا.",
+      "بما أن sin(A) عبارة عن نسبة بين طولين، فليس لها وحدات. سواء تم قياس مثلثك بالسنتيمتر أو البوصة أو المتر، تظل قيمة جيب الزاوية كما هي طالما يستخدم كلا الجانبين نفس الوحدة."
+    ],
+    "whenToUse_intro": "استخدم نسبة الجيب هذه <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">الآلة الحاسبة</a> في أي من الحالات التالية:",
+    "whenToUse_items": [
+      "أنت تعرف الضلع المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> والوتر وتريد قيمة الجيب.",
+      "أنت تستعد لإيجاد <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A باستخدام دالة الجيب العكسي.",
+      "تحتاج إلى التحقق من إجابة الكتاب المدرسي أو التحقق من عملك في علم المثلثات.",
+      "أنت تقوم بحل مسائل فيزيائية تتضمن مكونات رأسية، مثل ارتفاع المنحدر أو القوة الرأسية على المنحدر.",
+      "أنت تقوم بتقسيم المتجه إلى أجزائه الرأسية والأفقية."
+    ],
+    "commonMistakes_intro": "احترس من هذه الأخطاء الشائعة عند حساب الجيب:",
+    "commonMistakes_items": [
+      "استخدام الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> المجاور بدلاً من الجانب المقابل. جيب الجيب يستخدم الجانب المقابل من <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A، وليس الجانب المجاور لها.",
+      "مبادلة a و c في الصيغة. الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> المعاكس يدخل في البسط، والوتر يدخل في المقام. كتابة c/a تعطي قاطع التمام، وليس الجيب.",
+      "استخدام الجوانب المقاسة بوحدات مختلفة. إذا كان a بالسنتيمتر وc بالبوصة، فإن النسبة لا معنى لها. قم بالتحويل إلى نفس الوحدة أولاً.",
+      "متناسين أن c يجب أن يكون أكبر من a. في المثلث القائم الزاوية، يكون الوتر دائمًا هو الضلع الأطول <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a>.",
+      "إدخال الزاوية اليمنى <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"></a> (90 درجة) كزاوية A. ينطبق جيب الجيب على الزوايا الحادة فقط. الزاوية 90° تقع عند الرأس B."
+    ],
+    "relatedLinks": [
+      "حاسبة النسب المثلثية للمثلث القائم الزاوية",
+      "حاسبة نسبة جيب التمام",
+      "حاسبة نسبة الظل",
+      "حاسبة زاوية المثلث القائم"
+    ],
+    "faqs": [
+      {
+        "question": "ما هي صيغة الخطيئة (أ) في المثلث القائم؟",
+        "answer": "The formula is sin(A) = a / c, where a is the <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> opposite <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A and c is the hypotenuse. You divide the opposite side by the hypotenuse."
+      },
+      {
+        "question": "Why is sin(A) always less than 1 in a right triangle?",
+        "answer": "Because the hypotenuse c is always the longest <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. Since a is shorter than c, the fraction a / c is always less than 1."
+      },
+      {
+        "question": "Can I use this calculator to find the angle itself?",
+        "answer": "This <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> gives you the sine value. To find the <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a>, use the inverse sine function: A = arcsin(sin(A)). You can do this with our right triangle angle calculator."
+      },
+      {
+        "question": "What does a sin(A) result of 0.5 mean?",
+        "answer": "It means the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is exactly half the length of the hypotenuse. This corresponds to <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A being 30°."
+      },
+      {
+        "question": "Do I need to enter the adjacent side to calculate sine?",
+        "answer": "No. Sine only uses the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a and the hypotenuse c. The adjacent side b is not part of the sine formula."
+      }
+    ]
+  },
+  "cosine-ratio-calculator": {
+    "slug": "حاسبة نسبة جيب التمام",
+    "h1": "حاسبة نسبة جيب التمام",
+    "headerSummary": "احسب cos(A) من الضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">المجاور</a> b والوتر c بخطوات واضحة للمثلث القائم.",
+    "metaTitle": "حاسبة نسبة جيب التمام | كوس المثلث القائم الزاوية (أ)",
+    "metaDescription": "استخدم حاسبة نسبة جيب التمام <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> للعثور على cos(A) في المثلث القائم باستخدام <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع المجاور</a> b والوتر c مع الصيغة والخطوات والأمثلة.",
+    "calculator_heading": "حساب نسبة جيب التمام",
+    "calculator_outputLabel": "كوس (أ)",
+    "calculator_fields": [
+      "الجهة المجاورة ب",
+      "الوتر ج"
+    ],
+    "introHeading": "كيف تعمل حاسبة نسبة جيب التمام",
+    "intro": [
+      "تقيس نسبة جيب التمام كيفية مقارنة الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> المجاور للمثلث القائم مع الوتر. إنه الجزء الثاني من SOH-CAH-TOA وواحد من الدوال المثلثية الأكثر استخدامًا في الهندسة والفيزياء والهندسة.",
+      "تأخذ هذه الآلة الحاسبة <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> مدخلين — الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> المجاور</a> b والوتر c — وترجع cos(A). فهو يتولى عملية القسمة نيابةً عنك ويظهر النتيجة على الفور، حتى تتمكن من التركيز على فهم الهندسة بدلاً من العمليات الحسابية."
+    ],
+    "calculatorNote": "اكتب الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> المجاور b والوتر c في حقول الإدخال أعلاه. الآلة الحاسبة <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> تحسب cos(A) = b / c. يجب أن تكون كلتا القيمتين موجبتين، ويجب أن تكون c أكبر من b.",
+    "formula_display": "كوس (أ) = ب / ج",
+    "formula_paragraphs": [
+      "جيب تمام <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A يساوي الضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> مقسومًا على الوتر. هذا هو CAH في SOH-CAH-TOA.",
+      "الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> b المجاور هو الساق التي تمس <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A والزاوية القائمة. يقع الوتر c على الجانب الآخر من الزاوية اليمنى ويكون دائمًا هو الضلع الأطول. نظرًا لأن الوتر أطول من أي ساق، فإن cos(A) ينتج دائمًا قيمة بين 0 و1 للزوايا الحادة."
+    ],
+    "diagramExplanation": [
+      "بالنسبة إلى <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A، <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> a هو المقابل، والضلع b مجاور، والضلع c هو الوتر.",
+      "تستخدم نسبة جيب التمام الضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> b (الساق التي تشكل <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A مع الوتر) والوتر c. الجانب a ليس جزءًا من حساب جيب التمام."
+    ],
+    "howToSteps": [
+      "حدد موقع <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A في المثلث الأيمن. وهي إحدى الزاويتين الحادتين.",
+      "حدد الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> المجاور. هذا هو الضلع ب — الساق التي تشكل <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A مع الوتر.",
+      "حدد الوتر c، الضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> المقابل للزاوية 90 درجة <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"></a>.",
+      "أدخل قيمة b في الحقل الأول.",
+      "أدخل قيمة c في الحقل الثاني.",
+      "اضغط على \"احسب\" لرؤية cos(A).",
+      "تأكد من أن النتيجة بين 0 و 1."
+    ],
+    "example_intro": "المثلث القائم الزاوية له <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">ضلع مجاور</a> b = 4 والوتر c = 5.",
+    "example_steps": [
+      "كوس (أ) = ب / ج",
+      "كوس (أ) = 4 / 5",
+      "كوس (أ) = 0.8"
+    ],
+    "example_conclusion": "جيب التمام للزاوية <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A هو 0.8. الضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">المجاور</a> يمثل 80% من طول الوتر. لإيجاد الزاوية: A = arccos(0.8) ≈ 36.87°.",
+    "whatResultMeans": [
+      "يخبرك جيب التمام بمقدار طول الوتر الذي يغطيه الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">المجاور</a>. جيب التمام 0.8 يعني أن الجانب المجاور يمتد بنسبة 80% بقدر ما يمتد الوتر.",
+      "عندما تكون <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A صغيرة، يكون طول الضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">المجاور</a> تقريبًا مثل الوتر، لذلك يكون cos(A) قريبًا من 1. عندما تكون الزاوية A كبيرة (قرابة 90°)، يتقلص الجانب المجاور بالنسبة إلى الوتر، مما يدفع cos(A) نحو 0.",
+      "والنتيجة بلا أبعاد. لا يهم ما إذا كانت <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">قياساتك</a> بالأقدام أو الأمتار أو أي وحدة أخرى — فجيب التمام هو نسبة نقية."
+    ],
+    "whenToUse_intro": "يمكنك الوصول إلى نسبة جيب التمام <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">الآلة الحاسبة</a> عندما:",
+    "whenToUse_items": [
+      "أنت تعرف الضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> المجاور والوتر وتحتاج إلى قيمة جيب التمام.",
+      "أنت تقوم بإيجاد المركبة الأفقية لمتجه القوة أو السرعة أو الإزاحة.",
+      "تريد التحقق من قيمة مثلثية من كتاب مدرسي أو مجموعة مسائل.",
+      "أنت تعمل على حل مشكلات الملاحة أو المسح التي تتضمن مسافات أفقية.",
+      "أنت بحاجة إلى cos(A) قبل حساب كمية مشتقة أخرى، مثل القاطع أو الظل."
+    ],
+    "commonMistakes_intro": "هذه هي أخطاء جيب التمام الأكثر شيوعًا التي يرتكبها الطلاب:",
+    "commonMistakes_items": [
+      "استخدام الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> المعاكس بدلاً من الجانب المجاور. يستخدم جيب التمام الساق المجاورة <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A، وليس الساق المقابلة لها.",
+      "دخول ب أكبر من ج. في المثلث القائم الزاوية، يكون الوتر دائمًا هو الضلع الأطول <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a>. إذا تجاوزت b قيمة c، فإن قيمك لا تشكل مثلثًا قائمًا.",
+      "عكس الكسر. الكتابة c / b تعطي القاطع وليس جيب التمام.",
+      "خلط الضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> المجاور مع تسمية الوتر. تحقق جيدًا من الجانب المقابل للزاوية اليمنى <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"></a> (هذا هو الوتر) والذي يشكل جزءًا من الزاوية A (هذا هو الجانب المجاور).",
+      "استخدام <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">أطوال الأضلاع</a> المقاسة بوحدات مختلفة دون التحويل أولاً."
+    ],
+    "relatedLinks": [
+      "حاسبة النسب المثلثية للمثلث القائم الزاوية",
+      "حاسبة نسبة الجيب",
+      "حاسبة نسبة الظل",
+      "حاسبة زاوية المثلث القائم"
+    ],
+    "faqs": [
+      {
+        "question": "ما هي صيغة نسبة جيب التمام للمثلث الأيمن؟",
+        "answer": "فهو cos(A) = b / c، حيث b هو الضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> و c هو الوتر. المجاورة تعني الساق التي تمس <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A."
+      },
+      {
+        "question": "كيف يختلف جيب التمام عن جيب التمام؟",
+        "answer": "يستخدم جيب الجيب الجانب المعاكس <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> فوق الوتر (a / c). يستخدم جيب التمام الجانب المجاور فوق الوتر (b / c). يقيسون جوانب مختلفة بالنسبة لنفس <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a>."
+      },
+      {
+        "question": "ماذا يعني إذا كان cos(A) = 0.5؟",
+        "answer": "وهذا يعني أن الضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> هو بالضبط نصف الوتر. يحدث هذا عندما تكون <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A 60 درجة."
+      },
+      {
+        "question": "هل يمكن أن يكون جيب التمام أكبر من 1؟",
+        "answer": "لا. في المثلث القائم الزاوية، يكون الوتر دائمًا أطول من الضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>، لذا يكون b / c دائمًا أقل من 1."
+      },
+      {
+        "question": "لماذا أحتاج فقط إلى وجهين لجيب التمام؟",
+        "answer": "تتضمن صيغة جيب التمام الضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> والوتر فقط. الجانب الآخر ليس جزءًا من الحساب."
+      }
+    ]
+  },
+  "tangent-ratio-calculator": {
+    "slug": "حاسبة نسبة الظل",
+    "h1": "حاسبة نسبة الظل",
+    "headerSummary": "أوجد tan(A) من الجانب المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> a والجانب المجاور b لحل مسائل الانحدار والارتفاع والجري.",
+    "metaTitle": "حاسبة نسبة الظل | المثلث الأيمن تان (أ)",
+    "metaDescription": "استخدم حاسبة نسبة الظل <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> للعثور على tan(A) في المثلث القائم باستخدام <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع المقابل</a> a والضلع المجاور b مع الصيغة والخطوات والأمثلة.",
+    "calculator_heading": "حساب نسبة الظل",
+    "calculator_outputLabel": "تان (أ)",
+    "calculator_fields": [
+      "الجهة المقابلة أ",
+      "الجهة المجاورة ب"
+    ],
+    "introHeading": "كيف تعمل حاسبة نسبة الظل هذه",
+    "intro": [
+      "الظل هو الثلث الأساسي <a href=\"/right-triangle-trig-ratios-calculator/\" class=\"text-primary hover:underline\">النسب المثلثية</a>، ويعمل بشكل مختلف قليلاً عن الجيب وجيب التمام. بدلاً من مقارنة الساق بالوتر، يقارن الظل ساقًا بالأخرى - على وجه التحديد، الجانب المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> للجانب المجاور. وهذا يجعلها مفيدة بشكل خاص في مسائل الميل و<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">زاوية</a> للارتفاع.",
+      "هذه <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">الآلة الحاسبة</a> تقسم الضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">المقابل</a> a على الجانب المجاور b وتعطيك tan(A). لا داعي لاستخدام تطبيق الآلة الحاسبة - فقط أدخل طول ساقيك واحصل على الإجابة."
+    ],
+    "calculatorNote": "أدخل الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> المقابل a والجانب المجاور b في حقول الإدخال أعلاه. تحسب الأداة tan(A) = a / b. يجب أن تكون كلتا القيمتين موجبتين.",
+    "formula_display": "ظا (أ) = أ / ب",
+    "formula_paragraphs": [
+      "ظل <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A يساوي الضلع المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> مقسومًا على الضلع المجاور. هذا هو جزء TOA من SOH-CAH-TOA.",
+      "على عكس الجيب وجيب التمام، لا يشمل الظل الوتر. ويستخدم فقط قدميه. وهذا يعني أيضًا أن المماس لا يقتصر على 1 — يمكن أن يكون أي رقم موجب للزوايا الحادة، وينمو بلا حدود عندما تقترب <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A من 90 درجة."
+    ],
+    "diagramExplanation": [
+      "بالنسبة إلى <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A، <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> a هو المقابل، والضلع b مجاور، والضلع c هو الوتر.",
+      "يستخدم Tangent الساقين فقط: الجانب المعاكس <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> a والجانب المجاور b. لا يظهر الوتر c في صيغة الظل."
+    ],
+    "howToSteps": [
+      "أوجد <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A في المثلث القائم.",
+      "حدد <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> a، الساق المقابلة مباشرة من <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A.",
+      "حدد <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> b، وهو الساق التي تشكل <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A بجانب الوتر.",
+      "أدخل قيمة a في الحقل الأول.",
+      "أدخل قيمة b في الحقل الثاني.",
+      "انقر فوق \"احسب\" للحصول على الظل (A).",
+      "يمكن أن تكون النتيجة أقل من 1، أو تساوي 1، أو أكبر من 1."
+    ],
+    "example_intro": "المثلث القائم الزاوية له الضلع المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a = 3 والضلع المجاور b = 4.",
+    "example_steps": [
+      "ظا (أ) = أ / ب",
+      "ظا(أ) = 3 / 4",
+      "ظا (أ) = 0.75"
+    ],
+    "example_conclusion": "ظل الزاوية <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A هو 0.75. لإيجاد الزاوية: A = arctan(0.75) ≈ 36.87°.",
+    "whatResultMeans": [
+      "يخبرك Tangent بانحدار المثلث من منظور <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A. فكر في الأمر كعملية حسابية للارتفاع.",
+      "الظل 1 يعني أن الجوانب المقابلة والمجاورة متساوية، وهو ما يحدث في مثلث <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90</a>. القيم الأقل من 1 تعني أن الضلع المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> أقصر من الضلع المجاور — المثلث أوسع من طوله. القيم الأعلى من 1 تعني أن الجانب المقابل أطول - المثلث أطول من عرضه.",
+      "من الناحية العملية، الظل هو ميل خط الوتر عندما تقف عند <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A."
+    ],
+    "whenToUse_intro": "تعتبر نسبة الظل هذه <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">الآلة الحاسبة</a> مفيدة للغاية عندما:",
+    "whenToUse_items": [
+      "لديك كلا ساقي المثلث وتريد نسبة الظل.",
+      "أنت تقوم بحل مسائل تتعلق بالانحدار أو الدرجة أو درجة الميل (الارتفاع فوق المدى).",
+      "أنت بحاجة إلى العثور على <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">زاوية</a> للارتفاع أو الانخفاض.",
+      "تريد تحديد مدى انحدار المنحدر أو السقف أو المنحدر.",
+      "أنت تقوم بالتحويل بين أطوال الأرجل وقياسات <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> دون استخدام الوتر."
+    ],
+    "commonMistakes_intro": "تجنب هذه الأخطاء الظلية الشائعة:",
+    "commonMistakes_items": [
+      "بما في ذلك الوتر في صيغة الظل. يستخدم Tangent الساقين فقط، دون الحاجة إلى استخدام الوتر.",
+      "وضع الضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> المجاور في البسط. الصيغة هي a / b (عكس المجاور)، وليس b / a. عكس ذلك يعطي ظل التمام.",
+      "توقع أن تكون النتيجة دائمًا أقل من 1. على عكس جيب التمام وجيب التمام، يمكن أن يكون الظل أي رقم موجب.",
+      "الخلط بين أي ساق هي المقابلة وأيها مجاورة. حددها دائمًا بالنسبة إلى <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A، وليس الزاوية القائمة.",
+      "استخدام الصيغة الخاطئة للزاوية <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"></a>. إذا قمت بتسمية الزاوية B بدلاً من الزاوية A، فسيتم تبديل الجوانب المقابلة والمجاورة."
+    ],
+    "relatedLinks": [
+      "حاسبة النسب المثلثية للمثلث القائم الزاوية",
+      "حاسبة نسبة الجيب",
+      "حاسبة نسبة جيب التمام",
+      "حاسبة زاوية المثلث القائم"
+    ],
+    "faqs": [
+      {
+        "question": "ما هي صيغة نسبة الظل؟",
+        "answer": "إنه tan(A) = a / b، حيث a هو الجانب المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> و b هو الجانب المجاور. يمكنك تقسيم المقابل على المجاور."
+      },
+      {
+        "question": "هل يمكن أن يكون tan(A) أكبر من 1؟",
+        "answer": "نعم. عندما يكون الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> المقابل أطول من الجانب المجاور، يتجاوز الظل 1. على سبيل المثال، tan(60°) ≈ 1.732."
+      },
+      {
+        "question": "كيف يرتبط الظل بالمنحدر؟",
+        "answer": "الظل هو في الأساس ميل الوتر عندما يكون الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> المجاور هو المسار الأفقي والجانب المقابل هو الارتفاع الرأسي. تان (أ) = الارتفاع / الجري."
+      },
+      {
+        "question": "لماذا لا يستخدم الظل الوتر؟",
+        "answer": "الظل يقيس النسبة بين الساقين مباشرة. ليست هناك حاجة إلى الوتر لأن الظل يصف شكل (انحدار) المثلث، وليس المقياس."
+      },
+      {
+        "question": "ماذا يحدث عندما أ = ب؟",
+        "answer": "عندما تكون كلا الساقين متساويتين، tan(A) = 1، و<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A هي بالضبط 45°."
+      }
+    ]
+  },
+  "cotangent-ratio-calculator": {
+    "slug": "حاسبة نسبة ظل التمام",
+    "h1": "حاسبة نسبة ظل التمام",
+    "headerSummary": "احسب cot(A) من الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">المجاور</a> b على الجانب المقابل a في المثلث القائم.",
+    "metaTitle": "حاسبة نسبة ظل التمام | سرير المثلث الأيمن (أ)",
+    "metaDescription": "استخدم حاسبة نسبة ظل التمام <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> للعثور على cot(A) في المثلث القائم باستخدام <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع المجاور</a> b والضلع المقابل a مع الصيغة والخطوات والأمثلة.",
+    "calculator_heading": "حساب نسبة ظل التمام",
+    "calculator_outputLabel": "سرير أطفال (أ)",
+    "calculator_fields": [
+      "الجهة المجاورة ب",
+      "الجهة المقابلة أ"
+    ],
+    "introHeading": "كيف تعمل حاسبة نسبة ظل التمام",
+    "intro": [
+      "ظل التمام هو مقلوب الظل. بينما يقسم الظل الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع المقابل</a> على الجانب المجاور، فإن ظل التمام يقلب هذا الكسر - فهو يقسم الجانب المجاور على الجانب الآخر. يظهر بشكل أقل في فصول الهندسة الأساسية، لكنه يلعب دورًا مهمًا في علم المثلثات وحساب التفاضل والتكامل المتقدم.",
+      "تأخذ هذه الآلة الحاسبة <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">المجاور</a> b والجانب المقابل a، ثم تُرجع cot(A) = b / a. إذا كنت معتادًا على التعامل مع ظل الزاوية، فإن ظل التمام هو ببساطة الكسر العكسي."
+    ],
+    "calculatorNote": "أدخل الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> المجاور b والجانب المقابل a في الحقول أعلاه. تقوم الآلة الحاسبة <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> بإرجاع cot(A) = b / a. يجب أن تكون كلتا القيمتين موجبتين.",
+    "formula_display": "سرير(أ) = ب / أ",
+    "formula_paragraphs": [
+      "ظل التمام للزاوية <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A يساوي الضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> مقسومًا على الضلع المقابل. وهو مقلوب الظل: cot(A) = 1 / tan(A).",
+      "مثل ظل التمام، يستخدم ظل التمام ساقي المثلث القائم الزاوية فقط. الوتر غير متورط. يمكن أن يأخذ ظل التمام أي قيمة موجبة للزوايا الحادة."
+    ],
+    "diagramExplanation": [
+      "بالنسبة إلى <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A، <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> a هو المقابل، والضلع b مجاور، والضلع c هو الوتر.",
+      "يستخدم ظل التمام الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> b المجاور (الساق بجوار <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A) كالبسط والجانب المقابل a (عبر الزاوية A) كمقام. لا يتم استخدام الوتر c."
+    ],
+    "howToSteps": [
+      "حدد <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A في المثلث الأيمن.",
+      "ابحث عن <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> b، والساق المجاورة — الساق المجاورة لـ <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A والزاوية القائمة.",
+      "ابحث عن <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> a، الساق المقابلة — الساق المقابلة من <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A.",
+      "أدخل b في حقل الإدخال الأول.",
+      "أدخل في حقل الإدخال الثاني.",
+      "انقر فوق حساب.",
+      "والنتيجة هي سرير الأطفال (A)، والذي يمكن أن يكون أي رقم موجب."
+    ],
+    "example_intro": "المثلث الأيمن له ضلع مجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> ب = 4 والضلع المقابل أ = 3.",
+    "example_steps": [
+      "سرير(أ) = ب / أ",
+      "المهد(أ) = 4 / 3",
+      "المهد (أ) ≈ 1.3333"
+    ],
+    "example_conclusion": "ظل التمام للزاوية <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A يبلغ 1.3333 تقريبًا. يمكنك التحقق من ذلك: tan(A) = 3 / 4 = 0.75، و1 / 0.75 = 1.3333.",
+    "whatResultMeans": [
+      "يخبرك ظل التمام بعدد المرات التي يتناسب فيها الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> المجاور مع الجانب المقابل. إنها نسخة الجريان الزائد لنسبة الانحدار.",
+      "ظل التمام 1 يعني أن كلا الساقين متساويان (زاوية 45 درجة <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"></a>). القيم الأكبر من 1 تعني أن الضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> أطول من الضلع المقابل — المثلث أوسع والزاوية أصغر. القيم الأقل من 1 تعني أن الجانب المقابل أطول، والزاوية أكبر والمثلث أكثر انحدارًا.",
+      "بما أن ظل التمام هو مقلوب الظل، يمكنك دائمًا التحويل بينهما: cot(A) = 1 / tan(A) وtan(A) = 1 / cot(A)."
+    ],
+    "whenToUse_intro": "اختر نسبة ظل التمام هذه <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">الآلة الحاسبة</a> عندما:",
+    "whenToUse_items": [
+      "أنت بحاجة إلى معكوس الظل دون حساب 1 / tan(A) يدويًا.",
+      "أنت تستخدم صيغًا تتطلب على وجه التحديد ظل التمام، مثل هويات حساب التفاضل والتكامل معينة.",
+      "أنت تفضل التفكير من حيث التجاوز في الارتفاع بدلاً من التجاوز في الارتفاع.",
+      "أنت تقوم بحل المشكلات في المسح أو البناء أو البراهين المثلثية."
+    ],
+    "commonMistakes_intro": "ترقب لهذه المزالق ظل التمام:",
+    "commonMistakes_items": [
+      "كتابة a/b بدلاً من b/a. ظل التمام يضع الضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> المجاور في الأعلى، وليس الجانب المقابل. مبادلة لهم يعطيك الظل.",
+      "الخلط بين ظل التمام وجيب التمام. ظل التمام هو b / a (المجاور على العكس). جيب التمام هو ب / ج (المجاور على الوتر). وهي نسب مختلفة.",
+      "استخدام الوتر في الحساب. ظل التمام يشمل الساقين فقط.",
+      "ونسيانه هو مقلوب الظل. إذا كنت تعرف ظا (أ) بالفعل، فما عليك سوى أخذ 1 / ظا (أ) للحصول على سرير الأطفال (أ).",
+      "الخلط بين <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> المجاور والذي يقابله. حدد دائمًا الجوانب المتعلقة بـ <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A."
+    ],
+    "relatedLinks": [
+      "حاسبة النسب المثلثية للمثلث القائم الزاوية",
+      "حاسبة نسبة الظل",
+      "حاسبة نسبة الجيب",
+      "حاسبة نسبة جيب التمام"
+    ],
+    "faqs": [
+      {
+        "question": "ما هي صيغة ظل التمام للمثلث القائم الزاوية؟",
+        "answer": "إنه cot(A) = b / a، حيث b هو الضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">المجاور</a> و a هو الضلع المقابل للزاوية <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A. وهذا هو عكس كسر المماس."
+      },
+      {
+        "question": "كيف يرتبط ظل التمام بالظل؟",
+        "answer": "ظل التمام هو مقلوب الظل. إذا كان ظا(أ) = 0.75، فإن ظا(أ) = 1 / 0.75 ≈ 1.3333."
+      },
+      {
+        "question": "متى يمكنني استخدام ظل التمام بدلا من الظل؟",
+        "answer": "استخدم ظل التمام عندما تتطلب الصيغة ذلك على وجه التحديد، أو عندما تريد نسبة المجاور إلى المقابل مباشرة. في العديد من سياقات حساب التفاضل والتكامل والفيزياء، يظهر ظل التمام في الهويات والصيغ المشتقة."
+      },
+      {
+        "question": "هل يمكن أن يساوي cot(A) صفرًا في المثلث القائم؟",
+        "answer": "في المثلث القائم الزوايا الحادة فقط، يكون cot(A) موجبًا دائمًا. يقترب ظل التمام من الصفر عندما يقترب <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A من 90 درجة، لكن الزاوية 90 درجة هي الزاوية القائمة بحد ذاتها، وليست زاوية حادة يمكن قياسها."
+      },
+      {
+        "question": "هل ظل التمام هو نفسه 1 مقسومًا على الظل؟",
+        "answer": "نعم. المهد(أ) = 1 / ظا(أ) = ب / أ. كلا التعبيرين يعطيان نفس النتيجة."
+      }
+    ]
+  },
+  "secant-ratio-calculator": {
+    "slug": "حاسبة نسبة القاطع",
+    "h1": "حاسبة نسبة القاطع",
+    "headerSummary": "أوجد sec(A) من خلال مقارنة الوتر c مع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع المجاور</a> b، وهو مقلوب جيب التمام.",
+    "metaTitle": "حاسبة نسبة القاطع | المثلث الأيمن ثانية(أ)",
+    "metaDescription": "استخدم هذه النسبة القاطعة <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">الآلة الحاسبة</a> للعثور على sec(A) في المثلث القائم باستخدام الوتر c والضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> b مع الصيغة والخطوات والأمثلة.",
+    "calculator_heading": "حساب نسبة القاطع",
+    "calculator_outputLabel": "ثانية (أ)",
+    "calculator_fields": [
+      "الوتر ج",
+      "الجهة المجاورة ب"
+    ],
+    "introHeading": "كيف تعمل حاسبة النسبة القاطعة هذه",
+    "intro": [
+      "القاطع هو مقلوب جيب التمام. عندما يقسم جيب التمام الضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> على الوتر، يقلب القاطع ذلك - فهو يقسم الوتر على الجانب المجاور. تكون النتيجة دائمًا أكبر من أو تساوي 1 لأن الوتر هو دائمًا أطول ضلع في المثلث القائم.",
+      "تأخذ هذه الآلة الحاسبة <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> مدخلين — الوتر c والضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> b — وترجع ثانية(A). إنها طريقة سريعة للحصول على هذه النسبة المتبادلة دون إجراء القسمة يدويًا أو حساب جيب التمام أولاً."
+    ],
+    "calculatorNote": "أدخل الوتر c والجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">المجاور</a> b في الحقول أعلاه. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">الآلة الحاسبة</a> تحسب ثانية(A) = ج / ب. يجب أن تكون كلا القيمتين موجبتين، ويجب أن تكون c أكبر من b.",
+    "formula_display": "ثانية (أ) = ج / ب",
+    "formula_paragraphs": [
+      "قاطع <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A يساوي الوتر مقسومًا على الضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع المجاور</a>. هذا هو مقلوب جيب التمام: sec(A) = 1 / cos(A).",
+      "نظرًا لأن الوتر يكون دائمًا أطول من الضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> المجاور في المثلث القائم الزاوية، فإن sec(A) يكون دائمًا أكبر من 1. وعندما تصبح <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A أكبر، يتقلص الجانب المجاور بالنسبة إلى الوتر، وبالتالي يزيد القاطع."
+    ],
+    "diagramExplanation": [
+      "بالنسبة إلى <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A، <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> a هو المقابل، والضلع b مجاور، والضلع c هو الوتر.",
+      "يستخدم القاطع الوتر c كالبسط والضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> b كمقام. الجانب الآخر a ليس جزءًا من الحساب القاطع."
+    ],
+    "howToSteps": [
+      "حدد <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A في المثلث الأيمن.",
+      "أوجد <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> c، الوتر — الضلع الأطول، مقابل <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> اليمنى.",
+      "ابحث عن <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> b، الساق المجاورة — الجانب الذي يلامس <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A والزاوية القائمة.",
+      "أدخل c في حقل الإدخال الأول.",
+      "أدخل b في حقل الإدخال الثاني.",
+      "انقر فوق حساب.",
+      "والنتيجة هي sec(A)، وهي دائمًا أكبر من أو تساوي 1."
+    ],
+    "example_intro": "المثلث القائم الزاوية له الوتر c = 5 والضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> b = 4.",
+    "example_steps": [
+      "ثانية (أ) = ج / ب",
+      "ثانية(أ) = 5 / 4",
+      "ثانية (أ) = 1.25"
+    ],
+    "example_conclusion": "قاطع <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A هو 1.25. للتحقق: cos(A) = 4 / 5 = 0.8، و1 / 0.8 = 1.25.",
+    "whatResultMeans": [
+      "يخبرك القاطع بعدد المرات التي تتم فيها مقارنة الوتر بالضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>. القاطع 1.25 يعني أن الوتر أطول بنسبة 25% من الضلع المجاور.",
+      "الحد الأدنى لقيمة القاطع في المثلث القائم هو أعلى قليلاً من 1، والذي يحدث عندما تكون <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A صغيرة جدًا ويكون الضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">المجاور</a> تقريبًا بطول الوتر. مع زيادة الزاوية A، يقصر الجانب المجاور بالنسبة إلى الوتر، ويزداد حجم القاطع.",
+      "يكون القاطع مفيدًا عندما تحتاج إلى القياس من الضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> المجاور إلى الوتر، أو عندما تستدعي الصيغة 1 / cos(A)."
+    ],
+    "whenToUse_intro": "تعتبر نسبة القاطع هذه <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">الآلة الحاسبة</a> هي الاختيار الصحيح عندما:",
+    "whenToUse_items": [
+      "تتطلب الصيغة القاطع أو 1 / cos(A) وتريد القيمة مباشرة.",
+      "أنت بحاجة إلى معرفة مقدار طول الوتر مقارنة بالضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> المجاور.",
+      "أنت تتعامل مع مسائل حساب التفاضل والتكامل التي تتضمن القاطع في المشتقات أو التكاملات.",
+      "أنت تقوم بفحص الحسابات الهيكلية حيث يمثل الوتر الطول الفعلي والضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">المجاور</a> يمثل الإسقاط الأفقي <a href=\"/right-triangle-projection-calculator/\" class=\"text-primary hover:underline\"></a>."
+    ],
+    "commonMistakes_intro": "هذه الأخطاء القاطعة تزعج الطلاب في أغلب الأحيان:",
+    "commonMistakes_items": [
+      "الخلط بين القاطع وجيب التمام. جيب التمام هو ب / ج (المجاور على الوتر). القاطع هو المقلوب: c / b (الوتر فوق المجاور).",
+      "الحصول على نتيجة أقل من 1. إذا كانت إجابتك أقل من 1، فمن المحتمل أنك عكست الكسر. في المثلث القائم الصحيح، يكون sec(A) دائمًا أكبر من أو يساوي 1.",
+      "استخدام الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> المعاكس بدلاً من الجانب المجاور. القاطع يربط الوتر بالضلع المجاور، وليس الجانب المقابل.",
+      "خلط القاطع وقاطع التمام. القاطع هو مقلوب جيب التمام. Cosecant هو مقلوب الجيب. يستخدمون جوانب مختلفة.",
+      "دخول ب أكبر من ج. يجب أن يكون الوتر دائمًا أطول من الضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> المجاور."
+    ],
+    "relatedLinks": [
+      "حاسبة النسب المثلثية للمثلث القائم الزاوية",
+      "حاسبة نسبة جيب التمام",
+      "حاسبة نسبة قاطع التمام",
+      "حاسبة نسبة ظل التمام"
+    ],
+    "faqs": [
+      {
+        "question": "ما هي نسبة القاطع في المثلث الأيمن؟",
+        "answer": "يتم تعريف القاطع على أنه sec(A) = c / b، حيث c هو الوتر وb هو الضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>. إنه مقلوب جيب التمام."
+      },
+      {
+        "question": "لماذا يكون القاطع دائمًا أكبر من 1؟",
+        "answer": "لأن الوتر c هو دائمًا أطول <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">ضلع</a> في المثلث القائم الزاوية. إن قسمة عدد أكبر (ج) على رقم أصغر (ب) يعطي دائمًا نتيجة أكبر من 1."
+      },
+      {
+        "question": "كيف يمكنني التحويل بين القاطع وجيب التمام؟",
+        "answer": "sec(A) = 1 / cos(A)، وcos(A) = 1 / sec(A). إذا كنت تعرف أحدهما، يمكنك العثور على الآخر عن طريق أخذ المعاملة بالمثل."
+      },
+      {
+        "question": "ما هو ثانية (45 درجة)؟",
+        "answer": "في المثلث <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90</a>، يكون الوتر √2 ضرب الساق. إذن ثانية(45°) = √2 ≈ 1.4142."
+      },
+      {
+        "question": "هل يستخدم secant في تطبيقات العالم الحقيقي؟",
+        "answer": "نعم. يظهر القاطع في صيغ الفيزياء والحسابات الهندسية وحساب التفاضل والتكامل. يتم استخدامه عندما تحتاج إلى قياس مسافة أفقية إلى طول المسار الفعلي على طول المنحدر."
+      }
+    ]
+  },
+  "cosecant-ratio-calculator": {
+    "slug": "cosecant-ratio-calculator",
+    "h1": "Cosecant Ratio Calculator",
+    "headerSummary": "Calculate csc(A) from hypotenuse c and opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a, the reciprocal of sine.",
+    "metaTitle": "Cosecant Ratio Calculator | Right Triangle csc(A)",
+    "metaDescription": "Use this cosecant ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> to find csc(A) in a right triangle using hypotenuse c and opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a with formula, steps, and examples.",
+    "calculator_heading": "Calculate Cosecant Ratio",
+    "calculator_outputLabel": "csc(A)",
+    "calculator_fields": [
+      "Hypotenuse c",
+      "Opposite side a"
+    ],
+    "introHeading": "How This Cosecant Ratio Calculator Works",
+    "intro": [
+      "Cosecant is the reciprocal of sine. It divides the hypotenuse by the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>, giving you a ratio that is always greater than 1 in a right triangle. You might not see it as often as sine or cosine in basic courses, but it is essential in more advanced math and certain physics applications.",
+      "This <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> makes it simple. Enter the hypotenuse c and the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a, and it returns csc(A) immediately. No need to calculate sine first and then flip the fraction."
+    ],
+    "calculatorNote": "Enter hypotenuse c and opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a in the fields above. The <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> computes csc(A) = c / a. Both values must be positive, and c must be greater than a.",
+    "formula_display": "csc(A) = c / a",
+    "formula_paragraphs": [
+      "Cosecant of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A equals the hypotenuse divided by the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. It is the reciprocal of sine: csc(A) = 1 / sin(A).",
+      "The hypotenuse is always longer than the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>, so csc(A) always produces a value greater than 1 for acute angles. As <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A decreases, the opposite side gets shorter relative to the hypotenuse, and cosecant increases."
+    ],
+    "diagramExplanation": [
+      "For <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a is opposite, side b is adjacent, and side c is the hypotenuse.",
+      "Cosecant uses the hypotenuse c as the numerator and the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a as the denominator. The adjacent side b plays no role in the cosecant formula."
+    ],
+    "howToSteps": [
+      "Identify <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A in your right triangle.",
+      "Locate the hypotenuse c — the <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> opposite the right <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> and the longest side.",
+      "Locate the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a — the leg directly across from <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A.",
+      "Type c into the first input field.",
+      "Type a into the second input field.",
+      "Click Calculate.",
+      "The result is csc(A), always greater than 1."
+    ],
+    "example_intro": "A right triangle has hypotenuse c = 5 and opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a = 3.",
+    "example_steps": [
+      "csc(A) = c / a",
+      "csc(A) = 5 / 3",
+      "csc(A) ≈ 1.6667"
+    ],
+    "example_conclusion": "The cosecant of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is approximately 1.6667. Verification: sin(A) = 3 / 5 = 0.6, and 1 / 0.6 ≈ 1.6667.",
+    "whatResultMeans": [
+      "Cosecant tells you how many times longer the hypotenuse is compared to the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. A cosecant of 1.6667 means the hypotenuse is about 67% longer than the opposite side.",
+      "When <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is large (close to 90°), the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is nearly as long as the hypotenuse, so csc(A) is close to 1. When angle A is small, the opposite side is much shorter, and cosecant grows large.",
+      "Think of it this way: if you know the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> and want to find the hypotenuse, multiply the opposite side by csc(A). That gives you c = a × csc(A)."
+    ],
+    "whenToUse_intro": "Reach for this cosecant ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> when:",
+    "whenToUse_items": [
+      "You need the reciprocal of sine without computing sin(A) first.",
+      "A formula specifically calls for cosecant, which appears in certain trigonometric identities.",
+      "You are scaling the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> up to the full hypotenuse length.",
+      "You are working on physics or engineering problems involving forces, wave functions, or oscillation formulas that use cosecant."
+    ],
+    "commonMistakes_intro": "Watch out for these cosecant errors:",
+    "commonMistakes_items": [
+      "Confusing cosecant with sine. Sine is a / c (opposite over hypotenuse). Cosecant is the reciprocal: c / a (hypotenuse over opposite).",
+      "Confusing cosecant with secant. Cosecant is based on the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> (reciprocal of sine). Secant is based on the adjacent side (reciprocal of cosine). They use different legs.",
+      "Getting a result less than 1. If your answer is below 1, you may have entered the values in the wrong order. csc(A) is always greater than 1.",
+      "Using the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> instead of the opposite side. Cosecant pairs the hypotenuse with the opposite side only.",
+      "Expecting cosecant and cosine to be related by name. Despite the co- prefix, cosecant is the reciprocal of sine, not cosine."
+    ],
+    "relatedLinks": [
+      "Right Triangle Trig Ratios Calculator",
+      "Sine Ratio Calculator",
+      "Secant Ratio Calculator",
+      "Cotangent Ratio Calculator"
+    ],
+    "faqs": [
+      {
+        "question": "What is the cosecant formula in a right triangle?",
+        "answer": "It is csc(A) = c / a, where c is the hypotenuse and a is the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. Cosecant is the reciprocal of sine."
+      },
+      {
+        "question": "كيف يرتبط قاطع التمام بالجيب؟",
+        "answer": "جسك(أ) = 1 / الخطيئة(أ). إذا كانت sin(A) = 0.6، فإن csc(A) = 1 / 0.6 ≈ 1.6667."
+      },
+      {
+        "question": "لماذا يكون قاطع التمام دائمًا أكبر من 1؟",
+        "answer": "لأن الوتر يكون دائما أطول من الضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">المقابل</a> في المثلث القائم. الكسر ج / أ دائما يتجاوز 1."
+      },
+      {
+        "question": "ما هو CSC (30 درجة)؟",
+        "answer": "في <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90 مثلث</a>، sin(30°) = 0.5، لذا csc(30°) = 1 / 0.5 = 2. الوتر هو بالضبط ضعف الضلع المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>."
+      },
+      {
+        "question": "متى يمكنني استخدام cosecant بدلا من جيب؟",
+        "answer": "استخدم قاطع التمام عندما تتطلب الصيغة ذلك مباشرة، أو عندما تريد العثور على الوتر من الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع المقابل</a>: c = a × csc(A). أنه يحفظ خطوة القسمة على الجيب."
+      }
+    ]
+  }
+}

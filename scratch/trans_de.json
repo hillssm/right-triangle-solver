@@ -1,0 +1,557 @@
+{
+  "sine-ratio-calculator": {
+    "slug": "Sinusverhältnis-Rechner",
+    "h1": "Sinusverhältnis-Rechner",
+    "headerSummary": "Finden Sie sin(A) von der gegenüberliegenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> a und der Hypotenuse c in einem rechtwinkligen Dreieck.",
+    "metaTitle": "Sinusverhältnis-Rechner | Rechtwinkliges Dreieck sin(A)",
+    "metaDescription": "Verwenden Sie diesen Sinusverhältnis-<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a>, um sin(A) in einem rechtwinkligen Dreieck unter Verwendung der gegenüberliegenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> a und der Hypotenuse c mit Formel, Schritten und Beispielen zu ermitteln.",
+    "calculator_heading": "Berechnen Sie das Sinusverhältnis",
+    "calculator_outputLabel": "Sünde(A)",
+    "calculator_fields": [
+      "Gegenüberliegende Seite a",
+      "Hypotenuse c"
+    ],
+    "introHeading": "So funktioniert dieser Sinusverhältnis-Rechner",
+    "intro": [
+      "Das Sinusverhältnis ist eine der ersten trigonometrischen Funktionen, die Sie in der Geometrie lernen. Es verbindet einen bestimmten <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> in einem rechtwinkligen Dreieck mit zwei seiner Seiten – der gegenüberliegenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> und der Hypotenuse. Wenn Sie diese beiden <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">Messwerte</a> kennen, liefert Ihnen dieser Rechner sofort sin(A).",
+      "Unabhängig davon, ob Sie eine Hausaufgabe bearbeiten, eine Antwort im Prüfungsstil überprüfen oder eine echte Messaufgabe lösen, macht dieses Tool den Schritt der manuellen Division überflüssig. Geben Sie Ihre Werte ein und erhalten Sie das Ergebnis mit der angezeigten Formel."
+    ],
+    "calculatorNote": "Geben Sie die Länge der gegenüberliegenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> a und der Hypotenuse c in die Felder oben ein. Der <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a> dividiert a durch c und gibt sin(A) zurück. Beide Werte müssen positiv sein und c muss größer als a sein.",
+    "formula_display": "sin(A) = a / c",
+    "formula_paragraphs": [
+      "Der Sinus von <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A entspricht der Länge der gegenüberliegenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> geteilt durch die Länge der Hypotenuse. Dies wird oft mit dem SOH-Teil von SOH-CAH-TOA in Erinnerung gerufen.",
+      "In einem rechtwinkligen Dreieck ist die gegenüberliegende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> diejenige, die dem <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A direkt gegenüberliegt. Die Hypotenuse ist immer die längste Seite – diejenige, die dem 90°-Winkel zugewandt ist. Da die Hypotenuse immer länger ist als jedes Bein, liegt sin(A) für spitze Winkel immer zwischen 0 und 1."
+    ],
+    "diagramExplanation": [
+      "Für <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A ist <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> a die gegenüberliegende Seite, Seite b ist benachbart und Seite c ist die Hypotenuse.",
+      "Das Sinusverhältnis verwendet nur zwei dieser drei Seiten: die gegenüberliegende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> a (direkt gegenüber von <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A) und die Hypotenuse c (die längste Seite, gegenüber dem rechten Winkel bei B)."
+    ],
+    "howToSteps": [
+      "Identifizieren Sie den <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A in Ihrem rechtwinkligen Dreieck. Es muss einer der beiden spitzen Winkel sein, nicht der 90°-Winkel.",
+      "Finden Sie die <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> gegenüber dem <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A. Dies ist Seite a.",
+      "Finden Sie die Hypotenuse. Dies ist <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> c, die längste Seite, gegenüber dem rechten <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a>.",
+      "Geben Sie im ersten Eingabefeld den Wert von a ein.",
+      "Geben Sie den Wert von c in das zweite Eingabefeld ein.",
+      "Klicken Sie auf Berechnen, um sin(A) anzuzeigen.",
+      "Überprüfen Sie das Ergebnis. Es sollte eine Dezimalzahl zwischen 0 und 1 sein."
+    ],
+    "example_intro": "Angenommen, Sie haben ein rechtwinkliges Dreieck, bei dem die gegenüberliegende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> a = 3 und die Hypotenuse c = 5 ist.",
+    "example_steps": [
+      "sin(A) = a / c",
+      "sin(A) = 3 / 5",
+      "sin(A) = 0,6"
+    ],
+    "example_conclusion": "Der Sinus von <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A beträgt 0,6. Das bedeutet, dass die gegenüberliegende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> 60 % der Hypotenusenlänge beträgt. Wenn Sie den tatsächlichen Winkel benötigen, nehmen Sie den Umkehrsinus: A = arcsin(0,6) ≈ 36,87°.",
+    "whatResultMeans": [
+      "Die Ausgabe ist ein einheitenloses Verhältnis. Es zeigt Ihnen, wie groß die gegenüberliegende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> im Vergleich zur Hypotenuse ist. Ein Ergebnis von 0,5 bedeutet, dass die gegenüberliegende Seite genau die Hälfte der Hypotenuse ist – was in einem <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90-Dreieck</a> mit A = 30° der Fall ist.",
+      "Kleine Werte (nahe 0) bedeuten, dass <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A klein und die gegenüberliegende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> relativ zur Hypotenuse kurz ist. Werte näher bei 1 bedeuten, dass der Winkel A groß ist (nahe 90°) und die gegenüberliegende Seite fast so lang wie die Hypotenuse ist.",
+      "Da sin(A) ein Verhältnis zweier Längen ist, hat es keine Einheiten. Unabhängig davon, ob Ihr Dreieck in Zentimetern, Zoll oder Metern gemessen wird, bleibt der Sinuswert gleich, solange beide Seiten dieselbe Einheit verwenden."
+    ],
+    "whenToUse_intro": "Verwenden Sie diesen Sinusverhältnis-<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a> in jeder dieser Situationen:",
+    "whenToUse_items": [
+      "Sie kennen die Gegenkathete <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> und die Hypotenuse und möchten den Sinuswert.",
+      "Sie bereiten sich darauf vor, den <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A mithilfe der Umkehrsinusfunktion zu finden.",
+      "Sie müssen eine Lehrbuchantwort überprüfen oder Ihre eigene trigonometrische Arbeit überprüfen.",
+      "Sie lösen physikalische Probleme mit vertikalen Komponenten, wie der Höhe einer Rampe oder der vertikalen Kraft auf einer Steigung.",
+      "Sie zerlegen einen Vektor in seine vertikalen und horizontalen Teile."
+    ],
+    "commonMistakes_intro": "Achten Sie bei der Berechnung des Sinus auf diese häufigen Fehler:",
+    "commonMistakes_items": [
+      "Verwenden der angrenzenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> anstelle der gegenüberliegenden Seite. Sinus verwendet die Seite gegenüber von <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A, nicht die Seite daneben.",
+      "Vertauschen Sie a und c in der Formel. Die gegenüberliegende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> kommt in den Zähler und die Hypotenuse kommt in den Nenner. Das Schreiben von c/a ergibt den Kosekans, nicht den Sinus.",
+      "Verwenden von Seiten, die in verschiedenen Einheiten gemessen werden. Wenn a in Zentimetern und c in Zoll angegeben ist, ist das Verhältnis bedeutungslos. Konvertieren Sie zuerst in die gleiche Einheit.",
+      "Vergessen, dass c größer als a sein muss. In einem gültigen rechtwinkligen Dreieck ist die Hypotenuse immer die längste <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a>.",
+      "Eingabe des rechten <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkels</a> (90°) als Winkel A. Sinus gilt nur für die spitzen Winkel. Der 90°-Winkel liegt am Scheitelpunkt B."
+    ],
+    "relatedLinks": [
+      "Rechner für trigonometrische Verhältnisse rechtwinkliger Dreiecke",
+      "Kosinusverhältnis-Rechner",
+      "Tangentenverhältnis-Rechner",
+      "Rechner für rechtwinklige Dreieckswinkel"
+    ],
+    "faqs": [
+      {
+        "question": "Wie lautet die Formel für sin(A) in einem rechtwinkligen Dreieck?",
+        "answer": "Die Formel lautet sin(A) = a / c, wobei a die <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> gegenüber dem <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A und c die Hypotenuse ist. Sie dividieren die Gegenkathete durch die Hypotenuse."
+      },
+      {
+        "question": "Warum ist sin(A) in einem rechtwinkligen Dreieck immer kleiner als 1?",
+        "answer": "Weil die Hypotenuse c immer die längste <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> ist. Da a kürzer als c ist, ist der Bruch a/c immer kleiner als 1."
+      },
+      {
+        "question": "Kann ich diesen Rechner verwenden, um den Winkel selbst zu ermitteln?",
+        "answer": "Dieser <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a> gibt Ihnen den Sinuswert. Um den <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> zu ermitteln, verwenden Sie die Umkehrsinusfunktion: A = arcsin(sin(A)). Dies können Sie mit unserem Winkelrechner für rechtwinklige Dreiecke tun."
+      },
+      {
+        "question": "Was bedeutet ein sin(A)-Ergebnis von 0,5?",
+        "answer": "Das bedeutet, dass die gegenüberliegende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> genau die halbe Länge der Hypotenuse hat. Dies entspricht einem <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A von 30°."
+      },
+      {
+        "question": "Muss ich die Nachbarseite eingeben, um den Sinus zu berechnen?",
+        "answer": "Nein. Sinus verwendet nur die gegenüberliegende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> a und die Hypotenuse c. Die Ankathete b ist nicht Teil der Sinusformel."
+      }
+    ]
+  },
+  "cosine-ratio-calculator": {
+    "slug": "Kosinus-Verhältnis-Rechner",
+    "h1": "Kosinusverhältnis-Rechner",
+    "headerSummary": "Berechnen Sie cos(A) aus der angrenzenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b und der Hypotenuse c mit klaren rechtwinkligen Dreiecksschritten.",
+    "metaTitle": "Kosinusverhältnis-Rechner | Rechtwinkliges Dreieck cos(A)",
+    "metaDescription": "Verwenden Sie diesen Kosinusverhältnis-<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a>, um cos(A) in einem rechtwinkligen Dreieck mithilfe der angrenzenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b und der Hypotenuse c mit Formel, Schritten und Beispielen zu ermitteln.",
+    "calculator_heading": "Berechnen Sie das Kosinusverhältnis",
+    "calculator_outputLabel": "cos(A)",
+    "calculator_fields": [
+      "Angrenzende Seite b",
+      "Hypotenuse c"
+    ],
+    "introHeading": "So funktioniert dieser Kosinusverhältnis-Rechner",
+    "intro": [
+      "Das Kosinusverhältnis misst, wie sich die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> eines rechtwinkligen Dreiecks im Vergleich zur Hypotenuse verhält. Es ist der zweite Teil von SOH-CAH-TOA und eine der am häufigsten verwendeten trigonometrischen Funktionen in Geometrie, Physik und Ingenieurwesen.",
+      "Dieser <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a> nimmt zwei Eingaben – die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b und die Hypotenuse c – und gibt cos(A) zurück. Es übernimmt die Division für Sie und zeigt das Ergebnis sofort an, sodass Sie sich auf das Verständnis der Geometrie statt auf die Arithmetik konzentrieren können."
+    ],
+    "calculatorNote": "Geben Sie die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b und die Hypotenuse c in die Eingabefelder oben ein. Der <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a> berechnet cos(A) = b / c. Beide Werte müssen positiv sein und c muss größer als b sein.",
+    "formula_display": "cos(A) = b / c",
+    "formula_paragraphs": [
+      "Der Kosinus von <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A entspricht der angrenzenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> dividiert durch die Hypotenuse. Dies ist das CAH in SOH-CAH-TOA.",
+      "Die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b ist der Schenkel, der den <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A und den rechten Winkel berührt. Die Hypotenuse c liegt dem rechten Winkel gegenüber und ist immer die längste Seite. Da die Hypotenuse länger ist als jedes Bein, ergibt cos(A) für spitze Winkel immer einen Wert zwischen 0 und 1."
+    ],
+    "diagramExplanation": [
+      "Für <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A ist <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> a die gegenüberliegende Seite, Seite b ist benachbart und Seite c ist die Hypotenuse.",
+      "Das Kosinusverhältnis verwendet die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b (den Schenkel, der zusammen mit der Hypotenuse den <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A bildet) und die Hypotenuse c. Seite a ist nicht Teil der Kosinusberechnung."
+    ],
+    "howToSteps": [
+      "Suchen Sie <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A in Ihrem rechtwinkligen Dreieck. Es ist einer der beiden spitzen Winkel.",
+      "Identifizieren Sie die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a>. Dies ist Seite b – der Schenkel, der zusammen mit der Hypotenuse den <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A bildet.",
+      "Identifizieren Sie die Hypotenuse c, die <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> gegenüber dem 90°-<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a>.",
+      "Geben Sie den Wert von b in das erste Feld ein.",
+      "Geben Sie den Wert von c in das zweite Feld ein.",
+      "Drücken Sie Berechnen, um cos(A) anzuzeigen.",
+      "Überprüfen Sie, ob das Ergebnis zwischen 0 und 1 liegt."
+    ],
+    "example_intro": "Ein rechtwinkliges Dreieck hat die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b = 4 und die Hypotenuse c = 5.",
+    "example_steps": [
+      "cos(A) = b / c",
+      "cos(A) = 4 / 5",
+      "cos(A) = 0,8"
+    ],
+    "example_conclusion": "Der Kosinus von <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A beträgt 0,8. Die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> beträgt 80 % der Hypotenusenlänge. So ermitteln Sie den Winkel: A = arccos(0,8) ≈ 36,87°.",
+    "whatResultMeans": [
+      "Der Kosinus sagt Ihnen, wie viel der Länge der Hypotenuse von der angrenzenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite[[1]“ abgedeckt wird. Ein Kosinus von 0,8 bedeutet, dass sich die Ankathete zu 80 % so weit erstreckt wie die Hypotenuse.",
+      "Wenn <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A klein ist, ist die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> fast so lang wie die Hypotenuse, sodass cos(A) nahe bei 1 liegt. Wenn Winkel A groß ist (nahe 90°), schrumpft die angrenzende Seite relativ zur Hypotenuse und drückt cos(A) in Richtung 0.",
+      "Das Ergebnis ist dimensionslos. Es spielt keine Rolle, ob Ihre <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">Maße</a> in Fuß, Metern oder einer anderen Einheit vorliegen – der Kosinus ist ein reines Verhältnis."
+    ],
+    "whenToUse_intro": "Greifen Sie zu diesem Kosinusverhältnis-<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a>, wenn:",
+    "whenToUse_items": [
+      "Sie kennen die Ankathete <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> und die Hypotenuse und benötigen den Kosinuswert.",
+      "Sie ermitteln die horizontale Komponente eines Kraft-, Geschwindigkeits- oder Verschiebungsvektors.",
+      "Sie möchten einen Triggerwert aus einem Lehrbuch oder einer Aufgabenstellung überprüfen.",
+      "Sie arbeiten an Navigations- oder Vermessungsproblemen, bei denen es um horizontale Entfernungen geht.",
+      "Sie benötigen cos(A), bevor Sie eine andere abgeleitete Größe wie Sekante oder Tangente berechnen können."
+    ],
+    "commonMistakes_intro": "Dies sind die häufigsten Kosinusfehler, die Schüler machen:",
+    "commonMistakes_items": [
+      "Verwendung der gegenüberliegenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> anstelle der angrenzenden Seite. Cosinus verwendet das Bein neben <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A, nicht das gegenüberliegende.",
+      "Eingabe von b größer als c. In einem gültigen rechtwinkligen Dreieck ist die Hypotenuse immer die längste <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a>. Wenn b größer als c ist, bilden Ihre Werte kein rechtwinkliges Dreieck.",
+      "Den Bruch umkehren. Wenn man c/b schreibt, erhält man den Sekant, nicht den Kosinus.",
+      "Mischen der angrenzenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> mit der Hypotenuse-Beschriftung. Überprüfen Sie noch einmal, welche Seite dem rechten <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> gegenüberliegt (das ist die Hypotenuse) und welche Seite einen Teil des Winkels A bildet (das ist die angrenzende Seite).",
+      "Verwendung von <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seitenlängen</a>, gemessen in verschiedenen Einheiten, ohne vorherige Umrechnung."
+    ],
+    "relatedLinks": [
+      "Rechner für trigonometrische Verhältnisse rechtwinkliger Dreiecke",
+      "Sinusverhältnis-Rechner",
+      "Tangentenverhältnis-Rechner",
+      "Rechner für rechtwinklige Dreieckswinkel"
+    ],
+    "faqs": [
+      {
+        "question": "Wie lautet die Kosinusverhältnisformel für ein rechtwinkliges Dreieck?",
+        "answer": "Es ist cos(A) = b / c, wobei b die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> und c die Hypotenuse ist. Angrenzend bedeutet das Bein, das <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A berührt."
+      },
+      {
+        "question": "Wie unterscheidet sich der Kosinus vom Sinus?",
+        "answer": "Sinus verwendet die gegenüberliegende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> über der Hypotenuse (a / c). Der Kosinus nutzt die Ankathete über der Hypotenuse (b/c). Sie messen verschiedene Seiten relativ zum gleichen <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a>."
+      },
+      {
+        "question": "Was bedeutet es, wenn cos(A) = 0,5?",
+        "answer": "Das bedeutet, dass die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> genau die Hälfte der Hypotenuse ist. Dies geschieht, wenn <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A 60° beträgt."
+      },
+      {
+        "question": "Kann der Kosinus größer als 1 sein?",
+        "answer": "Nein. In einem rechtwinkligen Dreieck ist die Hypotenuse immer länger als die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a>, also ist b / c immer kleiner als 1."
+      },
+      {
+        "question": "Warum brauche ich für den Kosinus nur zwei Seiten?",
+        "answer": "Die Kosinusformel betrifft nur die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> und die Hypotenuse. Die Gegenseite geht nicht in die Berechnung ein."
+      }
+    ]
+  },
+  "tangent-ratio-calculator": {
+    "slug": "Tangens-Verhältnis-Rechner",
+    "h1": "Tangentenverhältnis-Rechner",
+    "headerSummary": "Finden Sie tan(A) von der gegenüberliegenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> a und der angrenzenden Seite b für Steigungs-, Steigungs- und Verlaufsprobleme.",
+    "metaTitle": "Tangentenverhältnis-Rechner | Rechtwinkliges Dreieck tan(A)",
+    "metaDescription": "Verwenden Sie diesen Tangensverhältnis-<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a>, um tan(A) in einem rechtwinkligen Dreieck mithilfe der gegenüberliegenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> a und der benachbarten Seite b mit Formel, Schritten und Beispielen zu ermitteln.",
+    "calculator_heading": "Berechnen Sie das Tangentenverhältnis",
+    "calculator_outputLabel": "braun(A)",
+    "calculator_fields": [
+      "Gegenüberliegende Seite a",
+      "Angrenzende Seite b"
+    ],
+    "introHeading": "So funktioniert dieser Tangentenverhältnisrechner",
+    "intro": [
+      "Tangens ist das dritte der primären <a href=\"/right-triangle-trig-ratios-calculator/\" class=\"text-primary hover:underline\">trigonometrischen Verhältnisse</a> und funktioniert etwas anders als Sinus und Cosinus. Anstatt ein Bein mit der Hypotenuse zu vergleichen, vergleicht die Tangente ein Bein mit dem anderen – insbesondere die gegenüberliegende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> zur benachbarten Seite. Dies macht es besonders nützlich bei Neigungs- und <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Höhenwinkelproblemen</a>.",
+      "Dieser <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a> dividiert die gegenüberliegende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> a durch die angrenzende Seite b und ergibt tan(A). Sie müssen keine Taschenrechner-App herausholen – geben Sie einfach Ihre beiden Beinlängen ein und erhalten Sie die Antwort."
+    ],
+    "calculatorNote": "Geben Sie die gegenüberliegende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> a und die angrenzende Seite b in die Eingabefelder oben ein. Das Tool berechnet tan(A) = a / b. Beide Werte müssen positiv sein.",
+    "formula_display": "tan(A) = a / b",
+    "formula_paragraphs": [
+      "Der Tangens von <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A entspricht der gegenüberliegenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> dividiert durch die angrenzende Seite. Dies ist der TOA-Teil von SOH-CAH-TOA.",
+      "Im Gegensatz zu Sinus und Cosinus bezieht der Tangens die Hypotenuse nicht mit ein. Es werden nur die beiden Beine genutzt. Dies bedeutet auch, dass die Tangente nicht auf 1 begrenzt ist – sie kann jede positive Zahl für spitze Winkel sein und wächst unbegrenzt, wenn sich <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A 90° nähert."
+    ],
+    "diagramExplanation": [
+      "Für <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A ist <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> a die gegenüberliegende Seite, Seite b ist benachbart und Seite c ist die Hypotenuse.",
+      "Tangente verwendet nur die beiden Schenkel: die gegenüberliegende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> a und die angrenzende Seite b. Die Hypotenuse c kommt in der Tangensformel nicht vor."
+    ],
+    "howToSteps": [
+      "Finden Sie <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A im rechtwinkligen Dreieck.",
+      "Identifizieren Sie <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> a, das Bein direkt gegenüber von <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A.",
+      "Identifizieren Sie <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b, den Schenkel, der neben der Hypotenuse den <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A bildet.",
+      "Geben Sie im ersten Feld den Wert von a ein.",
+      "Geben Sie den Wert von b in das zweite Feld ein.",
+      "Klicken Sie auf Berechnen, um tan(A) zu erhalten.",
+      "Das Ergebnis kann kleiner als 1, gleich 1 oder größer als 1 sein."
+    ],
+    "example_intro": "Ein rechtwinkliges Dreieck hat die gegenüberliegende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> a = 3 und die benachbarte Seite b = 4.",
+    "example_steps": [
+      "tan(A) = a / b",
+      "tan(A) = 3 / 4",
+      "tan(A) = 0,75"
+    ],
+    "example_conclusion": "Der Tangens von <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A beträgt 0,75. So ermitteln Sie den Winkel: A = arctan(0,75) ≈ 36,87°.",
+    "whatResultMeans": [
+      "Tangente gibt Ihnen die Steilheit des Dreiecks aus der Perspektive von <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A an. Betrachten Sie es als eine Rise-Over-Run-Berechnung.",
+      "Ein Tangens von 1 bedeutet, dass die gegenüberliegenden und benachbarten Seiten gleich sind, was in einem <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90-Dreieck</a> der Fall ist. Werte unter 1 bedeuten, dass die gegenüberliegende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> kürzer ist als die angrenzende Seite – das Dreieck ist breiter als hoch. Werte über 1 bedeuten, dass die gegenüberliegende Seite länger ist – das Dreieck ist höher als breit.",
+      "In der Praxis ist die Tangente die Steigung der Hypotenusenlinie, wenn Sie im <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A stehen."
+    ],
+    "whenToUse_intro": "Dieser Tangensverhältnis-<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a> ist am hilfreichsten, wenn:",
+    "whenToUse_items": [
+      "Sie haben beide Schenkel des Dreiecks und möchten das Tangensverhältnis.",
+      "Sie lösen Steigungs-, Gefälle- oder Steigungsprobleme (Anstieg über Lauf).",
+      "Sie müssen den <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> der Erhebung oder Senke ermitteln.",
+      "Sie möchten bestimmen, wie steil eine Rampe, ein Dach oder eine Neigung ist.",
+      "Sie konvertieren zwischen Beinlängen und <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkelmaßen</a>, ohne die Hypotenuse zu verwenden."
+    ],
+    "commonMistakes_intro": "Vermeiden Sie diese häufigen Tangentenfehler:",
+    "commonMistakes_items": [
+      "Einbeziehung der Hypotenuse in die Tangensformel. Bei der Tangente werden nur die beiden Schenkel verwendet – keine Hypotenuse.",
+      "Setzen Sie die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> in den Zähler. Die Formel lautet a/b (entgegengesetzt über benachbart), nicht b/a. Die Umkehrung ergibt den Kotangens.",
+      "Erwarten Sie, dass das Ergebnis immer kleiner als 1 ist. Im Gegensatz zu Sinus und Cosinus kann der Tangens jede positive Zahl sein.",
+      "Verwechslung, welches Bein gegenüberliegend und welches benachbart ist. Identifizieren Sie sie immer relativ zum <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A, nicht zum rechten Winkel.",
+      "Verwenden der Formel für den falschen <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a>. Wenn Sie Winkel B statt Winkel A beschriftet haben, vertauschen sich die gegenüberliegenden und benachbarten Seiten."
+    ],
+    "relatedLinks": [
+      "Rechner für trigonometrische Verhältnisse rechtwinkliger Dreiecke",
+      "Sinusverhältnis-Rechner",
+      "Kosinusverhältnis-Rechner",
+      "Rechner für rechtwinklige Dreieckswinkel"
+    ],
+    "faqs": [
+      {
+        "question": "Wie lautet die Tangensverhältnisformel?",
+        "answer": "Es ist tan(A) = a / b, wobei a die gegenüberliegende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> und b die angrenzende Seite ist. Sie dividieren Gegenstück durch Nachbarstück."
+      },
+      {
+        "question": "Kann tan(A) größer als 1 sein?",
+        "answer": "Ja. Wenn die gegenüberliegende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> länger als die benachbarte Seite ist, überschreitet die Tangente 1. Beispiel: tan(60°) ≈ 1,732."
+      },
+      {
+        "question": "Wie hängt die Tangente mit der Steigung zusammen?",
+        "answer": "Tangente ist im Wesentlichen die Steigung der Hypotenuse, wenn die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> der horizontale Verlauf und die gegenüberliegende Seite der vertikale Anstieg ist. tan(A) = steigen / laufen."
+      },
+      {
+        "question": "Warum verwendet Tangens nicht die Hypotenuse?",
+        "answer": "Die Tangente misst direkt das Verhältnis zwischen den beiden Beinen. Die Hypotenuse wird nicht benötigt, da die Tangente die Form (Steilheit) des Dreiecks und nicht den Maßstab beschreibt."
+      },
+      {
+        "question": "Was passiert, wenn a = b?",
+        "answer": "Wenn beide Schenkel gleich sind, ist tan(A) = 1 und der <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A beträgt genau 45°."
+      }
+    ]
+  },
+  "cotangent-ratio-calculator": {
+    "slug": "Kotangensverhältnis-Rechner",
+    "h1": "Kotangensverhältnis-Rechner",
+    "headerSummary": "Berechnen Sie cot(A) von der benachbarten <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b über die gegenüberliegende Seite a in einem rechtwinkligen Dreieck.",
+    "metaTitle": "Kotangensverhältnis-Rechner | Rechtwinkliges Dreiecksbett (A)",
+    "metaDescription": "Verwenden Sie diesen Kotangensverhältnis-<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a>, um cot(A) in einem rechtwinkligen Dreieck mithilfe der benachbarten <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b und der gegenüberliegenden Seite a mit Formel, Schritten und Beispielen zu ermitteln.",
+    "calculator_heading": "Berechnen Sie das Kotangensverhältnis",
+    "calculator_outputLabel": "Kinderbett(A)",
+    "calculator_fields": [
+      "Angrenzende Seite b",
+      "Gegenüberliegende Seite a"
+    ],
+    "introHeading": "So funktioniert dieser Kotangensverhältnis-Rechner",
+    "intro": [
+      "Kotangens ist der Kehrwert des Tangens. Während der Tangens die gegenüberliegende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> durch die benachbarte Seite teilt, dreht der Kotangens diesen Bruch um – er teilt die benachbarte Seite durch die gegenüberliegende Seite. In den grundlegenden Geometrieklassen kommt es seltener vor, spielt aber in der fortgeschrittenen Trigonometrie und Analysis eine wichtige Rolle.",
+      "Dieser <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a> nimmt die benachbarte <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b und die gegenüberliegende Seite a und gibt dann cot(A) = b / a zurück. Wenn Sie es gewohnt sind, mit Tangens zu arbeiten, ist Kotangens einfach der Umkehrbruch."
+    ],
+    "calculatorNote": "Geben Sie die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b und die gegenüberliegende Seite a in die Felder oben ein. Der <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a> gibt cot(A) = b / a zurück. Beide Werte müssen positiv sein.",
+    "formula_display": "cot(A) = b / a",
+    "formula_paragraphs": [
+      "Kotangens von <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A ist gleich der angrenzenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> dividiert durch die gegenüberliegende Seite. Es ist der Kehrwert des Tangens: cot(A) = 1 / tan(A).",
+      "Wie der Tangens verwendet auch der Kotangens nur die beiden Schenkel des rechtwinkligen Dreiecks. Die Hypotenuse ist nicht beteiligt. Der Kotangens kann für spitze Winkel jeden positiven Wert annehmen."
+    ],
+    "diagramExplanation": [
+      "Für <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A ist <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> a die gegenüberliegende Seite, Seite b ist benachbart und Seite c ist die Hypotenuse.",
+      "Der Kotangens verwendet die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b (das Bein neben dem <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A) als Zähler und die gegenüberliegende Seite a (gegenüber dem Winkel A) als Nenner. Die Hypotenuse c wird nicht verwendet."
+    ],
+    "howToSteps": [
+      "Identifizieren Sie den <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A in Ihrem rechtwinkligen Dreieck.",
+      "Finden Sie <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b, den angrenzenden Schenkel – den neben <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A und den rechten Winkel.",
+      "Finden Sie <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> a, das gegenüberliegende Bein – das gegenüber von <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A.",
+      "Geben Sie b in das erste Eingabefeld ein.",
+      "Geben Sie im zweiten Eingabefeld ein ein.",
+      "Klicken Sie auf Berechnen.",
+      "Das Ergebnis ist cot(A), das eine beliebige positive Zahl sein kann."
+    ],
+    "example_intro": "Ein rechtwinkliges Dreieck hat die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b = 4 und die gegenüberliegende Seite a = 3.",
+    "example_steps": [
+      "cot(A) = b / a",
+      "Kinderbett(A) = 4 / 3",
+      "cot(A) ≈ 1,3333"
+    ],
+    "example_conclusion": "Der Kotangens von <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A beträgt ungefähr 1,3333. Sie können dies überprüfen: tan(A) = 3 / 4 = 0,75 und 1 / 0,75 = 1,3333.",
+    "whatResultMeans": [
+      "Der Kotangens gibt an, wie oft die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> relativ zur gegenüberliegenden Seite passt. Es handelt sich um die Run-Over-Rise-Version des Steilheitsverhältnisses.",
+      "Ein Kotangens von 1 bedeutet, dass beide Schenkel gleich sind (ein Winkel von 45° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"></a>). Werte größer als 1 bedeuten, dass die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> länger ist als die gegenüberliegende Seite – das Dreieck ist breiter und der Winkel kleiner. Werte unter 1 bedeuten, dass die gegenüberliegende Seite länger ist – der Winkel größer und das Dreieck steiler.",
+      "Da der Kotangens der Kehrwert des Tangens ist, können Sie jederzeit zwischen ihnen umrechnen: cot(A) = 1 / tan(A) und tan(A) = 1 / cot(A)."
+    ],
+    "whenToUse_intro": "Wählen Sie diesen Kotangensverhältnis-<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a>, wenn:",
+    "whenToUse_items": [
+      "Sie benötigen den Kehrwert des Tangens, ohne 1 / tan(A) manuell zu berechnen.",
+      "Sie arbeiten mit Formeln, die speziell den Kotangens erfordern, wie zum Beispiel bestimmte Identitäten in der Infinitesimalrechnung.",
+      "Sie denken lieber in den Begriffen „Anstieg über Anstieg“ als „Anstieg über Überlauf“.",
+      "Sie lösen Probleme im Bereich Vermessung, Konstruktion oder trigonometrische Beweise."
+    ],
+    "commonMistakes_intro": "Halten Sie Ausschau nach diesen Kotangens-Fallstricken:",
+    "commonMistakes_items": [
+      "Schreiben Sie a / b anstelle von b / a. Der Kotangens legt die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> oben, nicht die gegenüberliegende Seite. Wenn Sie sie vertauschen, erhalten Sie eine Tangente.",
+      "Kotangens mit Kosinus verwechseln. Kotangens ist b / a (angrenzend gegenüber gegenüber). Der Kosinus ist b/c (angrenzend an die Hypotenuse). Es sind unterschiedliche Verhältnisse.",
+      "Verwendung der Hypotenuse bei der Berechnung. Der Kotangens betrifft nur die beiden Beine.",
+      "Das Vergessen ist der Kehrwert der Tangente. Wenn Sie tan(A) bereits kennen, nehmen Sie einfach 1 / tan(A), um cot(A) zu erhalten.",
+      "Verwechseln, welche <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> benachbart und welche gegenüberliegend ist. Identifizieren Sie Seiten immer relativ zum <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A."
+    ],
+    "relatedLinks": [
+      "Rechner für trigonometrische Verhältnisse rechtwinkliger Dreiecke",
+      "Tangentenverhältnis-Rechner",
+      "Sinusverhältnis-Rechner",
+      "Kosinusverhältnis-Rechner"
+    ],
+    "faqs": [
+      {
+        "question": "Wie lautet die Kotangensformel für ein rechtwinkliges Dreieck?",
+        "answer": "Es ist cot(A) = b / a, wobei b die benachbarte <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> und a die gegenüberliegende Seite von <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A ist. Dies ist die Umkehrung des Tangensbruchs."
+      },
+      {
+        "question": "Wie verhält sich der Kotangens zum Tangens?",
+        "answer": "Kotangens ist der Kehrwert des Tangens. Wenn tan(A) = 0,75, dann cot(A) = 1 / 0,75 ≈ 1,3333."
+      },
+      {
+        "question": "Wann würde ich Kotangens anstelle von Tangens verwenden?",
+        "answer": "Verwenden Sie den Kotangens, wenn eine Formel dies ausdrücklich erfordert oder wenn Sie das Neben-zu-Gegensatz-Verhältnis direkt wünschen. In vielen Zusammenhängen der Analysis und Physik kommt der Kotangens in Identitäten und Ableitungsformeln vor."
+      },
+      {
+        "question": "Kann cot(A) in einem rechtwinkligen Dreieck gleich Null sein?",
+        "answer": "In einem rechtwinkligen Dreieck mit nur spitzen Winkeln ist cot(A) immer positiv. Der Kotangens nähert sich Null, wenn <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A sich 90° nähert, aber der 90°-Winkel ist der rechte Winkel selbst, kein spitzer Winkel, den Sie messen würden."
+      },
+      {
+        "question": "Ist der Kotangens dasselbe wie 1 dividiert durch den Tangens?",
+        "answer": "Ja. cot(A) = 1 / tan(A) = b / a. Beide Ausdrücke liefern das gleiche Ergebnis."
+      }
+    ]
+  },
+  "secant-ratio-calculator": {
+    "slug": "Sekantenverhältnis-Rechner",
+    "h1": "Sekantenverhältnis-Rechner",
+    "headerSummary": "Finden Sie sec(A), indem Sie die Hypotenuse c mit der benachbarten <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b, dem Kehrwert des Kosinus, vergleichen.",
+    "metaTitle": "Sekantenverhältnis-Rechner | Rechtwinkliges Dreieck Sek(A)",
+    "metaDescription": "Verwenden Sie diesen Sekantenverhältnis-<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a>, um sec(A) in einem rechtwinkligen Dreieck unter Verwendung der Hypotenuse c und der angrenzenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b mit Formel, Schritten und Beispielen zu ermitteln.",
+    "calculator_heading": "Berechnen Sie das Sekantenverhältnis",
+    "calculator_outputLabel": "Sek(A)",
+    "calculator_fields": [
+      "Hypotenuse c",
+      "Angrenzende Seite b"
+    ],
+    "introHeading": "So funktioniert dieser Sekantenverhältnis-Rechner",
+    "intro": [
+      "Sekant ist der Kehrwert des Kosinus. Wo der Kosinus die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> durch die Hypotenuse teilt, kehrt der Sekant dies um – er teilt die Hypotenuse durch die angrenzende Seite. Das Ergebnis ist immer größer oder gleich 1, da die Hypotenuse immer die längste Seite in einem rechtwinkligen Dreieck ist.",
+      "Dieser <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a> nimmt zwei Eingaben – Hypotenuse c und angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b – und gibt sec(A) zurück. Dies ist eine schnelle Möglichkeit, dieses reziproke Verhältnis zu ermitteln, ohne die Division manuell durchzuführen oder zuerst den Kosinus zu berechnen."
+    ],
+    "calculatorNote": "Geben Sie die Hypotenuse c und die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b in die Felder oben ein. Der <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a> berechnet sec(A) = c / b. Beide Werte müssen positiv sein und c muss größer als b sein.",
+    "formula_display": "Sek(A) = c / b",
+    "formula_paragraphs": [
+      "Sekante von <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A entspricht der Hypotenuse dividiert durch die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a>. Dies ist der Kehrwert des Kosinus: sec(A) = 1 / cos(A).",
+      "Da die Hypotenuse in einem rechtwinkligen Dreieck immer länger ist als die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a>, ist sec(A) immer größer als 1. Wenn der <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A größer wird, schrumpft die angrenzende Seite relativ zur Hypotenuse, sodass die Sekante zunimmt."
+    ],
+    "diagramExplanation": [
+      "Für <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A ist <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> a die gegenüberliegende Seite, Seite b ist benachbart und Seite c ist die Hypotenuse.",
+      "Secant verwendet die Hypotenuse c als Zähler und die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b als Nenner. Die Gegenseite a ist nicht Teil der Sekantenberechnung."
+    ],
+    "howToSteps": [
+      "Identifizieren Sie den <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A in Ihrem rechtwinkligen Dreieck.",
+      "Finden Sie <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> c, die Hypotenuse – die längste Seite, gegenüber dem rechten <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a>.",
+      "Finden Sie <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b, das angrenzende Bein – die Seite, die sowohl den <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A als auch den rechten Winkel berührt.",
+      "Geben Sie c in das erste Eingabefeld ein.",
+      "Geben Sie b in das zweite Eingabefeld ein.",
+      "Klicken Sie auf Berechnen.",
+      "Das Ergebnis ist sec(A), das immer größer oder gleich 1 ist."
+    ],
+    "example_intro": "Ein rechtwinkliges Dreieck hat die Hypotenuse c = 5 und die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b = 4.",
+    "example_steps": [
+      "Sek(A) = c / b",
+      "Sek(A) = 5 / 4",
+      "Sek(A) = 1,25"
+    ],
+    "example_conclusion": "Der Sekante von <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A beträgt 1,25. Zur Überprüfung: cos(A) = 4 / 5 = 0,8 und 1 / 0,8 = 1,25.",
+    "whatResultMeans": [
+      "Sekante gibt an, wie oft die Hypotenuse im Vergleich zur angrenzenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> länger ist. Eine Sekante von 1,25 bedeutet, dass die Hypotenuse 25 % länger ist als die angrenzende Seite.",
+      "Der minimale Wert der Sekante in einem rechtwinkligen Dreieck liegt leicht über 1, was auftritt, wenn der <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A sehr klein ist und die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> fast so lang wie die Hypotenuse ist. Mit zunehmendem Winkel A verkürzt sich die Ankathete relativ zur Hypotenuse und die Sekante wird größer.",
+      "Sekante ist immer dann nützlich, wenn Sie von der angrenzenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> zur Hypotenuse skalieren müssen oder wenn eine Formel 1 / cos(A) erfordert."
+    ],
+    "whenToUse_intro": "Dieser Sekantenverhältnis-<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a> ist die richtige Wahl, wenn:",
+    "whenToUse_items": [
+      "Eine Formel erfordert Sekante oder 1 / cos(A) und Sie möchten den Wert direkt.",
+      "Sie müssen herausfinden, wie viel länger die Hypotenuse im Vergleich zur angrenzenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> ist.",
+      "Sie arbeiten mit Analysisproblemen, bei denen es um Sekanten in Ableitungen oder Integralen geht.",
+      "Sie überprüfen Strukturberechnungen, bei denen die Hypotenuse die tatsächliche Länge und die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> die horizontale <a href=\"/right-triangle-projection-calculator/\" class=\"text-primary hover:underline\">Projektion</a> darstellt."
+    ],
+    "commonMistakes_intro": "Diese Sekantenfehler bringen Schüler am häufigsten zum Stolpern:",
+    "commonMistakes_items": [
+      "Sekanten mit Kosinus verwechseln. Der Kosinus ist b/c (angrenzend an die Hypotenuse). Sekante ist der Kehrwert: c / b (Hypotenuse über benachbart).",
+      "Ein Ergebnis kleiner als 1 erhalten. Wenn Ihre Antwort kleiner als 1 ist, haben Sie wahrscheinlich den Bruch umgekehrt. In einem gültigen rechtwinkligen Dreieck ist sec(A) immer größer oder gleich 1.",
+      "Verwendung der gegenüberliegenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> anstelle der angrenzenden Seite. Die Sekante verbindet die Hypotenuse mit der angrenzenden Seite, nicht mit der gegenüberliegenden Seite.",
+      "Sekante und Kosekans verwechseln. Sekant ist der Kehrwert des Kosinus. Kosekans ist der Kehrwert des Sinus. Sie nutzen unterschiedliche Seiten.",
+      "Eingabe von b größer als c. Die Hypotenuse muss immer länger sein als die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a>."
+    ],
+    "relatedLinks": [
+      "Rechner für trigonometrische Verhältnisse rechtwinkliger Dreiecke",
+      "Kosinusverhältnis-Rechner",
+      "Kosekansverhältnis-Rechner",
+      "Kotangensverhältnis-Rechner"
+    ],
+    "faqs": [
+      {
+        "question": "Wie groß ist das Sekantenverhältnis in einem rechtwinkligen Dreieck?",
+        "answer": "Die Sekante ist definiert als sec(A) = c / b, wobei c die Hypotenuse und b die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> ist. Es ist der Kehrwert des Kosinus."
+      },
+      {
+        "question": "Warum ist die Sekante immer größer als 1?",
+        "answer": "Weil die Hypotenuse c immer die längste <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> in einem rechtwinkligen Dreieck ist. Die Division einer größeren Zahl (c) durch eine kleinere Zahl (b) ergibt immer ein Ergebnis größer als 1."
+      },
+      {
+        "question": "Wie rechne ich zwischen Sekante und Kosinus um?",
+        "answer": "Sek(A) = 1 / cos(A) und cos(A) = 1 / Sek(A). Wenn Sie das eine kennen, können Sie das andere finden, indem Sie den Kehrwert bilden."
+      },
+      {
+        "question": "Was ist sek(45°)?",
+        "answer": "In einem <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90-Dreieck</a> beträgt die Hypotenuse das √2-fache des Schenkels. Also sek(45°) = √2 ≈ 1,4142."
+      },
+      {
+        "question": "Wird Sekante in realen Anwendungen verwendet?",
+        "answer": "Ja. Sekanten kommen in physikalischen Formeln, technischen Berechnungen und Infinitesimalrechnungen vor. Es wird verwendet, wenn Sie einen horizontalen Abstand entlang einer Steigung auf die tatsächliche Pfadlänge skalieren müssen."
+      }
+    ]
+  },
+  "cosecant-ratio-calculator": {
+    "slug": "cosecant-ratio-calculator",
+    "h1": "Cosecant Ratio Calculator",
+    "headerSummary": "Calculate csc(A) from hypotenuse c and opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a, the reciprocal of sine.",
+    "metaTitle": "Cosecant Ratio Calculator | Right Triangle csc(A)",
+    "metaDescription": "Use this cosecant ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> to find csc(A) in a right triangle using hypotenuse c and opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a with formula, steps, and examples.",
+    "calculator_heading": "Calculate Cosecant Ratio",
+    "calculator_outputLabel": "csc(A)",
+    "calculator_fields": [
+      "Hypotenuse c",
+      "Opposite side a"
+    ],
+    "introHeading": "How This Cosecant Ratio Calculator Works",
+    "intro": [
+      "Cosecant is the reciprocal of sine. It divides the hypotenuse by the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>, giving you a ratio that is always greater than 1 in a right triangle. You might not see it as often as sine or cosine in basic courses, but it is essential in more advanced math and certain physics applications.",
+      "This <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> makes it simple. Enter the hypotenuse c and the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a, and it returns csc(A) immediately. No need to calculate sine first and then flip the fraction."
+    ],
+    "calculatorNote": "Enter hypotenuse c and opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a in the fields above. The <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> computes csc(A) = c / a. Both values must be positive, and c must be greater than a.",
+    "formula_display": "csc(A) = c / a",
+    "formula_paragraphs": [
+      "Cosecant of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A equals the hypotenuse divided by the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. It is the reciprocal of sine: csc(A) = 1 / sin(A).",
+      "The hypotenuse is always longer than the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>, so csc(A) always produces a value greater than 1 for acute angles. As <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A decreases, the opposite side gets shorter relative to the hypotenuse, and cosecant increases."
+    ],
+    "diagramExplanation": [
+      "For <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a is opposite, side b is adjacent, and side c is the hypotenuse.",
+      "Cosecant uses the hypotenuse c as the numerator and the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a as the denominator. The adjacent side b plays no role in the cosecant formula."
+    ],
+    "howToSteps": [
+      "Identify <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A in your right triangle.",
+      "Locate the hypotenuse c — the <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> opposite the right <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> and the longest side.",
+      "Locate the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a — the leg directly across from <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A.",
+      "Type c into the first input field.",
+      "Type a into the second input field.",
+      "Click Calculate.",
+      "The result is csc(A), always greater than 1."
+    ],
+    "example_intro": "A right triangle has hypotenuse c = 5 and opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a = 3.",
+    "example_steps": [
+      "csc(A) = c / a",
+      "csc(A) = 5 / 3",
+      "csc(A) ≈ 1.6667"
+    ],
+    "example_conclusion": "The cosecant of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is approximately 1.6667. Verification: sin(A) = 3 / 5 = 0.6, and 1 / 0.6 ≈ 1.6667.",
+    "whatResultMeans": [
+      "Cosecant tells you how many times longer the hypotenuse is compared to the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. A cosecant of 1.6667 means the hypotenuse is about 67% longer than the opposite side.",
+      "When <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is large (close to 90°), the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is nearly as long as the hypotenuse, so csc(A) is close to 1. When angle A is small, the opposite side is much shorter, and cosecant grows large.",
+      "Think of it this way: if you know the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> and want to find the hypotenuse, multiply the opposite side by csc(A). That gives you c = a × csc(A)."
+    ],
+    "whenToUse_intro": "Reach for this cosecant ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> when:",
+    "whenToUse_items": [
+      "You need the reciprocal of sine without computing sin(A) first.",
+      "A formula specifically calls for cosecant, which appears in certain trigonometric identities.",
+      "You are scaling the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> up to the full hypotenuse length.",
+      "You are working on physics or engineering problems involving forces, wave functions, or oscillation formulas that use cosecant."
+    ],
+    "commonMistakes_intro": "Watch out for these cosecant errors:",
+    "commonMistakes_items": [
+      "Confusing cosecant with sine. Sine is a / c (opposite over hypotenuse). Cosecant is the reciprocal: c / a (hypotenuse over opposite).",
+      "Confusing cosecant with secant. Cosecant is based on the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> (reciprocal of sine). Secant is based on the adjacent side (reciprocal of cosine). They use different legs.",
+      "Getting a result less than 1. If your answer is below 1, you may have entered the values in the wrong order. csc(A) is always greater than 1.",
+      "Using the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> instead of the opposite side. Cosecant pairs the hypotenuse with the opposite side only.",
+      "Expecting cosecant and cosine to be related by name. Despite the co- prefix, cosecant is the reciprocal of sine, not cosine."
+    ],
+    "relatedLinks": [
+      "Right Triangle Trig Ratios Calculator",
+      "Sine Ratio Calculator",
+      "Secant Ratio Calculator",
+      "Cotangent Ratio Calculator"
+    ],
+    "faqs": [
+      {
+        "question": "What is the cosecant formula in a right triangle?",
+        "answer": "It is csc(A) = c / a, where c is the hypotenuse and a is the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. Cosecant is the reciprocal of sine."
+      },
+      {
+        "question": "Wie hängt der Kosekans mit dem Sinus zusammen?",
+        "answer": "csc(A) = 1 / sin(A). Wenn sin(A) = 0,6, dann ist csc(A) = 1 / 0,6 ≈ 1,6667."
+      },
+      {
+        "question": "Warum ist der Kosekans immer größer als 1?",
+        "answer": "Weil die Hypotenuse in einem rechtwinkligen Dreieck immer länger ist als die gegenüberliegende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a>. Der Bruch c/a ist immer größer als 1."
+      },
+      {
+        "question": "Was ist csc(30°)?",
+        "answer": "In einem <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90-Dreieck</a> ist sin(30°) = 0,5, also csc(30°) = 1 / 0,5 = 2. Die Hypotenuse ist genau das Doppelte der gegenüberliegenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a>."
+      },
+      {
+        "question": "Wann würde ich Kosekans statt Sinus verwenden?",
+        "answer": "Verwenden Sie den Kosekans, wenn eine Formel dies direkt erfordert oder wenn Sie die Hypotenuse von der gegenüberliegenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> finden möchten: c = a × csc(A). Es erspart den Schritt der Division durch den Sinus."
+      }
+    ]
+  }
+}

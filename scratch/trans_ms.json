@@ -1,0 +1,557 @@
+{
+  "sine-ratio-calculator": {
+    "slug": "kalkulator nisbah sinus",
+    "h1": "Kalkulator Nisbah Sinus",
+    "headerSummary": "Cari sin(A) dari sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bertentangan</a> a dan hipotenus c dalam segi tiga tegak.",
+    "metaTitle": "Kalkulator Nisbah Sinus | Sin Segitiga Kanan(A)",
+    "metaDescription": "Gunakan nisbah sinus <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> untuk mencari sin(A) dalam segi tiga tepat menggunakan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> bertentangan a dan hipotenus c dengan formula, langkah dan contoh.",
+    "calculator_heading": "Kira Nisbah Sinus",
+    "calculator_outputLabel": "dosa(A)",
+    "calculator_fields": [
+      "Sebelah bertentangan a",
+      "Hipotenus c"
+    ],
+    "introHeading": "Cara Kalkulator Nisbah Sinus Ini Berfungsi",
+    "intro": [
+      "Nisbah sinus ialah salah satu fungsi trigonometri pertama yang anda pelajari dalam geometri. Ia menghubungkan sudut <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"></a> tertentu dalam segi tiga tepat kepada dua sisinya — sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bertentangan</a> dan hipotenus. Jika anda mengetahui dua <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">ukuran</a> ini, kalkulator ini memberikan anda sin(A) serta-merta.",
+      "Sama ada anda sedang menyelesaikan masalah kerja rumah, menyemak jawapan gaya peperiksaan atau menyelesaikan tugas pengukuran sebenar, alat ini mengalih keluar langkah pembahagian manual. Masukkan nilai anda dan dapatkan hasilnya dengan formula yang ditunjukkan."
+    ],
+    "calculatorNote": "Masukkan panjang sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bertentangan</a> a dan hipotenus c ke dalam medan di atas. Kalkulator <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> membahagikan a dengan c dan mengembalikan sin(A). Kedua-dua nilai mestilah positif, dan c mestilah lebih besar daripada a.",
+    "formula_display": "sin(A) = a / c",
+    "formula_paragraphs": [
+      "Sinus bagi <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A bersamaan dengan panjang sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bertentangan</a> dibahagikan dengan panjang hipotenus. Ini sering diingati dengan bahagian SOH SOH-CAH-TOA.",
+      "Dalam segi tiga tepat, sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> yang bertentangan ialah sisi yang bertentangan dengan sudut <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"></a> A. Sisi miring sentiasa sisi terpanjang — sisi yang menghadap sudut 90°. Oleh kerana hipotenus sentiasa lebih panjang daripada mana-mana kaki, sin(A) sentiasa jatuh antara 0 dan 1 untuk sudut akut."
+    ],
+    "diagramExplanation": [
+      "Untuk <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a adalah bertentangan, sisi b adalah bersebelahan, dan sisi c ialah hipotenus.",
+      "Nisbah sinus hanya menggunakan dua daripada tiga sisi ini: sisi yang bertentangan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a (bertentangan terus dari <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A) dan hipotenus c (sisi terpanjang, bertentangan dengan sudut tepat di B)."
+    ],
+    "howToSteps": [
+      "Kenal pasti <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A dalam segi tiga tepat anda. Ia mestilah salah satu daripada dua sudut akut, bukan sudut 90°.",
+      "Cari <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> bertentangan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A. Ini adalah sisi a.",
+      "Cari hipotenus. Ini ialah <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> c, sisi terpanjang, bertentangan dengan sudut <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">yang betul</a>.",
+      "Masukkan nilai a dalam medan input pertama.",
+      "Masukkan nilai c dalam medan input kedua.",
+      "Klik Kira untuk melihat dosa(A).",
+      "Semak keputusan. Ia mestilah perpuluhan antara 0 dan 1."
+    ],
+    "example_intro": "Katakan anda mempunyai segi tiga tegak dengan sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> yang bertentangan</a> a = 3 dan hipotenus c = 5.",
+    "example_steps": [
+      "sin(A) = a / c",
+      "sin(A) = 3 / 5",
+      "sin(A) = 0.6"
+    ],
+    "example_conclusion": "Sinus bagi <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A ialah 0.6. Ini bermakna sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bertentangan</a> ialah 60% daripada panjang hipotenus. Jika anda memerlukan sudut sebenar, ambil sinus songsang: A = arcsin(0.6) ≈ 36.87°.",
+    "whatResultMeans": [
+      "Keluaran adalah nisbah tanpa unit. Ia memberitahu anda bagaimana <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> bertentangan dengan saiz hipotenus. Hasil 0.5 bermakna sisi bertentangan adalah betul-betul separuh hipotenus — yang berlaku dalam segitiga <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90</a> dengan A = 30°.",
+      "Nilai kecil (hampir 0) bermakna <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A adalah kecil dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> bertentangan adalah pendek berbanding hipotenus. Nilai yang lebih hampir kepada 1 min sudut A adalah besar (menghampiri 90°) dan sisi bertentangan adalah hampir sepanjang hipotenus.",
+      "Oleh kerana sin(A) ialah nisbah dua panjang, ia tidak mempunyai unit. Sama ada segi tiga anda diukur dalam sentimeter, inci atau meter, nilai sinus kekal sama selagi kedua-dua belah menggunakan unit yang sama."
+    ],
+    "whenToUse_intro": "Gunakan nisbah sinus <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini dalam mana-mana situasi ini:",
+    "whenToUse_items": [
+      "Anda tahu <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi </a> dan hipotenus yang bertentangan dan mahukan nilai sinus.",
+      "Anda sedang bersedia untuk mencari <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A menggunakan fungsi sinus songsang.",
+      "Anda perlu mengesahkan jawapan buku teks atau menyemak kerja trigonometri anda sendiri.",
+      "Anda sedang menyelesaikan masalah fizik yang melibatkan komponen menegak, seperti ketinggian tanjakan atau daya menegak pada condong.",
+      "Anda sedang memecahkan vektor kepada bahagian menegak dan mendatarnya."
+    ],
+    "commonMistakes_intro": "Berhati-hati dengan ralat biasa ini semasa mengira sinus:",
+    "commonMistakes_items": [
+      "Menggunakan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sebelah</a> bersebelahan dan bukannya sebelah bertentangan. Sinus menggunakan sisi di seberang <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A, bukan sisi di sebelahnya.",
+      "Menukar a dan c dalam formula. Sisi berlawanan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> masuk dalam pengangka, dan hipotenus masuk dalam penyebut. Menulis c / a memberikan kosekan, bukan sinus.",
+      "Menggunakan sisi yang diukur dalam unit yang berbeza. Jika a dalam sentimeter dan c dalam inci, nisbahnya tidak bermakna. Tukar kepada unit yang sama dahulu.",
+      "Terlupa bahawa c mesti lebih besar daripada a. Dalam segi tiga tepat yang sah, hipotenus sentiasa sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> terpanjang</a>.",
+      "Memasuki sudut <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"></a> kanan (90°) sebagai sudut A. Sinus terpakai pada sudut akut sahaja. Sudut 90° berada di puncak B."
+    ],
+    "relatedLinks": [
+      "Kalkulator Nisbah Trig Segitiga Kanan",
+      "Kalkulator Nisbah Kosinus",
+      "Kalkulator Nisbah Tangen",
+      "Kalkulator Sudut Segitiga Kanan"
+    ],
+    "faqs": [
+      {
+        "question": "Apakah formula untuk sin(A) dalam segi tiga tepat?",
+        "answer": "Formulanya ialah sin(A) = a / c, dengan a ialah <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> bertentangan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A dan c ialah hipotenus. Anda membahagi sisi bertentangan dengan hipotenus."
+      },
+      {
+        "question": "Mengapakah sin(A) sentiasa kurang daripada 1 dalam segi tiga tepat?",
+        "answer": "Kerana hipotenus c sentiasa sisi terpanjang <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>. Oleh kerana a lebih pendek daripada c, pecahan a / c sentiasa kurang daripada 1."
+      },
+      {
+        "question": "Bolehkah saya menggunakan kalkulator ini untuk mencari sudut itu sendiri?",
+        "answer": "<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini memberikan anda nilai sinus. Untuk mencari <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a>, gunakan fungsi sinus songsang: A = arcsin(sin(A)). Anda boleh melakukan ini dengan kalkulator sudut segi tiga tepat kami."
+      },
+      {
+        "question": "Apakah maksud hasil sin(A) 0.5?",
+        "answer": "Ia bermakna sisi bertentangan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> adalah betul-betul separuh panjang hipotenus. Ini sepadan dengan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A menjadi 30°."
+      },
+      {
+        "question": "Adakah saya perlu memasukkan bahagian bersebelahan untuk mengira sinus?",
+        "answer": "Tidak. Sinus hanya menggunakan sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> yang bertentangan</a> a dan hipotenus c. Bahagian bersebelahan b bukan sebahagian daripada formula sinus."
+      }
+    ]
+  },
+  "cosine-ratio-calculator": {
+    "slug": "kosinus-nisbah-kalkulator",
+    "h1": "Kalkulator Nisbah Kosinus",
+    "headerSummary": "Kira cos(A) dari sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bersebelahan</a> b dan hipotenus c dengan langkah segi tiga kanan yang jelas.",
+    "metaTitle": "Kalkulator Nisbah Kosinus | Segitiga Kanan cos(A)",
+    "metaDescription": "Gunakan nisbah kosinus <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> untuk mencari cos(A) dalam segi tiga tepat menggunakan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> bersebelahan dan hipotenus c dengan formula, langkah dan contoh.",
+    "calculator_heading": "Kira Nisbah Kosinus",
+    "calculator_outputLabel": "cos(A)",
+    "calculator_fields": [
+      "Sebelah bersebelahan b",
+      "Hipotenus c"
+    ],
+    "introHeading": "Cara Kalkulator Nisbah Kosinus Ini Berfungsi",
+    "intro": [
+      "Nisbah kosinus mengukur bagaimana sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bersebelahan</a> bagi segi tiga tegak berbanding dengan hipotenus. Ia adalah bahagian kedua SOH-CAH-TOA dan salah satu fungsi trig yang paling biasa digunakan dalam geometri, fizik dan kejuruteraan.",
+      "Kalkulator <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> ini mengambil dua input — sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bersebelahan</a> b dan hipotenus c — dan mengembalikan cos(A). Ia mengendalikan pembahagian untuk anda dan menunjukkan hasilnya dengan serta-merta, supaya anda boleh memberi tumpuan kepada memahami geometri dan bukannya aritmetik."
+    ],
+    "calculatorNote": "Taipkan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sebelah</a> b bersebelahan dan hipotenus c ke dalam medan input di atas. Kalkulator <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> mengira cos(A) = b / c. Kedua-dua nilai mestilah positif, dan c mestilah lebih besar daripada b.",
+    "formula_display": "cos(A) = b / c",
+    "formula_paragraphs": [
+      "Kosinus <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A bersamaan dengan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> bersebelahan dibahagikan dengan hipotenus. Ini ialah CAH dalam SOH-CAH-TOA.",
+      "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b bersebelahan ialah kaki yang menyentuh <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A dan sudut tepat. Hipotenus c terletak di seberang dari sudut kanan dan sentiasa sisi terpanjang. Oleh kerana hipotenus lebih panjang daripada mana-mana kaki, cos(A) sentiasa menghasilkan nilai antara 0 dan 1 untuk sudut akut."
+    ],
+    "diagramExplanation": [
+      "Untuk <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a adalah bertentangan, sisi b adalah bersebelahan, dan sisi c ialah hipotenus.",
+      "Nisbah kosinus menggunakan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b bersebelahan (kaki yang membentuk <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A bersama hipotenus) dan hipotenus c. Sisi a bukan sebahagian daripada pengiraan kosinus."
+    ],
+    "howToSteps": [
+      "Cari <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A dalam segi tiga tepat anda. Ia adalah salah satu daripada dua sudut lancip.",
+      "Kenal pasti <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi bersebelahan</a>. Ini ialah sisi b — kaki yang membentuk <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A bersama hipotenus.",
+      "Kenal pasti hipotenus c, sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> bertentangan dengan sudut 90° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"></a>.",
+      "Masukkan nilai b dalam medan pertama.",
+      "Masukkan nilai c dalam medan kedua.",
+      "Tekan Kira untuk melihat cos(A).",
+      "Semak bahawa keputusan adalah antara 0 dan 1."
+    ],
+    "example_intro": "Segitiga tegak mempunyai sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bersebelahan</a> b = 4 dan hipotenus c = 5.",
+    "example_steps": [
+      "cos(A) = b / c",
+      "cos(A) = 4 / 5",
+      "cos(A) = 0.8"
+    ],
+    "example_conclusion": "Kosinus bagi <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A ialah 0.8. Sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">yang bersebelahan</a> ialah 80% daripada panjang hipotenus. Untuk mencari sudut: A = arccos(0.8) ≈ 36.87°.",
+    "whatResultMeans": [
+      "Kosinus memberitahu anda berapa banyak panjang hipotenus diliputi oleh <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi bersebelahan</a>. Kosinus 0.8 bermakna sisi bersebelahan terbentang 80% sejauh hipotenus.",
+      "Apabila <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A kecil, sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> yang bersebelahan adalah hampir sama panjang dengan hipotenus, jadi cos(A) adalah hampir kepada 1. Apabila sudut A besar (hampir 90°), sisi bersebelahan mengecut berbanding hipotenus, menolak cos(A) ke arah 0.",
+      "Hasilnya tidak berdimensi. Tidak kira sama ada <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">ukuran</a> anda dalam kaki, meter atau mana-mana unit lain — kosinus ialah nisbah tulen."
+    ],
+    "whenToUse_intro": "Jangkau nisbah kosinus <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini apabila:",
+    "whenToUse_items": [
+      "Anda tahu <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> bersebelahan dan hipotenus dan memerlukan nilai kosinus.",
+      "Anda sedang mencari komponen mendatar bagi daya, halaju atau vektor sesaran.",
+      "Anda ingin mengesahkan nilai trig daripada buku teks atau set masalah.",
+      "Anda sedang menyelesaikan masalah navigasi atau tinjauan yang melibatkan jarak mendatar.",
+      "Anda memerlukan cos(A) sebelum mengira kuantiti terbitan lain, seperti sekan atau tangen."
+    ],
+    "commonMistakes_intro": "Ini ialah ralat kosinus yang paling kerap dilakukan oleh pelajar:",
+    "commonMistakes_items": [
+      "Menggunakan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang bertentangan dan bukannya sisi bersebelahan. Kosinus menggunakan kaki di sebelah <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A, bukan kaki di seberangnya.",
+      "Memasuki b lebih besar daripada c. Dalam segi tiga tepat yang sah, hipotenus sentiasa sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> terpanjang</a>. Jika b melebihi c, nilai anda tidak membentuk segi tiga tepat.",
+      "Membalikkan pecahan. Menulis c / b memberikan sekan, bukan kosinus.",
+      "Mencampurkan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> bersebelahan dengan label hipotenus. Semak semula sisi mana yang bertentangan dengan sudut <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> kanan (iaitu hipotenus) dan yang mana membentuk sebahagian daripada sudut A (iaitu sisi bersebelahan).",
+      "Menggunakan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">panjang sisi</a> diukur dalam unit yang berbeza tanpa menukar terlebih dahulu."
+    ],
+    "relatedLinks": [
+      "Kalkulator Nisbah Trig Segitiga Kanan",
+      "Kalkulator Nisbah Sinus",
+      "Kalkulator Nisbah Tangen",
+      "Kalkulator Sudut Segitiga Kanan"
+    ],
+    "faqs": [
+      {
+        "question": "Apakah formula nisbah kosinus bagi segi tiga tepat?",
+        "answer": "Ia ialah cos(A) = b / c, dengan b ialah sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bersebelahan</a> dan c ialah hipotenus. Bersebelahan bermaksud kaki yang menyentuh <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A."
+      },
+      {
+        "question": "Bagaimanakah kosinus berbeza daripada sinus?",
+        "answer": "Sinus menggunakan sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bertentangan</a> di atas hipotenus (a / c). Kosinus menggunakan sisi bersebelahan di atas hipotenus (b / c). Mereka mengukur sisi yang berbeza berbanding dengan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> yang sama."
+      },
+      {
+        "question": "Apakah maksudnya jika cos(A) = 0.5?",
+        "answer": "Ini bermakna <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi bersebelahan</a> ialah betul-betul separuh hipotenus. Ini berlaku apabila <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A ialah 60°."
+      },
+      {
+        "question": "Bolehkah kosinus lebih besar daripada 1?",
+        "answer": "Tidak. Dalam segi tiga tegak, hipotenus sentiasa lebih panjang daripada sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bersebelahan</a>, jadi b / c sentiasa kurang daripada 1."
+      },
+      {
+        "question": "Mengapa saya hanya memerlukan dua sisi untuk kosinus?",
+        "answer": "Formula kosinus hanya melibatkan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> bersebelahan dan hipotenus. Bahagian yang bertentangan bukan sebahagian daripada pengiraan."
+      }
+    ]
+  },
+  "tangent-ratio-calculator": {
+    "slug": "tangen-nisbah-kalkulator",
+    "h1": "Kalkulator Nisbah Tangen",
+    "headerSummary": "Cari tan(A) dari sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bertentangan</a> a dan sebelah b bersebelahan untuk masalah cerun, naik dan lari.",
+    "metaTitle": "Kalkulator Nisbah Tangen | Segitiga Kanan tan(A)",
+    "metaDescription": "Gunakan nisbah tangen <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini untuk mencari tan(A) dalam segi tiga tepat menggunakan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> bertentangan a dan sisi bersebelahan b dengan formula, langkah dan contoh.",
+    "calculator_heading": "Kira Nisbah Tangen",
+    "calculator_outputLabel": "tan(A)",
+    "calculator_fields": [
+      "Sebelah bertentangan a",
+      "Sebelah bersebelahan b"
+    ],
+    "introHeading": "Cara Kalkulator Nisbah Tangen Ini Berfungsi",
+    "intro": [
+      "Tangen ialah yang ketiga daripada <a href=\"/right-triangle-trig-ratios-calculator/\" class=\"text-primary hover:underline\">nisbah trig utama</a>, dan ia berfungsi sedikit berbeza daripada sinus dan kosinus. Daripada membandingkan kaki dengan hipotenus, tangen membandingkan satu kaki dengan kaki yang lain — khususnya, sebelah <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang bertentangan dengan sisi bersebelahan. Ini menjadikannya amat berguna dalam masalah cerun dan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a>-ketinggian.",
+      "<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Kalkulator</a> ini membahagikan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a yang bertentangan dengan sisi b bersebelahan dan memberi anda tan(A). Tidak perlu mengeluarkan apl kalkulator — hanya masukkan panjang dua kaki anda dan dapatkan jawapannya."
+    ],
+    "calculatorNote": "Masukkan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sebelah</a> bertentangan a dan sebelah bersebelahan b dalam medan input di atas. Alat ini mengira tan(A) = a / b. Kedua-dua nilai mestilah positif.",
+    "formula_display": "tan(A) = a / b",
+    "formula_paragraphs": [
+      "Tangen bagi <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A bersamaan dengan sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bertentangan</a> dibahagikan dengan sisi bersebelahan. Ini adalah bahagian TOA SOH-CAH-TOA.",
+      "Tidak seperti sinus dan kosinus, tangen tidak melibatkan hipotenus. Ia hanya menggunakan dua kaki. Ini juga bermakna tangen tidak dihadkan pada 1 — ia boleh menjadi sebarang nombor positif untuk sudut akut, dan ia membesar tanpa had apabila <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A menghampiri 90°."
+    ],
+    "diagramExplanation": [
+      "Untuk <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a adalah bertentangan, sisi b adalah bersebelahan, dan sisi c ialah hipotenus.",
+      "Tangen hanya menggunakan dua kaki: sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bertentangan</a> a dan sisi bersebelahan b. Hipotenus c tidak muncul dalam formula tangen."
+    ],
+    "howToSteps": [
+      "Cari <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A dalam segi tiga tepat.",
+      "Kenal pasti <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a, kaki betul-betul di seberang dari <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A.",
+      "Kenal pasti <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b, kaki yang membentuk <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A bersama hipotenus.",
+      "Masukkan nilai a dalam medan pertama.",
+      "Masukkan nilai b dalam medan kedua.",
+      "Klik Kira untuk mendapatkan tan(A).",
+      "Hasilnya boleh kurang daripada 1, sama dengan 1, atau lebih besar daripada 1."
+    ],
+    "example_intro": "Segi tiga tegak mempunyai sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bertentang</a> a = 3 dan sisi bersebelahan b = 4.",
+    "example_steps": [
+      "tan(A) = a / b",
+      "tan(A) = 3 / 4",
+      "tan(A) = 0.75"
+    ],
+    "example_conclusion": "Tangen bagi <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A ialah 0.75. Untuk mencari sudut: A = arctan(0.75) ≈ 36.87°.",
+    "whatResultMeans": [
+      "Tangen memberitahu anda kecuraman segitiga dari sudut <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> perspektif A. Fikirkan ia sebagai pengiraan lebih tinggi.",
+      "Tangen 1 bermakna sisi bertentangan dan bersebelahan adalah sama, yang berlaku dalam segitiga <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90</a>. Nilai di bawah 1 bermakna sisi bertentangan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> adalah lebih pendek daripada sisi bersebelahan — segi tiga lebih lebar daripada tinggi. Nilai di atas 1 bermakna sisi bertentangan lebih panjang — segi tiga lebih tinggi daripada lebarnya.",
+      "Dari segi praktikal, tangen ialah kecerunan garis hipotenus apabila anda berdiri pada sudut <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"></a> A."
+    ],
+    "whenToUse_intro": "Nisbah tangen <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini paling membantu apabila:",
+    "whenToUse_items": [
+      "Anda mempunyai kedua-dua kaki segi tiga dan mahu nisbah tangen.",
+      "Anda sedang menyelesaikan masalah cerun, gred atau padang (naik atas larian).",
+      "Anda perlu mencari <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> ketinggian atau kemurungan.",
+      "Anda ingin menentukan seberapa curam tanjakan, bumbung atau kecondongan.",
+      "Anda sedang menukar antara ukuran panjang kaki dan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> tanpa menggunakan hipotenus."
+    ],
+    "commonMistakes_intro": "Elakkan kesilapan tangen biasa ini:",
+    "commonMistakes_items": [
+      "Termasuk hipotenus dalam formula tangen. Tangen hanya menggunakan dua kaki — tiada hipotenus yang terlibat.",
+      "Meletakkan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> bersebelahan dalam pengangka. Formulanya ialah a / b (bertentangan dengan bersebelahan), bukan b / a. Membalikkannya memberikan kotangen.",
+      "Menjangkakan keputusan sentiasa kurang daripada 1. Tidak seperti sinus dan kosinus, tangen boleh menjadi sebarang nombor positif.",
+      "Keliru kaki mana yang bertentangan dan yang mana bersebelahan. Sentiasa kenal pasti mereka relatif kepada <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A, bukan sudut betul.",
+      "Menggunakan formula untuk <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> yang salah. Jika anda melabelkan sudut B dan bukannya sudut A, sisi bertentangan dan bersebelahan bertukar."
+    ],
+    "relatedLinks": [
+      "Kalkulator Nisbah Trig Segitiga Kanan",
+      "Kalkulator Nisbah Sinus",
+      "Kalkulator Nisbah Kosinus",
+      "Kalkulator Sudut Segitiga Kanan"
+    ],
+    "faqs": [
+      {
+        "question": "Apakah formula nisbah tangen?",
+        "answer": "Ia adalah tan(A) = a / b, dengan a ialah sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> yang bertentangan</a> dan b ialah sisi yang bersebelahan. Anda membahagi bertentangan dengan bersebelahan."
+      },
+      {
+        "question": "Bolehkah tan(A) lebih besar daripada 1?",
+        "answer": "ya. Apabila sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">yang berlawanan</a> lebih panjang daripada sisi bersebelahan, tangen melebihi 1. Contohnya, tan(60°) ≈ 1.732."
+      },
+      {
+        "question": "Bagaimanakah tangen berkaitan dengan cerun?",
+        "answer": "Tangen pada asasnya ialah cerun hipotenus apabila sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> bersebelahan ialah larian mendatar dan sisi bertentangan ialah kenaikan menegak. tan(A) = naik / lari."
+      },
+      {
+        "question": "Mengapa tangen tidak menggunakan hipotenus?",
+        "answer": "Tangen mengukur nisbah antara dua kaki secara langsung. Hipotenus tidak diperlukan kerana tangen menerangkan bentuk (kecuraman) segi tiga, bukan skala."
+      },
+      {
+        "question": "Apakah yang berlaku apabila a = b?",
+        "answer": "Apabila kedua-dua kaki adalah sama, tan(A) = 1, dan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A betul-betul 45°."
+      }
+    ]
+  },
+  "cotangent-ratio-calculator": {
+    "slug": "cotangent-ratio-calculator",
+    "h1": "Cotangent Ratio Calculator",
+    "headerSummary": "Calculate cot(A) from adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b over opposite side a in a right triangle.",
+    "metaTitle": "Cotangent Ratio Calculator | Right Triangle cot(A)",
+    "metaDescription": "Use this cotangent ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> to find cot(A) in a right triangle using adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b and opposite side a with formula, steps, and examples.",
+    "calculator_heading": "Calculate Cotangent Ratio",
+    "calculator_outputLabel": "cot(A)",
+    "calculator_fields": [
+      "Adjacent side b",
+      "Opposite side a"
+    ],
+    "introHeading": "How This Cotangent Ratio Calculator Works",
+    "intro": [
+      "Cotangent is the reciprocal of tangent. While tangent divides the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> by the adjacent side, cotangent flips that fraction — it divides the adjacent side by the opposite side. It shows up less often in basic geometry classes, but it plays an important role in advanced trigonometry and calculus.",
+      "This <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> takes the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b and the opposite side a, then returns cot(A) = b / a. If you are used to working with tangent, cotangent is simply the inverse fraction."
+    ],
+    "calculatorNote": "Enter adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b and opposite side a in the fields above. The <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> returns cot(A) = b / a. Both values must be positive.",
+    "formula_display": "cot(A) = b / a",
+    "formula_paragraphs": [
+      "Cotangent of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A equals the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> divided by the opposite side. It is the reciprocal of tangent: cot(A) = 1 / tan(A).",
+      "Like tangent, cotangent uses only the two legs of the right triangle. The hypotenuse is not involved. Cotangent can take any positive value for acute angles."
+    ],
+    "diagramExplanation": [
+      "For <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a is opposite, side b is adjacent, and side c is the hypotenuse.",
+      "Cotangent uses the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b (the leg next to <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A) as the numerator and the opposite side a (across from angle A) as the denominator. The hypotenuse c is not used."
+    ],
+    "howToSteps": [
+      "Identify <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A in your right triangle.",
+      "Find <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b, the adjacent leg — the one next to <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A and the right angle.",
+      "Find <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a, the opposite leg — the one across from <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A.",
+      "Enter b in the first input field.",
+      "Enter a in the second input field.",
+      "Click Calculate.",
+      "The result is cot(A), which can be any positive number."
+    ],
+    "example_intro": "A right triangle has adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b = 4 and opposite side a = 3.",
+    "example_steps": [
+      "cot(A) = b / a",
+      "cot(A) = 4 / 3",
+      "cot(A) ≈ 1.3333"
+    ],
+    "example_conclusion": "The cotangent of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is approximately 1.3333. You can verify this: tan(A) = 3 / 4 = 0.75, and 1 / 0.75 = 1.3333.",
+    "whatResultMeans": [
+      "Cotangent tells you how many times the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> fits relative to the opposite side. It is the run-over-rise version of the steepness ratio.",
+      "A cotangent of 1 means both legs are equal (a 45° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a>). Values greater than 1 mean the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is longer than the opposite side — the triangle is wider and the angle is smaller. Values less than 1 mean the opposite side is longer — the angle is larger and the triangle is steeper.",
+      "Since cotangent is the reciprocal of tangent, you can always convert between them: cot(A) = 1 / tan(A) and tan(A) = 1 / cot(A)."
+    ],
+    "whenToUse_intro": "Pick this cotangent ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> when:",
+    "whenToUse_items": [
+      "You need the reciprocal of tangent without manually computing 1 / tan(A).",
+      "You are working with formulas that specifically call for cotangent, such as certain calculus identities.",
+      "You prefer to think in terms of run-over-rise rather than rise-over-run.",
+      "You are solving problems in surveying, construction, or trigonometric proofs."
+    ],
+    "commonMistakes_intro": "Keep an eye out for these cotangent pitfalls:",
+    "commonMistakes_items": [
+      "Writing a / b instead of b / a. Cotangent puts the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> on top, not the opposite side. Swapping them gives you tangent.",
+      "Confusing cotangent with cosine. Cotangent is b / a (adjacent over opposite). Cosine is b / c (adjacent over hypotenuse). They are different ratios.",
+      "Using the hypotenuse in the calculation. Cotangent only involves the two legs.",
+      "Forgetting it is the reciprocal of tangent. If you already know tan(A), just take 1 / tan(A) to get cot(A).",
+      "Mixing up which <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is adjacent and which is opposite. Always identify sides relative to <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A."
+    ],
+    "relatedLinks": [
+      "Right Triangle Trig Ratios Calculator",
+      "Tangent Ratio Calculator",
+      "Sine Ratio Calculator",
+      "Cosine Ratio Calculator"
+    ],
+    "faqs": [
+      {
+        "question": "What is the cotangent formula for a right triangle?",
+        "answer": "It is cot(A) = b / a, where b is the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> and a is the opposite side of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A. This is the reverse of the tangent fraction."
+      },
+      {
+        "question": "Bagaimanakah kotangen berkaitan dengan tangen?",
+        "answer": "Cotangent ialah timbal balik tangen. Jika tan(A) = 0.75, maka cot(A) = 1 / 0.75 ≈ 1.3333."
+      },
+      {
+        "question": "Bilakah saya akan menggunakan kotangen dan bukannya tangen?",
+        "answer": "Gunakan kotangen apabila formula memerlukannya secara khusus, atau apabila anda mahukan nisbah bersebelahan dengan lawan secara langsung. Dalam banyak konteks kalkulus dan fizik, kotangen muncul dalam identiti dan formula terbitan."
+      },
+      {
+        "question": "Bolehkah cot(A) sama dengan sifar dalam segi tiga tepat?",
+        "answer": "Dalam segi tiga tegak dengan sudut lancip sahaja, cot(A) sentiasa positif. Cotangent menghampiri sifar sebagai <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A menghampiri 90°, tetapi sudut 90° ialah sudut tepat itu sendiri, bukan sudut akut yang anda akan ukur."
+      },
+      {
+        "question": "Adakah kotangen sama dengan 1 dibahagikan dengan tangen?",
+        "answer": "ya. cot(A) = 1 / tan(A) = b / a. Kedua-dua ungkapan memberikan hasil yang sama."
+      }
+    ]
+  },
+  "secant-ratio-calculator": {
+    "slug": "kalkulator nisbah-secant",
+    "h1": "Kalkulator Nisbah Secant",
+    "headerSummary": "Cari sec(A) dengan membandingkan hipotenus c dengan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b bersebelahan, salingan kosinus.",
+    "metaTitle": "Kalkulator Nisbah Secant | Segitiga Kanan saat(A)",
+    "metaDescription": "Gunakan nisbah sekan <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> untuk mencari saat(A) dalam segi tiga tepat menggunakan hipotenus c dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b bersebelahan dengan formula, langkah dan contoh.",
+    "calculator_heading": "Kira Nisbah Secant",
+    "calculator_outputLabel": "saat(A)",
+    "calculator_fields": [
+      "Hipotenus c",
+      "Sebelah bersebelahan b"
+    ],
+    "introHeading": "Cara Kalkulator Nisbah Secant Ini Berfungsi",
+    "intro": [
+      "Secant ialah salingan kosinus. Apabila kosinus membahagikan sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> bersebelahan dengan hipotenus, sekan membalikkannya — ia membahagikan hipotenus dengan sisi bersebelahan. Hasilnya sentiasa lebih besar daripada atau sama dengan 1 kerana hipotenus sentiasa sisi terpanjang dalam segi tiga tepat.",
+      "<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Kalkulator</a> ini mengambil dua input — hipotenus c dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi bersebelahan</a> b — dan mengembalikan sec(A). Ia adalah cara cepat untuk mendapatkan nisbah timbal balik ini tanpa melakukan pembahagian dengan tangan atau mengira kosinus terlebih dahulu."
+    ],
+    "calculatorNote": "Masukkan hipotenus c dan sebelah <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sebelah</a> b dalam medan di atas. Kalkulator <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> mengira saat(A) = c / b. Kedua-dua nilai mestilah positif, dan c mestilah lebih besar daripada b.",
+    "formula_display": "sec(A) = c / b",
+    "formula_paragraphs": [
+      "Sekan bagi <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A bersamaan dengan hipotenus dibahagikan dengan sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bersebelahan</a>. Ini ialah salingan kosinus: sec(A) = 1 / cos(A).",
+      "Oleh kerana hipotenus sentiasa lebih panjang daripada sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> bersebelahan dalam segi tiga tepat, sec(A) sentiasa lebih besar daripada 1. Apabila <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A semakin besar, sisi bersebelahan mengecut berbanding hipotenus, jadi sekan bertambah."
+    ],
+    "diagramExplanation": [
+      "Untuk <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a adalah bertentangan, sisi b adalah bersebelahan, dan sisi c ialah hipotenus.",
+      "Secant menggunakan hipotenus c sebagai pengangka dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b bersebelahan sebagai penyebut. Bahagian bertentangan a bukan sebahagian daripada pengiraan secant."
+    ],
+    "howToSteps": [
+      "Kenal pasti <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A dalam segi tiga tepat anda.",
+      "Cari <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> c, hipotenus — sisi terpanjang, di seberang sudut <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kanan</a>.",
+      "Cari <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b, kaki bersebelahan — bahagian yang menyentuh kedua-dua <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A dan sudut tepat.",
+      "Masukkan c dalam medan input pertama.",
+      "Masukkan b dalam medan input kedua.",
+      "Klik Kira.",
+      "Hasilnya ialah sec(A), yang sentiasa lebih besar daripada atau sama dengan 1."
+    ],
+    "example_intro": "Segitiga tegak mempunyai hipotenus c = 5 dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> bersebelahan b = 4.",
+    "example_steps": [
+      "sec(A) = c / b",
+      "saat(A) = 5 / 4",
+      "sec(A) = 1.25"
+    ],
+    "example_conclusion": "Sekan bagi <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A ialah 1.25. Untuk mengesahkan: cos(A) = 4 / 5 = 0.8, dan 1 / 0.8 = 1.25.",
+    "whatResultMeans": [
+      "Secant memberitahu anda berapa kali lebih lama hipotenus dibandingkan dengan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi bersebelahan</a>. Sekan 1.25 bermakna hipotenus adalah 25% lebih panjang daripada sisi bersebelahan.",
+      "Nilai minimum sekan dalam segi tiga tegak adalah sedikit di atas 1, yang berlaku apabila <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A sangat kecil dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang bersebelahan adalah hampir sepanjang hipotenus. Apabila sudut A meningkat, bahagian bersebelahan memendek berbanding hipotenus, dan sekan bertambah besar.",
+      "Secant berguna apabila anda perlu menskalakan dari <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang bersebelahan ke hipotenus, atau apabila formula memerlukan 1 / cos(A)."
+    ],
+    "whenToUse_intro": "Nisbah sekan <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini ialah pilihan yang tepat apabila:",
+    "whenToUse_items": [
+      "Formula memerlukan secant atau 1 / cos(A) dan anda mahukan nilai secara langsung.",
+      "Anda perlu mencari berapa lama hipotenus dibandingkan dengan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi bersebelahan</a>.",
+      "Anda sedang menangani masalah kalkulus yang melibatkan pembahagian dalam derivatif atau kamiran.",
+      "Anda sedang menyemak pengiraan struktur di mana hipotenus mewakili panjang sebenar dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang bersebelahan mewakili <a href=\"/right-triangle-projection-calculator/\" class=\"text-primary hover:underline\">unjuran </a>."
+    ],
+    "commonMistakes_intro": "Ralat sekan ini paling kerap mengelirukan pelajar:",
+    "commonMistakes_items": [
+      "Titik mengelirukan dengan kosinus. Kosinus ialah b / c (bersebelahan dengan hipotenus). Secant ialah timbal balik: c / b (hipotenus atas bersebelahan).",
+      "Mendapat keputusan kurang daripada 1. Jika jawapan anda di bawah 1, anda mungkin membalikkan pecahan itu. Dalam segi tiga tepat yang sah, saat(A) sentiasa lebih besar daripada atau sama dengan 1.",
+      "Menggunakan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang bertentangan dan bukannya sisi bersebelahan. Secant memasangkan hipotenus dengan sisi bersebelahan, bukan sisi bertentangan.",
+      "Mencampurkan secant dan cosecant. Secant ialah salingan kosinus. Cosecant ialah salingan sinus. Mereka menggunakan sisi yang berbeza.",
+      "Memasuki b lebih besar daripada c. Hipotenus mestilah sentiasa lebih panjang daripada sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bersebelahan</a>."
+    ],
+    "relatedLinks": [
+      "Kalkulator Nisbah Trig Segitiga Kanan",
+      "Kalkulator Nisbah Kosinus",
+      "Kalkulator Nisbah Cosecant",
+      "Kalkulator Nisbah Cotangent"
+    ],
+    "faqs": [
+      {
+        "question": "Apakah nisbah pembahagian dalam segi tiga tepat?",
+        "answer": "Sekan ditakrifkan sebagai sec(A) = c / b, dengan c ialah hipotenus dan b ialah <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi bersebelahan</a>. Ia adalah timbal balik kosinus."
+      },
+      {
+        "question": "Mengapa secant sentiasa lebih besar daripada 1?",
+        "answer": "Kerana hipotenus c sentiasa sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">terpanjang</a> dalam segi tiga tegak. Membahagi nombor yang lebih besar (c) dengan yang lebih kecil (b) sentiasa memberikan hasil yang lebih besar daripada 1."
+      },
+      {
+        "question": "Bagaimanakah saya boleh menukar antara secan dan kosinus?",
+        "answer": "sec(A) = 1 / cos(A), dan cos(A) = 1 / sec(A). Jika anda tahu satu, anda boleh mencari yang lain dengan mengambil timbal balik."
+      },
+      {
+        "question": "Apakah sec(45°)?",
+        "answer": "Dalam segi tiga <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90</a>, hipotenus ialah √2 kali kaki. Jadi sec(45°) = √2 ≈ 1.4142."
+      },
+      {
+        "question": "Adakah secant digunakan dalam aplikasi dunia sebenar?",
+        "answer": "ya. Secant muncul dalam formula fizik, pengiraan kejuruteraan dan kalkulus. Ia digunakan apabila anda perlu menskalakan jarak mendatar ke panjang laluan sebenar di sepanjang condong."
+      }
+    ]
+  },
+  "cosecant-ratio-calculator": {
+    "slug": "kalkulator nisbah-kosekan",
+    "h1": "Kalkulator Nisbah Cosecant",
+    "headerSummary": "Kira csc(A) daripada hipotenus c dan bertentangan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a, salingan sinus.",
+    "metaTitle": "Kalkulator Nisbah Cosecant | Segitiga Kanan csc(A)",
+    "metaDescription": "Gunakan nisbah kosekan <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> untuk mencari csc(A) dalam segi tiga tepat menggunakan hipotenus c dan bertentangan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a dengan formula, langkah dan contoh.",
+    "calculator_heading": "Kira Nisbah Kosekan",
+    "calculator_outputLabel": "csc(A)",
+    "calculator_fields": [
+      "Hipotenus c",
+      "Sebelah bertentangan a"
+    ],
+    "introHeading": "Cara Kalkulator Nisbah Cosecant Ini Berfungsi",
+    "intro": [
+      "Cosecant ialah salingan sinus. Ia membahagikan hipotenus dengan sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> yang bertentangan</a>, memberikan anda nisbah yang sentiasa lebih besar daripada 1 dalam segi tiga tepat. Anda mungkin tidak melihatnya sekerap sinus atau kosinus dalam kursus asas, tetapi ia penting dalam matematik yang lebih maju dan aplikasi fizik tertentu.",
+      "<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini menjadikannya mudah. Masukkan hipotenus c dan sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> yang bertentangan</a> a, dan ia mengembalikan csc(A) serta-merta. Tidak perlu mengira sinus terlebih dahulu dan kemudian membalikkan pecahan."
+    ],
+    "calculatorNote": "Masukkan hipotenus c dan bertentangan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a dalam medan di atas. Kalkulator <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> mengira csc(A) = c / a. Kedua-dua nilai mestilah positif, dan c mestilah lebih besar daripada a.",
+    "formula_display": "csc(A) = c / a",
+    "formula_paragraphs": [
+      "Kosekan bagi <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A bersamaan dengan hipotenus dibahagikan dengan sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bertentangan</a>. Ia adalah salingan sinus: csc(A) = 1 / sin(A).",
+      "Hipotenus sentiasa lebih panjang daripada sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> yang bertentangan</a>, jadi csc(A) sentiasa menghasilkan nilai yang lebih besar daripada 1 untuk sudut akut. Apabila <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A berkurangan, sisi bertentangan menjadi lebih pendek berbanding hipotenus, dan kosekan bertambah."
+    ],
+    "diagramExplanation": [
+      "Untuk <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a adalah bertentangan, sisi b adalah bersebelahan, dan sisi c ialah hipotenus.",
+      "Cosecant menggunakan hipotenus c sebagai pengangka dan sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> berlawanan</a> a sebagai penyebut. Bahagian bersebelahan b tidak memainkan peranan dalam formula kosekan."
+    ],
+    "howToSteps": [
+      "Kenal pasti <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A dalam segi tiga tepat anda.",
+      "Cari hipotenus c — sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> bertentangan dengan sudut <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> kanan dan sisi terpanjang.",
+      "Cari <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi yang bertentangan</a> a — kaki betul-betul di seberang dari <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A.",
+      "Taip c ke dalam medan input pertama.",
+      "Taipkan a ke dalam medan input kedua.",
+      "Klik Kira.",
+      "Hasilnya ialah csc(A), sentiasa lebih besar daripada 1."
+    ],
+    "example_intro": "Segitiga tegak mempunyai hipotenus c = 5 dan bertentangan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a = 3.",
+    "example_steps": [
+      "csc(A) = c / a",
+      "csc(A) = 5 / 3",
+      "csc(A) ≈ 1.6667"
+    ],
+    "example_conclusion": "Kosekan bagi <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A ialah lebih kurang 1.6667. Pengesahan: sin(A) = 3 / 5 = 0.6, dan 1 / 0.6 ≈ 1.6667.",
+    "whatResultMeans": [
+      "Cosecant memberitahu anda berapa kali lebih panjang hipotenus dibandingkan dengan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi yang bertentangan</a>. Kosekan 1.6667 bermakna hipotenus adalah kira-kira 67% lebih panjang daripada sisi bertentangan.",
+      "Apabila <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A besar (hampir 90°), sisi bertentangan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> adalah hampir sama panjang dengan hipotenus, jadi csc(A) menghampiri 1. Apabila sudut A kecil, sisi bertentangan jauh lebih pendek, dan kosekan bertambah besar.",
+      "Fikirkan dengan cara ini: jika anda mengetahui sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">yang berlawanan</a> dan ingin mencari sisi miring, darab sisi bertentangan dengan csc(A). Itu memberi anda c = a × csc(A)."
+    ],
+    "whenToUse_intro": "Jangkau nisbah kosekan ini <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> apabila:",
+    "whenToUse_items": [
+      "Anda memerlukan salingan sinus tanpa mengira sin(A) terlebih dahulu.",
+      "Formula secara khusus memerlukan kosekan, yang muncul dalam identiti trigonometri tertentu.",
+      "Anda menskalakan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi </a> bertentangan sehingga ke panjang hipotenus penuh.",
+      "Anda sedang menyelesaikan masalah fizik atau kejuruteraan yang melibatkan daya, fungsi gelombang atau formula ayunan yang menggunakan kosekan."
+    ],
+    "commonMistakes_intro": "Berhati-hati dengan ralat kosekan ini:",
+    "commonMistakes_items": [
+      "Mengelirukan kosekan dengan sinus. Sinus ialah a / c (bertentangan dengan hipotenus). Cosecant ialah timbal balik: c / a (hipotenus atas bertentangan).",
+      "Mengelirukan cosecant dengan secant. Cosecant adalah berdasarkan pada sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bertentangan</a> (salingan sinus). Secant adalah berdasarkan bahagian bersebelahan (salingan kosinus). Mereka menggunakan kaki yang berbeza.",
+      "Mendapat keputusan kurang daripada 1. Jika jawapan anda di bawah 1, anda mungkin telah memasukkan nilai dalam susunan yang salah. csc(A) sentiasa lebih besar daripada 1.",
+      "Menggunakan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sebelah</a> bersebelahan dan bukannya sebelah bertentangan. Cosecant memasangkan hipotenus dengan sisi bertentangan sahaja.",
+      "Menjangkakan kosekan dan kosinus dikaitkan dengan nama. Walaupun awalan bersama, kosekan ialah salingan sinus, bukan kosinus."
+    ],
+    "relatedLinks": [
+      "Kalkulator Nisbah Trig Segitiga Kanan",
+      "Kalkulator Nisbah Sinus",
+      "Kalkulator Nisbah Secant",
+      "Kalkulator Nisbah Cotangent"
+    ],
+    "faqs": [
+      {
+        "question": "Apakah formula kosekan dalam segi tiga tepat?",
+        "answer": "Ia adalah csc(A) = c / a, dengan c ialah hipotenus dan a ialah sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> yang bertentangan</a>. Cosecant ialah salingan sinus."
+      },
+      {
+        "question": "Bagaimanakah kosekan berkaitan dengan sinus?",
+        "answer": "csc(A) = 1 / sin(A). Jika sin(A) = 0.6, maka csc(A) = 1 / 0.6 ≈ 1.6667."
+      },
+      {
+        "question": "Mengapakah kosekan sentiasa lebih besar daripada 1?",
+        "answer": "Kerana hipotenus sentiasa lebih panjang daripada sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bertentangan</a> dalam segi tiga tegak. Pecahan c/a sentiasa melebihi 1."
+      },
+      {
+        "question": "Apakah itu csc(30°)?",
+        "answer": "Dalam segitiga <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90</a>, sin(30°) = 0.5, jadi csc(30°) = 1 / 0.5 = 2. Hipotenus betul-betul dua kali sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bertentangan</a>."
+      },
+      {
+        "question": "Bilakah saya akan menggunakan cosecant dan bukannya sinus?",
+        "answer": "Gunakan kosekan apabila formula memerlukannya secara langsung, atau apabila anda ingin mencari hipotenus dari sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bertentangan</a>: c = a × csc(A). Ia menjimatkan langkah membahagi dengan sinus."
+      }
+    ]
+  }
+}

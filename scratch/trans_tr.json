@@ -1,0 +1,557 @@
+{
+  "sine-ratio-calculator": {
+    "slug": "sinüs oranı hesaplayıcı",
+    "h1": "Sinüs Oranı Hesaplayıcı",
+    "headerSummary": "Bir dik üçgende karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> a'dan ve hipotenüs c'den günah(A)'yı bulun.",
+    "metaTitle": "Sinüs Oranı Hesaplayıcısı | Sağ Üçgen sin(A)",
+    "metaDescription": "Karşıt <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> a ve hipotenüs c'yi formül, adımlar ve örneklerle kullanarak bir dik üçgende günah(A)'yı bulmak için bu sinüs oranı <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesaplayıcıyı</a> kullanın.",
+    "calculator_heading": "Sinüs Oranını Hesapla",
+    "calculator_outputLabel": "günah(A)",
+    "calculator_fields": [
+      "Karşı taraf a",
+      "Hipotenüs c"
+    ],
+    "introHeading": "Bu Sinüs Oranı Hesaplayıcısı Nasıl Çalışır?",
+    "intro": [
+      "Sinüs oranı geometride öğrendiğiniz ilk trigonometrik fonksiyonlardan biridir. Bir dik üçgendeki belirli bir <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açıyı</a> onun iki kenarına, yani karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenara</a> ve hipotenüse bağlar. Eğer bu iki <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">ölçümü</a> biliyorsanız, bu hesap makinesi size anında günah(A) değerini verir.",
+      "İster bir ev ödevi problemi üzerinde çalışıyor olun, ister sınav tarzı bir cevabı kontrol ediyor olun, ister gerçek bir ölçüm görevini çözüyor olun, bu araç manuel bölme adımını ortadan kaldırır. Değerlerinizi girin ve gösterilen formülle sonucu alın."
+    ],
+    "calculatorNote": "Karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarın</a> a uzunluğunu ve hipotenüsü c'yi yukarıdaki alanlara girin. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Hesap makinesi</a> a'yı c'ye böler ve sin(A) değerini döndürür. Her iki değer de pozitif olmalı ve c, a'dan büyük olmalıdır.",
+    "formula_display": "günah(A) = a / c",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın sinüsü, karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarın</a> uzunluğunun hipotenüs uzunluğuna bölünmesine eşittir. Bu genellikle SOH-CAH-TOA'nın SOH kısmıyla hatırlanır.",
+      "Bir dik üçgende, karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a>, <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın doğrudan karşısındaki kenardır. Hipotenüs her zaman en uzun kenardır — 90° açıya bakan kenardır. Hipotenüs her zaman herhangi bir kenardan daha uzun olduğundan, dar açılar için sin(A) her zaman 0 ile 1 arasında düşer."
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A için, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> a karşıdır, b kenarı bitişiktir ve c kenarı hipotenüstür.",
+      "Sinüs oranı bu üç kenardan yalnızca ikisini kullanır: karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> a (<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın tam karşısında) ve hipotenüs c (en uzun kenar, B'deki dik açının karşısında)."
+    ],
+    "howToSteps": [
+      "Sağ üçgeninizde <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açıyı</a> A belirleyin. 90° açıdan değil, iki dar açıdan biri olmalıdır.",
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın karşısındaki <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">tarafını</a> bulun. Bu a tarafıdır.",
+      "Hipotenüsü bulun. Bu <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">taraf</a> c'dir, en uzun kenar, sağ <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açının</a> karşısındadır.",
+      "İlk giriş alanına a değerini girin.",
+      "İkinci giriş alanına c değerini girin.",
+      "sin(A)'yı görmek için Hesapla'ya tıklayın.",
+      "Sonucu inceleyin. 0 ile 1 arasında bir ondalık sayı olmalıdır."
+    ],
+    "example_intro": "Karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">yan</a> a = 3 ve hipotenüsün c = 5 olduğu bir dik üçgeniniz olduğunu varsayalım.",
+    "example_steps": [
+      "günah(A) = a / c",
+      "günah(A) = 3 / 5",
+      "günah(A) = 0,6"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın sinüsü 0,6'dır. Bu, karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarın</a> hipotenüs uzunluğunun %60'ı olduğu anlamına gelir. Gerçek açıya ihtiyacınız varsa ters sinüsü alın: A = arcsin(0,6) ≈ 36,87°.",
+    "whatResultMeans": [
+      "Çıktı birimsiz bir orandır. Size karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarın</a> hipotenüs boyutuyla nasıl karşılaştırıldığını anlatır. 0,5 sonucu, karşı tarafın hipotenüsün tam olarak yarısı olduğu anlamına gelir; bu, A = 30° olan bir <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90 üçgeninde</a> olur.",
+      "Küçük değerler (0'a yakın), <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın küçük olduğu ve karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarın</a> hipotenüse göre kısa olduğu anlamına gelir. 1'e yakın değerler A açısının büyük olduğu (90°'ye yaklaşan) ve karşı tarafın neredeyse hipotenüs kadar uzun olduğu anlamına gelir.",
+      "sin(A) iki uzunluğun oranı olduğundan birimi yoktur. Üçgenin santimetre, inç veya metre cinsinden ölçülmesi fark etmez, her iki taraf da aynı birimi kullandığı sürece sinüs değeri aynı kalır."
+    ],
+    "whenToUse_intro": "Aşağıdaki durumlardan herhangi birinde bu sinüs oranı <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesaplayıcıyı</a> kullanın:",
+    "whenToUse_items": [
+      "Karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarı</a> ve hipotenüsü biliyorsunuz ve sinüs değerini istiyorsunuz.",
+      "Ters sinüs fonksiyonunu kullanarak <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'yı bulmaya hazırlanıyorsunuz.",
+      "Bir ders kitabı cevabını doğrulamanız veya kendi trigonometri çalışmanızı kontrol etmeniz gerekir.",
+      "Bir rampanın yüksekliği veya bir eğim üzerindeki dikey kuvvet gibi dikey bileşenleri içeren fizik problemlerini çözüyorsunuz.",
+      "Bir vektörü dikey ve yatay kısımlarına ayırıyorsunuz."
+    ],
+    "commonMistakes_intro": "Sinüs hesaplanırken şu yaygın hatalara dikkat edin:",
+    "commonMistakes_items": [
+      "Karşı taraf yerine bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">tarafın</a> kullanılması. Sinüs, <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın karşısındaki tarafı kullanır, yanındaki tarafı değil.",
+      "Formülde a ve c'nin yer değiştirmesi. Karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> payda yer alır ve hipotenüs de paydada yer alır. c/a yazmak sinüsü değil kosekantı verir.",
+      "Farklı birimlerde ölçülen kenarların kullanılması. Eğer a santimetre ve c inç ise oran anlamsızdır. Önce aynı birime dönüştürün.",
+      "c'nin a'dan büyük olması gerektiğini unutmak. Geçerli bir dik üçgende hipotenüs her zaman <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">en uzun kenardır</a>.",
+      "Sağ <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açıyı</a> (90°) A açısı olarak girme. Sinüs yalnızca dar açılar için geçerlidir. 90° açı B tepe noktasındadır."
+    ],
+    "relatedLinks": [
+      "Dik Üçgen Trigonometri Oranları Hesaplayıcı",
+      "Kosinüs Oranı Hesaplayıcı",
+      "Teğet Oranı Hesaplayıcı",
+      "Dik Üçgen Açı Hesaplayıcı"
+    ],
+    "faqs": [
+      {
+        "question": "Dik üçgende sin(A) formülü nedir?",
+        "answer": "Formül sin(A) = a / c'dir; burada a, <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın karşısındaki <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> ve c hipotenüstür. Karşı tarafı hipotenüse bölersiniz."
+      },
+      {
+        "question": "Bir dik üçgende günah(A) neden her zaman 1'den küçüktür?",
+        "answer": "Çünkü hipotenüs c her zaman en uzun <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a>'dır. A, c'den kısa olduğundan a/c kesri her zaman 1'den küçüktür."
+      },
+      {
+        "question": "Açının kendisini bulmak için bu hesap makinesini kullanabilir miyim?",
+        "answer": "Bu <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesap makinesi</a> size sinüs değerini verir. <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Açıyı</a> bulmak için ters sinüs fonksiyonunu kullanın: A = arcsin(sin(A)). Bunu dik üçgen açı hesaplayıcımızla yapabilirsiniz."
+      },
+      {
+        "question": "Sin(A) sonucunun 0,5 olması ne anlama gelir?",
+        "answer": "Bu, karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarın</a> hipotenüsün uzunluğunun tam yarısı olduğu anlamına gelir. Bu, <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın 30° olmasına karşılık gelir."
+      },
+      {
+        "question": "Sinüs hesaplamak için bitişik tarafa girmem gerekiyor mu?",
+        "answer": "Hayır. Sinüs yalnızca karşıt <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> a'yı ve hipotenüsü c'yi kullanır. Bitişik b tarafı sinüs formülünün bir parçası değildir."
+      }
+    ]
+  },
+  "cosine-ratio-calculator": {
+    "slug": "kosinüs oranı hesaplayıcısı",
+    "h1": "Kosinüs Oranı Hesaplayıcı",
+    "headerSummary": "Cos(A)'yı bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> b'den ve hipotenüs c'den net dik üçgen adımlarıyla hesaplayın.",
+    "metaTitle": "Kosinüs Oranı Hesaplayıcı | Sağ Üçgen cos(A)",
+    "metaDescription": "Formül, adımlar ve örneklerle birlikte bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> b ve hipotenüs c'yi kullanarak bir dik üçgende cos(A)'yı bulmak için bu kosinüs oranı <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesaplayıcıyı</a> kullanın.",
+    "calculator_heading": "Kosinüs Oranını Hesapla",
+    "calculator_outputLabel": "çünkü(A)",
+    "calculator_fields": [
+      "Bitişik taraf b",
+      "Hipotenüs c"
+    ],
+    "introHeading": "Bu Kosinüs Oranı Hesaplayıcısı Nasıl Çalışır?",
+    "intro": [
+      "Kosinüs oranı, bir dik üçgenin komşu <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarının</a> hipotenüsle nasıl karşılaştırıldığını ölçer. SOH-CAH-TOA'nın ikinci kısmıdır ve geometri, fizik ve mühendislikte en yaygın kullanılan trigonometrik fonksiyonlardan biridir.",
+      "Bu <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesaplayıcı</a> iki girdi alır — bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">taraf</a> b ve hipotenüs c — ve cos(A) değerini döndürür. Bölmeyi sizin için yapar ve sonucu anında gösterir, böylece aritmetik yerine geometriyi anlamaya odaklanabilirsiniz."
+    ],
+    "calculatorNote": "Yukarıdaki giriş alanlarına bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> b'yi ve hipotenüs c'yi yazın. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesap makinesi</a> cos(A) = b / c'yi hesaplar. Her iki değer de pozitif olmalı ve c, b'den büyük olmalıdır.",
+    "formula_display": "cos(A) = b / c",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın kosinüsü, komşu <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarın</a> hipotenüse bölünmesine eşittir. Bu SOH-CAH-TOA'daki CAH'dır.",
+      "Bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">taraf</a> b, <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açıya</a> A ve dik açıya dokunan bacaktır. Hipotenüs c dik açının karşısındadır ve her zaman en uzun kenardır. Hipotenüs herhangi bir kenardan daha uzun olduğundan cos(A) dar açılar için her zaman 0 ile 1 arasında bir değer üretir."
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A için, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> a karşıdır, b kenarı bitişiktir ve c kenarı hipotenüstür.",
+      "Kosinüs oranı, bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> b'yi (hipotenüs ile birlikte <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'yı oluşturan kenar) ve hipotenüsü c'yi kullanır. A tarafı kosinüs hesaplamasının bir parçası değildir."
+    ],
+    "howToSteps": [
+      "Sağ üçgeninizde <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açıyı</a> A bulun. İki dar açıdan biridir.",
+      "Bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">tarafı</a> tanımlayın. Bu b tarafı — hipotenüsle birlikte <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'yı oluşturan kenar.",
+      "90° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açının</a> karşısındaki <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">tarafını</a> hipotenüs c olarak tanımlayın.",
+      "İlk alana b'nin değerini girin.",
+      "İkinci alana c değerini girin.",
+      "cos(A)'yı görmek için Hesapla'ya basın.",
+      "Sonucun 0 ile 1 arasında olup olmadığını kontrol edin."
+    ],
+    "example_intro": "Bir dik üçgenin komşu <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarı</a> b = 4 ve hipotenüsü c = 5'tir.",
+    "example_steps": [
+      "cos(A) = b / c",
+      "cos(A) = 4 / 5",
+      "cos(A) = 0,8"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın kosinüsü 0,8'dir. Bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> hipotenüs uzunluğunun %80'idir. Açıyı bulmak için: A = arccos(0,8) ≈ 36,87°.",
+    "whatResultMeans": [
+      "Kosinüs, hipotenüs uzunluğunun ne kadarının bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> tarafından kapsandığını gösterir. 0,8'lik bir kosinüs, bitişik tarafın hipotenüse kadar %80 oranında uzandığı anlamına gelir.",
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A küçük olduğunda, komşu <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> neredeyse hipotenüs kadar uzun olduğundan cos(A) 1'e yakındır. A açısı büyük olduğunda (90°'ye yakın), bitişik kenar hipotenüse göre küçülür ve cos(A)'yı 0'a doğru iter.",
+      "Sonuç boyutsuzdur. <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">Ölçümlerinizin</a> fit, metre veya başka bir birim cinsinden olması önemli değildir; kosinüs saf bir orandır."
+    ],
+    "whenToUse_intro": "Aşağıdaki durumlarda bu kosinüs oranı <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesaplayıcıya</a> ulaşın:",
+    "whenToUse_items": [
+      "Bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarı</a> ve hipotenüsü biliyorsunuz ve kosinüs değerine ihtiyacınız var.",
+      "Bir kuvvetin, hızın veya yer değiştirme vektörünün yatay bileşenini buluyorsunuz.",
+      "Bir ders kitabından veya problem setinden bir trigonometri değerini doğrulamak istiyorsunuz.",
+      "Yatay mesafeleri içeren navigasyon veya araştırma sorunları üzerinde çalışıyorsunuz.",
+      "Sekant veya tanjant gibi başka bir türetilmiş miktarı hesaplamadan önce cos(A)'ya ihtiyacınız vardır."
+    ],
+    "commonMistakes_intro": "Öğrencilerin en sık yaptığı kosinüs hataları şunlardır:",
+    "commonMistakes_items": [
+      "Bitişik kenar yerine karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">tarafı</a> kullanma. Kosinüs, <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın karşısındaki ayağı değil, yanındaki ayağı kullanır.",
+      "B'yi c'den büyük girme. Geçerli bir dik üçgende hipotenüs her zaman <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">en uzun kenardır</a>. B, c'yi geçerse değerleriniz dik üçgen oluşturmaz.",
+      "Kesirin ters çevrilmesi. c/b yazmak kosinüsü değil sekantı verir.",
+      "Bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">yan</a> hipotenüs etiketiyle karıştırılıyor. Hangi tarafın sağ <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açıya</a> (yani hipotenüse) karşı olduğunu ve hangisinin A açısının (yani bitişik kenar) bir parçasını oluşturduğunu bir kez daha kontrol edin.",
+      "Önce dönüştürmeden farklı birimlerde ölçülen <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar uzunluklarını</a> kullanma."
+    ],
+    "relatedLinks": [
+      "Dik Üçgen Trigonometri Oranları Hesaplayıcı",
+      "Sinüs Oranı Hesaplayıcı",
+      "Teğet Oranı Hesaplayıcı",
+      "Dik Üçgen Açı Hesaplayıcı"
+    ],
+    "faqs": [
+      {
+        "question": "Dik üçgenin kosinüs oranı formülü nedir?",
+        "answer": "cos(A) = b / c'dir, burada b bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> ve c hipotenüstür. Bitişik, <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açıya</a> A'ya dokunan bacak anlamına gelir."
+      },
+      {
+        "question": "Kosinüs sinüsten nasıl farklıdır?",
+        "answer": "Sinüs, hipotenüs (a / c) üzerinde karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">yan tarafı</a> kullanır. Kosinüs, hipotenüs (b / c) üzerindeki bitişik tarafı kullanır. Aynı <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açıya</a> göre farklı kenarları ölçerler."
+      },
+      {
+        "question": "cos(A) = 0,5 olması ne anlama gelir?",
+        "answer": "Bu, bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarın</a> hipotenüsün tam yarısı olduğu anlamına gelir. Bu, <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A 60° olduğunda meydana gelir."
+      },
+      {
+        "question": "Kosinüs 1'den büyük olabilir mi?",
+        "answer": "Hayır. Bir dik üçgende hipotenüs her zaman bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenardan</a> daha uzundur, dolayısıyla b/c her zaman 1'den küçüktür."
+      },
+      {
+        "question": "Neden kosinüs için sadece iki tarafa ihtiyacım var?",
+        "answer": "Kosinüs formülü yalnızca bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarı</a> ve hipotenüsü içerir. Karşı taraf hesaplamanın bir parçası değildir."
+      }
+    ]
+  },
+  "tangent-ratio-calculator": {
+    "slug": "teğet oran hesaplayıcı",
+    "h1": "Teğet Oranı Hesaplayıcı",
+    "headerSummary": "Eğim, yükselme ve uzunluk problemleri için karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">taraf</a> a'dan ve bitişik b kenarından tan(A)'yı bulun.",
+    "metaTitle": "Teğet Oranı Hesaplayıcı | Sağ Üçgen tan(A)",
+    "metaDescription": "Formül, adımlar ve örneklerle karşıt <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> a ve bitişik kenar b'yi kullanarak bir dik üçgende tan(A)'yı bulmak için bu teğet oranı <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesaplayıcıyı</a> kullanın.",
+    "calculator_heading": "Teğet Oranını Hesapla",
+    "calculator_outputLabel": "ten rengi(A)",
+    "calculator_fields": [
+      "Karşı taraf a",
+      "Bitişik taraf b"
+    ],
+    "introHeading": "Bu Teğet Oranı Hesaplayıcı Nasıl Çalışır?",
+    "intro": [
+      "Teğet, birincil <a href=\"/right-triangle-trig-ratios-calculator/\" class=\"text-primary hover:underline\">trigon oranlarının</a> üçüncüsüdür ve sinüs ve kosinüsten biraz farklı çalışır. Teğet, bir kenarı hipotenüsle karşılaştırmak yerine, bir kenarı diğeriyle, özellikle de karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">tarafı</a> bitişik kenarla karşılaştırır. Bu, onu özellikle eğim ve <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a>-yükseklik problemlerinde kullanışlı kılar.",
+      "Bu <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesap makinesi</a>, karşıt <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> a'yı bitişik b kenarına böler ve tan(A)'yı verir. Hesap makinesi uygulamasını çıkarmanıza gerek yok; sadece iki bacak uzunluğunuzu girin ve cevabı alın."
+    ],
+    "calculatorNote": "Yukarıdaki giriş alanlarına karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">taraf</a> a'yı ve bitişik b kenarını girin. Araç tan(A) = a / b'yi hesaplar. Her iki değer de pozitif olmalıdır.",
+    "formula_display": "tan(A) = a / b",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Açının</a> tanjantı A, karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarın</a> bitişik kenara bölünmesine eşittir. Bu SOH-CAH-TOA'nın TOA kısmıdır.",
+      "Sinüs ve kosinüsün aksine, tanjant hipotenüsü içermez. Sadece iki ayağını kullanıyor. Bu aynı zamanda teğetin 1 ile sınırlı olmadığı anlamına da gelir; dar açılar için herhangi bir pozitif sayı olabilir ve <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A 90°'ye yaklaştıkça sınırsız büyür."
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A için, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> a karşıdır, b kenarı bitişiktir ve c kenarı hipotenüstür.",
+      "Teğet yalnızca iki ayağı kullanır: karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> a ve bitişik kenar b. Hipotenüs c teğet formülünde görünmüyor."
+    ],
+    "howToSteps": [
+      "Sağ üçgende <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açıyı</a> A bulun.",
+      "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">tarafı</a> a olarak tanımlayın, bacak doğrudan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açıdan</a> A'nın karşısındadır.",
+      "Hipotenüs boyunca <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'yı oluşturan kenar olan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">tarafı</a> b'yi tanımlayın.",
+      "İlk alana a değerini girin.",
+      "İkinci alana b'nin değerini girin.",
+      "Tan(A)'yı elde etmek için Hesapla'yı tıklayın.",
+      "Sonuç 1'den küçük, 1'e eşit veya 1'den büyük olabilir."
+    ],
+    "example_intro": "Bir dik üçgenin karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarı</a> a = 3 ve komşu kenarı b = 4'tür.",
+    "example_steps": [
+      "tan(A) = a / b",
+      "ten rengi(A) = 3 / 4",
+      "tan(A) = 0,75"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın tanjantı 0,75'tir. Açıyı bulmak için: A = arktan(0,75) ≈ 36,87°.",
+    "whatResultMeans": [
+      "Teğet, üçgenin dikliğini <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın bakış açısından söyler. Bunu bir yükseliş hesaplaması olarak düşünün.",
+      "1'lik bir tanjant, karşıt ve bitişik kenarların eşit olduğu anlamına gelir; bu, <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90 üçgeninde</a> meydana gelir. 1'in altındaki değerler karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarın</a> bitişik kenardan daha kısa olduğu anlamına gelir; üçgen uzun olduğundan daha geniştir. 1'in üzerindeki değerler karşı tarafın daha uzun olduğu anlamına gelir; üçgenin boyu genişliğinden daha yüksektir.",
+      "Pratik açıdan teğet, <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'da durduğunuzda hipotenüs çizgisinin eğimidir."
+    ],
+    "whenToUse_intro": "Bu teğet oranı <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesaplayıcı</a> en çok şu durumlarda faydalıdır:",
+    "whenToUse_items": [
+      "Üçgenin her iki bacağına da sahipsiniz ve teğet oranını istiyorsunuz.",
+      "Eğim, derece veya eğim problemlerini çözüyorsunuz (yükseklik üzerinden koşu).",
+      "Yükselişin veya alçalmanın <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açısını</a> bulmanız gerekir.",
+      "Bir rampanın, çatının veya eğimin ne kadar dik olduğunu belirlemek istiyorsunuz.",
+      "Hipotenüsü kullanmadan bacak uzunlukları ve <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> ölçüleri arasında dönüşüm yapıyorsunuz."
+    ],
+    "commonMistakes_intro": "Bu yaygın teğet hatalardan kaçının:",
+    "commonMistakes_items": [
+      "Teğet formülüne hipotenüsün dahil edilmesi. Teğet yalnızca iki ayağı kullanır; hipotenüs söz konusu değildir.",
+      "Bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarın</a> paya yerleştirilmesi. Formül a/b'dir (bitişiktekinin tersi), b/a değil. Tersine çevrilmesi kotanjant verir.",
+      "Sonucun her zaman 1'den küçük olmasını beklemek. Sinüs ve kosinüsün aksine, teğet herhangi bir pozitif sayı olabilir.",
+      "Hangi bacağın karşıda, hangisinin bitişik olduğunu karıştırmak. Bunları daima <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'ya göre tanımlayın, dik açıya göre değil.",
+      "Yanlış <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> için formülün kullanılması. A açısı yerine B açısını etiketlediyseniz karşıt ve bitişik kenarlar yer değiştirir."
+    ],
+    "relatedLinks": [
+      "Dik Üçgen Trigonometri Oranları Hesaplayıcı",
+      "Sinüs Oranı Hesaplayıcı",
+      "Kosinüs Oranı Hesaplayıcı",
+      "Dik Üçgen Açı Hesaplayıcı"
+    ],
+    "faqs": [
+      {
+        "question": "Teğet oranı formülü nedir?",
+        "answer": "tan(A) = a / b'dir; burada a, karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> ve b, bitişik kenardır. Zıtları komşulara bölersiniz."
+      },
+      {
+        "question": "tan(A) 1'den büyük olabilir mi?",
+        "answer": "Evet. Karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> bitişik kenardan daha uzun olduğunda, tanjant 1'i aşar. Örneğin, tan(60°) ≈ 1,732."
+      },
+      {
+        "question": "Teğet eğimle nasıl ilişkilidir?",
+        "answer": "Teğet, bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">taraf</a> yatay çizgi ve karşı taraf dikey yükseliş olduğunda esas olarak hipotenüsün eğimidir. tan(A) = yükselme / koşma."
+      },
+      {
+        "question": "Teğet neden hipotenüsü kullanmıyor?",
+        "answer": "Teğet, iki bacak arasındaki oranı doğrudan ölçer. Hipotenüse gerek yoktur çünkü tanjant üçgenin ölçeğini değil şeklini (dikliğini) tanımlar."
+      },
+      {
+        "question": "a = b olduğunda ne olur?",
+        "answer": "Her iki bacak eşit olduğunda tan(A) = 1 ve <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A tam olarak 45° olur."
+      }
+    ]
+  },
+  "cotangent-ratio-calculator": {
+    "slug": "kotanjant oranı hesaplayıcı",
+    "h1": "Kotanjant Oranı Hesaplayıcı",
+    "headerSummary": "Bir dik üçgende karyola(A)'yı komşu <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> b'den karşı a kenarı üzerinden hesaplayın.",
+    "metaTitle": "Kotanjant Oranı Hesaplayıcı | Sağ Üçgen karyolası(A)",
+    "metaDescription": "Formül, adımlar ve örneklerle bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">taraf</a> b ve karşı taraf a'yı kullanarak bir dik üçgende bebek karyolası(A)'yı bulmak için bu kotanjant oranını <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesaplayıcıyı</a> kullanın.",
+    "calculator_heading": "Kotanjant Oranını Hesapla",
+    "calculator_outputLabel": "bebek karyolası(A)",
+    "calculator_fields": [
+      "Bitişik taraf b",
+      "Karşı taraf a"
+    ],
+    "introHeading": "Bu Kotanjant Oranı Hesaplayıcı Nasıl Çalışır?",
+    "intro": [
+      "Kotanjant, tanjantın tersidir. Teğet karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">tarafı</a> bitişik tarafa bölerken, kotanjant bu kesri ters çevirir — bitişik tarafı karşı tarafa böler. Temel geometri derslerinde daha az görülür, ancak ileri trigonometri ve matematikte önemli bir rol oynar.",
+      "Bu <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesap makinesi</a>, bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">taraf</a> b'yi ve karşı taraf a'yı alır, sonra cot(A) = b / a değerini döndürür. Teğet ile çalışmaya alışkınsanız, kotanjant basitçe ters kesirdir."
+    ],
+    "calculatorNote": "Yukarıdaki alanlara bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">taraf</a> b'yi ve karşı taraf a'yı girin. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesap makinesi</a>, cot(A) = b / a değerini döndürür. Her iki değer de pozitif olmalıdır.",
+    "formula_display": "bebek karyolası(A) = b / a",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a>'nın kotanjantı A, komşu <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarın</a> karşı tarafa bölünmesine eşittir. Teğetin tersidir: cot(A) = 1 / tan(A).",
+      "Teğet gibi, kotanjant da dik üçgenin yalnızca iki ayağını kullanır. Hipotenüs söz konusu değildir. Kotanjant dar açılar için herhangi bir pozitif değeri alabilir."
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A için, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> a karşıdır, b kenarı bitişiktir ve c kenarı hipotenüstür.",
+      "Kotanjant, pay olarak komşu <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">taraf</a> b'yi (<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın yanındaki kenar) ve payda olarak karşı taraf a'yı (A açısının karşı tarafı) kullanır. Hipotenüs c kullanılmaz."
+    ],
+    "howToSteps": [
+      "Sağ üçgeninizde <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açıyı</a> A belirleyin.",
+      "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">taraf</a> b'yi, bitişik ayağı - <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın yanındaki ve dik açıyı bulun.",
+      "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">tarafı</a> a, karşı ayağı bulun — <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın karşısındaki taraf.",
+      "İlk giriş alanına b girin.",
+      "İkinci giriş alanına bir girin.",
+      "Hesapla'yı tıklayın.",
+      "Sonuç, herhangi bir pozitif sayı olabilen cot(A)'dır."
+    ],
+    "example_intro": "Bir dik üçgenin komşu <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarı</a> b = 4 ve karşı kenarı a = 3'tür.",
+    "example_steps": [
+      "bebek karyolası(A) = b / a",
+      "bebek karyolası(A) = 4 / 3",
+      "bebek karyolası(A) ≈ 1,3333"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Açı</a> A'nın kotanjantı yaklaşık 1,3333'tür. Bunu doğrulayabilirsiniz: tan(A) = 3/4 = 0,75 ve 1/0,75 = 1,3333.",
+    "whatResultMeans": [
+      "Kotanjant, bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarın</a> karşı kenara göre kaç kez sığdığını gösterir. Diklik oranının artan yükseliş versiyonudur.",
+      "1 kotanjantı her iki bacağın da eşit olduğu anlamına gelir (45° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a>). 1'den büyük değerler, bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarın</a> karşı taraftan daha uzun olduğu anlamına gelir; üçgen daha geniş ve açı daha küçüktür. 1'den küçük değerler karşı tarafın daha uzun olduğu anlamına gelir; açı daha büyük ve üçgen daha diktir.",
+      "Kotanjant, tanjantın tersi olduğundan, bunlar arasında her zaman dönüşüm yapabilirsiniz: cot(A) = 1 / tan(A) ve tan(A) = 1 / cot(A)."
+    ],
+    "whenToUse_intro": "Aşağıdaki durumlarda bu kotanjant oranı <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesaplayıcıyı</a> seçin:",
+    "whenToUse_items": [
+      "1 / tan(A)'yı manuel olarak hesaplamadan teğetin karşılığını almanız gerekir.",
+      "Belirli hesap kimlikleri gibi özellikle kotanjant gerektiren formüllerle çalışıyorsunuz.",
+      "Yükselişten ziyade yükselişe göre düşünmeyi tercih ediyorsunuz.",
+      "Ölçme, inşaat veya trigonometrik ispatlardaki problemleri çözüyorsunuz."
+    ],
+    "commonMistakes_intro": "Bu kotanjant tuzaklara dikkat edin:",
+    "commonMistakes_items": [
+      "B/a yerine a/b yazmak. Kotanjant, karşı tarafı değil, bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">tarafı</a> üste koyar. Bunları değiştirmek size teğet verir.",
+      "Kotanjantın kosinüsle karıştırılması. Kotanjant b / a'dır (karşıtın karşısında bitişik). Kosinüs b / c'dir (hipotenüse bitişik). Bunlar farklı oranlardır.",
+      "Hesaplamalarda hipotenüsün kullanılması. Kotanjant yalnızca iki bacağı içerir.",
+      "Unutmak teğetin tersidir. Tan(A)'yı zaten biliyorsanız, cot(A)'yı elde etmek için sadece 1 / tan(A)'yı alın.",
+      "Hangi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">tarafın</a> bitişik, hangisinin karşıt olduğu karıştırılıyor. Kenarları her zaman <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'ya göre tanımlayın."
+    ],
+    "relatedLinks": [
+      "Dik Üçgen Trigonometri Oranları Hesaplayıcı",
+      "Teğet Oranı Hesaplayıcı",
+      "Sinüs Oranı Hesaplayıcı",
+      "Kosinüs Oranı Hesaplayıcı"
+    ],
+    "faqs": [
+      {
+        "question": "Dik üçgenin kotanjant formülü nedir?",
+        "answer": "Cot(A) = b / a'dır, burada b, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">açı</a>'nın komşu tarafıdır ve a, <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın karşı tarafıdır. Bu, teğet kesirin tersidir."
+      },
+      {
+        "question": "Kotanjantın teğet ile ilişkisi nedir?",
+        "answer": "Kotanjant, tanjantın tersidir. tan(A) = 0,75 ise cot(A) = 1 / 0,75 ≈ 1,3333."
+      },
+      {
+        "question": "Teğet yerine kotanjantı ne zaman kullanırım?",
+        "answer": "Bir formül özellikle gerektirdiğinde veya doğrudan komşu-karşıt oranını istediğinizde kotanjantı kullanın. Birçok matematik ve fizik bağlamında kotanjant, özdeşliklerde ve türev formüllerinde görünür."
+      },
+      {
+        "question": "Bir dik üçgende cot(A) sıfıra eşit olabilir mi?",
+        "answer": "Yalnızca dar açıları olan bir dik üçgende cot(A) her zaman pozitiftir. <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A 90°'ye yaklaştıkça kotanjant sıfıra yaklaşır, ancak 90° açı dik açının kendisidir, ölçeceğiniz bir dar açı değildir."
+      },
+      {
+        "question": "Kotanjant, 1'in teğete bölünmesiyle aynı mıdır?",
+        "answer": "Evet. bebek karyolası(A) = 1 / tan(A) = b / a. Her iki ifade de aynı sonucu verir."
+      }
+    ]
+  },
+  "secant-ratio-calculator": {
+    "slug": "secant-ratio-calculator",
+    "h1": "Secant Ratio Calculator",
+    "headerSummary": "Find sec(A) by comparing hypotenuse c with adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b, the reciprocal of cosine.",
+    "metaTitle": "Secant Ratio Calculator | Right Triangle sec(A)",
+    "metaDescription": "Use this secant ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> to find sec(A) in a right triangle using hypotenuse c and adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b with formula, steps, and examples.",
+    "calculator_heading": "Calculate Secant Ratio",
+    "calculator_outputLabel": "sec(A)",
+    "calculator_fields": [
+      "Hypotenuse c",
+      "Adjacent side b"
+    ],
+    "introHeading": "How This Secant Ratio Calculator Works",
+    "intro": [
+      "Secant is the reciprocal of cosine. Where cosine divides the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> by the hypotenuse, secant flips that — it divides the hypotenuse by the adjacent side. The result is always greater than or equal to 1 because the hypotenuse is always the longest side in a right triangle.",
+      "This <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> takes two inputs — hypotenuse c and adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b — and returns sec(A). It is a quick way to get this reciprocal ratio without doing the division by hand or computing cosine first."
+    ],
+    "calculatorNote": "Enter the hypotenuse c and adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b in the fields above. The <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> computes sec(A) = c / b. Both values must be positive, and c must be greater than b.",
+    "formula_display": "sec(A) = c / b",
+    "formula_paragraphs": [
+      "Secant of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A equals the hypotenuse divided by the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. This is the reciprocal of cosine: sec(A) = 1 / cos(A).",
+      "Because the hypotenuse is always longer than the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> in a right triangle, sec(A) is always greater than 1. As <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A gets larger, the adjacent side shrinks relative to the hypotenuse, so secant increases."
+    ],
+    "diagramExplanation": [
+      "For <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a is opposite, side b is adjacent, and side c is the hypotenuse.",
+      "Secant uses the hypotenuse c as the numerator and the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b as the denominator. The opposite side a is not part of the secant calculation."
+    ],
+    "howToSteps": [
+      "Identify <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A in your right triangle.",
+      "Find <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> c, the hypotenuse — the longest side, across from the right <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a>.",
+      "Find <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b, the adjacent leg — the side that touches both <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A and the right angle.",
+      "Enter c in the first input field.",
+      "Enter b in the second input field.",
+      "Click Calculate.",
+      "The result is sec(A), which is always greater than or equal to 1."
+    ],
+    "example_intro": "A right triangle has hypotenuse c = 5 and adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b = 4.",
+    "example_steps": [
+      "sec(A) = c / b",
+      "sec(A) = 5 / 4",
+      "sec(A) = 1.25"
+    ],
+    "example_conclusion": "The secant of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is 1.25. To verify: cos(A) = 4 / 5 = 0.8, and 1 / 0.8 = 1.25.",
+    "whatResultMeans": [
+      "Secant tells you how many times longer the hypotenuse is compared to the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. A secant of 1.25 means the hypotenuse is 25% longer than the adjacent side.",
+      "The minimum value of secant in a right triangle is slightly above 1, which occurs when <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is very small and the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is nearly as long as the hypotenuse. As angle A increases, the adjacent side shortens relative to the hypotenuse, and secant grows larger.",
+      "Secant is useful whenever you need to scale from the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> to the hypotenuse, or when a formula calls for 1 / cos(A)."
+    ],
+    "whenToUse_intro": "This secant ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> is the right choice when:",
+    "whenToUse_items": [
+      "A formula requires secant or 1 / cos(A) and you want the value directly.",
+      "You need to find how much longer the hypotenuse is compared to the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>.",
+      "You are working with calculus problems that involve secant in derivatives or integrals.",
+      "You are checking structural calculations where the hypotenuse represents the actual length and the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> represents the horizontal <a href=\"/right-triangle-projection-calculator/\" class=\"text-primary hover:underline\">projection</a>."
+    ],
+    "commonMistakes_intro": "These secant errors trip up students most often:",
+    "commonMistakes_items": [
+      "Confusing secant with cosine. Cosine is b / c (adjacent over hypotenuse). Secant is the reciprocal: c / b (hypotenuse over adjacent).",
+      "Getting a result less than 1. If your answer is below 1, you likely reversed the fraction. In a valid right triangle, sec(A) is always greater than or equal to 1.",
+      "Using the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> instead of the adjacent side. Secant pairs the hypotenuse with the adjacent side, not the opposite side.",
+      "Mixing up secant and cosecant. Secant is the reciprocal of cosine. Cosecant is the reciprocal of sine. They use different sides.",
+      "Entering b larger than c. The hypotenuse must always be longer than the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>."
+    ],
+    "relatedLinks": [
+      "Right Triangle Trig Ratios Calculator",
+      "Cosine Ratio Calculator",
+      "Cosecant Ratio Calculator",
+      "Cotangent Ratio Calculator"
+    ],
+    "faqs": [
+      {
+        "question": "What is the secant ratio in a right triangle?",
+        "answer": "Secant is defined as sec(A) = c / b, where c is the hypotenuse and b is the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>. It is the reciprocal of cosine."
+      },
+      {
+        "question": "Sekant neden her zaman 1'den büyüktür?",
+        "answer": "Çünkü hipotenüs c her zaman bir dik üçgende en uzun <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a>dır. Daha büyük bir sayıyı (c) daha küçük bir sayıya (b) bölmek her zaman 1'den büyük bir sonuç verir."
+      },
+      {
+        "question": "Sekant ve kosinüs arasında nasıl dönüşüm yapabilirim?",
+        "answer": "sn(A) = 1 / cos(A) ve cos(A) = 1 / sn(A). Birini biliyorsanız karşılığını alarak diğerini bulabilirsiniz."
+      },
+      {
+        "question": "Saniye(45°) nedir?",
+        "answer": "Bir <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90 üçgeninde</a>, hipotenüs kenarın √2 katıdır. Yani sn(45°) = √2 ≈ 1,4142."
+      },
+      {
+        "question": "Sekant gerçek dünya uygulamalarında kullanılıyor mu?",
+        "answer": "Evet. Sekant fizik formüllerinde, mühendislik hesaplamalarında ve matematikte görülür. Bir eğim boyunca yatay bir mesafeyi gerçek yol uzunluğuna ölçeklendirmeniz gerektiğinde kullanılır."
+      }
+    ]
+  },
+  "cosecant-ratio-calculator": {
+    "slug": "kosekant oranı hesaplayıcı",
+    "h1": "Kosekant Oranı Hesaplayıcı",
+    "headerSummary": "Csc(A)'yı hipotenüs c'den ve sinüsün tersi olan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> a'dan hesaplayın.",
+    "metaTitle": "Kosekant Oranı Hesaplayıcı | Sağ Üçgen csc(A)",
+    "metaDescription": "Formül, adımlar ve örneklerle birlikte hipotenüs c ve karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarı</a> a kullanarak bir dik üçgende csc(A)'yı bulmak için bu kosekant oranını <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesaplayıcıyı</a> kullanın.",
+    "calculator_heading": "Kosekant Oranını Hesapla",
+    "calculator_outputLabel": "csc(A)",
+    "calculator_fields": [
+      "Hipotenüs c",
+      "Karşı taraf a"
+    ],
+    "introHeading": "Bu Kosekant Oranı Hesaplayıcı Nasıl Çalışır?",
+    "intro": [
+      "Kosekant sinüsün tersidir. Hipotenüsü karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenara</a> böler ve size bir dik üçgende her zaman 1'den büyük olan bir oran verir. Temel derslerde bunu sinüs veya kosinüs kadar sık ​​göremeyebilirsiniz, ancak daha ileri matematik ve bazı fizik uygulamalarında gereklidir.",
+      "Bu <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesap makinesi</a> işi basitleştirir. Hipotenüs c'yi ve karşıt <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarı</a> a girin, hemen csc(A) değerini döndürür. Önce sinüsü hesaplamaya ve sonra kesri çevirmeye gerek yok."
+    ],
+    "calculatorNote": "Yukarıdaki alanlara hipotenüs c'yi ve karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> a'yı girin. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesap makinesi</a> csc(A) = c / a'yı hesaplar. Her iki değer de pozitif olmalı ve c, a'dan büyük olmalıdır.",
+    "formula_display": "csc(A) = c / a",
+    "formula_paragraphs": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a>'nın kosekantı A, hipotenüsün karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenara</a> bölünmesine eşittir. Sinüs'ün tersidir: csc(A) = 1 / sin(A).",
+      "Hipotenüs her zaman karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenardan</a> daha uzundur, dolayısıyla csc(A) dar açılar için her zaman 1'den büyük bir değer üretir. <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A azaldıkça karşı kenar hipotenüse göre kısalır ve kosekant artar."
+    ],
+    "diagramExplanation": [
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A için, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> a karşıdır, b kenarı bitişiktir ve c kenarı hipotenüstür.",
+      "Kosekant pay olarak hipotenüs c'yi ve payda olarak da karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">taraf</a> a'yı kullanır. Bitişik taraf b, kosekant formülünde hiçbir rol oynamaz."
+    ],
+    "howToSteps": [
+      "Sağ üçgeninizde <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açıyı</a> A belirleyin.",
+      "Hipotenüsü c — sağ <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açının</a> karşısındaki <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">tarafını</a> ve en uzun kenarı bulun.",
+      "Karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">tarafı</a> a bulun — <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın doğrudan karşısındaki bacak.",
+      "İlk giriş alanına c yazın.",
+      "İkinci giriş alanına a yazın.",
+      "Hesapla'yı tıklayın.",
+      "Sonuç csc(A)'dır ve her zaman 1'den büyüktür."
+    ],
+    "example_intro": "Bir dik üçgenin hipotenüsü c = 5 ve karşıt <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarı</a> a = 3'tür.",
+    "example_steps": [
+      "csc(A) = c / a",
+      "csc(A) = 5 / 3",
+      "csc(A) ≈ 1,6667"
+    ],
+    "example_conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Açı</a> A'nın kosekantı yaklaşık 1,6667'dir. Doğrulama: sin(A) = 3/5 = 0,6 ve 1/0,6 ≈ 1,6667.",
+    "whatResultMeans": [
+      "Kosekant size hipotenüsün karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> ile karşılaştırıldığında kaç kat daha uzun olduğunu söyler. 1,6667'lik bir kosekant, hipotenüsün karşı kenardan yaklaşık %67 daha uzun olduğu anlamına gelir.",
+      "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A büyük olduğunda (90°'ye yakın), karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> neredeyse hipotenüs kadar uzun olduğundan csc(A) 1'e yakındır. A açısı küçük olduğunda, karşı kenar çok daha kısa olur ve kosekant büyür.",
+      "Bunu şu şekilde düşünün: Eğer karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">tarafı</a> biliyorsanız ve hipotenüsü bulmak istiyorsanız, karşı tarafı csc(A) ile çarpın. Bu size c = a × csc(A) değerini verir."
+    ],
+    "whenToUse_intro": "Aşağıdaki durumlarda bu kosekant oranı <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesaplayıcıya</a> ulaşın:",
+    "whenToUse_items": [
+      "Önce sin(A)'yı hesaplamadan sinüsün tersini almanız gerekir.",
+      "Bir formül, belirli trigonometrik özdeşliklerde görünen kosekantı özellikle gerektirir.",
+      "Karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarı</a> tam hipotenüs uzunluğuna kadar ölçeklendiriyorsunuz.",
+      "Kosekant kullanan kuvvetleri, dalga fonksiyonlarını veya salınım formüllerini içeren fizik veya mühendislik problemleri üzerinde çalışıyorsunuz."
+    ],
+    "commonMistakes_intro": "Bu kosekant hatalarına dikkat edin:",
+    "commonMistakes_items": [
+      "Kosekantın sinüs ile karıştırılması. Sinüs a / c'dir (hipotenüsün tersi). Kosekant karşılıklıdır: c / a (ters yönde hipotenüs).",
+      "Kosekant ile sekantın karıştırılması. Kosekant, karşıt <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">tarafı</a> (sinüsün tersi) temel alır. Sekant bitişik tarafa dayanmaktadır (kosinüsün tersi). Farklı bacaklar kullanıyorlar.",
+      "1'den küçük sonuç almak. Cevabınız 1'in altındaysa değerleri yanlış sırayla girmiş olabilirsiniz. csc(A) her zaman 1'den büyüktür.",
+      "Karşı taraf yerine bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">tarafın</a> kullanılması. Kosekant hipotenüsü yalnızca karşı kenarla eşleştirir.",
+      "Kosekant ve kosinüsün isimle ilişkili olması bekleniyor. Ko-önekine rağmen kosekant kosinüs değil sinüsün tersidir."
+    ],
+    "relatedLinks": [
+      "Dik Üçgen Trigonometri Oranları Hesaplayıcı",
+      "Sinüs Oranı Hesaplayıcı",
+      "Sekant Oranı Hesaplayıcı",
+      "Kotanjant Oranı Hesaplayıcı"
+    ],
+    "faqs": [
+      {
+        "question": "Dik üçgende kosekant formülü nedir?",
+        "answer": "Bu csc(A) = c / a'dır, burada c hipotenüs ve a karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a>'dır. Kosekant sinüsün tersidir."
+      },
+      {
+        "question": "Kosekantın sinüsle ilişkisi nedir?",
+        "answer": "csc(A) = 1 / sin(A). Eğer sin(A) = 0,6 ise csc(A) = 1 / 0,6 ≈ 1,6667."
+      },
+      {
+        "question": "Kosekant neden her zaman 1'den büyüktür?",
+        "answer": "Çünkü bir dik üçgende hipotenüs daima karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenardan</a> daha uzundur. C / a kesri her zaman 1'i aşar."
+      },
+      {
+        "question": "csc(30°) nedir?",
+        "answer": "Bir <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90 üçgeninde</a>, sin(30°) = 0,5, yani csc(30°) = 1 / 0,5 = 2. Hipotenüs, karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarın</a> tam iki katıdır."
+      },
+      {
+        "question": "Sinüs yerine kosekantı ne zaman kullanırım?",
+        "answer": "Bir formül doğrudan gerektirdiğinde veya hipotenüsü karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">taraftan</a> bulmak istediğinizde kosekant kullanın: c = a × csc(A). Sinüs ile bölme adımından tasarruf sağlar."
+      }
+    ]
+  }
+}

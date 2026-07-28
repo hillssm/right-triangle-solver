@@ -1,0 +1,557 @@
+{
+  "sine-ratio-calculator": {
+    "slug": "sine-ratio-calculator",
+    "h1": "Sine Ratio Calculator",
+    "headerSummary": "Find sin(A) from the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a and hypotenuse c in a right triangle.",
+    "metaTitle": "Sine Ratio Calculator | Right Triangle sin(A)",
+    "metaDescription": "Use this sine ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> to find sin(A) in a right triangle using opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a and hypotenuse c with formula, steps, and examples.",
+    "calculator_heading": "Calculate Sine Ratio",
+    "calculator_outputLabel": "sin(A)",
+    "calculator_fields": [
+      "Opposite side a",
+      "Hypotenuse c"
+    ],
+    "introHeading": "How This Sine Ratio Calculator Works",
+    "intro": [
+      "The sine ratio is one of the first trigonometric functions you learn in geometry. It connects a specific <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> in a right triangle to two of its sides — the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> and the hypotenuse. If you know these two <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">measurements</a>, this calculator gives you sin(A) instantly.",
+      "Whether you are working through a homework problem, checking an exam-style answer, or solving a real measurement task, this tool removes the manual division step. Enter your values and get the result with the formula shown."
+    ],
+    "calculatorNote": "Enter the length of the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a and the hypotenuse c into the fields above. The <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> divides a by c and returns sin(A). Both values must be positive, and c must be larger than a.",
+    "formula_display": "sin(A) = a / c",
+    "formula_paragraphs": [
+      "The sine of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A equals the length of the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> divided by the length of the hypotenuse. This is often remembered with the SOH part of SOH-CAH-TOA.",
+      "In a right triangle, the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is the one directly across from <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A. The hypotenuse is always the longest side — the one facing the 90° angle. Since the hypotenuse is always longer than any leg, sin(A) always falls between 0 and 1 for acute angles."
+    ],
+    "diagramExplanation": [
+      "For <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a is opposite, side b is adjacent, and side c is the hypotenuse.",
+      "The sine ratio only uses two of these three sides: the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a (directly across from <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A) and the hypotenuse c (the longest side, opposite the right angle at B)."
+    ],
+    "howToSteps": [
+      "Identify <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A in your right triangle. It must be one of the two acute angles, not the 90° angle.",
+      "Find the <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> opposite <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A. This is side a.",
+      "Find the hypotenuse. This is <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> c, the longest side, opposite the right <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a>.",
+      "Enter the value of a in the first input field.",
+      "Enter the value of c in the second input field.",
+      "Click Calculate to see sin(A).",
+      "Review the result. It should be a decimal between 0 and 1."
+    ],
+    "example_intro": "Suppose you have a right triangle where the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a = 3 and the hypotenuse c = 5.",
+    "example_steps": [
+      "sin(A) = a / c",
+      "sin(A) = 3 / 5",
+      "sin(A) = 0.6"
+    ],
+    "example_conclusion": "The sine of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is 0.6. This means the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is 60% of the hypotenuse length. If you need the actual angle, take the inverse sine: A = arcsin(0.6) ≈ 36.87°.",
+    "whatResultMeans": [
+      "The output is a unitless ratio. It tells you how the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> compares to the hypotenuse in size. A result of 0.5 means the opposite side is exactly half the hypotenuse — which happens in a <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90 triangle</a> where A = 30°.",
+      "Small values (close to 0) mean <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is small and the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is short relative to the hypotenuse. Values closer to 1 mean angle A is large (approaching 90°) and the opposite side is nearly as long as the hypotenuse.",
+      "Since sin(A) is a ratio of two lengths, it has no units. Whether your triangle is measured in centimeters, inches, or meters, the sine value stays the same as long as both sides use the same unit."
+    ],
+    "whenToUse_intro": "Use this sine ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> in any of these situations:",
+    "whenToUse_items": [
+      "You know the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> and hypotenuse and want the sine value.",
+      "You are preparing to find <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A using the inverse sine function.",
+      "You need to verify a textbook answer or check your own trigonometry work.",
+      "You are solving physics problems involving vertical components, like the height of a ramp or the vertical force on an incline.",
+      "You are breaking a vector into its vertical and horizontal parts."
+    ],
+    "commonMistakes_intro": "Watch out for these common errors when calculating sine:",
+    "commonMistakes_items": [
+      "Using the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> instead of the opposite side. Sine uses the side across from <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A, not the side next to it.",
+      "Swapping a and c in the formula. The opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> goes in the numerator, and the hypotenuse goes in the denominator. Writing c / a gives the cosecant, not the sine.",
+      "Using sides measured in different units. If a is in centimeters and c is in inches, the ratio is meaningless. Convert to the same unit first.",
+      "Forgetting that c must be greater than a. In a valid right triangle, the hypotenuse is always the longest <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a>.",
+      "Entering the right <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> (90°) as angle A. Sine applies to the acute angles only. The 90° angle is at vertex B."
+    ],
+    "relatedLinks": [
+      "Right Triangle Trig Ratios Calculator",
+      "Cosine Ratio Calculator",
+      "Tangent Ratio Calculator",
+      "Right Triangle Angle Calculator"
+    ],
+    "faqs": [
+      {
+        "question": "What is the formula for sin(A) in a right triangle?",
+        "answer": "Rumusnya adalah sin(A) = a / c, dimana a adalah <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> dihadapan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A dan c adalah sisi miring. Anda membagi sisi yang berlawanan dengan sisi miring."
+      },
+      {
+        "question": "Mengapa sin(A) selalu kurang dari 1 pada segitiga siku-siku?",
+        "answer": "Karena sisi miring c selalu merupakan sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> terpanjang. Karena a lebih pendek dari c, maka pecahan a/c selalu kurang dari 1."
+      },
+      {
+        "question": "Bisakah saya menggunakan kalkulator ini untuk mencari sudutnya sendiri?",
+        "answer": "<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Kalkulator</a> ini memberi Anda nilai sinus. Untuk mencari <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a>, gunakan fungsi sinus invers: A = arcsin(sin(A)). Anda dapat melakukannya dengan kalkulator sudut segitiga siku-siku kami."
+      },
+      {
+        "question": "Apa yang dimaksud dengan hasil sin(A) 0,5?",
+        "answer": "Artinya sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> di seberangnya tepat setengah panjang sisi miring. Ini sesuai dengan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A adalah 30°."
+      },
+      {
+        "question": "Apakah saya perlu memasukkan sisi yang berdekatan untuk menghitung sinus?",
+        "answer": "Tidak. Sinus hanya menggunakan kebalikan dari <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a dan sisi miring c. Sisi yang berdekatan b bukan bagian dari rumus sinus."
+      }
+    ]
+  },
+  "cosine-ratio-calculator": {
+    "slug": "kalkulator rasio kosinus",
+    "h1": "Kalkulator Rasio Cosinus",
+    "headerSummary": "Hitung cos(A) dari <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b dan sisi miring c yang berdekatan dengan tangga segitiga siku-siku yang jelas.",
+    "metaTitle": "Kalkulator Rasio Cosinus | Segitiga Siku-siku cos(A)",
+    "metaDescription": "Gunakan perbandingan kosinus <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini untuk mencari cos(A) pada segitiga siku-siku menggunakan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b dan sisi miring c yang berdekatan beserta rumus, langkah, dan contoh.",
+    "calculator_heading": "Hitung Rasio Cosinus",
+    "calculator_outputLabel": "karena(A)",
+    "calculator_fields": [
+      "Sisi yang berdekatan b",
+      "Sisi miring c"
+    ],
+    "introHeading": "Cara Kerja Kalkulator Rasio Cosinus Ini",
+    "intro": [
+      "Rasio kosinus mengukur perbandingan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> segitiga siku-siku yang berdekatan dengan sisi miringnya. Ini adalah bagian kedua dari SOH-CAH-TOA dan salah satu fungsi trigonometri yang paling umum digunakan dalam geometri, fisika, dan teknik.",
+      "<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini mengambil dua masukan — sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b yang berdekatan dan sisi miring c — dan mengembalikan cos(A). Ini menangani pembagian untuk Anda dan langsung menampilkan hasilnya, sehingga Anda dapat fokus pada pemahaman geometri daripada aritmatika."
+    ],
+    "calculatorNote": "Ketik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b yang berdekatan dan sisi miring c ke dalam kolom masukan di atas. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> menghitung cos(A) = b / c. Kedua nilai tersebut harus positif, dan c harus lebih besar dari b.",
+    "formula_display": "cos(A) = b / c",
+    "formula_paragraphs": [
+      "Kosinus dari <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A sama dengan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang berdekatan dibagi dengan sisi miring. Ini adalah CAH di SOH-CAH-TOA.",
+      "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b yang berdekatan adalah kaki yang menyentuh <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A dan sudut siku-siku. Sisi miring c terletak di seberang sudut siku-siku dan selalu merupakan sisi terpanjang. Karena sisi miring lebih panjang dari kaki mana pun, cos(A) selalu menghasilkan nilai antara 0 dan 1 untuk sudut lancip."
+    ],
+    "diagramExplanation": [
+      "Untuk <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a berhadapan, sisi b berdekatan, dan sisi c adalah sisi miring.",
+      "Rasio kosinus menggunakan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b yang berdekatan (kaki yang membentuk <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A beserta sisi miringnya) dan sisi miring c. Sisi a bukan bagian dari perhitungan kosinus."
+    ],
+    "howToSteps": [
+      "Temukan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A di segitiga siku-siku Anda. Ini adalah salah satu dari dua sudut lancip.",
+      "Identifikasi sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> yang berdekatan. Ini adalah sisi b — kaki yang membentuk <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A bersama dengan sisi miring.",
+      "Identifikasi sisi miring c, sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> yang berhadapan dengan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> 90°.",
+      "Masukkan nilai b pada kolom pertama.",
+      "Masukkan nilai c pada kolom kedua.",
+      "Tekan Hitung untuk melihat cos(A).",
+      "Periksa apakah hasilnya antara 0 dan 1."
+    ],
+    "example_intro": "Segitiga siku-siku mempunyai <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b = 4 dan sisi miring c = 5.",
+    "example_steps": [
+      "cos(A) = b / c",
+      "cos(A) = 4/5",
+      "karena(A) = 0,8"
+    ],
+    "example_conclusion": "Kosinus <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A adalah 0,8. Sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> yang berdekatan adalah 80% dari panjang sisi miring. Mencari sudut: A = arccos(0,8) ≈ 36,87°.",
+    "whatResultMeans": [
+      "Kosinus memberi tahu Anda berapa banyak panjang sisi miring yang ditutupi oleh sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> yang berdekatan. Kosinus 0,8 berarti sisi yang berdekatan meregang sebesar 80% terhadap sisi miring.",
+      "Jika <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A kecil, panjang <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang berdekatan hampir sama panjang dengan sisi miring, sehingga cos(A) mendekati 1. Jika sudut A besar (mendekati 90°), sisi yang berdekatan menyusut relatif terhadap sisi miring, mendorong cos(A) menuju 0.",
+      "Hasilnya tidak berdimensi. Tidak masalah apakah <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">pengukuran</a> Anda dalam satuan kaki, meter, atau satuan lainnya — kosinus adalah rasio murni."
+    ],
+    "whenToUse_intro": "Raih rasio kosinus <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini ketika:",
+    "whenToUse_items": [
+      "Anda mengetahui <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> dan sisi miring yang berdekatan dan memerlukan nilai kosinus.",
+      "Anda mencari komponen horizontal dari vektor gaya, kecepatan, atau perpindahan.",
+      "Anda ingin memverifikasi nilai pemicu dari buku teks atau kumpulan masalah.",
+      "Anda sedang mengerjakan masalah navigasi atau survei yang melibatkan jarak horizontal.",
+      "Anda memerlukan cos(A) sebelum menghitung besaran turunan lainnya, seperti garis potong atau garis singgung."
+    ],
+    "commonMistakes_intro": "Berikut adalah kesalahan kosinus yang paling sering dilakukan siswa:",
+    "commonMistakes_items": [
+      "Menggunakan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang berlawanan, bukan sisi yang berdekatan. Cosinus menggunakan kaki di sebelah <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A, bukan yang di seberangnya.",
+      "Memasuki b lebih besar dari c. Dalam segitiga siku-siku yang valid, sisi miringnya selalu merupakan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang terpanjang. Jika b melebihi c, nilai Anda tidak membentuk segitiga siku-siku.",
+      "Membalikkan pecahan. Penulisan c/b menghasilkan garis potong, bukan kosinus.",
+      "Mencampur <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang berdekatan dengan label sisi miring. Periksa kembali sisi mana yang berhadapan dengan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> siku-siku (yaitu sisi miring) dan mana yang merupakan bagian dari sudut A (yaitu sisi yang berdekatan).",
+      "Menggunakan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">panjang sisi</a> yang diukur dalam satuan berbeda tanpa melakukan konversi terlebih dahulu."
+    ],
+    "relatedLinks": [
+      "Kalkulator Rasio Trigonometri Segitiga Kanan",
+      "Kalkulator Rasio Sinus",
+      "Kalkulator Rasio Tangen",
+      "Kalkulator Sudut Segitiga Kanan"
+    ],
+    "faqs": [
+      {
+        "question": "Apa rumus perbandingan kosinus segitiga siku-siku?",
+        "answer": "Bentuknya cos(A) = b / c, dengan b adalah sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> yang berdekatan dan c adalah sisi miring. Berdekatan berarti kaki yang menyentuh <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A."
+      },
+      {
+        "question": "Apa perbedaan kosinus dengan sinus?",
+        "answer": "Sinus menggunakan kebalikan dari <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> di atas sisi miring (a / c). Cosinus menggunakan sisi yang berdekatan di atas sisi miring (b/c). Mereka mengukur sisi-sisi yang berbeda relatif terhadap <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> yang sama."
+      },
+      {
+        "question": "Apa artinya jika cos(A) = 0,5?",
+        "answer": "Artinya <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang berdekatan tepat setengah sisi miring. Hal ini terjadi jika <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A adalah 60°."
+      },
+      {
+        "question": "Bisakah cosinus lebih besar dari 1?",
+        "answer": "Tidak. Dalam segitiga siku-siku, sisi miring selalu lebih panjang dari <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang berdekatan, jadi b / c selalu kurang dari 1."
+      },
+      {
+        "question": "Mengapa saya hanya memerlukan dua sisi untuk cosinus?",
+        "answer": "Rumus kosinus hanya melibatkan sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> yang berdekatan dan sisi miring. Sisi sebaliknya bukan bagian dari perhitungan."
+      }
+    ]
+  },
+  "tangent-ratio-calculator": {
+    "slug": "kalkulator rasio tangen",
+    "h1": "Kalkulator Rasio Tangen",
+    "headerSummary": "Temukan tan(A) dari <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a yang berlawanan dan sisi b yang berdekatan untuk soal kemiringan, tanjakan, dan lari.",
+    "metaTitle": "Kalkulator Rasio Tangen | Segitiga Kanan tan(A)",
+    "metaDescription": "Gunakan perbandingan tangen <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini untuk mencari tan(A) pada segitiga siku-siku menggunakan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a yang berhadapan dan sisi b yang berdekatan dengan rumus, langkah, dan contoh.",
+    "calculator_heading": "Hitung Rasio Tangen",
+    "calculator_outputLabel": "berjemur(A)",
+    "calculator_fields": [
+      "Sisi berlawanan a",
+      "Sisi yang berdekatan b"
+    ],
+    "introHeading": "Cara Kerja Kalkulator Rasio Tangen Ini",
+    "intro": [
+      "Tangen adalah yang ketiga dari <a href=\"/right-triangle-trig-ratios-calculator/\" class=\"text-primary hover:underline\">rasio trigonometri</a> utama, dan cara kerjanya sedikit berbeda dari sinus dan kosinus. Alih-alih membandingkan kaki dengan sisi miring, garis singgung membandingkan satu kaki dengan kaki lainnya — khususnya, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang berlawanan dengan sisi yang berdekatan. Hal ini membuatnya sangat berguna dalam masalah kemiringan dan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a>elevasi.",
+      "<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini membagi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a yang berlawanan dengan sisi yang berdekatan b dan menghasilkan tan(A). Tidak perlu mengeluarkan aplikasi kalkulator — cukup masukkan kedua panjang kaki Anda dan dapatkan jawabannya."
+    ],
+    "calculatorNote": "Masukkan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a yang berlawanan dan sisi b yang berdekatan pada kolom masukan di atas. Alat tersebut menghitung tan(A) = a / b. Kedua nilai tersebut harus positif.",
+    "formula_display": "tan(A) = a / b",
+    "formula_paragraphs": [
+      "Garis singgung <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A sama dengan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> seberangnya dibagi sisi yang berdekatan. Ini adalah bagian TOA dari SOH-CAH-TOA.",
+      "Berbeda dengan sinus dan kosinus, garis singgung tidak melibatkan sisi miring. Ia hanya menggunakan kedua kakinya. Ini juga berarti garis singgung tidak dibatasi pada 1 — dapat berupa bilangan positif apa pun untuk sudut lancip, dan bertambah tanpa batas saat <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A mendekati 90°."
+    ],
+    "diagramExplanation": [
+      "Untuk <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a berhadapan, sisi b berdekatan, dan sisi c adalah sisi miring.",
+      "Garis singgung hanya menggunakan dua kaki: sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a yang berlawanan dan sisi yang berdekatan b. Sisi miring c tidak muncul dalam rumus tangen."
+    ],
+    "howToSteps": [
+      "Tentukan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A pada segitiga siku-siku.",
+      "Identifikasi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a, kaki yang berhadapan langsung dengan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A.",
+      "Identifikasi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b, kaki yang membentuk <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A di samping sisi miring.",
+      "Masukkan nilai a pada kolom pertama.",
+      "Masukkan nilai b pada kolom kedua.",
+      "Klik Hitung untuk mendapatkan tan(A).",
+      "Hasilnya bisa kurang dari 1, sama dengan 1, atau lebih besar dari 1."
+    ],
+    "example_intro": "Segitiga siku-siku mempunyai <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a = 3 yang berhadapan dan sisi yang berdekatan b = 4.",
+    "example_steps": [
+      "tan(A) = a / b",
+      "tan(A) = 3/4",
+      "tan(A) = 0,75"
+    ],
+    "example_conclusion": "Garis singgung <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A adalah 0,75. Untuk mencari sudut: A = arctan(0,75) ≈ 36,87°.",
+    "whatResultMeans": [
+      "Garis singgung menunjukkan kecuraman segitiga dari sudut pandang <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A. Anggap saja sebagai kalkulasi naik-turun.",
+      "Garis singgung 1 berarti sisi-sisi yang berhadapan dan berdekatan sama besar, hal ini terjadi pada segitiga <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90</a>. Nilai di bawah 1 berarti sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> di seberangnya lebih pendek dari sisi yang berdekatan — segitiga lebih lebar daripada tingginya. Nilai di atas 1 berarti sisi di depannya lebih panjang — segitiga lebih tinggi daripada lebarnya.",
+      "Secara praktis, garis singgung adalah kemiringan garis miring ketika Anda berdiri pada <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A."
+    ],
+    "whenToUse_intro": "Rasio tangen <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini paling berguna ketika:",
+    "whenToUse_items": [
+      "Anda memiliki kedua kaki segitiga dan menginginkan rasio singgungnya.",
+      "Anda memecahkan masalah kemiringan, kemiringan, atau tinggi nada (naik dari lari).",
+      "Anda perlu mencari <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> elevasi atau depresi.",
+      "Anda ingin menentukan seberapa curam tanjakan, atap, atau tanjakan.",
+      "Anda mengonversi antara panjang kaki dan ukuran <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> tanpa menggunakan sisi miring."
+    ],
+    "commonMistakes_intro": "Hindari kesalahan umum berikut ini:",
+    "commonMistakes_items": [
+      "Termasuk sisi miring dalam rumus tangen. Garis singgung hanya menggunakan kedua kakinya — tidak melibatkan sisi miring.",
+      "Menempatkan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang berdekatan di pembilangnya. Rumusnya adalah a/b (berlawanan dengan yang berdekatan), bukan b/a. Membalikkannya menghasilkan kotangen.",
+      "Mengharapkan hasilnya selalu kurang dari 1. Berbeda dengan sinus dan kosinus, tangen dapat berupa bilangan positif apa pun.",
+      "Bingung mana kaki yang berhadapan dan mana yang bersebelahan. Selalu identifikasikan relatif terhadap <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A, bukan sudut siku-siku.",
+      "Menggunakan rumus <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> yang salah. Jika Anda memberi label sudut B dan bukan sudut A, sisi depan dan sisi yang berdekatan akan bertukar."
+    ],
+    "relatedLinks": [
+      "Kalkulator Rasio Trigonometri Segitiga Kanan",
+      "Kalkulator Rasio Sinus",
+      "Kalkulator Rasio Cosinus",
+      "Kalkulator Sudut Segitiga Kanan"
+    ],
+    "faqs": [
+      {
+        "question": "Apa rumus perbandingan tangen?",
+        "answer": "Diketahui tan(A) = a / b, dimana a adalah sisi dihadapannya <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> dan b adalah sisi yang berdekatan. Anda membagi berlawanan dengan berdekatan."
+      },
+      {
+        "question": "Bisakah tan(A) lebih besar dari 1?",
+        "answer": "Ya. Jika <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> seberangnya lebih panjang dari sisi yang berdekatan, garis singgung melebihi 1. Misalnya, tan(60°) ≈ 1,732."
+      },
+      {
+        "question": "Bagaimana hubungan garis singgung dengan kemiringan?",
+        "answer": "Garis singgung pada dasarnya adalah kemiringan sisi miring ketika sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> yang berdekatan adalah garis horizontal dan sisi yang berlawanan adalah garis menaik vertikal. tan(A) = naik / lari."
+      },
+      {
+        "question": "Mengapa garis singgung tidak menggunakan sisi miring?",
+        "answer": "Tangen mengukur perbandingan antara kedua kaki secara langsung. Sisi miring tidak diperlukan karena garis singgung menggambarkan bentuk (kecuraman) segitiga, bukan skalanya."
+      },
+      {
+        "question": "Apa yang terjadi jika a = b?",
+        "answer": "Jika kedua kakinya sama besar, tan(A) = 1, dan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A tepat 45°."
+      }
+    ]
+  },
+  "cotangent-ratio-calculator": {
+    "slug": "cotangent-ratio-calculator",
+    "h1": "Cotangent Ratio Calculator",
+    "headerSummary": "Calculate cot(A) from adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b over opposite side a in a right triangle.",
+    "metaTitle": "Cotangent Ratio Calculator | Right Triangle cot(A)",
+    "metaDescription": "Use this cotangent ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> to find cot(A) in a right triangle using adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b and opposite side a with formula, steps, and examples.",
+    "calculator_heading": "Calculate Cotangent Ratio",
+    "calculator_outputLabel": "cot(A)",
+    "calculator_fields": [
+      "Adjacent side b",
+      "Opposite side a"
+    ],
+    "introHeading": "How This Cotangent Ratio Calculator Works",
+    "intro": [
+      "Cotangent is the reciprocal of tangent. While tangent divides the opposite <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> by the adjacent side, cotangent flips that fraction — it divides the adjacent side by the opposite side. It shows up less often in basic geometry classes, but it plays an important role in advanced trigonometry and calculus.",
+      "This <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> takes the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b and the opposite side a, then returns cot(A) = b / a. If you are used to working with tangent, cotangent is simply the inverse fraction."
+    ],
+    "calculatorNote": "Enter adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b and opposite side a in the fields above. The <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> returns cot(A) = b / a. Both values must be positive.",
+    "formula_display": "cot(A) = b / a",
+    "formula_paragraphs": [
+      "Cotangent of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A equals the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> divided by the opposite side. It is the reciprocal of tangent: cot(A) = 1 / tan(A).",
+      "Like tangent, cotangent uses only the two legs of the right triangle. The hypotenuse is not involved. Cotangent can take any positive value for acute angles."
+    ],
+    "diagramExplanation": [
+      "For <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a is opposite, side b is adjacent, and side c is the hypotenuse.",
+      "Cotangent uses the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b (the leg next to <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A) as the numerator and the opposite side a (across from angle A) as the denominator. The hypotenuse c is not used."
+    ],
+    "howToSteps": [
+      "Identify <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A in your right triangle.",
+      "Find <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b, the adjacent leg — the one next to <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A and the right angle.",
+      "Find <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> a, the opposite leg — the one across from <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A.",
+      "Enter b in the first input field.",
+      "Enter a in the second input field.",
+      "Click Calculate.",
+      "The result is cot(A), which can be any positive number."
+    ],
+    "example_intro": "A right triangle has adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> b = 4 and opposite side a = 3.",
+    "example_steps": [
+      "cot(A) = b / a",
+      "cot(A) = 4 / 3",
+      "cot(A) ≈ 1.3333"
+    ],
+    "example_conclusion": "The cotangent of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A is approximately 1.3333. You can verify this: tan(A) = 3 / 4 = 0.75, and 1 / 0.75 = 1.3333.",
+    "whatResultMeans": [
+      "Cotangent tells you how many times the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> fits relative to the opposite side. It is the run-over-rise version of the steepness ratio.",
+      "A cotangent of 1 means both legs are equal (a 45° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a>). Values greater than 1 mean the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is longer than the opposite side — the triangle is wider and the angle is smaller. Values less than 1 mean the opposite side is longer — the angle is larger and the triangle is steeper.",
+      "Since cotangent is the reciprocal of tangent, you can always convert between them: cot(A) = 1 / tan(A) and tan(A) = 1 / cot(A)."
+    ],
+    "whenToUse_intro": "Pick this cotangent ratio <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculator</a> when:",
+    "whenToUse_items": [
+      "You need the reciprocal of tangent without manually computing 1 / tan(A).",
+      "You are working with formulas that specifically call for cotangent, such as certain calculus identities.",
+      "You prefer to think in terms of run-over-rise rather than rise-over-run.",
+      "You are solving problems in surveying, construction, or trigonometric proofs."
+    ],
+    "commonMistakes_intro": "Keep an eye out for these cotangent pitfalls:",
+    "commonMistakes_items": [
+      "Writing a / b instead of b / a. Cotangent puts the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> on top, not the opposite side. Swapping them gives you tangent.",
+      "Confusing cotangent with cosine. Cotangent is b / a (adjacent over opposite). Cosine is b / c (adjacent over hypotenuse). They are different ratios.",
+      "Using the hypotenuse in the calculation. Cotangent only involves the two legs.",
+      "Forgetting it is the reciprocal of tangent. If you already know tan(A), just take 1 / tan(A) to get cot(A).",
+      "Mixing up which <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> is adjacent and which is opposite. Always identify sides relative to <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A."
+    ],
+    "relatedLinks": [
+      "Right Triangle Trig Ratios Calculator",
+      "Tangent Ratio Calculator",
+      "Sine Ratio Calculator",
+      "Cosine Ratio Calculator"
+    ],
+    "faqs": [
+      {
+        "question": "What is the cotangent formula for a right triangle?",
+        "answer": "It is cot(A) = b / a, where b is the adjacent <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">side</a> and a is the opposite side of <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A. This is the reverse of the tangent fraction."
+      },
+      {
+        "question": "Bagaimana hubungan kotangen dengan garis singgung?",
+        "answer": "Kotangen adalah kebalikan dari garis singgung. Jika tan(A) = 0,75, maka cot(A) = 1 / 0,75 ≈ 1,3333."
+      },
+      {
+        "question": "Kapan saya akan menggunakan kotangen dan bukannya tangen?",
+        "answer": "Gunakan kotangen ketika rumus secara khusus memerlukannya, atau ketika Anda menginginkan rasio berdekatan dan berlawanan secara langsung. Dalam banyak konteks kalkulus dan fisika, kotangen muncul dalam identitas dan rumus turunan."
+      },
+      {
+        "question": "Bisakah cot(A) sama dengan nol pada segitiga siku-siku?",
+        "answer": "Pada segitiga siku-siku yang sudut lancipnya saja, cot(A) selalu positif. Kotangen mendekati nol karena <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A mendekati 90°, tetapi sudut 90° adalah sudut siku-siku, bukan sudut lancip yang akan Anda ukur."
+      },
+      {
+        "question": "Apakah kotangen sama dengan 1 dibagi garis singgung?",
+        "answer": "Ya. tempat tidur(A) = 1 / tan(A) = b / a. Kedua ekspresi memberikan hasil yang sama."
+      }
+    ]
+  },
+  "secant-ratio-calculator": {
+    "slug": "kalkulator rasio garis potong",
+    "h1": "Kalkulator Rasio Garis Potong",
+    "headerSummary": "Cari detik(A) dengan membandingkan sisi miring c dengan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b yang berdekatan, kebalikan dari kosinus.",
+    "metaTitle": "Kalkulator Rasio Garis Potong | Segitiga Kanan detik(A)",
+    "metaDescription": "Gunakan perbandingan garis potong <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini untuk mencari detik(A) pada segitiga siku-siku menggunakan sisi miring c dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b yang berdekatan beserta rumus, langkah, dan contoh.",
+    "calculator_heading": "Hitung Rasio Garis Potong",
+    "calculator_outputLabel": "detik(A)",
+    "calculator_fields": [
+      "Sisi miring c",
+      "Sisi yang berdekatan b"
+    ],
+    "introHeading": "Cara Kerja Kalkulator Rasio Garis Potong ini",
+    "intro": [
+      "Garis potong adalah kebalikan dari kosinus. Jika kosinus membagi sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> yang berdekatan dengan sisi miring, maka garis potong akan membaliknya — sehingga membagi sisi miring dengan sisi yang berdekatan. Hasilnya selalu lebih besar atau sama dengan 1 karena sisi miring selalu merupakan sisi terpanjang pada segitiga siku-siku.",
+      "<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini mengambil dua masukan — sisi miring c dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b yang berdekatan — dan mengembalikan detik(A). Ini adalah cara cepat untuk mendapatkan rasio timbal balik tanpa melakukan pembagian secara manual atau menghitung kosinus terlebih dahulu."
+    ],
+    "calculatorNote": "Masukkan sisi miring c dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b yang berdekatan pada kolom di atas. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> menghitung detik(A) = c / b. Kedua nilai tersebut harus positif, dan c harus lebih besar dari b.",
+    "formula_display": "detik(A) = c / b",
+    "formula_paragraphs": [
+      "Garis potong dari <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A sama dengan sisi miring dibagi dengan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang berdekatan. Ini kebalikan dari kosinus: detik(A) = 1 / cos(A).",
+      "Karena sisi miring selalu lebih panjang dari <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang berdekatan pada segitiga siku-siku, detik(A) selalu lebih besar dari 1. Karena <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A semakin besar, sisi yang berdekatan menyusut relatif terhadap sisi miring, sehingga garis potong bertambah."
+    ],
+    "diagramExplanation": [
+      "Untuk <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a berhadapan, sisi b berdekatan, dan sisi c adalah sisi miring.",
+      "Garis potong menggunakan sisi miring c sebagai pembilangnya dan sisi </a> b yang berdekatan sebagai penyebutnya. Sisi berlawanan a bukan bagian dari perhitungan garis potong."
+    ],
+    "howToSteps": [
+      "Identifikasi <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A pada segitiga siku-siku Anda.",
+      "Carilah <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> c, sisi miring — sisi terpanjang, di seberang sudut kanan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"></a>.",
+      "Temukan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b, kaki yang berdekatan — sisi yang menyentuh <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A dan sudut siku-siku.",
+      "Masukkan c di kolom input pertama.",
+      "Masukkan b di kolom masukan kedua.",
+      "Klik Hitung.",
+      "Hasilnya adalah sec(A), yang selalu lebih besar atau sama dengan 1."
+    ],
+    "example_intro": "Segitiga siku-siku memiliki sisi miring c = 5 dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b = 4 yang berdekatan.",
+    "example_steps": [
+      "detik(A) = c / b",
+      "detik(A) = 5/4",
+      "detik(A) = 1,25"
+    ],
+    "example_conclusion": "Garis potong <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A adalah 1,25. Untuk memverifikasi: cos(A) = 4 / 5 = 0,8, dan 1 / 0,8 = 1,25.",
+    "whatResultMeans": [
+      "Garis potong memberi tahu Anda berapa kali panjang sisi miring dibandingkan dengan sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> yang berdekatan. Garis potong 1,25 berarti sisi miring lebih panjang 25% dari sisi yang berdekatan.",
+      "Nilai minimum garis potong pada segitiga siku-siku sedikit di atas 1, yang terjadi jika <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A sangat kecil dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang berdekatan hampir sepanjang sisi miring. Dengan bertambahnya sudut A, sisi yang berdekatan memendek relatif terhadap sisi miring, dan garis potong bertambah besar.",
+      "Garis potong berguna kapan pun Anda perlu melakukan penskalaan dari sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> yang berdekatan ke sisi miring, atau saat rumus memerlukan 1 / cos(A)."
+    ],
+    "whenToUse_intro": "Rasio garis potong <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini adalah pilihan yang tepat ketika:",
+    "whenToUse_items": [
+      "Rumus memerlukan garis potong atau 1 / cos(A) dan Anda menginginkan nilainya secara langsung.",
+      "Anda perlu mencari berapa panjang sisi miring dibandingkan dengan sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> yang berdekatan.",
+      "Anda sedang mengerjakan soal kalkulus yang melibatkan garis potong dalam turunan atau integral.",
+      "Anda sedang memeriksa perhitungan struktural di mana sisi miring mewakili panjang sebenarnya dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang berdekatan mewakili <a href=\"/right-triangle-projection-calculator/\" class=\"text-primary hover:underline\">proyeksi</a> horizontal."
+    ],
+    "commonMistakes_intro": "Kesalahan garis potong ini paling sering membuat siswa tersandung:",
+    "commonMistakes_items": [
+      "Membingungkan garis potong dengan kosinus. Cosinus adalah b/c (berdekatan dengan sisi miring). Garis potong adalah kebalikannya: c / b (sisi miring di atas yang berdekatan).",
+      "Mendapatkan hasil kurang dari 1. Jika jawaban Anda di bawah 1, kemungkinan besar Anda membalik pecahannya. Pada segitiga siku-siku sah, sec(A) selalu lebih besar atau sama dengan 1.",
+      "Menggunakan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang berlawanan, bukan sisi yang berdekatan. Garis potong memasangkan sisi miring dengan sisi yang berdekatan, bukan sisi yang berlawanan.",
+      "Mencampur garis potong dan kosekan. Garis potong adalah kebalikan dari kosinus. Cosecant adalah kebalikan dari sinus. Mereka menggunakan sisi yang berbeda.",
+      "Memasuki b lebih besar dari c. Sisi miring harus selalu lebih panjang dari sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> yang berdekatan."
+    ],
+    "relatedLinks": [
+      "Kalkulator Rasio Trigonometri Segitiga Kanan",
+      "Kalkulator Rasio Cosinus",
+      "Kalkulator Rasio Cosecant",
+      "Kalkulator Rasio Kotangen"
+    ],
+    "faqs": [
+      {
+        "question": "Berapakah perbandingan garis potong pada segitiga siku-siku?",
+        "answer": "Garis potong didefinisikan sebagai detik(A) = c / b, dengan c adalah sisi miring dan b adalah sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> yang berdekatan. Ini adalah kebalikan dari kosinus."
+      },
+      {
+        "question": "Mengapa garis potong selalu lebih besar dari 1?",
+        "answer": "Karena sisi miring c selalu merupakan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> terpanjang pada segitiga siku-siku. Membagi bilangan yang lebih besar (c) dengan bilangan yang lebih kecil (b) selalu memberikan hasil yang lebih besar dari 1."
+      },
+      {
+        "question": "Bagaimana cara mengkonversi antara garis potong dan kosinus?",
+        "answer": "detik(A) = 1 / cos(A), dan cos(A) = 1 / detik(A). Jika Anda mengetahui salah satunya, Anda dapat menemukan yang lain dengan mengambil timbal baliknya."
+      },
+      {
+        "question": "Berapakah detik(45°)?",
+        "answer": "Pada segitiga <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90</a>, sisi miringnya adalah √2 kali kaki. Jadi detik(45°) = √2 ≈ 1,4142."
+      },
+      {
+        "question": "Apakah garis potong digunakan dalam aplikasi dunia nyata?",
+        "answer": "Ya. Garis potong muncul dalam rumus fisika, perhitungan teknik, dan kalkulus. Ini digunakan ketika Anda perlu menskalakan jarak horizontal ke panjang jalur sebenarnya di sepanjang tanjakan."
+      }
+    ]
+  },
+  "cosecant-ratio-calculator": {
+    "slug": "kalkulator rasio cosecant",
+    "h1": "Kalkulator Rasio Cosecant",
+    "headerSummary": "Hitung csc(A) dari sisi miring c dan sisi berlawanan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a, kebalikan dari sinus.",
+    "metaTitle": "Kalkulator Rasio Cosecant | Segitiga Kanan csc(A)",
+    "metaDescription": "Gunakan perbandingan kosekan <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini untuk mencari csc(A) pada segitiga siku-siku menggunakan sisi miring c dan sisi berlawanan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a beserta rumus, langkah, dan contohnya.",
+    "calculator_heading": "Hitung Rasio Cosecant",
+    "calculator_outputLabel": "csc(A)",
+    "calculator_fields": [
+      "Sisi miring c",
+      "Sisi berlawanan a"
+    ],
+    "introHeading": "Cara Kerja Kalkulator Rasio Cosecant ini",
+    "intro": [
+      "Cosecant adalah kebalikan dari sinus. Ini membagi sisi miring dengan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang berlawanan, sehingga menghasilkan rasio yang selalu lebih besar dari 1 dalam segitiga siku-siku. Anda mungkin tidak melihatnya sesering sinus atau kosinus dalam kursus dasar, tetapi ini penting dalam aplikasi matematika tingkat lanjut dan fisika tertentu.",
+      "<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Kalkulator</a> ini membuatnya sederhana. Masukkan sisi miring c dan kebalikannya <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a, dan ia akan segera mengembalikan csc(A). Tidak perlu menghitung sinus terlebih dahulu lalu membalik pecahannya."
+    ],
+    "calculatorNote": "Masukkan sisi miring c dan sisi berlawanan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a pada kolom di atas. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> menghitung csc(A) = c / a. Kedua nilai tersebut harus positif, dan c harus lebih besar dari a.",
+    "formula_display": "csc(A) = c / a",
+    "formula_paragraphs": [
+      "Kosekan dari <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A sama dengan sisi miring dibagi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> di depannya. Kebalikan dari sinus: csc(A) = 1 / sin(A).",
+      "Sisi miring selalu lebih panjang dari <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> di depannya, sehingga csc(A) selalu menghasilkan nilai lebih besar dari 1 untuk sudut lancip. Ketika <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A berkurang, sisi yang berlawanan menjadi lebih pendek dibandingkan sisi miring, dan kosekan meningkat."
+    ],
+    "diagramExplanation": [
+      "Untuk <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a berhadapan, sisi b berdekatan, dan sisi c adalah sisi miring.",
+      "Kosekan menggunakan sisi miring c sebagai pembilangnya dan sisi berlawanan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a sebagai penyebutnya. Sisi b yang berdekatan tidak berperan dalam rumus kosekan."
+    ],
+    "howToSteps": [
+      "Identifikasi <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A pada segitiga siku-siku Anda.",
+      "Temukan sisi miring c — <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> di seberang <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> kanan dan sisi terpanjang.",
+      "Temukan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a yang berlawanan — kaki tepat di seberang <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A.",
+      "Ketik c di kolom input pertama.",
+      "Ketik a di kolom input kedua.",
+      "Klik Hitung.",
+      "Hasilnya adalah csc(A), selalu lebih besar dari 1."
+    ],
+    "example_intro": "Segitiga siku-siku memiliki sisi miring c = 5 dan berhadapan dengan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a = 3.",
+    "example_steps": [
+      "csc(A) = c / a",
+      "csc(A) = 5/3",
+      "csc(A) ≈ 1,6667"
+    ],
+    "example_conclusion": "Kosekan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A kira-kira 1,6667. Verifikasi: sin(A) = 3 / 5 = 0,6, dan 1 / 0,6 ≈ 1,6667.",
+    "whatResultMeans": [
+      "Cosecant memberi tahu Anda berapa kali panjang sisi miring dibandingkan dengan sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> yang berlawanan. Kosekan sebesar 1,6667 berarti sisi miringnya lebih panjang sekitar 67% dibandingkan sisi sebaliknya.",
+      "Jika <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A besar (mendekati 90°), <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> sisi seberangnya hampir sepanjang sisi miring, sehingga csc(A) mendekati 1. Jika sudut A kecil, sisi seberangnya jauh lebih pendek, dan kosekan menjadi besar.",
+      "Anggap saja seperti ini: jika Anda mengetahui kebalikan dari <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> dan ingin mencari sisi miringnya, kalikan sisi yang berlawanan dengan csc(A). Itu memberi Anda c = a × csc(A)."
+    ],
+    "whenToUse_intro": "Raih rasio kosekan <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini ketika:",
+    "whenToUse_items": [
+      "Anda memerlukan kebalikan sinus tanpa menghitung sin(A) terlebih dahulu.",
+      "Suatu rumus secara khusus memerlukan kosekan, yang muncul dalam identitas trigonometri tertentu.",
+      "Anda menskalakan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang berlawanan hingga panjang sisi miring penuh.",
+      "Anda sedang mengerjakan soal fisika atau teknik yang melibatkan gaya, fungsi gelombang, atau rumus osilasi yang menggunakan kosekan."
+    ],
+    "commonMistakes_intro": "Waspadai kesalahan kosekan berikut:",
+    "commonMistakes_items": [
+      "Membingungkan kosekan dengan sinus. Sinusnya a/c (berlawanan dengan sisi miring). Cosecant adalah kebalikannya: c / a (sisi miring di atas kebalikannya).",
+      "Membingungkan kosekan dengan garis potong. Cosecant didasarkan pada kebalikan dari <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> (kebalikan dari sinus). Garis potong didasarkan pada sisi yang berdekatan (kebalikan dari kosinus). Mereka menggunakan kaki yang berbeda.",
+      "Mendapatkan hasil kurang dari 1. Jika jawaban Anda di bawah 1, Anda mungkin memasukkan nilai dalam urutan yang salah. csc(A) selalu lebih besar dari 1.",
+      "Menggunakan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang berdekatan, bukan sisi yang berlawanan. Cosecant memasangkan sisi miring dengan sisi yang berlawanan saja.",
+      "Mengharapkan kosekan dan kosinus dihubungkan berdasarkan nama. Meskipun memiliki awalan bersama, kosekan merupakan kebalikan dari sinus, bukan kosinus."
+    ],
+    "relatedLinks": [
+      "Kalkulator Rasio Trigonometri Segitiga Kanan",
+      "Kalkulator Rasio Sinus",
+      "Kalkulator Rasio Garis Potong",
+      "Kalkulator Rasio Kotangen"
+    ],
+    "faqs": [
+      {
+        "question": "Apa rumus kosekan pada segitiga siku-siku?",
+        "answer": "Bentuknya csc(A) = c / a, dengan c adalah sisi miring dan a adalah sisi berlawanan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>. Cosecant adalah kebalikan dari sinus."
+      },
+      {
+        "question": "Bagaimana hubungan kosekan dengan sinus?",
+        "answer": "csc(A) = 1 / dosa(A). Jika sin(A) = 0,6, maka csc(A) = 1 / 0,6 ≈ 1,6667."
+      },
+      {
+        "question": "Mengapa kosekan selalu lebih besar dari 1?",
+        "answer": "Karena sisi miring selalu lebih panjang dari <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> seberangnya pada segitiga siku-siku. Pecahan c/a selalu melebihi 1."
+      },
+      {
+        "question": "Apa itu csc(30°)?",
+        "answer": "Pada segitiga <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90</a>, sin(30°) = 0,5, jadi csc(30°) = 1 / 0,5 = 2. Sisi miringnya tepat dua kali sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang berlawanan."
+      },
+      {
+        "question": "Kapan saya akan menggunakan kosekan dan bukan sinus?",
+        "answer": "Gunakan kosekan jika rumus memerlukannya secara langsung, atau saat Anda ingin mencari sisi miring dari sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> yang berlawanan: c = a × csc(A). Ini menghemat langkah pembagian dengan sinus."
+      }
+    ]
+  }
+}

@@ -472,9 +472,9 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
     <>
       <section class="mx-auto w-full max-w-4xl section-shell prose-shell">
         <h2 set:html={localizedHub.h2[0]} />
-        <p>{hubIntroParagraphs[0] ?? defaultHubIntro[0]}</p>
+        <p set:html={hubIntroParagraphs[0] ?? defaultHubIntro[0]} />
         <h2 set:html={localizedHub.h2[1]} />
-        <p>{hubIntroParagraphs[1] ?? defaultHubIntro[1]}</p>
+        <p set:html={hubIntroParagraphs[1] ?? defaultHubIntro[1]} />
 
         <h2>{pick(groupedUi, 'chooseBestTitle', 'How To Choose The Best Right Triangle Calculator')}</h2>
         <ol>

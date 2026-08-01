@@ -110,16 +110,16 @@ const radiusRelationHeading =
     </ol>
   </nav>
 
-  <header class="mx-auto mb-8 w-full max-w-4xl">
+  <header class="relative flex flex-col items-center justify-center py-10 text-center sm:py-16">
+    <div class="pointer-events-none absolute -top-12 hidden h-64 w-full bg-gradient-to-b from-[#1a1c19]/5 to-transparent opacity-30 sm:block"></div>
     <p class="font-label text-xs uppercase tracking-widest text-primary">
       {radiusUi.badge}
     </p>
-    <h1 class="mt-3 break-words text-3xl font-bold leading-tight sm:text-4xl">
-      {page.h1}
+    <h1 class="mx-auto mt-3 max-w-4xl text-3xl font-bold tracking-tight text-[#5b4000] sm:drop-shadow-sm sm:text-5xl lg:text-5xl" style="font-family: Georgia, 'Times New Roman', serif;">
+      <span class="text-gradient-primary">{page.h1}</span>
     </h1>
-    <div class="mt-5 max-w-3xl space-y-3 text-base leading-7 text-on-surface-variant">
-      {page.intro.map((paragraph) => <p set:html={paragraph} />)}
-    </div>
+    <p class="mx-auto mt-4 hidden max-w-2xl px-4 text-sm leading-relaxed text-on-surface sm:block sm:text-base lg:text-lg opacity-90" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;" set:html={paragraph} />
+    <p class="mx-auto mt-3 max-w-xs text-xs tracking-[0.01em] text-on-surface sm:hidden opacity-90" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;" set:html={paragraph} />
   </header>
 
   <section class="mx-auto mb-8 w-full max-w-4xl section-shell prose-shell">

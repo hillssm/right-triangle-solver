@@ -455,53 +455,7 @@ export const GROUPED_PAGE_SLUGS = [
   ...RIGHT_TRIANGLE_GROUPED_PAGES.map((page) => page.slug)
 ];
 
-export const LEGACY_FORMULA_REDIRECTS: Record<string, string> = {
-  'pythagorean-theorem': '/right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-calculator/',
-  'leg-from-hypotenuse-and-other-leg': '/right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-calculator/',
-  'other-leg-from-hypotenuse-and-leg': '/right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-calculator/',
-  '<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-from-legs': '/right-triangle-area-calculator/',
-  '<a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>': '/right-triangle-<a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a>-calculator/',
-  '<a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a>': '/right-triangle-<a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a>-calculator/',
-  'sine-ratio': '/right-triangle-trig-ratios-calculator/',
-  'cosine-ratio': '/right-triangle-trig-ratios-calculator/',
-  'tangent-ratio': '/right-triangle-trig-ratios-calculator/',
-  '<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-from-sine': '/right-triangle-angle-from-sine-calculator/',
-  '<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-from-cosine': '/right-triangle-angle-from-cosine-calculator/',
-  '<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-from-tangent': '/right-triangle-angle-from-tangent-calculator/',
-  '<a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>-to-hypotenuse': '/right-triangle-altitude-calculator/',
-  '<a href="/right-triangle-projection-calculator/" class="text-primary hover:underline">projection</a>-of-a-on-hypotenuse': '/right-triangle-projection-calculator/',
-  '<a href="/right-triangle-projection-calculator/" class="text-primary hover:underline">projection</a>-of-b-on-hypotenuse': '/right-triangle-projection-calculator/',
-  '<a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">inradius</a>': '/right-triangle-<a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a>-calculator/',
-  '<a href="/right-triangle-circumradius-calculator/" class="text-primary hover:underline">circumradius</a>': '/right-triangle-<a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a>-calculator/',
-  'cotangent-exact': '/right-triangle-trig-ratios-calculator/',
-  'secant-exact': '/right-triangle-trig-ratios-calculator/',
-  'cosecant-exact': '/right-triangle-trig-ratios-calculator/',
-  'a-c-sin': '/right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-from-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-calculator/',
-  'b-c-cos': '/right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-from-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-calculator/',
-  'a-b-tan': '/right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-from-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-calculator/',
-  'b-a-tan': '/right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-from-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-calculator/',
-  '<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-sum-exact': '/right-triangle-missing-angle-calculator/',
-  '<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-b-exact': '/right-triangle-missing-angle-calculator/',
-  '<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-sin-a': '/right-triangle-area-calculator/',
-  '<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-sin-b': '/right-triangle-area-calculator/',
-  '<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-rs': '/right-triangle-area-calculator/',
-  'alt-rel-h': '/right-triangle-<a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>-calculator/',
-  '<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-ch': '/right-triangle-area-calculator/',
-  'h-sq-pq': '/right-triangle-<a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>-calculator/',
-  'a-sq-cp': '/right-triangle-<a href="/right-triangle-projection-calculator/" class="text-primary hover:underline">projection</a>-calculator/',
-  'b-sq-cq': '/right-triangle-<a href="/right-triangle-projection-calculator/" class="text-primary hover:underline">projection</a>-calculator/',
-  'pq-c': '/right-triangle-<a href="/right-triangle-projection-calculator/" class="text-primary hover:underline">projection</a>-calculator/',
-  '<a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a>-r': '/right-triangle-radius-calculator/',
-  'sin2-cos2': '/right-triangle-trig-ratios-calculator/',
-  'tan-sin-cos': '/right-triangle-trig-ratios-calculator/',
-  'c-a-rt2': '/<a href="/special-right-triangle-calculator/" class="text-primary hover:underline">special</a>-right-triangle-calculator/',
-  'a-c-rt2': '/<a href="/special-right-triangle-calculator/" class="text-primary hover:underline">special</a>-right-triangle-calculator/',
-  'long-a-rt3': '/<a href="/special-right-triangle-calculator/" class="text-primary hover:underline">special</a>-right-triangle-calculator/',
-  'c-2a': '/<a href="/special-right-triangle-calculator/" class="text-primary hover:underline">special</a>-right-triangle-calculator/',
-  '<a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a>-R-cap': '/right-triangle-radius-calculator/'
-};
-
 export function getLegacyRedirectUrlBySlug(slug: string): string | undefined {
-  return LEGACY_FORMULA_REDIRECTS[slug];
+  return undefined;
 }
 

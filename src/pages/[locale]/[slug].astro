@@ -13,9 +13,7 @@ import {
 } from 'src/data/focusedTrigRatioCalculatorPages';
 import {
   FOCUSED_ANGLE_CALCULATOR_PAGE_SLUGS,
-  FOCUSED_ANGLE_LEGACY_REDIRECT_SLUGS,
-  getFocusedAngleCalculatorPage,
-  getFocusedAngleLegacyRedirect
+  getFocusedAngleCalculatorPage
 } from 'src/data/focusedAngleCalculatorPages';
 import {
   FOCUSED_ALTITUDE_CALCULATOR_PAGE_SLUGS,
@@ -48,7 +46,6 @@ import FocusedRadiusCalculatorPage from 'theme/templates/FocusedRadiusCalculator
 import FocusedSpecialTriangleCalculatorPage from 'theme/templates/FocusedSpecialTriangleCalculatorPage.astro';
 import FocusedTriplesCalculatorPage from 'theme/templates/FocusedTriplesCalculatorPage.astro';
 import GroupedCalculatorPage from 'theme/templates/GroupedCalculatorPage.astro';
-import LegacyRedirectPage from 'theme/templates/LegacyRedirectPage.astro';
 import {
   getLocaleFromParams,
   getLocaleStaticPaths,
@@ -67,8 +64,7 @@ export function getStaticPaths() {
       ...FOCUSED_PROJECTION_CALCULATOR_PAGE_SLUGS,
       ...FOCUSED_RADIUS_CALCULATOR_PAGE_SLUGS,
       ...FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_PAGE_SLUGS,
-      ...FOCUSED_TRIPLES_CALCULATOR_PAGE_SLUGS,
-      ...FOCUSED_ANGLE_LEGACY_REDIRECT_SLUGS
+      ...FOCUSED_TRIPLES_CALCULATOR_PAGE_SLUGS
     ].map((slug) => ({
       params: { ...item.params, slug }
     }))
@@ -86,15 +82,9 @@ const projectionPage = getFocusedProjectionCalculatorPage(slug, locale);
 const radiusPage = getFocusedRadiusCalculatorPage(slug);
 const specialTrianglePage = getFocusedSpecialTriangleCalculatorPage(slug, locale);
 const triplesPage = getFocusedTriplesCalculatorPage(slug, locale);
-const legacyRedirectUrl = getFocusedAngleLegacyRedirect(slug);
-const localizedLegacyRedirectUrl = legacyRedirectUrl
-  ? localizePath(locale, legacyRedirectUrl)
-  : undefined;
 ---
 {
-  localizedLegacyRedirectUrl ? (
-    <LegacyRedirectPage destination={localizedLegacyRedirectUrl} locale={locale} />
-  ) : focusedPage ? (
+  focusedPage ? (
     <FocusedSideCalculatorPage page={focusedPage} locale={locale} />
   ) : measurementPage ? (
     <FocusedMeasurementCalculatorPage page={measurementPage} locale={locale} />

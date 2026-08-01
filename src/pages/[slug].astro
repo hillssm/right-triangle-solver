@@ -1,9 +1,7 @@
 ---
 import {
   FOCUSED_ANGLE_CALCULATOR_PAGE_SLUGS,
-  FOCUSED_ANGLE_LEGACY_REDIRECT_SLUGS,
-  getFocusedAngleCalculatorPage,
-  getFocusedAngleLegacyRedirect
+  getFocusedAngleCalculatorPage
 } from 'src/data/focusedAngleCalculatorPages';
 import {
   FOCUSED_RADIUS_CALCULATOR_PAGE_SLUGS,
@@ -49,15 +47,13 @@ import FocusedAltitudeCalculatorPage from 'theme/templates/FocusedAltitudeCalcul
 import FocusedProjectionCalculatorPage from 'theme/templates/FocusedProjectionCalculatorPage.astro';
 import { DEFAULT_LOCALE } from 'theme/i18n/locales';
 import GroupedCalculatorPage from 'theme/templates/GroupedCalculatorPage.astro';
-import LegacyRedirectPage from 'theme/templates/LegacyRedirectPage.astro';
 
 export function getStaticPaths() {
   return [
     ...GROUPED_PAGE_SLUGS,
     ...FOCUSED_RADIUS_CALCULATOR_PAGE_SLUGS,
     ...FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_PAGE_SLUGS,
-    ...FOCUSED_TRIPLES_CALCULATOR_PAGE_SLUGS,
-    ...FOCUSED_ANGLE_LEGACY_REDIRECT_SLUGS
+    ...FOCUSED_TRIPLES_CALCULATOR_PAGE_SLUGS
   ].map((slug) => ({ params: { slug } }));
 }
 
@@ -65,7 +61,6 @@ const { slug } = Astro.params;
 const focusedRadiusPage = getFocusedRadiusCalculatorPage(slug ?? '');
 const focusedSpecialTrianglePage = getFocusedSpecialTriangleCalculatorPage(slug ?? '');
 const focusedTriplesPage = getFocusedTriplesCalculatorPage(slug ?? '');
-const legacyRedirectUrl = getFocusedAngleLegacyRedirect(slug ?? '');
 ---
 {
   focusedTriplesPage ? (
@@ -74,8 +69,6 @@ const legacyRedirectUrl = getFocusedAngleLegacyRedirect(slug ?? '');
     <FocusedRadiusCalculatorPage page={focusedRadiusPage} locale={DEFAULT_LOCALE} />
   ) : focusedSpecialTrianglePage ? (
     <FocusedSpecialTriangleCalculatorPage page={focusedSpecialTrianglePage} locale={DEFAULT_LOCALE} />
-  ) : legacyRedirectUrl ? (
-    <LegacyRedirectPage destination={legacyRedirectUrl} locale={DEFAULT_LOCALE} />
   ) : (
     <GroupedCalculatorPage locale={DEFAULT_LOCALE} slug={slug ?? ''} />
   )

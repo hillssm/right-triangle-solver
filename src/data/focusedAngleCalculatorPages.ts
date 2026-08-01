@@ -708,20 +708,10 @@ export const FOCUSED_ANGLE_CALCULATOR_PAGES: FocusedAngleCalculatorPage[] = [
 export const FOCUSED_ANGLE_CALCULATOR_PAGE_SLUGS =
   FOCUSED_ANGLE_CALCULATOR_PAGES.map((page) => page.slug);
 
-export const FOCUSED_ANGLE_LEGACY_REDIRECTS: Record<string, string> = {
-  'angle-from-sine': '/right-triangle-angle-from-sine-calculator/',
-  'angle-from-cosine': '/right-triangle-angle-from-cosine-calculator/',
-  'angle-from-tangent': '/right-triangle-angle-from-tangent-calculator/',
-  'angle-sum-exact': '/right-triangle-missing-angle-calculator/',
-  'angle-b-exact': '/right-triangle-missing-angle-calculator/'
-};
-
-export const FOCUSED_ANGLE_LEGACY_REDIRECT_SLUGS = Object.keys(
-  FOCUSED_ANGLE_LEGACY_REDIRECTS
-);
+export const FOCUSED_ANGLE_LEGACY_REDIRECT_SLUGS: string[] = [];
 
 export function getFocusedAngleLegacyRedirect(slug: string): string | undefined {
-  return FOCUSED_ANGLE_LEGACY_REDIRECTS[slug];
+  return undefined;
 }
 
 export function getFocusedAngleCalculatorPage(

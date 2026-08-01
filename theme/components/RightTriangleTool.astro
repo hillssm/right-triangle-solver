@@ -74,7 +74,7 @@ const l = {
   solve: labels.solve ?? 'Solve Triangle',
   reset: labels.reset ?? 'Reset',
   copy: labels.copy ?? 'Copy Results',
-  statusDefault: labels.statusDefault ?? 'Enter any 2 valid right-triangle values.',
+  statusDefault: '',
   statusDescription: labels.statusDescription ?? 'Solve sides, angles, and derived measures. View formulas and steps.',
   showFormulas: labels.showFormulas ?? 'Show Formulas Used',
   area: labels.area ?? 'Area',
@@ -162,7 +162,7 @@ const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
   <div class="grid gap-6 sm:grid-cols-[1.1fr_0.9fr] lg:gap-8">
     <div>
       <h2 id="tool-heading" class="text-2xl sm:text-3xl">{heading}</h2>
-      <p class="mt-4 font-label text-[11px] font-semibold uppercase tracking-[0.15em] text-primary/90">{l.statusDefault}</p>
+      <p class="mt-4 font-label text-[11px] font-semibold uppercase tracking-[0.15em] text-primary/90">{labels.statusDefault ?? 'Enter any 2 valid right-triangle values.'}</p>
 
       <form class="mt-6 grid gap-4" data-triangle-form novalidate>
         <div class="grid gap-4 sm:grid-cols-2">

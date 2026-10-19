@@ -414,16 +414,16 @@
       "special": "Особые треугольники"
     },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
-      "blog": "Blog",
-      "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "home": "Главная",
+      "practice": "Практика",
+      "formulas": "Формулы",
+      "aboutUs": "О нас",
+      "contactUs": "Контакты",
+      "blog": "Блог",
+      "faq": "Вопросы",
+      "terms": "Условия",
+      "privacy": "Конфиденциальность",
+      "sitemap": "Карта сайта"
     },
     "common": {
       "readMore": "Читать статью",
@@ -548,16 +548,16 @@
       "special": "Triangles Spéciaux"
     },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
+      "home": "Accueil",
+      "practice": "Pratique",
+      "formulas": "Formules",
+      "aboutUs": "À propos",
+      "contactUs": "Contact",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "terms": "Conditions",
+      "privacy": "Confidentialité",
+      "sitemap": "Plan du site"
     },
     "common": {
       "readMore": "Lire l'article",
@@ -682,15 +682,15 @@
       "special": "Besondere Dreiecke"
     },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
+      "home": "Start",
+      "practice": "Übung",
+      "formulas": "Formeln",
+      "aboutUs": "Über uns",
+      "contactUs": "Kontakt",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
+      "terms": "Bedingungen",
+      "privacy": "Datenschutz",
       "sitemap": "Sitemap"
     },
     "common": {
@@ -817,15 +817,15 @@
     },
     "nav": {
       "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
+      "practice": "Pratica",
+      "formulas": "Formule",
+      "aboutUs": "Chi siamo",
+      "contactUs": "Contatti",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Terms",
+      "terms": "Termini",
       "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "sitemap": "Mappa del sito"
     },
     "common": {
       "readMore": "Leggi articolo",
@@ -950,16 +950,16 @@
       "special": "Triângulos Especiais"
     },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
+      "home": "Início",
+      "practice": "Prática",
+      "formulas": "Fórmulas",
+      "aboutUs": "Sobre nós",
+      "contactUs": "Contato",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "terms": "Termos",
+      "privacy": "Privacidade",
+      "sitemap": "Mapa do site"
     },
     "common": {
       "readMore": "Ler artigo",
@@ -1084,16 +1084,16 @@
       "special": "বিশেষ ত্রিভুজ"
     },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
-      "blog": "Blog",
-      "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "home": "হোম",
+      "practice": "অনুশীলন",
+      "formulas": "সূত্র",
+      "aboutUs": "আমাদের সম্পর্কে",
+      "contactUs": "যোগাযোগ",
+      "blog": "ব্লগ",
+      "faq": "জিজ্ঞাসা",
+      "terms": "শর্তাবলী",
+      "privacy": "গোপনীয়তা",
+      "sitemap": "সাইটম্যাপ"
     },
     "common": {
       "readMore": "নিবন্ধ পড়ুন",
@@ -1218,16 +1218,16 @@
       "special": "特別な三角形"
     },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
-      "blog": "Blog",
-      "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "home": "ホーム",
+      "practice": "練習",
+      "formulas": "公式",
+      "aboutUs": "私たちについて",
+      "contactUs": "お問い合わせ",
+      "blog": "ブログ",
+      "faq": "よくある質問",
+      "terms": "利用規約",
+      "privacy": "プライバシー",
+      "sitemap": "サイトマップ"
     },
     "common": {
       "readMore": "記事を読む",
@@ -1488,16 +1488,16 @@
       "special": "Segitiga Khas"
     },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
+      "home": "Laman Utama",
+      "practice": "Latihan",
+      "formulas": "Formula",
+      "aboutUs": "Tentang Kami",
+      "contactUs": "Hubungi",
       "blog": "Blog",
-      "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "faq": "Soalan Lazim",
+      "terms": "Terma",
+      "privacy": "Privasi",
+      "sitemap": "Peta Laman"
     },
     "common": {
       "readMore": "Baca artikel",
@@ -1622,16 +1622,16 @@
       "special": "Trójkąty specjalne"
     },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
+      "home": "Strona główna",
+      "practice": "Ćwiczenia",
+      "formulas": "Wzory",
+      "aboutUs": "O nas",
+      "contactUs": "Kontakt",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "terms": "Warunki",
+      "privacy": "Prywatność",
+      "sitemap": "Mapa strony"
     },
     "common": {
       "readMore": "Czytaj artykuł",
@@ -1756,16 +1756,16 @@
       "special": "Segitiga Khusus"
     },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
+      "home": "Beranda",
+      "practice": "Latihan",
+      "formulas": "Rumus",
+      "aboutUs": "Tentang Kami",
+      "contactUs": "Kontak",
       "blog": "Blog",
       "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "terms": "Syarat",
+      "privacy": "Privasi",
+      "sitemap": "Peta Situs"
     },
     "common": {
       "readMore": "Baca artikel",
@@ -1890,16 +1890,16 @@
       "special": "مثلثات خاصة"
     },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
-      "blog": "Blog",
-      "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "home": "الرئيسية",
+      "practice": "تدريب",
+      "formulas": "صيغ",
+      "aboutUs": "من نحن",
+      "contactUs": "اتصل بنا",
+      "blog": "مدونة",
+      "faq": "أسئلة شائعة",
+      "terms": "الشروط",
+      "privacy": "الخصوصية",
+      "sitemap": "خريطة الموقع"
     },
     "common": {
       "readMore": "اقرأ المقال",
@@ -2024,16 +2024,16 @@
       "special": "Специални триъгълници"
     },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
-      "blog": "Blog",
-      "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "home": "Начало",
+      "practice": "Практика",
+      "formulas": "Формули",
+      "aboutUs": "За нас",
+      "contactUs": "Контакти",
+      "blog": "Блог",
+      "faq": "ЧЗВ",
+      "terms": "Условия",
+      "privacy": "Поверителност",
+      "sitemap": "Карта на сайта"
     },
     "common": {
       "readMore": "Прочети статията",
@@ -2158,16 +2158,16 @@
       "special": "Özel Üçgenler"
     },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
+      "home": "Ana Sayfa",
+      "practice": "Alıştırma",
+      "formulas": "Formüller",
+      "aboutUs": "Hakkımızda",
+      "contactUs": "İletişim",
       "blog": "Blog",
-      "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "faq": "SSS",
+      "terms": "Koşullar",
+      "privacy": "Gizlilik",
+      "sitemap": "Site Haritası"
     },
     "common": {
       "readMore": "Makaleyi oku",
@@ -2292,16 +2292,16 @@
       "special": "Speciella trianglar"
     },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
-      "blog": "Blog",
+      "home": "Hem",
+      "practice": "Övning",
+      "formulas": "Formler",
+      "aboutUs": "Om oss",
+      "contactUs": "Kontakt",
+      "blog": "Blogg",
       "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "terms": "Villkor",
+      "privacy": "Integritet",
+      "sitemap": "Webbplatskarta"
     },
     "common": {
       "readMore": "Läs artikel",
@@ -2426,16 +2426,16 @@
       "special": "特殊三角形"
     },
     "nav": {
-      "home": "Home",
-      "practice": "Practice",
-      "formulas": "Formulas",
-      "aboutUs": "About Us",
-      "contactUs": "Contact Us",
-      "blog": "Blog",
-      "faq": "FAQ",
-      "terms": "Terms",
-      "privacy": "Privacy",
-      "sitemap": "Sitemap"
+      "home": "首页",
+      "practice": "练习",
+      "formulas": "公式",
+      "aboutUs": "关于我们",
+      "contactUs": "联系我们",
+      "blog": "博客",
+      "faq": "常见问题",
+      "terms": "条款",
+      "privacy": "隐私",
+      "sitemap": "网站地图"
     },
     "common": {
       "readMore": "阅读文章",

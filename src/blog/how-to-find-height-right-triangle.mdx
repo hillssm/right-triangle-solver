@@ -1,0 +1,333 @@
+---
+title: "How to Find the Height of a Right Triangle: Complete Guide"
+description: "Learn how to find the height (altitude) of a right triangle using legs, projections, area, or angles. Step-by-step methods with 20+ worked examples."
+image: "/images/blog/height-right-triangle-hero.svg"
+date: 2026-10-20
+author: "Math Expert"
+category: "Geometry"
+---
+
+import Faq from 'theme/components/Faq.astro';
+
+
+Every right triangle has three heights, but one of them is special: the altitude drawn from the right angle to the hypotenuse. Unlike the two legs (which are also heights of the triangle), this altitude sits inside the triangle and splits it into two smaller right triangles that are similar to the original.
+
+Students often find this altitude confusing because it is not one of the sides you start with. You have to calculate it from the other measurements. Depending on what you know, whether it is the two legs, the hypotenuse, the projections, or an angle, the method changes completely.
+
+In this guide, we will work through every method for finding the height of a right triangle, with fully solved examples for each one. Whether you are preparing for an exam, working on a construction layout, or checking homework, you will find the exact formula you need here.
+
+**After reading this guide, you will be able to:**
+- Define the altitude of a right triangle
+- Find the height from the two legs
+- Find the height from the hypotenuse projections
+- Find the height using area or angles
+- Solve problems step by step
+- Avoid the most common mistakes
+
+## Table of Contents
+1. [What Is the Height (Altitude) of a Right Triangle?](#what-is-the-height-altitude-of-a-right-triangle)
+2. [Why the Altitude Matters](#why-the-altitude-matters)
+3. [Altitude Formulas Explained](#altitude-formulas-explained)
+4. [Methods to Calculate the Height](#methods-to-calculate-the-height)
+5. [Worked Examples](#worked-examples)
+6. [Real-World Applications](#real-world-applications)
+7. [Common Mistakes](#common-mistakes)
+8. [Practice Problems](#practice-problems)
+9. [Frequently Asked Questions](#frequently-asked-questions)
+10. [Conclusion](#conclusion)
+
+---
+
+## What Is the Height (Altitude) of a Right Triangle?
+
+The altitude (also called the height) of a right triangle is the perpendicular segment drawn from the vertex of the right angle to the hypotenuse. It is usually labeled with the letter **h**. This segment meets the hypotenuse at exactly 90 degrees.
+
+### What Makes It Special
+The altitude does something remarkable: it divides the original right triangle into two smaller right triangles, and all three triangles are similar to each other. This similarity is the reason the projection formulas work.
+
+### The Two Projections
+Where the altitude meets the hypotenuse, it splits the hypotenuse **c** into two segments called projections, labeled **p** and **q**. By convention, **p** is the projection adjacent to leg **b**, and **q** is the projection adjacent to leg **a**. Together, p + q = c.
+
+### Comparison Table: Height vs Legs
+
+| Segment | Location | Defining Trait | Symbol |
+|---|---|---|---|
+| Altitude | From right angle to hypotenuse | Perpendicular to hypotenuse | h |
+| Leg a | Forms the right angle | One side of the 90° corner | a |
+| Leg b | Forms the right angle | One side of the 90° corner | b |
+| Projection p | Part of hypotenuse | Adjacent to leg b | p |
+| Projection q | Part of hypotenuse | Adjacent to leg a | q |
+
+> **Quick Tip:** The altitude is always strictly shorter than either leg. If your answer for h is longer than a leg, something went wrong.
+
+---
+
+## Why the Altitude Matters
+
+The altitude is not just a classroom exercise. It connects the sides, angles, area, and projections of a right triangle through a single value, which makes it a powerful checking tool.
+
+### It Links Everything Together
+If you know the altitude and one other measurement, you can often recover the entire triangle. Engineers use this property when only partial measurements are available on site.
+
+### It Verifies Your Work
+Because h can be computed several different ways, calculating it twice by two methods is one of the fastest ways to confirm a triangle solution is correct. If h = ab/c and h = √(pq) give the same number, your triangle is consistent.
+
+### It Appears in Area Problems
+The area of any triangle is (base × height) / 2. For a right triangle, using the hypotenuse as the base and the altitude as the height gives Area = (c × h) / 2, which rearranges into one of the altitude formulas.
+
+> **Formula Box:** h < a and h < b (always true for the altitude to the hypotenuse).
+
+---
+
+## Altitude Formulas Explained
+
+There are four main altitude formulas. Each one starts from different known values.
+
+### Meaning of Each Variable
+- **a, b:** the two legs forming the right angle.
+- **c:** the hypotenuse.
+- **h:** the altitude from the right angle to the hypotenuse.
+- **p, q:** the projections of the legs onto the hypotenuse (p + q = c).
+- **A, B:** the two acute angles.
+
+### Formula Summary Table
+
+| Known Values | Formula to Find Height |
+|---|---|
+| Legs a and b, hypotenuse c | h = (a × b) / c |
+| Projections p and q | h = √(p × q) |
+| Area and hypotenuse c | h = (2 × Area) / c |
+| Leg b and angle A | h = b × sin(A) |
+| Hypotenuse c and angle A | h = c × sin(A) × cos(A) |
+
+### When to Use Each One
+Use the legs formula when you know all three sides. Use the projection formula when working with segments of the hypotenuse. Use the area form when area is already known. Use the angle forms when trigonometry is in play.
+
+### When NOT to Use Them
+Do not mix projections from different triangles, and do not use these formulas on non-right triangles. The relation h² = p × q holds only when h is the altitude to the hypotenuse of a right triangle.
+
+---
+
+## Methods to Calculate the Height
+
+There are five practical methods, depending on what information you start with.
+
+### Method 1: From the Legs
+**When to use it:** You know legs a and b (and can find c).
+**How it works:** First find the hypotenuse with c = √(a² + b²), then apply h = (a × b) / c.
+**Step-by-step example:**
+Given a = 3, b = 4.
+1) c = √(9 + 16) = √25 = 5.
+2) h = (3 × 4) / 5 = 12 / 5 = 2.4.
+
+### Method 2: From the Projections
+**When to use it:** You know the projections p and q of the legs onto the hypotenuse.
+**How it works:** The altitude is the geometric mean of the projections: h = √(p × q).
+**Step-by-step example:**
+Given p = 4, q = 9.
+1) p × q = 36.
+2) h = √36 = 6.
+
+### Method 3: From the Area
+**When to use it:** You know the area and the hypotenuse.
+**How it works:** Since Area = (c × h) / 2, rearrange to h = (2 × Area) / c.
+**Step-by-step example:**
+Given Area = 30, c = 13.
+1) 2 × 30 = 60.
+2) h = 60 / 13 ≈ 4.615.
+
+### Method 4: Using Angles
+**When to use it:** You know one acute angle and one side.
+**How it works:** h = b × sin(A), or equivalently h = c × sin(A) × cos(A).
+**Step-by-step example:**
+Given b = 10, A = 30°.
+1) sin(30°) = 0.5.
+2) h = 10 × 0.5 = 5.
+
+### Method 5: Special Right Triangles
+**When to use it:** Your triangle is exactly 30-60-90 or 45-45-90.
+**How it works:** Use the fixed side ratios, then apply h = (a × b) / c.
+- 30-60-90 with short leg s: legs are s and s√3, hypotenuse 2s.
+- 45-45-90 with leg s: hypotenuse is s√2, and h = s / √2 = s√2 / 2.
+
+---
+
+## Worked Examples
+
+Here are 20 fully solved examples covering every altitude method.
+
+### From the Legs (h = ab/c)
+1. **Given:** a=3, b=4, c=5. **Solve:** h = (3 × 4) / 5 = 12 / 5 = 2.4.
+2. **Given:** a=6, b=8, c=10. **Solve:** h = (6 × 8) / 10 = 48 / 10 = 4.8.
+3. **Given:** a=5, b=12, c=13. **Solve:** h = (5 × 12) / 13 = 60 / 13 ≈ 4.615.
+4. **Given:** a=8, b=15, c=17. **Solve:** h = (8 × 15) / 17 = 120 / 17 ≈ 7.059.
+5. **Given:** a=7, b=24, c=25. **Solve:** h = (7 × 24) / 25 = 168 / 25 = 6.72.
+6. **Given:** a=9, b=12, c=15. **Solve:** h = (9 × 12) / 15 = 108 / 15 = 7.2.
+7. **Given:** a=20, b=21, c=29. **Solve:** h = (20 × 21) / 29 = 420 / 29 ≈ 14.483.
+8. **Given:** a=12, b=16, c=20. **Solve:** h = (12 × 16) / 20 = 192 / 20 = 9.6.
+
+### From the Projections (h = √(pq))
+9. **Given:** p=4, q=9. **Solve:** h = √(4 × 9) = √36 = 6.
+10. **Given:** p=2, q=8. **Solve:** h = √(2 × 8) = √16 = 4.
+11. **Given:** p=5, q=20. **Solve:** h = √(5 × 20) = √100 = 10.
+12. **Given:** p=1, q=4. **Solve:** h = √(1 × 4) = √4 = 2.
+
+### From the Area (h = 2A/c)
+13. **Given:** Area=30, c=13. **Solve:** h = (2 × 30) / 13 = 60 / 13 ≈ 4.615.
+14. **Given:** Area=6, c=5. **Solve:** h = (2 × 6) / 5 = 12 / 5 = 2.4.
+
+### Using Angles
+15. **Given:** b=10, A=30°. **Solve:** h = 10 × sin(30°) = 10 × 0.5 = 5.
+16. **Given:** a=10, B=30°. **Solve:** h = 10 × sin(30°) = 10 × 0.5 = 5.
+17. **Given:** c=10, A=30°. **Solve:** h = 10 × sin(30°) × cos(30°) = 10 × 0.5 × 0.8660 ≈ 4.330.
+18. **Given:** c=13, angle A opposite leg a=5. **Solve:** sin(A) = 5/13, cos(A) = 12/13, so h = 13 × (5/13) × (12/13) = 60/13 ≈ 4.615.
+
+### Real-World Examples
+19. **Roof check:** A roof forms a right triangle with legs 8 ft and 6 ft. The altitude from the ridge to the base beam? **Solve:** c = 10 ft, h = (8 × 6) / 10 = 4.8 ft.
+20. **Ramp design:** A ramp's shadow projections on the ground measure p=9 m and q=16 m. The vertical drop from the hinge point? **Solve:** h = √(9 × 16) = √144 = 12 m.
+
+---
+
+## Real-World Applications
+
+The altitude shows up wherever perpendicular measurements matter.
+
+### Construction and Carpentry
+When framing a roof, the altitude from the ridge to the ceiling joist tells the builder the exact vertical depth of the attic space. Carpenters compute it from the rafter triangle legs rather than measuring in place.
+
+### Engineering and Surveying
+Surveyors use the projection relationship when they can measure along the ground (the hypotenuse) but cannot reach the elevated point. The altitude gives the vertical component from horizontal distance segments.
+
+### Navigation and Aviation
+When an aircraft descends along a glide path, the altitude of the descent triangle relates the along-track distance to the height lost. Controllers use the same right-triangle geometry.
+
+---
+
+## Common Mistakes
+
+Avoid these mistakes when finding the height of a right triangle:
+
+1. **Using a leg as the altitude:** The legs are heights too, but the altitude formulas here give the height to the hypotenuse, which is a different, shorter segment.
+2. **Forgetting p + q = c:** The projections must add up to the hypotenuse. If they do not, the inputs are inconsistent.
+3. **Applying h² = pq to non-right triangles:** The geometric mean relationship holds only for the altitude to the hypotenuse of a right triangle.
+4. **Mixing up p and q:** Swapping them does not change h (multiplication commutes), but it scrambles the leg relationships a² = cq and b² = cp.
+5. **Skipping the hypotenuse:** In h = ab/c, students sometimes divide by a leg instead of the hypotenuse.
+6. **Calculator in radians mode:** When using sin or cos with degrees, the calculator must be in degree mode.
+7. **Rounding too early:** Keep full precision through intermediate steps and round only the final answer.
+8. **Expecting h longer than a leg:** The altitude to the hypotenuse is always shorter than either leg. A longer result means an error.
+
+---
+
+## Practice Problems
+
+**Beginner (From Legs)**
+1. Legs 3 and 4, hypotenuse 5. Find h. (Ans: 2.4)
+2. Legs 6 and 8, hypotenuse 10. Find h. (Ans: 4.8)
+3. Legs 5 and 12, hypotenuse 13. Find h. (Ans: ≈ 4.615)
+4. Legs 9 and 12, hypotenuse 15. Find h. (Ans: 7.2)
+5. Legs 8 and 15, hypotenuse 17. Find h. (Ans: ≈ 7.059)
+
+**Intermediate (Projections and Area)**
+6. Projections 4 and 9. Find h. (Ans: 6)
+7. Projections 2 and 18. Find h. (Ans: 6)
+8. Area 24, hypotenuse 10. Find h. (Ans: 4.8)
+9. Projections 7 and 7. Find h. (Ans: 7)
+10. Area 54, hypotenuse 15. Find h. (Ans: 7.2)
+
+**Advanced (Angles and Word Problems)**
+11. Leg b = 12, angle A = 30°. Find h. (Ans: 6)
+12. Hypotenuse 20, angle A = 45°. Find h. (Ans: 20 × 0.7071 × 0.7071 = 10)
+13. A ladder triangle has legs 9 ft and 12 ft. Find the altitude to the ladder. (Ans: 7.2 ft)
+14. Projections 3 and 12. A builder needs the vertical brace length. Find h. (Ans: 6)
+15. In a 30-60-90 triangle with short leg 5, find the altitude to the hypotenuse. (Ans: legs 5 and 5√3 ≈ 8.660, c = 10, h = (5 × 8.660)/10 ≈ 4.330)
+
+---
+
+<Faq heading="Frequently Asked Questions" description="We have compiled the top questions people ask about this topic." items={[
+  {
+    "question": "What is the altitude of a right triangle?",
+    "answer": "The altitude is the perpendicular segment drawn from the right-angle vertex to the hypotenuse. It is usually labeled h."
+  },
+  {
+    "question": "How do you find the height if you know the two legs?",
+    "answer": "First find the hypotenuse with c = √(a² + b²), then apply h = (a × b) / c."
+  },
+  {
+    "question": "Can you find the altitude without knowing the hypotenuse?",
+    "answer": "Yes. If you know the projections p and q, use h = √(p × q). Otherwise find c first with the Pythagorean theorem."
+  },
+  {
+    "question": "Is the altitude always shorter than the legs?",
+    "answer": "Yes. The altitude to the hypotenuse is always strictly shorter than either leg of the same triangle."
+  },
+  {
+    "question": "What is the relationship between altitude and projections?",
+    "answer": "The altitude is the geometric mean of the two projections: h² = p × q. This holds only in right triangles."
+  },
+  {
+    "question": "How do you find height using an angle?",
+    "answer": "Use h = b × sin(A), where b is the known leg and A is the known acute angle. Equivalently, h = c × sin(A) × cos(A)."
+  },
+  {
+    "question": "What is the difference between a leg and the altitude?",
+    "answer": "The legs form the right angle itself. The altitude drops from the right angle to the hypotenuse and is shorter than both legs."
+  },
+  {
+    "question": "If I only know the area and hypotenuse, can I find the height?",
+    "answer": "Yes. Rearrange Area = (c × h) / 2 to get h = (2 × Area) / c."
+  },
+  {
+    "question": "Do the projection formulas work for non-right triangles?",
+    "answer": "No. The relations h² = pq, a² = cq, and b² = cp are specific to right triangles and their altitude to the hypotenuse."
+  },
+  {
+    "question": "Which altitude calculator should I use on this site?",
+    "answer": "Use the [Right Triangle Altitude Calculator](/right-triangle-altitude-calculator/). It includes strict validation that rejects impossible inputs."
+  }
+]} />
+
+
+## Related Right Triangle Calculators
+
+To make solving right triangles as easy as possible, we have built a suite of free, highly accurate calculators tailored to every specific problem type. Check them out below:
+
+### Altitude & Height
+- [Right Triangle Altitude Calculator](/right-triangle-altitude-calculator/)
+- [Ultimate Right Triangle Solver](/right-triangle-calculator/)
+- [Pythagorean Theorem Calculator](/pythagorean-theorem-calculator/)
+
+### General Triangles & Sides
+- [Missing Side Calculator](/right-triangle-side-calculator/)
+- [Missing Leg Calculator (from Hypotenuse & Leg)](/missing-leg-from-c-and-a-calculator/)
+- [Hypotenuse Calculator](/right-triangle-hypotenuse-from-projections-calculator/)
+- [Pythagorean Triples Calculator](/pythagorean-triples-calculator/)
+- [Similar Right Triangles Calculator](/similar-right-triangles-calculator/)
+
+### Angles & Trigonometry
+- [Missing Angle Calculator](/right-triangle-missing-angle-calculator/)
+- [Sine Ratio Calculator](/sine-ratio-calculator/)
+- [Cosine Ratio Calculator](/cosine-ratio-calculator/)
+- [Tangent Ratio Calculator](/tangent-ratio-calculator/)
+- [Angle from Sine Calculator](/right-triangle-angle-from-sine-calculator/)
+- [Angle from Cosine Calculator](/right-triangle-angle-from-cosine-calculator/)
+- [Angle from Tangent Calculator](/right-triangle-angle-from-tangent-calculator/)
+
+### Area, Perimeter & Advanced Properties
+- [Right Triangle Area Calculator](/right-triangle-area-calculator/)
+- [Right Triangle Perimeter Calculator](/right-triangle-perimeter-calculator/)
+- [Right Triangle Semiperimeter Calculator](/right-triangle-semiperimeter-calculator/)
+- [Right Triangle Inradius Calculator](/right-triangle-inradius-calculator/)
+- [Right Triangle Circumradius Calculator](/right-triangle-circumradius-calculator/)
+
+### Special Right Triangles
+- [45-45-90 Triangle Calculator](/45-45-90-triangle-calculator/)
+- [30-60-90 Triangle Calculator](/30-60-90-triangle-calculator/)
+- [3-4-5 Triangle Calculator](/3-4-5-triangle-calculator/)
+- [5-12-13 Triangle Calculator](/5-12-13-triangle-calculator/)
+
+
+## Conclusion
+
+The height of a right triangle is one value with many doors. From the legs, use h = (a × b) / c. From the projections, use h = √(p × q). From area or angles, rearrange the relationship you already know. Each method cross-checks the others, so computing the altitude twice by two different routes is one of the simplest ways to verify a full triangle solution.
+
+Pick the method that matches the measurements you have, keep full precision until the last step, and let the [altitude calculator](/right-triangle-altitude-calculator/) double-check your work.

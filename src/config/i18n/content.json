@@ -647,7 +647,7 @@
           "Solve Any Right Triangle",
           "All-in-One Triangle Solver"
         ],
-        "purpose": "Hub page linking to all grouped calculator pages."
+        "purpose": "Enter any two values of a right triangle and solve for every missing side and angle, or jump to a focused calculator."
       },
       "pages": {
         "right-triangle-side-calculator": {

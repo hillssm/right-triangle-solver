@@ -280,16 +280,16 @@
       "special": "Triángulos Especiales"
     },
     "nav": {
-      "home": "홈",
-      "practice": "연습",
-      "formulas": "공식",
-      "aboutUs": "소개",
-      "contactUs": "문의",
-      "blog": "블로그",
-      "faq": "자주 묻는 질문",
-      "terms": "이용 약관",
-      "privacy": "개인정보 보호",
-      "sitemap": "사이트맵"
+      "home": "Inicio",
+      "practice": "Práctica",
+      "formulas": "Fórmulas",
+      "aboutUs": "Nosotros",
+      "contactUs": "Contacto",
+      "blog": "Blog",
+      "faq": "Preguntas frecuentes",
+      "terms": "Términos",
+      "privacy": "Privacidad",
+      "sitemap": "Mapa del sitio"
     },
     "common": {
       "readMore": "Leer artículo",

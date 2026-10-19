@@ -102,7 +102,7 @@
           "angleItems": [
             "sin(A) = a / c, cos(A) = b / c, tan(A) = a / b.",
             "Inverse trig for angle finding: A = sin⁻¹(a/c), cos⁻¹(b/c), tan⁻¹(a/b).",
-            "Complement relation for the second angle: B = 90° - A."
+            "Complement relation for the second angle: B = 90° − A."
           ],
           "geometryTitle": "Measurement and geometry formulas",
           "geometryItems": [
@@ -216,16 +216,6 @@
               "href": "/faqs/",
               "label": "FAQs",
               "description": "for common calculation and usage questions."
-            },
-            {
-              "href": "/library/",
-              "label": "Library",
-              "description": "for concept explanations and formula references."
-            },
-            {
-              "href": "/practice/",
-              "label": "Practice",
-              "description": "for drill-based improvement."
             },
             {
               "href": "/about-us/",
@@ -712,7 +702,7 @@
             "Calculate All Trigonometric Ratios",
             "Right Triangle Trigonometry Formulas"
           ],
-          "intent": "Calculate trig ratios.",
+          "intent": "Calculate sine, cosine, tangent, secant, cosecant and cotangent for any right triangle angle with step-by-step solutions.",
           "content": {
             "intro": "Use this calculator to get sine, cosine, tangent, secant, cosecant, and cotangent from right triangle side values. It is designed for quick ratio lookup and verification.",
             "method": "Each ratio is computed from opposite, adjacent, and hypotenuse relationships around a selected acute angle. Reciprocal ratios are included so you can move between direct and inverse forms easily.",
@@ -735,7 +725,7 @@
             "Find Angle A or Angle B",
             "Using Sine, Cosine and Tangent"
           ],
-          "intent": "Find triangle angles.",
+          "intent": "Find acute angles A and B of a right triangle using inverse sine, cosine and tangent with step-by-step solutions.",
           "content": {
             "intro": "This page helps you find acute angles in a right triangle from side ratios or from the angle-sum rule. It is ideal when dimensions are known but direction or pitch is not.",
             "method": "Inverse trigonometric functions (arcsin, arccos, arctan) return angle A from side relationships, while angle-sum modes convert between A and B with A + B = 90 degrees.",
@@ -781,7 +771,7 @@
             "Calculate Area Using Different Methods",
             "Area Formulas for Right Triangles"
           ],
-          "intent": "Find area using any method.",
+          "intent": "Calculate the area of a right triangle from legs, hypotenuse, angles, inradius or altitude, with step-by-step solutions.",
           "content": {
             "intro": "This page lets you calculate right triangle area using whichever inputs you already have. It supports area from legs, angle-based area forms, inradius-semiperimeter, and altitude-based formulas.",
             "method": "Multiple area identities are available so you can solve from different known values without rewriting the triangle manually. This is useful when data comes from mixed sources.",
@@ -804,7 +794,7 @@
             "Find Altitude from Different Inputs",
             "Altitude Formulas and Relations"
           ],
-          "intent": "Find triangle height.",
+          "intent": "Find the altitude from the right angle to the hypotenuse using legs, projections or geometric relations, step by step.",
           "content": {
             "intro": "This calculator focuses on the altitude drawn from the right angle to the hypotenuse. It is useful when you need the internal height rather than an outer side length.",
             "method": "You can solve altitude from sides using h = ab/c or from projection segments using h = sqrt(pq). Both are implemented as separate modes for different input scenarios.",
@@ -850,7 +840,7 @@
             "Calculate Inradius and Circumradius",
             "Circle Relations in Right Triangles"
           ],
-          "intent": "Find triangle radii.",
+          "intent": "Calculate the inradius and circumradius of a right triangle from its sides, with formulas and step-by-step solutions.",
           "content": {
             "intro": "This page calculates inradius and circumradius values for right triangles. It is useful for circle-based geometry tasks and clearance or fit calculations.",
             "method": "Inradius is solved from side relations (r = (a + b - c)/2), while circumradius follows directly from the right-triangle rule R = c/2.",
@@ -1218,7 +1208,7 @@
           "angleItems": [
             "पाप(ए) = ए / सी, कॉस(ए) = बी / सी, टैन(ए) = ए / बी।",
             "कोण ज्ञात करने के लिए व्युत्क्रम त्रिकोणमिति: A = syn⁻¹(a/c), cos⁻¹(b/c), tan⁻¹(a/b)।",
-            "दूसरे कोण के लिए पूरक संबंध: B = 90° - A."
+            "दूसरे कोण के लिए पूरक संबंध: B = 90° − A."
           ],
           "geometryTitle": "मापन और ज्यामिति सूत्र",
           "geometryItems": [
@@ -1332,16 +1322,6 @@
               "href": "/faqs/",
               "label": "अक्सर पूछे जाने वाले प्रश्न",
               "description": "सामान्य गणना और उपयोग प्रश्नों के लिए।"
-            },
-            {
-              "href": "/library/",
-              "label": "पुस्तकालय",
-              "description": "अवधारणा स्पष्टीकरण और सूत्र संदर्भ के लिए।"
-            },
-            {
-              "href": "/practice/",
-              "label": "अभ्यास करें",
-              "description": "ड्रिल-आधारित सुधार के लिए."
             },
             {
               "href": "/about-us/",
@@ -2334,7 +2314,7 @@
           "angleItems": [
             "pecado(A) = a/c, cos(A) = b/c, tan(A) = a/b.",
             "Trigonometría inversa para encontrar ángulos: A = sin⁻¹(a/c), cos⁻¹(b/c), tan⁻¹(a/b).",
-            "Relación de complemento para el segundo ángulo: B = 90° - A."
+            "Relación de complemento para el segundo ángulo: B = 90° − A."
           ],
           "geometryTitle": "Fórmulas de medición y geometría.",
           "geometryItems": [
@@ -2448,16 +2428,6 @@
               "href": "/faqs/",
               "label": "Preguntas frecuentes",
               "description": "para preguntas comunes sobre cálculos y uso."
-            },
-            {
-              "href": "/library/",
-              "label": "Biblioteca",
-              "description": "para explicaciones de conceptos y referencias de fórmulas."
-            },
-            {
-              "href": "/practice/",
-              "label": "Practica",
-              "description": "para la mejora basada en simulacros."
             },
             {
               "href": "/about-us/",
@@ -3450,7 +3420,7 @@
           "angleItems": [
             "sin(A) = a/c, cos(A) = b/c, tan(A) = a/b.",
             "Обратный триггер для определения угла: A = sin⁻¹(a/c), cos⁻¹(b/c), tan⁻¹(a/b).",
-            "Дополняющее соотношение для второго угла: B = 90° - A."
+            "Дополняющее соотношение для второго угла: B = 90° − A."
           ],
           "geometryTitle": "Формулы измерения и геометрии",
           "geometryItems": [
@@ -3564,16 +3534,6 @@
               "href": "/faqs/",
               "label": "Часто задаваемые вопросы",
               "description": "для общих вопросов расчета и использования."
-            },
-            {
-              "href": "/library/",
-              "label": "Библиотека",
-              "description": "для пояснений концепций и ссылок на формулы."
-            },
-            {
-              "href": "/practice/",
-              "label": "Практика",
-              "description": "для улучшения на основе тренировок."
             },
             {
               "href": "/about-us/",
@@ -4566,7 +4526,7 @@
           "angleItems": [
             "sin(A) = a / c, cos(A) = b / c, tan(A) = a / b.",
             "Trig inverse pour la recherche d'angle : A = sin⁻¹(a/c), cos⁻¹(b/c), tan⁻¹(a/b).",
-            "Relation complémentaire pour le deuxième angle : B = 90° - A."
+            "Relation complémentaire pour le deuxième angle : B = 90° − A."
           ],
           "geometryTitle": "Formules de mesure et de géométrie",
           "geometryItems": [
@@ -4680,16 +4640,6 @@
               "href": "/faqs/",
               "label": "FAQ",
               "description": "pour les questions courantes de calcul et d’utilisation."
-            },
-            {
-              "href": "/library/",
-              "label": "Bibliothèque",
-              "description": "pour des explications de concepts et des références de formules."
-            },
-            {
-              "href": "/practice/",
-              "label": "Pratique",
-              "description": "pour une amélioration basée sur des exercices."
             },
             {
               "href": "/about-us/",
@@ -5682,7 +5632,7 @@
           "angleItems": [
             "sin(A) = a / c, cos(A) = b / c, tan(A) = a / b.",
             "Inverser Trigger zur Winkelfindung: A = sin⁻¹(a/c), cos⁻¹(b/c), tan⁻¹(a/b).",
-            "Komplementrelation für den zweiten Winkel: B = 90° - A."
+            "Komplementrelation für den zweiten Winkel: B = 90° − A."
           ],
           "geometryTitle": "Mess- und Geometrieformeln",
           "geometryItems": [
@@ -5796,16 +5746,6 @@
               "href": "/faqs/",
               "label": "FAQs",
               "description": "für häufige Berechnungs- und Verwendungsfragen."
-            },
-            {
-              "href": "/library/",
-              "label": "Bibliothek",
-              "description": "für Konzepterklärungen und Formelverweise."
-            },
-            {
-              "href": "/practice/",
-              "label": "Üben",
-              "description": "zur übungsbasierten Verbesserung."
             },
             {
               "href": "/about-us/",
@@ -6798,7 +6738,7 @@
           "angleItems": [
             "sin(A) = a / c, cos(A) = b / c, tan(A) = a / b.",
             "Trigonometria inversa per la ricerca dell'angolo: A = sin⁻¹(a/c), cos⁻¹(b/c), tan⁻¹(a/b).",
-            "Relazione di complemento per il secondo angolo: B = 90° - A."
+            "Relazione di complemento per il secondo angolo: B = 90° − A."
           ],
           "geometryTitle": "Formule di misura e geometria",
           "geometryItems": [
@@ -6912,16 +6852,6 @@
               "href": "/faqs/",
               "label": "Domande frequenti",
               "description": "per domande comuni sul calcolo e sull'utilizzo."
-            },
-            {
-              "href": "/library/",
-              "label": "Biblioteca",
-              "description": "per spiegazioni di concetti e riferimenti a formule."
-            },
-            {
-              "href": "/practice/",
-              "label": "Pratica",
-              "description": "per un miglioramento basato sull’esercitazione."
             },
             {
               "href": "/about-us/",
@@ -7914,7 +7844,7 @@
           "angleItems": [
             "sin(A) = a/c, cos(A) = b/c, tan(A) = a/b.",
             "Trig inversa para encontrar ângulo: A = sin⁻¹(a/c), cos⁻¹(b/c), tan⁻¹(a/b).",
-            "Relação de complemento para o segundo ângulo: B = 90° - A."
+            "Relação de complemento para o segundo ângulo: B = 90° − A."
           ],
           "geometryTitle": "Fórmulas de medição e geometria",
           "geometryItems": [
@@ -8028,16 +7958,6 @@
               "href": "/faqs/",
               "label": "Perguntas frequentes",
               "description": "para questões comuns de cálculo e uso."
-            },
-            {
-              "href": "/library/",
-              "label": "Biblioteca",
-              "description": "para explicações de conceitos e referências de fórmulas."
-            },
-            {
-              "href": "/practice/",
-              "label": "Pratique",
-              "description": "para melhoria baseada em exercícios."
             },
             {
               "href": "/about-us/",
@@ -9146,16 +9066,6 @@
               "description": "সাধারণ গণনা এবং ব্যবহার প্রশ্নের জন্য।"
             },
             {
-              "href": "/library/",
-              "label": "লাইব্রেরি",
-              "description": "ধারণার ব্যাখ্যা এবং সূত্র উল্লেখের জন্য।"
-            },
-            {
-              "href": "/practice/",
-              "label": "অনুশীলন করুন",
-              "description": "ড্রিল-ভিত্তিক উন্নতির জন্য।"
-            },
-            {
               "href": "/about-us/",
               "label": "আমাদের সম্পর্কে",
               "description": "আমাদের মিশন এবং মানের মান সম্পর্কে জানতে।"
@@ -10146,7 +10056,7 @@
           "angleItems": [
             "sin(A) = a / c、cos(A) = b / c、tan(A) = a / b。",
             "角度を求めるための逆三角関数: A = sin⁻¹(a/c)、cos⁻¹(b/c)、tan⁻¹(a/b)。",
-            "2 番目の角度の補数関係: B = 90° - A."
+            "2 番目の角度の補数関係: B = 90° − A."
           ],
           "geometryTitle": "測定と幾何学式",
           "geometryItems": [
@@ -10260,16 +10170,6 @@
               "href": "/faqs/",
               "label": "よくある質問",
               "description": "計算や使用に関する一般的な質問については、こちらをご覧ください。"
-            },
-            {
-              "href": "/library/",
-              "label": "図書館",
-              "description": "概念の説明と公式の参照用。"
-            },
-            {
-              "href": "/practice/",
-              "label": "練習する",
-              "description": "ドリルベースの改善のために。"
             },
             {
               "href": "/about-us/",
@@ -11262,7 +11162,7 @@
           "angleItems": [
             "sin(A) = a / c, cos(A) = b / c, tan(A) = a / b.",
             "각도 찾기를 위한 역삼각: A = sin⁻1(a/c), cos⁻1(b/c), tan⁻1(a/b).",
-            "두 번째 각도에 대한 보수 관계: B = 90° - A."
+            "두 번째 각도에 대한 보수 관계: B = 90° − A."
           ],
           "geometryTitle": "측정 및 기하학 공식",
           "geometryItems": [
@@ -11376,16 +11276,6 @@
               "href": "/faqs/",
               "label": "자주 묻는 질문",
               "description": "일반적인 계산 및 사용법에 대한 질문입니다."
-            },
-            {
-              "href": "/library/",
-              "label": "도서관",
-              "description": "개념 설명 및 공식 참조."
-            },
-            {
-              "href": "/practice/",
-              "label": "연습",
-              "description": "훈련 기반 개선을 위해."
             },
             {
               "href": "/about-us/",
@@ -12378,7 +12268,7 @@
           "angleItems": [
             "sin(A) = a / c, cos(A) = b / c, tan(A) = a / b.",
             "Trig songsang untuk mencari sudut: A = sin⁻¹(a/c), cos⁻¹(b/c), tan⁻¹(a/b).",
-            "Hubungan pelengkap untuk sudut kedua: B = 90° - A."
+            "Hubungan pelengkap untuk sudut kedua: B = 90° − A."
           ],
           "geometryTitle": "Formula ukuran dan geometri",
           "geometryItems": [
@@ -12492,16 +12382,6 @@
               "href": "/faqs/",
               "label": "Soalan Lazim",
               "description": "untuk pengiraan biasa dan soalan penggunaan."
-            },
-            {
-              "href": "/library/",
-              "label": "Perpustakaan",
-              "description": "untuk penjelasan konsep dan rujukan formula."
-            },
-            {
-              "href": "/practice/",
-              "label": "berlatih",
-              "description": "untuk penambahbaikan berasaskan latih tubi."
             },
             {
               "href": "/about-us/",
@@ -13494,7 +13374,7 @@
           "angleItems": [
             "sin(A) = a / c, cos(A) = b / c, tan(A) = a / b.",
             "Odwrotny trygon do wyznaczania kąta: A = sin⁻¹(a/c), cos⁻¹(b/c), tan⁻¹(a/b).",
-            "Dopełnienie relacji dla drugiego kąta: B = 90° - A."
+            "Dopełnienie relacji dla drugiego kąta: B = 90° − A."
           ],
           "geometryTitle": "Wzory pomiarowe i geometryczne",
           "geometryItems": [
@@ -13608,16 +13488,6 @@
               "href": "/faqs/",
               "label": "Często zadawane pytania",
               "description": "w przypadku typowych pytań dotyczących obliczeń i użytkowania."
-            },
-            {
-              "href": "/library/",
-              "label": "Biblioteka",
-              "description": "w celu uzyskania wyjaśnień koncepcji i odniesień do formuł."
-            },
-            {
-              "href": "/practice/",
-              "label": "Ćwicz",
-              "description": "do doskonalenia opartego na ćwiczeniach."
             },
             {
               "href": "/about-us/",
@@ -14610,7 +14480,7 @@
           "angleItems": [
             "sin(A) = a / c, cos(A) = b / c, tan(A) = a / b.",
             "Trigonometri terbalik untuk mencari sudut: A = sin⁻¹(a/c), cos⁻¹(b/c), tan⁻¹(a/b).",
-            "Hubungan komplemen sudut kedua: B = 90° - A."
+            "Hubungan komplemen sudut kedua: B = 90° − A."
           ],
           "geometryTitle": "Rumus pengukuran dan geometri",
           "geometryItems": [
@@ -14724,16 +14594,6 @@
               "href": "/faqs/",
               "label": "FAQ",
               "description": "untuk pertanyaan perhitungan dan penggunaan umum."
-            },
-            {
-              "href": "/library/",
-              "label": "Perpustakaan",
-              "description": "untuk penjelasan konsep dan referensi rumus."
-            },
-            {
-              "href": "/practice/",
-              "label": "Praktek",
-              "description": "untuk perbaikan berbasis bor."
             },
             {
               "href": "/about-us/",
@@ -15726,7 +15586,7 @@
           "angleItems": [
             "الخطيئة (أ) = أ / ج، جتا (أ) = ب / ج، ظا (أ) = أ / ب.",
             "المثلثات العكسية لإيجاد الزاوية: A = sin⁻¹(a/c)، cos⁻¹(b/c)، tan⁻¹(a/b).",
-            "العلاقة التكميلية للزاوية الثانية: B = 90° - A."
+            "العلاقة التكميلية للزاوية الثانية: B = 90° − A."
           ],
           "geometryTitle": "صيغ القياس والهندسة",
           "geometryItems": [
@@ -15840,16 +15700,6 @@
               "href": "/faqs/",
               "label": "الأسئلة الشائعة",
               "description": "لأسئلة الحساب والاستخدام الشائعة."
-            },
-            {
-              "href": "/library/",
-              "label": "مكتبة",
-              "description": "لتفسيرات المفهوم ومراجع الصيغة."
-            },
-            {
-              "href": "/practice/",
-              "label": "ممارسة",
-              "description": "للتحسين القائم على الحفر."
             },
             {
               "href": "/about-us/",
@@ -16842,7 +16692,7 @@
           "angleItems": [
             "sin(A) = a / c, cos(A) = b / c, tan(A) = a / b.",
             "Обратен тригометър за намиране на ъгъл: A = sin⁻¹(a/c), cos⁻¹(b/c), tan⁻¹(a/b).",
-            "Връзка на допълнение за втория ъгъл: B = 90° - A."
+            "Връзка на допълнение за втория ъгъл: B = 90° − A."
           ],
           "geometryTitle": "Формули за измерване и геометрия",
           "geometryItems": [
@@ -16956,16 +16806,6 @@
               "href": "/faqs/",
               "label": "Често задавани въпроси",
               "description": "за общи въпроси за изчисляване и използване."
-            },
-            {
-              "href": "/library/",
-              "label": "Библиотека",
-              "description": "за обяснения на концепции и препратки към формули."
-            },
-            {
-              "href": "/practice/",
-              "label": "Практикувайте",
-              "description": "за подобряване на базата на пробиване."
             },
             {
               "href": "/about-us/",
@@ -17958,7 +17798,7 @@
           "angleItems": [
             "sin(A) = a / c, cos(A) = b / c, tan(A) = a / b.",
             "Açı bulma için ters trigonometri: A = sin⁻¹(a/c), cos⁻¹(b/c), tan⁻¹(a/b).",
-            "İkinci açının tamamlayıcı ilişkisi: B = 90° - A."
+            "İkinci açının tamamlayıcı ilişkisi: B = 90° − A."
           ],
           "geometryTitle": "Ölçüm ve geometri formülleri",
           "geometryItems": [
@@ -18072,16 +17912,6 @@
               "href": "/faqs/",
               "label": "SSS",
               "description": "ortak hesaplama ve kullanım soruları için."
-            },
-            {
-              "href": "/library/",
-              "label": "Kütüphane",
-              "description": "kavram açıklamaları ve formül referansları için."
-            },
-            {
-              "href": "/practice/",
-              "label": "Alıştırma",
-              "description": "tatbikata dayalı iyileştirme için."
             },
             {
               "href": "/about-us/",
@@ -19074,7 +18904,7 @@
           "angleItems": [
             "sin(A) = a / c, cos(A) = b / c, tan(A) = a / b.",
             "Inverterad trigg för att hitta vinkel: A = sin⁻¹(a/c), cos⁻¹(b/c), tan⁻¹(a/b).",
-            "Komplementrelation för den andra vinkeln: B = 90° - A."
+            "Komplementrelation för den andra vinkeln: B = 90° − A."
           ],
           "geometryTitle": "Formler för mätning och geometri",
           "geometryItems": [
@@ -19188,16 +19018,6 @@
               "href": "/faqs/",
               "label": "Vanliga frågor",
               "description": "för vanliga beräknings- och användningsfrågor."
-            },
-            {
-              "href": "/library/",
-              "label": "Bibliotek",
-              "description": "för begreppsförklaringar och formelreferenser."
-            },
-            {
-              "href": "/practice/",
-              "label": "Öva",
-              "description": "för borrbaserad förbättring."
             },
             {
               "href": "/about-us/",
@@ -20304,16 +20124,6 @@
               "href": "/faqs/",
               "label": "常见问题解答",
               "description": "对于常见的计算和使用问题。"
-            },
-            {
-              "href": "/library/",
-              "label": "图书馆",
-              "description": "用于概念解释和公式参考。"
-            },
-            {
-              "href": "/practice/",
-              "label": "练习",
-              "description": "用于基于练习的改进。"
             },
             {
               "href": "/about-us/",

@@ -14,7 +14,7 @@ const bundle = getTranslations(locale);
 const content = bundle.content as Record<string, any>;
 const terms = (content.terms as Record<string, any>) ?? {};
 const sections = (terms.sections as Record<string, any>) ?? {};
-const contactEmail = site.contactEmail || 'hello@righttrianglesolver.app';
+const contactEmail = site.contactEmail || 'hello@righttrianglesolver.com';
 
 const updatedLabel = pick(terms, 'updatedLabel', 'Last updated: April 12, 2026');
 const summaryItems = Array.isArray(terms.quickSummaryItems)

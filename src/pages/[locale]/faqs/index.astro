@@ -33,7 +33,7 @@ const pageDescription = pick(faqHub, 'description', 'Find answers to all your qu
   locale={locale}
   title={pageTitle}
   description={pageDescription}
-  canonicalPath="/faqs/"
+  canonicalPath={localizePath(locale, '/faqs/')}
   mainClass="mx-auto w-full max-w-[900px] px-4 py-16 sm:px-6 lg:px-8"
 >
   <header class="relative z-10 flex flex-col items-center justify-center pb-12 text-center text-on-surface">

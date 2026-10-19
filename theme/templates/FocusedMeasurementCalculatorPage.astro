@@ -276,10 +276,8 @@ const areaChildCalculatorSlugs = new Set([
 ]);
 const isAreaChildCalculator = areaChildCalculatorSlugs.has(page.slug);
 
-// Option C: Consolidate overlapping area pages via canonical tags
-const canonicalPath = isAreaChildCalculator 
-  ? localizePath(locale, '/right-triangle-area-calculator/')
-  : localizePath(locale, page.url);
+// Each area page is a standalone ranking page with a self-referencing canonical.
+const canonicalPath = localizePath(locale, page.url);
 const showDiagramFormula = !isAreaChildCalculator;
 const parentCalculatorLabel = isAreaChildCalculator
   ? areaCalculatorLabel

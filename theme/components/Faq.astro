@@ -37,9 +37,9 @@ const visibleItems = items.filter((item) => item.display !== false);
             </span>
             {item.question}
           </span>
-          <span class="material-symbols-outlined text-lg text-outline transition-transform duration-300 group-open:rotate-180">
-            expand_more
-          </span>
+          <svg class="h-5 w-5 text-outline transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6" />
+          </svg>
         </summary>
         <div class="border-t border-outline-variant/15 px-5 py-4">
           <p class="pl-10 text-sm leading-relaxed text-on-surface-variant" set:html={formatRootBars(item.answer)}></p>

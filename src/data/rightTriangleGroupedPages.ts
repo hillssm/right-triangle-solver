@@ -11,6 +11,13 @@ export type GroupedCalculatorPage = {
   includedToolIds: number[];
   intent: string;
   relatedSlugs: string[];
+  calculatorMessages?: {
+    positive?: string;
+    invalid?: string;
+    hypotenuseLongest?: string;
+    invalidTriangle?: string;
+    acuteAngle?: string;
+  };
   content: {
     intro: string;
     method: string;
@@ -152,7 +159,7 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       'Right Triangle Trigonometry Formulas'
     ],
     includedToolIds: [7, 8, 9, 18, 19, 20],
-    intent: 'Calculate trig ratios.',
+    intent: 'Calculate sine, cosine, tangent, secant, cosecant and cotangent for any right triangle angle with step-by-step solutions.',
     relatedSlugs: [
       'right-triangle-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
       'right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-from-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
@@ -186,7 +193,12 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       'Using Sine, Cosine and Tangent'
     ],
     includedToolIds: [10, 11, 12, 25, 26],
-    intent: 'Find triangle angles.',
+    intent: 'Find acute angles A and B of a right triangle using inverse sine, cosine and tangent with step-by-step solutions.',
+    calculatorMessages: {
+      positive: 'Please enter positive numbers for all inputs.',
+      invalid: 'These values do not form a valid right triangle angle.',
+      acuteAngle: 'Angle must be between 0 and 90 degrees.'
+    },
     relatedSlugs: [
       'right-triangle-trig-ratios-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
       'right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-from-angle-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
@@ -254,7 +266,7 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       'Area Formulas for Right Triangles'
     ],
     includedToolIds: [4, 27, 28, 29, 31],
-    intent: 'Find area using any method.',
+    intent: 'Calculate the area of a right triangle from legs, hypotenuse, angles, inradius or altitude, with step-by-step solutions.',
     relatedSlugs: [
       'right-triangle-<a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a>-calculator',
       'right-triangle-<a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>-calculator',
@@ -287,8 +299,13 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       'Find Altitude from Different Inputs',
       'Altitude Formulas and Relations'
     ],
-    includedToolIds: [13, 30, 32],
-    intent: 'Find triangle height.',
+    includedToolIds: [13, 32],
+    intent: 'Find the altitude from the right angle to the hypotenuse using legs, projections or geometric relations, step by step.',
+    calculatorMessages: {
+      positive: 'Please enter positive numbers for all sides.',
+      invalidTriangle: 'These sides do not form a right triangle. The hypotenuse c must satisfy a² + b² = c².',
+      hypotenuseLongest: 'The hypotenuse c must be the longest side.'
+    },
     relatedSlugs: [
       'right-triangle-<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-calculator',
       'right-triangle-<a href="/right-triangle-projection-calculator/" class="text-primary hover:underline">projection</a>-calculator',
@@ -323,6 +340,11 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
     ],
     includedToolIds: [14, 15, 33, 34, 35],
     intent: 'Find projections and segment relations.',
+    calculatorMessages: {
+      positive: 'Please enter positive numbers for all inputs.',
+      invalidTriangle: 'These values are not geometrically valid. Projections p and q must each be less than the hypotenuse c.',
+      hypotenuseLongest: 'The hypotenuse c must be the longest side.'
+    },
     relatedSlugs: [
       'right-triangle-<a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>-calculator',
       'right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
@@ -355,8 +377,13 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       'Calculate <a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">Inradius</a> and <a href="/right-triangle-circumradius-calculator/" class="text-primary hover:underline">Circumradius</a>',
       'Circle Relations in Right Triangles'
     ],
-    includedToolIds: [16, 17, 36, 43],
-    intent: 'Find triangle radii.',
+    includedToolIds: [16, 17],
+    intent: 'Calculate the inradius and circumradius of a right triangle from its sides, with formulas and step-by-step solutions.',
+    calculatorMessages: {
+      positive: 'Please enter positive numbers for all sides.',
+      invalidTriangle: 'These sides do not form a right triangle. The hypotenuse c must satisfy a² + b² = c².',
+      hypotenuseLongest: 'The hypotenuse c must be the longest side.'
+    },
     relatedSlugs: [
       'right-triangle-<a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a>-calculator',
       'right-triangle-<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-calculator',

@@ -15,7 +15,7 @@ const content = bundle.content as Record<string, any>;
 const privacy = (content.privacy as Record<string, any>) ?? {};
 const sections = (privacy.sections as Record<string, any>) ?? {};
 const updatedLabel = pick(privacy, 'updatedLabel', 'Last updated: April 12, 2026');
-const contactEmail = site.contactEmail || 'hello@righttrianglesolver.app';
+const contactEmail = site.contactEmail || 'hello@righttrianglesolver.com';
 
 const summaryItems = Array.isArray(privacy.quickSummaryItems)
   ? privacy.quickSummaryItems
@@ -240,6 +240,18 @@ const choicesItems = Array.isArray(choicesSection.items)
             'paragraph1',
             'The site may use essential cookies or local storage for functionality, security, and performance. You can manage browser settings to block or remove cookies, but some features may work less effectively.'
           )}
+        </p>
+      </section>
+
+      <section id="advertising">
+        <h2>Advertising</h2>
+        <p>
+          We use Google AdSense to serve ads on this site. Third-party vendors,
+          including Google, use cookies to serve ads based on your prior visits
+          to this and other websites. Google's use of advertising cookies enables
+          it and its partners to serve ads to you based on your visit to our sites.
+          You may opt out of personalized advertising by visiting Google's Ads
+          Settings (https://www.google.com/settings/ads).
         </p>
       </section>
 

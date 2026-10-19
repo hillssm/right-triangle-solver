@@ -57,7 +57,9 @@ const postSchema = {
 
   <article class="mx-auto max-w-4xl overflow-hidden">
     <header class="mb-10">
-      <div class="mb-6 flex items-center gap-3 text-sm text-on-surface-variant">
+      <nav aria-label="Breadcrumb" class="mb-6 flex items-center gap-3 text-sm text-on-surface-variant">
+        <a href={localizePath(locale, '/')} class="font-medium text-primary hover:underline">Home</a>
+        <span>/</span>
         <a href={localizePath(locale, '/blog/')} class="font-medium text-primary hover:underline">
           {pick(blogText, 'title', 'Blog')}
         </a>
@@ -65,7 +67,7 @@ const postSchema = {
         <time datetime={post.data.date.toISOString()}>
           {post.data.date.toLocaleDateString(locale, { year: 'numeric', month: 'long', day: 'numeric' })}
         </time>
-      </div>
+      </nav>
       
       <h1 class="text-3xl font-bold tracking-tight sm:text-5xl">{post.data.title}</h1>
       

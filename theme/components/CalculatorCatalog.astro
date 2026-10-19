@@ -3,6 +3,15 @@ import {
   RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE,
   RIGHT_TRIANGLE_GROUPED_PAGES
 } from 'src/data/rightTriangleGroupedPages';
+import { FOCUSED_SIDE_CALCULATOR_PAGES } from 'src/data/focusedSideCalculatorPages';
+import { FOCUSED_MEASUREMENT_CALCULATOR_PAGES } from 'src/data/focusedMeasurementCalculatorPages';
+import { FOCUSED_TRIG_RATIO_CALCULATOR_PAGES } from 'src/data/focusedTrigRatioCalculatorPages';
+import { FOCUSED_ANGLE_CALCULATOR_PAGES } from 'src/data/focusedAngleCalculatorPages';
+import { FOCUSED_ALTITUDE_CALCULATOR_PAGES } from 'src/data/focusedAltitudeCalculatorPages';
+import { FOCUSED_PROJECTION_CALCULATOR_PAGES } from 'src/data/focusedProjectionCalculatorPages';
+import { FOCUSED_RADIUS_CALCULATOR_PAGES } from 'src/data/focusedRadiusCalculatorPages';
+import { FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_PAGES } from 'src/data/focusedSpecialTriangleCalculatorPages';
+import { focusedTriplesCalculatorPages } from 'src/data/focusedTriplesCalculatorPages';
 import { getFocusedTriplesHomeUi } from 'src/data/focusedTriplesCalculatorTranslations';
 import { localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
@@ -54,6 +63,19 @@ const SUPPORT_TOOL_PAGES = triplesHomeUi.tools.map((tool, index) => ({
 }));
 
 const totalToolCount = RIGHT_TRIANGLE_GROUPED_PAGES.length + SUPPORT_TOOL_PAGES.length;
+
+const allCalculatorPages = [
+  ...RIGHT_TRIANGLE_GROUPED_PAGES.map((page) => ({ url: page.url, title: page.h1 })),
+  ...FOCUSED_SIDE_CALCULATOR_PAGES.map((page) => ({ url: page.url, title: page.h1 })),
+  ...FOCUSED_MEASUREMENT_CALCULATOR_PAGES.map((page) => ({ url: page.url, title: page.h1 })),
+  ...FOCUSED_TRIG_RATIO_CALCULATOR_PAGES.map((page) => ({ url: page.url, title: page.h1 })),
+  ...FOCUSED_ANGLE_CALCULATOR_PAGES.map((page) => ({ url: page.url, title: page.h1 })),
+  ...FOCUSED_ALTITUDE_CALCULATOR_PAGES.map((page) => ({ url: page.url, title: page.h1 })),
+  ...FOCUSED_PROJECTION_CALCULATOR_PAGES.map((page) => ({ url: page.url, title: page.h1 })),
+  ...FOCUSED_RADIUS_CALCULATOR_PAGES.map((page) => ({ url: page.url, title: page.h1 })),
+  ...FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_PAGES.map((page) => ({ url: page.url, title: page.h1 })),
+  ...focusedTriplesCalculatorPages.map((page) => ({ url: page.url, title: page.h1 }))
+].sort((a, b) => a.title.localeCompare(b.title));
 ---
 
 <section
@@ -140,6 +162,24 @@ const totalToolCount = RIGHT_TRIANGLE_GROUPED_PAGES.length + SUPPORT_TOOL_PAGES.
           </a>
         ))}
       </div>
+    </div>
+    <div class="mt-10 border-t border-outline-variant/30 pt-8">
+      <h3 class="font-label text-xs uppercase tracking-[0.2em] text-outline">
+        All Calculators A to Z
+      </h3>
+
+      <ul class="mt-4 grid gap-x-6 gap-y-2 sm:grid-cols-2 lg:grid-cols-3">
+        {allCalculatorPages.map((page) => (
+          <li>
+            <a
+              href={localizePath(locale, page.url)}
+              class="text-sm text-primary hover:underline"
+            >
+              {page.title}
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
   </div>
 </section>

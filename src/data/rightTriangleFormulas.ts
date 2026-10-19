@@ -272,7 +272,7 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     variables: ['a = leg', 'b = leg', 'c = hypotenuse', 'h = altitude'],
     notes: ['Equivalent identity: h² = p * q where p and q are hypotenuse segments.'],
     calculator: {
-      kind: 'altitude',
+      kind: 'altitude_strict',
       outputLabel: 'Altitude h',
       outputUnit: 'units',
       fields: [
@@ -292,7 +292,7 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     variables: ['a = leg', 'c = hypotenuse', 'p = projection segment'],
     notes: ['Together with q, satisfies p + q = c.', 'Requires c > 0.'],
     calculator: {
-      kind: 'projection_p',
+      kind: 'projection_p_strict',
       outputLabel: 'Projection p',
       outputUnit: 'units',
       fields: [
@@ -311,7 +311,7 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     variables: ['b = leg', 'c = hypotenuse', 'q = projection segment'],
     notes: ['Together with p, satisfies p + q = c.', 'Requires c > 0.'],
     calculator: {
-      kind: 'projection_q',
+      kind: 'projection_q_strict',
       outputLabel: 'Projection q',
       outputUnit: 'units',
       fields: [
@@ -330,7 +330,7 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     variables: ['a = leg', 'b = leg', 'c = hypotenuse', 'r = inradius'],
     notes: ['For valid right triangles, r is always positive.'],
     calculator: {
-      kind: 'inradius',
+      kind: 'inradius_strict',
       outputLabel: 'Inradius r',
       outputUnit: 'units',
       fields: [
@@ -579,7 +579,7 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     variables: ['a = leg', 'c = hypotenuse', 'p = projection p'],
     notes: [],
     calculator: {
-      kind: 'leg_from_cp', outputLabel: 'Leg a', outputUnit: 'units',
+      kind: 'leg_from_cp_strict', outputLabel: 'Leg a', outputUnit: 'units',
       fields: [{ key: 'c', label: 'Hypotenuse c', min: 0 }, { key: 'p', label: 'Projection p', min: 0 }]
     }
   },
@@ -593,7 +593,7 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     variables: ['b = leg', 'c = hypotenuse', 'q = projection q'],
     notes: [],
     calculator: {
-      kind: 'leg_from_cq', outputLabel: 'Leg b', outputUnit: 'units',
+      kind: 'leg_from_cq_strict', outputLabel: 'Leg b', outputUnit: 'units',
       fields: [{ key: 'c', label: 'Hypotenuse c', min: 0 }, { key: 'q', label: 'Projection q', min: 0 }]
     }
   },
@@ -824,6 +824,26 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     calculator: {
       kind: 'circumradius', outputLabel: 'Circumradius R', outputUnit: 'units',
       fields: [{ key: 'c', label: 'Hypotenuse c', min: 0 }]
+    }
+  },
+  {
+    slug: 'general-right-triangle-solver',
+    title: 'General Right Triangle Solver',
+    category: 'Side Calculations',
+    expression: 'a^2 + b^2 = c^2',
+    plainExpression: 'a² + b² = c²',
+    description: 'Enter any two values (at least one side) to solve the full triangle.',
+    variables: ['a = leg', 'b = leg', 'c = hypotenuse', 'A = angle', 'B = angle'],
+    notes: ['At least one of the two known values must be a side length.'],
+    calculator: {
+      kind: 'general_solver', outputLabel: 'Solved triangle', outputUnit: '',
+      fields: [
+        { key: 'a', label: 'Leg a', min: 0 },
+        { key: 'b', label: 'Leg b', min: 0 },
+        { key: 'c', label: 'Hypotenuse c', min: 0 },
+        { key: 'A', label: 'Angle A (deg)', min: 0 },
+        { key: 'B', label: 'Angle B (deg)', min: 0 }
+      ]
     }
   }
 ];

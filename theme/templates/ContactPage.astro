@@ -16,14 +16,14 @@ const content = bundle.content as Record<string, any>;
 const common = bundle.common as Record<string, any>;
 const contact = (content.contact as Record<string, any>) ?? {};
 const commonWords = (common.common as Record<string, any>) ?? {};
-const contactEmail = site.contactEmail || 'hello@righttrianglesolver.app';
+const contactEmail = site.contactEmail || 'hello@righttrianglesolver.com';
 
 const supportIcons = ['mail', 'schedule', 'support_agent'];
 const defaultSupportChannels = [
   {
     title: 'Email Support',
     value: contactEmail,
-    description: 'Best for bug reports, account issues, or detailed questions.'
+    description: 'Best for bug reports, calculation questions, or feedback.'
   },
   {
     title: 'Typical Reply Time',

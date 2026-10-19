@@ -19,7 +19,20 @@ const groupedFaqs = bundle.faq.reduce((acc, item) => {
   return acc;
 }, {} as Record<string, typeof bundle.faq>);
 
-const pageTitle = `${pick(faqHub, 'title', 'Frequently Asked Questions')} | Right Triangle Solver`;
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: bundle.faq.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.answer
+    }
+  }))
+};
+
+const pageTitle = pick(faqHub, 'title', 'Frequently Asked Questions | Right Triangle Solver');
 const pageDescription = pick(faqHub, 'description', 'Find answers to all your questions about the tools, formulas, units, and solutions.');
 ---
 
@@ -30,6 +43,7 @@ const pageDescription = pick(faqHub, 'description', 'Find answers to all your qu
   canonicalPath="/faqs/"
   mainClass="mx-auto w-full max-w-[900px] px-4 py-16 sm:px-6 lg:px-8"
 >
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(faqSchema)} />
   <header class="relative z-10 flex flex-col items-center justify-center pb-12 text-center text-on-surface">
     <div class="pointer-events-none absolute -top-12 -z-10 h-72 w-full bg-gradient-to-b from-primary/10 to-transparent opacity-30"></div>
     <h1 class="font-headline text-4xl font-bold tracking-tight drop-shadow-sm sm:text-5xl lg:text-6xl text-gradient-primary">

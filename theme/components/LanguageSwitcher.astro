@@ -24,7 +24,9 @@ const { currentLocale } = Astro.props;
   >
     <span class="material-symbols-outlined text-[18px]">language</span>
     <span class="uppercase tracking-wider">{currentLocale}</span>
-    <span class="material-symbols-outlined text-[14px] transition-transform duration-200" data-chevron>expand_more</span>
+    <svg class="h-4 w-4 transition-transform duration-200" data-chevron viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6" />
+    </svg>
   </button>
 
   <div

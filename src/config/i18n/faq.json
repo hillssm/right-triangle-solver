@@ -183,29 +183,29 @@
     {
       "category": "Usage, Errors & Visuals",
       "question": "How does the live triangle visualization work?",
-      "answer": "It is a robust interactive Canvas matrix. We map real-time structural data limits into SVG mapping constraints so bounding boxes mirror mathematical shapes perfectly on screen.",
+      "answer": "The diagram is drawn fresh every time you calculate. Enter your values, and the triangle redraws itself to match those exact measurements on screen.",
       "display": true
     },
     {
       "category": "Usage, Errors & Visuals",
       "question": "Does the diagram update in real time?",
-      "answer": "Whenever a standard calculation executes flawlessly, yes. The Live Diagram immediately distorts vector geometries exactly mimicking user metrics across both standalone widgets.",
+      "answer": "Yes. Every time you run a calculation, the diagram updates immediately to show the triangle with your numbers.",
       "display": true
     },
     {
-      "category": "Misc/Duplicate Clarifications",
+      "category": "General Information",
       "question": "How do I calculate the hypotenuse with one side and one angle?",
       "answer": "Use the c = a / sin(A) equivalent in the hub. Pick what you know and it outputs accurate hypotenuses instantly.",
       "display": true
     },
     {
-      "category": "Misc/Duplicate Clarifications",
+      "category": "General Information",
       "question": "How do I find a missing side of a right triangle?",
       "answer": "Depending on information on hand, rely on Leg From Hypotenuse solvers (Pythagorean derivatives) or Trig-based Side solvers navigating exact configurations.",
       "display": true
     },
     {
-      "category": "Misc/Duplicate Clarifications",
+      "category": "General Information",
       "question": "How do I calculate an angle of a triangle using sides?",
       "answer": "Any configuration comparing 2 sides unlocks an inverse trigonometric identity array mapped directly to angular metrics spanning Inverse Trig formulas.",
       "display": true
@@ -213,7 +213,7 @@
     {
       "category": "Real World Application",
       "question": "Can I use this calculator on mobile devices?",
-      "answer": "Yes. Our platform utilizes responsive Flexbox and robust Tailwind constraints guaranteeing seamless usability and fluid UX navigation whether operating an iPad, iPhone, or Desktop layout.",
+      "answer": "Yes. The site is designed to work on phones, tablets, and desktops. The layout adjusts automatically to your screen size.",
       "display": true
     },
     {

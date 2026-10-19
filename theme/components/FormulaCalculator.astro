@@ -65,7 +65,7 @@ const ADVANCED_UNIT_LIST = [
   { val: 'pt', label: units.pt || 'point' },
   { val: 'survey_ft', label: units.survey_ft || 'survey ft' },
   { val: 'fathom', label: units.fathom || 'fathom' },
-  { val: 'au', label: units.au || 'astronomic' },
+  { val: 'au', label: units.au || 'astronomical unit' },
   { val: 'ls', label: units.ls || 'l-sec' },
   { val: 'lm', label: units.lm || 'l-min' },
   { val: 'lh', label: units.lh || 'l-hour' },
@@ -242,6 +242,7 @@ const calculatorMessages = JSON.stringify(messages);
                 type="number"
                 step="any"
                 min={field.min ?? 0}
+                max={(field.key === 'A' || field.key === 'B') ? 90 : field.max}
                 name={field.key}
                 required
               />
@@ -412,6 +413,21 @@ const calculatorMessages = JSON.stringify(messages);
         }
       };
 
+      const requireAcuteAngle = (angle) => {
+        if (!(angle > 0 && angle < 90)) {
+          throw new Error(messages.acuteAngle || 'Angle must be between 0 and 90 degrees.');
+        }
+      };
+
+      const requireRightTriangle = (a, b, c) => {
+        const sides = [a, b, c].sort((x, y) => x - y);
+        const gap = Math.abs(sides[0] * sides[0] + sides[1] * sides[1] - sides[2] * sides[2]);
+        const scale = Math.max(sides[2] * sides[2], 1);
+        if (gap > 1e-8 * scale) {
+          throw new Error(messages.invalidTriangle || messages.invalid || translations.unableToCalculate || '');
+        }
+      };
+
       const buildCalculationStep = (
         stepKey,
         fallbackTitle,
@@ -482,8 +498,84 @@ const calculatorMessages = JSON.stringify(messages);
               ]
             };
           }
+          case 'general_solver': {
+            const toRad = (d) => d * Math.PI / 180;
+            const toDeg = (r) => r * 180 / Math.PI;
+            const has = (x) => x !== undefined && x !== null && !isNaN(x) && x !== '';
+            const a = has(v.a) ? Number(v.a) : null;
+            const b = has(v.b) ? Number(v.b) : null;
+            const c = has(v.c) ? Number(v.c) : null;
+            const A = has(v.A) ? Number(v.A) : null;
+            const B = has(v.B) ? Number(v.B) : null;
+            const known = [a, b, c, A, B].filter(x => x !== null).length;
+            if (known < 2) throw new Error(messages.invalid || 'Enter any two values (at least one side).');
+            const sides = [a, b, c].filter(x => x !== null).length;
+            if (sides === 0) throw new Error(messages.invalid || 'At least one side length is required.');
+            if (a !== null && a <= 0) throw new Error(messages.positive || 'Sides must be positive.');
+            if (b !== null && b <= 0) throw new Error(messages.positive || 'Sides must be positive.');
+            if (c !== null && c <= 0) throw new Error(messages.positive || 'Sides must be positive.');
+            if (A !== null) requireAcuteAngle(A);
+            if (B !== null) requireAcuteAngle(B);
+            let ra = a, rb = b, rc = c, rA = A, rB = B;
+            const steps = [];
+            if (ra !== null && rb !== null) {
+              rc = Math.sqrt(ra*ra + rb*rb);
+              rA = toDeg(Math.atan2(ra, rb));
+              rB = 90 - rA;
+              steps.push(`c = \u221A(a\u00B2 + b\u00B2) = ${format(rc)}`, `A = atan(a/b) = ${format(rA)}\u00B0`, `B = 90\u00B0 - A = ${format(rB)}\u00B0`);
+            } else if (ra !== null && rc !== null) {
+              if (ra >= rc) throw new Error(messages.hypotenuseLongest || 'Hypotenuse c must be the longest side.');
+              rb = Math.sqrt(rc*rc - ra*ra);
+              rA = toDeg(Math.asin(ra/rc));
+              rB = 90 - rA;
+              steps.push(`b = \u221A(c\u00B2 - a\u00B2) = ${format(rb)}`, `A = asin(a/c) = ${format(rA)}\u00B0`, `B = 90\u00B0 - A = ${format(rB)}\u00B0`);
+            } else if (rb !== null && rc !== null) {
+              if (rb >= rc) throw new Error(messages.hypotenuseLongest || 'Hypotenuse c must be the longest side.');
+              ra = Math.sqrt(rc*rc - rb*rb);
+              rB = toDeg(Math.asin(rb/rc));
+              rA = 90 - rB;
+              steps.push(`a = \u221A(c\u00B2 - b\u00B2) = ${format(ra)}`, `B = asin(b/c) = ${format(rB)}\u00B0`, `A = 90\u00B0 - B = ${format(rA)}\u00B0`);
+            } else if (ra !== null && rA !== null) {
+              rc = ra / Math.sin(toRad(rA));
+              rb = ra / Math.tan(toRad(rA));
+              rB = 90 - rA;
+              steps.push(`c = a/sin(A) = ${format(rc)}`, `b = a/tan(A) = ${format(rb)}`, `B = 90\u00B0 - A = ${format(rB)}\u00B0`);
+            } else if (ra !== null && rB !== null) {
+              rc = ra / Math.cos(toRad(rB));
+              rb = ra * Math.tan(toRad(rB));
+              rA = 90 - rB;
+              steps.push(`c = a/cos(B) = ${format(rc)}`, `b = a\u00D7tan(B) = ${format(rb)}`, `A = 90\u00B0 - B = ${format(rA)}\u00B0`);
+            } else if (rb !== null && rA !== null) {
+              rc = rb / Math.cos(toRad(rA));
+              ra = rb * Math.tan(toRad(rA));
+              rB = 90 - rA;
+              steps.push(`c = b/cos(A) = ${format(rc)}`, `a = b\u00D7tan(A) = ${format(ra)}`, `B = 90\u00B0 - A = ${format(rB)}\u00B0`);
+            } else if (rb !== null && rB !== null) {
+              rc = rb / Math.sin(toRad(rB));
+              ra = rb / Math.tan(toRad(rB));
+              rA = 90 - rB;
+              steps.push(`c = b/sin(B) = ${format(rc)}`, `a = b/tan(B) = ${format(ra)}`, `A = 90\u00B0 - B = ${format(rA)}\u00B0`);
+            } else if (rc !== null && rA !== null) {
+              ra = rc * Math.sin(toRad(rA));
+              rb = rc * Math.cos(toRad(rA));
+              rB = 90 - rA;
+              steps.push(`a = c\u00D7sin(A) = ${format(ra)}`, `b = c\u00D7cos(A) = ${format(rb)}`, `B = 90\u00B0 - A = ${format(rB)}\u00B0`);
+            } else if (rc !== null && rB !== null) {
+              rb = rc * Math.sin(toRad(rB));
+              ra = rc * Math.cos(toRad(rB));
+              rA = 90 - rB;
+              steps.push(`b = c\u00D7sin(B) = ${format(rb)}`, `a = c\u00D7cos(B) = ${format(ra)}`, `A = 90\u00B0 - B = ${format(rA)}\u00B0`);
+            }
+            if (ra === null || rb === null || rc === null) throw new Error(messages.invalid || 'Could not solve with these inputs.');
+            requireRightTriangle(ra, rb, rc);
+            return {
+              result: rc,
+              steps: [`**Solve Right Triangle**<br/>${steps.join('<br/>')}<br/>a = ${format(ra)}, b = ${format(rb)}, c = ${format(rc)}, A = ${format(rA)}\u00B0, B = ${format(rB)}\u00B0`]
+            };
+          }
           case 'perimeter': {
             requirePositive(v.a, v.b, v.c);
+            requireRightTriangle(v.a, v.b, v.c);
             const r = v.a + v.b + v.c;
             const stepCopy = translations.calculationSteps?.perimeter || {};
             const title = stepCopy.title || '';
@@ -497,6 +589,7 @@ const calculatorMessages = JSON.stringify(messages);
           }
           case 'semiperimeter': {
             requirePositive(v.a, v.b, v.c);
+            requireRightTriangle(v.a, v.b, v.c);
             const r = (v.a + v.b + v.c) / 2;
             const stepCopy = translations.calculationSteps?.semiperimeter || {};
             const title = stepCopy.title || '';
@@ -820,6 +913,7 @@ const calculatorMessages = JSON.stringify(messages);
           }
           case 'leg_from_hc_sin': {
             requirePositive(v.c, v.A);
+            requireAcuteAngle(v.A);
             const r = v.c * Math.sin(rad(v.A));
             return {
               result: r,
@@ -836,6 +930,7 @@ const calculatorMessages = JSON.stringify(messages);
           }
           case 'leg_from_hc_cos': {
             requirePositive(v.c, v.A);
+            requireAcuteAngle(v.A);
             const r = v.c * Math.cos(rad(v.A));
             return {
               result: r,
@@ -852,6 +947,7 @@ const calculatorMessages = JSON.stringify(messages);
           }
           case 'leg_from_leg_tan': {
             requirePositive(v.b, v.A);
+            requireAcuteAngle(v.A);
             const r = v.b * Math.tan(rad(v.A));
             return {
               result: r,
@@ -868,6 +964,7 @@ const calculatorMessages = JSON.stringify(messages);
           }
           case 'leg_from_leg_tan_div': {
             requirePositive(v.a, v.A);
+            requireAcuteAngle(v.A);
             const r = v.a / Math.tan(rad(v.A));
             return {
               result: r,

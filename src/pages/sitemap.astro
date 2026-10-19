@@ -14,15 +14,16 @@ import { FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_PAGES } from 'src/data/focusedSpeci
 import { focusedTriplesCalculatorPages } from 'src/data/focusedTriplesCalculatorPages';
 import { DEFAULT_LOCALE, localizePath } from 'theme/i18n/locales';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
 
 const locale = DEFAULT_LOCALE;
+const blogPosts = await getCollection('blog');
 
 const GENERAL_PAGES = [
   { href: '/', label: 'Home' },
   { href: '/about-us/', label: 'About Us' },
   { href: '/contact-us/', label: 'Contact Us' },
   { href: '/faqs/', label: 'FAQs' },
-  { href: '/library/', label: 'Library' },
   { href: '/blog/', label: 'Blog' },
   { href: '/privacy/', label: 'Privacy Policy' },
   { href: '/terms/', label: 'Terms of Use' }
@@ -173,6 +174,19 @@ const GENERAL_PAGES = [
           <li>
             <a href={localizePath(locale, page.url)} class="text-primary hover:underline">
               {page.h1}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="section-shell">
+      <h2 class="text-xl font-bold mb-4">Blog Posts</h2>
+      <ul class="space-y-2">
+        {blogPosts.map((post) => (
+          <li>
+            <a href={localizePath(locale, `/blog/${post.id}/`)} class="text-primary hover:underline">
+              {post.data.title}
             </a>
           </li>
         ))}

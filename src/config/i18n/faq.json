@@ -21,7 +21,7 @@
     {
       "category": "General Information",
       "question": "Can I solve a triangle using one side and one angle?",
-      "answer": "Absolutely. Inputting one acute angle and one side length allows the system to utilize standard trig identities (sine, cosine, tangent) to find all missing right triangle parameters instantly.",
+      "answer": "Yes. Enter one acute angle and one side length, and the calculator uses sine, cosine, and tangent to find every missing side and angle.",
       "display": true
     },
     {
@@ -33,19 +33,19 @@
     {
       "category": "General Information",
       "question": "How do I find a missing side using an angle and one side?",
-      "answer": "Our specific calculators under the Side Calculations category (like a = c * sin(A)) let you plug in your known angle and known side to let the trigonometric backend perfectly calculate the missing leg.",
+      "answer": "Open a Side calculator such as a = c * sin(A), enter your known angle and side, and the calculator will compute the missing leg.",
       "display": true
     },
     {
       "category": "General Information",
       "question": "How do I calculate an angle using side lengths?",
-      "answer": "Go to the Inverse Angle Formulas. Insert your side lengths (e.g. opposite side over adjacent side) and the calculator will automatically apply inverse tangent (arctan) to find the exact angle magnitude.",
+      "answer": "Open the Inverse Angle Formulas, enter your side lengths (for example, opposite over adjacent), and the calculator applies inverse tangent to find the angle.",
       "display": true
     },
     {
       "category": "Trigonometry & Formulas",
       "question": "Can I calculate angles using sine, cosine, or tangent?",
-      "answer": "Yes! Enter your trigonometric decimal (the ratio outcome of sin, cos, or tan) and we will inverse the calculation to provide the angle parameter using arcsin, arccos, or arctan logic.",
+      "answer": "Yes. Enter your ratio (the result of sin, cos, or tan) and the calculator works backward with arcsin, arccos, or arctan to give you the angle.",
       "display": true
     },
     {
@@ -63,121 +63,121 @@
     {
       "category": "Trigonometry & Formulas",
       "question": "Does the calculator support inverse trig functions (sin⁻¹, cos⁻¹, tan⁻¹)?",
-      "answer": "Yes. Every tool categorized under Angle Calculations uses rigorous inverse trigonometric mapping arrays in JavaScript to solve specific angular constraints.",
+      "answer": "Yes. Every tool under Angle Calculations uses inverse trig functions (arcsin, arccos, arctan) to solve for angles from side lengths.",
       "display": true
     },
     {
       "category": "Trigonometry & Formulas",
       "question": "Are secant, cosecant, and cotangent supported?",
-      "answer": "Yes. These fundamental reciprocal trigonometric identities have their own dedicated calculator spaces on the site, supporting exact conversions like csc(A) = c / a.",
+      "answer": "Yes. Secant, cosecant, and cotangent each have their own calculator, supporting conversions like csc(A) = c / a.",
       "display": true
     },
     {
       "category": "Trigonometry & Formulas",
       "question": "What formulas does this calculator use?",
-      "answer": "It strictly applies the Pythagorean Theorem (c²=a²+b²), fundamental right triangle Trigonometry (SOH CAH TOA), Herons adaptations, and Thales altitude properties.",
+      "answer": "It uses the Pythagorean theorem (c² = a² + b²), basic trigonometry (SOH CAH TOA), Heron's formula, and Thales' altitude properties.",
       "display": true
     },
     {
       "category": "Trigonometry & Formulas",
       "question": "Does this calculator verify identities like sin²θ + cos²θ = 1?",
-      "answer": "Yes. In the Advanced Relations category, you can map numerical inputs against foundational Pythagorean identities to check or verify geometric rules dynamically.",
+      "answer": "Yes. In the Advanced Relations category, you can test your numbers against Pythagorean identities like sin²θ + cos²θ = 1.",
       "display": true
     },
     {
       "category": "Area, Perimeter & Advanced Math",
       "question": "How do I calculate the area of a right triangle?",
-      "answer": "The fundamental method uses the formula Area = 1/2 * (a * b). Input both legs into our main calculator or the explicit Area tool to receive your squared units.",
+      "answer": "Use Area = 1/2 × (a × b). Enter both legs into the main calculator or the Area tool, and the answer comes out in square units.",
       "display": true
     },
     {
       "category": "Area, Perimeter & Advanced Math",
       "question": "Can I find the area using one side and one angle?",
-      "answer": "Yes! Utilizing the derivation Area = 0.5 * c² * sin(A) * cos(A) or similar substitutions, our math engine can immediately compute exact surface area from mixed bounds.",
+      "answer": "Yes. Using formulas like Area = 0.5 × c² × sin(A) × cos(A), the calculator finds the area from one side and one angle.",
       "display": true
     },
     {
       "category": "Area, Perimeter & Advanced Math",
       "question": "What formula is used for area calculation?",
-      "answer": "While 0.5 * base * height is standard, we also compute Area = r * s (inradius * semiperimeter) and 0.5 * c * h (hypotenuse * altitude) when standard legs are absent.",
+      "answer": "Besides 0.5 × base × height, it also supports Area = r × s (inradius times semiperimeter) and 0.5 × c × h (hypotenuse times altitude) when you do not have the legs.",
       "display": true
     },
     {
       "category": "Area, Perimeter & Advanced Math",
       "question": "Can I calculate the perimeter automatically?",
-      "answer": "Every generalized calculation performed on our main layout implicitly processes Perimeter = a + b + c across all measurement types.",
+      "answer": "Yes. Every calculation on the main tool automatically includes the perimeter, using Perimeter = a + b + c.",
       "display": true
     },
     {
       "category": "Area, Perimeter & Advanced Math",
       "question": "What are 45-45-90 and 30-60-90 triangles?",
-      "answer": "These are Special Right Triangles containing explicitly known internal angle mappings allowing specific scale constants like √2 and √3 for lightning-fast missing side derivations.",
+      "answer": "They are special right triangles with fixed angle sets. Their side ratios use √2 and √3, so missing sides can be found quickly without trig.",
       "display": true
     },
     {
       "category": "Area, Perimeter & Advanced Math",
       "question": "Does the calculator support special right triangles?",
-      "answer": "Yes, we provide 4 exact calculators precisely formatted for solving lengths directly proportional to Special Right Triangle invariants.",
+      "answer": "Yes. There are 4 dedicated calculators that solve 45-45-90 and 30-60-90 triangles directly from their fixed ratios.",
       "display": true
     },
     {
       "category": "Area, Perimeter & Advanced Math",
       "question": "What are projection and altitude formulas in a right triangle?",
-      "answer": "If an altitude drops from the 90° vertex down to hypotenuse c, it fragments it into properties p and q. The Altitude section handles Geometric Mean Theorems like p+q=c and h²=pq effortlessly.",
+      "answer": "When an altitude drops from the right angle to hypotenuse c, it splits c into segments p and q. The Altitude section handles relations like p + q = c and h² = p × q.",
       "display": true
     },
     {
       "category": "Area, Perimeter & Advanced Math",
       "question": "How do I calculate the inradius and circumradius?",
-      "answer": "The Circumradius is derived natively as R = c / 2 (Thales rule), while the Inradius utilizes r = (a + b - c) / 2.",
+      "answer": "The circumradius is R = c / 2 (half the hypotenuse), and the inradius is r = (a + b - c) / 2.",
       "display": true
     },
     {
       "category": "Area, Perimeter & Advanced Math",
       "question": "How do I find the area of a triangle without height?",
-      "answer": "Inside the Area variations hub, you can bypass explicit height mapping by feeding alternative dimensions like (Circumradius & Alternate Angles) into specialized mathematical parsers.",
+      "answer": "In the Area variations hub, you can find area using other known values, like the inradius with the semiperimeter, instead of the height.",
       "display": true
     },
     {
       "category": "Usage, Errors & Visuals",
       "question": "What units are supported in this calculator?",
-      "answer": "25 distinct imperial, metric, and astronomical units! Dropdowns span from micrometers and nanometers up to lightyears and megaparsecs.",
+      "answer": "25 units are supported, from micrometers and nanometers up to light years and megaparsecs, covering imperial, metric, and astronomical units.",
       "display": true
     },
     {
       "category": "Usage, Errors & Visuals",
       "question": "Can I convert between units automatically?",
-      "answer": "Yes. Mix nanometers with yards seamlessly-the calculation matrix standardizes boundaries, calculates, and elegantly outputs formatted scaled variants instantly.",
+      "answer": "Yes. You can mix units, for example nanometers with yards, and the calculator converts everything to one unit before solving.",
       "display": true
     },
     {
       "category": "Usage, Errors & Visuals",
       "question": "How accurate are the results?",
-      "answer": "Output floats are bounded strictly to 4 decimal places utilizing epsilon precision arrays to mask trailing binary floating errors without destroying accuracy tolerances.",
+      "answer": "Results are rounded to 4 decimal places for display, while the internal calculation keeps full precision.",
       "display": true
     },
     {
       "category": "Usage, Errors & Visuals",
       "question": "Does the calculator round values or show exact answers?",
-      "answer": "The system rounds to 4 explicit decimal units to display a cleaner UX, smoothing out irrational roots implicitly while still leaving exact computational fragments internally hidden.",
+      "answer": "Yes, it rounds displayed answers to 4 decimal places. The full-precision value stays available in the calculation.",
       "display": true
     },
     {
       "category": "Usage, Errors & Visuals",
       "question": "Why am I getting an invalid input error?",
-      "answer": "You very likely entered boundaries forming a geometric impossibility. For instance, ensuring hypotenuse c is greater than legs a or b eliminates 90% of invalid inputs.",
+      "answer": "Your inputs probably cannot form a real triangle. The most common mistake is a hypotenuse c that is not longer than legs a and b.",
       "display": true
     },
     {
       "category": "Usage, Errors & Visuals",
       "question": "What happens if my inputs do not form a valid triangle?",
-      "answer": "Calculations will instantly crash-safely, highlighting standard red alert markers underneath offending input arrays specifying precisely which geometric axiom was violated.",
+      "answer": "You will see a red message under the input explaining exactly what is wrong with your numbers.",
       "display": true
     },
     {
       "category": "Usage, Errors & Visuals",
       "question": "Does the calculator show step-by-step solutions?",
-      "answer": "We are incredibly proud to feature full step-by-step analytical tracing for every single formula tool, rendering textbook-style mathematical execution breakdowns.",
+      "answer": "Yes. Every formula tool shows a full step-by-step solution, written like a textbook walkthrough.",
       "display": true
     },
     {
@@ -195,19 +195,19 @@
     {
       "category": "General Information",
       "question": "How do I calculate the hypotenuse with one side and one angle?",
-      "answer": "Use the c = a / sin(A) equivalent in the hub. Pick what you know and it outputs accurate hypotenuses instantly.",
+      "answer": "In the hub, use the mode based on c = a / sin(A). Pick the values you know, and it calculates the hypotenuse.",
       "display": true
     },
     {
       "category": "General Information",
       "question": "How do I find a missing side of a right triangle?",
-      "answer": "Depending on information on hand, rely on Leg From Hypotenuse solvers (Pythagorean derivatives) or Trig-based Side solvers navigating exact configurations.",
+      "answer": "If you know two sides, use a Leg From Hypotenuse solver. If you know one side and one angle, use a Trig-based Side solver.",
       "display": true
     },
     {
       "category": "General Information",
       "question": "How do I calculate an angle of a triangle using sides?",
-      "answer": "Any configuration comparing 2 sides unlocks an inverse trigonometric identity array mapped directly to angular metrics spanning Inverse Trig formulas.",
+      "answer": "Enter any two sides, and the calculator uses inverse trig (arcsin, arccos, or arctan) to find the angle.",
       "display": true
     },
     {
@@ -219,25 +219,25 @@
     {
       "category": "Real World Application",
       "question": "Can I use this tool for homework or exams?",
-      "answer": "Absolutely. The explicit Step-By-Step Solution feature allows educators and students alike to verify the manual handwritten execution phases alongside automated geometric visual proofs.",
+      "answer": "Yes. The step-by-step solutions show every stage of the working, so you can check your handwritten answers against them.",
       "display": true
     },
     {
       "category": "Real World Application",
       "question": "Where are right triangles used in real life?",
-      "answer": "Architectural structural trusses, surveyor triangulation frameworks, celestial distance calculations, topographical layouts, and essentially all fundamental 2D Cartesian mapping algorithms heavily rely on them.",
+      "answer": "They are used in roof trusses, land surveying, navigation, construction layouts, and map coordinates, anywhere right angles are measured.",
       "display": true
     },
     {
       "category": "Real World Application",
       "question": "Can I use this calculator for construction or engineering problems?",
-      "answer": "Yes, especially with the embedded support for fractions and dimensional unit conversions seamlessly accommodating construction blueprints demanding absolute fractional tolerances.",
+      "answer": "Yes. It supports fractions and unit conversions, which suits construction measurements and blueprint dimensions.",
       "display": true
     },
     {
       "category": "Real World Application",
       "question": "What makes this calculator different from others?",
-      "answer": "We pair rigorous calculation accuracy with immersive, visually reactive vector layouts and transparent step-by-step tracking-bringing textbook logic directly into premium interactive workflows.",
+      "answer": "It combines accurate results with step-by-step solutions and a live diagram that redraws itself for your exact numbers.",
       "display": true
     }
   ],

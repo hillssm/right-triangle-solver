@@ -125,7 +125,8 @@ const localizeGroupedPage = (
       inputTips: Array.isArray(contentCopy.inputTips)
         ? contentCopy.inputTips
         : page.content.inputTips,
-      proTip: pick(contentCopy, 'proTip', page.content.proTip)
+      proTip: pick(contentCopy, 'proTip', page.content.proTip),
+      guidance: pick(contentCopy, 'guidance', page.content.guidance)
     }
   };
 };
@@ -645,6 +646,9 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
         <p>{activePage.content!.intro}</p>
         <h2>{sectionHeading(activePage.h2[1])}</h2>
         <p>{activePage.content!.method}</p>
+        {activePage.content!.guidance && (
+          <p><strong>{pick(groupedUi, 'guidanceLabel', 'Which Mode To Pick:')}</strong> {activePage.content!.guidance}</p>
+        )}
 
         <h3>{sectionHeading(pick(groupedUi, 'whereThisCalculatorHelps', 'Where This Calculator Helps'), 'useCases')}</h3>
         <ul>

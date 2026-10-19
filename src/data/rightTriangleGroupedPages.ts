@@ -24,6 +24,7 @@ export type GroupedCalculatorPage = {
     useCases: string[];
     inputTips: string[];
     proTip: string;
+    guidance?: string;
   };
 };
 
@@ -113,7 +114,8 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
         'Round only at the final step to avoid accumulated precision errors.'
       ],
       proTip:
-        'If your triangle is close to a known triple like 3-4-5 or 5-12-13, compare results as a quick sanity check.'
+        'If your triangle is close to a known triple like 3-4-5 or 5-12-13, compare results as a quick sanity check.',
+      guidance: 'Choosing a mode: pick hypotenuse when you know both legs, or missing-leg when you know the hypotenuse and one leg. If you only know one side and one angle, use the side-from-angle page instead.',
     }
   },
   {
@@ -147,7 +149,8 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
         '<a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">Semiperimeter</a> should always be exactly half of the computed <a href="/right-triangle-perimeter-calculator/" class="text-primary hover:underline">perimeter</a>.'
       ],
       proTip:
-        'Use <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> as a checkpoint value before moving into <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-by-<a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a> methods.'
+        'Use <a href="/right-triangle-semiperimeter-calculator/" class="text-primary hover:underline">semiperimeter</a> as a checkpoint value before moving into <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-by-<a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a> methods.',
+      guidance: 'Perimeter is most useful as a cross-check: if two different methods give the same perimeter, your triangle is consistent. Semiperimeter appears in area formulas, so solve it here first when you need area from inradius.',
     }
   },
   {
@@ -181,7 +184,8 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
         'For sine and cosine, the leg used in the numerator must be smaller than the hypotenuse.'
       ],
       proTip:
-        'Compare tan(A) with sin(A)/cos(A) as a fast consistency check when debugging inputs.'
+        'Compare tan(A) with sin(A)/cos(A) as a fast consistency check when debugging inputs.',
+      guidance: 'Pick the ratio from the sides you know: sine for opposite over hypotenuse, cosine for adjacent over hypotenuse, tangent for opposite over adjacent. All six ratios describe the same angle, so any one identifies it.',
     }
   },
   {
@@ -220,7 +224,8 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
         'If one acute angle is known, compute the other directly using 90 degrees minus that value.'
       ],
       proTip:
-        'When possible, compute the same angle with two ratio methods to confirm measurement quality.'
+        'When possible, compute the same angle with two ratio methods to confirm measurement quality.',
+      guidance: 'Arcsin, arccos and arctan all give the same angle when used correctly. Use arcsin when you know opposite and hypotenuse, arccos for adjacent and hypotenuse, arctan when you know both legs. Then get the second angle from 90 minus the first.',
     }
   },
   {
@@ -254,7 +259,8 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
         'Avoid near-90-degree <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> inputs in tangent modes when precision is critical.'
       ],
       proTip:
-        'After solving one <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, use the side <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> to cross-check the full triangle.'
+        'After solving one <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, use the side <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> to cross-check the full triangle.',
+      guidance: 'Match the mode to your known angle: use angle A modes when A is known, angle B modes when B is known. Remember that the hypotenuse is always the longest side, so if your result violates that, the inputs were inconsistent.',
     }
   },
   {
@@ -288,7 +294,8 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
         'If using <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-based area, ensure the angle is the included angle for that formula mode.'
       ],
       proTip:
-        'For high confidence, compute area with two different modes and compare the results.'
+        'For high confidence, compute area with two different modes and compare the results.',
+      guidance: 'Which area method to pick: legs when you have both sides (exact), hypotenuse plus angle when working from trig data, inradius times semiperimeter as an independent cross-check. Two different methods giving the same area is the strongest verification.',
     }
   },
   {
@@ -327,7 +334,8 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
         'Altitude in a right triangle should be less than both leg lengths.'
       ],
       proTip:
-        'If you know p and q, also compute c = p + q to validate segment consistency.'
+        'If you know p and q, also compute c = p + q to validate segment consistency.',
+      guidance: 'The altitude from the right angle splits the hypotenuse into two projections. If you know the legs, use the legs method; if you know the projections p and q, the altitude is the geometric mean of the two. The strict mode rejects inputs that cannot form a valid right triangle.',
     }
   },
   {
@@ -366,7 +374,8 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
         'After solving a leg from projection, verify with Pythagorean <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> relations.'
       ],
       proTip:
-        'Pair this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> with <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> mode to verify h^2 = pq on the same triangle.'
+        'Pair this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> with <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> mode to verify h^2 = pq on the same triangle.',
+      guidance: 'Projections p and q always add up to the hypotenuse c. Use projection modes when working from altitude or leg data, and leg-from-projection modes when you know c and one projection. Every result is checked against the Pythagorean theorem.',
     }
   },
   {
@@ -405,7 +414,8 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
         '<a href="/right-triangle-inradius-calculator/" class="text-primary hover:underline">Inradius</a> should always return a positive value for a valid right triangle.'
       ],
       proTip:
-        'If radius values look unusual, re-check <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> validity with the side <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> first.'
+        'If radius values look unusual, re-check <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> validity with the side <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> first.',
+      guidance: 'Inradius comes from the sides (r = (a + b - c) / 2) and circumradius is always half the hypotenuse (R = c / 2). If you need both, solve the sides first, then each radius follows directly. The strict mode rejects impossible triangles.',
     }
   },
   {
@@ -439,7 +449,8 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
         'Keep radicals exact during intermediate steps, then round at the end if needed.'
       ],
       proTip:
-        'Use special-triangle output as a benchmark to check <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a> from field data.'
+        'Use special-triangle output as a benchmark to check <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a> from field data.',
+      guidance: '45-45-90 triangles have equal legs with hypotenuse equal to leg times root 2. 30-60-90 triangles have sides in the ratio 1 : root 3 : 2. Recognizing these patterns lets you solve without a calculator and verify calculator results instantly.',
     }
   }
 ];

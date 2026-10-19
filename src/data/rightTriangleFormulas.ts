@@ -836,7 +836,7 @@ export const RIGHT_TRIANGLE_FORMULAS: RightTriangleFormula[] = [
     variables: ['a = leg', 'b = leg', 'c = hypotenuse', 'A = angle', 'B = angle'],
     notes: ['At least one of the two known values must be a side length.'],
     calculator: {
-      kind: 'general_solver', outputLabel: 'Solved triangle', outputUnit: '',
+      kind: 'general_solver', outputLabel: 'Complete triangle', outputUnit: '',
       fields: [
         { key: 'a', label: 'Leg a', min: 0 },
         { key: 'b', label: 'Leg b', min: 0 },

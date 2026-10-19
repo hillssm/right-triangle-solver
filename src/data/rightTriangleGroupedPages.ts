@@ -93,9 +93,9 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
     includedToolIds: [1, 2, 3],
     intent: 'Find any missing side (a, b, or c).',
     relatedSlugs: [
-      'right-triangle-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
-      'right-triangle-side-from-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
-      'right-triangle-<a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a>-calculator'
+      'right-triangle-angle-calculator',
+      'right-triangle-side-from-angle-calculator',
+      'right-triangle-measurements-calculator'
     ],
     content: {
       intro:
@@ -127,9 +127,9 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
     includedToolIds: [5, 6],
     intent: 'Calculate right triangle perimeter and semiperimeter.',
     relatedSlugs: [
-      'right-triangle-<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-calculator',
-      'right-triangle-<a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
-      'right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>'
+      'right-triangle-area-calculator',
+      'right-triangle-radius-calculator',
+      'right-triangle-side-calculator'
     ],
     content: {
       intro:
@@ -161,9 +161,9 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
     includedToolIds: [7, 8, 9, 18, 19, 20],
     intent: 'Calculate sine, cosine, tangent, secant, cosecant and cotangent for any right triangle angle with step-by-step solutions.',
     relatedSlugs: [
-      'right-triangle-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
-      'right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-from-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
-      '<a href="/special-right-triangle-calculator/" class="text-primary hover:underline">special</a>-right-triangle-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>'
+      'right-triangle-angle-calculator',
+      'right-triangle-side-from-angle-calculator',
+      'special-right-triangle-calculator'
     ],
     content: {
       intro:
@@ -200,9 +200,9 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       acuteAngle: 'Angle must be between 0 and 90 degrees.'
     },
     relatedSlugs: [
-      'right-triangle-trig-ratios-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
-      'right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-from-angle-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
-      'right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>'
+      'right-triangle-trig-ratios-calculator',
+      'right-triangle-side-from-angle-calculator',
+      'right-triangle-side-calculator'
     ],
     content: {
       intro:
@@ -234,9 +234,9 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
     includedToolIds: [21, 22, 23, 24],
     intent: 'Find side using angle.',
     relatedSlugs: [
-      'right-triangle-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
-      'right-triangle-trig-ratios-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
-      'right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>'
+      'right-triangle-angle-calculator',
+      'right-triangle-trig-ratios-calculator',
+      'right-triangle-side-calculator'
     ],
     content: {
       intro:
@@ -268,9 +268,9 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
     includedToolIds: [4, 27, 28, 29, 31],
     intent: 'Calculate the area of a right triangle from legs, hypotenuse, angles, inradius or altitude, with step-by-step solutions.',
     relatedSlugs: [
-      'right-triangle-<a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a>-calculator',
-      'right-triangle-<a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>-calculator',
-      'right-triangle-<a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>'
+      'right-triangle-measurements-calculator',
+      'right-triangle-altitude-calculator',
+      'right-triangle-radius-calculator'
     ],
     content: {
       intro:
@@ -307,9 +307,9 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       hypotenuseLongest: 'The hypotenuse c must be the longest side.'
     },
     relatedSlugs: [
-      'right-triangle-<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-calculator',
-      'right-triangle-<a href="/right-triangle-projection-calculator/" class="text-primary hover:underline">projection</a>-calculator',
-      'right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>'
+      'right-triangle-area-calculator',
+      'right-triangle-projection-calculator',
+      'right-triangle-side-calculator'
     ],
     content: {
       intro:
@@ -346,9 +346,9 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       hypotenuseLongest: 'The hypotenuse c must be the longest side.'
     },
     relatedSlugs: [
-      'right-triangle-<a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a>-calculator',
-      'right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
-      'right-triangle-<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-calculator'
+      'right-triangle-altitude-calculator',
+      'right-triangle-side-calculator',
+      'right-triangle-area-calculator'
     ],
     content: {
       intro:
@@ -385,9 +385,9 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
       hypotenuseLongest: 'The hypotenuse c must be the longest side.'
     },
     relatedSlugs: [
-      'right-triangle-<a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a>-calculator',
-      'right-triangle-<a href="/right-triangle-area-calculator/" class="text-primary hover:underline">area</a>-calculator',
-      'right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>'
+      'right-triangle-measurements-calculator',
+      'right-triangle-area-calculator',
+      'right-triangle-side-calculator'
     ],
     content: {
       intro:
@@ -419,9 +419,9 @@ export const RIGHT_TRIANGLE_GROUPED_PAGES: GroupedCalculatorPage[] = [
     includedToolIds: [39, 40, 41, 42],
     intent: 'Solve special right triangles quickly.',
     relatedSlugs: [
-      'right-triangle-<a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
-      'right-triangle-trig-ratios-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>',
-      'right-triangle-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>-<a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>'
+      'right-triangle-side-calculator',
+      'right-triangle-trig-ratios-calculator',
+      'right-triangle-angle-calculator'
     ],
     content: {
       intro:
@@ -452,7 +452,7 @@ export const RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE: GroupedCalculatorHubPage = {
     'Solve Any Right Triangle',
     'All-in-One Triangle Solver'
   ],
-  purpose: 'Hub page linking to all grouped calculator pages.'
+  purpose: 'Enter any two values of a right triangle and solve for every missing side and angle, or jump to a focused calculator.'
 };
 
 const FORMULA_BY_SLUG = new Map(

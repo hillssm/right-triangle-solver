@@ -1,0 +1,162 @@
+---
+title: "Angles in a Right Triangle: How to Find Missing Angles"
+description: "The angles in a right triangle are 90 degrees plus two acute angles that add to 90. Find any missing angle from one angle, two sides, or a ratio, step by step."
+image: "/images/blog/angles-in-a-right-triangle-hero.svg"
+date: 2026-10-22
+author: "Math Expert"
+category: "Geometry"
+---
+
+import Faq from 'theme/components/Faq.astro';
+
+
+Every right triangle has the same angle pattern: one angle of exactly **90 degrees**, and two acute angles that **add up to 90 degrees** between them. That single fact answers most questions about the angles in a right triangle. If one acute angle is 35°, the other is 55°, no trigonometry required. When you know the sides instead of an angle, inverse trigonometry does the work: in a 3-4-5 triangle the two acute angles are 36.87° and 53.13°. This article covers both routes, the formulas behind them, and the angle values of the triangles that come up most often.
+
+## What Are the Angles in a Right Triangle?
+
+A right triangle always has:
+
+- **One right angle of 90°**, marked with a small square in the corner. This article calls it angle C.
+- **Two acute angles**, each strictly between 0° and 90°. This article calls them A and B, with A opposite side a and B opposite side b.
+- **A total of 180°**, like every triangle: A + B + C = 180°.
+
+Because C takes 90° of the total, the two acute angles are **complementary**:
+
+**A + B = 90°**
+
+Three consequences are worth memorizing. A right triangle can never contain an obtuse angle, since 90° plus anything over 90° already passes 180°. It can never have two right angles, for the same reason. And the larger acute angle always faces the longer leg, so you can sanity-check any result against the drawing. When you only need the missing angle computed, the [Right Triangle Missing Angle Calculator](/right-triangle-missing-angle-calculator/) applies the complementary rule directly.
+
+## Why the Acute Angles Add to 90 Degrees
+
+The angles of any triangle sum to 180°. A right triangle spends 90° of that budget on the right angle, which leaves exactly 90° for the other two corners combined. That is the whole proof, and it is also why the two acute angles are called complementary: in geometry, two angles are complementary when their measures sum to 90°.
+
+This rule quietly shapes everything else in the article. It means one known acute angle is enough to finish the job. It means an equilateral triangle (three 60° angles) can never be a right triangle. And it means the angle answers for any right triangle, whatever its size, are locked to a pair of numbers that sum to 90. If the parts of a right triangle are still fuzzy, our guide on [what a right triangle is](/blog/what-is-a-right-triangle/) lays out the sides and corners before you go further.
+
+## Angle Formulas at a Glance
+
+| What You Know | Formula | Notes |
+|---|---|---|
+| The other acute angle | B = 90° − A | Fastest method; no trig needed |
+| Opposite side and hypotenuse | A = arcsin(a/c) | A is the angle opposite side a |
+| Adjacent side and hypotenuse | A = arccos(b/c) | b is the leg next to angle A |
+| Opposite and adjacent sides | A = arctan(a/b) | Works without the hypotenuse |
+
+The pattern to notice: arcsin, arccos, and arctan are the inverse operations of the ordinary trig ratios. The ordinary ratio turns an angle into a number; the inverse turns a number back into an angle.
+
+## Method 1: Find an Angle From the Other Angle
+
+**When to use it:** you know one acute angle and want the other.
+
+**Formula:** B = 90° − A. One subtraction, nothing else.
+
+**Worked example.** Given: A = 35°. Find: B.
+Step 1: subtract from 90, 90 − 35 = 55.
+**Answer: B = 55°.**
+
+**Tip:** run this check even when you find an angle by trigonometry. If your two acute angles do not sum to 90°, one of them is wrong, and this check costs five seconds.
+
+## Method 2: Find an Angle From Two Sides
+
+**When to use it:** you know two sides of the triangle and no angles.
+
+**How it works:** the two sides you have decide which inverse function to use. Opposite and hypotenuse go with arcsin. Adjacent and hypotenuse go with arccos. Opposite and adjacent go with arctan, which is handy when the hypotenuse is the unknown you do not have yet. The plain ratios themselves are covered in depth in our [sine, cosine, and tangent guide](/blog/sine-cosine-tangent/); this method is about running them backwards.
+
+**Worked example 1 (arctan).** Given: the leg opposite angle A is 5, and the leg adjacent to A is 12. Find: A.
+Step 1: tan(A) = opposite/adjacent = 5/12 ≈ 0.4167.
+Step 2: A = arctan(0.4167) ≈ 22.62°.
+**Answer: A ≈ 22.62°, and by Method 1, B = 90° − 22.62° ≈ 67.38°.**
+
+**Worked example 2 (arcsin).** Given: the leg opposite angle A is 7, and the hypotenuse is 25. Find: A.
+Step 1: sin(A) = opposite/hypotenuse = 7/25 = 0.28.
+Step 2: A = arcsin(0.28) ≈ 16.26°.
+**Answer: A ≈ 16.26°, and B ≈ 73.74°.**
+
+On a calculator these inverses are the sin⁻¹, cos⁻¹, and tan⁻¹ keys, usually behind a shift or second-function button. The [Angle from Tangent Calculator](/right-triangle-angle-from-tangent-calculator/) performs the arctan version with the sides labeled for you.
+
+**Common mistake:** pressing sin instead of sin⁻¹. The forward function answers a different question: sin(30°) = 0.5 turns an angle into a ratio. Only the inverse turns a ratio back into an angle.
+
+## Angles of Common Right Triangles
+
+The table below lists the acute angles of the integer-sided triangles that appear constantly in homework and on job sites. The smaller angle faces the shorter leg.
+
+| Sides | Smaller Angle | Larger Angle |
+|---|---|---|
+| 3-4-5 | 36.87° | 53.13° |
+| 5-12-13 | 22.62° | 67.38° |
+| 8-15-17 | 28.07° | 61.93° |
+| 7-24-25 | 16.26° | 73.74° |
+| 20-21-29 | 43.60° | 46.40° |
+| 9-40-41 | 12.68° | 77.32° |
+
+Two lessons hide in this table. First, angles depend on the shape of the triangle, not its size: a 6-8-10 triangle has exactly the same angles as a 3-4-5, because it is the same shape scaled up. Second, angles are not proportional to sides. The 3-4-5 triangle does not split its 90° in a 3-to-4 ratio (that would give 38.57° and 51.43°); the true split, 36.87° and 53.13°, comes from the inverse ratios, not from dividing in proportion.
+
+## Special Cases Worth Knowing
+
+**Isosceles right triangle: 45° and 45°.** When the two legs are equal, the angles facing them are equal too, and the only way to split 90° equally is 45° each. This is half of a square cut along its diagonal.
+
+**30-60-90 triangle: 30° and 60°.** Take an equilateral triangle, where every angle is 60°, and cut it in half from one corner. The cut creates a right triangle whose angles are 90°, 60°, and half of 60°, which is 30°. The 30° angle faces the short leg, which is exactly half the hypotenuse.
+
+These two families cover a large share of textbook problems, and both are worth recognizing on sight: equal legs mean 45-45-90, and a hypotenuse double the short leg means 30-60-90.
+
+## Real-World Angle Examples
+
+**Ramp slope.** A loading ramp rises 3 meters over a horizontal run of 12 meters. The ramp surface is the hypotenuse, the rise is the side opposite the ground angle, and the run is the adjacent side. The angle between the ramp and the ground is arctan(3/12) = arctan(0.25) ≈ **14.04°**. Accessibility rules are usually written as slopes (rise over run), and this conversion is how a slope becomes an angle.
+
+**Ladder against a wall.** A 5-meter ladder with its foot 3 meters from the wall forms a right triangle: ladder as hypotenuse, ground distance as the adjacent side of the ground angle. That angle is arccos(3/5) = **53.13°**. Ladder safety guidance is often stated as an angle to the ground, and this is the calculation behind it. Note the same 3-4-5 shape as the table above, which is why the familiar 53.13° appears again.
+
+## Common Mistakes
+
+- **Assuming angles scale with the sides.** Doubling a leg does not double the angle facing it. Angles come from ratios through the inverse functions, and the relationship is not proportional.
+- **Using sin, cos, or tan instead of the inverse.** Finding an angle from sides always needs arcsin, arccos, or arctan. The forward functions find a ratio from an angle, which is the reverse problem.
+- **Swapping opposite and adjacent.** Those labels depend on which angle you picked as the reference. Switch the angle you are solving for, and the two legs trade labels. Name the target angle before choosing the ratio.
+- **Forgetting the complementary check.** The two acute angles must sum to 90°. If yours sum to anything else, the error is in the trig step, and Method 1 will expose it immediately.
+- **Calculator in the wrong mode.** Inverse trig results come out in degrees or radians depending on the mode. A result like 0.3948 is the radian form of 22.62°, not a different answer.
+- **Expecting an obtuse angle.** A right triangle's non-right angles are always acute. An answer over 90° for either of them means the setup was wrong from the start.
+- **Rounding mid-calculation.** Carry the ratio at full precision into the inverse function. Rounding 5/12 to 0.42 first shifts the answer by a few tenths of a degree.
+
+<Faq heading="Frequently Asked Questions" description="Short answers to the questions students ask most about right triangle angles." items={[
+  {
+    "question": "What are the angles in a right triangle?",
+    "answer": "One angle is always exactly 90 degrees. The other two are acute angles, each between 0 and 90 degrees, and they always add up to 90 degrees because the three angles of any triangle total 180. Beyond that, the acute angles depend on the triangle's shape: an isosceles right triangle has 45 and 45, while a 3-4-5 triangle has 36.87 and 53.13 degrees."
+  },
+  {
+    "question": "Do the angles in a right triangle add up to 180 degrees?",
+    "answer": "Yes. The angle sum of every triangle is 180 degrees, and a right triangle is no exception. The difference is how the total is distributed: the right angle takes 90 degrees by definition, leaving exactly 90 degrees for the other two angles combined. That is why the two acute angles are called complementary, and why knowing one of them immediately gives you the other by subtraction from 90."
+  },
+  {
+    "question": "Can a right triangle have an obtuse angle?",
+    "answer": "No. An obtuse angle is larger than 90 degrees, and a right triangle already contains a 90 degree angle. The two together would exceed 180 degrees before the third angle is even counted. If a problem seems to produce an obtuse angle inside a right triangle, the triangle was set up incorrectly, usually because a side was labeled as the hypotenuse when it is actually a leg."
+  },
+  {
+    "question": "How do you find a missing angle when you know one angle?",
+    "answer": "Subtract it from 90 degrees. The two acute angles of a right triangle are complementary, so the missing one is simply 90 minus the known one. If an angle is 35 degrees, the other acute angle is 55 degrees. This works in both directions and needs no trigonometry at all, which also makes it the fastest way to check an angle you found by any other method."
+  },
+  {
+    "question": "How do you find a missing angle when you know two sides?",
+    "answer": "Form the ratio of the two sides and apply the matching inverse trig function. Use arcsin for opposite over hypotenuse, arccos for adjacent over hypotenuse, and arctan for opposite over adjacent. For example, with an opposite side of 5 and an adjacent side of 12, the angle is arctan(5/12), about 22.62 degrees. The second acute angle then follows by subtracting from 90."
+  },
+  {
+    "question": "Which trig function should you use to find an angle?",
+    "answer": "Let the two sides you know decide. If they are the opposite side and the hypotenuse, use arcsin. If they are the adjacent side and the hypotenuse, use arccos. If they are the opposite and adjacent legs, use arctan, which has the advantage of not needing the hypotenuse at all. The naming follows the ordinary SOHCAHTOA ratios; the inverse function simply runs the chosen ratio backwards."
+  },
+  {
+    "question": "What are the angles of an isosceles right triangle?",
+    "answer": "They are 90 degrees, 45 degrees, and 45 degrees. The two legs of an isosceles right triangle are equal, and equal sides face equal angles, so the two acute angles must match. Since they also have to sum to 90 degrees, each one is exactly half of that, 45 degrees. Picture a square cut along its diagonal."
+  },
+  {
+    "question": "What are the angles of a 3-4-5 triangle?",
+    "answer": "The angle opposite the side of length 3 is about 36.87 degrees, the angle opposite the side of length 4 is about 53.13 degrees, and the third angle, opposite the hypotenuse of length 5, is the right angle of 90 degrees. The two acute values come from arcsin(3/5) and arcsin(4/5). Any scaled copy, such as 6-8-10 or 9-12-15, has exactly the same three angles."
+  },
+  {
+    "question": "How do you express right triangle angles in radians?",
+    "answer": "Multiply the degree measure by pi divided by 180. The right angle of 90 degrees becomes pi over 2, about 1.5708 radians, and the two acute angles sum to that same value instead of 90. The 3-4-5 triangle's acute angles are about 0.6435 and 0.9273 radians. Radians are the default in higher mathematics and in most programming languages, so check which unit a problem or a calculator expects."
+  },
+  {
+    "question": "Which calculator should you use to find a missing angle?",
+    "answer": "Use the Right Triangle Missing Angle Calculator on this site when you know one acute angle and want its complement, and the angle-from-sine, angle-from-cosine, or angle-from-tangent calculators when you know two sides instead. Each one applies the formulas from this article and shows the same complementary relationship, so you can compare its output with a hand calculation before trusting either one."
+  }
+]} />
+
+## Conclusion
+
+The angle structure of a right triangle rests on one line: the right angle takes 90°, so the two acute angles are complementary and sum to 90°. From there, every problem is either a subtraction (one angle known) or an inverse trig function chosen by the two sides you have (arcsin, arccos, or arctan). Keep the opposite and adjacent labels tied to the angle you are solving for, run the complementary check at the end, and the answers will hold up. For the arithmetic itself, the [Right Triangle Missing Angle Calculator](/right-triangle-missing-angle-calculator/) and the angle-from-ratio calculators on this site apply the same formulas.

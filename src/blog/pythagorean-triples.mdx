@@ -1,0 +1,175 @@
+---
+title: "Pythagorean Triples: Complete List, Formula, and Examples"
+description: "Pythagorean triples are integer sides of right triangles with a² + b² = c². Full primitive list to 100, Euclid's formula, and checking any three numbers."
+image: "/images/blog/pythagorean-triples-hero.svg"
+date: 2026-10-22
+author: "Math Expert"
+category: "Geometry"
+---
+
+import Faq from 'theme/components/Faq.astro';
+
+
+A **Pythagorean triple** is a set of three positive whole numbers (a, b, c) that fit the Pythagorean theorem exactly: **a² + b² = c²**. The smallest and most famous is (3, 4, 5), because 9 + 16 = 25, with nothing left over and no decimals anywhere. Triples matter because they turn right triangles into whole-number arithmetic: no square roots, no rounding, and answers you can check in your head. This article gives the complete list of primitive triples with hypotenuse up to 100, the formula that generates all of them, and a quick test for whether any three numbers form a triple.
+
+## What Is a Pythagorean Triple?
+
+Three conditions define a Pythagorean triple:
+
+- All three numbers are **positive integers** (whole numbers, no fractions or decimals).
+- They satisfy **a² + b² = c²**, the [Pythagorean theorem](/blog/pythagorean-theorem-formula/) itself.
+- The largest number is **c**, the hypotenuse. The two legs a and b can appear in either order.
+
+A triple is called **primitive** when its three numbers share no common factor greater than 1. (3, 4, 5) is primitive. (6, 8, 10) is a genuine triple, since 36 + 64 = 100, but it is not primitive: all three numbers divide by 2, and underneath it sits (3, 4, 5) scaled up. Every non-primitive triple is a scaled copy of exactly one primitive triple, which is why the primitive list below is the master list.
+
+Two near-misses show why both conditions matter. (1, 1, √2) fits the theorem perfectly, but √2 is not an integer, so it is not a triple. (4, 5, 6) is all integers, but 16 + 25 = 41, not 36, so it fails the equation and is not a triple either.
+
+## List of Primitive Pythagorean Triples (Hypotenuse up to 100)
+
+There are exactly **16 primitive triples** with hypotenuse at most 100. Every row below was verified against a² + b² = c².
+
+| Leg a | Leg b | Hypotenuse c |
+|---|---|---|
+| 3 | 4 | 5 |
+| 5 | 12 | 13 |
+| 8 | 15 | 17 |
+| 7 | 24 | 25 |
+| 20 | 21 | 29 |
+| 12 | 35 | 37 |
+| 9 | 40 | 41 |
+| 28 | 45 | 53 |
+| 11 | 60 | 61 |
+| 16 | 63 | 65 |
+| 33 | 56 | 65 |
+| 48 | 55 | 73 |
+| 13 | 84 | 85 |
+| 36 | 77 | 85 |
+| 39 | 80 | 89 |
+| 65 | 72 | 97 |
+
+Two details in this list surprise people. The hypotenuse 65 appears twice, in (16, 63, 65) and (33, 56, 65), and so does 85. A single hypotenuse can belong to two different primitive triples, because it can be written as a sum of two squares in two different ways. Also notice that the legs get lopsided as the list grows: (65, 72, 97) is nearly even, while (13, 84, 85) is a sliver of a triangle. Both are equally valid.
+
+## Common Multiples Worth Memorizing
+
+Scaling a primitive triple by any whole number produces another triple, so the full family is infinite. These scaled versions show up constantly in textbooks and on job sites:
+
+| Triple | Built From |
+|---|---|
+| 6, 8, 10 | (3, 4, 5) × 2 |
+| 9, 12, 15 | (3, 4, 5) × 3 |
+| 12, 16, 20 | (3, 4, 5) × 4 |
+| 15, 20, 25 | (3, 4, 5) × 5 |
+| 18, 24, 30 | (3, 4, 5) × 6 |
+| 10, 24, 26 | (5, 12, 13) × 2 |
+| 20, 48, 52 | (5, 12, 13) × 4 |
+| 14, 48, 50 | (7, 24, 25) × 2 |
+
+Recognizing a scaled triple is a real time-saver. If a problem hands you legs of 9 and 12, seeing the (3, 4, 5) shape inside them tells you the hypotenuse is 15 before you compute anything. It also works in reverse for angles: a 9-12-15 triangle has the same angles as a 3-4-5, namely 36.87° and 53.13°, as the angle table in our [angles in a right triangle](/blog/angles-in-a-right-triangle/) guide shows.
+
+## How to Generate Triples: Euclid's Formula
+
+Scaling explains the multiples, but where do the primitive triples themselves come from? A formula attributed to Euclid generates all of them from two smaller numbers, m and n:
+
+**a = m² − n², b = 2mn, c = m² + n²**
+
+Pick any m greater than n, substitute, and the output is always a Pythagorean triple. It comes out **primitive** when three conditions hold: m and n share no common factor, and they are not both odd and not both even (one of each parity).
+
+| m | n | a = m² − n² | b = 2mn | c = m² + n² | Triple |
+|---|---|---|---|---|---|
+| 2 | 1 | 3 | 4 | 5 | (3, 4, 5) |
+| 3 | 2 | 5 | 12 | 13 | (5, 12, 13) |
+| 4 | 1 | 15 | 8 | 17 | (8, 15, 17) |
+| 4 | 3 | 7 | 24 | 25 | (7, 24, 25) |
+| 5 | 2 | 21 | 20 | 29 | (20, 21, 29) |
+| 5 | 4 | 9 | 40 | 41 | (9, 40, 41) |
+
+**Worked example.** Take m = 4 and n = 1. Then a = 16 − 1 = 15, b = 2 × 4 × 1 = 8, and c = 16 + 1 = 17. The triple is (8, 15, 17), and the check confirms it: 64 + 225 = 289 = 17².
+
+Watch what happens when the conditions break. With m = 3 and n = 1, both odd, the formula gives (8, 6, 10): still a triple, but every number is even, so it is just (3, 4, 5) doubled in disguise. With m = 4 and n = 2, which share a factor of 2, it gives (12, 16, 20), the (3, 4, 5) family again. The formula never fails to produce a triple; the conditions only decide whether the result is primitive or a repeat.
+
+## How to Check Whether Three Numbers Form a Triple
+
+1. **Put the largest number last.** It is the candidate hypotenuse c. The other two are the legs, in either order.
+2. **Square all three.**
+3. **Add the two smaller squares.** If the sum equals the largest square exactly, the numbers form a triple.
+
+**Example that passes.** (10, 24, 26): 100 + 576 = 676, and 26² = 676. It is a triple, and since all three numbers share a factor of 2, it is the non-primitive (5, 12, 13) doubled.
+
+**Example that fails.** (5, 11, 12): 25 + 121 = 146, but 12² = 144. Close is not enough; 146 does not equal 144, so these numbers form no right triangle at all. Near-misses like this are common in problem sets precisely because they punish guessing.
+
+The [Pythagorean Triples Calculator](/pythagorean-triples-calculator/) runs this check instantly and also tells you whether a passing triple is primitive.
+
+## The 3-4-5 Rule in Construction
+
+The oldest everyday use of a triple is squaring a corner: making sure two edges meet at a true right angle when laying out a foundation, a deck, or a tile floor. The method needs only a tape measure. Mark a point 3 units along one edge from the corner and 4 units along the other edge. The straight-line distance between the two marks is exactly 5 units when the corner is square; if it reads more or less, the corner is off, and you adjust until it reads 5.
+
+The geometry is just the (3, 4, 5) triple read backwards: if the sides satisfy a² + b² = c², the angle between them must be 90°. In practice, builders scale the triple up to the largest version that fits the layout, such as 6-8-10 or 12-16-20 feet, because longer tape runs make small measuring errors matter less in proportion. The same trick checks garden beds, fence lines, and formwork, anywhere a square corner matters and no square tool is big enough.
+
+## Patterns Every Primitive Triple Follows
+
+The 16 triples in the list obey a few strict rules, each one verified against every row:
+
+- **One leg is even, the other is odd.** A primitive triple never has two even legs (they would share a factor) or two odd legs (their squares would sum to a number that cannot be a perfect square).
+- **The hypotenuse is always odd.**
+- **One leg is divisible by 3.** In (20, 21, 29) it is 21; in (8, 15, 17) it is 15.
+- **One leg is divisible by 4.** Often the even leg does double duty, as with 4, 12, 20, and 24 in the list.
+- **One of the three numbers is divisible by 5.** Sometimes it is the hypotenuse, as in (3, 4, 5); sometimes a leg, as in (20, 21, 29).
+- **The product a × b × c is always divisible by 60**, a combined consequence of the rules above.
+
+These patterns make a fast screening test. A set like (14, 27, 30) fails on sight: the hypotenuse 30 is even, and two numbers are even, so it cannot be primitive no matter what the squares say.
+
+## Common Mistakes
+
+- **Calling a multiple primitive.** (6, 8, 10) is a triple but not a primitive one. Divide out the common factor first; if the numbers shrink, the triple was not primitive.
+- **Letting any side play hypotenuse.** The equation only works with the largest number as c. Testing (5, 13, 12) in that order gives 25 + 169 = 194 against 12² = 144, which fails, but the set is just (5, 12, 13) written out of order.
+- **Assuming consecutive numbers work.** (3, 4, 5) is the only triple of consecutive integers. The next candidates fail quickly: (4, 5, 6) gives 41 against 36. There is no (5, 6, 7) waiting to be found.
+- **Expecting equal legs.** No Pythagorean triple has a = b. That would force c = a√2, and √2 is not a whole number, so the hypotenuse can never come out an integer.
+- **Assuming every right triangle has integer sides.** Most do not. The 45-45-90 triangle with legs 1 and 1 has hypotenuse √2; triples are the special minority where everything lands on whole numbers.
+- **Thinking the list ends.** Sixteen primitives under 100 is a page limit, not a mathematical one. Euclid's formula and scaling together produce infinitely many triples.
+
+<Faq heading="Frequently Asked Questions" description="Short answers to the questions students ask most about Pythagorean triples." items={[
+  {
+    "question": "What is a Pythagorean triple?",
+    "answer": "It is a set of three positive integers (a, b, c) that satisfy a² + b² = c², which means they can be the side lengths of a right triangle with no fractions or decimals involved. The best known example is (3, 4, 5), since 9 + 16 = 25. The largest number is always the hypotenuse, and the two legs can be written in either order."
+  },
+  {
+    "question": "What is a primitive Pythagorean triple?",
+    "answer": "A primitive triple is one whose three numbers share no common factor greater than 1. (5, 12, 13) is primitive because no whole number above 1 divides all three. (6, 8, 10) is a triple but not a primitive one, since all three numbers divide by 2. Every non-primitive triple is a whole-number multiple of exactly one primitive triple, so the primitive list is the foundation of all the others."
+  },
+  {
+    "question": "How many Pythagorean triples are there?",
+    "answer": "Infinitely many. Euclid's formula produces a new primitive triple for suitable pairs of numbers m and n, and there is no largest choice of m. On top of that, any triple can be multiplied by any positive integer to make another one, so even the single family built on (3, 4, 5) never ends: (6, 8, 10), (9, 12, 15), (12, 16, 20), and so on without limit."
+  },
+  {
+    "question": "What is the smallest Pythagorean triple?",
+    "answer": "(3, 4, 5) is the smallest. Smaller pairings all fail: 1 and 2 give 1 + 4 = 5, 1 and 3 give 1 + 9 = 10, and 2 and 3 give 4 + 9 = 13, none of them a perfect square. The first pairing that works is 3 and 4 producing 5. That is why (3, 4, 5) is the triple used everywhere, from textbooks to construction layouts."
+  },
+  {
+    "question": "Is 6, 8, 10 a Pythagorean triple?",
+    "answer": "Yes. It satisfies the equation, since 36 + 64 = 100 and 10² = 100, so a triangle with sides 6, 8, and 10 is a genuine right triangle. What it is not is primitive: all three numbers share the factor 2, and dividing it out leaves (3, 4, 5). Questions about 6, 8, 10 usually test exactly this distinction."
+  },
+  {
+    "question": "How do you generate Pythagorean triples?",
+    "answer": "Use Euclid's formula with whole numbers m and n, m the larger: a = m² − n², b = 2mn, c = m² + n², which always produces a triple. It is primitive when m and n share no common factor and have opposite parity, one even and one odd. For example, m = 4 and n = 3 give a = 7, b = 24, c = 25."
+  },
+  {
+    "question": "Can a Pythagorean triple have two equal sides?",
+    "answer": "Not with the two legs equal. Equal legs would require a² + a² = c², so c would equal a times the square root of 2, and since that root is irrational, c can never be a whole number. The isosceles right triangle therefore has integer legs or an integer hypotenuse, never both. Nor can a leg equal the hypotenuse, which is strictly the longest side."
+  },
+  {
+    "question": "Is 3, 4, 5 the only triple of consecutive numbers?",
+    "answer": "Yes. Solving the equation for three consecutive integers, n² + (n + 1)² = (n + 2)², gives n = 3 as the only positive solution: (3, 4, 5). Every other run fails the test, some narrowly: (4, 5, 6) gives 16 + 25 = 41 against 36, and the gap only widens as the numbers grow, so no later run can catch up."
+  },
+  {
+    "question": "Do all right triangles have integer sides?",
+    "answer": "No, and most do not. A right triangle with legs 1 and 1 has hypotenuse √2, which is not an integer or even a fraction. Triples are the exception, not the rule: they are the specific shapes where the Pythagorean theorem happens to land on whole numbers. That rarity is what makes them useful: exact whole-number answers where other triangles need square roots and decimals."
+  },
+  {
+    "question": "Which Pythagorean triples calculator should you use?",
+    "answer": "Use the Pythagorean Triples Calculator on this site. Enter any three numbers and it checks them against a² + b² = c², reports whether they form a triple, and tells you whether the triple is primitive or a multiple of a smaller one. That last part is the detail hand calculations most often miss, and it is the fastest way to confirm a triple you generated with Euclid's formula."
+  }
+]} />
+
+## Conclusion
+
+A Pythagorean triple is the Pythagorean theorem landing exactly on whole numbers: a² + b² = c² with no decimals and nothing left over. The 16 primitive triples with hypotenuse up to 100 are the master list, every other triple is a scaled copy of one of them, and Euclid's formula generates the primitives themselves from two small numbers. Keep the definitions straight, primitive means no shared factor and c is always the largest number, and you can check, build, or recognize triples on sight. The [Pythagorean Triples Calculator](/pythagorean-triples-calculator/) confirms any set in one step.

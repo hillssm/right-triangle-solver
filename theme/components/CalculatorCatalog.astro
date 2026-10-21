@@ -83,12 +83,7 @@ const allCalculatorPages = [
 ---
 
 <section class="section-shell" aria-labelledby="calculator-catalog-heading">
-  <div class="flex items-center gap-3">
-    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/12 text-primary">
-      <span class="material-symbols-outlined text-xl">grid_view</span>
-    </div>
-    <h2 id="calculator-catalog-heading" class="text-2xl sm:text-3xl">{heading}</h2>
-  </div>
+  <h2 id="calculator-catalog-heading" class="text-2xl font-bold text-on-surface">{heading}</h2>
   <p class="mt-3 max-w-2xl text-sm text-on-surface-variant">
     {totalToolCount} {uiTools}
   </p>
@@ -121,7 +116,7 @@ const allCalculatorPages = [
               {getLocalizedPageIntent(page.slug, page.intent)}
             </p>
           </div>
-          <p class="relative z-10 mt-5 text-[10px] uppercase tracking-[0.2em] text-primary">{openToolLabel}</p>
+          <p class="btn-primary relative z-10 mt-5 w-fit px-4 py-2 text-[11px] uppercase tracking-[0.18em]">{openToolLabel}</p>
         </a>
       ))}
     </div>
@@ -154,7 +149,7 @@ const allCalculatorPages = [
                 {page.description}
               </p>
             </div>
-            <p class="relative z-10 mt-5 text-[10px] uppercase tracking-[0.2em] text-primary">{openToolLabel}</p>
+            <p class="btn-primary relative z-10 mt-5 w-fit px-4 py-2 text-[11px] uppercase tracking-[0.18em]">{openToolLabel}</p>
           </a>
         ))}
       </div>

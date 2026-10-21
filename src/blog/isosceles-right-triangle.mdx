@@ -1,0 +1,148 @@
+---
+title: "Isosceles Right Triangle: Equal Legs, 45° Angles, Formulas"
+description: "An isosceles right triangle has two equal legs and angles of 90, 45, and 45 degrees. Find any side from one known side, with formulas and worked examples."
+image: "/images/blog/isosceles-right-triangle-hero.svg"
+date: 2026-10-22
+author: "Math Expert"
+category: "Geometry"
+---
+
+import Faq from 'theme/components/Faq.astro';
+
+
+An **isosceles right triangle** is the right triangle with two equal sides: the two legs that form the right angle are the same length, its angles are **90°, 45°, and 45°**, and its hypotenuse is always the leg length multiplied by √2. That single ratio makes it the easiest right triangle to solve. If one leg is 5, the other leg is 5, the hypotenuse is 5√2 ≈ 7.07, and you are done: one known side fixes everything. This article covers why the equal sides must be the legs, the formulas for sides, area, and perimeter, and worked examples in both directions.
+
+## What Is an Isosceles Right Triangle?
+
+It is a right triangle in which the two legs are equal. Three facts follow immediately:
+
+- **The equal sides are the legs**, the sides that meet at the right angle. The hypotenuse can never be one of the equal pair, because the hypotenuse is strictly the longest side. If it equaled a leg, the third side would have to satisfy a² + a² = a², which is impossible for a real triangle.
+- **The angles are 90°, 45°, and 45°.** Equal sides face equal angles, and the two acute angles must sum to 90°, so each one is exactly half of that. Our [angles in a right triangle](/blog/angles-in-a-right-triangle/) guide shows the complementary rule behind this.
+- **It is exactly half of a square.** Cut any square along a diagonal and you get two isosceles right triangles. This picture explains most of the triangle's behavior, including its one line of symmetry, which runs from the right-angle corner to the middle of the hypotenuse.
+
+The shape also goes by its angle name, the **45-45-90 triangle**. The two names describe the same triangle from different directions, one by its sides and one by its angles.
+
+## The Side Ratio: 1 to 1 to √2
+
+Every isosceles right triangle, whatever its size, has sides in the same proportion:
+
+**leg : leg : hypotenuse = 1 : 1 : √2**
+
+The ratio comes straight from the Pythagorean theorem. Call each leg s. Then c² = s² + s² = 2s², so c = s√2. Since √2 ≈ 1.4142, the hypotenuse is always about 41 percent longer than a leg.
+
+| Leg s | Hypotenuse s√2 |
+|---|---|
+| 1 | 1.41 |
+| 2 | 2.83 |
+| 3 | 4.24 |
+| 4 | 5.66 |
+| 5 | 7.07 |
+| 6 | 8.49 |
+| 7 | 9.90 |
+| 8 | 11.31 |
+| 9 | 12.73 |
+| 10 | 14.14 |
+
+Because the shape never changes, a problem that gives you any one side has secretly given you all three. The two formulas sections below are just this ratio read in each direction.
+
+## Formulas From the Leg
+
+When a leg s is known:
+
+| Quantity | Formula | For s = 6 |
+|---|---|---|
+| Other leg | s | 6 |
+| Hypotenuse | s√2 | 8.49 |
+| Area | s²/2 | 18 |
+| Perimeter | s(2 + √2) | 20.49 |
+
+The area formula is the ordinary (base × height)/2 with the two legs as base and height, which is why it collapses to s²/2. The perimeter is the two legs plus the hypotenuse, s + s + s√2, factored into s(2 + √2).
+
+## Formulas From the Hypotenuse
+
+When the hypotenuse c is known, run the ratio backwards:
+
+| Quantity | Formula | For c = 14 |
+|---|---|---|
+| Each leg | c/√2 = c√2/2 | 9.90 |
+| Area | c²/4 | 49 |
+| Perimeter | c(√2 + 1) | 33.80 |
+
+Two of these deserve a second look. The leg formula has two forms, c/√2 and c√2/2, which are the same number written differently; textbooks prefer the second because it keeps the square root out of the denominator. The area formula c²/4 looks unrelated to s²/2 but is identical underneath: substituting s = c/√2 into s²/2 gives c²/4. Check it against the table: a hypotenuse of 14 gives legs of 9.90, and 9.90²/2 ≈ 49, matching c²/4 = 196/4 = 49.
+
+**Worked example (from the perimeter).** A garden bed shaped as an isosceles right triangle has a perimeter of about 34.14 meters. Find the sides.
+Step 1: s = 34.14 / (2 + √2) ≈ 34.14 / 3.4142 ≈ 10.00.
+Step 2: hypotenuse = 10√2 ≈ 14.14.
+**Answer: legs of 10 m and 10 m, hypotenuse ≈ 14.14 m.**
+
+## The Square Connection, Put to Work
+
+Because this triangle is half a square, it appears anywhere squares get cut, measured, or checked along the diagonal.
+
+**Tiles and sheets.** The diagonal of a square 12-inch floor tile is 12√2 ≈ 16.97 inches. The same multiplication gives the diagonal of plywood sheets, square rugs, and phone screens measured corner to corner, and it tells you whether a square object fits through a diagonal opening.
+
+**Drafting and design.** The standard set square in a geometry kit, the transparent triangle used for drawing, is a 45-45-90 triangle. Its equal edges and exact 45° corners are what make it useful for drawing diagonals of squares and lines at 45°.
+
+**Cutting material.** A square piece of fabric or paper folded or cut corner to corner produces two isosceles right triangles with no waste. Quilting and origami both build on this: the fold line is the hypotenuse, and its length is the side times √2.
+
+## Can Its Sides Be Whole Numbers?
+
+No, and this is a genuine theorem, not a gap in the list. If both legs were whole numbers, the hypotenuse would be leg × √2, and √2 is irrational, so the product can never be a whole number. An isosceles right triangle can have integer legs, like (5, 5, 5√2), or an integer hypotenuse with irrational legs, like (7.07, 7.07, 10), but never all three at once.
+
+That is why this triangle never appears in the [Pythagorean triples](/blog/pythagorean-triples/) list, despite being the most symmetric right triangle of all. Triples need three integers; this shape can supply at most two.
+
+## Common Mistakes
+
+- **Making the hypotenuse one of the equal sides.** In a right triangle the equal pair is always the two legs. The hypotenuse is longer than either leg, so it cannot match one of them.
+- **Assuming every isosceles triangle has 45° angles.** Only the isosceles *right* triangle does. A general isosceles triangle can have any vertex angle; the 45° base angles appear specifically because the vertex angle is 90° and the remaining 90° splits evenly.
+- **Running the ratio the wrong way.** A leg is shorter than the hypotenuse. From the hypotenuse, divide by √2 (or multiply by about 0.707); from the leg, multiply by √2 (about 1.414). If your leg comes out longer than the hypotenuse, the operation went backwards.
+- **Confusing it with the 30-60-90 triangle.** Both are special, but their ratios differ: 1 : 1 : √2 here, against 1 : √3 : 2 for the 30-60-90, whose legs are not equal. Check which angles the problem states before reaching for a ratio.
+- **Forgetting the half in the area.** The area is s²/2, not s². The two legs are a base-height pair, and the triangle is half of the s by s square, so half its area too.
+- **Rounding √2 too early.** Keep √2 symbolic through the calculation and round at the end. Using 1.4 from the start turns a hypotenuse of 14.14 into 14.0, an error that grows in any step that follows.
+
+<Faq heading="Frequently Asked Questions" description="Short answers to the questions students ask most about isosceles right triangles." items={[
+  {
+    "question": "What is an isosceles right triangle?",
+    "answer": "It is a right triangle whose two legs are equal in length. Because equal sides face equal angles, and the two acute angles of a right triangle sum to 90 degrees, its angles are always 90, 45, and 45 degrees. Its sides follow the ratio 1 to 1 to the square root of 2, and it is exactly half of a square cut along the diagonal."
+  },
+  {
+    "question": "What are the angles of an isosceles right triangle?",
+    "answer": "They are 90 degrees, 45 degrees, and 45 degrees. The reasoning takes two steps: the two legs are equal, so the angles opposite them are equal too, and in any right triangle the two acute angles are complementary, summing to 90 degrees. Splitting 90 degrees into two equal parts gives 45 degrees each. This is why the triangle is also called the 45-45-90 triangle."
+  },
+  {
+    "question": "How do you find the hypotenuse of an isosceles right triangle?",
+    "answer": "Multiply a leg by the square root of 2, about 1.4142. The formula is c = s√2, where s is either leg, since both legs are equal. For a leg of 6, the hypotenuse is 6√2, about 8.49. The result comes directly from the Pythagorean theorem: c² = s² + s² = 2s², and taking the square root of both sides leaves c = s√2."
+  },
+  {
+    "question": "How do you find a leg from the hypotenuse?",
+    "answer": "Divide the hypotenuse by the square root of 2, equivalently multiply it by √2/2, about 0.7071. For a hypotenuse of 14, each leg is 14/√2, about 9.90. Both legs come out equal by definition, so one calculation gives you both. A quick check protects against running the ratio backwards: the leg must be shorter than the hypotenuse, roughly seven tenths of it."
+  },
+  {
+    "question": "What is the area of an isosceles right triangle?",
+    "answer": "From a leg, the area is s²/2, since the two legs serve as base and height. Legs of 6 give an area of 36/2 = 18 square units. From the hypotenuse, the same area is c²/4: a hypotenuse of 14 gives 196/4 = 49, which matches the leg route, since legs of about 9.90 give 9.90²/2 ≈ 49. It is half its square in shape and in area."
+  },
+  {
+    "question": "Can an isosceles right triangle have integer sides?",
+    "answer": "Not all three. Equal integer legs force the hypotenuse to be the leg times the square root of 2, which is irrational and never a whole number. You can have integer legs, such as 5, 5, and 5√2, or an integer hypotenuse with irrational legs, but never three integers. This is exactly why the shape is absent from the Pythagorean triples list, even though it is the most symmetric right triangle."
+  },
+  {
+    "question": "Is an isosceles right triangle the same as a 45-45-90 triangle?",
+    "answer": "Yes, they are two names for one shape. The first name describes the sides, two equal legs meeting at a right angle. The second describes the angles, 45, 45, and 90 degrees. Each property forces the other: equal legs produce equal 45 degree base angles, and a right triangle with two 45 degree angles must have equal legs. Use whichever name the problem in front of you uses."
+  },
+  {
+    "question": "Which sides of an isosceles right triangle are equal?",
+    "answer": "The two legs, the sides that form the right angle. The hypotenuse can never be part of the equal pair because it is strictly the longest side of any right triangle. If the hypotenuse equaled a leg, the Pythagorean theorem would collapse to an impossibility. In diagrams, the equal legs are often marked with matching tick marks, and the right angle carries its small square marker in the corner between them."
+  },
+  {
+    "question": "How many lines of symmetry does an isosceles right triangle have?",
+    "answer": "Exactly one. It runs from the right-angle vertex to the midpoint of the hypotenuse, splitting the triangle into two smaller congruent isosceles right triangles. Folding along that line swaps the two legs and the two 45 degree angles onto each other. This is the same line you get by combining the square picture with its diagonal: the symmetry axis of the triangle is the perpendicular bisector of that diagonal."
+  },
+  {
+    "question": "Which calculator solves an isosceles right triangle?",
+    "answer": "Use the main Right Triangle Calculator on this site and enter any one side: one leg, the hypotenuse, or even the area. Because the side ratio is fixed at 1 to 1 to the square root of 2, a single input determines every remaining side, both angles, the area, and the perimeter. Comparing its output with the formulas in this article quickly confirms a hand calculation."
+  }
+]} />
+
+## Conclusion
+
+The isosceles right triangle is the most predictable right triangle there is: two equal legs, angles of 90°, 45°, and 45°, and one ratio, 1 : 1 : √2, that converts any known side into all the others. Work from the leg with c = s√2 and area = s²/2, or from the hypotenuse with leg = c/√2 and area = c²/4, and remember that the equal sides are always the legs, never the hypotenuse. For longer numbers, the [Right Triangle Calculator](/right-triangle-calculator/) applies the same ratio instantly.

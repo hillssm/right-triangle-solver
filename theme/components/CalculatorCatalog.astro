@@ -43,6 +43,10 @@ const getLocalizedPageTitle = (slug: string, fallback: string) => {
   const localized = groupedPages[slug] as Record<string, unknown> | undefined;
   return pick(localized ?? {}, 'h1', fallback);
 };
+const getLocalizedPageIntent = (slug: string, fallback: string) => {
+  const localized = groupedPages[slug] as Record<string, unknown> | undefined;
+  return pick(localized ?? {}, 'intent', fallback);
+};
 const CARD_ICONS = [
   'calculate',
   'square_foot',
@@ -94,7 +98,7 @@ const allCalculatorPages = [
       {triplesHomeUi.coreHeading}
     </h3>
 
-    <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="mt-4 grid gap-4 sm:grid-cols-2">
       {RIGHT_TRIANGLE_GROUPED_PAGES.map((page, index) => (
         <a
           href={localizePath(locale, page.url)}
@@ -113,6 +117,9 @@ const allCalculatorPages = [
             <h3 class="mt-4 text-[15px] font-semibold leading-snug text-on-surface group-hover:text-primary">
               {getLocalizedPageTitle(page.slug, page.h1)}
             </h3>
+            <p class="mt-3 text-sm leading-relaxed text-on-surface-variant">
+              {getLocalizedPageIntent(page.slug, page.intent)}
+            </p>
           </div>
           <p class="relative z-10 mt-5 text-[10px] uppercase tracking-[0.2em] text-primary">{openToolLabel}</p>
         </a>

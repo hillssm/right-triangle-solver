@@ -22,7 +22,6 @@ const LOCALIZED_STATIC_PATHS = [
   '/about-us/',
   '/contact-us/',
   '/faqs/',
-  '/library/',
   '/privacy/',
   '/terms/'
 ];
@@ -64,8 +63,6 @@ export async function GET() {
 
   const localizedPaths = [...LOCALIZED_STATIC_PATHS, ...CALCULATOR_PATHS].flatMap((path) =>
     SUPPORTED_LOCALES.map((locale) => {
-      if (locale === 'id' && path === '/library/') return null;
-      if (locale === 'en' && path === '/library/') return null;
       return localizePath(locale, path);
     }).filter((p): p is string => p !== null)
   );

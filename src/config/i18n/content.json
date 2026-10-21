@@ -5,12 +5,16 @@
       "description": "Solve right triangles quickly with clear formulas, visual guidance, and practical examples."
     },
     "home": {
-      "title": "Right Triangle Solver | Instant Geometry Helper",
-      "description": "Find missing sides, area, and perimeter in seconds with an accessible right triangle calculator.",
+      "title": "Right Triangle Calculator | Solve Sides, Angles and Area",
+      "description": "Free right triangle calculator with step-by-step solutions. Find missing sides, angles, area, perimeter, altitude and more across 52 focused calculators.",
       "heading": "Right Triangle Solver",
       "intro": "Calculate hypotenuse, angles, area, and geometry instantly with our precision digital tool.",
-      "toolHeading": "Right Triangle calculator",
+      "toolHeading": "Right Triangle Calculator",
       "toolDescription": "Enter any two legs to calculate hypotenuse, area, and perimeter instantly.",
+      "credibility": "52 focused calculators with step-by-step solutions. Free, no sign-up, runs in your browser.",
+      "browseAll": "Browse all 52 calculators",
+      "blogHeading": "Latest Guides and Worked Examples",
+      "blogCta": "Read the guide",
       "howHeading": "How Right Triangle Solver works",
       "howIntro": "From input to proof-ready output in three clean steps.",
       "step1Title": "1. Enter known values",
@@ -20,7 +24,7 @@
       "step3Title": "3. Validate the geometry",
       "step3Desc": "Use live visualization, ratios, and derived metrics to verify your answer.",
       "chartHeading": "Reference Values",
-      "chartSubHeading": "Compare common right-triangle families and their hypotenuse values.",
+      "chartSubHeading": "Compare common right-triangle families and their hypotenuse values. These are the triples that show up most often in textbooks, exams, and site work.",
       "chartLabel1": "Triangle",
       "chartLabel2": "Hypotenuse",
       "catalogHeading": "All Tool Calculators",
@@ -130,6 +134,14 @@
             "Substitution: your input values placed into that relation.",
             "Answer: solved numeric output in the proper unit format.",
             "Explanation: short clarity note for quicker understanding."
+          ],
+          "exampleTitle": "Worked Example: The 3-4-5 Triangle",
+          "exampleIntro": "Take the classic 3-4-5 triangle, legs a = 3 and b = 4. Here is the complete solve, the same flow the calculator above follows.",
+          "exampleItems": [
+            "Hypotenuse: c = √(3² + 4²) = √25 = 5.",
+            "Angles: sin(A) = 3 / 5 = 0.6, so A = 36.87°. Then B = 90° − 36.87° = 53.13°.",
+            "Area: (3 × 4) / 2 = 6 square units. Perimeter: 3 + 4 + 5 = 12 units.",
+            "Altitude to the hypotenuse: h = (3 × 4) / 5 = 2.4 units."
           ]
         },
         "calculatorSection": {
@@ -200,7 +212,9 @@
             "Classroom and exam preparation with traceable formula-based steps.",
             "Site measurements for ramps, ladders, roof pitch, and wall offsets.",
             "Technical drafting where side-angle consistency must be validated quickly.",
-            "Engineering and fabrication checks before final dimensions are approved."
+            "Engineering and fabrication checks before final dimensions are approved.",
+            "Carpentry and framing: squaring corners and checking diagonals with the 3-4-5 rule.",
+            "Stairs and decks: checking rise, run, and stringer length before anything is cut."
           ],
           "checklistTitle": "Accuracy Checklist Before You Finalize",
           "checklistItems": [
@@ -208,7 +222,8 @@
             "Ensure hypotenuse c remains larger than both legs.",
             "Use the correct angle mode and trigonometric relation.",
             "Round only at the final answer, not during intermediate substitution.",
-            "Cross-check with one related calculator when precision matters."
+            "Cross-check with one related calculator when precision matters.",
+            "Confirm the two acute angles add up to exactly 90°."
           ],
           "supportTitle": "Helpful Support Pages",
           "supportItems": [

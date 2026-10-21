@@ -3,10 +3,11 @@ import CalculatorCatalog from 'theme/components/CalculatorCatalog.astro';
 import ChartTableSection from 'theme/components/ChartTableSection.astro';
 import Faq from 'theme/components/Faq.astro';
 import HomeSchema from 'theme/components/HomeSchema.astro';
-import HowItWorks from 'theme/components/HowItWorks.astro';
 import RightTriangleTool from 'theme/components/RightTriangleTool.astro';
+import BlogCard from 'theme/components/BlogCard.astro';
+import { getCollection } from 'astro:content';
 import { getFocusedTriplesHomeUi } from 'src/data/focusedTriplesCalculatorTranslations';
-import { localizePath } from 'theme/i18n/locales';
+import { DEFAULT_LOCALE, localizePath } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import type { Locale } from 'theme/i18n/locales';
@@ -200,35 +201,16 @@ const checklistItems = Array.isArray(validationSection.checklistItems)
       'Cross-check with one related calculator when precision matters.'
     ];
 
-const supportItems = normalizeLinkItems(validationSection.supportItems, [
-  {
-    href: '/faqs/',
-    label: 'FAQs',
-    description: 'for common calculation and usage questions.'
-  },
-  {
-    href: '/about-us/',
-    label: 'About Us',
-    description: 'to learn about our mission and quality standards.'
-  },
-  {
-    href: '/contact-us/',
-    label: 'Contact Us',
-    description: 'for direct support.'
-  },
-  {
-    href: '/terms/',
-    label: 'Terms',
-    description: 'for policy details.'
-  },
-  {
-    href: '/privacy/',
-    label: 'Privacy',
-    description: 'for privacy policy details.'
-  }
-]);
-
 const localizedPath = localizePath(locale, '/');
+
+const isDefaultLocale = locale === DEFAULT_LOCALE;
+const blogHeading = pick(home, 'blogHeading', '');
+const blogCta = pick(home, 'blogCta', 'Read More');
+const latestPosts = blogHeading && isDefaultLocale
+  ? (await getCollection('blog'))
+      .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+      .slice(0, 4)
+  : [];
 ---
 
 <BaseLayout
@@ -249,6 +231,17 @@ const localizedPath = localizePath(locale, '/');
     <p class="mx-auto mt-3 max-w-xs text-xs tracking-[0.01em] text-on-surface sm:hidden opacity-90" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;">
       {pick(home, 'intro', 'Calculate hypotenuse, angles, area, and geometry instantly with our precision digital tool.')}
     </p>
+    {isDefaultLocale && pick(home, 'credibility', '') && (
+      <p class="mx-auto mt-5 max-w-2xl px-4 text-xs font-medium tracking-wide text-on-surface-variant sm:text-sm">
+        {pick(home, 'credibility', '')}
+      </p>
+    )}
+    {isDefaultLocale && pick(home, 'browseAll', '') && (
+      <a href="#all-calculators" class="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-primary transition-colors hover:text-tertiary">
+        {pick(home, 'browseAll', '')}
+        <span class="material-symbols-outlined text-sm">arrow_downward</span>
+      </a>
+    )}
   </header>
 
   <div class="relative w-full overflow-hidden">
@@ -269,7 +262,7 @@ const localizedPath = localizePath(locale, '/');
       <h2>{pick(introSection, 'title', 'What Is a Right Triangle?')}</h2>
       <p>{pick(introSection, 'paragraph1', 'A right triangle is a triangle that has one angle exactly equal to 90°. That fixed right angle creates a stable geometry model used in school math, engineering layouts, architecture drawings, surveying, navigation, and technical design.')}</p>
       <p>{pick(introSection, 'paragraph2', 'This homepage is structured to help you move in one clear flow: definition first, then formulas, then solving steps, then tool selection, and finally accuracy checks before you use the answer.')}</p>
-      <h2>{pick(introSection, 'structureTitle', 'Right Triangle Definition and Structure')}</h2>
+      <h3>{pick(introSection, 'structureTitle', 'Right Triangle Definition and Structure')}</h3>
       <p>{pick(introSection, 'structureParagraph', 'In every right triangle, the side opposite the 90° angle is the hypotenuse. The other two sides are called legs. Most formulas and tools on this site use these standard symbols.')}</p>
       <h3>{pick(introSection, 'notationTitle', 'Standard notation used in the solver')}</h3>
       <ul>
@@ -310,13 +303,25 @@ const localizedPath = localizePath(locale, '/');
         ))}
       </ol>
 
-      <h2>{pick(solveSection, 'resultsTitle', 'How This Solver Presents Step-by-Step Results')}</h2>
+      <h3>{pick(solveSection, 'resultsTitle', 'How This Solver Presents Step-by-Step Results')}</h3>
       <p>{pick(solveSection, 'resultsIntro', 'Every calculator mode is designed to show a useful solution flow, not only a final number. You see the formula, then value substitution, then computed answer, followed by a short explanation line so each step is easier to verify and reuse.')}</p>
       <ul>
         {resultItems.map((item: string) => (
           <li set:html={formatListItem(item)} />
         ))}
       </ul>
+
+      {isDefaultLocale && solveSection.exampleTitle && (
+        <>
+          <h3>{solveSection.exampleTitle}</h3>
+          <p>{solveSection.exampleIntro}</p>
+          <ul>
+            {(solveSection.exampleItems as string[]).map((item: string) => (
+              <li set:html={formatListItem(item)} />
+            ))}
+          </ul>
+        </>
+      )}
     </section>
 
     <section class="section-shell prose-shell">
@@ -362,47 +367,9 @@ const localizedPath = localizePath(locale, '/');
         ))}
       </ul>
 
-      <h2>{pick(validationSection, 'supportTitle', 'Helpful Support Pages')}</h2>
-      <ul>
-        {supportItems.map((item) => (
-          <li>
-            <a href={localizePath(locale, item.href)}>{item.label}</a> {item.description}
-          </li>
-        ))}
-      </ul>
     </section>
   </div>
 
-  <div class="defer-render-mobile mt-8">
-    <HowItWorks heading={pick(home, 'howHeading', 'How Right Triangle Solver works')}>
-      <p slot="intro" class="mt-3 max-w-2xl text-sm text-on-surface-variant">
-        {pick(home, 'howIntro', 'From input to proof-ready output in three clean steps.')}
-      </p>
-      <Fragment slot="steps">
-        <article class="surface-card group flex flex-col gap-4 border-outline-variant/30">
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
-            <span class="material-symbols-outlined text-xl">input</span>
-          </div>
-          <h3 class="text-base font-semibold text-on-surface">{pick(home, 'step1Title', '1. Enter known values')}</h3>
-          <p class="text-sm leading-relaxed text-on-surface-variant">{pick(home, 'step1Desc', 'Provide any valid right-triangle inputs and keep units consistent.')}</p>
-        </article>
-        <article class="surface-card group flex flex-col gap-4 border-outline-variant/30">
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
-            <span class="material-symbols-outlined text-xl">bolt</span>
-          </div>
-          <h3 class="text-base font-semibold text-on-surface">{pick(home, 'step2Title', '2. Solve instantly')}</h3>
-          <p class="text-sm leading-relaxed text-on-surface-variant">{pick(home, 'step2Desc', 'The solver applies Pythagorean and trigonometric relations in real time.')}</p>
-        </article>
-        <article class="surface-card group flex flex-col gap-4 border-outline-variant/30">
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
-            <span class="material-symbols-outlined text-xl">insights</span>
-          </div>
-          <h3 class="text-base font-semibold text-on-surface">{pick(home, 'step3Title', '3. Validate the geometry')}</h3>
-          <p class="text-sm leading-relaxed text-on-surface-variant">{pick(home, 'step3Desc', 'Use live visualization, ratios, and derived metrics to verify your answer.')}</p>
-        </article>
-      </Fragment>
-    </HowItWorks>
-  </div>
 
   <div class="defer-render-mobile mt-8">
     <ChartTableSection
@@ -419,13 +386,32 @@ const localizedPath = localizePath(locale, '/');
     </div>
   </div>
 
-  <div class="defer-render-mobile mt-8">
+  <div id="all-calculators" class="defer-render-mobile mt-8">
     <CalculatorCatalog
       locale={locale}
       heading={pick(home, 'catalogHeading', 'Premium Calculator Collection')}
       uiTools={pick(home, 'catalogTools', 'Precision Tools')}
     />
   </div>
+
+  {isDefaultLocale && blogHeading && (
+    <div class="defer-render-mobile mt-8">
+      <div class="mx-auto w-full max-w-4xl">
+        <h2 class="text-2xl font-bold tracking-tight text-on-surface sm:text-3xl" style="font-family: Georgia, 'Times New Roman', serif;">{blogHeading}</h2>
+      </div>
+      <div class="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        {latestPosts.map((post) => (
+          <BlogCard
+            title={post.data.title}
+            description={post.data.description}
+            image={post.data.image}
+            href={localizePath(locale, `/blog/${post.id}/`)}
+            ctaLabel={blogCta}
+          />
+        ))}
+      </div>
+    </div>
+  )}
 
   <div class="defer-render-mobile mt-8">
     <Faq heading={pick(home, 'faqHeading', 'Frequently Asked Questions')} items={bundle.faq.slice(0, 6)} />

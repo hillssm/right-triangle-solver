@@ -371,7 +371,7 @@ const latestPosts = blogHeading && isDefaultLocale
   </div>
 
 
-  <div class="defer-render-mobile mt-8">
+  <div class="defer-render-mobile mx-auto mt-8 w-full max-w-4xl">
     <ChartTableSection
       heading={pick(home, 'chartHeading', 'Reference Values')}
       subHeading={pick(home, 'chartSubHeading', 'Compare common right-triangle families and their hypotenuse values.')}
@@ -386,7 +386,7 @@ const latestPosts = blogHeading && isDefaultLocale
     </div>
   </div>
 
-  <div id="all-calculators" class="defer-render-mobile mt-8">
+  <div id="all-calculators" class="defer-render-mobile mx-auto mt-8 w-full max-w-4xl">
     <CalculatorCatalog
       locale={locale}
       heading={pick(home, 'catalogHeading', 'Premium Calculator Collection')}
@@ -395,11 +395,11 @@ const latestPosts = blogHeading && isDefaultLocale
   </div>
 
   {isDefaultLocale && blogHeading && (
-    <div class="defer-render-mobile mt-8">
-      <div class="mx-auto w-full max-w-4xl">
+    <div class="defer-render-mobile mx-auto mt-8 w-full max-w-4xl">
+      <div>
         <h2 class="text-2xl font-bold tracking-tight text-on-surface sm:text-3xl" style="font-family: Georgia, 'Times New Roman', serif;">{blogHeading}</h2>
       </div>
-      <div class="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+      <div class="mt-6 grid gap-6 md:grid-cols-2">
         {latestPosts.map((post) => (
           <BlogCard
             title={post.data.title}
@@ -413,7 +413,7 @@ const latestPosts = blogHeading && isDefaultLocale
     </div>
   )}
 
-  <div class="defer-render-mobile mt-8">
+  <div class="defer-render-mobile mx-auto mt-8 w-full max-w-4xl">
     <Faq heading={pick(home, 'faqHeading', 'Frequently Asked Questions')} items={bundle.faq.slice(0, 6)} />
     <div class="mt-6 flex justify-center">
       <a href={localizePath(locale, '/faqs/')} class="btn-secondary flex items-center gap-2">

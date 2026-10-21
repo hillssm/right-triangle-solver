@@ -1,6 +1,7 @@
 ---
 interface Props {
   heading: string;
+  intro?: string;
   locale?: string;
   shellClass?: string;
   labels?: {
@@ -52,7 +53,7 @@ interface Props {
 
 import { getTranslations } from '../i18n/translations';
 
-const { heading, locale = 'en', shellClass = 'section-shell', labels = {} } = Astro.props;
+const { heading, intro = '', locale = 'en', shellClass = 'section-shell', labels = {} } = Astro.props;
 const bundle = getTranslations(locale as any);
 const units = (bundle.common?.units as any) || {};
 const defaultVisualizationSub =
@@ -161,7 +162,8 @@ const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
 
   <div class="grid gap-6 sm:grid-cols-[1.1fr_0.9fr] lg:gap-8">
     <div>
-      <h2 id="tool-heading" class="text-2xl font-bold text-on-surface">{heading}</h2>
+      <h2 id="tool-heading" class="break-words text-2xl font-semibold leading-tight">{heading}</h2>
+      {intro && <p class="mt-2 text-sm text-on-surface-variant">{intro}</p>}
       <p class="mt-4 font-label text-[11px] font-semibold uppercase tracking-[0.15em] text-primary/90">{labels.statusDefault ?? 'Enter any 2 valid right-triangle values.'}</p>
 
       <form class="mt-6 grid gap-4" data-triangle-form novalidate>

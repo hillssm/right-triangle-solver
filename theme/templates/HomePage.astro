@@ -252,6 +252,7 @@ const latestPosts = blogHeading && isDefaultLocale
         locale={locale}
         shellClass="section-shell-lite"
         heading={pick(home, 'toolHeading', 'Right Triangle Solver')}
+        intro={isDefaultLocale ? pick(home, 'toolIntro', '') : ''}
         labels={home.tool as any}
       />
     </div>

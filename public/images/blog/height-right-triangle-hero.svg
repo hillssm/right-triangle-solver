@@ -23,9 +23,9 @@
     <!-- Labels -->
     <text x="0" y="290" font-family="system-ui, sans-serif" font-size="32" font-weight="600" fill="#cbd5e1" text-anchor="middle">Leg (a)</text>
     <text x="230" y="120" font-family="system-ui, sans-serif" font-size="32" font-weight="600" fill="#cbd5e1" text-anchor="start">Leg (b)</text>
-    <text x="150" y="140" font-family="system-ui, sans-serif" font-size="36" font-weight="bold" fill="#facc15" text-anchor="middle" transform="rotate(-37, 150, 140)">Altitude (h)</text>
-    <text x="-90" y="200" font-family="system-ui, sans-serif" font-size="30" font-weight="600" fill="#94a3b8" text-anchor="middle" transform="rotate(-37, -90, 200)">q</text>
-    <text x="30" y="130" font-family="system-ui, sans-serif" font-size="30" font-weight="600" fill="#94a3b8" text-anchor="middle" transform="rotate(-37, 30, 130)">p</text>
+    <text x="87" y="170" font-family="system-ui, sans-serif" font-size="30" font-weight="bold" fill="#facc15" text-anchor="middle" transform="rotate(-127, 87, 170)">Altitude (h)</text>
+    <text x="-53" y="180" font-family="system-ui, sans-serif" font-size="30" font-weight="600" fill="#94a3b8" text-anchor="middle">q</text>
+    <text x="170" y="30" font-family="system-ui, sans-serif" font-size="30" font-weight="600" fill="#94a3b8" text-anchor="middle">p</text>
   </g>
 
   <!-- Text Overlay -->
@@ -34,5 +34,5 @@
 
   <!-- Formula Box -->
   <rect x="80" y="240" width="350" height="120" rx="16" fill="rgba(255,255,255,0.05)" stroke="#475569" stroke-width="2"/>
-  <text x="255" y="315" font-family="monospace" font-size="42" font-weight="bold" fill="#10b981" text-anchor="middle">h = (a × b) / c</text>
+  <text x="255" y="313" font-family="monospace" font-size="36" font-weight="bold" fill="#10b981" text-anchor="middle">h = (a × b) / c</text>
 </svg>

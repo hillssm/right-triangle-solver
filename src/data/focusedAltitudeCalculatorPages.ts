@@ -284,7 +284,11 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
       {
         href: '/right-triangle-area-calculator/',
         label: 'Right Triangle Area Calculator'
-      }
+      },
+      {
+        href: '/right-triangle-area-from-hypotenuse-and-altitude-calculator/',
+        label: 'Right Triangle Area from Hypotenuse and Altitude Calculator'
+      },
     ],
     faqs: [
       {
@@ -528,7 +532,11 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
       {
         href: '/right-triangle-side-calculator/',
         label: 'Right Triangle Side Calculator'
-      }
+      },
+      {
+        href: '/right-triangle-area-from-hypotenuse-and-altitude-calculator/',
+        label: 'Right Triangle Area from Hypotenuse and Altitude Calculator'
+      },
     ],
     faqs: [
       {

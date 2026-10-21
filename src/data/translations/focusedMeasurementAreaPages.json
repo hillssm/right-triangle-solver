@@ -182,6 +182,14 @@
         {
           "href": "/right-triangle-perimeter-calculator/",
           "label": "समकोण त्रिभुज परिमाप कैलकुलेटर"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
         }
       ],
       "faqs": [
@@ -441,6 +449,10 @@
         {
           "href": "/right-triangle-trig-ratios-calculator/",
           "label": "समकोण त्रिभुज त्रिकोणमितीय अनुपात कैलकुलेटर"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -650,8 +662,8 @@
           "label": "समकोण त्रिभुज क्षेत्रफल कैलकुलेटर: कर्ण c और ऊंचाई h से"
         },
         {
-          "href": "/right-triangle-inradius-and-circumradius-calculator/",
-          "label": "समकोण त्रिभुज अंतःत्रिज्या त्रिज्या कैलकुलेटर"
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
         }
       ],
       "faqs": [
@@ -861,6 +873,14 @@
         {
           "href": "/right-triangle-side-calculator/",
           "label": "समकोण त्रिभुज भुजा कैलकुलेटर"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -1070,6 +1090,14 @@
         {
           "href": "/right-triangle-perimeter-calculator/",
           "label": "triángulo rectángulo perímetro Calculadora"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
         }
       ],
       "faqs": [
@@ -1329,6 +1357,10 @@
         {
           "href": "/right-triangle-trig-ratios-calculator/",
           "label": "triángulo rectángulo razones trigonométricas Calculadora"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -1538,8 +1570,8 @@
           "label": "Calculadora de área de triángulo rectángulo desde hipotenusa c y altura h"
         },
         {
-          "href": "/right-triangle-inradius-and-circumradius-calculator/",
-          "label": "triángulo rectángulo inradio radio Calculadora"
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
         }
       ],
       "faqs": [
@@ -1749,6 +1781,14 @@
         {
           "href": "/right-triangle-side-calculator/",
           "label": "triángulo rectángulo lado Calculadora"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -1958,6 +1998,14 @@
         {
           "href": "/right-triangle-perimeter-calculator/",
           "label": "прямоугольный треугольник периметр Калькулятор"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
         }
       ],
       "faqs": [
@@ -2217,6 +2265,10 @@
         {
           "href": "/right-triangle-trig-ratios-calculator/",
           "label": "прямоугольный треугольник тригонометрические отношения Калькулятор"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -2426,8 +2478,8 @@
           "label": "Калькулятор площади прямоугольного треугольника по гипотенузе c и высоте h"
         },
         {
-          "href": "/right-triangle-inradius-and-circumradius-calculator/",
-          "label": "прямоугольный треугольник радиус вписанной окружности радиус Калькулятор"
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
         }
       ],
       "faqs": [
@@ -2637,6 +2689,14 @@
         {
           "href": "/right-triangle-side-calculator/",
           "label": "прямоугольный треугольник сторона Калькулятор"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -2846,6 +2906,14 @@
         {
           "href": "/right-triangle-perimeter-calculator/",
           "label": "triangle rectangle périmètre Calculateur"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
         }
       ],
       "faqs": [
@@ -3105,6 +3173,10 @@
         {
           "href": "/right-triangle-trig-ratios-calculator/",
           "label": "triangle rectangle rapports trigonométriques Calculateur"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -3314,8 +3386,8 @@
           "label": "Calculateur d’aire de triangle rectangle avec hypoténuse c et hauteur h"
         },
         {
-          "href": "/right-triangle-inradius-and-circumradius-calculator/",
-          "label": "triangle rectangle rayon inscrit rayon Calculateur"
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
         }
       ],
       "faqs": [
@@ -3525,6 +3597,14 @@
         {
           "href": "/right-triangle-side-calculator/",
           "label": "triangle rectangle côté Calculateur"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -3734,6 +3814,14 @@
         {
           "href": "/right-triangle-perimeter-calculator/",
           "label": "rechtwinkliges Dreieck Umfang Rechner"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
         }
       ],
       "faqs": [
@@ -3993,6 +4081,10 @@
         {
           "href": "/right-triangle-trig-ratios-calculator/",
           "label": "rechtwinkliges Dreieck trigonometrische Verhältnisse Rechner"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -4202,8 +4294,8 @@
           "label": "Rechner für den Flächeninhalt eines rechtwinkligen Dreiecks aus Hypotenuse c und Höhe h"
         },
         {
-          "href": "/right-triangle-inradius-and-circumradius-calculator/",
-          "label": "rechtwinkliges Dreieck Inkreisradius Radius Rechner"
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
         }
       ],
       "faqs": [
@@ -4413,6 +4505,14 @@
         {
           "href": "/right-triangle-side-calculator/",
           "label": "rechtwinkliges Dreieck Seite Rechner"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -4622,6 +4722,14 @@
         {
           "href": "/right-triangle-perimeter-calculator/",
           "label": "triangolo rettangolo perimetro Calcolatore"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
         }
       ],
       "faqs": [
@@ -4881,6 +4989,10 @@
         {
           "href": "/right-triangle-trig-ratios-calculator/",
           "label": "triangolo rettangolo rapporti trigonometrici Calcolatore"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -5090,8 +5202,8 @@
           "label": "Calcolatore dell’area del triangolo rettangolo da ipotenusa c e altezza h"
         },
         {
-          "href": "/right-triangle-inradius-and-circumradius-calculator/",
-          "label": "triangolo rettangolo inraggio raggio Calcolatore"
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
         }
       ],
       "faqs": [
@@ -5301,6 +5413,14 @@
         {
           "href": "/right-triangle-side-calculator/",
           "label": "triangolo rettangolo lato Calcolatore"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -5510,6 +5630,14 @@
         {
           "href": "/right-triangle-perimeter-calculator/",
           "label": "triângulo retângulo perímetro Calculadora"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
         }
       ],
       "faqs": [
@@ -5769,6 +5897,10 @@
         {
           "href": "/right-triangle-trig-ratios-calculator/",
           "label": "triângulo retângulo razões trigonométricas Calculadora"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -5978,8 +6110,8 @@
           "label": "Calculadora de área de triângulo retângulo pela hipotenusa c e altura h"
         },
         {
-          "href": "/right-triangle-inradius-and-circumradius-calculator/",
-          "label": "triângulo retângulo raio inscrito raio Calculadora"
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
         }
       ],
       "faqs": [
@@ -6189,6 +6321,14 @@
         {
           "href": "/right-triangle-side-calculator/",
           "label": "triângulo retângulo lado Calculadora"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -6398,6 +6538,14 @@
         {
           "href": "/right-triangle-perimeter-calculator/",
           "label": "সমকোণী ত্রিভুজ পরিসীমা ক্যালকুলেটর"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
         }
       ],
       "faqs": [
@@ -6657,6 +6805,10 @@
         {
           "href": "/right-triangle-trig-ratios-calculator/",
           "label": "সমকোণী ত্রিভুজ ত্রিকোণমিতিক অনুপাত ক্যালকুলেটর"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -6866,8 +7018,8 @@
           "label": "সমকোণী ত্রিভুজের ক্ষেত্রফল ক্যালকুলেটর: অতিভুজ c ও উচ্চতা h থেকে"
         },
         {
-          "href": "/right-triangle-inradius-and-circumradius-calculator/",
-          "label": "সমকোণী ত্রিভুজ অন্তঃব্যাসার্ধ ব্যাসার্ধ ক্যালকুলেটর"
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
         }
       ],
       "faqs": [
@@ -7077,6 +7229,14 @@
         {
           "href": "/right-triangle-side-calculator/",
           "label": "সমকোণী ত্রিভুজ বাহু ক্যালকুলেটর"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -7286,6 +7446,14 @@
         {
           "href": "/right-triangle-perimeter-calculator/",
           "label": "直角三角形 周長 計算機"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
         }
       ],
       "faqs": [
@@ -7545,6 +7713,10 @@
         {
           "href": "/right-triangle-trig-ratios-calculator/",
           "label": "直角三角形 三角比 計算機"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -7754,8 +7926,8 @@
           "label": "直角三角形の面積計算機: 斜辺 c と高さ h から"
         },
         {
-          "href": "/right-triangle-inradius-and-circumradius-calculator/",
-          "label": "直角三角形 内接円の半径 半径 計算機"
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
         }
       ],
       "faqs": [
@@ -7965,6 +8137,14 @@
         {
           "href": "/right-triangle-side-calculator/",
           "label": "直角三角形 辺 計算機"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -8174,6 +8354,14 @@
         {
           "href": "/right-triangle-perimeter-calculator/",
           "label": "직각삼각형 둘레 계산기"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
         }
       ],
       "faqs": [
@@ -8433,6 +8621,10 @@
         {
           "href": "/right-triangle-trig-ratios-calculator/",
           "label": "직각삼각형 삼각비 계산기"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -8642,8 +8834,8 @@
           "label": "직각삼각형 넓이 계산기: 빗변 c와 높이 h 사용"
         },
         {
-          "href": "/right-triangle-inradius-and-circumradius-calculator/",
-          "label": "직각삼각형 내접원 반지름 반지름 계산기"
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
         }
       ],
       "faqs": [
@@ -8853,6 +9045,14 @@
         {
           "href": "/right-triangle-side-calculator/",
           "label": "직각삼각형 변 계산기"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -9062,6 +9262,14 @@
         {
           "href": "/right-triangle-perimeter-calculator/",
           "label": "segi tiga bersudut tegak perimeter Kalkulator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
         }
       ],
       "faqs": [
@@ -9321,6 +9529,10 @@
         {
           "href": "/right-triangle-trig-ratios-calculator/",
           "label": "segi tiga bersudut tegak nisbah trigonometri Kalkulator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -9530,8 +9742,8 @@
           "label": "Kalkulator luas segi tiga bersudut tegak daripada hipotenus c dan tinggi h"
         },
         {
-          "href": "/right-triangle-inradius-and-circumradius-calculator/",
-          "label": "segi tiga bersudut tegak jejari dalam jejari Kalkulator"
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
         }
       ],
       "faqs": [
@@ -9741,6 +9953,14 @@
         {
           "href": "/right-triangle-side-calculator/",
           "label": "segi tiga bersudut tegak sisi Kalkulator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -9950,6 +10170,14 @@
         {
           "href": "/right-triangle-perimeter-calculator/",
           "label": "trójkąt prostokątny obwód Kalkulator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
         }
       ],
       "faqs": [
@@ -10209,6 +10437,10 @@
         {
           "href": "/right-triangle-trig-ratios-calculator/",
           "label": "trójkąt prostokątny stosunki trygonometryczne Kalkulator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -10418,8 +10650,8 @@
           "label": "Kalkulator pola trójkąta prostokątnego z przeciwprostokątnej c i wysokości h"
         },
         {
-          "href": "/right-triangle-inradius-and-circumradius-calculator/",
-          "label": "trójkąt prostokątny promień okręgu wpisanego promień Kalkulator"
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
         }
       ],
       "faqs": [
@@ -10629,6 +10861,14 @@
         {
           "href": "/right-triangle-side-calculator/",
           "label": "trójkąt prostokątny bok Kalkulator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -10838,6 +11078,14 @@
         {
           "href": "/right-triangle-perimeter-calculator/",
           "label": "segitiga siku-siku keliling Kalkulator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
         }
       ],
       "faqs": [
@@ -11097,6 +11345,10 @@
         {
           "href": "/right-triangle-trig-ratios-calculator/",
           "label": "segitiga siku-siku rasio trigonometri Kalkulator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -11306,8 +11558,8 @@
           "label": "Kalkulator luas segitiga siku-siku dari hipotenusa c dan tinggi h"
         },
         {
-          "href": "/right-triangle-inradius-and-circumradius-calculator/",
-          "label": "segitiga siku-siku jari-jari dalam jari-jari Kalkulator"
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
         }
       ],
       "faqs": [
@@ -11517,6 +11769,14 @@
         {
           "href": "/right-triangle-side-calculator/",
           "label": "segitiga siku-siku sisi Kalkulator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -11726,6 +11986,14 @@
         {
           "href": "/right-triangle-perimeter-calculator/",
           "label": "مثلث قائم الزاوية المحيط حاسبة"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
         }
       ],
       "faqs": [
@@ -11985,6 +12253,10 @@
         {
           "href": "/right-triangle-trig-ratios-calculator/",
           "label": "مثلث قائم الزاوية النسب المثلثية حاسبة"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -12194,8 +12466,8 @@
           "label": "حاسبة مساحة المثلث القائم من الوتر c والارتفاع h"
         },
         {
-          "href": "/right-triangle-inradius-and-circumradius-calculator/",
-          "label": "مثلث قائم الزاوية نصف قطر الدائرة الداخلية نصف القطر حاسبة"
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
         }
       ],
       "faqs": [
@@ -12405,6 +12677,14 @@
         {
           "href": "/right-triangle-side-calculator/",
           "label": "مثلث قائم الزاوية ضلع حاسبة"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -12614,6 +12894,14 @@
         {
           "href": "/right-triangle-perimeter-calculator/",
           "label": "правоъгълен триъгълник периметър Калкулатор"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
         }
       ],
       "faqs": [
@@ -12873,6 +13161,10 @@
         {
           "href": "/right-triangle-trig-ratios-calculator/",
           "label": "правоъгълен триъгълник тригонометрични отношения Калкулатор"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -13082,8 +13374,8 @@
           "label": "Калкулатор за лице на правоъгълен триъгълник от хипотенуза c и височина h"
         },
         {
-          "href": "/right-triangle-inradius-and-circumradius-calculator/",
-          "label": "правоъгълен триъгълник вписан радиус радиус Калкулатор"
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
         }
       ],
       "faqs": [
@@ -13293,6 +13585,14 @@
         {
           "href": "/right-triangle-side-calculator/",
           "label": "правоъгълен триъгълник страна Калкулатор"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -13502,6 +13802,14 @@
         {
           "href": "/right-triangle-perimeter-calculator/",
           "label": "dik üçgen çevre Hesaplayıcı"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
         }
       ],
       "faqs": [
@@ -13761,6 +14069,10 @@
         {
           "href": "/right-triangle-trig-ratios-calculator/",
           "label": "dik üçgen trigonometrik oranlar Hesaplayıcı"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -13970,8 +14282,8 @@
           "label": "Dik üçgen alan hesaplayıcı: hipotenüs c ve yükseklik h ile"
         },
         {
-          "href": "/right-triangle-inradius-and-circumradius-calculator/",
-          "label": "dik üçgen iç yarıçap yarıçap Hesaplayıcı"
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
         }
       ],
       "faqs": [
@@ -14181,6 +14493,14 @@
         {
           "href": "/right-triangle-side-calculator/",
           "label": "dik üçgen kenar Hesaplayıcı"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -14390,6 +14710,14 @@
         {
           "href": "/right-triangle-perimeter-calculator/",
           "label": "rätvinklig triangel omkrets Räknare"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
         }
       ],
       "faqs": [
@@ -14649,6 +14977,10 @@
         {
           "href": "/right-triangle-trig-ratios-calculator/",
           "label": "rätvinklig triangel trigonometriska förhållanden Räknare"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -14858,8 +15190,8 @@
           "label": "Räknare för area av rätvinklig triangel från hypotenusa c och höjd h"
         },
         {
-          "href": "/right-triangle-inradius-and-circumradius-calculator/",
-          "label": "rätvinklig triangel inradie radie Räknare"
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
         }
       ],
       "faqs": [
@@ -15069,6 +15401,14 @@
         {
           "href": "/right-triangle-side-calculator/",
           "label": "rätvinklig triangel sida Räknare"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -15278,6 +15618,14 @@
         {
           "href": "/right-triangle-perimeter-calculator/",
           "label": "直角三角形 周长 计算器"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
         }
       ],
       "faqs": [
@@ -15537,6 +15885,10 @@
         {
           "href": "/right-triangle-trig-ratios-calculator/",
           "label": "直角三角形 三角函数比 计算器"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [
@@ -15746,8 +16098,8 @@
           "label": "直角三角形面积计算器：由斜边 c 和高度 h 求面积"
         },
         {
-          "href": "/right-triangle-inradius-and-circumradius-calculator/",
-          "label": "直角三角形 内切圆半径 半径 计算器"
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
         }
       ],
       "faqs": [
@@ -15957,6 +16309,14 @@
         {
           "href": "/right-triangle-side-calculator/",
           "label": "直角三角形 边 计算器"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Right Triangle Area from Hypotenuse and Altitude Calculator"
+        },
+        {
+          "href": "/right-triangle-area-from-leg-and-angle-calculator/",
+          "label": "Right Triangle Area from Leg and Angle Calculator"
         }
       ],
       "faqs": [

@@ -290,6 +290,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
         href: '/special-right-triangle-calculator/',
         label: 'Special Right Triangle Calculator',
       },
+      { href: '/similar-right-triangles-calculator/', label: 'Similar Right Triangles Calculator' },
     ],
 
     faqs: [
@@ -514,6 +515,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
         href: '/right-triangle-area-calculator/',
         label: 'Right Triangle Area Calculator',
       },
+      { href: '/similar-right-triangles-calculator/', label: 'Similar Right Triangles Calculator' },
     ],
 
     faqs: [
@@ -736,6 +738,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
         href: '/right-triangle-area-calculator/',
         label: 'Right Triangle Area Calculator',
       },
+      { href: '/similar-right-triangles-calculator/', label: 'Similar Right Triangles Calculator' },
     ],
 
     faqs: [

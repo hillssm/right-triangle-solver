@@ -90,6 +90,7 @@ type RadiusLinks = {
   semiperimeter: FocusedRadiusRelatedLink;
   side: FocusedRadiusRelatedLink;
   hypotenuse: FocusedRadiusRelatedLink;
+  areaFromInradius: FocusedRadiusRelatedLink;
 };
 
 type RadiusPageCopy = Omit<RadiusPageTranslation, 'calculator' | 'formulaSection' | 'diagram' | 'example' | 'relatedLinks'> & {
@@ -241,7 +242,8 @@ const makeBundle = (pack: RadiusLanguagePack): RadiusTranslationBundle => ({
         pack.links.circumradius,
         pack.links.area,
         pack.links.semiperimeter,
-        pack.links.side
+        pack.links.side,
+        pack.links.areaFromInradius
       ]
     },
     'right-triangle-circumradius-calculator': {
@@ -266,7 +268,8 @@ const makeBundle = (pack: RadiusLanguagePack): RadiusTranslationBundle => ({
         pack.links.inradius,
         pack.links.side,
         pack.links.area,
-        pack.links.hypotenuse
+        pack.links.hypotenuse,
+        pack.links.areaFromInradius
       ]
     }
   }
@@ -345,6 +348,11 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       }
     },
     links: {
+      areaFromInradius: {
+        href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/',
+        label: 'Right Triangle Area from Inradius and Semiperimeter Calculator',
+        description: 'Find the area from the inradius and semiperimeter with A = r × s.'
+      },
       radius: {
         href: '/right-triangle-radius-calculator/',
         label: 'समकोण त्रिभुज त्रिज्या कैलकुलेटर',
@@ -618,6 +626,11 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       }
     },
     links: {
+      areaFromInradius: {
+        href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/',
+        label: 'Right Triangle Area from Inradius and Semiperimeter Calculator',
+        description: 'Find the area from the inradius and semiperimeter with A = r × s.'
+      },
       radius: {
         href: '/right-triangle-radius-calculator/',
         label: '直角三角形半径计算器',
@@ -806,6 +819,11 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       }
     },
     links: {
+      areaFromInradius: {
+        href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/',
+        label: 'Right Triangle Area from Inradius and Semiperimeter Calculator',
+        description: 'Find the area from the inradius and semiperimeter with A = r × s.'
+      },
       radius: {
         href: '/right-triangle-radius-calculator/',
         label: 'radiekalkylator för rätvinklig triangel',
@@ -994,6 +1012,11 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       }
     },
     links: {
+      areaFromInradius: {
+        href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/',
+        label: 'Right Triangle Area from Inradius and Semiperimeter Calculator',
+        description: 'Find the area from the inradius and semiperimeter with A = r × s.'
+      },
       radius: {
         href: '/right-triangle-radius-calculator/',
         label: 'dik üçgen yarıçap hesaplayıcı',
@@ -1182,6 +1205,11 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       }
     },
     links: {
+      areaFromInradius: {
+        href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/',
+        label: 'Right Triangle Area from Inradius and Semiperimeter Calculator',
+        description: 'Find the area from the inradius and semiperimeter with A = r × s.'
+      },
       radius: {
         href: '/right-triangle-radius-calculator/',
         label: 'калкулатор за радиуси на правоъгълен триъгълник',
@@ -1370,6 +1398,11 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       }
     },
     links: {
+      areaFromInradius: {
+        href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/',
+        label: 'Right Triangle Area from Inradius and Semiperimeter Calculator',
+        description: 'Find the area from the inradius and semiperimeter with A = r × s.'
+      },
       radius: {
         href: '/right-triangle-radius-calculator/',
         label: 'حاسبة أنصاف أقطار المثلث القائم',
@@ -1558,6 +1591,11 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       }
     },
     links: {
+      areaFromInradius: {
+        href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/',
+        label: 'Right Triangle Area from Inradius and Semiperimeter Calculator',
+        description: 'Find the area from the inradius and semiperimeter with A = r × s.'
+      },
       radius: {
         href: '/right-triangle-radius-calculator/',
         label: 'kalkulator jari-jari segitiga siku-siku',
@@ -1746,6 +1784,11 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       }
     },
     links: {
+      areaFromInradius: {
+        href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/',
+        label: 'Right Triangle Area from Inradius and Semiperimeter Calculator',
+        description: 'Find the area from the inradius and semiperimeter with A = r × s.'
+      },
       radius: {
         href: '/right-triangle-radius-calculator/',
         label: 'kalkulator promieni trójkąta prostokątnego',
@@ -1934,6 +1977,11 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       }
     },
     links: {
+      areaFromInradius: {
+        href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/',
+        label: 'Right Triangle Area from Inradius and Semiperimeter Calculator',
+        description: 'Find the area from the inradius and semiperimeter with A = r × s.'
+      },
       radius: {
         href: '/right-triangle-radius-calculator/',
         label: 'kalkulator jejari segi tiga bersudut tegak',
@@ -2122,6 +2170,11 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       }
     },
     links: {
+      areaFromInradius: {
+        href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/',
+        label: 'Right Triangle Area from Inradius and Semiperimeter Calculator',
+        description: 'Find the area from the inradius and semiperimeter with A = r × s.'
+      },
       radius: {
         href: '/right-triangle-radius-calculator/',
         label: '직각삼각형 반지름 계산기',
@@ -2310,6 +2363,11 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       }
     },
     links: {
+      areaFromInradius: {
+        href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/',
+        label: 'Right Triangle Area from Inradius and Semiperimeter Calculator',
+        description: 'Find the area from the inradius and semiperimeter with A = r × s.'
+      },
       radius: {
         href: '/right-triangle-radius-calculator/',
         label: '直角三角形の半径計算機',
@@ -2498,6 +2556,11 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       }
     },
     links: {
+      areaFromInradius: {
+        href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/',
+        label: 'Right Triangle Area from Inradius and Semiperimeter Calculator',
+        description: 'Find the area from the inradius and semiperimeter with A = r × s.'
+      },
       radius: {
         href: '/right-triangle-radius-calculator/',
         label: 'সমকোণী ত্রিভুজ ব্যাসার্ধ ক্যালকুলেটর',
@@ -2687,6 +2750,11 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       }
     },
     links: {
+      areaFromInradius: {
+        href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/',
+        label: 'Right Triangle Area from Inradius and Semiperimeter Calculator',
+        description: 'Find the area from the inradius and semiperimeter with A = r × s.'
+      },
       radius: {
         href: '/right-triangle-radius-calculator/',
         label: 'calculadora de raios de triângulo retângulo',
@@ -2876,6 +2944,11 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       }
     },
     links: {
+      areaFromInradius: {
+        href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/',
+        label: 'Right Triangle Area from Inradius and Semiperimeter Calculator',
+        description: 'Find the area from the inradius and semiperimeter with A = r × s.'
+      },
       radius: {
         href: '/right-triangle-radius-calculator/',
         label: 'calcolatrice dei raggi del triangolo rettangolo',
@@ -3065,6 +3138,11 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       }
     },
     links: {
+      areaFromInradius: {
+        href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/',
+        label: 'Right Triangle Area from Inradius and Semiperimeter Calculator',
+        description: 'Find the area from the inradius and semiperimeter with A = r × s.'
+      },
       radius: {
         href: '/right-triangle-radius-calculator/',
         label: 'Radiusrechner für rechtwinklige Dreiecke',
@@ -3332,6 +3410,11 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       }
     },
     links: {
+      areaFromInradius: {
+        href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/',
+        label: 'Right Triangle Area from Inradius and Semiperimeter Calculator',
+        description: 'Find the area from the inradius and semiperimeter with A = r × s.'
+      },
       radius: {
         href: '/right-triangle-radius-calculator/',
         label: 'calculateur de rayons de triangle rectangle',
@@ -3599,6 +3682,11 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       }
     },
     links: {
+      areaFromInradius: {
+        href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/',
+        label: 'Right Triangle Area from Inradius and Semiperimeter Calculator',
+        description: 'Find the area from the inradius and semiperimeter with A = r × s.'
+      },
       radius: {
         href: '/right-triangle-radius-calculator/',
         label: 'калькулятор радиусов прямоугольного треугольника',
@@ -3866,6 +3954,11 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       }
     },
     links: {
+      areaFromInradius: {
+        href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/',
+        label: 'Right Triangle Area from Inradius and Semiperimeter Calculator',
+        description: 'Find the area from the inradius and semiperimeter with A = r × s.'
+      },
       radius: {
         href: '/right-triangle-radius-calculator/',
         label: 'calculadora de radios de triángulo rectángulo',

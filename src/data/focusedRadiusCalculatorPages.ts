@@ -192,6 +192,11 @@ export const focusedRadiusCalculatorPages: FocusedRadiusCalculatorPage[] = [
         label: 'right triangle side calculator',
         description: 'Find a <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">missing side</a> before calculating the inradius.',
       },
+      {
+        href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/',
+        label: 'right triangle area from inradius and semiperimeter calculator',
+        description: 'Use the inradius and semiperimeter to find the area with A = r × s.'
+      },
     ],
     faqs: [
       {
@@ -324,6 +329,11 @@ export const focusedRadiusCalculatorPages: FocusedRadiusCalculatorPage[] = [
         href: '/pythagorean-theorem-calculator/',
         label: 'pythagorean theorem calculator',
         description: 'Find the hypotenuse from the two legs when c is not known yet.',
+      },
+      {
+        href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/',
+        label: 'right triangle area from inradius and semiperimeter calculator',
+        description: 'Use the inradius and semiperimeter to find the area with A = r × s.'
       },
     ],
     faqs: [

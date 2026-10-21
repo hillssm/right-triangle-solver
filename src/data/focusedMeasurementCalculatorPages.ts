@@ -612,7 +612,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       { href: '/right-triangle-perimeter-calculator/', label: 'Right Triangle Perimeter Calculator' },
       { href: '/right-triangle-area-calculator/', label: 'Right Triangle Area Calculator' },
       { href: '/right-triangle-radius-calculator/', label: 'Right Triangle Radius Calculator' },
-      { href: '/pythagorean-theorem-calculator/', label: 'Pythagorean Theorem Calculator' }
+      { href: '/pythagorean-theorem-calculator/', label: 'Pythagorean Theorem Calculator' },
+      { href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/', label: 'Right Triangle Area from Inradius and Semiperimeter Calculator' },
     ],
     faqs: [
       {
@@ -794,7 +795,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       { href: '/right-triangle-area-from-angle-calculator/', label: 'Right Triangle Area From Angle Calculator' },
       { href: '/right-triangle-area-from-semiperimeter-calculator/', label: 'Right Triangle Area From Semiperimeter Calculator' },
       { href: '/right-triangle-side-calculator/', label: 'Right Triangle Side Calculator' },
-      { href: '/right-triangle-perimeter-calculator/', label: 'Right Triangle Perimeter Calculator' }
+      { href: '/right-triangle-perimeter-calculator/', label: 'Right Triangle Perimeter Calculator' },
+      { href: '/right-triangle-area-from-leg-and-angle-calculator/', label: 'Right Triangle Area from Leg and Angle Calculator' },
+      { href: '/right-triangle-area-from-hypotenuse-and-altitude-calculator/', label: 'Right Triangle Area from Hypotenuse and Altitude Calculator' },
     ],
     faqs: [
       {
@@ -990,7 +993,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       { href: '/right-triangle-area-from-legs-calculator/', label: 'Right Triangle Area From Legs Calculator' },
       { href: '/right-triangle-side-from-angle-calculator/', label: 'Right Triangle Side From Angle Calculator' },
       { href: '/right-triangle-angle-calculator/', label: 'Right Triangle Angle Calculator' },
-      { href: '/right-triangle-trig-ratios-calculator/', label: 'Right Triangle Trig Ratios Calculator' }
+      { href: '/right-triangle-trig-ratios-calculator/', label: 'Right Triangle Trig Ratios Calculator' },
+      { href: '/right-triangle-area-from-leg-and-angle-calculator/', label: 'Right Triangle Area from Leg and Angle Calculator' },
     ],
     faqs: [
       {
@@ -1164,7 +1168,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       { href: '/right-triangle-semiperimeter-calculator/', label: 'Right Triangle Semiperimeter Calculator' },
       { href: '/right-triangle-radius-calculator/', label: 'Right Triangle Radius Calculator' },
       { href: '/right-triangle-area-from-altitude-calculator/', label: 'Right Triangle Area From Altitude Calculator' },
-      { href: '/right-triangle-inradius-and-circumradius-calculator/', label: 'Right Triangle Inradius and Circumradius Calculator' }
+{ href: '/right-triangle-area-from-inradius-and-semiperimeter-calculator/', label: 'Right Triangle Area from Inradius and Semiperimeter Calculator' },
     ],
     faqs: [
       {
@@ -1336,7 +1340,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       { href: '/right-triangle-area-from-legs-calculator/', label: 'Right Triangle Area From Legs Calculator' },
       { href: '/right-triangle-altitude-calculator/', label: 'Right Triangle Altitude Calculator' },
       { href: '/right-triangle-area-from-semiperimeter-calculator/', label: 'Right Triangle Area From Semiperimeter Calculator' },
-      { href: '/right-triangle-side-calculator/', label: 'Right Triangle Side Calculator' }
+      { href: '/right-triangle-side-calculator/', label: 'Right Triangle Side Calculator' },
+      { href: '/right-triangle-area-from-hypotenuse-and-altitude-calculator/', label: 'Right Triangle Area from Hypotenuse and Altitude Calculator' },
+      { href: '/right-triangle-area-from-leg-and-angle-calculator/', label: 'Right Triangle Area from Leg and Angle Calculator' },
     ],
     faqs: [
       {
@@ -1613,7 +1619,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     {
       href: "/right-triangle-area-calculator/",
       label: "Area Calculator"
-    }
+    },
+    {
+      href: "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+      label: "Right Triangle Area from Hypotenuse and Altitude Calculator"
+    },
   ],
   faqs: [
     {
@@ -1739,7 +1749,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
     {
       href: "/right-triangle-altitude-calculator/",
       label: "Altitude Calculator"
-    }
+    },
+    {
+      href: "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+      label: "Right Triangle Area from Inradius and Semiperimeter Calculator"
+    },
   ],
   faqs: [
     {

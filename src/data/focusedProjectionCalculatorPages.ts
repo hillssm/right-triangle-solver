@@ -219,7 +219,8 @@ export const FOCUSED_PROJECTION_CALCULATOR_PAGES: FocusedProjectionCalculatorPag
       { href: '/right-triangle-projection-q-calculator/', label: 'right triangle projection q calculator' },
       { href: '/right-triangle-leg-a-from-projection-calculator/', label: 'right triangle leg a from projection calculator' },
       { href: '/right-triangle-altitude-from-projections-calculator/', label: 'right triangle altitude from projections calculator' },
-      { href: '/right-triangle-side-calculator/', label: 'right triangle side calculator' }
+      { href: '/right-triangle-side-calculator/', label: 'right triangle side calculator' },
+      { href: '/right-triangle-hypotenuse-from-projections-calculator/', label: 'right triangle hypotenuse from projections calculator' },
     ],
     faqs: [
       {
@@ -345,7 +346,8 @@ export const FOCUSED_PROJECTION_CALCULATOR_PAGES: FocusedProjectionCalculatorPag
       { href: '/right-triangle-projection-p-calculator/', label: 'right triangle projection p calculator' },
       { href: '/right-triangle-leg-b-from-projection-calculator/', label: 'right triangle leg b from projection calculator' },
       { href: '/right-triangle-altitude-from-projections-calculator/', label: 'right triangle altitude from projections calculator' },
-      { href: '/right-triangle-side-calculator/', label: 'right triangle side calculator' }
+      { href: '/right-triangle-side-calculator/', label: 'right triangle side calculator' },
+      { href: '/right-triangle-hypotenuse-from-projections-calculator/', label: 'right triangle hypotenuse from projections calculator' },
     ],
     faqs: [
       {
@@ -471,7 +473,9 @@ export const FOCUSED_PROJECTION_CALCULATOR_PAGES: FocusedProjectionCalculatorPag
       { href: '/right-triangle-projection-p-calculator/', label: 'right triangle projection p calculator' },
       { href: '/right-triangle-leg-b-from-projection-calculator/', label: 'right triangle leg b from projection calculator' },
       { href: '/right-triangle-side-calculator/', label: 'right triangle side calculator' },
-      { href: '/right-triangle-altitude-from-projections-calculator/', label: 'right triangle altitude from projections calculator' }
+      { href: '/right-triangle-altitude-from-projections-calculator/', label: 'right triangle altitude from projections calculator' },
+      { href: '/right-triangle-hypotenuse-from-projections-calculator/', label: 'right triangle hypotenuse from projections calculator' },
+      { href: '/similar-right-triangles-calculator/', label: 'similar right triangles calculator' },
     ],
     faqs: [
       {
@@ -597,7 +601,9 @@ export const FOCUSED_PROJECTION_CALCULATOR_PAGES: FocusedProjectionCalculatorPag
       { href: '/right-triangle-projection-q-calculator/', label: 'right triangle projection q calculator' },
       { href: '/right-triangle-leg-a-from-projection-calculator/', label: 'right triangle leg a from projection calculator' },
       { href: '/right-triangle-side-calculator/', label: 'right triangle side calculator' },
-      { href: '/right-triangle-altitude-from-projections-calculator/', label: 'right triangle altitude from projections calculator' }
+      { href: '/right-triangle-altitude-from-projections-calculator/', label: 'right triangle altitude from projections calculator' },
+      { href: '/right-triangle-hypotenuse-from-projections-calculator/', label: 'right triangle hypotenuse from projections calculator' },
+      { href: '/similar-right-triangles-calculator/', label: 'similar right triangles calculator' },
     ],
     faqs: [
       {
@@ -722,7 +728,8 @@ export const FOCUSED_PROJECTION_CALCULATOR_PAGES: FocusedProjectionCalculatorPag
       { href: '/right-triangle-projection-p-calculator/', label: 'right triangle projection p calculator' },
       { href: '/right-triangle-projection-q-calculator/', label: 'right triangle projection q calculator' },
       { href: '/right-triangle-altitude-from-projections-calculator/', label: 'right triangle altitude from projections calculator' },
-      { href: '/right-triangle-side-calculator/', label: 'right triangle side calculator' }
+      { href: '/right-triangle-side-calculator/', label: 'right triangle side calculator' },
+      { href: '/similar-right-triangles-calculator/', label: 'similar right triangles calculator' },
     ],
     faqs: [
       {

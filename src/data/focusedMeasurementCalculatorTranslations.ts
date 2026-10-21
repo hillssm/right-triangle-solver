@@ -499,7 +499,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "href": "/pythagorean-theorem-calculator/",
           "label": "पाइथागोरस प्रमेय कैलकुलेटर"
-        }
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
+        },
       ],
       "faqs": [
         {
@@ -1139,7 +1143,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "href": "/pythagorean-theorem-calculator/",
           "label": "Calculadora del Teorema de Pitágoras"
-        }
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
+        },
       ],
       "faqs": [
         {
@@ -1779,7 +1787,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "href": "/pythagorean-theorem-calculator/",
           "label": "Калькулятор теоремы Пифагора"
-        }
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
+        },
       ],
       "faqs": [
         {
@@ -2419,7 +2431,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "href": "/pythagorean-theorem-calculator/",
           "label": "Calculatrice du Théorème de Pythagore"
-        }
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
+        },
       ],
       "faqs": [
         {
@@ -3059,7 +3075,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "href": "/pythagorean-theorem-calculator/",
           "label": "Rechner für den Satz des Pythagoras"
-        }
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
+        },
       ],
       "faqs": [
         {
@@ -3699,7 +3719,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "href": "/pythagorean-theorem-calculator/",
           "label": "Calcolatore del Teorema di Pitagora"
-        }
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
+        },
       ],
       "faqs": [
         {
@@ -4339,7 +4363,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "href": "/pythagorean-theorem-calculator/",
           "label": "Calculadora do Teorema de Pitágoras"
-        }
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
+        },
       ],
       "faqs": [
         {
@@ -4979,7 +5007,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "href": "/pythagorean-theorem-calculator/",
           "label": "পিথাগোরিয়ান থিওরেম ক্যালকুলেটর"
-        }
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
+        },
       ],
       "faqs": [
         {
@@ -5619,7 +5651,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "href": "/pythagorean-theorem-calculator/",
           "label": "ピタゴラスの定理電卓"
-        }
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
+        },
       ],
       "faqs": [
         {
@@ -6195,7 +6231,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "href": "/pythagorean-theorem-calculator/",
           "label": "피타고라스 정리 계산기"
-        }
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
+        },
       ],
       "faqs": [
         {
@@ -6827,7 +6867,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "href": "/pythagorean-theorem-calculator/",
           "label": "Kalkulator Teorem Pythagoras"
-        }
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
+        },
       ],
       "faqs": [
         {
@@ -7467,7 +7511,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "href": "/pythagorean-theorem-calculator/",
           "label": "Kalkulator twierdzenia Pitagorasa"
-        }
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
+        },
       ],
       "faqs": [
         {
@@ -8107,7 +8155,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "href": "/pythagorean-theorem-calculator/",
           "label": "Kalkulator Teorema Pythagoras"
-        }
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
+        },
       ],
       "faqs": [
         {
@@ -8747,7 +8799,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "href": "/pythagorean-theorem-calculator/",
           "label": "حاسبة نظرية فيثاغورس"
-        }
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
+        },
       ],
       "faqs": [
         {
@@ -9387,7 +9443,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "href": "/pythagorean-theorem-calculator/",
           "label": "Калкулатор на Питагоровата теорема"
-        }
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
+        },
       ],
       "faqs": [
         {
@@ -10027,7 +10087,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "href": "/pythagorean-theorem-calculator/",
           "label": "Pisagor Teoremi Hesaplayıcı"
-        }
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
+        },
       ],
       "faqs": [
         {
@@ -10667,7 +10731,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "href": "/pythagorean-theorem-calculator/",
           "label": "Pythagoras sats kalkylator"
-        }
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
+        },
       ],
       "faqs": [
         {
@@ -11307,7 +11375,11 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "href": "/pythagorean-theorem-calculator/",
           "label": "毕达哥拉斯定理计算器"
-        }
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
+        },
       ],
       "faqs": [
         {

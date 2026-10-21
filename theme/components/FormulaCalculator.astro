@@ -277,7 +277,7 @@ const calculatorMessages = JSON.stringify(messages);
         {defaultStatus}
       </p>
 
-      <div class="hidden surface-card border-primary/30 bg-surface-container-high" data-calc-result-wrap>
+      <div class="hidden surface-card scroll-mt-24 border-primary/30 bg-surface-container-high" data-calc-result-wrap>
         <div class="flex items-center justify-between">
           <p class="font-label text-xs uppercase tracking-widest text-primary" data-calc-output-label>
             {calculator.outputLabel}
@@ -1456,6 +1456,7 @@ const calculatorMessages = JSON.stringify(messages);
             throw new Error('Mathematical error. Verify your values accurately represent a right triangle.');
           }
           renderSuccess(resultData, primaryUnit, values);
+          resultWrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
         } catch (err) {
           renderError(err);
         }

@@ -29,7 +29,6 @@
   </g>
 
   <!-- Text Overlay -->
-  <text x="80" y="120" font-family="system-ui, sans-serif" font-size="64" font-weight="800" fill="#ffffff">Height of a Right Triangle</text>
   <text x="80" y="180" font-family="system-ui, sans-serif" font-size="32" font-weight="500" fill="#94a3b8">Altitude from Any Known Values</text>
 
   <!-- Formula Box -->

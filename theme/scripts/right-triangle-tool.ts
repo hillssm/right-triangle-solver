@@ -291,6 +291,7 @@
       const statusEl = section.querySelector('[data-tool-status]') as HTMLElement | null;
       const formulaListEl = section.querySelector('[data-formula-list]') as HTMLElement | null;
       const stepListEl = section.querySelector('[data-step-list]') as HTMLElement | null;
+      const resultsPanelEl = section.querySelector('[data-results-panel]') as HTMLElement | null;
       const resetButton = section.querySelector('[data-reset-btn]') as HTMLButtonElement | null;
       const copyButton = section.querySelector('[data-copy-btn]') as HTMLButtonElement | null;
       const pathEl = section.querySelector('[data-triangle-path]') as SVGPathElement | null;
@@ -580,6 +581,11 @@
         return { values, hasAnyError };
       };
 
+      const scrollToResults = () => {
+        if (!lastSolution || !resultsPanelEl) return;
+        resultsPanelEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      };
+
       const solveFromInputs = () => {
         clearFieldErrors();
         const { values, hasAnyError } = readValues();
@@ -710,17 +716,13 @@
       form.addEventListener('submit', (event) => {
         event.preventDefault();
         solveFromInputs();
+        scrollToResults();
       });
 
       for (const key of CALCULATOR_INPUT_KEYS) {
         inputs[key].addEventListener('input', () => {
           setFieldError(key, '');
-          const filled = getFilledCount();
-          if (filled >= 2) {
-            solveFromInputs();
-            return;
-          }
-          if (filled === 0) {
+          if (lastSolution || getFilledCount() === 0) {
             setEmptyResults();
             setStatus(l.statusDefault, false);
           }
@@ -731,6 +733,7 @@
           if (event.key === 'Enter') {
             event.preventDefault();
             solveFromInputs();
+            scrollToResults();
           }
         });
       }
@@ -753,8 +756,7 @@
           }
           angleMode = next;
           syncModeButtons();
-          if (getFilledCount() >= 2) solveFromInputs();
-          else if (lastSolution) renderSolution(lastSolution);
+          if (lastSolution) renderSolution(lastSolution);
           updateUrlState();
         });
       }
@@ -763,8 +765,10 @@
         const sel = form.querySelector(`[name="${uk}"]`);
         if (sel) {
           sel.addEventListener('change', () => {
-            const filled = getFilledCount();
-            if (filled >= 2) solveFromInputs();
+            if (lastSolution) {
+              setEmptyResults();
+              setStatus(l.statusDefault, false);
+            }
             updateUrlState();
           });
         }

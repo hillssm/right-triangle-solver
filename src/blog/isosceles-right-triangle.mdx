@@ -75,6 +75,33 @@ Step 1: s = 34.14 / (2 + √2) ≈ 34.14 / 3.4142 ≈ 10.00.
 Step 2: hypotenuse = 10√2 ≈ 14.14.
 **Answer: legs of 10 m and 10 m, hypotenuse ≈ 14.14 m.**
 
+## Solve From Any Measurement
+
+So far the starting point was a side. Area and perimeter work just as well, because each one determines the leg, and the leg determines everything.
+
+| You Know | Leg s Is | Then |
+|---|---|---|
+| A leg | s itself | Hypotenuse = s√2 |
+| Hypotenuse c | c/√2 | Area = c²/4 |
+| Area A | √(2A) | Hypotenuse = √(2A) × √2 |
+| Perimeter P | P/(2 + √2) | Area = s²/2 |
+
+**Worked example (from the area).** An isosceles right triangle has an area of 32 square units. Find its sides.
+Step 1: s = √(2 × 32) = √64 = 8.
+Step 2: hypotenuse = 8√2 ≈ 11.31.
+**Answer: legs of 8 units, hypotenuse ≈ 11.31 units.**
+
+For the most common hypotenuse values, the leg conversion is worth having in front of you:
+
+| Hypotenuse c | Each Leg c/√2 |
+|---|---|
+| 5 | 3.54 |
+| 10 | 7.07 |
+| 15 | 10.61 |
+| 20 | 14.14 |
+| 25 | 17.68 |
+| 30 | 21.21 |
+
 ## The Square Connection, Put to Work
 
 Because this triangle is half a square, it appears anywhere squares get cut, measured, or checked along the diagonal.
@@ -84,6 +111,21 @@ Because this triangle is half a square, it appears anywhere squares get cut, mea
 **Drafting and design.** The standard set square in a geometry kit, the transparent triangle used for drawing, is a 45-45-90 triangle. Its equal edges and exact 45° corners are what make it useful for drawing diagonals of squares and lines at 45°.
 
 **Cutting material.** A square piece of fabric or paper folded or cut corner to corner produces two isosceles right triangles with no waste. Quilting and origami both build on this: the fold line is the hypotenuse, and its length is the side times √2.
+
+## 45-45-90 vs 30-60-90: Do Not Mix Them Up
+
+The two special right triangles are studied together and confused together. This table keeps them apart:
+
+| Feature | 45-45-90 (Isosceles) | 30-60-90 |
+|---|---|---|
+| Angles | 45°, 45°, 90° | 30°, 60°, 90° |
+| Legs | Equal | Short and long, never equal |
+| Side ratio | 1 : 1 : √2 | 1 : √3 : 2 |
+| Hypotenuse from a leg | Leg × √2 | Short leg × 2 |
+| Long leg from short leg | Same length (they match) | Short leg × √3 |
+| Recognize it by | Two equal legs or sides | Hypotenuse double the short leg |
+
+The fastest discriminator is the legs. If the two legs are equal, it is the 45-45-90 and the √2 ratio applies. If one leg is clearly longer and the hypotenuse is exactly twice the shorter leg, it is the 30-60-90. The [angles guide](/blog/angles-in-a-right-triangle/) covers where the 30-60-90 comes from (half of an equilateral triangle) alongside this one.
 
 ## Can Its Sides Be Whole Numbers?
 
@@ -99,6 +141,13 @@ That is why this triangle never appears in the [Pythagorean triples](/blog/pytha
 - **Confusing it with the 30-60-90 triangle.** Both are special, but their ratios differ: 1 : 1 : √2 here, against 1 : √3 : 2 for the 30-60-90, whose legs are not equal. Check which angles the problem states before reaching for a ratio.
 - **Forgetting the half in the area.** The area is s²/2, not s². The two legs are a base-height pair, and the triangle is half of the s by s square, so half its area too.
 - **Rounding √2 too early.** Keep √2 symbolic through the calculation and round at the end. Using 1.4 from the start turns a hypotenuse of 14.14 into 14.0, an error that grows in any step that follows.
+
+## Practice Problems
+
+1. A leg measures 12. Find the hypotenuse and the area. **Answer: hypotenuse = 12√2 ≈ 16.97; area = 12²/2 = 72.**
+2. The hypotenuse measures 24. Find each leg. **Answer: 24/√2 ≈ 16.97.**
+3. The area is 18 square units. Find the leg and the hypotenuse. **Answer: leg = √(2 × 18) = 6; hypotenuse = 6√2 ≈ 8.49.**
+4. A square garden plot is split by a diagonal path into two isosceles right triangles. Each half has legs of 9 meters. How long is the path? **Answer: 9√2 ≈ 12.73 meters.**
 
 <Faq heading="Frequently Asked Questions" description="Short answers to the questions students ask most about isosceles right triangles." items={[
   {

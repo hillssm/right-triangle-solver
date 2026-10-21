@@ -22,6 +22,8 @@ Three conditions define a Pythagorean triple:
 
 A triple is called **primitive** when its three numbers share no common factor greater than 1. (3, 4, 5) is primitive. (6, 8, 10) is a genuine triple, since 36 + 64 = 100, but it is not primitive: all three numbers divide by 2, and underneath it sits (3, 4, 5) scaled up. Every non-primitive triple is a scaled copy of exactly one primitive triple, which is why the primitive list below is the master list.
 
+Triples are old mathematics. The oldest known record of them is the Babylonian clay tablet known as Plimpton 322, dated to about 1800 BC, whose rows of numbers correspond to fifteen Pythagorean triples, written four thousand years before the internet made them a homework topic.
+
 Two near-misses show why both conditions matter. (1, 1, √2) fits the theorem perfectly, but √2 is not an integer, so it is not a triple. (4, 5, 6) is all integers, but 16 + 25 = 41, not 36, so it fails the equation and is not a triple either.
 
 ## List of Primitive Pythagorean Triples (Hypotenuse up to 100)
@@ -47,7 +49,32 @@ There are exactly **16 primitive triples** with hypotenuse at most 100. Every ro
 | 39 | 80 | 89 |
 | 65 | 72 | 97 |
 
-Two details in this list surprise people. The hypotenuse 65 appears twice, in (16, 63, 65) and (33, 56, 65), and so does 85. A single hypotenuse can belong to two different primitive triples, because it can be written as a sum of two squares in two different ways. Also notice that the legs get lopsided as the list grows: (65, 72, 97) is nearly even, while (13, 84, 85) is a sliver of a triangle. Both are equally valid.
+Two details in this list surprise people. The hypotenuse 65 appears twice, in (16, 63, 65) and (33, 56, 65), and so does 85. A single hypotenuse can belong to two different primitive triples, because it can be written as a sum of two squares in two different ways. Also notice that the legs get lopsided as the list grows: (65, 72, 97) is nearly even, while (13, 84, 85) is a sliver of a triangle. Both are equally valid. Counting the multiples alongside the primitives, there are **52 triples in total** with hypotenuse up to 100.
+
+## Primitive Triples From 100 to 200
+
+Sixteen more primitive triples have hypotenuses between 100 and 200, bringing the count to 32 primitives up to 200. Every row verified against a² + b² = c², as before.
+
+| Leg a | Leg b | Hypotenuse c |
+|---|---|---|
+| 20 | 99 | 101 |
+| 60 | 91 | 109 |
+| 15 | 112 | 113 |
+| 44 | 117 | 125 |
+| 88 | 105 | 137 |
+| 17 | 144 | 145 |
+| 24 | 143 | 145 |
+| 51 | 140 | 149 |
+| 85 | 132 | 157 |
+| 119 | 120 | 169 |
+| 52 | 165 | 173 |
+| 19 | 180 | 181 |
+| 57 | 176 | 185 |
+| 104 | 153 | 185 |
+| 95 | 168 | 193 |
+| 28 | 195 | 197 |
+
+The pattern from the first list repeats: 145 and 185 each appear twice as a hypotenuse. At the other extreme sits (119, 120, 169), whose legs of 119 and 120 differ by only 1, as close to equal as integer legs can ever get.
 
 ## Common Multiples Worth Memorizing
 
@@ -86,6 +113,15 @@ Pick any m greater than n, substitute, and the output is always a Pythagorean tr
 **Worked example.** Take m = 4 and n = 1. Then a = 16 − 1 = 15, b = 2 × 4 × 1 = 8, and c = 16 + 1 = 17. The triple is (8, 15, 17), and the check confirms it: 64 + 225 = 289 = 17².
 
 Watch what happens when the conditions break. With m = 3 and n = 1, both odd, the formula gives (8, 6, 10): still a triple, but every number is even, so it is just (3, 4, 5) doubled in disguise. With m = 4 and n = 2, which share a factor of 2, it gives (12, 16, 20), the (3, 4, 5) family again. The formula never fails to produce a triple; the conditions only decide whether the result is primitive or a repeat.
+
+## Find a Triple That Contains Your Number
+
+Problems often run in reverse: you have one side and need the rest of the triple. Two shortcut formulas build a triple around a given leg n.
+
+- **If n is odd:** the triple is (n, (n² − 1)/2, (n² + 1)/2). For n = 9: (9, 40, 41), since (81 − 1)/2 = 40 and (81 + 1)/2 = 41.
+- **If n is even:** the triple is (n, (n/2)² − 1, (n/2)² + 1). For n = 12: (12, 35, 37), since 6² − 1 = 35 and 6² + 1 = 37.
+
+Both shortcuts are Euclid's formula in disguise, and both always work. What they do not give is every option: a single number can belong to several triples. The number 20 appears in five of them: as the hypotenuse of (12, 16, 20), and as a leg in (15, 20, 25), (20, 21, 29), (20, 48, 52), and (20, 99, 101). The shortcut finds one; the lists above find the rest.
 
 ## How to Check Whether Three Numbers Form a Triple
 
@@ -126,6 +162,13 @@ These patterns make a fast screening test. A set like (14, 27, 30) fails on sigh
 - **Expecting equal legs.** No Pythagorean triple has a = b. That would force c = a√2, and √2 is not a whole number, so the hypotenuse can never come out an integer.
 - **Assuming every right triangle has integer sides.** Most do not. The 45-45-90 triangle with legs 1 and 1 has hypotenuse √2; triples are the special minority where everything lands on whole numbers.
 - **Thinking the list ends.** Sixteen primitives under 100 is a page limit, not a mathematical one. Euclid's formula and scaling together produce infinitely many triples.
+
+## Practice Problems
+
+1. Is (11, 60, 61) a primitive triple? **Answer: yes. 121 + 3600 = 3721 = 61², and the three numbers share no common factor.**
+2. Use Euclid's formula with m = 6 and n = 1. **Answer: a = 35, b = 12, c = 37, giving (12, 35, 37), which is primitive.**
+3. Does (14, 48, 50) form a triple, and is it primitive? **Answer: yes to the triple (196 + 2304 = 2500 = 50²), but not primitive: it is (7, 24, 25) doubled.**
+4. Use the odd-number shortcut to build a triple with leg 15. **Answer: (15, 112, 113), since (225 − 1)/2 = 112 and (225 + 1)/2 = 113.**
 
 <Faq heading="Frequently Asked Questions" description="Short answers to the questions students ask most about Pythagorean triples." items={[
   {

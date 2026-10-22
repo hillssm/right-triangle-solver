@@ -1,4 +1,6 @@
 ---
+import { existsSync } from 'node:fs';
+import path from 'node:path';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import { DEFAULT_LOCALE, localizePath } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
@@ -32,12 +34,19 @@ const pageTitle = `${post.data.title} | ${pick(blogText, 'title', 'Blog')}`;
 const pageDescription = post.data.description;
 const canonicalUrl = localizePath(locale, `/blog/${post.id}/`);
 
+// Per-post social/Discover image (1200x630 PNG rendered from the post's hero
+// by scripts/generate-og-images.py). Falls back to the site-wide default
+// og image when no PNG has been generated for this post yet.
+const ogImageFile = `/images/og/${post.id}.png`;
+const hasOgImage = existsSync(path.join(process.cwd(), 'public', ogImageFile));
+const postOgImage = hasOgImage ? ogImageFile : undefined;
+
 const postSchema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
   headline: post.data.title,
   description: post.data.description,
-  image: toAbsoluteUrl(post.data.image),
+  image: toAbsoluteUrl(postOgImage ?? post.data.image),
   datePublished: post.data.date.toISOString(),
   author: {
     '@type': 'Person',
@@ -52,6 +61,8 @@ const postSchema = {
   description={pageDescription}
   canonicalPath={canonicalUrl}
   ogType="article"
+  ogImage={postOgImage}
+  ogImageAlt={post.data.title}
 >
   <script is:inline slot="head" type="application/ld+json" set:html={JSON.stringify(postSchema)}></script>
 

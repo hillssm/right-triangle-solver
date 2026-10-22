@@ -24,6 +24,8 @@ interface Props {
   canonicalPath?: string;
   noindex?: boolean;
   ogType?: 'website' | 'article';
+  ogImage?: string;
+  ogImageAlt?: string;
   schemaPage?: 'about' | 'contact' | null;
   hideHeader?: boolean;
   hideFooter?: boolean;
@@ -37,6 +39,8 @@ const {
   canonicalPath,
   noindex = false,
   ogType = 'website',
+  ogImage,
+  ogImageAlt,
   schemaPage = null,
   hideHeader = false,
   hideFooter = false,
@@ -91,7 +95,10 @@ const robots = noindex
   : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
 const googlebot = noindex ? 'noindex, nofollow' : 'index, follow';
 const ogLocale = getOgLocale(locale);
-const ogImageUrl = toAbsoluteUrl(site.metaImage);
+const ogImageUrl = toAbsoluteUrl(ogImage ?? site.metaImage);
+const ogImageWidth = ogImage ? 1200 : site.metaImageWidth;
+const ogImageHeight = ogImage ? 630 : site.metaImageHeight;
+const ogImageAltText = ogImageAlt ?? site.metaImageAlt;
 const textFontStylesheetUrl =
   'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@200;300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=optional';
 
@@ -225,9 +232,9 @@ const languageSwitcherOptions = SUPPORTED_LOCALES.map((l) => ({
     <meta property="og:site_name" content={site.brandName} />
     <meta property="og:locale" content={ogLocale} />
     <meta property="og:image" content={ogImageUrl} />
-    <meta property="og:image:width" content={String(site.metaImageWidth)} />
-    <meta property="og:image:height" content={String(site.metaImageHeight)} />
-    <meta property="og:image:alt" content={site.metaImageAlt} />
+    <meta property="og:image:width" content={String(ogImageWidth)} />
+    <meta property="og:image:height" content={String(ogImageHeight)} />
+    <meta property="og:image:alt" content={ogImageAltText} />
     <meta property="og:type" content={ogType} />
 
     <meta name="twitter:title" content={siteTitle} />

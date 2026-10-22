@@ -1,0 +1,30 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <text x="600" y="72" font-family="system-ui, sans-serif" font-size="40" font-weight="700" fill="#f1f5f9" text-anchor="middle">Right Triangle Worksheets</text>
+  <text x="600" y="112" font-family="system-ui, sans-serif" font-size="24" font-weight="500" fill="#94a3b8" text-anchor="middle">Printable Practice + Answer Keys</text>
+
+  <!-- 6-8-10 to scale, 36 px per unit: A(190,480) right angle, B(190,264) top, C(478,480); legs 216/288, hyp 360 -->
+  <path d="M 190 480 L 478 480 L 190 264 Z" fill="rgba(56, 189, 248, 0.1)" stroke="#38bdf8" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M 214 480 L 214 456 L 190 456" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="140" y="380" font-family="system-ui, sans-serif" font-size="30" font-weight="600" fill="#cbd5e1" text-anchor="middle">6</text>
+  <text x="334" y="528" font-family="system-ui, sans-serif" font-size="30" font-weight="600" fill="#cbd5e1" text-anchor="middle">8</text>
+  <text x="392" y="336" font-family="system-ui, sans-serif" font-size="30" font-weight="600" fill="#cbd5e1" text-anchor="middle">10</text>
+
+  <!-- Checklist -->
+  <text x="640" y="290" font-family="monospace" font-size="30" font-weight="bold" fill="#10b981">✓ 36 practice questions</text>
+  <text x="640" y="360" font-family="monospace" font-size="30" font-weight="bold" fill="#10b981">✓ Beginner to advanced</text>
+  <text x="640" y="430" font-family="monospace" font-size="30" font-weight="bold" fill="#10b981">✓ Full answer keys</text>
+
+  <text x="600" y="592" font-family="monospace" font-size="30" font-weight="bold" fill="#facc15" text-anchor="middle">a² + b² = c²</text>
+</svg>

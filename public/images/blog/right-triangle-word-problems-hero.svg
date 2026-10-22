@@ -1,0 +1,32 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">The ladder problem: every word problem hides a triangle</text>
+
+  <!-- Ladder to scale, 1 ft = 42 px: wall x=360 from y=478 up 8 ft (336) to y=142; ladder foot at x=360+6*42=612, y=478; ladder length sqrt(252^2+336^2)=420=10 ft -->
+  <line x1="240" y1="478" x2="840" y2="478" stroke="#94a3b8" stroke-width="3"/>
+  <path d="M 360 478 L 360 142 L 612 478 Z" fill="rgba(56, 189, 248, 0.1)" stroke="#38bdf8" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Wall ticks -->
+  <path d="M 348 200 L 372 200 M 348 310 L 372 310" stroke="#38bdf8" stroke-width="2" opacity="0.5"/>
+
+  <!-- Right-angle marker at wall base (360,478) -->
+  <path d="M 386 478 L 386 452 L 360 452" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+
+  <!-- Labels -->
+  <text x="300" y="318" font-family="system-ui, sans-serif" font-size="32" font-weight="600" fill="#cbd5e1" text-anchor="middle">8 ft</text>
+  <text x="486" y="530" font-family="system-ui, sans-serif" font-size="32" font-weight="600" fill="#cbd5e1" text-anchor="middle">6 ft</text>
+  <text x="540" y="290" font-family="system-ui, sans-serif" font-size="32" font-weight="600" fill="#cbd5e1" text-anchor="middle">10 ft ladder</text>
+
+  <text x="600" y="592" font-family="monospace" font-size="36" font-weight="bold" fill="#10b981" text-anchor="middle">height = √(10² − 6²) = 8 ft</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg width="900" height="560" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="560" fill="url(#bg2)"/>
+  <rect width="900" height="560" fill="url(#grid2)"/>
+
+  <text x="450" y="52" font-family="system-ui, sans-serif" font-size="26" font-weight="500" fill="#94a3b8" text-anchor="middle">Find the missing side, then add all three</text>
+
+  <!-- 5-12-13 to scale, 26 px per unit: A(240,430) right angle, top(240,300), right(552,430); legs 130/312, hyp 338 -->
+  <path d="M 240 430 L 552 430 L 240 300 Z" fill="rgba(56, 189, 248, 0.1)" stroke="#38bdf8" stroke-width="3" stroke-linejoin="round"/>
+
+  <path d="M 264 430 L 264 406 L 240 406" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="296" y="410" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#cbd5e1" text-anchor="middle">90°</text>
+
+  <text x="204" y="372" font-family="system-ui, sans-serif" font-size="29" font-weight="600" fill="#cbd5e1" text-anchor="middle">5</text>
+  <text x="396" y="472" font-family="system-ui, sans-serif" font-size="29" font-weight="600" fill="#cbd5e1" text-anchor="middle">12</text>
+  <text x="428" y="338" font-family="system-ui, sans-serif" font-size="29" font-weight="600" fill="#cbd5e1" text-anchor="middle">13</text>
+
+  <text x="450" y="528" font-family="monospace" font-size="26" font-weight="bold" fill="#10b981" text-anchor="middle">c = √(5² + 12²) = 13, so P = 5 + 12 + 13 = 30</text>
+</svg>

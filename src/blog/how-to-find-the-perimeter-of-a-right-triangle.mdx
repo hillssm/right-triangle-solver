@@ -1,0 +1,208 @@
+---
+title: "How to Find the Perimeter of a Right Triangle"
+description: "Learn how to find the perimeter of a right triangle: the P = a + b + c formula, Pythagorean steps for missing sides, special triangles, and examples."
+image: "/images/blog/right-triangle-perimeter-hero.svg"
+date: 2026-10-22
+author: "Math Expert"
+category: "Geometry"
+---
+
+import Faq from 'theme/components/Faq.astro';
+
+
+You know that a right triangle has two sides measuring 6 cm and 8 cm. But how do you find its perimeter when the third side is not given? Start with what perimeter means: the total distance around the outside of the shape. For any triangle that gives the basic formula, **Perimeter = a + b + c**. The missing side is the only obstacle, and when two sides of a right triangle are known, the Pythagorean theorem usually supplies the third. Here the hypotenuse is √(6² + 8²) = 10 cm, so the perimeter is 6 + 8 + 10 = 24 cm. This guide covers the formulas, every given-side situation, worked examples, and the mistakes that cost marks.
+
+## What Is the Perimeter of a Right Triangle?
+
+The perimeter of a right triangle is the sum of the lengths of its three sides. Those sides have standard names: the two **legs**, labelled a and b, meet at the right angle, and the **hypotenuse**, labelled c, sits opposite the 90° angle and is always the longest side. The labelled 6-8-10 triangle at the top of this page shows all three.
+
+The smallest useful example is the 3-4-5 triangle: first leg 3 cm, second leg 4 cm, hypotenuse 5 cm. Perimeter = 3 + 4 + 5 = **12 cm**. One point about units before we go further: perimeter is a length, so it is measured in plain linear units, centimetres, metres, inches, never in square units. Square units belong to area, a different measurement covered later in this guide.
+
+## The Right Triangle Perimeter Formula
+
+**P = a + b + c**
+
+That is the whole formula, and everything else in this guide is about getting to the point where you can use it. When only the two legs are known, the hypotenuse comes from the Pythagorean theorem, **c = √(a² + b²)**, and substituting it gives a one-line version:
+
+**P = a + b + √(a² + b²)**
+
+Which formula you reach for depends on what the problem hands you:
+
+| Given Information | Formula or Method |
+|---|---|
+| All three sides | P = a + b + c |
+| Both legs | P = a + b + √(a² + b²) |
+| One leg and hypotenuse | Find the missing leg with √(c² − a²), then add all sides |
+| One side and one acute angle | Use trigonometry to find the other sides, then add |
+| Only one side | Not enough information in a general right triangle |
+
+Use the plain addition when nothing is missing; use a Pythagorean or trigonometry step first when something is. And note the last row: unlike the special triangles later in this guide, a general right triangle has no fixed side ratio, so one side on its own fixes nothing.
+
+## How to Calculate the Perimeter Step by Step
+
+1. **Identify the two legs and the hypotenuse.** The hypotenuse faces the right angle; the legs form it.
+2. **Write down the known side lengths.**
+3. **Determine whether a side is missing.** If all three are known, skip to step 5.
+4. **Use the Pythagorean theorem** to find the missing side when two lengths are known.
+5. **Add all three side lengths.**
+6. **Write the final answer with the correct unit**, a linear unit, not a square one.
+
+**The steps at work, legs 5 cm and 12 cm:** the hypotenuse is missing, so c² = 5² + 12² = 25 + 144 = 169, and c = 13 cm. Now add: P = 5 + 12 + 13 = **30 cm**.
+
+![A 5-12-13 right triangle with the hypotenuse calculation and perimeter shown](/images/blog/right-triangle-perimeter-walkthrough.svg)
+
+## Finding the Perimeter When All Three Sides Are Known
+
+This is the easiest situation in the topic: no theorem, no missing side, just careful addition. **Example:** a right triangle has sides of 8 cm, 15 cm, and 17 cm. P = 8 + 15 + 17 = **40 cm**.
+
+A five-second validity check is worth the habit: 8² + 15² = 64 + 225 = 289 = 17², so the sides really do form a right triangle, with 17 correctly placed as the hypotenuse. If a side is already known, never calculate it again; students lose time, and sometimes marks, re-deriving numbers the problem already gave them. Our [right triangle formulas](/blog/right-triangle-formulas/) reference gathers this formula with the rest of the set.
+
+## Finding the Perimeter When Only Two Legs Are Known
+
+With both legs known and the hypotenuse missing, the Pythagorean theorem is not optional; it is the only route to the third side. **Example:** legs of 9 cm and 12 cm. The hypotenuse is √(9² + 12²) = √(81 + 144) = √225 = 15 cm, and P = 9 + 12 + 15 = **36 cm**. In one line: P = a + b + √(a² + b²).
+
+**When the root does not come out whole:** legs of 4 cm and 7 cm give a hypotenuse of √(16 + 49) = √65 cm, which does not simplify. Give the exact answer first, **P = 11 + √65 cm**, then the decimal, about **19.06 cm**. Keep the root exact through every step and round once, at the very end; rounding √65 to 8 at the start would hand you a perimeter of 19 and a small, avoidable error baked into everything after it.
+
+
+## Finding the Perimeter With One Leg and the Hypotenuse
+
+Now the missing side is a leg, and the algebra flips: instead of adding squares, you subtract them. The missing leg is **b = √(c² − a²)**.
+
+**Example:** hypotenuse 13 cm, one leg 5 cm. Missing leg = √(13² − 5²) = √(169 − 25) = √144 = 12 cm. P = 5 + 12 + 13 = **30 cm**, the same 5-12-13 triangle met from the other direction.
+
+Two guards for this case. First, the hypotenuse must be longer than either leg; it is the longest side by definition. Second, that fact catches mislabelled sides instantly: if you feed a leg into the formula as c, the subtraction goes negative or produces a "leg" longer than the hypotenuse, and either result means the sides were identified wrongly. Our [Pythagorean theorem formula](/blog/pythagorean-theorem-formula/) guide treats this rearrangement in full.
+
+## Finding the Perimeter Using Angles and One Side
+
+A side plus an acute angle also pins a right triangle down completely, and trigonometry recovers the other two sides. The three ratios, briefly: sine of an angle is opposite over hypotenuse, cosine is adjacent over hypotenuse, tangent is opposite over adjacent. Our [sine, cosine, and tangent](/blog/sine-cosine-tangent/) guide covers them properly; here is the perimeter use.
+
+**Example:** hypotenuse 10 cm, one acute angle 30°. The leg opposite the 30° angle is 10 × sin 30° = 5 cm. The adjacent leg is 10 × cos 30° = 5√3 ≈ 8.66 cm. P = 10 + 5 + 5√3 = **15 + 5√3 ≈ 23.66 cm**.
+
+Label carefully before calculating: sine and cosine answer different questions depending on which angle you stand at, so mark the given angle, and the opposite and adjacent sides relative to it, on a sketch first. The [angles in a right triangle](/blog/angles-in-a-right-triangle/) guide shows how the two acute angles trade places.
+
+## Perimeter of Special Right Triangles
+
+The two special triangles shortcut everything above, because their ratios hand you all three sides from any one of them.
+
+### Perimeter of a 30-60-90 Triangle
+
+The sides stand in the ratio 1 : √3 : 2. With the shortest side as x, the perimeter gathers into one expression: **P = x(3 + √3)**. **Example:** shortest side 4 cm gives sides of 4, 4√3 (about 6.93), and 8, so P = 4(3 + √3) = 12 + 4√3 ≈ **18.93 cm**. The full treatment, with the labelled diagram, is our [30-60-90 triangle guide](/blog/30-60-90-triangle/) published today.
+
+### Perimeter of a 45-45-90 Triangle
+
+The sides stand in the ratio 1 : 1 : √2. With either leg as x: **P = x(2 + √2)**. **Example:** legs of 6 cm give a hypotenuse of 6√2 ≈ 8.49 cm, so P = 6(2 + √2) = 12 + 6√2 ≈ **20.49 cm**.
+
+The comparison in one line: in a 30-60-90 the two legs differ by the √3 factor; in a 45-45-90 the legs match, and only the hypotenuse needs the ratio. Our [isosceles right triangle](/blog/isosceles-right-triangle/) guide covers the second family member in depth.
+
+## Right Triangle Perimeter Examples From Everyday Life
+
+**A triangular garden.** A corner garden plot has perpendicular sides of 9 m and 12 m, meeting at the corner fence post. The slanted side is √(81 + 144) = 15 m. Fencing the full boundary takes 9 + 12 + 15 = **36 m of fencing**, assuming all three sides are fenced, including the side along the property edge.
+
+**A triangular sign.** A right-triangular shop sign measures 30 cm by 40 cm along its perpendicular edges, with a 50 cm slanted edge (30² + 40² = 50², so the corner is a true right angle). Border trim runs around the whole outside: 30 + 40 + 50 = **120 cm of trim**.
+
+**A support frame.** A carpenter builds a right-triangular brace with a vertical member of 1.8 m and a horizontal member of 2.4 m. The diagonal is √(1.8² + 2.4²) = √(3.24 + 5.76) = √9 = 3.0 m. Total timber for the frame: 1.8 + 2.4 + 3.0 = **7.2 m**, before any cutting allowance.
+
+## Perimeter vs. Area of a Right Triangle
+
+Perimeter and area answer different questions about the same triangle: how far around it, and how much space inside it.
+
+| Feature | Perimeter | Area |
+|---|---|---|
+| Meaning | Distance around the triangle | Space inside the triangle |
+| Formula | a + b + c | ½ × a × b |
+| Units | cm, m, inches | cm², m², in² |
+| Typical use | Borders and fencing | Surface coverage |
+
+In the area formula, a and b are specifically the two perpendicular legs, since they serve as base and height. Take the 6-8-10 triangle: perimeter = 6 + 8 + 10 = **24 cm**; area = ½ × 6 × 8 = **24 cm²**. The numbers match, and the measurements do not: 24 centimetres of boundary is a length you could pace out, while 24 square centimetres of surface is a patch you could cover. Same triangle, same digits, two different questions. That is why the units are not decoration; they say which question you answered.
+
+![The same 6-8-10 triangle shown twice: perimeter as the boundary length and area as the shaded space inside](/images/blog/perimeter-vs-area.svg)
+
+The [area calculator](/right-triangle-area-calculator/) handles the second measurement when you need it.
+
+
+## Common Mistakes When Finding Perimeter
+
+**Adding only two sides.** Wrong: a 3-4-5 triangle with perimeter 3 + 4 = 7. Perimeter walks the whole boundary; all three sides count, so the answer is 12.
+
+**Confusing the hypotenuse with a leg.** Wrong: given a leg of 5 and a hypotenuse of 13, finding the other leg as √(5² + 13²) ≈ 13.93. That "leg" is longer than the hypotenuse, which is impossible. The hypotenuse is always c, and a missing leg subtracts: √(13² − 5²) = 12.
+
+**Adding squared lengths instead of taking the root.** Wrong: legs 6 and 8, so the third side is 36 + 64 = 100 and the perimeter is 114. The squares are a step, not the side: the side is √100 = 10, and the perimeter is 24.
+
+**Subtracting when the missing side is the hypotenuse.** Wrong: legs 9 and 12, hypotenuse √(12² − 9²) ≈ 7.94, shorter than both legs. A missing hypotenuse adds squares: √(9² + 12²) = 15. Subtraction is only for a missing leg.
+
+**Rounding intermediate steps too early.** Wrong: legs 4 and 7, hypotenuse taken as 8.1, perimeter 19.1. Keep √65 exact until the end: 11 + √65 ≈ 19.06. Early rounding compounds quietly and lands you near the answer instead of on it.
+
+**Using square units.** Wrong: the 3-4-5 perimeter written as 12 cm². Perimeter is a length: 12 cm. Square units report area; writing them on a perimeter tells the marker the two ideas are mixed up.
+
+**Applying the theorem to a triangle with no right angle.** Wrong: sides 4 and 5 treated as legs, giving a third side of √41 ≈ 6.40 for a triangle whose actual third side is 6 and whose angles are not 90°. The Pythagorean theorem belongs to right triangles only; our guide on [how to tell if a triangle is a right triangle](/blog/how-to-tell-if-a-triangle-is-a-right-triangle/) gives five checks to run first.
+
+## Practice Problems to Test Your Skills
+
+1. A right triangle has sides of 6 cm, 8 cm, and 10 cm. Find its perimeter.
+2. A right triangle has sides of 5 in, 12 in, and 13 in. Find its perimeter.
+3. The legs of a right triangle measure 7 cm and 24 cm. Find the perimeter.
+4. The legs of a right triangle measure 10 m and 24 m. Find the perimeter.
+5. The legs of a right triangle measure 2 cm and 3 cm. Find the perimeter, exactly and rounded to two decimal places.
+6. The hypotenuse is 17 cm and one leg is 8 cm. Find the perimeter.
+7. The hypotenuse is 25 in and one leg is 7 in. Find the perimeter.
+8. A 45-45-90 triangle has legs of 9 cm. Find its perimeter, exactly and as a decimal.
+9. A right triangle has a hypotenuse of 20 cm and an acute angle of 30°. Find its perimeter, exactly and as a decimal.
+10. A triangular flag has perpendicular edges of 45 cm and 60 cm. How much trim is needed to edge the whole flag?
+
+### Practice Problem Answers and Solutions
+
+1. **24 cm.** All sides known: 6 + 8 + 10 = 24.
+2. **30 in.** All sides known: 5 + 12 + 13 = 30.
+3. **56 cm.** Hypotenuse = √(49 + 576) = √625 = 25; P = 7 + 24 + 25 = 56.
+4. **60 m.** Hypotenuse = √(100 + 576) = √676 = 26; P = 10 + 24 + 26 = 60.
+5. **5 + √13 ≈ 8.61 cm.** Hypotenuse = √(4 + 9) = √13 ≈ 3.61; P = 2 + 3 + √13.
+6. **40 cm.** Missing leg = √(289 − 64) = √225 = 15; P = 8 + 15 + 17 = 40.
+7. **56 in.** Missing leg = √(625 − 49) = √576 = 24; P = 7 + 24 + 25 = 56.
+8. **18 + 9√2 ≈ 30.73 cm.** Hypotenuse = 9√2 ≈ 12.73; P = 9 + 9 + 9√2, which is 9(2 + √2) as the formula predicts.
+9. **30 + 10√3 ≈ 47.32 cm.** Opposite leg = 20 × sin 30° = 10; adjacent leg = 20 × cos 30° = 10√3 ≈ 17.32; P = 20 + 10 + 10√3.
+10. **180 cm of trim.** Hypotenuse = √(2,025 + 3,600) = √5,625 = 75 cm; trim = 45 + 60 + 75 = 180 cm.
+
+## Check Your Answer With a Right Triangle Calculator
+
+Work the problem by hand first, then verify. Our dedicated perimeter calculator takes the three side lengths and returns the total perimeter directly, so it confirms the final addition in seconds. If a side is missing, the main solver finds it first; once all three sides stand on the page, either tool should agree with your number to the digit. A mismatch means a step above went wrong, and the step-by-step section is the place to find it.
+
+**[Check Your Triangle Measurements With Our Calculator](/right-triangle-perimeter-calculator/)**
+
+<Faq heading="Frequently Asked Questions" description="Short answers to the questions students ask most about right triangle perimeter." items={[
+  {
+    "question": "How do you find the perimeter of a right triangle?",
+    "answer": "Add all three side lengths: perimeter = a + b + c, where a and b are the legs and c is the hypotenuse. If every side is known, the addition is the whole task. If one side is missing, find it first with the Pythagorean theorem, then add the three lengths together."
+  },
+  {
+    "question": "What is the formula for the perimeter of a right triangle?",
+    "answer": "The formula is P = a + b + c. When only the two legs are known, substitute the Pythagorean result for the hypotenuse and use P = a + b + √(a² + b²). When a leg is missing instead, the missing leg is √(c² − a²), and the same addition follows once it is found."
+  },
+  {
+    "question": "How do you find the perimeter with only two sides?",
+    "answer": "Yes, when the two sides are both legs or a leg and the hypotenuse. Two legs: the hypotenuse is √(a² + b²). A leg and the hypotenuse: the missing leg is √(c² − a²). Either way, one Pythagorean step produces the third side, and the perimeter is the sum of all three."
+  },
+  {
+    "question": "Can you find the perimeter using the hypotenuse?",
+    "answer": "Not from the hypotenuse alone in a general right triangle, because many different leg pairs share one hypotenuse. You also need one leg or one acute angle. With a leg, subtract squares to find the other leg. With an angle, trigonometry gives both legs, and the three sides then add up."
+  },
+  {
+    "question": "Can you calculate perimeter using one side and one angle?",
+    "answer": "Yes. The known side and angle fix the triangle's shape and size completely. Use sine and cosine to turn the known side into the other two: with a hypotenuse of 10 and a 30 degree angle, the legs are 5 and 5√3, about 8.66, giving a perimeter of about 23.66."
+  },
+  {
+    "question": "What if the right triangle has no whole-number sides?",
+    "answer": "Yes; nothing about the method changes. Keep the irrational side in exact form, like 11 + √65, while you work, and round only the final perimeter, to about 19.06 here. Exact forms preserve accuracy through the calculation, and a decimal approximation at the end is what most real measurements need anyway."
+  },
+  {
+    "question": "Is the perimeter of a right triangle the same as its area?",
+    "answer": "No. Perimeter is the distance around the triangle, measured in plain units like centimetres; area is the space inside it, measured in square units like square centimetres. A 6-8-10 triangle shows the trap clearly: its perimeter is 24 cm and its area is 24 cm², the same number measuring two different things."
+  },
+  {
+    "question": "Can you find the perimeter knowing only one side?",
+    "answer": "Not for a general right triangle: one side fits infinitely many triangles with different perimeters. The exceptions are the special triangles. In a 30-60-90, one side fixes the ratio and the perimeter follows, x(3 + √3) from the short side. In a 45-45-90, one leg gives P = x(2 + √2)."
+  }
+]} />
+
+## Final Takeaway
+
+Finding the perimeter of a right triangle always ends the same way: add the three side lengths. The real work sits one step earlier, in completing the set. When two sides are known, the Pythagorean theorem finds the third, adding squares for a missing hypotenuse and subtracting for a missing leg; a side and an angle do the same job through trigonometry; and the special triangles skip the work entirely through their ratios. Draw the triangle, label the hypotenuse before you calculate anything, keep roots exact until the final line, and check the result against a calculator. Do those four things and perimeter questions stop being a place where marks leak away.

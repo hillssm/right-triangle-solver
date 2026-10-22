@@ -1,0 +1,29 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">The parts of a right triangle, labelled</text>
+
+  <!-- 5-12-13 at 50 px per unit. A(300,480) B(900,480) C(300,230) -->
+  <polygon points="300,480 900,480 300,230" fill="rgba(56,189,248,0.1)" stroke="#38bdf8" stroke-width="3.5"/>
+  <path d="M 300 450 L 330 450 L 330 480" fill="none" stroke="#cbd5e1" stroke-width="2.5"/>
+
+  <text x="272" y="500" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#cbd5e1">A</text>
+  <text x="912" y="500" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#cbd5e1">B</text>
+  <text x="272" y="222" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#cbd5e1">C</text>
+
+  <text x="252" y="364" font-family="system-ui, sans-serif" font-size="28" font-weight="600" fill="#cbd5e1" text-anchor="middle">a = 5</text>
+  <text x="600" y="524" font-family="system-ui, sans-serif" font-size="28" font-weight="600" fill="#cbd5e1" text-anchor="middle">b = 12</text>
+  <text x="630" y="330" font-family="system-ui, sans-serif" font-size="30" font-weight="700" fill="#facc15" text-anchor="middle">c = 13, the hypotenuse</text>
+
+  <text x="600" y="582" font-family="monospace" font-size="27" font-weight="bold" fill="#10b981" text-anchor="middle">the hypotenuse always sits opposite the 90° angle</text>
+</svg>

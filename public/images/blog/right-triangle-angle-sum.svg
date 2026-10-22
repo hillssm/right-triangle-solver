@@ -1,0 +1,28 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">The three angles of a 6-8-10 triangle</text>
+
+  <!-- 6-8-10 at 60 px per unit. A(360,490) B(840,490) C(360,130) -->
+  <polygon points="360,490 840,490 360,130" fill="rgba(56,189,248,0.1)" stroke="#38bdf8" stroke-width="3.5"/>
+  <path d="M 360 454 L 396 454 L 396 490" fill="none" stroke="#facc15" stroke-width="3"/>
+
+  <path d="M 776 490 A 64 64 0 0 1 792 452" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <path d="M 424 130 A 64 64 0 0 1 392 181" fill="none" stroke="#facc15" stroke-width="2.5"/>
+
+  <text x="398" y="446" font-family="system-ui, sans-serif" font-size="27" font-weight="700" fill="#facc15">90°</text>
+  <text x="716" y="472" font-family="system-ui, sans-serif" font-size="27" font-weight="700" fill="#facc15" text-anchor="middle">36.87°</text>
+  <text x="452" y="168" font-family="system-ui, sans-serif" font-size="27" font-weight="700" fill="#facc15">53.13°</text>
+
+  <text x="600" y="582" font-family="monospace" font-size="28" font-weight="bold" fill="#10b981" text-anchor="middle">90° + 53.13° + 36.87° = 180°</text>
+</svg>

@@ -11,27 +11,16 @@
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect width="1200" height="630" fill="url(#grid)"/>
 
-  <!-- Right Triangle with Altitude -->
-  <g transform="translate(600, 150)">
-    <path d="M -200 250 L 200 250 L 200 -50 Z" fill="rgba(56, 189, 248, 0.1)" stroke="#38bdf8" stroke-width="6" stroke-linejoin="round"/>
-    <!-- Right Angle Square -->
-    <path d="M 160 250 L 160 210 L 200 210" fill="none" stroke="#38bdf8" stroke-width="4"/>
-    <!-- Altitude (dashed) from right angle to hypotenuse -->
-    <line x1="200" y1="250" x2="56" y2="58" stroke="#facc15" stroke-width="5" stroke-dasharray="14 10"/>
-    <!-- Right angle marker at foot of altitude -->
-    <path d="M 66 78 L 48 70 L 56 52" fill="none" stroke="#facc15" stroke-width="3"/>
-    <!-- Labels -->
-    <text x="0" y="290" font-family="system-ui, sans-serif" font-size="32" font-weight="600" fill="#cbd5e1" text-anchor="middle">Leg (a)</text>
-    <text x="230" y="120" font-family="system-ui, sans-serif" font-size="32" font-weight="600" fill="#cbd5e1" text-anchor="start">Leg (b)</text>
-    <text x="87" y="170" font-family="system-ui, sans-serif" font-size="30" font-weight="bold" fill="#facc15" text-anchor="middle" transform="rotate(-127, 87, 170)">Altitude (h)</text>
-    <text x="-53" y="180" font-family="system-ui, sans-serif" font-size="30" font-weight="600" fill="#94a3b8" text-anchor="middle">q</text>
-    <text x="170" y="30" font-family="system-ui, sans-serif" font-size="30" font-weight="600" fill="#94a3b8" text-anchor="middle">p</text>
-  </g>
+  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="32" font-weight="500" fill="#94a3b8" text-anchor="middle">Find the height of a right triangle</text>
 
-  <!-- Text Overlay -->
-  <text x="80" y="180" font-family="system-ui, sans-serif" font-size="32" font-weight="500" fill="#94a3b8">Altitude from Any Known Values</text>
+  <!-- A(350,480) B(950,480) C(350,150). The vertical leg is the height. -->
+  <polygon points="350,480 950,480 350,150" fill="rgba(56,189,248,0.1)" stroke="#38bdf8" stroke-width="3.5"/>
+  <line x1="350" y1="150" x2="350" y2="480" stroke="#facc15" stroke-width="5"/>
+  <path d="M 350 450 L 380 450 L 380 480" fill="none" stroke="#cbd5e1" stroke-width="2.5"/>
 
-  <!-- Formula Box -->
-  <rect x="80" y="240" width="350" height="120" rx="16" fill="rgba(255,255,255,0.05)" stroke="#475569" stroke-width="2"/>
-  <text x="255" y="313" font-family="monospace" font-size="36" font-weight="bold" fill="#10b981" text-anchor="middle">h = (a × b) / c</text>
+  <text x="334" y="322" font-family="system-ui, sans-serif" font-size="30" font-weight="700" fill="#facc15" text-anchor="end">height = ?</text>
+  <text x="650" y="522" font-family="system-ui, sans-serif" font-size="29" font-weight="600" fill="#cbd5e1" text-anchor="middle">base = 10</text>
+  <text x="706" y="290" font-family="system-ui, sans-serif" font-size="29" font-weight="600" fill="#cbd5e1" text-anchor="middle">Area = 30</text>
+
+  <text x="600" y="582" font-family="monospace" font-size="28" font-weight="bold" fill="#10b981" text-anchor="middle">height = 2 × Area ÷ base = 2 × 30 ÷ 10 = 6</text>
 </svg>

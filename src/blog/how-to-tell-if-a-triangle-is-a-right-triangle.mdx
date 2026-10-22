@@ -1,0 +1,267 @@
+---
+title: "How to Tell If a Triangle Is a Right Triangle: 5 Tests"
+description: "Learn how to tell if a triangle is a right triangle using the 90-degree test, the converse of the Pythagorean theorem, triples, and coordinates."
+image: "/images/blog/how-to-tell-right-triangle-hero.svg"
+date: 2026-10-22
+author: "Math Expert"
+category: "Geometry"
+---
+
+import Faq from 'theme/components/Faq.astro';
+
+
+Knowing **how to tell if a triangle is a right triangle** is a test you will run constantly in geometry, because the moment a triangle is confirmed right-angled, the Pythagorean theorem, SOH CAH TOA, and the special triangle ratios all become available. There are five reliable ways to run the test: look for a 90-degree angle, apply the converse of the Pythagorean theorem to the side lengths, recognize a Pythagorean triple, use coordinates and slopes, or identify two perpendicular sides. This guide works through all five, with examples that pass, examples that fail, and a practice set at the end.
+
+## What Is a Right Triangle?
+
+A right triangle is a triangle containing exactly one interior angle of 90 degrees. The side opposite that angle is the **hypotenuse**, and it is always the longest side. The other two sides, which meet at the right angle, are the **legs**. The two non-right angles are acute (under 90 degrees) and complementary: they sum to exactly 90 degrees.
+
+That one fixed angle is the whole distinction. An **acute triangle** has all three angles under 90 degrees. An **obtuse triangle** has one angle over 90 degrees. A right triangle sits exactly on the boundary between them, and several tests below exploit that boundary position. Our [what is a right triangle](/blog/what-is-a-right-triangle/) guide covers the anatomy in full.
+
+## How to Tell If a Triangle Is a Right Triangle: Quick Answer
+
+A triangle is a right triangle if one of its angles is exactly 90 degrees, or if its side lengths satisfy a² + b² = c², where c is the longest side. Test the sides 3, 4, 5: 3² + 4² = 9 + 16 = 25, and 5² = 25. The two totals match, so the triangle is right-angled, with the right angle opposite the side of length 5.
+
+## Method 1: Check for a 90-Degree Angle
+
+The most direct test is the definition itself. In a diagram, a right angle is marked with a small square in the corner; that marker is a given fact, not a decoration, and it settles the question instantly. Without a marker, measure: a protractor reads the angle directly, and a set square (the triangular ruler in a geometry set) tests a corner by fitting against it. Two sides that are perpendicular, one vertical and one horizontal, for instance, form a right angle by construction.
+
+**Worked example.** A triangle has angles of 90°, 35°, and 55°. The angles sum to 180°, as they must, and one of them is exactly 90°, so this is a right triangle. The other two angles, 35° and 55°, are complementary, which is the consistency check every right triangle passes.
+
+One warning carries the whole method: appearance is not proof. A hand-drawn 88° angle and a true 90° angle look identical, and exam diagrams are often deliberately not to scale. Looks can suggest; only a marker, a measurement, or a calculation can confirm.
+
+## Method 2: Use the Converse of the Pythagorean Theorem
+
+The Pythagorean theorem says a right triangle's sides satisfy a² + b² = c². The **converse** runs the logic the other way, and it is the workhorse test for side lengths: if three side lengths satisfy a² + b² = c², with c the longest side, then the triangle is a right triangle. Note the difference in direction. The theorem starts from a known right angle and concludes something about sides; the converse starts from sides and concludes the angle. They are separate statements, and this test is the converse.
+
+The procedure:
+
+1. Take the three side lengths and order them smallest to largest.
+2. Call the longest side c, the other two a and b.
+3. Square all three sides.
+4. Add a² and b².
+5. Compare the sum with c². Equal means right triangle; not equal means not.
+
+### Example 1: Is a 3-4-5 Triangle a Right Triangle?
+
+3² + 4² = 9 + 16 = 25, and 5² = 25. The totals match exactly.
+**Verdict: right triangle.** This is the most famous passing case in geometry.
+
+### Example 2: Is a 6-8-10 Triangle a Right Triangle?
+
+6² + 8² = 36 + 64 = 100, and 10² = 100. Match.
+**Verdict: right triangle.** It is the 3-4-5 triangle scaled by two, which is why it passes, a point Method 3 develops.
+
+### Example 3: Is a 5-6-8 Triangle a Right Triangle?
+
+5² + 6² = 25 + 36 = 61, but 8² = 64. The totals do not match.
+**Verdict: not a right triangle.** Because 61 is less than 64, the angle opposite the side of 8 is wider than 90°, so this triangle is obtuse. Near misses like this one, off by 3, are why the test needs exact arithmetic rather than a rough look. The [Pythagorean theorem calculator](/pythagorean-theorem-calculator/) runs this check with decimals.
+
+## Method 3: Recognise Common Pythagorean Triples
+
+A **Pythagorean triple** is a set of three positive whole numbers that satisfy a² + b² = c². If a triangle's sides match a triple, or a scaled copy of one, it is a right triangle with no calculation needed.
+
+| a | b | c | Note |
+|---|---|---|---|
+| 3 | 4 | 5 | Primitive, the original |
+| 5 | 12 | 13 | Primitive |
+| 6 | 8 | 10 | 3-4-5 × 2 |
+| 7 | 24 | 25 | Primitive |
+| 8 | 15 | 17 | Primitive |
+| 9 | 12 | 15 | 3-4-5 × 3 |
+| 9 | 40 | 41 | Primitive |
+| 12 | 16 | 20 | 3-4-5 × 4 |
+| 20 | 21 | 29 | Primitive |
+
+A **primitive** triple has no common factor across all three numbers; a non-primitive one is a primitive triple multiplied through by a scale factor. Multiplying every side of a right triangle by the same positive number changes its size but not its angles, so every scaled copy stays right-angled. That is why 6-8-10, 9-12-15, and 30-40-50 all pass the test instantly once you spot the parent triple.
+
+Treat triples as a shortcut, not a substitute for the converse test. They only cover whole-number sides, and a triangle with sides like 5, 6, 8 matches no triple, which tells you nothing until the converse runs. Our [Pythagorean triples](/blog/pythagorean-triples/) post lists every primitive triple with hypotenuse up to 200.
+
+
+## Method 4: Use Coordinates
+
+When a triangle is given by three points on a coordinate plane, two tests are available. Both end at the same verdict.
+
+### Using the Distance Formula
+
+Compute each side length with **d = √[(x₂ − x₁)² + (y₂ − y₁)²]**, then run the converse test on the three lengths.
+
+**Worked example.** A(0, 0), B(4, 0), C(0, 3).
+AB = √(4² + 0²) = 4. AC = √(0² + 3²) = 3. BC = √[(4 − 0)² + (0 − 3)²] = √(16 + 9) = √25 = 5.
+Test: 3² + 4² = 25 = 5².
+**Verdict: right triangle**, with the right angle at A, the corner where the two axis-aligned sides meet.
+
+### Using Slopes of Perpendicular Lines
+
+Two lines are perpendicular exactly when their slopes multiply to −1: **m₁ × m₂ = −1**. So compute the three side slopes; if any pair multiplies to −1, those sides are perpendicular and the triangle is right-angled at their shared vertex.
+
+**Worked example.** P(0, 0), Q(4, 2), R(1, 3).
+Slope of PR = (3 − 0)/(1 − 0) = 3. Slope of QR = (3 − 2)/(1 − 4) = 1/(−3) = −1/3.
+Product: 3 × (−1/3) = −1.
+**Verdict: right triangle**, right-angled at R. The distances agree: PR = √10, QR = √10, PQ = √20, and 10 + 10 = 20.
+
+One exception needs care. A horizontal line has slope 0 and a vertical line has an undefined slope, so their product cannot be computed, yet the two are plainly perpendicular. When one side is horizontal and another is vertical, that alone proves the right angle, as in the distance example above.
+
+## Method 5: Identify Perpendicular Sides
+
+The most practical test asks a simpler question: do any two sides meet at 90 degrees? Walls meet floors at right angles, the corner of a rectangular board is a right angle, and a plumb line hangs perpendicular to level ground. In a diagram, look for the square marker or for sides drawn along grid lines of the coordinate paper.
+
+The catch is verification. A corner merely assumed rectangular, in a sketch or a piece of furniture, may be off by a degree or two, and that fails the definition. Builders do not assume: they verify with the 3-4-5 measurement below. Use perpendicular appearance to form the hypothesis, then confirm it with a marker, a tool, or the converse test.
+
+## How to Tell If a Triangle Is Acute, Right, or Obtuse
+
+The converse test has a bonus: its near misses classify the triangle too. With c the longest side of a valid triangle:
+
+| Condition | Triangle Type |
+|---|---|
+| a² + b² = c² | Right |
+| a² + b² > c² | Acute |
+| a² + b² < c² | Obtuse |
+
+**Right:** 6, 8, 10, since 36 + 64 = 100 = 10².
+**Acute:** 4, 5, 6, since 16 + 25 = 41, which is greater than 36. Every angle is under 90°, including the largest.
+**Obtuse:** 2, 3, 4, since 4 + 9 = 13, which is less than 16. The angle opposite the side of 4 exceeds 90°.
+
+The intuition: stretch the longest side and its opposite angle widens past 90°; shrink it and the angle closes under 90°. Equality is the exact boundary. Our [right triangle formulas](/blog/right-triangle-formulas/) reference collects these relationships.
+
+## Check the Triangle Inequality First
+
+Before classifying anything, confirm the three lengths can form a triangle at all. Ordered as a ≤ b ≤ c, they must satisfy **a + b > c**. If the two shorter sides do not exceed the longest, no triangle exists to classify.
+
+**Valid:** 5, 7, 10, since 5 + 7 = 12 > 10. (Its test gives 25 + 49 = 74 < 100, so it is obtuse.)
+**Invalid:** 2, 3, 6, since 2 + 3 = 5, which is not greater than 6. The two short sides cannot meet.
+**Degenerate:** 4, 4, 8, since 4 + 4 = 8 exactly. The "triangle" collapses into a line segment.
+
+Skipping this check wastes effort: the converse arithmetic will happily produce a verdict for lengths that never formed a triangle.
+
+## How to Tell Without Knowing All Three Sides
+
+Full side data is not always required:
+
+- **One angle given as 90°.** Done: right triangle by definition.
+- **Two angles known.** The third is 180° minus their sum. Angles of 55° and 35° force a third of 90°, so the triangle is right.
+- **Perpendicular sides identified.** A marker, grid alignment, or vertical-meets-horizontal geometry settles it.
+- **Coordinates given.** Method 4 needs only the vertices.
+- **Other geometry forces it.** An angle inscribed in a semicircle, for instance, is always a right angle.
+
+What does **not** suffice: two side lengths alone. Sides of 5 and 12 could be the legs of a right triangle (hypotenuse 13), or 12 could be the hypotenuse with a leg of 5 (other leg √119 ≈ 10.91), and nothing picks between them.
+
+## Telling From Angles Alone
+
+The angle-sum rule, A + B + C = 180°, turns angle data into a verdict directly. If any single angle is 90°, the triangle is right, whatever the other two are (they will be complementary).
+
+- **90°, 40°, 50°:** sum 180°, contains 90°. **Right.**
+- **60°, 30°, 90°:** sum 180°, contains 90°. **Right.**
+- **70°, 60°, 50°:** sum 180°, no 90° angle, and none above 90°. **Not right; it is acute.**
+
+The [angles in a right triangle](/blog/angles-in-a-right-triangle/) guide shows how the complementary pair behaves once the right angle is confirmed.
+
+
+## Real-Life Applications
+
+**Construction and the 3-4-5 rule.** To check that a foundation corner is truly square, a builder measures 3 ft along one edge and marks it, measures 4 ft along the other edge and marks it, then measures between the marks. Exactly 5 ft means the corner is a perfect right angle; anything else and the frame is adjusted before building continues. Bigger jobs scale the same triple up, 6-8-10 or 9-12-15, for the same reason Example 2 passed its test.
+
+**Surveying.** Two chained distances and a diagonal let a surveyor confirm a plot corner is square without clearing the land between.
+
+**Stairs and roofs.** A stringer or rafter forms a triangle with floor and wall; verifying that corner is square comes before any pitch calculation is trusted.
+
+**Navigation and graphics.** Plotted courses form triangles on a chart, where the slope test confirms a perpendicular track, and rendered 3D surfaces are meshes of triangles classified by the same squared-side comparison, millions of times per frame.
+
+## Common Mistakes When Identifying Right Triangles
+
+- **Choosing the wrong side as c.** The converse test only works with the longest side as c. Test 3, 4, 5 wrongly as 3² + 5² against 4² and you will "prove" a right triangle is not one.
+- **Forgetting to square.** Comparing 3 + 4 with 5 (7 against 5) is not the test. The squares are the test.
+- **Confusing the theorem with its converse.** The theorem needs a known right angle as its starting point. Starting from sides, you are using the converse, and naming it correctly matters in proof questions.
+- **Trusting appearances.** Not-to-scale diagrams are a standard exam trap. A triangle that looks square-cornered may be 85°.
+- **Skipping the triangle inequality.** Lengths of 2, 3, 6 form no triangle, whatever the squares say.
+- **Reversing the acute and obtuse inequalities.** Sum greater than c² means acute; smaller means obtuse. The 5-6-8 example (61 < 64, obtuse) is the one to remember.
+- **Ignoring measurement error.** Measured sides of 3.0, 4.0, and 5.1 may be a true 3-4-5 triangle read imperfectly, or a genuinely obtuse one. Measurements support approximate verdicts; exact verdicts need exact data.
+- **Assuming equal sides imply a right angle.** Most isosceles triangles are not right-angled. Only the [isosceles right triangle](/blog/isosceles-right-triangle/), with angles 90°, 45°, 45°, qualifies.
+
+## Practice Problems: Is It a Right Triangle?
+
+**Beginner**
+
+1. A triangle has angles of 90°, 35°, and 55°. Is it a right triangle?
+2. A triangle has sides of 5, 12, and 13. Is it a right triangle?
+3. A triangle has angles of 60°, 60°, and 60°. Is it a right triangle?
+4. A triangle has sides of 8, 15, and 17. Is it a right triangle?
+
+**Intermediate**
+
+5. Sides of 7, 10, and 12. Right, acute, or obtuse?
+6. Sides of 10, 24, and 26. Is it a right triangle?
+7. Sides of 4, 6, and 8. Right, acute, or obtuse?
+8. Sides of 1.5, 2, and 2.5. Is it a right triangle?
+
+**Advanced**
+
+9. A triangle has vertices A(0, 0), B(6, 0), and C(0, 8). Is it a right triangle?
+10. A triangle has vertices P(0, 0), Q(4, 2), and R(1, 3). Use slopes to decide whether it is a right triangle.
+11. Sides of 9, 12, and 16. Right, acute, or obtuse?
+12. A triangle has vertices A(0, 0), B(3, 1), and C(1, 7). Is it a right triangle, and if so, at which vertex?
+
+## Practice Problems With Answers
+
+1. **Right.** One angle is exactly 90°, which is the definition. (The other two, 35° and 55°, are complementary.)
+2. **Right.** 5² + 12² = 25 + 144 = 169 = 13², so the converse is satisfied; this is a primitive triple.
+3. **Not right.** No angle equals 90°; all three are 60°, so the triangle is acute (equilateral).
+4. **Right.** 8² + 15² = 64 + 225 = 289 = 17². Another primitive triple.
+5. **Acute.** 7² + 10² = 49 + 100 = 149, which is greater than 12² = 144, so the largest angle is under 90°.
+6. **Right.** 10² + 24² = 100 + 576 = 676 = 26². This is the 5-12-13 triple doubled.
+7. **Obtuse.** 4² + 6² = 16 + 36 = 52, less than 8² = 64, so the angle opposite the side of 8 exceeds 90°.
+8. **Right.** 1.5² + 2² = 2.25 + 4 = 6.25 = 2.5². It is the 3-4-5 triple scaled by one half, a reminder that triples work at any scale.
+9. **Right.** Distances: AB = 6, AC = 8, BC = 10, and 6² + 8² = 100 = 10². Right-angled at A.
+10. **Right.** Slope of PR is 3; slope of QR is −1/3; their product is −1, so PR and QR are perpendicular. Right-angled at R.
+11. **Obtuse.** 9² + 12² = 81 + 144 = 225, less than 16² = 256.
+12. **Right, at B.** Slope of AB is 1/3 and slope of BC is −3; the product is −1, so AB is perpendicular to BC. The distances confirm it: AB = √10, BC = √40, AC = √50, and 10 + 40 = 50.
+
+Missed one? Work it again using the [right triangle word problems](/blog/right-triangle-word-problems/) examples, which start from stories and end at the same tests.
+
+
+<Faq heading="Frequently Asked Questions" description="Short answers to the questions students ask most about identifying right triangles." items={[
+  {
+    "question": "How do you know if a triangle is a right triangle?",
+    "answer": "A triangle is a right triangle when it contains one angle of exactly 90 degrees. If you have the side lengths instead, apply the converse of the Pythagorean theorem: square the two shorter sides and add them; if the sum equals the square of the longest side, as 9 + 16 = 25 does for sides 3, 4, 5, the triangle is right-angled."
+  },
+  {
+    "question": "What is the easiest way to identify a right triangle?",
+    "answer": "The easiest way depends on what you are given. In a diagram, look for the small square marker in a corner, which states the right angle outright. With side lengths, the fastest check is pattern recognition: sides matching a known Pythagorean triple, such as 3-4-5, 5-12-13, or any multiple of them, confirm a right triangle without any calculation at all."
+  },
+  {
+    "question": "How do you prove a triangle is right using side lengths?",
+    "answer": "Label the longest side c and the shorter sides a and b. Compute a² + b² and compare it with c². If they are equal, the converse of the Pythagorean theorem guarantees the angle opposite c is 90 degrees, which proves the triangle is right-angled. If the sums differ, the triangle is not right: a smaller sum means obtuse, a larger sum means acute."
+  },
+  {
+    "question": "What is the 3-4-5 rule for right triangles?",
+    "answer": "The 3-4-5 rule uses the smallest Pythagorean triple to create or check a right angle. Measure 3 units along one line and 4 units along the adjoining line; if the distance between those two marks is exactly 5 units, the corner between the lines is a perfect right angle. Builders use it to square foundations, and scaled versions like 6-8-10 work identically."
+  },
+  {
+    "question": "Can a triangle have two right angles?",
+    "answer": "No. The three interior angles of any triangle sum to exactly 180 degrees. Two right angles would already total 180 degrees, leaving zero for the third angle, which would collapse the triangle into a line segment. Every right triangle therefore has exactly one right angle, and its other two angles are acute and complementary, always adding up to the remaining 90 degrees."
+  },
+  {
+    "question": "How can you tell if a triangle is right using coordinates?",
+    "answer": "Compute the three side lengths from the vertex coordinates with the distance formula, then apply the converse test to those lengths. Alternatively, compute the slopes of the sides: if any two slopes multiply to −1, those sides are perpendicular and the triangle is right-angled at their common vertex. A horizontal side paired with a vertical side also proves it directly."
+  },
+  {
+    "question": "Do all right triangles follow the Pythagorean theorem?",
+    "answer": "Yes. The Pythagorean theorem holds for every right triangle without exception: the squares of the two legs always sum to the square of the hypotenuse. That universality is what makes the converse test trustworthy; because the equation characterizes right triangles exactly, side lengths that satisfy it cannot belong to any other kind of triangle, and right triangles cannot fail to satisfy it."
+  },
+  {
+    "question": "Can an isosceles triangle be a right triangle?",
+    "answer": "Yes. An isosceles right triangle has angles of 90, 45, and 45 degrees, with the two equal sides as the legs meeting at the right angle. Its hypotenuse is the leg multiplied by the square root of 2. But equal sides alone prove nothing: most isosceles triangles have no right angle, so the 90-degree corner still has to be confirmed by a test."
+  },
+  {
+    "question": "How do you identify the hypotenuse?",
+    "answer": "The hypotenuse is the side opposite the right angle, and it is always the longest side of the triangle. If the right angle is not yet known, test the longest side as c in the converse check; the method only works with the longest side in that role. In a diagram, the hypotenuse is the side that does not touch the square right-angle marker."
+  },
+  {
+    "question": "What is the difference between a right, acute, and obtuse triangle?",
+    "answer": "A right triangle has one angle of exactly 90 degrees. An acute triangle has all three angles below 90 degrees, and an obtuse triangle has one angle above 90 degrees. Side lengths tell the same story: with c the longest side, a² + b² equal to c² means right, greater means acute, and smaller means obtuse, provided the sides form a valid triangle."
+  }
+]} />
+
+## Conclusion
+
+You now have five tests, and they agree with each other: look for the 90-degree angle or its square marker, run the converse of the Pythagorean theorem on the side lengths, spot a Pythagorean triple or one of its multiples, check coordinates with distances or slopes, and confirm that two sides are genuinely perpendicular. Use whichever test matches the information you are given, and run the triangle inequality first whenever sides are involved. Practise on the twelve problems above until the classification feels instant, because recognizing a right triangle is the gateway skill: nearly every formula in this subject only starts working once that verdict is in.

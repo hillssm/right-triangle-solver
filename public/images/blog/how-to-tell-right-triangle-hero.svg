@@ -1,0 +1,29 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">The test: do the squares of the two shorter sides add up?</text>
+
+  <!-- 6-8-10 triangle to scale (1 unit = 40 px): A(320,470) right angle, B(640,470), C(320,230); hyp = sqrt(320^2+240^2) = 400 -->
+  <path d="M 320 470 L 640 470 L 320 230 Z" fill="rgba(56, 189, 248, 0.1)" stroke="#38bdf8" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Right-angle marker at A -->
+  <path d="M 348 470 L 348 442 L 320 442" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="372" y="440" font-family="system-ui, sans-serif" font-size="28" font-weight="600" fill="#cbd5e1" text-anchor="middle">90°</text>
+
+  <!-- Side labels -->
+  <text x="252" y="358" font-family="system-ui, sans-serif" font-size="34" font-weight="600" fill="#cbd5e1" text-anchor="middle">6</text>
+  <text x="480" y="522" font-family="system-ui, sans-serif" font-size="34" font-weight="600" fill="#cbd5e1" text-anchor="middle">8</text>
+  <text x="540" y="330" font-family="system-ui, sans-serif" font-size="34" font-weight="600" fill="#cbd5e1" text-anchor="middle">10</text>
+
+  <text x="600" y="592" font-family="monospace" font-size="36" font-weight="bold" fill="#10b981" text-anchor="middle">6² + 8² = 10², so 100 = 100: right triangle</text>
+</svg>

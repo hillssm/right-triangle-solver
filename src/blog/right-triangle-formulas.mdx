@@ -1,0 +1,312 @@
+---
+title: "Right Triangle Formulas: Complete Guide With Examples"
+description: "Every right triangle formula in one guide: Pythagorean theorem, hypotenuse, area, perimeter, trig ratios, and special triangles, with worked examples."
+image: "/images/blog/right-triangle-formulas-hero.svg"
+date: 2026-10-22
+author: "Math Expert"
+category: "Geometry"
+---
+
+import Faq from 'theme/components/Faq.astro';
+
+
+**Right triangle formulas** are a small, connected set: the Pythagorean theorem links the three sides, SOH CAH TOA links the sides to the angles, and short formulas give area, perimeter, altitude, and the two circle radii. Learn the set once and any right triangle problem becomes picking the right line from the table. This guide collects every formula in one place, defines each variable, and works an example for each one.
+
+## What Is a Right Triangle?
+
+A right triangle has one angle of exactly 90 degrees, marked in diagrams by a small square in the corner. The side opposite it is the **hypotenuse**, always the longest side. The two sides forming the right angle are the **legs**, called a and b in this guide, with c for the hypotenuse. One leg is drawn as the **base** and the other as the **height**, the two measurements the area formula uses.
+
+Two facts shape everything else. The hypotenuse is the only side that does not touch the right angle, and the two acute angles are **complementary**: they sum to 90 degrees, so if one is 35 degrees, the other is 55 degrees. No other triangle has the fixed 90 degree corner, which is why this formula set works only here. Our [what is a right triangle](/blog/what-is-a-right-triangle/) guide covers the properties in full.
+
+## Right Triangle Formulas at a Glance
+
+Here is the whole set on one screen. Variables: a and b are the legs, c is the hypotenuse, h is the altitude to the hypotenuse, R is the circumradius, r is the inradius, and θ (theta) is an acute angle.
+
+| Formula Name | Formula | What It Finds |
+|---|---|---|
+| Pythagorean theorem | a² + b² = c² | Whether three sides fit, and the third side |
+| Hypotenuse | c = √(a² + b²) | Hypotenuse from both legs |
+| Missing leg | a = √(c² − b²) | A leg from the hypotenuse and the other leg |
+| Area | A = ½ × a × b | Area from the two legs |
+| Perimeter | P = a + b + c | Total distance around the triangle |
+| Sine | sin θ = Opposite / Hypotenuse | A side or an angle ratio |
+| Cosine | cos θ = Adjacent / Hypotenuse | A side or an angle ratio |
+| Tangent | tan θ = Opposite / Adjacent | A side or an angle ratio |
+| Inverse trig | θ = sin⁻¹, cos⁻¹, or tan⁻¹ of a ratio | An angle from two sides |
+| Altitude to hypotenuse | h = ab/c | Height from the right-angle corner to the hypotenuse |
+| Circumradius | R = c/2 | Radius of the circle through all three corners |
+| Inradius | r = (a + b − c)/2 | Radius of the largest circle that fits inside |
+
+Keep this table open while you work. Each formula below gets its own section, example, and notes on when to use it.
+
+## Pythagorean Theorem for Right Triangles
+
+The Pythagorean theorem states that the squares of the two legs add up to the square of the hypotenuse: **a² + b² = c²**. It is the foundation of the whole set, because it is the only formula here that relates all three sides at once, with no angles involved.
+
+**Example (3, 4, 5).** Legs of 3 and 4: 3² + 4² = 9 + 16 = 25, and √25 = 5, so the hypotenuse is 5.
+
+**Example (5, 12, 13).** Legs of 5 and 12: 25 + 144 = 169, and √169 = 13.
+
+Use the theorem whenever two sides are known and the third is wanted, or to test whether three lengths form a right triangle at all. It never applies to a triangle with no right angle. Our [Pythagorean theorem formula](/blog/pythagorean-theorem-formula/) post goes deeper, and these whole-number side sets are the [Pythagorean triples](/blog/pythagorean-triples/).
+
+## How to Find the Hypotenuse of a Right Triangle
+
+Solve the theorem for c: **c = √(a² + b²)**. Square both legs, add, then take the square root.
+
+**Example 1.** Legs of 6 cm and 8 cm.
+Step 1: c = √(6² + 8²) = √(36 + 64) = √100.
+Step 2: c = 10.
+**Answer: 10 cm.**
+
+**Example 2.** Legs of 9 m and 12 m.
+Step 1: c = √(81 + 144) = √225.
+Step 2: c = 15.
+**Answer: 15 m.**
+
+On a calculator, add the squares first, then press the square root key once at the end. Rooting each leg separately before adding is the classic error here. For longer numbers, the [Right Triangle Calculator](/right-triangle-calculator/) runs the same steps instantly.
+
+## How to Find a Missing Side of a Right Triangle
+
+When the hypotenuse and one leg are known, rearrange the theorem: **a = √(c² − b²)** or **b = √(c² − a²)**. Notice the subtraction. Finding a leg is the one place in the set where you subtract the squares instead of adding them.
+
+**Example 1 (missing base).** Hypotenuse 13, height 5.
+Step 1: a = √(13² − 5²) = √(169 − 25) = √144.
+Step 2: a = 12.
+**Answer: 12 units.**
+
+**Example 2 (missing height).** Hypotenuse 25, base 7.
+Step 1: b = √(25² − 7²) = √(625 − 49) = √576.
+Step 2: b = 24.
+**Answer: 24 units.**
+
+**Example 3 (ladder problem).** A 10 ft ladder leans on a wall with its foot 6 ft from the wall. How high does it reach?
+Step 1: The ladder is the hypotenuse, so height = √(10² − 6²) = √(100 − 36) = √64.
+Step 2: height = 8.
+**Answer: 8 ft up the wall.**
+
+One check protects every missing-leg problem: the answer must be shorter than the hypotenuse. A leg longer than c means you added where you should have subtracted. The [missing side guide](/blog/how-to-find-a-missing-side/) works more of these.
+
+
+## Area of a Right Triangle Formula
+
+The two legs are perpendicular, so each one is the height measured against the other. That gives **Area = ½ × base × height**, or **A = ½ab** with the two legs as a and b. No hypotenuse needed.
+
+**Example 1.** Base 8 cm, height 6 cm: A = ½ × 8 × 6 = 24. **Answer: 24 cm².**
+
+**Example 2.** Legs of 5 m and 4 m: A = ½ × 5 × 4 = 10. **Answer: 10 m².**
+
+Area is measured in square units because it counts surface, not length. That is the whole difference from perimeter: area fills the inside and uses squares, perimeter walks the boundary and uses plain units. The [right triangle area calculator](/right-triangle-area-calculator/) handles cases where the height is not one of the legs.
+
+## Perimeter of a Right Triangle Formula
+
+The perimeter is the sum of the three sides: **P = a + b + c**. The only complication is that c is not always given, so sometimes the theorem runs first.
+
+**All three sides given.** Sides 3, 4, 5: P = 3 + 4 + 5 = **12 units**.
+
+**Only the legs given.** Legs 6 and 8: first c = √(36 + 64) = 10, then P = 6 + 8 + 10 = **24 units**.
+
+**A leg and the hypotenuse given.** Leg 5, hypotenuse 13: first the other leg = √(169 − 25) = 12, then P = 5 + 12 + 13 = **30 units**.
+
+Perimeter uses linear units (cm, m, ft), never square units, because it is a length. A dedicated [right triangle perimeter calculator](/right-triangle-perimeter-calculator/) helps when the sides are long decimals.
+
+## Right Triangle Trigonometry Formulas
+
+Trigonometry connects the angles to the sides. Pick one acute angle, θ. The side across from it is the **opposite**, the leg touching it (not the hypotenuse) is the **adjacent**. The three ratios, remembered as **SOH CAH TOA**:
+
+- **sin θ = Opposite / Hypotenuse**
+- **cos θ = Adjacent / Hypotenuse**
+- **tan θ = Opposite / Adjacent**
+
+Opposite and adjacent are not fixed sides of the triangle. They swap when you switch to the other acute angle, which is the single most important idea in this section.
+
+**Example 1 (read the ratios).** For the angle facing the side of length 3 in a 3-4-5 triangle: opposite = 3, adjacent = 4, hypotenuse = 5. So sin θ = 3/5 = 0.6, cos θ = 4/5 = 0.8, and tan θ = 3/4 = 0.75.
+
+**Example 2 (find a side).** Angle 30 degrees, hypotenuse 10. The side opposite the angle: sin 30° = opp/10, so opp = 10 × sin 30° = 10 × 0.5 = **5**. The adjacent side: 10 × cos 30° ≈ **8.66**.
+
+**Example 3 (choose the right ratio).** Angle 40 degrees, adjacent side 8, find the opposite. The ratio containing opposite and adjacent is tangent: opp = 8 × tan 40° ≈ **6.71**. (The hypotenuse, if you want it, is 8 / cos 40° ≈ 10.44.)
+
+Choosing the formula is a matching exercise: pick the ratio containing the side you have and the side you want. Our [SOH CAH TOA guide](/blog/sine-cosine-tangent/) drills that choice.
+
+<img src="/images/blog/right-triangle-formulas-trig.svg" alt="Labelled right triangle for trigonometry showing angle theta, opposite side, adjacent side, and hypotenuse" />
+
+## How to Find the Angles of a Right Triangle
+
+One angle is handed to you: 90 degrees. The other two sum to 90 degrees, so finding one gives the other by subtraction. When only sides are known, run a trig ratio backwards with an inverse function:
+
+- **θ = sin⁻¹(Opposite / Hypotenuse)**
+- **θ = cos⁻¹(Adjacent / Hypotenuse)**
+- **θ = tan⁻¹(Opposite / Adjacent)**
+
+The ⁻¹ means inverse function, not a reciprocal: sin⁻¹ reverses sine. These are the arcsin, arccos, and arctan keys on a scientific calculator, which must be in degree mode for school work. In radian mode the same key returns 0.64 instead of 36.87 degrees.
+
+**Example 1.** Opposite 5, hypotenuse 10: θ = sin⁻¹(0.5) = **30°**. The other acute angle is 90 − 30 = 60°.
+
+**Example 2.** Adjacent 8, hypotenuse 10: θ = cos⁻¹(0.8) ≈ **36.87°**.
+
+**Example 3.** Opposite 3, adjacent 4: θ = tan⁻¹(0.75) ≈ **36.87°**, and the remaining angle is ≈ 53.13°. Note that examples 2 and 3 describe the same angle of the same 3-4-5 family, reached through different ratios.
+
+Tangent is usually the safest choice because it needs only the two legs, which are the sides most problems give you. The [angles in a right triangle](/blog/angles-in-a-right-triangle/) guide covers the method fully, including slope and roof pitch.
+
+## Special Right Triangle Formulas
+
+Two angle patterns repeat so often that their ratios are worth memorizing. In both, one known side fixes the whole triangle.
+
+### 45-45-90 Triangle Formula
+
+Equal legs, equal 45 degree angles, ratio **1 : 1 : √2**. Hypotenuse = leg × √2.
+
+**Example.** Leg 7: hypotenuse = 7√2 ≈ **9.90**, area = 7²/2 = 24.5 square units. This is the [isosceles right triangle](/blog/isosceles-right-triangle/) from our earlier guide.
+
+### 30-60-90 Triangle Formula
+
+Angles of 30, 60, and 90 degrees, ratio **1 : √3 : 2** for short leg : long leg : hypotenuse. The hypotenuse is exactly double the short leg, and the long leg is the short leg times √3.
+
+**Example.** Short leg 5: hypotenuse = 10, long leg = 5√3 ≈ **8.66**.
+
+| Feature | 45-45-90 | 30-60-90 |
+|---|---|---|
+| Angles | 45°, 45°, 90° | 30°, 60°, 90° |
+| Side ratio | 1 : 1 : √2 | 1 : √3 : 2 |
+| Equal sides | Two legs equal | No equal sides |
+| Hypotenuse | Leg × √2 ≈ leg × 1.414 | Short leg × 2 |
+| Other leg | Same as the first leg | Short leg × √3 ≈ short × 1.732 |
+
+Dedicated tools exist for both patterns: the [45-45-90 triangle calculator](/45-45-90-triangle-calculator/) and the [30-60-90 triangle calculator](/30-60-90-triangle-calculator/).
+
+
+## Additional Right Triangle Formulas
+
+Three more formulas finish the set. Each answers a question the main set cannot.
+
+### Altitude to the Hypotenuse
+
+Drop a perpendicular from the right-angle corner to the hypotenuse. Its length is **h = ab/c**, and its foot splits the hypotenuse into two projections, p = a²/c and q = b²/c. The full treatment is in our [height of a right triangle](/blog/how-to-find-height-right-triangle/) guide.
+
+**Example.** Legs 6 and 8, hypotenuse 10: h = (6 × 8)/10 = **4.8**. The projections are 3.6 and 6.4, which sum to 10, the hypotenuse, as they must.
+
+### Circumradius
+
+The circle drawn through all three corners of a right triangle has its center at the midpoint of the hypotenuse, so its radius is **R = c/2**.
+
+**Example.** Hypotenuse 26: R = 13. Hypotenuse 10: R = 5. The [circumradius calculator](/right-triangle-circumradius-calculator/) exists for the cases where c itself must be found first.
+
+### Inradius
+
+The largest circle that fits inside the triangle has radius **r = (a + b − c)/2**. It also equals the area divided by the semiperimeter, which is a good way to check your arithmetic.
+
+**Examples.** 3-4-5 triangle: r = (3 + 4 − 5)/2 = **1**. 6-8-10: r = **2**. 5-12-13: r = **2**. The [inradius calculator](/right-triangle-inradius-calculator/) confirms each one.
+
+## How to Solve Right Triangle Problems Step by Step
+
+Every problem in this guide was solved with the same seven steps:
+
+1. Draw the triangle and mark the right angle.
+2. Label what is known: sides with lengths, angles with degrees.
+3. Name the unknown precisely (a leg, the hypotenuse, an angle, the area).
+4. Pick the formula that contains exactly the knowns and that unknown.
+5. Substitute the numbers, keeping units attached.
+6. Calculate, and take the square root or inverse trig step last.
+7. Sanity-check the answer: hypotenuse longest, legs positive, acute angles summing to 90 degrees.
+
+**Complete example.** Legs 9 and 12; find everything.
+Hypotenuse: c = √(81 + 144) = 15.
+Area: ½ × 9 × 12 = 54 square units.
+Perimeter: 9 + 12 + 15 = 36 units.
+Angles: tan⁻¹(9/12) ≈ 36.87°, and 90 − 36.87 = 53.13°.
+Altitude: h = (9 × 12)/15 = 7.2. Circumradius: 7.5. Inradius: (9 + 12 − 15)/2 = 3.
+Seven formulas, one triangle, every answer consistent. That is what "solved" means.
+
+## Real-Life Applications of Right Triangle Formulas
+
+**Roof pitch.** A roof rising 6 ft over a 12 ft run has a rafter of √(12² + 6²) ≈ 13.42 ft and a pitch angle of tan⁻¹(6/12) ≈ 26.57 degrees. Carpenters order material from the first number and set saws by the second.
+
+**Staircase design.** A step with a 7 inch rise and 11 inch tread sits on a stringer angled at tan⁻¹(7/11) ≈ 32.47 degrees, the angle building codes limit.
+
+**Ladder safety.** The 4-to-1 rule sets a ladder's angle at cos⁻¹(1/4) ≈ 75.52 degrees. A 20 ft ladder placed by the rule touches the wall at √(20² − 5²) ≈ 19.36 ft.
+
+**Surveying.** From 15 m away, a 35 degree angle to a building's top gives height ≈ 15 × tan 35° ≈ 10.50 m, plus instrument height. No climbing, one tangent.
+
+## Common Mistakes When Using Right Triangle Formulas
+
+- **Treating a leg as the hypotenuse.** It is always opposite the right angle and always the longest side. Identify it first.
+- **Swapping opposite and adjacent.** Both names are relative to your chosen angle. Switch angles and the legs trade names.
+- **Adding instead of subtracting for a missing leg.** A leg longer than the hypotenuse in your answer means the sign went wrong.
+- **Skipping the square root.** a² + b² gives c², not c. The root is part of the formula.
+- **Mixing units.** Feet and inches in one substitution corrupt everything downstream. Convert first.
+- **Calculator in radian mode.** Angle answers near 0.64 or 1.05 are radians, not degrees. Check the mode.
+- **Rounding too early.** Keep four decimal places until the final step, then round the answer only.
+- **Using the theorem on non-right triangles.** No 90 degree angle, no a² + b² = c². Other triangles need the law of cosines.
+
+## Right Triangle Practice Problems With Answers
+
+Try each problem before opening the answer key. Difficulty rises as you go.
+
+1. **Beginner.** Legs 5 and 12. Find the hypotenuse.
+2. **Beginner.** Hypotenuse 17, one leg 8. Find the other leg.
+3. **Beginner.** Legs 9 and 12. Find the area and the perimeter.
+4. **Intermediate.** An angle is 35 degrees and the hypotenuse is 20. Find the side opposite the angle.
+5. **Intermediate.** Opposite side 8, adjacent side 15. Find the angle, to two decimal places.
+6. **Intermediate.** A 45-45-90 triangle has a hypotenuse of 12. Find both legs.
+7. **Advanced.** A 30-60-90 triangle has a longer leg of 9. Find the shorter leg and the hypotenuse.
+8. **Advanced.** For the 9-12-15 triangle, find the altitude to the hypotenuse and the inradius.
+
+**Answer key**
+
+1. c = √(25 + 144) = √169 = **13**.
+2. √(17² − 8²) = √225 = **15**.
+3. Hypotenuse = 15, so area = ½ × 9 × 12 = **54 square units**, perimeter = 9 + 12 + 15 = **36 units**.
+4. Opposite = 20 × sin 35° ≈ **11.47**.
+5. θ = tan⁻¹(8/15) ≈ **28.07°**.
+6. Each leg = 12/√2 ≈ **8.49**.
+7. Short leg = 9/√3 ≈ **5.20**, hypotenuse = 2 × 5.20 ≈ **10.39**.
+8. Altitude = (9 × 12)/15 = **7.2**, inradius = (9 + 12 − 15)/2 = **3**.
+
+Stuck on one? The [Right Triangle Calculator](/right-triangle-calculator/) shows the same steps with your numbers.
+
+
+<Faq heading="Frequently Asked Questions" description="Short answers to the questions students ask most about right triangle formulas." items={[
+  {
+    "question": "What is the basic formula for a right triangle?",
+    "answer": "The basic formula is the Pythagorean theorem, a² + b² = c², where a and b are the two legs and c is the hypotenuse, the side opposite the right angle. It sits underneath most of the other formulas: rearranged, it finds the hypotenuse as c = √(a² + b²) or a missing leg as a = √(c² − b²)."
+  },
+  {
+    "question": "How do you find the hypotenuse of a right triangle?",
+    "answer": "Square both legs, add the squares, and take the square root of the total: c = √(a² + b²). For legs of 6 and 8, that is √(36 + 64) = √100 = 10. The result must be longer than either leg, because the hypotenuse is always the longest side."
+  },
+  {
+    "question": "What is the formula for the area of a right triangle?",
+    "answer": "The area formula is A = ½ × base × height, or A = ½ab using the two legs. The legs are perpendicular, so each leg serves as the height measured against the other. Legs of 8 and 6 give ½ × 8 × 6 = 24, and the answer is written in square units."
+  },
+  {
+    "question": "How do you calculate the perimeter of a right triangle?",
+    "answer": "Add the three side lengths: P = a + b + c. With all three sides given, that is the whole job, as in 3 + 4 + 5 = 12. When only the legs are known, find the hypotenuse first with the Pythagorean theorem, then add: legs of 6 and 8 give a perimeter of 24."
+  },
+  {
+    "question": "How do you find a missing side of a right triangle?",
+    "answer": "It depends on which side is missing. For the hypotenuse, add the squares of the legs and take the square root: c = √(a² + b²). For a leg, subtract the square of the known leg from the square of the hypotenuse, then root: a = √(c² − b²). Hypotenuse 13 with a leg of 5 gives √(169 − 25) = √144 = 12."
+  },
+  {
+    "question": "What are the three main trigonometric formulas?",
+    "answer": "The three main formulas are the trig ratios in SOH CAH TOA: sin θ = opposite/hypotenuse, cos θ = adjacent/hypotenuse, and tan θ = opposite/adjacent. Opposite and adjacent are named relative to your chosen angle, so one leg can be opposite for one angle and adjacent for the other. Pick the ratio containing the sides you know and want."
+  },
+  {
+    "question": "What is the 3-4-5 triangle rule?",
+    "answer": "The 3-4-5 rule says a triangle with sides in the ratio 3 to 4 to 5 is always a right triangle, because 3² + 4² = 25 = 5². Builders use it to square corners: measure 3 units along one edge, 4 along the other, and the diagonal must read exactly 5. Multiples like 6-8-10 work the same way."
+  },
+  {
+    "question": "Can you solve a right triangle with only one side?",
+    "answer": "Usually not. One side alone fits infinitely many right triangles, because the angles can still vary. One side is enough only when something else is fixed: a known acute angle, or a special pattern such as 45-45-90 or 30-60-90, where the ratio supplies the missing information. In a 45-45-90 triangle, for example, one leg of 7 fixes the hypotenuse at 7√2, about 9.90."
+  },
+  {
+    "question": "What is the difference between the Pythagorean theorem and SOH CAH TOA?",
+    "answer": "The Pythagorean theorem relates the three sides to each other and involves no angles: a² + b² = c². SOH CAH TOA relates sides to one chosen acute angle through sine, cosine, and tangent. Use the theorem when you have two sides and want the third; use the trig ratios when an angle is known or wanted."
+  },
+  {
+    "question": "How do you find an unknown angle in a right triangle?",
+    "answer": "Use an inverse trig function on the ratio formed by two known sides: θ = sin⁻¹(opposite/hypotenuse), cos⁻¹(adjacent/hypotenuse), or tan⁻¹(opposite/adjacent). With sides of 3 and 4 around the angle, tan⁻¹(3/4) gives about 36.87 degrees. Set the calculator to degree mode first, and remember the other acute angle is simply 90 minus the one you found, because the two are complementary."
+  }
+]} />
+
+## Conclusion
+
+Every formula in this guide hangs on two ideas: the Pythagorean theorem for the sides, and SOH CAH TOA for the angles. Reach for a² + b² = c² when sides are known, for sine, cosine, and tangent when an angle enters the problem, and for A = ½ab and P = a + b + c when the question turns to size and boundary. The special triangles, altitude, and radii are refinements of the same set, not new mathematics. Work the practice set until choosing the formula feels automatic, and these formulas will handle everything from homework to roof pitch without a second thought.

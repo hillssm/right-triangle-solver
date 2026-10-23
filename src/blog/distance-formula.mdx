@@ -1,0 +1,264 @@
+---
+title: "The Distance Formula: Finding the Distance Between Two Points Using a Right Triangle"
+description: "Learn the distance formula by building a right triangle between two points, with the full derivation, solved examples, practice problems, and answers."
+image: "/images/blog/distance-formula-hero.svg"
+date: 2026-10-23
+author: "Math Expert"
+category: "Geometry"
+---
+
+import Faq from 'theme/components/Faq.astro';
+
+
+Plot two points on graph paper, say A(1, 2) and B(5, 5), and ask a simple question: how far apart are they, measured in a straight line? Counting squares gets you across or up, but the direct route runs diagonally, and diagonals refuse to be counted. The **Distance Formula** solves this by turning the diagonal into the hypotenuse of a right triangle whose legs you can count. It is the [Pythagorean theorem](/blog/pythagorean-theorem-formula/) wearing coordinates. This guide shows where the formula comes from, how to use it step by step, and how it handles negative coordinates, horizontal and vertical lines, and answers that stay in square root form.
+
+## What Is the Distance Formula?
+
+The distance formula gives the straight-line distance between two points on a coordinate plane. Draw a right triangle with the segment between the points as its hypotenuse, and the two legs are the horizontal and vertical gaps between the points. The formula is the Pythagorean theorem applied to that triangle, so it returns the shortest possible distance, the crow-flies route, never a path along the grid.
+
+**d = √[(x₂ − x₁)² + (y₂ − y₁)²]**
+
+- **d** is the distance between the two points.
+- **(x₁, y₁)** is the first point: x₁ is its horizontal position, y₁ its vertical position.
+- **(x₂, y₂)** is the second point, read the same way.
+
+Each point is an **ordered pair**: the first number always gives the position along the horizontal x-axis, the second the position along the vertical y-axis. The formula does not care which quadrant the points sit in, because it works with the differences between coordinates, and squaring erases their signs.
+
+**Quick illustration:** from (0, 0) to (3, 4), the differences are 3 and 4, so d = √(9 + 16) = √25 = 5, even though the staircase path between the points is 7 units long.
+
+## Understanding the Coordinate Plane Before Using the Distance Formula
+
+### What Are X-Coordinates and Y-Coordinates?
+
+The coordinate plane, also called the Cartesian plane, is a grid ruled by two number lines: the horizontal x-axis and the vertical y-axis, crossing at the origin (0, 0). A point's x-coordinate tells how far it sits to the right of the origin (negative means left), and its y-coordinate how far above it (negative means below). The point (5, 2) is 5 across and 2 up; (−3, −1) is 3 left and 1 down.
+
+### How to Plot Two Points on a Coordinate Grid
+
+Take A(1, 2) and B(5, 5). From the origin, move 1 right and 2 up to mark A, then 5 right and 5 up to mark B. Both sit in the first quadrant, B higher and further right, with the segment AB slanting up between them.
+
+### Understanding Horizontal and Vertical Distances
+
+Now complete the picture. From A, walk straight across to the point directly below B, then straight up to B. You have drawn a right triangle: the horizontal leg spans the x-coordinates from 1 to 5, a difference of **4 units**, and the vertical leg spans the y-coordinates from 2 to 5, a difference of **3 units**. The diagonal is not 4 + 3 = 7, because the diagonal cuts the corner. It is the hypotenuse, so it measures √(4² + 3²) = √25 = **5 units**. That single observation is the entire distance formula in disguise.
+
+![Coordinate grid with points A(1, 2) and B(5, 5), a right triangle with legs of 4 and 3 units, and the diagonal distance of 5 units](/images/blog/distance-formula-hero.svg)
+
+## How Is the Distance Formula Derived from a Right Triangle?
+
+### Step 1: Plot Two Points
+
+Start with any two points, A(x₁, y₁) and B(x₂, y₂). Nothing about them is assumed: they can sit in any quadrants, at any height.
+
+### Step 2: Draw a Right Triangle
+
+Add a third point C at (x₂, y₁): directly across from A and directly below (or above) B. The segment AC runs horizontally, CB runs vertically, and horizontal always meets vertical at 90°, so ABC is a right triangle with the right angle at C and AB as its hypotenuse.
+
+### Step 3: Find the Horizontal Side
+
+The leg AC stretches from x₁ to x₂ at a fixed height, so its length is the horizontal gap, **|x₂ − x₁|**. The absolute value bars state that a length is never negative; a gap of −4 and a gap of 4 are the same distance.
+
+### Step 4: Find the Vertical Side
+
+The leg CB stretches from y₁ to y₂ at a fixed x position, so its length is the vertical gap, **|y₂ − y₁|**. Because AC is horizontal and CB is vertical, they meet at a right angle, and AB closes the triangle as the hypotenuse.
+
+### Step 5: Apply the Pythagorean Theorem
+
+Feed the two legs into a² + b² = c², with the hypotenuse played by the distance d:
+
+**(x₂ − x₁)² + (y₂ − y₁)² = d²**
+
+Take the square root of both sides, keeping the nonnegative root because distance cannot be negative:
+
+**d = √[(x₂ − x₁)² + (y₂ − y₁)²]**
+
+Notice why the absolute value bars can be dropped: each difference gets squared, and squaring turns −4 into 16 just as surely as it turns 4 into 16. The signs wash out on their own.
+
+### Step 6: Understand the Final Formula
+
+The formula says nothing more than this: square the horizontal gap, square the vertical gap, add, and take the root. The right triangle does the reasoning once, so every pair of points after that is arithmetic. The same construction powers our [similar right triangles](/blog/similar-right-triangles/) guide, where a right triangle drawn on a diagram gives you proportions instead of distances.
+
+![A general right triangle on a coordinate plane with vertices A(x1, y1), B(x2, y2), and C(x2, y1), showing the horizontal and vertical legs and the diagonal distance d](/images/blog/distance-formula-derivation.svg)
+
+## How to Use the Distance Formula Step by Step
+
+1. Write down the coordinates of both points.
+2. Label one point (x₁, y₁) and the other (x₂, y₂).
+3. Substitute the four numbers into the formula.
+4. Subtract the x-coordinates, then the y-coordinates, keeping parentheses around negatives.
+5. Square both differences.
+6. Add the two squares.
+7. Take the square root.
+8. Simplify the root if you can, and state the distance with its units.
+
+**Demonstration with A(1, 2) and B(5, 5):**
+
+d = √[(5 − 1)² + (5 − 2)²]
+
+d = √[4² + 3²]
+
+d = √[16 + 9]
+
+d = √25
+
+**d = 5 units**
+
+Each step does one job: the subtractions measure the legs of the right triangle from the diagram, the squares feed the Pythagorean theorem, and the root converts the squared length back into a length.
+
+## Solved Examples of the Distance Formula
+
+### Example 1: Two Positive Coordinates
+
+Find the distance between A(2, 3) and B(8, 11).
+
+d = √[(8 − 2)² + (11 − 3)²] = √[6² + 8²] = √[36 + 64] = √100 = **10 units**. The legs are 6 and 8, a scaled-up 3-4-5 triangle, and the answer lands on a whole number.
+
+### Example 2: Negative Coordinates
+
+Find the distance between A(−3, 2) and B(1, −1).
+
+The x difference is 1 − (−3) = 4: subtracting a negative adds. The y difference is −1 − 2 = −3, and its square is 9 either way.
+
+d = √[4² + (−3)²] = √[16 + 9] = √25 = **5 units**
+
+![Points A(-3, 2) and B(1, -1) on a coordinate grid with the right triangle used to find the distance of 5 units](/images/blog/distance-formula-negative-coordinates.svg)
+
+### Example 3: Points on a Horizontal Line
+
+Find the distance between A(−2, 4) and B(5, 4).
+
+Both y-coordinates are 4, so the vertical difference is 0 and the formula shrinks: d = √[(5 − (−2))² + 0²] = √49 = **7 units**. On a horizontal line, the distance is simply the gap between the x-coordinates.
+
+### Example 4: Points on a Vertical Line
+
+Find the distance between A(3, −2) and B(3, 6).
+
+Both x-coordinates are 3, so the horizontal difference is 0: d = √[0² + (6 − (−2))²] = √64 = **8 units**. On a vertical line, count the gap between the y-coordinates.
+
+![Two small coordinate grids showing a horizontal segment with zero vertical difference and a vertical segment with zero horizontal difference](/images/blog/distance-formula-horizontal-vertical.svg)
+
+### Example 5: A Distance That Contains a Square Root
+
+Find the distance between A(0, 0) and B(2, 3).
+
+d = √[2² + 3²] = √[4 + 9] = **√13 units**, which is approximately **3.61 units**. Leave the exact answer as √13 when the problem asks for an exact value or the result feeds into later steps; use 3.61 when a measurement is needed, and say which form you are giving.
+
+## Distance Formula and the Pythagorean Theorem: What's the Connection?
+
+The distance formula is the theorem itself, rewritten so the legs are coordinate differences instead of measured sides. Given a drawn triangle with side lengths, reach for Pythagoras directly. Given coordinates, the distance formula is the same theorem with the triangle construction already done for you.
+
+| Aspect | Pythagorean Theorem | Distance Formula |
+|---|---|---|
+| Purpose | Find a side of a right triangle | Find the distance between two points |
+| Required values | Two sides of the triangle | The coordinates of both points |
+| Relationship | The source result | Derived from it, using legs \|x₂ − x₁\| and \|y₂ − y₁\| |
+| When to use it | A triangle is drawn or described | Points are given on a coordinate plane |
+| Example | Legs 6 and 8 give hypotenuse 10 | (2, 3) to (8, 11): legs 6 and 8, distance 10 |
+
+## Special Cases of the Distance Formula
+
+- **Horizontal segments.** Equal y-coordinates make the vertical difference 0, so d = |x₂ − x₁|. Example: (−2, 4) to (5, 4) gives 7.
+- **Vertical segments.** Equal x-coordinates make the horizontal difference 0, so d = |y₂ − y₁|. Example: (3, −2) to (3, 6) gives 8.
+- **Identical points.** If both points are the same, both differences are 0 and the distance is 0, as it should be.
+- **Points in different quadrants.** The formula is unchanged; squaring handles the signs. From (−1, −2) to (2, 2): d = √[(2 − (−1))² + (2 − (−2))²] = √[9 + 16] = 5.
+- **Distance from the origin.** Set one point to (0, 0) and the formula becomes d = √(x² + y²). The point (3, 4) sits 5 units from the origin; (−6, 8) sits 10 units away.
+
+## Real-Life Applications of the Distance Formula
+
+Straight-line distance shows up anywhere positions are recorded as coordinates: maps and navigation, computer graphics and games (distance from a character to a target, in pixels), architecture and engineering drawings, robotics, land surveying, and school map projects. Two assumptions ride along: the surface is treated as flat, fair at local scales, and the answer is the straight line, which is almost never the route a road actually takes.
+
+**Navigation example:** a hiker's map uses a kilometre grid. The trailhead is at (0, 0) and a lake is at (5, 12). The straight-line distance is √(25 + 144) = √169 = **13 km**. The walking trail, which bends around a hill, will be longer; 13 km is the floor, not the forecast.
+
+**Game example:** on screen, a character stands at pixel (100, 150) and a target sits at (400, 550). The gap is √[(400 − 100)² + (550 − 150)²] = √[300² + 400²] = √250000 = **500 pixels**. Game engines run this calculation constantly to decide what is in range.
+
+![A simplified map grid with a library at (1, 2) and a park at (10, 8), comparing the straight-line distance of about 10.82 km with the 15 km road route](/images/blog/distance-formula-map.svg)
+
+## Common Mistakes Students Make with the Distance Formula
+
+1. **Mixing x with y.** Pairing x₁ with y₂ breaks the legs. Wrong: subtracting 2 − 1 and 5 − 5 for A(1, 2), B(5, 5). Right: x with x, y with y: (5 − 1) and (5 − 2).
+2. **Dropping parentheses around negatives.** For B(1, −1) and A(−3, 2), the x gap is 1 − (−3) = 4. Written carelessly as 1 − 3, it becomes −2, and the squared leg shrinks from 16 to 4.
+3. **Forgetting to square.** Wrong: √[(5 − 1) + (5 − 2)] = √7 ≈ 2.65. Right: √[4² + 3²] = √25 = 5. The squares are the Pythagorean theorem; without them there is no hypotenuse.
+4. **Adding the differences before squaring.** (4 + 3)² = 49 gives d = 7, the staircase distance, not the diagonal. Square first, then add: 16 + 9 = 25.
+5. **Forgetting the square root.** Reporting 25 as the distance between (1, 2) and (5, 5) leaves the answer squared. The final root is not decoration; 5 is the distance, 25 is its square.
+6. **Confusing it with the midpoint formula.** Averaging the coordinates, ((1 + 5) ÷ 2, (2 + 5) ÷ 2) = (3, 3.5), gives a point: the segment's middle. A distance is one number, never a pair.
+7. **Reporting a negative distance.** A difference can be negative; a distance cannot. If your root comes out attached to a minus sign, a subtraction upstream went wrong.
+8. **Rounding too early.** √13 is exact; rounding it to 3.6 mid-problem and squaring later compounds the error. Keep exact values until the final step, then round once.
+
+## Distance Formula Practice Problems
+
+**Beginner**
+
+1. Find the distance between (0, 0) and (3, 4).
+2. Find the distance between (−1, 3) and (4, 3).
+3. Find the distance between (2, −1) and (2, 5).
+
+**Intermediate**
+
+4. Find the distance between (−4, −2) and (2, 3).
+5. Find the distance between (−2, 5) and (3, −5). Give the exact answer, then a decimal.
+6. Find the distance between (0, 2) and (6, 4). Simplify the radical.
+
+**Advanced**
+
+7. A delivery drone flies in a straight line from its depot at (0, 0) to a house at (9, 12), with all coordinates in kilometres. Its one-way range is 16 km. How far is the flight, and can the drone reach the house?
+8. A triangle has vertices A(0, 0), B(6, 0), and C(3, 4). Find all three side lengths, the perimeter, and whether the triangle is acute, right, or obtuse. (This is the same side-finding step used to [tell if a triangle is a right triangle](/blog/how-to-tell-if-a-triangle-is-a-right-triangle/) from its coordinates.)
+
+### Answer Key
+
+1. d = √[3² + 4²] = √25 = **5 units**.
+2. Same y, so d = |4 − (−1)| = **5 units**.
+3. Same x, so d = |5 − (−1)| = **6 units**.
+4. d = √[(2 − (−4))² + (3 − (−2))²] = √[36 + 25] = **√61 ≈ 7.81 units**.
+5. d = √[(3 − (−2))² + (−5 − 5)²] = √[25 + 100] = √125 = **5√5 ≈ 11.18 units**.
+6. d = √[6² + 2²] = √40 = **2√10 ≈ 6.32 units**.
+7. d = √[9² + 12²] = √[81 + 144] = √225 = **15 km**. The range is 16 km, so yes, the drone reaches the house with 1 km to spare.
+8. AB = 6 (horizontal). AC = √[3² + 4²] = 5. BC = √[(3 − 6)² + (4 − 0)²] = √[9 + 16] = 5. Perimeter = 6 + 5 + 5 = **16 units**. Longest side squared: 6² = 36, against 5² + 5² = 50. Since 36 < 50, the angle opposite the longest side is acute, and the other two are smaller still, so the triangle is **acute**, and isosceles.
+
+## Check Your Work
+
+Solve by hand first; the coordinate matching is the skill. Then test the same side lengths in the [Right Triangle Calculator](/right-triangle-calculator/): enter the two legs your subtraction produced and confirm the hypotenuse matches your distance. If the numbers disagree, the error is almost always in a subtraction sign or a missing square, and the mistakes list above is ordered roughly by how often each one strikes.
+
+<Faq heading="Frequently Asked Questions" description="Short answers to the questions students ask most about the distance formula." items={[
+  {
+    "question": "What is the distance formula in geometry?",
+    "answer": "It is the formula d equals the square root of (x2 minus x1) squared plus (y2 minus y1) squared, used to find the straight-line distance between two points on a coordinate plane. The two coordinate differences become the legs of a right triangle, and the distance is its hypotenuse."
+  },
+  {
+    "question": "How do you find the distance between two points?",
+    "answer": "Subtract the x-coordinates and square the result, subtract the y-coordinates and square that result, add the two squares, and take the square root. The order of the points does not matter, because each difference is squared, which removes any negative sign before you add."
+  },
+  {
+    "question": "How is the distance formula related to the Pythagorean theorem?",
+    "answer": "The distance formula is the Pythagorean theorem written in coordinates. The horizontal gap between the points is one leg, the vertical gap is the other leg, and the distance between the points is the hypotenuse. Squaring the gaps, adding, and taking the root is exactly a squared plus b squared equals c squared."
+  },
+  {
+    "question": "Why do we use a right triangle in the distance formula?",
+    "answer": "Because a right triangle is what lets the Pythagorean theorem work. The horizontal and vertical lines through two points always meet at 90 degrees, so the segment joining the points becomes a hypotenuse. Without that right angle, the two coordinate gaps could not be combined into one diagonal length."
+  },
+  {
+    "question": "How do you use the distance formula with negative coordinates?",
+    "answer": "Exactly the same way, with one care point: keep parentheses when subtracting a negative. Going from negative 3 to 1 on the x-axis gives 1 minus negative 3, which is 4, not negative 2. Squaring then removes the signs anyway, so quadrant and sign cannot change the final distance."
+  },
+  {
+    "question": "Can the distance between two points be negative?",
+    "answer": "No. Distance is a length, and lengths are zero or positive. The coordinate differences inside the formula can be negative, but each one is squared, which makes it positive before anything is added. If a negative answer appears, a subtraction or a sign went wrong somewhere upstream."
+  },
+  {
+    "question": "What is the distance formula from the origin?",
+    "answer": "Set one point to (0, 0) and the formula shortens to d equals the square root of x squared plus y squared. It gives the straight-line distance from the origin to any point (x, y). The point (3, 4), for example, sits exactly 5 units from the origin."
+  },
+  {
+    "question": "What happens if both points have the same x-coordinate?",
+    "answer": "The points sit on the same vertical line, so the horizontal difference is zero and that whole term drops out of the formula. The distance is simply the gap between the y-coordinates. Points (3, negative 2) and (3, 6) are 8 units apart, with no square root needed."
+  },
+  {
+    "question": "What is the difference between the distance formula and midpoint formula?",
+    "answer": "The distance formula returns a number: how far apart two points are. The midpoint formula returns a point: the location exactly halfway between them, found by averaging the x-coordinates and averaging the y-coordinates. One measures the segment, the other locates its middle."
+  },
+  {
+    "question": "When should you leave an answer in square root form?",
+    "answer": "Leave it exact, such as root 13, when the problem asks for an exact value, when no calculator is allowed, or when the distance feeds into a later calculation where rounding would compound. Use a decimal approximation, about 3.61, when the answer is a real-world measurement."
+  }
+]} />
+
+## Conclusion
+
+The distance formula measures the straight line between two points by borrowing a right triangle: the horizontal and vertical gaps between the coordinates become the legs, and the Pythagorean theorem turns those legs into the diagonal. That one idea survives every variation: negative coordinates, different quadrants, horizontal and vertical lines, and answers left in exact root form. Keep x paired with x, keep parentheses around negatives, and square before you add. After that, the formula is arithmetic, and practice makes it permanent.

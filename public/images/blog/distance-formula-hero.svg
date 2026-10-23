@@ -1,0 +1,59 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">Two points, one right triangle, one diagonal distance</text>
+  <line x1="280" y1="490" x2="280" y2="154" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="336" y1="490" x2="336" y2="154" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="392" y1="490" x2="392" y2="154" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="448" y1="490" x2="448" y2="154" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="504" y1="490" x2="504" y2="154" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="560" y1="490" x2="560" y2="154" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="616" y1="490" x2="616" y2="154" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="672" y1="490" x2="672" y2="154" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="728" y1="490" x2="728" y2="154" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="280" y1="490" x2="728" y2="490" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="280" y1="434" x2="728" y2="434" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="280" y1="378" x2="728" y2="378" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="280" y1="322" x2="728" y2="322" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="280" y1="266" x2="728" y2="266" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="280" y1="210" x2="728" y2="210" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="280" y1="154" x2="728" y2="154" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="280" y1="490" x2="742" y2="490" stroke="#94a3b8" stroke-width="2.5"/>
+  <line x1="280" y1="490" x2="280" y2="140" stroke="#94a3b8" stroke-width="2.5"/>
+  <path d="M 742 490 l -10 -5 v 10 z" fill="#94a3b8"/>
+  <path d="M 280 140 l -5 10 h 10 z" fill="#94a3b8"/>
+  <text x="758" y="498" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#94a3b8" text-anchor="start">x</text>
+  <text x="266" y="138" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#94a3b8" text-anchor="end">y</text>
+  <text x="280" y="516" font-family="system-ui, sans-serif" font-size="17" font-weight="500" fill="#94a3b8" text-anchor="middle">0</text>
+  <text x="336" y="516" font-family="system-ui, sans-serif" font-size="17" font-weight="500" fill="#94a3b8" text-anchor="middle">1</text>
+  <text x="392" y="516" font-family="system-ui, sans-serif" font-size="17" font-weight="500" fill="#94a3b8" text-anchor="middle">2</text>
+  <text x="448" y="516" font-family="system-ui, sans-serif" font-size="17" font-weight="500" fill="#94a3b8" text-anchor="middle">3</text>
+  <text x="504" y="516" font-family="system-ui, sans-serif" font-size="17" font-weight="500" fill="#94a3b8" text-anchor="middle">4</text>
+  <text x="560" y="516" font-family="system-ui, sans-serif" font-size="17" font-weight="500" fill="#94a3b8" text-anchor="middle">5</text>
+  <text x="616" y="516" font-family="system-ui, sans-serif" font-size="17" font-weight="500" fill="#94a3b8" text-anchor="middle">6</text>
+  <text x="672" y="516" font-family="system-ui, sans-serif" font-size="17" font-weight="500" fill="#94a3b8" text-anchor="middle">7</text>
+  <text x="728" y="516" font-family="system-ui, sans-serif" font-size="17" font-weight="500" fill="#94a3b8" text-anchor="middle">8</text>
+  <text x="266" y="272" font-family="system-ui, sans-serif" font-size="17" font-weight="500" fill="#94a3b8" text-anchor="end">4</text>
+  <text x="266" y="160" font-family="system-ui, sans-serif" font-size="17" font-weight="500" fill="#94a3b8" text-anchor="end">6</text>
+  <line x1="336" y1="378" x2="560" y2="378" stroke="#38bdf8" stroke-width="3.5"/>
+  <line x1="560" y1="378" x2="560" y2="210" stroke="#38bdf8" stroke-width="3.5"/>
+  <line x1="336" y1="378" x2="560" y2="210" stroke="#facc15" stroke-width="4"/>
+  <path d="M 542 378 L 542 396 L 560 396" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <circle cx="336" cy="378" r="7" fill="#facc15"/>
+  <circle cx="560" cy="210" r="7" fill="#facc15"/>
+  <text x="324" y="386" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#facc15" text-anchor="end">A (1, 2)</text>
+  <text x="574" y="204" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#facc15" text-anchor="start">B (5, 5)</text>
+  <text x="448" y="412" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#38bdf8" text-anchor="middle">4 units</text>
+  <text x="576" y="294" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#38bdf8" text-anchor="start">3 units</text>
+  <text x="432" y="276" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#facc15" text-anchor="middle">d = 5 units</text>
+  <text x="600" y="592" font-family="monospace" font-size="26" font-weight="bold" fill="#10b981" text-anchor="middle">d = √[(5 − 1)² + (5 − 2)²] = √25 = 5</text>
+</svg>

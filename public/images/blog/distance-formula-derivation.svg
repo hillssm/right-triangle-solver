@@ -1,0 +1,51 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">Where the distance formula comes from</text>
+  <line x1="240" y1="490" x2="240" y2="142" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="298" y1="490" x2="298" y2="142" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="356" y1="490" x2="356" y2="142" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="414" y1="490" x2="414" y2="142" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="472" y1="490" x2="472" y2="142" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="530" y1="490" x2="530" y2="142" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="588" y1="490" x2="588" y2="142" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="646" y1="490" x2="646" y2="142" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="704" y1="490" x2="704" y2="142" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="762" y1="490" x2="762" y2="142" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="240" y1="490" x2="762" y2="490" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="240" y1="432" x2="762" y2="432" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="240" y1="374" x2="762" y2="374" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="240" y1="316" x2="762" y2="316" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="240" y1="258" x2="762" y2="258" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="240" y1="200" x2="762" y2="200" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="240" y1="142" x2="762" y2="142" stroke="#475569" stroke-width="1" opacity="0.45"/>
+  <line x1="240" y1="490" x2="776" y2="490" stroke="#94a3b8" stroke-width="2.5"/>
+  <line x1="240" y1="490" x2="240" y2="128" stroke="#94a3b8" stroke-width="2.5"/>
+  <path d="M 776 490 l -10 -5 v 10 z" fill="#94a3b8"/>
+  <path d="M 240 128 l -5 10 h 10 z" fill="#94a3b8"/>
+  <text x="792" y="498" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#94a3b8" text-anchor="start">x</text>
+  <text x="226" y="126" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#94a3b8" text-anchor="end">y</text>
+  <line x1="309.6" y1="432.0" x2="634.4" y2="432.0" stroke="#38bdf8" stroke-width="3.5"/>
+  <line x1="634.4" y1="432.0" x2="634.4" y2="223.20000000000005" stroke="#38bdf8" stroke-width="3.5"/>
+  <line x1="309.6" y1="432.0" x2="634.4" y2="223.20000000000005" stroke="#facc15" stroke-width="4"/>
+  <path d="M 616.4 432.0 L 616.4 450.0 L 634.4 450.0" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <circle cx="309.6" cy="432.0" r="7" fill="#facc15"/>
+  <circle cx="634.4" cy="223.20000000000005" r="7" fill="#facc15"/>
+  <circle cx="634.4" cy="432.0" r="7" fill="#facc15"/>
+  <text x="297.6" y="440.0" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#facc15" text-anchor="end">A (x₁, y₁)</text>
+  <text x="648.4" y="219.20000000000005" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#facc15" text-anchor="start">B (x₂, y₂)</text>
+  <text x="644.4" y="464.0" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#94a3b8" text-anchor="start">C (x₂, y₁)</text>
+  <text x="472.0" y="468.0" font-family="monospace" font-size="24" font-weight="600" fill="#38bdf8" text-anchor="middle">horizontal leg = |x₂ − x₁|</text>
+  <text x="652.4" y="327.0" font-family="monospace" font-size="24" font-weight="600" fill="#38bdf8" text-anchor="start">vertical leg = |y₂ − y₁|</text>
+  <text x="442.0" y="311.0" font-family="system-ui, sans-serif" font-size="30" font-weight="600" fill="#facc15" text-anchor="middle">d</text>
+  <text x="600" y="592" font-family="monospace" font-size="26" font-weight="bold" fill="#10b981" text-anchor="middle">(x₂ − x₁)² + (y₂ − y₁)² = d²   →   d = √[(x₂ − x₁)² + (y₂ − y₁)²]</text>
+</svg>

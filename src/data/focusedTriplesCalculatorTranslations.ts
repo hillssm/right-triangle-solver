@@ -4,6 +4,38 @@ import type {
   FocusedTriplesCalculatorUi
 } from './focusedTriplesCalculatorPages';
 import type { Locale } from 'theme/i18n/locales';
+import { TRIPLES_GAP_FILLS } from 'src/data/focusedTriplesGapTranslations';
+
+function setGapPath(target: unknown, path: string, value: unknown, mode: 'fill' | 'set'): void {
+  const parts = path.replace(/\[(\d+)\]/g, '.$1').split('.');
+  let cur = target as Record<string, unknown>;
+  for (let i = 0; i < parts.length - 1; i++) {
+    const key = parts[i];
+    if (cur[key] === undefined || cur[key] === null) {
+      cur[key] = /^\d+$/.test(parts[i + 1]) ? [] : {};
+    }
+    cur = cur[key] as Record<string, unknown>;
+  }
+  const last = parts[parts.length - 1];
+  if (mode === 'set' || cur[last] === undefined) {
+    cur[last] = value;
+  }
+}
+
+function applyTriplesGapFills(
+  page: FocusedTriplesCalculatorPage,
+  locale: Locale
+): FocusedTriplesCalculatorPage {
+  const fills = TRIPLES_GAP_FILLS[locale]?.[page.slug];
+  if (!fills || fills.length === 0) {
+    return page;
+  }
+  const next = structuredClone(page) as FocusedTriplesCalculatorPage;
+  for (const fill of fills) {
+    setGapPath(next, fill.path, structuredClone(fill.value), fill.mode);
+  }
+  return next;
+}
 
 type TriplesPageKey = 'pythagorean' | 'triangle345' | 'triangle51213' | 'similar';
 type TriplesPageSlug =
@@ -3041,7 +3073,7 @@ const exampleStepsForPage = (key: TriplesPageKey, text: LocaleText) => {
   ];
 };
 
-export function localizeFocusedTriplesCalculatorPage(
+function buildLocalizedTriplesPage(
   page: FocusedTriplesCalculatorPage,
   locale: Locale
 ): FocusedTriplesCalculatorPage {
@@ -3149,4 +3181,11 @@ export function getFocusedTriplesHomeUi(locale: Locale): FocusedTriplesHomeUi {
       description: text.introLines[key]
     }))
   };
+}
+
+export function localizeFocusedTriplesCalculatorPage(
+  page: FocusedTriplesCalculatorPage,
+  locale: Locale
+): FocusedTriplesCalculatorPage {
+  return applyTriplesGapFills(buildLocalizedTriplesPage(page, locale), locale);
 }

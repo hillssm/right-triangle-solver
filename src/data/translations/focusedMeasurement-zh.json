@@ -66,12 +66,12 @@
           "description": "b 边是直角的另一边，与 a 和 c 相加。"
         },
         "c": {
-          "label": "c = hypotenuse",
+          "label": "c = 斜边",
           "description": "斜边 c 是最长的边，与直角相对，并完成边界。"
         }
       },
       "result": {
-        "label": "P = total boundary length",
+        "label": "P = 总边界长度",
         "description": "计算器将 a + b + c 相加并返回所选线性单位的周长。"
       },
       "notes": [
@@ -174,7 +174,7 @@
           "给定：a = 8，b = 15，c = 17。这是另一个毕达哥拉斯三元组，其中所有边都是整数。"
         ],
         "listItems": [
-          "P = 8 + 15 + 17 = 40 units",
+          "P = 8 + 15 + 17 = 40 单位",
           "验证：8² + 15² = 64 + 225 = 289 = 17² ✓",
           "此三元组在需要 40 单位栅栏或修剪长度的建筑布局中非常有用。"
         ]
@@ -401,12 +401,12 @@
           "description": "边 b 与 a 形成直角，并且对周长和半周长都有贡献。"
         },
         "c": {
-          "label": "c = hypotenuse",
+          "label": "c = 斜边",
           "description": "斜边 c 是最长的边，必须在总数减半之前将其包括在内。"
         }
       },
       "result": {
-        "label": "s = half of the boundary total",
+        "label": "s = 边界总长的一半",
         "description": "计算器首先将 a + b + c 加起来，然后将该周长除以 2。"
       },
       "notes": [
@@ -519,7 +519,7 @@
         "listItems": [
           "s = (2.5 + 6 + 6.5) / 2",
           "s = 15 / 2",
-          "s = 7.5 units"
+          "s = 7.5 单位"
         ]
       },
       {

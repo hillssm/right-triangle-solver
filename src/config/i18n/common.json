@@ -312,7 +312,9 @@
       "switchLanguage": "Idioma"
     },
     "footer": {
-      "rights": "Todos los derechos reservados."
+      "rights": "Todos los derechos reservados.",
+      "sections": "Sections",
+      "languages": "Languages"
     },
     "solver": {
       "mainFormula": "Fórmula Principal",
@@ -446,7 +448,9 @@
       "switchLanguage": "Язык"
     },
     "footer": {
-      "rights": "Все права защищены."
+      "rights": "Все права защищены.",
+      "sections": "Sections",
+      "languages": "Languages"
     },
     "solver": {
       "mainFormula": "Основная формула",
@@ -580,7 +584,9 @@
       "switchLanguage": "Langue"
     },
     "footer": {
-      "rights": "Tous droits réservés."
+      "rights": "Tous droits réservés.",
+      "sections": "Sections",
+      "languages": "Languages"
     },
     "solver": {
       "mainFormula": "Formule Principale",
@@ -714,7 +720,9 @@
       "switchLanguage": "Sprache"
     },
     "footer": {
-      "rights": "Alle Rechte vorbehalten."
+      "rights": "Alle Rechte vorbehalten.",
+      "sections": "Sections",
+      "languages": "Languages"
     },
     "solver": {
       "mainFormula": "Hauptformel",
@@ -848,7 +856,9 @@
       "switchLanguage": "Lingua"
     },
     "footer": {
-      "rights": "Tutti i diritti riservati."
+      "rights": "Tutti i diritti riservati.",
+      "sections": "Sections",
+      "languages": "Languages"
     },
     "solver": {
       "mainFormula": "Formula Principale",
@@ -982,7 +992,9 @@
       "switchLanguage": "Idioma"
     },
     "footer": {
-      "rights": "Todos os direitos reservados."
+      "rights": "Todos os direitos reservados.",
+      "sections": "Sections",
+      "languages": "Languages"
     },
     "solver": {
       "mainFormula": "Fórmula Principal",
@@ -1116,7 +1128,9 @@
       "switchLanguage": "ভাষা"
     },
     "footer": {
-      "rights": "সর্বস্বত্ব সংরক্ষিত।"
+      "rights": "সর্বস্বত্ব সংরক্ষিত।",
+      "sections": "Sections",
+      "languages": "Languages"
     },
     "solver": {
       "resultsTitle": "সমকোণী ত্রিভুজ সমাধানকারী ফলাফল",
@@ -1250,7 +1264,9 @@
       "switchLanguage": "言語"
     },
     "footer": {
-      "rights": "無断複写・転載を禁じます。"
+      "rights": "無断複写・転載を禁じます。",
+      "sections": "Sections",
+      "languages": "Languages"
     },
     "solver": {
       "mainFormula": "主な公式",
@@ -1520,7 +1536,9 @@
       "switchLanguage": "Bahasa"
     },
     "footer": {
-      "rights": "Hak cipta terpelihara."
+      "rights": "Hak cipta terpelihara.",
+      "sections": "Sections",
+      "languages": "Languages"
     },
     "solver": {
       "resultsTitle": "Keputusan Penyelesai Segi Tiga Kanan",
@@ -1654,7 +1672,9 @@
       "switchLanguage": "Język"
     },
     "footer": {
-      "rights": "Wszelkie prawa zastrzeżone."
+      "rights": "Wszelkie prawa zastrzeżone.",
+      "sections": "Sections",
+      "languages": "Languages"
     },
     "solver": {
       "mainFormula": "Główny wzór",
@@ -1788,7 +1808,9 @@
       "switchLanguage": "Bahasa"
     },
     "footer": {
-      "rights": "Hak cipta dilindungi undang-undang."
+      "rights": "Hak cipta dilindungi undang-undang.",
+      "sections": "Sections",
+      "languages": "Languages"
     },
     "solver": {
       "mainFormula": "Formula Utama",
@@ -1922,7 +1944,9 @@
       "switchLanguage": "اللغة"
     },
     "footer": {
-      "rights": "جميع الحقوق محفوظة."
+      "rights": "جميع الحقوق محفوظة.",
+      "sections": "Sections",
+      "languages": "Languages"
     },
     "solver": {
       "mainFormula": "الصيغة الرئيسية",
@@ -2056,7 +2080,9 @@
       "switchLanguage": "Език"
     },
     "footer": {
-      "rights": "Всички права запазени."
+      "rights": "Всички права запазени.",
+      "sections": "Sections",
+      "languages": "Languages"
     },
     "solver": {
       "resultsTitle": "Резултати от решаването на правоъгълен триъгълник",
@@ -2190,7 +2216,9 @@
       "switchLanguage": "Dil"
     },
     "footer": {
-      "rights": "Tüm hakları saklıdır."
+      "rights": "Tüm hakları saklıdır.",
+      "sections": "Sections",
+      "languages": "Languages"
     },
     "solver": {
       "mainFormula": "Ana Formül",
@@ -2324,7 +2352,9 @@
       "switchLanguage": "Språk"
     },
     "footer": {
-      "rights": "Alla rättigheter förbehållna."
+      "rights": "Alla rättigheter förbehållna.",
+      "sections": "Sections",
+      "languages": "Languages"
     },
     "solver": {
       "mainFormula": "Huvudformel",
@@ -2458,7 +2488,9 @@
       "switchLanguage": "语言"
     },
     "footer": {
-      "rights": "版权所有。"
+      "rights": "版权所有。",
+      "sections": "Sections",
+      "languages": "Languages"
     },
     "solver": {
       "mainFormula": "主公式",

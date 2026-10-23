@@ -391,13 +391,13 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
       "calculatorNote": "सभी इनपुट मान 0 से अधिक होने चाहिए.",
       "formulaSection": {
         "formulas": [
-          "\\text{long leg} = a \\times \\sqrt{3}",
+          "\\text{लंबी भुजा} = a \\times \\sqrt{3}",
           "c = 2a",
           "a = \\frac{c}{2}",
           "a = \\frac{\\text{long leg}}{\\sqrt{3}}",
-          "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+          "\\text{लंबी भुजा} = \\frac{c \\times \\sqrt{3}}{2}",
           "\\text{Area} = \\frac{\\text{short leg} \\times \\text{long leg}}{2}",
-          "P = \\text{short leg} + \\text{long leg} + c"
+          "P = \\text{छोटी भुजा} + \\text{लंबी भुजा} + c"
         ]
       },
       "diagram": {
@@ -419,9 +419,9 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "उदाहरण 1: जब छोटा पैर a = 5 हो तो लंबा पैर और कर्ण ज्ञात कीजिए।",
           "steps": [
-            "\\text{long leg} = a \\times \\sqrt{3}",
-            "\\text{long leg} = 5 \\times \\sqrt{3}",
-            "\\text{long leg} \\approx 8.660",
+            "\\text{लंबी भुजा} = a \\times \\sqrt{3}",
+            "\\text{लंबी भुजा} = 5 \\times \\sqrt{3}",
+            "\\text{लंबी भुजा} \\approx 8.660",
             "c = 2a",
             "c = 2 \\times 5",
             "c = 10"
@@ -438,10 +438,10 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "उदाहरण 3: कर्ण c = 10 से लंबा पैर ज्ञात कीजिए।",
           "steps": [
-            "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+            "\\text{लंबी भुजा} = \\frac{c \\times \\sqrt{3}}{2}",
             "\\text{long leg} = \\frac{10 \\times \\sqrt{3}}{2}",
-            "\\text{long leg} = 5\\sqrt{3}",
-            "\\text{long leg} \\approx 8.660"
+            "\\text{लंबी भुजा} = 5\\sqrt{3}",
+            "\\text{लंबी भुजा} \\approx 8.660"
           ]
         }
       ],
@@ -930,13 +930,13 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
       "calculatorNote": "Todos los valores de entrada deben ser mayores que 0.",
       "formulaSection": {
         "formulas": [
-          "\\text{long leg} = a \\times \\sqrt{3}",
+          "\\text{cateto largo} = a \\times \\sqrt{3}",
           "c = 2a",
           "a = \\frac{c}{2}",
           "a = \\frac{\\text{long leg}}{\\sqrt{3}}",
-          "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+          "\\text{cateto largo} = \\frac{c \\times \\sqrt{3}}{2}",
           "\\text{Area} = \\frac{\\text{short leg} \\times \\text{long leg}}{2}",
-          "P = \\text{short leg} + \\text{long leg} + c"
+          "P = \\text{cateto corto} + \\text{cateto largo} + c"
         ]
       },
       "diagram": {
@@ -958,9 +958,9 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Ejemplo 1: Encuentre el cateto largo y la hipotenusa cuando el cateto corto a = 5.",
           "steps": [
-            "\\text{long leg} = a \\times \\sqrt{3}",
-            "\\text{long leg} = 5 \\times \\sqrt{3}",
-            "\\text{long leg} \\approx 8.660",
+            "\\text{cateto largo} = a \\times \\sqrt{3}",
+            "\\text{cateto largo} = 5 \\times \\sqrt{3}",
+            "\\text{cateto largo} \\approx 8.660",
             "c = 2a",
             "c = 2 \\times 5",
             "c = 10"
@@ -977,10 +977,10 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Ejemplo 3: Encuentre el cateto largo de la hipotenusa c = 10.",
           "steps": [
-            "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+            "\\text{cateto largo} = \\frac{c \\times \\sqrt{3}}{2}",
             "\\text{long leg} = \\frac{10 \\times \\sqrt{3}}{2}",
-            "\\text{long leg} = 5\\sqrt{3}",
-            "\\text{long leg} \\approx 8.660"
+            "\\text{cateto largo} = 5\\sqrt{3}",
+            "\\text{cateto largo} \\approx 8.660"
           ]
         }
       ],
@@ -1469,13 +1469,13 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
       "calculatorNote": "Все входные значения должны быть больше 0.",
       "formulaSection": {
         "formulas": [
-          "\\text{long leg} = a \\times \\sqrt{3}",
+          "\\text{длинный катет} = a \\times \\sqrt{3}",
           "c = 2a",
           "a = \\frac{c}{2}",
           "a = \\frac{\\text{long leg}}{\\sqrt{3}}",
-          "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+          "\\text{длинный катет} = \\frac{c \\times \\sqrt{3}}{2}",
           "\\text{Area} = \\frac{\\text{short leg} \\times \\text{long leg}}{2}",
-          "P = \\text{short leg} + \\text{long leg} + c"
+          "P = \\text{короткий катет} + \\text{длинный катет} + c"
         ]
       },
       "diagram": {
@@ -1497,9 +1497,9 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Пример 1. Найдите длинный катет и гипотенузу, если короткий катет a = 5.",
           "steps": [
-            "\\text{long leg} = a \\times \\sqrt{3}",
-            "\\text{long leg} = 5 \\times \\sqrt{3}",
-            "\\text{long leg} \\approx 8.660",
+            "\\text{длинный катет} = a \\times \\sqrt{3}",
+            "\\text{длинный катет} = 5 \\times \\sqrt{3}",
+            "\\text{длинный катет} \\approx 8.660",
             "c = 2a",
             "c = 2 \\times 5",
             "c = 10"
@@ -1516,10 +1516,10 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Пример 3: Найдите длинный катет от гипотенузы c = 10.",
           "steps": [
-            "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+            "\\text{длинный катет} = \\frac{c \\times \\sqrt{3}}{2}",
             "\\text{long leg} = \\frac{10 \\times \\sqrt{3}}{2}",
-            "\\text{long leg} = 5\\sqrt{3}",
-            "\\text{long leg} \\approx 8.660"
+            "\\text{длинный катет} = 5\\sqrt{3}",
+            "\\text{длинный катет} \\approx 8.660"
           ]
         }
       ],
@@ -2008,13 +2008,13 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
       "calculatorNote": "Toutes les valeurs d'entrée doivent être supérieures à 0.",
       "formulaSection": {
         "formulas": [
-          "\\text{long leg} = a \\times \\sqrt{3}",
+          "\\text{grande cathète} = a \\times \\sqrt{3}",
           "c = 2a",
           "a = \\frac{c}{2}",
           "a = \\frac{\\text{long leg}}{\\sqrt{3}}",
-          "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+          "\\text{grande cathète} = \\frac{c \\times \\sqrt{3}}{2}",
           "\\text{Area} = \\frac{\\text{short leg} \\times \\text{long leg}}{2}",
-          "P = \\text{short leg} + \\text{long leg} + c"
+          "P = \\text{petite cathète} + \\text{grande cathète} + c"
         ]
       },
       "diagram": {
@@ -2036,9 +2036,9 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Exemple 1 : Trouvez la jambe longue et l'hypoténuse lorsque la jambe courte a = 5.",
           "steps": [
-            "\\text{long leg} = a \\times \\sqrt{3}",
-            "\\text{long leg} = 5 \\times \\sqrt{3}",
-            "\\text{long leg} \\approx 8.660",
+            "\\text{grande cathète} = a \\times \\sqrt{3}",
+            "\\text{grande cathète} = 5 \\times \\sqrt{3}",
+            "\\text{grande cathète} \\approx 8.660",
             "c = 2a",
             "c = 2 \\times 5",
             "c = 10"
@@ -2055,10 +2055,10 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Exemple 3 : Trouvez la jambe longue à partir de l'hypoténuse c = 10.",
           "steps": [
-            "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+            "\\text{grande cathète} = \\frac{c \\times \\sqrt{3}}{2}",
             "\\text{long leg} = \\frac{10 \\times \\sqrt{3}}{2}",
-            "\\text{long leg} = 5\\sqrt{3}",
-            "\\text{long leg} \\approx 8.660"
+            "\\text{grande cathète} = 5\\sqrt{3}",
+            "\\text{grande cathète} \\approx 8.660"
           ]
         }
       ],
@@ -2547,13 +2547,13 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
       "calculatorNote": "Alle Eingabewerte müssen größer als 0 sein.",
       "formulaSection": {
         "formulas": [
-          "\\text{long leg} = a \\times \\sqrt{3}",
+          "\\text{lange Kathete} = a \\times \\sqrt{3}",
           "c = 2a",
           "a = \\frac{c}{2}",
           "a = \\frac{\\text{long leg}}{\\sqrt{3}}",
-          "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+          "\\text{lange Kathete} = \\frac{c \\times \\sqrt{3}}{2}",
           "\\text{Area} = \\frac{\\text{short leg} \\times \\text{long leg}}{2}",
-          "P = \\text{short leg} + \\text{long leg} + c"
+          "P = \\text{kurze Kathete} + \\text{lange Kathete} + c"
         ]
       },
       "diagram": {
@@ -2575,9 +2575,9 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Beispiel 1: Finden Sie den langen Schenkel und die Hypotenuse, wenn der kurze Schenkel a = 5 ist.",
           "steps": [
-            "\\text{long leg} = a \\times \\sqrt{3}",
-            "\\text{long leg} = 5 \\times \\sqrt{3}",
-            "\\text{long leg} \\approx 8.660",
+            "\\text{lange Kathete} = a \\times \\sqrt{3}",
+            "\\text{lange Kathete} = 5 \\times \\sqrt{3}",
+            "\\text{lange Kathete} \\approx 8.660",
             "c = 2a",
             "c = 2 \\times 5",
             "c = 10"
@@ -2594,10 +2594,10 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Beispiel 3: Finden Sie das lange Kathete von der Hypotenuse c = 10.",
           "steps": [
-            "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+            "\\text{lange Kathete} = \\frac{c \\times \\sqrt{3}}{2}",
             "\\text{long leg} = \\frac{10 \\times \\sqrt{3}}{2}",
-            "\\text{long leg} = 5\\sqrt{3}",
-            "\\text{long leg} \\approx 8.660"
+            "\\text{lange Kathete} = 5\\sqrt{3}",
+            "\\text{lange Kathete} \\approx 8.660"
           ]
         }
       ],
@@ -3086,13 +3086,13 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
       "calculatorNote": "Tutti i valori di input devono essere maggiori di 0.",
       "formulaSection": {
         "formulas": [
-          "\\text{long leg} = a \\times \\sqrt{3}",
+          "\\text{cateto maggiore} = a \\times \\sqrt{3}",
           "c = 2a",
           "a = \\frac{c}{2}",
           "a = \\frac{\\text{long leg}}{\\sqrt{3}}",
-          "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+          "\\text{cateto maggiore} = \\frac{c \\times \\sqrt{3}}{2}",
           "\\text{Area} = \\frac{\\text{short leg} \\times \\text{long leg}}{2}",
-          "P = \\text{short leg} + \\text{long leg} + c"
+          "P = \\text{cateto minore} + \\text{cateto maggiore} + c"
         ]
       },
       "diagram": {
@@ -3114,9 +3114,9 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Esempio 1: trova il cateto lungo e l'ipotenusa quando il cateto corto a = 5.",
           "steps": [
-            "\\text{long leg} = a \\times \\sqrt{3}",
-            "\\text{long leg} = 5 \\times \\sqrt{3}",
-            "\\text{long leg} \\approx 8.660",
+            "\\text{cateto maggiore} = a \\times \\sqrt{3}",
+            "\\text{cateto maggiore} = 5 \\times \\sqrt{3}",
+            "\\text{cateto maggiore} \\approx 8.660",
             "c = 2a",
             "c = 2 \\times 5",
             "c = 10"
@@ -3133,10 +3133,10 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Esempio 3: Trova il cateto lungo dall'ipotenusa c = 10.",
           "steps": [
-            "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+            "\\text{cateto maggiore} = \\frac{c \\times \\sqrt{3}}{2}",
             "\\text{long leg} = \\frac{10 \\times \\sqrt{3}}{2}",
-            "\\text{long leg} = 5\\sqrt{3}",
-            "\\text{long leg} \\approx 8.660"
+            "\\text{cateto maggiore} = 5\\sqrt{3}",
+            "\\text{cateto maggiore} \\approx 8.660"
           ]
         }
       ],
@@ -3625,13 +3625,13 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
       "calculatorNote": "Todos os valores de entrada devem ser maiores que 0.",
       "formulaSection": {
         "formulas": [
-          "\\text{long leg} = a \\times \\sqrt{3}",
+          "\\text{cateto maior} = a \\times \\sqrt{3}",
           "c = 2a",
           "a = \\frac{c}{2}",
           "a = \\frac{\\text{long leg}}{\\sqrt{3}}",
-          "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+          "\\text{cateto maior} = \\frac{c \\times \\sqrt{3}}{2}",
           "\\text{Area} = \\frac{\\text{short leg} \\times \\text{long leg}}{2}",
-          "P = \\text{short leg} + \\text{long leg} + c"
+          "P = \\text{cateto menor} + \\text{cateto maior} + c"
         ]
       },
       "diagram": {
@@ -3653,9 +3653,9 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Exemplo 1: Encontre a cateto longa e a hipotenusa quando a cateto curta a = 5.",
           "steps": [
-            "\\text{long leg} = a \\times \\sqrt{3}",
-            "\\text{long leg} = 5 \\times \\sqrt{3}",
-            "\\text{long leg} \\approx 8.660",
+            "\\text{cateto maior} = a \\times \\sqrt{3}",
+            "\\text{cateto maior} = 5 \\times \\sqrt{3}",
+            "\\text{cateto maior} \\approx 8.660",
             "c = 2a",
             "c = 2 \\times 5",
             "c = 10"
@@ -3672,10 +3672,10 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Exemplo 3: Encontre a cateto longa da hipotenusa c = 10.",
           "steps": [
-            "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+            "\\text{cateto maior} = \\frac{c \\times \\sqrt{3}}{2}",
             "\\text{long leg} = \\frac{10 \\times \\sqrt{3}}{2}",
-            "\\text{long leg} = 5\\sqrt{3}",
-            "\\text{long leg} \\approx 8.660"
+            "\\text{cateto maior} = 5\\sqrt{3}",
+            "\\text{cateto maior} \\approx 8.660"
           ]
         }
       ],
@@ -4164,13 +4164,13 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
       "calculatorNote": "সমস্ত ইনপুট মান অবশ্যই 0-এর বেশি হতে হবে।",
       "formulaSection": {
         "formulas": [
-          "\\text{long leg} = a \\times \\sqrt{3}",
+          "\\text{দীর্ঘ বাহু} = a \\times \\sqrt{3}",
           "c = 2a",
           "a = \\frac{c}{2}",
           "a = \\frac{\\text{long leg}}{\\sqrt{3}}",
-          "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+          "\\text{দীর্ঘ বাহু} = \\frac{c \\times \\sqrt{3}}{2}",
           "\\text{Area} = \\frac{\\text{short leg} \\times \\text{long leg}}{2}",
-          "P = \\text{short leg} + \\text{long leg} + c"
+          "P = \\text{খাটো বাহু} + \\text{দীর্ঘ বাহু} + c"
         ]
       },
       "diagram": {
@@ -4192,9 +4192,9 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "উদাহরণ 1: ছোট পা a = 5 হলে লং লেগ এবং হাইপোটেনাস খুঁজুন।",
           "steps": [
-            "\\text{long leg} = a \\times \\sqrt{3}",
-            "\\text{long leg} = 5 \\times \\sqrt{3}",
-            "\\text{long leg} \\approx 8.660",
+            "\\text{দীর্ঘ বাহু} = a \\times \\sqrt{3}",
+            "\\text{দীর্ঘ বাহু} = 5 \\times \\sqrt{3}",
+            "\\text{দীর্ঘ বাহু} \\approx 8.660",
             "c = 2a",
             "c = 2 \\times 5",
             "c = 10"
@@ -4211,10 +4211,10 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "উদাহরণ 3: হাইপোটেনাস c = 10 থেকে লম্বা পা খুঁজুন।",
           "steps": [
-            "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+            "\\text{দীর্ঘ বাহু} = \\frac{c \\times \\sqrt{3}}{2}",
             "\\text{long leg} = \\frac{10 \\times \\sqrt{3}}{2}",
-            "\\text{long leg} = 5\\sqrt{3}",
-            "\\text{long leg} \\approx 8.660"
+            "\\text{দীর্ঘ বাহু} = 5\\sqrt{3}",
+            "\\text{দীর্ঘ বাহু} \\approx 8.660"
           ]
         }
       ],
@@ -4703,13 +4703,13 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
       "calculatorNote": "すべての入力値は 0 より大きくなければなりません。",
       "formulaSection": {
         "formulas": [
-          "\\text{long leg} = a \\times \\sqrt{3}",
+          "\\text{長い脚} = a \\times \\sqrt{3}",
           "c = 2a",
           "a = \\frac{c}{2}",
           "a = \\frac{\\text{long leg}}{\\sqrt{3}}",
-          "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+          "\\text{長い脚} = \\frac{c \\times \\sqrt{3}}{2}",
           "\\text{Area} = \\frac{\\text{short leg} \\times \\text{long leg}}{2}",
-          "P = \\text{short leg} + \\text{long leg} + c"
+          "P = \\text{短い脚} + \\text{長い脚} + c"
         ]
       },
       "diagram": {
@@ -4731,9 +4731,9 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "例 1: 短脚 a = 5 の場合、長脚と斜辺を求めます。",
           "steps": [
-            "\\text{long leg} = a \\times \\sqrt{3}",
-            "\\text{long leg} = 5 \\times \\sqrt{3}",
-            "\\text{long leg} \\approx 8.660",
+            "\\text{長い脚} = a \\times \\sqrt{3}",
+            "\\text{長い脚} = 5 \\times \\sqrt{3}",
+            "\\text{長い脚} \\approx 8.660",
             "c = 2a",
             "c = 2 \\times 5",
             "c = 10"
@@ -4750,10 +4750,10 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "例 3: 斜辺 c = 10 から長い脚を求めます。",
           "steps": [
-            "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+            "\\text{長い脚} = \\frac{c \\times \\sqrt{3}}{2}",
             "\\text{long leg} = \\frac{10 \\times \\sqrt{3}}{2}",
-            "\\text{long leg} = 5\\sqrt{3}",
-            "\\text{long leg} \\approx 8.660"
+            "\\text{長い脚} = 5\\sqrt{3}",
+            "\\text{長い脚} \\approx 8.660"
           ]
         }
       ],
@@ -5242,13 +5242,13 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
       "calculatorNote": "모든 입력 값은 0보다 커야 합니다.",
       "formulaSection": {
         "formulas": [
-          "\\text{long leg} = a \\times \\sqrt{3}",
+          "\\text{긴 변} = a \\times \\sqrt{3}",
           "c = 2a",
           "a = \\frac{c}{2}",
           "a = \\frac{\\text{long leg}}{\\sqrt{3}}",
-          "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+          "\\text{긴 변} = \\frac{c \\times \\sqrt{3}}{2}",
           "\\text{Area} = \\frac{\\text{short leg} \\times \\text{long leg}}{2}",
-          "P = \\text{short leg} + \\text{long leg} + c"
+          "P = \\text{짧은 변} + \\text{긴 변} + c"
         ]
       },
       "diagram": {
@@ -5270,9 +5270,9 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "예 1: 짧은 다리 a = 5일 때 긴 다리와 빗변을 구합니다.",
           "steps": [
-            "\\text{long leg} = a \\times \\sqrt{3}",
-            "\\text{long leg} = 5 \\times \\sqrt{3}",
-            "\\text{long leg} \\approx 8.660",
+            "\\text{긴 변} = a \\times \\sqrt{3}",
+            "\\text{긴 변} = 5 \\times \\sqrt{3}",
+            "\\text{긴 변} \\approx 8.660",
             "c = 2a",
             "c = 2 \\times 5",
             "c = 10"
@@ -5289,10 +5289,10 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "예 3: 빗변 c = 10에서 긴 다리를 찾습니다.",
           "steps": [
-            "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+            "\\text{긴 변} = \\frac{c \\times \\sqrt{3}}{2}",
             "\\text{long leg} = \\frac{10 \\times \\sqrt{3}}{2}",
-            "\\text{long leg} = 5\\sqrt{3}",
-            "\\text{long leg} \\approx 8.660"
+            "\\text{긴 변} = 5\\sqrt{3}",
+            "\\text{긴 변} \\approx 8.660"
           ]
         }
       ],
@@ -5781,13 +5781,13 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
       "calculatorNote": "Semua nilai input mestilah lebih besar daripada 0.",
       "formulaSection": {
         "formulas": [
-          "\\text{long leg} = a \\times \\sqrt{3}",
+          "\\text{kaki panjang} = a \\times \\sqrt{3}",
           "c = 2a",
           "a = \\frac{c}{2}",
           "a = \\frac{\\text{long leg}}{\\sqrt{3}}",
-          "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+          "\\text{kaki panjang} = \\frac{c \\times \\sqrt{3}}{2}",
           "\\text{Area} = \\frac{\\text{short leg} \\times \\text{long leg}}{2}",
-          "P = \\text{short leg} + \\text{long leg} + c"
+          "P = \\text{kaki pendek} + \\text{kaki panjang} + c"
         ]
       },
       "diagram": {
@@ -5809,9 +5809,9 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Contoh 1: Cari kaki panjang dan hipotenus apabila kaki pendek a = 5.",
           "steps": [
-            "\\text{long leg} = a \\times \\sqrt{3}",
-            "\\text{long leg} = 5 \\times \\sqrt{3}",
-            "\\text{long leg} \\approx 8.660",
+            "\\text{kaki panjang} = a \\times \\sqrt{3}",
+            "\\text{kaki panjang} = 5 \\times \\sqrt{3}",
+            "\\text{kaki panjang} \\approx 8.660",
             "c = 2a",
             "c = 2 \\times 5",
             "c = 10"
@@ -5828,10 +5828,10 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Contoh 3: Cari kaki panjang dari hipotenus c = 10.",
           "steps": [
-            "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+            "\\text{kaki panjang} = \\frac{c \\times \\sqrt{3}}{2}",
             "\\text{long leg} = \\frac{10 \\times \\sqrt{3}}{2}",
-            "\\text{long leg} = 5\\sqrt{3}",
-            "\\text{long leg} \\approx 8.660"
+            "\\text{kaki panjang} = 5\\sqrt{3}",
+            "\\text{kaki panjang} \\approx 8.660"
           ]
         }
       ],
@@ -6320,13 +6320,13 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
       "calculatorNote": "Wszystkie wartości wejściowe muszą być większe niż 0.",
       "formulaSection": {
         "formulas": [
-          "\\text{long leg} = a \\times \\sqrt{3}",
+          "\\text{dłuższa przyprostokątna} = a \\times \\sqrt{3}",
           "c = 2a",
           "a = \\frac{c}{2}",
           "a = \\frac{\\text{long leg}}{\\sqrt{3}}",
-          "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+          "\\text{dłuższa przyprostokątna} = \\frac{c \\times \\sqrt{3}}{2}",
           "\\text{Area} = \\frac{\\text{short leg} \\times \\text{long leg}}{2}",
-          "P = \\text{short leg} + \\text{long leg} + c"
+          "P = \\text{krótsza przyprostokątna} + \\text{dłuższa przyprostokątna} + c"
         ]
       },
       "diagram": {
@@ -6348,9 +6348,9 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Przykład 1: Znajdź długą nogę i przeciwprostokątną, gdy krótsza przyprostokątna a = 5.",
           "steps": [
-            "\\text{long leg} = a \\times \\sqrt{3}",
-            "\\text{long leg} = 5 \\times \\sqrt{3}",
-            "\\text{long leg} \\approx 8.660",
+            "\\text{dłuższa przyprostokątna} = a \\times \\sqrt{3}",
+            "\\text{dłuższa przyprostokątna} = 5 \\times \\sqrt{3}",
+            "\\text{dłuższa przyprostokątna} \\approx 8.660",
             "c = 2a",
             "c = 2 \\times 5",
             "c = 10"
@@ -6367,10 +6367,10 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Przykład 3: Znajdź długą nogę na podstawie przeciwprostokątnej c = 10.",
           "steps": [
-            "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+            "\\text{dłuższa przyprostokątna} = \\frac{c \\times \\sqrt{3}}{2}",
             "\\text{long leg} = \\frac{10 \\times \\sqrt{3}}{2}",
-            "\\text{long leg} = 5\\sqrt{3}",
-            "\\text{long leg} \\approx 8.660"
+            "\\text{dłuższa przyprostokątna} = 5\\sqrt{3}",
+            "\\text{dłuższa przyprostokątna} \\approx 8.660"
           ]
         }
       ],
@@ -6859,13 +6859,13 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
       "calculatorNote": "Semua nilai masukan harus lebih besar dari 0.",
       "formulaSection": {
         "formulas": [
-          "\\text{long leg} = a \\times \\sqrt{3}",
+          "\\text{kaki panjang} = a \\times \\sqrt{3}",
           "c = 2a",
           "a = \\frac{c}{2}",
           "a = \\frac{\\text{long leg}}{\\sqrt{3}}",
-          "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+          "\\text{kaki panjang} = \\frac{c \\times \\sqrt{3}}{2}",
           "\\text{Area} = \\frac{\\text{short leg} \\times \\text{long leg}}{2}",
-          "P = \\text{short leg} + \\text{long leg} + c"
+          "P = \\text{kaki pendek} + \\text{kaki panjang} + c"
         ]
       },
       "diagram": {
@@ -6887,9 +6887,9 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Contoh 1: Carilah kaki panjang dan sisi miring jika kaki pendek a = 5.",
           "steps": [
-            "\\text{long leg} = a \\times \\sqrt{3}",
-            "\\text{long leg} = 5 \\times \\sqrt{3}",
-            "\\text{long leg} \\approx 8.660",
+            "\\text{kaki panjang} = a \\times \\sqrt{3}",
+            "\\text{kaki panjang} = 5 \\times \\sqrt{3}",
+            "\\text{kaki panjang} \\approx 8.660",
             "c = 2a",
             "c = 2 \\times 5",
             "c = 10"
@@ -6906,10 +6906,10 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Contoh 3: Carilah panjang kaki dari sisi miring c = 10.",
           "steps": [
-            "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+            "\\text{kaki panjang} = \\frac{c \\times \\sqrt{3}}{2}",
             "\\text{long leg} = \\frac{10 \\times \\sqrt{3}}{2}",
-            "\\text{long leg} = 5\\sqrt{3}",
-            "\\text{long leg} \\approx 8.660"
+            "\\text{kaki panjang} = 5\\sqrt{3}",
+            "\\text{kaki panjang} \\approx 8.660"
           ]
         }
       ],
@@ -7398,13 +7398,13 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
       "calculatorNote": "يجب أن تكون جميع قيم الإدخال أكبر من 0.",
       "formulaSection": {
         "formulas": [
-          "\\text{long leg} = a \\times \\sqrt{3}",
+          "\\text{القائمة الطويلة} = a \\times \\sqrt{3}",
           "c = 2a",
           "a = \\frac{c}{2}",
           "a = \\frac{\\text{long leg}}{\\sqrt{3}}",
-          "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+          "\\text{القائمة الطويلة} = \\frac{c \\times \\sqrt{3}}{2}",
           "\\text{Area} = \\frac{\\text{short leg} \\times \\text{long leg}}{2}",
-          "P = \\text{short leg} + \\text{long leg} + c"
+          "P = \\text{القائمة القصيرة} + \\text{القائمة الطويلة} + c"
         ]
       },
       "diagram": {
@@ -7426,9 +7426,9 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "مثال 1: أوجد الساق الطويلة والوتر عندما تكون الساق القصيرة a = 5.",
           "steps": [
-            "\\text{long leg} = a \\times \\sqrt{3}",
-            "\\text{long leg} = 5 \\times \\sqrt{3}",
-            "\\text{long leg} \\approx 8.660",
+            "\\text{القائمة الطويلة} = a \\times \\sqrt{3}",
+            "\\text{القائمة الطويلة} = 5 \\times \\sqrt{3}",
+            "\\text{القائمة الطويلة} \\approx 8.660",
             "c = 2a",
             "c = 2 \\times 5",
             "c = 10"
@@ -7445,10 +7445,10 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "مثال 3: أوجد الساق الطويلة من الوتر ج = 10.",
           "steps": [
-            "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+            "\\text{القائمة الطويلة} = \\frac{c \\times \\sqrt{3}}{2}",
             "\\text{long leg} = \\frac{10 \\times \\sqrt{3}}{2}",
-            "\\text{long leg} = 5\\sqrt{3}",
-            "\\text{long leg} \\approx 8.660"
+            "\\text{القائمة الطويلة} = 5\\sqrt{3}",
+            "\\text{القائمة الطويلة} \\approx 8.660"
           ]
         }
       ],
@@ -7937,13 +7937,13 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
       "calculatorNote": "Всички входни стойности трябва да са по-големи от 0.",
       "formulaSection": {
         "formulas": [
-          "\\text{long leg} = a \\times \\sqrt{3}",
+          "\\text{дълъг катет} = a \\times \\sqrt{3}",
           "c = 2a",
           "a = \\frac{c}{2}",
           "a = \\frac{\\text{long leg}}{\\sqrt{3}}",
-          "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+          "\\text{дълъг катет} = \\frac{c \\times \\sqrt{3}}{2}",
           "\\text{Area} = \\frac{\\text{short leg} \\times \\text{long leg}}{2}",
-          "P = \\text{short leg} + \\text{long leg} + c"
+          "P = \\text{къс катет} + \\text{дълъг катет} + c"
         ]
       },
       "diagram": {
@@ -7965,9 +7965,9 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Пример 1: Намерете дълъг катет и хипотенуза, когато къс катет a = 5.",
           "steps": [
-            "\\text{long leg} = a \\times \\sqrt{3}",
-            "\\text{long leg} = 5 \\times \\sqrt{3}",
-            "\\text{long leg} \\approx 8.660",
+            "\\text{дълъг катет} = a \\times \\sqrt{3}",
+            "\\text{дълъг катет} = 5 \\times \\sqrt{3}",
+            "\\text{дълъг катет} \\approx 8.660",
             "c = 2a",
             "c = 2 \\times 5",
             "c = 10"
@@ -7984,10 +7984,10 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Пример 3: Намерете дълъг крак от хипотенузата c = 10.",
           "steps": [
-            "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+            "\\text{дълъг катет} = \\frac{c \\times \\sqrt{3}}{2}",
             "\\text{long leg} = \\frac{10 \\times \\sqrt{3}}{2}",
-            "\\text{long leg} = 5\\sqrt{3}",
-            "\\text{long leg} \\approx 8.660"
+            "\\text{дълъг катет} = 5\\sqrt{3}",
+            "\\text{дълъг катет} \\approx 8.660"
           ]
         }
       ],
@@ -8476,13 +8476,13 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
       "calculatorNote": "Tüm giriş değerleri 0'dan büyük olmalıdır.",
       "formulaSection": {
         "formulas": [
-          "\\text{long leg} = a \\times \\sqrt{3}",
+          "\\text{uzun kenar} = a \\times \\sqrt{3}",
           "c = 2a",
           "a = \\frac{c}{2}",
           "a = \\frac{\\text{long leg}}{\\sqrt{3}}",
-          "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+          "\\text{uzun kenar} = \\frac{c \\times \\sqrt{3}}{2}",
           "\\text{Area} = \\frac{\\text{short leg} \\times \\text{long leg}}{2}",
-          "P = \\text{short leg} + \\text{long leg} + c"
+          "P = \\text{kısa kenar} + \\text{uzun kenar} + c"
         ]
       },
       "diagram": {
@@ -8504,9 +8504,9 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Örnek 1: Kısa kenar a = 5 olduğunda uzun kenarı ve hipotenüsü bulun.",
           "steps": [
-            "\\text{long leg} = a \\times \\sqrt{3}",
-            "\\text{long leg} = 5 \\times \\sqrt{3}",
-            "\\text{long leg} \\approx 8.660",
+            "\\text{uzun kenar} = a \\times \\sqrt{3}",
+            "\\text{uzun kenar} = 5 \\times \\sqrt{3}",
+            "\\text{uzun kenar} \\approx 8.660",
             "c = 2a",
             "c = 2 \\times 5",
             "c = 10"
@@ -8523,10 +8523,10 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Örnek 3: Hipotenüs c = 10'dan uzun kenarı bulun.",
           "steps": [
-            "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+            "\\text{uzun kenar} = \\frac{c \\times \\sqrt{3}}{2}",
             "\\text{long leg} = \\frac{10 \\times \\sqrt{3}}{2}",
-            "\\text{long leg} = 5\\sqrt{3}",
-            "\\text{long leg} \\approx 8.660"
+            "\\text{uzun kenar} = 5\\sqrt{3}",
+            "\\text{uzun kenar} \\approx 8.660"
           ]
         }
       ],
@@ -9015,13 +9015,13 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
       "calculatorNote": "Alla ingångsvärden måste vara större än 0.",
       "formulaSection": {
         "formulas": [
-          "\\text{long leg} = a \\times \\sqrt{3}",
+          "\\text{lång katet} = a \\times \\sqrt{3}",
           "c = 2a",
           "a = \\frac{c}{2}",
           "a = \\frac{\\text{long leg}}{\\sqrt{3}}",
-          "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+          "\\text{lång katet} = \\frac{c \\times \\sqrt{3}}{2}",
           "\\text{Area} = \\frac{\\text{short leg} \\times \\text{long leg}}{2}",
-          "P = \\text{short leg} + \\text{long leg} + c"
+          "P = \\text{kort katet} + \\text{lång katet} + c"
         ]
       },
       "diagram": {
@@ -9043,9 +9043,9 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Exempel 1: Hitta långt ben och hypotenusa när kort ben a = 5.",
           "steps": [
-            "\\text{long leg} = a \\times \\sqrt{3}",
-            "\\text{long leg} = 5 \\times \\sqrt{3}",
-            "\\text{long leg} \\approx 8.660",
+            "\\text{lång katet} = a \\times \\sqrt{3}",
+            "\\text{lång katet} = 5 \\times \\sqrt{3}",
+            "\\text{lång katet} \\approx 8.660",
             "c = 2a",
             "c = 2 \\times 5",
             "c = 10"
@@ -9062,10 +9062,10 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "Exempel 3: Hitta långt ben från hypotenusan c = 10.",
           "steps": [
-            "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+            "\\text{lång katet} = \\frac{c \\times \\sqrt{3}}{2}",
             "\\text{long leg} = \\frac{10 \\times \\sqrt{3}}{2}",
-            "\\text{long leg} = 5\\sqrt{3}",
-            "\\text{long leg} \\approx 8.660"
+            "\\text{lång katet} = 5\\sqrt{3}",
+            "\\text{lång katet} \\approx 8.660"
           ]
         }
       ],
@@ -9554,13 +9554,13 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
       "calculatorNote": "所有输入值必须大于 0。",
       "formulaSection": {
         "formulas": [
-          "\\text{long leg} = a \\times \\sqrt{3}",
+          "\\text{长直角边} = a \\times \\sqrt{3}",
           "c = 2a",
           "a = \\frac{c}{2}",
           "a = \\frac{\\text{long leg}}{\\sqrt{3}}",
-          "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+          "\\text{长直角边} = \\frac{c \\times \\sqrt{3}}{2}",
           "\\text{Area} = \\frac{\\text{short leg} \\times \\text{long leg}}{2}",
-          "P = \\text{short leg} + \\text{long leg} + c"
+          "P = \\text{短直角边} + \\text{长直角边} + c"
         ]
       },
       "diagram": {
@@ -9582,9 +9582,9 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "示例 1：当短边 a = 5 时，求长边和斜边。",
           "steps": [
-            "\\text{long leg} = a \\times \\sqrt{3}",
-            "\\text{long leg} = 5 \\times \\sqrt{3}",
-            "\\text{long leg} \\approx 8.660",
+            "\\text{长直角边} = a \\times \\sqrt{3}",
+            "\\text{长直角边} = 5 \\times \\sqrt{3}",
+            "\\text{长直角边} \\approx 8.660",
             "c = 2a",
             "c = 2 \\times 5",
             "c = 10"
@@ -9601,10 +9601,10 @@ const FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_TRANSLATIONS: Partial<Record<Locale, R
         {
           "title": "示例 3：从斜边 c = 10 找出长边。",
           "steps": [
-            "\\text{long leg} = \\frac{c \\times \\sqrt{3}}{2}",
+            "\\text{长直角边} = \\frac{c \\times \\sqrt{3}}{2}",
             "\\text{long leg} = \\frac{10 \\times \\sqrt{3}}{2}",
-            "\\text{long leg} = 5\\sqrt{3}",
-            "\\text{long leg} \\approx 8.660"
+            "\\text{长直角边} = 5\\sqrt{3}",
+            "\\text{长直角边} \\approx 8.660"
           ]
         }
       ],

@@ -66,12 +66,12 @@
           "description": "Noga b jest drugą stroną kąta prostego i jest dodawana razem z a i c."
         },
         "c": {
-          "label": "c = hypotenuse",
+          "label": "c = przeciwprostokątna",
           "description": "Przeciwprostokątna c jest najdłuższym bokiem, przeciwległym do kąta prostego i uzupełnia granicę."
         }
       },
       "result": {
-        "label": "P = total boundary length",
+        "label": "P = całkowita długość granicy",
         "description": "Kalkulator dodaje a + b + c i zwraca obwód w wybranej jednostce liniowej."
       },
       "notes": [
@@ -401,12 +401,12 @@
           "description": "Noga b tworzy kąt prosty z a i ma udział zarówno w obwodzie, jak i pół obwodzie."
         },
         "c": {
-          "label": "c = hypotenuse",
+          "label": "c = przeciwprostokątna",
           "description": "Przeciwprostokątna c jest najdłuższym bokiem i należy ją uwzględnić, zanim suma zostanie zmniejszona o połowę."
         }
       },
       "result": {
-        "label": "s = half of the boundary total",
+        "label": "s = połowa całkowitej długości granicy",
         "description": "Kalkulator najpierw dodaje a + b + c, a następnie dzieli ten obwód przez 2."
       },
       "notes": [

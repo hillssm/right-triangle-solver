@@ -106,7 +106,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "सबसे लंबी भुजा को कर्ण c के रूप में पहचानें।",
           "तीनों मापों को एक ही इकाई में रखें।",
           "a, b और c को कैलकुलेटर में दर्ज करें।",
-          "गणना करें और P = a + b + c वाला परिणाम देखें।"
+          "गणना करें और P = a + b + c वाला परिणाम देखें।",
+          "Calculate पर क्लिक करें। <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> तीनों मानों को जोड़ता है और चरण-दर-चरण कार्य के साथ परिमाप P प्रदर्शित करता है।",
+          "आरेख में परिणाम की समीक्षा करके दृष्टिगत रूप से पुष्टि करें कि <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजाओं की लंबाई</a> आपके त्रिभुज से मेल खाती है।"
         ]
       },
       "example": {
@@ -124,13 +126,15 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "h2": "परिधि क्या बताती है?",
           "paragraphs": [
             "समकोण त्रिभुज की परिधि उसके बाहरी किनारे की कुल लंबाई है। अगर आप त्रिभुज की सीमा पर चलें, तो तय की गई पूरी दूरी ही परिधि है।",
-            "यह मान तब काम आता है जब आपको किनारे की लंबाई, बाड़, बॉर्डर, फ्रेम या किसी ज्यामिति प्रश्न में कुल सीमा चाहिए।"
+            "यह मान तब काम आता है जब आपको किनारे की लंबाई, बाड़, बॉर्डर, फ्रेम या किसी ज्यामिति प्रश्न में कुल सीमा चाहिए।",
+            "परिमाप एक एक-विमीय माप है जो रैखिक इकाइयों (जैसे सेंटीमीटर, मीटर, फीट या इंच) में व्यक्त किया जाता है। यह <a href=\"/right-triangle-area-calculator/\" class=\"text-primary hover:underline\">क्षेत्रफल</a> से भिन्न है, जो त्रिभुज के अंदर के द्वि-विमीय स्थान को मापता है और वर्ग इकाइयों में व्यक्त किया जाता है।"
           ]
         },
         {
           "h2": "भुजाओं को सही पहचानें",
           "paragraphs": [
-            "गणना शुरू करने से पहले यह देख लें कि कौन-सी भुजाएँ a, b और c हैं। गलत भुजा को कर्ण मानने से उत्तर गलत हो सकता है।"
+            "गणना शुरू करने से पहले यह देख लें कि कौन-सी भुजाएँ a, b और c हैं। गलत भुजा को कर्ण मानने से उत्तर गलत हो सकता है।",
+            "मानक नामकरण परिपाटी में, सम<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> बनाने वाली दो भुजाओं को भुजाएँ कहा जाता है। समकोण के सम्मुख <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a> को कर्ण कहा जाता है। कर्ण हमेशा प्रत्येक भुजा से अलग-अलग लंबा होता है, लेकिन हमेशा दोनों भुजाओं के योग से छोटा होता है।"
           ],
           "listTitle": "सरल पहचान:",
           "listItems": [
@@ -143,7 +147,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "h2": "अगर एक भुजा गायब हो",
           "paragraphs": [
-            "यह पेज तब सबसे अच्छा काम करता है जब a, b और c तीनों मौजूद हों। यदि एक भुजा नहीं है, तो पहले पाइथागोरस प्रमेय से उसे निकालें और फिर परिधि जोड़ें।"
+            "यह पेज तब सबसे अच्छा काम करता है जब a, b और c तीनों मौजूद हों। यदि एक भुजा नहीं है, तो पहले पाइथागोरस प्रमेय से उसे निकालें और फिर परिधि जोड़ें।",
+            "किसी व्युत्पत्ति या पुनर्व्यवस्था की आवश्यकता नहीं है क्योंकि यह सूत्र परिमाप माप का सबसे सरल संभव मामला है। हालाँकि, सूत्र तब और दिलचस्प हो जाता है जब केवल दो भुजाएँ ज्ञात हों, क्योंकि आप <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">पाइथागोरस प्रमेय</a> का उपयोग करके अज्ञात तीसरी <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a> ज्ञात कर सकते हैं और फिर परिमाप की गणना कर सकते हैं।"
           ],
           "listTitle": "आम स्थिति:",
           "listItems": [
@@ -156,13 +161,15 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "h2": "छोटे उदाहरण",
           "paragraphs": [
-            "नीचे कुछ सामान्य समकोण त्रिभुजों की परिधि दी गई है। तरीका हर बार वही है: तीनों भुजाएँ जोड़ें।"
+            "नीचे कुछ सामान्य समकोण त्रिभुजों की परिधि दी गई है। तरीका हर बार वही है: तीनों भुजाएँ जोड़ें।",
+            "यह दृष्टिकोण आपको दो सबसे सामान्य परिदृश्यों के साथ काम करने देता है: दोनों भुजाएँ ज्ञात होना लेकिन कर्ण नहीं, या कर्ण और एक भुजा ज्ञात होना लेकिन दूसरी नहीं।"
           ],
           "listTitle": "त्वरित अभ्यास:",
           "listItems": [
             "5-12-13 त्रिभुज: P = 5 + 12 + 13 = 30",
             "8-15-17 त्रिभुज: P = 8 + 15 + 17 = 40",
-            "2.5-6-6.5 त्रिभुज: P = 2.5 + 6 + 6.5 = 15"
+            "2.5-6-6.5 त्रिभुज: P = 2.5 + 6 + 6.5 = 15",
+            "हमेशा सत्यापित करें कि घटाव रूप का उपयोग करते समय c > a और c > b हो, अन्यथा मान एक मान्य समकोण त्रिभुज नहीं बनाते।"
           ]
         },
         {
@@ -174,9 +181,107 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listItems": [
             "तीनों भुजाएँ एक ही इकाई में हैं।",
             "कर्ण c सबसे लंबी भुजा है।",
-            "परिधि और क्षेत्रफल को अलग रखें: P = a + b + c, जबकि A = a × b / 2।",
-            "उत्तर में वर्ग इकाई नहीं लगाएँ।",
-            "अर्धपरिधि चाहिए तो s = P / 2 का उपयोग करें।"
+            "परिधि और क्षेत्रफल को अलग रखें: P = a + b + c, जबकि A = a × b / 2।"
+          ]
+        },
+        {
+          "h2": "उदाहरण 2 — 8-15-17 त्रिभुज",
+          "paragraphs": [
+            "दिया है: a = 8, b = 15, c = 17। यह एक और <a href=\"/pythagorean-triples-calculator/\" class=\"text-primary hover:underline\">पाइथागोरस त्रिक</a> है जहाँ सभी भुजाएँ पूर्ण संख्याएँ हैं।"
+          ],
+          "listItems": [
+            "P = 8 + 15 + 17 = 40 इकाई",
+            "सत्यापन: 8² + 15² = 64 + 225 = 289 = 17² ✓",
+            "यह त्रिक निर्माण लेआउट में उपयोगी है जहाँ 40-इकाई बाड़ या ट्रिम लंबाई की आवश्यकता होती है।"
+          ]
+        },
+        {
+          "h2": "उदाहरण 3 — दशमलव भुजाएँ",
+          "paragraphs": [
+            "सभी समकोण त्रिभुजों की भुजाएँ सुंदर पूर्ण संख्याएँ नहीं होतीं। दिया है: a = 2.5, b = 6, c = 6.5।"
+          ],
+          "listItems": [
+            "P = 2.5 + 6 + 6.5 = 15 इकाई",
+            "सत्यापन: 2.5² + 6² = 6.25 + 36 = 42.25 = 6.5² ✓",
+            "दशमलव मान उसी तरह काम करते हैं — बस उन्हें सीधे जोड़ें।"
+          ]
+        },
+        {
+          "h2": "परिमाप बनाम क्षेत्रफल: अंतर क्या है?",
+          "paragraphs": [
+            "परिमाप और <a href=\"/right-triangle-area-calculator/\" class=\"text-primary hover:underline\">क्षेत्रफल</a> दोनों एक त्रिभुज का वर्णन करते हैं, लेकिन वे अलग-अलग चीज़ें मापते हैं। परिमाप बाहर के चारों ओर की कुल किनारा लंबाई (एक रैखिक माप) मापता है, जबकि क्षेत्रफल त्रिभुज के अंदर समाहित स्थान (एक वर्ग माप) मापता है।",
+            "भुजाओं a और b और कर्ण c वाले समकोण त्रिभुज के लिए, दो सूत्र हैं: परिमाप के लिए P = a + b + c, और <a href=\"/right-triangle-area-calculator/\" class=\"text-primary hover:underline\">क्षेत्रफल</a> के लिए A = (a × b) / 2। ध्यान दें कि <a href=\"/right-triangle-area-calculator/\" class=\"text-primary hover:underline\">क्षेत्रफल सूत्र</a> केवल दो भुजाओं का उपयोग करता है (क्योंकि वे लंबवत हैं), जबकि परिमाप सूत्र तीनों भुजाओं का उपयोग करता है।",
+            "एक सामान्य गलती दोनों को भ्रमित करना है। यदि कोई प्रश्न त्रिकोणीय भूखंड के चारों ओर बाड़ की दूरी पूछता है, तो आपको परिमाप चाहिए। यदि वह सतह कवरेज (जैसे पेंटिंग या टाइलिंग) पूछता है, तो आपको <a href=\"/right-triangle-area-calculator/\" class=\"text-primary hover:underline\">क्षेत्रफल</a> चाहिए।"
+          ]
+        },
+        {
+          "h2": "समकोण त्रिभुज परिमाप के वास्तविक-विश्व अनुप्रयोग",
+          "paragraphs": [
+            "समकोण त्रिभुज का परिमाप जानना कई व्यावहारिक स्थितियों में आवश्यक है। जब भी आपको समकोणीय त्रिकोणीय आकृति के किनारों के चारों ओर जाने वाली सामग्री को मापना, काटना या खरीदना हो, परिमाप आपको ठीक-ठीक बताता है कि कितनी सामग्री आवश्यक है।"
+          ],
+          "listTitle": "सामान्य वास्तविक-विश्व उपयोग:",
+          "listItems": [
+            "बाड़ लगाना — एक त्रिकोणीय उद्यान क्यारी या कोने वाले भूखंड को तीनों ओर बाड़ की आवश्यकता होती है। परिमाप आपको बताता है कि कितने रैखिक फीट बाड़ खरीदनी है।",
+            "ट्रिम और मोल्डिंग — एक त्रिकोणीय वास्तुशिल्प विशेषता (जैसे गैबल सिरा) को उसके किनारों के साथ ट्रिम की आवश्यकता होती है। परिमाप कुल ट्रिम लंबाई देता है।",
+            "तार और रस्सी — समकोणीय डिस्प्ले, बैनर या पाल को फ्रेम करने के लिए परिमाप के बराबर रस्सी, तार या किनारा चाहिए।",
+            "जॉगिंग और पैदल पथ — समकोणीय पार्क <a href=\"/right-triangle-area-calculator/\" class=\"text-primary hover:underline\">क्षेत्रफल</a> के चारों ओर एक त्रिकोणीय दौड़ ट्रैक या पैदल पथ की कुल दूरी परिमाप के बराबर होती है।",
+            "निर्माण लेआउट — बिल्डर यह जाँचने के लिए 3-4-5 नियम का उपयोग करते हैं कि कोई कोना वर्गाकार है या नहीं। परिमाप जानने से <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">मापों</a> को सत्यापित करने में मदद मिलती है।",
+            "शिल्प और सिलाई — त्रिकोणीय गद्दी या पेनेंट के चारों ओर बाइंडिंग, पाइपिंग या लेस के लिए परिमाप-लंबाई की सामग्री चाहिए।",
+            "मानचित्र और सर्वेक्षण गणना — सर्वेक्षक त्रिकोणीय भूमि भूखंडों को मापते हैं और सीमा विवरण तथा संपत्ति रिकॉर्ड के लिए परिमाप की आवश्यकता होती है।"
+          ]
+        },
+        {
+          "h2": "परिमाप और अर्ध-परिमाप के बीच संबंध",
+          "paragraphs": [
+            "<a href=\"/right-triangle-semiperimeter-calculator/\" class=\"text-primary hover:underline\">अर्ध-परिमाप</a> (s) ठीक <a href=\"/right-triangle-semiperimeter-calculator/\" class=\"text-primary hover:underline\">परिमाप का आधा</a> है: s = P / 2 = (a + b + c) / 2। जबकि परिमाप आपको कुल सीमा लंबाई देता है, अर्ध-परिमाप अधिक उन्नत सूत्रों में उपयोग किया जाने वाला एक सुविधाजनक मान है।",
+            "<a href=\"/right-triangle-semiperimeter-calculator/\" class=\"text-primary hover:underline\">अर्ध-परिमाप</a> <a href=\"/right-triangle-area-calculator/\" class=\"text-primary hover:underline\">त्रिभुज क्षेत्रफल</a> के लिए हीरोन के सूत्र में आता है: A = √[s(s–a)(s–b)(s–c)]। इसका उपयोग <a href=\"/right-triangle-inradius-calculator/\" class=\"text-primary hover:underline\">अंतःत्रिज्या</a> (अंतःलिखित वृत्त की <a href=\"/right-triangle-radius-calculator/\" class=\"text-primary hover:underline\">त्रिज्या</a>) की गणना के लिए भी किया जाता है: r = A / s। इसलिए परिमाप कई महत्वपूर्ण त्रिभुज गणनाओं का प्रारंभिक बिंदु है।",
+            "यदि आपने इस टूल का उपयोग करके पहले ही परिमाप की गणना कर ली है, तो आप परिणाम को केवल 2 से विभाजित करके <a href=\"/right-triangle-semiperimeter-calculator/\" class=\"text-primary hover:underline\">अर्ध-परिमाप</a> ज्ञात कर सकते हैं, या हमारे समर्पित अर्ध-परिमाप कैलकुलेटर का उपयोग कर सकते हैं।"
+          ]
+        },
+        {
+          "h2": "इकाई रूपांतरण सुझाव",
+          "paragraphs": [
+            "परिमाप परिणाम तभी अर्थपूर्ण है जब तीनों इनपुट भुजाएँ एक ही इकाई का उपयोग करें। यदि आपकी <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">माप</a> अलग-अलग इकाइयों में हैं, तो पहले उन्हें रूपांतरित करें। कैलकुलेटर में प्रत्येक इनपुट फ़ील्ड के लिए एक इकाई चयनकर्ता शामिल है जो रूपांतरणों को स्वचालित रूप से संभालता है।",
+            "याद रखें कि परिमाप एक रैखिक माप है, इसलिए रूपांतरण मानक लंबाई अनुपातों का पालन करते हैं, <a href=\"/right-triangle-area-calculator/\" class=\"text-primary hover:underline\">क्षेत्रफल</a> अनुपातों का नहीं। उदाहरण के लिए, फीट से मीटर में रूपांतरित करने के लिए, 0.3048 से गुणा करें (0.3048² से नहीं)।"
+          ],
+          "listTitle": "त्वरित रूपांतरण अनुस्मारक:",
+          "listItems": [
+            "1 inch = 2.54 cm",
+            "1 foot = 12 inches = 0.3048 m",
+            "1 yard = 3 feet = 0.9144 m",
+            "1 meter = 100 cm = 3.2808 feet",
+            "1 kilometer = 1000 m = 0.6214 miles",
+            "1 mile = 5280 feet = 1.6093 km"
+          ]
+        },
+        {
+          "h2": "परिमाप की गणना करते समय सामान्य गलतियाँ",
+          "paragraphs": [
+            "परिमाप सूत्र सरल है, लेकिन गलतियाँ फिर भी होती हैं। अधिकांश त्रुटियाँ गलत अंकगणित के बजाय गलत इनपुट से आती हैं। गणना से पहले इन मुद्दों को पकड़ने से समय बचता है और गलत उत्तर रुकते हैं।"
+          ],
+          "listTitle": "इन खतरों से सावधान रहें:",
+          "listItems": [
+            "केवल दो भुजाओं का उपयोग करना — परिमाप के लिए तीनों भुजाएँ आवश्यक हैं। कर्ण या एक भुजा भूल जाने से अधूरा उत्तर मिलता है।",
+            "इकाइयाँ मिलाना — यदि भुजा a इंच में है और भुजा b सेंटीमीटर में है, तो योग का कोई अर्थ नहीं है। पहले एक ही इकाई में रूपांतरित करें।",
+            "<a href=\"/right-triangle-area-calculator/\" class=\"text-primary hover:underline\">क्षेत्रफल</a> के साथ परिमाप को भ्रमित करना — परिमाप एक लंबाई है (इकाइयों में मापा जाता है), जबकि क्षेत्रफल एक सतह है (वर्ग इकाइयों में मापा जाता है)। सुनिश्चित करें कि आप जानते हैं कि प्रश्न किसकी माँग कर रहा है।",
+            "ऐसी भुजाओं का उपयोग करना जो समकोण त्रिभुज नहीं बनातीं — जाँचें कि a² + b² = c²। यदि यह समीकरण सत्य नहीं है, तो त्रिभुज समकोण त्रिभुज नहीं है और c वास्तविक कर्ण नहीं है।",
+            "बहुत जल्दी पूर्णांकन करना — यदि एक <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a> अपरिमेय है (जैसे √2), तो पूर्णांकन त्रुटि जमा होने से बचने के लिए अंतिम जोड़ तक पूर्ण परिशुद्धता बनाए रखें।",
+            "कर्ण को भुजा के रूप में दर्ज करना — कर्ण सबसे लंबी <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a> होनी चाहिए। यदि आप कर्ण फ़ील्ड में छोटा मान रखते हैं, तो आरेख गलत दिखेगा और पाइथागोरस जाँच विफल हो जाएगी।"
+          ]
+        },
+        {
+          "h2": "समकोण त्रिभुज के परिमाप गुण",
+          "paragraphs": [
+            "समकोण त्रिभुजों के <a href=\"/special-right-triangle-calculator/\" class=\"text-primary hover:underline\">विशेष</a> परिमाप गुण होते हैं जो उन्हें अन्य त्रिभुजों से अलग करते हैं। इन गुणों को समझने से आपको अपनी गणनाओं को सत्यापित करने और त्रुटियाँ पकड़ने में मदद मिल सकती है।",
+            "किसी भी समकोण त्रिभुज में, कर्ण c हमेशा दोनों भुजाओं के योग (a + b) से कम होता है लेकिन अकेली किसी भी भुजा से बड़ा होता है। इसका अर्थ है कि परिमाप P हमेशा 2c से बड़ा होता है (क्योंकि a + b > c) और 2(a + b) से कम होता है, जो 2a + 2b के बराबर है।"
+          ],
+          "listTitle": "मुख्य परिमाप गुण:",
+          "listItems": [
+            "P हमेशा 2 × (सबसे लंबी <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a>) से बड़ा होता है क्योंकि अन्य दो भुजाएँ अतिरिक्त लंबाई जोड़ती हैं।",
+            "P हमेशा 3 × (सबसे लंबी <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a>) से कम होता है क्योंकि c > a और c > b है, इसलिए a + b < 2c।",
+            "k लंबाई की भुजाओं वाले <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90 त्रिभुज</a> के लिए, P = k + k + k√2 = k(2 + √2) ≈ 3.414k।",
+            "सबसे छोटी भुजा k वाले <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90 त्रिभुज</a> के लिए, P = k + k√3 + 2k = k(3 + √3) ≈ 4.732k।",
+            "समान कर्ण वाले सभी समकोण त्रिभुजों में, <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">समद्विबाहु समकोण त्रिभुज</a> (45-45-90) का परिमाप सबसे बड़ा होता है।"
           ]
         }
       ],
@@ -230,6 +335,18 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "question": "परिधि और अर्धपरिधि में क्या संबंध है?",
           "answer": "अर्धपरिधि परिधि का आधा भाग है। यदि P = 12 है, तो s = P / 2 = 6 है।"
+        },
+        {
+          "question": "परिमाप और अर्ध-परिमाप के बीच क्या संबंध है?",
+          "answer": "<a href=\"/right-triangle-semiperimeter-calculator/\" class=\"text-primary hover:underline\">अर्ध-परिमाप</a> ठीक <a href=\"/right-triangle-semiperimeter-calculator/\" class=\"text-primary hover:underline\">परिमाप का आधा</a> है: s = P/2। यदि परिमाप P = 12 है, तो अर्ध-परिमाप s = 6 है। अर्ध-परिमाप का उपयोग हीरोन के सूत्र और <a href=\"/right-triangle-inradius-calculator/\" class=\"text-primary hover:underline\">अंतःत्रिज्या</a> गणनाओं में किया जाता है।"
+        },
+        {
+          "question": "क्या समकोण त्रिभुज का परिमाप विषम संख्या हो सकता है?",
+          "answer": "हाँ। परिमाप कोई भी धनात्मक संख्या हो सकती है, पूर्णांक, दशमलव या अपरिमेय। उदाहरण के लिए, 1 और 1 भुजाओं वाले समकोण त्रिभुज का कर्ण √2 ≈ 1.414 है, जिससे परिमाप ≈ 3.414 मिलता है, जो न तो पूर्णांक है न परिमेय।"
+        },
+        {
+          "question": "कर्ण हमेशा सबसे लंबी भुजा क्यों होती है?",
+          "answer": "समकोण त्रिभुज में, कर्ण सबसे बड़े <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> (90°) के सम्मुख होता है। ज्यामिति का एक मौलिक नियम है कि सबसे लंबी <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a> हमेशा सबसे बड़े कोण के सम्मुख होती है। चूँकि त्रिभुज का कोई कोण समकोण से बड़ा नहीं हो सकता, c हमेशा सबसे लंबी भुजा होती है।"
         }
       ]
     },
@@ -300,12 +417,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "description": "पैर बी, ए के साथ समकोण बनाता है और परिधि और अर्धपरिधि दोनों में योगदान देता है।"
           },
           "c": {
-            "label": "c = hypotenuse",
+            "label": "c = कर्ण",
             "description": "कर्ण c सबसे लंबी भुजा है और योग को आधा करने से पहले इसे शामिल किया जाना चाहिए।"
           }
         },
         "result": {
-          "label": "s = half of the boundary total",
+          "label": "s = सीमा कुल का आधा",
           "description": "कैलकुलेटर पहले a + b + c जोड़ता है, फिर उस परिधि को 2 से विभाजित करता है।"
         },
         "notes": [
@@ -502,8 +619,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
-          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
-        },
+          "label": "अंतःत्रिज्या और अर्ध-परिमाप से समकोण त्रिभुज क्षेत्रफल कैलकुलेटर"
+        }
       ],
       "faqs": [
         {
@@ -537,6 +654,401 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "question": "मैं कैसे जांच सकता हूं कि मेरा सेमीपरिमीटर उत्तर सही है?",
           "answer": "अर्धपरिधि को दोगुना करें. परिणाम पूर्ण परिधि के बराबर होना चाहिए. उदाहरण के लिए, यदि s = 15, तो P 30 होना चाहिए।"
+        }
+      ]
+    },
+    "right-triangle-area-from-leg-and-angle-calculator": {
+      "slug": "right-triangle-area-from-leg-and-angle-calculator",
+      "url": "/right-triangle-area-from-leg-and-angle-calculator/",
+      "h1": "भुजा और कोण से समकोण त्रिभुज क्षेत्रफल",
+      "metaTitle": "भुजा और कोण से समकोण त्रिभुज क्षेत्रफल कैलकुलेटर | क्षेत्रफल ज्ञात करें",
+      "metaDescription": "एक भुजा और एक कोण से समकोण त्रिभुज का क्षेत्रफल परिकलित करें। चरण-दर-चरण समाधानों के साथ साइन और कोसाइन क्षेत्रफल सूत्रों का उपयोग करता है।",
+      "formulaSlug": "area-sin-a",
+      "toolPurpose": "क्षेत्रफल की गणना त्रिकोणमितीय सूत्रों का उपयोग करके करने के लिए एक भुजा, कर्ण और अंतर्गत कोण दर्ज करें।",
+      "intro": "अपने समकोण त्रिभुज का सटीक क्षेत्रफल ज्ञात करने के लिए भुजा b, कर्ण c और कोण A दर्ज करें।",
+      "quickSummary": {
+        "h2": "यह टूल क्या हल करता है",
+        "intro": "इस कैलकुलेटर का उपयोग तब करें जब आप केवल दो भुजाएँ और अंतर्गत कोण जानते हों। यह विधि तीसरी भुजा की आवश्यकता के बिना सटीक क्षेत्रफल ज्ञात करने के लिए त्रिकोणमिति का उपयोग करती है।",
+        "cards": [
+          {
+            "label": "ज्ञात मान",
+            "value": "भुजा b, कर्ण c, और कोण A"
+          },
+          {
+            "label": "निकालता है",
+            "value": "क्षेत्रफल (A)"
+          },
+          {
+            "label": "मुख्य सूत्र",
+            "value": "A = (b × c × sin(A)) / 2"
+          },
+          {
+            "label": "उपयोगी है",
+            "value": "त्रिकोणमिति प्रश्न, सर्वेक्षण, और तीसरी भुजा अज्ञात वाले मामले"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "क्षेत्रफल",
+        "fields": [
+          {
+            "key": "b",
+            "label": "भुजा b",
+            "min": 0
+          },
+          {
+            "key": "c",
+            "label": "कर्ण c",
+            "min": 0
+          },
+          {
+            "key": "A",
+            "label": "कोण A",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "समकोण त्रिभुज आरेख: साइन से क्षेत्रफल",
+        "intro": "आरेख त्रिभुज को भुजाओं b और c के साथ दिखाता है जो अंतर्गत कोण A बनाती हैं।",
+        "caption": "साइन सूत्र का उपयोग करके समकोण त्रिभुज क्षेत्रफल।",
+        "formulaLabel": "A = 0.5 × b × c × sin(A)",
+        "keyLabel": "आरेख कुंजी",
+        "sides": {
+          "a": {
+            "label": "a = विपरीत भुजा",
+            "description": "इस गणना के लिए आवश्यक नहीं है।"
+          },
+          "b": {
+            "label": "b = संलग्न भुजा",
+            "description": "कोण बनाने वाली ज्ञात भुजाओं में से एक।"
+          },
+          "c": {
+            "label": "c = कर्ण",
+            "description": "कोण बनाने वाली दूसरी ज्ञात भुजा।"
+          }
+        },
+        "result": {
+          "label": "A = क्षेत्रफल",
+          "description": "त्रिकोणमितीय साइन का उपयोग करके परिकलित क्षेत्रफल।"
+        },
+        "notes": [
+          "सुनिश्चित करें कि कोण डिग्री में दर्ज किया गया है।",
+          "सूत्र A = 1/2 * ab * sin(C) सभी त्रिभुजों पर लागू होता है।"
+        ]
+      },
+      "formulaSection": {
+        "h2": "साइन का उपयोग करके क्षेत्रफल सूत्र",
+        "paragraphs": [
+          "जब आप किसी त्रिभुज की दो भुजाएँ और उनके बीच का कोण जानते हैं, तो आप क्षेत्रफल के लिए साइन नियम का उपयोग करके क्षेत्रफल ज्ञात कर सकते हैं: A = (1/2) * side1 * side2 * sin(angle)।",
+          "एक समकोण त्रिभुज में जहाँ आप एक भुजा, कर्ण और उनके बीच का कोण जानते हैं, यह बन जाता है A = (1/2) * b * c * sin(A)।"
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} b c \\sin(A)"
+        ]
+      },
+      "howTo": {
+        "h2": "साइन का उपयोग करके क्षेत्रफल की गणना कैसे करें",
+        "steps": [
+          "भुजा, कर्ण और अंतर्गत कोण की पहचान करें।",
+          "पहले इनपुट में भुजा b दर्ज करें।",
+          "दूसरे इनपुट में कर्ण c दर्ज करें।",
+          "तीसरे इनपुट में कोण A डिग्री में दर्ज करें।",
+          "क्षेत्रफल देखने के लिए Calculate पर क्लिक करें।"
+        ]
+      },
+      "example": {
+        "h2": "कार्यित उदाहरण: कोण का उपयोग करके क्षेत्रफल",
+        "intro": "यदि भुजा b 4 है, कर्ण c 5 है, और कोण A 36.87° है:",
+        "lines": [
+          "A = 0.5 \\times b \\times c \\times \\sin(A)",
+          "A = 0.5 \\times 4 \\times 5 \\times \\sin(36.87^\\circ)",
+          "A = 10 \\times 0.6",
+          "A = 6"
+        ],
+        "answer": "क्षेत्रफल 6 वर्ग इकाई है।"
+      },
+      "extraSections": [
+        {
+          "h2": "क्षेत्रफल के लिए त्रिकोणमिति का उपयोग क्यों करें?",
+          "paragraphs": [
+            "कभी-कभी आप त्रिभुज की तीनों भुजाओं को आसानी से नहीं माप सकते, लेकिन दो भुजाओं और उनके अंतर्गत कोण को मापना संभव होता है (जैसे भूमि सर्वेक्षण में)।",
+            "यह त्रिकोणमितीय दृष्टिकोण पाइथागोरस प्रमेय का उपयोग करके पहले अज्ञात भुजा को हल किए बिना सटीक क्षेत्रफल देता है।"
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-from-legs-calculator/",
+          "label": "भुजाओं से समकोण त्रिभुज क्षेत्रफल कैलकुलेटर"
+        },
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "समकोण त्रिभुज क्षेत्रफल कैलकुलेटर"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "यदि मैं दूसरा कोण जानता हूँ तो क्या होगा?",
+          "answer": "यदि आप इसके बजाय भुजा a और कोण B जानते हैं तो आप A = (1/2) * a * c * sin(B) का उपयोग कर सकते हैं।"
+        }
+      ]
+    },
+    "right-triangle-area-from-inradius-and-semiperimeter-calculator": {
+      "slug": "right-triangle-area-from-inradius-and-semiperimeter-calculator",
+      "url": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+      "h1": "अंतःत्रिज्या और अर्ध-परिमाप से समकोण त्रिभुज क्षेत्रफल",
+      "metaTitle": "अंतःत्रिज्या से समकोण त्रिभुज क्षेत्रफल कैलकुलेटर",
+      "metaDescription": "A = r × s का उपयोग करके अंतःत्रिज्या (r) और अर्ध-परिमाप (s) से क्षेत्रफल परिकलित करें।",
+      "formulaSlug": "area-rs",
+      "toolPurpose": "जब अंतःत्रिज्या और अर्ध-परिमाप ज्ञात हों तो समकोण त्रिभुज का कुल क्षेत्रफल परिकलित करें।",
+      "intro": "समकोण त्रिभुज क्षेत्रफल की गणना करने के लिए अंतःत्रिज्या r और अर्ध-परिमाप s दर्ज करें।",
+      "quickSummary": {
+        "h2": "यह कैलकुलेटर क्या हल करता है",
+        "intro": "यह टूल क्षेत्रफल तुरंत ज्ञात करने के लिए त्रिभुज के अंतःलिखित वृत्त और उसके अर्ध-परिमाप के बीच सुंदर संबंध का उपयोग करता है।",
+        "cards": [
+          {
+            "label": "ज्ञात मान",
+            "value": "अंतःत्रिज्या r और अर्ध-परिमाप s"
+          },
+          {
+            "label": "निकालता है",
+            "value": "क्षेत्रफल (A)"
+          },
+          {
+            "label": "मुख्य सूत्र",
+            "value": "A = r × s"
+          },
+          {
+            "label": "उपयोगी है",
+            "value": "उन्नत ज्यामिति और वृत्त प्रमेय"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "क्षेत्रफल",
+        "fields": [
+          {
+            "key": "r",
+            "label": "अंतःत्रिज्या r",
+            "min": 0
+          },
+          {
+            "key": "s",
+            "label": "अर्धपरिधि एस",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "आरेख: अंतःत्रिज्या और अर्ध-परिमाप",
+        "intro": "आरेख त्रिज्या r वाले अंतःलिखित वृत्त को दर्शाता है। पूर्ण त्रिभुज का क्षेत्रफल ठीक r गुणा अर्ध-परिमाप s होता है।",
+        "caption": "क्षेत्रफल सूत्र A = r × s.",
+        "formulaLabel": "A = r × s",
+        "keyLabel": "आरेख कुंजी",
+        "sides": {
+          "a": {
+            "label": "r = अंतःत्रिज्या",
+            "description": "अंतःलिखित वृत्त की त्रिज्या।"
+          },
+          "b": {
+            "label": "s = अर्धपरिमाप",
+            "description": "सीमा दूरी का आधा।"
+          },
+          "c": {
+            "label": "A = क्षेत्रफल",
+            "description": "कुल समाहित स्थान।"
+          }
+        },
+        "result": {
+          "label": "A = क्षेत्रफल",
+          "description": "r × s के रूप में गणना की जाती है।"
+        },
+        "notes": [
+          "r और s दोनों धनात्मक लंबाइयाँ होनी चाहिए।"
+        ]
+      },
+      "formulaSection": {
+        "h2": "क्षेत्रफल सूत्र",
+        "paragraphs": [
+          "किसी भी त्रिभुज के लिए, क्षेत्रफल अंतःत्रिज्या (r) को अर्ध-परिमाप (s) से गुणा करके ज्ञात किया जा सकता है।",
+          "यह सूत्र (A = r × s) सभी त्रिभुजों के लिए सार्वभौमिक रूप से सत्य है, केवल समकोण त्रिभुजों के लिए नहीं।"
+        ],
+        "formulas": [
+          "A = r \\times s"
+        ]
+      },
+      "howTo": {
+        "h2": "गणना कैसे करें",
+        "steps": [
+          "अंतःत्रिज्या r और अर्ध-परिमाप s की पहचान करें।",
+          "पहले फ़ील्ड में r दर्ज करें।",
+          "दूसरे फ़ील्ड में s दर्ज करें।",
+          "क्षेत्रफल प्राप्त करने के लिए उन्हें गुणा करें।"
+        ]
+      },
+      "example": {
+        "h2": "हल किया गया उदाहरण",
+        "intro": "यदि अंतःत्रिज्या 2 है और अर्ध-परिमाप 12 है (जैसे 6-8-10 त्रिभुज में):",
+        "lines": [
+          "A = r \\times s",
+          "A = 2 \\times 12",
+          "A = 24"
+        ],
+        "answer": "क्षेत्रफल 24 वर्ग इकाई है।"
+      },
+      "extraSections": [
+        {
+          "h2": "यह कहाँ से आता है?",
+          "paragraphs": [
+            "त्रिभुज को तीन छोटे त्रिभुजों में विभाजित करके, जिनमें से प्रत्येक की ऊँचाई r और आधार a, b और c हैं, उनका कुल क्षेत्रफल 0.5*a*r + 0.5*b*r + 0.5*c*r = r*(a+b+c)/2 = r*s है।"
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "क्षेत्रफल कैलकुलेटर"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "कर्ण और शीर्षलंब से समकोण त्रिभुज क्षेत्रफल कैलकुलेटर"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "क्या यह गैर-समकोण त्रिभुजों के लिए काम करता है?",
+          "answer": "हाँ, A = rs किसी भी त्रिभुज के लिए काम करता है।"
+        }
+      ]
+    },
+    "right-triangle-area-from-hypotenuse-and-altitude-calculator": {
+      "slug": "right-triangle-area-from-hypotenuse-and-altitude-calculator",
+      "url": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+      "h1": "कर्ण और शीर्षलंब से समकोण त्रिभुज क्षेत्रफल",
+      "metaTitle": "कर्ण और शीर्षलंब से समकोण त्रिभुज क्षेत्रफल",
+      "metaDescription": "कर्ण को आधार और कर्ण पर शीर्षलंब को ऊँचाई के रूप में उपयोग करके क्षेत्रफल परिकलित करें।",
+      "formulaSlug": "area-ch",
+      "toolPurpose": "जब कर्ण और कर्ण पर खींचा गया शीर्षलंब ज्ञात हो तो कुल क्षेत्रफल परिकलित करें।",
+      "intro": "क्षेत्रफल की गणना करने के लिए कर्ण c और शीर्षलंब h दर्ज करें।",
+      "quickSummary": {
+        "h2": "यह कैलकुलेटर क्या हल करता है",
+        "intro": "कर्ण को त्रिभुज के आधार के रूप में उपयोग करके क्षेत्रफल ज्ञात करता है।",
+        "cards": [
+          {
+            "label": "ज्ञात मान",
+            "value": "कर्ण c और शीर्षलंब h"
+          },
+          {
+            "label": "निकालता है",
+            "value": "क्षेत्रफल (A)"
+          },
+          {
+            "label": "मुख्य सूत्र",
+            "value": "A = (c × h) / 2"
+          },
+          {
+            "label": "उपयोगी है",
+            "value": "प्रक्षेपण समस्याएँ और वैकल्पिक आधार दृष्टिकोण"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "क्षेत्रफल",
+        "fields": [
+          {
+            "key": "c",
+            "label": "कर्ण c",
+            "min": 0
+          },
+          {
+            "key": "h",
+            "label": "ऊंचाई h",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "आरेख: कर्ण पर शीर्षलंब",
+        "intro": "आरेख समकोण त्रिभुज को घुमाकर दिखाता है ताकि कर्ण आधार के रूप में सपाट रहे।",
+        "caption": "क्षेत्रफल सूत्र A = (c × h) / 2.",
+        "formulaLabel": "A = (c × h) / 2",
+        "keyLabel": "आरेख कुंजी",
+        "sides": {
+          "a": {
+            "label": "c = कर्ण (आधार)",
+            "description": "आधार के रूप में उपयोग की गई लंबी भुजा।"
+          },
+          "b": {
+            "label": "h = लंब (ऊँचाई)",
+            "description": "कर्ण पर लंबवत ऊँचाई।"
+          },
+          "c": {
+            "label": "A = क्षेत्रफल",
+            "description": "कुल वर्ग इकाइयाँ।"
+          }
+        },
+        "result": {
+          "label": "A = क्षेत्रफल",
+          "description": "(c × h) / 2 के रूप में गणना की जाती है।"
+        },
+        "notes": [
+          "शीर्षलंब h, c/2 से कम या बराबर होना चाहिए।"
+        ]
+      },
+      "formulaSection": {
+        "h2": "क्षेत्रफल सूत्र",
+        "paragraphs": [
+          "त्रिभुज का क्षेत्रफल 1/2 × आधार × ऊँचाई होता है। यदि आप कर्ण (c) को आधार के रूप में उपयोग करते हैं, तो संगत ऊँचाई कर्ण पर शीर्षलंब (h) है।"
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} c h"
+        ]
+      },
+      "howTo": {
+        "h2": "गणना कैसे करें",
+        "steps": [
+          "कर्ण c दर्ज करें।",
+          "ऊँचाई h दर्ज करें।",
+          "गणना करें पर क्लिक करें."
+        ]
+      },
+      "example": {
+        "h2": "हल किया गया उदाहरण",
+        "intro": "यदि कर्ण 10 है और शीर्षलंब 4.8 है:",
+        "lines": [
+          "A = \\frac{1}{2} c h",
+          "A = 0.5 \\times 10 \\times 4.8",
+          "A = 24"
+        ],
+        "answer": "क्षेत्रफल 24 वर्ग इकाई है।"
+      },
+      "extraSections": [
+        {
+          "h2": "ऊँचाई की सीमाएँ",
+          "paragraphs": [
+            "किसी भी समकोण त्रिभुज में, कर्ण पर अधिकतम संभव शीर्षलंब ठीक कर्ण की लंबाई का आधा होता है। यदि h > c/2 है, तो ऐसा कोई समकोण त्रिभुज अस्तित्व में नहीं है।"
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "क्षेत्रफल कैलकुलेटर"
+        },
+        {
+          "href": "/right-triangle-altitude-calculator/",
+          "label": "ऊँचाई कैलकुलेटर"
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "अंतःत्रिज्या और अर्ध-परिमाप से समकोण त्रिभुज क्षेत्रफल कैलकुलेटर"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "क्या यह भुजाओं का उपयोग करने के समान क्षेत्रफल है?",
+          "answer": "हाँ। (a × b) / 2 हमेशा ठीक (c × h) / 2 के बराबर होता है।"
         }
       ]
     }
@@ -1146,8 +1658,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
-          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
-        },
+          "label": "Calculadora del área de un triángulo rectángulo a partir del inradio y el semiperímetro"
+        }
       ],
       "faqs": [
         {
@@ -1181,6 +1693,401 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "question": "¿Cómo puedo verificar que mi respuesta de semiperímetro sea correcta?",
           "answer": "Duplica el semiperímetro. El resultado debería equivaler al perímetro completo. Por ejemplo, si s = 15, entonces P debería ser 30."
+        }
+      ]
+    },
+    "right-triangle-area-from-leg-and-angle-calculator": {
+      "slug": "right-triangle-area-from-leg-and-angle-calculator",
+      "url": "/right-triangle-area-from-leg-and-angle-calculator/",
+      "h1": "Área de un triángulo rectángulo a partir de un cateto y un ángulo",
+      "metaTitle": "Calculadora del área de un triángulo rectángulo a partir de un cateto y un ángulo | Encontrar el área",
+      "metaDescription": "Calcula el área de un triángulo rectángulo a partir de un lado y un ángulo. Usa las fórmulas de área con seno y coseno, con soluciones paso a paso.",
+      "formulaSlug": "area-sin-a",
+      "toolPurpose": "Ingresa un cateto, la hipotenusa y el ángulo comprendido para calcular el área usando fórmulas trigonométricas.",
+      "intro": "Ingresa el cateto b, la hipotenusa c y el ángulo A para encontrar el área exacta de tu triángulo rectángulo.",
+      "quickSummary": {
+        "h2": "Qué resuelve esta herramienta",
+        "intro": "Usa esta calculadora cuando solo conoces dos lados y el ángulo comprendido. Este método usa trigonometría para encontrar el área exacta sin necesidad del tercer lado.",
+        "cards": [
+          {
+            "label": "Valores conocidos",
+            "value": "Cateto b, hipotenusa c y ángulo A"
+          },
+          {
+            "label": "Calcula",
+            "value": "Área (A)"
+          },
+          {
+            "label": "Fórmula principal",
+            "value": "A = (b × c × sin(A)) / 2"
+          },
+          {
+            "label": "Ideal para",
+            "value": "Problemas de trigonometría, topografía y casos donde falta el tercer lado"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Área",
+        "fields": [
+          {
+            "key": "b",
+            "label": "Cateto b",
+            "min": 0
+          },
+          {
+            "key": "c",
+            "label": "Hipotenusa c",
+            "min": 0
+          },
+          {
+            "key": "A",
+            "label": "ángulo A",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Diagrama del triángulo rectángulo: área a partir del seno",
+        "intro": "El diagrama muestra el triángulo con los lados b y c formando el ángulo comprendido A.",
+        "caption": "Área de un triángulo rectángulo usando la fórmula del seno.",
+        "formulaLabel": "A = 0.5 × b × c × sin(A)",
+        "keyLabel": "Leyenda del Diagrama",
+        "sides": {
+          "a": {
+            "label": "a = cateto opuesto",
+            "description": "No se requiere para este cálculo."
+          },
+          "b": {
+            "label": "b = cateto adiacente",
+            "description": "Uno de los lados conocidos que forman el ángulo."
+          },
+          "c": {
+            "label": "c = hipotenusa",
+            "description": "El otro lado conocido que forma el ángulo."
+          }
+        },
+        "result": {
+          "label": "A = Área",
+          "description": "El área calculada usando el seno trigonométrico."
+        },
+        "notes": [
+          "Asegúrate de que el ángulo esté ingresado en grados.",
+          "La fórmula A = 1/2 * ab * sin(C) se aplica a todos los triángulos."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Fórmula del área usando el seno",
+        "paragraphs": [
+          "Cuando conoces dos lados de cualquier triángulo y el ángulo comprendido entre ellos, puedes encontrar el área usando la regla del seno para el área: A = (1/2) * lado1 * lado2 * sin(ángulo).",
+          "En un triángulo rectángulo donde conoces un cateto, la hipotenusa y el ángulo comprendido entre ellos, esto se convierte en A = (1/2) * b * c * sin(A)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} b c \\sin(A)"
+        ]
+      },
+      "howTo": {
+        "h2": "Cómo calcular el área usando el seno",
+        "steps": [
+          "Identifica el cateto, la hipotenusa y el ángulo comprendido.",
+          "Ingresa el cateto b en el primer campo.",
+          "Ingresa la hipotenusa c en el segundo campo.",
+          "Ingresa el ángulo A en grados en el tercer campo.",
+          "Haz clic en Calcular para ver el área."
+        ]
+      },
+      "example": {
+        "h2": "Ejemplo resuelto: área usando un ángulo",
+        "intro": "Si el cateto b es 4, la hipotenusa c es 5 y el ángulo A es 36.87°:",
+        "lines": [
+          "A = 0.5 \\times b \\times c \\times \\sin(A)",
+          "A = 0.5 \\times 4 \\times 5 \\times \\sin(36.87^\\circ)",
+          "A = 10 \\times 0.6",
+          "A = 6"
+        ],
+        "answer": "El área es 6 unidades cuadradas."
+      },
+      "extraSections": [
+        {
+          "h2": "¿Por qué usar trigonometría para el área?",
+          "paragraphs": [
+            "A veces no puedes medir fácilmente los tres lados de un triángulo, pero sí es posible medir dos lados y su ángulo comprendido (como en la topografía de terrenos).",
+            "Este enfoque trigonométrico da el área precisa sin tener que resolver primero el lado que falta usando el teorema de Pitágoras."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-from-legs-calculator/",
+          "label": "Calculadora del área de un triángulo rectángulo a partir de los catetos"
+        },
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Calculadora del área de un triángulo rectángulo"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "¿Y si conozco el otro ángulo?",
+          "answer": "Puedes usar A = (1/2) * a * c * sin(B) si en cambio conoces el cateto a y el ángulo B."
+        }
+      ]
+    },
+    "right-triangle-area-from-inradius-and-semiperimeter-calculator": {
+      "slug": "right-triangle-area-from-inradius-and-semiperimeter-calculator",
+      "url": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+      "h1": "Área de un triángulo rectángulo a partir del inradio y el semiperímetro",
+      "metaTitle": "Calculadora del área de un triángulo rectángulo a partir del inradio",
+      "metaDescription": "Calcula el área a partir del inradio (r) y el semiperímetro (s) usando A = r × s.",
+      "formulaSlug": "area-rs",
+      "toolPurpose": "Calcula el área total de un triángulo rectángulo cuando se conocen el inradio y el semiperímetro.",
+      "intro": "Ingresa el inradio r y el semiperímetro s para calcular el área del triángulo rectángulo.",
+      "quickSummary": {
+        "h2": "Qué resuelve esta calculadora",
+        "intro": "Esta herramienta usa la elegante relación entre la circunferencia inscrita de un triángulo y su semiperímetro para encontrar el área al instante.",
+        "cards": [
+          {
+            "label": "Valores conocidos",
+            "value": "Inradio r y semiperímetro s"
+          },
+          {
+            "label": "Calcula",
+            "value": "Área (A)"
+          },
+          {
+            "label": "Fórmula principal",
+            "value": "A = r × s"
+          },
+          {
+            "label": "Ideal para",
+            "value": "Geometría avanzada y teoremas de circunferencias"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Área",
+        "fields": [
+          {
+            "key": "r",
+            "label": "inradio r",
+            "min": 0
+          },
+          {
+            "key": "s",
+            "label": "Semiperímetro s",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Diagrama: inradio y semiperímetro",
+        "intro": "El diagrama ilustra la circunferencia inscrita con radio r. El área del triángulo completo es exactamente r multiplicado por el semiperímetro s.",
+        "caption": "Fórmula del área A = r × s.",
+        "formulaLabel": "A = r × s",
+        "keyLabel": "Leyenda del Diagrama",
+        "sides": {
+          "a": {
+            "label": "r = inradio",
+            "description": "Radio de la circunferencia inscrita."
+          },
+          "b": {
+            "label": "s = semiperímetro",
+            "description": "Mitad de la distancia del contorno."
+          },
+          "c": {
+            "label": "A = área",
+            "description": "Espacio total encerrado."
+          }
+        },
+        "result": {
+          "label": "A = Área",
+          "description": "Se calcula como r × s."
+        },
+        "notes": [
+          "Tanto r como s deben ser longitudes positivas."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Fórmula del área",
+        "paragraphs": [
+          "Para cualquier triángulo, el área se puede encontrar multiplicando el inradio (r) por el semiperímetro (s).",
+          "Esta fórmula (A = r × s) es universalmente válida para todos los triángulos, no solo para los triángulos rectángulos."
+        ],
+        "formulas": [
+          "A = r \\times s"
+        ]
+      },
+      "howTo": {
+        "h2": "Cómo calcular",
+        "steps": [
+          "Identifica el inradio r y el semiperímetro s.",
+          "Ingresa r en el primer campo.",
+          "Ingresa s en el segundo campo.",
+          "Multiplícalos para obtener el área."
+        ]
+      },
+      "example": {
+        "h2": "Ejemplo resuelto",
+        "intro": "Si el inradio es 2 y el semiperímetro es 12 (como en un triángulo 6-8-10):",
+        "lines": [
+          "A = r \\times s",
+          "A = 2 \\times 12",
+          "A = 24"
+        ],
+        "answer": "El área es 24 unidades cuadradas."
+      },
+      "extraSections": [
+        {
+          "h2": "¿De dónde viene esto?",
+          "paragraphs": [
+            "Al dividir el triángulo en tres triángulos más pequeños, cada uno con altura r y bases a, b y c, su área total es 0.5*a*r + 0.5*b*r + 0.5*c*r = r*(a+b+c)/2 = r*s."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Calculadora de área"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Calculadora del área de un triángulo rectángulo a partir de la hipotenusa y la altura"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "¿Esto funciona para triángulos no rectángulos?",
+          "answer": "Sí, A = rs funciona para cualquier triángulo."
+        }
+      ]
+    },
+    "right-triangle-area-from-hypotenuse-and-altitude-calculator": {
+      "slug": "right-triangle-area-from-hypotenuse-and-altitude-calculator",
+      "url": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+      "h1": "Área de un triángulo rectángulo a partir de la hipotenusa y la altura",
+      "metaTitle": "Área de un triángulo rectángulo a partir de la hipotenusa y la altura",
+      "metaDescription": "Calcula el área usando la hipotenusa como base y la altura sobre la hipotenusa como altura.",
+      "formulaSlug": "area-ch",
+      "toolPurpose": "Calcula el área total cuando se conocen la hipotenusa y la altura trazada sobre la hipotenusa.",
+      "intro": "Ingresa la hipotenusa c y la altura h para calcular el área.",
+      "quickSummary": {
+        "h2": "Qué resuelve esta calculadora",
+        "intro": "Encuentra el área usando la hipotenusa como base del triángulo.",
+        "cards": [
+          {
+            "label": "Valores conocidos",
+            "value": "Hipotenusa c y altura h"
+          },
+          {
+            "label": "Calcula",
+            "value": "Área (A)"
+          },
+          {
+            "label": "Fórmula principal",
+            "value": "A = (c × h) / 2"
+          },
+          {
+            "label": "Ideal para",
+            "value": "Problemas de proyección y perspectivas de base alternativa"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Área",
+        "fields": [
+          {
+            "key": "c",
+            "label": "Hipotenusa c",
+            "min": 0
+          },
+          {
+            "key": "h",
+            "label": "altura h",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Diagrama: altura sobre la hipotenusa",
+        "intro": "El diagrama muestra el triángulo rectángulo girado de modo que la hipotenusa queda plana como base.",
+        "caption": "Fórmula del área A = (c × h) / 2.",
+        "formulaLabel": "A = (c × h) / 2",
+        "keyLabel": "Leyenda del Diagrama",
+        "sides": {
+          "a": {
+            "label": "c = hipotenusa (base)",
+            "description": "El lado largo usado como base."
+          },
+          "b": {
+            "label": "h = altitud (altura)",
+            "description": "Altura perpendicular a la hipotenusa."
+          },
+          "c": {
+            "label": "A = área",
+            "description": "Unidades cuadradas totales."
+          }
+        },
+        "result": {
+          "label": "A = Área",
+          "description": "Se calcula como (c × h) / 2."
+        },
+        "notes": [
+          "La altura h debe ser menor o igual que c/2."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Fórmula del área",
+        "paragraphs": [
+          "El área de un triángulo es 1/2 × base × altura. Si usas la hipotenusa (c) como base, la altura correspondiente es la altura sobre la hipotenusa (h)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} c h"
+        ]
+      },
+      "howTo": {
+        "h2": "Cómo calcular",
+        "steps": [
+          "Ingrese la hipotenusa c.",
+          "Ingrese la altitud h.",
+          "Haga clic en Calcular."
+        ]
+      },
+      "example": {
+        "h2": "Ejemplo resuelto",
+        "intro": "Si la hipotenusa es 10 y la altura es 4.8:",
+        "lines": [
+          "A = \\frac{1}{2} c h",
+          "A = 0.5 \\times 10 \\times 4.8",
+          "A = 24"
+        ],
+        "answer": "El área es 24 unidades cuadradas."
+      },
+      "extraSections": [
+        {
+          "h2": "Límites de altitud",
+          "paragraphs": [
+            "En cualquier triángulo rectángulo, la altura máxima posible sobre la hipotenusa es exactamente la mitad de la longitud de la hipotenusa. Si h > c/2, no existe tal triángulo rectángulo."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Calculadora de área"
+        },
+        {
+          "href": "/right-triangle-altitude-calculator/",
+          "label": "Calculadora de altitud"
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Calculadora del área de un triángulo rectángulo a partir del inradio y el semiperímetro"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "¿Es esta la misma área que usando los catetos?",
+          "answer": "Sí. (a × b) / 2 siempre es exactamente igual a (c × h) / 2."
         }
       ]
     }
@@ -1253,12 +2160,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "description": "Катет b - это другая сторона прямого угла, она складывается с а и с."
           },
           "c": {
-            "label": "c = hypotenuse",
+            "label": "c = гипотенуза",
             "description": "Гипотенуза c - самая длинная сторона, противолежащая прямому углу, завершающая границу."
           }
         },
         "result": {
-          "label": "P = total boundary length",
+          "label": "P = общая длина границы",
           "description": "Калькулятор складывает a + b + c и возвращает периметр в выбранной линейной единице."
         },
         "notes": [
@@ -1361,7 +2268,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "Дано: a = 8, b = 15, c = 17. Это еще одна пифагорова тройка, все стороны которой - целые числа."
           ],
           "listItems": [
-            "P = 8 + 15 + 17 = 40 units",
+            "P = 8 + 15 + 17 = 40 единиц",
             "Проверка: 8² + 15² = 64 + 225 = 289 = 17² ✓",
             "Эта тройка полезна при планировании строительства, где необходимы ограждения или обрезки длиной 40 единиц."
           ]
@@ -1516,7 +2423,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "answer": "Да. Периметром может быть любое положительное число - целое, десятичное или иррациональное. Например, прямоугольный треугольник с катетами 1 и 1 имеет гипотенузу √2 ≈ 1,414, что дает периметр ≈ 3,414, что не является ни целым, ни рациональным числом."
         },
         {
-          "question": "Why is the hypotenuse always the longest side?",
+          "question": "Почему гипотенуза всегда самая длинная сторона?",
           "answer": "В прямоугольном треугольнике гипотенуза лежит напротив большего угла (90°). Фундаментальное правило геометрии гласит: самая длинная сторона всегда противоположна наибольшему углу. Поскольку ни один угол в треугольнике не может превышать прямой угол, c всегда является самой длинной стороной."
         }
       ]
@@ -1540,7 +2447,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           },
           {
             "label": "Находки",
-            "value": "Semiperimeter s, exactly half of P"
+            "value": "Полупериметр s, ровно половина P"
           },
           {
             "label": "Основная формула",
@@ -1588,12 +2495,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "description": "Нога b образует прямой угол с a и участвует как в периметре, так и в полупериметре."
           },
           "c": {
-            "label": "c = hypotenuse",
+            "label": "c = гипотенуза",
             "description": "Гипотенуза c - самая длинная сторона, и ее необходимо включить до того, как сумма будет разделена пополам."
           }
         },
         "result": {
-          "label": "s = half of the boundary total",
+          "label": "s = половина общей длины границы",
           "description": "Калькулятор сначала складывает a + b + c, затем делит полученный периметр на 2."
         },
         "notes": [
@@ -1790,8 +2697,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
-          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
-        },
+          "label": "Калькулятор площади прямоугольного треугольника по радиусу вписанной окружности и полупериметру"
+        }
       ],
       "faqs": [
         {
@@ -1825,6 +2732,401 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "question": "Как я могу проверить правильность ответа на полупериметр?",
           "answer": "Удвойте полупериметр. Результат должен равняться полному периметру. Например, если s = 15, то P должно быть 30."
+        }
+      ]
+    },
+    "right-triangle-area-from-leg-and-angle-calculator": {
+      "slug": "right-triangle-area-from-leg-and-angle-calculator",
+      "url": "/right-triangle-area-from-leg-and-angle-calculator/",
+      "h1": "Площадь прямоугольного треугольника по катету и углу",
+      "metaTitle": "Калькулятор площади прямоугольного треугольника по катету и углу | Найти площадь",
+      "metaDescription": "Рассчитайте площадь прямоугольного треугольника по одной стороне и углу. Использует формулы площади через синус и косинус с пошаговыми решениями.",
+      "formulaSlug": "area-sin-a",
+      "toolPurpose": "Введите один катет, гипотенузу и заключённый между ними угол, чтобы рассчитать площадь с помощью тригонометрических формул.",
+      "intro": "Введите катет b, гипотенузу c и угол A, чтобы найти точную площадь вашего прямоугольного треугольника.",
+      "quickSummary": {
+        "h2": "Что решает этот инструмент",
+        "intro": "Используйте этот калькулятор, когда вы знаете только две стороны и заключённый между ними угол. Этот метод использует тригонометрию, чтобы найти точную площадь без необходимости знать третью сторону.",
+        "cards": [
+          {
+            "label": "Известные значения",
+            "value": "Катет b, гипотенуза c и угол A"
+          },
+          {
+            "label": "Находки",
+            "value": "Площадь (A)"
+          },
+          {
+            "label": "Основная формула",
+            "value": "A = (b × c × sin(A)) / 2"
+          },
+          {
+            "label": "Лучшее для",
+            "value": "Задачи по тригонометрии, геодезия и случаи, когда третья сторона неизвестна"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Площадь",
+        "fields": [
+          {
+            "key": "b",
+            "label": "Нога б",
+            "min": 0
+          },
+          {
+            "key": "c",
+            "label": "Гипотенуза c",
+            "min": 0
+          },
+          {
+            "key": "A",
+            "label": "угол A",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Схема прямоугольного треугольника: площадь через синус",
+        "intro": "На схеме показан треугольник со сторонами b и c, образующими заключённый угол A.",
+        "caption": "Площадь прямоугольного треугольника по формуле с синусом.",
+        "formulaLabel": "A = 0.5 × b × c × sin(A)",
+        "keyLabel": "Ключ к диаграмме",
+        "sides": {
+          "a": {
+            "label": "a = противолежащий катет",
+            "description": "Не требуется для этого расчёта."
+          },
+          "b": {
+            "label": "b = прилежащий катет",
+            "description": "Одна из известных сторон, образующих угол."
+          },
+          "c": {
+            "label": "c = гипотенуза",
+            "description": "Другая известная сторона, образующая угол."
+          }
+        },
+        "result": {
+          "label": "A = Площадь",
+          "description": "Площадь, вычисленная с помощью тригонометрического синуса."
+        },
+        "notes": [
+          "Убедитесь, что угол введён в градусах.",
+          "Формула A = 1/2 * ab * sin(C) применима ко всем треугольникам."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Формула площади с использованием синуса",
+        "paragraphs": [
+          "Когда вы знаете две стороны любого треугольника и угол между ними, вы можете найти площадь с помощью правила синуса для площади: A = (1/2) * сторона1 * сторона2 * sin(угол).",
+          "В прямоугольном треугольнике, где вы знаете катет, гипотенузу и угол между ними, это становится A = (1/2) * b * c * sin(A)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} b c \\sin(A)"
+        ]
+      },
+      "howTo": {
+        "h2": "Как рассчитать площадь с помощью синуса",
+        "steps": [
+          "Определите катет, гипотенузу и заключённый между ними угол.",
+          "Введите катет b в первое поле.",
+          "Введите гипотенузу c во второе поле.",
+          "Введите угол A в градусах в третье поле.",
+          "Нажмите «Рассчитать», чтобы увидеть площадь."
+        ]
+      },
+      "example": {
+        "h2": "Разобранный пример: площадь с использованием угла",
+        "intro": "Если катет b равен 4, гипотенуза c равна 5, а угол A равен 36.87°:",
+        "lines": [
+          "A = 0.5 \\times b \\times c \\times \\sin(A)",
+          "A = 0.5 \\times 4 \\times 5 \\times \\sin(36.87^\\circ)",
+          "A = 10 \\times 0.6",
+          "A = 6"
+        ],
+        "answer": "Площадь составляет 6 квадратных единиц."
+      },
+      "extraSections": [
+        {
+          "h2": "Зачем использовать тригонометрию для площади?",
+          "paragraphs": [
+            "Иногда вы не можете легко измерить все три стороны треугольника, но измерить две стороны и заключённый между ними угол возможно (например, при геодезической съёмке земли).",
+            "Этот тригонометрический подход даёт точную площадь без необходимости сначала находить недостающую сторону с помощью теоремы Пифагора."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-from-legs-calculator/",
+          "label": "Калькулятор площади прямоугольного треугольника по катетам"
+        },
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Калькулятор площади прямоугольного треугольника"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Что если я знаю другой угол?",
+          "answer": "Вы можете использовать A = (1/2) * a * c * sin(B), если вместо этого вы знаете катет a и угол B."
+        }
+      ]
+    },
+    "right-triangle-area-from-inradius-and-semiperimeter-calculator": {
+      "slug": "right-triangle-area-from-inradius-and-semiperimeter-calculator",
+      "url": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+      "h1": "Площадь прямоугольного треугольника по радиусу вписанной окружности и полупериметру",
+      "metaTitle": "Калькулятор площади прямоугольного треугольника по радиусу вписанной окружности",
+      "metaDescription": "Рассчитайте площадь по радиусу вписанной окружности (r) и полупериметру (s), используя формулу A = r × s.",
+      "formulaSlug": "area-rs",
+      "toolPurpose": "Рассчитайте общую площадь прямоугольного треугольника, когда известны радиус вписанной окружности и полупериметр.",
+      "intro": "Введите радиус вписанной окружности r и полупериметр s, чтобы рассчитать площадь прямоугольного треугольника.",
+      "quickSummary": {
+        "h2": "Что решает этот калькулятор",
+        "intro": "Этот инструмент использует изящную связь между вписанной окружностью треугольника и его полупериметром, чтобы мгновенно найти площадь.",
+        "cards": [
+          {
+            "label": "Известные значения",
+            "value": "Радиус вписанной окружности r и полупериметр s"
+          },
+          {
+            "label": "Находки",
+            "value": "Площадь (A)"
+          },
+          {
+            "label": "Основная формула",
+            "value": "A = r × s"
+          },
+          {
+            "label": "Лучшее для",
+            "value": "Продвинутая геометрия и теоремы об окружностях"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Площадь",
+        "fields": [
+          {
+            "key": "r",
+            "label": "радиус вписанной окружности r",
+            "min": 0
+          },
+          {
+            "key": "s",
+            "label": "Полупериметр с",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Схема: радиус вписанной окружности и полупериметр",
+        "intro": "На схеме показана вписанная окружность с радиусом r. Площадь всего треугольника в точности равна r, умноженному на полупериметр s.",
+        "caption": "Формула площади A = r × s.",
+        "formulaLabel": "A = r × s",
+        "keyLabel": "Ключ к диаграмме",
+        "sides": {
+          "a": {
+            "label": "r = радиус",
+            "description": "Радиус вписанной окружности."
+          },
+          "b": {
+            "label": "s = полупериметр",
+            "description": "Половина длины границы."
+          },
+          "c": {
+            "label": "A = площадь",
+            "description": "Общая замкнутая площадь."
+          }
+        },
+        "result": {
+          "label": "A = Площадь",
+          "description": "Вычисляется как r × s."
+        },
+        "notes": [
+          "И r, и s должны быть положительными длинами."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Формула площади",
+        "paragraphs": [
+          "Для любого треугольника площадь можно найти, умножив радиус вписанной окружности (r) на полупериметр (s).",
+          "Эта формула (A = r × s) универсально верна для всех треугольников, а не только для прямоугольных."
+        ],
+        "formulas": [
+          "A = r \\times s"
+        ]
+      },
+      "howTo": {
+        "h2": "Как вычислить",
+        "steps": [
+          "Определите радиус вписанной окружности r и полупериметр s.",
+          "Введите r в первое поле.",
+          "Введите s во второе поле.",
+          "Перемножьте их, чтобы получить площадь."
+        ]
+      },
+      "example": {
+        "h2": "Решённый пример",
+        "intro": "Если радиус вписанной окружности равен 2, а полупериметр равен 12 (как в треугольнике 6-8-10):",
+        "lines": [
+          "A = r \\times s",
+          "A = 2 \\times 12",
+          "A = 24"
+        ],
+        "answer": "Площадь составляет 24 квадратные единицы."
+      },
+      "extraSections": [
+        {
+          "h2": "Откуда это берётся?",
+          "paragraphs": [
+            "Разделив треугольник на три меньших треугольника, каждый с высотой r и основаниями a, b и c, их суммарная площадь равна 0.5*a*r + 0.5*b*r + 0.5*c*r = r*(a+b+c)/2 = r*s."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Калькулятор площади"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Калькулятор площади прямоугольного треугольника по гипотенузе и высоте"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Работает ли это для непрямоугольных треугольников?",
+          "answer": "Да, A = rs работает для любого треугольника."
+        }
+      ]
+    },
+    "right-triangle-area-from-hypotenuse-and-altitude-calculator": {
+      "slug": "right-triangle-area-from-hypotenuse-and-altitude-calculator",
+      "url": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+      "h1": "Площадь прямоугольного треугольника по гипотенузе и высоте",
+      "metaTitle": "Площадь прямоугольного треугольника по гипотенузе и высоте",
+      "metaDescription": "Рассчитайте площадь, используя гипотенузу как основание, а высоту, проведённую к гипотенузе, как высоту треугольника.",
+      "formulaSlug": "area-ch",
+      "toolPurpose": "Рассчитайте общую площадь, когда известны гипотенуза и высота, проведённая к гипотенузе.",
+      "intro": "Введите гипотенузу c и высоту h, чтобы рассчитать площадь.",
+      "quickSummary": {
+        "h2": "Что решает этот калькулятор",
+        "intro": "Находит площадь, используя гипотенузу как основание треугольника.",
+        "cards": [
+          {
+            "label": "Известные значения",
+            "value": "Гипотенуза c и высота h"
+          },
+          {
+            "label": "Находки",
+            "value": "Площадь (A)"
+          },
+          {
+            "label": "Основная формула",
+            "value": "A = (c × h) / 2"
+          },
+          {
+            "label": "Лучшее для",
+            "value": "Задачи на проекции и альтернативный взгляд на основание"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Площадь",
+        "fields": [
+          {
+            "key": "c",
+            "label": "Гипотенуза c",
+            "min": 0
+          },
+          {
+            "key": "h",
+            "label": "высота h",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Схема: высота к гипотенузе",
+        "intro": "На схеме показан прямоугольный треугольник, повёрнутый так, что гипотенуза лежит горизонтально как основание.",
+        "caption": "Формула площади A = (c × h) / 2.",
+        "formulaLabel": "A = (c × h) / 2",
+        "keyLabel": "Ключ к диаграмме",
+        "sides": {
+          "a": {
+            "label": "c = гипотенуза (основание)",
+            "description": "Длинная сторона, используемая как основание."
+          },
+          "b": {
+            "label": "h = высота (высота)",
+            "description": "Перпендикулярная высота к гипотенузе."
+          },
+          "c": {
+            "label": "A = площадь",
+            "description": "Общее количество квадратных единиц."
+          }
+        },
+        "result": {
+          "label": "A = Площадь",
+          "description": "Вычисляется как (c × h) / 2."
+        },
+        "notes": [
+          "Высота h должна быть меньше или равна c/2."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Формула площади",
+        "paragraphs": [
+          "Площадь треугольника равна 1/2 × основание × высота. Если вы используете гипотенузу (c) как основание, соответствующая высота — это высота, проведённая к гипотенузе (h)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} c h"
+        ]
+      },
+      "howTo": {
+        "h2": "Как вычислить",
+        "steps": [
+          "Введите гипотенузу c.",
+          "Введите высоту h.",
+          "Нажмите «Рассчитать»."
+        ]
+      },
+      "example": {
+        "h2": "Решённый пример",
+        "intro": "Если гипотенуза равна 10, а высота равна 4.8:",
+        "lines": [
+          "A = \\frac{1}{2} c h",
+          "A = 0.5 \\times 10 \\times 4.8",
+          "A = 24"
+        ],
+        "answer": "Площадь составляет 24 квадратные единицы."
+      },
+      "extraSections": [
+        {
+          "h2": "Ограничения высоты",
+          "paragraphs": [
+            "В любом прямоугольном треугольнике максимальная возможная высота, проведённая к гипотенузе, равна ровно половине длины гипотенузы. Если h > c/2, такого прямоугольного треугольника не существует."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Калькулятор площади"
+        },
+        {
+          "href": "/right-triangle-altitude-calculator/",
+          "label": "Калькулятор высоты"
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Калькулятор площади прямоугольного треугольника по радиусу вписанной окружности и полупериметру"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Это та же площадь, что и при использовании катетов?",
+          "answer": "Да. (a × b) / 2 всегда в точности равно (c × h) / 2."
         }
       ]
     }
@@ -2434,8 +3736,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
-          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
-        },
+          "label": "Calculateur d'aire d'un triangle rectangle à partir du rayon du cercle inscrit et du demi-périmètre"
+        }
       ],
       "faqs": [
         {
@@ -2469,6 +3771,401 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "question": "Comment puis-je vérifier que ma réponse pour le demi-périmètre est correcte ?",
           "answer": "Doublez le demi-périmètre. Le résultat doit être égal au périmètre complet. Par exemple, si s = 15, alors P doit être 30."
+        }
+      ]
+    },
+    "right-triangle-area-from-leg-and-angle-calculator": {
+      "slug": "right-triangle-area-from-leg-and-angle-calculator",
+      "url": "/right-triangle-area-from-leg-and-angle-calculator/",
+      "h1": "Aire d'un triangle rectangle à partir d'une cathète et d'un angle",
+      "metaTitle": "Calculateur d'aire d'un triangle rectangle à partir d'une cathète et d'un angle | Trouver l'aire",
+      "metaDescription": "Calculez l'aire d'un triangle rectangle à partir d'un côté et d'un angle. Utilise les formules d'aire avec le sinus et le cosinus, avec des solutions étape par étape.",
+      "formulaSlug": "area-sin-a",
+      "toolPurpose": "Saisissez une cathète, l'hypoténuse et l'angle compris pour calculer l'aire à l'aide de formules trigonométriques.",
+      "intro": "Saisissez la cathète b, l'hypoténuse c et l'angle A pour trouver l'aire exacte de votre triangle rectangle.",
+      "quickSummary": {
+        "h2": "Ce que cet outil résout",
+        "intro": "Utilisez ce calculateur lorsque vous ne connaissez que deux côtés et l'angle compris entre eux. Cette méthode utilise la trigonométrie pour trouver l'aire exacte sans avoir besoin du troisième côté.",
+        "cards": [
+          {
+            "label": "Valeurs connues",
+            "value": "Cathète b, hypoténuse c et angle A"
+          },
+          {
+            "label": "Trouve",
+            "value": "Aire (A)"
+          },
+          {
+            "label": "Formule principale",
+            "value": "A = (b × c × sin(A)) / 2"
+          },
+          {
+            "label": "Idéal pour",
+            "value": "Problèmes de trigonométrie, arpentage et cas où le troisième côté est manquant"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Aire",
+        "fields": [
+          {
+            "key": "b",
+            "label": "Côté b",
+            "min": 0
+          },
+          {
+            "key": "c",
+            "label": "Hypoténuse c",
+            "min": 0
+          },
+          {
+            "key": "A",
+            "label": "angle A",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Schéma d'un triangle rectangle : aire à partir du sinus",
+        "intro": "Le schéma montre le triangle avec les côtés b et c formant l'angle compris A.",
+        "caption": "Aire d'un triangle rectangle à l'aide de la formule du sinus.",
+        "formulaLabel": "A = 0.5 × b × c × sin(A)",
+        "keyLabel": "Légende du Diagramme",
+        "sides": {
+          "a": {
+            "label": "a = côté opposé",
+            "description": "Non requis pour ce calcul."
+          },
+          "b": {
+            "label": "b = côté adjacent",
+            "description": "L'un des côtés connus formant l'angle."
+          },
+          "c": {
+            "label": "c = hypoténuse",
+            "description": "L'autre côté connu formant l'angle."
+          }
+        },
+        "result": {
+          "label": "A = Aire",
+          "description": "L'aire calculée à l'aide du sinus trigonométrique."
+        },
+        "notes": [
+          "Assurez-vous que l'angle est saisi en degrés.",
+          "La formule A = 1/2 * ab * sin(C) s'applique à tous les triangles."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Formule de l'aire utilisant le sinus",
+        "paragraphs": [
+          "Lorsque vous connaissez deux côtés d'un triangle quelconque et l'angle entre eux, vous pouvez trouver l'aire à l'aide de la règle du sinus pour l'aire : A = (1/2) * side1 * side2 * sin(angle).",
+          "Dans un triangle rectangle où vous connaissez une cathète, l'hypoténuse et l'angle entre eux, cela devient A = (1/2) * b * c * sin(A)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} b c \\sin(A)"
+        ]
+      },
+      "howTo": {
+        "h2": "Comment calculer l'aire à l'aide du sinus",
+        "steps": [
+          "Identifiez la cathète, l'hypoténuse et l'angle compris.",
+          "Saisissez la cathète b dans le premier champ.",
+          "Saisissez l'hypoténuse c dans le deuxième champ.",
+          "Saisissez l'angle A en degrés dans le troisième champ.",
+          "Cliquez sur Calculer pour voir l'aire."
+        ]
+      },
+      "example": {
+        "h2": "Exemple résolu : aire à l'aide d'un angle",
+        "intro": "Si la cathète b vaut 4, l'hypoténuse c vaut 5 et l'angle A vaut 36.87° :",
+        "lines": [
+          "A = 0.5 \\times b \\times c \\times \\sin(A)",
+          "A = 0.5 \\times 4 \\times 5 \\times \\sin(36.87^\\circ)",
+          "A = 10 \\times 0.6",
+          "A = 6"
+        ],
+        "answer": "L'aire est de 6 unités carrées."
+      },
+      "extraSections": [
+        {
+          "h2": "Pourquoi utiliser la trigonométrie pour l'aire ?",
+          "paragraphs": [
+            "Parfois, on ne peut pas mesurer facilement les trois côtés d'un triangle, mais mesurer deux côtés et leur angle compris est possible (comme dans l'arpentage).",
+            "Cette approche trigonométrique donne l'aire précise sans avoir d'abord à résoudre le côté manquant à l'aide du théorème de Pythagore."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-from-legs-calculator/",
+          "label": "Calculateur d'aire d'un triangle rectangle à partir des cathètes"
+        },
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Calculateur d'aire d'un triangle rectangle"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Et si je connais l'autre angle ?",
+          "answer": "Vous pouvez utiliser A = (1/2) * a * c * sin(B) si vous connaissez la cathète a et l'angle B à la place."
+        }
+      ]
+    },
+    "right-triangle-area-from-inradius-and-semiperimeter-calculator": {
+      "slug": "right-triangle-area-from-inradius-and-semiperimeter-calculator",
+      "url": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+      "h1": "Aire d'un triangle rectangle à partir du rayon du cercle inscrit et du demi-périmètre",
+      "metaTitle": "Calculateur d'aire d'un triangle rectangle à partir du rayon du cercle inscrit",
+      "metaDescription": "Calculez l'aire à partir du rayon du cercle inscrit (r) et du demi-périmètre (s) à l'aide de A = r × s.",
+      "formulaSlug": "area-rs",
+      "toolPurpose": "Calculez l'aire totale d'un triangle rectangle lorsque le rayon du cercle inscrit et le demi-périmètre sont connus.",
+      "intro": "Saisissez le rayon du cercle inscrit r et le demi-périmètre s pour calculer l'aire du triangle rectangle.",
+      "quickSummary": {
+        "h2": "Ce que ce calculateur résout",
+        "intro": "Cet outil utilise l'élégante relation entre le cercle inscrit d'un triangle et son demi-périmètre pour trouver l'aire instantanément.",
+        "cards": [
+          {
+            "label": "Valeurs connues",
+            "value": "Rayon du cercle inscrit r et demi-périmètre s"
+          },
+          {
+            "label": "Trouve",
+            "value": "Aire (A)"
+          },
+          {
+            "label": "Formule principale",
+            "value": "A = r × s"
+          },
+          {
+            "label": "Idéal pour",
+            "value": "Géométrie avancée et théorèmes sur les cercles"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Aire",
+        "fields": [
+          {
+            "key": "r",
+            "label": "rayon inscrit r",
+            "min": 0
+          },
+          {
+            "key": "s",
+            "label": "Demi-périmètre s",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Schéma : rayon du cercle inscrit et demi-périmètre",
+        "intro": "Le schéma illustre le cercle inscrit de rayon r. L'aire du triangle complet vaut exactement r multiplié par le demi-périmètre s.",
+        "caption": "Formule de l'aire A = r × s.",
+        "formulaLabel": "A = r × s",
+        "keyLabel": "Légende du Diagramme",
+        "sides": {
+          "a": {
+            "label": "r = rayon",
+            "description": "Rayon du cercle inscrit."
+          },
+          "b": {
+            "label": "s = demi-périmètre",
+            "description": "Moitié de la distance de la limite."
+          },
+          "c": {
+            "label": "A = aire",
+            "description": "Espace total enfermé."
+          }
+        },
+        "result": {
+          "label": "A = Aire",
+          "description": "Calculé comme r × s."
+        },
+        "notes": [
+          "r et s doivent tous deux être des longueurs positives."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Formule de l'aire",
+        "paragraphs": [
+          "Pour tout triangle, l'aire peut être trouvée en multipliant le rayon du cercle inscrit (r) par le demi-périmètre (s).",
+          "Cette formule (A = r × s) est universellement vraie pour tous les triangles, pas seulement les triangles rectangles."
+        ],
+        "formulas": [
+          "A = r \\times s"
+        ]
+      },
+      "howTo": {
+        "h2": "Comment calculer",
+        "steps": [
+          "Identifiez le rayon du cercle inscrit r et le demi-périmètre s.",
+          "Saisissez r dans le premier champ.",
+          "Saisissez s dans le deuxième champ.",
+          "Multipliez-les pour obtenir l'aire."
+        ]
+      },
+      "example": {
+        "h2": "Exemple résolu",
+        "intro": "Si le rayon du cercle inscrit est 2 et le demi-périmètre est 12 (comme dans un triangle 6-8-10) :",
+        "lines": [
+          "A = r \\times s",
+          "A = 2 \\times 12",
+          "A = 24"
+        ],
+        "answer": "L'aire est de 24 unités carrées."
+      },
+      "extraSections": [
+        {
+          "h2": "D'où cela vient-il ?",
+          "paragraphs": [
+            "En divisant le triangle en trois triangles plus petits, chacun de hauteur r et de bases a, b et c, leur aire totale est 0.5*a*r + 0.5*b*r + 0.5*c*r = r*(a+b+c)/2 = r*s."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Calculatrice d'aire"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Calculateur d'aire d'un triangle rectangle à partir de l'hypoténuse et de la hauteur"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Cela fonctionne-t-il pour les triangles non rectangles ?",
+          "answer": "Oui, A = rs fonctionne pour tout triangle."
+        }
+      ]
+    },
+    "right-triangle-area-from-hypotenuse-and-altitude-calculator": {
+      "slug": "right-triangle-area-from-hypotenuse-and-altitude-calculator",
+      "url": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+      "h1": "Aire d'un triangle rectangle à partir de l'hypoténuse et de la hauteur",
+      "metaTitle": "Aire d'un triangle rectangle à partir de l'hypoténuse et de la hauteur",
+      "metaDescription": "Calculez l'aire en utilisant l'hypoténuse comme base et la hauteur relative à l'hypoténuse comme hauteur.",
+      "formulaSlug": "area-ch",
+      "toolPurpose": "Calculez l'aire totale lorsque l'hypoténuse et la hauteur abaissée sur l'hypoténuse sont connues.",
+      "intro": "Saisissez l'hypoténuse c et la hauteur h pour calculer l'aire.",
+      "quickSummary": {
+        "h2": "Ce que ce calculateur résout",
+        "intro": "Trouve l'aire en utilisant l'hypoténuse comme base du triangle.",
+        "cards": [
+          {
+            "label": "Valeurs connues",
+            "value": "Hypoténuse c et hauteur h"
+          },
+          {
+            "label": "Trouve",
+            "value": "Aire (A)"
+          },
+          {
+            "label": "Formule principale",
+            "value": "A = (c × h) / 2"
+          },
+          {
+            "label": "Idéal pour",
+            "value": "Problèmes de projection et perspectives de base alternative"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Aire",
+        "fields": [
+          {
+            "key": "c",
+            "label": "Hypoténuse c",
+            "min": 0
+          },
+          {
+            "key": "h",
+            "label": "hauteur h",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Schéma : hauteur relative à l'hypoténuse",
+        "intro": "Le schéma montre le triangle rectangle tourné de sorte que l'hypoténuse repose à plat comme base.",
+        "caption": "Formule de l'aire A = (c × h) / 2.",
+        "formulaLabel": "A = (c × h) / 2",
+        "keyLabel": "Légende du Diagramme",
+        "sides": {
+          "a": {
+            "label": "c = hypoténuse (base)",
+            "description": "Le long côté utilisé comme base."
+          },
+          "b": {
+            "label": "h = altitude (hauteur)",
+            "description": "Hauteur perpendiculaire à l'hypoténuse."
+          },
+          "c": {
+            "label": "A = aire",
+            "description": "Unités carrées totales."
+          }
+        },
+        "result": {
+          "label": "A = Aire",
+          "description": "Calculé comme (c × h) / 2."
+        },
+        "notes": [
+          "La hauteur h doit être inférieure ou égale à c/2."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Formule de l'aire",
+        "paragraphs": [
+          "L'aire d'un triangle vaut 1/2 × base × hauteur. Si vous utilisez l'hypoténuse (c) comme base, la hauteur correspondante est la hauteur relative à l'hypoténuse (h)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} c h"
+        ]
+      },
+      "howTo": {
+        "h2": "Comment calculer",
+        "steps": [
+          "Entrez l'hypoténuse c.",
+          "Entrez l'altitude h.",
+          "Cliquez sur Calculer."
+        ]
+      },
+      "example": {
+        "h2": "Exemple résolu",
+        "intro": "Si l'hypoténuse est 10 et la hauteur est 4.8 :",
+        "lines": [
+          "A = \\frac{1}{2} c h",
+          "A = 0.5 \\times 10 \\times 4.8",
+          "A = 24"
+        ],
+        "answer": "L'aire est de 24 unités carrées."
+      },
+      "extraSections": [
+        {
+          "h2": "Limites d'altitude",
+          "paragraphs": [
+            "Dans tout triangle rectangle, la hauteur maximale possible relative à l'hypoténuse vaut exactement la moitié de la longueur de l'hypoténuse. Si h > c/2, un tel triangle rectangle n'existe pas."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Calculatrice d'aire"
+        },
+        {
+          "href": "/right-triangle-altitude-calculator/",
+          "label": "Calculatrice d'altitude"
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Calculateur d'aire d'un triangle rectangle à partir du rayon du cercle inscrit et du demi-périmètre"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Est-ce la même aire qu'en utilisant les cathètes ?",
+          "answer": "Oui. (a × b) / 2 égale toujours exactement (c × h) / 2."
         }
       ]
     }
@@ -2541,12 +4238,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "description": "Der Schenkel b ist die andere Seite des rechten Winkels und wird mit a und c addiert."
           },
           "c": {
-            "label": "c = hypotenuse",
+            "label": "c = Hypotenuse",
             "description": "Hypotenuse c ist die längste Seite gegenüber dem rechten Winkel und vervollständigt die Grenze."
           }
         },
         "result": {
-          "label": "P = total boundary length",
+          "label": "P = gesamte Grenzlänge",
           "description": "Der Rechner addiert a + b + c und gibt den Umfang in der ausgewählten linearen Einheit zurück."
         },
         "notes": [
@@ -2649,7 +4346,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "Gegeben: a = 8, b = 15, c = 17. Dies ist ein weiteres pythagoräisches Tripel, bei dem alle Seiten ganze Zahlen sind."
           ],
           "listItems": [
-            "P = 8 + 15 + 17 = 40 units",
+            "P = 8 + 15 + 17 = 40 Einheiten",
             "Verifizierung: 8² + 15² = 64 + 225 = 289 = 17² ✓",
             "Dieses Dreifach ist bei Bauplänen nützlich, bei denen Zaun- oder Trimmlängen von 40 Einheiten erforderlich sind."
           ]
@@ -2876,12 +4573,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "description": "Bein b bildet mit a den rechten Winkel und trägt sowohl zum Umfang als auch zum Halbumfang bei."
           },
           "c": {
-            "label": "c = hypotenuse",
+            "label": "c = Hypotenuse",
             "description": "Hypotenuse c ist die längste Seite und muss einbezogen werden, bevor die Summe halbiert wird."
           }
         },
         "result": {
-          "label": "s = half of the boundary total",
+          "label": "s = Hälfte der gesamten Grenzlänge",
           "description": "Der Rechner addiert zunächst a + b + c und dividiert dann diesen Umfang durch 2."
         },
         "notes": [
@@ -2935,7 +4632,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           ]
         },
         {
-          "h2": "Semiperimeter vs. Perimeter",
+          "h2": "Halber Umfang vs. Umfang",
           "paragraphs": [
             "Umfang P misst die gesamte Entfernung um die Außenseite des Dreiecks. Der Halbumfang misst die Hälfte dieser Distanz. Die beiden Werte hängen direkt zusammen: s = P / 2 und P = 2s.",
             "Verwenden Sie den Umfang, wenn bei einem Problem die Gesamtlänge der Begrenzung erforderlich ist, z. B. Beschnitt, Zaun oder Randabstand. Verwenden Sie Semiperimeter, wenn eine Formel speziell nach s fragt oder wenn Sie Werte für Flächen- und Radiusbeziehungen vorbereiten."
@@ -3078,8 +4775,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
-          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
-        },
+          "label": "Rechner für den Flächeninhalt eines rechtwinkligen Dreiecks aus Inkreisradius und halbem Umfang"
+        }
       ],
       "faqs": [
         {
@@ -3113,6 +4810,401 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "question": "Wie kann ich überprüfen, ob meine Semiperimeter-Antwort korrekt ist?",
           "answer": "Verdoppeln Sie den Halbumfang. Das Ergebnis sollte dem gesamten Umfang entsprechen. Wenn beispielsweise s = 15, dann sollte P 30 sein."
+        }
+      ]
+    },
+    "right-triangle-area-from-leg-and-angle-calculator": {
+      "slug": "right-triangle-area-from-leg-and-angle-calculator",
+      "url": "/right-triangle-area-from-leg-and-angle-calculator/",
+      "h1": "Flächeninhalt eines rechtwinkligen Dreiecks aus Kathete und Winkel",
+      "metaTitle": "Rechner für den Flächeninhalt eines rechtwinkligen Dreiecks aus Kathete und Winkel | Flächeninhalt berechnen",
+      "metaDescription": "Berechnen Sie den Flächeninhalt eines rechtwinkligen Dreiecks aus einer Seite und einem Winkel. Verwendet die Sinus- und Kosinusformeln für den Flächeninhalt mit schrittweisen Lösungen.",
+      "formulaSlug": "area-sin-a",
+      "toolPurpose": "Geben Sie eine Kathete, die Hypotenuse und den eingeschlossenen Winkel ein, um den Flächeninhalt mit trigonometrischen Formeln zu berechnen.",
+      "intro": "Geben Sie Kathete b, Hypotenuse c und Winkel A ein, um den exakten Flächeninhalt Ihres rechtwinkligen Dreiecks zu bestimmen.",
+      "quickSummary": {
+        "h2": "Was dieses Werkzeug löst",
+        "intro": "Verwenden Sie diesen Rechner, wenn Sie nur zwei Seiten und den eingeschlossenen Winkel kennen. Diese Methode nutzt die Trigonometrie, um den exakten Flächeninhalt zu bestimmen, ohne die dritte Seite zu benötigen.",
+        "cards": [
+          {
+            "label": "Bekannte Werte",
+            "value": "Kathete b, Hypotenuse c und Winkel A"
+          },
+          {
+            "label": "Funde",
+            "value": "Fläche (A)"
+          },
+          {
+            "label": "Hauptformel",
+            "value": "A = (b × c × sin(A)) / 2"
+          },
+          {
+            "label": "Am besten für",
+            "value": "Trigonometrieaufgaben, Vermessung und Fälle, in denen die dritte Seite fehlt"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Flächeninhalt",
+        "fields": [
+          {
+            "key": "b",
+            "label": "Bein b",
+            "min": 0
+          },
+          {
+            "key": "c",
+            "label": "c = Hypotenuse",
+            "min": 0
+          },
+          {
+            "key": "A",
+            "label": "Winkel A",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Abbildung eines rechtwinkligen Dreiecks: Flächeninhalt aus dem Sinus",
+        "intro": "Die Abbildung zeigt das Dreieck, dessen Seiten b und c den eingeschlossenen Winkel A bilden.",
+        "caption": "Flächeninhalt eines rechtwinkligen Dreiecks mit der Sinusformel.",
+        "formulaLabel": "A = 0.5 × b × c × sin(A)",
+        "keyLabel": "Diagrammschlüssel",
+        "sides": {
+          "a": {
+            "label": "a = Gegenkathete",
+            "description": "Für diese Berechnung nicht erforderlich."
+          },
+          "b": {
+            "label": "b = Ankathete",
+            "description": "Eine der bekannten Seiten, die den Winkel bilden."
+          },
+          "c": {
+            "label": "c = Hypotenuse",
+            "description": "Die andere bekannte Seite, die den Winkel bildet."
+          }
+        },
+        "result": {
+          "label": "A = Fläche",
+          "description": "Der mit trigonometrischem Sinus berechnete Flächeninhalt."
+        },
+        "notes": [
+          "Stellen Sie sicher, dass der Winkel in Grad eingegeben wird.",
+          "Die Formel A = 1/2 * ab * sin(C) gilt für alle Dreiecke."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Flächeninhaltsformel mit Sinus",
+        "paragraphs": [
+          "Wenn Sie zwei Seiten eines beliebigen Dreiecks und den Winkel zwischen ihnen kennen, können Sie den Flächeninhalt mit der Sinusregel für den Flächeninhalt bestimmen: A = (1/2) * Seite1 * Seite2 * sin(Winkel).",
+          "In einem rechtwinkligen Dreieck, in dem Sie eine Kathete, die Hypotenuse und den Winkel zwischen ihnen kennen, wird daraus A = (1/2) * b * c * sin(A)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} b c \\sin(A)"
+        ]
+      },
+      "howTo": {
+        "h2": "So berechnen Sie den Flächeninhalt mit Sinus",
+        "steps": [
+          "Bestimmen Sie Kathete, Hypotenuse und eingeschlossenen Winkel.",
+          "Geben Sie Kathete b in das erste Eingabefeld ein.",
+          "Geben Sie Hypotenuse c in das zweite Eingabefeld ein.",
+          "Geben Sie Winkel A in Grad in das dritte Eingabefeld ein.",
+          "Klicken Sie auf Berechnen, um den Flächeninhalt zu sehen."
+        ]
+      },
+      "example": {
+        "h2": "Durchgerechnetes Beispiel: Flächeninhalt mit Winkel",
+        "intro": "Wenn Kathete b gleich 4 ist, Hypotenuse c gleich 5 und Winkel A gleich 36.87°:",
+        "lines": [
+          "A = 0.5 \\times b \\times c \\times \\sin(A)",
+          "A = 0.5 \\times 4 \\times 5 \\times \\sin(36.87^\\circ)",
+          "A = 10 \\times 0.6",
+          "A = 6"
+        ],
+        "answer": "Der Flächeninhalt beträgt 6 Quadrateinheiten."
+      },
+      "extraSections": [
+        {
+          "h2": "Warum Trigonometrie für den Flächeninhalt?",
+          "paragraphs": [
+            "Manchmal können Sie nicht alle drei Seiten eines Dreiecks einfach messen, aber zwei Seiten und ihren eingeschlossenen Winkel zu messen ist möglich (zum Beispiel bei der Landvermessung).",
+            "Dieser trigonometrische Ansatz liefert den präzisen Flächeninhalt, ohne zuerst die fehlende Seite mit dem Satz des Pythagoras lösen zu müssen."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-from-legs-calculator/",
+          "label": "Rechner für den Flächeninhalt eines rechtwinkligen Dreiecks aus den Katheten"
+        },
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Rechner für den Flächeninhalt rechtwinkliger Dreiecke"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Was ist, wenn ich den anderen Winkel kenne?",
+          "answer": "Sie können A = (1/2) * a * c * sin(B) verwenden, wenn Sie stattdessen Kathete a und Winkel B kennen."
+        }
+      ]
+    },
+    "right-triangle-area-from-inradius-and-semiperimeter-calculator": {
+      "slug": "right-triangle-area-from-inradius-and-semiperimeter-calculator",
+      "url": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+      "h1": "Flächeninhalt eines rechtwinkligen Dreiecks aus Inkreisradius und halbem Umfang",
+      "metaTitle": "Rechner für den Flächeninhalt eines rechtwinkligen Dreiecks aus dem Inkreisradius",
+      "metaDescription": "Berechnen Sie den Flächeninhalt aus dem Inkreisradius (r) und dem halben Umfang (s) mit A = r × s.",
+      "formulaSlug": "area-rs",
+      "toolPurpose": "Berechnen Sie den gesamten Flächeninhalt eines rechtwinkligen Dreiecks, wenn Inkreisradius und halber Umfang bekannt sind.",
+      "intro": "Geben Sie den Inkreisradius r und den halben Umfang s ein, um den Flächeninhalt des rechtwinkligen Dreiecks zu berechnen.",
+      "quickSummary": {
+        "h2": "Was dieser Rechner löst",
+        "intro": "Dieses Werkzeug nutzt den eleganten Zusammenhang zwischen dem einbeschriebenen Kreis eines Dreiecks und seinem halben Umfang, um den Flächeninhalt sofort zu bestimmen.",
+        "cards": [
+          {
+            "label": "Bekannte Werte",
+            "value": "Inkreisradius r und halber Umfang s"
+          },
+          {
+            "label": "Funde",
+            "value": "Fläche (A)"
+          },
+          {
+            "label": "Hauptformel",
+            "value": "A = r × s"
+          },
+          {
+            "label": "Am besten für",
+            "value": "Weiterführende Geometrie und Kreissätze"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Flächeninhalt",
+        "fields": [
+          {
+            "key": "r",
+            "label": "Inkreisradius r",
+            "min": 0
+          },
+          {
+            "key": "s",
+            "label": "halber Umfang s",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Abbildung: Inkreisradius und halber Umfang",
+        "intro": "Die Abbildung zeigt den einbeschriebenen Kreis mit Radius r. Der Flächeninhalt des vollständigen Dreiecks ist genau r multipliziert mit dem halben Umfang s.",
+        "caption": "Flächenformel A = r × s.",
+        "formulaLabel": "A = r × s",
+        "keyLabel": "Diagrammschlüssel",
+        "sides": {
+          "a": {
+            "label": "r = Inkreisradius",
+            "description": "Radius des einbeschriebenen Kreises."
+          },
+          "b": {
+            "label": "s = halber Umfang",
+            "description": "Die Hälfte der Grenzlänge."
+          },
+          "c": {
+            "label": "A = Fläche",
+            "description": "Die gesamte eingeschlossene Fläche."
+          }
+        },
+        "result": {
+          "label": "A = Fläche",
+          "description": "Berechnet als r × s."
+        },
+        "notes": [
+          "Sowohl r als auch s müssen positive Längen sein."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Flächenformel",
+        "paragraphs": [
+          "Für jedes Dreieck kann der Flächeninhalt bestimmt werden, indem man den Inkreisradius (r) mit dem halben Umfang (s) multipliziert.",
+          "Diese Formel (A = r × s) gilt allgemein für alle Dreiecke, nicht nur für rechtwinklige Dreiecke."
+        ],
+        "formulas": [
+          "A = r \\times s"
+        ]
+      },
+      "howTo": {
+        "h2": "So berechnen Sie",
+        "steps": [
+          "Bestimmen Sie Inkreisradius r und halben Umfang s.",
+          "Geben Sie r in das erste Feld ein.",
+          "Geben Sie s in das zweite Feld ein.",
+          "Multiplizieren Sie beide Werte, um den Flächeninhalt zu erhalten."
+        ]
+      },
+      "example": {
+        "h2": "Rechenbeispiel",
+        "intro": "Wenn der Inkreisradius 2 und der halbe Umfang 12 ist (wie bei einem 6-8-10-Dreieck):",
+        "lines": [
+          "A = r \\times s",
+          "A = 2 \\times 12",
+          "A = 24"
+        ],
+        "answer": "Der Flächeninhalt beträgt 24 Quadrateinheiten."
+      },
+      "extraSections": [
+        {
+          "h2": "Woher kommt das?",
+          "paragraphs": [
+            "Indem man das Dreieck in drei kleinere Dreiecke aufteilt, jedes mit Höhe r und den Grundseiten a, b und c, beträgt ihr gesamter Flächeninhalt 0.5*a*r + 0.5*b*r + 0.5*c*r = r*(a+b+c)/2 = r*s."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Flächenrechner"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Rechner für den Flächeninhalt eines rechtwinkligen Dreiecks aus Hypotenuse und Höhe"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Funktioniert das auch bei nicht rechtwinkligen Dreiecken?",
+          "answer": "Ja, A = rs funktioniert bei jedem Dreieck."
+        }
+      ]
+    },
+    "right-triangle-area-from-hypotenuse-and-altitude-calculator": {
+      "slug": "right-triangle-area-from-hypotenuse-and-altitude-calculator",
+      "url": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+      "h1": "Flächeninhalt eines rechtwinkligen Dreiecks aus Hypotenuse und Höhe",
+      "metaTitle": "Flächeninhalt eines rechtwinkligen Dreiecks aus Hypotenuse und Höhe",
+      "metaDescription": "Berechnen Sie den Flächeninhalt, indem Sie die Hypotenuse als Grundseite und die Höhe auf die Hypotenuse als Höhe verwenden.",
+      "formulaSlug": "area-ch",
+      "toolPurpose": "Berechnen Sie den gesamten Flächeninhalt, wenn die Hypotenuse und die auf die Hypotenuse gezogene Höhe bekannt sind.",
+      "intro": "Geben Sie Hypotenuse c und Höhe h ein, um den Flächeninhalt zu berechnen.",
+      "quickSummary": {
+        "h2": "Was dieser Rechner löst",
+        "intro": "Bestimmt den Flächeninhalt, indem die Hypotenuse als Grundseite des Dreiecks verwendet wird.",
+        "cards": [
+          {
+            "label": "Bekannte Werte",
+            "value": "Hypotenuse c und Höhe h"
+          },
+          {
+            "label": "Funde",
+            "value": "Fläche (A)"
+          },
+          {
+            "label": "Hauptformel",
+            "value": "A = (c × h) / 2"
+          },
+          {
+            "label": "Am besten für",
+            "value": "Projektionsaufgaben und alternative Grundseitenperspektiven"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Flächeninhalt",
+        "fields": [
+          {
+            "key": "c",
+            "label": "c = Hypotenuse",
+            "min": 0
+          },
+          {
+            "key": "h",
+            "label": "Höhe h",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Abbildung: Höhe auf die Hypotenuse",
+        "intro": "Die Abbildung zeigt das rechtwinklige Dreieck gedreht, sodass die Hypotenuse flach als Grundseite liegt.",
+        "caption": "Flächenformel A = (c × h) / 2.",
+        "formulaLabel": "A = (c × h) / 2",
+        "keyLabel": "Diagrammschlüssel",
+        "sides": {
+          "a": {
+            "label": "c = Hypotenuse (Basis)",
+            "description": "Die lange Seite, die als Grundseite verwendet wird."
+          },
+          "b": {
+            "label": "h = Höhe (Höhe)",
+            "description": "Senkrechte Höhe zur Hypotenuse."
+          },
+          "c": {
+            "label": "A = Fläche",
+            "description": "Gesamte Quadrateinheiten."
+          }
+        },
+        "result": {
+          "label": "A = Fläche",
+          "description": "Berechnet als (c × h) / 2."
+        },
+        "notes": [
+          "Die Höhe h muss kleiner oder gleich c/2 sein."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Flächenformel",
+        "paragraphs": [
+          "Der Flächeninhalt eines Dreiecks ist 1/2 × Grundseite × Höhe. Wenn Sie die Hypotenuse (c) als Grundseite verwenden, ist die zugehörige Höhe die Höhe auf die Hypotenuse (h)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} c h"
+        ]
+      },
+      "howTo": {
+        "h2": "So berechnen Sie",
+        "steps": [
+          "Geben Sie die Hypotenuse c ein.",
+          "Geben Sie die Höhe h ein.",
+          "Klicken Sie auf Berechnen."
+        ]
+      },
+      "example": {
+        "h2": "Rechenbeispiel",
+        "intro": "Wenn die Hypotenuse 10 und die Höhe 4.8 ist:",
+        "lines": [
+          "A = \\frac{1}{2} c h",
+          "A = 0.5 \\times 10 \\times 4.8",
+          "A = 24"
+        ],
+        "answer": "Der Flächeninhalt beträgt 24 Quadrateinheiten."
+      },
+      "extraSections": [
+        {
+          "h2": "Höhengrenzen",
+          "paragraphs": [
+            "In jedem rechtwinkligen Dreieck beträgt die größtmögliche Höhe auf die Hypotenuse genau die Hälfte der Länge der Hypotenuse. Wenn h > c/2, existiert kein solches rechtwinkliges Dreieck."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Flächenrechner"
+        },
+        {
+          "href": "/right-triangle-altitude-calculator/",
+          "label": "Höhenrechner"
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Rechner für den Flächeninhalt eines rechtwinkligen Dreiecks aus Inkreisradius und halbem Umfang"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Ist das derselbe Flächeninhalt wie mit den Katheten?",
+          "answer": "Ja. (a × b) / 2 ist immer genau gleich (c × h) / 2."
         }
       ]
     }
@@ -3722,8 +5814,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
-          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
-        },
+          "label": "Calcolatrice dell'area del triangolo rettangolo da raggio inscritto e semiperimetro"
+        }
       ],
       "faqs": [
         {
@@ -3757,6 +5849,401 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "question": "Come posso controllare che la risposta per il semiperimetro sia corretta?",
           "answer": "Raddoppia il semiperimetro. Il risultato dovrebbe essere uguale al perimetro completo. Ad esempio, se s = 15, allora P dovrebbe essere 30."
+        }
+      ]
+    },
+    "right-triangle-area-from-leg-and-angle-calculator": {
+      "slug": "right-triangle-area-from-leg-and-angle-calculator",
+      "url": "/right-triangle-area-from-leg-and-angle-calculator/",
+      "h1": "Area del triangolo rettangolo da cateto e angolo",
+      "metaTitle": "Calcolatrice dell'area del triangolo rettangolo da cateto e angolo | Trova l'area",
+      "metaDescription": "Calcola l'area del triangolo rettangolo da un lato e un angolo. Usa le formule dell'area con seno e coseno, con soluzioni passo passo.",
+      "formulaSlug": "area-sin-a",
+      "toolPurpose": "Inserisci un cateto, l'ipotenusa e l'angolo compreso per calcolare l'area usando le formule trigonometriche.",
+      "intro": "Inserisci il cateto b, l'ipotenusa c e l'angolo A per trovare l'area esatta del tuo triangolo rettangolo.",
+      "quickSummary": {
+        "h2": "Cosa risolve questo strumento",
+        "intro": "Usa questa calcolatrice quando conosci solo due lati e l'angolo compreso. Questo metodo usa la trigonometria per trovare l'area esatta senza bisogno del terzo lato.",
+        "cards": [
+          {
+            "label": "Valori noti",
+            "value": "Cateto b, ipotenusa c e angolo A"
+          },
+          {
+            "label": "Trova",
+            "value": "Area (A)"
+          },
+          {
+            "label": "Formula principale",
+            "value": "A = (b × c × sin(A)) / 2"
+          },
+          {
+            "label": "Ideale per",
+            "value": "Problemi di trigonometria, rilievi topografici e casi in cui manca il terzo lato"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Zona",
+        "fields": [
+          {
+            "key": "b",
+            "label": "Cateto b",
+            "min": 0
+          },
+          {
+            "key": "c",
+            "label": "Ipotenusa c",
+            "min": 0
+          },
+          {
+            "key": "A",
+            "label": "angolo A",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Diagramma del triangolo rettangolo: area dal seno",
+        "intro": "Il diagramma mostra il triangolo con i lati b e c che formano l'angolo compreso A.",
+        "caption": "Area del triangolo rettangolo usando la formula del seno.",
+        "formulaLabel": "A = 0.5 × b × c × sin(A)",
+        "keyLabel": "Legenda del Diagramma",
+        "sides": {
+          "a": {
+            "label": "a = lato opposto",
+            "description": "Non necessario per questo calcolo."
+          },
+          "b": {
+            "label": "b = lato adiacente",
+            "description": "Uno dei lati noti che formano l'angolo."
+          },
+          "c": {
+            "label": "c = ipotenusa",
+            "description": "L'altro lato noto che forma l'angolo."
+          }
+        },
+        "result": {
+          "label": "A = Area",
+          "description": "L'area calcolata usando il seno trigonometrico."
+        },
+        "notes": [
+          "Assicurati che l'angolo sia inserito in gradi.",
+          "La formula A = 1/2 * ab * sin(C) si applica a tutti i triangoli."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Formula dell'area usando il seno",
+        "paragraphs": [
+          "Quando conosci due lati di un qualsiasi triangolo e l'angolo tra essi compreso, puoi trovare l'area usando la regola del seno per l'area: A = (1/2) * lato1 * lato2 * sin(angolo).",
+          "In un triangolo rettangolo in cui conosci un cateto, l'ipotenusa e l'angolo tra essi compreso, questo diventa A = (1/2) * b * c * sin(A)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} b c \\sin(A)"
+        ]
+      },
+      "howTo": {
+        "h2": "Come calcolare l'area usando il seno",
+        "steps": [
+          "Individua il cateto, l'ipotenusa e l'angolo compreso.",
+          "Inserisci il cateto b nel primo campo.",
+          "Inserisci l'ipotenusa c nel secondo campo.",
+          "Inserisci l'angolo A in gradi nel terzo campo.",
+          "Fai clic su Calcola per vedere l'area."
+        ]
+      },
+      "example": {
+        "h2": "Esempio svolto: area usando un angolo",
+        "intro": "Se il cateto b è 4, l'ipotenusa c è 5 e l'angolo A è 36.87°:",
+        "lines": [
+          "A = 0.5 \\times b \\times c \\times \\sin(A)",
+          "A = 0.5 \\times 4 \\times 5 \\times \\sin(36.87^\\circ)",
+          "A = 10 \\times 0.6",
+          "A = 6"
+        ],
+        "answer": "L'area è 6 unità quadrate."
+      },
+      "extraSections": [
+        {
+          "h2": "Perché usare la trigonometria per l'area?",
+          "paragraphs": [
+            "A volte non puoi misurare facilmente tutti e tre i lati di un triangolo, ma misurare due lati e l'angolo tra essi compreso è possibile (come nei rilievi topografici).",
+            "Questo approccio trigonometrico fornisce l'area precisa senza dover prima trovare il lato mancante usando il teorema di Pitagora."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-from-legs-calculator/",
+          "label": "Calcolatrice dell'area del triangolo rettangolo dai cateti"
+        },
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Calcolatrice dell'area del triangolo rettangolo"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "E se conosco l'altro angolo?",
+          "answer": "Puoi usare A = (1/2) * a * c * sin(B) se invece conosci il cateto a e l'angolo B."
+        }
+      ]
+    },
+    "right-triangle-area-from-inradius-and-semiperimeter-calculator": {
+      "slug": "right-triangle-area-from-inradius-and-semiperimeter-calculator",
+      "url": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+      "h1": "Area del triangolo rettangolo da raggio inscritto e semiperimetro",
+      "metaTitle": "Calcolatrice dell'area del triangolo rettangolo dal raggio inscritto",
+      "metaDescription": "Calcola l'area dal raggio inscritto (r) e dal semiperimetro (s) usando A = r × s.",
+      "formulaSlug": "area-rs",
+      "toolPurpose": "Calcola l'area totale di un triangolo rettangolo quando sono noti il raggio inscritto e il semiperimetro.",
+      "intro": "Inserisci il raggio inscritto r e il semiperimetro s per calcolare l'area del triangolo rettangolo.",
+      "quickSummary": {
+        "h2": "Cosa risolve questa calcolatrice",
+        "intro": "Questo strumento usa l'elegante relazione tra la circonferenza inscritta di un triangolo e il suo semiperimetro per trovare l'area all'istante.",
+        "cards": [
+          {
+            "label": "Valori noti",
+            "value": "Raggio inscritto r e semiperimetro s"
+          },
+          {
+            "label": "Trova",
+            "value": "Area (A)"
+          },
+          {
+            "label": "Formula principale",
+            "value": "A = r × s"
+          },
+          {
+            "label": "Ideale per",
+            "value": "Geometria avanzata e teoremi sui cerchi"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Zona",
+        "fields": [
+          {
+            "key": "r",
+            "label": "inraggio r",
+            "min": 0
+          },
+          {
+            "key": "s",
+            "label": "Semiperimetro s",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Diagramma: raggio inscritto e semiperimetro",
+        "intro": "Il diagramma illustra la circonferenza inscritta con raggio r. L'area dell'intero triangolo è esattamente r moltiplicato per il semiperimetro s.",
+        "caption": "Formula dell'area A = r × s.",
+        "formulaLabel": "A = r × s",
+        "keyLabel": "Legenda del Diagramma",
+        "sides": {
+          "a": {
+            "label": "r = raggio",
+            "description": "Raggio della circonferenza inscritta."
+          },
+          "b": {
+            "label": "s = semiperimetro",
+            "description": "Metà della distanza del contorno."
+          },
+          "c": {
+            "label": "A = area",
+            "description": "Spazio totale racchiuso."
+          }
+        },
+        "result": {
+          "label": "A = Area",
+          "description": "Calcolato come r × s."
+        },
+        "notes": [
+          "Sia r sia s devono essere lunghezze positive."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Formula dell'area",
+        "paragraphs": [
+          "Per qualsiasi triangolo, l'area può essere trovata moltiplicando il raggio inscritto (r) per il semiperimetro (s).",
+          "Questa formula (A = r × s) è universalmente valida per tutti i triangoli, non solo per quelli rettangoli."
+        ],
+        "formulas": [
+          "A = r \\times s"
+        ]
+      },
+      "howTo": {
+        "h2": "Come calcolare",
+        "steps": [
+          "Individua il raggio inscritto r e il semiperimetro s.",
+          "Inserisci r nel primo campo.",
+          "Inserisci s nel secondo campo.",
+          "Moltiplicali per ottenere l'area."
+        ]
+      },
+      "example": {
+        "h2": "Esempio svolto",
+        "intro": "Se il raggio inscritto è 2 e il semiperimetro è 12 (come in un triangolo 6-8-10):",
+        "lines": [
+          "A = r \\times s",
+          "A = 2 \\times 12",
+          "A = 24"
+        ],
+        "answer": "L'area è 24 unità quadrate."
+      },
+      "extraSections": [
+        {
+          "h2": "Da dove viene questa formula?",
+          "paragraphs": [
+            "Dividendo il triangolo in tre triangoli più piccoli, ciascuno con altezza r e basi a, b e c, la loro area totale è 0.5*a*r + 0.5*b*r + 0.5*c*r = r*(a+b+c)/2 = r*s."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Calcolatrice dell'area"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Calcolatrice dell'area del triangolo rettangolo da ipotenusa e altezza"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Funziona anche per i triangoli non rettangoli?",
+          "answer": "Sì, A = rs funziona per qualsiasi triangolo."
+        }
+      ]
+    },
+    "right-triangle-area-from-hypotenuse-and-altitude-calculator": {
+      "slug": "right-triangle-area-from-hypotenuse-and-altitude-calculator",
+      "url": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+      "h1": "Area del triangolo rettangolo da ipotenusa e altezza",
+      "metaTitle": "Area del triangolo rettangolo da ipotenusa e altezza",
+      "metaDescription": "Calcola l'area usando l'ipotenusa come base e l'altezza relativa all'ipotenusa come altezza.",
+      "formulaSlug": "area-ch",
+      "toolPurpose": "Calcola l'area totale quando sono noti l'ipotenusa e l'altezza tracciata verso l'ipotenusa.",
+      "intro": "Inserisci l'ipotenusa c e l'altezza h per calcolare l'area.",
+      "quickSummary": {
+        "h2": "Cosa risolve questa calcolatrice",
+        "intro": "Trova l'area usando l'ipotenusa come base del triangolo.",
+        "cards": [
+          {
+            "label": "Valori noti",
+            "value": "Ipotenusa c e altezza h"
+          },
+          {
+            "label": "Trova",
+            "value": "Area (A)"
+          },
+          {
+            "label": "Formula principale",
+            "value": "A = (c × h) / 2"
+          },
+          {
+            "label": "Ideale per",
+            "value": "Problemi di proiezione e prospettive con base alternativa"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Zona",
+        "fields": [
+          {
+            "key": "c",
+            "label": "Ipotenusa c",
+            "min": 0
+          },
+          {
+            "key": "h",
+            "label": "altezza h",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Diagramma: altezza relativa all'ipotenusa",
+        "intro": "Il diagramma mostra il triangolo rettangolo ruotato in modo che l'ipotenusa sia distesa come base.",
+        "caption": "Formula dell'area A = (c × h) / 2.",
+        "formulaLabel": "A = (c × h) / 2",
+        "keyLabel": "Legenda del Diagramma",
+        "sides": {
+          "a": {
+            "label": "c = ipotenusa (base)",
+            "description": "Il lato lungo usato come base."
+          },
+          "b": {
+            "label": "h = altezza (altezza)",
+            "description": "Altezza perpendicolare all'ipotenusa."
+          },
+          "c": {
+            "label": "A = area",
+            "description": "Unità quadrate totali."
+          }
+        },
+        "result": {
+          "label": "A = Area",
+          "description": "Calcolato come (c × h) / 2."
+        },
+        "notes": [
+          "L'altezza h deve essere minore o uguale a c/2."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Formula dell'area",
+        "paragraphs": [
+          "L'area di un triangolo è 1/2 × base × altezza. Se usi l'ipotenusa (c) come base, l'altezza corrispondente è l'altezza relativa all'ipotenusa (h)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} c h"
+        ]
+      },
+      "howTo": {
+        "h2": "Come calcolare",
+        "steps": [
+          "Inserisci l'ipotenusa c.",
+          "Inserisci l'altezza h.",
+          "Fare clic su Calcola."
+        ]
+      },
+      "example": {
+        "h2": "Esempio svolto",
+        "intro": "Se l'ipotenusa è 10 e l'altezza è 4.8:",
+        "lines": [
+          "A = \\frac{1}{2} c h",
+          "A = 0.5 \\times 10 \\times 4.8",
+          "A = 24"
+        ],
+        "answer": "L'area è 24 unità quadrate."
+      },
+      "extraSections": [
+        {
+          "h2": "Limiti di altezza",
+          "paragraphs": [
+            "In qualsiasi triangolo rettangolo, l'altezza massima possibile relativa all'ipotenusa è esattamente la metà della lunghezza dell'ipotenusa. Se h > c/2, un triangolo rettangolo del genere non esiste."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Calcolatrice dell'area"
+        },
+        {
+          "href": "/right-triangle-altitude-calculator/",
+          "label": "Calcolatrice dell'altezza"
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Calcolatrice dell'area del triangolo rettangolo da raggio inscritto e semiperimetro"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "È la stessa area che si ottiene usando i cateti?",
+          "answer": "Sì. (a × b) / 2 è sempre esattamente uguale a (c × h) / 2."
         }
       ]
     }
@@ -4366,8 +6853,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
-          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
-        },
+          "label": "Calculadora de Área de Triângulo Retângulo a partir do Raio Inscrito e do Semiperímetro"
+        }
       ],
       "faqs": [
         {
@@ -4401,6 +6888,401 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "question": "Como posso verificar se minha resposta para o semiperímetro está correta?",
           "answer": "Dobre o semiperímetro. O resultado deve ser igual ao perímetro completo. Por exemplo, se s = 15, então P deve ser 30."
+        }
+      ]
+    },
+    "right-triangle-area-from-leg-and-angle-calculator": {
+      "slug": "right-triangle-area-from-leg-and-angle-calculator",
+      "url": "/right-triangle-area-from-leg-and-angle-calculator/",
+      "h1": "Área de Triângulo Retângulo a partir de Cateto e Ângulo",
+      "metaTitle": "Calculadora de Área de Triângulo Retângulo a partir de Cateto e Ângulo | Encontrar a Área",
+      "metaDescription": "Calcule a área do triângulo retângulo a partir de um lado e um ângulo. Usa as fórmulas de área com seno e cosseno, com soluções passo a passo.",
+      "formulaSlug": "area-sin-a",
+      "toolPurpose": "Insira um cateto, a hipotenusa e o ângulo entre eles para calcular a área usando fórmulas trigonométricas.",
+      "intro": "Insira o cateto b, a hipotenusa c e o ângulo A para encontrar a área exata do seu triângulo retângulo.",
+      "quickSummary": {
+        "h2": "O Que Esta Ferramenta Resolve",
+        "intro": "Use esta calculadora quando você conhece apenas dois lados e o ângulo entre eles. Este método usa trigonometria para encontrar a área exata sem precisar do terceiro lado.",
+        "cards": [
+          {
+            "label": "Valores conhecidos",
+            "value": "Cateto b, hipotenusa c e Ângulo A"
+          },
+          {
+            "label": "Encontra",
+            "value": "Área (A)"
+          },
+          {
+            "label": "Fórmula principal",
+            "value": "A = (b × c × sin(A)) / 2"
+          },
+          {
+            "label": "Ideal para",
+            "value": "Problemas de trigonometria, topografia e casos em que falta o terceiro lado"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Área",
+        "fields": [
+          {
+            "key": "b",
+            "label": "Cateto b",
+            "min": 0
+          },
+          {
+            "key": "c",
+            "label": "Hipotenusa c",
+            "min": 0
+          },
+          {
+            "key": "A",
+            "label": "ângulo A",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Diagrama do Triângulo Retângulo: Área a partir do Seno",
+        "intro": "O diagrama mostra o triângulo com os lados b e c formando o ângulo A incluído.",
+        "caption": "Área do triângulo retângulo usando a fórmula do seno.",
+        "formulaLabel": "A = 0.5 × b × c × sin(A)",
+        "keyLabel": "Legenda do Diagrama",
+        "sides": {
+          "a": {
+            "label": "a = lado oposto",
+            "description": "Não é necessário para este cálculo."
+          },
+          "b": {
+            "label": "b = lado adjacente",
+            "description": "Um dos lados conhecidos que formam o ângulo."
+          },
+          "c": {
+            "label": "c = hipotenusa",
+            "description": "O outro lado conhecido que forma o ângulo."
+          }
+        },
+        "result": {
+          "label": "A = Área",
+          "description": "A área calculada usando o seno trigonométrico."
+        },
+        "notes": [
+          "Certifique-se de que o ângulo seja inserido em graus.",
+          "A fórmula A = 1/2 * ab * sin(C) se aplica a todos os triângulos."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Fórmula da Área Usando o Seno",
+        "paragraphs": [
+          "Quando você conhece dois lados de qualquer triângulo e o ângulo entre eles, pode encontrar a área usando a regra do seno para a área: A = (1/2) * lado1 * lado2 * sin(ângulo).",
+          "Em um triângulo retângulo em que você conhece um cateto, a hipotenusa e o ângulo entre eles, isso se torna A = (1/2) * b * c * sin(A)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} b c \\sin(A)"
+        ]
+      },
+      "howTo": {
+        "h2": "Como Calcular a Área Usando o Seno",
+        "steps": [
+          "Identifique o cateto, a hipotenusa e o ângulo incluído.",
+          "Insira o cateto b na primeira entrada.",
+          "Insira a hipotenusa c na segunda entrada.",
+          "Insira o ângulo A em graus na terceira entrada.",
+          "Clique em Calcular para ver a área."
+        ]
+      },
+      "example": {
+        "h2": "Exemplo Resolvido: Área Usando o Ângulo",
+        "intro": "Se o cateto b é 4, a hipotenusa c é 5 e o ângulo A é 36.87°:",
+        "lines": [
+          "A = 0.5 \\times b \\times c \\times \\sin(A)",
+          "A = 0.5 \\times 4 \\times 5 \\times \\sin(36.87^\\circ)",
+          "A = 10 \\times 0.6",
+          "A = 6"
+        ],
+        "answer": "A área é 6 unidades quadradas."
+      },
+      "extraSections": [
+        {
+          "h2": "Por Que Usar Trigonometria para a Área?",
+          "paragraphs": [
+            "Às vezes não é possível medir facilmente os três lados de um triângulo, mas medir dois lados e o ângulo entre eles é possível (como na topografia de terrenos).",
+            "Essa abordagem trigonométrica fornece a área precisa sem precisar primeiro resolver o lado que falta usando o teorema de Pitágoras."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-from-legs-calculator/",
+          "label": "Calculadora de Área de Triângulo Retângulo a partir dos Catetos"
+        },
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Calculadora de Área de Triângulo Retângulo"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "E se eu conhecer o outro ângulo?",
+          "answer": "Você pode usar A = (1/2) * a * c * sin(B) se, em vez disso, conhecer o cateto a e o ângulo B."
+        }
+      ]
+    },
+    "right-triangle-area-from-inradius-and-semiperimeter-calculator": {
+      "slug": "right-triangle-area-from-inradius-and-semiperimeter-calculator",
+      "url": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+      "h1": "Área de Triângulo Retângulo a partir do Raio Inscrito e do Semiperímetro",
+      "metaTitle": "Calculadora de Área de Triângulo Retângulo a partir do Raio Inscrito",
+      "metaDescription": "Calcule a área a partir do raio inscrito (r) e do semiperímetro (s) usando A = r × s.",
+      "formulaSlug": "area-rs",
+      "toolPurpose": "Calcule a área total de um triângulo retângulo quando o raio inscrito e o semiperímetro são conhecidos.",
+      "intro": "Insira o raio inscrito r e o semiperímetro s para calcular a área do triângulo retângulo.",
+      "quickSummary": {
+        "h2": "O Que Esta Calculadora Resolve",
+        "intro": "Esta ferramenta usa a elegante relação entre a circunferência inscrita de um triângulo e seu semiperímetro para encontrar a área instantaneamente.",
+        "cards": [
+          {
+            "label": "Valores conhecidos",
+            "value": "Raio inscrito r e Semiperímetro s"
+          },
+          {
+            "label": "Encontra",
+            "value": "Área (A)"
+          },
+          {
+            "label": "Fórmula principal",
+            "value": "A = r × s"
+          },
+          {
+            "label": "Ideal para",
+            "value": "Geometria avançada e teoremas sobre circunferências"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Área",
+        "fields": [
+          {
+            "key": "r",
+            "label": "raio inscrito r",
+            "min": 0
+          },
+          {
+            "key": "s",
+            "label": "Semiperímetro s",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Diagrama: Raio Inscrito e Semiperímetro",
+        "intro": "O diagrama ilustra a circunferência inscrita com raio r. A área do triângulo completo é exatamente r multiplicado pelo semiperímetro s.",
+        "caption": "Fórmula da área A = r × s.",
+        "formulaLabel": "A = r × s",
+        "keyLabel": "Legenda do Diagrama",
+        "sides": {
+          "a": {
+            "label": "r = raio",
+            "description": "Raio da circunferência inscrita."
+          },
+          "b": {
+            "label": "s = semiperímetro",
+            "description": "Metade da distância do contorno."
+          },
+          "c": {
+            "label": "A = área",
+            "description": "Espaço total fechado."
+          }
+        },
+        "result": {
+          "label": "A = Área",
+          "description": "Calculado como r × s."
+        },
+        "notes": [
+          "Tanto r quanto s devem ser comprimentos positivos."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Fórmula da área",
+        "paragraphs": [
+          "Para qualquer triângulo, a área pode ser encontrada multiplicando o raio inscrito (r) pelo semiperímetro (s).",
+          "Esta fórmula (A = r × s) é universalmente válida para todos os triângulos, não apenas para triângulos retângulos."
+        ],
+        "formulas": [
+          "A = r \\times s"
+        ]
+      },
+      "howTo": {
+        "h2": "Como calcular",
+        "steps": [
+          "Identifique o raio inscrito r e o semiperímetro s.",
+          "Insira r no primeiro campo.",
+          "Insira s no segundo campo.",
+          "Multiplique-os para obter a Área."
+        ]
+      },
+      "example": {
+        "h2": "Exemplo resolvido",
+        "intro": "Se o raio inscrito é 2 e o semiperímetro é 12 (como em um triângulo 6-8-10):",
+        "lines": [
+          "A = r \\times s",
+          "A = 2 \\times 12",
+          "A = 24"
+        ],
+        "answer": "A área é 24 unidades quadradas."
+      },
+      "extraSections": [
+        {
+          "h2": "De onde isso vem?",
+          "paragraphs": [
+            "Ao dividir o triângulo em três triângulos menores, cada um com altura r e bases a, b e c, a área total deles é 0.5*a*r + 0.5*b*r + 0.5*c*r = r*(a+b+c)/2 = r*s."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Calculadora de área"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Calculadora de Área de Triângulo Retângulo a partir da Hipotenusa e da Altura"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Isso funciona para triângulos não retângulos?",
+          "answer": "Sim, A = rs funciona para qualquer triângulo."
+        }
+      ]
+    },
+    "right-triangle-area-from-hypotenuse-and-altitude-calculator": {
+      "slug": "right-triangle-area-from-hypotenuse-and-altitude-calculator",
+      "url": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+      "h1": "Área de Triângulo Retângulo a partir da Hipotenusa e da Altura",
+      "metaTitle": "Área de Triângulo Retângulo a partir da Hipotenusa e da Altura",
+      "metaDescription": "Calcule a área usando a hipotenusa como base e a altura relativa à hipotenusa como altura.",
+      "formulaSlug": "area-ch",
+      "toolPurpose": "Calcule a área total quando a hipotenusa e a altura traçada até a hipotenusa são conhecidas.",
+      "intro": "Insira a hipotenusa c e a altura h para calcular a área.",
+      "quickSummary": {
+        "h2": "O Que Esta Calculadora Resolve",
+        "intro": "Encontra a área usando a hipotenusa como base do triângulo.",
+        "cards": [
+          {
+            "label": "Valores conhecidos",
+            "value": "Hipotenusa c e altura h"
+          },
+          {
+            "label": "Encontra",
+            "value": "Área (A)"
+          },
+          {
+            "label": "Fórmula principal",
+            "value": "A = (c × h) / 2"
+          },
+          {
+            "label": "Ideal para",
+            "value": "Problemas de projeção e perspectivas alternativas de base"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Área",
+        "fields": [
+          {
+            "key": "c",
+            "label": "Hipotenusa c",
+            "min": 0
+          },
+          {
+            "key": "h",
+            "label": "altura h",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Diagrama: Altura Relativa à Hipotenusa",
+        "intro": "O diagrama mostra o triângulo retângulo girado de modo que a hipotenusa fique na horizontal como base.",
+        "caption": "Fórmula da área A = (c × h) / 2.",
+        "formulaLabel": "A = (c × h) / 2",
+        "keyLabel": "Legenda do Diagrama",
+        "sides": {
+          "a": {
+            "label": "c = hipotenusa (base)",
+            "description": "O lado longo usado como base."
+          },
+          "b": {
+            "label": "h = altitude (altura)",
+            "description": "Altura perpendicular até a hipotenusa."
+          },
+          "c": {
+            "label": "A = área",
+            "description": "Total de unidades quadradas."
+          }
+        },
+        "result": {
+          "label": "A = Área",
+          "description": "Calculado como (c × h) / 2."
+        },
+        "notes": [
+          "A altura h deve ser menor ou igual a c/2."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Fórmula da área",
+        "paragraphs": [
+          "A área de um triângulo é 1/2 × base × altura. Se você usar a hipotenusa (c) como base, a altura correspondente é a altura relativa à hipotenusa (h)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} c h"
+        ]
+      },
+      "howTo": {
+        "h2": "Como calcular",
+        "steps": [
+          "Insira a hipotenusa c.",
+          "Insira a altitude h.",
+          "Clique em Calcular."
+        ]
+      },
+      "example": {
+        "h2": "Exemplo resolvido",
+        "intro": "Se a hipotenusa é 10 e a altura é 4.8:",
+        "lines": [
+          "A = \\frac{1}{2} c h",
+          "A = 0.5 \\times 10 \\times 4.8",
+          "A = 24"
+        ],
+        "answer": "A área é 24 unidades quadradas."
+      },
+      "extraSections": [
+        {
+          "h2": "Limites de altitude",
+          "paragraphs": [
+            "Em qualquer triângulo retângulo, a altura máxima possível relativa à hipotenusa é exatamente metade do comprimento da hipotenusa. Se h > c/2, não existe tal triângulo retângulo."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Calculadora de área"
+        },
+        {
+          "href": "/right-triangle-altitude-calculator/",
+          "label": "Calculadora de altitude"
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Calculadora de Área de Triângulo Retângulo a partir do Raio Inscrito e do Semiperímetro"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Esta é a mesma área obtida usando os catetos?",
+          "answer": "Sim. (a × b) / 2 é sempre exatamente igual a (c × h) / 2."
         }
       ]
     }
@@ -4473,12 +7355,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "description": "লেগ b হল সমকোণের অপর দিক এবং a এবং c এর সাথে যোগ করা হয়।"
           },
           "c": {
-            "label": "c = hypotenuse",
+            "label": "c = অতিভুজ",
             "description": "হাইপোটেনাস c হল দীর্ঘতম দিক, সমকোণের বিপরীত, এবং সীমানা সম্পূর্ণ করে।"
           }
         },
         "result": {
-          "label": "P = total boundary length",
+          "label": "P = মোট সীমানা দৈর্ঘ্য",
           "description": "ক্যালকুলেটর a + b + c যোগ করে এবং নির্বাচিত লিনিয়ার ইউনিটে পরিধি প্রদান করে।"
         },
         "notes": [
@@ -4581,7 +7463,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "প্রদত্ত: a = 8, b = 15, c = 17। এটি আরেকটি পিথাগোরিয়ান ট্রিপল যেখানে সমস্ত বাহু পূর্ণ সংখ্যা।"
           ],
           "listItems": [
-            "P = 8 + 15 + 17 = 40 units",
+            "P = 8 + 15 + 17 = 40 একক",
             "যাচাইকরণ: 8² + 15² = 64 + 225 = 289 = 17² ✓",
             "এই ট্রিপল নির্মাণ লেআউটে দরকারী যেখানে 40-ইউনিট বেড়া বা ছাঁটা দৈর্ঘ্য প্রয়োজন।"
           ]
@@ -4808,12 +7690,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "description": "লেগ b a এর সাথে সমকোণ গঠন করে এবং উভয় পরিধি এবং সেমিপিরিমিটারে অবদান রাখে।"
           },
           "c": {
-            "label": "c = hypotenuse",
+            "label": "c = অতিভুজ",
             "description": "হাইপোটেনাস c হল দীর্ঘতম দিক এবং মোট অর্ধেক হওয়ার আগে অবশ্যই অন্তর্ভুক্ত করতে হবে।"
           }
         },
         "result": {
-          "label": "s = half of the boundary total",
+          "label": "s = সীমানা মোটের অর্ধেক",
           "description": "ক্যালকুলেটর প্রথমে a + b + c যোগ করে, তারপর সেই পরিধিকে 2 দ্বারা ভাগ করে।"
         },
         "notes": [
@@ -5010,8 +7892,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
-          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
-        },
+          "label": "অন্তঃব্যাসার্ধ ও অর্ধপরিসীমা থেকে সমকোণী ত্রিভুজের ক্ষেত্রফল ক্যালকুলেটর"
+        }
       ],
       "faqs": [
         {
@@ -5045,6 +7927,401 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "question": "আমি কিভাবে পরীক্ষা করতে পারি যে আমার সেমিপিরিমিটার উত্তর সঠিক?",
           "answer": "সেমিপিরিমিটার দ্বিগুণ করুন। ফলাফলটি সম্পূর্ণ ঘেরের সমান হওয়া উচিত। উদাহরণস্বরূপ, যদি s = 15, তাহলে P 30 হওয়া উচিত।"
+        }
+      ]
+    },
+    "right-triangle-area-from-leg-and-angle-calculator": {
+      "slug": "right-triangle-area-from-leg-and-angle-calculator",
+      "url": "/right-triangle-area-from-leg-and-angle-calculator/",
+      "h1": "লেগ ও কোণ থেকে সমকোণী ত্রিভুজের ক্ষেত্রফল",
+      "metaTitle": "লেগ ও কোণ থেকে সমকোণী ত্রিভুজের ক্ষেত্রফল ক্যালকুলেটর | ক্ষেত্রফল বের করুন",
+      "metaDescription": "একটি বাহু ও একটি কোণ থেকে সমকোণী ত্রিভুজের ক্ষেত্রফল হিসাব করুন। ধাপে ধাপে সমাধানসহ সাইন ও কোসাইন ক্ষেত্রফল সূত্র ব্যবহার করে।",
+      "formulaSlug": "area-sin-a",
+      "toolPurpose": "ক্ষেত্রফল হিসাব করতে একটি লেগ, অতিভুজ এবং অন্তর্ভুক্ত কোণ বসান, ত্রিকোণমিতিক সূত্র ব্যবহার করে।",
+      "intro": "আপনার সমকোণী ত্রিভুজের সঠিক ক্ষেত্রফল বের করতে লেগ b, অতিভুজ c এবং কোণ A বসান।",
+      "quickSummary": {
+        "h2": "এই সরঞ্জামটি যা সমাধান করে",
+        "intro": "এই ক্যালকুলেটরটি ব্যবহার করুন যখন আপনি মাত্র দুটি বাহু ও অন্তর্ভুক্ত কোণ জানেন। এই পদ্ধতি ত্রিকোণমিতি ব্যবহার করে তৃতীয় বাহুর প্রয়োজন ছাড়াই সঠিক ক্ষেত্রফল বের করে।",
+        "cards": [
+          {
+            "label": "পরিচিত মান",
+            "value": "লেগ b, অতিভুজ c, এবং কোণ A"
+          },
+          {
+            "label": "খুঁজে পায়",
+            "value": "ক্ষেত্রফল (A)"
+          },
+          {
+            "label": "প্রধান সূত্র",
+            "value": "A = (b × c × sin(A)) / 2"
+          },
+          {
+            "label": "জন্য সেরা",
+            "value": "ত্রিকোণমিতির সমস্যা, জরিপ, এবং তৃতীয় বাহু অনুপস্থিত এমন ক্ষেত্র"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "ক্ষেত্রফল",
+        "fields": [
+          {
+            "key": "b",
+            "label": "পা খ",
+            "min": 0
+          },
+          {
+            "key": "c",
+            "label": "হাইপোটেনাস গ",
+            "min": 0
+          },
+          {
+            "key": "A",
+            "label": "কোণ A",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "সমকোণী ত্রিভুজের চিত্র: সাইন থেকে ক্ষেত্রফল",
+        "intro": "চিত্রে ত্রিভুজটি দেখানো হয়েছে যেখানে বাহু b ও c অন্তর্ভুক্ত কোণ A গঠন করে।",
+        "caption": "সাইন সূত্র ব্যবহার করে সমকোণী ত্রিভুজের ক্ষেত্রফল।",
+        "formulaLabel": "A = 0.5 × b × c × sin(A)",
+        "keyLabel": "ডায়াগ্রাম কী",
+        "sides": {
+          "a": {
+            "label": "a = বিপরীত বাহু",
+            "description": "এই হিসাবের জন্য প্রয়োজন নেই।"
+          },
+          "b": {
+            "label": "b = সংলগ্ন বাহু",
+            "description": "কোণ গঠনকারী জানা বাহুগুলোর একটি।"
+          },
+          "c": {
+            "label": "c = অতিভুজ",
+            "description": "কোণ গঠনকারী অন্য জানা বাহুটি।"
+          }
+        },
+        "result": {
+          "label": "A = ক্ষেত্রফল",
+          "description": "ত্রিকোণমিতিক সাইন ব্যবহার করে হিসাব করা ক্ষেত্রফল।"
+        },
+        "notes": [
+          "কোণটি যেন ডিগ্রিতে বসানো হয় তা নিশ্চিত করুন।",
+          "A = 1/2 * ab * sin(C) সূত্রটি সব ত্রিভুজের ক্ষেত্রে প্রযোজ্য।"
+        ]
+      },
+      "formulaSection": {
+        "h2": "সাইন ব্যবহার করে ক্ষেত্রফলের সূত্র",
+        "paragraphs": [
+          "আপনি যখন যেকোনো ত্রিভুজের দুটি বাহু ও তাদের মধ্যবর্তী কোণ জানেন, তখন ক্ষেত্রফলের জন্য সাইন নিয়ম ব্যবহার করে ক্ষেত্রফল বের করতে পারেন: A = (1/2) * side1 * side2 * sin(angle)।",
+          "সমকোণী ত্রিভুজে যেখানে আপনি একটি লেগ, অতিভুজ ও তাদের মধ্যবর্তী কোণ জানেন, এটি হয় A = (1/2) * b * c * sin(A)।"
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} b c \\sin(A)"
+        ]
+      },
+      "howTo": {
+        "h2": "সাইন ব্যবহার করে কীভাবে ক্ষেত্রফল হিসাব করবেন",
+        "steps": [
+          "লেগ, অতিভুজ ও অন্তর্ভুক্ত কোণ চিহ্নিত করুন।",
+          "প্রথম ইনপুটে লেগ b বসান।",
+          "দ্বিতীয় ইনপুটে অতিভুজ c বসান।",
+          "তৃতীয় ইনপুটে কোণ A ডিগ্রিতে বসান।",
+          "ক্ষেত্রফল দেখতে Calculate ক্লিক করুন।"
+        ]
+      },
+      "example": {
+        "h2": "সমাধান করা উদাহরণ: কোণ ব্যবহার করে ক্ষেত্রফল",
+        "intro": "লেগ b যদি 4, অতিভুজ c যদি 5, এবং কোণ A যদি 36.87° হয়:",
+        "lines": [
+          "A = 0.5 \\times b \\times c \\times \\sin(A)",
+          "A = 0.5 \\times 4 \\times 5 \\times \\sin(36.87^\\circ)",
+          "A = 10 \\times 0.6",
+          "A = 6"
+        ],
+        "answer": "ক্ষেত্রফল 6 বর্গ একক।"
+      },
+      "extraSections": [
+        {
+          "h2": "ক্ষেত্রফলের জন্য ত্রিকোণমিতি কেন ব্যবহার করবেন?",
+          "paragraphs": [
+            "কখনও কখনও আপনি একটি ত্রিভুজের তিনটি বাহুই সহজে মাপতে পারেন না, কিন্তু দুটি বাহু ও তাদের অন্তর্ভুক্ত কোণ মাপা সম্ভব (যেমন ভূমি জরিপে)।",
+            "এই ত্রিকোণমিতিক পদ্ধতি পিথাগোরাসের উপপাদ্য ব্যবহার করে আগে অজ্ঞাত বাহুটি সমাধান না করেই সুনির্দিষ্ট ক্ষেত্রফল দেয়।"
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-from-legs-calculator/",
+          "label": "লেগসমূহ থেকে সমকোণী ত্রিভুজের ক্ষেত্রফল ক্যালকুলেটর"
+        },
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "সমকোণী ত্রিভুজের ক্ষেত্রফল ক্যালকুলেটর"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "অন্য কোণটি জানলে কী হবে?",
+          "answer": "এর পরিবর্তে লেগ a ও কোণ B জানলে আপনি A = (1/2) * a * c * sin(B) ব্যবহার করতে পারেন।"
+        }
+      ]
+    },
+    "right-triangle-area-from-inradius-and-semiperimeter-calculator": {
+      "slug": "right-triangle-area-from-inradius-and-semiperimeter-calculator",
+      "url": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+      "h1": "অন্তঃব্যাসার্ধ ও অর্ধপরিসীমা থেকে সমকোণী ত্রিভুজের ক্ষেত্রফল",
+      "metaTitle": "অন্তঃব্যাসার্ধ থেকে সমকোণী ত্রিভুজের ক্ষেত্রফল ক্যালকুলেটর",
+      "metaDescription": "A = r × s ব্যবহার করে অন্তঃব্যাসার্ধ (r) ও অর্ধপরিসীমা (s) থেকে ক্ষেত্রফল হিসাব করুন।",
+      "formulaSlug": "area-rs",
+      "toolPurpose": "অন্তঃব্যাসার্ধ ও অর্ধপরিসীমা জানা থাকলে একটি সমকোণী ত্রিভুজের মোট ক্ষেত্রফল হিসাব করুন।",
+      "intro": "সমকোণী ত্রিভুজের ক্ষেত্রফল হিসাব করতে অন্তঃব্যাসার্ধ r ও অর্ধপরিসীমা s বসান।",
+      "quickSummary": {
+        "h2": "এই ক্যালকুলেটরটি যা সমাধান করে",
+        "intro": "এই সরঞ্জামটি একটি ত্রিভুজের অন্তর্লিখিত বৃত্ত ও তার অর্ধপরিসীমার মধ্যকার সুন্দর সম্পর্কটি ব্যবহার করে তাৎক্ষণিক ক্ষেত্রফল বের করে।",
+        "cards": [
+          {
+            "label": "পরিচিত মান",
+            "value": "অন্তঃব্যাসার্ধ r ও অর্ধপরিসীমা s"
+          },
+          {
+            "label": "খুঁজে পায়",
+            "value": "ক্ষেত্রফল (A)"
+          },
+          {
+            "label": "প্রধান সূত্র",
+            "value": "A = r × s"
+          },
+          {
+            "label": "জন্য সেরা",
+            "value": "উন্নত জ্যামিতি ও বৃত্ত উপপাদ্য"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "ক্ষেত্রফল",
+        "fields": [
+          {
+            "key": "r",
+            "label": "অন্তঃব্যাসার্ধ r",
+            "min": 0
+          },
+          {
+            "key": "s",
+            "label": "সেমিপিরিমিটার s",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "চিত্র: অন্তঃব্যাসার্ধ ও অর্ধপরিসীমা",
+        "intro": "চিত্রে r ব্যাসার্ধবিশিষ্ট অন্তর্লিখিত বৃত্তটি দেখানো হয়েছে। পূর্ণ ত্রিভুজের ক্ষেত্রফল ঠিক r গুণ অর্ধপরিসীমা s-এর সমান।",
+        "caption": "ক্ষেত্রফলের সূত্র A = r × s।",
+        "formulaLabel": "A = r × s",
+        "keyLabel": "ডায়াগ্রাম কী",
+        "sides": {
+          "a": {
+            "label": "r = ব্যাসার্ধ",
+            "description": "অন্তর্লিখিত বৃত্তের ব্যাসার্ধ।"
+          },
+          "b": {
+            "label": "s = অর্ধপরিসীমা",
+            "description": "সীমানা দূরত্বের অর্ধেক।"
+          },
+          "c": {
+            "label": "A = ক্ষেত্রফল",
+            "description": "মোট আবদ্ধ স্থান।"
+          }
+        },
+        "result": {
+          "label": "A = ক্ষেত্রফল",
+          "description": "r × s হিসাবে গণনা করা হয়।"
+        },
+        "notes": [
+          "r ও s উভয়কেই ধনাত্মক দৈর্ঘ্য হতে হবে।"
+        ]
+      },
+      "formulaSection": {
+        "h2": "ক্ষেত্রফলের সূত্র",
+        "paragraphs": [
+          "যেকোনো ত্রিভুজের জন্য, অন্তঃব্যাসার্ধ (r) কে অর্ধপরিসীমা (s) দিয়ে গুণ করে ক্ষেত্রফল বের করা যায়।",
+          "এই সূত্রটি (A = r × s) সব ত্রিভুজের জন্যই সর্বজনীনভাবে সত্য, শুধু সমকোণী ত্রিভুজের জন্য নয়।"
+        ],
+        "formulas": [
+          "A = r \\times s"
+        ]
+      },
+      "howTo": {
+        "h2": "কীভাবে গণনা করবেন",
+        "steps": [
+          "অন্তঃব্যাসার্ধ r ও অর্ধপরিসীমা s চিহ্নিত করুন।",
+          "প্রথম ক্ষেত্রে r বসান।",
+          "দ্বিতীয় ক্ষেত্রে s বসান।",
+          "ক্ষেত্রফল পেতে তাদের গুণ করুন।"
+        ]
+      },
+      "example": {
+        "h2": "সমাধানসহ উদাহরণ",
+        "intro": "অন্তঃব্যাসার্ধ যদি 2 এবং অর্ধপরিসীমা যদি 12 হয় (যেমন 6-8-10 ত্রিভুজে):",
+        "lines": [
+          "A = r \\times s",
+          "A = 2 \\times 12",
+          "A = 24"
+        ],
+        "answer": "ক্ষেত্রফল 24 বর্গ একক।"
+      },
+      "extraSections": [
+        {
+          "h2": "এটি কোথা থেকে আসে?",
+          "paragraphs": [
+            "ত্রিভুজটিকে তিনটি ছোট ত্রিভুজে ভাগ করে, যাদের প্রতিটির উচ্চতা r এবং ভূমি a, b ও c, তাদের মোট ক্ষেত্রফল হলো 0.5*a*r + 0.5*b*r + 0.5*c*r = r*(a+b+c)/2 = r*s।"
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "ক্ষেত্রফল ক্যালকুলেটর"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "অতিভুজ ও লম্ব থেকে সমকোণী ত্রিভুজের ক্ষেত্রফল ক্যালকুলেটর"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "এটি কি অ-সমকোণী ত্রিভুজের ক্ষেত্রেও কাজ করে?",
+          "answer": "হ্যাঁ, A = rs যেকোনো ত্রিভুজের ক্ষেত্রে কাজ করে।"
+        }
+      ]
+    },
+    "right-triangle-area-from-hypotenuse-and-altitude-calculator": {
+      "slug": "right-triangle-area-from-hypotenuse-and-altitude-calculator",
+      "url": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+      "h1": "অতিভুজ ও লম্ব থেকে সমকোণী ত্রিভুজের ক্ষেত্রফল",
+      "metaTitle": "অতিভুজ ও লম্ব থেকে সমকোণী ত্রিভুজের ক্ষেত্রফল",
+      "metaDescription": "অতিভুজকে ভূমি হিসেবে এবং অতিভুজের উপর লম্বকে উচ্চতা হিসেবে ব্যবহার করে ক্ষেত্রফল হিসাব করুন।",
+      "formulaSlug": "area-ch",
+      "toolPurpose": "অতিভুজ এবং অতিভুজের উপর অঙ্কিত লম্ব জানা থাকলে মোট ক্ষেত্রফল হিসাব করুন।",
+      "intro": "ক্ষেত্রফল হিসাব করতে অতিভুজ c ও লম্ব h বসান।",
+      "quickSummary": {
+        "h2": "এই ক্যালকুলেটরটি যা সমাধান করে",
+        "intro": "ত্রিভুজের ভূমি হিসেবে অতিভুজ ব্যবহার করে ক্ষেত্রফল বের করে।",
+        "cards": [
+          {
+            "label": "পরিচিত মান",
+            "value": "অতিভুজ c ও লম্ব h"
+          },
+          {
+            "label": "খুঁজে পায়",
+            "value": "ক্ষেত্রফল (A)"
+          },
+          {
+            "label": "প্রধান সূত্র",
+            "value": "A = (c × h) / 2"
+          },
+          {
+            "label": "জন্য সেরা",
+            "value": "অভিক্ষেপ সমস্যা ও বিকল্প ভূমির দৃষ্টিভঙ্গি"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "ক্ষেত্রফল",
+        "fields": [
+          {
+            "key": "c",
+            "label": "হাইপোটেনাস গ",
+            "min": 0
+          },
+          {
+            "key": "h",
+            "label": "উচ্চতা h",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "চিত্র: অতিভুজের উপর লম্ব",
+        "intro": "চিত্রে সমকোণী ত্রিভুজটি ঘোরানো অবস্থায় দেখানো হয়েছে যাতে অতিভুজটি ভূমি হিসেবে সমতলে থাকে।",
+        "caption": "ক্ষেত্রফলের সূত্র A = (c × h) / 2।",
+        "formulaLabel": "A = (c × h) / 2",
+        "keyLabel": "ডায়াগ্রাম কী",
+        "sides": {
+          "a": {
+            "label": "c = অতিভুজ (ভূমি)",
+            "description": "ভূমি হিসেবে ব্যবহৃত দীর্ঘ বাহু।"
+          },
+          "b": {
+            "label": "h = উচ্চতা (উচ্চতা)",
+            "description": "অতিভুজের উপর লম্ব উচ্চতা।"
+          },
+          "c": {
+            "label": "A = ক্ষেত্রফল",
+            "description": "মোট বর্গ একক।"
+          }
+        },
+        "result": {
+          "label": "A = ক্ষেত্রফল",
+          "description": "(c × h) / 2 হিসাবে গণনা করা হয়।"
+        },
+        "notes": [
+          "লম্ব h অবশ্যই c/2-এর চেয়ে কম বা সমান হতে হবে।"
+        ]
+      },
+      "formulaSection": {
+        "h2": "ক্ষেত্রফলের সূত্র",
+        "paragraphs": [
+          "ত্রিভুজের ক্ষেত্রফল হলো 1/2 × ভূমি × উচ্চতা। আপনি যদি অতিভুজকে (c) ভূমি হিসেবে ব্যবহার করেন, তাহলে সংশ্লিষ্ট উচ্চতা হবে অতিভুজের উপর লম্ব (h)।"
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} c h"
+        ]
+      },
+      "howTo": {
+        "h2": "কীভাবে গণনা করবেন",
+        "steps": [
+          "অতিভুজ c লিখুন।",
+          "উচ্চতা h লিখুন।",
+          "গণনা ক্লিক করুন।"
+        ]
+      },
+      "example": {
+        "h2": "সমাধানসহ উদাহরণ",
+        "intro": "অতিভুজ যদি 10 এবং লম্ব যদি 4.8 হয়:",
+        "lines": [
+          "A = \\frac{1}{2} c h",
+          "A = 0.5 \\times 10 \\times 4.8",
+          "A = 24"
+        ],
+        "answer": "ক্ষেত্রফল 24 বর্গ একক।"
+      },
+      "extraSections": [
+        {
+          "h2": "উচ্চতার সীমা",
+          "paragraphs": [
+            "যেকোনো সমকোণী ত্রিভুজে, অতিভুজের উপর লম্বের সর্বোচ্চ সম্ভাব্য মান ঠিক অতিভুজের দৈর্ঘ্যের অর্ধেক। h > c/2 হলে, এমন কোনো সমকোণী ত্রিভুজের অস্তিত্ব থাকে না।"
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "ক্ষেত্রফল ক্যালকুলেটর"
+        },
+        {
+          "href": "/right-triangle-altitude-calculator/",
+          "label": "উচ্চতা ক্যালকুলেটর"
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "অন্তঃব্যাসার্ধ ও অর্ধপরিসীমা থেকে সমকোণী ত্রিভুজের ক্ষেত্রফল ক্যালকুলেটর"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "এটি কি লেগ ব্যবহারের ক্ষেত্রফলের সমান?",
+          "answer": "হ্যাঁ। (a × b) / 2 সবসময় ঠিক (c × h) / 2-এর সমান।"
         }
       ]
     }
@@ -5117,12 +8394,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "description": "脚 b は直角の反対側で、a と c を加えます。"
           },
           "c": {
-            "label": "c = hypotenuse",
+            "label": "c = 斜辺",
             "description": "斜辺 c は直角の反対側の最も長い辺であり、境界を完成します。"
           }
         },
         "result": {
-          "label": "P = total boundary length",
+          "label": "P = 境界の全長",
           "description": "計算機は a + b + c を加算し、選択した長さ単位で周長を返します。"
         },
         "notes": [
@@ -5225,7 +8502,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "与えられた値: a = 8、b = 15、c = 17。これは、すべての辺が整数である別のピタゴラス トリプルです。"
           ],
           "listItems": [
-            "P = 8 + 15 + 17 = 40 units",
+            "P = 8 + 15 + 17 = 40 単位",
             "検証: 8² + 15² = 64 + 225 = 289 = 17² ✓",
             "このトリプルは、40 ユニットのフェンスまたはトリム長が必要な建設レイアウトに役立ちます。"
           ]
@@ -5452,12 +8729,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "description": "脚 b は a と直角を形成し、外周と半周の両方に寄与します。"
           },
           "c": {
-            "label": "c = hypotenuse",
+            "label": "c = 斜辺",
             "description": "斜辺 c は最長の辺であり、合計が半分になる前に含める必要があります。"
           }
         },
         "result": {
-          "label": "s = half of the boundary total",
+          "label": "s = 境界の合計の半分",
           "description": "計算機はまず a + b + c を加算し、次にその周囲を 2 で割ります。"
         },
         "notes": [
@@ -5654,8 +8931,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
-          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
-        },
+          "label": "内接円の半径と半周長から求める直角三角形の面積計算機"
+        }
       ],
       "faqs": [
         {
@@ -5689,6 +8966,401 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "question": "半周の答えが正しいかどうかを確認するにはどうすればよいですか?",
           "answer": "半周長を2倍にします。結果は全周と等しくなるはずです。たとえば、s = 15 の場合、P は 30 でなければなりません。"
+        }
+      ]
+    },
+    "right-triangle-area-from-leg-and-angle-calculator": {
+      "slug": "right-triangle-area-from-leg-and-angle-calculator",
+      "url": "/right-triangle-area-from-leg-and-angle-calculator/",
+      "h1": "脚と角度から求める直角三角形の面積",
+      "metaTitle": "脚と角度から求める直角三角形の面積計算機 | 面積を求める",
+      "metaDescription": "1辺と角度から直角三角形の面積を計算します。サインとコサインの面積公式を使い、手順付きの解法を示します。",
+      "formulaSlug": "area-sin-a",
+      "toolPurpose": "1つの脚、斜辺、その間の角度を入力すると、三角関数の公式を使って面積を計算できます。",
+      "intro": "脚 b、斜辺 c、角度 A を入力して、直角三角形の正確な面積を求めてください。",
+      "quickSummary": {
+        "h2": "このツールが解くもの",
+        "intro": "2辺とその間の角度しか分からない場合は、この計算機を使ってください。この方法は三角関数を使い、第3の辺を必要とせずに正確な面積を求めます。",
+        "cards": [
+          {
+            "label": "既知の値",
+            "value": "脚 b、斜辺 c、角度 A"
+          },
+          {
+            "label": "発見",
+            "value": "面積 (A)"
+          },
+          {
+            "label": "主な式",
+            "value": "A = (b × c × sin(A)) / 2"
+          },
+          {
+            "label": "こんな方に最適",
+            "value": "三角関数の問題、測量、第3の辺が分からない場合"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "面積",
+        "fields": [
+          {
+            "key": "b",
+            "label": "脚b",
+            "min": 0
+          },
+          {
+            "key": "c",
+            "label": "斜辺 c",
+            "min": 0
+          },
+          {
+            "key": "A",
+            "label": "角 A",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "直角三角形の図: サインによる面積",
+        "intro": "図は、辺 b と c が間の角度 A をなす三角形を示しています。",
+        "caption": "サインの公式を使った直角三角形の面積。",
+        "formulaLabel": "A = 0.5 × b × c × sin(A)",
+        "keyLabel": "ダイアグラムキー",
+        "sides": {
+          "a": {
+            "label": "a = 対辺",
+            "description": "この計算には必要ありません。"
+          },
+          "b": {
+            "label": "b = 隣辺",
+            "description": "角度をなす既知の辺の1つ。"
+          },
+          "c": {
+            "label": "c = 斜辺",
+            "description": "角度をなすもう1つの既知の辺。"
+          }
+        },
+        "result": {
+          "label": "A = 面積",
+          "description": "三角関数のサインを使って計算した面積。"
+        },
+        "notes": [
+          "角度は度数で入力してください。",
+          "公式 A = 1/2 * ab * sin(C) はすべての三角形に適用できます。"
+        ]
+      },
+      "formulaSection": {
+        "h2": "サインを使った面積の公式",
+        "paragraphs": [
+          "任意の三角形の2辺とその間の角度が分かれば、面積のサインの法則を使って面積を求められます: A = (1/2) * side1 * side2 * sin(angle)。",
+          "脚、斜辺、その間の角度が分かる直角三角形では、これは A = (1/2) * b * c * sin(A) となります。"
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} b c \\sin(A)"
+        ]
+      },
+      "howTo": {
+        "h2": "サインを使って面積を計算する方法",
+        "steps": [
+          "脚、斜辺、間の角度を特定します。",
+          "脚 b を1番目の入力欄に入力します。",
+          "斜辺 c を2番目の入力欄に入力します。",
+          "角度 A を度数で3番目の入力欄に入力します。",
+          "「計算」をクリックすると面積が表示されます。"
+        ]
+      },
+      "example": {
+        "h2": "実例: 角度を使った面積",
+        "intro": "脚 b が 4、斜辺 c が 5、角度 A が 36.87° の場合:",
+        "lines": [
+          "A = 0.5 \\times b \\times c \\times \\sin(A)",
+          "A = 0.5 \\times 4 \\times 5 \\times \\sin(36.87^\\circ)",
+          "A = 10 \\times 0.6",
+          "A = 6"
+        ],
+        "answer": "面積は 6 平方単位です。"
+      },
+      "extraSections": [
+        {
+          "h2": "面積に三角関数を使う理由",
+          "paragraphs": [
+            "三角形の3辺すべてを簡単に測れない場合でも、2辺とその間の角度なら測れることがあります（土地の測量など）。",
+            "この三角関数による方法では、三平方の定理で不足している辺を先に解く必要がなく、正確な面積が得られます。"
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-from-legs-calculator/",
+          "label": "脚から求める直角三角形の面積計算機"
+        },
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "直角三角形の面積計算機"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "もう一方の角度が分かる場合はどうすればよいですか？",
+          "answer": "代わりに脚 a と角度 B が分かる場合は、A = (1/2) * a * c * sin(B) を使えます。"
+        }
+      ]
+    },
+    "right-triangle-area-from-inradius-and-semiperimeter-calculator": {
+      "slug": "right-triangle-area-from-inradius-and-semiperimeter-calculator",
+      "url": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+      "h1": "内接円の半径と半周長から求める直角三角形の面積",
+      "metaTitle": "内接円の半径から求める直角三角形の面積計算機",
+      "metaDescription": "内接円の半径（r）と半周長（s）から、A = r × s を使って面積を計算します。",
+      "formulaSlug": "area-rs",
+      "toolPurpose": "内接円の半径と半周長が分かる場合に、直角三角形の全体の面積を計算します。",
+      "intro": "内接円の半径 r と半周長 s を入力して、直角三角形の面積を計算します。",
+      "quickSummary": {
+        "h2": "この計算機が解くもの",
+        "intro": "このツールは、三角形の内接円と半周長の間の優れた関係を使い、面積を即座に求めます。",
+        "cards": [
+          {
+            "label": "既知の値",
+            "value": "内接円の半径 r と半周長 s"
+          },
+          {
+            "label": "発見",
+            "value": "面積 (A)"
+          },
+          {
+            "label": "主な式",
+            "value": "A = r × s"
+          },
+          {
+            "label": "こんな方に最適",
+            "value": "高度な幾何学と円の定理"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "面積",
+        "fields": [
+          {
+            "key": "r",
+            "label": "内接円の半径 r",
+            "min": 0
+          },
+          {
+            "key": "s",
+            "label": "半周長",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "図: 内接円の半径と半周長",
+        "intro": "図は、半径 r の内接円を示しています。三角形全体の面積は、ちょうど内接円の半径 r に半周長 s を掛けたものと等しくなります。",
+        "caption": "面積の公式 A = r × s。",
+        "formulaLabel": "A = r × s",
+        "keyLabel": "ダイアグラムキー",
+        "sides": {
+          "a": {
+            "label": "r = 内接円半径",
+            "description": "内接円の半径。"
+          },
+          "b": {
+            "label": "s = 半周長",
+            "description": "境界の距離の半分。"
+          },
+          "c": {
+            "label": "A = 面積",
+            "description": "囲まれた全体の広さ。"
+          }
+        },
+        "result": {
+          "label": "A = 面積",
+          "description": "r × s として計算されます。"
+        },
+        "notes": [
+          "r と s はどちらも正の長さでなければなりません。"
+        ]
+      },
+      "formulaSection": {
+        "h2": "面積の公式",
+        "paragraphs": [
+          "任意の三角形について、面積は内接円の半径（r）に半周長（s）を掛けることで求められます。",
+          "この公式（A = r × s）は、直角三角形だけでなく、すべての三角形に普遍的に成り立ちます。"
+        ],
+        "formulas": [
+          "A = r \\times s"
+        ]
+      },
+      "howTo": {
+        "h2": "計算方法",
+        "steps": [
+          "内接円の半径 r と半周長 s を特定します。",
+          "r を1番目の欄に入力します。",
+          "s を2番目の欄に入力します。",
+          "それらを掛けると面積が得られます。"
+        ]
+      },
+      "example": {
+        "h2": "計算例",
+        "intro": "内接円の半径が 2、半周長が 12 の場合（6-8-10 の三角形のように）:",
+        "lines": [
+          "A = r \\times s",
+          "A = 2 \\times 12",
+          "A = 24"
+        ],
+        "answer": "面積は 24 平方単位です。"
+      },
+      "extraSections": [
+        {
+          "h2": "これはどこから来るのですか？",
+          "paragraphs": [
+            "三角形を、高さ r、底辺 a、b、c を持つ3つの小さい三角形に分割すると、その合計面積は 0.5*a*r + 0.5*b*r + 0.5*c*r = r*(a+b+c)/2 = r*s となります。"
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "面積計算機"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "斜辺と高さから求める直角三角形の面積計算機"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "これは直角三角形でなくても使えますか？",
+          "answer": "はい。A = rs はどんな三角形でも成り立ちます。"
+        }
+      ]
+    },
+    "right-triangle-area-from-hypotenuse-and-altitude-calculator": {
+      "slug": "right-triangle-area-from-hypotenuse-and-altitude-calculator",
+      "url": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+      "h1": "斜辺と高さから求める直角三角形の面積",
+      "metaTitle": "斜辺と高さから求める直角三角形の面積",
+      "metaDescription": "斜辺を底辺とし、斜辺への高さを高さとして使って面積を計算します。",
+      "formulaSlug": "area-ch",
+      "toolPurpose": "斜辺と、斜辺に下ろした高さが分かる場合に、全体の面積を計算します。",
+      "intro": "斜辺 c と高さ h を入力して面積を計算します。",
+      "quickSummary": {
+        "h2": "この計算機が解くもの",
+        "intro": "斜辺を三角形の底辺として使うことで面積を求めます。",
+        "cards": [
+          {
+            "label": "既知の値",
+            "value": "斜辺 c と高さ h"
+          },
+          {
+            "label": "発見",
+            "value": "面積 (A)"
+          },
+          {
+            "label": "主な式",
+            "value": "A = (c × h) / 2"
+          },
+          {
+            "label": "こんな方に最適",
+            "value": "射影の問題や、別の底辺の視点"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "面積",
+        "fields": [
+          {
+            "key": "c",
+            "label": "斜辺 c",
+            "min": 0
+          },
+          {
+            "key": "h",
+            "label": "高さ h",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "図: 斜辺への高さ",
+        "intro": "図は、斜辺が底辺として平らに横たわるように回転させた直角三角形を示しています。",
+        "caption": "面積の公式 A = (c × h) / 2。",
+        "formulaLabel": "A = (c × h) / 2",
+        "keyLabel": "ダイアグラムキー",
+        "sides": {
+          "a": {
+            "label": "c = 斜辺 (底辺)",
+            "description": "底辺として使う長い辺。"
+          },
+          "b": {
+            "label": "h = 高さ (高さ)",
+            "description": "斜辺への垂直な高さ。"
+          },
+          "c": {
+            "label": "A = 面積",
+            "description": "平方単位の合計。"
+          }
+        },
+        "result": {
+          "label": "A = 面積",
+          "description": "(c × h) / 2 として計算されます。"
+        },
+        "notes": [
+          "高さ h は c/2 以下でなければなりません。"
+        ]
+      },
+      "formulaSection": {
+        "h2": "面積の公式",
+        "paragraphs": [
+          "三角形の面積は 1/2 × 底辺 × 高さ です。斜辺（c）を底辺として使う場合、対応する高さは斜辺への高さ（h）です。"
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} c h"
+        ]
+      },
+      "howTo": {
+        "h2": "計算方法",
+        "steps": [
+          "斜辺 c を入力してください。",
+          "高さ h を入力してください。",
+          "「計算」をクリックします。"
+        ]
+      },
+      "example": {
+        "h2": "計算例",
+        "intro": "斜辺が 10、高さが 4.8 の場合:",
+        "lines": [
+          "A = \\frac{1}{2} c h",
+          "A = 0.5 \\times 10 \\times 4.8",
+          "A = 24"
+        ],
+        "answer": "面積は 24 平方単位です。"
+      },
+      "extraSections": [
+        {
+          "h2": "高さの制限",
+          "paragraphs": [
+            "どの直角三角形でも、斜辺への高さの最大値はちょうど斜辺の長さの半分です。h > c/2 であれば、そのような直角三角形は存在しません。"
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "面積計算機"
+        },
+        {
+          "href": "/right-triangle-altitude-calculator/",
+          "label": "高さ計算機"
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "内接円の半径と半周長から求める直角三角形の面積計算機"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "これは脚を使った面積と同じですか？",
+          "answer": "はい。(a × b) / 2 は常に (c × h) / 2 と正確に等しくなります。"
         }
       ]
     }
@@ -5761,12 +9433,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "description": "다리 b는 직각의 반대쪽이며 a와 c가 함께 추가됩니다."
           },
           "c": {
-            "label": "c = hypotenuse",
+            "label": "c = 빗변",
             "description": "빗변 c는 직각의 반대편에 있는 가장 긴 변이며 경계를 완성합니다."
           }
         },
         "result": {
-          "label": "P = total boundary length",
+          "label": "P = 전체 경계 길이",
           "description": "계산기는 a + b + c를 더하고 선택한 선형 단위로 둘레를 반환합니다."
         },
         "notes": [
@@ -5869,7 +9541,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "주어진 값: a = 8, b = 15, c = 17. 이것은 모든 변이 정수인 또 다른 피타고라스 삼중입니다."
           ],
           "listItems": [
-            "P = 8 + 15 + 17 = 40 units",
+            "P = 8 + 15 + 17 = 40 단위",
             "검증: 8² + 15² = 64 + 225 = 289 = 17² ✓",
             "이 트리플은 40단위 펜스 또는 트림 길이가 필요한 건축 레이아웃에 유용합니다."
           ]
@@ -6114,7 +9786,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         "h2": "직각삼각형 반둘레 공식",
         "paragraphs": [
           "반둘레는 삼각형 둘레의 절반입니다. 직각삼각형에서는 세 변을 더한 뒤 2로 나누면 됩니다.",
-          "공식은 s = (a + b + c) / 2입니다. 변이 cm이면 s도 cm, 변이 m이면 s도 m로 표시합니다."
+          "공식은 s = (a + b + c) / 2입니다. 변이 cm이면 s도 cm, 변이 m이면 s도 m로 표시합니다.",
+          "<a href=\"/right-triangle-perimeter-calculator/\" class=\"text-primary hover:underline\">둘레</a>와 마찬가지로, 반둘레는 선형 단위로 측정됩니다. 변이 미터 단위이면 s도 미터 단위입니다. 변이 인치 단위이면 s도 인치 단위입니다."
         ],
         "formulas": [
           "P = a + b + c",
@@ -6129,7 +9802,9 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "가장 긴 변인 빗변 c를 확인합니다.",
           "a, b, c가 모두 같은 단위인지 확인합니다.",
           "세 값을 입력하고 계산을 누릅니다.",
-          "결과 s가 전체 둘레의 절반인지 단계별 풀이로 확인합니다."
+          "결과 s가 전체 둘레의 절반인지 단계별 풀이로 확인합니다.",
+          "표시된 단계를 확인하세요. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>는 먼저 <a href=\"/right-triangle-perimeter-calculator/\" class=\"text-primary hover:underline\">둘레</a> 합계를 표시한 다음, 반둘레 결과를 표시해야 합니다.",
+          "헤론 방식의 <a href=\"/right-triangle-area-calculator/\" class=\"text-primary hover:underline\">넓이</a> 관계나 <a href=\"/right-triangle-inradius-calculator/\" class=\"text-primary hover:underline\">내접원 반지름</a>처럼 반둘레를 요구하는 이후의 모든 공식에 s를 사용하세요."
         ]
       },
       "example": {
@@ -6161,7 +9836,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "h2": "둘레와 반둘레의 차이",
           "paragraphs": [
-            "둘레 P는 삼각형 바깥을 한 바퀴 도는 전체 길이입니다. 반둘레 s는 그 길이의 절반입니다. 그래서 P = 2s이고 s = P / 2입니다."
+            "둘레 P는 삼각형 바깥을 한 바퀴 도는 전체 길이입니다. 반둘레 s는 그 길이의 절반입니다. 그래서 P = 2s이고 s = P / 2입니다.",
+            "모서리 장식, 울타리, 가장자리 거리처럼 전체 경계 길이를 묻는 문제에서는 <a href=\"/right-triangle-perimeter-calculator/\" class=\"text-primary hover:underline\">둘레</a>를 사용하세요. 공식에서 특별히 s를 요구하거나, <a href=\"/right-triangle-area-calculator/\" class=\"text-primary hover:underline\">넓이</a>와 <a href=\"/right-triangle-radius-calculator/\" class=\"text-primary hover:underline\">반지름</a> 관계를 위해 값을 준비할 때는 반둘레를 사용하세요."
           ],
           "listTitle": "빠른 비교:",
           "listItems": [
@@ -6174,13 +9850,16 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "h2": "짧은 계산 예",
           "paragraphs": [
-            "공식은 모든 직각삼각형에 같은 방식으로 적용됩니다. 먼저 세 변을 더하고, 마지막에 2로 나누면 됩니다."
+            "공식은 모든 직각삼각형에 같은 방식으로 적용됩니다. 먼저 세 변을 더하고, 마지막에 2로 나누면 됩니다.",
+            "모든 삼각형에 대해, 헤론의 공식은 s를 사용해 세 변으로부터 <a href=\"/right-triangle-area-calculator/\" class=\"text-primary hover:underline\">넓이</a>를 계산합니다: A = sqrt(s(s-a)(s-b)(s-c)). 직각삼각형에서는 보통 A = (a x b) / 2를 사용하지만, 헤론의 공식은 검증에도 여전히 유용합니다.",
+            "반둘레는 <a href=\"/right-triangle-inradius-calculator/\" class=\"text-primary hover:underline\">내접원 반지름</a>과도 연결됩니다. 많은 삼각형 공식에서 <a href=\"/right-triangle-area-calculator/\" class=\"text-primary hover:underline\">넓이</a>는 내접원 반지름과 반둘레의 곱과 같습니다: A = r x s. s를 알면 r을 구하거나 내접원 반지름 결과를 검증하기가 더 쉬워집니다."
           ],
           "listTitle": "예시:",
           "listItems": [
             "5-12-13 삼각형: s = (5 + 12 + 13) / 2 = 15",
             "8-15-17 삼각형: s = (8 + 15 + 17) / 2 = 20",
-            "2.5-6-6.5 삼각형: s = (2.5 + 6 + 6.5) / 2 = 7.5"
+            "2.5-6-6.5 삼각형: s = (2.5 + 6 + 6.5) / 2 = 7.5",
+            "<a href=\"/right-triangle-perimeter-calculator/\" class=\"text-primary hover:underline\">둘레</a> 구하기: P = 2s"
           ]
         },
         {
@@ -6192,8 +9871,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listItems": [
             "a, b, c가 같은 단위인지 확인합니다.",
             "c가 가장 긴 변인지 확인합니다.",
-            "직각삼각형이라면 a^2 + b^2 = c^2 관계가 맞아야 합니다.",
-            "결과 s에는 제곱 단위를 쓰지 않습니다."
+            "직각삼각형이라면 a^2 + b^2 = c^2 관계가 맞아야 합니다."
           ]
         },
         {
@@ -6205,9 +9883,75 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listItems": [
             "a와 b만 더하지 말고 빗변 c도 포함합니다.",
             "세 변을 모두 더한 뒤 2로 나눕니다.",
-            "s를 전체 둘레 P로 쓰지 않습니다.",
-            "서로 다른 단위를 그대로 더하지 않습니다.",
-            "계산 후 2s가 P와 같은지 확인합니다."
+            "s를 전체 둘레 P로 쓰지 않습니다."
+          ]
+        },
+        {
+          "h2": "예제 3 - 소수인 변의 길이",
+          "paragraphs": [
+            "소수도 정수와 같은 방식으로 작동합니다. a = 2.5, b = 6, c = 6.5가 주어지면:"
+          ],
+          "listItems": [
+            "s = (2.5 + 6 + 6.5) / 2",
+            "s = 15 / 2",
+            "s = 7.5 단위"
+          ]
+        },
+        {
+          "h2": "이 도구를 사용할 때",
+          "paragraphs": [
+            "기하 문제에서 직각삼각형의 세 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변의 길이</a>를 모두 제공하고 s, 반<a href=\"/right-triangle-perimeter-calculator/\" class=\"text-primary hover:underline\">둘레</a>, 또는 반둘레에 의존하는 공식을 구하라고 할 때 이 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>를 사용하세요.",
+            "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">빠진 변</a>을 구한 뒤 빠르게 확인하는 용도로도 유용합니다. a, b, c를 알면 반둘레는 단순하고 정확해야 합니다. 변들을 더한 다음 2로 나누세요."
+          ],
+          "listTitle": "좋은 사용 사례는 다음과 같습니다:",
+          "listItems": [
+            "세 개의 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변의 길이</a>로부터 헤론의 공식 입력값을 준비하기.",
+            "r = A / s로 <a href=\"/right-triangle-inradius-calculator/\" class=\"text-primary hover:underline\">내접원 반지름</a> 계산 확인하기.",
+            "기하 숙제나 증명에서 반복적인 산술 줄이기.",
+            "반 경계 값을 이용한 삼각형 크기 비교.",
+            "<a href=\"/right-triangle-perimeter-calculator/\" class=\"text-primary hover:underline\">둘레</a>와 반둘레 결과가 일치하는지 검증하기: P는 항상 2s와 같아야 합니다."
+          ]
+        },
+        {
+          "h2": "반둘레 단위 팁",
+          "paragraphs": [
+            "반둘레는 길이이므로 일반적인 길이 단위 변환 규칙을 따릅니다. 제곱 단위로 측정되지 않습니다.",
+            "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> 입력값의 단위가 서로 다르면, 먼저 변환하거나 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>의 단위 선택기를 일관되게 사용하세요. 피트, 인치, 센티미터를 직접 더하면 의미 없는 결과가 나옵니다."
+          ],
+          "listTitle": "다음 단위 규칙을 기억하세요:",
+          "listItems": [
+            "모든 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변의 길이</a>는 결과를 비교하기 전에 같은 단위 체계를 나타내야 합니다.",
+            "출력 s는 cm, m, in, ft와 같은 선형 단위를 사용합니다.",
+            "반둘레를 계산할 때 단위를 제곱하지 마세요.",
+            "계산 후 변을 변환한다면, s도 같은 선형 변환 계수로 변환하세요."
+          ]
+        },
+        {
+          "h2": "흔한 반둘레 실수",
+          "paragraphs": [
+            "대부분의 반둘레 실수는 공식이 단순해 보이기 때문에 발생합니다. 산술은 쉽지만, 설정은 여전히 중요합니다."
+          ],
+          "listTitle": "다음 오류를 주의하세요:",
+          "listItems": [
+            "변을 더한 후 2로 나누는 것을 잊기.",
+            "먼저 각 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>을 2로 나누다가 합계를 놓치기.",
+            "두 변만 사용하고 빗변을 빠뜨리기.",
+            "s를 <a href=\"/right-triangle-perimeter-calculator/\" class=\"text-primary hover:underline\">둘레</a> P와 혼동하기. P = 2s임을 기억하세요.",
+            "직각삼각형을 이루지 않는 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변의 길이</a> 사용하기.",
+            "같은 계산에서 서로 다른 단위 혼합하기."
+          ]
+        },
+        {
+          "h2": "반둘레가 넓이 및 내접원 반지름과 연결되는 방식",
+          "paragraphs": [
+            "직각삼각형에서는 두 변이 수직이므로 <a href=\"/right-triangle-area-calculator/\" class=\"text-primary hover:underline\">넓이</a>를 A = (a x b) / 2로 직접 계산할 수 있습니다. 넓이와 반둘레를 알면 <a href=\"/right-triangle-inradius-calculator/\" class=\"text-primary hover:underline\">내접원 반지름</a>을 r = A / s로 확인할 수 있습니다.",
+            "이로써 반둘레는 유용한 중간값이 됩니다. <a href=\"/right-triangle-area-calculator/\" class=\"text-primary hover:underline\">넓이 공식</a>을 대체하지는 않지만, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변의 길이</a>를 삼각형 내부 원의 <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">측정값</a>과 연결하는 데 도움이 됩니다."
+          ],
+          "listTitle": "3-4-5 삼각형 예시:",
+          "listItems": [
+            "<a href=\"/right-triangle-area-calculator/\" class=\"text-primary hover:underline\">넓이</a>: A = (3 x 4) / 2 = 6",
+            "반둘레: s = (3 + 4 + 5) / 2 = 6",
+            "<a href=\"/right-triangle-inradius-calculator/\" class=\"text-primary hover:underline\">내접원 반지름</a> 확인: r = A / s = 6 / 6 = 1"
           ]
         }
       ],
@@ -6234,8 +9978,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
-          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
-        },
+          "label": "내접원 반지름과 반둘레로 구하는 직각삼각형 넓이 계산기"
+        }
       ],
       "faqs": [
         {
@@ -6261,6 +10005,409 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "question": "답이 맞는지 어떻게 확인하나요?",
           "answer": "반둘레 s에 2를 곱해 보세요. 결과가 전체 둘레 P와 같으면 계산이 맞습니다."
+        },
+        {
+          "question": "반둘레는 제곱 단위를 사용하나요?",
+          "answer": "아니요. 반둘레는 길이이므로 cm, m, in, ft와 같은 선형 단위를 사용합니다. <a href=\"/right-triangle-area-calculator/\" class=\"text-primary hover:underline\">넓이</a>는 제곱 단위를 사용하지만 반둘레는 그렇지 않습니다."
+        },
+        {
+          "question": "반둘레 답이 맞는지 어떻게 확인할 수 있나요?",
+          "answer": "반둘레를 두 배로 하세요. 결과가 전체 <a href=\"/right-triangle-perimeter-calculator/\" class=\"text-primary hover:underline\">둘레</a>와 같아야 합니다. 예를 들어, s = 15이면 P는 30이어야 합니다."
+        }
+      ]
+    },
+    "right-triangle-area-from-leg-and-angle-calculator": {
+      "slug": "right-triangle-area-from-leg-and-angle-calculator",
+      "url": "/right-triangle-area-from-leg-and-angle-calculator/",
+      "h1": "한 변과 각으로 구하는 직각삼각형 넓이",
+      "metaTitle": "한 변과 각으로 구하는 직각삼각형 넓이 계산기 | 넓이 구하기",
+      "metaDescription": "한 변과 각으로부터 직각삼각형의 넓이를 계산합니다. 사인과 코사인 넓이 공식을 단계별 풀이와 함께 사용합니다.",
+      "formulaSlug": "area-sin-a",
+      "toolPurpose": "한 변, 빗변, 그리고 끼인각을 입력하여 삼각함수 공식으로 넓이를 계산하세요.",
+      "intro": "변 b, 빗변 c, 각 A를 입력하여 직각삼각형의 정확한 넓이를 구하세요.",
+      "quickSummary": {
+        "h2": "이 도구가 푸는 문제",
+        "intro": "두 변과 끼인각만 알 때 이 계산기를 사용하세요. 이 방법은 삼각법을 이용해 세 번째 변 없이도 정확한 넓이를 구합니다.",
+        "cards": [
+          {
+            "label": "알려진 값",
+            "value": "변 b, 빗변 c, 그리고 각 A"
+          },
+          {
+            "label": "찾기",
+            "value": "넓이 (A)"
+          },
+          {
+            "label": "주요 공식",
+            "value": "A = (b × c × sin(A)) / 2"
+          },
+          {
+            "label": "다음에 가장 적합",
+            "value": "삼각법 문제, 측량, 그리고 세 번째 변이 없는 경우"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "넓이",
+        "fields": [
+          {
+            "key": "b",
+            "label": "다리 b",
+            "min": 0
+          },
+          {
+            "key": "c",
+            "label": "빗변 c",
+            "min": 0
+          },
+          {
+            "key": "A",
+            "label": "각 A",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "직각삼각형 그림: 사인으로 구하는 넓이",
+        "intro": "그림은 끼인각 A를 이루는 변 b와 c가 있는 삼각형을 보여줍니다.",
+        "caption": "사인 공식을 사용한 직각삼각형 넓이.",
+        "formulaLabel": "A = 0.5 × b × c × sin(A)",
+        "keyLabel": "다이어그램 키",
+        "sides": {
+          "a": {
+            "label": "a = 대변",
+            "description": "이 계산에는 필요하지 않습니다."
+          },
+          "b": {
+            "label": "b = 인접변",
+            "description": "각을 이루는 알려진 변 중 하나."
+          },
+          "c": {
+            "label": "c = 빗변",
+            "description": "각을 이루는 또 다른 알려진 변."
+          }
+        },
+        "result": {
+          "label": "A = 넓이",
+          "description": "삼각함수 사인을 이용해 계산한 넓이."
+        },
+        "notes": [
+          "각도가 도 단위로 입력되었는지 확인하세요.",
+          "공식 A = 1/2 * ab * sin(C)는 모든 삼각형에 적용됩니다."
+        ]
+      },
+      "formulaSection": {
+        "h2": "사인을 이용한 넓이 공식",
+        "paragraphs": [
+          "삼각형의 두 변과 그 사이의 각을 알면, 넓이에 대한 사인 법칙을 이용해 넓이를 구할 수 있습니다: A = (1/2) * side1 * side2 * sin(angle).",
+          "한 변, 빗변, 그리고 그 사이의 각을 아는 직각삼각형에서는 이것이 A = (1/2) * b * c * sin(A)가 됩니다."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} b c \\sin(A)"
+        ]
+      },
+      "howTo": {
+        "h2": "사인을 이용해 넓이를 계산하는 방법",
+        "steps": [
+          "변, 빗변, 끼인각을 확인하세요.",
+          "첫 번째 입력에 변 b를 입력하세요.",
+          "두 번째 입력에 빗변 c를 입력하세요.",
+          "세 번째 입력에 각 A를 도 단위로 입력하세요.",
+          "계산하기를 클릭하면 넓이를 볼 수 있습니다."
+        ]
+      },
+      "example": {
+        "h2": "풀이 예제: 각을 이용한 넓이",
+        "intro": "변 b가 4, 빗변 c가 5, 각 A가 36.87°이면:",
+        "lines": [
+          "A = 0.5 \\times b \\times c \\times \\sin(A)",
+          "A = 0.5 \\times 4 \\times 5 \\times \\sin(36.87^\\circ)",
+          "A = 10 \\times 0.6",
+          "A = 6"
+        ],
+        "answer": "넓이는 6 제곱 단위입니다."
+      },
+      "extraSections": [
+        {
+          "h2": "넓이에 삼각법을 사용하는 이유",
+          "paragraphs": [
+            "때로는 삼각형의 세 변을 모두 쉽게 측정할 수 없지만, 두 변과 그 끼인각은 측정할 수 있습니다(토지 측량의 경우와 같이).",
+            "이 삼각법 접근 방식은 피타고라스 정리를 이용해 빠진 변을 먼저 구하지 않고도 정확한 넓이를 제공합니다."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-from-legs-calculator/",
+          "label": "두 변으로 구하는 직각삼각형 넓이 계산기"
+        },
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "직각삼각형 넓이 계산기"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "다른 각을 알면 어떻게 하나요?",
+          "answer": "변 a와 각 B를 대신 알면 A = (1/2) * a * c * sin(B)를 사용할 수 있습니다."
+        }
+      ]
+    },
+    "right-triangle-area-from-inradius-and-semiperimeter-calculator": {
+      "slug": "right-triangle-area-from-inradius-and-semiperimeter-calculator",
+      "url": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+      "h1": "내접원 반지름과 반둘레로 구하는 직각삼각형 넓이",
+      "metaTitle": "내접원 반지름으로 구하는 직각삼각형 넓이 계산기",
+      "metaDescription": "A = r × s를 이용해 내접원 반지름(r)과 반둘레(s)로부터 넓이를 계산합니다.",
+      "formulaSlug": "area-rs",
+      "toolPurpose": "내접원 반지름과 반둘레를 알 때 직각삼각형의 전체 넓이를 계산합니다.",
+      "intro": "내접원 반지름 r과 반둘레 s를 입력하여 직각삼각형의 넓이를 계산하세요.",
+      "quickSummary": {
+        "h2": "이 계산기가 푸는 문제",
+        "intro": "이 도구는 삼각형의 내접원과 반둘레 사이의 우아한 관계를 이용해 넓이를 즉시 구합니다.",
+        "cards": [
+          {
+            "label": "알려진 값",
+            "value": "내접원 반지름 r과 반둘레 s"
+          },
+          {
+            "label": "찾기",
+            "value": "넓이 (A)"
+          },
+          {
+            "label": "주요 공식",
+            "value": "A = r × s"
+          },
+          {
+            "label": "다음에 가장 적합",
+            "value": "고급 기하학과 원 정리"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "넓이",
+        "fields": [
+          {
+            "key": "r",
+            "label": "내접원 반지름 r",
+            "min": 0
+          },
+          {
+            "key": "s",
+            "label": "반둘레 s",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "그림: 내접원 반지름과 반둘레",
+        "intro": "그림은 반지름 r인 내접원을 보여줍니다. 전체 삼각형의 넓이는 정확히 내접원 반지름에 반둘레를 곱한 값과 같습니다.",
+        "caption": "넓이 공식 A = r × s.",
+        "formulaLabel": "A = r × s",
+        "keyLabel": "다이어그램 키",
+        "sides": {
+          "a": {
+            "label": "r = 반지름",
+            "description": "내접원의 반지름."
+          },
+          "b": {
+            "label": "s = 반둘레",
+            "description": "경계 거리의 절반."
+          },
+          "c": {
+            "label": "A = 넓이",
+            "description": "둘러싸인 전체 공간."
+          }
+        },
+        "result": {
+          "label": "A = 넓이",
+          "description": "r × s로 계산됩니다."
+        },
+        "notes": [
+          "r과 s는 모두 양의 길이여야 합니다."
+        ]
+      },
+      "formulaSection": {
+        "h2": "넓이 공식",
+        "paragraphs": [
+          "모든 삼각형에서 넓이는 내접원 반지름(r)에 반둘레(s)를 곱하여 구할 수 있습니다.",
+          "이 공식(A = r × s)은 직각삼각형뿐만 아니라 모든 삼각형에 보편적으로 적용됩니다."
+        ],
+        "formulas": [
+          "A = r \\times s"
+        ]
+      },
+      "howTo": {
+        "h2": "계산 방법",
+        "steps": [
+          "내접원 반지름 r과 반둘레 s를 확인하세요.",
+          "첫 번째 필드에 r을 입력하세요.",
+          "두 번째 필드에 s를 입력하세요.",
+          "두 값을 곱하면 넓이를 얻을 수 있습니다."
+        ]
+      },
+      "example": {
+        "h2": "풀이 예제",
+        "intro": "내접원 반지름이 2이고 반둘레가 12이면(6-8-10 삼각형에서와 같이):",
+        "lines": [
+          "A = r \\times s",
+          "A = 2 \\times 12",
+          "A = 24"
+        ],
+        "answer": "넓이는 24 제곱 단위입니다."
+      },
+      "extraSections": [
+        {
+          "h2": "이것은 어디에서 비롯되나요?",
+          "paragraphs": [
+            "삼각형을 각각 높이가 r이고 밑변이 a, b, c인 세 개의 작은 삼각형으로 나누면, 전체 넓이는 0.5*a*r + 0.5*b*r + 0.5*c*r = r*(a+b+c)/2 = r*s가 됩니다."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "넓이 계산기"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "빗변과 높이로 구하는 직각삼각형 넓이 계산기"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "직각삼각형이 아닌 삼각형에도 적용되나요?",
+          "answer": "네, A = rs는 모든 삼각형에 적용됩니다."
+        }
+      ]
+    },
+    "right-triangle-area-from-hypotenuse-and-altitude-calculator": {
+      "slug": "right-triangle-area-from-hypotenuse-and-altitude-calculator",
+      "url": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+      "h1": "빗변과 높이로 구하는 직각삼각형 넓이",
+      "metaTitle": "빗변과 높이로 구하는 직각삼각형 넓이",
+      "metaDescription": "빗변을 밑변으로, 빗변에 내린 높이를 높이로 사용하여 넓이를 계산합니다.",
+      "formulaSlug": "area-ch",
+      "toolPurpose": "빗변과 빗변에 내린 높이를 알 때 전체 넓이를 계산합니다.",
+      "intro": "빗변 c와 높이 h를 입력하여 넓이를 계산하세요.",
+      "quickSummary": {
+        "h2": "이 계산기가 푸는 문제",
+        "intro": "빗변을 삼각형의 밑변으로 사용하여 넓이를 구합니다.",
+        "cards": [
+          {
+            "label": "알려진 값",
+            "value": "빗변 c와 높이 h"
+          },
+          {
+            "label": "찾기",
+            "value": "넓이 (A)"
+          },
+          {
+            "label": "주요 공식",
+            "value": "A = (c × h) / 2"
+          },
+          {
+            "label": "다음에 가장 적합",
+            "value": "투영 문제와 밑변 관점을 바꾸는 경우"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "넓이",
+        "fields": [
+          {
+            "key": "c",
+            "label": "빗변 c",
+            "min": 0
+          },
+          {
+            "key": "h",
+            "label": "높이 h",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "그림: 빗변에 내린 높이",
+        "intro": "그림은 빗변이 밑변으로 평평하게 놓이도록 회전된 직각삼각형을 보여줍니다.",
+        "caption": "넓이 공식 A = (c × h) / 2.",
+        "formulaLabel": "A = (c × h) / 2",
+        "keyLabel": "다이어그램 키",
+        "sides": {
+          "a": {
+            "label": "c = 빗변 (밑변)",
+            "description": "밑변으로 사용되는 긴 변."
+          },
+          "b": {
+            "label": "h = 높이 (높이)",
+            "description": "빗변에 대한 수직 높이."
+          },
+          "c": {
+            "label": "A = 넓이",
+            "description": "전체 제곱 단위."
+          }
+        },
+        "result": {
+          "label": "A = 넓이",
+          "description": "(c × h) / 2로 계산됩니다."
+        },
+        "notes": [
+          "높이 h는 c/2 이하여야 합니다."
+        ]
+      },
+      "formulaSection": {
+        "h2": "넓이 공식",
+        "paragraphs": [
+          "삼각형의 넓이는 1/2 × 밑변 × 높이입니다. 빗변(c)을 밑변으로 사용하면, 그에 대응하는 높이는 빗변에 내린 높이(h)입니다."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} c h"
+        ]
+      },
+      "howTo": {
+        "h2": "계산 방법",
+        "steps": [
+          "빗변 c를 입력하세요.",
+          "높이 h를 입력하세요.",
+          "계산을 클릭합니다."
+        ]
+      },
+      "example": {
+        "h2": "풀이 예제",
+        "intro": "빗변이 10이고 높이가 4.8이면:",
+        "lines": [
+          "A = \\frac{1}{2} c h",
+          "A = 0.5 \\times 10 \\times 4.8",
+          "A = 24"
+        ],
+        "answer": "넓이는 24 제곱 단위입니다."
+      },
+      "extraSections": [
+        {
+          "h2": "높이 제한",
+          "paragraphs": [
+            "모든 직각삼각형에서 빗변에 내린 높이의 최대값은 정확히 빗변 길이의 절반입니다. h > c/2이면 그와 같은 직각삼각형은 존재하지 않습니다."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "넓이 계산기"
+        },
+        {
+          "href": "/right-triangle-altitude-calculator/",
+          "label": "높이 계산기"
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "내접원 반지름과 반둘레로 구하는 직각삼각형 넓이 계산기"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "이것이 두 변을 사용한 넓이와 같은가요?",
+          "answer": "네. (a × b) / 2는 항상 (c × h) / 2와 정확히 같습니다."
         }
       ]
     }
@@ -6842,7 +10989,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listTitle": "Contoh dengan segi tiga 3-4-5:",
           "listItems": [
             "Luas: A = (3 x 4) / 2 = 6",
-            "Semiperimeter: s = (3 + 4 + 5) / 2 = 6",
+            "Separuh perimeter: s = (3 + 4 + 5) / 2 = 6",
             "Semakan Injejari: r = A / s = 6 / 6 = 1"
           ]
         }
@@ -6870,8 +11017,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
-          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
-        },
+          "label": "Kalkulator Luas Segi Tiga Bersudut Tegak daripada Jejari Dalam dan Separuh Perimeter"
+        }
       ],
       "faqs": [
         {
@@ -6905,6 +11052,401 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "question": "Bagaimanakah saya boleh menyemak bahawa jawapan semiperimeter saya adalah betul?",
           "answer": "Gandakan semiperimeter itu. Hasilnya mesti sama dengan perimeter penuh. Sebagai contoh, jika s = 15, maka P sepatutnya 30."
+        }
+      ]
+    },
+    "right-triangle-area-from-leg-and-angle-calculator": {
+      "slug": "right-triangle-area-from-leg-and-angle-calculator",
+      "url": "/right-triangle-area-from-leg-and-angle-calculator/",
+      "h1": "Luas Segi Tiga Bersudut Tegak daripada Kaki dan Sudut",
+      "metaTitle": "Kalkulator Luas Segi Tiga Bersudut Tegak daripada Kaki dan Sudut | Cari Luas",
+      "metaDescription": "Kira luas segi tiga bersudut tegak daripada satu sisi dan satu sudut. Menggunakan formula luas sinus dan kosinus dengan penyelesaian langkah demi langkah.",
+      "formulaSlug": "area-sin-a",
+      "toolPurpose": "Masukkan satu kaki, hipotenus, dan sudut yang disertakan untuk mengira luas menggunakan formula trigonometri.",
+      "intro": "Masukkan kaki b, hipotenus c, dan sudut A untuk mencari luas tepat segi tiga bersudut tegak anda.",
+      "quickSummary": {
+        "h2": "Apa yang Diselesaikan oleh Alat Ini",
+        "intro": "Gunakan kalkulator ini apabila anda hanya mengetahui dua sisi dan sudut yang disertakan. Kaedah ini menggunakan trigonometri untuk mencari luas tepat tanpa memerlukan sisi ketiga.",
+        "cards": [
+          {
+            "label": "Nilai yang diketahui",
+            "value": "Kaki b, hipotenus c, dan Sudut A"
+          },
+          {
+            "label": "Mencari",
+            "value": "Luas (A)"
+          },
+          {
+            "label": "Formula utama",
+            "value": "A = (b × c × sin(A)) / 2"
+          },
+          {
+            "label": "Terbaik untuk",
+            "value": "Masalah trigonometri, ukur tanah, dan kes yang kehilangan sisi ketiga"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Luas",
+        "fields": [
+          {
+            "key": "b",
+            "label": "Kaki b",
+            "min": 0
+          },
+          {
+            "key": "c",
+            "label": "Hipotenus c",
+            "min": 0
+          },
+          {
+            "key": "A",
+            "label": "sudut A",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Rajah Segi Tiga Bersudut Tegak: Luas daripada Sinus",
+        "intro": "Rajah menunjukkan segi tiga dengan sisi b dan c membentuk sudut A yang disertakan.",
+        "caption": "Luas segi tiga bersudut tegak menggunakan formula sinus.",
+        "formulaLabel": "A = 0.5 × b × c × sin(A)",
+        "keyLabel": "Kunci Gambar Rajah",
+        "sides": {
+          "a": {
+            "label": "a = sisi bertentangan",
+            "description": "Tidak diperlukan untuk pengiraan ini."
+          },
+          "b": {
+            "label": "b = sisi bersebelahan",
+            "description": "Salah satu sisi yang diketahui yang membentuk sudut."
+          },
+          "c": {
+            "label": "c = hipotenus",
+            "description": "Sisi lain yang diketahui yang membentuk sudut."
+          }
+        },
+        "result": {
+          "label": "A = Luas",
+          "description": "Luas yang dikira menggunakan sinus trigonometri."
+        },
+        "notes": [
+          "Pastikan sudut dimasukkan dalam darjah.",
+          "Formula A = 1/2 * ab * sin(C) terpakai untuk semua segi tiga."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Formula Luas Menggunakan Sinus",
+        "paragraphs": [
+          "Apabila anda mengetahui dua sisi bagi mana-mana segi tiga dan sudut di antaranya, anda boleh mencari luas menggunakan peraturan sinus untuk luas: A = (1/2) * side1 * side2 * sin(angle).",
+          "Dalam segi tiga bersudut tegak yang anda tahu satu kaki, hipotenus, dan sudut di antaranya, ini menjadi A = (1/2) * b * c * sin(A)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} b c \\sin(A)"
+        ]
+      },
+      "howTo": {
+        "h2": "Cara Mengira Luas Menggunakan Sinus",
+        "steps": [
+          "Kenal pasti kaki, hipotenus, dan sudut yang disertakan.",
+          "Masukkan kaki b ke dalam input pertama.",
+          "Masukkan hipotenus c ke dalam input kedua.",
+          "Masukkan sudut A dalam darjah ke dalam input ketiga.",
+          "Klik Kira untuk melihat luas."
+        ]
+      },
+      "example": {
+        "h2": "Contoh Dikerjakan: Luas Menggunakan Sudut",
+        "intro": "Jika kaki b ialah 4, hipotenus c ialah 5, dan sudut A ialah 36.87°:",
+        "lines": [
+          "A = 0.5 \\times b \\times c \\times \\sin(A)",
+          "A = 0.5 \\times 4 \\times 5 \\times \\sin(36.87^\\circ)",
+          "A = 10 \\times 0.6",
+          "A = 6"
+        ],
+        "answer": "Luasnya ialah 6 unit persegi."
+      },
+      "extraSections": [
+        {
+          "h2": "Mengapa Menggunakan Trigonometri untuk Luas?",
+          "paragraphs": [
+            "Kadangkala anda tidak dapat mengukur ketiga-tiga sisi segi tiga dengan mudah, tetapi mengukur dua sisi dan sudut yang disertakan adalah mungkin (seperti dalam ukur tanah).",
+            "Pendekatan trigonometri ini memberikan luas yang tepat tanpa perlu menyelesaikan sisi yang hilang terlebih dahulu menggunakan teorem Pythagoras."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-from-legs-calculator/",
+          "label": "Kalkulator Luas Segi Tiga Bersudut Tegak daripada Kaki"
+        },
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Kalkulator Luas Segi Tiga Bersudut Tegak"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Bagaimana jika saya tahu sudut yang satu lagi?",
+          "answer": "Anda boleh menggunakan A = (1/2) * a * c * sin(B) jika anda tahu kaki a dan sudut B sebaliknya."
+        }
+      ]
+    },
+    "right-triangle-area-from-inradius-and-semiperimeter-calculator": {
+      "slug": "right-triangle-area-from-inradius-and-semiperimeter-calculator",
+      "url": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+      "h1": "Luas Segi Tiga Bersudut Tegak daripada Jejari Dalam & Separuh Perimeter",
+      "metaTitle": "Kalkulator Luas Segi Tiga Bersudut Tegak daripada Jejari Dalam",
+      "metaDescription": "Kira luas daripada jejari dalam (r) dan separuh perimeter (s) menggunakan A = r × s.",
+      "formulaSlug": "area-rs",
+      "toolPurpose": "Kira jumlah luas segi tiga bersudut tegak apabila jejari dalam dan separuh perimeter diketahui.",
+      "intro": "Masukkan jejari dalam r dan separuh perimeter s untuk mengira luas segi tiga bersudut tegak.",
+      "quickSummary": {
+        "h2": "Apa yang Diselesaikan oleh Kalkulator Ini",
+        "intro": "Alat ini menggunakan hubungan yang elegan antara bulatan terterap sesuatu segi tiga dan separuh perimeternya untuk mencari luas dengan serta-merta.",
+        "cards": [
+          {
+            "label": "Nilai yang diketahui",
+            "value": "Jejari dalam r dan Separuh perimeter s"
+          },
+          {
+            "label": "Mencari",
+            "value": "Luas (A)"
+          },
+          {
+            "label": "Formula utama",
+            "value": "A = r × s"
+          },
+          {
+            "label": "Terbaik untuk",
+            "value": "Geometri lanjutan dan teorem bulatan"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Luas",
+        "fields": [
+          {
+            "key": "r",
+            "label": "jejari dalam r",
+            "min": 0
+          },
+          {
+            "key": "s",
+            "label": "separuh perimeter s",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Rajah: Jejari Dalam dan Separuh Perimeter",
+        "intro": "Rajah menggambarkan bulatan terterap dengan jejari r. Luas segi tiga penuh adalah tepat r didarab dengan separuh perimeter s.",
+        "caption": "Formula luas A = r × s.",
+        "formulaLabel": "A = r × s",
+        "keyLabel": "Kunci Gambar Rajah",
+        "sides": {
+          "a": {
+            "label": "r = jejari",
+            "description": "Jejari bulatan terterap."
+          },
+          "b": {
+            "label": "s = semiperimeter",
+            "description": "Separuh daripada jarak sempadan."
+          },
+          "c": {
+            "label": "A = luas",
+            "description": "Jumlah ruang tertutup."
+          }
+        },
+        "result": {
+          "label": "A = Luas",
+          "description": "Dikira sebagai r × s."
+        },
+        "notes": [
+          "Kedua-dua r dan s mestilah panjang positif."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Formula luas",
+        "paragraphs": [
+          "Bagi mana-mana segi tiga, luas boleh dicari dengan mendarab jejari dalam (r) dengan separuh perimeter (s).",
+          "Formula ini (A = r × s) adalah benar secara universal untuk semua segi tiga, bukan hanya segi tiga bersudut tegak."
+        ],
+        "formulas": [
+          "A = r \\times s"
+        ]
+      },
+      "howTo": {
+        "h2": "Cara mengira",
+        "steps": [
+          "Kenal pasti jejari dalam r dan separuh perimeter s.",
+          "Masukkan r ke dalam medan pertama.",
+          "Masukkan s ke dalam medan kedua.",
+          "Darabkan kedua-duanya untuk mendapatkan Luas."
+        ]
+      },
+      "example": {
+        "h2": "Contoh penyelesaian",
+        "intro": "Jika jejari dalam ialah 2 dan separuh perimeter ialah 12 (seperti dalam segi tiga 6-8-10):",
+        "lines": [
+          "A = r \\times s",
+          "A = 2 \\times 12",
+          "A = 24"
+        ],
+        "answer": "Luasnya ialah 24 unit persegi."
+      },
+      "extraSections": [
+        {
+          "h2": "Dari manakah ini datang?",
+          "paragraphs": [
+            "Dengan membahagikan segi tiga kepada tiga segi tiga yang lebih kecil, setiap satu dengan ketinggian r dan tapak a, b, dan c, jumlah luasnya ialah 0.5*a*r + 0.5*b*r + 0.5*c*r = r*(a+b+c)/2 = r*s."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Kalkulator luas"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Kalkulator Luas Segi Tiga Bersudut Tegak daripada Hipotenus dan Altitud"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Adakah ini berfungsi untuk segi tiga bukan bersudut tegak?",
+          "answer": "Ya, A = rs berfungsi untuk mana-mana segi tiga."
+        }
+      ]
+    },
+    "right-triangle-area-from-hypotenuse-and-altitude-calculator": {
+      "slug": "right-triangle-area-from-hypotenuse-and-altitude-calculator",
+      "url": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+      "h1": "Luas Segi Tiga Bersudut Tegak daripada Hipotenus & Altitud",
+      "metaTitle": "Luas Segi Tiga Bersudut Tegak daripada Hipotenus dan Altitud",
+      "metaDescription": "Kira luas menggunakan hipotenus sebagai tapak dan altitud kepada hipotenus sebagai ketinggian.",
+      "formulaSlug": "area-ch",
+      "toolPurpose": "Kira jumlah luas apabila hipotenus dan altitud yang dilukis kepada hipotenus diketahui.",
+      "intro": "Masukkan hipotenus c dan altitud h untuk mengira luas.",
+      "quickSummary": {
+        "h2": "Apa yang Diselesaikan oleh Kalkulator Ini",
+        "intro": "Mencari luas dengan menggunakan hipotenus sebagai tapak segi tiga.",
+        "cards": [
+          {
+            "label": "Nilai yang diketahui",
+            "value": "Hipotenus c dan altitud h"
+          },
+          {
+            "label": "Mencari",
+            "value": "Luas (A)"
+          },
+          {
+            "label": "Formula utama",
+            "value": "A = (c × h) / 2"
+          },
+          {
+            "label": "Terbaik untuk",
+            "value": "Masalah unjuran dan perspektif tapak alternatif"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Luas",
+        "fields": [
+          {
+            "key": "c",
+            "label": "Hipotenus c",
+            "min": 0
+          },
+          {
+            "key": "h",
+            "label": "tinggi h",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Rajah: Altitud kepada Hipotenus",
+        "intro": "Rajah menunjukkan segi tiga bersudut tegak diputar supaya hipotenus terletak rata sebagai tapak.",
+        "caption": "Formula luas A = (c × h) / 2.",
+        "formulaLabel": "A = (c × h) / 2",
+        "keyLabel": "Kunci Gambar Rajah",
+        "sides": {
+          "a": {
+            "label": "c = hipotenus (tapak)",
+            "description": "Sisi panjang yang digunakan sebagai tapak."
+          },
+          "b": {
+            "label": "h = ketinggian (tinggi)",
+            "description": "Ketinggian serenjang kepada hipotenus."
+          },
+          "c": {
+            "label": "A = luas",
+            "description": "Jumlah unit persegi."
+          }
+        },
+        "result": {
+          "label": "A = Luas",
+          "description": "Dikira sebagai (c × h) / 2."
+        },
+        "notes": [
+          "Altitud h mestilah kurang daripada atau sama dengan c/2."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Formula luas",
+        "paragraphs": [
+          "Luas segi tiga ialah 1/2 × tapak × ketinggian. Jika anda menggunakan hipotenus (c) sebagai tapak, ketinggian yang sepadan ialah altitud kepada hipotenus (h)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} c h"
+        ]
+      },
+      "howTo": {
+        "h2": "Cara mengira",
+        "steps": [
+          "Masukkan hipotenus c.",
+          "Masukkan ketinggian h.",
+          "Klik Kira."
+        ]
+      },
+      "example": {
+        "h2": "Contoh penyelesaian",
+        "intro": "Jika hipotenus ialah 10 dan altitud ialah 4.8:",
+        "lines": [
+          "A = \\frac{1}{2} c h",
+          "A = 0.5 \\times 10 \\times 4.8",
+          "A = 24"
+        ],
+        "answer": "Luasnya ialah 24 unit persegi."
+      },
+      "extraSections": [
+        {
+          "h2": "Had ketinggian",
+          "paragraphs": [
+            "Dalam mana-mana segi tiga bersudut tegak, altitud maksimum yang mungkin kepada hipotenus adalah tepat separuh panjang hipotenus. Jika h > c/2, segi tiga bersudut tegak seperti itu tidak wujud."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Kalkulator luas"
+        },
+        {
+          "href": "/right-triangle-altitude-calculator/",
+          "label": "Kalkulator ketinggian"
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Kalkulator Luas Segi Tiga Bersudut Tegak daripada Jejari Dalam dan Separuh Perimeter"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Adakah ini luas yang sama seperti menggunakan kaki?",
+          "answer": "Ya. (a × b) / 2 sentiasa bersamaan dengan tepat (c × h) / 2."
         }
       ]
     }
@@ -6977,12 +11519,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "description": "Noga b jest drugą stroną kąta prostego i jest dodawana razem z a i c."
           },
           "c": {
-            "label": "c = hypotenuse",
+            "label": "c = przeciwprostokątna",
             "description": "Przeciwprostokątna c jest najdłuższym bokiem, przeciwległym do kąta prostego i uzupełnia granicę."
           }
         },
         "result": {
-          "label": "P = total boundary length",
+          "label": "P = całkowita długość granicy",
           "description": "Kalkulator dodaje a + b + c i zwraca obwód w wybranej jednostce liniowej."
         },
         "notes": [
@@ -7312,12 +11854,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "description": "Noga b tworzy kąt prosty z a i ma udział zarówno w obwodzie, jak i pół obwodzie."
           },
           "c": {
-            "label": "c = hypotenuse",
+            "label": "c = przeciwprostokątna",
             "description": "Przeciwprostokątna c jest najdłuższym bokiem i należy ją uwzględnić, zanim suma zostanie zmniejszona o połowę."
           }
         },
         "result": {
-          "label": "s = half of the boundary total",
+          "label": "s = połowa całkowitej długości granicy",
           "description": "Kalkulator najpierw dodaje a + b + c, a następnie dzieli ten obwód przez 2."
         },
         "notes": [
@@ -7514,8 +12056,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
-          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
-        },
+          "label": "Kalkulator pola trójkąta prostokątnego z promienia okręgu wpisanego i półobwodu"
+        }
       ],
       "faqs": [
         {
@@ -7549,6 +12091,401 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "question": "Jak mogę sprawdzić, czy moja odpowiedź półobwodowa jest poprawna?",
           "answer": "Podwoić półobwód. Wynik powinien być równy całemu obwodowi. Na przykład, jeśli s = 15, wówczas P powinno wynosić 30."
+        }
+      ]
+    },
+    "right-triangle-area-from-leg-and-angle-calculator": {
+      "slug": "right-triangle-area-from-leg-and-angle-calculator",
+      "url": "/right-triangle-area-from-leg-and-angle-calculator/",
+      "h1": "Pole trójkąta prostokątnego z przyprostokątnej i kąta",
+      "metaTitle": "Kalkulator pola trójkąta prostokątnego z przyprostokątnej i kąta | Znajdź pole",
+      "metaDescription": "Oblicz pole trójkąta prostokątnego na podstawie jednego boku i kąta. Wykorzystuje wzory na pole z sinusem i cosinusem wraz z rozwiązaniami krok po kroku.",
+      "formulaSlug": "area-sin-a",
+      "toolPurpose": "Wprowadź jedną przyprostokątną, przeciwprostokątną i kąt między nimi, aby obliczyć pole za pomocą wzorów trygonometrycznych.",
+      "intro": "Wprowadź przyprostokątną b, przeciwprostokątną c i kąt A, aby znaleźć dokładne pole swojego trójkąta prostokątnego.",
+      "quickSummary": {
+        "h2": "Co rozwiązuje to narzędzie",
+        "intro": "Użyj tego kalkulatora, gdy znasz tylko dwa boki i kąt między nimi. Ta metoda wykorzystuje trygonometrię, aby znaleźć dokładne pole bez potrzeby znajomości trzeciego boku.",
+        "cards": [
+          {
+            "label": "Znane wartości",
+            "value": "Przyprostokątna b, przeciwprostokątna c i kąt A"
+          },
+          {
+            "label": "Znaleziska",
+            "value": "Pole (A)"
+          },
+          {
+            "label": "Główna formuła",
+            "value": "A = (b × c × sin(A)) / 2"
+          },
+          {
+            "label": "Najlepsze dla",
+            "value": "Zadania z trygonometrii, geodezja oraz przypadki, w których brakuje trzeciego boku"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Pole",
+        "fields": [
+          {
+            "key": "b",
+            "label": "Noga b",
+            "min": 0
+          },
+          {
+            "key": "c",
+            "label": "Przeciwprostokątna c",
+            "min": 0
+          },
+          {
+            "key": "A",
+            "label": "kąt A",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Diagram trójkąta prostokątnego: pole z sinusa",
+        "intro": "Diagram pokazuje trójkąt, w którym boki b i c tworzą kąt A między nimi.",
+        "caption": "Pole trójkąta prostokątnego przy użyciu wzoru z sinusem.",
+        "formulaLabel": "A = 0.5 × b × c × sin(A)",
+        "keyLabel": "Klucz do diagramu",
+        "sides": {
+          "a": {
+            "label": "a = bok naprzeciwległy",
+            "description": "Niewymagane do tych obliczeń."
+          },
+          "b": {
+            "label": "b = bok przyległy",
+            "description": "Jeden ze znanych boków tworzących kąt."
+          },
+          "c": {
+            "label": "c = przeciwprostokątna",
+            "description": "Drugi znany bok tworzący kąt."
+          }
+        },
+        "result": {
+          "label": "A = Pole",
+          "description": "Pole obliczone przy użyciu sinusa trygonometrycznego."
+        },
+        "notes": [
+          "Upewnij się, że kąt jest wprowadzony w stopniach.",
+          "Wzór A = 1/2 * ab * sin(C) dotyczy wszystkich trójkątów."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Wzór na pole przy użyciu sinusa",
+        "paragraphs": [
+          "Gdy znasz dwa boki dowolnego trójkąta oraz kąt między nimi, możesz znaleźć pole, używając reguły sinusa dla pola: A = (1/2) * bok1 * bok2 * sin(kąt).",
+          "W trójkącie prostokątnym, w którym znasz przyprostokątną, przeciwprostokątną i kąt między nimi, przyjmuje to postać A = (1/2) * b * c * sin(A)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} b c \\sin(A)"
+        ]
+      },
+      "howTo": {
+        "h2": "Jak obliczyć pole przy użyciu sinusa",
+        "steps": [
+          "Zidentyfikuj przyprostokątną, przeciwprostokątną i kąt między nimi.",
+          "Wprowadź przyprostokątną b w pierwszym polu.",
+          "Wprowadź przeciwprostokątną c w drugim polu.",
+          "Wprowadź kąt A w stopniach w trzecim polu.",
+          "Kliknij Oblicz, aby zobaczyć pole."
+        ]
+      },
+      "example": {
+        "h2": "Przykład praktyczny: pole przy użyciu kąta",
+        "intro": "Jeśli przyprostokątna b wynosi 4, przeciwprostokątna c wynosi 5, a kąt A wynosi 36.87°:",
+        "lines": [
+          "A = 0.5 \\times b \\times c \\times \\sin(A)",
+          "A = 0.5 \\times 4 \\times 5 \\times \\sin(36.87^\\circ)",
+          "A = 10 \\times 0.6",
+          "A = 6"
+        ],
+        "answer": "Pole wynosi 6 jednostek kwadratowych."
+      },
+      "extraSections": [
+        {
+          "h2": "Dlaczego używać trygonometrii do obliczania pola?",
+          "paragraphs": [
+            "Czasem nie da się łatwo zmierzyć wszystkich trzech boków trójkąta, ale zmierzenie dwóch boków i kąta między nimi jest możliwe (np. w geodezji).",
+            "To podejście trygonometryczne daje dokładne pole bez konieczności wcześniejszego obliczania brakującego boku za pomocą twierdzenia Pitagorasa."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-from-legs-calculator/",
+          "label": "Kalkulator pola trójkąta prostokątnego z przyprostokątnych"
+        },
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Kalkulator pola trójkąta prostokątnego"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Co jeśli znam drugi kąt?",
+          "answer": "Możesz użyć A = (1/2) * a * c * sin(B), jeśli zamiast tego znasz przyprostokątną a i kąt B."
+        }
+      ]
+    },
+    "right-triangle-area-from-inradius-and-semiperimeter-calculator": {
+      "slug": "right-triangle-area-from-inradius-and-semiperimeter-calculator",
+      "url": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+      "h1": "Pole trójkąta prostokątnego z promienia okręgu wpisanego i półobwodu",
+      "metaTitle": "Kalkulator pola trójkąta prostokątnego z promienia okręgu wpisanego",
+      "metaDescription": "Oblicz pole na podstawie promienia okręgu wpisanego (r) i półobwodu (s), używając A = r × s.",
+      "formulaSlug": "area-rs",
+      "toolPurpose": "Oblicz całkowite pole trójkąta prostokątnego, gdy znane są promień okręgu wpisanego i półobwód.",
+      "intro": "Wprowadź promień okręgu wpisanego r i półobwód s, aby obliczyć pole trójkąta prostokątnego.",
+      "quickSummary": {
+        "h2": "Co rozwiązuje ten kalkulator",
+        "intro": "To narzędzie wykorzystuje elegancką zależność między okręgiem wpisanym w trójkąt a jego półobwodem, aby błyskawicznie znaleźć pole.",
+        "cards": [
+          {
+            "label": "Znane wartości",
+            "value": "Promień okręgu wpisanego r i półobwód s"
+          },
+          {
+            "label": "Znaleziska",
+            "value": "Pole (A)"
+          },
+          {
+            "label": "Główna formuła",
+            "value": "A = r × s"
+          },
+          {
+            "label": "Najlepsze dla",
+            "value": "Zaawansowana geometria i twierdzenia o okręgach"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Pole",
+        "fields": [
+          {
+            "key": "r",
+            "label": "promień okręgu wpisanego r",
+            "min": 0
+          },
+          {
+            "key": "s",
+            "label": "Półobwód s",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Diagram: promień okręgu wpisanego i półobwód",
+        "intro": "Diagram przedstawia okrąg wpisany o promieniu r. Pole całego trójkąta to dokładnie r pomnożone przez półobwód s.",
+        "caption": "Wzór na pole A = r × s.",
+        "formulaLabel": "A = r × s",
+        "keyLabel": "Klucz do diagramu",
+        "sides": {
+          "a": {
+            "label": "r = promień",
+            "description": "Promień okręgu wpisanego."
+          },
+          "b": {
+            "label": "s = półobwód",
+            "description": "Połowa długości granicy."
+          },
+          "c": {
+            "label": "A = pole",
+            "description": "Całkowita zamknięta powierzchnia."
+          }
+        },
+        "result": {
+          "label": "A = Pole",
+          "description": "Obliczane jako r × s."
+        },
+        "notes": [
+          "Zarówno r, jak i s muszą być dodatnimi długościami."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Wzór na pole",
+        "paragraphs": [
+          "Dla dowolnego trójkąta pole można znaleźć, mnożąc promień okręgu wpisanego (r) przez półobwód (s).",
+          "Ten wzór (A = r × s) jest uniwersalnie prawdziwy dla wszystkich trójkątów, nie tylko prostokątnych."
+        ],
+        "formulas": [
+          "A = r \\times s"
+        ]
+      },
+      "howTo": {
+        "h2": "Jak obliczyć",
+        "steps": [
+          "Zidentyfikuj promień okręgu wpisanego r i półobwód s.",
+          "Wprowadź r w pierwszym polu.",
+          "Wprowadź s w drugim polu.",
+          "Pomnóż je, aby otrzymać pole."
+        ]
+      },
+      "example": {
+        "h2": "Rozwiązany przykład",
+        "intro": "Jeśli promień okręgu wpisanego wynosi 2, a półobwód 12 (jak w trójkącie 6-8-10):",
+        "lines": [
+          "A = r \\times s",
+          "A = 2 \\times 12",
+          "A = 24"
+        ],
+        "answer": "Pole wynosi 24 jednostki kwadratowe."
+      },
+      "extraSections": [
+        {
+          "h2": "Skąd to się bierze?",
+          "paragraphs": [
+            "Dzieląc trójkąt na trzy mniejsze trójkąty, każdy o wysokości r i podstawach a, b i c, ich łączne pole wynosi 0.5*a*r + 0.5*b*r + 0.5*c*r = r*(a+b+c)/2 = r*s."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Kalkulator pola"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Kalkulator pola trójkąta prostokątnego z przeciwprostokątnej i wysokości"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Czy to działa dla trójkątów, które nie są prostokątne?",
+          "answer": "Tak, A = rs działa dla dowolnego trójkąta."
+        }
+      ]
+    },
+    "right-triangle-area-from-hypotenuse-and-altitude-calculator": {
+      "slug": "right-triangle-area-from-hypotenuse-and-altitude-calculator",
+      "url": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+      "h1": "Pole trójkąta prostokątnego z przeciwprostokątnej i wysokości",
+      "metaTitle": "Pole trójkąta prostokątnego z przeciwprostokątnej i wysokości",
+      "metaDescription": "Oblicz pole, używając przeciwprostokątnej jako podstawy i wysokości opuszczonej na przeciwprostokątną jako wysokości.",
+      "formulaSlug": "area-ch",
+      "toolPurpose": "Oblicz całkowite pole, gdy znane są przeciwprostokątna i wysokość opuszczona na przeciwprostokątną.",
+      "intro": "Wprowadź przeciwprostokątną c i wysokość h, aby obliczyć pole.",
+      "quickSummary": {
+        "h2": "Co rozwiązuje ten kalkulator",
+        "intro": "Znajduje pole, używając przeciwprostokątnej jako podstawy trójkąta.",
+        "cards": [
+          {
+            "label": "Znane wartości",
+            "value": "Przeciwprostokątna c i wysokość h"
+          },
+          {
+            "label": "Znaleziska",
+            "value": "Pole (A)"
+          },
+          {
+            "label": "Główna formuła",
+            "value": "A = (c × h) / 2"
+          },
+          {
+            "label": "Najlepsze dla",
+            "value": "Zadania z rzutowaniem i alternatywne spojrzenie na podstawę"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Pole",
+        "fields": [
+          {
+            "key": "c",
+            "label": "Przeciwprostokątna c",
+            "min": 0
+          },
+          {
+            "key": "h",
+            "label": "wysokość h",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Diagram: wysokość opuszczona na przeciwprostokątną",
+        "intro": "Diagram pokazuje trójkąt prostokątny obrócony tak, że przeciwprostokątna leży płasko jako podstawa.",
+        "caption": "Wzór na pole A = (c × h) / 2.",
+        "formulaLabel": "A = (c × h) / 2",
+        "keyLabel": "Klucz do diagramu",
+        "sides": {
+          "a": {
+            "label": "c = przeciwprostokątna (podstawa)",
+            "description": "Długi bok użyty jako podstawa."
+          },
+          "b": {
+            "label": "h = wysokość (wysokość)",
+            "description": "Wysokość prostopadła do przeciwprostokątnej."
+          },
+          "c": {
+            "label": "A = pole",
+            "description": "Całkowita liczba jednostek kwadratowych."
+          }
+        },
+        "result": {
+          "label": "A = Pole",
+          "description": "Obliczane jako (c × h) / 2."
+        },
+        "notes": [
+          "Wysokość h musi być mniejsza lub równa c/2."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Wzór na pole",
+        "paragraphs": [
+          "Pole trójkąta to 1/2 × podstawa × wysokość. Jeśli użyjesz przeciwprostokątnej (c) jako podstawy, odpowiadającą jej wysokością jest wysokość opuszczona na przeciwprostokątną (h)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} c h"
+        ]
+      },
+      "howTo": {
+        "h2": "Jak obliczyć",
+        "steps": [
+          "Wprowadź przeciwprostokątną c.",
+          "Wprowadź wysokość h.",
+          "Kliknij Oblicz."
+        ]
+      },
+      "example": {
+        "h2": "Rozwiązany przykład",
+        "intro": "Jeśli przeciwprostokątna wynosi 10, a wysokość 4.8:",
+        "lines": [
+          "A = \\frac{1}{2} c h",
+          "A = 0.5 \\times 10 \\times 4.8",
+          "A = 24"
+        ],
+        "answer": "Pole wynosi 24 jednostki kwadratowe."
+      },
+      "extraSections": [
+        {
+          "h2": "Limity wysokości",
+          "paragraphs": [
+            "W każdym trójkącie prostokątnym maksymalna możliwa wysokość opuszczona na przeciwprostokątną jest dokładnie równa połowie długości przeciwprostokątnej. Jeśli h > c/2, taki trójkąt prostokątny nie istnieje."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Kalkulator pola"
+        },
+        {
+          "href": "/right-triangle-altitude-calculator/",
+          "label": "Kalkulator wysokości"
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Kalkulator pola trójkąta prostokątnego z promienia okręgu wpisanego i półobwodu"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Czy to jest to samo pole co przy użyciu przyprostokątnych?",
+          "answer": "Tak. (a × b) / 2 zawsze dokładnie równa się (c × h) / 2."
         }
       ]
     }
@@ -7621,12 +12558,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "description": "Kaki b adalah sisi lain dari sudut siku-siku dan dijumlahkan dengan a dan c."
           },
           "c": {
-            "label": "c = hypotenuse",
+            "label": "c = hipotenusa",
             "description": "Sisi miring c adalah sisi terpanjang yang berhadapan dengan sudut siku-siku dan melengkapi batasnya."
           }
         },
         "result": {
-          "label": "P = total boundary length",
+          "label": "P = total panjang batas",
           "description": "Kalkulator menambahkan a + b + c dan mengembalikan keliling dalam satuan linier yang dipilih."
         },
         "notes": [
@@ -7729,7 +12666,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "Diketahui: a = 8, b = 15, c = 17. Ini adalah tripel Pythagoras lainnya yang semua sisinya adalah bilangan bulat."
           ],
           "listItems": [
-            "P = 8 + 15 + 17 = 40 units",
+            "P = 8 + 15 + 17 = 40 satuan",
             "Verifikasi: 8² + 15² = 64 + 225 = 289 = 17² ✓",
             "Triple ini berguna dalam tata letak konstruksi yang memerlukan pagar 40 unit atau panjang trim."
           ]
@@ -7956,12 +12893,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "description": "Kaki b membentuk sudut siku-siku dengan a dan menyumbang keliling dan semiperimeter."
           },
           "c": {
-            "label": "c = hypotenuse",
+            "label": "c = hipotenusa",
             "description": "Sisi miring c adalah sisi terpanjang dan harus dimasukkan sebelum totalnya menjadi setengahnya."
           }
         },
         "result": {
-          "label": "s = half of the boundary total",
+          "label": "s = setengah dari total batas",
           "description": "Kalkulator terlebih dahulu menjumlahkan a + b + c, lalu membagi kelilingnya dengan 2."
         },
         "notes": [
@@ -8158,8 +13095,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
-          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
-        },
+          "label": "Kalkulator Luas Segitiga Siku-Siku dari Jari-Jari Lingkaran Dalam dan Setengah Keliling"
+        }
       ],
       "faqs": [
         {
@@ -8193,6 +13130,401 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "question": "Bagaimana cara memastikan jawaban semiperimeter saya benar?",
           "answer": "Gandakan setengah kelilingnya. Hasilnya harus sama dengan keliling penuh. Misalnya, jika s = 15, maka P seharusnya 30."
+        }
+      ]
+    },
+    "right-triangle-area-from-leg-and-angle-calculator": {
+      "slug": "right-triangle-area-from-leg-and-angle-calculator",
+      "url": "/right-triangle-area-from-leg-and-angle-calculator/",
+      "h1": "Luas Segitiga Siku-Siku dari Kaki dan Sudut",
+      "metaTitle": "Kalkulator Luas Segitiga Siku-Siku dari Kaki dan Sudut | Cari Luas",
+      "metaDescription": "Hitung luas segitiga siku-siku dari satu sisi dan satu sudut. Menggunakan rumus luas sinus dan kosinus dengan solusi langkah demi langkah.",
+      "formulaSlug": "area-sin-a",
+      "toolPurpose": "Masukkan satu kaki, hipotenusa, dan sudut yang diapit untuk menghitung luas menggunakan rumus trigonometri.",
+      "intro": "Masukkan kaki b, hipotenusa c, dan sudut A untuk menemukan luas pasti segitiga siku-siku Anda.",
+      "quickSummary": {
+        "h2": "Apa yang Diselesaikan Alat Ini",
+        "intro": "Gunakan kalkulator ini ketika Anda hanya mengetahui dua sisi dan sudut yang diapit. Metode ini menggunakan trigonometri untuk menemukan luas yang tepat tanpa memerlukan sisi ketiga.",
+        "cards": [
+          {
+            "label": "Nilai-nilai yang diketahui",
+            "value": "Kaki b, hipotenusa c, dan Sudut A"
+          },
+          {
+            "label": "Menemukan",
+            "value": "Luas (A)"
+          },
+          {
+            "label": "Rumus utama",
+            "value": "A = (b × c × sin(A)) / 2"
+          },
+          {
+            "label": "Terbaik untuk",
+            "value": "Soal trigonometri, survei, dan kasus yang kehilangan sisi ketiga"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Luas",
+        "fields": [
+          {
+            "key": "b",
+            "label": "Kaki b",
+            "min": 0
+          },
+          {
+            "key": "c",
+            "label": "Sisi miring c",
+            "min": 0
+          },
+          {
+            "key": "A",
+            "label": "sudut A",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Diagram Segitiga Siku-Siku: Luas dari Sinus",
+        "intro": "Diagram menunjukkan segitiga dengan sisi b dan c yang membentuk sudut yang diapit A.",
+        "caption": "Luas segitiga siku-siku menggunakan rumus sinus.",
+        "formulaLabel": "A = 0.5 × b × c × sin(A)",
+        "keyLabel": "Kunci Diagram",
+        "sides": {
+          "a": {
+            "label": "a = sisi depan",
+            "description": "Tidak diperlukan untuk perhitungan ini."
+          },
+          "b": {
+            "label": "b = sisi samping",
+            "description": "Salah satu sisi yang diketahui yang membentuk sudut."
+          },
+          "c": {
+            "label": "c = hipotenusa",
+            "description": "Sisi lain yang diketahui yang membentuk sudut."
+          }
+        },
+        "result": {
+          "label": "A = Luas",
+          "description": "Luas yang dihitung menggunakan sinus trigonometri."
+        },
+        "notes": [
+          "Pastikan sudut dimasukkan dalam derajat.",
+          "Rumus A = 1/2 * ab * sin(C) berlaku untuk semua segitiga."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Rumus Luas Menggunakan Sinus",
+        "paragraphs": [
+          "Ketika Anda mengetahui dua sisi segitiga apa pun dan sudut di antara keduanya, Anda dapat menemukan luasnya menggunakan aturan sinus untuk luas: A = (1/2) * sisi1 * sisi2 * sin(sudut).",
+          "Pada segitiga siku-siku di mana Anda mengetahui sebuah kaki, hipotenusa, dan sudut di antara keduanya, ini menjadi A = (1/2) * b * c * sin(A)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} b c \\sin(A)"
+        ]
+      },
+      "howTo": {
+        "h2": "Cara Menghitung Luas Menggunakan Sinus",
+        "steps": [
+          "Identifikasi kaki, hipotenusa, dan sudut yang diapit.",
+          "Masukkan kaki b ke masukan pertama.",
+          "Masukkan hipotenusa c ke masukan kedua.",
+          "Masukkan sudut A dalam derajat ke masukan ketiga.",
+          "Klik Hitung untuk melihat luasnya."
+        ]
+      },
+      "example": {
+        "h2": "Contoh Terapan: Luas Menggunakan Sudut",
+        "intro": "Jika kaki b adalah 4, hipotenusa c adalah 5, dan sudut A adalah 36.87°:",
+        "lines": [
+          "A = 0.5 \\times b \\times c \\times \\sin(A)",
+          "A = 0.5 \\times 4 \\times 5 \\times \\sin(36.87^\\circ)",
+          "A = 10 \\times 0.6",
+          "A = 6"
+        ],
+        "answer": "Luasnya adalah 6 satuan persegi."
+      },
+      "extraSections": [
+        {
+          "h2": "Mengapa Menggunakan Trigonometri untuk Luas?",
+          "paragraphs": [
+            "Terkadang Anda tidak dapat dengan mudah mengukur ketiga sisi segitiga, tetapi mengukur dua sisi dan sudut yang diapitnya mungkin dilakukan (seperti dalam survei tanah).",
+            "Pendekatan trigonometri ini memberikan luas yang tepat tanpa harus menyelesaikan sisi yang hilang terlebih dahulu menggunakan teorema Pythagoras."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-from-legs-calculator/",
+          "label": "Kalkulator Luas Segitiga Siku-Siku dari Kaki-Kakinya"
+        },
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Kalkulator Luas Segitiga Siku-Siku"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Bagaimana jika saya mengetahui sudut yang lain?",
+          "answer": "Anda dapat menggunakan A = (1/2) * a * c * sin(B) jika Anda mengetahui kaki a dan sudut B sebagai gantinya."
+        }
+      ]
+    },
+    "right-triangle-area-from-inradius-and-semiperimeter-calculator": {
+      "slug": "right-triangle-area-from-inradius-and-semiperimeter-calculator",
+      "url": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+      "h1": "Luas Segitiga Siku-Siku dari Jari-Jari Lingkaran Dalam & Setengah Keliling",
+      "metaTitle": "Kalkulator Luas Segitiga Siku-Siku dari Jari-Jari Lingkaran Dalam",
+      "metaDescription": "Hitung luas dari jari-jari lingkaran dalam (r) dan setengah keliling (s) menggunakan A = r × s.",
+      "formulaSlug": "area-rs",
+      "toolPurpose": "Hitung total luas segitiga siku-siku ketika jari-jari lingkaran dalam dan setengah keliling diketahui.",
+      "intro": "Masukkan jari-jari lingkaran dalam r dan setengah keliling s untuk menghitung luas segitiga siku-siku.",
+      "quickSummary": {
+        "h2": "Apa yang Diselesaikan Kalkulator Ini",
+        "intro": "Alat ini menggunakan hubungan elegan antara lingkaran dalam segitiga dan setengah kelilingnya untuk menemukan luas secara instan.",
+        "cards": [
+          {
+            "label": "Nilai-nilai yang diketahui",
+            "value": "Jari-jari lingkaran dalam r dan Setengah keliling s"
+          },
+          {
+            "label": "Menemukan",
+            "value": "Luas (A)"
+          },
+          {
+            "label": "Rumus utama",
+            "value": "A = r × s"
+          },
+          {
+            "label": "Terbaik untuk",
+            "value": "Geometri tingkat lanjut dan teorema lingkaran"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Luas",
+        "fields": [
+          {
+            "key": "r",
+            "label": "jari-jari dalam r",
+            "min": 0
+          },
+          {
+            "key": "s",
+            "label": "Setengah keliling s",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Diagram: Jari-Jari Lingkaran Dalam dan Setengah Keliling",
+        "intro": "Diagram mengilustrasikan lingkaran dalam dengan jari-jari r. Luas segitiga utuh tepat sama dengan r dikalikan setengah keliling s.",
+        "caption": "Rumus luas A = r × s.",
+        "formulaLabel": "A = r × s",
+        "keyLabel": "Kunci Diagram",
+        "sides": {
+          "a": {
+            "label": "r = jari-jari",
+            "description": "Jari-jari lingkaran dalam."
+          },
+          "b": {
+            "label": "s = setengah keliling",
+            "description": "Setengah jarak batas."
+          },
+          "c": {
+            "label": "A = luas",
+            "description": "Total ruang yang tertutup."
+          }
+        },
+        "result": {
+          "label": "A = Luas",
+          "description": "Dihitung sebagai r × s."
+        },
+        "notes": [
+          "Baik r maupun s harus merupakan panjang positif."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Rumus luas",
+        "paragraphs": [
+          "Untuk segitiga apa pun, luasnya dapat ditemukan dengan mengalikan jari-jari lingkaran dalam (r) dengan setengah keliling (s).",
+          "Rumus ini (A = r × s) berlaku universal untuk semua segitiga, bukan hanya segitiga siku-siku."
+        ],
+        "formulas": [
+          "A = r \\times s"
+        ]
+      },
+      "howTo": {
+        "h2": "Cara menghitung",
+        "steps": [
+          "Identifikasi jari-jari lingkaran dalam r dan setengah keliling s.",
+          "Masukkan r ke kolom pertama.",
+          "Masukkan s ke kolom kedua.",
+          "Kalikan keduanya untuk mendapatkan Luas."
+        ]
+      },
+      "example": {
+        "h2": "Contoh penyelesaian",
+        "intro": "Jika jari-jari lingkaran dalam adalah 2 dan setengah keliling adalah 12 (seperti pada segitiga 6-8-10):",
+        "lines": [
+          "A = r \\times s",
+          "A = 2 \\times 12",
+          "A = 24"
+        ],
+        "answer": "Luasnya adalah 24 satuan persegi."
+      },
+      "extraSections": [
+        {
+          "h2": "Dari mana ini berasal?",
+          "paragraphs": [
+            "Dengan membagi segitiga menjadi tiga segitiga yang lebih kecil, masing-masing dengan tinggi r dan alas a, b, dan c, total luasnya adalah 0.5*a*r + 0.5*b*r + 0.5*c*r = r*(a+b+c)/2 = r*s."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Kalkulator luas"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Kalkulator Luas Segitiga Siku-Siku dari Hipotenusa dan Garis Tinggi"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Apakah ini berlaku untuk segitiga bukan siku-siku?",
+          "answer": "Ya, A = rs berlaku untuk segitiga apa pun."
+        }
+      ]
+    },
+    "right-triangle-area-from-hypotenuse-and-altitude-calculator": {
+      "slug": "right-triangle-area-from-hypotenuse-and-altitude-calculator",
+      "url": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+      "h1": "Luas Segitiga Siku-Siku dari Hipotenusa & Garis Tinggi",
+      "metaTitle": "Luas Segitiga Siku-Siku dari Hipotenusa dan Garis Tinggi",
+      "metaDescription": "Hitung luas menggunakan hipotenusa sebagai alas dan garis tinggi ke hipotenusa sebagai tingginya.",
+      "formulaSlug": "area-ch",
+      "toolPurpose": "Hitung total luas ketika hipotenusa dan garis tinggi yang ditarik ke hipotenusa diketahui.",
+      "intro": "Masukkan hipotenusa c dan garis tinggi h untuk menghitung luas.",
+      "quickSummary": {
+        "h2": "Apa yang Diselesaikan Kalkulator Ini",
+        "intro": "Menemukan luas dengan menggunakan hipotenusa sebagai alas segitiga.",
+        "cards": [
+          {
+            "label": "Nilai-nilai yang diketahui",
+            "value": "Hipotenusa c dan garis tinggi h"
+          },
+          {
+            "label": "Menemukan",
+            "value": "Luas (A)"
+          },
+          {
+            "label": "Rumus utama",
+            "value": "A = (c × h) / 2"
+          },
+          {
+            "label": "Terbaik untuk",
+            "value": "Soal proyeksi dan perspektif alas alternatif"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Luas",
+        "fields": [
+          {
+            "key": "c",
+            "label": "Sisi miring c",
+            "min": 0
+          },
+          {
+            "key": "h",
+            "label": "tinggi h",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Diagram: Garis Tinggi ke Hipotenusa",
+        "intro": "Diagram menunjukkan segitiga siku-siku yang diputar sehingga hipotenusa terletak mendatar sebagai alas.",
+        "caption": "Rumus luas A = (c × h) / 2.",
+        "formulaLabel": "A = (c × h) / 2",
+        "keyLabel": "Kunci Diagram",
+        "sides": {
+          "a": {
+            "label": "c = hipotenusa (alas)",
+            "description": "Sisi panjang yang digunakan sebagai alas."
+          },
+          "b": {
+            "label": "h = ketinggian (tinggi)",
+            "description": "Tinggi tegak lurus ke hipotenusa."
+          },
+          "c": {
+            "label": "A = luas",
+            "description": "Total satuan persegi."
+          }
+        },
+        "result": {
+          "label": "A = Luas",
+          "description": "Dihitung sebagai (c × h) / 2."
+        },
+        "notes": [
+          "Garis tinggi h harus kurang dari atau sama dengan c/2."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Rumus luas",
+        "paragraphs": [
+          "Luas segitiga adalah 1/2 × alas × tinggi. Jika Anda menggunakan hipotenusa (c) sebagai alas, tinggi yang bersesuaian adalah garis tinggi ke hipotenusa (h)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} c h"
+        ]
+      },
+      "howTo": {
+        "h2": "Cara menghitung",
+        "steps": [
+          "Masukkan hipotenusa c.",
+          "Masukkan ketinggian h.",
+          "Klik Hitung."
+        ]
+      },
+      "example": {
+        "h2": "Contoh penyelesaian",
+        "intro": "Jika hipotenusa adalah 10 dan garis tinggi adalah 4.8:",
+        "lines": [
+          "A = \\frac{1}{2} c h",
+          "A = 0.5 \\times 10 \\times 4.8",
+          "A = 24"
+        ],
+        "answer": "Luasnya adalah 24 satuan persegi."
+      },
+      "extraSections": [
+        {
+          "h2": "Batas ketinggian",
+          "paragraphs": [
+            "Pada segitiga siku-siku mana pun, garis tinggi maksimum yang mungkin ke hipotenusa tepat setengah panjang hipotenusa. Jika h > c/2, segitiga siku-siku seperti itu tidak ada."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Kalkulator luas"
+        },
+        {
+          "href": "/right-triangle-altitude-calculator/",
+          "label": "Kalkulator ketinggian"
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Kalkulator Luas Segitiga Siku-Siku dari Jari-Jari Lingkaran Dalam dan Setengah Keliling"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Apakah luas ini sama dengan menggunakan kaki-kakinya?",
+          "answer": "Ya. (a × b) / 2 selalu tepat sama dengan (c × h) / 2."
         }
       ]
     }
@@ -8265,12 +13597,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "description": "الساق b هي الجانب الآخر من الزاوية القائمة ويتم إضافتها مع a وc."
           },
           "c": {
-            "label": "c = hypotenuse",
+            "label": "c = الوتر",
             "description": "الوتر ج هو أطول ضلع، مقابل الزاوية القائمة، ويكمل الحد."
           }
         },
         "result": {
-          "label": "P = total boundary length",
+          "label": "P = الطول الإجمالي للحدود",
           "description": "تقوم الآلة الحاسبة بإضافة a + b + c وإرجاع المحيط بالوحدة الخطية المحددة."
         },
         "notes": [
@@ -8352,7 +13684,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "If c is missing: c = √(a² + b²), then P = a + b + √(a² + b²)",
             "If b is missing: b = √(c² - a²), then P = a + √(c² - a²) + c",
             "If a is missing: a = √(c² - b²), then P = √(c² - b²) + b + c",
-            "Always verify that c > a and c > b when using the subtraction form, otherwise the values do not form a valid right triangle."
+            "تحقق دائمًا من أن c > a وأن c > b عند استخدام صيغة الطرح، وإلا فإن القيم لا تشكّل مثلثًا قائمًا صالحًا."
           ]
         },
         {
@@ -8373,7 +13705,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "معطى: أ = 8، ب = 15، ج = 17. هذه ثلاثية فيثاغورسية أخرى حيث جميع أضلاعها أعداد صحيحة."
           ],
           "listItems": [
-            "P = 8 + 15 + 17 = 40 units",
+            "P = 8 + 15 + 17 = 40 وحدة",
             "التحقق: 8² + 15² = 64 + 225 = 289 = 17² ✓",
             "يعد هذا الثلاثي مفيدًا في تخطيطات البناء حيث يلزم وجود سياج مكون من 40 وحدة أو أطوال مزخرفة."
           ]
@@ -8600,12 +13932,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "description": "يشكل الساق b الزاوية القائمة مع a ويساهم في كل من المحيط وشبه المحيط."
           },
           "c": {
-            "label": "c = hypotenuse",
+            "label": "c = الوتر",
             "description": "الوتر c هو الضلع الأطول ويجب تضمينه قبل خفض المجموع إلى النصف."
           }
         },
         "result": {
-          "label": "s = half of the boundary total",
+          "label": "s = نصف مجموع الحدود",
           "description": "تضيف الآلة الحاسبة أولاً a + b + c، ثم تقسم المحيط على 2."
         },
         "notes": [
@@ -8802,8 +14134,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
-          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
-        },
+          "label": "حاسبة مساحة المثلث القائم من نصف قطر الدائرة المحاطة ونصف المحيط"
+        }
       ],
       "faqs": [
         {
@@ -8837,6 +14169,401 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "question": "كيف يمكنني التأكد من صحة إجابتي على مقياس نصف المحيط؟",
           "answer": "مضاعفة نصف المحيط. يجب أن تكون النتيجة مساوية للمحيط الكامل. على سبيل المثال، إذا كانت s = 15، فيجب أن تكون P 30."
+        }
+      ]
+    },
+    "right-triangle-area-from-leg-and-angle-calculator": {
+      "slug": "right-triangle-area-from-leg-and-angle-calculator",
+      "url": "/right-triangle-area-from-leg-and-angle-calculator/",
+      "h1": "مساحة المثلث القائم من القائمة والزاوية",
+      "metaTitle": "حاسبة مساحة المثلث القائم من القائمة والزاوية | إيجاد المساحة",
+      "metaDescription": "احسب مساحة المثلث القائم من ضلع واحد وزاوية. تستخدم صيغ المساحة بالجيب وجيب التمام مع حلول خطوة بخطوة.",
+      "formulaSlug": "area-sin-a",
+      "toolPurpose": "أدخل قائمة واحدة والوتر والزاوية المحصورة لحساب المساحة باستخدام الصيغ المثلثية.",
+      "intro": "أدخل القائمة b والوتر c والزاوية A لإيجاد المساحة الدقيقة لمثلثك القائم.",
+      "quickSummary": {
+        "h2": "ما الذي تحله هذه الأداة",
+        "intro": "استخدم هذه الحاسبة عندما تعرف ضلعين فقط والزاوية المحصورة بينهما. تستخدم هذه الطريقة حساب المثلثات لإيجاد المساحة الدقيقة دون الحاجة إلى الضلع الثالث.",
+        "cards": [
+          {
+            "label": "القيم المعروفة",
+            "value": "القائمة b والوتر c والزاوية A"
+          },
+          {
+            "label": "يجد",
+            "value": "المساحة (A)"
+          },
+          {
+            "label": "الصيغة الرئيسية",
+            "value": "A = (b × c × sin(A)) / 2"
+          },
+          {
+            "label": "الأفضل ل",
+            "value": "مسائل حساب المثلثات والمسح الأرضي والحالات التي يفقد فيها الضلع الثالث"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "المساحة",
+        "fields": [
+          {
+            "key": "b",
+            "label": "الساق ب",
+            "min": 0
+          },
+          {
+            "key": "c",
+            "label": "الوتر ج",
+            "min": 0
+          },
+          {
+            "key": "A",
+            "label": "زاوية A",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "رسم المثلث القائم: المساحة من الجيب",
+        "intro": "يُظهر الرسم المثلث حيث يشكّل الضلعان b وc الزاوية المحصورة A.",
+        "caption": "مساحة المثلث القائم باستخدام صيغة الجيب.",
+        "formulaLabel": "A = 0.5 × b × c × sin(A)",
+        "keyLabel": "مفتاح الرسم البياني",
+        "sides": {
+          "a": {
+            "label": "a = الضلع المقابل",
+            "description": "غير مطلوب لهذا الحساب."
+          },
+          "b": {
+            "label": "b = الضلع المجاور",
+            "description": "أحد الضلعين المعروفين اللذين يشكّلان الزاوية."
+          },
+          "c": {
+            "label": "c = الوتر",
+            "description": "الضلع المعروف الآخر الذي يشكّل الزاوية."
+          }
+        },
+        "result": {
+          "label": "A = المساحة",
+          "description": "المساحة المحسوبة باستخدام الجيب المثلثي."
+        },
+        "notes": [
+          "تأكد من إدخال الزاوية بالدرجات.",
+          "تنطبق الصيغة A = 1/2 * ab * sin(C) على جميع المثلثات."
+        ]
+      },
+      "formulaSection": {
+        "h2": "صيغة المساحة باستخدام الجيب",
+        "paragraphs": [
+          "عندما تعرف ضلعين من أي مثلث والزاوية بينهما، يمكنك إيجاد المساحة باستخدام قاعدة الجيب للمساحة: A = (1/2) * side1 * side2 * sin(angle).",
+          "في مثلث قائم تعرف فيه قائمة والوتر والزاوية بينهما، يصبح هذا A = (1/2) * b * c * sin(A)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} b c \\sin(A)"
+        ]
+      },
+      "howTo": {
+        "h2": "كيفية حساب المساحة باستخدام الجيب",
+        "steps": [
+          "حدّد القائمة والوتر والزاوية المحصورة.",
+          "أدخل القائمة b في حقل الإدخال الأول.",
+          "أدخل الوتر c في حقل الإدخال الثاني.",
+          "أدخل الزاوية A بالدرجات في حقل الإدخال الثالث.",
+          "انقر على زر الحساب لرؤية المساحة."
+        ]
+      },
+      "example": {
+        "h2": "مثال محلول: المساحة باستخدام الزاوية",
+        "intro": "إذا كانت القائمة b تساوي 4، والوتر c يساوي 5، والزاوية A تساوي 36.87°:",
+        "lines": [
+          "A = 0.5 \\times b \\times c \\times \\sin(A)",
+          "A = 0.5 \\times 4 \\times 5 \\times \\sin(36.87^\\circ)",
+          "A = 10 \\times 0.6",
+          "A = 6"
+        ],
+        "answer": "المساحة 6 وحدات مربعة."
+      },
+      "extraSections": [
+        {
+          "h2": "لماذا نستخدم حساب المثلثات للمساحة؟",
+          "paragraphs": [
+            "أحيانًا لا يمكنك قياس أضلاع المثلث الثلاثة كلها بسهولة، لكن قياس ضلعين والزاوية المحصورة بينهما ممكن (كما في المسح الأرضي).",
+            "يمنحك هذا الأسلوب المثلثي المساحة الدقيقة دون الاضطرار أولًا إلى حل الضلع المفقود باستخدام نظرية فيثاغورس."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-from-legs-calculator/",
+          "label": "حاسبة مساحة المثلث القائم من القائمتين"
+        },
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "حاسبة مساحة المثلث القائم"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "ماذا لو كنت أعرف الزاوية الأخرى؟",
+          "answer": "يمكنك استخدام A = (1/2) * a * c * sin(B) إذا كنت تعرف القائمة a والزاوية B بدلًا من ذلك."
+        }
+      ]
+    },
+    "right-triangle-area-from-inradius-and-semiperimeter-calculator": {
+      "slug": "right-triangle-area-from-inradius-and-semiperimeter-calculator",
+      "url": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+      "h1": "مساحة المثلث القائم من نصف قطر الدائرة المحاطة ونصف المحيط",
+      "metaTitle": "حاسبة مساحة المثلث القائم من نصف قطر الدائرة المحاطة",
+      "metaDescription": "احسب المساحة من نصف قطر الدائرة المحاطة (r) ونصف المحيط (s) باستخدام A = r × s.",
+      "formulaSlug": "area-rs",
+      "toolPurpose": "احسب المساحة الإجمالية لمثلث قائم عندما يكون نصف قطر الدائرة المحاطة ونصف المحيط معلومين.",
+      "intro": "أدخل نصف قطر الدائرة المحاطة r ونصف المحيط s لحساب مساحة المثلث القائم.",
+      "quickSummary": {
+        "h2": "ما الذي تحله هذه الحاسبة",
+        "intro": "تستخدم هذه الأداة العلاقة الأنيقة بين الدائرة المحاطة بالمثلث ونصف محيطه لإيجاد المساحة فورًا.",
+        "cards": [
+          {
+            "label": "القيم المعروفة",
+            "value": "نصف قطر الدائرة المحاطة r ونصف المحيط s"
+          },
+          {
+            "label": "يجد",
+            "value": "المساحة (A)"
+          },
+          {
+            "label": "الصيغة الرئيسية",
+            "value": "A = r × s"
+          },
+          {
+            "label": "الأفضل ل",
+            "value": "الهندسة المتقدمة ونظريات الدائرة"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "المساحة",
+        "fields": [
+          {
+            "key": "r",
+            "label": "نصف قطر الدائرة الداخلية r",
+            "min": 0
+          },
+          {
+            "key": "s",
+            "label": "نصف المحيط ق",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "الرسم: نصف قطر الدائرة المحاطة ونصف المحيط",
+        "intro": "يُوضح الرسم الدائرة المحاطة بنصف القطر r. ومساحة المثلث الكلي تساوي بالضبط r مضروبًا في نصف المحيط s.",
+        "caption": "صيغة المساحة A = r × s.",
+        "formulaLabel": "A = r × s",
+        "keyLabel": "مفتاح الرسم البياني",
+        "sides": {
+          "a": {
+            "label": "r = نصف القطر",
+            "description": "نصف قطر الدائرة المرسومة داخل المثلث."
+          },
+          "b": {
+            "label": "s = نصف المحيط",
+            "description": "نصف مسافة الحدود."
+          },
+          "c": {
+            "label": "A = المساحة",
+            "description": "المساحة المحصورة الإجمالية."
+          }
+        },
+        "result": {
+          "label": "A = المساحة",
+          "description": "يُحسب كـ r × s."
+        },
+        "notes": [
+          "يجب أن يكون كل من r وs طولين موجبين."
+        ]
+      },
+      "formulaSection": {
+        "h2": "صيغة المساحة",
+        "paragraphs": [
+          "بالنسبة لأي مثلث، يمكن إيجاد المساحة بضرب نصف قطر الدائرة المحاطة (r) في نصف المحيط (s).",
+          "هذه الصيغة (A = r × s) صحيحة عالميًا لجميع المثلثات، لا للمثلثات القائمة فقط."
+        ],
+        "formulas": [
+          "A = r \\times s"
+        ]
+      },
+      "howTo": {
+        "h2": "كيفية الحساب",
+        "steps": [
+          "حدد نصف قطر الدائرة المحاطة r ونصف المحيط s.",
+          "أدخل r في الحقل الأول.",
+          "أدخل s في الحقل الثاني.",
+          "اضربهما للحصول على المساحة."
+        ]
+      },
+      "example": {
+        "h2": "مثال محلول",
+        "intro": "إذا كان نصف قطر الدائرة المحاطة 2 ونصف المحيط 12 (كما في مثلث 6-8-10):",
+        "lines": [
+          "A = r \\times s",
+          "A = 2 \\times 12",
+          "A = 24"
+        ],
+        "answer": "المساحة 24 وحدة مربعة."
+      },
+      "extraSections": [
+        {
+          "h2": "من أين تأتي هذه الصيغة؟",
+          "paragraphs": [
+            "من خلال تقسيم المثلث إلى ثلاثة مثلثات أصغر، ارتفاع كل منها r وقواعدها a وb وc، يكون مجموع مساحتها 0.5*a*r + 0.5*b*r + 0.5*c*r = r*(a+b+c)/2 = r*s."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "حاسبة المساحة"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "حاسبة مساحة المثلث القائم من الوتر والارتفاع"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل تعمل هذه الصيغة للمثلثات غير القائمة؟",
+          "answer": "نعم، A = rs تعمل لأي مثلث."
+        }
+      ]
+    },
+    "right-triangle-area-from-hypotenuse-and-altitude-calculator": {
+      "slug": "right-triangle-area-from-hypotenuse-and-altitude-calculator",
+      "url": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+      "h1": "مساحة المثلث القائم من الوتر والارتفاع",
+      "metaTitle": "مساحة المثلث القائم من الوتر والارتفاع",
+      "metaDescription": "احسب المساحة باستخدام الوتر قاعدةً والارتفاع المنزّل على الوتر ارتفاعًا.",
+      "formulaSlug": "area-ch",
+      "toolPurpose": "احسب المساحة الإجمالية عندما يكون الوتر والارتفاع المرسوم على الوتر معلومين.",
+      "intro": "أدخل الوتر c والارتفاع h لحساب المساحة.",
+      "quickSummary": {
+        "h2": "ما الذي تحله هذه الحاسبة",
+        "intro": "يجد المساحة باستخدام الوتر قاعدةً للمثلث.",
+        "cards": [
+          {
+            "label": "القيم المعروفة",
+            "value": "الوتر c والارتفاع h"
+          },
+          {
+            "label": "يجد",
+            "value": "المساحة (A)"
+          },
+          {
+            "label": "الصيغة الرئيسية",
+            "value": "A = (c × h) / 2"
+          },
+          {
+            "label": "الأفضل ل",
+            "value": "مسائل الإسقاط ومنظورات القاعدة البديلة"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "المساحة",
+        "fields": [
+          {
+            "key": "c",
+            "label": "الوتر ج",
+            "min": 0
+          },
+          {
+            "key": "h",
+            "label": "الارتفاع h",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "الرسم: الارتفاع إلى الوتر",
+        "intro": "يُظهر الرسم المثلث القائم مدوّرًا بحيث يقع الوتر أفقيًا قاعدةً له.",
+        "caption": "صيغة المساحة A = (c × h) / 2.",
+        "formulaLabel": "A = (c × h) / 2",
+        "keyLabel": "مفتاح الرسم البياني",
+        "sides": {
+          "a": {
+            "label": "c = الوتر (القاعدة)",
+            "description": "الضلع الطويل المستخدم قاعدةً."
+          },
+          "b": {
+            "label": "h = الارتفاع (العلو)",
+            "description": "الارتفاع العمودي إلى الوتر."
+          },
+          "c": {
+            "label": "A = المساحة",
+            "description": "مجموع الوحدات المربعة."
+          }
+        },
+        "result": {
+          "label": "A = المساحة",
+          "description": "يُحسب كـ (c × h) / 2."
+        },
+        "notes": [
+          "يجب أن يكون الارتفاع h أقل من c/2 أو مساويًا له."
+        ]
+      },
+      "formulaSection": {
+        "h2": "صيغة المساحة",
+        "paragraphs": [
+          "مساحة المثلث هي 1/2 × القاعدة × الارتفاع. وإذا استخدمت الوتر (c) قاعدةً، فإن الارتفاع المقابل هو الارتفاع المنزّل على الوتر (h)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} c h"
+        ]
+      },
+      "howTo": {
+        "h2": "كيفية الحساب",
+        "steps": [
+          "أدخل الوتر c.",
+          "أدخل الارتفاع h.",
+          "انقر فوق حساب."
+        ]
+      },
+      "example": {
+        "h2": "مثال محلول",
+        "intro": "إذا كان الوتر 10 والارتفاع 4.8:",
+        "lines": [
+          "A = \\frac{1}{2} c h",
+          "A = 0.5 \\times 10 \\times 4.8",
+          "A = 24"
+        ],
+        "answer": "المساحة 24 وحدة مربعة."
+      },
+      "extraSections": [
+        {
+          "h2": "حدود الارتفاع",
+          "paragraphs": [
+            "في أي مثلث قائم، أقصى ارتفاع ممكن إلى الوتر يساوي بالضبط نصف طول الوتر. فإذا كان h > c/2، فلا يوجد مثلث قائم كهذا."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "حاسبة المساحة"
+        },
+        {
+          "href": "/right-triangle-altitude-calculator/",
+          "label": "حاسبة الارتفاع"
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "حاسبة مساحة المثلث القائم من نصف قطر الدائرة المحاطة ونصف المحيط"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل هذه هي المساحة نفسها عند استخدام القائمتين؟",
+          "answer": "نعم. (a × b) / 2 يساوي دائمًا بالضبط (c × h) / 2."
         }
       ]
     }
@@ -8909,12 +14636,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "description": "Крак b е другата страна на правия ъгъл и се събира заедно с a и c."
           },
           "c": {
-            "label": "c = hypotenuse",
+            "label": "c = хипотенуза",
             "description": "Хипотенузата c е най-дългата страна, срещу правия ъгъл и завършва границата."
           }
         },
         "result": {
-          "label": "P = total boundary length",
+          "label": "P = обща дължина на границата",
           "description": "Калкулаторът събира a + b + c и връща периметъра в избраната линейна единица."
         },
         "notes": [
@@ -9017,7 +14744,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "Дадено е: a = 8, b = 15, c = 17. Това е друга питагорова тройка, където всички страни са цели числа."
           ],
           "listItems": [
-            "P = 8 + 15 + 17 = 40 units",
+            "P = 8 + 15 + 17 = 40 единици",
             "Проверка: 8² + 15² = 64 + 225 = 289 = 17² ✓",
             "Тази тройка е полезна при строителни планове, където са необходими дължини на ограда или подстригване от 40 единици."
           ]
@@ -9244,12 +14971,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "description": "Крак b образува прав ъгъл с a и допринася както за периметъра, така и за полупериметъра."
           },
           "c": {
-            "label": "c = hypotenuse",
+            "label": "c = хипотенуза",
             "description": "Хипотенузата c е най-дългата страна и трябва да бъде включена, преди общата сума да бъде намалена наполовина."
           }
         },
         "result": {
-          "label": "s = half of the boundary total",
+          "label": "s = половината от общата дължина на границата",
           "description": "Калкулаторът първо събира a + b + c, след което разделя този периметър на 2."
         },
         "notes": [
@@ -9446,8 +15173,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
-          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
-        },
+          "label": "Калкулатор за лице на правоъгълен триъгълник по радиус на вписаната окръжност и полупериметър"
+        }
       ],
       "faqs": [
         {
@@ -9481,6 +15208,401 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "question": "Как мога да проверя дали отговорът ми на полупериметъра е правилен?",
           "answer": "Удвоете полупериметъра. Резултатът трябва да е равен на пълния периметър. Например, ако s = 15, тогава P трябва да бъде 30."
+        }
+      ]
+    },
+    "right-triangle-area-from-leg-and-angle-calculator": {
+      "slug": "right-triangle-area-from-leg-and-angle-calculator",
+      "url": "/right-triangle-area-from-leg-and-angle-calculator/",
+      "h1": "Лице на правоъгълен триъгълник от катет и ъгъл",
+      "metaTitle": "Калкулатор за лице на правоъгълен триъгълник от катет и ъгъл | Намерете лицето",
+      "metaDescription": "Изчислете лицето на правоъгълен триъгълник от една страна и ъгъл. Използва формули за лице със синус и косинус с решения стъпка по стъпка.",
+      "formulaSlug": "area-sin-a",
+      "toolPurpose": "Въведете един катет, хипотенузата и ъгъла между тях, за да изчислите лицето с помощта на тригонометрични формули.",
+      "intro": "Въведете катет b, хипотенуза c и ъгъл A, за да намерите точното лице на вашия правоъгълен триъгълник.",
+      "quickSummary": {
+        "h2": "Какво решава този инструмент",
+        "intro": "Използвайте този калкулатор, когато знаете само две страни и ъгъла между тях. Този метод използва тригонометрия, за да намери точното лице, без да е необходима третата страна.",
+        "cards": [
+          {
+            "label": "Известни стойности",
+            "value": "Катет b, хипотенуза c и ъгъл A"
+          },
+          {
+            "label": "Находки",
+            "value": "Лице (A)"
+          },
+          {
+            "label": "Основна формула",
+            "value": "A = (b × c × sin(A)) / 2"
+          },
+          {
+            "label": "Най-доброто за",
+            "value": "Тригонометрични задачи, геодезия и случаи, при които липсва третата страна"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Лице",
+        "fields": [
+          {
+            "key": "b",
+            "label": "Крак b",
+            "min": 0
+          },
+          {
+            "key": "c",
+            "label": "Хипотенуза c",
+            "min": 0
+          },
+          {
+            "key": "A",
+            "label": "ъгъл A",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Диаграма на правоъгълен триъгълник: лице чрез синус",
+        "intro": "Диаграмата показва триъгълника със страни b и c, които образуват ъгъл A между тях.",
+        "caption": "Лице на правоъгълен триъгълник с помощта на формулата със синус.",
+        "formulaLabel": "A = 0.5 × b × c × sin(A)",
+        "keyLabel": "Диаграма Ключ",
+        "sides": {
+          "a": {
+            "label": "a = срещулежаща страна",
+            "description": "Не се изисква за това изчисление."
+          },
+          "b": {
+            "label": "b = прилежаща страна",
+            "description": "Една от известните страни, които образуват ъгъла."
+          },
+          "c": {
+            "label": "c = хипотенуза",
+            "description": "Другата известна страна, която образува ъгъла."
+          }
+        },
+        "result": {
+          "label": "A = Лице",
+          "description": "Лицето, изчислено с помощта на тригонометричен синус."
+        },
+        "notes": [
+          "Уверете се, че ъгълът е въведен в градуси.",
+          "Формулата A = 1/2 * ab * sin(C) важи за всички триъгълници."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Формула за лице с помощта на синус",
+        "paragraphs": [
+          "Когато знаете две страни на произволен триъгълник и ъгъла между тях, можете да намерите лицето с помощта на правилото със синус за лице: A = (1/2) * side1 * side2 * sin(angle).",
+          "В правоъгълен триъгълник, в който знаете катет, хипотенузата и ъгъла между тях, това става A = (1/2) * b * c * sin(A)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} b c \\sin(A)"
+        ]
+      },
+      "howTo": {
+        "h2": "Как да изчислите лице с помощта на синус",
+        "steps": [
+          "Определете катета, хипотенузата и ъгъла между тях.",
+          "Въведете катет b в първото поле за въвеждане.",
+          "Въведете хипотенуза c във второто поле за въвеждане.",
+          "Въведете ъгъл A в градуси в третото поле за въвеждане.",
+          "Щракнете върху Изчисли, за да видите лицето."
+        ]
+      },
+      "example": {
+        "h2": "Решен пример: лице с помощта на ъгъл",
+        "intro": "Ако катет b е 4, хипотенуза c е 5, а ъгъл A е 36.87°:",
+        "lines": [
+          "A = 0.5 \\times b \\times c \\times \\sin(A)",
+          "A = 0.5 \\times 4 \\times 5 \\times \\sin(36.87^\\circ)",
+          "A = 10 \\times 0.6",
+          "A = 6"
+        ],
+        "answer": "Лицето е 6 квадратни единици."
+      },
+      "extraSections": [
+        {
+          "h2": "Защо да използвате тригонометрия за лице?",
+          "paragraphs": [
+            "Понякога не можете лесно да измерите всичките три страни на триъгълник, но измерването на две страни и ъгъла между тях е възможно (например при земемерни дейности).",
+            "Този тригонометричен подход дава точното лице, без първо да трябва да намирате липсващата страна с помощта на Питагоровата теорема."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-from-legs-calculator/",
+          "label": "Калкулатор за лице на правоъгълен триъгълник от катети"
+        },
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Калкулатор за лице на правоъгълен триъгълник"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Какво става, ако знам другия ъгъл?",
+          "answer": "Можете да използвате A = (1/2) * a * c * sin(B), ако вместо това знаете катет a и ъгъл B."
+        }
+      ]
+    },
+    "right-triangle-area-from-inradius-and-semiperimeter-calculator": {
+      "slug": "right-triangle-area-from-inradius-and-semiperimeter-calculator",
+      "url": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+      "h1": "Лице на правоъгълен триъгълник от радиус на вписаната окръжност & полупериметър",
+      "metaTitle": "Калкулатор за лице на правоъгълен триъгълник от радиус на вписаната окръжност",
+      "metaDescription": "Изчислете лицето от радиуса на вписаната окръжност (r) и полупериметъра (s) с помощта на A = r × s.",
+      "formulaSlug": "area-rs",
+      "toolPurpose": "Изчислете общото лице на правоъгълен триъгълник, когато радиусът на вписаната окръжност и полупериметърът са известни.",
+      "intro": "Въведете радиуса на вписаната окръжност r и полупериметъра s, за да изчислите лицето на правоъгълния триъгълник.",
+      "quickSummary": {
+        "h2": "Какво решава този калкулатор",
+        "intro": "Този инструмент използва елегантната връзка между вписаната окръжност на триъгълник и неговия полупериметър, за да намери лицето веднага.",
+        "cards": [
+          {
+            "label": "Известни стойности",
+            "value": "Радиус на вписаната окръжност r и полупериметър s"
+          },
+          {
+            "label": "Находки",
+            "value": "Лице (A)"
+          },
+          {
+            "label": "Основна формула",
+            "value": "A = r × s"
+          },
+          {
+            "label": "Най-доброто за",
+            "value": "Геометрия за напреднали и теореми за окръжности"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Лице",
+        "fields": [
+          {
+            "key": "r",
+            "label": "вписан радиус r",
+            "min": 0
+          },
+          {
+            "key": "s",
+            "label": "Полупериметър s",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Диаграма: радиус на вписаната окръжност и полупериметър",
+        "intro": "Диаграмата илюстрира вписаната окръжност с радиус r. Лицето на целия триъгълник е точно r, умножено по полупериметъра s.",
+        "caption": "Формула за лице A = r × s.",
+        "formulaLabel": "A = r × s",
+        "keyLabel": "Диаграма Ключ",
+        "sides": {
+          "a": {
+            "label": "r = радиус",
+            "description": "Радиус на вписаната окръжност."
+          },
+          "b": {
+            "label": "s = полупериметър",
+            "description": "Половината от дължината на границата."
+          },
+          "c": {
+            "label": "A = лице",
+            "description": "Общата затворена площ."
+          }
+        },
+        "result": {
+          "label": "A = Лице",
+          "description": "Изчислява се като r × s."
+        },
+        "notes": [
+          "И r, и s трябва да бъдат положителни дължини."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Формула за лице",
+        "paragraphs": [
+          "За всеки триъгълник лицето може да се намери, като радиусът на вписаната окръжност (r) се умножи по полупериметъра (s).",
+          "Тази формула (A = r × s) е универсално вярна за всички триъгълници, не само за правоъгълните."
+        ],
+        "formulas": [
+          "A = r \\times s"
+        ]
+      },
+      "howTo": {
+        "h2": "Как да изчислите",
+        "steps": [
+          "Определете радиуса на вписаната окръжност r и полупериметъра s.",
+          "Въведете r в първото поле.",
+          "Въведете s във второто поле.",
+          "Умножете ги, за да получите лицето."
+        ]
+      },
+      "example": {
+        "h2": "Решен пример",
+        "intro": "Ако радиусът на вписаната окръжност е 2, а полупериметърът е 12 (както при триъгълник 6-8-10):",
+        "lines": [
+          "A = r \\times s",
+          "A = 2 \\times 12",
+          "A = 24"
+        ],
+        "answer": "Лицето е 24 квадратни единици."
+      },
+      "extraSections": [
+        {
+          "h2": "Откъде идва това?",
+          "paragraphs": [
+            "Като разделите триъгълника на три по-малки триъгълника, всеки с височина r и основи a, b и c, общото им лице е 0.5*a*r + 0.5*b*r + 0.5*c*r = r*(a+b+c)/2 = r*s."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Калкулатор за лице"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Калкулатор за лице на правоъгълен триъгълник по хипотенуза и височина"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Работи ли това за триъгълници, които не са правоъгълни?",
+          "answer": "Да, A = rs работи за всеки триъгълник."
+        }
+      ]
+    },
+    "right-triangle-area-from-hypotenuse-and-altitude-calculator": {
+      "slug": "right-triangle-area-from-hypotenuse-and-altitude-calculator",
+      "url": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+      "h1": "Лице на правоъгълен триъгълник от хипотенуза & височина",
+      "metaTitle": "Лице на правоъгълен триъгълник от хипотенуза и височина",
+      "metaDescription": "Изчислете лицето, като използвате хипотенузата като основа, а височината към хипотенузата като височина.",
+      "formulaSlug": "area-ch",
+      "toolPurpose": "Изчислете общото лице, когато хипотенузата и височината, спусната към хипотенузата, са известни.",
+      "intro": "Въведете хипотенуза c и височина h, за да изчислите лицето.",
+      "quickSummary": {
+        "h2": "Какво решава този калкулатор",
+        "intro": "Намира лицето, като използва хипотенузата като основа на триъгълника.",
+        "cards": [
+          {
+            "label": "Известни стойности",
+            "value": "Хипотенуза c и височина h"
+          },
+          {
+            "label": "Находки",
+            "value": "Лице (A)"
+          },
+          {
+            "label": "Основна формула",
+            "value": "A = (c × h) / 2"
+          },
+          {
+            "label": "Най-доброто за",
+            "value": "Задачи с проекции и случаи с алтернативна основа"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Лице",
+        "fields": [
+          {
+            "key": "c",
+            "label": "Хипотенуза c",
+            "min": 0
+          },
+          {
+            "key": "h",
+            "label": "височина h",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Диаграма: височина към хипотенузата",
+        "intro": "Диаграмата показва правоъгълния триъгълник, завъртян така, че хипотенузата да лежи хоризонтално като основа.",
+        "caption": "Формула за лице A = (c × h) / 2.",
+        "formulaLabel": "A = (c × h) / 2",
+        "keyLabel": "Диаграма Ключ",
+        "sides": {
+          "a": {
+            "label": "c = хипотенуза (основа)",
+            "description": "Дългата страна, използвана като основа."
+          },
+          "b": {
+            "label": "h = височина (височина)",
+            "description": "Перпендикулярната височина към хипотенузата."
+          },
+          "c": {
+            "label": "A = лице",
+            "description": "Общо квадратни единици."
+          }
+        },
+        "result": {
+          "label": "A = Лице",
+          "description": "Изчислява се като (c × h) / 2."
+        },
+        "notes": [
+          "Височината h трябва да бъде по-малка или равна на c/2."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Формула за лице",
+        "paragraphs": [
+          "Лицето на триъгълник е 1/2 × основа × височина. Ако използвате хипотенузата (c) като основа, съответната височина е височината към хипотенузата (h)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} c h"
+        ]
+      },
+      "howTo": {
+        "h2": "Как да изчислите",
+        "steps": [
+          "Въведете хипотенузата c.",
+          "Въведете височината h.",
+          "Щракнете върху Изчисли."
+        ]
+      },
+      "example": {
+        "h2": "Решен пример",
+        "intro": "Ако хипотенузата е 10, а височината е 4.8:",
+        "lines": [
+          "A = \\frac{1}{2} c h",
+          "A = 0.5 \\times 10 \\times 4.8",
+          "A = 24"
+        ],
+        "answer": "Лицето е 24 квадратни единици."
+      },
+      "extraSections": [
+        {
+          "h2": "Ограничения на височината",
+          "paragraphs": [
+            "Във всеки правоъгълен триъгълник максималната възможна височина към хипотенузата е точно половината от дължината на хипотенузата. Ако h > c/2, такъв правоъгълен триъгълник не съществува."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Калкулатор за лице"
+        },
+        {
+          "href": "/right-triangle-altitude-calculator/",
+          "label": "Калкулатор за височина"
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Калкулатор за лице на правоъгълен триъгълник по радиус на вписаната окръжност и полупериметър"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Получава ли се същото лице, както при използването на катетите?",
+          "answer": "Да. (a × b) / 2 винаги е точно равно на (c × h) / 2."
         }
       ]
     }
@@ -10090,8 +16212,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
-          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
-        },
+          "label": "İç Yarıçap ve Yarı Çevre ile Dik Üçgen Alanı Hesaplayıcı"
+        }
       ],
       "faqs": [
         {
@@ -10125,6 +16247,401 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "question": "Yarıçevre cevabımın doğru olduğunu nasıl kontrol edebilirim?",
           "answer": "Yarıçevreyi ikiye katlayın. Sonuç tam çevreye eşit olmalıdır. Örneğin, eğer s = 15 ise, P 30 olmalıdır."
+        }
+      ]
+    },
+    "right-triangle-area-from-leg-and-angle-calculator": {
+      "slug": "right-triangle-area-from-leg-and-angle-calculator",
+      "url": "/right-triangle-area-from-leg-and-angle-calculator/",
+      "h1": "Dik Kenar ve Açı ile Dik Üçgen Alanı",
+      "metaTitle": "Dik Kenar ve Açı ile Dik Üçgen Alanı Hesaplayıcı | Alanı Bulun",
+      "metaDescription": "Bir kenar ve bir açıdan dik üçgen alanını hesaplayın. Adım adım çözümlerle sinüs ve kosinüs alan formüllerini kullanır.",
+      "formulaSlug": "area-sin-a",
+      "toolPurpose": "Alanı trigonometrik formüller kullanarak hesaplamak için bir dik kenar, hipotenüs ve aradaki açıyı girin.",
+      "intro": "Dik üçgeninizin tam alanını bulmak için dik kenar b'yi, hipotenüs c'yi ve A açısını girin.",
+      "quickSummary": {
+        "h2": "Bu Araç Neyi Çözer",
+        "intro": "Yalnızca iki kenarı ve aradaki açıyı bildiğinizde bu hesaplayıcıyı kullanın. Bu yöntem, üçüncü kenara ihtiyaç duymadan tam alanı bulmak için trigonometri kullanır.",
+        "cards": [
+          {
+            "label": "Bilinen değerler",
+            "value": "Dik kenar b, hipotenüs c ve A açısı"
+          },
+          {
+            "label": "Bulunan",
+            "value": "Alan (A)"
+          },
+          {
+            "label": "Ana formül",
+            "value": "A = (b × c × sin(A)) / 2"
+          },
+          {
+            "label": "En uygun olduğu yerler",
+            "value": "Trigonometri problemleri, arazı ölçümü ve üçüncü kenarın eksik olduğu durumlar"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Alan",
+        "fields": [
+          {
+            "key": "b",
+            "label": "b dik kenarı",
+            "min": 0
+          },
+          {
+            "key": "c",
+            "label": "c hipotenüsü",
+            "min": 0
+          },
+          {
+            "key": "A",
+            "label": "açı A",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Dik Üçgen Şeması: Sinüsten Alan",
+        "intro": "Şema, b ve c kenarlarının aradaki A açısını oluşturduğu üçgeni gösterir.",
+        "caption": "Sinüs formülünü kullanan dik üçgen alanı.",
+        "formulaLabel": "A = 0.5 × b × c × sin(A)",
+        "keyLabel": "Diyagram Anahtarı",
+        "sides": {
+          "a": {
+            "label": "a = karşı kenar",
+            "description": "Bu hesaplama için gerekli değildir."
+          },
+          "b": {
+            "label": "b = komşu kenar",
+            "description": "Açıyı oluşturan bilinen kenarlardan biri."
+          },
+          "c": {
+            "label": "c = hipotenüs",
+            "description": "Açıyı oluşturan diğer bilinen kenar."
+          }
+        },
+        "result": {
+          "label": "A = Alan",
+          "description": "Trigonometrik sinüs kullanılarak hesaplanan alan."
+        },
+        "notes": [
+          "Açının derece cinsinden girildiğinden emin olun.",
+          "A = 1/2 * ab * sin(C) formülü tüm üçgenler için geçerlidir."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Sinüs Kullanan Alan Formülü",
+        "paragraphs": [
+          "Herhangi bir üçgenin iki kenarını ve aralarındaki açıyı bildiğinizde, alan için sinüs kuralını kullanarak alanı bulabilirsiniz: A = (1/2) * kenar1 * kenar2 * sin(açı).",
+          "Bir dik kenarı, hipotenüsü ve aralarındaki açıyı bildiğiniz bir dik üçgende bu, A = (1/2) * b * c * sin(A) olur."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} b c \\sin(A)"
+        ]
+      },
+      "howTo": {
+        "h2": "Sinüs Kullanarak Alan Nasıl Hesaplanır",
+        "steps": [
+          "Dik kenarı, hipotenüsü ve aradaki açıyı belirleyin.",
+          "Dik kenar b'yi ilk girdiye girin.",
+          "Hipotenüs c'yi ikinci girdiye girin.",
+          "A açısını derece cinsinden üçüncü girdiye girin.",
+          "Alanı görmek için Hesapla düğmesine tıklayın."
+        ]
+      },
+      "example": {
+        "h2": "Çalışılmış Örnek: Açı Kullanarak Alan",
+        "intro": "Dik kenar b 4, hipotenüs c 5 ve A açısı 36.87° ise:",
+        "lines": [
+          "A = 0.5 \\times b \\times c \\times \\sin(A)",
+          "A = 0.5 \\times 4 \\times 5 \\times \\sin(36.87^\\circ)",
+          "A = 10 \\times 0.6",
+          "A = 6"
+        ],
+        "answer": "Alan 6 kare birimdir."
+      },
+      "extraSections": [
+        {
+          "h2": "Alan için Neden Trigonometri Kullanılır?",
+          "paragraphs": [
+            "Bazen bir üçgenin üç kenarını da kolayca ölçemezsiniz, ancak iki kenarı ve aralarındaki açıyı ölçmek mümkündür (arazi ölçümünde olduğu gibi).",
+            "Bu trigonometrik yaklaşım, önce eksik kenarı Pisagor teoremiyle çözmek zorunda kalmadan kesin alanı verir."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-from-legs-calculator/",
+          "label": "Dik Kenarlar ile Dik Üçgen Alanı Hesaplayıcı"
+        },
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Dik Üçgen Alanı Hesaplayıcı"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Diğer açıyı biliyorsam ne olur?",
+          "answer": "Bunun yerine dik kenar a'yı ve B açısını biliyorsanız A = (1/2) * a * c * sin(B) kullanabilirsiniz."
+        }
+      ]
+    },
+    "right-triangle-area-from-inradius-and-semiperimeter-calculator": {
+      "slug": "right-triangle-area-from-inradius-and-semiperimeter-calculator",
+      "url": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+      "h1": "İç Yarıçap ve Yarı Çevre ile Dik Üçgen Alanı",
+      "metaTitle": "İç Yarıçap ile Dik Üçgen Alanı Hesaplayıcı",
+      "metaDescription": "A = r × s kullanarak iç yarıçap (r) ve yarı çevreden (s) alanı hesaplayın.",
+      "formulaSlug": "area-rs",
+      "toolPurpose": "İç yarıçap ve yarı çevre bilindiğinde bir dik üçgenin toplam alanını hesaplayın.",
+      "intro": "Dik üçgen alanını hesaplamak için iç yarıçap r'yi ve yarı çevre s'yi girin.",
+      "quickSummary": {
+        "h2": "Bu Hesaplayıcı Neyi Çözer",
+        "intro": "Bu araç, alanı anında bulmak için bir üçgenin iç teğet çemberi ile yarı çevresi arasındaki zarif ilişkiyi kullanır.",
+        "cards": [
+          {
+            "label": "Bilinen değerler",
+            "value": "İç yarıçap r ve yarı çevre s"
+          },
+          {
+            "label": "Bulunan",
+            "value": "Alan (A)"
+          },
+          {
+            "label": "Ana formül",
+            "value": "A = r × s"
+          },
+          {
+            "label": "En uygun olduğu yerler",
+            "value": "İleri geometri ve çember teoremleri"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Alan",
+        "fields": [
+          {
+            "key": "r",
+            "label": "iç yarıçap r",
+            "min": 0
+          },
+          {
+            "key": "s",
+            "label": "Yarıçevre s",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Şema: İç Yarıçap ve Yarı Çevre",
+        "intro": "Şema, yarıçapı r olan iç teğet çemberi gösterir. Tam üçgenin alanı, tam olarak r ile yarı çevre s'nin çarpımına eşittir.",
+        "caption": "Alan formülü A = r × s.",
+        "formulaLabel": "A = r × s",
+        "keyLabel": "Diyagram Anahtarı",
+        "sides": {
+          "a": {
+            "label": "r = yarıçap",
+            "description": "İç teğet çemberin yarıçapı."
+          },
+          "b": {
+            "label": "s = yarı çevre",
+            "description": "Sınır mesafesinin yarısı."
+          },
+          "c": {
+            "label": "A = alan",
+            "description": "Toplam kapalı alan."
+          }
+        },
+        "result": {
+          "label": "A = Alan",
+          "description": "r × s olarak hesaplanır."
+        },
+        "notes": [
+          "Hem r hem de s pozitif uzunluklar olmalıdır."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Alan formülü",
+        "paragraphs": [
+          "Herhangi bir üçgen için alan, iç yarıçap (r) ile yarı çevrenin (s) çarpılmasıyla bulunabilir.",
+          "Bu formül (A = r × s) yalnızca dik üçgenler için değil, tüm üçgenler için evrensel olarak doğrudur."
+        ],
+        "formulas": [
+          "A = r \\times s"
+        ]
+      },
+      "howTo": {
+        "h2": "Nasıl hesaplanır",
+        "steps": [
+          "İç yarıçap r'yi ve yarı çevre s'yi belirleyin.",
+          "r'yi ilk alana girin.",
+          "s'yi ikinci alana girin.",
+          "Alanı elde etmek için onları çarpın."
+        ]
+      },
+      "example": {
+        "h2": "Çözümlü örnek",
+        "intro": "İç yarıçap 2 ve yarı çevre 12 ise (6-8-10 üçgeninde olduğu gibi):",
+        "lines": [
+          "A = r \\times s",
+          "A = 2 \\times 12",
+          "A = 24"
+        ],
+        "answer": "Alan 24 kare birimdir."
+      },
+      "extraSections": [
+        {
+          "h2": "Bu nereden geliyor?",
+          "paragraphs": [
+            "Üçgeni, her biri yüksekliği r ve tabanları a, b ve c olan üç küçük üçgene bölerek, toplam alanları 0.5*a*r + 0.5*b*r + 0.5*c*r = r*(a+b+c)/2 = r*s olur."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Alan hesaplayıcı"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Hipotenüs ve Yükseklik ile Dik Üçgen Alanı Hesaplayıcı"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Bu, dik olmayan üçgenler için de geçerli mi?",
+          "answer": "Evet, A = rs herhangi bir üçgen için geçerlidir."
+        }
+      ]
+    },
+    "right-triangle-area-from-hypotenuse-and-altitude-calculator": {
+      "slug": "right-triangle-area-from-hypotenuse-and-altitude-calculator",
+      "url": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+      "h1": "Hipotenüs ve Yükseklik ile Dik Üçgen Alanı",
+      "metaTitle": "Hipotenüs ve Yükseklik ile Dik Üçgen Alanı",
+      "metaDescription": "Hipotenüsü taban ve hipotenüse çizilen yüksekliği yükseklik olarak kullanarak alanı hesaplayın.",
+      "formulaSlug": "area-ch",
+      "toolPurpose": "Hipotenüs ve hipotenüse çizilen yükseklik bilindiğinde toplam alanı hesaplayın.",
+      "intro": "Alanı hesaplamak için hipotenüs c'yi ve yükseklik h'yi girin.",
+      "quickSummary": {
+        "h2": "Bu Hesaplayıcı Neyi Çözer",
+        "intro": "Alanı, hipotenüsü üçgenin tabanı olarak kullanarak bulur.",
+        "cards": [
+          {
+            "label": "Bilinen değerler",
+            "value": "Hipotenüs c ve yükseklik h"
+          },
+          {
+            "label": "Bulunan",
+            "value": "Alan (A)"
+          },
+          {
+            "label": "Ana formül",
+            "value": "A = (c × h) / 2"
+          },
+          {
+            "label": "En uygun olduğu yerler",
+            "value": "İzdüşüm problemleri ve alternatif taban bakış açıları"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Alan",
+        "fields": [
+          {
+            "key": "c",
+            "label": "c hipotenüsü",
+            "min": 0
+          },
+          {
+            "key": "h",
+            "label": "yükseklik h",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Şema: Hipotenüse Çizilen Yükseklik",
+        "intro": "Şema, hipotenüs taban olarak düz duracak şekilde döndürülmüş dik üçgeni gösterir.",
+        "caption": "Alan formülü A = (c × h) / 2.",
+        "formulaLabel": "A = (c × h) / 2",
+        "keyLabel": "Diyagram Anahtarı",
+        "sides": {
+          "a": {
+            "label": "c = hipotenüs (taban)",
+            "description": "Taban olarak kullanılan uzun kenar."
+          },
+          "b": {
+            "label": "h = yükseklik (yükseklik)",
+            "description": "Hipotenüse olan dik yükseklik."
+          },
+          "c": {
+            "label": "A = alan",
+            "description": "Toplam kare birim."
+          }
+        },
+        "result": {
+          "label": "A = Alan",
+          "description": "(c × h) / 2 olarak hesaplanır."
+        },
+        "notes": [
+          "Yükseklik h, c/2'ye eşit veya ondan küçük olmalıdır."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Alan formülü",
+        "paragraphs": [
+          "Bir üçgenin alanı 1/2 × taban × yüksekliktir. Hipotenüsü (c) taban olarak kullanırsanız, karşılık gelen yükseklik hipotenüse çizilen yüksekliktir (h)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} c h"
+        ]
+      },
+      "howTo": {
+        "h2": "Nasıl hesaplanır",
+        "steps": [
+          "Hipotenüs c değerini girin.",
+          "Yükseklik h değerini girin.",
+          "Hesapla'yı tıklayın."
+        ]
+      },
+      "example": {
+        "h2": "Çözümlü örnek",
+        "intro": "Hipotenüs 10 ve yükseklik 4.8 ise:",
+        "lines": [
+          "A = \\frac{1}{2} c h",
+          "A = 0.5 \\times 10 \\times 4.8",
+          "A = 24"
+        ],
+        "answer": "Alan 24 kare birimdir."
+      },
+      "extraSections": [
+        {
+          "h2": "Yükseklik sınırları",
+          "paragraphs": [
+            "Herhangi bir dik üçgende, hipotenüse çizilen yüksekliğin mümkün olan en büyük değeri, tam olarak hipotenüs uzunluğunun yarısıdır. h > c/2 ise, böyle bir dik üçgen yoktur."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Alan hesaplayıcı"
+        },
+        {
+          "href": "/right-triangle-altitude-calculator/",
+          "label": "Yükseklik hesaplayıcı"
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "İç Yarıçap ve Yarı Çevre ile Dik Üçgen Alanı Hesaplayıcı"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Bu, dik kenarları kullanmakla aynı alan mı?",
+          "answer": "Evet. (a × b) / 2 her zaman tam olarak (c × h) / 2'ye eşittir."
         }
       ]
     }
@@ -10734,8 +17251,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
-          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
-        },
+          "label": "Kalkylator för area i rätvinklig triangel utifrån inradie och halv omkrets"
+        }
       ],
       "faqs": [
         {
@@ -10769,6 +17286,401 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "question": "Hur kan jag kontrollera att mitt svar på halva omkretsen är korrekt?",
           "answer": "Dubbla den halva omkretsen. Resultatet bör vara lika med den fulla omkretsen. Till exempel, om s = 15, så bör P vara 30."
+        }
+      ]
+    },
+    "right-triangle-area-from-leg-and-angle-calculator": {
+      "slug": "right-triangle-area-from-leg-and-angle-calculator",
+      "url": "/right-triangle-area-from-leg-and-angle-calculator/",
+      "h1": "Area i rätvinklig triangel utifrån katet och vinkel",
+      "metaTitle": "Kalkylator för area i rätvinklig triangel utifrån katet och vinkel | Hitta arean",
+      "metaDescription": "Beräkna den rätvinkliga triangelns area utifrån en sida och en vinkel. Använder areaformler med sinus och cosinus och stegvisa lösningar.",
+      "formulaSlug": "area-sin-a",
+      "toolPurpose": "Ange en katet, hypotenusan och den mellanliggande vinkeln för att beräkna arean med trigonometriska formler.",
+      "intro": "Ange katet b, hypotenusan c och vinkel A för att hitta den exakta arean för din rätvinkliga triangel.",
+      "quickSummary": {
+        "h2": "Vad detta verktyg löser",
+        "intro": "Använd denna kalkylator när du bara känner till två sidor och den mellanliggande vinkeln. Den här metoden använder trigonometri för att hitta den exakta arean utan att behöva den tredje sidan.",
+        "cards": [
+          {
+            "label": "Kända värden",
+            "value": "Katet b, hypotenusan c och vinkel A"
+          },
+          {
+            "label": "Hittar",
+            "value": "Area (A)"
+          },
+          {
+            "label": "Huvudformel",
+            "value": "A = (b × c × sin(A)) / 2"
+          },
+          {
+            "label": "Bäst för",
+            "value": "Trigonometriproblem, lantmäteri och fall där den tredje sidan saknas"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Område",
+        "fields": [
+          {
+            "key": "b",
+            "label": "Katet b",
+            "min": 0
+          },
+          {
+            "key": "c",
+            "label": "Hypotenusa c",
+            "min": 0
+          },
+          {
+            "key": "A",
+            "label": "vinkel A",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Diagram för rätvinklig triangel: Area från sinus",
+        "intro": "Diagrammet visar triangeln med sidorna b och c som bildar den mellanliggande vinkeln A.",
+        "caption": "Area för rätvinklig triangel med sinusformeln.",
+        "formulaLabel": "A = 0.5 × b × c × sin(A)",
+        "keyLabel": "Diagramförklaring",
+        "sides": {
+          "a": {
+            "label": "a = motstående sida",
+            "description": "Krävs inte för den här beräkningen."
+          },
+          "b": {
+            "label": "b = närliggande sida",
+            "description": "En av de kända sidorna som bildar vinkeln."
+          },
+          "c": {
+            "label": "c = hypotenusa",
+            "description": "Den andra kända sidan som bildar vinkeln."
+          }
+        },
+        "result": {
+          "label": "A = Area",
+          "description": "Arean beräknad med trigonometrisk sinus."
+        },
+        "notes": [
+          "Se till att vinkeln anges i grader.",
+          "Formeln A = 1/2 * ab * sin(C) gäller för alla trianglar."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Areaformel med sinus",
+        "paragraphs": [
+          "När du känner till två sidor i en triangel och vinkeln mellan dem kan du hitta arean med sinusformeln för area: A = (1/2) * sida1 * sida2 * sin(vinkel).",
+          "I en rätvinklig triangel där du känner till en katet, hypotenusan och vinkeln mellan dem blir detta A = (1/2) * b * c * sin(A)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} b c \\sin(A)"
+        ]
+      },
+      "howTo": {
+        "h2": "Så här beräknar du area med sinus",
+        "steps": [
+          "Identifiera kateten, hypotenusan och den mellanliggande vinkeln.",
+          "Ange katet b i det första inmatningsfältet.",
+          "Ange hypotenusan c i det andra inmatningsfältet.",
+          "Ange vinkel A i grader i det tredje inmatningsfältet.",
+          "Klicka på Beräkna för att se arean."
+        ]
+      },
+      "example": {
+        "h2": "Genomarbetat exempel: Area med vinkel",
+        "intro": "Om katet b är 4, hypotenusan c är 5 och vinkel A är 36.87°:",
+        "lines": [
+          "A = 0.5 \\times b \\times c \\times \\sin(A)",
+          "A = 0.5 \\times 4 \\times 5 \\times \\sin(36.87^\\circ)",
+          "A = 10 \\times 0.6",
+          "A = 6"
+        ],
+        "answer": "Arean är 6 kvadratenheter."
+      },
+      "extraSections": [
+        {
+          "h2": "Varför använda trigonometri för area?",
+          "paragraphs": [
+            "Ibland kan du inte enkelt mäta alla tre sidorna i en triangel, men det går att mäta två sidor och den mellanliggande vinkeln (till exempel vid lantmäteri).",
+            "Detta trigonometriska tillvägagångssätt ger den exakta arean utan att du först behöver lösa ut den saknade sidan med Pythagoras sats."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-from-legs-calculator/",
+          "label": "Kalkylator för area i rätvinklig triangel utifrån kateterna"
+        },
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Areakalkylator för rätvinklig triangel"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Vad händer om jag känner till den andra vinkeln?",
+          "answer": "Du kan använda A = (1/2) * a * c * sin(B) om du i stället känner till katet a och vinkel B."
+        }
+      ]
+    },
+    "right-triangle-area-from-inradius-and-semiperimeter-calculator": {
+      "slug": "right-triangle-area-from-inradius-and-semiperimeter-calculator",
+      "url": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+      "h1": "Area i rätvinklig triangel utifrån inradie och halv omkrets",
+      "metaTitle": "Kalkylator för area i rätvinklig triangel utifrån inradie",
+      "metaDescription": "Beräkna arean från inradien (r) och den halva omkretsen (s) med A = r × s.",
+      "formulaSlug": "area-rs",
+      "toolPurpose": "Beräkna den totala arean hos en rätvinklig triangel när inradien och den halva omkretsen är kända.",
+      "intro": "Ange inradien r och den halva omkretsen s för att beräkna arean hos den rätvinkliga triangeln.",
+      "quickSummary": {
+        "h2": "Vad denna kalkylator löser",
+        "intro": "Detta verktyg använder det eleganta sambandet mellan en triangels inskrivna cirkel och dess halva omkrets för att hitta arean direkt.",
+        "cards": [
+          {
+            "label": "Kända värden",
+            "value": "Inradie r och halv omkrets s"
+          },
+          {
+            "label": "Hittar",
+            "value": "Area (A)"
+          },
+          {
+            "label": "Huvudformel",
+            "value": "A = r × s"
+          },
+          {
+            "label": "Bäst för",
+            "value": "Avancerad geometri och cirkelsatser"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Område",
+        "fields": [
+          {
+            "key": "r",
+            "label": "inradie r",
+            "min": 0
+          },
+          {
+            "key": "s",
+            "label": "Halv omkrets s",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Diagram: Inradie och halv omkrets",
+        "intro": "Diagrammet illustrerar den inskrivna cirkeln med radien r. Arean hos hela triangeln är exakt r multiplicerat med den halva omkretsen s.",
+        "caption": "Areaformel A = r × s.",
+        "formulaLabel": "A = r × s",
+        "keyLabel": "Diagramförklaring",
+        "sides": {
+          "a": {
+            "label": "r = radie",
+            "description": "Radien hos den inskrivna cirkeln."
+          },
+          "b": {
+            "label": "s = halv omkrets",
+            "description": "Hälften av gränsavståndet."
+          },
+          "c": {
+            "label": "A = area",
+            "description": "Det totala inneslutna utrymmet."
+          }
+        },
+        "result": {
+          "label": "A = Area",
+          "description": "Beräknas som r × s."
+        },
+        "notes": [
+          "Både r och s måste vara positiva längder."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Areaformel",
+        "paragraphs": [
+          "För varje triangel kan arean hittas genom att multiplicera inradien (r) med den halva omkretsen (s).",
+          "Denna formel (A = r × s) är allmängiltig för alla trianglar, inte bara rätvinkliga trianglar."
+        ],
+        "formulas": [
+          "A = r \\times s"
+        ]
+      },
+      "howTo": {
+        "h2": "Hur man beräknar",
+        "steps": [
+          "Identifiera inradien r och den halva omkretsen s.",
+          "Ange r i det första fältet.",
+          "Ange s i det andra fältet.",
+          "Multiplicera dem för att få arean."
+        ]
+      },
+      "example": {
+        "h2": "Genomräknat exempel",
+        "intro": "Om inradien är 2 och den halva omkretsen är 12 (som i en 6-8-10-triangel):",
+        "lines": [
+          "A = r \\times s",
+          "A = 2 \\times 12",
+          "A = 24"
+        ],
+        "answer": "Arean är 24 kvadratenheter."
+      },
+      "extraSections": [
+        {
+          "h2": "Var kommer detta ifrån?",
+          "paragraphs": [
+            "Genom att dela triangeln i tre mindre trianglar, var och en med höjden r och baserna a, b och c, är deras totala area 0.5*a*r + 0.5*b*r + 0.5*c*r = r*(a+b+c)/2 = r*s."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Areakalkylator"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "Kalkylator för area i rätvinklig triangel utifrån hypotenusa och höjd"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Fungerar detta för trianglar som inte är rätvinkliga?",
+          "answer": "Ja, A = rs fungerar för varje triangel."
+        }
+      ]
+    },
+    "right-triangle-area-from-hypotenuse-and-altitude-calculator": {
+      "slug": "right-triangle-area-from-hypotenuse-and-altitude-calculator",
+      "url": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+      "h1": "Area i rätvinklig triangel utifrån hypotenusa och höjd",
+      "metaTitle": "Area i rätvinklig triangel utifrån hypotenusa och höjd",
+      "metaDescription": "Beräkna arean med hypotenusan som bas och höjden mot hypotenusan som höjd.",
+      "formulaSlug": "area-ch",
+      "toolPurpose": "Beräkna den totala arean när hypotenusan och höjden som dras mot hypotenusan är kända.",
+      "intro": "Ange hypotenusan c och höjden h för att beräkna arean.",
+      "quickSummary": {
+        "h2": "Vad denna kalkylator löser",
+        "intro": "Hittar arean genom att använda hypotenusan som triangelns bas.",
+        "cards": [
+          {
+            "label": "Kända värden",
+            "value": "Hypotenusa c och höjd h"
+          },
+          {
+            "label": "Hittar",
+            "value": "Area (A)"
+          },
+          {
+            "label": "Huvudformel",
+            "value": "A = (c × h) / 2"
+          },
+          {
+            "label": "Bäst för",
+            "value": "Projektionsproblem och alternativa basperspektiv"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "Område",
+        "fields": [
+          {
+            "key": "c",
+            "label": "Hypotenusa c",
+            "min": 0
+          },
+          {
+            "key": "h",
+            "label": "höjd h",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "Diagram: Höjd mot hypotenusan",
+        "intro": "Diagrammet visar den rätvinkliga triangeln roterad så att hypotenusan ligger plant som bas.",
+        "caption": "Areaformel A = (c × h) / 2.",
+        "formulaLabel": "A = (c × h) / 2",
+        "keyLabel": "Diagramförklaring",
+        "sides": {
+          "a": {
+            "label": "c = hypotenusa (bas)",
+            "description": "Den långa sidan som används som bas."
+          },
+          "b": {
+            "label": "h = höjd (höjd)",
+            "description": "Vinkelrät höjd mot hypotenusan."
+          },
+          "c": {
+            "label": "A = area",
+            "description": "Totalt antal kvadratenheter."
+          }
+        },
+        "result": {
+          "label": "A = Area",
+          "description": "Beräknas som (c × h) / 2."
+        },
+        "notes": [
+          "Höjden h måste vara mindre än eller lika med c/2."
+        ]
+      },
+      "formulaSection": {
+        "h2": "Areaformel",
+        "paragraphs": [
+          "En triangels area är 1/2 × bas × höjd. Om du använder hypotenusan (c) som bas är den motsvarande höjden höjden mot hypotenusan (h)."
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} c h"
+        ]
+      },
+      "howTo": {
+        "h2": "Hur man beräknar",
+        "steps": [
+          "Ange hypotenusan c.",
+          "Ange höjden h.",
+          "Klicka på Beräkna."
+        ]
+      },
+      "example": {
+        "h2": "Genomräknat exempel",
+        "intro": "Om hypotenusan är 10 och höjden är 4.8:",
+        "lines": [
+          "A = \\frac{1}{2} c h",
+          "A = 0.5 \\times 10 \\times 4.8",
+          "A = 24"
+        ],
+        "answer": "Arean är 24 kvadratenheter."
+      },
+      "extraSections": [
+        {
+          "h2": "Höjdgränser",
+          "paragraphs": [
+            "I varje rätvinklig triangel är den största möjliga höjden mot hypotenusan exakt hälften av hypotenusans längd. Om h > c/2 existerar ingen sådan rätvinklig triangel."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "Areakalkylator"
+        },
+        {
+          "href": "/right-triangle-altitude-calculator/",
+          "label": "Höjdkalkylator"
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "Kalkylator för area i rätvinklig triangel utifrån inradie och halv omkrets"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Är detta samma area som när man använder kateterna?",
+          "answer": "Ja. (a × b) / 2 är alltid exakt lika med (c × h) / 2."
         }
       ]
     }
@@ -10841,12 +17753,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "description": "b 边是直角的另一边，与 a 和 c 相加。"
           },
           "c": {
-            "label": "c = hypotenuse",
+            "label": "c = 斜边",
             "description": "斜边 c 是最长的边，与直角相对，并完成边界。"
           }
         },
         "result": {
-          "label": "P = total boundary length",
+          "label": "P = 总边界长度",
           "description": "计算器将 a + b + c 相加并返回所选线性单位的周长。"
         },
         "notes": [
@@ -10949,7 +17861,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "给定：a = 8，b = 15，c = 17。这是另一个毕达哥拉斯三元组，其中所有边都是整数。"
           ],
           "listItems": [
-            "P = 8 + 15 + 17 = 40 units",
+            "P = 8 + 15 + 17 = 40 单位",
             "验证：8² + 15² = 64 + 225 = 289 = 17² ✓",
             "此三元组在需要 40 单位栅栏或修剪长度的建筑布局中非常有用。"
           ]
@@ -11176,12 +18088,12 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
             "description": "边 b 与 a 形成直角，并且对周长和半周长都有贡献。"
           },
           "c": {
-            "label": "c = hypotenuse",
+            "label": "c = 斜边",
             "description": "斜边 c 是最长的边，必须在总数减半之前将其包括在内。"
           }
         },
         "result": {
-          "label": "s = half of the boundary total",
+          "label": "s = 边界总长的一半",
           "description": "计算器首先将 a + b + c 加起来，然后将该周长除以 2。"
         },
         "notes": [
@@ -11294,7 +18206,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
           "listItems": [
             "s = (2.5 + 6 + 6.5) / 2",
             "s = 15 / 2",
-            "s = 7.5 units"
+            "s = 7.5 单位"
           ]
         },
         {
@@ -11378,8 +18290,8 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         },
         {
           "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
-          "label": "Right Triangle Area from Inradius and Semiperimeter Calculator"
-        },
+          "label": "由内切圆半径和半周长求直角三角形面积计算器"
+        }
       ],
       "faqs": [
         {
@@ -11413,6 +18325,401 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_TRANSLATIONS = {
         {
           "question": "如何检查我的半周长答案是否正确？",
           "answer": "半周长的两倍。结果应等于完整周长。例如，如果 s = 15，则 P 应为 30。"
+        }
+      ]
+    },
+    "right-triangle-area-from-leg-and-angle-calculator": {
+      "slug": "right-triangle-area-from-leg-and-angle-calculator",
+      "url": "/right-triangle-area-from-leg-and-angle-calculator/",
+      "h1": "由直角边和角求直角三角形面积",
+      "metaTitle": "由直角边和角求直角三角形面积计算器 | 求面积",
+      "metaDescription": "根据一条边和一个角计算直角三角形面积。使用正弦和余弦面积公式，并提供分步解答。",
+      "formulaSlug": "area-sin-a",
+      "toolPurpose": "输入一条直角边、斜边和夹角，使用三角公式计算面积。",
+      "intro": "输入直角边 b、斜边 c 和角 A，求出您的直角三角形的精确面积。",
+      "quickSummary": {
+        "h2": "此工具解决什么问题",
+        "intro": "当您只知道两条边和夹角时，使用此计算器。此方法使用三角学在无需第三条边的情况下求出精确面积。",
+        "cards": [
+          {
+            "label": "已知值",
+            "value": "直角边 b、斜边 c 和角 A"
+          },
+          {
+            "label": "发现",
+            "value": "面积 (A)"
+          },
+          {
+            "label": "主要配方",
+            "value": "A = (b × c × sin(A)) / 2"
+          },
+          {
+            "label": "最适合",
+            "value": "三角学问题、测量以及缺少第三条边的情况"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "面积",
+        "fields": [
+          {
+            "key": "b",
+            "label": "腿b",
+            "min": 0
+          },
+          {
+            "key": "c",
+            "label": "斜边c",
+            "min": 0
+          },
+          {
+            "key": "A",
+            "label": "角 A",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "直角三角形图：由正弦求面积",
+        "intro": "该图显示了由边 b 和 c 构成夹角 A 的三角形。",
+        "caption": "使用正弦公式求直角三角形面积。",
+        "formulaLabel": "A = 0.5 × b × c × sin(A)",
+        "keyLabel": "图键",
+        "sides": {
+          "a": {
+            "label": "a = 对边",
+            "description": "此计算不需要。"
+          },
+          "b": {
+            "label": "b = 邻边",
+            "description": "构成该角的已知边之一。"
+          },
+          "c": {
+            "label": "c = 斜边",
+            "description": "构成该角的另一条已知边。"
+          }
+        },
+        "result": {
+          "label": "A = 面积",
+          "description": "使用三角正弦计算出的面积。"
+        },
+        "notes": [
+          "确保角度以度为单位输入。",
+          "公式 A = 1/2 * ab * sin(C) 适用于所有三角形。"
+        ]
+      },
+      "formulaSection": {
+        "h2": "使用正弦的面积公式",
+        "paragraphs": [
+          "当您知道任意三角形的两条边及其夹角时，可以使用面积的正弦法则求面积：A = (1/2) * side1 * side2 * sin(angle)。",
+          "在已知一条直角边、斜边及其夹角的直角三角形中，这变为 A = (1/2) * b * c * sin(A)。"
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} b c \\sin(A)"
+        ]
+      },
+      "howTo": {
+        "h2": "如何使用正弦计算面积",
+        "steps": [
+          "确定直角边、斜边和夹角。",
+          "在第一个输入框中输入直角边 b。",
+          "在第二个输入框中输入斜边 c。",
+          "在第三个输入框中输入角 A 的度数。",
+          "点击计算查看面积。"
+        ]
+      },
+      "example": {
+        "h2": "实例讲解：使用角度求面积",
+        "intro": "如果直角边 b 为 4，斜边 c 为 5，角 A 为 36.87°：",
+        "lines": [
+          "A = 0.5 \\times b \\times c \\times \\sin(A)",
+          "A = 0.5 \\times 4 \\times 5 \\times \\sin(36.87^\\circ)",
+          "A = 10 \\times 0.6",
+          "A = 6"
+        ],
+        "answer": "面积为 6 平方单位。"
+      },
+      "extraSections": [
+        {
+          "h2": "为什么用三角学求面积？",
+          "paragraphs": [
+            "有时您无法轻松测量三角形的所有三条边，但测量两条边及其夹角是可行的（如在土地测量中）。",
+            "这种三角学方法无需先用勾股定理求出缺失边，即可给出精确面积。"
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-from-legs-calculator/",
+          "label": "由直角边求直角三角形面积计算器"
+        },
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "直角三角形面积计算器"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "如果我知道另一个角怎么办？",
+          "answer": "如果您知道直角边 a 和角 B，可以使用 A = (1/2) * a * c * sin(B)。"
+        }
+      ]
+    },
+    "right-triangle-area-from-inradius-and-semiperimeter-calculator": {
+      "slug": "right-triangle-area-from-inradius-and-semiperimeter-calculator",
+      "url": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+      "h1": "由内切圆半径和半周长求直角三角形面积",
+      "metaTitle": "由内切圆半径求直角三角形面积计算器",
+      "metaDescription": "使用 A = r × s，根据内切圆半径 (r) 和半周长 (s) 计算面积。",
+      "formulaSlug": "area-rs",
+      "toolPurpose": "当内切圆半径和半周长已知时，计算直角三角形的总面积。",
+      "intro": "输入内切圆半径 r 和半周长 s，计算直角三角形面积。",
+      "quickSummary": {
+        "h2": "此计算器解决什么问题",
+        "intro": "此工具利用三角形内切圆与其半周长之间优雅的关系，立即求出面积。",
+        "cards": [
+          {
+            "label": "已知值",
+            "value": "内切圆半径 r 和半周长 s"
+          },
+          {
+            "label": "发现",
+            "value": "面积 (A)"
+          },
+          {
+            "label": "主要配方",
+            "value": "A = r × s"
+          },
+          {
+            "label": "最适合",
+            "value": "高级几何和圆定理"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "面积",
+        "fields": [
+          {
+            "key": "r",
+            "label": "内切圆半径 r",
+            "min": 0
+          },
+          {
+            "key": "s",
+            "label": "半周长",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "图示：内切圆半径和半周长",
+        "intro": "该图展示了半径为 r 的内切圆。完整三角形的面积恰好是 r 乘以半周长 s。",
+        "caption": "面积公式 A = r × s。",
+        "formulaLabel": "A = r × s",
+        "keyLabel": "图键",
+        "sides": {
+          "a": {
+            "label": "r = 半径",
+            "description": "内切圆的半径。"
+          },
+          "b": {
+            "label": "s = 半周长",
+            "description": "边界距离的一半。"
+          },
+          "c": {
+            "label": "A = 面积",
+            "description": "所围的总空间。"
+          }
+        },
+        "result": {
+          "label": "A = 面积",
+          "description": "计算为 r × s。"
+        },
+        "notes": [
+          "r 和 s 都必须为正长度。"
+        ]
+      },
+      "formulaSection": {
+        "h2": "面积公式",
+        "paragraphs": [
+          "对于任何三角形，面积都可以通过内切圆半径 (r) 乘以半周长 (s) 得到。",
+          "此公式 (A = r × s) 对所有三角形普遍成立，不仅仅是直角三角形。"
+        ],
+        "formulas": [
+          "A = r \\times s"
+        ]
+      },
+      "howTo": {
+        "h2": "如何计算",
+        "steps": [
+          "确定内切圆半径 r 和半周长 s。",
+          "在第一个字段中输入 r。",
+          "在第二个字段中输入 s。",
+          "将它们相乘得到面积。"
+        ]
+      },
+      "example": {
+        "h2": "计算例题",
+        "intro": "如果内切圆半径为 2，半周长为 12（如在 6-8-10 三角形中）：",
+        "lines": [
+          "A = r \\times s",
+          "A = 2 \\times 12",
+          "A = 24"
+        ],
+        "answer": "面积为 24 平方单位。"
+      },
+      "extraSections": [
+        {
+          "h2": "这是从哪里来的？",
+          "paragraphs": [
+            "通过将三角形分成三个较小的三角形，每个高为 r，底分别为 a、b 和 c，它们的总面积为 0.5*a*r + 0.5*b*r + 0.5*c*r = r*(a+b+c)/2 = r*s。"
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "面积计算器"
+        },
+        {
+          "href": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+          "label": "由斜边和高求直角三角形面积计算器"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "这适用于非直角三角形吗？",
+          "answer": "是的，A = rs 适用于任何三角形。"
+        }
+      ]
+    },
+    "right-triangle-area-from-hypotenuse-and-altitude-calculator": {
+      "slug": "right-triangle-area-from-hypotenuse-and-altitude-calculator",
+      "url": "/right-triangle-area-from-hypotenuse-and-altitude-calculator/",
+      "h1": "由斜边和高求直角三角形面积",
+      "metaTitle": "由斜边和高求直角三角形面积",
+      "metaDescription": "使用斜边作为底，斜边上的高作为高来计算面积。",
+      "formulaSlug": "area-ch",
+      "toolPurpose": "当斜边和斜边上的高已知时，计算总面积。",
+      "intro": "输入斜边 c 和高 h 来计算面积。",
+      "quickSummary": {
+        "h2": "此计算器解决什么问题",
+        "intro": "通过使用斜边作为三角形的底来求面积。",
+        "cards": [
+          {
+            "label": "已知值",
+            "value": "斜边 c 和高 h"
+          },
+          {
+            "label": "发现",
+            "value": "面积 (A)"
+          },
+          {
+            "label": "主要配方",
+            "value": "A = (c × h) / 2"
+          },
+          {
+            "label": "最适合",
+            "value": "投影问题和以另一条边为底的视角"
+          }
+        ]
+      },
+      "calculator": {
+        "outputLabel": "面积",
+        "fields": [
+          {
+            "key": "c",
+            "label": "斜边c",
+            "min": 0
+          },
+          {
+            "key": "h",
+            "label": "高度 h",
+            "min": 0
+          }
+        ]
+      },
+      "diagram": {
+        "h2": "图示：斜边上的高",
+        "intro": "该图显示了旋转后的直角三角形，使斜边平放作为底。",
+        "caption": "面积公式 A = (c × h) / 2。",
+        "formulaLabel": "A = (c × h) / 2",
+        "keyLabel": "图键",
+        "sides": {
+          "a": {
+            "label": "c = 斜边 (底边)",
+            "description": "用作底的长边。"
+          },
+          "b": {
+            "label": "h = 高 (高度)",
+            "description": "到斜边的垂直高度。"
+          },
+          "c": {
+            "label": "A = 面积",
+            "description": "总平方单位。"
+          }
+        },
+        "result": {
+          "label": "A = 面积",
+          "description": "计算为 (c × h) / 2。"
+        },
+        "notes": [
+          "高 h 必须小于或等于 c/2。"
+        ]
+      },
+      "formulaSection": {
+        "h2": "面积公式",
+        "paragraphs": [
+          "三角形的面积为 1/2 × 底 × 高。如果使用斜边 (c) 作为底，对应的高是斜边上的高 (h)。"
+        ],
+        "formulas": [
+          "A = \\frac{1}{2} c h"
+        ]
+      },
+      "howTo": {
+        "h2": "如何计算",
+        "steps": [
+          "输入斜边 c。",
+          "输入高 h。",
+          "单击计算。"
+        ]
+      },
+      "example": {
+        "h2": "计算例题",
+        "intro": "如果斜边为 10，高为 4.8：",
+        "lines": [
+          "A = \\frac{1}{2} c h",
+          "A = 0.5 \\times 10 \\times 4.8",
+          "A = 24"
+        ],
+        "answer": "面积为 24 平方单位。"
+      },
+      "extraSections": [
+        {
+          "h2": "高度限制",
+          "paragraphs": [
+            "在任何直角三角形中，斜边上的高的最大值恰好是斜边长度的一半。如果 h > c/2，则不存在这样的直角三角形。"
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "href": "/right-triangle-area-calculator/",
+          "label": "面积计算器"
+        },
+        {
+          "href": "/right-triangle-altitude-calculator/",
+          "label": "高度计算器"
+        },
+        {
+          "href": "/right-triangle-area-from-inradius-and-semiperimeter-calculator/",
+          "label": "由内切圆半径和半周长求直角三角形面积计算器"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "这与使用直角边得到的面积相同吗？",
+          "answer": "是的。(a × b) / 2 始终恰好等于 (c × h) / 2。"
         }
       ]
     }

@@ -66,12 +66,12 @@
           "description": "Der Schenkel b ist die andere Seite des rechten Winkels und wird mit a und c addiert."
         },
         "c": {
-          "label": "c = hypotenuse",
+          "label": "c = Hypotenuse",
           "description": "Hypotenuse c ist die längste Seite gegenüber dem rechten Winkel und vervollständigt die Grenze."
         }
       },
       "result": {
-        "label": "P = total boundary length",
+        "label": "P = gesamte Grenzlänge",
         "description": "Der Rechner addiert a + b + c und gibt den Umfang in der ausgewählten linearen Einheit zurück."
       },
       "notes": [
@@ -174,7 +174,7 @@
           "Gegeben: a = 8, b = 15, c = 17. Dies ist ein weiteres pythagoräisches Tripel, bei dem alle Seiten ganze Zahlen sind."
         ],
         "listItems": [
-          "P = 8 + 15 + 17 = 40 units",
+          "P = 8 + 15 + 17 = 40 Einheiten",
           "Verifizierung: 8² + 15² = 64 + 225 = 289 = 17² ✓",
           "Dieses Dreifach ist bei Bauplänen nützlich, bei denen Zaun- oder Trimmlängen von 40 Einheiten erforderlich sind."
         ]
@@ -401,12 +401,12 @@
           "description": "Bein b bildet mit a den rechten Winkel und trägt sowohl zum Umfang als auch zum Halbumfang bei."
         },
         "c": {
-          "label": "c = hypotenuse",
+          "label": "c = Hypotenuse",
           "description": "Hypotenuse c ist die längste Seite und muss einbezogen werden, bevor die Summe halbiert wird."
         }
       },
       "result": {
-        "label": "s = half of the boundary total",
+        "label": "s = Hälfte der gesamten Grenzlänge",
         "description": "Der Rechner addiert zunächst a + b + c und dividiert dann diesen Umfang durch 2."
       },
       "notes": [
@@ -460,7 +460,7 @@
         ]
       },
       {
-        "h2": "Semiperimeter vs. Perimeter",
+        "h2": "Halber Umfang vs. Umfang",
         "paragraphs": [
           "Umfang P misst die gesamte Entfernung um die Außenseite des Dreiecks. Der Halbumfang misst die Hälfte dieser Distanz. Die beiden Werte hängen direkt zusammen: s = P / 2 und P = 2s.",
           "Verwenden Sie den Umfang, wenn bei einem Problem die Gesamtlänge der Begrenzung erforderlich ist, z. B. Beschnitt, Zaun oder Randabstand. Verwenden Sie Semiperimeter, wenn eine Formel speziell nach s fragt oder wenn Sie Werte für Flächen- und Radiusbeziehungen vorbereiten."

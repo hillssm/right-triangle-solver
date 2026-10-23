@@ -66,12 +66,12 @@
           "description": "Kaki b adalah sisi lain dari sudut siku-siku dan dijumlahkan dengan a dan c."
         },
         "c": {
-          "label": "c = hypotenuse",
+          "label": "c = hipotenusa",
           "description": "Sisi miring c adalah sisi terpanjang yang berhadapan dengan sudut siku-siku dan melengkapi batasnya."
         }
       },
       "result": {
-        "label": "P = total boundary length",
+        "label": "P = total panjang batas",
         "description": "Kalkulator menambahkan a + b + c dan mengembalikan keliling dalam satuan linier yang dipilih."
       },
       "notes": [
@@ -174,7 +174,7 @@
           "Diketahui: a = 8, b = 15, c = 17. Ini adalah tripel Pythagoras lainnya yang semua sisinya adalah bilangan bulat."
         ],
         "listItems": [
-          "P = 8 + 15 + 17 = 40 units",
+          "P = 8 + 15 + 17 = 40 satuan",
           "Verifikasi: 8² + 15² = 64 + 225 = 289 = 17² ✓",
           "Triple ini berguna dalam tata letak konstruksi yang memerlukan pagar 40 unit atau panjang trim."
         ]
@@ -401,12 +401,12 @@
           "description": "Kaki b membentuk sudut siku-siku dengan a dan menyumbang keliling dan semiperimeter."
         },
         "c": {
-          "label": "c = hypotenuse",
+          "label": "c = hipotenusa",
           "description": "Sisi miring c adalah sisi terpanjang dan harus dimasukkan sebelum totalnya menjadi setengahnya."
         }
       },
       "result": {
-        "label": "s = half of the boundary total",
+        "label": "s = setengah dari total batas",
         "description": "Kalkulator terlebih dahulu menjumlahkan a + b + c, lalu membagi kelilingnya dengan 2."
       },
       "notes": [

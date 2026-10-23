@@ -1252,6 +1252,14 @@
             "प्रतिस्थापन: आपके इनपुट मानों को उस संबंध में रखा गया है।",
             "उत्तर: संख्यात्मक आउटपुट को उचित इकाई प्रारूप में हल करें।",
             "स्पष्टीकरण: त्वरित समझ के लिए संक्षिप्त स्पष्टता नोट।"
+          ],
+          "exampleTitle": "कार्यित उदाहरण: 3-4-5 त्रिभुज",
+          "exampleIntro": "क्लासिक 3-4-5 त्रिभुज लें, भुजाएँ a = 3 और b = 4। यहाँ पूर्ण हल है, वही प्रवाह जिसका ऊपर वाला कैलकुलेटर अनुसरण करता है।",
+          "exampleItems": [
+            "Hypotenuse: c = √(3² + 4²) = √25 = 5.",
+            "Angles: sin(A) = 3 / 5 = 0.6, so A = 36.87°. Then B = 90° − 36.87° = 53.13°.",
+            "क्षेत्रफल: (3 × 4) / 2 = 6 वर्ग इकाई। परिमाप: 3 + 4 + 5 = 12 इकाई।",
+            "कर्ण पर शीर्षलंब: h = (3 × 4) / 5 = 2.4 इकाई।"
           ]
         },
         "calculatorSection": {
@@ -1322,7 +1330,9 @@
             "ट्रेस करने योग्य फॉर्मूला-आधारित चरणों के साथ कक्षा और परीक्षा की तैयारी।",
             "रैंप, सीढ़ी, छत की पिच और दीवार ऑफसेट के लिए साइट माप।",
             "तकनीकी प्रारूपण जहां साइड-एंगल स्थिरता को शीघ्रता से सत्यापित किया जाना चाहिए।",
-            "अंतिम आयामों को मंजूरी देने से पहले इंजीनियरिंग और निर्माण जांच की जाती है।"
+            "अंतिम आयामों को मंजूरी देने से पहले इंजीनियरिंग और निर्माण जांच की जाती है।",
+            "बढ़ईगीरी और फ्रेमिंग: 3-4-5 नियम से कोनों को वर्गाकार करना और विकर्णों की जाँच करना।",
+            "सीढ़ियाँ और डेक: कुछ भी काटने से पहले उठान, दूरी और स्ट्रिंगर लंबाई की जाँच करना।"
           ],
           "checklistTitle": "अंतिम रूप देने से पहले सटीकता जांच सूची",
           "checklistItems": [
@@ -1330,7 +1340,8 @@
             "सुनिश्चित करें कि कर्ण c दोनों पैरों से बड़ा रहे।",
             "सही कोण मोड और त्रिकोणमितीय संबंध का प्रयोग करें।",
             "केवल अंतिम उत्तर पर ही गोल करें, मध्यवर्ती प्रतिस्थापन के दौरान नहीं।",
-            "जब परिशुद्धता मायने रखती है तो एक संबंधित कैलकुलेटर से क्रॉस-चेक करें।"
+            "जब परिशुद्धता मायने रखती है तो एक संबंधित कैलकुलेटर से क्रॉस-चेक करें।",
+            "पुष्टि करें कि दो न्यून कोणों का योग ठीक 90° होता है।"
           ],
           "supportTitle": "सहायक सहायता पृष्ठ",
           "supportItems": [
@@ -1362,7 +1373,12 @@
           ]
         }
       },
-      "chartRows": {}
+      "chartRows": {},
+      "toolIntro": "यह कैलकुलेटर पाइथागोरस प्रमेय और त्रिकोणमितीय अनुपातों का उपयोग करके भुजाएँ, कोण, क्षेत्रफल और परिमाप ज्ञात करता है।",
+      "credibility": "चरण-दर-चरण समाधानों के साथ 52 केंद्रित कैलकुलेटर। मुफ़्त, कोई साइन-अप नहीं, आपके ब्राउज़र में चलता है।",
+      "browseAll": "सभी 52 कैलकुलेटर ब्राउज़ करें",
+      "blogHeading": "नवीनतम गाइड और कार्यित उदाहरण",
+      "blogCta": "Read the guide"
     },
     "footer": {
       "description": "समकोण-त्रिभुज गणना और सीखने के लिए एक तेज़ ज्यामिति कार्यक्षेत्र।"
@@ -2358,6 +2374,14 @@
             "Sustitución: sus valores de entrada colocados en esa relación.",
             "Respuesta: salida numérica resuelta en el formato de unidad adecuado.",
             "Explicación: breve nota de claridad para una comprensión más rápida."
+          ],
+          "exampleTitle": "Ejemplo resuelto: el triángulo 3-4-5",
+          "exampleIntro": "Toma el clásico triángulo 3-4-5, con catetos a = 3 y b = 4. Aquí está la resolución completa, el mismo flujo que sigue la calculadora de arriba.",
+          "exampleItems": [
+            "Hypotenuse: c = √(3² + 4²) = √25 = 5.",
+            "Angles: sin(A) = 3 / 5 = 0.6, so A = 36.87°. Then B = 90° − 36.87° = 53.13°.",
+            "Área: (3 × 4) / 2 = 6 unidades cuadradas. Perímetro: 3 + 4 + 5 = 12 unidades.",
+            "Altura sobre la hipotenusa: h = (3 × 4) / 5 = 2.4 unidades."
           ]
         },
         "calculatorSection": {
@@ -2428,7 +2452,9 @@
             "Preparación para el aula y para exámenes con pasos rastreables basados en fórmulas.",
             "Mediciones del sitio para rampas, escaleras, inclinación del techo y desplazamientos de paredes.",
             "Redacción técnica donde se debe validar rápidamente la consistencia de los ángulos laterales.",
-            "Verificaciones de ingeniería y fabricación antes de aprobar las dimensiones finales."
+            "Verificaciones de ingeniería y fabricación antes de aprobar las dimensiones finales.",
+            "Carpintería y entramado: escuadrar esquinas y comprobar diagonales con la regla 3-4-5.",
+            "Escaleras y terrazas: comprobar la elevación, el avance y la longitud del larguero antes de cortar cualquier cosa."
           ],
           "checklistTitle": "Lista de verificación de precisión antes de finalizar",
           "checklistItems": [
@@ -2436,7 +2462,8 @@
             "Asegúrese de que la hipotenusa c permanezca más grande que ambos catetos.",
             "Utilice el modo de ángulo correcto y la relación trigonométrica.",
             "Redondea sólo en la respuesta final, no durante la sustitución intermedia.",
-            "Verifique con una calculadora relacionada cuando la precisión sea importante."
+            "Verifique con una calculadora relacionada cuando la precisión sea importante.",
+            "Confirma que los dos ángulos agudos sumen exactamente 90°."
           ],
           "supportTitle": "Páginas de soporte útiles",
           "supportItems": [
@@ -2468,7 +2495,12 @@
           ]
         }
       },
-      "chartRows": {}
+      "chartRows": {},
+      "toolIntro": "Esta calculadora encuentra lados, ángulos, área y perímetro usando el teorema de Pitágoras y las razones trigonométricas.",
+      "credibility": "52 calculadoras especializadas con soluciones paso a paso. Gratis, sin registro, funciona en tu navegador.",
+      "browseAll": "Explorar las 52 calculadoras",
+      "blogHeading": "Últimas guías y ejemplos resueltos",
+      "blogCta": "Read the guide"
     },
     "footer": {
       "description": "Un espacio de trabajo geométrico rápido para cálculos y aprendizaje de triángulos rectángulos."
@@ -3464,6 +3496,14 @@
             "Замена: ваши входные значения помещаются в это отношение.",
             "Ответ: решил числовой вывод в правильном формате единиц.",
             "Пояснение: краткое пояснение для более быстрого понимания."
+          ],
+          "exampleTitle": "Разобранный пример: треугольник 3-4-5",
+          "exampleIntro": "Возьмите классический треугольник 3-4-5, катеты a = 3 и b = 4. Вот полное решение, тот же процесс, которому следует калькулятор выше.",
+          "exampleItems": [
+            "Hypotenuse: c = √(3² + 4²) = √25 = 5.",
+            "Angles: sin(A) = 3 / 5 = 0.6, so A = 36.87°. Then B = 90° − 36.87° = 53.13°.",
+            "Площадь: (3 × 4) / 2 = 6 квадратных единиц. Периметр: 3 + 4 + 5 = 12 единиц.",
+            "Высота, проведённая к гипотенузе: h = (3 × 4) / 5 = 2.4 единицы."
           ]
         },
         "calculatorSection": {
@@ -3534,7 +3574,9 @@
             "Подготовка к занятиям и экзаменам с помощью отслеживаемых шагов на основе формул.",
             "Замеры на месте пандусов, лестниц, уклона крыши и смещения стен.",
             "Технические чертежи, в которых необходимо быстро проверить согласованность боковых углов.",
-            "Инженерные и производственные проверки перед утверждением окончательных размеров."
+            "Инженерные и производственные проверки перед утверждением окончательных размеров.",
+            "Плотницкое дело и каркасное строительство: разметка прямых углов и проверка диагоналей по правилу 3-4-5.",
+            "Лестницы и террасы: проверка подъёма, протяжённости и длины тетивы перед тем, как что-либо резать."
           ],
           "checklistTitle": "Контрольный список точности перед завершением",
           "checklistItems": [
@@ -3542,7 +3584,8 @@
             "Убедитесь, что гипотенуза c больше обоих катетов.",
             "Используйте правильный угловой режим и тригонометрическое соотношение.",
             "Раунд только при окончательном ответе, а не при промежуточной замене.",
-            "Перекрестная проверка с помощью одного соответствующего калькулятора, если точность имеет значение."
+            "Перекрестная проверка с помощью одного соответствующего калькулятора, если точность имеет значение.",
+            "Убедитесь, что два острых угла в сумме дают ровно 90°."
           ],
           "supportTitle": "Полезные страницы поддержки",
           "supportItems": [
@@ -3574,7 +3617,12 @@
           ]
         }
       },
-      "chartRows": {}
+      "chartRows": {},
+      "toolIntro": "Этот калькулятор находит стороны, углы, площадь и периметр, используя теорему Пифагора и тригонометрические отношения.",
+      "credibility": "52 специализированных калькулятора с пошаговыми решениями. Бесплатно, без регистрации, работает в вашем браузере.",
+      "browseAll": "Просмотреть все 52 калькулятора",
+      "blogHeading": "Последние руководства и разобранные примеры",
+      "blogCta": "Read the guide"
     },
     "footer": {
       "description": "Быстрое геометрическое рабочее пространство для расчетов прямоугольных треугольников и обучения."
@@ -4570,6 +4618,14 @@
             "Substitution : vos valeurs d'entrée placées dans cette relation.",
             "Réponse : sortie numérique résolue dans le format d'unité approprié.",
             "Explication : courte note de clarté pour une compréhension plus rapide."
+          ],
+          "exampleTitle": "Exemple résolu : le triangle 3-4-5",
+          "exampleIntro": "Prenons le classique triangle 3-4-5, de cathètes a = 3 et b = 4. Voici la résolution complète, le même processus que suit le calculateur ci-dessus.",
+          "exampleItems": [
+            "Hypotenuse: c = √(3² + 4²) = √25 = 5.",
+            "Angles: sin(A) = 3 / 5 = 0.6, so A = 36.87°. Then B = 90° − 36.87° = 53.13°.",
+            "Aire : (3 × 4) / 2 = 6 unités carrées. Périmètre : 3 + 4 + 5 = 12 unités.",
+            "Hauteur relative à l'hypoténuse : h = (3 × 4) / 5 = 2.4 unités."
           ]
         },
         "calculatorSection": {
@@ -4640,7 +4696,9 @@
             "Préparation en classe et aux examens avec des étapes traçables basées sur une formule.",
             "Mesures du site pour les rampes, les échelles, la pente du toit et les déports des murs.",
             "Rédaction technique où la cohérence des angles latéraux doit être validée rapidement.",
-            "Vérifications d’ingénierie et de fabrication avant l’approbation des dimensions finales."
+            "Vérifications d’ingénierie et de fabrication avant l’approbation des dimensions finales.",
+            "Menuiserie et charpente : mettre les coins d'équerre et vérifier les diagonales avec la règle du 3-4-5.",
+            "Escaliers et terrasses : vérifier le giron, la hauteur de marche et la longueur du limon avant toute découpe."
           ],
           "checklistTitle": "Liste de contrôle de précision avant de finaliser",
           "checklistItems": [
@@ -4648,7 +4706,8 @@
             "Assurez-vous que l’hypoténuse c reste plus grande que les deux jambes.",
             "Utilisez le mode d'angle et la relation trigonométrique corrects.",
             "Arrondissez uniquement à la réponse finale, pas lors d'un remplacement intermédiaire.",
-            "Vérifiez avec une calculatrice associée lorsque la précision est importante."
+            "Vérifiez avec une calculatrice associée lorsque la précision est importante.",
+            "Confirmez que les deux angles aigus totalisent exactement 90°."
           ],
           "supportTitle": "Pages d'assistance utiles",
           "supportItems": [
@@ -4680,7 +4739,12 @@
           ]
         }
       },
-      "chartRows": {}
+      "chartRows": {},
+      "toolIntro": "Ce calculateur trouve les côtés, les angles, l'aire et le périmètre à l'aide du théorème de Pythagore et des rapports trigonométriques.",
+      "credibility": "52 calculateurs spécialisés avec des solutions étape par étape. Gratuit, sans inscription, fonctionne dans votre navigateur.",
+      "browseAll": "Parcourir les 52 calculateurs",
+      "blogHeading": "Derniers guides et exemples résolus",
+      "blogCta": "Read the guide"
     },
     "footer": {
       "description": "Un espace de travail géométrique rapide pour les calculs de triangles rectangles et l'apprentissage."
@@ -5676,6 +5740,14 @@
             "Substitution: Ihre Eingabewerte werden in diese Beziehung eingefügt.",
             "Antwort: Numerische Ausgabe im richtigen Einheitenformat behoben.",
             "Erläuterung: Kurzer Klarstellungshinweis zum schnelleren Verständnis."
+          ],
+          "exampleTitle": "Durchgerechnetes Beispiel: Das 3-4-5-Dreieck",
+          "exampleIntro": "Nehmen Sie das klassische 3-4-5-Dreieck mit den Katheten a = 3 und b = 4. Hier ist die vollständige Lösung, derselbe Ablauf, dem der Rechner oben folgt.",
+          "exampleItems": [
+            "Hypotenuse: c = √(3² + 4²) = √25 = 5.",
+            "Angles: sin(A) = 3 / 5 = 0.6, so A = 36.87°. Then B = 90° − 36.87° = 53.13°.",
+            "Flächeninhalt: (3 × 4) / 2 = 6 Quadrateinheiten. Umfang: 3 + 4 + 5 = 12 Einheiten.",
+            "Höhe auf die Hypotenuse: h = (3 × 4) / 5 = 2.4 Einheiten."
           ]
         },
         "calculatorSection": {
@@ -5746,7 +5818,9 @@
             "Unterrichts- und Prüfungsvorbereitung mit nachvollziehbaren formelbasierten Schritten.",
             "Standortmessungen für Rampen, Leitern, Dachneigung und Wandversätze.",
             "Technische Entwürfe, bei denen die Seitenwinkelkonsistenz schnell validiert werden muss.",
-            "Technische und Fertigungsprüfungen vor der Freigabe der endgültigen Abmessungen."
+            "Technische und Fertigungsprüfungen vor der Freigabe der endgültigen Abmessungen.",
+            "Zimmerei und Rahmenbau: Ecken rechtwinklig ausrichten und Diagonalen mit der 3-4-5-Regel prüfen.",
+            "Treppen und Terrassen: Höhe, Grundseite und Wangenlänge prüfen, bevor etwas zugeschnitten wird."
           ],
           "checklistTitle": "Genauigkeits-Checkliste vor der Fertigstellung",
           "checklistItems": [
@@ -5754,7 +5828,8 @@
             "Stellen Sie sicher, dass die Hypotenuse c größer bleibt als beide Beine.",
             "Verwenden Sie den richtigen Winkelmodus und die richtige trigonometrische Beziehung.",
             "Runde nur bei der endgültigen Antwort, nicht während der Zwischenauswechslung.",
-            "Wenn es auf Präzision ankommt, können Sie den Vergleich mit einem entsprechenden Taschenrechner durchführen."
+            "Wenn es auf Präzision ankommt, können Sie den Vergleich mit einem entsprechenden Taschenrechner durchführen.",
+            "Bestätigen Sie, dass die beiden spitzen Winkel zusammen genau 90° ergeben."
           ],
           "supportTitle": "Hilfreiche Support-Seiten",
           "supportItems": [
@@ -5786,7 +5861,12 @@
           ]
         }
       },
-      "chartRows": {}
+      "chartRows": {},
+      "toolIntro": "Dieser Rechner bestimmt Seiten, Winkel, Flächeninhalt und Umfang mit dem Satz des Pythagoras und trigonometrischen Verhältnissen.",
+      "credibility": "52 spezielle Rechner mit schrittweisen Lösungen. Kostenlos, ohne Anmeldung, läuft in Ihrem Browser.",
+      "browseAll": "Alle 52 Rechner durchsuchen",
+      "blogHeading": "Neueste Anleitungen und durchgerechnete Beispiele",
+      "blogCta": "Read the guide"
     },
     "footer": {
       "description": "Ein schneller Geometrie-Arbeitsbereich für Berechnungen am rechtwinkligen Dreieck und zum Lernen."
@@ -6782,6 +6862,14 @@
             "Sostituzione: i valori di input inseriti in quella relazione.",
             "Risposta: output numerico risolto nel formato di unità corretto.",
             "Spiegazione: breve nota di chiarezza per una comprensione più rapida."
+          ],
+          "exampleTitle": "Esempio svolto: il triangolo 3-4-5",
+          "exampleIntro": "Prendi il classico triangolo 3-4-5, con cateti a = 3 e b = 4. Ecco la soluzione completa, lo stesso procedimento che segue la calcolatrice qui sopra.",
+          "exampleItems": [
+            "Hypotenuse: c = √(3² + 4²) = √25 = 5.",
+            "Angles: sin(A) = 3 / 5 = 0.6, so A = 36.87°. Then B = 90° − 36.87° = 53.13°.",
+            "Area: (3 × 4) / 2 = 6 unità quadrate. Perimetro: 3 + 4 + 5 = 12 unità.",
+            "Altezza relativa all'ipotenusa: h = (3 × 4) / 5 = 2.4 unità."
           ]
         },
         "calculatorSection": {
@@ -6852,7 +6940,9 @@
             "Preparazione in aula e agli esami con passaggi tracciabili basati su formule.",
             "Misurazioni del sito per rampe, scale, inclinazione del tetto e spostamenti delle pareti.",
             "Redazione tecnica in cui la coerenza dell'angolo laterale deve essere convalidata rapidamente.",
-            "Verifiche di ingegneria e fabbricazione prima dell'approvazione delle dimensioni finali."
+            "Verifiche di ingegneria e fabbricazione prima dell'approvazione delle dimensioni finali.",
+            "Falegnameria e carpenteria: mettere in squadra gli angoli e verificare le diagonali con la regola 3-4-5.",
+            "Scale e terrazze: verificare dislivello, avanzamento e lunghezza del corrente prima di tagliare qualsiasi cosa."
           ],
           "checklistTitle": "Elenco di controllo della precisione prima della finalizzazione",
           "checklistItems": [
@@ -6860,7 +6950,8 @@
             "Assicurati che l'ipotenusa c rimanga più grande di entrambe le gambe.",
             "Utilizzare la modalità angolare e la relazione trigonometrica corrette.",
             "Arrotondare solo alla risposta finale, non durante la sostituzione intermedia.",
-            "Effettua un controllo incrociato con un calcolatore correlato quando la precisione è importante."
+            "Effettua un controllo incrociato con un calcolatore correlato quando la precisione è importante.",
+            "Conferma che i due angoli acuti sommino esattamente a 90°."
           ],
           "supportTitle": "Pagine di supporto utili",
           "supportItems": [
@@ -6892,7 +6983,12 @@
           ]
         }
       },
-      "chartRows": {}
+      "chartRows": {},
+      "toolIntro": "Questa calcolatrice trova lati, angoli, area e perimetro usando il teorema di Pitagora e i rapporti trigonometrici.",
+      "credibility": "52 calcolatrici mirate con soluzioni passo passo. Gratis, senza registrazione, funziona nel tuo browser.",
+      "browseAll": "Sfoglia tutte le 52 calcolatrici",
+      "blogHeading": "Ultime guide ed esempi svolti",
+      "blogCta": "Read the guide"
     },
     "footer": {
       "description": "Uno spazio di lavoro geometrico rapido per i calcoli dei triangoli rettangoli e l'apprendimento."
@@ -7888,6 +7984,14 @@
             "Substituição: seus valores de entrada colocados nessa relação.",
             "Resposta: saída numérica resolvida no formato de unidade adequado.",
             "Explicação: breve nota de clareza para compreensão mais rápida."
+          ],
+          "exampleTitle": "Exemplo Resolvido: O Triângulo 3-4-5",
+          "exampleIntro": "Considere o clássico triângulo 3-4-5, com catetos a = 3 e b = 4. Aqui está a solução completa, o mesmo fluxo que a calculadora acima segue.",
+          "exampleItems": [
+            "Hypotenuse: c = √(3² + 4²) = √25 = 5.",
+            "Angles: sin(A) = 3 / 5 = 0.6, so A = 36.87°. Then B = 90° − 36.87° = 53.13°.",
+            "Área: (3 × 4) / 2 = 6 unidades quadradas. Perímetro: 3 + 4 + 5 = 12 unidades.",
+            "Altura relativa à hipotenusa: h = (3 × 4) / 5 = 2.4 unidades."
           ]
         },
         "calculatorSection": {
@@ -7958,7 +8062,9 @@
             "Preparação para aulas e exames com etapas baseadas em fórmulas rastreáveis.",
             "Medições do local para rampas, escadas, inclinação do telhado e deslocamentos de parede.",
             "Desenho técnico onde a consistência dos ângulos laterais deve ser validada rapidamente.",
-            "Verificações de engenharia e fabricação antes da aprovação das dimensões finais."
+            "Verificações de engenharia e fabricação antes da aprovação das dimensões finais.",
+            "Carpintaria e estruturas: esquadrejar cantos e verificar diagonais com a regra 3-4-5.",
+            "Escadas e decks: verificar o espelho, o piso e o comprimento da viga inclinada antes de qualquer corte."
           ],
           "checklistTitle": "Lista de verificação de precisão antes de finalizar",
           "checklistItems": [
@@ -7966,7 +8072,8 @@
             "Certifique-se de que a hipotenusa c permaneça maior que ambas as pernas.",
             "Use o modo de ângulo correto e a relação trigonométrica.",
             "Arredondar apenas na resposta final, não durante a substituição intermediária.",
-            "Verifique com uma calculadora relacionada quando a precisão for importante."
+            "Verifique com uma calculadora relacionada quando a precisão for importante.",
+            "Confirme que os dois ângulos agudos somam exatamente 90°."
           ],
           "supportTitle": "Páginas de suporte úteis",
           "supportItems": [
@@ -7998,7 +8105,12 @@
           ]
         }
       },
-      "chartRows": {}
+      "chartRows": {},
+      "toolIntro": "Esta calculadora encontra lados, ângulos, área e perímetro usando o teorema de Pitágoras e razões trigonométricas.",
+      "credibility": "52 calculadoras focadas com soluções passo a passo. Grátis, sem cadastro, funciona no seu navegador.",
+      "browseAll": "Ver todas as 52 calculadoras",
+      "blogHeading": "Guias e Exemplos Resolvidos Mais Recentes",
+      "blogCta": "Read the guide"
     },
     "footer": {
       "description": "Um espaço de trabalho geométrico rápido para cálculos de triângulos retângulos e aprendizado."
@@ -8295,7 +8407,7 @@
       "description": "Navegue por todas as páginas principais, rotas locais e conteúdo do blog.",
       "heading": "Mapa do Site",
       "staticPagesTitle": "Static Pages",
-      "homeRoutesTitle": "Localized Home Routes",
+      "homeRoutesTitle": "Rotas Iniciais Localizadas",
       "blogPostsTitle": "Blog Posts",
       "blogPaginationTitle": "Blog Pagination"
     },
@@ -8994,6 +9106,14 @@
             "প্রতিস্থাপন: আপনার ইনপুট মান সেই সম্পর্কে স্থাপন করা হয়েছে।",
             "উত্তর: সঠিক ইউনিট বিন্যাসে সাংখ্যিক আউটপুট সমাধান করা হয়েছে।",
             "ব্যাখ্যা: দ্রুত বোঝার জন্য সংক্ষিপ্ত স্পষ্টতা নোট।"
+          ],
+          "exampleTitle": "সমাধান করা উদাহরণ: 3-4-5 ত্রিভুজ",
+          "exampleIntro": "ক্লাসিক 3-4-5 ত্রিভুজটি নিন, লেগ a = 3 এবং b = 4। এখানে সম্পূর্ণ সমাধান দেওয়া হলো, উপরের ক্যালকুলেটরটি যে একই ধারা অনুসরণ করে।",
+          "exampleItems": [
+            "Hypotenuse: c = √(3² + 4²) = √25 = 5.",
+            "Angles: sin(A) = 3 / 5 = 0.6, so A = 36.87°. Then B = 90° − 36.87° = 53.13°.",
+            "ক্ষেত্রফল: (3 × 4) / 2 = 6 বর্গ একক। পরিসীমা: 3 + 4 + 5 = 12 একক।",
+            "অতিভুজের উপর লম্ব: h = (3 × 4) / 5 = 2.4 একক।"
           ]
         },
         "calculatorSection": {
@@ -9064,7 +9184,9 @@
             "ট্রেসযোগ্য সূত্র-ভিত্তিক ধাপ সহ শ্রেণীকক্ষ এবং পরীক্ষার প্রস্তুতি।",
             "র‌্যাম্প, মই, ছাদের পিচ এবং প্রাচীর অফসেটের জন্য সাইট পরিমাপ।",
             "প্রযুক্তিগত খসড়া যেখানে পার্শ্ব-কোণ সামঞ্জস্য দ্রুত যাচাই করা আবশ্যক।",
-            "চূড়ান্ত মাত্রা অনুমোদিত হওয়ার আগে ইঞ্জিনিয়ারিং এবং ফেব্রিকেশন চেক।"
+            "চূড়ান্ত মাত্রা অনুমোদিত হওয়ার আগে ইঞ্জিনিয়ারিং এবং ফেব্রিকেশন চেক।",
+            "কাঠমিস্ত্রি ও ফ্রেমিং: 3-4-5 নিয়ম দিয়ে কোণা সমকোণ করা এবং কর্ণ যাচাই করা।",
+            "সিঁড়ি ও ডেক: কিছু কাটার আগে উত্থান, গমন ও স্ট্রিঙ্গারের দৈর্ঘ্য যাচাই করা।"
           ],
           "checklistTitle": "আপনি চূড়ান্ত করার আগে সঠিকতা চেকলিস্ট",
           "checklistItems": [
@@ -9072,7 +9194,8 @@
             "নিশ্চিত করুন যে কর্ণ সি উভয় পায়ের চেয়ে বড় থাকে।",
             "সঠিক কোণ মোড এবং ত্রিকোণমিতিক সম্পর্ক ব্যবহার করুন।",
             "শুধুমাত্র চূড়ান্ত উত্তরে রাউন্ড, মধ্যবর্তী প্রতিস্থাপনের সময় নয়।",
-            "নির্ভুলতা গুরুত্বপূর্ণ হলে একটি সম্পর্কিত ক্যালকুলেটর দিয়ে ক্রস-চেক করুন।"
+            "নির্ভুলতা গুরুত্বপূর্ণ হলে একটি সম্পর্কিত ক্যালকুলেটর দিয়ে ক্রস-চেক করুন।",
+            "নিশ্চিত করুন দুটি সূক্ষ্মকোণ যোগ করে ঠিক 90° হয়।"
           ],
           "supportTitle": "সহায়ক সমর্থন পৃষ্ঠা",
           "supportItems": [
@@ -9104,7 +9227,12 @@
           ]
         }
       },
-      "chartRows": {}
+      "chartRows": {},
+      "toolIntro": "এই ক্যালকুলেটরটি পিথাগোরাসের উপপাদ্য এবং ত্রিকোণমিতিক অনুপাত ব্যবহার করে বাহু, কোণ, ক্ষেত্রফল ও পরিসীমা বের করে।",
+      "credibility": "ধাপে ধাপে সমাধানসহ 52টি নির্দিষ্ট ক্যালকুলেটর। বিনামূল্যে, সাইন-আপ ছাড়াই, আপনার ব্রাউজারেই চলে।",
+      "browseAll": "সব 52টি ক্যালকুলেটর দেখুন",
+      "blogHeading": "সর্বশেষ গাইড ও সমাধান করা উদাহরণ",
+      "blogCta": "Read the guide"
     },
     "footer": {
       "description": "সমকোণী-ত্রিভুজ গণনা এবং শেখার জন্য একটি দ্রুত জ্যামিতি কর্মক্ষেত্র।"
@@ -10100,6 +10228,14 @@
             "置換: 入力値をその関係に置きます。",
             "回答: 適切な単位形式での数値出力を解決しました。",
             "説明: 理解を早くするための短い明確なメモ。"
+          ],
+          "exampleTitle": "実例: 3-4-5 三角形",
+          "exampleIntro": "古典的な 3-4-5 三角形、脚 a = 3、b = 4 を取り上げます。完全な解法は次の通りで、上の計算機がたどるのと同じ流れです。",
+          "exampleItems": [
+            "Hypotenuse: c = √(3² + 4²) = √25 = 5.",
+            "Angles: sin(A) = 3 / 5 = 0.6, so A = 36.87°. Then B = 90° − 36.87° = 53.13°.",
+            "面積: (3 × 4) / 2 = 6 平方単位。周囲長: 3 + 4 + 5 = 12 単位。",
+            "斜辺への高さ: h = (3 × 4) / 5 = 2.4 単位。"
           ]
         },
         "calculatorSection": {
@@ -10170,7 +10306,9 @@
             "追跡可能な公式ベースの手順による授業と試験の準備。",
             "スロープ、はしご、屋根のピッチ、壁のオフセットの現場測定。",
             "側面角度の一貫性を迅速に検証する必要がある技術製図。",
-            "最終寸法が承認される前に、エンジニアリングと製造のチェックが行われます。"
+            "最終寸法が承認される前に、エンジニアリングと製造のチェックが行われます。",
+            "大工仕事と骨組み: 3-4-5 のルールで角を直角にし、対角線をチェックする。",
+            "階段とデッキ: 何かを切る前に、蹴上げ、踏面、ささら桁の長さをチェックする。"
           ],
           "checklistTitle": "最終決定前の精度チェックリスト",
           "checklistItems": [
@@ -10178,7 +10316,8 @@
             "斜辺 c が両脚よりも大きいままであることを確認します。",
             "正しい角度モードと三角関係を使用してください。",
             "丸めは最終解答時にのみ行い、中間置換中は丸めません。",
-            "精度が重要な場合は、関連する計算機を 1 つ使用してクロスチェックしてください。"
+            "精度が重要な場合は、関連する計算機を 1 つ使用してクロスチェックしてください。",
+            "2つの鋭角の合計がちょうど 90° になることを確認してください。"
           ],
           "supportTitle": "役立つサポートページ",
           "supportItems": [
@@ -10210,7 +10349,12 @@
           ]
         }
       },
-      "chartRows": {}
+      "chartRows": {},
+      "toolIntro": "この計算機は、三平方の定理と三角比を使って、辺、角度、面積、周囲長を求めます。",
+      "credibility": "52 の特化した計算機、手順付きの解法付き。無料、登録不要、ブラウザで動作します。",
+      "browseAll": "52 の計算機をすべて見る",
+      "blogHeading": "最新のガイドと実例",
+      "blogCta": "Read the guide"
     },
     "footer": {
       "description": "直角三角形の計算と学習のための高速な幾何学ワークスペース。"
@@ -11206,6 +11350,14 @@
             "대체: 입력 값이 해당 관계에 배치됩니다.",
             "답변: 적절한 단위 형식으로 숫자 출력을 해결했습니다.",
             "설명: 더 빠른 이해를 위한 간략한 설명입니다."
+          ],
+          "exampleTitle": "풀이 예제: 3-4-5 삼각형",
+          "exampleIntro": "고전적인 3-4-5 삼각형, 두 변 a = 3, b = 4를 살펴보겠습니다. 위에 있는 계산기가 따르는 흐름과 같은 완전한 풀이는 다음과 같습니다.",
+          "exampleItems": [
+            "Hypotenuse: c = √(3² + 4²) = √25 = 5.",
+            "Angles: sin(A) = 3 / 5 = 0.6, so A = 36.87°. Then B = 90° − 36.87° = 53.13°.",
+            "넓이: (3 × 4) / 2 = 6 제곱 단위. 둘레: 3 + 4 + 5 = 12 단위.",
+            "빗변에 내린 높이: h = (3 × 4) / 5 = 2.4 단위."
           ]
         },
         "calculatorSection": {
@@ -11276,7 +11428,9 @@
             "추적 가능한 공식 기반 단계를 통한 강의실 및 시험 준비.",
             "경사로, 사다리, 지붕 피치 및 벽 오프셋에 대한 현장 측정입니다.",
             "측면 각도 일관성을 신속하게 검증해야 하는 기술 제도.",
-            "최종 치수가 승인되기 전에 엔지니어링 및 제작 검사를 수행합니다."
+            "최종 치수가 승인되기 전에 엔지니어링 및 제작 검사를 수행합니다.",
+            "목공과 골조 공사: 3-4-5 규칙으로 모서리를 직각으로 맞추고 대각선을 확인합니다.",
+            "계단과 데크: 자르기 전에 상승 높이, 수평 거리, 경사재 길이를 확인합니다."
           ],
           "checklistTitle": "마무리하기 전 정확성 체크리스트",
           "checklistItems": [
@@ -11284,7 +11438,8 @@
             "빗변 c가 양쪽 다리보다 크게 유지되는지 확인하세요.",
             "올바른 각도 모드와 삼각 관계를 사용하십시오.",
             "중간 대체가 아닌 최종 답에서만 반올림합니다.",
-            "정밀도가 중요한 경우 하나의 관련 계산기를 사용하여 교차 확인하세요."
+            "정밀도가 중요한 경우 하나의 관련 계산기를 사용하여 교차 확인하세요.",
+            "두 예각의 합이 정확히 90°인지 확인하세요."
           ],
           "supportTitle": "유용한 지원 페이지",
           "supportItems": [
@@ -11316,7 +11471,12 @@
           ]
         }
       },
-      "chartRows": {}
+      "chartRows": {},
+      "toolIntro": "이 계산기는 피타고라스 정리와 삼각비를 이용해 변, 각, 넓이, 둘레를 구합니다.",
+      "credibility": "단계별 풀이가 있는 52개의 특화 계산기. 무료이며, 가입이 필요 없고, 브라우저에서 실행됩니다.",
+      "browseAll": "52개 계산기 모두 둘러보기",
+      "blogHeading": "최신 가이드와 풀이 예제",
+      "blogCta": "Read the guide"
     },
     "footer": {
       "description": "직각 삼각형 계산 및 학습을 위한 빠른 기하학 작업 공간입니다."
@@ -12312,6 +12472,14 @@
             "Penggantian: nilai input anda diletakkan ke dalam hubungan itu.",
             "Jawapan: menyelesaikan output berangka dalam format unit yang betul.",
             "Penjelasan: nota kejelasan pendek untuk pemahaman yang lebih cepat."
+          ],
+          "exampleTitle": "Contoh Dikerjakan: Segi Tiga 3-4-5",
+          "exampleIntro": "Ambil segi tiga 3-4-5 klasik, kaki a = 3 dan b = 4. Berikut ialah penyelesaian lengkap, aliran yang sama diikuti oleh kalkulator di atas.",
+          "exampleItems": [
+            "Hypotenuse: c = √(3² + 4²) = √25 = 5.",
+            "Angles: sin(A) = 3 / 5 = 0.6, so A = 36.87°. Then B = 90° − 36.87° = 53.13°.",
+            "Luas: (3 × 4) / 2 = 6 unit persegi. Perimeter: 3 + 4 + 5 = 12 unit.",
+            "Altitud kepada hipotenus: h = (3 × 4) / 5 = 2.4 unit."
           ]
         },
         "calculatorSection": {
@@ -12382,7 +12550,9 @@
             "Persediaan bilik darjah dan peperiksaan dengan langkah berasaskan formula yang boleh dikesan.",
             "Ukuran tapak untuk tanjakan, tangga, padang bumbung dan ofset dinding.",
             "Penggubalan teknikal di mana konsistensi sudut sisi mesti disahkan dengan cepat.",
-            "Pemeriksaan kejuruteraan dan fabrikasi sebelum dimensi akhir diluluskan."
+            "Pemeriksaan kejuruteraan dan fabrikasi sebelum dimensi akhir diluluskan.",
+            "Pertukangan kayu dan pembingkaian: menyegi empatkan penjuru dan menyemak pepenjuru dengan peraturan 3-4-5.",
+            "Tangga dan dek: menyemak kenaikan, larian, dan panjang tali tangga sebelum apa-apa dipotong."
           ],
           "checklistTitle": "Senarai Semak Ketepatan Sebelum Anda Memuktamadkan",
           "checklistItems": [
@@ -12390,7 +12560,8 @@
             "Pastikan hipotenus c kekal lebih besar daripada kedua-dua kaki.",
             "Gunakan mod sudut dan hubungan trigonometri yang betul.",
             "Bundarkan hanya pada jawapan akhir, bukan semasa penggantian pertengahan.",
-            "Semak silang dengan satu kalkulator berkaitan apabila ketepatan penting."
+            "Semak silang dengan satu kalkulator berkaitan apabila ketepatan penting.",
+            "Sahkan kedua-dua sudut tirus berjumlah tepat 90°."
           ],
           "supportTitle": "Halaman Sokongan Berguna",
           "supportItems": [
@@ -12422,7 +12593,12 @@
           ]
         }
       },
-      "chartRows": {}
+      "chartRows": {},
+      "toolIntro": "Kalkulator ini mencari sisi, sudut, luas, dan perimeter menggunakan teorem Pythagoras dan nisbah trigonometri.",
+      "credibility": "52 kalkulator berfokus dengan penyelesaian langkah demi langkah. Percuma, tiada pendaftaran, berjalan dalam pelayar anda.",
+      "browseAll": "Semak imbas semua 52 kalkulator",
+      "blogHeading": "Panduan Terkini dan Contoh Dikerjakan",
+      "blogCta": "Read the guide"
     },
     "footer": {
       "description": "Ruang kerja geometri pantas untuk pengiraan segitiga bersudut tegak dan pembelajaran."
@@ -13418,6 +13594,14 @@
             "Podstawienie: wartości wejściowe umieszczone w tej relacji.",
             "Odpowiedź: rozwiązano wynik numeryczny w odpowiednim formacie jednostki.",
             "Wyjaśnienie: krótka notatka wyjaśniająca dla szybszego zrozumienia."
+          ],
+          "exampleTitle": "Przykład praktyczny: trójkąt 3-4-5",
+          "exampleIntro": "Weź klasyczny trójkąt 3-4-5, przyprostokątne a = 3 i b = 4. Oto pełne rozwiązanie, ten sam przebieg, który stosuje powyższy kalkulator.",
+          "exampleItems": [
+            "Hypotenuse: c = √(3² + 4²) = √25 = 5.",
+            "Angles: sin(A) = 3 / 5 = 0.6, so A = 36.87°. Then B = 90° − 36.87° = 53.13°.",
+            "Pole: (3 × 4) / 2 = 6 jednostek kwadratowych. Obwód: 3 + 4 + 5 = 12 jednostek.",
+            "Wysokość opuszczona na przeciwprostokątną: h = (3 × 4) / 5 = 2.4 jednostki."
           ]
         },
         "calculatorSection": {
@@ -13488,7 +13672,9 @@
             "Przygotowanie do zajęć i egzaminów z identyfikowalnymi krokami opartymi na formułach.",
             "Pomiary terenowe dla ramp, drabin, nachylenia dachu i przesunięć ścian.",
             "Projekt techniczny, w przypadku którego należy szybko sprawdzić zgodność kątów bocznych.",
-            "Kontrole inżynieryjne i produkcyjne przed zatwierdzeniem ostatecznych wymiarów."
+            "Kontrole inżynieryjne i produkcyjne przed zatwierdzeniem ostatecznych wymiarów.",
+            "Stolarstwo i konstrukcje szkieletowe: ustawianie narożników pod kątem prostym i sprawdzanie przekątnych regułą 3-4-5.",
+            "Schody i tarasy: sprawdzanie wzniesienia, przebiegu i długości podłużnicy, zanim cokolwiek zostanie przycięte."
           ],
           "checklistTitle": "Lista kontrolna dokładności przed sfinalizowaniem",
           "checklistItems": [
@@ -13496,7 +13682,8 @@
             "Upewnij się, że przeciwprostokątna c pozostaje większa niż obie nogi.",
             "Użyj prawidłowego trybu kąta i zależności trygonometrycznej.",
             "Zaokrąglaj tylko przy ostatecznej odpowiedzi, a nie podczas podstawienia pośredniego.",
-            "Jeśli precyzja ma znaczenie, sprawdź krzyżowo za pomocą jednego powiązanego kalkulatora."
+            "Jeśli precyzja ma znaczenie, sprawdź krzyżowo za pomocą jednego powiązanego kalkulatora.",
+            "Potwierdź, że suma dwóch kątów ostrych wynosi dokładnie 90°."
           ],
           "supportTitle": "Pomocne strony pomocy",
           "supportItems": [
@@ -13528,7 +13715,12 @@
           ]
         }
       },
-      "chartRows": {}
+      "chartRows": {},
+      "toolIntro": "Ten kalkulator znajduje boki, kąty, pole i obwód przy użyciu twierdzenia Pitagorasa i stosunków trygonometrycznych.",
+      "credibility": "52 wyspecjalizowane kalkulatory z rozwiązaniami krok po kroku. Bezpłatnie, bez rejestracji, działa w twojej przeglądarce.",
+      "browseAll": "Przeglądaj wszystkie 52 kalkulatory",
+      "blogHeading": "Najnowsze przewodniki i przykłady praktyczne",
+      "blogCta": "Read the guide"
     },
     "footer": {
       "description": "Szybka przestrzeń geometryczna do obliczeń trójkątów prostokątnych i nauki."
@@ -14524,6 +14716,14 @@
             "Substitusi: nilai masukan Anda ditempatkan ke dalam relasi itu.",
             "Jawaban: menyelesaikan keluaran numerik dalam format satuan yang tepat.",
             "Penjelasan: catatan kejelasan singkat untuk pemahaman yang lebih cepat."
+          ],
+          "exampleTitle": "Contoh Terapan: Segitiga 3-4-5",
+          "exampleIntro": "Ambil segitiga 3-4-5 klasik, kaki a = 3 dan b = 4. Berikut adalah penyelesaian lengkapnya, alur yang sama yang diikuti kalkulator di atas.",
+          "exampleItems": [
+            "Hypotenuse: c = √(3² + 4²) = √25 = 5.",
+            "Angles: sin(A) = 3 / 5 = 0.6, so A = 36.87°. Then B = 90° − 36.87° = 53.13°.",
+            "Luas: (3 × 4) / 2 = 6 satuan persegi. Keliling: 3 + 4 + 5 = 12 satuan.",
+            "Garis tinggi ke hipotenusa: h = (3 × 4) / 5 = 2.4 satuan."
           ]
         },
         "calculatorSection": {
@@ -14594,7 +14794,9 @@
             "Persiapan kelas dan ujian dengan langkah-langkah berbasis formula yang dapat dilacak.",
             "Pengukuran lokasi untuk jalur landai, tangga, kemiringan atap, dan offset dinding.",
             "Perancangan teknis di mana konsistensi sudut samping harus divalidasi dengan cepat.",
-            "Pemeriksaan teknik dan fabrikasi sebelum dimensi akhir disetujui."
+            "Pemeriksaan teknik dan fabrikasi sebelum dimensi akhir disetujui.",
+            "Pertukangan kayu dan pembingkaian: membuat sudut siku-siku dan memeriksa diagonal dengan aturan 3-4-5.",
+            "Tangga dan dek: memeriksa kenaikan, jarak horizontal, dan panjang stringer sebelum apa pun dipotong."
           ],
           "checklistTitle": "Daftar Periksa Akurasi Sebelum Anda Menyelesaikannya",
           "checklistItems": [
@@ -14602,7 +14804,8 @@
             "Pastikan sisi miring c tetap lebih besar dari kedua kakinya.",
             "Gunakan mode sudut dan hubungan trigonometri yang benar.",
             "Putaran hanya pada jawaban akhir, bukan pada pergantian pemain di tengah.",
-            "Periksa ulang dengan satu kalkulator terkait jika presisi itu penting."
+            "Periksa ulang dengan satu kalkulator terkait jika presisi itu penting.",
+            "Pastikan kedua sudut lancip jumlahnya tepat 90°."
           ],
           "supportTitle": "Halaman Dukungan yang Bermanfaat",
           "supportItems": [
@@ -14634,7 +14837,12 @@
           ]
         }
       },
-      "chartRows": {}
+      "chartRows": {},
+      "toolIntro": "Kalkulator ini menemukan sisi, sudut, luas, dan keliling menggunakan teorema Pythagoras dan perbandingan trigonometri.",
+      "credibility": "52 kalkulator terfokus dengan solusi langkah demi langkah. Gratis, tanpa pendaftaran, berjalan di browser Anda.",
+      "browseAll": "Jelajahi semua 52 kalkulator",
+      "blogHeading": "Panduan Terbaru dan Contoh Terapan",
+      "blogCta": "Read the guide"
     },
     "footer": {
       "description": "Ruang kerja geometri cepat untuk perhitungan segitiga siku-siku dan pembelajaran."
@@ -15630,6 +15838,14 @@
             "الاستبدال: قيم المدخلات الخاصة بك وضعت في تلك العلاقة.",
             "الإجابة: حل الإخراج الرقمي بتنسيق الوحدة المناسب.",
             "الشرح: ملاحظة قصيرة واضحة لفهم أسرع."
+          ],
+          "exampleTitle": "مثال محلول: مثلث 3-4-5",
+          "exampleIntro": "خذ مثلث 3-4-5 الكلاسيكي، قائمتاه a = 3 و b = 4. إليك الحل الكامل، وهو التسلسل نفسه الذي تتبعه الحاسبة أعلاه.",
+          "exampleItems": [
+            "Hypotenuse: c = √(3² + 4²) = √25 = 5.",
+            "Angles: sin(A) = 3 / 5 = 0.6, so A = 36.87°. Then B = 90° − 36.87° = 53.13°.",
+            "المساحة: (3 × 4) / 2 = 6 وحدات مربعة. المحيط: 3 + 4 + 5 = 12 وحدة.",
+            "الارتفاع إلى الوتر: h = (3 × 4) / 5 = 2.4 وحدة."
           ]
         },
         "calculatorSection": {
@@ -15700,7 +15916,9 @@
             "التحضير للفصول الدراسية والامتحانات من خلال خطوات قائمة على الصيغة يمكن تتبعها.",
             "قياسات الموقع للمنحدرات والسلالم ودرجة السقف وإزاحة الجدران.",
             "صياغة فنية حيث يجب التحقق من صحة اتساق الزاوية الجانبية بسرعة.",
-            "فحوصات الهندسة والتصنيع قبل الموافقة على الأبعاد النهائية."
+            "فحوصات الهندسة والتصنيع قبل الموافقة على الأبعاد النهائية.",
+            "النجارة والتأطير: تربيع الزوايا والتحقق من الأقطار باستخدام قاعدة 3-4-5.",
+            "السلالم والشرفات: التحقق من الارتفاع والمسافة الأفقية وطول عارضة السلم قبل قص أي شيء."
           ],
           "checklistTitle": "قائمة مراجعة الدقة قبل الانتهاء",
           "checklistItems": [
@@ -15708,7 +15926,8 @@
             "تأكد من أن الوتر c يظل أكبر من كلا الساقين.",
             "استخدم وضع الزاوية الصحيح والعلاقة المثلثية.",
             "التقريب فقط عند الإجابة النهائية، وليس أثناء الاستبدال المتوسط.",
-            "قم بمراجعة الآلة الحاسبة ذات الصلة عندما تكون الدقة مهمة."
+            "قم بمراجعة الآلة الحاسبة ذات الصلة عندما تكون الدقة مهمة.",
+            "تأكد من أن مجموع الزاويتين الحادتين يساوي 90° بالضبط."
           ],
           "supportTitle": "صفحات الدعم المفيدة",
           "supportItems": [
@@ -15740,7 +15959,12 @@
           ]
         }
       },
-      "chartRows": {}
+      "chartRows": {},
+      "toolIntro": "تجد هذه الحاسبة الأضلاع والزوايا والمساحة والمحيط باستخدام نظرية فيثاغورس والنسب المثلثية.",
+      "credibility": "52 حاسبة مركّزة مع حلول خطوة بخطوة. مجانية، دون تسجيل، وتعمل في متصفحك.",
+      "browseAll": "تصفّح الحاسبات الـ 52 كلها",
+      "blogHeading": "أحدث الأدلة والأمثلة المحلولة",
+      "blogCta": "Read the guide"
     },
     "footer": {
       "description": "مساحة عمل هندسية سريعة لحسابات المثلث القائم والتعلم."
@@ -16736,6 +16960,14 @@
             "Заместване: вашите входни стойности, поставени в това отношение.",
             "Отговор: решен цифров изход в правилния формат на единица.",
             "Обяснение: кратка бележка за яснота за по-бързо разбиране."
+          ],
+          "exampleTitle": "Решен пример: Триъгълникът 3-4-5",
+          "exampleIntro": "Вземете класическия триъгълник 3-4-5, катети a = 3 и b = 4. Ето пълното решение, същата последователност, която следва калкулаторът по-горе.",
+          "exampleItems": [
+            "Hypotenuse: c = √(3² + 4²) = √25 = 5.",
+            "Angles: sin(A) = 3 / 5 = 0.6, so A = 36.87°. Then B = 90° − 36.87° = 53.13°.",
+            "Лице: (3 × 4) / 2 = 6 квадратни единици. Периметър: 3 + 4 + 5 = 12 единици.",
+            "Височина към хипотенузата: h = (3 × 4) / 5 = 2.4 единици."
           ]
         },
         "calculatorSection": {
@@ -16806,7 +17038,9 @@
             "Подготовка за класна стая и изпити с проследими стъпки, базирани на формули.",
             "Измервания на място за рампи, стълби, наклон на покрива и отмествания на стени.",
             "Техническо чертане, при което последователността на страничния ъгъл трябва да бъде валидирана бързо.",
-            "Инженерни и производствени проверки преди да бъдат одобрени окончателните размери."
+            "Инженерни и производствени проверки преди да бъдат одобрени окончателните размери.",
+            "Дърводелство и строителни конструкции: изправяне на ъгли и проверка на диагонали с правилото 3-4-5.",
+            "Стълби и тераси: проверка на височината, дължината и дължината на стълбищната греда, преди да се реже каквото и да е."
           ],
           "checklistTitle": "Списък за проверка на точността, преди да финализирате",
           "checklistItems": [
@@ -16814,7 +17048,8 @@
             "Уверете се, че хипотенузата c остава по-голяма от двата катета.",
             "Използвайте правилния режим на ъгъл и тригонометрична връзка.",
             "Закръглете само при крайния отговор, а не по време на междинното заместване.",
-            "Кръстосана проверка с един свързан калкулатор, когато точността има значение."
+            "Кръстосана проверка с един свързан калкулатор, когато точността има значение.",
+            "Потвърдете, че двата остри ъгъла се събират точно до 90°."
           ],
           "supportTitle": "Полезни страници за поддръжка",
           "supportItems": [
@@ -16846,7 +17081,12 @@
           ]
         }
       },
-      "chartRows": {}
+      "chartRows": {},
+      "toolIntro": "Този калкулатор намира страни, ъгли, лице и периметър с помощта на питагоровата теорема и тригонометричните отношения.",
+      "credibility": "52 специализирани калкулатора с решения стъпка по стъпка. Безплатно, без регистрация, работи във вашия браузър.",
+      "browseAll": "Разгледайте всички 52 калкулатора",
+      "blogHeading": "Най-нови ръководства и решени примери",
+      "blogCta": "Read the guide"
     },
     "footer": {
       "description": "Бързо геометрично работно пространство за изчисления на правоъгълни триъгълници и обучение."
@@ -17842,6 +18082,14 @@
             "Değiştirme: giriş değerleriniz bu ilişkiye yerleştirilir.",
             "Cevap: Sayısal çıktıyı uygun birim formatında çözdüm.",
             "Açıklama: Daha hızlı anlaşılması için kısa anlaşılırlık notu."
+          ],
+          "exampleTitle": "Çalışılmış Örnek: 3-4-5 Üçgeni",
+          "exampleIntro": "Klasik 3-4-5 üçgenini alın, dik kenarlar a = 3 ve b = 4. İşte tam çözüm, yukarıdaki hesaplayıcının izlediği akışın aynısı.",
+          "exampleItems": [
+            "Hypotenuse: c = √(3² + 4²) = √25 = 5.",
+            "Angles: sin(A) = 3 / 5 = 0.6, so A = 36.87°. Then B = 90° − 36.87° = 53.13°.",
+            "Alan: (3 × 4) / 2 = 6 kare birim. Çevre: 3 + 4 + 5 = 12 birim.",
+            "Hipotenüse çizilen yükseklik: h = (3 × 4) / 5 = 2.4 birim."
           ]
         },
         "calculatorSection": {
@@ -17912,7 +18160,9 @@
             "İzlenebilir formül tabanlı adımlarla sınıf ve sınav hazırlığı.",
             "Rampalar, merdivenler, çatı eğimi ve duvar çıkıntıları için saha ölçümleri.",
             "Yan açı tutarlılığının hızlı bir şekilde doğrulanması gereken teknik çizim.",
-            "Nihai boyutlar onaylanmadan önce mühendislik ve imalat kontrolleri yapılır."
+            "Nihai boyutlar onaylanmadan önce mühendislik ve imalat kontrolleri yapılır.",
+            "Marangozluk ve karkas işleri: 3-4-5 kuralıyla köşeleri gönyeye almak ve köşegenleri kontrol etmek.",
+            "Merdivenler ve teraslar: herhangi bir şey kesilmeden önce yükseltiyi, yatay uzunluğu ve merdiven kirişi uzunluğunu kontrol etmek."
           ],
           "checklistTitle": "Sonlandırmadan Önce Doğruluk Kontrol Listesi",
           "checklistItems": [
@@ -17920,7 +18170,8 @@
             "Hipotenüs c'nin her iki bacaktan daha büyük kalmasını sağlayın.",
             "Doğru açı modunu ve trigonometrik ilişkiyi kullanın.",
             "Ara oyuncu değişikliği sırasında değil, yalnızca son yanıtta yuvarlayın.",
-            "Hassasiyet önemli olduğunda ilgili bir hesap makinesiyle çapraz kontrol yapın."
+            "Hassasiyet önemli olduğunda ilgili bir hesap makinesiyle çapraz kontrol yapın.",
+            "İki dar açının toplamının tam olarak 90° olduğunu doğrulayın."
           ],
           "supportTitle": "Yararlı Destek Sayfaları",
           "supportItems": [
@@ -17952,7 +18203,12 @@
           ]
         }
       },
-      "chartRows": {}
+      "chartRows": {},
+      "toolIntro": "Bu hesaplayıcı, Pisagor teoremi ve trigonometrik oranları kullanarak kenarları, açıları, alanı ve çevreyi bulur.",
+      "credibility": "Adım adım çözümlerle 52 odaklanmış hesaplayıcı. Ücretsiz, kayıt gerekmez, tarayıcınızda çalışır.",
+      "browseAll": "52 hesaplayıcının tümüne göz atın",
+      "blogHeading": "En Son Kılavuzlar ve Çalışılmış Örnekler",
+      "blogCta": "Read the guide"
     },
     "footer": {
       "description": "Dik üçgen hesaplamaları ve öğrenimi için hızlı bir geometri çalışma alanı."
@@ -18924,7 +19180,7 @@
           ],
           "geometryTitle": "Formler för mätning och geometri",
           "geometryItems": [
-            "Area = (a × b) / 2, Perimeter = a + b + c, Semiperimeter = (a + b + c) / 2.",
+            "Area = (a × b) / 2, Omkrets = a + b + c, Halva omkretsen = (a + b + c) / 2.",
             "Höjdförhållande: h = (a × b) / c.",
             "Projektionsrelationer: p = a²/c, q = b²/c och p + q = c.",
             "Radierelationer: r = (a + b - c) / 2 och R = c / 2."
@@ -18948,6 +19204,14 @@
             "Substitution: dina indatavärden placerade i den relationen.",
             "Svar: löst numerisk utdata i rätt enhetsformat.",
             "Förklaring: kort tydlighetsanteckning för snabbare förståelse."
+          ],
+          "exampleTitle": "Genomarbetat exempel: 3-4-5-triangeln",
+          "exampleIntro": "Ta den klassiska 3-4-5-triangeln, kateterna a = 3 och b = 4. Här är den fullständiga lösningen, samma flöde som kalkylatorn ovan följer.",
+          "exampleItems": [
+            "Hypotenuse: c = √(3² + 4²) = √25 = 5.",
+            "Angles: sin(A) = 3 / 5 = 0.6, so A = 36.87°. Then B = 90° − 36.87° = 53.13°.",
+            "Area: (3 × 4) / 2 = 6 kvadratenheter. Omkrets: 3 + 4 + 5 = 12 enheter.",
+            "Höjd mot hypotenusan: h = (3 × 4) / 5 = 2.4 enheter."
           ]
         },
         "calculatorSection": {
@@ -19018,7 +19282,9 @@
             "Klassrums- och provförberedelser med spårbara formelbaserade steg.",
             "Platsmått för ramper, stegar, taklutning och väggförskjutningar.",
             "Teknisk ritning där sidovinkelkonsistensen måste valideras snabbt.",
-            "Ingenjörs- och tillverkningskontroller innan slutliga dimensioner godkänns."
+            "Ingenjörs- och tillverkningskontroller innan slutliga dimensioner godkänns.",
+            "Snickeri och stombyggnad: göra hörn vinkelräta och kontrollera diagonaler med 3-4-5-regeln.",
+            "Trappor och altaner: kontrollera steghöjd, stegdjup och vangstyckets längd innan något sågas till."
           ],
           "checklistTitle": "Noggrannhetschecklista innan du slutför",
           "checklistItems": [
@@ -19026,7 +19292,8 @@
             "Se till att hypotenusa c förblir större än båda benen.",
             "Använd rätt vinkelläge och trigonometrisk relation.",
             "Runda endast vid det slutliga svaret, inte vid mellanbyte.",
-            "Korskontrollera med en relaterad miniräknare när precisionen är viktig."
+            "Korskontrollera med en relaterad miniräknare när precisionen är viktig.",
+            "Bekräfta att de två spetsiga vinklarna summerar till exakt 90°."
           ],
           "supportTitle": "Användbara supportsidor",
           "supportItems": [
@@ -19058,7 +19325,12 @@
           ]
         }
       },
-      "chartRows": {}
+      "chartRows": {},
+      "toolIntro": "Den här kalkylatorn hittar sidor, vinklar, area och omkrets med Pythagoras sats och trigonometriska förhållanden.",
+      "credibility": "52 specialinriktade kalkylatorer med stegvisa lösningar. Gratis, ingen registrering, körs i din webbläsare.",
+      "browseAll": "Bläddra bland alla 52 kalkylatorer",
+      "blogHeading": "Senaste guider och genomarbetade exempel",
+      "blogCta": "Read the guide"
     },
     "footer": {
       "description": "En snabb geometriarbetsyta för beräkningar av rätvinkliga trianglar och lärande."
@@ -20054,6 +20326,14 @@
             "替换：将您的输入值放入该关系中。",
             "答案：解决了以正确的单位格式输出数字的问题。",
             "说明：简短的说明，以便更快地理解。"
+          ],
+          "exampleTitle": "实例讲解：3-4-5 三角形",
+          "exampleIntro": "以经典的 3-4-5 三角形为例，直角边 a = 3 和 b = 4。这是完整的求解过程，与上方计算器遵循的流程相同。",
+          "exampleItems": [
+            "Hypotenuse: c = √(3² + 4²) = √25 = 5.",
+            "Angles: sin(A) = 3 / 5 = 0.6, so A = 36.87°. Then B = 90° − 36.87° = 53.13°.",
+            "面积：(3 × 4) / 2 = 6 平方单位。周长：3 + 4 + 5 = 12 单位。",
+            "斜边上的高：h = (3 × 4) / 5 = 2.4 单位。"
           ]
         },
         "calculatorSection": {
@@ -20124,7 +20404,9 @@
             "通过可追踪的基于公式的步骤进行课堂和考试准备。",
             "坡道、梯子、屋顶坡度和墙壁偏移的现场测量。",
             "必须快速验证侧角一致性的技术绘图。",
-            "在最终尺寸获得批准之前进行工程和制造检查。"
+            "在最终尺寸获得批准之前进行工程和制造检查。",
+            "木工和框架：使用 3-4-5 法则使转角方正并检查对角线。",
+            "楼梯和平台：在切割任何东西之前检查上升、水平距离和斜梁长度。"
           ],
           "checklistTitle": "最终确定之前的准确性检查表",
           "checklistItems": [
@@ -20132,7 +20414,8 @@
             "确保斜边 c 仍然大于两条边。",
             "使用正确的角度模式和三角关系。",
             "仅在最终答案处舍入，而不是在中间替换期间舍入。",
-            "当精度很重要时，请使用一台相关计算器进行交叉检查。"
+            "当精度很重要时，请使用一台相关计算器进行交叉检查。",
+            "确认两个锐角之和恰好为 90°。"
           ],
           "supportTitle": "有用的支持页面",
           "supportItems": [
@@ -20164,7 +20447,12 @@
           ]
         }
       },
-      "chartRows": {}
+      "chartRows": {},
+      "toolIntro": "此计算器使用勾股定理和三角比求边、角、面积和周长。",
+      "credibility": "52 个专门计算器，带分步解答。免费，无需注册，在您的浏览器中运行。",
+      "browseAll": "浏览全部 52 个计算器",
+      "blogHeading": "最新指南和实例讲解",
+      "blogCta": "Read the guide"
     },
     "footer": {
       "description": "用于直角三角形计算和学习的快速几何工作空间。"

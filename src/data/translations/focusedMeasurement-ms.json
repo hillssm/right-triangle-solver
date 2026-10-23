@@ -575,7 +575,7 @@
         "listTitle": "Contoh dengan segi tiga 3-4-5:",
         "listItems": [
           "Luas: A = (3 x 4) / 2 = 6",
-          "Semiperimeter: s = (3 + 4 + 5) / 2 = 6",
+          "Separuh perimeter: s = (3 + 4 + 5) / 2 = 6",
           "Semakan Injejari: r = A / s = 6 / 6 = 1"
         ]
       }

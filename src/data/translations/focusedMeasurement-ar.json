@@ -66,12 +66,12 @@
           "description": "الساق b هي الجانب الآخر من الزاوية القائمة ويتم إضافتها مع a وc."
         },
         "c": {
-          "label": "c = hypotenuse",
+          "label": "c = الوتر",
           "description": "الوتر ج هو أطول ضلع، مقابل الزاوية القائمة، ويكمل الحد."
         }
       },
       "result": {
-        "label": "P = total boundary length",
+        "label": "P = الطول الإجمالي للحدود",
         "description": "تقوم الآلة الحاسبة بإضافة a + b + c وإرجاع المحيط بالوحدة الخطية المحددة."
       },
       "notes": [
@@ -153,7 +153,7 @@
           "If c is missing: c = √(a² + b²), then P = a + b + √(a² + b²)",
           "If b is missing: b = √(c² - a²), then P = a + √(c² - a²) + c",
           "If a is missing: a = √(c² - b²), then P = √(c² - b²) + b + c",
-          "Always verify that c > a and c > b when using the subtraction form, otherwise the values do not form a valid right triangle."
+          "تحقق دائمًا من أن c > a وأن c > b عند استخدام صيغة الطرح، وإلا فإن القيم لا تشكّل مثلثًا قائمًا صالحًا."
         ]
       },
       {
@@ -174,7 +174,7 @@
           "معطى: أ = 8، ب = 15، ج = 17. هذه ثلاثية فيثاغورسية أخرى حيث جميع أضلاعها أعداد صحيحة."
         ],
         "listItems": [
-          "P = 8 + 15 + 17 = 40 units",
+          "P = 8 + 15 + 17 = 40 وحدة",
           "التحقق: 8² + 15² = 64 + 225 = 289 = 17² ✓",
           "يعد هذا الثلاثي مفيدًا في تخطيطات البناء حيث يلزم وجود سياج مكون من 40 وحدة أو أطوال مزخرفة."
         ]
@@ -401,12 +401,12 @@
           "description": "يشكل الساق b الزاوية القائمة مع a ويساهم في كل من المحيط وشبه المحيط."
         },
         "c": {
-          "label": "c = hypotenuse",
+          "label": "c = الوتر",
           "description": "الوتر c هو الضلع الأطول ويجب تضمينه قبل خفض المجموع إلى النصف."
         }
       },
       "result": {
-        "label": "s = half of the boundary total",
+        "label": "s = نصف مجموع الحدود",
         "description": "تضيف الآلة الحاسبة أولاً a + b + c، ثم تقسم المحيط على 2."
       },
       "notes": [

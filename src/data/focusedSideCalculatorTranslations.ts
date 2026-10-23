@@ -9728,7 +9728,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           ],
           "listTitle": "En snabb rimlighetskontroll:",
           "listItems": [
-            "c should be greater than a.",
+            "c bör vara större än a.",
             "c bör vara större än b.",
             "c ska vara mindre än en + b.",
             "För vanliga trippel som 3-4-5 eller 5-12-13 bör resultatet matcha den kända trippeln."
@@ -9860,7 +9860,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         ]
       },
       "formulaSection": {
-        "h2": "Missing Leg b Formula",
+        "h2": "Formel för saknad katet b",
         "paragraphs": [
           "Formeln för att hitta katetet b är härledd från Pythagoras sats (a² + b² = c²). Omarrangering för b ger formeln nedan.",
           "Där c är hypotenusan (den längsta sidan av den högra triangeln), är a det kända katetet och b är det saknade katetet du löser för. Lägg märke till subtraktionen: du subtraherar kvadraten på det kända katetet från kvadraten på hypotenusan och tar sedan kvadratroten."
@@ -10059,7 +10059,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         ]
       },
       "formulaSection": {
-        "h2": "Missing Leg a Formula",
+        "h2": "Formel för saknad katet a",
         "paragraphs": [
           "Utgå från Pythagoras sats (a² + b² = c²), lös för a för att få formeln nedan.",
           "Där c är hypotenusan (den längsta sidan, mitt emot rät vinkel), är b det kända katetet, och a är det saknade katetet du vill hitta. Nyckeloperationen är subtraktion: kvadrera hypotenusan, subtrahera kvadraten på det kända katetet och ta sedan kvadratroten av det som är kvar."

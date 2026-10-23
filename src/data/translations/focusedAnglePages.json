@@ -37,7 +37,7 @@
           },
           {
             "label": "ढूँढता है",
-            "value": "Angle A in degrees"
+            "value": "कोण A डिग्री में"
           },
           {
             "label": "सूत्र",
@@ -50,7 +50,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Sine Formula",
+        "h2": "साइन सूत्र से कोण",
         "display": "A = \\arcsin\\left(\\frac{a}{c}\\right)",
         "paragraphs": [
           "0 और 1 के बीच दशमलव प्राप्त करने के लिए विपरीत भुजा को कर्ण से विभाजित करें। फिर उस दशमलव को डिग्री में कोण में बदलने के लिए व्युत्क्रम साइन फ़ंक्शन (arcsin) लागू करें।"
@@ -143,7 +143,7 @@
       "faqs": [
         {
           "question": "arcsin फॉर्मूला वास्तव में क्या करता है?",
-          "answer": "Arcsin takes a ratio of two sides and reverses the math to tell you the specific angle that created that ratio."
+          "answer": "आर्कसाइन दो भुजाओं का अनुपात लेता है और गणना को उलटकर आपको वह विशिष्ट कोण बताता है जिसने वह अनुपात बनाया था।"
         },
         {
           "question": "अंतिम परिणाम का क्या मतलब है?",
@@ -196,11 +196,11 @@
         "cards": [
           {
             "label": "ज्ञात मूल्य",
-            "value": "Adjacent side b and hypotenuse c"
+            "value": "आसन्न भुजा b और कर्ण c"
           },
           {
             "label": "ढूँढता है",
-            "value": "Angle A in degrees"
+            "value": "कोण A डिग्री में"
           },
           {
             "label": "सूत्र",
@@ -213,7 +213,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Cosine Formula",
+        "h2": "कोसाइन सूत्र से कोण",
         "display": "A = \\arccos\\left(\\frac{b}{c}\\right)",
         "paragraphs": [
           "0 और 1 के बीच दशमलव प्राप्त करने के लिए आसन्न भुजा को कर्ण से विभाजित करें। उस दशमलव को कोण में बदलने के लिए व्युत्क्रम कोज्या (arccos) लागू करें। जैसे-जैसे अनुपात 1 के करीब आता है, कोण A 0° के करीब आता जाता है।"
@@ -253,7 +253,7 @@
           "A = arccos(0.8)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "कोण A लगभग 36.87 डिग्री है।"
       },
       "resultMeaning": [
         "आउटपुट न्यून कोण है जिसकी कोज्या b / c के बराबर है। कर्ण की तुलना में छोटी आसन्न भुजा का अर्थ व्यापक कोण है।",
@@ -318,7 +318,7 @@
         },
         {
           "question": "यदि मैं विपरीत पक्ष नहीं जानता तो क्या मैं इसका उपयोग कर सकता हूँ?",
-          "answer": "Absolutely. This calculation is designed specifically to work without needing the opposite side at all."
+          "answer": "बिल्कुल। यह गणना विशेष रूप से इस तरह बनाई गई है कि यह सम्मुख भुजा की आवश्यकता के बिना काम करे।"
         },
         {
           "question": "यदि आसन्न भुजा कर्ण का ठीक आधा हो तो क्या होगा?",
@@ -363,7 +363,7 @@
           },
           {
             "label": "ढूँढता है",
-            "value": "Angle A in degrees"
+            "value": "कोण A डिग्री में"
           },
           {
             "label": "सूत्र",
@@ -376,7 +376,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Tangent Formula",
+        "h2": "टैनजेंट सूत्र से कोण",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
           "विपरीत भुजा को आसन्न भुजा से विभाजित करें। परिणाम कोई भी धनात्मक संख्या हो सकता है (यह साइन या कोसाइन की तरह 0-1 तक सीमित नहीं है)। उस अनुपात को कोण A में बदलने के लिए व्युत्क्रम स्पर्शरेखा (arctan) लागू करें।"
@@ -416,7 +416,7 @@
           "A = arctan(0.75)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "कोण A लगभग 36.87 डिग्री है।"
       },
       "resultMeaning": [
         "आउटपुट न्यून कोण है जिसका स्पर्शरेखा a / b के बराबर है। जब विपरीत भुजा a, आसन्न भुजा b से लंबी होती है, तो कोण A 45° से अधिक हो जाता है।",
@@ -427,7 +427,7 @@
         "items": [
           "ढलान और ग्रेड - वृद्धि और दौड़ से सड़क या रैंप कोण की गणना।",
           "वुडवर्किंग - ऊर्ध्वाधर और क्षैतिज कटों से मेटर या बेवल कोण ढूंढना।",
-          "Architecture - determining pitch angle from wall height and floor depth.",
+          "वास्तुकला - दीवार की ऊँचाई और फर्श की गहराई से पिच कोण निर्धारित करना।",
           "त्वरित फ़ील्ड जांच - कोण मानों की पुष्टि करना जब केवल दो पक्ष ए और बी पहुंच योग्य हों।"
         ]
       },
@@ -530,7 +530,7 @@
           },
           {
             "label": "मान्यता",
-            "value": "Input must be between 0° and 90° (exclusive)"
+            "value": "इनपुट 0° और 90° के बीच होना चाहिए (दोनों को छोड़कर)"
           }
         ]
       },
@@ -614,7 +614,7 @@
         },
         {
           "href": "/right-triangle-area-from-leg-and-angle-calculator/",
-          "label": "Right Triangle Area from Leg and Angle Calculator"
+          "label": "भुजा और कोण से समकोण त्रिभुज क्षेत्रफल कैलकुलेटर"
         }
       ],
       "faqs": [
@@ -679,7 +679,7 @@
           },
           {
             "label": "encuentra",
-            "value": "Angle A in degrees"
+            "value": "Ángulo A en grados"
           },
           {
             "label": "Fórmula",
@@ -692,7 +692,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Sine Formula",
+        "h2": "Fórmula del ángulo a partir del seno",
         "display": "A = \\arcsin\\left(\\frac{a}{c}\\right)",
         "paragraphs": [
           "Divide el lado opuesto por la hipotenusa para obtener un decimal entre 0 y 1. Luego aplica la función seno inversa (arcsin) para convertir ese decimal en ángulo en grados."
@@ -785,7 +785,7 @@
       "faqs": [
         {
           "question": "¿Qué hace realmente la fórmula arcsin?",
-          "answer": "Arcsin takes a ratio of two sides and reverses the math to tell you the specific angle that created that ratio."
+          "answer": "El arcoseno toma una razón de dos lados e invierte el cálculo para decirte el ángulo específico que creó esa razón."
         },
         {
           "question": "¿Qué significa el resultado final?",
@@ -838,11 +838,11 @@
         "cards": [
           {
             "label": "Valores conocidos",
-            "value": "Adjacent side b and hypotenuse c"
+            "value": "Cateto adyacente b e hipotenusa c"
           },
           {
             "label": "encuentra",
-            "value": "Angle A in degrees"
+            "value": "Ángulo A en grados"
           },
           {
             "label": "Fórmula",
@@ -855,7 +855,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Cosine Formula",
+        "h2": "Fórmula del ángulo a partir del coseno",
         "display": "A = \\arccos\\left(\\frac{b}{c}\\right)",
         "paragraphs": [
           "Divide el lado adyacente por la hipotenusa para obtener un decimal entre 0 y 1. Aplica el coseno inverso (arccos) para convertir ese decimal en ángulo. A medida que la relación se acerca a 1, el ángulo A se acerca a 0°."
@@ -895,7 +895,7 @@
           "A = arccos(0.8)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "El ángulo A es aproximadamente 36.87 grados."
       },
       "resultMeaning": [
         "El resultado es el ángulo agudo cuyo coseno es igual a b / c. Un lado adyacente más corto en comparación con la hipotenusa significa un ángulo más amplio.",
@@ -960,7 +960,7 @@
         },
         {
           "question": "¿Puedo usar esto si no conozco el lado opuesto?",
-          "answer": "Absolutely. This calculation is designed specifically to work without needing the opposite side at all."
+          "answer": "Por supuesto. Este cálculo está diseñado específicamente para funcionar sin necesidad del cateto opuesto."
         },
         {
           "question": "¿Qué pasa si el lado adyacente es exactamente la mitad de la hipotenusa?",
@@ -1005,7 +1005,7 @@
           },
           {
             "label": "encuentra",
-            "value": "Angle A in degrees"
+            "value": "Ángulo A en grados"
           },
           {
             "label": "Fórmula",
@@ -1018,7 +1018,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Tangent Formula",
+        "h2": "Fórmula del ángulo a partir de la tangente",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
           "Divide el lado opuesto por el lado adyacente. El resultado puede ser cualquier número positivo (no se limita a 0-1 como el seno o el coseno). Aplique la tangente inversa (arctan) para convertir esa relación en el ángulo A."
@@ -1058,7 +1058,7 @@
           "A = arctan(0.75)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "El ángulo A es aproximadamente 36.87 grados."
       },
       "resultMeaning": [
         "El resultado es el ángulo agudo cuya tangente es igual a a / b. Cuando el lado opuesto a es más largo que el lado adyacente b, el ángulo A excede 45°.",
@@ -1069,7 +1069,7 @@
         "items": [
           "Pendiente y pendiente: cálculo del ángulo de la carretera o rampa desde la subida y bajada.",
           "Carpintería: encontrar ángulos de inglete o bisel a partir de cortes verticales y horizontales.",
-          "Architecture - determining pitch angle from wall height and floor depth.",
+          "Arquitectura: determinar el ángulo de inclinación a partir de la altura de la pared y la profundidad del suelo.",
           "Comprobaciones rápidas de campo: verificar los valores de los ángulos cuando solo se puede acceder a los dos lados a y b."
         ]
       },
@@ -1172,7 +1172,7 @@
           },
           {
             "label": "Validación",
-            "value": "Input must be between 0° and 90° (exclusive)"
+            "value": "El valor debe estar entre 0° y 90° (excluidos)"
           }
         ]
       },
@@ -1256,7 +1256,7 @@
         },
         {
           "href": "/right-triangle-area-from-leg-and-angle-calculator/",
-          "label": "Right Triangle Area from Leg and Angle Calculator"
+          "label": "Calculadora del área de un triángulo rectángulo a partir de un cateto y un ángulo"
         }
       ],
       "faqs": [
@@ -1321,7 +1321,7 @@
           },
           {
             "label": "Находки",
-            "value": "Angle A in degrees"
+            "value": "Угол A в градусах"
           },
           {
             "label": "Формула",
@@ -1334,7 +1334,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Sine Formula",
+        "h2": "Формула угла по синусу",
         "display": "A = \\arcsin\\left(\\frac{a}{c}\\right)",
         "paragraphs": [
           "Разделите противоположную сторону на гипотенузу, чтобы получить десятичное число от 0 до 1. Затем примените функцию обратного синуса (arcsin), чтобы преобразовать это десятичное число в угол в градусах."
@@ -1427,7 +1427,7 @@
       "faqs": [
         {
           "question": "Что на самом деле делает формула arcsin?",
-          "answer": "Arcsin takes a ratio of two sides and reverses the math to tell you the specific angle that created that ratio."
+          "answer": "Арксинус берёт отношение двух сторон и обращает вычисление, чтобы сообщить вам точный угол, который создал это отношение."
         },
         {
           "question": "Что означает конечный результат?",
@@ -1480,11 +1480,11 @@
         "cards": [
           {
             "label": "Известные значения",
-            "value": "Adjacent side b and hypotenuse c"
+            "value": "Прилежащий катет b и гипотенуза c"
           },
           {
             "label": "Находки",
-            "value": "Angle A in degrees"
+            "value": "Угол A в градусах"
           },
           {
             "label": "Формула",
@@ -1497,7 +1497,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Cosine Formula",
+        "h2": "Формула угла по косинусу",
         "display": "A = \\arccos\\left(\\frac{b}{c}\\right)",
         "paragraphs": [
           "Разделите прилежащую сторону на гипотенузу, чтобы получить десятичное число от 0 до 1. Примените обратный косинус (arccos), чтобы преобразовать это десятичное число в угол. Когда соотношение приближается к 1, угол A приближается к 0 °."
@@ -1537,7 +1537,7 @@
           "A = arccos(0.8)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "Угол A равен приблизительно 36.87 градуса."
       },
       "resultMeaning": [
         "Результатом является острый угол, косинус которого равен b / c. Более короткая прилежащая сторона по сравнению с гипотенузой означает более широкий угол.",
@@ -1602,7 +1602,7 @@
         },
         {
           "question": "Могу ли я использовать это, если я не знаю противоположную сторону?",
-          "answer": "Absolutely. This calculation is designed specifically to work without needing the opposite side at all."
+          "answer": "Безусловно. Этот расчёт специально разработан так, чтобы работать вообще без противолежащего катета."
         },
         {
           "question": "Что произойдет, если прилежащая сторона равна ровно половине гипотенузы?",
@@ -1647,7 +1647,7 @@
           },
           {
             "label": "Находки",
-            "value": "Angle A in degrees"
+            "value": "Угол A в градусах"
           },
           {
             "label": "Формула",
@@ -1660,7 +1660,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Tangent Formula",
+        "h2": "Формула угла по тангенсу",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
           "Разделите противоположную сторону на соседнюю сторону. Результатом может быть любое положительное число (оно не ограничивается 0-1, как синус или косинус). Примените обратный тангенс (arctan), чтобы преобразовать это соотношение в угол A."
@@ -1700,7 +1700,7 @@
           "A = arctan(0.75)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "Угол A равен приблизительно 36.87 градуса."
       },
       "resultMeaning": [
         "Результатом является острый угол, тангенс которого равен a / b. Если противоположная сторона a длиннее соседней стороны b, угол A превышает 45°.",
@@ -1711,7 +1711,7 @@
         "items": [
           "Уклон и уклон - расчет угла дороги или съезда на основе подъема и спуска.",
           "Деревообработка - определение углов скоса или скоса по вертикальным и горизонтальным разрезам.",
-          "Architecture - determining pitch angle from wall height and floor depth.",
+          "Архитектура — определение угла наклона по высоте стены и глубине перекрытия.",
           "Быстрая проверка в полевых условиях - проверка значений угла, когда доступны только две стороны a и b."
         ]
       },
@@ -1814,7 +1814,7 @@
           },
           {
             "label": "Валидация",
-            "value": "Input must be between 0° and 90° (exclusive)"
+            "value": "Значение должно быть между 0° и 90° (не включая границы)"
           }
         ]
       },
@@ -1898,7 +1898,7 @@
         },
         {
           "href": "/right-triangle-area-from-leg-and-angle-calculator/",
-          "label": "Right Triangle Area from Leg and Angle Calculator"
+          "label": "Калькулятор площади прямоугольного треугольника по катету и углу"
         }
       ],
       "faqs": [
@@ -1963,7 +1963,7 @@
           },
           {
             "label": "Trouve",
-            "value": "Angle A in degrees"
+            "value": "Angle A en degrés"
           },
           {
             "label": "Formule",
@@ -1976,7 +1976,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Sine Formula",
+        "h2": "Formule de l'angle à partir du sinus",
         "display": "A = \\arcsin\\left(\\frac{a}{c}\\right)",
         "paragraphs": [
           "Divisez le côté opposé par l'hypoténuse pour obtenir une décimale entre 0 et 1. Appliquez ensuite la fonction sinus inverse (arcsin) pour convertir cette décimale en angle en degrés."
@@ -2069,7 +2069,7 @@
       "faqs": [
         {
           "question": "Que fait réellement la formule arcsin ?",
-          "answer": "Arcsin takes a ratio of two sides and reverses the math to tell you the specific angle that created that ratio."
+          "answer": "L'arcsinus prend un rapport de deux côtés et inverse le calcul pour vous donner l'angle précis qui a produit ce rapport."
         },
         {
           "question": "Que signifie le résultat final ?",
@@ -2122,11 +2122,11 @@
         "cards": [
           {
             "label": "Valeurs connues",
-            "value": "Adjacent side b and hypotenuse c"
+            "value": "Côté adjacent b et hypoténuse c"
           },
           {
             "label": "Trouve",
-            "value": "Angle A in degrees"
+            "value": "Angle A en degrés"
           },
           {
             "label": "Formule",
@@ -2139,7 +2139,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Cosine Formula",
+        "h2": "Formule de l'angle à partir du cosinus",
         "display": "A = \\arccos\\left(\\frac{b}{c}\\right)",
         "paragraphs": [
           "Divisez le côté adjacent par l'hypoténuse pour obtenir une décimale entre 0 et 1. Appliquez le cosinus inverse (arccos) pour convertir cette décimale en angle. Plus le rapport se rapproche de 1, plus l’angle A se rapproche de 0°."
@@ -2179,7 +2179,7 @@
           "A = arccos(0.8)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "L'angle A vaut environ 36.87 degrés."
       },
       "resultMeaning": [
         "La sortie est l’angle aigu dont le cosinus est égal à b / c. Un côté adjacent plus court par rapport à l’hypoténuse signifie un angle plus large.",
@@ -2244,7 +2244,7 @@
         },
         {
           "question": "Puis-je l'utiliser si je ne connais pas le côté opposé ?",
-          "answer": "Absolutely. This calculation is designed specifically to work without needing the opposite side at all."
+          "answer": "Absolument. Ce calcul est conçu spécialement pour fonctionner sans avoir besoin du côté opposé."
         },
         {
           "question": "Que se passe-t-il si le côté adjacent correspond exactement à la moitié de l’hypoténuse ?",
@@ -2289,7 +2289,7 @@
           },
           {
             "label": "Trouve",
-            "value": "Angle A in degrees"
+            "value": "Angle A en degrés"
           },
           {
             "label": "Formule",
@@ -2302,7 +2302,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Tangent Formula",
+        "h2": "Formule de l'angle à partir de la tangente",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
           "Divisez le côté opposé par le côté adjacent. Le résultat peut être n’importe quel nombre positif (il n’est pas limité à 0-1 comme le sinus ou le cosinus). Appliquez la tangente inverse (arctan) pour convertir ce rapport en angle A."
@@ -2342,7 +2342,7 @@
           "A = arctan(0.75)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "L'angle A vaut environ 36.87 degrés."
       },
       "resultMeaning": [
         "La sortie est l'angle aigu dont la tangente est égale à a / b. Lorsque le côté opposé a est plus long que le côté adjacent b, l’angle A dépasse 45°.",
@@ -2353,7 +2353,7 @@
         "items": [
           "Pente et pente - calcul de l'angle de la route ou de la rampe à partir de la montée et de la course.",
           "Travail du bois - recherche d'angles d'onglet ou de biseau à partir de coupes verticales et horizontales.",
-          "Architecture - determining pitch angle from wall height and floor depth.",
+          "Architecture - déterminer l'angle d'inclinaison à partir de la hauteur du mur et de la profondeur du plancher.",
           "Vérifications rapides sur le terrain : vérification des valeurs d'angle lorsque seuls les deux côtés a et b sont accessibles."
         ]
       },
@@ -2456,7 +2456,7 @@
           },
           {
             "label": "Validation",
-            "value": "Input must be between 0° and 90° (exclusive)"
+            "value": "La valeur saisie doit être comprise entre 0° et 90° (bornes exclues)"
           }
         ]
       },
@@ -2540,7 +2540,7 @@
         },
         {
           "href": "/right-triangle-area-from-leg-and-angle-calculator/",
-          "label": "Right Triangle Area from Leg and Angle Calculator"
+          "label": "Calculateur d'aire d'un triangle rectangle à partir d'une cathète et d'un angle"
         }
       ],
       "faqs": [
@@ -2605,7 +2605,7 @@
           },
           {
             "label": "Funde",
-            "value": "Angle A in degrees"
+            "value": "Winkel A in Grad"
           },
           {
             "label": "Formel",
@@ -2618,7 +2618,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Sine Formula",
+        "h2": "Winkel aus der Sinusformel",
         "display": "A = \\arcsin\\left(\\frac{a}{c}\\right)",
         "paragraphs": [
           "Teilen Sie die gegenüberliegende Seite durch die Hypotenuse, um eine Dezimalzahl zwischen 0 und 1 zu erhalten. Wenden Sie dann die Umkehrsinusfunktion (arcsin) an, um diese Dezimalzahl in den Winkel in Grad umzuwandeln."
@@ -2711,7 +2711,7 @@
       "faqs": [
         {
           "question": "Was bewirkt die arcsin-Formel eigentlich?",
-          "answer": "Arcsin takes a ratio of two sides and reverses the math to tell you the specific angle that created that ratio."
+          "answer": "Der Arkussinus nimmt ein Verhältnis zweier Seiten und kehrt die Rechnung um, um Ihnen den genauen Winkel zu nennen, der dieses Verhältnis erzeugt hat."
         },
         {
           "question": "Was bedeutet das Endergebnis?",
@@ -2764,11 +2764,11 @@
         "cards": [
           {
             "label": "Bekannte Werte",
-            "value": "Adjacent side b and hypotenuse c"
+            "value": "Ankathete b und Hypotenuse c"
           },
           {
             "label": "Funde",
-            "value": "Angle A in degrees"
+            "value": "Winkel A in Grad"
           },
           {
             "label": "Formel",
@@ -2781,7 +2781,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Cosine Formula",
+        "h2": "Winkel aus der Kosinusformel",
         "display": "A = \\arccos\\left(\\frac{b}{c}\\right)",
         "paragraphs": [
           "Teilen Sie die Ankathete durch die Hypotenuse, um eine Dezimalzahl zwischen 0 und 1 zu erhalten. Wenden Sie den Umkehrkosinus (arccos) an, um diese Dezimalzahl in den Winkel umzuwandeln. Je näher das Verhältnis 1 kommt, desto näher kommt Winkel A 0°."
@@ -2821,7 +2821,7 @@
           "A = arccos(0.8)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "Winkel A beträgt ungefähr 36.87 Grad."
       },
       "resultMeaning": [
         "Die Ausgabe ist der spitze Winkel, dessen Kosinus gleich b / c ist. Eine kürzere Ankathete im Vergleich zur Hypotenuse bedeutet einen größeren Winkel.",
@@ -2886,7 +2886,7 @@
         },
         {
           "question": "Kann ich das verwenden, wenn ich die Gegenseite nicht kenne?",
-          "answer": "Absolutely. This calculation is designed specifically to work without needing the opposite side at all."
+          "answer": "Auf jeden Fall. Diese Berechnung ist speziell dafür konzipiert, ganz ohne die Gegenkathete auszukommen."
         },
         {
           "question": "Was passiert, wenn die Ankathete genau die Hälfte der Hypotenuse ist?",
@@ -2931,7 +2931,7 @@
           },
           {
             "label": "Funde",
-            "value": "Angle A in degrees"
+            "value": "Winkel A in Grad"
           },
           {
             "label": "Formel",
@@ -2944,7 +2944,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Tangent Formula",
+        "h2": "Winkel aus der Tangensformel",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
           "Teilen Sie die gegenüberliegende Seite durch die angrenzende Seite. Das Ergebnis kann eine beliebige positive Zahl sein (es ist nicht auf 0-1 wie Sinus oder Cosinus beschränkt). Wenden Sie den Umkehrtangens (arctan) an, um dieses Verhältnis in den Winkel A umzuwandeln."
@@ -2984,7 +2984,7 @@
           "A = arctan(0.75)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "Winkel A beträgt ungefähr 36.87 Grad."
       },
       "resultMeaning": [
         "Die Ausgabe ist der spitze Winkel, dessen Tangens gleich a / b ist. Wenn die gegenüberliegende Seite a länger als die benachbarte Seite b ist, überschreitet der Winkel A 45°.",
@@ -2995,7 +2995,7 @@
         "items": [
           "Neigung und Gefälle - Berechnung des Straßen- oder Rampenwinkels aus Steigung und Gefälle.",
           "Holzbearbeitung - Ermitteln von Gehrungs- oder Fasenwinkeln bei vertikalen und horizontalen Schnitten.",
-          "Architecture - determining pitch angle from wall height and floor depth.",
+          "Architektur – Bestimmung des Neigungswinkels aus Wandhöhe und Bodentiefe.",
           "Schnelle Feldprüfungen - Überprüfung der Winkelwerte, wenn nur die beiden Seiten a und b zugänglich sind."
         ]
       },
@@ -3098,7 +3098,7 @@
           },
           {
             "label": "Validierung",
-            "value": "Input must be between 0° and 90° (exclusive)"
+            "value": "Die Eingabe muss zwischen 0° und 90° liegen (ausschließlich)"
           }
         ]
       },
@@ -3182,7 +3182,7 @@
         },
         {
           "href": "/right-triangle-area-from-leg-and-angle-calculator/",
-          "label": "Right Triangle Area from Leg and Angle Calculator"
+          "label": "Rechner für den Flächeninhalt eines rechtwinkligen Dreiecks aus Kathete und Winkel"
         }
       ],
       "faqs": [
@@ -3247,7 +3247,7 @@
           },
           {
             "label": "Trova",
-            "value": "Angle A in degrees"
+            "value": "Angolo A in gradi"
           },
           {
             "label": "Formula",
@@ -3260,7 +3260,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Sine Formula",
+        "h2": "Formula dell'angolo dal seno",
         "display": "A = \\arcsin\\left(\\frac{a}{c}\\right)",
         "paragraphs": [
           "Dividi il lato opposto per l'ipotenusa per ottenere un decimale compreso tra 0 e 1. Quindi applica la funzione seno inverso (arcsin) per convertire quel decimale nell'angolo in gradi."
@@ -3353,7 +3353,7 @@
       "faqs": [
         {
           "question": "Cosa fa effettivamente la formula arcsin?",
-          "answer": "Arcsin takes a ratio of two sides and reverses the math to tell you the specific angle that created that ratio."
+          "answer": "L'arcoseno prende un rapporto tra due lati e inverte il calcolo per indicarti l'angolo specifico che ha generato quel rapporto."
         },
         {
           "question": "Cosa significa il risultato finale?",
@@ -3406,11 +3406,11 @@
         "cards": [
           {
             "label": "Valori conosciuti",
-            "value": "Adjacent side b and hypotenuse c"
+            "value": "Cateto adiacente b e ipotenusa c"
           },
           {
             "label": "Trova",
-            "value": "Angle A in degrees"
+            "value": "Angolo A in gradi"
           },
           {
             "label": "Formula",
@@ -3423,7 +3423,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Cosine Formula",
+        "h2": "Formula dell'angolo dal coseno",
         "display": "A = \\arccos\\left(\\frac{b}{c}\\right)",
         "paragraphs": [
           "Dividi il lato adiacente per l'ipotenusa per ottenere un decimale compreso tra 0 e 1. Applica il coseno inverso (arccos) per convertire quel decimale nell'angolo. Quando il rapporto si avvicina a 1, l'angolo A si avvicina a 0°."
@@ -3463,7 +3463,7 @@
           "A = arccos(0.8)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "L'angolo A è circa 36.87 gradi."
       },
       "resultMeaning": [
         "L'output è l'angolo acuto il cui coseno è uguale a b / c. Un cateto adiacente più corto rispetto all'ipotenusa indica un angolo più ampio.",
@@ -3528,7 +3528,7 @@
         },
         {
           "question": "Posso usarlo se non conosco il lato opposto?",
-          "answer": "Absolutely. This calculation is designed specifically to work without needing the opposite side at all."
+          "answer": "Assolutamente sì. Questo calcolo è progettato appositamente per funzionare senza bisogno del lato opposto."
         },
         {
           "question": "Cosa succede se il cateto adiacente è esattamente la metà dell'ipotenusa?",
@@ -3573,7 +3573,7 @@
           },
           {
             "label": "Trova",
-            "value": "Angle A in degrees"
+            "value": "Angolo A in gradi"
           },
           {
             "label": "Formula",
@@ -3586,7 +3586,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Tangent Formula",
+        "h2": "Formula dell'angolo dalla tangente",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
           "Dividi il lato opposto per il lato adiacente. Il risultato può essere qualsiasi numero positivo (non è limitato a 0-1 come seno o coseno). Applicare la tangente inversa (arctan) per convertire tale rapporto nell'angolo A."
@@ -3626,7 +3626,7 @@
           "A = arctan(0.75)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "L'angolo A è circa 36.87 gradi."
       },
       "resultMeaning": [
         "L'output è l'angolo acuto la cui tangente è uguale a a / b. Quando il lato opposto a è più lungo del lato adiacente b, l'angolo A supera i 45°.",
@@ -3637,7 +3637,7 @@
         "items": [
           "Pendenza e pendenza: calcolo dell'angolo della strada o della rampa dalla salita alla corsa.",
           "Lavorazione del legno: individuazione di angoli obliqui o smussati da tagli verticali e orizzontali.",
-          "Architecture - determining pitch angle from wall height and floor depth.",
+          "Architettura: determinare l'angolo di inclinazione dall'altezza della parete e dalla profondità del pavimento.",
           "Controlli rapidi sul campo: verifica dei valori dell'angolo quando solo i due lati a e b sono accessibili."
         ]
       },
@@ -3740,7 +3740,7 @@
           },
           {
             "label": "Validazione",
-            "value": "Input must be between 0° and 90° (exclusive)"
+            "value": "Il valore deve essere compreso tra 0° e 90° (estremi esclusi)"
           }
         ]
       },
@@ -3824,7 +3824,7 @@
         },
         {
           "href": "/right-triangle-area-from-leg-and-angle-calculator/",
-          "label": "Right Triangle Area from Leg and Angle Calculator"
+          "label": "Calcolatrice dell'area del triangolo rettangolo da cateto e angolo"
         }
       ],
       "faqs": [
@@ -3889,7 +3889,7 @@
           },
           {
             "label": "Descobertas",
-            "value": "Angle A in degrees"
+            "value": "Ângulo A em graus"
           },
           {
             "label": "Fórmula",
@@ -3902,7 +3902,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Sine Formula",
+        "h2": "Fórmula do Ângulo a partir do Seno",
         "display": "A = \\arcsin\\left(\\frac{a}{c}\\right)",
         "paragraphs": [
           "Divida o lado oposto pela hipotenusa para obter um decimal entre 0 e 1. Em seguida, aplique a função seno inversa (arcsin) para converter esse decimal no ângulo em graus."
@@ -3995,7 +3995,7 @@
       "faqs": [
         {
           "question": "O que a fórmula arcsin realmente faz?",
-          "answer": "Arcsin takes a ratio of two sides and reverses the math to tell you the specific angle that created that ratio."
+          "answer": "O arco seno recebe uma razão entre dois lados e inverte o cálculo para indicar o ângulo específico que criou essa razão."
         },
         {
           "question": "O que significa o resultado final?",
@@ -4048,11 +4048,11 @@
         "cards": [
           {
             "label": "Valores conhecidos",
-            "value": "Adjacent side b and hypotenuse c"
+            "value": "Cateto adjacente b e hipotenusa c"
           },
           {
             "label": "Descobertas",
-            "value": "Angle A in degrees"
+            "value": "Ângulo A em graus"
           },
           {
             "label": "Fórmula",
@@ -4065,7 +4065,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Cosine Formula",
+        "h2": "Fórmula do Ângulo a partir do Cosseno",
         "display": "A = \\arccos\\left(\\frac{b}{c}\\right)",
         "paragraphs": [
           "Divida o lado adjacente pela hipotenusa para obter um decimal entre 0 e 1. Aplique o cosseno inverso (arccos) para converter esse decimal no ângulo. À medida que a razão se aproxima de 1, o ângulo A se aproxima de 0°."
@@ -4105,7 +4105,7 @@
           "A = arccos(0.8)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "O ângulo A é aproximadamente 36.87 graus."
       },
       "resultMeaning": [
         "A saída é o ângulo agudo cujo cosseno é igual a b / c. Um lado adjacente mais curto em comparação com a hipotenusa significa um ângulo mais amplo.",
@@ -4170,7 +4170,7 @@
         },
         {
           "question": "Posso usar isso se não conhecer o lado oposto?",
-          "answer": "Absolutely. This calculation is designed specifically to work without needing the opposite side at all."
+          "answer": "Com certeza. Este cálculo foi projetado especificamente para funcionar sem precisar do cateto oposto."
         },
         {
           "question": "O que acontece se o lado adjacente for exatamente a metade da hipotenusa?",
@@ -4215,7 +4215,7 @@
           },
           {
             "label": "Descobertas",
-            "value": "Angle A in degrees"
+            "value": "Ângulo A em graus"
           },
           {
             "label": "Fórmula",
@@ -4228,7 +4228,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Tangent Formula",
+        "h2": "Fórmula do Ângulo a partir da Tangente",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
           "Divida o lado oposto pelo lado adjacente. O resultado pode ser qualquer número positivo (não está limitado a 0-1 como seno ou cosseno). Aplique tangente inversa (arctan) para converter essa relação em ângulo A."
@@ -4268,7 +4268,7 @@
           "A = arctan(0.75)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "O ângulo A é aproximadamente 36.87 graus."
       },
       "resultMeaning": [
         "A saída é o ângulo agudo cuja tangente é igual a a / b. Quando o lado oposto a é maior que o lado adjacente b, o ângulo A excede 45°.",
@@ -4279,7 +4279,7 @@
         "items": [
           "Inclinação e inclinação - cálculo do ângulo da estrada ou rampa desde a subida e descida.",
           "Carpintaria - encontrar ângulos de esquadria ou chanfro em cortes verticais e horizontais.",
-          "Architecture - determining pitch angle from wall height and floor depth.",
+          "Arquitetura - determinar o ângulo de inclinação a partir da altura da parede e da profundidade do piso.",
           "Verificações rápidas de campo - verificando os valores dos ângulos quando apenas os dois lados a e b estão acessíveis."
         ]
       },
@@ -4466,7 +4466,7 @@
         },
         {
           "href": "/right-triangle-area-from-leg-and-angle-calculator/",
-          "label": "Right Triangle Area from Leg and Angle Calculator"
+          "label": "Calculadora de Área de Triângulo Retângulo a partir de Cateto e Ângulo"
         }
       ],
       "faqs": [
@@ -4497,7 +4497,7 @@
     "right-triangle-angle-from-sine-calculator": {
       "slug": "right-triangle-angle-from-sine-calculator",
       "url": "/right-triangle-angle-from-sine-calculator/",
-      "h1": "Right Triangle Angle From Sine Calculator",
+      "h1": "সাইন থেকে সমকোণী ত্রিভুজের কোণ ক্যালকুলেটর",
       "metaTitle": "সাইন ক্যালকুলেটর থেকে সমকোণী ত্রিভুজ কোণ | A = arcsin(a / c) খুঁজুন",
       "metaDescription": "সাইন ক্যালকুলেটর থেকে এই সমকোণী ত্রিভুজ কোণটি সূত্র, ধাপ এবং উদাহরণ সহ a বিপরীত দিক থেকে A এবং কর্ণ c বের করতে ব্যবহার করুন।",
       "formulaSlug": "angle-from-sine",
@@ -4531,7 +4531,7 @@
           },
           {
             "label": "খুঁজে পায়",
-            "value": "Angle A in degrees"
+            "value": "A কোণ, ডিগ্রিতে"
           },
           {
             "label": "সূত্র",
@@ -4544,7 +4544,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Sine Formula",
+        "h2": "সাইন সূত্র থেকে কোণ",
         "display": "A = \\arcsin\\left(\\frac{a}{c}\\right)",
         "paragraphs": [
           "0 এবং 1 এর মধ্যে একটি দশমিক পেতে কর্ণ দ্বারা বিপরীত দিকটি ভাগ করুন। তারপর সেই দশমিককে ডিগ্রি কোণে রূপান্তর করতে বিপরীত সাইন ফাংশন (arcsin) প্রয়োগ করুন।"
@@ -4563,7 +4563,7 @@
         "focusLabel": "A = arcsin(a / c)",
         "focusDetail": "এই পদ্ধতিটি সাইন অনুপাত ব্যবহার করে কারণ সাইন বিপরীত দিকটিকে কর্ণের সাথে তুলনা করে।",
         "notes": [
-          "c is always the hypotenuse.",
+          "c সর্বদা অতিভুজ।",
           "কখনও গ একটি পা কল.",
           "একটি বিপরীত দিক।"
         ]
@@ -4572,7 +4572,7 @@
         "কোণ A থেকে সরাসরি দিকটি সনাক্ত করুন - এটি আপনার বিপরীত দিক a।",
         "90° কোণের বিপরীত দিকের দীর্ঘতম দিক c, কর্ণের শনাক্ত করুন।",
         "উপরের ক্ষেত্রগুলিতে উভয় মান লিখুন।",
-        "Press Calculate to see angle A in degrees.",
+        "A কোণটি ডিগ্রিতে দেখতে Calculate চাপুন।",
         "যাচাই করুন যে a / c 1 এর কম - অন্যথায় ইনপুটগুলি অবৈধ।"
       ],
       "example": {
@@ -4611,7 +4611,7 @@
       "relatedLinks": [
         {
           "href": "/right-triangle-angle-calculator/",
-          "label": "Right Triangle Angle Calculator"
+          "label": "সমকোণী ত্রিভুজের কোণ ক্যালকুলেটর"
         },
         {
           "href": "/right-triangle-angle-from-cosine-calculator/",
@@ -4619,7 +4619,7 @@
         },
         {
           "href": "/right-triangle-angle-from-tangent-calculator/",
-          "label": "Right Triangle Angle From Tangent Calculator"
+          "label": "ট্যানজেন্ট থেকে সমকোণী ত্রিভুজের কোণ ক্যালকুলেটর"
         },
         {
           "href": "/right-triangle-missing-angle-calculator/",
@@ -4637,7 +4637,7 @@
       "faqs": [
         {
           "question": "arcsin সূত্রটি আসলে কী করে?",
-          "answer": "Arcsin takes a ratio of two sides and reverses the math to tell you the specific angle that created that ratio."
+          "answer": "আর্কসাইন দুটি বাহুর অনুপাত নেয় এবং গাণিতিক প্রক্রিয়াটিকে উল্টে দিয়ে আপনাকে সেই নির্দিষ্ট কোণটি বলে দেয় যা ওই অনুপাতটি তৈরি করেছিল।"
         },
         {
           "question": "চূড়ান্ত ফলাফল মানে কি?",
@@ -4690,11 +4690,11 @@
         "cards": [
           {
             "label": "পরিচিত মান",
-            "value": "Adjacent side b and hypotenuse c"
+            "value": "সন্নিহিত বাহু b এবং অতিভুজ c"
           },
           {
             "label": "খুঁজে পায়",
-            "value": "Angle A in degrees"
+            "value": "A কোণ, ডিগ্রিতে"
           },
           {
             "label": "সূত্র",
@@ -4707,7 +4707,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Cosine Formula",
+        "h2": "কোসাইন সূত্র থেকে কোণ",
         "display": "A = \\arccos\\left(\\frac{b}{c}\\right)",
         "paragraphs": [
           "Divide the adjacent side by the hypotenuse to get a decimal between 0 and 1. Apply inverse cosine (arccos) to convert that decimal into the angle. অনুপাত 1-এর কাছাকাছি আসার সাথে সাথে কোণ A 0° এর কাছাকাছি আসে।"
@@ -4726,7 +4726,7 @@
         "focusLabel": "A = arccos(b / c)",
         "focusDetail": "এই পদ্ধতিটি কোসাইন অনুপাত ব্যবহার করে কারণ কোসাইন সংলগ্ন দিকটিকে কর্ণের সাথে তুলনা করে।",
         "notes": [
-          "c is always the hypotenuse.",
+          "c সর্বদা অতিভুজ।",
           "কখনও গ একটি পা কল.",
           "b হল সংলগ্ন দিক।"
         ]
@@ -4747,7 +4747,7 @@
           "A = arccos(0.8)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "A কোণটি প্রায় 36.87 ডিগ্রি।"
       },
       "resultMeaning": [
         "আউটপুট হল তীব্র কোণ যার কোসাইন b / c সমান। কর্ণের তুলনায় একটি ছোট সংলগ্ন দিক মানে একটি বিস্তৃত কোণ।",
@@ -4774,15 +4774,15 @@
       "relatedLinks": [
         {
           "href": "/right-triangle-angle-calculator/",
-          "label": "Right Triangle Angle Calculator"
+          "label": "সমকোণী ত্রিভুজের কোণ ক্যালকুলেটর"
         },
         {
           "href": "/right-triangle-angle-from-sine-calculator/",
-          "label": "Right Triangle Angle From Sine Calculator"
+          "label": "সাইন থেকে সমকোণী ত্রিভুজের কোণ ক্যালকুলেটর"
         },
         {
           "href": "/right-triangle-angle-from-tangent-calculator/",
-          "label": "Right Triangle Angle From Tangent Calculator"
+          "label": "ট্যানজেন্ট থেকে সমকোণী ত্রিভুজের কোণ ক্যালকুলেটর"
         },
         {
           "href": "/right-triangle-missing-angle-calculator/",
@@ -4800,7 +4800,7 @@
       "faqs": [
         {
           "question": "A = arccos(b / c) সূত্রটি আসলে কী বোঝায়?",
-          "answer": "It means you are taking the length of the adjacent side, dividing it by the hypotenuse, and working backward from that decimal to find the original angle."
+          "answer": "এর মানে হলো, আপনি সন্নিহিত বাহুর দৈর্ঘ্য নিচ্ছেন, সেটিকে অতিভুজ দিয়ে ভাগ করছেন, এবং ওই দশমিক সংখ্যা থেকে পেছনের দিকে কাজ করে মূল কোণটি বের করছেন।"
         },
         {
           "question": "ডিগ্রী ফলাফল বাস্তব জীবনে মানে কি?",
@@ -4812,7 +4812,7 @@
         },
         {
           "question": "আমি কি এটা ব্যবহার করতে পারি যদি আমি বিপরীত দিকটি জানি না?",
-          "answer": "Absolutely. This calculation is designed specifically to work without needing the opposite side at all."
+          "answer": "অবশ্যই। এই হিসাবটি বিশেষভাবে এমনভাবে তৈরি করা হয়েছে যাতে বিপরীত বাহুর কোনো প্রয়োজন ছাড়াই কাজ করা যায়।"
         },
         {
           "question": "সংলগ্ন পার্শ্ব ঠিক অর্ধেক কর্ণের হলে কি হবে?",
@@ -4823,9 +4823,9 @@
     "right-triangle-angle-from-tangent-calculator": {
       "slug": "right-triangle-angle-from-tangent-calculator",
       "url": "/right-triangle-angle-from-tangent-calculator/",
-      "h1": "Right Triangle Angle From Tangent Calculator",
+      "h1": "ট্যানজেন্ট থেকে সমকোণী ত্রিভুজের কোণ ক্যালকুলেটর",
       "metaTitle": "স্পর্শক ক্যালকুলেটর থেকে সমকোণী ত্রিভুজ | A = arctan(a / b) খুঁজুন",
-      "metaDescription": "Use this right triangle angle from tangent calculator to find angle A from opposite side a and adjacent side b with formula, steps, and examples.",
+      "metaDescription": "এই ট্যানজেন্ট থেকে সমকোণী ত্রিভুজের কোণ ক্যালকুলেটরটি ব্যবহার করে বিপরীত বাহু a এবং সন্নিহিত বাহু b থেকে সূত্র, ধাপ ও উদাহরণসহ A কোণ বের করুন।",
       "formulaSlug": "angle-from-tangent",
       "headerSummary": "বিপরীত স্পর্শক (arctan) সূত্র ব্যবহার করে কোণ A খুঁজে পেতে একটি সমকোণী ত্রিভুজের a এবং b উভয় বাহু লিখুন - কোন কর্ণের প্রয়োজন নেই।",
       "calculator": {
@@ -4857,7 +4857,7 @@
           },
           {
             "label": "খুঁজে পায়",
-            "value": "Angle A in degrees"
+            "value": "A কোণ, ডিগ্রিতে"
           },
           {
             "label": "সূত্র",
@@ -4870,7 +4870,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Tangent Formula",
+        "h2": "ট্যানজেন্ট সূত্র থেকে কোণ",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
           "বিপরীত দিকটিকে সংলগ্ন দিক দিয়ে ভাগ করুন। ফলাফল যেকোন ধনাত্মক সংখ্যা হতে পারে (এটি সাইন বা কোসাইন এর মত 0-1 পর্যন্ত সীমাবদ্ধ নয়)। সেই অনুপাতটিকে A কোণে রূপান্তর করতে বিপরীত স্পর্শক (arctan) প্রয়োগ করুন।"
@@ -4889,7 +4889,7 @@
         "focusLabel": "A = arctan(a / b)",
         "focusDetail": "এই পদ্ধতিটি স্পর্শক অনুপাত ব্যবহার করে কারণ স্পর্শক বিপরীত দিকটিকে সন্নিহিত বাহুর সাথে তুলনা করে।",
         "notes": [
-          "c is always the hypotenuse.",
+          "c সর্বদা অতিভুজ।",
           "কখনও গ একটি পা কল.",
           "এই গণনার জন্য কর্ণের প্রয়োজন নেই।"
         ]
@@ -4898,7 +4898,7 @@
         "বিপরীত দিকটি চিহ্নিত করুন - A কোণ থেকে সরাসরি পা।",
         "সংলগ্ন দিকটি শনাক্ত করুন b - যে পাটি এর শীর্ষে কোণ A কে স্পর্শ করে।",
         "উপরের ক্ষেত্রগুলিতে উভয় পায়ের দৈর্ঘ্য লিখুন।",
-        "Press Calculate to see angle A in degrees.",
+        "A কোণটি ডিগ্রিতে দেখতে Calculate চাপুন।",
         "যদি একটি b সমান হয়, কোণটি ঠিক 45° হওয়া উচিত - একটি দ্রুত সুস্থতা পরীক্ষা।"
       ],
       "example": {
@@ -4910,7 +4910,7 @@
           "A = arctan(0.75)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "A কোণটি প্রায় 36.87 ডিগ্রি।"
       },
       "resultMeaning": [
         "আউটপুট হল তীব্র কোণ যার স্পর্শক a / b সমান। যখন বিপরীত দিক a সংলগ্ন বাহুর b থেকে দীর্ঘ হয়, তখন কোণ A 45° অতিক্রম করে।",
@@ -4921,7 +4921,7 @@
         "items": [
           "ঢাল এবং গ্রেড - উত্থান এবং দৌড় থেকে রাস্তা বা র‌্যাম্প কোণ গণনা করা।",
           "কাঠের কাজ - উল্লম্ব এবং অনুভূমিক কাটা থেকে মিটার বা বেভেল কোণ খুঁজে বের করা।",
-          "Architecture - determining pitch angle from wall height and floor depth.",
+          "স্থাপত্য - দেয়ালের উচ্চতা ও মেঝের গভীরতা থেকে ঢালের কোণ নির্ধারণ করা।",
           "দ্রুত ক্ষেত্র পরীক্ষা - কোণ মান যাচাই করা যখন শুধুমাত্র দুটি দিক a এবং b অ্যাক্সেসযোগ্য।"
         ]
       },
@@ -4937,11 +4937,11 @@
       "relatedLinks": [
         {
           "href": "/right-triangle-angle-calculator/",
-          "label": "Right Triangle Angle Calculator"
+          "label": "সমকোণী ত্রিভুজের কোণ ক্যালকুলেটর"
         },
         {
           "href": "/right-triangle-angle-from-sine-calculator/",
-          "label": "Right Triangle Angle From Sine Calculator"
+          "label": "সাইন থেকে সমকোণী ত্রিভুজের কোণ ক্যালকুলেটর"
         },
         {
           "href": "/right-triangle-angle-from-cosine-calculator/",
@@ -5024,7 +5024,7 @@
           },
           {
             "label": "বৈধতা",
-            "value": "Input must be between 0° and 90° (exclusive)"
+            "value": "ইনপুট অবশ্যই 0° থেকে 90° এর মধ্যে হতে হবে (সীমার মান দুটি বাদে)"
           }
         ]
       },
@@ -5092,11 +5092,11 @@
       "relatedLinks": [
         {
           "href": "/right-triangle-angle-calculator/",
-          "label": "Right Triangle Angle Calculator"
+          "label": "সমকোণী ত্রিভুজের কোণ ক্যালকুলেটর"
         },
         {
           "href": "/right-triangle-angle-from-sine-calculator/",
-          "label": "Right Triangle Angle From Sine Calculator"
+          "label": "সাইন থেকে সমকোণী ত্রিভুজের কোণ ক্যালকুলেটর"
         },
         {
           "href": "/right-triangle-angle-from-cosine-calculator/",
@@ -5104,11 +5104,11 @@
         },
         {
           "href": "/right-triangle-angle-from-tangent-calculator/",
-          "label": "Right Triangle Angle From Tangent Calculator"
+          "label": "ট্যানজেন্ট থেকে সমকোণী ত্রিভুজের কোণ ক্যালকুলেটর"
         },
         {
           "href": "/right-triangle-area-from-leg-and-angle-calculator/",
-          "label": "Right Triangle Area from Leg and Angle Calculator"
+          "label": "লেগ ও কোণ থেকে সমকোণী ত্রিভুজের ক্ষেত্রফল ক্যালকুলেটর"
         }
       ],
       "faqs": [
@@ -5173,7 +5173,7 @@
           },
           {
             "label": "発見",
-            "value": "Angle A in degrees"
+            "value": "角度 A（度）"
           },
           {
             "label": "計算式",
@@ -5186,7 +5186,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Sine Formula",
+        "h2": "サインから角度を求める公式",
         "display": "A = \\arcsin\\left(\\frac{a}{c}\\right)",
         "paragraphs": [
           "反対側を斜辺で割って、0 ～ 1 の間の小数を取得します。次に、逆正弦関数 (arcsin) を適用して、その小数を度単位の角度に変換します。"
@@ -5279,7 +5279,7 @@
       "faqs": [
         {
           "question": "arcsin 式は実際に何をするのでしょうか?",
-          "answer": "Arcsin takes a ratio of two sides and reverses the math to tell you the specific angle that created that ratio."
+          "answer": "アークサインは、2辺の比を受け取り、その計算を逆にたどって、その比を生んだ具体的な角度を教えてくれます。"
         },
         {
           "question": "最終結果は何を意味しますか?",
@@ -5332,11 +5332,11 @@
         "cards": [
           {
             "label": "既知の値",
-            "value": "Adjacent side b and hypotenuse c"
+            "value": "隣接辺 b と斜辺 c"
           },
           {
             "label": "発見",
-            "value": "Angle A in degrees"
+            "value": "角度 A（度）"
           },
           {
             "label": "計算式",
@@ -5349,7 +5349,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Cosine Formula",
+        "h2": "コサインから角度を求める公式",
         "display": "A = \\arccos\\left(\\frac{b}{c}\\right)",
         "paragraphs": [
           "隣接する辺を斜辺で割って、0 ～ 1 の間の小数を取得します。逆余弦 (arccos) を適用して、その小数を角度に変換します。比率が 1 に近づくと、角度 A は 0° に近づきます。"
@@ -5389,7 +5389,7 @@
           "A = arccos(0.8)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "角度 A は約 36.87 度です。"
       },
       "resultMeaning": [
         "出力は、コサインが b / c に等しい鋭角です。斜辺に比べて隣接する辺が短いほど、角度が広いことを意味します。",
@@ -5454,7 +5454,7 @@
         },
         {
           "question": "反対側が分からない場合でも使用できますか?",
-          "answer": "Absolutely. This calculation is designed specifically to work without needing the opposite side at all."
+          "answer": "はい、その通りです。この計算は、対辺をまったく必要としないように特別に設計されています。"
         },
         {
           "question": "隣接する辺が斜辺のちょうど半分の場合はどうなるでしょうか?",
@@ -5499,7 +5499,7 @@
           },
           {
             "label": "発見",
-            "value": "Angle A in degrees"
+            "value": "角度 A（度）"
           },
           {
             "label": "計算式",
@@ -5512,7 +5512,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Tangent Formula",
+        "h2": "タンジェントから角度を求める公式",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
           "反対側を隣接する側で分割します。結果は任意の正の数になります (サインやコサインのような 0 ～ 1 に限定されません)。逆正接 (arctan) を適用して、その比率を角度 A に変換します。"
@@ -5552,7 +5552,7 @@
           "A = arctan(0.75)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "角度 A は約 36.87 度です。"
       },
       "resultMeaning": [
         "出力は、接線が a / b に等しい鋭角です。反対側の辺 a が隣接する辺 b より長い場合、角度 A は 45°を超えます。",
@@ -5563,7 +5563,7 @@
         "items": [
           "勾配と勾配 - 立ち上がりと走行から道路またはランプの角度を計算します。",
           "木工 - 垂直および水平の切断から留め継ぎ角度またはベベル角度を見つけます。",
-          "Architecture - determining pitch angle from wall height and floor depth.",
+          "建築 — 壁の高さと床の奥行きから屋根の勾配角度を求める。",
           "クイックフィールドチェック - 2 つの側面 a と b のみにアクセスできる場合の角度値を検証します。"
         ]
       },
@@ -5666,7 +5666,7 @@
           },
           {
             "label": "検証",
-            "value": "Input must be between 0° and 90° (exclusive)"
+            "value": "入力は 0° と 90° の間（両端を含まない）でなければなりません"
           }
         ]
       },
@@ -5750,7 +5750,7 @@
         },
         {
           "href": "/right-triangle-area-from-leg-and-angle-calculator/",
-          "label": "Right Triangle Area from Leg and Angle Calculator"
+          "label": "脚と角度から求める直角三角形の面積計算機"
         }
       ],
       "faqs": [
@@ -5815,7 +5815,7 @@
           },
           {
             "label": "찾기",
-            "value": "Angle A in degrees"
+            "value": "각 A (도 단위)"
           },
           {
             "label": "공식",
@@ -5828,7 +5828,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Sine Formula",
+        "h2": "사인 공식으로 구하는 각도",
         "display": "A = \\arcsin\\left(\\frac{a}{c}\\right)",
         "paragraphs": [
           "반대쪽을 빗변으로 나누어 0과 1 사이의 소수를 얻습니다. 그런 다음 역사인 함수(arcsin)를 적용하여 해당 소수를 각도(도)로 변환합니다."
@@ -5921,7 +5921,7 @@
       "faqs": [
         {
           "question": "arcsin 공식은 실제로 무엇을 수행합니까?",
-          "answer": "Arcsin takes a ratio of two sides and reverses the math to tell you the specific angle that created that ratio."
+          "answer": "아크사인은 두 변의 비율을 받아 그 비율을 만든 특정 각도를 알려주도록 계산을 역으로 수행합니다."
         },
         {
           "question": "최종 결과는 무엇을 의미하나요?",
@@ -5974,11 +5974,11 @@
         "cards": [
           {
             "label": "알려진 값",
-            "value": "Adjacent side b and hypotenuse c"
+            "value": "인접변 b와 빗변 c"
           },
           {
             "label": "찾기",
-            "value": "Angle A in degrees"
+            "value": "각 A (도 단위)"
           },
           {
             "label": "공식",
@@ -5991,7 +5991,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Cosine Formula",
+        "h2": "코사인 공식으로 구하는 각도",
         "display": "A = \\arccos\\left(\\frac{b}{c}\\right)",
         "paragraphs": [
           "인접한 변을 빗변으로 나누어 0과 1 사이의 소수를 얻습니다. 역코사인(arccos)을 적용하여 해당 소수를 각도로 변환합니다. 비율이 1에 가까울수록 각도 A는 0°에 가까워집니다."
@@ -6031,7 +6031,7 @@
           "A = arccos(0.8)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "각 A는 약 36.87도입니다."
       },
       "resultMeaning": [
         "출력은 코사인이 b / c와 동일한 예각입니다. 빗변에 비해 인접한 변이 짧을수록 각도가 더 넓어집니다.",
@@ -6096,7 +6096,7 @@
         },
         {
           "question": "반대쪽을 모르는 경우에도 사용할 수 있나요?",
-          "answer": "Absolutely. This calculation is designed specifically to work without needing the opposite side at all."
+          "answer": "물론입니다. 이 계산은 대변을 전혀 필요로 하지 않도록 특별히 설계되었습니다."
         },
         {
           "question": "인접한 변이 정확히 빗변의 절반이면 어떻게 되나요?",
@@ -6141,7 +6141,7 @@
           },
           {
             "label": "찾기",
-            "value": "Angle A in degrees"
+            "value": "각 A (도 단위)"
           },
           {
             "label": "공식",
@@ -6154,7 +6154,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Tangent Formula",
+        "h2": "탄젠트 공식으로 구하는 각도",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
           "반대편을 인접한 변으로 나눕니다. 결과는 양수일 수 있습니다(사인이나 코사인처럼 0-1로 제한되지 않음). 역탄젠트(arctan)를 적용하여 해당 비율을 각도 A로 변환합니다."
@@ -6194,7 +6194,7 @@
           "A = arctan(0.75)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "각 A는 약 36.87도입니다."
       },
       "resultMeaning": [
         "출력은 접선이 a / b와 동일한 예각입니다. 반대편 a가 인접한 변 b보다 길 때 각도 A는 45°를 초과합니다.",
@@ -6205,7 +6205,7 @@
         "items": [
           "경사 및 경사 - 상승 및 주행에서 도로 또는 경사로 각도를 계산합니다.",
           "목공 - 수직 및 수평 절단에서 마이터 또는 베벨 각도를 찾습니다.",
-          "Architecture - determining pitch angle from wall height and floor depth.",
+          "건축 - 벽 높이와 바닥 깊이로 경사각을 구합니다.",
           "빠른 현장 확인 - a와 b 두 변에만 접근할 수 있을 때 각도 값을 확인합니다."
         ]
       },
@@ -6308,7 +6308,7 @@
           },
           {
             "label": "검증",
-            "value": "Input must be between 0° and 90° (exclusive)"
+            "value": "입력값은 0°와 90° 사이여야 합니다 (양 끝값 제외)"
           }
         ]
       },
@@ -6392,7 +6392,7 @@
         },
         {
           "href": "/right-triangle-area-from-leg-and-angle-calculator/",
-          "label": "Right Triangle Area from Leg and Angle Calculator"
+          "label": "한 변과 각으로 구하는 직각삼각형 넓이 계산기"
         }
       ],
       "faqs": [
@@ -6457,7 +6457,7 @@
           },
           {
             "label": "Menemui",
-            "value": "Angle A in degrees"
+            "value": "Sudut A dalam darjah"
           },
           {
             "label": "Formula",
@@ -6470,7 +6470,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Sine Formula",
+        "h2": "Formula Sudut daripada Sinus",
         "display": "A = \\arcsin\\left(\\frac{a}{c}\\right)",
         "paragraphs": [
           "Bahagikan sisi bertentangan dengan hipotenus untuk mendapatkan perpuluhan antara 0 dan 1. Kemudian gunakan fungsi sinus songsang (arcsin) untuk menukar perpuluhan itu kepada sudut dalam darjah."
@@ -6563,7 +6563,7 @@
       "faqs": [
         {
           "question": "Apakah sebenarnya yang dilakukan oleh formula arcsin?",
-          "answer": "Arcsin takes a ratio of two sides and reverses the math to tell you the specific angle that created that ratio."
+          "answer": "Arksinus mengambil nisbah dua sisi dan membalikkan pengiraan untuk memberitahu anda sudut khusus yang menghasilkan nisbah tersebut."
         },
         {
           "question": "Apakah maksud keputusan akhir?",
@@ -6616,11 +6616,11 @@
         "cards": [
           {
             "label": "Nilai yang diketahui",
-            "value": "Adjacent side b and hypotenuse c"
+            "value": "Sisi bersebelahan b dan hipotenus c"
           },
           {
             "label": "Menemui",
-            "value": "Angle A in degrees"
+            "value": "Sudut A dalam darjah"
           },
           {
             "label": "Formula",
@@ -6633,7 +6633,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Cosine Formula",
+        "h2": "Formula Sudut daripada Kosinus",
         "display": "A = \\arccos\\left(\\frac{b}{c}\\right)",
         "paragraphs": [
           "Bahagikan sisi bersebelahan dengan hipotenus untuk mendapatkan perpuluhan antara 0 dan 1. Gunakan kosinus songsang (arccos) untuk menukar perpuluhan itu kepada sudut. Apabila nisbah semakin hampir kepada 1, sudut A semakin hampir kepada 0°."
@@ -6673,7 +6673,7 @@
           "A = arccos(0.8)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "Sudut A adalah lebih kurang 36.87 darjah."
       },
       "resultMeaning": [
         "Keluaran ialah sudut akut yang kosinusnya sama dengan b / c. Sisi bersebelahan yang lebih pendek berbanding hipotenus bermakna sudut yang lebih luas.",
@@ -6738,7 +6738,7 @@
         },
         {
           "question": "Bolehkah saya menggunakan ini jika saya tidak tahu bahagian yang bertentangan?",
-          "answer": "Absolutely. This calculation is designed specifically to work without needing the opposite side at all."
+          "answer": "Sudah tentu. Pengiraan ini direka khusus untuk berfungsi tanpa memerlukan sisi bertentangan langsung."
         },
         {
           "question": "Apakah yang berlaku jika sisi bersebelahan adalah betul-betul separuh hipotenus?",
@@ -6783,7 +6783,7 @@
           },
           {
             "label": "Menemui",
-            "value": "Angle A in degrees"
+            "value": "Sudut A dalam darjah"
           },
           {
             "label": "Formula",
@@ -6796,7 +6796,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Tangent Formula",
+        "h2": "Formula Sudut daripada Tangen",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
           "Bahagikan bahagian yang bertentangan dengan bahagian yang bersebelahan. Hasilnya boleh menjadi sebarang nombor positif (ia tidak terhad kepada 0-1 seperti sinus atau kosinus). Gunakan tangen songsang (arctan) untuk menukar nisbah itu kepada sudut A."
@@ -6836,7 +6836,7 @@
           "A = arctan(0.75)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "Sudut A adalah lebih kurang 36.87 darjah."
       },
       "resultMeaning": [
         "Keluaran ialah sudut akut yang tangennya bersamaan dengan a / b. Apabila sisi bertentangan a lebih panjang daripada sisi b bersebelahan, sudut A melebihi 45°.",
@@ -6847,7 +6847,7 @@
         "items": [
           "Cerun dan gred - mengira sudut jalan atau tanjakan dari naik dan turun.",
           "Kerja kayu - mencari sudut miter atau serong dari potongan menegak dan mendatar.",
-          "Architecture - determining pitch angle from wall height and floor depth.",
+          "Seni bina - menentukan sudut cerun daripada ketinggian dinding dan kedalaman lantai.",
           "Semakan medan pantas - mengesahkan nilai sudut apabila hanya dua sisi a dan b boleh diakses."
         ]
       },
@@ -6950,7 +6950,7 @@
           },
           {
             "label": "Pengesahan",
-            "value": "Input must be between 0° and 90° (exclusive)"
+            "value": "Input mestilah antara 0° dan 90° (eksklusif)"
           }
         ]
       },
@@ -7034,7 +7034,7 @@
         },
         {
           "href": "/right-triangle-area-from-leg-and-angle-calculator/",
-          "label": "Right Triangle Area from Leg and Angle Calculator"
+          "label": "Kalkulator Luas Segi Tiga Bersudut Tegak daripada Kaki dan Sudut"
         }
       ],
       "faqs": [
@@ -7099,7 +7099,7 @@
           },
           {
             "label": "Znaleziska",
-            "value": "Angle A in degrees"
+            "value": "Kąt A w stopniach"
           },
           {
             "label": "Formuła",
@@ -7112,7 +7112,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Sine Formula",
+        "h2": "Wzór na kąt z sinusa",
         "display": "A = \\arcsin\\left(\\frac{a}{c}\\right)",
         "paragraphs": [
           "Podziel przeciwną stronę przez przeciwprostokątną, aby uzyskać liczbę dziesiętną z zakresu od 0 do 1. Następnie zastosuj funkcję odwrotnego sinusa (arcsin), aby przekonwertować tę liczbę dziesiętną na kąt w stopniach."
@@ -7205,7 +7205,7 @@
       "faqs": [
         {
           "question": "Co właściwie robi formuła arcsin?",
-          "answer": "Arcsin takes a ratio of two sides and reverses the math to tell you the specific angle that created that ratio."
+          "answer": "Arcsin przyjmuje stosunek dwóch boków i odwraca obliczenia, aby podać dokładny kąt, który utworzył ten stosunek."
         },
         {
           "question": "Co oznacza wynik końcowy?",
@@ -7258,11 +7258,11 @@
         "cards": [
           {
             "label": "Znane wartości",
-            "value": "Adjacent side b and hypotenuse c"
+            "value": "Przyprostokątna przyległa b i przeciwprostokątna c"
           },
           {
             "label": "Znaleziska",
-            "value": "Angle A in degrees"
+            "value": "Kąt A w stopniach"
           },
           {
             "label": "Formuła",
@@ -7275,7 +7275,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Cosine Formula",
+        "h2": "Wzór na kąt z cosinusa",
         "display": "A = \\arccos\\left(\\frac{b}{c}\\right)",
         "paragraphs": [
           "Podziel sąsiedni bok przez przeciwprostokątną, aby otrzymać liczbę dziesiętną z zakresu od 0 do 1. Zastosuj odwrotny cosinus (arccos), aby zamienić tę liczbę dziesiętną na kąt. W miarę jak stosunek zbliża się do 1, kąt A zbliża się do 0°."
@@ -7315,7 +7315,7 @@
           "A = arccos(0.8)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "Kąt A wynosi w przybliżeniu 36.87 stopnia."
       },
       "resultMeaning": [
         "Wynikiem jest kąt ostry, którego cosinus jest równy b / c. Krótszy sąsiedni bok w porównaniu z przeciwprostokątną oznacza szerszy kąt.",
@@ -7380,7 +7380,7 @@
         },
         {
           "question": "Czy mogę tego użyć, jeśli nie znam przeciwnej strony?",
-          "answer": "Absolutely. This calculation is designed specifically to work without needing the opposite side at all."
+          "answer": "Oczywiście. To obliczenie zostało zaprojektowane specjalnie tak, aby działać bez potrzeby znajomości boku przeciwległego."
         },
         {
           "question": "Co się stanie, jeśli sąsiedni bok jest dokładnie połową przeciwprostokątnej?",
@@ -7425,7 +7425,7 @@
           },
           {
             "label": "Znaleziska",
-            "value": "Angle A in degrees"
+            "value": "Kąt A w stopniach"
           },
           {
             "label": "Formuła",
@@ -7438,7 +7438,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Tangent Formula",
+        "h2": "Wzór na kąt z tangensa",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
           "Podziel przeciwną stronę przez sąsiednią stronę. Wynikiem może być dowolna liczba dodatnia (nie jest ograniczona do 0-1, jak sinus lub cosinus). Zastosuj odwrotną tangens (arctan), aby przekonwertować ten stosunek na kąt A."
@@ -7478,7 +7478,7 @@
           "A = arctan(0.75)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "Kąt A wynosi w przybliżeniu 36.87 stopnia."
       },
       "resultMeaning": [
         "Wynikiem jest kąt ostry, którego tangens jest równy a / b. Jeżeli przeciwległy bok a jest dłuższy od sąsiedniego boku b, to kąt A przekracza 45°.",
@@ -7489,7 +7489,7 @@
         "items": [
           "Nachylenie i nachylenie - obliczanie kąta drogi lub rampy na podstawie wzniesienia i biegu.",
           "Obróbka drewna - znajdowanie kątów ukosowych lub skosowych w przypadku cięć pionowych i poziomych.",
-          "Architecture - determining pitch angle from wall height and floor depth.",
+          "Architektura - określanie kąta nachylenia na podstawie wysokości ściany i głębokości podłogi.",
           "Szybkie kontrole w terenie - weryfikacja wartości kątów, gdy dostępne są tylko dwie strony a i b."
         ]
       },
@@ -7592,7 +7592,7 @@
           },
           {
             "label": "Walidacja",
-            "value": "Input must be between 0° and 90° (exclusive)"
+            "value": "Wartość musi mieścić się w przedziale od 0° do 90° (wyłącznie)"
           }
         ]
       },
@@ -7676,7 +7676,7 @@
         },
         {
           "href": "/right-triangle-area-from-leg-and-angle-calculator/",
-          "label": "Right Triangle Area from Leg and Angle Calculator"
+          "label": "Kalkulator pola trójkąta prostokątnego z przyprostokątnej i kąta"
         }
       ],
       "faqs": [
@@ -7741,7 +7741,7 @@
           },
           {
             "label": "Menemukan",
-            "value": "Angle A in degrees"
+            "value": "Sudut A dalam derajat"
           },
           {
             "label": "Rumus",
@@ -7754,7 +7754,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Sine Formula",
+        "h2": "Rumus Sudut dari Sinus",
         "display": "A = \\arcsin\\left(\\frac{a}{c}\\right)",
         "paragraphs": [
           "Bagilah sisi yang berlawanan dengan sisi miring untuk mendapatkan desimal antara 0 dan 1. Kemudian terapkan fungsi invers sinus (arcsin) untuk mengubah desimal tersebut menjadi sudut dalam derajat."
@@ -7847,7 +7847,7 @@
       "faqs": [
         {
           "question": "Apa sebenarnya fungsi rumus arcsin?",
-          "answer": "Arcsin takes a ratio of two sides and reverses the math to tell you the specific angle that created that ratio."
+          "answer": "Arcsin mengambil perbandingan dua sisi dan membalik perhitungannya untuk menunjukkan sudut tertentu yang menghasilkan perbandingan tersebut."
         },
         {
           "question": "Apa arti hasil akhirnya?",
@@ -7900,11 +7900,11 @@
         "cards": [
           {
             "label": "Nilai-nilai yang diketahui",
-            "value": "Adjacent side b and hypotenuse c"
+            "value": "Sisi samping b dan hipotenusa c"
           },
           {
             "label": "Menemukan",
-            "value": "Angle A in degrees"
+            "value": "Sudut A dalam derajat"
           },
           {
             "label": "Rumus",
@@ -7917,7 +7917,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Cosine Formula",
+        "h2": "Rumus Sudut dari Kosinus",
         "display": "A = \\arccos\\left(\\frac{b}{c}\\right)",
         "paragraphs": [
           "Bagilah sisi yang berdekatan dengan sisi miring untuk mendapatkan desimal antara 0 dan 1. Terapkan kosinus terbalik (arccos) untuk mengubah desimal tersebut menjadi sudut. Ketika perbandingannya mendekati 1, sudut A mendekati 0°."
@@ -7957,7 +7957,7 @@
           "A = arccos(0.8)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "Sudut A kira-kira adalah 36.87 derajat."
       },
       "resultMeaning": [
         "Outputnya adalah sudut lancip yang kosinusnya sama dengan b / c. Sisi yang berdekatan lebih pendek dibandingkan sisi miring berarti sudutnya lebih lebar.",
@@ -8022,7 +8022,7 @@
         },
         {
           "question": "Bisakah saya menggunakan ini jika saya tidak mengetahui sisi sebaliknya?",
-          "answer": "Absolutely. This calculation is designed specifically to work without needing the opposite side at all."
+          "answer": "Tentu saja. Perhitungan ini dirancang khusus agar dapat bekerja tanpa memerlukan sisi depan sama sekali."
         },
         {
           "question": "Apa yang terjadi jika sisi yang berdekatan tepat setengah sisi miringnya?",
@@ -8067,7 +8067,7 @@
           },
           {
             "label": "Menemukan",
-            "value": "Angle A in degrees"
+            "value": "Sudut A dalam derajat"
           },
           {
             "label": "Rumus",
@@ -8080,7 +8080,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Tangent Formula",
+        "h2": "Rumus Sudut dari Tangen",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
           "Bagilah sisi yang berlawanan dengan sisi yang berdekatan. Hasilnya bisa berupa bilangan positif apa pun (tidak terbatas pada 0-1 seperti sinus atau cosinus). Terapkan tangen terbalik (arctan) untuk mengubah perbandingan tersebut menjadi sudut A."
@@ -8120,7 +8120,7 @@
           "A = arctan(0.75)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "Sudut A kira-kira adalah 36.87 derajat."
       },
       "resultMeaning": [
         "Outputnya adalah sudut lancip yang garis singgungnya sama dengan a / b. Jika sisi depan a lebih panjang dari sisi b yang berdekatan, sudut A melebihi 45°.",
@@ -8131,7 +8131,7 @@
         "items": [
           "Kemiringan dan kemiringan - menghitung sudut jalan atau tanjakan dari tanjakan dan lari.",
           "Pengerjaan kayu - menemukan sudut mitra atau kemiringan dari potongan vertikal dan horizontal.",
-          "Architecture - determining pitch angle from wall height and floor depth.",
+          "Arsitektur - menentukan sudut kemiringan dari ketinggian dinding dan kedalaman lantai.",
           "Pemeriksaan lapangan cepat - memverifikasi nilai sudut ketika hanya kedua sisi a dan b yang dapat diakses."
         ]
       },
@@ -8234,7 +8234,7 @@
           },
           {
             "label": "Validasi",
-            "value": "Input must be between 0° and 90° (exclusive)"
+            "value": "Input harus antara 0° dan 90° (tidak termasuk)"
           }
         ]
       },
@@ -8318,7 +8318,7 @@
         },
         {
           "href": "/right-triangle-area-from-leg-and-angle-calculator/",
-          "label": "Right Triangle Area from Leg and Angle Calculator"
+          "label": "Kalkulator Luas Segitiga Siku-Siku dari Kaki dan Sudut"
         }
       ],
       "faqs": [
@@ -8383,7 +8383,7 @@
           },
           {
             "label": "يجد",
-            "value": "Angle A in degrees"
+            "value": "الزاوية A بالدرجات"
           },
           {
             "label": "صيغة",
@@ -8396,7 +8396,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Sine Formula",
+        "h2": "صيغة الزاوية من الجيب",
         "display": "A = \\arcsin\\left(\\frac{a}{c}\\right)",
         "paragraphs": [
           "اقسم الجانب الآخر على الوتر للحصول على رقم عشري بين 0 و1. ثم قم بتطبيق دالة الجيب العكسي (arcsin) لتحويل هذا العلامة العشرية إلى الزاوية بالدرجات."
@@ -8489,7 +8489,7 @@
       "faqs": [
         {
           "question": "ماذا تفعل صيغة arcsin فعليًا؟",
-          "answer": "Arcsin takes a ratio of two sides and reverses the math to tell you the specific angle that created that ratio."
+          "answer": "تأخذ الدالة العكسية للجيب (arcsin) نسبة بين ضلعين وتعكس العملية الحسابية لتخبرك بالزاوية الدقيقة التي أنتجت تلك النسبة."
         },
         {
           "question": "ماذا تعني النتيجة النهائية؟",
@@ -8542,11 +8542,11 @@
         "cards": [
           {
             "label": "القيم المعروفة",
-            "value": "Adjacent side b and hypotenuse c"
+            "value": "الضلع المجاور b والوتر c"
           },
           {
             "label": "يجد",
-            "value": "Angle A in degrees"
+            "value": "الزاوية A بالدرجات"
           },
           {
             "label": "صيغة",
@@ -8559,7 +8559,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Cosine Formula",
+        "h2": "صيغة الزاوية من جيب التمام",
         "display": "A = \\arccos\\left(\\frac{b}{c}\\right)",
         "paragraphs": [
           "اقسم الجانب المجاور على الوتر لتحصل على رقم عشري بين 0 و1. قم بتطبيق جيب التمام العكسي (arccos) لتحويل هذا العلامة العشرية إلى زاوية. كلما اقتربت النسبة من 1، اقتربت الزاوية A من 0°."
@@ -8599,7 +8599,7 @@
           "A = arccos(0.8)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "الزاوية A تساوي تقريبًا 36.87 درجة."
       },
       "resultMeaning": [
         "الإخراج هو الزاوية الحادة التي يساوي جيب تمامها b / c. الجانب المجاور الأقصر مقارنة بالوتر يعني زاوية أوسع.",
@@ -8664,7 +8664,7 @@
         },
         {
           "question": "هل يمكنني استخدام هذا إذا كنت لا أعرف الجانب الآخر؟",
-          "answer": "Absolutely. This calculation is designed specifically to work without needing the opposite side at all."
+          "answer": "بالتأكيد. صُمم هذا الحساب خصيصًا ليعمل دون الحاجة إلى الضلع المقابل على الإطلاق."
         },
         {
           "question": "ماذا يحدث إذا كان الضلع المجاور يساوي نصف الوتر بالضبط؟",
@@ -8709,7 +8709,7 @@
           },
           {
             "label": "يجد",
-            "value": "Angle A in degrees"
+            "value": "الزاوية A بالدرجات"
           },
           {
             "label": "صيغة",
@@ -8722,7 +8722,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Tangent Formula",
+        "h2": "صيغة الزاوية من الظل",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
           "اقسم الجانب المقابل على الجانب المجاور. يمكن أن تكون النتيجة أي رقم موجب (لا يقتصر على 0-1 مثل جيب التمام أو جيب التمام). قم بتطبيق الظل العكسي (arctan) لتحويل هذه النسبة إلى الزاوية A."
@@ -8762,7 +8762,7 @@
           "A = arctan(0.75)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "الزاوية A تساوي تقريبًا 36.87 درجة."
       },
       "resultMeaning": [
         "الإخراج هو الزاوية الحادة التي يساوي ظلها a / b. عندما يكون الجانب المقابل أ أطول من الجانب المجاور ب، تتجاوز الزاوية أ 45 درجة.",
@@ -8773,7 +8773,7 @@
         "items": [
           "المنحدر والدرجة - حساب زاوية الطريق أو المنحدر من الارتفاع والجري.",
           "النجارة - إيجاد الزوايا المائلة أو المائلة من القطع الرأسية والأفقية.",
-          "Architecture - determining pitch angle from wall height and floor depth.",
+          "الهندسة المعمارية - تحديد زاوية الميل من ارتفاع الجدار وعمق الأرضية.",
           "فحوصات ميدانية سريعة - التحقق من قيم الزوايا عندما لا يمكن الوصول إلا إلى الجانبين a وb."
         ]
       },
@@ -8876,7 +8876,7 @@
           },
           {
             "label": "التحقق من الصحة",
-            "value": "Input must be between 0° and 90° (exclusive)"
+            "value": "يجب أن يكون الإدخال بين 0° و90° (دون شمول الطرفين)"
           }
         ]
       },
@@ -8960,7 +8960,7 @@
         },
         {
           "href": "/right-triangle-area-from-leg-and-angle-calculator/",
-          "label": "Right Triangle Area from Leg and Angle Calculator"
+          "label": "حاسبة مساحة المثلث القائم من القائمة والزاوية"
         }
       ],
       "faqs": [
@@ -9025,7 +9025,7 @@
           },
           {
             "label": "Находки",
-            "value": "Angle A in degrees"
+            "value": "Ъгъл A в градуси"
           },
           {
             "label": "Формула",
@@ -9038,7 +9038,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Sine Formula",
+        "h2": "Формула за ъгъл чрез синус",
         "display": "A = \\arcsin\\left(\\frac{a}{c}\\right)",
         "paragraphs": [
           "Разделете противоположната страна на хипотенузата, за да получите десетична запетая между 0 и 1. След това приложете функцията за обратен синус (arcsin), за да преобразувате тази десетична запетая в ъгъл в градуси."
@@ -9131,7 +9131,7 @@
       "faqs": [
         {
           "question": "Какво всъщност прави формулата arcsin?",
-          "answer": "Arcsin takes a ratio of two sides and reverses the math to tell you the specific angle that created that ratio."
+          "answer": "Аркуссинусът взема съотношение на две страни и обръща изчисленията, за да ви покаже конкретния ъгъл, който е създал това съотношение."
         },
         {
           "question": "Какво означава крайният резултат?",
@@ -9184,11 +9184,11 @@
         "cards": [
           {
             "label": "Известни стойности",
-            "value": "Adjacent side b and hypotenuse c"
+            "value": "Прилежащ катет b и хипотенуза c"
           },
           {
             "label": "Находки",
-            "value": "Angle A in degrees"
+            "value": "Ъгъл A в градуси"
           },
           {
             "label": "Формула",
@@ -9201,7 +9201,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Cosine Formula",
+        "h2": "Формула за ъгъл чрез косинус",
         "display": "A = \\arccos\\left(\\frac{b}{c}\\right)",
         "paragraphs": [
           "Разделете съседната страна на хипотенузата, за да получите десетична запетая между 0 и 1. Приложете обратен косинус (arccos), за да преобразувате тази десетична запетая в ъгъл. Когато съотношението се доближава до 1, ъгъл А се доближава до 0°."
@@ -9241,7 +9241,7 @@
           "A = arccos(0.8)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "Ъгъл A е приблизително 36.87 градуса."
       },
       "resultMeaning": [
         "Резултатът е острия ъгъл, чийто косинус е равен на b / c. По-къса съседна страна в сравнение с хипотенузата означава по-широк ъгъл.",
@@ -9306,7 +9306,7 @@
         },
         {
           "question": "Мога ли да използвам това, ако не знам противоположната страна?",
-          "answer": "Absolutely. This calculation is designed specifically to work without needing the opposite side at all."
+          "answer": "Разбира се. Това изчисление е създадено специално така, че да работи, без изобщо да е необходима срещулежащата страна."
         },
         {
           "question": "Какво се случва, ако съседната страна е точно половината от хипотенузата?",
@@ -9351,7 +9351,7 @@
           },
           {
             "label": "Находки",
-            "value": "Angle A in degrees"
+            "value": "Ъгъл A в градуси"
           },
           {
             "label": "Формула",
@@ -9364,7 +9364,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Tangent Formula",
+        "h2": "Формула за ъгъл чрез тангенс",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
           "Разделете противоположната страна на съседната страна. Резултатът може да бъде всяко положително число (не се ограничава до 0-1 като синус или косинус). Приложете обратна тангенс (arctan), за да преобразувате това съотношение в ъгъл A."
@@ -9404,7 +9404,7 @@
           "A = arctan(0.75)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "Ъгъл A е приблизително 36.87 градуса."
       },
       "resultMeaning": [
         "Резултатът е острия ъгъл, чийто тангенс е равен на a / b. Когато срещуположната страна a е по-дълга от съседната страна b, ъгъл A надвишава 45°.",
@@ -9415,7 +9415,7 @@
         "items": [
           "Наклон и денивелация - изчисляване на ъгъла на пътя или рампата от изкачване и движение.",
           "Дървообработване - намиране на ъгли на скосяване или скосяване от вертикални и хоризонтални срезове.",
-          "Architecture - determining pitch angle from wall height and floor depth.",
+          "Архитектура — определяне на ъгъла на наклон по височината на стената и дълбочината на пода.",
           "Бързи полеви проверки - проверка на стойностите на ъглите, когато само двете страни a и b са достъпни."
         ]
       },
@@ -9518,7 +9518,7 @@
           },
           {
             "label": "Валидиране",
-            "value": "Input must be between 0° and 90° (exclusive)"
+            "value": "Въведената стойност трябва да бъде между 0° и 90° (без да включва границите)"
           }
         ]
       },
@@ -9602,7 +9602,7 @@
         },
         {
           "href": "/right-triangle-area-from-leg-and-angle-calculator/",
-          "label": "Right Triangle Area from Leg and Angle Calculator"
+          "label": "Калкулатор за лице на правоъгълен триъгълник от катет и ъгъл"
         }
       ],
       "faqs": [
@@ -9667,7 +9667,7 @@
           },
           {
             "label": "Buluntular",
-            "value": "Angle A in degrees"
+            "value": "Derece cinsinden A açısı"
           },
           {
             "label": "Formül",
@@ -9680,7 +9680,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Sine Formula",
+        "h2": "Sinüsten Açı Formülü",
         "display": "A = \\arcsin\\left(\\frac{a}{c}\\right)",
         "paragraphs": [
           "0 ile 1 arasında bir ondalık sayı elde etmek için karşı tarafı hipotenüse bölün. Daha sonra bu ondalık sayıyı derece cinsinden açıya dönüştürmek için ters sinüs fonksiyonunu (arcsin) uygulayın."
@@ -9773,7 +9773,7 @@
       "faqs": [
         {
           "question": "arcsin formülü gerçekte ne işe yarar?",
-          "answer": "Arcsin takes a ratio of two sides and reverses the math to tell you the specific angle that created that ratio."
+          "answer": "Arksinüs, iki kenarın oranını alır ve bu oranı oluşturan özgül açıyı size söylemek için işlemi tersine çevirir."
         },
         {
           "question": "Nihai sonuç ne anlama geliyor?",
@@ -9826,11 +9826,11 @@
         "cards": [
           {
             "label": "Bilinen değerler",
-            "value": "Adjacent side b and hypotenuse c"
+            "value": "Komşu kenar b ve hipotenüs c"
           },
           {
             "label": "Buluntular",
-            "value": "Angle A in degrees"
+            "value": "Derece cinsinden A açısı"
           },
           {
             "label": "Formül",
@@ -9843,7 +9843,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Cosine Formula",
+        "h2": "Kosinüsten Açı Formülü",
         "display": "A = \\arccos\\left(\\frac{b}{c}\\right)",
         "paragraphs": [
           "0 ile 1 arasında bir ondalık sayı elde etmek için bitişik tarafı hipotenüse bölün. Bu ondalık sayıyı açıya dönüştürmek için ters kosinüs (arccos) uygulayın. Oran 1'e yaklaştıkça A açısı 0°'ye yaklaşır."
@@ -9883,7 +9883,7 @@
           "A = arccos(0.8)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "A açısı yaklaşık 36.87 derecedir."
       },
       "resultMeaning": [
         "Çıkış, kosinüsü b / c'ya eşit olan dar açıdır. Hipotenüse kıyasla daha kısa bir komşu kenar daha geniş bir açı anlamına gelir.",
@@ -9948,7 +9948,7 @@
         },
         {
           "question": "Karşı tarafı bilmiyorsam bunu kullanabilir miyim?",
-          "answer": "Absolutely. This calculation is designed specifically to work without needing the opposite side at all."
+          "answer": "Kesinlikle. Bu hesaplama, karşı kenara hiç ihtiyaç duymadan çalışmak üzere özel olarak tasarlanmıştır."
         },
         {
           "question": "Bitişik kenar hipotenüsün tam yarısı olursa ne olur?",
@@ -9993,7 +9993,7 @@
           },
           {
             "label": "Buluntular",
-            "value": "Angle A in degrees"
+            "value": "Derece cinsinden A açısı"
           },
           {
             "label": "Formül",
@@ -10006,7 +10006,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Tangent Formula",
+        "h2": "Tanjanttan Açı Formülü",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
           "Karşı tarafı bitişik tarafa bölün. Sonuç herhangi bir pozitif sayı olabilir (sinüs veya kosinüs gibi 0-1 ile sınırlı değildir). Bu oranı A açısına dönüştürmek için ters tanjantı (arctan) uygulayın."
@@ -10046,7 +10046,7 @@
           "A = arctan(0.75)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "A açısı yaklaşık 36.87 derecedir."
       },
       "resultMeaning": [
         "Çıktı, tanjantı a / b'ya eşit olan dar açıdır. Karşı taraf a, bitişik kenar b'den daha uzun olduğunda, A açısı 45°'yi aşar.",
@@ -10057,7 +10057,7 @@
         "items": [
           "Eğim ve eğim - yükseliş ve ilerlemeden yol veya rampa açısının hesaplanması.",
           "Ağaç işleme - dikey ve yatay kesimlerden gönye veya eğim açılarını bulma.",
-          "Architecture - determining pitch angle from wall height and floor depth.",
+          "Mimarlık - duvar yüksekliği ve zemin derinliğinden eğim açısının belirlenmesi.",
           "Hızlı saha kontrolleri - yalnızca a ve b taraflarına erişilebildiğinde açı değerlerinin doğrulanması."
         ]
       },
@@ -10160,7 +10160,7 @@
           },
           {
             "label": "Doğrulama",
-            "value": "Input must be between 0° and 90° (exclusive)"
+            "value": "Girdi 0° ile 90° arasında olmalıdır (hariç)"
           }
         ]
       },
@@ -10244,7 +10244,7 @@
         },
         {
           "href": "/right-triangle-area-from-leg-and-angle-calculator/",
-          "label": "Right Triangle Area from Leg and Angle Calculator"
+          "label": "Dik Kenar ve Açı ile Dik Üçgen Alanı Hesaplayıcı"
         }
       ],
       "faqs": [
@@ -10309,7 +10309,7 @@
           },
           {
             "label": "Fynd",
-            "value": "Angle A in degrees"
+            "value": "Vinkel A i grader"
           },
           {
             "label": "Formel",
@@ -10322,7 +10322,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Sine Formula",
+        "h2": "Formel för vinkel från sinus",
         "display": "A = \\arcsin\\left(\\frac{a}{c}\\right)",
         "paragraphs": [
           "Dividera den motsatta sidan med hypotenusan för att få en decimal mellan 0 och 1. Använd sedan invers sinusfunktionen (arcsin) för att omvandla den decimalen till vinkeln i grader."
@@ -10415,7 +10415,7 @@
       "faqs": [
         {
           "question": "Vad gör arcsin formeln egentligen?",
-          "answer": "Arcsin takes a ratio of two sides and reverses the math to tell you the specific angle that created that ratio."
+          "answer": "Arcsinus tar ett förhållande mellan två sidor och vänder på matematiken för att ge dig den specifika vinkel som skapade det förhållandet."
         },
         {
           "question": "Vad betyder slutresultatet?",
@@ -10468,11 +10468,11 @@
         "cards": [
           {
             "label": "Kända värden",
-            "value": "Adjacent side b and hypotenuse c"
+            "value": "Närliggande katet b och hypotenusa c"
           },
           {
             "label": "Fynd",
-            "value": "Angle A in degrees"
+            "value": "Vinkel A i grader"
           },
           {
             "label": "Formel",
@@ -10485,7 +10485,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Cosine Formula",
+        "h2": "Formel för vinkel från cosinus",
         "display": "A = \\arccos\\left(\\frac{b}{c}\\right)",
         "paragraphs": [
           "Dela den intilliggande sidan med hypotenusan för att få en decimal mellan 0 och 1. Använd invers cosinus (arccos) för att omvandla den decimalen till vinkeln. När förhållandet närmar sig 1 blir vinkeln A närmare 0°."
@@ -10525,7 +10525,7 @@
           "A = arccos(0.8)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "Vinkel A är ungefär 36.87 grader."
       },
       "resultMeaning": [
         "Utgången är den spetsiga vinkeln vars cosinus är lika med b / c. En kortare intilliggande sida jämfört med hypotenusan innebär en bredare vinkel.",
@@ -10590,7 +10590,7 @@
         },
         {
           "question": "Kan jag använda detta om jag inte känner till den motsatta sidan?",
-          "answer": "Absolutely. This calculation is designed specifically to work without needing the opposite side at all."
+          "answer": "Absolut. Denna beräkning är särskilt utformad för att fungera utan att du behöver den motstående kateten alls."
         },
         {
           "question": "Vad händer om den intilliggande sidan är exakt halva hypotenusan?",
@@ -10635,7 +10635,7 @@
           },
           {
             "label": "Fynd",
-            "value": "Angle A in degrees"
+            "value": "Vinkel A i grader"
           },
           {
             "label": "Formel",
@@ -10648,7 +10648,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Tangent Formula",
+        "h2": "Formel för vinkel från tangens",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
           "Dela den motsatta sidan med den intilliggande sidan. Resultatet kan bli vilket positivt tal som helst (det är inte begränsat till 0-1 som sinus eller cosinus). Använd invers tangent (arctan) för att omvandla det förhållandet till vinkel A."
@@ -10688,7 +10688,7 @@
           "A = arctan(0.75)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "Vinkel A är ungefär 36.87 grader."
       },
       "resultMeaning": [
         "Utgången är den spetsiga vinkeln vars tangent är lika med a / b. När motsatt sida a är längre än intilliggande sida b, överstiger vinkeln A 45°.",
@@ -10699,7 +10699,7 @@
         "items": [
           "Lutning och lutning - beräknar väg- eller rampvinkel från stigning och körning.",
           "Träbearbetning - hitta gerings- eller fasvinklar från vertikala och horisontella snitt.",
-          "Architecture - determining pitch angle from wall height and floor depth.",
+          "Arkitektur - bestämma lutningsvinkel från vägghöjd och golvdjup.",
           "Snabba fältkontroller - verifierar vinkelvärden när endast de två sidorna a och b är tillgängliga."
         ]
       },
@@ -10802,7 +10802,7 @@
           },
           {
             "label": "Validering",
-            "value": "Input must be between 0° and 90° (exclusive)"
+            "value": "Inmatningen måste vara mellan 0° och 90° (exklusive)"
           }
         ]
       },
@@ -10886,7 +10886,7 @@
         },
         {
           "href": "/right-triangle-area-from-leg-and-angle-calculator/",
-          "label": "Right Triangle Area from Leg and Angle Calculator"
+          "label": "Kalkylator för area i rätvinklig triangel utifrån katet och vinkel"
         }
       ],
       "faqs": [
@@ -10951,7 +10951,7 @@
           },
           {
             "label": "发现",
-            "value": "Angle A in degrees"
+            "value": "角 A 的度数"
           },
           {
             "label": "公式",
@@ -10964,7 +10964,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Sine Formula",
+        "h2": "由正弦求角公式",
         "display": "A = \\arcsin\\left(\\frac{a}{c}\\right)",
         "paragraphs": [
           "将对边除以斜边，得到 0 到 1 之间的小数。然后应用反正弦函数 (arcsin) 将该小数转换为以度为单位的角度。"
@@ -11057,7 +11057,7 @@
       "faqs": [
         {
           "question": "arcsin 公式实际上有什么作用？",
-          "answer": "Arcsin takes a ratio of two sides and reverses the math to tell you the specific angle that created that ratio."
+          "answer": "反正弦将两边的比值反向运算，告诉您产生该比值的具体角度。"
         },
         {
           "question": "最终结果意味着什么？",
@@ -11110,11 +11110,11 @@
         "cards": [
           {
             "label": "已知值",
-            "value": "Adjacent side b and hypotenuse c"
+            "value": "邻边 b 和斜边 c"
           },
           {
             "label": "发现",
-            "value": "Angle A in degrees"
+            "value": "角 A 的度数"
           },
           {
             "label": "公式",
@@ -11127,7 +11127,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Cosine Formula",
+        "h2": "由余弦求角公式",
         "display": "A = \\arccos\\left(\\frac{b}{c}\\right)",
         "paragraphs": [
           "将邻边除以斜边，得到 0 到 1 之间的小数。应用反余弦 (arccos) 将该小数转换为角度。随着比率越接近 1，角度 A 越接近 0°。"
@@ -11167,7 +11167,7 @@
           "A = arccos(0.8)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "角 A 约为 36.87 度。"
       },
       "resultMeaning": [
         "输出是余弦等于b / c的锐角。与斜边相比，相邻边较短意味着角度更宽。",
@@ -11232,7 +11232,7 @@
         },
         {
           "question": "如果我不知道对方，我可以使用这个吗？",
-          "answer": "Absolutely. This calculation is designed specifically to work without needing the opposite side at all."
+          "answer": "完全可以。此计算专门设计为无需对边即可完成。"
         },
         {
           "question": "如果邻边恰好是斜边的一半，会发生什么？",
@@ -11277,7 +11277,7 @@
           },
           {
             "label": "发现",
-            "value": "Angle A in degrees"
+            "value": "角 A 的度数"
           },
           {
             "label": "公式",
@@ -11290,7 +11290,7 @@
         ]
       },
       "formula": {
-        "h2": "Angle From Tangent Formula",
+        "h2": "由正切求角公式",
         "display": "A = \\arctan\\left(\\frac{a}{b}\\right)",
         "paragraphs": [
           "将相对边除以相邻边。结果可以是任何正数（不限于正弦或余弦等 0-1）。应用反正切 (arctan) 将该比率转换为角度 A。"
@@ -11330,7 +11330,7 @@
           "A = arctan(0.75)",
           "A ≈ 36.87°"
         ],
-        "answer": "Angle A is approximately 36.87 degrees."
+        "answer": "角 A 约为 36.87 度。"
       },
       "resultMeaning": [
         "输出是正切等于a / b的锐角。当对边a比邻边b长时，角度A超过45°。",
@@ -11341,7 +11341,7 @@
         "items": [
           "坡度和坡度 - 根据上升和运行计算道路或坡道角度。",
           "木工 - 从垂直和水平切割中找到斜角或斜角。",
-          "Architecture - determining pitch angle from wall height and floor depth.",
+          "建筑学，根据墙高和地面深度确定倾斜角。",
           "快速现场检查 - 仅可访问 a 和 b 两侧时验证角度值。"
         ]
       },
@@ -11444,7 +11444,7 @@
           },
           {
             "label": "验证",
-            "value": "Input must be between 0° and 90° (exclusive)"
+            "value": "输入必须在 0° 到 90° 之间（不含端点）"
           }
         ]
       },
@@ -11528,7 +11528,7 @@
         },
         {
           "href": "/right-triangle-area-from-leg-and-angle-calculator/",
-          "label": "Right Triangle Area from Leg and Angle Calculator"
+          "label": "由直角边和角求直角三角形面积计算器"
         }
       ],
       "faqs": [

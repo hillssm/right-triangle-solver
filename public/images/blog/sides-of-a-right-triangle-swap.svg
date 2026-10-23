@@ -1,0 +1,29 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">Change the reference angle, and the leg labels swap</text>
+  <polygon points="140,470 316,470 316,338" fill="none" stroke="#38bdf8" stroke-width="3.5"/>
+  <path d="M 301 470 L 301 455 L 316 455" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <polygon points="640,470 816,470 816,338" fill="none" stroke="#38bdf8" stroke-width="3.5"/>
+  <path d="M 801 470 L 801 455 L 816 455" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <path d="M 182 470 A 42 42 0 0 0 172 440" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <text x="200" y="446" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#facc15" text-anchor="middle">θ</text>
+  <text x="228" y="506" font-family="system-ui, sans-serif" font-size="23" font-weight="600" fill="#38bdf8" text-anchor="middle">adjacent</text>
+  <text x="336" y="410" font-family="system-ui, sans-serif" font-size="23" font-weight="600" fill="#38bdf8" text-anchor="start">opposite</text>
+  <text x="216" y="352" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#facc15" text-anchor="middle">hypotenuse</text>
+  <path d="M 816 380 A 42 42 0 0 1 786 368" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <text x="782" y="404" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#facc15" text-anchor="middle">θ</text>
+  <text x="728" y="506" font-family="system-ui, sans-serif" font-size="23" font-weight="600" fill="#38bdf8" text-anchor="middle">opposite</text>
+  <text x="836" y="410" font-family="system-ui, sans-serif" font-size="23" font-weight="600" fill="#38bdf8" text-anchor="start">adjacent</text>
+  <text x="716" y="352" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#facc15" text-anchor="middle">hypotenuse</text>
+  <text x="600" y="586" font-family="monospace" font-size="26" font-weight="bold" fill="#10b981" text-anchor="middle">Same triangle both times. Only the marked angle moved.</text>
+</svg>

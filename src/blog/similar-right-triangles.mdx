@@ -1,0 +1,280 @@
+---
+title: "Similar Right Triangles: Definition, Rules, Formulas, Examples, and Practice Problems"
+description: "Learn similar right triangles with the AA rule, proportions, scale factors, and the geometric mean theorem, plus solved examples and practice problems."
+image: "/images/blog/similar-right-triangles-hero.svg"
+date: 2026-10-23
+author: "Math Expert"
+category: "Geometry"
+---
+
+import Faq from 'theme/components/Faq.astro';
+
+
+Draw a small right triangle on paper, then look at the triangle a flagpole makes with its shadow. The two triangles look like the same shape at very different sizes, and that resemblance is not a coincidence you have to measure your way out of. **Similar Right Triangles** are same-shape triangles, and once two of them match, every unknown side falls out of one proportion. Students usually lose marks in two places: matching the wrong pair of sides, and writing the proportion with one ratio flipped. This guide fixes both. You will learn the definition, the AA rule, the formulas, the altitude theorem, a step-by-step solving method, worked examples, and practice problems with answers.
+
+## What Are Similar Right Triangles?
+
+Two right triangles are **similar** when they have exactly the same shape but not necessarily the same size. In geometry, "same shape" has a precise meaning: every angle in one triangle equals the matching angle in the other, and every side in one triangle is the corresponding side in the other multiplied by the same number.
+
+That single multiplier is why similarity is so useful. If the angles match, the sides cannot drift independently: double one side and you have doubled all of them, because the shape is fixed. Angles decide the shape, and the shape decides the ratios between the sides.
+
+Similar is not the same as congruent. Congruent triangles match in shape **and** size, so every side is equal too. Similar triangles only fix the shape; one can be an enlargement or a reduction of the other, like a photo printed at two sizes.
+
+Are any two right triangles automatically similar? No. Both contain a 90° angle, but their acute angles are free to differ. A 30-60-90 triangle and a 40-50-90 triangle are both right triangles, yet their shapes are visibly different. They are similar only when their acute angles also match.
+
+**Example:** take the 3-4-5 triangle and the 6-8-10 triangle. Their angles are identical (90°, about 53.13°, about 36.87°), and their sides give the same ratio three times:
+
+- 3 ÷ 6 = 0.5
+- 4 ÷ 8 = 0.5
+- 5 ÷ 10 = 0.5
+
+One ratio repeated for all three side pairs is the fingerprint of similarity. The second triangle is simply the first one scaled by a factor of 2.
+
+## Properties of Similar Right Triangles
+
+Five properties cover almost everything you will be asked about similar right triangles:
+
+1. **Both triangles contain a 90° angle.** That shared right angle is your first matching pair, free of charge.
+2. **Corresponding acute angles are equal.** If one triangle has acute angles of 53.13° and 36.87°, so does the other.
+3. **Corresponding sides are proportional.** Each side of one triangle divided by the matching side of the other gives the same ratio.
+4. **The hypotenuses correspond.** The longest side of one matches the longest side of the other, which makes the hypotenuse the safest side to start matching from. Our [hypotenuse formula](/blog/hypotenuse-formula/) guide covers that side in depth.
+5. **Areas scale with the square of the side ratio.** Double the sides and the area does not double, it multiplies by 4.
+
+| Property | What it says | With 3-4-5 and 6-8-10 |
+|---|---|---|
+| Right angle | Both triangles have one 90° angle | 90° in each |
+| Acute angles | Matching acute angles are equal | 53.13° and 36.87° in each |
+| Side ratios | Corresponding sides share one ratio | 3:6 = 4:8 = 5:10 = 1:2 |
+| Hypotenuse | Longest sides correspond | 5 matches 10 |
+| Area ratio | Areas compare as the square of the side ratio | Areas 6 and 24, ratio 1:4 = 1:2² |
+
+## How to Identify Similar Right Triangles
+
+You rarely need to check everything. One of three quick tests usually settles it.
+
+### Angle-Angle (AA) Similarity
+
+The AA rule says two triangles are similar when two pairs of angles match. Right triangles give you the first pair for free, since both right angles are 90°. So for right triangles, **one matching pair of acute angles is enough**: the third angles are then forced, because the angles of any triangle add to 180°.
+
+**Example:** triangle P has angles 90°, 35°, and 55°. Triangle Q is a right triangle with one acute angle of 55°. Q's remaining angle is 180 − 90 − 55 = 35°, so Q's angles are 90°, 55°, 35°, the same set as P. The two triangles are similar by AA, whatever their sizes.
+
+### Comparing Corresponding Side Ratios
+
+When all three sides of both triangles are known, divide each side by the side in the matching position. Similar triangles return one ratio, three times.
+
+**Example:** are the 5-12-13 and 10-24-26 triangles similar? Check: 5 ÷ 10 = 0.5, 12 ÷ 24 = 0.5, 13 ÷ 26 = 0.5. One ratio throughout, so yes, they are similar. If even one pair breaks the pattern, the triangles are not similar, and no proportion between them is safe to use.
+
+### Using a Scale Factor
+
+A scale factor above 1 enlarges a triangle, a scale factor between 0 and 1 shrinks it, and in both cases the angles do not change at all. Enlargement is a photocopier, not a distortion.
+
+**Example:** scale the 6-8-10 triangle by a factor of 2.5 and you get sides of 15, 20, and 25. The new triangle is bigger in every measurement, yet its angles are still 90°, 53.13°, and 36.87°, because scaling multiplies lengths, never angles.
+
+## Similar Right Triangles Formulas
+
+Three formulas do the work in this topic. Take them one at a time.
+
+**The corresponding sides proportion.** Suppose triangle ABC is right-angled at B and triangle DEF is right-angled at E, with A matching D, B matching E, and C matching F. Then:
+
+**AB ÷ DE = BC ÷ EF = AC ÷ DF**
+
+Read it as: each side of the first triangle, divided by the side in the matching position of the second, gives the same number. With AB = 4, BC = 3, AC = 5 and DE = 8, EF = 6, DF = 10, that is 4 ÷ 8 = 3 ÷ 6 = 5 ÷ 10 = 0.5. Matching vertices matter more than the letters themselves: the side between A and B must be compared with the side between the two vertices that play the same roles in the other triangle.
+
+**The scale factor.**
+
+**Scale Factor = New Side Length ÷ Corresponding Original Side Length**
+
+Divide any side of the image by the matching side of the original. Use the hypotenuse pair when you can, because the hypotenuse is the one side you can never misidentify.
+
+**The geometric mean relationships.** Draw a perpendicular altitude from the right-angle vertex down to the hypotenuse. It splits the hypotenuse into two segments. Call the whole hypotenuse c, the segments p and q, the altitude h, and the legs a and b, where leg a sits next to segment p and leg b sits next to segment q. Then:
+
+- **h² = pq** (the altitude is the geometric mean of the two segments)
+- **a² = cp** (each leg squared equals the hypotenuse times its own neighbouring segment)
+- **b² = cq**
+- **c = p + q**
+
+![A right triangle with the altitude drawn to its hypotenuse, labelled with segments p and q, altitude h, legs a and b, and hypotenuse c](/images/blog/similar-right-triangles-altitude.svg)
+
+The next section explains why these formulas work, and our guide on [how to find the height of a right triangle](/blog/how-to-find-height-right-triangle/) puts the same altitude relationships to work in height problems.
+
+## Similar Right Triangles Theorem Explained
+
+The theorem behind the formulas is the **right triangle altitude similarity theorem**: the altitude drawn from the right angle to the hypotenuse splits the triangle into two smaller right triangles, and all three triangles, the original and the two pieces, are similar to each other.
+
+Here is the reasoning, one step at a time, using the diagram above with the right angle at C and the altitude dropping to point D on the hypotenuse.
+
+1. The small triangle on the left, ACD, shares the acute angle at A with the original triangle ABC. Both are right triangles (ACD has its right angle at D, where the altitude lands). By AA, ACD is similar to ABC.
+2. The small triangle on the right, BCD, shares the acute angle at B with the original. Both are right triangles, so by AA again, BCD is similar to ABC.
+3. Two triangles similar to the same third triangle are similar to each other, so ACD and BCD are similar as well.
+
+Now the formulas stop being magic. Because ACD and BCD are similar, the altitude h stands in the same ratio to segment p as segment q stands to h, which rearranges to h² = pq. Because ACD is similar to ABC, leg a compared with segment p matches hypotenuse c compared with leg a, which rearranges to a² = cp. The formula b² = cq falls out of the second pair the same way. Every geometric mean formula is just a proportion from the diagram, rewritten.
+
+## How to Solve Similar Right Triangles Step by Step
+
+Use the same seven steps every time and the matching mistakes disappear.
+
+**Step 1: Identify the right angles.** They are your first confirmed matching pair.
+
+**Step 2: Match the corresponding acute angles.** Equal angles sit opposite equal-ratio sides, and they tell you which vertices correspond.
+
+**Step 3: Match the corresponding sides.** Work from landmarks: hypotenuse to hypotenuse, longest leg to longest leg, shortest leg to shortest leg.
+
+**Step 4: Write a correct proportion.** Keep each triangle on its own side of every fraction, small over large all the way through, never mixed.
+
+**Step 5: Cross-multiply or simplify.** Reduce the known ratio first when you can; it usually exposes the scale factor.
+
+**Step 6: Calculate the missing length.**
+
+**Step 7: Verify the answer using the original ratio.** Every pair of corresponding sides must now return the same ratio, and the new sides should still satisfy the Pythagorean theorem.
+
+**Worked example:** a right triangle has legs 8 and 15 and hypotenuse 17. A similar right triangle has hypotenuse 51. Find its legs.
+
+![Two similar right triangles, 8-15-17 and a larger one with hypotenuse 51 and unknown legs x and y](/images/blog/similar-right-triangles-solving.svg)
+
+Steps 1 to 3: both are right triangles, and the side order is fixed, so 8 matches x, 15 matches y, and 17 matches 51. Step 4: write 8 ÷ x = 15 ÷ y = 17 ÷ 51. Step 5: 17 ÷ 51 simplifies to 1 ÷ 3, so the scale factor from small to large is 3. Step 6: x = 8 × 3 = 24 and y = 15 × 3 = 45. Step 7: verify with 24² + 45² = 576 + 2025 = 2601 = 51², and the ratios check out, 8 ÷ 24 = 15 ÷ 45 = 17 ÷ 51 = 1 ÷ 3. Done, and proven done.
+
+## Solved Examples of Similar Right Triangles
+
+### Example 1: Finding a Missing Side
+
+**Given:** a right triangle with sides 9, 12, and 15 is similar to a larger right triangle whose shortest side is 27. Find the other two sides.
+
+The shortest sides correspond, so the scale factor is 27 ÷ 9 = 3. Multiply the remaining sides by 3: the longer leg is 12 × 3 = **36**, and the hypotenuse is 15 × 3 = **45**.
+
+**Verify:** 27² + 36² = 729 + 1296 = 2025 = 45². Correct.
+
+### Example 2: Finding the Scale Factor
+
+**Given:** a 7-24-25 right triangle is enlarged so that its hypotenuse becomes 75. Find the scale factor and the new legs.
+
+The hypotenuses correspond, so the scale factor is 75 ÷ 25 = **3**. The new legs are 7 × 3 = **21** and 24 × 3 = **72**.
+
+**Verify:** 21² + 72² = 441 + 5184 = 5625 = 75², and 21 ÷ 7 = 72 ÷ 24 = 75 ÷ 25 = 3. Correct.
+
+### Example 3: Applying the Geometric Mean Theorem
+
+**Given:** the altitude to the hypotenuse of a right triangle divides the hypotenuse into segments of 4 cm and 9 cm. Find the altitude, and then the two legs.
+
+Here p = 4 and q = 9, so h² = pq = 4 × 9 = 36, giving h = **6 cm**. The full hypotenuse is c = p + q = 13 cm. The legs follow from a² = cp = 13 × 4 = 52, so a = √52 ≈ **7.21 cm**, and b² = cq = 13 × 9 = 117, so b = √117 ≈ **10.82 cm**.
+
+**Verify:** 7.21² + 10.82² ≈ 52 + 117 = 169 = 13², and the altitude also equals a × b ÷ c = 78 ÷ 13 = 6. Correct.
+
+### Example 4: Real-Life Application, the Height of a Tree
+
+**Given:** at the same moment on a sunny day, a person 1.8 m tall casts a shadow 2.4 m long, and a tree casts a shadow 12 m long. Estimate the height of the tree.
+
+The sun's rays hit both at the same angle, the person and the tree both stand at 90° to the ground, so the two triangles are similar by AA. Write the proportion with heights over shadows: h ÷ 1.8 = 12 ÷ 2.4. The shadow ratio is 12 ÷ 2.4 = 5, so h = 1.8 × 5 = **9 m**.
+
+![A person and a tree with their shadows forming two similar right triangles under parallel sun rays](/images/blog/similar-right-triangles-shadow.svg)
+
+**Verify:** 9 ÷ 1.8 = 5 and 12 ÷ 2.4 = 5. Both ratios agree, so the estimate is consistent.
+
+## Similar Right Triangles vs. Pythagorean Theorem
+
+Students mix these two up because the same diagrams invite both. They answer different questions. Similarity compares **two** triangles and moves information across from one to the other through ratios. The Pythagorean theorem works **inside one** right triangle and relates its three sides. Our [Pythagorean theorem formula](/blog/pythagorean-theorem-formula/) guide covers that theorem on its own.
+
+| Aspect | Similar Triangles | Pythagorean Theorem |
+|---|---|---|
+| Purpose | Transfer known lengths from one triangle to a matching one | Find a side of a single right triangle |
+| Required information | Matching angles, or one full set of sides and a scale link | Two sides of the same right triangle |
+| Formula or rule | Corresponding sides share one ratio, a ÷ d = b ÷ e = c ÷ f | a² + b² = c² |
+| When to use it | Two triangles, a shadow problem, a scale drawing, a missing side with no right-triangle pair in one figure | One triangle, two sides known, third side wanted |
+| Simple example | 3-4-5 enlarged by 2 gives 6-8-10 without measuring | Legs 6 and 8 give hypotenuse √(36 + 64) = 10 |
+
+### Is the Pythagorean Theorem True for All Similar Triangles?
+
+This exact question appears in homework and quizzes, and as stated, the answer is **no**. The theorem is a statement about right triangles only. Two triangles can be perfectly similar without either of them having a right angle, and then the theorem simply does not apply. Take an isosceles triangle with sides 5, 5, and 6 and its enlargement with sides 10, 10, and 12: the pair is similar, but 5² + 5² = 50, which is not 6² = 36.
+
+The true version is narrower: the Pythagorean theorem holds for **every right triangle**, so it holds for similar triangles whenever those triangles are right-angled. The 3-4-5 triangle satisfies 3² + 4² = 5², and its similar partner 6-8-10 satisfies 6² + 8² = 10². Similarity preserves the shape, the right angle included, and the theorem follows the shape.
+
+## Real-Life Applications of Similar Right Triangles
+
+- **Measuring heights with shadows.** Any vertical object, its shadow, and the sun's ray form a right triangle, and all such triangles at the same moment are similar. This is the oldest indirect measurement trick in geometry.
+- **Architecture and construction.** Roof pitches, stair stringers, and ramp slopes are right triangles built to a chosen ratio, then repeated at full size from small drawings.
+- **Surveying and land measurement.** Surveyors lay out a small, measurable triangle on accessible ground and scale it up to cover land they cannot walk, such as a plot across a road or a lake.
+- **Map scaling.** A map is a similarity transformation of the real terrain: distances on paper keep one ratio with distances on the ground.
+- **Indirect measurement of inaccessible distances.** The width of a river or the height of a cliff can be found from a matching triangle built on safe ground nearby.
+
+**Scenario 1, a building:** a stick 1.2 m tall casts a shadow of 0.9 m, while a building's shadow measures 30 m at the same moment. Height of the building = 1.2 × (30 ÷ 0.9) = 1.2 × 33.33 ≈ **40 m**.
+
+**Scenario 2, a map:** on a map drawn at 1 cm to 2 km, the straight-line distance between two towns measures 6.5 cm. The real distance is 6.5 × 2 = **13 km**, because map distances and ground distances are corresponding sides of similar figures.
+
+## Common Mistakes When Solving Similar Right Triangles
+
+1. **Matching the wrong corresponding sides.** Pairing the hypotenuse of one triangle with a leg of the other poisons every ratio after it. Fix: match hypotenuse to hypotenuse first, then longest leg to longest leg.
+2. **Assuming every pair of right triangles is similar.** A shared 90° angle is only one pair. Without a matching acute angle or proportional sides, there is no similarity to use.
+3. **Confusing similarity with congruence.** Similar triangles can differ in size; that is the whole point. If your proportion produces sides identical to the original when the figure is clearly bigger, you have set it up as congruence by accident.
+4. **Reversing ratios inconsistently.** Writing small over large in one fraction and large over small in the next flips the answer. Fix: choose one order, small ÷ large say, and keep it in every fraction.
+5. **Applying geometric mean formulas to incorrect segments.** In h² = pq, p and q are the two pieces of the hypotenuse created by the altitude, nothing else. Legs do not belong in those slots.
+6. **Using the Pythagorean theorem when a proportion would be easier.** If the problem hands you a matching triangle and a scale link, the proportion is one step. Pythagoras on a triangle with only one known side goes nowhere.
+
+## Similar Right Triangles Practice Problems
+
+1. **Beginner.** A 3-4-5 right triangle is similar to a larger right triangle whose shortest side is 12. Find the other two sides.
+2. **Beginner.** One right triangle has angles of 90° and 35°. A second right triangle has one acute angle of 55°. Are the two triangles similar? Explain using AA.
+3. **Intermediate.** A 5-12-13 right triangle is similar to a larger right triangle. The side of the larger triangle that corresponds to 12 measures 30. Find the other two sides.
+4. **Intermediate.** The altitude to the hypotenuse divides it into segments of 2 and 8. Find the altitude and both legs.
+5. **Challenging.** A person 6 ft tall casts a shadow 4 ft long. At the same time, a flagpole casts a shadow 26 ft long. Find the height of the flagpole.
+6. **Challenging.** The altitude to the hypotenuse divides it into segments of 3 and 12. Find the hypotenuse, the altitude, and both legs.
+
+### Answer Key
+
+1. Scale factor = 12 ÷ 3 = 4. Other sides: 4 × 4 = **16** and 5 × 4 = **20**.
+2. **Yes.** The first triangle's third angle is 180 − 90 − 35 = 55°, which matches the second triangle's acute angle of 55°. Both are right triangles, so the right angles match too, and two matching angle pairs means similar by AA.
+3. Scale factor = 30 ÷ 12 = 2.5. Other sides: 5 × 2.5 = **12.5** and 13 × 2.5 = **32.5**. Check: 12.5² + 30² = 156.25 + 900 = 1056.25 = 32.5².
+4. h² = 2 × 8 = 16, so h = **4**. c = 2 + 8 = 10. Legs: √(10 × 2) = √20 ≈ **4.47** and √(10 × 8) = √80 ≈ **8.94**.
+5. Height ÷ 6 = 26 ÷ 4 = 6.5, so the flagpole is 6 × 6.5 = **39 ft**.
+6. c = 3 + 12 = **15**. h = √(3 × 12) = √36 = **6**. Legs: √(15 × 3) = √45 ≈ **6.71** and √(15 × 12) = √180 ≈ **13.42**. Check: 45 + 180 = 225 = 15².
+
+More graded sets, including printable ones, are in our [right triangle worksheets](/blog/right-triangle-worksheets/).
+
+## Check Your Answers With the Similar Right Triangles Calculator
+
+Work each problem by hand first: the matching and the proportion are the skills being tested. Then run the same numbers through the [Similar Right Triangles Calculator](/similar-right-triangles-calculator/) and compare. If your answer and the calculator disagree, the gap almost always sits in one of two places: a mismatched pair of sides, or a ratio written in the wrong order. Both are quick to find once you know where to look, and our [angles in a right triangle](/blog/angles-in-a-right-triangle/) guide helps when the disagreement is about which angle matches which.
+
+<Faq heading="Frequently Asked Questions" description="Short answers to the questions students ask most about similar right triangles." items={[
+  {
+    "question": "What are similar right triangles?",
+    "answer": "They are right triangles with exactly the same shape but possibly different sizes. Every angle in one matches an angle in the other, and every side is the corresponding side multiplied by the same scale factor. A 3-4-5 triangle and a 6-8-10 triangle are the standard example."
+  },
+  {
+    "question": "How do you know if two right triangles are similar?",
+    "answer": "Check the angles or the sides. If one pair of acute angles matches, the AA rule settles it, because both right angles already match. If you know all the sides instead, divide each side by the corresponding side: one repeated ratio across all three pairs confirms similarity."
+  },
+  {
+    "question": "Are all right triangles similar?",
+    "answer": "No. Every right triangle has a 90-degree angle, but the two acute angles can be anything that adds to 90 degrees. A 30-60-90 triangle and a 40-50-90 triangle have different shapes, so they are not similar. Similarity needs the acute angles to match as well."
+  },
+  {
+    "question": "What is the formula for similar right triangles?",
+    "answer": "The core formula is the proportion of corresponding sides: AB divided by DE equals BC divided by EF equals AC divided by DF, where the letters mark matching vertices. Every ratio in that chain equals the scale factor between the triangles, and it is what you solve for missing sides."
+  },
+  {
+    "question": "What is the AA similarity rule?",
+    "answer": "AA stands for Angle-Angle: if two angles of one triangle equal two angles of another, the triangles are similar, because the third angles are then forced to match as well. For right triangles it is even shorter work, since the right angles always match, one equal acute angle is enough."
+  },
+  {
+    "question": "How do you find a missing side in similar right triangles?",
+    "answer": "Match the corresponding sides first, using the hypotenuse and the longest and shortest legs as landmarks. Then write a proportion with the unknown in it, keep the same order in every fraction, and cross-multiply. Finally, check that every pair of corresponding sides returns the same ratio."
+  },
+  {
+    "question": "What is the geometric mean theorem?",
+    "answer": "It describes what happens when you draw the altitude from the right angle to the hypotenuse. The altitude is the geometric mean of the two segments it creates, so h squared equals p times q, and each leg squared equals the hypotenuse times its neighbouring segment."
+  },
+  {
+    "question": "How are similar right triangles different from congruent triangles?",
+    "answer": "Congruent triangles match in shape and in size, so every side and angle is identical. Similar triangles match in shape only: angles are equal, but sides can all be scaled up or down by a common factor. Every congruent pair is similar with scale factor 1, not the other way round."
+  },
+  {
+    "question": "How does an altitude create similar right triangles?",
+    "answer": "The altitude from the right angle lands perpendicular on the hypotenuse, splitting the original triangle into two smaller right triangles. Each small triangle shares one acute angle with the original, so by AA both are similar to the original, and therefore similar to each other as well."
+  },
+  {
+    "question": "Can similar right triangles have different side lengths?",
+    "answer": "Yes, that is the normal case. Similar triangles share angles, not lengths, so one triangle can be a doubled, halved, or any other scaled copy of the other. The side lengths differ, but the ratio between corresponding sides stays constant, and that ratio is the scale factor."
+  }
+]} />
+
+## Conclusion
+
+Similar right triangles come down to one idea: equal angles force proportional sides. Match the right angles first, confirm one pair of acute angles or test the side ratios, and every problem in this topic opens up. Write the proportion with matching sides in matching positions, keep the order consistent, and verify with the original ratio before you move on. The altitude formulas are the same idea inside one triangle. Practice the matching until it is automatic, and shadow problems, scale drawings, and exam questions all become the same short exercise.

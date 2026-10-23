@@ -1,0 +1,26 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">Match corresponding sides, then write the proportion</text>
+  <polygon points="150,500 222,500 150,365" fill="none" stroke="#38bdf8" stroke-width="3"/>
+  <path d="M 166 500 L 166 484 L 150 484" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <polygon points="560,500 776,500 560,95" fill="none" stroke="#38bdf8" stroke-width="3"/>
+  <path d="M 576 500 L 576 484 L 560 484" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <text x="122" y="440" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#e2e8f0" text-anchor="middle">15</text>
+  <text x="186" y="534" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#e2e8f0" text-anchor="middle">8</text>
+  <text x="214" y="414" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#e2e8f0" text-anchor="middle">17</text>
+  <text x="300" y="300" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#facc15" text-anchor="start">scale factor 3</text>
+  <text x="524" y="300" font-family="system-ui, sans-serif" font-size="30" font-weight="600" fill="#facc15" text-anchor="middle">y</text>
+  <text x="668" y="534" font-family="system-ui, sans-serif" font-size="30" font-weight="600" fill="#facc15" text-anchor="middle">x</text>
+  <text x="706" y="272" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#e2e8f0" text-anchor="middle">51</text>
+  <text x="600" y="586" font-family="monospace" font-size="27" font-weight="bold" fill="#10b981" text-anchor="middle">8/x = 15/y = 17/51   →   x = 24, y = 45</text>
+</svg>

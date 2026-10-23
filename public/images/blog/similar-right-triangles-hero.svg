@@ -1,0 +1,36 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">Same shape, different size: every side doubles</text>
+  <polygon points="120,480 288,480 120,354" fill="none" stroke="#38bdf8" stroke-width="3"/>
+  <path d="M 138 480 L 138 462 L 120 462" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <polygon points="560,480 896,480 560,228" fill="none" stroke="#38bdf8" stroke-width="3"/>
+  <path d="M 578 480 L 578 462 L 560 462" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <path d="M 248 480 A 40 40 0 0 1 262 454" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <text x="232" y="462" font-family="system-ui, sans-serif" font-size="28" font-weight="600" fill="#facc15" text-anchor="middle">θ</text>
+  <path d="M 856 480 A 40 40 0 0 1 870 454" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <text x="840" y="462" font-family="system-ui, sans-serif" font-size="28" font-weight="600" fill="#facc15" text-anchor="middle">θ</text>
+  <path d="M 120 394 A 40 40 0 0 0 152 382" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <text x="146" y="420" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#facc15" text-anchor="middle">φ</text>
+  <path d="M 560 268 A 40 40 0 0 0 592 256" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <text x="586" y="294" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#facc15" text-anchor="middle">φ</text>
+  <text x="96" y="428" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#e2e8f0" text-anchor="middle">3</text>
+  <text x="204" y="518" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#e2e8f0" text-anchor="middle">4</text>
+  <text x="232" y="392" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#e2e8f0" text-anchor="middle">5</text>
+  <text x="532" y="368" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#e2e8f0" text-anchor="middle">6</text>
+  <text x="728" y="518" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#e2e8f0" text-anchor="middle">8</text>
+  <text x="766" y="318" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#e2e8f0" text-anchor="middle">10</text>
+  <text x="424" y="330" font-family="system-ui, sans-serif" font-size="46" font-weight="600" fill="#facc15" text-anchor="middle">× 2</text>
+  <text x="424" y="368" font-family="system-ui, sans-serif" font-size="22" font-weight="500" fill="#94a3b8" text-anchor="middle">scale factor</text>
+  <text x="204" y="572" font-family="monospace" font-size="27" font-weight="bold" fill="#10b981" text-anchor="middle">3-4-5 triangle</text>
+  <text x="728" y="572" font-family="monospace" font-size="27" font-weight="bold" fill="#10b981" text-anchor="middle">6-8-10 triangle</text>
+</svg>

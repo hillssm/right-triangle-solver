@@ -1,6 +1,38 @@
 import type { FocusedAltitudeCalculatorPage } from 'src/data/focusedAltitudeCalculatorPages';
 import type { FormulaCalculatorField } from 'src/data/rightTriangleFormulas';
+import { ALTITUDE_GAP_FILLS } from 'src/data/focusedAltitudeGapTranslations';
 import type { Locale } from 'theme/i18n/locales';
+
+function setGapPath(target: unknown, path: string, value: unknown, mode: 'fill' | 'set'): void {
+  const parts = path.replace(/\[(\d+)\]/g, '.$1').split('.');
+  let cur = target as Record<string, unknown>;
+  for (let i = 0; i < parts.length - 1; i++) {
+    const key = parts[i];
+    if (cur[key] === undefined || cur[key] === null) {
+      cur[key] = /^\d+$/.test(parts[i + 1]) ? [] : {};
+    }
+    cur = cur[key] as Record<string, unknown>;
+  }
+  const last = parts[parts.length - 1];
+  if (mode === 'set' || cur[last] === undefined) {
+    cur[last] = value;
+  }
+}
+
+function applyAltitudeGapFills(
+  page: FocusedAltitudeCalculatorPage,
+  locale: Locale
+): FocusedAltitudeCalculatorPage {
+  const fills = ALTITUDE_GAP_FILLS[locale]?.[page.slug];
+  if (!fills || fills.length === 0) {
+    return page;
+  }
+  const next = structuredClone(page) as FocusedAltitudeCalculatorPage;
+  for (const fill of fills) {
+    setGapPath(next, fill.path, structuredClone(fill.value), fill.mode);
+  }
+  return next;
+}
 
 type RuntimeCopy = {
   calculationComplete: string;
@@ -3015,20 +3047,19 @@ export function localizeFocusedAltitudeCalculatorPage(
       : createSimpleCopy(rawCopy);
 
   if (page.slug === 'right-triangle-altitude-from-sides-calculator') {
-    return buildPage(
-      page,
-      copy,
-      copy.sides,
-      SIDES_RELATED_HREFS,
-      ['h = \\frac{a \\times b}{c}']
+    return applyAltitudeGapFills(
+      buildPage(page, copy, copy.sides, SIDES_RELATED_HREFS, [
+        'h = \\frac{a \\times b}{c}'
+      ]),
+      locale
     );
   }
 
-  return buildPage(
-    page,
-    copy,
-    copy.projections,
-    PROJECTIONS_RELATED_HREFS,
-    ['h^2 = p \\times q', 'h = \\sqrt{p \\times q}']
+  return applyAltitudeGapFills(
+    buildPage(page, copy, copy.projections, PROJECTIONS_RELATED_HREFS, [
+      'h^2 = p \\times q',
+      'h = \\sqrt{p \\times q}'
+    ]),
+    locale
   );
 }

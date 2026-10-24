@@ -1,0 +1,31 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <text x="600" y="58" font-family="system-ui, sans-serif" font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">Slope Formula</text>
+  <text x="600" y="96" font-family="system-ui, sans-serif" font-size="24" font-weight="500" fill="#94a3b8" text-anchor="middle">m = (y2 - y1) / (x2 - x1) = rise / run</text>
+  <line x1="100" y1="520" x2="1120" y2="520" stroke="#64748b" stroke-width="2"/>
+  <line x1="180" y1="560" x2="180" y2="60" stroke="#64748b" stroke-width="2"/>
+  <polygon points="1120,520 1104,512 1104,528" fill="#64748b"/>
+  <polygon points="180,60 172,76 188,76" fill="#64748b"/>
+  <text x="1130" y="526" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#94a3b8">x</text>
+  <text x="172" y="52" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#94a3b8">y</text>
+  <line x1="300" y1="460" x2="480" y2="460" stroke="#facc15" stroke-width="2" stroke-dasharray="8 6"/>
+  <line x1="480" y1="460" x2="480" y2="100" stroke="#facc15" stroke-width="2" stroke-dasharray="8 6"/>
+  <line x1="300" y1="460" x2="480" y2="100" stroke="#38bdf8" stroke-width="3.5"/>
+  <circle cx="300" cy="460" r="11" fill="#38bdf8"/>
+  <circle cx="480" cy="100" r="11" fill="#38bdf8"/>
+  <text x="300" y="498" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#38bdf8" text-anchor="middle">A(2, 1)</text>
+  <text x="480" y="76" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#38bdf8" text-anchor="middle">B(5, 7)</text>
+  <text x="390" y="488" font-family="system-ui, sans-serif" font-size="25" font-weight="600" fill="#facc15" text-anchor="middle">run = 3</text>
+  <text x="505" y="280" font-family="system-ui, sans-serif" font-size="25" font-weight="600" fill="#facc15" text-anchor="start">rise = 6</text>
+  <text x="600" y="600" font-family="system-ui, sans-serif" font-size="20" fill="#94a3b8" text-anchor="middle">Slope = rise / run = 6 / 3 = 2</text>
+</svg>

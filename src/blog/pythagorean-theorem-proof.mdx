@@ -1,0 +1,380 @@
+---
+title: "Pythagorean Theorem Proof: 3 Step-by-Step Methods"
+description: "Learn why a² + b² = c² is true with three complete proofs: rearrangement, similar triangles, and the Garfield trapezoid, plus examples and practice."
+image: "/images/blog/pythagorean-theorem-proof-hero.svg"
+date: 2026-10-24
+author: "Math Expert"
+category: "Geometry"
+---
+
+import Faq from 'theme/components/Faq.astro';
+
+
+The **Pythagorean Theorem Proof** answers a question that checking examples never can: why is a² + b² = c² true for every right triangle, not just the ones we have measured? The theorem states a relationship between the sides of a right triangle, and this guide proves it three different ways: by rearranging areas, by similar triangles, and by the trapezoid construction published by James A. Garfield in 1876. Each proof starts from basic facts and ends at the same equation, so by the end you will understand the theorem rather than merely believe it.
+
+## What Is the Pythagorean Theorem?
+
+A right triangle has one angle of exactly 90 degrees. Its three sides carry fixed names:
+
+- **a** = the length of one leg, one of the two sides forming the right angle.
+- **b** = the length of the other leg.
+- **c** = the length of the hypotenuse, the side opposite the right angle.
+
+The hypotenuse is always the longest side, because it faces the largest angle in the triangle. The Pythagorean theorem states:
+
+**a² + b² = c²**
+
+In words, the area of the square built on one leg plus the area of the square built on the other leg equals the area of the square built on the hypotenuse. That area reading is the key to two of the three proofs in this guide. The theorem applies only to right triangles; for any other triangle the equation does not hold.
+
+**Featured snippet answer:** The Pythagorean theorem states that in a right triangle with legs a and b and hypotenuse c, a² + b² = c². The squares of the two legs add up to the square of the hypotenuse, which is the side opposite the right angle and always the longest side.
+
+![A right triangle with legs 3 and 4 and hypotenuse 5, with squares of area 9, 16, and 25 drawn on its three sides](/images/blog/pythagorean-theorem-proof-hero.svg)
+
+## Why Do We Need to Prove the Pythagorean Theorem?
+
+A mathematical statement, a numerical example, and a mathematical proof are three different things, and confusing them is the most common conceptual error in this topic.
+
+A numerical example checks one case. The 3-4-5 triangle satisfies 3² + 4² = 9 + 16 = 25 = 5², so the theorem holds for that triangle. But one triangle, or a hundred triangles, cannot establish a claim about every right triangle. There are infinitely many right triangles, and no list of examples, however long, covers them all.
+
+A proof does what examples cannot. It starts from facts already known, such as how areas add up or when triangles are similar, and reasons step by step to the equation, using general side lengths a, b, and c rather than specific numbers. If you have ever searched for how to prove the Pythagorean theorem, you have probably seen the 3-4-5 check passed off as a proof; it is a useful check, but it is not one. Because no step depends on a particular triangle, the conclusion holds for every right triangle at once. That generality is the whole point of proving: a proof converts a pattern noticed in examples into a certainty about all cases.
+
+Keep this distinction in mind through the three proofs below. Each one uses general lengths, never a specific triangle, and that is exactly why each one counts as a proof while a 3-4-5 check does not.
+
+## Pythagorean Theorem Proof Using Rearrangement
+
+This is the most visual of the three proofs. It arranges four copies of the same right triangle inside a large square and compares areas two ways. The method is ancient, appearing in Chinese and Indian mathematics centuries ago, and it needs nothing beyond area formulas and angle addition.
+
+### Step 1: Draw Four Identical Right Triangles
+
+Take four congruent right triangles, each with legs a and b and hypotenuse c. Arrange them inside a larger square with side length a + b, one triangle in each corner, with their hypotenuses facing inward. The four hypotenuses enclose a shape in the centre.
+
+The central shape is a square, and proving that matters, so here is the reasoning. Each of its four sides is a hypotenuse of one of the triangles, so all four sides have length c. For the angles, look at any point where two triangles meet along the large square's side. The two acute angles of a right triangle sum to 90 degrees, and the three angles on that straight edge sum to 180 degrees. Subtracting the two acute angles leaves 180 - 90 = 90 degrees for the central angle. All four central angles are 90 degrees by the same argument, so the central shape has four equal sides and four right angles: it is a square of side c.
+
+### Step 2: Calculate the Area of the Large Square
+
+The large square has side length a + b, so its area is:
+
+Area = (a + b)²
+
+### Step 3: Calculate the Area of the Four Triangles
+
+The area of one right triangle is half the product of its legs:
+
+Area of one triangle = ab/2
+
+Four identical triangles therefore have a combined area of:
+
+4 × (ab/2) = 2ab
+
+### Step 4: Calculate the Central Square
+
+The central square has side length c, established in Step 1, so its area is:
+
+Area = c²
+
+### Step 5: Write the Area Equation
+
+The large square is exactly filled by the four triangles plus the central square, with no gaps and no overlaps. So the area of the large square equals the sum of the parts:
+
+(a + b)² = 2ab + c²
+
+Expand the left side:
+
+a² + 2ab + b² = 2ab + c²
+
+Subtract 2ab from both sides:
+
+**a² + b² = c²**
+
+### Step 6: Explain What the Proof Establishes
+
+Nothing in this argument used a specific triangle. The lengths a, b, and c were general throughout, and every step followed from area addition and angle sums that hold for any right triangle. The rearrangement therefore proves the theorem for all right triangles at once. It is a geometric proof of the Pythagorean theorem in the fullest sense: the argument is carried by the figure itself, and the algebra only records what the figure shows.
+
+Check it with numbers to see the areas balance. Take a = 3 and b = 4, so c = 5. The large square has side 7 and area 49. The four triangles each have area (3 × 4) / 2 = 6, giving 24 altogether. The central square has area 25. And 24 + 25 = 49, exactly the large square's area. The general equation (a + b)² = 2ab + c² is this same balance written for any legs at all. The diagram below shows the arrangement with labelled sides and the central square.
+
+![Four identical right triangles with legs a and b arranged inside a large square of side a + b, enclosing a central square of side c](/images/blog/pythagorean-theorem-proof-rearrangement.svg)
+
+## Pythagorean Theorem Proof Using Similar Triangles
+
+This proof uses similarity rather than area, making it the most algebraic proof of the three. It is shorter to write and it shows a different face of the theorem: the equation a² + b² = c² can be read as two proportions added together.
+
+### Step 1: Draw a Right Triangle
+
+Start with a right triangle with legs a and b and hypotenuse c. Draw an altitude from the right-angle vertex to the hypotenuse. The altitude meets the hypotenuse at a right angle and divides the original triangle into two smaller right triangles.
+
+The altitude also divides the hypotenuse into two segments. Call the segment next to leg a by the name x, and the segment next to leg b by the name y. Since the two segments make up the whole hypotenuse:
+
+x + y = c
+
+### Step 2: Identify the Similar Triangles
+
+The two smaller triangles are similar to the original triangle, and the reason is the angle-angle criterion. Each smaller triangle has a right angle, and each shares one acute angle with the original triangle. Two angles matching is enough: the third angles must match as well, since angles in any triangle sum to 180 degrees. So all three triangles, the original and the two smaller ones, are similar to each other, meaning their corresponding sides are in proportion.
+
+### Step 3: Establish the Proportions
+
+Take the smaller triangle that has leg a as its hypotenuse. It is similar to the original triangle, whose hypotenuse is c. The side of the smaller triangle lying along the original hypotenuse is the segment x, and it corresponds to leg a of the original triangle. Matching corresponding sides gives the proportion:
+
+a / c = x / a
+
+Cross-multiplying gives:
+
+a² = cx
+
+Now take the smaller triangle that has leg b as its hypotenuse. By the same reasoning, its side along the original hypotenuse is the segment y, corresponding to leg b:
+
+b / c = y / b
+
+Cross-multiplying gives:
+
+b² = cy
+
+These two equations are the heart of the proof. They were derived from similarity, not asserted, and each one connects one leg to its projection on the hypotenuse.
+
+### Step 4: Add the Equations
+
+Add the two results:
+
+a² + b² = cx + cy
+
+Factor out c on the right side:
+
+a² + b² = c(x + y)
+
+Since x + y = c:
+
+**a² + b² = c²**
+
+### Step 5: Explain the Geometric Meaning
+
+Like the rearrangement proof, this argument uses no specific numbers. The segments x and y, the legs a and b, and the hypotenuse c are general, and similarity holds for every right triangle. The proof also reveals something the area proof hides: each leg squared equals the hypotenuse multiplied by that leg's projection on it. The theorem is the sum of those two facts.
+
+Check it with the 3-4-5 triangle. Take leg a = 3, leg b = 4, and hypotenuse c = 5. The projections are x = a² / c = 9 / 5 = 1.8 and y = b² / c = 16 / 5 = 3.2. They sum to 1.8 + 3.2 = 5, which is c, as required. And a² + b² = 5 × 1.8 + 5 × 3.2 = 9 + 16 = 25 = c². The proportions hold exactly, not approximately, which is what a proof demands.
+
+![A right triangle with legs a and b and hypotenuse c, divided by an altitude into two smaller similar triangles, with hypotenuse segments x and y labelled](/images/blog/pythagorean-theorem-proof-similar.svg)
+
+## Pythagorean Theorem Proof Using the Garfield Trapezoid
+
+The third proof comes from James A. Garfield, who published it in 1876 while a member of Congress, in the New England Journal of Education. Garfield later became the 20th President of the United States, which makes him the only US President to have contributed an original proof in mathematics. His construction compares the area of a trapezoid computed two ways.
+
+### Step 1: Construct the Trapezoid
+
+Take two congruent right triangles with legs a and b and hypotenuse c. Arrange them so that their hypotenuses form two sides of a central triangle, with the triangles sitting at the two ends of a trapezoid. The trapezoid has parallel sides of lengths a and b, and the distance between those parallel sides, its height, is a + b.
+
+The central triangle deserves the same care as the rearrangement proof's central square. Its two sides are the hypotenuses of the two congruent triangles, so both have length c. The angle between them is a right angle: the two acute angles of a right triangle sum to 90 degrees, and they sit alongside the central angle on a straight line of 180 degrees, leaving 180 - 90 = 90 degrees. So the central triangle is a right triangle with legs c and c.
+
+### Step 2: Calculate the Trapezoid Area
+
+The area of a trapezoid is half the sum of its parallel sides multiplied by its height. Here the parallel sides are a and b and the height is a + b:
+
+Area = (1/2)(a + b)(a + b) = (a + b)²/2
+
+### Step 3: Calculate the Areas of the Three Triangles
+
+The trapezoid is exactly filled by three triangles. The two original right triangles each have area ab/2. The central right triangle has legs c and c, so its area is c²/2. Adding them:
+
+Total area = ab/2 + ab/2 + c²/2 = ab + c²/2
+
+### Step 4: Equate Both Area Expressions
+
+Both expressions measure the same trapezoid, so they are equal:
+
+(a + b)²/2 = ab + c²/2
+
+Multiply both sides by 2:
+
+(a + b)² = 2ab + c²
+
+Expand the left side:
+
+a² + 2ab + b² = 2ab + c²
+
+Subtract 2ab from both sides:
+
+**a² + b² = c²**
+
+This is a valid geometric area proof, independent of the other two. It uses the same area-comparison idea as the rearrangement proof but a different figure, which is why it counts as a genuinely separate proof rather than a restatement.
+
+Check it with numbers as well. Take a = 3 and b = 4, so c = 5. The trapezoid has parallel sides 3 and 4 and height 7, giving area (3 + 4) × 7 / 2 = 24.5. The three triangles give (3 × 4) / 2 + (3 × 4) / 2 + 25 / 2 = 6 + 6 + 12.5 = 24.5. Both routes agree, and the equation (a + b)² = 2ab + c² is that agreement written generally.
+
+![A trapezoid with parallel sides a and b and height a + b, divided into two right triangles of area ab/2 and a central right triangle of area c²/2](/images/blog/pythagorean-theorem-proof-garfield.svg)
+
+## Visualising Why a² + b² = c²
+
+Squares drawn on the sides of a right triangle turn the equation into a picture. Take the 3-4-5 triangle. The square on the side of length 3 has area 9. The square on the side of length 4 has area 16. The square on the hypotenuse of length 5 has area 25. And:
+
+9 + 16 = 25
+
+The picture makes the theorem feel obvious, but keep the distinction clear: side length and square area are different quantities. The side 3 is a length; the square on it has area 9. Students who blur that distinction often write 3 + 4 = 5, which is false, instead of 3² + 4² = 5², which is true. The theorem adds squares of lengths, never the lengths themselves.
+
+Also remember the status of this illustration. The 3-4-5 picture helps you see the theorem, but it does not replace the proofs above. It verifies one triangle; the proofs establish all of them. Use the picture to understand, and the proofs to be certain.
+
+Scaling the picture changes nothing. Double every side of the 3-4-5 triangle to get 6-8-10, and the squares become 36, 64, and 100, with 36 + 64 = 100. The same pattern repeats at any size, which is exactly what the proofs guarantee: the relationship is about the shape, not the measurements.
+
+## Pythagorean Theorem Examples With Solutions
+
+### Example 1: Finding the Hypotenuse
+
+Given a = 6 and b = 8, calculate c.
+
+Substitute into the theorem:
+
+6² + 8² = c²
+
+36 + 64 = c²
+
+c² = 100
+
+c = 10
+
+The hypotenuse is 10. The positive square root is the answer because a side length is a positive quantity; the negative root, -10, solves the equation algebraically but cannot be a length.
+
+### Example 2: Finding a Missing Leg
+
+A right triangle has hypotenuse 13 and one leg 5. Find the other leg.
+
+Let the unknown leg be b. Then:
+
+5² + b² = 13²
+
+25 + b² = 169
+
+b² = 169 - 25 = 144
+
+b = 12
+
+The missing leg is 12. Note the rearrangement: the unknown leg squared equals the hypotenuse squared minus the known leg squared. Subtracting in the other order, 25 - 169, would give a negative number with no square root, which is a quick signal that the subtraction is backwards.
+
+### Example 3: Using the Theorem in a Real-Life Problem
+
+A 10-metre ladder leans against a vertical wall, with its foot 6 metres from the base of the wall. Assuming the ground is flat and the wall is vertical, so the ladder, wall, and ground form a right triangle, how high up the wall does the ladder reach?
+
+The ladder is the hypotenuse, c = 10. The distance from the wall is one leg, a = 6. Let the height be b:
+
+6² + b² = 10²
+
+36 + b² = 100
+
+b² = 64
+
+b = 8
+
+The ladder reaches 8 metres up the wall. The assumptions matter: if the ground sloped or the wall leaned, the triangle would not be right-angled and the theorem would not apply.
+
+## Comparing Different Proofs of the Pythagorean Theorem
+
+| Proof method | Main mathematical concept | Key steps | Best suited for |
+|---|---|---|---|
+| Rearrangement proof | Area comparison | Four triangles in a large square; central square c²; expand (a + b)² | Visual learners; first proof to study |
+| Similar triangles proof | Triangle similarity and proportions | Altitude splits hypotenuse into x and y; a² = cx, b² = cy; add | Students comfortable with ratios |
+| Garfield trapezoid proof | Area comparison in a trapezoid | Trapezoid area two ways; central right triangle c²/2 | Students who liked the rearrangement proof |
+
+Different valid proofs of the Pythagorean theorem establish the same result using different mathematical ideas. That variety is a strength: if one proof's reasoning feels unclear, another proof's reasoning may click, and together they show the theorem from several directions at once. Garfield's proof is one of hundreds recorded over the centuries; Elisha Loomis's book The Pythagorean Proposition collects 370 of them, with Garfield's as the 231st. The three proofs in this guide are a starting set, not the whole collection.
+
+## Common Mistakes in Pythagorean Theorem Proofs
+
+### Confusing the Hypotenuse With One of the Legs
+
+The hypotenuse is the side opposite the right angle and the longest side. Labelling a leg as c breaks every step that follows. Before any proof or calculation, mark the right angle and name the side facing it as c.
+
+### Assuming the Theorem Works for Every Triangle
+
+The theorem is specific to right triangles. Applying a² + b² = c² to an acute or obtuse triangle gives a wrong answer, because the relationship between sides in those triangles is different. Check for the right angle first.
+
+### Treating a Numerical Example as a General Proof
+
+Showing 3² + 4² = 5² verifies one triangle. It does not prove the theorem, because infinitely many right triangles remain unchecked. A proof must use general lengths a, b, and c.
+
+### Forgetting to Square the Side Lengths
+
+Adding the lengths, a + b = c, is a common slip. The theorem adds squares of lengths: a² + b² = c². For the 3-4-5 triangle, 3 + 4 = 7, not 5, while 9 + 16 = 25, which is 5².
+
+### Confusing Side Lengths With Square Areas
+
+The number 9 in the 3-4-5 picture is an area, the square on the side of length 3, not a length itself. Mixing the two leads to statements like "the side is 9", which misreads the diagram and the equation.
+
+### Using Incorrect Area Formulas
+
+The area of a right triangle is half the product of its legs, ab/2, not ab. Forgetting the half doubles every triangle's area in the rearrangement and Garfield proofs and breaks the final equation.
+
+### Applying Triangle Similarity Without Identifying Corresponding Sides
+
+Similarity alone proves nothing until corresponding sides are matched. In the similar triangles proof, the proportion a/c = x/a works only because x is the side of the smaller triangle corresponding to leg a. Matching the wrong sides produces a false proportion.
+
+### Using the Theorem Itself as an Unjustified Step When Attempting to Prove It
+
+A proof of the theorem cannot assume the theorem. Any step that silently relies on a² + b² = c², such as claiming a length equals √(a² + b²) mid-proof, is circular reasoning. Each proof above avoids this: rearrangement and Garfield use only area addition, and similarity uses only proportions.
+
+## How the Pythagorean Theorem Connects to Coordinate Geometry
+
+The theorem is the reason the [distance formula](/blog/distance-formula/) works. Given two points (x₁, y₁) and (x₂, y₂), the horizontal difference x₂ - x₁ and the vertical difference y₂ - y₁ form the legs of a right triangle, and the straight-line distance between the points is its hypotenuse. Applying the theorem to that triangle gives:
+
+d = √((x₂ - x₁)² + (y₂ - y₁)²)
+
+Every distance calculation on a coordinate plane is therefore a hidden application of the Pythagorean theorem. Take the points (1, 2) and (4, 6). The horizontal difference is 4 - 1 = 3 and the vertical difference is 6 - 2 = 4, so the distance is √(3² + 4²) = √25 = 5. The two differences are the legs, the distance is the hypotenuse, and the calculation is the theorem in coordinate form. The same coordinate toolkit continues with the [midpoint formula](/blog/midpoint-formula/), which finds the centre point between two endpoints, and the [slope formula](/blog/slope-formula/), which measures a line's rate of change. The theorem is the foundation; the three formulas are its applications.
+
+## Can the Pythagorean Theorem Be Reversed?
+
+Yes, and the reversed statement is called the converse of the Pythagorean theorem. It says: if the side lengths of a triangle satisfy a² + b² = c², with c being the longest side, then the triangle is a right triangle, with the right angle opposite side c.
+
+A short numerical illustration: sides 6, 8, and 10 satisfy 6² + 8² = 36 + 64 = 100 = 10², so a triangle with those sides is right-angled. But the same caution applies as before: checking one example illustrates the converse; it does not prove it generally. The theorem and its converse are separate statements, and each needs its own proof. Our guide on telling whether a triangle is right-angled uses the converse as one of its tests.
+
+## Pythagorean Theorem Practice Questions
+
+Try these five questions in order. The first three test calculation; the last two test understanding of the proofs.
+
+1. A triangle has sides 5, 12, and 13. Which side is the hypotenuse, and how do you know?
+2. A right triangle has legs 9 and 40. Find the hypotenuse.
+3. A right triangle has hypotenuse 25 and one leg 7. Find the other leg.
+4. In the rearrangement proof, why is the central shape a square rather than just a four-sided figure?
+5. Why does the similar triangles proof work for every right triangle, not just the one drawn?
+
+### Answers
+
+1. The hypotenuse is 13. It is the longest side and the side opposite the right angle; also 5² + 12² = 25 + 144 = 169 = 13², which confirms it.
+2. c² = 9² + 40² = 81 + 1600 = 1681, so c = 41.
+3. Let the unknown leg be b: b² = 25² - 7² = 625 - 49 = 576, so b = 24.
+4. All four sides are hypotenuses of the congruent triangles, so all are length c. Each central angle is 180 - 90 = 90 degrees, because the two acute angles of a right triangle sum to 90 degrees and sit on a straight edge. Four equal sides and four right angles make a square.
+5. It uses no specific numbers. The altitude, the similarity, and the proportions a² = cx and b² = cy hold for general lengths a, b, and c, so the algebra a² + b² = c(x + y) = c² applies to any right triangle.
+
+<Faq heading="Frequently Asked Questions" description="Short answers to the questions students ask most about proving the Pythagorean theorem." items={[
+  {
+    "question": "What is the easiest proof of the Pythagorean theorem?",
+    "answer": "The rearrangement proof is usually the easiest to follow. Four identical right triangles are arranged inside a large square, and comparing the total area with the parts gives a² + b² = c² with only basic area formulas and no similarity."
+  },
+  {
+    "question": "How do you prove the Pythagorean theorem step by step?",
+    "answer": "Pick a method and follow its steps in order. In the rearrangement proof: arrange four triangles in a square of side a + b, note the central square has side c, write (a + b)² = 2ab + c², expand, and subtract 2ab to reach a² + b² = c²."
+  },
+  {
+    "question": "What is the geometric proof of the Pythagorean theorem?",
+    "answer": "A geometric proof uses figures and areas rather than only algebra. The rearrangement proof and the Garfield trapezoid proof are both geometric: they compare the area of a large figure computed two ways and read the theorem off the resulting equation."
+  },
+  {
+    "question": "Can the Pythagorean theorem be proved algebraically?",
+    "answer": "Yes. The similar triangles proof is largely algebraic: similarity gives the proportions a² = cx and b² = cy, and adding them with x + y = c produces a² + b² = c². The rearrangement proof also finishes with algebraic expansion and simplification."
+  },
+  {
+    "question": "How does the similar triangles proof work?",
+    "answer": "An altitude from the right angle splits the triangle into two smaller triangles, both similar to the original. Matching corresponding sides gives a² = cx and b² = cy, where x and y are the hypotenuse segments. Adding gives a² + b² = c(x + y) = c²."
+  },
+  {
+    "question": "Why is a² + b² equal to c²?",
+    "answer": "Because the areas of the squares on the two legs add up to the area of the square on the hypotenuse. All three proofs in this guide show that fact differently: rearrangement and Garfield by comparing areas, similarity by adding proportions."
+  },
+  {
+    "question": "Does the Pythagorean theorem work for all triangles?",
+    "answer": "No. It applies only to right triangles, where one angle is exactly 90 degrees. For acute or obtuse triangles the relationship between sides is different, and applying a² + b² = c² there gives wrong answers."
+  },
+  {
+    "question": "What is the Garfield proof of the Pythagorean theorem?",
+    "answer": "It is the proof published by James A. Garfield in 1876, while he was a member of Congress. A trapezoid with parallel sides a and b and height a + b is split into two triangles of area ab/2 and a central triangle of area c²/2, and equating the two area expressions gives a² + b² = c²."
+  },
+  {
+    "question": "What is the difference between verifying and proving the Pythagorean theorem?",
+    "answer": "Verifying checks the equation for specific triangles, such as 3² + 4² = 5². Proving establishes it for every right triangle at once, using general lengths a, b, and c and reasoning that does not depend on any particular triangle."
+  }
+]} />
+
+## Conclusion
+
+The Pythagorean theorem is a statement about right triangles only: the squares of the two legs add up to the square of the hypotenuse. Rearrangement shows it by comparing areas inside a large square, similar triangles show it by adding two proportions from an altitude, and Garfield's trapezoid shows it by computing one area two ways. Three different routes, one equation. Focus on the reasoning inside each proof rather than memorising the final line, because understanding why a² + b² = c² holds is what turns a formula into a tool you can trust and reuse.

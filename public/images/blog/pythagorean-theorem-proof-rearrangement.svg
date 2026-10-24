@@ -1,0 +1,21 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+  <rect x="200" y="60" width="490" height="490" fill="none" stroke="#64748b" stroke-width="2.5"/>
+  <polygon points="200,550 410,550 200,270" fill="rgba(56,189,248,0.15)" stroke="#38bdf8" stroke-width="2.5"/>
+  <polygon points="690,550 690,340 410,550" fill="rgba(56,189,248,0.15)" stroke="#38bdf8" stroke-width="2.5"/>
+  <polygon points="690,60 480,60 690,340" fill="rgba(56,189,248,0.15)" stroke="#38bdf8" stroke-width="2.5"/>
+  <polygon points="200,60 200,270 480,60" fill="rgba(56,189,248,0.15)" stroke="#38bdf8" stroke-width="2.5"/>
+  <polygon points="410,550 690,340 480,60 200,270" fill="rgba(250,204,21,0.15)" stroke="#facc15" stroke-width="3"/>
+  <text x="270" y="457" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#38bdf8" text-anchor="middle">ab/2</text>
+  <text x="445" y="312" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#facc15" text-anchor="middle">c²</text>
+  <text x="575" y="440" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#facc15" text-anchor="middle">c</text>
+  <text x="305" y="582" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#94a3b8" text-anchor="middle">a</text>
+  <text x="550" y="582" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#94a3b8" text-anchor="middle">b</text>
+  <text x="600" y="615" font-family="system-ui, sans-serif" font-size="20" fill="#94a3b8" text-anchor="middle">Large square side a + b, central square side c</text>
+</svg>

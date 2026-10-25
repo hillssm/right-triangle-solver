@@ -1,0 +1,335 @@
+---
+title: "Altitude to the Hypotenuse: Theorem, Formula, and Examples"
+description: "Learn the altitude to the hypotenuse theorem: h² = pq explained with a similar-triangles proof, solved examples, leg theorems, and practice problems."
+image: "/images/blog/altitude-hypotenuse-hero.svg"
+date: 2026-10-25
+author: "Math Expert"
+category: "Geometry"
+---
+
+import Faq from 'theme/components/Faq.astro';
+
+Draw an altitude from the right-angle corner of a right triangle to its hypotenuse, and something remarkable happens. The altitude splits the hypotenuse into two segments, and the length of the altitude is the geometric mean of those two segments. That is the whole theorem in one sentence, and it gives you a shortcut: when you know the two segments, you can find the altitude without first working out every side of the triangle. This guide explains what the theorem says, why it is true, how to use its formula, and how to avoid the mistakes students make most often.
+
+**Featured snippet answer:** The altitude to the hypotenuse theorem states that in a right triangle, the altitude drawn from the right angle to the hypotenuse is the geometric mean of the two segments it creates on the hypotenuse. If the segments are p and q and the altitude is h, then h² = pq, so h = √(pq).
+
+## What Is the Altitude to the Hypotenuse?
+
+The altitude of a triangle is a segment drawn from a vertex perpendicular to the opposite side. In a right triangle, the altitude from the right-angle vertex is special because it falls inside the triangle and lands on the hypotenuse, the longest side.
+
+Picture right triangle ABC, with the right angle at C:
+
+- **Angle C = 90°**, the right angle.
+- **AB = c**, the hypotenuse, opposite the right angle.
+- **D** = the foot of the perpendicular dropped from C onto AB. Point D is where the altitude meets the hypotenuse.
+- **CD = h**, the altitude to the hypotenuse.
+- **AD = p**, the first segment of the hypotenuse, next to vertex A.
+- **DB = q**, the second segment of the hypotenuse, next to vertex B.
+- **AB = c = p + q**, because the two segments together make up the whole hypotenuse.
+
+The altitude meets the hypotenuse at a 90-degree angle, so angle ADC and angle BDC are both right angles. Drawing CD divides the original triangle into two smaller right triangles, ACD and CBD. That division is the key to everything that follows, because those two smaller triangles turn out to be similar to the original triangle and to each other.
+
+![A right triangle ABC with right angle at C, altitude CD drawn to the hypotenuse AB, segments AD labelled p and DB labelled q, altitude labelled h, and hypotenuse labelled c](/images/blog/altitude-hypotenuse-diagram.svg)
+
+## What Is the Geometric Mean Theorem?
+
+The Geometric Mean Theorem, also called the Right Triangle Altitude Theorem, states:
+
+"The altitude drawn from the right-angle vertex of a right triangle to the hypotenuse is the geometric mean of the two segments into which it divides the hypotenuse."
+
+To understand that sentence, you need the geometric mean. For two nonnegative numbers p and q, the geometric mean is the square root of their product:
+
+**Geometric mean = √(pq)**
+
+Compare that with the ordinary (arithmetic) mean, which adds the numbers and divides by two. The geometric mean multiplies them and takes the square root instead. For example, the geometric mean of 9 and 16 is √(9 × 16) = √144 = 12, while the ordinary mean of 9 and 16 is 12.5. The two means are different ideas, and geometry problems always mean the geometric one when they say "mean" in this context.
+
+The theorem connects that definition to the triangle: the altitude h equals the geometric mean of the hypotenuse segments p and q. In symbols, h = √(pq).
+
+One warning matters here. The theorem applies only to the altitude drawn from the right angle to the hypotenuse of a right triangle. It does not apply to an altitude in an acute or obtuse triangle, and it does not apply to a segment drawn from an acute vertex. The right angle is what makes the smaller triangles similar, and similarity is what makes the theorem true.
+
+## Altitude to the Hypotenuse Formula
+
+The theorem gives two equivalent forms of one formula:
+
+**h² = pq**
+
+**h = √(pq)**
+
+Here h is the altitude to the hypotenuse, p is the first hypotenuse segment, and q is the second hypotenuse segment. Use h² = pq when you are setting up an equation or solving for a segment, because it avoids square roots until the last step. Use h = √(pq) when you want the altitude directly from two known segments.
+
+You can also rearrange the equation to find an unknown segment when you know the altitude and the other segment:
+
+**p = h²/q**
+
+**q = h²/p**
+
+These rearranged forms come from dividing both sides of h² = pq by q or by p. Segment lengths in a real triangle must be positive, so when algebra gives you a negative value for a segment, discard it. A triangle with a negative side length does not exist.
+
+| What you know | What you want | Formula to use |
+| --- | --- | --- |
+| Segments p and q | Altitude h | h = √(pq) |
+| Altitude h and segment q | Segment p | p = h²/q |
+| Altitude h and segment p | Segment q | q = h²/p |
+| Hypotenuse c and segment p | Segment q, then altitude | q = c − p, then h = √(pq) |
+| Hypotenuse c and segment q | Segment p, then altitude | p = c − q, then h = √(pq) |
+
+## Why Does the Geometric Mean Theorem Work?
+
+Before the formal proof, here is the intuition. The altitude creates three right triangles: the original ABC and the two smaller ones, ACD and CBD. All three share the same two acute angles, which makes them similar. Similar triangles have proportional sides, and one of those proportions is exactly the altitude theorem.
+
+Why do they share angles? Look at the original triangle ABC with acute angles A and B, which add to 90 degrees because the third angle is 90 degrees. In the smaller triangle ACD, angle A is the same angle A from the original, and angle D is 90 degrees, so the third angle, ACD, must be 90 degrees minus A, which equals B. In the smaller triangle CBD, angle B is the same angle B from the original, and angle D is 90 degrees, so the third angle, BCD, must equal A. Each small triangle therefore has angles A, B, and 90 degrees, exactly like the original. Same angles means similar triangles, and similar triangles give us the proportion we need.
+
+### Step-by-Step Proof Using Similar Triangles
+
+Use triangle ABC with the right angle at C and altitude CD drawn to the hypotenuse AB.
+
+**Step 1: Identify the three right triangles.** They are ABC (right angle at C), ACD (right angle at D), and CBD (right angle at D).
+
+**Step 2: Establish similarity using AA similarity.** AA similarity says that two triangles are similar when two pairs of corresponding angles are equal. Triangle ACD shares angle A with ABC and has a right angle at D matching the right angle at C, so ACD is similar to ABC. Triangle CBD shares angle B with ABC and has a right angle at D, so CBD is similar to ABC. Since both small triangles are similar to ABC, they are similar to each other: ACD is similar to CBD.
+
+**Step 3: Match corresponding sides correctly.** This step is where most proof errors happen, so go slowly. In triangle ACD, the side opposite angle A is CD, the altitude. In triangle CBD, the side opposite angle A (which sits at vertex C in that triangle) is BD, the segment q. So CD in one triangle corresponds to BD in the other. In triangle ACD, the side opposite angle B (which sits at vertex C in that triangle) is AD, the segment p. In triangle CBD, the side opposite angle B is CD, the altitude. So AD in one triangle corresponds to CD in the other.
+
+**Step 4: Write the proportion.** Corresponding sides of similar triangles are proportional, so:
+
+CD/BD = AD/CD
+
+**Step 5: Cross-multiply.** Multiplying both sides by BD and by CD gives:
+
+CD² = AD × BD
+
+**Step 6: Substitute the labels.** CD = h, AD = p, and BD = q, so:
+
+h² = pq
+
+That is the theorem. The altitude squared equals the product of the two hypotenuse segments, which is the same as saying the altitude is the geometric mean of the segments.
+
+![Three similar right triangles shown side by side: the original ABC, the smaller ACD, and the smaller CBD, with matching acute angles marked](/images/blog/altitude-hypotenuse-similar.svg)
+
+## How to Find the Altitude to the Hypotenuse
+
+Follow these six steps in order.
+
+**Step 1: Identify the right triangle and the altitude.** Confirm the triangle has a right angle and that the segment in question runs from the right-angle vertex perpendicular to the hypotenuse. If either condition fails, the theorem does not apply.
+
+**Step 2: Find the lengths of the two hypotenuse segments.** You need p and q, not the whole hypotenuse. If you are given the whole hypotenuse c and one segment, subtract to get the other segment first.
+
+**Step 3: Write the formula h² = pq.**
+
+**Step 4: Substitute the known values.**
+
+**Step 5: Take the positive square root.** Lengths are positive, so take the positive root only.
+
+**Step 6: Check the calculation and include units if given.** A quick check: the altitude must be shorter than either leg of the original triangle. If your answer is longer than a leg, something went wrong.
+
+**Quick example.** A right triangle has hypotenuse segments of 9 cm and 16 cm. Find the altitude. Write h² = 9 × 16 = 144, then h = √144 = 12 cm. The altitude is 12 cm.
+
+## Solved Examples of the Geometric Mean Theorem
+
+### Example 1: Find the Altitude
+
+**Given:** p = 9 cm, q = 16 cm.
+**Find:** h.
+
+**Formula:** h = √(pq).
+**Substitution:** h = √(9 × 16) = √144.
+**Calculation:** √144 = 12.
+**Answer:** h = 12 cm.
+
+Each step is short because the formula does the work. Multiply the segments, then take the square root.
+
+### Example 2: Find a Missing Hypotenuse Segment
+
+**Given:** h = 12 cm, p = 8 cm.
+**Find:** q.
+
+**Formula:** Start from h² = pq and rearrange to q = h²/p.
+**Substitution:** q = 12²/8 = 144/8.
+**Calculation:** 144/8 = 18.
+**Answer:** q = 18 cm.
+**Verification:** Check with the original formula: p × q = 8 × 18 = 144 = 12². The check passes, so the answer is consistent.
+
+### Example 3: Find the Altitude When the Hypotenuse and One Segment Are Known
+
+**Given:** c = 25 cm, p = 9 cm.
+**Find:** h.
+
+**Formula:** First find q, then use h = √(pq).
+**Substitution:** The two segments add up to the hypotenuse, so q = c − p = 25 − 9 = 16 cm. Then h = √(9 × 16) = √144.
+**Calculation:** √144 = 12.
+**Answer:** h = 12 cm.
+
+Subtraction is necessary here because the theorem needs the two segments, not the whole hypotenuse. Plugging 25 straight into the formula would give the wrong answer.
+
+### Example 4: Solve a Problem with a Decimal Answer
+
+**Given:** p = 5 cm, q = 7 cm.
+**Find:** h.
+
+**Formula:** h = √(pq).
+**Substitution:** h = √(5 × 7) = √35.
+**Calculation:** 35 is not a perfect square, so the exact answer is √35 cm. For a decimal, √35 ≈ 5.92 cm, rounded to two decimal places.
+**Answer:** Exact form √35 cm, approximately 5.92 cm.
+
+Use the exact radical form in algebra and on exams that ask for exact answers. Use the rounded decimal when a measurement or a practical answer is needed, and say how many decimal places you rounded to.
+
+### Example 5: Algebraic Geometric Mean Problem
+
+**Given:** The altitude to the hypotenuse is 12 cm. The hypotenuse segments are x cm and (x + 7) cm.
+**Find:** x and both segments.
+
+**Formula:** h² = pq, so 12² = x(x + 7).
+**Substitution and expansion:** 144 = x² + 7x, which rearranges to x² + 7x − 144 = 0.
+**Calculation:** Factor: (x + 16)(x − 9) = 0, so x = −16 or x = 9. A segment length cannot be negative, so discard x = −16 and keep x = 9.
+**Answer:** x = 9. The segments are 9 cm and 16 cm.
+**Verification:** 9 × 16 = 144 = 12². The answer checks out, and it matches Example 1, which is a good sign that the algebra is consistent.
+
+![A worked right triangle with hypotenuse segments 9 cm and 16 cm and altitude 12 cm, fully labelled](/images/blog/altitude-hypotenuse-example.svg)
+
+## Relationship Between the Altitude and the Legs of a Right Triangle
+
+The altitude theorem has two companion results, the leg geometric mean theorems. Using the same triangle ABC with altitude CD:
+
+**AC² = AB × AD, or AC² = cp**
+
+**BC² = AB × DB, or BC² = cq**
+
+In words, each leg is the geometric mean of the hypotenuse and the segment of the hypotenuse next to that leg. The leg AC sits next to segment AD (p), so AC² = c × p. The leg BC sits next to segment DB (q), so BC² = c × q.
+
+The difference between the altitude theorem and the leg theorems is what each one relates. The altitude theorem relates the altitude to the two segments: h² = pq. A leg theorem relates one leg to the hypotenuse and its adjacent segment: leg² = hypotenuse × adjacent segment. Students mix these up more than any other part of this topic, so always ask first: am I finding the altitude, or am I finding a leg?
+
+The three formulas work together, and a single triangle must satisfy all three at once. Here is a numerical example with consistent dimensions. Take a right triangle with legs AC = 9 cm and BC = 12 cm. The hypotenuse is c = √(9² + 12²) = √225 = 15 cm. The segments are p = AC²/c = 81/15 = 5.4 cm and q = BC²/c = 144/15 = 9.6 cm. Check that p + q = 5.4 + 9.6 = 15 = c. The altitude from the area formula is h = (9 × 12)/15 = 7.2 cm. Check the altitude theorem: p × q = 5.4 × 9.6 = 51.84, and 7.2² = 51.84. All three formulas agree on the same triangle, which is exactly what should happen.
+
+## Altitude to the Hypotenuse vs. Pythagorean Theorem
+
+Both theorems describe right triangles, but they answer different questions.
+
+| | Altitude to the Hypotenuse Theorem | Pythagorean Theorem |
+| --- | --- | --- |
+| Purpose | Relate the altitude to the hypotenuse segments | Relate the three sides of the triangle |
+| Required information | The two hypotenuse segments, or the altitude and one segment | Any two of the three sides |
+| Formula | h² = pq | a² + b² = c² |
+| Typical application | Find an altitude or a missing segment when the hypotenuse is split | Find a missing side when two sides are known |
+| Works for | Right triangles with an altitude to the hypotenuse | All right triangles |
+
+The Pythagorean theorem relates the three sides: the squares of the legs add up to the square of the hypotenuse. The altitude theorem relates the altitude to the two hypotenuse segments: the square of the altitude equals the product of the segments. Neither replaces the other.
+
+A short example shows when each method is more useful. Suppose a right triangle has hypotenuse segments 9 cm and 16 cm, and you need the altitude. The altitude theorem gives it in one step: h = √(9 × 16) = 12 cm. The Pythagorean theorem cannot do that directly, because you do not know any leg yet. But if instead you know the legs are 9 cm and 12 cm and you need the hypotenuse, the Pythagorean theorem gives c = √(81 + 144) = 15 cm in one step, while the altitude theorem has nothing to work with until the hypotenuse is split. Choose the theorem that matches the information you actually have.
+
+## Common Mistakes Students Make
+
+**1. Confusing the altitude with a leg.** The altitude CD is not a side of the original triangle; it is a segment drawn inside it. The legs are AC and BC. If your "altitude" is one of the original sides, you have picked the wrong segment. Fix: check that your segment starts at the right-angle vertex and meets the hypotenuse at 90 degrees.
+
+**2. Applying the formula to the wrong segments.** The formula multiplies the two pieces of the hypotenuse, p and q. It does not multiply a leg by a segment or a segment by the whole hypotenuse. Fix: label p and q on the hypotenuse first, before writing any numbers.
+
+**3. Forgetting to take the square root.** Students often stop at h² = 144 and answer 144. The altitude is h, not h², so the last step is always a square root: h = √144 = 12. Fix: read the question again after computing h² and ask whether it asks for h or h².
+
+**4. Using the whole hypotenuse instead of its two segments.** Given c = 25 cm and one segment, students sometimes multiply 25 by the segment. The theorem needs p and q separately. Fix: subtract first (q = c − p), then multiply.
+
+**5. Mixing up the altitude theorem and leg theorems.** If the question asks for a leg, h² = pq is the wrong formula; use leg² = hypotenuse × adjacent segment instead. Fix: decide before calculating whether the unknown is the altitude or a leg.
+
+**6. Ignoring units or reporting an invalid negative length.** Answers need the units from the question, such as cm, and a length can never be negative. If algebra gives a negative segment, discard it and keep the positive value. Fix: write units in every step and reject negative lengths as non-physical.
+
+## Practice Problems on Altitude to the Hypotenuse
+
+Try these without looking at the key first. All values are chosen so the answers come out clean, except where a radical is the point.
+
+### Beginner: Find the Altitude from Two Segments
+
+1. p = 4 cm, q = 9 cm. Find h.
+2. p = 16 cm, q = 25 cm. Find h.
+3. p = 7 cm, q = 28 cm. Find h.
+
+### Intermediate: Find Missing Segments
+
+4. h = 15 cm, p = 9 cm. Find q.
+5. c = 65 cm, p = 16 cm. Find h.
+6. c = 50 cm, q = 32 cm. Find h.
+
+### Advanced: Algebra and Combined Relationships
+
+7. The hypotenuse segments are x cm and 4x cm, and the altitude is 6 cm. Find x and both segments.
+8. A right triangle has hypotenuse c = 25 cm and segment p = 9 cm. Find the altitude and both legs.
+
+### Answer Key
+
+1. h = √(4 × 9) = √36 = 6 cm.
+2. h = √(16 × 25) = √400 = 20 cm.
+3. h = √(7 × 28) = √196 = 14 cm.
+4. q = h²/p = 225/9 = 25 cm.
+5. q = 65 − 16 = 49 cm, so h = √(16 × 49) = √784 = 28 cm.
+6. p = 50 − 32 = 18 cm, so h = √(18 × 32) = √576 = 24 cm.
+7. h² = x × 4x = 4x² = 36, so x² = 9 and x = 3 (discarding the negative root). The segments are 3 cm and 12 cm.
+8. q = 25 − 9 = 16 cm, h = √(9 × 16) = 12 cm. Legs: AC = √(c × p) = √225 = 15 cm, BC = √(c × q) = √400 = 20 cm. Check: 15² + 20² = 225 + 400 = 625 = 25².
+
+## Where Is the Geometric Mean Theorem Used?
+
+The theorem matters most inside geometry itself. It is a standard part of geometry education because it ties together three big ideas: right triangles, similarity, and proportional reasoning. A student who can prove h² = pq from similarity understands all three ideas better than a student who only memorised the formula.
+
+It also helps calculate unknown distances. Surveying and construction both use right-triangle relationships to find lengths that cannot be measured directly, and the altitude theorem is one tool in that kit. For example, when a roof truss or a support frame forms a right triangle with a known altitude to its hypotenuse, the segment relationships give the remaining lengths without rebuilding the whole triangle from scratch. The key point is proportion: once two parts are known, the theorem fills in a third.
+
+In mathematical problem-solving, the theorem shows up wherever a right triangle is split by its altitude, including in coordinate geometry and in proofs. Recognising the split is the skill. Whenever you see a right triangle with an altitude drawn to the hypotenuse, the three formulas (altitude and both legs) are available, and one of them usually solves the problem.
+
+## Tips for Remembering the Geometric Mean Theorem
+
+The memory hook is short: the altitude is the geometric mean of the two hypotenuse segments. Say it as a sentence, not as symbols, and the formula follows: mean means multiply and square-root, so h = √(pq).
+
+A second hook: the altitude is the middle term in a proportion. The proportion CD/BD = AD/CD has the altitude on both sides of the equality, once on top and once on the bottom. Cross-multiplying gives CD² = AD × BD. If you can write that proportion from the similar triangles, you can rebuild the formula even if you forget it.
+
+**Quick revision checklist:**
+
+- Confirm the triangle is a right triangle and the segment is the altitude to the hypotenuse.
+- Label p and q on the hypotenuse, and h on the altitude.
+- If you know p and q, use h = √(pq).
+- If you know h and one segment, use the rearranged form for the other segment.
+- If you know the whole hypotenuse and one segment, subtract first.
+- If the unknown is a leg, switch to the leg theorem, not the altitude theorem.
+- Check the answer: the altitude must be shorter than either leg, and lengths are positive with units.
+
+**How to recognise a relevant problem:** look for a right triangle with an altitude drawn to the hypotenuse, or for a problem that gives you two hypotenuse segments and asks for something inside the triangle. Either clue means the geometric mean relationships are in play.
+
+<Faq heading="Frequently Asked Questions" description="Short answers to the questions students ask most about the altitude to the hypotenuse theorem." items={[
+  {
+    "question": "What is the altitude to the hypotenuse theorem?",
+    "answer": "It states that the altitude drawn from the right-angle vertex of a right triangle to the hypotenuse is the geometric mean of the two segments it creates on the hypotenuse. If the segments are p and q and the altitude is h, then h² = pq."
+  },
+  {
+    "question": "What is the formula for altitude to the hypotenuse?",
+    "answer": "The formula is h² = pq, or equivalently h = √(pq), where h is the altitude and p and q are the two segments of the hypotenuse. Rearranged, p = h²/q and q = h²/p let you find a missing segment."
+  },
+  {
+    "question": "Why is the altitude the geometric mean?",
+    "answer": "Because the altitude creates three similar right triangles. Matching corresponding sides of the two smaller triangles gives the proportion CD/BD = AD/CD, and cross-multiplying produces CD² = AD × BD, which is exactly the geometric mean relationship."
+  },
+  {
+    "question": "How do you calculate the altitude of a right triangle?",
+    "answer": "First confirm the segment is the altitude from the right angle to the hypotenuse. Then find the two hypotenuse segments p and q, multiply them, and take the positive square root: h = √(pq). If you know the whole hypotenuse and one segment, subtract first to get the other segment."
+  },
+  {
+    "question": "Does the Geometric Mean Theorem work for every triangle?",
+    "answer": "No. It works only for a right triangle with an altitude drawn from the right-angle vertex to the hypotenuse. In acute or obtuse triangles the smaller triangles are not similar in the same way, so the relationship h² = pq does not hold."
+  },
+  {
+    "question": "How is the theorem related to similar triangles?",
+    "answer": "The theorem is a direct consequence of similarity. The altitude splits the original right triangle into two smaller right triangles, and all three share the same acute angles. Proportional sides of the two smaller triangles give CD/BD = AD/CD, which cross-multiplies to the theorem."
+  },
+  {
+    "question": "What is the difference between the altitude theorem and the leg theorem?",
+    "answer": "The altitude theorem relates the altitude to the two segments: h² = pq. A leg theorem relates one leg to the hypotenuse and its adjacent segment: AC² = cp and BC² = cq. Use the altitude formula for the altitude and the leg formulas for the legs."
+  },
+  {
+    "question": "Can you use the theorem to find a missing hypotenuse segment?",
+    "answer": "Yes. Rearrange h² = pq to solve for the unknown segment: p = h²/q or q = h²/p. For example, with h = 12 cm and p = 8 cm, q = 144/8 = 18 cm. Always verify by checking that p × q equals h²."
+  },
+  {
+    "question": "What happens if the two hypotenuse segments are equal?",
+    "answer": "If p = q, then h = √(p²) = p, so the altitude equals each segment. This happens in an isosceles right triangle, where the altitude to the hypotenuse also bisects it into two equal parts and the triangle is symmetric about the altitude."
+  },
+  {
+    "question": "How is the Geometric Mean Theorem different from the Pythagorean Theorem?",
+    "answer": "The Pythagorean theorem relates the three sides of a right triangle: a² + b² = c². The Geometric Mean Theorem relates the altitude to the hypotenuse segments: h² = pq. Use Pythagoras when you know two sides; use the altitude theorem when the hypotenuse is split and you need the altitude or a segment."
+  }
+]} />
+
+## Conclusion
+
+The altitude to the hypotenuse theorem says one clean thing: in a right triangle, the altitude from the right angle is the geometric mean of the two segments it creates on the hypotenuse, h² = pq. It is true because the altitude splits the triangle into three similar right triangles, and their proportional sides produce the formula. Label p and q correctly, subtract when you are given the whole hypotenuse, and switch to the leg theorems when the unknown is a leg. With those habits, the theorem becomes a reliable shortcut rather than another formula to memorise, and it is a strong foundation for the similarity problems you will meet next in geometry.

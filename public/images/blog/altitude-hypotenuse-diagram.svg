@@ -1,0 +1,12 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/><stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+<polygon points="400,500 1000,500 616,212" fill="none" stroke="#38bdf8" stroke-width="3.5"/><line x1="616" y1="212" x2="616" y2="500" stroke="#facc15" stroke-width="3" stroke-dasharray="8 6"/><path d="M 638 234 L 638 256 L 616 256" fill="none" stroke="#94a3b8" stroke-width="2"/><path d="M 594 478 L 594 500 L 616 500" fill="none" stroke="#94a3b8" stroke-width="2"/><circle cx="400" cy="500" r="9" fill="#38bdf8"/><circle cx="1000" cy="500" r="9" fill="#38bdf8"/><circle cx="616" cy="212" r="9" fill="#38bdf8"/><circle cx="616" cy="500" r="9" fill="#facc15"/><text x="372" y="512" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">A</text><text x="1028" y="512" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">B</text><text x="616" y="192" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">C</text><text x="644" y="512" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">D</text><text x="590" y="360" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#facc15" text-anchor="middle">h</text><text x="508" y="535" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">p</text><text x="808" y="535" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">q</text><text x="700" y="575" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">c</text><text x="470" y="330" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#38bdf8" text-anchor="middle">b</text><text x="850" y="330" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#38bdf8" text-anchor="middle">a</text></svg>

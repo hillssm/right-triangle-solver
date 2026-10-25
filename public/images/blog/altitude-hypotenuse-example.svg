@@ -1,0 +1,12 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/><stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+<polygon points="300,500 700,500 444,308" fill="none" stroke="#38bdf8" stroke-width="3.5"/><line x1="444" y1="308" x2="444" y2="500" stroke="#facc15" stroke-width="3" stroke-dasharray="8 6"/><path d="M 466 330 L 466 352 L 444 352" fill="none" stroke="#94a3b8" stroke-width="2"/><path d="M 422 478 L 422 500 L 444 500" fill="none" stroke="#94a3b8" stroke-width="2"/><circle cx="300" cy="500" r="9" fill="#38bdf8"/><circle cx="700" cy="500" r="9" fill="#38bdf8"/><circle cx="444" cy="308" r="9" fill="#38bdf8"/><circle cx="444" cy="500" r="9" fill="#facc15"/><text x="272" y="512" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">A</text><text x="728" y="512" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">B</text><text x="444" y="288" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">C</text><text x="472" y="512" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">D</text><text x="420" y="410" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#facc15" text-anchor="middle">h = 12 cm</text><text x="372" y="535" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">p = 9 cm</text><text x="572" y="535" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">q = 16 cm</text><text x="500" y="575" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">c = 25 cm</text><text x="600" y="100" font-family="system-ui, sans-serif" font-size="32" font-weight="700" fill="#ffffff" text-anchor="middle">h² = 9 × 16 = 144, so h = 12 cm</text></svg>

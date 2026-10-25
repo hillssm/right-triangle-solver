@@ -1,0 +1,12 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/><stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+<polygon points="350,480 688,480 400,360" fill="none" stroke="#38bdf8" stroke-width="3.5"/><line x1="400" y1="360" x2="519" y2="480" stroke="#facc15" stroke-width="3.5"/><path d="M 422 382 L 422 404 L 400 404" fill="none" stroke="#94a3b8" stroke-width="2"/><circle cx="350" cy="480" r="9" fill="#38bdf8"/><circle cx="688" cy="480" r="9" fill="#38bdf8"/><circle cx="400" cy="360" r="9" fill="#38bdf8"/><circle cx="519" cy="480" r="9" fill="#facc15"/><line x1="434" y1="469" x2="434" y2="491" stroke="#facc15" stroke-width="3"/><line x1="604" y1="469" x2="604" y2="491" stroke="#facc15" stroke-width="3"/><line x1="467" y1="412" x2="452" y2="428" stroke="#facc15" stroke-width="3"/><text x="322" y="492" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">A</text><text x="716" y="492" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">B</text><text x="400" y="340" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">C</text><text x="519" y="514" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">M</text><text x="430" y="300" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#facc15" text-anchor="middle">median</text><text x="519" y="445" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">hypotenuse</text></svg>

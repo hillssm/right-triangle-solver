@@ -1,0 +1,12 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/><stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+<circle cx="600" cy="450" r="250" fill="none" stroke="#94a3b8" stroke-width="2.5"/><polygon points="350,450 850,450 450,250" fill="none" stroke="#38bdf8" stroke-width="3.5"/><line x1="450" y1="250" x2="600" y2="450" stroke="#facc15" stroke-width="3.5"/><line x1="350" y1="450" x2="600" y2="450" stroke="#4ade80" stroke-width="2.5" stroke-dasharray="8 6"/><line x1="850" y1="450" x2="600" y2="450" stroke="#4ade80" stroke-width="2.5" stroke-dasharray="8 6"/><circle cx="350" cy="450" r="9" fill="#38bdf8"/><circle cx="850" cy="450" r="9" fill="#38bdf8"/><circle cx="450" cy="250" r="9" fill="#38bdf8"/><circle cx="600" cy="450" r="9" fill="#facc15"/><text x="322" y="462" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">A</text><text x="878" y="462" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">B</text><text x="450" y="230" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">C</text><text x="600" y="484" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">M = center</text><text x="600" y="110" font-family="system-ui, sans-serif" font-size="32" font-weight="700" fill="#ffffff" text-anchor="middle">Hypotenuse AB is the diameter</text><text x="600" y="580" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#facc15" text-anchor="middle">MA = MB = MC = radius</text></svg>

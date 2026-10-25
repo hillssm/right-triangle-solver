@@ -1,0 +1,12 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/><stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+<text x="600" y="95" font-family="system-ui, sans-serif" font-size="40" font-weight="700" fill="#ffffff" text-anchor="middle">Median to the Hypotenuse Theorem</text><text x="600" y="150" font-family="system-ui, sans-serif" font-size="38" font-weight="700" fill="#facc15" text-anchor="middle">CM = AB/2</text><polygon points="300,500 900,500 516,212" fill="none" stroke="#38bdf8" stroke-width="3.5"/><line x1="516" y1="212" x2="600" y2="500" stroke="#facc15" stroke-width="3.5"/><path d="M 538 234 L 538 256 L 516 256" fill="none" stroke="#94a3b8" stroke-width="2"/><circle cx="300" cy="500" r="9" fill="#38bdf8"/><circle cx="900" cy="500" r="9" fill="#38bdf8"/><circle cx="516" cy="212" r="9" fill="#38bdf8"/><circle cx="600" cy="500" r="9" fill="#facc15"/><line x1="450" y1="489" x2="450" y2="511" stroke="#facc15" stroke-width="3"/><line x1="750" y1="489" x2="750" y2="511" stroke="#facc15" stroke-width="3"/><line x1="569" y1="353" x2="547" y2="359" stroke="#facc15" stroke-width="3"/><text x="272" y="512" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">A</text><text x="928" y="512" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">B</text><text x="516" y="192" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">C</text><text x="600" y="534" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">M</text></svg>

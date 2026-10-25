@@ -1,0 +1,384 @@
+---
+title: "Median to the Hypotenuse Theorem"
+description: "Learn the median to the hypotenuse theorem: the median from the right angle equals half the hypotenuse, with two proofs, examples, the converse, and practice."
+image: "/images/blog/median-hypotenuse-hero.svg"
+date: 2026-10-25
+author: "Math Expert"
+category: "Geometry"
+---
+
+import Faq from 'theme/components/Faq.astro';
+
+A right triangle has a property that surprises most students the first time they see it. Draw a segment from the right-angle corner to the midpoint of the hypotenuse, and that segment is exactly half as long as the hypotenuse. For a right triangle with a hypotenuse of 10 cm, the median to the hypotenuse measures 5 cm. No other measurement is needed, and no trigonometry is involved. This guide explains what the median to the hypotenuse means, how to use its formula, why the theorem works, how it connects to the circumcircle, and how to solve problems with it.
+
+**Featured snippet answer:** The median to the hypotenuse theorem states that in a right triangle, the median drawn from the right-angle vertex to the midpoint of the hypotenuse equals half the hypotenuse. If the hypotenuse is c and the median is m, then m = c/2, and the midpoint is equally distant from all three vertices.
+
+## What Is a Median in a Triangle?
+
+A median is a line segment joining a vertex of a triangle to the midpoint of its opposite side. The midpoint cuts the opposite side into two equal segments, so a median always lands exactly halfway along the side it meets.
+
+Four segments from a vertex are easy to confuse. Here is how they differ:
+
+| Segment | Definition | Does it form a right angle? | Does it split the opposite side in half? |
+| --- | --- | --- | --- |
+| Median | Vertex to midpoint of opposite side | Not necessarily | Yes, always |
+| Altitude | Vertex perpendicular to opposite side | Yes, always | Not necessarily |
+| Angle bisector | Vertex splitting the angle into two equal angles | Not necessarily | Not necessarily |
+| Perpendicular bisector | Perpendicular line through the midpoint of a side | Yes, but it is not drawn from a vertex | It passes through the midpoint |
+
+A median divides the opposite side into two equal segments but does not necessarily form a right angle. That distinction matters for this whole article: the median to the hypotenuse is usually not perpendicular to the hypotenuse, and treating it as if it were is one of the most common errors students make.
+
+Every triangle has three medians, one from each vertex. They all meet at a single point called the centroid. In this article, though, only one median matters: the one drawn from the right angle to the hypotenuse.
+
+## What Is the Median to the Hypotenuse?
+
+Take right triangle ABC, with the right angle at C:
+
+- **Angle C = 90°**, the right angle.
+- **AB = hypotenuse**, the side opposite the right angle.
+- **M = midpoint of AB**, so AM = MB.
+- **CM = median to the hypotenuse**, the segment from the right-angle vertex C to the midpoint M.
+
+The median starts at the right-angle vertex C and meets the hypotenuse at its midpoint M. The special property of this median is that CM, AM, and MB are all equal in length. The midpoint M is equally distant from all three vertices, which is a property no other point on the hypotenuse has.
+
+This equality applies to the median drawn to the hypotenuse of a right triangle. In a non-right triangle, the median to a side is generally not equal to half that side. The right angle is what makes the theorem true, and the proofs below show why.
+
+![A right triangle ABC with right angle at C, midpoint M on hypotenuse AB, median CM drawn, and equal-length markings on AM, MB, and CM](/images/blog/median-hypotenuse-diagram.svg)
+
+## Statement of the Median to the Hypotenuse Theorem
+
+The formal statement is:
+
+"In a right triangle, the median drawn from the right-angle vertex to the midpoint of the hypotenuse is equal to half the length of the hypotenuse."
+
+In plain language: find the midpoint of the longest side, draw a segment from the right-angle corner to that midpoint, and the segment you drew is exactly half as long as the longest side.
+
+Using triangle ABC, where angle C = 90° and M is the midpoint of AB:
+
+**CM = AM = BM = AB/2**
+
+Each symbol means: CM is the median, AM and MB are the two halves of the hypotenuse created by the midpoint, and AB/2 is half the whole hypotenuse. The chain of equalities says all three segments have the same length, and each one is half the hypotenuse.
+
+The midpoint of the hypotenuse being equally distant from all three vertices is the deeper fact behind the formula. It means M is the center of the circle passing through A, B, and C, which is the circumcircle discussed later in this guide.
+
+## Median to the Hypotenuse Theorem Formula
+
+The main formula is short:
+
+**m = c/2**
+
+Here m is the length of the median to the hypotenuse, and c is the length of the hypotenuse. The rearranged form solves the reverse problem:
+
+**c = 2m**
+
+Use m = c/2 when you know the hypotenuse and need the median. Use c = 2m when you know the median and need the hypotenuse. A simple calculation shows the idea: if the hypotenuse measures 14 cm, then m = 14/2 = 7 cm.
+
+| Formula | What it finds | When to use it |
+| --- | --- | --- |
+| m = c/2 | Median to the hypotenuse | Hypotenuse known, median unknown |
+| c = 2m | Hypotenuse | Median known, hypotenuse unknown |
+| c = √(a² + b²) then m = c/2 | Median from two legs | Hypotenuse unknown, legs known |
+| R = c/2 | Circumradius | Circumcircle radius of a right triangle |
+
+This relationship is specific to the median to the hypotenuse of a right triangle. It does not say that every median is half its opposite side. In an acute or obtuse triangle, the median to a side is generally some other length, and only the right angle produces this clean halving.
+
+## Why Is the Median to the Hypotenuse Half the Hypotenuse?
+
+Before the formal proofs, here is the intuition. The midpoint of the hypotenuse is the center of the circumcircle of the right triangle. A circumcircle is a circle passing through all three vertices of a triangle, and its center is called the circumcenter. For a right triangle, the hypotenuse is a diameter of this circumcircle, which means the hypotenuse passes through the center and has the center as its midpoint.
+
+That gives the result directly. If M is the center of the circle and A, B, and C all lie on the circle, then MA, MB, and MC are all radii of the same circle, so they are equal. Since AB is a diameter, it is twice any radius, so AB = 2 × MC, which means MC = AB/2.
+
+The proofs below make this rigorous instead of just plausible. The first proof uses coordinates and the distance formula. The second proves that the midpoint really is the circumcenter, using perpendicular bisectors, so the argument does not assume what it is trying to prove.
+
+## Step-by-Step Proof of the Median to the Hypotenuse Theorem
+
+### Proof 1: Using Coordinates and the Pythagorean Theorem
+
+Place the triangle on a coordinate grid. Put C at (0, 0), A at (a, 0), and B at (0, b), where a and b are positive numbers. The right angle is at C because the legs run along the two axes, which are perpendicular.
+
+**Step 1: Find the midpoint M of the hypotenuse AB.** The midpoint formula averages the coordinates: M = ((a + 0)/2, (0 + b)/2) = (a/2, b/2).
+
+**Step 2: Calculate CM with the distance formula.** CM = √((a/2 − 0)² + (b/2 − 0)²) = √(a²/4 + b²/4) = √(a² + b²)/2.
+
+**Step 3: Calculate AB with the Pythagorean Theorem.** The legs are a and b, so AB = √(a² + b²).
+
+**Step 4: Compare.** CM = √(a² + b²)/2 and AB = √(a² + b²), so CM = AB/2. The median is half the hypotenuse, exactly as claimed.
+
+No step assumes the result. The midpoint formula, the distance formula, and the Pythagorean Theorem are all established independently, and the conclusion follows from algebra alone.
+
+### Proof 2: Using the Circumcenter and Perpendicular Bisectors
+
+This proof shows that the midpoint of the hypotenuse is the circumcenter, the center of the circle through all three vertices.
+
+Every triangle has a circumcenter: the point where the perpendicular bisectors of its sides meet. A perpendicular bisector is a line that cuts a side in half at a right angle, and every point on it is equally distant from that side's two endpoints.
+
+Use the same coordinate placement: C at (0, 0), A at (a, 0), B at (0, b). The perpendicular bisector of CA is the vertical line x = a/2, because CA runs from (0, 0) to (a, 0) and its midpoint is (a/2, 0). The perpendicular bisector of CB is the horizontal line y = b/2, because CB runs from (0, 0) to (0, b) and its midpoint is (0, b/2). These two bisectors meet at (a/2, b/2), which is exactly M, the midpoint of the hypotenuse. So M is the circumcenter.
+
+Since M is the circumcenter, MA, MB, and MC are all radii of the same circumcircle, so MA = MB = MC. And since M is the midpoint of AB, AB is twice any of those radii: AB = 2 × MC. Therefore MC = AB/2.
+
+This also explains the connection with Thales' theorem from the other direction. Thales' theorem says that an angle inscribed in a semicircle is a right angle, which is consistent with what we just proved: the hypotenuse serves as a diameter, and the right-angle vertex lies on the circle. The proof above does not rely on Thales' theorem, so there is no circular reasoning; Thales' theorem simply confirms the same picture.
+
+![A right triangle inscribed in a circle with hypotenuse AB as the diameter, center M, and equal radii MA, MB, and MC marked](/images/blog/median-hypotenuse-circumcircle.svg)
+
+## How to Find the Median to the Hypotenuse
+
+Follow these six steps.
+
+**Step 1: Identify the right triangle.** Confirm one angle is exactly 90 degrees. If the triangle is not right-angled, this theorem does not apply.
+
+**Step 2: Locate the hypotenuse opposite the 90-degree angle.** The hypotenuse is the longest side, facing the right angle.
+
+**Step 3: Determine the hypotenuse length.** If it is given, use it directly. If only the two legs are given, first use the Pythagorean Theorem: c = √(a² + b²).
+
+**Step 4: Apply m = c/2.**
+
+**Step 5: Calculate the median length.**
+
+**Step 6: Include the correct measurement units.** If the hypotenuse is in centimetres, the median is in centimetres too.
+
+**Worked example.** A right triangle has legs 9 cm and 12 cm. Find the median to the hypotenuse. First find the hypotenuse: c = √(81 + 144) = √225 = 15 cm. Then apply the formula: m = 15/2 = 7.5 cm. The median is 7.5 cm.
+
+## Solved Examples of the Median to the Hypotenuse Theorem
+
+### Example 1: Find the Median from the Hypotenuse
+
+**Given:** Hypotenuse = 18 cm.
+**Find:** m.
+**Formula:** m = c/2.
+**Substitution:** m = 18/2.
+**Answer:** m = 9 cm. The answer is half the hypotenuse because the midpoint of the hypotenuse is equally distant from all three vertices, and the hypotenuse is twice the median.
+
+### Example 2: Find the Hypotenuse from the Median
+
+**Given:** Median = 7 cm.
+**Find:** c.
+**Formula:** c = 2m.
+**Substitution:** c = 2 × 7.
+**Answer:** c = 14 cm. This is the reverse direction of the same relationship: doubling the median rebuilds the full hypotenuse.
+
+### Example 3: Find the Median Using the Pythagorean Theorem
+
+**Given:** A right triangle with legs 6 cm and 8 cm.
+**Find:** m.
+**Step 1:** Find the hypotenuse: c = √(6² + 8²) = √(36 + 64) = √100 = 10 cm.
+**Step 2:** Apply the median formula: m = 10/2.
+**Answer:** m = 5 cm. The 6-8-10 triangle is a scaled 3-4-5 triangle, and its median of 5 cm is a clean reminder that the median is half the hypotenuse, not half a leg.
+
+### Example 4: Find the Median with Decimal Measurements
+
+**Given:** Hypotenuse = 15.6 cm.
+**Find:** m.
+**Formula:** m = c/2.
+**Substitution:** m = 15.6/2.
+**Answer:** m = 7.8 cm. Handle decimals the same way as whole numbers: halve the value and keep the same number of decimal places as the measurement warrants. Do not round until the final step if more calculation follows.
+
+### Example 5: Algebraic Median Problem
+
+**Given:** Median = x + 3, hypotenuse = 4x − 2.
+**Find:** x, the median, and the hypotenuse.
+**Equation:** The theorem gives c = 2m, so 4x − 2 = 2(x + 3).
+**Solution:** Expand the right side: 4x − 2 = 2x + 6. Subtract 2x from both sides: 2x − 2 = 6. Add 2: 2x = 8. Divide: x = 4.
+**Substitution:** Median = 4 + 3 = 7. Hypotenuse = 4 × 4 − 2 = 14.
+**Verification:** 2 × 7 = 14, which matches the hypotenuse. The answer checks out.
+
+### Example 6: Geometry Problem Involving Equal Segments
+
+**Given:** Right triangle ABC with angle C = 90° and M as the midpoint of AB. CM = 11 cm.
+**Find:** AM, MB, and AB.
+**Reasoning:** M is the midpoint, so AM = MB. The theorem says CM = AB/2, and the midpoint is equally distant from all three vertices, so AM = MB = CM.
+**Answer:** AM = 11 cm, MB = 11 cm, AB = 22 cm. All three segments from M to the vertices have the same length because M is the circumcenter: AM, MB, and CM are radii of one circle.
+
+![A right triangle with hypotenuse 10 cm, median 5 cm, and midpoint segments of 5 cm each, with equal-length markings](/images/blog/median-hypotenuse-example.svg)
+
+## Properties of the Median to the Hypotenuse
+
+### The Median Is Half the Hypotenuse
+
+This is the central length relationship: m = c/2. It is the property students use most, and every other property below either explains it or follows from it.
+
+### The Midpoint Is Equidistant from All Three Vertices
+
+MA = MB = MC. The midpoint M is equally distant from A, B, and C. This is why the median equals each half of the hypotenuse: all three segments are radii of the circumcircle.
+
+### The Midpoint Is the Circumcenter
+
+The circumcenter is the center of the circle passing through all three vertices of a triangle. In a right triangle, the circumcenter is the midpoint of the hypotenuse. That is unusual: in an acute triangle the circumcenter lies inside the triangle, and in an obtuse triangle it lies outside. In a right triangle it sits exactly on the hypotenuse, at its midpoint.
+
+### The Median Divides the Triangle into Two Equal-Area Triangles
+
+Any median divides a triangle into two regions of equal area, because the two smaller triangles share the same height from C and have equal bases AM and MB. Area is half base times height, so equal bases with a shared height give equal areas. Note that the two smaller triangles are not necessarily congruent: they share the median and have equal bases, but their other sides (AC versus BC) generally differ. Equal area does not mean identical shape.
+
+### The Median Is Not Usually an Altitude
+
+The median to the hypotenuse is generally not perpendicular to the hypotenuse, so it is generally not an altitude. The altitude from the right angle meets the hypotenuse at a right angle at some point D, while the median meets it at the midpoint M, and D and M are usually different points. The special case is the isosceles right triangle, where the two legs are equal: then symmetry forces the median from the right angle to also be perpendicular to the hypotenuse and to bisect the right angle, so the median, altitude, and angle bisector are all the same segment.
+
+## Converse of the Median to the Hypotenuse Theorem
+
+The converse reverses the direction of the theorem. It states: if a median from a vertex to the opposite side equals half that side, then the angle at that vertex is a right angle.
+
+Using triangle ABC, where M is the midpoint of AB: if CM = AB/2, then angle C = 90°.
+
+Here is why. M is the midpoint, so AM = BM = AB/2. Together with the assumption CM = AB/2, this gives MA = MB = MC. That means A, B, and C all lie on a circle centered at M, with AB as its diameter (since AB passes through the center M and has endpoints on the circle). By Thales' theorem, an angle inscribed in a semicircle is a right angle, so angle C, which subtends the diameter AB, is 90°.
+
+**Numerical example.** In triangle ABC, M is the midpoint of AB, AB = 20 cm, and CM = 10 cm. Since CM = 20/2 = AB/2, the converse applies, and angle C = 90°. The triangle is right-angled at C even though no angle was given. This is how the converse is used in practice: a length condition reveals an angle.
+
+## Median to the Hypotenuse vs. Altitude to the Hypotenuse
+
+These two segments both start at the right-angle vertex and both meet the hypotenuse, but they are different segments with different properties.
+
+| | Median to the hypotenuse | Altitude to the hypotenuse |
+| --- | --- | --- |
+| Definition | Segment from the right-angle vertex to the midpoint of the hypotenuse | Segment from the right-angle vertex perpendicular to the hypotenuse |
+| Starting vertex | Right-angle vertex C | Right-angle vertex C |
+| Endpoint on the hypotenuse | Midpoint M | Foot of perpendicular D |
+| Whether perpendicularity is required | No | Yes, by definition |
+| Main formula | m = c/2 | h² = pq (geometric mean of the hypotenuse segments) |
+| Geometric purpose | Connects to the circumcenter and the half-hypotenuse length | Splits the triangle into similar triangles and gives the geometric mean relationship |
+
+The median connects the right-angle vertex to the midpoint of the hypotenuse. The altitude connects the right-angle vertex perpendicularly to the hypotenuse. The median and altitude coincide in an isosceles right triangle, but generally not in other right triangles. In a scalene right triangle, the altitude foot D and the midpoint M are different points, and the median is longer than the altitude.
+
+The altitude geometric mean formula, h² = pq, is a separate result: the altitude squared equals the product of the two hypotenuse segments p and q. Do not confuse it with the median formula m = c/2. One involves a product of segments, the other a simple halving, and they answer different questions.
+
+![Side-by-side comparison of the same scalene right triangle: on the left the median drawn to the midpoint M, on the right the altitude drawn perpendicular to the hypotenuse at D](/images/blog/median-vs-altitude.svg)
+
+## Median to the Hypotenuse and the Circumcircle
+
+The circumcircle, circumcenter, hypotenuse, diameter, radius, and median are all tied together in a right triangle.
+
+- **Circumcircle:** the circle passing through all three vertices.
+- **Circumcenter:** the center of that circle, which for a right triangle is the midpoint of the hypotenuse.
+- **Hypotenuse:** the diameter of the circumcircle.
+- **Diameter:** twice the radius, so the hypotenuse is twice the circumradius.
+- **Radius:** the distance from the circumcenter to any vertex.
+- **Median:** the segment from the right-angle vertex to the circumcenter, which is itself a radius.
+
+The circumradius of a right triangle equals half its hypotenuse:
+
+**R = c/2**
+
+And since the median is also a radius:
+
+**m = R**
+
+**Numerical example.** A right triangle has hypotenuse 24 cm. Its circumradius is R = 24/2 = 12 cm, and its median to the hypotenuse is also m = 12 cm. The circumcenter lies on the hypotenuse rather than inside the triangle because the hypotenuse is a diameter: the center of a circle lies on any diameter, and here the diameter is a side of the triangle itself.
+
+## Real-World Applications of the Median to the Hypotenuse Theorem
+
+The theorem is used most in geometric constructions. To draw the circumcircle of a right triangle, find the midpoint of the hypotenuse and use it as the center; the radius is half the hypotenuse. That construction needs no angle measurement and no extra tools beyond a straightedge and compass.
+
+It simplifies circumcircle calculations: the circumradius of a right triangle is half the hypotenuse, so any problem asking for the circumradius is really asking for the median. It helps with triangle classification through the converse: if a median equals half its side, the triangle is right-angled at that vertex, which classifies the triangle without measuring an angle.
+
+It appears in mathematical proofs wherever a right triangle's midpoint matters, and it solves unknown-length problems in one step when the hypotenuse or median is known. In coordinate geometry, it gives a fast check: for a right triangle with vertices at (0, 0), (a, 0), and (0, b), the midpoint of the hypotenuse is (a/2, b/2), and its distance from the origin must equal half the hypotenuse, which verifies both the midpoint formula and the theorem at once.
+
+## Common Mistakes Students Make
+
+**1. Confusing a median with an altitude.** A student draws the perpendicular from the right angle and calls it the median. The median goes to the midpoint, not necessarily at a right angle. Fix: mark the midpoint first, then draw to it.
+
+**2. Forgetting that the triangle must be right-angled.** Applying m = c/2 to an acute triangle gives a wrong answer, because the midpoint property depends on the right angle. Fix: confirm the 90-degree angle before using the formula.
+
+**3. Dividing the wrong side by two.** Halving a leg instead of the hypotenuse is a common slip, especially when the hypotenuse is not horizontal in the diagram. Fix: identify the hypotenuse first; it is the side opposite the right angle and the longest side.
+
+**4. Using a leg instead of the hypotenuse.** Similar to the previous mistake: the formula needs c, the hypotenuse, not a or b. Fix: label all three sides before substituting.
+
+**5. Assuming every median is half its opposite side.** This holds only for the median to the hypotenuse of a right triangle. The medians from the acute vertices are different lengths. Fix: check which vertex the median comes from.
+
+**6. Misidentifying the midpoint.** Picking a point that looks central but is not exactly halfway gives a segment that is not the median and does not satisfy the theorem. Fix: verify the two halves are equal, or compute the midpoint from the endpoints.
+
+**7. Mixing up the median theorem with the geometric mean theorem.** The median formula is m = c/2, a halving. The altitude formula is h² = pq, a product of segments. Using one where the other belongs gives a wrong answer. Fix: ask whether the unknown is a median or an altitude.
+
+**8. Forgetting measurement units.** An answer of 7 without units is incomplete when the question gives centimetres. Fix: carry the units from the hypotenuse into the median.
+
+## Practice Problems on the Median to the Hypotenuse Theorem
+
+### Beginner Level
+
+1. A right triangle has hypotenuse 26 cm. Find the median to the hypotenuse.
+2. The median to the hypotenuse of a right triangle is 9 cm. Find the hypotenuse.
+3. A right triangle has hypotenuse 15 cm. Find the median to the hypotenuse.
+4. The median to the hypotenuse of a right triangle is 12.5 cm. Find the hypotenuse.
+
+### Intermediate Level
+
+5. A right triangle has legs 9 cm and 12 cm. Find the median to the hypotenuse.
+6. In a right triangle, the median is 2x + 1 and the hypotenuse is 6x − 2 (in centimetres). Find x, the median, and the hypotenuse.
+7. In right triangle ABC with right angle at C, M is the midpoint of AB and CM = 13 cm. Find AM, MB, and AB.
+
+### Advanced Level
+
+8. In triangle ABC, M is the midpoint of AB, AB = 20 cm, and CM = 10 cm. What can you conclude about angle C? Justify your answer.
+9. A right triangle has hypotenuse 24 cm. Find its circumradius and its median to the hypotenuse.
+10. A right triangle has vertices C = (0, 0), A = (9, 0), and B = (0, 12). Find the midpoint of the hypotenuse and verify that its distance from C equals half the hypotenuse.
+
+### Answer Key
+
+1. m = 26/2 = 13 cm.
+2. c = 2 × 9 = 18 cm.
+3. m = 15/2 = 7.5 cm.
+4. c = 2 × 12.5 = 25 cm.
+5. c = √(81 + 144) = 15 cm, so m = 15/2 = 7.5 cm.
+6. 2(2x + 1) = 6x − 2 gives 4x + 2 = 6x − 2, so x = 2. Median = 5 cm, hypotenuse = 10 cm.
+7. AM = 13 cm, MB = 13 cm, AB = 26 cm.
+8. CM = AB/2, so by the converse, angle C = 90°. The triangle is right-angled at C.
+9. Circumradius R = 24/2 = 12 cm. Median m = R = 12 cm.
+10. Midpoint M = (4.5, 6). Distance from C: √(4.5² + 6²) = √56.25 = 7.5 cm. Hypotenuse = √(81 + 144) = 15 cm, and half of it is 7.5 cm. Verified.
+
+## Tips for Remembering the Median to the Hypotenuse Theorem
+
+The memory hook is short: the median from the right-angle vertex reaches the midpoint of the longest side and is exactly half the length of that side. Say it as a sentence, and the formula m = c/2 follows on its own.
+
+**Quick revision checklist:**
+
+- Identify the right angle.
+- Locate the hypotenuse.
+- Find its midpoint.
+- Draw the median from the right-angle vertex.
+- Use the half-hypotenuse relationship.
+
+**Exam preparation tips:** always mark the midpoint on the diagram before calculating, because most errors come from drawing to the wrong point. If a problem gives you a median, immediately double it to get the hypotenuse; if it gives you the hypotenuse, immediately halve it for the median. When a problem mentions a circle through the vertices of a right triangle, think of the hypotenuse midpoint as the center. And when a problem asks whether a triangle is right-angled, check whether a median equals half its side: that is the converse doing its work.
+
+<Faq heading="Frequently Asked Questions" description="Short answers to the questions students ask most about the median to the hypotenuse theorem." items={[
+  {
+    "question": "What is the Median to the Hypotenuse Theorem?",
+    "answer": "It states that in a right triangle, the median drawn from the right-angle vertex to the midpoint of the hypotenuse equals half the hypotenuse. If the hypotenuse is c and the median is m, then m = c/2, and the midpoint is equally distant from all three vertices."
+  },
+  {
+    "question": "What is the formula for the median to the hypotenuse?",
+    "answer": "The formula is m = c/2, where m is the median and c is the hypotenuse. Rearranged, c = 2m finds the hypotenuse from the median. If only the legs are known, find the hypotenuse first with the Pythagorean Theorem, then halve it."
+  },
+  {
+    "question": "Why is the median to the hypotenuse half the hypotenuse?",
+    "answer": "Because the midpoint of the hypotenuse is the circumcenter of the right triangle. The hypotenuse is a diameter of the circumcircle, so the midpoint is the center, and the median is a radius. A radius is half a diameter, so the median is half the hypotenuse."
+  },
+  {
+    "question": "Does the theorem work for every triangle?",
+    "answer": "No. It works only for right triangles, and only for the median drawn from the right-angle vertex to the hypotenuse. In acute or obtuse triangles, the median to a side is generally not half that side, because the midpoint is not the circumcenter."
+  },
+  {
+    "question": "How do you find the median of a right triangle?",
+    "answer": "Confirm the triangle is right-angled, identify the hypotenuse opposite the right angle, and halve its length: m = c/2. If the hypotenuse is unknown but both legs are given, calculate it first with c = √(a² + b²), then halve the result."
+  },
+  {
+    "question": "What is the difference between a median and an altitude?",
+    "answer": "A median joins a vertex to the midpoint of the opposite side, while an altitude joins a vertex perpendicularly to the opposite side. In a right triangle, the median to the hypotenuse goes to the midpoint M, while the altitude meets the hypotenuse at a right angle at a different point D, except in an isosceles right triangle."
+  },
+  {
+    "question": "What is the converse of the Median to the Hypotenuse Theorem?",
+    "answer": "If a median from a vertex to the opposite side equals half that side, then the angle at that vertex is a right angle. For example, if M is the midpoint of AB and CM = AB/2, then angle C = 90°, because A, B, and C lie on a circle with AB as diameter."
+  },
+  {
+    "question": "How is the theorem related to the circumcenter?",
+    "answer": "The midpoint of the hypotenuse is the circumcenter of a right triangle. The perpendicular bisectors of the legs meet there, and it is equally distant from all three vertices. The median to the hypotenuse is therefore a radius of the circumcircle, equal to half the hypotenuse."
+  },
+  {
+    "question": "Can the median to the hypotenuse be perpendicular to the hypotenuse?",
+    "answer": "Yes, but only in one case: the isosceles right triangle. There, symmetry forces the median from the right angle to also be perpendicular to the hypotenuse and to bisect the right angle. In a scalene right triangle, the median and altitude are different segments meeting the hypotenuse at different points."
+  },
+  {
+    "question": "Is the median to the hypotenuse equal to the circumradius?",
+    "answer": "Yes. The circumradius R of a right triangle is half the hypotenuse, R = c/2, and the median m is also c/2, so m = R. For example, a right triangle with hypotenuse 24 cm has circumradius 12 cm and median 12 cm."
+  }
+]} />
+
+## Conclusion
+
+The median to the hypotenuse theorem says one clean thing: in a right triangle, the median from the right angle to the midpoint of the hypotenuse equals half the hypotenuse, m = c/2. The midpoint matters because it is the circumcenter, equally distant from all three vertices, with the hypotenuse as the diameter of the circumcircle. That single fact gives you the formula, its converse, and the circumradius in one stroke. Keep the median distinct from the altitude, mark the midpoint before you calculate, and this theorem becomes one of the fastest tools in right-triangle geometry.

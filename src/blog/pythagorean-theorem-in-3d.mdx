@@ -1,0 +1,446 @@
+---
+title: "Pythagorean Theorem in 3D: Finding the Space Diagonal"
+description: "Learn the Pythagorean Theorem in 3D: find the space diagonal of a rectangular prism or cube with d = √(l² + w² + h²), full derivation, examples, and practice."
+image: "/images/blog/pythagorean-3d-hero.svg"
+date: 2026-10-25
+author: "Math Expert"
+category: "Geometry"
+---
+
+import Faq from 'theme/components/Faq.astro';
+
+Take a rectangular box and pick two opposite corners, one on the floor at the front and one at the ceiling at the back. The shortest straight line between them runs through the inside of the box, and it is longer than any edge and longer than any diagonal on a single face. Measuring the length, width, and height one at a time does not give you that line directly. You need a formula that combines all three measurements, and that formula comes from using the Pythagorean Theorem twice. This guide explains what a space diagonal is, derives the 3D formula step by step, and shows you how to use it on boxes, cubes, rooms, and coordinate problems.
+
+**Featured snippet answer:** The Pythagorean Theorem in 3D states that the space diagonal d of a rectangular prism with length l, width w, and height h satisfies d² = l² + w² + h², so d = √(l² + w² + h²). It works by applying the ordinary Pythagorean Theorem twice: once for a face diagonal, then again with the height.
+
+## What Is the Pythagorean Theorem?
+
+The traditional Pythagorean Theorem applies to a right triangle, a triangle with one angle of exactly 90 degrees. It states:
+
+**a² + b² = c²**
+
+Here a is the first perpendicular leg, b is the second perpendicular leg, and c is the hypotenuse, the side opposite the right angle. The two legs meet at the right angle, and the hypotenuse faces it.
+
+The hypotenuse is always the longest side of a right triangle. That follows from the formula itself: since c² = a² + b², and both a² and b² are positive, c² is larger than either a² or b² alone, so c is larger than either leg. It also makes sense from angles: the hypotenuse faces the largest angle (90 degrees), and the longest side always faces the largest angle.
+
+A simple numerical example shows the pattern. Take a right triangle with legs 3 and 4. Then c² = 3² + 4² = 9 + 16 = 25, so c = 5. The 3-4-5 triangle is the most famous right triangle, and it will reappear in this guide as the base of a 3-4-12 box.
+
+This familiar two-dimensional relationship leads directly to the three-dimensional version. A rectangular box has three perpendicular directions instead of two, so the same idea, applied twice, produces a formula with three squared terms instead of two.
+
+## What Is the Pythagorean Theorem in 3D?
+
+The three-dimensional extension works with three perpendicular directions: length, width, and height. In a rectangular prism, these three edges meet at each corner at right angles, exactly like the two legs of a right triangle meet at a right angle, except now there are three of them.
+
+The formula is:
+
+**d² = l² + w² + h²**
+
+And therefore:
+
+**d = √(l² + w² + h²)**
+
+Here d is the space diagonal, l is the length, w is the width, and h is the height. All three measurements must be mutually perpendicular, as they are in a rectangular prism or a cube. If the edges do not meet at right angles, this formula does not apply, and you need a different method.
+
+Why are three squares added? Think of it as two applications of the 2D theorem. First, length and width combine on the base to give a face diagonal. Then that face diagonal and the height combine as the two legs of a second right triangle, whose hypotenuse is the space diagonal. Each application adds one more squared term, so the final formula has three.
+
+## What Is a Space Diagonal in 3D Geometry?
+
+A space diagonal is a straight line segment joining two opposite vertices of a rectangular prism and passing through its interior. "Opposite" here means the two vertices share no edge and no face: one is at the bottom front of the box and the other at the top back, for example. Every rectangular prism has four space diagonals, and all four have the same length.
+
+Three terms are easy to confuse, so keep them separate:
+
+- **Edge:** a line where two faces meet, such as the length, width, or height of the box. An edge runs along the outside of the solid.
+- **Face diagonal:** a line joining opposite corners of one rectangular face, such as the diagonal across the bottom of the box. A face diagonal lies flat on one face.
+- **Space diagonal:** a line joining opposite vertices of the whole solid, passing through the interior. It touches no face along its length except at its two endpoints.
+
+| Geometric element | Meaning | Typical location | Relevant formula |
+| --- | --- | --- | --- |
+| Edge | Side of the solid where two faces meet | Along the outside | Given measurement (l, w, or h) |
+| Face diagonal | Diagonal across one rectangular face | Flat on one face | f = √(l² + w²) |
+| Space diagonal | Segment joining opposite vertices through the interior | Through the inside of the solid | d = √(l² + w² + h²) |
+
+The space diagonal represents the shortest straight-line distance between opposite vertices. Any other path between those two corners, such as walking along edges or across faces, is longer, because a straight line is always the shortest route between two points.
+
+![An isometric rectangular prism with length, width, and height labelled, a face diagonal on the base, and the space diagonal running through the interior](/images/blog/pythagorean-3d-prism.svg)
+
+## 3D Pythagorean Theorem Formula Explained
+
+The main formula is:
+
+**d = √(l² + w² + h²)**
+
+Each variable has a fixed meaning: d is the space diagonal, l is the length, w is the width, and h is the height. The order of the three dimensions does not matter, because addition is commutative: l² + w² + h² gives the same sum no matter which term you write first.
+
+Before using the main formula, it helps to meet the face diagonal formula:
+
+**f = √(l² + w²)**
+
+The face diagonal f lies on one rectangular face, usually the base. It connects to the space diagonal through a second right triangle:
+
+**d = √(f² + h²)**
+
+That second equation says: take the face diagonal as one leg and the height as the other leg, and the hypotenuse of that triangle is the space diagonal. Combining the two equations produces the main formula, because f² = l² + w², so d² = f² + h² = l² + w² + h².
+
+The geometry behind this is worth picturing. The face diagonal and the height form the legs of a right triangle whose hypotenuse is the space diagonal. The face diagonal runs flat along the base, the height runs straight up, and they meet at a right angle at the corner where the base meets the vertical edge. The space diagonal then leans from the opposite base corner up to the top corner, closing the triangle.
+
+| Formula | What it finds | When to use it |
+| --- | --- | --- |
+| f = √(l² + w²) | Face diagonal | When you need a diagonal on one face |
+| d = √(f² + h²) | Space diagonal from face diagonal and height | When you already know the face diagonal |
+| d = √(l² + w² + h²) | Space diagonal from all three edges | The standard direct formula |
+| d = s√3 | Space diagonal of a cube | When all edges equal s |
+| l = √(d² − w² − h²) | Missing length | When the diagonal and two edges are known |
+
+## How to Derive the 3D Pythagorean Theorem Step by Step
+
+The derivation uses a rectangular prism and applies the 2D theorem twice. Follow each stage and check that the triangle in each stage is genuinely a right triangle.
+
+### Step 1: Identify the Rectangular Prism
+
+Start with a rectangular prism with length l, width w, and height h. These three dimensions are perpendicular to one another: length runs one way along the base, width runs across the base at a right angle to the length, and height runs straight up at a right angle to both. Every corner of the prism is a right-angled corner in all three directions, and that perpendicularity is what makes the derivation work.
+
+### Step 2: Find the Base Diagonal
+
+Look at the rectangular base alone. It is a rectangle with sides l and w, and its diagonal f splits it into two right triangles. Apply the 2D Pythagorean Theorem to one of those triangles:
+
+f² = l² + w²
+
+Therefore:
+
+f = √(l² + w²)
+
+The face diagonal is now known in terms of the length and width.
+
+### Step 3: Construct Another Right Triangle
+
+Now look inside the prism. Take the base diagonal f and the vertical height h. They meet at a corner of the base at a right angle, because the height is perpendicular to the base. So f and h are the two legs of a new right triangle that stands inside the prism. The hypotenuse of this triangle runs from the far end of the base diagonal up to the top corner, and that hypotenuse is exactly the space diagonal d.
+
+### Step 4: Apply the Pythagorean Theorem Again
+
+Apply the theorem to this interior triangle:
+
+d² = f² + h²
+
+Substitute the expression for f² from Step 2:
+
+d² = l² + w² + h²
+
+### Step 5: Solve for the Space Diagonal
+
+Take the nonnegative square root of both sides. Lengths are positive, so only the positive root makes sense:
+
+d = √(l² + w² + h²)
+
+That completes the proof. Using the theorem twice works because each application is valid on its own: the base is a genuine rectangle, and the interior triangle is a genuine right triangle. The 3D formula is not a new law of geometry; it is the old theorem used twice in a row.
+
+![Three panels showing the derivation: a rectangular prism with its base highlighted, the base rectangle with its face diagonal, and the interior right triangle with legs f and h and hypotenuse d](/images/blog/pythagorean-3d-derivation.svg)
+
+## How to Find the Space Diagonal of a Rectangular Prism
+
+Use this six-step method for any rectangular prism.
+
+**Step 1: Identify the length, width, and height.** Label the three edges clearly. It does not matter which edge you call length and which you call width, as long as you use all three.
+
+**Step 2: Confirm the dimensions meet at right angles.** The formula assumes a rectangular prism or cube, where every corner is square. If the solid is slanted or has non-right angles, stop and use a different method.
+
+**Step 3: Write the formula.** d = √(l² + w² + h²).
+
+**Step 4: Square all three dimensions.** Square each edge separately before adding. Squaring after adding is the most common error in this topic.
+
+**Step 5: Add the squares and calculate the positive square root.** Add the three squares, then take the positive root.
+
+**Step 6: State the answer with appropriate units and rounding.** Keep the units from the question. Give an exact radical when the question asks for one, and a rounded decimal otherwise, stating how many places you rounded to.
+
+All dimensions must use the same unit before calculation. If the length is in metres and the width is in centimetres, convert one of them first.
+
+**Short example.** A box measures 3 cm by 4 cm by 12 cm. Then d = √(9 + 16 + 144) = √169 = 13 cm. Notice how the 3-4-5 triangle from the base (3-4-5) extends into a clean 3-4-12-13 result in 3D.
+
+## Step-by-Step Examples of the 3D Pythagorean Theorem
+
+### Example 1: Finding the Diagonal of a Rectangular Box
+
+**Given:** Length = 3 cm, width = 4 cm, height = 12 cm.
+**Find:** d.
+
+**Formula:** d = √(l² + w² + h²).
+**Substitution:** d = √(3² + 4² + 12²) = √(9 + 16 + 144).
+**Calculation:** 9 + 16 + 144 = 169, and √169 = 13.
+**Answer:** d = 13 cm.
+
+Each step is visible: square each edge, add, then root. The base diagonal here is 5 cm (the 3-4-5 triangle), and the interior triangle with legs 5 and 12 gives the space diagonal 13, which is another way to see the same calculation.
+
+### Example 2: Finding the Space Diagonal of a Cube
+
+**Given:** Side length = 6 cm.
+**Find:** d.
+
+**Formula:** For a cube, all three dimensions are equal, so d = √(s² + s² + s²) = √(3s²) = s√3.
+**Substitution:** d = 6√3 cm.
+**Calculation:** √3 ≈ 1.732, so 6 × 1.732 ≈ 10.39.
+**Answer:** Exact form 6√3 cm, approximately 10.39 cm.
+
+All three dimensions are equal in a cube because every edge of a cube has the same length, so l = w = h = s. That is why the three squared terms collapse into 3s².
+
+### Example 3: Finding a Space Diagonal with Decimal Dimensions
+
+**Given:** Length = 2.5 cm, width = 4.2 cm, height = 6.1 cm.
+**Find:** d.
+
+**Formula:** d = √(l² + w² + h²).
+**Substitution:** d = √(2.5² + 4.2² + 6.1²) = √(6.25 + 17.64 + 37.21).
+**Calculation:** 6.25 + 17.64 + 37.21 = 61.10, and √61.10 ≈ 7.82.
+**Answer:** d ≈ 7.82 cm, rounded to two decimal places.
+
+Keep full precision through the addition and round only at the end. Rounding the squares early would shift the final answer.
+
+### Example 4: Finding the Height When the Space Diagonal Is Known
+
+**Given:** Space diagonal = 13 cm, length = 3 cm, width = 4 cm.
+**Find:** h.
+
+**Formula:** Rearrange d² = l² + w² + h² to h = √(d² − l² − w²).
+**Substitution:** h = √(13² − 3² − 4²) = √(169 − 9 − 16).
+**Calculation:** 169 − 9 − 16 = 144, and √144 = 12.
+**Answer:** h = 12 cm.
+**Check:** Put the answer back into the original formula: √(3² + 4² + 12²) = √169 = 13 cm, which matches the given diagonal. The check passes.
+
+### Example 5: Finding the Length of a Rectangular Prism
+
+**Given:** Space diagonal = 25 cm, width = 15 cm, height = 12 cm.
+**Find:** l.
+
+**Formula:** Rearrange to l = √(d² − w² − h²).
+**Substitution:** l = √(25² − 15² − 12²) = √(625 − 225 − 144).
+**Calculation:** 625 − 225 − 144 = 256, and √256 = 16.
+**Answer:** l = 16 cm.
+**Check:** 16² + 15² + 12² = 256 + 225 + 144 = 625 = 25², so the measurements form a valid rectangular prism with the given diagonal.
+
+### Example 6: Real-Life Room Diagonal Problem
+
+**Given:** A rectangular room measures 5 m long, 4 m wide, and 3 m high. Find the straight-line distance between opposite corners, from a floor corner to the opposite ceiling corner.
+**Find:** d.
+
+**Formula:** d = √(l² + w² + h²).
+**Substitution:** d = √(5² + 4² + 3²) = √(25 + 16 + 9).
+**Calculation:** 25 + 16 + 9 = 50, and √50 ≈ 7.07.
+**Answer:** d ≈ 7.07 m.
+
+Two cautions keep this honest. First, 7.07 m is the straight-line distance through the air, not a walking distance: a person cannot walk through the interior of the room diagonally in a straight line from floor to ceiling. Second, fitting a rigid object into a room depends on the object's own dimensions, its orientation, and clearance, not on the room diagonal alone. The diagonal tells you the longest straight segment the room contains, nothing more.
+
+![An isometric rectangular box with edges 3 cm, 4 cm, and 12 cm and a space diagonal of 13 cm](/images/blog/pythagorean-3d-example.svg)
+
+## Finding the Space Diagonal of a Cube
+
+A cube is a special type of rectangular prism with all edge lengths equal. Start from the general formula:
+
+d = √(l² + w² + h²)
+
+Substitute l = w = h = s:
+
+d = √(s² + s² + s²) = √(3s²)
+
+Therefore:
+
+**d = s√3**
+
+Here s is the cube's edge length. The space diagonal grows in direct proportion to the edge: double the edge and the diagonal doubles too, because d = s√3 is a fixed multiple (about 1.732 times) of s.
+
+| Solid | Dimensions | Space diagonal formula | Example |
+| --- | --- | --- | --- |
+| Rectangular prism | l, w, h (may differ) | d = √(l² + w² + h²) | 3, 4, 12 gives 13 |
+| Cube | s (all edges equal) | d = s√3 | s = 5 gives 5√3 ≈ 8.66 |
+
+![An isometric cube with all three edges labelled s and the space diagonal highlighted, with the formula d = s√3](/images/blog/pythagorean-3d-cube.svg)
+
+**Additional example.** A cube has edge length 5 cm. Its space diagonal is d = 5√3 ≈ 8.66 cm. Check with the general formula: √(25 + 25 + 25) = √75 ≈ 8.66. Both routes agree.
+
+## Face Diagonal vs. Space Diagonal
+
+The face diagonal and the space diagonal answer different questions, and confusing them is the most common error in this topic.
+
+### Face Diagonal
+
+A face diagonal connects opposite corners of one rectangular face. It lies flat on that face and involves only two dimensions. Its formula is:
+
+**f = √(l² + w²)**
+
+### Space Diagonal
+
+A space diagonal connects opposite corners of the whole three-dimensional prism. It passes through the interior and involves all three dimensions. Its formula is:
+
+**d = √(l² + w² + h²)**
+
+| | Face diagonal | Space diagonal |
+| --- | --- | --- |
+| Definition | Diagonal across one face | Segment joining opposite vertices through the interior |
+| Dimensions involved | Two (length and width) | Three (length, width, and height) |
+| Formula | f = √(l² + w²) | d = √(l² + w² + h²) |
+| Position in the solid | Flat on one face | Through the inside of the solid |
+| Example (3, 4, 12 box) | f = √(9 + 16) = 5 cm | d = √(9 + 16 + 144) = 13 cm |
+
+A consistent numerical example makes the relationship clear. For the 3-4-12 box, the base face diagonal is 5 cm and the space diagonal is 13 cm. The space diagonal is longer than the corresponding face diagonal whenever the prism has positive height, because d² = f² + h², and adding the positive term h² makes d² larger than f², so d is larger than f.
+
+## The 3D Distance Formula and the Pythagorean Theorem
+
+The space diagonal formula and the distance formula for points in 3D coordinates are the same idea in different clothes. Given two points P(x₁, y₁, z₁) and Q(x₂, y₂, z₂), the distance between them is:
+
+**d = √[(x₂ − x₁)² + (y₂ − y₁)² + (z₂ − z₁)²]**
+
+Each squared term is a difference along one axis: (x₂ − x₁) is how far apart the points are in the x direction, (y₂ − y₁) in the y direction, and (z₂ − z₁) in the z direction. The squared differences are added for the same reason as before: the three directions are mutually perpendicular in standard Cartesian coordinates, so the differences behave exactly like the length, width, and height of a rectangular prism whose opposite corners are P and Q. The square root then gives the straight-line distance.
+
+**Solved example.** Find the distance between P(1, 2, 3) and Q(4, 6, 15).
+**Differences:** x: 4 − 1 = 3, y: 6 − 2 = 4, z: 15 − 3 = 12.
+**Substitution:** d = √(3² + 4² + 12²) = √(9 + 16 + 144) = √169.
+**Answer:** d = 13 units.
+
+The distance formula is a general coordinate-based extension of the rectangular prism diagonal relationship. Whenever the coordinate differences are the edges of a box, the distance between the points is the box's space diagonal.
+
+## Real-World Applications of the 3D Pythagorean Theorem
+
+### Architecture and Construction
+
+Builders use straight-line distances between opposite corners of rectangular rooms and structures when planning frames, checking that a structure is square, and estimating bracing lengths. The space diagonal gives the longest straight measurement inside a rectangular room, which is useful when checking proportions, even though construction work itself happens along edges and faces.
+
+### Engineering and Product Design
+
+Rectangular components and enclosures have internal diagonal distances that matter for fitting parts, routing cables, and placing supports. If a rectangular enclosure measures 20 cm by 15 cm by 10 cm, its internal space diagonal is √(400 + 225 + 100) = √725 ≈ 26.93 cm, which is the longest straight segment that fits inside it. That number informs design choices without pretending that every part can use the full diagonal.
+
+### Packaging and Shipping
+
+The space diagonal gives the maximum point-to-point straight-line distance between opposite corners of a rectangular box. A shipper estimating whether a thin rod can fit diagonally inside a box starts from this number. Fitting a physical object also depends on the object's dimensions, its orientation, and clearance, so the diagonal is a starting point for the calculation, not a guarantee that an object fits.
+
+### Computer Graphics and 3D Modelling
+
+Graphics engines constantly calculate Euclidean distances between points in three-dimensional space: between a camera and an object, between two vertices of a model, or between a light source and a surface. The 3D distance formula, which is the space diagonal formula in coordinate form, is the workhorse behind those calculations, running millions of times per frame in rendered scenes.
+
+### Navigation and Spatial Measurements
+
+In a simplified three-dimensional coordinate system, the straight-line distance between two points with known coordinates comes from the same formula. A drone moving from (0, 0, 0) to (30, 40, 0) in metres travels √(900 + 1600 + 0) = 50 m in the horizontal plane, and adding a height change extends the same calculation to three terms. Real navigation adds terrain, airspace, and obstacles, but the underlying distance mathematics is this formula.
+
+## Common Mistakes When Using the 3D Pythagorean Theorem
+
+**1. Forgetting to square one dimension.** A student writes d = √(3 + 4 + 12) = √19 instead of √(9 + 16 + 144) = 13. The formula squares each dimension first. Fix: square every term before adding anything.
+
+**2. Adding the dimensions before squaring.** Computing (3 + 4 + 12)² = 361 and then rooting it gives 19, which is just the sum of the edges, not the diagonal. Fix: square first, then add, then root. Order matters.
+
+**3. Forgetting to take the square root.** Stopping at d² = 169 and answering 169 is a unit error: 169 is square centimetres, not centimetres. Fix: the last step is always a square root.
+
+**4. Confusing the face diagonal with the space diagonal.** Answering 5 cm for the 3-4-12 box gives the base face diagonal, not the space diagonal 13 cm. Fix: ask whether the question wants a diagonal on one face or through the solid.
+
+**5. Applying the formula to a non-rectangular solid without checking perpendicularity.** A slanted box or a pyramid does not have three mutually perpendicular edges, so d = √(l² + w² + h²) does not hold there. Fix: confirm right angles at the corners before using the formula.
+
+**6. Mixing units such as centimetres and metres.** A box 2 m long, 30 cm wide, and 40 cm high must be converted first: 200 cm, 30 cm, 40 cm gives √(40000 + 900 + 1600) = √42500 ≈ 206.16 cm, about 2.06 m. Using 2, 30, and 40 together would give a meaningless number. Fix: convert all dimensions to one unit before squaring.
+
+**7. Making errors when rearranging the formula.** When solving for a missing dimension, students sometimes add instead of subtract, writing h = √(d² + l² + w²). The correct rearrangement subtracts: h = √(d² − l² − w²). Fix: move terms across the equals sign by changing their sign, then check by substituting back.
+
+**8. Rounding too early.** Rounding each square or the sum before the final root shifts the answer. For example, with dimensions 2.5, 4.2, and 6.1, rounding the squares to 6, 18, and 37 gives √61 ≈ 7.81 instead of the correct √61.10 ≈ 7.82. The difference is small here but grows in longer calculations. Fix: carry full precision until the final step, then round once.
+
+## Pythagorean Theorem in 2D vs. 3D
+
+| | 2D Pythagorean Theorem | 3D Pythagorean Theorem |
+| --- | --- | --- |
+| Number of dimensions | Two | Three |
+| Geometric setting | Right triangle | Rectangular prism or cube |
+| Standard formula | c² = a² + b² | d² = l² + w² + h² |
+| Required measurements | Two sides of the triangle | Three edges of the prism |
+| Typical applications | Missing sides, distances on a plane | Space diagonals, 3D distances |
+| Example | Legs 3 and 4 give hypotenuse 5 | Edges 3, 4, and 12 give diagonal 13 |
+
+The 3D version is not an unrelated mathematical law; it follows from repeated application of the original theorem. A right triangle is a flat figure with two perpendicular legs, while a rectangular prism is a solid with three perpendicular edges. Apply the triangle theorem once to get a face diagonal, apply it again with the height, and the 3D formula appears.
+
+## Practice Problems on the 3D Pythagorean Theorem
+
+### Beginner Level
+
+1. A rectangular box measures 3 cm by 4 cm by 12 cm. Find its space diagonal.
+2. A cube has edge length 7 cm. Find its space diagonal, giving both the exact form and a decimal approximation.
+3. A rectangular prism measures 8 cm by 9 cm by 12 cm. Find its space diagonal.
+4. A rectangular box measures 2 cm by 3 cm by 6 cm. Find its space diagonal.
+
+### Intermediate Level
+
+5. A box measures 1.5 cm by 2 cm by 2.5 cm. Find its space diagonal to two decimal places.
+6. A box measures 2 m long, 30 cm wide, and 40 cm high. Find its space diagonal in centimetres, then convert to metres.
+7. A rectangular prism has space diagonal 17 cm, length 8 cm, and width 9 cm. Find its height.
+
+### Advanced Level
+
+8. Find the distance between the points P(2, 1, 4) and Q(5, 5, 16).
+9. A rectangular prism has length x cm, width 2x cm, and height 2x cm, and its space diagonal is 15 cm. Find x and all three dimensions.
+10. A room measures 6 m by 8 m by 3 m. First find the diagonal of the floor, then use it to find the space diagonal of the room.
+
+### Answer Key
+
+1. d = √(9 + 16 + 144) = √169 = 13 cm.
+2. d = 7√3 ≈ 12.12 cm.
+3. d = √(64 + 81 + 144) = √289 = 17 cm.
+4. d = √(4 + 9 + 36) = √49 = 7 cm.
+5. d = √(2.25 + 4 + 6.25) = √12.50 ≈ 3.54 cm.
+6. Convert: 200 cm, 30 cm, 40 cm. d = √(40000 + 900 + 1600) = √42500 ≈ 206.16 cm ≈ 2.06 m.
+7. h = √(17² − 8² − 9²) = √(289 − 64 − 81) = √144 = 12 cm.
+8. Differences: 3, 4, 12. d = √(9 + 16 + 144) = 13 units.
+9. d² = x² + 4x² + 4x² = 9x² = 225, so x² = 25 and x = 5. Dimensions: 5 cm, 10 cm, 10 cm.
+10. Floor diagonal: f = √(36 + 64) = 10 m. Space diagonal: d = √(100 + 9) = √109 ≈ 10.44 m.
+
+## Tips for Remembering the 3D Pythagorean Theorem
+
+Start from the familiar 2D formula, because the 3D formula is built from it. Visualise a right triangle on the bottom of a box: its hypotenuse is the base diagonal. Then use that base diagonal as one leg of a second right triangle, with the height as the other leg. The hypotenuse of the second triangle is the space diagonal. Add the square of the height to the squares you already have, and take the positive square root.
+
+**Quick revision checklist:**
+
+- Confirm the solid is a rectangular prism or cube with right-angled corners.
+- Label the three edges l, w, and h, all in the same unit.
+- Square each edge before adding.
+- Add the three squares and take the positive square root.
+- For a cube, use the shortcut d = s√3.
+- For a missing edge, subtract the known squares from d² before rooting.
+- Check the answer: the space diagonal must be longer than any single edge and longer than any face diagonal.
+
+**How to recognise exam questions involving a space diagonal:** look for a box, room, cube, or rectangular container with three dimensions given and a question about the longest internal straight line, the diagonal through the solid, or the distance between opposite corners. If the question mentions only one face, it wants a face diagonal instead.
+
+<Faq heading="Frequently Asked Questions" description="Short answers to the questions students ask most about the Pythagorean Theorem in 3D." items={[
+  {
+    "question": "What is the Pythagorean Theorem in 3D?",
+    "answer": "It is the extension of the Pythagorean Theorem to three dimensions. For a rectangular prism with length l, width w, and height h, the space diagonal d satisfies d² = l² + w² + h², so d = √(l² + w² + h²). It comes from applying the 2D theorem twice."
+  },
+  {
+    "question": "What is the formula for the space diagonal?",
+    "answer": "For a rectangular prism, d = √(l² + w² + h²), where l, w, and h are the three perpendicular edges. For a cube with edge s, the shortcut is d = s√3. All dimensions must use the same unit before calculating."
+  },
+  {
+    "question": "How do you find the diagonal of a rectangular prism?",
+    "answer": "Identify the length, width, and height, confirm they meet at right angles, and use d = √(l² + w² + h²). Square each dimension, add the squares, and take the positive square root. State the answer with the units from the question."
+  },
+  {
+    "question": "What is the diagonal formula for a cube?",
+    "answer": "A cube has all edges equal to s, so d = √(s² + s² + s²) = √(3s²) = s√3. For example, a cube with edge 6 cm has space diagonal 6√3 cm, approximately 10.39 cm."
+  },
+  {
+    "question": "What is the difference between a face diagonal and a space diagonal?",
+    "answer": "A face diagonal lies flat on one rectangular face and uses two dimensions: f = √(l² + w²). A space diagonal passes through the interior between opposite vertices and uses three dimensions: d = √(l² + w² + h²). The space diagonal is always longer when the height is positive."
+  },
+  {
+    "question": "Can the Pythagorean Theorem be used in three dimensions?",
+    "answer": "Yes, by applying it twice. First use it on the rectangular base to find the face diagonal, then use it again with the face diagonal and the height as legs. The hypotenuse of that second triangle is the space diagonal, giving d² = l² + w² + h²."
+  },
+  {
+    "question": "Why does the 3D formula have three squared terms?",
+    "answer": "Because there are three perpendicular directions. Length and width combine on the base to give the face diagonal, contributing two squared terms. Adding the height as the third perpendicular direction contributes the third squared term when the theorem is applied a second time."
+  },
+  {
+    "question": "How do you find a missing dimension when the space diagonal is known?",
+    "answer": "Rearrange the formula and subtract. For a missing height, h = √(d² − l² − w²). For example, with d = 13 cm, l = 3 cm, and w = 4 cm, h = √(169 − 9 − 16) = √144 = 12 cm. Always check by substituting back."
+  },
+  {
+    "question": "Is the 3D distance formula the same as the space diagonal formula?",
+    "answer": "Yes, in structure. The distance between P(x₁, y₁, z₁) and Q(x₂, y₂, z₂) is √[(x₂ − x₁)² + (y₂ − y₁)² + (z₂ − z₁)²]. The coordinate differences play the role of the box edges, and the distance is the space diagonal of that box."
+  },
+  {
+    "question": "Does the 3D Pythagorean Theorem work for every solid?",
+    "answer": "No. It works for rectangular prisms and cubes, where the three edges meet at right angles. For slanted boxes, pyramids, spheres, or other solids, the edges are not mutually perpendicular, so the formula does not apply and a different method is needed."
+  }
+]} />
+
+## Conclusion
+
+The Pythagorean Theorem in 3D says that the space diagonal of a rectangular prism satisfies d² = l² + w² + h². It is not a separate rule: apply the familiar theorem once for a face diagonal, then again with the height, and the three-term formula appears. Cubes simplify further to d = s√3. Keep the method straight by squaring before adding, converting to one unit, and rooting only at the end. With those habits and a little practice, finding diagonals through boxes, rooms, and coordinate space becomes a routine calculation you can trust.

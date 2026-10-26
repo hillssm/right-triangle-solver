@@ -1,0 +1,320 @@
+---
+title: "Bearings and Right Triangles: Navigation With Three-Figure Bearings"
+description: "Learn bearings in right triangles: three-figure notation, back bearings, and solving navigation problems with sine and cosine, plus practice problems."
+image: "/images/blog/bearings-hero.svg"
+date: 2026-10-27
+author: "Math Expert"
+category: "Geometry"
+---
+
+import Faq from 'theme/components/Faq.astro';
+
+A ship leaves a harbor on a foggy morning. The captain cannot see the shore, yet the ship must reach a point 10 km away in an exact direction. A distance alone is not enough, because 10 km could lead anywhere on a circle around the harbor. A direction alone is not enough either, because it gives no stopping point. The captain needs both: a direction and a distance. That direction is called a bearing, and together with a distance it fixes a position exactly.
+
+This guide explains what bearings are, how three-figure notation works, how to find back bearings, and how to turn a bearing and a distance into north and east components with a right triangle. You will also find worked examples, common mistakes, and practice problems with a full answer key.
+
+**Featured snippet answer:** A bearing is a direction measured in degrees clockwise from north, always written with three digits, for example 065°. Bearings run from 000° (due north) through 090° (east), 180° (south), and 270° (west), back to 360°, which is north again. A bearing plus a distance fixes a position exactly.
+
+## What Is a Bearing?
+
+A bearing is a direction stated as an angle measured clockwise from north. The measurement always starts at the north line and turns clockwise toward the direction of travel. North itself is 000°, east is 090°, south is 180°, and west is 270°. A bearing of 045° points northeast, exactly halfway between north and east. A bearing of 225° points southwest, exactly halfway between south and west.
+
+Bearings are always written with three digits. A bearing of 7 degrees is written as 007°, a bearing of 65 degrees is written as 065°, and a bearing of 90 degrees is written as 090°. The leading zeros are part of the notation, not decoration. They keep every bearing in the same three-digit form, so a bearing can never be misread as a different number in a radio message, on a map, or in an exam answer.
+
+To draw a bearing, start at the starting point and draw a vertical line pointing up. That line is north. Then rotate clockwise from that north line by the bearing angle, and draw the direction line. The angle between the north line and the direction line is the bearing. This drawing step matters more than any other habit in bearings work, because most errors come from measuring from the wrong reference line.
+
+![A compass rose showing a bearing of 065 degrees measured clockwise from north](/images/blog/bearings-compass.svg)
+
+The table below lists the eight principal compass directions and their bearings. Learn the four cardinal directions first, then fill in the points between them.
+
+| Direction | Bearing |
+| --- | --- |
+| North | 000° |
+| Northeast | 045° |
+| East | 090° |
+| Southeast | 135° |
+| South | 180° |
+| Southwest | 225° |
+| West | 270° |
+| Northwest | 315° |
+
+A bearing differs from an ordinary angle inside a triangle. An interior angle is measured between two sides of a shape, while a bearing is measured from the north line at the starting point. The [angles in a right triangle](/blog/angles-in-a-right-triangle/) guide explains interior angles in detail. Bearings work with those same angles, but the reference line is always north, and the rotation is always clockwise.
+
+## Back Bearings
+
+A back bearing is the direction from a destination back to the starting point. It points exactly opposite to the outward bearing, because the return journey runs along the same straight line in the reverse direction. Opposite directions on a straight line differ by 180°, so the back bearing rule is simple.
+
+If the outward bearing is under 180°, add 180°. If the outward bearing is 180° or more, subtract 180°. The result is always a valid bearing between 000° and 360°.
+
+| Outward bearing | Back bearing | Working |
+| --- | --- | --- |
+| 065° | 245° | 065 + 180 = 245 |
+| 300° | 120° | 300 - 180 = 120 |
+| 140° | 320° | 140 + 180 = 320 |
+| 250° | 070° | 250 - 180 = 070 |
+| 000° | 180° | 000 + 180 = 180 |
+| 090° | 270° | 090 + 180 = 270 |
+
+![Two opposite direction arrows showing a bearing and its back bearing](/images/blog/bearings-back-bearing.svg)
+
+A quick check confirms any back bearing: find the back bearing of the back bearing, and the original bearing should come back. For example, the back bearing of 065° is 245°, and the back bearing of 245° is 245 - 180 = 065°. The round trip closes, which is exactly what a return journey should do. Back bearings appear in every navigation problem that asks for the way home, so the add-or-subtract-180 rule is worth memorizing before moving on.
+
+## Bearings and Right Triangles
+
+A bearing and a distance together form a right triangle. The distance traveled is the hypotenuse, because it runs diagonally across the north and east directions. The north component is one leg, and the east component is the other leg. Once that triangle is drawn, sine and cosine give both components directly.
+
+The two formulas are:
+
+- North component = distance x cos(bearing)
+- East component = distance x sin(bearing)
+
+The reason is visible in the triangle. Draw the north line at the starting point, then draw the travel line at the bearing angle from north. Drop a perpendicular from the destination to the north line, and another to the east line. The angle at the starting point, between the north line and the travel line, equals the bearing. The side next to that angle runs north, so it uses cosine. The side opposite that angle runs east, so it uses sine. The [sine, cosine, and tangent guide](/blog/sine-cosine-tangent/) explains this adjacent and opposite relationship in full.
+
+![A right triangle showing north and east components from a bearing and distance](/images/blog/bearings-example.svg)
+
+Signs carry meaning here. A positive north component means north of the start, and a negative north component means south of the start. A positive east component means east of the start, and a negative east component means west of the start. The sign pattern follows the bearing quadrant:
+
+| Bearing range | Direction | North sign | East sign |
+| --- | --- | --- | --- |
+| 000° to 090° | Northeast quadrant | Positive | Positive |
+| 090° to 180° | Southeast quadrant | Negative (south) | Positive |
+| 180° to 270° | Southwest quadrant | Negative (south) | Negative (west) |
+| 270° to 360° | Northwest quadrant | Positive | Negative (west) |
+
+One rounding habit saves marks. Bearings in answers are usually rounded to the nearest degree, and distances to two decimal places, but rounding too early changes the answer. If a bearing is rounded before the north and east components are calculated, the position shifts, and a check with Pythagoras no longer returns the original distance. Keep full calculator precision through every intermediate step, and round only the final bearing and the final distances. In Example 1, the east component 8.660254 rounds to 8.66 km, yet the check still returns 10 km when rounded to two decimal places, because the rounding was small. With longer distances, early rounding causes larger drift, so the habit matters more as distances grow.
+
+The reverse problem works the same way. Given a north distance and an east distance, the distance from the start comes from the Pythagorean theorem: distance = √(north² + east²). The bearing comes from the tangent ratio: tan(bearing) = east / north, adjusted for the quadrant. First find the reference angle, which is arctan(|east| / |north|). Then place it in the correct quadrant: northeast uses the reference angle itself, southeast uses 180° minus the reference angle, southwest uses 180° plus the reference angle, and northwest uses 360° minus the reference angle. Finally, write the result with three digits. The [how to solve a right triangle](/blog/how-to-solve-a-right-triangle/) guide covers the same triangle-solving steps in a general setting.
+
+## Worked Examples
+
+### Example 1: Travel 10 km on Bearing 060°
+
+A ship sails 10 km on a bearing of 060°. How far north and east is it from the start?
+
+Bearing 060° sits in the northeast quadrant, so both components are positive. Apply the two formulas:
+
+- North = 10 x cos60° = 10 x 0.5 = 5 km
+- East = 10 x sin60° = 10 x 0.8660 = 8.66 km
+
+The ship ends 5 km north and 8.66 km east of the start. As a check, the distance should come back: √(5² + 8.66²) = √(25 + 75) = √100 = 10 km, which matches the distance sailed.
+
+### Example 2: Travel 20 km on Bearing 135°
+
+A plane flies 20 km on a bearing of 135°. How far south and east is it from the start?
+
+Bearing 135° sits in the southeast quadrant, so the north component is negative and the east component is positive. Apply the formulas:
+
+- North = 20 x cos135° = 20 x (-0.7071) = -14.14 km
+- East = 20 x sin135° = 20 x 0.7071 = 14.14 km
+
+The negative north value means 14.14 km south. The plane ends 14.14 km south and 14.14 km east of the start. Bearing 135° points exactly southeast, halfway between south and east, so the two components are equal in size. That symmetry is a useful check on southeast and northwest diagonal bearings.
+
+### Example 3: Distance and Bearing From East and North Distances
+
+A walker goes 6 km east, then 8 km north. How far is the walker from the start, and on what bearing?
+
+First find the distance with the Pythagorean theorem:
+
+Distance = √(6² + 8²) = √(36 + 64) = √100 = 10 km
+
+The walker is 10 km from the start, and the three distances form a 6-8-10 triangle. Next find the bearing. The tangent ratio uses east over north:
+
+tan(bearing) = east / north = 6 / 8 = 0.75
+
+Bearing = arctan(0.75) = 36.87°
+
+The position is northeast, so no quadrant adjustment is needed. Written with three digits, the bearing is 037°. The walker is 10 km from the start on a bearing of 037°.
+
+### Example 4: A Two-Leg Journey and the Return Trip
+
+A ship sails 12 km on a bearing of 090°, due east, then 5 km on a bearing of 000°, due north. Find the distance and bearing of the ship from the start, and describe the return journey.
+
+Add the components leg by leg. The first leg gives 0 km north and 12 km east. The second leg gives 5 km north and 0 km east. The totals are 5 km north and 12 km east.
+
+Distance from the start = √(12² + 5²) = √(144 + 25) = √169 = 13 km
+
+The distances form a 5-12-13 triangle. The bearing from the start uses east over north:
+
+tan(bearing) = 12 / 5 = 2.4
+
+Bearing = arctan(2.4) = 67.38°
+
+Written with three digits, the bearing is 067°. The ship is 13 km from the start on a bearing of 067°.
+
+The return journey runs in the opposite direction, so its bearing is the back bearing of 067°. Since 067° is under 180°, add 180°:
+
+Back bearing = 067° + 180° = 247°
+
+The ship returns 13 km on a bearing of 247° to reach the start. This example shows the full bearings workflow in one problem: components, distance, bearing, and back bearing.
+
+## Bearings vs Angle of Elevation
+
+Bearings and angles of elevation both use right triangles, but they live in different planes and answer different questions. Mixing them up is a common source of errors, so the distinction is worth stating plainly.
+
+A bearing works in the horizontal plane. It tells direction across the ground or across a map, measured clockwise from north, from 000° to 360°. It answers the question: which way across the map, and how far north and east? An angle of elevation works in the vertical plane. It tells how steeply upward a line of sight rises from horizontal eye level, from 0° to 90°. It answers the question: how high is the object?
+
+| Feature | Bearing | Angle of elevation |
+| --- | --- | --- |
+| Plane | Horizontal (map view) | Vertical (side view) |
+| Reference line | North line | Horizontal eye line |
+| Measured | Clockwise from north | Upward from horizontal |
+| Range | 000° to 360° | 0° to 90° |
+| Gives | North and east position | Height of an object |
+
+A single journey can involve both. A plane might fly on a bearing of 060° while climbing at an angle of elevation, but the two angles go into different triangles. The bearing goes into the north and east components on the map. The elevation angle goes into the vertical height triangle. Never put a bearing into a height calculation, and never put an elevation angle into a north and east calculation. Drawing the correct plane first prevents the mix-up.
+
+## Common Mistakes
+
+### Mistake 1: Measuring From East Instead of North
+
+**Incorrect approach:** A student measures 060° from the east line toward the north and calls the result a bearing of 060°.
+
+**Why it is incorrect:** A bearing is defined from north, not from east. Measuring 60° from east toward north gives a direction 30° from north, which is a bearing of 030°, not 060°. Every component calculated from the wrong reference line is wrong too.
+
+**Correct approach:** Always draw the north line first, then rotate clockwise from it by the bearing. If a problem gives an angle from east or from another line, convert it to a bearing from north before using sine or cosine.
+
+### Mistake 2: Writing 65 Instead of 065
+
+**Incorrect approach:** A student writes the bearing as 65° and treats the answer as complete.
+
+**Why it is incorrect:** Bearings follow a three-digit standard. In navigation messages and in exam marking, 65° is not the accepted form, and a bare two-digit number invites misreading. The value is the same, but the form is wrong, and form is part of the skill being tested.
+
+**Correct approach:** Pad with leading zeros so every bearing has three digits: 007°, 065°, 090°, 270°. Check the digit count before finishing any bearings answer.
+
+### Mistake 3: Confusing the Bearing With an Interior Triangle Angle
+
+**Incorrect approach:** A student takes a bearing of 060° and uses 60° as an interior angle of the position triangle at the wrong vertex, for example at the destination instead of at the start.
+
+**Why it is incorrect:** The bearing is the angle at the starting point between the north line and the travel line. The interior angles of the north-east triangle are found from that setup, and they are not all equal to the bearing. Using the bearing at the wrong vertex gives wrong sides.
+
+**Correct approach:** Draw the north line at the starting point, mark the bearing there, then build the right triangle from that drawing. Identify which angle of the triangle equals the bearing and which angles are complements or supplements of it.
+
+### Mistake 4: Back-Bearing Errors
+
+**Incorrect approach:** A student finds the back bearing of 300° by adding 180°, giving 480°, and leaves the answer as 480°.
+
+**Why it is incorrect:** Bearings run from 000° to 360°. An answer of 480° is not a bearing at all. Adding 180° to a bearing that is already 180° or more overshoots the full circle.
+
+**Correct approach:** Use the rule in full. If the bearing is under 180°, add 180°. If the bearing is 180° or more, subtract 180°. The back bearing of 300° is 300° - 180° = 120°. Then write the result with three digits and check it by reversing the rule.
+
+## Practice Problems
+
+### Beginner
+
+**1.** Write 7 degrees as a three-figure bearing.
+
+**2.** Find the back bearings of 140° and 250°.
+
+**3.** Which compass directions do bearings of 090° and 270° point to?
+
+### Intermediate
+
+**4.** A ship sails 10 km on a bearing of 030°. How far north and east is it from the start?
+
+**5.** A plane flies 20 km on a bearing of 210°. How far south and west is it from the start?
+
+**6.** A walker goes 9 km east, then 12 km north. How far is the walker from the start, and on what bearing?
+
+**7.** A ship is 8 km east and 15 km north of its port. How far is it from the port, and on what bearing?
+
+### Advanced
+
+**8.** A boat sails 12 km on a bearing of 180°, due south, then 5 km on a bearing of 270°, due west. Find the distance of the boat from the start, the bearing of the boat from the start, and the return bearing and distance.
+
+**9.** A hiker walks 7 km east, then 24 km north. How far is the hiker from the start, and on what bearing?
+
+**10.** A ship sails to a point 20 km east and 21 km north of its harbor. How far is the point from the harbor, and on what bearing?
+
+### Answer Key
+
+**1.** 007°. Bearings always use three digits, so a single-digit angle gains two leading zeros.
+
+**2.** The back bearing of 140° is 140° + 180° = 320°. The back bearing of 250° is 250° - 180° = 070°. The rule adds 180° when the bearing is under 180° and subtracts 180° when it is 180° or more.
+
+**3.** A bearing of 090° points east, and a bearing of 270° points west. East is a quarter turn clockwise from north, and west is three quarters of a turn clockwise from north.
+
+**4.** North = 10 x cos30° = 10 x 0.8660 = 8.66 km. East = 10 x sin30° = 10 x 0.5 = 5 km. The ship is 8.66 km north and 5 km east of the start. Check: √(8.66² + 5²) = √(75 + 25) = √100 = 10 km.
+
+**5.** North = 20 x cos210° = 20 x (-0.8660) = -17.32 km, which means 17.32 km south. East = 20 x sin210° = 20 x (-0.5) = -10 km, which means 10 km west. Bearing 210° sits in the southwest quadrant, so both components are negative. The plane is 17.32 km south and 10 km west of the start.
+
+**6.** Distance = √(9² + 12²) = √(81 + 144) = √225 = 15 km. The distances form a 9-12-15 triangle. Bearing = arctan(9 / 12) = arctan(0.75) = 36.87°, written as 037°. The walker is 15 km from the start on a bearing of 037°.
+
+**7.** Distance = √(8² + 15²) = √(64 + 225) = √289 = 17 km. The distances form an 8-15-17 triangle. Bearing = arctan(8 / 15) = arctan(0.5333) = 28.07°, written as 028°. The ship is 17 km from the port on a bearing of 028°.
+
+**8.** The first leg gives 12 km south and 0 km west. The second leg gives 0 km south and 5 km west. The totals are 12 km south and 5 km west. Distance = √(12² + 5²) = √(144 + 25) = √169 = 13 km. The angle west of south is arctan(5 / 12) = 22.62°, so the bearing from the start is 180° + 22.62° = 202.62°, written as 203°. The return bearing is 203° - 180° = 023°, and the return distance is 13 km.
+
+**9.** Distance = √(7² + 24²) = √(49 + 576) = √625 = 25 km. The distances form a 7-24-25 triangle. Bearing = arctan(7 / 24) = arctan(0.2917) = 16.26°, written as 016°. The hiker is 25 km from the start on a bearing of 016°.
+
+**10.** Distance = √(20² + 21²) = √(400 + 441) = √841 = 29 km. The distances form a 20-21-29 triangle. Bearing = arctan(20 / 21) = arctan(0.9524) = 43.60°, written as 044°. The point is 29 km from the harbor on a bearing of 044°.
+
+## Real-World Applications
+
+Bearings turn up wherever people or instruments must hold a direction over ground they cannot always see.
+
+- **Navigation:** Ships cross open water on set bearings, changing course at planned waypoints. Each leg has a bearing and a distance, and the ship's position at any time comes from adding the north and east components of the legs sailed so far.
+- **Aviation:** Pilots fly headings based on bearings, adjusted for wind. Air traffic control gives directions as bearings, so a pilot, a controller, and a chart all share one language for direction.
+- **Surveying:** Surveyors record property boundaries and construction lines as bearings and distances. A boundary described this way can be redrawn on a map years later, because the bearing and distance fix each corner exactly.
+- **Hiking:** Walkers use a map and compass to follow a bearing across country without a path. Counting paces or timing the walk gives the distance, and the bearing keeps the walker on line toward a distant feature.
+- **Shipping:** Cargo routes, harbor approaches, and search patterns are all planned as bearing-and-distance legs. A search team can sweep an area in a grid of bearing lines and know exactly which ground each leg covered.
+
+In every case, the same right triangle does the work. The bearing gives the angle, the distance gives the hypotenuse, and sine and cosine give the position.
+
+## Tips for Remembering Bearings
+
+**Bearings start at north, go clockwise, always three digits.**
+
+That one line covers the three facts students forget most. Before solving any bearings problem, run this checklist:
+
+- Did I draw the north line at the starting point?
+- Did I measure clockwise from north, not from east or from the travel line?
+- Did I write the bearing with three digits?
+- Did I use cosine for north and sine for east?
+- Did I check the signs against the quadrant?
+- For a return journey, did I add or subtract 180° by the correct rule?
+
+If every answer is yes, the triangle setup is right, and the rest is ordinary sine, cosine, and Pythagoras work.
+
+<Faq heading="Frequently Asked Questions" description="Short answers to the questions students ask most about bearings and right triangles." items={[
+  {
+    "question": "What is a bearing?",
+    "answer": "A bearing is a direction measured in degrees clockwise from north, always written with three digits. North is 000 degrees, east is 090 degrees, south is 180 degrees, and west is 270 degrees. A bearing tells the direction of travel from a starting point, and together with a distance it fixes a position exactly on a map."
+  },
+  {
+    "question": "Why are bearings written with three digits?",
+    "answer": "Bearings use three digits so every direction has the same form and cannot be misread. A bearing of 7 degrees is written as 007 degrees, and 65 degrees becomes 065 degrees. The leading zeros matter in radio messages, on maps, and in exams, where a short form could be confused with another number. Three digits also make bearings easy to scan and compare at a glance."
+  },
+  {
+    "question": "What is a back bearing?",
+    "answer": "A back bearing is the direction from a destination back to the starting point along the same straight line. If the outward bearing is under 180 degrees, add 180 degrees. If it is 180 degrees or more, subtract 180 degrees. For example, the back bearing of 065 degrees is 245 degrees, and the back bearing of 300 degrees is 120 degrees."
+  },
+  {
+    "question": "How do you find north and east components from a bearing?",
+    "answer": "Multiply the distance by the cosine of the bearing to get the north component, and by the sine of the bearing to get the east component. For example, 10 km on a bearing of 060 degrees gives 5 km north and 8.66 km east. A negative north result means south, and a negative east result means west, so signs always show the true direction."
+  },
+  {
+    "question": "How do you find a bearing from north and east distances?",
+    "answer": "First find the distance with the Pythagorean theorem using the north and east distances as legs. Then find the reference angle with arctan of east divided by north. Place that angle in the correct quadrant: northeast uses it directly, southeast uses 180 degrees minus it, southwest uses 180 degrees plus it, and northwest uses 360 degrees minus it."
+  },
+  {
+    "question": "What is the difference between a bearing and an ordinary angle?",
+    "answer": "An ordinary angle is measured between two sides inside a shape, while a bearing is measured from the north line at a starting point, rotating clockwise. A bearing always uses north as its zero line and always has three digits. An interior angle of a triangle can sit at any vertex, but a bearing is tied to the starting point and to north."
+  },
+  {
+    "question": "Can a bearing be larger than 360 degrees?",
+    "answer": "No. Bearings run from 000 degrees to 360 degrees, and 360 degrees is the same direction as 000 degrees, due north. A result above 360 degrees means an error in the working, often from adding 180 degrees to a back bearing that needed subtraction instead. Always bring the result back inside the 000 to 360 degree range before writing it down."
+  },
+  {
+    "question": "How are bearings used in real navigation?",
+    "answer": "Ships, planes, hikers, and surveyors all use bearings to fix direction and position. A ship follows a bearing across open water, a plane flies a heading based on bearings, a hiker walks a bearing across country with a map and compass, and a surveyor records boundary lines as bearings. In each case the bearing plus a distance gives an exact position."
+  },
+  {
+    "question": "Do bearings use true north or magnetic north?",
+    "answer": "Math problems and maps use true north, which is the direction of the North Pole along a meridian. A magnetic compass points to magnetic north instead, which sits at a different place and drifts over time. Real navigators correct for the difference, called variation, before using a compass bearing on a map. Classroom bearing problems assume true north unless stated otherwise."
+  },
+]} />
+
+## Conclusion
+
+A bearing is a simple idea with a strict form: an angle measured clockwise from north, always written with three digits. Paired with a distance, it forms a right triangle whose hypotenuse is the distance traveled and whose legs are the north and east components, found with cosine and sine. Back bearings reverse the journey with one rule, add or subtract 180 degrees, and quadrant signs keep every answer honest about direction.
+
+The skill is worth practicing because it appears far beyond the classroom, in ships, planes, maps, and survey work. Try the practice problems above with a diagram for each one, drawing the north line first every time. Once the drawing habit is fixed, bearings problems become routine triangle work, and the compass rose stops looking like a puzzle and starts looking like a tool.

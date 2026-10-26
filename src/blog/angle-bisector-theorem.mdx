@@ -1,0 +1,278 @@
+---
+title: "Angle Bisector Theorem: Proof, Formula, and Examples"
+description: "Learn the Angle Bisector Theorem: how a bisector divides the opposite side in the ratio of the adjacent sides, with proof, examples, and practice problems."
+image: "/images/blog/angle-bisector-hero.svg"
+date: 2026-10-27
+author: "Math Expert"
+category: "Geometry"
+---
+
+import Faq from 'theme/components/Faq.astro';
+
+Draw any triangle and pick one of its corners. Now draw a ray from that corner that cuts the angle exactly in half and continues until it meets the opposite side. The ray lands somewhere on that side, but where exactly? It does not land at a random spot, and in most triangles it does not land at the midpoint either. The landing point follows a strict rule, and that rule is the Angle Bisector Theorem. It says the bisector divides the opposite side in the same ratio as the two sides that form the angle. If one forming side is twice as long as the other, the opposite side is split into pieces with that same 2 to 1 ratio.
+
+This guide explains what an angle bisector is, states the theorem precisely, proves it with a classic parallel-line construction, and works through examples of increasing difficulty. You will also learn how the bisector differs from a median and an altitude, which mistakes students make most often, and how to solve practice problems on your own. The examples use ordinary triangles and right triangles, so the ideas transfer directly to the right-triangle work covered elsewhere on this site.
+
+**Featured snippet answer:** The Angle Bisector Theorem states that if a ray bisects an angle of a triangle and meets the opposite side, it divides that side into segments proportional to the adjacent sides. In triangle ABC, if AD bisects angle A and meets BC at D, then BD/DC = AB/AC.
+
+## What Is an Angle Bisector?
+
+An angle bisector is a ray that starts at the vertex of an angle and divides that angle into two equal angles. In triangle ABC, the bisector of angle A is a ray from vertex A that splits angle A into two angles of equal measure, and it meets side BC at some point, usually called D. The segment AD is then called the angle bisector of the triangle from vertex A. Every triangle has three angle bisectors, one from each vertex, and all three meet at a single point called the incenter, which is the center of the circle inscribed in the triangle.
+
+The bisector is easy to confuse with two other segments drawn from a vertex, the median and the altitude, because all three start at a vertex and meet the opposite side. The difference is in what each segment does. A median meets the opposite side at its midpoint, cutting that side into two equal pieces. An altitude meets the opposite side at a right angle, forming a perpendicular segment. An angle bisector splits the angle at the vertex into two equal angles, and it generally does neither of the other two jobs: it usually does not hit the midpoint, and it usually is not perpendicular to the opposite side. The [median to the hypotenuse](/blog/median-to-the-hypotenuse/) guide compares these three segments side by side in a table, and that comparison is worth reviewing if the three segments still blur together.
+
+![A triangle ABC with angle bisector AD meeting side BC at D, with proportional segments labeled](/images/blog/angle-bisector-theorem.svg)
+
+A bisector can be drawn with a compass and straightedge by a standard construction, but this article focuses on the theorem that governs where the bisector lands, not on the construction steps. The key question is always the same: given the two sides that form the bisected angle, where does the bisector meet the opposite side? The theorem answers that question with a proportion.
+
+## Statement of the Angle Bisector Theorem
+
+Consider triangle ABC. Let AD be the bisector of angle A, meeting side BC at point D. Then the theorem states:
+
+**BD/DC = AB/AC**
+
+Each symbol means something specific, and reading the proportion correctly is half the skill:
+
+- **A** is the vertex whose angle is bisected.
+- **D** is the point where the bisector meets the opposite side BC.
+- **BD** is the segment of side BC next to vertex B, running from B to the landing point D.
+- **DC** is the segment of side BC next to vertex C, running from D to C.
+- **AB** is the side of the triangle next to vertex B, one of the two sides forming angle A.
+- **AC** is the side of the triangle next to vertex C, the other side forming angle A.
+
+The proportion pairs each segment of the split side with the side next to it. The segment near B (BD) goes with the side near B (AB), and the segment near C (DC) goes with the side near C (AC). That pairing is the whole theorem, and most errors come from pairing the segments with the wrong sides. A concrete case makes the pairing clear: if AB = 6 units and AC = 9 units, then BD/DC = 6/9 = 2/3, so the segment near B is two-thirds as long as the segment near C. The bisector lands closer to B, because the side next to B is shorter.
+
+The theorem works in every triangle, not only in right triangles. In a right triangle, the theorem is often applied to the bisector of one of the acute angles, or to the bisector of the right angle itself. The rule does not change. Wherever a bisector meets the opposite side, the split follows the ratio of the adjacent sides. The [sides of a right triangle](/blog/sides-of-a-right-triangle/) guide explains how to name the hypotenuse and legs, which helps when the bisected angle is the right angle and the opposite side is the hypotenuse.
+
+## Proof of the Angle Bisector Theorem
+
+The classic proof uses a parallel line and the properties of isosceles triangles. It is short, and every step follows from ideas learned earlier in geometry: corresponding angles, alternate interior angles, and the basic proportionality theorem.
+
+Start with triangle ABC, where AD bisects angle A and meets BC at D. The goal is to prove BD/DC = AB/AC.
+
+**Step 1: Draw a parallel line.** Through point C, draw a line parallel to AD. Extend side BA beyond A until this new line meets it at a point E. Now CE is parallel to AD, and E lies on the extension of BA past A.
+
+**Step 2: Match the angles.** Because CE is parallel to AD, angle BAD and angle BEC are corresponding angles, so angle BAD = angle BEC. Also, angle DAC and angle ACE are alternate interior angles, so angle DAC = angle ACE.
+
+**Step 3: Show triangle ACE is isosceles.** AD bisects angle A, so angle BAD = angle DAC. Combine that with step 2: angle BEC = angle BAD = angle DAC = angle ACE. Therefore angle BEC = angle ACE. In triangle ACE, the angles at E and C are equal, so the sides opposite them are equal: AC = AE. Triangle ACE is isosceles with AC = AE.
+
+**Step 4: Apply proportionality.** Look at triangle BCE. The segment AD is parallel to CE, and AD cuts sides BC and BE. By the basic proportionality theorem, AD divides those sides in the same ratio: BD/DC = BA/AE. But step 3 showed AE = AC, so substitute AC for AE: BD/DC = BA/AC. Since BA is the same length as AB, the result is BD/DC = AB/AC. That is exactly the Angle Bisector Theorem.
+
+![The parallel-line proof construction with CE parallel to AD meeting BA extended at E](/images/blog/angle-bisector-proof.svg)
+
+The proof also explains why the theorem feels surprising. The bisector is defined by an angle, yet it controls a ratio of lengths. The parallel line turns the angle condition into equal angles in a new triangle, and the isosceles triangle turns those equal angles into equal lengths. The proportion then falls out directly. No measurement or approximation is involved. The result is exact for every triangle.
+
+## Worked Examples
+
+### Example 1: Splitting a Side in a Given Ratio
+
+Triangle ABC has AB = 6 units, AC = 9 units, and BC = 10 units. AD bisects angle A and meets BC at D. Find BD and DC.
+
+The theorem gives BD/DC = AB/AC = 6/9 = 2/3. Let BD = 2k and DC = 3k for some number k. The two segments add to the whole side: BD + DC = BC, so 2k + 3k = 10, which gives 5k = 10 and k = 2. Therefore BD = 2k = 4 units and DC = 3k = 6 units.
+
+Check the result two ways. First, the segments add correctly: 4 + 6 = 10, which matches BC. Second, the ratio checks out: BD/DC = 4/6 = 2/3, and AB/AC = 6/9 = 2/3. Both ratios agree, so the split is correct. Notice that the bisector does not hit the midpoint of BC, which would be 5 units from each end. The shorter side AB pulls the landing point toward B.
+
+### Example 2: A Larger Triangle With the Same Pattern
+
+Triangle ABC has AB = 8 units, AC = 12 units, and BC = 15 units. AD bisects angle A and meets BC at D. Find BD and DC.
+
+The ratio is BD/DC = AB/AC = 8/12 = 2/3. Let BD = 2k and DC = 3k. Then 2k + 3k = 15, so 5k = 15 and k = 3. Therefore BD = 6 units and DC = 9 units.
+
+Check: 6 + 9 = 15, which matches BC, and 6/9 = 2/3, which matches 8/12 = 2/3. The ratio 2 to 3 appears in both examples because the side ratios 6 to 9 and 8 to 12 reduce to the same fraction. Different triangles with the same adjacent-side ratio always split their opposite sides in that same ratio. This is the [similar right triangles](/blog/similar-right-triangles/) idea in another form: equal ratios produce the same proportional structure.
+
+### Example 3: Finding a Missing Side
+
+A bisector AD meets BC at D, with BD = 4 units and DC = 6 units. Side AB = 8 units. Find AC.
+
+The theorem gives BD/DC = AB/AC, so 4/6 = 8/AC. Cross-multiply: 4 x AC = 6 x 8 = 48, so AC = 48/4 = 12 units. Alternatively, solve directly for AC with the rearranged formula AC = AB x DC/BD = 8 x 6/4 = 12 units. Both paths give the same answer.
+
+Check the ratio: BD/DC = 4/6 = 2/3, and AB/AC = 8/12 = 2/3. The ratios agree. This example shows the theorem working in reverse. When the split is known and one adjacent side is known, the other adjacent side follows from the same proportion. Students often set up this proportion backwards, pairing BD with AC instead of AB. The pairing rule from the statement section prevents that error: the segment near B pairs with the side near B.
+
+### Example 4: The Length of the Bisector Itself
+
+The Angle Bisector Theorem finds where the bisector lands, but a related formula finds how long the bisector is. If a bisector from vertex A meets BC at D, then the square of the bisector length equals the product of the adjacent sides minus the product of the two segments:
+
+**AD² = AB x AC − BD x DC**
+
+Take the triangle from Example 1: AB = 6, AC = 9, BC = 10, with BD = 4 and DC = 6. Apply the formula:
+
+AD² = 6 x 9 − 4 x 6 = 54 − 24 = 30
+
+AD = √30, which is about 5.48 units.
+
+Check that the answer is reasonable. The bisector is shorter than either adjacent side (6 and 9) and longer than either segment (4 and 6), which is what a segment drawn inside the triangle should satisfy. The value √30 sits between 5 and 6, since 25 is less than 30 and 36 is greater than 30, and 5.48² = 30.03, which matches 30 within rounding. This formula is a useful second tool: the theorem gives the split, and the length formula gives the bisector itself. Both are worth memorizing together.
+
+![A worked example triangle with sides 6, 9, 10 split into segments 4 and 6 by the bisector](/images/blog/angle-bisector-example.svg)
+
+## Angle Bisector vs Median vs Altitude
+
+Three segments leave a vertex and meet the opposite side, and each does a different job. The table below compares them, and the explanation that follows states when each segment hits the midpoint and when each is perpendicular.
+
+| Segment | What it does | Hits the midpoint? | Perpendicular to opposite side? |
+| --- | --- | --- | --- |
+| Angle bisector | Splits the vertex angle into two equal angles | Only in special cases | Only in special cases |
+| Median | Joins the vertex to the midpoint of the opposite side | Yes, always | Only in special cases |
+| Altitude | Drops a perpendicular from the vertex to the opposite side | Only in special cases | Yes, always |
+
+A median hits the midpoint by definition. An altitude is perpendicular by definition. A bisector does neither by definition. The bisector hits the midpoint only when the two adjacent sides are equal, because then the ratio AB/AC equals 1, so BD = DC. In an isosceles triangle, the bisector of the vertex angle between the equal sides does hit the midpoint, and it is also perpendicular to the base. That special case is where the three segments coincide, and it is the case that causes confusion: students who first meet bisectors inside isosceles triangles assume the midpoint and perpendicular properties always hold. They do not.
+
+In a right triangle, the same distinctions apply. The median to the hypotenuse has its own theorem, covered in the [median to the hypotenuse](/blog/median-to-the-hypotenuse/) guide, and it equals half the hypotenuse. The altitude to the hypotenuse creates two smaller triangles similar to the original. The bisector follows only the ratio rule from this article. Keeping the three jobs separate is the single most useful habit for this whole topic: median means midpoint, altitude means perpendicular, bisector means equal angles and the side ratio.
+
+## Common Mistakes
+
+### Mistake 1: Assuming the Bisector Hits the Midpoint
+
+**Incorrect approach:** In a triangle with AB = 6, AC = 9, and BC = 10, a student marks D as the midpoint of BC and writes BD = DC = 5.
+
+**Why it is incorrect:** The midpoint belongs to the median, not the bisector. The bisector follows the side ratio, which here is 6 to 9, not 1 to 1.
+
+**Correct approach:** Apply the theorem: BD/DC = 6/9 = 2/3, so BD = 4 and DC = 6. Check that the segments add to 10 and that the ratio matches.
+
+### Mistake 2: Assuming the Bisector Is Perpendicular
+
+**Incorrect approach:** A student draws AD perpendicular to BC and then uses right-triangle methods, such as the Pythagorean theorem, on the two smaller triangles.
+
+**Why it is incorrect:** Perpendicularity belongs to the altitude. A bisector is generally not perpendicular to the opposite side, so the two smaller triangles are generally not right triangles, and right-triangle methods do not apply to them.
+
+**Correct approach:** Use only the ratio from the theorem unless the problem states that the bisector is also an altitude, which happens only in special cases such as an isosceles triangle.
+
+### Mistake 3: Using the Wrong Sides in the Proportion
+
+**Incorrect approach:** With BD = 4, DC = 6, and AB = 8, a student writes BD/DC = AC/AB and computes AC = 8 x 4/6, which is about 5.33.
+
+**Why it is incorrect:** The proportion pairs each segment with the side on the same side of the triangle: BD pairs with AB, and DC pairs with AC. The incorrect setup flips one pair.
+
+**Correct approach:** Write BD/DC = AB/AC, so 4/6 = 8/AC, giving AC = 12. Always check the pairing by asking which vertex each segment sits next to.
+
+### Mistake 4: Applying the Theorem When the Ray Does Not Bisect the Angle
+
+**Incorrect approach:** A diagram shows a segment AD meeting BC at D, and a student applies the ratio BD/DC = AB/AC without checking whether AD actually bisects angle A.
+
+**Why it is incorrect:** The theorem requires a true bisector. If AD is a median, an altitude, or just an arbitrary segment, the ratio does not hold, and any answer built on it is wrong.
+
+**Correct approach:** Verify the bisector condition first: look for equal angle marks at vertex A or a statement that AD bisects angle A. Only then use the proportion.
+
+## Practice Problems
+
+### Beginner
+
+**1.** Triangle ABC has AB = 6 units, AC = 9 units, and BC = 10 units. AD bisects angle A and meets BC at D. Find BD and DC.
+
+**2.** Triangle ABC has AB = 8 units, AC = 12 units, and BC = 15 units. AD bisects angle A and meets BC at D. Find BD and DC.
+
+**3.** In triangle ABC, AD bisects angle A and meets BC at D. State the proportion from the Angle Bisector Theorem in symbols, and explain in words which segment pairs with which side.
+
+### Intermediate
+
+**4.** A bisector AD meets BC at D, with BD = 6 units and DC = 9 units. Side AB = 8 units. Find AC.
+
+**5.** Triangle ABC has AB = 10 units, AC = 15 units, and BC = 20 units. AD bisects angle A and meets BC at D. Find BD and DC.
+
+**6.** A bisector AD meets BC at D, with BD = 4 units and DC = 10 units. Side AC = 15 units. Find AB.
+
+### Advanced
+
+**7.** Triangle ABC has AB = 8 units, AC = 12 units, and BC = 15 units. AD bisects angle A and meets BC at D. First find BD and DC, then find the length of the bisector AD, rounded to two decimal places.
+
+**8.** Point D lies on BC with BD = 4 units and DC = 6 units. The sides are AB = 6 units and AC = 9 units. Does AD bisect angle A? Justify your answer using the converse of the Angle Bisector Theorem.
+
+**9.** Triangle ABC has AB = 12 units, AC = 18 units, and BC = 25 units. AD bisects angle A and meets BC at D. Find BD and DC, and verify your answer two ways.
+
+**10.** A right triangle has legs 9 units and 12 units and a hypotenuse of 15 units. The bisector of the right angle meets the hypotenuse at D. Find BD and DC, rounded to two decimal places, and explain why the segments are not whole numbers.
+
+### Answer Key
+
+**1.** BD/DC = AB/AC = 6/9 = 2/3. Let BD = 2k and DC = 3k. Then 5k = 10, so k = 2. BD = 4 units and DC = 6 units. Check: 4 + 6 = 10, and 4/6 = 2/3.
+
+**2.** BD/DC = AB/AC = 8/12 = 2/3. Let BD = 2k and DC = 3k. Then 5k = 15, so k = 3. BD = 6 units and DC = 9 units. Check: 6 + 9 = 15, and 6/9 = 2/3.
+
+**3.** The proportion is BD/DC = AB/AC. In words: the segment of BC next to vertex B divided by the segment next to vertex C equals the side next to vertex B divided by the side next to vertex C. BD pairs with AB, and DC pairs with AC.
+
+**4.** BD/DC = AB/AC gives 6/9 = 8/AC. Cross-multiply: 6 x AC = 72, so AC = 12 units. Check: 6/9 = 2/3 and 8/12 = 2/3.
+
+**5.** BD/DC = AB/AC = 10/15 = 2/3. Let BD = 2k and DC = 3k. Then 5k = 20, so k = 4. BD = 8 units and DC = 12 units. Check: 8 + 12 = 20, and 8/12 = 2/3.
+
+**6.** BD/DC = AB/AC gives 4/10 = AB/15. Cross-multiply: 10 x AB = 60, so AB = 6 units. Check: 4/10 = 2/5 and 6/15 = 2/5.
+
+**7.** First, BD/DC = 8/12 = 2/3. With 5k = 15, k = 3, so BD = 6 units and DC = 9 units. Then the bisector length formula gives AD² = AB x AC − BD x DC = 8 x 12 − 6 x 9 = 96 − 54 = 42. AD = √42, which is about 6.48 units.
+
+**8.** Yes. The converse of the Angle Bisector Theorem states that if a point D on BC satisfies BD/DC = AB/AC, then AD bisects angle A. Here BD/DC = 4/6 = 2/3 and AB/AC = 6/9 = 2/3. The ratios match, so AD bisects angle A. Also, BC = BD + DC = 4 + 6 = 10 units.
+
+**9.** BD/DC = AB/AC = 12/18 = 2/3. Let BD = 2k and DC = 3k. Then 5k = 25, so k = 5. BD = 10 units and DC = 15 units. Verify two ways: the segments add to 10 + 15 = 25, which matches BC, and the ratio 10/15 = 2/3 matches 12/18 = 2/3.
+
+**10.** The bisector of the right angle meets the hypotenuse, so the split follows the ratio of the legs: BD/DC = 9/12 = 3/4. Let BD = 3k and DC = 4k. Then 7k = 15, so k = 15/7. BD = 45/7, about 6.43 units, and DC = 60/7, about 8.57 units. Check: 45/7 + 60/7 = 105/7 = 15. The segments are not whole numbers because the ratio 3 to 4 does not divide 15 into whole parts: 15 divided into 7 equal shares gives fractions, and the theorem guarantees the ratio, not whole-number segments.
+
+## Real-World Applications
+
+The Angle Bisector Theorem appears wherever a corner must be divided fairly or a direction must be split exactly.
+
+- **Architecture:** When two walls meet at an angle, a bisector line gives the direction that splits the corner evenly. A partition, a roof ridge, or a decorative element placed along the bisector divides the corner space in proportion to the wall lengths, which keeps the layout balanced.
+- **Design:** Logo designers and graphic artists use bisectors to place elements symmetrically inside angular shapes. A bisector guides the placement of a centerpiece inside a triangular frame so that it sits in correct proportion to both sides.
+- **Surveying:** Surveyors split plots of land and measure angles between boundary lines. When a boundary must be divided from a corner, the bisector theorem tells the surveyor exactly where the dividing line meets the opposite boundary, given the lengths of the two sides.
+- **Engineering:** In structural work, a bisector helps position supports and braces inside triangular frames. A brace along the bisector of a joint angle distributes the geometry evenly between the two members it connects, and the theorem predicts where that brace meets the opposite member.
+
+In each case, the same principle applies: an angle condition controls a length ratio. The theorem turns a direction problem into a measurement problem, which is why it survives from classroom geometry into practical work.
+
+## Tips for Remembering the Theorem
+
+**Same side, same ratio: the segment near B goes with the side near B.**
+
+That one line prevents the most common error, which is flipping the proportion. Before writing any equation, label the diagram: mark the bisected angle, mark the landing point D, and write BD next to B and DC next to C. Then write the proportion with the same left-to-right order on both sides: BD over DC equals AB over AC.
+
+**Exam checklist:**
+
+- Is the ray a true bisector, with equal angle marks or a given statement?
+- Is the landing point on the opposite side, not on an extension?
+- Does each segment pair with the side on the same side of the triangle?
+- Do the two segments add to the full length of the opposite side?
+- Does the computed ratio match the ratio of the adjacent sides?
+- If a bisector length is asked, did you use AD² = AB x AC − BD x DC?
+
+<Faq heading="Frequently Asked Questions" description="Short answers to the questions students ask most about the Angle Bisector Theorem." items={[
+  {
+    "question": "What does the Angle Bisector Theorem state?",
+    "answer": "It states that if a ray bisects an angle of a triangle and meets the opposite side, it divides that side into segments proportional to the adjacent sides. In triangle ABC, if AD bisects angle A and meets BC at D, then BD/DC = AB/AC. The segment near each vertex pairs with the side near that same vertex."
+  },
+  {
+    "question": "How is an angle bisector different from a median?",
+    "answer": "A median joins a vertex to the midpoint of the opposite side, cutting that side into two equal pieces. An angle bisector splits the vertex angle into two equal angles and divides the opposite side in the ratio of the adjacent sides. The two segments coincide only in special cases, such as the bisector of the vertex angle in an isosceles triangle."
+  },
+  {
+    "question": "Does the Angle Bisector Theorem work in all triangles?",
+    "answer": "Yes. The theorem holds for every triangle: acute, right, and obtuse. It does not depend on the triangle having a right angle or equal sides. Wherever a bisector meets the opposite side, the split follows the ratio of the two sides forming the bisected angle. The proof uses only parallel lines and proportionality, which apply generally."
+  },
+  {
+    "question": "How do you find a missing side with the Angle Bisector Theorem?",
+    "answer": "Write the proportion BD/DC = AB/AC with the known values filled in, then solve for the unknown by cross-multiplication. If the split and one adjacent side are known, the other adjacent side follows directly. If the adjacent sides and the full opposite side are known, use the ratio to split that side into its two segments."
+  },
+  {
+    "question": "What is the formula for the length of an angle bisector?",
+    "answer": "If a bisector from vertex A meets BC at D, then AD² = AB x AC − BD x DC. Find the two segments with the Angle Bisector Theorem first, then substitute them into this formula. For example, with AB = 6, AC = 9, BD = 4, and DC = 6, AD² = 54 − 24 = 30, so AD is about 5.48 units."
+  },
+  {
+    "question": "What is the converse of the Angle Bisector Theorem?",
+    "answer": "The converse states that if a point D on side BC satisfies BD/DC = AB/AC, then AD bisects angle A. It lets you prove that a segment is a bisector from length information alone, without angle measurements. This is useful when a diagram gives side lengths but no angle marks, and you must decide whether a segment is truly a bisector."
+  },
+  {
+    "question": "Is the bisector of an angle also perpendicular to the opposite side?",
+    "answer": "Generally no. Perpendicularity belongs to the altitude, not the bisector. A bisector is perpendicular to the opposite side only in special cases, such as the bisector of the vertex angle in an isosceles triangle, where the bisector, median, and altitude are the same segment. In an ordinary scalene triangle, the bisector meets the opposite side at a slant."
+  },
+  {
+    "question": "Does the theorem work in right triangles?",
+    "answer": "Yes, and right triangles give useful special cases. The bisector of an acute angle splits the opposite leg in the ratio of the hypotenuse to the other leg. The bisector of the right angle splits the hypotenuse in the ratio of the two legs. In both cases the rule is unchanged: the segment near each vertex pairs with the side near that vertex."
+  },
+  {
+    "question": "Where do the three angle bisectors of a triangle meet?",
+    "answer": "All three angle bisectors meet at a single point called the incenter. The incenter is equally distant from all three sides of the triangle, which makes it the center of the inscribed circle, the largest circle that fits inside the triangle and touches all three sides. This concurrency is one reason bisectors matter beyond single-angle problems."
+  },
+  {
+    "question": "What happens if the two adjacent sides are equal?",
+    "answer": "If AB = AC, then the ratio AB/AC equals 1, so BD = DC and the bisector hits the midpoint of BC. In this special case the bisector is also the median and the altitude from that vertex. This happens in an isosceles triangle at the vertex between the equal sides, and it is the only situation where the bisector automatically lands on the midpoint."
+  },
+]} />
+
+## Conclusion
+
+The Angle Bisector Theorem turns an angle condition into a length ratio: a bisector divides the opposite side in the same ratio as the two sides forming the angle. Its proof, built on a parallel line and an isosceles triangle, shows exactly why the ratio holds in every triangle. The worked examples show the theorem finding splits, finding missing sides, and even finding the bisector length itself. The mistakes section shows where students go wrong, and the most important habit is the simplest one: pair each segment with the side on the same side of the triangle.
+
+Work through the practice problems with diagrams of your own, and check every answer two ways, by the segment sum and by the ratio. When the pairing habit becomes automatic, bisector problems stop being a source of errors and start being free marks on any geometry test.

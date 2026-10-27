@@ -37,5 +37,5 @@
 <text x="812.0" y="508.0" font-family="system-ui, sans-serif" font-size="26" fill="#facc15" text-anchor="start" font-weight="bold">B</text>
 <text x="320.0" y="532.0" font-family="system-ui, sans-serif" font-size="26" fill="#facc15" text-anchor="start" font-weight="bold">C</text>
 <text x="395.0" y="475.0" font-family="system-ui, sans-serif" font-size="22" fill="#facc15" text-anchor="start" font-weight="normal">90°</text>
-<text x="600.0" y="590.0" font-family="system-ui, sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="normal">Given  →  Theorem  →  Conclusion</text>
+<text x="600.0" y="565.0" font-family="system-ui, sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="normal">Given  →  Theorem  →  Conclusion</text>
 </svg>

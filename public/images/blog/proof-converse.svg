@@ -40,5 +40,4 @@
 <text x="470.0" y="545.0" font-family="system-ui, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="normal">AC = 8 cm</text>
 <text x="500.0" y="395.0" font-family="system-ui, sans-serif" font-size="20" fill="#ffffff" text-anchor="start" font-weight="normal">BC = 10 cm</text>
 <text x="395.0" y="475.0" font-family="system-ui, sans-serif" font-size="22" fill="#facc15" text-anchor="start" font-weight="normal">90°</text>
-<text x="600.0" y="592.0" font-family="system-ui, sans-serif" font-size="21" fill="#facc15" text-anchor="middle" font-weight="normal">6² + 8² = 36 + 64 = 100 = 10², so the right angle is at A</text>
 </svg>

@@ -41,5 +41,5 @@
 <text x="832.0" y="328.0" font-family="system-ui, sans-serif" font-size="26" fill="#facc15" text-anchor="start" font-weight="bold">B</text>
 <text x="722.0" y="123.5" font-family="system-ui, sans-serif" font-size="26" fill="#facc15" text-anchor="start" font-weight="bold">C</text>
 <text x="592.0" y="350.0" font-family="system-ui, sans-serif" font-size="18" fill="#ffffff" text-anchor="start" font-weight="normal">center</text>
-<text x="600.0" y="592.0" font-family="system-ui, sans-serif" font-size="22" fill="#facc15" text-anchor="middle" font-weight="normal">AB is a diameter, C is on the circle, so ∠ACB = 90°</text>
+<text x="600.0" y="565.0" font-family="system-ui, sans-serif" font-size="22" fill="#facc15" text-anchor="middle" font-weight="normal">AB is a diameter, C is on the circle, so ∠ACB = 90°</text>
 </svg>

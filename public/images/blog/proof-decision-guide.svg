@@ -66,5 +66,5 @@
 <line x1="520.0" y1="490.0" x2="630.0" y2="490.0" stroke="#facc15" stroke-width="3" />
 <line x1="610.0" y1="480.0" x2="630.0" y2="490.0" stroke="#facc15" stroke-width="3" />
 <line x1="610.0" y1="500.0" x2="630.0" y2="490.0" stroke="#facc15" stroke-width="3" />
-<text x="600.0" y="592.0" font-family="system-ui, sans-serif" font-size="21" fill="#facc15" text-anchor="middle" font-weight="normal">Start from what is given, follow the arrow</text>
+<text x="600.0" y="565.0" font-family="system-ui, sans-serif" font-size="21" fill="#facc15" text-anchor="middle" font-weight="normal">Start from what is given, follow the arrow</text>
 </svg>

@@ -41,5 +41,5 @@
 <text x="430.0" y="165.0" font-family="system-ui, sans-serif" font-size="22" fill="#facc15" text-anchor="start" font-weight="normal">35°</text>
 <text x="545.0" y="470.0" font-family="system-ui, sans-serif" font-size="22" fill="#facc15" text-anchor="start" font-weight="normal">55°</text>
 <text x="395.0" y="475.0" font-family="system-ui, sans-serif" font-size="22" fill="#facc15" text-anchor="start" font-weight="normal">90°</text>
-<text x="600.0" y="592.0" font-family="system-ui, sans-serif" font-size="22" fill="#facc15" text-anchor="middle" font-weight="normal">35° + 55° + 90° = 180°</text>
+<text x="600.0" y="565.0" font-family="system-ui, sans-serif" font-size="22" fill="#facc15" text-anchor="middle" font-weight="normal">35° + 55° + 90° = 180°</text>
 </svg>

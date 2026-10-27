@@ -39,5 +39,5 @@
 <text x="762.0" y="358.0" font-family="system-ui, sans-serif" font-size="26" fill="#facc15" text-anchor="start" font-weight="bold">C</text>
 <text x="545.0" y="330.0" font-family="system-ui, sans-serif" font-size="22" fill="#facc15" text-anchor="start" font-weight="normal">90°</text>
 <text x="600.0" y="470.0" font-family="system-ui, sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="normal">AB ⊥ AC, so ∠BAC = 90°</text>
-<text x="600.0" y="592.0" font-family="system-ui, sans-serif" font-size="22" fill="#facc15" text-anchor="middle" font-weight="normal">Triangle ABC is right-angled at A</text>
+<text x="600.0" y="565.0" font-family="system-ui, sans-serif" font-size="22" fill="#facc15" text-anchor="middle" font-weight="normal">Triangle ABC is right-angled at A</text>
 </svg>

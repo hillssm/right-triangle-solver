@@ -49,5 +49,4 @@
 <text x="670.0" y="532.0" font-family="system-ui, sans-serif" font-size="26" fill="#facc15" text-anchor="start" font-weight="bold">F</text>
 <text x="370.0" y="545.0" font-family="system-ui, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="normal">AB = DE = 13</text>
 <text x="820.0" y="545.0" font-family="system-ui, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="normal">AC = DF = 5</text>
-<text x="600.0" y="592.0" font-family="system-ui, sans-serif" font-size="22" fill="#facc15" text-anchor="middle" font-weight="normal">△ABC ≅ △DEF by HL</text>
 </svg>

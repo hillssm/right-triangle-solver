@@ -1,0 +1,459 @@
+---
+title: "Thales' Theorem: Definition, Formula, Proof, and Solved Examples"
+description: "Learn Thales' Theorem: the angle in a semicircle is always 90 degrees, with two proofs, solved examples, the converse, and practice problems with answers."
+image: "/images/blog/thales-theorem.svg"
+date: 2026-10-27
+author: "Math Expert"
+category: "Geometry"
+---
+
+import Faq from 'theme/components/Faq.astro';
+
+Imagine drawing a triangle inside a circle and discovering that one of its angles is guaranteed to be exactly 90 degrees. No protractor, no guesswork, and no complicated calculations. The secret lies in a remarkable geometric rule known as Thales' Theorem.
+
+The rule is simple to state and surprising the first time you meet it. Take any circle, draw a line straight through its center from one side to the other, and pick any other point on the circle. Join that point to both ends of the line. The angle at your chosen point is always a right angle, wherever on the circle you placed it. That guarantee is what makes the theorem so useful: it lets you spot right angles in diagrams, prove that triangles are right-angled, and set up length calculations with confidence.
+
+In this guide you will learn the definition, the formula, two complete proofs of why the theorem works, the converse, how it relates to the Pythagorean theorem, how it differs from the intercept theorem that shares its name, common mistakes, and how to solve problems step by step. Worked examples and practice problems with a full answer key are included throughout.
+
+## What Is Thales' Theorem?
+
+**Featured snippet answer:** Thales' Theorem states that if A and B are the endpoints of a diameter of a circle, and C is any other point on the circle, then the angle at C is a right angle. In triangle ABC, with AB as the diameter, angle ACB equals 90 degrees, no matter where C sits on the circumference.
+
+Read the statement slowly, because every condition in it matters. A and B are the endpoints of a diameter, which means the segment AB passes through the center of the circle and cuts it into two equal halves. C is another point on the circle, distinct from A and B. Join C to A and C to B, and triangle ABC is formed. The theorem says the angle at C, the angle opposite the diameter, is exactly 90 degrees.
+
+The phrase "subtended by a diameter" is just a compact way of saying the same thing. An angle is subtended by a segment when the segment is opposite the angle, with the angle's two sides reaching the segment's endpoints. Here the diameter AB subtends the angle at C, because the sides CA and CB reach A and B. So "the angle subtended by a diameter is a right angle" and "the angle in a semicircle is a right angle" are two wordings of one fact.
+
+### In Simple Words
+
+Draw a circle. Draw a diameter across it. Pick any point on the circle's edge and connect it to both ends of the diameter. You have made a triangle, and the corner at your chosen point is always square. Slide your point anywhere along the edge and the corner stays square. The only ways to break the rule are to move the point off the circle, or to use a chord that is not a diameter. Keep the diameter and keep the point on the circle, and the right angle is guaranteed.
+
+![Circle with diameter AB, center O, and point C on the circumference forming a right angle](/images/blog/thales-circle.svg)
+
+*Caption: Circle with diameter AB, center O, and point C on the circumference. The angle at C is a right angle, and AB is the hypotenuse of triangle ABC.*
+
+## Understanding the Geometry Behind Thales' Theorem
+
+The theorem uses a small set of circle terms. Knowing each one precisely prevents most errors, so here they are in plain language.
+
+### Circle
+
+A circle is the set of all points in a plane that sit at a fixed distance from a single point. That fixed distance is the radius, and the single point is the center. Every point on the circle is exactly one radius away from the center, and that single fact powers the whole proof of the theorem.
+
+### Center
+
+The center, usually labeled O, is the fixed point that defines the circle. It is the midpoint of every diameter. In the proof, the center matters because joining it to point C creates two triangles whose sides are radii.
+
+### Radius
+
+A radius is a segment from the center to any point on the circle. All radii of one circle are equal in length. In Thales' setup, OA, OB, and OC are all radii, so OA equals OC and OB equals OC. Those equalities are what make the two smaller triangles isosceles.
+
+### Diameter
+
+A diameter is a chord that passes through the center. It is the longest chord of a circle, and its length is twice the radius. In the theorem, AB is a diameter, which is why O is the midpoint of AB and why OA, OB, and OC are all the same length.
+
+### Semicircle
+
+A semicircle is half of a circle, cut by a diameter. The diameter AB divides the circle into two semicircles, an upper one and a lower one. Point C can sit on either semicircle, and the theorem works on both. The arc opposite C, the one not containing C, is itself a semicircle measuring 180 degrees, which is the key fact in the second proof.
+
+### Chord
+
+A chord is a segment joining two points on a circle. A diameter is a special chord, the only kind that passes through the center. This distinction matters: the theorem needs a diameter, not just any chord. A triangle built on an ordinary chord does not have a guaranteed right angle.
+
+### Inscribed Angle
+
+An inscribed angle is an angle whose vertex sits on the circle and whose sides are chords. Angle ACB is an inscribed angle, with sides CA and CB. A central fact of circle geometry is that an inscribed angle measures half of its intercepted arc. Thales' Theorem is the special case where the intercepted arc is a semicircle of 180 degrees, so the angle is half of 180 degrees, which is 90 degrees.
+
+### Right Triangle
+
+A right triangle is a triangle with one angle of exactly 90 degrees. The side opposite the right angle is the [hypotenuse](/blog/hypotenuse-formula/), and it is always the longest side. In Thales' setup, triangle ABC is a right triangle with the right angle at C, so AB, the diameter, is the hypotenuse. That is why the Pythagorean relation applies to it, as the next section shows.
+
+These pieces fit together in one picture: a diameter gives a center and equal radii, equal radii give isosceles triangles, and the angle sum of a triangle turns those equal angles into a right angle. The proof section works through that chain in full.
+
+## Thales' Theorem Formula
+
+The theorem itself is a statement about an angle, so its formula is short:
+
+**∠ACB = 90°**
+
+In this formula, AB is a diameter of the circle, C is a point on the circumference distinct from A and B, and AC and BC are the two sides meeting at the right angle. AB, opposite the right angle, is the hypotenuse of triangle ABC.
+
+Because triangle ABC is right-angled at C, a second relation follows as a consequence:
+
+**AC² + BC² = AB²**
+
+This is the Pythagorean relation applied to triangle ABC. It is worth stating plainly that this equation is a consequence of the right triangle, not the original statement of Thales' Theorem. Thales' Theorem gives you the right angle. The Pythagorean relation then lets you compute lengths. Confusing the two, or quoting the length equation as if it were Thales' Theorem itself, is a common exam error.
+
+A simple example shows both relations working together. Suppose AC measures 6 cm and BC measures 8 cm, with AB as the diameter. By Thales' Theorem, angle ACB is 90 degrees, so triangle ABC is right-angled at C and AB is the hypotenuse. The Pythagorean relation gives AB² = 6² + 8² = 36 + 64 = 100, so AB = 10 cm. The check runs the other way too: 6, 8, and 10 satisfy the Pythagorean relation, which is consistent with a right angle at C. The diagram below draws this exact triangle inside its circle, to scale.
+
+![Right triangle with legs 6 cm and 8 cm and hypotenuse 10 cm inside a circle](/images/blog/thales-example-6-8-10.svg)
+
+*Caption: The 6, 8, 10 triangle drawn to scale inside its circle. AB is the diameter at 10 cm, angle ACB is 90 degrees, and 6² + 8² = 10².*
+
+## Thales' Theorem Proof, Step by Step
+
+The classic proof uses only two facts you already know: all radii of a circle are equal, and the angles of a triangle add to 180 degrees. Follow each step and check it against the diagram.
+
+### Step 1: Draw a Circle
+
+Draw a circle with center O and diameter AB. The diameter passes through O, so O is the midpoint of AB, and OA equals OB.
+
+### Step 2: Select Point C
+
+Choose a point C on the circumference, distinct from A and B. It does not matter where on the circle C sits, on the upper semicircle or the lower one. The proof works for every choice.
+
+### Step 3: Join the Points
+
+Draw AC, BC, and OC. The segment OC is a radius, just like OA and OB. Drawing it splits triangle ABC into two smaller triangles, AOC and BOC, and those two triangles are the key to the proof.
+
+### Step 4: Identify Equal Radii
+
+Because OA, OB, and OC are all radii of the same circle, they are equal in length:
+
+**OA = OC and OB = OC**
+
+### Step 5: Identify Isosceles Triangles
+
+A triangle with two equal sides is isosceles, and its base angles are equal. Triangle AOC has OA equal to OC, so it is isosceles. Triangle BOC has OB equal to OC, so it is also isosceles.
+
+### Step 6: Assign Angles
+
+Let the base angles of triangle AOC both be x, so angle OAC equals angle ACO equals x. Let the base angles of triangle BOC both be y, so angle OBC equals angle BCO equals y.
+
+Now look at the large triangle ABC. Its angle at A is x, because angle OAC is the whole angle at A. Its angle at B is y, because angle OBC is the whole angle at B. Its angle at C is x plus y, because angle ACB is made of angle ACO (which is x) and angle BCO (which is y) stuck together.
+
+### Step 7: Use the Triangle Angle Sum
+
+The three angles of triangle ABC add to 180 degrees:
+
+x + y + (x + y) = 180°
+
+2(x + y) = 180°
+
+x + y = 90°
+
+### Step 8: State the Conclusion
+
+The angle at C equals x plus y, and x plus y equals 90 degrees. Therefore:
+
+**∠ACB = 90°**
+
+That completes the proof, and it works for any eligible point C, because no step assumed anything about where C sits beyond being on the circle.
+
+![Isosceles-triangle proof of Thales' Theorem with base angles x and y](/images/blog/thales-proof-isosceles.svg)
+
+*Caption: The proof diagram. OC splits triangle ABC into two isosceles triangles with base angles x and y, so angle ACB equals x plus y, and the angle sum forces x plus y to be 90 degrees.*
+
+### Exam-Style Compact Proof
+
+For written exams, the same argument fits in a few lines. Let O be the center and AB the diameter. OA = OB = OC, since all are radii, so triangles OAC and OBC are isosceles. Let angle OAC = angle OCA = x and angle OBC = angle OCB = y. Then angle ACB = x + y. The angle sum of triangle ABC gives x + y + (x + y) = 180 degrees, so 2(x + y) = 180 degrees and x + y = 90 degrees. Hence angle ACB = 90 degrees, as required.
+
+### Beginner-Friendly Explanation
+
+If the algebra feels abstract, think of it as a balancing act. The two small triangles each contribute a pair of equal angles, x and y. The big triangle contains two copies of x and two copies of y, and all four must add to 180 degrees. Two copies of (x plus y) make 180 degrees, so one copy of (x plus y) makes 90 degrees. And x plus y is exactly the angle at C. The right angle is forced by the arithmetic, not by measurement.
+
+## Alternative Proof Using the Inscribed Angle Theorem
+
+There is a second, shorter proof that uses the inscribed angle theorem instead of isosceles triangles. It is worth knowing both, because different exams expect different methods, and each proof explains the theorem from a different angle.
+
+The inscribed angle theorem says that an inscribed angle measures half of its intercepted arc. The intercepted arc is the part of the circle cut off by the angle's two sides, on the side away from the vertex.
+
+Apply that here. Angle ACB has its sides reaching A and B, so it intercepts the arc from A to B that does not contain C. Since AB is a diameter, that arc is a semicircle, and a semicircle measures 180 degrees. Therefore:
+
+**∠ACB = 180° / 2 = 90°**
+
+Take care with one detail: the intercepted arc is the one not containing C. The arc that does contain C, the one C sits on, is also a semicircle of 180 degrees, so in this special case either arc gives the same number. In general inscribed-angle problems the two arcs differ, and picking the wrong one is a real error. Here the diameter makes both arcs semicircles, so the answer is 90 degrees either way, but the correct arc to name is the one opposite C.
+
+![Inscribed-angle proof showing the intercepted semicircular arc of 180 degrees](/images/blog/thales-proof-inscribed.svg)
+
+*Caption: The inscribed-angle proof. Angle ACB intercepts the semicircular arc AB, which measures 180 degrees, so the angle is half of that, 90 degrees.*
+
+### Comparing the Two Proofs
+
+The isosceles-triangle proof builds the result from scratch using only radii and the angle sum. It is self-contained and it shows exactly why the angle must be 90 degrees, which is why many textbooks present it first. The inscribed-angle proof is shorter, but it leans on a bigger theorem, so it is only shorter if you already accept the inscribed angle theorem.
+
+For beginners, the inscribed-angle proof is usually easier to remember: half of a semicircle is a right angle. For exams that ask you to prove Thales' Theorem from basic facts, the isosceles-triangle proof is the safer choice, because it assumes less. Knowing both means you can use whichever fits the question in front of you.
+
+## Thales' Theorem Solved Examples
+
+Each example below states the problem, lists what is given, names the rule, shows the full solution, and ends with the answer and a check. Read the rule before the solution in each case, so you can see which idea does the work.
+
+### Example 1: Finding a Right Angle
+
+**Problem.** A triangle is inscribed in a semicircle with diameter AB. Point C lies on the circle. What is the measure of angle ACB?
+
+**Given.** AB is a diameter, C is on the circumference, C is distinct from A and B.
+
+**Rule.** Thales' Theorem: the angle subtended by a diameter is a right angle.
+
+**Solution.** Since AB is a diameter and C is on the circle, angle ACB is the angle subtended by a diameter. By Thales' Theorem, angle ACB equals 90 degrees.
+
+**Answer.** Angle ACB = 90 degrees.
+
+**Why it is correct.** No measurement or calculation is needed. The diameter and the point on the circle are exactly the conditions of the theorem, so the right angle follows directly.
+
+### Example 2: Finding a Missing Side
+
+**Problem.** A triangle has legs measuring 9 cm and 12 cm, and its hypotenuse is a diameter of a circle. Find the length of the hypotenuse.
+
+**Given.** AC = 9 cm, BC = 12 cm, angle ACB = 90 degrees by Thales' Theorem, AB is the hypotenuse.
+
+**Rule.** The Pythagorean relation for a right triangle: AC² + BC² = AB².
+
+**Solution.** Substitute the known legs: AB² = 9² + 12² = 81 + 144 = 225. Take the square root: AB = 15 cm. The negative root is discarded because a length is positive.
+
+**Answer.** The hypotenuse is 15 cm.
+
+**Why it is correct.** The check is 9² + 12² = 225 = 15², and 9, 12, 15 is a valid triangle since 9 + 12 is greater than 15. Thales' Theorem supplied the right angle, and the Pythagorean relation supplied the length.
+
+### Example 3: Finding a Missing Leg
+
+**Problem.** The diameter of a circle is 13 cm. A triangle inscribed in the circle has one leg measuring 5 cm. Find the other leg.
+
+**Given.** AB = 13 cm (the diameter and hypotenuse), AC = 5 cm, angle ACB = 90 degrees by Thales' Theorem.
+
+**Rule.** The Pythagorean relation, rearranged: BC² = AB² - AC².
+
+**Solution.** BC² = 13² - 5² = 169 - 25 = 144. Take the square root: BC = 12 cm.
+
+**Answer.** The other leg is 12 cm.
+
+**Why it is correct.** The check is 5² + 12² = 25 + 144 = 169 = 13², and 5 + 12 is greater than 13, so the triangle is valid. Note the pattern: the diameter is the number you square and subtract from, never the number you solve for by adding.
+
+### Example 4: Finding Unknown Angles
+
+**Problem.** In a triangle inscribed in a semicircle, one acute angle measures 35 degrees. Find the other acute angle.
+
+**Given.** Angle ACB = 90 degrees by Thales' Theorem, angle BAC = 35 degrees.
+
+**Rule.** The angles of a triangle add to 180 degrees, and the two acute angles of a right triangle are complementary.
+
+**Solution.** Let the unknown angle be angle ABC. Then 35° + 90° + angle ABC = 180°. So angle ABC = 180° - 90° - 35° = 55°.
+
+**Answer.** The other acute angle is 55 degrees.
+
+**Why it is correct.** The check is 35 + 55 + 90 = 180, and both acute angles are less than 90 degrees, as they must be in a right triangle. The shortcut for such questions is 90 minus the known acute angle: 90 - 35 = 55. For more on complementary pairs, see the [angles in a right triangle](/blog/angles-in-a-right-triangle/) guide.
+
+### Example 5: Using the Circle's Radius
+
+**Problem.** The radius of a circle is 10 cm. A triangle inscribed in the circle has the diameter as one side and one leg measuring 12 cm. Find the other leg.
+
+**Given.** Radius = 10 cm, so the diameter AB = 2 × 10 = 20 cm. One leg AC = 12 cm, angle ACB = 90 degrees by Thales' Theorem.
+
+**Rule.** Diameter = 2 × radius, then the Pythagorean relation: BC² = AB² - AC².
+
+**Solution.** First find the diameter: AB = 20 cm. Then BC² = 20² - 12² = 400 - 144 = 256. Take the square root: BC = 16 cm.
+
+**Answer.** The other leg is 16 cm.
+
+**Why it is correct.** The check is 12² + 16² = 144 + 256 = 400 = 20², and 12 + 16 is greater than 20. The common slip here is using the radius as the hypotenuse. The hypotenuse is the diameter, twice the radius, so doubling first is essential.
+
+### Example 6: Advanced Geometry Problem
+
+**Problem.** A circular window has a diameter of 65 cm. A triangular brace is fitted inside it with vertices at the two ends of a diameter and at a point on the rim. The two shorter sides of the brace measure 25 cm and 60 cm. Show that the brace forms a right angle, and find its area.
+
+**Given.** One side of the triangle is a diameter (65 cm), the third vertex is on the circle, the other two sides are 25 cm and 60 cm.
+
+**Rule.** Thales' Theorem for the angle, then the area formula for a right triangle: area = (1/2) × base × height.
+
+**Solution.** Step 1, the angle: since one side is a diameter and the third vertex is on the circle, Thales' Theorem says the angle opposite the diameter is 90 degrees. The brace is a right triangle. Step 2, the check: 25² + 60² = 625 + 3600 = 4225, and 65² = 4225, so the side lengths confirm the right angle independently. Step 3, the area: the two legs are 25 cm and 60 cm, so area = (1/2) × 25 × 60 = 750 cm².
+
+**Answer.** The brace forms a right angle by Thales' Theorem, and its area is 750 cm².
+
+**Why it is correct.** Both routes agree: Thales' Theorem guarantees the right angle from the setup, and the side lengths satisfy the Pythagorean relation exactly. The triangle inequality also holds, since 25 + 60 is greater than 65.
+
+## Converse of Thales' Theorem
+
+The converse reverses the direction of the theorem. The original theorem starts with a diameter and concludes a right angle. The converse starts with a right angle and concludes a diameter:
+
+**If triangle ABC is right-angled at C, then C lies on the circle having AB as its diameter.**
+
+Equivalently, the hypotenuse of a right triangle is always a diameter of its circumcircle, and the midpoint of the hypotenuse is the circumcenter. This is the same fact the [median to the hypotenuse](/blog/median-to-the-hypotenuse/) post proves from the other side: the median to the hypotenuse equals half the hypotenuse, which is exactly the statement that the midpoint is equidistant from all three vertices.
+
+A short justification uses Thales' Theorem itself plus a comparison of angles. Let O be the midpoint of AB and draw the circle with center O and radius OA. The ray from O through C meets this circle at some point, call it D. By Thales' Theorem, angle ADB is 90 degrees, since AB is a diameter of that circle. Now compare: if C were inside the circle, angle ACB would be greater than 90 degrees, and if C were outside the circle, angle ACB would be less than 90 degrees. But angle ACB is exactly 90 degrees, so C can be neither inside nor outside. It must lie on the circle, which means AB is a diameter of the circle through A, B, and C.
+
+![Converse of Thales' Theorem: a right triangle with its hypotenuse as a diameter](/images/blog/thales-converse.svg)
+
+*Caption: The converse. Triangle ABC is right-angled at C, so C lies on the circle with AB as its diameter, and the midpoint O of AB is the center of that circle.*
+
+| | Thales' Theorem | Converse of Thales' Theorem |
+| --- | --- | --- |
+| Starting point | AB is a diameter, C is on the circle | Triangle ABC is right-angled at C |
+| Conclusion | Angle ACB is 90 degrees | C lies on the circle with AB as its diameter |
+| Direction | Diameter leads to right angle | Right angle leads to diameter |
+| Typical use | Prove an angle is 90 degrees | Find a circumcenter, or prove a segment is a diameter |
+| Key construction | Join the center O to C | Take the midpoint of the hypotenuse as the center |
+
+The two statements together give a complete two-way test: a triangle inscribed in a circle has a right angle exactly when its hypotenuse is a diameter. Either direction can be the one a question needs, so read the question to see which fact is given and which is asked for.
+
+## Thales' Theorem vs. Pythagorean Theorem
+
+These two theorems are close partners and are often confused, because both appear in right-triangle problems and both can appear in the same question. They answer different questions, and keeping their jobs separate makes problems much easier.
+
+| | Thales' Theorem | Pythagorean Theorem |
+| --- | --- | --- |
+| Mathematical statement | If AB is a diameter and C is on the circle, angle ACB = 90° | In a right triangle, a² + b² = c² |
+| Main purpose | Establish that an angle is a right angle | Relate the three side lengths |
+| Formula | ∠ACB = 90° | AC² + BC² = AB² (for a right angle at C) |
+| Geometric conditions | A circle, a diameter, a point on the circumference | A triangle already known to be right-angled |
+| Type of problem solved | Is this angle 90 degrees? Is this triangle right-angled? | What is the missing side length? |
+| Practical example | A triangle on a diameter must have a right angle at the rim | A 6 cm and 8 cm pair of legs give a 10 cm hypotenuse |
+
+The working order in most problems is Thales first, then Pythagoras. Thales' Theorem establishes the right angle, which is the license the Pythagorean relation needs. Once the right angle is established, the Pythagorean relation computes the missing side. Example 2 above follows exactly that order: Thales gives the right angle at C, and then 9² + 12² = 15² gives the hypotenuse. Neither theorem replaces the other, and quoting the length equation as Thales' Theorem, or expecting Thales' Theorem alone to produce a length, are both errors.
+
+For the full treatment of the length relation, see the [Pythagorean theorem proof](/blog/pythagorean-theorem-proof/) and the [Pythagorean theorem formula](/blog/pythagorean-theorem-formula/) guides. For the names and roles of the sides, see the [sides of a right triangle](/blog/sides-of-a-right-triangle/) guide.
+
+![Conceptual comparison: Thales establishes the right angle, Pythagoras finds a side](/images/blog/thales-vs-pythagoras.svg)
+
+*Caption: The partnership. Thales' Theorem proves the angle is 90 degrees, and the Pythagorean theorem then relates the side lengths.*
+
+## Thales' Theorem and the Intercept Theorem
+
+This section clears up a genuine naming collision that confuses students in different countries. Read it carefully, because the two theorems share a name but are different statements.
+
+In the United States, the United Kingdom, and many other curricula, "Thales' Theorem" means the angle-in-a-semicircle theorem that this article is about: an angle subtended by a diameter is a right angle.
+
+In several other curricula, including those of France and India, the same name means something else: the intercept theorem, also called the basic proportionality theorem. That theorem says that a line drawn parallel to one side of a triangle divides the other two sides proportionally. In triangle ABC, if DE is parallel to BC, with D on AB and E on AC, then AD / DB = AE / EC.
+
+A basic example shows the idea. Suppose DE is parallel to BC, AD measures 4 cm, DB measures 6 cm, and AE measures 6 cm. Then AD / DB = AE / EC gives 4 / 6 = 6 / EC. Cross-multiplying gives 4 × EC = 36, so EC = 9 cm. The check is consistent: AB = 4 + 6 = 10 cm, AC = 6 + 9 = 15 cm, and AD / AB = 4 / 10 = 2 / 5 while AE / AC = 6 / 15 = 2 / 5, the same ratio.
+
+These are two different theorems that happen to share a name. The semicircle theorem is about angles in circles. The intercept theorem is about proportions created by parallel lines. They are not the same statement, one does not imply the other in any direct way, and an exam answer that uses one when the question asks for the other will be marked wrong. When you meet the name "Thales' Theorem" in a question, check the diagram: a circle with a diameter points to the semicircle theorem, while parallel lines cutting two sides points to the intercept theorem.
+
+## Real-Life Applications of Thales' Theorem
+
+The theorem is a school-geometry result first, and honest applications stay close to geometry. Its value in practice comes from guaranteeing right angles and locating centers, not from daily engineering calculations.
+
+### Geometric Constructions
+
+A semicircle is a practical tool for constructing a right angle without a protractor. Draw a segment, draw a semicircle on it as the diameter, and join any point on the arc to the segment's ends: the angle at that point is square by Thales' Theorem. The same idea constructs a tangent from an external point to a circle: draw the segment from the external point to the center, draw a circle on that segment as its diameter, and where the two circles meet, the radius to that point is perpendicular to the line from the external point, which is exactly what a tangent needs.
+
+### Engineering and Technical Drawing
+
+In technical drawing, circle-based right-angle relationships help place perpendiculars and check squareness in geometric designs. A designer working with circular parts can use the diameter property to confirm that a corner is square from the drawing alone, rather than by measuring the angle. The theorem is a checking tool here, one geometric fact among many in a drawing, not a standalone design method.
+
+### Architecture
+
+In layout and drafting work, the same checking idea applies at a larger scale. Circular arcs appear in arches, windows, and curved walls, and the diameter property gives a geometric way to verify right angles in those layouts. As with engineering, the theorem supports drafting accuracy rather than driving a whole design.
+
+### Computer-Aided Design
+
+CAD software represents circles and triangles with constraints, and Thales' Theorem describes one constraint relationship exactly: when a triangle's vertices lie on a circle with one side as the diameter, the opposite angle is constrained to 90 degrees. Understanding that relationship helps a user read and set constraints sensibly, even though the software itself does the arithmetic.
+
+### Mathematics and Education
+
+The theorem's main home is education itself. It connects circle geometry to right triangles, it gives a first example of a proof that turns equal lengths into an angle result, and it explains why the midpoint of a hypotenuse is the circumcenter, a fact used across geometry. For exam candidates, it is also a fast recognition tool: spot a diameter and a point on the circle, and the right angle is already known.
+
+## Common Mistakes When Using Thales' Theorem
+
+### Mistake 1: Treating Any Chord as a Diameter
+
+**Why it is incorrect.** The theorem needs a diameter, a chord through the center. An ordinary chord does not give equal radii to the endpoints in the same way, and the inscribed angle it subtends is generally not 90 degrees.
+
+**How to avoid it.** Before applying the theorem, confirm the segment passes through the center, or is labeled as a diameter, or is twice a labeled radius. If none of those hold, do not use the theorem.
+
+### Mistake 2: Assuming Every Triangle Inside a Circle Is Right-Angled
+
+**Why it is incorrect.** A triangle inscribed in a circle is right-angled only when one of its sides is a diameter. A triangle with all three vertices on the circle but no side as a diameter has no guaranteed right angle.
+
+**How to avoid it.** Check for a diameter first. No diameter, no Thales. The question must give you a diameter, or give you facts that prove a segment is one.
+
+### Mistake 3: Placing Point C Inside Rather Than on the Circle
+
+**Why it is incorrect.** The theorem requires C to be on the circumference. A point inside the circle gives an angle greater than 90 degrees, and a point outside gives an angle less than 90 degrees.
+
+**How to avoid it.** Read the diagram literally: the vertex must sit on the circle's edge. If a point is drawn inside or outside, the theorem does not apply to it.
+
+### Mistake 4: Marking the Wrong Angle as 90 Degrees
+
+**Why it is incorrect.** The right angle is at C, the point on the circumference, opposite the diameter. Marking an angle at A or B as 90 degrees misreads the theorem and breaks every calculation that follows.
+
+**How to avoid it.** Find the diameter, then find the angle opposite it. That angle, at the circumference point, is the right angle. Say it in words before marking anything: "the angle opposite the diameter is 90 degrees."
+
+### Mistake 5: Confusing the Radius With the Diameter
+
+**Why it is incorrect.** The hypotenuse is the diameter, twice the radius. Using the radius as the hypotenuse halves every length result that follows.
+
+**How to avoid it.** When a question gives a radius, double it first and write "diameter =" explicitly. Example 5 above shows the step: radius 10 cm gives diameter 20 cm, and only then does the Pythagorean calculation start.
+
+### Mistake 6: Using the Pythagorean Theorem With the Wrong Hypotenuse
+
+**Why it is incorrect.** In a Thales setup, the hypotenuse is the diameter AB. Treating a leg as the hypotenuse, or adding the diameter to the sum of squares instead of subtracting a leg from it, produces a wrong length.
+
+**How to avoid it.** After Thales gives the right angle at C, name the hypotenuse out loud: AB, the diameter. Then write the equation with AB alone on one side before substituting numbers.
+
+### Mistake 7: Confusing the Semicircle Theorem With the Intercept Theorem
+
+**Why it is incorrect.** The two theorems share a name but answer different questions. Applying proportional segments to a circle problem, or expecting a right angle from parallel lines, mixes up two unrelated statements.
+
+**How to avoid it.** Check the diagram before choosing a theorem. A circle with a diameter means the semicircle theorem. Parallel lines cutting two sides of a triangle mean the intercept theorem. Let the diagram decide, not the shared name.
+
+## Thales' Theorem Practice Questions
+
+Try these before looking at the answer key. The key is in the next section, kept separate so you can work honestly.
+
+### Beginner
+
+**Question 1.** AB is a diameter of a circle and C is a point on the circle. Angle BAC measures 40 degrees. Find angle ACB and angle ABC.
+
+**Question 2.** The diameter of a circle is 26 cm. A triangle inscribed in the circle has one leg measuring 10 cm. Find the other leg.
+
+**Question 3.** True or false, with a reason: every triangle drawn inside a circle is right-angled.
+
+### Intermediate
+
+**Question 4.** The radius of a circle is 15 cm. A triangle inscribed in the circle has one leg measuring 18 cm. Find the other leg.
+
+**Question 5.** Triangle ABC is right-angled at C, with AB = 25 cm and BC = 7 cm. Find AC, and find the radius of the circle that passes through A, B, and C.
+
+**Question 6.** AB is a diameter of length 20 cm, and C is a point on the circle with angle BAC = 30 degrees. Find angle ABC and the length BC.
+
+**Question 7.** O is the center of a circle with diameter AB, and C is a point on the circle with angle OAC = 28 degrees. Find angle ACB and angle OBC.
+
+### Challenging
+
+**Question 8.** AB is a diameter of length 25 cm, and C is a point on the circle with AC = 15 cm. Point D is the point diametrically opposite C, so CD is also a diameter. Find BC, AD, and BD.
+
+**Question 9.** Explain how Thales' Theorem lets you construct a tangent to a circle from an external point P. Describe each construction step and say where the right angle comes from.
+
+**Question 10.** A circle has radius 13 cm, AB is a diameter, and C is a point on the circle such that AC : BC = 5 : 12. Find AC and BC.
+
+## Answer Key
+
+**Answer 1.** Angle ACB = 90 degrees by Thales' Theorem, since AB is a diameter and C is on the circle. Angle ABC = 180° - 90° - 40° = 50°.
+
+**Answer 2.** BC² = 26² - 10² = 676 - 100 = 576, so BC = 24 cm.
+
+**Answer 3.** False. A triangle inside a circle is right-angled only when one side is a diameter and the third vertex is on the circle. Without a diameter, no right angle is guaranteed.
+
+**Answer 4.** The diameter is 2 × 15 = 30 cm. The other leg squared is 30² - 18² = 900 - 324 = 576, so the other leg is 24 cm.
+
+**Answer 5.** AC² = 25² - 7² = 625 - 49 = 576, so AC = 24 cm. By the converse of Thales' Theorem, the hypotenuse AB is a diameter of the circumcircle, so the radius is 25 / 2 = 12.5 cm.
+
+**Answer 6.** Angle ABC = 180° - 90° - 30° = 60°. BC is opposite the 30 degree angle, so BC = AB × sin 30° = 20 × 0.5 = 10 cm.
+
+**Answer 7.** Angle ACB = 90 degrees by Thales' Theorem. Using the proof notation, angle OAC = x = 28 degrees, and angle ACB = x + y = 90 degrees, so angle OBC = y = 90° - 28° = 62°.
+
+**Answer 8.** BC² = 25² - 15² = 625 - 225 = 400, so BC = 20 cm. CD is a diameter, so angle CAD = 90 degrees, giving AD² = 25² - 15² = 400, so AD = 20 cm. Angle CBD is also 90 degrees, so BD² = 25² - 20² = 625 - 400 = 225, so BD = 15 cm.
+
+**Answer 9.** Draw the segment OP from the external point to the center. Draw a circle with OP as its diameter. Where this new circle meets the original circle, call the meeting point T. By Thales' Theorem, angle OTP is 90 degrees, since OP is a diameter. That means OT, a radius of the original circle, is perpendicular to PT, so PT is a tangent to the original circle at T.
+
+**Answer 10.** The diameter is 2 × 13 = 26 cm. Write AC = 5k and BC = 12k. Then (5k)² + (12k)² = 26², so 169k² = 676, k² = 4, and k = 2. Therefore AC = 10 cm and BC = 24 cm.
+
+## Who Was Thales of Miletus?
+
+Thales of Miletus was an ancient Greek thinker of the early 6th century BC, traditionally credited with proving the theorem in this article. The word "traditionally" matters: no writings of Thales survive, so the attribution comes from later writers rather than from his own hand. Ancient sources report that he was the first to inscribe a right triangle in a circle, and the result appears as Proposition 31 of Book III in Euclid's Elements, which states that the angle in a semicircle is right. The theorem is sometimes attributed to Pythagoras instead, and special cases of it were known earlier in Babylon and India. What is certain is the mathematics itself, which stands on its own proof regardless of who first stated it.
+
+## Frequently Asked Questions
+
+<Faq heading="Frequently Asked Questions" description="Common questions about Thales' Theorem, answered briefly." items={[{ "question": "What is Thales' Theorem?", "answer": "Thales' Theorem states that an angle subtended by a diameter at the circumference of a circle is a right angle. If AB is a diameter and C is any other point on the circle, then triangle ABC has a right angle at C, so angle ACB equals 90 degrees. The result holds for every position of C on the circle." }, { "question": "What is Thales' Theorem in simple words?", "answer": "Draw a circle, draw a line straight through its center from one side to the other, and pick any other point on the circle. Join that point to both ends of the line. The angle at your chosen point is always 90 degrees, a perfect right angle, wherever you place the point on the circle." }, { "question": "What is the formula for Thales' Theorem?", "answer": "The theorem is a statement about an angle, so its formula is short: angle ACB equals 90 degrees, where AB is a diameter and C is a point on the circle. Because triangle ABC is right-angled at C, the Pythagorean relation follows as a consequence: AC squared plus BC squared equals AB squared." }, { "question": "How do you prove Thales' Theorem?", "answer": "Join the center O to point C. Since OA, OB, and OC are all radii, triangles AOC and BOC are isosceles, so their base angles are equal. Call them x and y. The angle at C equals x plus y, and the three angles of triangle ABC add to 180 degrees, giving 2 times (x plus y) equals 180 degrees, so x plus y equals 90 degrees." }, { "question": "Why is Thales' Theorem true?", "answer": "It follows from two basic facts: all radii of a circle are equal, and the angles of a triangle add to 180 degrees. Equal radii make two isosceles triangles, and equal base angles in those triangles force the angle at the circumference to be exactly half of 180 degrees, which is 90 degrees." }, { "question": "What is the converse of Thales' Theorem?", "answer": "The converse reverses the direction: if triangle ABC is right-angled at C, then C lies on the circle with AB as its diameter. In other words, the hypotenuse of a right triangle is always a diameter of its circumcircle, and the midpoint of the hypotenuse is the circumcenter." }, { "question": "What is an example of Thales' Theorem?", "answer": "Take a circle with diameter AB equal to 10 cm and a point C on the circle with AC equal to 6 cm. By Thales' Theorem, angle ACB is 90 degrees, so triangle ABC is right-angled at C. The Pythagorean relation then gives BC squared equal to 100 minus 36, which is 64, so BC equals 8 cm." }, { "question": "What is the difference between Thales' and Pythagorean theorems?", "answer": "Thales' Theorem establishes that an angle is 90 degrees: it tells you a triangle is right-angled because one side is a diameter. The Pythagorean theorem starts from a known right angle and relates the side lengths, stating that the squares of the two legs add to the square of the hypotenuse. One gives the angle, the other gives the lengths." }, { "question": "Does Thales' Theorem work with every circle?", "answer": "Yes. The theorem holds for a circle of any size, because it depends only on the relationship between a diameter and a point on the circumference, not on the radius. A larger circle gives longer sides, but the angle at the circumference is still exactly 90 degrees in every case." }, { "question": "Can Thales' Theorem be used to find missing sides?", "answer": "Yes, in combination with the Pythagorean theorem. Thales' Theorem first guarantees the right angle, which licenses the Pythagorean relation. Once you know the triangle is right-angled at C with hypotenuse AB, you can solve for any missing side from the other two, just as in the worked examples." }, { "question": "What are the applications of Thales' Theorem?", "answer": "The theorem supports geometric constructions, such as drawing an accurate right angle from a semicircle and constructing tangents from an external point. It appears in technical drawing, computer-aided design constraints, and circle geometry proofs, and it explains why the midpoint of a hypotenuse is the circumcenter of a right triangle." }, { "question": "Is Thales' Theorem the same as the intercept theorem?", "answer": "No, and the shared name causes real confusion. In many countries, Thales' Theorem means the angle in a semicircle. In other curricula, the same name means the intercept theorem: a line parallel to one side of a triangle divides the other two sides proportionally. They are different statements, and this article keeps them clearly separate." }]} />
+
+## Key Takeaways
+
+1. If AB is a diameter and C is any other point on the circle, angle ACB is exactly 90 degrees, wherever C sits.
+2. The proof runs on equal radii: OA, OB, and OC make two isosceles triangles, and the angle sum turns their base angles x and y into x + y = 90 degrees.
+3. Thales gives the angle and Pythagoras gives the lengths. Use them in that order: establish the right angle first, then compute sides.
+4. The converse runs the other way: a right triangle's hypotenuse is a diameter of its circumcircle, and the hypotenuse midpoint is the circumcenter.
+5. The shared name is a trap. A circle with a diameter means the semicircle theorem, while parallel lines cutting two sides mean the intercept theorem. Let the diagram decide.
+
+## Conclusion
+
+Thales' Theorem turns one simple setup into a guaranteed right angle. A diameter, a point on the circle, and two joined segments are all it takes, and the result never depends on where the point sits. That guarantee is why the theorem earns its place in geometry: it proves right angles without measurement, it locates circumcenters through its converse, and it opens the door to every length calculation that follows from the Pythagorean relation. The two proofs in this guide show the same fact from different sides, one from equal radii and the angle sum, the other from the inscribed angle. Keep the conditions in mind, diameter and point on the circle, and watch for the shared name with the intercept theorem. Now draw your own circles, test the theorem with your own points, and work through the practice problems. The right angle will be there every time.

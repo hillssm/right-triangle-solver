@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e293b"/><stop offset="1" stop-color="#0f172a"/></linearGradient></defs>
+<rect x="0" y="0" width="1200" height="630" fill="url(#bg)"/>
+<line x1="60" y1="58" x2="60" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="120" y1="58" x2="120" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="180" y1="58" x2="180" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="240" y1="58" x2="240" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="300" y1="58" x2="300" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="360" y1="58" x2="360" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="420" y1="58" x2="420" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="480" y1="58" x2="480" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="540" y1="58" x2="540" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="600" y1="58" x2="600" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="660" y1="58" x2="660" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="720" y1="58" x2="720" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="780" y1="58" x2="780" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="840" y1="58" x2="840" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="900" y1="58" x2="900" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="960" y1="58" x2="960" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="1020" y1="58" x2="1020" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="1080" y1="58" x2="1080" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="1140" y1="58" x2="1140" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="60" x2="1142" y2="60" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="120" x2="1142" y2="120" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="180" x2="1142" y2="180" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="240" x2="1142" y2="240" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="300" x2="1142" y2="300" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="360" x2="1142" y2="360" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="420" x2="1142" y2="420" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="480" x2="1142" y2="480" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="540" x2="1142" y2="540" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="600" x2="1142" y2="600" stroke="#243447" stroke-width="1"/>
+<text x="600.0" y="42.0" font-family="system-ui, sans-serif" font-size="26" fill="#facc15" text-anchor="middle" font-weight="bold">Proof Method Decision Guide</text>
+<rect x="120.0" y="100.0" width="400.0" height="76.0" stroke="#38bdf8" stroke-width="2" fill="#16233a" />
+<rect x="640.0" y="100.0" width="440.0" height="76.0" stroke="#facc15" stroke-width="2" fill="#16233a" />
+<text x="320.0" y="147.0" font-family="system-ui, sans-serif" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="normal">Three side lengths</text>
+<text x="860.0" y="147.0" font-family="system-ui, sans-serif" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="normal">Converse of Pythagoras</text>
+<line x1="520.0" y1="138.0" x2="630.0" y2="138.0" stroke="#facc15" stroke-width="3" />
+<line x1="610.0" y1="128.0" x2="630.0" y2="138.0" stroke="#facc15" stroke-width="3" />
+<line x1="610.0" y1="148.0" x2="630.0" y2="138.0" stroke="#facc15" stroke-width="3" />
+<rect x="120.0" y="188.0" width="400.0" height="76.0" stroke="#38bdf8" stroke-width="2" fill="#16233a" />
+<rect x="640.0" y="188.0" width="440.0" height="76.0" stroke="#facc15" stroke-width="2" fill="#16233a" />
+<text x="320.0" y="235.0" font-family="system-ui, sans-serif" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="normal">Two acute angles</text>
+<text x="860.0" y="235.0" font-family="system-ui, sans-serif" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="normal">Triangle angle sum</text>
+<line x1="520.0" y1="226.0" x2="630.0" y2="226.0" stroke="#facc15" stroke-width="3" />
+<line x1="610.0" y1="216.0" x2="630.0" y2="226.0" stroke="#facc15" stroke-width="3" />
+<line x1="610.0" y1="236.0" x2="630.0" y2="226.0" stroke="#facc15" stroke-width="3" />
+<rect x="120.0" y="276.0" width="400.0" height="76.0" stroke="#38bdf8" stroke-width="2" fill="#16233a" />
+<rect x="640.0" y="276.0" width="440.0" height="76.0" stroke="#facc15" stroke-width="2" fill="#16233a" />
+<text x="320.0" y="323.0" font-family="system-ui, sans-serif" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="normal">Perpendicular lines</text>
+<text x="860.0" y="323.0" font-family="system-ui, sans-serif" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="normal">Definition of perpendicularity</text>
+<line x1="520.0" y1="314.0" x2="630.0" y2="314.0" stroke="#facc15" stroke-width="3" />
+<line x1="610.0" y1="304.0" x2="630.0" y2="314.0" stroke="#facc15" stroke-width="3" />
+<line x1="610.0" y1="324.0" x2="630.0" y2="314.0" stroke="#facc15" stroke-width="3" />
+<rect x="120.0" y="364.0" width="400.0" height="76.0" stroke="#38bdf8" stroke-width="2" fill="#16233a" />
+<rect x="640.0" y="364.0" width="440.0" height="76.0" stroke="#facc15" stroke-width="2" fill="#16233a" />
+<text x="320.0" y="411.0" font-family="system-ui, sans-serif" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="normal">Diameter + point on circle</text>
+<text x="860.0" y="411.0" font-family="system-ui, sans-serif" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="normal">Thales' theorem</text>
+<line x1="520.0" y1="402.0" x2="630.0" y2="402.0" stroke="#facc15" stroke-width="3" />
+<line x1="610.0" y1="392.0" x2="630.0" y2="402.0" stroke="#facc15" stroke-width="3" />
+<line x1="610.0" y1="412.0" x2="630.0" y2="402.0" stroke="#facc15" stroke-width="3" />
+<rect x="120.0" y="452.0" width="400.0" height="76.0" stroke="#38bdf8" stroke-width="2" fill="#16233a" />
+<rect x="640.0" y="452.0" width="440.0" height="76.0" stroke="#facc15" stroke-width="2" fill="#16233a" />
+<text x="320.0" y="499.0" font-family="system-ui, sans-serif" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="normal">Two right triangles, hyp + leg</text>
+<text x="860.0" y="499.0" font-family="system-ui, sans-serif" font-size="19" fill="#ffffff" text-anchor="middle" font-weight="normal">HL congruence</text>
+<line x1="520.0" y1="490.0" x2="630.0" y2="490.0" stroke="#facc15" stroke-width="3" />
+<line x1="610.0" y1="480.0" x2="630.0" y2="490.0" stroke="#facc15" stroke-width="3" />
+<line x1="610.0" y1="500.0" x2="630.0" y2="490.0" stroke="#facc15" stroke-width="3" />
+<text x="600.0" y="592.0" font-family="system-ui, sans-serif" font-size="21" fill="#facc15" text-anchor="middle" font-weight="normal">Start from what is given, follow the arrow</text>
+</svg>

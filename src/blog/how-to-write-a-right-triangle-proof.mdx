@@ -1,0 +1,658 @@
+---
+title: "How to Write a Right Triangle Proof: Step-by-Step Guide"
+description: "Learn how to write a right triangle proof: two-column format, converse of Pythagoras, angle sum, perpendicular lines, Thales, and HL congruence, with examples."
+image: "/images/blog/proof-writing-hero.svg"
+date: 2026-10-27
+author: "Math Expert"
+category: "Geometry"
+---
+
+import Faq from 'theme/components/Faq.astro';
+
+Picture a triangle on your homework page with one corner that looks square. Is it really 90 degrees, or does it only look that way? That doubt is where learning how to write a right triangle proof begins. A drawing might look correct, but geometry requires more than appearances: a sketch can be slightly off, and a measurement can be close without being exact. What turns a guess into a convincing proof is mathematical reasoning, the right theorems, clear statements, and a reason beside every step. Many students find proofs confusing because they are unsure where to start or which theorem fits the problem. This guide removes that confusion. You will learn a seven-step method, work through two-column proofs, meet the five theorems that prove right triangles and congruence, and study six fully solved examples. By the end, you will be able to turn a confusing diagram into a proof that convinces any reader.
+
+## What Is a Right Triangle Proof?
+
+A right triangle proof is a logical argument establishing that a triangle is right-angled or proving a property involving one or more right triangles. Each step must follow from given facts, definitions, or theorems already established, so the conclusion is earned by reasoning rather than claimed from appearance.
+
+That definition covers four different jobs, and the first skill in proof writing is knowing which job you have been given:
+
+- **Proving a triangle is right-angled.** Here the right angle is the conclusion, not a starting point. You must earn it from side lengths, angle measures, perpendicular lines, or a circle fact. The converse of the Pythagorean theorem is the usual tool when three sides are known.
+- **Proving two right triangles congruent.** Here you show that two triangles match exactly, side for side and angle for angle. For right triangles, the hypotenuse-leg theorem often gives the shortest path.
+- **Proving side or angle relationships in a right triangle.** Here the right angle is already given or already proved, and you use it to find a missing side, an angle, or an equality, for example with the Pythagorean theorem or the fact that the acute angles add to 90 degrees.
+- **Proving a theorem about right triangles.** Here the conclusion is a general statement that holds for every right triangle, such as the Pythagorean theorem itself or the fact that the midpoint of the hypotenuse is equidistant from all three vertices. These proofs argue from definitions and earlier theorems, never from a single drawn example.
+
+![A right triangle ABC with the right angle marked at C](/images/blog/proof-abc.svg)
+
+*Caption: Triangle ABC, right-angled at C. The diagram organizes the information, but it does not prove anything on its own.*
+
+A diagram helps you organize information, but it never replaces proof. A corner can look square without measuring exactly 90 degrees, and a pair of sides can look equal without being equal. Every claim in a proof needs a valid mathematical reason that is stronger than appearance: a given fact, a definition, or a theorem whose conditions are satisfied. That requirement is what separates a proof from an opinion about a picture.
+
+## Understanding the Parts of a Right Triangle
+
+Before writing proofs, fix the vocabulary. Every right triangle has the same four parts, and proof reasons use their exact names.
+
+### Right Angle
+
+The right angle is an angle of exactly 90 degrees. In diagrams it is marked with a small square at the vertex instead of a curved arc, which signals that the angle is a right angle rather than an angle of unknown size. In a proof, you may only claim an angle is 90 degrees when a given fact, a definition, or a theorem says so, never because the mark looks square in a rough sketch.
+
+### Legs
+
+The legs are the two perpendicular sides that meet at the right angle. In triangle ABC, right-angled at C, the legs are AC and BC. Many proofs start by naming the legs, because the Pythagorean theorem and the hypotenuse-leg theorem are both stated in terms of legs and hypotenuse.
+
+### Hypotenuse
+
+The hypotenuse is the side opposite the right angle, and it is the longest side of the triangle. In triangle ABC, right-angled at C, the hypotenuse is AB. "Opposite" has a precise meaning here: the right angle sits at vertex C, formed by the two legs meeting there, so the side that does not touch C at all, the side facing it from across the triangle, is the hypotenuse. It is the longest side because the Pythagorean theorem gives hypotenuse² = leg² + leg², so the hypotenuse squared is larger than either leg squared, which means the hypotenuse itself is longer than either leg. Forgetting which side is the hypotenuse is one of the most common proof errors, and it is covered in the mistakes section below.
+
+Two side relationships are worth memorizing. First, the hypotenuse is longer than either leg, always. Second, the two legs and the hypotenuse obey a² + b² = c² in every right triangle, which is why the side lengths alone can prove a triangle is right-angled. Together with the angle sum, these relationships are the whole toolkit: the sides tell you about the angles, and the angles tell you about the sides.
+
+### Acute Angles
+
+The two remaining angles are acute, meaning each measures less than 90 degrees, and they add to 90 degrees. That follows from the triangle angle sum theorem: the three interior angles add to 180 degrees, so once the right angle takes 90 degrees, the other two must share the remaining 90 degrees. This fact powers the angle sum proof method later in this guide.
+
+![Parts of a right triangle: the right angle, the two legs, and the hypotenuse](/images/blog/proof-parts.svg)
+
+*Caption: The four parts. The legs meet at the right angle, and the hypotenuse sits opposite it.*
+
+| Part | Where it is | Key fact for proofs |
+|---|---|---|
+| Right angle | The 90-degree corner, marked with a small square | Exactly 90 degrees, never approximate |
+| Legs | The two sides meeting at the right angle | Used in the Pythagorean theorem and HL |
+| Hypotenuse | Opposite the right angle | The longest side; the side named c in a² + b² = c² |
+| Acute angles | The two other corners | Each less than 90 degrees; together they add to 90 degrees |
+
+Readers who want the full vocabulary of right triangles, including the special [30-60-90 triangle](/blog/30-60-90-triangle/) and [isosceles right triangle](/blog/isosceles-right-triangle/), can review the guide to [what a right triangle is](/blog/what-is-a-right-triangle/).
+
+## What Information Do You Need Before Writing a Proof?
+
+A proof fails before it starts when the writer is unsure what is known, what is asked, or which facts connect them. Gather five things first, and the proof itself becomes much easier.
+
+### Given Information
+
+The givens are the facts the problem hands you: known side lengths, angle measures, perpendicular relationships, and congruences. You may use these without proving them. Anything else, including anything that merely looks true in the diagram, is not given and must be earned.
+
+### Statement to Prove
+
+The statement to prove is the exact conclusion the problem asks for. Read it twice: once before drawing, once after finishing. Note the exact vertex or side it names, because a conclusion about the wrong angle or side answers a different question.
+
+### Diagram
+
+Draw the figure with the same letters the problem uses, and mark the given information on it: right-angle squares, congruent tick marks, and known lengths or angle measures. A marked diagram shows you what is still missing and prevents the classic error of proving a fact about the wrong part of the figure.
+
+### Theorems and Definitions
+
+Select the facts that connect the givens to the conclusion: the converse of the Pythagorean theorem, the triangle angle sum, perpendicular-line definitions, Thales' theorem, or a congruence rule. A theorem is usable only when its conditions match the givens, so check the conditions before you cite the name.
+
+### Logical Reasoning
+
+Every statement in the proof must follow from previous facts or established results. A proof is a chain, and each link must hold: a step supported only by appearance, habit, or hope breaks the chain, even if the final answer happens to be correct.
+
+### A Short Example
+
+Suppose triangle ABC has ∠A = 35° and ∠B = 55°, and you must prove it is right-angled. The givens are two angle measures. The statement to prove is a right angle, with the vertex to be identified. The diagram shows a triangle with 35° and 55° marked. The connecting fact is the triangle angle sum theorem. The reasoning runs: the angles add to 180 degrees, so ∠C = 180° − 35° − 55° = 90°, which makes triangle ABC right-angled at C. Five pieces of preparation, one short chain, done.
+
+## How to Write a Right Triangle Proof in 7 Easy Steps
+
+Here is a practical seven-step method. Use it in order, and most proof problems become a matter of filling in the blanks.
+
+### Step 1: Read the Given Information
+
+Identify all the facts the problem gives you: side lengths, angle measures, perpendicular relationships, and congruences. Note every term that carries a definition, such as perpendicular, midpoint, or diameter, because those definitions often supply the first reasons.
+
+### Step 2: Understand What Must Be Proved
+
+State the required conclusion in your own words, including exactly which angle, side, or pair of triangles it names. A proof that starts from a misread conclusion cannot be rescued by good reasoning later.
+
+### Step 3: Draw and Label the Triangle
+
+Draw the figure, label the vertices with the same letters the problem uses, and mark the given information: side lengths, angles, and right-angle symbols. Marking the diagram turns the problem into something you can see, and it prevents the classic error of proving a fact about the wrong angle or side. Readers who want help drawing accurate figures can review the guide to [constructing a right triangle](/blog/constructing-a-right-triangle/).
+
+### Step 4: Identify Relevant Theorems
+
+Match the givens to a theorem whose conditions they satisfy. Three side lengths point to the converse of the Pythagorean theorem. Two angles point to the triangle angle sum. Perpendicular lines point to the definition of perpendicularity. A diameter and a point on a circle point to Thales' theorem. Two right triangles with a matching hypotenuse and leg point to HL.
+
+### Step 5: Plan the Logical Steps
+
+Arrange the route from givens to conclusion before writing the final proof. Working backward from the conclusion often helps: ask what would imply the conclusion, then what would imply that, until you reach the givens. Then write the proof forward, from givens to conclusion.
+
+### Step 6: Write Statements and Reasons
+
+Write the proof forward, giving every important statement a reason. A two-column proof, with statements on the left and reasons on the right, is the clearest format for school geometry, and this guide uses it throughout. Keep statements short, one claim per row, and keep reasons specific.
+
+### Step 7: Check Your Proof
+
+Read the finished proof from top to bottom and ask three questions. Is each statement justified? Are all theorem conditions satisfied before the theorem is used? Does the conclusion match the question exactly? If any answer is no, repair that row before calling the proof done.
+
+### A Short Complete Example Following These Seven Steps
+
+**Problem.** Triangle PQR has sides PQ = 9 cm, QR = 40 cm, and PR = 41 cm. Prove that triangle PQR is right-angled.
+
+**Step 1.** The givens are three side lengths: PQ = 9 cm, QR = 40 cm, PR = 41 cm.
+
+**Step 2.** The conclusion to prove is that triangle PQR is right-angled, identifying which angle is 90 degrees.
+
+**Step 3.** Draw triangle PQR and label the sides with their lengths.
+
+**Step 4.** The relevant theorem is the converse of the Pythagorean theorem, since three sides are given.
+
+**Step 5.** Plan backward: a right angle follows if the sides satisfy a² + b² = c² with c longest, so check 9² + 40² against 41².
+
+**Step 6.** The two-column proof:
+
+| Statements | Reasons |
+|---|---|
+| PQ = 9 cm, QR = 40 cm, PR = 41 cm | Given |
+| PR is the longest side | 41 is greater than 9 and 40 |
+| 9² + 40² = 81 + 1600 = 1681 = 41² | Arithmetic |
+| PQ² + QR² = PR² | Substitution |
+| Triangle PQR is right-angled, with the right angle at Q | Converse of the Pythagorean theorem |
+
+**Step 7.** Check: every row has a reason, the longest side was identified before the converse was used, and the conclusion names the right-angle vertex, Q, which is the angle opposite the longest side PR. The proof holds.
+
+## Important Theorems Used in Right Triangle Proofs
+
+Keep this reference table beside you while working. Each row states when the theorem is used, and the notes below state what each theorem assumes.
+
+| Theorem or Definition | When to Use It |
+|---|---|
+| Pythagorean Theorem | Calculate side relationships in an established right triangle |
+| Converse of Pythagorean Theorem | Prove a triangle is right-angled from side lengths |
+| Triangle Angle Sum | Prove an angle is 90 degrees |
+| Perpendicular Lines Definition | Establish a right angle |
+| Thales' Theorem | Prove an angle subtended by a diameter is 90 degrees |
+| Hypotenuse-Leg (HL) | Prove two established right triangles congruent |
+
+The assumptions matter as much as the statements. The Pythagorean theorem assumes the triangle is already known to be right-angled. Its converse assumes the longest side has been identified as c. The angle sum assumes two angles are known. The perpendicular definition assumes perpendicularity is given or already proved. Thales' theorem assumes AB is a diameter and C lies on the circle. HL assumes both triangles are already known to be right triangles. Do not confuse the Pythagorean theorem with its converse: the theorem goes from a right angle to an equation, and the converse goes from an equation to a right angle. Using the wrong direction makes the reasoning circular. The formula itself is covered in the [Pythagorean theorem formula](/blog/pythagorean-theorem-formula/) guide, and the history behind the name is told in [the story of Pythagoras and the Pythagorean theorem](/blog/the-story-of-pythagoras-and-the-pythagorean-theorem/).
+
+## Proof Method 1: Using the Converse of the Pythagorean Theorem
+
+The converse of the Pythagorean theorem states: if a triangle has side lengths a, b, and c, with c the longest side, and a² + b² = c², then the triangle is right-angled, with the right angle opposite side c.
+
+Worked example: AB = 6 cm, AC = 8 cm, BC = 10 cm. Check the longest side first. BC = 10 cm is the longest side, so test whether 6² + 8² = 10². The sum is 36 + 64 = 100, and 10² = 100, so the equation holds. By the converse, triangle ABC is right-angled, and the right angle is the angle opposite the 10 cm side, which is angle A.
+
+| Statements | Reasons |
+|---|---|
+| AB = 6 cm, AC = 8 cm, BC = 10 cm | Given |
+| BC is the longest side | 10 is greater than 6 and 8 |
+| 6² + 8² = 36 + 64 = 100 = 10² | Arithmetic |
+| AB² + AC² = BC² | Substitution |
+| Triangle ABC is right-angled at A | Converse of the Pythagorean theorem |
+
+![A 6-8-10 triangle with the right angle highlighted at A](/images/blog/proof-converse.svg)
+
+*Caption: The 6-8-10 triangle. The right angle sits opposite the longest side, BC = 10 cm.*
+
+Identifying the longest side correctly is essential. The converse names c as the longest side, and testing any other side as c breaks the logic. With 6, 8, and 10, testing 6 as c would ask whether 8² + 10² = 6², which is false, and testing 8 as c would ask whether 6² + 10² = 8², which is also false. Only the longest side can play the role of c.
+
+Keep the theorem and its converse straight, because they answer opposite questions:
+
+| Statement | Starting point | Conclusion |
+|---|---|---|
+| Pythagorean theorem | The triangle is already known to be right-angled | a² + b² = c² holds |
+| Converse of the Pythagorean theorem | a² + b² = c² holds, with c the longest side | The triangle is right-angled |
+
+Using the theorem to prove a triangle is right-angled is circular: the theorem assumes the very fact you are trying to prove. The converse is the tool for that job. Readers who want more practice checking triangles this way can review the guide on [how to tell if a triangle is a right triangle](/blog/how-to-tell-if-a-triangle-is-a-right-triangle/), and the full treatment of the theorem itself is in the [Pythagorean theorem proof](/blog/pythagorean-theorem-proof/) guide.
+
+## Proof Method 2: Using the Triangle Angle Sum
+
+The interior angles of a triangle add to 180 degrees. If two angles are known, the third is determined, and if that third angle turns out to be 90 degrees, the triangle is right-angled.
+
+Worked example: triangle ABC has ∠A = 35° and ∠B = 55°. Then ∠C = 180° − 35° − 55° = 90°, so triangle ABC is right-angled at C.
+
+![A triangle with angles 35 degrees, 55 degrees, and 90 degrees](/images/blog/proof-angle-sum.svg)
+
+*Caption: The angles add to 180 degrees, which forces the third angle to be 90 degrees.*
+
+This method works whenever two angles are known, because two angles always determine the third. In fact, the shortcut is worth memorizing: if the two given angles add to 90 degrees, the third angle must be 90 degrees. Here 35° + 55° = 90°, so the conclusion follows at once.
+
+| Statements | Reasons |
+|---|---|
+| ∠A = 35°, ∠B = 55° | Given |
+| ∠A + ∠B + ∠C = 180° | Triangle angle sum theorem |
+| ∠C = 180° − 35° − 55° = 90° | Subtraction property of equality |
+| Triangle ABC is right-angled at C | Definition of a right triangle |
+
+The guide to [angles in a right triangle](/blog/angles-in-a-right-triangle/) covers the angle facts used here in more depth.
+
+## Proof Method 3: Using Perpendicular Lines
+
+Perpendicular lines intersect at a 90-degree angle. If AB is perpendicular to AC, then ∠BAC = 90°, and therefore triangle ABC is right-angled at A.
+
+![Two perpendicular segments meeting at a marked right angle](/images/blog/proof-perpendicular.svg)
+
+*Caption: AB ⊥ AC forces angle BAC to be 90 degrees.*
+
+There is an important difference between being told two lines are perpendicular and having to prove that they are perpendicular. When perpendicularity is given, the proof is one definition step:
+
+| Statements | Reasons |
+|---|---|
+| AB ⊥ AC | Given |
+| ∠BAC = 90° | Definition of perpendicular lines |
+| Triangle ABC is right-angled at A | Definition of a right triangle |
+
+When perpendicularity must be proved, it becomes a small proof of its own before the triangle proof can begin. For example, if two adjacent angles on a straight line are given as equal, they must each be 90 degrees, because adjacent angles on a straight line add to 180 degrees, and two equal angles sharing 180 degrees are 90 degrees each. Only after that step may you use the right angle. Never skip it: writing a right-angle mark on the diagram does not make the lines perpendicular.
+
+## Proof Method 4: Using Thales' Theorem
+
+Thales' theorem states that when AB is a diameter of a circle and C is another point on the circumference, angle ACB is 90 degrees. This method proves a right angle from circle facts alone, with no measurements at all.
+
+![A circle with diameter AB and point C on the circumference](/images/blog/proof-thales.svg)
+
+*Caption: AB is a diameter and C lies on the circle, so angle ACB is 90 degrees.*
+
+The five steps are:
+
+1. Identify the diameter. Confirm that AB passes through the center of the circle, so it is a diameter and not merely a chord.
+2. Identify the point on the circumference. Confirm that C lies on the circle itself, not inside it or outside it.
+3. Connect the three points. Draw segments AC and BC to form triangle ABC.
+4. Apply Thales' theorem. The theorem gives ∠ACB = 90°.
+5. State the right-angle conclusion. Triangle ABC is right-angled at C.
+
+The assumptions matter. If AB is only a chord, the theorem does not apply, and angle ACB could be any size. If C is inside the circle, the angle is larger than 90 degrees, and if C is outside, it is smaller. Thales' theorem needs the exact setup: diameter plus point on the circumference. This method relates to proving a triangle is right-angled by turning a circle fact into an angle fact, which is exactly what the earlier methods do with side lengths and angle measures. The full story of the theorem is in the [Thales' theorem](/blog/thales-theorem/) guide.
+
+## Proof Method 5: Using Hypotenuse-Leg Congruence
+
+The hypotenuse-leg theorem proves two right triangles congruent from just two matching parts. Given two right triangles whose hypotenuses are congruent and one pair of corresponding legs is congruent, the triangles are congruent by HL.
+
+![Two right triangles with matching hypotenuses and one leg marked congruent](/images/blog/proof-hl.svg)
+
+*Caption: Hypotenuses marked with double ticks and one leg pair with single ticks. Both triangles are right-angled, so HL applies.*
+
+The structure of an HL proof is short:
+
+| Statements | Reasons |
+|---|---|
+| Triangle ABC and triangle DEF are right triangles | Given |
+| Hypotenuse AB ≅ hypotenuse DE | Given |
+| Leg AC ≅ leg DF | Given |
+| Triangle ABC ≅ triangle DEF | Hypotenuse-leg theorem |
+
+Once congruence is proved, CPCTC gives everything else: every other pair of corresponding parts is congruent too, including the remaining legs and all corresponding acute angles. That is how a two-part match grows into a six-part match.
+
+Do not confuse HL congruence with AA similarity. Angle-angle similarity says two triangles have the same shape, but they may be different sizes. HL says the triangles are congruent, the same shape and the same size, because the hypotenuse and leg fix the third side through the Pythagorean theorem. Similarity is a weaker claim, and using it where congruence was asked for leaves the proof short.
+
+The checklist before writing HL is worth memorizing: both triangles established as right triangles first, hypotenuses congruent, one leg pair congruent. If any item is missing, HL is unavailable, and one of the general rules, SSS, SAS, ASA, or AAS, must be used instead. The complete HL treatment is in the [hypotenuse-leg theorem](/blog/hypotenuse-leg-theorem/) guide.
+
+## How to Write a Two-Column Right Triangle Proof
+
+The two-column format is the standard way to present a geometry proof in school. It keeps every claim beside the reason that justifies it, so a reader can check the argument row by row.
+
+### Statements Column
+
+The left column holds mathematical facts and deductions, in order, one claim per row. It starts with the givens and ends with the conclusion. Each row must follow from earlier rows or from a known fact.
+
+### Reasons Column
+
+The right column holds the justification for each statement: given information, definitions, theorems, or properties. Reasons must be specific. "Definition of perpendicular lines" is a reason; "because it looks right" is not. "Converse of the Pythagorean theorem" is a reason, but only when the longest side has already been identified.
+
+### Complete Example
+
+**Problem.** In triangle ABC, AB is perpendicular to AC, and ∠ABC = 45°. Prove that ∠ACB = 45°.
+
+| Statements | Reasons |
+|---|---|
+| AB ⊥ AC | Given |
+| ∠BAC = 90° | Definition of perpendicular lines |
+| ∠BAC + ∠ABC + ∠ACB = 180° | Triangle angle sum theorem |
+| ∠ACB = 180° − 90° − 45° = 45° | Substitution and subtraction |
+| ∠ACB = 45° | Proved, as required |
+
+Five rows, each logically connected to the next: perpendicularity gives the right angle, the angle sum relates all three angles, and arithmetic finishes the job. The proof must not contain unsupported conclusions, and this one does not: no row claims anything the previous rows and the cited reasons do not already support. If a row ever makes you ask "why," it needs a reason or an earlier row behind it.
+
+![A two-column proof layout with statement and reason columns](/images/blog/proof-two-column.svg)
+
+*Caption: The two-column layout. Every statement sits beside the reason that justifies it.*
+
+## Six Fully Solved Right Triangle Proof Examples
+
+The following six examples are original, and each one follows the same pattern: problem statement, given information, what must be proved, diagram description, relevant theorem, step-by-step reasoning, two-column proof, final conclusion, and a note on why the proof is valid.
+
+### Example 1: Prove a 5-12-13 Triangle Is Right-Angled
+
+**Problem.** Triangle XYZ has sides XY = 5 cm, YZ = 12 cm, and XZ = 13 cm. Prove that triangle XYZ is right-angled.
+
+**Given.** The three side lengths: 5 cm, 12 cm, 13 cm.
+
+**Prove.** Triangle XYZ is right-angled, identifying the right-angle vertex.
+
+**Diagram description.** Triangle XYZ with side XY labeled 5 cm, side YZ labeled 12 cm, and side XZ labeled 13 cm. No angle is marked.
+
+**Relevant theorem.** The converse of the Pythagorean theorem.
+
+**Reasoning.** The longest side is XZ = 13 cm, so test whether 5² + 12² = 13². The sum is 25 + 144 = 169, and 13² = 169, so the equation holds.
+
+| Statements | Reasons |
+|---|---|
+| XY = 5 cm, YZ = 12 cm, XZ = 13 cm | Given |
+| XZ is the longest side | 13 is greater than 5 and 12 |
+| 5² + 12² = 25 + 144 = 169 = 13² | Arithmetic |
+| XY² + YZ² = XZ² | Substitution |
+| Triangle XYZ is right-angled, with the right angle at Y | Converse of the Pythagorean theorem |
+
+**Conclusion.** Triangle XYZ is right-angled at Y, the angle opposite the longest side XZ.
+
+**Why the proof is valid.** The longest side was identified before the converse was used, the arithmetic is exact, and the conclusion names the vertex opposite the longest side, which is where the right angle must sit.
+
+### Example 2: Prove a Triangle Is Right-Angled Using Two Acute Angles
+
+**Problem.** In triangle ABC, ∠A = 30° and ∠B = 60°. Prove that triangle ABC is right-angled.
+
+**Given.** Two angle measures: ∠A = 30°, ∠B = 60°.
+
+**Prove.** Triangle ABC is right-angled, identifying the right-angle vertex.
+
+**Diagram description.** Triangle ABC with ∠A labeled 30° and ∠B labeled 60°. Angle C is unmarked.
+
+**Relevant theorem.** The triangle angle sum theorem.
+
+**Reasoning.** The three angles add to 180 degrees, so ∠C = 180° − 30° − 60° = 90°.
+
+| Statements | Reasons |
+|---|---|
+| ∠A = 30°, ∠B = 60° | Given |
+| ∠A + ∠B + ∠C = 180° | Triangle angle sum theorem |
+| ∠C = 180° − 30° − 60° = 90° | Subtraction property of equality |
+| Triangle ABC is right-angled at C | Definition of a right triangle |
+
+**Conclusion.** Triangle ABC is right-angled at C.
+
+**Why the proof is valid.** The third angle is computed from a theorem, not measured from the diagram, and the conclusion follows from the definition of a right triangle once the 90-degree angle is established.
+
+### Example 3: Prove a Right Angle Using Perpendicular Lines
+
+**Problem.** In triangle ABC, side AB is perpendicular to side BC. Prove that triangle ABC is right-angled.
+
+**Given.** AB ⊥ BC.
+
+**Prove.** Triangle ABC is right-angled, identifying the right-angle vertex.
+
+**Diagram description.** Triangle ABC with a small square marked at vertex B, showing AB meeting BC at a right angle.
+
+**Relevant theorem.** The definition of perpendicular lines.
+
+**Reasoning.** Perpendicular lines meet at 90 degrees, so ∠ABC = 90°, which makes the triangle right-angled by definition.
+
+| Statements | Reasons |
+|---|---|
+| AB ⊥ BC | Given |
+| ∠ABC = 90° | Definition of perpendicular lines |
+| Triangle ABC is right-angled at B | Definition of a right triangle |
+
+**Conclusion.** Triangle ABC is right-angled at B.
+
+**Why the proof is valid.** The proof uses only the definition of the given term, and the right-angle vertex is the vertex where the perpendicular sides meet, which is B. No measurement and no unproved claim appear anywhere.
+
+### Example 4: Prove a Right Angle Using a Circle's Diameter
+
+**Problem.** AB is a diameter of a circle, and C is a point on the circle distinct from A and B. Prove that triangle ABC is right-angled.
+
+**Given.** AB is a diameter; C lies on the circumference; C is distinct from A and B.
+
+**Prove.** Triangle ABC is right-angled, identifying the right-angle vertex.
+
+**Diagram description.** A circle with diameter AB drawn horizontally and point C on the upper part of the circle, joined to A and B.
+
+**Relevant theorem.** Thales' theorem.
+
+**Reasoning.** The setup matches Thales' theorem exactly: a diameter plus a point on the circumference. The theorem gives the right angle directly.
+
+| Statements | Reasons |
+|---|---|
+| AB is a diameter of the circle | Given |
+| C lies on the circumference, distinct from A and B | Given |
+| ∠ACB = 90° | Thales' theorem |
+| Triangle ABC is right-angled at C | Definition of a right triangle |
+
+**Conclusion.** Triangle ABC is right-angled at C.
+
+**Why the proof is valid.** Both conditions of Thales' theorem, diameter and point on the circumference, were confirmed from the givens before the theorem was applied. If AB had been an ordinary chord, this proof would fail.
+
+### Example 5: Prove Two Right Triangles Congruent Using HL
+
+**Problem.** Triangle ABC is right-angled at C, and triangle DEF is right-angled at F. Hypotenuse AB = 13 cm and hypotenuse DE = 13 cm. Leg AC = 5 cm and leg DF = 5 cm. Prove that triangle ABC is congruent to triangle DEF.
+
+**Given.** Both triangles are right triangles; AB = DE = 13 cm; AC = DF = 5 cm.
+
+**Prove.** Triangle ABC ≅ triangle DEF.
+
+**Diagram description.** Two right triangles side by side, each with the right angle marked, hypotenuses marked with double ticks, and the 5 cm legs marked with single ticks.
+
+**Relevant theorem.** The hypotenuse-leg theorem.
+
+**Reasoning.** Both triangles are established as right triangles, their hypotenuses match, and one pair of corresponding legs matches. Those are exactly the HL conditions.
+
+| Statements | Reasons |
+|---|---|
+| Triangle ABC is right-angled at C; triangle DEF is right-angled at F | Given |
+| AB ≅ DE | Given, both 13 cm |
+| AC ≅ DF | Given, both 5 cm |
+| Triangle ABC ≅ triangle DEF | Hypotenuse-leg theorem |
+
+**Conclusion.** Triangle ABC ≅ triangle DEF. By CPCTC, the remaining legs are also congruent, BC ≅ EF, and indeed both measure 12 cm, since 13² − 5² = 169 − 25 = 144 = 12².
+
+**Why the proof is valid.** HL was used only after both right angles were established from the givens, and the matching parts are a hypotenuse pair and a leg pair, exactly as HL requires. The 12 cm check is a consistency note, not a step the congruence depends on.
+
+### Example 6: Prove a Side or Angle Relationship Using Congruent Right Triangles
+
+**Problem.** Triangle ABC is right-angled at C, and triangle DEF is right-angled at F. Hypotenuse AB = 25 cm and hypotenuse DE = 25 cm. Leg AC = 7 cm and leg DF = 7 cm. Prove that BC = EF and that ∠B = ∠E.
+
+**Given.** Both triangles are right triangles; AB = DE = 25 cm; AC = DF = 7 cm.
+
+**Prove.** BC = EF and ∠B = ∠E.
+
+**Diagram description.** Two right triangles side by side, each with the right angle marked, hypotenuses marked with double ticks, and the 7 cm legs marked with single ticks.
+
+**Relevant theorem.** The hypotenuse-leg theorem, followed by CPCTC.
+
+**Reasoning.** Both triangles are established as right triangles, their hypotenuses match, and one pair of corresponding legs matches, so HL gives congruence. Once the triangles are congruent, CPCTC gives every other corresponding part, including the remaining legs and the acute angles.
+
+| Statements | Reasons |
+|---|---|
+| Triangle ABC is right-angled at C; triangle DEF is right-angled at F | Given |
+| AB ≅ DE | Given, both 25 cm |
+| AC ≅ DF | Given, both 7 cm |
+| Triangle ABC ≅ triangle DEF | Hypotenuse-leg theorem |
+| BC ≅ EF | CPCTC |
+| ∠B ≅ ∠E | CPCTC |
+
+**Conclusion.** BC = EF and ∠B = ∠E. As a numerical check, both remaining legs measure 24 cm, since 25² − 7² = 625 − 49 = 576 = 24², which confirms the congruence rather than replacing it.
+
+**Why the proof is valid.** HL was used only after both right angles were established from the givens, and the matching parts are a hypotenuse pair and a leg pair, exactly as HL requires. The side and angle relationships then follow from CPCTC, which is legal only after congruence has been proved, and here it has.
+
+## How to Choose the Correct Proof Method
+
+When you are stuck, return to the givens. The facts you are handed nearly always point to the method, and this guide collects the matches.
+
+![A guide matching given facts to proof methods](/images/blog/proof-decision-guide.svg)
+
+*Caption: Start from what is given, then follow the arrow to the method whose conditions those givens satisfy.*
+
+| What you are given | What to use | What it gives you |
+|---|---|---|
+| Three known sides | Converse of the Pythagorean theorem | A right angle, opposite the longest side |
+| Two known angles | Triangle angle sum theorem | The third angle, which may be 90 degrees |
+| Perpendicular sides | Definition of perpendicularity | A 90-degree angle at the meeting point |
+| Diameter and a point on a circle | Thales' theorem | A right angle on the circumference |
+| Two right triangles with corresponding hypotenuses and legs | HL congruence | Full congruence of the two triangles |
+
+Some problems require multiple theorems, and that is normal. Proving two triangles congruent may first require the converse to establish that both are right-angled before HL can be used. Proving a side relationship may require HL first and CPCTC second. Read the givens, name the missing fact, and let the guide do the rest, one theorem at a time.
+
+## Common Mistakes Students Make in Right Triangle Proofs
+
+### 1. Assuming a Diagram Proves the Conclusion
+
+**Why it is incorrect.** A diagram is an illustration, not a reason. A corner drawn to look square may measure 89 degrees or 91 degrees, and a proof built on appearance collapses the moment the figure is drawn slightly differently.
+
+**How to correct it.** Treat every claim as needing a reason from the givens, a definition, or a theorem. If the only support for a right angle is "it looks like one," the proof has a gap.
+
+**Example.** A student writes "∠C = 90°" with the reason "shown in the diagram." Correction: either the problem gives perpendicularity or angle measures, in which case cite them, or the right angle must be proved first.
+
+### 2. Using the Pythagorean Theorem Before Establishing a Right Angle
+
+**Why it is incorrect.** The Pythagorean theorem applies only to triangles already known to be right-angled. Using it to compute a side of an unclassified triangle assumes the conclusion.
+
+**How to correct it.** Classify first. If the triangle is not known to be right-angled, check with the converse or another method before using the theorem.
+
+**Example.** Given sides 4 cm and 7 cm with an unknown included angle, a student writes the third side as √(4² + 7²). Correction: without a right angle, that computation is unjustified; the third side cannot be found that way.
+
+### 3. Confusing a Theorem With Its Converse
+
+**Why it is incorrect.** The theorem and its converse run in opposite directions. The theorem goes from right angle to equation; the converse goes from equation to right angle. Swapping them produces circular reasoning.
+
+**How to correct it.** Ask which direction you need. Proving a right angle needs the converse. Finding a side of a known right triangle needs the theorem.
+
+**Example.** A student proving a triangle right-angled writes "by the Pythagorean theorem, a² + b² = c², so the triangle is right-angled." Correction: the reason must be the converse of the Pythagorean theorem, with the longest side identified first.
+
+### 4. Misidentifying the Hypotenuse
+
+**Why it is incorrect.** The equation a² + b² = c² means nothing until c is named as the longest side and the hypotenuse. Testing the wrong side as c gives a false equation or a false conclusion.
+
+**How to correct it.** Always state which side is longest and why, before writing the equation.
+
+**Example.** With sides 6, 8, and 10, a student tests 6² + 10² = 8² and concludes the triangle is not right-angled. Correction: 10 is the longest side, and 6² + 8² = 10², so the triangle is right-angled.
+
+### 5. Skipping Reasons in a Two-Column Proof
+
+**Why it is incorrect.** A statement without a reason is an assertion, not a proof step. The reader cannot tell whether it came from the givens, a definition, or thin air.
+
+**How to correct it.** Put a reason beside every important statement. If you cannot name one, the step is not ready.
+
+**Example.** A proof jumps from "∠A = 35°, ∠B = 55°" to "∠C = 90°" with no middle row. Correction: add the row "∠A + ∠B + ∠C = 180°" with the reason "triangle angle sum theorem," then compute.
+
+### 6. Using HL Without Establishing That Both Triangles Are Right-Angled
+
+**Why it is incorrect.** HL is a right-triangle rule. If only one triangle is known to be right-angled, or neither is, the HL conclusion does not follow, even if a hypotenuse and a leg match.
+
+**How to correct it.** Prove or cite the right angle in both triangles before writing HL, or switch to SSS, SAS, ASA, or AAS.
+
+**Example.** Two triangles share a hypotenuse of 10 cm and a leg of 6 cm, but only one is given as right-angled. Correction: HL cannot be used yet; establish the second right angle first, or prove congruence another way.
+
+### 7. Confusing Similarity With Congruence
+
+**Why it is incorrect.** Congruent triangles are identical in size and shape. Similar triangles share only shape. Proving similarity when congruence was asked for answers a weaker question.
+
+**How to correct it.** Check the prove statement. If it asks for congruence, you need side matches, not angle matches alone. AA proves similarity, never congruence.
+
+**Example.** A student shows two triangles have angles 30°, 60°, and 90°, then claims congruence. Correction: those triangles could be different sizes; angles alone never prove congruence.
+
+### 8. Applying an Incorrect Theorem
+
+**Why it is incorrect.** A theorem used outside its proper situation proves nothing, even if the computation looks tidy. Each theorem has a situation it belongs to, and the wrong situation voids the step.
+
+**How to correct it.** Before citing a theorem, match its situation to the problem: a diameter for Thales, three sides for the converse, two angles for the angle sum. If the situation does not match, pick another theorem.
+
+**Example.** A student applies Thales' theorem to a chord AB that does not pass through the center. Correction: confirm AB is a diameter first, or the theorem is unavailable.
+
+### 9. Using Circular Reasoning
+
+**Why it is incorrect.** Circular reasoning uses the conclusion as a step on the way to the conclusion. The argument goes nowhere, even if every sentence sounds true.
+
+**How to correct it.** List your givens separately, and check that no proof step restates the prove statement or depends on it.
+
+**Example.** To prove triangle ABC is right-angled, a student writes "by the Pythagorean theorem, AB² + BC² = AC²." Correction: that equation assumes the right angle; the legal route is the converse, starting from verified side lengths.
+
+### 10. Writing a Conclusion Unrelated to the Original Statement to Prove
+
+**Why it is incorrect.** A proof that ends with a different statement than the one asked for has not done its job, even if every step is correct. A missing vertex, a swapped side, or an unproved extra claim all count as mismatch.
+
+**How to correct it.** Compare the final row with the prove statement word for word before finishing.
+
+**Example.** Asked to prove triangle ABC is right-angled at C, a student ends with "triangle ABC is right-angled." Correction: name the vertex, since the right angle at C is part of what was asked.
+
+## Tips for Writing Clearer Geometry Proofs
+
+- **Label diagrams carefully.** Transfer every given onto the figure before writing, with the problem's own letters, so no step reasons about the wrong vertex or side.
+- **Write down the givens.** A short list beside the diagram separates what you may use from what you must prove, and it stops the conclusion from sneaking into the opening rows.
+- **Identify the exact conclusion.** Name the vertex, side, or pair of triangles the problem asks about, and check the final row against it word for word.
+- **Select appropriate theorems.** Match the theorem to the givens and their conditions, not to the first familiar name that comes to mind.
+- **Use precise geometry vocabulary.** Say "triangle ABC is right-angled at C," not "triangle ABC is a right triangle sort of." Precision is what lets a reader check each step.
+- **Justify every major step.** Arithmetic may share a row with its computation, but every theorem use needs its name and its conditions met.
+- **Avoid unnecessary calculations.** Extra rows do not strengthen a proof; they add places for errors. Cut any row the conclusion does not need.
+- **Check the proof for logical gaps.** Read it top to bottom as a skeptic. If any row makes you ask "why," add the missing reason or step.
+- **Practice different proof types.** Rotate through converse proofs, angle sum proofs, perpendicular proofs, Thales proofs, and HL proofs, so no single method becomes a crutch.
+
+Students improve through repeated practice, not through reading about practice. A useful routine is to rework one solved example without looking, then attempt two fresh problems of a different type, then compare your reasons row by row with a model proof. The comparison step matters most: it shows you where your reasons were vague, where a condition went unchecked, and where a shorter route existed. After a few weeks of that routine, the seven steps stop feeling like a checklist and start feeling like a habit.
+
+## Right Triangle Proof Practice Questions
+
+### Beginner Level
+
+1. Triangle ABC has ∠A = 40° and ∠B = 50°. Is triangle ABC right-angled? If so, at which vertex?
+2. In triangle PQR, side PQ is perpendicular to side QR. What is the measure of ∠PQR, and is triangle PQR right-angled?
+3. Triangle DEF is right-angled at E. Which side is the hypotenuse, and why?
+4. Two angles of a triangle measure 28° and 62°. Find the third angle and state whether the triangle is right-angled.
+5. Write a two-column proof for this problem: in triangle DEF, ∠D = 42° and ∠E = 48°. Prove that triangle DEF is right-angled.
+
+### Intermediate Level
+
+6. A triangle has sides 8 cm, 15 cm, and 17 cm. Is it right-angled? Justify your answer and name the right-angle vertex if there is one.
+7. A triangle has sides 5 cm, 7 cm, and 8 cm. Is it right-angled? Justify your answer.
+8. AB is a diameter of a circle, and C is a point on the circle distinct from A and B. Prove that ∠ACB = 90°.
+9. A triangle has sides 20 cm, 21 cm, and 29 cm. Is it right-angled? Justify your answer and name the right-angle vertex if there is one.
+10. Triangle PQR has sides PQ = 10 cm, PR = 24 cm, and QR = 26 cm. Is it right-angled? If so, name the hypotenuse and the right-angle vertex.
+
+### Advanced Level
+
+11. Triangle ABC is right-angled at C and triangle DEF is right-angled at F. Both hypotenuses measure 17 cm, and one leg of each triangle measures 8 cm. Prove the triangles congruent by HL, and find the length of the other leg in each triangle.
+12. A student writes: "Triangle ABC has sides 3 cm, 4 cm, and 6 cm. By the Pythagorean theorem, the third side must satisfy 3² + 4² = 5², so the triangle is right-angled." Identify every error in this reasoning and give the correct conclusion about the triangle.
+13. Triangle ABC is right-angled at C, with AC = 5 cm and BC = 12 cm. Let M be the midpoint of hypotenuse AB. Prove that AM = CM, and give the common value.
+14. Two triangles have hypotenuses of 10 cm and one leg of 6 cm each, but only one triangle is known to be right-angled. Can you conclude the triangles are congruent by HL? Explain why or why not.
+15. A student argues: "The diagram shows a square corner, so the triangle is right-angled." Explain why this is not a proof, and name one extra fact that would turn it into one.
+
+### Answer Key
+
+**1.** Yes, right-angled at C. The third angle is 180° − 40° − 50° = 90°.
+
+**2.** ∠PQR = 90°, by the definition of perpendicular lines, so triangle PQR is right-angled at Q.
+
+**3.** DF is the hypotenuse, because it is the side opposite the right angle at E, and therefore the longest side.
+
+**4.** The third angle is 180° − 28° − 62° = 90°, so yes, the triangle is right-angled.
+
+**5.** The two-column proof:
+
+| Statements | Reasons |
+|---|---|
+| ∠D = 42°, ∠E = 48° | Given |
+| ∠D + ∠E + ∠F = 180° | Triangle angle sum theorem |
+| ∠F = 180° − 42° − 48° = 90° | Subtraction property of equality |
+| Triangle DEF is right-angled at F | Definition of a right triangle |
+
+**6.** Yes. The longest side is 17 cm, and 8² + 15² = 64 + 225 = 289 = 17². By the converse of the Pythagorean theorem, the triangle is right-angled, with the right angle opposite the 17 cm side.
+
+**7.** No. The longest side is 8 cm, and 5² + 7² = 25 + 49 = 74, which is not equal to 8² = 64. Since the equation fails, the converse does not apply, and the triangle is not right-angled.
+
+**8.** The setup matches Thales' theorem exactly: AB is a diameter and C lies on the circumference. Thales' theorem gives ∠ACB = 90° directly, so triangle ABC is right-angled at C.
+
+**9.** Yes. The longest side is 29 cm, and 20² + 21² = 400 + 441 = 841 = 29². By the converse of the Pythagorean theorem, the triangle is right-angled, with the right angle opposite the 29 cm side.
+
+**10.** Yes. The longest side is QR = 26 cm, and 10² + 24² = 100 + 576 = 676 = 26². By the converse, the triangle is right-angled. The hypotenuse is QR, and the right angle is at P, opposite QR.
+
+**11.** HL applies: both triangles are right-angled, the hypotenuses are congruent at 17 cm, and one leg pair is congruent at 8 cm. Therefore the triangles are congruent by HL. The other leg in each triangle is √(17² − 8²) = √(289 − 64) = √225 = 15 cm, which CPCTC also confirms as a shared length.
+
+**12.** There are two errors. First, the student uses the Pythagorean theorem, which assumes a right angle, to argue about a triangle not known to be right-angled; that is circular. Second, the numbers do not match the problem: the sides are 3, 4, and 6, not 3, 4, and 5. The correct check is the converse with the longest side 6: 3² + 4² = 9 + 16 = 25, which is not equal to 6² = 36. The triangle is not right-angled.
+
+**13.** By the Pythagorean theorem, AB² = 5² + 12² = 25 + 144 = 169, so AB = 13 cm, and AM = 6.5 cm since M is the midpoint. Extend CM to D with CM = MD; quadrilateral ACBD has diagonals that bisect each other, so it is a parallelogram, and since ∠C = 90°, it is a rectangle; rectangle diagonals are equal, so CD = AB = 13 cm, and CM = 6.5 cm. Therefore AM = CM = 6.5 cm.
+
+**14.** No. HL requires both triangles to be established as right triangles, and here only one is known to be right-angled. The matching hypotenuse and leg are not enough on their own. Establish the second right angle first, or prove congruence with SSS, SAS, ASA, or AAS.
+
+**15.** A diagram is not a reason; a corner can look square without measuring exactly 90 degrees. Any one of these facts would repair the argument: the problem states the sides are perpendicular, the two other angles are given and add to 90 degrees, or the three side lengths satisfy the converse of the Pythagorean theorem with the longest side identified.
+
+## Frequently Asked Questions
+
+<Faq heading="Frequently Asked Questions" description="Common questions about writing right triangle proofs, answered briefly." items={[{ "question": "How do you write a right triangle proof?", "answer": "Start by reading the problem and marking the diagram with the given facts. Identify exactly what must be proved, then pick a theorem whose conditions your givens satisfy, such as the converse of Pythagoras or the triangle angle sum. Write short statements in order, give each one a reason, and check that the final statement matches what was asked." }, { "question": "How do you prove a triangle is right-angled?", "answer": "Show that one angle is 90 degrees, using a valid reason rather than appearance. Use the converse of Pythagoras when three sides are known, the angle sum when two angles are known, the definition of perpendicular lines when two sides are perpendicular, or Thales' theorem for a triangle on a circle diameter." }, { "question": "What is a two-column geometry proof?", "answer": "A proof format with statements in the left column and reasons in the right column, one claim per row. It starts with the givens and builds forward, so a reader can check every step. Each reason names a given fact, definition, postulate, property, or theorem, and the final row states exactly what was asked." }, { "question": "Which theorem proves a triangle is right-angled?", "answer": "The converse of the Pythagorean theorem is the usual tool: if the longest side c and the other sides a and b satisfy a² + b² = c², the triangle is right-angled opposite c. The angle sum theorem and Thales' theorem also prove right angles in their own setups." }, { "question": "What is the converse of the Pythagorean theorem?", "answer": "It states that if a triangle has sides a, b, and c, with c the longest, and a² + b² = c², then the triangle is right-angled, with the right angle opposite c. It runs the Pythagorean theorem backward: from an equation to a right angle." }, { "question": "How do you prove two right triangles congruent?", "answer": "Show that a congruence rule applies: SSS, SAS, ASA, or AAS for any triangles, or HL for right triangles. For HL, establish both right angles first, then match the hypotenuses and one leg pair. Once congruence is proved, CPCTC gives every other corresponding part." }, { "question": "What does HL mean in geometry?", "answer": "HL stands for hypotenuse-leg, a congruence rule for right triangles only. It says that if two right triangles have congruent hypotenuses and one pair of congruent corresponding legs, the triangles are congruent. The name lists the two matching parts: the hypotenuse and one leg." }, { "question": "Can you prove a right angle without measuring it?", "answer": "Yes. A proof deduces rather than measures. If three sides satisfy the converse of Pythagoras, if two angles add to 90 degrees, if two lines are given perpendicular, or if Thales' theorem applies, the right angle follows by logic, with no protractor or ruler involved." }, { "question": "How does Thales' theorem prove a right angle?", "answer": "Thales' theorem says that an angle drawn from the ends of a diameter to any other point on the circle is 90 degrees. So if AB is a diameter and C lies on the circumference, angle ACB must be 90 degrees, and triangle ABC is right-angled at C, with no measurements needed." }, { "question": "What is the easiest way to begin a geometry proof?", "answer": "Mark the diagram with every given fact, then write the givens and the prove statement at the top of the page. With the starting point and the finish line both visible, ask what single fact would connect them. That missing fact usually names the theorem, and the proof writes itself from there." }, { "question": "Why do geometry proofs need reasons?", "answer": "Reasons are what make a proof checkable. Without them, a reader cannot tell whether a statement came from the givens, a definition, or a guess. A reason also exposes gaps: if you cannot name one for a step, that step is not yet justified, and the proof needs more work before it is complete." }, { "question": "What is the difference between a theorem and its converse?", "answer": "A theorem states that if certain conditions hold, a conclusion follows. Its converse swaps the two: it starts from the conclusion and claims the conditions. The two are separate statements, and a converse is true only when it is proved separately, as with Pythagoras and its converse." }, { "question": "Can the Pythagorean theorem prove a triangle is right-angled?", "answer": "No. The Pythagorean theorem assumes a right angle and concludes a² + b² = c², so using it to prove a right angle argues in a circle. The converse does that job: it starts from a² + b² = c² with the longest side as c and concludes the triangle is right-angled." }, { "question": "How do you know which proof method to use?", "answer": "Look at the givens and the conclusion, then find the method that bridges them. Three sides point to the converse of Pythagoras, two angles to the angle sum, perpendicular lines to the definition of perpendicularity, a diameter to Thales, and matching hypotenuses and legs to HL. The decision guide in this article collects these matches." }, { "question": "What are common mistakes in right triangle proofs?", "answer": "The frequent ones are trusting the diagram, using Pythagoras before a right angle is established, confusing a theorem with its converse, misidentifying the hypotenuse, skipping reasons, using HL without both right angles, confusing similarity with congruence, reasoning in a circle, and ending with an unrelated conclusion." }]} />
+
+## Key Takeaways
+
+- Understand the given information before writing anything, and keep givens and conclusions on separate lists.
+- Identify exactly what must be proved, including which vertex or side the conclusion names.
+- Select a theorem whose conditions are satisfied by the givens, not merely a theorem with a familiar name.
+- Write logical statements with valid reasons, one claim per row, in a two-column layout.
+- Use the converse of the Pythagorean theorem when three sides are known and the longest side is identified.
+- Use the triangle angle sum and perpendicular-line definitions where angles or perpendicularity are given.
+- Use HL only for triangles already established as right triangles, with matching hypotenuses and legs.
+- Check that the conclusion follows logically and matches exactly what the problem asked.
+
+## Conclusion
+
+A successful right triangle proof rests on three things: logical reasoning, an accurate diagram, and theorems applied exactly where their conditions hold. The methods in this guide cover the common cases: the converse of Pythagoras for three sides, the angle sum for two angles, perpendicular definitions for perpendicular sides, Thales for circles, and HL for congruence. None of them asks you to trust appearances, and none of them works without reasons beside every step. Keep the final check beside you as you work: every statement justified, every condition satisfied, and a conclusion that matches the question. Then practice deliberately. Rework the six solved examples without looking, then try the fifteen exercises, writing each proof in two columns. The first few will feel slow. Then the pattern will click, and proof writing will feel less like a puzzle and more like a craft you control.

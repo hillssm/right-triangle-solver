@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e293b"/><stop offset="1" stop-color="#0f172a"/></linearGradient></defs>
+<rect x="0" y="0" width="1200" height="630" fill="url(#bg)"/>
+<line x1="60" y1="58" x2="60" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="120" y1="58" x2="120" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="180" y1="58" x2="180" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="240" y1="58" x2="240" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="300" y1="58" x2="300" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="360" y1="58" x2="360" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="420" y1="58" x2="420" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="480" y1="58" x2="480" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="540" y1="58" x2="540" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="600" y1="58" x2="600" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="660" y1="58" x2="660" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="720" y1="58" x2="720" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="780" y1="58" x2="780" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="840" y1="58" x2="840" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="900" y1="58" x2="900" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="960" y1="58" x2="960" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="1020" y1="58" x2="1020" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="1080" y1="58" x2="1080" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="1140" y1="58" x2="1140" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="60" x2="1142" y2="60" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="120" x2="1142" y2="120" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="180" x2="1142" y2="180" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="240" x2="1142" y2="240" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="300" x2="1142" y2="300" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="360" x2="1142" y2="360" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="420" x2="1142" y2="420" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="480" x2="1142" y2="480" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="540" x2="1142" y2="540" stroke="#243447" stroke-width="1"/>
+<text x="600.0" y="70.0" font-family="system-ui, sans-serif" font-size="32" fill="#ffffff" text-anchor="middle" font-weight="bold">Marking √2 on the Number Line</text>
+<line x1="150.0" y1="420.0" x2="1050.0" y2="420.0" stroke="#94a3b8" stroke-width="2" />
+<line x1="300.0" y1="408.0" x2="300.0" y2="432.0" stroke="#ffffff" stroke-width="2" />
+<text x="300.0" y="460.0" font-family="system-ui, sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="normal">0</text>
+<line x1="500.0" y1="408.0" x2="500.0" y2="432.0" stroke="#ffffff" stroke-width="2" />
+<text x="500.0" y="460.0" font-family="system-ui, sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="normal">1</text>
+<line x1="700.0" y1="408.0" x2="700.0" y2="432.0" stroke="#ffffff" stroke-width="2" />
+<text x="700.0" y="460.0" font-family="system-ui, sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="normal">2</text>
+<line x1="500.0" y1="420.0" x2="500.0" y2="220.0" stroke="#38bdf8" stroke-width="4" />
+<line x1="500.0" y1="400.0" x2="520.0" y2="400.0" stroke="#ffffff" stroke-width="2" />
+<line x1="520.0" y1="400.0" x2="520.0" y2="420.0" stroke="#ffffff" stroke-width="2" />
+<line x1="300.0" y1="420.0" x2="500.0" y2="220.0" stroke="#facc15" stroke-width="4" />
+<polyline points="500.0,220.0 503.5,223.5 506.9,227.1 510.2,230.7 513.5,234.4 516.7,238.2 519.8,242.0 522.9,245.9 525.9,249.8 528.8,253.7 531.7,257.8 534.5,261.8 537.2,266.0 539.9,270.1 542.4,274.3 544.9,278.6 547.4,282.9 549.7,287.2 552.0,291.6 554.2,296.0 556.3,300.5 558.4,305.0 560.4,309.5 562.2,314.0 564.1,318.6 565.8,323.3 567.4,327.9 569.0,332.6 570.5,337.3 571.9,342.0 573.2,346.8 574.4,351.6 575.6,356.4 576.7,361.2 577.6,366.0 578.5,370.9 579.4,375.8 580.1,380.6 580.7,385.5 581.3,390.4 581.8,395.3 582.2,400.3 582.5,405.2 582.7,410.1 582.8,415.1 582.8,420.0" stroke="#facc15" stroke-width="2" fill="none" stroke-dasharray="8 6" />
+<circle cx="582.8" cy="420.0" r="8" fill="#facc15" />
+<text x="582.8" y="392.0" font-family="system-ui, sans-serif" font-size="22" fill="#facc15" text-anchor="middle" font-weight="bold">√2 ≈ 1.414</text>
+<text x="400.0" y="295.0" font-family="system-ui, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="normal">hypotenuse = √2</text>
+<text x="515.0" y="250.0" font-family="system-ui, sans-serif" font-size="20" fill="#ffffff" text-anchor="start" font-weight="normal">perpendicular, length 1</text>
+<text x="600.0" y="540.0" font-family="system-ui, sans-serif" font-size="20" fill="#94a3b8" text-anchor="middle" font-weight="normal">Compass centered at 0, radius = hypotenuse, swings down to the line.</text>
+</svg>

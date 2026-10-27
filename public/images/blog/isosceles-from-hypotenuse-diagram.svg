@@ -1,27 +1,27 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3" />
     </pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
 
-  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">From the hypotenuse back to the legs</text>
+  <text x="600" y="75.0" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">From the hypotenuse back to the legs</text>
 
   <!-- Hypotenuse 12, legs 6 root 2 at 44 px per unit (373 px). A(320,460) B(693,460) C(320,87) -->
-  <polygon points="320,460 693,460 320,87" fill="rgba(56,189,248,0.1)" stroke="#38bdf8" stroke-width="3.5"/>
-  <path d="M 320 428 L 352 428 L 352 460" fill="none" stroke="#cbd5e1" stroke-width="2.5"/>
-  <line x1="308" y1="273" x2="332" y2="273" stroke="#facc15" stroke-width="3"/>
-  <line x1="506" y1="448" x2="506" y2="472" stroke="#facc15" stroke-width="3"/>
+  <polygon points="320,460 693,460 320,87" fill="rgba(56,189,248,0.1)" stroke="#38bdf8" stroke-width="3.5" />
+  <path d="M 320 428 L 352 428 L 352 460" fill="none" stroke="#cbd5e1" stroke-width="2.5" />
+  <line x1="308" y1="273" x2="332" y2="273" stroke="#facc15" stroke-width="3" />
+  <line x1="506" y1="448" x2="506" y2="472" stroke="#facc15" stroke-width="3" />
 
   <text x="282" y="282" font-family="system-ui, sans-serif" font-size="32" font-weight="700" fill="#facc15" text-anchor="middle">?</text>
   <text x="506" y="502" font-family="system-ui, sans-serif" font-size="32" font-weight="700" fill="#facc15" text-anchor="middle">?</text>
   <text x="524" y="240" font-family="system-ui, sans-serif" font-size="30" font-weight="600" fill="#cbd5e1" text-anchor="middle">12</text>
 
-  <text x="600" y="582" font-family="monospace" font-size="28" font-weight="bold" fill="#10b981" text-anchor="middle">leg = 12 ÷ √2 = 6√2 ≈ 8.49</text>
+  <text x="600" y="581.0" font-family="monospace" font-size="28" font-weight="bold" fill="#10b981" text-anchor="middle">leg = 12 ÷ √2 = 6√2 ≈ 8.49</text>
 </svg>

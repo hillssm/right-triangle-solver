@@ -1,24 +1,24 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3" />
     </pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
 
-  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="32" font-weight="500" fill="#94a3b8" text-anchor="middle">Solve a right triangle: find every part</text>
+  <text x="600" y="77.0" font-family="system-ui, sans-serif" font-size="32" font-weight="500" fill="#94a3b8" text-anchor="middle">Solve a right triangle: find every part</text>
 
   <!-- 5-12-13 at 46 px per unit. A(320,480) B(872,480) C(320,250) -->
-  <polygon points="320,480 872,480 320,250" fill="rgba(56,189,248,0.1)" stroke="#38bdf8" stroke-width="3.5"/>
-  <path d="M 320 450 L 350 450 L 350 480" fill="none" stroke="#cbd5e1" stroke-width="2.5"/>
+  <polygon points="320,480 872,480 320,250" fill="rgba(56,189,248,0.1)" stroke="#38bdf8" stroke-width="3.5" />
+  <path d="M 320 450 L 350 450 L 350 480" fill="none" stroke="#cbd5e1" stroke-width="2.5" />
 
-  <path d="M 812 480 A 60 60 0 0 1 817 457" fill="none" stroke="#facc15" stroke-width="2.5"/>
-  <path d="M 375 273 A 60 60 0 0 1 320 310" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <path d="M 812 480 A 60 60 0 0 1 817 457" fill="none" stroke="#facc15" stroke-width="2.5" />
+  <path d="M 375 273 A 60 60 0 0 1 320 310" fill="none" stroke="#facc15" stroke-width="2.5" />
 
   <text x="288" y="374" font-family="system-ui, sans-serif" font-size="30" font-weight="600" fill="#cbd5e1" text-anchor="middle">5</text>
   <text x="596" y="522" font-family="system-ui, sans-serif" font-size="30" font-weight="600" fill="#cbd5e1" text-anchor="middle">12</text>
@@ -26,5 +26,5 @@
   <text x="752" y="464" font-family="system-ui, sans-serif" font-size="25" font-weight="600" fill="#facc15" text-anchor="middle">67.4°</text>
   <text x="410" y="302" font-family="system-ui, sans-serif" font-size="25" font-weight="600" fill="#facc15" text-anchor="middle">22.6°</text>
 
-  <text x="600" y="582" font-family="monospace" font-size="28" font-weight="bold" fill="#10b981" text-anchor="middle">two facts in, everything else out</text>
+  <text x="600" y="581.0" font-family="monospace" font-size="28" font-weight="bold" fill="#10b981" text-anchor="middle">two facts in, everything else out</text>
 </svg>

@@ -1,72 +1,72 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3" />
     </pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#grid)"/>
-  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">When one difference is zero, the formula shrinks</text>
-  <line x1="92" y1="430" x2="92" y2="274" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="118" y1="430" x2="118" y2="274" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="144" y1="430" x2="144" y2="274" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="170" y1="430" x2="170" y2="274" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="196" y1="430" x2="196" y2="274" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="222" y1="430" x2="222" y2="274" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="248" y1="430" x2="248" y2="274" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="274" y1="430" x2="274" y2="274" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="300" y1="430" x2="300" y2="274" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="326" y1="430" x2="326" y2="274" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="352" y1="430" x2="352" y2="274" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="378" y1="430" x2="378" y2="274" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="92" y1="430" x2="378" y2="430" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="92" y1="404" x2="378" y2="404" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="92" y1="378" x2="378" y2="378" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="92" y1="352" x2="378" y2="352" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="92" y1="326" x2="378" y2="326" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="92" y1="300" x2="378" y2="300" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="92" y1="274" x2="378" y2="274" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="92" y1="430" x2="388" y2="430" stroke="#94a3b8" stroke-width="2"/>
-  <line x1="170" y1="430" x2="170" y2="264" stroke="#94a3b8" stroke-width="2"/>
-  <line x1="118" y1="326" x2="300" y2="326" stroke="#facc15" stroke-width="4"/>
-  <circle cx="118" cy="326" r="7" fill="#facc15"/>
-  <circle cx="300" cy="326" r="7" fill="#facc15"/>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+  <text x="600" y="75.0" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">When one difference is zero, the formula shrinks</text>
+  <line x1="92" y1="430" x2="92" y2="274" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="118" y1="430" x2="118" y2="274" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="144" y1="430" x2="144" y2="274" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="170" y1="430" x2="170" y2="274" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="196" y1="430" x2="196" y2="274" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="222" y1="430" x2="222" y2="274" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="248" y1="430" x2="248" y2="274" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="274" y1="430" x2="274" y2="274" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="300" y1="430" x2="300" y2="274" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="326" y1="430" x2="326" y2="274" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="352" y1="430" x2="352" y2="274" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="378" y1="430" x2="378" y2="274" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="92" y1="430" x2="378" y2="430" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="92" y1="404" x2="378" y2="404" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="92" y1="378" x2="378" y2="378" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="92" y1="352" x2="378" y2="352" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="92" y1="326" x2="378" y2="326" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="92" y1="300" x2="378" y2="300" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="92" y1="274" x2="378" y2="274" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="92" y1="430" x2="388" y2="430" stroke="#94a3b8" stroke-width="2" />
+  <line x1="170" y1="430" x2="170" y2="264" stroke="#94a3b8" stroke-width="2" />
+  <line x1="118" y1="326" x2="300" y2="326" stroke="#facc15" stroke-width="4" />
+  <circle cx="118" cy="326" r="7" fill="#facc15" />
+  <circle cx="300" cy="326" r="7" fill="#facc15" />
   <text x="118" y="308" font-family="monospace" font-size="21" font-weight="600" fill="#facc15" text-anchor="middle">A (−2, 4)</text>
   <text x="300" y="308" font-family="system-ui, sans-serif" font-size="21" font-weight="600" fill="#facc15" text-anchor="middle">B (5, 4)</text>
   <text x="209" y="358" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#38bdf8" text-anchor="middle">same y, so dy = 0</text>
   <text x="274" y="516" font-family="monospace" font-size="23" font-weight="600" fill="#e2e8f0" text-anchor="middle">horizontal: d = |5 − (−2)| = 7</text>
-  <line x1="668" y1="508" x2="668" y2="248" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="694" y1="508" x2="694" y2="248" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="720" y1="508" x2="720" y2="248" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="746" y1="508" x2="746" y2="248" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="772" y1="508" x2="772" y2="248" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="798" y1="508" x2="798" y2="248" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="824" y1="508" x2="824" y2="248" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="850" y1="508" x2="850" y2="248" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="876" y1="508" x2="876" y2="248" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="668" y1="508" x2="876" y2="508" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="668" y1="482" x2="876" y2="482" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="668" y1="456" x2="876" y2="456" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="668" y1="430" x2="876" y2="430" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="668" y1="404" x2="876" y2="404" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="668" y1="378" x2="876" y2="378" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="668" y1="352" x2="876" y2="352" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="668" y1="326" x2="876" y2="326" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="668" y1="300" x2="876" y2="300" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="668" y1="274" x2="876" y2="274" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="668" y1="248" x2="876" y2="248" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="668" y1="430" x2="886" y2="430" stroke="#94a3b8" stroke-width="2"/>
-  <line x1="720" y1="508" x2="720" y2="238" stroke="#94a3b8" stroke-width="2"/>
-  <line x1="798" y1="482" x2="798" y2="274" stroke="#facc15" stroke-width="4"/>
-  <circle cx="798" cy="482" r="7" fill="#facc15"/>
-  <circle cx="798" cy="274" r="7" fill="#facc15"/>
+  <line x1="668" y1="508" x2="668" y2="248" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="694" y1="508" x2="694" y2="248" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="720" y1="508" x2="720" y2="248" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="746" y1="508" x2="746" y2="248" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="772" y1="508" x2="772" y2="248" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="798" y1="508" x2="798" y2="248" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="824" y1="508" x2="824" y2="248" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="850" y1="508" x2="850" y2="248" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="876" y1="508" x2="876" y2="248" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="668" y1="508" x2="876" y2="508" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="668" y1="482" x2="876" y2="482" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="668" y1="456" x2="876" y2="456" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="668" y1="430" x2="876" y2="430" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="668" y1="404" x2="876" y2="404" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="668" y1="378" x2="876" y2="378" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="668" y1="352" x2="876" y2="352" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="668" y1="326" x2="876" y2="326" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="668" y1="300" x2="876" y2="300" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="668" y1="274" x2="876" y2="274" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="668" y1="248" x2="876" y2="248" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="668" y1="430" x2="886" y2="430" stroke="#94a3b8" stroke-width="2" />
+  <line x1="720" y1="508" x2="720" y2="238" stroke="#94a3b8" stroke-width="2" />
+  <line x1="798" y1="482" x2="798" y2="274" stroke="#facc15" stroke-width="4" />
+  <circle cx="798" cy="482" r="7" fill="#facc15" />
+  <circle cx="798" cy="274" r="7" fill="#facc15" />
   <text x="812" y="270" font-family="system-ui, sans-serif" font-size="21" font-weight="600" fill="#facc15" text-anchor="start">B (3, 6)</text>
   <text x="812" y="488" font-family="monospace" font-size="21" font-weight="600" fill="#facc15" text-anchor="start">A (3, −2)</text>
   <text x="812" y="408" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#38bdf8" text-anchor="start">same x, so dx = 0</text>
   <text x="824" y="516" font-family="monospace" font-size="23" font-weight="600" fill="#e2e8f0" text-anchor="middle">vertical: d = |6 − (−2)| = 8</text>
-  <text x="600" y="592" font-family="monospace" font-size="26" font-weight="bold" fill="#10b981" text-anchor="middle">No diagonal to find: the distance is the one nonzero difference</text>
+  <text x="600" y="581.0" font-family="monospace" font-size="26" font-weight="bold" fill="#10b981" text-anchor="middle">No diagonal to find: the distance is the one nonzero difference</text>
 </svg>

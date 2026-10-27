@@ -1,31 +1,31 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3" />
     </pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
 
-  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">One fixed shape: know one side, know them all</text>
+  <text x="600" y="75.0" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">One fixed shape: know one side, know them all</text>
 
   <!-- 30-60-90 to scale, 46 px per unit, x = 5: A(300,485) right angle, C(300,255) top (60 deg), B(698,485) bottom right (30 deg); short 230, long 398.4, hyp 460 -->
-  <path d="M 300 485 L 698 485 L 300 255 Z" fill="rgba(56, 189, 248, 0.1)" stroke="#38bdf8" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M 300 485 L 698 485 L 300 255 Z" fill="rgba(56, 189, 248, 0.1)" stroke="#38bdf8" stroke-width="3" stroke-linejoin="round" />
 
   <!-- Right-angle marker at A -->
-  <path d="M 326 485 L 326 459 L 300 459" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+  <path d="M 326 485 L 326 459 L 300 459" fill="none" stroke="#94a3b8" stroke-width="2.5" />
   <text x="354" y="463" font-family="system-ui, sans-serif" font-size="27" font-weight="600" fill="#cbd5e1" text-anchor="middle">90°</text>
 
   <!-- Angle arc at B (30 deg): radius 54 -->
-  <path d="M 644 485 A 54 54 0 0 1 651 458" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <path d="M 644 485 A 54 54 0 0 1 651 458" fill="none" stroke="#facc15" stroke-width="2.5" />
   <text x="612" y="465" font-family="system-ui, sans-serif" font-size="28" font-weight="600" fill="#facc15" text-anchor="middle">30°</text>
 
   <!-- Angle arc at C (60 deg): radius 50 -->
-  <path d="M 300 305 A 50 50 0 0 0 343 280" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <path d="M 300 305 A 50 50 0 0 0 343 280" fill="none" stroke="#facc15" stroke-width="2.5" />
   <text x="354" y="316" font-family="system-ui, sans-serif" font-size="28" font-weight="600" fill="#facc15" text-anchor="middle">60°</text>
 
   <!-- Side labels -->

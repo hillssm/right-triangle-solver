@@ -1,15 +1,15 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
     <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg4)"/>
-  <polygon points="200,500 620,500 620,320 200,260" fill="none" stroke="#64748b" stroke-width="2.5"/>
-  <polygon points="200,500 380,500 200,260" fill="rgba(56,189,248,0.15)" stroke="#38bdf8" stroke-width="2.5"/>
-  <polygon points="620,500 620,320 380,500" fill="rgba(56,189,248,0.15)" stroke="#38bdf8" stroke-width="2.5"/>
-  <polygon points="380,500 200,260 620,320" fill="rgba(250,204,21,0.15)" stroke="#facc15" stroke-width="3"/>
+  <rect width="1200" height="630" fill="url(#bg4)" />
+  <polygon points="200,500 620,500 620,320 200,260" fill="none" stroke="#64748b" stroke-width="2.5" />
+  <polygon points="200,500 380,500 200,260" fill="rgba(56,189,248,0.15)" stroke="#38bdf8" stroke-width="2.5" />
+  <polygon points="620,500 620,320 380,500" fill="rgba(56,189,248,0.15)" stroke="#38bdf8" stroke-width="2.5" />
+  <polygon points="380,500 200,260 620,320" fill="rgba(250,204,21,0.15)" stroke="#facc15" stroke-width="3" />
   <text x="260" y="420" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#38bdf8" text-anchor="middle">ab/2</text>
   <text x="540" y="440" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#38bdf8" text-anchor="middle">ab/2</text>
   <text x="400" y="360" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#facc15" text-anchor="middle">c²/2</text>
@@ -18,5 +18,5 @@
   <text x="180" y="385" font-family="system-ui, sans-serif" font-size="25" font-weight="600" fill="#94a3b8" text-anchor="middle">b</text>
   <text x="642" y="412" font-family="system-ui, sans-serif" font-size="25" font-weight="600" fill="#94a3b8" text-anchor="middle">a</text>
   <text x="410" y="532" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#94a3b8" text-anchor="middle">a + b</text>
-  <text x="600" y="600" font-family="system-ui, sans-serif" font-size="20" fill="#94a3b8" text-anchor="middle">Trapezoid area two ways: (a + b)²/2 = ab + c²/2</text>
+  <text x="600" y="581.0" font-family="system-ui, sans-serif" font-size="20" fill="#94a3b8" text-anchor="middle">Trapezoid area two ways: (a + b)²/2 = ab + c²/2</text>
 </svg>

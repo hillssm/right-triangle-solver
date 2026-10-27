@@ -1,24 +1,24 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
     <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3" />
     </pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg3)"/>
-  <rect width="1200" height="630" fill="url(#grid3)"/>
+  <rect width="1200" height="630" fill="url(#bg3)" />
+  <rect width="1200" height="630" fill="url(#grid3)" />
   <g transform="translate(94,0) scale(1.125)">
 
-  <text x="450" y="52" font-family="system-ui, sans-serif" font-size="26" font-weight="500" fill="#94a3b8" text-anchor="middle">The three parts to label in every word problem</text>
+  <text x="450" y="66.0" font-family="system-ui, sans-serif" font-size="26" font-weight="500" fill="#94a3b8" text-anchor="middle">The three parts to label in every word problem</text>
 
   <!-- Triangle: A(180,440) right angle, B(720,440), C(180,140) -->
-  <path d="M 180 440 L 720 440 L 180 140 Z" fill="rgba(56, 189, 248, 0.1)" stroke="#38bdf8" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M 180 440 L 720 440 L 180 140 Z" fill="rgba(56, 189, 248, 0.1)" stroke="#38bdf8" stroke-width="3" stroke-linejoin="round" />
 
   <!-- Right-angle marker at A -->
-  <path d="M 212 440 L 212 408 L 180 408" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+  <path d="M 212 440 L 212 408 L 180 408" fill="none" stroke="#94a3b8" stroke-width="2.5" />
   <text x="240" y="408" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#cbd5e1" text-anchor="middle">90°</text>
 
   <!-- Labels -->

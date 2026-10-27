@@ -1,35 +1,35 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
     <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3" />
     </pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg2)"/>
-  <rect width="1200" height="630" fill="url(#grid2)"/>
+  <rect width="1200" height="630" fill="url(#bg2)" />
+  <rect width="1200" height="630" fill="url(#grid2)" />
   <g transform="translate(94,0) scale(1.125)">
 
-  <text x="450" y="52" font-family="system-ui, sans-serif" font-size="26" font-weight="500" fill="#94a3b8" text-anchor="middle">Why a depression angle equals an elevation angle</text>
+  <text x="450" y="66.0" font-family="system-ui, sans-serif" font-size="26" font-weight="500" fill="#94a3b8" text-anchor="middle">Why a depression angle equals an elevation angle</text>
 
   <!-- Parallel horizontals y=180 and y=430; observer U(250,180); target L(650,430); sight line between them -->
-  <line x1="140" y1="180" x2="790" y2="180" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 6"/>
-  <line x1="140" y1="430" x2="790" y2="430" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 6"/>
-  <line x1="250" y1="180" x2="650" y2="430" stroke="#facc15" stroke-width="3"/>
+  <line x1="140" y1="180" x2="790" y2="180" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 6" />
+  <line x1="140" y1="430" x2="790" y2="430" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 6" />
+  <line x1="250" y1="180" x2="650" y2="430" stroke="#facc15" stroke-width="3" />
 
-  <circle cx="250" cy="180" r="6" fill="#facc15"/>
+  <circle cx="250" cy="180" r="6" fill="#facc15" />
   <text x="250" y="148" font-family="system-ui, sans-serif" font-size="24" font-weight="500" fill="#cbd5e1" text-anchor="middle">observer</text>
-  <circle cx="650" cy="430" r="6" fill="#facc15"/>
+  <circle cx="650" cy="430" r="6" fill="#facc15" />
   <text x="650" y="466" font-family="system-ui, sans-serif" font-size="24" font-weight="500" fill="#cbd5e1" text-anchor="middle">target</text>
 
-  <path d="M 298 180 A 48 48 0 0 1 291 205" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <path d="M 298 180 A 48 48 0 0 1 291 205" fill="none" stroke="#facc15" stroke-width="2.5" />
   <text x="338" y="212" font-family="system-ui, sans-serif" font-size="25" font-weight="600" fill="#facc15">θ depression</text>
 
-  <path d="M 602 430 A 48 48 0 0 1 609 405" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <path d="M 602 430 A 48 48 0 0 1 609 405" fill="none" stroke="#facc15" stroke-width="2.5" />
   <text x="564" y="402" font-family="system-ui, sans-serif" font-size="25" font-weight="600" fill="#facc15" text-anchor="end">θ elevation</text>
 
-  <text x="450" y="528" font-family="monospace" font-size="24" font-weight="bold" fill="#10b981" text-anchor="middle">parallel horizontals + one line of sight: the angles match</text>
+  <text x="450" y="516.4" font-family="monospace" font-size="24" font-weight="bold" fill="#10b981" text-anchor="middle">parallel horizontals + one line of sight: the angles match</text>
   </g>
 </svg>

@@ -1,33 +1,33 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
     <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3" />
     </pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg3)"/>
-  <rect width="1200" height="630" fill="url(#grid3)"/>
+  <rect width="1200" height="630" fill="url(#bg3)" />
+  <rect width="1200" height="630" fill="url(#grid3)" />
   <g transform="translate(94,0) scale(1.125)">
 
-  <text x="450" y="52" font-family="system-ui, sans-serif" font-size="26" font-weight="500" fill="#94a3b8" text-anchor="middle">Angle of elevation: the worked building example</text>
+  <text x="450" y="66.0" font-family="system-ui, sans-serif" font-size="26" font-weight="500" fill="#94a3b8" text-anchor="middle">Angle of elevation: the worked building example</text>
 
   <!-- Drawn true: 21 px per metre. Eye E(250,438); ground y=470 (eye 1.5 m = 32 px up); building face x=670 (20 m = 420 px); top T(670,144): 14.00 m = 294 px above eye -->
-  <line x1="120" y1="470" x2="830" y2="470" stroke="#64748b" stroke-width="3"/>
-  <line x1="250" y1="470" x2="250" y2="438" stroke="#94a3b8" stroke-width="2.5"/>
+  <line x1="120" y1="470" x2="830" y2="470" stroke="#64748b" stroke-width="3" />
+  <line x1="250" y1="470" x2="250" y2="438" stroke="#94a3b8" stroke-width="2.5" />
   <text x="200" y="460" font-family="system-ui, sans-serif" font-size="23" font-weight="600" fill="#cbd5e1" text-anchor="middle">1.5 m</text>
-  <circle cx="250" cy="438" r="5" fill="#facc15"/>
-  <line x1="250" y1="438" x2="670" y2="438" stroke="#94a3b8" stroke-width="2" stroke-dasharray="7 6"/>
-  <rect x="670" y="144" width="70" height="326" fill="#334155" stroke="#38bdf8" stroke-width="2.5"/>
-  <line x1="250" y1="438" x2="670" y2="144" stroke="#facc15" stroke-width="3"/>
-  <line x1="758" y1="144" x2="758" y2="438" stroke="#94a3b8" stroke-width="2"/>
-  <line x1="750" y1="144" x2="766" y2="144" stroke="#94a3b8" stroke-width="2"/>
-  <line x1="750" y1="438" x2="766" y2="438" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="250" cy="438" r="5" fill="#facc15" />
+  <line x1="250" y1="438" x2="670" y2="438" stroke="#94a3b8" stroke-width="2" stroke-dasharray="7 6" />
+  <rect x="670" y="144" width="70" height="326" fill="#334155" stroke="#38bdf8" stroke-width="2.5" />
+  <line x1="250" y1="438" x2="670" y2="144" stroke="#facc15" stroke-width="3" />
+  <line x1="758" y1="144" x2="758" y2="438" stroke="#94a3b8" stroke-width="2" />
+  <line x1="750" y1="144" x2="766" y2="144" stroke="#94a3b8" stroke-width="2" />
+  <line x1="750" y1="438" x2="766" y2="438" stroke="#94a3b8" stroke-width="2" />
   <text x="772" y="298" font-family="system-ui, sans-serif" font-size="23" font-weight="600" fill="#cbd5e1">14.00 m</text>
 
-  <path d="M 302 438 A 52 52 0 0 0 292 408" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <path d="M 302 438 A 52 52 0 0 0 292 408" fill="none" stroke="#facc15" stroke-width="2.5" />
   <text x="330" y="414" font-family="system-ui, sans-serif" font-size="25" font-weight="600" fill="#facc15" text-anchor="middle">35°</text>
 
   <text x="460" y="500" font-family="system-ui, sans-serif" font-size="25" font-weight="600" fill="#cbd5e1" text-anchor="middle">20 m</text>

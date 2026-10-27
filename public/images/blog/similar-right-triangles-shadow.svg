@@ -1,24 +1,24 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3" />
     </pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#grid)"/>
-  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">Shadows draw similar right triangles for free</text>
-  <line x1="80" y1="520" x2="1140" y2="520" stroke="#64748b" stroke-width="3"/>
-  <rect x="673" y="400" width="14" height="120" fill="#334155" stroke="#38bdf8" stroke-width="2"/>
-  <polygon points="680,250 605,405 755,405" fill="#334155" stroke="#38bdf8" stroke-width="2.5"/>
-  <line x1="680" y1="250" x2="680" y2="520" stroke="#94a3b8" stroke-width="2" stroke-dasharray="7 6"/>
-  <line x1="680" y1="250" x2="1040" y2="520" stroke="#facc15" stroke-width="3"/>
-  <line x1="240" y1="520" x2="240" y2="475" stroke="#38bdf8" stroke-width="4"/>
-  <circle cx="240" cy="466" r="9" fill="none" stroke="#38bdf8" stroke-width="3"/>
-  <line x1="240" y1="457" x2="312" y2="520" stroke="#facc15" stroke-width="3"/>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+  <text x="600" y="75.0" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">Shadows draw similar right triangles for free</text>
+  <line x1="80" y1="520" x2="1140" y2="520" stroke="#64748b" stroke-width="3" />
+  <rect x="673" y="400" width="14" height="120" fill="#334155" stroke="#38bdf8" stroke-width="2" />
+  <polygon points="680,250 605,405 755,405" fill="#334155" stroke="#38bdf8" stroke-width="2.5" />
+  <line x1="680" y1="250" x2="680" y2="520" stroke="#94a3b8" stroke-width="2" stroke-dasharray="7 6" />
+  <line x1="680" y1="250" x2="1040" y2="520" stroke="#facc15" stroke-width="3" />
+  <line x1="240" y1="520" x2="240" y2="475" stroke="#38bdf8" stroke-width="4" />
+  <circle cx="240" cy="466" r="9" fill="none" stroke="#38bdf8" stroke-width="3" />
+  <line x1="240" y1="457" x2="312" y2="520" stroke="#facc15" stroke-width="3" />
   <text x="648" y="395" font-family="system-ui, sans-serif" font-size="32" font-weight="600" fill="#facc15" text-anchor="end">h</text>
   <text x="860" y="556" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#94a3b8" text-anchor="middle">shadow 12 m</text>
   <text x="240" y="428" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#94a3b8" text-anchor="middle">1.8 m</text>

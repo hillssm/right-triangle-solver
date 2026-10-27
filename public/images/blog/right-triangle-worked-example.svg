@@ -1,29 +1,29 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3" />
     </pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
 
-  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">Worked example: find the hypotenuse</text>
+  <text x="600" y="75.0" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">Worked example: find the hypotenuse</text>
 
   <!-- 6-8-10 at 62 px per unit. A(270,480) B(766,480) C(270,108) -->
-  <polygon points="270,480 766,480 270,108" fill="rgba(56,189,248,0.1)" stroke="#38bdf8" stroke-width="3.5"/>
-  <path d="M 270 448 L 302 448 L 302 480" fill="none" stroke="#cbd5e1" stroke-width="2.5"/>
+  <polygon points="270,480 766,480 270,108" fill="rgba(56,189,248,0.1)" stroke="#38bdf8" stroke-width="3.5" />
+  <path d="M 270 448 L 302 448 L 302 480" fill="none" stroke="#cbd5e1" stroke-width="2.5" />
 
   <text x="234" y="302" font-family="system-ui, sans-serif" font-size="29" font-weight="600" fill="#cbd5e1" text-anchor="middle">6 cm</text>
   <text x="518" y="522" font-family="system-ui, sans-serif" font-size="29" font-weight="600" fill="#cbd5e1" text-anchor="middle">8 cm</text>
   <text x="540" y="272" font-family="system-ui, sans-serif" font-size="31" font-weight="700" fill="#facc15" text-anchor="middle">10 cm</text>
 
-  <text x="836" y="216" font-family="monospace" font-size="27" font-weight="bold" fill="#cbd5e1">Step 1: 6² + 8² = 100</text>
+  <text x="831.1" y="216" font-family="monospace" font-size="27" font-weight="bold" fill="#cbd5e1">Step 1: 6² + 8² = 100</text>
   <text x="836" y="300" font-family="monospace" font-size="27" font-weight="bold" fill="#cbd5e1">Step 2: c = √100</text>
   <text x="836" y="384" font-family="monospace" font-size="27" font-weight="bold" fill="#10b981">Step 3: c = 10 cm</text>
 
-  <text x="600" y="582" font-family="monospace" font-size="28" font-weight="bold" fill="#10b981" text-anchor="middle">a² + b² = c²: 36 + 64 = 100</text>
+  <text x="600" y="581.0" font-family="monospace" font-size="28" font-weight="bold" fill="#10b981" text-anchor="middle">a² + b² = c²: 36 + 64 = 100</text>
 </svg>

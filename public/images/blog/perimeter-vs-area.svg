@@ -1,23 +1,23 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
     <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3" />
     </pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg3)"/>
-  <rect width="1200" height="630" fill="url(#grid3)"/>
+  <rect width="1200" height="630" fill="url(#bg3)" />
+  <rect width="1200" height="630" fill="url(#grid3)" />
   <g transform="translate(94,0) scale(1.125)">
 
-  <text x="450" y="52" font-family="system-ui, sans-serif" font-size="26" font-weight="500" fill="#94a3b8" text-anchor="middle">Same triangle, two different measurements</text>
+  <text x="450" y="66.0" font-family="system-ui, sans-serif" font-size="26" font-weight="500" fill="#94a3b8" text-anchor="middle">Same triangle, two different measurements</text>
 
   <!-- Left: perimeter, 6-8-10 at 15 px/unit: A(120,400), top(120,310), right(240,400); legs 90/120, hyp 150 -->
   <text x="180" y="118" font-family="system-ui, sans-serif" font-size="27" font-weight="600" fill="#cbd5e1" text-anchor="middle">Perimeter</text>
-  <path d="M 120 400 L 240 400 L 120 310 Z" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linejoin="round"/>
-  <path d="M 138 400 L 138 382 L 120 382" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+  <path d="M 120 400 L 240 400 L 120 310 Z" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linejoin="round" />
+  <path d="M 138 400 L 138 382 L 120 382" fill="none" stroke="#94a3b8" stroke-width="2.5" />
   <text x="94" y="362" font-family="system-ui, sans-serif" font-size="23" font-weight="600" fill="#cbd5e1" text-anchor="middle">6</text>
   <text x="180" y="436" font-family="system-ui, sans-serif" font-size="23" font-weight="600" fill="#cbd5e1" text-anchor="middle">8</text>
   <text x="200" y="334" font-family="system-ui, sans-serif" font-size="23" font-weight="600" fill="#cbd5e1" text-anchor="middle">10</text>
@@ -25,8 +25,8 @@
 
   <!-- Right: area, same triangle filled: A(500,400), top(500,310), right(620,400) -->
   <text x="560" y="118" font-family="system-ui, sans-serif" font-size="27" font-weight="600" fill="#cbd5e1" text-anchor="middle">Area</text>
-  <path d="M 500 400 L 620 400 L 500 310 Z" fill="rgba(16, 185, 129, 0.35)" stroke="#38bdf8" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M 518 400 L 518 382 L 500 382" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+  <path d="M 500 400 L 620 400 L 500 310 Z" fill="rgba(16, 185, 129, 0.35)" stroke="#38bdf8" stroke-width="3" stroke-linejoin="round" />
+  <path d="M 518 400 L 518 382 L 500 382" fill="none" stroke="#94a3b8" stroke-width="2.5" />
   <text x="474" y="362" font-family="system-ui, sans-serif" font-size="23" font-weight="600" fill="#cbd5e1" text-anchor="middle">6</text>
   <text x="560" y="436" font-family="system-ui, sans-serif" font-size="23" font-weight="600" fill="#cbd5e1" text-anchor="middle">8</text>
   <text x="560" y="500" font-family="monospace" font-size="22" font-weight="bold" fill="#10b981" text-anchor="middle">space inside = 24 cm²</text>

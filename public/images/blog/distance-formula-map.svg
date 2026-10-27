@@ -1,41 +1,41 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3" />
     </pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#grid)"/>
-  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">Straight-line distance is not the road distance</text>
-  <line x1="170" y1="510" x2="170" y2="96" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="216" y1="510" x2="216" y2="96" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="262" y1="510" x2="262" y2="96" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="308" y1="510" x2="308" y2="96" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="354" y1="510" x2="354" y2="96" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="400" y1="510" x2="400" y2="96" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="446" y1="510" x2="446" y2="96" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="492" y1="510" x2="492" y2="96" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="538" y1="510" x2="538" y2="96" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="584" y1="510" x2="584" y2="96" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="630" y1="510" x2="630" y2="96" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="676" y1="510" x2="676" y2="96" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="722" y1="510" x2="722" y2="96" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="170" y1="510" x2="722" y2="510" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="170" y1="464" x2="722" y2="464" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="170" y1="418" x2="722" y2="418" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="170" y1="372" x2="722" y2="372" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="170" y1="326" x2="722" y2="326" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="170" y1="280" x2="722" y2="280" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="170" y1="234" x2="722" y2="234" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="170" y1="188" x2="722" y2="188" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="170" y1="142" x2="722" y2="142" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="170" y1="96" x2="722" y2="96" stroke="#475569" stroke-width="1" opacity="0.45"/>
-  <line x1="170" y1="510" x2="734" y2="510" stroke="#94a3b8" stroke-width="2.5"/>
-  <line x1="170" y1="510" x2="170" y2="84" stroke="#94a3b8" stroke-width="2.5"/>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+  <text x="600" y="75.0" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">Straight-line distance is not the road distance</text>
+  <line x1="170" y1="510" x2="170" y2="96" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="216" y1="510" x2="216" y2="96" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="262" y1="510" x2="262" y2="96" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="308" y1="510" x2="308" y2="96" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="354" y1="510" x2="354" y2="96" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="400" y1="510" x2="400" y2="96" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="446" y1="510" x2="446" y2="96" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="492" y1="510" x2="492" y2="96" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="538" y1="510" x2="538" y2="96" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="584" y1="510" x2="584" y2="96" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="630" y1="510" x2="630" y2="96" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="676" y1="510" x2="676" y2="96" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="722" y1="510" x2="722" y2="96" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="170" y1="510" x2="722" y2="510" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="170" y1="464" x2="722" y2="464" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="170" y1="418" x2="722" y2="418" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="170" y1="372" x2="722" y2="372" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="170" y1="326" x2="722" y2="326" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="170" y1="280" x2="722" y2="280" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="170" y1="234" x2="722" y2="234" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="170" y1="188" x2="722" y2="188" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="170" y1="142" x2="722" y2="142" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="170" y1="96" x2="722" y2="96" stroke="#475569" stroke-width="1" opacity="0.45" />
+  <line x1="170" y1="510" x2="734" y2="510" stroke="#94a3b8" stroke-width="2.5" />
+  <line x1="170" y1="510" x2="170" y2="84" stroke="#94a3b8" stroke-width="2.5" />
   <text x="170" y="536" font-family="system-ui, sans-serif" font-size="16" font-weight="500" fill="#94a3b8" text-anchor="middle">0</text>
   <text x="262" y="536" font-family="system-ui, sans-serif" font-size="16" font-weight="500" fill="#94a3b8" text-anchor="middle">2</text>
   <text x="354" y="536" font-family="system-ui, sans-serif" font-size="16" font-weight="500" fill="#94a3b8" text-anchor="middle">4</text>
@@ -48,13 +48,13 @@
   <text x="158" y="239" font-family="system-ui, sans-serif" font-size="16" font-weight="500" fill="#94a3b8" text-anchor="end">6</text>
   <text x="158" y="147" font-family="system-ui, sans-serif" font-size="16" font-weight="500" fill="#94a3b8" text-anchor="end">8</text>
   <text x="726" y="486" font-family="system-ui, sans-serif" font-size="18" font-weight="500" fill="#94a3b8" text-anchor="start">km</text>
-  <path d="M 216 418 L 630 418 L 630 142" fill="none" stroke="#94a3b8" stroke-width="3" stroke-dasharray="9 7"/>
-  <line x1="216" y1="418" x2="630" y2="142" stroke="#facc15" stroke-width="4"/>
-  <rect x="205" y="407" width="22" height="22" fill="#334155" stroke="#38bdf8" stroke-width="2.5"/>
-  <rect x="619" y="131" width="22" height="22" fill="#334155" stroke="#38bdf8" stroke-width="2.5"/>
+  <path d="M 216 418 L 630 418 L 630 142" fill="none" stroke="#94a3b8" stroke-width="3" stroke-dasharray="9 7" />
+  <line x1="216" y1="418" x2="630" y2="142" stroke="#facc15" stroke-width="4" />
+  <rect x="205" y="407" width="22" height="22" fill="#334155" stroke="#38bdf8" stroke-width="2.5" />
+  <rect x="619" y="131" width="22" height="22" fill="#334155" stroke="#38bdf8" stroke-width="2.5" />
   <text x="216" y="460" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#38bdf8" text-anchor="middle">Library (1, 2)</text>
   <text x="630" y="118" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#38bdf8" text-anchor="middle">Park (10, 8)</text>
   <text x="413" y="264" font-family="monospace" font-size="24" font-weight="600" fill="#facc15" text-anchor="middle">straight line ≈ 10.82 km</text>
   <text x="423" y="454" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#94a3b8" text-anchor="middle">roads: 9 + 6 = 15 km</text>
-  <text x="600" y="592" font-family="monospace" font-size="26" font-weight="bold" fill="#10b981" text-anchor="middle">d = √[(10 − 1)² + (8 − 2)²] = √117 ≈ 10.82 km</text>
+  <text x="600" y="581.0" font-family="monospace" font-size="26" font-weight="bold" fill="#10b981" text-anchor="middle">d = √[(10 − 1)² + (8 − 2)²] = √117 ≈ 10.82 km</text>
 </svg>

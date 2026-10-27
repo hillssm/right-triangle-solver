@@ -1,22 +1,22 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3" />
     </pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#grid)"/>
-  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">Three sides, three names</text>
-  <polygon points="300,470 572,470 572,266" fill="none" stroke="#38bdf8" stroke-width="3.5"/>
-  <path d="M 554 470 L 554 452 L 572 452" fill="none" stroke="#facc15" stroke-width="2.5"/>
-  <path d="M 348 470 A 48 48 0 0 0 338 434" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+  <text x="600" y="75.0" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">Three sides, three names</text>
+  <polygon points="300,470 572,470 572,266" fill="none" stroke="#38bdf8" stroke-width="3.5" />
+  <path d="M 554 470 L 554 452 L 572 452" fill="none" stroke="#facc15" stroke-width="2.5" />
+  <path d="M 348 470 A 48 48 0 0 0 338 434" fill="none" stroke="#facc15" stroke-width="2.5" />
   <text x="366" y="448" font-family="system-ui, sans-serif" font-size="28" font-weight="600" fill="#facc15" text-anchor="middle">θ</text>
   <text x="436" y="506" font-family="system-ui, sans-serif" font-size="25" font-weight="600" fill="#38bdf8" text-anchor="middle">adjacent = 8</text>
   <text x="592" y="376" font-family="system-ui, sans-serif" font-size="25" font-weight="600" fill="#38bdf8" text-anchor="start">opposite = 6</text>
   <text x="408" y="330" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#facc15" text-anchor="middle">hypotenuse = 10</text>
-  <text x="600" y="586" font-family="monospace" font-size="26" font-weight="bold" fill="#10b981" text-anchor="middle">The hypotenuse never changes. Opposite and adjacent depend on θ.</text>
+  <text x="600" y="581.0" font-family="monospace" font-size="26" font-weight="bold" fill="#10b981" text-anchor="middle">The hypotenuse never changes. Opposite and adjacent depend on θ.</text>
 </svg>

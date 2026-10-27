@@ -1,21 +1,21 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3" />
     </pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
 
-  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">The hypotenuse formula, step by step</text>
+  <text x="600" y="75.0" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">The hypotenuse formula, step by step</text>
 
   <!-- 3-4-5 at 80 px per unit. A(150,450) B(470,450) C(150,210) -->
-  <polygon points="150,450 470,450 150,210" fill="rgba(56,189,248,0.1)" stroke="#38bdf8" stroke-width="3.5"/>
-  <path d="M 150 418 L 182 418 L 182 450" fill="none" stroke="#cbd5e1" stroke-width="2.5"/>
+  <polygon points="150,450 470,450 150,210" fill="rgba(56,189,248,0.1)" stroke="#38bdf8" stroke-width="3.5" />
+  <path d="M 150 418 L 182 418 L 182 450" fill="none" stroke="#cbd5e1" stroke-width="2.5" />
 
   <text x="114" y="338" font-family="system-ui, sans-serif" font-size="29" font-weight="600" fill="#cbd5e1" text-anchor="middle">3</text>
   <text x="310" y="492" font-family="system-ui, sans-serif" font-size="29" font-weight="600" fill="#cbd5e1" text-anchor="middle">4</text>
@@ -25,5 +25,5 @@
   <text x="545" y="340" font-family="monospace" font-size="26" font-weight="bold" fill="#cbd5e1">Step 2: add them: 9 + 16 = 25</text>
   <text x="545" y="424" font-family="monospace" font-size="26" font-weight="bold" fill="#10b981">Step 3: root: c = √25 = 5</text>
 
-  <text x="600" y="582" font-family="monospace" font-size="28" font-weight="bold" fill="#10b981" text-anchor="middle">c = √(a² + b²)</text>
+  <text x="600" y="581.0" font-family="monospace" font-size="28" font-weight="bold" fill="#10b981" text-anchor="middle">c = √(a² + b²)</text>
 </svg>

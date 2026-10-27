@@ -1,41 +1,41 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3" />
     </pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
 
-  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">One triangle, three ratios</text>
+  <text x="600" y="75.0" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">One triangle, three ratios</text>
 
   <!-- Panel 1: sin. Triangle A(100,430) B(300,430) C(300,280). Gold: hypotenuse + opposite (vertical) -->
-  <polygon points="100,430 300,430 300,280" fill="rgba(56,189,248,0.05)" stroke="#64748b" stroke-width="2.5"/>
-  <line x1="100" y1="430" x2="300" y2="280" stroke="#facc15" stroke-width="4.5"/>
-  <line x1="300" y1="430" x2="300" y2="280" stroke="#facc15" stroke-width="4.5"/>
-  <path d="M 130 430 A 30 30 0 0 1 124 412" fill="none" stroke="#facc15" stroke-width="2"/>
+  <polygon points="100,430 300,430 300,280" fill="rgba(56,189,248,0.05)" stroke="#64748b" stroke-width="2.5" />
+  <line x1="100" y1="430" x2="300" y2="280" stroke="#facc15" stroke-width="4.5" />
+  <line x1="300" y1="430" x2="300" y2="280" stroke="#facc15" stroke-width="4.5" />
+  <path d="M 130 430 A 30 30 0 0 1 124 412" fill="none" stroke="#facc15" stroke-width="2" />
   <text x="200" y="492" font-family="monospace" font-size="27" font-weight="bold" fill="#cbd5e1" text-anchor="middle">sin θ = 3/5</text>
   <text x="200" y="526" font-family="system-ui, sans-serif" font-size="22" font-weight="500" fill="#94a3b8" text-anchor="middle">opposite over hypotenuse</text>
 
   <!-- Panel 2: cos. Triangle A(500,430) B(700,430) C(700,280). Gold: hypotenuse + adjacent (bottom) -->
-  <polygon points="500,430 700,430 700,280" fill="rgba(56,189,248,0.05)" stroke="#64748b" stroke-width="2.5"/>
-  <line x1="500" y1="430" x2="700" y2="280" stroke="#facc15" stroke-width="4.5"/>
-  <line x1="500" y1="430" x2="700" y2="430" stroke="#facc15" stroke-width="4.5"/>
-  <path d="M 530 430 A 30 30 0 0 1 524 412" fill="none" stroke="#facc15" stroke-width="2"/>
+  <polygon points="500,430 700,430 700,280" fill="rgba(56,189,248,0.05)" stroke="#64748b" stroke-width="2.5" />
+  <line x1="500" y1="430" x2="700" y2="280" stroke="#facc15" stroke-width="4.5" />
+  <line x1="500" y1="430" x2="700" y2="430" stroke="#facc15" stroke-width="4.5" />
+  <path d="M 530 430 A 30 30 0 0 1 524 412" fill="none" stroke="#facc15" stroke-width="2" />
   <text x="600" y="492" font-family="monospace" font-size="27" font-weight="bold" fill="#cbd5e1" text-anchor="middle">cos θ = 4/5</text>
   <text x="600" y="526" font-family="system-ui, sans-serif" font-size="22" font-weight="500" fill="#94a3b8" text-anchor="middle">adjacent over hypotenuse</text>
 
   <!-- Panel 3: tan. Triangle A(900,430) B(1100,430) C(1100,280). Gold: opposite (vertical) + adjacent (bottom) -->
-  <polygon points="900,430 1100,430 1100,280" fill="rgba(56,189,248,0.05)" stroke="#64748b" stroke-width="2.5"/>
-  <line x1="1100" y1="430" x2="1100" y2="280" stroke="#facc15" stroke-width="4.5"/>
-  <line x1="900" y1="430" x2="1100" y2="430" stroke="#facc15" stroke-width="4.5"/>
-  <path d="M 930 430 A 30 30 0 0 1 924 412" fill="none" stroke="#facc15" stroke-width="2"/>
+  <polygon points="900,430 1100,430 1100,280" fill="rgba(56,189,248,0.05)" stroke="#64748b" stroke-width="2.5" />
+  <line x1="1100" y1="430" x2="1100" y2="280" stroke="#facc15" stroke-width="4.5" />
+  <line x1="900" y1="430" x2="1100" y2="430" stroke="#facc15" stroke-width="4.5" />
+  <path d="M 930 430 A 30 30 0 0 1 924 412" fill="none" stroke="#facc15" stroke-width="2" />
   <text x="1000" y="492" font-family="monospace" font-size="27" font-weight="bold" fill="#cbd5e1" text-anchor="middle">tan θ = 3/4</text>
   <text x="1000" y="526" font-family="system-ui, sans-serif" font-size="22" font-weight="500" fill="#94a3b8" text-anchor="middle">opposite over adjacent</text>
 
-  <text x="600" y="590" font-family="monospace" font-size="26" font-weight="bold" fill="#10b981" text-anchor="middle">SOH CAH TOA: sin = O/H, cos = A/H, tan = O/A</text>
+  <text x="600" y="581.0" font-family="monospace" font-size="26" font-weight="bold" fill="#10b981" text-anchor="middle">SOH CAH TOA: sin = O/H, cos = A/H, tan = O/A</text>
 </svg>

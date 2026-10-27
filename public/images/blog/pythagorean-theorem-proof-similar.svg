@@ -1,23 +1,23 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
     <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     <pattern id="grid3" width="60" height="60" patternUnits="userSpaceOnUse">
-      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#334155" stroke-width="1" opacity="0.3" />
     </pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg3)"/>
-  <rect width="1200" height="630" fill="url(#grid3)"/>
-  <polygon points="250,450 250,150 700,450" fill="none" stroke="#38bdf8" stroke-width="3.5"/>
-  <line x1="250" y1="450" x2="389" y2="242" stroke="#facc15" stroke-width="2.5" stroke-dasharray="8 6"/>
-  <path d="M 404 252 L 394 267 L 379 257" fill="none" stroke="#facc15" stroke-width="2.5"/>
-  <path d="M 270 450 L 270 430 L 250 430" fill="none" stroke="#94a3b8" stroke-width="2"/>
-  <circle cx="250" cy="450" r="9" fill="#38bdf8"/>
-  <circle cx="250" cy="150" r="9" fill="#38bdf8"/>
-  <circle cx="700" cy="450" r="9" fill="#38bdf8"/>
-  <circle cx="389" cy="242" r="9" fill="#facc15"/>
+  <rect width="1200" height="630" fill="url(#bg3)" />
+  <rect width="1200" height="630" fill="url(#grid3)" />
+  <polygon points="250,450 250,150 700,450" fill="none" stroke="#38bdf8" stroke-width="3.5" />
+  <line x1="250" y1="450" x2="389" y2="242" stroke="#facc15" stroke-width="2.5" stroke-dasharray="8 6" />
+  <path d="M 404 252 L 394 267 L 379 257" fill="none" stroke="#facc15" stroke-width="2.5" />
+  <path d="M 270 450 L 270 430 L 250 430" fill="none" stroke="#94a3b8" stroke-width="2" />
+  <circle cx="250" cy="450" r="9" fill="#38bdf8" />
+  <circle cx="250" cy="150" r="9" fill="#38bdf8" />
+  <circle cx="700" cy="450" r="9" fill="#38bdf8" />
+  <circle cx="389" cy="242" r="9" fill="#facc15" />
   <text x="235" y="480" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
   <text x="250" y="130" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
   <text x="715" y="455" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
@@ -28,5 +28,5 @@
   <text x="560" y="368" font-family="system-ui, sans-serif" font-size="25" font-weight="600" fill="#facc15" text-anchor="middle">x</text>
   <text x="312" y="182" font-family="system-ui, sans-serif" font-size="25" font-weight="600" fill="#facc15" text-anchor="middle">y</text>
   <text x="298" y="345" font-family="system-ui, sans-serif" font-size="25" font-weight="600" fill="#facc15" text-anchor="middle">h</text>
-  <text x="600" y="600" font-family="system-ui, sans-serif" font-size="20" fill="#94a3b8" text-anchor="middle">Altitude CD splits hypotenuse c into x + y = c, with a² = cx and b² = cy</text>
+  <text x="600" y="581.0" font-family="system-ui, sans-serif" font-size="20" fill="#94a3b8" text-anchor="middle">Altitude CD splits hypotenuse c into x + y = c, with a² = cx and b² = cy</text>
 </svg>

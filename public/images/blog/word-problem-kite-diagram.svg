@@ -1,25 +1,25 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3" />
     </pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
 
-  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">A kite problem: string, angle, height</text>
+  <text x="600" y="75.0" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">A kite problem: string, angle, height</text>
 
   <!-- String 50 m at 8 px per metre = 400 px, at 60 degrees: run 25 m (200 px), rise 43.30 m (346 px). Person (450,470), kite (650,124) -->
-  <line x1="150" y1="470" x2="820" y2="470" stroke="#64748b" stroke-width="3"/>
-  <line x1="650" y1="124" x2="650" y2="470" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 6"/>
-  <line x1="450" y1="470" x2="650" y2="124" stroke="#facc15" stroke-width="3"/>
-  <polygon points="650,102 670,124 650,146 630,124" fill="#facc15"/>
-  <circle cx="450" cy="470" r="6" fill="#facc15"/>
-  <path d="M 504 470 A 54 54 0 0 1 477 423" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <line x1="150" y1="470" x2="820" y2="470" stroke="#64748b" stroke-width="3" />
+  <line x1="650" y1="124" x2="650" y2="470" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 6" />
+  <line x1="450" y1="470" x2="650" y2="124" stroke="#facc15" stroke-width="3" />
+  <polygon points="650,102 670,124 650,146 630,124" fill="#facc15" />
+  <circle cx="450" cy="470" r="6" fill="#facc15" />
+  <path d="M 504 470 A 54 54 0 0 1 477 423" fill="none" stroke="#facc15" stroke-width="2.5" />
 
   <text x="518" y="450" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#facc15" text-anchor="middle">60°</text>
   <text x="540" y="292" font-family="monospace" font-size="24" font-weight="bold" fill="#facc15" text-anchor="end">string 50 m</text>
@@ -28,5 +28,5 @@
   <text x="550" y="504" font-family="system-ui, sans-serif" font-size="25" font-weight="600" fill="#cbd5e1" text-anchor="middle">25 m</text>
   <text x="434" y="504" font-family="system-ui, sans-serif" font-size="25" font-weight="500" fill="#94a3b8" text-anchor="end">you</text>
 
-  <text x="600" y="582" font-family="monospace" font-size="28" font-weight="bold" fill="#10b981" text-anchor="middle">height = 50 × sin 60° ≈ 43.30 m</text>
+  <text x="600" y="581.0" font-family="monospace" font-size="28" font-weight="bold" fill="#10b981" text-anchor="middle">height = 50 × sin 60° ≈ 43.30 m</text>
 </svg>

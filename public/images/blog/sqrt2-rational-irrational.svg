@@ -29,7 +29,7 @@
 <line x1="58" y1="420" x2="1142" y2="420" stroke="#243447" stroke-width="1"/>
 <line x1="58" y1="480" x2="1142" y2="480" stroke="#243447" stroke-width="1"/>
 <line x1="58" y1="540" x2="1142" y2="540" stroke="#243447" stroke-width="1"/>
-<text x="600.0" y="70.0" font-family="system-ui, sans-serif" font-size="32" fill="#ffffff" text-anchor="middle" font-weight="bold">Rational vs. Irrational Numbers</text>
+<text x="600.0" y="77.0" font-family="system-ui, sans-serif" font-size="32" fill="#ffffff" text-anchor="middle" font-weight="bold">Rational vs. Irrational Numbers</text>
 <rect x="80.0" y="120.0" width="490.0" height="400.0" stroke="#38bdf8" stroke-width="3" fill="none" />
 <rect x="630.0" y="120.0" width="490.0" height="400.0" stroke="#38bdf8" stroke-width="3" fill="none" />
 <text x="325.0" y="165.0" font-family="system-ui, sans-serif" font-size="24" fill="#facc15" text-anchor="middle" font-weight="bold">RATIONAL</text>

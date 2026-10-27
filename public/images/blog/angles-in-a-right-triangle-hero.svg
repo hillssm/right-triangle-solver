@@ -1,28 +1,28 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3" />
     </pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
 
-  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">The two acute angles always add to 90°</text>
+  <text x="600" y="75.0" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">The two acute angles always add to 90°</text>
 
   <!-- Right triangle, drawn to scale 3-4-5: vertical leg 360, horizontal leg 480, hypotenuse 600 -->
-  <path d="M 340 480 L 820 480 L 340 120 Z" fill="rgba(56, 189, 248, 0.1)" stroke="#38bdf8" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M 340 480 L 820 480 L 340 120 Z" fill="rgba(56, 189, 248, 0.1)" stroke="#38bdf8" stroke-width="3" stroke-linejoin="round" />
 
   <!-- Right-angle marker at C (340,480) -->
-  <path d="M 372 480 L 372 448 L 340 448" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+  <path d="M 372 480 L 372 448 L 340 448" fill="none" stroke="#94a3b8" stroke-width="2.5" />
 
   <!-- Angle arc at B (820,480): 36.87 degrees -->
-  <path d="M 745 480 A 75 75 0 0 1 760 435" fill="none" stroke="#facc15" stroke-width="3"/>
+  <path d="M 745 480 A 75 75 0 0 1 760 435" fill="none" stroke="#facc15" stroke-width="3" />
   <!-- Angle arc at A (340,120): 53.13 degrees -->
-  <path d="M 340 185 A 65 65 0 0 0 392 159" fill="none" stroke="#facc15" stroke-width="3"/>
+  <path d="M 340 185 A 65 65 0 0 0 392 159" fill="none" stroke="#facc15" stroke-width="3" />
 
   <!-- Angle labels -->
   <text x="408" y="452" font-family="system-ui, sans-serif" font-size="30" font-weight="600" fill="#cbd5e1" text-anchor="middle">90°</text>
@@ -34,5 +34,5 @@
   <text x="580" y="524" font-family="system-ui, sans-serif" font-size="32" font-weight="600" fill="#cbd5e1" text-anchor="middle">4</text>
   <text x="606" y="268" font-family="system-ui, sans-serif" font-size="32" font-weight="600" fill="#cbd5e1" text-anchor="middle">5</text>
 
-  <text x="600" y="592" font-family="monospace" font-size="36" font-weight="bold" fill="#10b981" text-anchor="middle">A + B = 90°</text>
+  <text x="600" y="581.0" font-family="monospace" font-size="36" font-weight="bold" fill="#10b981" text-anchor="middle">A + B = 90°</text>
 </svg>

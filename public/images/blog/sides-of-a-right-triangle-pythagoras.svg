@@ -1,23 +1,23 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3" />
     </pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#grid)"/>
-  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">The Pythagorean theorem ties the three sides together</text>
-  <polygon points="330,470 538,470 330,314" fill="none" stroke="#38bdf8" stroke-width="3.5"/>
-  <path d="M 348 470 L 348 488 L 330 488" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+  <text x="600" y="75.0" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">The Pythagorean theorem ties the three sides together</text>
+  <polygon points="330,470 538,470 330,314" fill="none" stroke="#38bdf8" stroke-width="3.5" />
+  <path d="M 348 470 L 348 488 L 330 488" fill="none" stroke="#facc15" stroke-width="2.5" />
   <text x="302" y="400" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#38bdf8" text-anchor="end">a = 3</text>
   <text x="434" y="506" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#38bdf8" text-anchor="middle">b = 4</text>
   <text x="478" y="368" font-family="system-ui, sans-serif" font-size="26" font-weight="600" fill="#facc15" text-anchor="middle">c = 5</text>
   <text x="700" y="330" font-family="system-ui, sans-serif" font-size="34" font-weight="600" fill="#e2e8f0" text-anchor="start">a² + b² = c²</text>
   <text x="700" y="382" font-family="system-ui, sans-serif" font-size="24" font-weight="500" fill="#94a3b8" text-anchor="start">legs squared, added</text>
   <text x="700" y="424" font-family="system-ui, sans-serif" font-size="24" font-weight="500" fill="#94a3b8" text-anchor="start">equal the hypotenuse squared</text>
-  <text x="600" y="586" font-family="monospace" font-size="26" font-weight="bold" fill="#10b981" text-anchor="middle">3² + 4² = 5²    →    9 + 16 = 25</text>
+  <text x="600" y="581.0" font-family="monospace" font-size="26" font-weight="bold" fill="#10b981" text-anchor="middle">3² + 4² = 5²    →    9 + 16 = 25</text>
 </svg>

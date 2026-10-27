@@ -1,22 +1,22 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3" />
     </pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#grid)"/>
-  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">One altitude splits a right triangle into three similar triangles</text>
-  <polygon points="200,470 360,470 360,230" fill="#38bdf8" opacity="0.10"/>
-  <polygon points="360,470 720,470 360,230" fill="#facc15" opacity="0.07"/>
-  <polygon points="200,470 720,470 360,230" fill="none" stroke="#38bdf8" stroke-width="3"/>
-  <line x1="360" y1="230" x2="360" y2="470" stroke="#facc15" stroke-width="3"/>
-  <path d="M 344 470 L 344 454 L 360 454" fill="none" stroke="#facc15" stroke-width="2.5"/>
-  <path d="M 348.9 246.6 L 365.5 257.7 L 376.6 241.1" fill="none" stroke="#facc15" stroke-width="2.5"/>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+  <text x="600" y="75.0" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">One altitude splits a right triangle into three similar triangles</text>
+  <polygon points="200,470 360,470 360,230" fill="#38bdf8" opacity="0.10" />
+  <polygon points="360,470 720,470 360,230" fill="#facc15" opacity="0.07" />
+  <polygon points="200,470 720,470 360,230" fill="none" stroke="#38bdf8" stroke-width="3" />
+  <line x1="360" y1="230" x2="360" y2="470" stroke="#facc15" stroke-width="3" />
+  <path d="M 344 470 L 344 454 L 360 454" fill="none" stroke="#facc15" stroke-width="2.5" />
+  <path d="M 348.9 246.6 L 365.5 257.7 L 376.6 241.1" fill="none" stroke="#facc15" stroke-width="2.5" />
   <text x="178" y="492" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#94a3b8" text-anchor="middle">A</text>
   <text x="742" y="492" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#94a3b8" text-anchor="middle">B</text>
   <text x="360" y="208" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#94a3b8" text-anchor="middle">C</text>
@@ -27,5 +27,5 @@
   <text x="252" y="330" font-family="system-ui, sans-serif" font-size="28" font-weight="600" fill="#e2e8f0" text-anchor="middle">a</text>
   <text x="580" y="322" font-family="system-ui, sans-serif" font-size="28" font-weight="600" fill="#e2e8f0" text-anchor="middle">b</text>
   <text x="460" y="530" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#94a3b8" text-anchor="middle">c = p + q = 13</text>
-  <text x="600" y="586" font-family="monospace" font-size="27" font-weight="bold" fill="#10b981" text-anchor="middle">h² = pq   ·   a² = cp   ·   b² = cq</text>
+  <text x="600" y="581.0" font-family="monospace" font-size="27" font-weight="bold" fill="#10b981" text-anchor="middle">h² = pq   ·   a² = cp   ·   b² = cq</text>
 </svg>

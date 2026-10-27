@@ -30,7 +30,7 @@
 <line x1="58" y1="480" x2="1142" y2="480" stroke="#243447" stroke-width="1"/>
 <line x1="58" y1="540" x2="1142" y2="540" stroke="#243447" stroke-width="1"/>
 <line x1="58" y1="600" x2="1142" y2="600" stroke="#243447" stroke-width="1"/>
-<text x="600.0" y="42.0" font-family="system-ui, sans-serif" font-size="26" fill="#facc15" text-anchor="middle" font-weight="bold">Thales' Theorem</text>
+<text x="600.0" y="71.0" font-family="system-ui, sans-serif" font-size="26" fill="#facc15" text-anchor="middle" font-weight="bold">Thales' Theorem</text>
 <circle cx="600" cy="320" r="220" stroke="#38bdf8" stroke-width="3" fill="none" />
 <line x1="380.0" y1="320.0" x2="820.0" y2="320.0" stroke="#38bdf8" stroke-width="4" />
 <line x1="380.0" y1="320.0" x2="710.0" y2="129.5" stroke="#38bdf8" stroke-width="4" />

@@ -1,28 +1,28 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" opacity="0.3" />
     </pattern>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
 
-  <text x="600" y="62" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">The converse: checking a triangle is right-angled</text>
+  <text x="600" y="75.0" font-family="system-ui, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" text-anchor="middle">The converse: checking a triangle is right-angled</text>
 
   <!-- 7-24-25 at 30 px per unit. A(240,470) B(960,470) C(240,260) -->
-  <polygon points="240,470 960,470 240,260" fill="rgba(56,189,248,0.1)" stroke="#38bdf8" stroke-width="3.5"/>
-  <path d="M 240 438 L 272 438 L 272 470" fill="none" stroke="#10b981" stroke-width="3"/>
+  <polygon points="240,470 960,470 240,260" fill="rgba(56,189,248,0.1)" stroke="#38bdf8" stroke-width="3.5" />
+  <path d="M 240 438 L 272 438 L 272 470" fill="none" stroke="#10b981" stroke-width="3" />
 
   <text x="204" y="372" font-family="system-ui, sans-serif" font-size="29" font-weight="600" fill="#cbd5e1" text-anchor="middle">7</text>
   <text x="600" y="512" font-family="system-ui, sans-serif" font-size="29" font-weight="600" fill="#cbd5e1" text-anchor="middle">24</text>
   <text x="612" y="340" font-family="system-ui, sans-serif" font-size="29" font-weight="600" fill="#cbd5e1" text-anchor="middle">25</text>
 
-  <rect x="986" y="318" width="174" height="48" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+  <rect x="986" y="318" width="174" height="48" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="2" />
   <text x="1073" y="350" font-family="monospace" font-size="24" font-weight="bold" fill="#10b981" text-anchor="middle">confirmed</text>
 
-  <text x="600" y="582" font-family="monospace" font-size="28" font-weight="bold" fill="#10b981" text-anchor="middle">7² + 24² = 49 + 576 = 625 = 25²</text>
+  <text x="600" y="581.0" font-family="monospace" font-size="28" font-weight="bold" fill="#10b981" text-anchor="middle">7² + 24² = 49 + 576 = 625 = 25²</text>
 </svg>

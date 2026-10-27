@@ -35,10 +35,10 @@
 <line x1="600.0" y1="315.0" x2="791.5" y2="154.3" stroke="#facc15" stroke-width="3" />
 <circle cx="600.0" cy="315.0" r="6" fill="#facc15" />
 <circle cx="791.5" cy="154.3" r="7" fill="#facc15" />
-<text x="70.0" y="70.0" font-family="system-ui, sans-serif" font-size="30" fill="#facc15" text-anchor="start" font-weight="bold">x² + y² = 1</text>
-<text x="70.0" y="590.0" font-family="system-ui, sans-serif" font-size="20" fill="#94a3b8" text-anchor="start" font-weight="normal">circumference = 2π</text>
-<text x="905.0" y="320.0" font-family="system-ui, sans-serif" font-size="20" fill="#ffffff" text-anchor="start" font-weight="normal">x-axis</text>
-<text x="615.0" y="560.0" font-family="system-ui, sans-serif" font-size="20" fill="#ffffff" text-anchor="start" font-weight="normal">y-axis</text>
+<text x="70.0" y="75.0" font-family="system-ui, sans-serif" font-size="30" fill="#facc15" text-anchor="start" font-weight="bold">x² + y² = 1</text>
+<text x="70.0" y="581.0" font-family="system-ui, sans-serif" font-size="20" fill="#94a3b8" text-anchor="start" font-weight="normal">circumference = 2π</text>
+<text x="940.0" y="320.0" font-family="system-ui, sans-serif" font-size="20" fill="#ffffff" text-anchor="start" font-weight="normal">x-axis</text>
+<text x="615.0" y="540.0" font-family="system-ui, sans-serif" font-size="20" fill="#ffffff" text-anchor="start" font-weight="normal">y-axis</text>
 <text x="610.0" y="335.0" font-family="system-ui, sans-serif" font-size="20" fill="#ffffff" text-anchor="start" font-weight="normal">O (0, 0)</text>
 <text x="860.0" y="320.0" font-family="system-ui, sans-serif" font-size="20" fill="#facc15" text-anchor="start" font-weight="normal">(1, 0)</text>
 <text x="610.0" y="70.0" font-family="system-ui, sans-serif" font-size="20" fill="#facc15" text-anchor="start" font-weight="normal">(0, 1)</text>

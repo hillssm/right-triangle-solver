@@ -29,7 +29,7 @@
 <line x1="58" y1="420" x2="1142" y2="420" stroke="#243447" stroke-width="1"/>
 <line x1="58" y1="480" x2="1142" y2="480" stroke="#243447" stroke-width="1"/>
 <line x1="58" y1="540" x2="1142" y2="540" stroke="#243447" stroke-width="1"/>
-<text x="600.0" y="70.0" font-family="system-ui, sans-serif" font-size="32" fill="#ffffff" text-anchor="middle" font-weight="bold">Odd Numbers Have Odd Squares</text>
+<text x="600.0" y="77.0" font-family="system-ui, sans-serif" font-size="32" fill="#ffffff" text-anchor="middle" font-weight="bold">Odd Numbers Have Odd Squares</text>
 <text x="600.0" y="150.0" font-family="system-ui, sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="normal">3 = 2·1 + 1    →    3² = 9  (odd)</text>
 <text x="600.0" y="212.0" font-family="system-ui, sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="normal">5 = 2·2 + 1    →    5² = 25  (odd)</text>
 <text x="600.0" y="274.0" font-family="system-ui, sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="normal">7 = 2·3 + 1    →    7² = 49  (odd)</text>

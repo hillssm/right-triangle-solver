@@ -30,7 +30,7 @@
 <line x1="58" y1="480" x2="1142" y2="480" stroke="#243447" stroke-width="1"/>
 <line x1="58" y1="540" x2="1142" y2="540" stroke="#243447" stroke-width="1"/>
 <line x1="58" y1="600" x2="1142" y2="600" stroke="#243447" stroke-width="1"/>
-<text x="600.0" y="42.0" font-family="system-ui, sans-serif" font-size="26" fill="#facc15" text-anchor="middle" font-weight="bold">Triangle Angle Sum Proof</text>
+<text x="600.0" y="71.0" font-family="system-ui, sans-serif" font-size="26" fill="#facc15" text-anchor="middle" font-weight="bold">Triangle Angle Sum Proof</text>
 <polyline points="350.0,100.0 630.0,500.0 350.0,500.0 350.0,100.0" stroke="#38bdf8" stroke-width="4" fill="none" />
 <polyline points="350.0,500.0 350.0,478.0 372.0,478.0 372.0,500.0" stroke="#facc15" stroke-width="2" fill="none" />
 <polyline points="384.4,149.1 383.2,150.0 381.9,150.8 380.6,151.6 379.2,152.4 377.9,153.1 376.5,153.8 375.2,154.5 373.8,155.1 372.4,155.7 370.9,156.2 369.5,156.7 368.0,157.2 366.6,157.7 365.1,158.1 363.6,158.4 362.1,158.8 360.6,159.1 359.1,159.3 357.6,159.5 356.1,159.7 354.6,159.8 353.1,159.9 351.5,160.0 350.0,160.0" stroke="#facc15" stroke-width="2" fill="none" />

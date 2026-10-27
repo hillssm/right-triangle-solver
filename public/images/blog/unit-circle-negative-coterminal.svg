@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e293b"/><stop offset="1" stop-color="#0f172a"/></linearGradient></defs>
+<rect x="0" y="0" width="1200" height="630" fill="url(#bg)"/>
+<line x1="60" y1="58" x2="60" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="120" y1="58" x2="120" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="180" y1="58" x2="180" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="240" y1="58" x2="240" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="300" y1="58" x2="300" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="360" y1="58" x2="360" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="420" y1="58" x2="420" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="480" y1="58" x2="480" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="540" y1="58" x2="540" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="600" y1="58" x2="600" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="660" y1="58" x2="660" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="720" y1="58" x2="720" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="780" y1="58" x2="780" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="840" y1="58" x2="840" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="900" y1="58" x2="900" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="960" y1="58" x2="960" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="1020" y1="58" x2="1020" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="1080" y1="58" x2="1080" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="1140" y1="58" x2="1140" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="60" x2="1142" y2="60" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="120" x2="1142" y2="120" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="180" x2="1142" y2="180" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="240" x2="1142" y2="240" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="300" x2="1142" y2="300" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="360" x2="1142" y2="360" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="420" x2="1142" y2="420" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="480" x2="1142" y2="480" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="540" x2="1142" y2="540" stroke="#243447" stroke-width="1"/>
+<line x1="150.0" y1="315.0" x2="650.0" y2="315.0" stroke="#94a3b8" stroke-width="2" />
+<line x1="400.0" y1="65.0" x2="400.0" y2="565.0" stroke="#94a3b8" stroke-width="2" />
+<circle cx="400.0" cy="315.0" r="230.0" stroke="#38bdf8" stroke-width="4" fill="none" />
+<polyline points="662.0,315.0 661.6,301.3 660.6,287.6 658.8,274.0 656.3,260.5 653.1,247.2 649.2,234.0 644.6,221.1 639.3,208.4 633.4,196.1 626.9,184.0 619.7,172.3 612.0,161.0 603.6,150.1 594.7,139.7 585.3,129.7 575.3,120.3 564.9,111.4 554.0,103.0 542.7,95.3 531.0,88.1 518.9,81.6 506.6,75.7 493.9,70.4 481.0,65.8 467.8,61.9 454.5,58.7 441.0,56.2 427.4,54.4 413.7,53.4 400.0,53.0 386.3,53.4 372.6,54.4 359.0,56.2 345.5,58.7 332.2,61.9 319.0,65.8 306.1,70.4 293.4,75.7 281.1,81.6 269.0,88.1 257.3,95.3 246.0,103.0 235.1,111.4 224.7,120.3 214.7,129.7 205.3,139.7 196.4,150.1 188.0,161.0 180.3,172.3 173.1,184.0 166.6,196.1 160.7,208.4 155.4,221.1 150.8,234.0 146.9,247.2 143.7,260.5 141.2,274.0 139.4,287.6 138.4,301.3 138.0,315.0 138.4,328.7 139.4,342.4 141.2,356.0 143.7,369.5 146.9,382.8 150.8,396.0 155.4,408.9 160.7,421.6 166.6,433.9 173.1,446.0 180.3,457.7 188.0,469.0 196.4,479.9 205.3,490.3 214.7,500.3 224.7,509.7 235.1,518.6 246.0,527.0 257.3,534.7 269.0,541.9 281.1,548.4 293.4,554.3 306.1,559.6 319.0,564.2 332.2,568.1 345.5,571.3 359.0,573.8 372.6,575.6 386.3,576.6 400.0,577.0 413.7,576.6 427.4,575.6 441.0,573.8 454.5,571.3 467.8,568.1 481.0,564.2 493.9,559.6 506.6,554.3 518.9,548.4 531.0,541.9 542.7,534.7 554.0,527.0 564.9,518.6 575.3,509.7 585.3,500.3 594.7,490.3 603.6,479.9 612.0,469.0 619.7,457.7 626.9,446.0 633.4,433.9 639.3,421.6 644.6,408.9 649.2,396.0 653.1,382.8 656.3,369.5 658.8,356.0 660.6,342.4 661.6,328.7 662.0,315.0 661.6,301.3 660.6,287.6 658.8,274.0 656.3,260.5 653.1,247.2 649.2,234.0 644.6,221.1 639.3,208.4 633.4,196.1 626.9,184.0" stroke="#facc15" stroke-width="2" fill="none" stroke-dasharray="10 7" />
+<polyline points="662.0,315.0 661.7,327.9 660.7,340.7 659.2,353.4 657.0,366.1 654.1,378.7 650.7,391.1 646.7,403.3 642.1,415.3 636.8,427.0 631.1,438.5 624.7,449.7 617.8,460.6 610.4,471.1 602.5,481.2 594.1,490.9 585.3,500.3" stroke="#38bdf8" stroke-width="3" fill="none" />
+<polygon points="585.3,500.3 601.5,493.9 591.6,484.0" fill="#facc15" />
+<line x1="400.0" y1="315.0" x2="599.2" y2="200.0" stroke="#38bdf8" stroke-width="3" />
+<line x1="400.0" y1="315.0" x2="562.6" y2="477.6" stroke="#38bdf8" stroke-width="3" />
+<circle cx="400.0" cy="315.0" r="6" fill="#facc15" />
+<circle cx="599.2" cy="200.0" r="7" fill="#facc15" />
+<circle cx="562.6" cy="477.6" r="7" fill="#facc15" />
+<text x="700.0" y="200.0" font-family="system-ui, sans-serif" font-size="22" fill="#facc15" text-anchor="start" font-weight="normal">−45° clockwise</text>
+<text x="700.0" y="230.0" font-family="system-ui, sans-serif" font-size="22" fill="#ffffff" text-anchor="start" font-weight="normal">lands on 315°.</text>
+<text x="700.0" y="290.0" font-family="system-ui, sans-serif" font-size="22" fill="#facc15" text-anchor="start" font-weight="normal">390° = 30° + 360°.</text>
+<text x="700.0" y="320.0" font-family="system-ui, sans-serif" font-size="22" fill="#ffffff" text-anchor="start" font-weight="normal">One full turn added.</text>
+<text x="700.0" y="380.0" font-family="system-ui, sans-serif" font-size="22" fill="#ffffff" text-anchor="start" font-weight="normal">Same point, same</text>
+<text x="700.0" y="410.0" font-family="system-ui, sans-serif" font-size="22" fill="#ffffff" text-anchor="start" font-weight="normal">sine and cosine.</text>
+<text x="700.0" y="470.0" font-family="system-ui, sans-serif" font-size="20" fill="#94a3b8" text-anchor="start" font-weight="normal">30° and 390° are</text>
+<text x="700.0" y="500.0" font-family="system-ui, sans-serif" font-size="20" fill="#94a3b8" text-anchor="start" font-weight="normal">coterminal angles.</text>
+</svg>

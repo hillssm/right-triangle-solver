@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e293b"/><stop offset="1" stop-color="#0f172a"/></linearGradient></defs>
+<rect x="0" y="0" width="1200" height="630" fill="url(#bg)"/>
+<line x1="60" y1="58" x2="60" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="120" y1="58" x2="120" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="180" y1="58" x2="180" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="240" y1="58" x2="240" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="300" y1="58" x2="300" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="360" y1="58" x2="360" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="420" y1="58" x2="420" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="480" y1="58" x2="480" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="540" y1="58" x2="540" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="600" y1="58" x2="600" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="660" y1="58" x2="660" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="720" y1="58" x2="720" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="780" y1="58" x2="780" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="840" y1="58" x2="840" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="900" y1="58" x2="900" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="960" y1="58" x2="960" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="1020" y1="58" x2="1020" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="1080" y1="58" x2="1080" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="1140" y1="58" x2="1140" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="60" x2="1142" y2="60" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="120" x2="1142" y2="120" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="180" x2="1142" y2="180" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="240" x2="1142" y2="240" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="300" x2="1142" y2="300" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="360" x2="1142" y2="360" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="420" x2="1142" y2="420" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="480" x2="1142" y2="480" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="540" x2="1142" y2="540" stroke="#243447" stroke-width="1"/>
+<line x1="330.0" y1="315.0" x2="870.0" y2="315.0" stroke="#94a3b8" stroke-width="2" />
+<line x1="600.0" y1="45.0" x2="600.0" y2="585.0" stroke="#94a3b8" stroke-width="2" />
+<circle cx="600.0" cy="315.0" r="250.0" stroke="#38bdf8" stroke-width="4" fill="none" />
+<line x1="600.0" y1="315.0" x2="475.0" y2="315.0" stroke="#facc15" stroke-width="2" stroke-dasharray="8 6" />
+<line x1="475.0" y1="315.0" x2="475.0" y2="98.5" stroke="#facc15" stroke-width="2" stroke-dasharray="8 6" />
+<line x1="600.0" y1="315.0" x2="475.0" y2="98.5" stroke="#38bdf8" stroke-width="4" />
+<circle cx="600.0" cy="315.0" r="6" fill="#facc15" />
+<circle cx="475.0" cy="98.5" r="8" fill="#facc15" />
+<polyline points="565.0,254.4 563.7,255.2 562.4,256.0 561.1,256.8 559.8,257.7 558.6,258.5 557.4,259.5 556.2,260.4 555.0,261.4 553.8,262.4 552.7,263.4 551.6,264.4 550.5,265.5 549.4,266.6 548.4,267.7 547.4,268.8 546.4,270.0 545.4,271.2 544.5,272.4 543.5,273.6 542.7,274.8 541.8,276.1 541.0,277.4 540.2,278.7 539.4,280.0 538.6,281.3 537.9,282.7 537.2,284.0 536.6,285.4 535.9,286.8 535.3,288.2 534.8,289.6 534.2,291.1 533.7,292.5 533.2,294.0 532.8,295.4 532.4,296.9 532.0,298.4 531.7,299.8 531.3,301.3 531.1,302.8 530.8,304.4 530.6,305.9 530.4,307.4 530.3,308.9 530.1,310.4 530.1,311.9 530.0,313.5 530.0,315.0" stroke="#facc15" stroke-width="2" fill="none" />
+<text x="500.0" y="265.0" font-family="system-ui, sans-serif" font-size="20" fill="#facc15" text-anchor="middle" font-weight="normal">ref 60°</text>
+<text x="455.0" y="95.0" font-family="system-ui, sans-serif" font-size="20" fill="#facc15" text-anchor="end" font-weight="normal">P = (cos 120°, sin 120°)</text>
+<text x="70.0" y="560.0" font-family="system-ui, sans-serif" font-size="22" fill="#ffffff" text-anchor="start" font-weight="normal">sin 120° = √3/2</text>
+<text x="70.0" y="590.0" font-family="system-ui, sans-serif" font-size="22" fill="#ffffff" text-anchor="start" font-weight="normal">cos 120° = −1/2</text>
+<text x="750.0" y="560.0" font-family="system-ui, sans-serif" font-size="20" fill="#94a3b8" text-anchor="start" font-weight="normal">x is negative in QII,</text>
+<text x="750.0" y="590.0" font-family="system-ui, sans-serif" font-size="20" fill="#94a3b8" text-anchor="start" font-weight="normal">so cosine is negative.</text>
+</svg>

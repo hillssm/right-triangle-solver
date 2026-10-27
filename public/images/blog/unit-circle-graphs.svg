@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e293b"/><stop offset="1" stop-color="#0f172a"/></linearGradient></defs>
+<rect x="0" y="0" width="1200" height="630" fill="url(#bg)"/>
+<line x1="60" y1="58" x2="60" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="120" y1="58" x2="120" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="180" y1="58" x2="180" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="240" y1="58" x2="240" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="300" y1="58" x2="300" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="360" y1="58" x2="360" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="420" y1="58" x2="420" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="480" y1="58" x2="480" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="540" y1="58" x2="540" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="600" y1="58" x2="600" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="660" y1="58" x2="660" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="720" y1="58" x2="720" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="780" y1="58" x2="780" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="840" y1="58" x2="840" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="900" y1="58" x2="900" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="960" y1="58" x2="960" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="1020" y1="58" x2="1020" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="1080" y1="58" x2="1080" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="1140" y1="58" x2="1140" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="60" x2="1142" y2="60" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="120" x2="1142" y2="120" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="180" x2="1142" y2="180" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="240" x2="1142" y2="240" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="300" x2="1142" y2="300" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="360" x2="1142" y2="360" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="420" x2="1142" y2="420" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="480" x2="1142" y2="480" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="540" x2="1142" y2="540" stroke="#243447" stroke-width="1"/>
+<line x1="50.0" y1="315.0" x2="490.0" y2="315.0" stroke="#94a3b8" stroke-width="2" />
+<line x1="270.0" y1="95.0" x2="270.0" y2="535.0" stroke="#94a3b8" stroke-width="2" />
+<circle cx="270.0" cy="315.0" r="200.0" stroke="#38bdf8" stroke-width="3" fill="none" />
+<line x1="270.0" y1="315.0" x2="96.8" y2="215.0" stroke="#facc15" stroke-width="3" />
+<polyline points="440.0,315.0 439.8,306.1 439.1,297.2 437.9,288.4 436.3,279.7 434.2,271.0 431.7,262.5 428.7,254.1 425.3,245.9 421.5,237.8 417.2,230.0 412.6,222.4 407.5,215.1 402.1,208.0 396.3,201.2 390.2,194.8 383.8,188.7 377.0,182.9 369.9,177.5 362.6,172.4 355.0,167.8 347.2,163.5 339.1,159.7 330.9,156.3 322.5,153.3 314.0,150.8 305.3,148.7 296.6,147.1 287.8,145.9 278.9,145.2 270.0,145.0 261.1,145.2 252.2,145.9 243.4,147.1 234.7,148.7 226.0,150.8 217.5,153.3 209.1,156.3 200.9,159.7 192.8,163.5 185.0,167.8 177.4,172.4 170.1,177.5 163.0,182.9 156.2,188.7 149.8,194.8 143.7,201.2 137.9,208.0 132.5,215.1 127.4,222.4 122.8,230.0" stroke="#facc15" stroke-width="2" fill="none" />
+<polygon points="122.8,230.0 136.8,219.6 124.7,212.6" fill="#facc15" />
+<circle cx="270.0" cy="315.0" r="6" fill="#facc15" />
+<circle cx="96.8" cy="215.0" r="7" fill="#facc15" />
+<text x="478.0" y="320.0" font-family="system-ui, sans-serif" font-size="18" fill="#facc15" text-anchor="start" font-weight="normal">0°</text>
+<text x="270.0" y="100.0" font-family="system-ui, sans-serif" font-size="18" fill="#facc15" text-anchor="middle" font-weight="normal">90°</text>
+<text x="70.0" y="560.0" font-family="system-ui, sans-serif" font-size="20" fill="#ffffff" text-anchor="start" font-weight="normal">P = (cos 150°, sin 150°)</text>
+<line x1="540.0" y1="190.0" x2="1140.0" y2="190.0" stroke="#94a3b8" stroke-width="2" />
+<polyline points="540.0,190.0 548.3,182.6 556.7,175.2 565.0,168.0 573.3,160.9 581.7,154.1 590.0,147.5 598.3,141.2 606.7,135.4 615.0,129.9 623.3,124.9 631.7,120.4 640.0,116.4 648.3,113.0 656.7,110.1 665.0,107.9 673.3,106.3 681.7,105.3 690.0,105.0 698.3,105.3 706.7,106.3 715.0,107.9 723.3,110.1 731.7,113.0 740.0,116.4 748.3,120.4 756.7,124.9 765.0,129.9 773.3,135.4 781.7,141.2 790.0,147.5 798.3,154.1 806.7,160.9 815.0,168.0 823.3,175.2 831.7,182.6 840.0,190.0 848.3,197.4 856.7,204.8 865.0,212.0 873.3,219.1 881.7,225.9 890.0,232.5 898.3,238.8 906.7,244.6 915.0,250.1 923.3,255.1 931.7,259.6 940.0,263.6 948.3,267.0 956.7,269.9 965.0,272.1 973.3,273.7 981.7,274.7 990.0,275.0 998.3,274.7 1006.7,273.7 1015.0,272.1 1023.3,269.9 1031.7,267.0 1040.0,263.6 1048.3,259.6 1056.7,255.1 1065.0,250.1 1073.3,244.6 1081.7,238.8 1090.0,232.5 1098.3,225.9 1106.7,219.1 1115.0,212.0 1123.3,204.8 1131.7,197.4 1140.0,190.0" stroke="#38bdf8" stroke-width="3" fill="none" />
+<line x1="540.0" y1="440.0" x2="1140.0" y2="440.0" stroke="#94a3b8" stroke-width="2" />
+<polyline points="540.0,355.0 548.3,355.3 556.7,356.3 565.0,357.9 573.3,360.1 581.7,363.0 590.0,366.4 598.3,370.4 606.7,374.9 615.0,379.9 623.3,385.4 631.7,391.2 640.0,397.5 648.3,404.1 656.7,410.9 665.0,418.0 673.3,425.2 681.7,432.6 690.0,440.0 698.3,447.4 706.7,454.8 715.0,462.0 723.3,469.1 731.7,475.9 740.0,482.5 748.3,488.8 756.7,494.6 765.0,500.1 773.3,505.1 781.7,509.6 790.0,513.6 798.3,517.0 806.7,519.9 815.0,522.1 823.3,523.7 831.7,524.7 840.0,525.0 848.3,524.7 856.7,523.7 865.0,522.1 873.3,519.9 881.7,517.0 890.0,513.6 898.3,509.6 906.7,505.1 915.0,500.1 923.3,494.6 931.7,488.8 940.0,482.5 948.3,475.9 956.7,469.1 965.0,462.0 973.3,454.8 981.7,447.4 990.0,440.0 998.3,432.6 1006.7,425.2 1015.0,418.0 1023.3,410.9 1031.7,404.1 1040.0,397.5 1048.3,391.2 1056.7,385.4 1065.0,379.9 1073.3,374.9 1081.7,370.4 1090.0,366.4 1098.3,363.0 1106.7,360.1 1115.0,357.9 1123.3,356.3 1131.7,355.3 1140.0,355.0" stroke="#facc15" stroke-width="3" fill="none" />
+<text x="540.0" y="300.0" font-family="system-ui, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="normal">0°</text>
+<text x="540.0" y="550.0" font-family="system-ui, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="normal">0°</text>
+<text x="690.0" y="300.0" font-family="system-ui, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="normal">90°</text>
+<text x="690.0" y="550.0" font-family="system-ui, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="normal">90°</text>
+<text x="840.0" y="300.0" font-family="system-ui, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="normal">180°</text>
+<text x="840.0" y="550.0" font-family="system-ui, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="normal">180°</text>
+<text x="990.0" y="300.0" font-family="system-ui, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="normal">270°</text>
+<text x="990.0" y="550.0" font-family="system-ui, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="normal">270°</text>
+<text x="1140.0" y="300.0" font-family="system-ui, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="normal">360°</text>
+<text x="1140.0" y="550.0" font-family="system-ui, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="normal">360°</text>
+<text x="540.0" y="120.0" font-family="system-ui, sans-serif" font-size="20" fill="#38bdf8" text-anchor="start" font-weight="bold">y = sin θ</text>
+<text x="953.0" y="130.0" font-family="system-ui, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="normal">period 360° = 2π</text>
+<text x="540.0" y="370.0" font-family="system-ui, sans-serif" font-size="20" fill="#facc15" text-anchor="start" font-weight="bold">y = cos θ</text>
+<text x="1000.0" y="370.0" font-family="system-ui, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="normal">amplitude 1</text>
+</svg>

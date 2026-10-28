@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e293b"/><stop offset="1" stop-color="#0f172a"/></linearGradient></defs>
+<rect x="0" y="0" width="1200" height="630" fill="url(#bg)"/>
+<line x1="60" y1="58" x2="60" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="120" y1="58" x2="120" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="180" y1="58" x2="180" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="240" y1="58" x2="240" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="300" y1="58" x2="300" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="360" y1="58" x2="360" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="420" y1="58" x2="420" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="480" y1="58" x2="480" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="540" y1="58" x2="540" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="600" y1="58" x2="600" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="660" y1="58" x2="660" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="720" y1="58" x2="720" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="780" y1="58" x2="780" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="840" y1="58" x2="840" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="900" y1="58" x2="900" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="960" y1="58" x2="960" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="1020" y1="58" x2="1020" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="1080" y1="58" x2="1080" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="1140" y1="58" x2="1140" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="60" x2="1142" y2="60" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="120" x2="1142" y2="120" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="180" x2="1142" y2="180" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="240" x2="1142" y2="240" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="300" x2="1142" y2="300" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="360" x2="1142" y2="360" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="420" x2="1142" y2="420" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="480" x2="1142" y2="480" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="540" x2="1142" y2="540" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="600" x2="1142" y2="600" stroke="#243447" stroke-width="1"/>
+<text x="600.0" y="70.0" font-family="system-ui, sans-serif" font-size="26" fill="#facc15" text-anchor="middle" font-weight="bold">Reciprocal Trigonometric Ratios in Right Triangles</text>
+<polygon points="350.0,200.0 750.0,500.0 350.0,500.0" fill="#16233a" />
+<line x1="350.0" y1="200.0" x2="750.0" y2="500.0" stroke="#38bdf8" stroke-width="4" />
+<line x1="750.0" y1="500.0" x2="350.0" y2="500.0" stroke="#38bdf8" stroke-width="4" />
+<line x1="350.0" y1="500.0" x2="350.0" y2="200.0" stroke="#38bdf8" stroke-width="4" />
+<circle cx="350.0" cy="200.0" r="7" fill="#facc15" />
+<circle cx="750.0" cy="500.0" r="7" fill="#facc15" />
+<circle cx="350.0" cy="500.0" r="7" fill="#facc15" />
+<text x="322.0" y="186.0" font-family="system-ui, sans-serif" font-size="24" fill="#ffffff" text-anchor="start" font-weight="bold">A</text>
+<text x="766.0" y="508.0" font-family="system-ui, sans-serif" font-size="24" fill="#ffffff" text-anchor="start" font-weight="bold">B</text>
+<text x="322.0" y="534.0" font-family="system-ui, sans-serif" font-size="24" fill="#ffffff" text-anchor="start" font-weight="bold">C</text>
+<polyline points="350.0,500.0 372.0,500.0 372.0,478.0 350.0,478.0" stroke="#facc15" stroke-width="2" fill="none" />
+<polyline points="391.6,231.2 390.1,233.1 388.5,234.9 386.9,236.7 385.1,238.3 383.3,239.9 381.4,241.4 379.5,242.8 377.5,244.2 375.4,245.4 373.3,246.5 371.1,247.5 368.8,248.5 366.6,249.3 364.3,250.0 361.9,250.6 359.6,251.1 357.2,251.5 354.8,251.8 352.4,251.9 350.0,252.0" stroke="#facc15" stroke-width="3" fill="none" />
+<text x="408.0" y="278.0" font-family="system-ui, sans-serif" font-size="30" fill="#facc15" text-anchor="start" font-weight="bold">θ</text>
+<text x="600.0" y="285.0" font-family="system-ui, sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">hypotenuse = 5</text>
+<text x="550.0" y="545.0" font-family="system-ui, sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">opposite = 4</text>
+<text x="245.0" y="350.0" font-family="system-ui, sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">adjacent = 3</text>
+<text x="600.0" y="581.0" font-family="system-ui, sans-serif" font-size="24" fill="#facc15" text-anchor="middle" font-weight="bold">csc θ = 5/4      sec θ = 5/3      cot θ = 3/4</text>
+</svg>

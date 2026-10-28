@@ -1,0 +1,271 @@
+---
+title: "Right Triangle Congruence: LL, HA, and LA Criteria"
+description: "Learn how to prove right triangles congruent with the LL, HA, and LA criteria: definitions, worked proofs, a comparison table, and practice questions."
+image: "/images/blog/congruence-hero.svg"
+date: 2026-10-28
+author: "Math Expert"
+category: "Geometry"
+---
+
+import Faq from 'theme/components/Faq.astro';
+
+Congruent triangles have exactly the same size and the same shape. If you cut one out of paper, it would fit perfectly on top of the other, with every side and every angle matching. Right triangles have a special advantage when you try to prove that fit: each one already contains a 90° angle, so that angle never needs proving. That head start gives right triangles three shortcut criteria that general triangles do not have:
+
+- **LL (Leg-Leg):** both corresponding legs are equal.
+- **HA (Hypotenuse-Angle):** the corresponding hypotenuses and a corresponding acute angle are equal.
+- **LA (Leg-Angle):** a corresponding leg and a corresponding acute angle are equal.
+
+The direct answer is simple. If you can match two legs, use LL. If you can match the hypotenuse and an acute angle, use HA. If you can match one leg and an acute angle, with the positions matching, use LA. In every case the two right angles are already equal, so they count as known information without any extra work. The rest of this guide explains what each criterion means, why it works, and how to use it without falling into the traps that catch students most often.
+
+A note on names before starting: LL, HA, and LA appear in some geometry curricula, but textbooks do not all use the same labels. Some books fold these ideas into SAS, ASA, and AAS directly, and some use different letters. This article uses LL, HA, and LA consistently as defined here, and it keeps HA clearly separate from the hypotenuse-leg (HL) theorem, which is a different criterion covered in the guide to the [hypotenuse-leg theorem](/blog/hypotenuse-leg-theorem/).
+
+## What Does It Mean for Right Triangles to Be Congruent?
+
+Two triangles are congruent when their corresponding sides have equal lengths and their corresponding angles have equal measures. "Corresponding" means matched by position: the side or angle in one triangle that plays the same role as a side or angle in the other.
+
+Congruence is written with the symbol ≅, and the order of the vertices matters:
+
+△ ABC ≅ △ DEF
+
+This statement claims a specific matching: A corresponds to D, B to E, and C to F. It says AB = DE, BC = EF, AC = DF, and the angles match in the same order. Writing the vertices in the wrong order can turn a true claim into a false one even when the triangles really are congruent, which is why the practice questions test vertex order directly.
+
+Congruence is not the same as similarity. Congruent triangles have the same shape and the same size. Similar triangles have the same shape but may have different sizes. A right triangle with legs 3 cm and 4 cm and a right triangle with legs 6 cm and 8 cm are similar, because every side is doubled, but they are not congruent, because the sides are not equal. The guide to [similar right triangles](/blog/similar-right-triangles/) covers that distinction in depth. For congruence, equal shape is not enough: the size must match too, side for side.
+
+## Identify the Parts of a Right Triangle
+
+Every congruence argument starts by naming the parts correctly, because the criteria are stated in terms of them:
+
+- **Hypotenuse:** the side opposite the 90° angle. It is the longest side, and it never touches the right-angle vertex.
+- **Legs:** the two sides that form the 90° angle. Either leg can be called a leg, but when two triangles are compared, each leg must be matched to its corresponding leg, not just to any leg.
+- **Acute angles:** the two angles other than the right angle. Each measures less than 90°, and the two add to 90°.
+
+The hypotenuse is always opposite the right angle, which is the fastest way to find it in any diagram: locate the square corner mark, then take the side facing it. The legs are the sides that meet at that corner. Confusing the hypotenuse with a leg is the most common labeling error in congruence proofs, and every criterion below fails if the parts are misidentified, because LL, HA, and LA each name specific parts.
+
+## Summary Table of LL, HA, and LA Congruence Criteria
+
+| Criterion | Required equal parts | Why it establishes congruence |
+|---|---|---|
+| LL (Leg-Leg) | Both pairs of corresponding legs | The included angle is 90° in both triangles, so SAS applies |
+| HA (Hypotenuse-Angle) | Corresponding hypotenuses and a corresponding acute angle | The right angles and another angle are equal, and the hypotenuse is a corresponding side, so AAS applies |
+| LA (Leg-Angle) | A corresponding leg and a corresponding acute angle | The right angles and another angle are equal, and a corresponding side is equal, so ASA or AAS applies |
+
+Two conditions apply to the whole table. First, HA and LA require a corresponding acute angle, not merely any angle: the right angles are already equal and do not count as the angle in the criterion. Second, the listed conditions are sufficient to prove congruence only when the triangles are right triangles and the equal parts genuinely correspond. Matching a leg to a hypotenuse, or an angle at one vertex to an angle at a different position, proves nothing.
+
+## LL Congruence Criterion: Leg-Leg
+
+### What Is the LL Criterion?
+
+The LL criterion says: if the two legs of one right triangle are respectively equal to the two legs of another right triangle, then the triangles are congruent. Both triangles have an included right angle of 90° sitting between those two legs, and that included angle is what makes the criterion work.
+
+The reasoning rests on the Side-Angle-Side (SAS) congruence theorem for general triangles: if two sides and the included angle of one triangle equal two sides and the included angle of another, the triangles are congruent. In LL, the two sides are the legs and the included angle is the right angle, which is equal in both triangles by definition. LL is therefore not a new rule of logic; it is SAS specialized to right triangles, with the right angle doing the work of the included angle.
+
+### Formula and Mathematical Reasoning
+
+Take two right triangles, ABC and DEF, with right angles at B and E. Suppose:
+
+- AB = DE
+- BC = EF
+- ∠B = ∠E = 90°
+
+Then △ ABC ≅ △ DEF by SAS, with the vertex correspondence A ↔ D, B ↔ E, and C ↔ F. Check the SAS pattern: side AB and side BC meet at angle B, and side DE and side EF meet at angle E. The angle is included between the two sides in both triangles, which is exactly what SAS requires. If the equal sides did not meet at the equal angle, SAS would not apply, which is why the labels and the correspondence must be checked before concluding anything.
+
+### Worked Example Using LL
+
+**Problem:** One right triangle has legs of lengths 6 cm and 8 cm. Another right triangle has corresponding legs of lengths 6 cm and 8 cm. Must the triangles be congruent?
+
+**Reasoning:** Both triangles are right triangles, so both contain a 90° angle. The two pairs of corresponding legs are equal: 6 cm matches 6 cm, and 8 cm matches 8 cm. The right angle sits between the two legs in each triangle, so the SAS pattern is satisfied.
+
+**Conclusion:** Yes. The triangles are congruent by LL. Note that equal hypotenuses are not an additional requirement here. By the Pythagorean theorem both hypotenuses equal 10 cm, since 6² + 8² = 36 + 64 = 100 = 10², but that equality is a consequence of congruence, not a condition for it. Once LL applies, every remaining corresponding part is equal by the corresponding parts of congruent triangles principle, including the hypotenuses.
+
+![Two right triangles with legs 6 cm and 8 cm marked equal, illustrating LL congruence](/images/blog/congruence-ll.svg)
+
+*Caption: LL congruence. Both leg pairs match, and the right angle between them matches, so SAS gives congruence.*
+
+## HA Congruence Criterion: Hypotenuse-Angle
+
+### What Is the HA Criterion?
+
+The HA criterion says: if the hypotenuses of two right triangles are equal and one pair of corresponding acute angles is equal, then the triangles are congruent. Both triangles already have a right angle of 90°. If a corresponding acute angle is also equal, the third angle must be equal as well, because the interior angles of a triangle sum to 180°: 180° − 90° − (acute angle) leaves the same third angle in both triangles.
+
+That gives two equal corresponding angles and a corresponding side. The hypotenuse is opposite the right angle, which is one of the known angles, so the pattern matches the Angle-Angle-Side (AAS) congruence theorem: two angles and a non-included side. HA is therefore AAS specialized to right triangles, with the hypotenuse as the side.
+
+### Worked Example Using HA
+
+**Problem:** Two right triangles have equal hypotenuses of 10 cm and a pair of corresponding acute angles of 35°. Must the triangles be congruent?
+
+**Reasoning:** Both triangles are right triangles, so both have a 90° angle. The acute angles of 35° correspond, so the third angles are both 180° − 90° − 35° = 55°. The hypotenuses correspond and both measure 10 cm. Two angles and a corresponding non-included side match, which is AAS.
+
+**Conclusion:** Yes. The triangles are congruent by HA. Note that the hypotenuse is opposite the right angle, not adjacent to the acute angle, and that does not matter: AAS requires a corresponding side, not a side in any particular position relative to the acute angle. Avoid suggesting that the hypotenuse must sit next to the given angle; it never does, since it faces the right angle.
+
+### Important Clarification About HA
+
+HA is not the same criterion as HL, and confusing them is one of the most common errors in this topic:
+
+- **HA** uses the hypotenuse and an acute angle.
+- **HL** uses the hypotenuse and one corresponding leg.
+
+Both establish congruence in right triangles, but they use different information and different reasoning: HA runs through AAS, while HL has its own proof based on the Pythagorean theorem and SSS. If a problem gives a hypotenuse and a leg, that is HL, not HA. If it gives a hypotenuse and an acute angle, that is HA, not HL. Some textbooks group or name these criteria differently, so always check which parts are actually given rather than trusting a remembered abbreviation.
+
+![Two right triangles with hypotenuses 10 cm and acute angles 35 degrees marked equal, illustrating HA congruence](/images/blog/congruence-ha.svg)
+
+*Caption: HA congruence. The hypotenuses match and a corresponding acute angle matches, so AAS gives congruence.*
+
+## LA Congruence Criterion: Leg-Angle
+
+### What Is the LA Criterion?
+
+The LA criterion says: if one corresponding leg and one corresponding acute angle of two right triangles are equal, then the triangles are congruent. As with HA, the equal right angles plus the equal acute angle determine the third angle in both triangles, so all three angles match. The equal leg is then a corresponding side, and the triangles satisfy ASA or AAS depending on the position of that leg.
+
+Precision about correspondence is essential here. If the equal leg sits between the right angle and the equal acute angle, the pattern is ASA: angle, side, angle. If the equal leg sits opposite the equal acute angle, the pattern is AAS: angle, angle, side. Either way the triangles are congruent, but claiming ASA when the geometry gives AAS, or vice versa, is a reasoning error even when the conclusion is right. Do not claim that any equal side and any equal angle automatically establish congruence without matching their positions; the side must correspond to the angle's position in the same way in both triangles.
+
+### Worked Example Using LA
+
+**Problem:** Two right triangles, ABC and DEF, are right-angled at C and F. The leg AC = DF = 5 cm, where AC connects the right angle at C to the acute angle at A, and DF connects the right angle at F to the acute angle at D. The acute angles at A and D both measure 40°. Must the triangles be congruent?
+
+**Reasoning:** Both triangles have a right angle (at C and F) and an equal acute angle (at A and D, 40° each). The third angles are both 180° − 90° − 40° = 50°, at B and E. The equal leg AC sits between the 40° angle and the 90° angle in triangle ABC, and the equal leg DF sits between the 40° angle and the 90° angle in triangle DEF. That is the ASA pattern: angle, side, angle, with correspondence A ↔ D, B ↔ E, C ↔ F.
+
+**Conclusion:** Yes. The triangles are congruent by LA, through ASA. If instead the equal leg had been opposite the 40° angle in both triangles, the same conclusion would follow through AAS rather than ASA.
+
+### When Is LA Useful?
+
+LA proves congruence even when the hypotenuse and the second leg have not been provided directly. That happens often in problems where only one side is measured and one angle is known. Once congruence is established, the remaining corresponding sides and angles are equal by the corresponding parts of congruent triangles principle, so the unknown hypotenuse and second leg can be read off the other triangle without further measurement.
+
+![Two right triangles with a leg of 5 cm and an acute angle of 40 degrees marked equal, illustrating LA congruence](/images/blog/congruence-la.svg)
+
+*Caption: LA congruence. The marked leg sits between the right angle and the 40° angle in both triangles, so ASA gives congruence.*
+
+## Comparing LL, HA, and LA
+
+| | LL | HA | LA |
+|---|---|---|---|
+| Sides that must be equal | Both legs | Hypotenuse | One leg |
+| Angle that must be given | None beyond the right angle | One acute angle | One acute angle |
+| Right angle | Already known in both triangles | Already known in both triangles | Already known in both triangles |
+| General theorem behind it | SAS | AAS | ASA or AAS |
+| Common mistake | Using only one leg pair | Confusing HA with HL | Mismatching the leg to the angle position |
+
+The pattern is easy to hold onto: LL uses two legs, HA uses the hypotenuse plus an acute angle, and LA uses a leg plus an acute angle. In every row, the right angle is free information, already equal because both triangles are right triangles. And in every case, one sentence governs the whole topic: all stated equal parts must correspond between the two triangles, in position as well as in size.
+
+## How to Prove Two Right Triangles Congruent
+
+Follow the same eight steps for every problem:
+
+1. Confirm that both triangles are right triangles.
+2. Mark the right angles.
+3. Identify the hypotenuse and two legs of each triangle.
+4. Mark the given equal sides and angles.
+5. Check whether the conditions match LL, HA, or LA.
+6. If appropriate, connect the reasoning to SAS, AAS, or ASA.
+7. Write the congruence statement in the correct corresponding vertex order.
+8. State the theorem or criterion used.
+
+**Complete example:** Two right triangles, PQR and STU, are right-angled at Q and T. Their hypotenuses measure PR = SU = 13 cm, and their acute angles at P and S both measure 22°. Which criterion applies?
+
+**Step 1 to 4:** Both triangles are right triangles with right angles marked at Q and T. The hypotenuses are PR and SU, both 13 cm. The acute angles at P and S are both 22°.
+
+**Step 5:** The given parts are a hypotenuse and an acute angle. That is HA, not LL, since no leg pair is given, and not HL, since no leg is given at all.
+
+**Step 6:** The third angles are both 180° − 90° − 22° = 68°, so two angles and the corresponding hypotenuse match, which is AAS.
+
+**Step 7 and 8:** △ PQR ≅ △ STU by HA. Do not select a criterion simply because the triangles look similar in a drawing; the given parts decide, and here they point to exactly one criterion.
+
+## Common Mistakes to Avoid
+
+- **Confusing the hypotenuse with one of the legs.** The hypotenuse faces the right angle and is the longest side. Fix it by finding the square corner mark first, then taking the side opposite it.
+- **Applying LL when only one pair of legs is known to be equal.** LL needs both leg pairs. One equal leg pair alone proves nothing, since the other leg can differ freely.
+- **Using HA with an obtuse or right angle instead of a corresponding acute angle.** The right angles are already equal and cannot serve as the angle in HA. Fix it by requiring a pair of equal acute angles.
+- **Applying LA without confirming that the equal leg corresponds to the stated angle positions.** A leg adjacent to the angle gives ASA; a leg opposite it gives AAS. Either works, but the positions must match in both triangles.
+- **Confusing HA with HL.** HA uses a hypotenuse and an acute angle; HL uses a hypotenuse and a leg. Fix it by naming the given parts before naming the criterion.
+- **Assuming that triangles are congruent because they appear identical in a diagram.** Diagrams can be misleading, and appearance is never a reason. Fix it by working only from stated equalities.
+- **Writing the congruence statement in the wrong vertex order.** The order declares the correspondence, so a wrong order states a false matching. Fix it by mapping right angle to right angle first, then the remaining vertices by their given equalities.
+- **Confusing congruence with similarity.** Similar triangles share shape only; congruent triangles share shape and size. Fix it by checking that the equal parts are equal in length, not merely proportional.
+- **Claiming that one equal side and one equal angle are always sufficient.** They are sufficient only in the LL, HA, LA, and HL patterns, with correct correspondence. An arbitrary side and angle pair, such as a hypotenuse with a non-corresponding angle, proves nothing on its own.
+
+## Worked Problems and Proofs
+
+### Problem 1: LL
+
+**Given:** Two right triangles have corresponding legs measuring 7 cm and 24 cm.
+
+**Criterion selected:** LL.
+
+**Reasoning:** Both triangles are right triangles, so both contain a 90° angle between the two legs. Both leg pairs are equal: 7 cm matches 7 cm, and 24 cm matches 24 cm. The right angle is included between the legs in each triangle, so the SAS pattern holds.
+
+**Final congruence statement:** The triangles are congruent by LL.
+
+**Why the other criteria are less direct:** HA would need a hypotenuse and an acute angle, neither of which is given. LA would need one leg and an acute angle, and no angle is given. LL uses exactly what is provided. (As a check, both hypotenuses equal 25 cm, since 7² + 24² = 49 + 576 = 625 = 25², but that follows from congruence rather than being required for it.)
+
+### Problem 2: HA
+
+**Given:** Two right triangles have equal hypotenuses and one pair of equal corresponding acute angles.
+
+**Criterion selected:** HA.
+
+**Reasoning:** Both triangles have a right angle, and the equal acute angles force the third angles to be equal as well, since all three angles sum to 180°. Two angles and the corresponding hypotenuse therefore match, which is AAS.
+
+**Final congruence statement:** The triangles are congruent by HA.
+
+**Why the other criteria are less direct:** LL would need both leg pairs, which are not given. LA would need a leg, which is not given. HA uses exactly what is provided.
+
+### Problem 3: LA
+
+**Given:** Two right triangles have a corresponding leg of equal length and a corresponding acute angle of equal measure. The equal leg connects the right-angle vertex to the vertex of the equal acute angle in both triangles.
+
+**Criterion selected:** LA, through ASA.
+
+**Reasoning:** The right angles are equal, the acute angles are equal, and the equal leg sits between those two angles in both triangles. That is the ASA pattern: angle, side, angle. The third angles are also equal by the angle sum, but ASA already settles the proof.
+
+**Final congruence statement:** The triangles are congruent by LA.
+
+**Why the other criteria are less direct:** LL would need both leg pairs, and only one leg is given. HA would need the hypotenuse, which is not given. LA uses exactly what is provided, and the stated leg position is what makes ASA, rather than AAS, the correct supporting theorem.
+
+### Problem 4: Identify the correct criterion
+
+**Given:** Two right triangles, PQR and STU, are right-angled at Q and T. The leg PQ = ST = 9 cm, and the acute angles at P and S both measure 30°. The leg PQ connects the right angle at Q to the acute angle at P, and the leg ST connects the right angle at T to the acute angle at S.
+
+**Criterion selected:** LA, through ASA.
+
+**Reasoning:** The right angles at Q and T are equal, and the acute angles at P and S are both 30°. The third angles are both 180° − 90° − 30° = 60°. The equal leg sits between the 30° angle and the 90° angle in both triangles, giving the ASA pattern with correspondence P ↔ S, Q ↔ T, R ↔ U.
+
+**Final congruence statement:** △ PQR ≅ △ STU by LA.
+
+**Why the other criteria are less direct:** LL fails because only one leg pair is given, not both. HA fails because the hypotenuses are not given. LA is the only criterion whose requirements match the given information.
+
+## Practice Questions
+
+1. Two right triangles have corresponding legs of 5 cm and 12 cm. Which criterion proves them congruent?
+2. Two right triangles have hypotenuses of 13 cm and a pair of corresponding acute angles of 22°. Which criterion proves them congruent?
+3. Two right triangles have a corresponding leg of 6 cm that sits between the right angle and an acute angle of 50° in both triangles. Which criterion proves them congruent?
+4. Triangle ABC is right-angled at B, and triangle DEF is right-angled at E. It is given that AB = EF and BC = DE. A student writes △ ABC ≅ △ DEF. Is the statement correct as written? If not, write the correct statement.
+5. Two right triangles have equal hypotenuses and one pair of equal corresponding legs. Is this HA? Explain.
+6. Two right triangles share one pair of equal corresponding legs, and nothing else is known to be equal. Is that enough to prove congruence? Explain.
+7. Prove that two right triangles with legs 9 cm and 12 cm are congruent, given that both are right-angled.
+8. Two right triangles have equal hypotenuses, and the only equal angles are the two right angles. A student claims HA applies. Is the claim correct? Explain.
+
+### Answer Key
+
+**1.** LL. Both leg pairs are equal (5 cm and 12 cm), and the right angle sits between them, so SAS applies through LL.
+
+**2.** HA. The hypotenuses are equal and a corresponding acute angle is equal, so the third angles are both 68°, and AAS applies through HA.
+
+**3.** LA, through ASA. The equal leg sits between the right angle and the 50° angle in both triangles, giving the angle-side-angle pattern.
+
+**4.** No, not as written. The statement △ ABC ≅ △ DEF claims AB corresponds to DE and BC to EF, but the givens say AB = EF and BC = DE. The correct statement is △ ABC ≅ △ FED, matching A ↔ F, B ↔ E, and C ↔ D. The triangles are congruent by LL, but only under the corrected vertex order.
+
+**5.** No. Equal hypotenuses plus an equal leg is HL, not HA. HA requires a hypotenuse and an acute angle, not a leg.
+
+**6.** No. One leg pair alone leaves the other leg free to differ: a right triangle with legs 5 cm and 12 cm and a right triangle with legs 5 cm and 9 cm share a 5 cm leg but are not congruent. LL needs both leg pairs, and no other criterion is satisfied by one leg alone.
+
+**7.** Both triangles are right triangles with legs 9 cm and 12 cm. Both leg pairs are equal, and the right angle between them is equal, so the triangles are congruent by LL, through SAS. As a consequence, both hypotenuses equal 15 cm, since 9² + 12² = 81 + 144 = 225 = 15².
+
+**8.** No. HA requires a corresponding acute angle, and the right angles cannot serve as that angle because they are already equal in every pair of right triangles. With only the hypotenuses equal, no criterion is satisfied: an acute angle would give HA, and a leg would give HL.
+
+## Frequently Asked Questions
+
+<Faq heading="Frequently Asked Questions" description="Common questions about right triangle congruence with LL, HA, and LA, answered briefly." items={[{ "question": "What are LL, HA, and LA in right triangle congruence?", "answer": "Three shortcut criteria for proving right triangles congruent. LL needs both corresponding legs equal. HA needs the hypotenuses and a corresponding acute angle equal. LA needs a corresponding leg and a corresponding acute angle equal." }, { "question": "What does LL mean in geometry?", "answer": "Leg-Leg. If both legs of one right triangle equal the corresponding legs of another right triangle, the triangles are congruent, because the right angle between the legs makes the SAS pattern hold." }, { "question": "What does HA mean in geometry?", "answer": "Hypotenuse-Angle. If the hypotenuses of two right triangles are equal and a pair of corresponding acute angles is equal, the triangles are congruent, through AAS." }, { "question": "What does LA mean in geometry?", "answer": "Leg-Angle. If a corresponding leg and a corresponding acute angle of two right triangles are equal, with positions matching, the triangles are congruent, through ASA or AAS." }, { "question": "Is HA the same as HL?", "answer": "No. HA uses the hypotenuse and an acute angle. HL uses the hypotenuse and a leg. Both prove congruence in right triangles, but they start from different given information." }, { "question": "Can two right triangles be congruent if their legs are equal?", "answer": "Yes, if both pairs of corresponding legs are equal. That is LL. One equal leg pair alone is not enough." }, { "question": "Why does the right angle help prove congruence?", "answer": "Because it is known to be equal in every pair of right triangles without any measurement. It supplies the included angle for LL, and one of the two angles for HA and LA, so fewer additional parts are needed." }, { "question": "Which general triangle congruence rules support LL, HA, and LA?", "answer": "LL rests on SAS, HA rests on AAS, and LA rests on ASA when the leg sits between the two angles, or AAS when it sits opposite the acute angle." }, { "question": "What is the difference between congruent and similar right triangles?", "answer": "Congruent triangles have the same shape and the same size, with all corresponding sides equal. Similar triangles have the same shape but may differ in size, with corresponding sides proportional rather than equal." }, { "question": "How do I identify the correct criterion in a geometry proof?", "answer": "Mark the right angles, identify each hypotenuse and leg, then list exactly which parts are given as equal. Two legs point to LL, a hypotenuse and an acute angle point to HA, a leg and an acute angle point to LA, and a hypotenuse and a leg point to HL. Never choose from the look of the diagram." }]} />
+
+## Conclusion
+
+Right triangle congruence comes down to three shortcuts, each built on a general congruence rule. LL says both corresponding legs are equal, and SAS does the rest, since the right angle sits between them. HA says the corresponding hypotenuses and an acute angle are equal, and AAS does the rest, since the angle sum supplies the third angle. LA says a corresponding leg and an acute angle are equal, and ASA or AAS does the rest, depending on where the leg sits. In every case, the right angle is free information, already equal because both triangles are right triangles.
+
+Three habits keep every proof valid: identify the right angle first, label the hypotenuse correctly instead of guessing, and match corresponding parts in position as well as in size, including the vertex order of the final statement. Practise by naming the given parts before naming the criterion, and the right shortcut will usually name itself. For the next step, the guide to [how to write a right triangle proof](/blog/how-to-write-a-right-triangle-proof/) shows how these criteria fit into full two-column proofs, and the guide to the [hypotenuse-leg theorem](/blog/hypotenuse-leg-theorem/) covers the HL criterion that HA is most often confused with.

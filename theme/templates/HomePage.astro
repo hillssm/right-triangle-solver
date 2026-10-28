@@ -17,7 +17,6 @@ interface Props {
   locale: Locale;
 }
 
-type LinkItem = { href: string; label: string; description: string };
 
 const { locale } = Astro.props;
 const bundle = getTranslations(locale);
@@ -39,7 +38,6 @@ const longContent = (homeAny.longContent as Record<string, any>) ?? {};
 const introSection = (longContent.introSection as Record<string, any>) ?? {};
 const formulaSection = (longContent.formulaSection as Record<string, any>) ?? {};
 const solveSection = (longContent.solveSection as Record<string, any>) ?? {};
-const calculatorSection = (longContent.calculatorSection as Record<string, any>) ?? {};
 const validationSection = (longContent.validationSection as Record<string, any>) ?? {};
 
 const defaultChartRows = [
@@ -111,76 +109,6 @@ const resultItems = Array.isArray(solveSection.resultsItems)
       'Answer: solved numeric output in the proper unit format.',
       'Explanation: short clarity note for quicker understanding.'
     ];
-
-const normalizeLinkItems = (value: unknown, fallback: LinkItem[]): LinkItem[] => {
-  if (!Array.isArray(value)) return fallback;
-  return value
-    .map((item) => ({
-      href: item?.href ?? '',
-      label: item?.label ?? '',
-      description: item?.description ?? ''
-    }))
-    .filter((item) => item.href && item.label);
-};
-
-const missingSidesItems = normalizeLinkItems(calculatorSection.missingSidesItems, [
-  {
-    href: '/right-triangle-side-calculator/',
-    label: 'Right Triangle Side Calculator',
-    description: 'to solve c, a, or b from Pythagorean relations.'
-  },
-  {
-    href: '/right-triangle-side-from-angle-calculator/',
-    label: 'Right Triangle Side from Angle Calculator',
-    description: 'to find sides using trigonometric input.'
-  },
-  {
-    href: '/special-right-triangle-calculator/',
-    label: 'Special Right Triangle Calculator',
-    description: 'for 45-45-90 and 30-60-90 shortcuts.'
-  }
-]);
-
-const angleItems = normalizeLinkItems(calculatorSection.anglesItems, [
-  {
-    href: '/right-triangle-angle-calculator/',
-    label: 'Right Triangle Angle Calculator',
-    description: 'to find A or B with inverse trig.'
-  },
-  {
-    href: '/right-triangle-trig-ratios-calculator/',
-    label: 'Trigonometric Ratios Calculator',
-    description: 'for sin, cos, tan, sec, csc, and cot.'
-  }
-]);
-
-const measurementItems = normalizeLinkItems(calculatorSection.measurementsItems, [
-  {
-    href: '/right-triangle-area-calculator/',
-    label: 'Right Triangle Area Calculator',
-    description: 'for multiple area methods.'
-  },
-  {
-    href: '/right-triangle-measurements-calculator/',
-    label: 'Right Triangle Measurements Calculator',
-    description: 'for perimeter and semiperimeter.'
-  },
-  {
-    href: '/right-triangle-altitude-calculator/',
-    label: 'Right Triangle Altitude Calculator',
-    description: 'for altitude relations.'
-  },
-  {
-    href: '/right-triangle-projection-calculator/',
-    label: 'Right Triangle Projection Calculator',
-    description: 'for segment and projection theorems.'
-  },
-  {
-    href: '/right-triangle-radius-calculator/',
-    label: 'Right Triangle Radius Calculator',
-    description: 'for inradius and circumradius.'
-  }
-]);
 
 const practicalItems = Array.isArray(validationSection.practicalItems)
   ? validationSection.practicalItems
@@ -374,33 +302,6 @@ const latestPosts = blogHeading && isDefaultLocale
       )}
     </section>
 
-    <section class="section-shell prose-shell">
-      <h2>{pick(calculatorSection, 'title', 'Choose the Right Calculator by Goal')}</h2>
-      <h3>{pick(calculatorSection, 'missingSidesTitle', 'For missing sides')}</h3>
-      <ul>
-        {missingSidesItems.map((item) => (
-          <li>
-            <a href={localizePath(locale, item.href)}>{item.label}</a> {item.description}
-          </li>
-        ))}
-      </ul>
-      <h3>{pick(calculatorSection, 'anglesTitle', 'For angles and trig ratios')}</h3>
-      <ul>
-        {angleItems.map((item) => (
-          <li>
-            <a href={localizePath(locale, item.href)}>{item.label}</a> {item.description}
-          </li>
-        ))}
-      </ul>
-      <h3>{pick(calculatorSection, 'measurementsTitle', 'For measurements and geometric properties')}</h3>
-      <ul>
-        {measurementItems.map((item) => (
-          <li>
-            <a href={localizePath(locale, item.href)}>{item.label}</a> {item.description}
-          </li>
-        ))}
-      </ul>
-    </section>
 
     <section class="section-shell prose-shell">
       <h2>{pick(validationSection, 'practicalTitle', 'Practical Use Cases')}</h2>

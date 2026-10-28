@@ -12,7 +12,6 @@ import { FOCUSED_PROJECTION_CALCULATOR_PAGES } from 'src/data/focusedProjectionC
 import { FOCUSED_RADIUS_CALCULATOR_PAGES } from 'src/data/focusedRadiusCalculatorPages';
 import { FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_PAGES } from 'src/data/focusedSpecialTriangleCalculatorPages';
 import { focusedTriplesCalculatorPages } from 'src/data/focusedTriplesCalculatorPages';
-import { getFocusedTriplesHomeUi } from 'src/data/focusedTriplesCalculatorTranslations';
 import { localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 
@@ -31,168 +30,151 @@ const {
 const bundle = getTranslations(locale);
 const content = (bundle.content as Record<string, any>) ?? {};
 const grouped = (content.grouped as Record<string, any>) ?? {};
-const groupedUi = (grouped.ui as Record<string, any>) ?? {};
 const groupedHub = (grouped.hub as Record<string, any>) ?? {};
 const groupedPages = (grouped.pages as Record<string, any>) ?? {};
 
-const hubHref = localizePath(locale, RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.url);
 const hubTitle = pick(groupedHub, 'h1', RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.h1);
-const openToolLabel = pick(groupedUi, 'openTool', 'Open Tool');
-const triplesHomeUi = getFocusedTriplesHomeUi(locale);
 const getLocalizedPageTitle = (slug: string, fallback: string) => {
   const localized = groupedPages[slug] as Record<string, unknown> | undefined;
   return pick(localized ?? {}, 'h1', fallback);
 };
-const getLocalizedPageIntent = (slug: string, fallback: string) => {
-  const localized = groupedPages[slug] as Record<string, unknown> | undefined;
-  return pick(localized ?? {}, 'intent', fallback);
+
+type DirectoryEntry = { url: string; title: string };
+
+const groupedBySlug = new Map(RIGHT_TRIANGLE_GROUPED_PAGES.map((page) => [page.slug, page]));
+const groupedEntry = (slug: string): DirectoryEntry => {
+  const page = groupedBySlug.get(slug);
+  if (!page) throw new Error(`Unknown grouped page slug: ${slug}`);
+  return { url: page.url, title: getLocalizedPageTitle(page.slug, page.h1) };
 };
-const CARD_ICONS = [
-  'calculate',
-  'square_foot',
-  'functions',
-  'angle',
-  'timeline',
-  'grid_on',
-  'straighten',
-  'schema',
-  'radio_button_checked',
-  'diamond'
+const focusedEntries = (pages: { url: string; h1: string }[]): DirectoryEntry[] =>
+  pages.map((page) => ({ url: page.url, title: page.h1 }));
+const byTitle = (a: DirectoryEntry, b: DirectoryEntry) => a.title.localeCompare(b.title);
+
+const categories = [
+  {
+    title: 'All-in-one calculator',
+    intro:
+      'Enter any two values of a right triangle and solve for every missing side and angle, or jump to a focused calculator.',
+    entries: [{ url: RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.url, title: hubTitle }]
+  },
+  {
+    title: 'Sides and hypotenuse',
+    intro: 'Solve c, a, or b from Pythagorean relations, or find sides using trigonometric input.',
+    entries: [
+      groupedEntry('right-triangle-side-calculator'),
+      groupedEntry('right-triangle-side-from-angle-calculator'),
+      ...focusedEntries(FOCUSED_SIDE_CALCULATOR_PAGES)
+    ].sort(byTitle)
+  },
+  {
+    title: 'Angles',
+    intro: 'Find A or B with inverse trig.',
+    entries: [
+      groupedEntry('right-triangle-angle-calculator'),
+      ...focusedEntries(FOCUSED_ANGLE_CALCULATOR_PAGES)
+    ].sort(byTitle)
+  },
+  {
+    title: 'Trigonometric ratios',
+    intro: 'For sin, cos, tan, sec, csc, and cot.',
+    entries: [
+      groupedEntry('right-triangle-trig-ratios-calculator'),
+      ...focusedEntries(FOCUSED_TRIG_RATIO_CALCULATOR_PAGES)
+    ].sort(byTitle)
+  },
+  {
+    title: 'Area, perimeter, and semiperimeter',
+    intro: 'Multiple area methods, plus perimeter and semiperimeter.',
+    entries: [
+      groupedEntry('right-triangle-area-calculator'),
+      groupedEntry('right-triangle-measurements-calculator'),
+      ...focusedEntries(FOCUSED_MEASUREMENT_CALCULATOR_PAGES)
+    ].sort(byTitle)
+  },
+  {
+    title: 'Altitude and hypotenuse projections',
+    intro: 'Altitude relations, plus segment and projection theorems.',
+    entries: [
+      groupedEntry('right-triangle-altitude-calculator'),
+      groupedEntry('right-triangle-projection-calculator'),
+      ...focusedEntries(FOCUSED_ALTITUDE_CALCULATOR_PAGES),
+      ...focusedEntries(FOCUSED_PROJECTION_CALCULATOR_PAGES)
+    ].sort(byTitle)
+  },
+  {
+    title: 'Inradius and circumradius',
+    intro: 'For inradius and circumradius.',
+    entries: [
+      groupedEntry('right-triangle-radius-calculator'),
+      ...focusedEntries(FOCUSED_RADIUS_CALCULATOR_PAGES)
+    ].sort(byTitle)
+  },
+  {
+    title: 'Special right triangles',
+    intro: 'Shortcuts for 45-45-90 and 30-60-90 triangles.',
+    entries: [
+      groupedEntry('special-right-triangle-calculator'),
+      ...focusedEntries(FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_PAGES)
+    ].sort(byTitle)
+  },
+  {
+    title: 'Pythagorean triples',
+    intro: 'Integer side lengths satisfying the Pythagorean relationship.',
+    entries: [...focusedEntries(focusedTriplesCalculatorPages)].sort(byTitle)
+  }
 ];
 
-const SUPPORT_TOOL_ICONS = ['format_list_numbered', 'looks_3', 'looks_5', 'compare_arrows'];
-const SUPPORT_TOOL_PAGES = triplesHomeUi.tools.map((tool, index) => ({
-  ...tool,
-  icon: SUPPORT_TOOL_ICONS[index] ?? 'calculate'
+let runningNumber = 0;
+const numberedCategories = categories.map((category) => ({
+  ...category,
+  entries: category.entries.map((entry) => ({
+    ...entry,
+    number: String(++runningNumber).padStart(2, '0')
+  }))
 }));
-
-const totalToolCount = RIGHT_TRIANGLE_GROUPED_PAGES.length + SUPPORT_TOOL_PAGES.length;
-
-const allCalculatorPages = [
-  ...RIGHT_TRIANGLE_GROUPED_PAGES.map((page) => ({ url: page.url, title: page.h1 })),
-  ...FOCUSED_SIDE_CALCULATOR_PAGES.map((page) => ({ url: page.url, title: page.h1 })),
-  ...FOCUSED_MEASUREMENT_CALCULATOR_PAGES.map((page) => ({ url: page.url, title: page.h1 })),
-  ...FOCUSED_TRIG_RATIO_CALCULATOR_PAGES.map((page) => ({ url: page.url, title: page.h1 })),
-  ...FOCUSED_ANGLE_CALCULATOR_PAGES.map((page) => ({ url: page.url, title: page.h1 })),
-  ...FOCUSED_ALTITUDE_CALCULATOR_PAGES.map((page) => ({ url: page.url, title: page.h1 })),
-  ...FOCUSED_PROJECTION_CALCULATOR_PAGES.map((page) => ({ url: page.url, title: page.h1 })),
-  ...FOCUSED_RADIUS_CALCULATOR_PAGES.map((page) => ({ url: page.url, title: page.h1 })),
-  ...FOCUSED_SPECIAL_TRIANGLE_CALCULATOR_PAGES.map((page) => ({ url: page.url, title: page.h1 })),
-  ...focusedTriplesCalculatorPages.map((page) => ({ url: page.url, title: page.h1 }))
-].sort((a, b) => a.title.localeCompare(b.title));
-
-const hubInAzList = allCalculatorPages.some((page) => page.url === RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.url);
-const azTotalCount = hubInAzList ? allCalculatorPages.length : allCalculatorPages.length + 1;
+const totalCount = runningNumber;
 ---
 
 <section class="section-shell" aria-labelledby="calculator-catalog-heading">
-  <h2 id="calculator-catalog-heading" class="text-2xl font-bold text-on-surface">{heading}</h2>
-  <p class="mt-3 max-w-2xl text-sm text-on-surface-variant">
-    {totalToolCount} {uiTools}
-  </p>
-
-  <div class="mt-6">
-    <h3 class="font-label text-xs uppercase tracking-[0.2em] text-outline">
-      {triplesHomeUi.coreHeading}
-    </h3>
-
-    <div class="mt-4 grid gap-4 sm:grid-cols-2">
-      {RIGHT_TRIANGLE_GROUPED_PAGES.map((page, index) => (
-        <a
-          href={localizePath(locale, page.url)}
-          class="group relative flex h-full min-h-[190px] flex-col justify-between overflow-hidden rounded-2xl border border-primary/20 bg-surface-container-lowest/80 p-6 shadow-[inset_0_1px_0_rgba(241,201,125,0.10)] transition-all duration-500 hover:-translate-y-1.5 hover:border-primary/55 hover:shadow-[0_24px_48px_-24px_rgba(241,201,125,0.45)]"
-        >
-          <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(145deg,rgba(241,201,125,0.12),transparent_45%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
-          <div>
-            <div class="flex items-center justify-between">
-              <span class="font-label text-[10px] uppercase tracking-[0.22em] text-primary/70">
-                {String(index + 1).padStart(2, '0')}
-              </span>
-              <span class="flex h-9 w-9 items-center justify-center rounded-lg border border-primary/40 bg-primary/12 text-primary shadow-[0_0_18px_-6px_rgba(241,201,125,0.55)] transition-transform duration-500 group-hover:scale-110">
-                <span class="material-symbols-outlined text-[16px]">{CARD_ICONS[index] ?? 'calculate'}</span>
-              </span>
-            </div>
-            <h3 class="mt-4 text-[15px] font-semibold leading-snug text-on-surface group-hover:text-primary">
-              {getLocalizedPageTitle(page.slug, page.h1)}
-            </h3>
-            <p class="mt-3 text-sm leading-relaxed text-on-surface-variant">
-              {getLocalizedPageIntent(page.slug, page.intent)}
-            </p>
-          </div>
-          <p class="btn-primary relative z-10 mt-5 w-fit px-4 py-2 text-[11px] uppercase tracking-[0.18em]">{openToolLabel}</p>
-        </a>
-      ))}
+  <div class="flex flex-wrap items-end justify-between gap-4">
+    <div>
+      <p class="font-label text-[10px] uppercase tracking-[0.28em] text-primary/70">
+        The Complete Collection
+      </p>
+      <h2 id="calculator-catalog-heading" class="mt-3 text-2xl font-bold text-on-surface">{heading}</h2>
     </div>
+    <p class="font-headline text-lg text-primary">{totalCount} calculators</p>
+  </div>
 
-    <div class="mt-10 border-t border-outline-variant/30 pt-8">
-      <h3 class="font-label text-xs uppercase tracking-[0.2em] text-outline">
-        {triplesHomeUi.supportHeading}
-      </h3>
-
-      <div class="mt-4 grid gap-4 sm:grid-cols-2">
-        {SUPPORT_TOOL_PAGES.map((page, index) => (
-          <a
-            href={localizePath(locale, page.href)}
-            class="group relative flex h-full min-h-[190px] flex-col justify-between overflow-hidden rounded-2xl border border-primary/20 bg-surface-container-lowest/80 p-6 shadow-[inset_0_1px_0_rgba(241,201,125,0.10)] transition-all duration-500 hover:-translate-y-1.5 hover:border-primary/55 hover:shadow-[0_24px_48px_-24px_rgba(241,201,125,0.45)]"
-          >
-              <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(145deg,rgba(241,201,125,0.12),transparent_45%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
-              <div>
-              <div class="flex items-center justify-between">
-                <span class="font-label text-[10px] uppercase tracking-[0.22em] text-primary/70">
-                  {String(RIGHT_TRIANGLE_GROUPED_PAGES.length + index + 1).padStart(2, '0')}
-                </span>
-                <span class="flex h-9 w-9 items-center justify-center rounded-lg border border-primary/40 bg-primary/12 text-primary shadow-[0_0_18px_-6px_rgba(241,201,125,0.55)] transition-transform duration-500 group-hover:scale-110">
-                  <span class="material-symbols-outlined text-[16px]">{page.icon}</span>
-                </span>
-              </div>
-              <h3 class="mt-4 text-[15px] font-semibold leading-snug text-on-surface group-hover:text-primary">
-                {page.title}
-              </h3>
-              <p class="mt-3 text-sm leading-relaxed text-on-surface-variant">
-                {page.description}
-              </p>
-            </div>
-            <p class="btn-primary relative z-10 mt-5 w-fit px-4 py-2 text-[11px] uppercase tracking-[0.18em]">{openToolLabel}</p>
-          </a>
-        ))}
-      </div>
-    </div>
+  {numberedCategories.map((category) => (
     <div class="mt-12 border-t border-primary/25 pt-10">
-      <div class="flex flex-wrap items-end justify-between gap-4">
-        <div>
-          <p class="font-label text-[10px] uppercase tracking-[0.28em] text-primary/70">
-            The Complete Collection
-          </p>
-          <h3 class="mt-3 font-headline text-2xl font-bold text-on-surface">
-            All Calculators A to Z
-          </h3>
-        </div>
-        <p class="font-headline text-lg text-primary">{azTotalCount} calculators</p>
+      <div class="flex flex-wrap items-baseline justify-between gap-4">
+        <h3 class="font-headline text-xl font-bold text-on-surface">{category.title}</h3>
+        <p class="font-headline text-sm text-primary">
+          {category.entries.length === 1
+            ? '1 calculator'
+            : `${category.entries.length} calculators`}
+        </p>
       </div>
-
-      <ul class="mt-8 grid gap-x-12 sm:grid-cols-2">
-        {allCalculatorPages.map((page, index) => (
+      <p class="mt-2 max-w-2xl text-sm text-on-surface-variant">{category.intro}</p>
+      <ul class="mt-6 grid gap-x-12 sm:grid-cols-2">
+        {category.entries.map((entry) => (
           <li class="border-b border-primary/10">
             <a
-              href={localizePath(locale, page.url)}
+              href={localizePath(locale, entry.url)}
               class="group flex items-baseline gap-4 py-3.5"
             >
               <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">
-                {String(index + 1).padStart(2, '0')}
+                {entry.number}
               </span>
               <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">
-                {page.title}
+                {entry.title}
               </span>
             </a>
           </li>
         ))}
       </ul>
     </div>
-    <div class="mt-8 flex justify-center">
-      <a href={hubHref} class="btn-secondary flex items-center gap-2">
-        {openToolLabel} {hubTitle}
-        <span class="material-symbols-outlined text-sm">arrow_forward</span>
-      </a>
-    </div>
-  </div>
+  ))}
 </section>

@@ -66,7 +66,7 @@
         "ratioBC": "b:c ratio",
         "tanA": "tan(A)",
         "solutionSteps": "Solution Steps",
-        "solutionStepsDefault": "Enter exactly 2 values with at least one side.",
+        "solutionStepsDefault": "Enter at least 2 values with at least one side.",
         "entered": "entered",
         "computed": "computed",
         "solvedFrom": "Solved from",
@@ -145,7 +145,7 @@
             "Problem: legs a = 3 and b = 4. Find the hypotenuse, the acute angles, the area, and the altitude.",
             "Hypotenuse: c = √(a² + b²) = √(3² + 4²) = √25 = 5. The result is longer than either leg, as it must be.",
             "Angles: A = arctan(a / b) = arctan(3 / 4) = 36.87°. Then B = 90° − 36.87° = 53.13°.",
-            "Area and perimeter: area = (3 × 4) / 2 = 6 square units; perimeter = 3 + 4 + 5 = 12 units.",
+            "Area and perimeter: area = (3 × 4) / 2 = 6 square units; perimeter = 3 + 4 + 5 = 12 units; semiperimeter s = 12 / 2 = 6 units.",
             "Altitude: h = (a × b) / c = (3 × 4) / 5 = 2.4 units. Check: p = 9 / 5 = 1.8 and q = 16 / 5 = 3.2, and 1.8 + 3.2 = 5."
           ]
         },

@@ -12,7 +12,7 @@
 <text x="122.0" y="214.0" font-family="system-ui, sans-serif" font-size="22" fill="#ffffff" text-anchor="end" font-weight="bold">a</text>
 <text x="320.0" y="348.0" font-family="system-ui, sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">b</text>
 <text x="338.0" y="188.0" font-family="system-ui, sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">c</text>
-<text x="168.0" y="132.0" font-family="system-ui, sans-serif" font-size="20" fill="#d0c5af" text-anchor="start" font-weight="bold">A</text>
-<text x="440.0" y="296.0" font-family="system-ui, sans-serif" font-size="20" fill="#d0c5af" text-anchor="end" font-weight="bold">B</text>
+<text x="168.0" y="132.0" font-family="system-ui, sans-serif" font-size="20" fill="#d0c5af" text-anchor="start" font-weight="bold">B</text>
+<text x="440.0" y="296.0" font-family="system-ui, sans-serif" font-size="20" fill="#d0c5af" text-anchor="end" font-weight="bold">A</text>
 <text x="168.0" y="290.0" font-family="system-ui, sans-serif" font-size="20" fill="#d0c5af" text-anchor="start" font-weight="bold">C</text>
 </svg>

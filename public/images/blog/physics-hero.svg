@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e293b"/><stop offset="1" stop-color="#0f172a"/></linearGradient></defs>
+<rect x="0" y="0" width="1200" height="630" fill="url(#bg)"/>
+<line x1="60" y1="58" x2="60" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="120" y1="58" x2="120" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="180" y1="58" x2="180" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="240" y1="58" x2="240" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="300" y1="58" x2="300" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="360" y1="58" x2="360" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="420" y1="58" x2="420" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="480" y1="58" x2="480" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="540" y1="58" x2="540" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="600" y1="58" x2="600" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="660" y1="58" x2="660" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="720" y1="58" x2="720" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="780" y1="58" x2="780" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="840" y1="58" x2="840" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="900" y1="58" x2="900" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="960" y1="58" x2="960" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="1020" y1="58" x2="1020" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="1080" y1="58" x2="1080" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="1140" y1="58" x2="1140" y2="572" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="60" x2="1142" y2="60" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="120" x2="1142" y2="120" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="180" x2="1142" y2="180" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="240" x2="1142" y2="240" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="300" x2="1142" y2="300" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="360" x2="1142" y2="360" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="420" x2="1142" y2="420" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="480" x2="1142" y2="480" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="540" x2="1142" y2="540" stroke="#243447" stroke-width="1"/>
+<line x1="58" y1="600" x2="1142" y2="600" stroke="#243447" stroke-width="1"/>
+<text x="600.0" y="70.0" font-family="system-ui, sans-serif" font-size="26" fill="#facc15" text-anchor="middle" font-weight="bold">Right Triangles in Physics: Vectors, Forces, and Components</text>
+<polygon points="350.0,480.0 750.0,280.0 750.0,480.0" fill="#16233a" />
+<line x1="350.0" y1="480.0" x2="750.0" y2="280.0" stroke="#38bdf8" stroke-width="4" />
+<line x1="750.0" y1="280.0" x2="737.6" y2="295.7" stroke="#38bdf8" stroke-width="4" />
+<line x1="750.0" y1="280.0" x2="730.0" y2="280.5" stroke="#38bdf8" stroke-width="4" />
+<line x1="350.0" y1="480.0" x2="750.0" y2="480.0" stroke="#d0c5af" stroke-width="2" stroke-dasharray="8 6" />
+<line x1="750.0" y1="480.0" x2="750.0" y2="280.0" stroke="#d0c5af" stroke-width="2" stroke-dasharray="8 6" />
+<polyline points="750.0,480.0 728.0,480.0 728.0,458.0 750.0,458.0" stroke="#facc15" stroke-width="2" fill="none" />
+<circle cx="350.0" cy="480.0" r="7" fill="#facc15" />
+<polyline points="399.2,455.4 399.7,456.5 400.3,457.7 400.8,458.9 401.3,460.1 401.7,461.3 402.1,462.5 402.5,463.7 402.9,464.9 403.2,466.1 403.5,467.4 403.8,468.6 404.1,469.9 404.3,471.1 404.5,472.4 404.6,473.6 404.8,474.9 404.9,476.2 404.9,477.5 405.0,478.7 405.0,480.0" stroke="#facc15" stroke-width="3" fill="none" />
+<text x="422.0" y="464.0" font-family="system-ui, sans-serif" font-size="28" fill="#facc15" text-anchor="start" font-weight="bold">θ</text>
+<text x="537.0" y="348.0" font-family="system-ui, sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">V</text>
+<text x="550.0" y="515.0" font-family="system-ui, sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="normal">Vx = V cos θ</text>
+<text x="785.0" y="380.0" font-family="system-ui, sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="normal">Vy = V sin θ</text>
+</svg>

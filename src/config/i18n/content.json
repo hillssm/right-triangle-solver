@@ -5,12 +5,12 @@
       "description": "Solve right triangles quickly with clear formulas, visual guidance, and practical examples."
     },
     "home": {
-      "title": "Right Triangle Calculator | Solve Sides, Angles and Area",
-      "description": "Free right triangle calculator with step-by-step solutions. Find missing sides, angles, area, perimeter, altitude and more across 52 focused calculators.",
-      "heading": "Right Triangle Solver",
-      "intro": "Calculate hypotenuse, angles, area, and geometry instantly with our precision digital tool.",
-      "toolHeading": "Right Triangle Calculator",
-      "toolIntro": "This calculator finds sides, angles, area, and perimeter using the Pythagorean theorem and trigonometric ratios.",
+      "title": "Right Triangle Calculator | Solve Sides & Angles",
+      "description": "Solve a right triangle using two independent measurements. Find missing sides and angles with formulas, worked examples, and step-by-step guidance.",
+      "heading": "Right Triangle Calculator",
+      "intro": "Enter two measurements, one of them a side, and solve the whole triangle: missing sides, acute angles, area, and more, with every step shown.",
+      "toolHeading": "Solve a Right Triangle",
+      "toolIntro": "Enter any two values, including at least one side, and the calculator finds the missing sides, acute angles, area, perimeter, altitude, and radii. Two angles alone cannot fix a triangle's size, so at least one side is required.",
       "toolDescription": "Enter any two legs to calculate hypotenuse, area, and perimeter instantly.",
       "credibility": "52 focused calculators with step-by-step solutions. Free, no sign-up, runs in your browser.",
       "browseAll": "Browse all 52 calculators",
@@ -79,19 +79,20 @@
       "longContent": {
         "introSection": {
           "title": "What Is a Right Triangle?",
-          "paragraph1": "A right triangle is a triangle that has one angle exactly equal to 90°. That fixed right angle creates a stable geometry model used in school math, engineering layouts, architecture drawings, surveying, navigation, and technical design.",
-          "paragraph2": "This homepage is structured to help you move in one clear flow: definition first, then formulas, then solving steps, then tool selection, and finally accuracy checks before you use the answer.",
-          "structureTitle": "Right Triangle Definition and Structure",
-          "structureParagraph": "In every right triangle, the side opposite the 90° angle is the hypotenuse. The other two sides are called legs. Most formulas and tools on this site use these standard symbols.",
+          "paragraph1": "A right triangle has one angle of exactly 90°. The two sides forming that angle are the legs, and the side opposite it is the hypotenuse, the longest side of the triangle. The other two angles are acute, and together they add up to 90°: A + B = 90°.",
+          "paragraph2": "Because one angle is already fixed at 90°, two independent measurements, one of them a side, are enough to determine every other side and angle.",
+          "structureTitle": "The parts of a right triangle",
+          "structureParagraph": "The right angle sits at vertex C. Side a faces angle A, side b faces angle B, and side c, the hypotenuse, faces the right angle.",
           "notationTitle": "Standard notation used in the solver",
           "notationItems": [
-            "a: one leg of the triangle.",
-            "b: the other leg of the triangle.",
-            "c: hypotenuse (always the longest side).",
-            "A and B: acute angles, where A + B = 90°.",
-            "h: altitude to the hypotenuse.",
-            "p and q: hypotenuse segments created by the altitude.",
-            "r and R: inradius and circumradius."
+            "a: leg opposite angle A.",
+            "b: leg opposite angle B.",
+            "c: hypotenuse, opposite the 90° angle and always the longest side.",
+            "A and B: acute angles, with A + B = 90°.",
+            "C: the right angle, 90°.",
+            "h: altitude from vertex C to the hypotenuse.",
+            "p: hypotenuse segment adjacent to leg a; q: hypotenuse segment adjacent to leg b.",
+            "r: inradius; R: circumradius."
           ]
         },
         "formulaSection": {
@@ -99,50 +100,53 @@
           "intro": "Before solving any question, identify what values are known and choose the formula family that matches that input type.",
           "sideTitle": "Side formulas",
           "sideItems": [
-            "Pythagorean relation: a² + b² = c².",
-            "Missing leg from hypotenuse: b = √(c² - a²) or a = √(c² - b²).",
-            "Special triangles: 45-45-90 and 30-60-90 shortcuts for fast side solving."
+            "Pythagorean theorem: a² + b² = c².",
+            "Hypotenuse from both legs: c = √(a² + b²).",
+            "Missing leg from hypotenuse and one leg: a = √(c² − b²) or b = √(c² − a²). The subtraction stays inside the square root, and c must be longer than the known leg.",
+            "Special triangles: 45-45-90 and 30-60-90 triangles have fixed side ratios, so one known side determines the rest."
           ],
           "angleTitle": "Angle and trigonometric formulas",
           "angleItems": [
-            "sin(A) = a / c, cos(A) = b / c, tan(A) = a / b.",
-            "Inverse trig for angle finding: A = sin⁻¹(a/c), cos⁻¹(b/c), tan⁻¹(a/b).",
-            "Complement relation for the second angle: B = 90° − A."
+            "Ratios for angle A: sin(A) = a / c, cos(A) = b / c, tan(A) = a / b.",
+            "Angle from two legs: A = arctan(a / b), then B = 90° − A.",
+            "Angle from other sides: A = arcsin(a / c) or A = arccos(b / c), depending on which sides are known.",
+            "Angle mode: use the degree/radian switch to match the units of the angle you enter."
           ],
           "geometryTitle": "Measurement and geometry formulas",
           "geometryItems": [
-            "Area = (a × b) / 2, Perimeter = a + b + c, Semiperimeter = (a + b + c) / 2.",
-            "Altitude relation: h = (a × b) / c.",
-            "Projection relations: p = a²/c, q = b²/c, and p + q = c.",
-            "Radius relations: r = (a + b - c) / 2 and R = c / 2."
+            "Area: (a × b) / 2. Perimeter: P = a + b + c. Semiperimeter: s = (a + b + c) / 2.",
+            "Altitude to the hypotenuse: h = (a × b) / c.",
+            "Hypotenuse projections: p = a² / c and q = b² / c, with p + q = c. Segment p sits next to leg a; segment q sits next to leg b.",
+            "Inradius: r = (a + b − c) / 2. Circumradius: R = c / 2."
           ]
         },
         "solveSection": {
-          "title": "How To Solve Any Right Triangle (Clear Process)",
+          "title": "How to Solve a Right Triangle",
           "steps": [
-            "Define the known values: list sides, angles, and units exactly as given.",
-            "Choose the correct relation: side, angle, area, altitude, projection, or radius formula.",
-            "Apply the formula: start from the symbolic equation before inserting values.",
-            "Substitute the values: replace variables with your known numbers and units.",
-            "Simplify carefully: compute in order and keep intermediate precision.",
-            "Read the final answer: confirm unit and value format for your use case.",
-            "Validate: check geometric conditions (c must be longest, A + B = 90°, units consistent)."
+            "Identify the known measurements: write down the sides, angles, and units exactly as given.",
+            "Work out what is known and what is missing: which sides and angles do you have, and which do you need?",
+            "Select the formula that matches your inputs: a side formula, a trig ratio, or an inverse trig relation.",
+            "Substitute the known values into the formula, keeping the units consistent.",
+            "Calculate the missing measurement, keeping full precision until the final step.",
+            "Repeat for each remaining unknown until the triangle is fully solved.",
+            "Check the result: c must be the longest side, A + B must equal 90°, and the values must satisfy the formula used."
           ],
           "resultsTitle": "How This Solver Presents Step-by-Step Results",
-          "resultsIntro": "Every calculator mode is designed to show a useful solution flow, not only a final number. You see the formula, then value substitution, then computed answer, followed by a short explanation line so each step is easier to verify and reuse.",
+          "resultsIntro": "The solver shows the formula it used, your values substituted into it, the computed answer, and a short explanation, so each step can be checked.",
           "resultsItems": [
             "Formula: the exact relation selected for your inputs.",
             "Substitution: your input values placed into that relation.",
-            "Answer: solved numeric output in the proper unit format.",
+            "Answer: the computed value, with its unit.",
             "Explanation: short clarity note for quicker understanding."
           ],
           "exampleTitle": "Worked Example: The 3-4-5 Triangle",
-          "exampleIntro": "Take the classic 3-4-5 triangle, legs a = 3 and b = 4. Here is the complete solve, the same flow the calculator above follows.",
+          "exampleIntro": "Take the classic 3-4-5 triangle, legs a = 3 and b = 4. Here is the full solve, in the same order the calculator follows.",
           "exampleItems": [
-            "Hypotenuse: c = √(3² + 4²) = √25 = 5.",
-            "Angles: sin(A) = 3 / 5 = 0.6, so A = 36.87°. Then B = 90° − 36.87° = 53.13°.",
-            "Area: (3 × 4) / 2 = 6 square units. Perimeter: 3 + 4 + 5 = 12 units.",
-            "Altitude to the hypotenuse: h = (3 × 4) / 5 = 2.4 units."
+            "Problem: legs a = 3 and b = 4. Find the hypotenuse, the acute angles, the area, and the altitude.",
+            "Hypotenuse: c = √(a² + b²) = √(3² + 4²) = √25 = 5. The result is longer than either leg, as it must be.",
+            "Angles: A = arctan(a / b) = arctan(3 / 4) = 36.87°. Then B = 90° − 36.87° = 53.13°.",
+            "Area and perimeter: area = (3 × 4) / 2 = 6 square units; perimeter = 3 + 4 + 5 = 12 units.",
+            "Altitude: h = (a × b) / c = (3 × 4) / 5 = 2.4 units. Check: p = 9 / 5 = 1.8 and q = 16 / 5 = 3.2, and 1.8 + 3.2 = 5."
           ]
         },
         "calculatorSection": {
@@ -152,17 +156,17 @@
             {
               "href": "/right-triangle-side-calculator/",
               "label": "Right Triangle Side Calculator",
-              "description": "to solve c, a, or b from Pythagorean relations."
+              "description": "to find the hypotenuse or a missing leg from two known sides."
             },
             {
               "href": "/right-triangle-side-from-angle-calculator/",
               "label": "Right Triangle Side from Angle Calculator",
-              "description": "to find sides using trigonometric input."
+              "description": "to find a missing side from one known side and one acute angle."
             },
             {
               "href": "/special-right-triangle-calculator/",
               "label": "Special Right Triangle Calculator",
-              "description": "for 45-45-90 and 30-60-90 shortcuts."
+              "description": "to solve 45-45-90 and 30-60-90 triangles from a single known side."
             }
           ],
           "anglesTitle": "For angles and trig ratios",
@@ -170,12 +174,12 @@
             {
               "href": "/right-triangle-angle-calculator/",
               "label": "Right Triangle Angle Calculator",
-              "description": "to find A or B with inverse trig."
+              "description": "to find acute angle A or B from known side lengths."
             },
             {
               "href": "/right-triangle-trig-ratios-calculator/",
               "label": "Trigonometric Ratios Calculator",
-              "description": "for sin, cos, tan, sec, csc, and cot."
+              "description": "to calculate sin, cos, tan, sec, csc, and cot for an acute angle."
             }
           ],
           "measurementsTitle": "For measurements and geometric properties",
@@ -183,48 +187,47 @@
             {
               "href": "/right-triangle-area-calculator/",
               "label": "Right Triangle Area Calculator",
-              "description": "for multiple area methods."
+              "description": "to find the area by several methods, depending on the measurements known."
             },
             {
               "href": "/right-triangle-measurements-calculator/",
               "label": "Right Triangle Measurements Calculator",
-              "description": "for perimeter and semiperimeter."
+              "description": "to find the perimeter and semiperimeter."
             },
             {
               "href": "/right-triangle-altitude-calculator/",
               "label": "Right Triangle Altitude Calculator",
-              "description": "for altitude relations."
+              "description": "to find the altitude to the hypotenuse."
             },
             {
               "href": "/right-triangle-projection-calculator/",
               "label": "Right Triangle Projection Calculator",
-              "description": "for segment and projection theorems."
+              "description": "to find the hypotenuse segments p and q."
             },
             {
               "href": "/right-triangle-radius-calculator/",
               "label": "Right Triangle Radius Calculator",
-              "description": "for inradius and circumradius."
+              "description": "to find the inradius r or the circumradius R."
             }
           ]
         },
         "validationSection": {
           "practicalTitle": "Practical Use Cases",
           "practicalItems": [
-            "Classroom and exam preparation with traceable formula-based steps.",
-            "Site measurements for ramps, ladders, roof pitch, and wall offsets.",
-            "Technical drafting where side-angle consistency must be validated quickly.",
-            "Engineering and fabrication checks before final dimensions are approved.",
-            "Carpentry and framing: squaring corners and checking diagonals with the 3-4-5 rule.",
-            "Stairs and decks: checking rise, run, and stringer length before anything is cut."
+            "Classroom and exam practice: work through geometry and trigonometry problems with steps you can check.",
+            "Ladders and ramps: find a ladder's reach or a ramp's length from measurements taken on site.",
+            "Rectangular spaces: find the diagonal of a room, plot, or frame from its length and width.",
+            "Construction layouts: check squaring with the 3-4-5 rule, and verify rise, run, and stringer length on stairs and decks.",
+            "Slopes and drawings: turn a slope or an angled drawing dimension into exact side lengths."
           ],
           "checklistTitle": "Accuracy Checklist Before You Finalize",
           "checklistItems": [
-            "Keep all side inputs in consistent units before solving.",
-            "Ensure hypotenuse c remains larger than both legs.",
-            "Use the correct angle mode and trigonometric relation.",
-            "Round only at the final answer, not during intermediate substitution.",
+            "Keep all side inputs in the same unit before solving.",
+            "Check that the hypotenuse c is longer than either leg.",
+            "Use the degree/radian switch that matches your angle inputs.",
+            "Round only at the final answer, not during intermediate steps.",
             "Cross-check with one related calculator when precision matters.",
-            "Confirm the two acute angles add up to exactly 90°."
+            "Confirm the two acute angles add up to 90°, allowing a small difference from rounded display decimals."
           ],
           "supportTitle": "Helpful Support Pages",
           "supportItems": [

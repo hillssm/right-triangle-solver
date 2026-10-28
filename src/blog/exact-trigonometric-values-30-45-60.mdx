@@ -1,0 +1,283 @@
+---
+title: "Exact Trigonometric Values of 30°, 45°, and 60°"
+description: "Learn the exact sine, cosine, and tangent values for 30, 45, and 60 degrees, derived from 45-45-90 and 30-60-90 triangles, with examples and practice questions."
+image: "/images/blog/exact-values-hero.svg"
+date: 2026-10-28
+author: "Math Expert"
+category: "Trigonometry"
+---
+
+import Faq from 'theme/components/Faq.astro';
+
+Some angles in trigonometry have values you can write exactly, with fractions and square roots, instead of reaching for a calculator. The angles 30°, 45°, and 60° are the famous three, and every student meets them in geometry, trigonometry, and examinations. Here is the direct answer, with the full table and the derivations below it:
+
+- **30°:** sin = 1/2, cos = √3/2, tan = √3/3
+- **45°:** sin = √2/2, cos = √2/2, tan = 1
+- **60°:** sin = √3/2, cos = 1/2, tan = √3
+
+These are not rounded decimals. They are exact, and they come from just two triangles: the 45-45-90 triangle and the 30-60-90 triangle. Once you see how each value falls out of those triangles, the table stops being something to memorize blindly and becomes something you can rebuild any time.
+
+## Exact Trigonometric Values Table
+
+| Angle | sin θ | cos θ | tan θ | csc θ | sec θ | cot θ |
+|---|---|---|---|---|---|---|
+| 30° | 1/2 | √3/2 | √3/3 | 2 | 2√3/3 | √3 |
+| 45° | √2/2 | √2/2 | 1 | √2 | √2 | 1 |
+| 60° | √3/2 | 1/2 | √3 | 2√3/3 | 2 | √3/3 |
+
+Every entry in this table has been checked against the triangle geometry in the sections below. Tangent, cotangent, secant, and cosecant are not independent facts to memorize on top of sine and cosine. Tangent is sine divided by cosine, cotangent is cosine divided by sine, and secant and cosecant are the reciprocals of cosine and sine. If you know sine and cosine for an angle, the other four values follow by one division each, which is exactly how the reciprocal columns above were produced. The guide to [reciprocal trigonometric ratios](/blog/reciprocal-trigonometric-ratios-right-triangles/) covers those relationships in full.
+
+## What Are Exact Trigonometric Values?
+
+An exact trigonometric value is a value written in closed form, using fractions and square roots, with nothing rounded away. A decimal approximation is the same value rounded to some number of decimal places. Compare:
+
+- Exact value: sin 30° = 1/2
+- Decimal approximation: sin 30° = 0.5
+
+For 30° the two look the same, but for most special angles they do not. The exact value sin 45° = √2/2 is approximately 0.7071, and the exact value sin 60° = √3/2 is approximately 0.8660. The approximations are fine for a final measurement, but rounding early in a calculation lets small errors grow through later steps. Keeping √2/2 and √3/2 in symbolic form until the last step avoids that entirely, which is why examinations ask for exact values.
+
+Special angles are called special because their triangles have side lengths in simple ratios: 1, 1, and √2 for the 45° case, and 1, √3, and 2 for the 30° and 60° case. Those side ratios are the whole reason the values come out clean. The next two sections derive every value from those triangles, so nothing in the table needs to be taken on trust.
+
+## Understanding the 45° Angle Using a 45-45-90 Triangle
+
+### Properties of a 45-45-90 Triangle
+
+An isosceles right triangle has two equal acute angles of 45° and two equal legs. Take the legs to be 1 unit each. The Pythagorean theorem gives the hypotenuse:
+
+Hypotenuse² = 1² + 1² = 2
+
+Therefore, Hypotenuse = √2.
+
+That is the entire triangle: legs 1 and 1, hypotenuse √2, angles 45°, 45°, and 90°. Everything about the 45° values follows from these three sides.
+
+### Deriving sin 45°, cos 45°, and tan 45°
+
+Pick either acute angle, since the triangle is symmetric and both give the same ratios. For a 45° angle, the opposite side is 1, the adjacent side is 1, and the hypotenuse is √2:
+
+- sin 45° = Opposite / Hypotenuse = 1/√2 = √2/2
+- cos 45° = Adjacent / Hypotenuse = 1/√2 = √2/2
+- tan 45° = Opposite / Adjacent = 1/1 = 1
+
+The step from 1/√2 to √2/2 is rationalizing the denominator: multiply top and bottom by √2, giving √2/2. The two forms are exactly equal, and the rationalized form is the standard convention in textbooks and examinations, so answers are usually expected in that form. The reciprocals follow at once: csc 45° = √2, sec 45° = √2, and cot 45° = 1.
+
+![A 45-45-90 triangle with legs 1 and 1 and hypotenuse root 2](/images/blog/exact-values-45-triangle.svg)
+
+*Caption: The 45-45-90 triangle. Equal legs give equal sine and cosine, and a tangent of 1.*
+
+## Understanding 30° and 60° Using a 30-60-90 Triangle
+
+### How to Construct a 30-60-90 Triangle
+
+Start with an equilateral triangle whose sides are all 2 units long. Every angle in it is 60°. Now draw a perpendicular line from one vertex to the midpoint of the opposite side. That line cuts the equilateral triangle into two congruent right triangles, and it also bisects the 60° angle at the top vertex, turning it into 30°.
+
+Each resulting right triangle has:
+
+- A 30° angle.
+- A 60° angle.
+- A 90° angle.
+- A shorter leg of length 1 (half of the equilateral side of 2).
+- A longer leg of length √3.
+- A hypotenuse of length 2.
+
+The longer leg comes from the Pythagorean theorem. With hypotenuse 2 and shorter leg 1:
+
+Longer leg² = 2² − 1² = 4 − 1 = 3
+
+Therefore, Longer leg = √3.
+
+### Deriving the Exact Values for 30°
+
+Use the 30° angle in this triangle. Relative to 30°, the opposite side is the shorter leg (1), the adjacent side is the longer leg (√3), and the hypotenuse is 2:
+
+- sin 30° = Opposite / Hypotenuse = 1/2
+- cos 30° = Adjacent / Hypotenuse = √3/2
+- tan 30° = Opposite / Adjacent = 1/√3 = √3/3
+
+The last step rationalizes 1/√3 by multiplying top and bottom by √3, giving √3/3. Both forms are equal, but √3/3 is the expected form. The reciprocals are csc 30° = 2, sec 30° = 2√3/3, and cot 30° = √3.
+
+### Deriving the Exact Values for 60°
+
+Now use the same triangle but select the 60° angle. The side lengths have not changed at all, only the reference angle. Relative to 60°, the opposite side is now the longer leg (√3) and the adjacent side is now the shorter leg (1), with the hypotenuse still 2:
+
+- sin 60° = Opposite / Hypotenuse = √3/2
+- cos 60° = Adjacent / Hypotenuse = 1/2
+- tan 60° = Opposite / Adjacent = √3/1 = √3
+
+Compare the two sets and the complementary-angle relationship appears:
+
+- sin 30° = cos 60° = 1/2
+- cos 30° = sin 60° = √3/2
+
+This is not a coincidence. In any right triangle, the two acute angles add to 90°, so the side opposite one is adjacent to the other. That swap is why the sine of one acute angle always equals the cosine of the other. The reciprocals are csc 60° = 2√3/3, sec 60° = 2, and cot 60° = √3/3.
+
+![A 30-60-90 triangle with hypotenuse 2, shorter leg 1, and longer leg root 3](/images/blog/exact-values-30-60-triangle.svg)
+
+*Caption: The 30-60-90 triangle, cut from an equilateral triangle of side 2. The same three sides give both the 30° and the 60° values.*
+
+## How to Remember Exact Trigonometric Values
+
+The most useful memory aid is the square-root pattern for sine. For the angles 0°, 30°, 45°, 60°, and 90°, the sine values are:
+
+√0/2, √1/2, √2/2, √3/2, and √4/2
+
+which simplify to:
+
+0, 1/2, √2/2, √3/2, and 1
+
+For cosine, read the same sequence in reverse order:
+
+1, √3/2, √2/2, 1/2, and 0
+
+That single pattern gives you every sine and cosine value for the standard angles. Tangent needs no separate memorization: tan θ = sin θ / cos θ wherever cosine is nonzero, so tan 30° = (1/2) / (√3/2) = √3/3, tan 45° = 1, and tan 60° = √3. The reciprocal ratios then come from the reciprocal identities, as the table at the top shows.
+
+Treat this pattern as a shortcut, not a substitute for the geometry. It works only for these specific standard angles, and it gives no hint about why the values hold. If you forget the pattern under exam pressure, the two triangles rebuild it in under a minute.
+
+## Exact Trigonometric Values at 0° and 90° for Comparison
+
+Adding the boundary angles completes the pattern and explains why tangent behaves differently at the edges:
+
+| Angle | sin θ | cos θ | tan θ |
+|---|---|---|---|
+| 0° | 0 | 1 | 0 |
+| 90° | 1 | 0 | Undefined |
+
+Tan 90° is undefined because tan θ = sin θ / cos θ, and cos 90° = 0, so the division would be by zero. The reciprocal ratios need the same care at these angles: at 0°, csc and cot are undefined (both would divide by sin 0° = 0 or tan 0° = 0) while sec 0° = 1; at 90°, sec is undefined (it would divide by cos 90° = 0) while csc 90° = 1 and cot 90° = 0. This section stays short on purpose: the article is about 30°, 45°, and 60°, and the boundary angles are here only to complete the pattern.
+
+## Worked Examples Using Exact Trigonometric Values
+
+Each example shows the question, the substitution, the steps, and the final answer, with no step skipped and no rounding.
+
+### Example 1: Evaluate sin 30° + cos 60°
+
+**Question:** Evaluate sin 30° + cos 60°.
+
+**Substitution:** sin 30° = 1/2 and cos 60° = 1/2.
+
+**Calculation:** 1/2 + 1/2 = 1.
+
+**Final answer:** 1.
+
+This is the complementary-angle relationship in action: sin 30° and cos 60° are the same value, so their sum is simply twice 1/2.
+
+### Example 2: Evaluate sin 45° × cos 45°
+
+**Question:** Evaluate sin 45° × cos 45°.
+
+**Substitution:** sin 45° = √2/2 and cos 45° = √2/2.
+
+**Calculation:** (√2/2) × (√2/2) = (√2 × √2) / (2 × 2) = 2/4 = 1/2.
+
+**Final answer:** 1/2.
+
+### Example 3: Evaluate tan 30° × tan 60°
+
+**Question:** Evaluate tan 30° × tan 60°.
+
+**Substitution:** tan 30° = √3/3 and tan 60° = √3.
+
+**Calculation:** (√3/3) × √3 = (√3 × √3) / 3 = 3/3 = 1.
+
+**Final answer:** 1.
+
+This result generalizes: tan θ × tan (90° − θ) = 1 for any acute angle, because the two tangents are reciprocals of each other.
+
+### Example 4: Simplify sin 60° / cos 30°
+
+**Question:** Simplify sin 60° / cos 30°.
+
+**Substitution:** sin 60° = √3/2 and cos 30° = √3/2.
+
+**Calculation:** (√3/2) / (√3/2) = 1, since any nonzero number divided by itself is 1.
+
+**Final answer:** 1.
+
+Once again the complementary relationship does the work: sin 60° and cos 30° are equal, so their ratio must be 1.
+
+### Example 5: Evaluate 2 sin² 30° + cos² 60°
+
+**Question:** Evaluate 2 sin² 30° + cos² 60°.
+
+**Substitution:** sin 30° = 1/2, so sin² 30° = 1/4. Cos 60° = 1/2, so cos² 60° = 1/4.
+
+**Calculation:** 2 × (1/4) + (1/4) = 1/2 + 1/4 = 3/4.
+
+**Final answer:** 3/4.
+
+The common error here is squaring after multiplying, or forgetting to square the 2 in the denominator of 1/2. Square the value first, then apply the coefficient.
+
+### Application: Find a side from an angle and a hypotenuse
+
+**Question:** A ladder 8 m long leans against a wall, making a 60° angle with the ground. How high up the wall does it reach?
+
+**Setup:** The ladder is the hypotenuse (8 m). The height up the wall is the side opposite the 60° angle. The distance from the wall to the foot of the ladder is the adjacent side.
+
+**Formula:** sin 60° = Opposite / Hypotenuse, so Opposite = Hypotenuse × sin 60°.
+
+**Calculation:** Opposite = 8 × (√3/2) = 4√3 m.
+
+**Final answer:** 4√3 m, about 6.93 m if a decimal is requested.
+
+The same setup gives the foot distance as well: Adjacent = 8 × cos 60° = 8 × (1/2) = 4 m. Check with Pythagoras: (4√3)² + 4² = 48 + 16 = 64 = 8², which confirms the triangle.
+
+## Common Mistakes Students Should Avoid
+
+- **Mixing up sine and cosine values for 30° and 60°.** Sin 30° = 1/2 while sin 60° = √3/2, and the cosine values are the reverse. Fix it with the triangle: the 30° angle sits opposite the short leg, so its sine is the small value.
+- **Confusing √3/2 with √3/3.** The first is cos 30° and sin 60°; the second is tan 30° and cot 60°. They look alike and are not interchangeable. Fix it by deriving from the ratio: tan 30° = (1/2) / (√3/2) = √3/3, which has 3 in the denominator.
+- **Forgetting that tan θ = sin θ / cos θ.** Every tangent value in the table comes from this one division. Fix it by computing tangent from sine and cosine instead of memorizing it separately.
+- **Writing 1/√3 when a question specifically requires a rationalized denominator.** The two forms are equal, but mark schemes often expect √3/3. Fix it by rationalizing as the final step: multiply top and bottom by √3.
+- **Rounding exact values too early.** Replacing √2/2 with 0.71 at the start of a multi-step problem carries error into every later step. Fix it by keeping square roots symbolic until the final answer.
+- **Assuming that all trigonometric ratios are defined at every angle.** Tan 90° and sec 90° are undefined, as are csc 0° and cot 0°. Fix it by checking the denominator: if sin or cos is zero, the ratio built on it is undefined.
+- **Entering degrees into a calculator set to radians.** A calculator in radian mode returns sin 30 ≈ −0.988 instead of 0.5, because it reads 30 as 30 radians. Fix it by checking the mode indicator before the first calculation.
+- **Confusing exact expressions with decimal approximations.** √3/2 is exact; 0.866 is approximate. Fix it by leaving square roots in the answer unless the question explicitly asks for a decimal.
+
+## Applications of Special-Angle Values
+
+- **Solving right-triangle problems.** A known angle of 30°, 45°, or 60° plus one side determines every other side exactly, as the ladder example showed.
+- **Finding unknown side lengths.** Heights, distances, and shadows in geometry problems reduce to one multiplication by a special-angle ratio.
+- **Simplifying trigonometric expressions.** Sums, products, and quotients of special-angle values collapse to simple fractions, as the worked examples showed.
+- **Verifying trigonometric identities.** Identities like sin² θ + cos² θ = 1 can be checked instantly at special angles before attempting a general proof.
+- **Solving geometry and examination questions.** Many exam problems are built around these angles precisely because the answers come out exact.
+- **Performing exact calculations without decimal approximations.** Designs, constructions, and proofs that need exact lengths use these values rather than rounded measurements.
+
+**Practical example:** A kite string 20 m long makes a 45° angle with the ground. The height of the kite is the side opposite the 45° angle, so height = 20 × sin 45° = 20 × (√2/2) = 10√2 m, about 14.14 m. No calculator approximation was needed to get the exact height, and the same 45° angle means the horizontal distance is also 10√2 m.
+
+## Practice Questions
+
+Work through these in order, from recall to multi-step problems.
+
+1. What is the exact value of sin 30°?
+2. What is the exact value of cos 45°?
+3. What is the exact value of tan 60°?
+4. What is the exact value of sec 60°?
+5. Simplify sin 30° + cos 30°.
+6. Simplify tan 30° × tan 60°.
+7. Evaluate sin² 30° + cos² 30°.
+8. A right triangle has a 60° angle, and the side adjacent to the 60° angle is 4 cm. Find the hypotenuse.
+
+### Answer Key
+
+**1.** sin 30° = 1/2. The 30° angle sits opposite the short leg 1, with hypotenuse 2.
+
+**2.** cos 45° = √2/2. In the 45-45-90 triangle, adjacent = 1 and hypotenuse = √2, so 1/√2 = √2/2.
+
+**3.** tan 60° = √3. Opposite = √3 and adjacent = 1, so √3/1 = √3.
+
+**4.** sec 60° = 1 / cos 60° = 1 / (1/2) = 2.
+
+**5.** sin 30° + cos 30° = 1/2 + √3/2 = (1 + √3)/2. The two terms share the denominator 2, so they combine directly.
+
+**6.** tan 30° × tan 60° = (√3/3) × √3 = 3/3 = 1.
+
+**7.** sin² 30° + cos² 30° = (1/2)² + (√3/2)² = 1/4 + 3/4 = 1. This is the Pythagorean identity at 30°, and it equals 1 at every angle.
+
+**8.** Cos 60° = Adjacent / Hypotenuse, so 1/2 = 4 / Hypotenuse, giving Hypotenuse = 8 cm. As a check, the opposite side is 4 × tan 60° = 4√3 cm, and 4² + (4√3)² = 16 + 48 = 64 = 8².
+
+## Frequently Asked Questions
+
+<Faq heading="Frequently Asked Questions" description="Common questions about exact trigonometric values of 30, 45, and 60 degrees, answered briefly." items={[{ "question": "What are the exact trigonometric values of 30°, 45°, and 60°?", "answer": "For 30°: sin = 1/2, cos = √3/2, tan = √3/3. For 45°: sin = √2/2, cos = √2/2, tan = 1. For 60°: sin = √3/2, cos = 1/2, tan = √3. The reciprocal values are in the table at the top of this article." }, { "question": "Why are 30°, 45°, and 60° called special angles?", "answer": "Because their sine, cosine, and tangent values can be written exactly with simple fractions and square roots. That happens because their triangles, the 45-45-90 and 30-60-90 triangles, have side lengths in simple ratios: 1, 1, √2 and 1, √3, 2." }, { "question": "How can I remember the sine values of special angles?", "answer": "Use the square-root pattern: for 0°, 30°, 45°, 60°, and 90°, sine is √0/2, √1/2, √2/2, √3/2, and √4/2, which simplify to 0, 1/2, √2/2, √3/2, and 1. Cosine is the same list in reverse." }, { "question": "Why are sin 30° and cos 60° equal?", "answer": "Because 30° and 60° are complementary angles in the same right triangle. The side opposite 30° is the side adjacent to 60°, so sin 30° and cos 60° describe the same ratio, 1/2, from opposite viewpoints." }, { "question": "Why is tan 45° equal to 1?", "answer": "Because in a 45-45-90 triangle both legs are equal. Tan is opposite divided by adjacent, and 1/1 = 1." }, { "question": "What is the difference between exact and approximate trigonometric values?", "answer": "An exact value keeps fractions and square roots, like √2/2, with nothing rounded away. An approximate value rounds it to a decimal, like 0.7071. Exact values avoid rounding errors in multi-step calculations." }, { "question": "How do I calculate secant, cosecant, and cotangent for special angles?", "answer": "Take reciprocals of the values you already know: csc θ = 1 / sin θ, sec θ = 1 / cos θ, and cot θ = 1 / tan θ. For example, sec 60° = 1 / (1/2) = 2, and cot 30° = 1 / (√3/3) = √3." }, { "question": "Why does tan 30° equal √3/3 instead of √3?", "answer": "Because tan 30° = sin 30° / cos 30° = (1/2) / (√3/2) = 1/√3, which rationalizes to √3/3. The value √3 is tan 60°, not tan 30°. The two are reciprocals of each other." }, { "question": "Can I derive these values without a calculator?", "answer": "Yes, and that is the point of this article. Draw a 45-45-90 triangle with legs 1 and 1, or cut an equilateral triangle of side 2 in half to get a 30-60-90 triangle, then read every ratio off the sides. No calculator is involved." }, { "question": "Should I memorize the table or understand how to derive it?", "answer": "Understand it first, then the table memorizes itself. If you know the two triangles and the square-root pattern for sine and cosine, you can rebuild every value in under a minute, which is far more reliable than rote memory under exam pressure." }]} />
+
+## Conclusion
+
+The exact values of 30°, 45°, and 60° look like a table to memorize, but they are really two triangles to understand. The 45-45-90 triangle, with legs 1 and 1 and hypotenuse √2, gives sin 45° = cos 45° = √2/2 and tan 45° = 1. The 30-60-90 triangle, cut from an equilateral triangle of side 2, gives the 30° and 60° values, with the complementary relationship tying the two angles together: sin 30° = cos 60° = 1/2, and cos 30° = sin 60° = √3/2. Everything else, tangent, cotangent, secant, and cosecant, follows from sine and cosine by division or reciprocation.
+
+Keep the habits from this article beside you as you practise: name the angle before labeling sides, keep square roots symbolic until the final step, rationalize denominators, and check answers against the complementary relationships. Work the eight practice questions without looking at the key, then rebuild the whole table from the two triangles on a blank page. Once you can do that, special angles stop being a memory test and become a tool you can use anywhere, from exam questions to real heights and distances. For the next step, the guide to [sine, cosine, and tangent](/blog/sine-cosine-tangent/) covers the general ratios these values come from, and the guide to the [30-60-90 triangle](/blog/30-60-90-triangle/) explores its geometry in depth.

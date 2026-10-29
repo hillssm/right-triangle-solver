@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>Right triangle sides relative to angle A</title>
+<desc>Right triangle with angle A at bottom-left, angle B at top, right angle C at bottom-right. Side a opposite A, side b adjacent to A, hypotenuse c.</desc>
+
+<polygon points="280,500 800,500 800,150" fill="rgba(241,201,125,0.07)"/>
+<line x1="280" y1="500" x2="800" y2="500" stroke="#fbbf24" stroke-width="5" stroke-linecap="round"/>
+<line x1="800" y1="500" x2="800" y2="150" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+<line x1="280" y1="500" x2="800" y2="150" stroke="#f472b6" stroke-width="5" stroke-linecap="round"/>
+<polyline points="800,470 770,470 770,500" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<circle cx="280" cy="500" r="7" fill="#f1c97d"/>
+<circle cx="800" cy="500" r="7" fill="#f1c97d"/>
+<circle cx="800" cy="150" r="7" fill="#f1c97d"/>
+<text x="540.0" y="548" font-family="Noto Serif, Georgia, serif" font-size="38" fill="#fbbf24" text-anchor="middle" font-style="italic">b</text>
+<text x="838" y="325.0" font-family="Noto Serif, Georgia, serif" font-size="38" fill="#38bdf8" text-anchor="middle" font-style="italic">a</text>
+<text x="485.0" y="325.0" font-family="Noto Serif, Georgia, serif" font-size="38" fill="#f472b6" text-anchor="middle" font-style="italic">c</text>
+<path d="M 335.0 500.0 Q 335.0 483.2 325.6 469.2" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.7"/>
+<text x="368" y="472" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<path d="M 754.4 180.8 Q 770.8 205.0 800.0 205.0" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.7"/>
+<text x="728" y="222" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">B</text>
+<text x="758" y="468" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">C</text>
+<text x="880" y="170" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#38bdf8" text-anchor="start">a: opposite A</text>
+<text x="880" y="205" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#fbbf24" text-anchor="start">b: adjacent to A</text>
+<text x="880" y="240" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f472b6" text-anchor="start">c: hypotenuse</text>
+<text x="880" y="285" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#d0c5af" text-anchor="start">A + B = 90°</text>
+</svg>

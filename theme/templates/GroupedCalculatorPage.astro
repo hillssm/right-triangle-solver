@@ -15,6 +15,7 @@ import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import HubGuide from 'theme/components/HubGuide.astro';
 import SideGuide from 'theme/components/SideGuide.astro';
+import SideFromAngleGuide from 'theme/components/SideFromAngleGuide.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
 import { replaceGenericSeoHeading, seoSectionHeading } from 'theme/utils/seoHeadings';
 import { formatListItem } from 'src/utils/formatList';
@@ -42,7 +43,9 @@ const { locale, slug } = Astro.props;
 const groupedPage = getGroupedPageBySlug(slug);
 const isHubPage = slug === RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.slug;
 const isSidePage = slug === 'right-triangle-side-calculator';
+const isSideFromAnglePage = slug === 'right-triangle-side-from-angle-calculator';
 const hideOldSideContent = isSidePage && locale === 'en';
+const hideOldSideFromAngleContent = isSideFromAnglePage && locale === 'en';
 
 if (!groupedPage && !isHubPage) {
   throw new Error(`Unknown grouped calculator slug: ${slug}`);
@@ -203,16 +206,23 @@ const hubGuideMeta = (hubGuide.meta as any) || {};
 const sideSeoTitle = 'Right Triangle Side Calculator - Find Missing Sides';
 const sideSeoDescription =
   'Calculate any missing side of a right triangle with the Pythagorean theorem. Find the hypotenuse or legs with step-by-step solutions, examples, and diagrams.';
+const sideFromAngleSeoTitle = 'Right Triangle Side From Angle Calculator - Find Sides Using Angles';
+const sideFromAngleSeoDescription =
+  'Find a missing right triangle side from one angle and one side. Sine, cosine, and tangent formulas with step-by-step solutions, examples, and diagrams.';
 const pageTitle = isHubPage
   ? `${hubGuideMeta.title || hubSeoTitle} | Right Triangle Solver`
   : isSidePage
     ? `${sideSeoTitle} | Right Triangle Solver`
-    : `${activePage.h1} | Right Triangle Solver`;
+    : isSideFromAnglePage
+      ? `${sideFromAngleSeoTitle} | Right Triangle Solver`
+      : `${activePage.h1} | Right Triangle Solver`;
 const pageDescription = isHubPage
   ? hubGuideMeta.description || hubSeoDescription
   : isSidePage
     ? sideSeoDescription
-    : activePage.intent;
+    : isSideFromAnglePage
+      ? sideFromAngleSeoDescription
+      : activePage.intent;
 
 const formulas = groupedPage
   ? getGroupedPageFormulas(groupedPage).map((formula) => {
@@ -772,7 +782,7 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
         </script>
       </section>
 
-      {!hideOldSideContent && (
+      {!hideOldSideContent && !hideOldSideFromAngleContent && (
       <>
       <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
         <h2>{sectionHeading(activePage.h2[0])}</h2>
@@ -1106,4 +1116,5 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
     </>
   )}
   {isSidePage && locale === 'en' ? <SideGuide /> : null}
+  {isSideFromAnglePage && locale === 'en' ? <SideFromAngleGuide /> : null}
 </BaseLayout>

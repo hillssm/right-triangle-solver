@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>Four calculator modes compared</title>
+<desc>Four panels: sine mode finds a from c, cosine mode finds b from c, tangent modes convert between legs a and b.</desc>
+
+<text x="300" y="30" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">Mode 1: Sine</text>
+<line x1="205" y1="190" x2="395" y2="190" stroke="#fbbf24" stroke-width="4"/>
+<line x1="395" y1="190" x2="395" y2="90" stroke="#38bdf8" stroke-width="5" stroke-dasharray="12 8"/>
+<line x1="205" y1="190" x2="395" y2="90" stroke="#f472b6" stroke-width="4"/>
+<polygon points="205,190 395,190 395,90" fill="rgba(241,201,125,0.07)"/>
+<polyline points="395,176 381,176 381,190" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<path d="M 235.0 190.0 Q 235.0 179.7 228.6 171.5" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.7"/>
+<text x="257" y="174" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<circle cx="205" cy="190" r="5" fill="#f1c97d"/>
+<circle cx="395" cy="190" r="5" fill="#f1c97d"/>
+<circle cx="395" cy="90" r="5" fill="#f1c97d"/>
+<text x="300" y="222" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#d0c5af" text-anchor="middle">c = 10 m, A = 30°</text>
+<text x="300" y="246" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#4ade80" text-anchor="middle" font-weight="bold">find a = ?</text>
+<text x="300" y="270" font-family="Noto Serif, Georgia, serif" font-size="20" fill="#ffffff" text-anchor="middle" font-style="italic">a = c × sin(A)</text>
+<text x="300" y="294" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#f1c97d" text-anchor="middle" font-weight="bold">a = 5 m</text>
+<text x="900" y="30" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">Mode 2: Cosine</text>
+<line x1="805" y1="190" x2="995" y2="190" stroke="#fbbf24" stroke-width="5" stroke-dasharray="12 8"/>
+<line x1="995" y1="190" x2="995" y2="90" stroke="#38bdf8" stroke-width="4"/>
+<line x1="805" y1="190" x2="995" y2="90" stroke="#f472b6" stroke-width="4"/>
+<polygon points="805,190 995,190 995,90" fill="rgba(241,201,125,0.07)"/>
+<polyline points="995,176 981,176 981,190" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<path d="M 835.0 190.0 Q 835.0 179.7 828.6 171.5" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.7"/>
+<text x="857" y="174" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<circle cx="805" cy="190" r="5" fill="#f1c97d"/>
+<circle cx="995" cy="190" r="5" fill="#f1c97d"/>
+<circle cx="995" cy="90" r="5" fill="#f1c97d"/>
+<text x="900" y="222" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#d0c5af" text-anchor="middle">c = 12 ft, A = 60°</text>
+<text x="900" y="246" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#4ade80" text-anchor="middle" font-weight="bold">find b = ?</text>
+<text x="900" y="270" font-family="Noto Serif, Georgia, serif" font-size="20" fill="#ffffff" text-anchor="middle" font-style="italic">b = c × cos(A)</text>
+<text x="900" y="294" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#f1c97d" text-anchor="middle" font-weight="bold">b = 6 ft</text>
+<text x="300" y="335" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">Mode 3: Tangent</text>
+<line x1="205" y1="495" x2="395" y2="495" stroke="#fbbf24" stroke-width="4"/>
+<line x1="395" y1="495" x2="395" y2="395" stroke="#38bdf8" stroke-width="5" stroke-dasharray="12 8"/>
+<line x1="205" y1="495" x2="395" y2="395" stroke="#f472b6" stroke-width="4"/>
+<polygon points="205,495 395,495 395,395" fill="rgba(241,201,125,0.07)"/>
+<polyline points="395,481 381,481 381,495" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<path d="M 235.0 495.0 Q 235.0 484.7 228.6 476.5" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.7"/>
+<text x="257" y="479" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<circle cx="205" cy="495" r="5" fill="#f1c97d"/>
+<circle cx="395" cy="495" r="5" fill="#f1c97d"/>
+<circle cx="395" cy="395" r="5" fill="#f1c97d"/>
+<text x="300" y="527" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#d0c5af" text-anchor="middle">b = 8 m, A = 35°</text>
+<text x="300" y="551" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#4ade80" text-anchor="middle" font-weight="bold">find a = ?</text>
+<text x="300" y="575" font-family="Noto Serif, Georgia, serif" font-size="20" fill="#ffffff" text-anchor="middle" font-style="italic">a = b × tan(A)</text>
+<text x="300" y="599" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#f1c97d" text-anchor="middle" font-weight="bold">a ≈ 5.60 m</text>
+<text x="900" y="335" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">Mode 4: Tangent</text>
+<line x1="805" y1="495" x2="995" y2="495" stroke="#fbbf24" stroke-width="5" stroke-dasharray="12 8"/>
+<line x1="995" y1="495" x2="995" y2="395" stroke="#38bdf8" stroke-width="4"/>
+<line x1="805" y1="495" x2="995" y2="395" stroke="#f472b6" stroke-width="4"/>
+<polygon points="805,495 995,495 995,395" fill="rgba(241,201,125,0.07)"/>
+<polyline points="995,481 981,481 981,495" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<path d="M 835.0 495.0 Q 835.0 484.7 828.6 476.5" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.7"/>
+<text x="857" y="479" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<circle cx="805" cy="495" r="5" fill="#f1c97d"/>
+<circle cx="995" cy="495" r="5" fill="#f1c97d"/>
+<circle cx="995" cy="395" r="5" fill="#f1c97d"/>
+<text x="900" y="527" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#d0c5af" text-anchor="middle">a = 4 m, A = 40°</text>
+<text x="900" y="551" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#4ade80" text-anchor="middle" font-weight="bold">find b = ?</text>
+<text x="900" y="575" font-family="Noto Serif, Georgia, serif" font-size="20" fill="#ffffff" text-anchor="middle" font-style="italic">b = a / tan(A)</text>
+<text x="900" y="599" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#f1c97d" text-anchor="middle" font-weight="bold">b ≈ 4.77 m</text>
+</svg>

@@ -1,0 +1,486 @@
+---
+/**
+ * SideFromAngleGuide.astro - Educational guide for the Right Triangle Side From Angle Calculator page.
+ * En-only (following SideGuide pattern). 15 sections, 4 SVG diagrams, 4 tables, 12 FAQs.
+ */
+import katex from 'katex';
+import Faq from 'theme/components/Faq.astro';
+
+const rich = (s: string): string => {
+  if (!s || typeof s !== 'string') return '';
+  let out = s;
+  out = out.replace(
+    /\[\[\[(.+?)\]\]\]/g,
+    (_, l) =>
+      `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
+  );
+  out = out.replace(
+    /\[\[(.+?)\]\]/g,
+    (_, l) =>
+      `<span dir="ltr" class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>`
+  );
+  return out;
+};
+
+const imgSrc = (name: string): string => `/images/hub/${name}`;
+---
+
+<!-- Table of Contents -->
+<nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label="Guide contents">
+  <h2 class="font-headline text-2xl font-bold">In This Guide</h2>
+  <ol class="mt-4 grid gap-2 sm:grid-cols-2">
+    <li><a class="hover:text-primary hover:underline" href="#angle-intro">How to Find a Side Using an Angle</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-anatomy">Understanding Sides and Angles</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-trig">Sine, Cosine, and Tangent</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-modes">The Four Calculator Modes</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-examples">Real-Life Examples</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-effect">How Angles Change Side Lengths</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-degrees">Degrees and Calculator Settings</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-howto">Using the Calculator</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-mistakes">Common Mistakes</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-validation">Input Validation</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-verify">Verifying Your Answer</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-other">When to Use Another Calculator</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-related">Related Calculators</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-faq">FAQs</a></li>
+  </ol>
+</nav>
+
+<!-- Section 1: Introduction -->
+<section id="angle-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Find a Right Triangle Side Using an Angle</h2>
+  <p>Picture a ladder leaning against a wall. You know the ladder is 5 metres long and it meets the ground at 65 degrees, but how high does it reach? A right triangle side from angle calculator answers exactly this kind of question: it finds a missing side when you know one acute angle and one side length. One side plus one angle is enough because trigonometry fixes the shape of the triangle completely. The three ratios, sine, cosine, and tangent, each connect the angle to a different pair of sides. Sine links the opposite side to the hypotenuse, cosine links the adjacent side to the hypotenuse, and tangent links the two legs directly. This page explains which ratio fits your situation, why it works, and how to use the calculator above. Unlike a Pythagorean theorem calculator, which needs two known sides, this tool works from a single side and a single angle.</p>
+</section>
+
+<!-- Section 2: Understanding Sides and Angles -->
+<section id="angle-anatomy" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding the Sides and Angles of a Right Triangle</h2>
+
+  <h3>What Is a Right Triangle?</h3>
+  <p>A right triangle contains one angle of exactly 90 degrees, the same corner you see on a sheet of paper. The other two angles are acute, each smaller than 90 degrees, and they always add up to 90 degrees because the three angles of any triangle total 180. Trigonometry in this guide applies to right triangles only: the sine, cosine, and tangent ratios are defined through the right angle, so using them on a triangle without a 90-degree corner gives wrong answers.</p>
+
+  <h3>What Is the Hypotenuse?</h3>
+  <p>The hypotenuse sits opposite the right angle and is always the longest of the three sides. It earns the label <span set:html={rich('[[c]]')} /> by convention. To spot it in a rotated diagram, find the side that does not touch the right-angle marker. No matter how the triangle is turned, the hypotenuse stays opposite the square corner.</p>
+
+  <h3>What Are the Opposite and Adjacent Sides?</h3>
+  <p>Pick one acute angle and call it <span set:html={rich('[[A]]')} />. The leg across from <span set:html={rich('[[A]]')} /> is the opposite side, labelled <span set:html={rich('[[a]]')} />. The leg that forms <span set:html={rich('[[A]]')} /> together with the hypotenuse is the adjacent side, labelled <span set:html={rich('[[b]]')} />. Here is the part that trips up beginners: the labels depend on which angle you choose. The same leg that is opposite angle <span set:html={rich('[[A]]')} /> becomes adjacent when you switch your reference to angle <span set:html={rich('[[B]]')} />. The hypotenuse never changes its role. Throughout this guide, <span set:html={rich('[[a]]')} /> is opposite <span set:html={rich('[[A]]')} />, <span set:html={rich('[[b]]')} /> is adjacent to <span set:html={rich('[[A]]')} />, and <span set:html={rich('[[c]]')} /> is the hypotenuse.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('angle-anatomy.svg')} alt="Right triangle with angle A at bottom left, legs a opposite and b adjacent to A, hypotenuse c" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Anatomy relative to angle A: side a is opposite A, side b is adjacent to A, and c is the hypotenuse. A + B = 90°.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 3: Trigonometry Fundamentals -->
+<section id="angle-trig" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How Sine, Cosine, and Tangent Help Find Missing Sides</h2>
+  <p>A trigonometric ratio is a fixed relationship between two sides of a right triangle for a given angle. Change the angle and the ratio changes; keep the angle the same and every triangle with that angle shares the same ratios, whatever its size. That is why one angle plus one side determines everything else. Each of the three ratios pairs the angle with a different combination of sides, so the side you know decides which ratio to reach for.</p>
+
+  <h3>Understanding Sine</h3>
+  <p>Sine compares the opposite side with the hypotenuse: <span set:html={rich('[[\\sin(A) = \\frac{a}{c}]]')} />. To solve for the missing side, multiply both sides by <span set:html={rich('[[c]]')} />. The <span set:html={rich('[[c]]')} /> on the right cancels, leaving <span set:html={rich('[[a = c\\sin(A)]]')} />. In words: the opposite leg equals the hypotenuse scaled by the sine of the angle. A larger angle gives a larger sine value, so the opposite side grows as the angle opens up.</p>
+
+  <h3>Understanding Cosine</h3>
+  <p>Cosine compares the adjacent side with the hypotenuse: <span set:html={rich('[[\\cos(A) = \\frac{b}{c}]]')} />. Multiply both sides by <span set:html={rich('[[c]]')} /> and you get <span set:html={rich('[[b = c\\cos(A)]]')} />. The adjacent leg equals the hypotenuse scaled by the cosine of the angle. As angle <span set:html={rich('[[A]]')} /> grows toward 90 degrees, the adjacent side shrinks toward zero, which matches the geometry: the angle squeezes the adjacent leg flat.</p>
+
+  <h3>Understanding Tangent</h3>
+  <p>Tangent compares the two legs directly: <span set:html={rich('[[\\tan(A) = \\frac{a}{b}]]')} />. Rearranged both ways it gives <span set:html={rich('[[a = b\\tan(A)]]')} /> and <span set:html={rich('[[b = \\frac{a}{\\tan(A)}]]')} />. Use multiplication when the known leg is adjacent and you want the opposite leg: scaling the adjacent side by the tangent stretches it into the opposite side. Use division when the known leg is opposite and you want the adjacent one: you are asking how many tangent-sized pieces fit into the opposite leg. The two forms are the same relationship read in opposite directions.</p>
+
+  <h3>What Does SOH-CAH-TOA Mean?</h3>
+  <p>SOH-CAH-TOA is a memory aid, not a substitute for identifying sides correctly. SOH: Sine = Opposite / Hypotenuse. CAH: Cosine = Adjacent / Hypotenuse. TOA: Tangent = Opposite / Adjacent. It helps you pick the ratio once you have labelled opposite, adjacent, and hypotenuse relative to your angle. Always label the sides first; the mnemonic only tells you which fraction to write after that.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('soh-cah-toa.svg')} alt="Three panels showing sine, cosine, and tangent ratios on the same right triangle" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">SOH-CAH-TOA on one triangle: sine uses opposite and hypotenuse, cosine uses adjacent and hypotenuse, tangent uses the two legs.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 4: Four Calculator Modes -->
+<section id="angle-modes" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Choose the Correct Calculator Mode</h2>
+  <p>The correct mode depends on two facts: which side length you already know, and which side is missing. Find your situation in the table, then read the matching worked example below.</p>
+
+  <div class="not-prose overflow-x-auto my-6">
+    <table class="w-full min-w-[620px] border-collapse text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30 text-left">
+          <th class="py-2 pr-4 font-semibold">Known Side</th>
+          <th class="py-2 pr-4 font-semibold">Known Angle</th>
+          <th class="py-2 pr-4 font-semibold">Missing Side</th>
+          <th class="py-2 pr-4 font-semibold">Formula</th>
+          <th class="py-2 pr-4 font-semibold">Calculator Mode</th>
+          <th class="py-2 font-semibold">When to Use It</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b border-outline-variant/15">
+          <td class="py-2 pr-4">Hypotenuse c</td>
+          <td class="py-2 pr-4">A</td>
+          <td class="py-2 pr-4">Leg a</td>
+          <td class="py-2 pr-4 font-mono">a = c × sin(A)</td>
+          <td class="py-2 pr-4">Leg a From Sine</td>
+          <td class="py-2">Sloping length known, need the side across from the angle</td>
+        </tr>
+        <tr class="border-b border-outline-variant/15">
+          <td class="py-2 pr-4">Hypotenuse c</td>
+          <td class="py-2 pr-4">A</td>
+          <td class="py-2 pr-4">Leg b</td>
+          <td class="py-2 pr-4 font-mono">b = c × cos(A)</td>
+          <td class="py-2 pr-4">Leg b From Cosine</td>
+          <td class="py-2">Sloping length known, need the side beside the angle</td>
+        </tr>
+        <tr class="border-b border-outline-variant/15">
+          <td class="py-2 pr-4">Leg b</td>
+          <td class="py-2 pr-4">A</td>
+          <td class="py-2 pr-4">Leg a</td>
+          <td class="py-2 pr-4 font-mono">a = b × tan(A)</td>
+          <td class="py-2 pr-4">Leg a From Tangent</td>
+          <td class="py-2">Horizontal distance known, need the vertical rise</td>
+        </tr>
+        <tr class="border-b border-outline-variant/15 last:border-0">
+          <td class="py-2 pr-4">Leg a</td>
+          <td class="py-2 pr-4">A</td>
+          <td class="py-2 pr-4">Leg b</td>
+          <td class="py-2 pr-4 font-mono">b = a / tan(A)</td>
+          <td class="py-2 pr-4">Leg b From Tangent</td>
+          <td class="py-2">Vertical rise known, need the horizontal distance</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Mode 1: Find Leg a Using Sine</h3>
+  <p>Choose this mode when you know the hypotenuse and need the side opposite the angle. Confirm the known side is the one across from the right angle, and that your angle is the acute angle the opposite side faces. Sine is the right ratio because it directly relates opposite and hypotenuse. Enter the hypotenuse length and the angle in degrees. The result is the opposite leg.</p>
+  <p><strong>Worked example:</strong> Given <span set:html={rich('[[c = 10\\text{ m}]]')} /> and <span set:html={rich('[[A = 30^\\circ]]')} />, find leg <span set:html={rich('[[a]]')} />.</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[a = 10\\sin(30^\\circ) = 10(0.5) = 5\\text{ m}]]]')} />
+  <p>The answer is reasonable: at 30 degrees the opposite side is exactly half the hypotenuse, a handy check you can do mentally.</p>
+
+  <h3>Mode 2: Find Leg b Using Cosine</h3>
+  <p>Choose this mode when you know the hypotenuse and need the side adjacent to the angle. Cosine relates adjacent and hypotenuse, so it converts the sloping length into the leg running alongside the angle. The adjacent side is always shorter than the hypotenuse, since the cosine of an acute angle is always less than 1.</p>
+  <p><strong>Worked example:</strong> Given <span set:html={rich('[[c = 12\\text{ ft}]]')} /> and <span set:html={rich('[[A = 60^\\circ]]')} />, find leg <span set:html={rich('[[b]]')} />.</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[b = 12\\cos(60^\\circ) = 12(0.5) = 6\\text{ ft}]]]')} />
+  <p>At 60 degrees the adjacent side is half the hypotenuse, mirroring the 30-degree sine case. The two acute angles trade roles: the side adjacent to 60° is opposite 30°.</p>
+
+  <h3>Mode 3: Find Leg a Using Tangent</h3>
+  <p>Choose this mode when you know the adjacent leg and need the opposite leg. This is the classic "distance and angle of elevation" situation: you stand a known horizontal distance away and want the height. Tangent scales the adjacent leg up (or down) into the opposite leg. The angle controls the ratio, so a steeper angle means a taller opposite side for the same base.</p>
+  <p><strong>Worked example:</strong> Given <span set:html={rich('[[b = 8\\text{ m}]]')} /> and <span set:html={rich('[[A = 35^\\circ]]')} />, find leg <span set:html={rich('[[a]]')} />.</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[a = 8\\tan(35^\\circ) \\approx 8(0.7002) \\approx 5.60\\text{ m}]]]')} />
+  <p>Because 35° is below 45°, the opposite side comes out shorter than the adjacent leg, which matches the geometry.</p>
+
+  <h3>Mode 4: Find Leg b Using Tangent</h3>
+  <p>Choose this mode when you know the opposite leg and need the adjacent leg. It answers questions like "the rise is fixed, how far back must the base extend?" Division by tangent reverses the Mode 3 scaling: instead of stretching the base into the height, you compress the height back into the base.</p>
+  <p><strong>Worked example:</strong> Given <span set:html={rich('[[a = 4\\text{ m}]]')} /> and <span set:html={rich('[[A = 40^\\circ]]')} />, find leg <span set:html={rich('[[b]]')} />.</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[b = \\frac{4}{\\tan(40^\\circ)} \\approx \\frac{4}{0.8391} \\approx 4.77\\text{ m}]]]')} />
+  <p>At 40°, just under 45°, the adjacent side is slightly longer than the opposite side. That small difference is exactly what the division captures.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('angle-modes.svg')} alt="Four panels comparing the sine, cosine, and two tangent calculator modes with worked values" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">The four modes side by side: sine and cosine start from the hypotenuse, the tangent modes convert between the two legs.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 5: Real-Life Examples -->
+<section id="angle-examples" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Real-Life Examples of Finding Right Triangle Sides Using Angles</h2>
+  <p>Each example below follows the same path: spot the right triangle, name the known side and angle, pick the ratio that connects them to the missing side, substitute, calculate, and read the answer back in context. Watch how the choice of sine, cosine, or tangent falls out of the geometry every time.</p>
+
+  <h3>Example 1: Finding the Height a Ladder Reaches</h3>
+  <p>A 5 m ladder rests against a vertical wall, making a 65-degree angle with the level ground. The wall, ground, and ladder form a right triangle with the ladder as the hypotenuse. Known: <span set:html={rich('[[c = 5\\text{ m}]]')} />, <span set:html={rich('[[A = 65^\\circ]]')} />. The missing height is opposite the 65° angle, so sine fits: the ratio connects opposite and hypotenuse.</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[a = 5\\sin(65^\\circ) \\approx 5(0.9063) \\approx 4.53\\text{ m}]]]')} />
+  <p>The ladder reaches about 4.53 m up the wall. The horizontal distance from the wall comes from cosine, since that leg is adjacent to the angle:</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[b = 5\\cos(65^\\circ) \\approx 5(0.4226) \\approx 2.11\\text{ m}]]]')} />
+  <p>One hypotenuse and one angle gave both legs. Note this is a geometry calculation only; it says nothing about whether the ladder setup is safe, so follow manufacturer guidance for real use.</p>
+
+  <h3>Example 2: Calculating the Rise of a Ramp</h3>
+  <p>A simplified ramp runs 12 m horizontally and rises at 5 degrees above the horizontal. The run and rise are the legs of a right triangle, with the run adjacent to the 5° angle. Known: <span set:html={rich('[[b = 12\\text{ m}]]')} />, <span set:html={rich('[[A = 5^\\circ]]')} />. The missing rise is the opposite leg, and tangent connects opposite to adjacent.</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[a = 12\\tan(5^\\circ) \\approx 12(0.0875) \\approx 1.05\\text{ m}]]]')} />
+  <p>The ramp rises about 1.05 m over its 12 m run. Keep the horizontal run and the sloping surface distinct: the slope itself is slightly longer than 12 m. This result does not certify the ramp against accessibility or building rules.</p>
+
+  <h3>Example 3: Finding a Roof's Vertical Rise</h3>
+  <p>A roof cross-section has a horizontal run of 4.5 m with the roof surface angled 30 degrees above the horizontal. The run is adjacent to the angle and the rise is opposite, so tangent is the natural choice.</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[a = 4.5\\tan(30^\\circ) \\approx 4.5(0.5774) \\approx 2.60\\text{ m}]]]')} />
+  <p>The roof rises about 2.60 m. A steeper pitch would raise the tangent value and with it the rise, which is why roof angle drives attic height so directly. This simplified sketch leaves out overhangs, ridge boards, and framing allowances that real construction needs.</p>
+
+  <h3>Example 4: Measuring a Cable's Vertical Reach</h3>
+  <p>A 20 m cable stretches from the ground to a pole top, forming a 55-degree angle with the horizontal. The cable is the hypotenuse. Sine gives the vertical reach (opposite the angle) and cosine gives the horizontal reach (adjacent to it), so one setup yields both legs.</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[a = 20\\sin(55^\\circ) \\approx 20(0.8192) \\approx 16.38\\text{ m}]]]')} />
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[b = 20\\cos(55^\\circ) \\approx 20(0.5736) \\approx 11.47\\text{ m}]]]')} />
+  <p>The cable reaches about 16.38 m vertically while spanning 11.47 m horizontally. Pairing sine and cosine like this is the standard way to split any sloping length into vertical and horizontal parts.</p>
+
+  <h3>Example 5: Estimating Height From a Line of Sight</h3>
+  <p>A simplified sight line of 150 m tilts 12 degrees above a horizontal reference. Treating the sight line as the hypotenuse of a right triangle, sine extracts the vertical difference and cosine the horizontal distance.</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[a = 150\\sin(12^\\circ) \\approx 150(0.2079) \\approx 31.19\\text{ m}]]]')} />
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[b = 150\\cos(12^\\circ) \\approx 150(0.9781) \\approx 146.72\\text{ m}]]]')} />
+  <p>The far point sits about 31.19 m above the reference level and 146.72 m away horizontally. Real surveying would layer on corrections for terrain, instrument height, and atmospheric effects; this is the raw geometry underneath.</p>
+
+  <h3>Example 6: Estimating a Tree's Height</h3>
+  <p>You stand 25 m horizontally from a tree trunk on level ground, and the angle of elevation to the treetop is 38 degrees. The horizontal distance is the adjacent leg and the tree height above your eye reference is the opposite leg, so tangent bridges them.</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[a = 25\\tan(38^\\circ) \\approx 25(0.7813) \\approx 19.53\\text{ m}]]]')} />
+  <p>The treetop is about 19.53 m above the observation level. If you measured from eye height rather than ground level, add your eye height to get the full tree height. The method assumes flat ground between you and the trunk.</p>
+
+  <h3>Example 7: Calculating a Mechanical Brace Offset</h3>
+  <p>A brace design calls for a horizontal leg of 600 mm meeting the vertical at 25 degrees from the horizontal. The horizontal member is adjacent to the angle; the vertical offset you need is opposite it.</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[a = 600\\tan(25^\\circ) \\approx 600(0.4663) \\approx 279.78\\text{ mm}]]]')} />
+  <p>The vertical offset is about 279.78 mm. The same horizontal length produces a taller offset as the angle grows, which is why small angle changes matter in tight mechanical fits. This dimension alone does not prove the brace is structurally adequate.</p>
+
+  <h3>Example 8: Finding the Opposite Side From a Hypotenuse</h3>
+  <p>A right triangle has a hypotenuse of 8 m with an acute angle of 42 degrees. The side across from the angle is unknown. Since hypotenuse and opposite leg are the sine pair, one multiplication finishes it.</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[a = 8\\sin(42^\\circ) \\approx 8(0.6691) \\approx 5.35\\text{ m}]]]')} />
+  <p>The opposite side is about 5.35 m. Sine always converts a hypotenuse measurement into the leg facing the angle, no rearrangement needed.</p>
+
+  <h3>Example 9: Finding a Horizontal Distance From a Vertical Measurement</h3>
+  <p>A right triangle has an opposite leg of 3.2 m and the angle is 28 degrees. The adjacent leg is unknown. Tangent equals opposite over adjacent, so solving for the adjacent leg means dividing the known opposite leg by the tangent.</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[b = \\frac{3.2}{\\tan(28^\\circ)} \\approx \\frac{3.2}{0.5317} \\approx 6.02\\text{ m}]]]')} />
+  <p>The horizontal distance is about 6.02 m. Whenever the known side sits in the numerator of the ratio, division is how you isolate the unknown side.</p>
+
+  <h3>Example 10: Estimating a Building's Vertical Offset</h3>
+  <p>A simplified observation line of 80 ft tilts 25 degrees above the horizontal. The line is the hypotenuse and the vertical component is opposite the angle, calling for sine.</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[a = 80\\sin(25^\\circ) \\approx 80(0.4226) \\approx 33.81\\text{ ft}]]]')} />
+  <p>The vertical component is about 33.81 ft. A larger angle would push more of the 80 ft into the vertical part and less into the horizontal part. Treat this as a rough geometric estimate, not a substitute for a proper building survey.</p>
+
+  <h3>Example 11: Calculating a Sloping Walkway's Rise</h3>
+  <p>A walkway runs 6 m horizontally at an 8-degree incline. The run is adjacent to the angle and the rise is opposite, so tangent applies directly.</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[a = 6\\tan(8^\\circ) \\approx 6(0.1405) \\approx 0.84\\text{ m}]]]')} />
+  <p>The walkway rises about 0.84 m. The rise scales with both the run and the tangent of the angle, so doubling the run doubles the rise at a fixed angle. Check local codes separately for slope compliance.</p>
+
+  <h3>Example 12: Finding a Horizontal Offset From a Known Rise</h3>
+  <p>A structure has a vertical offset of 2 m, and its diagonal makes a 35-degree angle with the horizontal. The vertical leg is opposite the angle and the horizontal offset is adjacent, so the tangent must be divided out.</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[b = \\frac{2}{\\tan(35^\\circ)} \\approx \\frac{2}{0.7002} \\approx 2.86\\text{ m}]]]')} />
+  <p>The horizontal offset is about 2.86 m. Knowing the rise and the angle pins down the base completely, which is how setback distances get derived from height constraints.</p>
+
+  <div class="not-prose overflow-x-auto my-6">
+    <table class="w-full min-w-[620px] border-collapse text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30 text-left">
+          <th class="py-2 pr-4 font-semibold">Scenario</th>
+          <th class="py-2 pr-4 font-semibold">Known Side</th>
+          <th class="py-2 pr-4 font-semibold">Known Angle</th>
+          <th class="py-2 pr-4 font-semibold">Ratio</th>
+          <th class="py-2 font-semibold">Calculated Side</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Ladder height</td><td class="py-2 pr-4">c = 5 m</td><td class="py-2 pr-4">65°</td><td class="py-2 pr-4">Sine</td><td class="py-2">a ≈ 4.53 m</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Ramp rise</td><td class="py-2 pr-4">b = 12 m</td><td class="py-2 pr-4">5°</td><td class="py-2 pr-4">Tangent</td><td class="py-2">a ≈ 1.05 m</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Roof rise</td><td class="py-2 pr-4">b = 4.5 m</td><td class="py-2 pr-4">30°</td><td class="py-2 pr-4">Tangent</td><td class="py-2">a ≈ 2.60 m</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Cable reach</td><td class="py-2 pr-4">c = 20 m</td><td class="py-2 pr-4">55°</td><td class="py-2 pr-4">Sine / Cosine</td><td class="py-2">a ≈ 16.38 m, b ≈ 11.47 m</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Line of sight</td><td class="py-2 pr-4">c = 150 m</td><td class="py-2 pr-4">12°</td><td class="py-2 pr-4">Sine / Cosine</td><td class="py-2">a ≈ 31.19 m, b ≈ 146.72 m</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Tree height</td><td class="py-2 pr-4">b = 25 m</td><td class="py-2 pr-4">38°</td><td class="py-2 pr-4">Tangent</td><td class="py-2">a ≈ 19.53 m</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Brace offset</td><td class="py-2 pr-4">b = 600 mm</td><td class="py-2 pr-4">25°</td><td class="py-2 pr-4">Tangent</td><td class="py-2">a ≈ 279.78 mm</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Opposite from hypotenuse</td><td class="py-2 pr-4">c = 8 m</td><td class="py-2 pr-4">42°</td><td class="py-2 pr-4">Sine</td><td class="py-2">a ≈ 5.35 m</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Adjacent from opposite</td><td class="py-2 pr-4">a = 3.2 m</td><td class="py-2 pr-4">28°</td><td class="py-2 pr-4">Tangent</td><td class="py-2">b ≈ 6.02 m</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Building offset</td><td class="py-2 pr-4">c = 80 ft</td><td class="py-2 pr-4">25°</td><td class="py-2 pr-4">Sine</td><td class="py-2">a ≈ 33.81 ft</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Walkway rise</td><td class="py-2 pr-4">b = 6 m</td><td class="py-2 pr-4">8°</td><td class="py-2 pr-4">Tangent</td><td class="py-2">a ≈ 0.84 m</td></tr>
+        <tr class="border-b border-outline-variant/15 last:border-0"><td class="py-2 pr-4">Horizontal from rise</td><td class="py-2 pr-4">a = 2 m</td><td class="py-2 pr-4">35°</td><td class="py-2 pr-4">Tangent</td><td class="py-2">b ≈ 2.86 m</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('angle-applications.svg')} alt="Four panels: ladder height, ramp rise, roof rise, and tree height solved with trigonometry" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Trigonometry at work: ladder (4.53 m), ramp (1.05 m), roof (2.60 m), and tree (19.53 m) heights from one side and one angle.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 6: How Angles Change Side Lengths -->
+<section id="angle-effect" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How the Angle Affects the Missing Side</h2>
+  <p>Fix the hypotenuse and let the angle grow: the opposite side stretches while the adjacent side shrinks. The angle acts like a dial dividing the hypotenuse between the two legs. At 0 degrees the opposite side vanishes and the adjacent leg equals the whole hypotenuse; at 90 degrees the reverse happens. Tangent behaves more dramatically because it has no hypotenuse to anchor it: as the angle nears 90 degrees, the opposite leg towers over a shrinking adjacent leg and the tangent climbs without bound.</p>
+  <p>Two triangles can share the same acute angle yet differ completely in size. The angle fixes the shape, meaning all corresponding side ratios match, while the hypotenuse sets the scale. Such triangles are similar: a 5 m ladder at 65° and a 10 m ladder at 65° reach heights in exact 1:2 proportion. The table below shows this dial effect for a 10-unit hypotenuse.</p>
+  <div class="not-prose overflow-x-auto my-6">
+    <table class="w-full min-w-[440px] border-collapse text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30 text-left">
+          <th class="py-2 pr-4 font-semibold">Angle A</th>
+          <th class="py-2 pr-4 font-semibold">Opposite a = 10 × sin(A)</th>
+          <th class="py-2 pr-4 font-semibold">Adjacent b = 10 × cos(A)</th>
+          <th class="py-2 font-semibold">tan(A) = a / b</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">30°</td><td class="py-2 pr-4">≈ 5.00</td><td class="py-2 pr-4">≈ 8.66</td><td class="py-2">≈ 0.577</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">45°</td><td class="py-2 pr-4">≈ 7.07</td><td class="py-2 pr-4">≈ 7.07</td><td class="py-2">≈ 1.000</td></tr>
+        <tr class="border-b border-outline-variant/15 last:border-0"><td class="py-2 pr-4">60°</td><td class="py-2 pr-4">≈ 8.66</td><td class="py-2 pr-4">≈ 5.00</td><td class="py-2">≈ 1.732</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>At 45° the legs balance exactly and the tangent equals 1. Notice the symmetry: the 30° row mirrors the 60° row with legs swapped, because the side opposite 30° is adjacent to 60°.</p>
+</section>
+
+<!-- Section 7: Degrees and Calculator Settings -->
+<section id="angle-degrees" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Why the Correct Angle Setting Matters</h2>
+  <p>Angles can be measured in degrees or radians, and the two scales disagree completely on what a number means. A full circle is 360 degrees but only about 6.283 radians. This calculator expects degrees: entering 30 means 30°, and <span set:html={rich('[[\\sin(30^\\circ) = 0.5]]')} />. If the same 30 were read as radians, the sine would be about −0.988, a wildly different answer with no warning.</p>
+  <p>The trap works the other way too. Suppose your angle comes from a calculation that produced radians, say 0.5 rad (about 28.65°). Typing 0.5 into a degree-mode calculator computes sin(0.5°) ≈ 0.0087 instead of sin(0.5 rad) ≈ 0.479. Always confirm which unit your angle is in before entering it. Rounding the angle early also costs accuracy: at steep angles a tenth of a degree moves the tangent noticeably, so keep the full angle precision until the final step.</p>
+</section>
+
+<!-- Section 8: How to Use the Calculator -->
+<section id="angle-howto" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Step-by-Step Guide to Using the Calculator</h2>
+  <ol>
+    <li><strong>Confirm the right triangle.</strong> Find the 90-degree corner in your sketch or situation; without it, these formulas do not apply.</li>
+    <li><strong>Identify angle A.</strong> Choose the acute angle your measurements reference. The other acute angle is 90° minus this one.</li>
+    <li><strong>Label the sides.</strong> Mark the hypotenuse c, then label a as the leg opposite A and b as the leg adjacent to A.</li>
+    <li><strong>Note which side you know.</strong> Is it the hypotenuse or one of the legs? This single fact narrows the choice to two modes.</li>
+    <li><strong>Select the matching mode.</strong> Hypotenuse known and leg a missing: Leg a From Sine. Hypotenuse known and leg b missing: Leg b From Cosine. Leg b known and leg a missing: Leg a From Tangent. Leg a known and leg b missing: Leg b From Tangent.</li>
+    <li><strong>Enter the side length and its unit.</strong> Use the same unit family you will report the answer in.</li>
+    <li><strong>Enter angle A in degrees.</strong> Double-check it is acute, strictly between 0° and 90°.</li>
+    <li><strong>Calculate.</strong> The missing side appears with solution steps showing the substitution.</li>
+    <li><strong>Read the steps.</strong> Confirm the calculator used the ratio you intended and the numbers match your inputs.</li>
+    <li><strong>Sanity-check the result.</strong> A leg must be shorter than the hypotenuse. If you solved from the hypotenuse, both legs from sine and cosine should satisfy a² + b² = c².</li>
+  </ol>
+  <p>If the interface offers a reset control, use it to clear the fields before starting a fresh calculation so no stale value leaks into the next result.</p>
+</section>
+
+<!-- Section 9: Common Mistakes -->
+<section id="angle-mistakes" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Common Mistakes When Finding Triangle Sides From Angles</h2>
+  <p><strong>1. Confusing the opposite and adjacent sides.</strong> Labelling is relative to angle A, and swapping the two legs swaps sine with cosine. Fix: write "opp" and "adj" on your sketch before touching the calculator.</p>
+  <p><strong>2. Choosing sine when tangent is required.</strong> With a known leg and no hypotenuse in sight, sine has nothing to grip. If your known side is a leg, the answer involves tangent. Example: b = 8 m, A = 35° needs a = 8·tan(35°), not 8·sin(35°).</p>
+  <p><strong>3. Using the wrong tangent formula.</strong> Finding the opposite leg multiplies by tangent; finding the adjacent leg divides by it. Memorise the direction: a = b·tan(A) grows the base into the height, b = a/tan(A) shrinks the height back into the base.</p>
+  <p><strong>4. Entering the angle in the wrong unit.</strong> A radian value typed as degrees (or vice versa) silently produces garbage. Confirm degrees first; this calculator works in degrees.</p>
+  <p><strong>5. Treating the hypotenuse as an ordinary leg.</strong> The hypotenuse only pairs with sine and cosine, never with tangent. If your formula has tan and a hypotenuse, something is mislabelled.</p>
+  <p><strong>6. Using the wrong reference angle.</strong> The 65° in the ladder example is measured from the ground. Measuring from the wall instead would make it 25°, and every ratio would change. Always check which side the angle opens from.</p>
+  <p><strong>7. Mixing metres, feet, or other units.</strong> A hypotenuse in feet with an answer expected in metres needs conversion before or after, never skipped. Keep one unit through the whole calculation.</p>
+  <p><strong>8. Rounding intermediate values too early.</strong> Rounding tan(35°) to 0.7 before multiplying by 8 gives 5.6 by luck here, but coarser rounding elsewhere drifts the answer. Keep full precision until the final result.</p>
+  <p><strong>9. Assuming the side opposite an angle is always the longest.</strong> The opposite side is only longest when the angle exceeds 45°. At 30°, the opposite leg is the shortest side of the triangle.</p>
+  <p><strong>10. Using trigonometry on a non-right triangle.</strong> Without a 90° angle, sine, cosine, and tangent as defined here do not apply. Obtuse and acute triangles need the Laws of Sines and Cosines instead.</p>
+  <p><strong>11. Entering an angle outside the acute range.</strong> Angles of 0°, 90°, or more collapse the triangle or describe a different shape. The calculator needs an angle strictly between 0° and 90°.</p>
+  <p><strong>12. Mistrusting a small but correct output.</strong> A 5° ramp over 12 m genuinely rises only about 1.05 m. Small angles produce small opposite sides; that is the geometry, not an error.</p>
+</section>
+
+<!-- Section 10: Input Validation -->
+<section id="angle-validation" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Checking Whether Your Result Is Mathematically Valid</h2>
+  <p>Side lengths must be positive numbers; a zero or negative length describes no triangle at all. Any leg you calculate must come out shorter than the hypotenuse you entered. The reference angle must be acute, strictly between 0° and 90°, and every length in the problem must share one unit.</p>
+  <p>Tangent deserves extra respect near the edges of its range. As the angle approaches 90°, the tangent climbs steeply, so a tiny wobble in the angle swings the result dramatically. Near 0°, the tangent is tiny, and dividing by it (the b = a/tan(A) mode) magnifies any measurement noise in the same way. When your angle sits within a few degrees of either extreme, treat the inputs as approximate and the output as sensitive rather than exact.</p>
+</section>
+
+<!-- Section 11: Verifying Your Answer -->
+<section id="angle-verify" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Check Your Answer</h2>
+  <p><strong>Method 1: Substitute back into the ratio.</strong> Divide your answer by the known side and confirm the ratio matches the trigonometric value. If you found a = 5 from c = 10 at 30°, check that 5/10 = 0.5 = sin(30°).</p>
+  <p><strong>Method 2: Use the Pythagorean theorem.</strong> When you know two sides after the calculation, verify that a² + b² = c². This cross-checks trigonometry against pure geometry.</p>
+  <p><strong>Method 3: Check relative sizes.</strong> Every leg must be shorter than the hypotenuse. The leg opposite the larger acute angle must be the longer leg. At 30°, expect the opposite leg to be the shorter one.</p>
+  <p><strong>Worked verification:</strong> from c = 10 m and A = 30°, the calculator gives a = 5 m. Find the other leg: b = 10·cos(30°) ≈ 8.66 m. Now check Pythagoras with unrounded values:</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[5^2 + (10\\cos 30^\\circ)^2 = 25 + 75 = 100 = 10^2]]')} />
+  <p>The equality holds, the hypotenuse is longest, and 5 &lt; 8.66 matches the 30° geometry. Any tiny mismatch comes from rounding the 8.66, so verify with unrounded values when precision matters.</p>
+</section>
+
+<!-- Section 12: When to Use Another Calculator -->
+<section id="angle-other" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Choosing the Right Right Triangle Calculator</h2>
+  <p>This page fits problems with one known side and one known acute angle. Other situations call for different tools.</p>
+  <p><strong>Two sides known, no angle:</strong> the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">Right Triangle Side Calculator</a> applies the Pythagorean theorem directly.</p>
+  <p><strong>Missing angle, sides known:</strong> the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">Right Triangle Angle Calculator</a> uses inverse sine, cosine, or tangent.</p>
+  <p><strong>Area needed:</strong> the <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Right Triangle Area Calculator</a> computes it from legs or other inputs.</p>
+  <p><strong>30-60-90 or 45-45-90 triangles:</strong> the <a href="/special-right-triangle-calculator/" class="text-primary hover:underline">Special Right Triangle Calculator</a> exploits their exact ratios.</p>
+  <p><strong>Just the ratio values:</strong> the <a href="/right-triangle-trig-ratios-calculator/" class="text-primary hover:underline">Trigonometric Ratios Calculator</a> evaluates sin, cos, and tan without solving sides.</p>
+  <p><strong>Everything at once:</strong> the <a href="/right-triangle-calculator/" class="text-primary hover:underline">Right Triangle Calculator</a> solves the full triangle, angles, area, and derived properties from any two valid inputs.</p>
+</section>
+
+<!-- Section 13: Related Calculators -->
+<section id="angle-related" class="mx-auto mt-12 w-full max-w-4xl section-shell scroll-mt-24">
+  <h2 class="font-headline text-2xl font-bold text-on-surface">Other Right Triangle Calculators You May Find Useful</h2>
+  <p class="mt-2 max-w-2xl text-sm text-on-surface-variant">After finding your missing side, continue with these related calculators to complete your triangle analysis.</p>
+  <ul class="mt-5 grid gap-x-12 sm:grid-cols-2">
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">01</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-side-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">02</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Side Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-angle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">03</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Angle Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-trig-ratios-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">04</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Trigonometric Ratios Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-area-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">05</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Area Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/special-right-triangle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">06</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Special Right Triangle Calculator</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- Section 14: FAQs -->
+<section id="angle-faq" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <Faq
+    heading="Frequently Asked Questions"
+    items={[
+      {
+        question: "How do you find a missing side using an angle?",
+        answer: "Label the sides relative to the angle: opposite, adjacent, hypotenuse. Pick the ratio containing the known side and the missing side. With hypotenuse and angle, use a = c·sin(A) or b = c·cos(A). With one leg and angle, use a = b·tan(A) or b = a/tan(A). Substitute and calculate."
+      },
+      {
+        question: "Which formula should I use for the opposite side?",
+        answer: "It depends on what you know. With the hypotenuse, use a = c·sin(A). With the adjacent leg, use a = b·tan(A). Both give the side across from angle A; the known side decides which form applies."
+      },
+      {
+        question: "How do you find the adjacent side using an angle?",
+        answer: "With the hypotenuse known, use b = c·cos(A). With the opposite leg known, use b = a/tan(A). The adjacent leg always runs alongside angle A, so confirm your labelling before choosing."
+      },
+      {
+        question: "What is the difference between sine, cosine, and tangent?",
+        answer: "Sine relates opposite to hypotenuse, cosine relates adjacent to hypotenuse, and tangent relates opposite to adjacent. Sine and cosine split a sloping length into parts; tangent converts directly between the two legs. All three describe the same angle from different sides."
+      },
+      {
+        question: "What does SOH-CAH-TOA mean?",
+        answer: "A memory aid: Sine = Opposite/Hypotenuse, Cosine = Adjacent/Hypotenuse, Tangent = Opposite/Adjacent. It reminds you which fraction matches each ratio after you have labelled the sides. It does not replace the labelling step."
+      },
+      {
+        question: "Can I find a side if I know the hypotenuse and one angle?",
+        answer: "Yes, this is the simplest case. Multiply the hypotenuse by sin(A) for the opposite leg or by cos(A) for the adjacent leg. One angle plus the hypotenuse determines the entire triangle."
+      },
+      {
+        question: "Can I find a side if I know one leg and one angle?",
+        answer: "Yes, with tangent. If the known leg is adjacent, multiply by tan(A) to get the opposite leg. If the known leg is opposite, divide by tan(A) to get the adjacent leg. No hypotenuse is needed."
+      },
+      {
+        question: "Should I enter angles in degrees or radians?",
+        answer: "Enter degrees. This calculator interprets angle inputs as degrees, so 30 means 30°. A radian value entered as degrees gives a wrong result with no warning. Convert radians to degrees first by multiplying by 180/π."
+      },
+      {
+        question: "Why does the tangent formula use division in one mode?",
+        answer: "Because tangent equals opposite divided by adjacent. Solving tan(A) = a/b for the opposite leg gives multiplication, a = b·tan(A). Solving the same equation for the adjacent leg gives division, b = a/tan(A). One relationship, read two ways."
+      },
+      {
+        question: "Can two different triangles have the same angle?",
+        answer: "Yes. The angle fixes the shape but not the size, so a small and a large triangle can share every angle. Their side ratios match exactly; only the scale differs. These are similar triangles."
+      },
+      {
+        question: "How do I verify the calculated side?",
+        answer: "Substitute back into the ratio, for example check that a/c equals sin(A). Or use Pythagoras: with two sides known, confirm a² + b² = c². Also check that each leg is shorter than the hypotenuse and sized plausibly for the angle."
+      },
+      {
+        question: "Why can tangent-based results become sensitive near 90 degrees?",
+        answer: "Tangent grows without bound as the angle approaches 90°, so a tiny change in the angle produces a large change in the result. Near 0° the reverse problem appears when dividing by a tiny tangent. Keep extra precision in the angle for inputs near either extreme."
+      }
+    ]}
+  />
+</section>
+
+<!-- Section 15: Conclusion -->
+<section id="angle-conclusion" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Find the Missing Side With the Right Formula</h2>
+  <p>Start by labelling: opposite, adjacent, and hypotenuse relative to your angle. Let the known side choose the ratio: hypotenuse in hand means sine or cosine, a leg in hand means tangent. Enter the angle in degrees, keep full precision until the end, and verify with Pythagoras or a quick size check. Try the calculator above with your own numbers.</p>
+</section>

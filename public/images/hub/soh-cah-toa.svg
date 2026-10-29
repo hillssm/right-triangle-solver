@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>SOH-CAH-TOA visual guide</title>
+<desc>Three panels showing sine as opposite over hypotenuse, cosine as adjacent over hypotenuse, and tangent as opposite over adjacent.</desc>
+
+<text x="200" y="90" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">SINE</text>
+<text x="200" y="125" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f1c97d" text-anchor="middle">SOH</text>
+<polygon points="70,420 310,420 310,230" fill="rgba(241,201,125,0.07)"/>
+<line x1="70" y1="420" x2="310" y2="420" stroke="#4a3d1e" stroke-width="3" stroke-linecap="round"/>
+<line x1="310" y1="420" x2="310" y2="230" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+<line x1="70" y1="420" x2="310" y2="230" stroke="#f472b6" stroke-width="5" stroke-linecap="round"/>
+<polyline points="310,404 294,404 294,420" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<circle cx="70" cy="420" r="5" fill="#f1c97d"/>
+<circle cx="310" cy="420" r="5" fill="#f1c97d"/>
+<circle cx="310" cy="230" r="5" fill="#f1c97d"/>
+<path d="M 104.0 420.0 Q 104.0 407.6 96.0 398.1" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.7"/>
+<text x="128" y="402" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="190.0" y="450" font-family="Noto Serif, Georgia, serif" font-size="24" fill="#d0c5af" text-anchor="middle" font-style="italic">b</text>
+<text x="336" y="325.0" font-family="Noto Serif, Georgia, serif" font-size="24" fill="#38bdf8" text-anchor="middle" font-style="italic">a</text>
+<text x="152.0" y="325.0" font-family="Noto Serif, Georgia, serif" font-size="24" fill="#f472b6" text-anchor="middle" font-style="italic">c</text>
+<text x="200" y="500" font-family="Noto Serif, Georgia, serif" font-size="30" fill="#ffffff" text-anchor="middle" font-style="italic">sin(A) = a / c</text>
+<text x="600" y="90" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">COSINE</text>
+<text x="600" y="125" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f1c97d" text-anchor="middle">CAH</text>
+<polygon points="470,420 710,420 710,230" fill="rgba(241,201,125,0.07)"/>
+<line x1="470" y1="420" x2="710" y2="420" stroke="#fbbf24" stroke-width="5" stroke-linecap="round"/>
+<line x1="710" y1="420" x2="710" y2="230" stroke="#1e3a5f" stroke-width="3" stroke-linecap="round"/>
+<line x1="470" y1="420" x2="710" y2="230" stroke="#f472b6" stroke-width="5" stroke-linecap="round"/>
+<polyline points="710,404 694,404 694,420" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<circle cx="470" cy="420" r="5" fill="#f1c97d"/>
+<circle cx="710" cy="420" r="5" fill="#f1c97d"/>
+<circle cx="710" cy="230" r="5" fill="#f1c97d"/>
+<path d="M 504.0 420.0 Q 504.0 407.6 496.0 398.1" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.7"/>
+<text x="528" y="402" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="590.0" y="450" font-family="Noto Serif, Georgia, serif" font-size="24" fill="#fbbf24" text-anchor="middle" font-style="italic">b</text>
+<text x="736" y="325.0" font-family="Noto Serif, Georgia, serif" font-size="24" fill="#d0c5af" text-anchor="middle" font-style="italic">a</text>
+<text x="552.0" y="325.0" font-family="Noto Serif, Georgia, serif" font-size="24" fill="#f472b6" text-anchor="middle" font-style="italic">c</text>
+<text x="600" y="500" font-family="Noto Serif, Georgia, serif" font-size="30" fill="#ffffff" text-anchor="middle" font-style="italic">cos(A) = b / c</text>
+<text x="1000" y="90" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">TANGENT</text>
+<text x="1000" y="125" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f1c97d" text-anchor="middle">TOA</text>
+<polygon points="870,420 1110,420 1110,230" fill="rgba(241,201,125,0.07)"/>
+<line x1="870" y1="420" x2="1110" y2="420" stroke="#fbbf24" stroke-width="5" stroke-linecap="round"/>
+<line x1="1110" y1="420" x2="1110" y2="230" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+<line x1="870" y1="420" x2="1110" y2="230" stroke="#4a2a3a" stroke-width="3" stroke-linecap="round"/>
+<polyline points="1110,404 1094,404 1094,420" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<circle cx="870" cy="420" r="5" fill="#f1c97d"/>
+<circle cx="1110" cy="420" r="5" fill="#f1c97d"/>
+<circle cx="1110" cy="230" r="5" fill="#f1c97d"/>
+<path d="M 904.0 420.0 Q 904.0 407.6 896.0 398.1" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.7"/>
+<text x="928" y="402" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="990.0" y="450" font-family="Noto Serif, Georgia, serif" font-size="24" fill="#fbbf24" text-anchor="middle" font-style="italic">b</text>
+<text x="1136" y="325.0" font-family="Noto Serif, Georgia, serif" font-size="24" fill="#38bdf8" text-anchor="middle" font-style="italic">a</text>
+<text x="952.0" y="325.0" font-family="Noto Serif, Georgia, serif" font-size="24" fill="#d0c5af" text-anchor="middle" font-style="italic">c</text>
+<text x="1000" y="500" font-family="Noto Serif, Georgia, serif" font-size="30" fill="#ffffff" text-anchor="middle" font-style="italic">tan(A) = a / b</text>
+</svg>

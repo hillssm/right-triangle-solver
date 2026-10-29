@@ -19,6 +19,7 @@
  * English source opens with [[[ but closes with only ]] (unbalanced). All 6 languages
  * reproduce it exactly as in the source. If the renderer expects balanced [[[...]]]
  * markers, fix the source .astro and this file together.
+ */
 
 export const SIDE_FROM_ANGLE_TRANSLATIONS_BATCH3 = {
   "id": {

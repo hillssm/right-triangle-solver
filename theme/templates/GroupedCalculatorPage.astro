@@ -17,6 +17,8 @@ import HubGuide from 'theme/components/HubGuide.astro';
 import SideGuide from 'theme/components/SideGuide.astro';
 import SideGuideLocalized from 'theme/components/SideGuideLocalized.astro';
 import SideFromAngleGuide from 'theme/components/SideFromAngleGuide.astro';
+import SideFromAngleGuideLocalized from 'theme/components/SideFromAngleGuideLocalized.astro';
+import { SIDE_FROM_ANGLE_TRANSLATIONS } from 'src/data/sideFromAngleTranslations';
 import { SIDE_GUIDE_TRANSLATIONS } from 'src/data/sideGuideTranslations';
 import { toAbsoluteUrl } from 'theme/utils/site';
 import { replaceGenericSeoHeading, seoSectionHeading } from 'theme/utils/seoHeadings';
@@ -47,7 +49,7 @@ const isHubPage = slug === RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.slug;
 const isSidePage = slug === 'right-triangle-side-calculator';
 const isSideFromAnglePage = slug === 'right-triangle-side-from-angle-calculator';
 const hideOldSideContent = isSidePage;
-const hideOldSideFromAngleContent = isSideFromAnglePage && locale === 'en';
+const hideOldSideFromAngleContent = isSideFromAnglePage;
 
 if (!groupedPage && !isHubPage) {
   throw new Error(`Unknown grouped calculator slug: ${slug}`);
@@ -1120,4 +1122,5 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
   {isSidePage && locale === 'en' ? <SideGuide /> : null}
   {isSidePage && locale !== 'en' && SIDE_GUIDE_TRANSLATIONS[locale] ? <SideGuideLocalized guide={SIDE_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
   {isSideFromAnglePage && locale === 'en' ? <SideFromAngleGuide /> : null}
+  {isSideFromAnglePage && locale !== 'en' && SIDE_FROM_ANGLE_TRANSLATIONS[locale] ? <SideFromAngleGuideLocalized guide={SIDE_FROM_ANGLE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>

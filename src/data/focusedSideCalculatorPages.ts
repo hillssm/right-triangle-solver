@@ -929,41 +929,296 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       ]
     },
     extraSections: [
-      {
-        h2: 'What the Result Means',
-        paragraphs: [
-          'The output labeled Opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a is the length of the side that sits directly across from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. In practical terms, this is often the vertical height or rise in a slope problem.',
-          'The result will always be a positive number smaller than the hypotenuse. If a equals c, the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> would be 90 degrees, which means the triangle has collapsed into a straight line. If a is very small, the angle is close to zero.'
-        ]
-      },
-      {
-        h2: 'When to Use This Calculator',
-        paragraphs: [
-          'Use this tool whenever you have the hypotenuse and an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and need the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. This comes up more often than you might expect.',
-          'It is the right choice when the sloped distance is known (like a rope, ramp, or ladder length) and you need the vertical component.'
-        ],
-        listTitle: 'Common situations:',
-        listItems: [
-          'Finding the height a ladder reaches on a wall when you know the ladder length and lean <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
-          'Calculating the vertical rise of a ramp from the ramp length and incline <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
-          'Determining the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> of a kite or drone from the string length and elevation <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
-          'Solving physics problems where a force vector is broken into a vertical component.'
-        ]
-      },
-      {
-        h2: 'Common Mistakes',
-        paragraphs: [
-          'Most errors happen when the wrong <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is identified as the hypotenuse or when the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is entered in the wrong unit. A few minutes of checking your triangle setup can save a wrong answer.'
-        ],
-        listTitle: 'Watch out for:',
-        listItems: [
-          'Using the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> instead of the hypotenuse as your known side.',
-          'Using cosine instead of sine. Cosine finds the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, not the opposite.',
-          'Entering <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A in radians when the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> expects degrees.',
-          'Forgetting that c is always the hypotenuse, not <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a or side b.',
-          'Expecting a result larger than c. The opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is always shorter than the hypotenuse.'
-        ]
-      }
+    {
+      h2: 'How to Find the Opposite Side Using Sine',
+      paragraphs: [
+        'A 5 m ladder leans against a wall at a 65-degree <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> to the ground. You know the ladder length and the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>, but how high does it reach? That vertical height is the opposite leg of a right triangle, and sine finds it directly. A sine <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> takes the hypotenuse and one acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> as inputs and returns the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, with no manual trigonometry tables required.',
+        'This guide explains the sine formula from first principles: what the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> means, why sine uses the hypotenuse, how to identify the correct sides in any diagram orientation, and how to apply the result to real measurements. The formula is a = c × sin(A), where a is the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> across from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A, c is the hypotenuse, and A is measured in degrees. Unlike a Pythagorean <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> that needs two sides, this tool works when you know one <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> and one <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.'
+      ],
+    },
+    {
+      h2: 'Understanding the Opposite Side and Hypotenuse',
+      paragraphs: [],
+      customHtml: `<h3>What Is a Right Triangle?</h3>
+<p>A right triangle contains one angle measuring exactly 90 degrees. The other two angles are acute (each less than 90 degrees) and complementary, meaning they sum to 90 degrees. If angle A is 36.87 degrees, the other acute angle B must be 53.13 degrees. Sine calculations require this right-angle structure because the ratio definitions depend on the perpendicular relationship between the legs.</p>
+<h3>What Is the Hypotenuse?</h3>
+<p>The hypotenuse sits opposite the right angle and is always the longest side. It is labeled c by convention. To find it in a rotated diagram, look for the side that does not touch the right-angle marker. In this calculator, you enter the hypotenuse as a known value.</p>
+<h3>What Is the Opposite Side?</h3>
+<p>The opposite side is the leg directly across from the reference angle A. For angle A, side a is opposite and side b is adjacent. If you switch your reference to angle B, the labels swap: side b becomes opposite and side a becomes adjacent. The hypotenuse never changes; it is always c, opposite the 90-degree angle.</p>
+<figure class="my-6">
+<img src="/images/sine/sine-anatomy.svg" alt="Right triangle with angle A at bottom-left, opposite leg a, adjacent leg b, and hypotenuse c labeled" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+<figcaption class="mt-2 text-center text-sm text-on-surface-variant">Anatomy for sine: angle A at the bottom-left, opposite leg a vertical, adjacent leg b along the base, hypotenuse c across from the right angle.</figcaption>
+</figure>`,
+    },
+    {
+      h2: 'What Is Sine in a Right Triangle?',
+      paragraphs: [],
+      customHtml: `<p>Sine expresses a simple ratio: for a given acute angle, the opposite leg divided by the hypotenuse always gives the same number. That number is sin(A). If angle A is 30 degrees, sin(30°) = 0.5, which means the opposite side is exactly half the hypotenuse, no matter how large or small the triangle is.</p>
+<p>The ratio has no units because the units cancel: meters divided by meters leaves a pure number. To find the opposite side, rearrange the ratio. Start with sin(A) = a / c. Multiply both sides by c. The c in the denominator cancels, leaving <strong>a = c × sin(A)</strong>. The formula multiplies the known hypotenuse by the sine of the known angle.</p>
+<p>For any valid acute angle (between 0 and 90 degrees), sin(A) is between 0 and 1. This guarantees the opposite leg is shorter than the hypotenuse, which matches the geometry: no leg can exceed the hypotenuse.</p>
+<h3>Understanding SOH-CAH-TOA</h3>
+<p>SOH-CAH-TOA is a memory aid for the three basic ratios. SOH: Sine = Opposite / Hypotenuse. CAH: Cosine = Adjacent / Hypotenuse. TOA: Tangent = Opposite / Adjacent. For this page, focus on SOH. The mnemonic helps you pick the right ratio, but you still need to correctly identify which side is opposite your reference angle.</p>
+<figure class="my-6">
+<img src="/images/sine/sine-ratio.svg" alt="Right triangle highlighting opposite leg a and hypotenuse c with sin(A) equals a divided by c" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+<figcaption class="mt-2 text-center text-sm text-on-surface-variant">The sine ratio: divide the highlighted opposite leg a by the highlighted hypotenuse c to get sin(A).</figcaption>
+</figure>`,
+    },
+    {
+      h2: 'How to Use the Right Triangle Side From Sine Calculator',
+      paragraphs: [
+        'Follow these steps to get an accurate result.'
+      ],
+      listTitle: 'Steps:',
+      listItems: [
+        'Identify the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> in your triangle. Confirm one corner measures 90 degrees.',
+        'Identify the known acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. Make sure it is not the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
+        'Locate the hypotenuse c. It is the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>, always the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>.',
+        'Identify the opposite leg a. It sits directly across from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A.',
+        'Enter the hypotenuse length c into the first input field.',
+        'Enter <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A in degrees into the second field.',
+        'Select the measurement unit that matches your hypotenuse input.',
+        'Press Calculate. The result shows the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a with solution steps.',
+        'Review the steps to confirm the formula and substitution match your problem.',
+        'Check that a is shorter than c. If not, recheck which side you entered as the hypotenuse.'
+      ],
+    },
+    {
+      h2: 'How to Calculate the Opposite Side Using Sine',
+      paragraphs: [],
+      customHtml: `<article class="mb-8">
+<h3>Example 1: A Basic 3-4-5 Right Triangle</h3>
+<p><strong>Given:</strong> c = 5 cm, A = 36.87°. <strong>Find:</strong> a.</p>
+<p><strong>Formula:</strong> a = c × sin(A)</p>
+<p><strong>Substitution:</strong> a = 5 × sin(36.87°)</p>
+<p><strong>Calculation:</strong> sin(36.87°) ≈ 0.6, so a ≈ 5 × 0.6 = 3</p>
+<p><strong>Answer:</strong> <strong>a = 3 cm</strong></p>
+<p>The 3-4-5 triangle is the most familiar right triangle. Here the opposite side comes out to exactly 3 cm because sin(36.87°) is 0.6 to the precision shown.</p>
+</article>
+<article class="mb-8">
+<h3>Example 2: A Special 30-Degree Angle</h3>
+<p><strong>Given:</strong> c = 10 m, A = 30°. <strong>Find:</strong> a.</p>
+<p><strong>Formula:</strong> a = c × sin(A)</p>
+<p><strong>Substitution:</strong> a = 10 × sin(30°)</p>
+<p><strong>Calculation:</strong> sin(30°) = 0.5 exactly, so a = 10 × 0.5 = 5</p>
+<p><strong>Answer:</strong> <strong>a = 5 m</strong></p>
+<p>At 30 degrees the opposite side is exactly half the hypotenuse. Special angles like 30°, 45°, and 60° give clean sine values worth remembering.</p>
+</article>
+<article class="mb-8">
+<h3>Example 3: A Decimal Measurement</h3>
+<p><strong>Given:</strong> c = 12 ft, A = 60°. <strong>Find:</strong> a.</p>
+<p><strong>Formula:</strong> a = c × sin(A)</p>
+<p><strong>Substitution:</strong> a = 12 × sin(60°)</p>
+<p><strong>Calculation:</strong> sin(60°) ≈ 0.8660254, so a ≈ 12 × 0.8660254 ≈ 10.3923</p>
+<p><strong>Answer:</strong> <strong>a ≈ 10.39 ft</strong></p>
+<p>Keep full precision in the sine value during calculation and round only the final answer. Rounding sin(60°) to 0.87 early would give 10.44 ft, a small but avoidable error.</p>
+</article>
+<article class="mb-8">
+<h3>Example 4: A Steep Angle</h3>
+<p><strong>Given:</strong> c = 7.5 m, A = 42°. <strong>Find:</strong> a.</p>
+<p><strong>Formula:</strong> a = c × sin(A)</p>
+<p><strong>Substitution:</strong> a = 7.5 × sin(42°)</p>
+<p><strong>Calculation:</strong> sin(42°) ≈ 0.6691306, so a ≈ 7.5 × 0.6691306 ≈ 5.0185</p>
+<p><strong>Answer:</strong> <strong>a ≈ 5.02 m</strong></p>
+<p>As the angle grows toward 90 degrees, the opposite side approaches the full hypotenuse length. At 42° it is already about 67% of the hypotenuse.</p>
+</article>
+<figure class="my-6">
+<img src="/images/sine/sine-steps.svg" alt="Step-by-step sine calculation: 10 m hypotenuse, 30 degree angle, opposite side equals 5 m" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+<figcaption class="mt-2 text-center text-sm text-on-surface-variant">Worked solution: a = 10 × sin(30°) = 5 m, with each substitution step shown.</figcaption>
+</figure>`,
+    },
+    {
+      h2: 'Real-Life Examples of Sine Calculations',
+      paragraphs: [
+        'These examples show how the sine formula solves practical measurement problems. In each case, the known sloped or diagonal length is the hypotenuse, and the desired vertical distance is the opposite leg.'
+      ],
+      customHtml: `<article class="mb-8">
+<h3>Example 5: Finding the Height a Ladder Reaches</h3>
+<p><strong>Given:</strong> A 5 m ladder leans at 65° to the ground. <strong>Find:</strong> the height it reaches (a).</p>
+<p><strong>Formula:</strong> a = c × sin(A)</p>
+<p><strong>Substitution:</strong> a = 5 × sin(65°)</p>
+<p><strong>Calculation:</strong> sin(65°) ≈ 0.9063078, so a ≈ 5 × 0.9063078 ≈ 4.5315</p>
+<p><strong>Answer:</strong> <strong>a ≈ 4.53 m</strong></p>
+<p>The ladder is the hypotenuse and the wall height is opposite the ground angle. Note that this height alone does not tell you whether the ladder is safely positioned.</p>
+</article>
+<article class="mb-8">
+<h3>Example 6: A Shallow Ramp Rise</h3>
+<p><strong>Given:</strong> A ramp is 8 m long with a 6° incline. <strong>Find:</strong> the vertical rise (a).</p>
+<p><strong>Formula:</strong> a = c × sin(A)</p>
+<p><strong>Substitution:</strong> a = 8 × sin(6°)</p>
+<p><strong>Calculation:</strong> sin(6°) ≈ 0.1045285, so a ≈ 8 × 0.1045285 ≈ 0.8362</p>
+<p><strong>Answer:</strong> <strong>a ≈ 0.84 m</strong></p>
+<p>Small angles give small rises. At 6 degrees the ramp climbs less than a meter over its 8 m length.</p>
+</article>
+<article class="mb-8">
+<h3>Example 7: A Short Rope at 30 Degrees</h3>
+<p><strong>Given:</strong> A 4.5 m rope hangs at 30° from horizontal. <strong>Find:</strong> the vertical drop (a).</p>
+<p><strong>Formula:</strong> a = c × sin(A)</p>
+<p><strong>Substitution:</strong> a = 4.5 × sin(30°)</p>
+<p><strong>Calculation:</strong> sin(30°) = 0.5, so a = 4.5 × 0.5 = 2.25</p>
+<p><strong>Answer:</strong> <strong>a = 2.25 m</strong></p>
+<p>The 30-degree special angle makes this exact: the vertical component is precisely half the rope length.</p>
+</article>
+<article class="mb-8">
+<h3>Example 8: A Cable Spanning 20 Meters</h3>
+<p><strong>Given:</strong> A cable 20 m long sags at 55°. <strong>Find:</strong> the vertical component (a).</p>
+<p><strong>Formula:</strong> a = c × sin(A)</p>
+<p><strong>Substitution:</strong> a = 20 × sin(55°)</p>
+<p><strong>Calculation:</strong> sin(55°) ≈ 0.8191520, so a ≈ 20 × 0.8191520 ≈ 16.3830</p>
+<p><strong>Answer:</strong> <strong>a ≈ 16.38 m</strong></p>
+<p>Steeper angles push the opposite side closer to the hypotenuse. At 55° the vertical component is about 82% of the cable length.</p>
+</article>
+<article class="mb-8">
+<h3>Example 9: A Long Ramp at a Gentle Slope</h3>
+<p><strong>Given:</strong> A 150 m ramp rises at 12°. <strong>Find:</strong> the total rise (a).</p>
+<p><strong>Formula:</strong> a = c × sin(A)</p>
+<p><strong>Substitution:</strong> a = 150 × sin(12°)</p>
+<p><strong>Calculation:</strong> sin(12°) ≈ 0.2079117, so a ≈ 150 × 0.2079117 ≈ 31.1868</p>
+<p><strong>Answer:</strong> <strong>a ≈ 31.19 m</strong></p>
+<p>Even a gentle 12-degree slope produces a 31 m rise over 150 m of ramp. Long ramps accumulate height quickly.</p>
+</article>
+<article class="mb-8">
+<h3>Example 10: A Surveying Sight Line</h3>
+<p><strong>Given:</strong> A sight line of 40 m is angled 50° above horizontal. <strong>Find:</strong> the elevation difference (a).</p>
+<p><strong>Formula:</strong> a = c × sin(A)</p>
+<p><strong>Substitution:</strong> a = 40 × sin(50°)</p>
+<p><strong>Calculation:</strong> sin(50°) ≈ 0.7660444, so a ≈ 40 × 0.7660444 ≈ 30.6418</p>
+<p><strong>Answer:</strong> <strong>a ≈ 30.64 m</strong></p>
+<p>Surveyors use this to convert a measured slope distance and angle into a vertical elevation change.</p>
+</article>
+<article class="mb-8">
+<h3>Example 11: A Mechanical Link in Millimeters</h3>
+<p><strong>Given:</strong> A link 850 mm long sits at 25°. <strong>Find:</strong> its vertical projection (a).</p>
+<p><strong>Formula:</strong> a = c × sin(A)</p>
+<p><strong>Substitution:</strong> a = 850 × sin(25°)</p>
+<p><strong>Calculation:</strong> sin(25°) ≈ 0.4226183, so a ≈ 850 × 0.4226183 ≈ 359.2255</p>
+<p><strong>Answer:</strong> <strong>a ≈ 359.23 mm</strong></p>
+<p>The formula works identically in millimeters. Keep the extra decimal during calculation: 359.2255 rounds to 359.23, not 359.30.</p>
+</article>
+<article class="mb-8">
+<h3>Example 12: A Roof Rafter Rise</h3>
+<p><strong>Given:</strong> A rafter 18 m long is pitched at 35°. <strong>Find:</strong> the vertical rise (a).</p>
+<p><strong>Formula:</strong> a = c × sin(A)</p>
+<p><strong>Substitution:</strong> a = 18 × sin(35°)</p>
+<p><strong>Calculation:</strong> sin(35°) ≈ 0.5735764, so a ≈ 18 × 0.5735764 ≈ 10.3244</p>
+<p><strong>Answer:</strong> <strong>a ≈ 10.32 m</strong></p>
+<p>Roofers measure the rafter (hypotenuse) and pitch angle, then use sine to find how tall the roof peak sits above the wall plate.</p>
+</article>
+<article class="mb-8">
+<h3>Example 13: A Long Zipline Drop</h3>
+<p><strong>Given:</strong> A 250 m zipline descends at 18°. <strong>Find:</strong> the total drop (a).</p>
+<p><strong>Formula:</strong> a = c × sin(A)</p>
+<p><strong>Substitution:</strong> a = 250 × sin(18°)</p>
+<p><strong>Calculation:</strong> sin(18°) ≈ 0.3090170, so a ≈ 250 × 0.3090170 ≈ 77.2542</p>
+<p><strong>Answer:</strong> <strong>a ≈ 77.25 m</strong></p>
+<p>The zipline cable is the hypotenuse; the drop is the opposite leg. This is a simplified straight-line model of the ride.</p>
+</article>
+<article class="mb-8">
+<h3>Example 14: A Short Board at a Shallow Angle</h3>
+<p><strong>Given:</strong> A 6 m board tilts at 8°. <strong>Find:</strong> the raised end height (a).</p>
+<p><strong>Formula:</strong> a = c × sin(A)</p>
+<p><strong>Substitution:</strong> a = 6 × sin(8°)</p>
+<p><strong>Calculation:</strong> sin(8°) ≈ 0.1391731, so a ≈ 6 × 0.1391731 ≈ 0.8350</p>
+<p><strong>Answer:</strong> <strong>a ≈ 0.84 m</strong></p>
+<p>At 8 degrees the raised end sits under a meter high. Shallow angles are useful when you need a gentle lift.</p>
+</article>
+<article class="mb-8">
+<h3>Example 15: A Force Broken Into Components</h3>
+<p><strong>Given:</strong> A 100 N force pulls at 30° above horizontal. <strong>Find:</strong> the vertical component (a).</p>
+<p><strong>Formula:</strong> a = c × sin(A)</p>
+<p><strong>Substitution:</strong> a = 100 × sin(30°)</p>
+<p><strong>Calculation:</strong> sin(30°) = 0.5, so a = 100 × 0.5 = 50</p>
+<p><strong>Answer:</strong> <strong>a = 50 N</strong></p>
+<p>In physics, the force vector is the hypotenuse and its vertical component is the opposite leg. The same sine formula applies to forces, velocities, and any other vector quantity.</p>
+</article>
+<article class="mb-8">
+<h3>Example 16: A Short Awning Support</h3>
+<p><strong>Given:</strong> A 3.2 ft support arm angles at 48°. <strong>Find:</strong> the vertical reach (a).</p>
+<p><strong>Formula:</strong> a = c × sin(A)</p>
+<p><strong>Substitution:</strong> a = 3.2 × sin(48°)</p>
+<p><strong>Calculation:</strong> sin(48°) ≈ 0.7431448, so a ≈ 3.2 × 0.7431448 ≈ 2.3781</p>
+<p><strong>Answer:</strong> <strong>a ≈ 2.38 ft</strong></p>
+<p>Small-scale projects use the same math. The support arm is the hypotenuse; the vertical reach is what the sine formula returns.</p>
+</article>
+<figure class="my-6">
+<img src="/images/sine/sine-applications.svg" alt="Two practical sine examples: ladder height 4.53 m and ramp rise 31.19 m" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+<figcaption class="mt-2 text-center text-sm text-on-surface-variant">Practical sine use: a 5 m ladder at 65° reaches about 4.53 m high; a 150 m ramp at 12° rises about 31.19 m.</figcaption>
+</figure>`,
+    },
+    {
+      h2: 'Sine vs Cosine vs Tangent: Which to Use',
+      paragraphs: [],
+      customHtml: `<p>Three ratios can find a side from an angle and hypotenuse, but each finds a different side. Picking the wrong one is the most common error on these pages.</p>
+<table class="w-full my-6 border-collapse">
+<thead><tr><th class="border px-4 py-2 text-left">Known</th><th class="border px-4 py-2 text-left">Want</th><th class="border px-4 py-2 text-left">Use</th><th class="border px-4 py-2 text-left">Formula</th></tr></thead>
+<tbody>
+<tr><td class="border px-4 py-2">c, A</td><td class="border px-4 py-2">opposite side a</td><td class="border px-4 py-2">sine</td><td class="border px-4 py-2">a = c × sin(A)</td></tr>
+<tr><td class="border px-4 py-2">c, A</td><td class="border px-4 py-2">adjacent side b</td><td class="border px-4 py-2">cosine</td><td class="border px-4 py-2">b = c × cos(A)</td></tr>
+<tr><td class="border px-4 py-2">b, A</td><td class="border px-4 py-2">opposite side a</td><td class="border px-4 py-2">tangent</td><td class="border px-4 py-2">a = b × tan(A)</td></tr>
+</tbody></table>
+<p>Use sine when the hypotenuse is known and you need the side across from the angle. Use cosine when you need the side next to the angle. Use tangent when the hypotenuse is unknown but the adjacent leg is known. If you have the angle and need the hypotenuse instead, rearrange: c = a / sin(A).</p>`,
+    },
+    {
+      h2: 'How the Angle Changes the Opposite Side',
+      paragraphs: [],
+      customHtml: `<p>For a fixed hypotenuse, a larger angle produces a larger opposite side. The relationship is not linear: sine grows quickly at first, then flattens as the angle approaches 90 degrees.</p>
+<table class="w-full my-6 border-collapse">
+<thead><tr><th class="border px-4 py-2 text-left">Angle A (c = 10 m)</th><th class="border px-4 py-2 text-left">sin(A)</th><th class="border px-4 py-2 text-left">Opposite side a</th></tr></thead>
+<tbody>
+<tr><td class="border px-4 py-2">10°</td><td class="border px-4 py-2">0.1736</td><td class="border px-4 py-2">1.74 m</td></tr>
+<tr><td class="border px-4 py-2">30°</td><td class="border px-4 py-2">0.5000</td><td class="border px-4 py-2">5.00 m</td></tr>
+<tr><td class="border px-4 py-2">45°</td><td class="border px-4 py-2">0.7071</td><td class="border px-4 py-2">7.07 m</td></tr>
+<tr><td class="border px-4 py-2">60°</td><td class="border px-4 py-2">0.8660</td><td class="border px-4 py-2">8.66 m</td></tr>
+<tr><td class="border px-4 py-2">80°</td><td class="border px-4 py-2">0.9848</td><td class="border px-4 py-2">9.85 m</td></tr>
+</tbody></table>
+<p>Doubling the angle does not double the side. Going from 30° to 60° increases the opposite side from 5.00 m to 8.66 m, a factor of about 1.73, not 2. This is why you cannot estimate sine results by simple proportion; always compute sin(A) directly.</p>`,
+    },
+    {
+      h2: 'Degrees, Units, and Rounding',
+      paragraphs: [
+        'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> expects <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A in degrees. If your <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is in radians, convert first: degrees = radians × (180 / π). A 0.5-radian <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is about 28.65 degrees.',
+        'The hypotenuse and the result share the same unit. Enter c in meters and a comes out in meters; enter c in feet and a comes out in feet. Never mix units: a hypotenuse in meters with an expectation of inches requires a conversion before or after the calculation.',
+        'Keep full precision through the sine multiplication and round only the final answer. For construction work, rounding to the nearest millimeter or sixteenth of an inch is usually enough; for classroom work, two decimal places is standard. Reporting six decimals from a roughly measured angle implies a precision you do not have.'
+      ],
+    },
+    {
+      h2: 'Common Sine Calculation Mistakes',
+      paragraphs: [
+        'These are the errors that show up most often. Each one has a simple fix.'
+      ],
+      listTitle: '12 mistakes to avoid:',
+      listItems: [
+        'Using the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> as the hypotenuse. The hypotenuse is always opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and is the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>.',
+        'Using cosine instead of sine. Cosine returns the adjacent leg, not the opposite leg you want here.',
+        'Entering <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A in radians. This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> expects degrees; 0.5 radians entered as 0.5 degrees gives a wildly wrong answer.',
+        'Measuring the angle from the wrong vertex. The opposite side is defined relative to angle A specifically.',
+        'Expecting a result longer than the hypotenuse. Since sin(A) is at most 1, a can never exceed c.',
+        'Entering the known leg as c when it is actually a leg. Double-check that your hypotenuse input is the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> across from the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
+        'Rounding sin(A) before multiplying. Round only the final answer to avoid compounding error.',
+        'Mixing units between inputs and expectations, such as entering meters but reading the result as feet.',
+        'Using <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> B instead of <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. If your known <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is at the other acute vertex, the opposite and adjacent labels swap.',
+        'Forgetting that the angle must be acute (between 0 and 90 degrees). A 90-degree input collapses the triangle.',
+        'Confusing sine with inverse sine. This page computes a side from an angle; the inverse function computes an angle from sides.',
+        'Trusting a rough field measurement to six decimals. Match your reported precision to your measurement precision.'
+      ],
+    },
+    {
+      h2: 'How to Verify Your Answer',
+      paragraphs: [],
+      customHtml: `<p>Three independent checks confirm a sine result. Use at least one before trusting the answer.</p>
+<h3>Method 1: Check the ratio</h3>
+<p>Divide the result by the hypotenuse and compare with sin(A). For Example 1: 3 / 5 = 0.6, and sin(36.87°) ≈ 0.6. They match.</p>
+<h3>Method 2: Check with Pythagoras</h3>
+<p>Find the adjacent leg with b = √(c² − a²), then verify a² + b² = c². For Example 1: b = √(25 − 9) = 4, and 9 + 16 = 25.</p>
+<h3>Method 3: Check the complementary angle</h3>
+<p>Compute angle B = 90° − A, then verify with cosine: b should equal c × cos(A). For Example 1: 5 × cos(36.87°) ≈ 5 × 0.8 = 4, matching the b found above.</p>`,
+    },
+    {
+      h2: 'Conclusion',
+      paragraphs: [
+        'The sine formula a = c × sin(A) turns a known hypotenuse and <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> into the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> in one multiplication. Identify the hypotenuse, confirm your <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is in degrees and acute, multiply, and check that the result is shorter than the hypotenuse.',
+        'For the reverse problem, finding an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> from known sides, use the <a href="/right-triangle-angle-from-sine-calculator/" class="text-primary hover:underline">Right Triangle Angle From Sine Calculator</a>. For the adjacent leg, use the <a href="/right-triangle-side-from-cosine-calculator/" class="text-primary hover:underline">Right Triangle Side From Cosine Calculator</a>.'
+      ],
+    }
     ],
     relatedLinks: [
       { href: '/right-triangle-side-from-angle-calculator/', label: 'Right Triangle Side From Angle Calculator' },
@@ -973,31 +1228,66 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       { href: '/sine-ratio-calculator/', label: 'Sine Ratio Calculator' }
     ],
     faqs: [
-      {
-        question: 'What does a = c \u00d7 sin(A) calculate?',
-        answer:
-          'It calculates the length of the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a in a right triangle. You need the hypotenuse c and an acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A to use this formula.'
-      },
-      {
-        question: 'Why do I use sine instead of cosine here?',
-        answer:
-          'Sine relates the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> to the hypotenuse. Cosine relates the adjacent side to the hypotenuse. Since this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the opposite side, sine is the correct function.'
-      },
-      {
-        question: 'Can the result be larger than the hypotenuse?',
-        answer:
-          'No. The opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is always shorter than the hypotenuse in a right triangle. If your result is larger, one of the inputs is wrong.'
-      },
-      {
-        question: 'What if my angle is exactly 90 degrees?',
-        answer:
-          'A 90-degree input is not valid here. In a right triangle, the two acute angles must each be between 0 and 90 degrees. The 90-degree <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is already fixed at the right angle vertex.'
-      },
-      {
-        question: 'Does the angle need to be in degrees?',
-        answer:
-          'Yes. This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> expects <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A in degrees. If your angle is in radians, convert it to degrees first by multiplying by 180 and dividing by pi.'
-      }
+    {
+      question: 'What does a = c × sin(A) calculate?',
+      answer:
+        'It calculates the length of the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a in a right triangle. You need the hypotenuse c and an acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A to use this formula.'
+    },
+    {
+      question: 'Why do I use sine instead of cosine here?',
+      answer:
+        'Sine relates the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> to the hypotenuse. Cosine relates the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> to the hypotenuse. Since this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, sine is the correct function.'
+    },
+    {
+      question: 'Can the result be larger than the hypotenuse?',
+      answer:
+        'No. The opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is always shorter than the hypotenuse in a right triangle. If your result is larger, one of the inputs is wrong.'
+    },
+    {
+      question: 'What if my angle is exactly 90 degrees?',
+      answer:
+        'A 90-degree input is not valid here. In a right triangle, the two acute angles must each be between 0 and 90 degrees. The 90-degree <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is already fixed at the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex.'
+    },
+    {
+      question: 'Does the angle need to be in degrees?',
+      answer:
+        'Yes. This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> expects <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A in degrees. If your <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is in radians, convert it to degrees first by multiplying by 180 and dividing by pi.'
+    },
+    {
+      question: 'How is this different from the cosine calculator?',
+      answer:
+        'The sine <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> opposite <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A (a = c × sin(A)). The <a href="/right-triangle-side-from-cosine-calculator/" class="text-primary hover:underline">cosine calculator</a> finds the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> adjacent to <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A (b = c × cos(A)). Same inputs, different output <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>.'
+    },
+    {
+      question: 'Can I use this for force vectors in physics?',
+      answer:
+        'Yes. A vector is the hypotenuse and its vertical component is the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. A 100 N force at 30° above horizontal has a vertical component of 100 × sin(30°) = 50 N.'
+    },
+    {
+      question: 'What units should I use?',
+      answer:
+        'Any consistent length unit works: meters, feet, inches, millimeters. The result uses the same unit as the hypotenuse you enter. Do not mix units within one calculation.'
+    },
+    {
+      question: 'Why is my answer slightly different from a textbook?',
+      answer:
+        'Small differences come from rounding the sine value at different stages. Keep full precision during the multiplication and round only the final answer to match the textbook\'s rounding.'
+    },
+    {
+      question: 'Can the angle be larger than 90 degrees?',
+      answer:
+        'No. Angle A must be acute (between 0 and 90 degrees) for this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>. Obtuse angles do not occur as the reference <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> in a right triangle.'
+    },
+    {
+      question: 'How do I find the hypotenuse if I know the opposite side and angle?',
+      answer:
+        'Rearrange the formula: c = a / sin(A). If a = 3 and A = 36.87°, then c = 3 / 0.6 = 5.'
+    },
+    {
+      question: 'Does sine work when the triangle is rotated or flipped?',
+      answer:
+        'Yes. Rotation does not change which <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is opposite <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. Always identify the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> across from your reference <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> first, then apply a = c × sin(A).'
+    }
     ]
   },
   {

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>Step-by-step sine calculation</title>
+<desc>Right triangle with hypotenuse 10 m and angle 30 degrees giving opposite side 5 m.</desc>
+<polygon points="330,510 810,510 810,225" fill="rgba(241,201,125,0.07)"/>
+<line x1="810" y1="510" x2="810" y2="225" stroke="#fbbf24" stroke-width="6" stroke-linecap="round"/>
+<line x1="330" y1="510" x2="810" y2="510" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" opacity="0.55"/>
+<line x1="330" y1="510" x2="810" y2="225" stroke="#f472b6" stroke-width="6" stroke-linecap="round"/>
+<polyline points="810,482 838,482 838,510" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<circle cx="330" cy="510" r="7" fill="#f1c97d"/>
+<circle cx="810" cy="510" r="7" fill="#f1c97d"/>
+<circle cx="810" cy="225" r="7" fill="#f1c97d"/>
+<text x="855" y="370" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#fbbf24" text-anchor="middle" font-weight="bold">a = 5 m</text>
+<text x="540" y="370" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#f472b6" text-anchor="middle" font-weight="bold">c = 10 m</text>
+<path d="M 385.0 510.0 Q 383.1 495.8 377.6 482.5" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.7"/>
+<text x="435" y="475" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">A = 30°</text>
+<text x="600" y="60" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#ffffff" text-anchor="middle">a = c × sin(A) = 10 × sin(30°) = 10 × 0.5 = 5 m</text>
+</svg>

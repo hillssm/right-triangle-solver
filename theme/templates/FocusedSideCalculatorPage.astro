@@ -370,6 +370,9 @@ const sectionHeading = (
       {section.paragraphs.map((paragraph) => (
         <p set:html={formatRootBars(paragraph)} />
       ))}
+      {section.customHtml && (
+        <div class="not-prose" set:html={section.customHtml} />
+      )}
       {section.listItems && section.listItems.length > 0 && (
         <>
           {section.listTitle && <h3>{sectionHeading(section.listTitle)}</h3>}

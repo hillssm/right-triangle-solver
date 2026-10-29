@@ -3,6 +3,7 @@ export type FormulaCalculatorField = {
   label: string;
   unit?: string;
   min?: number;
+  placeholder?: string;
 };
 
 export type FormulaCalculatorConfig = {

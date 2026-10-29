@@ -69,6 +69,7 @@ export type FocusedSideCalculatorPage = {
   extraSections: {
     h2: string;
     paragraphs: string[];
+    customHtml?: string;
     listTitle?: string;
     listItems?: string[];
   }[];
@@ -322,8 +323,8 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     calculator: {
       outputLabel: 'Missing leg b',
       fields: [
-        { key: 'c', label: 'Hypotenuse c', min: 0 },
-        { key: 'a', label: 'Leg a', min: 0 }
+        { key: 'c', label: 'Hypotenuse c', min: 0, placeholder: 'e.g. 13' },
+        { key: 'a', label: 'Known leg a', min: 0, placeholder: 'e.g. 5' }
       ]
     },
     formulaSection: {
@@ -351,26 +352,67 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       ]
     },
     example: {
-      h2: 'Worked Examples for Finding a Missing Leg',
+      h2: 'Quick Example',
       intro:
-        'Each example shows the full calculation from problem statement to verified answer. All five use the formula b = √(c² − a²).',
+        'A quick preview: with c = 13 and a = 5, the missing leg is b = 12. See the detailed worked examples below for five complete solutions with diagrams.',
       lines: [
-        'b = \\sqrt{13^2 - 5^2}',
-        'b = \\sqrt{169 - 25}',
-        'b = \\sqrt{144}',
-        'b = 12'
+        'b = \\sqrt{13^2 - 5^2} = \\sqrt{144} = 12'
       ]
     },
     extraSections: [
       {
         h2: 'Detailed Worked Examples',
-        paragraphs: [
-          '<h3>Example 1: Standard 5–12–13 Triangle</h3><p><strong>Problem:</strong> Find the missing leg of a right triangle with hypotenuse c = 13 cm and known leg a = 5 cm.</p><p><strong>Given:</strong> c = 13 cm, a = 5 cm. <strong>Find:</strong> b.</p><p><strong>Formula:</strong> b = √(c² − a²)</p><p><strong>Substitution:</strong> b = √(13² − 5²) = √(169 − 25) = √144</p><p><strong>Answer:</strong> <strong>b = 12 cm</strong></p><p><strong>Verification:</strong> 5² + 12² = 25 + 144 = 169 = 13². The known leg, missing leg, and hypotenuse form a valid right triangle.</p>',
-          '<h3>Example 2: Ladder Against a Wall</h3><p><strong>Problem:</strong> A 5 m ladder rests against a vertical wall. Its base is 3 m from the wall. Find the height reached by the ladder.</p><p><strong>Given:</strong> c = 5 m (ladder), a = 3 m (ground distance). <strong>Find:</strong> b (wall height).</p><p><strong>Calculation:</strong> b = √(5² − 3²) = √(25 − 9) = √16 = 4 m</p><p><strong>Answer:</strong> <strong>The ladder reaches 4 m up the wall.</strong></p><img src="/images/missing-leg/missing-leg-ladder.svg" alt="Ladder diagram: 5 m ladder as hypotenuse, 3 m ground distance as leg a, 4 m wall height as missing leg b" class="mx-auto mt-4 h-auto w-full max-w-xl rounded-lg" /><p class="text-sm text-on-surface-variant"><em>Figure: The vertical wall (b = 4 m), horizontal ground distance (a = 3 m), and ladder (c = 5 m). This is a geometric model assuming a vertical wall and level ground, not a ladder-safety assessment.</em></p>',
-          '<h3>Example 3: Rectangular Room Diagonal</h3><p><strong>Problem:</strong> A rectangular room has a diagonal of 17 ft and one side measuring 8 ft. Find the other side.</p><p><strong>Given:</strong> c = 17 ft (diagonal), a = 8 ft. <strong>Find:</strong> b.</p><p><strong>Calculation:</strong> b = √(17² − 8²) = √(289 − 64) = √225 = 15 ft</p><p><strong>Answer:</strong> <strong>The other side is 15 ft.</strong></p><img src="/images/missing-leg/missing-leg-room.svg" alt="Room diagram: 17 ft diagonal as hypotenuse, 8 ft known side as leg a, 15 ft missing side as leg b" class="mx-auto mt-4 h-auto w-full max-w-xl rounded-lg" /><p class="text-sm text-on-surface-variant"><em>Figure: Top-down view. The diagonal (c = 17 ft) divides the rectangle into two right triangles. The known side (a = 8 ft) and missing side (b = 15 ft) form the right angle.</em></p>',
-          '<h3>Example 4: A Result That Requires Rounding</h3><p><strong>Problem:</strong> Given c = 10 m and a = 7 m, find b.</p><p><strong>Calculation:</strong> b = √(10² − 7²) = √(100 − 49) = √51 ≈ 7.141428 m</p><p><strong>Answer:</strong> <strong>b ≈ 7.14 m</strong>, rounded to two decimal places.</p><p><strong>Verification:</strong> 7² + (√51)² = 49 + 51 = 100 = 10².</p><p>Keep the exact value (√51) during intermediate calculations and round only at the final step. Rounding early introduces errors that compound in multi-step problems.</p>',
-          '<h3>Example 5: Ramp Geometry</h3><p><strong>Problem:</strong> A straight ramp has a length of 13 m and a horizontal run of 12 m. Find its vertical rise.</p><p><strong>Given:</strong> c = 13 m (ramp), a = 12 m (run). <strong>Find:</strong> b (rise).</p><p><strong>Calculation:</strong> b = √(13² − 12²) = √(169 − 144) = √25 = 5 m</p><p><strong>Answer:</strong> <strong>The vertical rise is 5 m.</strong></p><img src="/images/missing-leg/missing-leg-ramp.svg" alt="Ramp diagram: 13 m ramp as hypotenuse, 12 m horizontal run as leg a, 5 m vertical rise as missing leg b" class="mx-auto mt-4 h-auto w-full max-w-xl rounded-lg" /><p class="text-sm text-on-surface-variant"><em>Figure: The ramp (c = 13 m) as hypotenuse, horizontal run (a = 12 m), and vertical rise (b = 5 m). This calculation does not establish compliance with accessibility or building regulations.</em></p>'
-        ]
+        paragraphs: [],
+        customHtml: `<article class="mb-8">
+          <h3>Example 1: Standard 5–12–13 Triangle</h3>
+          <p><strong>Problem:</strong> Find the missing leg of a right triangle with hypotenuse c = 13 cm and known leg a = 5 cm.</p>
+          <p><strong>Given:</strong> c = 13 cm, a = 5 cm. <strong>Find:</strong> b.</p>
+          <p><strong>Formula:</strong> b = √(c² − a²)</p>
+          <p><strong>Substitution:</strong> b = √(13² − 5²) = √(169 − 25) = √144</p>
+          <p><strong>Answer:</strong> <strong>b = 12 cm</strong></p>
+          <p><strong>Verification:</strong> 5² + 12² = 25 + 144 = 169 = 13². The known leg, missing leg, and hypotenuse form a valid right triangle.</p>
+        </article>
+        <article class="mb-8">
+          <h3>Example 2: Ladder Against a Wall</h3>
+          <p><strong>Problem:</strong> A 5 m ladder rests against a vertical wall. Its base is 3 m from the wall. Find the height reached by the ladder.</p>
+          <p><strong>Given:</strong> c = 5 m (ladder), a = 3 m (ground distance). <strong>Find:</strong> b (wall height).</p>
+          <p><strong>Calculation:</strong> b = √(5² − 3²) = √(25 − 9) = √16 = 4 m</p>
+          <p><strong>Answer:</strong> <strong>The ladder reaches 4 m up the wall.</strong></p>
+          <figure class="my-4">
+            <img src="/images/missing-leg/missing-leg-ladder.svg" alt="Ladder diagram: 5 m ladder as hypotenuse, 3 m ground distance as leg a, 4 m wall height as missing leg b" class="mx-auto h-auto w-full max-w-xl rounded-lg" />
+            <figcaption class="mt-2 text-center text-sm text-on-surface-variant"><em>Figure: The vertical wall (b = 4 m), horizontal ground distance (a = 3 m), and ladder (c = 5 m). This is a geometric model assuming a vertical wall and level ground, not a ladder-safety assessment.</em></figcaption>
+          </figure>
+        </article>
+        <article class="mb-8">
+          <h3>Example 3: Rectangular Room Diagonal</h3>
+          <p><strong>Problem:</strong> A rectangular room has a diagonal of 17 ft and one side measuring 8 ft. Find the other side.</p>
+          <p><strong>Given:</strong> c = 17 ft (diagonal), a = 8 ft. <strong>Find:</strong> b.</p>
+          <p><strong>Calculation:</strong> b = √(17² − 8²) = √(289 − 64) = √225 = 15 ft</p>
+          <p><strong>Answer:</strong> <strong>The other side is 15 ft.</strong></p>
+          <figure class="my-4">
+            <img src="/images/missing-leg/missing-leg-room.svg" alt="Room diagram: 17 ft diagonal as hypotenuse, 8 ft known side as leg a, 15 ft missing side as leg b" class="mx-auto h-auto w-full max-w-xl rounded-lg" />
+            <figcaption class="mt-2 text-center text-sm text-on-surface-variant"><em>Figure: Top-down view. The diagonal (c = 17 ft) divides the rectangle into two right triangles. The known side (a = 8 ft) and missing side (b = 15 ft) form the right angle.</em></figcaption>
+          </figure>
+        </article>
+        <article class="mb-8">
+          <h3>Example 4: A Result That Requires Rounding</h3>
+          <p><strong>Problem:</strong> Given c = 10 m and a = 7 m, find b.</p>
+          <p><strong>Calculation:</strong> b = √(10² − 7²) = √(100 − 49) = √51 ≈ 7.141428 m</p>
+          <p><strong>Answer:</strong> <strong>b ≈ 7.14 m</strong>, rounded to two decimal places.</p>
+          <p><strong>Verification:</strong> 7² + (√51)² = 49 + 51 = 100 = 10².</p>
+          <p>Keep the exact value (√51) during intermediate calculations and round only at the final step. Rounding early introduces errors that compound in multi-step problems.</p>
+        </article>
+        <article>
+          <h3>Example 5: Ramp Geometry</h3>
+          <p><strong>Problem:</strong> A straight ramp has a length of 13 m and a horizontal run of 12 m. Find its vertical rise.</p>
+          <p><strong>Given:</strong> c = 13 m (ramp), a = 12 m (run). <strong>Find:</strong> b (rise).</p>
+          <p><strong>Calculation:</strong> b = √(13² − 12²) = √(169 − 144) = √25 = 5 m</p>
+          <p><strong>Answer:</strong> <strong>The vertical rise is 5 m.</strong></p>
+          <figure class="my-4">
+            <img src="/images/missing-leg/missing-leg-ramp.svg" alt="Ramp diagram: 13 m ramp as hypotenuse, 12 m horizontal run as leg a, 5 m vertical rise as missing leg b" class="mx-auto h-auto w-full max-w-xl rounded-lg" />
+            <figcaption class="mt-2 text-center text-sm text-on-surface-variant"><em>Figure: The ramp (c = 13 m) as hypotenuse, horizontal run (a = 12 m), and vertical rise (b = 5 m). This calculation does not establish compliance with accessibility or building regulations.</em></figcaption>
+          </figure>
+        </article>`,
       },
       {
         h2: 'When Can You Calculate a Missing Leg?',

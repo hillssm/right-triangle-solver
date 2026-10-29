@@ -87,15 +87,15 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
   {
     slug: 'pythagorean-theorem-calculator',
     url: '/pythagorean-theorem-calculator/',
-    h1: 'Pythagorean Theorem Calculator',
+    h1: 'Pythagorean Theorem Calculator: Find the Hypotenuse',
     metaTitle: 'Pythagorean Theorem Calculator | Find the Hypotenuse',
     metaDescription:
-      'Find hypotenuse c from legs a and b with a Pythagorean theorem <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>, diagram, formula, examples, validation tips, and step-by-step work.',
+      'Calculate the hypotenuse of a right triangle using two known legs. Learn the Pythagorean theorem, follow worked examples, and verify your answer.',
     formulaSlug: 'pythagorean-theorem',
     toolPurpose:
       'Whether you\u2019re solving a homework problem or measuring a diagonal in real life, this tool gives you the answer in seconds \u2014 with the full solution shown step by step.',
     intro:
-      'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the hypotenuse (c) of a right triangle when you know both legs (a and b). Enter your two leg values and get the result instantly.',
+      'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the hypotenuse c of a right triangle when you know both perpendicular legs a and b. The hypotenuse sits opposite the 90&deg; angle and is always the longest side of a valid right triangle. Enter your two leg values above to get the result instantly with a full step-by-step solution.',
     quickSummary: {
       h2: 'What This Tool Solves',
       intro:
@@ -139,8 +139,8 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     calculator: {
       outputLabel: 'Hypotenuse c',
       fields: [
-        { key: 'a', label: 'Leg a', min: 0 },
-        { key: 'b', label: 'Leg b', min: 0 }
+        { key: 'a', label: 'Leg a', min: 0, placeholder: 'e.g. 6' },
+        { key: 'b', label: 'Leg b', min: 0, placeholder: 'e.g. 8' }
       ]
     },
     formulaSection: {
@@ -149,96 +149,156 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
         'The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the two legs. To solve for the hypotenuse, take the square root of both sides.',
         'In this formula, a and b are the two legs of the right triangle \u2014 the sides that form the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. c is the hypotenuse, the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, opposite the right angle. This formula only works for right triangles.'
       ],
-      formulas: ['c^2 = a^2 + b^2', 'c = \\sqrt{a^2 + b^2}']
+      formulas: ['a^2 + b^2 = c^2', 'c^2 = a^2 + b^2', 'c = \\\\sqrt{a^2 + b^2}']
     },
     howTo: {
-      h2: 'How to Use This Tool',
+      h2: 'How to Calculate the Hypotenuse',
       steps: [
-        'Identify the two legs of your right triangle. These are the sides that form the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
-        'Enter leg a into the first input field.',
-        'Enter leg b into the second input field.',
+        'Confirm that the triangle contains a 90&deg; angle. The theorem does not apply to other triangles.',
+        'Identify the two legs that form that right angle. These are your a and b.',
+        'Enter the length of leg a in the first input field.',
+        'Enter the length of leg b in the second input field.',
+        'Confirm both measurements use the same unit.',
         'Click Calculate to find the hypotenuse.',
-        'Read the result for c, along with the step-by-step solution.'
+        'Review the result and the step-by-step solution shown below the calculator.',
+        'Verify the answer by checking that a&sup2; + b&sup2; equals c&sup2;.'
       ]
     },
     example: {
-      h2: 'Example: Find the Hypotenuse',
-      intro: 'Given: a = 6, b = 8. The hypotenuse of a right triangle with legs 6 and 8 is 10.',
+      h2: 'Quick Example',
+      intro: 'Given a = 6 cm and b = 8 cm, the hypotenuse is 10 cm. See the detailed examples below for full step-by-step solutions.',
       lines: [
-        'c = \\sqrt{6^2 + 8^2}',
-        'c = \\sqrt{36 + 64}',
-        'c = \\sqrt{100}',
-        'c = 10'
+        'c = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10'
       ]
     },
     extraSections: [
       {
-        h2: 'Where This Calculator Is Useful',
+        h2: 'Pythagorean Theorem Examples with Solutions',
+        paragraphs: [],
+        customHtml: `<article>
+<h3>Example 1: The 6-8-10 Triangle</h3>
+<p><strong>Problem:</strong> Find the hypotenuse of a right triangle with legs a = 6 cm and b = 8 cm.</p>
+<p><strong>Given:</strong> a = 6 cm, b = 8 cm. <strong>Find:</strong> c.</p>
+<p><strong>Formula:</strong> c = &radic;(a&sup2; + b&sup2;)</p>
+<p><strong>Substitution:</strong> c = &radic;(6&sup2; + 8&sup2;) = &radic;(36 + 64) = &radic;100</p>
+<p><strong>Answer:</strong> <strong>c = 10 cm</strong></p>
+<p><strong>Verification:</strong> 6&sup2; + 8&sup2; = 36 + 64 = 100 = 10&sup2;.</p>
+</article>
+<article>
+<h3>Example 2: The 5-12-13 Triangle</h3>
+<p><strong>Problem:</strong> A right triangle has legs a = 5 m and b = 12 m. Find the hypotenuse.</p>
+<p><strong>Given:</strong> a = 5 m, b = 12 m. <strong>Find:</strong> c.</p>
+<p><strong>Calculation:</strong> c = &radic;(5&sup2; + 12&sup2;) = &radic;(25 + 144) = &radic;169 = 13 m</p>
+<p><strong>Answer:</strong> <strong>c = 13 m</strong></p>
+<p><strong>Verification:</strong> 5&sup2; + 12&sup2; = 25 + 144 = 169 = 13&sup2;.</p>
+<p>The numbers 5, 12, and 13 form a Pythagorean triple: three positive integers satisfying a&sup2; + b&sup2; = c&sup2;.</p>
+</article>
+<article>
+<h3>Example 3: Rectangular Room Diagonal</h3>
+<p><strong>Problem:</strong> A rectangular room measures 9 ft by 12 ft. Find the diagonal distance between opposite corners.</p>
+<p><strong>Given:</strong> a = 9 ft, b = 12 ft. <strong>Find:</strong> c (diagonal).</p>
+<p><strong>Calculation:</strong> c = &radic;(9&sup2; + 12&sup2;) = &radic;(81 + 144) = &radic;225 = 15 ft</p>
+<p><strong>Answer:</strong> <strong>The diagonal is 15 ft.</strong></p>
+<p><strong>Why this works:</strong> The diagonal divides the rectangle into two congruent right triangles. The two sides become the legs, and the diagonal becomes the hypotenuse.</p>
+<img src="/images/missing-leg/missing-leg-b-room.svg" alt="Room floor plan diagram showing how a diagonal forms the hypotenuse of a right triangle" class="mx-auto mt-4 h-auto w-full max-w-xl rounded-lg" />
+<p class="text-sm text-on-surface-variant"><em>Figure: A rectangle's diagonal always forms the hypotenuse of the two right triangles it creates.</em></p>
+</article>
+<article>
+<h3>Example 4: Ladder Against a Wall</h3>
+<p><strong>Problem:</strong> A ladder reaches a point 12 ft above the ground. Its base is 5 ft from the wall. Find the ladder length.</p>
+<p><strong>Given:</strong> a = 5 ft (ground distance), b = 12 ft (wall height). <strong>Find:</strong> c (ladder).</p>
+<p><strong>Calculation:</strong> c = &radic;(5&sup2; + 12&sup2;) = &radic;(25 + 144) = &radic;169 = 13 ft</p>
+<p><strong>Answer:</strong> <strong>The ladder length is 13 ft.</strong></p>
+<p><strong>Note:</strong> This is an idealized geometric model assuming a perfectly vertical wall and flat ground. It does not establish ladder safety.</p>
+</article>
+<article>
+<h3>Example 5: A Non-Integer Result</h3>
+<p><strong>Problem:</strong> Given a = 7 m and b = 9 m, find the hypotenuse.</p>
+<p><strong>Calculation:</strong> c = &radic;(7&sup2; + 9&sup2;) = &radic;(49 + 81) = &radic;130 &asymp; 11.401754 m</p>
+<p><strong>Answer:</strong> <strong>c &asymp; 11.40 m</strong>, rounded to two decimal places.</p>
+<p><strong>Verification:</strong> 7&sup2; + 9&sup2; = 130 = (&radic;130)&sup2;.</p>
+<p>The exact result is &radic;130 m. Round only at the final display step; rounding intermediate values introduces errors.</p>
+</article>`
+      },
+      {
+        h2: 'Where Is the Pythagorean Theorem Used?',
         paragraphs: [
-          'The hypotenuse <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> is useful whenever two perpendicular distances combine into one diagonal distance. It is especially helpful when a drawing, floor plan, or homework problem gives the horizontal and vertical sides but leaves the diagonal <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> blank.',
-          'Because this page only solves for c, it avoids the confusion of switching between <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> modes. If your known values are the two legs, this is the focused Pythagorean theorem tool to use.'
-        ],
-        listTitle: 'Common examples include:',
-        listItems: [
-          'Finding the diagonal of a rectangle, screen, tile layout, or room.',
-          'Calculating a ladder length from wall height and ground distance.',
-          'Estimating the sloped length of a ramp from rise and run.',
-          'Checking right triangle homework before submitting the final answer.'
+          'The theorem applies whenever two perpendicular distances combine into one diagonal distance. For each application below, the two perpendicular measurements are the legs a and b, and the diagonal or sloped distance is the hypotenuse c.',
+          '<strong>Room and building diagonals.</strong> A rectangular room 9 ft by 12 ft has a 15 ft diagonal (Example 3). Builders use this to check that corners are square: if the measured diagonal matches the calculated one, the corner is a true right angle.',
+          '<strong>Ladder length and wall height.</strong> Given the height a ladder must reach and how far its base sits from the wall, the required ladder length follows directly (Example 4).',
+          '<strong>Ramp length from rise and run.</strong> A ramp rising 7 m over a 24 m horizontal run has a sloped length of c = &radic;(7&sup2; + 24&sup2;) = &radic;(49 + 576) = &radic;625 = 25 m.',
+          '<strong>Screen and rectangular object diagonals.</strong> A 16:9 screen measuring 32 inches wide and 18 inches tall has a diagonal of c = &radic;(32&sup2; + 18&sup2;) = &radic;(1024 + 324) = &radic;1348 &asymp; 36.7 inches.',
+          '<strong>Geometry homework and technical drawings.</strong> Any problem giving the two sides around a right angle and asking for the side across from it is a hypotenuse problem.',
+          'Real-world measurements include measurement error, so treat results as estimates. Do not use these calculations to certify building-code compliance or engineering safety.'
         ]
       },
       {
-        h2: 'Input Tips for Better Results',
+        h2: 'What Are Pythagorean Triples?',
         paragraphs: [
-          'Enter both leg lengths as positive numbers. Decimals are fine, and the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> will keep enough precision to make the step-by-step work useful.',
-          'The two inputs must use the same unit. If a is measured in feet and b is measured in inches, convert one measurement first so the result is meaningful.'
+          'Pythagorean triples are sets of three positive integers a, b, and c satisfying a&sup2; + b&sup2; = c&sup2;. When a problem uses a triple, the hypotenuse comes out as a whole number with no rounding needed.',
+          'Multiplying all three sides of a valid triple by the same positive factor produces another valid right triangle. For example, doubling 3-4-5 gives 6-8-10, and tripling it gives 9-12-15.'
+        ],
+        listTitle: 'Common Pythagorean triples:',
+        listItems: [
+          '3, 4, 5',
+          '5, 12, 13',
+          '8, 15, 17',
+          '7, 24, 25',
+          '9, 12, 15'
+        ]
+      },
+      {
+        h2: 'Input Requirements and Common Checks',
+        paragraphs: [
+          'Both legs must be positive numbers. Decimals are valid inputs, and the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> keeps enough precision for the step-by-step work to be useful.',
+          'The two inputs must use the same unit. If a is in feet and b is in inches, convert one measurement first so the result is meaningful.',
+          'The theorem only applies when the included angle is 90&deg;. If your triangle has no right angle, this formula will not give a correct answer.'
         ],
         listTitle: 'Before you calculate, check that:',
         listItems: [
-          'a and b are the sides that touch the 90° <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
+          'a and b are the sides that touch the 90&deg; <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
           'Neither input is zero or negative.',
           'Both values are measured in the same unit.',
           'You are solving for the hypotenuse, not a missing leg.'
         ]
       },
       {
-        h2: 'How to Read the Answer',
+        h2: 'How to Check Your Hypotenuse Calculation',
         paragraphs: [
-          'The output labeled Hypotenuse c is the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. It is the diagonal side in the diagram and should be longer than both input legs.',
-          'If your result looks smaller than a or b, that is a sign that one of the inputs was mislabeled or that the triangle is not actually a right triangle.'
+          'Verify each result before using it. For the 6-8-10 example: 6&sup2; + 8&sup2; = 36 + 64 = 100 = 10&sup2;.',
+          'A valid hypotenuse is always longer than either leg but shorter than their sum. If your answer violates either bound, re-check the inputs.'
         ],
         listTitle: 'A quick reasonableness check:',
         listItems: [
           'c should be greater than a.',
           'c should be greater than b.',
           'c should be less than a + b.',
+          'a&sup2; + b&sup2; should equal c&sup2;, allowing for floating-point precision and displayed rounding.',
           'For common triples like 3-4-5 or 5-12-13, the result should match the known triple.'
         ]
       },
       {
-        h2: 'Common Mistakes',
+        h2: 'Common Pythagorean Theorem Mistakes',
         paragraphs: [
           'Most wrong hypotenuse answers come from using the right formula on the wrong sides. The legs must be the two sides that make the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>; the hypotenuse is never an input on this page.',
-          'Another common issue is stopping at a² + b². That value is c², not c. The square root step is what turns the squared value back into the actual <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> length.'
+          'Another common issue is stopping at a&sup2; + b&sup2;. That value is c&sup2;, not c. The square root step is what turns the squared value back into the actual <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> length.'
         ],
         listTitle: 'Avoid these mistakes:',
         listItems: [
-          'Using the formula on a triangle that does not have a 90° <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
-          'Entering the diagonal <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> as a or b.',
-          'Forgetting to take the square root at the end.',
-          'Mixing units such as inches and feet in the same calculation.'
+          '<strong>Applying the theorem without a right angle.</strong> The formula only works when the triangle has a 90&deg; angle. Verify this first.',
+          '<strong>Confusing a leg with the hypotenuse.</strong> Wrong: entering the diagonal as a or b. Correct: a and b are the sides forming the right angle.',
+          '<strong>Adding the sides instead of their squares.</strong> Wrong: c = a + b. Correct: c = &radic;(a&sup2; + b&sup2;).',
+          '<strong>Forgetting the square root.</strong> Wrong: c = a&sup2; + b&sup2;. Correct: take the square root of the sum.',
+          '<strong>Treating a&sup2; + b&sup2; as the answer.</strong> That sum is c&sup2;, the square of the hypotenuse. Take the square root to get c.',
+          '<strong>Mixing incompatible units.</strong> Wrong: a = 6 ft, b = 8 inches. Correct: convert to the same unit first.',
+          '<strong>Rounding too early.</strong> Wrong: rounding &radic;130 to 11.4 mid-calculation. Correct: keep full precision until the final answer.'
         ]
-      }
-    ],
+      }    ],
     relatedLinks: [
       { href: '/right-triangle-side-calculator/', label: 'Right Triangle Side Calculator' },
-      {
-        href: '/missing-leg-from-c-and-a-calculator/',
-        label: 'Missing Leg From c and a Calculator'
-      },
-      {
-        href: '/missing-leg-from-c-and-b-calculator/',
-        label: 'Missing Leg From c and b Calculator'
-      }
+      { href: '/missing-leg-from-c-and-a-calculator/', label: 'Missing Leg From c and a Calculator' },
+      { href: '/missing-leg-from-c-and-b-calculator/', label: 'Missing Leg From c and b Calculator' },
+      { href: '/right-triangle-angle-calculator/', label: 'Right Triangle Angle Calculator' }
     ],
     faqs: [
       {
@@ -247,24 +307,39 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
           'The Pythagorean theorem is a formula that relates the three sides of a right triangle: a\u00b2 + b\u00b2 = c\u00b2. It says that the square of the hypotenuse equals the sum of the squares of the two legs. It only applies to right triangles.'
       },
       {
-        question: 'What does c mean in the formula?',
+        question: 'How do I calculate the hypotenuse?',
         answer:
-          'In the formula c\u00b2 = a\u00b2 + b\u00b2, c is the hypotenuse \u2014 the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> of the right triangle. It\u2019s the side directly across from the 90\u00b0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.'
+          'Square both legs (a\u00b2 and b\u00b2), add them together, and take the square root of the sum. The formula is c = \u221a(a\u00b2 + b\u00b2). Or just enter your values above and let the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> do it.'
       },
       {
-        question: 'Can I use this calculator for any triangle?',
+        question: 'Why does the formula use a square root?',
         answer:
-          'No. This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> uses the Pythagorean theorem, which only works for right triangles. If your triangle doesn\u2019t have a 90\u00b0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>, the formula won\u2019t give a correct result.'
+          'The theorem gives you c\u00b2, the square of the hypotenuse. Taking the square root converts that squared value back into the actual side length c. Without this step you would have the area-like quantity c\u00b2 instead of the length.'
       },
       {
-        question: 'How do I find the hypotenuse?',
+        question: 'Can the theorem be used for any triangle?',
         answer:
-          'To find the hypotenuse, square both legs (a\u00b2 and b\u00b2), add them together, and take the square root of the sum. The formula is c = \u221a(a\u00b2 + b\u00b2). Or just enter your values above and let the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> do it.'
+          'No. The Pythagorean theorem only works for right triangles \u2014 triangles with a 90\u00b0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. If your triangle has no right angle, use the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">general triangle calculators</a> instead.'
       },
       {
-        question: 'What are a and b in a right triangle?',
+        question: 'What are Pythagorean triples?',
         answer:
-          'a and b are the two legs \u2014 the sides that form the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. They can be any positive length, and it doesn\u2019t matter which one you call a or b. The hypotenuse (c) is always the remaining <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>.'
+          'Pythagorean triples are sets of three positive integers satisfying a\u00b2 + b\u00b2 = c\u00b2, such as 3-4-5, 5-12-13, and 8-15-17. Problems using triples give whole-number answers with no rounding needed.'
+      },
+      {
+        question: 'Can I use decimal measurements?',
+        answer:
+          'Yes. Decimals are valid inputs. For example, a = 2.5 and b = 6 gives c = \u221a(6.25 + 36) = \u221a42.25 = 6.5. Keep full precision during calculation and round only the final displayed answer.'
+      },
+      {
+        question: 'How do I calculate a rectangle\u2019s diagonal?',
+        answer:
+          'A rectangle\u2019s diagonal divides it into two right triangles. Treat the two sides as legs a and b, then apply c = \u221a(a\u00b2 + b\u00b2). For a 9 ft by 12 ft room, the diagonal is \u221a(81 + 144) = 15 ft.'
+      },
+      {
+        question: 'How can I check whether my answer is correct?',
+        answer:
+          'Verify that a\u00b2 + b\u00b2 = c\u00b2. For 6-8-10: 36 + 64 = 100. Also check that c > a, c > b, and c < a + b. If any check fails, re-examine which sides you entered as legs.'
       }
     ]
   },

@@ -9,6 +9,16 @@ interface Props {
   formula: RightTriangleFormula;
   locale: Locale;
   heading?: string;
+  widgetStrings?: {
+    title?: string;
+    desc?: string;
+    legA?: string;
+    legB?: string;
+    hypC?: string;
+    angA?: string;
+    angB?: string;
+    output?: string;
+  };
   messages?: {
     positive?: string;
     invalid?: string;
@@ -22,7 +32,7 @@ interface Props {
   runtimeTranslations?: Record<string, unknown>;
 }
 
-const { formula, locale, heading, messages = {}, runtimeTranslations = {} } = Astro.props;
+const { formula, locale, heading, widgetStrings = {}, messages = {}, runtimeTranslations = {} } = Astro.props;
 
 if (!formula.calculator) {
   throw new Error('FormulaCalculator requires a formula with a calculator configuration.');
@@ -36,13 +46,24 @@ const units = (common.units as any) || {};
 
 const calculator = formula.calculator!!;
 
-const displayTitle = (formulasBundle?.[formula.slug] as any)?.title || formula.title;
-const calculatorHeading = heading || `${displayTitle} ${pick(solver, 'calculateSuffix', 'Calculator')}`;
+// Localized widget overrides (hub page passes translated strings).
+const widgetFieldLabels: Record<string, string> = {
+  a: widgetStrings.legA || '',
+  b: widgetStrings.legB || '',
+  c: widgetStrings.hypC || '',
+  A: widgetStrings.angA || '',
+  B: widgetStrings.angB || ''
+};
+const widgetOutputLabel = widgetStrings.output || calculator.outputLabel;
+const widgetDesc = widgetStrings.desc || '';
+
+const displayTitle = widgetStrings.title || (formulasBundle?.[formula.slug] as any)?.title || formula.title;
+const calculatorHeading = heading || (widgetStrings.title ? displayTitle : `${displayTitle} ${pick(solver, 'calculateSuffix', 'Calculator')}`);
 const formulaDiagramHeading =
   locale === DEFAULT_LOCALE
     ? `${displayTitle} Diagram`
     : pick(solver, 'formulaDiagram', 'Formula Diagram');
-const defaultStatus = pick(solver, 'statusDefault', `Enter inputs to calculate {label}.`).replace('{label}', calculator.outputLabel);
+const defaultStatus = pick(solver, 'statusDefault', `Enter inputs to calculate {label}.`).replace('{label}', widgetOutputLabel);
 const plainExpression = formula.plainExpression;
 
 const COMMON_UNIT_LIST = [
@@ -203,7 +224,7 @@ const calculatorMessages = JSON.stringify(messages);
   class="section-shell min-w-0 max-w-full"
   data-formula-calculator
   data-kind={calculator.kind}
-  data-output-label={calculator.outputLabel}
+  data-output-label={widgetOutputLabel}
   data-output-unit={calculator.outputUnit ?? ''}
   data-default-status={defaultStatus}
   data-translations={JSON.stringify(mergedScriptTranslations)}
@@ -212,7 +233,7 @@ const calculatorMessages = JSON.stringify(messages);
   <h2 class="break-words text-2xl font-semibold leading-tight">{calculatorHeading}</h2>
   <p class="mt-2 text-sm text-on-surface-variant">
     {(() => {
-      const text = pick(solver, 'calculatorIntro', `This calculator finds {label} using {expression}.`).replace('{label}', calculator.outputLabel);
+      const text = pick(solver, 'calculatorIntro', `This calculator finds {label} using {expression}.`).replace('{label}', widgetOutputLabel);
       if (text.includes('{expression}')) {
         const parts = text.split('{expression}');
         return (
@@ -236,7 +257,7 @@ const calculatorMessages = JSON.stringify(messages);
       <form class="grid min-w-0 gap-4 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2" data-calc-form>
         {calculator.fields.map((field) => (
           <label class="grid min-w-0 gap-2 text-sm font-medium">
-            <span>{field.label}</span>
+            <span>{widgetFieldLabels[field.key] || field.label}</span>
             <div class="relative flex min-w-0 w-full">
               <input
                 class={`input-shell min-w-0 w-0 flex-1 basis-0 ${LENGTH_KEYS.includes(field.key) ? 'rounded-r-none border-r-0' : 'pr-16'}`}
@@ -269,7 +290,7 @@ const calculatorMessages = JSON.stringify(messages);
         ))}
 
         <div class="sm:col-span-2 lg:col-span-1 xl:col-span-2 flex flex-wrap gap-3">
-          <button type="submit" class="btn-primary">{pick(solver, 'calculate', 'Calculate')} {calculator.outputLabel}</button>
+          <button type="submit" class="btn-primary">{pick(solver, 'calculate', 'Calculate')} {widgetOutputLabel}</button>
           <button type="reset" class="btn-secondary">{pick(solver, 'reset', 'Reset')}</button>
         </div>
       </form>
@@ -281,7 +302,7 @@ const calculatorMessages = JSON.stringify(messages);
       <div class="hidden surface-card scroll-mt-24 border-primary/30 bg-surface-container-high" data-calc-result-wrap>
         <div class="flex items-center justify-between">
           <p class="font-label text-xs uppercase tracking-widest text-primary" data-calc-output-label>
-            {calculator.outputLabel}
+            {widgetOutputLabel}
           </p>
           <span class="rounded bg-primary-fixed px-2 py-0.5 text-[10px] uppercase text-on-primary-fixed">{pick(solver, 'resultLabel', 'Result')}</span>
         </div>

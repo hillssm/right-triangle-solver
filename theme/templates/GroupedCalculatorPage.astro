@@ -575,7 +575,7 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
               <button type="button" class="interactive-chip" data-hub-preset data-leg-c="13" data-leg-b="12">{((hubGuide as any).presets ?? [])[3] || 'Hypotenuse 13, Leg 12'}</button>
             </div>
           </div>
-          <FormulaCalculator formula={generalSolverFormula} locale={locale} />
+          <FormulaCalculator formula={generalSolverFormula} locale={locale} widgetStrings={(hubGuide as any).widget} />
         </section>
       )}
         <script is:inline>

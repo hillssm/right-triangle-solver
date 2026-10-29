@@ -3296,7 +3296,17 @@
               "diagonal": "विकर्ण"
             }
           },
-          "triplesCalc": "पाइथागोरस त्रिक कैलकुलेटर"
+          "triplesCalc": "पाइथागोरस त्रिक कैलकुलेटर",
+          "widget": {
+            "title": "सामान्य समकोण त्रिभुज सॉल्वर",
+            "desc": "पूरा त्रिभुज हल करने के लिए कोई दो मान दर्ज करें (कम से कम एक भुजा)।",
+            "legA": "पाद a",
+            "legB": "पाद b",
+            "hypC": "कर्ण c",
+            "angA": "कोण A (डिग्री)",
+            "angB": "कोण B (डिग्री)",
+            "output": "पूर्ण त्रिभुज"
+          }
         }
       },
       "pages": {
@@ -5174,7 +5184,17 @@
               "diagonal": "diagonal"
             }
           },
-          "triplesCalc": "Calculadora de ternas pitagóricas"
+          "triplesCalc": "Calculadora de ternas pitagóricas",
+          "widget": {
+            "title": "Solucionador general de triángulos rectángulos",
+            "desc": "Introduce dos valores cualesquiera (al menos un lado) para resolver el triángulo completo.",
+            "legA": "Cateto a",
+            "legB": "Cateto b",
+            "hypC": "Hipotenusa c",
+            "angA": "Ángulo A (°)",
+            "angB": "Ángulo B (°)",
+            "output": "Triángulo completo"
+          }
         }
       },
       "pages": {
@@ -7052,7 +7072,17 @@
               "diagonal": "диагональ"
             }
           },
-          "triplesCalc": "Калькулятор пифагоровых троек"
+          "triplesCalc": "Калькулятор пифагоровых троек",
+          "widget": {
+            "title": "Универсальный решатель прямоугольных треугольников",
+            "desc": "Введите любые два значения (хотя бы одну сторону), чтобы решить треугольник полностью.",
+            "legA": "Катет a",
+            "legB": "Катет b",
+            "hypC": "Гипотенуза c",
+            "angA": "Угол A (°)",
+            "angB": "Угол B (°)",
+            "output": "Треугольник полностью"
+          }
         }
       },
       "pages": {
@@ -8930,7 +8960,17 @@
               "diagonal": "diagonale"
             }
           },
-          "triplesCalc": "Calculateur de triplets pythagoriciens"
+          "triplesCalc": "Calculateur de triplets pythagoriciens",
+          "widget": {
+            "title": "Solveur général de triangles rectangles",
+            "desc": "Saisissez deux valeurs quelconques (au moins un côté) pour résoudre le triangle complet.",
+            "legA": "Côté a",
+            "legB": "Côté b",
+            "hypC": "Hypoténuse c",
+            "angA": "Angle A (°)",
+            "angB": "Angle B (°)",
+            "output": "Triangle complet"
+          }
         }
       },
       "pages": {
@@ -10808,7 +10848,17 @@
               "diagonal": "Diagonale"
             }
           },
-          "triplesCalc": "Rechner für pythagoreische Tripel"
+          "triplesCalc": "Rechner für pythagoreische Tripel",
+          "widget": {
+            "title": "Allgemeiner Rechner für rechtwinklige Dreiecke",
+            "desc": "Geben Sie zwei beliebige Werte ein (mindestens eine Seite), um das vollständige Dreieck zu lösen.",
+            "legA": "Kathete a",
+            "legB": "Kathete b",
+            "hypC": "Hypotenuse c",
+            "angA": "Winkel A (°)",
+            "angB": "Winkel B (°)",
+            "output": "Vollständiges Dreieck"
+          }
         }
       },
       "pages": {
@@ -12686,7 +12736,17 @@
               "diagonal": "diagonale"
             }
           },
-          "triplesCalc": "Calcolatore delle terne pitagoriche"
+          "triplesCalc": "Calcolatore delle terne pitagoriche",
+          "widget": {
+            "title": "Risoluttore generale di triangoli rettangoli",
+            "desc": "Inserisci due valori qualsiasi (almeno un lato) per risolvere l’intero triangolo.",
+            "legA": "Cateto a",
+            "legB": "Cateto b",
+            "hypC": "Ipotenusa c",
+            "angA": "Angolo A (°)",
+            "angB": "Angolo B (°)",
+            "output": "Triangolo completo"
+          }
         }
       },
       "pages": {
@@ -14564,7 +14624,17 @@
               "diagonal": "diagonal"
             }
           },
-          "triplesCalc": "Calculadora de Ternas Pitagóricas"
+          "triplesCalc": "Calculadora de Ternas Pitagóricas",
+          "widget": {
+            "title": "Solucionador geral de triângulos retângulos",
+            "desc": "Insira dois valores quaisquer (pelo menos um lado) para resolver o triângulo completo.",
+            "legA": "Cateto a",
+            "legB": "Cateto b",
+            "hypC": "Hipotenusa c",
+            "angA": "Ângulo A (°)",
+            "angB": "Ângulo B (°)",
+            "output": "Triângulo completo"
+          }
         }
       },
       "pages": {
@@ -16442,7 +16512,17 @@
               "diagonal": "কর্ণ"
             }
           },
-          "triplesCalc": "পিথাগোরীয় ত্রয়ী ক্যালকুলেটর"
+          "triplesCalc": "পিথাগোরীয় ত্রয়ী ক্যালকুলেটর",
+          "widget": {
+            "title": "সাধারণ সমকোণী ত্রিভুজ সমাধানকারী",
+            "desc": "সম্পূর্ণ ত্রিভুজ সমাধান করতে যেকোনো দুটি মান লিখুন (কমপক্ষে একটি বাহু)।",
+            "legA": "বাহু a",
+            "legB": "বাহু b",
+            "hypC": "অতিভুজ c",
+            "angA": "কোণ A (°)",
+            "angB": "কোণ B (°)",
+            "output": "সম্পূর্ণ ত্রিভুজ"
+          }
         }
       },
       "pages": {
@@ -18320,7 +18400,17 @@
               "diagonal": "対角線"
             }
           },
-          "triplesCalc": "ピタゴラス数計算機"
+          "triplesCalc": "ピタゴラス数計算機",
+          "widget": {
+            "title": "直角三角形汎用ソルバー",
+            "desc": "2つの値（少なくとも1辺）を入力して、三角形全体を解きます。",
+            "legA": "辺 a",
+            "legB": "辺 b",
+            "hypC": "斜辺 c",
+            "angA": "角 A（度）",
+            "angB": "角 B（度）",
+            "output": "三角形全体"
+          }
         }
       },
       "pages": {
@@ -20198,7 +20288,17 @@
               "diagonal": "대각선"
             }
           },
-          "triplesCalc": "피타고라스 수 계산기"
+          "triplesCalc": "피타고라스 수 계산기",
+          "widget": {
+            "title": "직각삼각형 일반 풀이기",
+            "desc": "두 개의 값을 입력하세요 (최소 한 변 포함). 삼각형 전체를 풀이합니다.",
+            "legA": "변 a",
+            "legB": "변 b",
+            "hypC": "빗변 c",
+            "angA": "각 A (°)",
+            "angB": "각 B (°)",
+            "output": "삼각형 전체"
+          }
         }
       },
       "pages": {
@@ -22076,7 +22176,17 @@
               "diagonal": "pepenjuru"
             }
           },
-          "triplesCalc": "Kalkulator Tripel Pythagoras"
+          "triplesCalc": "Kalkulator Tripel Pythagoras",
+          "widget": {
+            "title": "Penyelesai Segi Tiga Bersudut Tegak Umum",
+            "desc": "Masukkan sebarang dua nilai (sekurang-kurangnya satu sisi) untuk menyelesaikan seluruh segi tiga.",
+            "legA": "Kaki a",
+            "legB": "Kaki b",
+            "hypC": "Hipotenus c",
+            "angA": "Sudut A (°)",
+            "angB": "Sudut B (°)",
+            "output": "Segi tiga lengkap"
+          }
         }
       },
       "pages": {
@@ -23954,7 +24064,17 @@
               "diagonal": "przekątna"
             }
           },
-          "triplesCalc": "Kalkulator trójek pitagorejskich"
+          "triplesCalc": "Kalkulator trójek pitagorejskich",
+          "widget": {
+            "title": "Ogólny kalkulator trójkąta prostokątnego",
+            "desc": "Wprowadź dowolne dwie wartości (co najmniej jeden bok), aby rozwiązać cały trójkąt.",
+            "legA": "Przyprostokątna a",
+            "legB": "Przyprostokątna b",
+            "hypC": "Przeciwprostokątna c",
+            "angA": "Kąt A (°)",
+            "angB": "Kąt B (°)",
+            "output": "Cały trójkąt"
+          }
         }
       },
       "pages": {
@@ -25832,7 +25952,17 @@
               "diagonal": "diagonal"
             }
           },
-          "triplesCalc": "Kalkulator Tripel Pythagoras"
+          "triplesCalc": "Kalkulator Tripel Pythagoras",
+          "widget": {
+            "title": "Pemecah Segitiga Siku-siku Umum",
+            "desc": "Masukkan dua nilai apa pun (minimal satu sisi) untuk menyelesaikan seluruh segitiga.",
+            "legA": "Kaki a",
+            "legB": "Kaki b",
+            "hypC": "Hipotenusa c",
+            "angA": "Sudut A (°)",
+            "angB": "Sudut B (°)",
+            "output": "Segitiga lengkap"
+          }
         }
       },
       "pages": {
@@ -27710,7 +27840,17 @@
               "diagonal": "قطر"
             }
           },
-          "triplesCalc": "حاسبة ثلاثيات فيثاغورس"
+          "triplesCalc": "حاسبة ثلاثيات فيثاغورس",
+          "widget": {
+            "title": "حاسبة المثلث القائم الزاوية العامة",
+            "desc": "أدخل أي قيمتين (ضلع واحد على الأقل) لحل المثلث كاملاً.",
+            "legA": "الضلع a",
+            "legB": "الضلع b",
+            "hypC": "الوتر c",
+            "angA": "الزاوية A (°)",
+            "angB": "الزاوية B (°)",
+            "output": "المثلث كاملاً"
+          }
         }
       },
       "pages": {
@@ -29588,7 +29728,17 @@
               "diagonal": "диагонал"
             }
           },
-          "triplesCalc": "Калкулатор за Питагорови тройки"
+          "triplesCalc": "Калкулатор за Питагорови тройки",
+          "widget": {
+            "title": "Общ калкулатор за правоъгълен триъгълник",
+            "desc": "Въведете произволни две стойности (поне една страна), за да решите целия триъгълник.",
+            "legA": "Катет a",
+            "legB": "Катет b",
+            "hypC": "Хипотенуза c",
+            "angA": "Ъгъл A (°)",
+            "angB": "Ъгъл B (°)",
+            "output": "Целият триъгълник"
+          }
         }
       },
       "pages": {
@@ -31466,7 +31616,17 @@
               "diagonal": "köşegen"
             }
           },
-          "triplesCalc": "Pisagor Üçlüleri Hesaplayıcı"
+          "triplesCalc": "Pisagor Üçlüleri Hesaplayıcı",
+          "widget": {
+            "title": "Genel Dik Üçgen Çözücü",
+            "desc": "Tüm üçgeni çözmek için herhangi iki değer girin (en az bir kenar).",
+            "legA": "Dik kenar a",
+            "legB": "Dik kenar b",
+            "hypC": "Hipotenüs c",
+            "angA": "Açı A (°)",
+            "angB": "Açı B (°)",
+            "output": "Tam üçgen"
+          }
         }
       },
       "pages": {
@@ -33344,7 +33504,17 @@
               "diagonal": "diagonal"
             }
           },
-          "triplesCalc": "Kalkylator för pythagoreiska tripplar"
+          "triplesCalc": "Kalkylator för pythagoreiska tripplar",
+          "widget": {
+            "title": "Allmän lösare för rätvinkliga trianglar",
+            "desc": "Ange två valfria värden (minst en sida) för att lösa hela triangeln.",
+            "legA": "Katet a",
+            "legB": "Katet b",
+            "hypC": "Hypotenusa c",
+            "angA": "Vinkel A (°)",
+            "angB": "Vinkel B (°)",
+            "output": "Hela triangeln"
+          }
         }
       },
       "pages": {
@@ -35222,7 +35392,17 @@
               "diagonal": "对角线"
             }
           },
-          "triplesCalc": "勾股数计算器"
+          "triplesCalc": "勾股数计算器",
+          "widget": {
+            "title": "直角三角形通用求解器",
+            "desc": "输入任意两个值（至少一条边）即可求解整个三角形。",
+            "legA": "直角边 a",
+            "legB": "直角边 b",
+            "hypC": "斜边 c",
+            "angA": "角 A（度）",
+            "angB": "角 B（度）",
+            "output": "完整三角形"
+          }
         }
       },
       "pages": {

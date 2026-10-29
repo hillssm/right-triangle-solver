@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="520" viewBox="0 0 640 520">
+<title>Segitiga siku-siku dengan sudut yang dapat dipilih untuk menyorot sisi depan dan sisi samping</title>
+<desc>Segitiga siku-siku dengan sudut yang dapat dipilih untuk menyorot sisi depan dan sisi samping</desc>
+<polygon points="150.0,150.0 360.0,430.0 150.0,430.0" fill="rgba(241,201,125,0.07)" />
+<line x1="150.0" y1="430.0" x2="360.0" y2="430.0" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+<line x1="150.0" y1="430.0" x2="150.0" y2="150.0" stroke="#fbbf24" stroke-width="3" stroke-linecap="round" />
+<line x1="150.0" y1="150.0" x2="360.0" y2="430.0" stroke="#f472b6" stroke-width="3" stroke-linecap="round" />
+<polyline points="150.0,405.0 175.0,405.0 175.0,430.0" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<g data-view="A">
+<line x1="150.0" y1="430.0" x2="360.0" y2="430.0" stroke="#38bdf8" stroke-width="9" stroke-linecap="round" opacity="0.85" />
+<text x="255.0" y="472.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#38bdf8" text-anchor="middle" font-weight="normal">Depan = a</text>
+<line x1="150.0" y1="150.0" x2="150.0" y2="430.0" stroke="#fbbf24" stroke-width="9" stroke-linecap="round" opacity="0.85" />
+<text x="136.0" y="282.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#fbbf24" text-anchor="end" font-weight="normal">Samping</text>
+<text x="136.0" y="302.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#fbbf24" text-anchor="end" font-weight="normal">= b</text>
+<text x="271.0" y="269.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#f472b6" text-anchor="middle" font-weight="normal" transform="rotate(53.13 271.0 269.0)">Hipotenusa = c</text>
+<polyline points="177.0,186.0 174.6,187.7 172.2,189.2 169.6,190.5 166.9,191.7 164.2,192.7 161.5,193.5 158.6,194.2 155.8,194.6 152.9,194.9 150.0,195.0" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<text x="172.0" y="214.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+</g>
+<g data-view="B" style="display:none">
+<line x1="150.0" y1="150.0" x2="150.0" y2="430.0" stroke="#fbbf24" stroke-width="9" stroke-linecap="round" opacity="0.85" />
+<text x="136.0" y="282.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#fbbf24" text-anchor="end" font-weight="normal">Depan</text>
+<text x="136.0" y="302.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#fbbf24" text-anchor="end" font-weight="normal">= b</text>
+<line x1="150.0" y1="430.0" x2="360.0" y2="430.0" stroke="#38bdf8" stroke-width="9" stroke-linecap="round" opacity="0.85" />
+<text x="255.0" y="472.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#38bdf8" text-anchor="middle" font-weight="normal">Samping = a</text>
+<text x="271.0" y="269.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#f472b6" text-anchor="middle" font-weight="normal" transform="rotate(53.13 271.0 269.0)">Hipotenusa = c</text>
+<polyline points="315.0,430.0 315.2,425.8 315.8,421.7 316.7,417.6 318.1,413.7 319.8,409.9 321.8,406.2 324.2,402.8 326.8,399.6 329.8,396.7 333.0,394.0" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<text x="300.0" y="404.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">B</text>
+</g>
+</svg>

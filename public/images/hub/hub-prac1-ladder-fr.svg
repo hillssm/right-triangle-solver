@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+<title>Échelle de 5 mètres appuyée contre un mur, base à 3 mètres, atteignant 4 mètres de haut</title>
+<desc>Échelle de 5 mètres appuyée contre un mur, base à 3 mètres, atteignant 4 mètres de haut</desc>
+<line x1="100.0" y1="400.0" x2="560.0" y2="400.0" stroke="#e8e6e3" stroke-width="4" stroke-linecap="round" />
+<rect x="420.0" y="100.0" width="22.0" height="300.0" fill="#3a3f4a" />
+<line x1="240.0" y1="400.0" x2="420.0" y2="160.0" stroke="#f1c97d" stroke-width="10" stroke-linecap="round" />
+<polyline points="392.0,400.0 392.0,372.0 420.0,372.0" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<text x="330.0" y="428.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="normal">3 m</text>
+<text x="404.0" y="280.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#ffffff" text-anchor="end" font-weight="normal">4 m</text>
+<text x="318.0" y="262.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f1c97d" text-anchor="middle" font-weight="normal" transform="rotate(-53.00 318.0 262.0)">5 m échelle</text>
+</svg>

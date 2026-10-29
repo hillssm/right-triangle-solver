@@ -717,7 +717,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
               answer: 'नहीं, यह कैलकुलेटर केवल लापता भुजा a ज्ञात करता है। कोण ज्ञात करने के लिए <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">समकोण त्रिभुज कोण कैलकुलेटर</a> का उपयोग करें।'
             }
           ]
-        }
+        },
   },
   "es": {
     "pythagorean-theorem-calculator": {
@@ -1434,7 +1434,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
               answer: 'No, esta calculadora solo halla el cateto faltante a. Para hallar ángulos, usa la <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">Calculadora de ángulos de triángulos rectángulos</a>.'
             }
           ]
-        }
+        },
   },
   "ru": {
     "pythagorean-theorem-calculator": {
@@ -2151,7 +2151,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
               answer: 'Нет, этот калькулятор находит только недостающий катет a. Чтобы найти углы, используйте <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">калькулятор углов прямоугольного треугольника</a>.'
             }
           ]
-        }
+        },
   },
   "fr": {
     "pythagorean-theorem-calculator": {
@@ -2868,7 +2868,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           slug: 'missing-leg-from-c-and-b-calculator',
           toolPurpose: 'N\'oubliez pas : c est l\'hypoténuse, pas un côté de l\'angle droit. C\'est le plus long <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">côté</a> du triangle et il se trouve en face de l\'<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> de 90°. Si vous connaissez les deux côtés de l\'angle droit et devez plutôt trouver l\'hypoténuse, utilisez plutôt la calculatrice du <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">théorème de Pythagore</a>.',
           url: '/missing-leg-from-c-and-b-calculator/'
-        }
+        },
   },
   "de": {
     "pythagorean-theorem-calculator": {
@@ -3585,7 +3585,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           slug: 'missing-leg-from-c-and-b-calculator',
           toolPurpose: 'Denken Sie daran: c ist die Hypotenuse, keine Kathete. Sie ist die längste <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">Seite</a> des Dreiecks und liegt dem 90°-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">Winkel</a> gegenüber. Wenn Sie beide Katheten kennen und die Hypotenuse brauchen, verwenden Sie stattdessen den <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Satz-des-Pythagoras</a>-Rechner.',
           url: '/missing-leg-from-c-and-b-calculator/'
-        }
+        },
   },
   "it": {
     "pythagorean-theorem-calculator": {
@@ -4302,7 +4302,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
               answer: 'No, questa calcolatrice trova solo il cateto mancante a. Per trovare gli angoli, usa la <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">Calcolatrice degli angoli del triangolo rettangolo</a>.'
             }
           ]
-        }
+        },
   },
   "pt": {
     "pythagorean-theorem-calculator": {
@@ -5019,7 +5019,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
               answer: 'Não, esta calculadora só encontra o cateto faltante a. Para encontrar ângulos, use a <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">Calculadora de Ângulos do Triângulo Retângulo</a>.'
             }
           ]
-        }
+        },
   },
   "bn": {
     "pythagorean-theorem-calculator": {
@@ -5736,7 +5736,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
               answer: 'না, এই ক্যালকুলেটর শুধুমাত্র হারানো বাহু a নির্ণয় করে। কোণ নির্ণয় করতে <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">সমকোণী ত্রিভুজের কোণ ক্যালকুলেটর</a> ব্যবহার করুন।'
             }
           ]
-        }
+        },
   },
   "ja": {
     "pythagorean-theorem-calculator": {
@@ -6453,7 +6453,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
               answer: 'いいえ、この計算機は欠けている辺aのみを求めます。角を求めるには<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">直角三角形の角の計算機</a>を使ってください。'
             }
           ]
-        }
+        },
   },
   "ko": {
     "pythagorean-theorem-calculator": {
@@ -7170,7 +7170,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
               answer: '아니요, 이 계산기는 빠진 변 a만 구합니다. 각도를 구하려면 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">직각삼각형 각도 계산기</a>를 사용하세요.'
             }
           ]
-        }
+        },
   },
   "ms": {
     "pythagorean-theorem-calculator": {
@@ -7887,7 +7887,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
               answer: 'Tidak, kalkulator ini hanya mencari sisi a yang hilang. Untuk mencari sudut, gunakan <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">Kalkulator Sudut Segi Tiga Tepat</a>.'
             }
           ]
-        }
+        },
   },
   "pl": {
     "pythagorean-theorem-calculator": {
@@ -8604,7 +8604,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
               answer: 'Nie, ten kalkulator znajduje tylko brakującą przyprostokątną a. Aby znaleźć kąty, użyj <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">Kalkulatora kątów trójkąta prostokątnego</a>.'
             }
           ]
-        }
+        },
   },
   "id": {
     "pythagorean-theorem-calculator": {
@@ -9321,7 +9321,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
               answer: 'Tidak, kalkulator ini hanya mencari sisi a yang hilang. Untuk mencari sudut, gunakan <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">Kalkulator Sudut Segitiga Siku-Siku</a>.'
             }
           ]
-        }
+        },
   },
   "ar": {
     "pythagorean-theorem-calculator": {
@@ -10038,7 +10038,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
               answer: 'لا، هذه الحاسبة تجد الضلع المفقود a فقط. لإيجاد الزوايا، استخدم <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">حاسبة زوايا المثلث القائم الزاوية</a>.'
             }
           ]
-        }
+        },
   },
   "bg": {
     "pythagorean-theorem-calculator": {
@@ -10755,7 +10755,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
               answer: 'Не, този калкулатор намира само липсващия катет a. За намиране на ъгли използвайте <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">калкулатора за ъгли на правоъгълен триъгълник</a>.'
             }
           ]
-        }
+        },
   },
   "tr": {
     "pythagorean-theorem-calculator": {
@@ -11472,7 +11472,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
               answer: 'Hayır, bu hesaplayıcı yalnızca eksik a dik kenarını bulur. Açıları bulmak için <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">Dik Üçgen Açı Hesaplayıcısını</a> kullanın.'
             }
           ]
-        }
+        },
   },
   "sv": {
     "pythagorean-theorem-calculator": {
@@ -12189,7 +12189,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
               answer: 'Nej, den här kalkylatorn hittar endast den saknade kateten a. För att hitta vinklar, använd <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">Rätvinklig triangel vinkelkalkylator</a>.'
             }
           ]
-        }
+        },
   },
   "zh": {
     "pythagorean-theorem-calculator": {
@@ -12906,6 +12906,6 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
               answer: '不能，本计算器只求缺失的直角边 a。要计算角度，请使用<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">直角三角形角度计算器</a>。'
             }
           ]
-        }
+        },
   }
 } as const;

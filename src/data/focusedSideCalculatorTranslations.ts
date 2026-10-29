@@ -2175,7 +2175,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           diagram: {
             caption: "Schéma de triangle rectangle avec les côtés a et b connus et l'hypoténuse c inconnue.",
             h2: "Schéma du triangle rectangle : trouver l'hypoténuse",
-            intro: 'Trouvez l’hypoténuse c d’un triangle rectangle à partir des côtés a et b. Entrez les deux valeurs pour calculer c instantanément.',
+            intro: 'Le schéma montre la relation exacte des <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">côtés</a> utilisée par l\'outil. Les deux côtés de l\'angle droit sont les valeurs connues saisies, et le côté incliné c est l\'hypoténuse que la <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculatrice</a> trouve.',
             notes: [
               "a et b peuvent être intervertis ; le résultat de l'hypoténuse sera le même.",
               'Utilisez la même unité pour les deux côtés avant de calculer.',
@@ -2348,7 +2348,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
               'Vérifiez la réponse en contrôlant que a² + b² est égal à c².'
             ]
           },
-          intro: 'Cette <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculatrice</a> trouve l\'hypoténuse c d\'un triangle rectangle lorsque vous connaissez les deux côtés perpendiculaires a et b. L\'hypoténuse se trouve en face de l\'angle de 90° et est toujours le côté le plus long d\'un triangle rectangle valide. Entrez vos deux valeurs de côtés ci-dessus pour obtenir le résultat instantanément avec une solution complète étape par étape.',
+          intro: 'Trouvez l’hypoténuse c d’un triangle rectangle à partir des côtés a et b. Entrez les deux valeurs pour calculer c instantanément.',
           metaDescription: "Calculez l'hypoténuse d'un triangle rectangle à partir de deux côtés connus. Apprenez le théorème de Pythagore, suivez les exemples détaillés et vérifiez votre réponse.",
           metaTitle: "Calculatrice du théorème de Pythagore | Trouver l'hypoténuse",
           quickSummary: {
@@ -2892,7 +2892,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           diagram: {
             caption: 'Rechtwinkliges Dreieck mit bekannten Katheten a und b und unbekannter Hypotenuse c.',
             h2: 'Rechtwinkliges Dreieck: Die Hypotenuse finden',
-            intro: 'Finden Sie die Hypotenuse c eines rechtwinkligen Dreiecks aus den Katheten a und b. Geben Sie beide Werte ein, um c sofort zu berechnen.',
+            intro: 'Das Diagramm zeigt die genaue <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">Seiten</a>beziehung, die das Tool verwendet. Die beiden Katheten sind die bekannten Eingabewerte, und die schräge Seite c ist die Hypotenuse, die der <a href="/right-triangle-calculator/" class="text-primary hover:underline">Rechner</a> findet.',
             notes: [
               'a und b können vertauscht werden; das Hypotenusen-Ergebnis bleibt gleich.',
               'Verwenden Sie vor der Berechnung dieselbe Einheit für beide Katheten.',
@@ -3065,7 +3065,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
               'Verifizieren Sie die Antwort, indem Sie prüfen, dass a&sup2; + b&sup2; gleich c&sup2; ist.'
             ]
           },
-          intro: 'Dieser <a href="/right-triangle-calculator/" class="text-primary hover:underline">Rechner</a> findet die Hypotenuse c eines rechtwinkligen Dreiecks, wenn Sie beide senkrechten Katheten a und b kennen. Die Hypotenuse liegt dem 90&deg;-Winkel gegenüber und ist immer die längste Seite eines gültigen rechtwinkligen Dreiecks. Geben Sie oben Ihre beiden Kathetenwerte ein, um das Ergebnis sofort mit einer vollständigen Schritt-für-Schritt-Lösung zu erhalten.',
+          intro: 'Finden Sie die Hypotenuse c eines rechtwinkligen Dreiecks aus den Katheten a und b. Geben Sie beide Werte ein, um c sofort zu berechnen.',
           metaDescription: 'Berechnen Sie die Hypotenuse eines rechtwinkligen Dreiecks aus zwei bekannten Katheten. Lernen Sie den Satz des Pythagoras, folgen Sie den gelösten Beispielen und prüfen Sie Ihre Antwort.',
           metaTitle: 'Satz-des-Pythagoras-Rechner | Hypotenuse finden',
           quickSummary: {

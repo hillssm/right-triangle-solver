@@ -1086,41 +1086,310 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       ]
     },
     extraSections: [
-      {
-        h2: 'What the Result Means',
-        paragraphs: [
-          'The output labeled Adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b is the side that sits next to <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A and also touches the right angle. In real-world problems, this is often the horizontal distance, ground run, or base measurement.',
-          'Like the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, the adjacent side is always shorter than the hypotenuse. If the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is small, b will be close to c. If the angle is large (near 90 degrees), b shrinks toward zero.'
-        ]
-      },
-      {
-        h2: 'When to Use This Calculator',
-        paragraphs: [
-          'Choose this tool when you have the hypotenuse and an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and need the horizontal or base component. This pattern appears in slope calculations, shadow problems, and structural layout tasks.',
-          'It pairs naturally with the sine <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>. Together, they let you split the hypotenuse into its opposite and adjacent components from the same <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.'
-        ],
-        listTitle: 'Common situations:',
-        listItems: [
-          'Finding the horizontal distance a ladder covers on the ground from ladder length and <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
-          'Calculating the ground run of a ramp when the ramp length and <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> are known.',
-          'Determining the shadow length cast by a pole when the sun <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and pole-to-tip distance are given.',
-          'Breaking a force vector into its horizontal component in physics problems.'
-        ]
-      },
-      {
-        h2: 'Common Mistakes',
-        paragraphs: [
-          'The most frequent error is mixing up which trig function to use. Sine and cosine both use the hypotenuse, but they return different sides. Cosine gives the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, sine gives the opposite.'
-        ],
-        listTitle: 'Watch out for:',
-        listItems: [
-          'Using sine instead of cosine. Sine returns the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, not the adjacent.',
-          'Entering the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> instead of the hypotenuse.',
-          'Confusing <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b with side a. Side b is adjacent to <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A, side a is opposite.',
-          'Forgetting that c is the hypotenuse and never <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a or side b.',
-          'Using an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> in radians when the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> expects degrees.'
-        ]
-      }
+    {
+      h2: 'How to Find the Adjacent Side Using Cosine',
+      paragraphs: [
+        'A 5 m ladder leans against a wall, making a 65-degree angle with the ground. You know the ladder length and the angle, but how far is the base from the wall? That horizontal distance is the adjacent leg of a right triangle, and cosine finds it directly. A cosine side calculator takes the hypotenuse and one acute angle as inputs and returns the adjacent side, no manual trigonometry tables required.',
+        'This page explains the cosine formula from first principles: what the adjacent side means, why cosine uses the hypotenuse, how to identify the correct sides in any diagram orientation, and how to apply the result to real measurements. The formula is b = c \u00d7 cos(A), where b is the side next to angle A, c is the hypotenuse, and A is measured in degrees. Unlike a basic Pythagorean calculator that needs two sides, this tool works when you know one side and one angle.',
+      ],
+    },
+    {
+      h2: 'Understanding the Adjacent Side and Hypotenuse',
+      paragraphs: [],
+      customHtml: `<h3>What Is a Right Triangle?</h3>
+<p>A right triangle contains one angle measuring exactly 90 degrees. The other two angles are acute (each less than 90 degrees) and complementary, meaning they sum to 90 degrees. If angle A is 30 degrees, the other acute angle B must be 60 degrees. Cosine calculations require this right-angle structure because the ratio definitions depend on the perpendicular relationship between the legs.</p>
+<h3>What Is the Hypotenuse?</h3>
+<p>The hypotenuse sits opposite the right angle and is always the longest side. It is labeled c by convention. To find it in a rotated diagram, look for the side that does not touch the right-angle marker. In this calculator, you enter the hypotenuse as a known value.</p>
+<h3>What Is the Adjacent Side?</h3>
+<p>The adjacent side is the leg that touches both the reference angle A and the right angle. For angle A, side b is adjacent and side a is opposite. If you switch your reference to angle B, the labels swap: side a becomes adjacent and side b becomes opposite. The hypotenuse never changes; it is always c, opposite the 90-degree angle.</p>
+<figure class="my-6">
+<img src="/images/cosine/cosine-anatomy.svg" alt="Right triangle with angle A at bottom-left, adjacent leg b, opposite leg a, and hypotenuse c labeled" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+<figcaption class="mt-2 text-center text-sm text-on-surface-variant">Anatomy for cosine: angle A at the bottom-left, adjacent leg b along the base, opposite leg a vertical, hypotenuse c across from the right angle.</figcaption>
+</figure>`,
+    },
+    {
+      h2: 'What Is Cosine in a Right Triangle?',
+      paragraphs: [],
+      customHtml: `<p>Cosine expresses a simple ratio: for a given acute angle, the adjacent leg divided by the hypotenuse always gives the same number. That number is cos(A). If angle A is 60 degrees, cos(60\u00b0) = 0.5, which means the adjacent side is exactly half the hypotenuse, no matter how large or small the triangle is.</p>
+<p>The ratio has no units because the units cancel: meters divided by meters leaves a pure number. To find the adjacent side, rearrange the ratio. Start with cos(A) = b / c. Multiply both sides by c. The c in the denominator cancels, leaving <strong>b = c \u00d7 cos(A)</strong>. The formula multiplies the known hypotenuse by the cosine of the known angle.</p>
+<p>For any valid acute angle (between 0 and 90 degrees), cos(A) is between 0 and 1. This guarantees the adjacent leg is shorter than the hypotenuse, which matches the geometry: no leg can exceed the hypotenuse.</p>
+<h3>Understanding SOH-CAH-TOA</h3>
+<p>SOH-CAH-TOA is a memory aid for the three basic ratios. SOH: Sine = Opposite / Hypotenuse. CAH: Cosine = Adjacent / Hypotenuse. TOA: Tangent = Opposite / Adjacent. For this page, focus on CAH. The mnemonic helps you pick the right ratio, but you still need to correctly identify which side is adjacent to your reference angle.</p>
+<figure class="my-6">
+<img src="/images/cosine/cosine-ratio.svg" alt="Right triangle highlighting adjacent leg b and hypotenuse c with cos(A) equals b divided by c" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+<figcaption class="mt-2 text-center text-sm text-on-surface-variant">The cosine ratio: divide the highlighted adjacent leg b by the highlighted hypotenuse c to get cos(A).</figcaption>
+</figure>`,
+    },
+    {
+      h2: 'How to Use the Right Triangle Side From Cosine Calculator',
+      paragraphs: [
+        'Follow these steps to get an accurate result.',
+      ],
+      listTitle: 'Steps:',
+      listItems: [
+        'Identify the right angle in your triangle. Confirm one corner measures 90 degrees.',
+        'Identify the known acute angle A. Make sure it is not the right angle.',
+        'Locate the hypotenuse c. It is the side opposite the right angle, always the longest side.',
+        'Identify the adjacent leg b. It touches both angle A and the right angle.',
+        'Enter the hypotenuse length c into the first input field.',
+        'Enter angle A in degrees into the second field.',
+        'Select the measurement unit that matches your hypotenuse input.',
+        'Press Calculate. The result shows the adjacent side b with solution steps.',
+        'Review the steps to confirm the formula and substitution match your problem.',
+        'Check that b is shorter than c. If not, recheck which side you entered as the hypotenuse.',
+      ],
+    },
+    {
+      h2: 'How to Calculate the Adjacent Side Using Cosine',
+      paragraphs: [],
+      customHtml: `<article class="mb-8">
+<h3>Example 1: A Basic Right Triangle</h3>
+<p><strong>Given:</strong> c = 10 m, A = 30\u00b0. <strong>Find:</strong> b.</p>
+<p><strong>Formula:</strong> b = c \u00d7 cos(A)</p>
+<p><strong>Substitution:</strong> b = 10 \u00d7 cos(30\u00b0)</p>
+<p><strong>Cosine value:</strong> cos(30\u00b0) \u2248 0.8660254</p>
+<p><strong>Calculation:</strong> b \u2248 10 \u00d7 0.8660254 = 8.660254</p>
+<p><strong>Answer:</strong> <strong>b \u2248 8.66 m</strong></p>
+<p>The result is shorter than the 10 m hypotenuse, as expected. At 30 degrees, the adjacent side is about 87% of the hypotenuse length.</p>
+</article>
+<article class="mb-8">
+<h3>Example 2: A Special Angle</h3>
+<p><strong>Given:</strong> c = 12 ft, A = 60\u00b0. <strong>Find:</strong> b.</p>
+<p><strong>Calculation:</strong> b = 12 \u00d7 cos(60\u00b0) = 12 \u00d7 0.5 = 6</p>
+<p><strong>Answer:</strong> <strong>b = 6 ft</strong></p>
+<p>At 60 degrees, cos(A) = 0.5 exactly, so the adjacent leg is precisely half the hypotenuse. Special angles like 30\u00b0, 45\u00b0, and 60\u00b0 give clean cosine values worth remembering.</p>
+</article>
+<article class="mb-8">
+<h3>Example 3: A Decimal Measurement</h3>
+<p><strong>Given:</strong> c = 7.5 m, A = 42\u00b0. <strong>Find:</strong> b.</p>
+<p><strong>Calculation:</strong> b = 7.5 \u00d7 cos(42\u00b0) \u2248 7.5 \u00d7 0.7431448 \u2248 5.573586</p>
+<p><strong>Answer:</strong> <strong>b \u2248 5.57 m</strong></p>
+<p>Keep full precision in the cosine value during calculation and round only the final answer. Rounding cos(42\u00b0) to 0.74 early would give 5.55 m, introducing a small but avoidable error.</p>
+</article>
+<article class="mb-8">
+<h3>Example 4: An Angle Close to 90 Degrees</h3>
+<p><strong>Given:</strong> c = 15 cm, A = 80\u00b0. <strong>Find:</strong> b.</p>
+<p><strong>Calculation:</strong> b = 15 \u00d7 cos(80\u00b0) \u2248 15 \u00d7 0.1736482 \u2248 2.6047</p>
+<p><strong>Answer:</strong> <strong>b \u2248 2.60 cm</strong></p>
+<p>As the angle approaches 90 degrees, the adjacent leg shrinks toward zero. At 80\u00b0, the adjacent side is only about 17% of the hypotenuse. This is normal geometry, not a calculation error.</p>
+</article>
+<figure class="my-6">
+<img src="/images/cosine/cosine-steps.svg" alt="Step-by-step cosine calculation: 10 m hypotenuse, 30 degree angle, adjacent side equals 8.66 m" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+<figcaption class="mt-2 text-center text-sm text-on-surface-variant">Worked solution: b = 10 \u00d7 cos(30\u00b0) \u2248 8.66 m, with each substitution step shown.</figcaption>
+</figure>`,
+    },
+    {
+      h2: 'Real-Life Examples of Cosine Calculations',
+      paragraphs: [
+        'These examples show how the cosine formula solves practical measurement problems. In each case, the known sloped or diagonal length is the hypotenuse, and the desired horizontal distance is the adjacent leg.',
+      ],
+      customHtml: `<article class="mb-8">
+<h3>Example 5: Finding the Horizontal Distance of a Ladder</h3>
+<p>A 5 m ladder rests against a wall and makes a 65-degree angle with level ground. Find the horizontal distance from the wall to the foot of the ladder.</p>
+<p><strong>Given:</strong> c = 5 m (ladder), A = 65\u00b0. <strong>Find:</strong> b (ground distance).</p>
+<p><strong>Why adjacent:</strong> The ground distance touches both the 65\u00b0 angle and the right angle where wall meets ground.</p>
+<p><strong>Calculation:</strong> b = 5 \u00d7 cos(65\u00b0) \u2248 5 \u00d7 0.4226183 \u2248 2.1131</p>
+<p><strong>Answer:</strong> <strong>b \u2248 2.11 m</strong></p>
+<p>The base sits about 2.11 m from the wall. This is a geometric calculation only and does not determine whether the ladder setup is safe.</p>
+</article>
+<article class="mb-8">
+<h3>Example 6: Finding a Roof's Horizontal Run</h3>
+<p>A roof rafter is 4.5 m long and makes a 30-degree angle with the horizontal. Find its horizontal run.</p>
+<p><strong>Given:</strong> c = 4.5 m (rafter), A = 30\u00b0. <strong>Find:</strong> b (horizontal run).</p>
+<p><strong>Calculation:</strong> b = 4.5 \u00d7 cos(30\u00b0) \u2248 4.5 \u00d7 0.8660254 \u2248 3.8971</p>
+<p><strong>Answer:</strong> <strong>b \u2248 3.90 m</strong></p>
+<p>The sloping rafter (4.5 m) covers 3.90 m horizontally. The difference matters when ordering materials: you need 4.5 m of lumber for a 3.90 m horizontal span. Roof overhangs, joints, and construction allowances are not included.</p>
+</article>
+<article class="mb-8">
+<h3>Example 7: Calculating the Horizontal Run of a Ramp</h3>
+<p>A simplified ramp has a sloping length of 8 m and an angle of 6 degrees relative to the horizontal. Find its horizontal run.</p>
+<p><strong>Given:</strong> c = 8 m (slope), A = 6\u00b0. <strong>Find:</strong> b (horizontal run).</p>
+<p><strong>Calculation:</strong> b = 8 \u00d7 cos(6\u00b0) \u2248 8 \u00d7 0.9945219 \u2248 7.9562</p>
+<p><strong>Answer:</strong> <strong>b \u2248 7.96 m</strong></p>
+<p>At a shallow 6\u00b0 angle, the horizontal run (7.96 m) is nearly equal to the slope length (8 m). The slope is always slightly longer than the horizontal projection. This does not verify accessibility or building-code compliance.</p>
+</article>
+<article class="mb-8">
+<h3>Example 8: Finding the Horizontal Reach of a Cable</h3>
+<p>A cable is 20 m long and forms a 55-degree angle with the horizontal. Calculate the horizontal component.</p>
+<p><strong>Given:</strong> c = 20 m, A = 55\u00b0. <strong>Find:</strong> b.</p>
+<p><strong>Calculation:</strong> b = 20 \u00d7 cos(55\u00b0) \u2248 20 \u00d7 0.5735764 \u2248 11.4715</p>
+<p><strong>Answer:</strong> <strong>b \u2248 11.47 m</strong></p>
+<p>The steeper the angle, the shorter the horizontal reach. At 55\u00b0, the cable covers 11.47 m horizontally while rising significantly.</p>
+</article>
+<article class="mb-8">
+<h3>Example 9: Estimating Horizontal Distance in Surveying</h3>
+<p>A simplified line of sight is 150 m long and makes a 12-degree angle with the horizontal. Find its horizontal component.</p>
+<p><strong>Given:</strong> c = 150 m, A = 12\u00b0. <strong>Find:</strong> b.</p>
+<p><strong>Calculation:</strong> b = 150 \u00d7 cos(12\u00b0) \u2248 150 \u00d7 0.9781476 \u2248 146.7221</p>
+<p><strong>Answer:</strong> <strong>b \u2248 146.72 m</strong></p>
+<p>The horizontal distance is 146.72 m, slightly less than the 150 m sight line. Actual surveying requires corrections for curvature, terrain, and instrument height; this example covers the basic geometry only.</p>
+</article>
+<article class="mb-8">
+<h3>Example 10: Finding the Horizontal Component of a Wire</h3>
+<p>A wire is 13 m long and forms a 22-degree angle with level ground. Find its horizontal projection.</p>
+<p><strong>Given:</strong> c = 13 m, A = 22\u00b0. <strong>Find:</strong> b.</p>
+<p><strong>Calculation:</strong> b = 13 \u00d7 cos(22\u00b0) \u2248 13 \u00d7 0.9271839 \u2248 12.0534</p>
+<p><strong>Answer:</strong> <strong>b \u2248 12.05 m</strong></p>
+<p>The horizontal component (12.05 m) is less than the full wire length (13 m) because part of the wire's length goes into vertical rise.</p>
+</article>
+<article class="mb-8">
+<h3>Example 11: Calculating the Horizontal Offset of a Brace</h3>
+<p>A diagonal brace is 2.4 m long and forms a 40-degree angle with the horizontal. Calculate its horizontal projection.</p>
+<p><strong>Given:</strong> c = 2.4 m, A = 40\u00b0. <strong>Find:</strong> b.</p>
+<p><strong>Calculation:</strong> b = 2.4 \u00d7 cos(40\u00b0) \u2248 2.4 \u00d7 0.7660444 \u2248 1.8385</p>
+<p><strong>Answer:</strong> <strong>b \u2248 1.84 m</strong></p>
+<p>This measurement helps interpret a drawing: the brace spans 1.84 m horizontally. The calculation is geometric and does not verify structural strength or design compliance.</p>
+</article>
+<article class="mb-8">
+<h3>Example 12: Finding the Ground Distance of a Guy Wire</h3>
+<p>A guy wire is 18 m long and forms a 35-degree angle with level ground. Calculate the horizontal distance between the anchor point and the point directly below the wire's attachment.</p>
+<p><strong>Given:</strong> c = 18 m, A = 35\u00b0. <strong>Find:</strong> b.</p>
+<p><strong>Calculation:</strong> b = 18 \u00d7 cos(35\u00b0) \u2248 18 \u00d7 0.8191520 \u2248 14.7447</p>
+<p><strong>Answer:</strong> <strong>b \u2248 14.74 m</strong></p>
+<p>The wire itself is the hypotenuse because it stretches from the ground anchor up to the attachment point, opposite the right angle formed by the vertical structure and level ground.</p>
+</article>
+<article class="mb-8">
+<h3>Example 13: Estimating Horizontal Travel on a Slope</h3>
+<p>A simplified sloping path measures 250 m and makes an 18-degree angle with the horizontal. Calculate the horizontal component.</p>
+<p><strong>Given:</strong> c = 250 m, A = 18\u00b0. <strong>Find:</strong> b.</p>
+<p><strong>Calculation:</strong> b = 250 \u00d7 cos(18\u00b0) \u2248 250 \u00d7 0.9510565 \u2248 237.7641</p>
+<p><strong>Answer:</strong> <strong>b \u2248 237.76 m</strong></p>
+<p>Walking 250 m along the slope covers 237.76 m of horizontal distance. The slope distance is always longer than the horizontal displacement.</p>
+</article>
+<article class="mb-8">
+<h3>Example 14: Calculating a Walkway's Horizontal Run</h3>
+<p>A sloping walkway is 6 m long and makes an 8-degree angle with the horizontal. Calculate its horizontal run.</p>
+<p><strong>Given:</strong> c = 6 m, A = 8\u00b0. <strong>Find:</strong> b.</p>
+<p><strong>Calculation:</strong> b = 6 \u00d7 cos(8\u00b0) \u2248 6 \u00d7 0.9902681 \u2248 5.9416</p>
+<p><strong>Answer:</strong> <strong>b \u2248 5.94 m</strong></p>
+<p>At 8\u00b0, the walkway is gentle enough that the horizontal run (5.94 m) is close to the slope length (6 m). The result alone does not prove accessibility compliance.</p>
+</article>
+<article class="mb-8">
+<h3>Example 15: Finding a Mechanical Link's Horizontal Projection</h3>
+<p>A mechanical link is 850 mm long and is positioned at a 25-degree angle to the horizontal. Calculate its horizontal component.</p>
+<p><strong>Given:</strong> c = 850 mm, A = 25\u00b0. <strong>Find:</strong> b.</p>
+<p><strong>Calculation:</strong> b = 850 \u00d7 cos(25\u00b0) \u2248 850 \u00d7 0.9063078 \u2248 770.3616</p>
+<p><strong>Answer:</strong> <strong>b \u2248 770.36 mm</strong></p>
+<p>The cosine relationship works identically in millimeters. The unit of the answer always matches the unit of the hypotenuse input.</p>
+</article>
+<article class="mb-8">
+<h3>Example 16: Calculating the Horizontal Component of a Sloping Support</h3>
+<p>A support member is 3.2 ft long and forms a 48-degree angle with the horizontal. Calculate its horizontal projection.</p>
+<p><strong>Given:</strong> c = 3.2 ft, A = 48\u00b0. <strong>Find:</strong> b.</p>
+<p><strong>Calculation:</strong> b = 3.2 \u00d7 cos(48\u00b0) \u2248 3.2 \u00d7 0.6691306 \u2248 2.1412</p>
+<p><strong>Answer:</strong> <strong>b \u2248 2.14 ft</strong></p>
+<p>When reading a dimensional drawing, this tells you the support covers 2.14 ft horizontally. The calculation is geometric, not a structural safety check.</p>
+</article>
+<div class="not-prose overflow-x-auto my-6">
+<table class="w-full min-w-[560px] border-collapse text-sm">
+<thead>
+<tr class="border-b border-outline-variant/30 text-left">
+<th class="py-2 pr-4 font-semibold">Scenario</th>
+<th class="py-2 pr-4 font-semibold">Hypotenuse</th>
+<th class="py-2 pr-4 font-semibold">Angle</th>
+<th class="py-2 pr-4 font-semibold">Formula</th>
+<th class="py-2 font-semibold">Adjacent Side</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Ladder</td><td class="py-2 pr-4">5 m</td><td class="py-2 pr-4">65\u00b0</td><td class="py-2 pr-4 font-mono">b = 5 \u00d7 cos(65\u00b0)</td><td class="py-2">2.11 m</td></tr>
+<tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Roof rafter</td><td class="py-2 pr-4">4.5 m</td><td class="py-2 pr-4">30\u00b0</td><td class="py-2 pr-4 font-mono">b = 4.5 \u00d7 cos(30\u00b0)</td><td class="py-2">3.90 m</td></tr>
+<tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Cable</td><td class="py-2 pr-4">20 m</td><td class="py-2 pr-4">55\u00b0</td><td class="py-2 pr-4 font-mono">b = 20 \u00d7 cos(55\u00b0)</td><td class="py-2">11.47 m</td></tr>
+<tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Survey sight</td><td class="py-2 pr-4">150 m</td><td class="py-2 pr-4">12\u00b0</td><td class="py-2 pr-4 font-mono">b = 150 \u00d7 cos(12\u00b0)</td><td class="py-2">146.72 m</td></tr>
+<tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Guy wire</td><td class="py-2 pr-4">18 m</td><td class="py-2 pr-4">35\u00b0</td><td class="py-2 pr-4 font-mono">b = 18 \u00d7 cos(35\u00b0)</td><td class="py-2">14.74 m</td></tr>
+<tr class="border-b border-outline-variant/15 last:border-0"><td class="py-2 pr-4">Walkway</td><td class="py-2 pr-4">6 m</td><td class="py-2 pr-4">8\u00b0</td><td class="py-2 pr-4 font-mono">b = 6 \u00d7 cos(8\u00b0)</td><td class="py-2">5.94 m</td></tr>
+</tbody>
+</table>
+</div>
+<figure class="my-6">
+<img src="/images/cosine/cosine-applications.svg" alt="Four panels: ladder, roof rafter, cable, and walkway showing horizontal projections calculated with cosine" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+<figcaption class="mt-2 text-center text-sm text-on-surface-variant">Cosine in practice: each panel shows the hypotenuse, the reference angle, and the calculated horizontal (adjacent) distance.</figcaption>
+</figure>`,
+    },
+    {
+      h2: 'When Should You Use Cosine Instead of Sine or Tangent?',
+      paragraphs: [],
+      customHtml: `<p>Each trigonometric ratio connects a different pair of sides. Pick the one that matches your known and unknown values.</p>
+<div class="not-prose overflow-x-auto my-6">
+<table class="w-full min-w-[480px] border-collapse text-sm">
+<thead>
+<tr class="border-b border-outline-variant/30 text-left">
+<th class="py-2 pr-4 font-semibold">Ratio</th>
+<th class="py-2 pr-4 font-semibold">Formula</th>
+<th class="py-2 pr-4 font-semibold">Known</th>
+<th class="py-2 font-semibold">Finds</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-outline-variant/15"><td class="py-2 pr-4 font-semibold">Cosine</td><td class="py-2 pr-4 font-mono">b = c \u00d7 cos(A)</td><td class="py-2 pr-4">Hypotenuse, angle</td><td class="py-2">Adjacent leg</td></tr>
+<tr class="border-b border-outline-variant/15"><td class="py-2 pr-4 font-semibold">Sine</td><td class="py-2 pr-4 font-mono">a = c \u00d7 sin(A)</td><td class="py-2 pr-4">Hypotenuse, angle</td><td class="py-2">Opposite leg</td></tr>
+<tr class="border-b border-outline-variant/15 last:border-0"><td class="py-2 pr-4 font-semibold">Tangent</td><td class="py-2 pr-4 font-mono">a = b \u00d7 tan(A)</td><td class="py-2 pr-4">Adjacent leg, angle</td><td class="py-2">Opposite leg</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>What goes wrong with the wrong ratio:</strong> Suppose c = 10 m and A = 30\u00b0, and you need the adjacent side. Using sine by mistake gives a = 10 \u00d7 sin(30\u00b0) = 5 m, which is the opposite leg, not the adjacent. The correct cosine calculation gives b \u2248 8.66 m. The two answers differ because they measure different sides. Always confirm which side touches your reference angle before choosing.</p>`,
+    },
+    {
+      h2: 'How the Angle Changes the Adjacent Side',
+      paragraphs: [],
+      customHtml: `<p>With the hypotenuse fixed, the adjacent leg shrinks as angle A grows. At 0\u00b0, cos(A) = 1 and the adjacent leg equals the full hypotenuse (the triangle flattens into a line). At 90\u00b0, cos(A) = 0 and the adjacent leg vanishes. Between these extremes, the relationship is smooth and predictable.</p>
+<div class="not-prose overflow-x-auto my-6">
+<table class="w-full min-w-[400px] border-collapse text-sm">
+<thead>
+<tr class="border-b border-outline-variant/30 text-left">
+<th class="py-2 pr-4 font-semibold">Angle A</th>
+<th class="py-2 pr-4 font-semibold">cos(A)</th>
+<th class="py-2 font-semibold">Adjacent b (c = 10)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">30\u00b0</td><td class="py-2 pr-4">0.8660</td><td class="py-2">8.66</td></tr>
+<tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">45\u00b0</td><td class="py-2 pr-4">0.7071</td><td class="py-2">7.07</td></tr>
+<tr class="border-b border-outline-variant/15 last:border-0"><td class="py-2 pr-4">60\u00b0</td><td class="py-2 pr-4">0.5000</td><td class="py-2">5.00</td></tr>
+</tbody>
+</table>
+</div>
+<p>Notice the pattern: doubling the angle from 30\u00b0 to 60\u00b0 does not halve the side, because cosine is not linear. Two triangles with the same angle but different hypotenuses are similar, so their side ratios match even though the absolute lengths differ. A 5 m hypotenuse at 30\u00b0 gives b \u2248 4.33 m, exactly half of the 10 m case.</p>
+<p>Note: 0\u00b0 and 90\u00b0 are not valid acute angles for a non-degenerate right triangle. They represent limiting cases where the triangle collapses.</p>`,
+    },
+    {
+      h2: 'Entering Angles and Measurements Correctly',
+      paragraphs: [
+        'This calculator expects angles in degrees. Degrees divide a full circle into 360 parts; radians use a different scale where a full circle is about 6.283. Entering 30 radians when you mean 30 degrees produces a wildly wrong answer because cos(30 radians) \u2248 0.154, not 0.866. Always confirm your angle is in degrees before calculating.',
+        'Use the same length unit for the hypotenuse as you want in the answer. If c is in meters, b comes out in meters. Mixing units, such as entering c = 5 (meters) while thinking in feet, guarantees a wrong result. Convert first, then calculate.',
+        'Round only the final answer, not intermediate values. The cosine of 42\u00b0 is 0.743144825..., and using the full value gives b = 5.5736 m for c = 7.5 m. Rounding the cosine to 0.74 first gives 5.55 m, an error of nearly 2.4 cm. Your result cannot be more precise than your least precise input: if you measured the hypotenuse to the nearest centimeter, do not report the answer in millimeters.',
+      ],
+    },
+    {
+      h2: 'Common Cosine Calculation Mistakes and How to Avoid Them',
+      paragraphs: [],
+      customHtml: `<p><strong>1. Confusing the adjacent side with the opposite side.</strong> The adjacent side touches angle A; the opposite side does not. Fix: trace from angle A along each leg and confirm which one forms the angle.</p>
+<p><strong>2. Using the leg as the hypotenuse.</strong> Entering a leg value into the hypotenuse field inflates the result. Fix: the hypotenuse is always opposite the right angle and always the longest side.</p>
+<p><strong>3. Forgetting to multiply by the hypotenuse.</strong> Answering cos(30\u00b0) \u2248 0.866 instead of 10 \u00d7 0.866 \u2248 8.66. Fix: the ratio alone is not a length; multiply by c.</p>
+<p><strong>4. Dividing instead of multiplying.</strong> Computing c / cos(A) instead of c \u00d7 cos(A). Division applies to the tangent mode for finding b from a, not to cosine. Fix: check the rearranged formula.</p>
+<p><strong>5. Using the wrong reference angle.</strong> Measuring from angle B instead of angle A swaps adjacent and opposite. Fix: label your reference angle before identifying sides.</p>
+<p><strong>6. Entering radians when degrees are expected.</strong> cos(1 radian) \u2248 0.540 differs from cos(1\u00b0) \u2248 0.99985. Fix: confirm degree mode.</p>
+<p><strong>7. Mixing units.</strong> Entering c = 5 (meters) and expecting feet. Fix: convert all inputs to one unit first.</p>
+<p><strong>8. Rounding intermediate values too early.</strong> Rounding cos(42\u00b0) to 0.74 before multiplying compounds the error. Fix: keep full precision until the final step.</p>
+<p><strong>9. Applying cosine to a non-right triangle.</strong> The ratio definitions assume a 90-degree angle. Fix: verify the right angle exists before using this calculator.</p>
+<p><strong>10. Accepting a result longer than the hypotenuse.</strong> If b \u003e c, something is wrong. Fix: recheck inputs; cos(A) never exceeds 1 for acute angles.</p>
+<p><strong>11. Entering zero, negative, or invalid measurements.</strong> Side lengths must be positive. Fix: use positive lengths only.</p>
+<p><strong>12. Treating a near-zero adjacent side as an error.</strong> At 89\u00b0, b \u2248 0.017c, which is correct geometry, not a bug. Fix: recognize that steep angles naturally produce short adjacent sides.</p>`,
+    },
+    {
+      h2: 'How to Check Whether Your Cosine Result Is Correct',
+      paragraphs: [],
+      customHtml: `<p><strong>Method 1: Check the relative side lengths.</strong> For any acute angle, the adjacent leg must be shorter than the hypotenuse. If your answer exceeds c, recheck your inputs.</p>
+<p><strong>Method 2: Recalculate the cosine ratio.</strong> Divide your answer by the hypotenuse: b / c should approximately equal cos(A). Use unrounded values for the check. For c = 10 m, A = 30\u00b0, b \u2248 8.660254: 8.660254 / 10 = 0.8660254 \u2248 cos(30\u00b0). Match confirms correctness.</p>
+<p><strong>Method 3: Apply the Pythagorean theorem.</strong> If you also know or calculate the opposite leg a = c \u00d7 sin(A), verify that a\u00b2 + b\u00b2 \u2248 c\u00b2. Full example: c = 10 m, A = 30\u00b0. Then b \u2248 8.660254 m and a = 10 \u00d7 sin(30\u00b0) = 5 m. Check: 5\u00b2 + 8.660254\u00b2 = 25 + 75 = 100 = 10\u00b2. The triangle is consistent.</p>
+<p>Minor discrepancies in the last decimal place come from rounding the displayed values. When verifying, use the full-precision numbers rather than the rounded output.</p>`,
+    },
+    {
+      h2: 'Find the Adjacent Side With Confidence',
+      paragraphs: [
+        'Identify the hypotenuse and the reference angle first. Confirm which leg touches the angle: that is the adjacent side b. Apply b = c \u00d7 cos(A) with the angle in degrees, using consistent units. Verify that the answer is shorter than the hypotenuse and, when possible, cross-check with the Pythagorean theorem. With these habits, every cosine side calculation becomes routine. Use the calculator above to run your numbers.',
+      ],
+    }
     ],
     relatedLinks: [
       { href: '/right-triangle-side-from-angle-calculator/', label: 'Right Triangle Side From Angle Calculator' },
@@ -1131,29 +1400,64 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     ],
     faqs: [
       {
-        question: 'What does b = c \u00d7 cos(A) calculate?',
+        question: 'How do you find the adjacent side using cosine?',
         answer:
-          'It calculates the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b of a right triangle when you know the hypotenuse c and an acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. The <a href="/cosine-ratio-calculator/" class="text-primary hover:underline">cosine function</a> converts the angle into the correct ratio.'
+          'Multiply the hypotenuse by the cosine of the known acute angle: b = c \u00d7 cos(A). Enter the hypotenuse c and angle A in degrees, and the calculator returns the adjacent side b with full solution steps.'
       },
       {
-        question: 'How is this different from the sine calculator?',
+        question: 'What is the formula for a cosine side calculator?',
         answer:
-          'The sine <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a. This cosine calculator finds the adjacent side b. Both use the hypotenuse, but they return different sides of the triangle.'
+          'The formula is b = c \u00d7 cos(A), where b is the adjacent side, c is the hypotenuse, and A is the acute angle. It comes from rearranging the cosine ratio cos(A) = b / c by multiplying both sides by c.'
       },
       {
-        question: 'What does adjacent side mean?',
+        question: 'Which sides are used in the cosine ratio?',
         answer:
-          'The adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is the side that touches the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> you are using and also touches the right angle. For angle A, the adjacent side is b.'
+          'Cosine uses the adjacent side and the hypotenuse: cos(A) = adjacent / hypotenuse. For angle A, the adjacent side is b (the leg touching angle A) and the hypotenuse is c (the longest side, opposite the right angle).'
       },
       {
-        question: 'Can b be larger than the hypotenuse?',
+        question: 'Can I calculate the adjacent side from the hypotenuse and an angle?',
         answer:
-          'No. In a right triangle, both non-hypotenuse sides are always shorter than the hypotenuse. If your result is larger than c, check your inputs.'
+          'Yes. That is exactly what this calculator does. Enter the hypotenuse length and the acute angle in degrees, and it computes b = c \u00d7 cos(A). The angle must be between 0 and 90 degrees, exclusive.'
       },
       {
-        question: 'What happens if I enter a very small angle?',
+        question: 'Why is the adjacent side shorter than the hypotenuse?',
         answer:
-          'As <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A gets closer to 0 degrees, cos(A) approaches 1, so b gets closer to c. The adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is nearly the full length of the hypotenuse at very small angles.'
+          'For any acute angle, cos(A) is between 0 and 1, so multiplying the hypotenuse by cos(A) always gives a smaller value. Geometrically, no leg of a right triangle can exceed the hypotenuse, which spans the greatest distance between vertices.'
+      },
+      {
+        question: 'What is the difference between sine and cosine?',
+        answer:
+          'Both use the hypotenuse, but sine returns the opposite side (a = c \u00d7 sin(A)) while cosine returns the adjacent side (b = c \u00d7 cos(A)). Choose sine when you need the side across from the angle, cosine when you need the side next to it.'
+      },
+      {
+        question: 'Should I enter the angle in degrees or radians?',
+        answer:
+          'Enter the angle in degrees. This calculator expects degree input. Entering radians produces incorrect results because cos(30 radians) \u2248 0.154 differs from cos(30\u00b0) \u2248 0.866. Always confirm degree mode before calculating.'
+      },
+      {
+        question: 'Can cosine calculate a side in metres, feet, or inches?',
+        answer:
+          'Yes. The formula works in any length unit. The answer uses the same unit as the hypotenuse input: meters in gives meters out, feet in gives feet out. Use consistent units for all inputs.'
+      },
+      {
+        question: 'Why does the adjacent side decrease as the angle increases?',
+        answer:
+          'Cosine decreases from 1 to 0 as the angle grows from 0\u00b0 to 90\u00b0. Since b = c \u00d7 cos(A), a smaller cosine multiplier produces a shorter adjacent side. At 60\u00b0 the adjacent side is half the hypotenuse; at 80\u00b0 it is only about 17%.'
+      },
+      {
+        question: 'What if I know the adjacent side and angle but not the hypotenuse?',
+        answer:
+          'Rearrange the formula to solve for c: c = b / cos(A). This calculator finds the adjacent side from the hypotenuse; to find the hypotenuse from the adjacent side, divide the adjacent side by cos(A).'
+      },
+      {
+        question: 'How can I verify my calculated side?',
+        answer:
+          'Check three things: (1) the answer is shorter than the hypotenuse, (2) dividing the answer by the hypotenuse approximately equals cos(A), and (3) if you also compute a = c \u00d7 sin(A), then a\u00b2 + b\u00b2 should equal c\u00b2.'
+      },
+      {
+        question: 'What happens when the angle is very close to 90 degrees?',
+        answer:
+          'The adjacent side becomes very small because cos(A) approaches zero. At 89\u00b0, b \u2248 0.017c. This is correct geometry, not an error. The triangle becomes tall and narrow, with almost all of the hypotenuse length going into the opposite side.'
       }
     ]
   },

@@ -541,7 +541,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     quickSummary: {
       h2: 'What This Tool Solves',
       intro:
-        'Use this page when you know the hypotenuse and leg b, but need leg a. It keeps the known <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b separate from the unknown side a so the formula and result match the labels on your triangle.',
+        'Use this page when you know the hypotenuse and leg b, but need leg a. The <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> rearranges the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem</a> to subtract the square of the known leg from the square of the hypotenuse, then takes the square root. It keeps the known <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b separate from the unknown side a so the formula and result match the labels on your triangle.',
       cards: [
         { label: 'Known values', value: 'Hypotenuse c and leg b' },
         { label: 'Finds', value: 'Missing leg a' },
@@ -647,7 +647,9 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
 <p><strong>Given:</strong> c = 17 ft (diagonal), b = 15 ft. <strong>Find:</strong> a.</p>
 <p><strong>Calculation:</strong> a = &radic;(17&sup2; &minus; 15&sup2;) = &radic;(289 &minus; 225) = &radic;64 = 8 ft</p>
 <p><strong>Answer:</strong> <strong>The missing room dimension is 8 ft.</strong></p>
-<p><strong>Why this works:</strong> A rectangle's diagonal divides it into two congruent right triangles. The diagonal becomes the hypotenuse, and the two sides become the legs.</p>
+<img src="/images/missing-leg/missing-leg-b-room.svg" alt="Room floor plan diagram: 17 ft diagonal as hypotenuse, 15 ft known side as leg b, 8 ft missing side as leg a" class="mx-auto mt-4 h-auto w-full max-w-xl rounded-lg" />
+<p class="text-sm text-on-surface-variant"><em>Figure: Top-down view. The diagonal (c = 17 ft) splits the rectangle into two right triangles. The known side (b = 15 ft) and the missing side (a = 8 ft) form the right angle.</em></p>
+<p><strong>Why this works:</strong> A rectangle's diagonal divides it into two congruent right triangles. The diagonal becomes the hypotenuse, and the two sides become the legs. This is why the same formula that solves abstract triangles also solves room layouts, floor tiles, and screen dimensions.</p>
 </article>
 <article>
 <h3>Example 4: A Decimal Result</h3>
@@ -662,8 +664,8 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
         h2: 'Where Is the Missing Leg Formula Used?',
         paragraphs: [
           'The general pattern: when a straight-line diagonal or slope length and one perpendicular distance are known, the other perpendicular distance follows from the Pythagorean theorem. This only works when the geometry forms a right triangle.',
-          '<strong>Ramp geometry.</strong> A ramp has a length of 25 m and a vertical rise of 7 m. The horizontal run is a = &radic;(25&sup2; &minus; 7&sup2;) = &radic;(625 &minus; 49) = &radic;576 = 24 m. This is a geometric calculation, not a determination of building-code or accessibility compliance.',
-          '<strong>Roof slope.</strong> A sloping roof segment has a length of 13 ft and a vertical rise of 5 ft. The horizontal run is a = &radic;(13&sup2; &minus; 5&sup2;) = &radic;144 = 12 ft.',
+          '<strong>Ramp geometry.</strong> A straight ramp is 25 m long and rises 7 m vertically. The horizontal run is the missing leg: a = &radic;(25&sup2; &minus; 7&sup2;) = &radic;(625 &minus; 49) = &radic;576 = 24 m. Here the ramp itself is the hypotenuse because it is the longest side, sloping from ground to platform. The vertical rise is the known leg b, and the ground distance you need is the missing leg a.<img src="/images/missing-leg/missing-leg-b-ramp.svg" alt="Ramp diagram: 25 m ramp as hypotenuse, 7 m vertical rise as leg b, 24 m horizontal run as missing leg a" class="mx-auto mt-4 h-auto w-full max-w-xl rounded-lg" /><p class="text-sm text-on-surface-variant"><em>Figure: The ramp (c = 25 m) as hypotenuse, the vertical rise (b = 7 m), and the horizontal run (a = 24 m). This is a geometric model, not a building-code compliance check.</em></p>This is a geometric calculation, not a determination of building-code or accessibility compliance.',
+          '<strong>Roof slope.</strong> A roof cross-section forms a right triangle: the sloped surface is the hypotenuse (13 ft), the vertical rise from eave to ridge is the known leg (5 ft), and the horizontal distance the roof covers is the missing leg. Calculate: a = &radic;(13&sup2; &minus; 5&sup2;) = &radic;(169 &minus; 25) = &radic;144 = 12 ft. Roofers use this to find the horizontal span a roof covers, which determines rafter spacing and material estimates.<img src="/images/missing-leg/missing-leg-b-roof.svg" alt="Roof cross-section diagram: 13 ft slope as hypotenuse, 5 ft vertical rise as leg b, 12 ft horizontal run as missing leg a" class="mx-auto mt-4 h-auto w-full max-w-xl rounded-lg" /><p class="text-sm text-on-surface-variant"><em>Figure: The roof slope (c = 13 ft) as hypotenuse, the vertical rise (b = 5 ft), and the horizontal run (a = 12 ft).</em></p>',
           '<strong>Floor plan measurements.</strong> When planning furniture or flooring, a room diagonal and one wall length give the other wall length without moving obstacles, as shown in Example 3 above.',
           '<strong>Construction and layout.</strong> The formula helps estimate a perpendicular distance when the straight-line diagonal and one perpendicular dimension are known. Field measurements and real-world geometry may include measurement error, so treat results as estimates rather than exact engineering values.'
         ]
@@ -689,8 +691,8 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         h2: 'Check Your Missing Leg Calculation',
         paragraphs: [
-          'Verify each result before using it. For the 6-8-10 example: 8&sup2; + 6&sup2; = 64 + 36 = 100 = 10&sup2;.',
-          'The result labeled "Missing leg a" is the length of the other side forming the right angle with b. It is not the hypotenuse and should be shorter than c.'
+          'Verify each result before using it. For the 6-8-10 example: 8&sup2; + 6&sup2; = 64 + 36 = 100 = 10&sup2;. For the decimal example: 7&sup2; + (&radic;51)&sup2; = 49 + 51 = 100 = 10&sup2;, confirming the exact form before rounding.',
+          'The result labeled "Missing leg a" is the length of the other side forming the right angle with b. It is not the hypotenuse and should be shorter than c. If your answer comes out longer than c, you have swapped the hypotenuse with a leg.'
         ],
         listTitle: 'A valid result should satisfy:',
         listItems: [

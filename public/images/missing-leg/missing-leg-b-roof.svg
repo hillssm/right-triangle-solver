@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="450" viewBox="0 0 640 450">
+<title>Roof slope: 13 ft slope length, 5 ft rise, 12 ft horizontal run</title>
+<desc>A roof cross-section with a 13 foot slope and 5 foot vertical rise. The horizontal run is 12 feet, found with a = sqrt(13^2 - 5^2).</desc>
+<line x1="100" y1="360" x2="540" y2="360" stroke="#e8e6e3" stroke-width="4"/>
+<polygon points="100,360 540,360 540,180" fill="rgba(56,189,248,0.06)" stroke="none"/>
+<line x1="100" y1="360" x2="540" y2="180" stroke="#f1c97d" stroke-width="8"/>
+<line x1="540" y1="180" x2="540" y2="360" stroke="#38bdf8" stroke-width="6"/>
+<line x1="100" y1="360" x2="540" y2="360" stroke="#e8e6e3" stroke-width="3"/>
+<text x="320" y="395" font-family="Manrope, Arial, sans-serif" font-size="20" fill="#f1c97d" text-anchor="middle" font-weight="bold" style="">a = 12 ft (find)</text>
+<text x="545" y="280" font-family="Manrope, Arial, sans-serif" font-size="20" fill="#38bdf8" text-anchor="end" font-weight="normal" style="">b = 5 ft</text>
+<text x="310" y="265" font-family="Manrope, Arial, sans-serif" font-size="20" fill="#f1c97d" text-anchor="middle" font-weight="normal" style="">c = 13 ft slope</text>
+<text x="320" y="430" font-family="Manrope, Arial, sans-serif" font-size="14" fill="#a8a29e" text-anchor="middle" font-weight="normal" style="">Roof: 13 ft slope, 5 ft rise, run a = 12 ft</text>
+</svg>

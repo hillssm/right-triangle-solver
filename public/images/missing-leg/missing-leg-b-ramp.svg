@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="470" viewBox="0 0 640 470">
+<title>Ramp geometry: 25 m ramp, 7 m rise, 24 m horizontal run</title>
+<desc>A straight ramp 25 metres long rises 7 metres vertically. The horizontal run is 24 metres, found with a = sqrt(25^2 - 7^2).</desc>
+<line x1="80" y1="380" x2="560" y2="380" stroke="#e8e6e3" stroke-width="4"/>
+<line x1="80" y1="380" x2="560" y2="140" stroke="#f1c97d" stroke-width="10"/>
+<line x1="560" y1="140" x2="560" y2="380" stroke="#38bdf8" stroke-width="6"/>
+<line x1="80" y1="380" x2="560" y2="380" stroke="#e8e6e3" stroke-width="2"/>
+<text x="320" y="410" font-family="Manrope, Arial, sans-serif" font-size="20" fill="#f1c97d" text-anchor="middle" font-weight="bold" style="">a = 24 m (find)</text>
+<text x="545" y="270" font-family="Manrope, Arial, sans-serif" font-size="20" fill="#38bdf8" text-anchor="end" font-weight="normal" style="">b = 7 m</text>
+<text x="300" y="250" font-family="Manrope, Arial, sans-serif" font-size="20" fill="#f1c97d" text-anchor="middle" font-weight="normal" style="">c = 25 m ramp</text>
+<text x="320" y="445" font-family="Manrope, Arial, sans-serif" font-size="14" fill="#a8a29e" text-anchor="middle" font-weight="normal" style="">Ramp: 25 m long, 7 m rise, run a = 24 m</text>
+</svg>

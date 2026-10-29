@@ -1402,7 +1402,10 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       h2: 'Quick Example',
       intro: 'Given a = 3 m and A = 36.87&deg;, the adjacent side is b &asymp; 4 m. See the detailed examples below for full step-by-step solutions.',
       lines: [
-        'b = a / \\tan(A) = 3 / \\tan(36.87&deg;) &asymp; 3 / 0.75 = 4'
+        'b = a / \\tan(A)',
+        'b = 3 / \\tan(36.87^\\circ)',
+        'b \\approx 3 / 0.75',
+        'b \\approx 4'
       ]
     },
     extraSections: [

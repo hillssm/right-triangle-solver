@@ -202,204 +202,243 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         }
       ]
     },
-    "missing-leg-from-c-and-a-calculator": {
-      "slug": "missing-leg-from-c-and-a-calculator",
-      "url": "/missing-leg-from-c-and-a-calculator/",
-      "h1": "कैलकुलेटर: c और a से अज्ञात भुजा",
-      "metaTitle": "कैलकुलेटर: c और a से अज्ञात भुजा | Right Triangle Solver",
-      "metaDescription": "जब कर्ण c और दूसरी भुजा a ज्ञात हो तो भुजा b ज्ञात करें।",
-      "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "याद रखें: c हमेशा कर्ण होता है - समकोण के विपरीत सबसे लंबी भुजा। यह एक पैर नहीं है. यदि आपके पास दो पैर हैं और इसके बजाय कर्ण की आवश्यकता है, तो पाइथागोरस प्रमेय कैलकुलेटर का उपयोग करें।",
-      "intro": "जब कर्ण c और दूसरी भुजा a ज्ञात हो तो भुजा b ज्ञात करें।",
-      "quickSummary": {
-        "h2": "यह गुम पैर कैलकुलेटर क्या हल करता है",
-        "intro": "इस पृष्ठ का उपयोग तब करें जब कर्ण और पैर a ज्ञात हो, लेकिन दूसरा पैर गायब हो। कैलकुलेटर वर्गमूल लेने से पहले ज्ञात पैर को कर्ण से घटाने के लिए पाइथागोरस प्रमेय को पुनर्व्यवस्थित करता है।",
-        "cards": [
-          {
-            "label": "ज्ञात मूल्य",
-            "value": "c = कर्ण; a = ज्ञात भुजा"
-          },
-          {
-            "label": "ढूँढता है",
-            "value": "b = अज्ञात भुजा"
-          },
-          {
-            "label": "मुख्य सूत्र",
-            "value": "b = sqrt(c^2 - a^2)"
-          },
-          {
-            "label": "आवश्यक जांच",
-            "value": "c > a होना आवश्यक है।"
-          }
-        ]
-      },
-      "diagram": {
-        "h2": "समकोण त्रिभुज आरेख: पैर ढूँढना b",
-        "intro": "आरेख c और a को उन मानों के रूप में चिह्नित करता है जिन्हें आप पहले से जानते हैं। ऊर्ध्वाधर पैर b को लापता पक्ष के रूप में हाइलाइट किया गया है जिसे यह कैलकुलेटर हल करता है।",
-        "caption": "ज्ञात कर्ण c, ज्ञात पाद a और अज्ञात पाद b के साथ समकोण त्रिभुज आरेख।",
-        "sides": {
-          "a": {
-            "label": "a = ज्ञात",
-            "description": "पैर a समकोण त्रिभुज के आधार के साथ ज्ञात पैर है।",
-            "status": "known"
-          },
-          "b": {
-            "label": "b = खोजें",
-            "description": "लेग b अज्ञात लेग है जिसे c^2 से a^2 घटाकर हल किया गया है।",
-            "status": "unknown"
-          },
-          "c": {
-            "label": "c = ज्ञात",
-            "description": "कर्ण c समकोण के विपरीत ज्ञात सबसे लंबी भुजा है।",
-            "status": "known"
-          }
+        "missing-leg-from-c-and-a-calculator": {
+        "slug": "missing-leg-from-c-and-a-calculator",
+        "url": "/missing-leg-from-c-and-a-calculator/",
+        "h1": "लापता भुजा कैलकुलेटर: कर्ण c और भुजा a से भुजा b ज्ञात करें",
+        "metaTitle": "लापता भुजा कैलकुलेटर: c और a से b ज्ञात करें",
+        "metaDescription": "कर्ण और एक ज्ञात भुजा का उपयोग करके समकोण त्रिभुज की लापता भुजा ज्ञात करें। भुजा b की गणना करें, सूत्र का अनुसरण करें और हल किए गए उदाहरण देखें।",
+        "formulaSlug": "leg-from-hypotenuse-and-other-leg",
+        "toolPurpose": "याद रखें: c हमेशा कर्ण होता है — सबसे लंबी <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a>, समकोण के <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">सम्मुख</a>। यह कोई भुजा (लेग) नहीं है। यदि आपके पास दो भुजाएँ हैं और इसके बजाय कर्ण चाहिए, तो <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">पाइथागोरस प्रमेय</a> कैलकुलेटर का उपयोग करें।",
+        "intro": "यह <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> समकोण त्रिभुज की लापता भुजा b ज्ञात करता है जब आपको कर्ण c और दूसरी भुजा a ज्ञात हो। अपने दो माप दर्ज करें, और यह सूत्र b = √(c² − a²) लगाकर पूर्ण हल चरणों सहित अज्ञात भुजा की तुरंत गणना करता है। कर्ण सबसे लंबी भुजा होती है, समकोण के सम्मुख। दो भुजाएँ मिलकर वह समकोण बनाती हैं। यह जानना कि कौन-सी भुजा कौन-सी है, हर बार सही उत्तर सुनिश्चित करता है।",
+        "quickSummary": {
+          "h2": "यह टूल क्या हल करता है",
+          "intro": "इस पृष्ठ का उपयोग तब करें जब कर्ण और भुजा a ज्ञात हों, लेकिन दूसरी भुजा लापता हो। <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> वर्गमूल लेने से पहले ज्ञात भुजा को कर्ण से घटाने के लिए <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">पाइथागोरस प्रमेय</a> को पुनर्व्यवस्थित करता है।",
+          "cards": [
+            {
+              "label": "ज्ञात मान",
+              "value": "कर्ण c और भुजा a"
+            },
+            {
+              "label": "ज्ञात करता है",
+              "value": "लापता भुजा b"
+            },
+            {
+              "label": "मुख्य सूत्र",
+              "value": "b = sqrt(c^2 - a^2)"
+            },
+            {
+              "label": "आवश्यक जाँच",
+              "value": "c, a से बड़ा होना चाहिए"
+            }
+          ]
         },
-        "notes": [
-          "c कर्ण होना चाहिए, कोई एक पैर नहीं।",
-          "यदि c, a से कम या उसके बराबर है, तो इनपुट एक वैध समकोण त्रिभुज नहीं बनाते हैं।",
-          "परिणाम b c और a के समान इकाई का उपयोग करता है।"
-        ]
-      },
-      "calculator": {
-        "outputLabel": "b = अज्ञात भुजा",
-        "fields": [
+        "diagram": {
+          "h2": "कर्ण और लापता भुजा की पहचान करें",
+          "intro": "चित्र में c और a को उन मानों के रूप में चिह्नित किया गया है जो आप पहले से जानते हैं। लंबवत भुजा b को <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">लापता भुजा</a> के रूप में उजागर किया गया है, जिसे यह कैलकुलेटर हल करता है।",
+          "caption": "ज्ञात कर्ण c, ज्ञात भुजा a और अज्ञात भुजा b वाला समकोण त्रिभुज चित्र।",
+          "sides": {
+            "a": {
+              "label": "a = ज्ञात",
+              "description": "भुजा a समकोण त्रिभुज के आधार के साथ ज्ञात भुजा है।",
+              "status": "known"
+            },
+            "b": {
+              "label": "b = ज्ञात करें",
+              "description": "भुजा b वह अज्ञात भुजा है जिसे c^2 में से a^2 घटाकर हल किया जाता है।",
+              "status": "unknown"
+            },
+            "c": {
+              "label": "c = ज्ञात",
+              "description": "कर्ण c ज्ञात सबसे लंबी <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a> है, जो सम<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> के सम्मुख है।",
+              "status": "known"
+            }
+          },
+          "notes": [
+            "c कर्ण होना चाहिए, भुजाओं में से एक नहीं।",
+            "यदि c, a से कम या बराबर है, तो इनपुट वैध समकोण त्रिभुज नहीं बनाते।",
+            "परिणाम b उसी इकाई का उपयोग करता है जो c और a की है।"
+          ]
+        },
+        "calculator": {
+          "outputLabel": "लापता भुजा b",
+          "fields": [
+            {
+              "key": "c",
+              "label": "कर्ण c",
+              "min": 0
+            },
+            {
+              "key": "a",
+              "label": "भुजा a",
+              "min": 0
+            }
+          ]
+        },
+        "formulaSection": {
+          "h2": "लापता भुजा ज्ञात करने का सूत्र",
+          "paragraphs": [
+            "गणना में <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">पाइथागोरस प्रमेय</a> का उपयोग होता है, जो दोनों भुजाओं के वर्गों को कर्ण के वर्ग से जोड़ता है। लापता भुजा को अलग करने के लिए समीकरण को चरण-दर-चरण पुनर्व्यवस्थित करें।",
+            "<strong>चरण 1: पाइथागोरस प्रमेय से शुरू करें।</strong> दोनों भुजाओं के वर्गों का योग कर्ण के वर्ग के बराबर होता है।",
+            "<strong>चरण 2: दोनों पक्षों से a² घटाएँ।</strong> इससे लापता भुजा का वर्ग अलग हो जाता है।",
+            "<strong>चरण 3: धनात्मक वर्गमूल लें।</strong> भुजाओं की लंबाइयाँ धनात्मक होती हैं, इसलिए मुख्य मूल का उपयोग करें। पूरा व्यंजक c² − a² वर्गमूल चिह्न के अंदर रहता है।",
+            "यहाँ <strong>a</strong> ज्ञात भुजा है, <strong>b</strong> लापता भुजा है और <strong>c</strong> कर्ण है। कर्ण समकोण के सम्मुख स्थित होता है और हमेशा सबसे लंबी भुजा होती है।",
+            "<strong>घटाएँ क्यों?</strong> मूल समीकरण कर्ण का वर्ग प्राप्त करने के लिए दोनों भुजाओं के वर्गों को जोड़ता है। जब कर्ण और एक भुजा पहले से ज्ञात हों, तो अज्ञात भुजा के वर्ग को अलग करने के लिए ज्ञात भुजा के वर्ग को कर्ण के वर्ग में से घटाएँ। फिर वर्गमूल लें। भुजा को कभी भी सीधे कर्ण में से न घटाएँ — हमेशा उनके वर्गों को घटाएँ।"
+          ],
+          "formulas": [
+            "a^2 + b^2 = c^2",
+            "b^2 = c^2 - a^2",
+            "b = \\sqrt{c^2 - a^2}"
+          ]
+        },
+        "howTo": {
+          "h2": "c और a से भुजा b कैसे ज्ञात करें",
+          "steps": [
+            "कर्ण की पहचान करें, जो 90° कोण के सम्मुख स्थित होता है। यह हमेशा सबसे लंबी भुजा होती है।",
+            "पहले इनपुट फ़ील्ड में कर्ण c दर्ज करें।",
+            "दूसरे इनपुट फ़ील्ड में ज्ञात भुजा a दर्ज करें।",
+            "जाँचें कि दोनों माप एक ही इकाई में हैं।",
+            "लापता भुजा b ज्ञात करने के लिए 'गणना करें' बटन पर क्लिक करें।",
+            "कैलकुलेटर के नीचे दिखाए गए परिणाम और चरण-दर-चरण हल की समीक्षा करें।",
+            "जाँचकर उत्तर सत्यापित करें कि a² + b², c² के बराबर है।"
+          ]
+        },
+        "example": {
+          "h2": "लापता भुजा ज्ञात करने के हल किए गए उदाहरण",
+          "intro": "प्रत्येक उदाहरण समस्या कथन से सत्यापित उत्तर तक पूर्ण गणना दिखाता है। पाँचों में सूत्र b = √(c² − a²) का उपयोग होता है।",
+          "lines": [
+            "b = \\sqrt{13^2 - 5^2}",
+            "b = \\sqrt{169 - 25}",
+            "b = \\sqrt{144}",
+            "b = 12"
+          ]
+        },
+        "extraSections": [
           {
-            "key": "c",
-            "label": "c = कर्ण",
-            "min": 0
+            "h2": "विस्तृत हल किए गए उदाहरण",
+            "paragraphs": [
+              "<h3>उदाहरण 1: मानक 5–12–13 त्रिभुज</h3><p><strong>समस्या:</strong> उस समकोण त्रिभुज की लापता भुजा ज्ञात करें जिसका कर्ण c = 13 cm और ज्ञात भुजा a = 5 cm है।</p><p><strong>दिया गया:</strong> c = 13 cm, a = 5 cm। <strong>ज्ञात करें:</strong> b।</p><p><strong>सूत्र:</strong> b = √(c² − a²)</p><p><strong>प्रतिस्थापन:</strong> b = √(13² − 5²) = √(169 − 25) = √144</p><p><strong>उत्तर:</strong> <strong>b = 12 cm</strong></p><p><strong>सत्यापन:</strong> 5² + 12² = 25 + 144 = 169 = 13²। ज्ञात भुजा, लापता भुजा और कर्ण एक वैध समकोण त्रिभुज बनाते हैं।</p>",
+              "<h3>उदाहरण 2: दीवार के सहारे सीढ़ी</h3><p><strong>समस्या:</strong> 5 m लंबी सीढ़ी लंबवत दीवार के सहारे टिकी है। इसका आधार दीवार से 3 m दूर है। सीढ़ी द्वारा पहुँची ऊँचाई ज्ञात करें।</p><p><strong>दिया गया:</strong> c = 5 m (सीढ़ी), a = 3 m (ज़मीनी दूरी)। <strong>ज्ञात करें:</strong> b (दीवार की ऊँचाई)।</p><p><strong>गणना:</strong> b = √(5² − 3²) = √(25 − 9) = √16 = 4 m</p><p><strong>उत्तर:</strong> <strong>सीढ़ी दीवार पर 4 m ऊँचाई तक पहुँचती है।</strong></p><img src=\"/images/missing-leg/missing-leg-ladder.svg\" alt=\"सीढ़ी चित्र: कर्ण के रूप में 5 m सीढ़ी, भुजा a के रूप में 3 m ज़मीनी दूरी, लापता भुजा b के रूप में 4 m दीवार की ऊँचाई\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>चित्र: लंबवत दीवार (b = 4 m), क्षैतिज ज़मीनी दूरी (a = 3 m) और सीढ़ी (c = 5 m)। यह लंबवत दीवार और समतल ज़मीन मानकर बनाया गया ज्यामितीय मॉडल है, सीढ़ी-सुरक्षा आकलन नहीं।</em></p>",
+              "<h3>उदाहरण 3: आयताकार कमरे का विकर्ण</h3><p><strong>समस्या:</strong> एक आयताकार कमरे का विकर्ण 17 ft है और एक भुजा 8 ft मापी गई है। दूसरी भुजा ज्ञात करें।</p><p><strong>दिया गया:</strong> c = 17 ft (विकर्ण), a = 8 ft। <strong>ज्ञात करें:</strong> b।</p><p><strong>गणना:</strong> b = √(17² − 8²) = √(289 − 64) = √225 = 15 ft</p><p><strong>उत्तर:</strong> <strong>दूसरी भुजा 15 ft है।</strong></p><img src=\"/images/missing-leg/missing-leg-room.svg\" alt=\"कमरे का चित्र: कर्ण के रूप में 17 ft विकर्ण, ज्ञात भुजा a के रूप में 8 ft भुजा, लापता भुजा b के रूप में 15 ft भुजा\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>चित्र: ऊपर से दृश्य। विकर्ण (c = 17 ft) आयत को दो समकोण त्रिभुजों में बाँटता है। ज्ञात भुजा (a = 8 ft) और लापता भुजा (b = 15 ft) समकोण बनाती हैं।</em></p>",
+              "<h3>उदाहरण 4: ऐसा परिणाम जिसमें पूर्णांकन आवश्यक है</h3><p><strong>समस्या:</strong> c = 10 m और a = 7 m दिया गया है, b ज्ञात करें।</p><p><strong>गणना:</strong> b = √(10² − 7²) = √(100 − 49) = √51 ≈ 7.141428 m</p><p><strong>उत्तर:</strong> <strong>b ≈ 7.14 m</strong>, दो दशमलव स्थानों तक पूर्णांकित।</p><p><strong>सत्यापन:</strong> 7² + (√51)² = 49 + 51 = 100 = 10²।</p><p>मध्यवर्ती गणनाओं के दौरान सटीक मान (√51) बनाए रखें और केवल अंतिम चरण में पूर्णांकन करें। जल्दी पूर्णांकन करने से त्रुटियाँ आती हैं जो बहु-चरणीय समस्याओं में बढ़ती जाती हैं।</p>",
+              "<h3>उदाहरण 5: ढलान (रैंप) की ज्यामिति</h3><p><strong>समस्या:</strong> एक सीधी ढलान की लंबाई 13 m है और क्षैतिज विस्तार 12 m है। इसकी लंबवत ऊँचाई ज्ञात करें।</p><p><strong>दिया गया:</strong> c = 13 m (ढलान), a = 12 m (विस्तार)। <strong>ज्ञात करें:</strong> b (ऊँचाई)।</p><p><strong>गणना:</strong> b = √(13² − 12²) = √(169 − 144) = √25 = 5 m</p><p><strong>उत्तर:</strong> <strong>लंबवत ऊँचाई 5 m है।</strong></p><img src=\"/images/missing-leg/missing-leg-ramp.svg\" alt=\"ढलान चित्र: कर्ण के रूप में 13 m ढलान, भुजा a के रूप में 12 m क्षैतिज विस्तार, लापता भुजा b के रूप में 5 m लंबवत ऊँचाई\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>चित्र: कर्ण के रूप में ढलान (c = 13 m), क्षैतिज विस्तार (a = 12 m) और लंबवत ऊँचाई (b = 5 m)। यह गणना सुलभता या भवन नियमों के अनुपालन को स्थापित नहीं करती।</em></p>"
+            ]
           },
           {
-            "key": "a",
-            "label": "a = ज्ञात भुजा",
-            "min": 0
+            "h2": "लापता भुजा की गणना कब की जा सकती है?",
+            "paragraphs": [
+              "एक वैध गैर-अपक्षयी समकोण त्रिभुज के लिए, मापों को तीन शर्तें पूरी करनी चाहिए: c > 0, a > 0, और c > a। तब लापता भुजा b = √(c² − a²) होती है।",
+              "<strong>स्थिति 1: ज्ञात भुजा से छोटा कर्ण।</strong> यदि c = 4 और a = 5 है, तो b = √(16 − 25) = √(−9)। वर्गमूल के अंदर का व्यंजक ऋणात्मक है, इसलिए ये इनपुट c को कर्ण मानकर वास्तविक समकोण त्रिभुज नहीं बना सकते।",
+              "<strong>स्थिति 2: ज्ञात भुजा के बराबर कर्ण।</strong> यदि c = 5 और a = 5 है, तो b = √(25 − 25) = 0। यह अपक्षयी स्थिति है, वैध त्रिभुज नहीं।",
+              "<strong>स्थिति 3: शून्य या ऋणात्मक माप।</strong> भुजाओं की लंबाइयाँ धनात्मक होनी चाहिए। कैलकुलेटर शून्य और ऋणात्मक इनपुट अस्वीकार करता है।",
+              "<strong>स्थिति 4: असंगत इकाइयाँ।</strong> दोनों माप एक ही इकाई में होने चाहिए। यदि c मीटर में और a सेंटीमीटर में है, तो गणना से पहले एक को बदलें।"
+            ],
+            "listTitle": "पहले ये जाँचें करें:",
+            "listItems": [
+              "c, 90° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> के सम्मुख है।",
+              "c, a से बड़ा है।",
+              "दोनों मान धनात्मक हैं।",
+              "c और a एक ही इकाई में हैं।"
+            ]
+          },
+          {
+            "h2": "लापता भुजा सूत्र का उपयोग कहाँ होता है?",
+            "paragraphs": [
+              "सामान्य पैटर्न: जब सीधी विकर्ण या ढलवाँ लंबाई और एक लंबवत दूरी ज्ञात हो, तो दूसरी लंबवत दूरी पाइथागोरस प्रमेय से मिलती है। यह तभी काम करता है जब ज्यामिति समकोण त्रिभुज बनाती हो।",
+              "<strong>निर्माण और फ्रेमिंग।</strong> बढ़ई आयताकार फ्रेम के विकर्ण को मापकर समकोण कोनों की जाँच करते हैं। यदि विकर्ण (c) और एक भुजा (a) ज्ञात हो, तो लापता भुजा (b) लकड़ी काटने से पहले लेआउट की पुष्टि करती है।",
+              "<strong>कमरे और फ्लोर-प्लान के माप।</strong> फर्नीचर या फर्श की योजना बनाते समय, कमरे का विकर्ण और एक दीवार की लंबाई बाधाएँ हटाए बिना दूसरी दीवार की लंबाई देती है।",
+              "<strong>सीढ़ी और दीवार की ज्यामिति।</strong> सीढ़ी की लंबाई और दीवार से उसकी दूरी ज्ञात होने पर, वह जिस ऊँचाई तक पहुँचती है वह सीधे मिलती है। यह ज्यामितीय मॉडल है, सुरक्षा आकलन नहीं।",
+              "<strong>ढलान और प्रवणता की गणनाएँ।</strong> ढलान की लंबाई और क्षैतिज विस्तार से लंबवत ऊँचाई निर्धारित होती है। यह कोड अनुपालन स्थापित नहीं करता।"
+            ]
+          },
+          {
+            "h2": "अपनी लापता भुजा की गणना की जाँच कैसे करें",
+            "paragraphs": [
+              "उपयोग से पहले हर परिणाम सत्यापित करें। 5–12–13 उदाहरण के लिए: 5² + 12² = 25 + 144 = 169 = 13²।",
+              "\"लापता भुजा b\" लेबल वाला आउटपुट उस दूसरी भुजा की लंबाई है जो a के साथ समकोण बनाती है। यह कर्ण नहीं है और c से छोटी होनी चाहिए।"
+            ],
+            "listTitle": "एक वैध परिणाम को ये शर्तें पूरी करनी चाहिए:",
+            "listItems": [
+              "b शून्य से बड़ा है।",
+              "b, c से छोटा है।",
+              "a² + b², c² के बराबर है, प्रदर्शित मान में पूर्णांकन की छूट के साथ।",
+              "परिणाम सही इकाई का उपयोग करता है।"
+            ]
+          },
+          {
+            "h2": "लापता भुजा ज्ञात करते समय सामान्य गलतियाँ",
+            "paragraphs": [
+              "सबसे आम त्रुटि c को भुजा मानना है। यहाँ c कर्ण होना चाहिए: सबसे लंबी भुजा, समकोण के सम्मुख।",
+              "एक और आम गलती घटाने के बजाय वर्गों को जोड़ना है। जोड़ (a² + b²) कर्ण ज्ञात करता है; घटाव (c² − a²) कर्ण से लापता भुजा ज्ञात करता है।"
+            ],
+            "listTitle": "इन गलतियों से बचें:",
+            "listItems": [
+              "<strong>कर्ण को भुजा समझना।</strong> यदि आप c फ़ील्ड में भुजा का मान डालते हैं, तो सूत्र गलत समस्या हल करता है। सही: c हमेशा सबसे लंबी भुजा होती है।",
+              "<strong>घटाने के बजाय वर्गों को जोड़ना।</strong> गलत: b = √(c² + a²)। सही: b = √(c² − a²)।",
+              "<strong>वर्गमूल लेना भूलना।</strong> गलत: b = c² − a²। सही: अंतर का वर्गमूल लें।",
+              "<strong>वर्गमूल का गलत समूहीकरण।</strong> गलत: √c² − a² (जो c − a के बराबर है)। सही: √(c² − a²), जिसमें पूरा अंतर वर्गमूल चिह्न के अंदर हो।",
+              "<strong>a ≥ c दर्ज करना।</strong> ज्ञात भुजा कर्ण के बराबर या उससे बड़ी नहीं हो सकती। सही: गणना से पहले जाँचें कि c > a है।",
+              "<strong>इकाइयाँ मिलाना।</strong> गलत: c = 5 m, a = 30 cm। सही: पहले एक ही इकाई में बदलें (c = 500 cm, a = 30 cm)।",
+              "<strong>जल्दी पूर्णांकन करना।</strong> गलत: गणना के बीच में √51 को 7.14 तक पूर्णांकित करना। सही: अंतिम उत्तर तक पूर्ण सटीकता बनाए रखें।"
+            ]
           }
-        ]
-      },
-      "formulaSection": {
-        "h2": "गुम पैर b फॉर्मूला",
-        "paragraphs": [
-          "पैर b खोजने का सूत्र पाइथागोरस प्रमेय (a² + b² = c²) से लिया गया है। b के लिए पुनर्व्यवस्थित करने से नीचे दिया गया सूत्र मिलता है।",
-          "जहां c कर्ण (समकोण त्रिभुज की सबसे लंबी भुजा) है, a ज्ञात पैर है, और b वह लुप्त पैर है जिसे आप हल कर रहे हैं। घटाव पर ध्यान दें: आप ज्ञात पैर के वर्ग को कर्ण के वर्ग से घटाते हैं, फिर वर्गमूल लेते हैं।"
         ],
-        "formulas": [
-          "b = \\sqrt{c^2 - a^2}"
+        "relatedLinks": [
+          {
+            "href": "/right-triangle-side-calculator/",
+            "label": "समकोण त्रिभुज भुजा कैलकुलेटर"
+          },
+          {
+            "href": "/pythagorean-theorem-calculator/",
+            "label": "पाइथागोरस प्रमेय कैलकुलेटर"
+          },
+          {
+            "href": "/missing-leg-from-c-and-b-calculator/",
+            "label": "c और b से लापता भुजा कैलकुलेटर"
+          },
+          {
+            "href": "/right-triangle-angle-calculator/",
+            "label": "समकोण त्रिभुज कोण कैलकुलेटर"
+          },
+          {
+            "href": "/right-triangle-measurements-calculator/",
+            "label": "समकोण त्रिभुज माप कैलकुलेटर"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "कर्ण और एक भुजा से लापता भुजा कैसे ज्ञात करूँ?",
+            "answer": "कर्ण का वर्ग करें (c²), ज्ञात भुजा का वर्ग करें (a²), घटाएँ और वर्गमूल लें: b = √(c² − a²)। चरणों सहित तुरंत परिणाम के लिए ऊपर कैलकुलेटर में दोनों मान दर्ज करें।"
+          },
+          {
+            "question": "मैं जोड़ने के बजाय घटाता क्यों हूँ?",
+            "answer": "पाइथागोरस प्रमेय कर्ण का वर्ग प्राप्त करने के लिए भुजाओं के वर्गों को जोड़ता है (a² + b² = c²)। जब आपको कर्ण पहले से ज्ञात हो, तो पुनर्व्यवस्थित करें: लापता भुजा के वर्ग को अलग करने के लिए ज्ञात भुजा के वर्ग को कर्ण के वर्ग में से घटाएँ, फिर मूल लें।"
+          },
+          {
+            "question": "मुझे कैसे पता चलेगा कि कौन-सी भुजा कर्ण है?",
+            "answer": "कर्ण हमेशा सबसे लंबी भुजा होती है और 90° कोण के सम्मुख स्थित होती है। यदि आपके तीन माप 5, 12 और 13 हैं, तो कर्ण 13 है।"
+          },
+          {
+            "question": "यदि ज्ञात भुजा कर्ण के बराबर या उससे लंबी हो तो क्या होगा?",
+            "answer": "यदि a = c है, तो परिणाम b = 0 होता है (अपक्षयी, त्रिभुज नहीं)। यदि a > c है, तो ऋणात्मक संख्या के वर्गमूल का कोई वास्तविक हल नहीं होता। दोनों स्थितियाँ अमान्य के रूप में अस्वीकार की जाती हैं।"
+          },
+          {
+            "question": "क्या लापता भुजा दशमलव हो सकती है?",
+            "answer": "हाँ। उदाहरण के लिए, c = 10 और a = 7 से b = √51 ≈ 7.14 मिलता है। गणनाओं के दौरान पूर्ण सटीकता बनाए रखें और केवल अंतिम उत्तर को पूर्णांकित करें।"
+          },
+          {
+            "question": "मैं कैसे जाँचूँ कि उत्तर सही है?",
+            "answer": "सत्यापित करें कि a² + b² = c²। 5–12–13 उदाहरण के लिए: 25 + 144 = 169। यह भी पुष्टि करें कि b > 0, b < c, और इकाई आपके इनपुट से मेल खाती है।"
+          },
+          {
+            "question": "क्या मैं अलग-अलग माप इकाइयाँ उपयोग कर सकता हूँ?",
+            "answer": "दोनों इनपुट एक ही इकाई में होने चाहिए। यदि c मीटर में और a सेंटीमीटर में है, तो पहले एक को बदलें। परिणाम इनपुट इकाई का उपयोग करता है।"
+          },
+          {
+            "question": "क्या यह कैलकुलेटर अज्ञात कोण भी ज्ञात कर सकता है?",
+            "answer": "नहीं, यह मोड केवल लापता भुजा b ज्ञात करता है। कोण ज्ञात करने के लिए <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">समकोण त्रिभुज कोण कैलकुलेटर</a> का उपयोग करें।"
+          }
         ]
-      },
-      "howTo": {
-        "h2": "c और a से लेग b कैसे खोजें",
-        "steps": [
-          "पुष्टि करें कि c कर्ण है और a पैर है। कर्ण सदैव सबसे लंबी भुजा होती है।",
-          "पहले इनपुट फ़ील्ड में कर्ण c दर्ज करें।",
-          "दूसरे इनपुट फ़ील्ड में ज्ञात लेग a दर्ज करें।",
-          "गुम पैर ढूंढने के लिए कैलकुलेट पर क्लिक करें।",
-          "संपूर्ण चरण-दर-चरण समाधान के साथ, b का परिणाम पढ़ें।"
-        ]
-      },
-      "example": {
-        "h2": "उदाहरण: पैर b खोजें",
-        "intro": "दिया गया है: c = 13, a = 5. कर्ण 13 और पाद 5 वाले समकोण त्रिभुज का लुप्त पाद 12 है।",
-        "lines": [
-          "b = \\sqrt{13^2 - 5^2}",
-          "b = \\sqrt{169 - 25}",
-          "b = \\sqrt{144}",
-          "b = 12"
-        ]
-      },
-      "extraSections": [
-        {
-          "h2": "गणना करने से पहले महत्वपूर्ण जाँच करें",
-          "paragraphs": [
-            "इस फ़ॉर्मूले का उपयोग करने से पहले, सुनिश्चित करें कि c, a से बड़ा है। कर्ण सदैव समकोण त्रिभुज की सबसे लंबी भुजा होती है। यदि c, a के बराबर है, तो आपको b = 0 मिलेगा, जिसका अर्थ है कि कोई त्रिकोण मौजूद नहीं है।",
-            "यदि c, a से कम है, तो वर्गमूल के अंतर्गत अभिव्यक्ति नकारात्मक हो जाती है। इसका मतलब है कि दो इनपुट मान c को कर्ण के साथ एक वास्तविक समकोण त्रिभुज का वर्णन नहीं कर सकते हैं।"
-          ],
-          "listTitle": "पहले इन जांचों का उपयोग करें:",
-          "listItems": [
-            "c, 90° कोण के विपरीत है।",
-            "c, a से बड़ा है।",
-            "दोनों मान सकारात्मक हैं.",
-            "c और a एक ही इकाई का उपयोग करते हैं।"
-          ]
-        },
-        {
-          "h2": "यह कैलकुलेटर कहां उपयोगी है",
-          "paragraphs": [
-            "यह कैलकुलेटर तब उपयोगी होता है जब एक विकर्ण या ढलान वाला माप ज्ञात होता है, एक लंबवत पक्ष ज्ञात होता है, और दूसरा लंबवत पक्ष गायब होता है। यह c-और-केस के लिए केंद्रित उपकरण है, इसलिए पृष्ठ पर प्रत्येक स्पष्टीकरण b को खोजने की ओर इशारा करता है।",
-            "यह मापों को सत्यापित करने में भी मदद कर सकता है। यदि b के लिए मापा गया मान कैलकुलेटर के परिणाम से मेल नहीं खाता है, तो त्रिकोण सही नहीं हो सकता है, कर्ण को गलत लेबल किया जा सकता है, या एक माप एक अलग इकाई का उपयोग कर सकता है।"
-          ],
-          "listTitle": "सामान्य उदाहरणों में शामिल हैं:",
-          "listItems": [
-            "जब सीढ़ी की लंबाई c और जमीन की दूरी ज्ञात हो तो दीवार की ऊंचाई ज्ञात करना।",
-            "जब ढलान की लंबाई और क्षैतिज ढलान ज्ञात हो तो ढलान का ऊर्ध्वाधर उत्थान ज्ञात करना।",
-            "समकोण त्रिभुज होमवर्क समस्या की जाँच करना जो c और a देता है।",
-            "फ़्रेमिंग, भूदृश्य, रैंप, या फर्श योजनाओं के लिए लेआउट माप की पुष्टि करना।"
-          ]
-        },
-        {
-          "h2": "उत्तर कैसे पढ़ें",
-          "paragraphs": [
-            "गुम पैर b लेबल वाला आउटपुट दूसरे पैर की लंबाई है जो a के साथ समकोण बनाता है। यह कर्ण नहीं है और c से छोटा होना चाहिए।",
-            "यदि गणना की गई b बेहद छोटी है, तो आपका ज्ञात पैर a कर्ण c के बहुत करीब है। यह मान्य हो सकता है, लेकिन मूल्य का उपयोग करने से पहले आरेख और इकाइयों की जांच करना उचित है।"
-          ],
-          "listTitle": "एक वैध परिणाम को संतुष्ट करना चाहिए:",
-          "listItems": [
-            "b शून्य से बड़ा है.",
-            "b, c से कम है।",
-            "a² + b² लगभग c² के बराबर है।",
-            "आउटपुट यूनिट इनपुट यूनिट से मेल खाती है।"
-          ]
-        },
-        {
-          "h2": "सामान्य गलतियाँ",
-          "paragraphs": [
-            "सबसे आम त्रुटि c को एक पैर मानना ​​है। इस कैलकुलेटर में, c कर्ण होना चाहिए, जो सबसे लंबी भुजा है और समकोण के विपरीत भुजा है।",
-            "एक और बार-बार होने वाली गलती वर्गों को घटाने के बजाय जोड़ना है। जोड़ को एक कर्ण मिलता है; घटाने पर कर्ण से लुप्त पैर का पता चलता है।"
-          ],
-          "listTitle": "इन गलतियों से बचें:",
-          "listItems": [
-            "ज्ञात पैर को कर्ण क्षेत्र में डालना।",
-            "c² - a² के बजाय c² + a² का उपयोग करना।",
-            "c से बड़ा या उसके बराबर दर्ज करना।",
-            "वर्गमूल लेने के बजाय b² पर रुकें।",
-            "मीटर और सेंटीमीटर जैसी मिश्रण इकाइयाँ।"
-          ]
-        }
-      ],
-      "relatedLinks": [
-        {
-          "href": "/right-triangle-side-calculator/",
-          "label": "समकोण त्रिभुज भुजा कैलकुलेटर"
-        },
-        {
-          "href": "/pythagorean-theorem-calculator/",
-          "label": "कैलकुलेटर: पाइथागोरस प्रमेय"
-        },
-        {
-          "href": "/missing-leg-from-c-and-b-calculator/",
-          "label": "कैलकुलेटर: c और b से अज्ञात भुजा"
-        }
-      ],
-      "faqs": [
-        {
-          "question": "इस कैलकुलेटर में c का क्या मतलब है?",
-          "answer": "c समकोण त्रिभुज का कर्ण है - सबसे लंबी भुजा, जो 90° कोण के विपरीत स्थित है। यह एक पैर नहीं है. आप इस कैलकुलेटर में दो ज्ञात मानों में से एक के रूप में c दर्ज करें।"
-        },
-        {
-          "question": "इस कैलकुलेटर में a का क्या मतलब है?",
-          "answer": "a समकोण त्रिभुज के दो पैरों में से एक है। यह उन भुजाओं में से एक है जो समकोण बनाती है। इस कैलकुलेटर में, a वह पैर है जिसे आप पहले से ही जानते हैं।"
-        },
-        {
-          "question": "यह कैलकुलेटर क्या खोजता है?",
-          "answer": "यह कैलकुलेटर गुम हुए पैर b का पता लगाता है। कर्ण c और पाद a को देखते हुए, यह b = √(c² − a²) की गणना करता है और आपको चरण-दर-चरण समाधान दिखाता है।"
-        },
-        {
-          "question": "क्या c a से छोटा हो सकता है?",
-          "answer": "नहीं, एक समकोण त्रिभुज में, कर्ण हमेशा सबसे लंबी भुजा होती है। यदि c, a से छोटा है, तो मान एक वैध समकोण त्रिभुज नहीं बनाते हैं। गणना करने से पहले जाँच लें कि कर्ण कौन सा माप है।"
-        },
-        {
-          "question": "मैं c और a में से b कैसे ढूंढूं?",
-          "answer": "कर्ण का वर्ग करें (c²), ज्ञात पाद का वर्ग करें (a²), c² से a² घटाएं, और वर्गमूल लें। सूत्र b = √(c² − a²) है। या तत्काल उत्तर के लिए इस कैलकुलेटर में अपने मान दर्ज करें।"
-        }
-      ]
     },
     "missing-leg-from-c-and-b-calculator": {
       "slug": "missing-leg-from-c-and-b-calculator",
@@ -801,204 +840,243 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         }
       ]
     },
-    "missing-leg-from-c-and-a-calculator": {
-      "slug": "missing-leg-from-c-and-a-calculator",
-      "url": "/missing-leg-from-c-and-a-calculator/",
-      "h1": "Calculadora: Cateto Faltante de c y a",
-      "metaTitle": "Calculadora: Cateto Faltante de c y a | Right Triangle Solver",
-      "metaDescription": "Encuentra el cateto b cuando se conocen la hipotenusa c y el otro cateto a.",
-      "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "Recuerde: c es siempre la hipotenusa, el lado más largo, opuesto al ángulo recto. No es una cateto. Si tienes dos catetos y necesitas la hipotenusa, usa la calculadora del teorema de Pitágoras.",
-      "intro": "Encuentra el cateto b cuando se conocen la hipotenusa c y el otro cateto a.",
-      "quickSummary": {
-        "h2": "Lo que resuelve esta calculadora de cateto faltante",
-        "intro": "Utilice esta página cuando se conozcan la hipotenusa y el cateto a, pero falte el otro cateto. La calculadora reorganiza el teorema de Pitágoras para restar el cateto conocido de la hipotenusa antes de sacar la raíz cuadrada.",
-        "cards": [
-          {
-            "label": "Valores conocidos",
-            "value": "c = hipotenusa; a = cateto conocido"
-          },
-          {
-            "label": "encuentra",
-            "value": "b = cateto desconocido"
-          },
-          {
-            "label": "Fórmula principal",
-            "value": "b = sqrt(c^2 - a^2)"
-          },
-          {
-            "label": "cheque requerido",
-            "value": "Requiere c > a."
-          }
-        ]
-      },
-      "diagram": {
-        "h2": "Diagrama de triángulo rectángulo: encontrar el cateto b",
-        "intro": "El diagrama marca c y a como los valores que ya conoce. El cateto vertical b está resaltado como el lado faltante que resuelve esta calculadora.",
-        "caption": "Diagrama de triángulo rectángulo con hipotenusa conocida c, cateto conocido a y cateto desconocido b.",
-        "sides": {
-          "a": {
-            "label": "a = conocido",
-            "description": "El cateto a es el cateto conocido a lo largo de la base del triángulo rectángulo.",
-            "status": "known"
-          },
-          "b": {
-            "label": "b = encontrar",
-            "description": "El cateto b es el cateto desconocido que se resuelve restando a^2 de c^2.",
-            "status": "unknown"
-          },
-          "c": {
-            "label": "c = conocido",
-            "description": "La hipotenusa c es el lado más largo conocido opuesto al ángulo recto.",
-            "status": "known"
-          }
+        "missing-leg-from-c-and-a-calculator": {
+        "slug": "missing-leg-from-c-and-a-calculator",
+        "url": "/missing-leg-from-c-and-a-calculator/",
+        "h1": "Calculadora de cateto faltante: halla el cateto b con la hipotenusa c y el cateto a",
+        "metaTitle": "Calculadora de cateto faltante: halla b con c y a",
+        "metaDescription": "Halla el cateto faltante de un triángulo rectángulo con la hipotenusa y un cateto conocido. Calcula el lado b, sigue la fórmula y revisa los ejemplos resueltos.",
+        "formulaSlug": "leg-from-hypotenuse-and-other-leg",
+        "toolPurpose": "Recuerda: c es siempre la hipotenusa — el <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> más largo, opuesto al <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> recto. No es un cateto. Si tienes los dos catetos y necesitas la hipotenusa, usa la <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Calculadora del teorema de Pitágoras</a>.",
+        "intro": "Esta <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculadora</a> halla el cateto faltante b de un triángulo rectángulo cuando conoces la hipotenusa c y el otro cateto a. Introduce tus dos mediciones y aplica la fórmula b = √(c² − a²) para calcular el lado desconocido al instante, con todos los pasos de la solución. La hipotenusa es el lado más largo, opuesto al ángulo recto. Los dos catetos forman ese ángulo recto. Saber qué lado es cada uno garantiza que obtengas la respuesta correcta siempre.",
+        "quickSummary": {
+          "h2": "Qué resuelve esta herramienta",
+          "intro": "Usa esta página cuando conozcas la hipotenusa y el cateto a, pero te falte el otro cateto. La <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculadora</a> reordena el <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">teorema de Pitágoras</a> para restar el cateto conocido de la hipotenusa antes de extraer la raíz cuadrada.",
+          "cards": [
+            {
+              "label": "Valores conocidos",
+              "value": "Hipotenusa c y cateto a"
+            },
+            {
+              "label": "Calcula",
+              "value": "Cateto faltante b"
+            },
+            {
+              "label": "Fórmula principal",
+              "value": "b = sqrt(c^2 - a^2)"
+            },
+            {
+              "label": "Comprobación necesaria",
+              "value": "c debe ser mayor que a"
+            }
+          ]
         },
-        "notes": [
-          "c debe ser la hipotenusa, no uno de los catetos.",
-          "Si c es menor o igual que a, las entradas no forman un triángulo rectángulo válido.",
-          "El resultado b utiliza la misma unidad que c y a."
-        ]
-      },
-      "calculator": {
-        "outputLabel": "b = cateto desconocido",
-        "fields": [
+        "diagram": {
+          "h2": "Identifica la hipotenusa y el cateto faltante",
+          "intro": "El diagrama marca c y a como los valores que ya conoces. El cateto vertical b está resaltado como el <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado faltante</a> que resuelve esta calculadora.",
+          "caption": "Diagrama de triángulo rectángulo con la hipotenusa c conocida, el cateto a conocido y el cateto b desconocido.",
+          "sides": {
+            "a": {
+              "label": "a = conocido",
+              "description": "El cateto a es el cateto conocido situado en la base del triángulo rectángulo.",
+              "status": "known"
+            },
+            "b": {
+              "label": "b = hallar",
+              "description": "El cateto b es el cateto desconocido que se obtiene restando a^2 de c^2.",
+              "status": "unknown"
+            },
+            "c": {
+              "label": "c = conocida",
+              "description": "La hipotenusa c es el <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> más largo conocido, opuesto al <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> recto.",
+              "status": "known"
+            }
+          },
+          "notes": [
+            "c debe ser la hipotenusa, no uno de los catetos.",
+            "Si c es menor o igual que a, los valores no forman un triángulo rectángulo válido.",
+            "El resultado b usa la misma unidad que c y a."
+          ]
+        },
+        "calculator": {
+          "outputLabel": "Cateto faltante b",
+          "fields": [
+            {
+              "key": "c",
+              "label": "Hipotenusa c",
+              "min": 0
+            },
+            {
+              "key": "a",
+              "label": "Cateto a",
+              "min": 0
+            }
+          ]
+        },
+        "formulaSection": {
+          "h2": "Fórmula para hallar un cateto faltante",
+          "paragraphs": [
+            "El cálculo usa el <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">teorema de Pitágoras</a>, que relaciona los cuadrados de los dos catetos con el cuadrado de la hipotenusa. Para aislar el cateto faltante, reordena la ecuación paso a paso.",
+            "<strong>Paso 1: parte del teorema de Pitágoras.</strong> Los cuadrados de los dos catetos suman el cuadrado de la hipotenusa.",
+            "<strong>Paso 2: resta a² en ambos lados.</strong> Así se aísla el cuadrado del cateto faltante.",
+            "<strong>Paso 3: extrae la raíz cuadrada positiva.</strong> Las longitudes de los lados son positivas, así que usa la raíz principal. Toda la expresión c² − a² queda dentro del radical.",
+            "Donde <strong>a</strong> es el cateto conocido, <strong>b</strong> es el cateto faltante y <strong>c</strong> es la hipotenusa. La hipotenusa está opuesta al ángulo recto y es siempre el lado más largo.",
+            "<strong>¿Por qué restar?</strong> La ecuación original suma los cuadrados de ambos catetos para obtener el cuadrado de la hipotenusa. Cuando ya se conocen la hipotenusa y un cateto, resta el cuadrado del cateto conocido del cuadrado de la hipotenusa para aislar el cuadrado del cateto desconocido. Luego extrae la raíz cuadrada. Nunca restes el cateto directamente de la hipotenusa: resta siempre sus cuadrados."
+          ],
+          "formulas": [
+            "a^2 + b^2 = c^2",
+            "b^2 = c^2 - a^2",
+            "b = \\sqrt{c^2 - a^2}"
+          ]
+        },
+        "howTo": {
+          "h2": "Cómo hallar el cateto b con c y a",
+          "steps": [
+            "Identifica la hipotenusa, que está opuesta al ángulo de 90°. Siempre es el lado más largo.",
+            "Introduce la hipotenusa c en el primer campo.",
+            "Introduce el cateto conocido a en el segundo campo.",
+            "Comprueba que ambas mediciones usen la misma unidad.",
+            "Pulsa Calcular para hallar el cateto faltante b.",
+            "Revisa el resultado y la solución paso a paso que aparece debajo de la calculadora.",
+            "Verifica la respuesta comprobando que a² + b² sea igual a c²."
+          ]
+        },
+        "example": {
+          "h2": "Ejemplos resueltos para hallar un cateto faltante",
+          "intro": "Cada ejemplo muestra el cálculo completo, desde el enunciado hasta la respuesta verificada. Los cinco usan la fórmula b = √(c² − a²).",
+          "lines": [
+            "b = \\sqrt{13^2 - 5^2}",
+            "b = \\sqrt{169 - 25}",
+            "b = \\sqrt{144}",
+            "b = 12"
+          ]
+        },
+        "extraSections": [
           {
-            "key": "c",
-            "label": "c = hipotenusa",
-            "min": 0
+            "h2": "Ejemplos resueltos en detalle",
+            "paragraphs": [
+              "<h3>Ejemplo 1: triángulo estándar 5–12–13</h3><p><strong>Problema:</strong> Halla el cateto faltante de un triángulo rectángulo con hipotenusa c = 13 cm y cateto conocido a = 5 cm.</p><p><strong>Datos:</strong> c = 13 cm, a = 5 cm. <strong>Hallar:</strong> b.</p><p><strong>Fórmula:</strong> b = √(c² − a²)</p><p><strong>Sustitución:</strong> b = √(13² − 5²) = √(169 − 25) = √144</p><p><strong>Respuesta:</strong> <strong>b = 12 cm</strong></p><p><strong>Verificación:</strong> 5² + 12² = 25 + 144 = 169 = 13². El cateto conocido, el cateto faltante y la hipotenusa forman un triángulo rectángulo válido.</p>",
+              "<h3>Ejemplo 2: escalera apoyada en una pared</h3><p><strong>Problema:</strong> Una escalera de 5 m se apoya en una pared vertical. Su base está a 3 m de la pared. Halla la altura que alcanza la escalera.</p><p><strong>Datos:</strong> c = 5 m (escalera), a = 3 m (distancia al suelo). <strong>Hallar:</strong> b (altura en la pared).</p><p><strong>Cálculo:</strong> b = √(5² − 3²) = √(25 − 9) = √16 = 4 m</p><p><strong>Respuesta:</strong> <strong>La escalera alcanza 4 m de altura en la pared.</strong></p><img src=\"/images/missing-leg/missing-leg-ladder.svg\" alt=\"Diagrama de escalera: escalera de 5 m como hipotenusa, distancia al suelo de 3 m como cateto a, altura en la pared de 4 m como cateto faltante b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Figura: la pared vertical (b = 4 m), la distancia horizontal al suelo (a = 3 m) y la escalera (c = 5 m). Es un modelo geométrico que supone una pared vertical y un suelo nivelado, no una evaluación de seguridad de escaleras.</em></p>",
+              "<h3>Ejemplo 3: diagonal de una habitación rectangular</h3><p><strong>Problema:</strong> Una habitación rectangular tiene una diagonal de 17 ft y un lado de 8 ft. Halla el otro lado.</p><p><strong>Datos:</strong> c = 17 ft (diagonal), a = 8 ft. <strong>Hallar:</strong> b.</p><p><strong>Cálculo:</strong> b = √(17² − 8²) = √(289 − 64) = √225 = 15 ft</p><p><strong>Respuesta:</strong> <strong>El otro lado mide 15 ft.</strong></p><img src=\"/images/missing-leg/missing-leg-room.svg\" alt=\"Diagrama de habitación: diagonal de 17 ft como hipotenusa, lado conocido de 8 ft como cateto a, lado faltante de 15 ft como cateto b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Figura: vista desde arriba. La diagonal (c = 17 ft) divide el rectángulo en dos triángulos rectángulos. El lado conocido (a = 8 ft) y el lado faltante (b = 15 ft) forman el ángulo recto.</em></p>",
+              "<h3>Ejemplo 4: un resultado que requiere redondeo</h3><p><strong>Problema:</strong> Con c = 10 m y a = 7 m, halla b.</p><p><strong>Cálculo:</strong> b = √(10² − 7²) = √(100 − 49) = √51 ≈ 7.141428 m</p><p><strong>Respuesta:</strong> <strong>b ≈ 7.14 m</strong>, redondeado a dos decimales.</p><p><strong>Verificación:</strong> 7² + (√51)² = 49 + 51 = 100 = 10².</p><p>Conserva el valor exacto (√51) durante los cálculos intermedios y redondea solo al final. Redondear antes introduce errores que se acumulan en problemas de varios pasos.</p>",
+              "<h3>Ejemplo 5: geometría de una rampa</h3><p><strong>Problema:</strong> Una rampa recta mide 13 m de largo y tiene un recorrido horizontal de 12 m. Halla su altura vertical.</p><p><strong>Datos:</strong> c = 13 m (rampa), a = 12 m (recorrido). <strong>Hallar:</strong> b (altura).</p><p><strong>Cálculo:</strong> b = √(13² − 12²) = √(169 − 144) = √25 = 5 m</p><p><strong>Respuesta:</strong> <strong>La altura vertical es 5 m.</strong></p><img src=\"/images/missing-leg/missing-leg-ramp.svg\" alt=\"Diagrama de rampa: rampa de 13 m como hipotenusa, recorrido horizontal de 12 m como cateto a, altura vertical de 5 m como cateto faltante b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Figura: la rampa (c = 13 m) como hipotenusa, el recorrido horizontal (a = 12 m) y la altura vertical (b = 5 m). Este cálculo no certifica el cumplimiento de normas de accesibilidad ni de construcción.</em></p>"
+            ]
           },
           {
-            "key": "a",
-            "label": "a = cateto conocido",
-            "min": 0
+            "h2": "¿Cuándo se puede calcular un cateto faltante?",
+            "paragraphs": [
+              "Para un triángulo rectángulo válido y no degenerado, las mediciones deben cumplir tres condiciones: c > 0, a > 0 y c > a. El cateto faltante es entonces b = √(c² − a²).",
+              "<strong>Caso 1: hipotenusa menor que el cateto conocido.</strong> Si c = 4 y a = 5, entonces b = √(16 − 25) = √(−9). La expresión bajo la raíz cuadrada es negativa, así que estos valores no pueden formar un triángulo rectángulo real con c como hipotenusa.",
+              "<strong>Caso 2: hipotenusa igual al cateto conocido.</strong> Si c = 5 y a = 5, entonces b = √(25 − 25) = 0. Es un caso degenerado, no un triángulo válido.",
+              "<strong>Caso 3: mediciones nulas o negativas.</strong> Las longitudes de los lados deben ser positivas. La calculadora rechaza los valores nulos y negativos.",
+              "<strong>Caso 4: unidades inconsistentes.</strong> Ambas mediciones deben usar la misma unidad. Si c está en metros y a en centímetros, convierte una de ellas antes de calcular."
+            ],
+            "listTitle": "Usa primero estas comprobaciones:",
+            "listItems": [
+              "c está opuesto al <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> de 90°.",
+              "c es mayor que a.",
+              "Ambos valores son positivos.",
+              "c y a usan la misma unidad."
+            ]
+          },
+          {
+            "h2": "¿Dónde se usa la fórmula del cateto faltante?",
+            "paragraphs": [
+              "El patrón general: cuando se conocen la diagonal en línea recta o la longitud inclinada y una distancia perpendicular, la otra distancia perpendicular se obtiene con el teorema de Pitágoras. Esto solo funciona cuando la geometría forma un triángulo rectángulo.",
+              "<strong>Construcción y estructuras.</strong> Los carpinteros comprueban que las esquinas estén a escuadra midiendo la diagonal de un marco rectangular. Si se conocen la diagonal (c) y un lado (a), el lado faltante (b) confirma el trazado antes de cortar la madera.",
+              "<strong>Mediciones de habitaciones y planos.</strong> Al planificar muebles o suelos, la diagonal de una habitación y la longitud de una pared dan la longitud de la otra pared sin mover obstáculos.",
+              "<strong>Geometría de escaleras y paredes.</strong> Con la longitud de una escalera y su distancia a la pared, la altura que alcanza se obtiene directamente. Es un modelo geométrico, no una evaluación de seguridad.",
+              "<strong>Cálculos de rampas y pendientes.</strong> Con la longitud de la pendiente y el recorrido horizontal se determina la altura vertical. Esto no certifica el cumplimiento de normas."
+            ]
+          },
+          {
+            "h2": "Cómo comprobar tu cálculo del cateto faltante",
+            "paragraphs": [
+              "Verifica cada resultado antes de usarlo. Para el ejemplo 5–12–13: 5² + 12² = 25 + 144 = 169 = 13².",
+              "La salida etiquetada Cateto faltante b es la longitud del otro cateto que forma el ángulo recto con a. No es la hipotenusa y debe ser más corta que c."
+            ],
+            "listTitle": "Un resultado válido debe cumplir:",
+            "listItems": [
+              "b es mayor que cero.",
+              "b es más corta que c.",
+              "a² + b² es igual a c², permitiendo el redondeo del valor mostrado.",
+              "El resultado usa la unidad correcta."
+            ]
+          },
+          {
+            "h2": "Errores comunes al hallar un cateto faltante",
+            "paragraphs": [
+              "El error más común es tratar c como un cateto. Aquí c debe ser la hipotenusa: el lado más largo, opuesto al ángulo recto.",
+              "Otro error frecuente es sumar los cuadrados en lugar de restarlos. La suma (a² + b²) halla una hipotenusa; la resta (c² − a²) halla un cateto faltante a partir de la hipotenusa."
+            ],
+            "listTitle": "Evita estos errores:",
+            "listItems": [
+              "<strong>Confundir la hipotenusa con un cateto.</strong> Si pones el valor del cateto en el campo c, la fórmula resuelve el problema equivocado. Correcto: c es siempre el lado más largo.",
+              "<strong>Sumar cuadrados en lugar de restarlos.</strong> Incorrecto: b = √(c² + a²). Correcto: b = √(c² − a²).",
+              "<strong>Olvidar la raíz cuadrada.</strong> Incorrecto: b = c² − a². Correcto: extrae la raíz cuadrada de la diferencia.",
+              "<strong>Agrupación incorrecta bajo la raíz.</strong> Incorrecto: √c² − a² (que equivale a c − a). Correcto: √(c² − a²), con toda la diferencia dentro del radical.",
+              "<strong>Introducir a ≥ c.</strong> El cateto conocido no puede ser igual ni mayor que la hipotenusa. Correcto: verifica que c > a antes de calcular.",
+              "<strong>Mezclar unidades.</strong> Incorrecto: c = 5 m, a = 30 cm. Correcto: convierte primero a la misma unidad (c = 500 cm, a = 30 cm).",
+              "<strong>Redondear demasiado pronto.</strong> Incorrecto: redondear √51 a 7.14 a mitad del cálculo. Correcto: mantén toda la precisión hasta la respuesta final."
+            ]
           }
-        ]
-      },
-      "formulaSection": {
-        "h2": "Fórmula b de cateto faltante",
-        "paragraphs": [
-          "La fórmula para encontrar el cateto b se deriva del teorema de Pitágoras (a² + b² = c²). Reorganizando para b se obtiene la siguiente fórmula.",
-          "Donde c es la hipotenusa (el lado más largo del triángulo rectángulo), a es el cateto conocido y b es el cateto faltante que estás resolviendo. Observa la resta: restas el cuadrado del cateto conocido del cuadrado de la hipotenusa y luego sacas la raíz cuadrada."
         ],
-        "formulas": [
-          "b = \\sqrt{c^2 - a^2}"
+        "relatedLinks": [
+          {
+            "href": "/right-triangle-side-calculator/",
+            "label": "Calculadora de lados de triángulos rectángulos"
+          },
+          {
+            "href": "/pythagorean-theorem-calculator/",
+            "label": "Calculadora del teorema de Pitágoras"
+          },
+          {
+            "href": "/missing-leg-from-c-and-b-calculator/",
+            "label": "Calculadora de cateto faltante con c y b"
+          },
+          {
+            "href": "/right-triangle-angle-calculator/",
+            "label": "Calculadora de ángulos de triángulos rectángulos"
+          },
+          {
+            "href": "/right-triangle-measurements-calculator/",
+            "label": "Calculadora de medidas de triángulos rectángulos"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "¿Cómo hallo el cateto faltante con la hipotenusa y un cateto?",
+            "answer": "Eleva la hipotenusa al cuadrado (c²), eleva el cateto conocido al cuadrado (a²), resta y extrae la raíz cuadrada: b = √(c² − a²). Introduce ambos valores en la calculadora de arriba para un resultado instantáneo con pasos."
+          },
+          {
+            "question": "¿Por qué resto en lugar de sumar?",
+            "answer": "El teorema de Pitágoras suma los cuadrados de los catetos para obtener el cuadrado de la hipotenusa (a² + b² = c²). Cuando ya conoces la hipotenusa, reordena: resta el cuadrado del cateto conocido del cuadrado de la hipotenusa para aislar el cuadrado del cateto faltante y luego extrae la raíz."
+          },
+          {
+            "question": "¿Cómo sé qué lado es la hipotenusa?",
+            "answer": "La hipotenusa es siempre el lado más largo y está opuesta al ángulo de 90°. Si tus tres mediciones son 5, 12 y 13, la hipotenusa es 13."
+          },
+          {
+            "question": "¿Qué pasa si el cateto conocido es igual o mayor que la hipotenusa?",
+            "answer": "Si a = c, el resultado es b = 0 (degenerado, no es un triángulo). Si a > c, la raíz cuadrada de un número negativo no tiene solución real. Ambos casos se rechazan como no válidos."
+          },
+          {
+            "question": "¿El cateto faltante puede ser un decimal?",
+            "answer": "Sí. Por ejemplo, c = 10 y a = 7 dan b = √51 ≈ 7.14. Mantén toda la precisión durante los cálculos y redondea solo la respuesta final."
+          },
+          {
+            "question": "¿Cómo puedo comprobar si la respuesta es correcta?",
+            "answer": "Verifica que a² + b² = c². Para el ejemplo 5–12–13: 25 + 144 = 169. Confirma también que b > 0, b < c y que la unidad coincide con tus mediciones."
+          },
+          {
+            "question": "¿Puedo usar distintas unidades de medida?",
+            "answer": "Ambas entradas deben usar la misma unidad. Si c está en metros y a en centímetros, convierte una primero. El resultado usa la unidad de entrada."
+          },
+          {
+            "question": "¿Esta calculadora también puede hallar un ángulo desconocido?",
+            "answer": "No, este modo solo halla el cateto faltante b. Para hallar ángulos, usa la <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Calculadora de ángulos de triángulos rectángulos</a>."
+          }
         ]
-      },
-      "howTo": {
-        "h2": "Cómo encontrar la cateto b de c y a",
-        "steps": [
-          "Confirma que c es la hipotenusa y a es un cateto. La hipotenusa es siempre el lado más largo.",
-          "Ingrese la hipotenusa c en el primer campo de entrada.",
-          "Ingrese el tramo conocido a en el segundo campo de entrada.",
-          "Haga clic en Calcular para encontrar el tramo que falta.",
-          "Lea el resultado de b, junto con la solución completa paso a paso."
-        ]
-      },
-      "example": {
-        "h2": "Ejemplo: encontrar el tramo b",
-        "intro": "Dado: c = 13, a = 5. El cateto que falta de un triángulo rectángulo con hipotenusa 13 y cateto 5 es 12.",
-        "lines": [
-          "b = \\sqrt{13^2 - 5^2}",
-          "b = \\sqrt{169 - 25}",
-          "b = \\sqrt{144}",
-          "b = 12"
-        ]
-      },
-      "extraSections": [
-        {
-          "h2": "Verificación importante antes de calcular",
-          "paragraphs": [
-            "Antes de usar esta fórmula, asegúrese de que c sea mayor que a. La hipotenusa es siempre el lado más largo de un triángulo rectángulo. Si c es igual a a, obtendrías b = 0, lo que significa que no existe ningún triángulo.",
-            "Si c es menor que a, la expresión bajo la raíz cuadrada se vuelve negativa. Eso significa que los dos valores de entrada no pueden describir un triángulo rectángulo real con c como hipotenusa."
-          ],
-          "listTitle": "Utilice estos controles primero:",
-          "listItems": [
-            "c está opuesto al ángulo 90°.",
-            "c es mayor que a.",
-            "Ambos valores son positivos.",
-            "c y a utilizan la misma unidad."
-          ]
-        },
-        {
-          "h2": "Dónde es útil esta calculadora",
-          "paragraphs": [
-            "Esta calculadora es útil cuando se conoce una medida diagonal o inclinada, se conoce un lado perpendicular y falta el otro lado perpendicular. Es la herramienta enfocada para el caso c-y-a, por lo que cada explicación en la página apunta a encontrar b.",
-            "También puede ayudar a verificar las medidas. Si un valor medido para b no coincide con el resultado de la calculadora, es posible que el triángulo no sea correcto, que la hipotenusa esté mal etiquetada o que una medida utilice una unidad diferente."
-          ],
-          "listTitle": "Los ejemplos comunes incluyen:",
-          "listItems": [
-            "Encontrar la altura de la pared cuando se conocen la longitud de la escalera c y la distancia al suelo a.",
-            "Encontrar la elevación vertical de una pendiente cuando se conocen la longitud de la pendiente y su recorrido horizontal.",
-            "Comprobando un problema de tarea de triángulo rectángulo que da c y a.",
-            "Confirmar las medidas de diseño para marcos, paisajismo, rampas o planos de planta."
-          ]
-        },
-        {
-          "h2": "Cómo leer la respuesta",
-          "paragraphs": [
-            "La salida etiquetada cateto faltante b es la longitud del otro cateto que forma el ángulo recto con a. No es la hipotenusa y debería ser más corta que c.",
-            "Si el b calculado es extremadamente pequeño, su cateto conocido a está muy cerca de la hipotenusa c. Eso puede ser válido, pero vale la pena revisar el diagrama y las unidades antes de usar el valor."
-          ],
-          "listTitle": "Un resultado válido debe satisfacer:",
-          "listItems": [
-            "b es mayor que cero.",
-            "b es menor que c.",
-            "a² + b² es aproximadamente igual a c².",
-            "La unidad de salida coincide con la unidad de entrada."
-          ]
-        },
-        {
-          "h2": "Errores comunes",
-          "paragraphs": [
-            "El error más común es tratar a c como una cateto. En esta calculadora, c debe ser la hipotenusa, que es el lado más largo y el lado opuesto al ángulo recto.",
-            "Otro error frecuente es sumar los cuadrados en lugar de restar. La suma encuentra una hipotenusa; la resta encuentra un cateto faltante de la hipotenusa."
-          ],
-          "listTitle": "Evite estos errores:",
-          "listItems": [
-            "Poner el cateto conocido en el campo de la hipotenusa.",
-            "Usando c² + a² en lugar de c² - a².",
-            "Ingresando un valor mayor o igual a c.",
-            "Deteniéndose en b² en lugar de sacar la raíz cuadrada.",
-            "Unidades de mezcla como metros y centímetros."
-          ]
-        }
-      ],
-      "relatedLinks": [
-        {
-          "href": "/right-triangle-side-calculator/",
-          "label": "Calculadora del lado del triángulo rectángulo"
-        },
-        {
-          "href": "/pythagorean-theorem-calculator/",
-          "label": "Calculadora: Teorema de Pitágoras"
-        },
-        {
-          "href": "/missing-leg-from-c-and-b-calculator/",
-          "label": "Calculadora: Cateto Faltante de c y b"
-        }
-      ],
-      "faqs": [
-        {
-          "question": "¿Qué significa c en esta calculadora?",
-          "answer": "c es la hipotenusa del triángulo rectángulo, el lado más largo, ubicado frente al ángulo 90°. No es una cateto. Ingresa c como uno de los dos valores conocidos en esta calculadora."
-        },
-        {
-          "question": "¿Qué significa a en esta calculadora?",
-          "answer": "a es uno de los dos catetos del triángulo rectángulo. Es uno de los lados que forma el ángulo recto. En esta calculadora, a es el tramo que ya conoces."
-        },
-        {
-          "question": "¿Qué encuentra esta calculadora?",
-          "answer": "Esta calculadora encuentra el cateto faltante b. Dada la hipotenusa c y el cateto a, calcula b = √(c² − a²) y le muestra la solución paso a paso."
-        },
-        {
-          "question": "¿Puede c ser más pequeño que a?",
-          "answer": "No. En un triángulo rectángulo, la hipotenusa es siempre el lado más largo. Si c es menor que a, los valores no forman un triángulo rectángulo válido. Comprueba qué medida es la hipotenusa antes de calcular."
-        },
-        {
-          "question": "¿Cómo encuentro b entre c y a?",
-          "answer": "Eleva al cuadrado la hipotenusa (c²), eleva al cuadrado el cateto conocido (a²), resta a² de c² y saca la raíz cuadrada. La fórmula es b = √(c² − a²). O ingrese sus valores en esta calculadora para obtener una respuesta instantánea."
-        }
-      ]
     },
     "missing-leg-from-c-and-b-calculator": {
       "slug": "missing-leg-from-c-and-b-calculator",
@@ -1400,204 +1478,243 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         }
       ]
     },
-    "missing-leg-from-c-and-a-calculator": {
-      "slug": "missing-leg-from-c-and-a-calculator",
-      "url": "/missing-leg-from-c-and-a-calculator/",
-      "h1": "Калькулятор: Поиск катета по c и a",
-      "metaTitle": "Калькулятор: Поиск катета по c и a | Right Triangle Solver",
-      "metaDescription": "Найдите катет b, когда известны гипотенуза c и другой катет a.",
-      "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "Помните: c - это всегда гипотенуза - самая длинная сторона, противоположная прямому углу. Это не нога. Если у вас два катета и вместо него вам нужна гипотенуза, воспользуйтесь калькулятором теоремы Пифагора.",
-      "intro": "Найдите катет b, когда известны гипотенуза c и другой катет a.",
-      "quickSummary": {
-        "h2": "Что решает этот калькулятор отсутствующей ноги",
-        "intro": "Используйте эту страницу, если известны гипотенуза и катет a, но другой катет отсутствует. Калькулятор изменяет теорему Пифагора, чтобы вычесть известный катет из гипотенузы, прежде чем извлечь квадратный корень.",
-        "cards": [
-          {
-            "label": "Известные значения",
-            "value": "c = гипотенуза; a = известный катет"
-          },
-          {
-            "label": "Находки",
-            "value": "b = неизвестный катет"
-          },
-          {
-            "label": "Основная формула",
-            "value": "b = sqrt(c^2 - a^2)"
-          },
-          {
-            "label": "Обязательная проверка",
-            "value": "Требуется c > a."
-          }
-        ]
-      },
-      "diagram": {
-        "h2": "Схема прямоугольного треугольника: нахождение катета b",
-        "intro": "На диаграмме c и a отмечены как уже известные вам значения. Вертикальная часть b выделена как недостающая сторона, которую решает этот калькулятор.",
-        "caption": "Диаграмма прямоугольного треугольника с известной гипотенузой c, известным катетом a и неизвестным катетом b.",
-        "sides": {
-          "a": {
-            "label": "a = известно",
-            "description": "Катет a - известный катет по основанию прямоугольного треугольника.",
-            "status": "known"
-          },
-          "b": {
-            "label": "b = найти",
-            "description": "Участок b - это неизвестный участок, который решается путем вычитания a^2 из c^2.",
-            "status": "unknown"
-          },
-          "c": {
-            "label": "c = известно",
-            "description": "Гипотенуза c - это известная самая длинная сторона, лежащая против прямого угла.",
-            "status": "known"
-          }
+        "missing-leg-from-c-and-a-calculator": {
+        "slug": "missing-leg-from-c-and-a-calculator",
+        "url": "/missing-leg-from-c-and-a-calculator/",
+        "h1": "Калькулятор неизвестного катета: найти катет b по гипотенузе c и катету a",
+        "metaTitle": "Калькулятор неизвестного катета: найти b по c и a",
+        "metaDescription": "Найдите неизвестный катет прямоугольного треугольника по гипотенузе и одному известному катету. Вычислите сторону b, разберите формулу и посмотрите решённые примеры.",
+        "formulaSlug": "leg-from-hypotenuse-and-other-leg",
+        "toolPurpose": "Помните: c — это всегда гипотенуза — самая длинная <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a>, лежащая напротив прямого <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a>. Это не катет. Если вам известны два катета и нужно найти гипотенузу, используйте <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">калькулятор теоремы Пифагора</a>.",
+        "intro": "Этот <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">калькулятор</a> находит неизвестный катет b прямоугольного треугольника, если известны гипотенуза c и другой катет a. Введите два ваших измерения, и он применит формулу b = √(c² − a²), чтобы мгновенно вычислить неизвестную сторону, показав полное пошаговое решение. Гипотенуза — самая длинная сторона, лежащая напротив прямого угла. Два катета образуют этот прямой угол. Знание того, какая сторона есть какая, гарантирует правильный ответ каждый раз.",
+        "quickSummary": {
+          "h2": "Что решает этот инструмент",
+          "intro": "Используйте эту страницу, когда известны гипотенуза и катет a, но другой катет неизвестен. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Калькулятор</a> преобразует <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">теорему Пифагора</a>, вычитая квадрат известного катета из квадрата гипотенузы, а затем извлекает квадратный корень.",
+          "cards": [
+            {
+              "label": "Известные значения",
+              "value": "Гипотенуза c и катет a"
+            },
+            {
+              "label": "Находит",
+              "value": "Неизвестный катет b"
+            },
+            {
+              "label": "Основная формула",
+              "value": "b = sqrt(c^2 - a^2)"
+            },
+            {
+              "label": "Обязательная проверка",
+              "value": "c должно быть больше a"
+            }
+          ]
         },
-        "notes": [
-          "c должна быть гипотенузой, а не одним из катетов.",
-          "Если c меньше или равен a, входные данные не образуют правильный прямоугольный треугольник.",
-          "В результате b использует ту же единицу измерения, что и c и a."
-        ]
-      },
-      "calculator": {
-        "outputLabel": "b = неизвестный катет",
-        "fields": [
+        "diagram": {
+          "h2": "Определите гипотенузу и неизвестный катет",
+          "intro": "На диаграмме c и a отмечены как уже известные вам значения. Вертикальный катет b выделен как <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">неизвестная сторона</a>, которую находит этот калькулятор.",
+          "caption": "Диаграмма прямоугольного треугольника с известной гипотенузой c, известным катетом a и неизвестным катетом b.",
+          "sides": {
+            "a": {
+              "label": "a = известно",
+              "description": "Катет a — известный катет вдоль основания прямоугольного треугольника.",
+              "status": "known"
+            },
+            "b": {
+              "label": "b = найти",
+              "description": "Катет b — неизвестный катет, вычисляемый вычитанием a^2 из c^2.",
+              "status": "unknown"
+            },
+            "c": {
+              "label": "c = известно",
+              "description": "Гипотенуза c — известная самая длинная <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a>, лежащая напротив прямого <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a>.",
+              "status": "known"
+            }
+          },
+          "notes": [
+            "c должна быть гипотенузой, а не одним из катетов.",
+            "Если c меньше или равно a, введённые значения не образуют допустимый прямоугольный треугольник.",
+            "Результат b измеряется в той же единице, что c и a."
+          ]
+        },
+        "calculator": {
+          "outputLabel": "Неизвестный катет b",
+          "fields": [
+            {
+              "key": "c",
+              "label": "Гипотенуза c",
+              "min": 0
+            },
+            {
+              "key": "a",
+              "label": "Катет a",
+              "min": 0
+            }
+          ]
+        },
+        "formulaSection": {
+          "h2": "Формула для нахождения неизвестного катета",
+          "paragraphs": [
+            "Вычисление основано на <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">теореме Пифагора</a>, которая связывает квадраты двух катетов с квадратом гипотенузы. Чтобы выделить неизвестный катет, преобразуйте уравнение шаг за шагом.",
+            "<strong>Шаг 1: Начните с теоремы Пифагора.</strong> Квадраты двух катетов в сумме дают квадрат гипотенузы.",
+            "<strong>Шаг 2: Вычтите a² из обеих частей.</strong> Это выделит квадрат неизвестного катета.",
+            "<strong>Шаг 3: Извлеките положительный квадратный корень.</strong> Длины сторон положительны, поэтому используйте арифметический корень. Всё выражение c² − a² остаётся под знаком корня.",
+            "Где <strong>a</strong> — известный катет, <strong>b</strong> — неизвестный катет, а <strong>c</strong> — гипотенуза. Гипотенуза лежит напротив прямого угла и всегда является самой длинной стороной.",
+            "<strong>Почему вычитаем?</strong> Исходное уравнение складывает квадраты обоих катетов, чтобы получить квадрат гипотенузы. Когда гипотенуза и один катет уже известны, вычтите квадрат известного катета из квадрата гипотенузы, чтобы выделить квадрат неизвестного катета. Затем извлеките квадратный корень. Никогда не вычитайте катет из гипотенузы напрямую — всегда вычитайте их квадраты."
+          ],
+          "formulas": [
+            "a^2 + b^2 = c^2",
+            "b^2 = c^2 - a^2",
+            "b = \\sqrt{c^2 - a^2}"
+          ]
+        },
+        "howTo": {
+          "h2": "Как найти катет b по c и a",
+          "steps": [
+            "Определите гипотенузу, лежащую напротив угла 90°. Это всегда самая длинная сторона.",
+            "Введите гипотенузу c в первое поле ввода.",
+            "Введите известный катет a во второе поле ввода.",
+            "Убедитесь, что оба измерения выполнены в одинаковых единицах.",
+            "Нажмите «Вычислить», чтобы найти неизвестный катет b.",
+            "Проверьте результат и пошаговое решение под калькулятором.",
+            "Проверьте ответ, убедившись, что a² + b² равно c²."
+          ]
+        },
+        "example": {
+          "h2": "Решённые примеры нахождения неизвестного катета",
+          "intro": "Каждый пример показывает полное вычисление от условия задачи до проверенного ответа. Во всех пяти используется формула b = √(c² − a²).",
+          "lines": [
+            "b = \\sqrt{13^2 - 5^2}",
+            "b = \\sqrt{169 - 25}",
+            "b = \\sqrt{144}",
+            "b = 12"
+          ]
+        },
+        "extraSections": [
           {
-            "key": "c",
-            "label": "c = гипотенуза",
-            "min": 0
+            "h2": "Подробные решённые примеры",
+            "paragraphs": [
+              "<h3>Пример 1: Классический треугольник 5–12–13</h3><p><strong>Задача:</strong> Найдите неизвестный катет прямоугольного треугольника с гипотенузой c = 13 см и известным катетом a = 5 см.</p><p><strong>Дано:</strong> c = 13 см, a = 5 см. <strong>Найти:</strong> b.</p><p><strong>Формула:</strong> b = √(c² − a²)</p><p><strong>Подстановка:</strong> b = √(13² − 5²) = √(169 − 25) = √144</p><p><strong>Ответ:</strong> <strong>b = 12 см</strong></p><p><strong>Проверка:</strong> 5² + 12² = 25 + 144 = 169 = 13². Известный катет, неизвестный катет и гипотенуза образуют допустимый прямоугольный треугольник.</p>",
+              "<h3>Пример 2: Лестница у стены</h3><p><strong>Задача:</strong> Лестница длиной 5 м стоит у вертикальной стены. Её основание находится на расстоянии 3 м от стены. Найдите высоту, на которую достаёт лестница.</p><p><strong>Дано:</strong> c = 5 м (лестница), a = 3 м (расстояние по земле). <strong>Найти:</strong> b (высота на стене).</p><p><strong>Вычисление:</strong> b = √(5² − 3²) = √(25 − 9) = √16 = 4 м</p><p><strong>Ответ:</strong> <strong>Лестница достаёт до высоты 4 м.</strong></p><img src=\"/images/missing-leg/missing-leg-ladder.svg\" alt=\"Диаграмма лестницы: лестница 5 м как гипотенуза, расстояние по земле 3 м как катет a, высота на стене 4 м как неизвестный катет b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Рисунок: вертикальная стена (b = 4 м), горизонтальное расстояние по земле (a = 3 м) и лестница (c = 5 м). Это геометрическая модель, предполагающая вертикальную стену и ровную землю, а не оценка безопасности лестницы.</em></p>",
+              "<h3>Пример 3: Диагональ прямоугольной комнаты</h3><p><strong>Задача:</strong> Диагональ прямоугольной комнаты составляет 17 футов, а одна из сторон — 8 футов. Найдите другую сторону.</p><p><strong>Дано:</strong> c = 17 футов (диагональ), a = 8 футов. <strong>Найти:</strong> b.</p><p><strong>Вычисление:</strong> b = √(17² − 8²) = √(289 − 64) = √225 = 15 футов</p><p><strong>Ответ:</strong> <strong>Другая сторона равна 15 футам.</strong></p><img src=\"/images/missing-leg/missing-leg-room.svg\" alt=\"Диаграмма комнаты: диагональ 17 футов как гипотенуза, известная сторона 8 футов как катет a, неизвестная сторона 15 футов как катет b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Рисунок: вид сверху. Диагональ (c = 17 футов) делит прямоугольник на два прямоугольных треугольника. Известная сторона (a = 8 футов) и неизвестная сторона (b = 15 футов) образуют прямой угол.</em></p>",
+              "<h3>Пример 4: Результат, требующий округления</h3><p><strong>Задача:</strong> Дано c = 10 м и a = 7 м, найдите b.</p><p><strong>Вычисление:</strong> b = √(10² − 7²) = √(100 − 49) = √51 ≈ 7.141428 м</p><p><strong>Ответ:</strong> <strong>b ≈ 7.14 м</strong>, округлено до двух знаков после запятой.</p><p><strong>Проверка:</strong> 7² + (√51)² = 49 + 51 = 100 = 10².</p><p>Сохраняйте точное значение (√51) в промежуточных вычислениях и округляйте только на последнем шаге. Преждевременное округление вносит ошибки, которые накапливаются в многошаговых задачах.</p>",
+              "<h3>Пример 5: Геометрия пандуса</h3><p><strong>Задача:</strong> Прямой пандус имеет длину 13 м и горизонтальную проекцию 12 м. Найдите его вертикальный подъём.</p><p><strong>Дано:</strong> c = 13 м (пандус), a = 12 м (проекция). <strong>Найти:</strong> b (подъём).</p><p><strong>Вычисление:</strong> b = √(13² − 12²) = √(169 − 144) = √25 = 5 м</p><p><strong>Ответ:</strong> <strong>Вертикальный подъём равен 5 м.</strong></p><img src=\"/images/missing-leg/missing-leg-ramp.svg\" alt=\"Диаграмма пандуса: пандус 13 м как гипотенуза, горизонтальная проекция 12 м как катет a, вертикальный подъём 5 м как неизвестный катет b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Рисунок: пандус (c = 13 м) как гипотенуза, горизонтальная проекция (a = 12 м) и вертикальный подъём (b = 5 м). Этот расчёт не подтверждает соответствие нормам доступности или строительным регламентам.</em></p>"
+            ]
           },
           {
-            "key": "a",
-            "label": "a = известный катет",
-            "min": 0
+            "h2": "Когда можно вычислить неизвестный катет?",
+            "paragraphs": [
+              "Для допустимого невырожденного прямоугольного треугольника измерения должны удовлетворять трём условиям: c > 0, a > 0 и c > a. Тогда неизвестный катет равен b = √(c² − a²).",
+              "<strong>Случай 1: гипотенуза меньше известного катета.</strong> Если c = 4 и a = 5, то b = √(16 − 25) = √(−9). Подкоренное выражение отрицательно, поэтому эти входные данные не могут образовать настоящий прямоугольный треугольник с гипотенузой c.",
+              "<strong>Случай 2: гипотенуза равна известному катету.</strong> Если c = 5 и a = 5, то b = √(25 − 25) = 0. Это вырожденный случай, а не допустимый треугольник.",
+              "<strong>Случай 3: нулевые или отрицательные измерения.</strong> Длины сторон должны быть положительными. Калькулятор отклоняет нулевые и отрицательные входные данные.",
+              "<strong>Случай 4: несогласованные единицы измерения.</strong> Оба измерения должны быть выполнены в одинаковых единицах. Если c измерено в метрах, а a — в сантиметрах, сначала преобразуйте одно из них."
+            ],
+            "listTitle": "Сначала выполните эти проверки:",
+            "listItems": [
+              "c лежит напротив <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> 90°.",
+              "c больше a.",
+              "Оба значения положительны.",
+              "c и a измерены в одинаковых единицах."
+            ]
+          },
+          {
+            "h2": "Где используется формула неизвестного катета?",
+            "paragraphs": [
+              "Общая закономерность: когда известны прямолинейная диагональ или наклонная длина и одно перпендикулярное расстояние, другое перпендикулярное расстояние следует из теоремы Пифагора. Это работает только тогда, когда фигура образует прямоугольный треугольник.",
+              "<strong>Строительство и каркасные работы.</strong> Плотники проверяют прямые углы, измеряя диагональ прямоугольной рамы. Если известны диагональ (c) и одна сторона (a), недостающая сторона (b) подтверждает разметку перед распилом досок.",
+              "<strong>Размеры комнат и планы помещений.</strong> При планировке мебели или напольного покрытия диагональ комнаты и длина одной стены дают длину другой стены без перемещения препятствий.",
+              "<strong>Лестница и геометрия стены.</strong> По длине лестницы и её расстоянию от стены высота, на которую она достаёт, определяется напрямую. Это геометрическая модель, а не оценка безопасности.",
+              "<strong>Расчёты пандусов и уклонов.</strong> По длине уклона и горизонтальной проекции определяется вертикальный подъём. Это не подтверждает соответствие строительным нормам."
+            ]
+          },
+          {
+            "h2": "Как проверить вычисление неизвестного катета",
+            "paragraphs": [
+              "Проверяйте каждый результат перед использованием. Для примера 5–12–13: 5² + 12² = 25 + 144 = 169 = 13².",
+              "Результат с пометкой «Неизвестный катет b» — это длина другого катета, образующего прямой угол с a. Это не гипотенуза, и он должен быть короче c."
+            ],
+            "listTitle": "Корректный результат должен удовлетворять:",
+            "listItems": [
+              "b больше нуля.",
+              "b короче c.",
+              "a² + b² равно c², с учётом округления в отображаемом значении.",
+              "В результате используется правильная единица измерения."
+            ]
+          },
+          {
+            "h2": "Типичные ошибки при нахождении неизвестного катета",
+            "paragraphs": [
+              "Самая распространённая ошибка — считать c катетом. Здесь c должно быть гипотенузой: самой длинной стороной, лежащей напротив прямого угла.",
+              "Другая частая ошибка — складывать квадраты вместо вычитания. Сложение (a² + b²) находит гипотенузу; вычитание (c² − a²) находит неизвестный катет по гипотенузе."
+            ],
+            "listTitle": "Избегайте этих ошибок:",
+            "listItems": [
+              "<strong>Путаница гипотенузы с катетом.</strong> Если ввести значение катета в поле c, формула решит не ту задачу. Правильно: c — всегда самая длинная сторона.",
+              "<strong>Сложение квадратов вместо вычитания.</strong> Неправильно: b = √(c² + a²). Правильно: b = √(c² − a²).",
+              "<strong>Забытый квадратный корень.</strong> Неправильно: b = c² − a². Правильно: извлеките квадратный корень из разности.",
+              "<strong>Неверная группировка под корнем.</strong> Неправильно: √c² − a² (это равно c − a). Правильно: √(c² − a²), вся разность под знаком корня.",
+              "<strong>Ввод a ≥ c.</strong> Известный катет не может быть равен гипотенузе или превышать её. Правильно: перед вычислением проверьте, что c > a.",
+              "<strong>Смешение единиц измерения.</strong> Неправильно: c = 5 м, a = 30 см. Правильно: сначала приведите к одинаковым единицам (c = 500 см, a = 30 см).",
+              "<strong>Слишком раннее округление.</strong> Неправильно: округлять √51 до 7.14 в середине вычислений. Правильно: сохраняйте полную точность до окончательного ответа."
+            ]
           }
-        ]
-      },
-      "formulaSection": {
-        "h2": "Отсутствует ветвь формулы b",
-        "paragraphs": [
-          "Формула для нахождения участка b выведена из теоремы Пифагора (a² + b² = c²). Перестановка для b дает формулу ниже.",
-          "Где c - гипотенуза (самая длинная сторона прямоугольного треугольника), a - известный катет, а b - недостающий катет, который вы ищете. Обратите внимание на вычитание: вы вычитаете квадрат известного катета из квадрата гипотенузы, а затем извлекаете квадратный корень."
         ],
-        "formulas": [
-          "b = \\sqrt{c^2 - a^2}"
+        "relatedLinks": [
+          {
+            "href": "/right-triangle-side-calculator/",
+            "label": "Калькулятор сторон прямоугольного треугольника"
+          },
+          {
+            "href": "/pythagorean-theorem-calculator/",
+            "label": "Калькулятор теоремы Пифагора"
+          },
+          {
+            "href": "/missing-leg-from-c-and-b-calculator/",
+            "label": "Калькулятор неизвестного катета по c и b"
+          },
+          {
+            "href": "/right-triangle-angle-calculator/",
+            "label": "Калькулятор углов прямоугольного треугольника"
+          },
+          {
+            "href": "/right-triangle-measurements-calculator/",
+            "label": "Калькулятор измерений прямоугольного треугольника"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Как найти неизвестный катет по гипотенузе и одному катету?",
+            "answer": "Возведите гипотенузу в квадрат (c²), возведите известный катет в квадрат (a²), вычтите и извлеките квадратный корень: b = √(c² − a²). Введите оба значения в калькулятор выше, чтобы мгновенно получить результат с пошаговым решением."
+          },
+          {
+            "question": "Почему нужно вычитать, а не складывать?",
+            "answer": "Теорема Пифагора складывает квадраты катетов, чтобы получить квадрат гипотенузы (a² + b² = c²). Когда гипотенуза уже известна, преобразуйте уравнение: вычтите квадрат известного катета из квадрата гипотенузы, чтобы выделить квадрат неизвестного катета, затем извлеките корень."
+          },
+          {
+            "question": "Как узнать, какая сторона — гипотенуза?",
+            "answer": "Гипотенуза — всегда самая длинная сторона, лежащая напротив угла 90°. Если ваши три измерения — 5, 12 и 13, то гипотенуза равна 13."
+          },
+          {
+            "question": "Что произойдёт, если известный катет равен гипотенузе или длиннее её?",
+            "answer": "Если a = c, результат будет b = 0 (вырожденный случай, не треугольник). Если a > c, квадратный корень из отрицательного числа не имеет действительного решения. Оба случая отклоняются как недопустимые."
+          },
+          {
+            "question": "Может ли неизвестный катет быть десятичной дробью?",
+            "answer": "Да. Например, при c = 10 и a = 7 получаем b = √51 ≈ 7.14. Сохраняйте полную точность в вычислениях и округляйте только окончательный ответ."
+          },
+          {
+            "question": "Как проверить, правильный ли ответ?",
+            "answer": "Убедитесь, что a² + b² = c². Для примера 5–12–13: 25 + 144 = 169. Также проверьте, что b > 0, b < c, а единица измерения соответствует введённым данным."
+          },
+          {
+            "question": "Можно ли использовать разные единицы измерения?",
+            "answer": "Оба входных значения должны быть в одинаковых единицах. Если c измерено в метрах, а a — в сантиметрах, сначала преобразуйте одно из них. Результат будет в единице входных данных."
+          },
+          {
+            "question": "Может ли этот калькулятор также найти неизвестный угол?",
+            "answer": "Нет, этот режим находит только неизвестный катет b. Чтобы найти углы, используйте <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">калькулятор углов прямоугольного треугольника</a>."
+          }
         ]
-      },
-      "howTo": {
-        "h2": "Как найти ногу b из c и a",
-        "steps": [
-          "Убедитесь, что c - гипотенуза, а a - катет. Гипотенуза всегда самая длинная сторона.",
-          "Введите гипотенузу c в первое поле ввода.",
-          "Введите известную ногу a во второе поле ввода.",
-          "Нажмите «Рассчитать», чтобы найти недостающую ногу.",
-          "Прочтите результат для b вместе с полным пошаговым решением."
-        ]
-      },
-      "example": {
-        "h2": "Пример: найти ногу b.",
-        "intro": "Дано: c = 13, a = 5. Недостающий катет прямоугольного треугольника с гипотенузой 13 и катетом 5 равен 12.",
-        "lines": [
-          "b = \\sqrt{13^2 - 5^2}",
-          "b = \\sqrt{169 - 25}",
-          "b = \\sqrt{144}",
-          "b = 12"
-        ]
-      },
-      "extraSections": [
-        {
-          "h2": "Важная проверка перед расчетом",
-          "paragraphs": [
-            "Прежде чем использовать эту формулу, убедитесь, что c больше, чем a. Гипотенуза всегда является самой длинной стороной прямоугольного треугольника. Если c равен a, вы получите b = 0, что означает, что треугольника не существует.",
-            "Если c меньше a, выражение под квадратным корнем становится отрицательным. Это означает, что два входных значения не могут описать реальный прямоугольный треугольник с c в качестве гипотенузы."
-          ],
-          "listTitle": "Сначала используйте эти проверки:",
-          "listItems": [
-            "c находится напротив угла 90°.",
-            "c больше, чем a.",
-            "Оба значения положительны.",
-            "c и a используют одну и ту же единицу измерения."
-          ]
-        },
-        {
-          "h2": "Где полезен этот калькулятор",
-          "paragraphs": [
-            "Этот калькулятор полезен, когда известны размеры диагонали или наклона, известна одна перпендикулярная сторона, а другая перпендикулярная сторона отсутствует. Это специализированный инструмент для случая c-и-a, поэтому каждое объяснение на странице указывает на поиск b.",
-            "Это также может помочь проверить измерения. Если измеренное значение b не ​​соответствует результату калькулятора, возможно, треугольник неправильный, гипотенуза может быть неправильно обозначена или при одном измерении могут использоваться другие единицы."
-          ],
-          "listTitle": "Общие примеры включают в себя:",
-          "listItems": [
-            "Нахождение высоты стены, если известны длина лестницы c и расстояние до земли a.",
-            "Нахождение вертикального подъема склона, когда известны длина уклона и горизонтальный участок.",
-            "Проверка домашнего задания на прямоугольный треугольник, дающего c и a.",
-            "Подтверждение размеров планировки каркаса, ландшафтного дизайна, пандусов или планов этажей."
-          ]
-        },
-        {
-          "h2": "Как прочитать ответ",
-          "paragraphs": [
-            "Выходные данные с надписью «Отсутствует отрезок b» - это длина другого отрезка, который образует прямой угол с a. Это не гипотенуза, и она должна быть короче c.",
-            "Если вычисленное значение b чрезвычайно мало, ваш известный катет a очень близок к гипотенузе c. Это может быть действительно так, но перед использованием значения стоит проверить диаграмму и единицы измерения."
-          ],
-          "listTitle": "Действительный результат должен удовлетворять:",
-          "listItems": [
-            "b больше нуля.",
-            "b меньше, чем c.",
-            "a² + b² примерно равен c².",
-            "Выходной блок соответствует входному блоку."
-          ]
-        },
-        {
-          "h2": "Распространенные ошибки",
-          "paragraphs": [
-            "Самая распространенная ошибка - рассматривать c как ногу. В этом калькуляторе c должна быть гипотенузой, то есть самой длинной стороной и стороной, противоположной прямому углу.",
-            "Другая частая ошибка - сложение квадратов вместо вычитания. Сложение находит гипотенузу; вычитание находит недостающий катет гипотенузы."
-          ],
-          "listTitle": "Избегайте этих ошибок:",
-          "listItems": [
-            "Помещаем известный катет в поле гипотенузы.",
-            "Использование c² + a² вместо c² - a².",
-            "Ввод значения больше или равного c.",
-            "Остановка на b² вместо извлечения квадратного корня.",
-            "Смешивание единиц измерения, таких как метры и сантиметры."
-          ]
-        }
-      ],
-      "relatedLinks": [
-        {
-          "href": "/right-triangle-side-calculator/",
-          "label": "Калькулятор стороны прямоугольного треугольника"
-        },
-        {
-          "href": "/pythagorean-theorem-calculator/",
-          "label": "Калькулятор: Теорема Пифагора"
-        },
-        {
-          "href": "/missing-leg-from-c-and-b-calculator/",
-          "label": "Калькулятор: Поиск катета по c и b"
-        }
-      ],
-      "faqs": [
-        {
-          "question": "Что означает c в этом калькуляторе?",
-          "answer": "c - гипотенуза прямоугольного треугольника - самая длинная сторона, расположенная напротив угла 90°. Это не нога. Вы вводите c в качестве одного из двух известных значений в этом калькуляторе."
-        },
-        {
-          "question": "Что означает в этом калькуляторе?",
-          "answer": "а - одна из двух катетов прямоугольного треугольника. Это одна из сторон, образующая прямой угол. В этом калькуляторе a - это уже известная вам нога."
-        },
-        {
-          "question": "Что находит этот калькулятор?",
-          "answer": "Этот калькулятор находит недостающую ногу b. Учитывая гипотенузу c и катет a, он вычисляет b = √(c² − a²) и показывает пошаговое решение."
-        },
-        {
-          "question": "Может ли c быть меньше a?",
-          "answer": "Нет. В прямоугольном треугольнике гипотенуза всегда является самой длинной стороной. Если c меньше, чем a, значения не образуют правильный прямоугольный треугольник. Перед расчетом проверьте, какое измерение является гипотенузой."
-        },
-        {
-          "question": "Как мне найти b среди c и a?",
-          "answer": "Возведите в квадрат гипотенузу (c²), возведите в квадрат известный катет (a²), вычтите a² из c² и извлеките квадратный корень. Формула: b = √(c² − a²). Или введите свои значения в этот калькулятор, чтобы получить мгновенный ответ."
-        }
-      ]
     },
     "missing-leg-from-c-and-b-calculator": {
       "slug": "missing-leg-from-c-and-b-calculator",
@@ -1999,204 +2116,243 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         }
       ]
     },
-    "missing-leg-from-c-and-a-calculator": {
-      "slug": "missing-leg-from-c-and-a-calculator",
-      "url": "/missing-leg-from-c-and-a-calculator/",
-      "h1": "Calculatrice: Côté manquant par c et a",
-      "metaTitle": "Calculatrice: Côté manquant par c et a | Right Triangle Solver",
-      "metaDescription": "Trouvez le côté b lorsque l'hypoténuse c et l'autre côté a sont connus.",
-      "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "N'oubliez pas: c est toujours l'hypoténuse - le côté le plus long, opposé à l'angle droit. Ce n'est pas une cote. Si vous avez deux cotes et avez besoin de l'hypoténuse à la place, utilisez la calculatrice du théorème de Pythagore.",
-      "intro": "Trouvez le côté b lorsque l'hypoténuse c et l'autre côté a sont connus.",
-      "quickSummary": {
-        "h2": "Ce que résout ce calculateur de cote manquante",
-        "intro": "Utilisez cette page lorsque l'hypoténuse et la cote a sont connues, mais que l'autre cote est manquante. La calculatrice réorganise le théorème de Pythagore pour soustraire la cote connue de l'hypoténuse avant de prendre la racine carrée.",
-        "cards": [
-          {
-            "label": "Valeurs connues",
-            "value": "c = hypoténuse; a = côté connu"
-          },
-          {
-            "label": "Trouve",
-            "value": "b = côté inconnu"
-          },
-          {
-            "label": "Formule principale",
-            "value": "b = sqrt(c^2 - a^2)"
-          },
-          {
-            "label": "Chèque obligatoire",
-            "value": "Nécessite c > a."
-          }
-        ]
-      },
-      "diagram": {
-        "h2": "Diagramme du triangle rectangle: trouver la cote b",
-        "intro": "Le diagramme indique c et a comme valeurs que vous connaissez déjà. La cote verticale b est mise en évidence comme le côté manquant que cette calculatrice résout.",
-        "caption": "Diagramme en triangle rectangle avec hypoténuse connue c, cote connue a et cote inconnue b.",
-        "sides": {
-          "a": {
-            "label": "a = connu",
-            "description": "La branche a est la branche connue le long de la base du triangle rectangle.",
-            "status": "known"
-          },
-          "b": {
-            "label": "b = trouver",
-            "description": "La branche b est la branche inconnue résolue en soustrayant a^2 de c^2.",
-            "status": "unknown"
-          },
-          "c": {
-            "label": "c = connu",
-            "description": "L'hypoténuse c est le côté le plus long connu opposé à l'angle droit.",
-            "status": "known"
+        "missing-leg-from-c-and-a-calculator": {
+        "calculator": {
+          "fields": [
+            {
+              "key": "c",
+              "label": "Hypoténuse c",
+              "min": 0
+            },
+            {
+              "key": "a",
+              "label": "Côté a",
+              "min": 0
+            }
+          ],
+          "outputLabel": "Côté manquant b"
+        },
+        "diagram": {
+          "caption": "Schéma de triangle rectangle avec l'hypoténuse c connue, le côté a connu et le côté b inconnu.",
+          "h2": "Identifier l'hypoténuse et le côté manquant",
+          "intro": "Le schéma indique c et a comme les valeurs que vous connaissez déjà. Le côté vertical b est mis en évidence comme le <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">côté manquant</a> que cette calculatrice résout.",
+          "notes": [
+            "c doit être l'hypoténuse, et non l'un des côtés de l'angle droit.",
+            "Si c est inférieur ou égal à a, les valeurs saisies ne forment pas un triangle rectangle valide.",
+            "Le résultat b utilise la même unité que c et a."
+          ],
+          "sides": {
+            "a": {
+              "description": "Le côté a est le côté connu de l'angle droit, le long de la base du triangle rectangle.",
+              "label": "a = connu",
+              "status": "known"
+            },
+            "b": {
+              "description": "Le côté b est le côté inconnu de l'angle droit, obtenu en soustrayant a^2 de c^2.",
+              "label": "b = à trouver",
+              "status": "unknown"
+            },
+            "c": {
+              "description": "L'hypoténuse c est le plus long <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">côté</a> connu, opposé à l'<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> droit.",
+              "label": "c = connu",
+              "status": "known"
+            }
           }
         },
-        "notes": [
-          "c doit être l’hypoténuse et non l’une des cotes.",
-          "Si c est inférieur ou égal à a, les entrées ne forment pas un triangle rectangle valide.",
-          "Le résultat b utilise la même unité que c et a."
-        ]
-      },
-      "calculator": {
-        "outputLabel": "b = côté inconnu",
-        "fields": [
+        "example": {
+          "h2": "Exemples détaillés pour trouver un côté manquant",
+          "intro": "Chaque exemple montre le calcul complet, de l'énoncé du problème à la réponse vérifiée. Les cinq exemples utilisent la formule b = √(c² − a²).",
+          "lines": [
+            "b = \\sqrt{13^2 - 5^2}",
+            "b = \\sqrt{169 - 25}",
+            "b = \\sqrt{144}",
+            "b = 12"
+          ]
+        },
+        "extraSections": [
           {
-            "key": "c",
-            "label": "c = hypoténuse",
-            "min": 0
+            "h2": "Exemples détaillés",
+            "paragraphs": [
+              "<h3>Exemple 1 : Triangle classique 5–12–13</h3><p><strong>Problème :</strong> Trouvez le côté manquant d'un triangle rectangle dont l'hypoténuse c = 13 cm et le côté connu a = 5 cm.</p><p><strong>Données :</strong> c = 13 cm, a = 5 cm. <strong>Cherché :</strong> b.</p><p><strong>Formule :</strong> b = √(c² − a²)</p><p><strong>Substitution :</strong> b = √(13² − 5²) = √(169 − 25) = √144</p><p><strong>Réponse :</strong> <strong>b = 12 cm</strong></p><p><strong>Vérification :</strong> 5² + 12² = 25 + 144 = 169 = 13². Le côté connu, le côté manquant et l'hypoténuse forment un triangle rectangle valide.</p>",
+              "<h3>Exemple 2 : Échelle contre un mur</h3><p><strong>Problème :</strong> Une échelle de 5 m repose contre un mur vertical. Sa base est à 3 m du mur. Trouvez la hauteur atteinte par l'échelle.</p><p><strong>Données :</strong> c = 5 m (échelle), a = 3 m (distance au sol). <strong>Cherché :</strong> b (hauteur du mur).</p><p><strong>Calcul :</strong> b = √(5² − 3²) = √(25 − 9) = √16 = 4 m</p><p><strong>Réponse :</strong> <strong>L'échelle atteint 4 m de hauteur sur le mur.</strong></p><img src=\"/images/missing-leg/missing-leg-ladder.svg\" alt=\"Schéma de l'échelle : échelle de 5 m comme hypoténuse, distance au sol de 3 m comme côté a, hauteur du mur de 4 m comme côté manquant b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Figure : Le mur vertical (b = 4 m), la distance horizontale au sol (a = 3 m) et l'échelle (c = 5 m). Il s'agit d'un modèle géométrique supposant un mur vertical et un sol plat, et non d'une évaluation de la sécurité des échelles.</em></p>",
+              "<h3>Exemple 3 : Diagonale d'une pièce rectangulaire</h3><p><strong>Problème :</strong> Une pièce rectangulaire a une diagonale de 17 pi et un côté mesurant 8 pi. Trouvez l'autre côté.</p><p><strong>Données :</strong> c = 17 pi (diagonale), a = 8 pi. <strong>Cherché :</strong> b.</p><p><strong>Calcul :</strong> b = √(17² − 8²) = √(289 − 64) = √225 = 15 pi</p><p><strong>Réponse :</strong> <strong>L'autre côté mesure 15 pi.</strong></p><img src=\"/images/missing-leg/missing-leg-room.svg\" alt=\"Schéma de la pièce : diagonale de 17 pi comme hypoténuse, côté connu de 8 pi comme côté a, côté manquant de 15 pi comme côté b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Figure : Vue de dessus. La diagonale (c = 17 pi) divise le rectangle en deux triangles rectangles. Le côté connu (a = 8 pi) et le côté manquant (b = 15 pi) forment l'angle droit.</em></p>",
+              "<h3>Exemple 4 : Un résultat qui nécessite un arrondi</h3><p><strong>Problème :</strong> Étant donné c = 10 m et a = 7 m, trouvez b.</p><p><strong>Calcul :</strong> b = √(10² − 7²) = √(100 − 49) = √51 ≈ 7,141428 m</p><p><strong>Réponse :</strong> <strong>b ≈ 7,14 m</strong>, arrondi à deux décimales.</p><p><strong>Vérification :</strong> 7² + (√51)² = 49 + 51 = 100 = 10².</p><p>Conservez la valeur exacte (√51) pendant les calculs intermédiaires et n'arrondissez qu'à l'étape finale. Arrondir trop tôt introduit des erreurs qui s'accumulent dans les problèmes en plusieurs étapes.</p>",
+              "<h3>Exemple 5 : Géométrie d'une rampe</h3><p><strong>Problème :</strong> Une rampe droite a une longueur de 13 m et une projection horizontale de 12 m. Trouvez sa hauteur verticale.</p><p><strong>Données :</strong> c = 13 m (rampe), a = 12 m (projection horizontale). <strong>Cherché :</strong> b (hauteur).</p><p><strong>Calcul :</strong> b = √(13² − 12²) = √(169 − 144) = √25 = 5 m</p><p><strong>Réponse :</strong> <strong>La hauteur verticale est de 5 m.</strong></p><img src=\"/images/missing-leg/missing-leg-ramp.svg\" alt=\"Schéma de la rampe : rampe de 13 m comme hypoténuse, projection horizontale de 12 m comme côté a, hauteur verticale de 5 m comme côté manquant b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Figure : La rampe (c = 13 m) comme hypoténuse, la projection horizontale (a = 12 m) et la hauteur verticale (b = 5 m). Ce calcul n'établit pas la conformité aux normes d'accessibilité ou de construction.</em></p>"
+            ]
           },
           {
-            "key": "a",
-            "label": "a = côté connu",
-            "min": 0
+            "h2": "Quand peut-on calculer un côté manquant ?",
+            "listItems": [
+              "c est opposé à l'<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> de 90°.",
+              "c est supérieur à a.",
+              "Les deux valeurs sont positives.",
+              "c et a utilisent la même unité."
+            ],
+            "listTitle": "Effectuez d'abord ces vérifications :",
+            "paragraphs": [
+              "Pour un triangle rectangle non dégénéré valide, les mesures doivent satisfaire trois conditions : c > 0, a > 0 et c > a. Le côté manquant vaut alors b = √(c² − a²).",
+              "<strong>Cas 1 : L'hypoténuse est plus petite que le côté connu.</strong> Si c = 4 et a = 5, alors b = √(16 − 25) = √(−9). L'expression sous la racine carrée est négative, donc ces valeurs ne peuvent pas former un vrai triangle rectangle avec c comme hypoténuse.",
+              "<strong>Cas 2 : L'hypoténuse est égale au côté connu.</strong> Si c = 5 et a = 5, alors b = √(25 − 25) = 0. C'est un cas dégénéré, pas un triangle valide.",
+              "<strong>Cas 3 : Mesures nulles ou négatives.</strong> Les longueurs des côtés doivent être positives. La calculatrice rejette les valeurs nulles et négatives.",
+              "<strong>Cas 4 : Unités incohérentes.</strong> Les deux mesures doivent utiliser la même unité. Si c est en mètres et a en centimètres, convertissez l'une d'elles avant de calculer."
+            ]
+          },
+          {
+            "h2": "Où la formule du côté manquant est-elle utilisée ?",
+            "paragraphs": [
+              "Le schéma général : lorsqu'une diagonale en ligne droite ou une longueur inclinée et une distance perpendiculaire sont connues, l'autre distance perpendiculaire découle du théorème de Pythagore. Cela ne fonctionne que lorsque la géométrie forme un triangle rectangle.",
+              "<strong>Construction et charpente.</strong> Les charpentiers vérifient les angles droits en mesurant la diagonale d'un cadre rectangulaire. Si la diagonale (c) et un côté (a) sont connus, le côté manquant (b) confirme la disposition avant de couper le bois.",
+              "<strong>Mesures de pièces et de plans d'étage.</strong> Lors de la planification de meubles ou de revêtements de sol, la diagonale d'une pièce et la longueur d'un mur donnent la longueur de l'autre mur sans déplacer les obstacles.",
+              "<strong>Géométrie des échelles et des murs.</strong> Étant donné la longueur d'une échelle et sa distance au mur, la hauteur qu'elle atteint suit directement. Il s'agit d'un modèle géométrique, et non d'une évaluation de la sécurité.",
+              "<strong>Calculs de rampes et de pentes.</strong> À partir de la longueur de la pente et de la projection horizontale, la hauteur verticale est déterminée. Cela n'établit pas la conformité aux codes."
+            ]
+          },
+          {
+            "h2": "Comment vérifier votre calcul de côté manquant",
+            "listItems": [
+              "b est supérieur à zéro.",
+              "b est plus court que c.",
+              "a² + b² est égal à c², en tenant compte de l'arrondi de la valeur affichée.",
+              "Le résultat utilise la bonne unité."
+            ],
+            "listTitle": "Un résultat valide doit satisfaire :",
+            "paragraphs": [
+              "Vérifiez chaque résultat avant de l'utiliser. Pour l'exemple 5–12–13 : 5² + 12² = 25 + 144 = 169 = 13².",
+              "Le résultat intitulé « Côté manquant b » est la longueur de l'autre côté qui forme l'angle droit avec a. Ce n'est pas l'hypoténuse et il doit être plus court que c."
+            ]
+          },
+          {
+            "h2": "Erreurs fréquentes lors de la recherche d'un côté manquant",
+            "listItems": [
+              "<strong>Confondre l'hypoténuse avec un côté de l'angle droit.</strong> Si vous mettez la valeur du côté dans le champ c, la formule résout le mauvais problème. Correct : c est toujours le côté le plus long.",
+              "<strong>Additionner les carrés au lieu de les soustraire.</strong> Faux : b = √(c² + a²). Correct : b = √(c² − a²).",
+              "<strong>Oublier la racine carrée.</strong> Faux : b = c² − a². Correct : prenez la racine carrée de la différence.",
+              "<strong>Mauvais regroupement sous la racine carrée.</strong> Faux : √c² − a² (ce qui égale c − a). Correct : √(c² − a²), avec toute la différence à l'intérieur du radical.",
+              "<strong>Saisir a ≥ c.</strong> Le côté connu ne peut pas être égal ou supérieur à l'hypoténuse. Correct : vérifiez que c > a avant de calculer.",
+              "<strong>Mélanger les unités.</strong> Faux : c = 5 m, a = 30 cm. Correct : convertissez d'abord dans la même unité (c = 500 cm, a = 30 cm).",
+              "<strong>Arrondir trop tôt.</strong> Faux : arrondir √51 à 7,14 en cours de calcul. Correct : gardez toute la précision jusqu'à la réponse finale."
+            ],
+            "listTitle": "Évitez ces erreurs :",
+            "paragraphs": [
+              "L'erreur la plus courante est de traiter c comme un côté de l'angle droit. Ici, c doit être l'hypoténuse : le côté le plus long, opposé à l'angle droit.",
+              "Une autre erreur fréquente est d'additionner les carrés au lieu de les soustraire. L'addition (a² + b²) trouve une hypoténuse ; la soustraction (c² − a²) trouve un côté manquant à partir de l'hypoténuse."
+            ]
           }
-        ]
-      },
-      "formulaSection": {
-        "h2": "cote manquante Formule b",
-        "paragraphs": [
-          "La formule pour trouver la cote b est dérivée du théorème de Pythagore (a² + b² = c²). La réorganisation pour b donne la formule ci-dessous.",
-          "Où c est l’hypoténuse (côté le plus long du triangle rectangle), a est la cote connue et b est la cote manquante que vous recherchez. Remarquez la soustraction: vous soustrayez le carré de la cote connue du carré de l'hypoténuse, puis prenez la racine carrée."
         ],
-        "formulas": [
-          "b = \\sqrt{c^2 - a^2}"
-        ]
-      },
-      "howTo": {
-        "h2": "Comment trouver la cote b à partir de c et a",
-        "steps": [
-          "Confirmez que c est l'hypoténuse et a est une cote. L'hypoténuse est toujours le côté le plus long.",
-          "Saisissez l'hypoténuse c dans le premier champ de saisie.",
-          "Entrez le tronçon connu a dans le deuxième champ de saisie.",
-          "Cliquez sur Calculer pour trouver la cote manquante.",
-          "Lisez le résultat pour b, ainsi que la solution complète étape par étape."
-        ]
-      },
-      "example": {
-        "h2": "Exemple: Rechercher la branche b",
-        "intro": "Étant donné: c = 13, a = 5. La branche manquante d'un triangle rectangle avec l'hypoténuse 13 et la branche 5 est 12.",
-        "lines": [
-          "b = \\sqrt{13^2 - 5^2}",
-          "b = \\sqrt{169 - 25}",
-          "b = \\sqrt{144}",
-          "b = 12"
-        ]
-      },
-      "extraSections": [
-        {
-          "h2": "Vérification importante avant de calculer",
-          "paragraphs": [
-            "Avant d'utiliser cette formule, assurez-vous que c est supérieur à a. L'hypoténuse est toujours le côté le plus long d'un triangle rectangle. Si c est égal à a, vous obtiendrez b = 0, ce qui signifie qu'aucun triangle n'existe.",
-            "Si c est inférieur à a, l'expression sous la racine carrée devient négative. Cela signifie que les deux valeurs d'entrée ne peuvent pas décrire un vrai triangle rectangle avec c comme hypoténuse."
+        "faqs": [
+          {
+            "answer": "Élevez l'hypoténuse au carré (c²), élevez le côté connu au carré (a²), soustrayez et prenez la racine carrée : b = √(c² − a²). Entrez les deux valeurs dans la calculatrice ci-dessus pour un résultat instantané avec les étapes.",
+            "question": "Comment trouver le côté manquant à partir de l'hypoténuse et d'un côté ?"
+          },
+          {
+            "answer": "Le théorème de Pythagore additionne les carrés des côtés de l'angle droit pour obtenir le carré de l'hypoténuse (a² + b² = c²). Lorsque vous connaissez déjà l'hypoténuse, réorganisez : soustrayez le carré du côté connu du carré de l'hypoténuse pour isoler le carré du côté manquant, puis prenez la racine.",
+            "question": "Pourquoi soustraire au lieu d'additionner ?"
+          },
+          {
+            "answer": "L'hypoténuse est toujours le côté le plus long et se trouve en face de l'angle de 90°. Si vos trois mesures sont 5, 12 et 13, l'hypoténuse est 13.",
+            "question": "Comment savoir quel côté est l'hypoténuse ?"
+          },
+          {
+            "answer": "Si a = c, le résultat est b = 0 (dégénéré, pas un triangle). Si a > c, la racine carrée d'un nombre négatif n'a pas de solution réelle. Les deux cas sont rejetés comme invalides.",
+            "question": "Que se passe-t-il si le côté connu est égal ou supérieur à l'hypoténuse ?"
+          },
+          {
+            "answer": "Oui. Par exemple, c = 10 et a = 7 donnent b = √51 ≈ 7,14. Gardez toute la précision pendant les calculs et n'arrondissez que la réponse finale.",
+            "question": "Le côté manquant peut-il être un nombre décimal ?"
+          },
+          {
+            "answer": "Vérifiez que a² + b² = c². Pour l'exemple 5–12–13 : 25 + 144 = 169. Vérifiez également que b > 0, b < c et que l'unité correspond à vos entrées.",
+            "question": "Comment vérifier si la réponse est correcte ?"
+          },
+          {
+            "answer": "Les deux entrées doivent utiliser la même unité. Si c est en mètres et a en centimètres, convertissez d'abord l'une d'elles. Le résultat utilise l'unité saisie.",
+            "question": "Puis-je utiliser différentes unités de mesure ?"
+          },
+          {
+            "answer": "Non, ce mode ne trouve que le côté manquant b. Pour trouver les angles, utilisez la <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">calculatrice des angles du triangle rectangle</a>.",
+            "question": "Cette calculatrice peut-elle aussi trouver un angle inconnu ?"
+          }
+        ],
+        "formulaSection": {
+          "formulas": [
+            "a^2 + b^2 = c^2",
+            "b^2 = c^2 - a^2",
+            "b = \\sqrt{c^2 - a^2}"
           ],
-          "listTitle": "Utilisez d'abord ces vérifications:",
-          "listItems": [
-            "c est opposé à l'angle 90°.",
-            "c est supérieur à a.",
-            "Les deux valeurs sont positives.",
-            "c et a utilisent la même unité."
+          "h2": "Formule pour trouver un côté manquant",
+          "paragraphs": [
+            "Le calcul utilise le <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">théorème de Pythagore</a>, qui relie les carrés des deux côtés de l'angle droit au carré de l'hypoténuse. Pour isoler le côté manquant, réorganisez l'équation étape par étape.",
+            "<strong>Étape 1 : Commencez par le théorème de Pythagore.</strong> Les carrés des deux côtés de l'angle droit s'additionnent pour donner le carré de l'hypoténuse.",
+            "<strong>Étape 2 : Soustrayez a² des deux côtés.</strong> Cela isole le carré du côté manquant.",
+            "<strong>Étape 3 : Prenez la racine carrée positive.</strong> Les longueurs des côtés sont positives, utilisez donc la racine principale. L'expression complète c² − a² reste à l'intérieur du radical.",
+            "Où <strong>a</strong> est le côté connu de l'angle droit, <strong>b</strong> est le côté manquant de l'angle droit, et <strong>c</strong> est l'hypoténuse. L'hypoténuse est opposée à l'angle droit et est toujours le côté le plus long.",
+            "<strong>Pourquoi soustraire ?</strong> L'équation d'origine additionne les carrés des deux côtés de l'angle droit pour obtenir le carré de l'hypoténuse. Lorsque l'hypoténuse et un côté sont déjà connus, soustrayez le carré du côté connu du carré de l'hypoténuse pour isoler le carré du côté inconnu. Prenez ensuite la racine carrée positive. Ne soustrayez jamais le côté de l'hypoténuse directement — soustrayez toujours leurs carrés."
           ]
         },
-        {
-          "h2": "Où cette calculatrice est utile",
-          "paragraphs": [
-            "Cette calculatrice est utile lorsqu'une mesure diagonale ou inclinée est connue, qu'un côté perpendiculaire est connu et que l'autre côté perpendiculaire est manquant. Il s'agit de l'outil ciblé pour le cas c-and-a, donc chaque explication sur la page pointe vers la recherche de b.",
-            "Cela peut également aider à vérifier les mesures. Si une valeur mesurée pour b ne correspond pas au résultat de la calculatrice, le triangle peut ne pas être droit, l'hypoténuse peut être mal étiquetée ou une mesure peut utiliser une unité différente."
-          ],
-          "listTitle": "Les exemples courants incluent:",
-          "listItems": [
-            "Détermination de la hauteur du mur lorsque la longueur de l'échelle c et la distance au sol a sont connues.",
-            "Déterminer l'élévation verticale d'une pente lorsque la longueur de la pente et la longueur horizontale sont connues.",
-            "Vérification d'un problème de devoir de triangle rectangle qui donne c et a.",
-            "Confirmation des mesures de disposition pour la charpente, l'aménagement paysager, les rampes ou les plans d'étage."
+        "formulaSlug": "leg-from-hypotenuse-and-other-leg",
+        "h1": "Calculatrice de côté manquant : trouver le côté b à partir de l'hypoténuse c et du côté a",
+        "howTo": {
+          "h2": "Comment trouver le côté b à partir de c et a",
+          "steps": [
+            "Identifiez l'hypoténuse, qui se trouve en face de l'angle de 90°. C'est toujours le côté le plus long.",
+            "Entrez l'hypoténuse c dans le premier champ de saisie.",
+            "Entrez le côté connu a dans le second champ de saisie.",
+            "Vérifiez que les deux mesures utilisent la même unité.",
+            "Cliquez sur Calculer pour trouver le côté manquant b.",
+            "Examinez le résultat et la résolution étape par étape affichés sous la calculatrice.",
+            "Vérifiez la réponse en contrôlant que a² + b² est égal à c²."
           ]
         },
-        {
-          "h2": "Comment lire la réponse",
-          "paragraphs": [
-            "La sortie intitulée cote manquante b est la longueur de l'autre branche qui forme l'angle droit avec a. Ce n'est pas l'hypoténuse et devrait être plus court que c.",
-            "Si le b calculé est extrêmement petit, votre cote connue a est très proche de l'hypoténuse c. Cela peut être valable, mais cela vaut la peine de vérifier le diagramme et les unités avant d'utiliser la valeur."
+        "intro": "Cette <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculatrice</a> trouve le côté manquant b d'un triangle rectangle lorsque vous connaissez l'hypoténuse c et l'autre côté a de l'angle droit. Entrez vos deux mesures, et elle applique la formule b = √(c² − a²) pour calculer instantanément le côté inconnu, avec toutes les étapes de résolution. L'hypoténuse est le côté le plus long, opposé à l'angle droit. Les deux côtés de l'angle droit forment cet angle droit. Savoir quel côté est lequel garantit un résultat correct à chaque fois.",
+        "metaDescription": "Trouvez le côté manquant d'un triangle rectangle à partir de l'hypoténuse et d'un côté connu. Calculez le côté b, suivez la formule et consultez les exemples détaillés.",
+        "metaTitle": "Calculatrice de côté manquant : trouver b à partir de c et a",
+        "quickSummary": {
+          "cards": [
+            {
+              "label": "Valeurs connues",
+              "value": "Hypoténuse c et côté a"
+            },
+            {
+              "label": "Trouve",
+              "value": "Le côté manquant b"
+            },
+            {
+              "label": "Formule principale",
+              "value": "b = sqrt(c^2 - a^2)"
+            },
+            {
+              "label": "Vérification requise",
+              "value": "c doit être supérieur à a"
+            }
           ],
-          "listTitle": "Un résultat valide doit satisfaire:",
-          "listItems": [
-            "b est supérieur à zéro.",
-            "b est inférieur à c.",
-            "a² + b² est approximativement égal à c².",
-            "L'unité de sortie correspond à l'unité d'entrée."
-          ]
+          "h2": "Ce que cet outil résout",
+          "intro": "Utilisez cette page lorsque l'hypoténuse et le côté a sont connus, mais que l'autre côté de l'angle droit est manquant. La <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculatrice</a> réorganise le <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">théorème de Pythagore</a> pour soustraire le carré du côté connu de celui de l'hypoténuse avant d'en prendre la racine carrée."
         },
-        {
-          "h2": "Erreurs courantes",
-          "paragraphs": [
-            "L'erreur la plus courante consiste à traiter c comme une cote. Dans cette calculatrice, c doit être l'hypoténuse, qui est le côté le plus long et le côté opposé à l'angle droit.",
-            "Une autre erreur fréquente consiste à additionner les carrés au lieu de les soustraire. L'addition trouve une hypoténuse; la soustraction trouve une cote manquante à l'hypoténuse."
-          ],
-          "listTitle": "Évitez ces erreurs:",
-          "listItems": [
-            "Mettre la cote connue dans le champ de l'hypoténuse.",
-            "Utilisation de c² + a² au lieu de c² - a².",
-            "Saisir un supérieur ou égal à c.",
-            "S'arrêter à b² au lieu de prendre la racine carrée.",
-            "Unités de mélange telles que mètres et centimètres."
-          ]
-        }
-      ],
-      "relatedLinks": [
-        {
-          "href": "/right-triangle-side-calculator/",
-          "label": "Calculateur de côté du triangle rectangle"
-        },
-        {
-          "href": "/pythagorean-theorem-calculator/",
-          "label": "Calculatrice: Théorème de Pythagore"
-        },
-        {
-          "href": "/missing-leg-from-c-and-b-calculator/",
-          "label": "Calculatrice: Côté manquant par c et b"
-        }
-      ],
-      "faqs": [
-        {
-          "question": "Que signifie c dans cette calculatrice?",
-          "answer": "c est l'hypoténuse du triangle rectangle - le côté le plus long, situé à l'opposé de l'angle 90°. Ce n'est pas une cote. Vous entrez c comme l’une des deux valeurs connues dans cette calculatrice."
-        },
-        {
-          "question": "Que signifie un dans cette calculatrice?",
-          "answer": "a est l'une des deux branches du triangle rectangle. C’est l’un des côtés qui forme l’angle droit. Dans cette calculatrice, a est la cote que vous connaissez déjà."
-        },
-        {
-          "question": "Que trouve cette calculatrice?",
-          "answer": "Cette calculatrice trouve la cote manquante b. Étant donné l'hypoténuse c et la cote a, il calcule b = √(c² − a²) et vous montre la solution étape par étape."
-        },
-        {
-          "question": "c peut-il être plus petit qu'un?",
-          "answer": "Non. Dans un triangle rectangle, l’hypoténuse est toujours le côté le plus long. Si c est plus petit que a, les valeurs ne forment pas un triangle rectangle valide. Vérifiez quelle mesure est l’hypoténuse avant de calculer."
-        },
-        {
-          "question": "Comment trouver b parmi c et a?",
-          "answer": "Mettez au carré l'hypoténuse (c²), mettez au carré la cote connue (a²), soustrayez a² de c² et prenez la racine carrée. La formule est b = √(c² − a²). Ou entrez vos valeurs dans cette calculatrice pour une réponse instantanée."
-        }
-      ]
+        "relatedLinks": [
+          {
+            "href": "/right-triangle-side-calculator/",
+            "label": "Calculatrice des côtés du triangle rectangle"
+          },
+          {
+            "href": "/pythagorean-theorem-calculator/",
+            "label": "Calculatrice du théorème de Pythagore"
+          },
+          {
+            "href": "/missing-leg-from-c-and-b-calculator/",
+            "label": "Calculatrice de côté manquant à partir de c et b"
+          },
+          {
+            "href": "/right-triangle-angle-calculator/",
+            "label": "Calculatrice des angles du triangle rectangle"
+          },
+          {
+            "href": "/right-triangle-measurements-calculator/",
+            "label": "Calculatrice des mesures du triangle rectangle"
+          }
+        ],
+        "slug": "missing-leg-from-c-and-a-calculator",
+        "toolPurpose": "N'oubliez pas : c est toujours l'hypoténuse — le plus long <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">côté</a>, opposé à l'<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> droit. Ce n'est pas un côté de l'angle droit. Si vous connaissez les deux côtés de l'angle droit et devez plutôt trouver l'hypoténuse, utilisez la calculatrice du <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">théorème de Pythagore</a>.",
+        "url": "/missing-leg-from-c-and-a-calculator/"
     },
     "missing-leg-from-c-and-b-calculator": {
       "slug": "missing-leg-from-c-and-b-calculator",
@@ -2598,204 +2754,243 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         }
       ]
     },
-    "missing-leg-from-c-and-a-calculator": {
-      "slug": "missing-leg-from-c-and-a-calculator",
-      "url": "/missing-leg-from-c-and-a-calculator/",
-      "h1": "Rechner: Fehlende Kathete b aus c und a",
-      "metaTitle": "Rechner: Fehlende Kathete b aus c und a | Right Triangle Solver",
-      "metaDescription": "Finden Sie die Kathete b, wenn die Hypotenuse c und die andere Kathete a bekannt sind.",
-      "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "Denken Sie daran: c ist immer die Hypotenuse - die längste Seite, gegenüber dem rechten Winkel. Es ist kein Kathete. Wenn Sie zwei Katheten haben und stattdessen die Hypotenuse benötigen, verwenden Sie den Rechner zum Satz des Pythagoras.",
-      "intro": "Finden Sie die Kathete b, wenn die Hypotenuse c und die andere Kathete a bekannt sind.",
-      "quickSummary": {
-        "h2": "Was dieser Rechner für fehlende Katheten löst",
-        "intro": "Verwenden Sie diese Seite, wenn die Hypotenuse und das Kathete a bekannt sind, das andere Kathete jedoch fehlt. Der Rechner ordnet den Satz des Pythagoras neu, um das bekannte Kathete von der Hypotenuse zu subtrahieren, bevor die Quadratwurzel gezogen wird.",
-        "cards": [
-          {
-            "label": "Bekannte Werte",
-            "value": "c = Hypotenuse; a = bekannte Kathete"
-          },
-          {
-            "label": "Funde",
-            "value": "b = unbekannte Kathete"
-          },
-          {
-            "label": "Hauptformel",
-            "value": "b = sqrt(c^2 - a^2)"
-          },
-          {
-            "label": "Erforderliche Prüfung",
-            "value": "Erfordert c > a."
-          }
-        ]
-      },
-      "diagram": {
-        "h2": "Diagramm des rechten Dreiecks: Kathete finden b",
-        "intro": "Das Diagramm markiert c und a als die Werte, die Sie bereits kennen. Das vertikale Kathete b wird als fehlende Seite hervorgehoben, die dieser Rechner berechnet.",
-        "caption": "Diagramm eines rechtwinkligen Dreiecks mit bekannter Hypotenuse c, bekanntem Kathete a und unbekanntem Kathete b.",
-        "sides": {
-          "a": {
-            "label": "a = bekannt",
-            "description": "Das Kathete a ist das bekannte Kathete entlang der Basis des rechtwinkligen Dreiecks.",
-            "status": "known"
-          },
-          "b": {
-            "label": "b = finden",
-            "description": "Kathete b ist das unbekannte Kathete, das durch Subtrahieren von a^2 von c^2 gelöst wird.",
-            "status": "unknown"
-          },
-          "c": {
-            "label": "c = bekannt",
-            "description": "Hypotenuse c ist die bekannte längste Seite gegenüber dem rechten Winkel.",
-            "status": "known"
-          }
+        "missing-leg-from-c-and-a-calculator": {
+        "slug": "missing-leg-from-c-and-a-calculator",
+        "url": "/missing-leg-from-c-and-a-calculator/",
+        "h1": "Rechner für die fehlende Kathete: Kathete b aus Hypotenuse c und Kathete a finden",
+        "metaTitle": "Kathetenrechner: b aus c und a berechnen",
+        "metaDescription": "Finden Sie die fehlende Kathete eines rechtwinkligen Dreiecks anhand der Hypotenuse und einer bekannten Kathete. Berechnen Sie Seite b, folgen Sie der Formel und prüfen Sie durchgerechnete Beispiele.",
+        "formulaSlug": "leg-from-hypotenuse-and-other-leg",
+        "toolPurpose": "Denken Sie daran: c ist immer die Hypotenuse — die längste <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a>, gegenüber dem rechten <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a>. Es ist keine Kathete. Wenn Sie zwei Katheten haben und stattdessen die Hypotenuse benötigen, verwenden Sie den <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Satz-des-Pythagoras-Rechner</a>.",
+        "intro": "Dieser <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a> findet die fehlende Kathete b eines rechtwinkligen Dreiecks, wenn Sie die Hypotenuse c und die andere Kathete a kennen. Geben Sie Ihre beiden Messwerte ein, und der Rechner wendet die Formel b = √(c² − a²) an, um die unbekannte Seite sofort zu berechnen, mit vollständigen Lösungsschritten. Die Hypotenuse ist die längste Seite, gegenüber dem rechten Winkel. Die beiden Katheten bilden diesen rechten Winkel. Zu wissen, welche Seite welche ist, stellt sicher, dass Sie jedes Mal die richtige Antwort erhalten.",
+        "quickSummary": {
+          "h2": "Was dieses Tool berechnet",
+          "intro": "Verwenden Sie diese Seite, wenn die Hypotenuse und Kathete a bekannt sind, aber die andere Kathete fehlt. Der <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a> stellt den <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Satz des Pythagoras</a> so um, dass die bekannte Kathete von der Hypotenuse subtrahiert wird, bevor die Quadratwurzel gezogen wird.",
+          "cards": [
+            {
+              "label": "Bekannte Werte",
+              "value": "Hypotenuse c und Kathete a"
+            },
+            {
+              "label": "Findet",
+              "value": "Fehlende Kathete b"
+            },
+            {
+              "label": "Hauptformel",
+              "value": "b = sqrt(c^2 - a^2)"
+            },
+            {
+              "label": "Erforderliche Prüfung",
+              "value": "c muss größer als a sein"
+            }
+          ]
         },
-        "notes": [
-          "c muss die Hypotenuse sein, nicht eines der Katheten.",
-          "Wenn c kleiner oder gleich a ist, bilden die Eingaben kein gültiges rechtwinkliges Dreieck.",
-          "Das Ergebnis b verwendet dieselbe Einheit wie c und a."
-        ]
-      },
-      "calculator": {
-        "outputLabel": "b = unbekannte Kathete",
-        "fields": [
+        "diagram": {
+          "h2": "Hypotenuse und fehlende Kathete bestimmen",
+          "intro": "Das Diagramm kennzeichnet c und a als die Werte, die Sie bereits kennen. Die vertikale Kathete b ist als <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">fehlende Seite</a> hervorgehoben, die dieser Rechner berechnet.",
+          "caption": "Diagramm eines rechtwinkligen Dreiecks mit bekannter Hypotenuse c, bekannter Kathete a und unbekannter Kathete b.",
+          "sides": {
+            "a": {
+              "label": "a = bekannt",
+              "description": "Kathete a ist die bekannte Kathete entlang der Basis des rechtwinkligen Dreiecks.",
+              "status": "known"
+            },
+            "b": {
+              "label": "b = gesucht",
+              "description": "Kathete b ist die unbekannte Kathete, die durch Subtraktion von a² von c² gelöst wird.",
+              "status": "unknown"
+            },
+            "c": {
+              "label": "c = bekannt",
+              "description": "Hypotenuse c ist die bekannte längste <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> gegenüber dem rechten <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a>.",
+              "status": "known"
+            }
+          },
+          "notes": [
+            "c muss die Hypotenuse sein, nicht eine der Katheten.",
+            "Wenn c kleiner oder gleich a ist, bilden die Eingaben kein gültiges rechtwinkliges Dreieck.",
+            "Das Ergebnis b verwendet dieselbe Einheit wie c und a."
+          ]
+        },
+        "calculator": {
+          "outputLabel": "Fehlende Kathete b",
+          "fields": [
+            {
+              "key": "c",
+              "label": "Hypotenuse c",
+              "min": 0
+            },
+            {
+              "key": "a",
+              "label": "Kathete a",
+              "min": 0
+            }
+          ]
+        },
+        "formulaSection": {
+          "h2": "Formel zur Berechnung einer fehlenden Kathete",
+          "paragraphs": [
+            "Die Berechnung verwendet den <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Satz des Pythagoras</a>, der die Quadrate der beiden Katheten mit dem Quadrat der Hypotenuse in Beziehung setzt. Um die fehlende Kathete zu isolieren, stellen Sie die Gleichung Schritt für Schritt um.",
+            "<strong>Schritt 1: Beginnen Sie mit dem Satz des Pythagoras.</strong> Die Quadrate der beiden Katheten ergeben zusammen das Quadrat der Hypotenuse.",
+            "<strong>Schritt 2: Subtrahieren Sie a² von beiden Seiten.</strong> Dadurch wird das Quadrat der fehlenden Kathete isoliert.",
+            "<strong>Schritt 3: Ziehen Sie die positive Quadratwurzel.</strong> Seitenlängen sind positiv, daher wird die Hauptwurzel verwendet. Der gesamte Ausdruck c² − a² bleibt innerhalb der Wurzel.",
+            "Dabei ist <strong>a</strong> die bekannte Kathete, <strong>b</strong> die fehlende Kathete und <strong>c</strong> die Hypotenuse. Die Hypotenuse liegt gegenüber dem rechten Winkel und ist immer die längste Seite.",
+            "<strong>Warum subtrahieren?</strong> Die ursprüngliche Gleichung addiert beide Kathetenquadrate, um das Hypotenusenquadrat zu erhalten. Wenn die Hypotenuse und eine Kathete bereits bekannt sind, subtrahieren Sie das Quadrat der bekannten Kathete vom Quadrat der Hypotenuse, um das Quadrat der unbekannten Kathete zu isolieren. Ziehen Sie dann die Quadratwurzel. Subtrahieren Sie niemals die Kathete direkt von der Hypotenuse — subtrahieren Sie immer ihre Quadrate."
+          ],
+          "formulas": [
+            "a^2 + b^2 = c^2",
+            "b^2 = c^2 - a^2",
+            "b = \\sqrt{c^2 - a^2}"
+          ]
+        },
+        "howTo": {
+          "h2": "So finden Sie Kathete b aus c und a",
+          "steps": [
+            "Bestimmen Sie die Hypotenuse, die gegenüber dem 90°-Winkel liegt. Sie ist immer die längste Seite.",
+            "Geben Sie die Hypotenuse c in das erste Eingabefeld ein.",
+            "Geben Sie die bekannte Kathete a in das zweite Eingabefeld ein.",
+            "Prüfen Sie, dass beide Messwerte dieselbe Einheit verwenden.",
+            "Klicken Sie auf Berechnen, um die fehlende Kathete b zu finden.",
+            "Prüfen Sie das Ergebnis und die Schritt-für-Schritt-Lösung unterhalb des Rechners.",
+            "Überprüfen Sie die Antwort, indem Sie prüfen, ob a² + b² gleich c² ist."
+          ]
+        },
+        "example": {
+          "h2": "Durchgerechnete Beispiele zur Berechnung einer fehlenden Kathete",
+          "intro": "Jedes Beispiel zeigt die vollständige Berechnung von der Aufgabenstellung bis zur überprüften Antwort. Alle fünf verwenden die Formel b = √(c² − a²).",
+          "lines": [
+            "b = \\sqrt{13^2 - 5^2}",
+            "b = \\sqrt{169 - 25}",
+            "b = \\sqrt{144}",
+            "b = 12"
+          ]
+        },
+        "extraSections": [
           {
-            "key": "c",
-            "label": "c = Hypotenuse",
-            "min": 0
+            "h2": "Ausführliche durchgerechnete Beispiele",
+            "paragraphs": [
+              "<h3>Beispiel 1: Standard-5–12–13-Dreieck</h3><p><strong>Aufgabe:</strong> Finden Sie die fehlende Kathete eines rechtwinkligen Dreiecks mit Hypotenuse c = 13 cm und bekannter Kathete a = 5 cm.</p><p><strong>Gegeben:</strong> c = 13 cm, a = 5 cm. <strong>Gesucht:</strong> b.</p><p><strong>Formel:</strong> b = √(c² − a²)</p><p><strong>Einsetzen:</strong> b = √(13² − 5²) = √(169 − 25) = √144</p><p><strong>Antwort:</strong> <strong>b = 12 cm</strong></p><p><strong>Überprüfung:</strong> 5² + 12² = 25 + 144 = 169 = 13². Die bekannte Kathete, die fehlende Kathete und die Hypotenuse bilden ein gültiges rechtwinkliges Dreieck.</p>",
+              "<h3>Beispiel 2: Leiter an einer Wand</h3><p><strong>Aufgabe:</strong> Eine 5 m lange Leiter lehnt an einer vertikalen Wand. Ihr Fuß steht 3 m von der Wand entfernt. Finden Sie die Höhe, die die Leiter erreicht.</p><p><strong>Gegeben:</strong> c = 5 m (Leiter), a = 3 m (Bodenabstand). <strong>Gesucht:</strong> b (Wandhöhe).</p><p><strong>Berechnung:</strong> b = √(5² − 3²) = √(25 − 9) = √16 = 4 m</p><p><strong>Antwort:</strong> <strong>Die Leiter reicht 4 m an der Wand hoch.</strong></p><img src=\"/images/missing-leg/missing-leg-ladder.svg\" alt=\"Leiterdiagramm: 5 m Leiter als Hypotenuse, 3 m Bodenabstand als Kathete a, 4 m Wandhöhe als fehlende Kathete b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Abbildung: Die vertikale Wand (b = 4 m), der horizontale Bodenabstand (a = 3 m) und die Leiter (c = 5 m). Dies ist ein geometrisches Modell unter Annahme einer vertikalen Wand und eines ebenen Bodens, keine Leiter-Sicherheitsbewertung.</em></p>",
+              "<h3>Beispiel 3: Diagonale eines rechteckigen Raums</h3><p><strong>Aufgabe:</strong> Ein rechteckiger Raum hat eine Diagonale von 17 ft und eine Seite von 8 ft. Finden Sie die andere Seite.</p><p><strong>Gegeben:</strong> c = 17 ft (Diagonale), a = 8 ft. <strong>Gesucht:</strong> b.</p><p><strong>Berechnung:</strong> b = √(17² − 8²) = √(289 − 64) = √225 = 15 ft</p><p><strong>Antwort:</strong> <strong>Die andere Seite ist 15 ft.</strong></p><img src=\"/images/missing-leg/missing-leg-room.svg\" alt=\"Raumdiagramm: 17 ft Diagonale als Hypotenuse, 8 ft bekannte Seite als Kathete a, 15 ft fehlende Seite als Kathete b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Abbildung: Draufsicht. Die Diagonale (c = 17 ft) teilt das Rechteck in zwei rechtwinklige Dreiecke. Die bekannte Seite (a = 8 ft) und die fehlende Seite (b = 15 ft) bilden den rechten Winkel.</em></p>",
+              "<h3>Beispiel 4: Ein Ergebnis, das Runden erfordert</h3><p><strong>Aufgabe:</strong> Gegeben c = 10 m und a = 7 m, finden Sie b.</p><p><strong>Berechnung:</strong> b = √(10² − 7²) = √(100 − 49) = √51 ≈ 7.141428 m</p><p><strong>Antwort:</strong> <strong>b ≈ 7.14 m</strong>, gerundet auf zwei Dezimalstellen.</p><p><strong>Überprüfung:</strong> 7² + (√51)² = 49 + 51 = 100 = 10².</p><p>Behalten Sie den exakten Wert (√51) bei Zwischenschritten bei und runden Sie erst beim Endergebnis. Zu frühes Runden führt zu Fehlern, die sich bei mehrstufigen Aufgaben verstärken.</p>",
+              "<h3>Beispiel 5: Rampengeometrie</h3><p><strong>Aufgabe:</strong> Eine gerade Rampe ist 13 m lang und hat einen horizontalen Verlauf von 12 m. Finden Sie ihre vertikale Höhe.</p><p><strong>Gegeben:</strong> c = 13 m (Rampe), a = 12 m (Verlauf). <strong>Gesucht:</strong> b (Höhe).</p><p><strong>Berechnung:</strong> b = √(13² − 12²) = √(169 − 144) = √25 = 5 m</p><p><strong>Antwort:</strong> <strong>Die vertikale Höhe beträgt 5 m.</strong></p><img src=\"/images/missing-leg/missing-leg-ramp.svg\" alt=\"Rampendiagramm: 13 m Rampe als Hypotenuse, 12 m horizontaler Verlauf als Kathete a, 5 m vertikale Höhe als fehlende Kathete b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Abbildung: Die Rampe (c = 13 m) als Hypotenuse, horizontaler Verlauf (a = 12 m) und vertikale Höhe (b = 5 m). Diese Berechnung stellt keine Einhaltung von Barrierefreiheits- oder Bauvorschriften fest.</em></p>"
+            ]
           },
           {
-            "key": "a",
-            "label": "a = bekannte Kathete",
-            "min": 0
+            "h2": "Wann können Sie eine fehlende Kathete berechnen?",
+            "paragraphs": [
+              "Für ein gültiges, nicht entartetes rechtwinkliges Dreieck müssen die Messwerte drei Bedingungen erfüllen: c > 0, a > 0 und c > a. Die fehlende Kathete ist dann b = √(c² − a²).",
+              "<strong>Fall 1: Hypotenuse kleiner als die bekannte Kathete.</strong> Wenn c = 4 und a = 5, dann ist b = √(16 − 25) = √(−9). Der Ausdruck unter der Quadratwurzel ist negativ, daher können diese Eingaben kein reales rechtwinkliges Dreieck mit c als Hypotenuse bilden.",
+              "<strong>Fall 2: Hypotenuse gleich der bekannten Kathete.</strong> Wenn c = 5 und a = 5, dann ist b = √(25 − 25) = 0. Dies ist ein entarteter Fall, kein gültiges Dreieck.",
+              "<strong>Fall 3: Null- oder negative Messwerte.</strong> Seitenlängen müssen positiv sein. Der Rechner weist Null- und negative Eingaben zurück.",
+              "<strong>Fall 4: Inkonsistente Einheiten.</strong> Beide Messwerte müssen dieselbe Einheit verwenden. Wenn c in Metern und a in Zentimetern angegeben ist, rechnen Sie einen Wert vor der Berechnung um."
+            ],
+            "listTitle": "Prüfen Sie zuerst diese Punkte:",
+            "listItems": [
+              "c liegt gegenüber dem 90°-<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a>.",
+              "c ist größer als a.",
+              "Beide Werte sind positiv.",
+              "c und a verwenden dieselbe Einheit."
+            ]
+          },
+          {
+            "h2": "Wo wird die Formel für die fehlende Kathete verwendet?",
+            "paragraphs": [
+              "Das allgemeine Muster: Wenn eine geradlinige Diagonale oder geneigte Länge und ein senkrechter Abstand bekannt sind, folgt der andere senkrechte Abstand aus dem Satz des Pythagoras. Dies funktioniert nur, wenn die Geometrie ein rechtwinkliges Dreieck bildet.",
+              "<strong>Bau und Rahmenbau.</strong> Zimmerleute prüfen rechte Winkel, indem sie die Diagonale eines rechteckigen Rahmens messen. Wenn die Diagonale (c) und eine Seite (a) bekannt sind, bestätigt die fehlende Seite (b) die Anordnung vor dem Zuschnitt des Holzes.",
+              "<strong>Raum- und Grundrissmessungen.</strong> Bei der Planung von Möbeln oder Bodenbelägen ergeben die Diagonale eines Raums und eine Wandlänge die andere Wandlänge, ohne Hindernisse zu bewegen.",
+              "<strong>Leiter- und Wandgeometrie.</strong> Aus einer Leiterlänge und ihrem Abstand zur Wand folgt direkt die erreichte Höhe. Dies ist ein geometrisches Modell, keine Sicherheitsbewertung.",
+              "<strong>Rampen- und Neigungsberechnungen.</strong> Aus der Neigungslänge und dem horizontalen Verlauf wird die vertikale Höhe bestimmt. Dies stellt keine Einhaltung von Vorschriften fest."
+            ]
+          },
+          {
+            "h2": "So überprüfen Sie Ihre Berechnung der fehlenden Kathete",
+            "paragraphs": [
+              "Überprüfen Sie jedes Ergebnis vor der Verwendung. Für das 5–12–13-Beispiel: 5² + 12² = 25 + 144 = 169 = 13².",
+              "Die mit „Fehlende Kathete b“ beschriftete Ausgabe ist die Länge der anderen Kathete, die mit a den rechten Winkel bildet. Sie ist nicht die Hypotenuse und sollte kürzer als c sein."
+            ],
+            "listTitle": "Ein gültiges Ergebnis muss erfüllen:",
+            "listItems": [
+              "b ist größer als null.",
+              "b ist kürzer als c.",
+              "a² + b² ist gleich c², wobei Rundungen im angezeigten Wert zulässig sind.",
+              "Das Ergebnis verwendet die richtige Einheit."
+            ]
+          },
+          {
+            "h2": "Häufige Fehler beim Finden einer fehlenden Kathete",
+            "paragraphs": [
+              "Der häufigste Fehler ist, c als Kathete zu behandeln. Hier muss c die Hypotenuse sein: die längste Seite, gegenüber dem rechten Winkel.",
+              "Ein weiterer häufiger Fehler ist das Addieren der Quadrate statt des Subtrahierens. Addition (a² + b²) findet eine Hypotenuse; Subtraktion (c² − a²) findet eine fehlende Kathete aus der Hypotenuse."
+            ],
+            "listTitle": "Vermeiden Sie diese Fehler:",
+            "listItems": [
+              "<strong>Verwechslung von Hypotenuse und Kathete.</strong> Wenn Sie den Kathetenwert in das c-Feld eingeben, löst die Formel das falsche Problem. Richtig: c ist immer die längste Seite.",
+              "<strong>Quadrate addieren statt subtrahieren.</strong> Falsch: b = √(c² + a²). Richtig: b = √(c² − a²).",
+              "<strong>Quadratwurzel vergessen.</strong> Falsch: b = c² − a². Richtig: Ziehen Sie die Quadratwurzel aus der Differenz.",
+              "<strong>Falsche Klammerung unter der Wurzel.</strong> Falsch: √c² − a² (was c − a entspricht). Richtig: √(c² − a²), mit der gesamten Differenz innerhalb der Wurzel.",
+              "<strong>Eingabe von a ≥ c.</strong> Die bekannte Kathete kann nicht gleich oder größer als die Hypotenuse sein. Richtig: Prüfen Sie c > a vor der Berechnung.",
+              "<strong>Einheiten mischen.</strong> Falsch: c = 5 m, a = 30 cm. Richtig: Rechnen Sie zuerst in dieselbe Einheit um (c = 500 cm, a = 30 cm).",
+              "<strong>Zu frühes Runden.</strong> Falsch: √51 mitten in der Berechnung auf 7.14 runden. Richtig: Behalten Sie die volle Genauigkeit bis zum Endergebnis bei."
+            ]
           }
-        ]
-      },
-      "formulaSection": {
-        "h2": "Fehlendes Kathete b-Formel",
-        "paragraphs": [
-          "Die Formel zum Finden des Kathetes b leitet sich aus dem Satz des Pythagoras (a² + b² = c²) ab. Eine Neuanordnung für b ergibt die folgende Formel.",
-          "Dabei ist c die Hypotenuse (längste Seite des rechtwinkligen Dreiecks), a das bekannte Kathete und b das fehlende Kathete, nach dem Sie suchen. Beachten Sie die Subtraktion: Sie subtrahieren das Quadrat der bekannten Strecke vom Quadrat der Hypotenuse und ziehen dann die Quadratwurzel."
         ],
-        "formulas": [
-          "b = \\sqrt{c^2 - a^2}"
+        "relatedLinks": [
+          {
+            "href": "/right-triangle-side-calculator/",
+            "label": "Rechner für rechtwinklige Dreiecksseiten"
+          },
+          {
+            "href": "/pythagorean-theorem-calculator/",
+            "label": "Satz-des-Pythagoras-Rechner"
+          },
+          {
+            "href": "/missing-leg-from-c-and-b-calculator/",
+            "label": "Rechner für fehlende Kathete aus c und b"
+          },
+          {
+            "href": "/right-triangle-angle-calculator/",
+            "label": "Rechner für Winkel rechtwinkliger Dreiecke"
+          },
+          {
+            "href": "/right-triangle-measurements-calculator/",
+            "label": "Rechner für Messungen rechtwinkliger Dreiecke"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Wie finde ich die fehlende Kathete aus der Hypotenuse und einer Kathete?",
+            "answer": "Quadrieren Sie die Hypotenuse (c²), quadrieren Sie die bekannte Kathete (a²), subtrahieren Sie und ziehen Sie die Quadratwurzel: b = √(c² − a²). Geben Sie beide Werte in den obigen Rechner ein für ein sofortiges Ergebnis mit Schritten."
+          },
+          {
+            "question": "Warum subtrahiere ich statt zu addieren?",
+            "answer": "Der Satz des Pythagoras addiert die Kathetenquadrate, um das Hypotenusenquadrat zu erhalten (a² + b² = c²). Wenn Sie die Hypotenuse bereits kennen, stellen Sie um: Subtrahieren Sie das Quadrat der bekannten Kathete vom Quadrat der Hypotenuse, um das Quadrat der fehlenden Kathete zu isolieren, und ziehen Sie dann die Wurzel."
+          },
+          {
+            "question": "Woran erkenne ich, welche Seite die Hypotenuse ist?",
+            "answer": "Die Hypotenuse ist immer die längste Seite und liegt gegenüber dem 90°-Winkel. Wenn Ihre drei Messwerte 5, 12 und 13 sind, ist die Hypotenuse 13."
+          },
+          {
+            "question": "Was passiert, wenn die bekannte Kathete gleich lang oder länger als die Hypotenuse ist?",
+            "answer": "Wenn a = c, ist das Ergebnis b = 0 (entartet, kein Dreieck). Wenn a > c, hat die Quadratwurzel einer negativen Zahl keine reelle Lösung. Beide Fälle werden als ungültig zurückgewiesen."
+          },
+          {
+            "question": "Kann die fehlende Kathete eine Dezimalzahl sein?",
+            "answer": "Ja. Zum Beispiel ergibt c = 10 und a = 7 den Wert b = √51 ≈ 7.14. Behalten Sie die volle Genauigkeit bei Berechnungen bei und runden Sie nur das Endergebnis."
+          },
+          {
+            "question": "Wie kann ich prüfen, ob die Antwort richtig ist?",
+            "answer": "Prüfen Sie, ob a² + b² = c². Für das 5–12–13-Beispiel: 25 + 144 = 169. Bestätigen Sie außerdem b > 0, b < c und dass die Einheit mit Ihren Eingaben übereinstimmt."
+          },
+          {
+            "question": "Kann ich verschiedene Maßeinheiten verwenden?",
+            "answer": "Beide Eingaben müssen dieselbe Einheit verwenden. Wenn c in Metern und a in Zentimetern angegeben ist, rechnen Sie zuerst einen Wert um. Das Ergebnis verwendet die Eingabeeinheit."
+          },
+          {
+            "question": "Kann dieser Rechner auch einen unbekannten Winkel finden?",
+            "answer": "Nein, dieser Modus findet nur die fehlende Kathete b. Um Winkel zu finden, verwenden Sie den <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Rechner für Winkel rechtwinkliger Dreiecke</a>."
+          }
         ]
-      },
-      "howTo": {
-        "h2": "So finden Sie Kathete b aus c und a",
-        "steps": [
-          "Bestätigen Sie, dass c die Hypotenuse und a ein Kathete ist. Die Hypotenuse ist immer die längste Seite.",
-          "Geben Sie die Hypotenuse c in das erste Eingabefeld ein.",
-          "Geben Sie das bekannte Kathete a in das zweite Eingabefeld ein.",
-          "Klicken Sie auf Berechnen, um das fehlende Kathete zu finden.",
-          "Lesen Sie das Ergebnis für b zusammen mit der vollständigen Schritt-für-Schritt-Lösung."
-        ]
-      },
-      "example": {
-        "h2": "Beispiel: Kathete b finden",
-        "intro": "Gegeben: c = 13, a = 5. Der fehlende Schenkel eines rechtwinkligen Dreiecks mit Hypotenuse 13 und Schenkel 5 ist 12.",
-        "lines": [
-          "b = \\sqrt{13^2 - 5^2}",
-          "b = \\sqrt{169 - 25}",
-          "b = \\sqrt{144}",
-          "b = 12"
-        ]
-      },
-      "extraSections": [
-        {
-          "h2": "Wichtige Prüfung vor der Berechnung",
-          "paragraphs": [
-            "Bevor Sie diese Formel verwenden, stellen Sie sicher, dass c größer als a ist. Die Hypotenuse ist immer die längste Seite eines rechtwinkligen Dreiecks. Wenn c gleich a ist, erhalten Sie b = 0, was bedeutet, dass kein Dreieck existiert.",
-            "Wenn c kleiner als a ist, wird der Ausdruck unter der Quadratwurzel negativ. Das bedeutet, dass die beiden Eingabewerte kein echtes rechtwinkliges Dreieck mit c als Hypotenuse beschreiben können."
-          ],
-          "listTitle": "Verwenden Sie zunächst diese Prüfungen:",
-          "listItems": [
-            "c liegt gegenüber dem Winkel 90°.",
-            "c ist größer als a.",
-            "Beide Werte sind positiv.",
-            "c und a verwenden dieselbe Einheit."
-          ]
-        },
-        {
-          "h2": "Wo dieser Rechner nützlich ist",
-          "paragraphs": [
-            "Dieser Rechner ist nützlich, wenn eine diagonale oder geneigte Messung bekannt ist, eine senkrechte Seite bekannt ist und die andere senkrechte Seite fehlt. Es ist das fokussierte Werkzeug für den Fall c-and-a, daher weist jede Erklärung auf der Seite darauf hin, b zu finden.",
-            "Es kann auch dabei helfen, Messungen zu überprüfen. Wenn ein gemessener Wert für b nicht mit dem Rechnerergebnis übereinstimmt, stimmt das Dreieck möglicherweise nicht, die Hypotenuse ist möglicherweise falsch beschriftet oder eine Messung verwendet möglicherweise eine andere Einheit."
-          ],
-          "listTitle": "Häufige Beispiele sind:",
-          "listItems": [
-            "Ermitteln der Wandhöhe, wenn die Leiterlänge c und der Bodenabstand a bekannt sind.",
-            "Ermitteln der vertikalen Steigung eines Hangs, wenn die Hanglänge und der horizontale Verlauf bekannt sind.",
-            "Prüfung einer Hausaufgabe mit einem rechtwinkligen Dreieck, die c und a ergibt.",
-            "Bestätigen von Grundrissmaßen für Rahmen, Landschaftsgestaltung, Rampen oder Grundrisse."
-          ]
-        },
-        {
-          "h2": "So lesen Sie die Antwort",
-          "paragraphs": [
-            "Die Ausgabe mit der Bezeichnung Fehlendes Kathete b ist die Länge des anderen Kathetes, das mit a den rechten Winkel bildet. Sie ist nicht die Hypotenuse und sollte kürzer als c sein.",
-            "Wenn der berechnete b extrem klein ist, liegt Ihr bekanntes Kathete a sehr nahe an der Hypotenuse c. Das kann stimmen, es lohnt sich aber, das Diagramm und die Einheiten zu prüfen, bevor man den Wert verwendet."
-          ],
-          "listTitle": "Ein gültiges Ergebnis sollte Folgendes erfüllen:",
-          "listItems": [
-            "b ist größer als Null.",
-            "b ist kleiner als c.",
-            "a² + b² ist ungefähr gleich c².",
-            "Die Ausgabeeinheit entspricht der Eingabeeinheit."
-          ]
-        },
-        {
-          "h2": "Häufige Fehler",
-          "paragraphs": [
-            "Der häufigste Fehler besteht darin, c als Kathete zu behandeln. In diesem Rechner muss c die Hypotenuse sein, also die längste Seite und die dem rechten Winkel gegenüberliegende Seite.",
-            "Ein weiterer häufiger Fehler besteht darin, die Quadrate zu addieren statt zu subtrahieren. Addition findet eine Hypotenuse; Durch Subtraktion wird ein fehlendes Kathete der Hypotenuse gefunden."
-          ],
-          "listTitle": "Vermeiden Sie diese Fehler:",
-          "listItems": [
-            "Das bekannte Kathete in das Hypotenusenfeld bringen.",
-            "Verwendung von c² + a² anstelle von c² - a².",
-            "Eingabe eines Werts größer oder gleich c.",
-            "Anhalten bei b², anstatt die Quadratwurzel zu ziehen.",
-            "Mischeinheiten wie Meter und Zentimeter."
-          ]
-        }
-      ],
-      "relatedLinks": [
-        {
-          "href": "/right-triangle-side-calculator/",
-          "label": "Seitenrechner für rechtwinklige Dreiecke"
-        },
-        {
-          "href": "/pythagorean-theorem-calculator/",
-          "label": "Rechner: Satz des Pythagoras"
-        },
-        {
-          "href": "/missing-leg-from-c-and-b-calculator/",
-          "label": "Rechner: Fehlende Kathete a aus c und b"
-        }
-      ],
-      "faqs": [
-        {
-          "question": "Was bedeutet c in diesem Rechner?",
-          "answer": "c ist die Hypotenuse des rechtwinkligen Dreiecks - die längste Seite, die dem Winkel 90° gegenüberliegt. Es ist kein Kathete. Sie geben c als einen der beiden bekannten Werte in diesen Rechner ein."
-        },
-        {
-          "question": "Was bedeutet a in diesem Rechner?",
-          "answer": "a ist einer der beiden Schenkel des rechtwinkligen Dreiecks. Es ist eine der Seiten, die den rechten Winkel bildet. In diesem Rechner ist a das Kathete, das Sie bereits kennen."
-        },
-        {
-          "question": "Was ermittelt dieser Rechner?",
-          "answer": "Dieser Rechner findet das fehlende Kathete b. Bei gegebener Hypotenuse c und Kathete a berechnet es b = √(c² − a²) und zeigt Ihnen die Schritt-für-Schritt-Lösung."
-        },
-        {
-          "question": "Kann c kleiner als a sein?",
-          "answer": "Nein. In einem rechtwinkligen Dreieck ist die Hypotenuse immer die längste Seite. Wenn c kleiner als a ist, bilden die Werte kein gültiges rechtwinkliges Dreieck. Überprüfen Sie vor der Berechnung, welches Maß die Hypotenuse ist."
-        },
-        {
-          "question": "Wie finde ich b aus c und a?",
-          "answer": "Quadrieren Sie die Hypotenuse (c²), quadrieren Sie das bekannte Kathete (a²), subtrahieren Sie a² von c² und ziehen Sie die Quadratwurzel. Die Formel lautet b = √(c² − a²). Oder geben Sie Ihre Werte in diesen Rechner ein, um eine sofortige Antwort zu erhalten."
-        }
-      ]
     },
     "missing-leg-from-c-and-b-calculator": {
       "slug": "missing-leg-from-c-and-b-calculator",
@@ -3197,204 +3392,243 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         }
       ]
     },
-    "missing-leg-from-c-and-a-calculator": {
-      "slug": "missing-leg-from-c-and-a-calculator",
-      "url": "/missing-leg-from-c-and-a-calculator/",
-      "h1": "Calcolatrice: Cateto mancante da c e a",
-      "metaTitle": "Calcolatrice: Cateto mancante da c e a | Right Triangle Solver",
-      "metaDescription": "Trova il cateto b quando l'ipotenusa c e l'altro cateto a sono noti.",
-      "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "Ricorda: c è sempre l'ipotenusa, ovvero il lato più lungo, opposto all'angolo retto. Non è una cateto. Se hai due cateti e ti serve invece l'ipotenusa, usa il calcolatore del teorema di Pitagora.",
-      "intro": "Trova il cateto b quando l'ipotenusa c e l'altro cateto a sono noti.",
-      "quickSummary": {
-        "h2": "Cosa risolve questo calcolatore della cateto mancante",
-        "intro": "Utilizzare questa pagina quando si conoscono l'ipotenusa e il cateto a, ma manca l'altro cateto. La calcolatrice riorganizza il teorema di Pitagora per sottrarre la cateto nota dall'ipotenusa prima di calcolare la radice quadrata.",
-        "cards": [
-          {
-            "label": "Valori conosciuti",
-            "value": "c = ipotenusa; a = cateto noto"
-          },
-          {
-            "label": "Trova",
-            "value": "b = cateto ignoto"
-          },
-          {
-            "label": "Formula principale",
-            "value": "b = sqrt(c^2 - a^2)"
-          },
-          {
-            "label": "Controllo obbligatorio",
-            "value": "Richiede c > a."
-          }
-        ]
-      },
-      "diagram": {
-        "h2": "Diagramma del triangolo rettangolo: trovare la cateto b",
-        "intro": "Il diagramma contrassegna c e a come i valori che già conosci. La cateto verticale b è evidenziata come il lato mancante che questa calcolatrice risolve.",
-        "caption": "Diagramma del triangolo rettangolo con ipotenusa nota c, cateto noto a e cateto sconosciuto b.",
-        "sides": {
-          "a": {
-            "label": "a = conosciuto",
-            "description": "Il cateto a è il cateto noto lungo la base del triangolo rettangolo.",
-            "status": "known"
-          },
-          "b": {
-            "label": "b = trova",
-            "description": "La cateto b è la cateto sconosciuta risolta sottraendo a^2 da c^2.",
-            "status": "unknown"
-          },
-          "c": {
-            "label": "c = noto",
-            "description": "L'ipotenusa c è il lato più lungo conosciuto opposto all'angolo retto.",
-            "status": "known"
-          }
+        "missing-leg-from-c-and-a-calculator": {
+        "slug": "missing-leg-from-c-and-a-calculator",
+        "url": "/missing-leg-from-c-and-a-calculator/",
+        "h1": "Calcolatrice del cateto mancante: trova il cateto b dall'ipotenusa c e dal cateto a",
+        "metaTitle": "Calcolatrice del cateto mancante: trova b da c e a",
+        "metaDescription": "Trova il cateto mancante di un triangolo rettangolo usando l'ipotenusa e un cateto noto. Calcola il lato b, segui la formula e consulta gli esempi svolti.",
+        "formulaSlug": "leg-from-hypotenuse-and-other-leg",
+        "toolPurpose": "Ricorda: c è sempre l'ipotenusa — il <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lato</a> più lungo, opposto all'<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angolo</a> retto. Non è un cateto. Se hai due cateti e devi trovare l'ipotenusa, usa la <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Calcolatrice del teorema di Pitagora</a>.",
+        "intro": "Questa <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calcolatrice</a> trova il cateto mancante b di un triangolo rettangolo quando conosci l'ipotenusa c e l'altro cateto a. Inserisci le tue due misure e applicherà la formula b = √(c² − a²) per calcolare istantaneamente il lato sconosciuto, con tutti i passaggi della soluzione. L'ipotenusa è il lato più lungo, opposto all'angolo retto. I due cateti formano quell'angolo retto. Sapere qual è quale lato ti assicura di ottenere ogni volta la risposta corretta.",
+        "quickSummary": {
+          "h2": "Cosa risolve questo strumento",
+          "intro": "Usa questa pagina quando l'ipotenusa e il cateto a sono noti, ma l'altro cateto è mancante. La <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calcolatrice</a> riorganizza il <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">teorema di Pitagora</a> per sottrarre il cateto noto dall'ipotenusa prima di estrarre la radice quadrata.",
+          "cards": [
+            {
+              "label": "Valori noti",
+              "value": "Ipotenusa c e cateto a"
+            },
+            {
+              "label": "Trova",
+              "value": "Cateto mancante b"
+            },
+            {
+              "label": "Formula principale",
+              "value": "b = sqrt(c^2 - a^2)"
+            },
+            {
+              "label": "Controllo richiesto",
+              "value": "c deve essere maggiore di a"
+            }
+          ]
         },
-        "notes": [
-          "c deve essere l'ipotenusa, non uno dei cateti.",
-          "Se c è minore o uguale a a, gli input non formano un triangolo rettangolo valido.",
-          "Il risultato b utilizza la stessa unità di c e a."
-        ]
-      },
-      "calculator": {
-        "outputLabel": "b = cateto ignoto",
-        "fields": [
+        "diagram": {
+          "h2": "Identifica l'ipotenusa e il cateto mancante",
+          "intro": "Il diagramma contrassegna c e a come i valori che già conosci. Il cateto verticale b è evidenziato come il <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lato mancante</a> che questa calcolatrice risolve.",
+          "caption": "Diagramma di un triangolo rettangolo con ipotenusa nota c, cateto noto a e cateto sconosciuto b.",
+          "sides": {
+            "a": {
+              "label": "a = noto",
+              "description": "Il cateto a è il cateto noto lungo la base del triangolo rettangolo.",
+              "status": "known"
+            },
+            "b": {
+              "label": "b = trova",
+              "description": "Il cateto b è il cateto sconosciuto, calcolato sottraendo a² da c².",
+              "status": "unknown"
+            },
+            "c": {
+              "label": "c = noto",
+              "description": "L'ipotenusa c è il <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lato</a> noto più lungo, opposto all'<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angolo</a> retto.",
+              "status": "known"
+            }
+          },
+          "notes": [
+            "c deve essere l'ipotenusa, non uno dei cateti.",
+            "Se c è minore o uguale ad a, i valori inseriti non formano un triangolo rettangolo valido.",
+            "Il risultato b usa la stessa unità di misura di c e a."
+          ]
+        },
+        "calculator": {
+          "outputLabel": "Cateto mancante b",
+          "fields": [
+            {
+              "key": "c",
+              "label": "Ipotenusa c",
+              "min": 0
+            },
+            {
+              "key": "a",
+              "label": "Cateto a",
+              "min": 0
+            }
+          ]
+        },
+        "formulaSection": {
+          "h2": "Formula per trovare un cateto mancante",
+          "paragraphs": [
+            "Il calcolo usa il <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">teorema di Pitagora</a>, che mette in relazione i quadrati dei due cateti con il quadrato dell'ipotenusa. Per isolare il cateto mancante, riorganizza l'equazione passo dopo passo.",
+            "<strong>Passaggio 1: parti dal teorema di Pitagora.</strong> I quadrati dei due cateti si sommano al quadrato dell'ipotenusa.",
+            "<strong>Passaggio 2: sottrai a² da entrambi i membri.</strong> In questo modo isoli il quadrato del cateto mancante.",
+            "<strong>Passaggio 3: estrai la radice quadrata positiva.</strong> Le lunghezze dei lati sono positive, quindi usa la radice principale. L'intera espressione c² − a² resta sotto il segno di radice.",
+            "Dove <strong>a</strong> è il cateto noto, <strong>b</strong> è il cateto mancante e <strong>c</strong> è l'ipotenusa. L'ipotenusa si trova di fronte all'angolo retto ed è sempre il lato più lungo.",
+            "<strong>Perché sottrarre?</strong> L'equazione originale somma i quadrati di entrambi i cateti per ottenere il quadrato dell'ipotenusa. Quando l'ipotenusa e un cateto sono già noti, sottrai il quadrato del cateto noto dal quadrato dell'ipotenusa per isolare il quadrato del cateto sconosciuto. Poi estrai la radice quadrata. Non sottrarre mai il cateto dall'ipotenusa direttamente — sottrai sempre i loro quadrati."
+          ],
+          "formulas": [
+            "a^2 + b^2 = c^2",
+            "b^2 = c^2 - a^2",
+            "b = \\sqrt{c^2 - a^2}"
+          ]
+        },
+        "howTo": {
+          "h2": "Come trovare il cateto b da c e a",
+          "steps": [
+            "Identifica l'ipotenusa, che si trova di fronte all'angolo di 90°. È sempre il lato più lungo.",
+            "Inserisci l'ipotenusa c nel primo campo di input.",
+            "Inserisci il cateto noto a nel secondo campo di input.",
+            "Verifica che entrambe le misure usino la stessa unità.",
+            "Fai clic su Calcola per trovare il cateto mancante b.",
+            "Controlla il risultato e la soluzione passo passo mostrata sotto la calcolatrice.",
+            "Verifica la risposta controllando che a² + b² sia uguale a c²."
+          ]
+        },
+        "example": {
+          "h2": "Esempi svolti per trovare un cateto mancante",
+          "intro": "Ogni esempio mostra il calcolo completo dall'enunciato del problema alla risposta verificata. Tutti e cinque usano la formula b = √(c² − a²).",
+          "lines": [
+            "b = \\sqrt{13^2 - 5^2}",
+            "b = \\sqrt{169 - 25}",
+            "b = \\sqrt{144}",
+            "b = 12"
+          ]
+        },
+        "extraSections": [
           {
-            "key": "c",
-            "label": "c = ipotenusa",
-            "min": 0
+            "h2": "Esempi svolti dettagliati",
+            "paragraphs": [
+              "<h3>Esempio 1: triangolo standard 5–12–13</h3><p><strong>Problema:</strong> Trova il cateto mancante di un triangolo rettangolo con ipotenusa c = 13 cm e cateto noto a = 5 cm.</p><p><strong>Dati:</strong> c = 13 cm, a = 5 cm. <strong>Trova:</strong> b.</p><p><strong>Formula:</strong> b = √(c² − a²)</p><p><strong>Sostituzione:</strong> b = √(13² − 5²) = √(169 − 25) = √144</p><p><strong>Risposta:</strong> <strong>b = 12 cm</strong></p><p><strong>Verifica:</strong> 5² + 12² = 25 + 144 = 169 = 13². Il cateto noto, il cateto mancante e l'ipotenusa formano un triangolo rettangolo valido.</p>",
+              "<h3>Esempio 2: scala appoggiata al muro</h3><p><strong>Problema:</strong> Una scala di 5 m poggia contro un muro verticale. La sua base dista 3 m dal muro. Trova l'altezza raggiunta dalla scala.</p><p><strong>Dati:</strong> c = 5 m (scala), a = 3 m (distanza da terra). <strong>Trova:</strong> b (altezza del muro).</p><p><strong>Calcolo:</strong> b = √(5² − 3²) = √(25 − 9) = √16 = 4 m</p><p><strong>Risposta:</strong> <strong>La scala raggiunge 4 m sul muro.</strong></p><img src=\"/images/missing-leg/missing-leg-ladder.svg\" alt=\"Diagramma della scala: scala di 5 m come ipotenusa, distanza da terra di 3 m come cateto a, altezza del muro di 4 m come cateto mancante b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Figura: il muro verticale (b = 4 m), la distanza orizzontale da terra (a = 3 m) e la scala (c = 5 m). Questo è un modello geometrico che presuppone un muro verticale e un terreno pianeggiante, non una valutazione sulla sicurezza della scala.</em></p>",
+              "<h3>Esempio 3: diagonale di una stanza rettangolare</h3><p><strong>Problema:</strong> Una stanza rettangolare ha una diagonale di 17 piedi e un lato di 8 piedi. Trova l'altro lato.</p><p><strong>Dati:</strong> c = 17 piedi (diagonale), a = 8 piedi. <strong>Trova:</strong> b.</p><p><strong>Calcolo:</strong> b = √(17² − 8²) = √(289 − 64) = √225 = 15 piedi</p><p><strong>Risposta:</strong> <strong>L'altro lato misura 15 piedi.</strong></p><img src=\"/images/missing-leg/missing-leg-room.svg\" alt=\"Diagramma della stanza: diagonale di 17 piedi come ipotenusa, lato noto di 8 piedi come cateto a, lato mancante di 15 piedi come cateto b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Figura: vista dall'alto. La diagonale (c = 17 piedi) divide il rettangolo in due triangoli rettangoli. Il lato noto (a = 8 piedi) e il lato mancante (b = 15 piedi) formano l'angolo retto.</em></p>",
+              "<h3>Esempio 4: un risultato che richiede arrotondamento</h3><p><strong>Problema:</strong> Dati c = 10 m e a = 7 m, trova b.</p><p><strong>Calcolo:</strong> b = √(10² − 7²) = √(100 − 49) = √51 ≈ 7,141428 m</p><p><strong>Risposta:</strong> <strong>b ≈ 7,14 m</strong>, arrotondato a due cifre decimali.</p><p><strong>Verifica:</strong> 7² + (√51)² = 49 + 51 = 100 = 10².</p><p>Conserva il valore esatto (√51) durante i calcoli intermedi e arrotonda solo al passaggio finale. Arrotondare in anticipo introduce errori che si accumulano nei problemi a più passaggi.</p>",
+              "<h3>Esempio 5: geometria di una rampa</h3><p><strong>Problema:</strong> Una rampa rettilinea è lunga 13 m e ha una proiezione orizzontale di 12 m. Trova il suo dislivello verticale.</p><p><strong>Dati:</strong> c = 13 m (rampa), a = 12 m (proiezione). <strong>Trova:</strong> b (dislivello).</p><p><strong>Calcolo:</strong> b = √(13² − 12²) = √(169 − 144) = √25 = 5 m</p><p><strong>Risposta:</strong> <strong>Il dislivello verticale è di 5 m.</strong></p><img src=\"/images/missing-leg/missing-leg-ramp.svg\" alt=\"Diagramma della rampa: rampa di 13 m come ipotenusa, proiezione orizzontale di 12 m come cateto a, dislivello verticale di 5 m come cateto mancante b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Figura: la rampa (c = 13 m) come ipotenusa, la proiezione orizzontale (a = 12 m) e il dislivello verticale (b = 5 m). Questo calcolo non attesta la conformità alle norme sull'accessibilità o alle normative edilizie.</em></p>"
+            ]
           },
           {
-            "key": "a",
-            "label": "a = cateto noto",
-            "min": 0
+            "h2": "Quando puoi calcolare un cateto mancante?",
+            "paragraphs": [
+              "Perché un triangolo rettangolo sia valido e non degenere, le misure devono soddisfare tre condizioni: c > 0, a > 0 e c > a. Il cateto mancante è quindi b = √(c² − a²).",
+              "<strong>Caso 1: ipotenusa minore del cateto noto.</strong> Se c = 4 e a = 5, allora b = √(16 − 25) = √(−9). L'espressione sotto il segno di radice è negativa, quindi questi valori non possono formare un triangolo rettangolo reale con c come ipotenusa.",
+              "<strong>Caso 2: ipotenusa uguale al cateto noto.</strong> Se c = 5 e a = 5, allora b = √(25 − 25) = 0. Questo è un caso degenere, non un triangolo valido.",
+              "<strong>Caso 3: misure nulle o negative.</strong> Le lunghezze dei lati devono essere positive. La calcolatrice rifiuta valori nulli e negativi.",
+              "<strong>Caso 4: unità di misura incoerenti.</strong> Entrambe le misure devono usare la stessa unità. Se c è in metri e a in centimetri, converti una delle due prima di calcolare."
+            ],
+            "listTitle": "Usa prima questi controlli:",
+            "listItems": [
+              "c è opposta all'<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angolo</a> di 90°.",
+              "c è maggiore di a.",
+              "Entrambi i valori sono positivi.",
+              "c e a usano la stessa unità di misura."
+            ]
+          },
+          {
+            "h2": "Dove si usa la formula del cateto mancante?",
+            "paragraphs": [
+              "Lo schema generale: quando sono noti una diagonale in linea retta o una lunghezza inclinata e una distanza perpendicolare, l'altra distanza perpendicolare si ricava dal teorema di Pitagora. Funziona solo quando la geometria forma un triangolo rettangolo.",
+              "<strong>Costruzione e carpenteria.</strong> I carpentieri verificano gli angoli retti misurando la diagonale di un telaio rettangolare. Se la diagonale (c) e un lato (a) sono noti, il lato mancante (b) conferma il layout prima di tagliare il legname.",
+              "<strong>Misure di stanze e planimetrie.</strong> Quando si pianificano mobili o pavimenti, la diagonale di una stanza e la lunghezza di una parete danno la lunghezza dell'altra parete senza spostare ostacoli.",
+              "<strong>Geometria di scale e muri.</strong> Data la lunghezza di una scala e la sua distanza dal muro, l'altezza raggiunta si ricava direttamente. Questo è un modello geometrico, non una valutazione di sicurezza.",
+              "<strong>Calcoli di rampe e pendenze.</strong> Dalla lunghezza della pendenza e dalla proiezione orizzontale si determina il dislivello verticale. Questo non attesta la conformità alle norme."
+            ]
+          },
+          {
+            "h2": "Come verificare il calcolo del cateto mancante",
+            "paragraphs": [
+              "Verifica ogni risultato prima di usarlo. Per l'esempio 5–12–13: 5² + 12² = 25 + 144 = 169 = 13².",
+              "L'output etichettato Cateto mancante b è la lunghezza dell'altro cateto che forma l'angolo retto con a. Non è l'ipotenusa e deve essere più corto di c."
+            ],
+            "listTitle": "Un risultato valido deve soddisfare:",
+            "listItems": [
+              "b è maggiore di zero.",
+              "b è più corto di c.",
+              "a² + b² è uguale a c², tenendo conto dell'arrotondamento del valore visualizzato.",
+              "Il risultato usa l'unità di misura corretta."
+            ]
+          },
+          {
+            "h2": "Errori comuni nel trovare un cateto mancante",
+            "paragraphs": [
+              "L'errore più comune è trattare c come un cateto. Qui c deve essere l'ipotenusa: il lato più lungo, opposto all'angolo retto.",
+              "Un altro errore frequente è sommare i quadrati invece di sottrarli. La somma (a² + b²) trova un'ipotenusa; la sottrazione (c² − a²) trova un cateto mancante dall'ipotenusa."
+            ],
+            "listTitle": "Evita questi errori:",
+            "listItems": [
+              "<strong>Confondere l'ipotenusa con un cateto.</strong> Se inserisci il valore del cateto nel campo c, la formula risolve il problema sbagliato. Corretto: c è sempre il lato più lungo.",
+              "<strong>Sommare i quadrati invece di sottrarli.</strong> Sbagliato: b = √(c² + a²). Corretto: b = √(c² − a²).",
+              "<strong>Dimenticare la radice quadrata.</strong> Sbagliato: b = c² − a². Corretto: estrai la radice quadrata della differenza.",
+              "<strong>Raggruppamento errato sotto la radice.</strong> Sbagliato: √c² − a² (che equivale a c − a). Corretto: √(c² − a²), con l'intera differenza sotto il segno di radice.",
+              "<strong>Inserire a ≥ c.</strong> Il cateto noto non può essere uguale o maggiore dell'ipotenusa. Corretto: verifica che c > a prima di calcolare.",
+              "<strong>Mescolare le unità di misura.</strong> Sbagliato: c = 5 m, a = 30 cm. Corretto: converti prima nella stessa unità (c = 500 cm, a = 30 cm).",
+              "<strong>Arrotondare troppo presto.</strong> Sbagliato: arrotondare √51 a 7,14 a metà calcolo. Corretto: mantieni la massima precisione fino alla risposta finale."
+            ]
           }
-        ]
-      },
-      "formulaSection": {
-        "h2": "Formula b della cateto mancante",
-        "paragraphs": [
-          "La formula per trovare la cateto b deriva dal teorema di Pitagora (a² + b² = c²). La riorganizzazione per b fornisce la formula seguente.",
-          "Dove c è l'ipotenusa (lato più lungo del triangolo rettangolo), a è la cateto conosciuta e b è la cateto mancante per cui stai risolvendo. Nota la sottrazione: sottrai il quadrato del cateto noto dal quadrato dell'ipotenusa, quindi prendi la radice quadrata."
         ],
-        "formulas": [
-          "b = \\sqrt{c^2 - a^2}"
+        "relatedLinks": [
+          {
+            "href": "/right-triangle-side-calculator/",
+            "label": "Calcolatrice dei lati del triangolo rettangolo"
+          },
+          {
+            "href": "/pythagorean-theorem-calculator/",
+            "label": "Calcolatrice del teorema di Pitagora"
+          },
+          {
+            "href": "/missing-leg-from-c-and-b-calculator/",
+            "label": "Calcolatrice del cateto mancante da c e b"
+          },
+          {
+            "href": "/right-triangle-angle-calculator/",
+            "label": "Calcolatrice degli angoli del triangolo rettangolo"
+          },
+          {
+            "href": "/right-triangle-measurements-calculator/",
+            "label": "Calcolatrice delle misure del triangolo rettangolo"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Come trovo il cateto mancante dall'ipotenusa e da un cateto?",
+            "answer": "Eleva al quadrato l'ipotenusa (c²), eleva al quadrato il cateto noto (a²), sottrai ed estrai la radice quadrata: b = √(c² − a²). Inserisci entrambi i valori nella calcolatrice qui sopra per un risultato immediato con i passaggi."
+          },
+          {
+            "question": "Perché sottraggo invece di sommare?",
+            "answer": "Il teorema di Pitagora somma i quadrati dei cateti per ottenere il quadrato dell'ipotenusa (a² + b² = c²). Quando l'ipotenusa è già nota, riorganizza: sottrai il quadrato del cateto noto dal quadrato dell'ipotenusa per isolare il quadrato del cateto mancante, poi estrai la radice."
+          },
+          {
+            "question": "Come faccio a sapere qual è il lato dell'ipotenusa?",
+            "answer": "L'ipotenusa è sempre il lato più lungo e si trova di fronte all'angolo di 90°. Se le tue tre misure sono 5, 12 e 13, l'ipotenusa è 13."
+          },
+          {
+            "question": "Cosa succede se il cateto noto è uguale o più lungo dell'ipotenusa?",
+            "answer": "Se a = c, il risultato è b = 0 (degenere, non un triangolo). Se a > c, la radice quadrata di un numero negativo non ha soluzione reale. Entrambi i casi vengono rifiutati come non validi."
+          },
+          {
+            "question": "Il cateto mancante può essere un decimale?",
+            "answer": "Sì. Per esempio, c = 10 e a = 7 danno b = √51 ≈ 7,14. Mantieni la massima precisione durante i calcoli e arrotonda solo la risposta finale."
+          },
+          {
+            "question": "Come posso verificare se la risposta è corretta?",
+            "answer": "Verifica che a² + b² = c². Per l'esempio 5–12–13: 25 + 144 = 169. Conferma anche che b > 0, b < c e che l'unità di misura corrisponda ai tuoi input."
+          },
+          {
+            "question": "Posso usare unità di misura diverse?",
+            "answer": "Entrambi gli input devono usare la stessa unità. Se c è in metri e a in centimetri, converti prima uno dei due. Il risultato usa l'unità di input."
+          },
+          {
+            "question": "Questa calcolatrice può trovare anche un angolo sconosciuto?",
+            "answer": "No, questa modalità trova solo il cateto mancante b. Per trovare gli angoli, usa la <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Calcolatrice degli angoli del triangolo rettangolo</a>."
+          }
         ]
-      },
-      "howTo": {
-        "h2": "Come trovare la cateto b da c e a",
-        "steps": [
-          "Conferma che c è l'ipotenusa e a è un cateto. L'ipotenusa è sempre il lato più lungo.",
-          "Immettere l'ipotenusa c nel primo campo di immissione.",
-          "Immettere la tratta nota a nel secondo campo di immissione.",
-          "Fare clic su Calcola per trovare la cateto mancante.",
-          "Leggi il risultato per b, insieme alla soluzione completa passo dopo passo."
-        ]
-      },
-      "example": {
-        "h2": "Esempio: trovare la cateto b",
-        "intro": "Dato: c = 13, a = 5. Il cateto mancante di un triangolo rettangolo con ipotenusa 13 e cateto 5 è 12.",
-        "lines": [
-          "b = \\sqrt{13^2 - 5^2}",
-          "b = \\sqrt{169 - 25}",
-          "b = \\sqrt{144}",
-          "b = 12"
-        ]
-      },
-      "extraSections": [
-        {
-          "h2": "Controllo importante prima del calcolo",
-          "paragraphs": [
-            "Prima di utilizzare questa formula, assicurati che c sia maggiore di a. L'ipotenusa è sempre il lato più lungo di un triangolo rettangolo. Se c è uguale a a, otterresti b = 0, il che significa che non esiste alcun triangolo.",
-            "Se c è inferiore a a, l'espressione sotto la radice quadrata diventa negativa. Ciò significa che i due valori di input non possono descrivere un triangolo rettangolo reale con c come ipotenusa."
-          ],
-          "listTitle": "Utilizza prima questi controlli:",
-          "listItems": [
-            "c è opposto all'angolo 90°.",
-            "c è maggiore di a.",
-            "Entrambi i valori sono positivi.",
-            "c e a utilizzano la stessa unità."
-          ]
-        },
-        {
-          "h2": "Dove è utile questa calcolatrice",
-          "paragraphs": [
-            "Questa calcolatrice è utile quando si conosce una misura diagonale o inclinata, si conosce un lato perpendicolare e manca l'altro lato perpendicolare. È lo strumento mirato per il caso c-and-a, quindi ogni spiegazione nella pagina punta alla ricerca di b.",
-            "Può anche aiutare a verificare le misurazioni. Se un valore misurato per b non corrisponde al risultato della calcolatrice, il triangolo potrebbe non essere retto, l'ipotenusa potrebbe avere un'etichetta errata o una misurazione potrebbe utilizzare un'unità diversa."
-          ],
-          "listTitle": "Esempi comuni includono:",
-          "listItems": [
-            "Determinazione dell'altezza del muro quando si conoscono la lunghezza della scala c e la distanza dal suolo a.",
-            "Trovare l'aumento verticale di un pendio quando si conoscono la lunghezza del pendio e il percorso orizzontale.",
-            "Controllo di un problema di compiti a casa sul triangolo rettangolo che dà c e a.",
-            "Conferma delle misurazioni del layout per inquadrature, paesaggi, rampe o planimetrie."
-          ]
-        },
-        {
-          "h2": "Come leggere la risposta",
-          "paragraphs": [
-            "L'output etichettato cateto mancante b è la lunghezza dell'altra cateto che forma l'angolo retto con a. Non è l'ipotenusa e dovrebbe essere più breve di c.",
-            "Se il valore b calcolato è estremamente piccolo, il cateto noto a è molto vicino all'ipotenusa c. Ciò può essere valido, ma vale la pena controllare il diagramma e le unità prima di utilizzare il valore."
-          ],
-          "listTitle": "Un risultato valido dovrebbe soddisfare:",
-          "listItems": [
-            "b è maggiore di zero.",
-            "b è inferiore a c.",
-            "a² + b² è approssimativamente uguale a c².",
-            "L'unità di output corrisponde all'unità di input."
-          ]
-        },
-        {
-          "h2": "Errori comuni",
-          "paragraphs": [
-            "L'errore più comune è trattare c come una cateto. In questa calcolatrice, c deve essere l'ipotenusa, ovvero il lato più lungo e il lato opposto all'angolo retto.",
-            "Un altro errore frequente è sommare i quadrati invece di sottrarre. L'addizione trova un'ipotenusa; la sottrazione trova una cateto mancante dell'ipotenusa."
-          ],
-          "listTitle": "Evita questi errori:",
-          "listItems": [
-            "Mettere la cateto conosciuta nel campo dell'ipotenusa.",
-            "Utilizzando c² + a² invece di c² - a².",
-            "Immissione di un valore maggiore o uguale a c.",
-            "Fermarsi a b² invece di prendere la radice quadrata.",
-            "Unità di miscelazione come metri e centimetri."
-          ]
-        }
-      ],
-      "relatedLinks": [
-        {
-          "href": "/right-triangle-side-calculator/",
-          "label": "Calcolatore del lato del triangolo rettangolo"
-        },
-        {
-          "href": "/pythagorean-theorem-calculator/",
-          "label": "Calcolatrice: Teorema di Pitagora"
-        },
-        {
-          "href": "/missing-leg-from-c-and-b-calculator/",
-          "label": "Calcolatrice: Cateto mancante da c e b"
-        }
-      ],
-      "faqs": [
-        {
-          "question": "Cosa significa c in questa calcolatrice?",
-          "answer": "c è l'ipotenusa del triangolo rettangolo, il lato più lungo, situato di fronte all'angolo 90°. Non è una cateto. Inserisci c come uno dei due valori noti in questa calcolatrice."
-        },
-        {
-          "question": "Cosa significa in questa calcolatrice?",
-          "answer": "a è uno dei due cateti del triangolo rettangolo. È uno dei lati che forma l'angolo retto. In questa calcolatrice, a è la cateto che già conosci."
-        },
-        {
-          "question": "Cosa trova questa calcolatrice?",
-          "answer": "Questa calcolatrice trova la cateto mancante b. Data l'ipotenusa c e il cateto a, calcola b = √(c² − a²) e mostra la soluzione passo passo."
-        },
-        {
-          "question": "c può essere più piccolo di a?",
-          "answer": "No. In un triangolo rettangolo l'ipotenusa è sempre il lato più lungo. Se c è inferiore a a, i valori non formano un triangolo rettangolo valido. Controlla quale misura è l'ipotenusa prima di calcolare."
-        },
-        {
-          "question": "Come posso trovare b da c e a?",
-          "answer": "Eleva l'ipotenusa al quadrato (c²), eleva al quadrato il cateto noto (a²), sottrai a² da c² e calcola la radice quadrata. La formula è b = √(c² − a²). Oppure inserisci i tuoi valori in questa calcolatrice per una risposta immediata."
-        }
-      ]
     },
     "missing-leg-from-c-and-b-calculator": {
       "slug": "missing-leg-from-c-and-b-calculator",
@@ -3796,204 +4030,243 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         }
       ]
     },
-    "missing-leg-from-c-and-a-calculator": {
-      "slug": "missing-leg-from-c-and-a-calculator",
-      "url": "/missing-leg-from-c-and-a-calculator/",
-      "h1": "Calculadora: Cateto ausente por c e a",
-      "metaTitle": "Calculadora: Cateto ausente por c e a | Right Triangle Solver",
-      "metaDescription": "Encontre o cateto b quando a hipotenusa c e o outro cateto a são conhecidos.",
-      "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "Lembre-se: c é sempre a hipotenusa - o lado mais longo, oposto ao ângulo reto. Não é uma cateto. Se você tem duas catetos e precisa da hipotenusa, use a Calculadora do Teorema de Pitágoras.",
-      "intro": "Encontre o cateto b quando a hipotenusa c e o outro cateto a são conhecidos.",
-      "quickSummary": {
-        "h2": "O que esta calculadora de cateto perdida resolve",
-        "intro": "Use esta página quando a hipotenusa e a cateto a forem conhecidas, mas a outra cateto estiver faltando. A calculadora reorganiza o teorema de Pitágoras para subtrair o cateto conhecido da hipotenusa antes de calcular a raiz quadrada.",
-        "cards": [
-          {
-            "label": "Valores conhecidos",
-            "value": "c = hipotenusa; a = cateto conhecido"
-          },
-          {
-            "label": "Descobertas",
-            "value": "b = cateto desconhecido"
-          },
-          {
-            "label": "Fórmula principal",
-            "value": "b = sqrt(c^2 - a^2)"
-          },
-          {
-            "label": "Verificação obrigatória",
-            "value": "Requer c > a."
-          }
-        ]
-      },
-      "diagram": {
-        "h2": "Diagrama do Triângulo Retângulo: Encontrando a cateto b",
-        "intro": "O diagrama marca c e a como os valores que você já conhece. A cateto vertical b é destacada como o lado faltante que esta calculadora resolve.",
-        "caption": "Diagrama de triângulo retângulo com hipotenusa conhecida c, cateto conhecida a e cateto desconhecida b.",
-        "sides": {
-          "a": {
-            "label": "a = conhecido",
-            "description": "A cateto a é a cateto conhecida ao longo da base do triângulo retângulo.",
-            "status": "known"
-          },
-          "b": {
-            "label": "b = encontrar",
-            "description": "A cateto b é a cateto desconhecida resolvida subtraindo a^2 de c^2.",
-            "status": "unknown"
-          },
-          "c": {
-            "label": "c = conhecido",
-            "description": "A hipotenusa c é o lado mais longo conhecido oposto ao ângulo reto.",
-            "status": "known"
-          }
+        "missing-leg-from-c-and-a-calculator": {
+        "slug": "missing-leg-from-c-and-a-calculator",
+        "url": "/missing-leg-from-c-and-a-calculator/",
+        "h1": "Calculadora de Cateto Desconhecido: Encontrar o Cateto b a partir da Hipotenusa c e do Cateto a",
+        "metaTitle": "Calculadora de Cateto Desconhecido: Encontrar b a partir de c e a",
+        "metaDescription": "Encontre o cateto desconhecido de um triângulo retângulo usando a hipotenusa e um cateto conhecido. Calcule o lado b, acompanhe a fórmula e confira exemplos resolvidos.",
+        "formulaSlug": "leg-from-hypotenuse-and-other-leg",
+        "toolPurpose": "Lembre-se: c é sempre a hipotenusa — o maior <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a>, oposto ao <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ângulo reto</a>. Não é um cateto. Se você conhece os dois catetos e precisa da hipotenusa, use a Calculadora do <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Teorema de Pitágoras</a>.",
+        "intro": "Esta <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculadora</a> encontra o cateto desconhecido b de um triângulo retângulo quando você conhece a hipotenusa c e o outro cateto a. Insira suas duas medidas e ela aplica a fórmula b = √(c² − a²) para calcular o lado desconhecido instantaneamente, com todos os passos da solução. A hipotenusa é o maior lado, oposto ao ângulo reto. Os dois catetos formam esse ângulo reto. Saber qual lado é qual garante que você obtenha a resposta correta todas as vezes.",
+        "quickSummary": {
+          "h2": "O que esta ferramenta resolve",
+          "intro": "Use esta página quando a hipotenusa e o cateto a forem conhecidos, mas o outro cateto estiver em falta. A <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculadora</a> reorganiza o <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">teorema de Pitágoras</a> para subtrair o cateto conhecido da hipotenusa antes de extrair a raiz quadrada.",
+          "cards": [
+            {
+              "label": "Valores conhecidos",
+              "value": "Hipotenusa c e cateto a"
+            },
+            {
+              "label": "Encontra",
+              "value": "Cateto desconhecido b"
+            },
+            {
+              "label": "Fórmula principal",
+              "value": "b = sqrt(c^2 - a^2)"
+            },
+            {
+              "label": "Verificação obrigatória",
+              "value": "c deve ser maior que a"
+            }
+          ]
         },
-        "notes": [
-          "c deve ser a hipotenusa, não uma das catetos.",
-          "Se c for menor ou igual a a, as entradas não formam um triângulo retângulo válido.",
-          "O resultado b usa a mesma unidade que c e a."
-        ]
-      },
-      "calculator": {
-        "outputLabel": "b = cateto desconhecido",
-        "fields": [
+        "diagram": {
+          "h2": "Identifique a Hipotenusa e o Cateto Desconhecido",
+          "intro": "O diagrama marca c e a como os valores que você já conhece. O cateto vertical b está destacado como o <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado desconhecido</a> que esta calculadora determina.",
+          "caption": "Diagrama de triângulo retângulo com hipotenusa c conhecida, cateto a conhecido e cateto b desconhecido.",
+          "sides": {
+            "a": {
+              "label": "a = conhecido",
+              "description": "O cateto a é o cateto conhecido ao longo da base do triângulo retângulo.",
+              "status": "known"
+            },
+            "b": {
+              "label": "b = a encontrar",
+              "description": "O cateto b é o cateto desconhecido, calculado subtraindo a^2 de c^2.",
+              "status": "unknown"
+            },
+            "c": {
+              "label": "c = conhecido",
+              "description": "A hipotenusa c é o maior <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> conhecido, oposto ao <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ângulo reto</a>.",
+              "status": "known"
+            }
+          },
+          "notes": [
+            "c deve ser a hipotenusa, não um dos catetos.",
+            "Se c for menor ou igual a a, as entradas não formam um triângulo retângulo válido.",
+            "O resultado b usa a mesma unidade de c e a."
+          ]
+        },
+        "calculator": {
+          "outputLabel": "Cateto desconhecido b",
+          "fields": [
+            {
+              "key": "c",
+              "label": "Hipotenusa c",
+              "min": 0
+            },
+            {
+              "key": "a",
+              "label": "Cateto a",
+              "min": 0
+            }
+          ]
+        },
+        "formulaSection": {
+          "h2": "Fórmula para Encontrar um Cateto Desconhecido",
+          "paragraphs": [
+            "O cálculo usa o <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">teorema de Pitágoras</a>, que relaciona os quadrados dos dois catetos ao quadrado da hipotenusa. Para isolar o cateto desconhecido, reorganize a equação passo a passo.",
+            "<strong>Passo 1: Comece com o teorema de Pitágoras.</strong> Os quadrados dos dois catetos somam o quadrado da hipotenusa.",
+            "<strong>Passo 2: Subtraia a² de ambos os lados.</strong> Isso isola o quadrado do cateto desconhecido.",
+            "<strong>Passo 3: Extraia a raiz quadrada positiva.</strong> Os comprimentos dos lados são positivos, então use a raiz principal. Toda a expressão c² − a² permanece dentro do radical.",
+            "Onde <strong>a</strong> é o cateto conhecido, <strong>b</strong> é o cateto desconhecido e <strong>c</strong> é a hipotenusa. A hipotenusa fica oposta ao ângulo reto e é sempre o maior lado.",
+            "<strong>Por que subtrair?</strong> A equação original soma os quadrados dos dois catetos para obter o quadrado da hipotenusa. Quando a hipotenusa e um cateto já são conhecidos, subtraia o quadrado do cateto conhecido do quadrado da hipotenusa para isolar o quadrado do cateto desconhecido. Em seguida, extraia a raiz quadrada. Nunca subtraia o cateto da hipotenusa diretamente — sempre subtraia os seus quadrados."
+          ],
+          "formulas": [
+            "a^2 + b^2 = c^2",
+            "b^2 = c^2 - a^2",
+            "b = \\sqrt{c^2 - a^2}"
+          ]
+        },
+        "howTo": {
+          "h2": "Como Encontrar o Cateto b a partir de c e a",
+          "steps": [
+            "Identifique a hipotenusa, que fica oposta ao ângulo de 90°. Ela é sempre o maior lado.",
+            "Insira a hipotenusa c no primeiro campo de entrada.",
+            "Insira o cateto conhecido a no segundo campo de entrada.",
+            "Verifique se ambas as medidas usam a mesma unidade.",
+            "Clique em Calcular para encontrar o cateto desconhecido b.",
+            "Revise o resultado e a solução passo a passo exibida abaixo da calculadora.",
+            "Verifique a resposta conferindo se a² + b² é igual a c²."
+          ]
+        },
+        "example": {
+          "h2": "Exemplos Resolvidos para Encontrar um Cateto Desconhecido",
+          "intro": "Cada exemplo mostra o cálculo completo, do enunciado à resposta verificada. Todos os cinco usam a fórmula b = √(c² − a²).",
+          "lines": [
+            "b = \\sqrt{13^2 - 5^2}",
+            "b = \\sqrt{169 - 25}",
+            "b = \\sqrt{144}",
+            "b = 12"
+          ]
+        },
+        "extraSections": [
           {
-            "key": "c",
-            "label": "c = hipotenusa",
-            "min": 0
+            "h2": "Exemplos Resolvidos Detalhados",
+            "paragraphs": [
+              "<h3>Exemplo 1: Triângulo Padrão 5–12–13</h3><p><strong>Problema:</strong> Encontre o cateto desconhecido de um triângulo retângulo com hipotenusa c = 13 cm e cateto conhecido a = 5 cm.</p><p><strong>Dados:</strong> c = 13 cm, a = 5 cm. <strong>Determinar:</strong> b.</p><p><strong>Fórmula:</strong> b = √(c² − a²)</p><p><strong>Substituição:</strong> b = √(13² − 5²) = √(169 − 25) = √144</p><p><strong>Resposta:</strong> <strong>b = 12 cm</strong></p><p><strong>Verificação:</strong> 5² + 12² = 25 + 144 = 169 = 13². O cateto conhecido, o cateto desconhecido e a hipotenusa formam um triângulo retângulo válido.</p>",
+              "<h3>Exemplo 2: Escada Encostada na Parede</h3><p><strong>Problema:</strong> Uma escada de 5 m está encostada em uma parede vertical. Sua base está a 3 m da parede. Encontre a altura alcançada pela escada.</p><p><strong>Dados:</strong> c = 5 m (escada), a = 3 m (distância do chão). <strong>Determinar:</strong> b (altura da parede).</p><p><strong>Cálculo:</strong> b = √(5² − 3²) = √(25 − 9) = √16 = 4 m</p><p><strong>Resposta:</strong> <strong>A escada alcança 4 m na parede.</strong></p><img src=\"/images/missing-leg/missing-leg-ladder.svg\" alt=\"Diagrama da escada: escada de 5 m como hipotenusa, distância do chão de 3 m como cateto a, altura da parede de 4 m como cateto desconhecido b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Figura: A parede vertical (b = 4 m), a distância horizontal do chão (a = 3 m) e a escada (c = 5 m). Este é um modelo geométrico que pressupõe uma parede vertical e um chão nivelado, não uma avaliação de segurança de escadas.</em></p>",
+              "<h3>Exemplo 3: Diagonal de um Cômodo Retangular</h3><p><strong>Problema:</strong> Um cômodo retangular tem uma diagonal de 17 ft e um lado medindo 8 ft. Encontre o outro lado.</p><p><strong>Dados:</strong> c = 17 ft (diagonal), a = 8 ft. <strong>Determinar:</strong> b.</p><p><strong>Cálculo:</strong> b = √(17² − 8²) = √(289 − 64) = √225 = 15 ft</p><p><strong>Resposta:</strong> <strong>O outro lado mede 15 ft.</strong></p><img src=\"/images/missing-leg/missing-leg-room.svg\" alt=\"Diagrama do cômodo: diagonal de 17 ft como hipotenusa, lado conhecido de 8 ft como cateto a, lado desconhecido de 15 ft como cateto b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Figura: Vista de cima. A diagonal (c = 17 ft) divide o retângulo em dois triângulos retângulos. O lado conhecido (a = 8 ft) e o lado desconhecido (b = 15 ft) formam o ângulo reto.</em></p>",
+              "<h3>Exemplo 4: Um Resultado que Exige Arredondamento</h3><p><strong>Problema:</strong> Dados c = 10 m e a = 7 m, encontre b.</p><p><strong>Cálculo:</strong> b = √(10² − 7²) = √(100 − 49) = √51 ≈ 7.141428 m</p><p><strong>Resposta:</strong> <strong>b ≈ 7,14 m</strong>, arredondado para duas casas decimais.</p><p><strong>Verificação:</strong> 7² + (√51)² = 49 + 51 = 100 = 10².</p><p>Mantenha o valor exato (√51) durante os cálculos intermediários e arredonde apenas no passo final. Arredondar cedo introduz erros que se acumulam em problemas com várias etapas.</p>",
+              "<h3>Exemplo 5: Geometria de uma Rampa</h3><p><strong>Problema:</strong> Uma rampa reta tem comprimento de 13 m e extensão horizontal de 12 m. Encontre sua elevação vertical.</p><p><strong>Dados:</strong> c = 13 m (rampa), a = 12 m (extensão). <strong>Determinar:</strong> b (elevação).</p><p><strong>Cálculo:</strong> b = √(13² − 12²) = √(169 − 144) = √25 = 5 m</p><p><strong>Resposta:</strong> <strong>A elevação vertical é de 5 m.</strong></p><img src=\"/images/missing-leg/missing-leg-ramp.svg\" alt=\"Diagrama da rampa: rampa de 13 m como hipotenusa, extensão horizontal de 12 m como cateto a, elevação vertical de 5 m como cateto desconhecido b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Figura: A rampa (c = 13 m) como hipotenusa, a extensão horizontal (a = 12 m) e a elevação vertical (b = 5 m). Este cálculo não estabelece conformidade com normas de acessibilidade ou regulamentos de construção.</em></p>"
+            ]
           },
           {
-            "key": "a",
-            "label": "a = cateto conhecido",
-            "min": 0
+            "h2": "Quando Você Pode Calcular um Cateto Desconhecido?",
+            "paragraphs": [
+              "Para um triângulo retângulo válido e não degenerado, as medidas devem satisfazer três condições: c > 0, a > 0 e c > a. O cateto desconhecido é então b = √(c² − a²).",
+              "<strong>Caso 1: Hipotenusa menor que o cateto conhecido.</strong> Se c = 4 e a = 5, então b = √(16 − 25) = √(−9). A expressão sob a raiz quadrada é negativa, então essas entradas não podem formar um triângulo retângulo real com c como hipotenusa.",
+              "<strong>Caso 2: Hipotenusa igual ao cateto conhecido.</strong> Se c = 5 e a = 5, então b = √(25 − 25) = 0. Este é um caso degenerado, não um triângulo válido.",
+              "<strong>Caso 3: Medidas nulas ou negativas.</strong> Os comprimentos dos lados devem ser positivos. A calculadora rejeita entradas nulas e negativas.",
+              "<strong>Caso 4: Unidades inconsistentes.</strong> Ambas as medidas devem usar a mesma unidade. Se c estiver em metros e a em centímetros, converta uma delas antes de calcular."
+            ],
+            "listTitle": "Use estas verificações primeiro:",
+            "listItems": [
+              "c está oposto ao <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ângulo</a> de 90°.",
+              "c é maior que a.",
+              "Ambos os valores são positivos.",
+              "c e a usam a mesma unidade."
+            ]
+          },
+          {
+            "h2": "Onde a Fórmula do Cateto Desconhecido É Usada?",
+            "paragraphs": [
+              "O padrão geral: quando uma diagonal em linha reta ou um comprimento inclinado e uma distância perpendicular são conhecidos, a outra distância perpendicular segue do teorema de Pitágoras. Isso funciona apenas quando a geometria forma um triângulo retângulo.",
+              "<strong>Construção e estrutura.</strong> Carpinteiros verificam cantos em esquadro medindo a diagonal de uma moldura retangular. Se a diagonal (c) e um lado (a) forem conhecidos, o lado desconhecido (b) confirma o traçado antes de cortar a madeira.",
+              "<strong>Medidas de cômodos e plantas baixas.</strong> Ao planejar móveis ou pisos, a diagonal de um cômodo e o comprimento de uma parede fornecem o comprimento da outra parede sem mover obstáculos.",
+              "<strong>Geometria de escadas e paredes.</strong> Dado o comprimento de uma escada e sua distância da parede, a altura que ela alcança segue diretamente. Este é um modelo geométrico, não uma avaliação de segurança.",
+              "<strong>Cálculos de rampas e declives.</strong> A partir do comprimento da inclinação e da extensão horizontal, a elevação vertical é determinada. Isso não estabelece conformidade com normas."
+            ]
+          },
+          {
+            "h2": "Como Verificar seu Cálculo do Cateto Desconhecido",
+            "paragraphs": [
+              "Verifique cada resultado antes de usá-lo. Para o exemplo 5–12–13: 5² + 12² = 25 + 144 = 169 = 13².",
+              "A saída rotulada Cateto desconhecido b é o comprimento do outro cateto que forma o ângulo reto com a. Não é a hipotenusa e deve ser menor que c."
+            ],
+            "listTitle": "Um resultado válido deve satisfazer:",
+            "listItems": [
+              "b é maior que zero.",
+              "b é menor que c.",
+              "a² + b² é igual a c², permitindo o arredondamento no valor exibido.",
+              "O resultado usa a unidade correta."
+            ]
+          },
+          {
+            "h2": "Erros Comuns ao Encontrar um Cateto Desconhecido",
+            "paragraphs": [
+              "O erro mais comum é tratar c como um cateto. Aqui c deve ser a hipotenusa: o maior lado, oposto ao ângulo reto.",
+              "Outro erro frequente é somar os quadrados em vez de subtrair. A soma (a² + b²) encontra uma hipotenusa; a subtração (c² − a²) encontra um cateto desconhecido a partir da hipotenusa."
+            ],
+            "listTitle": "Evite estes erros:",
+            "listItems": [
+              "<strong>Confundir a hipotenusa com um cateto.</strong> Se você colocar o valor do cateto no campo c, a fórmula resolve o problema errado. Correto: c é sempre o maior lado.",
+              "<strong>Somar os quadrados em vez de subtrair.</strong> Errado: b = √(c² + a²). Correto: b = √(c² − a²).",
+              "<strong>Esquecer a raiz quadrada.</strong> Errado: b = c² − a². Correto: extraia a raiz quadrada da diferença.",
+              "<strong>Agrupamento errado da raiz quadrada.</strong> Errado: √c² − a² (que equivale a c − a). Correto: √(c² − a²), com toda a diferença dentro do radical.",
+              "<strong>Inserir a ≥ c.</strong> O cateto conhecido não pode ser igual ou maior que a hipotenusa. Correto: verifique se c > a antes de calcular.",
+              "<strong>Misturar unidades.</strong> Errado: c = 5 m, a = 30 cm. Correto: converta para a mesma unidade primeiro (c = 500 cm, a = 30 cm).",
+              "<strong>Arredondar cedo demais.</strong> Errado: arredondar √51 para 7,14 no meio do cálculo. Correto: mantenha a precisão total até a resposta final."
+            ]
           }
-        ]
-      },
-      "formulaSection": {
-        "h2": "Fórmula b da cateto faltante",
-        "paragraphs": [
-          "A fórmula para encontrar a cateto b é derivada do teorema de Pitágoras (a² + b² = c²). A reorganização para b fornece a fórmula abaixo.",
-          "Onde c é a hipotenusa (lado mais longo do triângulo retângulo), a é o cateto conhecido e b é o cateto faltante que você está resolvendo. Observe a subtração: você subtrai o quadrado do cateto conhecido do quadrado da hipotenusa e depois extrai a raiz quadrada."
         ],
-        "formulas": [
-          "b = \\sqrt{c^2 - a^2}"
+        "relatedLinks": [
+          {
+            "href": "/right-triangle-side-calculator/",
+            "label": "Calculadora de Lados de Triângulos Retângulos"
+          },
+          {
+            "href": "/pythagorean-theorem-calculator/",
+            "label": "Calculadora do Teorema de Pitágoras"
+          },
+          {
+            "href": "/missing-leg-from-c-and-b-calculator/",
+            "label": "Calculadora de Cateto Desconhecido a partir de c e b"
+          },
+          {
+            "href": "/right-triangle-angle-calculator/",
+            "label": "Calculadora de Ângulos de Triângulos Retângulos"
+          },
+          {
+            "href": "/right-triangle-measurements-calculator/",
+            "label": "Calculadora de Medidas de Triângulos Retângulos"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Como encontro o cateto desconhecido a partir da hipotenusa e de um cateto?",
+            "answer": "Eleve a hipotenusa ao quadrado (c²), eleve o cateto conhecido ao quadrado (a²), subtraia e extraia a raiz quadrada: b = √(c² − a²). Insira ambos os valores na calculadora acima para obter um resultado instantâneo com os passos."
+          },
+          {
+            "question": "Por que subtraio em vez de somar?",
+            "answer": "O teorema de Pitágoras soma os quadrados dos catetos para obter o quadrado da hipotenusa (a² + b² = c²). Quando você já conhece a hipotenusa, reorganize: subtraia o quadrado do cateto conhecido do quadrado da hipotenusa para isolar o quadrado do cateto desconhecido e, em seguida, extraia a raiz."
+          },
+          {
+            "question": "Como sei qual lado é a hipotenusa?",
+            "answer": "A hipotenusa é sempre o maior lado e fica oposta ao ângulo de 90°. Se suas três medidas são 5, 12 e 13, a hipotenusa é 13."
+          },
+          {
+            "question": "O que acontece se o cateto conhecido for igual ou maior que a hipotenusa?",
+            "answer": "Se a = c, o resultado é b = 0 (degenerado, não é um triângulo). Se a > c, a raiz quadrada de um número negativo não tem solução real. Ambos os casos são rejeitados como inválidos."
+          },
+          {
+            "question": "O cateto desconhecido pode ser um decimal?",
+            "answer": "Sim. Por exemplo, c = 10 e a = 7 resultam em b = √51 ≈ 7,14. Mantenha a precisão total durante os cálculos e arredonde apenas a resposta final."
+          },
+          {
+            "question": "Como posso verificar se a resposta está correta?",
+            "answer": "Verifique se a² + b² = c². Para o exemplo 5–12–13: 25 + 144 = 169. Confirme também que b > 0, b < c e que a unidade corresponde às suas entradas."
+          },
+          {
+            "question": "Posso usar unidades de medida diferentes?",
+            "answer": "Ambas as entradas devem usar a mesma unidade. Se c estiver em metros e a em centímetros, converta uma delas primeiro. O resultado usa a unidade de entrada."
+          },
+          {
+            "question": "Esta calculadora também pode encontrar um ângulo desconhecido?",
+            "answer": "Não, este modo encontra apenas o cateto desconhecido b. Para encontrar ângulos, use a <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Calculadora de Ângulos de Triângulos Retângulos</a>."
+          }
         ]
-      },
-      "howTo": {
-        "h2": "Como encontrar a cateto b de c e a",
-        "steps": [
-          "Confirme que c é a hipotenusa e a é uma cateto. A hipotenusa é sempre o lado mais longo.",
-          "Insira a hipotenusa c no primeiro campo de entrada.",
-          "Insira o trecho conhecido a no segundo campo de entrada.",
-          "Clique em Calcular para encontrar a cateto que falta.",
-          "Leia o resultado do b, junto com a solução passo a passo completa."
-        ]
-      },
-      "example": {
-        "h2": "Exemplo: Encontre a cateto b",
-        "intro": "Dado: c = 13, a = 5. O cateto que falta de um triângulo retângulo com hipotenusa 13 e cateto 5 é 12.",
-        "lines": [
-          "b = \\sqrt{13^2 - 5^2}",
-          "b = \\sqrt{169 - 25}",
-          "b = \\sqrt{144}",
-          "b = 12"
-        ]
-      },
-      "extraSections": [
-        {
-          "h2": "Verificação importante antes de calcular",
-          "paragraphs": [
-            "Antes de usar esta fórmula, certifique-se de que c seja maior que a. A hipotenusa é sempre o lado mais longo de um triângulo retângulo. Se c for igual a a, você obterá b = 0, o que significa que não existe triângulo.",
-            "Se c for menor que a, a expressão sob a raiz quadrada torna-se negativa. Isso significa que os dois valores de entrada não podem descrever um triângulo retângulo real com c como hipotenusa."
-          ],
-          "listTitle": "Use estas verificações primeiro:",
-          "listItems": [
-            "c é oposto ao ângulo 90°.",
-            "c é maior que a.",
-            "Ambos os valores são positivos.",
-            "c e a usam a mesma unidade."
-          ]
-        },
-        {
-          "h2": "Onde esta calculadora é útil",
-          "paragraphs": [
-            "Esta calculadora é útil quando uma medida diagonal ou inclinada é conhecida, um lado perpendicular é conhecido e o outro lado perpendicular está faltando. É a ferramenta focada para o caso c-e-a, portanto, todas as explicações na página apontam para encontrar b.",
-            "Também pode ajudar a verificar as medições. Se um valor medido para b não corresponder ao resultado da calculadora, o triângulo pode não estar correto, a hipotenusa pode estar rotulada incorretamente ou uma medição pode usar uma unidade diferente."
-          ],
-          "listTitle": "Exemplos comuns incluem:",
-          "listItems": [
-            "Determinar a altura da parede quando o comprimento da escada c e a distância ao solo a são conhecidos.",
-            "Encontrar a elevação vertical de uma encosta quando o comprimento da encosta e o percurso horizontal são conhecidos.",
-            "Verificando um problema de dever de casa de triângulo retângulo que fornece c e a.",
-            "Confirmação de medidas de layout para estrutura, paisagismo, rampas ou plantas baixas."
-          ]
-        },
-        {
-          "h2": "Como ler a resposta",
-          "paragraphs": [
-            "A saída rotulada cateto ausente b é o comprimento da outra cateto que forma o ângulo reto com a. Não é a hipotenusa e deve ser menor que c.",
-            "Se o b calculado for extremamente pequeno, sua cateto conhecida a está muito próxima da hipotenusa c. Isso pode ser válido, mas vale a pena conferir o diagrama e as unidades antes de utilizar o valor."
-          ],
-          "listTitle": "Um resultado válido deve satisfazer:",
-          "listItems": [
-            "b é maior que zero.",
-            "b é menor que c.",
-            "a² + b² é aproximadamente igual a c².",
-            "A unidade de saída corresponde à unidade de entrada."
-          ]
-        },
-        {
-          "h2": "Erros Comuns",
-          "paragraphs": [
-            "O erro mais comum é tratar o c como uma cateto. Nesta calculadora, c deve ser a hipotenusa, que é o lado mais longo e o lado oposto ao ângulo reto.",
-            "Outro erro frequente é somar os quadrados em vez de subtrair. A adição encontra uma hipotenusa; a subtração encontra uma cateto faltando na hipotenusa."
-          ],
-          "listTitle": "Evite estes erros:",
-          "listItems": [
-            "Colocando a cateto conhecida no campo da hipotenusa.",
-            "Usando c² + a² em vez de c² - a².",
-            "Inserindo um valor maior ou igual a c.",
-            "Parando em b² em vez de extrair a raiz quadrada.",
-            "Unidades de mistura como metros e centímetros."
-          ]
-        }
-      ],
-      "relatedLinks": [
-        {
-          "href": "/right-triangle-side-calculator/",
-          "label": "Calculadora do lado do triângulo retângulo"
-        },
-        {
-          "href": "/pythagorean-theorem-calculator/",
-          "label": "Calculadora: Teorema de Pitágoras"
-        },
-        {
-          "href": "/missing-leg-from-c-and-b-calculator/",
-          "label": "Calculadora: Cateto ausente por c e b"
-        }
-      ],
-      "faqs": [
-        {
-          "question": "O que c significa nesta calculadora?",
-          "answer": "c é a hipotenusa do triângulo retângulo - o lado mais longo, localizado oposto ao ângulo 90°. Não é uma cateto. Você insere c como um dos dois valores conhecidos nesta calculadora."
-        },
-        {
-          "question": "O que significa nesta calculadora?",
-          "answer": "a é um dos dois catetos do triângulo retângulo. É um dos lados que forma o ângulo reto. Nesta calculadora, a é a cateto que você já conhece."
-        },
-        {
-          "question": "O que esta calculadora encontra?",
-          "answer": "Esta calculadora encontra a cateto faltante b. Dada a hipotenusa c e a cateto a, ele calcula b = √(c² − a²) e mostra a solução passo a passo."
-        },
-        {
-          "question": "c pode ser menor que a?",
-          "answer": "Não. Num triângulo retângulo, a hipotenusa é sempre o lado mais longo. Se c for menor que a, os valores não formam um triângulo retângulo válido. Verifique qual medida é a hipotenusa antes de calcular."
-        },
-        {
-          "question": "Como encontro b de c e a?",
-          "answer": "Eleve ao quadrado a hipotenusa (c²), eleve ao quadrado a cateto conhecida (a²), subtraia a² de c² e calcule a raiz quadrada. A fórmula é b = √(c² − a²). Ou insira seus valores nesta calculadora para obter uma resposta instantânea."
-        }
-      ]
     },
     "missing-leg-from-c-and-b-calculator": {
       "slug": "missing-leg-from-c-and-b-calculator",
@@ -4395,204 +4668,243 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         }
       ]
     },
-    "missing-leg-from-c-and-a-calculator": {
-      "slug": "missing-leg-from-c-and-a-calculator",
-      "url": "/missing-leg-from-c-and-a-calculator/",
-      "h1": "ক্যালকুলেটর: c এবং a থেকে অন্য বাহু নির্ণয়",
-      "metaTitle": "ক্যালকুলেটর: c এবং a থেকে অন্য বাহু নির্ণয় | Right Triangle Solver",
-      "metaDescription": "অতিভুজ c এবং অন্য একটি বাহু a জানা থাকলে বাহু b নির্ণয় করুন।",
-      "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "মনে রাখবেন: c সর্বদা কর্ণ হয় - দীর্ঘতম দিক, সমকোণের বিপরীত। এটি একটি পা নয়। আপনার যদি দুটি পা থাকে এবং এর পরিবর্তে কর্ণের প্রয়োজন হয়, তাহলে পিথাগোরিয়ান থিওরেম ক্যালকুলেটর ব্যবহার করুন।",
-      "intro": "অতিভুজ c এবং অন্য একটি বাহু a জানা থাকলে বাহু b নির্ণয় করুন।",
-      "quickSummary": {
-        "h2": "এই অনুপস্থিত লেগ ক্যালকুলেটর কি সমাধান করে",
-        "intro": "এই পৃষ্ঠাটি ব্যবহার করুন যখন কর্ণ এবং লেগ a পরিচিত, কিন্তু অন্য পা অনুপস্থিত। ক্যালকুলেটর বর্গমূল নেওয়ার আগে কর্ণ থেকে পরিচিত পা বিয়োগ করার জন্য পিথাগোরিয়ান উপপাদ্যটিকে পুনর্বিন্যাস করে।",
-        "cards": [
-          {
-            "label": "পরিচিত মান",
-            "value": "c = অতিভুজ; a = পরিচিত বাহু"
-          },
-          {
-            "label": "খুঁজে পায়",
-            "value": "b = অপরিচিত বাহু"
-          },
-          {
-            "label": "প্রধান সূত্র",
-            "value": "b = sqrt(c^2 - a^2)"
-          },
-          {
-            "label": "প্রয়োজনীয় চেক",
-            "value": "c > a হওয়া প্রয়োজন।"
-          }
-        ]
-      },
-      "diagram": {
-        "h2": "সমকোণী ত্রিভুজ চিত্র: লেগ b খোঁজা",
-        "intro": "ডায়াগ্রামটি c এবং a কে আপনি ইতিমধ্যেই জানেন এমন মান হিসাবে চিহ্নিত করে৷ উল্লম্ব লেগ b অনুপস্থিত দিক হিসাবে হাইলাইট করা হয়েছে যা এই ক্যালকুলেটর সমাধান করে।",
-        "caption": "পরিচিত কর্ণ c, পরিচিত লেগ a, এবং অজানা লেগ b সহ সমকোণী ত্রিভুজ চিত্র।",
-        "sides": {
-          "a": {
-            "label": "a = পরিচিত",
-            "description": "লেগ a সমকোণী ত্রিভুজের ভিত্তি বরাবর পরিচিত পা।",
-            "status": "known"
-          },
-          "b": {
-            "label": "b = খুঁজুন",
-            "description": "লেগ b হল c^2 থেকে a^2 বিয়োগ করে সমাধান করা অজানা লেগ।",
-            "status": "unknown"
-          },
-          "c": {
-            "label": "c = পরিচিত",
-            "description": "হাইপোটেনাস c সমকোণের বিপরীতে পরিচিত দীর্ঘতম বাহু।",
-            "status": "known"
+        "missing-leg-from-c-and-a-calculator": {
+        "calculator": {
+          "fields": [
+            {
+              "key": "c",
+              "label": "অতিভুজ c",
+              "min": 0
+            },
+            {
+              "key": "a",
+              "label": "বাহু a",
+              "min": 0
+            }
+          ],
+          "outputLabel": "হারানো বাহু b"
+        },
+        "diagram": {
+          "caption": "জ্ঞাত অতিভুজ c, জ্ঞাত বাহু a এবং অজানা বাহু b সহ সমকোণী ত্রিভুজের চিত্র।",
+          "h2": "অতিভুজ ও হারানো বাহু চিহ্নিত করুন",
+          "intro": "চিত্রটিতে c ও a কে আপনার জানা মান হিসেবে চিহ্নিত করা হয়েছে। উল্লম্ব বাহু b কে <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">হারানো বাহু</a> হিসেবে হাইলাইট করা হয়েছে, যা এই ক্যালকুলেটর সমাধান করে।",
+          "notes": [
+            "c অবশ্যই অতিভুজ হতে হবে, বাহুগুলোর একটি নয়।",
+            "c যদি a এর সমান বা ছোট হয়, তবে ইনপুটগুলো একটি বৈধ সমকোণী ত্রিভুজ গঠন করে না।",
+            "ফলাফল b, c ও a এর একই একক ব্যবহার করে।"
+          ],
+          "sides": {
+            "a": {
+              "description": "বাহু a হলো সমকোণী ত্রিভুজের ভূমি বরাবর জ্ঞাত বাহু।",
+              "label": "a = জ্ঞাত",
+              "status": "known"
+            },
+            "b": {
+              "description": "বাহু b হলো অজানা বাহু, যা c^2 থেকে a^2 বিয়োগ করে নির্ণয় করা হয়।",
+              "label": "b = নির্ণেয়",
+              "status": "unknown"
+            },
+            "c": {
+              "description": "অতিভুজ c হলো জ্ঞাত দীর্ঘতম <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">বাহু</a>, <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">সমকোণ</a>ের বিপরীতে।",
+              "label": "c = জ্ঞাত",
+              "status": "known"
+            }
           }
         },
-        "notes": [
-          "c অবশ্যই কর্ণ হতে হবে, একটি পা নয়।",
-          "যদি c a এর থেকে কম বা সমান হয়, তাহলে ইনপুটগুলি একটি বৈধ সমকোণী ত্রিভুজ গঠন করে না।",
-          "ফলাফল b c এবং a হিসাবে একই ইউনিট ব্যবহার করে।"
-        ]
-      },
-      "calculator": {
-        "outputLabel": "b = অপরিচিত বাহু",
-        "fields": [
+        "example": {
+          "h2": "হারানো বাহু নির্ণয়ের সমাধানকৃত উদাহরণ",
+          "intro": "প্রতিটি উদাহরণে সমস্যার বিবরণ থেকে যাচাইকৃত উত্তর পর্যন্ত সম্পূর্ণ গণনা দেখানো হয়েছে। পাঁচটিতেই b = √(c² − a²) সূত্র ব্যবহৃত হয়েছে।",
+          "lines": [
+            "b = \\sqrt{13^2 - 5^2}",
+            "b = \\sqrt{169 - 25}",
+            "b = \\sqrt{144}",
+            "b = 12"
+          ]
+        },
+        "extraSections": [
           {
-            "key": "c",
-            "label": "c = অতিভুজ",
-            "min": 0
+            "h2": "বিস্তারিত সমাধানকৃত উদাহরণ",
+            "paragraphs": [
+              "<h3>উদাহরণ ১: আদর্শ 5–12–13 ত্রিভুজ</h3><p><strong>সমস্যা:</strong> অতিভুজ c = 13 cm এবং জ্ঞাত বাহু a = 5 cm বিশিষ্ট সমকোণী ত্রিভুজের হারানো বাহু নির্ণয় করুন।</p><p><strong>প্রদত্ত:</strong> c = 13 cm, a = 5 cm। <strong>নির্ণেয়:</strong> b।</p><p><strong>সূত্র:</strong> b = √(c² − a²)</p><p><strong>প্রতিস্থাপন:</strong> b = √(13² − 5²) = √(169 − 25) = √144</p><p><strong>উত্তর:</strong> <strong>b = 12 cm</strong></p><p><strong>যাচাই:</strong> 5² + 12² = 25 + 144 = 169 = 13²। জ্ঞাত বাহু, হারানো বাহু ও অতিভুজ একটি বৈধ সমকোণী ত্রিভুজ গঠন করে।</p>",
+              "<h3>উদাহরণ ২: দেয়ালের সাথে মই</h3><p><strong>সমস্যা:</strong> একটি 5 m মই উল্লম্ব দেয়ালের সাথে হেলান দিয়ে আছে। এর গোড়া দেয়াল থেকে 3 m দূরে। মইটি দেয়ালের কত উচ্চতায় পৌঁছেছে তা নির্ণয় করুন।</p><p><strong>প্রদত্ত:</strong> c = 5 m (মই), a = 3 m (ভূমির দূরত্ব)। <strong>নির্ণেয়:</strong> b (দেয়ালের উচ্চতা)।</p><p><strong>গণনা:</strong> b = √(5² − 3²) = √(25 − 9) = √16 = 4 m</p><p><strong>উত্তর:</strong> <strong>মইটি দেয়াল বেয়ে 4 m উচ্চতায় পৌঁছেছে।</strong></p><img src=\"/images/missing-leg/missing-leg-ladder.svg\" alt=\"মইয়ের চিত্র: অতিভুজ হিসেবে 5 m মই, বাহু a হিসেবে 3 m ভূমির দূরত্ব, হারানো বাহু b হিসেবে 4 m দেয়ালের উচ্চতা\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>চিত্র: উল্লম্ব দেয়াল (b = 4 m), অনুভূমিক ভূমির দূরত্ব (a = 3 m) এবং মই (c = 5 m)। এটি উল্লম্ব দেয়াল ও সমতল ভূমি ধরে নেওয়া একটি জ্যামিতিক মডেল, মইয়ের নিরাপত্তা মূল্যায়ন নয়।</em></p>",
+              "<h3>উদাহরণ ৩: আয়তাকার ঘরের কর্ণ</h3><p><strong>সমস্যা:</strong> একটি আয়তাকার ঘরের কর্ণ 17 ft এবং এক বাহুর দৈর্ঘ্য 8 ft। অন্য বাহুটি নির্ণয় করুন।</p><p><strong>প্রদত্ত:</strong> c = 17 ft (কর্ণ), a = 8 ft। <strong>নির্ণেয়:</strong> b।</p><p><strong>গণনা:</strong> b = √(17² − 8²) = √(289 − 64) = √225 = 15 ft</p><p><strong>উত্তর:</strong> <strong>অন্য বাহুটি 15 ft।</strong></p><img src=\"/images/missing-leg/missing-leg-room.svg\" alt=\"ঘরের চিত্র: অতিভুজ হিসেবে 17 ft কর্ণ, বাহু a হিসেবে 8 ft জ্ঞাত বাহু, হারানো বাহু b হিসেবে 15 ft\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>চিত্র: উপর থেকে দেখা দৃশ্য। কর্ণটি (c = 17 ft) আয়তক্ষেত্রকে দুটি সমকোণী ত্রিভুজে ভাগ করে। জ্ঞাত বাহু (a = 8 ft) ও হারানো বাহু (b = 15 ft) সমকোণ তৈরি করে।</em></p>",
+              "<h3>উদাহরণ ৪: আসন্নায়ন প্রয়োজন এমন ফলাফল</h3><p><strong>সমস্যা:</strong> c = 10 m ও a = 7 m প্রদত্ত, b নির্ণয় করুন।</p><p><strong>গণনা:</strong> b = √(10² − 7²) = √(100 − 49) = √51 ≈ 7.141428 m</p><p><strong>উত্তর:</strong> <strong>b ≈ 7.14 m</strong>, দুই দশমিক স্থান পর্যন্ত আসন্নায়িত।</p><p><strong>যাচাই:</strong> 7² + (√51)² = 49 + 51 = 100 = 10²।</p><p>মধ্যবর্তী গণনার সময় সঠিক মান (√51) ধরে রাখুন এবং শুধু চূড়ান্ত ধাপে আসন্নায়ন করুন। আগেভাগে আসন্নায়ন করলে এমন ত্রুটি আসে যা বহু-ধাপের সমস্যায় বেড়ে যায়।</p>",
+              "<h3>উদাহরণ ৫: ঢালের জ্যামিতি</h3><p><strong>সমস্যা:</strong> একটি সোজা ঢালের দৈর্ঘ্য 13 m এবং অনুভূমিক দূরত্ব 12 m। এর উল্লম্ব উচ্চতা নির্ণয় করুন।</p><p><strong>প্রদত্ত:</strong> c = 13 m (ঢাল), a = 12 m (অনুভূমিক দূরত্ব)। <strong>নির্ণেয়:</strong> b (উল্লম্ব উচ্চতা)।</p><p><strong>গণনা:</strong> b = √(13² − 12²) = √(169 − 144) = √25 = 5 m</p><p><strong>উত্তর:</strong> <strong>উল্লম্ব উচ্চতা 5 m।</strong></p><img src=\"/images/missing-leg/missing-leg-ramp.svg\" alt=\"ঢালের চিত্র: অতিভুজ হিসেবে 13 m ঢাল, বাহু a হিসেবে 12 m অনুভূমিক দূরত্ব, হারানো বাহু b হিসেবে 5 m উল্লম্ব উচ্চতা\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>চিত্র: অতিভুজ হিসেবে ঢাল (c = 13 m), অনুভূমিক দূরত্ব (a = 12 m) ও উল্লম্ব উচ্চতা (b = 5 m)। এই গণনা প্রবেশযোগ্যতা বা ভবন বিধিমালার সাথে সামঞ্জস্য প্রতিষ্ঠা করে না।</em></p>"
+            ]
           },
           {
-            "key": "a",
-            "label": "a = পরিচিত বাহু",
-            "min": 0
+            "h2": "কখন হারানো বাহু গণনা করা যায়?",
+            "listItems": [
+              "c, 90° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">কোণ</a>ের বিপরীতে।",
+              "c, a এর চেয়ে বড়।",
+              "উভয় মান ধনাত্মক।",
+              "c ও a একই একক ব্যবহার করে।"
+            ],
+            "listTitle": "আগে এই যাচাইগুলো করুন:",
+            "paragraphs": [
+              "একটি বৈধ, অবিকৃত সমকোণী ত্রিভুজের জন্য পরিমাপগুলোকে তিনটি শর্ত পূরণ করতে হবে: c > 0, a > 0 এবং c > a। তখন হারানো বাহু b = √(c² − a²)।",
+              "<strong>কেস ১: জ্ঞাত বাহুর চেয়ে অতিভুজ ছোট।</strong> c = 4 ও a = 5 হলে, b = √(16 − 25) = √(−9)। বর্গমূলের নিচের রাশিমালাটি ঋণাত্মক, তাই এই ইনপুটগুলো c কে অতিভুজ ধরে বাস্তব সমকোণী ত্রিভুজ গঠন করতে পারে না।",
+              "<strong>কেস ২: জ্ঞাত বাহুর সমান অতিভুজ।</strong> c = 5 ও a = 5 হলে, b = √(25 − 25) = 0। এটি একটি বিকৃত কেস, বৈধ ত্রিভুজ নয়।",
+              "<strong>কেস ৩: শূন্য বা ঋণাত্মক পরিমাপ।</strong> বাহুর দৈর্ঘ্য ধনাত্মক হতে হবে। ক্যালকুলেটর শূন্য ও ঋণাত্মক ইনপুট প্রত্যাখ্যান করে।",
+              "<strong>কেস ৪: অসামঞ্জস্যপূর্ণ একক।</strong> উভয় পরিমাপ একই একক ব্যবহার করতে হবে। c মিটারে ও a সেন্টিমিটারে থাকলে, গণনার আগে একটিকে রূপান্তর করুন।"
+            ]
+          },
+          {
+            "h2": "হারানো বাহুর সূত্র কোথায় ব্যবহৃত হয়?",
+            "paragraphs": [
+              "সাধারণ ধরণ: সরলরেখার কর্ণ বা ঢালু দৈর্ঘ্য এবং একটি লম্ব দূরত্ব জানা থাকলে, অন্য লম্ব দূরত্ব পিথাগোরাসের উপপাদ্য থেকে পাওয়া যায়। জ্যামিতি সমকোণী ত্রিভুজ গঠন করলেই এটি কাজ করে।",
+              "<strong>নির্মাণ ও কাঠামো তৈরি।</strong> কাঠমিস্ত্রিরা আয়তাকার ফ্রেমের কর্ণ মেপে সমকোণ যাচাই করেন। কর্ণ (c) ও এক বাহু (a) জানা থাকলে, কাঠ কাটার আগে হারানো বাহু (b) বিন্যাস নিশ্চিত করে।",
+              "<strong>ঘর ও ফ্লোর প্ল্যানের পরিমাপ।</strong> আসবাব বা মেঝে পরিকল্পনার সময় ঘরের কর্ণ ও এক দেয়ালের দৈর্ঘ্য থেকে বাধা না সরিয়েই অন্য দেয়ালের দৈর্ঘ্য পাওয়া যায়।",
+              "<strong>মই ও দেয়ালের জ্যামিতি।</strong> মইয়ের দৈর্ঘ্য ও দেয়াল থেকে এর দূরত্ব জানা থাকলে এটি কত উচ্চতায় পৌঁছাবে তা সরাসরি পাওয়া যায়। এটি একটি জ্যামিতিক মডেল, নিরাপত্তা মূল্যায়ন নয়।",
+              "<strong>ঢাল ও ঢালু পথের গণনা।</strong> ঢালের দৈর্ঘ্য ও অনুভূমিক দূরত্ব থেকে উল্লম্ব উচ্চতা নির্ণয় করা হয়। এটি কোড মেনে চলা প্রতিষ্ঠা করে না।"
+            ]
+          },
+          {
+            "h2": "আপনার হারানো বাহুর গণনা কীভাবে যাচাই করবেন",
+            "listItems": [
+              "b শূন্যের চেয়ে বড়।",
+              "b, c এর চেয়ে ছোট।",
+              "প্রদর্শিত মানের আসন্নায়ন বিবেচনায় a² + b², c² এর সমান।",
+              "ফলাফল সঠিক একক ব্যবহার করে।"
+            ],
+            "listTitle": "বৈধ ফলাফলকে অবশ্যই পূরণ করতে হবে:",
+            "paragraphs": [
+              "ব্যবহারের আগে প্রতিটি ফলাফল যাচাই করুন। 5–12–13 উদাহরণের জন্য: 5² + 12² = 25 + 144 = 169 = 13²।",
+              "‘হারানো বাহু b’ লেবেলযুক্ত আউটপুট হলো অন্য বাহুর দৈর্ঘ্য, যা a এর সাথে সমকোণ তৈরি করে। এটি অতিভুজ নয় এবং c এর চেয়ে ছোট হওয়া উচিত।"
+            ]
+          },
+          {
+            "h2": "হারানো বাহু নির্ণয়ে সাধারণ ভুল",
+            "listItems": [
+              "<strong>অতিভুজকে বাহুর সাথে গুলিয়ে ফেলা।</strong> c ফিল্ডে বাহুর মান বসালে সূত্রটি ভুল সমস্যা সমাধান করে। সঠিক: c সর্বদা দীর্ঘতম বাহু।",
+              "<strong>বিয়োগের বদলে বর্গ যোগ করা।</strong> ভুল: b = √(c² + a²)। সঠিক: b = √(c² − a²)।",
+              "<strong>বর্গমূল নিতে ভুলে যাওয়া।</strong> ভুল: b = c² − a²। সঠিক: পার্থক্যের বর্গমূল নিন।",
+              "<strong>ভুল বর্গমূল বন্ধনী।</strong> ভুল: √c² − a² (যা c − a এর সমান)। সঠিক: √(c² − a²), যেখানে সম্পূর্ণ পার্থক্য মূলচিহ্নের ভিতরে।",
+              "<strong>a ≥ c লেখা।</strong> জ্ঞাত বাহু অতিভুজের সমান বা বড় হতে পারে না। সঠিক: গণনার আগে c > a যাচাই করুন।",
+              "<strong>একক মেশানো।</strong> ভুল: c = 5 m, a = 30 cm। সঠিক: আগে একই এককে রূপান্তর করুন (c = 500 cm, a = 30 cm)।",
+              "<strong>আগেভাগে আসন্নায়ন।</strong> ভুল: গণনার মাঝে √51 কে 7.14 এ আসন্নায়ন। সঠিক: চূড়ান্ত উত্তর পর্যন্ত সম্পূর্ণ সূক্ষ্মতা ধরে রাখুন।"
+            ],
+            "listTitle": "এই ভুলগুলো এড়িয়ে চলুন:",
+            "paragraphs": [
+              "সবচেয়ে সাধারণ ভুল হলো c কে বাহু হিসেবে ধরা। এখানে c অবশ্যই অতিভুজ হতে হবে: দীর্ঘতম বাহু, সমকোণের বিপরীতে।",
+              "আরেকটি ঘনঘন ভুল হলো বিয়োগের বদলে বর্গ যোগ করা। যোগ (a² + b²) অতিভুজ নির্ণয় করে; বিয়োগ (c² − a²) অতিভুজ থেকে হারানো বাহু নির্ণয় করে।"
+            ]
           }
-        ]
-      },
-      "formulaSection": {
-        "h2": "অনুপস্থিত লেগ b সূত্র",
-        "paragraphs": [
-          "লেগ b খুঁজে বের করার সূত্রটি পাইথাগোরিয়ান উপপাদ্য (a² + b² = c²) থেকে নেওয়া হয়েছে। b এর জন্য পুনর্বিন্যাস নীচের সূত্র দেয়।",
-          "যেখানে c হল কর্ণ (সমস্যা ত্রিভুজের দীর্ঘতম দিক), a হল পরিচিত পা, এবং b হল অনুপস্থিত পা যার জন্য আপনি সমাধান করছেন৷ বিয়োগ লক্ষ্য করুন: আপনি কর্ণের বর্গ থেকে পরিচিত পায়ের বর্গ বিয়োগ করুন, তারপর বর্গমূল নিন।"
         ],
-        "formulas": [
-          "b = \\sqrt{c^2 - a^2}"
-        ]
-      },
-      "howTo": {
-        "h2": "c এবং a থেকে লেগ b কীভাবে খুঁজে পাবেন",
-        "steps": [
-          "নিশ্চিত করুন যে c হল কর্ণ এবং a হল একটি পা। কর্ণ সর্বদা দীর্ঘতম দিক।",
-          "প্রথম ইনপুট ক্ষেত্রে c কর্ণ লিখুন।",
-          "দ্বিতীয় ইনপুট ক্ষেত্রে পরিচিত লেগ a লিখুন।",
-          "অনুপস্থিত পা খুঁজে পেতে গণনা ক্লিক করুন.",
-          "সম্পূর্ণ ধাপে ধাপে সমাধান সহ b-এর ফলাফল পড়ুন।"
-        ]
-      },
-      "example": {
-        "h2": "উদাহরণ: লেগ b খুঁজুন",
-        "intro": "দেওয়া হয়েছে: c = 13, a = 5। কর্ণ 13 এবং লেগ 5 সহ একটি সমকোণী ত্রিভুজের অনুপস্থিত পা হল 12।",
-        "lines": [
-          "b = \\sqrt{13^2 - 5^2}",
-          "b = \\sqrt{169 - 25}",
-          "b = \\sqrt{144}",
-          "b = 12"
-        ]
-      },
-      "extraSections": [
-        {
-          "h2": "গণনা করার আগে গুরুত্বপূর্ণ চেক",
-          "paragraphs": [
-            "আপনি এই সূত্রটি ব্যবহার করার আগে, নিশ্চিত করুন যে c a এর থেকে বড়। কর্ণ সর্বদা একটি সমকোণী ত্রিভুজের দীর্ঘতম বাহু। যদি c a সমান হয়, তাহলে আপনি b = 0 পাবেন, যার মানে কোনো ত্রিভুজ নেই।",
-            "c a-এর থেকে কম হলে, বর্গমূলের নিচের অভিব্যক্তিটি ঋণাত্মক হয়ে যায়। তার মানে দুটি ইনপুট মান c সহ একটি বাস্তব সমকোণী ত্রিভুজকে কর্ণ হিসাবে বর্ণনা করতে পারে না।"
+        "faqs": [
+          {
+            "answer": "অতিভুজের বর্গ করুন (c²), জ্ঞাত বাহুর বর্গ করুন (a²), বিয়োগ করুন এবং বর্গমূল নিন: b = √(c² − a²)। ধাপসহ তাৎক্ষণিক ফলাফলের জন্য উপরের ক্যালকুলেটরে উভয় মান লিখুন।",
+            "question": "অতিভুজ ও একটি বাহু থেকে হারানো বাহু কীভাবে নির্ণয় করব?"
+          },
+          {
+            "answer": "পিথাগোরাসের উপপাদ্যে অতিভুজের বর্গ পেতে বাহুর বর্গগুলো যোগ করা হয় (a² + b² = c²)। অতিভুজ ইতিমধ্যে জানা থাকলে পুনর্বিন্যাস করুন: হারানো বাহুর বর্গ পৃথক করতে অতিভুজের বর্গ থেকে জ্ঞাত বাহুর বর্গ বিয়োগ করুন, তারপর মূল নিন।",
+            "question": "যোগের বদলে বিয়োগ কেন করব?"
+          },
+          {
+            "answer": "অতিভুজ সর্বদা দীর্ঘতম বাহু এবং 90° কোণের বিপরীতে থাকে। আপনার তিনটি পরিমাপ 5, 12 ও 13 হলে, অতিভুজ হলো 13।",
+            "question": "কোন বাহুটি অতিভুজ তা কীভাবে বুঝব?"
+          },
+          {
+            "answer": "a = c হলে ফলাফল b = 0 (বিকৃত, ত্রিভুজ নয়)। a > c হলে ঋণাত্মক সংখ্যার বর্গমূলের কোনো বাস্তব সমাধান নেই। উভয় ক্ষেত্রই অবৈধ হিসেবে প্রত্যাখ্যাত হয়।",
+            "question": "জ্ঞাত বাহু অতিভুজের সমান বা বড় হলে কী হয়?"
+          },
+          {
+            "answer": "হ্যাঁ। উদাহরণস্বরূপ, c = 10 ও a = 7 হলে b = √51 ≈ 7.14। গণনার সময় সম্পূর্ণ সূক্ষ্মতা ধরে রাখুন এবং শুধু চূড়ান্ত উত্তর আসন্নায়ন করুন।",
+            "question": "হারানো বাহু কি দশমিক হতে পারে?"
+          },
+          {
+            "answer": "a² + b² = c² যাচাই করুন। 5–12–13 উদাহরণের জন্য: 25 + 144 = 169। এছাড়া নিশ্চিত করুন b > 0, b < c, এবং একক আপনার ইনপুটের সাথে মেলে।",
+            "question": "উত্তরটি সঠিক কিনা কীভাবে যাচাই করব?"
+          },
+          {
+            "answer": "উভয় ইনপুট একই একক ব্যবহার করতে হবে। c মিটারে ও a সেন্টিমিটারে থাকলে আগে একটিকে রূপান্তর করুন। ফলাফল ইনপুটের একক ব্যবহার করে।",
+            "question": "আমি কি ভিন্ন পরিমাপ একক ব্যবহার করতে পারি?"
+          },
+          {
+            "answer": "না, এই মোড শুধু হারানো বাহু b নির্ণয় করে। কোণ নির্ণয়ের জন্য <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">সমকোণী ত্রিভুজ কোণ ক্যালকুলেটর</a> ব্যবহার করুন।",
+            "question": "এই ক্যালকুলেটর কি অজানা কোণও নির্ণয় করতে পারে?"
+          }
+        ],
+        "formulaSection": {
+          "formulas": [
+            "a^2 + b^2 = c^2",
+            "b^2 = c^2 - a^2",
+            "b = \\sqrt{c^2 - a^2}"
           ],
-          "listTitle": "প্রথমে এই চেকগুলি ব্যবহার করুন:",
-          "listItems": [
-            "c হল 90° কোণের বিপরীত।",
-            "c a এর চেয়ে বড়।",
-            "উভয় মানই ইতিবাচক।",
-            "c এবং a একই ইউনিট ব্যবহার করে।"
+          "h2": "হারানো বাহু নির্ণয়ের সূত্র",
+          "paragraphs": [
+            "গণনায় <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">পিথাগোরাসের উপপাদ্য</a> ব্যবহার করা হয়, যা দুটি বাহুর বর্গকে অতিভুজের বর্গের সাথে সম্পর্কিত করে। হারানো বাহুটিকে পৃথক করতে, সমীকরণটি ধাপে ধাপে পুনর্বিন্যাস করুন।",
+            "<strong>ধাপ ১: পিথাগোরাসের উপপাদ্য দিয়ে শুরু করুন।</strong> দুটি বাহুর বর্গ যোগ করলে অতিভুজের বর্গ পাওয়া যায়।",
+            "<strong>ধাপ ২: উভয় পাশ থেকে a² বিয়োগ করুন।</strong> এতে হারানো বাহুর বর্গ পৃথক হয়।",
+            "<strong>ধাপ ৩: ধনাত্মক বর্গমূল নিন।</strong> বাহুর দৈর্ঘ্য ধনাত্মক হয়, তাই মুখ্য মূল ব্যবহার করুন। সম্পূর্ণ রাশিমালা c² − a² মূলচিহ্নের ভিতরেই থাকে।",
+            "যেখানে <strong>a</strong> হলো জ্ঞাত বাহু, <strong>b</strong> হলো হারানো বাহু, এবং <strong>c</strong> হলো অতিভুজ। অতিভুজ সমকোণের বিপরীতে থাকে এবং সর্বদা দীর্ঘতম বাহু।",
+            "<strong>বিয়োগ কেন?</strong> মূল সমীকরণে অতিভুজের বর্গ পেতে দুটি বাহুর বর্গ যোগ করা হয়। অতিভুজ এবং একটি বাহু ইতিমধ্যে জানা থাকলে, অজানা বাহুর বর্গ পৃথক করতে অতিভুজের বর্গ থেকে জ্ঞাত বাহুর বর্গ বিয়োগ করুন। তারপর বর্গমূল নিন। কখনোই বাহুটিকে সরাসরি অতিভুজ থেকে বিয়োগ করবেন না, সর্বদা তাদের বর্গ বিয়োগ করুন।"
           ]
         },
-        {
-          "h2": "যেখানে এই ক্যালকুলেটর দরকারী",
-          "paragraphs": [
-            "এই ক্যালকুলেটরটি উপযোগী হয় যখন একটি তির্যক বা ঢালু পরিমাপ জানা যায়, একটি লম্ব দিকটি জানা যায় এবং অন্যটি লম্ব দিকটি অনুপস্থিত থাকে। এটি c-এন্ড-এ কেসের জন্য ফোকাসড টুল, তাই পৃষ্ঠার প্রতিটি ব্যাখ্যা b খোঁজার দিকে নির্দেশ করে।",
-            "এটি পরিমাপ যাচাই করতেও সাহায্য করতে পারে। যদি b-এর জন্য একটি পরিমাপ করা মান ক্যালকুলেটরের ফলাফলের সাথে মেলে না, তাহলে ত্রিভুজটি সঠিক নাও হতে পারে, কর্ণটি ভুল লেবেলযুক্ত হতে পারে, বা একটি পরিমাপ একটি ভিন্ন একক ব্যবহার করতে পারে।"
-          ],
-          "listTitle": "সাধারণ উদাহরণ অন্তর্ভুক্ত:",
-          "listItems": [
-            "মই দৈর্ঘ্য c এবং স্থল দূরত্ব a জানা গেলে দেয়ালের উচ্চতা খোঁজা।",
-            "যখন ঢালের দৈর্ঘ্য এবং অনুভূমিক দৌড় জানা যায় তখন একটি ঢালের উল্লম্ব উত্থান খুঁজে বের করা।",
-            "একটি সমকোণী ত্রিভুজ হোমওয়ার্ক সমস্যা পরীক্ষা করা যা c এবং a দেয়।",
-            "ফ্রেমিং, ল্যান্ডস্কেপিং, র‌্যাম্প বা মেঝে পরিকল্পনার জন্য লেআউট পরিমাপ নিশ্চিত করা।"
+        "formulaSlug": "leg-from-hypotenuse-and-other-leg",
+        "h1": "হারানো বাহু ক্যালকুলেটর: অতিভুজ c ও বাহু a থেকে বাহু b নির্ণয়",
+        "howTo": {
+          "h2": "c ও a থেকে বাহু b কীভাবে নির্ণয় করবেন",
+          "steps": [
+            "অতিভুজ চিহ্নিত করুন, যা 90° কোণের বিপরীতে থাকে। এটি সর্বদা দীর্ঘতম বাহু।",
+            "প্রথম ইনপুট ফিল্ডে অতিভুজ c লিখুন।",
+            "দ্বিতীয় ইনপুট ফিল্ডে জ্ঞাত বাহু a লিখুন।",
+            "যাচাই করুন যে উভয় পরিমাপ একই একক ব্যবহার করে।",
+            "হারানো বাহু b নির্ণয়ের জন্য 'গণনা করুন' বোতামে ক্লিক করুন।",
+            "ফলাফল এবং ক্যালকুলেটরের নিচে দেখানো ধাপে ধাপে সমাধান পর্যালোচনা করুন।",
+            "a² + b², c² এর সমান কিনা যাচাই করে উত্তরটি নিশ্চিত করুন।"
           ]
         },
-        {
-          "h2": "কিভাবে উত্তর পড়ুন",
-          "paragraphs": [
-            "অনুপস্থিত লেগ b লেবেলযুক্ত আউটপুট হল অন্য পায়ের দৈর্ঘ্য যা a এর সাথে সমকোণ তৈরি করে। এটি কর্ণ নয় এবং c এর চেয়ে ছোট হওয়া উচিত।",
-            "যদি গণনা করা b অত্যন্ত ছোট হয়, তাহলে আপনার পরিচিত লেগ a হাইপোটেনাস c এর খুব কাছাকাছি। এটি বৈধ হতে পারে, তবে মানটি ব্যবহার করার আগে এটি ডায়াগ্রাম এবং ইউনিটগুলি পরীক্ষা করা মূল্যবান।"
+        "intro": "এই <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">ক্যালকুলেটর</a>টি অতিভুজ c এবং অন্য বাহু a জানা থাকলে সমকোণী ত্রিভুজের হারানো বাহু b নির্ণয় করে। আপনার দুটি পরিমাপ লিখুন, এবং এটি b = √(c² − a²) সূত্র প্রয়োগ করে সম্পূর্ণ সমাধান ধাপসহ অজানা বাহুটি তাৎক্ষণিকভাবে গণনা করে। অতিভুজ হলো দীর্ঘতম বাহু, সমকোণের বিপরীতে অবস্থিত। দুটি বাহু মিলে সেই সমকোণ তৈরি করে। কোনটি কোন বাহু তা জানা থাকলে আপনি প্রতিবার সঠিক উত্তর পাবেন।",
+        "metaDescription": "অতিভুজ এবং একটি জ্ঞাত বাহু ব্যবহার করে সমকোণী ত্রিভুজের হারানো বাহু নির্ণয় করুন। বাহু b গণনা করুন, সূত্রটি অনুসরণ করুন এবং সমাধানকৃত উদাহরণ দেখুন।",
+        "metaTitle": "হারানো বাহু ক্যালকুলেটর: c ও a থেকে b নির্ণয়",
+        "quickSummary": {
+          "cards": [
+            {
+              "label": "জ্ঞাত মান",
+              "value": "অতিভুজ c ও বাহু a"
+            },
+            {
+              "label": "নির্ণয় করে",
+              "value": "হারানো বাহু b"
+            },
+            {
+              "label": "মূল সূত্র",
+              "value": "b = sqrt(c^2 - a^2)"
+            },
+            {
+              "label": "প্রয়োজনীয় যাচাই",
+              "value": "c অবশ্যই a এর চেয়ে বড় হতে হবে"
+            }
           ],
-          "listTitle": "একটি বৈধ ফলাফল সন্তুষ্ট করা উচিত:",
-          "listItems": [
-            "b শূন্যের চেয়ে বড়।",
-            "b c থেকে কম।",
-            "a² + b² প্রায় c² এর সমান।",
-            "আউটপুট ইউনিট ইনপুট ইউনিটের সাথে মেলে।"
-          ]
+          "h2": "এই টুলটি কী সমাধান করে",
+          "intro": "অতিভুজ এবং বাহু a জ্ঞাত থাকলেও অন্য বাহুটি হারানো থাকলে এই পৃষ্ঠা ব্যবহার করুন। <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">ক্যালকুলেটর</a>টি বর্গমূল নেওয়ার আগে অতিভুজ থেকে জ্ঞাত বাহু বিয়োগ করতে <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">পিথাগোরাসের উপপাদ্য</a> পুনর্বিন্যাস করে।"
         },
-        {
-          "h2": "সাধারণ ভুল",
-          "paragraphs": [
-            "সবচেয়ে সাধারণ ত্রুটি হল c কে একটি পা হিসাবে বিবেচনা করা। এই ক্যালকুলেটরে, c কে কর্ণ হতে হবে, যেটি সবচেয়ে লম্বা বাহু এবং সমকোণের বিপরীত দিক।",
-            "আরেকটি ঘন ঘন ভুল হল বিয়োগের পরিবর্তে বর্গ যোগ করা। সংযোজন একটি কর্ণ খুঁজে পায়; বিয়োগ কর্ণের থেকে একটি অনুপস্থিত পা খুঁজে পায়।"
-          ],
-          "listTitle": "এই ভুলগুলি এড়িয়ে চলুন:",
-          "listItems": [
-            "কর্ণক্ষেত্র ক্ষেত্রে পরিচিত পা নির্বাণ।",
-            "c² - a² এর পরিবর্তে c² + a² ব্যবহার করা হচ্ছে।",
-            "c এর থেকে বড় বা সমান প্রবেশ করানো হচ্ছে।",
-            "বর্গমূল নেওয়ার পরিবর্তে b² এ থামছে।",
-            "মিক্সিং ইউনিট যেমন মিটার এবং সেন্টিমিটার।"
-          ]
-        }
-      ],
-      "relatedLinks": [
-        {
-          "href": "/right-triangle-side-calculator/",
-          "label": "ডান ত্রিভুজ পার্শ্ব ক্যালকুলেটর"
-        },
-        {
-          "href": "/pythagorean-theorem-calculator/",
-          "label": "ক্যালকুলেটর: পিথাগোরাস উপপাদ্য"
-        },
-        {
-          "href": "/missing-leg-from-c-and-b-calculator/",
-          "label": "ক্যালকুলেটর: c এবং b থেকে অন্য বাহু নির্ণয়"
-        }
-      ],
-      "faqs": [
-        {
-          "question": "এই ক্যালকুলেটরে c এর অর্থ কী?",
-          "answer": "c হল সমকোণী ত্রিভুজের কর্ণ - দীর্ঘতম দিক, 90° কোণের বিপরীতে অবস্থিত। এটি একটি পা নয়। আপনি এই ক্যালকুলেটরে দুটি পরিচিত মানগুলির একটি হিসাবে c লিখুন৷"
-        },
-        {
-          "question": "এই ক্যালকুলেটরে একটি মানে কি?",
-          "answer": "a সমকোণী ত্রিভুজের দুটি পায়ের একটি। এটি একটি পক্ষ যা সঠিক কোণ গঠন করে। এই ক্যালকুলেটরে, a হল সেই পাটি যা আপনি ইতিমধ্যেই জানেন।"
-        },
-        {
-          "question": "এই ক্যালকুলেটর কি খুঁজে পায়?",
-          "answer": "এই ক্যালকুলেটর হারিয়ে যাওয়া লেগ b খুঁজে পায়। কর্ণ c এবং লেগ a দেওয়া হয়েছে, এটি b = √(c² − a²) গণনা করে এবং আপনাকে ধাপে ধাপে সমাধান দেখায়।"
-        },
-        {
-          "question": "c একটি থেকে ছোট হতে পারে?",
-          "answer": "না। একটি সমকোণী ত্রিভুজে, কর্ণ সর্বদা দীর্ঘতম দিক। c a থেকে ছোট হলে, মানগুলি একটি বৈধ সমকোণী ত্রিভুজ গঠন করে না। গণনা করার আগে কোন পরিমাপটি কর্ণের তা পরীক্ষা করুন।"
-        },
-        {
-          "question": "আমি কিভাবে c এবং a থেকে b খুঁজে পাব?",
-          "answer": "কর্ণের বর্গক্ষেত্র (c²), পরিচিত পায়ের বর্গক্ষেত্র (a²), c² থেকে a² বিয়োগ করুন এবং বর্গমূল নিন। সূত্রটি হল b = √(c² − a²)। অথবা একটি তাত্ক্ষণিক উত্তরের জন্য এই ক্যালকুলেটরে আপনার মান লিখুন।"
-        }
-      ]
+        "relatedLinks": [
+          {
+            "href": "/right-triangle-side-calculator/",
+            "label": "সমকোণী ত্রিভুজ বাহু ক্যালকুলেটর"
+          },
+          {
+            "href": "/pythagorean-theorem-calculator/",
+            "label": "পিথাগোরাসের উপপাদ্য ক্যালকুলেটর"
+          },
+          {
+            "href": "/missing-leg-from-c-and-b-calculator/",
+            "label": "c ও b থেকে হারানো বাহু ক্যালকুলেটর"
+          },
+          {
+            "href": "/right-triangle-angle-calculator/",
+            "label": "সমকোণী ত্রিভুজ কোণ ক্যালকুলেটর"
+          },
+          {
+            "href": "/right-triangle-measurements-calculator/",
+            "label": "সমকোণী ত্রিভুজ পরিমাপ ক্যালকুলেটর"
+          }
+        ],
+        "slug": "missing-leg-from-c-and-a-calculator",
+        "toolPurpose": "মনে রাখুন: c সর্বদা অতিভুজ, অর্থাৎ দীর্ঘতম <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">বাহু</a>, যা <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">সমকোণ</a>ের বিপরীতে। এটি কোনো বাহু নয়। আপনার কাছে দুটি বাহু থাকলে এবং পরিবর্তে অতিভুজ প্রয়োজন হলে, <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">পিথাগোরাসের উপপাদ্য</a> ক্যালকুলেটর ব্যবহার করুন।",
+        "url": "/missing-leg-from-c-and-a-calculator/"
     },
     "missing-leg-from-c-and-b-calculator": {
       "slug": "missing-leg-from-c-and-b-calculator",
@@ -4994,204 +5306,243 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         }
       ]
     },
-    "missing-leg-from-c-and-a-calculator": {
-      "slug": "missing-leg-from-c-and-a-calculator",
-      "url": "/missing-leg-from-c-and-a-calculator/",
-      "h1": "計算機: cとaから残りの脚を求める",
-      "metaTitle": "計算機: cとaから残りの脚を求める | Right Triangle Solver",
-      "metaDescription": "斜辺cと一方の脚aがわかっているときに、脚bを求めます。",
-      "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "覚えておいてください: c は常に斜辺、つまり直角の反対側の最も長い辺です。脚ではありません。脚が 2 本あり、代わりに斜辺が必要な場合は、ピタゴラスの定理計算ツールを使用してください。",
-      "intro": "斜辺cと一方の脚aがわかっているときに、脚bを求めます。",
-      "quickSummary": {
-        "h2": "この欠落した脚の計算機が解決するもの",
-        "intro": "このページは、斜辺と脚 a はわかっているが、もう一方の脚が欠落している場合に使用します。計算機はピタゴラスの定理を並べ替えて、平方根を求める前に斜辺から既知の脚を減算します。",
-        "cards": [
-          {
-            "label": "既知の値",
-            "value": "c = 斜辺; a = 既知の脚"
-          },
-          {
-            "label": "発見",
-            "value": "b = 未知の脚"
-          },
-          {
-            "label": "主な式",
-            "value": "b = sqrt(c^2 - a^2)"
-          },
-          {
-            "label": "必須チェック",
-            "value": "c > a である必要があります。"
-          }
-        ]
-      },
-      "diagram": {
-        "h2": "直角三角形図: 足探し b",
-        "intro": "この図では、すでにわかっている値として c と a をマークしています。垂直脚 b は、この計算機が解決する欠落している側として強調表示されます。",
-        "caption": "既知の斜辺 c、既知の脚 a、および未知の脚 b を含む直角三角形の図。",
-        "sides": {
-          "a": {
-            "label": "a = 既知",
-            "description": "脚 a は、直角三角形の底辺に沿った既知の脚です。",
-            "status": "known"
-          },
-          "b": {
-            "label": "b = 検索",
-            "description": "レッグ b は、c^2 から a^2 を減算することで解決される未知のレッグです。",
-            "status": "unknown"
-          },
-          "c": {
-            "label": "c = 既知",
-            "description": "斜辺 c は、直角の反対側の既知の最長の辺です。",
-            "status": "known"
-          }
+        "missing-leg-from-c-and-a-calculator": {
+        "slug": "missing-leg-from-c-and-a-calculator",
+        "url": "/missing-leg-from-c-and-a-calculator/",
+        "h1": "辺b計算機：斜辺cと辺aから欠けた辺を求める",
+        "metaTitle": "辺b計算機：cとaから欠けた辺を求める",
+        "metaDescription": "斜辺と1つの既知の辺から、直角三角形の欠けた辺を求めます。辺bを計算し、公式に沿って手順を確認し、例題でチェックしましょう。",
+        "formulaSlug": "leg-from-hypotenuse-and-other-leg",
+        "toolPurpose": "覚えておきましょう：cは常に斜辺です — 最も長い<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a>で、直角の<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角</a>の向かい側にあります。斜辺は直角を挟む辺ではありません。2つの辺が分かっていて斜辺を求めたい場合は、<a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">ピタゴラスの定理</a>計算機を使いましょう。",
+        "intro": "この<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機</a>は、斜辺cと他の辺aが分かっているときに直角三角形の欠けた辺bを求めます。2つの測定値を入力すると、公式b = √(c² − a²)で未知の辺を即座に計算し、すべての計算手順を表示します。斜辺は最も長い辺で、直角の向かい側にあります。2つの辺（直角を挟む辺）がその直角を作ります。どの辺がどれかを正しく見分けることが、毎回正しい答えを得るコツです。",
+        "quickSummary": {
+          "h2": "このツールで解けること",
+          "intro": "斜辺と辺aが分かっているが、もう1つの辺が不明な場合にこのページを使います。<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機</a>は<a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">ピタゴラスの定理</a>を変形し、平方根を取る前に斜辺から既知の辺を差し引きます。",
+          "cards": [
+            {
+              "label": "既知の値",
+              "value": "斜辺cと辺a"
+            },
+            {
+              "label": "求める値",
+              "value": "欠けた辺b"
+            },
+            {
+              "label": "主要な公式",
+              "value": "b = sqrt(c^2 - a^2)"
+            },
+            {
+              "label": "必要な条件",
+              "value": "cはaより大きくなければならない"
+            }
+          ]
         },
-        "notes": [
-          "c は、脚の 1 つではなく、斜辺である必要があります。",
-          "c が a 以下の場合、入力は有効な直角三角形を形成しません。",
-          "結果の b は、c および a と同じ単位を使用します。"
-        ]
-      },
-      "calculator": {
-        "outputLabel": "b = 未知の脚",
-        "fields": [
+        "diagram": {
+          "h2": "斜辺と欠けた辺を見分ける",
+          "intro": "図では、すでに分かっている値cとaが示されています。垂直方向の辺bは、この計算機で求める<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">不明な辺</a>として強調されています。",
+          "caption": "既知の斜辺c、既知の辺a、未知の辺bを示す直角三角形の図。",
+          "sides": {
+            "a": {
+              "label": "a = 既知",
+              "description": "辺aは、直角三角形の底辺に沿った既知の辺です。",
+              "status": "known"
+            },
+            "b": {
+              "label": "b = 求める",
+              "description": "辺bは、c^2からa^2を差し引いて求める未知の辺です。",
+              "status": "unknown"
+            },
+            "c": {
+              "label": "c = 既知",
+              "description": "斜辺cは、直角の<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角</a>の向かい側にある最も長い既知の<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a>です。",
+              "status": "known"
+            }
+          },
+          "notes": [
+            "cは斜辺でなければなりません。直角を挟む辺の1つではありません。",
+            "cがa以下である場合、入力値は有効な直角三角形を形成しません。",
+            "結果bの単位は、cとaと同じになります。"
+          ]
+        },
+        "calculator": {
+          "outputLabel": "欠けた辺b",
+          "fields": [
+            {
+              "key": "c",
+              "label": "斜辺c",
+              "min": 0
+            },
+            {
+              "key": "a",
+              "label": "辺a",
+              "min": 0
+            }
+          ]
+        },
+        "formulaSection": {
+          "h2": "欠けた辺を求める公式",
+          "paragraphs": [
+            "この計算では、2つの辺（直角を挟む辺）の2乗の和が斜辺の2乗に等しいことを示す<a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">ピタゴラスの定理</a>を使います。欠けた辺を分離するため、方程式を段階的に変形します。",
+            "<strong>ステップ1：ピタゴラスの定理から始めます。</strong> 2つの辺の2乗を足すと斜辺の2乗になります。",
+            "<strong>ステップ2：両辺からa²を引きます。</strong> これにより欠けた辺の2乗が分離されます。",
+            "<strong>ステップ3：正の平方根を取ります。</strong> 辺の長さは正なので、主平方根を使います。式全体 c² − a² を平方根記号の中に残します。",
+            "ここで、<strong>a</strong>は既知の辺、<strong>b</strong>は欠けた辺、<strong>c</strong>は斜辺です。斜辺は直角の向かい側にあり、常に最も長い辺です。",
+            "<strong>なぜ引き算するのか？</strong> 元の式は、斜辺の2乗を求めるために2つの辺の2乗を足します。斜辺と1つの辺が既知の場合は、既知の辺の2乗を斜辺の2乗から引いて、未知の辺の2乗を分離します。そして平方根を取ります。辺そのものを斜辺から引いてはいけません — 常にそれらの2乗を差し引いてください。"
+          ],
+          "formulas": [
+            "a^2 + b^2 = c^2",
+            "b^2 = c^2 - a^2",
+            "b = \\sqrt{c^2 - a^2}"
+          ]
+        },
+        "howTo": {
+          "h2": "cとaから辺bを求める方法",
+          "steps": [
+            "90°の角（直角）の向かい側にある斜辺を見分けます。斜辺は常に最も長い辺です。",
+            "1つ目の入力欄に斜辺cを入力します。",
+            "2つ目の入力欄に既知の辺aを入力します。",
+            "2つの測定値が同じ単位であることを確認します。",
+            "「計算」ボタンをクリックして欠けた辺bを求めます。",
+            "計算機の下に表示される結果と段階的な解法を確認します。",
+            "a² + b² = c² であることを確認して答えを検証します。"
+          ]
+        },
+        "example": {
+          "h2": "欠けた辺を求める例題",
+          "intro": "各例題は、問題文から検証済みの答えまでの完全な計算を示しています。5つの例題すべてで公式 b = √(c² − a²) を使います。",
+          "lines": [
+            "b = \\sqrt{13^2 - 5^2}",
+            "b = \\sqrt{169 - 25}",
+            "b = \\sqrt{144}",
+            "b = 12"
+          ]
+        },
+        "extraSections": [
           {
-            "key": "c",
-            "label": "c = 斜辺",
-            "min": 0
+            "h2": "詳細な例題",
+            "paragraphs": [
+              "<h3>例1：基本的な5–12–13の三角形</h3><p><strong>問題：</strong> 斜辺c = 13 cm、既知の辺a = 5 cmの直角三角形の欠けた辺を求めましょう。</p><p><strong>与えられた値：</strong> c = 13 cm、a = 5 cm。<strong>求める値：</strong> b。</p><p><strong>公式：</strong> b = √(c² − a²)</p><p><strong>代入：</strong> b = √(13² − 5²) = √(169 − 25) = √144</p><p><strong>答え：</strong> <strong>b = 12 cm</strong></p><p><strong>検算：</strong> 5² + 12² = 25 + 144 = 169 = 13²。既知の辺、欠けた辺、斜辺は有効な直角三角形を形成します。</p>",
+              "<h3>例2：壁に立てかけたはしご</h3><p><strong>問題：</strong> 長さ5 mのはしごが垂直な壁に立てかけられています。はしごの土台は壁から3 m離れています。はしごが届く高さを求めましょう。</p><p><strong>与えられた値：</strong> c = 5 m（はしご）、a = 3 m（地面の距離）。<strong>求める値：</strong> b（壁の高さ）。</p><p><strong>計算：</strong> b = √(5² − 3²) = √(25 − 9) = √16 = 4 m</p><p><strong>答え：</strong> <strong>はしごは壁の4 mの高さに届きます。</strong></p><img src=\"/images/missing-leg/missing-leg-ladder.svg\" alt=\"はしごの図：斜辺としての5 mのはしご、辺aとしての3 mの地面の距離、欠けた辺bとしての4 mの壁の高さ\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>図：垂直な壁（b = 4 m）、水平な地面の距離（a = 3 m）、はしご（c = 5 m）。これは垂直な壁と水平な地面を仮定した幾何学モデルであり、はしごの安全評価ではありません。</em></p>",
+              "<h3>例3：長方形の部屋の対角線</h3><p><strong>問題：</strong> 長方形の部屋の対角線は17 ft、一辺は8 ftです。もう一辺の長さを求めましょう。</p><p><strong>与えられた値：</strong> c = 17 ft（対角線）、a = 8 ft。<strong>求める値：</strong> b。</p><p><strong>計算：</strong> b = √(17² − 8²) = √(289 − 64) = √225 = 15 ft</p><p><strong>答え：</strong> <strong>もう一辺は15 ftです。</strong></p><img src=\"/images/missing-leg/missing-leg-room.svg\" alt=\"部屋の図：斜辺としての17 ftの対角線、辺aとしての8 ftの既知の一辺、欠けた辺bとしての15 ftのもう一辺\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>図：上から見た図。対角線（c = 17 ft）は長方形を2つの直角三角形に分けます。既知の一辺（a = 8 ft）と欠けた一辺（b = 15 ft）が直角を作ります。</em></p>",
+              "<h3>例4：四捨五入が必要な結果</h3><p><strong>問題：</strong> c = 10 m、a = 7 mが与えられたとき、bを求めましょう。</p><p><strong>計算：</strong> b = √(10² − 7²) = √(100 − 49) = √51 ≈ 7.141428 m</p><p><strong>答え：</strong> <strong>b ≈ 7.14 m</strong>、小数第2位まで四捨五入。</p><p><strong>検算：</strong> 7² + (√51)² = 49 + 51 = 100 = 10²。</p><p>途中の計算では厳密な値（√51）を保ち、四捨五入は最後のステップでのみ行いましょう。早い段階で丸めると、複数ステップの問題で誤差が積み重なります。</p>",
+              "<h3>例5：スロープの幾何学</h3><p><strong>問題：</strong> まっすぐなスロープの長さは13 m、水平距離は12 mです。垂直な高さを求めましょう。</p><p><strong>与えられた値：</strong> c = 13 m（スロープ）、a = 12 m（水平距離）。<strong>求める値：</strong> b（垂直な高さ）。</p><p><strong>計算：</strong> b = √(13² − 12²) = √(169 − 144) = √25 = 5 m</p><p><strong>答え：</strong> <strong>垂直な高さは5 mです。</strong></p><img src=\"/images/missing-leg/missing-leg-ramp.svg\" alt=\"スロープの図：斜辺としての13 mのスロープ、辺aとしての12 mの水平距離、欠けた辺bとしての5 mの垂直な高さ\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>図：斜辺としてのスロープ（c = 13 m）、水平距離（a = 12 m）、垂直な高さ（b = 5 m）。この計算は、バリアフリーや建築基準への適合を示すものではありません。</em></p>"
+            ]
           },
           {
-            "key": "a",
-            "label": "a = 既知の脚",
-            "min": 0
+            "h2": "欠けた辺を計算できるのはどんなとき？",
+            "paragraphs": [
+              "有効な非退化直角三角形では、測定値が3つの条件を満たす必要があります：c > 0、a > 0、c > a。そのとき欠けた辺は b = √(c² − a²) で計算できます。",
+              "<strong>ケース1：斜辺が既知の辺より小さい。</strong> c = 4、a = 5の場合、b = √(16 − 25) = √(−9) となります。平方根の中の式が負になるため、これらの入力ではcを斜辺とする実在の直角三角形を形成できません。",
+              "<strong>ケース2：斜辺が既知の辺と等しい。</strong> c = 5、a = 5の場合、b = √(25 − 25) = 0 となります。これは退化したケースであり、有効な三角形ではありません。",
+              "<strong>ケース3：ゼロまたは負の測定値。</strong> 辺の長さは正でなければなりません。計算機はゼロと負の入力を拒否します。",
+              "<strong>ケース4：単位の不一致。</strong> 両方の測定値は同じ単位でなければなりません。cがメートル、aがセンチメートルの場合は、計算前に一方を変換してください。"
+            ],
+            "listTitle": "まずこれらを確認しましょう：",
+            "listItems": [
+              "cは90°の<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角</a>の向かい側にあります。",
+              "cはaより大きいです。",
+              "両方の値が正です。",
+              "cとaが同じ単位を使っています。"
+            ]
+          },
+          {
+            "h2": "欠けた辺の公式はどこで使われる？",
+            "paragraphs": [
+              "一般的なパターン：直線の対角線や斜めの長さと、1つの垂直方向の距離が分かっている場合、もう1つの垂直方向の距離はピタゴラスの定理で求められます。これは形状が直角三角形の場合にのみ成り立ちます。",
+              "<strong>建設と枠組み。</strong> 大工は長方形の枠の対角線を測定して直角の隅を確認します。対角線（c）と一辺（a）が分かっていれば、欠けた辺（b）で木材を切る前の配置を確認できます。",
+              "<strong>部屋と間取りの測定。</strong> 家具や床材の計画では、部屋の対角線と1つの壁の長さから、障害物を動かさずにもう1つの壁の長さを求められます。",
+              "<strong>はしごと壁の幾何学。</strong> はしごの長さと壁からの距離が分かれば、届く高さが直接求まります。これは幾何学モデルであり、安全評価ではありません。",
+              "<strong>スロープと傾斜の計算。</strong> 傾斜の長さと水平距離から垂直な高さが決まります。これは基準適合を示すものではありません。"
+            ]
+          },
+          {
+            "h2": "欠けた辺の計算を確認する方法",
+            "paragraphs": [
+              "使用前にすべての結果を検証しましょう。5–12–13の例では：5² + 12² = 25 + 144 = 169 = 13²。",
+              "「欠けた辺b」と表示される出力は、aと直角をなすもう1つの辺の長さです。斜辺ではなく、cより短くなります。"
+            ],
+            "listTitle": "有効な結果は以下を満たす必要があります：",
+            "listItems": [
+              "bが0より大きい。",
+              "bがcより短い。",
+              "a² + b² が c² に等しい（表示値の四捨五入を考慮）。",
+              "結果が正しい単位を使っている。"
+            ]
+          },
+          {
+            "h2": "欠けた辺を求めるときのよくある間違い",
+            "paragraphs": [
+              "最も多い間違いは、cを直角を挟む辺として扱うことです。ここでcは斜辺でなければなりません：最も長い辺で、直角の向かい側にあります。",
+              "もう1つのよくある間違いは、引き算すべきところを足し算することです。足し算（a² + b²）は斜辺を求める式、引き算（c² − a²）は斜辺から欠けた辺を求める式です。"
+            ],
+            "listTitle": "これらの間違いを避けましょう：",
+            "listItems": [
+              "<strong>斜辺と辺の混同。</strong> 辺の値をcの欄に入れると、公式は間違った問題を解きます。正しくは：cは常に最も長い辺です。",
+              "<strong>引き算すべきところを足し算する。</strong> 誤：b = √(c² + a²)。正：b = √(c² − a²)。",
+              "<strong>平方根を忘れる。</strong> 誤：b = c² − a²。正：差の平方根を取ります。",
+              "<strong>平方根の範囲の間違い。</strong> 誤：√c² − a²（これはc − aと等しい）。正：√(c² − a²)、差全体を平方根記号の中に入れます。",
+              "<strong>a ≥ cを入力する。</strong> 既知の辺は斜辺と等しくなったり、超えたりできません。正しくは：計算前にc > aを確認します。",
+              "<strong>単位の混在。</strong> 誤：c = 5 m、a = 30 cm。正：まず同じ単位に変換します（c = 500 cm、a = 30 cm）。",
+              "<strong>早すぎる四捨五入。</strong> 誤：計算途中で√51を7.14に丸める。正：最終的な答えまで完全な精度を保ちます。"
+            ]
           }
-        ]
-      },
-      "formulaSection": {
-        "h2": "欠けた脚 b フォーミュラ",
-        "paragraphs": [
-          "脚 b を求める公式は、ピタゴラスの定理 (a² + b² = c²) から導出されます。 b について整理すると以下の式になります。",
-          "ここで、c は斜辺 (直角三角形の最長辺)、a は既知の脚、b は解決対象の欠落している脚です。引き算に注目してください。斜辺の 2 乗から既知の脚の 2 乗を引き、平方根を求めます。"
         ],
-        "formulas": [
-          "b = \\sqrt{c^2 - a^2}"
+        "relatedLinks": [
+          {
+            "href": "/right-triangle-side-calculator/",
+            "label": "直角三角形の辺の計算機"
+          },
+          {
+            "href": "/pythagorean-theorem-calculator/",
+            "label": "ピタゴラスの定理の計算機"
+          },
+          {
+            "href": "/missing-leg-from-c-and-b-calculator/",
+            "label": "cとbから欠けた辺を求める計算機"
+          },
+          {
+            "href": "/right-triangle-angle-calculator/",
+            "label": "直角三角形の角度の計算機"
+          },
+          {
+            "href": "/right-triangle-measurements-calculator/",
+            "label": "直角三角形の測定値の計算機"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "斜辺と1つの辺から欠けた辺を求めるにはどうすればよいですか？",
+            "answer": "斜辺を2乗し（c²）、既知の辺を2乗し（a²）、差し引いて平方根を取ります：b = √(c² − a²)。上の計算機に両方の値を入力すれば、手順付きで即座に結果が得られます。"
+          },
+          {
+            "question": "足し算ではなく引き算をするのはなぜですか？",
+            "answer": "ピタゴラスの定理は、辺の2乗を足して斜辺の2乗を求めます（a² + b² = c²）。斜辺が既に分かっている場合は、変形して、既知の辺の2乗を斜辺の2乗から引き、欠けた辺の2乗を分離してから平方根を取ります。"
+          },
+          {
+            "question": "どの辺が斜辺かはどう見分ければよいですか？",
+            "answer": "斜辺は常に最も長い辺で、90°の角の向かい側にあります。3つの測定値が5、12、13の場合、斜辺は13です。"
+          },
+          {
+            "question": "既知の辺が斜辺と等しいか長い場合はどうなりますか？",
+            "answer": "a = cの場合、結果はb = 0となり（退化した三角形、三角形ではありません）。a > cの場合、負の数の平方根に実数解はありません。どちらの場合も無効として拒否されます。"
+          },
+          {
+            "question": "欠けた辺は小数になることがありますか？",
+            "answer": "はい。例えば、c = 10、a = 7の場合、b = √51 ≈ 7.14です。計算中は完全な精度を保ち、最終的な答えのみ四捨五入しましょう。"
+          },
+          {
+            "question": "答えが正しいかどうかはどう確認できますか？",
+            "answer": "a² + b² = c² であることを確認します。5–12–13の例では：25 + 144 = 169。また、b > 0、b < c、単位が入力と一致していることを確認しましょう。"
+          },
+          {
+            "question": "異なる測定単位を使えますか？",
+            "answer": "両方の入力は同じ単位でなければなりません。cがメートル、aがセンチメートルの場合は、まず一方を変換してください。結果は入力の単位になります。"
+          },
+          {
+            "question": "この計算機で未知の角度も求められますか？",
+            "answer": "いいえ、このモードでは欠けた辺bのみ求められます。角度を求めるには<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">直角三角形の角度の計算機</a>を使いましょう。"
+          }
         ]
-      },
-      "howTo": {
-        "h2": "c および a から脚 b を見つける方法",
-        "steps": [
-          "c が斜辺、a が脚であることを確認します。斜辺は常に最長の辺になります。",
-          "最初の入力フィールドに斜辺 c を入力します。",
-          "2 番目の入力フィールドに既知のレッグ a を入力します。",
-          "「計算」をクリックして、欠落している脚を見つけます。",
-          "b の結果と完全なステップバイステップのソリューションをお読みください。"
-        ]
-      },
-      "example": {
-        "h2": "例: 脚の検索 b",
-        "intro": "与えられた場合: c = 13、a = 5。斜辺 13 と脚 5 を持つ直角三角形の不足している脚は 12 です。",
-        "lines": [
-          "b = \\sqrt{13^2 - 5^2}",
-          "b = \\sqrt{169 - 25}",
-          "b = \\sqrt{144}",
-          "b = 12"
-        ]
-      },
-      "extraSections": [
-        {
-          "h2": "計算前の重要な確認事項",
-          "paragraphs": [
-            "この式を使用する前に、c が a より大きいことを確認してください。斜辺は常に直角三角形の最長の辺です。 c が a と等しい場合、b = 0 が得られます。これは、三角形が存在しないことを意味します。",
-            "c が a より小さい場合、平方根の下の式は負になります。つまり、2 つの入力値では、c を斜辺とする実際の直角三角形を表すことができません。"
-          ],
-          "listTitle": "最初に次のチェックを使用します。",
-          "listItems": [
-            "c is opposite the 90° angle.",
-            "c は a よりも大きいです。",
-            "どちらの値も正です。",
-            "c と a は同じユニットを使用します。"
-          ]
-        },
-        {
-          "h2": "この計算機が役立つ場所",
-          "paragraphs": [
-            "この計算機は、対角線または傾斜した測定値がわかっていて、一方の垂直な辺がわかっていて、もう一方の垂直な辺が不明な場合に役立ちます。これは c と 1 つのケースに重点を置いたツールであるため、ページ上のすべての説明は b を見つけることを指しています。",
-            "測定値の検証にも役立ちます。 b の測定値が計算機の結果と一致しない場合は、三角形が正しくないか、斜辺のラベルが間違っているか、または 1 つの測定で異なる単位が使用されている可能性があります。"
-          ],
-          "listTitle": "一般的な例は次のとおりです。",
-          "listItems": [
-            "はしごの長さ c と地面の距離 a がわかっているときの壁の高さを求めます。",
-            "斜面の長さと水平な流れがわかっている場合、斜面の垂直の立ち上がりを求めます。",
-            "c と a を与える直角三角形の宿題問題を確認します。",
-            "フレーム、造園、スロープ、またはフロアプランのレイアウト測定を確認します。"
-          ]
-        },
-        {
-          "h2": "答えの読み方",
-          "paragraphs": [
-            "「欠落脚 b」とラベル付けされた出力は、a と直角を形成するもう一方の脚の長さです。これは斜辺ではないため、c よりも短くする必要があります。",
-            "計算された b が非常に小さい場合、既知の脚 a は斜辺 c に非常に近くなります。それは有効ですが、値を使用する前に図と単位を確認する価値があります。"
-          ],
-          "listTitle": "有効な結果は次の条件を満たす必要があります。",
-          "listItems": [
-            "b はゼロより大きいです。",
-            "b は c よりも小さいです。",
-            "a² + b² は c² とほぼ同じです。",
-            "出力単位は入力単位と一致します。"
-          ]
-        },
-        {
-          "h2": "よくある間違い",
-          "paragraphs": [
-            "最も一般的なエラーは、c を脚として扱うことです。この計算機では、c は斜辺 (最長の辺であり、直角の反対側の辺) である必要があります。",
-            "もう 1 つのよくある間違いは、平方根を減算するのではなく加算することです。加算により斜辺が求められます。減算により、斜辺から欠落している脚が見つかります。"
-          ],
-          "listTitle": "次の間違いを避けてください。",
-          "listItems": [
-            "既知の脚を斜辺フィールドに入力します。",
-            "c² - a² の代わりに c² + a² を使用します。",
-            "c 以上の値を入力します。",
-            "平方根を求めるのではなく、b² で停止します。",
-            "メートルやセンチメートルなどの単位が混在しています。"
-          ]
-        }
-      ],
-      "relatedLinks": [
-        {
-          "href": "/right-triangle-side-calculator/",
-          "label": "直角三角形辺計算機"
-        },
-        {
-          "href": "/pythagorean-theorem-calculator/",
-          "label": "計算機: ピタゴラスの定理"
-        },
-        {
-          "href": "/missing-leg-from-c-and-b-calculator/",
-          "label": "計算機: cとbから残りの脚を求める"
-        }
-      ],
-      "faqs": [
-        {
-          "question": "この計算機の c は何を意味しますか?",
-          "answer": "c は、直角三角形の斜辺、つまり 90° の角度の反対側にある最長の辺です。脚ではありません。この計算ツールでは、既知の 2 つの値の 1 つとして c を入力します。"
-        },
-        {
-          "question": "この計算機の は何を意味しますか?",
-          "answer": "a は直角三角形の 2 本の脚のうちの 1 つです。直角をなす辺の一つです。この計算機では、a はすでにわかっている脚です。"
-        },
-        {
-          "question": "この計算機は何を求めますか?",
-          "answer": "この計算機は、欠落している脚 b を見つけます。斜辺 c と脚 a を指定すると、b = √(c² − a²) が計算され、段階的な解決策が表示されます。"
-        },
-        {
-          "question": "c を a より小さくすることはできますか?",
-          "answer": "いいえ、直角三角形では、斜辺が常に最長の辺になります。 c が a より小さい場合、値は有効な直角三角形を形成しません。計算する前に、どの測定値が斜辺であるかを確認してください。"
-        },
-        {
-          "question": "c と a から b を見つけるにはどうすればよいですか?",
-          "answer": "斜辺を 2 乗し (c²)、既知の脚を 2 乗し (a²)、c² から a² を減算し、平方根を求めます。式はb = √(c² − a²)です。または、この計算機に値を入力すると、すぐに答えが得られます。"
-        }
-      ]
     },
     "missing-leg-from-c-and-b-calculator": {
       "slug": "missing-leg-from-c-and-b-calculator",
@@ -5593,204 +5944,243 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         }
       ]
     },
-    "missing-leg-from-c-and-a-calculator": {
-      "slug": "missing-leg-from-c-and-a-calculator",
-      "url": "/missing-leg-from-c-and-a-calculator/",
-      "h1": "계산기: c와 a를 이용한 한 변 구하기",
-      "metaTitle": "계산기: c와 a를 이용한 한 변 구하기 | Right Triangle Solver",
-      "metaDescription": "빗변 c와 한 변 a를 알 때, 나머지 한 변 b를 구합니다.",
-      "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "기억하세요: c는 항상 직각 반대편의 가장 긴 변인 빗변입니다. 다리가 아닙니다. 다리가 두 개 있고 대신 빗변이 필요한 경우 피타고라스 정리 계산기를 사용하세요.",
-      "intro": "빗변 c와 한 변 a를 알 때, 나머지 한 변 b를 구합니다.",
-      "quickSummary": {
-        "h2": "잃어버린 다리 계산기가 해결하는 것",
-        "intro": "빗변과 다리 a가 알려져 있지만 다른 다리가 없는 경우 이 페이지를 사용하십시오. 계산기는 피타고라스의 정리를 재정렬하여 제곱근을 구하기 전에 빗변에서 알려진 다리를 뺍니다.",
-        "cards": [
-          {
-            "label": "알려진 값",
-            "value": "c = 빗변; a = 알고 있는 변"
-          },
-          {
-            "label": "찾기",
-            "value": "b = 모르는 변"
-          },
-          {
-            "label": "주요 공식",
-            "value": "b = sqrt(c^2 - a^2)"
-          },
-          {
-            "label": "필수 확인",
-            "value": "c > a여야 합니다."
-          }
-        ]
-      },
-      "diagram": {
-        "h2": "직각삼각형 다이어그램: 다리 b 찾기",
-        "intro": "다이어그램에서는 c 및 a를 이미 알고 있는 값으로 표시합니다. 수직변 b는 이 계산기가 해결하는 누락된 변으로 강조 표시됩니다.",
-        "caption": "알려진 빗변 c, 알려진 변 a, 알려지지 않은 변 b가 있는 직각삼각형 다이어그램.",
-        "sides": {
-          "a": {
-            "label": "a = 알려진",
-            "description": "다리 a는 직각삼각형의 밑변을 따라 알려진 다리입니다.",
-            "status": "known"
-          },
-          "b": {
-            "label": "b = find",
-            "description": "레그 b는 c^2에서 a^2를 빼서 해결된 알 수 없는 레그입니다.",
-            "status": "unknown"
-          },
-          "c": {
-            "label": "c = known",
-            "description": "빗변 c는 직각 반대편으로 알려진 가장 긴 변입니다.",
-            "status": "known"
-          }
+        "missing-leg-from-c-and-a-calculator": {
+        "slug": "missing-leg-from-c-and-a-calculator",
+        "url": "/missing-leg-from-c-and-a-calculator/",
+        "h1": "누락된 변 계산기: 빗변 c와 변 a로부터 변 b 구하기",
+        "metaTitle": "누락된 변 계산기: c와 a로부터 b 구하기",
+        "metaDescription": "빗변과 알려진 한 변을 이용해 직각삼각형의 누락된 변을 구하세요. 변 b를 계산하고, 공식을 확인하며, 풀이 예제를 살펴보세요.",
+        "formulaSlug": "leg-from-hypotenuse-and-other-leg",
+        "toolPurpose": "기억하세요: c는 항상 빗변 — 가장 긴 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>이며, <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">직각</a>의 맞은편에 있습니다. 빗변은 직각변이 아닙니다. 두 변을 알고 있고 빗변을 구해야 한다면 <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">피타고라스 정리</a> 계산기를 사용하세요.",
+        "intro": "이 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>는 빗변 c와 다른 한 변 a를 알 때 직각삼각형의 누락된 변 b를 구합니다. 두 측정값을 입력하면 공식 b = √(c² − a²)를 적용해 단계별 풀이와 함께 미지의 변을 즉시 계산합니다. 빗변은 직각의 맞은편에 있는 가장 긴 변입니다. 두 직각변은 그 직각을 이룹니다. 어느 변이 어느 변인지 알면 매번 정확한 답을 얻을 수 있습니다.",
+        "quickSummary": {
+          "h2": "이 도구가 푸는 것",
+          "intro": "빗변과 변 a는 알지만 다른 한 변이 누락된 경우 이 페이지를 사용하세요. 이 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>는 <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">피타고라스 정리</a>를 변형하여, 제곱근을 구하기 전에 빗변의 제곱에서 알려진 변의 제곱을 뺍니다.",
+          "cards": [
+            {
+              "label": "알려진 값",
+              "value": "빗변 c와 변 a"
+            },
+            {
+              "label": "구하는 값",
+              "value": "누락된 변 b"
+            },
+            {
+              "label": "주요 공식",
+              "value": "b = sqrt(c^2 - a^2)"
+            },
+            {
+              "label": "필수 조건",
+              "value": "c는 a보다 커야 합니다"
+            }
+          ]
         },
-        "notes": [
-          "c는 다리 중 하나가 아닌 빗변이어야 합니다.",
-          "c가 a보다 작거나 같은 경우 입력은 유효한 직각 삼각형을 형성하지 않습니다.",
-          "결과 b는 c 및 a와 동일한 단위를 사용합니다."
-        ]
-      },
-      "calculator": {
-        "outputLabel": "b = 모르는 변",
-        "fields": [
+        "diagram": {
+          "h2": "빗변과 누락된 변 확인하기",
+          "intro": "이 도표는 c와 a를 이미 알고 있는 값으로 표시합니다. 수직 변 b는 이 계산기가 구하는 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">누락된 변</a>으로 강조되어 있습니다.",
+          "caption": "알려진 빗변 c, 알려진 변 a, 미지의 변 b를 보여주는 직각삼각형 도표.",
+          "sides": {
+            "a": {
+              "label": "a = 알려진 값",
+              "description": "변 a는 직각삼각형의 밑변에 있는 알려진 변입니다.",
+              "status": "known"
+            },
+            "b": {
+              "label": "b = 구하기",
+              "description": "변 b는 c²에서 a²을 빼서 구하는 미지의 변입니다.",
+              "status": "unknown"
+            },
+            "c": {
+              "label": "c = 알려진 값",
+              "description": "빗변 c는 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">직각</a>의 맞은편에 있는 가장 긴 알려진 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>입니다.",
+              "status": "known"
+            }
+          },
+          "notes": [
+            "c는 빗변이어야 하며, 직각변 중 하나가 아닙니다.",
+            "c가 a보다 작거나 같으면, 입력값은 유효한 직각삼각형을 이루지 않습니다.",
+            "결과 b는 c와 a와 같은 단위를 사용합니다."
+          ]
+        },
+        "calculator": {
+          "outputLabel": "누락된 변 b",
+          "fields": [
+            {
+              "key": "c",
+              "label": "빗변 c",
+              "min": 0
+            },
+            {
+              "key": "a",
+              "label": "변 a",
+              "min": 0
+            }
+          ]
+        },
+        "formulaSection": {
+          "h2": "누락된 변을 구하는 공식",
+          "paragraphs": [
+            "이 계산은 두 직각변의 제곱과 빗변의 제곱의 관계를 나타내는 <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">피타고라스 정리</a>를 사용합니다. 누락된 변을 분리하기 위해 식을 단계별로 변형합니다.",
+            "<strong>1단계: 피타고라스 정리에서 시작합니다.</strong> 두 직각변의 제곱의 합은 빗변의 제곱과 같습니다.",
+            "<strong>2단계: 양변에서 a²을 뺍니다.</strong> 이렇게 하면 누락된 변의 제곱이 분리됩니다.",
+            "<strong>3단계: 양의 제곱근을 구합니다.</strong> 변의 길이는 양수이므로 주 제곱근을 사용합니다. 식 c² − a² 전체는 근호 안에 그대로 둡니다.",
+            "여기서 <strong>a</strong>는 알려진 변, <strong>b</strong>는 누락된 변, <strong>c</strong>는 빗변입니다. 빗변은 직각의 맞은편에 있으며 항상 가장 긴 변입니다.",
+            "<strong>왜 뺄까요?</strong> 원래 식은 두 직각변의 제곱을 더해 빗변의 제곱을 구합니다. 빗변과 한 변을 이미 알고 있을 때는, 미지의 변의 제곱을 분리하기 위해 빗변의 제곱에서 알려진 변의 제곱을 뺍니다. 그런 다음 제곱근을 구합니다. 변 자체를 빗변에서 직접 빼면 안 됩니다 — 항상 두 측정값의 제곱을 뺍니다."
+          ],
+          "formulas": [
+            "a^2 + b^2 = c^2",
+            "b^2 = c^2 - a^2",
+            "b = \\sqrt{c^2 - a^2}"
+          ]
+        },
+        "howTo": {
+          "h2": "c와 a로부터 변 b 구하는 방법",
+          "steps": [
+            "90° 각의 맞은편에 있는 빗변을 확인합니다. 빗변은 항상 가장 긴 변입니다.",
+            "첫 번째 입력란에 빗변 c를 입력합니다.",
+            "두 번째 입력란에 알려진 변 a를 입력합니다.",
+            "두 측정값이 같은 단위를 사용하는지 확인합니다.",
+            "계산하기를 클릭해 누락된 변 b를 구합니다.",
+            "계산기 아래에 표시된 결과와 단계별 풀이를 확인합니다.",
+            "a² + b²이 c²과 같은지 확인해 답을 검증합니다."
+          ]
+        },
+        "example": {
+          "h2": "누락된 변을 구하는 풀이 예제",
+          "intro": "각 예제는 문제 제시부터 검증된 답까지 전체 계산 과정을 보여줍니다. 다섯 예제 모두 공식 b = √(c² − a²)를 사용합니다.",
+          "lines": [
+            "b = \\sqrt{13^2 - 5^2}",
+            "b = \\sqrt{169 - 25}",
+            "b = \\sqrt{144}",
+            "b = 12"
+          ]
+        },
+        "extraSections": [
           {
-            "key": "c",
-            "label": "c = 빗변",
-            "min": 0
+            "h2": "상세 풀이 예제",
+            "paragraphs": [
+              "<h3>예제 1: 표준 5–12–13 삼각형</h3><p><strong>문제:</strong> 빗변 c = 13 cm, 알려진 변 a = 5 cm인 직각삼각형의 누락된 변을 구하세요.</p><p><strong>주어진 값:</strong> c = 13 cm, a = 5 cm. <strong>구하기:</strong> b.</p><p><strong>공식:</strong> b = √(c² − a²)</p><p><strong>대입:</strong> b = √(13² − 5²) = √(169 − 25) = √144</p><p><strong>답:</strong> <strong>b = 12 cm</strong></p><p><strong>검증:</strong> 5² + 12² = 25 + 144 = 169 = 13². 알려진 변, 누락된 변, 빗변은 유효한 직각삼각형을 이룹니다.</p>",
+              "<h3>예제 2: 벽에 기댄 사다리</h3><p><strong>문제:</strong> 5 m 사다리가 수직 벽에 기대어 있습니다. 사다리 밑부분이 벽에서 3 m 떨어져 있습니다. 사다리가 닿는 높이를 구하세요.</p><p><strong>주어진 값:</strong> c = 5 m (사다리), a = 3 m (지면 거리). <strong>구하기:</strong> b (벽 높이).</p><p><strong>계산:</strong> b = √(5² − 3²) = √(25 − 9) = √16 = 4 m</p><p><strong>답:</strong> <strong>사다리는 벽의 4 m 높이에 닿습니다.</strong></p><img src=\"/images/missing-leg/missing-leg-ladder.svg\" alt=\"사다리 도표: 빗변인 5 m 사다리, 변 a인 3 m 지면 거리, 누락된 변 b인 4 m 벽 높이\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>그림: 수직 벽(b = 4 m), 수평 지면 거리(a = 3 m), 사다리(c = 5 m). 이는 수직 벽과 수평 지면을 가정한 기하학적 모형이며, 사다리 안전 평가가 아닙니다.</em></p>",
+              "<h3>예제 3: 직사각형 방의 대각선</h3><p><strong>문제:</strong> 직사각형 방의 대각선이 17 ft이고 한 변이 8 ft입니다. 다른 변을 구하세요.</p><p><strong>주어진 값:</strong> c = 17 ft (대각선), a = 8 ft. <strong>구하기:</strong> b.</p><p><strong>계산:</strong> b = √(17² − 8²) = √(289 − 64) = √225 = 15 ft</p><p><strong>답:</strong> <strong>다른 변은 15 ft입니다.</strong></p><img src=\"/images/missing-leg/missing-leg-room.svg\" alt=\"방 도표: 빗변인 17 ft 대각선, 변 a인 8 ft 알려진 변, 누락된 변 b인 15 ft 변\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>그림: 위에서 본 모습. 대각선(c = 17 ft)은 직사각형을 두 개의 직각삼각형으로 나눕니다. 알려진 변(a = 8 ft)과 누락된 변(b = 15 ft)은 직각을 이룹니다.</em></p>",
+              "<h3>예제 4: 반올림이 필요한 결과</h3><p><strong>문제:</strong> c = 10 m, a = 7 m일 때 b를 구하세요.</p><p><strong>계산:</strong> b = √(10² − 7²) = √(100 − 49) = √51 ≈ 7.141428 m</p><p><strong>답:</strong> <strong>b ≈ 7.14 m</strong>, 소수점 둘째 자리에서 반올림.</p><p><strong>검증:</strong> 7² + (√51)² = 49 + 51 = 100 = 10².</p><p>중간 계산에서는 정확한 값(√51)을 그대로 사용하고, 반올림은 최종 답에서만 하세요. 일찍 반올림하면 여러 단계 문제에서 오차가 누적됩니다.</p>",
+              "<h3>예제 5: 경사로 기하학</h3><p><strong>문제:</strong> 곧은 경사로의 길이가 13 m이고 수평 거리가 12 m입니다. 수직 높이를 구하세요.</p><p><strong>주어진 값:</strong> c = 13 m (경사로), a = 12 m (수평 거리). <strong>구하기:</strong> b (수직 높이).</p><p><strong>계산:</strong> b = √(13² − 12²) = √(169 − 144) = √25 = 5 m</p><p><strong>답:</strong> <strong>수직 높이는 5 m입니다.</strong></p><img src=\"/images/missing-leg/missing-leg-ramp.svg\" alt=\"경사로 도표: 빗변인 13 m 경사로, 변 a인 12 m 수평 거리, 누락된 변 b인 5 m 수직 높이\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>그림: 빗변인 경사로(c = 13 m), 수평 거리(a = 12 m), 수직 높이(b = 5 m). 이 계산은 접근성 또는 건축 규정 준수 여부를 판단하지 않습니다.</em></p>"
+            ]
           },
           {
-            "key": "a",
-            "label": "a = 알고 있는 변",
-            "min": 0
+            "h2": "누락된 변을 언제 계산할 수 있나요?",
+            "paragraphs": [
+              "유효한 퇴화되지 않은 직각삼각형이 되려면 측정값이 세 조건을 만족해야 합니다: c > 0, a > 0, 그리고 c > a. 그러면 누락된 변은 b = √(c² − a²)입니다.",
+              "<strong>경우 1: 빗변이 알려진 변보다 작을 때.</strong> c = 4, a = 5이면 b = √(16 − 25) = √(−9)입니다. 제곱근 안의 식이 음수이므로, 이 입력값들은 c를 빗변으로 하는 실제 직각삼각형을 이룰 수 없습니다.",
+              "<strong>경우 2: 빗변이 알려진 변과 같을 때.</strong> c = 5, a = 5이면 b = √(25 − 25) = 0입니다. 이는 퇴화된 경우로, 유효한 삼각형이 아닙니다.",
+              "<strong>경우 3: 0 또는 음수 측정값.</strong> 변의 길이는 양수여야 합니다. 계산기는 0과 음수 입력을 거부합니다.",
+              "<strong>경우 4: 일관되지 않은 단위.</strong> 두 측정값은 같은 단위를 사용해야 합니다. c가 미터이고 a가 센티미터라면, 계산하기 전에 하나를 변환하세요."
+            ],
+            "listTitle": "먼저 다음을 확인하세요:",
+            "listItems": [
+              "c는 90° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a>의 맞은편에 있습니다.",
+              "c는 a보다 큽니다.",
+              "두 값 모두 양수입니다.",
+              "c와 a는 같은 단위를 사용합니다."
+            ]
+          },
+          {
+            "h2": "누락된 변 공식은 어디에 사용되나요?",
+            "paragraphs": [
+              "일반적인 패턴은 다음과 같습니다: 직선 대각선이나 경사진 길이와 한 수직 거리를 알 때, 다른 수직 거리는 피타고라스 정리로부터 구할 수 있습니다. 이는 도형이 직각삼각형을 이룰 때만 성립합니다.",
+              "<strong>건축과 목공.</strong> 목수는 직사각형 틀의 대각선을 재어 모서리가 직각인지 확인합니다. 대각선(c)과 한 변(a)을 알면, 목재를 자르기 전에 누락된 변(b)으로 배치를 확인할 수 있습니다.",
+              "<strong>방과 평면도 측정.</strong> 가구나 바닥재를 계획할 때, 방의 대각선과 한 벽의 길이로 장애물을 옮기지 않고도 다른 벽의 길이를 구할 수 있습니다.",
+              "<strong>사다리와 벽 기하학.</strong> 사다리 길이와 벽으로부터의 거리를 알면 사다리가 닿는 높이를 바로 구할 수 있습니다. 이는 기하학적 모형이며, 안전 평가가 아닙니다.",
+              "<strong>경사로와 기울기 계산.</strong> 경사 길이와 수평 거리로부터 수직 높이를 구합니다. 이는 규정 준수 여부를 판단하지 않습니다."
+            ]
+          },
+          {
+            "h2": "누락된 변 계산 결과 확인 방법",
+            "paragraphs": [
+              "사용하기 전에 모든 결과를 검증하세요. 5–12–13 예제: 5² + 12² = 25 + 144 = 169 = 13².",
+              "누락된 변 b로 표시된 출력은 a와 함께 직각을 이루는 다른 변의 길이입니다. 빗변이 아니며, c보다 짧아야 합니다."
+            ],
+            "listTitle": "유효한 결과는 다음을 만족해야 합니다:",
+            "listItems": [
+              "b는 0보다 큽니다.",
+              "b는 c보다 짧습니다.",
+              "a² + b²은 c²과 같습니다(표시된 값의 반올림 허용).",
+              "결과는 올바른 단위를 사용합니다."
+            ]
+          },
+          {
+            "h2": "누락된 변을 구할 때 흔한 실수",
+            "paragraphs": [
+              "가장 흔한 오류는 c를 직각변으로 착각하는 것입니다. 여기서 c는 빗변이어야 합니다: 가장 긴 변이며, 직각의 맞은편에 있습니다.",
+              "또 다른 흔한 실수는 제곱을 빼는 대신 더하는 것입니다. 덧셈(a² + b²)은 빗변을 구하고, 뺄셈(c² − a²)은 빗변으로부터 누락된 변을 구합니다."
+            ],
+            "listTitle": "다음 실수를 피하세요:",
+            "listItems": [
+              "<strong>빗변과 직각변 혼동.</strong> 직각변 값을 c 입력란에 넣으면 공식이 잘못된 문제를 풉니다. 정정: c는 항상 가장 긴 변입니다.",
+              "<strong>뺄셈 대신 덧셈.</strong> 틀림: b = √(c² + a²). 정정: b = √(c² − a²).",
+              "<strong>제곱근 누락.</strong> 틀림: b = c² − a². 정정: 차이의 제곱근을 구합니다.",
+              "<strong>잘못된 제곱근 묶음.</strong> 틀림: √c² − a² (이는 c − a와 같습니다). 정정: √(c² − a²), 차이 전체가 근호 안에 있어야 합니다.",
+              "<strong>a ≥ c 입력.</strong> 알려진 변은 빗변과 같거나 길 수 없습니다. 정정: 계산 전에 c > a를 확인하세요.",
+              "<strong>단위 혼용.</strong> 틀림: c = 5 m, a = 30 cm. 정정: 먼저 같은 단위로 변환합니다 (c = 500 cm, a = 30 cm).",
+              "<strong>너무 이른 반올림.</strong> 틀림: 계산 중간에 √51을 7.14로 반올림. 정정: 최종 답까지 전체 정밀도를 유지합니다."
+            ]
           }
-        ]
-      },
-      "formulaSection": {
-        "h2": "누락된 다리 b 공식",
-        "paragraphs": [
-          "다리 b를 찾는 공식은 피타고라스 정리(a² + b² = c²)에서 파생됩니다. b를 재배열하면 아래 공식이 제공됩니다.",
-          "여기서 c는 빗변(직각 삼각형의 가장 긴 변)이고, a는 알려진 다리이며, b는 해결하려는 누락 다리입니다. 뺄셈에 주목하세요. 빗변의 제곱에서 알려진 다리의 제곱을 뺀 다음 제곱근을 취합니다."
         ],
-        "formulas": [
-          "b = \\sqrt{c^2 - a^2}"
+        "relatedLinks": [
+          {
+            "href": "/right-triangle-side-calculator/",
+            "label": "직각삼각형 변 계산기"
+          },
+          {
+            "href": "/pythagorean-theorem-calculator/",
+            "label": "피타고라스 정리 계산기"
+          },
+          {
+            "href": "/missing-leg-from-c-and-b-calculator/",
+            "label": "c와 b로부터 누락된 변 계산기"
+          },
+          {
+            "href": "/right-triangle-angle-calculator/",
+            "label": "직각삼각형 각도 계산기"
+          },
+          {
+            "href": "/right-triangle-measurements-calculator/",
+            "label": "직각삼각형 측정 계산기"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "빗변과 한 변으로부터 누락된 변을 어떻게 구하나요?",
+            "answer": "빗변을 제곱하고(c²), 알려진 변을 제곱한 뒤(a²), 빼고 제곱근을 구합니다: b = √(c² − a²). 위 계산기에 두 값을 입력하면 단계별 풀이와 함께 즉시 결과를 얻을 수 있습니다."
+          },
+          {
+            "question": "왜 더하지 않고 뺄까요?",
+            "answer": "피타고라스 정리는 직각변의 제곱을 더해 빗변의 제곱을 구합니다(a² + b² = c²). 빗변을 이미 알고 있을 때는 변형하세요: 빗변의 제곱에서 알려진 변의 제곱을 빼서 누락된 변의 제곱을 분리한 뒤, 제곱근을 구합니다."
+          },
+          {
+            "question": "어느 변이 빗변인지 어떻게 알 수 있나요?",
+            "answer": "빗변은 항상 가장 긴 변이며 90° 각의 맞은편에 있습니다. 세 측정값이 5, 12, 13이라면 빗변은 13입니다."
+          },
+          {
+            "question": "알려진 변이 빗변과 같거나 더 길면 어떻게 되나요?",
+            "answer": "a = c이면 결과는 b = 0입니다(퇴화된 경우로, 삼각형이 아닙니다). a > c이면 음수의 제곱근은 실수 해가 없습니다. 두 경우 모두 유효하지 않은 입력으로 거부됩니다."
+          },
+          {
+            "question": "누락된 변이 소수일 수 있나요?",
+            "answer": "예. 예를 들어 c = 10, a = 7이면 b = √51 ≈ 7.14입니다. 계산 중에는 전체 정밀도를 유지하고 최종 답에서만 반올림하세요."
+          },
+          {
+            "question": "답이 맞는지 어떻게 확인할 수 있나요?",
+            "answer": "a² + b² = c²인지 검증하세요. 5–12–13 예제: 25 + 144 = 169. 또한 b > 0, b < c인지, 단위가 입력값과 일치하는지 확인하세요."
+          },
+          {
+            "question": "서로 다른 측정 단위를 사용할 수 있나요?",
+            "answer": "두 입력 모두 같은 단위를 사용해야 합니다. c가 미터이고 a가 센티미터라면 먼저 하나를 변환하세요. 결과는 입력 단위를 사용합니다."
+          },
+          {
+            "question": "이 계산기로 미지의 각도도 구할 수 있나요?",
+            "answer": "아니요, 이 모드는 누락된 변 b만 구합니다. 각도를 구하려면 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">직각삼각형 각도 계산기</a>를 사용하세요."
+          }
         ]
-      },
-      "howTo": {
-        "h2": "c 및 a에서 레그 b를 찾는 방법",
-        "steps": [
-          "c가 빗변이고 a가 다리인지 확인합니다. 빗변은 항상 가장 긴 변입니다.",
-          "첫 번째 입력란에 빗변 c를 입력합니다.",
-          "알려진 구간 a를 두 번째 입력 필드에 입력합니다.",
-          "누락된 다리를 찾으려면 계산을 클릭하세요.",
-          "전체 단계별 솔루션과 함께 b에 대한 결과를 읽어보세요."
-        ]
-      },
-      "example": {
-        "h2": "예: 다리 b 찾기",
-        "intro": "주어진 값: c = 13, a = 5. 빗변이 13이고 변이 5인 직각삼각형의 빠진 변은 12입니다.",
-        "lines": [
-          "b = \\sqrt{13^2 - 5^2}",
-          "b = \\sqrt{169 - 25}",
-          "b = \\sqrt{144}",
-          "b = 12"
-        ]
-      },
-      "extraSections": [
-        {
-          "h2": "계산 전 중요 확인 사항",
-          "paragraphs": [
-            "이 수식을 사용하기 전에 c가 a보다 큰지 확인하세요. 빗변은 항상 직각삼각형의 가장 긴 변입니다. c가 a와 같으면 b = 0이 되며 이는 삼각형이 존재하지 않음을 의미합니다.",
-            "c가 a보다 작으면 제곱근 아래의 표현식은 음수가 됩니다. 이는 두 입력 값이 빗변으로 c를 사용하는 실제 직각삼각형을 설명할 수 없음을 의미합니다."
-          ],
-          "listTitle": "먼저 다음 확인 사항을 사용하세요.",
-          "listItems": [
-            "c는 90° 각도와 반대입니다.",
-            "c는 a보다 큽니다.",
-            "두 값 모두 양수입니다.",
-            "c와 a는 동일한 단위를 사용합니다."
-          ]
-        },
-        {
-          "h2": "이 계산기가 유용한 경우",
-          "paragraphs": [
-            "이 계산기는 대각선 또는 경사 측정값을 알고 있고 수직 변 중 하나는 알고 있고 다른 수직 변은 누락된 경우에 유용합니다. 이는 c 및 케이스에 초점을 맞춘 도구이므로 페이지의 모든 설명은 b를 찾는 데 중점을 둡니다.",
-            "또한 측정값을 확인하는 데도 도움이 될 수 있습니다. b에 대해 측정된 값이 계산기 결과와 일치하지 않으면 삼각형이 올바르지 않거나 빗변의 라벨이 잘못 지정되거나 한 측정에서 다른 단위가 사용될 수 있습니다."
-          ],
-          "listTitle": "일반적인 예는 다음과 같습니다.",
-          "listItems": [
-            "사다리 길이 c와 지면 거리 a를 알고 있을 때 벽 높이를 구합니다.",
-            "경사 길이와 수평 방향을 알고 있을 때 경사의 수직 상승을 찾습니다.",
-            "c 및 a를 제공하는 직각 삼각형 숙제 문제를 확인합니다.",
-            "프레임, 조경, 경사로 또는 평면도에 대한 레이아웃 측정을 확인합니다."
-          ]
-        },
-        {
-          "h2": "답변을 읽는 방법",
-          "paragraphs": [
-            "Missing Leg b라고 표시된 출력은 a와 직각을 이루는 다른 쪽 다리의 길이입니다. 빗변이 아니며 c보다 짧아야 합니다.",
-            "계산된 b가 매우 작은 경우 알려진 레그 a는 빗변 c에 매우 가깝습니다. 이는 유효할 수 있지만 값을 사용하기 전에 다이어그램과 단위를 확인하는 것이 좋습니다."
-          ],
-          "listTitle": "유효한 결과는 다음을 충족해야 합니다.",
-          "listItems": [
-            "b는 0보다 큽니다.",
-            "b는 c보다 작습니다.",
-            "a² + b²는 c²와 거의 동일합니다.",
-            "출력 단위가 입력 단위와 일치합니다."
-          ]
-        },
-        {
-          "h2": "일반적인 실수",
-          "paragraphs": [
-            "가장 일반적인 오류는 c를 다리로 취급하는 것입니다. 이 계산기에서 c는 가장 긴 변이자 직각과 반대되는 변인 빗변이어야 합니다.",
-            "또 다른 빈번한 실수는 빼는 대신 제곱을 더하는 것입니다. 덧셈은 빗변을 찾습니다. 빼기는 빗변에서 누락된 다리를 찾습니다."
-          ],
-          "listTitle": "다음과 같은 실수를 피하세요.",
-          "listItems": [
-            "알려진 다리를 빗변 필드에 넣습니다.",
-            "c² - a² 대신 c² + a²를 사용합니다.",
-            "c보다 크거나 같은 값을 입력하세요.",
-            "제곱근을 취하는 대신 b²에서 중지합니다.",
-            "미터, 센티미터 등의 단위를 혼합합니다."
-          ]
-        }
-      ],
-      "relatedLinks": [
-        {
-          "href": "/right-triangle-side-calculator/",
-          "label": "직각 삼각형 변 계산기"
-        },
-        {
-          "href": "/pythagorean-theorem-calculator/",
-          "label": "계산기: 피타고라스의 정리"
-        },
-        {
-          "href": "/missing-leg-from-c-and-b-calculator/",
-          "label": "계산기: c와 b를 이용한 한 변 구하기"
-        }
-      ],
-      "faqs": [
-        {
-          "question": "이 계산기에서 c는 무엇을 의미합니까?",
-          "answer": "c는 직각 삼각형의 빗변입니다. 가장 긴 변은 90° 각도 반대편에 있습니다. 다리가 아닙니다. 이 계산기에 알려진 두 값 중 하나로 c를 입력합니다."
-        },
-        {
-          "question": "이 계산기에서 은(는) 무엇을 의미하나요?",
-          "answer": "a는 직각 삼각형의 두 다리 중 하나입니다. 직각을 이루는 변 중 하나입니다. 이 계산기에서 a는 이미 알고 있는 다리입니다."
-        },
-        {
-          "question": "이 계산기는 무엇을 찾아내나요?",
-          "answer": "이 계산기는 누락된 다리 b를 찾습니다. 빗변 c와 다리 a가 주어지면 b = √(c² − a²)를 계산하고 단계별 솔루션을 보여줍니다."
-        },
-        {
-          "question": "c가 a보다 작을 수 있나요?",
-          "answer": "아니요. 직각 삼각형에서 빗변은 항상 가장 긴 변입니다. c가 a보다 작은 경우 값은 유효한 직각 삼각형을 형성하지 않습니다. 계산하기 전에 어떤 측정값이 빗변인지 확인하세요."
-        },
-        {
-          "question": "c 및 a에서 b를 어떻게 찾나요?",
-          "answer": "빗변을 제곱하고(c²) 알려진 변을 제곱하고(a²) c²에서 a²를 빼고 제곱근을 구합니다. 공식은 b = √(c² − a²)입니다. 또는 즉시 답을 얻으려면 이 계산기에 값을 입력하세요."
-        }
-      ]
     },
     "missing-leg-from-c-and-b-calculator": {
       "slug": "missing-leg-from-c-and-b-calculator",
@@ -6192,204 +6582,243 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         }
       ]
     },
-    "missing-leg-from-c-and-a-calculator": {
-      "slug": "missing-leg-from-c-and-a-calculator",
-      "url": "/missing-leg-from-c-and-a-calculator/",
-      "h1": "Kalkulator: Cari Sisi dari c dan a",
-      "metaTitle": "Kalkulator: Cari Sisi dari c dan a | Right Triangle Solver",
-      "metaDescription": "Cari sisi b apabila hipotenus c and sisi lain a diketahui.",
-      "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "Ingat: c sentiasa hipotenus - sisi terpanjang, bertentangan dengan sudut kanan. Ia bukan sisi. Jika anda mempunyai dua sisi dan sebaliknya memerlukan hipotenus, gunakan Kalkulator Teorem Pythagoras.",
-      "intro": "Cari sisi b apabila hipotenus c and sisi lain a diketahui.",
-      "quickSummary": {
-        "h2": "Perkara yang Selesaikan Kalkulator sisi Yang Hilang Ini",
-        "intro": "Gunakan halaman ini apabila hipotenus dan sisi a diketahui, tetapi sisi sebelah lagi tiada. Kalkulator menyusun semula teorem Pythagoras untuk menolak sisi yang diketahui daripada hipotenus sebelum mengambil punca kuasa dua.",
-        "cards": [
-          {
-            "label": "Nilai yang diketahui",
-            "value": "c = hipotenus; a = sisi diketahui"
-          },
-          {
-            "label": "Menemui",
-            "value": "b = sisi tidak diketahui"
-          },
-          {
-            "label": "Formula utama",
-            "value": "b = sqrt(c^2 - a^2)"
-          },
-          {
-            "label": "Cek yang diperlukan",
-            "value": "Memerlukan c > a."
-          }
-        ]
-      },
-      "diagram": {
-        "h2": "Rajah Segi Tiga Kanan: Mencari sisi b",
-        "intro": "Gambar rajah menandakan c dan a sebagai nilai yang anda sudah tahu. sisi menegak b diserlahkan sebagai bahagian yang hilang yang diselesaikan oleh kalkulator ini.",
-        "caption": "Gambar rajah segi tiga kanan dengan hipotenus diketahui c, sisi diketahui a dan sisi tidak diketahui b.",
-        "sides": {
-          "a": {
-            "label": "a = diketahui",
-            "description": "sisi a ialah sisi yang diketahui di sepanjang pangkal segi tiga tepat.",
-            "status": "known"
-          },
-          "b": {
-            "label": "b = cari",
-            "description": "sisi b ialah sisi yang tidak diketahui diselesaikan dengan menolak a^2 daripada c^2.",
-            "status": "unknown"
-          },
-          "c": {
-            "label": "c = diketahui",
-            "description": "Hypotenuse c ialah sisi terpanjang yang diketahui bertentangan dengan sudut kanan.",
-            "status": "known"
+        "missing-leg-from-c-and-a-calculator": {
+        "calculator": {
+          "fields": [
+            {
+              "key": "c",
+              "label": "Hipotenus c",
+              "min": 0
+            },
+            {
+              "key": "a",
+              "label": "Sisi a",
+              "min": 0
+            }
+          ],
+          "outputLabel": "Sisi hilang b"
+        },
+        "diagram": {
+          "caption": "Gambar rajah segi tiga bersudut tepat dengan hipotenus c yang diketahui, sisi a yang diketahui, dan sisi b yang tidak diketahui.",
+          "h2": "Kenal Pasti Hipotenus dan Sisi Hilang",
+          "intro": "Gambar rajah menandakan c dan a sebagai nilai yang telah anda ketahui. Sisi menegak b ditonjolkan sebagai <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi hilang</a> yang diselesaikan oleh kalkulator ini.",
+          "notes": [
+            "c mestilah hipotenus, bukan salah satu sisi.",
+            "Jika c kurang daripada atau sama dengan a, input tidak membentuk segi tiga bersudut tepat yang sah.",
+            "Hasil b menggunakan unit yang sama seperti c dan a."
+          ],
+          "sides": {
+            "a": {
+              "description": "Sisi a ialah sisi yang diketahui di sepanjang tapak segi tiga bersudut tepat.",
+              "label": "a = diketahui",
+              "status": "known"
+            },
+            "b": {
+              "description": "Sisi b ialah sisi yang tidak diketahui yang diselesaikan dengan menolak a^2 daripada c^2.",
+              "label": "b = cari",
+              "status": "unknown"
+            },
+            "c": {
+              "description": "Hipotenus c ialah <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> terpanjang yang diketahui bertentangan dengan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> tepat.",
+              "label": "c = diketahui",
+              "status": "known"
+            }
           }
         },
-        "notes": [
-          "c mestilah hipotenus, bukan sebelah sisi.",
-          "Jika c kurang daripada atau sama dengan a, input tidak membentuk segi tiga tepat yang sah.",
-          "Hasilnya b menggunakan unit yang sama seperti c dan a."
-        ]
-      },
-      "calculator": {
-        "outputLabel": "b = sisi tidak diketahui",
-        "fields": [
+        "example": {
+          "h2": "Contoh Penyelesaian untuk Mencari Sisi Hilang",
+          "intro": "Setiap contoh menunjukkan pengiraan penuh daripada pernyataan masalah hingga jawapan yang disahkan. Kelima-limanya menggunakan formula b = √(c² − a²).",
+          "lines": [
+            "b = \\sqrt{13^2 - 5^2}",
+            "b = \\sqrt{169 - 25}",
+            "b = \\sqrt{144}",
+            "b = 12"
+          ]
+        },
+        "extraSections": [
           {
-            "key": "c",
-            "label": "c = hipotenus",
-            "min": 0
+            "h2": "Contoh Penyelesaian Terperinci",
+            "paragraphs": [
+              "<h3>Contoh 1: Segi Tiga Standard 5–12–13</h3><p><strong>Masalah:</strong> Cari sisi hilang bagi segi tiga bersudut tepat dengan hipotenus c = 13 cm dan sisi a yang diketahui = 5 cm.</p><p><strong>Diberi:</strong> c = 13 cm, a = 5 cm. <strong>Cari:</strong> b.</p><p><strong>Formula:</strong> b = √(c² − a²)</p><p><strong>Penggantian:</strong> b = √(13² − 5²) = √(169 − 25) = √144</p><p><strong>Jawapan:</strong> <strong>b = 12 cm</strong></p><p><strong>Pengesahan:</strong> 5² + 12² = 25 + 144 = 169 = 13². Sisi yang diketahui, sisi hilang, dan hipotenus membentuk segi tiga bersudut tepat yang sah.</p>",
+              "<h3>Contoh 2: Tangga Bersandar pada Dinding</h3><p><strong>Masalah:</strong> Sebuah tangga 5 m bersandar pada dinding menegak. Tapaknya berjarak 3 m dari dinding. Cari ketinggian yang dicapai oleh tangga itu.</p><p><strong>Diberi:</strong> c = 5 m (tangga), a = 3 m (jarak tanah). <strong>Cari:</strong> b (ketinggian dinding).</p><p><strong>Pengiraan:</strong> b = √(5² − 3²) = √(25 − 9) = √16 = 4 m</p><p><strong>Jawapan:</strong> <strong>Tangga itu mencapai 4 m ke atas dinding.</strong></p><img src=\"/images/missing-leg/missing-leg-ladder.svg\" alt=\"Gambar rajah tangga: tangga 5 m sebagai hipotenus, jarak tanah 3 m sebagai sisi a, ketinggian dinding 4 m sebagai sisi hilang b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Rajah: Dinding menegak (b = 4 m), jarak tanah mengufuk (a = 3 m), dan tangga (c = 5 m). Ini ialah model geometri yang mengandaikan dinding menegak dan tanah rata, bukan penilaian keselamatan tangga.</em></p>",
+              "<h3>Contoh 3: Pepenjuru Bilik Segi Empat Tepat</h3><p><strong>Masalah:</strong> Sebuah bilik segi empat tepat mempunyai pepenjuru 17 ft dan satu sisi berukuran 8 ft. Cari sisi yang satu lagi.</p><p><strong>Diberi:</strong> c = 17 ft (pepenjuru), a = 8 ft. <strong>Cari:</strong> b.</p><p><strong>Pengiraan:</strong> b = √(17² − 8²) = √(289 − 64) = √225 = 15 ft</p><p><strong>Jawapan:</strong> <strong>Sisi yang satu lagi ialah 15 ft.</strong></p><img src=\"/images/missing-leg/missing-leg-room.svg\" alt=\"Gambar rajah bilik: pepenjuru 17 ft sebagai hipotenus, sisi 8 ft yang diketahui sebagai sisi a, sisi 15 ft yang hilang sebagai sisi b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Rajah: Pandangan dari atas. Pepenjuru (c = 17 ft) membahagikan segi empat tepat kepada dua segi tiga bersudut tepat. Sisi yang diketahui (a = 8 ft) dan sisi yang hilang (b = 15 ft) membentuk sudut tepat.</em></p>",
+              "<h3>Contoh 4: Hasil yang Memerlukan Pembundaran</h3><p><strong>Masalah:</strong> Diberi c = 10 m dan a = 7 m, cari b.</p><p><strong>Pengiraan:</strong> b = √(10² − 7²) = √(100 − 49) = √51 ≈ 7.141428 m</p><p><strong>Jawapan:</strong> <strong>b ≈ 7.14 m</strong>, dibundarkan kepada dua tempat perpuluhan.</p><p><strong>Pengesahan:</strong> 7² + (√51)² = 49 + 51 = 100 = 10².</p><p>Kekalkan nilai tepat (√51) semasa pengiraan perantaraan dan bundarkan hanya pada langkah akhir. Pembundaran awal menimbulkan ralat yang berganda dalam masalah berbilang langkah.</p>",
+              "<h3>Contoh 5: Geometri Tanjakan</h3><p><strong>Masalah:</strong> Sebuah tanjakan lurus mempunyai panjang 13 m dan jarak mengufuk 12 m. Cari ketinggian menegaknya.</p><p><strong>Diberi:</strong> c = 13 m (tanjakan), a = 12 m (jarak mengufuk). <strong>Cari:</strong> b (ketinggian).</p><p><strong>Pengiraan:</strong> b = √(13² − 12²) = √(169 − 144) = √25 = 5 m</p><p><strong>Jawapan:</strong> <strong>Ketinggian menegak ialah 5 m.</strong></p><img src=\"/images/missing-leg/missing-leg-ramp.svg\" alt=\"Gambar rajah tanjakan: tanjakan 13 m sebagai hipotenus, jarak mengufuk 12 m sebagai sisi a, ketinggian menegak 5 m sebagai sisi hilang b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Rajah: Tanjakan (c = 13 m) sebagai hipotenus, jarak mengufuk (a = 12 m), dan ketinggian menegak (b = 5 m). Pengiraan ini tidak menetapkan pematuhan terhadap peraturan kebolehcapaian atau bangunan.</em></p>"
+            ]
           },
           {
-            "key": "a",
-            "label": "a = sisi diketahui",
-            "min": 0
+            "h2": "Bilakah Anda Boleh Mengira Sisi Hilang?",
+            "listItems": [
+              "c bertentangan dengan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> 90°.",
+              "c lebih besar daripada a.",
+              "Kedua-dua nilai adalah positif.",
+              "c dan a menggunakan unit yang sama."
+            ],
+            "listTitle": "Gunakan semakan ini terlebih dahulu:",
+            "paragraphs": [
+              "Bagi segi tiga bersudut tepat tak merosot yang sah, ukuran mesti memenuhi tiga syarat: c > 0, a > 0, dan c > a. Sisi hilang kemudiannya ialah b = √(c² − a²).",
+              "<strong>Kes 1: Hipotenus lebih kecil daripada sisi yang diketahui.</strong> Jika c = 4 dan a = 5, maka b = √(16 − 25) = √(−9). Ungkapan di bawah punca kuasa dua adalah negatif, jadi input ini tidak boleh membentuk segi tiga bersudut tepat sebenar dengan c sebagai hipotenus.",
+              "<strong>Kes 2: Hipotenus sama dengan sisi yang diketahui.</strong> Jika c = 5 dan a = 5, maka b = √(25 − 25) = 0. Ini ialah kes merosot, bukan segi tiga yang sah.",
+              "<strong>Kes 3: Ukuran sifar atau negatif.</strong> Panjang sisi mestilah positif. Kalkulator menolak input sifar dan negatif.",
+              "<strong>Kes 4: Unit yang tidak konsisten.</strong> Kedua-dua ukuran mesti menggunakan unit yang sama. Jika c dalam meter dan a dalam sentimeter, tukar salah satu sebelum mengira."
+            ]
+          },
+          {
+            "h2": "Di Manakah Formula Sisi Hilang Digunakan?",
+            "paragraphs": [
+              "Corak umum: apabila pepenjuru garis lurus atau panjang condong dan satu jarak serenjang diketahui, jarak serenjang yang satu lagi diperoleh daripada teorem Pythagoras. Ini hanya berfungsi apabila geometri membentuk segi tiga bersudut tepat.",
+              "<strong>Pembinaan dan kerja rangka.</strong> Tukang kayu memeriksa sudut tepat dengan mengukur pepenjuru rangka segi empat tepat. Jika pepenjuru (c) dan satu sisi (a) diketahui, sisi hilang (b) mengesahkan susun atur sebelum memotong kayu.",
+              "<strong>Ukuran bilik dan pelan lantai.</strong> Apabila merancang perabot atau lantai, pepenjuru bilik dan panjang satu dinding memberi panjang dinding yang satu lagi tanpa menggerakkan halangan.",
+              "<strong>Geometri tangga dan dinding.</strong> Dengan panjang tangga dan jaraknya dari dinding, ketinggian yang dicapainya diperoleh secara langsung. Ini ialah model geometri, bukan penilaian keselamatan.",
+              "<strong>Pengiraan tanjakan dan cerun.</strong> Daripada panjang cerun dan jarak mengufuk, ketinggian menegak ditentukan. Ini tidak menetapkan pematuhan kod."
+            ]
+          },
+          {
+            "h2": "Cara Menyemak Pengiraan Sisi Hilang Anda",
+            "listItems": [
+              "b lebih besar daripada sifar.",
+              "b lebih pendek daripada c.",
+              "a² + b² bersamaan dengan c², dengan mengambil kira pembundaran dalam nilai yang dipaparkan.",
+              "Hasil menggunakan unit yang betul."
+            ],
+            "listTitle": "Hasil yang sah mesti memenuhi:",
+            "paragraphs": [
+              "Sahkan setiap hasil sebelum menggunakannya. Bagi contoh 5–12–13: 5² + 12² = 25 + 144 = 169 = 13².",
+              "Output berlabel Sisi hilang b ialah panjang sisi yang satu lagi yang membentuk sudut tepat dengan a. Ia bukan hipotenus dan sepatutnya lebih pendek daripada c."
+            ]
+          },
+          {
+            "h2": "Kesilapan Lazim Apabila Mencari Sisi Hilang",
+            "listItems": [
+              "<strong>Mengelirukan hipotenus dengan sisi.</strong> Jika anda memasukkan nilai sisi ke dalam medan c, formula menyelesaikan masalah yang salah. Betul: c sentiasa merupakan sisi terpanjang.",
+              "<strong>Menambah kuasa dua dan bukannya menolak.</strong> Salah: b = √(c² + a²). Betul: b = √(c² − a²).",
+              "<strong>Lupa punca kuasa dua.</strong> Salah: b = c² − a². Betul: ambil punca kuasa dua perbezaan itu.",
+              "<strong>Pengumpulan punca kuasa dua yang salah.</strong> Salah: √c² − a² (yang sama dengan c − a). Betul: √(c² − a²), dengan keseluruhan perbezaan di dalam radikal.",
+              "<strong>Memasukkan a ≥ c.</strong> Sisi yang diketahui tidak boleh sama atau melebihi hipotenus. Betul: sahkan c > a sebelum mengira.",
+              "<strong>Mencampur unit.</strong> Salah: c = 5 m, a = 30 cm. Betul: tukar kepada unit yang sama dahulu (c = 500 cm, a = 30 cm).",
+              "<strong>Membundar terlalu awal.</strong> Salah: membundarkan √51 kepada 7.14 semasa pengiraan. Betul: kekalkan ketepatan penuh sehingga jawapan akhir."
+            ],
+            "listTitle": "Elakkan kesilapan ini:",
+            "paragraphs": [
+              "Kesilapan paling lazim ialah menganggap c sebagai sisi. Di sini c mestilah hipotenus: sisi terpanjang, bertentangan dengan sudut tepat.",
+              "Satu lagi kesilapan kerap ialah menambah kuasa dua dan bukannya menolak. Penambahan (a² + b²) mencari hipotenus; penolakan (c² − a²) mencari sisi hilang daripada hipotenus."
+            ]
           }
-        ]
-      },
-      "formulaSection": {
-        "h2": "Formula b sisi Hilang",
-        "paragraphs": [
-          "Formula untuk mencari sisi b diperoleh daripada teorem Pythagoras (a² + b² = c²). Penyusunan semula untuk b memberikan formula di bawah.",
-          "Di mana c ialah hipotenus (sisi terpanjang bagi segi tiga tepat), a ialah sisi yang diketahui dan b ialah sisi yang hilang yang anda selesaikan. Perhatikan penolakan: anda menolak kuasa dua sisi yang diketahui daripada kuasa dua hipotenus, kemudian ambil punca kuasa dua."
         ],
-        "formulas": [
-          "b = \\sqrt{c^2 - a^2}"
-        ]
-      },
-      "howTo": {
-        "h2": "Cara Cari sisi b Dari c dan a",
-        "steps": [
-          "Sahkan bahawa c ialah hipotenus dan a ialah sisi. Hipotenus sentiasa sisi terpanjang.",
-          "Masukkan hipotenus c ke dalam medan input pertama.",
-          "Masukkan sisi yang diketahui a ke dalam medan input kedua.",
-          "Klik Kira untuk mencari sisi yang hilang.",
-          "Baca keputusan untuk b, bersama-sama dengan penyelesaian langkah demi langkah penuh."
-        ]
-      },
-      "example": {
-        "h2": "Contoh: Cari sisi b",
-        "intro": "Diberi: c = 13, a = 5. sisi segi tiga tegak yang hilang dengan hipotenus 13 dan sisi 5 ialah 12.",
-        "lines": [
-          "b = \\sqrt{13^2 - 5^2}",
-          "b = \\sqrt{169 - 25}",
-          "b = \\sqrt{144}",
-          "b = 12"
-        ]
-      },
-      "extraSections": [
-        {
-          "h2": "Semakan Penting Sebelum Mengira",
-          "paragraphs": [
-            "Sebelum anda menggunakan formula ini, pastikan c lebih besar daripada a. Hipotenus sentiasa sisi terpanjang bagi segi tiga tegak. Jika c bersamaan dengan a, anda akan mendapat b = 0, yang bermaksud tiada segi tiga wujud.",
-            "Jika c kurang daripada a, ungkapan di bawah punca kuasa dua menjadi negatif. Ini bermakna dua nilai input tidak boleh menerangkan segi tiga tepat sebenar dengan c sebagai hipotenus."
+        "faqs": [
+          {
+            "answer": "Kuasa duakan hipotenus (c²), kuasa duakan sisi yang diketahui (a²), tolak, dan ambil punca kuasa dua: b = √(c² − a²). Masukkan kedua-dua nilai ke dalam kalkulator di atas untuk hasil serta-merta berserta langkah.",
+            "question": "Bagaimanakah saya mencari sisi hilang daripada hipotenus dan satu sisi?"
+          },
+          {
+            "answer": "Teorem Pythagoras menambah kuasa dua sisi untuk mendapatkan kuasa dua hipotenus (a² + b² = c²). Apabila anda telah mengetahui hipotenus, susun semula: tolak kuasa dua sisi yang diketahui daripada kuasa dua hipotenus untuk mengasingkan kuasa dua sisi hilang, kemudian ambil puncanya.",
+            "question": "Mengapa saya menolak dan bukannya menambah?"
+          },
+          {
+            "answer": "Hipotenus sentiasa merupakan sisi terpanjang dan terletak bertentangan dengan sudut 90°. Jika tiga ukuran anda ialah 5, 12, dan 13, hipotenus ialah 13.",
+            "question": "Bagaimanakah saya tahu sisi yang mana ialah hipotenus?"
+          },
+          {
+            "answer": "Jika a = c, hasilnya ialah b = 0 (merosot, bukan segi tiga). Jika a > c, punca kuasa dua nombor negatif tidak mempunyai penyelesaian nyata. Kedua-dua kes ditolak sebagai tidak sah.",
+            "question": "Apakah yang berlaku jika sisi yang diketahui sama dengan atau lebih panjang daripada hipotenus?"
+          },
+          {
+            "answer": "Ya. Contohnya, c = 10 dan a = 7 memberi b = √51 ≈ 7.14. Kekalkan ketepatan penuh semasa pengiraan dan bundarkan hanya jawapan akhir.",
+            "question": "Bolehkah sisi hilang menjadi perpuluhan?"
+          },
+          {
+            "answer": "Sahkan bahawa a² + b² = c². Bagi contoh 5–12–13: 25 + 144 = 169. Juga pastikan b > 0, b < c, dan unit sepadan dengan input anda.",
+            "question": "Bagaimanakah saya boleh menyemak sama ada jawapan itu betul?"
+          },
+          {
+            "answer": "Kedua-dua input mesti menggunakan unit yang sama. Jika c dalam meter dan a dalam sentimeter, tukar salah satu dahulu. Hasil menggunakan unit input.",
+            "question": "Bolehkah saya menggunakan unit ukuran yang berbeza?"
+          },
+          {
+            "answer": "Tidak, mod ini hanya mencari sisi hilang b. Untuk mencari sudut, gunakan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Kalkulator Sudut Segi Tiga Bersudut Tepat</a>.",
+            "question": "Bolehkah kalkulator ini juga mencari sudut yang tidak diketahui?"
+          }
+        ],
+        "formulaSection": {
+          "formulas": [
+            "a^2 + b^2 = c^2",
+            "b^2 = c^2 - a^2",
+            "b = \\sqrt{c^2 - a^2}"
           ],
-          "listTitle": "Gunakan semakan ini dahulu:",
-          "listItems": [
-            "c adalah bertentangan dengan sudut 90°.",
-            "c lebih besar daripada a.",
-            "Kedua-dua nilai adalah positif.",
-            "c dan a menggunakan unit yang sama."
+          "h2": "Formula untuk Mencari Sisi Hilang",
+          "paragraphs": [
+            "Pengiraan ini menggunakan <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">teorem Pythagoras</a>, yang mengaitkan kuasa dua kedua-dua sisi dengan kuasa dua hipotenus. Untuk mengasingkan sisi hilang, susun semula persamaan langkah demi langkah.",
+            "<strong>Langkah 1: Mulakan dengan teorem Pythagoras.</strong> Kuasa dua kedua-dua sisi ditambah menghasilkan kuasa dua hipotenus.",
+            "<strong>Langkah 2: Tolak a² daripada kedua-dua belah.</strong> Ini mengasingkan kuasa dua sisi hilang.",
+            "<strong>Langkah 3: Ambil punca kuasa dua positif.</strong> Panjang sisi adalah positif, jadi gunakan punca utama. Keseluruhan ungkapan c² − a² kekal di dalam radikal.",
+            "Dengan <strong>a</strong> sebagai sisi yang diketahui, <strong>b</strong> sebagai sisi hilang, dan <strong>c</strong> sebagai hipotenus. Hipotenus terletak bertentangan dengan sudut tepat dan sentiasa merupakan sisi terpanjang.",
+            "<strong>Mengapa perlu menolak?</strong> Persamaan asal menambah kuasa dua kedua-dua sisi untuk mendapatkan kuasa dua hipotenus. Apabila hipotenus dan satu sisi telah diketahui, tolak kuasa dua sisi yang diketahui daripada kuasa dua hipotenus untuk mengasingkan kuasa dua sisi yang tidak diketahui. Kemudian ambil punca kuasa dua. Jangan sekali-kali menolak sisi daripada hipotenus secara langsung — sentiasa tolak kuasa dua mereka."
           ]
         },
-        {
-          "h2": "Di mana Kalkulator Ini Berguna",
-          "paragraphs": [
-            "Kalkulator ini berguna apabila ukuran pepenjuru atau cerun diketahui, satu sisi berserenjang diketahui, dan sisi berserenjang yang satu lagi hilang. Ia ialah alat yang difokuskan untuk c-and-a case, jadi setiap penjelasan pada halaman menunjukkan ke arah mencari b.",
-            "Ia juga boleh membantu mengesahkan ukuran. Jika nilai yang diukur untuk b tidak sepadan dengan keputusan kalkulator, segi tiga mungkin tidak betul, hipotenus mungkin disalahlabelkan atau satu ukuran mungkin menggunakan unit yang berbeza."
-          ],
-          "listTitle": "Contoh biasa termasuk:",
-          "listItems": [
-            "Mencari ketinggian dinding apabila panjang tangga c dan jarak tanah a diketahui.",
-            "Mencari kenaikan menegak suatu cerun apabila panjang cerun dan larian mendatar diketahui.",
-            "Menyemak masalah kerja rumah segi tiga tepat yang memberikan c dan a.",
-            "Mengesahkan ukuran susun atur untuk rangka, landskap, tanjakan atau pelan lantai."
+        "formulaSlug": "leg-from-hypotenuse-and-other-leg",
+        "h1": "Kalkulator Sisi Hilang: Cari Sisi b daripada Hipotenus c dan Sisi a",
+        "howTo": {
+          "h2": "Cara Mencari Sisi b daripada c dan a",
+          "steps": [
+            "Kenal pasti hipotenus, yang terletak bertentangan dengan sudut 90°. Ia sentiasa merupakan sisi terpanjang.",
+            "Masukkan hipotenus c ke dalam medan input pertama.",
+            "Masukkan sisi a yang diketahui ke dalam medan input kedua.",
+            "Pastikan kedua-dua ukuran menggunakan unit yang sama.",
+            "Klik Kira untuk mencari sisi hilang b.",
+            "Semak hasil dan penyelesaian langkah demi langkah yang dipaparkan di bawah kalkulator.",
+            "Sahkan jawapan dengan memeriksa bahawa a² + b² bersamaan dengan c²."
           ]
         },
-        {
-          "h2": "Cara Membaca Jawapan",
-          "paragraphs": [
-            "Output berlabel sisi hilang b ialah panjang sisi satu lagi yang membentuk sudut tepat dengan a. Ia bukan hipotenus dan harus lebih pendek daripada c.",
-            "Jika b yang dikira adalah sangat kecil, sisi anda yang diketahui a sangat hampir dengan hipotenus c. Itu boleh sah, tetapi ia patut menyemak gambar rajah dan unit sebelum menggunakan nilai."
+        "intro": "<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Kalkulator</a> ini mencari sisi hilang b bagi segi tiga bersudut tepat apabila anda mengetahui hipotenus c dan sisi a yang satu lagi. Masukkan dua ukuran anda, dan ia menggunakan formula b = √(c² − a²) untuk mengira sisi yang tidak diketahui dengan serta-merta, berserta langkah penyelesaian penuh. Hipotenus ialah sisi terpanjang, bertentangan dengan sudut tepat. Kedua-dua sisi membentuk sudut tepat itu. Mengetahui sisi yang mana memastikan anda mendapat jawapan yang betul setiap kali.",
+        "metaDescription": "Cari sisi hilang bagi segi tiga bersudut tepat menggunakan hipotenus dan satu sisi yang diketahui. Kira sisi b, ikuti formula, dan semak contoh yang diselesaikan.",
+        "metaTitle": "Kalkulator Sisi Hilang: Cari b daripada c dan a",
+        "quickSummary": {
+          "cards": [
+            {
+              "label": "Nilai yang diketahui",
+              "value": "Hipotenus c dan sisi a"
+            },
+            {
+              "label": "Mencari",
+              "value": "Sisi hilang b"
+            },
+            {
+              "label": "Formula utama",
+              "value": "b = sqrt(c^2 - a^2)"
+            },
+            {
+              "label": "Semakan yang diperlukan",
+              "value": "c mestilah lebih besar daripada a"
+            }
           ],
-          "listTitle": "Keputusan yang sah harus memenuhi:",
-          "listItems": [
-            "b lebih besar daripada sifar.",
-            "b kurang daripada c.",
-            "a² + b² adalah lebih kurang sama dengan c².",
-            "Unit keluaran sepadan dengan unit input."
-          ]
+          "h2": "Apa yang Diselesaikan oleh Alat Ini",
+          "intro": "Gunakan halaman ini apabila hipotenus dan sisi a diketahui, tetapi sisi yang satu lagi tiada. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Kalkulator</a> ini menyusun semula <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">teorem Pythagoras</a> untuk menolak kuasa dua sisi yang diketahui daripada kuasa dua hipotenus sebelum mengambil punca kuasa dua."
         },
-        {
-          "h2": "Kesilapan Biasa",
-          "paragraphs": [
-            "Ralat yang paling biasa ialah menganggap c sebagai sisi. Dalam kalkulator ini, c mestilah hipotenus, iaitu sisi terpanjang dan sisi bertentangan dengan sudut tepat.",
-            "Satu lagi kesilapan yang kerap berlaku ialah menambah petak dan bukannya menolak. Penambahan mendapati hipotenus; penolakan mendapati sisi yang hilang dari hipotenus."
-          ],
-          "listTitle": "Elakkan kesilapan ini:",
-          "listItems": [
-            "Meletakkan sisi yang diketahui ke dalam medan hipotenus.",
-            "Menggunakan c² + a² dan bukannya c² - a².",
-            "Memasukkan lebih besar daripada atau sama dengan c.",
-            "Berhenti di b² dan bukannya mengambil punca kuasa dua.",
-            "Unit pencampuran seperti meter dan sentimeter."
-          ]
-        }
-      ],
-      "relatedLinks": [
-        {
-          "href": "/right-triangle-side-calculator/",
-          "label": "Kalkulator Sebelah Segi Tiga Kanan"
-        },
-        {
-          "href": "/pythagorean-theorem-calculator/",
-          "label": "Kalkulator: Teorem Pythagoras"
-        },
-        {
-          "href": "/missing-leg-from-c-and-b-calculator/",
-          "label": "Kalkulator: Cari Sisi dari c dan b"
-        }
-      ],
-      "faqs": [
-        {
-          "question": "Apakah maksud c dalam kalkulator ini?",
-          "answer": "c ialah hipotenus bagi segi tiga tepat - sisi terpanjang, terletak bertentangan dengan sudut 90°. Ia bukan sisi. Anda memasukkan c sebagai salah satu daripada dua nilai yang diketahui dalam kalkulator ini."
-        },
-        {
-          "question": "Apakah maksud dalam kalkulator ini?",
-          "answer": "a ialah salah satu daripada dua sisi segi tiga tepat. Ia adalah salah satu sisi yang membentuk sudut yang betul. Dalam kalkulator ini, a ialah sisi yang anda sudah tahu."
-        },
-        {
-          "question": "Apakah yang ditemui oleh kalkulator ini?",
-          "answer": "Kalkulator ini mencari sisi yang hilang b. Memandangkan hipotenus c dan sisi a, ia mengira b = √(c² − a²) dan menunjukkan kepada anda penyelesaian langkah demi langkah."
-        },
-        {
-          "question": "Bolehkah c lebih kecil daripada a?",
-          "answer": "Tidak. Dalam segi tiga tepat, hipotenus sentiasa sisi terpanjang. Jika c lebih kecil daripada a, nilai tersebut tidak membentuk segi tiga tepat yang sah. Periksa ukuran mana yang merupakan hipotenus sebelum mengira."
-        },
-        {
-          "question": "Bagaimanakah saya boleh mencari b daripada c dan a?",
-          "answer": "Kuadratkan hipotenus (c²), kuasa duakan sisi yang diketahui (a²), tolak a² daripada c², dan ambil punca kuasa dua. Formulanya ialah b = √(c² − a²). Atau masukkan nilai anda ke dalam kalkulator ini untuk jawapan segera."
-        }
-      ]
+        "relatedLinks": [
+          {
+            "href": "/right-triangle-side-calculator/",
+            "label": "Kalkulator Sisi Segi Tiga Bersudut Tepat"
+          },
+          {
+            "href": "/pythagorean-theorem-calculator/",
+            "label": "Kalkulator Teorem Pythagoras"
+          },
+          {
+            "href": "/missing-leg-from-c-and-b-calculator/",
+            "label": "Kalkulator Sisi Hilang daripada c dan b"
+          },
+          {
+            "href": "/right-triangle-angle-calculator/",
+            "label": "Kalkulator Sudut Segi Tiga Bersudut Tepat"
+          },
+          {
+            "href": "/right-triangle-measurements-calculator/",
+            "label": "Kalkulator Ukuran Segi Tiga Bersudut Tepat"
+          }
+        ],
+        "slug": "missing-leg-from-c-and-a-calculator",
+        "toolPurpose": "Ingat: c sentiasa ialah hipotenus — <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> terpanjang, bertentangan dengan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> tepat. Ia bukan sisi kaki. Jika anda mempunyai dua sisi dan memerlukan hipotenus pula, gunakan Kalkulator <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Teorem Pythagoras</a>.",
+        "url": "/missing-leg-from-c-and-a-calculator/"
     },
     "missing-leg-from-c-and-b-calculator": {
       "slug": "missing-leg-from-c-and-b-calculator",
@@ -6791,204 +7220,243 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         }
       ]
     },
-    "missing-leg-from-c-and-a-calculator": {
-      "slug": "missing-leg-from-c-and-a-calculator",
-      "url": "/missing-leg-from-c-and-a-calculator/",
-      "h1": "Kalkulator: Brakująca przyprostokątna (z c i a)",
-      "metaTitle": "Kalkulator: Brakująca przyprostokątna (z c i a) | Right Triangle Solver",
-      "metaDescription": "Znajdź przyprostokątną b, gdy znana jest przeciwprostokątna c i druga przyprostokątna a.",
-      "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "Pamiętaj: c to zawsze przeciwprostokątna - najdłuższy bok, przeciwny do kąta prostego. To nie jest noga. Jeśli masz dwie nogi i zamiast tego potrzebujesz przeciwprostokątnej, użyj kalkulatora twierdzenia Pitagorasa.",
-      "intro": "Znajdź przyprostokątną b, gdy znana jest przeciwprostokątna c i druga przyprostokątna a.",
-      "quickSummary": {
-        "h2": "Co rozwiązuje ten kalkulator brakującej nogi",
-        "intro": "Użyj tej strony, jeśli znana jest przeciwprostokątna i odnoga a, ale brakuje drugiej nogi. Kalkulator przestawia twierdzenie Pitagorasa, aby przed obliczeniem pierwiastka kwadratowego odjąć znaną nogę od przeciwprostokątnej.",
-        "cards": [
-          {
-            "label": "Znane wartości",
-            "value": "c = przeciwprostokątna; a = znana przyprostokątna"
-          },
-          {
-            "label": "Znaleziska",
-            "value": "b = nieznana przyprostokątna"
-          },
-          {
-            "label": "Główna formuła",
-            "value": "b = sqrt(c^2 - a^2)"
-          },
-          {
-            "label": "Wymagane sprawdzenie",
-            "value": "Wymaga c > a."
-          }
-        ]
-      },
-      "diagram": {
-        "h2": "Schemat prawego trójkąta: Znajdowanie nogi b",
-        "intro": "Na schemacie zaznaczono c i a jako wartości, które już znasz. Odnoga pionowa b jest podświetlona jako brakujący bok, który rozwiązuje ten kalkulator.",
-        "caption": "Schemat trójkąta prostokątnego ze znaną przeciwprostokątną c, znaną nogą a i nieznaną nogą b.",
-        "sides": {
-          "a": {
-            "label": "a = znane",
-            "description": "Noga a to znana noga wzdłuż podstawy prawego trójkąta.",
-            "status": "known"
-          },
-          "b": {
-            "label": "b = znajdź",
-            "description": "Odnoga b to nieznana odnoga rozwiązana poprzez odjęcie a^2 od c^2.",
-            "status": "unknown"
-          },
-          "c": {
-            "label": "c = znany",
-            "description": "Przeciwprostokątna c to znany najdłuższy bok leżący naprzeciw kąta prostego.",
-            "status": "known"
-          }
+        "missing-leg-from-c-and-a-calculator": {
+        "slug": "missing-leg-from-c-and-a-calculator",
+        "url": "/missing-leg-from-c-and-a-calculator/",
+        "h1": "Kalkulator brakującej przyprostokątnej: Znajdź przyprostokątną b z przeciwprostokątnej c i przyprostokątnej a",
+        "metaTitle": "Kalkulator brakującej przyprostokątnej: Znajdź b z c i a",
+        "metaDescription": "Znajdź brakującą przyprostokątną trójkąta prostokątnego, używając przeciwprostokątnej i jednej znanej przyprostokątnej. Oblicz bok b, poznaj wzór i sprawdź przykłady z rozwiązaniami.",
+        "formulaSlug": "leg-from-hypotenuse-and-other-leg",
+        "toolPurpose": "Pamiętaj: c to zawsze przeciwprostokątna — najdłuższy <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a>, położony naprzeciwko <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta prostego</a>. Nie jest to przyprostokątna. Jeśli znasz obie przyprostokątne i potrzebujesz przeciwprostokątnej, użyj kalkulatora <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">twierdzenia Pitagorasa</a>.",
+        "intro": "Ten <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> znajduje brakującą przyprostokątną b trójkąta prostokątnego, gdy znasz przeciwprostokątną c i drugą przyprostokątną a. Wpisz dwie znane miary, a kalkulator zastosuje wzór b = √(c² − a²), aby natychmiast obliczyć nieznany bok, pokazując wszystkie kroki rozwiązania. Przeciwprostokątna to najdłuższy bok, położony naprzeciwko kąta prostego. Dwie przyprostokątne tworzą ten kąt prosty. Wiedza, który bok jest którym, gwarantuje prawidłowy wynik za każdym razem.",
+        "quickSummary": {
+          "h2": "Co rozwiązuje to narzędzie",
+          "intro": "Użyj tej strony, gdy znane są przeciwprostokątna i przyprostokątna a, ale brakuje drugiej przyprostokątnej. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Kalkulator</a> przekształca <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">twierdzenie Pitagorasa</a>, aby odjąć znaną przyprostokątną od przeciwprostokątnej przed wyciągnięciem pierwiastka kwadratowego.",
+          "cards": [
+            {
+              "label": "Znane wartości",
+              "value": "Przeciwprostokątna c i przyprostokątna a"
+            },
+            {
+              "label": "Znajduje",
+              "value": "Brakująca przyprostokątna b"
+            },
+            {
+              "label": "Główny wzór",
+              "value": "b = sqrt(c^2 - a^2)"
+            },
+            {
+              "label": "Wymagana kontrola",
+              "value": "c musi być większe od a"
+            }
+          ]
         },
-        "notes": [
-          "c musi być przeciwprostokątną, a nie jedną z nóg.",
-          "Jeżeli c jest mniejsze lub równe a, dane wejściowe nie tworzą prawidłowego trójkąta prostokątnego.",
-          "Wynik b wykorzystuje tę samą jednostkę co c i a."
-        ]
-      },
-      "calculator": {
-        "outputLabel": "b = nieznana przyprostokątna",
-        "fields": [
+        "diagram": {
+          "h2": "Zidentyfikuj przeciwprostokątną i brakującą przyprostokątną",
+          "intro": "Schemat zaznacza c i a jako wartości, które już znasz. Pionowa przyprostokątna b jest wyróżniona jako <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">brakujący bok</a>, który ten kalkulator wyznacza.",
+          "caption": "Schemat trójkąta prostokątnego ze znaną przeciwprostokątną c, znaną przyprostokątną a i nieznaną przyprostokątną b.",
+          "sides": {
+            "a": {
+              "label": "a = znana",
+              "description": "Przyprostokątna a to znana przyprostokątna leżąca na podstawie trójkąta prostokątnego.",
+              "status": "known"
+            },
+            "b": {
+              "label": "b = znajdź",
+              "description": "Przyprostokątna b to nieznana przyprostokątna wyznaczana przez odjęcie a^2 od c^2.",
+              "status": "unknown"
+            },
+            "c": {
+              "label": "c = znana",
+              "description": "Przeciwprostokątna c to znany najdłuższy <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> położony naprzeciwko <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta prostego</a>.",
+              "status": "known"
+            }
+          },
+          "notes": [
+            "c musi być przeciwprostokątną, a nie jedną z przyprostokątnych.",
+            "Jeśli c jest mniejsze lub równe a, dane nie tworzą prawidłowego trójkąta prostokątnego.",
+            "Wynik b podawany jest w tej samej jednostce co c i a."
+          ]
+        },
+        "calculator": {
+          "outputLabel": "Brakująca przyprostokątna b",
+          "fields": [
+            {
+              "key": "c",
+              "label": "Przeciwprostokątna c",
+              "min": 0
+            },
+            {
+              "key": "a",
+              "label": "Przyprostokątna a",
+              "min": 0
+            }
+          ]
+        },
+        "formulaSection": {
+          "h2": "Wzór na brakującą przyprostokątną",
+          "paragraphs": [
+            "Obliczenie wykorzystuje <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">twierdzenie Pitagorasa</a>, które wiąże kwadraty obu przyprostokątnych z kwadratem przeciwprostokątnej. Aby wyodrębnić brakującą przyprostokątną, przekształć równanie krok po kroku.",
+            "<strong>Krok 1: Zacznij od twierdzenia Pitagorasa.</strong> Kwadraty obu przyprostokątnych sumują się do kwadratu przeciwprostokątnej.",
+            "<strong>Krok 2: Odejmij a² od obu stron.</strong> W ten sposób wyodrębniasz kwadrat brakującej przyprostokątnej.",
+            "<strong>Krok 3: Wyciągnij dodatni pierwiastek kwadratowy.</strong> Długości boków są dodatnie, więc użyj pierwiastka głównego. Całe wyrażenie c² − a² pozostaje pod pierwiastkiem.",
+            "Gdzie <strong>a</strong> to znana przyprostokątna, <strong>b</strong> to brakująca przyprostokątna, a <strong>c</strong> to przeciwprostokątna. Przeciwprostokątna leży naprzeciwko kąta prostego i jest zawsze najdłuższym bokiem.",
+            "<strong>Dlaczego odejmujemy?</strong> Pierwotne równanie dodaje kwadraty obu przyprostokątnych, aby otrzymać kwadrat przeciwprostokątnej. Gdy przeciwprostokątna i jedna przyprostokątna są już znane, odejmij kwadrat znanej przyprostokątnej od kwadratu przeciwprostokątnej, aby wyodrębnić kwadrat nieznanej przyprostokątnej. Następnie wyciągnij pierwiastek kwadratowy. Nigdy nie odejmuj przyprostokątnej bezpośrednio od przeciwprostokątnej — zawsze odejmuj ich kwadraty."
+          ],
+          "formulas": [
+            "a^2 + b^2 = c^2",
+            "b^2 = c^2 - a^2",
+            "b = \\sqrt{c^2 - a^2}"
+          ]
+        },
+        "howTo": {
+          "h2": "Jak znaleźć przyprostokątną b z c i a",
+          "steps": [
+            "Zidentyfikuj przeciwprostokątną, która leży naprzeciwko kąta 90°. Jest to zawsze najdłuższy bok.",
+            "Wpisz przeciwprostokątną c w pierwsze pole wejściowe.",
+            "Wpisz znaną przyprostokątną a w drugie pole wejściowe.",
+            "Sprawdź, czy obie miary podane są w tej samej jednostce.",
+            "Kliknij Oblicz, aby znaleźć brakującą przyprostokątną b.",
+            "Przejrzyj wynik oraz rozwiązanie krok po kroku pokazane pod kalkulatorem.",
+            "Zweryfikuj odpowiedź, sprawdzając, czy a² + b² równa się c²."
+          ]
+        },
+        "example": {
+          "h2": "Przykłady z rozwiązaniami: znajdowanie brakującej przyprostokątnej",
+          "intro": "Każdy przykład pokazuje pełne obliczenie — od treści zadania po zweryfikowaną odpowiedź. We wszystkich pięciu używamy wzoru b = √(c² − a²).",
+          "lines": [
+            "b = \\sqrt{13^2 - 5^2}",
+            "b = \\sqrt{169 - 25}",
+            "b = \\sqrt{144}",
+            "b = 12"
+          ]
+        },
+        "extraSections": [
           {
-            "key": "c",
-            "label": "c = przeciwprostokątna",
-            "min": 0
+            "h2": "Szczegółowe przykłady z rozwiązaniami",
+            "paragraphs": [
+              "<h3>Przykład 1: Klasyczny trójkąt 5–12–13</h3><p><strong>Zadanie:</strong> Znajdź brakującą przyprostokątną trójkąta prostokątnego o przeciwprostokątnej c = 13 cm i znanej przyprostokątnej a = 5 cm.</p><p><strong>Dane:</strong> c = 13 cm, a = 5 cm. <strong>Szukane:</strong> b.</p><p><strong>Wzór:</strong> b = √(c² − a²)</p><p><strong>Podstawienie:</strong> b = √(13² − 5²) = √(169 − 25) = √144</p><p><strong>Odpowiedź:</strong> <strong>b = 12 cm</strong></p><p><strong>Weryfikacja:</strong> 5² + 12² = 25 + 144 = 169 = 13². Znana przyprostokątna, brakująca przyprostokątna i przeciwprostokątna tworzą prawidłowy trójkąt prostokątny.</p>",
+              "<h3>Przykład 2: Drabina oparta o ścianę</h3><p><strong>Zadanie:</strong> Drabina o długości 5 m opiera się o pionową ścianę. Jej podstawa znajduje się 3 m od ściany. Znajdź wysokość, na którą sięga drabina.</p><p><strong>Dane:</strong> c = 5 m (drabina), a = 3 m (odległość od ściany). <strong>Szukane:</strong> b (wysokość na ścianie).</p><p><strong>Obliczenie:</strong> b = √(5² − 3²) = √(25 − 9) = √16 = 4 m</p><p><strong>Odpowiedź:</strong> <strong>Drabina sięga 4 m w górę ściany.</strong></p><img src=\"/images/missing-leg/missing-leg-ladder.svg\" alt=\"Schemat drabiny: drabina 5 m jako przeciwprostokątna, odległość 3 m od ściany jako przyprostokątna a, wysokość 4 m na ścianie jako brakująca przyprostokątna b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Rysunek: pionowa ściana (b = 4 m), pozioma odległość od ściany (a = 3 m) i drabina (c = 5 m). Jest to model geometryczny zakładający pionową ścianę i poziome podłoże, a nie ocena bezpieczeństwa drabiny.</em></p>",
+              "<h3>Przykład 3: Przekątna prostokątnego pokoju</h3><p><strong>Zadanie:</strong> Prostokątny pokój ma przekątną długości 17 ft, a jeden bok mierzy 8 ft. Znajdź drugi bok.</p><p><strong>Dane:</strong> c = 17 ft (przekątna), a = 8 ft. <strong>Szukane:</strong> b.</p><p><strong>Obliczenie:</strong> b = √(17² − 8²) = √(289 − 64) = √225 = 15 ft</p><p><strong>Odpowiedź:</strong> <strong>Drugi bok ma 15 ft.</strong></p><img src=\"/images/missing-leg/missing-leg-room.svg\" alt=\"Schemat pokoju: przekątna 17 ft jako przeciwprostokątna, znany bok 8 ft jako przyprostokątna a, brakujący bok 15 ft jako przyprostokątna b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Rysunek: widok z góry. Przekątna (c = 17 ft) dzieli prostokąt na dwa trójkąty prostokątne. Znany bok (a = 8 ft) i brakujący bok (b = 15 ft) tworzą kąt prosty.</em></p>",
+              "<h3>Przykład 4: Wynik wymagający zaokrąglenia</h3><p><strong>Zadanie:</strong> Dane c = 10 m i a = 7 m, znajdź b.</p><p><strong>Obliczenie:</strong> b = √(10² − 7²) = √(100 − 49) = √51 ≈ 7.141428 m</p><p><strong>Odpowiedź:</strong> <strong>b ≈ 7.14 m</strong>, zaokrąglone do dwóch miejsc po przecinku.</p><p><strong>Weryfikacja:</strong> 7² + (√51)² = 49 + 51 = 100 = 10².</p><p>Zachowaj dokładną wartość (√51) podczas obliczeń pośrednich i zaokrąglaj tylko wynik końcowy. Wczesne zaokrąglanie wprowadza błędy, które narastają w zadaniach wieloetapowych.</p>",
+              "<h3>Przykład 5: Geometria podjazdu</h3><p><strong>Zadanie:</strong> Prosty podjazd ma długość 13 m i poziomy zasięg 12 m. Znajdź jego pionowe wzniesienie.</p><p><strong>Dane:</strong> c = 13 m (podjazd), a = 12 m (zasięg poziomy). <strong>Szukane:</strong> b (wzniesienie).</p><p><strong>Obliczenie:</strong> b = √(13² − 12²) = √(169 − 144) = √25 = 5 m</p><p><strong>Odpowiedź:</strong> <strong>Pionowe wzniesienie wynosi 5 m.</strong></p><img src=\"/images/missing-leg/missing-leg-ramp.svg\" alt=\"Schemat podjazdu: podjazd 13 m jako przeciwprostokątna, poziomy zasięg 12 m jako przyprostokątna a, pionowe wzniesienie 5 m jako brakująca przyprostokątna b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Rysunek: podjazd (c = 13 m) jako przeciwprostokątna, poziomy zasięg (a = 12 m) i pionowe wzniesienie (b = 5 m). Obliczenie to nie potwierdza zgodności z przepisami dotyczącymi dostępności ani przepisami budowlanymi.</em></p>"
+            ]
           },
           {
-            "key": "a",
-            "label": "a = znana przyprostokątna",
-            "min": 0
+            "h2": "Kiedy można obliczyć brakującą przyprostokątną?",
+            "paragraphs": [
+              "Aby trójkąt prostokątny był prawidłowy i niezdegenerowany, miary muszą spełniać trzy warunki: c > 0, a > 0 oraz c > a. Brakującą przyprostokątną wyznacza wtedy wzór b = √(c² − a²).",
+              "<strong>Przypadek 1: Przeciwprostokątna mniejsza od znanej przyprostokątnej.</strong> Jeśli c = 4 i a = 5, to b = √(16 − 25) = √(−9). Wyrażenie pod pierwiastkiem jest ujemne, więc te dane nie mogą utworzyć rzeczywistego trójkąta prostokątnego, w którym c jest przeciwprostokątną.",
+              "<strong>Przypadek 2: Przeciwprostokątna równa znanej przyprostokątnej.</strong> Jeśli c = 5 i a = 5, to b = √(25 − 25) = 0. Jest to przypadek zdegenerowany, a nie prawidłowy trójkąt.",
+              "<strong>Przypadek 3: Miary zerowe lub ujemne.</strong> Długości boków muszą być dodatnie. Kalkulator odrzuca dane zerowe i ujemne.",
+              "<strong>Przypadek 4: Niespójne jednostki.</strong> Obie miary muszą być podane w tej samej jednostce. Jeśli c jest w metrach, a a w centymetrach, najpierw przelicz jedną z nich."
+            ],
+            "listTitle": "Najpierw wykonaj te kontrole:",
+            "listItems": [
+              "c leży naprzeciwko <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta 90°</a>.",
+              "c jest większe od a.",
+              "Obie wartości są dodatnie.",
+              "c i a podane są w tej samej jednostce."
+            ]
+          },
+          {
+            "h2": "Gdzie stosuje się wzór na brakującą przyprostokątną?",
+            "paragraphs": [
+              "Ogólna zasada: gdy znana jest przekątna lub długość nachylona oraz jedna odległość prostopadła, drugą odległość prostopadłą wyznacza twierdzenie Pitagorasa. Działa to tylko wtedy, gdy układ geometryczny tworzy trójkąt prostokątny.",
+              "<strong>Budownictwo i ciesielstwo.</strong> Stolarze sprawdzają prostokątność narożników, mierząc przekątną prostokątnej ramy. Jeśli znana jest przekątna (c) i jeden bok (a), brakujący bok (b) potwierdza rozkład przed cięciem drewna.",
+              "<strong>Pomiary pomieszczeń i planów.</strong> Przy planowaniu umeblowania lub podłogi przekątna pomieszczenia i długość jednej ściany pozwalają wyznaczyć długość drugiej ściany bez przesuwania przeszkód.",
+              "<strong>Geometria drabiny i ściany.</strong> Mając długość drabiny i jej odległość od ściany, można bezpośrednio wyznaczyć wysokość, na którą sięga. Jest to model geometryczny, a nie ocena bezpieczeństwa.",
+              "<strong>Obliczenia podjazdów i nachyleń.</strong> Na podstawie długości nachylenia i poziomego zasięgu wyznacza się pionowe wzniesienie. Nie potwierdza to zgodności z przepisami."
+            ]
+          },
+          {
+            "h2": "Jak sprawdzić obliczenie brakującej przyprostokątnej",
+            "paragraphs": [
+              "Zweryfikuj każdy wynik przed jego użyciem. Dla przykładu 5–12–13: 5² + 12² = 25 + 144 = 169 = 13².",
+              "Wynik oznaczony jako Brakująca przyprostokątna b to długość drugiej przyprostokątnej tworzącej kąt prosty z a. Nie jest to przeciwprostokątna i powinna być krótsza od c."
+            ],
+            "listTitle": "Prawidłowy wynik musi spełniać:",
+            "listItems": [
+              "b jest większe od zera.",
+              "b jest krótsze od c.",
+              "a² + b² równa się c², z uwzględnieniem zaokrąglenia w wyświetlonej wartości.",
+              "Wynik podany jest we właściwej jednostce."
+            ]
+          },
+          {
+            "h2": "Typowe błędy przy wyznaczaniu brakującej przyprostokątnej",
+            "paragraphs": [
+              "Najczęstszym błędem jest traktowanie c jako przyprostokątnej. Tutaj c musi być przeciwprostokątną: najdłuższym bokiem, położonym naprzeciwko kąta prostego.",
+              "Innym częstym błędem jest dodawanie kwadratów zamiast ich odejmowania. Dodawanie (a² + b²) służy do znalezienia przeciwprostokątnej; odejmowanie (c² − a²) służy do znalezienia brakującej przyprostokątnej na podstawie przeciwprostokątnej."
+            ],
+            "listTitle": "Unikaj tych błędów:",
+            "listItems": [
+              "<strong>Mylenie przeciwprostokątnej z przyprostokątną.</strong> Jeśli wpiszesz wartość przyprostokątnej w pole c, wzór rozwiąże zły problem. Poprawnie: c to zawsze najdłuższy bok.",
+              "<strong>Dodawanie kwadratów zamiast odejmowania.</strong> Błędnie: b = √(c² + a²). Poprawnie: b = √(c² − a²).",
+              "<strong>Zapominanie o pierwiastku kwadratowym.</strong> Błędnie: b = c² − a². Poprawnie: wyciągnij pierwiastek kwadratowy z różnicy.",
+              "<strong>Błędne grupowanie pod pierwiastkiem.</strong> Błędnie: √c² − a² (co równa się c − a). Poprawnie: √(c² − a²), z całą różnicą pod pierwiastkiem.",
+              "<strong>Wpisywanie a ≥ c.</strong> Znana przyprostokątna nie może być równa przeciwprostokątnej ani jej przekraczać. Poprawnie: przed obliczeniem sprawdź, czy c > a.",
+              "<strong>Mieszanie jednostek.</strong> Błędnie: c = 5 m, a = 30 cm. Poprawnie: najpierw przelicz na tę samą jednostkę (c = 500 cm, a = 30 cm).",
+              "<strong>Zbyt wczesne zaokrąglanie.</strong> Błędnie: zaokrąglanie √51 do 7.14 w trakcie obliczeń. Poprawnie: zachowaj pełną dokładność aż do wyniku końcowego."
+            ]
           }
-        ]
-      },
-      "formulaSection": {
-        "h2": "Formuła brakującej nogi b",
-        "paragraphs": [
-          "Wzór na znalezienie nogi b wywodzi się z twierdzenia Pitagorasa (a² + b² = c²). Zmiana układu dla b daje poniższy wzór.",
-          "Gdzie c to przeciwprostokątna (najdłuższy bok prawego trójkąta), a to znana noga, a b to brakująca noga, której szukasz. Zwróć uwagę na odejmowanie: odejmujesz kwadrat znanej nogi od kwadratu przeciwprostokątnej, a następnie wyciągasz pierwiastek kwadratowy."
         ],
-        "formulas": [
-          "b = \\sqrt{c^2 - a^2}"
+        "relatedLinks": [
+          {
+            "href": "/right-triangle-side-calculator/",
+            "label": "Kalkulator boków trójkąta prostokątnego"
+          },
+          {
+            "href": "/pythagorean-theorem-calculator/",
+            "label": "Kalkulator twierdzenia Pitagorasa"
+          },
+          {
+            "href": "/missing-leg-from-c-and-b-calculator/",
+            "label": "Kalkulator brakującej przyprostokątnej z c i b"
+          },
+          {
+            "href": "/right-triangle-angle-calculator/",
+            "label": "Kalkulator kątów trójkąta prostokątnego"
+          },
+          {
+            "href": "/right-triangle-measurements-calculator/",
+            "label": "Kalkulator miar trójkąta prostokątnego"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Jak znaleźć brakującą przyprostokątną na podstawie przeciwprostokątnej i jednej przyprostokątnej?",
+            "answer": "Podnieś do kwadratu przeciwprostokątną (c²), podnieś do kwadratu znaną przyprostokątną (a²), odejmij i wyciągnij pierwiastek kwadratowy: b = √(c² − a²). Wpisz obie wartości w kalkulator powyżej, aby natychmiast otrzymać wynik wraz z krokami."
+          },
+          {
+            "question": "Dlaczego odejmuję, a nie dodaję?",
+            "answer": "Twierdzenie Pitagorasa dodaje kwadraty przyprostokątnych, aby otrzymać kwadrat przeciwprostokątnej (a² + b² = c²). Gdy znasz już przeciwprostokątną, przekształć równanie: odejmij kwadrat znanej przyprostokątnej od kwadratu przeciwprostokątnej, aby wyodrębnić kwadrat brakującej przyprostokątnej, a następnie wyciągnij pierwiastek."
+          },
+          {
+            "question": "Skąd mam wiedzieć, który bok jest przeciwprostokątną?",
+            "answer": "Przeciwprostokątna to zawsze najdłuższy bok, położony naprzeciwko kąta 90°. Jeśli trzy miary to 5, 12 i 13, przeciwprostokątną jest 13."
+          },
+          {
+            "question": "Co się stanie, jeśli znana przyprostokątna jest równa przeciwprostokątnej lub od niej dłuższa?",
+            "answer": "Jeśli a = c, wynikiem jest b = 0 (przypadek zdegenerowany, nie trójkąt). Jeśli a > c, pierwiastek kwadratowy z liczby ujemnej nie ma rozwiązania rzeczywistego. Oba przypadki są odrzucane jako nieprawidłowe."
+          },
+          {
+            "question": "Czy brakująca przyprostokątna może być liczbą dziesiętną?",
+            "answer": "Tak. Na przykład dla c = 10 i a = 7 otrzymujemy b = √51 ≈ 7.14. Zachowaj pełną dokładność podczas obliczeń i zaokrąglaj tylko wynik końcowy."
+          },
+          {
+            "question": "Jak mogę sprawdzić, czy odpowiedź jest poprawna?",
+            "answer": "Sprawdź, czy a² + b² = c². Dla przykładu 5–12–13: 25 + 144 = 169. Upewnij się też, że b > 0, b < c oraz że jednostka zgadza się z danymi wejściowymi."
+          },
+          {
+            "question": "Czy mogę używać różnych jednostek miary?",
+            "answer": "Oba dane wejściowe muszą być podane w tej samej jednostce. Jeśli c jest w metrach, a a w centymetrach, najpierw przelicz jedno z nich. Wynik podawany jest w jednostce danych wejściowych."
+          },
+          {
+            "question": "Czy ten kalkulator może też znaleźć nieznany kąt?",
+            "answer": "Nie, ten tryb znajduje tylko brakującą przyprostokątną b. Aby wyznaczyć kąty, użyj <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kalkulatora kątów trójkąta prostokątnego</a>."
+          }
         ]
-      },
-      "howTo": {
-        "h2": "Jak znaleźć nogę b z c i a",
-        "steps": [
-          "Potwierdź, że c jest przeciwprostokątną, a a nogą. Przeciwprostokątna jest zawsze najdłuższym bokiem.",
-          "Wprowadź przeciwprostokątną c w pierwszym polu wejściowym.",
-          "Wprowadź znaną nogę a w drugim polu wejściowym.",
-          "Kliknij Oblicz, aby znaleźć brakującą nogę.",
-          "Przeczytaj wynik dla b wraz z pełnym rozwiązaniem krok po kroku."
-        ]
-      },
-      "example": {
-        "h2": "Przykład: Znajdź nogę b",
-        "intro": "Dane: c = 13, a = 5. Brakująca odnoga trójkąta prostokątnego z przeciwprostokątną 13 i odnogą 5 wynosi 12.",
-        "lines": [
-          "b = \\sqrt{13^2 - 5^2}",
-          "b = \\sqrt{169 - 25}",
-          "b = \\sqrt{144}",
-          "b = 12"
-        ]
-      },
-      "extraSections": [
-        {
-          "h2": "Ważna kontrola przed obliczeniem",
-          "paragraphs": [
-            "Przed użyciem tej formuły upewnij się, że c jest większe niż a. Przeciwprostokątna jest zawsze najdłuższym bokiem trójkąta prostokątnego. Jeśli c równa się a, otrzymasz b = 0, co oznacza, że ​​trójkąt nie istnieje.",
-            "Jeśli c jest mniejsze niż a, wyrażenie pod pierwiastkiem kwadratowym staje się ujemne. Oznacza to, że dwie wartości wejściowe nie mogą opisać prawdziwego trójkąta prostokątnego z c jako przeciwprostokątną."
-          ],
-          "listTitle": "Najpierw użyj tych kontroli:",
-          "listItems": [
-            "c jest przeciwny do kąta 90°.",
-            "c jest większy niż a.",
-            "Obie wartości są dodatnie.",
-            "c i a używają tej samej jednostki."
-          ]
-        },
-        {
-          "h2": "Gdzie ten kalkulator jest przydatny",
-          "paragraphs": [
-            "Kalkulator ten jest przydatny, gdy znany jest pomiar przekątnej lub nachylenia, znana jest jedna prostopadła strona, a brakuje drugiej prostopadłej. Jest to narzędzie skupiające się na c i etui, więc każde wyjaśnienie na stronie wskazuje na znalezienie b.",
-            "Może również pomóc w weryfikacji pomiarów. Jeśli zmierzona wartość b nie jest zgodna z wynikiem kalkulatora, trójkąt może być nieprawidłowy, przeciwprostokątna może być błędnie oznaczona lub w jednym pomiarze można zastosować inną jednostkę."
-          ],
-          "listTitle": "Typowe przykłady obejmują:",
-          "listItems": [
-            "Wyznaczanie wysokości ściany, gdy znana jest długość drabiny c i odległość od podłoża a.",
-            "Wyznaczanie wzniesienia pionowego zbocza, gdy znana jest długość zbocza i przebieg poziomy.",
-            "Sprawdzanie zadania domowego z trójkątem prostokątnym, które daje c i a.",
-            "Potwierdzenie pomiarów układu ram, architektury krajobrazu, ramp lub planów pięter."
-          ]
-        },
-        {
-          "h2": "Jak czytać odpowiedź",
-          "paragraphs": [
-            "Wynik oznaczony Brakującą nogą b to długość drugiej nogi tworzącej kąt prosty z a. Nie jest to przeciwprostokątna i powinna być krótsza niż c.",
-            "Jeśli obliczona b jest wyjątkowo mała, znana odnoga a jest bardzo blisko przeciwprostokątnej c. Może to być prawidłowe, ale warto sprawdzić diagram i jednostki przed użyciem wartości."
-          ],
-          "listTitle": "Prawidłowy wynik powinien spełniać:",
-          "listItems": [
-            "b jest większe od zera.",
-            "b jest mniejsze niż c.",
-            "a² + b² jest w przybliżeniu równy c².",
-            "Jednostka wyjściowa odpowiada jednostce wejściowej."
-          ]
-        },
-        {
-          "h2": "Typowe błędy",
-          "paragraphs": [
-            "Najczęstszym błędem jest traktowanie c jako nogi. W tym kalkulatorze c musi być przeciwprostokątną, czyli najdłuższym bokiem i stroną przeciwną do kąta prostego.",
-            "Kolejnym częstym błędem jest dodawanie kwadratów zamiast odejmowania. Dodawanie znajduje przeciwprostokątną; odejmowanie pozwala znaleźć brakującą nogę przeciwprostokątnej."
-          ],
-          "listTitle": "Unikaj tych błędów:",
-          "listItems": [
-            "Umieszczenie znanej nogi w polu przeciwprostokątnej.",
-            "Używanie c² + a² zamiast c² - a².",
-            "Wprowadzenie wartości większej lub równej c.",
-            "Zatrzymujemy się na b² zamiast pierwiastka kwadratowego.",
-            "Mieszanie jednostek, takich jak metry i centymetry."
-          ]
-        }
-      ],
-      "relatedLinks": [
-        {
-          "href": "/right-triangle-side-calculator/",
-          "label": "Kalkulator prawej strony trójkąta"
-        },
-        {
-          "href": "/pythagorean-theorem-calculator/",
-          "label": "Kalkulator: Twierdzenie Pitagorasa"
-        },
-        {
-          "href": "/missing-leg-from-c-and-b-calculator/",
-          "label": "Kalkulator: Brakująca przyprostokątna (z c i b)"
-        }
-      ],
-      "faqs": [
-        {
-          "question": "Co oznacza c w tym kalkulatorze?",
-          "answer": "c jest przeciwprostokątną trójkąta prostokątnego - najdłuższego boku, położonego naprzeciw kąta 90°. To nie jest noga. Wpisz c jako jedną z dwóch znanych wartości w tym kalkulatorze."
-        },
-        {
-          "question": "Co oznacza „w tym kalkulatorze”?",
-          "answer": "a jest jedną z dwóch nóg trójkąta prostokątnego. To jedna ze stron, która tworzy kąt prosty. W tym kalkulatorze a oznacza nogę, którą już znasz."
-        },
-        {
-          "question": "Co znajdzie ten kalkulator?",
-          "answer": "Ten kalkulator znajdzie brakującą nogę b. Biorąc pod uwagę przeciwprostokątną c i nogę a, oblicza b = √(c² − a²) i pokazuje rozwiązanie krok po kroku."
-        },
-        {
-          "question": "Czy c może być mniejszy niż a?",
-          "answer": "Nie. W trójkącie prostokątnym przeciwprostokątna jest zawsze najdłuższym bokiem. Jeśli c jest mniejszy niż a, wartości nie tworzą prawidłowego trójkąta prostokątnego. Przed obliczeniem sprawdź, który pomiar jest przeciwprostokątną."
-        },
-        {
-          "question": "Jak znaleźć b z c i a?",
-          "answer": "Podnieś przeciwprostokątną (c²), podnieś znaną nogę (a²), odejmij a² od c² i weź pierwiastek kwadratowy. Formuła to b = √(c² − a²). Lub wprowadź swoje wartości do tego kalkulatora, aby uzyskać natychmiastową odpowiedź."
-        }
-      ]
     },
     "missing-leg-from-c-and-b-calculator": {
       "slug": "missing-leg-from-c-and-b-calculator",
@@ -7390,204 +7858,243 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         }
       ]
     },
-    "missing-leg-from-c-and-a-calculator": {
-      "slug": "missing-leg-from-c-and-a-calculator",
-      "url": "/missing-leg-from-c-and-a-calculator/",
-      "h1": "Kalkulator: Kaki yang hilang dari c dan a",
-      "metaTitle": "Kalkulator: Kaki yang hilang dari c dan a | Right Triangle Solver",
-      "metaDescription": "Cari kaki b ketika hipotenusa c dan kaki lainnya a diketahui.",
-      "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "Ingat: c selalu merupakan sisi miring - sisi terpanjang, berhadapan dengan sudut siku-siku. Itu bukan sisi. Jika Anda memiliki dua sisi dan membutuhkan sisi miring, gunakan Kalkulator Teorema Pythagoras.",
-      "intro": "Cari kaki b ketika hipotenusa c dan kaki lainnya a diketahui.",
-      "quickSummary": {
-        "h2": "Apa yang Dipecahkan Kalkulator sisi yang Hilang Ini",
-        "intro": "Gunakan halaman ini jika sisi miring dan sisi a diketahui, namun sisi lainnya tidak ada. Kalkulator menyusun ulang teorema Pythagoras untuk mengurangkan sisi miring yang diketahui sebelum mengambil akar kuadrat.",
-        "cards": [
-          {
-            "label": "Nilai-nilai yang diketahui",
-            "value": "c = hipotenusa; a = kaki yang diketahui"
-          },
-          {
-            "label": "Menemukan",
-            "value": "b = kaki yang tidak diketahui"
-          },
-          {
-            "label": "Rumus utama",
-            "value": "b = sqrt(c^2 - a^2)"
-          },
-          {
-            "label": "Diperlukan pemeriksaan",
-            "value": "Memerlukan c > a."
-          }
-        ]
-      },
-      "diagram": {
-        "h2": "Diagram Segitiga Kanan: Menemukan sisi b",
-        "intro": "Diagram menandai c dan a sebagai nilai yang sudah Anda ketahui. sisi vertikal b disorot sebagai sisi hilang yang diselesaikan kalkulator ini.",
-        "caption": "Diagram segitiga siku-siku dengan sisi miring c diketahui, sisi a diketahui, dan sisi b diketahui.",
-        "sides": {
-          "a": {
-            "label": "a = diketahui",
-            "description": "sisi a dikenal sebagai sisi sepanjang alas segitiga siku-siku.",
-            "status": "known"
-          },
-          "b": {
-            "label": "b = temukan",
-            "description": "Bagian b adalah bagian yang tidak diketahui yang diselesaikan dengan mengurangkan a^2 dari c^2.",
-            "status": "unknown"
-          },
-          "c": {
-            "label": "c = diketahui",
-            "description": "Sisi miring c adalah sisi terpanjang yang diketahui berhadapan dengan sudut siku-siku.",
-            "status": "known"
-          }
+        "missing-leg-from-c-and-a-calculator": {
+        "slug": "missing-leg-from-c-and-a-calculator",
+        "url": "/missing-leg-from-c-and-a-calculator/",
+        "h1": "Kalkulator Sisi Hilang: Mencari Sisi b dari Hipotenusa c dan Sisi a",
+        "metaTitle": "Kalkulator Sisi Hilang: Mencari b dari c dan a",
+        "metaDescription": "Cari sisi siku-siku yang hilang dari segitiga siku-siku menggunakan hipotenusa dan satu sisi siku-siku yang diketahui. Hitung sisi b, ikuti rumusnya, dan periksa contoh soal yang diselesaikan.",
+        "formulaSlug": "leg-from-hypotenuse-and-other-leg",
+        "toolPurpose": "Ingat: c selalu merupakan hipotenusa, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> terpanjang, yang berhadapan dengan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> siku-siku. Itu bukan sisi siku-siku. Jika Anda memiliki dua sisi siku-siku dan membutuhkan hipotenusa, gunakan Kalkulator <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Teorema Pythagoras</a>.",
+        "intro": "<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Kalkulator</a> ini mencari sisi siku-siku b yang hilang dari segitiga siku-siku ketika Anda mengetahui hipotenusa c dan sisi siku-siku lainnya a. Masukkan kedua pengukuran Anda, dan kalkulator akan menerapkan rumus b = √(c² − a²) untuk menghitung sisi yang tidak diketahui secara instan, lengkap dengan langkah-langkah penyelesaian. Hipotenusa adalah sisi terpanjang, yang berhadapan dengan sudut siku-siku. Kedua sisi siku-siku membentuk sudut siku-siku tersebut. Mengetahui sisi mana yang mana memastikan Anda mendapatkan jawaban yang benar setiap saat.",
+        "quickSummary": {
+          "h2": "Apa yang Diselesaikan Alat Ini",
+          "intro": "Gunakan halaman ini ketika hipotenusa dan sisi siku-siku a diketahui, tetapi sisi siku-siku lainnya hilang. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Kalkulator</a> ini menyusun ulang <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">teorema Pythagoras</a> untuk mengurangkan sisi siku-siku yang diketahui dari hipotenusa sebelum mengambil akar kuadrat.",
+          "cards": [
+            {
+              "label": "Nilai yang diketahui",
+              "value": "Hipotenusa c dan sisi siku-siku a"
+            },
+            {
+              "label": "Mencari",
+              "value": "Sisi siku-siku b yang hilang"
+            },
+            {
+              "label": "Rumus utama",
+              "value": "b = sqrt(c^2 - a^2)"
+            },
+            {
+              "label": "Pemeriksaan wajib",
+              "value": "c harus lebih besar dari a"
+            }
+          ]
         },
-        "notes": [
-          "c harus menjadi sisi miring, bukan salah satu sisinya.",
-          "Jika c lebih kecil atau sama dengan a, maka inputnya tidak membentuk segitiga siku-siku yang valid.",
-          "Hasilnya b menggunakan satuan yang sama dengan c dan a."
-        ]
-      },
-      "calculator": {
-        "outputLabel": "b = kaki yang tidak diketahui",
-        "fields": [
+        "diagram": {
+          "h2": "Mengenali Hipotenusa dan Sisi yang Hilang",
+          "intro": "Diagram menandai c dan a sebagai nilai yang sudah Anda ketahui. Sisi siku-siku vertikal b ditandai sebagai <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi yang hilang</a> yang diselesaikan kalkulator ini.",
+          "caption": "Diagram segitiga siku-siku dengan hipotenusa c yang diketahui, sisi siku-siku a yang diketahui, dan sisi siku-siku b yang tidak diketahui.",
+          "sides": {
+            "a": {
+              "label": "a = diketahui",
+              "description": "Sisi siku-siku a adalah sisi yang diketahui di sepanjang alas segitiga siku-siku.",
+              "status": "known"
+            },
+            "b": {
+              "label": "b = cari",
+              "description": "Sisi siku-siku b adalah sisi yang tidak diketahui yang diselesaikan dengan mengurangkan a^2 dari c^2.",
+              "status": "unknown"
+            },
+            "c": {
+              "label": "c = diketahui",
+              "description": "Hipotenusa c adalah <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> terpanjang yang diketahui, yang berhadapan dengan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> siku-siku.",
+              "status": "known"
+            }
+          },
+          "notes": [
+            "c harus berupa hipotenusa, bukan salah satu sisi siku-siku.",
+            "Jika c kurang dari atau sama dengan a, input tidak membentuk segitiga siku-siku yang valid.",
+            "Hasil b menggunakan satuan yang sama dengan c dan a."
+          ]
+        },
+        "calculator": {
+          "outputLabel": "Sisi siku-siku b yang hilang",
+          "fields": [
+            {
+              "key": "c",
+              "label": "Hipotenusa c",
+              "min": 0
+            },
+            {
+              "key": "a",
+              "label": "Sisi siku-siku a",
+              "min": 0
+            }
+          ]
+        },
+        "formulaSection": {
+          "h2": "Rumus untuk Mencari Sisi Siku-Siku yang Hilang",
+          "paragraphs": [
+            "Perhitungan ini menggunakan <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">teorema Pythagoras</a>, yang menghubungkan kuadrat kedua sisi siku-siku dengan kuadrat hipotenusa. Untuk mengisolasi sisi siku-siku yang hilang, susun ulang persamaan langkah demi langkah.",
+            "<strong>Langkah 1: Mulai dengan teorema Pythagoras.</strong> Kuadrat kedua sisi siku-siku dijumlahkan menjadi kuadrat hipotenusa.",
+            "<strong>Langkah 2: Kurangkan a² dari kedua ruas.</strong> Ini mengisolasi kuadrat sisi siku-siku yang hilang.",
+            "<strong>Langkah 3: Ambil akar kuadrat positif.</strong> Panjang sisi selalu positif, jadi gunakan akar utama. Seluruh ekspresi c² − a² tetap berada di dalam tanda akar.",
+            "Di mana <strong>a</strong> adalah sisi siku-siku yang diketahui, <strong>b</strong> adalah sisi siku-siku yang hilang, dan <strong>c</strong> adalah hipotenusa. Hipotenusa terletak berhadapan dengan sudut siku-siku dan selalu merupakan sisi terpanjang.",
+            "<strong>Mengapa mengurangkan?</strong> Persamaan awal menjumlahkan kedua kuadrat sisi siku-siku untuk mendapatkan kuadrat hipotenusa. Ketika hipotenusa dan satu sisi siku-siku sudah diketahui, kurangkan kuadrat sisi siku-siku yang diketahui dari kuadrat hipotenusa untuk mengisolasi kuadrat sisi siku-siku yang tidak diketahui. Kemudian ambil akar kuadratnya. Jangan pernah mengurangkan sisi siku-siku dari hipotenusa secara langsung, selalu kurangkan kuadratnya."
+          ],
+          "formulas": [
+            "a^2 + b^2 = c^2",
+            "b^2 = c^2 - a^2",
+            "b = \\sqrt{c^2 - a^2}"
+          ]
+        },
+        "howTo": {
+          "h2": "Cara Mencari Sisi b dari c dan a",
+          "steps": [
+            "Kenali hipotenusa, yang terletak berhadapan dengan sudut 90°. Sisi ini selalu merupakan sisi terpanjang.",
+            "Masukkan hipotenusa c ke kolom input pertama.",
+            "Masukkan sisi siku-siku a yang diketahui ke kolom input kedua.",
+            "Pastikan kedua pengukuran menggunakan satuan yang sama.",
+            "Klik Hitung untuk mencari sisi siku-siku b yang hilang.",
+            "Tinjau hasil dan penyelesaian langkah demi langkah yang ditampilkan di bawah kalkulator.",
+            "Verifikasi jawaban dengan memeriksa bahwa a² + b² sama dengan c²."
+          ]
+        },
+        "example": {
+          "h2": "Contoh Soal Mencari Sisi Siku-Siku yang Hilang",
+          "intro": "Setiap contoh menunjukkan perhitungan lengkap dari pernyataan soal hingga jawaban yang terverifikasi. Kelimanya menggunakan rumus b = √(c² − a²).",
+          "lines": [
+            "b = \\sqrt{13^2 - 5^2}",
+            "b = \\sqrt{169 - 25}",
+            "b = \\sqrt{144}",
+            "b = 12"
+          ]
+        },
+        "extraSections": [
           {
-            "key": "c",
-            "label": "c = hipotenusa",
-            "min": 0
+            "h2": "Contoh Soal Terperinci",
+            "paragraphs": [
+              "<h3>Contoh 1: Segitiga Standar 5–12–13</h3><p><strong>Soal:</strong> Cari sisi siku-siku yang hilang dari segitiga siku-siku dengan hipotenusa c = 13 cm dan sisi siku-siku yang diketahui a = 5 cm.</p><p><strong>Diketahui:</strong> c = 13 cm, a = 5 cm. <strong>Cari:</strong> b.</p><p><strong>Rumus:</strong> b = √(c² − a²)</p><p><strong>Substitusi:</strong> b = √(13² − 5²) = √(169 − 25) = √144</p><p><strong>Jawaban:</strong> <strong>b = 12 cm</strong></p><p><strong>Verifikasi:</strong> 5² + 12² = 25 + 144 = 169 = 13². Sisi siku-siku yang diketahui, sisi siku-siku yang hilang, dan hipotenusa membentuk segitiga siku-siku yang valid.</p>",
+              "<h3>Contoh 2: Tangga Bersandar pada Dinding</h3><p><strong>Soal:</strong> Sebuah tangga sepanjang 5 m bersandar pada dinding vertikal. Alasnya berjarak 3 m dari dinding. Cari ketinggian yang dicapai tangga.</p><p><strong>Diketahui:</strong> c = 5 m (tangga), a = 3 m (jarak tanah). <strong>Cari:</strong> b (tinggi dinding).</p><p><strong>Perhitungan:</strong> b = √(5² − 3²) = √(25 − 9) = √16 = 4 m</p><p><strong>Jawaban:</strong> <strong>Tangga mencapai ketinggian 4 m pada dinding.</strong></p><img src=\"/images/missing-leg/missing-leg-ladder.svg\" alt=\"Diagram tangga: tangga 5 m sebagai hipotenusa, jarak tanah 3 m sebagai sisi siku-siku a, tinggi dinding 4 m sebagai sisi siku-siku b yang hilang\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Gambar: Dinding vertikal (b = 4 m), jarak tanah horizontal (a = 3 m), dan tangga (c = 5 m). Ini adalah model geometris dengan asumsi dinding vertikal dan tanah yang rata, bukan penilaian keselamatan tangga.</em></p>",
+              "<h3>Contoh 3: Diagonal Ruangan Persegi Panjang</h3><p><strong>Soal:</strong> Sebuah ruangan persegi panjang memiliki diagonal 17 ft dan satu sisi berukuran 8 ft. Cari sisi lainnya.</p><p><strong>Diketahui:</strong> c = 17 ft (diagonal), a = 8 ft. <strong>Cari:</strong> b.</p><p><strong>Perhitungan:</strong> b = √(17² − 8²) = √(289 − 64) = √225 = 15 ft</p><p><strong>Jawaban:</strong> <strong>Sisi lainnya adalah 15 ft.</strong></p><img src=\"/images/missing-leg/missing-leg-room.svg\" alt=\"Diagram ruangan: diagonal 17 ft sebagai hipotenusa, sisi 8 ft yang diketahui sebagai sisi siku-siku a, sisi 15 ft yang hilang sebagai sisi siku-siku b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Gambar: Tampak atas. Diagonal (c = 17 ft) membagi persegi panjang menjadi dua segitiga siku-siku. Sisi yang diketahui (a = 8 ft) dan sisi yang hilang (b = 15 ft) membentuk sudut siku-siku.</em></p>",
+              "<h3>Contoh 4: Hasil yang Memerlukan Pembulatan</h3><p><strong>Soal:</strong> Diketahui c = 10 m dan a = 7 m, cari b.</p><p><strong>Perhitungan:</strong> b = √(10² − 7²) = √(100 − 49) = √51 ≈ 7.141428 m</p><p><strong>Jawaban:</strong> <strong>b ≈ 7.14 m</strong>, dibulatkan menjadi dua tempat desimal.</p><p><strong>Verifikasi:</strong> 7² + (√51)² = 49 + 51 = 100 = 10².</p><p>Pertahankan nilai eksak (√51) selama perhitungan antara dan bulatkan hanya pada langkah terakhir. Pembulatan dini menimbulkan kesalahan yang bertambah dalam soal bertahap.</p>",
+              "<h3>Contoh 5: Geometri Ramp</h3><p><strong>Soal:</strong> Sebuah ramp lurus memiliki panjang 13 m dan bentang horizontal 12 m. Cari tinggi vertikalnya.</p><p><strong>Diketahui:</strong> c = 13 m (ramp), a = 12 m (bentang). <strong>Cari:</strong> b (tinggi).</p><p><strong>Perhitungan:</strong> b = √(13² − 12²) = √(169 − 144) = √25 = 5 m</p><p><strong>Jawaban:</strong> <strong>Tinggi vertikalnya adalah 5 m.</strong></p><img src=\"/images/missing-leg/missing-leg-ramp.svg\" alt=\"Diagram ramp: ramp 13 m sebagai hipotenusa, bentang horizontal 12 m sebagai sisi siku-siku a, tinggi vertikal 5 m sebagai sisi siku-siku b yang hilang\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Gambar: Ramp (c = 13 m) sebagai hipotenusa, bentang horizontal (a = 12 m), dan tinggi vertikal (b = 5 m). Perhitungan ini tidak menetapkan kepatuhan terhadap peraturan aksesibilitas atau bangunan.</em></p>"
+            ]
           },
           {
-            "key": "a",
-            "label": "a = kaki yang diketahui",
-            "min": 0
+            "h2": "Kapan Anda Dapat Menghitung Sisi Siku-Siku yang Hilang?",
+            "paragraphs": [
+              "Untuk segitiga siku-siku yang valid dan tidak degenerat, pengukuran harus memenuhi tiga syarat: c > 0, a > 0, dan c > a. Sisi siku-siku yang hilang adalah b = √(c² − a²).",
+              "<strong>Kasus 1: Hipotenusa lebih kecil dari sisi siku-siku yang diketahui.</strong> Jika c = 4 dan a = 5, maka b = √(16 − 25) = √(−9). Ekspresi di dalam akar kuadrat bernilai negatif, sehingga input ini tidak dapat membentuk segitiga siku-siku nyata dengan c sebagai hipotenusa.",
+              "<strong>Kasus 2: Hipotenusa sama dengan sisi siku-siku yang diketahui.</strong> Jika c = 5 dan a = 5, maka b = √(25 − 25) = 0. Ini adalah kasus degenerat, bukan segitiga yang valid.",
+              "<strong>Kasus 3: Pengukuran nol atau negatif.</strong> Panjang sisi harus positif. Kalkulator menolak input nol dan negatif.",
+              "<strong>Kasus 4: Satuan yang tidak konsisten.</strong> Kedua pengukuran harus menggunakan satuan yang sama. Jika c dalam meter dan a dalam sentimeter, konversikan salah satunya sebelum menghitung."
+            ],
+            "listTitle": "Gunakan pemeriksaan ini terlebih dahulu:",
+            "listItems": [
+              "c berhadapan dengan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> 90°.",
+              "c lebih besar dari a.",
+              "Kedua nilai positif.",
+              "c dan a menggunakan satuan yang sama."
+            ]
+          },
+          {
+            "h2": "Di Mana Rumus Sisi Siku-Siku yang Hilang Digunakan?",
+            "paragraphs": [
+              "Pola umumnya: ketika panjang diagonal garis lurus atau panjang miring dan satu jarak tegak lurus diketahui, jarak tegak lurus lainnya dapat ditemukan dengan teorema Pythagoras. Cara ini hanya berlaku ketika geometrinya membentuk segitiga siku-siku.",
+              "<strong>Konstruksi dan pemasangan rangka.</strong> Tukang kayu memeriksa sudut siku-siku dengan mengukur diagonal rangka persegi panjang. Jika diagonal (c) dan satu sisi (a) diketahui, sisi yang hilang (b) memastikan tata letak sebelum memotong kayu.",
+              "<strong>Pengukuran ruangan dan denah lantai.</strong> Saat merencanakan furnitur atau lantai, diagonal ruangan dan panjang satu dinding memberikan panjang dinding lainnya tanpa memindahkan rintangan.",
+              "<strong>Geometri tangga dan dinding.</strong> Dengan panjang tangga dan jaraknya dari dinding yang diketahui, ketinggian yang dicapainya dapat langsung dihitung. Ini adalah model geometris, bukan penilaian keselamatan.",
+              "<strong>Perhitungan ramp dan kemiringan.</strong> Dari panjang kemiringan dan bentang horizontal, tinggi vertikal dapat ditentukan. Perhitungan ini tidak menetapkan kepatuhan terhadap peraturan."
+            ]
+          },
+          {
+            "h2": "Cara Memeriksa Perhitungan Sisi Siku-Siku yang Hilang",
+            "paragraphs": [
+              "Verifikasi setiap hasil sebelum menggunakannya. Untuk contoh 5–12–13: 5² + 12² = 25 + 144 = 169 = 13².",
+              "Output berlabel \"Sisi b yang hilang\" adalah panjang sisi siku-siku lain yang membentuk sudut siku-siku dengan a. Itu bukan hipotenusa dan harus lebih pendek dari c."
+            ],
+            "listTitle": "Hasil yang valid harus memenuhi:",
+            "listItems": [
+              "b lebih besar dari nol.",
+              "b lebih pendek dari c.",
+              "a² + b² sama dengan c², dengan toleransi pembulatan pada nilai yang ditampilkan.",
+              "Hasil menggunakan satuan yang benar."
+            ]
+          },
+          {
+            "h2": "Kesalahan Umum Saat Mencari Sisi Siku-Siku yang Hilang",
+            "paragraphs": [
+              "Kesalahan paling umum adalah memperlakukan c sebagai sisi siku-siku. Di sini c harus berupa hipotenusa: sisi terpanjang, yang berhadapan dengan sudut siku-siku.",
+              "Kesalahan umum lainnya adalah menjumlahkan kuadrat, bukan mengurangkan. Penjumlahan (a² + b²) mencari hipotenusa; pengurangan (c² − a²) mencari sisi siku-siku yang hilang dari hipotenusa."
+            ],
+            "listTitle": "Hindari kesalahan-kesalahan ini:",
+            "listItems": [
+              "<strong>Mengacaukan hipotenusa dengan sisi siku-siku.</strong> Jika Anda memasukkan nilai sisi siku-siku ke kolom c, rumus akan menyelesaikan soal yang salah. Benar: c selalu merupakan sisi terpanjang.",
+              "<strong>Menjumlahkan kuadrat, bukan mengurangkan.</strong> Salah: b = √(c² + a²). Benar: b = √(c² − a²).",
+              "<strong>Lupa mengambil akar kuadrat.</strong> Salah: b = c² − a². Benar: ambil akar kuadrat dari selisihnya.",
+              "<strong>Pengelompokan akar kuadrat yang salah.</strong> Salah: √c² − a² (yang sama dengan c − a). Benar: √(c² − a²), dengan seluruh selisih di dalam tanda akar.",
+              "<strong>Memasukkan a ≥ c.</strong> Sisi siku-siku yang diketahui tidak boleh sama dengan atau melebihi hipotenusa. Benar: pastikan c > a sebelum menghitung.",
+              "<strong>Mencampur satuan.</strong> Salah: c = 5 m, a = 30 cm. Benar: konversikan ke satuan yang sama terlebih dahulu (c = 500 cm, a = 30 cm).",
+              "<strong>Membulatkan terlalu dini.</strong> Salah: membulatkan √51 menjadi 7.14 di tengah perhitungan. Benar: pertahankan presisi penuh hingga jawaban akhir."
+            ]
           }
-        ]
-      },
-      "formulaSection": {
-        "h2": "Formula b sisi Hilang",
-        "paragraphs": [
-          "Rumus mencari sisi b diturunkan dari teorema Pythagoras (a² + b² = c²). Penataan ulang untuk b memberikan rumus di bawah ini.",
-          "Dimana c adalah sisi miring (sisi terpanjang dari segitiga siku-siku), a adalah sisi yang diketahui, dan b adalah sisi yang hilang yang sedang Anda selesaikan. Perhatikan pengurangannya: Anda mengurangi kuadrat sisi yang diketahui dari kuadrat sisi miring, lalu mengambil akar kuadrat."
         ],
-        "formulas": [
-          "b = \\sqrt{c^2 - a^2}"
+        "relatedLinks": [
+          {
+            "href": "/right-triangle-side-calculator/",
+            "label": "Kalkulator Sisi Segitiga Siku-Siku"
+          },
+          {
+            "href": "/pythagorean-theorem-calculator/",
+            "label": "Kalkulator Teorema Pythagoras"
+          },
+          {
+            "href": "/missing-leg-from-c-and-b-calculator/",
+            "label": "Kalkulator Sisi Hilang dari c dan b"
+          },
+          {
+            "href": "/right-triangle-angle-calculator/",
+            "label": "Kalkulator Sudut Segitiga Siku-Siku"
+          },
+          {
+            "href": "/right-triangle-measurements-calculator/",
+            "label": "Kalkulator Pengukuran Segitiga Siku-Siku"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Bagaimana cara mencari sisi siku-siku yang hilang dari hipotenusa dan satu sisi siku-siku?",
+            "answer": "Kuadratkan hipotenusa (c²), kuadratkan sisi siku-siku yang diketahui (a²), kurangkan, lalu ambil akar kuadratnya: b = √(c² − a²). Masukkan kedua nilai ke kalkulator di atas untuk hasil instan beserta langkah-langkahnya."
+          },
+          {
+            "question": "Mengapa saya mengurangkan, bukan menjumlahkan?",
+            "answer": "Teorema Pythagoras menjumlahkan kuadrat sisi-sisi siku-siku untuk mendapatkan kuadrat hipotenusa (a² + b² = c²). Ketika hipotenusa sudah diketahui, susun ulang: kurangkan kuadrat sisi siku-siku yang diketahui dari kuadrat hipotenusa untuk mengisolasi kuadrat sisi siku-siku yang hilang, lalu ambil akarnya."
+          },
+          {
+            "question": "Bagaimana cara mengetahui sisi mana yang merupakan hipotenusa?",
+            "answer": "Hipotenusa selalu merupakan sisi terpanjang dan terletak berhadapan dengan sudut 90°. Jika ketiga pengukuran Anda adalah 5, 12, dan 13, hipotenusanya adalah 13."
+          },
+          {
+            "question": "Apa yang terjadi jika sisi siku-siku yang diketahui sama dengan atau lebih panjang dari hipotenusa?",
+            "answer": "Jika a = c, hasilnya adalah b = 0 (degenerat, bukan segitiga). Jika a > c, akar kuadrat dari bilangan negatif tidak memiliki solusi nyata. Kedua kasus ditolak sebagai tidak valid."
+          },
+          {
+            "question": "Bisakah sisi yang hilang berupa desimal?",
+            "answer": "Ya. Misalnya, c = 10 dan a = 7 menghasilkan b = √51 ≈ 7.14. Pertahankan presisi penuh selama perhitungan dan bulatkan hanya jawaban akhirnya."
+          },
+          {
+            "question": "Bagaimana cara memeriksa apakah jawabannya benar?",
+            "answer": "Verifikasi bahwa a² + b² = c². Untuk contoh 5–12–13: 25 + 144 = 169. Pastikan juga b > 0, b < c, dan satuannya sesuai dengan input Anda."
+          },
+          {
+            "question": "Bisakah saya menggunakan satuan pengukuran yang berbeda?",
+            "answer": "Kedua input harus menggunakan satuan yang sama. Jika c dalam meter dan a dalam sentimeter, konversikan salah satunya terlebih dahulu. Hasilnya menggunakan satuan input."
+          },
+          {
+            "question": "Bisakah kalkulator ini juga mencari sudut yang tidak diketahui?",
+            "answer": "Tidak, mode ini hanya mencari sisi siku-siku b yang hilang. Untuk mencari sudut, gunakan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Kalkulator Sudut Segitiga Siku-Siku</a>."
+          }
         ]
-      },
-      "howTo": {
-        "h2": "Cara Menemukan sisi b Dari c dan a",
-        "steps": [
-          "Konfirmasikan bahwa c adalah sisi miring dan a adalah sisi. Sisi miring selalu merupakan sisi terpanjang.",
-          "Masukkan sisi miring c ke dalam kolom input pertama.",
-          "Masukkan sisi a yang diketahui ke dalam kolom input kedua.",
-          "Klik Hitung untuk menemukan sisi yang hilang.",
-          "Baca hasil untuk b, beserta solusi langkah demi langkah selengkapnya."
-        ]
-      },
-      "example": {
-        "h2": "Contoh: Temukan sisi b",
-        "intro": "Diketahui: c = 13, a = 5. sisi segitiga siku-siku yang hilang dengan sisi miring 13 dan sisi 5 adalah 12.",
-        "lines": [
-          "b = \\sqrt{13^2 - 5^2}",
-          "b = \\sqrt{169 - 25}",
-          "b = \\sqrt{144}",
-          "b = 12"
-        ]
-      },
-      "extraSections": [
-        {
-          "h2": "Pemeriksaan Penting Sebelum Menghitung",
-          "paragraphs": [
-            "Sebelum menggunakan rumus ini, pastikan c lebih besar dari a. Sisi miring selalu merupakan sisi terpanjang dari segitiga siku-siku. Jika c sama dengan a maka diperoleh b = 0 yang artinya tidak ada segitiga.",
-            "Jika c lebih kecil dari a, ekspresi di bawah akar kuadrat menjadi negatif. Artinya kedua nilai masukan tersebut tidak dapat menggambarkan segitiga siku-siku nyata dengan c sebagai sisi miringnya."
-          ],
-          "listTitle": "Gunakan pemeriksaan ini terlebih dahulu:",
-          "listItems": [
-            "c berlawanan dengan sudut 90°.",
-            "c lebih besar dari a.",
-            "Kedua nilai tersebut positif.",
-            "c dan a menggunakan satuan yang sama."
-          ]
-        },
-        {
-          "h2": "Dimana Kalkulator Ini Berguna",
-          "paragraphs": [
-            "Kalkulator ini berguna jika pengukuran diagonal atau kemiringan diketahui, salah satu sisi tegak lurus diketahui, dan sisi tegak lurus lainnya tidak ada. Ini adalah alat yang terfokus untuk kasus c, jadi setiap penjelasan di halaman ini mengarah pada penemuan b.",
-            "Ini juga dapat membantu memverifikasi pengukuran. Jika nilai terukur untuk b tidak sesuai dengan hasil kalkulator, segitiganya mungkin tidak siku-siku, sisi miringnya mungkin diberi label yang salah, atau satu pengukuran mungkin menggunakan satuan yang berbeda."
-          ],
-          "listTitle": "Contoh umum meliputi:",
-          "listItems": [
-            "Mencari tinggi dinding jika panjang tangga c dan jarak tanah a diketahui.",
-            "Menemukan kenaikan vertikal suatu lereng ketika panjang lereng dan lintasan horizontal diketahui.",
-            "Memeriksa soal pekerjaan rumah segitiga siku-siku yang menghasilkan c dan a.",
-            "Mengonfirmasi pengukuran tata letak untuk rangka, lanskap, jalur landai, atau denah lantai."
-          ]
-        },
-        {
-          "h2": "Cara Membaca Jawabannya",
-          "paragraphs": [
-            "Keluaran berlabel sisi Hilang b adalah panjang sisi lainnya yang membentuk sudut siku-siku dengan a. Ini bukan sisi miring dan harus lebih pendek dari c.",
-            "Jika b yang dihitung sangat kecil, sisi a yang Anda ketahui berada sangat dekat dengan sisi miring c. Itu mungkin valid, tetapi ada baiknya memeriksa diagram dan satuannya sebelum menggunakan nilainya."
-          ],
-          "listTitle": "Hasil yang valid harus memenuhi:",
-          "listItems": [
-            "b lebih besar dari nol.",
-            "b lebih kecil dari c.",
-            "a² + b² kira-kira sama dengan c².",
-            "Unit keluaran sama dengan unit masukan."
-          ]
-        },
-        {
-          "h2": "Kesalahan Umum",
-          "paragraphs": [
-            "Kesalahan paling umum adalah memperlakukan c sebagai sisi. Dalam kalkulator ini, c harus berupa sisi miring, yaitu sisi terpanjang dan sisi yang berhadapan dengan sudut siku-siku.",
-            "Kesalahan umum lainnya adalah menjumlahkan kuadrat, bukan mengurangi. Penjumlahan menemukan sisi miring; pengurangan menemukan sisi yang hilang dari sisi miring."
-          ],
-          "listTitle": "Hindari kesalahan ini:",
-          "listItems": [
-            "Menempatkan sisi yang diketahui ke dalam bidang miring.",
-            "Menggunakan c² + a², bukan c² - a².",
-            "Memasukkan lebih besar dari atau sama dengan c.",
-            "Berhenti di b² alih-alih mengambil akar kuadrat.",
-            "Satuan pencampur seperti meter dan sentimeter."
-          ]
-        }
-      ],
-      "relatedLinks": [
-        {
-          "href": "/right-triangle-side-calculator/",
-          "label": "Kalkulator Sisi Segitiga Kanan"
-        },
-        {
-          "href": "/pythagorean-theorem-calculator/",
-          "label": "Kalkulator: Teorema Pythagoras"
-        },
-        {
-          "href": "/missing-leg-from-c-and-b-calculator/",
-          "label": "Kalkulator: Kaki yang hilang dari c dan b"
-        }
-      ],
-      "faqs": [
-        {
-          "question": "Apa arti c dalam kalkulator ini?",
-          "answer": "c adalah sisi miring dari segitiga siku-siku - sisi terpanjang, terletak di seberang sudut 90°. Itu bukan sisi. Anda memasukkan c sebagai salah satu dari dua nilai yang diketahui dalam kalkulator ini."
-        },
-        {
-          "question": "Apa arti dari kalkulator ini?",
-          "answer": "a adalah salah satu dari dua sisi segitiga siku-siku. Itu salah satu sisinya yang membentuk sudut siku-siku. Dalam kalkulator ini, a adalah sisi yang sudah Anda ketahui."
-        },
-        {
-          "question": "Apa yang ditemukan kalkulator ini?",
-          "answer": "Kalkulator ini menemukan sisi b yang hilang. Mengingat sisi miring c dan sisi a, ini menghitung b = √(c² − a²) dan menunjukkan solusi langkah demi langkah kepada Anda."
-        },
-        {
-          "question": "Bisakah c lebih kecil dari a?",
-          "answer": "Tidak. Dalam segitiga siku-siku, sisi miring selalu merupakan sisi terpanjang. Jika c lebih kecil dari a, maka nilainya tidak membentuk segitiga siku-siku yang valid. Periksa pengukuran mana yang merupakan sisi miring sebelum menghitung."
-        },
-        {
-          "question": "Bagaimana cara menemukan b dari c dan a?",
-          "answer": "Kuadratkan sisi miring (c²), kuadratkan sisi yang diketahui (a²), kurangi a² dari c², dan ambil akar kuadratnya. Rumusnya adalah b = √(c² − a²). Atau masukkan nilai Anda ke dalam kalkulator ini untuk mendapatkan jawaban instan."
-        }
-      ]
     },
     "missing-leg-from-c-and-b-calculator": {
       "slug": "missing-leg-from-c-and-b-calculator",
@@ -7989,204 +8496,243 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         }
       ]
     },
-    "missing-leg-from-c-and-a-calculator": {
-      "slug": "missing-leg-from-c-and-a-calculator",
-      "url": "/missing-leg-from-c-and-a-calculator/",
-      "h1": "حاسبة: الضلع المفقود بدلالة c و a",
-      "metaTitle": "حاسبة: الضلع المفقود بدلالة c و a | Right Triangle Solver",
-      "metaDescription": "أوجد الضلع b عندما يكون الوتر c والضلع الآخر a معروفين.",
-      "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "تذكر: c هو دائمًا الوتر - الضلع الأطول، المقابل للزاوية القائمة. إنها ليست ساق. إذا كان لديك ساقان وتحتاج إلى الوتر بدلًا من ذلك، فاستخدم حاسبة نظرية فيثاغورس.",
-      "intro": "أوجد الضلع b عندما يكون الوتر c والضلع الآخر a معروفين.",
-      "quickSummary": {
-        "h2": "ما الذي تحله هذه الآلة الحاسبة للساق المفقودة؟",
-        "intro": "استخدم هذه الصفحة عندما يكون الوتر والساق a معروفين، ولكن الساق الأخرى مفقودة. تقوم الآلة الحاسبة بإعادة ترتيب نظرية فيثاغورس لطرح الساق المعلومة من الوتر قبل أخذ الجذر التربيعي.",
-        "cards": [
-          {
-            "label": "القيم المعروفة",
-            "value": "c = الوتر; a = الضلع المعروف"
-          },
-          {
-            "label": "يجد",
-            "value": "b = الضلع المجهول"
-          },
-          {
-            "label": "الصيغة الرئيسية",
-            "value": "b = sqrt(c^2 - a^2)"
-          },
-          {
-            "label": "الشيك المطلوب",
-            "value": "يتطلب أن يكون c > a."
-          }
-        ]
-      },
-      "diagram": {
-        "h2": "مخطط المثلث الأيمن: العثور على الساق b",
-        "intro": "يشير الرسم التخطيطي إلى c وa كقيمتين تعرفهما بالفعل. يتم تمييز الساق الرأسية b باعتبارها الجانب المفقود الذي تحله هذه الآلة الحاسبة.",
-        "caption": "مخطط المثلث الأيمن مع الوتر المعروف c، والضلع المعروف a، والضلع غير المعروف b.",
-        "sides": {
-          "a": {
-            "label": "a = معروف",
-            "description": "الساق a هي الساق المعروفة على طول قاعدة المثلث القائم.",
-            "status": "known"
-          },
-          "b": {
-            "label": "b = العثور على",
-            "description": "الساق b هي الساق المجهولة التي تم حلها بطرح a^2 من c^2.",
-            "status": "unknown"
-          },
-          "c": {
-            "label": "c = معروف",
-            "description": "الوتر c هو الضلع الأطول المعروف المقابل للزاوية القائمة.",
-            "status": "known"
+        "missing-leg-from-c-and-a-calculator": {
+        "calculator": {
+          "fields": [
+            {
+              "key": "c",
+              "label": "الوتر c",
+              "min": 0
+            },
+            {
+              "key": "a",
+              "label": "الضلع a",
+              "min": 0
+            }
+          ],
+          "outputLabel": "الضلع المفقود b"
+        },
+        "diagram": {
+          "caption": "رسم مثلث قائم الزاوية يوضح الوتر المعروف c، والضلع المعروف a، والضلع المجهول b.",
+          "h2": "حدد الوتر والضلع المفقود",
+          "intro": "يُظهر الرسم c وa كقيمتين تعرفهما بالفعل. ويُبرز الضلع الرأسي b باعتباره <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع المفقود</a> الذي تحله هذه الحاسبة.",
+          "notes": [
+            "يجب أن يكون c هو الوتر، وليس أحد الضلعين القائمين.",
+            "إذا كان c أقل من a أو يساويه، فلن تشكل المدخلات مثلثًا قائم الزاوية صالحًا.",
+            "يستخدم الناتج b نفس وحدة c وa."
+          ],
+          "sides": {
+            "a": {
+              "description": "الضلع a هو الضلع القائم المعروف على قاعدة المثلث القائم الزاوية.",
+              "label": "a = معروف",
+              "status": "known"
+            },
+            "b": {
+              "description": "الضلع b هو الضلع المجهول الذي يُحل بطرح a^2 من c^2.",
+              "label": "b = أوجد",
+              "status": "unknown"
+            },
+            "c": {
+              "description": "الوتر c هو أطول <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">ضلع</a> معروف، مقابل للزاوية <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">القائمة</a>.",
+              "label": "c = معروف",
+              "status": "known"
+            }
           }
         },
-        "notes": [
-          "يجب أن يكون c هو الوتر وليس أحد الساقين.",
-          "إذا كانت c أقل من أو تساوي a، فإن المدخلات لا تشكل مثلثًا صحيحًا.",
-          "تستخدم النتيجة b نفس الوحدة مثل c وa."
-        ]
-      },
-      "calculator": {
-        "outputLabel": "b = الضلع المجهول",
-        "fields": [
+        "example": {
+          "h2": "أمثلة محلولة لإيجاد الضلع المفقود",
+          "intro": "يوضح كل مثال الحساب الكامل من نص المسألة إلى الإجابة المتحقق منها. وتستخدم الأمثلة الخمسة الصيغة b = √(c² − a²).",
+          "lines": [
+            "b = \\sqrt{13^2 - 5^2}",
+            "b = \\sqrt{169 - 25}",
+            "b = \\sqrt{144}",
+            "b = 12"
+          ]
+        },
+        "extraSections": [
           {
-            "key": "c",
-            "label": "c = الوتر",
-            "min": 0
+            "h2": "أمثلة محلولة بالتفصيل",
+            "paragraphs": [
+              "<h3>المثال 1: المثلث القياسي 5–12–13</h3><p><strong>المسألة:</strong> أوجد الضلع المفقود في مثلث قائم الزاوية وتره c = 13 سم وضلعه المعروف a = 5 سم.</p><p><strong>المعطيات:</strong> c = 13 سم، a = 5 سم. <strong>المطلوب:</strong> b.</p><p><strong>الصيغة:</strong> b = √(c² − a²)</p><p><strong>التعويض:</strong> b = √(13² − 5²) = √(169 − 25) = √144</p><p><strong>الإجابة:</strong> <strong>b = 12 سم</strong></p><p><strong>التحقق:</strong> 5² + 12² = 25 + 144 = 169 = 13². يشكل الضلع المعروف والضلع المفقود والوتر مثلثًا قائم الزاوية صالحًا.</p>",
+              "<h3>المثال 2: سلم يستند إلى جدار</h3><p><strong>المسألة:</strong> يستند سلم طوله 5 أمتار إلى جدار رأسي، وقاعدته على بعد 3 أمتار من الجدار. أوجد الارتفاع الذي يصل إليه السلم.</p><p><strong>المعطيات:</strong> c = 5 م (السلم)، a = 3 م (المسافة الأرضية). <strong>المطلوب:</strong> b (ارتفاع الجدار).</p><p><strong>الحساب:</strong> b = √(5² − 3²) = √(25 − 9) = √16 = 4 م</p><p><strong>الإجابة:</strong> <strong>يصل السلم إلى ارتفاع 4 أمتار على الجدار.</strong></p><img src=\"/images/missing-leg/missing-leg-ladder.svg\" alt=\"رسم السلم: سلم 5 م كوتر، ومسافة أرضية 3 م كضلع a، وارتفاع جدار 4 م كضلع مفقود b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>الشكل: الجدار الرأسي (b = 4 م)، والمسافة الأرضية الأفقية (a = 3 م)، والسلم (c = 5 م). هذا نموذج هندسي يفترض جدارًا رأسيًا وأرضًا مستوية، وليس تقييمًا لسلامة السلالم.</em></p>",
+              "<h3>المثال 3: قطر غرفة مستطيلة</h3><p><strong>المسألة:</strong> غرفة مستطيلة قطرها 17 قدمًا وأحد أضلاعها 8 أقدام. أوجد الضلع الآخر.</p><p><strong>المعطيات:</strong> c = 17 قدمًا (القطر)، a = 8 أقدام. <strong>المطلوب:</strong> b.</p><p><strong>الحساب:</strong> b = √(17² − 8²) = √(289 − 64) = √225 = 15 قدمًا</p><p><strong>الإجابة:</strong> <strong>الضلع الآخر 15 قدمًا.</strong></p><img src=\"/images/missing-leg/missing-leg-room.svg\" alt=\"رسم الغرفة: قطر 17 قدمًا كوتر، وضلع معروف 8 أقدام كضلع a، وضلع مفقود 15 قدمًا كضلع b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>الشكل: منظر علوي. يقسم القطر (c = 17 قدمًا) المستطيل إلى مثلثين قائمي الزاوية. ويشكل الضلع المعروف (a = 8 أقدام) والضلع المفقود (b = 15 قدمًا) الزاوية القائمة.</em></p>",
+              "<h3>المثال 4: نتيجة تتطلب التقريب</h3><p><strong>المسألة:</strong> المعطى c = 10 م وa = 7 م، أوجد b.</p><p><strong>الحساب:</strong> b = √(10² − 7²) = √(100 − 49) = √51 ≈ 7.141428 م</p><p><strong>الإجابة:</strong> <strong>b ≈ 7.14 م</strong>، مقربًا إلى منزلتين عشريتين.</p><p><strong>التحقق:</strong> 7² + (√51)² = 49 + 51 = 100 = 10².</p><p>احتفظ بالقيمة الدقيقة (√51) أثناء الحسابات الوسيطة وقرّب فقط في الخطوة الأخيرة. فالتقريب المبكر يُدخل أخطاء تتفاقم في المسائل متعددة الخطوات.</p>",
+              "<h3>المثال 5: هندسة المنحدر</h3><p><strong>المسألة:</strong> منحدر مستقيم طوله 13 م ومساره الأفقي 12 م. أوجد ارتفاعه الرأسي.</p><p><strong>المعطيات:</strong> c = 13 م (المنحدر)، a = 12 م (المسار). <strong>المطلوب:</strong> b (الارتفاع).</p><p><strong>الحساب:</strong> b = √(13² − 12²) = √(169 − 144) = √25 = 5 م</p><p><strong>الإجابة:</strong> <strong>الارتفاع الرأسي 5 أمتار.</strong></p><img src=\"/images/missing-leg/missing-leg-ramp.svg\" alt=\"رسم المنحدر: منحدر 13 م كوتر، ومسار أفقي 12 م كضلع a، وارتفاع رأسي 5 م كضلع مفقود b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>الشكل: المنحدر (c = 13 م) كوتر، والمسار الأفقي (a = 12 م)، والارتفاع الرأسي (b = 5 م). لا يثبت هذا الحساب الامتثال للوائح إمكانية الوصول أو البناء.</em></p>"
+            ]
           },
           {
-            "key": "a",
-            "label": "a = الضلع المعروف",
-            "min": 0
+            "h2": "متى يمكنك حساب ضلع مفقود؟",
+            "listItems": [
+              "يقع c مقابل الزاوية <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">القائمة</a> 90°.",
+              "c أكبر من a.",
+              "كلتا القيمتين موجبتان.",
+              "يستخدم c وa الوحدة نفسها."
+            ],
+            "listTitle": "استخدم هذه الفحوص أولًا:",
+            "paragraphs": [
+              "لكي يكون المثلث القائم الزاوية صالحًا وغير منحل، يجب أن تستوفي القياسات ثلاثة شروط: c > 0، وa > 0، وc > a. ويُحسب الضلع المفقود عندئذٍ بالصيغة b = √(c² − a²).",
+              "<strong>الحالة 1: الوتر أصغر من الضلع المعروف.</strong> إذا كان c = 4 وa = 5، فإن b = √(16 − 25) = √(−9). التعبير تحت الجذر التربيعي سالب، لذا لا يمكن لهذه المدخلات أن تشكل مثلثًا قائم الزاوية حقيقيًا يكون c فيه هو الوتر.",
+              "<strong>الحالة 2: الوتر يساوي الضلع المعروف.</strong> إذا كان c = 5 وa = 5، فإن b = √(25 − 25) = 0. هذه حالة منحلة، وليست مثلثًا صالحًا.",
+              "<strong>الحالة 3: قياسات صفرية أو سالبة.</strong> يجب أن تكون أطوال الأضلاع موجبة. ترفض الحاسبة المدخلات الصفرية والسالبة.",
+              "<strong>الحالة 4: وحدات غير متسقة.</strong> يجب أن يستخدم القياسان الوحدة نفسها. إذا كان c بالأمتار وa بالسنتيمترات، فحوّل أحدهما قبل الحساب."
+            ]
+          },
+          {
+            "h2": "أين تُستخدم صيغة الضلع المفقود؟",
+            "paragraphs": [
+              "النمط العام: عندما يكون الطول القطري أو المائل في خط مستقيم ومسافة عمودية واحدة معروفين، يمكن إيجاد المسافة العمودية الأخرى باستخدام نظرية فيثاغورس. ولا يصح هذا إلا عندما تشكل الهندسة مثلثًا قائم الزاوية.",
+              "<strong>البناء والنجارة.</strong> يتحقق النجارون من زوايا المربع بقياس قطر الإطار المستطيل. فإذا كان القطر (c) وأحد الأضلاع (a) معروفين، يؤكد الضلع المفقود (b) المخطط قبل قطع الخشب.",
+              "<strong>قياسات الغرف والمخططات الأرضية.</strong> عند تخطيط الأثاث أو الأرضيات، يعطي قطر الغرفة وطول أحد الجدران طول الجدار الآخر دون تحريك العوائق.",
+              "<strong>هندسة السلم والجدار.</strong> بمعرفة طول السلم وبعده عن الجدار، يُحسب الارتفاع الذي يصل إليه مباشرة. وهذا نموذج هندسي، وليس تقييمًا للسلامة.",
+              "<strong>حسابات المنحدرات والميول.</strong> من طول الميل والمسار الأفقي، يُحدد الارتفاع الرأسي. وهذا لا يثبت الامتثال للوائح."
+            ]
+          },
+          {
+            "h2": "كيفية التحقق من حساب الضلع المفقود",
+            "listItems": [
+              "b أكبر من الصفر.",
+              "b أقصر من c.",
+              "a² + b² تساوي c²، مع السماح بالتقريب في القيمة المعروضة.",
+              "يستخدم الناتج الوحدة الصحيحة."
+            ],
+            "listTitle": "يجب أن تستوفي النتيجة الصالحة:",
+            "paragraphs": [
+              "تحقق من كل نتيجة قبل استخدامها. في مثال 5–12–13: 5² + 12² = 25 + 144 = 169 = 13².",
+              "الناتج المسمى «الضلع المفقود b» هو طول الضلع الآخر الذي يشكل الزاوية القائمة مع a. وهو ليس الوتر ويجب أن يكون أقصر من c."
+            ]
+          },
+          {
+            "h2": "أخطاء شائعة عند إيجاد الضلع المفقود",
+            "listItems": [
+              "<strong>الخلط بين الوتر والضلع القائم.</strong> إذا وضعت قيمة الضلع في حقل c، تحل الصيغة المسألة الخطأ. الصحيح: c هو دائمًا أطول ضلع.",
+              "<strong>جمع المربعين بدلًا من طرحهما.</strong> خطأ: b = √(c² + a²). صحيح: b = √(c² − a²).",
+              "<strong>نسيان الجذر التربيعي.</strong> خطأ: b = c² − a². صحيح: خذ الجذر التربيعي للفرق.",
+              "<strong>تجميع خاطئ للجذر التربيعي.</strong> خطأ: √c² − a² (وهو يساوي c − a). صحيح: √(c² − a²)، بحيث يكون الفرق كله داخل الجذر.",
+              "<strong>إدخال a ≥ c.</strong> لا يمكن أن يساوي الضلع المعروف الوتر أو يتجاوزه. الصحيح: تحقق من أن c > a قبل الحساب.",
+              "<strong>خلط الوحدات.</strong> خطأ: c = 5 م، a = 30 سم. صحيح: حوّل إلى الوحدة نفسها أولًا (c = 500 سم، a = 30 سم).",
+              "<strong>التقريب المبكر.</strong> خطأ: تقريب √51 إلى 7.14 في منتصف الحساب. صحيح: احتفظ بالدقة الكاملة حتى الإجابة النهائية."
+            ],
+            "listTitle": "تجنب هذه الأخطاء:",
+            "paragraphs": [
+              "الخطأ الأكثر شيوعًا هو معاملة c كضلع قائم. فهنا يجب أن يكون c هو الوتر: أطول ضلع، مقابل الزاوية القائمة.",
+              "ومن الأخطاء المتكررة جمع المربعين بدلًا من طرحهما. فالجمع (a² + b²) يجد الوتر؛ أما الطرح (c² − a²) فيجد ضلعًا مفقودًا من الوتر."
+            ]
           }
-        ]
-      },
-      "formulaSection": {
-        "h2": "صيغة الساق المفقودة b",
-        "paragraphs": [
-          "صيغة العثور على الساق b مشتقة من نظرية فيثاغورس (a² + b² = c²). إعادة ترتيب b تعطي الصيغة أدناه.",
-          "حيث c هو الوتر (أطول ضلع في المثلث القائم)، وa هو الضلع المعروف، وb هو الضلع المفقود الذي تبحث عنه. لاحظ الطرح: تطرح مربع الضلع المعروف من مربع الوتر، ثم تأخذ الجذر التربيعي."
         ],
-        "formulas": [
-          "b = \\sqrt{c^2 - a^2}"
-        ]
-      },
-      "howTo": {
-        "h2": "كيفية العثور على الساق b من c وa",
-        "steps": [
-          "تأكد من أن c هو الوتر والساق. الوتر هو دائمًا الضلع الأطول.",
-          "أدخل الوتر c في حقل الإدخال الأول.",
-          "أدخل الجزء المعروف a في حقل الإدخال الثاني.",
-          "انقر فوق \"حساب\" للعثور على الساق المفقودة.",
-          "اقرأ نتيجة b، بالإضافة إلى الحل الكامل خطوة بخطوة."
-        ]
-      },
-      "example": {
-        "h2": "مثال: ابحث عن الساق b",
-        "intro": "مع الأخذ في الاعتبار: c = 13، a = 5. الضلع المفقود في مثلث قائم الزاوية ذو الوتر 13 والضلع 5 هو 12.",
-        "lines": [
-          "b = \\sqrt{13^2 - 5^2}",
-          "b = \\sqrt{169 - 25}",
-          "b = \\sqrt{144}",
-          "b = 12"
-        ]
-      },
-      "extraSections": [
-        {
-          "h2": "تحقق مهم قبل الحساب",
-          "paragraphs": [
-            "قبل استخدام هذه الصيغة، تأكد من أن c أكبر من a. الوتر هو دائمًا أطول ضلع في المثلث القائم الزاوية. إذا كانت c تساوي a، فستحصل على b = 0، مما يعني عدم وجود مثلث.",
-            "إذا كان c أقل من a، يصبح التعبير الموجود أسفل الجذر التربيعي سالبًا. وهذا يعني أن القيمتين المدخلتين لا يمكنهما وصف مثلث قائم الزاوية حقيقي مع c باعتباره الوتر."
+        "faqs": [
+          {
+            "answer": "ربّع الوتر (c²)، وربّع الضلع المعروف (a²)، واطرح، ثم خذ الجذر التربيعي: b = √(c² − a²). أدخل القيمتين في الحاسبة أعلاه للحصول على نتيجة فورية مع الخطوات.",
+            "question": "كيف أجد الضلع المفقود من الوتر وضلع واحد؟"
+          },
+          {
+            "answer": "تجمع نظرية فيثاغورس مربعي الضلعين للحصول على مربع الوتر (a² + b² = c²). وعندما يكون الوتر معروفًا بالفعل، أعد الترتيب: اطرح مربع الضلع المعروف من مربع الوتر لعزل مربع الضلع المفقود، ثم خذ الجذر.",
+            "question": "لماذا أطرح بدلًا من أن أجمع؟"
+          },
+          {
+            "answer": "الوتر هو دائمًا أطول ضلع ويقع مقابل الزاوية 90°. فإذا كانت قياساتك الثلاثة 5 و12 و13، فالوتر هو 13.",
+            "question": "كيف أعرف أي ضلع هو الوتر؟"
+          },
+          {
+            "answer": "إذا كان a = c، فالنتيجة b = 0 (حالة منحلة، وليست مثلثًا). وإذا كان a > c، فالجذر التربيعي لعدد سالب ليس له حل حقيقي. تُرفض الحالتان كمدخلات غير صالحة.",
+            "question": "ماذا يحدث إذا كان الضلع المعروف يساوي الوتر أو أطول منه؟"
+          },
+          {
+            "answer": "نعم. فمثلًا، c = 10 وa = 7 يعطيان b = √51 ≈ 7.14. احتفظ بالدقة الكاملة أثناء الحسابات وقرّب الإجابة النهائية فقط.",
+            "question": "هل يمكن أن يكون الضلع المفقود عددًا عشريًا؟"
+          },
+          {
+            "answer": "تحقق من أن a² + b² = c². في مثال 5–12–13: 25 + 144 = 169. وتأكد أيضًا من أن b > 0، وb < c، وأن الوحدة تطابق مدخلاتك.",
+            "question": "كيف أتحقق من صحة الإجابة؟"
+          },
+          {
+            "answer": "يجب أن يستخدم المدخلان الوحدة نفسها. فإذا كان c بالأمتار وa بالسنتيمترات، فحوّل أحدهما أولًا. ويستخدم الناتج وحدة الإدخال.",
+            "question": "هل يمكنني استخدام وحدات قياس مختلفة؟"
+          },
+          {
+            "answer": "لا، هذا الوضع يجد الضلع المفقود b فقط. لإيجاد الزوايا، استخدم <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">حاسبة زوايا المثلث القائم الزاوية</a>.",
+            "question": "هل يمكن لهذه الحاسبة أيضًا إيجاد زاوية مجهولة؟"
+          }
+        ],
+        "formulaSection": {
+          "formulas": [
+            "a^2 + b^2 = c^2",
+            "b^2 = c^2 - a^2",
+            "b = \\sqrt{c^2 - a^2}"
           ],
-          "listTitle": "استخدم هذه الفحوصات أولاً:",
-          "listItems": [
-            "يقع c مقابل زاوية 90°.",
-            "c أكبر من a.",
-            "كلتا القيمتين إيجابيتان.",
-            "يستخدم c وa نفس الوحدة."
+          "h2": "صيغة إيجاد الضلع المفقود",
+          "paragraphs": [
+            "يستخدم الحساب <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">نظرية فيثاغورس</a>، التي تربط مربعي الضلعين القائمين بمربع الوتر. لعزل الضلع المفقود، أعد ترتيب المعادلة خطوة بخطوة.",
+            "<strong>الخطوة 1: ابدأ بنظرية فيثاغورس.</strong> مجموع مربعي الضلعين القائمين يساوي مربع الوتر.",
+            "<strong>الخطوة 2: اطرح a² من الطرفين.</strong> يعزل هذا مربع الضلع المفقود.",
+            "<strong>الخطوة 3: خذ الجذر التربيعي الموجب.</strong> أطوال الأضلاع موجبة، لذا استخدم الجذر الرئيسي. يبقى التعبير c² − a² بأكمله داخل الجذر.",
+            "حيث <strong>a</strong> هو الضلع المعروف، و<strong>b</strong> هو الضلع المفقود، و<strong>c</strong> هو الوتر. يقع الوتر مقابل الزاوية القائمة وهو دائمًا أطول ضلع.",
+            "<strong>لماذا نطرح؟</strong> المعادلة الأصلية تجمع مربعي الضلعين للحصول على مربع الوتر. عندما يكون الوتر وأحد الضلعين معروفين بالفعل، اطرح مربع الضلع المعروف من مربع الوتر لعزل مربع الضلع المجهول. ثم خذ الجذر التربيعي. لا تطرح الضلع من الوتر مباشرة أبدًا — اطرح مربعي القياسين دائمًا."
           ]
         },
-        {
-          "h2": "حيث تكون هذه الآلة الحاسبة مفيدة",
-          "paragraphs": [
-            "تكون هذه الآلة الحاسبة مفيدة عندما يكون قياس القطر أو الميل معروفًا، ويكون أحد الضلع المتعامد معروفًا، ويكون الضلع المتعامد الآخر مفقودًا. إنها الأداة المركزة على حالة c-and-a، لذا فإن كل شرح في الصفحة يشير إلى العثور على b.",
-            "ويمكن أن يساعد أيضًا في التحقق من القياسات. إذا كانت القيمة المقاسة لـ b لا تتطابق مع نتيجة الآلة الحاسبة، فقد لا يكون المثلث صحيحًا، أو قد تتم تسمية الوتر بشكل خاطئ، أو قد يستخدم أحد القياسات وحدة مختلفة."
-          ],
-          "listTitle": "تشمل الأمثلة الشائعة ما يلي:",
-          "listItems": [
-            "إيجاد ارتفاع الجدار عندما يكون طول السلم c والمسافة الأرضية a معروفة.",
-            "إيجاد الارتفاع الرأسي للمنحدر عندما يكون طول المنحدر والمسار الأفقي معلومين.",
-            "التحقق من مشكلة الواجب المنزلي للمثلث الأيمن التي تعطي c وa.",
-            "تأكيد قياسات التخطيط للتأطير أو تنسيق الحدائق أو المنحدرات أو مخططات الطوابق."
+        "formulaSlug": "leg-from-hypotenuse-and-other-leg",
+        "h1": "حاسبة الضلع المفقود: أوجد الضلع b من الوتر c والضلع a",
+        "howTo": {
+          "h2": "كيفية إيجاد الضلع b من c وa",
+          "steps": [
+            "حدد الوتر، وهو الضلع المقابل للزاوية 90°. وهو دائمًا أطول ضلع.",
+            "أدخل الوتر c في حقل الإدخال الأول.",
+            "أدخل الضلع المعروف a في حقل الإدخال الثاني.",
+            "تحقق من أن القياسين يستخدمان الوحدة نفسها.",
+            "انقر على «احسب» لإيجاد الضلع المفقود b.",
+            "راجع النتيجة وخطوات الحل الموضحة أسفل الحاسبة.",
+            "تحقق من الإجابة بالتأكد من أن a² + b² تساوي c²."
           ]
         },
-        {
-          "h2": "كيفية قراءة الجواب",
-          "paragraphs": [
-            "الإخراج المسمى الساق المفقودة b هو طول الساق الأخرى التي تشكل الزاوية اليمنى مع a. إنه ليس الوتر ويجب أن يكون أقصر من c.",
-            "إذا كان b المحسوب صغيرًا للغاية، فإن ساقك المعروفة a تكون قريبة جدًا من الوتر c. يمكن أن يكون ذلك صحيحًا، لكن من المفيد التحقق من الرسم البياني والوحدات قبل استخدام القيمة."
+        "intro": "تعثر هذه <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">الحاسبة</a> على الضلع المفقود b في مثلث قائم الزاوية عندما تعرف الوتر c والضلع الآخر a. أدخل قياسيك، وستطبق الصيغة b = √(c² − a²) لحساب الضلع المجهول فورًا، مع خطوات الحل الكاملة. الوتر هو أطول ضلع، ويقع مقابل الزاوية القائمة. ويشكل الضلعان القائمان تلك الزاوية القائمة. ومعرفة أي ضلع هو أي ضلع تضمن حصولك على الإجابة الصحيحة في كل مرة.",
+        "metaDescription": "أوجد الضلع المفقود في المثلث القائم الزاوية باستخدام الوتر وضلع معروف. احسب الضلع b، واتبع الصيغة، وتحقق من الأمثلة المحلولة.",
+        "metaTitle": "حاسبة الضلع المفقود: أوجد b من c وa",
+        "quickSummary": {
+          "cards": [
+            {
+              "label": "القيم المعروفة",
+              "value": "الوتر c والضلع a"
+            },
+            {
+              "label": "تُوجد",
+              "value": "الضلع المفقود b"
+            },
+            {
+              "label": "الصيغة الرئيسية",
+              "value": "b = sqrt(c^2 - a^2)"
+            },
+            {
+              "label": "التحقق المطلوب",
+              "value": "يجب أن يكون c أكبر من a"
+            }
           ],
-          "listTitle": "يجب أن تفي النتيجة الصحيحة بما يلي:",
-          "listItems": [
-            "b أكبر من الصفر.",
-            "b أقل من c.",
-            "a² + b² يساوي تقريبًا c².",
-            "وحدة الإخراج تطابق وحدة الإدخال."
-          ]
+          "h2": "ما الذي تحله هذه الأداة",
+          "intro": "استخدم هذه الصفحة عندما يكون الوتر والضلع a معروفين، بينما الضلع الآخر مفقود. تعيد <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">الحاسبة</a> ترتيب <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">نظرية فيثاغورس</a> لطرح الضلع المعروف من الوتر قبل أخذ الجذر التربيعي."
         },
-        {
-          "h2": "الأخطاء الشائعة",
-          "paragraphs": [
-            "الخطأ الأكثر شيوعًا هو التعامل مع c كساق. في هذه الآلة الحاسبة، c يجب أن يكون الوتر، وهو الضلع الأطول والضلع المقابل للزاوية القائمة.",
-            "هناك خطأ شائع آخر وهو إضافة المربعات بدلاً من الطرح. الجمع يجد الوتر. عملية الطرح تعثر على ساق مفقودة من الوتر."
-          ],
-          "listTitle": "تجنب هذه الأخطاء:",
-          "listItems": [
-            "وضع الساق المعروفة في مجال الوتر.",
-            "استخدام c² + a² بدلاً من c² - a².",
-            "إدخال أكبر من أو يساوي c.",
-            "التوقف عند b² بدلاً من أخذ الجذر التربيعي.",
-            "وحدات الخلط مثل المتر والسنتيمتر."
-          ]
-        }
-      ],
-      "relatedLinks": [
-        {
-          "href": "/right-triangle-side-calculator/",
-          "label": "حاسبة جانب المثلث الأيمن"
-        },
-        {
-          "href": "/pythagorean-theorem-calculator/",
-          "label": "حاسبة: نظرية فيثاغورس"
-        },
-        {
-          "href": "/missing-leg-from-c-and-b-calculator/",
-          "label": "حاسبة: الضلع المفقود بدلالة c و b"
-        }
-      ],
-      "faqs": [
-        {
-          "question": "ماذا يعني c في هذه الآلة الحاسبة؟",
-          "answer": "c هو وتر المثلث القائم، وهو الضلع الأطول، ويقع مقابل زاوية 90°. إنها ليست ساق. قمت بإدخال c كإحدى القيمتين المعروفتين في هذه الآلة الحاسبة."
-        },
-        {
-          "question": "ماذا يعني في هذه الآلة الحاسبة؟",
-          "answer": "أ هو أحد ساقي المثلث القائم الزاوية. إنه أحد الأضلاع التي تشكل الزاوية القائمة. في هذه الآلة الحاسبة، a هي الساق التي تعرفها بالفعل."
-        },
-        {
-          "question": "ماذا تجد هذه الآلة الحاسبة؟",
-          "answer": "تعثر هذه الآلة الحاسبة على الساق المفقودة b. بالنظر إلى الوتر c والضلع a، فإنه يحسب b = √(c² − a²) ويظهر لك الحل خطوة بخطوة."
-        },
-        {
-          "question": "هل يمكن أن يكون c أصغر من a؟",
-          "answer": "لا، في المثلث القائم الزاوية، يكون الوتر دائمًا هو الضلع الأطول. إذا كانت c أصغر من a، فإن القيم لا تشكل مثلثًا قائمًا صحيحًا. تحقق من القياس الذي يمثل الوتر قبل الحساب."
-        },
-        {
-          "question": "كيف يمكنني العثور على b من c وa؟",
-          "answer": "قم بتربيع الوتر (c²)، ثم قم بتربيع الضلع المعروف (a²)، واطرح a² من c²، ثم خذ الجذر التربيعي. الصيغة هي b = √(c² − a²). أو أدخل القيم الخاصة بك في هذه الآلة الحاسبة للحصول على إجابة فورية."
-        }
-      ]
+        "relatedLinks": [
+          {
+            "href": "/right-triangle-side-calculator/",
+            "label": "حاسبة أضلاع المثلث القائم الزاوية"
+          },
+          {
+            "href": "/pythagorean-theorem-calculator/",
+            "label": "حاسبة نظرية فيثاغورس"
+          },
+          {
+            "href": "/missing-leg-from-c-and-b-calculator/",
+            "label": "حاسبة الضلع المفقود من c وb"
+          },
+          {
+            "href": "/right-triangle-angle-calculator/",
+            "label": "حاسبة زوايا المثلث القائم الزاوية"
+          },
+          {
+            "href": "/right-triangle-measurements-calculator/",
+            "label": "حاسبة قياسات المثلث القائم الزاوية"
+          }
+        ],
+        "slug": "missing-leg-from-c-and-a-calculator",
+        "toolPurpose": "تذكر: c هو الوتر دائمًا — أطول <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">ضلع</a>، مقابل للزاوية <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">القائمة</a>. وهو ليس ضلعًا قائمًا. إذا كان لديك ضلعان قائمان وتحتاج إلى الوتر بدلًا من ذلك، فاستخدم <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">حاسبة نظرية فيثاغورس</a>.",
+        "url": "/missing-leg-from-c-and-a-calculator/"
     },
     "missing-leg-from-c-and-b-calculator": {
       "slug": "missing-leg-from-c-and-b-calculator",
@@ -8588,204 +9134,243 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         }
       ]
     },
-    "missing-leg-from-c-and-a-calculator": {
-      "slug": "missing-leg-from-c-and-a-calculator",
-      "url": "/missing-leg-from-c-and-a-calculator/",
-      "h1": "Калкулатор: Липсващ катет (чрез c и a)",
-      "metaTitle": "Калкулатор: Липсващ катет (чрез c и a) | Right Triangle Solver",
-      "metaDescription": "Намерете катета b, когато са известни хипотенузата c и другият катет a.",
-      "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "Запомнете: c винаги е хипотенузата - най-дългата страна, срещу правия ъгъл. Това не е крак. Ако имате два крака и вместо това се нуждаете от хипотенузата, използвайте калкулатора на Питагоровата теорема.",
-      "intro": "Намерете катета b, когато са известни хипотенузата c и другият катет a.",
-      "quickSummary": {
-        "h2": "Какво решава този калкулатор за липсващи крака",
-        "intro": "Използвайте тази страница, когато хипотенузата и катетът a са известни, но другият катет липсва. Калкулаторът пренарежда Питагоровата теорема, за да извади известния катет от хипотенузата, преди да извади квадратния корен.",
-        "cards": [
-          {
-            "label": "Известни стойности",
-            "value": "c = хипотенуза; a = известен катет"
-          },
-          {
-            "label": "Находки",
-            "value": "b = неизвестен катет"
-          },
-          {
-            "label": "Основна формула",
-            "value": "b = sqrt(c^2 - a^2)"
-          },
-          {
-            "label": "Задължителна проверка",
-            "value": "Изисква c > a."
-          }
-        ]
-      },
-      "diagram": {
-        "h2": "Диаграма на правоъгълен триъгълник: Откриване на крак b",
-        "intro": "Диаграмата маркира c и a като стойностите, които вече знаете. Вертикалният крак b е подчертан като липсващата страна, която този калкулатор решава.",
-        "caption": "Диаграма на правоъгълен триъгълник с известна хипотенуза c, известен катет a и неизвестен катет b.",
-        "sides": {
-          "a": {
-            "label": "a = известно",
-            "description": "Крат a е познатият катет в основата на правоъгълния триъгълник.",
-            "status": "known"
-          },
-          "b": {
-            "label": "b = намери",
-            "description": "Крак b е неизвестният крак, решен чрез изваждане на a^2 от c^2.",
-            "status": "unknown"
-          },
-          "c": {
-            "label": "c = известно",
-            "description": "Хипотенузата c е известната най-дълга страна срещу правия ъгъл.",
-            "status": "known"
-          }
+        "missing-leg-from-c-and-a-calculator": {
+        "slug": "missing-leg-from-c-and-a-calculator",
+        "url": "/missing-leg-from-c-and-a-calculator/",
+        "h1": "Калкулатор за липсващ катет: Намерете катет b от хипотенуза c и катет a",
+        "metaTitle": "Калкулатор за липсващ катет: Намерете b от c и a",
+        "metaDescription": "Намерете липсващия катет на правоъгълен триъгълник, като използвате хипотенузата и един известен катет. Изчислете страна b, следвайте формулата и проверете решените примери.",
+        "formulaSlug": "leg-from-hypotenuse-and-other-leg",
+        "toolPurpose": "Запомнете: c винаги е хипотенузата — най-дългата <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">страна</a>, срещу правия <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ъгъл</a>. Тя не е катет. Ако имате два катета и ви трябва хипотенузата, използвайте <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Калкулатор за Питагорова теорема</a>.",
+        "intro": "Този <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">калкулатор</a> намира липсващия катет b на правоъгълен триъгълник, когато знаете хипотенузата c и другия катет a. Въведете двете си измервания и той прилага формулата b = √(c² − a²), за да изчисли неизвестната страна незабавно, с пълни стъпки на решението. Хипотенузата е най-дългата страна, срещу правия ъгъл. Двата катета образуват този прав ъгъл. Знаейки коя страна е коя, гарантирате, че всеки път ще получавате верния отговор.",
+        "quickSummary": {
+          "h2": "Какво решава този инструмент",
+          "intro": "Използвайте тази страница, когато хипотенузата и катет a са известни, но другият катет липсва. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Калкулаторът</a> пренарежда <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Питагоровата теорема</a>, за да извади известния катет от хипотенузата, преди да вземе квадратния корен.",
+          "cards": [
+            {
+              "label": "Известни стойности",
+              "value": "Хипотенуза c и катет a"
+            },
+            {
+              "label": "Намира",
+              "value": "Липсващ катет b"
+            },
+            {
+              "label": "Основна формула",
+              "value": "b = sqrt(c^2 - a^2)"
+            },
+            {
+              "label": "Задължителна проверка",
+              "value": "c трябва да е по-голямо от a"
+            }
+          ]
         },
-        "notes": [
-          "c трябва да е хипотенузата, а не един от катетите.",
-          "Ако c е по-малко или равно на a, входовете не образуват валиден правоъгълен триъгълник.",
-          "Резултатът b използва същата единица като c и a."
-        ]
-      },
-      "calculator": {
-        "outputLabel": "b = неизвестен катет",
-        "fields": [
+        "diagram": {
+          "h2": "Идентифицирайте хипотенузата и липсващия катет",
+          "intro": "Диаграмата отбелязва c и a като стойностите, които вече знаете. Вертикалният катет b е подчертан като <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">липсващата страна</a>, която този калкулатор решава.",
+          "caption": "Диаграма на правоъгълен триъгълник с известна хипотенуза c, известен катет a и неизвестен катет b.",
+          "sides": {
+            "a": {
+              "label": "a = известно",
+              "description": "Катет a е известният катет по основата на правоъгълния триъгълник.",
+              "status": "known"
+            },
+            "b": {
+              "label": "b = намери",
+              "description": "Катет b е неизвестният катет, решен чрез изваждане на a^2 от c^2.",
+              "status": "unknown"
+            },
+            "c": {
+              "label": "c = известно",
+              "description": "Хипотенуза c е известната най-дълга <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">страна</a> срещу правия <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ъгъл</a>.",
+              "status": "known"
+            }
+          },
+          "notes": [
+            "c трябва да е хипотенузата, а не един от катетите.",
+            "Ако c е по-малко или равно на a, входните данни не образуват валиден правоъгълен триъгълник.",
+            "Резултатът b използва същата мерна единица като c и a."
+          ]
+        },
+        "calculator": {
+          "outputLabel": "Липсващ катет b",
+          "fields": [
+            {
+              "key": "c",
+              "label": "Хипотенуза c",
+              "min": 0
+            },
+            {
+              "key": "a",
+              "label": "Катет a",
+              "min": 0
+            }
+          ]
+        },
+        "formulaSection": {
+          "h2": "Формула за намиране на липсващ катет",
+          "paragraphs": [
+            "Изчислението използва <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Питагоровата теорема</a>, която свързва квадратите на двата катета с квадрата на хипотенузата. За да изолирате липсващия катет, пренаредете уравнението стъпка по стъпка.",
+            "<strong>Стъпка 1: Започнете с Питагоровата теорема.</strong> Квадратите на двата катета се събират в квадрата на хипотенузата.",
+            "<strong>Стъпка 2: Извадете a² от двете страни.</strong> Това изолира квадрата на липсващия катет.",
+            "<strong>Стъпка 3: Вземете положителния квадратен корен.</strong> Дължините на страните са положителни, така че използвайте главния корен. Целият израз c² − a² остава вътре в корена.",
+            "Където <strong>a</strong> е известният катет, <strong>b</strong> е липсващият катет, а <strong>c</strong> е хипотенузата. Хипотенузата лежи срещу правия ъгъл и винаги е най-дългата страна.",
+            "<strong>Защо изваждаме?</strong> Първоначалното уравнение събира квадратите на двата катета, за да получи квадрата на хипотенузата. Когато хипотенузата и един катет вече са известни, извадете квадрата на известния катет от квадрата на хипотенузата, за да изолирате квадрата на неизвестния катет. След това вземете квадратния корен. Никога не изваждайте катета директно от хипотенузата — винаги изваждайте техните квадрати."
+          ],
+          "formulas": [
+            "a^2 + b^2 = c^2",
+            "b^2 = c^2 - a^2",
+            "b = \\sqrt{c^2 - a^2}"
+          ]
+        },
+        "howTo": {
+          "h2": "Как да намерите катет b от c и a",
+          "steps": [
+            "Идентифицирайте хипотенузата, която лежи срещу ъгъла от 90°. Тя винаги е най-дългата страна.",
+            "Въведете хипотенузата c в първото поле за въвеждане.",
+            "Въведете известния катет a във второто поле за въвеждане.",
+            "Проверете дали двете измервания използват една и съща мерна единица.",
+            "Щракнете върху Изчисли, за да намерите липсващия катет b.",
+            "Прегледайте резултата и стъпка по стъпка решението, показани под калкулатора.",
+            "Проверете отговора, като проверите дали a² + b² е равно на c²."
+          ]
+        },
+        "example": {
+          "h2": "Решени примери за намиране на липсващ катет",
+          "intro": "Всеки пример показва пълното изчисление от условието на задачата до проверения отговор. И петте използват формулата b = √(c² − a²).",
+          "lines": [
+            "b = \\sqrt{13^2 - 5^2}",
+            "b = \\sqrt{169 - 25}",
+            "b = \\sqrt{144}",
+            "b = 12"
+          ]
+        },
+        "extraSections": [
           {
-            "key": "c",
-            "label": "c = хипотенуза",
-            "min": 0
+            "h2": "Подробни решени примери",
+            "paragraphs": [
+              "<h3>Пример 1: Стандартен 5–12–13 триъгълник</h3><p><strong>Задача:</strong> Намерете липсващия катет на правоъгълен триъгълник с хипотенуза c = 13 cm и известен катет a = 5 cm.</p><p><strong>Дадено:</strong> c = 13 cm, a = 5 cm. <strong>Търси се:</strong> b.</p><p><strong>Формула:</strong> b = √(c² − a²)</p><p><strong>Заместване:</strong> b = √(13² − 5²) = √(169 − 25) = √144</p><p><strong>Отговор:</strong> <strong>b = 12 cm</strong></p><p><strong>Проверка:</strong> 5² + 12² = 25 + 144 = 169 = 13². Известният катет, липсващият катет и хипотенузата образуват валиден правоъгълен триъгълник.</p>",
+              "<h3>Пример 2: Стълба, опряна на стена</h3><p><strong>Задача:</strong> Стълба с дължина 5 m е опряна на вертикална стена. Основата ѝ е на 3 m от стената. Намерете височината, достигната от стълбата.</p><p><strong>Дадено:</strong> c = 5 m (стълба), a = 3 m (разстояние от стената). <strong>Търси се:</strong> b (височина на стената).</p><p><strong>Изчисление:</strong> b = √(5² − 3²) = √(25 − 9) = √16 = 4 m</p><p><strong>Отговор:</strong> <strong>Стълбата достига 4 m нагоре по стената.</strong></p><img src=\"/images/missing-leg/missing-leg-ladder.svg\" alt=\"Диаграма на стълба: стълба от 5 m като хипотенуза, разстояние от земята 3 m като катет a, височина на стената 4 m като липсващ катет b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Фигура: Вертикалната стена (b = 4 m), хоризонталното разстояние от земята (a = 3 m) и стълбата (c = 5 m). Това е геометричен модел, предполагащ вертикална стена и равна земя, а не оценка за безопасност на стълбата.</em></p>",
+              "<h3>Пример 3: Диагонал на правоъгълна стая</h3><p><strong>Задача:</strong> Правоъгълна стая има диагонал 17 ft и една страна с дължина 8 ft. Намерете другата страна.</p><p><strong>Дадено:</strong> c = 17 ft (диагонал), a = 8 ft. <strong>Търси се:</strong> b.</p><p><strong>Изчисление:</strong> b = √(17² − 8²) = √(289 − 64) = √225 = 15 ft</p><p><strong>Отговор:</strong> <strong>Другата страна е 15 ft.</strong></p><img src=\"/images/missing-leg/missing-leg-room.svg\" alt=\"Диаграма на стая: диагонал 17 ft като хипотенуза, известна страна 8 ft като катет a, липсваща страна 15 ft като катет b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Фигура: Изглед отгоре. Диагоналът (c = 17 ft) разделя правоъгълника на два правоъгълни триъгълника. Известната страна (a = 8 ft) и липсващата страна (b = 15 ft) образуват правия ъгъл.</em></p>",
+              "<h3>Пример 4: Резултат, който изисква закръгляване</h3><p><strong>Задача:</strong> Дадено c = 10 m и a = 7 m, намерете b.</p><p><strong>Изчисление:</strong> b = √(10² − 7²) = √(100 − 49) = √51 ≈ 7.141428 m</p><p><strong>Отговор:</strong> <strong>b ≈ 7.14 m</strong>, закръглено до два знака след десетичната запетая.</p><p><strong>Проверка:</strong> 7² + (√51)² = 49 + 51 = 100 = 10².</p><p>Запазете точната стойност (√51) по време на междинните изчисления и закръгляйте само на последната стъпка. Ранното закръгляване въвежда грешки, които се натрупват в задачи с много стъпки.</p>",
+              "<h3>Пример 5: Геометрия на рампа</h3><p><strong>Задача:</strong> Права рампа има дължина 13 m и хоризонтален пробег 12 m. Намерете вертикалното ѝ издигане.</p><p><strong>Дадено:</strong> c = 13 m (рампа), a = 12 m (пробег). <strong>Търси се:</strong> b (издигане).</p><p><strong>Изчисление:</strong> b = √(13² − 12²) = √(169 − 144) = √25 = 5 m</p><p><strong>Отговор:</strong> <strong>Вертикалното издигане е 5 m.</strong></p><img src=\"/images/missing-leg/missing-leg-ramp.svg\" alt=\"Диаграма на рампа: рампа от 13 m като хипотенуза, хоризонтален пробег 12 m като катет a, вертикално издигане 5 m като липсващ катет b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Фигура: Рампата (c = 13 m) като хипотенуза, хоризонтален пробег (a = 12 m) и вертикално издигане (b = 5 m). Това изчисление не установява съответствие с разпоредбите за достъпност или строителните норми.</em></p>"
+            ]
           },
           {
-            "key": "a",
-            "label": "a = известен катет",
-            "min": 0
+            "h2": "Кога можете да изчислите липсващ катет?",
+            "paragraphs": [
+              "За валиден неизроден правоъгълен триъгълник измерванията трябва да отговарят на три условия: c > 0, a > 0 и c > a. Липсващият катет е тогава b = √(c² − a²).",
+              "<strong>Случай 1: Хипотенузата е по-малка от известния катет.</strong> Ако c = 4 и a = 5, тогава b = √(16 − 25) = √(−9). Изразът под квадратния корен е отрицателен, така че тези входни данни не могат да образуват реален правоъгълен триъгълник с c като хипотенуза.",
+              "<strong>Случай 2: Хипотенузата е равна на известния катет.</strong> Ако c = 5 и a = 5, тогава b = √(25 − 25) = 0. Това е изроден случай, а не валиден триъгълник.",
+              "<strong>Случай 3: Нулеви или отрицателни измервания.</strong> Дължините на страните трябва да са положителни. Калкулаторът отхвърля нулеви и отрицателни входни данни.",
+              "<strong>Случай 4: Несъответстващи мерни единици.</strong> И двете измервания трябва да използват една и съща мерна единица. Ако c е в метри, а a е в сантиметри, преобразувайте едното преди изчисляването."
+            ],
+            "listTitle": "Първо използвайте тези проверки:",
+            "listItems": [
+              "c е срещу ъгъла от 90° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ъгъла</a>.",
+              "c е по-голямо от a.",
+              "И двете стойности са положителни.",
+              "c и a използват една и съща мерна единица."
+            ]
+          },
+          {
+            "h2": "Къде се използва формулата за липсващ катет?",
+            "paragraphs": [
+              "Общият модел: когато са известни праволинеен диагонал или наклонена дължина и едно перпендикулярно разстояние, другото перпендикулярно разстояние следва от Питагоровата теорема. Това работи само когато геометрията образува правоъгълен триъгълник.",
+              "<strong>Строителство и дърводелство.</strong> Дърводелците проверяват правите ъгли, като измерват диагонала на правоъгълна рамка. Ако диагоналът (c) и една страна (a) са известни, липсващата страна (b) потвърждава разположението преди рязане на дървения материал.",
+              "<strong>Измервания на стаи и планове на етажи.</strong> При планиране на мебели или подови настилки диагоналът на стаята и дължината на една стена дават дължината на другата стена, без да се местят препятствия.",
+              "<strong>Геометрия на стълба и стена.</strong> При дадена дължина на стълбата и разстоянието ѝ от стената, височината, която тя достига, следва директно. Това е геометричен модел, а не оценка за безопасност.",
+              "<strong>Изчисления на рампи и наклони.</strong> От дължината на наклона и хоризонталния пробег се определя вертикалното издигане. Това не установява съответствие с нормите."
+            ]
+          },
+          {
+            "h2": "Как да проверите изчислението на липсващия катет",
+            "paragraphs": [
+              "Проверявайте всеки резултат преди да го използвате. За примера 5–12–13: 5² + 12² = 25 + 144 = 169 = 13².",
+              "Резултатът с етикет Липсващ катет b е дължината на другия катет, който образува правия ъгъл с a. Той не е хипотенузата и трябва да е по-къс от c."
+            ],
+            "listTitle": "Валидният резултат трябва да отговаря на:",
+            "listItems": [
+              "b е по-голямо от нула.",
+              "b е по-късо от c.",
+              "a² + b² е равно на c², като се допуска закръгляване в показаната стойност.",
+              "Резултатът използва правилната мерна единица."
+            ]
+          },
+          {
+            "h2": "Чести грешки при намиране на липсващ катет",
+            "paragraphs": [
+              "Най-честата грешка е третирането на c като катет. Тук c трябва да е хипотенузата: най-дългата страна, срещу правия ъгъл.",
+              "Друга честа грешка е събирането на квадратите вместо изваждането им. Събирането (a² + b²) намира хипотенуза; изваждането (c² − a²) намира липсващ катет от хипотенузата."
+            ],
+            "listTitle": "Избягвайте тези грешки:",
+            "listItems": [
+              "<strong>Объркване на хипотенузата с катет.</strong> Ако въведете стойността на катета в полето c, формулата решава грешна задача. Правилно: c винаги е най-дългата страна.",
+              "<strong>Събиране на квадратите вместо изваждане.</strong> Грешно: b = √(c² + a²). Правилно: b = √(c² − a²).",
+              "<strong>Забравяне на квадратния корен.</strong> Грешно: b = c² − a². Правилно: вземете квадратния корен на разликата.",
+              "<strong>Грешно групиране на квадратния корен.</strong> Грешно: √c² − a² (което е равно на c − a). Правилно: √(c² − a²), с цялата разлика вътре в корена.",
+              "<strong>Въвеждане на a ≥ c.</strong> Известният катет не може да е равен на или да надвишава хипотенузата. Правилно: проверете дали c > a преди изчисляването.",
+              "<strong>Смесване на мерни единици.</strong> Грешно: c = 5 m, a = 30 cm. Правилно: първо преобразувайте в една и съща мерна единица (c = 500 cm, a = 30 cm).",
+              "<strong>Твърде ранно закръгляване.</strong> Грешно: закръгляване на √51 до 7.14 по време на изчислението. Правилно: запазете пълната точност до крайния отговор."
+            ]
           }
-        ]
-      },
-      "formulaSection": {
-        "h2": "Липсващ крак b Формула",
-        "paragraphs": [
-          "Формулата за намиране на крака b е извлечена от Питагоровата теорема (a² + b² = c²). Пренареждането за b дава формулата по-долу.",
-          "Където c е хипотенузата (най-дългата страна на правоъгълния триъгълник), a е известният катет, а b е липсващият катет, който намирате. Обърнете внимание на изваждането: изваждате квадрата на известния катет от квадрата на хипотенузата, след което изваждате корен квадратен."
         ],
-        "formulas": [
-          "b = \\sqrt{c^2 - a^2}"
+        "relatedLinks": [
+          {
+            "href": "/right-triangle-side-calculator/",
+            "label": "Калкулатор за страни на правоъгълен триъгълник"
+          },
+          {
+            "href": "/pythagorean-theorem-calculator/",
+            "label": "Калкулатор за Питагорова теорема"
+          },
+          {
+            "href": "/missing-leg-from-c-and-b-calculator/",
+            "label": "Калкулатор за липсващ катет от c и b"
+          },
+          {
+            "href": "/right-triangle-angle-calculator/",
+            "label": "Калкулатор за ъгли на правоъгълен триъгълник"
+          },
+          {
+            "href": "/right-triangle-measurements-calculator/",
+            "label": "Калкулатор за измервания на правоъгълен триъгълник"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Как да намеря липсващия катет от хипотенузата и един катет?",
+            "answer": "Квадратирайте хипотенузата (c²), квадратирайте известния катет (a²), извадете и вземете квадратния корен: b = √(c² − a²). Въведете двете стойности в калкулатора по-горе за незабавен резултат със стъпки."
+          },
+          {
+            "question": "Защо изваждам вместо да събирам?",
+            "answer": "Питагоровата теорема събира квадратите на катетите, за да получи квадрата на хипотенузата (a² + b² = c²). Когато вече знаете хипотенузата, пренаредете: извадете квадрата на известния катет от квадрата на хипотенузата, за да изолирате квадрата на липсващия катет, след което вземете корена."
+          },
+          {
+            "question": "Как да разбера коя страна е хипотенузата?",
+            "answer": "Хипотенузата винаги е най-дългата страна и лежи срещу ъгъла от 90°. Ако трите ви измервания са 5, 12 и 13, хипотенузата е 13."
+          },
+          {
+            "question": "Какво се случва, ако известният катет е равен на или по-дълъг от хипотенузата?",
+            "answer": "Ако a = c, резултатът е b = 0 (изроден, а не триъгълник). Ако a > c, квадратният корен от отрицателно число няма реално решение. И двата случая се отхвърлят като невалидни."
+          },
+          {
+            "question": "Може ли липсващият катет да е десетична дроб?",
+            "answer": "Да. Например c = 10 и a = 7 дават b = √51 ≈ 7.14. Запазете пълната точност по време на изчисленията и закръглете само крайния отговор."
+          },
+          {
+            "question": "Как мога да проверя дали отговорът е верен?",
+            "answer": "Проверете дали a² + b² = c². За примера 5–12–13: 25 + 144 = 169. Също така потвърдете, че b > 0, b < c и мерната единица съвпада с входните ви данни."
+          },
+          {
+            "question": "Мога ли да използвам различни мерни единици?",
+            "answer": "И двата входа трябва да използват една и съща мерна единица. Ако c е в метри, а a е в сантиметри, първо преобразувайте едното. Резултатът използва входната мерна единица."
+          },
+          {
+            "question": "Може ли този калкулатор да намери и неизвестен ъгъл?",
+            "answer": "Не, този режим намира само липсващия катет b. За намиране на ъгли използвайте <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Калкулатор за ъгли на правоъгълен триъгълник</a>."
+          }
         ]
-      },
-      "howTo": {
-        "h2": "Как да намерите крака b от c и a",
-        "steps": [
-          "Потвърдете, че c е хипотенузата и a е катет. Хипотенузата винаги е най-дългата страна.",
-          "Въведете хипотенузата c в първото поле за въвеждане.",
-          "Въведете известния крак a във второто поле за въвеждане.",
-          "Щракнете върху Изчисли, за да намерите липсващия крак.",
-          "Прочетете резултата за b, заедно с пълното решение стъпка по стъпка."
-        ]
-      },
-      "example": {
-        "h2": "Пример: Намерете крак b",
-        "intro": "Дадено е: c = 13, a = 5. Липсващият катет на правоъгълен триъгълник с хипотенуза 13 и катет 5 е 12.",
-        "lines": [
-          "b = \\sqrt{13^2 - 5^2}",
-          "b = \\sqrt{169 - 25}",
-          "b = \\sqrt{144}",
-          "b = 12"
-        ]
-      },
-      "extraSections": [
-        {
-          "h2": "Важна проверка преди изчисляване",
-          "paragraphs": [
-            "Преди да използвате тази формула, уверете се, че c е по-голямо от a. Хипотенузата винаги е най-дългата страна на правоъгълен триъгълник. Ако c е равно на a, ще получите b = 0, което означава, че не съществува триъгълник.",
-            "Ако c е по-малко от a, изразът под квадратния корен става отрицателен. Това означава, че двете входни стойности не могат да опишат реален правоъгълен триъгълник със c като хипотенуза."
-          ],
-          "listTitle": "Първо използвайте тези проверки:",
-          "listItems": [
-            "c е срещу ъгъла 90°.",
-            "c е по-голям от a.",
-            "И двете стойности са положителни.",
-            "c и a използват една и съща единица."
-          ]
-        },
-        {
-          "h2": "Къде е полезен този калкулатор",
-          "paragraphs": [
-            "Този калкулатор е полезен, когато е известно диагонално или наклонено измерване, едната перпендикулярна страна е известна, а другата перпендикулярна страна липсва. Това е фокусираният инструмент за c-and-a case, така че всяко обяснение на страницата сочи към намирането на b.",
-            "Може също да помогне за проверка на измерванията. Ако измерена стойност за b не ​​съответства на резултата от калкулатора, триъгълникът може да не е правилен, хипотенузата може да е неправилно обозначена или едно измерване може да използва различна единица."
-          ],
-          "listTitle": "Често срещаните примери включват:",
-          "listItems": [
-            "Намиране на височината на стената, когато са известни дължината на стълба c и земното разстояние a.",
-            "Намиране на вертикалното издигане на наклон, когато са известни дължината на наклона и хоризонталният ход.",
-            "Проверка на домашна задача с правоъгълен триъгълник, която дава c и a.",
-            "Потвърждаване на измерванията на оформлението за рамкиране, озеленяване, рампи или етажни планове."
-          ]
-        },
-        {
-          "h2": "Как да разчетем отговора",
-          "paragraphs": [
-            "Резултатът, означен с липсващ крак b, е дължината на другия крак, който образува прав ъгъл с a. Това не е хипотенузата и трябва да е по-късо от c.",
-            "Ако изчисленото b е изключително малко, известният ви крак a е много близо до хипотенузата c. Това може да е валидно, но си струва да проверите диаграмата и единиците, преди да използвате стойността."
-          ],
-          "listTitle": "Валиден резултат трябва да удовлетворява:",
-          "listItems": [
-            "b е по-голямо от нула.",
-            "b е по-малко от c.",
-            "a² + b² е приблизително равен на c².",
-            "Изходната единица съответства на входната единица."
-          ]
-        },
-        {
-          "h2": "Често срещани грешки",
-          "paragraphs": [
-            "Най-честата грешка е третирането на c като крак. В този калкулатор c трябва да е хипотенузата, която е най-дългата страна и страната срещу правия ъгъл.",
-            "Друга често срещана грешка е събирането на квадратите вместо изваждането. Събирането намира хипотенуза; изваждане открива липсващ катет от хипотенузата."
-          ],
-          "listTitle": "Избягвайте тези грешки:",
-          "listItems": [
-            "Поставяне на известния катет в полето на хипотенузата.",
-            "Използване на c² + a² вместо c² - a².",
-            "Въвеждане на по-голямо или равно на c.",
-            "Спиране на b² вместо извличане на корен квадратен.",
-            "Смесващи единици като метри и сантиметри."
-          ]
-        }
-      ],
-      "relatedLinks": [
-        {
-          "href": "/right-triangle-side-calculator/",
-          "label": "Калкулатор на страната на десния триъгълник"
-        },
-        {
-          "href": "/pythagorean-theorem-calculator/",
-          "label": "Калкулатор: Питагорова теорема"
-        },
-        {
-          "href": "/missing-leg-from-c-and-b-calculator/",
-          "label": "Калкулатор: Липсващ катет (чрез c и b)"
-        }
-      ],
-      "faqs": [
-        {
-          "question": "Какво означава c в този калкулатор?",
-          "answer": "c е хипотенузата на правоъгълния триъгълник - най-дългата страна, разположена срещу ъгъла 90°. Това не е крак. Въвеждате c като една от двете известни стойности в този калкулатор."
-        },
-        {
-          "question": "Какво означава в този калкулатор?",
-          "answer": "a е един от двата катета на правоъгълния триъгълник. Това е една от страните, която образува прав ъгъл. В този калкулатор a е кракът, който вече знаете."
-        },
-        {
-          "question": "Какво намира този калкулатор?",
-          "answer": "Този калкулатор намира липсващия крак b. При дадена хипотенуза c и катет a, той изчислява b = √(c² − a²) и ви показва решението стъпка по стъпка."
-        },
-        {
-          "question": "Може ли c да бъде по-малък от a?",
-          "answer": "Не. В правоъгълен триъгълник хипотенузата винаги е най-дългата страна. Ако c е по-малък от a, стойностите не образуват валиден правоъгълен триъгълник. Проверете коя мярка е хипотенузата, преди да изчислите."
-        },
-        {
-          "question": "Как да намеря b от c и a?",
-          "answer": "Квадратирайте хипотенузата (c²), повдигнете на квадрат известния катет (a²), извадете a² от c² и извадете корен квадратен. Формулата е b = √(c² − a²). Или въведете вашите стойности в този калкулатор за незабавен отговор."
-        }
-      ]
     },
     "missing-leg-from-c-and-b-calculator": {
       "slug": "missing-leg-from-c-and-b-calculator",
@@ -9187,204 +9772,243 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         }
       ]
     },
-    "missing-leg-from-c-and-a-calculator": {
-      "slug": "missing-leg-from-c-and-a-calculator",
-      "url": "/missing-leg-from-c-and-a-calculator/",
-      "h1": "Hesaplayıcı: Kayıp Dik Kenar (c ve a ile)",
-      "metaTitle": "Hesaplayıcı: Kayıp Dik Kenar (c ve a ile) | Right Triangle Solver",
-      "metaDescription": "Hipotenüs c ve diğer dik kenar a bilindiğinde dik kenar b'yi bulun.",
-      "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "Unutmayın: c her zaman hipotenüstür; dik açının karşısındaki en uzun kenardır. Bu bir kenar değil. İki bacağınız varsa ve bunun yerine hipotenüse ihtiyacınız varsa Pisagor Teoremi Hesaplayıcısını kullanın.",
-      "intro": "Hipotenüs c ve diğer dik kenar a bilindiğinde dik kenar b'yi bulun.",
-      "quickSummary": {
-        "h2": "Bu Eksik kenar Hesaplayıcısı Neyi Çözüyor?",
-        "intro": "Hipotenüs ve a kenarı bilindiğinde ancak diğer kenar eksik olduğunda bu sayfayı kullanın. Hesap makinesi, karekök almadan önce hipotenüsten bilinen kenarı çıkarmak için Pisagor teoremini yeniden düzenler.",
-        "cards": [
-          {
-            "label": "Bilinen değerler",
-            "value": "c = hipotenüs; a = bilinen kenar"
-          },
-          {
-            "label": "Buluntular",
-            "value": "b = bilinmeyen kenar"
-          },
-          {
-            "label": "Ana formül",
-            "value": "b = sqrt(c^2 - a^2)"
-          },
-          {
-            "label": "Gerekli kontrol",
-            "value": "c > a olmalıdır."
-          }
-        ]
-      },
-      "diagram": {
-        "h2": "Sağ Üçgen Diyagramı: kenar Bulma b",
-        "intro": "Diyagram c ve a'i zaten bildiğiniz değerler olarak işaretler. Dikey kenar b, bu hesap makinesinin çözdüğü eksik taraf olarak vurgulanmıştır.",
-        "caption": "Bilinen hipotenüs c, bilinen kenar a ve bilinmeyen kenar b'i içeren sağ üçgen diyagramı.",
-        "sides": {
-          "a": {
-            "label": "a = biliniyor",
-            "description": "kenar a, sağ üçgenin tabanı boyunca bilinen kenartır.",
-            "status": "known"
-          },
-          "b": {
-            "label": "b = bul",
-            "description": "Ayak b, a^2'in c^2'ten çıkarılmasıyla çözülen bilinmeyen kenartır.",
-            "status": "unknown"
-          },
-          "c": {
-            "label": "c = biliniyor",
-            "description": "Hipotenüs c dik açının karşısındaki bilinen en uzun kenardır.",
-            "status": "known"
+        "missing-leg-from-c-and-a-calculator": {
+        "calculator": {
+          "fields": [
+            {
+              "key": "c",
+              "label": "Hipotenüs c",
+              "min": 0
+            },
+            {
+              "key": "a",
+              "label": "Dik kenar a",
+              "min": 0
+            }
+          ],
+          "outputLabel": "Eksik dik kenar b"
+        },
+        "diagram": {
+          "caption": "Bilinen hipotenüs c, bilinen dik kenar a ve bilinmeyen dik kenar b içeren dik üçgen şeması.",
+          "h2": "Hipotenüsü ve Eksik Dik Kenarı Belirleyin",
+          "intro": "Şema, c ve a'yı zaten bildiğiniz değerler olarak işaretler. Dikey b dik kenarı, bu hesap makinesinin çözdüğü <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">eksik kenar</a> olarak vurgulanır.",
+          "notes": [
+            "c hipotenüs olmalı, dik kenarlardan biri değil.",
+            "c, a'ya eşit veya a'dan küçükse girdiler geçerli bir dik üçgen oluşturmaz.",
+            "b sonucu, c ve a ile aynı birimi kullanır."
+          ],
+          "sides": {
+            "a": {
+              "description": "a dik kenarı, dik üçgenin tabanı boyunca uzanan bilinen dik kenardır.",
+              "label": "a = bilinen",
+              "status": "known"
+            },
+            "b": {
+              "description": "b dik kenarı, a²'nin c²'den çıkarılmasıyla bulunan bilinmeyen dik kenardır.",
+              "label": "b = bulunacak",
+              "status": "unknown"
+            },
+            "c": {
+              "description": "Hipotenüs c, dik <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a>nın karşısındaki bilinen en uzun <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a>dır.",
+              "label": "c = bilinen",
+              "status": "known"
+            }
           }
         },
-        "notes": [
-          "c kenarlardan biri değil, hipotenüs olmalıdır.",
-          "c, a'ten küçük veya ona eşitse girişler geçerli bir dik üçgen oluşturmaz.",
-          "Sonuç b, c ve a ile aynı birimi kullanır."
-        ]
-      },
-      "calculator": {
-        "outputLabel": "b = bilinmeyen kenar",
-        "fields": [
+        "example": {
+          "h2": "Eksik Dik Kenar Bulmak İçin Çözümlü Örnekler",
+          "intro": "Her örnek, problem ifadesinden doğrulanmış cevaba kadar tüm hesaplamayı gösterir. Beş örnek de b = √(c² − a²) formülünü kullanır.",
+          "lines": [
+            "b = \\sqrt{13^2 - 5^2}",
+            "b = \\sqrt{169 - 25}",
+            "b = \\sqrt{144}",
+            "b = 12"
+          ]
+        },
+        "extraSections": [
           {
-            "key": "c",
-            "label": "c = hipotenüs",
-            "min": 0
+            "h2": "Ayrıntılı Çözümlü Örnekler",
+            "paragraphs": [
+              "<h3>Örnek 1: Standart 5–12–13 Üçgeni</h3><p><strong>Problem:</strong> Hipotenüsü c = 13 cm ve bilinen dik kenarı a = 5 cm olan bir dik üçgenin eksik dik kenarını bulun.</p><p><strong>Verilenler:</strong> c = 13 cm, a = 5 cm. <strong>Bulunacak:</strong> b.</p><p><strong>Formül:</strong> b = √(c² − a²)</p><p><strong>Yerine koyma:</strong> b = √(13² − 5²) = √(169 − 25) = √144</p><p><strong>Cevap:</strong> <strong>b = 12 cm</strong></p><p><strong>Doğrulama:</strong> 5² + 12² = 25 + 144 = 169 = 13². Bilinen dik kenar, eksik dik kenar ve hipotenüs geçerli bir dik üçgen oluşturur.</p>",
+              "<h3>Örnek 2: Duvara Dayalı Merdiven</h3><p><strong>Problem:</strong> 5 m'lik bir merdiven dikey bir duvara dayanmaktadır. Tabanı duvardan 3 m uzaktadır. Merdivenin duvarda ulaştığı yüksekliği bulun.</p><p><strong>Verilenler:</strong> c = 5 m (merdiven), a = 3 m (zemin mesafesi). <strong>Bulunacak:</strong> b (duvar yüksekliği).</p><p><strong>Hesaplama:</strong> b = √(5² − 3²) = √(25 − 9) = √16 = 4 m</p><p><strong>Cevap:</strong> <strong>Merdiven duvarda 4 m yüksekliğe ulaşır.</strong></p><img src=\"/images/missing-leg/missing-leg-ladder.svg\" alt=\"Merdiven şeması: hipotenüs olarak 5 m'lik merdiven, a dik kenarı olarak 3 m'lik zemin mesafesi, eksik b dik kenarı olarak 4 m'lik duvar yüksekliği\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Şekil: Dikey duvar (b = 4 m), yatay zemin mesafesi (a = 3 m) ve merdiven (c = 5 m). Bu, dikey bir duvar ve düz bir zemin varsayan geometrik bir modeldir; merdiven güvenliği değerlendirmesi değildir.</em></p>",
+              "<h3>Örnek 3: Dikdörtgen Oda Köşegeni</h3><p><strong>Problem:</strong> Dikdörtgen bir odanın köşegeni 17 ft ve bir kenarı 8 ft'dir. Diğer kenarı bulun.</p><p><strong>Verilenler:</strong> c = 17 ft (köşegen), a = 8 ft. <strong>Bulunacak:</strong> b.</p><p><strong>Hesaplama:</strong> b = √(17² − 8²) = √(289 − 64) = √225 = 15 ft</p><p><strong>Cevap:</strong> <strong>Diğer kenar 15 ft'dir.</strong></p><img src=\"/images/missing-leg/missing-leg-room.svg\" alt=\"Oda şeması: hipotenüs olarak 17 ft'lik köşegen, a dik kenarı olarak 8 ft'lik bilinen kenar, eksik b dik kenarı olarak 15 ft'lik kenar\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Şekil: Yukarıdan görünüm. Köşegen (c = 17 ft) dikdörtgeni iki dik üçgene böler. Bilinen kenar (a = 8 ft) ve eksik kenar (b = 15 ft) dik açıyı oluşturur.</em></p>",
+              "<h3>Örnek 4: Yuvarlama Gerektiren Bir Sonuç</h3><p><strong>Problem:</strong> c = 10 m ve a = 7 m verildiğinde b'yi bulun.</p><p><strong>Hesaplama:</strong> b = √(10² − 7²) = √(100 − 49) = √51 ≈ 7,141428 m</p><p><strong>Cevap:</strong> <strong>b ≈ 7,14 m</strong>, iki ondalık basamağa yuvarlanmıştır.</p><p><strong>Doğrulama:</strong> 7² + (√51)² = 49 + 51 = 100 = 10².</p><p>Ara hesaplamalarda tam değeri (√51) koruyun ve yalnızca son adımda yuvarlayın. Erken yuvarlama, çok adımlı problemlerde biriken hatalara yol açar.</p>",
+              "<h3>Örnek 5: Rampa Geometrisi</h3><p><strong>Problem:</strong> Düz bir rampanın uzunluğu 13 m ve yatay mesafesi 12 m'dir. Dikey yüksekliğini bulun.</p><p><strong>Verilenler:</strong> c = 13 m (rampa), a = 12 m (yatay mesafe). <strong>Bulunacak:</strong> b (yükseklik).</p><p><strong>Hesaplama:</strong> b = √(13² − 12²) = √(169 − 144) = √25 = 5 m</p><p><strong>Cevap:</strong> <strong>Dikey yükseklik 5 m'dir.</strong></p><img src=\"/images/missing-leg/missing-leg-ramp.svg\" alt=\"Rampa şeması: hipotenüs olarak 13 m'lik rampa, a dik kenarı olarak 12 m'lik yatay mesafe, eksik b dik kenarı olarak 5 m'lik dikey yükseklik\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Şekil: Hipotenüs olarak rampa (c = 13 m), yatay mesafe (a = 12 m) ve dikey yükseklik (b = 5 m). Bu hesaplama, erişilebilirlik veya yapı yönetmeliklerine uygunluğu belirlemez.</em></p>"
+            ]
           },
           {
-            "key": "a",
-            "label": "a = bilinen kenar",
-            "min": 0
+            "h2": "Eksik Dik Kenar Ne Zaman Hesaplanabilir?",
+            "listItems": [
+              "c, 90° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a>nın karşısındadır.",
+              "c, a'dan büyüktür.",
+              "Her iki değer de pozitiftir.",
+              "c ve a aynı birimi kullanır."
+            ],
+            "listTitle": "Önce şu kontrolleri yapın:",
+            "paragraphs": [
+              "Geçerli, dejenere olmayan bir dik üçgen için ölçümler üç koşulu sağlamalıdır: c > 0, a > 0 ve c > a. Eksik dik kenar o zaman b = √(c² − a²) olur.",
+              "<strong>Durum 1: Hipotenüsün bilinen dik kenardan küçük olması.</strong> c = 4 ve a = 5 ise, b = √(16 − 25) = √(−9) olur. Karekökün içindeki ifade negatiftir, bu nedenle bu girdiler c'nin hipotenüs olduğu gerçek bir dik üçgen oluşturamaz.",
+              "<strong>Durum 2: Hipotenüsün bilinen dik kenara eşit olması.</strong> c = 5 ve a = 5 ise, b = √(25 − 25) = 0 olur. Bu dejenere bir durumdur, geçerli bir üçgen değildir.",
+              "<strong>Durum 3: Sıfır veya negatif ölçümler.</strong> Kenar uzunlukları pozitif olmalıdır. Hesap makinesi sıfır ve negatif girdileri reddeder.",
+              "<strong>Durum 4: Tutarsız birimler.</strong> Her iki ölçüm de aynı birimi kullanmalıdır. c metre, a santimetre ise hesaplamadan önce birini dönüştürün."
+            ]
+          },
+          {
+            "h2": "Eksik Dik Kenar Formülü Nerelerde Kullanılır?",
+            "paragraphs": [
+              "Genel kalıp şudur: düz bir köşegen veya eğimli uzunluk ile bir dikey mesafe bilindiğinde, diğer dikey mesafe Pisagor teoreminden bulunur. Bu yalnızca geometri bir dik üçgen oluşturduğunda geçerlidir.",
+              "<strong>İnşaat ve iskelet işleri.</strong> Marangozlar, dikdörtgen bir çerçevenin köşegenini ölçerek köşelerin dikliğini kontrol eder. Köşegen (c) ve bir kenar (a) biliniyorsa, eksik kenar (b) keresteyi kesmeden önce düzeni doğrular.",
+              "<strong>Oda ve kat planı ölçümleri.</strong> Mobilya veya zemin planlanırken, bir odanın köşegeni ve bir duvar uzunluğu, engelleri oynatmadan diğer duvar uzunluğunu verir.",
+              "<strong>Merdiven ve duvar geometrisi.</strong> Merdiven uzunluğu ve duvara olan uzaklığı verildiğinde, ulaştığı yükseklik doğrudan bulunur. Bu geometrik bir modeldir, güvenlik değerlendirmesi değildir.",
+              "<strong>Rampa ve eğim hesaplamaları.</strong> Eğim uzunluğu ve yatay mesafeden dikey yükseklik belirlenir. Bu, yönetmelik uygunluğunu belirlemez."
+            ]
+          },
+          {
+            "h2": "Eksik Dik Kenar Hesabınızı Nasıl Kontrol Edersiniz",
+            "listItems": [
+              "b sıfırdan büyüktür.",
+              "b, c'den kısadır.",
+              "a² + b², görüntülenen değerdeki yuvarlamaya izin verilerek c²'ye eşittir.",
+              "Sonuç doğru birimi kullanır."
+            ],
+            "listTitle": "Geçerli bir sonuç şunları sağlamalıdır:",
+            "paragraphs": [
+              "Kullanmadan önce her sonucu doğrulayın. 5–12–13 örneği için: 5² + 12² = 25 + 144 = 169 = 13².",
+              "\"Eksik dik kenar b\" etiketli çıktı, a ile dik açı oluşturan diğer dik kenarın uzunluğudur. Hipotenüs değildir ve c'den kısa olmalıdır."
+            ]
+          },
+          {
+            "h2": "Eksik Dik Kenar Bulurken Yapılan Yaygın Hatalar",
+            "listItems": [
+              "<strong>Hipotenüsü dik kenarla karıştırmak.</strong> Dik kenar değerini c alanına yazarsanız formül yanlış problemi çözer. Doğru: c her zaman en uzun kenardır.",
+              "<strong>Çıkarmak yerine kareleri toplamak.</strong> Yanlış: b = √(c² + a²). Doğru: b = √(c² − a²).",
+              "<strong>Karekökü unutmak.</strong> Yanlış: b = c² − a². Doğru: farkın karekökünü alın.",
+              "<strong>Yanlış karekök gruplaması.</strong> Yanlış: √c² − a² (bu c − a'ya eşittir). Doğru: √(c² − a²); farkın tamamı kökün içinde olmalıdır.",
+              "<strong>a ≥ c girmek.</strong> Bilinen dik kenar hipotenüse eşit veya ondan büyük olamaz. Doğru: hesaplamadan önce c > a olduğunu doğrulayın.",
+              "<strong>Birimleri karıştırmak.</strong> Yanlış: c = 5 m, a = 30 cm. Doğru: önce aynı birime dönüştürün (c = 500 cm, a = 30 cm).",
+              "<strong>Çok erken yuvarlamak.</strong> Yanlış: hesaplama ortasında √51'i 7,14'e yuvarlamak. Doğru: son cevaba kadar tam duyarlılığı koruyun."
+            ],
+            "listTitle": "Şu hatalardan kaçının:",
+            "paragraphs": [
+              "En yaygın hata, c'yi bir dik kenar sanmaktır. Burada c hipotenüs olmalıdır: en uzun kenar, dik açının karşısındaki.",
+              "Bir diğer sık hata, çıkarmak yerine kareleri toplamaktır. Toplama (a² + b²) hipotenüsü bulur; çıkarma (c² − a²) hipotenüsten eksik dik kenarı bulur."
+            ]
           }
-        ]
-      },
-      "formulaSection": {
-        "h2": "Eksik kenar b Formülü",
-        "paragraphs": [
-          "b ayağını bulma formülü Pisagor teoreminden (a² + b² = c²) türetilmiştir. b için yeniden düzenleme aşağıdaki formülü verir.",
-          "c hipotenüs (sağ üçgenin en uzun kenarı) olduğunda, a bilinen kenardır ve b çözdüğünüz eksik kenardır. Çıkarmaya dikkat edin: bilinen kenarın karesini hipotenüsün karesinden çıkarırsınız, sonra karekökünü alırsınız."
         ],
-        "formulas": [
-          "b = \\sqrt{c^2 - a^2}"
-        ]
-      },
-      "howTo": {
-        "h2": "c ve a'tan b kenar Nasıl Bulunur?",
-        "steps": [
-          "c'in hipotenüs ve a'nın bir kenar olduğunu doğrulayın. Hipotenüs her zaman en uzun kenardır.",
-          "İlk giriş alanına hipotenüs c'i girin.",
-          "Bilinen kenar a'ı ikinci giriş alanına girin.",
-          "Eksik bacağı bulmak için Hesapla'ya tıklayın.",
-          "Tam adım adım çözümle birlikte b sonucunu okuyun."
-        ]
-      },
-      "example": {
-        "h2": "Örnek: b Bacağını Bul",
-        "intro": "Verilen: c = 13, a = 5. Hipotenüsü 13 ve kenarı 5 olan bir dik üçgenin eksik kenarı 12'dir.",
-        "lines": [
-          "b = \\sqrt{13^2 - 5^2}",
-          "b = \\sqrt{169 - 25}",
-          "b = \\sqrt{144}",
-          "b = 12"
-        ]
-      },
-      "extraSections": [
-        {
-          "h2": "Hesaplamadan Önce Önemli Kontrol",
-          "paragraphs": [
-            "Bu formülü kullanmadan önce c'in a'tan büyük olduğundan emin olun. Hipotenüs her zaman dik üçgenin en uzun kenarıdır. c, a'a eşitse b = 0 elde edersiniz, bu da üçgenin olmadığı anlamına gelir.",
-            "c, a'tan küçükse karekök altındaki ifade negatif olur. Bu, iki giriş değerinin, hipotenüs olarak c'e sahip bir gerçek dik üçgeni tanımlayamayacağı anlamına gelir."
+        "faqs": [
+          {
+            "answer": "Hipotenüsün karesini alın (c²), bilinen dik kenarın karesini alın (a²), çıkarın ve karekökünü alın: b = √(c² − a²). Adımlı anında sonuç için her iki değeri de yukarıdaki hesap makinesine girin.",
+            "question": "Hipotenüs ve bir dik kenardan eksik dik kenarı nasıl bulurum?"
+          },
+          {
+            "answer": "Pisagor teoremi, hipotenüsün karesini elde etmek için dik kenarların karelerini toplar (a² + b² = c²). Hipotenüsü zaten bildiğinizde yeniden düzenleyin: eksik dik kenarın karesini yalnız bırakmak için bilinen dik kenarın karesini hipotenüsün karesinden çıkarın, ardından kökü alın.",
+            "question": "Neden toplamak yerine çıkarıyorum?"
+          },
+          {
+            "answer": "Hipotenüs her zaman en uzun kenardır ve 90°'lik açının karşısındadır. Üç ölçümünüz 5, 12 ve 13 ise hipotenüs 13'tür.",
+            "question": "Hangi kenarın hipotenüs olduğunu nasıl anlarım?"
+          },
+          {
+            "answer": "a = c ise sonuç b = 0 olur (dejenere, üçgen değildir). a > c ise negatif bir sayının karekökünün gerçek çözümü yoktur. Her iki durum da geçersiz olarak reddedilir.",
+            "question": "Bilinen dik kenar hipotenüse eşit veya ondan uzunsa ne olur?"
+          },
+          {
+            "answer": "Evet. Örneğin c = 10 ve a = 7 ise b = √51 ≈ 7,14 olur. Hesaplamalar sırasında tam duyarlılığı koruyun ve yalnızca son cevabı yuvarlayın.",
+            "question": "Eksik dik kenar ondalıklı olabilir mi?"
+          },
+          {
+            "answer": "a² + b² = c² olduğunu doğrulayın. 5–12–13 örneği için: 25 + 144 = 169. Ayrıca b > 0, b < c olduğunu ve birimin girdilerinizle eşleştiğini kontrol edin.",
+            "question": "Cevabın doğru olup olmadığını nasıl kontrol edebilirim?"
+          },
+          {
+            "answer": "Her iki girdi de aynı birimi kullanmalıdır. c metre, a santimetre ise önce birini dönüştürün. Sonuç girdi birimini kullanır.",
+            "question": "Farklı ölçü birimleri kullanabilir miyim?"
+          },
+          {
+            "answer": "Hayır, bu mod yalnızca eksik b dik kenarını bulur. Açıları bulmak için <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Dik Üçgen Açı Hesaplayıcısını</a> kullanın.",
+            "question": "Bu hesap makinesi bilinmeyen bir açıyı da bulabilir mi?"
+          }
+        ],
+        "formulaSection": {
+          "formulas": [
+            "a^2 + b^2 = c^2",
+            "b^2 = c^2 - a^2",
+            "b = \\sqrt{c^2 - a^2}"
           ],
-          "listTitle": "İlk önce bu kontrolleri kullanın:",
-          "listItems": [
-            "c, 90° açısının karşısındadır.",
-            "c, a'tan daha büyüktür.",
-            "Her iki değer de pozitiftir.",
-            "c ve a aynı üniteyi kullanır."
+          "h2": "Eksik Dik Kenarı Bulma Formülü",
+          "paragraphs": [
+            "Hesaplama, iki dik kenarın karelerini hipotenüsün karesiyle ilişkilendiren <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Pisagor teoremini</a> kullanır. Eksik dik kenarı yalnız bırakmak için denklemi adım adım yeniden düzenleyin.",
+            "<strong>1. Adım: Pisagor teoremi ile başlayın.</strong> İki dik kenarın kareleri toplamı hipotenüsün karesine eşittir.",
+            "<strong>2. Adım: Her iki taraftan a² çıkarın.</strong> Bu, eksik dik kenarın karesini yalnız bırakır.",
+            "<strong>3. Adım: Pozitif karekökü alın.</strong> Kenar uzunlukları pozitiftir, bu yüzden esas kökü kullanın. c² − a² ifadesinin tamamı kök içinde kalır.",
+            "Burada <strong>a</strong> bilinen dik kenar, <strong>b</strong> eksik dik kenar ve <strong>c</strong> hipotenüstür. Hipotenüs dik açının karşısındadır ve her zaman en uzun kenardır.",
+            "<strong>Neden çıkarma?</strong> Orijinal denklem, hipotenüsün karesini elde etmek için iki dik kenarın karelerini toplar. Hipotenüs ve bir dik kenar zaten bilindiğinde, bilinmeyen dik kenarın karesini yalnız bırakmak için bilinen dik kenarın karesini hipotenüsün karesinden çıkarın. Ardından karekökü alın. Dik kenarı doğrudan hipotenüsten çıkarmayın — her zaman iki ölçümün karelerini çıkarın."
           ]
         },
-        {
-          "h2": "Bu Hesap Makinesinin Yararlı Olduğu Yerler",
-          "paragraphs": [
-            "Bu hesaplayıcı, çapraz veya eğimli bir ölçüm bilindiğinde, bir dik kenar bilindiğinde ve diğer dik kenar eksik olduğunda kullanışlıdır. Bu, c ve bir durum için odaklanmış bir araçtır, dolayısıyla sayfadaki her açıklama b'in bulunmasına işaret eder.",
-            "Ayrıca ölçümlerin doğrulanmasına da yardımcı olabilir. b için ölçülen değer hesap makinesinin sonucuyla eşleşmiyorsa üçgen doğru olmayabilir, hipotenüs yanlış etiketlenmiş olabilir veya bir ölçümde farklı bir birim kullanılmış olabilir."
-          ],
-          "listTitle": "Yaygın örnekler şunları içerir:",
-          "listItems": [
-            "Merdiven uzunluğu c ve zemin mesafesi a bilindiğinde duvar yüksekliğini bulma.",
-            "Şev uzunluğu ve yatay mesafe bilindiğinde bir şevin dikey yükselişini bulma.",
-            "c ve a veren dik üçgen ödev problemini kontrol etmek.",
-            "Çerçeveleme, çevre düzenlemesi, rampalar veya kat planları için yerleşim ölçümlerinin onaylanması."
+        "formulaSlug": "leg-from-hypotenuse-and-other-leg",
+        "h1": "Eksik Dik Kenar Hesaplayıcı: Hipotenüs c ve Dik Kenar a'dan b'yi Bulun",
+        "howTo": {
+          "h2": "c ve a'dan b Dik Kenarı Nasıl Bulunur",
+          "steps": [
+            "90°'lik açının karşısında yer alan hipotenüsü belirleyin. Her zaman en uzun kenardır.",
+            "İlk giriş alanına hipotenüs c'yi girin.",
+            "İkinci giriş alanına bilinen dik kenar a'yı girin.",
+            "Her iki ölçümün de aynı birimi kullandığını kontrol edin.",
+            "Eksik b dik kenarını bulmak için Hesapla'ya tıklayın.",
+            "Sonucu ve hesap makinesinin altında gösterilen adım adım çözümü inceleyin.",
+            "a² + b²'nin c²'ye eşit olduğunu kontrol ederek cevabı doğrulayın."
           ]
         },
-        {
-          "h2": "Cevap Nasıl Okunur?",
-          "paragraphs": [
-            "Eksik kenar b etiketli çıktı, a ile dik açı oluşturan diğer bacağın uzunluğudur. Bu hipotenüs değildir ve c'ten daha kısa olmalıdır.",
-            "Hesaplanan b son derece küçükse, bilinen a ayağınız c hipotenüsüne çok yakındır. Bu geçerli olabilir, ancak değeri kullanmadan önce diyagramı ve birimleri kontrol etmeye değer."
+        "intro": "Bu <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesap makinesi</a>, hipotenüs c ve diğer dik kenar a bilindiğinde bir dik üçgenin eksik b dik kenarını bulur. İki ölçünüzü girin; bilinmeyen kenarı anında, tüm çözüm adımlarıyla birlikte hesaplamak için b = √(c² − a²) formülünü uygular. Hipotenüs, dik açının karşısındaki en uzun kenardır. İki dik kenar bu dik açıyı oluşturur. Hangi kenarın hangisi olduğunu bilmek her seferinde doğru cevabı almanızı sağlar.",
+        "metaDescription": "Hipotenüs ve bilinen bir dik kenar kullanarak dik üçgenin eksik dik kenarını bulun. b kenarını hesaplayın, formülü takip edin ve çözümlü örnekleri inceleyin.",
+        "metaTitle": "Eksik Dik Kenar Hesaplayıcı: c ve a'dan b'yi Bulun",
+        "quickSummary": {
+          "cards": [
+            {
+              "label": "Bilinen değerler",
+              "value": "Hipotenüs c ve dik kenar a"
+            },
+            {
+              "label": "Bulunan",
+              "value": "Eksik dik kenar b"
+            },
+            {
+              "label": "Ana formül",
+              "value": "b = sqrt(c^2 - a^2)"
+            },
+            {
+              "label": "Gerekli kontrol",
+              "value": "c, a'dan büyük olmalıdır"
+            }
           ],
-          "listTitle": "Geçerli bir sonuç aşağıdakileri karşılamalıdır:",
-          "listItems": [
-            "b sıfırdan büyüktür.",
-            "b, c'ten küçüktür.",
-            "a² + b² yaklaşık olarak c²'e eşittir.",
-            "Çıkış birimi giriş birimiyle eşleşir."
-          ]
+          "h2": "Bu Araç Neyi Çözer",
+          "intro": "Hipotenüs ve a dik kenarı bilindiğinde ancak diğer dik kenar eksik olduğunda bu sayfayı kullanın. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Hesap makinesi</a>, karekök almadan önce bilinen dik kenarın karesini hipotenüsün karesinden çıkarmak için <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Pisagor teoremini</a> yeniden düzenler."
         },
-        {
-          "h2": "Yaygın Hatalar",
-          "paragraphs": [
-            "En yaygın hata c'i kenar olarak ele almaktır. Bu hesaplayıcıda c, en uzun kenar ve dik açının karşısındaki kenar olan hipotenüs olmalıdır.",
-            "Sıklıkla yapılan bir diğer hata da kareleri çıkarmak yerine toplamaktır. Toplama bir hipotenüs bulur; çıkarma işlemi hipotenüsten eksik olan bir kenarı bulur."
-          ],
-          "listTitle": "Bu hatalardan kaçının:",
-          "listItems": [
-            "Bilinen bacağı hipotenüs alanına koymak.",
-            "c² - a² yerine c² + a² kullanılması.",
-            "c'ten büyük veya ona eşit giriliyor.",
-            "Karekök almak yerine b²'te durmak.",
-            "Metre ve santimetre gibi birimleri karıştırma."
-          ]
-        }
-      ],
-      "relatedLinks": [
-        {
-          "href": "/right-triangle-side-calculator/",
-          "label": "Sağ Üçgen Kenar Hesaplayıcı"
-        },
-        {
-          "href": "/pythagorean-theorem-calculator/",
-          "label": "Hesaplayıcı: Pisagor Teoremi"
-        },
-        {
-          "href": "/missing-leg-from-c-and-b-calculator/",
-          "label": "Hesaplayıcı: Kayıp Dik Kenar (c ve b ile)"
-        }
-      ],
-      "faqs": [
-        {
-          "question": "Bu hesap makinesinde c ne anlama geliyor?",
-          "answer": "c, 90° açısının karşısında yer alan en uzun kenar olan dik üçgenin hipotenüsüdür. Bu bir kenar değil. Bu hesaplayıcıda c'i bilinen iki değerden biri olarak girersiniz."
-        },
-        {
-          "question": "Bu hesap makinesinde a'nın anlamı nedir?",
-          "answer": "a, dik üçgenin iki bacağından biridir. Dik açıyı oluşturan kenarlardan biridir. Bu hesap makinesinde a, zaten bildiğiniz kenartır."
-        },
-        {
-          "question": "Bu hesap makinesi ne buluyor?",
-          "answer": "Bu hesaplayıcı b'in eksik ayağını bulur. Hipotenüs c ve kenar a verildiğinde, b = √(c² − a²)'i hesaplar ve size adım adım çözümü gösterir."
-        },
-        {
-          "question": "c a'dan küçük olabilir mi?",
-          "answer": "Hayır. Bir dik üçgende hipotenüs her zaman en uzun kenardır. c, a'tan küçükse değerler geçerli bir dik üçgen oluşturmaz. Hesaplamadan önce hangi ölçümün hipotenüs olduğunu kontrol edin."
-        },
-        {
-          "question": "c ve a'tan b'i nasıl bulabilirim?",
-          "answer": "Hipotenüsün karesini alın (c²), bilinen kenarın karesini alın (a²), a²'i c²'ten çıkarın ve karekökünü alın. Formül b = √(c² − a²)'tir. Veya anında yanıt almak için değerlerinizi bu hesap makinesine girin."
-        }
-      ]
+        "relatedLinks": [
+          {
+            "href": "/right-triangle-side-calculator/",
+            "label": "Dik Üçgen Kenar Hesaplayıcı"
+          },
+          {
+            "href": "/pythagorean-theorem-calculator/",
+            "label": "Pisagor Teoremi Hesaplayıcı"
+          },
+          {
+            "href": "/missing-leg-from-c-and-b-calculator/",
+            "label": "c ve b'den Eksik Dik Kenar Hesaplayıcı"
+          },
+          {
+            "href": "/right-triangle-angle-calculator/",
+            "label": "Dik Üçgen Açı Hesaplayıcı"
+          },
+          {
+            "href": "/right-triangle-measurements-calculator/",
+            "label": "Dik Üçgen Ölçü Hesaplayıcı"
+          }
+        ],
+        "slug": "missing-leg-from-c-and-a-calculator",
+        "toolPurpose": "Unutmayın: c her zaman hipotenüstür — <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a>ların en uzunu, dik <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a>nın karşısındakidir. O bir dik kenar değildir. İki dik kenarınız varsa ve bunun yerine hipotenüsü bulmanız gerekiyorsa, <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Pisagor Teoremi</a> Hesaplayıcısını kullanın.",
+        "url": "/missing-leg-from-c-and-a-calculator/"
     },
     "missing-leg-from-c-and-b-calculator": {
       "slug": "missing-leg-from-c-and-b-calculator",
@@ -9786,204 +10410,243 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         }
       ]
     },
-    "missing-leg-from-c-and-a-calculator": {
-      "slug": "missing-leg-from-c-and-a-calculator",
-      "url": "/missing-leg-from-c-and-a-calculator/",
-      "h1": "Kalkylator: Saknad katet (från c och a)",
-      "metaTitle": "Kalkylator: Saknad katet (från c och a) | Right Triangle Solver",
-      "metaDescription": "Hitta kateten b när hypotenusan c och den andra kateten a är kända.",
-      "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "Kom ihåg: c är alltid hypotenusan - den längsta sidan, mitt emot rät vinkel. Det är inte ett katet. Om du har två katet och behöver hypotenusan istället, använd Pythagorean Theorem Calculator.",
-      "intro": "Hitta kateten b när hypotenusan c och den andra kateten a är kända.",
-      "quickSummary": {
-        "h2": "Vad den här missade kateträknaren löser",
-        "intro": "Använd denna sida när hypotenusan och katetet a är kända, men det andra katetet saknas. Kalkylatorn arrangerar om Pythagoras sats för att subtrahera det kända katetet från hypotenusan innan kvadratroten tas.",
-        "cards": [
-          {
-            "label": "Kända värden",
-            "value": "c = hypotenusa; a = känd katet"
-          },
-          {
-            "label": "Fynd",
-            "value": "b = okänd katet"
-          },
-          {
-            "label": "Huvudformel",
-            "value": "b = sqrt(c^2 - a^2)"
-          },
-          {
-            "label": "Obligatorisk kontroll",
-            "value": "Kräver c > a."
-          }
-        ]
-      },
-      "diagram": {
-        "h2": "Rätt triangeldiagram: Hitta katet b",
-        "intro": "Diagrammet markerar c och a som de värden du redan känner till. Det vertikala katetet b är markerat som den saknade sidan som denna kalkylator löser.",
-        "caption": "Rätt triangeldiagram med känd hypotenusa c, känd katet a och okända katet b.",
-        "sides": {
-          "a": {
-            "label": "a = känd",
-            "description": "katet a är det kända katetet längs basen av den högra triangeln.",
-            "status": "known"
-          },
-          "b": {
-            "label": "b = hitta",
-            "description": "katetet b är det okända katetet som löses genom att subtrahera a^2 från c^2.",
-            "status": "unknown"
-          },
-          "c": {
-            "label": "c = känd",
-            "description": "Hypotenus c är den kända längsta sidan mitt emot rät vinkel.",
-            "status": "known"
-          }
+        "missing-leg-from-c-and-a-calculator": {
+        "slug": "missing-leg-from-c-and-a-calculator",
+        "url": "/missing-leg-from-c-and-a-calculator/",
+        "h1": "Kalkylator för saknad katet: Hitta katet b från hypotenusa c och katet a",
+        "metaTitle": "Kalkylator för saknad katet: Hitta b från c och a",
+        "metaDescription": "Hitta den saknade kateten i en rätvinklig triangel med hjälp av hypotenusan och en känd katet. Beräkna sidan b, följ formeln och granska de genomarbetade exemplen.",
+        "formulaSlug": "leg-from-hypotenuse-and-other-leg",
+        "toolPurpose": "Kom ihåg: c är alltid hypotenusan — den längsta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>, mittemot den räta <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkeln</a>. Den är inte en katet. Om du har två kateter och behöver hypotenusan istället, använd <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Pythagoras sats</a>-kalkylatorn.",
+        "intro": "Denna <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> hittar den saknade kateten b i en rätvinklig triangel när du känner till hypotenusan c och den andra kateten a. Ange dina två mått, så tillämpar den formeln b = √(c² − a²) för att omedelbart beräkna den okända sidan, med fullständiga lösningsteg. Hypotenusan är den längsta sidan, mittemot den räta vinkeln. De två kateterna bildar den räta vinkeln. Att veta vilken sida som är vilken säkerställer att du får rätt svar varje gång.",
+        "quickSummary": {
+          "h2": "Vad detta verktyg löser",
+          "intro": "Använd denna sida när hypotenusan och katet a är kända, men den andra kateten saknas. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Kalkylatorn</a> omformar <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Pythagoras sats</a> för att subtrahera den kända kateten från hypotenusan innan kvadratroten tas.",
+          "cards": [
+            {
+              "label": "Kända värden",
+              "value": "Hypotenusa c och katet a"
+            },
+            {
+              "label": "Hittar",
+              "value": "Saknad katet b"
+            },
+            {
+              "label": "Huvudformel",
+              "value": "b = sqrt(c^2 - a^2)"
+            },
+            {
+              "label": "Nödvändig kontroll",
+              "value": "c måste vara större än a"
+            }
+          ]
         },
-        "notes": [
-          "c måste vara hypotenusan, inte ett av kateterna.",
-          "Om c är mindre än eller lika med a, bildar ingångarna inte en giltig rätvinklig triangel.",
-          "Resultatet b använder samma enhet som c och a."
-        ]
-      },
-      "calculator": {
-        "outputLabel": "b = okänd katet",
-        "fields": [
+        "diagram": {
+          "h2": "Identifiera hypotenusan och den saknade kateten",
+          "intro": "Diagrammet markerar c och a som de värden du redan känner till. Den vertikala kateten b är markerad som den <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">saknade sidan</a> som denna kalkylator löser.",
+          "caption": "Rätvinkligt triangeldiagram med känd hypotenusa c, känd katet a och okänd katet b.",
+          "sides": {
+            "a": {
+              "label": "a = känd",
+              "description": "Katet a är den kända kateten längs basen av den rätvinkliga triangeln.",
+              "status": "known"
+            },
+            "b": {
+              "label": "b = sök",
+              "description": "Katet b är den okända kateten som löses genom att subtrahera a^2 från c^2.",
+              "status": "unknown"
+            },
+            "c": {
+              "label": "c = känd",
+              "description": "Hypotenusan c är den kända längsta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> mittemot den räta <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkeln</a>.",
+              "status": "known"
+            }
+          },
+          "notes": [
+            "c måste vara hypotenusan, inte en av kateterna.",
+            "Om c är mindre än eller lika med a bildar indata ingen giltig rätvinklig triangel.",
+            "Resultatet b använder samma enhet som c och a."
+          ]
+        },
+        "calculator": {
+          "outputLabel": "Saknad katet b",
+          "fields": [
+            {
+              "key": "c",
+              "label": "Hypotenusa c",
+              "min": 0
+            },
+            {
+              "key": "a",
+              "label": "Katet a",
+              "min": 0
+            }
+          ]
+        },
+        "formulaSection": {
+          "h2": "Formel för att hitta en saknad katet",
+          "paragraphs": [
+            "Beräkningen använder <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Pythagoras sats</a>, som relaterar kvadraterna av de två kateterna till kvadraten av hypotenusan. För att isolera den saknade kateten, omforma ekvationen steg för steg.",
+            "<strong>Steg 1: Börja med Pythagoras sats.</strong> Kvadraterna av de två kateterna blir tillsammans kvadraten av hypotenusan.",
+            "<strong>Steg 2: Subtrahera a² från båda sidor.</strong> Detta isolerar kvadraten av den saknade kateten.",
+            "<strong>Steg 3: Ta den positiva kvadratroten.</strong> Sidlängder är positiva, så använd huvudroten. Hela uttrycket c² − a² stannar innanför rottecknet.",
+            "Där <strong>a</strong> är den kända kateten, <strong>b</strong> är den saknade kateten och <strong>c</strong> är hypotenusan. Hypotenusan ligger mittemot den räta vinkeln och är alltid den längsta sidan.",
+            "<strong>Varför subtrahera?</strong> Den ursprungliga ekvationen adderar båda katetkvadraterna för att få hypotenusans kvadrat. När hypotenusan och en katet redan är kända, subtrahera den kända katetens kvadrat från hypotenusans kvadrat för att isolera den okända katetens kvadrat. Ta sedan kvadratroten. Subtrahera aldrig kateten från hypotenusan direkt — subtrahera alltid deras kvadrater."
+          ],
+          "formulas": [
+            "a^2 + b^2 = c^2",
+            "b^2 = c^2 - a^2",
+            "b = \\sqrt{c^2 - a^2}"
+          ]
+        },
+        "howTo": {
+          "h2": "Så här hittar du katet b från c och a",
+          "steps": [
+            "Identifiera hypotenusan, som ligger mittemot 90°-vinkeln. Den är alltid den längsta sidan.",
+            "Ange hypotenusan c i det första inmatningsfältet.",
+            "Ange den kända kateten a i det andra inmatningsfältet.",
+            "Kontrollera att båda måtten använder samma enhet.",
+            "Klicka på Beräkna för att hitta den saknade kateten b.",
+            "Granska resultatet och den steg-för-steg-lösning som visas nedanför kalkylatorn.",
+            "Verifiera svaret genom att kontrollera att a² + b² är lika med c²."
+          ]
+        },
+        "example": {
+          "h2": "Genomarbetade exempel för att hitta en saknad katet",
+          "intro": "Varje exempel visar hela beräkningen från problemformulering till verifierat svar. Alla fem använder formeln b = √(c² − a²).",
+          "lines": [
+            "b = \\sqrt{13^2 - 5^2}",
+            "b = \\sqrt{169 - 25}",
+            "b = \\sqrt{144}",
+            "b = 12"
+          ]
+        },
+        "extraSections": [
           {
-            "key": "c",
-            "label": "c = hypotenusa",
-            "min": 0
+            "h2": "Detaljerade genomarbetade exempel",
+            "paragraphs": [
+              "<h3>Exempel 1: Standardtriangel 5–12–13</h3><p><strong>Problem:</strong> Hitta den saknade kateten i en rätvinklig triangel med hypotenusa c = 13 cm och känd katet a = 5 cm.</p><p><strong>Givet:</strong> c = 13 cm, a = 5 cm. <strong>Sök:</strong> b.</p><p><strong>Formel:</strong> b = √(c² − a²)</p><p><strong>Insättning:</strong> b = √(13² − 5²) = √(169 − 25) = √144</p><p><strong>Svar:</strong> <strong>b = 12 cm</strong></p><p><strong>Verifiering:</strong> 5² + 12² = 25 + 144 = 169 = 13². Den kända kateten, den saknade kateten och hypotenusan bildar en giltig rätvinklig triangel.</p>",
+              "<h3>Exempel 2: Stege mot en vägg</h3><p><strong>Problem:</strong> En 5 m lång stege vilar mot en vertikal vägg. Dess bas är 3 m från väggen. Hitta höjden som stegen når.</p><p><strong>Givet:</strong> c = 5 m (stege), a = 3 m (markavstånd). <strong>Sök:</strong> b (vägghöjd).</p><p><strong>Beräkning:</strong> b = √(5² − 3²) = √(25 − 9) = √16 = 4 m</p><p><strong>Svar:</strong> <strong>Stegen når 4 m upp på väggen.</strong></p><img src=\"/images/missing-leg/missing-leg-ladder.svg\" alt=\"Stegdiagram: 5 m stege som hypotenusa, 3 m markavstånd som katet a, 4 m vägghöjd som saknad katet b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Figur: Den vertikala väggen (b = 4 m), det horisontella markavståndet (a = 3 m) och stegen (c = 5 m). Detta är en geometrisk modell som förutsätter en vertikal vägg och plan mark, inte en stegsäkerhetsbedömning.</em></p>",
+              "<h3>Exempel 3: Rektangulärt rums diagonal</h3><p><strong>Problem:</strong> Ett rektangulärt rum har en diagonal på 17 ft och en sida som mäter 8 ft. Hitta den andra sidan.</p><p><strong>Givet:</strong> c = 17 ft (diagonal), a = 8 ft. <strong>Sök:</strong> b.</p><p><strong>Beräkning:</strong> b = √(17² − 8²) = √(289 − 64) = √225 = 15 ft</p><p><strong>Svar:</strong> <strong>Den andra sidan är 15 ft.</strong></p><img src=\"/images/missing-leg/missing-leg-room.svg\" alt=\"Rumsdiagram: 17 ft diagonal som hypotenusa, 8 ft känd sida som katet a, 15 ft saknad sida som katet b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Figur: Vy uppifrån. Diagonalen (c = 17 ft) delar rektangeln i två rätvinkliga trianglar. Den kända sidan (a = 8 ft) och den saknade sidan (b = 15 ft) bildar den räta vinkeln.</em></p>",
+              "<h3>Exempel 4: Ett resultat som kräver avrundning</h3><p><strong>Problem:</strong> Givet c = 10 m och a = 7 m, hitta b.</p><p><strong>Beräkning:</strong> b = √(10² − 7²) = √(100 − 49) = √51 ≈ 7,141428 m</p><p><strong>Svar:</strong> <strong>b ≈ 7,14 m</strong>, avrundat till två decimaler.</p><p><strong>Verifiering:</strong> 7² + (√51)² = 49 + 51 = 100 = 10².</p><p>Behåll det exakta värdet (√51) under delberäkningarna och avrunda först i det slutliga steget. Tidig avrundning ger fel som förstärks i flerstegsproblem.</p>",
+              "<h3>Exempel 5: Rampgeometri</h3><p><strong>Problem:</strong> En rak ramp har en längd på 13 m och en horisontell sträcka på 12 m. Hitta dess vertikala höjd.</p><p><strong>Givet:</strong> c = 13 m (ramp), a = 12 m (sträcka). <strong>Sök:</strong> b (höjd).</p><p><strong>Beräkning:</strong> b = √(13² − 12²) = √(169 − 144) = √25 = 5 m</p><p><strong>Svar:</strong> <strong>Den vertikala höjden är 5 m.</strong></p><img src=\"/images/missing-leg/missing-leg-ramp.svg\" alt=\"Rampdiagram: 13 m ramp som hypotenusa, 12 m horisontell sträcka som katet a, 5 m vertikal höjd som saknad katet b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>Figur: Rampen (c = 13 m) som hypotenusa, den horisontella sträckan (a = 12 m) och den vertikala höjden (b = 5 m). Denna beräkning fastställer inte överensstämmelse med tillgänglighets- eller byggregler.</em></p>"
+            ]
           },
           {
-            "key": "a",
-            "label": "a = känd katet",
-            "min": 0
+            "h2": "När kan du beräkna en saknad katet?",
+            "paragraphs": [
+              "För en giltig, icke-degenererad rätvinklig triangel måste måtten uppfylla tre villkor: c > 0, a > 0 och c > a. Den saknade kateten är då b = √(c² − a²).",
+              "<strong>Fall 1: Hypotenusan mindre än den kända kateten.</strong> Om c = 4 och a = 5 är b = √(16 − 25) = √(−9). Uttrycket under kvadratroten är negativt, så dessa indata kan inte bilda en verklig rätvinklig triangel med c som hypotenusa.",
+              "<strong>Fall 2: Hypotenusan lika med den kända kateten.</strong> Om c = 5 och a = 5 är b = √(25 − 25) = 0. Detta är ett degenererat fall, inte en giltig triangel.",
+              "<strong>Fall 3: Noll- eller negativa mått.</strong> Sidlängder måste vara positiva. Kalkylatorn avvisar noll och negativa indata.",
+              "<strong>Fall 4: Inkonsekventa enheter.</strong> Båda måtten måste använda samma enhet. Om c är i meter och a i centimeter, konvertera ett av dem innan du beräknar."
+            ],
+            "listTitle": "Använd dessa kontroller först:",
+            "listItems": [
+              "c ligger mittemot 90°-<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkeln</a>.",
+              "c är större än a.",
+              "Båda värdena är positiva.",
+              "c och a använder samma enhet."
+            ]
+          },
+          {
+            "h2": "Var används formeln för saknad katet?",
+            "paragraphs": [
+              "Det generella mönstret: när en rak diagonal eller sluttande längd och ett vinkelrätt avstånd är kända, följer det andra vinkelräta avståndet från Pythagoras sats. Detta fungerar bara när geometrin bildar en rätvinklig triangel.",
+              "<strong>Bygg och regelverk.</strong> Snickare kontrollerar räta hörn genom att mäta diagonalen i en rektangulär ram. Om diagonalen (c) och en sida (a) är kända, bekräftar den saknade sidan (b) måtten innan virket kapas.",
+              "<strong>Rums- och planritningsmått.</strong> Vid planering av möbler eller golv ger rummets diagonal och en vägglängd den andra vägglängden utan att flytta hinder.",
+              "<strong>Stege- och vägggeometri.</strong> Med en steges längd och dess avstånd från väggen fås höjden den når direkt. Detta är en geometrisk modell, inte en säkerhetsbedömning.",
+              "<strong>Ramp- och lutningsberäkningar.</strong> Från lutningens längd och den horisontella sträckan bestäms den vertikala höjden. Detta fastställer inte överensstämmelse med byggregler."
+            ]
+          },
+          {
+            "h2": "Så här kontrollerar du din katetberäkning",
+            "paragraphs": [
+              "Verifiera varje resultat innan du använder det. För exemplet 5–12–13: 5² + 12² = 25 + 144 = 169 = 13².",
+              "Utmatningen märkt Saknad katet b är längden av den andra kateten som bildar den räta vinkeln med a. Den är inte hypotenusan och ska vara kortare än c."
+            ],
+            "listTitle": "Ett giltigt resultat måste uppfylla:",
+            "listItems": [
+              "b är större än noll.",
+              "b är kortare än c.",
+              "a² + b² är lika med c², med hänsyn till avrundning i det visade värdet.",
+              "Resultatet använder rätt enhet."
+            ]
+          },
+          {
+            "h2": "Vanliga misstag när man hittar en saknad katet",
+            "paragraphs": [
+              "Det vanligaste felet är att behandla c som en katet. Här måste c vara hypotenusan: den längsta sidan, mittemot den räta vinkeln.",
+              "Ett annat vanligt misstag är att addera kvadraterna istället för att subtrahera. Addition (a² + b²) hittar en hypotenusa; subtraktion (c² − a²) hittar en saknad katet från hypotenusan."
+            ],
+            "listTitle": "Undvik dessa misstag:",
+            "listItems": [
+              "<strong>Att förväxla hypotenusan med en katet.</strong> Om du sätter katetvärdet i c-fältet löser formeln fel problem. Rätt: c är alltid den längsta sidan.",
+              "<strong>Att addera kvadrater istället för att subtrahera.</strong> Fel: b = √(c² + a²). Rätt: b = √(c² − a²).",
+              "<strong>Att glömma kvadratroten.</strong> Fel: b = c² − a². Rätt: ta kvadratroten av differensen.",
+              "<strong>Felaktig rotgruppering.</strong> Fel: √c² − a² (vilket är lika med c − a). Rätt: √(c² − a²), med hela differensen innanför rottecknet.",
+              "<strong>Att ange a ≥ c.</strong> Den kända kateten kan inte vara lika med eller överstiga hypotenusan. Rätt: verifiera c > a innan du beräknar.",
+              "<strong>Att blanda enheter.</strong> Fel: c = 5 m, a = 30 cm. Rätt: konvertera till samma enhet först (c = 500 cm, a = 30 cm).",
+              "<strong>Att avrunda för tidigt.</strong> Fel: avrunda √51 till 7,14 mitt i beräkningen. Rätt: behåll full precision till det slutliga svaret."
+            ]
           }
-        ]
-      },
-      "formulaSection": {
-        "h2": "Formel för saknad katet b",
-        "paragraphs": [
-          "Formeln för att hitta katetet b är härledd från Pythagoras sats (a² + b² = c²). Omarrangering för b ger formeln nedan.",
-          "Där c är hypotenusan (den längsta sidan av den högra triangeln), är a det kända katetet och b är det saknade katetet du löser för. Lägg märke till subtraktionen: du subtraherar kvadraten på det kända katetet från kvadraten på hypotenusan och tar sedan kvadratroten."
         ],
-        "formulas": [
-          "b = \\sqrt{c^2 - a^2}"
+        "relatedLinks": [
+          {
+            "href": "/right-triangle-side-calculator/",
+            "label": "Rätvinklig triangel sidokalkylator"
+          },
+          {
+            "href": "/pythagorean-theorem-calculator/",
+            "label": "Pythagoras sats-kalkylator"
+          },
+          {
+            "href": "/missing-leg-from-c-and-b-calculator/",
+            "label": "Kalkylator för saknad katet från c och b"
+          },
+          {
+            "href": "/right-triangle-angle-calculator/",
+            "label": "Rätvinklig triangel vinkelkalkylator"
+          },
+          {
+            "href": "/right-triangle-measurements-calculator/",
+            "label": "Rätvinklig triangel måttkalkylator"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Hur hittar jag den saknade kateten från hypotenusan och en katet?",
+            "answer": "Kvadrera hypotenusan (c²), kvadrera den kända kateten (a²), subtrahera och ta kvadratroten: b = √(c² − a²). Ange båda värdena i kalkylatorn ovan för ett omedelbart resultat med steg."
+          },
+          {
+            "question": "Varför subtraherar jag istället för att addera?",
+            "answer": "Pythagoras sats adderar katetkvadraterna för att få hypotenusans kvadrat (a² + b² = c²). När du redan känner till hypotenusan, omforma: subtrahera den kända katetkvadraten från hypotenuskvadraten för att isolera den saknade katetkvadraten och ta sedan roten."
+          },
+          {
+            "question": "Hur vet jag vilken sida som är hypotenusan?",
+            "answer": "Hypotenusan är alltid den längsta sidan och ligger mittemot 90°-vinkeln. Om dina tre mått är 5, 12 och 13 är hypotenusan 13."
+          },
+          {
+            "question": "Vad händer om den kända kateten är lika med eller längre än hypotenusan?",
+            "answer": "Om a = c blir resultatet b = 0 (degenererat, inte en triangel). Om a > c har kvadratroten av ett negativt tal ingen reell lösning. Båda fallen avvisas som ogiltiga."
+          },
+          {
+            "question": "Kan den saknade kateten vara ett decimaltal?",
+            "answer": "Ja. Till exempel ger c = 10 och a = 7 b = √51 ≈ 7,14. Behåll full precision under beräkningarna och avrunda endast det slutliga svaret."
+          },
+          {
+            "question": "Hur kan jag kontrollera om svaret är korrekt?",
+            "answer": "Verifiera att a² + b² = c². För exemplet 5–12–13: 25 + 144 = 169. Bekräfta också att b > 0, b < c och att enheten stämmer med dina indata."
+          },
+          {
+            "question": "Kan jag använda olika måttenheter?",
+            "answer": "Båda indata måste använda samma enhet. Om c är i meter och a i centimeter, konvertera ett av dem först. Resultatet använder indataenheten."
+          },
+          {
+            "question": "Kan denna kalkylator också hitta en okänd vinkel?",
+            "answer": "Nej, detta läge hittar endast den saknade kateten b. För att hitta vinklar, använd <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Rätvinklig triangel vinkelkalkylator</a>."
+          }
         ]
-      },
-      "howTo": {
-        "h2": "Hur man hittar katet b från c och a",
-        "steps": [
-          "Bekräfta att c är hypotenusan och a är ett katet. Hypotenusan är alltid den längsta sidan.",
-          "Ange hypotenusan c i det första inmatningsfältet.",
-          "Ange det kända katetet a i det andra inmatningsfältet.",
-          "Klicka på Beräkna för att hitta det saknade katetet.",
-          "Läs resultatet för b, tillsammans med hela steg-för-steg-lösningen."
-        ]
-      },
-      "example": {
-        "h2": "Exempel: Hitta Leg b",
-        "intro": "Givet: c = 13, a = 5. Det saknade katetet i en rätvinklig triangel med hypotenusa 13 och katet 5 är 12.",
-        "lines": [
-          "b = \\sqrt{13^2 - 5^2}",
-          "b = \\sqrt{169 - 25}",
-          "b = \\sqrt{144}",
-          "b = 12"
-        ]
-      },
-      "extraSections": [
-        {
-          "h2": "Viktig kontroll före beräkning",
-          "paragraphs": [
-            "Innan du använder den här formeln, se till att c är större än a. Hypotenusan är alltid den längsta sidan av en rätvinklig triangel. Om c är lika med a, skulle du få b = 0, vilket betyder att det inte finns någon triangel.",
-            "Om c är mindre än a blir uttrycket under kvadratroten negativt. Det betyder att de två ingångsvärdena inte kan beskriva en verklig rätvinklig triangel med c som hypotenusan."
-          ],
-          "listTitle": "Använd dessa kontroller först:",
-          "listItems": [
-            "c är motsatt 90°-vinkeln.",
-            "c är större än a.",
-            "Båda värdena är positiva.",
-            "c och a använder samma enhet."
-          ]
-        },
-        {
-          "h2": "Var denna kalkylator är användbar",
-          "paragraphs": [
-            "Den här räknaren är användbar när ett diagonalt eller lutande mått är känt, en vinkelrät sida är känd och den andra vinkelräta sidan saknas. Det är det fokuserade verktyget för c-och-ett-fallet, så varje förklaring på sidan pekar mot att hitta b.",
-            "Det kan också hjälpa till att verifiera mätningar. Om ett uppmätt värde för b inte matchar räknarens resultat, kanske triangeln inte är rätt, hypotenusan kan vara felmärkt eller en mätning kan använda en annan enhet."
-          ],
-          "listTitle": "Vanliga exempel inkluderar:",
-          "listItems": [
-            "Att hitta vägghöjd när steglängd c och markavstånd a är kända.",
-            "Att hitta den vertikala stigningen av en sluttning när sluttningens längd och horisontella löpning är kända.",
-            "Kontrollera ett rätvinkligt läxproblem som ger c och a.",
-            "Bekräfta layoutmått för inramning, landskapsplanering, ramper eller planlösningar."
-          ]
-        },
-        {
-          "h2": "Hur man läser svaret",
-          "paragraphs": [
-            "Utgången märkt Missing leg b är längden på det andra katetet som bildar den rätta vinkeln med a. Det är inte hypotenusan och bör vara kortare än c.",
-            "Om den beräknade b är extremt liten, är ditt kända katet a mycket nära hypotenusan c. Det kan vara giltigt, men det är värt att kontrollera diagrammet och enheterna innan du använder värdet."
-          ],
-          "listTitle": "Ett giltigt resultat bör uppfylla:",
-          "listItems": [
-            "b är större än noll.",
-            "b är mindre än c.",
-            "a² + b² är ungefär lika med c².",
-            "Utgångsenheten matchar inmatningsenheten."
-          ]
-        },
-        {
-          "h2": "Vanliga misstag",
-          "paragraphs": [
-            "Det vanligaste felet är att behandla c som ett katet. I den här räknaren måste c vara hypotenusan, som är den längsta sidan och sidan mitt emot rät vinkel.",
-            "Ett annat vanligt misstag är att lägga till kvadraterna istället för att subtrahera. Addition finner en hypotenusa; subtraktion hittar ett saknat katet från hypotenusan."
-          ],
-          "listTitle": "Undvik dessa misstag:",
-          "listItems": [
-            "Att sätta det kända katetet i hypotenusfältet.",
-            "Använder c² + a² istället för c² - a².",
-            "Ange ett större än eller lika med c.",
-            "Stanna vid b² istället för att ta kvadratroten.",
-            "Blandningsenheter som meter och centimeter."
-          ]
-        }
-      ],
-      "relatedLinks": [
-        {
-          "href": "/right-triangle-side-calculator/",
-          "label": "Räknare för höger triangelsida"
-        },
-        {
-          "href": "/pythagorean-theorem-calculator/",
-          "label": "Kalkylator: Pythagoras sats"
-        },
-        {
-          "href": "/missing-leg-from-c-and-b-calculator/",
-          "label": "Kalkylator: Saknad katet (från c och b)"
-        }
-      ],
-      "faqs": [
-        {
-          "question": "Vad betyder c i den här kalkylatorn?",
-          "answer": "c är hypotenusan i den räta triangeln - den längsta sidan, som ligger mittemot 90°-vinkeln. Det är inte ett katet. Du anger c som ett av de två kända värdena i denna kalkylator."
-        },
-        {
-          "question": "Vad betyder ett i denna kalkylator?",
-          "answer": "a är ett av de två kateterna i den räta triangeln. Det är en av sidorna som bildar den rätta vinkeln. I den här kalkylatorn är a det katet du redan känner till."
-        },
-        {
-          "question": "Vad hittar den här kalkylatorn?",
-          "answer": "Denna kalkylator hittar det saknade katetet b. Med tanke på hypotenus c och katet a, beräknar den b = √(c² − a²) och visar dig steg-för-steg-lösningen."
-        },
-        {
-          "question": "Kan c vara mindre än a?",
-          "answer": "Nej. I en rätvinklig triangel är hypotenusan alltid den längsta sidan. Om c är mindre än a, bildar värdena inte en giltig rätvinklig triangel. Kontrollera vilket mått som är hypotenusan innan du beräknar."
-        },
-        {
-          "question": "Hur hittar jag b från c och a?",
-          "answer": "Kvadrera hypotenusan (c²), kvadrera det kända katetet (a²), subtrahera a² från c² och ta kvadratroten. Formeln är b = √(c² − a²). Eller skriv in dina värden i den här kalkylatorn för ett omedelbart svar."
-        }
-      ]
     },
     "missing-leg-from-c-and-b-calculator": {
       "slug": "missing-leg-from-c-and-b-calculator",
@@ -10385,204 +11048,243 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         }
       ]
     },
-    "missing-leg-from-c-and-a-calculator": {
-      "slug": "missing-leg-from-c-and-a-calculator",
-      "url": "/missing-leg-from-c-and-a-calculator/",
-      "h1": "计算器: 求直角边 (已知 c 和 a)",
-      "metaTitle": "计算器: 求直角边 (已知 c 和 a) | Right Triangle Solver",
-      "metaDescription": "已知斜边 c 和另一条直角边 a 时，寻找直角边 b。",
-      "formulaSlug": "leg-from-hypotenuse-and-other-leg",
-      "toolPurpose": "请记住：c 始终是斜边--最长的边，与直角相对。它不是一条腿。如果您有两条腿并且需要斜边，请使用毕达哥拉斯定理计算器。",
-      "intro": "已知斜边 c 和另一条直角边 a 时，寻找直角边 b。",
-      "quickSummary": {
-        "h2": "这个缺腿计算器可以解决什么问题",
-        "intro": "当斜边和边 a 已知，但另一条边缺失时，请使用此页面。计算器重新排列毕达哥拉斯定理，在求平方根之前从斜边减去已知边。",
-        "cards": [
-          {
-            "label": "已知值",
-            "value": "c = 斜边; a = 已知直角边"
-          },
-          {
-            "label": "发现",
-            "value": "b = 未知直角边"
-          },
-          {
-            "label": "主要配方",
-            "value": "b = sqrt(c^2 - a^2)"
-          },
-          {
-            "label": "需要检查",
-            "value": "要求 c > a。"
-          }
-        ]
-      },
-      "diagram": {
-        "h2": "直角三角形图：寻找腿 b",
-        "intro": "该图将 c 和 a 标记为您已知的值。垂直边 b 突出显示为该计算器解决的缺失边。",
-        "caption": "具有已知斜边 c、已知边 a 和未知边 b 的直角三角形图。",
-        "sides": {
-          "a": {
-            "label": "a = 已知",
-            "description": "边 a 是沿直角三角形底边的已知边。",
-            "status": "known"
-          },
-          "b": {
-            "label": "b = 查找",
-            "description": "支路 b 是通过从 c^2 中减去 a^2 求解的未知支路。",
-            "status": "unknown"
-          },
-          "c": {
-            "label": "c = 已知",
-            "description": "斜边 c 是已知的与直角相对的最长边。",
-            "status": "known"
-          }
+        "missing-leg-from-c-and-a-calculator": {
+        "slug": "missing-leg-from-c-and-a-calculator",
+        "url": "/missing-leg-from-c-and-a-calculator/",
+        "h1": "缺失直角边计算器：已知斜边 c 和直角边 a 求直角边 b",
+        "metaTitle": "缺失直角边计算器：已知 c 和 a 求 b",
+        "metaDescription": "使用斜边和一条已知的直角边求直角三角形的缺失直角边。计算边 b，学习公式，并查看例题解析。",
+        "formulaSlug": "leg-from-hypotenuse-and-other-leg",
+        "toolPurpose": "记住：c 始终是斜边 — 最长的<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">边</a>，位于<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">直角</a>的对边。它不是直角边。如果您已知两条直角边、需要求斜边，请使用<a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">勾股定理</a>计算器。",
+        "intro": "这个<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">计算器</a>可在已知斜边 c 和另一条直角边 a 时，求出直角三角形的缺失直角边 b。输入两个测量值，它将应用公式 b = √(c² − a²)，即时算出未知边，并给出完整的解题步骤。斜边是最长的边，位于直角的对边。两条直角边构成该直角。分清每条边，就能每次都得到正确答案。",
+        "quickSummary": {
+          "h2": "本工具解决什么问题",
+          "intro": "当斜边和直角边 a 已知、另一条直角边缺失时，请使用本页面。<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">计算器</a>对<a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">勾股定理</a>进行变形，先用斜边减去已知直角边，再取平方根。",
+          "cards": [
+            {
+              "label": "已知值",
+              "value": "斜边 c 和直角边 a"
+            },
+            {
+              "label": "求解",
+              "value": "缺失的直角边 b"
+            },
+            {
+              "label": "主要公式",
+              "value": "b = sqrt(c^2 - a^2)"
+            },
+            {
+              "label": "必须检查",
+              "value": "c 必须大于 a"
+            }
+          ]
         },
-        "notes": [
-          "c 必须是斜边，而不是其中一条边。",
-          "如果 c 小于或等于 a，则输入不会形成有效的直角三角形。",
-          "结果 b 使用与 c 和 a 相同的单位。"
-        ]
-      },
-      "calculator": {
-        "outputLabel": "b = 未知直角边",
-        "fields": [
+        "diagram": {
+          "h2": "识别斜边和缺失的直角边",
+          "intro": "图中将 c 和 a 标记为您已知的值。垂直的直角边 b 以高亮显示，为本计算器求解的<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">缺失边</a>。",
+          "caption": "直角三角形示意图：已知斜边 c、已知直角边 a、未知直角边 b。",
+          "sides": {
+            "a": {
+              "label": "a = 已知",
+              "description": "直角边 a 是直角三角形底边上已知的直角边。",
+              "status": "known"
+            },
+            "b": {
+              "label": "b = 求解",
+              "description": "直角边 b 是未知直角边，通过 c² 减去 a² 再取平方根求得。",
+              "status": "unknown"
+            },
+            "c": {
+              "label": "c = 已知",
+              "description": "斜边 c 是已知的最长<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">边</a>，位于<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">直角</a>的对边。",
+              "status": "known"
+            }
+          },
+          "notes": [
+            "c 必须是斜边，而不是某条直角边。",
+            "如果 c 小于或等于 a，输入值不能构成有效的直角三角形。",
+            "结果 b 与 c 和 a 使用相同的单位。"
+          ]
+        },
+        "calculator": {
+          "outputLabel": "缺失的直角边 b",
+          "fields": [
+            {
+              "key": "c",
+              "label": "斜边 c",
+              "min": 0
+            },
+            {
+              "key": "a",
+              "label": "直角边 a",
+              "min": 0
+            }
+          ]
+        },
+        "formulaSection": {
+          "h2": "求缺失直角边的公式",
+          "paragraphs": [
+            "本计算使用<a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">勾股定理</a>，它将两条直角边的平方与斜边的平方联系起来。要分离出缺失的直角边，可逐步对方程进行变形。",
+            "<strong>第一步：从勾股定理出发。</strong>两条直角边的平方之和等于斜边的平方。",
+            "<strong>第二步：两边同时减去 a²。</strong>这样就分离出了缺失直角边的平方。",
+            "<strong>第三步：取正平方根。</strong>边长为正数，因此取主根。整个表达式 c² − a² 都保留在根号内。",
+            "其中 <strong>a</strong> 是已知的直角边，<strong>b</strong> 是缺失的直角边，<strong>c</strong> 是斜边。斜边位于直角的对边，且始终是最长的边。",
+            "<strong>为什么要相减？</strong>原方程将两条直角边的平方相加得到斜边的平方。当斜边和一条直角边已知时，用斜边的平方减去已知直角边的平方，就能分离出未知直角边的平方，然后取平方根。切勿直接用斜边减去直角边 — 必须相减的是两个测量值的平方。"
+          ],
+          "formulas": [
+            "a^2 + b^2 = c^2",
+            "b^2 = c^2 - a^2",
+            "b = \\sqrt{c^2 - a^2}"
+          ]
+        },
+        "howTo": {
+          "h2": "如何用 c 和 a 求直角边 b",
+          "steps": [
+            "识别斜边，它位于 90° 角的对边，且始终是最长的边。",
+            "在第一个输入框中输入斜边 c。",
+            "在第二个输入框中输入已知的直角边 a。",
+            "检查两个测量值是否使用相同的单位。",
+            "点击“计算”求出缺失的直角边 b。",
+            "查看结果，以及计算器下方显示的逐步解题过程。",
+            "验证 a² + b² 是否等于 c²，以确认答案。"
+          ]
+        },
+        "example": {
+          "h2": "求缺失直角边的例题解析",
+          "intro": "每个例题都展示了从题目到验证答案的完整计算过程。五个例题均使用公式 b = √(c² − a²)。",
+          "lines": [
+            "b = \\sqrt{13^2 - 5^2}",
+            "b = \\sqrt{169 - 25}",
+            "b = \\sqrt{144}",
+            "b = 12"
+          ]
+        },
+        "extraSections": [
           {
-            "key": "c",
-            "label": "c = 斜边",
-            "min": 0
+            "h2": "详细的例题解析",
+            "paragraphs": [
+              "<h3>例题1：标准的 5–12–13 三角形</h3><p><strong>题目：</strong>已知斜边 c = 13 cm、直角边 a = 5 cm，求缺失的直角边。</p><p><strong>已知：</strong> c = 13 cm，a = 5 cm。<strong>求：</strong>b。</p><p><strong>公式：</strong> b = √(c² − a²)</p><p><strong>代入：</strong> b = √(13² − 5²) = √(169 − 25) = √144</p><p><strong>答案：</strong> <strong>b = 12 cm</strong></p><p><strong>验证：</strong> 5² + 12² = 25 + 144 = 169 = 13²。已知直角边、缺失直角边和斜边构成一个有效的直角三角形。</p>",
+              "<h3>例题2：靠墙的梯子</h3><p><strong>题目：</strong>一把 5 m 长的梯子靠在垂直的墙上，梯脚距离墙 3 m。求梯子达到的高度。</p><p><strong>已知：</strong> c = 5 m（梯子），a = 3 m（地面距离）。<strong>求：</strong>b（墙的高度）。</p><p><strong>计算：</strong> b = √(5² − 3²) = √(25 − 9) = √16 = 4 m</p><p><strong>答案：</strong> <strong>梯子达到墙上 4 m 的高度。</strong></p><img src=\"/images/missing-leg/missing-leg-ladder.svg\" alt=\"梯子示意图：5 m 长的梯子为斜边，3 m 地面距离为直角边 a，4 m 墙高为缺失的直角边 b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>图：垂直的墙（b = 4 m）、水平的地面距离（a = 3 m）和梯子（c = 5 m）。这是假设墙垂直、地面水平的几何模型，并非梯子安全评估。</em></p>",
+              "<h3>例题3：矩形房间的对角线</h3><p><strong>题目：</strong>一个矩形房间的对角线长 17 ft，一条边长 8 ft。求另一条边。</p><p><strong>已知：</strong> c = 17 ft（对角线），a = 8 ft。<strong>求：</strong>b。</p><p><strong>计算：</strong> b = √(17² − 8²) = √(289 − 64) = √225 = 15 ft</p><p><strong>答案：</strong> <strong>另一条边为 15 ft。</strong></p><img src=\"/images/missing-leg/missing-leg-room.svg\" alt=\"房间示意图：17 ft 对角线为斜边，8 ft 已知边为直角边 a，15 ft 缺失边为直角边 b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>图：俯视图。对角线（c = 17 ft）将矩形分成两个直角三角形。已知边（a = 8 ft）与缺失边（b = 15 ft）构成直角。</em></p>",
+              "<h3>例题4：需要四舍五入的结果</h3><p><strong>题目：</strong>已知 c = 10 m，a = 7 m，求 b。</p><p><strong>计算：</strong> b = √(10² − 7²) = √(100 − 49) = √51 ≈ 7.141428 m</p><p><strong>答案：</strong> <strong>b ≈ 7.14 m</strong>，保留两位小数。</p><p><strong>验证：</strong> 7² + (√51)² = 49 + 51 = 100 = 10²。</p><p>在中间计算过程中保留精确值（√51），仅在最后一步四舍五入。过早四舍五入会引入误差，并在多步计算中累积放大。</p>",
+              "<h3>例题5：坡道几何</h3><p><strong>题目：</strong>一条笔直的坡道长 13 m，水平投影长 12 m。求它的垂直高度。</p><p><strong>已知：</strong> c = 13 m（坡道），a = 12 m（水平距离）。<strong>求：</strong>b（垂直高度）。</p><p><strong>计算：</strong> b = √(13² − 12²) = √(169 − 144) = √25 = 5 m</p><p><strong>答案：</strong> <strong>垂直高度为 5 m。</strong></p><img src=\"/images/missing-leg/missing-leg-ramp.svg\" alt=\"坡道示意图：13 m 坡道为斜边，12 m 水平距离为直角边 a，5 m 垂直高度为缺失的直角边 b\" class=\"mx-auto mt-4 h-auto w-full max-w-xl rounded-lg\" /><p class=\"text-sm text-on-surface-variant\"><em>图：坡道（c = 13 m）为斜边，水平距离（a = 12 m）和垂直高度（b = 5 m）。本计算不能作为符合无障碍或建筑规范的依据。</em></p>"
+            ]
           },
           {
-            "key": "a",
-            "label": "a = 已知直角边",
-            "min": 0
+            "h2": "什么时候可以计算缺失的直角边？",
+            "paragraphs": [
+              "对于有效的非退化直角三角形，测量值必须满足三个条件：c > 0、a > 0 且 c > a。缺失的直角边为 b = √(c² − a²)。",
+              "<strong>情形1：斜边小于已知的直角边。</strong>若 c = 4、a = 5，则 b = √(16 − 25) = √(−9)。根号内的表达式为负数，因此这些输入无法构成以 c 为斜边的真实直角三角形。",
+              "<strong>情形2：斜边等于已知的直角边。</strong>若 c = 5、a = 5，则 b = √(25 − 25) = 0。这是退化情形，不是有效的三角形。",
+              "<strong>情形3：零或负数的测量值。</strong>边长必须为正数。计算器会拒绝零和负数输入。",
+              "<strong>情形4：单位不一致。</strong>两个测量值必须使用相同的单位。如果 c 以米为单位、a 以厘米为单位，请先将其中一个换算后再计算。"
+            ],
+            "listTitle": "先使用以下检查：",
+            "listItems": [
+              "c 位于 90° <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角</a>的对边。",
+              "c 大于 a。",
+              "两个值均为正数。",
+              "c 和 a 使用相同的单位。"
+            ]
+          },
+          {
+            "h2": "缺失直角边公式用在哪里？",
+            "paragraphs": [
+              "一般规律是：当已知直线对角线或斜坡长度，以及一个垂直距离时，可用勾股定理求出另一个垂直距离。该方法仅在几何图形构成直角三角形时适用。",
+              "<strong>建筑和框架施工。</strong>木工通过测量矩形框架的对角线来检查角是否为直角。若已知对角线（c）和一条边（a），缺失的边（b）可在切割木料前确认布局。",
+              "<strong>房间和平面图测量。</strong>在布置家具或铺设地板时，已知房间的对角线和一面墙的长度，即可求出另一面墙的长度，无需搬动障碍物。",
+              "<strong>梯子与墙的几何。</strong>已知梯子长度及其与墙的距离，即可直接求出梯子达到的高度。这是几何模型，并非安全评估。",
+              "<strong>坡道和斜坡计算。</strong>已知斜坡长度和水平距离，即可确定垂直高度。这不能作为符合规范的依据。"
+            ]
+          },
+          {
+            "h2": "如何检查缺失直角边的计算结果",
+            "paragraphs": [
+              "使用前请验证每个结果。以 5–12–13 例题为例：5² + 12² = 25 + 144 = 169 = 13²。",
+              "标有“缺失的直角边 b”的输出是与 a 构成直角的另一条直角边的长度。它不是斜边，应短于 c。"
+            ],
+            "listTitle": "有效结果必须满足：",
+            "listItems": [
+              "b 大于零。",
+              "b 短于 c。",
+              "a² + b² 等于 c²（允许显示值中的四舍五入）。",
+              "结果使用正确的单位。"
+            ]
+          },
+          {
+            "h2": "求缺失直角边时的常见错误",
+            "paragraphs": [
+              "最常见的错误是把 c 当作直角边。在这里，c 必须是斜边：最长的边，位于直角的对边。",
+              "另一个常见错误是相加平方而不是相减。相加（a² + b²）求的是斜边；相减（c² − a²）求的是已知斜边时的缺失直角边。"
+            ],
+            "listTitle": "避免以下错误：",
+            "listItems": [
+              "<strong>把斜边与直角边混淆。</strong>如果把直角边的值填入 c 输入框，公式会解错问题。正确做法：c 始终是最长的边。",
+              "<strong>相加平方而不是相减。</strong>错误：b = √(c² + a²)。正确：b = √(c² − a²)。",
+              "<strong>忘记取平方根。</strong>错误：b = c² − a²。正确：对差值取平方根。",
+              "<strong>平方根的分组错误。</strong>错误：√c² − a²（等于 c − a）。正确：√(c² − a²)，整个差值都在根号内。",
+              "<strong>输入 a ≥ c。</strong>已知的直角边不能等于或超过斜边。正确做法：计算前验证 c > a。",
+              "<strong>混用单位。</strong>错误：c = 5 m，a = 30 cm。正确：先换算为相同单位（c = 500 cm，a = 30 cm）。",
+              "<strong>过早四舍五入。</strong>错误：在计算中途把 √51 四舍五入为 7.14。正确：保留完整精度直到得出最终答案。"
+            ]
           }
-        ]
-      },
-      "formulaSection": {
-        "h2": "缺腿 b 公式",
-        "paragraphs": [
-          "求边 b 的公式源自毕达哥拉斯定理 (a² + b² = c²)。重新排列 b 得出以下公式。",
-          "其中 c 是斜边（直角三角形的最长边），a 是已知边，b 是您要求解的缺失边。注意减法：从斜边的平方中减去已知边的平方，然后求平方根。"
         ],
-        "formulas": [
-          "b = \\sqrt{c^2 - a^2}"
+        "relatedLinks": [
+          {
+            "href": "/right-triangle-side-calculator/",
+            "label": "直角三角形边计算器"
+          },
+          {
+            "href": "/pythagorean-theorem-calculator/",
+            "label": "勾股定理计算器"
+          },
+          {
+            "href": "/missing-leg-from-c-and-b-calculator/",
+            "label": "缺失直角边计算器（已知 c 和 b）"
+          },
+          {
+            "href": "/right-triangle-angle-calculator/",
+            "label": "直角三角形角度计算器"
+          },
+          {
+            "href": "/right-triangle-measurements-calculator/",
+            "label": "直角三角形测量计算器"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "如何用斜边和一条直角边求缺失的直角边？",
+            "answer": "将斜边平方（c²），将已知的直角边平方（a²），相减后取平方根：b = √(c² − a²)。在上方计算器中输入两个值，即可即时得到带步骤的结果。"
+          },
+          {
+            "question": "为什么是相减而不是相加？",
+            "answer": "勾股定理将直角边的平方相加得到斜边的平方（a² + b² = c²）。当斜边已知时，变形为：用斜边的平方减去已知直角边的平方，分离出缺失直角边的平方，再取平方根。"
+          },
+          {
+            "question": "如何判断哪条边是斜边？",
+            "answer": "斜边始终是最长的边，位于 90° 角的对边。如果三个测量值是 5、12 和 13，斜边就是 13。"
+          },
+          {
+            "question": "如果已知的直角边等于或长于斜边会怎样？",
+            "answer": "若 a = c，结果为 b = 0（退化情形，不是三角形）。若 a > c，负数的平方根没有实数解。两种情形都会被判定为无效输入。"
+          },
+          {
+            "question": "缺失的直角边可以是小数吗？",
+            "answer": "可以。例如 c = 10、a = 7 时，b = √51 ≈ 7.14。计算过程中保留完整精度，仅对最终答案四舍五入。"
+          },
+          {
+            "question": "如何检查答案是否正确？",
+            "answer": "验证 a² + b² = c²。以 5–12–13 例题为例：25 + 144 = 169。同时确认 b > 0、b < c，且单位与输入一致。"
+          },
+          {
+            "question": "可以使用不同的测量单位吗？",
+            "answer": "两个输入必须使用相同的单位。如果 c 以米为单位、a 以厘米为单位，请先换算其中一个。结果使用输入的单位。"
+          },
+          {
+            "question": "这个计算器还能求未知的角吗？",
+            "answer": "不能，本模式仅求缺失的直角边 b。要求角度，请使用<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">直角三角形角度计算器</a>。"
+          }
         ]
-      },
-      "howTo": {
-        "h2": "如何从 c 和 a 中查找腿 b",
-        "steps": [
-          "确认 c 是斜边，a 是边。斜边始终是最长的边。",
-          "在第一个输入字段中输入斜边 c。",
-          "在第二个输入字段中输入已知边 a。",
-          "单击“计算”以找到缺失的腿。",
-          "阅读 b 的结果以及完整的分步解决方案。"
-        ]
-      },
-      "example": {
-        "h2": "示例：查找腿 b",
-        "intro": "给定：c = 13，a = 5。斜边为 13、边为 5 的直角三角形的缺失边为 12。",
-        "lines": [
-          "b = \\sqrt{13^2 - 5^2}",
-          "b = \\sqrt{169 - 25}",
-          "b = \\sqrt{144}",
-          "b = 12"
-        ]
-      },
-      "extraSections": [
-        {
-          "h2": "计算前的重要检查",
-          "paragraphs": [
-            "在使用此公式之前，请确保 c 大于 a。斜边始终是直角三角形的最长边。如果 c 等于 a，则 b = 0，这意味着不存在三角形。",
-            "如果c小于a，则平方根下的表达式变为负数。这意味着两个输入值无法描述以 c 为斜边的实直角三角形。"
-          ],
-          "listTitle": "首先使用这些检查：",
-          "listItems": [
-            "c 与 90° 角度相反。",
-            "c 大于 a。",
-            "两个值都是正值。",
-            "c 和 a 使用相同的单位。"
-          ]
-        },
-        {
-          "h2": "该计算器的用处",
-          "paragraphs": [
-            "当已知对角线或倾斜测量值、已知一条垂直边且缺少另一条垂直边时，此计算器非常有用。它是 c 和案例的重点工具，因此页面上的每个解释都指向寻找 b。",
-            "它还可以帮助验证测量结果。如果 b 的测量值与计算器结果不匹配，则三角形可能不正确，斜边可能标记错误，或者一次测量可能使用不同的单位。"
-          ],
-          "listTitle": "常见的例子包括：",
-          "listItems": [
-            "当梯子长度 c 和地面距离 a 已知时，求墙高。",
-            "当斜坡长度和水平长度已知时，求斜坡的垂直高度。",
-            "检查给出 c 和 a 的直角三角形作业问题。",
-            "确认框架、景观、坡道或平面图的布局测量。"
-          ]
-        },
-        {
-          "h2": "如何阅读答案",
-          "paragraphs": [
-            "标记为 Missing Leg b 的输出是与 ZX​​VARAZX 形成直角的另一条腿的长度。它不是斜边，应该比 c 短。",
-            "如果计算出的 b 非常小，则您的已知边 a 非常接近斜边 c。这可能是有效的，但在使用该值之前值得检查图表和单位。"
-          ],
-          "listTitle": "有效的结果应满足：",
-          "listItems": [
-            "b 大于零。",
-            "b 小于 c。",
-            "a² + b² 约等于 c²。",
-            "输出单位与输入单位相匹配。"
-          ]
-        },
-        {
-          "h2": "常见错误",
-          "paragraphs": [
-            "最常见的错误是将 c 视为一条腿。在此计算器中，c 必须是斜边，即最长的边和与直角相对的边。",
-            "另一个常见的错误是平方相加而不是相减。加法求斜边；减法找出斜边缺少的一条边。"
-          ],
-          "listTitle": "避免这些错误：",
-          "listItems": [
-            "将已知边放入斜边域中。",
-            "使用 c² + a² 而不是 c² - a²。",
-            "输入大于或等于 c。",
-            "在 b² 处停止，而不是取平方根。",
-            "混合单位，例如米和厘米。"
-          ]
-        }
-      ],
-      "relatedLinks": [
-        {
-          "href": "/right-triangle-side-calculator/",
-          "label": "直角三角形边长计算器"
-        },
-        {
-          "href": "/pythagorean-theorem-calculator/",
-          "label": "计算器: 勾股定理"
-        },
-        {
-          "href": "/missing-leg-from-c-and-b-calculator/",
-          "label": "计算器: 求直角边 (已知 c 和 b)"
-        }
-      ],
-      "faqs": [
-        {
-          "question": "c 在此计算器中意味着什么？",
-          "answer": "c 是直角三角形的斜边--最长的边，位于 90° 角的对面。它不是一条腿。您在此计算器中输入 c 作为两个已知值之一。"
-        },
-        {
-          "question": "这个计算器中的 a 是什么意思？",
-          "answer": "a 是直角三角形的两条边之一。它是形成直角的边之一。在此计算器中，a 是您已知的腿。"
-        },
-        {
-          "question": "这个计算器能发现什么？",
-          "answer": "该计算器找到缺失的腿 b。给定斜边 c 和边 a，它会计算 b = √(c² − a²) 并向您显示逐步解决方案。"
-        },
-        {
-          "question": "c 可以小于 a 吗？",
-          "answer": "不。在直角三角形中，斜边始终是最长的边。如果 c 小于 a，则这些值不会形成有效的直角三角形。在计算之前检查哪个测量值是斜边。"
-        },
-        {
-          "question": "如何从 c 和 a 中找到 b？",
-          "answer": "对斜边 (c²) 求平方，对已知边 (a²) 求平方，从 c² 中减去 a²，然后取平方根。公式为b = √(c² − a²)。或者将您的值输入此计算器以获得即时答案。"
-        }
-      ]
     },
     "missing-leg-from-c-and-b-calculator": {
       "slug": "missing-leg-from-c-and-b-calculator",

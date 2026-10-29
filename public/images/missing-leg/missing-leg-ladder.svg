@@ -6,5 +6,5 @@
 <line x1="240" y1="400" x2="420" y2="160" stroke="#f1c97d" stroke-width="10"/>
 <text x="330" y="428" font-family="Manrope, Arial, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="normal" style="">a = 3 m</text>
 <text x="404" y="280" font-family="Manrope, Arial, sans-serif" font-size="20" fill="#38bdf8" text-anchor="end" font-weight="normal" style="">b = 4 m</text>
-<text x="318" y="262" font-family="Manrope, Arial, sans-serif" font-size="20" fill="#f1c97d" text-anchor="middle" font-weight="normal" style="">c = 5 m ladder</text>
+<text x="300" y="240" font-family="Manrope, Arial, sans-serif" font-size="20" fill="#f1c97d" text-anchor="middle" font-weight="normal" style="">c = 5 m ladder</text>
 </svg>

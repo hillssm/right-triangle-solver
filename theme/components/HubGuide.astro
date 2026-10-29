@@ -79,7 +79,12 @@ const relLink = (ph: string) => ({
 const inputAttrs = (inputs: Record<string, string> | null) => {
   if (!inputs) return {};
   const attrs: Record<string, string> = {};
-  for (const [k, v] of Object.entries(inputs)) attrs[`data-${k}`] = v;
+  // Use case-safe attribute names: HTML lowercases data-* names, so
+  // data-A would collide with data-a. Angles get their own prefix.
+  for (const [k, v] of Object.entries(inputs)) {
+    const name = k === 'A' ? 'angle-a' : k === 'B' ? 'angle-b' : `leg-${k.toLowerCase()}`;
+    attrs[`data-${name}`] = v;
+  }
   return attrs;
 };
 

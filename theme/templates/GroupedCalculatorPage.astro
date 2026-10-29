@@ -569,10 +569,10 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
           <div class="mb-4" data-hub-presets>
             <p class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">{(hubGuide as any).presetsLabel || 'Try an example'}</p>
             <div class="mt-2 flex flex-wrap gap-2">
-              <button type="button" class="interactive-chip" data-hub-preset data-a="3" data-b="4">{((hubGuide as any).presets ?? [])[0] || '3–4–5 Triangle'}</button>
-              <button type="button" class="interactive-chip" data-hub-preset data-a="5" data-b="12">{((hubGuide as any).presets ?? [])[1] || '5–12–13 Triangle'}</button>
-              <button type="button" class="interactive-chip" data-hub-preset data-c="10" data-A="30">{((hubGuide as any).presets ?? [])[2] || 'Hypotenuse 10, Angle 30°'}</button>
-              <button type="button" class="interactive-chip" data-hub-preset data-c="13" data-b="12">{((hubGuide as any).presets ?? [])[3] || 'Hypotenuse 13, Leg 12'}</button>
+              <button type="button" class="interactive-chip" data-hub-preset data-leg-a="3" data-leg-b="4">{((hubGuide as any).presets ?? [])[0] || '3–4–5 Triangle'}</button>
+              <button type="button" class="interactive-chip" data-hub-preset data-leg-a="5" data-leg-b="12">{((hubGuide as any).presets ?? [])[1] || '5–12–13 Triangle'}</button>
+              <button type="button" class="interactive-chip" data-hub-preset data-leg-c="10" data-angle-a="30">{((hubGuide as any).presets ?? [])[2] || 'Hypotenuse 10, Angle 30°'}</button>
+              <button type="button" class="interactive-chip" data-hub-preset data-leg-c="13" data-leg-b="12">{((hubGuide as any).presets ?? [])[3] || 'Hypotenuse 13, Leg 12'}</button>
             </div>
           </div>
           <FormulaCalculator formula={generalSolverFormula} locale={locale} />
@@ -592,14 +592,18 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
               section.scrollIntoView({ behavior: 'smooth', block: 'start' });
               window.setTimeout(() => form.requestSubmit(), 400);
             };
+            const readValues = (btn) => ({
+              a: btn.dataset.legA, b: btn.dataset.legB, c: btn.dataset.legC,
+              A: btn.dataset.angleA, B: btn.dataset.angleB
+            });
             document.querySelectorAll('[data-hub-preset]').forEach((btn) => {
               btn.addEventListener('click', () =>
-                fillAndSolve({ a: btn.dataset.a, b: btn.dataset.b, c: btn.dataset.c, A: btn.dataset.A, B: btn.dataset.B })
+                fillAndSolve(readValues(btn))
               );
             });
             document.querySelectorAll('[data-try-calc]').forEach((btn) => {
               btn.addEventListener('click', () =>
-                fillAndSolve({ a: btn.dataset.a, b: btn.dataset.b, c: btn.dataset.c, A: btn.dataset.A, B: btn.dataset.B })
+                fillAndSolve(readValues(btn))
               );
             });
           })();

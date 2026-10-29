@@ -380,6 +380,9 @@ const calculatorMessages = JSON.stringify(messages);
           if (key.endsWith('_unit')) {
             units[key.replace('_unit', '')] = val;
           } else {
+            // Empty fields mean "not provided" (the general solver accepts
+            // any two values); skip them instead of failing the parse.
+            if (String(val).trim() === '') continue;
             const num = toNumber(val);
             if (!Number.isFinite(num)) {
               throw new Error(messages.invalid || translations.unableToCalculate || '');

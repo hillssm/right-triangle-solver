@@ -1,331 +1,269 @@
 ---
 import katex from 'katex';
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import Faq from 'theme/components/Faq.astro';
-import { HUB_GUIDE_FAQS } from 'src/data/rightTriangleHubGuide';
+import { localizePath, type Locale } from 'theme/i18n/locales';
 
-const tex = (latex: string) =>
-  katex.renderToString(latex, { throwOnError: false, displayMode: false });
-const texBlock = (latex: string) =>
-  katex.renderToString(latex, { throwOnError: false, displayMode: true });
+interface Props {
+  guide: any;
+  names: Record<string, string>;
+  locale: Locale;
+}
 
-// Inline the two interactive diagrams so the toggle scripts can reach their <g> groups.
-const inlineHubSvg = (name: string) =>
-  readFileSync(join(process.cwd(), 'public', 'images', 'hub', name), 'utf8');
+const { guide: G, names, locale } = Astro.props;
+
+const HUB_IMG_DIR = join(process.cwd(), 'public', 'images', 'hub');
+
+const rich = (s: string): string => {
+  if (!s || typeof s !== 'string') return '';
+  let out = s;
+  for (const [k, v] of Object.entries(names)) {
+    out = out.split(k).join(v);
+  }
+  if (locale !== 'en') {
+    out = out.split('href="/').join(`href="/${locale}/`);
+  }
+  out = out.replace(
+    /\[\[\[(.+?)\]\]\]/g,
+    (_, l) =>
+      `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
+  );
+  out = out.replace(
+    /\[\[(.+?)\]\]/g,
+    (_, l) =>
+      `<span dir="ltr" class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>`
+  );
+  return out;
+};
+
+const locFile = (name: string): string => {
+  const localized = join(HUB_IMG_DIR, name.replace('.svg', `-${locale}.svg`));
+  return existsSync(localized) ? localized : join(HUB_IMG_DIR, name);
+};
+
+const inlineHubSvg = (name: string): string => {
+  try {
+    return readFileSync(locFile(name), 'utf8');
+  } catch {
+    return '';
+  }
+};
+
+const imgSrc = (name: string): string => {
+  const localized = `/images/hub/${name.replace('.svg', `-${locale}.svg`)}`;
+  return existsSync(join(HUB_IMG_DIR, name.replace('.svg', `-${locale}.svg`)))
+    ? localized
+    : `/images/hub/${name}`;
+};
+
+const HREFS: Record<string, string> = {
+  __SIDE_CALC__: '/right-triangle-side-calculator/',
+  __SIDEANGLE_CALC__: '/right-triangle-side-from-angle-calculator/',
+  __ANGLE_CALC__: '/right-triangle-angle-calculator/',
+  __TRIG_CALC__: '/right-triangle-trig-ratios-calculator/',
+  __AREA_CALC__: '/right-triangle-area-calculator/',
+  __MEAS_CALC__: '/right-triangle-measurements-calculator/',
+  __ALT_CALC__: '/right-triangle-altitude-calculator/',
+  __PROJ_CALC__: '/right-triangle-projection-calculator/',
+  __RAD_CALC__: '/right-triangle-radius-calculator/',
+  __SPECIAL_CALC__: '/special-right-triangle-calculator/',
+  __TRIPLES_CALC__: '/pythagorean-triples-calculator/'
+};
+
+const relLink = (ph: string) => ({
+  href: localizePath(locale, HREFS[ph] ?? '/'),
+  label: names[ph] ?? ph
+});
+
+const inputAttrs = (inputs: Record<string, string> | null) => {
+  if (!inputs) return {};
+  const attrs: Record<string, string> = {};
+  for (const [k, v] of Object.entries(inputs)) attrs[`data-${k}`] = v;
+  return attrs;
+};
+
+const faqItems = (G.faqs ?? []).map((f: any) => ({
+  question: rich(f.q),
+  answer: rich(f.a)
+}));
+
+const tocAnchors = ['#hub-diagram','#hub-how-to','#hub-fundamentals','#hub-formulas','#hub-visualizations','#hub-examples','#hub-real-world','#hub-special','#hub-triples','#hub-mistakes','#hub-verify','#faq'];
+const tocEntries = [
+  ...((G.toc ?? []).map((label: string, i: number) => ({ label, href: tocAnchors[i] || '' }))),
+  { label: G.sRelated?.h2 || '', href: '#hub-related' }
+].filter((e) => e.label && e.href);
 ---
 
-<nav class="mx-auto w-full max-w-4xl section-shell" aria-label="On this page">
-  <h2 class="text-2xl font-semibold">On This Page</h2>
+<nav class="mx-auto w-full max-w-4xl section-shell" aria-label={rich(G.tocTitle)}>
+  <h2 class="text-2xl font-semibold" set:html={rich(G.tocTitle)} />
   <ol class="mt-4 grid gap-2 sm:grid-cols-2">
-    <li><a class="hover:text-primary hover:underline" href="#hub-diagram">Understanding the Right Triangle Diagram</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#hub-how-to">How to Use the Right Triangle Calculator</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#hub-fundamentals">What Is a Right Triangle?</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#hub-formulas">Right Triangle Formulas Explained</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#hub-visualizations">Seeing the Math: Key Diagrams</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#hub-examples">Step-by-Step Worked Examples</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#hub-real-world">Real-World Applications</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#hub-special">Special Right Triangles</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#hub-triples">Common Pythagorean Triples</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#hub-mistakes">Common Calculation Mistakes</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#hub-verify">How to Verify a Solution</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#faq">Frequently Asked Questions</a></li>
+    {tocEntries.map((entry) => (
+      <li>
+        <a class="hover:text-primary hover:underline" href={entry.href} set:html={rich(entry.label)} />
+      </li>
+    ))}
   </ol>
 </nav>
 
 <section id="hub-diagram" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
-  <h2>Understanding the Right Triangle Diagram</h2>
-  <p>
-    Every diagram and formula on this page follows one fixed convention. Learn it once and every
-    label on the site reads the same way: vertices are <em>A</em>, <em>B</em>, and <em>C</em>, with the
-    right angle always at <em>C</em>. Side <em>a</em> lies opposite angle <em>A</em>, side <em>b</em> lies
-    opposite angle <em>B</em>, and side <em>c</em>, the hypotenuse, lies opposite the right angle. Because
-    the angles of a triangle sum to 180°, the two acute angles always satisfy <span class="math-textbook" set:html={tex('A + B = 90^\\circ')} />.
-  </p>
+  <h2 set:html={rich(G.sDiagram.h2)} />
+  <p set:html={rich(G.sDiagram.p1)} />
   <figure class="not-prose my-6">
-    <img src="/images/hub/hub-parts.svg" alt="Labeled right triangle ABC with right angle at C, legs a and b, hypotenuse c, acute angles A and B, altitude h to the hypotenuse, and projection segments p and q" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
-    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">The standard labeling used across this page: <em>a</em> opposite <em>A</em>, <em>b</em> opposite <em>B</em>, hypotenuse <em>c</em> opposite the right angle at <em>C</em>.</figcaption>
+    <img src={imgSrc('hub-parts.svg')} alt={rich(G.sDiagram.alt)} class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant" set:html={rich(G.sDiagram.caption)} />
   </figure>
-  <h3>Parts of a Right Triangle</h3>
+  <h3 set:html={rich(G.sDiagram.h3)} />
   <div class="not-prose overflow-x-auto">
     <table class="w-full min-w-[420px] border-collapse text-sm">
       <thead>
         <tr class="border-b border-outline-variant/30 text-left">
-          <th class="py-2 pr-4 font-semibold">Symbol</th>
-          <th class="py-2 font-semibold">Meaning</th>
+          <th class="py-2 pr-4 font-semibold" set:html={rich(G.sDiagram.thSymbol)} />
+          <th class="py-2 font-semibold" set:html={rich(G.sDiagram.thMeaning)} />
         </tr>
       </thead>
       <tbody>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4 font-mono"><em>a</em></td><td class="py-2">Leg opposite angle <em>A</em></td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4 font-mono"><em>b</em></td><td class="py-2">Leg opposite angle <em>B</em></td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4 font-mono"><em>c</em></td><td class="py-2">Hypotenuse, opposite the right angle</td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4 font-mono"><em>A</em>, <em>B</em></td><td class="py-2">The two acute angles (each between 0° and 90°)</td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4 font-mono"><em>C</em></td><td class="py-2">The right angle, exactly 90°</td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4 font-mono"><em>h</em></td><td class="py-2">Altitude: perpendicular distance from <em>C</em> to the hypotenuse</td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4 font-mono"><em>p</em>, <em>q</em></td><td class="py-2">Projections of legs <em>a</em> and <em>b</em> onto the hypotenuse</td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4 font-mono"><em>r</em></td><td class="py-2">Inradius: radius of the circle tangent to all three sides</td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4 font-mono"><em>R</em></td><td class="py-2">Circumradius: radius of the circle passing through all three vertices</td></tr>
-        <tr><td class="py-2 pr-4 font-mono"><em>s</em></td><td class="py-2">Semiperimeter: half of the perimeter, <em>s</em> = (<em>a</em> + <em>b</em> + <em>c</em>) / 2</td></tr>
+        {(G.sDiagram.rows ?? []).map((row: string[]) => (
+          <tr class="border-b border-outline-variant/15 last:border-0">
+            <td class="py-2 pr-4 font-mono" set:html={rich(row[0])} />
+            <td class="py-2" set:html={rich(row[1])} />
+          </tr>
+        ))}
       </tbody>
     </table>
   </div>
-  <p>
-    When you enter valid measurements in the calculator above, its live diagram redraws the triangle to
-    scale with your values and labels each computed side and angle, so the picture always matches the numbers.
-  </p>
+  <p set:html={rich(G.sDiagram.outro)} />
 </section>
 
 <section id="hub-how-to" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
-  <h2>How to Use the Right Triangle Calculator</h2>
+  <h2 set:html={rich(G.sHowTo.h2)} />
   <ol>
-    <li><strong>Identify your known measurements.</strong> You need two independent values with at least one side: two sides, or one side plus one acute angle.</li>
-    <li><strong>Enter each value in its matching field.</strong> Side <em>a</em> is opposite angle <em>A</em>, side <em>b</em> is opposite angle <em>B</em>, and <em>c</em> is always the hypotenuse. Angles are entered in degrees.</li>
-    <li><strong>Run the calculation.</strong> The solver finds every missing side and angle, plus area, perimeter, altitude, projections, inradius, and circumradius.</li>
-    <li><strong>Examine the diagram.</strong> The triangle redraws to the proportions of your solution, with each measurement labeled at its position.</li>
-    <li><strong>Review the solution steps.</strong> Each result shows the formula used, the substituted values, and the final answer, so you can follow the arithmetic.</li>
-    <li><strong>Verify the result.</strong> Confirm the hypotenuse is the longest side and the two acute angles add to 90°. The verification checklist below automates these checks.</li>
+    {(G.sHowTo.steps ?? []).map((s: string) => <li set:html={rich(s)} />)}
   </ol>
-  <h3>Input Rules the Calculator Enforces</h3>
+  <h3 set:html={rich(G.sHowTo.h3)} />
   <ul>
-    <li><strong>Sides must be positive.</strong> Entering <em>a</em> = −3 is rejected; lengths cannot be negative or zero.</li>
-    <li><strong>The hypotenuse must be the longest side.</strong> Entering <em>c</em> = 5 with <em>a</em> = 6 is impossible, because no leg can exceed the hypotenuse.</li>
-    <li><strong>Acute angles are strictly between 0° and 90°.</strong> An entry of <em>A</em> = 0° or <em>A</em> = 90° describes a degenerate triangle, not a right triangle.</li>
-    <li><strong>Two angles alone are not enough.</strong> <em>A</em> = 30° and <em>B</em> = 60° describe infinitely many similar triangles; without a side, the size is undetermined.</li>
-    <li><strong>Angles A and B must be complementary.</strong> Entering <em>A</em> = 40° and <em>B</em> = 60° contradicts <em>A</em> + <em>B</em> = 90° and is rejected.</li>
-    <li><strong>Measurements must be independent.</strong> Entering <em>a</em> = 3 and <em>c</em> = 5 determines the triangle; entering <em>a</em> = 3 twice does not add information.</li>
-    <li><strong>Keep length units consistent.</strong> All side inputs share one unit selector; mixing meters and centimeters in one calculation gives a wrong answer.</li>
+    {(G.sHowTo.rules ?? []).map((r: string) => <li set:html={rich(r)} />)}
   </ul>
 </section>
 
 <section id="hub-fundamentals" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
-  <h2>What Is a Right Triangle?</h2>
-  <p>
-    A right triangle is a triangle containing one 90° angle, the right angle. The 90° angle fixes the
-    shape more rigidly than any other single angle: once it is set, the remaining two angles must share the
-    leftover 90°, which forces both to be acute (each strictly less than 90°). The side opposite the right
-    angle is the hypotenuse, always the longest side; the other two sides are the legs, and they meet
-    perpendicularly at the right-angle vertex.
-  </p>
-  <p>
-    This perpendicularity is what makes right triangles the workhorse of measurement. Any rectangle splits
-    along its diagonal into two congruent right triangles, so every rectangular length, from a floor plan to
-    a ramp, hides a right triangle. A right triangle is uniquely determined by two independent measurements
-    that include at least one side, which is exactly why the calculator asks for two values: that is the
-    minimum information from which the other four sides and angles can be derived.
-  </p>
-  <p>
-    The labels <em>opposite</em> and <em>adjacent</em> always refer to a chosen acute angle. Pick angle
-    <em>A</em>: the leg across from it (<em>a</em>) is opposite, and the leg forming the angle (<em>b</em>) is
-    adjacent. Pick angle <em>B</em> instead and the two legs trade roles. The interactive diagram below lets
-    you switch between the two viewpoints.
-  </p>
-  <h3>Why Is the Hypotenuse the Longest Side?</h3>
-  <p>
-    The Pythagorean theorem states <span class="math-textbook" set:html={tex('a^2 + b^2 = c^2')} />. Because
-    side lengths are positive, <span class="math-textbook" set:html={tex('a^2 + b^2 > a^2')} /> and
-    <span class="math-textbook" set:html={tex('a^2 + b^2 > b^2')} />, so
-    <span class="math-textbook" set:html={tex('c^2 > a^2')} /> and <span class="math-textbook" set:html={tex('c^2 > b^2')} />.
-    Taking square roots of positive numbers preserves the inequality, giving
-    <span class="math-textbook" set:html={tex('c > a')} /> and <span class="math-textbook" set:html={tex('c > b')} />.
-    In words: adding the square of the other leg can only lengthen the hypotenuse, so the hypotenuse must
-    exceed either leg. Any input that violates this, such as <em>c</em> = 5 with <em>a</em> = 6, cannot be a
-    right triangle.
-  </p>
+  <h2 set:html={rich(G.sFundamentals.h2)} />
+  <p set:html={rich(G.sFundamentals.p1)} />
+  <p set:html={rich(G.sFundamentals.p2)} />
+  <p set:html={rich(G.sFundamentals.p3)} />
+  <h3 set:html={rich(G.sFundamentals.h3)} />
+  <p set:html={rich(G.sFundamentals.proof)} />
 </section>
 
 <section id="hub-formulas" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
-  <h2>Right Triangle Formulas Explained</h2>
-  <p>
-    Every result on this page comes from the formulas below. Each card states the formula, when to use it,
-    and which calculator on this site handles that exact task.
-  </p>
+  <h2 set:html={rich(G.sFormulas.h2)} />
+  <p set:html={rich(G.sFormulas.intro)} />
 
-  <h3>Pythagorean Theorem</h3>
-  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5 text-center">
-    <p class="math-textbook text-xl" set:html={texBlock('a^2 + b^2 = c^2')} />
-  </div>
-  <p>Use the rearranged form that isolates the unknown side:</p>
+  <h3 set:html={rich(G.sFormulas.pythagH3)} />
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5 text-center" set:html={rich(G.sFormulas.pythagBlock)} />
+  <p set:html={rich(G.sFormulas.rearrange)} />
   <div class="not-prose my-4 grid gap-3 sm:grid-cols-3">
-    <div class="rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-4 text-center">
-      <p class="text-sm text-on-surface-variant">Find the hypotenuse</p>
-      <p class="math-textbook mt-1 text-lg" set:html={tex('c = \\sqrt{a^2 + b^2}')} />
-    </div>
-    <div class="rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-4 text-center">
-      <p class="text-sm text-on-surface-variant">Find leg <em>a</em></p>
-      <p class="math-textbook mt-1 text-lg" set:html={tex('a = \\sqrt{c^2 - b^2}')} />
-    </div>
-    <div class="rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-4 text-center">
-      <p class="text-sm text-on-surface-variant">Find leg <em>b</em></p>
-      <p class="math-textbook mt-1 text-lg" set:html={tex('b = \\sqrt{c^2 - a^2}')} />
-    </div>
+    {(G.sFormulas.cards ?? []).map((c: any) => (
+      <div class="rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-4 text-center">
+        <p class="text-sm text-on-surface-variant" set:html={rich(c.label)} />
+        <p class="mt-1 text-lg" set:html={rich(c.formula)} />
+      </div>
+    ))}
   </div>
-  <p>
-    Use the first form when both legs are known, and the other two when the hypotenuse and one leg are known.
-    The value under the square root must be positive; a negative value means the supposed hypotenuse is not
-    longer than the known leg. See the <a href="/right-triangle-side-calculator/">Right Triangle Side Calculator</a>
-    for focused side solving.
-  </p>
+  <p set:html={rich(G.sFormulas.pythagNote)} />
 
-  <h3>Trigonometric Formulas</h3>
-  <p>Relative to angle <em>A</em>, the three primary ratios are:</p>
-  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5 text-center">
-    <p class="math-textbook text-lg" set:html={texBlock('\\sin(A) = \\frac{a}{c} \\qquad \\cos(A) = \\frac{b}{c} \\qquad \\tan(A) = \\frac{a}{b}')} />
-  </div>
-  <p>
-    <strong>SOH–CAH–TOA</strong> is the memory aid: <strong>S</strong>ine = <strong>O</strong>pposite over
-    <strong>H</strong>ypotenuse, <strong>C</strong>osine = <strong>A</strong>dacent over <strong>H</strong>ypotenuse,
-    <strong>T</strong>angent = <strong>O</strong>pposite over <strong>A</strong>dacent. To go the other direction,
-    from sides to an angle, use the inverse functions:
-  </p>
-  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5 text-center">
-    <p class="math-textbook text-lg" set:html={texBlock('A = \\arcsin\\frac{a}{c} \\qquad A = \\arccos\\frac{b}{c} \\qquad A = \\arctan\\frac{a}{b} \\qquad B = 90^\\circ - A')} />
-  </div>
-  <p>
-    Pick the inverse formula whose fraction uses the sides you actually know, then subtract from 90° for the
-    remaining angle. The <a href="/right-triangle-angle-calculator/">Right Triangle Angle Calculator</a> and the
-    <a href="/right-triangle-trig-ratios-calculator/">Trigonometric Ratios Calculator</a> cover these tasks in depth.
-  </p>
+  <h3 set:html={rich(G.sFormulas.trigH3)} />
+  <p set:html={rich(G.sFormulas.trigIntro)} />
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5 text-center" set:html={rich(G.sFormulas.trigBlock)} />
+  <p set:html={rich(G.sFormulas.sohcahtoa)} />
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5 text-center" set:html={rich(G.sFormulas.invBlock)} />
+  <p set:html={rich(G.sFormulas.trigNote)} />
 
-  <h3>Area and Perimeter</h3>
-  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5 text-center">
-    <p class="math-textbook text-lg" set:html={texBlock('K = \\frac{a \\times b}{2} \\qquad P = a + b + c \\qquad s = \\frac{P}{2}')} />
-  </div>
-  <p>
-    The legs are perpendicular, so they act directly as base and height: no altitude computation is needed for
-    the area. The semiperimeter <em>s</em> is half the perimeter and appears in the inradius formula and in
-    Heron's formula. Try the <a href="/right-triangle-area-calculator/">Right Triangle Area Calculator</a> for
-    area-first problems.
-  </p>
+  <h3 set:html={rich(G.sFormulas.areaH3)} />
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5 text-center" set:html={rich(G.sFormulas.areaBlock)} />
+  <p set:html={rich(G.sFormulas.areaNote)} />
 
-  <h3>Altitude to the Hypotenuse</h3>
-  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5 text-center">
-    <p class="math-textbook text-lg" set:html={texBlock('h = \\frac{a \\times b}{c}')} />
-  </div>
-  <p>
-    The altitude <em>h</em> is the perpendicular distance from the right-angle vertex <em>C</em> to the
-    hypotenuse. It follows from equating the two expressions for the area:
-    <span class="math-textbook" set:html={tex('\\frac{a \\times b}{2} = \\frac{h \\times c}{2}')} />, then solving
-    for <em>h</em>. Dedicated tool: <a href="/right-triangle-altitude-calculator/">Height (Altitude) Calculator</a>.
-  </p>
+  <h3 set:html={rich(G.sFormulas.altH3)} />
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5 text-center" set:html={rich(G.sFormulas.altBlock)} />
+  <p set:html={rich(G.sFormulas.altNote)} />
 
-  <h3>Hypotenuse Projections</h3>
-  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5 text-center">
-    <p class="math-textbook text-lg" set:html={texBlock('p = \\frac{a^2}{c} \\qquad q = \\frac{b^2}{c} \\qquad p + q = c \\qquad h^2 = p \\times q')} />
-  </div>
-  <p>
-    The altitude lands at point <em>D</em> on the hypotenuse, splitting it into segment <em>p</em> (adjacent to
-    leg <em>a</em>, between <em>B</em> and <em>D</em>) and segment <em>q</em> (adjacent to leg <em>b</em>, between
-    <em>D</em> and <em>A</em>). The relation <span class="math-textbook" set:html={tex('h^2 = p \\times q')} /> is the
-    geometric mean: the altitude is the geometric mean of the two projections. Dedicated tool:
-    <a href="/right-triangle-projection-calculator/">Projection and Segment Calculator</a>.
-  </p>
+  <h3 set:html={rich(G.sFormulas.projH3)} />
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5 text-center" set:html={rich(G.sFormulas.projBlock)} />
+  <p set:html={rich(G.sFormulas.projNote)} />
 
-  <h3>Inradius and Circumradius</h3>
-  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5 text-center">
-    <p class="math-textbook text-lg" set:html={texBlock('r = \\frac{a + b - c}{2} \\qquad R = \\frac{c}{2}')} />
-  </div>
-  <p>
-    The <strong>incircle</strong> is the circle tangent to all three sides; its center (the incenter) sits at
-    distance <em>r</em> from each side. The <strong>circumcircle</strong> passes through all three vertices; for
-    a right triangle its center is the midpoint of the hypotenuse, so the hypotenuse is a diameter and
-    <span class="math-textbook" set:html={tex('R = c/2')} /> exactly. Dedicated tool:
-    <a href="/right-triangle-radius-calculator/">Inradius and Circumradius Calculator</a>.
-  </p>
+  <h3 set:html={rich(G.sFormulas.radH3)} />
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5 text-center" set:html={rich(G.sFormulas.radBlock)} />
+  <p set:html={rich(G.sFormulas.radNote)} />
 
-  <h3>Formula Quick Reference</h3>
+  <h3 set:html={rich(G.sFormulas.refH3)} />
   <div class="not-prose overflow-x-auto">
     <table class="w-full min-w-[640px] border-collapse text-sm">
       <thead>
         <tr class="border-b border-outline-variant/30 text-left">
-          <th class="py-2 pr-3 font-semibold">Measurement</th>
-          <th class="py-2 pr-3 font-semibold">Formula</th>
-          <th class="py-2 pr-3 font-semibold">Known values</th>
-          <th class="py-2 font-semibold">Calculator</th>
+          {(G.sFormulas.refHead ?? []).map((h: string) => <th class="py-2 pr-3 font-semibold" set:html={rich(h)} />)}
         </tr>
       </thead>
       <tbody>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-3">Hypotenuse</td><td class="py-2 pr-3 math-textbook" set:html={tex('c = \\sqrt{a^2 + b^2}')} /><td class="py-2 pr-3">legs <em>a</em>, <em>b</em></td><td class="py-2"><a href="/right-triangle-side-calculator/">Side</a></td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-3">Leg <em>a</em></td><td class="py-2 pr-3 math-textbook" set:html={tex('a = \\sqrt{c^2 - b^2}')} /><td class="py-2 pr-3"><em>c</em> &gt; <em>b</em></td><td class="py-2"><a href="/right-triangle-side-calculator/">Side</a></td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-3">Leg <em>a</em> from angle</td><td class="py-2 pr-3 math-textbook" set:html={tex('a = c\\sin A')} /><td class="py-2 pr-3"><em>c</em>, acute <em>A</em></td><td class="py-2"><a href="/right-triangle-side-from-angle-calculator/">Side from Angle</a></td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-3">Angle <em>A</em></td><td class="py-2 pr-3 math-textbook" set:html={tex('A = \\arctan\\frac{a}{b}')} /><td class="py-2 pr-3">legs <em>a</em>, <em>b</em></td><td class="py-2"><a href="/right-triangle-angle-calculator/">Angle</a></td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-3">Trig ratios</td><td class="py-2 pr-3 math-textbook" set:html={tex('\\sin A = a/c')} /><td class="py-2 pr-3">any two of <em>a</em>, <em>b</em>, <em>c</em></td><td class="py-2"><a href="/right-triangle-trig-ratios-calculator/">Trig Ratios</a></td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-3">Area</td><td class="py-2 pr-3 math-textbook" set:html={tex('K = ab/2')} /><td class="py-2 pr-3">legs <em>a</em>, <em>b</em></td><td class="py-2"><a href="/right-triangle-area-calculator/">Area</a></td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-3">Perimeter</td><td class="py-2 pr-3 math-textbook" set:html={tex('P = a+b+c')} /><td class="py-2 pr-3">all three sides</td><td class="py-2"><a href="/right-triangle-measurements-calculator/">Measurements</a></td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-3">Altitude</td><td class="py-2 pr-3 math-textbook" set:html={tex('h = ab/c')} /><td class="py-2 pr-3">valid triangle</td><td class="py-2"><a href="/right-triangle-altitude-calculator/">Altitude</a></td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-3">Projection <em>p</em></td><td class="py-2 pr-3 math-textbook" set:html={tex('p = a^2/c')} /><td class="py-2 pr-3"><em>c</em> &gt; <em>a</em></td><td class="py-2"><a href="/right-triangle-projection-calculator/">Projection</a></td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-3">Inradius</td><td class="py-2 pr-3 math-textbook" set:html={tex('r = (a+b-c)/2')} /><td class="py-2 pr-3">valid triangle</td><td class="py-2"><a href="/right-triangle-radius-calculator/">Radius</a></td></tr>
-        <tr><td class="py-2 pr-3">Circumradius</td><td class="py-2 pr-3 math-textbook" set:html={tex('R = c/2')} /><td class="py-2 pr-3"><em>c</em> &gt; 0</td><td class="py-2"><a href="/right-triangle-radius-calculator/">Radius</a></td></tr>
+        {(G.sFormulas.refRows ?? []).map((row: string[]) => (
+          <tr class="border-b border-outline-variant/15 last:border-0">
+            <td class="py-2 pr-3" set:html={rich(row[0])} />
+            <td class="py-2 pr-3" set:html={rich(row[1])} />
+            <td class="py-2 pr-3" set:html={rich(row[2])} />
+            <td class="py-2" set:html={rich(row[3])} />
+          </tr>
+        ))}
       </tbody>
     </table>
   </div>
 </section>
 
 <section id="hub-visualizations" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
-  <h2>Seeing the Math: Key Diagrams</h2>
-  <p>Four diagrams that make the central relationships visible. Each is drawn from the same 3-4-5 triangle used in the worked examples.</p>
+  <h2 set:html={rich(G.sVisualizations.h2)} />
+  <p set:html={rich(G.sVisualizations.intro)} />
 
-  <h3>Diagram 1: The Pythagorean Theorem as Areas</h3>
+  <h3 set:html={rich(G.sVisualizations.d1H3)} />
   <figure class="not-prose my-6">
-    <img src="/images/hub/hub-pythagoras-squares.svg" alt="3-4-5 right triangle with squares of area 9, 16, and 25 built on its three sides, showing 9 + 16 = 25" class="mx-auto h-auto w-full max-w-2xl" loading="lazy" />
-    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">The square on leg <em>a</em> has area 9, on leg <em>b</em> area 16, and on the hypotenuse area 25. Since 9 + 16 = 25, the two smaller squares exactly fill the largest one.</figcaption>
+    <img src={imgSrc('hub-pythagoras-squares.svg')} alt={rich(G.sVisualizations.d1Alt)} class="mx-auto h-auto w-full max-w-2xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant" set:html={rich(G.sVisualizations.d1Caption)} />
   </figure>
-  <p>
-    This picture is a proof for the illustrated triangle: the combined area of the squares on the legs equals
-    the area of the square on the hypotenuse. The general theorem states this holds for <em>every</em> right
-    triangle, which is why <span class="math-textbook" set:html={tex('a^2 + b^2 = c^2')} /> can be trusted as a
-    calculation rule rather than a coincidence of the 3-4-5 example.
-  </p>
+  <p set:html={rich(G.sVisualizations.d1Note)} />
 
-  <h3>Diagram 2: Opposite, Adjacent, and Hypotenuse</h3>
-  <p>Select an angle to see which leg is opposite and which is adjacent. The hypotenuse never changes.</p>
+  <h3 set:html={rich(G.sVisualizations.d2H3)} />
+  <p set:html={rich(G.sVisualizations.d2Intro)} />
   <div class="not-prose my-6" data-opp-adj-widget>
-    <div class="mb-3 flex gap-2" role="group" aria-label="Select angle">
-      <button type="button" class="interactive-chip is-active" data-angle-btn="A" aria-pressed="true">Angle A</button>
-      <button type="button" class="interactive-chip" data-angle-btn="B" aria-pressed="false">Angle B</button>
+    <div class="mb-3 flex gap-2" role="group" aria-label={rich(G.sVisualizations.d2H3)}>
+      <button type="button" class="interactive-chip is-active" data-angle-btn="A" aria-pressed="true" set:html={rich(G.sVisualizations.btnA)} />
+      <button type="button" class="interactive-chip" data-angle-btn="B" aria-pressed="false" set:html={rich(G.sVisualizations.btnB)} />
     </div>
     <div class="mx-auto w-full max-w-xl" data-opp-adj-svg set:html={inlineHubSvg('hub-opp-adj.svg')} />
-    <p class="mt-3 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-4 text-sm" data-opp-adj-text>
-      <strong>Angle A selected:</strong> opposite = <em>a</em> = 3, adjacent = <em>b</em> = 4, hypotenuse = <em>c</em> = 5.
-      sin(A) = 3/5, cos(A) = 4/5, tan(A) = 3/4.
-    </p>
-    <p class="mt-2 text-sm text-on-surface-variant">Text version: with angle A, the side across the triangle (a = 3) is opposite and the side forming the angle (b = 4) is adjacent. With angle B, they swap: b = 4 is opposite and a = 3 is adjacent. The hypotenuse c = 5 stays the hypotenuse in both views.</p>
+    <p class="mt-3 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-4 text-sm" data-opp-adj-text set:html={rich(G.sVisualizations.d2TextA)} />
+    <template data-text-a><span set:html={rich(G.sVisualizations.d2TextA)} /></template>
+    <template data-text-b><span set:html={rich(G.sVisualizations.d2TextB)} /></template>
+    <p class="mt-2 text-sm text-on-surface-variant" set:html={rich(G.sVisualizations.d2Fallback)} />
   </div>
 
-  <h3>Diagram 3: Altitude and Projections</h3>
+  <h3 set:html={rich(G.sVisualizations.d3H3)} />
   <figure class="not-prose my-6">
-    <img src="/images/hub/hub-altitude-projections.svg" alt="3-4-5 right triangle with altitude h = 2.4 from the right angle to the hypotenuse, splitting it into projections p = 1.8 and q = 3.2" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
-    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">The altitude <em>h</em> = 2.4 lands at <em>D</em>, creating projections <em>p</em> = 1.8 and <em>q</em> = 3.2 with <em>p</em> + <em>q</em> = 5 = <em>c</em>.</figcaption>
+    <img src={imgSrc('hub-altitude-projections.svg')} alt={rich(G.sVisualizations.d3Alt)} class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant" set:html={rich(G.sVisualizations.d3Caption)} />
   </figure>
-  <p>
-    The altitude divides the original triangle into two smaller triangles, and each of them is
-    <strong>similar</strong> to the original: all three share the same three angles (36.87°, 53.13°, 90°).
-    Similarity is why the projection formulas work, since corresponding sides of similar triangles stay in
-    proportion: <span class="math-textbook" set:html={tex('a^2 = c \\times p')} />,
-    <span class="math-textbook" set:html={tex('b^2 = c \\times q')} />, and
-    <span class="math-textbook" set:html={tex('h^2 = p \\times q')} />. Check: 1.8 + 3.2 = 5, and
-    2.4² = 5.76 = 1.8 × 3.2.
-  </p>
+  <p set:html={rich(G.sVisualizations.d3Note)} />
 
-  <h3>Diagram 4: Incircle and Circumcircle</h3>
-  <p>Toggle each circle to compare them. The incircle fits inside; the circumcircle passes through all three vertices.</p>
+  <h3 set:html={rich(G.sVisualizations.d4H3)} />
+  <p set:html={rich(G.sVisualizations.d4Intro)} />
   <div class="not-prose my-6" data-circles-widget>
     <div class="mb-3 flex flex-wrap gap-4 text-sm">
       <label class="inline-flex cursor-pointer items-center gap-2">
-        <input type="checkbox" class="h-4 w-4 accent-[#4ade80]" data-circle-toggle="in" checked /> Show incircle
+        <input type="checkbox" class="h-4 w-4 accent-[#4ade80]" data-circle-toggle="in" checked /> <span set:html={rich(G.sVisualizations.tglIn)} />
       </label>
       <label class="inline-flex cursor-pointer items-center gap-2">
-        <input type="checkbox" class="h-4 w-4 accent-[#38bdf8]" data-circle-toggle="circum" /> Show circumcircle
+        <input type="checkbox" class="h-4 w-4 accent-[#38bdf8]" data-circle-toggle="circum" /> <span set:html={rich(G.sVisualizations.tglCircum)} />
       </label>
     </div>
     <div class="mx-auto w-full max-w-xl" data-circles-svg set:html={inlineHubSvg('hub-circles.svg')} />
-    <p class="mt-2 text-sm text-on-surface-variant">Text version: the incircle (green) touches all three sides with center 1 unit from each side and radius r = (3 + 4 − 5) / 2 = 1. The circumcircle (blue) passes through A, B, and C with its center at the midpoint of the hypotenuse and radius R = 5 / 2 = 2.5, exactly half the hypotenuse.</p>
+    <p class="mt-2 text-sm text-on-surface-variant" set:html={rich(G.sVisualizations.d4Fallback)} />
   </div>
-  <p>
-    The two circles answer different questions. The <strong>incircle</strong> is the largest circle that fits
-    inside the triangle, useful in packing and clearance problems. The <strong>circumcircle</strong> is the
-    smallest circle containing the triangle; because the hypotenuse is its diameter, Thales' theorem guarantees
-    that any triangle inscribed in a semicircle with the diameter as one side is a right triangle.
-  </p>
+  <p set:html={rich(G.sVisualizations.d4Note)} />
 </section>
 
 <script is:inline>
@@ -334,6 +272,8 @@ const inlineHubSvg = (name: string) =>
       const svgHost = widget.querySelector('[data-opp-adj-svg]');
       const text = widget.querySelector('[data-opp-adj-text]');
       const buttons = Array.from(widget.querySelectorAll('[data-angle-btn]'));
+      const tplA = widget.querySelector('[data-text-a]');
+      const tplB = widget.querySelector('[data-text-b]');
       const setAngle = (angle) => {
         buttons.forEach((btn) => {
           const active = btn.getAttribute('data-angle-btn') === angle;
@@ -346,9 +286,8 @@ const inlineHubSvg = (name: string) =>
           });
         }
         if (text) {
-          text.innerHTML = angle === 'A'
-            ? '<strong>Angle A selected:</strong> opposite = <em>a</em> = 3, adjacent = <em>b</em> = 4, hypotenuse = <em>c</em> = 5. sin(A) = 3/5, cos(A) = 4/5, tan(A) = 3/4.'
-            : '<strong>Angle B selected:</strong> opposite = <em>b</em> = 4, adjacent = <em>a</em> = 3, hypotenuse = <em>c</em> = 5. sin(B) = 4/5, cos(B) = 3/5, tan(B) = 4/3.';
+          const tpl = angle === 'A' ? tplA : tplB;
+          if (tpl) text.innerHTML = tpl.innerHTML;
         }
       };
       buttons.forEach((btn) => {
@@ -376,280 +315,124 @@ const inlineHubSvg = (name: string) =>
 </script>
 
 <section id="hub-examples" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
-  <h2>Step-by-Step Worked Examples</h2>
-  <p>
-    Five complete solutions covering the input combinations the calculator accepts. Each example shows the
-    formula, the substitution, every intermediate step, and a geometric check. Use the
-    <strong>Try in Calculator</strong> button to load the example into the solver above and confirm the results.
-  </p>
-
-  <article class="not-prose my-6 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5">
-    <h3 class="text-lg font-semibold">Example 1: Find the Hypotenuse from Two Legs</h3>
-    <p class="mt-2 text-sm text-on-surface-variant"><strong>Given:</strong> <em>a</em> = 3 cm, <em>b</em> = 4 cm. <strong>Find:</strong> <em>c</em>, angles, and derived measurements.</p>
-    <img src="/images/hub/hub-ex1-345.svg" alt="3-4-5 right triangle with labeled sides and angles 36.87 and 53.13 degrees" class="mx-auto my-4 h-auto w-full max-w-sm" loading="lazy" />
-    <ol class="list-decimal space-y-1 pl-5 text-sm">
-      <li>Formula: <span class="math-textbook" set:html={tex('c = \\sqrt{a^2 + b^2}')} /></li>
-      <li>Substitution: <span class="math-textbook" set:html={tex('c = \\sqrt{3^2 + 4^2}')} /></li>
-      <li>Simplify: <span class="math-textbook" set:html={tex('c = \\sqrt{9 + 16} = \\sqrt{25}')} /></li>
-      <li>Answer: <strong><em>c</em> = 5 cm</strong></li>
-      <li>Angles: <span class="math-textbook" set:html={tex('A = \\arctan(3/4) \\approx 36.87^\\circ')} />, <span class="math-textbook" set:html={tex('B = 90^\\circ - 36.87^\\circ \\approx 53.13^\\circ')} /></li>
-      <li>Area = (3 × 4) / 2 = <strong>6 cm²</strong>; perimeter = 3 + 4 + 5 = <strong>12 cm</strong></li>
-      <li>Altitude <em>h</em> = (3 × 4) / 5 = <strong>2.4 cm</strong>; inradius <em>r</em> = (3 + 4 − 5) / 2 = <strong>1 cm</strong>; circumradius <em>R</em> = 5 / 2 = <strong>2.5 cm</strong></li>
-    </ol>
-    <p class="mt-3 text-sm text-on-surface-variant"><strong>Check:</strong> 3² + 4² = 9 + 16 = 25 = 5², and 36.87° + 53.13° = 90°. The hypotenuse 5 exceeds both legs.</p>
-    <button type="button" class="btn-secondary mt-3 text-sm" data-try-calc data-a="3" data-b="4">Try in Calculator: a = 3, b = 4</button>
-  </article>
-
-  <article class="not-prose my-6 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5">
-    <h3 class="text-lg font-semibold">Example 2: Find a Missing Leg</h3>
-    <p class="mt-2 text-sm text-on-surface-variant"><strong>Given:</strong> <em>c</em> = 13 cm, <em>b</em> = 12 cm. <strong>Find:</strong> <em>a</em> and the remaining measurements.</p>
-    <img src="/images/hub/hub-ex2-51213.svg" alt="5-12-13 right triangle with hypotenuse 13 and leg 12 labeled" class="mx-auto my-4 h-auto w-full max-w-sm" loading="lazy" />
-    <ol class="list-decimal space-y-1 pl-5 text-sm">
-      <li>Formula: <span class="math-textbook" set:html={tex('a = \\sqrt{c^2 - b^2}')} /></li>
-      <li>Substitution: <span class="math-textbook" set:html={tex('a = \\sqrt{13^2 - 12^2}')} /></li>
-      <li>Simplify: <span class="math-textbook" set:html={tex('a = \\sqrt{169 - 144} = \\sqrt{25}')} /></li>
-      <li>Answer: <strong><em>a</em> = 5 cm</strong></li>
-      <li>Angles: <span class="math-textbook" set:html={tex('A = \\arcsin(5/13) \\approx 22.62^\\circ')} />, <span class="math-textbook" set:html={tex('B \\approx 67.38^\\circ')} /></li>
-      <li>Area = (5 × 12) / 2 = <strong>30 cm²</strong>; perimeter = 5 + 12 + 13 = <strong>30 cm</strong></li>
-    </ol>
-    <p class="mt-3 text-sm text-on-surface-variant"><strong>Why the hypotenuse must be longest:</strong> the subtraction 169 − 144 only works because 13 &gt; 12. If the known leg exceeded the supposed hypotenuse, the value under the root would be negative and no real triangle could exist.</p>
-    <button type="button" class="btn-secondary mt-3 text-sm" data-try-calc data-c="13" data-b="12">Try in Calculator: c = 13, b = 12</button>
-  </article>
-
-  <article class="not-prose my-6 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5">
-    <h3 class="text-lg font-semibold">Example 3: Solve Using an Angle and the Hypotenuse</h3>
-    <p class="mt-2 text-sm text-on-surface-variant"><strong>Given:</strong> <em>c</em> = 10 cm, <em>A</em> = 30°. <strong>Find:</strong> <em>a</em>, <em>b</em>, <em>B</em>.</p>
-    <img src="/images/hub/hub-ex3-1030.svg" alt="Right triangle with hypotenuse 10, angle A 30 degrees, angle B 60 degrees" class="mx-auto my-4 h-auto w-full max-w-sm" loading="lazy" />
-    <ol class="list-decimal space-y-1 pl-5 text-sm">
-      <li>Opposite leg uses sine: <span class="math-textbook" set:html={tex('a = c \\times \\sin(A) = 10 \\times \\sin(30^\\circ) = 10 \\times 0.5')} /> → <strong><em>a</em> = 5 cm</strong></li>
-      <li>Adjacent leg uses cosine: <span class="math-textbook" set:html={tex('b = c \\times \\cos(A) = 10 \\times \\cos(30^\\circ) \\approx 10 \\times 0.86603')} /> → <strong><em>b</em> ≈ 8.6603 cm</strong></li>
-      <li>Remaining angle: <span class="math-textbook" set:html={tex('B = 90^\\circ - 30^\\circ = 60^\\circ')} /></li>
-      <li>Area = (5 × 8.6603) / 2 ≈ <strong>21.6506 cm²</strong></li>
-    </ol>
-    <p class="mt-3 text-sm text-on-surface-variant"><strong>Why sine for <em>a</em>?</strong> Sine is defined as opposite over hypotenuse, and <em>a</em> is opposite angle <em>A</em>, so sin(30°) = <em>a</em>/10 directly isolates <em>a</em>. Cosine is adjacent over hypotenuse, matching <em>b</em>. Choosing the ratio whose numerator is the wanted side avoids extra algebra.</p>
-    <button type="button" class="btn-secondary mt-3 text-sm" data-try-calc data-c="10" data-A="30">Try in Calculator: c = 10, A = 30°</button>
-  </article>
-
-  <article class="not-prose my-6 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5">
-    <h3 class="text-lg font-semibold">Example 4: Find an Angle from Two Legs</h3>
-    <p class="mt-2 text-sm text-on-surface-variant"><strong>Given:</strong> <em>a</em> = 8 m, <em>b</em> = 15 m. <strong>Find:</strong> <em>A</em>, <em>B</em>, <em>c</em>.</p>
-    <img src="/images/hub/hub-ex4-81517.svg" alt="8-15-17 right triangle with legs 8 and 15 meters" class="mx-auto my-4 h-auto w-full max-w-sm" loading="lazy" />
-    <ol class="list-decimal space-y-1 pl-5 text-sm">
-      <li>Formula: <span class="math-textbook" set:html={tex('\\tan(A) = \\frac{a}{b} = \\frac{8}{15}')} /></li>
-      <li>Inverse tangent: <span class="math-textbook" set:html={tex('A = \\arctan(8/15) \\approx 28.07^\\circ')} /></li>
-      <li>Complement: <span class="math-textbook" set:html={tex('B = 90^\\circ - 28.07^\\circ \\approx 61.93^\\circ')} /></li>
-      <li>Hypotenuse: <span class="math-textbook" set:html={tex('c = \\sqrt{8^2 + 15^2} = \\sqrt{64 + 225} = \\sqrt{289} = 17')} /> m</li>
-    </ol>
-    <p class="mt-3 text-sm text-on-surface-variant"><strong>About arctan:</strong> tangent maps an angle to a ratio; arctan reverses the mapping, turning the ratio 8/15 back into the angle 28.07°. It is the right inverse when you know both legs, because tan(A) = opposite/adjacent uses exactly those two sides.</p>
-    <button type="button" class="btn-secondary mt-3 text-sm" data-try-calc data-a="8" data-b="15">Try in Calculator: a = 8, b = 15</button>
-  </article>
-
-  <article class="not-prose my-6 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5">
-    <h3 class="text-lg font-semibold">Example 5: Find Missing Sides from Area and One Leg</h3>
-    <p class="mt-2 text-sm text-on-surface-variant"><strong>Given:</strong> area <em>K</em> = 24 cm², leg <em>a</em> = 6 cm. <strong>Find:</strong> <em>b</em>, <em>c</em>. (Manual calculation: this solver accepts side and angle inputs, so area-first problems start here and finish in the <a href="/right-triangle-area-calculator/">Area Calculator</a>.)</p>
-    <img src="/images/hub/hub-ex5-6810.svg" alt="6-8-10 right triangle derived from area 24 and leg 6" class="mx-auto my-4 h-auto w-full max-w-sm" loading="lazy" />
-    <ol class="list-decimal space-y-1 pl-5 text-sm">
-      <li>Area formula: <span class="math-textbook" set:html={tex('K = \\frac{a \\times b}{2}')} /></li>
-      <li>Solve for <em>b</em>: <span class="math-textbook" set:html={tex('b = \\frac{2K}{a} = \\frac{48}{6} = 8')} /> cm</li>
-      <li>Hypotenuse: <span class="math-textbook" set:html={tex('c = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10')} /> cm</li>
-    </ol>
-    <p class="mt-3 text-sm text-on-surface-variant"><strong>The idea:</strong> area ties the two legs together in one equation, so knowing the area and one leg determines the other leg. Once both legs are known, the problem reduces to Example 1.</p>
-    <a href="/right-triangle-area-calculator/" class="btn-secondary mt-3 inline-block text-sm">Open the Area Calculator</a>
-  </article>
+  <h2 set:html={rich(G.sExamples.h2)} />
+  <p set:html={rich(G.sExamples.intro)} />
+  {(G.sExamples.examples ?? []).map((ex: any, i: number) => (
+    <article class="not-prose my-6 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5">
+      <h3 class="text-lg font-semibold" set:html={rich(ex.title)} />
+      <p class="mt-2 text-sm text-on-surface-variant" set:html={rich(ex.given)} />
+      <img src={imgSrc(['hub-ex1-345.svg','hub-ex2-51213.svg','hub-ex3-1030.svg','hub-ex4-81517.svg','hub-ex5-6810.svg'][i])} alt={rich(ex.alt)} class="mx-auto my-4 h-auto w-full max-w-sm" loading="lazy" />
+      <ol class="list-decimal space-y-1 pl-5 text-sm">
+        {(ex.steps ?? []).map((s: string) => <li set:html={rich(s)} />)}
+      </ol>
+      <p class="mt-3 text-sm text-on-surface-variant" set:html={rich(ex.check)} />
+      {ex.inputs ? (
+        <button type="button" class="btn-secondary mt-3 text-sm" data-try-calc {...inputAttrs(ex.inputs)}>
+          {rich(G.sExamples.tryLabel)}: {ex.tryValues}
+        </button>
+      ) : (
+        <a href={localizePath(locale, '/right-triangle-area-calculator/')} class="btn-secondary mt-3 inline-block text-sm" set:html={rich(ex.areaLink)} />
+      )}
+    </article>
+  ))}
 </section>
 
 <section id="hub-real-world" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
-  <h2>Real-World Applications of Right Triangle Calculations</h2>
-  <p>Five scenarios where the same triangle mathematics solves a concrete problem. Each states its simplifying assumptions honestly.</p>
-
-  <article class="not-prose my-6 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5">
-    <h3 class="text-lg font-semibold">Ladder Against a Wall</h3>
-    <p class="mt-2 text-sm text-on-surface-variant">A 5 m ladder leans against a vertical wall with its base 3 m from the wall. How high does it reach?</p>
-    <img src="/images/hub/hub-prac1-ladder.svg" alt="Ladder of 5 meters leaning against a wall, base 3 meters out, reaching 4 meters high" class="mx-auto my-4 h-auto w-full max-w-md" loading="lazy" />
-    <ol class="list-decimal space-y-1 pl-5 text-sm">
-      <li>The wall, ground, and ladder form a right triangle with hypotenuse 5 m and one leg 3 m.</li>
-      <li><span class="math-textbook" set:html={tex('h = \\sqrt{5^2 - 3^2} = \\sqrt{25 - 9} = \\sqrt{16}')} /></li>
-      <li><strong>Answer: 4 m.</strong> The ladder reaches 4 meters up the wall.</li>
-    </ol>
-    <p class="mt-3 text-sm text-on-surface-variant"><strong>Assumptions:</strong> perfectly vertical wall and level ground. This is a geometry calculation, not a ladder-safety recommendation.</p>
-  </article>
-
-  <article class="not-prose my-6 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5">
-    <h3 class="text-lg font-semibold">Wheelchair Ramp Geometry</h3>
-    <p class="mt-2 text-sm text-on-surface-variant">A ramp rises 0.75 m over a horizontal run of 6 m. Find the ramp length, incline angle, and slope.</p>
-    <img src="/images/hub/hub-prac2-ramp.svg" alt="Side view of a ramp with 0.75 meter rise and 6 meter run, incline angle 7.13 degrees" class="mx-auto my-4 h-auto w-full max-w-md" loading="lazy" />
-    <ol class="list-decimal space-y-1 pl-5 text-sm">
-      <li>Ramp length: <span class="math-textbook" set:html={tex('L = \\sqrt{6^2 + 0.75^2} = \\sqrt{36.5625} \\approx 6.047')} /> m</li>
-      <li>Incline angle: <span class="math-textbook" set:html={tex('\\theta = \\arctan(0.75/6) = \\arctan(0.125) \\approx 7.13^\\circ')} /></li>
-      <li>Slope: 0.75 / 6 = 0.125 = <strong>12.5%</strong></li>
-    </ol>
-    <p class="mt-3 text-sm text-on-surface-variant"><strong>Assumptions:</strong> straight ramp with constant slope. This is a mathematical example only, not a determination of building-code or accessibility compliance.</p>
-  </article>
-
-  <article class="not-prose my-6 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5">
-    <h3 class="text-lg font-semibold">Roof Pitch and Rafter Length</h3>
-    <p class="mt-2 text-sm text-on-surface-variant">A roof has a 6:12 pitch (6 ft of rise per 12 ft of run). For a 12 ft horizontal run, find the rafter length and roof angle.</p>
-    <img src="/images/hub/hub-prac3-roof.svg" alt="Roof cross-section with 6 foot rise, 12 foot run, rafter 13.42 feet, angle 26.57 degrees" class="mx-auto my-4 h-auto w-full max-w-md" loading="lazy" />
-    <ol class="list-decimal space-y-1 pl-5 text-sm">
-      <li>Rise = 6 ft for the 12 ft run (the 6:12 ratio).</li>
-      <li>Rafter: <span class="math-textbook" set:html={tex('R = \\sqrt{12^2 + 6^2} = \\sqrt{180} \\approx 13.42')} /> ft</li>
-      <li>Roof angle: <span class="math-textbook" set:html={tex('\\theta = \\arctan(6/12) = \\arctan(0.5) \\approx 26.57^\\circ')} /></li>
-    </ol>
-    <p class="mt-3 text-sm text-on-surface-variant"><strong>Assumptions:</strong> overhangs, ridge connections, and construction allowances are excluded; the rafter is the straight-line hypotenuse of the pitch triangle.</p>
-  </article>
-
-  <article class="not-prose my-6 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5">
-    <h3 class="text-lg font-semibold">Diagonal of a Rectangular Room</h3>
-    <p class="mt-2 text-sm text-on-surface-variant">A room measures 8 m by 15 m. What is the diagonal distance between opposite corners?</p>
-    <img src="/images/hub/hub-prac4-room.svg" alt="Top-down view of an 8 by 15 meter room with a 17 meter diagonal" class="mx-auto my-4 h-auto w-full max-w-md" loading="lazy" />
-    <ol class="list-decimal space-y-1 pl-5 text-sm">
-      <li>A rectangle's diagonal splits it into two congruent right triangles with legs 8 m and 15 m.</li>
-      <li><span class="math-textbook" set:html={tex('d = \\sqrt{8^2 + 15^2} = \\sqrt{64 + 225} = \\sqrt{289}')} /></li>
-      <li><strong>Answer: 17 m.</strong> Recognizing the 8-15-17 triple gives the answer without a calculator.</li>
-    </ol>
-    <p class="mt-3 text-sm text-on-surface-variant"><strong>Assumptions:</strong> the room is a true rectangle with square corners.</p>
-  </article>
-
-  <article class="not-prose my-6 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5">
-    <h3 class="text-lg font-semibold">The 3-4-5 Squaring Method</h3>
-    <p class="mt-2 text-sm text-on-surface-variant">Builders check a corner for squareness by measuring 3 units along one side, 4 along the other, and confirming the diagonal is 5 units.</p>
-    <img src="/images/hub/hub-prac5-squaring.svg" alt="3-4-5 triangle and scaled 6-8-10 triangle used to check square corners on a construction site" class="mx-auto my-4 h-auto w-full max-w-md" loading="lazy" />
-    <ol class="list-decimal space-y-1 pl-5 text-sm">
-      <li>Check: <span class="math-textbook" set:html={tex('3^2 + 4^2 = 9 + 16 = 25 = 5^2')} />. The converse of the Pythagorean theorem says a triangle satisfying this equation must contain a right angle.</li>
-      <li>Scaling up keeps the angle: <span class="math-textbook" set:html={tex('6^2 + 8^2 = 36 + 64 = 100 = 10^2')} />, so a 6-8-10 triangle is also exactly square.</li>
-      <li>Any consistent scale works (9-12-15, 30-40-50) because multiplying all sides by the same factor preserves the <span class="math-textbook" set:html={tex('a^2+b^2=c^2')} /> relationship.</li>
-    </ol>
-    <p class="mt-3 text-sm text-on-surface-variant"><strong>Assumptions:</strong> measurements are taken carefully in matching units. This field check does not replace professional surveying for structural work.</p>
-  </article>
+  <h2 set:html={rich(G.sRealWorld.h2)} />
+  <p set:html={rich(G.sRealWorld.intro)} />
+  {(G.sRealWorld.articles ?? []).map((a: any, i: number) => (
+    <article class="not-prose my-6 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5">
+      <h3 class="text-lg font-semibold" set:html={rich(a.title)} />
+      <p class="mt-2 text-sm text-on-surface-variant" set:html={rich(a.desc)} />
+      <img src={imgSrc(['hub-prac1-ladder.svg','hub-prac2-ramp.svg','hub-prac3-roof.svg','hub-prac4-room.svg','hub-prac5-squaring.svg'][i])} alt={rich(a.alt)} class="mx-auto my-4 h-auto w-full max-w-md" loading="lazy" />
+      <ol class="list-decimal space-y-1 pl-5 text-sm">
+        {(a.steps ?? []).map((s: string) => <li set:html={rich(s)} />)}
+      </ol>
+      <p class="mt-3 text-sm text-on-surface-variant" set:html={rich(a.assumptions)} />
+    </article>
+  ))}
 </section>
 
 <section id="hub-special" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
-  <h2>Special Right Triangles and Their Ratios</h2>
-  <p>Two triangles appear so often that their side ratios are worth memorizing. Both follow directly from the Pythagorean theorem.</p>
-
-  <h3>45°–45°–90° Triangle</h3>
+  <h2 set:html={rich(G.sSpecial.h2)} />
+  <p set:html={rich(G.sSpecial.intro)} />
+  <h3 set:html={rich(G.sSpecial.h345)} />
   <div class="not-prose my-4 grid gap-4 sm:grid-cols-2 sm:items-center">
-    <img src="/images/hub/hub-special-454590.svg" alt="45-45-90 triangle with equal legs of 7 cm and hypotenuse 7 root 2" class="h-auto w-full" loading="lazy" />
+    <img src={imgSrc('hub-special-454590.svg')} alt={rich(G.sSpecial.p45alt)} class="h-auto w-full" loading="lazy" />
     <div>
-      <p class="text-sm">The two legs are equal and both acute angles are 45°, giving the side ratio <span class="math-textbook" set:html={tex('1 : 1 : \\sqrt{2}')} />. If each leg is 7 cm, the hypotenuse is <span class="math-textbook" set:html={tex('7\\sqrt{2} \\approx 9.90')} /> cm.</p>
-      <p class="mt-2 text-sm text-on-surface-variant">Cut any square along its diagonal and you get two of these triangles, which is why the ratio appears in paper sizes, screen diagonals, and miter cuts.</p>
+      <p class="text-sm" set:html={rich(G.sSpecial.p45a)} />
+      <p class="mt-2 text-sm text-on-surface-variant" set:html={rich(G.sSpecial.p45b)} />
     </div>
   </div>
-
-  <h3>30°–60°–90° Triangle</h3>
+  <h3 set:html={rich(G.sSpecial.h3060)} />
   <div class="not-prose my-4 grid gap-4 sm:grid-cols-2 sm:items-center">
-    <img src="/images/hub/hub-special-306090.svg" alt="30-60-90 triangle with sides 5, 5 root 3, and 10" class="h-auto w-full" loading="lazy" />
+    <img src={imgSrc('hub-special-306090.svg')} alt={rich(G.sSpecial.p3060alt)} class="h-auto w-full" loading="lazy" />
     <div>
-      <p class="text-sm">The side ratio is <span class="math-textbook" set:html={tex('1 : \\sqrt{3} : 2')} />: the shortest side (opposite 30°) is half the hypotenuse, and the longer leg is <span class="math-textbook" set:html={tex('\\sqrt{3}')} /> times the shortest. With short leg 5 cm: long leg = <span class="math-textbook" set:html={tex('5\\sqrt{3} \\approx 8.66')} /> cm, hypotenuse = 10 cm.</p>
-      <p class="mt-2 text-sm text-on-surface-variant">This triangle is half of an equilateral triangle, which is why the 1:2 relationship between the short leg and hypotenuse is exact.</p>
+      <p class="text-sm" set:html={rich(G.sSpecial.p3060a)} />
+      <p class="mt-2 text-sm text-on-surface-variant" set:html={rich(G.sSpecial.p3060b)} />
     </div>
   </div>
-  <p>For deeper calculation with these triangles, use the <a href="/special-right-triangle-calculator/">Special Right Triangle Calculator</a>.</p>
+  <p set:html={rich(G.sSpecial.close)} />
 </section>
 
 <section id="hub-triples" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
-  <h2>Common Pythagorean Triples</h2>
-  <p>
-    A Pythagorean triple is a set of three positive integers satisfying <span class="math-textbook" set:html={tex('a^2 + b^2 = c^2')} />.
-    Triples marked as scaled are multiples of a smaller primitive triple (for example, 6-8-10 is 2 × 3-4-5).
-  </p>
+  <h2 set:html={rich(G.sTriples.h2)} />
+  <p set:html={rich(G.sTriples.intro)} />
   <div class="not-prose overflow-x-auto">
     <table class="w-full min-w-[420px] border-collapse text-sm">
       <thead>
         <tr class="border-b border-outline-variant/30 text-left">
-          <th class="py-2 pr-4 font-semibold">Leg <em>a</em></th>
-          <th class="py-2 pr-4 font-semibold">Leg <em>b</em></th>
-          <th class="py-2 pr-4 font-semibold">Hypotenuse <em>c</em></th>
-          <th class="py-2 font-semibold">Check</th>
+          {(G.sTriples.head ?? []).map((h: string) => <th class="py-2 pr-4 font-semibold" set:html={rich(h)} />)}
         </tr>
       </thead>
       <tbody>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">3</td><td class="py-2 pr-4">4</td><td class="py-2 pr-4">5</td><td class="py-2 math-textbook" set:html={tex('9+16=25')} /></td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">5</td><td class="py-2 pr-4">12</td><td class="py-2 pr-4">13</td><td class="py-2 math-textbook" set:html={tex('25+144=169')} /></td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">6</td><td class="py-2 pr-4">8</td><td class="py-2 pr-4">10</td><td class="py-2 text-on-surface-variant">scaled 3-4-5</td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">7</td><td class="py-2 pr-4">24</td><td class="py-2 pr-4">25</td><td class="py-2 math-textbook" set:html={tex('49+576=625')} /></td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">8</td><td class="py-2 pr-4">15</td><td class="py-2 pr-4">17</td><td class="py-2 math-textbook" set:html={tex('64+225=289')} /></td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">9</td><td class="py-2 pr-4">12</td><td class="py-2 pr-4">15</td><td class="py-2 text-on-surface-variant">scaled 3-4-5</td></tr>
-        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">9</td><td class="py-2 pr-4">40</td><td class="py-2 pr-4">41</td><td class="py-2 math-textbook" set:html={tex('81+1600=1681')} /></td></tr>
-        <tr><td class="py-2 pr-4">12</td><td class="py-2 pr-4">35</td><td class="py-2 pr-4">37</td><td class="py-2 math-textbook" set:html={tex('144+1225=1369')} /></td></tr>
+        {(G.sTriples.rows ?? []).map((row: string[]) => (
+          <tr class="border-b border-outline-variant/15 last:border-0">
+            <td class="py-2 pr-4" set:html={rich(row[0])} />
+            <td class="py-2 pr-4" set:html={rich(row[1])} />
+            <td class="py-2 pr-4" set:html={rich(row[2])} />
+            <td class="py-2" set:html={rich(row[3])} />
+          </tr>
+        ))}
       </tbody>
     </table>
   </div>
-  <p>Spotting a triple in your measurements gives an exact answer with no square roots. Generate and explore more in the <a href="/pythagorean-triples-calculator/">Pythagorean Triples Calculator</a>.</p>
+  <p set:html={rich(G.sTriples.close)} />
 </section>
 
 <section id="hub-mistakes" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
-  <h2>Common Right Triangle Calculation Mistakes</h2>
+  <h2 set:html={rich(G.sMistakes.h2)} />
   <ol>
-    <li><strong>Treating a leg as the hypotenuse.</strong> The hypotenuse is the side opposite the right angle, the only side that touches neither endpoint of the right-angle marker. In the 3-4-5 triangle, 5 is the hypotenuse; computing <span class="math-textbook" set:html={tex('\\sqrt{5^2 + 4^2}')} /> instead of <span class="math-textbook" set:html={tex('\\sqrt{5^2 - 4^2}')} /> answers a different question.</li>
-    <li><strong>Using the wrong trigonometric ratio.</strong> With angle <em>A</em> = 30° and hypotenuse 10, the side opposite <em>A</em> needs sine (<em>a</em> = 10 sin 30° = 5). Using cosine by mistake computes the adjacent leg instead (8.66). Always name the wanted side as opposite or adjacent <em>relative to your angle</em> before choosing.</li>
-    <li><strong>Incorrect square-root grouping.</strong> <span class="math-textbook" set:html={tex('c = \\sqrt{a^2 + b^2}')} /> adds first, then takes the root: √(9 + 16) = 5. The misreading √a² + b² takes the root of <em>a</em>² alone: 3 + 16 = 19, which is wrong. Parentheses under the radical are not optional.</li>
-    <li><strong>Entering inconsistent measurements.</strong> <em>c</em> = 5 with <em>a</em> = 6 contradicts the hypotenuse-longest rule, and <em>A</em> = 40° with <em>B</em> = 60° contradicts <em>A</em> + <em>B</em> = 90°. The calculator rejects these; fix the value that was measured or copied incorrectly.</li>
-    <li><strong>Mixing degrees and radians.</strong> This calculator works in degrees. Entering 0.524 (radians for 30°) where 30 was meant shrinks every trig result. Convert first: degrees = radians × 180/π.</li>
-    <li><strong>Rounding too early.</strong> Computing with <em>b</em> ≈ 8.66 instead of 8.660254 and then squaring compounds the error: 8.66² = 74.9956 versus the true 75. Keep full precision through intermediate steps and round only the final display.</li>
-    <li><strong>Mixing length units.</strong> A leg of 3 meters with a hypotenuse of 500 centimeters is really 3 m and 5 m, a valid 3-4-5 triangle. Entered as 3 and 500 in one unit, the same inputs look impossible. Convert to one unit before calculating.</li>
+    {(G.sMistakes.items ?? []).map((m: string) => <li set:html={rich(m)} />)}
   </ol>
 </section>
 
 <section id="hub-verify" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
-  <h2>How to Verify a Right Triangle Solution</h2>
-  <p>Run these eight checks on any solved triangle. The first six are geometric identities; the last two are sanity checks on units and signs.</p>
+  <h2 set:html={rich(G.sVerify.h2)} />
+  <p set:html={rich(G.sVerify.intro)} />
   <ol>
-    <li><strong>Pythagoras:</strong> <span class="math-textbook" set:html={tex('a^2 + b^2')} /> equals <span class="math-textbook" set:html={tex('c^2')} /> within rounding tolerance (for example, agree to at least 4 decimal places).</li>
-    <li><strong>Angle sum:</strong> <em>A</em> + <em>B</em> = 90° before display rounding is applied.</li>
-    <li><strong>Longest side:</strong> <em>c</em> &gt; <em>a</em> and <em>c</em> &gt; <em>b</em>, strictly.</li>
-    <li><strong>Area consistency:</strong> <span class="math-textbook" set:html={tex('K = a \\times b / 2')} /> matches the reported area.</li>
-    <li><strong>Altitude consistency:</strong> <span class="math-textbook" set:html={tex('h \\times c / 2')} /> gives the same area, since the altitude and hypotenuse are another base-height pair.</li>
-    <li><strong>Projection sum:</strong> <em>p</em> + <em>q</em> = <em>c</em> exactly (up to rounding).</li>
-    <li><strong>Radii positive:</strong> <em>r</em> &gt; 0 and <em>R</em> &gt; 0, with <em>R</em> = <em>c</em>/2.</li>
-    <li><strong>Correct dimensions:</strong> sides, altitude, projections, and radii are lengths; area is length²; angles are in degrees.</li>
+    {(G.sVerify.items ?? []).map((v: string) => <li set:html={rich(v)} />)}
   </ol>
-  <p class="text-sm text-on-surface-variant">
-    <strong>How calculations are performed:</strong> the solver uses double-precision floating-point arithmetic
-    (about 15–16 significant decimal digits). Trigonometric functions take angles in degrees and convert
-    internally. Displayed values are rounded for readability, but every check above should be evaluated on the
-    unrounded values, where agreement holds to roughly 10 decimal places.
-  </p>
+  <p class="text-sm text-on-surface-variant" set:html={rich(G.sVerify.note)} />
 </section>
 
 <section id="hub-related" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
-  <h2>Explore Related Right Triangle Calculators</h2>
-  <p>This solver handles the complete triangle. For focused single-task calculations, these specialized pages go deeper:</p>
+  <h2 set:html={rich(G.sRelated.h2)} />
+  <p set:html={rich(G.sRelated.intro)} />
   <div class="not-prose grid gap-4 sm:grid-cols-2">
-    <div class="rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-4">
-      <h3 class="text-base font-semibold">Sides and Hypotenuse</h3>
-      <ul class="mt-2 space-y-1 text-sm">
-        <li><a href="/right-triangle-side-calculator/" class="hover:text-primary hover:underline">Right Triangle Side Calculator</a></li>
-        <li><a href="/right-triangle-side-from-angle-calculator/" class="hover:text-primary hover:underline">Side Calculator Using Angle</a></li>
-      </ul>
-    </div>
-    <div class="rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-4">
-      <h3 class="text-base font-semibold">Angles and Trigonometry</h3>
-      <ul class="mt-2 space-y-1 text-sm">
-        <li><a href="/right-triangle-angle-calculator/" class="hover:text-primary hover:underline">Right Triangle Angle Calculator</a></li>
-        <li><a href="/right-triangle-trig-ratios-calculator/" class="hover:text-primary hover:underline">Trigonometric Ratios Calculator</a></li>
-      </ul>
-    </div>
-    <div class="rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-4">
-      <h3 class="text-base font-semibold">Measurements and Geometry</h3>
-      <ul class="mt-2 space-y-1 text-sm">
-        <li><a href="/right-triangle-area-calculator/" class="hover:text-primary hover:underline">Right Triangle Area Calculator</a></li>
-        <li><a href="/right-triangle-measurements-calculator/" class="hover:text-primary hover:underline">Perimeter and Semiperimeter Calculator</a></li>
-        <li><a href="/right-triangle-altitude-calculator/" class="hover:text-primary hover:underline">Height (Altitude) Calculator</a></li>
-        <li><a href="/right-triangle-projection-calculator/" class="hover:text-primary hover:underline">Projection and Segment Calculator</a></li>
-        <li><a href="/right-triangle-radius-calculator/" class="hover:text-primary hover:underline">Inradius and Circumradius Calculator</a></li>
-      </ul>
-    </div>
-    <div class="rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-4">
-      <h3 class="text-base font-semibold">Special Triangles</h3>
-      <ul class="mt-2 space-y-1 text-sm">
-        <li><a href="/special-right-triangle-calculator/" class="hover:text-primary hover:underline">Special Right Triangle Calculator</a></li>
-        <li><a href="/pythagorean-triples-calculator/" class="hover:text-primary hover:underline">Pythagorean Triples Calculator</a></li>
-      </ul>
-    </div>
+    {(G.sRelated.groups ?? []).map((gr: any) => (
+      <div class="rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-4">
+        <h3 class="text-base font-semibold" set:html={rich(gr.title)} />
+        <ul class="mt-2 space-y-1 text-sm">
+          {(gr.links ?? []).map((ph: string) => (
+            <li><a href={relLink(ph).href} class="hover:text-primary hover:underline" set:html={rich(relLink(ph).label)} /></li>
+          ))}
+        </ul>
+      </div>
+    ))}
   </div>
 </section>
 
 <div class="mx-auto mt-8 w-full max-w-4xl">
-  <Faq heading="Frequently Asked Questions" items={HUB_GUIDE_FAQS} description="Answers to the most common right-triangle solving questions, from valid inputs to checking your answer." />
+  <Faq heading={rich(G.faqHeading)} items={faqItems} description={rich(G.faqDescription)} />
 </div>

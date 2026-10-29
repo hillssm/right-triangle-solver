@@ -14,7 +14,6 @@ import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import HubGuide from 'theme/components/HubGuide.astro';
-import { HUB_GUIDE_FAQS } from 'src/data/rightTriangleHubGuide';
 import { toAbsoluteUrl } from 'theme/utils/site';
 import { replaceGenericSeoHeading, seoSectionHeading } from 'theme/utils/seoHeadings';
 import { formatListItem } from 'src/utils/formatList';
@@ -147,6 +146,35 @@ const localizedGroupedPages = RIGHT_TRIANGLE_GROUPED_PAGES.map((page) => ({
   copy: localizeGroupedPage(page)
 }));
 
+const hubGuide = (groupedHub.guide as any) || {};
+
+// Placeholder -> localized calculator name map for the hub guide.
+const guideCalcName = (slug: string, fallback: string) =>
+  localizedGroupedPages.find((p) => p.base.slug === slug)?.copy.h1 || fallback;
+const hubGuideNames: Record<string, string> = {
+  __SIDE_CALC__: guideCalcName('right-triangle-side-calculator', 'Right Triangle Side Calculator'),
+  __SIDEANGLE_CALC__: guideCalcName('right-triangle-side-from-angle-calculator', 'Right Triangle Side Calculator Using Angle'),
+  __ANGLE_CALC__: guideCalcName('right-triangle-angle-calculator', 'Right Triangle Angle Calculator'),
+  __TRIG_CALC__: guideCalcName('right-triangle-trig-ratios-calculator', 'Trigonometric Ratios Calculator'),
+  __AREA_CALC__: guideCalcName('right-triangle-area-calculator', 'Right Triangle Area Calculator'),
+  __MEAS_CALC__: guideCalcName('right-triangle-measurements-calculator', 'Right Triangle Perimeter and Semiperimeter Calculator'),
+  __ALT_CALC__: guideCalcName('right-triangle-altitude-calculator', 'Right Triangle Height (Altitude) Calculator'),
+  __PROJ_CALC__: guideCalcName('right-triangle-projection-calculator', 'Right Triangle Projection and Segment Calculator'),
+  __RAD_CALC__: guideCalcName('right-triangle-radius-calculator', 'Right Triangle Inradius and Circumradius Calculator'),
+  __SPECIAL_CALC__: guideCalcName('special-right-triangle-calculator', 'Special Right Triangle Calculator'),
+  __TRIPLES_CALC__: (hubGuide as any).triplesCalc || 'Pythagorean Triples Calculator',
+  __SCALED__: (hubGuide as any).sTriples?.scaled || 'scaled 3-4-5',
+  __SIDE_SHORT__: (hubGuide as any).shortLabels?.side || 'Side',
+  __SIDEANGLE_SHORT__: (hubGuide as any).shortLabels?.sideAngle || 'Side from Angle',
+  __ANGLE_SHORT__: (hubGuide as any).shortLabels?.angle || 'Angle',
+  __TRIG_SHORT__: (hubGuide as any).shortLabels?.trig || 'Trig Ratios',
+  __AREA_SHORT__: (hubGuide as any).shortLabels?.area || 'Area',
+  __MEAS_SHORT__: (hubGuide as any).shortLabels?.meas || 'Measurements',
+  __ALT_SHORT__: (hubGuide as any).shortLabels?.alt || 'Altitude',
+  __PROJ_SHORT__: (hubGuide as any).shortLabels?.proj || 'Projection',
+  __RAD_SHORT__: (hubGuide as any).shortLabels?.rad || 'Radius'
+};
+
 const activePage = isHubPage
   ? {
       h1: localizedHub.h1,
@@ -168,12 +196,13 @@ const canonicalPath = localizePath(locale, isHubPage ? RIGHT_TRIANGLE_CALCULATOR
 const hubSeoTitle = 'Right Triangle Calculator \u2013 Sides, Angles & Steps';
 const hubSeoDescription =
   'Calculate right triangle sides, angles, area, and perimeter. Enter two valid measurements, view interactive diagrams, and explore step-by-step solutions.';
-const pageTitle =
-  isHubPage && locale === DEFAULT_LOCALE
-    ? `${hubSeoTitle} | Right Triangle Solver`
-    : `${activePage.h1} | Right Triangle Solver`;
-const pageDescription =
-  isHubPage && locale === DEFAULT_LOCALE ? hubSeoDescription : activePage.intent;
+const hubGuideMeta = (hubGuide.meta as any) || {};
+const pageTitle = isHubPage
+  ? `${hubGuideMeta.title || hubSeoTitle} | Right Triangle Solver`
+  : `${activePage.h1} | Right Triangle Solver`;
+const pageDescription = isHubPage
+  ? hubGuideMeta.description || hubSeoDescription
+  : activePage.intent;
 
 const formulas = groupedPage
   ? getGroupedPageFormulas(groupedPage).map((formula) => {
@@ -405,17 +434,31 @@ const groupedPageFaqSchema = groupedPage && groupedPageFaqItems.length > 0
     }
   : null;
 
+const applyHubGuideNames = (s: string): string => {
+  let out = s || '';
+  for (const [k, v] of Object.entries(hubGuideNames)) out = out.split(k).join(v);
+  return out;
+};
+const schemaPlainText = (s: string): string =>
+  applyHubGuideNames(s)
+    .replace(/\[\[\[(.+?)\]\]\]/g, '$1')
+    .replace(/\[\[(.+?)\]\]/g, '$1')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+const hubGuideFaqs = Array.isArray((hubGuide as any).faqs) ? (hubGuide as any).faqs : [];
 const hubFaqSchema =
-  isHubPage && locale === DEFAULT_LOCALE
+  isHubPage && hubGuideFaqs.length > 0
     ? {
         '@context': 'https://schema.org',
         '@type': 'FAQPage',
-        mainEntity: HUB_GUIDE_FAQS.map((item) => ({
+        mainEntity: hubGuideFaqs.map((item: any) => ({
           '@type': 'Question',
-          name: item.question,
+          name: schemaPlainText(item.q),
           acceptedAnswer: {
             '@type': 'Answer',
-            text: item.answer
+            text: schemaPlainText(item.a)
           }
         }))
       }
@@ -523,21 +566,18 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
     <>
       {generalSolverFormula && (
         <section id="hub-calculator" class="mx-auto w-full max-w-4xl scroll-mt-24">
-          {locale === DEFAULT_LOCALE && (
-            <div class="mb-4" data-hub-presets>
-              <p class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Try an example</p>
-              <div class="mt-2 flex flex-wrap gap-2">
-                <button type="button" class="interactive-chip" data-hub-preset data-a="3" data-b="4">3–4–5 Triangle</button>
-                <button type="button" class="interactive-chip" data-hub-preset data-a="5" data-b="12">5–12–13 Triangle</button>
-                <button type="button" class="interactive-chip" data-hub-preset data-c="10" data-A="30">Hypotenuse 10, Angle 30°</button>
-                <button type="button" class="interactive-chip" data-hub-preset data-c="13" data-b="12">Hypotenuse 13, Leg 12</button>
-              </div>
+          <div class="mb-4" data-hub-presets>
+            <p class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">{(hubGuide as any).presetsLabel || 'Try an example'}</p>
+            <div class="mt-2 flex flex-wrap gap-2">
+              <button type="button" class="interactive-chip" data-hub-preset data-a="3" data-b="4">{((hubGuide as any).presets ?? [])[0] || '3–4–5 Triangle'}</button>
+              <button type="button" class="interactive-chip" data-hub-preset data-a="5" data-b="12">{((hubGuide as any).presets ?? [])[1] || '5–12–13 Triangle'}</button>
+              <button type="button" class="interactive-chip" data-hub-preset data-c="10" data-A="30">{((hubGuide as any).presets ?? [])[2] || 'Hypotenuse 10, Angle 30°'}</button>
+              <button type="button" class="interactive-chip" data-hub-preset data-c="13" data-b="12">{((hubGuide as any).presets ?? [])[3] || 'Hypotenuse 13, Leg 12'}</button>
             </div>
-          )}
+          </div>
           <FormulaCalculator formula={generalSolverFormula} locale={locale} />
         </section>
       )}
-      {locale === DEFAULT_LOCALE && (
         <script is:inline>
           (() => {
             const section = document.getElementById('hub-calculator');
@@ -564,7 +604,6 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
             });
           })();
         </script>
-      )}
       <section class="mx-auto w-full max-w-4xl section-shell prose-shell">
         <h2 set:html={localizedHub.h2[0]} />
         <p set:html={hubIntroParagraphs[0] ?? defaultHubIntro[0]} />
@@ -588,7 +627,7 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
         </ul>
       </section>
 
-      {locale === DEFAULT_LOCALE && <HubGuide />}
+      {(hubGuide as any).sDiagram ? <HubGuide guide={hubGuide} names={hubGuideNames} locale={locale} /> : null}
 
       <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
         <h2 class="text-2xl font-semibold">{pick(groupedUi, 'allGroupedPagesTitle', 'All Grouped Calculator Pages')}</h2>

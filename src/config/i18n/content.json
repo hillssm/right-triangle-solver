@@ -790,7 +790,636 @@
           "Solve Any Right Triangle",
           "All-in-One Triangle Solver"
         ],
-        "purpose": "Enter any two values of a right triangle and solve for every missing side and angle, or jump to a focused calculator."
+        "purpose": "Enter any two values of a right triangle and solve for every missing side and angle, or jump to a focused calculator.",
+        "guide": {
+          "meta": {
+            "title": "Right Triangle Calculator – Sides, Angles & Steps",
+            "description": "Calculate right triangle sides, angles, area, and perimeter. Enter two valid measurements, view interactive diagrams, and explore step-by-step solutions."
+          },
+          "tocTitle": "On This Page",
+          "toc": [
+            "Understanding the Right Triangle Diagram",
+            "How to Use the Right Triangle Calculator",
+            "What Is a Right Triangle?",
+            "Right Triangle Formulas Explained",
+            "Seeing the Math: Key Diagrams",
+            "Step-by-Step Worked Examples",
+            "Real-World Applications",
+            "Special Right Triangles",
+            "Common Pythagorean Triples",
+            "Common Right Triangle Calculation Mistakes",
+            "How to Verify a Right Triangle Solution",
+            "Frequently Asked Questions"
+          ],
+          "presetsLabel": "Try an example",
+          "presets": [
+            "3–4–5 Triangle",
+            "5–12–13 Triangle",
+            "Hypotenuse 10, Angle 30°",
+            "Hypotenuse 13, Leg 12"
+          ],
+          "sDiagram": {
+            "h2": "Understanding the Right Triangle Diagram",
+            "p1": "Every diagram and formula on this page follows one fixed convention. Learn it once and every label on the site reads the same way: vertices are <em>A</em>, <em>B</em>, and <em>C</em>, with the right angle always at <em>C</em>. Side <em>a</em> lies opposite angle <em>A</em>, side <em>b</em> lies opposite angle <em>B</em>, and side <em>c</em>, the hypotenuse, lies opposite the right angle. Because the angles of a triangle sum to 180°, the two acute angles always satisfy [[A + B = 90^\\circ]].",
+            "alt": "Labeled right triangle ABC with right angle at C, legs a and b, hypotenuse c, acute angles A and B, altitude h to the hypotenuse, and projection segments p and q",
+            "caption": "The standard labeling used across this page: <em>a</em> opposite <em>A</em>, <em>b</em> opposite <em>B</em>, hypotenuse <em>c</em> opposite the right angle at <em>C</em>.",
+            "h3": "Parts of a Right Triangle",
+            "thSymbol": "Symbol",
+            "thMeaning": "Meaning",
+            "rows": [
+              [
+                "<em>a</em>",
+                "Leg opposite angle <em>A</em>"
+              ],
+              [
+                "<em>b</em>",
+                "Leg opposite angle <em>B</em>"
+              ],
+              [
+                "<em>c</em>",
+                "Hypotenuse, opposite the right angle"
+              ],
+              [
+                "<em>A</em>, <em>B</em>",
+                "The two acute angles (each between 0° and 90°)"
+              ],
+              [
+                "<em>C</em>",
+                "The right angle, exactly 90°"
+              ],
+              [
+                "<em>h</em>",
+                "Altitude: perpendicular distance from <em>C</em> to the hypotenuse"
+              ],
+              [
+                "<em>p</em>, <em>q</em>",
+                "Projections of legs <em>a</em> and <em>b</em> onto the hypotenuse"
+              ],
+              [
+                "<em>r</em>",
+                "Inradius: radius of the circle tangent to all three sides"
+              ],
+              [
+                "<em>R</em>",
+                "Circumradius: radius of the circle passing through all three vertices"
+              ],
+              [
+                "<em>s</em>",
+                "Semiperimeter: half of the perimeter, <em>s</em> = (<em>a</em> + <em>b</em> + <em>c</em>) / 2"
+              ]
+            ],
+            "outro": "When you enter valid measurements in the calculator above, its live diagram redraws the triangle to scale with your values and labels each computed side and angle, so the picture always matches the numbers."
+          },
+          "sHowTo": {
+            "h2": "How to Use the Right Triangle Calculator",
+            "steps": [
+              "<strong>Identify your known measurements.</strong> You need two independent values with at least one side: two sides, or one side plus one acute angle.",
+              "<strong>Enter each value in its matching field.</strong> Side <em>a</em> is opposite angle <em>A</em>, side <em>b</em> is opposite angle <em>B</em>, and <em>c</em> is always the hypotenuse. Angles are entered in degrees.",
+              "<strong>Run the calculation.</strong> The solver finds every missing side and angle, plus area, perimeter, altitude, projections, inradius, and circumradius.",
+              "<strong>Examine the diagram.</strong> The triangle redraws to the proportions of your solution, with each measurement labeled at its position.",
+              "<strong>Review the solution steps.</strong> Each result shows the formula used, the substituted values, and the final answer, so you can follow the arithmetic.",
+              "<strong>Verify the result.</strong> Confirm the hypotenuse is the longest side and the two acute angles add to 90°. The verification checklist below automates these checks."
+            ],
+            "h3": "Input Rules the Calculator Enforces",
+            "rules": [
+              "<strong>Sides must be positive.</strong> Entering <em>a</em> = −3 is rejected; lengths cannot be negative or zero.",
+              "<strong>The hypotenuse must be the longest side.</strong> Entering <em>c</em> = 5 with <em>a</em> = 6 is impossible, because no leg can exceed the hypotenuse.",
+              "<strong>Acute angles are strictly between 0° and 90°.</strong> An entry of <em>A</em> = 0° or <em>A</em> = 90° describes a degenerate triangle, not a right triangle.",
+              "<strong>Two angles alone are not enough.</strong> <em>A</em> = 30° and <em>B</em> = 60° describe infinitely many similar triangles; without a side, the size is undetermined.",
+              "<strong>Angles A and B must be complementary.</strong> Entering <em>A</em> = 40° and <em>B</em> = 60° contradicts <em>A</em> + <em>B</em> = 90° and is rejected.",
+              "<strong>Measurements must be independent.</strong> Entering <em>a</em> = 3 and <em>c</em> = 5 determines the triangle; entering <em>a</em> = 3 twice does not add information.",
+              "<strong>Keep length units consistent.</strong> All side inputs share one unit selector; mixing meters and centimeters in one calculation gives a wrong answer."
+            ]
+          },
+          "sFundamentals": {
+            "h2": "What Is a Right Triangle?",
+            "p1": "A right triangle is a triangle containing one 90° angle, the right angle. The 90° angle fixes the shape more rigidly than any other single angle: once it is set, the remaining two angles must share the leftover 90°, which forces both to be acute (each strictly less than 90°). The side opposite the right angle is the hypotenuse, always the longest side; the other two sides are the legs, and they meet perpendicularly at the right-angle vertex.",
+            "p2": "This perpendicularity is what makes right triangles the workhorse of measurement. Any rectangle splits along its diagonal into two congruent right triangles, so every rectangular length, from a floor plan to a ramp, hides a right triangle. A right triangle is uniquely determined by two independent measurements that include at least one side, which is exactly why the calculator asks for two values: that is the minimum information from which the other four sides and angles can be derived.",
+            "p3": "The labels <em>opposite</em> and <em>adjacent</em> always refer to a chosen acute angle. Pick angle <em>A</em>: the leg across from it (<em>a</em>) is opposite, and the leg forming the angle (<em>b</em>) is adjacent. Pick angle <em>B</em> instead and the two legs trade roles. The interactive diagram below lets you switch between the two viewpoints.",
+            "h3": "Why Is the Hypotenuse the Longest Side?",
+            "proof": "The Pythagorean theorem states [[a^2 + b^2 = c^2]]. Because side lengths are positive, [[a^2 + b^2 > a^2]] and [[a^2 + b^2 > b^2]], so [[c^2 > a^2]] and [[c^2 > b^2]]. Taking square roots of positive numbers preserves the inequality, giving [[c > a]] and [[c > b]]. In words: adding the square of the other leg can only lengthen the hypotenuse, so the hypotenuse must exceed either leg. Any input that violates this, such as <em>c</em> = 5 with <em>a</em> = 6, cannot be a right triangle."
+          },
+          "sFormulas": {
+            "h2": "Right Triangle Formulas Explained",
+            "intro": "Every result on this page comes from the formulas below. Each card states the formula, when to use it, and which calculator on this site handles that exact task.",
+            "pythagH3": "Pythagorean Theorem",
+            "pythagBlock": "[[[a^2 + b^2 = c^2]]]",
+            "rearrange": "Use the rearranged form that isolates the unknown side:",
+            "cards": [
+              {
+                "label": "Find the hypotenuse",
+                "formula": "[[c = \\sqrt{a^2 + b^2}]]"
+              },
+              {
+                "label": "Find leg <em>a</em>",
+                "formula": "[[a = \\sqrt{c^2 - b^2}]]"
+              },
+              {
+                "label": "Find leg <em>b</em>",
+                "formula": "[[b = \\sqrt{c^2 - a^2}]]"
+              }
+            ],
+            "pythagNote": "Use the first form when both legs are known, and the other two when the hypotenuse and one leg are known. The value under the square root must be positive; a negative value means the supposed hypotenuse is not longer than the known leg. See the <a href=\"/right-triangle-side-calculator/\">__SIDE_CALC__</a> for focused side solving.",
+            "trigH3": "Trigonometric Formulas",
+            "trigIntro": "Relative to angle <em>A</em>, the three primary ratios are:",
+            "trigBlock": "[[[\\sin(A) = \\frac{a}{c} \\qquad \\cos(A) = \\frac{b}{c} \\qquad \\tan(A) = \\frac{a}{b}]]]",
+            "sohcahtoa": "<strong>SOH–CAH–TOA</strong> is the memory aid: <strong>S</strong>ine = <strong>O</strong>pposite over <strong>H</strong>ypotenuse, <strong>C</strong>osine = <strong>A</strong>dacent over <strong>H</strong>ypotenuse, <strong>T</strong>angent = <strong>O</strong>pposite over <strong>A</strong>dacent. To go the other direction, from sides to an angle, use the inverse functions:",
+            "invBlock": "[[[A = \\arcsin\\frac{a}{c} \\qquad A = \\arccos\\frac{b}{c} \\qquad A = \\arctan\\frac{a}{b} \\qquad B = 90^\\circ - A]]]",
+            "trigNote": "Pick the inverse formula whose fraction uses the sides you actually know, then subtract from 90° for the remaining angle. The <a href=\"/right-triangle-angle-calculator/\">__ANGLE_CALC__</a> and the <a href=\"/right-triangle-trig-ratios-calculator/\">__TRIG_CALC__</a> cover these tasks in depth.",
+            "areaH3": "Area and Perimeter",
+            "areaBlock": "[[[K = \\frac{a \\times b}{2} \\qquad P = a + b + c \\qquad s = \\frac{P}{2}]]]",
+            "areaNote": "The legs are perpendicular, so they act directly as base and height: no altitude computation is needed for the area. The semiperimeter <em>s</em> is half the perimeter and appears in the inradius formula and in Heron's formula. Try the <a href=\"/right-triangle-area-calculator/\">__AREA_CALC__</a> for area-first problems.",
+            "altH3": "Altitude to the Hypotenuse",
+            "altBlock": "[[[h = \\frac{a \\times b}{c}]]]",
+            "altNote": "The altitude <em>h</em> is the perpendicular distance from the right-angle vertex <em>C</em> to the hypotenuse. It follows from equating the two expressions for the area: [[\\frac{a \\times b}{2} = \\frac{h \\times c}{2}]], then solving for <em>h</em>. Dedicated tool: <a href=\"/right-triangle-altitude-calculator/\">__ALT_CALC__</a>.",
+            "projH3": "Hypotenuse Projections",
+            "projBlock": "[[[p = \\frac{a^2}{c} \\qquad q = \\frac{b^2}{c} \\qquad p + q = c \\qquad h^2 = p \\times q]]]",
+            "projNote": "The altitude lands at point <em>D</em> on the hypotenuse, splitting it into segment <em>p</em> (adjacent to leg <em>a</em>, between <em>B</em> and <em>D</em>) and segment <em>q</em> (adjacent to leg <em>b</em>, between <em>D</em> and <em>A</em>). The relation [[h^2 = p \\times q]] is the geometric mean: the altitude is the geometric mean of the two projections. Dedicated tool: <a href=\"/right-triangle-projection-calculator/\">__PROJ_CALC__</a>.",
+            "radH3": "Inradius and Circumradius",
+            "radBlock": "[[[r = \\frac{a + b - c}{2} \\qquad R = \\frac{c}{2}]]]",
+            "radNote": "The <strong>incircle</strong> is the circle tangent to all three sides; its center (the incenter) sits at distance <em>r</em> from each side. The <strong>circumcircle</strong> passes through all three vertices; for a right triangle its center is the midpoint of the hypotenuse, so the hypotenuse is a diameter and [[R = c/2]] exactly. Dedicated tool: <a href=\"/right-triangle-radius-calculator/\">__RAD_CALC__</a>.",
+            "refH3": "Formula Quick Reference",
+            "refHead": [
+              "Measurement",
+              "Formula",
+              "Known values",
+              "Calculator"
+            ],
+            "refRows": [
+              [
+                "Hypotenuse",
+                "[[c = \\sqrt{a^2 + b^2}]]",
+                "legs <em>a</em>, <em>b</em>",
+                "__SIDE_SHORT__"
+              ],
+              [
+                "Leg <em>a</em>",
+                "[[a = \\sqrt{c^2 - b^2}]]",
+                "<em>c</em> &gt; <em>b</em>",
+                "__SIDE_SHORT__"
+              ],
+              [
+                "Leg <em>a</em> from angle",
+                "[[a = c\\sin A]]",
+                "<em>c</em>, acute <em>A</em>",
+                "__SIDEANGLE_SHORT__"
+              ],
+              [
+                "Angle <em>A</em>",
+                "[[A = \\arctan\\frac{a}{b}]]",
+                "legs <em>a</em>, <em>b</em>",
+                "__ANGLE_SHORT__"
+              ],
+              [
+                "Trig ratios",
+                "[[\\sin A = a/c]]",
+                "any two of <em>a</em>, <em>b</em>, <em>c</em>",
+                "__TRIG_SHORT__"
+              ],
+              [
+                "Area",
+                "[[K = ab/2]]",
+                "legs <em>a</em>, <em>b</em>",
+                "__AREA_SHORT__"
+              ],
+              [
+                "Perimeter",
+                "[[P = a+b+c]]",
+                "all three sides",
+                "__MEAS_SHORT__"
+              ],
+              [
+                "Altitude",
+                "[[h = ab/c]]",
+                "valid triangle",
+                "__ALT_SHORT__"
+              ],
+              [
+                "Projection <em>p</em>",
+                "[[p = a^2/c]]",
+                "<em>c</em> &gt; <em>a</em>",
+                "__PROJ_SHORT__"
+              ],
+              [
+                "Inradius",
+                "[[r = (a+b-c)/2]]",
+                "valid triangle",
+                "__RAD_SHORT__"
+              ],
+              [
+                "Circumradius",
+                "[[R = c/2]]",
+                "<em>c</em> &gt; 0",
+                "__RAD_SHORT__"
+              ]
+            ]
+          },
+          "sExamples": {
+            "examples": [
+              {
+                "alt": "3-4-5 right triangle with labeled sides and angles 36.87 and 53.13 degrees",
+                "check": "<strong>Check:</strong> 3² + 4² = 9 + 16 = 25 = 5², and 36.87° + 53.13° = 90°. The hypotenuse 5 exceeds both legs.",
+                "given": "<strong>Given:</strong> <em>a</em> = 3 cm, <em>b</em> = 4 cm. <strong>Find:</strong> <em>c</em>, angles, and derived measurements.",
+                "inputs": {
+                  "a": "3",
+                  "b": "4"
+                },
+                "steps": [
+                  "Formula: [[c = \\sqrt{a^2 + b^2}]]",
+                  "Substitution: [[c = \\sqrt{3^2 + 4^2}]]",
+                  "Simplify: [[c = \\sqrt{9 + 16} = \\sqrt{25}]]",
+                  "Answer: <strong><em>c</em> = 5 cm</strong>",
+                  "Angles: [[A = \\arctan(3/4) \\approx 36.87^\\circ]], [[B = 90^\\circ - 36.87^\\circ \\approx 53.13^\\circ]]",
+                  "Area = (3 × 4) / 2 = <strong>6 cm²</strong>; perimeter = 3 + 4 + 5 = <strong>12 cm</strong>",
+                  "Altitude <em>h</em> = (3 × 4) / 5 = <strong>2.4 cm</strong>; inradius <em>r</em> = (3 + 4 − 5) / 2 = <strong>1 cm</strong>; circumradius <em>R</em> = 5 / 2 = <strong>2.5 cm</strong>"
+                ],
+                "title": "Example 1: Find the Hypotenuse from Two Legs",
+                "tryValues": "a = 3, b = 4"
+              },
+              {
+                "alt": "5-12-13 right triangle with hypotenuse 13 and leg 12 labeled",
+                "check": "<strong>Why the hypotenuse must be longest:</strong> the subtraction 169 − 144 only works because 13 &gt; 12. If the known leg exceeded the supposed hypotenuse, the value under the root would be negative and no real triangle could exist.",
+                "given": "<strong>Given:</strong> <em>c</em> = 13 cm, <em>b</em> = 12 cm. <strong>Find:</strong> <em>a</em> and the remaining measurements.",
+                "inputs": {
+                  "b": "12",
+                  "c": "13"
+                },
+                "steps": [
+                  "Formula: [[a = \\sqrt{c^2 - b^2}]]",
+                  "Substitution: [[a = \\sqrt{13^2 - 12^2}]]",
+                  "Simplify: [[a = \\sqrt{169 - 144} = \\sqrt{25}]]",
+                  "Answer: <strong><em>a</em> = 5 cm</strong>",
+                  "Angles: [[A = \\arcsin(5/13) \\approx 22.62^\\circ]], [[B \\approx 67.38^\\circ]]",
+                  "Area = (5 × 12) / 2 = <strong>30 cm²</strong>; perimeter = 5 + 12 + 13 = <strong>30 cm</strong>"
+                ],
+                "title": "Example 2: Find a Missing Leg",
+                "tryValues": "c = 13, b = 12"
+              },
+              {
+                "alt": "Right triangle with hypotenuse 10, angle A 30 degrees, angle B 60 degrees",
+                "check": "<strong>Why sine for <em>a</em>?</strong> Sine is defined as opposite over hypotenuse, and <em>a</em> is opposite angle <em>A</em>, so sin(30°) = <em>a</em>/10 directly isolates <em>a</em>. Cosine is adjacent over hypotenuse, matching <em>b</em>. Choosing the ratio whose numerator is the wanted side avoids extra algebra.",
+                "given": "<strong>Given:</strong> <em>c</em> = 10 cm, <em>A</em> = 30°. <strong>Find:</strong> <em>a</em>, <em>b</em>, <em>B</em>.",
+                "inputs": {
+                  "A": "30",
+                  "c": "10"
+                },
+                "steps": [
+                  "Opposite leg uses sine: [[a = c \\times \\sin(A) = 10 \\times \\sin(30^\\circ) = 10 \\times 0.5]] → <strong><em>a</em> = 5 cm</strong>",
+                  "Adjacent leg uses cosine: [[b = c \\times \\cos(A) = 10 \\times \\cos(30^\\circ) \\approx 10 \\times 0.86603]] → <strong><em>b</em> ≈ 8.6603 cm</strong>",
+                  "Remaining angle: [[B = 90^\\circ - 30^\\circ = 60^\\circ]]",
+                  "Area = (5 × 8.6603) / 2 ≈ <strong>21.6506 cm²</strong>"
+                ],
+                "title": "Example 3: Solve Using an Angle and the Hypotenuse",
+                "tryValues": "c = 10, A = 30°"
+              },
+              {
+                "alt": "8-15-17 right triangle with legs 8 and 15 meters",
+                "check": "<strong>About arctan:</strong> tangent maps an angle to a ratio; arctan reverses the mapping, turning the ratio 8/15 back into the angle 28.07°. It is the right inverse when you know both legs, because tan(A) = opposite/adjacent uses exactly those two sides.",
+                "given": "<strong>Given:</strong> <em>a</em> = 8 m, <em>b</em> = 15 m. <strong>Find:</strong> <em>A</em>, <em>B</em>, <em>c</em>.",
+                "inputs": {
+                  "a": "8",
+                  "b": "15"
+                },
+                "steps": [
+                  "Formula: [[\\tan(A) = \\frac{a}{b} = \\frac{8}{15}]]",
+                  "Inverse tangent: [[A = \\arctan(8/15) \\approx 28.07^\\circ]]",
+                  "Complement: [[B = 90^\\circ - 28.07^\\circ \\approx 61.93^\\circ]]",
+                  "Hypotenuse: [[c = \\sqrt{8^2 + 15^2} = \\sqrt{64 + 225} = \\sqrt{289} = 17]] m"
+                ],
+                "title": "Example 4: Find an Angle from Two Legs",
+                "tryValues": "a = 8, b = 15"
+              },
+              {
+                "alt": "6-8-10 right triangle derived from area 24 and leg 6",
+                "areaLink": "Open the Area Calculator",
+                "check": "<strong>The idea:</strong> area ties the two legs together in one equation, so knowing the area and one leg determines the other leg. Once both legs are known, the problem reduces to Example 1.",
+                "given": "<strong>Given:</strong> area <em>K</em> = 24 cm², leg <em>a</em> = 6 cm. <strong>Find:</strong> <em>b</em>, <em>c</em>. (Manual calculation: this solver accepts side and angle inputs, so area-first problems start here and finish in the <a href=\"/right-triangle-area-calculator/\">__AREA_CALC__</a>.)",
+                "inputs": null,
+                "steps": [
+                  "Area formula: [[K = \\frac{a \\times b}{2}]]",
+                  "Solve for <em>b</em>: [[b = \\frac{2K}{a} = \\frac{48}{6} = 8]] cm",
+                  "Hypotenuse: [[c = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10]] cm"
+                ],
+                "title": "Example 5: Find Missing Sides from Area and One Leg"
+              }
+            ],
+            "h2": "Step-by-Step Worked Examples",
+            "intro": "Five complete solutions covering the input combinations the calculator accepts. Each example shows the formula, the substitution, every intermediate step, and a geometric check. Use the <strong>Try in Calculator</strong> button to load the example into the solver above and confirm the results.",
+            "tryLabel": "Try in Calculator"
+          },
+          "sVisualizations": {
+            "btnA": "Angle A",
+            "btnB": "Angle B",
+            "d1Alt": "3-4-5 right triangle with squares of area 9, 16, and 25 built on its three sides, showing 9 + 16 = 25",
+            "d1Caption": "The square on leg <em>a</em> has area 9, on leg <em>b</em> area 16, and on the hypotenuse area 25. Since 9 + 16 = 25, the two smaller squares exactly fill the largest one.",
+            "d1H3": "Diagram 1: The Pythagorean Theorem as Areas",
+            "d1Note": "This picture is a proof for the illustrated triangle: the combined area of the squares on the legs equals the area of the square on the hypotenuse. The general theorem states this holds for <em>every</em> right triangle, which is why [[a^2 + b^2 = c^2]] can be trusted as a calculation rule rather than a coincidence of the 3-4-5 example.",
+            "d2Alt": "Right triangle with selectable angle highlighting opposite and adjacent legs",
+            "d2Fallback": "Text version: with angle A, the side across the triangle (a = 3) is opposite and the side forming the angle (b = 4) is adjacent. With angle B, they swap: b = 4 is opposite and a = 3 is adjacent. The hypotenuse c = 5 stays the hypotenuse in both views.",
+            "d2H3": "Diagram 2: Opposite, Adjacent, and Hypotenuse",
+            "d2Intro": "Select an angle to see which leg is opposite and which is adjacent. The hypotenuse never changes.",
+            "d2SvgAdj": "Adjacent",
+            "d2SvgHyp": "Hypotenuse",
+            "d2SvgOpp": "Opposite",
+            "d2TextA": "<strong>Angle A selected:</strong> opposite = <em>a</em> = 3, adjacent = <em>b</em> = 4, hypotenuse = <em>c</em> = 5. sin(A) = 3/5, cos(A) = 4/5, tan(A) = 3/4.",
+            "d2TextB": "<strong>Angle B selected:</strong> opposite = <em>b</em> = 4, adjacent = <em>a</em> = 3, hypotenuse = <em>c</em> = 5. sin(B) = 4/5, cos(B) = 3/5, tan(B) = 4/3.",
+            "d3Alt": "3-4-5 right triangle with altitude h = 2.4 from the right angle to the hypotenuse, splitting it into projections p = 1.8 and q = 3.2",
+            "d3Caption": "The altitude <em>h</em> = 2.4 lands at <em>D</em>, creating projections <em>p</em> = 1.8 and <em>q</em> = 3.2 with <em>p</em> + <em>q</em> = 5 = <em>c</em>.",
+            "d3H3": "Diagram 3: Altitude and Projections",
+            "d3Note": "The altitude divides the original triangle into two smaller triangles, and each of them is <strong>similar</strong> to the original: all three share the same three angles (36.87°, 53.13°, 90°). Similarity is why the projection formulas work, since corresponding sides of similar triangles stay in proportion: [[a^2 = c \\times p]], [[b^2 = c \\times q]], and [[h^2 = p \\times q]]. Check: 1.8 + 3.2 = 5, and 2.4² = 5.76 = 1.8 × 3.2.",
+            "d4Alt": "3-4-5 right triangle with toggleable incircle of radius 1 and circumcircle of radius 2.5",
+            "d4Fallback": "Text version: the incircle (green) touches all three sides with center 1 unit from each side and radius r = (3 + 4 − 5) / 2 = 1. The circumcircle (blue) passes through A, B, and C with its center at the midpoint of the hypotenuse and radius R = 5 / 2 = 2.5, exactly half the hypotenuse.",
+            "d4H3": "Diagram 4: Incircle and Circumcircle",
+            "d4Intro": "Toggle each circle to compare them. The incircle fits inside; the circumcircle passes through all three vertices.",
+            "d4Note": "The two circles answer different questions. The <strong>incircle</strong> is the largest circle that fits inside the triangle, useful in packing and clearance problems. The <strong>circumcircle</strong> is the smallest circle containing the triangle; because the hypotenuse is its diameter, Thales' theorem guarantees that any triangle inscribed in a semicircle with the diameter as one side is a right triangle.",
+            "h2": "Seeing the Math: Key Diagrams",
+            "intro": "Four diagrams that make the central relationships visible. Each is drawn from the same 3-4-5 triangle used in the worked examples.",
+            "tglCircum": "Show circumcircle",
+            "tglIn": "Show incircle"
+          },
+          "faqDescription": "Answers to the most common right-triangle solving questions, from valid inputs to checking your answer.",
+          "faqHeading": "Frequently Asked Questions",
+          "faqs": [
+            {
+              "a": "Enter the two known sides into their matching fields, for example legs a and b, or the hypotenuse c with one leg. The calculator applies the Pythagorean theorem to find the missing side, then uses inverse trigonometric ratios to find the two acute angles. Area, perimeter, altitude, projections, inradius, and circumradius are computed from the completed triangle.",
+              "q": "How do I solve a right triangle with two sides?"
+            },
+            {
+              "a": "Yes, as long as the angle is acute (strictly between 0 and 90 degrees). Enter the known side and the known angle; the calculator uses sine, cosine, or tangent to find the remaining sides and subtracts the known angle from 90 degrees to find the other acute angle. Two angles alone are not enough, because angles fix the shape but not the size.",
+              "q": "Can I solve a right triangle with one side and one angle?"
+            },
+            {
+              "a": "If you know both legs, use [[c = \\sqrt{a^2 + b^2}]]. If you know one leg and an acute angle, divide or multiply with a trigonometric ratio: with leg a and angle A, [[c = a / \\sin(A)]]; with leg b and angle A, [[c = b / \\cos(A)]]. The hypotenuse is always the longest side, so check that your answer is longer than either leg.",
+              "q": "How do I find the hypotenuse?"
+            },
+            {
+              "a": "Rearrange the Pythagorean theorem: [[a = \\sqrt{c^2 - b^2}]] or [[b = \\sqrt{c^2 - a^2}]], using whichever leg you know. If you know the hypotenuse and an acute angle instead, use [[a = c \\times \\sin(A)]] and [[b = c \\times \\cos(A)]]. If the value under the square root is negative, the hypotenuse you entered is not longer than the leg, and the inputs cannot form a right triangle.",
+              "q": "How do I find a missing leg?"
+            },
+            {
+              "a": "Use an inverse trigonometric ratio with the sides relative to that angle. For angle A: [[A = \\arctan(a / b)]], [[A = \\arcsin(a / c)]], or [[A = \\arccos(b / c)]], whichever matches the sides you know. Then [[B = 90^\\circ - A]]. Make sure your calculator is in degree mode; in radian mode the same inputs return values near 0.64 instead of 36.87.",
+              "q": "How do I calculate an unknown angle?"
+            },
+            {
+              "a": "No. Two angles determine the shape of the triangle but not its size: a 3-4-5 triangle and a 6-8-10 triangle have identical angles. You need at least one side length to fix the scale. Any side works: enter it together with one angle, or enter two sides, and the triangle is fully determined.",
+              "q": "Can I solve a right triangle using only two angles?"
+            },
+            {
+              "a": "The most common causes are a leg entered as the hypotenuse (c must be longer than both a and b), a zero or negative side length, an angle of 0° or 90° (acute angles must lie strictly between), two angles with no side, or angles A and B that do not add to 90°. Correct the inconsistent value and the calculation will run.",
+              "q": "Why does my calculator show invalid measurements?"
+            },
+            {
+              "a": "Opposite and adjacent are always defined relative to one chosen acute angle. For angle A, the opposite side is the leg across from A (side a) and the adjacent side is the leg touching A (side b). Switch to angle B and the labels swap: side b becomes opposite and side a becomes adjacent. The hypotenuse is never opposite or adjacent; it is always c.",
+              "q": "What is the difference between the opposite and adjacent sides?"
+            },
+            {
+              "a": "Multiply the two legs and divide by two: [[K = (a \\times b) / 2]]. The legs are perpendicular, so they serve directly as base and height with no extra altitude step. For a 3-4-5 triangle the area is (3 × 4) / 2 = 6 square units. Equivalently, [[K = (h \\times c) / 2]] using the altitude to the hypotenuse.",
+              "q": "How do I calculate the area of a right triangle?"
+            },
+            {
+              "a": "It is the perpendicular segment from the right-angle vertex C to the hypotenuse, with length [[h = (a \\times b) / c]]. It splits the hypotenuse into projections [[p = a^2 / c]] and [[q = b^2 / c]], and it divides the triangle into two smaller triangles that are both similar to the original. In a 3-4-5 triangle, h = 12 / 5 = 2.4.",
+              "q": "What is the altitude to the hypotenuse?"
+            },
+            {
+              "a": "Both measure angles; 180° equals π radians (about 3.1416). This calculator accepts angles in degrees only, which is the standard for construction, navigation, and school geometry. If you have a radian value, convert it first: degrees = radians × 180 / π. Entering 0.64 where you meant 36.87° is a classic source of wrong answers.",
+              "q": "What is the difference between degrees and radians?"
+            },
+            {
+              "a": "Run five quick checks: the hypotenuse is the longest side; A + B = 90°; a² + b² = c² within rounding tolerance; area equals (a × b) / 2 and also (h × c) / 2; and p + q = c. If every check passes, the solution is geometrically consistent. See the verification checklist above for the full procedure.",
+              "q": "How do I check that my final answer is correct?"
+            }
+          ],
+          "sMistakes": {
+            "h2": "Common Right Triangle Calculation Mistakes",
+            "items": [
+              "<strong>Treating a leg as the hypotenuse.</strong> The hypotenuse is the side opposite the right angle, the only side that touches neither endpoint of the right-angle marker. In the 3-4-5 triangle, 5 is the hypotenuse; computing [[\\sqrt{5^2 + 4^2}]] instead of [[\\sqrt{5^2 - 4^2}]] answers a different question.",
+              "<strong>Using the wrong trigonometric ratio.</strong> With angle <em>A</em> = 30° and hypotenuse 10, the side opposite <em>A</em> needs sine (<em>a</em> = 10 sin 30° = 5). Using cosine by mistake computes the adjacent leg instead (8.66). Always name the wanted side as opposite or adjacent <em>relative to your angle</em> before choosing.",
+              "<strong>Incorrect square-root grouping.</strong> [[c = \\sqrt{a^2 + b^2}]] adds first, then takes the root: √(9 + 16) = 5. The misreading √a² + b² takes the root of <em>a</em>² alone: 3 + 16 = 19, which is wrong. Parentheses under the radical are not optional.",
+              "<strong>Entering inconsistent measurements.</strong> <em>c</em> = 5 with <em>a</em> = 6 contradicts the hypotenuse-longest rule, and <em>A</em> = 40° with <em>B</em> = 60° contradicts <em>A</em> + <em>B</em> = 90°. The calculator rejects these; fix the value that was measured or copied incorrectly.",
+              "<strong>Mixing degrees and radians.</strong> This calculator works in degrees. Entering 0.524 (radians for 30°) where 30 was meant shrinks every trig result. Convert first: degrees = radians × 180/π.",
+              "<strong>Rounding too early.</strong> Computing with <em>b</em> ≈ 8.66 instead of 8.660254 and then squaring compounds the error: 8.66² = 74.9956 versus the true 75. Keep full precision through intermediate steps and round only the final display.",
+              "<strong>Mixing length units.</strong> A leg of 3 meters with a hypotenuse of 500 centimeters is really 3 m and 5 m, a valid 3-4-5 triangle. Entered as 3 and 500 in one unit, the same inputs look impossible. Convert to one unit before calculating."
+            ]
+          },
+          "sRealWorld": {
+            "articles": [
+              {
+                "alt": "Ladder of 5 meters leaning against a wall, base 3 meters out, reaching 4 meters high",
+                "assumptions": "<strong>Assumptions:</strong> perfectly vertical wall and level ground. This is a geometry calculation, not a ladder-safety recommendation.",
+                "desc": "A 5 m ladder leans against a vertical wall with its base 3 m from the wall. How high does it reach?",
+                "steps": [
+                  "The wall, ground, and ladder form a right triangle with hypotenuse 5 m and one leg 3 m.",
+                  "[[h = \\sqrt{5^2 - 3^2} = \\sqrt{25 - 9} = \\sqrt{16}]]",
+                  "<strong>Answer: 4 m.</strong> The ladder reaches 4 meters up the wall."
+                ],
+                "title": "Ladder Against a Wall"
+              },
+              {
+                "alt": "Side view of a ramp with 0.75 meter rise and 6 meter run, incline angle 7.13 degrees",
+                "assumptions": "<strong>Assumptions:</strong> straight ramp with constant slope. This is a mathematical example only, not a determination of building-code or accessibility compliance.",
+                "desc": "A ramp rises 0.75 m over a horizontal run of 6 m. Find the ramp length, incline angle, and slope.",
+                "steps": [
+                  "Ramp length: [[L = \\sqrt{6^2 + 0.75^2} = \\sqrt{36.5625} \\approx 6.047]] m",
+                  "Incline angle: [[\\theta = \\arctan(0.75/6) = \\arctan(0.125) \\approx 7.13^\\circ]]",
+                  "Slope: 0.75 / 6 = 0.125 = <strong>12.5%</strong>"
+                ],
+                "title": "Wheelchair Ramp Geometry"
+              },
+              {
+                "alt": "Roof cross-section with 6 foot rise, 12 foot run, rafter 13.42 feet, angle 26.57 degrees",
+                "assumptions": "<strong>Assumptions:</strong> overhangs, ridge connections, and construction allowances are excluded; the rafter is the straight-line hypotenuse of the pitch triangle.",
+                "desc": "A roof has a 6:12 pitch (6 ft of rise per 12 ft of run). For a 12 ft horizontal run, find the rafter length and roof angle.",
+                "steps": [
+                  "Rise = 6 ft for the 12 ft run (the 6:12 ratio).",
+                  "Rafter: [[R = \\sqrt{12^2 + 6^2} = \\sqrt{180} \\approx 13.42]] ft",
+                  "Roof angle: [[\\theta = \\arctan(6/12) = \\arctan(0.5) \\approx 26.57^\\circ]]"
+                ],
+                "title": "Roof Pitch and Rafter Length"
+              },
+              {
+                "alt": "Top-down view of an 8 by 15 meter room with a 17 meter diagonal",
+                "assumptions": "<strong>Assumptions:</strong> the room is a true rectangle with square corners.",
+                "desc": "A room measures 8 m by 15 m. What is the diagonal distance between opposite corners?",
+                "steps": [
+                  "A rectangle's diagonal splits it into two congruent right triangles with legs 8 m and 15 m.",
+                  "[[d = \\sqrt{8^2 + 15^2} = \\sqrt{64 + 225} = \\sqrt{289}]]",
+                  "<strong>Answer: 17 m.</strong> Recognizing the 8-15-17 triple gives the answer without a calculator."
+                ],
+                "title": "Diagonal of a Rectangular Room"
+              },
+              {
+                "alt": "3-4-5 triangle and scaled 6-8-10 triangle used to check square corners on a construction site",
+                "assumptions": "<strong>Assumptions:</strong> measurements are taken carefully in matching units. This field check does not replace professional surveying for structural work.",
+                "desc": "Builders check a corner for squareness by measuring 3 units along one side, 4 along the other, and confirming the diagonal is 5 units.",
+                "steps": [
+                  "Check: [[3^2 + 4^2 = 9 + 16 = 25 = 5^2]]. The converse of the Pythagorean theorem says a triangle satisfying this equation must contain a right angle.",
+                  "Scaling up keeps the angle: [[6^2 + 8^2 = 36 + 64 = 100 = 10^2]], so a 6-8-10 triangle is also exactly square.",
+                  "Any consistent scale works (9-12-15, 30-40-50) because multiplying all sides by the same factor preserves the [[a^2+b^2=c^2]] relationship."
+                ],
+                "title": "The 3-4-5 Squaring Method"
+              }
+            ],
+            "h2": "Real-World Applications of Right Triangle Calculations",
+            "intro": "Five scenarios where the same triangle mathematics solves a concrete problem. Each states its simplifying assumptions honestly."
+          },
+          "sRelated": {
+            "groups": [
+              {
+                "links": [
+                  "__SIDE_CALC__",
+                  "__SIDEANGLE_CALC__"
+                ],
+                "title": "Sides and Hypotenuse"
+              },
+              {
+                "links": [
+                  "__ANGLE_CALC__",
+                  "__TRIG_CALC__"
+                ],
+                "title": "Angles and Trigonometry"
+              },
+              {
+                "links": [
+                  "__AREA_CALC__",
+                  "__MEAS_CALC__",
+                  "__ALT_CALC__",
+                  "__PROJ_CALC__",
+                  "__RAD_CALC__"
+                ],
+                "title": "Measurements and Geometry"
+              },
+              {
+                "links": [
+                  "__SPECIAL_CALC__",
+                  "__TRIPLES_CALC__"
+                ],
+                "title": "Special Triangles"
+              }
+            ],
+            "h2": "Explore Related Right Triangle Calculators",
+            "intro": "This solver handles the complete triangle. For focused single-task calculations, these specialized pages go deeper:"
+          },
+          "sSpecial": {
+            "close": "For deeper calculation with these triangles, use the <a href=\"/special-right-triangle-calculator/\">__SPECIAL_CALC__</a>.",
+            "h2": "Special Right Triangles and Their Ratios",
+            "h3060": "30°–60°–90° Triangle",
+            "h345": "45°–45°–90° Triangle",
+            "intro": "Two triangles appear so often that their side ratios are worth memorizing. Both follow directly from the Pythagorean theorem.",
+            "p3060a": "The side ratio is [[1 : \\sqrt{3} : 2]]: the shortest side (opposite 30°) is half the hypotenuse, and the longer leg is [[\\sqrt{3}]] times the shortest. With short leg 5 cm: long leg = [[5\\sqrt{3} \\approx 8.66]] cm, hypotenuse = 10 cm.",
+            "p3060alt": "30-60-90 triangle with sides 5, 5 root 3, and 10",
+            "p3060b": "This triangle is half of an equilateral triangle, which is why the 1:2 relationship between the short leg and hypotenuse is exact.",
+            "p45a": "The two legs are equal and both acute angles are 45°, giving the side ratio [[1 : 1 : \\sqrt{2}]]. If each leg is 7 cm, the hypotenuse is [[7\\sqrt{2} \\approx 9.90]] cm.",
+            "p45alt": "45-45-90 triangle with equal legs of 7 cm and hypotenuse 7 root 2",
+            "p45b": "Cut any square along its diagonal and you get two of these triangles, which is why the ratio appears in paper sizes, screen diagonals, and miter cuts."
+          },
+          "sTriples": {
+            "close": "Spotting a triple in your measurements gives an exact answer with no square roots. Generate and explore more in the <a href=\"/pythagorean-triples-calculator/\">__TRIPLES_CALC__</a>.",
+            "h2": "Common Pythagorean Triples",
+            "head": [
+              "Leg <em>a</em>",
+              "Leg <em>b</em>",
+              "Hypotenuse <em>c</em>",
+              "Check"
+            ],
+            "intro": "A Pythagorean triple is a set of three positive integers satisfying [[a^2 + b^2 = c^2]]. Triples marked as scaled are multiples of a smaller primitive triple (for example, 6-8-10 is 2 × 3-4-5).",
+            "rows": [
+              [
+                "3",
+                "4",
+                "5",
+                "[[9+16=25]]"
+              ],
+              [
+                "5",
+                "12",
+                "13",
+                "[[25+144=169]]"
+              ],
+              [
+                "6",
+                "8",
+                "10",
+                "__SCALED__"
+              ],
+              [
+                "7",
+                "24",
+                "25",
+                "[[49+576=625]]"
+              ],
+              [
+                "8",
+                "15",
+                "17",
+                "[[64+225=289]]"
+              ],
+              [
+                "9",
+                "12",
+                "15",
+                "__SCALED__"
+              ],
+              [
+                "9",
+                "40",
+                "41",
+                "[[81+1600=1681]]"
+              ],
+              [
+                "12",
+                "35",
+                "37",
+                "[[144+1225=1369]]"
+              ]
+            ],
+            "scaled": "scaled 3-4-5"
+          },
+          "sVerify": {
+            "h2": "How to Verify a Right Triangle Solution",
+            "intro": "Run these eight checks on any solved triangle. The first six are geometric identities; the last two are sanity checks on units and signs.",
+            "items": [
+              "<strong>Pythagoras:</strong> [[a^2 + b^2]] equals [[c^2]] within rounding tolerance (for example, agree to at least 4 decimal places).",
+              "<strong>Angle sum:</strong> <em>A</em> + <em>B</em> = 90° before display rounding is applied.",
+              "<strong>Longest side:</strong> <em>c</em> &gt; <em>a</em> and <em>c</em> &gt; <em>b</em>, strictly.",
+              "<strong>Area consistency:</strong> [[K = a \\times b / 2]] matches the reported area.",
+              "<strong>Altitude consistency:</strong> [[h \\times c / 2]] gives the same area, since the altitude and hypotenuse are another base-height pair.",
+              "<strong>Projection sum:</strong> <em>p</em> + <em>q</em> = <em>c</em> exactly (up to rounding).",
+              "<strong>Radii positive:</strong> <em>r</em> &gt; 0 and <em>R</em> &gt; 0, with <em>R</em> = <em>c</em>/2.",
+              "<strong>Correct dimensions:</strong> sides, altitude, projections, and radii are lengths; area is length²; angles are in degrees."
+            ],
+            "note": "<strong>How calculations are performed:</strong> the solver uses double-precision floating-point arithmetic (about 15–16 significant decimal digits). Trigonometric functions take angles in degrees and convert internally. Displayed values are rounded for readability, but every check above should be evaluated on the unrounded values, where agreement holds to roughly 10 decimal places."
+          },
+          "shortLabels": {
+            "alt": "Altitude",
+            "angle": "Angle",
+            "area": "Area",
+            "meas": "Measurements",
+            "proj": "Projection",
+            "rad": "Radius",
+            "side": "Side",
+            "sideAngle": "Side from Angle",
+            "trig": "Trig Ratios"
+          },
+          "svgWords": {
+            "oppAdj": {
+              "adjacent": "Adjacent",
+              "hypotenuse": "Hypotenuse",
+              "opposite": "Opposite"
+            },
+            "prac1": {
+              "ladder": "ladder"
+            },
+            "prac3": {
+              "rafter": "rafter",
+              "rise": "rise",
+              "run": "run"
+            },
+            "prac4": {
+              "diagonal": "diagonal"
+            }
+          },
+          "triplesCalc": "Pythagorean Triples Calculator"
+        }
       },
       "pages": {
         "right-triangle-side-calculator": {

@@ -308,9 +308,7 @@ const sectionHeading = (
                 </span>
                 <span class="font-semibold text-on-surface" set:html={side.label} />
               </div>
-              <p class="mt-2 text-sm leading-relaxed text-on-surface-variant">
-                {side.description}
-              </p>
+              <p class="mt-2 text-sm leading-relaxed text-on-surface-variant" set:html={formatRootBars(side.description)} />
             </div>
           ))}
         </div>

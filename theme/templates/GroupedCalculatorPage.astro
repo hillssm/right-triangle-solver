@@ -42,6 +42,7 @@ const { locale, slug } = Astro.props;
 const groupedPage = getGroupedPageBySlug(slug);
 const isHubPage = slug === RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.slug;
 const isSidePage = slug === 'right-triangle-side-calculator';
+const hideOldSideContent = isSidePage && locale === 'en';
 
 if (!groupedPage && !isHubPage) {
   throw new Error(`Unknown grouped calculator slug: ${slug}`);
@@ -771,6 +772,8 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
         </script>
       </section>
 
+      {!hideOldSideContent && (
+      <>
       <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
         <h2>{sectionHeading(activePage.h2[0])}</h2>
         <p>{activePage.content!.intro}</p>
@@ -1097,6 +1100,8 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
             ))}
           </div>
         </section>
+      )}
+      </>
       )}
     </>
   )}

@@ -3,6 +3,7 @@
       calculateRightTriangle,
       formatAngleForMode,
       CALCULATOR_INPUT_KEYS,
+      SolverError,
       type AngleMode,
       type RightTriangleSolution,
       type CalculatorInputKey
@@ -380,6 +381,53 @@
         const labelEntered = l.entered || 'entered';
         const labelComputed = l.computed || 'computed';
         const labelSolvedFrom = l.solvedFrom || 'Solved from';
+        // English defaults for localizable solver messages. Per-locale overrides
+        // come from the tool labels as `err<CODE>` (e.g. errENTER_VALUE).
+        const EN_SOLVER_MESSAGES: Record<string, string> = {
+          ENTER_VALUE: 'Enter a value.',
+          ONLY_NUMBERS: 'Only numbers, parentheses, + - * /, and pi are allowed.',
+          INVALID_EXPRESSION: 'Invalid numeric expression.',
+          NOT_FINITE: 'Expression must evaluate to a finite number.',
+          NEED_TWO_VALUES: 'Enter at least two known values to solve the triangle.',
+          NEED_SIDE: 'At least one side (a, b, or c) is required. Angles alone cannot solve a triangle.',
+          SIDE_POSITIVE: 'Side {side} must be a positive number.',
+          ANGLE_RANGE_A: 'Angle A must be between 0 and 90 deg (0 and pi/2 radians).',
+          ANGLE_RANGE_B: 'Angle B must be between 0 and 90 deg (0 and pi/2 radians).',
+          ANGLES_SUM: 'Angles must satisfy A + B = 90 deg (pi/2 radians).',
+          ANGLES_ALONE: 'Angles A and B alone are not enough. Provide one side and one angle.',
+          HYP_LARGEST: 'Hypotenuse c must be the largest side.',
+          HYP_LARGER_A: 'Hypotenuse c must be larger than side a.',
+          HYP_LARGER_B: 'Hypotenuse c must be larger than side b.',
+          INPUTS_INVALID: 'Inputs do not form a valid right triangle.',
+          INCONSISTENT: '{name} is inconsistent with other inputs.',
+          COMPUTED_INVALID: 'Computed values are invalid. Please check your inputs.',
+          ANGLE_A_SMALL: 'Angle A is too small for stable computation.',
+          ANGLE_A_NEAR_90: 'Angle A is too close to 90 deg for stable computation.',
+          ANGLE_B_SMALL: 'Angle B is too small for stable computation.',
+          ANGLE_B_NEAR_90: 'Angle B is too close to 90 deg for stable computation.',
+          COMBO_UNSUPPORTED: 'The combination "{combo}" is not supported for right-triangle calculations.',
+          ENTER_VALID_ANGLE: 'Enter a valid angle.',
+          ENTER_VALID_VALUE: 'Enter a valid value for {field}.',
+          UNABLE_TO_SOLVE: 'Unable to solve.',
+          COPY_ERROR: 'Error copying results.'
+        };
+        const FIELD_NAME_LABELS: Record<string, string> = {
+          a: l.sideA || 'Side a',
+          b: l.sideB || 'Side b',
+          c: l.hypotenuseC || 'Hypotenuse c',
+          alpha: l.angleA || 'Angle A',
+          beta: l.angleB || 'Angle B'
+        };
+        const formatSolverMessage = (code: string, params: Record<string, string | number> = {}): string => {
+          const template = (l as Record<string, string>)['err' + code] || EN_SOLVER_MESSAGES[code] || code;
+          const resolved: Record<string, string | number> = { ...params };
+          if (code === 'INCONSISTENT' && typeof resolved.key === 'string') {
+            resolved.name = FIELD_NAME_LABELS[resolved.key] || resolved.key;
+          }
+          return template.replace(/\{(\w+)\}/g, (_m, k: string) =>
+            resolved[k] !== undefined ? String(resolved[k]) : `{${k}}`
+          );
+        };
         const labelStatusDefault = l.statusDefault || '';
         const labelSolutionStepsDefault = l.solutionStepsDefault || '';
         const stepUiLabels: StepUiLabels = {
@@ -422,9 +470,9 @@
         fillEl.setAttribute('d', DEFAULT_PATH);
         altitudeLineEl.setAttribute('opacity', '0');
         labelH.setAttribute('opacity', '0');
-        labelA.textContent = 'a = input';
-        labelB.textContent = 'b = input';
-        labelC.textContent = 'c = result';
+        labelA.textContent = `a = ${l.vizInput || 'input'}`;
+        labelB.textContent = `b = ${l.vizInput || 'input'}`;
+        labelC.textContent = `c = ${l.vizResult || 'result'}`;
         labelAngleAlpha.textContent = 'A = —';
         labelAngleBeta.textContent = 'B = —';
         labelH.textContent = 'h = —';
@@ -552,11 +600,14 @@
             values[key] = parsed;
             setFieldError(key, '');
           } catch (error) {
-            const fallback =
-              key === 'alpha' || key === 'beta'
-                ? 'Enter a valid angle.'
-                : `Enter a valid value for ${key}.`;
-            setFieldError(key, error instanceof Error ? error.message : fallback);
+            const message =
+              error instanceof SolverError
+                ? formatSolverMessage(error.code, error.params)
+                : formatSolverMessage(
+                    key === 'alpha' || key === 'beta' ? 'ENTER_VALID_ANGLE' : 'ENTER_VALID_VALUE',
+                    { field: key }
+                  );
+            setFieldError(key, message);
             hasAnyError = true;
           }
         }
@@ -601,16 +652,13 @@
             const readableCase = solution.combination.replace('+', ' + ').replace('alpha', 'A').replace('beta', 'B');
             setStatus(`${labelSolvedFrom} ${readableCase}.`, false);
           } catch (error) {
-            const msg = error instanceof Error ? error.message : 'Unable to solve.';
-            const lowMsg = msg.toLowerCase();
-            let targetKey: CalculatorInputKey | null = null;
-
-            if (lowMsg.includes('c must be larger than side a') || lowMsg.includes('c must be greater than leg a') || lowMsg.includes('hypotenuse c must be')) targetKey = 'c';
-            else if (lowMsg.includes('c must be larger than side b') || lowMsg.includes('c must be greater than leg b')) targetKey = 'c';
-            else if (lowMsg.includes('side a must be a positive') || (!lowMsg.includes('hypotenuse') && lowMsg.includes('side a'))) targetKey = 'a';
-            else if (lowMsg.includes('side b must be a positive') || (!lowMsg.includes('hypotenuse') && lowMsg.includes('side b'))) targetKey = 'b';
-            else if (lowMsg.includes('angle a')) targetKey = 'alpha';
-            else if (lowMsg.includes('angle b')) targetKey = 'beta';
+            const solverError = error instanceof SolverError ? error : null;
+            const msg = solverError
+              ? formatSolverMessage(solverError.code, solverError.params)
+              : error instanceof Error && error.message
+                ? error.message
+                : formatSolverMessage('UNABLE_TO_SOLVE');
+            const targetKey: CalculatorInputKey | null = solverError ? solverError.field : null;
 
             if (targetKey) {
               setFieldError(targetKey, msg);
@@ -658,14 +706,14 @@
           `c = ${formatWithUnitRaw(lastSolution.c, unit)}`,
           `A = ${formatAngle(lastSolution.alphaRad, angleMode)}`,
           `B = ${formatAngle(lastSolution.betaRad, angleMode)}`,
-          `Area = ${formatWithUnitRaw(lastSolution.area, unit, 4, true)}`,
-          `Perimeter = ${formatWithUnitRaw(lastSolution.perimeter, unit)}`,
-          `Altitude h = ${formatWithUnitRaw(lastSolution.h, unit)}`,
-          `Semiperimeter s = ${formatWithUnitRaw(lastSolution.semiperimeter, unit)}`,
-          `Inradius r = ${formatWithUnitRaw(lastSolution.inradius, unit)}`,
-          `Circumradius R = ${formatWithUnitRaw(lastSolution.circumradius, unit)}`,
-          `Segment p = ${formatWithUnitRaw(lastSolution.segmentP, unit)}`,
-          `Segment q = ${formatWithUnitRaw(lastSolution.segmentQ, unit)}`
+          `${stepUiLabels.area} = ${formatWithUnitRaw(lastSolution.area, unit, 4, true)}`,
+          `${stepUiLabels.perimeter} = ${formatWithUnitRaw(lastSolution.perimeter, unit)}`,
+          `${stepUiLabels.altitude} = ${formatWithUnitRaw(lastSolution.h, unit)}`,
+          `${stepUiLabels.semiperimeter} = ${formatWithUnitRaw(lastSolution.semiperimeter, unit)}`,
+          `${stepUiLabels.inradius} = ${formatWithUnitRaw(lastSolution.inradius, unit)}`,
+          `${stepUiLabels.circumradius} = ${formatWithUnitRaw(lastSolution.circumradius, unit)}`,
+          `${stepUiLabels.segmentP} = ${formatWithUnitRaw(lastSolution.segmentP, unit)}`,
+          `${stepUiLabels.segmentQ} = ${formatWithUnitRaw(lastSolution.segmentQ, unit)}`
         ].join('\n');
 
         try {
@@ -684,7 +732,7 @@
           }
           setStatus(l.copySuccess || 'Copied.', false);
         } catch {
-          setStatus('Error copying results.', true);
+          setStatus(formatSolverMessage('COPY_ERROR'), true);
         }
       };
 

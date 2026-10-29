@@ -40,6 +40,24 @@ export type RightTriangleSolution = {
 };
 
 export const CALCULATOR_INPUT_KEYS: CalculatorInputKey[] = ['a', 'b', 'c', 'alpha', 'beta'];
+
+/**
+ * Localizable solver error. The UI maps `code` to a translated message
+ * (via the tool labels) and uses `field` to highlight the offending input.
+ * `params` fills {placeholders} in the message template.
+ */
+export class SolverError extends Error {
+  code: string;
+  params: Record<string, string | number>;
+  field: CalculatorInputKey | null;
+  constructor(code: string, params: Record<string, string | number> = {}, field: CalculatorInputKey | null = null) {
+    super(code);
+    this.name = 'SolverError';
+    this.code = code;
+    this.params = params;
+    this.field = field;
+  }
+}
 export const VALID_COMBINATIONS: SupportedCombination[] = [
   'a+b',
   'a+c',
@@ -103,21 +121,21 @@ const finalizeSolution = (payload: {
   const betaRad = sanitizeNearZero(payload.betaRad);
 
   if (!(a > 0) || !(b > 0) || !(c > 0)) {
-    throw new Error('Computed values are invalid. Please check your inputs.');
+    throw new SolverError('COMPUTED_INVALID');
   }
 
   if (!(c > a + EPSILON) || !(c > b + EPSILON)) {
-    throw new Error('Hypotenuse c must be the largest side.');
+    throw new SolverError('HYP_LARGEST');
   }
 
   const pythagoreanGap = Math.abs(a * a + b * b - c * c);
   const pythagoreanScale = Math.max(c * c, 1);
   if (pythagoreanGap > PYTHAGOREAN_TOLERANCE * pythagoreanScale) {
-    throw new Error('Inputs do not form a valid right triangle.');
+    throw new SolverError('INPUTS_INVALID');
   }
 
   if (Math.abs(alphaRad + betaRad - HALF_PI) > ANGLE_TOLERANCE) {
-    throw new Error('Angles must satisfy A + B = 90 deg (pi/2 radians).');
+    throw new SolverError('ANGLES_SUM');
   }
 
   // Final consistency check for all provided values
@@ -144,7 +162,7 @@ const finalizeSolution = (payload: {
 
     if (Math.abs(computed - provided) > tolerance) {
       const name = key === 'alpha' ? 'Angle A' : key === 'beta' ? 'Angle B' : `Side ${key}`;
-      throw new Error(`${name} is inconsistent with other inputs.`);
+      throw new SolverError('INCONSISTENT', { key }, key);
     }
   }
 
@@ -205,7 +223,7 @@ const finalizeSolution = (payload: {
 export const parseMathExpression = (raw: string): number => {
   const trimmed = raw.trim();
   if (!trimmed) {
-    throw new Error('Enter a value.');
+    throw new SolverError('ENTER_VALUE');
   }
 
   const normalized = trimmed.toLowerCase()
@@ -214,7 +232,7 @@ export const parseMathExpression = (raw: string): number => {
     .replace(/\s+/g, '');
 
   if (!/^[0-9pi+\-*/().]+$/.test(normalized)) {
-    throw new Error('Only numbers, parentheses, + - * /, and pi are allowed.');
+    throw new SolverError('ONLY_NUMBERS');
   }
 
   const expression = normalized.replace(/pi/g, `(${Math.PI})`);
@@ -223,12 +241,12 @@ export const parseMathExpression = (raw: string): number => {
   try {
     evaluated = Function(`"use strict"; return (${expression});`)();
   } catch {
-    throw new Error('Invalid numeric expression.');
+    throw new SolverError('INVALID_EXPRESSION');
   }
 
   const value = Number(evaluated);
   if (!Number.isFinite(value)) {
-    throw new Error('Expression must evaluate to a finite number.');
+    throw new SolverError('NOT_FINITE');
   }
 
   return value;
@@ -248,17 +266,17 @@ export const calculateRightTriangle = (
   const providedSideCount = (['a', 'b', 'c'] as const).filter((key) => values[key] !== undefined).length;
 
   if (providedKeys.length < 2) {
-    throw new Error('Enter at least two known values to solve the triangle.');
+    throw new SolverError('NEED_TWO_VALUES');
   }
 
   if (providedSideCount < 1) {
-    throw new Error('At least one side (a, b, or c) is required. Angles alone cannot solve a triangle.');
+    throw new SolverError('NEED_SIDE');
   }
 
   for (const sideKey of ['a', 'b', 'c'] as const) {
     const side = values[sideKey];
     if (side !== undefined && !(side > 0)) {
-      throw new Error(`Side ${sideKey} must be a positive number.`);
+      throw new SolverError('SIDE_POSITIVE', { side: sideKey }, sideKey);
     }
   }
 
@@ -269,26 +287,26 @@ export const calculateRightTriangle = (
   const beta = betaInput === undefined ? undefined : toRadians(betaInput, angleMode);
 
   if (alpha !== undefined && !(alpha > 0 && alpha < HALF_PI)) {
-    throw new Error('Angle A must be between 0 and 90 deg (0 and pi/2 radians).');
+    throw new SolverError('ANGLE_RANGE_A', {}, 'alpha');
   }
 
   if (beta !== undefined && !(beta > 0 && beta < HALF_PI)) {
-    throw new Error('Angle B must be between 0 and 90 deg (0 and pi/2 radians).');
+    throw new SolverError('ANGLE_RANGE_B', {}, 'beta');
   }
 
   if (alpha !== undefined && beta !== undefined) {
     if (Math.abs(alpha + beta - HALF_PI) > ANGLE_TOLERANCE) {
-      throw new Error('Angles must satisfy A + B = 90 deg (pi/2 radians).');
+      throw new SolverError('ANGLES_SUM');
     }
-    throw new Error('Angles A and B alone are not enough. Provide one side and one angle.');
+    throw new SolverError('ANGLES_ALONE');
   }
 
   if (values.c !== undefined && values.a !== undefined && values.c <= values.a + EPSILON) {
-    throw new Error('Hypotenuse c must be larger than side a.');
+    throw new SolverError('HYP_LARGER_A', {}, 'c');
   }
 
   if (values.c !== undefined && values.b !== undefined && values.c <= values.b + EPSILON) {
-    throw new Error('Hypotenuse c must be larger than side b.');
+    throw new SolverError('HYP_LARGER_B', {}, 'c');
   }
 
   const has = (key: CalculatorInputKey): boolean => values[key] !== undefined;
@@ -388,7 +406,7 @@ export const calculateRightTriangle = (
     const sine = Math.sin(alphaRad);
     const tangent = Math.tan(alphaRad);
     if (Math.abs(sine) < EPSILON || Math.abs(tangent) < EPSILON) {
-      throw new Error('Angle A is too small for stable computation.');
+      throw new SolverError('ANGLE_A_SMALL', {}, 'alpha');
     }
     const c = a / sine;
     const b = a / tangent;
@@ -419,7 +437,7 @@ export const calculateRightTriangle = (
     const cosine = Math.cos(betaRad);
     const tangent = Math.tan(betaRad);
     if (Math.abs(cosine) < EPSILON) {
-      throw new Error('Angle B is too close to 90 deg for stable computation.');
+      throw new SolverError('ANGLE_B_NEAR_90', {}, 'beta');
     }
     const c = a / cosine;
     const b = a * tangent;
@@ -449,7 +467,7 @@ export const calculateRightTriangle = (
     const cosine = Math.cos(alphaRad);
     const tangent = Math.tan(alphaRad);
     if (Math.abs(cosine) < EPSILON) {
-      throw new Error('Angle A is too close to 90 deg for stable computation.');
+      throw new SolverError('ANGLE_A_NEAR_90', {}, 'alpha');
     }
     const c = b / cosine;
     const a = b * tangent;
@@ -479,7 +497,7 @@ export const calculateRightTriangle = (
     const sine = Math.sin(betaRad);
     const tangent = Math.tan(betaRad);
     if (Math.abs(sine) < EPSILON || Math.abs(tangent) < EPSILON) {
-      throw new Error('Angle B is too small for stable computation.');
+      throw new SolverError('ANGLE_B_SMALL', {}, 'beta');
     }
     const c = b / sine;
     const a = b / tangent;
@@ -553,5 +571,5 @@ export const calculateRightTriangle = (
   }
 
   const chosen = providedKeys.join(' + ');
-  throw new Error(`The combination "${chosen}" is not supported for right-triangle calculations.`);
+  throw new SolverError('COMBO_UNSUPPORTED', { combo: chosen });
 };

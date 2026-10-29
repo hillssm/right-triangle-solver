@@ -36,6 +36,35 @@ interface Props {
     tanA?: string;
     solutionSteps?: string;
     solutionStepsDefault?: string;
+    vizInput?: string;
+    vizResult?: string;
+    vizAriaLabel?: string;
+    errENTER_VALUE?: string;
+    errONLY_NUMBERS?: string;
+    errINVALID_EXPRESSION?: string;
+    errNOT_FINITE?: string;
+    errNEED_TWO_VALUES?: string;
+    errNEED_SIDE?: string;
+    errSIDE_POSITIVE?: string;
+    errANGLE_RANGE_A?: string;
+    errANGLE_RANGE_B?: string;
+    errANGLES_SUM?: string;
+    errANGLES_ALONE?: string;
+    errHYP_LARGEST?: string;
+    errHYP_LARGER_A?: string;
+    errHYP_LARGER_B?: string;
+    errINPUTS_INVALID?: string;
+    errINCONSISTENT?: string;
+    errCOMPUTED_INVALID?: string;
+    errANGLE_A_SMALL?: string;
+    errANGLE_A_NEAR_90?: string;
+    errANGLE_B_SMALL?: string;
+    errANGLE_B_NEAR_90?: string;
+    errCOMBO_UNSUPPORTED?: string;
+    errENTER_VALID_ANGLE?: string;
+    errENTER_VALID_VALUE?: string;
+    errUNABLE_TO_SOLVE?: string;
+    errCOPY_ERROR?: string;
     formulaLabel?: string;
     substitutionLabel?: string;
     answerLabel?: string;
@@ -94,6 +123,35 @@ const l = {
   tanA: labels.tanA ?? 'tan(A)',
   solutionSteps: labels.solutionSteps ?? 'Solution Steps',
   solutionStepsDefault: labels.solutionStepsDefault ?? 'Enter exactly 2 values with at least one side.',
+  vizInput: labels.vizInput ?? 'input',
+  vizResult: labels.vizResult ?? 'result',
+  vizAriaLabel: labels.vizAriaLabel ?? 'Dynamic right triangle',
+  errENTER_VALUE: labels.errENTER_VALUE,
+  errONLY_NUMBERS: labels.errONLY_NUMBERS,
+  errINVALID_EXPRESSION: labels.errINVALID_EXPRESSION,
+  errNOT_FINITE: labels.errNOT_FINITE,
+  errNEED_TWO_VALUES: labels.errNEED_TWO_VALUES,
+  errNEED_SIDE: labels.errNEED_SIDE,
+  errSIDE_POSITIVE: labels.errSIDE_POSITIVE,
+  errANGLE_RANGE_A: labels.errANGLE_RANGE_A,
+  errANGLE_RANGE_B: labels.errANGLE_RANGE_B,
+  errANGLES_SUM: labels.errANGLES_SUM,
+  errANGLES_ALONE: labels.errANGLES_ALONE,
+  errHYP_LARGEST: labels.errHYP_LARGEST,
+  errHYP_LARGER_A: labels.errHYP_LARGER_A,
+  errHYP_LARGER_B: labels.errHYP_LARGER_B,
+  errINPUTS_INVALID: labels.errINPUTS_INVALID,
+  errINCONSISTENT: labels.errINCONSISTENT,
+  errCOMPUTED_INVALID: labels.errCOMPUTED_INVALID,
+  errANGLE_A_SMALL: labels.errANGLE_A_SMALL,
+  errANGLE_A_NEAR_90: labels.errANGLE_A_NEAR_90,
+  errANGLE_B_SMALL: labels.errANGLE_B_SMALL,
+  errANGLE_B_NEAR_90: labels.errANGLE_B_NEAR_90,
+  errCOMBO_UNSUPPORTED: labels.errCOMBO_UNSUPPORTED,
+  errENTER_VALID_ANGLE: labels.errENTER_VALID_ANGLE,
+  errENTER_VALID_VALUE: labels.errENTER_VALID_VALUE,
+  errUNABLE_TO_SOLVE: labels.errUNABLE_TO_SOLVE,
+  errCOPY_ERROR: labels.errCOPY_ERROR,
   formulaLabel: labels.formulaLabel ?? 'Formula',
   substitutionLabel: labels.substitutionLabel ?? 'Substitution',
   answerLabel: labels.answerLabel ?? 'Answer',
@@ -302,7 +360,7 @@ const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
 
       <div class="relative mt-5 overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-lowest/70 p-4 sm:p-6">
         <div class="dot-grid pointer-events-none absolute inset-0 opacity-[0.08]"></div>
-        <svg class="relative h-auto w-full" viewBox="0 0 460 300" aria-label="Dynamic right triangle">
+        <svg class="relative h-auto w-full" viewBox="0 0 460 300" aria-label={l.vizAriaLabel}>
           <defs>
             <linearGradient id="rt-fill-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stop-color="#f1c97d" stop-opacity="0.3"></stop>
@@ -315,9 +373,9 @@ const rightTriangleToolModuleUrl = '/js/right-triangle-tool.js';
           <path d="M 70 70 L 70 260 L 380 260 Z" fill="url(#rt-fill-gradient)" data-triangle-fill></path>
           <line x1="70" y1="260" x2="196" y2="184" stroke="#f1c97d" stroke-width="2" stroke-dasharray="5 4" opacity="0" data-altitude-line></line>
 
-          <text x="54" y="170" fill="#d0c5af" font-family="'Noto Serif', serif" font-style="italic" font-size="13" text-anchor="end" data-label-a>a = input</text>
-          <text x="226" y="284" fill="#d0c5af" font-family="'Noto Serif', serif" font-style="italic" font-size="13" text-anchor="middle" data-label-b>b = input</text>
-          <text x="250" y="145" fill="#f1c97d" font-family="'Noto Serif', serif" font-style="italic" font-size="14" font-weight="700" data-label-c>c = result</text>
+          <text x="54" y="170" fill="#d0c5af" font-family="'Noto Serif', serif" font-style="italic" font-size="13" text-anchor="end" data-label-a>a = {l.vizInput}</text>
+          <text x="226" y="284" fill="#d0c5af" font-family="'Noto Serif', serif" font-style="italic" font-size="13" text-anchor="middle" data-label-b>b = {l.vizInput}</text>
+          <text x="250" y="145" fill="#f1c97d" font-family="'Noto Serif', serif" font-style="italic" font-size="14" font-weight="700" data-label-c>c = {l.vizResult}</text>
           <text x="310" y="252" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="11" data-label-angle-alpha>A = —</text>
           <text x="90" y="105" fill="#b6b5b4" font-family="'Noto Serif', serif" font-style="italic" font-size="11" data-label-angle-beta>B = —</text>
           <text x="208" y="196" fill="#f1c97d" font-family="'Noto Serif', serif" font-style="italic" font-size="11" opacity="0" data-label-h>h = —</text>

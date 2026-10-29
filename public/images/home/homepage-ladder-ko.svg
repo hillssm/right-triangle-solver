@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420">
+<line x1="110.0" y1="360.0" x2="530.0" y2="360.0" stroke="#99907c" stroke-width="3" stroke-linecap="round" />
+<line x1="430.0" y1="60.0" x2="430.0" y2="360.0" stroke="#99907c" stroke-width="3" stroke-linecap="round" />
+<polygon points="250.0,360.0 430.0,120.0 430.0,360.0" fill="#f1c97d" fill-opacity="0.08" />
+<line x1="250.0" y1="360.0" x2="430.0" y2="120.0" stroke="#f1c97d" stroke-width="4" stroke-linecap="round" />
+<polyline points="408.0,360.0 408.0,338.0 430.0,338.0" stroke="#d0c5af" stroke-width="2" fill="none" />
+<circle cx="250.0" cy="360.0" r="5" fill="#f1c97d" />
+<circle cx="430.0" cy="120.0" r="5" fill="#f1c97d" />
+<text x="312.0" y="220.0" font-family="system-ui, sans-serif" font-size="20" fill="#ffffff" text-anchor="end" font-weight="bold">사다리 5 m</text>
+<text x="416.0" y="244.0" font-family="system-ui, sans-serif" font-size="20" fill="#ffffff" text-anchor="end" font-weight="bold">4 m</text>
+<text x="340.0" y="388.0" font-family="system-ui, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">3 m</text>
+<text x="444.0" y="200.0" font-family="system-ui, sans-serif" font-size="16" fill="#d0c5af" text-anchor="start" font-weight="normal">벽</text>
+<text x="444.0" y="388.0" font-family="system-ui, sans-serif" font-size="16" fill="#d0c5af" text-anchor="start" font-weight="normal">지면</text>
+<text x="398.0" y="330.0" font-family="system-ui, sans-serif" font-size="16" fill="#d0c5af" text-anchor="end" font-weight="normal">90°</text>
+</svg>

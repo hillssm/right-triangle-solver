@@ -133,44 +133,11 @@ const localizedPath = localizePath(locale, '/');
 
 const isDefaultLocale = locale === DEFAULT_LOCALE;
 
-// English-only homepage FAQ: the shared faq.json bundle is untouched, so
-// the FAQs page keeps its full list and every locale homepage keeps its
-// first six translated FAQs. These eight items cover the homepage FAQ set.
-const englishHomeFaqs = [
-  {
-    question: 'What information do I need to solve a right triangle?',
-    answer: 'Two independent measurements, including at least one side. Two legs, one leg and the hypotenuse, or one side and one acute angle are all enough. Two angles alone fix the shape but not the size, so they cannot determine the side lengths.'
-  },
-  {
-    question: 'Can I solve a right triangle using two sides?',
-    answer: 'Yes. Two legs give the hypotenuse through the Pythagorean theorem, and one leg plus the hypotenuse gives the other leg. The acute angles then follow from inverse trig ratios.'
-  },
-  {
-    question: 'Can I solve a right triangle using one side and one angle?',
-    answer: 'Yes. With one acute angle and one side, sine, cosine, or tangent gives the remaining sides, and the second angle is 90° minus the known angle.'
-  },
-  {
-    question: 'How do I calculate the hypotenuse?',
-    answer: 'If both legs are known, use c = √(a² + b²). For legs 3 and 4, c = √(9 + 16) = √25 = 5.'
-  },
-  {
-    question: 'How do I find a missing leg?',
-    answer: 'Use a = √(c² − b²) or b = √(c² − a²), with the whole subtraction inside the square root. The hypotenuse must be longer than the known leg, or the inputs cannot form a right triangle.'
-  },
-  {
-    question: 'Why is the hypotenuse the longest side?',
-    answer: 'Because c² = a² + b², and both a² and b² are positive, c² is larger than either a² or b² alone. So c is longer than either leg.'
-  },
-  {
-    question: 'Why might rounded angles not add up to exactly 90°?',
-    answer: 'The exact angles always add to 90°, but displayed values are rounded to two decimals. Two rounded values can add to 89.99° or 90.01°. The small difference is rounding, not an error in the triangle.'
-  },
-  {
-    question: 'When should I use a specialized right-triangle calculator?',
-    answer: 'Use a focused calculator when you need one job done well, such as an area from altitude, a projection, or a 30-60-90 triangle. The homepage solver covers the full triangle; the focused tools go deeper on a single measurement.'
-  }
-];
-const homeFaqs = isDefaultLocale ? englishHomeFaqs : bundle.faq.slice(0, 6);
+// Homepage FAQs come from content.<locale>.home.faqItems (translated per locale).
+// Falls back to the first six shared FAQs only if faqItems is missing.
+const homeFaqs = Array.isArray(homeAny.faqItems) && homeAny.faqItems.length
+  ? homeAny.faqItems
+  : bundle.faq.slice(0, 6);
 const blogHeading = pick(home, 'blogHeading', '');
 const blogCta = pick(home, 'blogCta', 'Read More');
 const latestPosts = blogHeading && isDefaultLocale
@@ -198,12 +165,12 @@ const latestPosts = blogHeading && isDefaultLocale
     <p class="mx-auto mt-3 max-w-xs text-xs tracking-[0.01em] text-on-surface sm:hidden opacity-90" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;">
       {pick(home, 'intro', 'Calculate hypotenuse, angles, area, and geometry instantly with our precision digital tool.')}
     </p>
-    {isDefaultLocale && pick(home, 'credibility', '') && (
+    {pick(home, 'credibility', '') && (
       <p class="mx-auto mt-5 max-w-2xl px-4 text-xs font-medium tracking-wide text-on-surface-variant sm:text-sm">
         {pick(home, 'credibility', '')}
       </p>
     )}
-    {isDefaultLocale && pick(home, 'browseAll', '') && (
+    {pick(home, 'browseAll', '') && (
       <a href="#all-calculators" class="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-primary transition-colors hover:text-tertiary">
         {pick(home, 'browseAll', '')}
         <span class="material-symbols-outlined text-sm">arrow_downward</span>
@@ -237,12 +204,11 @@ const latestPosts = blogHeading && isDefaultLocale
         {introNotationItems.map((item: string) => (
           <li set:html={formatListItem(item)} />
         ))}
-      </ul>{isDefaultLocale && (
-        <figure class="mt-6 overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-lowest/70 p-4 sm:p-6">
-          <img src="/images/home/homepage-labelled-triangle.svg" alt="Right triangle labelled with two legs, hypotenuse, right angle, and acute angles." class="mx-auto h-auto w-full max-w-[560px]" loading="lazy" />
-          <figcaption class="mt-3 text-center text-sm text-on-surface-variant">Legs a and b meet at the right angle C. The hypotenuse c faces the right angle, and A + B = 90°.</figcaption>
-        </figure>
-      )}
+      </ul>
+      <figure class="mt-6 overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-lowest/70 p-4 sm:p-6">
+        <img src="/images/home/homepage-labelled-triangle.svg" alt={pick(home, 'figLabelledAlt', 'Right triangle labelled with two legs, hypotenuse, right angle, and acute angles.')} class="mx-auto h-auto w-full max-w-[560px]" loading="lazy" />
+        <figcaption class="mt-3 text-center text-sm text-on-surface-variant">{pick(home, 'figLabelledCaption', 'Legs a and b meet at the right angle C. The hypotenuse c faces the right angle, and A + B = 90°.')}</figcaption>
+      </figure>
     </section>
 
     <section class="section-shell prose-shell">
@@ -253,12 +219,11 @@ const latestPosts = blogHeading && isDefaultLocale
         {formulaSideItems.map((item: string) => (
           <li set:html={formatListItem(item)} />
         ))}
-      </ul>{isDefaultLocale && (
-        <figure class="mt-6 overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-lowest/70 p-4 sm:p-6">
-          <img src="/images/home/homepage-345-triangle.svg" alt="Three-four-five right triangle illustrating the Pythagorean theorem." class="mx-auto h-auto w-full max-w-[560px]" loading="lazy" />
-          <figcaption class="mt-3 text-center text-sm text-on-surface-variant">The 3-4-5 triangle: 3² + 4² = 5², so the hypotenuse is 5.</figcaption>
-        </figure>
-      )}
+      </ul>
+      <figure class="mt-6 overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-lowest/70 p-4 sm:p-6">
+        <img src="/images/home/homepage-345-triangle.svg" alt={pick(home, 'fig345Alt', 'Three-four-five right triangle illustrating the Pythagorean theorem.')} class="mx-auto h-auto w-full max-w-[560px]" loading="lazy" />
+        <figcaption class="mt-3 text-center text-sm text-on-surface-variant">{pick(home, 'fig345Caption', 'The 3-4-5 triangle: 3² + 4² = 5², so the hypotenuse is 5.')}</figcaption>
+      </figure>
       <h3>{pick(formulaSection, 'angleTitle', 'Angle and trigonometric formulas')}</h3>
       <ul>
         {formulaAngleItems.map((item: string) => (
@@ -289,7 +254,7 @@ const latestPosts = blogHeading && isDefaultLocale
         ))}
       </ul>
 
-      {isDefaultLocale && solveSection.exampleTitle && (
+      {solveSection.exampleTitle && (
         <>
           <h3>{solveSection.exampleTitle}</h3>
           <p>{solveSection.exampleIntro}</p>
@@ -309,22 +274,21 @@ const latestPosts = blogHeading && isDefaultLocale
         {practicalItems.map((item: string) => (
           <li set:html={formatListItem(item)} />
         ))}
-      </ul>{isDefaultLocale && (
-        <>
-          <h3>Worked Example: How High Does a Ladder Reach?</h3>
-          <p>Problem: a 5 m ladder rests against a vertical wall, with its base 3 m from the wall. How high does it reach?</p>
-          <ul>
-            <li set:html={formatListItem('Given: hypotenuse c = 5 m, horizontal leg = 3 m, unknown vertical leg h.')} />
-            <li set:html={formatListItem('Formula: h = √(c² − a²).')} />
-            <li set:html={formatListItem('Substitution: h = √(5² − 3²) = √(25 − 9) = √16 = 4 m.')} />
-          </ul>
-          <p>Final answer: the ladder reaches 4 m up the wall. The ladder, wall, and floor form a right triangle only when the wall is vertical and the ground is level, and this model does not replace ladder-safety rules.</p>
-          <figure class="mt-6 overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-lowest/70 p-4 sm:p-6">
-            <img src="/images/home/homepage-ladder.svg" alt="Five-metre ladder leaning against a wall with a three-metre base distance and four-metre height." class="mx-auto h-auto w-full max-w-[560px]" loading="lazy" />
-            <figcaption class="mt-3 text-center text-sm text-on-surface-variant">A 5 m ladder with its base 3 m from the wall reaches 4 m up the wall.</figcaption>
-          </figure>
-        </>
-      )}
+      </ul>
+      <>
+        <h3>{pick(home, 'ladderTitle', 'Worked Example: How High Does a Ladder Reach?')}</h3>
+        <p>{pick(home, 'ladderProblem', 'Problem: a 5 m ladder rests against a vertical wall, with its base 3 m from the wall. How high does it reach?')}</p>
+        <ul>
+          {(Array.isArray(home.ladderItems) ? (home.ladderItems as string[]) : []).map((item: string) => (
+            <li set:html={formatListItem(item)} />
+          ))}
+        </ul>
+        <p>{pick(home, 'ladderFinal', '')}</p>
+        <figure class="mt-6 overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-lowest/70 p-4 sm:p-6">
+          <img src={isDefaultLocale ? '/images/home/homepage-ladder.svg' : `/images/home/homepage-ladder-${locale}.svg`} alt={pick(home, 'ladderAlt', 'Five-metre ladder leaning against a wall with a three-metre base distance and four-metre height.')} class="mx-auto h-auto w-full max-w-[560px]" loading="lazy" />
+          <figcaption class="mt-3 text-center text-sm text-on-surface-variant">{pick(home, 'ladderCaption', 'A 5 m ladder with its base 3 m from the wall reaches 4 m up the wall.')}</figcaption>
+        </figure>
+      </>
 
       <h2>{pick(validationSection, 'checklistTitle', 'Accuracy Checklist Before You Finalize')}</h2>
       <ul>

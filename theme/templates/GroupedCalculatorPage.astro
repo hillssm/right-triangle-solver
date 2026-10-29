@@ -15,7 +15,9 @@ import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import HubGuide from 'theme/components/HubGuide.astro';
 import SideGuide from 'theme/components/SideGuide.astro';
+import SideGuideLocalized from 'theme/components/SideGuideLocalized.astro';
 import SideFromAngleGuide from 'theme/components/SideFromAngleGuide.astro';
+import { SIDE_GUIDE_TRANSLATIONS } from 'src/data/sideGuideTranslations';
 import { toAbsoluteUrl } from 'theme/utils/site';
 import { replaceGenericSeoHeading, seoSectionHeading } from 'theme/utils/seoHeadings';
 import { formatListItem } from 'src/utils/formatList';
@@ -44,7 +46,7 @@ const groupedPage = getGroupedPageBySlug(slug);
 const isHubPage = slug === RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.slug;
 const isSidePage = slug === 'right-triangle-side-calculator';
 const isSideFromAnglePage = slug === 'right-triangle-side-from-angle-calculator';
-const hideOldSideContent = isSidePage && locale === 'en';
+const hideOldSideContent = isSidePage;
 const hideOldSideFromAngleContent = isSideFromAnglePage && locale === 'en';
 
 if (!groupedPage && !isHubPage) {
@@ -1116,5 +1118,6 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
     </>
   )}
   {isSidePage && locale === 'en' ? <SideGuide /> : null}
+  {isSidePage && locale !== 'en' && SIDE_GUIDE_TRANSLATIONS[locale] ? <SideGuideLocalized guide={SIDE_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
   {isSideFromAnglePage && locale === 'en' ? <SideFromAngleGuide /> : null}
 </BaseLayout>

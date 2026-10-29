@@ -210,7 +210,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "metaDescription": "कर्ण और एक ज्ञात भुजा का उपयोग करके समकोण त्रिभुज की लापता भुजा ज्ञात करें। भुजा b की गणना करें, सूत्र का अनुसरण करें और हल किए गए उदाहरण देखें।",
         "formulaSlug": "leg-from-hypotenuse-and-other-leg",
         "toolPurpose": "याद रखें: c हमेशा कर्ण होता है — सबसे लंबी <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a>, समकोण के <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">सम्मुख</a>। यह कोई भुजा (लेग) नहीं है। यदि आपके पास दो भुजाएँ हैं और इसके बजाय कर्ण चाहिए, तो <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">पाइथागोरस प्रमेय</a> कैलकुलेटर का उपयोग करें।",
-        "intro": "यह <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> समकोण त्रिभुज की लापता भुजा b ज्ञात करता है जब आपको कर्ण c और दूसरी भुजा a ज्ञात हो। अपने दो माप दर्ज करें, और यह सूत्र b = √(c² − a²) लगाकर पूर्ण हल चरणों सहित अज्ञात भुजा की तुरंत गणना करता है। कर्ण सबसे लंबी भुजा होती है, समकोण के सम्मुख। दो भुजाएँ मिलकर वह समकोण बनाती हैं। यह जानना कि कौन-सी भुजा कौन-सी है, हर बार सही उत्तर सुनिश्चित करता है।",
+        "intro": "कर्ण c और ज्ञात भुजा a से समकोण त्रिभुज की लापता भुजा b ज्ञात करें। b की गणना के लिए दोनों मान दर्ज करें।",
         "quickSummary": {
           "h2": "यह टूल क्या हल करता है",
           "intro": "इस पृष्ठ का उपयोग तब करें जब कर्ण और भुजा a ज्ञात हों, लेकिन दूसरी भुजा लापता हो। <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> वर्गमूल लेने से पहले ज्ञात भुजा को कर्ण से घटाने के लिए <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">पाइथागोरस प्रमेय</a> को पुनर्व्यवस्थित करता है।",
@@ -848,7 +848,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "metaDescription": "Halla el cateto faltante de un triángulo rectángulo con la hipotenusa y un cateto conocido. Calcula el lado b, sigue la fórmula y revisa los ejemplos resueltos.",
         "formulaSlug": "leg-from-hypotenuse-and-other-leg",
         "toolPurpose": "Recuerda: c es siempre la hipotenusa — el <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> más largo, opuesto al <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> recto. No es un cateto. Si tienes los dos catetos y necesitas la hipotenusa, usa la <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Calculadora del teorema de Pitágoras</a>.",
-        "intro": "Esta <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculadora</a> halla el cateto faltante b de un triángulo rectángulo cuando conoces la hipotenusa c y el otro cateto a. Introduce tus dos mediciones y aplica la fórmula b = √(c² − a²) para calcular el lado desconocido al instante, con todos los pasos de la solución. La hipotenusa es el lado más largo, opuesto al ángulo recto. Los dos catetos forman ese ángulo recto. Saber qué lado es cada uno garantiza que obtengas la respuesta correcta siempre.",
+        "intro": "Halla el cateto faltante b de un triángulo rectángulo a partir de la hipotenusa c y el cateto conocido a. Introduce ambos valores para calcular b al instante.",
         "quickSummary": {
           "h2": "Qué resuelve esta herramienta",
           "intro": "Usa esta página cuando conozcas la hipotenusa y el cateto a, pero te falte el otro cateto. La <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculadora</a> reordena el <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">teorema de Pitágoras</a> para restar el cateto conocido de la hipotenusa antes de extraer la raíz cuadrada.",
@@ -1486,7 +1486,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "metaDescription": "Найдите неизвестный катет прямоугольного треугольника по гипотенузе и одному известному катету. Вычислите сторону b, разберите формулу и посмотрите решённые примеры.",
         "formulaSlug": "leg-from-hypotenuse-and-other-leg",
         "toolPurpose": "Помните: c — это всегда гипотенуза — самая длинная <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a>, лежащая напротив прямого <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a>. Это не катет. Если вам известны два катета и нужно найти гипотенузу, используйте <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">калькулятор теоремы Пифагора</a>.",
-        "intro": "Этот <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">калькулятор</a> находит неизвестный катет b прямоугольного треугольника, если известны гипотенуза c и другой катет a. Введите два ваших измерения, и он применит формулу b = √(c² − a²), чтобы мгновенно вычислить неизвестную сторону, показав полное пошаговое решение. Гипотенуза — самая длинная сторона, лежащая напротив прямого угла. Два катета образуют этот прямой угол. Знание того, какая сторона есть какая, гарантирует правильный ответ каждый раз.",
+        "intro": "Найдите недостающий катет b прямоугольного треугольника по гипотенузе c и известному катету a. Введите оба значения, чтобы мгновенно вычислить b.",
         "quickSummary": {
           "h2": "Что решает этот инструмент",
           "intro": "Используйте эту страницу, когда известны гипотенуза и катет a, но другой катет неизвестен. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Калькулятор</a> преобразует <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">теорему Пифагора</a>, вычитая квадрат известного катета из квадрата гипотенузы, а затем извлекает квадратный корень.",
@@ -2303,7 +2303,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
             "Vérifiez la réponse en contrôlant que a² + b² est égal à c²."
           ]
         },
-        "intro": "Cette <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculatrice</a> trouve le côté manquant b d'un triangle rectangle lorsque vous connaissez l'hypoténuse c et l'autre côté a de l'angle droit. Entrez vos deux mesures, et elle applique la formule b = √(c² − a²) pour calculer instantanément le côté inconnu, avec toutes les étapes de résolution. L'hypoténuse est le côté le plus long, opposé à l'angle droit. Les deux côtés de l'angle droit forment cet angle droit. Savoir quel côté est lequel garantit un résultat correct à chaque fois.",
+        "intro": "Trouvez le côté manquant b d'un triangle rectangle à partir de l'hypoténuse c et du côté connu a. Entrez les deux valeurs pour calculer b instantanément.",
         "metaDescription": "Trouvez le côté manquant d'un triangle rectangle à partir de l'hypoténuse et d'un côté connu. Calculez le côté b, suivez la formule et consultez les exemples détaillés.",
         "metaTitle": "Calculatrice de côté manquant : trouver b à partir de c et a",
         "quickSummary": {
@@ -2762,7 +2762,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "metaDescription": "Finden Sie die fehlende Kathete eines rechtwinkligen Dreiecks anhand der Hypotenuse und einer bekannten Kathete. Berechnen Sie Seite b, folgen Sie der Formel und prüfen Sie durchgerechnete Beispiele.",
         "formulaSlug": "leg-from-hypotenuse-and-other-leg",
         "toolPurpose": "Denken Sie daran: c ist immer die Hypotenuse — die längste <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a>, gegenüber dem rechten <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a>. Es ist keine Kathete. Wenn Sie zwei Katheten haben und stattdessen die Hypotenuse benötigen, verwenden Sie den <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Satz-des-Pythagoras-Rechner</a>.",
-        "intro": "Dieser <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a> findet die fehlende Kathete b eines rechtwinkligen Dreiecks, wenn Sie die Hypotenuse c und die andere Kathete a kennen. Geben Sie Ihre beiden Messwerte ein, und der Rechner wendet die Formel b = √(c² − a²) an, um die unbekannte Seite sofort zu berechnen, mit vollständigen Lösungsschritten. Die Hypotenuse ist die längste Seite, gegenüber dem rechten Winkel. Die beiden Katheten bilden diesen rechten Winkel. Zu wissen, welche Seite welche ist, stellt sicher, dass Sie jedes Mal die richtige Antwort erhalten.",
+        "intro": "Finden Sie die fehlende Kathete b eines rechtwinkligen Dreiecks aus der Hypotenuse c und der bekannten Kathete a. Geben Sie beide Werte ein, um b sofort zu berechnen.",
         "quickSummary": {
           "h2": "Was dieses Tool berechnet",
           "intro": "Verwenden Sie diese Seite, wenn die Hypotenuse und Kathete a bekannt sind, aber die andere Kathete fehlt. Der <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a> stellt den <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Satz des Pythagoras</a> so um, dass die bekannte Kathete von der Hypotenuse subtrahiert wird, bevor die Quadratwurzel gezogen wird.",
@@ -3400,7 +3400,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "metaDescription": "Trova il cateto mancante di un triangolo rettangolo usando l'ipotenusa e un cateto noto. Calcola il lato b, segui la formula e consulta gli esempi svolti.",
         "formulaSlug": "leg-from-hypotenuse-and-other-leg",
         "toolPurpose": "Ricorda: c è sempre l'ipotenusa — il <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lato</a> più lungo, opposto all'<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angolo</a> retto. Non è un cateto. Se hai due cateti e devi trovare l'ipotenusa, usa la <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Calcolatrice del teorema di Pitagora</a>.",
-        "intro": "Questa <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calcolatrice</a> trova il cateto mancante b di un triangolo rettangolo quando conosci l'ipotenusa c e l'altro cateto a. Inserisci le tue due misure e applicherà la formula b = √(c² − a²) per calcolare istantaneamente il lato sconosciuto, con tutti i passaggi della soluzione. L'ipotenusa è il lato più lungo, opposto all'angolo retto. I due cateti formano quell'angolo retto. Sapere qual è quale lato ti assicura di ottenere ogni volta la risposta corretta.",
+        "intro": "Trova il cateto mancante b di un triangolo rettangolo dall'ipotenusa c e dal cateto noto a. Inserisci entrambi i valori per calcolare b all'istante.",
         "quickSummary": {
           "h2": "Cosa risolve questo strumento",
           "intro": "Usa questa pagina quando l'ipotenusa e il cateto a sono noti, ma l'altro cateto è mancante. La <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calcolatrice</a> riorganizza il <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">teorema di Pitagora</a> per sottrarre il cateto noto dall'ipotenusa prima di estrarre la radice quadrata.",
@@ -4038,7 +4038,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "metaDescription": "Encontre o cateto desconhecido de um triângulo retângulo usando a hipotenusa e um cateto conhecido. Calcule o lado b, acompanhe a fórmula e confira exemplos resolvidos.",
         "formulaSlug": "leg-from-hypotenuse-and-other-leg",
         "toolPurpose": "Lembre-se: c é sempre a hipotenusa — o maior <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a>, oposto ao <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ângulo reto</a>. Não é um cateto. Se você conhece os dois catetos e precisa da hipotenusa, use a Calculadora do <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Teorema de Pitágoras</a>.",
-        "intro": "Esta <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculadora</a> encontra o cateto desconhecido b de um triângulo retângulo quando você conhece a hipotenusa c e o outro cateto a. Insira suas duas medidas e ela aplica a fórmula b = √(c² − a²) para calcular o lado desconhecido instantaneamente, com todos os passos da solução. A hipotenusa é o maior lado, oposto ao ângulo reto. Os dois catetos formam esse ângulo reto. Saber qual lado é qual garante que você obtenha a resposta correta todas as vezes.",
+        "intro": "Encontre o cateto faltante b de um triângulo retângulo a partir da hipotenusa c e do cateto conhecido a. Insira ambos os valores para calcular b instantaneamente.",
         "quickSummary": {
           "h2": "O que esta ferramenta resolve",
           "intro": "Use esta página quando a hipotenusa e o cateto a forem conhecidos, mas o outro cateto estiver em falta. A <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculadora</a> reorganiza o <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">teorema de Pitágoras</a> para subtrair o cateto conhecido da hipotenusa antes de extrair a raiz quadrada.",
@@ -4855,7 +4855,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
             "a² + b², c² এর সমান কিনা যাচাই করে উত্তরটি নিশ্চিত করুন।"
           ]
         },
-        "intro": "এই <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">ক্যালকুলেটর</a>টি অতিভুজ c এবং অন্য বাহু a জানা থাকলে সমকোণী ত্রিভুজের হারানো বাহু b নির্ণয় করে। আপনার দুটি পরিমাপ লিখুন, এবং এটি b = √(c² − a²) সূত্র প্রয়োগ করে সম্পূর্ণ সমাধান ধাপসহ অজানা বাহুটি তাৎক্ষণিকভাবে গণনা করে। অতিভুজ হলো দীর্ঘতম বাহু, সমকোণের বিপরীতে অবস্থিত। দুটি বাহু মিলে সেই সমকোণ তৈরি করে। কোনটি কোন বাহু তা জানা থাকলে আপনি প্রতিবার সঠিক উত্তর পাবেন।",
+        "intro": "অতিভুজ c এবং জ্ঞাত বাহু a থেকে সমকোণী ত্রিভুজের হারানো বাহু b নির্ণয় করুন। b গণনা করতে উভয় মান লিখুন।",
         "metaDescription": "অতিভুজ এবং একটি জ্ঞাত বাহু ব্যবহার করে সমকোণী ত্রিভুজের হারানো বাহু নির্ণয় করুন। বাহু b গণনা করুন, সূত্রটি অনুসরণ করুন এবং সমাধানকৃত উদাহরণ দেখুন।",
         "metaTitle": "হারানো বাহু ক্যালকুলেটর: c ও a থেকে b নির্ণয়",
         "quickSummary": {
@@ -5314,7 +5314,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "metaDescription": "斜辺と1つの既知の辺から、直角三角形の欠けた辺を求めます。辺bを計算し、公式に沿って手順を確認し、例題でチェックしましょう。",
         "formulaSlug": "leg-from-hypotenuse-and-other-leg",
         "toolPurpose": "覚えておきましょう：cは常に斜辺です — 最も長い<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a>で、直角の<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角</a>の向かい側にあります。斜辺は直角を挟む辺ではありません。2つの辺が分かっていて斜辺を求めたい場合は、<a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">ピタゴラスの定理</a>計算機を使いましょう。",
-        "intro": "この<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機</a>は、斜辺cと他の辺aが分かっているときに直角三角形の欠けた辺bを求めます。2つの測定値を入力すると、公式b = √(c² − a²)で未知の辺を即座に計算し、すべての計算手順を表示します。斜辺は最も長い辺で、直角の向かい側にあります。2つの辺（直角を挟む辺）がその直角を作ります。どの辺がどれかを正しく見分けることが、毎回正しい答えを得るコツです。",
+        "intro": "斜辺cと既知の辺aから直角三角形の欠けた辺bを求めます。両方の値を入力してbを即座に計算しましょう。",
         "quickSummary": {
           "h2": "このツールで解けること",
           "intro": "斜辺と辺aが分かっているが、もう1つの辺が不明な場合にこのページを使います。<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機</a>は<a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">ピタゴラスの定理</a>を変形し、平方根を取る前に斜辺から既知の辺を差し引きます。",
@@ -5952,7 +5952,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "metaDescription": "빗변과 알려진 한 변을 이용해 직각삼각형의 누락된 변을 구하세요. 변 b를 계산하고, 공식을 확인하며, 풀이 예제를 살펴보세요.",
         "formulaSlug": "leg-from-hypotenuse-and-other-leg",
         "toolPurpose": "기억하세요: c는 항상 빗변 — 가장 긴 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>이며, <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">직각</a>의 맞은편에 있습니다. 빗변은 직각변이 아닙니다. 두 변을 알고 있고 빗변을 구해야 한다면 <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">피타고라스 정리</a> 계산기를 사용하세요.",
-        "intro": "이 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>는 빗변 c와 다른 한 변 a를 알 때 직각삼각형의 누락된 변 b를 구합니다. 두 측정값을 입력하면 공식 b = √(c² − a²)를 적용해 단계별 풀이와 함께 미지의 변을 즉시 계산합니다. 빗변은 직각의 맞은편에 있는 가장 긴 변입니다. 두 직각변은 그 직각을 이룹니다. 어느 변이 어느 변인지 알면 매번 정확한 답을 얻을 수 있습니다.",
+        "intro": "빗변 c와 알려진 변 a로부터 직각삼각형의 빠진 변 b를 구합니다. 두 값을 입력하면 b를 즉시 계산합니다.",
         "quickSummary": {
           "h2": "이 도구가 푸는 것",
           "intro": "빗변과 변 a는 알지만 다른 한 변이 누락된 경우 이 페이지를 사용하세요. 이 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>는 <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">피타고라스 정리</a>를 변형하여, 제곱근을 구하기 전에 빗변의 제곱에서 알려진 변의 제곱을 뺍니다.",
@@ -6769,7 +6769,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
             "Sahkan jawapan dengan memeriksa bahawa a² + b² bersamaan dengan c²."
           ]
         },
-        "intro": "<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Kalkulator</a> ini mencari sisi hilang b bagi segi tiga bersudut tepat apabila anda mengetahui hipotenus c dan sisi a yang satu lagi. Masukkan dua ukuran anda, dan ia menggunakan formula b = √(c² − a²) untuk mengira sisi yang tidak diketahui dengan serta-merta, berserta langkah penyelesaian penuh. Hipotenus ialah sisi terpanjang, bertentangan dengan sudut tepat. Kedua-dua sisi membentuk sudut tepat itu. Mengetahui sisi yang mana memastikan anda mendapat jawapan yang betul setiap kali.",
+        "intro": "Cari sisi b yang hilang bagi segi tiga tepat daripada hipotenus c dan sisi a yang diketahui. Masukkan kedua-dua nilai untuk mengira b dengan serta-merta.",
         "metaDescription": "Cari sisi hilang bagi segi tiga bersudut tepat menggunakan hipotenus dan satu sisi yang diketahui. Kira sisi b, ikuti formula, dan semak contoh yang diselesaikan.",
         "metaTitle": "Kalkulator Sisi Hilang: Cari b daripada c dan a",
         "quickSummary": {
@@ -7228,7 +7228,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "metaDescription": "Znajdź brakującą przyprostokątną trójkąta prostokątnego, używając przeciwprostokątnej i jednej znanej przyprostokątnej. Oblicz bok b, poznaj wzór i sprawdź przykłady z rozwiązaniami.",
         "formulaSlug": "leg-from-hypotenuse-and-other-leg",
         "toolPurpose": "Pamiętaj: c to zawsze przeciwprostokątna — najdłuższy <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a>, położony naprzeciwko <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta prostego</a>. Nie jest to przyprostokątna. Jeśli znasz obie przyprostokątne i potrzebujesz przeciwprostokątnej, użyj kalkulatora <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">twierdzenia Pitagorasa</a>.",
-        "intro": "Ten <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> znajduje brakującą przyprostokątną b trójkąta prostokątnego, gdy znasz przeciwprostokątną c i drugą przyprostokątną a. Wpisz dwie znane miary, a kalkulator zastosuje wzór b = √(c² − a²), aby natychmiast obliczyć nieznany bok, pokazując wszystkie kroki rozwiązania. Przeciwprostokątna to najdłuższy bok, położony naprzeciwko kąta prostego. Dwie przyprostokątne tworzą ten kąt prosty. Wiedza, który bok jest którym, gwarantuje prawidłowy wynik za każdym razem.",
+        "intro": "Znajdź brakującą przyprostokątną b trójkąta prostokątnego na podstawie przeciwprostokątnej c i znanej przyprostokątnej a. Wprowadź obie wartości, aby natychmiast obliczyć b.",
         "quickSummary": {
           "h2": "Co rozwiązuje to narzędzie",
           "intro": "Użyj tej strony, gdy znane są przeciwprostokątna i przyprostokątna a, ale brakuje drugiej przyprostokątnej. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Kalkulator</a> przekształca <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">twierdzenie Pitagorasa</a>, aby odjąć znaną przyprostokątną od przeciwprostokątnej przed wyciągnięciem pierwiastka kwadratowego.",
@@ -7866,7 +7866,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "metaDescription": "Cari sisi siku-siku yang hilang dari segitiga siku-siku menggunakan hipotenusa dan satu sisi siku-siku yang diketahui. Hitung sisi b, ikuti rumusnya, dan periksa contoh soal yang diselesaikan.",
         "formulaSlug": "leg-from-hypotenuse-and-other-leg",
         "toolPurpose": "Ingat: c selalu merupakan hipotenusa, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> terpanjang, yang berhadapan dengan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> siku-siku. Itu bukan sisi siku-siku. Jika Anda memiliki dua sisi siku-siku dan membutuhkan hipotenusa, gunakan Kalkulator <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Teorema Pythagoras</a>.",
-        "intro": "<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Kalkulator</a> ini mencari sisi siku-siku b yang hilang dari segitiga siku-siku ketika Anda mengetahui hipotenusa c dan sisi siku-siku lainnya a. Masukkan kedua pengukuran Anda, dan kalkulator akan menerapkan rumus b = √(c² − a²) untuk menghitung sisi yang tidak diketahui secara instan, lengkap dengan langkah-langkah penyelesaian. Hipotenusa adalah sisi terpanjang, yang berhadapan dengan sudut siku-siku. Kedua sisi siku-siku membentuk sudut siku-siku tersebut. Mengetahui sisi mana yang mana memastikan Anda mendapatkan jawaban yang benar setiap saat.",
+        "intro": "Temukan sisi b yang hilang dari segitiga siku-siku berdasarkan hipotenusa c dan sisi a yang diketahui. Masukkan kedua nilai untuk menghitung b secara instan.",
         "quickSummary": {
           "h2": "Apa yang Diselesaikan Alat Ini",
           "intro": "Gunakan halaman ini ketika hipotenusa dan sisi siku-siku a diketahui, tetapi sisi siku-siku lainnya hilang. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Kalkulator</a> ini menyusun ulang <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">teorema Pythagoras</a> untuk mengurangkan sisi siku-siku yang diketahui dari hipotenusa sebelum mengambil akar kuadrat.",
@@ -8683,7 +8683,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
             "تحقق من الإجابة بالتأكد من أن a² + b² تساوي c²."
           ]
         },
-        "intro": "تعثر هذه <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">الحاسبة</a> على الضلع المفقود b في مثلث قائم الزاوية عندما تعرف الوتر c والضلع الآخر a. أدخل قياسيك، وستطبق الصيغة b = √(c² − a²) لحساب الضلع المجهول فورًا، مع خطوات الحل الكاملة. الوتر هو أطول ضلع، ويقع مقابل الزاوية القائمة. ويشكل الضلعان القائمان تلك الزاوية القائمة. ومعرفة أي ضلع هو أي ضلع تضمن حصولك على الإجابة الصحيحة في كل مرة.",
+        "intro": "أوجد الضلع المفقود b للمثلث القائم الزاوية من الوتر c والضلع المعلوم a. أدخل القيمتين لحساب b فورًا.",
         "metaDescription": "أوجد الضلع المفقود في المثلث القائم الزاوية باستخدام الوتر وضلع معروف. احسب الضلع b، واتبع الصيغة، وتحقق من الأمثلة المحلولة.",
         "metaTitle": "حاسبة الضلع المفقود: أوجد b من c وa",
         "quickSummary": {
@@ -9142,7 +9142,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "metaDescription": "Намерете липсващия катет на правоъгълен триъгълник, като използвате хипотенузата и един известен катет. Изчислете страна b, следвайте формулата и проверете решените примери.",
         "formulaSlug": "leg-from-hypotenuse-and-other-leg",
         "toolPurpose": "Запомнете: c винаги е хипотенузата — най-дългата <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">страна</a>, срещу правия <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ъгъл</a>. Тя не е катет. Ако имате два катета и ви трябва хипотенузата, използвайте <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Калкулатор за Питагорова теорема</a>.",
-        "intro": "Този <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">калкулатор</a> намира липсващия катет b на правоъгълен триъгълник, когато знаете хипотенузата c и другия катет a. Въведете двете си измервания и той прилага формулата b = √(c² − a²), за да изчисли неизвестната страна незабавно, с пълни стъпки на решението. Хипотенузата е най-дългата страна, срещу правия ъгъл. Двата катета образуват този прав ъгъл. Знаейки коя страна е коя, гарантирате, че всеки път ще получавате верния отговор.",
+        "intro": "Намерете липсващия катет b на правоъгълен триъгълник по хипотенузата c и известния катет a. Въведете двете стойности, за да изчислите b незабавно.",
         "quickSummary": {
           "h2": "Какво решава този инструмент",
           "intro": "Използвайте тази страница, когато хипотенузата и катет a са известни, но другият катет липсва. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Калкулаторът</a> пренарежда <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Питагоровата теорема</a>, за да извади известния катет от хипотенузата, преди да вземе квадратния корен.",
@@ -9959,7 +9959,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
             "a² + b²'nin c²'ye eşit olduğunu kontrol ederek cevabı doğrulayın."
           ]
         },
-        "intro": "Bu <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesap makinesi</a>, hipotenüs c ve diğer dik kenar a bilindiğinde bir dik üçgenin eksik b dik kenarını bulur. İki ölçünüzü girin; bilinmeyen kenarı anında, tüm çözüm adımlarıyla birlikte hesaplamak için b = √(c² − a²) formülünü uygular. Hipotenüs, dik açının karşısındaki en uzun kenardır. İki dik kenar bu dik açıyı oluşturur. Hangi kenarın hangisi olduğunu bilmek her seferinde doğru cevabı almanızı sağlar.",
+        "intro": "Hipotenüs c ve bilinen dik kenar a'dan dik üçgenin kayıp dik kenarı b'yi bulun. b'yi anında hesaplamak için her iki değeri girin.",
         "metaDescription": "Hipotenüs ve bilinen bir dik kenar kullanarak dik üçgenin eksik dik kenarını bulun. b kenarını hesaplayın, formülü takip edin ve çözümlü örnekleri inceleyin.",
         "metaTitle": "Eksik Dik Kenar Hesaplayıcı: c ve a'dan b'yi Bulun",
         "quickSummary": {
@@ -10418,7 +10418,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "metaDescription": "Hitta den saknade kateten i en rätvinklig triangel med hjälp av hypotenusan och en känd katet. Beräkna sidan b, följ formeln och granska de genomarbetade exemplen.",
         "formulaSlug": "leg-from-hypotenuse-and-other-leg",
         "toolPurpose": "Kom ihåg: c är alltid hypotenusan — den längsta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>, mittemot den räta <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkeln</a>. Den är inte en katet. Om du har två kateter och behöver hypotenusan istället, använd <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Pythagoras sats</a>-kalkylatorn.",
-        "intro": "Denna <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> hittar den saknade kateten b i en rätvinklig triangel när du känner till hypotenusan c och den andra kateten a. Ange dina två mått, så tillämpar den formeln b = √(c² − a²) för att omedelbart beräkna den okända sidan, med fullständiga lösningsteg. Hypotenusan är den längsta sidan, mittemot den räta vinkeln. De två kateterna bildar den räta vinkeln. Att veta vilken sida som är vilken säkerställer att du får rätt svar varje gång.",
+        "intro": "Hitta den saknade kateten b i en rätvinklig triangel från hypotenusan c och den kända kateten a. Ange båda värdena för att beräkna b direkt.",
         "quickSummary": {
           "h2": "Vad detta verktyg löser",
           "intro": "Använd denna sida när hypotenusan och katet a är kända, men den andra kateten saknas. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Kalkylatorn</a> omformar <a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">Pythagoras sats</a> för att subtrahera den kända kateten från hypotenusan innan kvadratroten tas.",
@@ -11056,7 +11056,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
         "metaDescription": "使用斜边和一条已知的直角边求直角三角形的缺失直角边。计算边 b，学习公式，并查看例题解析。",
         "formulaSlug": "leg-from-hypotenuse-and-other-leg",
         "toolPurpose": "记住：c 始终是斜边 — 最长的<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">边</a>，位于<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">直角</a>的对边。它不是直角边。如果您已知两条直角边、需要求斜边，请使用<a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">勾股定理</a>计算器。",
-        "intro": "这个<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">计算器</a>可在已知斜边 c 和另一条直角边 a 时，求出直角三角形的缺失直角边 b。输入两个测量值，它将应用公式 b = √(c² − a²)，即时算出未知边，并给出完整的解题步骤。斜边是最长的边，位于直角的对边。两条直角边构成该直角。分清每条边，就能每次都得到正确答案。",
+        "intro": "根据斜边 c 和已知直角边 a 求直角三角形的缺失直角边 b。输入两个值即可即时计算 b。",
         "quickSummary": {
           "h2": "本工具解决什么问题",
           "intro": "当斜边和直角边 a 已知、另一条直角边缺失时，请使用本页面。<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">计算器</a>对<a href=\"/pythagorean-theorem-calculator/\" class=\"text-primary hover:underline\">勾股定理</a>进行变形，先用斜边减去已知直角边，再取平方根。",

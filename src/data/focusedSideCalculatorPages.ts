@@ -279,7 +279,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     toolPurpose:
       'Remember: c is always the hypotenuse \u2014 the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. It is not a leg. If you have two legs and need the hypotenuse instead, use the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean Theorem</a> Calculator.',
     intro:
-      'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the missing leg b of a right triangle when you know the hypotenuse c and the other leg a. Enter your two measurements, and it applies the formula b = \u221a(c\u00b2 \u2212 a\u00b2) to compute the unknown side instantly, with full solution steps. The hypotenuse is the longest side, opposite the right angle. The two legs form that right angle. Knowing which side is which ensures you get the correct answer every time.',
+      'Find the missing leg b of a right triangle from the hypotenuse c and known leg a. Enter both values to calculate b instantly.',
     quickSummary: {
       h2: 'What This Tool Solves',
       intro:

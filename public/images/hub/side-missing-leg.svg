@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>Finding a missing leg using the hypotenuse</title>
+<desc>Two right triangles: 5-12-13 finding leg b, and 8-15-17 finding leg a.</desc>
+
+<text x="270" y="80" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">Find leg b</text>
+<polygon points="150,450 150,350 390,450" fill="rgba(241,201,125,0.07)"/>
+<line x1="150" y1="450" x2="150" y2="350" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
+<line x1="150" y1="450" x2="390" y2="450" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 6"/>
+<line x1="150" y1="350" x2="390" y2="450" stroke="#f472b6" stroke-width="4" stroke-linecap="round"/>
+<polyline points="150,430 170,430 170,450" stroke="#ffffff" stroke-width="2" fill="none"/>
+<text x="135" y="400.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#fbbf24" text-anchor="end">a = 5</text>
+<text x="270.0" y="480" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#38bdf8" text-anchor="middle" font-weight="bold">b = ?</text>
+<text x="300.0" y="390.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f472b6" text-anchor="middle">c = 13</text>
+<text x="270" y="520" font-family="Noto Serif, Georgia, serif" font-size="22" fill="#ffffff" text-anchor="middle" font-style="italic">b = √(13² − 5²) = √144 = 12</text>
+<line x1="600" y1="50" x2="600" y2="580" stroke="#d0c5af" stroke-width="1" opacity="0.3"/>
+<text x="862" y="80" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">Find leg a</text>
+<polygon points="750,450 975,450 750,330" fill="rgba(241,201,125,0.07)"/>
+<line x1="750" y1="450" x2="975" y2="450" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
+<line x1="750" y1="450" x2="750" y2="330" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 6"/>
+<line x1="975" y1="450" x2="750" y2="330" stroke="#f472b6" stroke-width="4" stroke-linecap="round"/>
+<polyline points="750,430 770,430 770,450" stroke="#ffffff" stroke-width="2" fill="none"/>
+<text x="862.5" y="480" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#fbbf24" text-anchor="middle">b = 15</text>
+<text x="735" y="390.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#38bdf8" text-anchor="end" font-weight="bold">a = ?</text>
+<text x="897.5" y="390.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f472b6" text-anchor="middle">c = 17</text>
+<text x="862" y="520" font-family="Noto Serif, Georgia, serif" font-size="22" fill="#ffffff" text-anchor="middle" font-style="italic">a = √(17² − 15²) = √64 = 8</text>
+</svg>

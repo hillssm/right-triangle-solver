@@ -1,0 +1,433 @@
+---
+/**
+ * SideGuide.astro - Educational guide for the Right Triangle Side Calculator hub page.
+ * En-only (following HubGuide pattern). 17 sections, 4 SVG diagrams, 4 tables, 12 FAQs.
+ */
+import katex from 'katex';
+import { readFileSync, existsSync } from 'node:fs';
+import { join } from 'node:path';
+import Faq from 'theme/components/Faq.astro';
+
+const SIDE_IMG_DIR = join(process.cwd(), 'public', 'images', 'hub');
+
+const rich = (s: string): string => {
+  if (!s || typeof s !== 'string') return '';
+  let out = s;
+  out = out.replace(
+    /\[\[\[(.+?)\]\]\]/g,
+    (_, l) =>
+      `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
+  );
+  out = out.replace(
+    /\[\[(.+?)\]\]/g,
+    (_, l) =>
+      `<span dir="ltr" class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>`
+  );
+  return out;
+};
+
+const inlineSideSvg = (name: string): string => {
+  try {
+    return readFileSync(join(SIDE_IMG_DIR, name), 'utf8');
+  } catch {
+    return '';
+  }
+};
+
+const imgSrc = (name: string): string => `/images/hub/${name}`;
+---
+
+<!-- Table of Contents -->
+<nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label="Guide contents">
+  <h2 class="font-headline text-2xl font-bold">In This Guide</h2>
+  <ol class="mt-4 grid gap-2 sm:grid-cols-2">
+    <li><a class="hover:text-primary hover:underline" href="#side-intro">How to Find a Missing Side</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#side-anatomy">Understanding the Three Sides</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#side-pythagoras">The Pythagorean Theorem</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#side-hypotenuse">Finding the Hypotenuse</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#side-leg">Finding a Missing Leg</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#side-howto">Using the Calculator</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#side-formulas">Formulas at a Glance</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#side-applications">Real-Life Examples</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#side-triples">Pythagorean Triples</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#side-units">Units and Precision</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#side-invalid">Invalid Inputs</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#side-verify">Verifying Your Answer</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#side-mistakes">Common Mistakes</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#side-beyond">When Pythagoras Is Not Enough</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#side-related">Related Calculators</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#side-faq">FAQs</a></li>
+  </ol>
+</nav>
+
+<!-- Section 1: Introduction -->
+<section id="side-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Find a Missing Side of a Right Triangle</h2>
+  <p>A right triangle side calculator finds the unknown length in a right triangle when you know the other two sides. Common uses include measuring room diagonals, checking support beams, or verifying homework answers. The calculator needs exactly two side lengths to work. It applies the Pythagorean theorem relating the three sides of every right triangle. Finding the hypotenuse uses addition under a square root, while finding a missing leg uses subtraction. The method works only for right triangles, as the relationship depends on the 90-degree angle. For example, a right triangle with perpendicular sides of 6 cm and 8 cm has a hypotenuse of 10 cm. This same principle measures real distances, from ladder lengths to screen diagonals.</p>
+</section>
+
+<!-- Section 2: Understanding Sides -->
+<section id="side-anatomy" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding the Three Sides of a Right Triangle</h2>
+  
+  <h3>What Is a Right Triangle?</h3>
+  <p>A right triangle contains one angle measuring exactly 90 degrees, the same as the corner of a square or rectangle. The other two angles must be acute, meaning each measures less than 90 degrees. Since triangle angles sum to 180 degrees, the two non-right angles total 90 degrees. This differs from acute triangles (all angles under 90°) and obtuse triangles (one angle over 90°). The right angle creates the perpendicular relationship behind the Pythagorean theorem.</p>
+  
+  <h3>What Is the Hypotenuse?</h3>
+  <p>The hypotenuse sits opposite the right angle, stretching across from the 90-degree corner. It is always the longest side because it spans the greatest distance between any two vertices. In rotated diagrams, the side not touching the right-angle marker is the hypotenuse. This calculator labels it c, following the standard convention where c denotes the hypotenuse in the formula <span set:html={rich('[[a^2 + b^2 = c^2]]')} />.</p>
+  
+  <h3>What Are the Two Legs?</h3>
+  <p>The legs are the two sides that form the right angle, meeting at 90 degrees. They are labeled a and b in this calculator. Swapping labels does not change the hypotenuse, since a² + b² equals b² + a². The calculator keeps them separate so the missing-leg modes know which leg to solve for. When you know both legs, either order works for finding the hypotenuse.</p>
+  
+  <h3>How Can You Identify the Correct Side?</h3>
+  <p>Locate the right-angle marker (the small square). The opposite side is the hypotenuse; the two touching sides are the legs. For rotated diagrams, imagine turning the triangle until the right angle sits at the bottom left with one leg horizontal and the other vertical. Without a right-angle marker, confirm the triangle is right-angled before using this calculator.</p>
+  
+  <figure class="not-prose my-6">
+    <div class="mx-auto w-full max-w-xl" set:html={inlineSideSvg('side-anatomy.svg')} />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Parts of a right triangle: legs a and b form the right angle at C, hypotenuse c sits opposite, with acute angles A and B.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 3: Pythagorean Theorem -->
+<section id="side-pythagoras" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How the Pythagorean Theorem Calculates Triangle Sides</h2>
+  <p>The Pythagorean theorem states that <span set:html={rich('[[a^2 + b^2 = c^2]]')} />, where a and b are the legs and c is the hypotenuse. Each variable is a side length. Squaring multiplies a number by itself (6² = 36); the square root reverses this (√100 = 10). You take the root because the formula relates squared lengths, not lengths themselves. Adding leg lengths (6 + 8 = 14) is wrong; add their squares (36 + 64 = 100), then take the root. The theorem needs the 90-degree angle; non-right triangles require the Law of Cosines. All three calculator modes rearrange this equation: <span set:html={rich('[[c = \\sqrt{a^2 + b^2}]]')} />, <span set:html={rich('[[b = \\sqrt{c^2 - a^2}]]')} />, <span set:html={rich('[[a = \\sqrt{c^2 - b^2}]]')} />.</p>
+  
+  <h3>Understanding Why the Formula Works</h3>
+  <p>Draw a square on each side: areas a², b², and c². The theorem says the two smaller areas sum to the largest. For 3-4-5: squares of 9 and 16 square units sum to 25, the hypotenuse square area. Squaring matters because you compare areas, not lengths.</p>
+  
+  <figure class="not-prose my-6">
+    <div class="mx-auto w-full max-w-xl" set:html={inlineSideSvg('side-pythagoras-squares.svg')} />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Visual proof: the 9 and 16 square-unit squares on the legs combine to equal the 25 square-unit square on the hypotenuse.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 4: Finding Hypotenuse -->
+<section id="side-hypotenuse" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Find the Hypotenuse Using Two Legs</h2>
+  <p>Solving <span set:html={rich('[[a^2 + b^2 = c^2]]')} /> for c gives <span set:html={rich('[[c = \\sqrt{a^2 + b^2}]]')} />. The process: identify both legs, square each, add the squares, take the root, write the unit, and confirm the result exceeds both legs.</p>
+  
+  <h3>Example 1 — Finding the Hypotenuse of a 6-8 Right Triangle</h3>
+  <p>Given legs a = 6 cm and b = 8 cm: square each (36 and 64), add (100), take the root (10). The hypotenuse is 10 cm, exceeding both legs as expected.</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[c = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10\\text{ cm}]]]')} />
+  
+  <h3>Example 2 — Finding a Hypotenuse With Decimal Measurements</h3>
+  <p>Given a = 2.5 m, b = 6 m: 2.5² + 6² = 6.25 + 36 = 42.25, √42.25 = 6.5 m. Decimals need careful arithmetic; keep full precision until the final rounding.</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[c = \\sqrt{2.5^2 + 6^2} = \\sqrt{6.25 + 36} = \\sqrt{42.25} = 6.5\\text{ m}]]]')} />
+  
+  <h3>When Should You Use This Calculator Mode?</h3>
+  <p>Use hypotenuse mode with two known legs: room diagonals, support braces, or geometry problems giving perpendicular sides. With hypotenuse plus one leg, switch to missing-leg mode.</p>
+</section>
+
+<!-- Section 5: Finding Missing Leg -->
+<section id="side-leg" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Find a Missing Leg of a Right Triangle</h2>
+  <p>When you know the hypotenuse and one leg, rearrange the Pythagorean theorem to isolate the unknown leg. Starting from <span set:html={rich('[[a^2 + b^2 = c^2]]')} />, subtract the known leg squared from both sides. This gives two formulas, one for each leg.</p>
+  
+  <h3>Find Leg b When Hypotenuse c and Leg a Are Known</h3>
+  <p>The formula is <span set:html={rich('[[b = \\sqrt{c^2 - a^2}]]')} />. Derive it: begin with <span set:html={rich('[[a^2 + b^2 = c^2]]')} />, subtract a² from both sides to get <span set:html={rich('[[b^2 = c^2 - a^2]]')} />, then take the square root. The subtraction reflects that the hypotenuse squared contains both leg squares, so removing one leaves the other.</p>
+  
+  <h3>Example 3 — Find Leg b From a 13 cm Hypotenuse</h3>
+  <p>Given c = 13 cm and a = 5 cm, find leg b. Square both: 13² = 169 and 5² = 25. Subtract: 169 − 25 = 144. Take the root: √144 = 12. Leg b measures 12 cm. Verify: 5² + 12² = 25 + 144 = 169 = 13². The triple 5-12-13 confirms the result.</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[b = \\sqrt{13^2 - 5^2} = \\sqrt{169 - 25} = \\sqrt{144} = 12\\text{ cm}]]]')} />
+  
+  <h3>Find Leg a When Hypotenuse c and Leg b Are Known</h3>
+  <p>The formula is <span set:html={rich('[[a = \\sqrt{c^2 - b^2}]]')} />. The legs are interchangeable in the Pythagorean relationship; labeling one as a and the other as b is a convention. The calculator offers both modes so you can match the field labels to your specific problem without mentally swapping variables.</p>
+  
+  <h3>Example 4 — Finding the Unknown Leg</h3>
+  <p>Given c = 17 inches and b = 15 inches, find leg a. Square: 17² = 289 and 15² = 225. Subtract: 289 − 225 = 64. Take the root: √64 = 8. Leg a is 8 inches. This is the 8-15-17 triple. The two missing-leg modes differ only in which leg is known; the mathematics is identical.</p>
+  <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[a = \\sqrt{17^2 - 15^2} = \\sqrt{289 - 225} = \\sqrt{64} = 8\\text{ inches}]]]')} />
+  
+  <div class="not-prose overflow-x-auto my-6">
+    <table class="w-full min-w-[480px] border-collapse text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30 text-left">
+          <th class="py-2 pr-4 font-semibold">Known</th>
+          <th class="py-2 pr-4 font-semibold">Find</th>
+          <th class="py-2 pr-4 font-semibold">Formula</th>
+          <th class="py-2 font-semibold">Calculator Mode</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b border-outline-variant/15">
+          <td class="py-2 pr-4">c = 13, a = 5</td>
+          <td class="py-2 pr-4">b</td>
+          <td class="py-2 pr-4 font-mono">b = √(c² − a²)</td>
+          <td class="py-2">Missing Leg From c and a</td>
+        </tr>
+        <tr class="border-b border-outline-variant/15 last:border-0">
+          <td class="py-2 pr-4">c = 17, b = 15</td>
+          <td class="py-2 pr-4">a</td>
+          <td class="py-2 pr-4 font-mono">a = √(c² − b²)</td>
+          <td class="py-2">Missing Leg From c and b</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <figure class="not-prose my-6">
+    <div class="mx-auto w-full max-w-xl" set:html={inlineSideSvg('side-missing-leg.svg')} />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Two missing-leg calculations: finding b from the 5-12-13 triangle and finding a from the 8-15-17 triangle.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 6: Using the Calculator -->
+<section id="side-howto" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Use the Right Triangle Side Calculator</h2>
+  <ol>
+    <li><strong>Identify the two measurements you know.</strong> They must both be side lengths, not angles.</li>
+    <li><strong>Determine whether the missing value is the hypotenuse or a leg.</strong> If you know both legs, you need the hypotenuse. If you know the hypotenuse and one leg, you need the other leg.</li>
+    <li><strong>Choose the correct mode.</strong> Select "Pythagorean Theorem" for two known legs, "Missing Leg From c and a" when you know the hypotenuse and leg a, or "Missing Leg From c and b" when you know the hypotenuse and leg b.</li>
+    <li><strong>Enter both measurements into their matching fields.</strong> Double-check that each value goes into the correct field; swapping the hypotenuse with a leg produces an error.</li>
+    <li><strong>Choose the measurement unit.</strong> Use the same unit for both inputs.</li>
+    <li><strong>Calculate.</strong> The result appears with the solution steps showing the substitution and arithmetic.</li>
+    <li><strong>Review the result and steps.</strong> Confirm the formula matches your situation and the arithmetic looks correct.</li>
+    <li><strong>Check that the answer makes sense.</strong> The hypotenuse must exceed both legs. A missing leg must be shorter than the hypotenuse. If these fail, recheck your inputs.</li>
+  </ol>
+  <p>The calculator does not save results or generate downloadable reports. Use the reset option to clear fields for a new calculation.</p>
+</section>
+
+<!-- Section 7: Formulas at a Glance -->
+<section id="side-formulas" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Right Triangle Side Formulas at a Glance</h2>
+  <div class="not-prose overflow-x-auto my-6">
+    <table class="w-full min-w-[560px] border-collapse text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30 text-left">
+          <th class="py-2 pr-4 font-semibold">Known Measurements</th>
+          <th class="py-2 pr-4 font-semibold">Missing Side</th>
+          <th class="py-2 pr-4 font-semibold">Formula</th>
+          <th class="py-2 pr-4 font-semibold">Calculator Mode</th>
+          <th class="py-2 font-semibold">Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b border-outline-variant/15">
+          <td class="py-2 pr-4">Legs a and b</td>
+          <td class="py-2 pr-4">Hypotenuse c</td>
+          <td class="py-2 pr-4 font-mono">c = √(a² + b²)</td>
+          <td class="py-2 pr-4">Pythagorean Theorem</td>
+          <td class="py-2">a=6, b=8 → c=10</td>
+        </tr>
+        <tr class="border-b border-outline-variant/15">
+          <td class="py-2 pr-4">Hypotenuse c, leg a</td>
+          <td class="py-2 pr-4">Leg b</td>
+          <td class="py-2 pr-4 font-mono">b = √(c² − a²)</td>
+          <td class="py-2 pr-4">Missing Leg From c and a</td>
+          <td class="py-2">c=13, a=5 → b=12</td>
+        </tr>
+        <tr class="border-b border-outline-variant/15 last:border-0">
+          <td class="py-2 pr-4">Hypotenuse c, leg b</td>
+          <td class="py-2 pr-4">Leg a</td>
+          <td class="py-2 pr-4 font-mono">a = √(c² − b²)</td>
+          <td class="py-2 pr-4">Missing Leg From c and b</td>
+          <td class="py-2">c=17, b=15 → a=8</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>You do not need to memorize three separate formulas. Remember only <span set:html={rich('[[a^2 + b^2 = c^2]]')} />, then solve for the unknown. If c is unknown, add the leg squares and take the root. If a leg is unknown, subtract the known leg square from c² and take the root. The calculator mode names tell you which arrangement to use.</p>
+</section>
+
+<!-- Section 8: Real-Life Applications -->
+<section id="side-applications" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Real-Life Examples of Right Triangle Side Calculations</h2>
+  
+  <h3>Example 5 — Ladder Against a Wall</h3>
+  <p>A ladder reaches 2.4 m vertically up a wall, with its base 1.8 m from the wall. The wall and ground form a right angle, creating a right triangle where the ladder is the hypotenuse. Known: a = 1.8 m (base), b = 2.4 m (height). Find: c (ladder length). Formula: <span set:html={rich('[[c = \\sqrt{a^2 + b^2}]]')} />. Substitute: c = √(1.8² + 2.4²) = √(3.24 + 5.76) = √9 = 3. The ladder measures 3 m. This tells you the ladder length needed to reach that height at that distance. Note: this geometry does not assess ladder safety; follow manufacturer guidelines and safety regulations for actual use.</p>
+  
+  <h3>Example 6 — Diagonal of a Rectangular Room</h3>
+  <p>A room measures 9 ft long and 12 ft wide. The diagonal between opposite corners forms the hypotenuse of a right triangle with the walls as legs. Known: a = 9 ft, b = 12 ft. Find: c. Formula: c = √(9² + 12²) = √(81 + 144) = √225 = 15. The diagonal is 15 ft. This helps when checking if a room is square (both diagonals should match) or determining the longest straight-line distance for furniture placement.</p>
+  
+  <h3>Example 7 — Roof Rafter Length</h3>
+  <p>A simplified roof cross-section has a horizontal run of 12 ft and vertical rise of 5 ft. The rafter forms the hypotenuse. Known: run = 12 ft, rise = 5 ft. Find: rafter length. Formula: c = √(12² + 5²) = √(144 + 25) = √169 = 13. The rafter is 13 ft long. This basic calculation excludes overhangs, ridge thickness, and connection allowances that real construction requires. Consult building plans for complete specifications.</p>
+  
+  <h3>Example 8 — TV or Monitor Diagonal</h3>
+  <p>A rectangular display measures 16 inches wide and 9 inches tall. The diagonal is the hypotenuse. Known: width = 16 in, height = 9 in. Find: diagonal. Formula: d = √(16² + 9²) = √(256 + 81) = √337 ≈ 18.36. The diagonal measures approximately 18.36 inches. This uses the stated dimensions; commercial screen sizes may differ based on manufacturer measurement methods.</p>
+  
+  <h3>Example 9 — Measuring a Ramp</h3>
+  <p>A ramp has a horizontal run of 6 m and a rise of 0.75 m. The sloping surface is the hypotenuse. Known: run = 6 m, rise = 0.75 m. Find: slope length. Formula: s = √(6² + 0.75²) = √(36 + 0.5625) = √36.5625 ≈ 6.05. The slope measures about 6.05 m. The horizontal run (6 m) differs from the slope length (6.05 m); the slope is always slightly longer. This does not verify accessibility compliance; check local building codes for ramp requirements.</p>
+  
+  <h3>Example 10 — Rectangular Garden Path</h3>
+  <p>A rectangular garden is 30 ft wide and 40 ft long. A diagonal path cuts across. Known: a = 30 ft, b = 40 ft. Find: path length. Formula: c = √(30² + 40²) = √(900 + 1600) = √2500 = 50. The path is 50 ft. Walking the diagonal (50 ft) is shorter than walking along two sides (70 ft), which is why diagonal paths save time.</p>
+  
+  <h3>Example 11 — Support Brace With a Known Diagonal</h3>
+  <p>A support brace measures 10 ft long (hypotenuse) and spans 8 ft horizontally. Find the vertical distance. Known: c = 10 ft, a = 8 ft. Find: b. Formula: b = √(c² − a²) = √(100 − 64) = √36 = 6. The vertical distance is 6 ft. Subtraction is necessary because the hypotenuse squared contains both leg squares; removing the known horizontal component leaves the vertical.</p>
+  
+  <h3>Example 12 — Engineering Drawing With Decimal Values</h3>
+  <p>A bracket design specifies a hypotenuse of 250 mm and one leg of 70 mm. Find the other leg. Known: c = 250 mm, b = 70 mm. Find: a. Formula: a = √(c² − b²) = √(62500 − 4900) = √57600 = 240. The leg measures 240 mm. With millimeter inputs, the result is exact here, but in practice round to the precision of your least precise measurement. Do not report more decimal places than your tools can measure.</p>
+  
+  <figure class="not-prose my-6">
+    <div class="mx-auto w-full max-w-xl" set:html={inlineSideSvg('side-applications.svg')} />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Everyday right triangles: ladder (3 m), room diagonal (15 ft), roof rafter (13 ft), and garden path (50 ft).</figcaption>
+  </figure>
+</section>
+
+<!-- Section 9: Pythagorean Triples -->
+<section id="side-triples" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Common Pythagorean Triples and Why They Matter</h2>
+  <p>A Pythagorean triple consists of three whole numbers that satisfy <span set:html={rich('[[a^2 + b^2 = c^2]]')} />. These triples provide quick mental checks; if your inputs match a triple, you know the answer without calculating. Scaled triples also work: multiplying 3-4-5 by 2 gives 6-8-10, which still satisfies the equation (36 + 64 = 100). Not every right triangle has whole-number sides; most produce decimals or irrational numbers.</p>
+  <div class="not-prose overflow-x-auto my-6">
+    <table class="w-full min-w-[400px] border-collapse text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30 text-left">
+          <th class="py-2 pr-4 font-semibold">Triple</th>
+          <th class="py-2 font-semibold">Verification</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4 font-mono">3-4-5</td><td class="py-2">9 + 16 = 25 ✓</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4 font-mono">5-12-13</td><td class="py-2">25 + 144 = 169 ✓</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4 font-mono">8-15-17</td><td class="py-2">64 + 225 = 289 ✓</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4 font-mono">7-24-25</td><td class="py-2">49 + 576 = 625 ✓</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4 font-mono">9-40-41</td><td class="py-2">81 + 1600 = 1681 ✓</td></tr>
+        <tr class="border-b border-outline-variant/15 last:border-0"><td class="py-2 pr-4 font-mono">6-8-10</td><td class="py-2">36 + 64 = 100 ✓ (scaled 3-4-5)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Verify 5-12-13: 5² = 25, 12² = 144, 25 + 144 = 169, √169 = 13. Verify 8-15-17: 8² = 64, 15² = 225, 64 + 225 = 289, √289 = 17. When your calculator returns a whole number, check if it forms a triple with your inputs as a sanity check.</p>
+</section>
+
+<!-- Section 10: Units and Precision -->
+<section id="side-units" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Measurement Units, Decimal Answers, and Rounding</h2>
+  <p>Use consistent units: millimeters, centimeters, meters, inches, feet, yards, or kilometers. Mixed units produce wrong answers; 3 feet and 6 inches must become 3.5 feet or 42 inches before calculating. Convert first, then compute. Select the matching unit in the calculator for both inputs. Round only after the final calculation, not during intermediate steps, to avoid compounding errors. An exact answer like 10 cm differs from a rounded decimal like 6.50 m; the latter implies measurement precision. Your result cannot be more precise than your least precise input. If you measure to the nearest centimeter, do not report millimeters.</p>
+  <p>Example with feet and inches: a board measures 2 ft 6 in by 3 ft. Convert to inches: 30 in and 36 in. Calculate: c = √(30² + 36²) = √(900 + 1296) = √2196 ≈ 46.86 in. Convert back: 46.86 in = 3 ft 10.86 in, or about 3 ft 10.9 in.</p>
+  <p>Note: squaring a length produces square units (cm²), but the final square root returns linear units (cm). The calculator handles this automatically.</p>
+</section>
+
+<!-- Section 11: Invalid Inputs -->
+<section id="side-invalid" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Why Some Triangle Measurements Cannot Produce a Valid Answer</h2>
+  <p>A valid right triangle needs three positive side lengths where the hypotenuse exceeds each leg. For missing-leg calculations, the value under the square root (c² − leg²) must be positive.</p>
+  <p><strong>Invalid:</strong> c = 8, a = 10. The hypotenuse (8) is shorter than the leg (10). This violates the hypotenuse-is-longest rule. You likely swapped the labels; the 10 should be the hypotenuse.</p>
+  <p><strong>Invalid:</strong> c = 5, a = 5. Then b = √(25 − 25) = √0 = 0. A zero-length side collapses the triangle into a line segment, not a valid triangle.</p>
+  <p><strong>Invalid:</strong> a = −3, b = 4. Negative lengths have no geometric meaning. Side lengths must be positive.</p>
+  <div class="not-prose overflow-x-auto my-6">
+    <table class="w-full min-w-[480px] border-collapse text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30 text-left">
+          <th class="py-2 pr-4 font-semibold">Problem</th>
+          <th class="py-2 pr-4 font-semibold">Cause</th>
+          <th class="py-2 font-semibold">Fix</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Hypotenuse shorter than leg</td><td class="py-2 pr-4">Labels swapped</td><td class="py-2">Assign the longest side as c</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Zero under square root</td><td class="py-2 pr-4">c equals the known leg</td><td class="py-2">Check measurements; triangle is degenerate</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Negative under square root</td><td class="py-2 pr-4">c shorter than known leg</td><td class="py-2">The inputs cannot form a right triangle</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Negative input</td><td class="py-2 pr-4">Typo or sign error</td><td class="py-2">Use positive lengths only</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Zero input</td><td class="py-2 pr-4">Missing measurement</td><td class="py-2">Enter the actual length</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2 pr-4">Wrong units mixed</td><td class="py-2 pr-4">Feet with inches</td><td class="py-2">Convert to one unit first</td></tr>
+        <tr class="border-b border-outline-variant/15 last:border-0"><td class="py-2 pr-4">Non-right triangle</td><td class="py-2 pr-4">No 90° angle</td><td class="py-2">Use Law of Cosines instead</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Section 12: Verification -->
+<section id="side-verify" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Check Whether Your Calculated Side Is Correct</h2>
+  <p><strong>Method 1: Substitute back.</strong> Plug all three sides into <span set:html={rich('[[a^2 + b^2 = c^2]]')} />. For the 6-8-10 triangle: 36 + 64 = 100. If both sides match, the answer is correct.</p>
+  <p><strong>Method 2: Check the hypotenuse is longest.</strong> If you solved for c, confirm it exceeds both a and b. If you solved for a leg, confirm it is shorter than c.</p>
+  <p><strong>Method 3: Compare with triples.</strong> If your inputs are whole numbers, see if they form a known triple. Inputs 9 and 12 giving 15 matches the scaled 3-4-5 triple.</p>
+  <p><strong>Method 4: Estimate reasonableness.</strong> The hypotenuse should be longer than either leg but shorter than their sum. For legs 6 and 8, the hypotenuse 10 satisfies 8 &lt; 10 &lt; 14.</p>
+  <p><strong>Method 5: Check units and rounding.</strong> Confirm the unit matches your inputs and the decimal places reflect your measurement precision.</p>
+  <p><strong>Verification Example 1:</strong> You calculate c = 13 from a = 5, b = 12. Check: 5² + 12² = 25 + 144 = 169 = 13². The hypotenuse 13 exceeds both legs. This matches the 5-12-13 triple. Valid.</p>
+  <p><strong>Verification Example 2:</strong> You calculate b = 7.5 from c = 12.5, a = 10. Check: 10² + 7.5² = 100 + 56.25 = 156.25 = 12.5². The leg 7.5 is shorter than hypotenuse 12.5. Estimate: 10 &lt; 12.5 &lt; 20. Valid.</p>
+</section>
+
+<!-- Section 13: Common Mistakes -->
+<section id="side-mistakes" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Common Mistakes When Calculating Right Triangle Sides</h2>
+  <p><strong>1. Adding the legs instead of their squares.</strong> Computing 6 + 8 = 14 instead of √(36 + 64) = 10. The theorem adds squared areas, not lengths. Always square first.</p>
+  <p><strong>2. Forgetting the square root.</strong> Answering 100 instead of 10 for the 6-8 triangle. The formula gives c²; you need c. Take the root as the final step.</p>
+  <p><strong>3. Subtracting when finding the hypotenuse.</strong> Using √(64 − 36) = √28 instead of √(64 + 36) = 10. Addition applies when finding the hypotenuse from two legs.</p>
+  <p><strong>4. Adding when finding a missing leg.</strong> Using √(169 + 25) instead of √(169 − 25) = 12. Subtraction applies when the hypotenuse is known.</p>
+  <p><strong>5. Mistaking a leg for the hypotenuse.</strong> Labeling the longest side as a or b. The hypotenuse is always opposite the right angle and always labeled c.</p>
+  <p><strong>6. Applying the theorem to a non-right triangle.</strong> Using a² + b² = c² without a 90-degree angle. Verify the right angle first.</p>
+  <p><strong>7. Rounding intermediate calculations.</strong> Rounding 6.25 to 6.3 mid-calculation, then getting a slightly wrong final answer. Keep full precision until the end.</p>
+  <p><strong>8. Mixing measurement units.</strong> Entering 3 feet and 6 inches as 3 and 6. Convert to a single unit before calculating.</p>
+  <p><strong>9. Entering values into wrong fields.</strong> Putting the hypotenuse in a leg field. Match each measurement to its correct label.</p>
+  <p><strong>10. Misinterpreting a negative under the root.</strong> Seeing √(25 − 36) and forcing a calculation. A negative radicand means the inputs cannot form a right triangle; check your labels.</p>
+</section>
+
+<!-- Section 14: Beyond Pythagoras -->
+<section id="side-beyond" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>When Do You Need a Different Right Triangle Formula?</h2>
+  <p>The Pythagorean theorem needs two known sides. Different information requires different tools.</p>
+  <p><strong>One side and one acute angle:</strong> Use sine, cosine, or tangent. Sine relates opposite over hypotenuse, cosine relates adjacent over hypotenuse, and tangent relates opposite over adjacent. For example, with hypotenuse c and angle A, leg a = c × sin(A).</p>
+  <p><strong>Two angles, no sides:</strong> Impossible. Angles determine shape but not size; a 3-4-5 triangle and 6-8-10 triangle share angles but differ in scale. You need at least one side length.</p>
+  <p><strong>Non-right triangle:</strong> Use the Law of Cosines (c² = a² + b² − 2ab×cos(C)) or Law of Sines. The Pythagorean theorem is a special case of the Law of Cosines when C = 90°.</p>
+  <p><strong>Special right triangles:</strong> The 45-45-90 triangle has legs in ratio 1:1:√2, and the 30-60-90 has sides in ratio 1:√3:2. These allow quick mental calculations.</p>
+  <p>If you know one side and one acute angle, use the <a href="/right-triangle-side-from-angle-calculator/" class="text-primary hover:underline">Right Triangle Side Calculator Using Angle</a> on this site.</p>
+</section>
+
+<!-- Section 15: Related Calculators -->
+<section id="side-related" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Other Right Triangle Calculators You May Find Useful</h2>
+  <p>After finding your missing side, you might need additional measurements. The <a href="/right-triangle-calculator/" class="text-primary hover:underline">Right Triangle Calculator</a> solves the complete triangle from any two valid inputs, giving all sides, angles, area, and more. To find an unknown angle from your side lengths, use the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">Right Triangle Angle Calculator</a>. If you know one side and one angle rather than two sides, the <a href="/right-triangle-side-from-angle-calculator/" class="text-primary hover:underline">Right Triangle Side Calculator Using Angle</a> applies trigonometric ratios. The <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Right Triangle Area Calculator</a> computes area from your completed triangle. For perimeter, the <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">Right Triangle Perimeter and Semiperimeter Calculator</a> adds all three sides. The <a href="/special-right-triangle-calculator/" class="text-primary hover:underline">Special Right Triangle Calculator</a> handles 45-45-90 and 30-60-90 triangles with exact ratios. To explore whole-number triples, try the <a href="/pythagorean-triples-calculator/" class="text-primary hover:underline">Pythagorean Triples Calculator</a>.</p>
+</section>
+
+<!-- Section 16: FAQs -->
+<section id="side-faq" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <Faq
+    heading="Frequently Asked Questions"
+    items={[
+      {
+        question: 'How do you calculate the missing side of a right triangle?',
+        answer: 'Use the Pythagorean theorem: a² + b² = c². If you know both legs, calculate c = √(a² + b²). If you know the hypotenuse and one leg, calculate the missing leg as √(c² − known leg²). You need exactly two side lengths; the theorem does not work with only one side or with angles alone.'
+      },
+      {
+        question: 'Can you find a missing side if you know two sides?',
+        answer: 'Yes. Two sides are sufficient. If the two known sides are the legs, use the hypotenuse formula. If one known side is the hypotenuse, use the missing-leg formula. The calculator determines which mode applies based on whether the hypotenuse is among your inputs.'
+      },
+      {
+        question: 'How do you find the hypotenuse?',
+        answer: 'Square both legs, add the squares, and take the square root. For legs 6 and 8: 6² + 8² = 36 + 64 = 100, √100 = 10. The hypotenuse is always the longest side, so verify your answer exceeds both legs.'
+      },
+      {
+        question: 'How do you find a missing leg?',
+        answer: 'Square the hypotenuse and the known leg, subtract the leg square from the hypotenuse square, and take the square root. For hypotenuse 13 and leg 5: 169 − 25 = 144, √144 = 12. The result must be shorter than the hypotenuse.'
+      },
+      {
+        question: 'What is the Pythagorean theorem formula?',
+        answer: 'The formula is a² + b² = c², where a and b are the legs (the sides forming the right angle) and c is the hypotenuse (the side opposite the right angle). This relationship holds for every right triangle.'
+      },
+      {
+        question: 'Is the hypotenuse always the longest side?',
+        answer: 'Yes. The hypotenuse spans the greatest distance between vertices, opposite the largest angle (90 degrees). In any triangle, the longest side sits opposite the largest angle. If your calculated hypotenuse is shorter than a leg, recheck your inputs.'
+      },
+      {
+        question: 'Can you use the Pythagorean theorem on any triangle?',
+        answer: 'No, only on right triangles. The theorem depends on the 90-degree angle. For acute or obtuse triangles, use the Law of Cosines. Applying Pythagoras to a non-right triangle gives incorrect results.'
+      },
+      {
+        question: 'What if the answer is a decimal?',
+        answer: 'Decimals are normal; most right triangles do not have whole-number sides. Calculate with full precision, then round the final answer to match your input precision. For example, √42.25 = 6.5 exactly, but √50 ≈ 7.071 requires rounding.'
+      },
+      {
+        question: 'Can a right triangle have two equal legs?',
+        answer: 'Yes. This is the 45-45-90 isosceles right triangle, where the legs are equal and the hypotenuse equals leg × √2. For legs of 5, the hypotenuse is 5√2 ≈ 7.071.'
+      },
+      {
+        question: 'What if the hypotenuse is smaller than a known leg?',
+        answer: 'The inputs are invalid. The hypotenuse must be the longest side. You likely swapped the labels; assign the longest measurement as the hypotenuse (c) and recalculate.'
+      },
+      {
+        question: 'Can I calculate a missing side using one angle and one side?',
+        answer: 'Yes, but not with the Pythagorean theorem alone. Use trigonometric ratios: sine, cosine, or tangent relate the known side and angle to the unknown side. This site offers a dedicated calculator for side-from-angle problems.'
+      },
+      {
+        question: 'How can I check that my answer is correct?',
+        answer: 'Substitute all three sides back into a² + b² = c². Confirm the hypotenuse is longest. Check if the numbers form a known Pythagorean triple. Estimate that the hypotenuse falls between the longer leg and the sum of both legs.'
+      }
+    ]}
+  />
+</section>
+
+<!-- Section 17: Summary -->
+<section id="side-summary" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Calculate Right Triangle Sides With Confidence</h2>
+  <p>Identify your two known sides first. If both are legs, you need the hypotenuse; if one is the hypotenuse, you need the missing leg. Choose the matching formula or calculator mode. Enter both measurements in the same unit. Calculate, then verify: the hypotenuse must be longest, and substituting back into a² + b² = c² should balance. Check your units and rounding. With these steps, you can solve any right triangle side problem reliably. Return to the calculator at the top of this page to run your numbers.</p>
+</section>

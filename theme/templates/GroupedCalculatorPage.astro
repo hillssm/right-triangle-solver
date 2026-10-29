@@ -14,6 +14,7 @@ import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import HubGuide from 'theme/components/HubGuide.astro';
+import SideGuide from 'theme/components/SideGuide.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
 import { replaceGenericSeoHeading, seoSectionHeading } from 'theme/utils/seoHeadings';
 import { formatListItem } from 'src/utils/formatList';
@@ -40,6 +41,7 @@ type GroupedPageCopy = {
 const { locale, slug } = Astro.props;
 const groupedPage = getGroupedPageBySlug(slug);
 const isHubPage = slug === RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.slug;
+const isSidePage = slug === 'right-triangle-side-calculator';
 
 if (!groupedPage && !isHubPage) {
   throw new Error(`Unknown grouped calculator slug: ${slug}`);
@@ -197,12 +199,19 @@ const hubSeoTitle = 'Right Triangle Calculator \u2013 Sides, Angles & Steps';
 const hubSeoDescription =
   'Calculate right triangle sides, angles, area, and perimeter. Enter two valid measurements, view interactive diagrams, and explore step-by-step solutions.';
 const hubGuideMeta = (hubGuide.meta as any) || {};
+const sideSeoTitle = 'Right Triangle Side Calculator - Find Missing Sides';
+const sideSeoDescription =
+  'Calculate any missing side of a right triangle with the Pythagorean theorem. Find the hypotenuse or legs with step-by-step solutions, examples, and diagrams.';
 const pageTitle = isHubPage
   ? `${hubGuideMeta.title || hubSeoTitle} | Right Triangle Solver`
-  : `${activePage.h1} | Right Triangle Solver`;
+  : isSidePage
+    ? `${sideSeoTitle} | Right Triangle Solver`
+    : `${activePage.h1} | Right Triangle Solver`;
 const pageDescription = isHubPage
   ? hubGuideMeta.description || hubSeoDescription
-  : activePage.intent;
+  : isSidePage
+    ? sideSeoDescription
+    : activePage.intent;
 
 const formulas = groupedPage
   ? getGroupedPageFormulas(groupedPage).map((formula) => {
@@ -1091,4 +1100,5 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
       )}
     </>
   )}
+  {isSidePage && locale === 'en' ? <SideGuide /> : null}
 </BaseLayout>

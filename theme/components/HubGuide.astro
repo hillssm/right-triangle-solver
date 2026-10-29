@@ -100,7 +100,7 @@ const tocEntries = [
 ].filter((e) => e.label && e.href);
 ---
 
-<nav class="mx-auto w-full max-w-4xl section-shell" aria-label={rich(G.tocTitle)}>
+<nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label={rich(G.tocTitle)}>
   <h2 class="text-2xl font-semibold" set:html={rich(G.tocTitle)} />
   <ol class="mt-4 grid gap-2 sm:grid-cols-2">
     {tocEntries.map((entry) => (
@@ -111,7 +111,7 @@ const tocEntries = [
   </ol>
 </nav>
 
-<section id="hub-diagram" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+<section id="hub-diagram" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2 set:html={rich(G.sDiagram.h2)} />
   <p set:html={rich(G.sDiagram.p1)} />
   <figure class="not-prose my-6">
@@ -140,7 +140,7 @@ const tocEntries = [
   <p set:html={rich(G.sDiagram.outro)} />
 </section>
 
-<section id="hub-how-to" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+<section id="hub-how-to" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2 set:html={rich(G.sHowTo.h2)} />
   <ol>
     {(G.sHowTo.steps ?? []).map((s: string) => <li set:html={rich(s)} />)}
@@ -151,7 +151,7 @@ const tocEntries = [
   </ul>
 </section>
 
-<section id="hub-fundamentals" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+<section id="hub-fundamentals" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2 set:html={rich(G.sFundamentals.h2)} />
   <p set:html={rich(G.sFundamentals.p1)} />
   <p set:html={rich(G.sFundamentals.p2)} />
@@ -160,7 +160,7 @@ const tocEntries = [
   <p set:html={rich(G.sFundamentals.proof)} />
 </section>
 
-<section id="hub-formulas" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+<section id="hub-formulas" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2 set:html={rich(G.sFormulas.h2)} />
   <p set:html={rich(G.sFormulas.intro)} />
 
@@ -222,7 +222,7 @@ const tocEntries = [
   </div>
 </section>
 
-<section id="hub-visualizations" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+<section id="hub-visualizations" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2 set:html={rich(G.sVisualizations.h2)} />
   <p set:html={rich(G.sVisualizations.intro)} />
 
@@ -319,7 +319,7 @@ const tocEntries = [
   })();
 </script>
 
-<section id="hub-examples" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+<section id="hub-examples" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2 set:html={rich(G.sExamples.h2)} />
   <p set:html={rich(G.sExamples.intro)} />
   {(G.sExamples.examples ?? []).map((ex: any, i: number) => (
@@ -342,7 +342,7 @@ const tocEntries = [
   ))}
 </section>
 
-<section id="hub-real-world" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+<section id="hub-real-world" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2 set:html={rich(G.sRealWorld.h2)} />
   <p set:html={rich(G.sRealWorld.intro)} />
   {(G.sRealWorld.articles ?? []).map((a: any, i: number) => (
@@ -358,7 +358,7 @@ const tocEntries = [
   ))}
 </section>
 
-<section id="hub-special" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+<section id="hub-special" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2 set:html={rich(G.sSpecial.h2)} />
   <p set:html={rich(G.sSpecial.intro)} />
   <h3 set:html={rich(G.sSpecial.h345)} />
@@ -380,7 +380,7 @@ const tocEntries = [
   <p set:html={rich(G.sSpecial.close)} />
 </section>
 
-<section id="hub-triples" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+<section id="hub-triples" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2 set:html={rich(G.sTriples.h2)} />
   <p set:html={rich(G.sTriples.intro)} />
   <div class="not-prose overflow-x-auto">
@@ -405,14 +405,14 @@ const tocEntries = [
   <p set:html={rich(G.sTriples.close)} />
 </section>
 
-<section id="hub-mistakes" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+<section id="hub-mistakes" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2 set:html={rich(G.sMistakes.h2)} />
   <ol>
     {(G.sMistakes.items ?? []).map((m: string) => <li set:html={rich(m)} />)}
   </ol>
 </section>
 
-<section id="hub-verify" class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+<section id="hub-verify" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2 set:html={rich(G.sVerify.h2)} />
   <p set:html={rich(G.sVerify.intro)} />
   <ol>
@@ -421,7 +421,7 @@ const tocEntries = [
   <p class="text-sm text-on-surface-variant" set:html={rich(G.sVerify.note)} />
 </section>
 
-<section id="hub-related" class="mx-auto mt-8 w-full max-w-4xl scroll-mt-24">
+<section id="hub-related" class="mx-auto mt-12 w-full max-w-4xl section-shell scroll-mt-24">
   <h2 class="font-headline text-2xl font-bold text-on-surface" set:html={rich(G.sRelated.h2)} />
   <p class="mt-2 max-w-2xl text-sm text-on-surface-variant" set:html={rich(G.sRelated.intro)} />
   {(() => {

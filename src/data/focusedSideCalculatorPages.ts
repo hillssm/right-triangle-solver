@@ -1319,13 +1319,13 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
   {
     slug: 'right-triangle-adjacent-side-from-tangent-calculator',
     url: '/right-triangle-adjacent-side-from-tangent-calculator/',
-    h1: 'Right Triangle Adjacent Side From Tangent Calculator',
-    metaTitle: 'Right Triangle Adjacent Side From Tangent Calculator | Find b = a / tan(A)',
-    metaDescription: 'Use this right triangle adjacent side from tangent calculator to find adjacent side b from angle A and opposite side a with formula, steps, and examples.',
+    h1: 'Adjacent Side Calculator: Find b from Opposite Side a and Angle A',
+    metaTitle: 'Adjacent Side Calculator: Find b Using Tangent',
+    metaDescription: 'Find the adjacent side of a right triangle using the opposite side and angle. Learn the tangent formula, follow worked examples, and calculate horizontal distances.',
     formulaSlug: 'b-a-tan',
     toolPurpose:
       'This tool finds the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b when you have the opposite side a and an acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. It reverses the tangent formula, dividing instead of multiplying, so you get the base length directly.',
-    intro: 'Use this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> to find adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A and opposite side a.',
+    intro: 'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the adjacent side b of a right triangle when you know the opposite side a and the acute angle A. The method uses the tangent ratio: since tan(A) = a / b, dividing the known side by the tangent gives the side next to the angle. Enter your values above to calculate b instantly with a full step-by-step solution.',
     quickSummary: {
       h2: 'What This Tool Solves',
       intro:
@@ -1338,7 +1338,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       ]
     },
     diagram: {
-      h2: 'Right Triangle Diagram: Side b from Tangent',
+      h2: 'Understand the Right Triangle',
       intro:
         '<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">Angle</a> A is at the bottom-right corner. The opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a is directly across from it, which you already know. The adjacent side b is the horizontal base next to angle A, and this is what the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds by dividing a by tan(A).',
       caption:
@@ -1355,9 +1355,9 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
           status: 'unknown'
         },
         c: {
-          label: 'c',
-          description: 'Hypotenuse c is the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. It is not part of this calculation.',
-          status: 'unknown'
+          label: 'c = hypotenuse',
+          description: 'Hypotenuse c is the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, opposite the right angle. It appears for geometric context but is not an input here.',
+          status: 'known'
         }
       },
       notes: [
@@ -1369,75 +1369,153 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     calculator: {
       outputLabel: 'Adjacent side b',
       fields: [
-        { key: 'a', label: 'Opposite side a', min: 0 },
-        { key: 'A', label: 'Angle A', min: 0 }
+        { key: 'a', label: 'Opposite side a', min: 0, placeholder: 'e.g. 3' },
+        { key: 'A', label: 'Angle A (degrees)', min: 0, placeholder: 'e.g. 36.87' }
       ]
     },
     formulaSection: {
       h2: 'Adjacent Side From Tangent Formula',
       paragraphs: [
-        'The <a href="/tangent-ratio-calculator/" class="text-primary hover:underline">tangent ratio</a> states that tan(A) = a / b, where a is the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> and b is the adjacent side. Rearranging to solve for b gives the formula below.',
-        'In this formula, a is the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> (the side across from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A), A is the acute angle in degrees, and b is the adjacent side you want to find. The division by tan(A) converts the known height and angle into the corresponding base length.'
+        'Start with the <a href="/tangent-ratio-calculator/" class="text-primary hover:underline">tangent ratio</a>: tan(A) = opposite / adjacent. Substituting the side notation gives tan(A) = a / b.',
+        '<strong>Step 1: Start with the tangent ratio.</strong> The tangent of angle A equals the opposite side divided by the adjacent side.',
+        '<strong>Step 2: Multiply both sides by b.</strong> This gives b \u00d7 tan(A) = a.',
+        '<strong>Step 3: Divide both sides by tan(A).</strong> This isolates the adjacent side: b = a / tan(A).',
+        'Where <strong>a</strong> is the known opposite side (across from angle A), <strong>A</strong> is the acute angle in degrees, and <strong>b</strong> is the adjacent side you want to find (next to angle A, not the hypotenuse).',
+        '<strong>Why division?</strong> In the original ratio, b sits in the denominator. Multiplying both sides by b moves it to the left, then dividing by tan(A) isolates it. This is the reverse of the usual tangent calculation, which multiplies by tan(A) to find the opposite side from a known adjacent side.'
       ],
-      formulas: ['b = a / \\tan(A)']
+      formulas: ['\\tan(A) = \\frac{a}{b}', 'b \\times \\tan(A) = a', 'b = \\frac{a}{\\tan(A)}']
     },
     howTo: {
-      h2: 'How to Use This Calculator',
+      h2: 'How to Calculate the Adjacent Side',
       steps: [
-        'Identify the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a. This is the side across from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A, often the vertical height or rise.',
-        'Confirm the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A is in degrees and falls between 0 and 90.',
-        'Enter opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a into the first input field.',
-        'Enter <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A into the second input field.',
-        'Click Calculate to see adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b and the complete solution.'
+        'Identify the right angle in the triangle. The tangent ratio only applies to right triangles.',
+        'Identify the opposite side a relative to angle A. This is the side across from the angle, often a vertical height.',
+        'Confirm that angle A is measured in degrees. This calculator uses degrees, not radians.',
+        'Enter the known opposite-side length a.',
+        'Enter the acute angle A (must satisfy 0&deg; &lt; A &lt; 90&deg;).',
+        'Click Calculate to find the adjacent side b.',
+        'Review the result and the step-by-step solution shown below the calculator.',
+        'Verify the answer using the tangent ratio: tan(A) should approximately equal a / b.'
       ]
     },
     example: {
-      h2: 'Step-by-Step Example: Find Adjacent Side b',
-      intro: 'Given: A = 36.87 degrees, a = 3. Find adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b using the tangent division formula.',
+      h2: 'Quick Example',
+      intro: 'Given a = 3 m and A = 36.87&deg;, the adjacent side is b &asymp; 4 m. See the detailed examples below for full step-by-step solutions.',
       lines: [
-        'b = a / \\tan(A)',
-        'b = 3 / \\tan(36.87)',
-        'b = 3 / 0.75',
-        'b = 4'
+        'b = a / \\tan(A) = 3 / \\tan(36.87&deg;) &asymp; 3 / 0.75 = 4'
       ]
     },
     extraSections: [
       {
-        h2: 'What the Result Means',
+        h2: 'Adjacent Side Examples With Step-by-Step Solutions',
+        paragraphs: [],
+        customHtml: `<article>
+<h3>Example 1: The 3-4-5 Triangle</h3>
+<p><strong>Problem:</strong> A right triangle has opposite side a = 3 m and angle A &asymp; 36.87&deg;. Find the adjacent side b.</p>
+<p><strong>Given:</strong> a = 3 m, A = 36.87&deg;. <strong>Find:</strong> b.</p>
+<p><strong>Formula:</strong> b = a / tan(A)</p>
+<p><strong>Substitution:</strong> b = 3 / tan(36.87&deg;) &asymp; 3 / 0.75</p>
+<p><strong>Answer:</strong> <strong>b &asymp; 4 m</strong></p>
+<p><strong>Verification:</strong> tan(A) &asymp; 3 / 4 = 0.75. The angle 36.87&deg; is the rounded angle for the 3-4-5 triangle.</p>
+</article>
+<article>
+<h3>Example 2: A 45-Degree Angle</h3>
+<p><strong>Problem:</strong> Given opposite side a = 5 cm and angle A = 45&deg;, find the adjacent side.</p>
+<p><strong>Given:</strong> a = 5 cm, A = 45&deg;. <strong>Find:</strong> b.</p>
+<p><strong>Calculation:</strong> Since tan(45&deg;) = 1: b = 5 / 1 = 5 cm</p>
+<p><strong>Answer:</strong> <strong>b = 5 cm</strong></p>
+<p><strong>Why this works:</strong> The two legs of a right triangle are equal when either acute angle is 45&deg;. At 45&deg;, the triangle is isosceles.</p>
+</article>
+<article>
+<h3>Example 3: Calculate a Longer Horizontal Distance</h3>
+<p><strong>Problem:</strong> A surveyor measures a vertical height of a = 6 m and an angle of elevation A = 30&deg;. Find the horizontal distance.</p>
+<p><strong>Given:</strong> a = 6 m, A = 30&deg;. <strong>Find:</strong> b.</p>
+<p><strong>Calculation:</strong> b = 6 / tan(30&deg;) &asymp; 6 / 0.577350 &asymp; 10.3923 m</p>
+<p><strong>Answer:</strong> <strong>b &asymp; 10.39 m</strong></p>
+<p><strong>Why b &gt; a here:</strong> When angle A is less than 45&deg;, the adjacent side is longer than the opposite side. A shallow angle stretches the base out.</p>
+</article>
+<article>
+<h3>Example 4: Decimal Measurement</h3>
+<p><strong>Problem:</strong> Given opposite side a = 2.4 m and angle A = 15&deg;, find the adjacent side.</p>
+<p><strong>Calculation:</strong> b = 2.4 / tan(15&deg;) &asymp; 2.4 / 0.267949 &asymp; 8.9569 m</p>
+<p><strong>Answer:</strong> <strong>b &asymp; 8.96 m</strong></p>
+<p><strong>Verification:</strong> tan(15&deg;) &asymp; 2.4 / 8.9569 &asymp; 0.2679.</p>
+<p>Use the full available precision during calculation and round only the final displayed result.</p>
+</article>`
+      },
+      {
+        h2: 'How Angle A Affects the Adjacent Side',
         paragraphs: [
-          'The output labeled Adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b is the horizontal base of the triangle. It represents the ground distance, run, or offset that corresponds to the height and <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> you provided.',
-          'When the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is small, the base will be much longer than the height, because a gentle slope covers a lot of horizontal distance. When the angle is steep (close to 90 degrees), the base shrinks because the triangle is nearly vertical.'
+          'When the opposite side a is held constant, increasing angle A decreases the adjacent side b. This is because tan(A) grows as A approaches 90&deg;, and b = a / tan(A) shrinks accordingly.',
+          'Three landmark cases: at A = 45&deg;, b = a (the legs are equal). For 0&deg; &lt; A &lt; 45&deg;, b &gt; a (shallow angle, long base). For 45&deg; &lt; A &lt; 90&deg;, b &lt; a (steep angle, short base).',
+          'As the angle approaches 0&deg;, the calculated horizontal distance grows very large. As the angle approaches 90&deg;, the adjacent side approaches zero. Neither boundary angle is a valid input for this calculator.'
+        ],
+        listTitle: 'Example values (a = 5 m):',
+        listItems: [
+          'A = 30&deg;: b &asymp; 8.66 m',
+          'A = 45&deg;: b = 5.00 m',
+          'A = 60&deg;: b &asymp; 2.89 m'
         ]
       },
       {
-        h2: 'When to Use This Calculator',
+        h2: 'Where Is the Adjacent Side From Tangent Formula Used?',
         paragraphs: [
-          'This tool is ideal when you know a vertical measurement and a slope <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and want to find how far out the base extends. It flips the usual tangent problem around.',
-          'It comes up in building setbacks, foundation offsets, and situations where height restrictions or clearance distances determine how far back something must be placed.'
-        ],
-        listTitle: 'Common situations:',
-        listItems: [
-          'Finding how far from a wall you need to stand based on wall height and viewing <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
-          'Calculating the horizontal run needed for a staircase from the total rise and stair <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
-          'Determining the setback distance for a retaining wall from the wall height and soil <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of repose.',
-          'Solving surveying problems where elevation and <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> are measured and horizontal distance is needed.'
+          '<strong>Estimating horizontal distance from height and angle.</strong> When the vertical height difference is known and the angle of elevation is measured from the horizontal, the horizontal distance follows from the tangent ratio. Example: vertical height a = 6 m, angle of elevation A = 30&deg;, horizontal distance b = 6 / tan(30&deg;) &asymp; 10.39 m. This assumes a level horizontal baseline and a correctly defined angle.',
+          '<strong>Ramp geometry.</strong> A known vertical rise and slope angle measured from the horizontal give the horizontal run. Example: rise a = 1.2 m, slope angle A = 10&deg;, run b = 1.2 / tan(10&deg;) &asymp; 6.81 m. This is a geometric calculation, not proof of compliance with accessibility, construction, or building regulations.',
+          '<strong>Roof pitch and building measurements.</strong> A known vertical rise and roof angle measured relative to the horizontal determine the horizontal run. Be careful with the angle convention: roof pitch is sometimes given as a ratio (e.g. 4:12) rather than degrees, and must be converted first.',
+          '<strong>Surveying and site measurements.</strong> The formula helps calculate a horizontal distance when the vertical difference and angle are known. Practical surveying requires corrections, calibrated instruments, and professional procedures; this basic calculator is not a substitute for professional surveying or engineering.'
         ]
       },
       {
-        h2: 'Common Mistakes',
+        h2: 'Valid Inputs and Common Calculation Checks',
         paragraphs: [
-          'The biggest mistake with this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> is using multiplication instead of division. The standard tangent formula multiplies to find the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. This reversed version divides to find the adjacent side. Mixing them up swaps the answer completely.'
+          'The opposite side a must be a positive number. The angle A must satisfy 0&deg; &lt; A &lt; 90&deg;: it must be acute.',
+          '<strong>Empty fields:</strong> provide both the side length and the angle before calculating.',
+          '<strong>Zero or negative side length:</strong> rejected. Side lengths must be positive.',
+          '<strong>Angle equal to 0&deg;:</strong> rejected, because tan(0&deg;) = 0 makes the division undefined.',
+          '<strong>Angle equal to 90&deg;:</strong> rejected, because the angle is not acute and the required triangle geometry does not apply.',
+          '<strong>Angle outside the valid range:</strong> a clear validation error is displayed.',
+          '<strong>Very small angles:</strong> the result grows very large as A approaches 0&deg;. Check that the answer is physically reasonable for your situation.'
         ],
-        listTitle: 'Watch out for:',
+        listTitle: 'Requirements:',
         listItems: [
-          'Multiplying a by tan(A) instead of dividing. That formula finds the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, not the adjacent.',
-          'Using b = a \u00d7 tan(A), which is the wrong formula for this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>.',
-          'Switching opposite and adjacent sides. <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">Side</a> a is across from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A; side b is next to it.',
-          'Using an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> outside the valid range. Angle A must be greater than 0 and less than 90 degrees.',
-          'Entering the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> in radians instead of degrees.'
+          'Opposite side a &gt; 0.',
+          'Angle A &gt; 0&deg; and A &lt; 90&deg;.',
+          'Angle measured in degrees, not radians.',
+          'Numeric, finite input values.'
         ]
-      }
-    ],
+      },
+      {
+        h2: 'How to Check Your Adjacent Side Result',
+        paragraphs: [
+          'The result is the length of the leg next to angle A, excluding the hypotenuse. Verify it with the original tangent ratio: tan(A) should approximately equal a / b.',
+          'For the 3-4-5 example: tan(36.87&deg;) &asymp; 3 / 4 &asymp; 0.75. Small differences may occur because the displayed angle and result are rounded; use an appropriate floating-point tolerance when checking programmatically.'
+        ],
+        listTitle: 'A valid result should satisfy:',
+        listItems: [
+          'b &gt; 0.',
+          'tan(A) &asymp; a / b.',
+          'If A = 45&deg;, b should equal a.',
+          'If A &lt; 45&deg;, b should be greater than a; if A &gt; 45&deg;, b should be less than a.'
+        ]
+      },
+      {
+        h2: 'Common Mistakes When Finding the Adjacent Side',
+        paragraphs: [
+          'The most common error is multiplying by tan(A) instead of dividing. The standard tangent formula multiplies to find the opposite side; this reversed version divides to find the adjacent side. Mixing them up gives the reciprocal of the correct answer.'
+        ],
+        listTitle: 'Avoid these mistakes:',
+        listItems: [
+          '<strong>Multiplying by tan(A) instead of dividing.</strong> Wrong: b = a &times; tan(A). Correct: b = a / tan(A).',
+          '<strong>Confusing opposite and adjacent sides.</strong> Side a is across from angle A; side b is next to it. Swapping them inverts the result.',
+          '<strong>Treating the hypotenuse as the adjacent side.</strong> The hypotenuse c is never an input here; b is the leg beside angle A.',
+          '<strong>Entering the angle in radians.</strong> This calculator expects degrees. 0.64 radians is not 0.64 degrees.',
+          '<strong>Entering 0&deg; or 90&deg;.</strong> Both are rejected: tan(0&deg;) = 0 causes division by zero, and 90&deg; is not acute.',
+          '<strong>Mixing incompatible units.</strong> The result uses the same unit as the input side; keep them consistent.',
+          '<strong>Rounding too early.</strong> Keep full precision through the division and round only the final answer.',
+          '<strong>Measuring the angle from the vertical.</strong> The formula assumes angle A is measured from the horizontal (between the adjacent side and the hypotenuse).'
+        ]
+      }    ],
     relatedLinks: [
       { href: '/right-triangle-side-from-angle-calculator/', label: 'Right Triangle Side From Angle Calculator' },
       { href: '/right-triangle-side-from-tangent-calculator/', label: 'Right Triangle Side From Tangent Calculator' },
@@ -1453,24 +1531,39 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
           'It calculates the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b when you know the opposite side a and an acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. It is the rearranged version of the tangent formula tan(A) = a / b.'
       },
       {
-        question: 'Why does this formula use division instead of multiplication?',
+        question: 'Why does the formula use division?',
         answer:
-          'The standard tangent formula multiplies b by tan(A) to find a. This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> does the reverse: it divides a by tan(A) to find b. Division is needed because b is in the denominator of the original ratio.'
+          'In the tangent ratio tan(A) = a / b, the adjacent side b is in the denominator. To isolate b, multiply both sides by b and then divide by tan(A). Division is required because you are solving for the denominator of the original ratio.'
       },
       {
-        question: 'What is the difference between this and the tangent side calculator?',
+        question: 'How do I identify the adjacent side?',
         answer:
-          'The tangent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the opposite side a from the adjacent side b. This calculator does the opposite: it finds the adjacent side b from the opposite side a. They are inverse operations.'
+          'The adjacent side is the leg that forms <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A together with the hypotenuse. It is the side next to the angle, not across from it. The opposite side a is across from angle A.'
       },
       {
-        question: 'Can the result be larger than the opposite side?',
+        question: 'What happens when angle A is 45\u00b0?',
         answer:
-          'Yes. When the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is less than 45 degrees, the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is longer than the opposite side. The two sides are equal only when the angle is exactly 45 degrees.'
+          'When A = 45\u00b0, tan(A) = 1, so b = a / 1 = a. The two legs are equal and the triangle is isosceles. This is the only angle where the adjacent and opposite sides match exactly.'
       },
       {
-        question: 'What happens if I divide by a very small tangent value?',
+        question: 'Can the adjacent side be longer than the opposite side?',
         answer:
-          'When the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is very close to 0 degrees, tan(A) is nearly zero, and dividing by it produces a very large result. This means the base is extremely long compared to the height, which makes geometric sense for a nearly flat triangle.'
+          'Yes. When angle A is less than 45\u00b0, tan(A) &lt; 1, so dividing by it gives b &gt; a. A shallow angle produces a long base relative to the height.'
+      },
+      {
+        question: 'Why is an angle of 0\u00b0 invalid?',
+        answer:
+          'Because tan(0\u00b0) = 0, and dividing by zero is undefined. Geometrically, a 0\u00b0 angle means there is no triangle at all \u2014 just a flat line.'
+      },
+      {
+        question: 'Can I calculate horizontal distance from height and angle?',
+        answer:
+          'Yes, that is one of the main uses. If a = 6 m is the vertical height and A = 30\u00b0 is the angle of elevation measured from the horizontal, the horizontal distance is b = 6 / tan(30\u00b0) \u2248 10.39 m.'
+      },
+      {
+        question: 'What is the difference between this calculator and a standard tangent side calculator?',
+        answer:
+          'A standard tangent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> multiplies: a = b \u00d7 tan(A), finding the opposite side from a known adjacent side. This calculator divides: b = a / tan(A), finding the adjacent side from a known opposite side. They are inverse operations.'
       }
     ]
   }

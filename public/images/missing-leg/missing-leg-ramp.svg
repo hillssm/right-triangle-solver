@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+<title>Ramp geometry: 5-12-13 triangle</title>
+<desc>A 13 m ramp with 12 m horizontal run has 5 m vertical rise. The ramp is the hypotenuse c, the run is leg a, the rise is the missing leg b.</desc>
+<rect x="170" y="320" width="300" height="110" fill="#2a2d36" stroke="#e8e6e3" stroke-width="2"/>
+<polygon points="152,320 488,320 320,236" fill="rgba(241,201,125,0.08)" stroke="#f1c97d" stroke-width="3"/>
+<line x1="320" y1="236" x2="320" y2="320" stroke="#d0c5af" stroke-width="2"/>
+<text x="336" y="282" font-family="Manrope, Arial, sans-serif" font-size="18" fill="#38bdf8" text-anchor="start" font-weight="normal" style="">b = 5 m rise</text>
+<text x="404" y="344" font-family="Manrope, Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="normal" style="">a = 12 m run</text>
+<text x="236" y="262" font-family="Manrope, Arial, sans-serif" font-size="18" fill="#f1c97d" text-anchor="middle" font-weight="normal" style="">c = 13 m ramp</text>
+</svg>

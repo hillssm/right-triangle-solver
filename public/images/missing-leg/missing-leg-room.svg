@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+<title>Rectangular room diagonal: 8-15-17 triangle</title>
+<desc>An 8 ft by 15 ft room has a 17 ft diagonal. The diagonal is the hypotenuse c, the known side is leg a, the missing side is leg b.</desc>
+<rect x="140" y="144" width="360" height="192" fill="rgba(56,189,248,0.06)" stroke="#38bdf8" stroke-width="3"/>
+<line x1="140" y1="336" x2="500" y2="144" stroke="#f1c97d" stroke-width="3"/>
+<text x="320" y="128" font-family="Manrope, Arial, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="normal" style="">a = 8 ft</text>
+<text x="122" y="240" font-family="Manrope, Arial, sans-serif" font-size="20" fill="#38bdf8" text-anchor="end" font-weight="normal" style="">b = 15 ft</text>
+<text x="320" y="252" font-family="Manrope, Arial, sans-serif" font-size="20" fill="#f1c97d" text-anchor="middle" font-weight="normal" style="">c = 17 ft diagonal</text>
+</svg>

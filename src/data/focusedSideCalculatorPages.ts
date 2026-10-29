@@ -270,15 +270,15 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
   {
     slug: 'missing-leg-from-c-and-a-calculator',
     url: '/missing-leg-from-c-and-a-calculator/',
-    h1: 'Missing Leg From c and a Calculator',
-    metaTitle: 'Missing Leg From c and a Calculator | Find Leg b',
+    h1: 'Missing Leg Calculator: Find Leg b from Hypotenuse c and Leg a',
+    metaTitle: 'Missing Leg Calculator: Find b from c and a',
     metaDescription:
-      'Find missing leg b when hypotenuse c and leg a are known. Includes diagram, formula b = sqrt(c^2 - a^2), input checks, and examples.',
+      'Find the missing leg of a right triangle using the hypotenuse and one known leg. Calculate side b, follow the formula, and check worked examples.',
     formulaSlug: 'leg-from-hypotenuse-and-other-leg',
     toolPurpose:
       'Remember: c is always the hypotenuse \u2014 the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. It is not a leg. If you have two legs and need the hypotenuse instead, use the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean Theorem</a> Calculator.',
     intro:
-      'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the missing leg b of a right triangle when you already know the hypotenuse c and one leg a. Just enter your two known values and get leg b instantly.',
+      'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the missing leg b of a right triangle when you know the hypotenuse c and the other leg a. Enter your two measurements, and it applies the formula b = \u221a(c\u00b2 \u2212 a\u00b2) to compute the unknown side instantly, with full solution steps. The hypotenuse is the longest side, opposite the right angle. The two legs form that right angle. Knowing which side is which ensures you get the correct answer every time.',
     quickSummary: {
       h2: 'What This Tool Solves',
       intro:
@@ -291,7 +291,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       ]
     },
     diagram: {
-      h2: 'Right Triangle Diagram: Finding Leg b',
+      h2: 'Identify the Hypotenuse and Missing Leg',
       intro:
         'The diagram marks c and a as the values you already know. The vertical leg b is highlighted as the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">missing side</a> that this calculator solves.',
       caption:
@@ -327,27 +327,33 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       ]
     },
     formulaSection: {
-      h2: 'Missing Leg b Formula',
+      h2: 'Formula to Find a Missing Leg',
       paragraphs: [
-        'The formula to find leg b is derived from the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem</a> (a\u00b2 + b\u00b2 = c\u00b2). Rearranging for b gives the formula below.',
-        'Where c is the hypotenuse (longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> of the right triangle), a is the known leg, and b is the missing leg you\u2019re solving for. Notice the subtraction: you subtract the square of the known leg from the square of the hypotenuse, then take the square root.'
+        'The calculation uses the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem</a>, which relates the squares of the two legs to the square of the hypotenuse. To isolate the missing leg, rearrange the equation step by step.',
+        '<strong>Step 1: Start with the Pythagorean theorem.</strong> The squares of the two legs add up to the square of the hypotenuse.',
+        '<strong>Step 2: Subtract a² from both sides.</strong> This isolates the square of the missing leg.',
+        '<strong>Step 3: Take the positive square root.</strong> Side lengths are positive, so use the principal root. The entire expression c² − a² stays inside the radical.',
+        'Where <strong>a</strong> is the known leg, <strong>b</strong> is the missing leg, and <strong>c</strong> is the hypotenuse. The hypotenuse sits opposite the right angle and is always the longest side.',
+        '<strong>Why subtract?</strong> The original equation adds both leg squares to get the hypotenuse square. When the hypotenuse and one leg are already known, subtract the known leg’s square from the hypotenuse’s square to isolate the unknown leg’s square. Then take the square root. Never subtract the leg from the hypotenuse directly — always subtract their squares.'
       ],
-      formulas: ['b = \\sqrt{c^2 - a^2}']
+      formulas: ['a^2 + b^2 = c^2', 'b^2 = c^2 - a^2', 'b = \\sqrt{c^2 - a^2}']
     },
     howTo: {
-      h2: 'How to Find Leg b From c and a',
+      h2: 'How to Find Leg b from c and a',
       steps: [
-        'Confirm that c is the hypotenuse and a is a leg. The hypotenuse is always the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>.',
+        'Identify the hypotenuse, which lies opposite the 90° angle. It is always the longest side.',
         'Enter the hypotenuse c into the first input field.',
         'Enter the known leg a into the second input field.',
-        'Click Calculate to find the missing leg.',
-        'Read the result for b, along with the full step-by-step solution.'
+        'Check that both measurements use the same unit.',
+        'Click Calculate to find the missing leg b.',
+        'Review the result and the step-by-step solution shown below the calculator.',
+        'Verify the answer by checking that a² + b² equals c².'
       ]
     },
     example: {
-      h2: 'Example: Find Leg b',
+      h2: 'Worked Examples for Finding a Missing Leg',
       intro:
-        'Given: c = 13, a = 5. The missing leg of a right triangle with hypotenuse 13 and leg 5 is 12.',
+        'Each example shows the full calculation from problem statement to verified answer. All five use the formula b = √(c² − a²).',
       lines: [
         'b = \\sqrt{13^2 - 5^2}',
         'b = \\sqrt{169 - 25}',
@@ -357,10 +363,23 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     },
     extraSections: [
       {
-        h2: 'Important Check Before Calculating',
+        h2: 'Detailed Worked Examples',
         paragraphs: [
-          'Before you use this formula, make sure c is greater than a. The hypotenuse is always the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> of a right triangle. If c equals a, you would get b = 0, which means no triangle exists.',
-          'If c is less than a, the expression under the square root becomes negative. That means the two input values cannot describe a real right triangle with c as the hypotenuse.'
+          '<h3>Example 1: Standard 5–12–13 Triangle</h3><p><strong>Problem:</strong> Find the missing leg of a right triangle with hypotenuse c = 13 cm and known leg a = 5 cm.</p><p><strong>Given:</strong> c = 13 cm, a = 5 cm. <strong>Find:</strong> b.</p><p><strong>Formula:</strong> b = √(c² − a²)</p><p><strong>Substitution:</strong> b = √(13² − 5²) = √(169 − 25) = √144</p><p><strong>Answer:</strong> <strong>b = 12 cm</strong></p><p><strong>Verification:</strong> 5² + 12² = 25 + 144 = 169 = 13². The known leg, missing leg, and hypotenuse form a valid right triangle.</p>',
+          '<h3>Example 2: Ladder Against a Wall</h3><p><strong>Problem:</strong> A 5 m ladder rests against a vertical wall. Its base is 3 m from the wall. Find the height reached by the ladder.</p><p><strong>Given:</strong> c = 5 m (ladder), a = 3 m (ground distance). <strong>Find:</strong> b (wall height).</p><p><strong>Calculation:</strong> b = √(5² − 3²) = √(25 − 9) = √16 = 4 m</p><p><strong>Answer:</strong> <strong>The ladder reaches 4 m up the wall.</strong></p><img src="/images/missing-leg/missing-leg-ladder.svg" alt="Ladder diagram: 5 m ladder as hypotenuse, 3 m ground distance as leg a, 4 m wall height as missing leg b" class="mt-4 w-full rounded-lg" /><p class="text-sm text-on-surface-variant"><em>Figure: The vertical wall (b = 4 m), horizontal ground distance (a = 3 m), and ladder (c = 5 m). This is a geometric model assuming a vertical wall and level ground, not a ladder-safety assessment.</em></p>',
+          '<h3>Example 3: Rectangular Room Diagonal</h3><p><strong>Problem:</strong> A rectangular room has a diagonal of 17 ft and one side measuring 8 ft. Find the other side.</p><p><strong>Given:</strong> c = 17 ft (diagonal), a = 8 ft. <strong>Find:</strong> b.</p><p><strong>Calculation:</strong> b = √(17² − 8²) = √(289 − 64) = √225 = 15 ft</p><p><strong>Answer:</strong> <strong>The other side is 15 ft.</strong></p><img src="/images/missing-leg/missing-leg-room.svg" alt="Room diagram: 17 ft diagonal as hypotenuse, 8 ft known side as leg a, 15 ft missing side as leg b" class="mt-4 w-full rounded-lg" /><p class="text-sm text-on-surface-variant"><em>Figure: Top-down view. The diagonal (c = 17 ft) divides the rectangle into two right triangles. The known side (a = 8 ft) and missing side (b = 15 ft) form the right angle.</em></p>',
+          '<h3>Example 4: A Result That Requires Rounding</h3><p><strong>Problem:</strong> Given c = 10 m and a = 7 m, find b.</p><p><strong>Calculation:</strong> b = √(10² − 7²) = √(100 − 49) = √51 ≈ 7.141428 m</p><p><strong>Answer:</strong> <strong>b ≈ 7.14 m</strong>, rounded to two decimal places.</p><p><strong>Verification:</strong> 7² + (√51)² = 49 + 51 = 100 = 10².</p><p>Keep the exact value (√51) during intermediate calculations and round only at the final step. Rounding early introduces errors that compound in multi-step problems.</p>',
+          '<h3>Example 5: Ramp Geometry</h3><p><strong>Problem:</strong> A straight ramp has a length of 13 m and a horizontal run of 12 m. Find its vertical rise.</p><p><strong>Given:</strong> c = 13 m (ramp), a = 12 m (run). <strong>Find:</strong> b (rise).</p><p><strong>Calculation:</strong> b = √(13² − 12²) = √(169 − 144) = √25 = 5 m</p><p><strong>Answer:</strong> <strong>The vertical rise is 5 m.</strong></p><img src="/images/missing-leg/missing-leg-ramp.svg" alt="Ramp diagram: 13 m ramp as hypotenuse, 12 m horizontal run as leg a, 5 m vertical rise as missing leg b" class="mt-4 w-full rounded-lg" /><p class="text-sm text-on-surface-variant"><em>Figure: The ramp (c = 13 m) as hypotenuse, horizontal run (a = 12 m), and vertical rise (b = 5 m). This calculation does not establish compliance with accessibility or building regulations.</em></p>'
+        ]
+      },
+      {
+        h2: 'When Can You Calculate a Missing Leg?',
+        paragraphs: [
+          'For a valid non-degenerate right triangle, the measurements must satisfy three conditions: c > 0, a > 0, and c > a. The missing leg is then b = √(c² − a²).',
+          '<strong>Case 1: Hypotenuse smaller than the known leg.</strong> If c = 4 and a = 5, then b = √(16 − 25) = √(−9). The expression under the square root is negative, so these inputs cannot form a real right triangle with c as the hypotenuse.',
+          '<strong>Case 2: Hypotenuse equal to the known leg.</strong> If c = 5 and a = 5, then b = √(25 − 25) = 0. This is a degenerate case, not a valid triangle.',
+          '<strong>Case 3: Zero or negative measurements.</strong> Side lengths must be positive. The calculator rejects zero and negative inputs.',
+          '<strong>Case 4: Inconsistent units.</strong> Both measurements must use the same unit. If c is in meters and a is in centimeters, convert one before calculating.'
         ],
         listTitle: 'Use these checks first:',
         listItems: [
@@ -371,46 +390,44 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
         ]
       },
       {
-        h2: 'Where This Calculator Is Useful',
+        h2: 'Where Is the Missing Leg Formula Used?',
         paragraphs: [
-          'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> is useful when a diagonal or sloped measurement is known, one perpendicular <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is known, and the other perpendicular side is missing. It is the focused tool for the c-and-a case, so every explanation on the page points toward finding b.',
-          'It can also help verify <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a>. If a measured value for b does not match the calculator result, the triangle may not be right, the hypotenuse may be mislabeled, or one measurement may use a different unit.'
-        ],
-        listTitle: 'Common examples include:',
-        listItems: [
-          'Finding wall height when ladder length c and ground distance a are known.',
-          'Finding the vertical rise of a slope when the slope length and horizontal run are known.',
-          'Checking a right triangle homework problem that gives c and a.',
-          'Confirming layout <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a> for framing, landscaping, ramps, or floor plans.'
+          'The general pattern: when a straight-line diagonal or sloped length and one perpendicular distance are known, the other perpendicular distance follows from the Pythagorean theorem. This works only when the geometry forms a right triangle.',
+          '<strong>Construction and framing.</strong> Carpenters check square corners by measuring the diagonal of a rectangular frame. If the diagonal (c) and one side (a) are known, the missing side (b) confirms the layout before cutting lumber.',
+          '<strong>Room and floor-plan measurements.</strong> When planning furniture or flooring, the diagonal of a room and one wall length give the other wall length without moving obstacles.',
+          '<strong>Ladder and wall geometry.</strong> Given a ladder length and its distance from the wall, the height it reaches follows directly. This is a geometric model, not a safety assessment.',
+          '<strong>Ramp and slope calculations.</strong> From the slope length and horizontal run, the vertical rise is determined. This does not establish code compliance.'
         ]
       },
       {
-        h2: 'How to Read the Answer',
+        h2: 'How to Check Your Missing Leg Calculation',
         paragraphs: [
-          'The output labeled Missing leg b is the length of the other leg that forms the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> with a. It is not the hypotenuse and should be shorter than c.',
-          'If the calculated b is extremely small, your known leg a is very close to the hypotenuse c. That can be valid, but it is worth checking the diagram and the units before using the value.'
+          'Verify every result before using it. For the 5–12–13 example: 5² + 12² = 25 + 144 = 169 = 13².',
+          'The output labeled Missing leg b is the length of the other leg that forms the right angle with a. It is not the hypotenuse and should be shorter than c.'
         ],
-        listTitle: 'A valid result should satisfy:',
+        listTitle: 'A valid result must satisfy:',
         listItems: [
           'b is greater than zero.',
-          'b is less than c.',
-          'a² + b² is approximately equal to c².',
-          'The output unit matches the input unit.'
+          'b is shorter than c.',
+          'a² + b² equals c², allowing for rounding in the displayed value.',
+          'The result uses the correct unit.'
         ]
       },
       {
-        h2: 'Common Mistakes',
+        h2: 'Common Mistakes When Finding a Missing Leg',
         paragraphs: [
-          'The most common error is treating c as a leg. In this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>, c must be the hypotenuse, which is the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> and the side opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
-          'Another frequent mistake is adding the squares instead of subtracting. Addition finds a hypotenuse; subtraction finds a missing leg from the hypotenuse.'
+          'The most common error is treating c as a leg. Here c must be the hypotenuse: the longest side, opposite the right angle.',
+          'Another frequent mistake is adding the squares instead of subtracting. Addition (a² + b²) finds a hypotenuse; subtraction (c² − a²) finds a missing leg from the hypotenuse.'
         ],
         listTitle: 'Avoid these mistakes:',
         listItems: [
-          'Putting the known leg into the hypotenuse field.',
-          'Using c² + a² instead of c² - a².',
-          'Entering a greater than or equal to c.',
-          'Stopping at b² instead of taking the square root.',
-          'Mixing units such as meters and centimeters.'
+          '<strong>Confusing the hypotenuse with a leg.</strong> If you put the leg value in the c field, the formula solves the wrong problem. Correct: c is always the longest side.',
+          '<strong>Adding squares instead of subtracting.</strong> Wrong: b = √(c² + a²). Correct: b = √(c² − a²).',
+          '<strong>Forgetting the square root.</strong> Wrong: b = c² − a². Correct: take the square root of the difference.',
+          '<strong>Wrong square-root grouping.</strong> Wrong: √c² − a² (which equals c − a). Correct: √(c² − a²), with the entire difference inside the radical.',
+          '<strong>Entering a ≥ c.</strong> The known leg cannot equal or exceed the hypotenuse. Correct: verify c > a before calculating.',
+          '<strong>Mixing units.</strong> Wrong: c = 5 m, a = 30 cm. Correct: convert to the same unit first (c = 500 cm, a = 30 cm).',
+          '<strong>Rounding too early.</strong> Wrong: rounding √51 to 7.14 mid-calculation. Correct: keep full precision until the final answer.'
         ]
       }
     ],
@@ -420,33 +437,50 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       {
         href: '/missing-leg-from-c-and-b-calculator/',
         label: 'Missing Leg From c and b Calculator'
-      }
+      },
+      { href: '/right-triangle-angle-calculator/', label: 'Right Triangle Angle Calculator' },
+      { href: '/right-triangle-measurements-calculator/', label: 'Right Triangle Measurements Calculator' }
     ],
     faqs: [
       {
-        question: 'What does c mean in this calculator?',
+        question: 'How do I find the missing leg from the hypotenuse and one leg?',
         answer:
-          'c is the hypotenuse of the right triangle \u2014 the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, located opposite the 90\u00b0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. It is not a leg. You enter c as one of the two known values in this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>.'
+          'Square the hypotenuse (c²), square the known leg (a²), subtract, and take the square root: b = √(c² − a²). Enter both values in the calculator above for an instant result with steps.'
       },
       {
-        question: 'What does a mean in this calculator?',
+        question: 'Why do I subtract instead of add?',
         answer:
-          'a is one of the two legs of the right triangle. It\u2019s one of the sides that forms the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. In this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a>, a is the leg you already know.'
+          'The Pythagorean theorem adds the leg squares to get the hypotenuse square (a² + b² = c²). When you already know the hypotenuse, rearrange: subtract the known leg square from the hypotenuse square to isolate the missing leg square, then take the root.'
       },
       {
-        question: 'What does this calculator find?',
+        question: 'How do I know which side is the hypotenuse?',
         answer:
-          'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the missing leg b. Given hypotenuse c and leg a, it computes b = \u221a(c\u00b2 \u2212 a\u00b2) and shows you the step-by-step solution.'
+          'The hypotenuse is always the longest side and sits opposite the 90° angle. If your three measurements are 5, 12, and 13, the hypotenuse is 13.'
       },
       {
-        question: 'Can c be smaller than a?',
+        question: 'What happens if the known leg is equal to or longer than the hypotenuse?',
         answer:
-          'No. In a right triangle, the hypotenuse is always the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. If c is smaller than a, the values don\u2019t form a valid right triangle. Check which measurement is the hypotenuse before calculating.'
+          'If a = c, the result is b = 0 (degenerate, not a triangle). If a > c, the square root of a negative number has no real solution. Both cases are rejected as invalid.'
       },
       {
-        question: 'How do I find b from c and a?',
+        question: 'Can the missing leg be a decimal?',
         answer:
-          'Square the hypotenuse (c\u00b2), square the known leg (a\u00b2), subtract a\u00b2 from c\u00b2, and take the square root. The formula is b = \u221a(c\u00b2 \u2212 a\u00b2). Or enter your values into this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> for an instant answer.'
+          'Yes. For example, c = 10 and a = 7 gives b = √51 ≈ 7.14. Keep full precision during calculations and round only the final answer.'
+      },
+      {
+        question: 'How can I check whether the answer is correct?',
+        answer:
+          'Verify that a² + b² = c². For the 5–12–13 example: 25 + 144 = 169. Also confirm b > 0, b < c, and the unit matches your inputs.'
+      },
+      {
+        question: 'Can I use different measurement units?',
+        answer:
+          'Both inputs must use the same unit. If c is in meters and a is in centimeters, convert one first. The result uses the input unit.'
+      },
+      {
+        question: 'Can this calculator also find an unknown angle?',
+        answer:
+          'No, this mode finds only the missing leg b. To find angles, use the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">Right Triangle Angle Calculator</a>.'
       }
     ]
   },

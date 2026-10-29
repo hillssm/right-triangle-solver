@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+<title>Ladder against a wall: 3-4-5 triangle</title>
+<desc>A 5 metre ladder with base 3 metres from the wall reaches 4 metres high. The ladder is the hypotenuse c, the ground distance is leg a, the wall height is the missing leg b.</desc>
+<line x1="100" y1="400" x2="560" y2="400" stroke="#e8e6e3" stroke-width="4"/>
+<rect x="420" y="100" width="22" height="300" fill="#3a3f4a"/>
+<line x1="240" y1="400" x2="420" y2="160" stroke="#f1c97d" stroke-width="10"/>
+<text x="330" y="428" font-family="Manrope, Arial, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="normal" style="">a = 3 m</text>
+<text x="404" y="280" font-family="Manrope, Arial, sans-serif" font-size="20" fill="#38bdf8" text-anchor="end" font-weight="normal" style="">b = 4 m</text>
+<text x="318" y="262" font-family="Manrope, Arial, sans-serif" font-size="20" fill="#f1c97d" text-anchor="middle" font-weight="normal" style="">c = 5 m ladder</text>
+</svg>

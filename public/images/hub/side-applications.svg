@@ -2,32 +2,32 @@
 <title>Right triangle calculations in everyday life</title>
 <desc>Four panels: ladder against wall, room diagonal, roof rafter, garden path.</desc>
 
-<text x="300" y="80" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">Ladder</text>
-<line x1="250" y1="260" x2="331.0" y2="260" stroke="#38bdf8" stroke-width="3"/>
-<line x1="250" y1="260" x2="250" y2="152.0" stroke="#fbbf24" stroke-width="3"/>
-<line x1="331.0" y1="260" x2="250" y2="152.0" stroke="#f472b6" stroke-width="4" stroke-linecap="round"/>
-<polyline points="250,248 262,248 262,260" stroke="#ffffff" stroke-width="2" fill="none"/>
-<text x="290.5" y="280" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#38bdf8" text-anchor="middle">1.8 m</text>
-<text x="242" y="206.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#fbbf24" text-anchor="end">2.4 m</text>
-<text x="312.5" y="206.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#f472b6" text-anchor="middle" font-weight="bold">3 m</text>
-<text x="900" y="80" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">Room diagonal</text>
-<rect x="855" y="110" width="81" height="108" fill="rgba(241,201,125,0.07)" stroke="#ffffff" stroke-width="2"/>
-<line x1="855" y1="218" x2="936" y2="110" stroke="#f472b6" stroke-width="4" stroke-linecap="round"/>
-<text x="895.5" y="238" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#38bdf8" text-anchor="middle">9 ft</text>
-<text x="847" y="164.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#fbbf24" text-anchor="end">12 ft</text>
-<text x="917.5" y="156.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#f472b6" text-anchor="middle" font-weight="bold">15 ft</text>
-<text x="300" y="370" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">Roof rafter</text>
-<line x1="250" y1="550" x2="358" y2="550" stroke="#38bdf8" stroke-width="3"/>
-<line x1="250" y1="550" x2="250" y2="505" stroke="#fbbf24" stroke-width="3"/>
-<line x1="358" y1="550" x2="250" y2="505" stroke="#f472b6" stroke-width="4" stroke-linecap="round"/>
-<polyline points="250,538 262,538 262,550" stroke="#ffffff" stroke-width="2" fill="none"/>
-<text x="304.0" y="570" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#38bdf8" text-anchor="middle">12 ft</text>
-<text x="242" y="527.5" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#fbbf24" text-anchor="end">5 ft</text>
-<text x="322.0" y="527.5" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#f472b6" text-anchor="middle" font-weight="bold">13 ft</text>
-<text x="900" y="370" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">Garden path</text>
-<rect x="855" y="400" width="81.0" height="108.0" fill="rgba(241,201,125,0.07)" stroke="#ffffff" stroke-width="2"/>
-<line x1="855" y1="508.0" x2="936.0" y2="400" stroke="#f472b6" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 5"/>
-<text x="895.5" y="528.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#38bdf8" text-anchor="middle">30 ft</text>
-<text x="847" y="454.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#fbbf24" text-anchor="end">40 ft</text>
-<text x="915.5" y="454.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#f472b6" text-anchor="middle" font-weight="bold">50 ft</text>
+<text x="300" y="70" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="bold">Ladder</text>
+<line x1="230" y1="300" x2="356.0" y2="300" stroke="#38bdf8" stroke-width="4"/>
+<line x1="230" y1="300" x2="230" y2="132.0" stroke="#fbbf24" stroke-width="4"/>
+<line x1="356.0" y1="300" x2="230" y2="132.0" stroke="#f472b6" stroke-width="5" stroke-linecap="round"/>
+<polyline points="230,284 246,284 246,300" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<text x="293.0" y="326" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#38bdf8" text-anchor="middle">1.8 m</text>
+<text x="218" y="216.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#fbbf24" text-anchor="end">2.4 m</text>
+<text x="323.0" y="216.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#f472b6" text-anchor="middle" font-weight="bold">3 m</text>
+<text x="900" y="70" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="bold">Room diagonal</text>
+<rect x="830" y="110" width="126" height="168" fill="rgba(241,201,125,0.07)" stroke="#ffffff" stroke-width="2.5"/>
+<line x1="830" y1="278" x2="956" y2="110" stroke="#f472b6" stroke-width="5" stroke-linecap="round"/>
+<text x="893.0" y="304" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#38bdf8" text-anchor="middle">9 ft</text>
+<text x="818" y="194.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#fbbf24" text-anchor="end">12 ft</text>
+<text x="921.0" y="184.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#f472b6" text-anchor="middle" font-weight="bold">15 ft</text>
+<text x="300" y="380" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="bold">Roof rafter</text>
+<line x1="230" y1="580" x2="386" y2="580" stroke="#38bdf8" stroke-width="4"/>
+<line x1="230" y1="580" x2="230" y2="515" stroke="#fbbf24" stroke-width="4"/>
+<line x1="386" y1="580" x2="230" y2="515" stroke="#f472b6" stroke-width="5" stroke-linecap="round"/>
+<polyline points="230,564 246,564 246,580" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<text x="308.0" y="606" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#38bdf8" text-anchor="middle">12 ft</text>
+<text x="218" y="547.5" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#fbbf24" text-anchor="end">5 ft</text>
+<text x="332.0" y="547.5" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#f472b6" text-anchor="middle" font-weight="bold">13 ft</text>
+<text x="900" y="380" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="bold">Garden path</text>
+<rect x="830" y="420" width="126.0" height="168.0" fill="rgba(241,201,125,0.07)" stroke="#ffffff" stroke-width="2.5"/>
+<line x1="830" y1="588.0" x2="956.0" y2="420" stroke="#f472b6" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 6"/>
+<text x="893.0" y="614.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#38bdf8" text-anchor="middle">30 ft</text>
+<text x="818" y="504.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#fbbf24" text-anchor="end">40 ft</text>
+<text x="919.0" y="504.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#f472b6" text-anchor="middle" font-weight="bold">50 ft</text>
 </svg>

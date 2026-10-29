@@ -12,7 +12,6 @@ export type FocusedSideCalculatorPage = {
   slug: string;
   url: string;
   h1: string;
-  tagline?: string;
   metaTitle: string;
   metaDescription: string;
   formulaSlug: string;
@@ -89,15 +88,13 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     slug: 'pythagorean-theorem-calculator',
     url: '/pythagorean-theorem-calculator/',
     h1: 'Pythagorean Theorem Calculator: Find the Hypotenuse',
-    tagline: 'Enter the two legs a and b to calculate the hypotenuse c instantly.',
     metaTitle: 'Pythagorean Theorem Calculator | Find the Hypotenuse',
     metaDescription:
       'Calculate the hypotenuse of a right triangle using two known legs. Learn the Pythagorean theorem, follow worked examples, and verify your answer.',
     formulaSlug: 'pythagorean-theorem',
     toolPurpose:
       'Whether you\u2019re solving a homework problem or measuring a diagonal in real life, this tool gives you the answer in seconds \u2014 with the full solution shown step by step.',
-    intro:
-      'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the hypotenuse c of a right triangle when you know both perpendicular legs a and b. The hypotenuse sits opposite the 90&deg; angle and is always the longest side of a valid right triangle. Enter your two leg values above to get the result instantly with a full step-by-step solution.',
+    intro: 'Find the hypotenuse c of a right triangle from the two legs a and b. Enter both values to calculate c instantly.',
     quickSummary: {
       h2: 'What This Tool Solves',
       intro:
@@ -1322,13 +1319,12 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     slug: 'right-triangle-adjacent-side-from-tangent-calculator',
     url: '/right-triangle-adjacent-side-from-tangent-calculator/',
     h1: 'Adjacent Side Calculator: Find b from Opposite Side a and Angle A',
-    tagline: 'Enter the opposite side a and angle A to find the adjacent side b.',
     metaTitle: 'Adjacent Side Calculator: Find b Using Tangent',
     metaDescription: 'Find the adjacent side of a right triangle using the opposite side and angle. Learn the tangent formula, follow worked examples, and calculate horizontal distances.',
     formulaSlug: 'b-a-tan',
     toolPurpose:
       'This tool finds the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b when you have the opposite side a and an acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. It reverses the tangent formula, dividing instead of multiplying, so you get the base length directly.',
-    intro: 'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the adjacent side b of a right triangle when you know the opposite side a and the acute angle A. The method uses the tangent ratio: since tan(A) = a / b, dividing the known side by the tangent gives the side next to the angle. Enter your values above to calculate b instantly with a full step-by-step solution.',
+    intro: 'Find the adjacent side b of a right triangle from the opposite side a and angle A. Enter both values to calculate b instantly.',
     quickSummary: {
       h2: 'What This Tool Solves',
       intro:

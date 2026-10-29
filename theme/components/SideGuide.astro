@@ -4,11 +4,7 @@
  * En-only (following HubGuide pattern). 17 sections, 4 SVG diagrams, 4 tables, 12 FAQs.
  */
 import katex from 'katex';
-import { readFileSync, existsSync } from 'node:fs';
-import { join } from 'node:path';
 import Faq from 'theme/components/Faq.astro';
-
-const SIDE_IMG_DIR = join(process.cwd(), 'public', 'images', 'hub');
 
 const rich = (s: string): string => {
   if (!s || typeof s !== 'string') return '';
@@ -24,14 +20,6 @@ const rich = (s: string): string => {
       `<span dir="ltr" class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>`
   );
   return out;
-};
-
-const inlineSideSvg = (name: string): string => {
-  try {
-    return readFileSync(join(SIDE_IMG_DIR, name), 'utf8');
-  } catch {
-    return '';
-  }
 };
 
 const imgSrc = (name: string): string => `/images/hub/${name}`;
@@ -83,7 +71,7 @@ const imgSrc = (name: string): string => `/images/hub/${name}`;
   <p>Locate the right-angle marker (the small square). The opposite side is the hypotenuse; the two touching sides are the legs. For rotated diagrams, imagine turning the triangle until the right angle sits at the bottom left with one leg horizontal and the other vertical. Without a right-angle marker, confirm the triangle is right-angled before using this calculator.</p>
   
   <figure class="not-prose my-6">
-    <div class="mx-auto w-full max-w-xl" set:html={inlineSideSvg('side-anatomy.svg')} />
+    <img src={imgSrc('side-anatomy.svg')} alt="Labeled right triangle showing legs a and b, hypotenuse c, right angle at C, and acute angles A and B" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
     <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Parts of a right triangle: legs a and b form the right angle at C, hypotenuse c sits opposite, with acute angles A and B.</figcaption>
   </figure>
 </section>
@@ -97,7 +85,7 @@ const imgSrc = (name: string): string => `/images/hub/${name}`;
   <p>Draw a square on each side: areas a², b², and c². The theorem says the two smaller areas sum to the largest. For 3-4-5: squares of 9 and 16 square units sum to 25, the hypotenuse square area. Squaring matters because you compare areas, not lengths.</p>
   
   <figure class="not-prose my-6">
-    <div class="mx-auto w-full max-w-xl" set:html={inlineSideSvg('side-pythagoras-squares.svg')} />
+    <img src={imgSrc('side-pythagoras-squares.svg')} alt="3-4-5 right triangle with squares on each side labeled 9, 16, and 25 square units showing 9 plus 16 equals 25" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
     <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Visual proof: the 9 and 16 square-unit squares on the legs combine to equal the 25 square-unit square on the hypotenuse.</figcaption>
   </figure>
 </section>
@@ -107,11 +95,11 @@ const imgSrc = (name: string): string => `/images/hub/${name}`;
   <h2>How to Find the Hypotenuse Using Two Legs</h2>
   <p>Solving <span set:html={rich('[[a^2 + b^2 = c^2]]')} /> for c gives <span set:html={rich('[[c = \\sqrt{a^2 + b^2}]]')} />. The process: identify both legs, square each, add the squares, take the root, write the unit, and confirm the result exceeds both legs.</p>
   
-  <h3>Example 1 — Finding the Hypotenuse of a 6-8 Right Triangle</h3>
+  <h3>Example 1: Finding the Hypotenuse of a 6-8 Right Triangle</h3>
   <p>Given legs a = 6 cm and b = 8 cm: square each (36 and 64), add (100), take the root (10). The hypotenuse is 10 cm, exceeding both legs as expected.</p>
   <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[c = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10\\text{ cm}]]]')} />
   
-  <h3>Example 2 — Finding a Hypotenuse With Decimal Measurements</h3>
+  <h3>Example 2: Finding a Hypotenuse With Decimal Measurements</h3>
   <p>Given a = 2.5 m, b = 6 m: 2.5² + 6² = 6.25 + 36 = 42.25, √42.25 = 6.5 m. Decimals need careful arithmetic; keep full precision until the final rounding.</p>
   <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[c = \\sqrt{2.5^2 + 6^2} = \\sqrt{6.25 + 36} = \\sqrt{42.25} = 6.5\\text{ m}]]]')} />
   
@@ -127,14 +115,14 @@ const imgSrc = (name: string): string => `/images/hub/${name}`;
   <h3>Find Leg b When Hypotenuse c and Leg a Are Known</h3>
   <p>The formula is <span set:html={rich('[[b = \\sqrt{c^2 - a^2}]]')} />. Derive it: begin with <span set:html={rich('[[a^2 + b^2 = c^2]]')} />, subtract a² from both sides to get <span set:html={rich('[[b^2 = c^2 - a^2]]')} />, then take the square root. The subtraction reflects that the hypotenuse squared contains both leg squares, so removing one leaves the other.</p>
   
-  <h3>Example 3 — Find Leg b From a 13 cm Hypotenuse</h3>
+  <h3>Example 3: Find Leg b From a 13 cm Hypotenuse</h3>
   <p>Given c = 13 cm and a = 5 cm, find leg b. Square both: 13² = 169 and 5² = 25. Subtract: 169 − 25 = 144. Take the root: √144 = 12. Leg b measures 12 cm. Verify: 5² + 12² = 25 + 144 = 169 = 13². The triple 5-12-13 confirms the result.</p>
   <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[b = \\sqrt{13^2 - 5^2} = \\sqrt{169 - 25} = \\sqrt{144} = 12\\text{ cm}]]]')} />
   
   <h3>Find Leg a When Hypotenuse c and Leg b Are Known</h3>
   <p>The formula is <span set:html={rich('[[a = \\sqrt{c^2 - b^2}]]')} />. The legs are interchangeable in the Pythagorean relationship; labeling one as a and the other as b is a convention. The calculator offers both modes so you can match the field labels to your specific problem without mentally swapping variables.</p>
   
-  <h3>Example 4 — Finding the Unknown Leg</h3>
+  <h3>Example 4: Finding the Unknown Leg</h3>
   <p>Given c = 17 inches and b = 15 inches, find leg a. Square: 17² = 289 and 15² = 225. Subtract: 289 − 225 = 64. Take the root: √64 = 8. Leg a is 8 inches. This is the 8-15-17 triple. The two missing-leg modes differ only in which leg is known; the mathematics is identical.</p>
   <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[a = \\sqrt{17^2 - 15^2} = \\sqrt{289 - 225} = \\sqrt{64} = 8\\text{ inches}]]]')} />
   
@@ -166,7 +154,7 @@ const imgSrc = (name: string): string => `/images/hub/${name}`;
   </div>
   
   <figure class="not-prose my-6">
-    <div class="mx-auto w-full max-w-xl" set:html={inlineSideSvg('side-missing-leg.svg')} />
+    <img src={imgSrc('side-missing-leg.svg')} alt="Split diagram showing two right triangles solving for missing legs using the Pythagorean theorem" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
     <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Two missing-leg calculations: finding b from the 5-12-13 triangle and finding a from the 8-15-17 triangle.</figcaption>
   </figure>
 </section>
@@ -233,32 +221,32 @@ const imgSrc = (name: string): string => `/images/hub/${name}`;
 <section id="side-applications" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>Real-Life Examples of Right Triangle Side Calculations</h2>
   
-  <h3>Example 5 — Ladder Against a Wall</h3>
+  <h3>Example 5: Ladder Against a Wall</h3>
   <p>A ladder reaches 2.4 m vertically up a wall, with its base 1.8 m from the wall. The wall and ground form a right angle, creating a right triangle where the ladder is the hypotenuse. Known: a = 1.8 m (base), b = 2.4 m (height). Find: c (ladder length). Formula: <span set:html={rich('[[c = \\sqrt{a^2 + b^2}]]')} />. Substitute: c = √(1.8² + 2.4²) = √(3.24 + 5.76) = √9 = 3. The ladder measures 3 m. This tells you the ladder length needed to reach that height at that distance. Note: this geometry does not assess ladder safety; follow manufacturer guidelines and safety regulations for actual use.</p>
   
-  <h3>Example 6 — Diagonal of a Rectangular Room</h3>
+  <h3>Example 6: Diagonal of a Rectangular Room</h3>
   <p>A room measures 9 ft long and 12 ft wide. The diagonal between opposite corners forms the hypotenuse of a right triangle with the walls as legs. Known: a = 9 ft, b = 12 ft. Find: c. Formula: c = √(9² + 12²) = √(81 + 144) = √225 = 15. The diagonal is 15 ft. This helps when checking if a room is square (both diagonals should match) or determining the longest straight-line distance for furniture placement.</p>
   
-  <h3>Example 7 — Roof Rafter Length</h3>
+  <h3>Example 7: Roof Rafter Length</h3>
   <p>A simplified roof cross-section has a horizontal run of 12 ft and vertical rise of 5 ft. The rafter forms the hypotenuse. Known: run = 12 ft, rise = 5 ft. Find: rafter length. Formula: c = √(12² + 5²) = √(144 + 25) = √169 = 13. The rafter is 13 ft long. This basic calculation excludes overhangs, ridge thickness, and connection allowances that real construction requires. Consult building plans for complete specifications.</p>
   
-  <h3>Example 8 — TV or Monitor Diagonal</h3>
+  <h3>Example 8: TV or Monitor Diagonal</h3>
   <p>A rectangular display measures 16 inches wide and 9 inches tall. The diagonal is the hypotenuse. Known: width = 16 in, height = 9 in. Find: diagonal. Formula: d = √(16² + 9²) = √(256 + 81) = √337 ≈ 18.36. The diagonal measures approximately 18.36 inches. This uses the stated dimensions; commercial screen sizes may differ based on manufacturer measurement methods.</p>
   
-  <h3>Example 9 — Measuring a Ramp</h3>
+  <h3>Example 9: Measuring a Ramp</h3>
   <p>A ramp has a horizontal run of 6 m and a rise of 0.75 m. The sloping surface is the hypotenuse. Known: run = 6 m, rise = 0.75 m. Find: slope length. Formula: s = √(6² + 0.75²) = √(36 + 0.5625) = √36.5625 ≈ 6.05. The slope measures about 6.05 m. The horizontal run (6 m) differs from the slope length (6.05 m); the slope is always slightly longer. This does not verify accessibility compliance; check local building codes for ramp requirements.</p>
   
-  <h3>Example 10 — Rectangular Garden Path</h3>
+  <h3>Example 10: Rectangular Garden Path</h3>
   <p>A rectangular garden is 30 ft wide and 40 ft long. A diagonal path cuts across. Known: a = 30 ft, b = 40 ft. Find: path length. Formula: c = √(30² + 40²) = √(900 + 1600) = √2500 = 50. The path is 50 ft. Walking the diagonal (50 ft) is shorter than walking along two sides (70 ft), which is why diagonal paths save time.</p>
   
-  <h3>Example 11 — Support Brace With a Known Diagonal</h3>
+  <h3>Example 11: Support Brace With a Known Diagonal</h3>
   <p>A support brace measures 10 ft long (hypotenuse) and spans 8 ft horizontally. Find the vertical distance. Known: c = 10 ft, a = 8 ft. Find: b. Formula: b = √(c² − a²) = √(100 − 64) = √36 = 6. The vertical distance is 6 ft. Subtraction is necessary because the hypotenuse squared contains both leg squares; removing the known horizontal component leaves the vertical.</p>
   
-  <h3>Example 12 — Engineering Drawing With Decimal Values</h3>
+  <h3>Example 12: Engineering Drawing With Decimal Values</h3>
   <p>A bracket design specifies a hypotenuse of 250 mm and one leg of 70 mm. Find the other leg. Known: c = 250 mm, b = 70 mm. Find: a. Formula: a = √(c² − b²) = √(62500 − 4900) = √57600 = 240. The leg measures 240 mm. With millimeter inputs, the result is exact here, but in practice round to the precision of your least precise measurement. Do not report more decimal places than your tools can measure.</p>
   
   <figure class="not-prose my-6">
-    <div class="mx-auto w-full max-w-xl" set:html={inlineSideSvg('side-applications.svg')} />
+    <img src={imgSrc('side-applications.svg')} alt="Four panels showing ladder against wall, room diagonal, roof rafter, and garden path with right triangle measurements" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
     <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Everyday right triangles: ladder (3 m), room diagonal (15 ft), roof rafter (13 ft), and garden path (50 ft).</figcaption>
   </figure>
 </section>
@@ -364,9 +352,53 @@ const imgSrc = (name: string): string => `/images/hub/${name}`;
 </section>
 
 <!-- Section 15: Related Calculators -->
-<section id="side-related" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
-  <h2>Other Right Triangle Calculators You May Find Useful</h2>
-  <p>After finding your missing side, you might need additional measurements. The <a href="/right-triangle-calculator/" class="text-primary hover:underline">Right Triangle Calculator</a> solves the complete triangle from any two valid inputs, giving all sides, angles, area, and more. To find an unknown angle from your side lengths, use the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">Right Triangle Angle Calculator</a>. If you know one side and one angle rather than two sides, the <a href="/right-triangle-side-from-angle-calculator/" class="text-primary hover:underline">Right Triangle Side Calculator Using Angle</a> applies trigonometric ratios. The <a href="/right-triangle-area-calculator/" class="text-primary hover:underline">Right Triangle Area Calculator</a> computes area from your completed triangle. For perimeter, the <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">Right Triangle Perimeter and Semiperimeter Calculator</a> adds all three sides. The <a href="/special-right-triangle-calculator/" class="text-primary hover:underline">Special Right Triangle Calculator</a> handles 45-45-90 and 30-60-90 triangles with exact ratios. To explore whole-number triples, try the <a href="/pythagorean-triples-calculator/" class="text-primary hover:underline">Pythagorean Triples Calculator</a>.</p>
+<section id="side-related" class="mx-auto mt-12 w-full max-w-4xl section-shell scroll-mt-24">
+  <h2 class="font-headline text-2xl font-bold text-on-surface">Other Right Triangle Calculators You May Find Useful</h2>
+  <p class="mt-2 max-w-2xl text-sm text-on-surface-variant">After finding your missing side, continue with these related calculators to complete your triangle analysis.</p>
+  <ul class="mt-5 grid gap-x-12 sm:grid-cols-2">
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">01</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-angle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">02</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Angle Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-side-from-angle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">03</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Side Calculator Using Angle</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-area-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">04</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Area Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-measurements-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">05</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Perimeter and Semiperimeter Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/special-right-triangle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">06</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Special Right Triangle Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/pythagorean-triples-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">07</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Pythagorean Triples Calculator</span>
+      </a>
+    </li>
+  </ul>
 </section>
 
 <!-- Section 16: FAQs -->

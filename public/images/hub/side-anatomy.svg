@@ -2,24 +2,24 @@
 <title>Parts of a right triangle</title>
 <desc>Right triangle with legs a and b, hypotenuse c, right angle marker, and acute angles A and B labeled.</desc>
 
-<polygon points="400,500 700,500 400,100" fill="rgba(241,201,125,0.07)"/>
-<line x1="400" y1="500" x2="700" y2="500" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
-<line x1="400" y1="500" x2="400" y2="100" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
-<line x1="700" y1="500" x2="400" y2="100" stroke="#f472b6" stroke-width="4" stroke-linecap="round"/>
-<polyline points="400,475 425,475 425,500" stroke="#ffffff" stroke-width="2" fill="none"/>
-<text x="550" y="535" font-family="Noto Serif, Georgia, serif" font-size="28" fill="#38bdf8" text-anchor="middle" font-style="italic">a</text>
-<text x="365" y="300" font-family="Noto Serif, Georgia, serif" font-size="28" fill="#fbbf24" text-anchor="end" font-style="italic">b</text>
-<text x="580" y="280" font-family="Noto Serif, Georgia, serif" font-size="28" fill="#f472b6" text-anchor="middle" font-style="italic">c</text>
-<text x="435" y="160" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
-<text x="660" y="465" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">B</text>
-<text x="385" y="545" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#ffffff" text-anchor="end">C = 90°</text>
-<text x="850" y="150" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#ffffff" text-anchor="start" font-weight="bold">Legend</text>
-<line x1="850" y1="185" x2="890" y2="185" stroke="#38bdf8" stroke-width="4"/>
-<text x="905" y="192" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#d0c5af" text-anchor="start">Leg a (horizontal)</text>
-<line x1="850" y1="225" x2="890" y2="225" stroke="#fbbf24" stroke-width="4"/>
-<text x="905" y="232" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#d0c5af" text-anchor="start">Leg b (vertical)</text>
-<line x1="850" y1="265" x2="890" y2="265" stroke="#f472b6" stroke-width="4"/>
-<text x="905" y="272" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#d0c5af" text-anchor="start">Hypotenuse c (longest)</text>
-<text x="850" y="320" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#d0c5af" text-anchor="start">A, B: acute angles</text>
-<text x="850" y="350" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#d0c5af" text-anchor="start">C: right angle (90°)</text>
+<polygon points="300,450 580,450 300,130" fill="rgba(241,201,125,0.07)"/>
+<line x1="300" y1="450" x2="580" y2="450" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+<line x1="300" y1="450" x2="300" y2="130" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
+<line x1="580" y1="450" x2="300" y2="130" stroke="#f472b6" stroke-width="4" stroke-linecap="round"/>
+<polyline points="300,430 320,430 320,450" stroke="#ffffff" stroke-width="2" fill="none"/>
+<text x="440.0" y="485" font-family="Noto Serif, Georgia, serif" font-size="30" fill="#38bdf8" text-anchor="middle" font-style="italic">a</text>
+<text x="275" y="290.0" font-family="Noto Serif, Georgia, serif" font-size="30" fill="#fbbf24" text-anchor="middle" font-style="italic">b</text>
+<text x="480.0" y="290.0" font-family="Noto Serif, Georgia, serif" font-size="30" fill="#f472b6" text-anchor="middle" font-style="italic">c</text>
+<text x="330" y="180" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="545" y="420" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">B</text>
+<text x="290" y="495" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#ffffff" text-anchor="end">C = 90°</text>
+<text x="750" y="180" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#ffffff" text-anchor="start" font-weight="bold">Legend</text>
+<line x1="750" y1="210" x2="790" y2="210" stroke="#38bdf8" stroke-width="4"/>
+<text x="805" y="217" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#d0c5af" text-anchor="start">Leg a</text>
+<line x1="750" y1="245" x2="790" y2="245" stroke="#fbbf24" stroke-width="4"/>
+<text x="805" y="252" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#d0c5af" text-anchor="start">Leg b</text>
+<line x1="750" y1="280" x2="790" y2="280" stroke="#f472b6" stroke-width="4"/>
+<text x="805" y="287" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#d0c5af" text-anchor="start">Hypotenuse c</text>
+<text x="750" y="330" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#d0c5af" text-anchor="start">A, B: acute angles</text>
+<text x="750" y="360" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#d0c5af" text-anchor="start">C: right angle</text>
 </svg>

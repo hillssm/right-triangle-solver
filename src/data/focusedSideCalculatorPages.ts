@@ -1837,41 +1837,325 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       ]
     },
     extraSections: [
-      {
-        h2: 'What the Result Means',
-        paragraphs: [
-          'The output labeled Opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a is the side across from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. It tells you the vertical distance, height, or rise that corresponds to the base distance and angle you entered.',
-          'Unlike sine and cosine results, the tangent result is not limited to being smaller than any particular input. If the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is large (close to 90 degrees), tan(A) becomes very large, and a can exceed b significantly.'
-        ]
-      },
-      {
-        h2: 'When to Use This Calculator',
-        paragraphs: [
-          'This is the right tool when you have a base measurement and an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of elevation or depression and need to find the height or vertical distance. It skips the hypotenuse entirely.',
-          'Tangent is especially useful in surveying, construction, and field measurement problems where the horizontal distance is known from a map or tape measure and the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is read from an inclinometer or clinometer.'
-        ],
-        listTitle: 'Common situations:',
-        listItems: [
-          'Finding the height of a building when you know your distance from the base and the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of elevation.',
-          'Calculating the rise of a hill from the horizontal run and slope <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
-          'Determining the depth of a trench from the edge distance and the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of descent.',
-          'Converting a roof pitch <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> into the actual rise per unit of horizontal run.'
-        ]
-      },
-      {
-        h2: 'Common Mistakes',
-        paragraphs: [
-          'Tangent problems often go wrong when the hypotenuse is used where the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> should be, or when sides a and b are swapped. Double-check which side sits next to the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and which one is across from it.'
-        ],
-        listTitle: 'Watch out for:',
-        listItems: [
-          'Using the hypotenuse instead of the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b. Tangent does not use the hypotenuse.',
-          'Switching a and b. The adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is the input, the opposite side is the output.',
-          'Using division instead of multiplication. To find a from b, you multiply by tan(A).',
-          'Using an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of exactly 90 degrees. Tangent of 90 degrees is not defined, so the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> will show an error.',
-          'Entering the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> in radians rather than degrees.'
-        ]
-      }
+    {
+      h2: 'How to Find the Opposite Side Using Tangent',
+      paragraphs: [
+        'A surveyor stands 25 m from a building and measures an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of elevation of 38 degrees to the top. The horizontal distance is known, the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is known, but the building height is not. That height is the opposite leg of a right triangle, and tangent finds it directly: multiply the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> by the tangent of the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
+        'This page explains the tangent formula from first principles: what the opposite and adjacent sides mean, why tangent skips the hypotenuse entirely, how to identify the correct sides in any diagram orientation, and how to apply the result to real measurements. The formula is a = b \u00d7 tan(A), where a is the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, b is the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, and A is the acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> in degrees. Unlike sine and cosine, which both involve the hypotenuse, tangent works with the two legs alone, making it the natural choice when the hypotenuse is unknown or irrelevant.',
+      ],
+    },
+    {
+      h2: 'Understanding the Opposite and Adjacent Sides',
+      paragraphs: [
+        'Every right triangle has one 90-degree <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and two acute angles. For the reference <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A, the three sides get their names from their positions relative to A. The hypotenuse c sits opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and is always the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. The two remaining sides are the legs: one touches <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A (the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b) and one lies directly across from it (the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a).',
+        'Tangent compares these two legs: tan(A) = a / b. The adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b often represents a horizontal distance you can measure on the ground, such as the distance from an observer to a building. The opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a often represents a vertical height, such as the building itself. Because the labels depend on the reference <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>, swapping from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A to <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> B exchanges the roles of a and b.',
+        'The hypotenuse plays no part in the tangent formula. This is a genuine advantage in field work: measuring a horizontal distance with a tape is far easier than measuring a diagonal. When you know the base and the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>, tangent gives the height without any diagonal measurement.',
+      ],
+      customHtml: `<figure class="my-6">
+<img src="/images/tangent/tangent-anatomy.svg" alt="Right triangle anatomy for tangent: opposite side a vertical, adjacent side b horizontal, angle A at bottom-right" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+<figcaption class="mt-2 text-center text-sm text-on-surface-variant">Tangent uses the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a and the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b. The hypotenuse c is shown for context but is not needed.</figcaption>
+</figure>`,
+    },
+    {
+      h2: 'What Is Tangent in a Right Triangle?',
+      paragraphs: [
+        'Tangent is the ratio of the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> to the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>: tan(A) = a / b. It answers the question "how many units of rise come with each unit of run?" If tan(A) = 0.75, every 4 units of horizontal run correspond to 3 units of vertical rise. The ratio has no units because the units cancel in the division.',
+        'Unlike sine and cosine, whose ratios always fall between 0 and 1 for acute angles, tangent has no upper limit. A small <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> gives a small tangent (mostly run, little rise). At 45 degrees the legs are equal and tan(A) = 1 exactly. Beyond 45 degrees the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> outgrows the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> and the tangent exceeds 1, climbing steeply as the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> approaches 90 degrees.',
+        'The memory aid SOH-CAH-TOA keeps the three ratios straight: Sine = Opposite / Hypotenuse, Cosine = Adjacent / Hypotenuse, Tangent = Opposite / Adjacent. The "TOA" part is the one this <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> uses. Rearranging tan(A) = a / b by multiplying both sides by b gives the working formula a = b \u00d7 tan(A).',
+      ],
+      customHtml: `<figure class="my-6">
+<img src="/images/tangent/tangent-ratio.svg" alt="How the tangent ratio works: 3-4-5 triangle, tan(A) equals 3 divided by 4 equals 0.75" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+<figcaption class="mt-2 text-center text-sm text-on-surface-variant">The tangent ratio divides the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> by the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. Multiplying back by b recovers the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>.</figcaption>
+</figure>`,
+    },
+    {
+      h2: 'How to Use the Right Triangle Side From Tangent Calculator',
+      paragraphs: [
+        'Using the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> correctly starts with identifying the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> and labeling the sides relative to <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. The steps below match the actual interface: two input fields, a Calculate button, and a Reset button.',
+      ],
+      listTitle: 'Steps:',
+      listItems: [
+        'Identify the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> in your triangle. Tangent only applies to right triangles.',
+        'Locate <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A, the acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> you know. Confirm it is between 0 and 90 degrees.',
+        'Find the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b: the leg that touches <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A and also touches the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. This is often the horizontal distance.',
+        'Find the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a: the leg directly across from <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. This is the value you want.',
+        'Enter the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b into the first input field.',
+        'Enter <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A in degrees into the second input field.',
+        'Click Calculate to see the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a and the full solution steps.',
+        'Check that the answer is positive and reasonable for your situation.',
+        'Verify with the ratio: tan(A) should approximately equal a / b.',
+        'Use Reset to clear the fields before starting a new calculation.',
+      ],
+    },
+    {
+      h2: 'How to Calculate the Opposite Side Using Tangent',
+      paragraphs: [],
+      customHtml: `<article class="mb-8">
+<h3>Example 1: The 3-4-5 Triangle</h3>
+<p><strong>Given:</strong> b = 4 cm, A = 36.87\u00b0. <strong>Find:</strong> a.</p>
+<p><strong>Formula:</strong> a = b \u00d7 tan(A)</p>
+<p><strong>Substitution:</strong> a = 4 \u00d7 tan(36.87\u00b0)</p>
+<p><strong>Tangent value:</strong> tan(36.87\u00b0) \u2248 0.75</p>
+<p><strong>Calculation:</strong> a \u2248 4 \u00d7 0.75 = 3</p>
+<p><strong>Answer:</strong> <strong>a = 3 cm</strong></p>
+<p>The 3-4-5 triangle is the classic introduction to tangent: the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is exactly 3 when the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is 4 and the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is 36.87 degrees.</p>
+</article>
+<article class="mb-8">
+<h3>Example 2: A 45-Degree Angle</h3>
+<p><strong>Given:</strong> b = 6 m, A = 45\u00b0. <strong>Find:</strong> a.</p>
+<p><strong>Calculation:</strong> a = 6 \u00d7 tan(45\u00b0) = 6 \u00d7 1 = 6</p>
+<p><strong>Answer:</strong> <strong>a = 6 m</strong></p>
+<p>At 45 degrees the two legs are equal, so the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> matches the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> exactly. This is a useful sanity check for any tangent calculation.</p>
+</article>
+<article class="mb-8">
+<h3>Example 3: An Angle Above 45 Degrees</h3>
+<p><strong>Given:</strong> b = 8 m, A = 60\u00b0. <strong>Find:</strong> a.</p>
+<p><strong>Calculation:</strong> a = 8 \u00d7 tan(60\u00b0) \u2248 8 \u00d7 1.7320508 \u2248 13.856406</p>
+<p><strong>Answer:</strong> <strong>a \u2248 13.86 m</strong></p>
+<p>When the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> exceeds 45 degrees, the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> outgrows the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. Here a is nearly 1.73 times b, which is correct geometry, not an error.</p>
+</article>
+<article class="mb-8">
+<h3>Example 4: A Decimal Measurement</h3>
+<p><strong>Given:</strong> b = 7.5 m, A = 32\u00b0. <strong>Find:</strong> a.</p>
+<p><strong>Calculation:</strong> a = 7.5 \u00d7 tan(32\u00b0) \u2248 7.5 \u00d7 0.6248694 \u2248 4.6865205</p>
+<p><strong>Answer:</strong> <strong>a \u2248 4.69 m</strong></p>
+<p>Keep full precision in the tangent value during calculation and round only the final answer. Rounding tan(32\u00b0) to 0.62 early would give 4.65 m, a small but avoidable error.</p>
+</article>
+<figure class="my-6">
+<img src="/images/tangent/tangent-steps.svg" alt="Step-by-step tangent calculation: 10 m adjacent side, 30 degree angle, opposite side equals 5.77 m" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+<figcaption class="mt-2 text-center text-sm text-on-surface-variant">Worked solution: a = 10 \u00d7 tan(30\u00b0) \u2248 5.77 m, with each substitution step shown.</figcaption>
+</figure>`,
+    },
+    {
+      h2: 'Real-Life Examples of Tangent Calculations',
+      paragraphs: [],
+      customHtml: `<article class="mb-8">
+<h3>Example 5: Height of a Flagpole</h3>
+<p><strong>Given:</strong> b = 3 m, A = 60\u00b0. <strong>Find:</strong> a.</p>
+<p><strong>Calculation:</strong> a = 3 \u00d7 tan(60\u00b0) \u2248 3 \u00d7 1.7320508 \u2248 5.1961524</p>
+<p><strong>Answer:</strong> <strong>a \u2248 5.20 m</strong></p>
+<p>Stand 3 m from a flagpole and measure a 60-degree <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of elevation to its top. The pole is about 5.20 m tall. This assumes level ground and a vertical pole.</p>
+</article>
+<article class="mb-8">
+<h3>Example 6: A Gentle Ramp</h3>
+<p><strong>Given:</strong> b = 12 m, A = 5\u00b0. <strong>Find:</strong> a.</p>
+<p><strong>Calculation:</strong> a = 12 \u00d7 tan(5\u00b0) \u2248 12 \u00d7 0.0874887 \u2248 1.0498644</p>
+<p><strong>Answer:</strong> <strong>a \u2248 1.05 m</strong></p>
+<p>A 12 m ramp rising at 5 degrees gains just over a metre of height. Small angles produce small rises, which is why wheelchair ramps need long runs.</p>
+</article>
+<article class="mb-8">
+<h3>Example 7: A Roof Rafter</h3>
+<p><strong>Given:</strong> b = 4.5 m, A = 30\u00b0. <strong>Find:</strong> a.</p>
+<p><strong>Calculation:</strong> a = 4.5 \u00d7 tan(30\u00b0) \u2248 4.5 \u00d7 0.5773503 \u2248 2.5980765</p>
+<p><strong>Answer:</strong> <strong>a \u2248 2.60 m</strong></p>
+<p>A rafter spanning 4.5 m horizontally at a 30-degree pitch rises about 2.60 m. This is a geometric result, not a structural design check.</p>
+</article>
+<article class="mb-8">
+<h3>Example 8: Building Height From a Distance</h3>
+<p><strong>Given:</strong> b = 25 m, A = 38\u00b0. <strong>Find:</strong> a.</p>
+<p><strong>Calculation:</strong> a = 25 \u00d7 tan(38\u00b0) \u2248 25 \u00d7 0.7812856 \u2248 19.53214</p>
+<p><strong>Answer:</strong> <strong>a \u2248 19.53 m</strong></p>
+<p>From 25 m away, a 38-degree <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of elevation means the building top is about 19.53 m above eye level. Add the observer eye height for the total building height.</p>
+</article>
+<article class="mb-8">
+<h3>Example 9: A Hill Slope</h3>
+<p><strong>Given:</strong> b = 20 m, A = 42\u00b0. <strong>Find:</strong> a.</p>
+<p><strong>Calculation:</strong> a = 20 \u00d7 tan(42\u00b0) \u2248 20 \u00d7 0.9004040 \u2248 18.00808</p>
+<p><strong>Answer:</strong> <strong>a \u2248 18.01 m</strong></p>
+<p>A 20 m horizontal stretch of hillside at 42 degrees rises about 18.01 m. Steep terrain like this is common in trail elevation profiles.</p>
+</article>
+<article class="mb-8">
+<h3>Example 10: Surveying a Distant Point</h3>
+<p><strong>Given:</strong> b = 80 m, A = 12\u00b0. <strong>Find:</strong> a.</p>
+<p><strong>Calculation:</strong> a = 80 \u00d7 tan(12\u00b0) \u2248 80 \u00d7 0.2125566 \u2248 17.004528</p>
+<p><strong>Answer:</strong> <strong>a \u2248 17.00 m</strong></p>
+<p>A surveyor 80 m from a tower base reads a 12-degree elevation <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. The tower rises about 17.00 m above the instrument. Real surveying adds instrument-height corrections.</p>
+</article>
+<article class="mb-8">
+<h3>Example 11: A Steep Driveway</h3>
+<p><strong>Given:</strong> b = 6 m, A = 55\u00b0. <strong>Find:</strong> a.</p>
+<p><strong>Calculation:</strong> a = 6 \u00d7 tan(55\u00b0) \u2248 6 \u00d7 1.4281480 \u2248 8.568888</p>
+<p><strong>Answer:</strong> <strong>a \u2248 8.57 m</strong></p>
+<p>A 6 m driveway at 55 degrees climbs about 8.57 m, steeper than it is long. Grades this steep are unusual for vehicles and need drainage planning.</p>
+</article>
+<article class="mb-8">
+<h3>Example 12: A Garden Trellis</h3>
+<p><strong>Given:</strong> b = 2.5 m, A = 35\u00b0. <strong>Find:</strong> a.</p>
+<p><strong>Calculation:</strong> a = 2.5 \u00d7 tan(35\u00b0) \u2248 2.5 \u00d7 0.7002075 \u2248 1.7505188</p>
+<p><strong>Answer:</strong> <strong>a \u2248 1.75 m</strong></p>
+<p>A trellis leaning at 35 degrees with its base 2.5 m out reaches about 1.75 m up the wall it leans toward.</p>
+</article>
+<article class="mb-8">
+<h3>Example 13: A Kite String</h3>
+<p><strong>Given:</strong> b = 12 ft, A = 25\u00b0. <strong>Find:</strong> a.</p>
+<p><strong>Calculation:</strong> a = 12 \u00d7 tan(25\u00b0) \u2248 12 \u00d7 0.4663077 \u2248 5.5956924</p>
+<p><strong>Answer:</strong> <strong>a \u2248 5.60 ft</strong></p>
+<p>If a kite string makes 25 degrees with level ground and the horizontal distance is 12 ft, the kite flies about 5.60 ft above the holder hand height, assuming a straight taut string.</p>
+</article>
+<article class="mb-8">
+<h3>Example 14: A Model Bridge (Millimetres)</h3>
+<p><strong>Given:</strong> b = 600 mm, A = 25\u00b0. <strong>Find:</strong> a.</p>
+<p><strong>Calculation:</strong> a = 600 \u00d7 tan(25\u00b0) \u2248 600 \u00d7 0.4663077 \u2248 279.78462</p>
+<p><strong>Answer:</strong> <strong>a \u2248 279.78 mm</strong></p>
+<p>Tangent works identically in millimetres: a 600 mm model span at 25 degrees rises about 279.78 mm. Keep both inputs in the same unit.</p>
+</article>
+<article class="mb-8">
+<h3>Example 15: A Long Approach Road</h3>
+<p><strong>Given:</strong> b = 150 m, A = 12\u00b0. <strong>Find:</strong> a.</p>
+<p><strong>Calculation:</strong> a = 150 \u00d7 tan(12\u00b0) \u2248 150 \u00d7 0.2125566 \u2248 31.88349</p>
+<p><strong>Answer:</strong> <strong>a \u2248 31.88 m</strong></p>
+<p>A 150 m road climbing at 12 degrees gains about 31.88 m of elevation. Road engineers convert this to grade percentage: tan(12\u00b0) \u2248 0.2126, or about a 21.3% grade.</p>
+</article>
+<article class="mb-8">
+<h3>Example 16: A Ladder Against a Shed</h3>
+<p><strong>Given:</strong> b = 4.2 ft, A = 48\u00b0. <strong>Find:</strong> a.</p>
+<p><strong>Calculation:</strong> a = 4.2 \u00d7 tan(48\u00b0) \u2248 4.2 \u00d7 1.1106125 \u2248 4.6645725</p>
+<p><strong>Answer:</strong> <strong>a \u2248 4.66 ft</strong></p>
+<p>A ladder foot 4.2 ft from a shed wall, leaning at 48 degrees to the ground, reaches about 4.66 ft up the wall. The <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> alone does not confirm the ladder is safe.</p>
+</article>
+<figure class="my-6">
+<img src="/images/tangent/tangent-applications.svg" alt="Real-world tangent example: building 25 m away, 38 degree angle of elevation, height equals 19.53 m" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+<figcaption class="mt-2 text-center text-sm text-on-surface-variant">Field use: measure the horizontal distance and the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of elevation, then multiply to get the height.</figcaption>
+</figure>`,
+    },
+    {
+      h2: 'When Should You Use Tangent Instead of Sine or Cosine?',
+      paragraphs: [
+        'Choose the ratio that matches the sides you actually know. If you know the hypotenuse and an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>, sine finds the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> and cosine finds the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. If you know one leg and the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> but not the hypotenuse, tangent is the only direct option: it finds the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> from the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> with no diagonal needed.',
+        'Tangent is also the natural ratio for slope problems. Roof pitch, road grades, and ramp inclines are all described as rise over run, which is exactly tan(A). When a problem gives you a horizontal distance and asks for a height, reach for tangent first.',
+      ],
+      customHtml: `<div class="overflow-x-auto my-6">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-outline">
+<th class="py-2 pr-4">Known</th>
+<th class="py-2 pr-4">Find</th>
+<th class="py-2 pr-4">Formula</th>
+<th class="py-2">When to use it</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-outline/50">
+<td class="py-2 pr-4">Hypotenuse c, angle A</td>
+<td class="py-2 pr-4">Opposite a</td>
+<td class="py-2 pr-4">a = c x sin(A)</td>
+<td class="py-2">Diagonal length known</td>
+</tr>
+<tr class="border-b border-outline/50">
+<td class="py-2 pr-4">Hypotenuse c, angle A</td>
+<td class="py-2 pr-4">Adjacent b</td>
+<td class="py-2 pr-4">b = c x cos(A)</td>
+<td class="py-2">Diagonal length known</td>
+</tr>
+<tr>
+<td class="py-2 pr-4">Adjacent b, angle A</td>
+<td class="py-2 pr-4">Opposite a</td>
+<td class="py-2 pr-4">a = b x tan(A)</td>
+<td class="py-2">Only base distance known</td>
+</tr>
+</tbody>
+</table>
+</div>`,
+    },
+    {
+      h2: 'How the Angle Changes the Opposite Side',
+      paragraphs: [
+        'With the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> fixed, the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> grows as <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A grows, and it grows faster than linearly. Doubling the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> more than doubles the height, because the tangent curve steepens sharply past 45 degrees. This is why a small error in a large <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> measurement produces a large error in the computed height.',
+        'At 45 degrees the legs are equal, so a = b exactly. Below 45 degrees the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is the shorter leg; above 45 degrees it becomes the longer leg. As A approaches 90 degrees, tan(A) heads toward infinity and the computed height becomes enormous for even a modest base.',
+      ],
+      customHtml: `<div class="overflow-x-auto my-6">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-outline">
+<th class="py-2 pr-4">Angle A</th>
+<th class="py-2 pr-4">tan(A)</th>
+<th class="py-2 pr-4">a when b = 10 m</th>
+<th class="py-2">Pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-outline/50">
+<td class="py-2 pr-4">15°</td>
+<td class="py-2 pr-4">0.2679</td>
+<td class="py-2 pr-4">2.68 m</td>
+<td class="py-2">Short rise</td>
+</tr>
+<tr class="border-b border-outline/50">
+<td class="py-2 pr-4">30°</td>
+<td class="py-2 pr-4">0.5774</td>
+<td class="py-2 pr-4">5.77 m</td>
+<td class="py-2">Rise passes half the run</td>
+</tr>
+<tr class="border-b border-outline/50">
+<td class="py-2 pr-4">45°</td>
+<td class="py-2 pr-4">1.0000</td>
+<td class="py-2 pr-4">10.00 m</td>
+<td class="py-2">Legs equal</td>
+</tr>
+<tr class="border-b border-outline/50">
+<td class="py-2 pr-4">60°</td>
+<td class="py-2 pr-4">1.7321</td>
+<td class="py-2 pr-4">17.32 m</td>
+<td class="py-2">Rise exceeds run</td>
+</tr>
+<tr>
+<td class="py-2 pr-4">75°</td>
+<td class="py-2 pr-4">3.7321</td>
+<td class="py-2 pr-4">37.32 m</td>
+<td class="py-2">Steep climb</td>
+</tr>
+</tbody>
+</table>
+</div>`,
+    },
+    {
+      h2: 'Entering Angles and Measurements Correctly',
+      paragraphs: [
+        'The <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> expects <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A in degrees, not radians. An <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of 0.64 radians is about 36.7 degrees; entering 0.64 as if it were degrees would compute tan(0.64\u00b0) instead of tan(36.7\u00b0), a completely different triangle. Always confirm your measuring device reports degrees before typing the value.',
+        'Both <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> lengths must use the same unit. Mixing metres for b with centimetres for the expected answer of a is the most common unit mistake. The tangent ratio itself is unitless, so the answer inherits the unit of b: metres in gives metres out, millimetres in gives millimetres out.',
+        'Keep full precision through every intermediate step and round only the final displayed answer. Tangent values like 0.4663077 carry meaningful digits; trimming to 0.47 early shifts the final height. Two decimal places are plenty for most practical answers, matching the precision of typical tape measurements.',
+      ],
+    },
+    {
+      h2: 'Common Tangent Calculation Mistakes and How to Avoid Them',
+      paragraphs: [
+        'Most tangent errors come from mislabeled sides or a flipped formula. The checklist below covers the twelve mistakes seen most often, each with the fix.',
+      ],
+      listTitle: 'Avoid these mistakes:',
+      listItems: [
+        '<strong>Using the hypotenuse as the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>.</strong> Tangent needs the leg next to <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A, not the diagonal. Fix: the hypotenuse is always opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>; the adjacent leg touches both <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A and the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
+        '<strong>Swapping a and b.</strong> The formula multiplies the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> to find the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. Fix: label the sides on a sketch before calculating.',
+        '<strong>Dividing instead of multiplying.</strong> a = b \u00d7 tan(A) finds the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>; division b = a / tan(A) finds the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. Fix: check which <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is known.',
+        '<strong>Using sine or cosine with the wrong <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> pair.</strong> Sine needs the hypotenuse; if you only have the base, tangent is the right tool. Fix: match the formula to the sides you know.',
+        '<strong>Entering the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> in radians.</strong> The <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> expects degrees. Fix: convert radians to degrees first (degrees = radians \u00d7 180 / pi).',
+        '<strong>Using an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of exactly 90 degrees.</strong> tan(90\u00b0) is undefined, so the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> shows an error. Fix: the reference <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> must be acute, strictly between 0 and 90 degrees.',
+        '<strong>Using an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of 0 degrees.</strong> tan(0\u00b0) = 0 gives a = 0, a degenerate flat triangle. Fix: measure a real <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> above zero.',
+        '<strong>Mixing measurement units.</strong> Entering b in feet but reading the answer as metres silently rescales the result. Fix: keep one unit throughout.',
+        '<strong>Rounding the tangent value too early.</strong> Rounding tan(32\u00b0) from 0.6248694 to 0.62 changes the answer. Fix: round only the final result.',
+        '<strong>Expecting a to stay smaller than b.</strong> Above 45 degrees the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> legitimately exceeds the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. Fix: compare against tan(45\u00b0) = 1 as a reference.',
+        '<strong>Confusing the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of elevation with its complement.</strong> Measuring from the vertical instead of the horizontal gives 90\u00b0 minus the intended <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. Fix: confirm the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is measured from the horizontal.',
+        '<strong>Forgetting that field measurements are approximate.</strong> A 1-degree clinometer error at 60 degrees moves the height by several percent. Fix: report the answer with precision that matches the input quality.',
+      ],
+    },
+    {
+      h2: 'How to Check Whether Your Tangent Result Is Correct',
+      paragraphs: [
+        'Three independent checks catch almost every tangent error. Use at least one of them whenever the answer matters.',
+      ],
+      listTitle: 'Verification methods:',
+      listItems: [
+        '<strong>Check the ratio.</strong> Divide the answer by the input: a / b should approximately equal tan(A). For Example 1: 3 / 4 = 0.75 = tan(36.87\u00b0). If it does not match, a <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is mislabeled or the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is wrong.',
+        '<strong>Check with the Pythagorean theorem.</strong> Compute c = \u2248(a\u00b0 + b\u00b0) and confirm the triangle closes. For Example 1: \u2248(9 + 16) = 5, the familiar 3-4-5 hypotenuse. This catches arithmetic slips but not <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-label swaps.',
+        '<strong>Check against the 45-degree benchmark.</strong> If A is below 45 degrees, a must be smaller than b; if above, a must be larger; at exactly 45 degrees they are equal. For Example 3 (60\u00b0), a \u2248 13.86 m exceeds b = 8 m, which is exactly what the benchmark predicts.',
+      ],
+    },
+    {
+      h2: 'Find the Opposite Side With Confidence',
+      paragraphs: [
+        'When you know a horizontal distance and an <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of elevation, tangent turns those two measurements into a height with one multiplication: a = b \u00d7 tan(A). No hypotenuse, no diagonal measurement, no trigonometry tables. Label the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> and the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> relative to <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A, keep the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> in degrees, and the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> handles the rest.',
+        'Use the verification checks above on any answer that matters, keep units consistent, and remember the 45-degree benchmark as a quick sanity test. For the reverse problem, finding the base from a known height, the companion <a href="/right-triangle-adjacent-side-from-tangent-calculator/" class="text-primary hover:underline">adjacent side from tangent</a> <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> divides instead of multiplying.',
+      ],
+    },
     ],
     relatedLinks: [
       { href: '/right-triangle-side-from-angle-calculator/', label: 'Right Triangle Side From Angle Calculator' },
@@ -1882,31 +2166,66 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       { href: '/tangent-ratio-calculator/', label: 'Tangent Ratio Calculator' }
     ],
     faqs: [
-      {
-        question: 'What does a = b \u00d7 tan(A) calculate?',
-        answer:
-          'It calculates the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a of a right triangle when you know the adjacent side b and an acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. Tangent is the ratio that connects the opposite and adjacent sides.'
-      },
-      {
-        question: 'Why does this calculator not need the hypotenuse?',
-        answer:
-          'The <a href="/tangent-ratio-calculator/" class="text-primary hover:underline">tangent ratio</a> is defined as opposite over adjacent (a / b). It only involves sides a and b, so the hypotenuse is not part of the formula.'
-      },
-      {
-        question: 'What happens when the angle is close to 90 degrees?',
-        answer:
-          'Tangent values grow extremely large as the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> approaches 90 degrees. The opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> becomes much longer than the adjacent side, and at exactly 90 degrees the tangent is not defined.'
-      },
-      {
-        question: 'Can I use this to find the adjacent side instead?',
-        answer:
-          'No. This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> from the adjacent side. To find the adjacent side from the opposite side, use the <a href="/right-triangle-adjacent-side-from-tangent-calculator/" class="text-primary hover:underline">adjacent side from tangent</a> calculator with the formula b = a / tan(A).'
-      },
-      {
-        question: 'Is there a difference between tan and tangent?',
-        answer:
-          'No. They are the same function. "tan" is the standard abbreviation used in calculators and math notation. Both refer to the tangent trigonometric function.'
-      }
+    {
+      question: 'What does a = b \u00d7 tan(A) calculate?',
+      answer:
+        'It calculates the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> a of a right triangle when you know the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b and an acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. Tangent is the ratio that connects the two legs directly, so no hypotenuse is needed.'
+    },
+    {
+      question: 'Why does this calculator not need the hypotenuse?',
+      answer:
+        'The <a href="/tangent-ratio-calculator/" class="text-primary hover:underline">tangent ratio</a> is defined as opposite over adjacent (a / b). It only involves the two legs, so the hypotenuse never enters the formula. This makes tangent ideal for field measurements where the horizontal distance is easy to measure but the diagonal is not.'
+    },
+    {
+      question: 'What happens when the angle is close to 90 degrees?',
+      answer:
+        'Tangent values grow extremely large as the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> approaches 90 degrees. The opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> becomes much longer than the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. At exactly 90 degrees the tangent is undefined, so the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> shows an error for that input.'
+    },
+    {
+      question: 'Can I use this to find the adjacent side instead?',
+      answer:
+        'No. This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> finds the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> from the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. To find the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> from the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, use the <a href="/right-triangle-adjacent-side-from-tangent-calculator/" class="text-primary hover:underline">adjacent side from tangent</a> <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> with the formula b = a / tan(A).'
+    },
+    {
+      question: 'Is there a difference between tan and tangent?',
+      answer:
+        'No. They are the same function. "tan" is the standard abbreviation used on calculators and in math notation. Both refer to the tangent trigonometric function.'
+    },
+    {
+      question: 'What is the difference between tangent, sine, and cosine?',
+      answer:
+        'Sine uses opposite and hypotenuse (a / c), cosine uses adjacent and hypotenuse (b / c), and tangent uses the two legs (a / b). Choose tangent when you know a leg and the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> but not the hypotenuse.'
+    },
+    {
+      question: 'Can the opposite side be longer than the adjacent side?',
+      answer:
+        'Yes. When <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A exceeds 45 degrees, tan(A) is greater than 1 and the opposite <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> outgrows the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. In Example 3, a \u2248 13.86 m from b = 8 m at 60 degrees. This is correct geometry, not an error.'
+    },
+    {
+      question: 'Why must the angle be between 0 and 90 degrees?',
+      answer:
+        'Tangent is defined here for the acute <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of a right triangle. At 0 degrees the triangle flattens to nothing, and at 90 degrees tan(A) is undefined because the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> would have zero length. The <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> rejects both boundary values.'
+    },
+    {
+      question: 'How do I know whether to use tangent or sine?',
+      answer:
+        'Match the formula to the sides you know. If you know the hypotenuse and the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>, use sine (opposite) or cosine (adjacent). If you know only the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> and the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>, tangent is the direct choice: a = b \u00d7 tan(A).'
+    },
+    {
+      question: 'What units should I use for the inputs?',
+      answer:
+        'Use any length unit, as long as both inputs share it. The tangent ratio is unitless, so the answer inherits the unit of the adjacent side: metres in gives metres out, feet in gives feet out, millimetres in gives millimetres out.'
+    },
+    {
+      question: 'How can I verify my tangent answer?',
+      answer:
+        'Divide the answer by the input: a / b should approximately equal tan(A). You can also check the 45-degree benchmark (a smaller than b below 45 degrees, larger above) or confirm the triangle with the Pythagorean theorem.'
+    },
+    {
+      question: 'Can tangent find the height of a building?',
+      answer:
+        'Yes. Stand a known horizontal distance from the building, measure the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> of elevation to the top, and compute a = b \u00d7 tan(A). The result is the height above your eye level on level ground; add your eye height for the total.'
+    },
     ]
   },
   {

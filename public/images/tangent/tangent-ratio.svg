@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>How the tangent ratio works</title>
+<desc>Visual explanation: tangent equals opposite side a divided by adjacent side b, with a 3-4-5 triangle example.</desc>
+<rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+<text x="600" y="75" font-family="Noto Serif, Georgia, serif" font-size="34" fill="#ffffff" text-anchor="middle">tan(A) = opposite / adjacent = a / b</text>
+<polygon points="180,480 540,480 540,210" fill="rgba(241,201,125,0.07)"/>
+<line x1="540" y1="480" x2="540" y2="210" stroke="#fbbf24" stroke-width="7" stroke-linecap="round"/>
+<line x1="180" y1="480" x2="540" y2="480" stroke="#38bdf8" stroke-width="7" stroke-linecap="round"/>
+<line x1="180" y1="480" x2="540" y2="210" stroke="#f472b6" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+<polyline points="512,480 512,452 540,452" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<circle cx="180" cy="480" r="8" fill="#f1c97d"/>
+<circle cx="540" cy="480" r="8" fill="#f1c97d"/>
+<circle cx="540" cy="210" r="8" fill="#f1c97d"/>
+<text x="580" y="350" font-family="Noto Serif, Georgia, serif" font-size="40" fill="#fbbf24" text-anchor="middle" font-style="italic">a = 3</text>
+<text x="360" y="528" font-family="Noto Serif, Georgia, serif" font-size="40" fill="#38bdf8" text-anchor="middle" font-style="italic">b = 4</text>
+<path d="M 484.0 480.0 Q 481.5 458.2 471.4 440.3" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.8"/>
+<text x="447" y="428" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="700" y="220" font-family="Noto Serif, Georgia, serif" font-size="38" fill="#f1c97d" text-anchor="middle">tan(A) = 3 / 4 = 0.75</text>
+<text x="700" y="285" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#d0c5af" text-anchor="middle">divide opposite by adjacent</text>
+<text x="700" y="345" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#d0c5af" text-anchor="middle">to get the tangent ratio</text>
+<text x="700" y="430" font-family="Noto Serif, Georgia, serif" font-size="38" fill="#f1c97d" text-anchor="middle">a = b x tan(A)</text>
+<text x="700" y="495" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#d0c5af" text-anchor="middle">multiply back to find the opposite side</text>
+<text x="700" y="565" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#8a8272" text-anchor="middle">no hypotenuse needed</text>
+</svg>

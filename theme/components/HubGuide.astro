@@ -101,7 +101,7 @@ const tocEntries = [
 ---
 
 <nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label={rich(G.tocTitle)}>
-  <h2 class="text-2xl font-semibold" set:html={rich(G.tocTitle)} />
+  <h2 class="font-headline text-2xl font-bold" set:html={rich(G.tocTitle)} />
   <ol class="mt-4 grid gap-2 sm:grid-cols-2">
     {tocEntries.map((entry) => (
       <li>

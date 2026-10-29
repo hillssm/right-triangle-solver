@@ -633,6 +633,10 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
 
       {(hubGuide as any).sDiagram ? <HubGuide guide={hubGuide} names={hubGuideNames} locale={locale} /> : null}
 
+      {/* The HubGuide's "Explore Related" section already links all grouped
+          calculators with context, so the generic grid below is redundant
+          on the hub page. Other grouped pages (no HubGuide) keep it. */}
+      {!isHubPage && (
       <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
         <h2 class="text-2xl font-semibold">{pick(groupedUi, 'allGroupedPagesTitle', 'All Grouped Calculator Pages')}</h2>
         <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -652,6 +656,7 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
           ))}
         </div>
       </section>
+      )}
     </>
   ) : (
     <>

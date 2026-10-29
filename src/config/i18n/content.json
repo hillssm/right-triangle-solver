@@ -382,7 +382,8 @@
           "title": "Pythagorean triples",
           "intro": "Integer side lengths satisfying the Pythagorean relationship."
         }
-      ]
+      ],
+      "faqDescription": "Answers to the most common right-triangle solving questions."
     },
     "about": {
       "title": "About Us | Right Triangle Solver",
@@ -1631,7 +1632,8 @@
         "ladder": "सीढ़ी",
         "wall": "दीवार"
       },
-      "ladderTitle": "हल किया गया उदाहरण: सीढ़ी कितनी ऊंचाई तक पहुंचती है?"
+      "ladderTitle": "हल किया गया उदाहरण: सीढ़ी कितनी ऊंचाई तक पहुंचती है?",
+      "faqDescription": "समकोण त्रिभुज हल करने के सबसे सामान्य प्रश्नों के उत्तर।"
     },
     "footer": {
       "description": "समकोण-त्रिभुज गणना और सीखने के लिए एक तेज़ ज्यामिति कार्यक्षेत्र।"
@@ -2880,7 +2882,8 @@
         "ladder": "escalera",
         "wall": "pared"
       },
-      "ladderTitle": "Ejemplo resuelto: ¿Qué altura alcanza una escalera?"
+      "ladderTitle": "Ejemplo resuelto: ¿Qué altura alcanza una escalera?",
+      "faqDescription": "Respuestas a las preguntas más comunes sobre cómo resolver triángulos rectángulos."
     },
     "footer": {
       "description": "Un espacio de trabajo geométrico rápido para cálculos y aprendizaje de triángulos rectángulos."
@@ -4129,7 +4132,8 @@
         "ladder": "лестница",
         "wall": "стена"
       },
-      "ladderTitle": "Разобранный пример: какой высоты достигает лестница?"
+      "ladderTitle": "Разобранный пример: какой высоты достигает лестница?",
+      "faqDescription": "Ответы на самые частые вопросы о решении прямоугольных треугольников."
     },
     "footer": {
       "description": "Быстрое геометрическое рабочее пространство для расчетов прямоугольных треугольников и обучения."
@@ -5378,7 +5382,8 @@
         "ladder": "échelle",
         "wall": "mur"
       },
-      "ladderTitle": "Exemple résolu : quelle hauteur une échelle atteint-elle ?"
+      "ladderTitle": "Exemple résolu : quelle hauteur une échelle atteint-elle ?",
+      "faqDescription": "Réponses aux questions les plus fréquentes sur la résolution des triangles rectangles."
     },
     "footer": {
       "description": "Un espace de travail géométrique rapide pour les calculs de triangles rectangles et l'apprentissage."
@@ -6627,7 +6632,8 @@
         "ladder": "Leiter",
         "wall": "Wand"
       },
-      "ladderTitle": "Durchgerechnetes Beispiel: Wie hoch reicht eine Leiter?"
+      "ladderTitle": "Durchgerechnetes Beispiel: Wie hoch reicht eine Leiter?",
+      "faqDescription": "Antworten auf die häufigsten Fragen zum Lösen rechtwinkliger Dreiecke."
     },
     "footer": {
       "description": "Ein schneller Geometrie-Arbeitsbereich für Berechnungen am rechtwinkligen Dreieck und zum Lernen."
@@ -7876,7 +7882,8 @@
         "ladder": "scala",
         "wall": "muro"
       },
-      "ladderTitle": "Esempio svolto: quanto in alto arriva una scala?"
+      "ladderTitle": "Esempio svolto: quanto in alto arriva una scala?",
+      "faqDescription": "Risposte alle domande più frequenti sulla risoluzione dei triangoli rettangoli."
     },
     "footer": {
       "description": "Uno spazio di lavoro geometrico rapido per i calcoli dei triangoli rettangoli e l'apprendimento."
@@ -9125,7 +9132,8 @@
         "ladder": "escada",
         "wall": "parede"
       },
-      "ladderTitle": "Exemplo Resolvido: Qual Altura uma Escada Alcança?"
+      "ladderTitle": "Exemplo Resolvido: Qual Altura uma Escada Alcança?",
+      "faqDescription": "Respostas às perguntas mais comuns sobre como resolver triângulos retângulos."
     },
     "footer": {
       "description": "Um espaço de trabalho geométrico rápido para cálculos de triângulos retângulos e aprendizado."
@@ -10374,7 +10382,8 @@
         "ladder": "মই",
         "wall": "দেয়াল"
       },
-      "ladderTitle": "সমাধানকৃত উদাহরণ: মই কত উঁচু পর্যন্ত পৌঁছায়?"
+      "ladderTitle": "সমাধানকৃত উদাহরণ: মই কত উঁচু পর্যন্ত পৌঁছায়?",
+      "faqDescription": "সমকোণী ত্রিভুজ সমাধানের সবচেয়ে সাধারণ প্রশ্নগুলোর উত্তর।"
     },
     "footer": {
       "description": "সমকোণী-ত্রিভুজ গণনা এবং শেখার জন্য একটি দ্রুত জ্যামিতি কর্মক্ষেত্র।"
@@ -11623,7 +11632,8 @@
         "ladder": "はしご",
         "wall": "壁"
       },
-      "ladderTitle": "計算例: はしごはどの高さまで届くか。"
+      "ladderTitle": "計算例: はしごはどの高さまで届くか。",
+      "faqDescription": "直角三角形の解き方に関するよくある質問への回答。"
     },
     "footer": {
       "description": "直角三角形の計算と学習のための高速な幾何学ワークスペース。"
@@ -12872,7 +12882,8 @@
         "ladder": "사다리",
         "wall": "벽"
       },
-      "ladderTitle": "풀이 예제: 사다리는 어느 높이까지 닿을까?"
+      "ladderTitle": "풀이 예제: 사다리는 어느 높이까지 닿을까?",
+      "faqDescription": "직각 삼각형 풀이에 관한 가장 흔한 질문들에 대한 답변."
     },
     "footer": {
       "description": "직각 삼각형 계산 및 학습을 위한 빠른 기하학 작업 공간입니다."
@@ -14121,7 +14132,8 @@
         "ladder": "tangga",
         "wall": "dinding"
       },
-      "ladderTitle": "Contoh Kerja: Setinggi Mana Tangga Mencapai?"
+      "ladderTitle": "Contoh Kerja: Setinggi Mana Tangga Mencapai?",
+      "faqDescription": "Jawapan kepada soalan lazim tentang penyelesaian segi tiga bersudut tegak."
     },
     "footer": {
       "description": "Ruang kerja geometri pantas untuk pengiraan segitiga bersudut tegak dan pembelajaran."
@@ -15370,7 +15382,8 @@
         "ladder": "drabina",
         "wall": "ściana"
       },
-      "ladderTitle": "Przykład krok po kroku: Jak wysoko sięga drabina?"
+      "ladderTitle": "Przykład krok po kroku: Jak wysoko sięga drabina?",
+      "faqDescription": "Odpowiedzi na najczęstsze pytania dotyczące rozwiązywania trójkątów prostokątnych."
     },
     "footer": {
       "description": "Szybka przestrzeń geometryczna do obliczeń trójkątów prostokątnych i nauki."
@@ -16619,7 +16632,8 @@
         "ladder": "tangga",
         "wall": "dinding"
       },
-      "ladderTitle": "Contoh Terpandu: Setinggi Apa Tangga Mencapai Dinding?"
+      "ladderTitle": "Contoh Terpandu: Setinggi Apa Tangga Mencapai Dinding?",
+      "faqDescription": "Jawaban atas pertanyaan paling umum tentang penyelesaian segitiga siku-siku."
     },
     "footer": {
       "description": "Ruang kerja geometri cepat untuk perhitungan segitiga siku-siku dan pembelajaran."
@@ -17868,7 +17882,8 @@
         "ladder": "السلم",
         "wall": "الحائط"
       },
-      "ladderTitle": "مثال محلول: إلى أي ارتفاع يصل السلم؟"
+      "ladderTitle": "مثال محلول: إلى أي ارتفاع يصل السلم؟",
+      "faqDescription": "إجابات عن أكثر الأسئلة شيوعًا حول حل المثلثات القائمة الزاوية."
     },
     "footer": {
       "description": "مساحة عمل هندسية سريعة لحسابات المثلث القائم والتعلم."
@@ -19117,7 +19132,8 @@
         "ladder": "стълба",
         "wall": "стена"
       },
-      "ladderTitle": "Решен пример: Колко високо достига една стълба?"
+      "ladderTitle": "Решен пример: Колко високо достига една стълба?",
+      "faqDescription": "Отговори на най-честите въпроси за решаване на правоъгълни триъгълници."
     },
     "footer": {
       "description": "Бързо геометрично работно пространство за изчисления на правоъгълни триъгълници и обучение."
@@ -20366,7 +20382,8 @@
         "ladder": "merdiven",
         "wall": "duvar"
       },
-      "ladderTitle": "Çözümlü Örnek: Bir Merdiven Ne Kadar Yükseğe Ulaşır?"
+      "ladderTitle": "Çözümlü Örnek: Bir Merdiven Ne Kadar Yükseğe Ulaşır?",
+      "faqDescription": "Dik üçgen çözümüyle ilgili en yaygın soruların yanıtları."
     },
     "footer": {
       "description": "Dik üçgen hesaplamaları ve öğrenimi için hızlı bir geometri çalışma alanı."
@@ -21615,7 +21632,8 @@
         "ladder": "stege",
         "wall": "vägg"
       },
-      "ladderTitle": "Genomräknat exempel: Hur högt når en stege?"
+      "ladderTitle": "Genomräknat exempel: Hur högt når en stege?",
+      "faqDescription": "Svar på de vanligaste frågorna om att lösa rätvinkliga trianglar."
     },
     "footer": {
       "description": "En snabb geometriarbetsyta för beräkningar av rätvinkliga trianglar och lärande."
@@ -22864,7 +22882,8 @@
         "ladder": "梯子",
         "wall": "墙"
       },
-      "ladderTitle": "实例讲解：梯子能达到多高？"
+      "ladderTitle": "实例讲解：梯子能达到多高？",
+      "faqDescription": "关于直角三角形求解最常见问题的解答。"
     },
     "footer": {
       "description": "用于直角三角形计算和学习的快速几何工作空间。"

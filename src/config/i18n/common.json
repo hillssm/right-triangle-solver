@@ -119,7 +119,8 @@
       "ly": "lightyear",
       "kly": "kilolightyear",
       "pc": "parsec",
-      "mpc": "megaparsec"
+      "mpc": "megaparsec",
+      "more": "More units"
     },
     "library": {
       "nav_calculator": "Calculator",
@@ -255,7 +256,8 @@
       "ly": "प्रकाश वर्ष",
       "kly": "किलो प्रकाश वर्ष",
       "pc": "पारसेक",
-      "mpc": "मेगापारसेक"
+      "mpc": "मेगापारसेक",
+      "more": "अधिक इकाइयाँ"
     },
     "library": {
       "nav_calculator": "कैलकुलेटर",
@@ -391,7 +393,8 @@
       "ly": "año luz",
       "kly": "kilo-año luz",
       "pc": "pársec",
-      "mpc": "megapársec"
+      "mpc": "megapársec",
+      "more": "Más unidades"
     },
     "library": {
       "nav_calculator": "Calculadora",
@@ -527,7 +530,8 @@
       "ly": "световой год",
       "kly": "килосветовой год",
       "pc": "парсек",
-      "mpc": "мегапарсек"
+      "mpc": "мегапарсек",
+      "more": "Другие единицы"
     },
     "library": {
       "nav_calculator": "Калькулятор",
@@ -663,7 +667,8 @@
       "ly": "année-lumière",
       "kly": "kilo-année-lumière",
       "pc": "parsec",
-      "mpc": "mégaparsec"
+      "mpc": "mégaparsec",
+      "more": "Plus d'unités"
     },
     "library": {
       "nav_calculator": "Calculatrice",
@@ -799,7 +804,8 @@
       "ly": "Lichtjahr",
       "kly": "Kilolichtjahr",
       "pc": "Parsec",
-      "mpc": "Megaparsec"
+      "mpc": "Megaparsec",
+      "more": "Weitere Einheiten"
     },
     "library": {
       "nav_calculator": "Rechner",
@@ -935,7 +941,8 @@
       "ly": "anno luce",
       "kly": "kiloanno luce",
       "pc": "parsec",
-      "mpc": "megaparsec"
+      "mpc": "megaparsec",
+      "more": "Altre unità"
     },
     "library": {
       "nav_calculator": "Calcolatrice",
@@ -1071,7 +1078,8 @@
       "ly": "ano-luz",
       "kly": "quilo-ano-luz",
       "pc": "parsec",
-      "mpc": "megaparsec"
+      "mpc": "megaparsec",
+      "more": "Mais unidades"
     },
     "library": {
       "nav_calculator": "Calculadora",
@@ -1220,7 +1228,8 @@
       "ly": "আলোকবর্ষ",
       "kly": "কিলোলাইটবর্ষ",
       "pc": "পার্সেক",
-      "mpc": "মেগাপারসেক"
+      "mpc": "মেগাপারসেক",
+      "more": "আরও একক"
     }
   },
   "ja": {
@@ -1343,7 +1352,8 @@
       "ly": "光年",
       "kly": "キロ光年",
       "pc": "パーセク",
-      "mpc": "メガパーセク"
+      "mpc": "メガパーセク",
+      "more": "その他の単位"
     },
     "library": {
       "nav_calculator": "電卓",
@@ -1479,7 +1489,8 @@
       "ly": "광년",
       "kly": "킬로광년",
       "pc": "파섹",
-      "mpc": "메가파섹"
+      "mpc": "메가파섹",
+      "more": "기타 단위"
     },
     "library": {
       "nav_calculator": "계산기",
@@ -1628,7 +1639,8 @@
       "ly": "tahun cahaya",
       "kly": "kilolightyear",
       "pc": "parsec",
-      "mpc": "megaparsec"
+      "mpc": "megaparsec",
+      "more": "Lagi unit"
     }
   },
   "pl": {
@@ -1751,7 +1763,8 @@
       "ly": "rok świetlny",
       "kly": "kilorok świetlny",
       "pc": "parsek",
-      "mpc": "megaparsek"
+      "mpc": "megaparsek",
+      "more": "Więcej jednostek"
     },
     "library": {
       "nav_calculator": "Kalkulator",
@@ -1887,7 +1900,8 @@
       "ly": "tahun cahaya",
       "kly": "kilotahun cahaya",
       "pc": "parsec",
-      "mpc": "megaparsec"
+      "mpc": "megaparsec",
+      "more": "Unit lainnya"
     },
     "library": {
       "nav_calculator": "Kalkulator",
@@ -2023,7 +2037,8 @@
       "ly": "سنة ضوئية",
       "kly": "كيلو سنة ضوئية",
       "pc": "فرسخ فلكي",
-      "mpc": "ميجا فرسخ فلكي"
+      "mpc": "ميجا فرسخ فلكي",
+      "more": "وحدات أخرى"
     },
     "library": {
       "nav_calculator": "آلة حاسبة",
@@ -2172,7 +2187,8 @@
       "ly": "светлинна година",
       "kly": "килосветлинна година",
       "pc": "парсек",
-      "mpc": "мегапарсек"
+      "mpc": "мегапарсек",
+      "more": "Още единици"
     }
   },
   "tr": {
@@ -2295,7 +2311,8 @@
       "ly": "ışık yılı",
       "kly": "kiloışık yılı",
       "pc": "parsek",
-      "mpc": "megaparsek"
+      "mpc": "megaparsek",
+      "more": "Diğer birimler"
     },
     "library": {
       "nav_calculator": "Hesap Makinesi",
@@ -2431,7 +2448,8 @@
       "ly": "ljusår",
       "kly": "kiloljusår",
       "pc": "parsec",
-      "mpc": "megaparsec"
+      "mpc": "megaparsec",
+      "more": "Fler enheter"
     },
     "library": {
       "nav_calculator": "Miniräknare",
@@ -2567,7 +2585,8 @@
       "ly": "光年",
       "kly": "千光年",
       "pc": "秒差距",
-      "mpc": "百万秒差距"
+      "mpc": "百万秒差距",
+      "more": "更多单位"
     },
     "library": {
       "nav_calculator": "计算器",

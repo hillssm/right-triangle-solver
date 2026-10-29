@@ -344,7 +344,7 @@ const latestPosts = blogHeading && isDefaultLocale
   )}
 
   <div class="defer-render-mobile mx-auto mt-8 w-full max-w-4xl">
-    <Faq heading={pick(home, 'faqHeading', 'Frequently Asked Questions')} items={homeFaqs} />
+    <Faq heading={pick(home, 'faqHeading', 'Frequently Asked Questions')} description={pick(home, 'faqDescription', 'Answers to the most common right-triangle solving questions.')} items={homeFaqs} />
     <div class="mt-6 flex justify-center">
       <a href={localizePath(locale, '/faqs/')} class="btn-secondary flex items-center gap-2">
         {pick(home, 'viewAllFaqs', 'View All Detailed FAQs')}

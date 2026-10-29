@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="520" viewBox="0 0 640 520">
+<title>Parts of a right triangle</title>
+<desc>Labeled right triangle showing sides a, b and c, angles A, B and C, altitude h to the hypotenuse, and hypotenuse projections p and q.</desc>
+<polygon points="150.0,150.0 360.0,430.0 150.0,430.0" fill="rgba(241,201,125,0.07)" />
+<line x1="150.0" y1="430.0" x2="360.0" y2="430.0" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+<line x1="150.0" y1="430.0" x2="150.0" y2="150.0" stroke="#fbbf24" stroke-width="3" stroke-linecap="round" />
+<line x1="150.0" y1="150.0" x2="360.0" y2="430.0" stroke="#f472b6" stroke-width="3" stroke-linecap="round" />
+<polyline points="150.0,405.0 175.0,405.0 175.0,430.0" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<text x="255.0" y="418.0" font-family="Noto Serif, Georgia, serif" font-size="22" fill="#38bdf8" text-anchor="middle" font-weight="normal" font-style="italic">a</text>
+<text x="132.0" y="290.0" font-family="Noto Serif, Georgia, serif" font-size="22" fill="#fbbf24" text-anchor="end" font-weight="normal" font-style="italic">b</text>
+<text x="262.0" y="278.0" font-family="Noto Serif, Georgia, serif" font-size="22" fill="#f472b6" text-anchor="middle" font-weight="normal" font-style="italic">c</text>
+<polyline points="177.0,186.0 174.6,187.7 172.2,189.2 169.6,190.5 166.9,191.7 164.2,192.7 161.5,193.5 158.6,194.2 155.8,194.6 152.9,194.9 150.0,195.0" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<text x="172.0" y="214.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<polyline points="315.0,430.0 315.2,425.8 315.8,421.7 316.7,417.6 318.1,413.7 319.8,409.9 321.8,406.2 324.2,402.8 326.8,399.6 329.8,396.7 333.0,394.0" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<text x="300.0" y="404.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">B</text>
+<text x="118.0" y="458.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#ffffff" text-anchor="end" font-weight="normal">C = 90°</text>
+<line x1="150.0" y1="430.0" x2="284.4" y2="329.2" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 4" />
+<text x="208.0" y="367.0" font-family="Noto Serif, Georgia, serif" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="normal" font-style="italic">h</text>
+<text x="337.0" y="369.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#d0c5af" text-anchor="middle" font-weight="normal">p</text>
+<text x="232.0" y="229.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#d0c5af" text-anchor="middle" font-weight="normal">q</text>
+</svg>

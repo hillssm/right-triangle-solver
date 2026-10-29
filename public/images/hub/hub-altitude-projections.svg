@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="520" viewBox="0 0 640 520">
+<title>Altitude to the hypotenuse and its projections</title>
+<desc>Right triangle with altitude h = 2.4 drawn from the right angle to the hypotenuse, splitting it into projection p = 1.8 (next to leg a) and q = 3.2 (next to leg b).</desc>
+<polygon points="150.0,150.0 360.0,430.0 150.0,430.0" fill="rgba(241,201,125,0.07)" />
+<line x1="150.0" y1="430.0" x2="360.0" y2="430.0" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+<line x1="150.0" y1="430.0" x2="150.0" y2="150.0" stroke="#fbbf24" stroke-width="3" stroke-linecap="round" />
+<line x1="150.0" y1="150.0" x2="360.0" y2="430.0" stroke="#f472b6" stroke-width="3" stroke-linecap="round" />
+<polyline points="150.0,405.0 175.0,405.0 175.0,430.0" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<line x1="150.0" y1="430.0" x2="284.4" y2="329.2" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="7 5" />
+<polyline points="270.0,340.0 280.8,354.4 295.2,343.6" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<text x="182.0" y="404.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#ffffff" text-anchor="end" font-weight="normal">h = 2.4</text>
+<text x="348.0" y="360.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#d0c5af" text-anchor="start" font-weight="normal">p = 1.8</text>
+<text x="243.0" y="220.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#d0c5af" text-anchor="start" font-weight="normal">q = 3.2</text>
+<text x="136.0" y="140.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#ffffff" text-anchor="end" font-weight="bold">A</text>
+<text x="374.0" y="452.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#ffffff" text-anchor="start" font-weight="bold">B</text>
+<text x="134.0" y="454.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#ffffff" text-anchor="end" font-weight="bold">C</text>
+<text x="294.0" y="320.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#ffffff" text-anchor="start" font-weight="bold">D</text>
+<text x="255.0" y="452.0" font-family="Noto Serif, Georgia, serif" font-size="16" fill="#38bdf8" text-anchor="middle" font-weight="normal" font-style="italic">a</text>
+<text x="136.0" y="292.0" font-family="Noto Serif, Georgia, serif" font-size="16" fill="#fbbf24" text-anchor="end" font-weight="normal" font-style="italic">b</text>
+<text x="267.0" y="274.0" font-family="Noto Serif, Georgia, serif" font-size="16" fill="#f472b6" text-anchor="middle" font-weight="normal" font-style="italic">c</text>
+</svg>

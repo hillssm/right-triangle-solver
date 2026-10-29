@@ -13,6 +13,8 @@ import Faq from 'theme/components/Faq.astro';
 import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import HubGuide from 'theme/components/HubGuide.astro';
+import { HUB_GUIDE_FAQS } from 'src/data/rightTriangleHubGuide';
 import { toAbsoluteUrl } from 'theme/utils/site';
 import { replaceGenericSeoHeading, seoSectionHeading } from 'theme/utils/seoHeadings';
 import { formatListItem } from 'src/utils/formatList';
@@ -163,8 +165,15 @@ const sectionHeading = (
     : heading;
 
 const canonicalPath = localizePath(locale, isHubPage ? RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.url : groupedPage!.url);
-const pageTitle = `${activePage.h1} | Right Triangle Solver`;
-const pageDescription = activePage.intent;
+const hubSeoTitle = 'Right Triangle Calculator \u2013 Sides, Angles & Steps';
+const hubSeoDescription =
+  'Calculate right triangle sides, angles, area, and perimeter. Enter two valid measurements, view interactive diagrams, and explore step-by-step solutions.';
+const pageTitle =
+  isHubPage && locale === DEFAULT_LOCALE
+    ? `${hubSeoTitle} | Right Triangle Solver`
+    : `${activePage.h1} | Right Triangle Solver`;
+const pageDescription =
+  isHubPage && locale === DEFAULT_LOCALE ? hubSeoDescription : activePage.intent;
 
 const formulas = groupedPage
   ? getGroupedPageFormulas(groupedPage).map((formula) => {
@@ -396,6 +405,22 @@ const groupedPageFaqSchema = groupedPage && groupedPageFaqItems.length > 0
     }
   : null;
 
+const hubFaqSchema =
+  isHubPage && locale === DEFAULT_LOCALE
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: HUB_GUIDE_FAQS.map((item) => ({
+          '@type': 'Question',
+          name: item.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: item.answer
+          }
+        }))
+      }
+    : null;
+
 const homePath = localizePath(locale, '/');
 const hubPath = localizePath(locale, RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.url);
 
@@ -453,6 +478,13 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
       set:html={JSON.stringify(groupedPageFaqSchema)}
     ></script>
   )}
+  {hubFaqSchema && (
+    <script
+      slot="head"
+      type="application/ld+json"
+      set:html={JSON.stringify(hubFaqSchema)}
+    ></script>
+  )}
 
   <nav class="mx-auto mb-6 w-full max-w-4xl" aria-label="Breadcrumb">
     <ol class="flex flex-wrap items-center gap-2 text-xs text-on-surface-variant">
@@ -490,9 +522,48 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
   {isHubPage ? (
     <>
       {generalSolverFormula && (
-        <section class="mx-auto w-full max-w-4xl">
+        <section id="hub-calculator" class="mx-auto w-full max-w-4xl scroll-mt-24">
+          {locale === DEFAULT_LOCALE && (
+            <div class="mb-4" data-hub-presets>
+              <p class="font-label text-[10px] uppercase tracking-[0.2em] text-outline">Try an example</p>
+              <div class="mt-2 flex flex-wrap gap-2">
+                <button type="button" class="interactive-chip" data-hub-preset data-a="3" data-b="4">3–4–5 Triangle</button>
+                <button type="button" class="interactive-chip" data-hub-preset data-a="5" data-b="12">5–12–13 Triangle</button>
+                <button type="button" class="interactive-chip" data-hub-preset data-c="10" data-A="30">Hypotenuse 10, Angle 30°</button>
+                <button type="button" class="interactive-chip" data-hub-preset data-c="13" data-b="12">Hypotenuse 13, Leg 12</button>
+              </div>
+            </div>
+          )}
           <FormulaCalculator formula={generalSolverFormula} locale={locale} />
         </section>
+      )}
+      {locale === DEFAULT_LOCALE && (
+        <script is:inline>
+          (() => {
+            const section = document.getElementById('hub-calculator');
+            if (!section) return;
+            const form = section.querySelector('form[data-calc-form]');
+            if (!form) return;
+            const fillAndSolve = (values) => {
+              ['a', 'b', 'c', 'A', 'B'].forEach((key) => {
+                const input = form.querySelector('input[name="' + key + '"]');
+                if (input) input.value = values[key] != null ? values[key] : '';
+              });
+              section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              window.setTimeout(() => form.requestSubmit(), 400);
+            };
+            document.querySelectorAll('[data-hub-preset]').forEach((btn) => {
+              btn.addEventListener('click', () =>
+                fillAndSolve({ a: btn.dataset.a, b: btn.dataset.b, c: btn.dataset.c, A: btn.dataset.A, B: btn.dataset.B })
+              );
+            });
+            document.querySelectorAll('[data-try-calc]').forEach((btn) => {
+              btn.addEventListener('click', () =>
+                fillAndSolve({ a: btn.dataset.a, b: btn.dataset.b, c: btn.dataset.c, A: btn.dataset.A, B: btn.dataset.B })
+              );
+            });
+          })();
+        </script>
       )}
       <section class="mx-auto w-full max-w-4xl section-shell prose-shell">
         <h2 set:html={localizedHub.h2[0]} />
@@ -516,6 +587,8 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
           ))}
         </ul>
       </section>
+
+      {locale === DEFAULT_LOCALE && <HubGuide />}
 
       <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
         <h2 class="text-2xl font-semibold">{pick(groupedUi, 'allGroupedPagesTitle', 'All Grouped Calculator Pages')}</h2>

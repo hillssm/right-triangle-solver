@@ -463,7 +463,7 @@ export const RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE: GroupedCalculatorHubPage = {
     'Solve Any Right Triangle',
     'All-in-One Triangle Solver'
   ],
-  purpose: 'Enter any two values of a right triangle and solve for every missing side and angle, or jump to a focused calculator.'
+  purpose: 'Solve a right triangle from two valid measurements, including at least one side. Enter two side lengths, or a side and an acute angle, and the calculator finds every missing side and angle with step-by-step solutions: hypotenuse, legs, acute angles, area, perimeter, altitude, projections, inradius, and circumradius. Explore the interactive diagram, study the formulas, and work through solved examples below.'
 };
 
 const FORMULA_BY_SLUG = new Map(

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="340" viewBox="0 0 460 340">
+<title>30-60-90 special right triangle</title>
+<desc>30-60-90 triangle with short leg 5 cm, long leg 5 root 3 (about 8.66 cm) and hypotenuse 10 cm. The side ratios are 1 : root 3 : 2.</desc>
+<polygon points="90.0,145.0 324.0,280.0 90.0,280.0" fill="rgba(241,201,125,0.07)" />
+<line x1="90.0" y1="280.0" x2="324.0" y2="280.0" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+<line x1="90.0" y1="280.0" x2="90.0" y2="145.0" stroke="#fbbf24" stroke-width="3" stroke-linecap="round" />
+<line x1="90.0" y1="145.0" x2="324.0" y2="280.0" stroke="#f472b6" stroke-width="3" stroke-linecap="round" />
+<polyline points="90.0,255.0 115.0,255.0 115.0,280.0" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<text x="74.0" y="220.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#ffffff" text-anchor="end" font-weight="normal">5 cm</text>
+<text x="207.0" y="308.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="normal">5√3 ≈ 8.66 cm</text>
+<text x="231.0" y="198.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="normal">10 cm</text>
+<polyline points="124.6,165.0 122.4,168.5 119.7,171.8 116.8,174.7 113.5,177.4 110.0,179.6 106.3,181.5 102.4,183.0 98.3,184.1 94.2,184.8 90.0,185.0" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<text x="118.0" y="194.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#d0c5af" text-anchor="middle" font-weight="normal">60°</text>
+<polyline points="284.0,280.0 284.1,277.9 284.2,275.8 284.5,273.7 284.9,271.7 285.4,269.6 286.0,267.6 286.7,265.7 287.5,263.7 288.4,261.8 289.4,260.0" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<text x="268.0" y="265.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#d0c5af" text-anchor="middle" font-weight="normal">30°</text>
+</svg>

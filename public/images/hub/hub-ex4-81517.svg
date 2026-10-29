@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="320" viewBox="0 0 420 320">
+<title>Example: 8-15-17 triangle solved</title>
+<desc>Worked example. Legs a = 8 m and b = 15 m give hypotenuse c = 17 m and acute angles 28.07 and 61.93 degrees.</desc>
+<polygon points="120.0,45.0 240.0,270.0 120.0,270.0" fill="rgba(241,201,125,0.07)" />
+<line x1="120.0" y1="270.0" x2="240.0" y2="270.0" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+<line x1="120.0" y1="270.0" x2="120.0" y2="45.0" stroke="#fbbf24" stroke-width="3" stroke-linecap="round" />
+<line x1="120.0" y1="45.0" x2="240.0" y2="270.0" stroke="#f472b6" stroke-width="3" stroke-linecap="round" />
+<polyline points="120.0,248.0 142.0,248.0 142.0,270.0" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<text x="180.0" y="298.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="normal">a = 8 m</text>
+<text x="104.0" y="164.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#ffffff" text-anchor="end" font-weight="normal">b = 15 m</text>
+<text x="192.0" y="135.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#f472b6" text-anchor="middle" font-weight="normal" transform="rotate(61.93 192.0 135.0)">c = 17 m</text>
+<text x="120.0" y="27.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#d0c5af" text-anchor="middle" font-weight="normal">28.07°</text>
+<text x="256.0" y="276.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#d0c5af" text-anchor="start" font-weight="normal">61.93°</text>
+</svg>

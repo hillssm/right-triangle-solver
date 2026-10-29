@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+<title>Wheelchair ramp geometry</title>
+<desc>A ramp with 0.75 m vertical rise over 6 m horizontal run is about 6.047 m long at an incline of about 7.13 degrees. Mathematical example only, not a determination of building-code or accessibility compliance.</desc>
+<line x1="80.0" y1="400.0" x2="560.0" y2="400.0" stroke="#e8e6e3" stroke-width="4" stroke-linecap="round" />
+<polygon points="150.0,400.0 480.0,400.0 480.0,358.8" fill="rgba(241,201,125,0.08)" stroke="#f1c97d" stroke-width="3" />
+<line x1="492.0" y1="400.0" x2="492.0" y2="358.8" stroke="#d0c5af" stroke-width="2" stroke-linecap="round" />
+<polygon points="492.0,358.8 486.0,370.0 498.0,370.0" fill="#d0c5af" />
+<polygon points="492.0,400.0 486.0,388.0 498.0,388.0" fill="#d0c5af" />
+<text x="508.0" y="382.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#ffffff" text-anchor="start" font-weight="normal">0.75 m</text>
+<line x1="150.0" y1="424.0" x2="480.0" y2="424.0" stroke="#d0c5af" stroke-width="2" stroke-linecap="round" />
+<line x1="150.0" y1="416.0" x2="150.0" y2="432.0" stroke="#d0c5af" stroke-width="2" stroke-linecap="round" />
+<line x1="480.0" y1="416.0" x2="480.0" y2="432.0" stroke="#d0c5af" stroke-width="2" stroke-linecap="round" />
+<text x="315.0" y="448.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="normal">6 m</text>
+<text x="315.0" y="372.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#f1c97d" text-anchor="middle" font-weight="normal">≈ 6.047 m</text>
+<polyline points="204.6,393.2 204.7,394.0 204.8,394.9 204.8,395.7 204.9,396.6 204.9,397.4 205.0,398.3 205.0,399.1 205.0,400.0" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<text x="218.0" y="388.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#d0c5af" text-anchor="start" font-weight="normal">≈ 7.13°</text>
+</svg>

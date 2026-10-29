@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="320" viewBox="0 0 420 320">
+<title>Example: finding a leg from the area</title>
+<desc>Worked example. Area 24 square cm and leg a = 6 cm give leg b = 8 cm and hypotenuse c = 10 cm.</desc>
+<polygon points="120.0,62.0 276.0,270.0 120.0,270.0" fill="rgba(241,201,125,0.07)" />
+<line x1="120.0" y1="270.0" x2="276.0" y2="270.0" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+<line x1="120.0" y1="270.0" x2="120.0" y2="62.0" stroke="#fbbf24" stroke-width="3" stroke-linecap="round" />
+<line x1="120.0" y1="62.0" x2="276.0" y2="270.0" stroke="#f472b6" stroke-width="3" stroke-linecap="round" />
+<polyline points="120.0,248.0 142.0,248.0 142.0,270.0" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<text x="198.0" y="298.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="normal">a = 6 cm</text>
+<text x="104.0" y="172.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#ffffff" text-anchor="end" font-weight="normal">b = 8 cm</text>
+<text x="214.0" y="145.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#f472b6" text-anchor="middle" font-weight="normal" transform="rotate(53.13 214.0 145.0)">c = 10 cm</text>
+</svg>

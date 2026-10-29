@@ -7,6 +7,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           slug: 'pythagorean-theorem-calculator',
           url: '/pythagorean-theorem-calculator/',
           h1: 'पाइथागोरस प्रमेय कैलकुलेटर: कर्ण ज्ञात करें',
+          tagline: 'कर्ण c तुरंत परिकलित करने के लिए दोनों भुजाएँ a और b दर्ज करें।',
           metaTitle: 'पाइथागोरस प्रमेय कैलकुलेटर | कर्ण ज्ञात करें',
           metaDescription: 'दो ज्ञात भुजाओं का उपयोग करके समकोण त्रिभुज का कर्ण परिकलित करें। पाइथागोरस प्रमेय सीखें, हल किए गए उदाहरणों का अनुसरण करें और अपना उत्तर सत्यापित करें।',
           formulaSlug: 'pythagorean-theorem',
@@ -724,6 +725,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           slug: 'pythagorean-theorem-calculator',
           url: '/pythagorean-theorem-calculator/',
           h1: 'Calculadora del teorema de Pitágoras: halla la hipotenusa',
+          tagline: 'Introduce los catetos a y b para calcular la hipotenusa c al instante.',
           metaTitle: 'Calculadora del teorema de Pitágoras | Halla la hipotenusa',
           metaDescription: 'Calcula la hipotenusa de un triángulo rectángulo usando dos catetos conocidos. Aprende el teorema de Pitágoras, sigue los ejemplos resueltos y verifica tu respuesta.',
           formulaSlug: 'pythagorean-theorem',
@@ -1441,6 +1443,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           slug: 'pythagorean-theorem-calculator',
           url: '/pythagorean-theorem-calculator/',
           h1: 'Калькулятор теоремы Пифагора: найти гипотенузу',
+          tagline: 'Введите катеты a и b, чтобы мгновенно вычислить гипотенузу c.',
           metaTitle: 'Калькулятор теоремы Пифагора | Найти гипотенузу',
           metaDescription: 'Вычислите гипотенузу прямоугольного треугольника по двум известным катетам. Изучите теорему Пифагора, разберите решённые примеры и проверьте свой ответ.',
           formulaSlug: 'pythagorean-theorem',
@@ -2155,6 +2158,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
   },
   "fr": {
     "pythagorean-theorem-calculator": {
+          tagline: 'Entrez les côtés a et b pour calculer l’hypoténuse c instantanément.',
           calculator: {
             fields: [
               {
@@ -2872,6 +2876,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
   },
   "de": {
     "pythagorean-theorem-calculator": {
+          tagline: 'Geben Sie die Katheten a und b ein, um die Hypotenuse c sofort zu berechnen.',
           calculator: {
             fields: [
               {
@@ -3592,6 +3597,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           slug: 'pythagorean-theorem-calculator',
           url: '/pythagorean-theorem-calculator/',
           h1: "Calcolatrice del teorema di Pitagora: trova l'ipotenusa",
+          tagline: 'Inserisci i cateti a e b per calcolare subito l’ipotenusa c.',
           metaTitle: "Calcolatrice del teorema di Pitagora | Trova l'ipotenusa",
           metaDescription: "Calcola l'ipotenusa di un triangolo rettangolo usando i due cateti noti. Impara il teorema di Pitagora, segui gli esempi svolti e verifica la tua risposta.",
           formulaSlug: 'pythagorean-theorem',
@@ -4309,6 +4315,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           slug: 'pythagorean-theorem-calculator',
           url: '/pythagorean-theorem-calculator/',
           h1: 'Calculadora do Teorema de Pitágoras: Encontrar a Hipotenusa',
+          tagline: 'Digite os catetos a e b para calcular a hipotenusa c instantaneamente.',
           metaTitle: 'Calculadora do Teorema de Pitágoras | Encontrar a Hipotenusa',
           metaDescription: 'Calcule a hipotenusa de um triângulo retângulo usando dois catetos conhecidos. Aprenda o teorema de Pitágoras, acompanhe os exemplos resolvidos e verifique sua resposta.',
           formulaSlug: 'pythagorean-theorem',
@@ -5026,6 +5033,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           slug: 'pythagorean-theorem-calculator',
           url: '/pythagorean-theorem-calculator/',
           h1: 'পিথাগোরাসের উপপাদ্য ক্যালকুলেটর: অতিভুজ নির্ণয় করুন',
+          tagline: 'কর্ণ c তাৎক্ষণিকভাবে নির্ণয় করতে দুটি বাহু a ও b লিখুন।',
           metaTitle: 'পিথাগোরাসের উপপাদ্য ক্যালকুলেটর | অতিভুজ নির্ণয় করুন',
           metaDescription: 'দুটি পরিচিত বাহু ব্যবহার করে সমকোণী ত্রিভুজের অতিভুজ হিসাব করুন। পিথাগোরাসের উপপাদ্য শিখুন, সমাধানসহ উদাহরণ অনুসরণ করুন এবং আপনার উত্তর যাচাই করুন।',
           formulaSlug: 'pythagorean-theorem',
@@ -5743,6 +5751,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           slug: 'pythagorean-theorem-calculator',
           url: '/pythagorean-theorem-calculator/',
           h1: 'ピタゴラスの定理の計算機: 斜辺を求める',
+          tagline: '2辺aとbを入力して、斜辺cをすぐに計算します。',
           metaTitle: 'ピタゴラスの定理の計算機 | 斜辺を求める',
           metaDescription: '2つの既知の辺を使って直角三角形の斜辺を計算します。ピタゴラスの定理を学び、例題に沿って答えを検証しましょう。',
           formulaSlug: 'pythagorean-theorem',
@@ -6460,6 +6469,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           slug: 'pythagorean-theorem-calculator',
           url: '/pythagorean-theorem-calculator/',
           h1: '피타고라스 정리 계산기: 빗변 구하기',
+          tagline: '두 변 a와 b를 입력하여 빗변 c를 즉시 계산합니다.',
           metaTitle: '피타고라스 정리 계산기 | 빗변 구하기',
           metaDescription: '알려진 두 변을 이용해 직각삼각형의 빗변을 계산하세요. 피타고라스 정리를 배우고, 풀이 예제를 따라 하며, 답을 검증하세요.',
           formulaSlug: 'pythagorean-theorem',
@@ -7177,6 +7187,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           slug: 'pythagorean-theorem-calculator',
           url: '/pythagorean-theorem-calculator/',
           h1: 'Kalkulator Teorem Pythagoras: Cari Hipotenus',
+          tagline: 'Masukkan kedua-dua sisi a dan b untuk mengira hipotenus c dengan segera.',
           metaTitle: 'Kalkulator Teorem Pythagoras | Cari Hipotenus',
           metaDescription: 'Kira hipotenus segi tiga tepat menggunakan dua sisi yang diketahui. Pelajari teorem Pythagoras, ikuti contoh yang diselesaikan, dan sahkan jawapan anda.',
           formulaSlug: 'pythagorean-theorem',
@@ -7894,6 +7905,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           slug: 'pythagorean-theorem-calculator',
           url: '/pythagorean-theorem-calculator/',
           h1: 'Kalkulator twierdzenia Pitagorasa: Znajdź przeciwprostokątną',
+          tagline: 'Wpisz przyprostokątne a i b, aby natychmiast obliczyć przeciwprostokątną c.',
           metaTitle: 'Kalkulator twierdzenia Pitagorasa | Znajdź przeciwprostokątną',
           metaDescription: 'Oblicz przeciwprostokątną trójkąta prostokątnego na podstawie dwóch znanych przyprostokątnych. Poznaj twierdzenie Pitagorasa, prześledź rozwiązane przykłady i zweryfikuj swoją odpowiedź.',
           formulaSlug: 'pythagorean-theorem',
@@ -8611,6 +8623,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           slug: 'pythagorean-theorem-calculator',
           url: '/pythagorean-theorem-calculator/',
           h1: 'Kalkulator Teorema Pythagoras: Mencari Hipotenusa',
+          tagline: 'Masukkan kedua sisi a dan b untuk menghitung hipotenusa c secara instan.',
           metaTitle: 'Kalkulator Teorema Pythagoras | Mencari Hipotenusa',
           metaDescription: 'Hitung hipotenusa segitiga siku-siku menggunakan dua sisi yang diketahui. Pelajari teorema Pythagoras, ikuti contoh yang dikerjakan, dan verifikasi jawaban Anda.',
           formulaSlug: 'pythagorean-theorem',
@@ -9328,6 +9341,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           slug: 'pythagorean-theorem-calculator',
           url: '/pythagorean-theorem-calculator/',
           h1: 'حاسبة نظرية فيثاغورس: أوجد الوتر',
+          tagline: 'أدخل الضلعين a و b لحساب الوتر c فورًا.',
           metaTitle: 'حاسبة نظرية فيثاغورس | أوجد الوتر',
           metaDescription: 'احسب وتر المثلث القائم الزاوية باستخدام ضلعين معلومين. تعلم نظرية فيثاغورس، وتابع الأمثلة المحلولة، وتحقق من إجابتك.',
           formulaSlug: 'pythagorean-theorem',
@@ -10045,6 +10059,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           slug: 'pythagorean-theorem-calculator',
           url: '/pythagorean-theorem-calculator/',
           h1: 'Калкулатор за Питагорова теорема: намиране на хипотенузата',
+          tagline: 'Въведете катетите a и b, за да изчислите хипотенузата c незабавно.',
           metaTitle: 'Калкулатор за Питагорова теорема | Намерете хипотенузата',
           metaDescription: 'Изчислете хипотенузата на правоъгълен триъгълник по два известни катета. Научете Питагоровата теорема, следвайте решените примери и проверете отговора си.',
           formulaSlug: 'pythagorean-theorem',
@@ -10762,6 +10777,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           slug: 'pythagorean-theorem-calculator',
           url: '/pythagorean-theorem-calculator/',
           h1: 'Pisagor Teoremi Hesaplayıcı: Hipotenüsü Bul',
+          tagline: 'Hipotenüs c’yi anında hesaplamak için a ve b kenarlarını girin.',
           metaTitle: 'Pisagor Teoremi Hesaplayıcı | Hipotenüsü Bul',
           metaDescription: 'İki bilinen dik kenar kullanarak bir dik üçgenin hipotenüsünü hesaplayın. Pisagor teoremini öğrenin, çözümlü örnekleri takip edin ve cevabınızı doğrulayın.',
           formulaSlug: 'pythagorean-theorem',
@@ -11479,6 +11495,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           slug: 'pythagorean-theorem-calculator',
           url: '/pythagorean-theorem-calculator/',
           h1: 'Pythagoras sats-kalkylator: Hitta hypotenusan',
+          tagline: 'Ange kateterna a och b för att direkt beräkna hypotenusan c.',
           metaTitle: 'Pythagoras sats-kalkylator | Hitta hypotenusan',
           metaDescription: 'Beräkna hypotenusan i en rätvinklig triangel med två kända kateter. Lär dig Pythagoras sats, följ lösta exempel och kontrollera ditt svar.',
           formulaSlug: 'pythagorean-theorem',
@@ -12196,6 +12213,7 @@ export const FOCUSED_SIDE_CALCULATOR_TRANSLATIONS = {
           slug: 'pythagorean-theorem-calculator',
           url: '/pythagorean-theorem-calculator/',
           h1: '勾股定理计算器：求斜边',
+          tagline: '输入两条边 a 和 b，即时计算斜边 c。',
           metaTitle: '勾股定理计算器 | 求斜边',
           metaDescription: '用两条已知直角边计算直角三角形的斜边。学习勾股定理，参考分步例题，并验证您的答案。',
           formulaSlug: 'pythagorean-theorem',

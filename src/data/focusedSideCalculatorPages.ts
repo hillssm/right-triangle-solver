@@ -12,6 +12,7 @@ export type FocusedSideCalculatorPage = {
   slug: string;
   url: string;
   h1: string;
+  tagline?: string;
   metaTitle: string;
   metaDescription: string;
   formulaSlug: string;
@@ -88,6 +89,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     slug: 'pythagorean-theorem-calculator',
     url: '/pythagorean-theorem-calculator/',
     h1: 'Pythagorean Theorem Calculator: Find the Hypotenuse',
+    tagline: 'Enter the two legs a and b to calculate the hypotenuse c instantly.',
     metaTitle: 'Pythagorean Theorem Calculator | Find the Hypotenuse',
     metaDescription:
       'Calculate the hypotenuse of a right triangle using two known legs. Learn the Pythagorean theorem, follow worked examples, and verify your answer.',
@@ -1320,6 +1322,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
     slug: 'right-triangle-adjacent-side-from-tangent-calculator',
     url: '/right-triangle-adjacent-side-from-tangent-calculator/',
     h1: 'Adjacent Side Calculator: Find b from Opposite Side a and Angle A',
+    tagline: 'Enter the opposite side a and angle A to find the adjacent side b.',
     metaTitle: 'Adjacent Side Calculator: Find b Using Tangent',
     metaDescription: 'Find the adjacent side of a right triangle using the opposite side and angle. Learn the tangent formula, follow worked examples, and calculate horizontal distances.',
     formulaSlug: 'b-a-tan',

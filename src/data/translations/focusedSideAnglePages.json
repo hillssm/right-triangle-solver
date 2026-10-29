@@ -812,7 +812,8 @@
           "question": "इस कैलकुलेटर और मानक स्पर्शज्या भुजा कैलकुलेटर में क्या अंतर है?",
           "answer": "एक मानक स्पर्शज्या <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a> <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> गुणा करता है: a = b × tan(A), ज्ञात आसन्न भुजा से सम्मुख भुजा ज्ञात करता है। यह कैलकुलेटर भाग देता है: b = a / tan(A), ज्ञात सम्मुख भुजा से आसन्न भुजा ज्ञात करता है। ये व्युत्क्रम संक्रियाएँ हैं।"
         }
-      ]
+      ],
+      "tagline": "सम्मुख भुजा a और कोण A दर्ज करके आसन्न भुजा b ज्ञात करें।"
     }
   },
   "es": {
@@ -1628,7 +1629,8 @@
           "question": "¿Cuál es la diferencia entre esta calculadora y una calculadora estándar de lados con tangente?",
           "answer": "Una <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculadora</a> estándar de <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lados</a> con tangente multiplica: a = b × tan(A), y halla el cateto opuesto a partir de un cateto adyacente conocido. Esta calculadora divide: b = a / tan(A), y halla el cateto adyacente a partir de un cateto opuesto conocido. Son operaciones inversas."
         }
-      ]
+      ],
+      "tagline": "Introduce el cateto opuesto a y el ángulo A para hallar el cateto adyacente b."
     }
   },
   "ru": {
@@ -2444,7 +2446,8 @@
           "question": "Чем этот калькулятор отличается от стандартного калькулятора стороны по тангенсу?",
           "answer": "Стандартный <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">калькулятор</a> умножает: a = b × tan(A), находя противолежащий катет по известному прилежащему. Этот калькулятор делит: b = a / tan(A), находя прилежащий катет по известному противолежащему. Это обратные операции."
         }
-      ]
+      ],
+      "tagline": "Введите противолежащий катет a и угол A, чтобы найти прилежащий катет b."
     }
   },
   "fr": {
@@ -3260,7 +3263,8 @@
           "question": "Quelle est la différence entre cette calculatrice et une calculatrice standard de côté par la tangente ?",
           "answer": "Une <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">calculatrice</a> standard de <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">côté</a> par la tangente multiplie : a = b × tan(A), et trouve le côté opposé à partir d'un côté adjacent connu. Cette calculatrice divise : b = a / tan(A), et trouve le côté adjacent à partir d'un côté opposé connu. Ce sont des opérations inverses."
         }
-      ]
+      ],
+      "tagline": "Entrez le côté opposé a et l’angle A pour trouver le côté adjacent b."
     }
   },
   "de": {
@@ -4076,7 +4080,8 @@
           "question": "Was ist der Unterschied zwischen diesem Rechner und einem Standard-Tangens-Seitenrechner?",
           "answer": "Ein Standard-Tangens-<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seiten</a>-<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a> multipliziert: a = b × tan(A) und findet die Gegenkathete aus einer bekannten Ankathete. Dieser Rechner dividiert: b = a / tan(A) und findet die Ankathete aus einer bekannten Gegenkathete. Es sind inverse Operationen."
         }
-      ]
+      ],
+      "tagline": "Geben Sie die Gegenkathete a und den Winkel A ein, um die Ankathete b zu finden."
     }
   },
   "it": {
@@ -4892,7 +4897,8 @@
           "question": "Qual è la differenza tra questo calcolatore e un calcolatore standard del lato con la tangente?",
           "answer": "Un <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calcolatore</a> standard del <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lato</a> con la tangente moltiplica: a = b × tan(A), trovando il cateto opposto da un cateto adiacente noto. Questo calcolatore divide: b = a / tan(A), trovando il cateto adiacente da un cateto opposto noto. Sono operazioni inverse."
         }
-      ]
+      ],
+      "tagline": "Inserisci il cateto opposto a e l’angolo A per trovare il cateto adiacente b."
     }
   },
   "pt": {
@@ -5708,7 +5714,8 @@
           "question": "Qual é a diferença entre esta calculadora e uma calculadora padrão de lado pela tangente?",
           "answer": "Uma <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculadora</a> padrão de <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> pela tangente multiplica: a = b × tan(A), encontrando o cateto oposto a partir de um cateto adjacente conhecido. Esta calculadora divide: b = a / tan(A), encontrando o cateto adjacente a partir de um cateto oposto conhecido. São operações inversas."
         }
-      ]
+      ],
+      "tagline": "Digite o cateto oposto a e o ângulo A para encontrar o cateto adjacente b."
     }
   },
   "bn": {
@@ -6524,7 +6531,8 @@
           "question": "এই ক্যালকুলেটর ও সাধারণ স্পর্শক বাহু ক্যালকুলেটরের মধ্যে পার্থক্য কী?",
           "answer": "একটি প্রমিত স্পর্শক <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">বাহু</a> <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">ক্যালকুলেটর</a> গুণ করে: a = b × tan(A), জ্ঞাত সন্নিহিত বাহু থেকে বিপরীত বাহু নির্ণয় করে। এই ক্যালকুলেটর ভাগ করে: b = a / tan(A), জ্ঞাত বিপরীত বাহু থেকে সন্নিহিত বাহু নির্ণয় করে। এগুলো বিপরীত প্রক্রিয়া।"
         }
-      ]
+      ],
+      "tagline": "বিপরীত বাহু a এবং কোণ A দিয়ে আসন্ন বাহু b নির্ণয় করুন।"
     }
   },
   "ja": {
@@ -7340,7 +7348,8 @@
           "question": "この計算機と標準的なタンジェント辺計算機の違いは何ですか?",
           "answer": "標準的なタンジェントの<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a><a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機</a>は掛け算を使います: a = b × tan(A)。既知の隣辺から対辺を求めます。この計算機は割り算を使います: b = a / tan(A)。既知の対辺から隣辺を求めます。これらは逆の操作です。"
         }
-      ]
+      ],
+      "tagline": "対辺aと角度Aを入力して、隣辺bを求めます。"
     }
   },
   "ko": {
@@ -8156,7 +8165,8 @@
           "question": "이 계산기와 일반적인 탄젠트 변 계산기의 차이점은 무엇인가요?",
           "answer": "일반 탄젠트 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>는 곱합니다: a = b × tan(A), 알려진 이웃변으로 대변을 구합니다. 이 계산기는 나눕니다: b = a / tan(A), 알려진 대변으로 이웃변을 구합니다. 두 연산은 서로 역연산입니다."
         }
-      ]
+      ],
+      "tagline": "대변 a와 각도 A를 입력하여 이웃변 b를 구합니다."
     }
   },
   "ms": {
@@ -8972,7 +8982,8 @@
       ],
       "slug": "right-triangle-adjacent-side-from-tangent-calculator",
       "toolPurpose": "Alat ini mencari <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> bersebelahan b apabila anda mempunyai sisi bertentangan a dan <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> tirus A. Ia membalikkan formula tangen, membahagi bukannya mendarab, supaya anda mendapat panjang tapak secara langsung.",
-      "url": "/right-triangle-adjacent-side-from-tangent-calculator/"
+      "url": "/right-triangle-adjacent-side-from-tangent-calculator/",
+      "tagline": "Masukkan sisi bertentangan a dan sudut A untuk mencari sisi bersebelahan b."
     }
   },
   "pl": {
@@ -9788,7 +9799,8 @@
           "question": "Jaka jest różnica między tym kalkulatorem a standardowym kalkulatorem boku z tangensa?",
           "answer": "Standardowy <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> z tangensa mnoży: a = b × tan(A), znajdując przyprostokątną przeciwległą ze znanej przyprostokątnej przyległej. Ten kalkulator dzieli: b = a / tan(A), znajdując przyprostokątną przyległą ze znanej przyprostokątnej przeciwległej. Są to operacje odwrotne."
         }
-      ]
+      ],
+      "tagline": "Wpisz przyprostokątną przeciwległą a i kąt A, aby znaleźć przyprostokątną przyległą b."
     }
   },
   "id": {
@@ -10604,7 +10616,8 @@
           "question": "Apa perbedaan antara kalkulator ini dan kalkulator sisi tangen standar?",
           "answer": "<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> tangen standar mengalikan: a = b × tan(A), menemukan sisi opposite dari sisi adjacent yang diketahui. Kalkulator ini membagi: b = a / tan(A), menemukan sisi adjacent dari sisi opposite yang diketahui. Keduanya adalah operasi yang saling berbalik."
         }
-      ]
+      ],
+      "tagline": "Masukkan sisi opposite a dan sudut A untuk menemukan sisi adjacent b."
     }
   },
   "ar": {
@@ -11420,7 +11433,8 @@
           "question": "ما الفرق بين هذه الحاسبة وحاسبة الضلع القياسية القائمة على الظل؟",
           "answer": "حاسبة الضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">ضلع</a> القياسية القائمة على الظل <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">حاسبة</a> تضرب: a = b × tan(A)، فتجد الضلع المقابل من ضلع مجاور معروف. أما هذه الحاسبة فتقسم: b = a / tan(A)، فتجد الضلع المجاور من ضلع مقابل معروف. وهما عمليتان عكسيتان."
         }
-      ]
+      ],
+      "tagline": "أدخل الضلع المقابل a والزاوية A لإيجاد الضلع المجاور b."
     }
   },
   "bg": {
@@ -12236,7 +12250,8 @@
           "question": "Каква е разликата между този калкулатор и стандартен калкулатор за страна чрез тангенс?",
           "answer": "Стандартният <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">катетен</a> <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">калкулатор</a> с тангенс умножава: a = b × tan(A), като намира срещулежащия катет от известен прилежащ катет. Този калкулатор дели: b = a / tan(A), като намира прилежащия катет от известен срещулежащ катет. Това са обратни операции."
         }
-      ]
+      ],
+      "tagline": "Въведете срещулежащия катет a и ъгъл A, за да намерите прилежащия катет b."
     }
   },
   "tr": {
@@ -13052,7 +13067,8 @@
       ],
       "slug": "right-triangle-adjacent-side-from-tangent-calculator",
       "toolPurpose": "Bu araç, karşı kenar a ve dar <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A verildiğinde komşu <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> b'yi bulur. Tanjant formülünü tersine çevirerek çarpmak yerine böler, böylece taban uzunluğunu doğrudan elde edersiniz.",
-      "url": "/right-triangle-adjacent-side-from-tangent-calculator/"
+      "url": "/right-triangle-adjacent-side-from-tangent-calculator/",
+      "tagline": "Karşı kenar a ve A açısını girerek komşu kenar b’yi bulun."
     }
   },
   "sv": {
@@ -13868,7 +13884,8 @@
           "question": "Vad är skillnaden mellan denna miniräknare och en vanlig miniräknare för tangenssida?",
           "answer": "En vanlig <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">miniräknare</a> för <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">tangenssida</a> multiplicerar: a = b × tan(A), och hittar den motstående kateten från en känd närliggande katet. Denna miniräknare dividerar: b = a / tan(A), och hittar den närliggande kateten från en känd motstående katet. De är inversa operationer."
         }
-      ]
+      ],
+      "tagline": "Ange motstående katet a och vinkel A för att hitta närliggande katet b."
     }
   },
   "zh": {
@@ -14684,7 +14701,8 @@
       ],
       "slug": "right-triangle-adjacent-side-from-tangent-calculator",
       "toolPurpose": "本工具在已知对边 a 和锐<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角 A</a>时，求邻<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">边 b</a>。它反向使用正切公式，用除法代替乘法，直接得出底边长度。",
-      "url": "/right-triangle-adjacent-side-from-tangent-calculator/"
+      "url": "/right-triangle-adjacent-side-from-tangent-calculator/",
+      "tagline": "输入对边 a 和角 A，求邻边 b。"
     }
   }
 }

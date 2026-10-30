@@ -1,43 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
 <title>Real-world angle calculations</title>
 <desc>Four panels: roof pitch, ladder angle, ramp slope, and tree height angle.</desc>
 
 <text x="600" y="55" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="34" fill="#f5eeda" text-anchor="middle" font-weight="bold">Angles in Real Life</text>
 
-<!-- Panel 1: Roof -->
-<rect x="40" y="90" width="540" height="230" rx="16" fill="rgba(56,189,248,0.06)" stroke="#38bdf8" stroke-width="2"/>
+
+<rect x="40" y="90" width="540" height="230" rx="16" fill="#16202c" stroke="#38bdf8" stroke-width="2" />
 <text x="310" y="130" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#38bdf8" text-anchor="middle" font-weight="bold">Roof pitch</text>
-<polygon points="120,290 500,290 120,170" fill="rgba(56,189,248,0.12)" stroke="#38bdf8" stroke-width="4"/>
-<polyline points="120,262 148,262 148,290" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<polygon points="120,290 500,290 120,170" fill="rgba(56,189,248,0.12)" stroke="#38bdf8" stroke-width="4" />
+<polyline points="120,262 148,262 148,290" stroke="#ffffff" stroke-width="2.5" fill="none" />
 <text x="310" y="278" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">run 12 ft</text>
 <text x="105" y="235" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">rise 4 ft</text>
-<text x="310" y="180" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle" font-weight="bold">A = tan⁻¹(4/12) ≈ 18.43°</text>
+<text x="310" y="180" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle" font-weight="bold">A = tan⁻¹(4/12) ~ 18.43°</text>
 
-<!-- Panel 2: Ladder -->
-<rect x="620" y="90" width="540" height="230" rx="16" fill="rgba(251,191,36,0.06)" stroke="#fbbf24" stroke-width="2"/>
+
+<rect x="620" y="90" width="540" height="230" rx="16" fill="#221b12" stroke="#fbbf24" stroke-width="2" />
 <text x="890" y="130" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#fbbf24" text-anchor="middle" font-weight="bold">Ladder angle</text>
-<line x1="700" y1="290" x2="700" y2="150" stroke="#fbbf24" stroke-width="4"/>
-<line x1="700" y1="290" x2="1080" y2="290" stroke="#fbbf24" stroke-width="4"/>
-<line x1="700" y1="150" x2="860" y2="290" stroke="#fbbf24" stroke-width="5"/>
-<polyline points="700,262 728,262 728,290" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<line x1="700" y1="290" x2="700" y2="150" stroke="#fbbf24" stroke-width="4" />
+<line x1="700" y1="290" x2="1080" y2="290" stroke="#fbbf24" stroke-width="4" />
+<line x1="700" y1="150" x2="860" y2="290" stroke="#fbbf24" stroke-width="5" />
+<polyline points="700,262 728,262 728,290" stroke="#ffffff" stroke-width="2.5" fill="none" />
 <text x="780" y="278" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">4.5 m</text>
-<text x="890" y="180" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle" font-weight="bold">A = tan⁻¹(4.5/2) ≈ 66.04°</text>
+<text x="890" y="180" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle" font-weight="bold">A = tan⁻¹(4.5/2) ~ 66.04°</text>
 
-<!-- Panel 3: Ramp -->
-<rect x="40" y="350" width="540" height="230" rx="16" fill="rgba(244,114,182,0.06)" stroke="#f472b6" stroke-width="2"/>
+
+<rect x="40" y="350" width="540" height="230" rx="16" fill="#221420" stroke="#f472b6" stroke-width="2" />
 <text x="310" y="390" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#f472b6" text-anchor="middle" font-weight="bold">Ramp slope</text>
-<polygon points="120,550 500,550 120,510" fill="rgba(244,114,182,0.12)" stroke="#f472b6" stroke-width="4"/>
+<polygon points="120,550 500,550 120,510" fill="rgba(244,114,182,0.12)" stroke="#f472b6" stroke-width="4" />
 <text x="310" y="540" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">9 m</text>
 <text x="105" y="535" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">0.75 m</text>
-<text x="310" y="440" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle" font-weight="bold">A = tan⁻¹(0.75/9) ≈ 4.76°</text>
+<text x="310" y="440" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle" font-weight="bold">A = tan⁻¹(0.75/9) ~ 4.76°</text>
 
-<!-- Panel 4: Tree -->
-<rect x="620" y="350" width="540" height="230" rx="16" fill="rgba(74,222,128,0.06)" stroke="#4ade80" stroke-width="2"/>
+
+<rect x="620" y="350" width="540" height="230" rx="16" fill="#14211a" stroke="#4ade80" stroke-width="2" />
 <text x="890" y="390" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#4ade80" text-anchor="middle" font-weight="bold">Tree height angle</text>
-<line x1="700" y1="550" x2="700" y2="410" stroke="#4ade80" stroke-width="4"/>
-<line x1="700" y1="550" x2="1080" y2="550" stroke="#4ade80" stroke-width="4"/>
-<line x1="1080" y1="550" x2="700" y2="410" stroke="#4ade80" stroke-width="4" stroke-dasharray="8,6"/>
-<polyline points="700,522 728,522 728,550" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<line x1="700" y1="550" x2="700" y2="410" stroke="#4ade80" stroke-width="4" />
+<line x1="700" y1="550" x2="1080" y2="550" stroke="#4ade80" stroke-width="4" />
+<line x1="1080" y1="550" x2="700" y2="410" stroke="#4ade80" stroke-width="4" stroke-dasharray="8,6" />
+<polyline points="700,522 728,522 728,550" stroke="#ffffff" stroke-width="2.5" fill="none" />
 <text x="890" y="540" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">20 m</text>
-<text x="890" y="440" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle" font-weight="bold">A = tan⁻¹(12/20) ≈ 30.96°</text>
+<text x="890" y="440" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle" font-weight="bold">A = tan⁻¹(12/20) ~ 30.96°</text>
 </svg>

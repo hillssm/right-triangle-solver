@@ -1,22 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
 <title>Step-by-step cosine calculation</title>
 <desc>Right triangle with hypotenuse 10 m and angle 30 degrees, finding adjacent side b = 8.66 m.</desc>
 
-<polygon points="350,450 790,450 350,110" fill="rgba(241,201,125,0.07)"/>
-<line x1="350" y1="450" x2="790" y2="450" stroke="#38bdf8" stroke-width="5" stroke-linecap="round" stroke-dasharray="14 8"/>
-<line x1="350" y1="450" x2="350" y2="110" stroke="#fbbf24" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
-<line x1="790" y1="450" x2="350" y2="110" stroke="#f472b6" stroke-width="5" stroke-linecap="round"/>
-<polyline points="350,424 376,424 376,450" stroke="#ffffff" stroke-width="2.5" fill="none"/>
-<circle cx="350" cy="450" r="7" fill="#f1c97d"/>
-<circle cx="790" cy="450" r="7" fill="#f1c97d"/>
-<circle cx="350" cy="110" r="7" fill="#f1c97d"/>
+<polygon points="350,450 790,450 350,110" fill="rgba(241,201,125,0.07)" />
+<line x1="350" y1="450" x2="790" y2="450" stroke="#38bdf8" stroke-width="5" stroke-linecap="round" stroke-dasharray="14 8" />
+<line x1="350" y1="450" x2="350" y2="110" stroke="#fbbf24" stroke-width="4" stroke-linecap="round" opacity="0.6" />
+<line x1="790" y1="450" x2="350" y2="110" stroke="#f472b6" stroke-width="5" stroke-linecap="round" />
+<polyline points="350,424 376,424 376,450" stroke="#ffffff" stroke-width="2.5" fill="none" />
+<circle cx="350" cy="450" r="7" fill="#f1c97d" />
+<circle cx="790" cy="450" r="7" fill="#f1c97d" />
+<circle cx="350" cy="110" r="7" fill="#f1c97d" />
 <text x="570.0" y="490" font-family="Noto Serif, Georgia, serif" font-size="28" fill="#38bdf8" text-anchor="middle" font-style="italic" font-weight="bold">b = ?</text>
-<text x="620.0" y="280.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f472b6" text-anchor="middle" font-weight="bold">c = 10 m</text>
+<text x="705" y="280" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f472b6" text-anchor="middle" font-weight="bold">c = 10 m</text>
 <text x="410" y="410" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">A = 30°</text>
-<path d="M 365 395 Q 392 400 408 425" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.7"/>
+<path d="M 365 395 Q 392 400 408 425" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.7" />
 <text x="900" y="150" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">Steps</text>
 <text x="900" y="195" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#d0c5af" text-anchor="middle">1. b = c × cos(A)</text>
 <text x="900" y="240" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#d0c5af" text-anchor="middle">2. b = 10 × cos(30°)</text>
 <text x="900" y="285" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#d0c5af" text-anchor="middle">3. b = 10 × 0.8660</text>
-<text x="900" y="330" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#4ade80" text-anchor="middle" font-weight="bold">4. b ≈ 8.66 m</text>
+<text x="900" y="330" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#4ade80" text-anchor="middle" font-weight="bold">4. b ~ 8.66 m</text>
 </svg>

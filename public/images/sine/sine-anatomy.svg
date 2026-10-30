@@ -1,21 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
 <title>Anatomy of a right triangle for sine</title>
 <desc>Right triangle with angle A at bottom-left, opposite leg a, adjacent leg b, hypotenuse c.</desc>
-<polygon points="360,500 840,500 840,150" fill="rgba(241,201,125,0.07)"/>
-<line x1="840" y1="500" x2="840" y2="150" stroke="#fbbf24" stroke-width="6" stroke-linecap="round"/>
-<line x1="360" y1="500" x2="840" y2="500" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
-<line x1="360" y1="500" x2="840" y2="150" stroke="#f472b6" stroke-width="6" stroke-linecap="round"/>
-<polyline points="840,472 868,472 868,500" stroke="#ffffff" stroke-width="2.5" fill="none"/>
-<circle cx="360" cy="500" r="7" fill="#f1c97d"/>
-<circle cx="840" cy="500" r="7" fill="#f1c97d"/>
-<circle cx="840" cy="150" r="7" fill="#f1c97d"/>
+<polygon points="360,500 840,500 840,150" fill="rgba(241,201,125,0.07)" />
+<line x1="840" y1="500" x2="840" y2="150" stroke="#fbbf24" stroke-width="6" stroke-linecap="round" />
+<line x1="360" y1="500" x2="840" y2="500" stroke="#38bdf8" stroke-width="5" stroke-linecap="round" />
+<line x1="360" y1="500" x2="840" y2="150" stroke="#f472b6" stroke-width="6" stroke-linecap="round" />
+<polyline points="840,472 868,472 868,500" stroke="#ffffff" stroke-width="2.5" fill="none" />
+<circle cx="360" cy="500" r="7" fill="#f1c97d" />
+<circle cx="840" cy="500" r="7" fill="#f1c97d" />
+<circle cx="840" cy="150" r="7" fill="#f1c97d" />
 <text x="880" y="330" font-family="Noto Serif, Georgia, serif" font-size="40" fill="#fbbf24" text-anchor="middle" font-style="italic">a</text>
 <text x="880" y="360" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="17" fill="#d0c5af" text-anchor="middle">opposite</text>
 <text x="600" y="545" font-family="Noto Serif, Georgia, serif" font-size="40" fill="#38bdf8" text-anchor="middle" font-style="italic">b</text>
 <text x="600" y="575" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="17" fill="#d0c5af" text-anchor="middle">adjacent</text>
-<text x="545" y="330" font-family="Noto Serif, Georgia, serif" font-size="40" fill="#f472b6" text-anchor="middle" font-style="italic">c</text>
-<text x="545" y="360" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="17" fill="#d0c5af" text-anchor="middle">hypotenuse</text>
-<path d="M 415.0 500.0 Q 412.0 482.1 403.3 466.1" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.7"/>
+<text x="519" y="294" font-family="Noto Serif, Georgia, serif" font-size="40" fill="#f472b6" text-anchor="middle" font-style="italic">c</text>
+<text x="519" y="324" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="17" fill="#d0c5af" text-anchor="middle">hypotenuse</text>
+<path d="M 415.0 500.0 Q 412.0 482.1 403.3 466.1" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.7" />
 <text x="438" y="462" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
 <text x="795" y="205" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="bold">B</text>
 <text x="795" y="462" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle">90°</text>

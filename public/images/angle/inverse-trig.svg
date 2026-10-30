@@ -1,41 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
 <title>Inverse trigonometric functions for finding angles</title>
 <desc>Three panels showing arcsin, arccos, and arctan formulas with side ratios.</desc>
 
 <text x="600" y="60" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="34" fill="#f5eeda" text-anchor="middle" font-weight="bold">Three Ways to Find an Angle</text>
 
-<!-- Panel 1: arcsin -->
-<rect x="60" y="100" width="320" height="420" rx="16" fill="rgba(56,189,248,0.08)" stroke="#38bdf8" stroke-width="2"/>
+
+<rect x="60" y="100" width="320" height="420" rx="16" fill="#16202c" stroke="#38bdf8" stroke-width="2" />
 <text x="220" y="150" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#38bdf8" text-anchor="middle" font-weight="bold">arcsin</text>
 <text x="220" y="210" font-family="Noto Serif, Georgia, serif" font-size="34" fill="#ffffff" text-anchor="middle">A = sin⁻¹(a/c)</text>
-<text x="220" y="270" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle">opposite</text>
-<text x="220" y="300" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle">──────────</text>
-<text x="220" y="330" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle">hypotenuse</text>
+<text x="220" y="305" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle">opposite / hypotenuse</text>
 <text x="220" y="400" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle">Use when you know</text>
 <text x="220" y="430" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle">a and c</text>
-<text x="220" y="480" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle">Ex: a=3, c=5 → 36.87°</text>
+<text x="220" y="480" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle">Ex: a=3, c=5 -&gt; 36.87°</text>
 
-<!-- Panel 2: arccos -->
-<rect x="440" y="100" width="320" height="420" rx="16" fill="rgba(251,191,36,0.08)" stroke="#fbbf24" stroke-width="2"/>
+
+<rect x="440" y="100" width="320" height="420" rx="16" fill="#221b12" stroke="#fbbf24" stroke-width="2" />
 <text x="600" y="150" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#fbbf24" text-anchor="middle" font-weight="bold">arccos</text>
 <text x="600" y="210" font-family="Noto Serif, Georgia, serif" font-size="34" fill="#ffffff" text-anchor="middle">A = cos⁻¹(b/c)</text>
-<text x="600" y="270" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle">adjacent</text>
-<text x="600" y="300" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle">──────────</text>
-<text x="600" y="330" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle">hypotenuse</text>
+<text x="600" y="305" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle">adjacent / hypotenuse</text>
 <text x="600" y="400" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle">Use when you know</text>
 <text x="600" y="430" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle">b and c</text>
-<text x="600" y="480" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle">Ex: b=4, c=5 → 36.87°</text>
+<text x="600" y="480" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle">Ex: b=4, c=5 -&gt; 36.87°</text>
 
-<!-- Panel 3: arctan -->
-<rect x="820" y="100" width="320" height="420" rx="16" fill="rgba(244,114,182,0.08)" stroke="#f472b6" stroke-width="2"/>
+
+<rect x="820" y="100" width="320" height="420" rx="16" fill="#221420" stroke="#f472b6" stroke-width="2" />
 <text x="980" y="150" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#f472b6" text-anchor="middle" font-weight="bold">arctan</text>
 <text x="980" y="210" font-family="Noto Serif, Georgia, serif" font-size="34" fill="#ffffff" text-anchor="middle">A = tan⁻¹(a/b)</text>
-<text x="980" y="270" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle">opposite</text>
-<text x="980" y="300" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle">──────────</text>
-<text x="980" y="330" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle">adjacent</text>
+<text x="980" y="305" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle">opposite / adjacent</text>
 <text x="980" y="400" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle">Use when you know</text>
 <text x="980" y="430" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle">a and b</text>
-<text x="980" y="480" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle">Ex: a=3, b=4 → 36.87°</text>
+<text x="980" y="480" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle">Ex: a=3, b=4 -&gt; 36.87°</text>
 
 <text x="600" y="580" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle">All three give the same angle when the inputs describe the same triangle</text>
 </svg>

@@ -24,6 +24,7 @@ interface Props {
 
 const { page, locale = DEFAULT_LOCALE } = Astro.props;
 const formula = getFormulaBySlug(page.formulaSlug);
+const isArccosPage = page.slug === 'right-triangle-angle-from-cosine-calculator' && locale === 'en';
 
 if (!formula || !formula.calculator) {
   throw new Error(`Focused angle calculator formula is missing: ${page.formulaSlug}`);
@@ -225,6 +226,8 @@ const sectionHeading = (
     runtimeTranslations={runtimeTranslations}
   />
 
+  {!isArccosPage && (
+  <>
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading(page.howItWorks.h2)}</h2>
     {page.howItWorks.paragraphs.map((paragraph) => (
@@ -529,6 +532,8 @@ const sectionHeading = (
   <div class="mx-auto mt-8 w-full max-w-4xl">
     <Faq heading={sectionHeading(angleUi.faqHeading, 'faqs')} items={page.faqs} />
   </div>
+  </>
+  )}
 
   {page.slug === 'right-triangle-angle-from-cosine-calculator' && locale === 'en' ? <ArccosGuide /> : null}
 

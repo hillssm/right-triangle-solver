@@ -4,6 +4,7 @@ import {
   getFocusedAngleCalculatorRuntimeTranslations,
   getFocusedAngleCalculatorUi
 } from 'src/data/focusedAngleCalculatorTranslations';
+import ArccosGuide from 'theme/components/ArccosGuide.astro';
 import { getFormulaBySlug } from 'src/data/rightTriangleFormulas';
 import { formatListItem, formatRootBars } from 'src/utils/formatList';
 import Faq from 'theme/components/Faq.astro';
@@ -528,6 +529,8 @@ const sectionHeading = (
   <div class="mx-auto mt-8 w-full max-w-4xl">
     <Faq heading={sectionHeading(angleUi.faqHeading, 'faqs')} items={page.faqs} />
   </div>
+
+  {page.slug === 'right-triangle-angle-from-cosine-calculator' && locale === 'en' ? <ArccosGuide /> : null}
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
     <h2 class="break-words text-2xl font-semibold">{sectionHeading(angleUi.relatedAngleCalculators, 'related')}</h2>

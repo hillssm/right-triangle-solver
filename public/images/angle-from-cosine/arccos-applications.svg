@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>Real world arccos applications</title>
+<desc>Four panels: surveying slope, shadow sun angle, roof rafter, and engineering brace.</desc>
+<rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+<text x="600" y="60" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="34" fill="#f5eeda" text-anchor="middle" font-weight="bold">Where arccos shows up in real work</text>
+<rect x="80" y="110" width="480" height="200" rx="14" fill="#1c1b1b" stroke="#333333" stroke-width="1"/>
+<text x="320" y="150" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" fill="#f1c97d" text-anchor="middle" font-weight="bold">Surveying</text>
+<text x="320" y="190" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle">run 60 m, slope 65 m</text>
+<text x="320" y="230" font-family="Noto Serif, Georgia, serif" font-size="26" fill="#38bdf8" text-anchor="middle" font-style="italic">arccos(60/65)</text>
+<text x="320" y="270" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#4ade80" text-anchor="middle" font-weight="bold">= ~ 22.6 deg</text>
+<rect x="640" y="110" width="480" height="200" rx="14" fill="#1c1b1b" stroke="#333333" stroke-width="1"/>
+<text x="880" y="150" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" fill="#f1c97d" text-anchor="middle" font-weight="bold">Sun shadow</text>
+<text x="880" y="190" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle">shadow 8 m, ray 10 m</text>
+<text x="880" y="230" font-family="Noto Serif, Georgia, serif" font-size="26" fill="#38bdf8" text-anchor="middle" font-style="italic">arccos(8/10)</text>
+<text x="880" y="270" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#4ade80" text-anchor="middle" font-weight="bold">= ~ 36.9 deg</text>
+<rect x="80" y="350" width="480" height="200" rx="14" fill="#1c1b1b" stroke="#333333" stroke-width="1"/>
+<text x="320" y="390" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" fill="#f1c97d" text-anchor="middle" font-weight="bold">Roof rafter</text>
+<text x="320" y="430" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle">run 6 m, rafter 6.5 m</text>
+<text x="320" y="470" font-family="Noto Serif, Georgia, serif" font-size="26" fill="#38bdf8" text-anchor="middle" font-style="italic">arccos(6/6.5)</text>
+<text x="320" y="510" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#4ade80" text-anchor="middle" font-weight="bold">= ~ 22.6 deg</text>
+<rect x="640" y="350" width="480" height="200" rx="14" fill="#1c1b1b" stroke="#333333" stroke-width="1"/>
+<text x="880" y="390" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" fill="#f1c97d" text-anchor="middle" font-weight="bold">Brace angle</text>
+<text x="880" y="430" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle">base 3.5 m, brace 4 m</text>
+<text x="880" y="470" font-family="Noto Serif, Georgia, serif" font-size="26" fill="#38bdf8" text-anchor="middle" font-style="italic">arccos(3.5/4)</text>
+<text x="880" y="510" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#4ade80" text-anchor="middle" font-weight="bold">= ~ 28.96 deg</text>
+</svg>

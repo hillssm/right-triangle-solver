@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>How arccos reverses the cosine ratio</title>
+<desc>Diagram showing the ratio b divided by c feeding into arccos to produce angle A.</desc>
+<rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+<text x="600" y="70" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="34" fill="#f5eeda" text-anchor="middle" font-weight="bold">Arccos reverses the cosine ratio</text>
+<rect x="120" y="180" width="300" height="220" rx="14" fill="#1c1b1b" stroke="#38bdf8" stroke-width="2"/>
+<text x="270" y="230" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#a3a3a3" text-anchor="middle">STEP 1: Divide</text>
+<text x="270" y="290" font-family="Noto Serif, Georgia, serif" font-size="44" fill="#38bdf8" text-anchor="middle" font-style="italic">b / c</text>
+<text x="270" y="340" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle">4 / 5 = 0.8</text>
+<text x="270" y="375" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#a3a3a3" text-anchor="middle">a decimal from 0 to 1</text>
+<text x="500" y="300" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="60" fill="#f1c97d" text-anchor="middle">-&gt;</text>
+<rect x="580" y="180" width="300" height="220" rx="14" fill="#1c1b1b" stroke="#f1c97d" stroke-width="2"/>
+<text x="730" y="230" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#a3a3a3" text-anchor="middle">STEP 2: Apply arccos</text>
+<text x="730" y="290" font-family="Noto Serif, Georgia, serif" font-size="40" fill="#f1c97d" text-anchor="middle" font-style="italic">arccos(0.8)</text>
+<text x="730" y="340" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle">= 36.87 deg</text>
+<text x="730" y="375" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#a3a3a3" text-anchor="middle">the angle is recovered</text>
+<rect x="120" y="450" width="960" height="110" rx="14" fill="#1c1b1b" stroke="#333333" stroke-width="1"/>
+<text x="600" y="495" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle">Ratio near 1 gives a small angle. Ratio near 0 gives an angle near 90 deg.</text>
+<text x="600" y="535" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#a3a3a3" text-anchor="middle">arccos(1) = 0 deg, arccos(0.5) = 60 deg, arccos(0) = 90 deg</text>
+</svg>

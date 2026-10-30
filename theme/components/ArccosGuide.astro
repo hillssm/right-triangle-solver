@@ -1,0 +1,373 @@
+---
+/**
+ * ArccosGuide.astro - Educational guide for the Right Triangle Angle From Cosine Calculator page.
+ * En-only (following AngleGuide pattern). 13 sections, 4 SVG diagrams, 16 examples, 12 FAQs.
+ */
+import katex from 'katex';
+import Faq from 'theme/components/Faq.astro';
+
+const rich = (s: string): string => {
+  if (!s || typeof s !== 'string') return '';
+  let out = s;
+  out = out.replace(
+    /\[\[\[(.+?)\]\]\]/g,
+    (_, l) =>
+      `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
+  );
+  out = out.replace(
+    /\[\[(.+?)\]\]/g,
+    (_, l) =>
+      `<span dir="ltr" class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>`
+  );
+  return out;
+};
+
+const imgSrc = (name: string): string => `/images/angle-from-cosine/${name}`;
+---
+
+<!-- Table of Contents -->
+<nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label="Guide contents">
+  <h2 class="font-headline text-2xl font-bold">In This Guide</h2>
+  <ol class="mt-4 grid gap-2 sm:grid-cols-2">
+    <li><a class="hover:text-primary hover:underline" href="#arccos-intro">What Is the Angle From Cosine Calculator?</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arccos-what">Understanding Arccos (Inverse Cosine)</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arccos-vs">Arccos vs. Arcsin vs. Arctan</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arccos-anatomy">Adjacent Side and Hypotenuse</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arccos-howto">How to Use the Calculator</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arccos-examples">16 Worked Examples</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arccos-special">Special Angle Values</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arccos-mistakes">Common Mistakes</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arccos-verify">Verifying Your Answer</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arccos-applications">Real-Life Applications</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arccos-related">Related Calculators</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arccos-faq">FAQs</a></li>
+  </ol>
+</nav>
+
+<!-- Section 1: Introduction -->
+<section id="arccos-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>What Is the Right Triangle Angle From Cosine Calculator?</h2>
+  <p>The right triangle angle from cosine calculator finds an acute angle when you know the adjacent side and the hypotenuse. It applies the inverse cosine function, written arccos or cos<span set:html={rich('[[-1]]')} />, to the ratio of those two sides. The result is angle A in degrees.</p>
+  <p>This tool exists for a specific measurement situation: you can measure the side next to your target angle and the longest side of the triangle, but the opposite side is unknown or hard to reach. Instead of calculating the opposite side first, arccos skips it entirely and converts the adjacent-over-hypotenuse ratio straight into the angle.</p>
+  <p>For example, an adjacent side of 4 and a hypotenuse of 5 give the ratio 0.8. The arccos of 0.8 is approximately 36.87 degrees. That is angle A. The other acute angle follows from the complement rule: 90 minus 36.87, or 53.13 degrees.</p>
+  <p>Arccos is one of three inverse trigonometric tools on this site. If your known sides are the opposite side and the hypotenuse, the <a href="/right-triangle-angle-from-sine-calculator/" class="text-primary hover:underline">angle from sine calculator</a> is the right choice. If you know both legs but not the hypotenuse, use the <a href="/right-triangle-angle-from-tangent-calculator/" class="text-primary hover:underline">angle from tangent calculator</a>. This page covers the cosine case in full depth.</p>
+</section>
+
+<!-- Section 2: What is arccos -->
+<section id="arccos-what" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding Arccos (Inverse Cosine)</h2>
+  <p>Regular cosine takes an angle and returns a ratio. The cosine of 60 degrees is 0.5. Arccos reverses this: it takes a ratio and returns the angle. The arccos of 0.5 is 60 degrees. The two functions undo each other, which is why arccos is also written as cos<span set:html={rich('[[-1]]')} />.</p>
+  <p>The formula used by this calculator is <span set:html={rich('[[A = \\cos^{-1}(b/c)]]')} />. Here b is the adjacent side, c is the hypotenuse, and A is the angle between them. The ratio b/c always falls between 0 and 1 for a valid right triangle, because the adjacent side is always shorter than the hypotenuse.</p>
+  <p>Think of arccos as asking a question: "Which angle has this cosine value?" If b/c equals 0.8, the question becomes "which angle has a cosine of 0.8?" The answer, 36.87 degrees, is the angle whose adjacent side is 80 percent as long as the hypotenuse.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('arccos-ratio.svg')} alt="Diagram showing the two steps of arccos: divide b by c, then apply arccos to get the angle" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">How arccos works: divide the adjacent side by the hypotenuse, then apply inverse cosine to recover the angle.</figcaption>
+  </figure>
+
+  <h3>The Ratio Tells a Story</h3>
+  <p>The value of b/c describes the shape of the triangle. A ratio near 1 means the adjacent side is almost as long as the hypotenuse, so the angle between them is tiny. A ratio near 0 means the adjacent side is very short compared to the hypotenuse, so the angle opens wide toward 90 degrees. A ratio of exactly 0.5 always means 60 degrees.</p>
+  <h3>Domain of Arccos</h3>
+  <p>Arccos only accepts inputs from 0 to 1 in this geometric context. A ratio above 1 is impossible for a right triangle and signals a labeling error: the hypotenuse must be the denominator and must be the longest side. A negative ratio would describe an obtuse angle, which cannot appear as angle A in a right triangle.</p>
+</section>
+
+<!-- Section 3: Arccos vs others -->
+<section id="arccos-vs" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Arccos vs. Arcsin vs. Arctan: When to Use Each</h2>
+  <p>All three inverse functions find the same angle when applied to the same triangle. They differ only in which sides they require. Choosing correctly saves you from computing a side you do not need.</p>
+  <p>Use <strong>arccos</strong> when you know the adjacent side (b) and the hypotenuse (c). The formula is <span set:html={rich('[[A = \\cos^{-1}(b/c)]]')} />. This is the natural choice when the hypotenuse was measured directly, for example with a tape along a slope, and the horizontal distance is known.</p>
+  <p>Use <strong>arcsin</strong> when you know the opposite side (a) and the hypotenuse (c). The formula is <span set:html={rich('[[A = \\sin^{-1}(a/c)]]')} />. Height problems favor arcsin: the vertical rise is opposite the ground-level angle. The <a href="/right-triangle-angle-from-sine-calculator/" class="text-primary hover:underline">angle from sine calculator</a> handles this case.</p>
+  <p>Use <strong>arctan</strong> when you know both legs (a and b) but not the hypotenuse. The formula is <span set:html={rich('[[A = \\tan^{-1}(a/b)]]')} />. Field measurements like roof rise over run favor arctan because both legs are measured directly. See the <a href="/right-triangle-angle-from-tangent-calculator/" class="text-primary hover:underline">angle from tangent calculator</a> for that method.</p>
+  <h3>They Must Agree</h3>
+  <p>For any single triangle, arccos(b/c), arcsin(a/c), and arctan(a/b) produce the identical angle. In a 3-4-5 triangle, arccos(4/5), arcsin(3/5), and arctan(3/4) all equal 36.87 degrees. If two methods disagree, a side is mislabeled. This cross-check is the most reliable verification available, and the <a href="/right-triangle-trig-ratios-calculator/" class="text-primary hover:underline">trig ratios calculator</a> can confirm all three ratios at once.</p>
+  <h3>Why Not Always Use Arctan?</h3>
+  <p>Arctan needs both legs. If the opposite side is unknown and hard to measure, computing it first just to use arctan adds an unnecessary step and an extra chance of error. Arccos goes straight from the two sides you have to the angle you want. Match the function to your measurements, not to habit.</p>
+</section>
+
+<!-- Section 4: Anatomy -->
+<section id="arccos-anatomy" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Adjacent Side and Hypotenuse: The Two Inputs</h2>
+  <p>Arccos needs exactly two sides: the adjacent side b and the hypotenuse c. Getting these labels right is the entire battle. Everything after that is arithmetic.</p>
+  <h3>Identifying the Adjacent Side</h3>
+  <p>The adjacent side is the leg that touches angle A. It forms one edge of the angle itself. In the diagram below, side b runs along the bottom from the right angle to angle A. If you are solving for the other acute angle B instead, the labels swap: the side adjacent to B is the one touching B.</p>
+  <h3>Identifying the Hypotenuse</h3>
+  <p>The hypotenuse is the side opposite the right angle. It is always the longest side of the triangle. It never touches the right angle vertex. If your "hypotenuse" is not the longest of your three measurements, relabel before calculating. The <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem calculator</a> can confirm which side is longest when you have all three.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('arccos-anatomy.svg')} alt="Right triangle with adjacent side b and hypotenuse c highlighted for the arccos formula" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Anatomy for arccos: b is the adjacent side touching angle A, c is the hypotenuse opposite the right angle.</figcaption>
+  </figure>
+
+  <h3>Why the Opposite Side Stays Out</h3>
+  <p>Cosine is defined as adjacent over hypotenuse. The opposite side simply does not appear in this ratio. That is the point of this calculator: when the opposite side is unknown, buried, or irrelevant to your measurement setup, arccos still delivers the angle. You are not ignoring the opposite side; you are using a ratio that never needed it.</p>
+</section>
+
+<!-- Section 5: How to use -->
+<section id="arccos-howto" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Use the Angle From Cosine Calculator</h2>
+  <ol>
+    <li><strong>Confirm the right angle.</strong> The calculator only works for right triangles. Identify the 90-degree corner first.</li>
+    <li><strong>Pick your target angle.</strong> Decide whether you are solving for angle A or angle B. The adjacent side is defined relative to this choice.</li>
+    <li><strong>Measure the adjacent side b.</strong> This is the leg touching your target angle. Record it in any unit.</li>
+    <li><strong>Measure the hypotenuse c.</strong> This is the longest side, across from the right angle. Use the same unit as b.</li>
+    <li><strong>Check that b is less than c.</strong> If it is not, the sides are mislabeled. The hypotenuse must be longest.</li>
+    <li><strong>Enter both values and press Calculate.</strong> The tool computes b/c, applies arccos, and returns angle A in degrees.</li>
+    <li><strong>Find the second angle.</strong> Subtract from 90 degrees: B = 90<span set:html={rich('[[^\\circ]]')} /> minus A.</li>
+    <li><strong>Verify.</strong> Compute cos(A) on a calculator and confirm it equals b/c. If it does, the answer is solid.</li>
+  </ol>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('arccos-steps.svg')} alt="Four step worked example of arccos with b equals 4 and c equals 5" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Worked example: b = 4, c = 5 gives A = arccos(0.8), approximately 36.87 degrees, verified by round-trip.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 6: Examples -->
+<section id="arccos-examples" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>16 Worked Examples</h2>
+  <p>Each example follows the same four steps: write the formula, substitute, divide, apply arccos. Angles are rounded to two decimal places.</p>
+
+  <h3>Example 1: The 3-4-5 Triangle</h3>
+  <p>Given adjacent b = 4 and hypotenuse c = 5, find angle A.</p>
+  <p>A = arccos(b/c) = arccos(4/5) = arccos(0.8) <span set:html={rich('[[\\approx 36.87^\\circ]]')} />. The complement B = 53.13<span set:html={rich('[[^\\circ]]')} />.</p>
+
+  <h3>Example 2: The 5-12-13 Triangle</h3>
+  <p>Given adjacent b = 12 and hypotenuse c = 13, find angle A.</p>
+  <p>A = arccos(12/13) = arccos(0.9231) <span set:html={rich('[[\\approx 22.62^\\circ]]')} />. The complement B = 67.38<span set:html={rich('[[^\\circ]]')} />.</p>
+
+  <h3>Example 3: The 8-15-17 Triangle</h3>
+  <p>Given adjacent b = 8 and hypotenuse c = 17, find angle A.</p>
+  <p>A = arccos(8/17) = arccos(0.4706) <span set:html={rich('[[\\approx 61.93^\\circ]]')} />. The complement B = 28.07<span set:html={rich('[[^\\circ]]')} />.</p>
+
+  <h3>Example 4: Same Triangle, Other Angle</h3>
+  <p>Given adjacent b = 15 and hypotenuse c = 17 (solving for angle B of the 8-15-17 triangle).</p>
+  <p>B = arccos(15/17) = arccos(0.8824) <span set:html={rich('[[\\approx 28.07^\\circ]]')} />. Note 61.93 + 28.07 = 90, as required.</p>
+
+  <h3>Example 5: 5-12-13, Other Angle</h3>
+  <p>Given adjacent b = 5 and hypotenuse c = 13.</p>
+  <p>B = arccos(5/13) = arccos(0.3846) <span set:html={rich('[[\\approx 67.38^\\circ]]')} />. This matches the complement from Example 2.</p>
+
+  <h3>Example 6: 3-4-5, Other Angle</h3>
+  <p>Given adjacent b = 3 and hypotenuse c = 5.</p>
+  <p>B = arccos(3/5) = arccos(0.6) <span set:html={rich('[[\\approx 53.13^\\circ]]')} />. This matches the complement from Example 1.</p>
+
+  <h3>Example 7: The 60-Degree Special Case</h3>
+  <p>Given adjacent b = 1 and hypotenuse c = 2.</p>
+  <p>A = arccos(1/2) = arccos(0.5) = 60<span set:html={rich('[[^\\circ]]')} /> exactly. This is the 30-60-90 special triangle. The <a href="/special-right-triangle-calculator/" class="text-primary hover:underline">special right triangle calculator</a> covers these exact values.</p>
+
+  <h3>Example 8: The 7-24-25 Triangle</h3>
+  <p>Given adjacent b = 7 and hypotenuse c = 25, find angle A.</p>
+  <p>A = arccos(7/25) = arccos(0.28) <span set:html={rich('[[\\approx 73.74^\\circ]]')} />. The complement B = 16.26<span set:html={rich('[[^\\circ]]')} />.</p>
+
+  <h3>Example 9: 7-24-25, Other Angle</h3>
+  <p>Given adjacent b = 24 and hypotenuse c = 25.</p>
+  <p>B = arccos(24/25) = arccos(0.96) <span set:html={rich('[[\\approx 16.26^\\circ]]')} />. Matches the complement from Example 8.</p>
+
+  <h3>Example 10: The 9-40-41 Triangle</h3>
+  <p>Given adjacent b = 9 and hypotenuse c = 41, find angle A.</p>
+  <p>A = arccos(9/41) = arccos(0.2195) <span set:html={rich('[[\\approx 77.32^\\circ]]')} />. A small adjacent side gives a wide angle.</p>
+
+  <h3>Example 11: 9-40-41, Other Angle</h3>
+  <p>Given adjacent b = 40 and hypotenuse c = 41.</p>
+  <p>B = arccos(40/41) = arccos(0.9756) <span set:html={rich('[[\\approx 12.68^\\circ]]')} />. Note 77.32 + 12.68 = 90.</p>
+
+  <h3>Example 12: The 20-21-29 Triangle</h3>
+  <p>Given adjacent b = 20 and hypotenuse c = 29, find angle A.</p>
+  <p>A = arccos(20/29) = arccos(0.6897) <span set:html={rich('[[\\approx 46.40^\\circ]]')} />. The complement B = 43.60<span set:html={rich('[[^\\circ]]')} />.</p>
+
+  <h3>Example 13: 20-21-29, Other Angle</h3>
+  <p>Given adjacent b = 21 and hypotenuse c = 29.</p>
+  <p>B = arccos(21/29) = arccos(0.7241) <span set:html={rich('[[\\approx 43.60^\\circ]]')} />. Matches the complement from Example 12.</p>
+
+  <h3>Example 14: The 6-8-10 Triangle</h3>
+  <p>Given adjacent b = 6 and hypotenuse c = 10, find angle A.</p>
+  <p>A = arccos(6/10) = arccos(0.6) <span set:html={rich('[[\\approx 53.13^\\circ]]')} />. Same angle as Example 6, since 6-8-10 is a scaled 3-4-5.</p>
+
+  <h3>Example 15: 6-8-10, Other Angle</h3>
+  <p>Given adjacent b = 8 and hypotenuse c = 10.</p>
+  <p>B = arccos(8/10) = arccos(0.8) <span set:html={rich('[[\\approx 36.87^\\circ]]')} />. Same as Example 1, confirming similar triangles share angles.</p>
+
+  <h3>Example 16: The 12-16-20 Triangle</h3>
+  <p>Given adjacent b = 12 and hypotenuse c = 20, find angle A.</p>
+  <p>A = arccos(12/20) = arccos(0.6) <span set:html={rich('[[\\approx 53.13^\\circ]]')} />. Another scaled 3-4-5, same angle again. Scaling sides never changes angles.</p>
+</section>
+
+<!-- Section 7: Special values -->
+<section id="arccos-special" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Special Angle Values Worth Memorizing</h2>
+  <p>A few arccos values appear so often that recognizing them saves time. They come from the special right triangles.</p>
+  <p><span set:html={rich('[[\\cos^{-1}(1) = 0^\\circ]]')} />: the adjacent side equals the hypotenuse, so the angle collapses to zero. This is a degenerate case, not a real triangle, but it anchors the scale.</p>
+  <p><span set:html={rich('[[\\cos^{-1}(\\sqrt{3}/2) \\approx 30^\\circ]]')} />: from the 30-60-90 triangle. When the adjacent side is about 86.6 percent of the hypotenuse, the angle is 30 degrees.</p>
+  <p><span set:html={rich('[[\\cos^{-1}(\\sqrt{2}/2) = 45^\\circ]]')} />: from the 45-45-90 triangle. Equal legs give this exact value.</p>
+  <p><span set:html={rich('[[\\cos^{-1}(1/2) = 60^\\circ]]')} />: from the 30-60-90 triangle, the case in Example 7. When the adjacent side is exactly half the hypotenuse, the angle is exactly 60 degrees.</p>
+  <p><span set:html={rich('[[\\cos^{-1}(0) = 90^\\circ]]')} />: the adjacent side shrinks to zero, so the angle opens to a right angle. Like the zero case, this is a boundary, not a real triangle angle.</p>
+  <p>Between these landmarks, arccos decreases smoothly as the ratio increases. Memorizing the five anchor points lets you estimate any arccos mentally: a ratio of 0.7 sits between 0.5 (60 degrees) and 0.866 (30 degrees), a bit closer to 45 degrees. The true value is about 45.57 degrees.</p>
+</section>
+
+<!-- Section 8: Mistakes -->
+<section id="arccos-mistakes" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Common Mistakes When Using Arccos</h2>
+
+  <h3>Using the Opposite Side Instead of the Adjacent Side</h3>
+  <p>The most frequent error. Arccos needs the side touching angle A, not the side across from it. If you feed the opposite side into arccos, you get the complement of the intended angle. In a 3-4-5 triangle, arccos(3/5) = 53.13 degrees is angle B, not angle A. Fix: sketch the triangle, mark your target angle, and trace which leg touches it.</p>
+
+  <h3>Putting the Hypotenuse in the Numerator</h3>
+  <p>Arccos expects adjacent over hypotenuse, a number below 1. Entering c/b instead of b/c gives a ratio above 1, and the calculator returns a math error. Fix: the hypotenuse is always the denominator in the arccos ratio.</p>
+
+  <h3>Confusing Arccos With Cosine</h3>
+  <p>On many calculators, the cosine key and the inverse cosine key (often labeled cos<span set:html={rich('[[-1]]')} /> or arccos) sit near each other. Pressing cos(0.8) instead of arccos(0.8) gives 0.6967, a meaningless ratio, instead of 36.87 degrees. Fix: check that your calculator is in degree mode and that you pressed the inverse key.</p>
+
+  <h3>Mixing Degrees and Radians</h3>
+  <p>Arccos(0.8) is 36.87 degrees but 0.6435 radians. If your hand calculation gives 0.64 for a 3-4-5 triangle, the calculator is in radian mode. Multiply by 180/pi to convert, or switch the mode to degrees. This calculator outputs degrees.</p>
+
+  <h3>Entering Sides in Different Units</h3>
+  <p>Adjacent in inches and hypotenuse in feet corrupts the ratio. Convert to a common unit first. The ratio is unitless, but only when both inputs share the unit.</p>
+
+  <h3>Rounding the Ratio Too Early</h3>
+  <p>Arccos(0.8) = 36.87 degrees, but arccos(0.80) rounded from 0.795 gives 37.24 degrees. Near ratios of 0 and 1, where arccos is steepest, small ratio errors magnify. Keep full precision through the division and round only the final angle.</p>
+
+  <h3>Forgetting Which Angle Was Solved</h3>
+  <p>Arccos returns the angle whose adjacent side you entered. If you entered the side touching angle B, the result is angle B. Label the answer with the correct angle name, or verify with the complement: the two acute angles must sum to 90 degrees.</p>
+</section>
+
+<!-- Section 9: Verify -->
+<section id="arccos-verify" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Verifying Your Arccos Answer</h2>
+  <p>Three checks confirm a correct arccos calculation:</p>
+  <ol>
+    <li><strong>Range check.</strong> The result must fall strictly between 0 and 90 degrees. Anything outside signals invalid inputs or mislabeled sides.</li>
+    <li><strong>Round-trip check.</strong> Compute cos(A) and confirm it equals b/c. For Example 1, cos(36.87<span set:html={rich('[[^\\circ]]')} />) <span set:html={rich('[[\\approx]]')} /> 0.8 = 4/5. If the round trip fails, the angle is wrong.</li>
+    <li><strong>Cross-method check.</strong> Recompute with arcsin or arctan using the third side. If arccos(4/5) = 36.87<span set:html={rich('[[^\\circ]]')} /> and arctan(3/4) = 36.87<span set:html={rich('[[^\\circ]]')} />, the answer is solid. Disagreement points to a labeling error.</li>
+  </ol>
+  <p>For the 3-4-5 triangle, also verify the sides satisfy the Pythagorean theorem: 9 + 16 = 25. Confirming the sides before trusting the angle derived from them is good practice, and the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem calculator</a> makes it quick.</p>
+  <p>A fourth check uses the complement. Compute B = 90<span set:html={rich('[[^\\circ]]')} /> minus A, then verify arccos of the other ratio gives B. In Example 1, arccos(3/5) = 53.13<span set:html={rich('[[^\\circ]]')} />, which matches 90 minus 36.87. When all four checks pass, the answer is beyond doubt.</p>
+</section>
+
+<!-- Section 10: Applications -->
+<section id="arccos-applications" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Real-Life Applications of Arccos</h2>
+  <p>Arccos appears wherever a slope distance and a horizontal distance are the natural measurements. The hypotenuse is measured along the slope itself, and the adjacent side is the horizontal component.</p>
+
+  <h3>Surveying Slopes</h3>
+  <p>A surveyor measures 65 meters along a slope and 60 meters horizontally. The slope angle is arccos(60/65), about 22.6 degrees. This is the standard arccos situation: the slant distance is easy to tape, the horizontal comes from the map or a level, and the opposite side (elevation) is what you might compute next.</p>
+
+  <h3>Sun Elevation From Shadows</h3>
+  <p>A 10-meter light ray casts an 8-meter shadow. The sun elevation angle is arccos(8/10), about 36.9 degrees. Shadow problems are natural arccos problems because the shadow lies along the ground (adjacent) and the ray is the hypotenuse.</p>
+
+  <h3>Roof Rafter Pitch</h3>
+  <p>A rafter spans 6.5 meters with a horizontal run of 6 meters. The pitch angle at the eave is arccos(6/6.5), about 22.6 degrees. Carpenters measure the rafter directly and the run along the joist, so arccos fits the measurements as taken.</p>
+
+  <h3>Engineering Braces</h3>
+  <p>A diagonal brace measures 4 meters with a 3.5-meter horizontal base. The brace angle is arccos(3.5/4), about 28.96 degrees. Structural sketches give the brace length and its footprint; arccos turns those into the installation angle.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('arccos-applications.svg')} alt="Four panels showing surveying, shadow, roof rafter, and brace angle calculations with arccos" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Real-world arccos problems: slope angles, sun elevation, rafter pitch, and brace installation angles.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 11: Related -->
+<section id="arccos-related" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Explore Related Right Triangle Calculators</h2>
+  <ul class="not-prose mt-4 grid gap-x-8 sm:grid-cols-2">
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-angle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">01</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Angle Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-angle-from-sine-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">02</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Angle From Sine Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-angle-from-tangent-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">03</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Angle From Tangent Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-missing-angle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">04</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Missing Angle Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-trig-ratios-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">05</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Trig Ratios Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/cosine-ratio-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">06</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Cosine Ratio Calculator</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- Section 12: FAQs -->
+<section id="arccos-faq" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <Faq
+    heading="Frequently Asked Questions"
+    items={[
+      {
+        question: 'What does A = arccos(b / c) actually mean?',
+        answer: 'It means you divide the adjacent side by the hypotenuse, then work backward from that decimal to find the angle whose cosine equals it. The result is the acute angle between the adjacent side and the hypotenuse.'
+      },
+      {
+        question: 'When should I use arccos instead of arcsin?',
+        answer: 'Use arccos when you know the adjacent side and the hypotenuse. Use arcsin when you know the opposite side and the hypotenuse. Both give the same angle for the same triangle; the choice depends on which sides you measured.'
+      },
+      {
+        question: 'Why am I getting a math error from arccos?',
+        answer: 'The most common cause is a ratio greater than 1, which happens when the adjacent side entered is longer than the hypotenuse. In a valid right triangle the hypotenuse is always longest, so check your side labels.'
+      },
+      {
+        question: 'Can I use arccos without knowing the opposite side?',
+        answer: 'Yes. That is the main advantage of arccos: it needs only the adjacent side and the hypotenuse. The opposite side never enters the calculation.'
+      },
+      {
+        question: 'What is the difference between cos and arccos?',
+        answer: 'Cosine takes an angle and returns a ratio: cos(60 degrees) = 0.5. Arccos reverses this: it takes a ratio and returns the angle, so arccos(0.5) = 60 degrees. Use cosine when you know the angle; use arccos when you know the sides.'
+      },
+      {
+        question: 'Why do arccos, arcsin, and arctan give the same answer?',
+        answer: 'Because they describe the same geometric angle through different side pairs. In a 3-4-5 triangle, arccos(4/5), arcsin(3/5), and arctan(3/4) all equal 36.87 degrees. Agreement between methods confirms correct side labels.'
+      },
+      {
+        question: 'What does it mean if b/c equals exactly 0.5?',
+        answer: 'The angle is exactly 60 degrees. This is the 30-60-90 special triangle, where the side adjacent to the 60-degree angle is half the hypotenuse.'
+      },
+      {
+        question: 'Should the answer be in degrees or radians?',
+        answer: 'This calculator uses degrees, the standard for construction, surveying, and classroom geometry. If you compute by hand, make sure the calculator is in degree mode; a radian-mode result like 0.64 converts to 36.87 degrees by multiplying by 180/pi.'
+      },
+      {
+        question: 'How do I find the other acute angle?',
+        answer: 'Subtract from 90 degrees. If arccos gives A = 36.87 degrees, then B = 90 - 36.87 = 53.13 degrees. No further trigonometry is needed.'
+      },
+      {
+        question: 'Can the arccos result ever be 90 degrees?',
+        answer: 'Only as a limit: arccos(0) = 90 degrees, but a zero adjacent side means a degenerate triangle, not a real one. Valid right triangle angles from arccos always fall strictly between 0 and 90 degrees.'
+      },
+      {
+        question: 'How can I check my arccos answer?',
+        answer: 'Compute cos(A) and confirm it equals b/c. Also recompute with arcsin or arctan using the third side; all methods must agree. Finally, check that both acute angles sum to exactly 90 degrees.'
+      },
+      {
+        question: 'Does scaling the triangle change the arccos result?',
+        answer: 'No. Similar triangles have identical angles. A 3-4-5 triangle and a 6-8-10 triangle both give arccos(0.8) = 36.87 degrees, because the ratio b/c is unchanged by scaling.'
+      }
+    ]}
+  />
+</section>
+
+<!-- Conclusion -->
+<section id="arccos-conclusion" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Find Any Angle From Cosine With Confidence</h2>
+  <p>Start by identifying the adjacent side: the leg touching your target angle. Confirm the hypotenuse is the longest side. Divide, apply arccos, and read the angle in degrees. Get the second angle from 90 minus the first. Verify with the round-trip check, a cross-method computation, and the angle sum. With these steps, any adjacent-and-hypotenuse problem reduces to a reliable routine. Return to the calculator at the top of this page to run your numbers.</p>
+</section>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>Angles of a right triangle</title>
+<desc>Right triangle with vertices A, B, C, sides a, b, c labeled, right angle at C, acute angles A and B marked.</desc>
+
+<polygon points="350,500 850,500 350,180" fill="rgba(241,201,125,0.07)"/>
+<line x1="350" y1="500" x2="850" y2="500" stroke="#38bdf8" stroke-width="6" stroke-linecap="round"/>
+<line x1="350" y1="500" x2="350" y2="180" stroke="#fbbf24" stroke-width="6" stroke-linecap="round"/>
+<line x1="850" y1="500" x2="350" y2="180" stroke="#f472b6" stroke-width="6" stroke-linecap="round"/>
+<polyline points="350,472 378,472 378,500" stroke="#ffffff" stroke-width="3" fill="none"/>
+<circle cx="350" cy="500" r="8" fill="#f1c97d"/>
+<circle cx="850" cy="500" r="8" fill="#f1c97d"/>
+<circle cx="350" cy="180" r="8" fill="#f1c97d"/>
+<text x="600" y="548" font-family="Noto Serif, Georgia, serif" font-size="38" fill="#38bdf8" text-anchor="middle" font-style="italic">b</text>
+<text x="308" y="340" font-family="Noto Serif, Georgia, serif" font-size="38" fill="#fbbf24" text-anchor="middle" font-style="italic">a</text>
+<text x="640" y="330" font-family="Noto Serif, Georgia, serif" font-size="38" fill="#f472b6" text-anchor="middle" font-style="italic">c</text>
+<text x="395" y="465" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">C = 90°</text>
+<text x="800" y="455" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="395" y="240" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">B</text>
+<path d="M 795 492 Q 798 468 818 455" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.7"/>
+<path d="M 358 235 Q 380 228 392 208" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.7"/>
+<text x="600" y="80" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" fill="#f5eeda" text-anchor="middle">A + B = 90° (complementary angles)</text>
+</svg>

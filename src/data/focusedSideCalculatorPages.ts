@@ -2145,7 +2145,7 @@ export const FOCUSED_SIDE_CALCULATOR_PAGES: FocusedSideCalculatorPage[] = [
       listTitle: 'Verification methods:',
       listItems: [
         '<strong>Check the ratio.</strong> Divide the answer by the input: a / b should approximately equal tan(A). For Example 1: 3 / 4 = 0.75 = tan(36.87\u00b0). If it does not match, a <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is mislabeled or the <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> is wrong.',
-        '<strong>Check with the Pythagorean theorem.</strong> Compute c = \u2248(a\u00b0 + b\u00b0) and confirm the triangle closes. For Example 1: \u2248(9 + 16) = 5, the familiar 3-4-5 hypotenuse. This catches arithmetic slips but not <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-label swaps.',
+        '<strong>Check with the Pythagorean theorem.</strong> Compute c = √(a² + b²) and confirm the triangle closes. For Example 1: √(9 + 16) = 5, the familiar 3-4-5 hypotenuse. This catches arithmetic slips but not <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>-label swaps.',
         '<strong>Check against the 45-degree benchmark.</strong> If A is below 45 degrees, a must be smaller than b; if above, a must be larger; at exactly 45 degrees they are equal. For Example 3 (60\u00b0), a \u2248 13.86 m exceeds b = 8 m, which is exactly what the benchmark predicts.',
       ],
     },

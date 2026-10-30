@@ -93,29 +93,64 @@ export const GROUPED_PAGE_FAQS: Record<GroupedCalculatorPage['slug'], GroupedPag
   ]),
   'right-triangle-angle-calculator': createFaqs([
     {
-      question: 'What angles does this right triangle angle page solve?',
+      question: 'How do you find an angle in a right triangle?',
       answer:
-        'It solves the two acute angles in a right triangle, typically Angle A and Angle B, using inverse sine, cosine, tangent, or angle-sum rules.'
+        'Use an inverse trigonometric function on a side ratio. With opposite and hypotenuse, compute arcsin(opposite/hypotenuse). With adjacent and hypotenuse, use arccos(adjacent/hypotenuse). With both legs, use arctan(opposite/adjacent). The result is the angle in degrees.'
     },
     {
-      question: 'Can I find one angle if I only know side lengths?',
+      question: 'What is the difference between sin and arcsin?',
       answer:
-        'Yes. Use the mode that matches your known side ratio, such as opposite over hypotenuse for arcsin or opposite over adjacent for arctangent.'
+        'Sine takes an angle and returns a ratio: sin(30 degrees) = 0.5. Arcsin reverses this: it takes a ratio and returns the angle, so arcsin(0.5) = 30 degrees. Use sine when you know the angle and need a side; use arcsin when you know the sides and need the angle.'
     },
     {
-      question: 'Why must some ratio inputs stay between 0 and 1?',
+      question: 'When should I use arctan instead of arcsin?',
       answer:
-        'For sine and cosine, the numerator side cannot exceed the hypotenuse. Ratios outside valid bounds indicate invalid geometry or incorrect side assignment.'
+        'Use arctan when you know both legs (opposite and adjacent) but not the hypotenuse. Arctan skips the hypotenuse entirely, which saves a step in field measurements like roof pitch where rise and run are measured directly. Use arcsin when the hypotenuse is one of your known sides.'
     },
     {
-      question: 'In what unit are angle results shown?',
+      question: 'Why do the two acute angles add up to 90 degrees?',
       answer:
-        'Results are shown in degrees for practical interpretation in schoolwork, construction, drafting, and common geometry applications.'
+        'Triangle angles always sum to 180 degrees. The right angle takes 90 of those, leaving 90 for the other two combined. This means A + B = 90 degrees, so finding one acute angle immediately gives the other by subtraction.'
     },
     {
-      question: 'How can I double-check an angle result?',
+      question: 'Can the angle be 90 degrees?',
       answer:
-        'Compute the other acute angle with the 90-degree complement rule and confirm both angles sum to 90 degrees.'
+        'No. The 90-degree angle is the right angle at vertex C, which is given. The calculator finds the two acute angles A and B, each strictly between 0 and 90 degrees. If your result hits 0 or 90 degrees, the inputs describe a degenerate triangle, not a valid one.'
+    },
+    {
+      question: 'What if my side ratio is greater than 1?',
+      answer:
+        'For arcsin and arccos, a ratio above 1 is impossible and signals mislabeled sides. The hypotenuse must be the longest side and the denominator. Reassign the longest measurement as the hypotenuse (c) and recompute. Arctan ratios can exceed 1 legitimately.'
+    },
+    {
+      question: 'How do I know which side is opposite and which is adjacent?',
+      answer:
+        'Pick your reference angle first. The opposite side sits across from that angle (not touching its vertex). The adjacent side touches the angle vertex but is not the hypotenuse. The same physical side is opposite for one acute angle and adjacent for the other.'
+    },
+    {
+      question: 'Why do arcsin, arccos, and arctan give the same answer?',
+      answer:
+        'Because they describe the same geometric angle through different side pairs. In a 3-4-5 triangle, arcsin(3/5), arccos(4/5), and arctan(3/4) all equal 36.87 degrees. This agreement is a powerful verification: if two methods disagree, a side is mislabeled.'
+    },
+    {
+      question: 'Should angles be in degrees or radians?',
+      answer:
+        'This calculator uses degrees, the standard for construction, navigation, and classroom geometry. If you compute by hand on a scientific calculator, check it is in degree mode. A radian-mode result like 0.64 for a 3-4-5 triangle converts to 36.87 degrees by multiplying by 180/pi.'
+    },
+    {
+      question: 'How precise should my angle answer be?',
+      answer:
+        'Match your input precision. If sides are measured to the nearest centimeter, two decimal places (36.87 degrees) is appropriate. For rough field estimates, whole degrees suffice. Keep full precision during calculation and round only the final answer.'
+    },
+    {
+      question: 'Can I find an angle with only one side known?',
+      answer:
+        'No. One side is not enough; infinitely many right triangles share a single side length. You need two sides (for inverse trig) or one side plus one acute angle (for the complement rule). The calculator requires exactly two inputs.'
+    },
+    {
+      question: 'How can I check that my angle is correct?',
+      answer:
+        'Three checks: both angles must fall between 0 and 90 degrees, they must sum to exactly 90 degrees, and recomputing with a different inverse function should give the same result. For a 3-4-5 triangle, arcsin(3/5) = 36.87 degrees and arctan(3/4) = 36.87 degrees confirm each other.'
     }
   ]),
   'right-triangle-side-from-angle-calculator': createFaqs([

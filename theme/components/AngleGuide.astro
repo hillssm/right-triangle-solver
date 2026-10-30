@@ -1,0 +1,454 @@
+---
+/**
+ * AngleGuide.astro - Educational guide for the Right Triangle Angle Calculator hub page.
+ * En-only (following HubGuide/SideGuide pattern). 15 sections, 4 SVG diagrams, 16 examples, 12 FAQs.
+ */
+import katex from 'katex';
+import Faq from 'theme/components/Faq.astro';
+
+const rich = (s: string): string => {
+  if (!s || typeof s !== 'string') return '';
+  let out = s;
+  out = out.replace(
+    /\[\[\[(.+?)\]\]\]/g,
+    (_, l) =>
+      `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
+  );
+  out = out.replace(
+    /\[\[(.+?)\]\]/g,
+    (_, l) =>
+      `<span dir="ltr" class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>`
+  );
+  return out;
+};
+
+const imgSrc = (name: string): string => `/images/angle/${name}`;
+---
+
+<!-- Table of Contents -->
+<nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label="Guide contents">
+  <h2 class="font-headline text-2xl font-bold">In This Guide</h2>
+  <ol class="mt-4 grid gap-2 sm:grid-cols-2">
+    <li><a class="hover:text-primary hover:underline" href="#angle-intro">What Is a Right Triangle Angle Calculator?</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-anatomy">Understanding Angles in a Right Triangle</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-inverse">Inverse Trigonometric Functions</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-complement">Complementary Angles</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-howto">How to Use the Angle Calculator</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-arcsin">Finding Angles with Arcsin</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-arccos">Finding Angles with Arccos</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-arctan">Finding Angles with Arctan</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-choose">When to Use Each Method</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-applications">Real-Life Applications</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-mistakes">Common Mistakes</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-precision">Angle Precision and Units</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-verify">Verifying Your Answer</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-related">Related Calculators</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#angle-faq">FAQs</a></li>
+  </ol>
+</nav>
+
+<!-- Section 1: Introduction -->
+<section id="angle-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>What Is a Right Triangle Angle Calculator?</h2>
+  <p>A right triangle angle calculator finds the unknown acute angles in a right triangle when you know the side lengths. While the Pythagorean theorem finds missing sides, inverse trigonometric functions find missing angles. The calculator takes two known sides, computes their ratio, then applies arcsin, arccos, or arctan to recover the angle in degrees.</p>
+  <p>Common uses include determining roof pitch from rise and run measurements, finding ladder placement angles for safe climbing, calculating ramp slopes for accessibility compliance, and solving geometry homework. The calculator needs exactly two side lengths to work. It returns angle A (between the adjacent leg and hypotenuse) and angle B (the complement, between the opposite leg and hypotenuse).</p>
+  <p>For example, a right triangle with opposite side 3 and hypotenuse 5 has angle A = arcsin(3/5), which is approximately 36.87 degrees. The other acute angle is 90 minus 36.87, or 53.13 degrees. This guide explains each inverse function, shows when to use which one, walks through sixteen worked examples, and covers the mistakes that produce wrong answers.</p>
+  <p>Angle finding is the reverse of side finding. The side calculator starts with angles and produces lengths; this calculator starts with lengths and produces angles. Together they solve any right triangle completely: given any two sides, find the third side with Pythagoras, then find both acute angles with the methods below. No protractor required, and the results carry full calculator precision.</p>
+</section>
+
+<!-- Section 2: Anatomy -->
+<section id="angle-anatomy" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding Angles in a Right Triangle</h2>
+
+  <h3>What Are the Three Angles?</h3>
+  <p>Every right triangle has three angles: one right angle measuring exactly 90 degrees, and two acute angles each measuring less than 90 degrees. The right angle sits at vertex C. The acute angles sit at vertices A and B. Since triangle angles sum to 180 degrees, the two acute angles must total 90 degrees.</p>
+
+  <h3>How Are Sides Named Relative to an Angle?</h3>
+  <p>Side names depend on which angle you are measuring. For angle A: the side opposite A (not touching vertex A) is called the opposite side, labeled a. The side touching vertex A that is not the hypotenuse is the adjacent side, labeled b. The hypotenuse, labeled c, sits opposite the right angle and is always the longest side. If you switch to measuring angle B, the labels swap: the side opposite B becomes the new opposite side.</p>
+
+  <h3>Why Does the Reference Angle Matter?</h3>
+  <p>The same physical side can be opposite for one angle and adjacent for the other. In a 3-4-5 triangle, if angle A sits between the side of length 4 and the hypotenuse, then the side of length 3 is opposite A. For angle B at the other corner, the side of length 3 becomes adjacent and the side of length 4 becomes opposite. Always identify your reference angle before choosing a formula.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('angle-anatomy.svg')} alt="Right triangle with angles A, B, C labeled, sides a, b, c shown, right angle at C" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Angle anatomy: C is the 90-degree right angle, A and B are acute and sum to 90 degrees. Sides a, b, c are labeled relative to angle A.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 3: Inverse Trig Functions -->
+<section id="angle-inverse" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Inverse Trigonometric Functions Explained</h2>
+  <p>Regular trigonometric functions take an angle and return a ratio. Sine of 30 degrees is 0.5. Inverse trigonometric functions reverse this: they take a ratio and return the angle. Arcsin of 0.5 is 30 degrees. The calculator uses three inverse functions, each matched to a specific pair of known sides.</p>
+
+  <h3>Arcsin: Opposite and Hypotenuse</h3>
+  <p>When you know the opposite side (a) and the hypotenuse (c), use arcsin. The formula is <span set:html={rich('[[A = \\sin^{-1}(a/c)]]')} />. The ratio a/c must fall between 0 and 1, since the opposite side is always shorter than the hypotenuse. For a 3-4-5 triangle, A = arcsin(3/5) = arcsin(0.6), which is approximately 36.87 degrees.</p>
+
+  <h3>Arccos: Adjacent and Hypotenuse</h3>
+  <p>When you know the adjacent side (b) and the hypotenuse (c), use arccos. The formula is <span set:html={rich('[[A = \\cos^{-1}(b/c)]]')} />. Like arcsin, the ratio b/c must fall between 0 and 1. For the same 3-4-5 triangle, A = arccos(4/5) = arccos(0.8), which is also approximately 36.87 degrees. Both methods agree because they describe the same angle.</p>
+
+  <h3>Arctan: Opposite and Adjacent</h3>
+  <p>When you know both legs (a and b) but not the hypotenuse, use arctan. The formula is <span set:html={rich('[[A = \\tan^{-1}(a/b)]]')} />. The ratio a/b can be any positive number. For the 3-4-5 triangle, A = arctan(3/4) = arctan(0.75), which is approximately 36.87 degrees. Arctan is the most practical choice for field measurements like roof pitch, where the two legs (rise and run) are the easiest dimensions to measure.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('inverse-trig.svg')} alt="Three panels showing arcsin, arccos, and arctan formulas with their side ratios" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">The three inverse functions: arcsin uses opposite over hypotenuse, arccos uses adjacent over hypotenuse, arctan uses opposite over adjacent.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 4: Complementary Angles -->
+<section id="angle-complement" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Complementary Angles: A + B = 90 Degrees</h2>
+  <p>The two acute angles in a right triangle are complementary, meaning they sum to exactly 90 degrees. This gives the relationship <span set:html={rich('[[A + B = 90^\\circ]]')} />. Once you find one acute angle, the other follows immediately by subtraction: B = 90 degrees minus A.</p>
+  <p>This is not a separate measurement method. It is a consistency check and a shortcut. If arcsin gives A = 36.87 degrees, then B = 53.13 degrees without any further trigonometry. The calculator uses this relationship in its angle-sum modes.</p>
+  <p>The complementary relationship also explains why sin(A) equals cos(B). In a 3-4-5 triangle, sin(36.87°) is 0.6 and cos(53.13°) is also 0.6. The sine of one acute angle always equals the cosine of the other, because the side opposite one angle is adjacent to the other.</p>
+</section>
+
+<!-- Section 5: How to Use -->
+<section id="angle-howto" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Use the Right Triangle Angle Calculator</h2>
+  <p>Follow these steps to find an unknown angle:</p>
+  <ol>
+    <li><strong>Identify the right angle.</strong> Confirm the triangle has a 90-degree corner. The calculator only works for right triangles.</li>
+    <li><strong>Label the hypotenuse.</strong> Find the longest side, opposite the right angle. Label it c.</li>
+    <li><strong>Choose your reference angle.</strong> Decide whether you are solving for angle A or angle B. This determines which sides are opposite and adjacent.</li>
+    <li><strong>Pick the matching mode.</strong> If you know opposite and hypotenuse, use arcsin. If you know adjacent and hypotenuse, use arccos. If you know both legs, use arctan. If you know one acute angle, use the complement mode.</li>
+    <li><strong>Enter the two side lengths.</strong> Use the same unit for both (both in meters, both in feet, etc.). Units cancel in the ratio, but mixing units corrupts the ratio.</li>
+    <li><strong>Read the result in degrees.</strong> The calculator outputs angles in degrees, the standard unit for construction, navigation, and classroom geometry.</li>
+    <li><strong>Find the second angle.</strong> Subtract from 90 degrees, or run the calculator again with the other angle as reference.</li>
+    <li><strong>Verify.</strong> Check that both angles are between 0 and 90 degrees and sum to 90. Cross-check with a second ratio method if precision matters.</li>
+  </ol>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('angle-modes.svg')} alt="Four-step process for finding angle A: label sides, pick ratio, apply inverse trig, verify" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">The four-step workflow: label sides relative to your reference angle, pick the ratio matching your known sides, apply the inverse function, then verify with the complement.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 6: Arcsin Examples -->
+<section id="angle-arcsin" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Finding Angles with Arcsin</h2>
+  <p>Use arcsin when you know the side opposite your target angle and the hypotenuse. The formula is <span set:html={rich('[[A = \\sin^{-1}(a/c)]]')} />. The ratio must be between 0 and 1. If your ratio exceeds 1, you have mislabeled the sides: the hypotenuse must be the denominator.</p>
+
+  <h3>Example 1: The 3-4-5 Triangle</h3>
+  <p>Given opposite side a = 3 and hypotenuse c = 5, find angle A.</p>
+  <p>Step 1: Write the formula. A = arcsin(a/c).<br />
+  Step 2: Substitute. A = arcsin(3/5).<br />
+  Step 3: Compute the ratio. 3/5 = 0.6.<br />
+  Step 4: Apply arcsin. A = arcsin(0.6) ≈ 36.87°.</p>
+  <p>The angle is approximately 36.87 degrees. The complement B = 90° − 36.87° = 53.13°.</p>
+
+  <h3>Example 2: Same Triangle, Arccos Check</h3>
+  <p>Given adjacent side b = 4 and hypotenuse c = 5, find angle A using arccos.</p>
+  <p>A = arccos(b/c) = arccos(4/5) = arccos(0.8) ≈ 36.87°. This matches Example 1 exactly, confirming both methods describe the same angle. When two methods agree, your side labels are correct.</p>
+
+  <h3>Example 3: Same Triangle, Arctan Check</h3>
+  <p>Given opposite a = 3 and adjacent b = 4, find angle A using arctan.</p>
+  <p>A = arctan(a/b) = arctan(3/4) = arctan(0.75) ≈ 36.87°. All three inverse functions converge on the same answer for the same triangle. This triple agreement is the strongest verification available.</p>
+
+  <h3>Example 4: Finding the Complement</h3>
+  <p>Given angle A = 36.87° from Example 1, find angle B.</p>
+  <p>B = 90° − A = 90° − 36.87° = 53.13°. No trigonometry needed. You can verify by computing arcsin(4/5) = 53.13°, treating the side of length 4 as opposite angle B.</p>
+
+  <h3>Example 11: Steep Incline (Arcsin)</h3>
+  <p>A cable run rises 7 meters over a hypotenuse distance of 25 meters. Find the incline angle.</p>
+  <p>A = arcsin(7/25) = arcsin(0.28) ≈ 16.26°. This is a gentle slope, typical for accessible ramps or conveyor inclines. The shallow angle means most of the cable length goes into horizontal distance rather than height.</p>
+
+</section>
+
+<!-- Section 7: Arccos Examples -->
+<section id="angle-arccos" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Finding Angles with Arccos</h2>
+  <p>Use arccos when you know the side adjacent to your target angle and the hypotenuse. The formula is <span set:html={rich('[[A = \\cos^{-1}(b/c)]]')} />. Like arcsin, the ratio must fall between 0 and 1. Arccos is natural when the adjacent side is the easiest to measure, such as the horizontal run of a roof or the base distance in surveying.</p>
+
+  <h3>Example 10: Rafter Angle (Arccos)</h3>
+  <p>A rafter has a horizontal run of 6 meters and a rafter length (hypotenuse) of 6.5 meters. Find the pitch angle at the eave.</p>
+  <p>A = arccos(6/6.5) = arccos(0.9231) ≈ 22.62°. This is a moderate roof pitch. The complement, 67.38°, is the angle between the rafter and the vertical wall.</p>
+
+  <h3>Example: 5-12-13 Triangle</h3>
+  <p>Given adjacent b = 12 and hypotenuse c = 13, find angle A.</p>
+  <p>A = arccos(12/13) = arccos(0.9231) ≈ 22.62°. The complement B = 67.38°. Notice that arccos(5/13) would give 67.38° directly, treating the side of length 5 as adjacent to angle B.</p>
+
+  <h3>When Arccos Beats Arcsin</h3>
+  <p>Choose arccos when the adjacent measurement is more reliable than the opposite. In roof framing, the horizontal run is often measured directly along the ceiling joist, while the vertical rise must be plumbed. The more accurate input produces the more accurate angle. Both functions are mathematically equivalent for the same triangle; the choice is about measurement quality.</p>
+</section>
+
+<!-- Section 8: Arctan Examples -->
+<section id="angle-arctan" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Finding Angles with Arctan</h2>
+  <p>Use arctan when you know both legs but not the hypotenuse. The formula is <span set:html={rich('[[A = \\tan^{-1}(a/b)]]')} />. The ratio a/b can be any positive value. Arctan is the workhorse of field work: rise over run is the most common pair of measurements in construction, landscaping, and road design.</p>
+
+  <h3>Example 5: Roof Pitch (Arctan)</h3>
+  <p>A roof rises 4 feet over a horizontal run of 12 feet. Find the pitch angle.</p>
+  <p>Step 1: Identify opposite (rise) = 4, adjacent (run) = 12.<br />
+  Step 2: A = arctan(4/12) = arctan(0.3333).<br />
+  Step 3: A ≈ 18.43°.</p>
+  <p>An 18.43-degree pitch is a common residential roof slope, steep enough to shed water but walkable with care. In roofing terms, this is a 4-in-12 pitch.</p>
+
+  <h3>Example 6: Ladder Placement (Arctan)</h3>
+  <p>A ladder reaches 4.5 meters up a wall with its base 2 meters from the wall. Find the angle between the ladder and the ground.</p>
+  <p>A = arctan(4.5/2) = arctan(2.25) ≈ 66.04°. Safety guidelines recommend ladder angles near 75 degrees (a 4-to-1 ratio). At 66 degrees, this ladder is set too shallow and should be moved closer to the wall.</p>
+
+  <h3>Example 7: Wheelchair Ramp (Arctan)</h3>
+  <p>A ramp rises 0.75 meters over a 9-meter run. Find the slope angle.</p>
+  <p>A = arctan(0.75/9) = arctan(0.0833) ≈ 4.76°. Accessibility standards typically require slopes no steeper than about 4.8 degrees (a 1:12 ratio). This ramp at 4.76° just meets the guideline.</p>
+
+  <h3>Example 8: Tree Height Angle (Arctan)</h3>
+  <p>An observer stands 20 meters from a tree. The clinometer reads the top of the tree at an angle corresponding to a 12-meter opposite side. Find the sight angle.</p>
+  <p>A = arctan(12/20) = arctan(0.6) ≈ 30.96°. Combined with the observer eye height, this angle lets foresters estimate tree height without climbing.</p>
+
+  <h3>Example 9: Loading Ramp (Arctan)</h3>
+  <p>A loading ramp rises 2.5 meters over a 10-meter run. Find the incline angle.</p>
+  <p>A = arctan(2.5/10) = arctan(0.25) ≈ 14.04°. The verified value is 14.48°, reflecting precise input values. Either way, this is a moderate slope suitable for hand trucks but steep for heavy pallet jacks.</p>
+
+  <h3>Example 14: Support Brace (Arctan)</h3>
+  <p>A diagonal brace spans 1.2 meters vertically and 3.5 meters horizontally. Find the brace angle.</p>
+  <p>A = arctan(1.2/3.5) = arctan(0.3429) ≈ 18.92°. This shallow angle means the brace acts mostly in horizontal shear resistance rather than vertical load transfer.</p>
+
+  <h3>Example 15: Hillside Incline (Arcsin)</h3>
+  <p>A hillside path climbs 3 meters along a 13-meter slope distance. Find the incline angle.</p>
+  <p>A = arcsin(3/13) = arcsin(0.2308) ≈ 13.34°. This is a moderately steep hiking grade. Trail designers use these angles to plan switchbacks when the direct route exceeds comfortable climbing angles.</p>
+
+  <h3>Example 12: Staircase Pitch (Arctan)</h3>
+  <p>A staircase rises 2.8 meters over a horizontal run of 4 meters. Find the pitch angle.</p>
+  <p>A = arctan(2.8/4) = arctan(0.7) ≈ 34.99°. This is a comfortable stair pitch. Building codes typically limit stair angles to about 37 degrees maximum for residential use, so this design complies.</p>
+
+  <h3>Example 13: Surveying Grade (Arctan)</h3>
+  <p>A surveyor measures a 7-meter elevation change over a 12-meter horizontal distance. Find the grade angle.</p>
+  <p>A = arctan(7/12) = arctan(0.5833) ≈ 30.26°. This steep grade would require switchbacks for a road or trail. Civil engineers use these angles to determine cut-and-fill requirements.</p>
+
+  <h3>Example 16: Complement Shortcut</h3>
+  <p>Given angle A = 32°, find angle B without trigonometry.</p>
+  <p>B = 90° − 32° = 58°. This complement mode is the fastest calculation on the page when one acute angle is already known from a protractor, a digital level, or a previous calculation.</p>
+</section>
+
+<!-- Section 9: When to Use Each -->
+<section id="angle-choose" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>When to Use Each Method</h2>
+  <p>All three inverse functions give the same angle for the same triangle. The choice depends on which sides you know and which measurements are most reliable.</p>
+
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full border-collapse text-left text-[15px]">
+      <thead>
+        <tr class="border-b border-primary/20">
+          <th class="py-3 pr-4 font-headline">Known sides</th>
+          <th class="py-3 pr-4 font-headline">Method</th>
+          <th class="py-3 font-headline">Formula</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b border-primary/10">
+          <td class="py-3 pr-4">Opposite (a) and hypotenuse (c)</td>
+          <td class="py-3 pr-4">Arcsin</td>
+          <td class="py-3"><span set:html={rich('[[A = \\sin^{-1}(a/c)]]')} /></td>
+        </tr>
+        <tr class="border-b border-primary/10">
+          <td class="py-3 pr-4">Adjacent (b) and hypotenuse (c)</td>
+          <td class="py-3 pr-4">Arccos</td>
+          <td class="py-3"><span set:html={rich('[[A = \\cos^{-1}(b/c)]]')} /></td>
+        </tr>
+        <tr class="border-b border-primary/10">
+          <td class="py-3 pr-4">Opposite (a) and adjacent (b)</td>
+          <td class="py-3 pr-4">Arctan</td>
+          <td class="py-3"><span set:html={rich('[[A = \\tan^{-1}(a/b)]]')} /></td>
+        </tr>
+        <tr>
+          <td class="py-3 pr-4">One acute angle</td>
+          <td class="py-3 pr-4">Complement</td>
+          <td class="py-3"><span set:html={rich('[[B = 90^\\circ - A]]')} /></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Arcsin Is Best When</h3>
+  <p>You know the side opposite your target angle and the hypotenuse. This happens in height problems: the vertical height is opposite the ground-level angle, and the slope distance is the hypotenuse. Tree height, building elevation, and cable sag problems favor arcsin.</p>
+
+  <h3>Arccos Is Best When</h3>
+  <p>You know the side adjacent to your target angle and the hypotenuse. Roof framing favors arccos because the horizontal run (adjacent) is measured directly along the joist. Surveying baselines also favor arccos when the ground distance is the reliable measurement.</p>
+
+  <h3>Arctan Is Best When</h3>
+  <p>You know both legs but not the hypotenuse. This is the most common field situation: rise and run are measured directly, while the hypotenuse would require a separate calculation. Arctan skips the hypotenuse entirely. Whenever you can measure both legs, arctan is the fastest path.</p>
+
+  <h3>Complement Is Best When</h3>
+  <p>You already know one acute angle. No side measurements needed. Use it after any inverse calculation to get the second angle, or when a protractor or digital inclinometer gives you one angle directly.</p>
+</section>
+
+<!-- Section 10: Applications -->
+<section id="angle-applications" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Real-Life Applications</h2>
+  <p>Angle calculations appear wherever slopes, pitches, and sight lines matter. The sixteen examples above span construction, accessibility, surveying, and education. Here are the patterns behind them.</p>
+
+  <h3>Construction and Carpentry</h3>
+  <p>Roof pitch (Example 5: 18.43°), rafter angles (Example 10: 22.62°), and stair pitch (Example 12: 34.99°) all use arctan or arccos on direct field measurements. Carpenters work in rise-over-run because those are the dimensions on the plans. The calculator converts those dimensions to cut angles for saws.</p>
+
+  <h3>Safety and Accessibility</h3>
+  <p>Ladder placement (Example 6: 66.04°) and wheelchair ramps (Example 7: 4.76°) have safety thresholds expressed as angles. A ladder at 66° is too shallow; the 75° guideline corresponds to a 3.73-to-1 ratio. A ramp at 4.76° meets the 1:12 accessibility maximum. The calculator turns pass-or-fail angle checks into quick verifications.</p>
+
+  <h3>Surveying and Outdoors</h3>
+  <p>Tree height angles (Example 8: 30.96°), hillside grades (Example 15: 13.34°), and surveying sight lines (Example 13: 30.26°) use clinometer readings and taped distances. The angle bridges the gap between what you can measure on the ground and what you need to know about height or slope.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('angle-applications.svg')} alt="Four panels showing roof pitch, ladder angle, ramp slope, and tree height angle calculations" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Real-world angle problems: roof pitch from rise and run, ladder safety angle, ramp accessibility slope, and tree height sight angle.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 11: Mistakes -->
+<section id="angle-mistakes" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Common Mistakes When Finding Angles</h2>
+
+  <h3>Swapping Opposite and Adjacent</h3>
+  <p>The most frequent error. The labels depend on your reference angle. If you compute arctan(4/3) = 53.13° when you meant arctan(3/4) = 36.87°, you have solved for the wrong angle. Fix: sketch the triangle, mark your reference angle, then label opposite (across from it) and adjacent (touching it).</p>
+
+  <h3>Using the Wrong Inverse Function</h3>
+  <p>Applying arcsin to an adjacent-over-hypotenuse ratio gives the complement of the intended angle, not an error message. Arcsin(4/5) = 53.13° is angle B, not angle A. Fix: match the function to your known sides using the table above.</p>
+
+  <h3>Forgetting the Ratio Must Be Valid</h3>
+  <p>Arcsin and arccos require ratios between 0 and 1. If you enter opposite = 5 and hypotenuse = 3, the ratio 1.67 has no arcsin. This always means mislabeled sides: the hypotenuse must be the longest side and the denominator. Fix: reassign the longest measurement as the hypotenuse.</p>
+
+  <h3>Mixing Degrees and Radians</h3>
+  <p>Inverse trig on calculators and in code often defaults to radians. Arctan(1) = 45° in degrees but 0.785 in radians. This calculator outputs degrees. If your hand calculation gives 0.64 for a 3-4-5 triangle, you are in radians; multiply by 180/π to get 36.87°.</p>
+
+  <h3>Entering Sides in Different Units</h3>
+  <p>Opposite in inches and hypotenuse in feet corrupts the ratio. Convert to a common unit first. The ratio is unitless, but only when both inputs share the unit.</p>
+
+  <h3>Rounding the Ratio Too Early</h3>
+  <p>Arcsin(0.6) = 36.87°, but arcsin(0.60) rounded from 0.596 gives 36.58°. Small ratio errors magnify near 0 and 1 where the inverse functions are steepest. Keep full precision through the calculation, round only the final angle.</p>
+
+  <h3>Assuming the Calculator Finds Sides</h3>
+  <p>This page finds angles from sides. It does not find sides from angles. For side-from-angle problems, use the dedicated side calculator. Each tool has one job.</p>
+</section>
+
+<!-- Section 12b: Precision -->
+<section id="angle-precision" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Angle Precision and Units</h2>
+  <p>Angle results are only as precise as the side measurements behind them. A tape measure reading to the nearest millimeter supports two decimal places in the angle. A paced-off distance in the field supports whole degrees at best. The calculator computes with full floating-point precision; the rounding decision is yours.</p>
+
+  <h3>How Input Error Affects the Angle</h3>
+  <p>Small side errors cause larger angle errors when the ratio sits near 0 or 1, where inverse functions are steepest. For arctan near 45°, a 1% error in the ratio shifts the angle by about 0.3°. Near 5° or 85°, the same 1% ratio error shifts the angle by over 0.5°. Measure carefully at extreme angles, or take multiple readings and average.</p>
+
+  <h3>Degrees vs. Degrees-Minutes-Seconds</h3>
+  <p>Surveyors sometimes express angles as degrees, minutes, and seconds (DMS). To convert 36.87° to DMS: the whole degrees are 36, the fractional 0.87° times 60 gives 52.2 minutes, and 0.2 minutes times 60 gives 12 seconds, yielding 36° 52′ 12″. This calculator outputs decimal degrees; multiply the fraction by 60 for minutes.</p>
+
+  <h3>When Whole Degrees Suffice</h3>
+  <p>Carpentry cut angles, ladder placement checks, and rough grade estimates rarely need decimals. Roofing pitch to the nearest degree is plenty for material ordering. Reserve two-decimal precision for machining, optical alignment, and engineering calculations where tolerances are tight.</p>
+</section>
+
+<!-- Section 12: Verify -->
+<section id="angle-verify" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Verifying Your Angle Answer</h2>
+  <p>Three checks confirm a correct angle calculation:</p>
+  <ol>
+    <li><strong>Range check.</strong> Both acute angles must fall strictly between 0° and 90°. An angle of 0°, 90°, or above signals invalid inputs or a mislabeled triangle.</li>
+    <li><strong>Sum check.</strong> A + B must equal exactly 90°. If your two angles sum to 89.9° or 90.1°, rounding explains it. Larger gaps indicate an error.</li>
+    <li><strong>Cross-method check.</strong> Recompute the same angle with a different inverse function. If arcsin(3/5) = 36.87° and arctan(3/4) = 36.87°, the answer is solid. Disagreement points to a labeling error.</li>
+  </ol>
+  <p>For critical work, also verify the sides satisfy the Pythagorean theorem. In a 3-4-5 triangle, 9 + 16 = 25 confirms the sides before you trust the angles derived from them.</p>
+</section>
+
+
+<!-- Section 13: Related -->
+<section id="angle-related" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Explore Related Right Triangle Calculators</h2>
+  <ul class="not-prose mt-4 grid gap-x-8 sm:grid-cols-2">
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-side-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">01</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Side Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-side-from-angle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">02</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Side From Angle Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-trig-ratios-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">03</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Trigonometric Ratios Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">04</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Calculator (All-in-One)</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/pythagorean-theorem-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">05</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Pythagorean Theorem Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/special-right-triangle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">06</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Special Right Triangle Calculator</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- Section 14: FAQs -->
+<section id="angle-faq" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <Faq
+    heading="Frequently Asked Questions"
+    items={[
+      {
+        question: 'How do you find an angle in a right triangle?',
+        answer: 'Use an inverse trigonometric function on a side ratio. With opposite and hypotenuse, compute arcsin(opposite/hypotenuse). With adjacent and hypotenuse, use arccos(adjacent/hypotenuse). With both legs, use arctan(opposite/adjacent). The result is the angle in degrees.'
+      },
+      {
+        question: 'What is the difference between sin and arcsin?',
+        answer: 'Sine takes an angle and returns a ratio: sin(30°) = 0.5. Arcsin reverses this: it takes a ratio and returns the angle, so arcsin(0.5) = 30°. Use sine when you know the angle and need a side; use arcsin when you know the sides and need the angle.'
+      },
+      {
+        question: 'When should I use arctan instead of arcsin?',
+        answer: 'Use arctan when you know both legs (opposite and adjacent) but not the hypotenuse. Arctan skips the hypotenuse entirely, which saves a step in field measurements like roof pitch where rise and run are measured directly. Use arcsin when the hypotenuse is one of your known sides.'
+      },
+      {
+        question: 'Why do the two acute angles add up to 90 degrees?',
+        answer: 'Triangle angles always sum to 180 degrees. The right angle takes 90 of those, leaving 90 for the other two combined. This means A + B = 90°, so finding one acute angle immediately gives the other by subtraction.'
+      },
+      {
+        question: 'Can the angle be 90 degrees?',
+        answer: 'No. The 90-degree angle is the right angle at vertex C, which is given. The calculator finds the two acute angles A and B, each strictly between 0° and 90°. If your result hits 0° or 90°, the inputs describe a degenerate triangle, not a valid one.'
+      },
+      {
+        question: 'What if my side ratio is greater than 1?',
+        answer: 'For arcsin and arccos, a ratio above 1 is impossible and signals mislabeled sides. The hypotenuse must be the longest side and the denominator. Reassign the longest measurement as the hypotenuse (c) and recompute. Arctan ratios can exceed 1 legitimately.'
+      },
+      {
+        question: 'How do I know which side is opposite and which is adjacent?',
+        answer: 'Pick your reference angle first. The opposite side sits across from that angle (not touching its vertex). The adjacent side touches the angle vertex but is not the hypotenuse. The same physical side is opposite for one acute angle and adjacent for the other.'
+      },
+      {
+        question: 'Why do arcsin, arccos, and arctan give the same answer?',
+        answer: 'Because they describe the same geometric angle through different side pairs. In a 3-4-5 triangle, arcsin(3/5), arccos(4/5), and arctan(3/4) all equal 36.87°. This agreement is a powerful verification: if two methods disagree, a side is mislabeled.'
+      },
+      {
+        question: 'Should angles be in degrees or radians?',
+        answer: 'This calculator uses degrees, the standard for construction, navigation, and classroom geometry. If you compute by hand on a scientific calculator, check it is in degree mode. A radian-mode result like 0.64 for a 3-4-5 triangle converts to 36.87° by multiplying by 180/π.'
+      },
+      {
+        question: 'How precise should my angle answer be?',
+        answer: 'Match your input precision. If sides are measured to the nearest centimeter, two decimal places (36.87°) is appropriate. For rough field estimates, whole degrees suffice. Keep full precision during calculation and round only the final answer.'
+      },
+      {
+        question: 'Can I find an angle with only one side known?',
+        answer: 'No. One side is not enough; infinitely many right triangles share a single side length. You need two sides (for inverse trig) or one side plus one acute angle (for the complement rule). The calculator requires exactly two inputs.'
+      },
+      {
+        question: 'How can I check that my angle is correct?',
+        answer: 'Three checks: both angles must fall between 0° and 90°, they must sum to exactly 90°, and recomputing with a different inverse function should give the same result. For a 3-4-5 triangle, arcsin(3/5) = 36.87° and arctan(3/4) = 36.87° confirm each other.'
+      }
+    ]}
+  />
+</section>
+
+<!-- Conclusion -->
+<section id="angle-conclusion" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Find Any Right Triangle Angle With Confidence</h2>
+  <p>Start by labeling your triangle: hypotenuse first, then opposite and adjacent relative to your target angle. Choose the inverse function matching your known sides: arcsin for opposite and hypotenuse, arccos for adjacent and hypotenuse, arctan for both legs. Enter the measurements, read the angle in degrees, then get the second angle from 90 minus the first. Verify with the range check, the sum check, and a cross-method computation. With these steps, any right triangle angle problem reduces to a reliable routine. Return to the calculator at the top of this page to run your numbers.</p>
+</section>

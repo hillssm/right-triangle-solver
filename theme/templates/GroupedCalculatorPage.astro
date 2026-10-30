@@ -19,8 +19,10 @@ import SideGuideLocalized from 'theme/components/SideGuideLocalized.astro';
 import SideFromAngleGuide from 'theme/components/SideFromAngleGuide.astro';
 import SideFromAngleGuideLocalized from 'theme/components/SideFromAngleGuideLocalized.astro';
 import AngleGuide from 'theme/components/AngleGuide.astro';
+import AngleGuideLocalized from 'theme/components/AngleGuideLocalized.astro';
 import { SIDE_FROM_ANGLE_TRANSLATIONS } from 'src/data/sideFromAngleTranslations';
 import { SIDE_GUIDE_TRANSLATIONS } from 'src/data/sideGuideTranslations';
+import { ANGLE_GUIDE_TRANSLATIONS } from 'src/data/angleGuideTranslations';
 import { toAbsoluteUrl } from 'theme/utils/site';
 import { replaceGenericSeoHeading, seoSectionHeading } from 'theme/utils/seoHeadings';
 import { formatListItem } from 'src/utils/formatList';
@@ -1127,4 +1129,5 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
   {isSideFromAnglePage && locale === 'en' ? <SideFromAngleGuide /> : null}
   {isSideFromAnglePage && locale !== 'en' && SIDE_FROM_ANGLE_TRANSLATIONS[locale] ? <SideFromAngleGuideLocalized guide={SIDE_FROM_ANGLE_TRANSLATIONS[locale]} locale={locale} /> : null}
   {isAnglePage && locale === 'en' ? <AngleGuide /> : null}
+  {isAnglePage && locale !== 'en' && ANGLE_GUIDE_TRANSLATIONS[locale] ? <AngleGuideLocalized guide={ANGLE_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>

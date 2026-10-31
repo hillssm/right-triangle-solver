@@ -1082,7 +1082,7 @@ export const COSINE_TRANSLATIONS_BATCH1 = {
           },
           {
             "kind": "p",
-            "text": "[[[\\boxed{\\cos(A)=\\frac{b}{c}}}]]"
+            "text": "[[[\\boxed{\\cos(A)=\\frac{b}{c}}]]"
           },
           {
             "kind": "p",
@@ -1574,7 +1574,7 @@ export const COSINE_TRANSLATIONS_BATCH1 = {
           },
           {
             "kind": "p",
-            "text": "[[[\\boxed{c=\\frac{b}{\\cos(A)}}}]]"
+            "text": "[[[\\boxed{c=\\frac{b}{\\cos(A)}}]]"
           },
           {
             "kind": "p",

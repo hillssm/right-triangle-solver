@@ -29,52 +29,52 @@ const imgSrc = (name: string): string => `/images/angle-from-tangent/${name}`;
 
 const faqs = [
   {
-    q: 'What does the formula A = arctan(a / b) calculate?',
-    a: 'It calculates the acute angle A of a right triangle from the lengths of the two legs. You divide the opposite side a by the adjacent side b, then apply inverse tangent to that ratio. The result is the angle in degrees whose tangent equals a / b.',
+    question: 'What does the formula A = arctan(a / b) calculate?',
+    answer: 'It calculates the acute angle A of a right triangle from the lengths of the two legs. You divide the opposite side a by the adjacent side b, then apply inverse tangent to that ratio. The result is the angle in degrees whose tangent equals a / b.',
   },
   {
-    q: 'How do you find an angle using inverse tangent?',
-    a: 'Measure the opposite side and the adjacent side relative to your target angle, divide the opposite by the adjacent to get the tangent ratio, then apply arctan. For example, arctan(3 / 4) is approximately 36.87 degrees.',
+    question: 'How do you find an angle using inverse tangent?',
+    answer: 'Measure the opposite side and the adjacent side relative to your target angle, divide the opposite by the adjacent to get the tangent ratio, then apply arctan. For example, arctan(3 / 4) is approximately 36.87 degrees.',
   },
   {
-    q: 'Why do I need the opposite and adjacent sides?',
-    a: 'Tangent is defined as opposite over adjacent, so these two sides are exactly what the formula needs. They are the two legs of the right triangle, and together they fully determine the shape, and therefore the angle.',
+    question: 'Why do I need the opposite and adjacent sides?',
+    answer: 'Tangent is defined as opposite over adjacent, so these two sides are exactly what the formula needs. They are the two legs of the right triangle, and together they fully determine the shape, and therefore the angle.',
   },
   {
-    q: 'Can I calculate the angle without knowing the hypotenuse?',
-    a: 'Yes. That is the main advantage of this method. The hypotenuse never appears in the tangent formula, so you can skip measuring the longest side entirely and still get the exact angle.',
+    question: 'Can I calculate the angle without knowing the hypotenuse?',
+    answer: 'Yes. That is the main advantage of this method. The hypotenuse never appears in the tangent formula, so you can skip measuring the longest side entirely and still get the exact angle.',
   },
   {
-    q: 'What is the difference between tangent and inverse tangent?',
-    a: 'Tangent takes an angle and returns a ratio, for example tan(45 degrees) = 1. Inverse tangent reverses this: it takes a ratio and returns the angle, for example arctan(1) = 45 degrees. The two functions undo each other.',
+    question: 'What is the difference between tangent and inverse tangent?',
+    answer: 'Tangent takes an angle and returns a ratio, for example tan(45 degrees) = 1. Inverse tangent reverses this: it takes a ratio and returns the angle, for example arctan(1) = 45 degrees. The two functions undo each other.',
   },
   {
-    q: 'Is arctangent the same as tan inverse?',
-    a: 'Yes. Arctan(x) and tan inverse(x) are two names for the same function. Neither means the reciprocal 1 / tan(x); the reciprocal of tangent is cotangent, a different function.',
+    question: 'Is arctangent the same as tan inverse?',
+    answer: 'Yes. Arctan(x) and tan inverse(x) are two names for the same function. Neither means the reciprocal 1 / tan(x); the reciprocal of tangent is cotangent, a different function.',
   },
   {
-    q: 'Can the tangent ratio be greater than 1?',
-    a: 'Yes, and this is normal. When the opposite side is longer than the adjacent side, the ratio exceeds 1 and the angle is greater than 45 degrees. Unlike sine and cosine ratios, tangent has no upper limit.',
+    question: 'Can the tangent ratio be greater than 1?',
+    answer: 'Yes, and this is normal. When the opposite side is longer than the adjacent side, the ratio exceeds 1 and the angle is greater than 45 degrees. Unlike sine and cosine ratios, tangent has no upper limit.',
   },
   {
-    q: 'What happens when the opposite and adjacent sides are equal?',
-    a: 'The ratio is 1, and arctan(1) is exactly 45 degrees. Equal legs form an isosceles right triangle, so the two acute angles are both 45 degrees.',
+    question: 'What happens when the opposite and adjacent sides are equal?',
+    answer: 'The ratio is 1, and arctan(1) is exactly 45 degrees. Equal legs form an isosceles right triangle, so the two acute angles are both 45 degrees.',
   },
   {
-    q: 'How does the side ratio affect the angle?',
-    a: 'A larger opposite-to-adjacent ratio means a larger angle. A ratio of 0.25 gives about 14.04 degrees, a ratio of 1 gives 45 degrees, and a ratio of 4 gives about 75.96 degrees. The angle grows as the opposite side grows relative to the adjacent side.',
+    question: 'How does the side ratio affect the angle?',
+    answer: 'A larger opposite-to-adjacent ratio means a larger angle. A ratio of 0.25 gives about 14.04 degrees, a ratio of 1 gives 45 degrees, and a ratio of 4 gives about 75.96 degrees. The angle grows as the opposite side grows relative to the adjacent side.',
   },
   {
-    q: 'How can I verify my calculated angle?',
-    a: 'Three checks work well. Compute tan(A) and confirm it equals a / b. Confirm the complementary angle B = 90 minus A makes sense. Or compute the hypotenuse with the Pythagorean theorem and confirm a squared plus b squared equals c squared.',
+    question: 'How can I verify my calculated angle?',
+    answer: 'Three checks work well. Compute tan(A) and confirm it equals a / b. Confirm the complementary angle B = 90 minus A makes sense. Or compute the hypotenuse with the Pythagorean theorem and confirm a squared plus b squared equals c squared.',
   },
   {
-    q: 'Can I use this calculator for roof pitch, ramp incline, or ladder angles?',
-    a: 'Yes, these are classic use cases. A roof rise over its horizontal run, a ramp rise over its run, or a ladder height over its base distance all give you the opposite and adjacent sides directly, which is exactly what this calculator needs.',
+    question: 'Can I use this calculator for roof pitch, ramp incline, or ladder angles?',
+    answer: 'Yes, these are classic use cases. A roof rise over its horizontal run, a ramp rise over its run, or a ladder height over its base distance all give you the opposite and adjacent sides directly, which is exactly what this calculator needs.',
   },
   {
-    q: 'What is the difference between a percentage grade and an angle in degrees?',
-    a: 'A percentage grade is 100 times the rise-over-run ratio, while the angle is arctan of that ratio. A 5 percent grade means a ratio of 0.05, which is an angle of about 2.86 degrees, not 5 degrees.',
+    question: 'What is the difference between a percentage grade and an angle in degrees?',
+    answer: 'A percentage grade is 100 times the rise-over-run ratio, while the angle is arctan of that ratio. A 5 percent grade means a ratio of 0.05, which is an angle of about 2.86 degrees, not 5 degrees.',
   },
 ];
 ---
@@ -431,22 +431,6 @@ const faqs = [
 <!-- SECTION 14: FAQs -->
 <section id="arctan-faq" class="mx-auto mt-12 w-full max-w-4xl section-shell scroll-mt-24">
   <Faq heading="Frequently Asked Questions" items={faqs} />
-</section>
-
-<!-- SECTION 15: Related calculators -->
-<section id="arctan-related" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
-  <h2>Explore Related Triangle Calculators</h2>
-  <p>These tools cover the neighboring calculations:</p>
-  <ol class="related-directory">
-    <li><a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">Right Triangle Angle Calculator</a>: choose the right method for any known-side combination.</li>
-    <li><a href="/right-triangle-angle-from-sine-calculator/" class="text-primary hover:underline">Right Triangle Angle From Sine Calculator</a>: finds the angle from the opposite side and hypotenuse.</li>
-    <li><a href="/right-triangle-angle-from-cosine-calculator/" class="text-primary hover:underline">Right Triangle Angle From Cosine Calculator</a>: finds the angle from the adjacent side and hypotenuse.</li>
-    <li><a href="/right-triangle-missing-angle-calculator/" class="text-primary hover:underline">Right Triangle Missing Angle Calculator</a>: finds the complementary acute angle.</li>
-    <li><a href="/tangent-ratio-calculator/" class="text-primary hover:underline">Tangent Ratio Calculator</a>: computes tan(A) = a/b from the two legs.</li>
-    <li><a href="/right-triangle-side-from-tangent-calculator/" class="text-primary hover:underline">Right Triangle Side From Tangent Calculator</a>: finds a missing leg from a known angle.</li>
-    <li><a href="/right-triangle-side-calculator/" class="text-primary hover:underline">Right Triangle Side Calculator</a>: solves for any missing side length.</li>
-    <li><a href="/special-right-triangle-calculator/" class="text-primary hover:underline">Special Right Triangle Calculator</a>: exact values for 30-60-90 and 45-45-90 triangles.</li>
-  </ol>
 </section>
 
 <!-- Conclusion -->

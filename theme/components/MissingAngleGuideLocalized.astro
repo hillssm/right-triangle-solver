@@ -142,9 +142,9 @@ const sectionImages: Record<string, { src: string; altKey: string; captionKey: s
           </table>
         </div>
       )}
-      {img && s[img.altKey] && (
+      {img && (
         <figure class="not-prose my-6">
-          <img src={imgSrc(img.src)} alt={s[img.altKey]} class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+          <img src={imgSrc(img.src)} alt={s[img.altKey] || ''} class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
           {s[img.captionKey] && <figcaption class="mt-2 text-center text-sm text-on-surface-variant" set:html={rich(s[img.captionKey])} />}
         </figure>
       )}

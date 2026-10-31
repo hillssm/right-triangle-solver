@@ -1,27 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-<title>Arcsin two-step process</title>
-<desc>Diagram showing the two steps of arcsin: divide a by c, then apply arcsin to get the angle.</desc>
+<title>How arcsin works: two steps</title>
+<desc>Divide the opposite side by the hypotenuse, then apply inverse sine to recover the angle.</desc>
 <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
-<text x="600" y="70" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="34" fill="#f5eeda" text-anchor="middle" font-weight="bold">How arcsin finds the angle</text>
-
-<!-- Step 1 box -->
-<rect x="80" y="140" width="440" height="330" rx="16" fill="#1c1b1b" stroke="#38bdf8" stroke-width="3"/>
-<text x="300" y="195" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#38bdf8" text-anchor="middle" font-weight="bold">Step 1: Divide</text>
-<text x="300" y="260" font-family="Noto Serif, Georgia, serif" font-size="44" fill="#f5eeda" text-anchor="middle" font-style="italic">a / c</text>
-<text x="300" y="320" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#f5eeda" text-anchor="middle">opposite over hypotenuse</text>
-<text x="300" y="365" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#f5eeda" text-anchor="middle">Example: 3 / 5 = 0.6</text>
-<text x="300" y="420" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#a0a0a0" text-anchor="middle">a ratio between 0 and 1</text>
-
+<text x="600" y="70" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="34" fill="#f5eeda" text-anchor="middle" font-weight="bold">Two steps: divide, then apply arcsin</text>
+<!-- Step 1 -->
+<rect x="60" y="120" width="500" height="420" rx="16" fill="#1c1b1b" stroke="#38bdf8" stroke-width="2"/>
+<text x="310" y="175" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" fill="#38bdf8" text-anchor="middle" font-weight="bold">Step 1: Divide</text>
+<text x="310" y="240" font-family="Noto Serif, Georgia, serif" font-size="44" fill="#ffffff" text-anchor="middle" font-style="italic">a / c</text>
+<text x="310" y="310" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#f5eeda" text-anchor="middle">opposite over hypotenuse</text>
+<text x="310" y="370" font-family="Noto Serif, Georgia, serif" font-size="36" fill="#f1c97d" text-anchor="middle">3 / 5 = 0.6</text>
+<text x="310" y="430" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#ffffff" text-anchor="middle" opacity="0.8">a number between 0 and 1</text>
+<text x="310" y="480" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#ffffff" text-anchor="middle" opacity="0.8">this is sin(A)</text>
 <!-- Arrow -->
-<text x="600" y="320" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="60" fill="#f1c97d" text-anchor="middle" font-weight="bold">-&gt;</text>
-
-<!-- Step 2 box -->
-<rect x="680" y="140" width="440" height="330" rx="16" fill="#1c1b1b" stroke="#f1c97d" stroke-width="3"/>
-<text x="900" y="195" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#f1c97d" text-anchor="middle" font-weight="bold">Step 2: Apply arcsin</text>
-<text x="900" y="260" font-family="Noto Serif, Georgia, serif" font-size="44" fill="#f5eeda" text-anchor="middle" font-style="italic">arcsin(0.6)</text>
-<text x="900" y="320" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#f5eeda" text-anchor="middle">inverse sine of the ratio</text>
-<text x="900" y="365" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#f5eeda" text-anchor="middle">Result: 36.87 degrees</text>
-<text x="900" y="420" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#a0a0a0" text-anchor="middle">the angle whose sine is 0.6</text>
-
-<text x="600" y="550" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#f5eeda" text-anchor="middle">Arcsin asks: which angle has this sine value?</text>
+<text x="600" y="350" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="60" fill="#f1c97d" text-anchor="middle">-&gt;</text>
+<!-- Step 2 -->
+<rect x="640" y="120" width="500" height="420" rx="16" fill="#1c1b1b" stroke="#f472b6" stroke-width="2"/>
+<text x="890" y="175" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" fill="#f472b6" text-anchor="middle" font-weight="bold">Step 2: Apply arcsin</text>
+<text x="890" y="240" font-family="Noto Serif, Georgia, serif" font-size="44" fill="#ffffff" text-anchor="middle" font-style="italic">arcsin(0.6)</text>
+<text x="890" y="310" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#f5eeda" text-anchor="middle">inverse sine of the ratio</text>
+<text x="890" y="370" font-family="Noto Serif, Georgia, serif" font-size="36" fill="#f1c97d" text-anchor="middle">A ~ 36.87 deg</text>
+<text x="890" y="430" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#ffffff" text-anchor="middle" opacity="0.8">the angle is recovered</text>
+<text x="890" y="480" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#ffffff" text-anchor="middle" opacity="0.8">check: sin(36.87 deg) = 0.6</text>
+<text x="600" y="585" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle">sine turns sides into a ratio; arcsin turns the ratio back into the angle</text>
 </svg>

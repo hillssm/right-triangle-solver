@@ -1,0 +1,474 @@
+---
+/**
+ * CosineRatioGuide.astro - Educational guide for the Cosine Ratio Calculator page.
+ * Built from the user's actual master prompt (Page 10 of 45). EN only.
+ * Sections follow the prompt: intro, triangle anatomy, what is cosine,
+ * formula derivation, calculator walkthrough, 4 foundational examples,
+ * 12 practical examples, angle relationship, reverse formulas, 15 mistakes,
+ * verification, ratio comparison, 12 FAQs, related calculators.
+ */
+import katex from 'katex';
+import Faq from 'theme/components/Faq.astro';
+
+const rich = (s: string): string => {
+  if (!s || typeof s !== 'string') return '';
+  let out = s;
+  out = out.replace(
+    /\[\[\[(.+?)\]\]\]/g,
+    (_, l) =>
+      `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
+  );
+  out = out.replace(
+    /\[\[(.+?)\]\]/g,
+    (_, l) =>
+      `<span dir="ltr" class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>`
+  );
+  return out;
+};
+
+const imgSrc = (name: string): string => `/images/cosine/${name}`;
+
+const faqs = [
+  {
+    question: 'What is the cosine ratio formula for a right triangle?',
+    answer: 'cos(A) = b / c: divide the side adjacent to angle A by the hypotenuse. For an adjacent side of 4 cm and a hypotenuse of 5 cm, the result is 4/5 = 0.8.',
+  },
+  {
+    question: 'How do you calculate cosine from two side lengths?',
+    answer: 'Measure the adjacent side b and the hypotenuse c in the same unit, confirm c is longer than b, then compute cos(A) = b / c. With b = 12 m and c = 13 m, the answer is 12/13, about 0.9231.',
+  },
+  {
+    question: 'What is the difference between cosine and sine?',
+    answer: 'Cosine divides the adjacent side by the hypotenuse (b/c); sine divides the opposite side by the hypotenuse (a/c). In a 3-4-5 triangle, cos(A) = 0.8 and sin(A) = 0.6.',
+  },
+  {
+    question: 'Why is cosine less than 1 for an acute angle in a right triangle?',
+    answer: 'The hypotenuse is the longest side, so b is always smaller than c. Dividing a smaller positive number by a larger one gives a result below 1; both sides are positive, so it stays above 0.',
+  },
+  {
+    question: 'Can cosine be greater than 1 in a valid right triangle?',
+    answer: 'No. A cosine above 1 would need the adjacent side longer than the hypotenuse, impossible in a genuine right triangle. If the tool shows 1 or more, the inputs are reversed, the wrong leg was used, or the measurements are incompatible.',
+  },
+  {
+    question: 'What does a cosine value of 0.8 mean?',
+    answer: 'The adjacent side is 80 percent as long as the hypotenuse: 4 m / 5 m = 0.8. The number describes the triangle shape, not an angle; the matching angle is about 36.87 degrees, found with inverse cosine.',
+  },
+  {
+    question: 'Does the cosine ratio have units?',
+    answer: 'No. Both sides are measured in the same unit, so the units cancel: 4 m / 5 m = 0.8, and 400 cm / 500 cm = 0.8. Report cosine as a plain dimensionless number, never with degrees, metres, or feet attached.',
+  },
+  {
+    question: 'How can I find an angle from a cosine ratio?',
+    answer: 'Use inverse cosine (arccosine): A = cos^-1(ratio). For 0.8, A = cos^-1(0.8), about 36.87 degrees. The calculator on this page returns the ratio, not the angle, so set your calculator to degrees mode first.',
+  },
+  {
+    question: 'How can I find the adjacent side using cosine?',
+    answer: 'Rearrange the formula to b = c x cos(A). Multiply the hypotenuse by the cosine of the angle. With c = 10 m and angle A = 60 degrees, cos(60 deg) = 0.5, so b = 10 x 0.5 = 5 m.',
+  },
+  {
+    question: 'What is the difference between cosine and secant?',
+    answer: 'Secant is the reciprocal of cosine: sec(A) = c / b, or 1 / cos(A). Cosine gives a value below 1; secant flips the fraction, giving a value above 1. If cos(A) = 0.8, sec(A) = 1.25.',
+  },
+  {
+    question: 'Can I calculate cosine without knowing the opposite side?',
+    answer: 'Yes. Cosine needs only the adjacent side and the hypotenuse; the opposite side plays no role in cos(A) = b/c, which is why this calculator never asks for it.',
+  },
+  {
+    question: 'How can cosine be used in practical measurements?',
+    answer: 'Cosine is the tool for horizontal projections: ground distance from a ladder length, horizontal run from a rafter length, or a force horizontal component. Multiply the hypotenuse by cos(A) to get the adjacent side, or use the ratio to verify measurements fit a right triangle.',
+  },
+];
+---
+
+<!-- Table of Contents -->
+<nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label="Guide contents">
+  <h2 class="font-headline text-2xl font-bold">In This Guide</h2>
+  <ol class="mt-4 grid gap-2 sm:grid-cols-2">
+    <li><a class="hover:text-primary hover:underline" href="#cos-intro">What Is a Cosine Ratio Calculator?</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cos-triangle">Understanding the Adjacent Side and Hypotenuse</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cos-whatis">Understanding the Cosine Ratio</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cos-formula">How the Cosine Formula Works</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cos-howto">How to Use the Cosine Ratio Calculator</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cos-examples">Step-by-Step Examples of Calculating Cosine</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cos-applications">Real-Life Examples of Using the Cosine Ratio</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cos-angle">Cosine and Angle Size</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cos-recover">Finding Sides and Angles With Cosine</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cos-mistakes">Common Mistakes When Calculating Cosine</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cos-verify">How to Check Whether Your Cosine Result Is Valid</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cos-vs">Cosine vs. Sine, Tangent, and Secant</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cos-faq">Frequently Asked Questions</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cos-related">Explore Related Trigonometric Calculators</a></li>
+  </ol>
+</nav>
+
+<!-- SECTION 1: Introduction -->
+<section id="cos-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>What Is a Cosine Ratio Calculator?</h2>
+  <p>A cosine ratio calculator answers one question: for an acute angle in a right triangle, how long is the adjacent side compared with the hypotenuse? Enter the two side lengths, and the tool divides the adjacent side by the hypotenuse, returning <span set:html={rich('[[\\cos(A)=b/c]]')} />. With an adjacent side of 4 cm and a hypotenuse of 5 cm, the calculation is <span set:html={rich('[[4/5=0.8]]')} />: the adjacent side is 80 percent of the hypotenuse. That decimal is the complete answer. It carries no units, since centimetres cancel during division, and it is not an angle in degrees. The opposite side never enters this calculation. From that single ratio you can compare shapes, check measurements, find horizontal projections, or recover the angle with inverse cosine.</p>
+</section>
+
+<!-- SECTION 2: Understanding the right triangle -->
+<section id="cos-triangle" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding the Adjacent Side and Hypotenuse</h2>
+
+  <h3>What Is a Right Triangle?</h3>
+  <p>A right triangle has one angle of exactly <span set:html={rich('[[90^\\circ]]')} />, the angle between two perpendicular lines, like a wall meeting a level floor. The hypotenuse sits opposite that right angle and is always the longest side. The other two angles share the remaining 90 degrees, so both are acute. Cosine compares two of those sides in a fixed relationship.</p>
+
+  <h3>What Is the Adjacent Side?</h3>
+  <p>The adjacent side <span set:html={rich('[[b]]')} /> is the leg that touches the reference angle <span set:html={rich('[[A]]')} /> without being the hypotenuse. It often represents a horizontal run: ground distance from a ladder, a rafter's horizontal span, or a projection of a force. Which leg counts as adjacent depends on the reference angle, so switching from angle <span set:html={rich('[[A]]')} /> to angle <span set:html={rich('[[B]]')} /> swaps the adjacent and opposite labels.</p>
+
+  <h3>What Is the Hypotenuse?</h3>
+  <p>The hypotenuse <span set:html={rich('[[c]]')} /> is the side opposite the right angle: in any diagram it faces the small square marking the <span set:html={rich('[[90^\\circ]]')} /> corner, and it is the longest side. In real settings it may be a ladder, a rafter, a ramp, a cable, or a straight-line path, and it is always strictly longer than the adjacent side.</p>
+
+  <h3>What Is the Opposite Side?</h3>
+  <p>The opposite side <span set:html={rich('[[a]]')} /> sits directly across from angle <span set:html={rich('[[A]]')} /> and never touches its vertex. It plays no role in the cosine formula, which is why the calculator never asks for it. Keep the reference angle straight: pick the wrong angle and the opposite and adjacent labels silently swap.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('cosine-anatomy.svg')} alt="Right triangle with angle A bottom-left, gold adjacent side b, blue hypotenuse c, neutral opposite side a, cos(A)=b/c" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Angle A sits at the bottom-left; cosine uses the adjacent side b and the hypotenuse c, not the opposite side a.</figcaption>
+  </figure>
+</section>
+
+<!-- SECTION 3: What is cosine -->
+<section id="cos-whatis" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding the Cosine Ratio</h2>
+  <p>Cosine compares the leg next to angle <span set:html={rich('[[A]]')} /> with the complete sloping side:</p>
+  <p><span set:html={rich('[[[\\cos(A)=\\frac{b}{c}]]]')} /></p>
+  <p>Here <span set:html={rich('[[\\cos(A)]]')} /> is the cosine of angle <span set:html={rich('[[A]]')} />, <span set:html={rich('[[b]]')} /> is the adjacent side, and <span set:html={rich('[[c]]')} /> is the hypotenuse: the share of the hypotenuse covered by the adjacent side.</p>
+
+  <h3>Understanding SOH-CAH-TOA</h3>
+  <p>SOH: Sine = Opposite / Hypotenuse. CAH: Cosine = Adjacent / Hypotenuse. TOA: Tangent = Opposite / Adjacent. The letters CAH spell out the cosine formula: the first letter names the function, the second the numerator, and the third the denominator.</p>
+
+  <h3>Why Cosine Is a Ratio</h3>
+  <p>Dividing two lengths cancels the units: <span set:html={rich('[[4\\text{ m}/5\\text{ m}=0.8]]')} />, and <span set:html={rich('[[400\\text{ cm}/500\\text{ cm}=0.8]]')} /> as well. The same physical sides always yield the same number, whatever unit you measured them in, as long as both share it.</p>
+
+  <h3>What Does a Cosine Value of 0.8 Mean?</h3>
+  <p>It means the adjacent side is 80 percent of the hypotenuse: a long leg next to the angle, a hypotenuse only slightly longer. It does not give the angle directly; that needs inverse cosine.</p>
+
+  <h3>Why Cosine Is Less Than 1</h3>
+  <p>The hypotenuse is longer than either leg, so <span set:html={rich('[[b \\lt c]]')} /> and <span set:html={rich('[[b/c \\lt 1]]')} />, and both sides are positive, so the ratio stays above 0. For a valid, non-degenerate right triangle, cosine always lands strictly between 0 and 1; the boundary values 0 and 1 are limits, not reachable values.</p>
+
+  <h3>Cosine Versus Sine</h3>
+  <p><span set:html={rich('[[\\cos(A)=b/c]]')} /> and <span set:html={rich('[[\\sin(A)=a/c]]')} /> share the hypotenuse but use different legs. Choose cosine when the adjacent side is known or needed; choose sine when the opposite side is. Confusing the two is the most common early error.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('cosine-ratio.svg')} alt="Three stages: 3-4-5 triangle labeled, cosine formula cos(A)=b/c, result 4/5=0.8, the adjacent side is 80 percent" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Three stages: identify the sides, apply cos(A) = b/c, and divide. The adjacent side is 80 percent of the hypotenuse.</figcaption>
+  </figure>
+</section>
+
+<!-- SECTION 4: Formula derivation -->
+<section id="cos-formula" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How the Cosine Formula Works</h2>
+  <p>Start from the definition: cosine is the adjacent side divided by the hypotenuse. In this page's notation:</p>
+  <p><span set:html={rich('[[[\\boxed{\\cos(A)=\\frac{b}{c}}]]]')} /></p>
+  <p>The adjacent side is the numerator because it is the leg being compared; the hypotenuse is the denominator because it is the reference length.</p>
+
+  <h3>Fully Worked Example: A 3-4-5 Triangle</h3>
+  <p>Given <span set:html={rich('[[b=4\\text{ cm}]]')} />, <span set:html={rich('[[a=3\\text{ cm}]]')} />, <span set:html={rich('[[c=5\\text{ cm}]]')} />:</p>
+  <p>Step 1: Write the formula. <span set:html={rich('[[\\cos(A)=b/c]]')} /></p>
+  <p>Step 2: Substitute the measurements. <span set:html={rich('[[\\cos(A)=4/5]]')} /></p>
+  <p>Step 3: Divide. <span set:html={rich('[[\\boxed{\\cos(A)=0.8}]]')} /></p>
+  <p>Step 4: Interpret the answer. The adjacent side is 80 percent of the hypotenuse.</p>
+  <p>Step 5: Verify the triangle. <span set:html={rich('[[3^2+4^2=5^2]]')} />, so <span set:html={rich('[[9+16=25]]')} />. The side lengths are mathematically consistent.</p>
+  <p>If you want the angle rather than the ratio, inverse cosine is the next step: <span set:html={rich('[[A=\\cos^{-1}(0.8)\\approx36.87^\\circ]]')} />. That is a separate calculation; this page's tool returns the ratio only.</p>
+</section>
+
+<!-- SECTION 5: Calculator walkthrough -->
+<section id="cos-howto" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Use the Cosine Ratio Calculator</h2>
+  <p>The walkthrough below matches the actual interface on this page.</p>
+  <ol>
+    <li><strong>Identify the reference angle <span set:html={rich('[[A]]')} />,</strong> since the adjacent side is defined relative to it.</li>
+    <li><strong>Locate the adjacent side <span set:html={rich('[[b]]')} />:</strong> the leg touching angle <span set:html={rich('[[A]]')} /> that is not the hypotenuse.</li>
+    <li><strong>Locate the hypotenuse <span set:html={rich('[[c]]')} />:</strong> the side opposite the right angle, the longest side.</li>
+    <li><strong>Measure or obtain both side lengths</strong> in the same unit.</li>
+    <li><strong>Enter the adjacent-side length</strong> (the smaller value) in the first field.</li>
+    <li><strong>Enter the hypotenuse</strong> (the larger value) in the second field.</li>
+    <li><strong>Select matching units with the unit selectors</strong> so the division is meaningful.</li>
+    <li><strong>Confirm both values are positive;</strong> zero or negative lengths cannot form a triangle.</li>
+    <li><strong>Check that the hypotenuse is longer than the adjacent side;</strong> if not, the inputs are swapped or mislabeled.</li>
+    <li><strong>Click Calculate cos(A)</strong> to divide the adjacent side by the hypotenuse.</li>
+    <li><strong>Read the cosine ratio:</strong> the adjacent side as a share of the hypotenuse.</li>
+    <li><strong>Verify the answer is between 0 and 1;</strong> anything outside that range signals an input error.</li>
+    <li><strong>Use Reset</strong> to clear the inputs and start over.</li>
+  </ol>
+  <p>The calculator never asks for an angle in degrees, the opposite side, or a value to invert: two side lengths are the complete input.</p>
+</section>
+
+<!-- SECTION 6: Four foundational examples -->
+<section id="cos-examples" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Step-by-Step Examples of Calculating Cosine</h2>
+  <p>Each example follows the same pattern: write the formula, substitute, divide.</p>
+
+  <h3>Example 1: A 3-4-5 Right Triangle</h3>
+  <p>Given <span set:html={rich('[[b=4\\text{ cm}]]')} />, <span set:html={rich('[[a=3\\text{ cm}]]')} />, <span set:html={rich('[[c=5\\text{ cm}]]')} />:</p>
+  <p><span set:html={rich('[[\\cos(A)=4/5]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\cos(A)=0.8}]]')} /></p>
+  <p>The adjacent side is 80 percent of the hypotenuse; the opposite side completes the triangle but the formula ignores it.</p>
+
+  <h3>Example 2: A 5-12-13 Right Triangle</h3>
+  <p>Given <span set:html={rich('[[b=12\\text{ m}]]')} />, <span set:html={rich('[[a=5\\text{ m}]]')} />, <span set:html={rich('[[c=13\\text{ m}]]')} />:</p>
+  <p><span set:html={rich('[[\\cos(A)=12/13]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\cos(A)\\approx0.9231}]]')} /></p>
+  <p>The adjacent side is about 92.31 percent of the hypotenuse; the 5 m opposite side is not needed.</p>
+
+  <h3>Example 3: A 30-60-90 Triangle</h3>
+  <p>For angle <span set:html={rich('[[A=30^\\circ]]')} />, the adjacent side is <span set:html={rich('[[\\sqrt{3}/2]]')} /> times the hypotenuse. With <span set:html={rich('[[b=\\sqrt{3}\\text{ cm}]]')} /> and <span set:html={rich('[[c=2\\text{ cm}]]')} />:</p>
+  <p><span set:html={rich('[[\\cos(30^\\circ)=\\frac{\\sqrt{3}}{2}]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\cos(30^\\circ)\\approx0.8660}]]')} /></p>
+  <p>This special-angle value is worth memorizing; the 30-60-90 triangle appears constantly in geometry problems.</p>
+
+  <h3>Example 4: A Triangle With an Adjacent Side of 8 and Hypotenuse of 10</h3>
+  <p>Given <span set:html={rich('[[b=8\\text{ m}]]')} /> and <span set:html={rich('[[c=10\\text{ m}]]')} />:</p>
+  <p><span set:html={rich('[[\\cos(A)=8/10]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\cos(A)=0.8}]]')} /></p>
+  <p>The ratio matches the 3-4-5 triangle because scaling all sides by the same factor leaves the angles and ratios unchanged.</p>
+</section>
+
+<!-- SECTION 7: Twelve practical examples -->
+<section id="cos-applications" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Real-Life Examples of Using the Cosine Ratio</h2>
+  <p>Cosine is a mathematical ratio, not a physical quantity with units. Its practical value lies in comparing the adjacent side with the hypotenuse, computing horizontal projections, and verifying measurements. Each example assumes a simplified right triangle.</p>
+
+  <h3>Example 5: Calculating a Ladder's Cosine Ratio</h3>
+  <p>A 5 m ladder stands with its base 3 m from the wall; angle <span set:html={rich('[[A]]')} /> lies between the ladder and the level ground. The ground distance is the adjacent side <span set:html={rich('[[b=3\\text{ m}]]')} />, the ladder the hypotenuse <span set:html={rich('[[c=5\\text{ m}]]')} />. <span set:html={rich('[[\\cos(A)=3/5]]')} />, so <span set:html={rich('[[\\boxed{\\cos(A)=0.6}]]')} />: the ground distance is 60 percent of the ladder's length. The ratio alone does not establish ladder safety.</p>
+
+  <h3>Example 6: Calculating a Roof Rafter's Cosine Ratio</h3>
+  <p>A roof rafter slopes 5 m with a horizontal run of 4 m: the run is the adjacent side <span set:html={rich('[[b=4\\text{ m}]]')} />, the rafter the hypotenuse <span set:html={rich('[[c=5\\text{ m}]]')} />. <span set:html={rich('[[\\cos(A)=4/5]]')} />, so <span set:html={rich('[[\\boxed{\\cos(A)=0.8}]]')} />: the run is 80 percent of the sloping length. A geometric ratio, not a structural assessment.</p>
+
+  <h3>Example 7: Evaluating a Ramp's Cosine Ratio</h3>
+  <p>A ramp slopes 9.5 m with a horizontal run of 9 m: <span set:html={rich('[[b=9\\text{ m}]]')} />, <span set:html={rich('[[c=9.5\\text{ m}]]')} />. <span set:html={rich('[[\\cos(A)=9/9.5]]')} />, so <span set:html={rich('[[\\boxed{\\cos(A)\\approx0.9474}]]')} />: the run is about 94.74 percent of the sloping length, as expected for a gentle slope. It does not establish accessibility compliance.</p>
+
+  <h3>Example 8: A Surveying Measurement</h3>
+  <p>A simplified surveying triangle records a 50 m straight-line distance and a 40 m horizontal separation: <span set:html={rich('[[b=40\\text{ m}]]')} />, <span set:html={rich('[[c=50\\text{ m}]]')} />. <span set:html={rich('[[\\cos(A)=40/50]]')} />, so <span set:html={rich('[[\\boxed{\\cos(A)=0.8}]]')} />: the horizontal distance is 80 percent of the straight-line distance. Real surveying may need instrument-height corrections.</p>
+
+  <h3>Example 9: Finding a Guy Wire's Cosine Ratio</h3>
+  <p>A 13 m guy wire anchors 12 m horizontally from the pole: <span set:html={rich('[[b=12\\text{ m}]]')} />, <span set:html={rich('[[c=13\\text{ m}]]')} />. <span set:html={rich('[[\\cos(A)=12/13]]')} />, so <span set:html={rich('[[\\boxed{\\cos(A)\\approx0.9231}]]')} />: the separation is about 92.31 percent of the wire's length. It says nothing about wire tension or anchor strength.</p>
+
+  <h3>Example 10: Calculating a Staircase Stringer's Cosine Ratio</h3>
+  <p>A simplified staircase stringer is 5 m long with a 4 m horizontal run: <span set:html={rich('[[b=4\\text{ m}]]')} />, <span set:html={rich('[[c=5\\text{ m}]]')} />. <span set:html={rich('[[\\cos(A)=4/5]]')} />, so <span set:html={rich('[[\\boxed{\\cos(A)=0.8}]]')} />: the run is 80 percent of the diagonal stringer. It does not verify code compliance.</p>
+
+  <h3>Example 11: Understanding a Crane Boom's Horizontal Projection</h3>
+  <p>A simplified crane boom is 10 m long with a 6 m horizontal projection: <span set:html={rich('[[b=6\\text{ m}]]')} />, <span set:html={rich('[[c=10\\text{ m}]]')} />. <span set:html={rich('[[\\cos(A)=6/10]]')} />, so <span set:html={rich('[[\\boxed{\\cos(A)=0.6}]]')} />: the projection is 60 percent of the boom's length. It does not establish lifting capacity.</p>
+
+  <h3>Example 12: A Straight Aircraft Flight Segment</h3>
+  <p>An aircraft travels 5 km along a straight path, covering 4 km horizontally: <span set:html={rich('[[b=4\\text{ km}]]')} />, <span set:html={rich('[[c=5\\text{ km}]]')} />. <span set:html={rich('[[\\cos(A)=4/5]]')} />, so <span set:html={rich('[[\\boxed{\\cos(A)=0.8}]]')} />: the horizontal displacement is 80 percent of the path length. An idealized model, not flight navigation.</p>
+
+  <h3>Example 13: Calculating a Diagonal Brace's Cosine Ratio</h3>
+  <p>A diagonal brace is 2 m long with a 1.2 m horizontal projection: <span set:html={rich('[[b=1.2\\text{ m}]]')} />, <span set:html={rich('[[c=2\\text{ m}]]')} />. <span set:html={rich('[[\\cos(A)=1.2/2]]')} />, so <span set:html={rich('[[\\boxed{\\cos(A)=0.6}]]')} />: the projection is 60 percent of the brace's length. It does not determine brace strength.</p>
+
+  <h3>Example 14: Calculating a Hiking Trail's Cosine Ratio</h3>
+  <p>A straight hiking section is 100 m long with an 80 m horizontal displacement: <span set:html={rich('[[b=80\\text{ m}]]')} />, <span set:html={rich('[[c=100\\text{ m}]]')} />. <span set:html={rich('[[\\cos(A)=80/100]]')} />, so <span set:html={rich('[[\\boxed{\\cos(A)=0.8}]]')} />: the displacement is 80 percent of the path length. Real trails curve and change gradient.</p>
+
+  <h3>Example 15: An Awning Support</h3>
+  <p>An awning support is 3 m long with a 2.4 m horizontal projection: <span set:html={rich('[[b=2.4\\text{ m}]]')} />, <span set:html={rich('[[c=3\\text{ m}]]')} />. <span set:html={rich('[[\\cos(A)=2.4/3]]')} />, so <span set:html={rich('[[\\boxed{\\cos(A)=0.8}]]')} />: the projection is 80 percent of the support's length. It does not establish structural suitability.</p>
+
+  <h3>Example 16: A Cable Between Two Points</h3>
+  <p>A straight cable spans 25 m between points 24 m apart horizontally: <span set:html={rich('[[b=24\\text{ m}]]')} />, <span set:html={rich('[[c=25\\text{ m}]]')} />. <span set:html={rich('[[\\cos(A)=24/25]]')} />, so <span set:html={rich('[[\\boxed{\\cos(A)=0.96}]]')} />: the separation is 96 percent of the cable length. The model assumes a straight cable in a right triangle.</p>
+
+  <h3>Practical Examples Compared</h3>
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full min-w-[640px] border-collapse text-left text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30">
+          <th class="py-3 pr-4 font-semibold text-on-surface">Situation</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Adjacent side b</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Hypotenuse c</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Cosine formula</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Calculated ratio</th>
+          <th class="py-3 font-semibold text-on-surface">Interpretation</th>
+        </tr>
+      </thead>
+      <tbody class="text-on-surface-variant">
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Ladder</td><td class="py-2.5 pr-4">3 m</td><td class="py-2.5 pr-4">5 m</td><td class="py-2.5 pr-4">3/5</td><td class="py-2.5 pr-4">0.6</td><td class="py-2.5">Ground distance is 60% of ladder length</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Roof rafter</td><td class="py-2.5 pr-4">4 m</td><td class="py-2.5 pr-4">5 m</td><td class="py-2.5 pr-4">4/5</td><td class="py-2.5 pr-4">0.8</td><td class="py-2.5">Run is 80% of rafter length</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Ramp</td><td class="py-2.5 pr-4">9 m</td><td class="py-2.5 pr-4">9.5 m</td><td class="py-2.5 pr-4">9/9.5</td><td class="py-2.5 pr-4">0.9474</td><td class="py-2.5">Run is 94.74% of slope length</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Surveying</td><td class="py-2.5 pr-4">40 m</td><td class="py-2.5 pr-4">50 m</td><td class="py-2.5 pr-4">40/50</td><td class="py-2.5 pr-4">0.8</td><td class="py-2.5">Horizontal gap is 80% of line</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Guy wire</td><td class="py-2.5 pr-4">12 m</td><td class="py-2.5 pr-4">13 m</td><td class="py-2.5 pr-4">12/13</td><td class="py-2.5 pr-4">0.9231</td><td class="py-2.5">Separation is 92.31% of wire</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Staircase stringer</td><td class="py-2.5 pr-4">4 m</td><td class="py-2.5 pr-4">5 m</td><td class="py-2.5 pr-4">4/5</td><td class="py-2.5 pr-4">0.8</td><td class="py-2.5">Run is 80% of stringer length</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Crane boom</td><td class="py-2.5 pr-4">6 m</td><td class="py-2.5 pr-4">10 m</td><td class="py-2.5 pr-4">6/10</td><td class="py-2.5 pr-4">0.6</td><td class="py-2.5">Projection is 60% of boom</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Flight segment</td><td class="py-2.5 pr-4">4 km</td><td class="py-2.5 pr-4">5 km</td><td class="py-2.5 pr-4">4/5</td><td class="py-2.5 pr-4">0.8</td><td class="py-2.5">Displacement is 80% of path</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Diagonal brace</td><td class="py-2.5 pr-4">1.2 m</td><td class="py-2.5 pr-4">2 m</td><td class="py-2.5 pr-4">1.2/2</td><td class="py-2.5 pr-4">0.6</td><td class="py-2.5">Projection is 60% of brace</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Hiking trail</td><td class="py-2.5 pr-4">80 m</td><td class="py-2.5 pr-4">100 m</td><td class="py-2.5 pr-4">80/100</td><td class="py-2.5 pr-4">0.8</td><td class="py-2.5">Displacement is 80% of path</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Awning support</td><td class="py-2.5 pr-4">2.4 m</td><td class="py-2.5 pr-4">3 m</td><td class="py-2.5 pr-4">2.4/3</td><td class="py-2.5 pr-4">0.8</td><td class="py-2.5">Projection is 80% of support</td></tr>
+        <tr><td class="py-2.5 pr-4">Cable</td><td class="py-2.5 pr-4">24 m</td><td class="py-2.5 pr-4">25 m</td><td class="py-2.5 pr-4">24/25</td><td class="py-2.5 pr-4">0.96</td><td class="py-2.5">Separation is 96% of cable</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('cosine-applications.svg')} alt="Four panels: ladder ratio 0.6, rafter 0.8, surveying 0.8, crane boom 0.6, each with a labeled right triangle" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Four practical calculations: ladder, roof rafter, surveying, and crane boom, each with its triangle, formula, and ratio.</figcaption>
+  </figure>
+  <p>The pattern holds throughout: the ratio is large when the adjacent side is a big share of the hypotenuse, and small when the angle opens up.</p>
+</section>
+
+<!-- SECTION 8: Cosine and angle size -->
+<section id="cos-angle" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding the Relationship Between Cosine and Angle Size</h2>
+  <p>Cosine shrinks as the acute angle grows. A small angle keeps the adjacent side nearly as long as the hypotenuse, so the ratio sits close to 1; as angle <span set:html={rich('[[A]]')} /> opens toward <span set:html={rich('[[90^\\circ]]')} />, the adjacent side becomes a smaller share and the ratio falls. The verified reference values below show the pattern:</p>
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full min-w-[480px] border-collapse text-left text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30">
+          <th class="py-3 pr-4 font-semibold text-on-surface">Angle A</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Adjacent side b</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Hypotenuse c</th>
+          <th class="py-3 font-semibold text-on-surface">Cosine ratio</th>
+        </tr>
+      </thead>
+      <tbody class="text-on-surface-variant">
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">30 deg</td><td class="py-2.5 pr-4">sqrt(3)</td><td class="py-2.5 pr-4">2</td><td class="py-2.5">Approximately 0.8660</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">45 deg</td><td class="py-2.5 pr-4">1</td><td class="py-2.5 pr-4">sqrt(2)</td><td class="py-2.5">Approximately 0.7071</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">60 deg</td><td class="py-2.5 pr-4">1</td><td class="py-2.5 pr-4">2</td><td class="py-2.5">0.5</td></tr>
+        <tr><td class="py-2.5 pr-4">80 deg</td><td class="py-2.5 pr-4">1</td><td class="py-2.5 pr-4">Approximately 5.7588</td><td class="py-2.5">Approximately 0.1736</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The table measurements are illustrative: the ratios, not the absolute lengths, determine the angles. The ratio approaches 0 as the angle approaches <span set:html={rich('[[90^\\circ]]')} /> and approaches 1 as the angle approaches <span set:html={rich('[[0^\\circ]]')} />, staying strictly between for every valid triangle.</p>
+  <figure class="not-prose my-6">
+    <img src={imgSrc('cosine-steps.svg')} alt="Three triangles at 30, 45, 60 degrees with cosine values 0.8660, 0.7071, 0.5; cosine falls as angle grows" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">As angle A grows, the adjacent side becomes a smaller share of the hypotenuse, so cos(A) falls.</figcaption>
+  </figure>
+  <p>The calculator takes no angle input; these reference values serve as orientation and check values when verifying a result.</p>
+</section>
+
+<!-- SECTION 9: Reverse formulas -->
+<section id="cos-recover" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Finding Sides and Angles With Cosine</h2>
+  <p>The cosine formula rearranges cleanly to recover any one of its three quantities when the other two are known.</p>
+  <h3>How to Find the Adjacent Side</h3>
+  <p>Start with <span set:html={rich('[[\\cos(A)=b/c]]')} /> and multiply both sides by <span set:html={rich('[[c]]')} />:</p>
+  <p><span set:html={rich('[[[\\boxed{b=c\\cos(A)}]]]')} /></p>
+  <p>With <span set:html={rich('[[c=10\\text{ m}]]')} /> and <span set:html={rich('[[A=60^\\circ]]')} />: <span set:html={rich('[[b=10\\cos(60^\\circ)]]')} />, and since <span set:html={rich('[[\\cos(60^\\circ)=0.5]]')} />, <span set:html={rich('[[\\boxed{b=5\\text{ m}}]]')} />: half the hypotenuse for this angle.</p>
+  <h3>How to Find the Hypotenuse</h3>
+  <p>Solving for <span set:html={rich('[[c]]')} /> instead gives:</p>
+  <p><span set:html={rich('[[[\\boxed{c=\\frac{b}{\\cos(A)}}]]]')} /></p>
+  <p>With <span set:html={rich('[[b=4\\text{ m}]]')} /> and <span set:html={rich('[[A=60^\\circ]]')} />: <span set:html={rich('[[c=4/0.5]]')} />, so <span set:html={rich('[[\\boxed{c=8\\text{ m}}]]')} />.</p>
+  <h3>How to Find an Angle From a Cosine Ratio</h3>
+  <p>The cosine ratio and the angle are different quantities. If the ratio is known, inverse cosine, also called arccosine, recovers the angle:</p>
+  <p><span set:html={rich('[[[\\boxed{A=\\cos^{-1}\\left(\\frac{b}{c}\\right)}]]]')} /></p>
+  <p>With <span set:html={rich('[[\\cos(A)=0.8]]')} />: <span set:html={rich('[[A=\\cos^{-1}(0.8)]]')} />, so <span set:html={rich('[[\\boxed{A\\approx36.87^\\circ}]]')} />; set the scientific calculator to degrees mode first. These are mathematical rearrangements: the tool on this page returns the ratio itself.</p>
+</section>
+
+<!-- SECTION 10: Common mistakes -->
+<section id="cos-mistakes" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Common Mistakes When Calculating Cosine</h2>
+  <ol>
+    <li><strong>Using the opposite side instead of the adjacent side.</strong> This computes <span set:html={rich('[[a/c]]')} />, which is sine. Fix: pick the leg that touches angle <span set:html={rich('[[A]]')} />.</li>
+    <li><strong>Reversing the fraction to <span set:html={rich('[[c/b]]')} />.</strong> The answer exceeds 1. Fix: the longer side must be the denominator.</li>
+    <li><strong>Confusing cosine with sine.</strong> Reporting 0.6 for a 3-4-5 triangle. Fix: sine uses the opposite side; cosine uses the adjacent side.</li>
+    <li><strong>Confusing cosine with secant.</strong> Computing <span set:html={rich('[[c/b]]')} />. Fix: secant is the reciprocal of cosine, always above 1.</li>
+    <li><strong>Entering an adjacent side longer than the hypotenuse.</strong> The inputs describe an impossible triangle. Fix: the hypotenuse field must hold the longer measurement.</li>
+    <li><strong>Entering zero or negative side lengths.</strong> Division by zero or a meaningless negative ratio. Fix: use positive lengths only.</li>
+    <li><strong>Mixing measurement units.</strong> Centimetres divided by metres skew the ratio by 100. Fix: convert both sides to one unit first.</li>
+    <li><strong>Reporting cosine as an angle in degrees.</strong> Writing 0.8 degrees. Fix: the ratio is a pure number, not an angle.</li>
+    <li><strong>Assuming the cosine ratio has units.</strong> The units already cancelled in the division. Fix: drop the unit from the answer.</li>
+    <li><strong>Confusing the reference angle with the other acute angle.</strong> The adjacent and opposite labels swap. Fix: mark angle <span set:html={rich('[[A]]')} /> on the diagram first.</li>
+    <li><strong>Rounding too early.</strong> Rounding <span set:html={rich('[[12/13]]')} /> to 0.92 before multiplying back adds avoidable error. Fix: keep extra digits until the final step.</li>
+    <li><strong>Assuming cosine is the same for every triangle.</strong> Applying one value to a different shape. Fix: cosine depends on the triangle's proportions.</li>
+    <li><strong>Thinking the ratio directly gives the angle in degrees.</strong> Reading 0.8 as an angle. Fix: use inverse cosine to recover degrees.</li>
+    <li><strong>Reading a cosine of 0.8 as 0.8 degrees.</strong> Confusing a ratio with an angle. Fix: 0.8 is the ratio; the angle is about 36.87 degrees.</li>
+    <li><strong>Naming a leg before identifying the reference angle.</strong> Adjacent and opposite get mixed up. Fix: fix angle <span set:html={rich('[[A]]')} /> before naming any leg.</li>
+  </ol>
+
+  <h3>Wrong Versus Correct</h3>
+  <p>Given <span set:html={rich('[[b=4]]')} /> and <span set:html={rich('[[c=5]]')} />:</p>
+  <p>Incorrect: <span set:html={rich('[[5/4=1.25]]')} />. This is the reciprocal of cosine, called secant, and it is not the cosine ratio.</p>
+  <p>Correct: <span set:html={rich('[[\\cos(A)=4/5=0.8]]')} />.</p>
+  <p>A valid cosine of an acute angle always sits between 0 and 1.</p>
+</section>
+
+<!-- SECTION 11: Verification -->
+<section id="cos-verify" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Check Whether Your Cosine Result Is Valid</h2>
+  <p>A valid, non-degenerate right triangle requires <span set:html={rich('[[0 \\lt b \\lt c]]')} />, and therefore <span set:html={rich('[[0 \\lt b/c \\lt 1]]')} />. Both measurements must use compatible units, and the cosine result must be greater than 0 and less than 1. A result of 1 or more usually indicates reversed inputs, incorrect side identification, or incompatible measurements.</p>
+  <h3>Method 1: Check the Ratio</h3>
+  <p>Verify <span set:html={rich('[[\\cos(A)=b/c]]')} /> directly. With <span set:html={rich('[[b=4]]')} /> and <span set:html={rich('[[c=5]]')} />: <span set:html={rich('[[4/5=0.8]]')} />.</p>
+  <h3>Method 2: Check the Pythagorean Theorem</h3>
+  <p>If the opposite side is known or needed, calculate <span set:html={rich('[[a=\\sqrt{c^2-b^2}]]')} />. For <span set:html={rich('[[b=4]]')} /> and <span set:html={rich('[[c=5]]')} />: <span set:html={rich('[[a=\\sqrt{25-16}=3]]')} />, and <span set:html={rich('[[3^2+4^2=5^2]]')} />. This confirms the dimensions of the 3-4-5 right triangle.</p>
+  <h3>Method 3: Check Using Inverse Cosine</h3>
+  <p>If the ratio is 0.8: <span set:html={rich('[[A=\\cos^{-1}(0.8)\\approx36.87^\\circ]]')} />. Then verify that the angle and side ratio are consistent. Minor differences can occur due to rounding.</p>
+</section>
+
+<!-- SECTION 12: Choosing a ratio -->
+<section id="cos-vs" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Cosine vs. Sine, Tangent, and Secant</h2>
+  <p>Each ratio compares a different pair of sides, using the same reference angle and side labels:</p>
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full min-w-[480px] border-collapse text-left text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30">
+          <th class="py-3 pr-4 font-semibold text-on-surface">Ratio</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Formula</th>
+          <th class="py-3 font-semibold text-on-surface">What it compares</th>
+        </tr>
+      </thead>
+      <tbody class="text-on-surface-variant">
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Sine</td><td class="py-2.5 pr-4">sin(A) = a/c</td><td class="py-2.5">Opposite side to hypotenuse</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Cosine</td><td class="py-2.5 pr-4">cos(A) = b/c</td><td class="py-2.5">Adjacent side to hypotenuse</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Tangent</td><td class="py-2.5 pr-4">tan(A) = a/b</td><td class="py-2.5">Opposite side to adjacent side</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Secant</td><td class="py-2.5 pr-4">sec(A) = c/b</td><td class="py-2.5">Hypotenuse to adjacent side</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Cosecant</td><td class="py-2.5 pr-4">csc(A) = c/a</td><td class="py-2.5">Hypotenuse to opposite side</td></tr>
+        <tr><td class="py-2.5 pr-4">Cotangent</td><td class="py-2.5 pr-4">cot(A) = b/a</td><td class="py-2.5">Adjacent side to opposite side</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Secant is the reciprocal of cosine: <span set:html={rich('[[\\sec(A)=1/\\cos(A)]]')} />. If <span set:html={rich('[[\\cos(A)=0.8]]')} />, then <span set:html={rich('[[\\sec(A)=1/0.8=1.25]]')} />. Use cosine for the adjacent side or a horizontal projection, sine for vertical components, tangent when no hypotenuse is involved, and secant when a formula calls for the reciprocal.</p>
+  <p>For the neighbouring ratios, see the <a href="/sine-ratio-calculator/" class="text-primary hover:underline">Sine Ratio Calculator</a>, the <a href="/tangent-ratio-calculator/" class="text-primary hover:underline">Tangent Ratio Calculator</a>, the <a href="/secant-ratio-calculator/" class="text-primary hover:underline">Secant Ratio Calculator</a>, and the <a href="/cosecant-ratio-calculator/" class="text-primary hover:underline">Cosecant Ratio Calculator</a>.</p>
+</section>
+
+<!-- SECTION 13: FAQs -->
+<section id="cos-faq" class="mx-auto mt-12 w-full max-w-4xl section-shell scroll-mt-24">
+  <Faq heading="Frequently Asked Questions" items={faqs} />
+</section>
+
+<!-- SECTION 14: Related calculators -->
+<section id="cos-related" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Explore Related Trigonometric Calculators</h2>
+  <ul class="mt-5">
+    <li class="border-b border-primary/10">
+      <a href="/sine-ratio-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">01</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Sine Ratio Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/tangent-ratio-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">02</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Tangent Ratio Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/secant-ratio-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">03</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Secant Ratio Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/cosecant-ratio-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">04</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Cosecant Ratio Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-angle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">05</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Angle Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-side-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">06</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Side Calculator</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- Conclusion -->
+<section id="cos-conclusion" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Master the Cosine Ratio With Confidence</h2>
+  <p>Cosine is the share of the hypotenuse covered by the adjacent side: divide <span set:html={rich('[[b]]')} /> by <span set:html={rich('[[c]]')} /> to describe the triangle's shape. The formula <span set:html={rich('[[\\cos(A)=b/c]]')} /> needs only two measurements, the answer is always a dimensionless number between 0 and 1, and the rearranged forms <span set:html={rich('[[b=c\\cos(A)]]')} /> and <span set:html={rich('[[A=\\cos^{-1}(b/c)]]')} /> recover a missing side or the angle. Ladder, rafter, or textbook 3-4-5, the method never changes: identify the adjacent side, identify the hypotenuse, divide, and verify.</p>
+</section>

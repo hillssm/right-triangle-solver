@@ -11,6 +11,9 @@ import Faq from 'theme/components/Faq.astro';
 import CosecantRatioGuide from 'theme/components/CosecantRatioGuide.astro';
 import CosecantRatioGuideLocalized from 'theme/components/CosecantRatioGuideLocalized.astro';
 import { COSECANT_GUIDE_TRANSLATIONS } from 'src/data/cosecantGuideTranslations';
+import CosineRatioGuide from 'theme/components/CosineRatioGuide.astro';
+import CosineRatioGuideLocalized from 'theme/components/CosineRatioGuideLocalized.astro';
+import { COSINE_GUIDE_TRANSLATIONS } from 'src/data/cosineGuideTranslations';
 import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
@@ -512,4 +515,7 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
 
   {page.slug === 'cosecant-ratio-calculator' && locale === 'en' ? <CosecantRatioGuide /> : null}
   {page.slug === 'cosecant-ratio-calculator' && locale !== 'en' && COSECANT_GUIDE_TRANSLATIONS[locale] ? <CosecantRatioGuideLocalized guide={COSECANT_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
+
+  {page.slug === 'cosine-ratio-calculator' && locale === 'en' ? <CosineRatioGuide /> : null}
+  {page.slug === 'cosine-ratio-calculator' && locale !== 'en' && COSINE_GUIDE_TRANSLATIONS[locale] ? <CosineRatioGuideLocalized guide={COSINE_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>

@@ -188,7 +188,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
     introHeading: 'How This Cosine Ratio Calculator Works',
     intro: [
       'The cosine ratio measures how the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> of a right triangle compares to the hypotenuse. It is the second part of SOH-CAH-TOA and one of the most commonly used trig functions in geometry, physics, and engineering.',
-      'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> takes two inputs \u2014 the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b and the hypotenuse c \u2014 and returns cos(A). It handles the division for you and shows the result immediately, so you can focus on understanding the geometry instead of the arithmetic.'
+      'This <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> takes two inputs, the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b and the hypotenuse c, and returns cos(A). It handles the division for you and shows the result immediately, so you can focus on understanding the geometry instead of the arithmetic.'
     ],
     calculatorNote:
       'Type the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b and hypotenuse c into the input fields above. The <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> computes cos(A) = b / c. Both values must be positive, and c must be larger than b.',
@@ -205,7 +205,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
     ],
     howToSteps: [
       'Locate <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A in your right triangle. It is one of the two acute angles.',
-      'Identify the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. This is side b \u2014 the leg that forms <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A together with the hypotenuse.',
+      'Identify the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. This is side b, the leg that forms <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A together with the hypotenuse.',
       'Identify the hypotenuse c, the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> opposite the 90\u00b0 <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>.',
       'Enter the value of b in the first field.',
       'Enter the value of c in the second field.',
@@ -226,7 +226,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_PAGES: FocusedTrigRatioCalculatorPage
     whatResultMeans: [
       'Cosine tells you how much of the hypotenuse length is covered by the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>. A cosine of 0.8 means the adjacent side stretches 80% as far as the hypotenuse does.',
       'When <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A is small, the adjacent <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> is nearly as long as the hypotenuse, so cos(A) is close to 1. When angle A is large (near 90\u00b0), the adjacent side shrinks relative to the hypotenuse, pushing cos(A) toward 0.',
-      'The result is dimensionless. It does not matter whether your <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a> are in feet, meters, or any other unit \u2014 cosine is a pure ratio.'
+      'The result is dimensionless. It does not matter whether your <a href="/right-triangle-measurements-calculator/" class="text-primary hover:underline">measurements</a> are in feet, meters, or any other unit: cosine is a pure ratio.'
     ],
     whenToUse: {
       intro:

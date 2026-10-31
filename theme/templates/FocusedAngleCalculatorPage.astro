@@ -555,6 +555,7 @@ const sectionHeading = (
   {page.slug === 'right-triangle-angle-from-tangent-calculator' && locale !== 'en' && ARCTAN_GUIDE_TRANSLATIONS[locale] ? <ArctanGuideLocalized guide={ARCTAN_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
   {page.slug === 'right-triangle-missing-angle-calculator' && locale !== 'en' && MISSINGANGLE_GUIDE_TRANSLATIONS[locale] ? <MissingAngleGuideLocalized guide={MISSINGANGLE_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 
+  {page.slug !== 'right-triangle-missing-angle-calculator' && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
     <h2 class="break-words text-2xl font-semibold">{sectionHeading(angleUi.relatedAngleCalculators, 'related')}</h2>
     <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -573,4 +574,5 @@ const sectionHeading = (
       ))}
     </div>
   </section>
+  )}
 </BaseLayout>

@@ -369,6 +369,7 @@ const sectionHeading = (
               font-size="17"
               font-weight="700"
               text-anchor="start"
+              data-diagram-angle-a
             >A</text>
             <text
               x="104"
@@ -378,6 +379,7 @@ const sectionHeading = (
               font-size="17"
               font-weight="700"
               text-anchor="end"
+              data-diagram-angle-b
             >B</text>
             <text
               x="104"
@@ -573,4 +575,64 @@ const sectionHeading = (
       ))}
     </div>
   </section>
+
+<script>
+(function() {
+  // Update focused calculator diagrams with input values
+  function initDiagram() {
+    const angleALabel = document.querySelector('[data-diagram-angle-a]');
+    const angleBLabel = document.querySelector('[data-diagram-angle-b]');
+    if (!angleALabel && !angleBLabel) return;
+
+    // Find calculator inputs
+    const inputs = document.querySelectorAll('input[type="number"], input[type="text"]');
+    
+    function updateDiagram() {
+      // Try to find angle A input value
+      let angleAVal = '';
+      let angleBVal = '';
+      
+      inputs.forEach(input => {
+        const name = (input.getAttribute('name') || input.getAttribute('id') || '').toLowerCase();
+        const val = input.value.trim();
+        if (!val) return;
+        if (name.includes('alpha') || name === 'a' && input.closest('[data-calculator]')) {
+          // Might be angle A
+          if (name === 'alpha' || (document.querySelectorAll('input').length <= 2)) {
+            angleAVal = val;
+          }
+        }
+      });
+
+      // Update labels with values if found
+      if (angleALabel && angleAVal) {
+        angleALabel.textContent = 'A = ' + angleAVal + '°';
+      }
+      // B is calculated, try to find it in results
+      const resultEl = document.querySelector('[data-result], .calculator-result, [data-output]');
+      if (angleBLabel && resultEl) {
+        const match = resultEl.textContent.match(/([0-9.]+)\s*°/);
+        if (match) {
+          angleBLabel.textContent = 'B = ' + match[1] + '°';
+        }
+      }
+    }
+
+    inputs.forEach(input => {
+      input.addEventListener('input', updateDiagram);
+      input.addEventListener('change', updateDiagram);
+    });
+    
+    // Also observe for calculation results
+    const observer = new MutationObserver(updateDiagram);
+    observer.observe(document.body, { childList: true, subtree: true, characterData: true });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initDiagram);
+  } else {
+    initDiagram();
+  }
+})();
+</script>
 </BaseLayout>

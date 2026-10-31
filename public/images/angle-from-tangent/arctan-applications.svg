@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>Four practical arctan calculations</title>
+<desc>Roof pitch, ladder, ramp, and tree elevation angles computed with inverse tangent.</desc>
+<rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+<text x="600" y="60" font-family="system-ui, sans-serif" font-size="32" fill="#f5eeda" text-anchor="middle" font-weight="bold">Arctan in real life</text>
+<text x="150" y="120" font-family="system-ui, sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle" font-weight="bold">Roof pitch</text>
+<polygon points="30,430 250,430 30,356" fill="rgba(241,201,125,0.07)"/>
+<line x1="30" y1="430" x2="250" y2="430" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+<line x1="30" y1="430" x2="30" y2="356" stroke="#f1c97d" stroke-width="5" stroke-linecap="round"/>
+<line x1="250" y1="430" x2="30" y2="356" stroke="#f472b6" stroke-width="3" stroke-linecap="round" opacity="0.45"/>
+<polyline points="52,430 52,408 30,408" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<circle cx="30" cy="430" r="6" fill="#f1c97d"/>
+<circle cx="250" cy="430" r="6" fill="#f1c97d"/>
+<circle cx="30" cy="356" r="6" fill="#f1c97d"/>
+<text x="140" y="462" font-family="Noto Serif, serif" font-size="24" fill="#38bdf8" text-anchor="middle" font-style="italic">12 ft</text>
+<text x="64" y="393" font-family="Noto Serif, serif" font-size="24" fill="#f1c97d" text-anchor="middle" font-style="italic">4 ft</text>
+<text x="266" y="436" font-family="system-ui, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="150" y="500" font-family="Noto Serif, serif" font-size="28" fill="#38bdf8" text-anchor="middle" font-style="italic">A ~ 18.43 deg</text>
+<text x="150" y="540" font-family="system-ui, sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">arctan(4/12)</text>
+<text x="445" y="120" font-family="system-ui, sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle" font-weight="bold">Ladder</text>
+<polygon points="325,430 425,430 325,230" fill="rgba(241,201,125,0.07)"/>
+<line x1="325" y1="430" x2="425" y2="430" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+<line x1="325" y1="430" x2="325" y2="230" stroke="#f1c97d" stroke-width="5" stroke-linecap="round"/>
+<line x1="425" y1="430" x2="325" y2="230" stroke="#f472b6" stroke-width="3" stroke-linecap="round" opacity="0.45"/>
+<polyline points="347,430 347,408 325,408" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<circle cx="325" cy="430" r="6" fill="#f1c97d"/>
+<circle cx="425" cy="430" r="6" fill="#f1c97d"/>
+<circle cx="325" cy="230" r="6" fill="#f1c97d"/>
+<text x="375" y="462" font-family="Noto Serif, serif" font-size="24" fill="#38bdf8" text-anchor="middle" font-style="italic">2 m</text>
+<text x="359" y="330" font-family="Noto Serif, serif" font-size="24" fill="#f1c97d" text-anchor="middle" font-style="italic">4.5 m</text>
+<text x="441" y="436" font-family="system-ui, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="445" y="500" font-family="Noto Serif, serif" font-size="28" fill="#38bdf8" text-anchor="middle" font-style="italic">A ~ 66.04 deg</text>
+<text x="445" y="540" font-family="system-ui, sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">arctan(4.5/2)</text>
+<text x="740" y="120" font-family="system-ui, sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle" font-weight="bold">Ramp</text>
+<polygon points="620,430 850,430 620,408" fill="rgba(241,201,125,0.07)"/>
+<line x1="620" y1="430" x2="850" y2="430" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+<line x1="620" y1="430" x2="620" y2="408" stroke="#f1c97d" stroke-width="5" stroke-linecap="round"/>
+<line x1="850" y1="430" x2="620" y2="408" stroke="#f472b6" stroke-width="3" stroke-linecap="round" opacity="0.45"/>
+<polyline points="642,430 642,408 620,408" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<circle cx="620" cy="430" r="6" fill="#f1c97d"/>
+<circle cx="850" cy="430" r="6" fill="#f1c97d"/>
+<circle cx="620" cy="408" r="6" fill="#f1c97d"/>
+<text x="735" y="462" font-family="Noto Serif, serif" font-size="24" fill="#38bdf8" text-anchor="middle" font-style="italic">9 m</text>
+<text x="654" y="419" font-family="Noto Serif, serif" font-size="24" fill="#f1c97d" text-anchor="middle" font-style="italic">0.75 m</text>
+<text x="866" y="436" font-family="system-ui, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="740" y="500" font-family="Noto Serif, serif" font-size="28" fill="#38bdf8" text-anchor="middle" font-style="italic">A ~ 4.76 deg</text>
+<text x="740" y="540" font-family="system-ui, sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">arctan(0.75/9)</text>
+<text x="1035" y="120" font-family="system-ui, sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle" font-weight="bold">Tree elevation</text>
+<polygon points="915,430 1105,430 915,316" fill="rgba(241,201,125,0.07)"/>
+<line x1="915" y1="430" x2="1105" y2="430" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+<line x1="915" y1="430" x2="915" y2="316" stroke="#f1c97d" stroke-width="5" stroke-linecap="round"/>
+<line x1="1105" y1="430" x2="915" y2="316" stroke="#f472b6" stroke-width="3" stroke-linecap="round" opacity="0.45"/>
+<polyline points="937,430 937,408 915,408" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<circle cx="915" cy="430" r="6" fill="#f1c97d"/>
+<circle cx="1105" cy="430" r="6" fill="#f1c97d"/>
+<circle cx="915" cy="316" r="6" fill="#f1c97d"/>
+<text x="1010" y="462" font-family="Noto Serif, serif" font-size="24" fill="#38bdf8" text-anchor="middle" font-style="italic">20 m</text>
+<text x="949" y="373" font-family="Noto Serif, serif" font-size="24" fill="#f1c97d" text-anchor="middle" font-style="italic">12 m</text>
+<text x="1121" y="436" font-family="system-ui, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="1035" y="500" font-family="Noto Serif, serif" font-size="28" fill="#38bdf8" text-anchor="middle" font-style="italic">A ~ 30.96 deg</text>
+<text x="1035" y="540" font-family="system-ui, sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">arctan(12/20)</text></svg>

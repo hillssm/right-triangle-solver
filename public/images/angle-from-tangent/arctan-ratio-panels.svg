@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>How the tangent ratio changes the angle</title>
+<desc>Five triangles showing larger opposite-to-adjacent ratios produce larger angles.</desc>
+<rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+<text x="600" y="60" font-family="system-ui, sans-serif" font-size="32" fill="#f5eeda" text-anchor="middle" font-weight="bold">Larger ratio, larger angle</text>
+<text x="115" y="110" font-family="system-ui, sans-serif" font-size="24" fill="#f1c97d" text-anchor="middle" font-weight="bold">A</text>
+<polygon points="20,440 210,440 20,392" fill="rgba(241,201,125,0.07)"/>
+<line x1="20" y1="440" x2="210" y2="440" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+<line x1="20" y1="440" x2="20" y2="392" stroke="#f1c97d" stroke-width="5" stroke-linecap="round"/>
+<line x1="210" y1="440" x2="20" y2="392" stroke="#f472b6" stroke-width="3" stroke-linecap="round" opacity="0.45"/>
+<polyline points="40,440 40,420 20,420" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<circle cx="20" cy="440" r="6" fill="#f1c97d"/>
+<circle cx="210" cy="440" r="6" fill="#f1c97d"/>
+<circle cx="20" cy="392" r="6" fill="#f1c97d"/>
+<text x="115" y="500" font-family="system-ui, sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">a/b = 0.25</text>
+<text x="115" y="532" font-family="Noto Serif, serif" font-size="26" fill="#38bdf8" text-anchor="middle" font-style="italic">14.04 deg</text>
+<text x="224" y="446" font-family="system-ui, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="355" y="110" font-family="system-ui, sans-serif" font-size="24" fill="#f1c97d" text-anchor="middle" font-weight="bold">B</text>
+<polygon points="260,440 450,440 260,345" fill="rgba(241,201,125,0.07)"/>
+<line x1="260" y1="440" x2="450" y2="440" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+<line x1="260" y1="440" x2="260" y2="345" stroke="#f1c97d" stroke-width="5" stroke-linecap="round"/>
+<line x1="450" y1="440" x2="260" y2="345" stroke="#f472b6" stroke-width="3" stroke-linecap="round" opacity="0.45"/>
+<polyline points="280,440 280,420 260,420" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<circle cx="260" cy="440" r="6" fill="#f1c97d"/>
+<circle cx="450" cy="440" r="6" fill="#f1c97d"/>
+<circle cx="260" cy="345" r="6" fill="#f1c97d"/>
+<text x="355" y="500" font-family="system-ui, sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">a/b = 0.5</text>
+<text x="355" y="532" font-family="Noto Serif, serif" font-size="26" fill="#38bdf8" text-anchor="middle" font-style="italic">26.57 deg</text>
+<text x="464" y="446" font-family="system-ui, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="595" y="110" font-family="system-ui, sans-serif" font-size="24" fill="#f1c97d" text-anchor="middle" font-weight="bold">C</text>
+<polygon points="500,440 650,440 500,290" fill="rgba(241,201,125,0.07)"/>
+<line x1="500" y1="440" x2="650" y2="440" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+<line x1="500" y1="440" x2="500" y2="290" stroke="#f1c97d" stroke-width="5" stroke-linecap="round"/>
+<line x1="650" y1="440" x2="500" y2="290" stroke="#f472b6" stroke-width="3" stroke-linecap="round" opacity="0.45"/>
+<polyline points="520,440 520,420 500,420" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<circle cx="500" cy="440" r="6" fill="#f1c97d"/>
+<circle cx="650" cy="440" r="6" fill="#f1c97d"/>
+<circle cx="500" cy="290" r="6" fill="#f1c97d"/>
+<text x="595" y="500" font-family="system-ui, sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">a/b = 1</text>
+<text x="595" y="532" font-family="Noto Serif, serif" font-size="26" fill="#38bdf8" text-anchor="middle" font-style="italic">45 deg</text>
+<text x="664" y="446" font-family="system-ui, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="835" y="110" font-family="system-ui, sans-serif" font-size="24" fill="#f1c97d" text-anchor="middle" font-weight="bold">D</text>
+<polygon points="740,440 835,440 740,250" fill="rgba(241,201,125,0.07)"/>
+<line x1="740" y1="440" x2="835" y2="440" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+<line x1="740" y1="440" x2="740" y2="250" stroke="#f1c97d" stroke-width="5" stroke-linecap="round"/>
+<line x1="835" y1="440" x2="740" y2="250" stroke="#f472b6" stroke-width="3" stroke-linecap="round" opacity="0.45"/>
+<polyline points="760,440 760,420 740,420" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<circle cx="740" cy="440" r="6" fill="#f1c97d"/>
+<circle cx="835" cy="440" r="6" fill="#f1c97d"/>
+<circle cx="740" cy="250" r="6" fill="#f1c97d"/>
+<text x="835" y="500" font-family="system-ui, sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">a/b = 2</text>
+<text x="835" y="532" font-family="Noto Serif, serif" font-size="26" fill="#38bdf8" text-anchor="middle" font-style="italic">63.43 deg</text>
+<text x="849" y="446" font-family="system-ui, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="1075" y="110" font-family="system-ui, sans-serif" font-size="24" fill="#f1c97d" text-anchor="middle" font-weight="bold">E</text>
+<polygon points="980,440 1028,440 980,250" fill="rgba(241,201,125,0.07)"/>
+<line x1="980" y1="440" x2="1028" y2="440" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+<line x1="980" y1="440" x2="980" y2="250" stroke="#f1c97d" stroke-width="5" stroke-linecap="round"/>
+<line x1="1028" y1="440" x2="980" y2="250" stroke="#f472b6" stroke-width="3" stroke-linecap="round" opacity="0.45"/>
+<polyline points="1000,440 1000,420 980,420" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<circle cx="980" cy="440" r="6" fill="#f1c97d"/>
+<circle cx="1028" cy="440" r="6" fill="#f1c97d"/>
+<circle cx="980" cy="250" r="6" fill="#f1c97d"/>
+<text x="1075" y="500" font-family="system-ui, sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">a/b = 4</text>
+<text x="1075" y="532" font-family="Noto Serif, serif" font-size="26" fill="#38bdf8" text-anchor="middle" font-style="italic">75.96 deg</text>
+<text x="1042" y="446" font-family="system-ui, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text></svg>

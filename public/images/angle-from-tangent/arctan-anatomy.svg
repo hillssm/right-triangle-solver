@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>Angle from tangent: triangle anatomy</title>
+<desc>Right triangle with angle A at bottom right, showing opposite side a and adjacent side b used by arctan.</desc>
+<rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+<text x="600" y="70" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="34" fill="#f5eeda" text-anchor="middle" font-weight="bold">Arctan uses the opposite side and the adjacent side</text>
+<polygon points="400,500 850,500 400,180" fill="rgba(241,201,125,0.07)"/>
+<line x1="400" y1="500" x2="850" y2="500" stroke="#38bdf8" stroke-width="7" stroke-linecap="round"/>
+<line x1="400" y1="500" x2="400" y2="180" stroke="#f1c97d" stroke-width="7" stroke-linecap="round"/>
+<line x1="850" y1="500" x2="400" y2="180" stroke="#f472b6" stroke-width="7" stroke-linecap="round"/>
+<polyline points="428,500 428,472 400,472" stroke="#ffffff" stroke-width="3" fill="none"/>
+<circle cx="400" cy="500" r="8" fill="#f1c97d"/>
+<circle cx="850" cy="500" r="8" fill="#f1c97d"/>
+<circle cx="400" cy="180" r="8" fill="#f1c97d"/>
+<text x="372" y="545" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="bold">90 deg</text>
+<text x="882" y="515" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="372" y="168" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="bold">B</text>
+<text x="625" y="545" font-family="Noto Serif, Georgia, serif" font-size="40" fill="#38bdf8" text-anchor="middle" font-style="italic">b</text>
+<text x="360" y="340" font-family="Noto Serif, Georgia, serif" font-size="40" fill="#f1c97d" text-anchor="middle" font-style="italic">a</text>
+<text x="660" y="330" font-family="Noto Serif, Georgia, serif" font-size="40" fill="#f472b6" text-anchor="middle" font-style="italic">c</text>
+<path d="M 810 500 Q 800 470 775 460" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.7"/>
+<text x="600" y="592" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f1c97d" text-anchor="middle">a = opposite (across from angle A)</text>
+<text x="600" y="620" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#38bdf8" text-anchor="middle">b = adjacent (touches angle A)</text>
+<rect x="880" y="100" width="260" height="90" rx="12" fill="#1c1b1b" stroke="#f1c97d" stroke-width="2"/>
+<text x="1010" y="135" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle">Formula</text>
+<text x="1010" y="170" font-family="Noto Serif, Georgia, serif" font-size="28" fill="#f1c97d" text-anchor="middle" font-style="italic">A = arctan(a / b)</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>How inverse tangent works</title>
+<desc>Two-step process: divide opposite side by adjacent side, then apply arctan to get the angle.</desc>
+<rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+<text x="600" y="70" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="34" fill="#f5eeda" text-anchor="middle" font-weight="bold">Inverse tangent in two steps</text>
+<polygon points="180,480 480,480 180,200" fill="rgba(241,201,125,0.07)"/>
+<line x1="180" y1="480" x2="480" y2="480" stroke="#38bdf8" stroke-width="6" stroke-linecap="round"/>
+<line x1="180" y1="480" x2="180" y2="200" stroke="#f1c97d" stroke-width="6" stroke-linecap="round"/>
+<line x1="480" y1="480" x2="180" y2="200" stroke="#f472b6" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+<polyline points="208,480 208,452 180,452" stroke="#ffffff" stroke-width="3" fill="none"/>
+<circle cx="180" cy="480" r="7" fill="#f1c97d"/>
+<circle cx="480" cy="480" r="7" fill="#f1c97d"/>
+<circle cx="180" cy="200" r="7" fill="#f1c97d"/>
+<text x="330" y="520" font-family="Noto Serif, Georgia, serif" font-size="32" fill="#38bdf8" text-anchor="middle" font-style="italic">b = 4</text>
+<text x="145" y="340" font-family="Noto Serif, Georgia, serif" font-size="32" fill="#f1c97d" text-anchor="middle" font-style="italic">a = 3</text>
+<text x="510" y="495" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<rect x="600" y="140" width="480" height="420" rx="16" fill="#1c1b1b" stroke="#f1c97d" stroke-width="2"/>
+<text x="840" y="190" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#f1c97d" text-anchor="middle" font-weight="bold">Step 1: divide</text>
+<text x="840" y="230" font-family="Noto Serif, Georgia, serif" font-size="30" fill="#ffffff" text-anchor="middle" font-style="italic">a / b = 3 / 4 = 0.75</text>
+<text x="840" y="300" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#f1c97d" text-anchor="middle" font-weight="bold">Step 2: apply arctan</text>
+<text x="840" y="340" font-family="Noto Serif, Georgia, serif" font-size="30" fill="#ffffff" text-anchor="middle" font-style="italic">A = arctan(0.75)</text>
+<text x="840" y="410" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#f1c97d" text-anchor="middle" font-weight="bold">Step 3: read the angle</text>
+<text x="840" y="450" font-family="Noto Serif, Georgia, serif" font-size="34" fill="#38bdf8" text-anchor="middle" font-style="italic">A ~ 36.87 deg</text>
+<text x="840" y="510" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle">Hypotenuse not needed</text>
+</svg>

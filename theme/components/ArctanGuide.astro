@@ -1,0 +1,456 @@
+---
+/**
+ * ArctanGuide.astro - Educational guide for the Right Triangle Angle From Tangent Calculator page.
+ * Built from the user's actual master prompt (Page 7 of 45). EN only.
+ * Sections follow the prompt: intro, sides, tangent, derivation, calculator walkthrough,
+ * 4 foundational examples, 12 practical examples, ratio-vs-angle, units, mistakes,
+ * verification, choosing a calculator, 12 FAQs, related calculators.
+ */
+import katex from 'katex';
+import Faq from 'theme/components/Faq.astro';
+
+const rich = (s: string): string => {
+  if (!s || typeof s !== 'string') return '';
+  let out = s;
+  out = out.replace(
+    /\[\[\[(.+?)\]\]\]/g,
+    (_, l) =>
+      `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
+  );
+  out = out.replace(
+    /\[\[(.+?)\]\]/g,
+    (_, l) =>
+      `<span dir="ltr" class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>`
+  );
+  return out;
+};
+
+const imgSrc = (name: string): string => `/images/angle-from-tangent/${name}`;
+
+const faqs = [
+  {
+    q: 'What does the formula A = arctan(a / b) calculate?',
+    a: 'It calculates the acute angle A of a right triangle from the lengths of the two legs. You divide the opposite side a by the adjacent side b, then apply inverse tangent to that ratio. The result is the angle in degrees whose tangent equals a / b.',
+  },
+  {
+    q: 'How do you find an angle using inverse tangent?',
+    a: 'Measure the opposite side and the adjacent side relative to your target angle, divide the opposite by the adjacent to get the tangent ratio, then apply arctan. For example, arctan(3 / 4) is approximately 36.87 degrees.',
+  },
+  {
+    q: 'Why do I need the opposite and adjacent sides?',
+    a: 'Tangent is defined as opposite over adjacent, so these two sides are exactly what the formula needs. They are the two legs of the right triangle, and together they fully determine the shape, and therefore the angle.',
+  },
+  {
+    q: 'Can I calculate the angle without knowing the hypotenuse?',
+    a: 'Yes. That is the main advantage of this method. The hypotenuse never appears in the tangent formula, so you can skip measuring the longest side entirely and still get the exact angle.',
+  },
+  {
+    q: 'What is the difference between tangent and inverse tangent?',
+    a: 'Tangent takes an angle and returns a ratio, for example tan(45 degrees) = 1. Inverse tangent reverses this: it takes a ratio and returns the angle, for example arctan(1) = 45 degrees. The two functions undo each other.',
+  },
+  {
+    q: 'Is arctangent the same as tan inverse?',
+    a: 'Yes. Arctan(x) and tan inverse(x) are two names for the same function. Neither means the reciprocal 1 / tan(x); the reciprocal of tangent is cotangent, a different function.',
+  },
+  {
+    q: 'Can the tangent ratio be greater than 1?',
+    a: 'Yes, and this is normal. When the opposite side is longer than the adjacent side, the ratio exceeds 1 and the angle is greater than 45 degrees. Unlike sine and cosine ratios, tangent has no upper limit.',
+  },
+  {
+    q: 'What happens when the opposite and adjacent sides are equal?',
+    a: 'The ratio is 1, and arctan(1) is exactly 45 degrees. Equal legs form an isosceles right triangle, so the two acute angles are both 45 degrees.',
+  },
+  {
+    q: 'How does the side ratio affect the angle?',
+    a: 'A larger opposite-to-adjacent ratio means a larger angle. A ratio of 0.25 gives about 14.04 degrees, a ratio of 1 gives 45 degrees, and a ratio of 4 gives about 75.96 degrees. The angle grows as the opposite side grows relative to the adjacent side.',
+  },
+  {
+    q: 'How can I verify my calculated angle?',
+    a: 'Three checks work well. Compute tan(A) and confirm it equals a / b. Confirm the complementary angle B = 90 minus A makes sense. Or compute the hypotenuse with the Pythagorean theorem and confirm a squared plus b squared equals c squared.',
+  },
+  {
+    q: 'Can I use this calculator for roof pitch, ramp incline, or ladder angles?',
+    a: 'Yes, these are classic use cases. A roof rise over its horizontal run, a ramp rise over its run, or a ladder height over its base distance all give you the opposite and adjacent sides directly, which is exactly what this calculator needs.',
+  },
+  {
+    q: 'What is the difference between a percentage grade and an angle in degrees?',
+    a: 'A percentage grade is 100 times the rise-over-run ratio, while the angle is arctan of that ratio. A 5 percent grade means a ratio of 0.05, which is an angle of about 2.86 degrees, not 5 degrees.',
+  },
+];
+---
+
+<!-- Table of Contents -->
+<nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label="Guide contents">
+  <h2 class="font-headline text-2xl font-bold">In This Guide</h2>
+  <ol class="mt-4 grid gap-2 sm:grid-cols-2">
+    <li><a class="hover:text-primary hover:underline" href="#arctan-intro">How to Find an Angle Using Tangent</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arctan-sides">Understanding the Opposite and Adjacent Sides</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arctan-what">What Is Tangent in a Right Triangle?</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arctan-formula">How the Inverse Tangent Formula Works</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arctan-howto">How to Use the Calculator</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arctan-examples">Step-by-Step Examples</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arctan-applications">Real-Life Examples</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arctan-ratio">How the Ratio Affects the Angle</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arctan-units">Angle Units and Precision</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arctan-mistakes">Common Mistakes</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arctan-verify">Checking Your Answer</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arctan-choose">Choosing the Right Calculator</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arctan-faq">FAQs</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arctan-related">Related Calculators</a></li>
+  </ol>
+</nav>
+
+<!-- SECTION 1: Introduction -->
+<section id="arctan-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Find an Angle Using Tangent</h2>
+  <p>A right triangle angle from tangent calculator finds an acute angle when you know the two legs of the triangle: the opposite side and the adjacent side. It divides the opposite side by the adjacent side, then applies inverse tangent to that ratio. The result is the angle in degrees.</p>
+  <p>Picture a wheelchair ramp. You can measure how high it rises and how far it runs horizontally, but the sloping surface itself might be awkward to measure. Those two measurements, the vertical rise and the horizontal run, are the opposite and adjacent sides. Their ratio is all you need. Inverse tangent converts that ratio directly into the incline angle, with no need to measure the slope length at all.</p>
+  <p>Here <span set:html={rich('[[A]]')} /> is the angle you want, <span set:html={rich('[[a]]')} /> is the opposite side, and <span set:html={rich('[[b]]')} /> is the adjacent side. Tangent relates them as <span set:html={rich('[[\\tan(A) = a/b]]')} />, and inverse tangent reverses the relationship: <span set:html={rich('[[A = \\arctan(a/b)]]')} />. Because the hypotenuse never enters the formula, this is the natural method whenever the two legs are the measurements you actually have.</p>
+</section>
+
+<!-- SECTION 2: Understanding the sides -->
+<section id="arctan-sides" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding the Opposite and Adjacent Sides</h2>
+
+  <h3>What Is a Right Triangle?</h3>
+  <p>A right triangle has one angle of exactly 90 degrees. The other two angles are acute, meaning each is less than 90 degrees, and together they always add up to 90 degrees. The 90-degree condition is what makes the trigonometric ratios work: sine, cosine, and tangent are defined by the fixed relationships between the sides of a right triangle. Without the right angle, the ratio <span set:html={rich('[[a/b]]')} /> would not correspond to a single consistent angle.</p>
+
+  <h3>What Is the Opposite Side?</h3>
+  <p>The opposite side is the leg that lies directly across from angle <span set:html={rich('[[A]]')} />. It never touches the angle itself. In practical terms it often represents a vertical rise: the height a ladder reaches up a wall, the elevation a roof gains, or the vertical component of a crane boom. The label "opposite" depends on which angle you chose as the reference. If you switch the reference from <span set:html={rich('[[A]]')} /> to <span set:html={rich('[[B]]')} />, the side that was opposite becomes adjacent.</p>
+
+  <h3>What Is the Adjacent Side?</h3>
+  <p>The adjacent side is the leg that touches angle <span set:html={rich('[[A]]')} /> but is not the hypotenuse. It forms one edge of the angle. In field measurements it often represents a horizontal run: the ground distance from a wall to a ladder base, the horizontal span of a roof, or the run of a ramp. It is one of the two perpendicular legs, and it must not be confused with the hypotenuse, which is the side opposite the right angle.</p>
+
+  <h3>What Is the Hypotenuse?</h3>
+  <p>The hypotenuse, labelled <span set:html={rich('[[c]]')} />, is the side opposite the 90-degree angle and always the longest side of the triangle. The tangent calculator does not require its length. If you ever need it, the Pythagorean theorem gives it from the two legs: <span set:html={rich('[[c = \\sqrt{a^2 + b^2}]]')} />. But for finding the angle itself, the hypotenuse is extra information you can simply skip.</p>
+
+  <h3>Why the Reference Angle Matters</h3>
+  <p>Opposite and adjacent are defined relative to the chosen angle. In the same triangle, swapping the reference from <span set:html={rich('[[A]]')} /> to <span set:html={rich('[[B]]')} /> exchanges the roles of the two legs: the side that was opposite becomes adjacent and vice versa. Reversing the ratio from <span set:html={rich('[[a/b]]')} /> to <span set:html={rich('[[b/a]]')} /> therefore computes the complementary angle <span set:html={rich('[[B = 90^\\circ - A]]')} /> rather than <span set:html={rich('[[A]]')} />. Keeping the reference angle fixed throughout a calculation avoids this mix-up.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('arctan-anatomy.svg')} alt="Right triangle anatomy showing opposite side a, adjacent side b, and hypotenuse c for the arctan formula" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Anatomy for arctan: a is the opposite side across from angle A, b is the adjacent side touching angle A, c is the hypotenuse.</figcaption>
+  </figure>
+</section>
+
+<!-- SECTION 3: Understanding tangent -->
+<section id="arctan-what" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>What Is Tangent in a Right Triangle?</h2>
+  <p>Tangent compares the two legs of a right triangle. For angle <span set:html={rich('[[A]]')} />, it is the opposite side divided by the adjacent side:</p>
+  <p><span set:html={rich('[[[\\tan(A) = \\frac{a}{b}]]]')} /></p>
+  <p>Here <span set:html={rich('[[\\tan(A)]]')} /> is the tangent of angle <span set:html={rich('[[A]]')} />, <span set:html={rich('[[a]]')} /> is the opposite side, and <span set:html={rich('[[b]]')} /> is the adjacent side. Tangent describes how steep the triangle is: it is the ratio of the vertical leg to the horizontal leg when the triangle sits with the adjacent side as its base.</p>
+  <p>For example, when <span set:html={rich('[[a = 3]]')} /> and <span set:html={rich('[[b = 4]]')} />:</p>
+  <p><span set:html={rich('[[[\\tan(A) = \\frac{3}{4} = 0.75]]]')} /></p>
+  <p>The ratio has no physical unit. Metres divided by metres cancel out, so whether you measured in metres, feet, or centimetres, the ratio 0.75 is the same pure number.</p>
+
+  <h3>What Is Inverse Tangent?</h3>
+  <p>Ordinary tangent starts with an angle and produces a ratio. Inverse tangent starts with a ratio and returns the angle. If <span set:html={rich('[[\\tan(A) = 0.75]]')} />, then <span set:html={rich('[[A = \\arctan(0.75) \\approx 36.87^\\circ]]')} />. Inverse tangent reverses the tangent relationship, recovering the original angle from the side ratio.</p>
+
+  <h3>Is Arctangent the Same as Inverse Tangent?</h3>
+  <p>Yes. <span set:html={rich('[[\\arctan(x)]]')} /> and <span set:html={rich('[[\\tan^{-1}(x)]]')} /> are two notations for the same function. The superscript <span set:html={rich('[[-1]]')} /> does not mean the reciprocal <span set:html={rich('[[1/\\tan(x)]]')} />. The reciprocal of tangent is cotangent, a separate function.</p>
+
+  <h3>Understanding SOH-CAH-TOA</h3>
+  <p>SOH-CAH-TOA is the standard memory aid: Sine = Opposite / Hypotenuse, Cosine = Adjacent / Hypotenuse, Tangent = Opposite / Adjacent. The TOA part identifies the correct ratio for this calculator, since the known measurements are the opposite and adjacent sides.</p>
+
+  <h3>Why Tangent Does Not Require the Hypotenuse</h3>
+  <p>Tangent uses the two perpendicular legs directly, so the diagonal length is irrelevant to the calculation. Knowing the rise and run is enough to pin down the incline angle. Scaling both legs by the same positive factor leaves the ratio, and therefore the angle, unchanged: a 3-4 triangle and a 6-8 triangle have the same 36.87-degree angle.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('arctan-ratio.svg')} alt="Diagram showing the inverse tangent steps: divide a by b, then apply arctan to get angle A" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">How arctan works: divide the opposite side by the adjacent side, then apply inverse tangent to recover the angle.</figcaption>
+  </figure>
+</section>
+
+<!-- SECTION 5: Deriving the formula -->
+<section id="arctan-formula" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How the Inverse Tangent Formula Works</h2>
+  <p>Start with the definition of tangent:</p>
+  <p><span set:html={rich('[[[\\tan(A) = \\frac{a}{b}]]]')} /></p>
+  <p>The known side lengths let you compute the ratio on the right. To recover the angle, apply inverse tangent to both sides:</p>
+  <p><span set:html={rich('[[[A = \\arctan\\left(\\frac{a}{b}\\right)]]]')} /></p>
+  <p>Inverse tangent is applied to the entire ratio because the ratio as a whole is the tangent of the angle. You cannot split it across the numerator and denominator.</p>
+
+  <h3>Worked Example: Opposite Side 3 and Adjacent Side 4</h3>
+  <p>Given <span set:html={rich('[[a = 3]]')} /> cm and <span set:html={rich('[[b = 4]]')} /> cm:</p>
+  <p>Step 1: Write the formula. <span set:html={rich('[[A = \\arctan(a/b)]]')} /></p>
+  <p>Step 2: Substitute the values. <span set:html={rich('[[A = \\arctan(3/4)]]')} /></p>
+  <p>Step 3: Calculate the ratio. <span set:html={rich('[[3/4 = 0.75]]')} /></p>
+  <p>Step 4: Apply inverse tangent. <span set:html={rich('[[A = \\arctan(0.75)]]')} /></p>
+  <p>Final answer: <span set:html={rich('[[A \\approx 36.87^\\circ]]')} /></p>
+  <p>The angle is approximately 36.87 degrees. The two decimal places reflect ordinary rounding of an irrational result, not an exact closed form.</p>
+</section>
+
+<!-- SECTION 6: How to use the calculator -->
+<section id="arctan-howto" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Use the Right Triangle Angle From Tangent Calculator</h2>
+  <p>Follow these steps to match the live interface:</p>
+  <ol>
+    <li><strong>Identify the right angle.</strong> Confirm the triangle has a 90-degree corner before using any trigonometric ratio.</li>
+    <li><strong>Identify the reference angle A</strong> you want to calculate.</li>
+    <li><strong>Locate the opposite side a</strong>, the leg directly across from angle A.</li>
+    <li><strong>Locate the adjacent side b</strong>, the leg that touches angle A and is not the hypotenuse.</li>
+    <li><strong>Measure or obtain both side lengths</strong> using the same unit.</li>
+    <li><strong>Enter the opposite-side length</strong> into the corresponding field.</li>
+    <li><strong>Enter the adjacent-side length</strong> into its field.</li>
+    <li><strong>Select compatible units</strong> with the unit selectors provided by the calculator.</li>
+    <li><strong>Check that both side lengths are positive</strong> and greater than zero.</li>
+    <li><strong>Press Calculate Angle A</strong> to run the computation.</li>
+    <li><strong>Read the calculated angle</strong> in degrees.</li>
+    <li><strong>Check whether the result makes sense</strong> for the triangle: a ratio near 1 should give an angle near 45 degrees.</li>
+    <li><strong>Use Reset</strong> to clear the inputs and start a new calculation.</li>
+  </ol>
+  <p>Each step matters because a mislabeled side is the most common source of a wrong answer. Taking a moment to confirm which leg is opposite and which is adjacent prevents the most frequent error.</p>
+</section>
+
+<!-- SECTION 7: Four foundational examples -->
+<section id="arctan-examples" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Step-by-Step Examples of Finding an Angle Using Tangent</h2>
+  <p>These four examples build the core skill before the real-world applications. Each follows the same pattern: write the formula, substitute, divide, apply arctan.</p>
+
+  <h3>Example 1: A 3-4-5 Right Triangle</h3>
+  <p>Given opposite side <span set:html={rich('[[a = 3]]')} /> cm and adjacent side <span set:html={rich('[[b = 4]]')} /> cm, find angle <span set:html={rich('[[A]]')} />.</p>
+  <p>Step 1: Write the formula. <span set:html={rich('[[A = \\arctan(a/b)]]')} /></p>
+  <p>Step 2: Substitute. <span set:html={rich('[[A = \\arctan(3/4)]]')} /></p>
+  <p>Step 3: Calculate. <span set:html={rich('[[A = \\arctan(0.75)]]')} /></p>
+  <p>Final answer: <span set:html={rich('[[A \\approx 36.87^\\circ]]')} /></p>
+  <p>The hypotenuse is not needed even though this is a 3-4-5 triangle. The two legs alone determine the angle, which is why arctan is the efficient choice here.</p>
+
+  <h3>Example 2: Equal Opposite and Adjacent Sides</h3>
+  <p>Given <span set:html={rich('[[a = 5]]')} /> m and <span set:html={rich('[[b = 5]]')} /> m:</p>
+  <p><span set:html={rich('[[[A = \\arctan\\left(\\frac{5}{5}\\right) = \\arctan(1) = 45^\\circ]]]')} /></p>
+  <p>Equal legs produce an isosceles right triangle, so the two acute angles are both exactly 45 degrees.</p>
+
+  <h3>Example 3: An Angle Below 45 Degrees</h3>
+  <p>Given <span set:html={rich('[[a = 3]]')} /> m and <span set:html={rich('[[b = 6]]')} /> m:</p>
+  <p><span set:html={rich('[[[A = \\arctan\\left(\\frac{3}{6}\\right) \\approx 26.57^\\circ]]]')} /></p>
+  <p>The angle is less than 45 degrees because the opposite side is shorter than the adjacent side. A short rise over a long run makes a shallow angle.</p>
+
+  <h3>Example 4: An Angle Above 45 Degrees</h3>
+  <p>Given <span set:html={rich('[[a = 8]]')} /> ft and <span set:html={rich('[[b = 4]]')} /> ft:</p>
+  <p><span set:html={rich('[[[A = \\arctan\\left(\\frac{8}{4}\\right) \\approx 63.43^\\circ]]]')} /></p>
+  <p>The angle exceeds 45 degrees because the opposite side is longer than the adjacent side. A tall rise over a short run makes a steep angle.</p>
+</section>
+
+<!-- SECTION 8: Real-world applications -->
+<section id="arctan-applications" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Real-Life Examples of Calculating Angles Using Tangent</h2>
+  <p>Twelve fully worked practical examples. For each one, the situation is described, the triangle identified, the measurements stated, the correct sides named, the formula written and evaluated, and the result interpreted with its practical limits.</p>
+
+  <h3>Example 5: Calculating a Roof Pitch Angle</h3>
+  <p>A roof rises 4 ft vertically over a horizontal run of 12 ft. Find the angle between the roof slope and the horizontal.</p>
+  <p>Known: opposite rise <span set:html={rich('[[a = 4]]')} /> ft, adjacent run <span set:html={rich('[[b = 12]]')} /> ft. Inverse tangent is appropriate because the two perpendicular measurements are known and the slope length is not needed.</p>
+  <p><span set:html={rich('[[[A = \\arctan\\left(\\frac{4}{12}\\right) \\approx 18.43^\\circ]]]')} /></p>
+  <p>The roof rises at about 18.43 degrees above the horizontal. Note that a roof pitch expressed as 4:12 is a ratio, not an angle of 4 degrees. This geometric result is not a structural assessment.</p>
+
+  <h3>Example 6: Finding the Angle of a Ladder</h3>
+  <p>A ladder reaches 4.5 m up a wall, and its base is 2 m from the wall. Find the angle between the ladder and the ground.</p>
+  <p>Known: opposite height <span set:html={rich('[[a = 4.5]]')} /> m, adjacent ground distance <span set:html={rich('[[b = 2]]')} /> m.</p>
+  <p><span set:html={rich('[[[A = \\arctan\\left(\\frac{4.5}{2}\\right) \\approx 66.04^\\circ]]]')} /></p>
+  <p>The wall height is opposite the ground angle and the ground distance is adjacent. The calculated angle alone does not establish whether the ladder is safely positioned.</p>
+
+  <h3>Example 7: Calculating a Ramp Incline Angle</h3>
+  <p>A ramp rises 0.75 m over a horizontal run of 9 m. Find the incline angle.</p>
+  <p><span set:html={rich('[[[A = \\arctan\\left(\\frac{0.75}{9}\\right) \\approx 4.76^\\circ]]]')} /></p>
+  <p>The vertical rise and horizontal run are the correct tangent inputs. This angle does not by itself confirm accessibility or building-code compliance.</p>
+
+  <h3>Example 8: Estimating the Angle of Elevation to a Tree</h3>
+  <p>A person stands 20 m from a tree. The top of the tree is 12 m above the observation level. Calculate the angle of elevation.</p>
+  <p><span set:html={rich('[[[A = \\arctan\\left(\\frac{12}{20}\\right) \\approx 30.96^\\circ]]]')} /></p>
+  <p>The vertical height difference is the opposite side and the horizontal distance is the adjacent side. The result is the angle above the horizontal from the observation point, not the tree total height.</p>
+
+  <h3>Example 9: A Surveying Elevation Measurement</h3>
+  <p>A simplified surveying sketch records a vertical difference of 7 m and a horizontal distance of 12 m. Calculate the angle of elevation.</p>
+  <p><span set:html={rich('[[[A = \\arctan\\left(\\frac{7}{12}\\right) \\approx 30.26^\\circ]]]')} /></p>
+  <p>The elevation difference and horizontal distance form the opposite and adjacent sides. Real surveying may require instrument-height corrections and terrain adjustments beyond this simplified model.</p>
+
+  <h3>Example 10: Finding a Mechanical Support Angle</h3>
+  <p>A mechanical support has a vertical rise of 1.2 m and a horizontal run of 3.5 m. Calculate the angle relative to the horizontal.</p>
+  <p><span set:html={rich('[[[A = \\arctan\\left(\\frac{1.2}{3.5}\\right) \\approx 18.92^\\circ]]]')} /></p>
+  <p>Inverse tangent converts the two perpendicular measurements into an angle without needing the diagonal length. The calculation does not establish the support strength or suitability.</p>
+
+  <h3>Example 11: Calculating a Staircase Incline</h3>
+  <p>A simplified staircase rises 2.8 m over a horizontal run of 4 m. Calculate the overall incline angle.</p>
+  <p><span set:html={rich('[[[A = \\arctan\\left(\\frac{2.8}{4}\\right) \\approx 34.99^\\circ]]]')} /></p>
+  <p>The total vertical rise and horizontal run determine the overall angle. This simplified calculation does not verify building-code compliance or individual stair dimensions.</p>
+
+  <h3>Example 12: Finding a Guy Wire Angle</h3>
+  <p>A guy wire connects two points with a vertical separation of 10 m and a horizontal separation of 15 m. Find the angle between the wire and the horizontal.</p>
+  <p><span set:html={rich('[[[A = \\arctan\\left(\\frac{10}{15}\\right) \\approx 33.69^\\circ]]]')} /></p>
+  <p>The vertical separation is opposite the angle and the horizontal projection is adjacent. The angle calculation does not determine wire tension, anchor strength, or structural safety.</p>
+
+  <h3>Example 13: Calculating a Road Grade Angle</h3>
+  <p>A road rises 5 m over a horizontal distance of 100 m. Find the road incline angle.</p>
+  <p><span set:html={rich('[[[A = \\arctan\\left(\\frac{5}{100}\\right) \\approx 2.86^\\circ]]]')} /></p>
+  <p>The percentage grade is <span set:html={rich('[[(5/100) \\times 100 = 5\\%]]')} />. A 5 percent grade is not a 5-degree angle; the angle is arctan of the ratio, about 2.86 degrees.</p>
+
+  <h3>Example 14: Finding a Crane Boom Angle</h3>
+  <p>A simplified boom has a vertical rise of 8 m and a horizontal projection of 6 m. Find the angle relative to the horizontal.</p>
+  <p><span set:html={rich('[[[A = \\arctan\\left(\\frac{8}{6}\\right) \\approx 53.13^\\circ]]]')} /></p>
+  <p>The vertical projection is opposite and the horizontal projection is adjacent. This does not determine crane capacity or operational safety.</p>
+
+  <h3>Example 15: Calculating a Hiking Trail Incline</h3>
+  <p>A straight section of a hiking trail rises 80 m over a horizontal run of 150 m. Find the angle of incline.</p>
+  <p><span set:html={rich('[[[A = \\arctan\\left(\\frac{80}{150}\\right) \\approx 28.07^\\circ]]]')} /></p>
+  <p>The calculation uses vertical elevation gain as the opposite side and horizontal distance as the adjacent side. Real trails vary in gradient rather than forming one straight incline.</p>
+
+  <h3>Example 16: Finding an Awning Support Angle</h3>
+  <p>An awning support has a vertical rise of 1.2 m and a horizontal run of 2.4 m. Calculate the angle relative to the horizontal.</p>
+  <p><span set:html={rich('[[[A = \\arctan\\left(\\frac{1.2}{2.4}\\right) \\approx 26.57^\\circ]]]')} /></p>
+  <p>The ratio determines the angle without needing the diagonal support length. The result does not establish the support structural suitability.</p>
+
+  <h3>Practical Examples Compared</h3>
+  <div class="overflow-x-auto">
+    <table class="w-full border-collapse text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30">
+          <th class="py-2 pr-4 text-left font-semibold">Situation</th>
+          <th class="py-2 pr-4 text-left font-semibold">Opposite</th>
+          <th class="py-2 pr-4 text-left font-semibold">Adjacent</th>
+          <th class="py-2 pr-4 text-left font-semibold">Formula</th>
+          <th class="py-2 pr-4 text-left font-semibold">Angle</th>
+          <th class="py-2 text-left font-semibold">Interpretation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b border-outline-variant/20"><td class="py-2 pr-4">Roof pitch</td><td class="py-2 pr-4">4 ft</td><td class="py-2 pr-4">12 ft</td><td class="py-2 pr-4">arctan(4/12)</td><td class="py-2 pr-4">18.43&deg;</td><td class="py-2">Moderate roof slope</td></tr>
+        <tr class="border-b border-outline-variant/20"><td class="py-2 pr-4">Ladder</td><td class="py-2 pr-4">4.5 m</td><td class="py-2 pr-4">2 m</td><td class="py-2 pr-4">arctan(4.5/2)</td><td class="py-2 pr-4">66.04&deg;</td><td class="py-2">Steep ladder placement</td></tr>
+        <tr class="border-b border-outline-variant/20"><td class="py-2 pr-4">Ramp</td><td class="py-2 pr-4">0.75 m</td><td class="py-2 pr-4">9 m</td><td class="py-2 pr-4">arctan(0.75/9)</td><td class="py-2 pr-4">4.76&deg;</td><td class="py-2">Gentle incline</td></tr>
+        <tr class="border-b border-outline-variant/20"><td class="py-2 pr-4">Tree elevation</td><td class="py-2 pr-4">12 m</td><td class="py-2 pr-4">20 m</td><td class="py-2 pr-4">arctan(12/20)</td><td class="py-2 pr-4">30.96&deg;</td><td class="py-2">Viewing angle to treetop</td></tr>
+        <tr class="border-b border-outline-variant/20"><td class="py-2 pr-4">Surveying</td><td class="py-2 pr-4">7 m</td><td class="py-2 pr-4">12 m</td><td class="py-2 pr-4">arctan(7/12)</td><td class="py-2 pr-4">30.26&deg;</td><td class="py-2">Elevation angle</td></tr>
+        <tr class="border-b border-outline-variant/20"><td class="py-2 pr-4">Support brace</td><td class="py-2 pr-4">1.2 m</td><td class="py-2 pr-4">3.5 m</td><td class="py-2 pr-4">arctan(1.2/3.5)</td><td class="py-2 pr-4">18.92&deg;</td><td class="py-2">Shallow brace angle</td></tr>
+        <tr class="border-b border-outline-variant/20"><td class="py-2 pr-4">Staircase</td><td class="py-2 pr-4">2.8 m</td><td class="py-2 pr-4">4 m</td><td class="py-2 pr-4">arctan(2.8/4)</td><td class="py-2 pr-4">34.99&deg;</td><td class="py-2">Typical stair incline</td></tr>
+        <tr class="border-b border-outline-variant/20"><td class="py-2 pr-4">Guy wire</td><td class="py-2 pr-4">10 m</td><td class="py-2 pr-4">15 m</td><td class="py-2 pr-4">arctan(10/15)</td><td class="py-2 pr-4">33.69&deg;</td><td class="py-2">Wire angle to horizontal</td></tr>
+        <tr class="border-b border-outline-variant/20"><td class="py-2 pr-4">Road grade</td><td class="py-2 pr-4">5 m</td><td class="py-2 pr-4">100 m</td><td class="py-2 pr-4">arctan(5/100)</td><td class="py-2 pr-4">2.86&deg;</td><td class="py-2">5% grade road</td></tr>
+        <tr class="border-b border-outline-variant/20"><td class="py-2 pr-4">Crane boom</td><td class="py-2 pr-4">8 m</td><td class="py-2 pr-4">6 m</td><td class="py-2 pr-4">arctan(8/6)</td><td class="py-2 pr-4">53.13&deg;</td><td class="py-2">Raised boom position</td></tr>
+        <tr class="border-b border-outline-variant/20"><td class="py-2 pr-4">Hiking trail</td><td class="py-2 pr-4">80 m</td><td class="py-2 pr-4">150 m</td><td class="py-2 pr-4">arctan(80/150)</td><td class="py-2 pr-4">28.07&deg;</td><td class="py-2">Steep trail section</td></tr>
+        <tr><td class="py-2 pr-4">Awning support</td><td class="py-2 pr-4">1.2 m</td><td class="py-2 pr-4">2.4 m</td><td class="py-2 pr-4">arctan(1.2/2.4)</td><td class="py-2 pr-4">26.57&deg;</td><td class="py-2">Support diagonal angle</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('arctan-applications.svg')} alt="Four practical arctan examples: roof pitch, ladder, ramp, and tree elevation angles" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Four practical calculations: roof 18.43&deg;, ladder 66.04&deg;, ramp 4.76&deg;, tree elevation 30.96&deg;.</figcaption>
+  </figure>
+</section>
+
+<!-- SECTION 9: How the ratio changes the angle -->
+<section id="arctan-ratio" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How the Opposite-to-Adjacent Ratio Affects the Angle</h2>
+  <p>The ratio <span set:html={rich('[[a/b]]')} /> determines angle <span set:html={rich('[[A]]')} />. A small ratio produces a small acute angle, equal sides produce exactly 45 degrees, and an opposite side longer than the adjacent side produces an angle greater than 45 degrees. A ratio greater than 1 is completely valid for tangent, which sets it apart from sine and cosine. Proportional triangles share the same angles, and scaling both legs by the same positive factor leaves the angle unchanged. As the ratio grows extremely large, the angle approaches 90 degrees without reaching it for finite positive side lengths.</p>
+
+  <div class="overflow-x-auto">
+    <table class="w-full border-collapse text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30">
+          <th class="py-2 pr-4 text-left font-semibold">Opposite a</th>
+          <th class="py-2 pr-4 text-left font-semibold">Adjacent b</th>
+          <th class="py-2 pr-4 text-left font-semibold">Ratio a/b</th>
+          <th class="py-2 text-left font-semibold">Angle A</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b border-outline-variant/20"><td class="py-2 pr-4">1</td><td class="py-2 pr-4">4</td><td class="py-2 pr-4">0.25</td><td class="py-2">Approximately 14.04&deg;</td></tr>
+        <tr class="border-b border-outline-variant/20"><td class="py-2 pr-4">1</td><td class="py-2 pr-4">2</td><td class="py-2 pr-4">0.5</td><td class="py-2">Approximately 26.57&deg;</td></tr>
+        <tr class="border-b border-outline-variant/20"><td class="py-2 pr-4">1</td><td class="py-2 pr-4">1</td><td class="py-2 pr-4">1</td><td class="py-2">45&deg;</td></tr>
+        <tr class="border-b border-outline-variant/20"><td class="py-2 pr-4">2</td><td class="py-2 pr-4">1</td><td class="py-2 pr-4">2</td><td class="py-2">Approximately 63.43&deg;</td></tr>
+        <tr><td class="py-2 pr-4">4</td><td class="py-2 pr-4">1</td><td class="py-2 pr-4">4</td><td class="py-2">Approximately 75.96&deg;</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The pattern is clear: the side ratio determines the shape of the triangle, not its overall size. Double both legs and the angle stays exactly the same.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('arctan-ratio-panels.svg')} alt="Five triangles showing how the tangent ratio changes the angle from 14 to 76 degrees" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Ratio 0.25 gives 14.04&deg;, 0.5 gives 26.57&deg;, 1 gives 45&deg;, 2 gives 63.43&deg;, 4 gives 75.96&deg;.</figcaption>
+  </figure>
+</section>
+
+<!-- SECTION 10: Degrees, units, rounding -->
+<section id="arctan-units" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding Angle Units and Measurement Precision</h2>
+  <p>The calculator returns degrees. A degree is 1/360 of a full rotation. A radian is the alternative angular unit, defined so that a full rotation equals <span set:html={rich('[[2\\pi]]')} /> radians. Inverse tangent can return either unit depending on the calculator, but this tool reports degrees.</p>
+  <p>The ratio <span set:html={rich('[[a/b]]')} /> itself has no unit, and the two sides must use compatible units. Converting both measurements from metres to centimetres multiplies numerator and denominator by 100, leaving the ratio unchanged.</p>
+  <p>To convert radians to degrees: <span set:html={rich('[[\\text{Degrees} = \\text{Radians} \\times 180^\\circ / \\pi]]')} /></p>
+  <h3>Example: Does the Measurement Unit Change the Angle?</h3>
+  <p>Take <span set:html={rich('[[a = 3]]')} /> m and <span set:html={rich('[[b = 4]]')} /> m. The equivalent in centimetres is <span set:html={rich('[[a = 300]]')} /> cm and <span set:html={rich('[[b = 400]]')} /> cm. Both give the ratio 0.75 and the same angle of 36.87 degrees. Keep enough precision in intermediate steps and round the final angle to match the accuracy of the original measurements.</p>
+</section>
+
+<!-- SECTION 11: Common mistakes -->
+<section id="arctan-mistakes" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Common Mistakes When Calculating an Angle Using Tangent</h2>
+  <ol>
+    <li><strong>Using the hypotenuse instead of the adjacent side.</strong> The formula needs the leg touching angle A, not the longest side. Check: is your denominator one of the two legs?</li>
+    <li><strong>Swapping the opposite and adjacent sides.</strong> This computes the complementary angle instead. If you expected about 37 degrees and got about 53, the legs are swapped.</li>
+    <li><strong>Reversing the ratio into b/a.</strong> <span set:html={rich('[[\\arctan(b/a)]]')} /> gives <span set:html={rich('[[B]]')} />, not <span set:html={rich('[[A]]')} />. For a 3-4 triangle, arctan(4/3) is 53.13 degrees, the other acute angle.</li>
+    <li><strong>Using ordinary tangent instead of inverse tangent.</strong> Typing tan(0.75) instead of arctan(0.75) answers a different question entirely.</li>
+    <li><strong>Confusing inverse tangent with reciprocal tangent.</strong> <span set:html={rich('[[\\tan^{-1}(x)]]')} /> is not <span set:html={rich('[[1/\\tan(x)]]')} />. The reciprocal is cotangent.</li>
+    <li><strong>Assuming the tangent ratio must be between 0 and 1.</strong> It can exceed 1 freely. A ratio of 2 with angle 63.43 degrees is perfectly valid.</li>
+    <li><strong>Entering zero or negative side lengths.</strong> Side lengths must be positive. Zero or negative inputs have no geometric meaning here.</li>
+    <li><strong>Mixing incompatible measurement units.</strong> Metres for one leg and feet for the other corrupts the ratio. Convert first.</li>
+    <li><strong>Rounding the ratio too early.</strong> Rounding 0.6667 to 0.67 before applying arctan shifts the answer. Keep full precision until the final step.</li>
+    <li><strong>Reporting radians when degrees are expected.</strong> Arctan(1) is 45 degrees but 0.785 radians. Check your calculator mode.</li>
+    <li><strong>Confusing angle A with its complementary angle B.</strong> Remember <span set:html={rich('[[A + B = 90^\\circ]]')} />. If the answer looks like the "other" angle, the ratio was inverted.</li>
+    <li><strong>Treating a percentage grade as an angle in degrees.</strong> A 5% grade is arctan(0.05), about 2.86 degrees, not 5 degrees.</li>
+    <li><strong>Confusing vertical rise with sloping distance.</strong> The opposite side is the pure vertical component, not the length along the slope.</li>
+    <li><strong>Assuming the calculated angle proves a structure is safe.</strong> Geometry describes shape only. Ladder safety, roof loads, and ramp compliance need separate engineering checks.</li>
+  </ol>
+</section>
+
+<!-- SECTION 12: Verification -->
+<section id="arctan-verify" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Check Whether Your Calculated Angle Is Valid</h2>
+  <p>Valid inputs for a non-degenerate right triangle: the opposite side must be positive, the adjacent side must be positive, neither can be zero, both must use compatible units, and the resulting angle must fall strictly between 0 and 90 degrees. Unlike sine and cosine, the tangent ratio is not restricted to values below 1, so an opposite side longer than the adjacent side is fine.</p>
+
+  <h3>Method 1: Check the Tangent Ratio</h3>
+  <p>Verify <span set:html={rich('[[\\tan(A) \\approx a/b]]')} /> using the unrounded angle when possible. If tan of your answer reproduces the input ratio, the answer is consistent.</p>
+
+  <h3>Method 2: Check the Complementary Angle</h3>
+  <p>Calculate <span set:html={rich('[[B = 90^\\circ - A]]')} />. The two acute angles of a right triangle must sum to 90 degrees, so this is a quick sanity check on every result.</p>
+
+  <h3>Method 3: Use the Pythagorean Theorem</h3>
+  <p>Compute the hypotenuse <span set:html={rich('[[c = \\sqrt{a^2 + b^2}]]')} />, then confirm <span set:html={rich('[[a^2 + b^2 = c^2]]')} />.</p>
+  <p>Full check with <span set:html={rich('[[a = 3]]')} /> and <span set:html={rich('[[b = 4]]')} />: <span set:html={rich('[[c = \\sqrt{9 + 16} = 5]]')} />. The angle <span set:html={rich('[[A = \\arctan(3/4) \\approx 36.87^\\circ]]')} /> and its complement <span set:html={rich('[[B \\approx 53.13^\\circ]]')} /> sum to 90 degrees. Small differences come from rounding the displayed angle.</p>
+</section>
+
+<!-- SECTION 13: Choosing a calculator -->
+<section id="arctan-choose" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Choosing the Right Right Triangle Calculator</h2>
+  <p>Match the tool to the measurements you actually have:</p>
+  <ul>
+    <li><strong>Angle From Tangent Calculator</strong> (this page): opposite side <span set:html={rich('[[a]]')} /> and adjacent side <span set:html={rich('[[b]]')} /> known, finds angle <span set:html={rich('[[A]]')} />. Best when both legs were measured directly.</li>
+    <li><a href="/right-triangle-angle-from-sine-calculator/" class="text-primary hover:underline"><strong>Angle From Sine Calculator</strong></a>: opposite side and hypotenuse known. Best for height problems where the sloping length was measured.</li>
+    <li><a href="/right-triangle-angle-from-cosine-calculator/" class="text-primary hover:underline"><strong>Angle From Cosine Calculator</strong></a>: adjacent side and hypotenuse known. Best when the hypotenuse was measured directly along a slope.</li>
+    <li><a href="/right-triangle-angle-calculator/" class="text-primary hover:underline"><strong>Angle Calculator</strong></a>: helps you pick the right method when you are unsure which sides you have.</li>
+    <li><a href="/right-triangle-missing-angle-calculator/" class="text-primary hover:underline"><strong>Missing Angle Calculator</strong></a>: finds the complementary angle when one acute angle is already known.</li>
+    <li><a href="/right-triangle-side-calculator/" class="text-primary hover:underline"><strong>Side Calculator</strong></a>: finds missing side lengths rather than angles.</li>
+  </ul>
+  <p>All three inverse functions agree on the same triangle: for a 3-4-5 triangle, arctan(3/4), arcsin(3/5), and arccos(4/5) all give 36.87 degrees. If two methods disagree, a side is mislabeled.</p>
+</section>
+
+<!-- SECTION 14: FAQs -->
+<section id="arctan-faq" class="mx-auto mt-12 w-full max-w-4xl section-shell scroll-mt-24">
+  <Faq heading="Frequently Asked Questions" items={faqs} />
+</section>
+
+<!-- SECTION 15: Related calculators -->
+<section id="arctan-related" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Explore Related Triangle Calculators</h2>
+  <p>These tools cover the neighboring calculations:</p>
+  <ol class="related-directory">
+    <li><a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">Right Triangle Angle Calculator</a>: choose the right method for any known-side combination.</li>
+    <li><a href="/right-triangle-angle-from-sine-calculator/" class="text-primary hover:underline">Right Triangle Angle From Sine Calculator</a>: finds the angle from the opposite side and hypotenuse.</li>
+    <li><a href="/right-triangle-angle-from-cosine-calculator/" class="text-primary hover:underline">Right Triangle Angle From Cosine Calculator</a>: finds the angle from the adjacent side and hypotenuse.</li>
+    <li><a href="/right-triangle-missing-angle-calculator/" class="text-primary hover:underline">Right Triangle Missing Angle Calculator</a>: finds the complementary acute angle.</li>
+    <li><a href="/tangent-ratio-calculator/" class="text-primary hover:underline">Tangent Ratio Calculator</a>: computes tan(A) = a/b from the two legs.</li>
+    <li><a href="/right-triangle-side-from-tangent-calculator/" class="text-primary hover:underline">Right Triangle Side From Tangent Calculator</a>: finds a missing leg from a known angle.</li>
+    <li><a href="/right-triangle-side-calculator/" class="text-primary hover:underline">Right Triangle Side Calculator</a>: solves for any missing side length.</li>
+    <li><a href="/special-right-triangle-calculator/" class="text-primary hover:underline">Special Right Triangle Calculator</a>: exact values for 30-60-90 and 45-45-90 triangles.</li>
+  </ol>
+</section>
+
+<!-- Conclusion -->
+<section class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Find Any Angle From Tangent With Confidence</h2>
+  <p>The inverse tangent formula turns two simple leg measurements into a precise angle. Measure the opposite side and the adjacent side, divide, apply arctan, and verify with the complementary angle or the Pythagorean theorem. Whether the task is a roof pitch, a ramp incline, or a ladder placement, the method is the same: match the ratio to the angle, and let the geometry do the rest.</p>
+</section>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="44" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">Sine and Cosecant Are Reciprocals</text>
+
+  <!-- Stage 1: 3-4-5 triangle -->
+  <text x="60" y="92" font-size="22" font-weight="700" fill="#f1c97d">1. Identify the sides</text>
+  <line x1="90" y1="470" x2="270" y2="335" stroke="#f472b6" stroke-width="8"/>
+  <line x1="90" y1="470" x2="270" y2="470" stroke="#38bdf8" stroke-width="8"/>
+  <line x1="270" y1="470" x2="270" y2="335" stroke="#f1c97d" stroke-width="8"/>
+  <polyline points="254,470 254,454 270,454" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polyline points="140,470 139.4,462.2 137.6,454.5 134.6,447.3 130,440" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="90" cy="470" r="5.5" fill="#ffffff"/>
+  <circle cx="270" cy="470" r="5.5" fill="#ffffff"/>
+  <circle cx="270" cy="335" r="5.5" fill="#ffffff"/>
+  <text x="64" y="500" font-size="21" font-weight="700" fill="#ffffff">A</text>
+  <text x="282" y="408" font-size="20" fill="#f1c97d">a = 3</text>
+  <text x="170" y="498" font-size="20" fill="#38bdf8">b = 4</text>
+  <text x="132" y="392" font-size="20" fill="#f472b6">c = 5</text>
+
+  <!-- Arrow 1 -->
+  <polygon points="375,292 410,292 410,282 435,300 410,318 410,308 375,308" fill="#f1c97d"/>
+
+  <!-- Stage 2: sine -->
+  <text x="440" y="92" font-size="22" font-weight="700" fill="#f1c97d">2. Calculate sine</text>
+  <text x="590" y="252" font-size="26" fill="#ffffff" text-anchor="middle">sin(A) = a / c</text>
+  <text x="590" y="302" font-size="26" fill="#ffffff" text-anchor="middle">= 3 / 5</text>
+  <text x="590" y="360" font-size="34" font-weight="700" fill="#38bdf8" text-anchor="middle">= 0.6</text>
+
+  <!-- Arrow 2 -->
+  <polygon points="755,292 790,292 790,282 815,300 790,318 790,308 755,308" fill="#f1c97d"/>
+
+  <!-- Stage 3: cosecant -->
+  <text x="810" y="92" font-size="22" font-weight="700" fill="#f1c97d">3. Calculate cosecant</text>
+  <text x="970" y="252" font-size="26" fill="#ffffff" text-anchor="middle">csc(A) = c / a</text>
+  <text x="970" y="302" font-size="26" fill="#ffffff" text-anchor="middle">= 5 / 3</text>
+  <text x="970" y="360" font-size="34" font-weight="700" fill="#f1c97d" text-anchor="middle">= 1.6667</text>
+
+  <!-- Identity banner -->
+  <rect x="330" y="505" width="540" height="80" rx="12" fill="#1c1b1b" stroke="#f1c97d" stroke-width="1.5"/>
+  <text x="600" y="555" font-size="28" font-weight="700" text-anchor="middle"><tspan fill="#ffffff">csc(A) = </tspan><tspan fill="#f1c97d">1 / sin(A)</tspan></text>
+
+  <text x="600" y="612" font-size="17" fill="#d4d4d4" text-anchor="middle">Taking the reciprocal reverses the fraction: sine and cosecant describe the same triangle.</text>
+</svg>

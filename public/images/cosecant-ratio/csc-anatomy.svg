@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="48" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">Anatomy of a Right Triangle for Cosecant</text>
+
+  <!-- Formula annotation box -->
+  <rect x="30" y="110" width="232" height="118" rx="10" fill="#1c1b1b" stroke="#f1c97d" stroke-width="1.5"/>
+  <text x="146" y="152" font-size="25" font-weight="700" fill="#ffffff" text-anchor="middle">csc(A) = c / a</text>
+  <text x="146" y="184" font-size="17" fill="#f472b6" text-anchor="middle">c = hypotenuse</text>
+  <text x="146" y="208" font-size="17" fill="#f1c97d" text-anchor="middle">a = opposite side</text>
+
+  <!-- Triangle: A bottom-left (240,560), right angle C bottom-right (960,560), B top (960,100) -->
+  <line x1="240" y1="560" x2="960" y2="100" stroke="#f472b6" stroke-width="9"/>
+  <line x1="240" y1="560" x2="960" y2="560" stroke="#38bdf8" stroke-width="9"/>
+  <line x1="960" y1="560" x2="960" y2="100" stroke="#f1c97d" stroke-width="9"/>
+
+  <!-- Side labels -->
+  <text x="600" y="312" font-size="22" fill="#f472b6" text-anchor="middle">c (hypotenuse)</text>
+  <text x="984" y="332" font-size="22" fill="#f1c97d" text-anchor="start">a (opposite)</text>
+  <text x="600" y="600" font-size="22" fill="#38bdf8" text-anchor="middle">b (adjacent)</text>
+
+  <!-- Right-angle marker at C -->
+  <polyline points="936,560 936,536 960,536" fill="none" stroke="#ffffff" stroke-width="3"/>
+
+  <!-- Angle arc at A (polyline approximation) -->
+  <polyline points="302,560 301.4,551.4 299.6,542.9 296.7,534.8 292.3,526.6" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+
+  <!-- Vertex dots -->
+  <circle cx="240" cy="560" r="6.5" fill="#ffffff"/>
+  <circle cx="960" cy="560" r="6.5" fill="#ffffff"/>
+  <circle cx="960" cy="100" r="6.5" fill="#ffffff"/>
+
+  <!-- Vertex labels -->
+  <text x="204" y="594" font-size="26" font-weight="700" fill="#ffffff">A</text>
+  <text x="966" y="86" font-size="26" font-weight="700" fill="#ffffff">B</text>
+  <text x="966" y="596" font-size="26" font-weight="700" fill="#ffffff">C</text>
+
+  <text x="600" y="614" font-size="17" fill="#d4d4d4" text-anchor="middle">Cosecant uses the hypotenuse c and the opposite side a. The adjacent side b is not used in the formula.</text>
+</svg>

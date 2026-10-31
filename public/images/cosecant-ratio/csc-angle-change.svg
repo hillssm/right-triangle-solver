@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="40" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">How Cosecant Changes as the Angle Changes</text>
+  <line x1="400" y1="64" x2="400" y2="580" stroke="#262626" stroke-width="2"/>
+  <line x1="800" y1="64" x2="800" y2="580" stroke="#262626" stroke-width="2"/>
+
+  <!-- Panel A: 30 degrees -->
+  <text x="200" y="80" font-size="23" font-weight="700" fill="#ffffff" text-anchor="middle">A = 30°</text>
+  <line x1="20" y1="470" x2="380" y2="262" stroke="#f472b6" stroke-width="8"/>
+  <line x1="20" y1="470" x2="380" y2="470" stroke="#38bdf8" stroke-width="8"/>
+  <line x1="380" y1="470" x2="380" y2="262" stroke="#f1c97d" stroke-width="8"/>
+  <polyline points="364,470 364,454 380,454" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polyline points="70,470 69.2,461.3 67,452.9 63.3,445" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="20" cy="470" r="5" fill="#ffffff"/>
+  <circle cx="380" cy="470" r="5" fill="#ffffff"/>
+  <circle cx="380" cy="262" r="5" fill="#ffffff"/>
+  <text x="8" y="500" font-size="21" font-weight="700" fill="#ffffff">A</text>
+  <text x="80" y="462" font-size="19" fill="#ffffff">30°</text>
+  <text x="372" y="366" font-size="20" fill="#f1c97d" text-anchor="end">a = 1</text>
+  <text x="200" y="348" font-size="20" fill="#f472b6" text-anchor="middle">c = 2</text>
+  <text x="200" y="500" font-size="20" fill="#38bdf8" text-anchor="middle">b = √3</text>
+  <text x="200" y="530" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle">csc(A) = c/a = 2/1 = 2</text>
+
+  <!-- Panel B: 45 degrees -->
+  <text x="600" y="80" font-size="23" font-weight="700" fill="#ffffff" text-anchor="middle">A = 45°</text>
+  <line x1="496" y1="470" x2="704" y2="262" stroke="#f472b6" stroke-width="8"/>
+  <line x1="496" y1="470" x2="704" y2="470" stroke="#38bdf8" stroke-width="8"/>
+  <line x1="704" y1="470" x2="704" y2="262" stroke="#f1c97d" stroke-width="8"/>
+  <polyline points="688,470 688,454 704,454" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polyline points="546,470 544.3,457.1 539.3,445 531.4,434.6" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="496" cy="470" r="5" fill="#ffffff"/>
+  <circle cx="704" cy="470" r="5" fill="#ffffff"/>
+  <circle cx="704" cy="262" r="5" fill="#ffffff"/>
+  <text x="484" y="500" font-size="21" font-weight="700" fill="#ffffff">A</text>
+  <text x="556" y="462" font-size="19" fill="#ffffff">45°</text>
+  <text x="676" y="366" font-size="20" fill="#f1c97d" text-anchor="end">a = 1</text>
+  <text x="600" y="348" font-size="20" fill="#f472b6" text-anchor="middle">c = √2</text>
+  <text x="600" y="500" font-size="20" fill="#38bdf8" text-anchor="middle">b = 1</text>
+  <text x="600" y="530" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle">csc(A) = √2/1 ≈ 1.4142</text>
+
+  <!-- Panel C: 60 degrees -->
+  <text x="1000" y="80" font-size="23" font-weight="700" fill="#ffffff" text-anchor="middle">A = 60°</text>
+  <line x1="896" y1="470" x2="1104" y2="110" stroke="#f472b6" stroke-width="8"/>
+  <line x1="896" y1="470" x2="1104" y2="470" stroke="#38bdf8" stroke-width="8"/>
+  <line x1="1104" y1="470" x2="1104" y2="110" stroke="#f1c97d" stroke-width="8"/>
+  <polyline points="1088,470 1088,454 1104,454" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polyline points="946,470 943,452.9 934.3,437.9 921,426.7" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="896" cy="470" r="5" fill="#ffffff"/>
+  <circle cx="1104" cy="470" r="5" fill="#ffffff"/>
+  <circle cx="1104" cy="110" r="5" fill="#ffffff"/>
+  <text x="884" y="500" font-size="21" font-weight="700" fill="#ffffff">A</text>
+  <text x="956" y="460" font-size="19" fill="#ffffff">60°</text>
+  <text x="1076" y="290" font-size="20" fill="#f1c97d" text-anchor="end">a = √3</text>
+  <text x="1000" y="272" font-size="20" fill="#f472b6" text-anchor="middle">c = 2</text>
+  <text x="1000" y="500" font-size="20" fill="#38bdf8" text-anchor="middle">b = 1</text>
+  <text x="1000" y="530" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle">csc(A) = 2/√3 ≈ 1.1547</text>
+
+  <text x="600" y="576" font-size="18" fill="#d4d4d4" text-anchor="middle">As the opposite side becomes a larger share of the hypotenuse, the cosecant ratio moves closer to 1.</text>
+</svg>

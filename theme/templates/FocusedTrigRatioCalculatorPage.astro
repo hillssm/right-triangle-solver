@@ -8,6 +8,7 @@ import {
 import { getFormulaBySlug } from 'src/data/rightTriangleFormulas';
 import FormulaCalculator from 'theme/components/FormulaCalculator.astro';
 import Faq from 'theme/components/Faq.astro';
+import CosecantRatioGuide from 'theme/components/CosecantRatioGuide.astro';
 import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
@@ -20,6 +21,7 @@ interface Props {
 }
 
 const { page, locale = DEFAULT_LOCALE } = Astro.props;
+const isCosecantPage = page.slug === 'cosecant-ratio-calculator' && locale === 'en';
 const trigUi = getFocusedTrigRatioUi(locale);
 const runtimeTranslations = getFocusedTrigRatioRuntimeTranslations(page, locale);
 const sharedCalculatorUi = getFocusedSideCalculatorUi(locale);
@@ -258,6 +260,8 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
   />
 
   <!-- Intro -->
+  {!isCosecantPage && (
+  <>
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={page.introHeading} />
     {page.intro.map((paragraph) => (
@@ -501,4 +505,8 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
       ))}
     </div>
   </section>
+  </>
+  )}
+
+  {page.slug === 'cosecant-ratio-calculator' && locale === 'en' ? <CosecantRatioGuide /> : null}
 </BaseLayout>

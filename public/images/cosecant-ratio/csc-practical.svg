@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="36" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Four Practical Cosecant Calculations</text>
+
+  <!-- Panel 1: Ladder (px=8, py=62) -->
+  <rect x="8" y="62" width="584" height="280" rx="10" fill="#1c1b1b" stroke="#3a3a3a" stroke-width="1"/>
+  <text x="26" y="88" font-size="22" font-weight="700" fill="#ffffff">Ladder</text>
+  <text x="26" y="114" font-size="15.5" fill="#a3a3a3">c = 5.5 m, a = 4.5 m</text>
+  <line x1="34" y1="284" x2="234" y2="134" stroke="#f472b6" stroke-width="7"/>
+  <line x1="34" y1="284" x2="234" y2="284" stroke="#38bdf8" stroke-width="7"/>
+  <line x1="234" y1="284" x2="234" y2="134" stroke="#f1c97d" stroke-width="7"/>
+  <polyline points="220,284 220,270 234,270" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="34" cy="284" r="5" fill="#ffffff"/>
+  <circle cx="234" cy="284" r="5" fill="#ffffff"/>
+  <circle cx="234" cy="134" r="5" fill="#ffffff"/>
+  <text x="18" y="310" font-size="18" fill="#ffffff">A</text>
+  <text x="242" y="214" font-size="18" fill="#f1c97d">a</text>
+  <text x="112" y="200" font-size="18" fill="#f472b6">c</text>
+  <text x="134" y="308" font-size="18" fill="#38bdf8">b</text>
+  <text x="308" y="182" font-size="20" fill="#ffffff">csc(A) = 5.5 / 4.5</text>
+  <text x="308" y="214" font-size="26" font-weight="700" fill="#f1c97d">= 1.2222</text>
+  <text x="308" y="244" font-size="16" fill="#d4d4d4">Ladder length is about</text>
+  <text x="308" y="266" font-size="16" fill="#d4d4d4">1.2222 times the height.</text>
+
+  <!-- Panel 2: Rafter (px=608, py=62) -->
+  <rect x="608" y="62" width="584" height="280" rx="10" fill="#1c1b1b" stroke="#3a3a3a" stroke-width="1"/>
+  <text x="626" y="88" font-size="22" font-weight="700" fill="#ffffff">Roof rafter</text>
+  <text x="626" y="114" font-size="15.5" fill="#a3a3a3">c = 6.5 m, a = 4 m</text>
+  <line x1="634" y1="284" x2="864" y2="134" stroke="#f472b6" stroke-width="7"/>
+  <line x1="634" y1="284" x2="864" y2="284" stroke="#38bdf8" stroke-width="7"/>
+  <line x1="864" y1="284" x2="864" y2="134" stroke="#f1c97d" stroke-width="7"/>
+  <polyline points="850,284 850,270 864,270" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="634" cy="284" r="5" fill="#ffffff"/>
+  <circle cx="864" cy="284" r="5" fill="#ffffff"/>
+  <circle cx="864" cy="134" r="5" fill="#ffffff"/>
+  <text x="618" y="310" font-size="18" fill="#ffffff">A</text>
+  <text x="872" y="214" font-size="18" fill="#f1c97d">a</text>
+  <text x="722" y="200" font-size="18" fill="#f472b6">c</text>
+  <text x="749" y="308" font-size="18" fill="#38bdf8">b</text>
+  <text x="908" y="182" font-size="20" fill="#ffffff">csc(A) = 6.5 / 4</text>
+  <text x="908" y="214" font-size="26" font-weight="700" fill="#f1c97d">= 1.625</text>
+  <text x="908" y="244" font-size="16" fill="#d4d4d4">Rafter length equals</text>
+  <text x="908" y="266" font-size="16" fill="#d4d4d4">1.625 times the rise.</text>
+
+  <!-- Panel 3: Ramp (px=8, py=348) -->
+  <rect x="8" y="348" width="584" height="280" rx="10" fill="#1c1b1b" stroke="#3a3a3a" stroke-width="1"/>
+  <text x="26" y="374" font-size="22" font-weight="700" fill="#ffffff">Ramp</text>
+  <text x="26" y="400" font-size="15.5" fill="#a3a3a3">c = 9.5 m, a = 0.75 m</text>
+  <line x1="34" y1="570" x2="284" y2="500" stroke="#f472b6" stroke-width="7"/>
+  <line x1="34" y1="570" x2="284" y2="570" stroke="#38bdf8" stroke-width="7"/>
+  <line x1="284" y1="570" x2="284" y2="500" stroke="#f1c97d" stroke-width="7"/>
+  <polyline points="270,570 270,556 284,556" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="34" cy="570" r="5" fill="#ffffff"/>
+  <circle cx="284" cy="570" r="5" fill="#ffffff"/>
+  <circle cx="284" cy="500" r="5" fill="#ffffff"/>
+  <text x="18" y="596" font-size="18" fill="#ffffff">A</text>
+  <text x="292" y="540" font-size="18" fill="#f1c97d">a</text>
+  <text x="140" y="520" font-size="18" fill="#f472b6">c</text>
+  <text x="159" y="594" font-size="18" fill="#38bdf8">b</text>
+  <text x="308" y="468" font-size="20" fill="#ffffff">csc(A) = 9.5 / 0.75</text>
+  <text x="308" y="500" font-size="26" font-weight="700" fill="#f1c97d">= 12.6667</text>
+  <text x="308" y="530" font-size="16" fill="#d4d4d4">Slope length is about</text>
+  <text x="308" y="552" font-size="16" fill="#d4d4d4">12.6667 times the rise.</text>
+
+  <!-- Panel 4: Surveying (px=608, py=348) -->
+  <rect x="608" y="348" width="584" height="280" rx="10" fill="#1c1b1b" stroke="#3a3a3a" stroke-width="1"/>
+  <text x="626" y="374" font-size="22" font-weight="700" fill="#ffffff">Surveying</text>
+  <text x="626" y="400" font-size="15.5" fill="#a3a3a3">c = 50 m, a = 30 m</text>
+  <line x1="634" y1="570" x2="864" y2="420" stroke="#f472b6" stroke-width="7"/>
+  <line x1="634" y1="570" x2="864" y2="570" stroke="#38bdf8" stroke-width="7"/>
+  <line x1="864" y1="570" x2="864" y2="420" stroke="#f1c97d" stroke-width="7"/>
+  <polyline points="850,570 850,556 864,556" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="634" cy="570" r="5" fill="#ffffff"/>
+  <circle cx="864" cy="570" r="5" fill="#ffffff"/>
+  <circle cx="864" cy="420" r="5" fill="#ffffff"/>
+  <text x="618" y="596" font-size="18" fill="#ffffff">A</text>
+  <text x="872" y="500" font-size="18" fill="#f1c97d">a</text>
+  <text x="722" y="486" font-size="18" fill="#f472b6">c</text>
+  <text x="749" y="594" font-size="18" fill="#38bdf8">b</text>
+  <text x="908" y="468" font-size="20" fill="#ffffff">csc(A) = 50 / 30</text>
+  <text x="908" y="500" font-size="26" font-weight="700" fill="#f1c97d">= 1.6667</text>
+  <text x="908" y="530" font-size="16" fill="#d4d4d4">Sloping distance is about</text>
+  <text x="908" y="552" font-size="16" fill="#d4d4d4">1.6667 times the drop.</text>
+</svg>

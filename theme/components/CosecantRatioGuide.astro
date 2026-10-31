@@ -1,0 +1,510 @@
+---
+/**
+ * CosecantRatioGuide.astro - Educational guide for the Cosecant Ratio Calculator page.
+ * Built from the user's actual master prompt (Page 9 of 45). EN only.
+ * Sections follow the prompt: intro, triangle anatomy, what is cosecant,
+ * formula derivation, calculator walkthrough, 4 foundational examples,
+ * 12 practical examples, angle relationship, reverse formula, 15 mistakes,
+ * verification, ratio comparison, 12 FAQs, related calculators.
+ */
+import katex from 'katex';
+import Faq from 'theme/components/Faq.astro';
+
+const rich = (s: string): string => {
+  if (!s || typeof s !== 'string') return '';
+  let out = s;
+  out = out.replace(
+    /\[\[\[(.+?)\]\]\]/g,
+    (_, l) =>
+      `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
+  );
+  out = out.replace(
+    /\[\[(.+?)\]\]/g,
+    (_, l) =>
+      `<span dir="ltr" class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>`
+  );
+  return out;
+};
+
+const imgSrc = (name: string): string => `/images/cosecant-ratio/${name}`;
+
+const faqs = [
+  {
+    question: 'What is the formula for cosecant in a right triangle?',
+    answer: 'The formula is csc(A) = c / a: divide the hypotenuse by the side opposite angle A. For a hypotenuse of 5 and an opposite side of 3, the result is 5/3, about 1.6667. The same value comes from the reciprocal identity csc(A) = 1 / sin(A).',
+  },
+  {
+    question: 'How is cosecant related to sine?',
+    answer: 'Cosecant is the reciprocal of sine: csc(A) = 1 / sin(A). Sine divides the opposite side by the hypotenuse; cosecant flips that fraction. Both describe the same triangle, and their product is always 1. If sin(A) = 0.6, then csc(A) = 1 / 0.6, about 1.6667.',
+  },
+  {
+    question: 'Why is cosecant greater than 1 in a valid right triangle?',
+    answer: 'In a valid, non-degenerate right triangle the hypotenuse is the longest side, so c exceeds a, and a larger number divided by a smaller positive one is always above 1. A ratio of 1 or less signals reversed inputs, a wrong side label, or impossible measurements.',
+  },
+  {
+    question: 'What is the difference between cosecant and secant?',
+    answer: 'Cosecant divides the hypotenuse by the opposite side (c/a), while secant divides the hypotenuse by the adjacent side (c/b). Cosecant is the reciprocal of sine; secant is the reciprocal of cosine. They answer different questions, so swapping them gives a wrong answer whenever the opposite and adjacent sides differ.',
+  },
+  {
+    question: 'What is the cosecant of a 30-degree angle?',
+    answer: 'The cosecant of 30 degrees is exactly 2, because the side opposite 30 degrees is half the hypotenuse: c/a = 2/1 = 2. Check: sin(30 degrees) = 0.5, and 1 / 0.5 = 2. It is one of the few cosecant values worth memorizing.',
+  },
+  {
+    question: 'Does the cosecant ratio have units?',
+    answer: 'No. Both the hypotenuse and the opposite side are measured in the same unit, so the units cancel during division. Whether the sides are in centimetres, metres, or millimetres, the cosecant ratio is a pure dimensionless number. Never report it with degrees, metres, or feet attached.',
+  },
+  {
+    question: 'Can cosecant be less than 1?',
+    answer: 'Not for a valid, non-degenerate right triangle. Since the hypotenuse is longer than the opposite side, c/a must exceed 1. A result of 1 or less almost always means the two inputs were swapped, so the tool computed a/c (which is sine) instead of c/a. Recheck which measurement is the hypotenuse.',
+  },
+  {
+    question: 'How do you calculate cosecant from side lengths?',
+    answer: 'Identify the hypotenuse c and the opposite side a, confirm both use the same unit and that c is longer than a, then compute csc(A) = c / a. With c = 13 m and a = 5 m, the answer is 13/5 = 2.6.',
+  },
+  {
+    question: 'How can you find the hypotenuse using cosecant?',
+    answer: 'Rearrange the formula to c = a x csc(A). Multiply the known opposite side by the cosecant ratio. If a = 6 m and csc(A) = 2.5, then c = 6 x 2.5 = 15 m. The result is always longer than the opposite side, which is a quick sanity check on the arithmetic.',
+  },
+  {
+    question: 'Does the cosecant calculator need an angle input?',
+    answer: 'No. The calculator needs only two side lengths: the hypotenuse and the opposite side. The ratio c/a is fully determined by those measurements, so angle A never enters the calculation.',
+  },
+  {
+    question: 'How does cosecant change when the angle increases?',
+    answer: 'Cosecant decreases as the acute angle grows. A small angle has a short opposite side relative to the hypotenuse, so the ratio is large; a large angle has an opposite side nearly as long as the hypotenuse, so the ratio sits just above 1. For example, csc(30 deg) = 2, csc(45 deg) is about 1.4142, and csc(60 deg) about 1.1547.',
+  },
+  {
+    question: 'When should I use cosecant instead of sine?',
+    answer: 'Use cosecant when you need hypotenuse-over-opposite: in formulas built around cosecant, in reciprocal-identity work, or when a problem gives a cosecant value and asks for a side. For direct measurement problems sine is usually the more natural choice.',
+  },
+];
+---
+
+<!-- Table of Contents -->
+<nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label="Guide contents">
+  <h2 class="font-headline text-2xl font-bold">In This Guide</h2>
+  <ol class="mt-4 grid gap-2 sm:grid-cols-2">
+    <li><a class="hover:text-primary hover:underline" href="#csc-intro">What Is a Cosecant Ratio Calculator?</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#csc-triangle">Understanding the Hypotenuse and Opposite Side</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#csc-whatis">Understanding Cosecant in Trigonometry</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#csc-formula">The Cosecant Formula Explained Step by Step</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#csc-howto">How to Use the Calculator</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#csc-examples">Step-by-Step Examples</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#csc-applications">Real-Life Examples</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#csc-angle">Cosecant and Angle Size</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#csc-recover">Finding the Hypotenuse With Cosecant</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#csc-mistakes">Common Mistakes</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#csc-verify">Checking Your Result</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#csc-vs">Cosecant vs. Other Ratios</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#csc-faq">FAQs</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#csc-related">Related Calculators</a></li>
+  </ol>
+</nav>
+
+<!-- SECTION 1: Introduction -->
+<section id="csc-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>What Is a Cosecant Ratio Calculator?</h2>
+  <p>A cosecant ratio calculator finds the cosecant of an acute angle in a right triangle from two side lengths: the hypotenuse <span set:html={rich('[[c]]')} /> and the opposite side <span set:html={rich('[[a]]')} />. It divides the first by the second, giving <span set:html={rich('[[\\csc(A)=c/a]]')} />. Cosecant is the reciprocal of sine: wherever sine gives opposite over hypotenuse, cosecant gives hypotenuse over opposite, so the two values always multiply to 1.</p>
+  <p>The calculator needs no angle input and no adjacent side, because the ratio <span set:html={rich('[[c/a]]')} /> is fully determined by those two lengths. The answer is a pure number with no units, since centimetres divided by centimetres cancel out, and it describes the hypotenuse as a multiple of the opposite side. For a 5 cm hypotenuse and a 3 cm opposite side, <span set:html={rich('[[\\csc(A)=5/3\\approx1.6667]]')} />, meaning the hypotenuse is about 1.67 times the opposite side.</p>
+</section>
+
+<!-- SECTION 2: Understanding the right triangle -->
+<section id="csc-triangle" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding the Hypotenuse and Opposite Side</h2>
+
+  <h3>What Is a Right Triangle?</h3>
+  <p>A right triangle has one angle of exactly <span set:html={rich('[[90^\\circ]]')} />, the angle between two perpendicular lines, like a wall meeting a level floor. The hypotenuse sits opposite that right angle and is always the longest side. Because the three angles must total <span set:html={rich('[[180^\\circ]]')} />, the remaining two angles share exactly 90 degrees and are therefore both acute. Cosecant belongs to this geometry because its formula compares two of those sides, the hypotenuse and the opposite side, in a fixed relationship.</p>
+
+  <h3>What Is the Opposite Side?</h3>
+  <p>The opposite side is the side directly across from the reference angle <span set:html={rich('[[A]]')} />: it is the one side of the triangle that does not touch the vertex of <span set:html={rich('[[A]]')} />. Which side counts as opposite depends on the reference angle, so switching from angle <span set:html={rich('[[A]]')} /> to angle <span set:html={rich('[[B]]')} /> swaps the labels of the two legs. In practical problems the opposite side often represents a vertical height, an elevation difference, or the perpendicular leg of a structure. Getting the reference angle right matters, because the wrong angle silently swaps the opposite and adjacent sides.</p>
+
+  <h3>What Is the Hypotenuse?</h3>
+  <p>The hypotenuse is the side opposite the right angle, and two facts identify it in any diagram, however the triangle is rotated: it faces the small square marking the <span set:html={rich('[[90^\\circ]]')} /> corner, and it is the longest side. In a valid, non-degenerate triangle it is strictly longer than either leg. In real settings it may represent a ladder leaning on a wall, a sloping distance, a line of sight, a roof rafter, or a diagonal support.</p>
+
+  <h3>What Is the Adjacent Side?</h3>
+  <p>The adjacent side <span set:html={rich('[[b]]')} /> is the leg that touches angle <span set:html={rich('[[A]]')} /> without being the hypotenuse. It plays no role in the cosecant formula, which is why the calculator never asks for it. Side <span set:html={rich('[[b]]')} /> becomes relevant for cosine, tangent, secant, and cotangent, so keep it in mind when a different ratio is the goal.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('csc-anatomy.svg')} alt="Right triangle with angle A bottom-left, gold opposite side a, blue adjacent b, pink hypotenuse c, formula csc(A)=c/a" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Angle A sits at the bottom-left; cosecant uses the hypotenuse c and the opposite side a, not the adjacent side b.</figcaption>
+  </figure>
+</section>
+
+<!-- SECTION 3: What is cosecant -->
+<section id="csc-whatis" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding Cosecant in Trigonometry</h2>
+  <p>Cosecant compares the complete sloping side of a right triangle with the side opposite the reference angle:</p>
+  <p><span set:html={rich('[[[\\csc(A)=\\frac{c}{a}]]]')} /></p>
+  <p>Here <span set:html={rich('[[\\csc(A)]]')} /> is the cosecant of angle <span set:html={rich('[[A]]')} />, <span set:html={rich('[[c]]')} /> is the hypotenuse, and <span set:html={rich('[[a]]')} /> is the opposite side. The ratio answers one question: how many opposite-side lengths fit into the hypotenuse?</p>
+
+  <h3>Cosecant as the Reciprocal of Sine</h3>
+  <p>Start with the sine formula:</p>
+  <p><span set:html={rich('[[[\\sin(A)=\\frac{a}{c}]]]')} /></p>
+  <p>Taking the reciprocal reverses the fraction, moving the hypotenuse into the numerator and the opposite side into the denominator:</p>
+  <p><span set:html={rich('[[[\\frac{1}{\\sin(A)}=\\frac{c}{a}]]]')} /></p>
+  <p>Since cosecant is defined as the reciprocal of sine:</p>
+  <p><span set:html={rich('[[[\\boxed{\\csc(A)=\\frac{1}{\\sin(A)}=\\frac{c}{a}}]]]')} /></p>
+  <p>A concrete check makes the flip visible. With <span set:html={rich('[[\\sin(A)=3/5=0.6]]')} />, the reciprocal is <span set:html={rich('[[1/0.6=5/3\\approx1.6667]]')} />, which is exactly the cosecant. Both numbers describe the same triangle from reciprocal viewpoints, and multiplying them always returns 1.</p>
+
+  <h3>Why Cosecant Is Greater Than 1</h3>
+  <p>The hypotenuse is longer than the opposite side, so <span set:html={rich('[[c \\gt a]]')} /> and therefore <span set:html={rich('[[c/a \\gt 1]]')} />. A quick numeric check: with <span set:html={rich('[[c=10]]')} /> and <span set:html={rich('[[a=8]]')} />, the ratio is <span set:html={rich('[[10/8=1.25]]')} />, above 1 as required. For a large acute angle the opposite side is nearly as long as the hypotenuse, so the ratio sits just above 1, but it can never equal 1 in a valid, non-degenerate right triangle.</p>
+
+  <h3>What Does a Cosecant Value Mean?</h3>
+  <p>A cosecant of 2 means the hypotenuse is exactly twice the opposite side; 1.6667 means about 1.6667 times. Read the number as a multiplier, not an angle: it carries no degrees and no metres or feet, because the two side units cancel in the division.</p>
+
+  <h3>Why Is Cosecant Different From Cosine?</h3>
+  <p>The names look alike, but the relationships differ:</p>
+  <p><span set:html={rich('[[[\\cos(A)=\\frac{b}{c}]]]')} /></p>
+  <p><span set:html={rich('[[[\\csc(A)=\\frac{c}{a}]]]')} /></p>
+  <p>Cosine compares the adjacent side with the hypotenuse, while cosecant compares the hypotenuse with the opposite side. The pairing to remember: cosecant is the reciprocal of sine, whereas secant is the reciprocal of cosine. Mixing up the two co-functions is one of the most common errors in trigonometry.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('csc-reciprocal.svg')} alt="Three stages: 3-4-5 triangle, sine 3/5=0.6, cosecant 5/3=1.6667, identity csc(A)=1/sin(A)" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Sine and cosecant are reciprocals: flipping 3/5 gives 5/3, and csc(A) = 1/sin(A).</figcaption>
+  </figure>
+</section>
+
+<!-- SECTION 4: Formula derivation -->
+<section id="csc-formula" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>The Cosecant Formula Explained Step by Step</h2>
+  <p>The formula is not arbitrary; it follows directly from the definition of sine. Start with the sine ratio:</p>
+  <p><span set:html={rich('[[[\\sin(A)=\\frac{a}{c}]]]')} /></p>
+  <p>Take the reciprocal of both sides. The numerator and denominator change places:</p>
+  <p><span set:html={rich('[[[\\frac{1}{\\sin(A)}=\\frac{c}{a}]]]')} /></p>
+  <p>Because cosecant is the reciprocal of sine by definition:</p>
+  <p><span set:html={rich('[[[\\boxed{\\csc(A)=\\frac{c}{a}}]]]')} /></p>
+  <p>The hypotenuse appears in the numerator because it was the denominator of sine; the opposite side drops to the denominator because it was the numerator of sine. That is the whole derivation.</p>
+
+  <h3>Fully Worked Example: A 3-4-5 Triangle</h3>
+  <p>Given <span set:html={rich('[[a=3\\text{ cm}]]')} />, <span set:html={rich('[[b=4\\text{ cm}]]')} />, <span set:html={rich('[[c=5\\text{ cm}]]')} />:</p>
+  <p>Step 1: Write the formula. <span set:html={rich('[[\\csc(A)=c/a]]')} /></p>
+  <p>Step 2: Substitute the measurements. <span set:html={rich('[[\\csc(A)=5/3]]')} /></p>
+  <p>Step 3: Divide. <span set:html={rich('[[\\boxed{\\csc(A)\\approx1.6667}]]')} /></p>
+  <p>Step 4: Verify using sine. <span set:html={rich('[[\\sin(A)=3/5=0.6]]')} />, and <span set:html={rich('[[1/0.6\\approx1.6667]]')} />. Both routes land on the same value because they are reciprocal views of one triangle. Note that 1.6667 is the rounded decimal; <span set:html={rich('[[5/3]]')} /> is the exact ratio for these side lengths.</p>
+</section>
+
+<!-- SECTION 5: Calculator walkthrough -->
+<section id="csc-howto" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Use the Cosecant Ratio Calculator</h2>
+  <p>The walkthrough below matches the actual interface on this page.</p>
+  <ol>
+    <li><strong>Identify the reference angle <span set:html={rich('[[A]]')} />.</strong> Decide which acute angle the ratio describes, since the opposite side is defined relative to it.</li>
+    <li><strong>Locate the hypotenuse <span set:html={rich('[[c]]')} />.</strong> It is the side opposite the right angle and the longest side of the triangle.</li>
+    <li><strong>Locate the opposite side <span set:html={rich('[[a]]')} />.</strong> It is the side directly across from angle <span set:html={rich('[[A]]')} />.</li>
+    <li><strong>Measure or obtain both side lengths.</strong> Use a tape, a drawing, or given data, keeping the same unit for both.</li>
+    <li><strong>Enter the hypotenuse in the first input field.</strong> This is the larger of the two values.</li>
+    <li><strong>Enter the opposite side in the second input field.</strong> This is the smaller of the two values.</li>
+    <li><strong>Select compatible units with the unit selectors.</strong> Both fields must use the same unit so the division is meaningful.</li>
+    <li><strong>Confirm both values are positive.</strong> Zero or negative lengths cannot form a triangle.</li>
+    <li><strong>Check that the hypotenuse is longer than the opposite side.</strong> If it is not, the inputs are swapped or mislabeled.</li>
+    <li><strong>Click Calculate csc(A).</strong> The tool divides the hypotenuse by the opposite side.</li>
+    <li><strong>Read the resulting cosecant ratio.</strong> It is a dimensionless number describing the hypotenuse as a multiple of the opposite side.</li>
+    <li><strong>Verify that the answer is greater than 1.</strong> Anything at or below 1 signals an input error.</li>
+    <li><strong>Use Reset to clear the inputs</strong> and start another calculation.</li>
+  </ol>
+  <p>Notice what the calculator never asks for: no angle <span set:html={rich('[[A]]')} /> in degrees, no adjacent side, and no sine value. Two side lengths are the complete input because the ratio <span set:html={rich('[[c/a]]')} /> depends on nothing else.</p>
+</section>
+
+<!-- SECTION 6: Four foundational examples -->
+<section id="csc-examples" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Step-by-Step Examples of Calculating Cosecant</h2>
+  <p>These four examples build the core skill before the real-world applications. Each follows the same pattern: write the formula, substitute, divide.</p>
+
+  <h3>Example 1: A 3-4-5 Right Triangle</h3>
+  <p>Given <span set:html={rich('[[a=3\\text{ cm}]]')} />, <span set:html={rich('[[b=4\\text{ cm}]]')} />, <span set:html={rich('[[c=5\\text{ cm}]]')} />:</p>
+  <p><span set:html={rich('[[\\csc(A)=5/3]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\csc(A)\\approx1.6667}]]')} /></p>
+  <p>The hypotenuse is approximately 1.6667 times the opposite side. The adjacent side appears in the given data only to complete the triangle; the formula ignores it.</p>
+
+  <h3>Example 2: A 5-12-13 Right Triangle</h3>
+  <p>Given <span set:html={rich('[[a=5\\text{ m}]]')} />, <span set:html={rich('[[b=12\\text{ m}]]')} />, <span set:html={rich('[[c=13\\text{ m}]]')} />:</p>
+  <p><span set:html={rich('[[\\csc(A)=13/5]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\csc(A)=2.6}]]')} /></p>
+  <p>The result exceeds 1 because the hypotenuse is longer than the opposite side. The 12 m adjacent side is not needed for this calculation.</p>
+
+  <h3>Example 3: A 30-60-90 Triangle</h3>
+  <p>For angle <span set:html={rich('[[A=30^\\circ]]')} />, the opposite side is half the hypotenuse. With <span set:html={rich('[[a=5\\text{ cm}]]')} /> and <span set:html={rich('[[c=10\\text{ cm}]]')} />:</p>
+  <p><span set:html={rich('[[\\csc(30^\\circ)=10/5]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\csc(30^\\circ)=2}]]')} /></p>
+  <p>Verify: <span set:html={rich('[[\\sin(30^\\circ)=0.5]]')} />, and <span set:html={rich('[[1/0.5=2]]')} />. This exact value is worth memorizing because the 30-60-90 triangle appears constantly in geometry problems.</p>
+
+  <h3>Example 4: A Triangle With an Opposite Side of 8 and Hypotenuse of 10</h3>
+  <p>Given <span set:html={rich('[[a=8\\text{ m}]]')} /> and <span set:html={rich('[[c=10\\text{ m}]]')} />:</p>
+  <p><span set:html={rich('[[\\csc(A)=10/8]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\csc(A)=1.25}]]')} /></p>
+  <p>This ratio sits closer to 1 than the 3-4-5 result because the opposite side is a larger proportion of the hypotenuse: 8/10 versus 3/5.</p>
+</section>
+
+<!-- SECTION 7: Twelve practical examples -->
+<section id="csc-applications" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Real-Life Examples of Using the Cosecant Ratio</h2>
+  <p>Cosecant is a mathematical ratio rather than a number reported on its own at a work site. Its value lies in describing the hypotenuse-to-opposite-side relationship, verifying calculations, and feeding formulas that call for cosecant. Each example below assumes a simplified right triangle.</p>
+
+  <h3>Example 5: Understanding a Ladder's Length Relative to Its Height</h3>
+  <p>A 5.5 m ladder reaches 4.5 m up a vertical wall. The ladder is the hypotenuse <span set:html={rich('[[c=5.5\\text{ m}]]')} />; the reach is the opposite side <span set:html={rich('[[a=4.5\\text{ m}]]')} />.</p>
+  <p><span set:html={rich('[[\\csc(A)=5.5/4.5]]')} />, so <span set:html={rich('[[\\boxed{\\csc(A)\\approx1.2222}]]')} />.</p>
+  <p>The ladder is about 1.2222 times the vertical height, and <span set:html={rich('[[c=a\\times\\csc(A)]]')} /> recovers the ladder length from the height. This ratio describes geometry only, not ladder safety.</p>
+
+  <h3>Example 6: Calculating a Roof Rafter's Cosecant Ratio</h3>
+  <p>A 6.5 m roof rafter has a vertical rise of 4 m: the rafter is the sloping hypotenuse <span set:html={rich('[[c=6.5\\text{ m}]]')} />; the rise is the opposite side <span set:html={rich('[[a=4\\text{ m}]]')} />.</p>
+  <p><span set:html={rich('[[\\csc(A)=6.5/4]]')} />, so <span set:html={rich('[[\\boxed{\\csc(A)=1.625}]]')} />.</p>
+  <p>The rafter is 1.625 times the vertical rise. This calculation does not verify structural suitability or roof-design compliance.</p>
+
+  <h3>Example 7: Evaluating a Ramp's Cosecant Ratio</h3>
+  <p>A ramp has a 9.5 m sloping length and a 0.75 m vertical rise: <span set:html={rich('[[c=9.5\\text{ m}]]')} /> and <span set:html={rich('[[a=0.75\\text{ m}]]')} />.</p>
+  <p><span set:html={rich('[[\\csc(A)=9.5/0.75]]')} />, so <span set:html={rich('[[\\boxed{\\csc(A)\\approx12.6667}]]')} />.</p>
+  <p>The ratio is large because the sloping length dwarfs the vertical rise, as a gentle ramp should. The ratio alone does not determine accessibility or building-code compliance.</p>
+
+  <h3>Example 8: A Surveying Line With a Known Elevation Difference</h3>
+  <p>A simplified surveying measurement records a 50 m straight-line distance and a 30 m vertical difference: the straight line is the hypotenuse <span set:html={rich('[[c=50\\text{ m}]]')} />; with the vertical difference as the opposite side <span set:html={rich('[[a=30\\text{ m}]]')} />.</p>
+  <p><span set:html={rich('[[\\csc(A)=50/30]]')} />, so <span set:html={rich('[[\\boxed{\\csc(A)\\approx1.6667}]]')} />.</p>
+  <p>The sloping distance is about 1.6667 times the vertical component. Real surveying can require additional corrections beyond this simplified model.</p>
+
+  <h3>Example 9: Calculating a Guy Wire's Ratio</h3>
+  <p>An 18 m guy wire has a 10 m vertical separation between its endpoints: the wire is the hypotenuse <span set:html={rich('[[c=18\\text{ m}]]')} />; the separation is the opposite side <span set:html={rich('[[a=10\\text{ m}]]')} />.</p>
+  <p><span set:html={rich('[[\\csc(A)=18/10]]')} />, so <span set:html={rich('[[\\boxed{\\csc(A)=1.8}]]')} />.</p>
+  <p>The wire is 1.8 times the vertical separation. The ratio does not determine wire tension, anchor strength, or structural safety.</p>
+
+  <h3>Example 10: Evaluating a Staircase Stringer's Ratio</h3>
+  <p>A simplified 5 m staircase stringer has a 2.8 m vertical rise: the stringer is the hypotenuse <span set:html={rich('[[c=5\\text{ m}]]')} />; the rise is the opposite side <span set:html={rich('[[a=2.8\\text{ m}]]')} />.</p>
+  <p><span set:html={rich('[[\\csc(A)=5/2.8]]')} />, so <span set:html={rich('[[\\boxed{\\csc(A)\\approx1.7857}]]')} />.</p>
+  <p>The diagonal is about 1.7857 times the vertical rise: a simplified geometric calculation, not a complete staircase-design assessment.</p>
+
+  <h3>Example 11: An Aircraft's Straight Flight Segment</h3>
+  <p>An aircraft travels 5 km along a straight path while gaining 1.5 km in altitude: the path is the hypotenuse <span set:html={rich('[[c=5\\text{ km}]]')} />; the altitude gain is the opposite side <span set:html={rich('[[a=1.5\\text{ km}]]')} />.</p>
+  <p><span set:html={rich('[[\\csc(A)=5/1.5]]')} />, so <span set:html={rich('[[\\boxed{\\csc(A)\\approx3.3333}]]')} />.</p>
+  <p>The flight distance far exceeds the vertical gain, hence the large ratio. This is an idealized example, not a complete analysis of a changing flight path.</p>
+
+  <h3>Example 12: A Mechanical Brace</h3>
+  <p>A diagonal brace is 1,700 mm long with an 800 mm vertical component: the brace is the hypotenuse <span set:html={rich('[[c=1700\\text{ mm}]]')} />; the vertical component is the opposite side <span set:html={rich('[[a=800\\text{ mm}]]')} />.</p>
+  <p><span set:html={rich('[[\\csc(A)=1700/800]]')} />, so <span set:html={rich('[[\\boxed{\\csc(A)=2.125}]]')} />.</p>
+  <p>Millimetres work as well as metres when both sides share the unit. The ratio does not establish the brace's strength.</p>
+
+  <h3>Example 13: A Crane Boom</h3>
+  <p>A simplified 10 m crane boom has an 8 m vertical component: the boom is the hypotenuse <span set:html={rich('[[c=10\\text{ m}]]')} />; the vertical component is the opposite side <span set:html={rich('[[a=8\\text{ m}]]')} />.</p>
+  <p><span set:html={rich('[[\\csc(A)=10/8]]')} />, so <span set:html={rich('[[\\boxed{\\csc(A)=1.25}]]')} />.</p>
+  <p>The boom's length is only 1.25 times its vertical component. The ratio does not establish lifting capacity or operating safety.</p>
+
+  <h3>Example 14: A Line of Sight to the Top of a Tree</h3>
+  <p>A 20 m line of sight to a tree's top has a 12 m vertical difference from the observer's eye level: the sight line is the hypotenuse <span set:html={rich('[[c=20\\text{ m}]]')} />; the vertical difference is the opposite side <span set:html={rich('[[a=12\\text{ m}]]')} />.</p>
+  <p><span set:html={rich('[[\\csc(A)=20/12]]')} />, so <span set:html={rich('[[\\boxed{\\csc(A)\\approx1.6667}]]')} />.</p>
+  <p>The sight distance is about 1.6667 times the vertical difference. The result does not give the tree's total height above the ground.</p>
+
+  <h3>Example 15: A Hiking Route's Straight Incline</h3>
+  <p>A straight hiking segment slopes 100 m with an 80 m elevation gain: the slope is the hypotenuse <span set:html={rich('[[c=100\\text{ m}]]')} />; the gain is the opposite side <span set:html={rich('[[a=80\\text{ m}]]')} />.</p>
+  <p><span set:html={rich('[[\\csc(A)=100/80]]')} />, so <span set:html={rich('[[\\boxed{\\csc(A)=1.25}]]')} />.</p>
+  <p>The ratio sits close to 1 because the vertical component is a large share of the slope. Actual hiking routes can have varying gradients.</p>
+
+  <h3>Example 16: An Awning Support</h3>
+  <p>A 3.5 m awning support has a 1.2 m vertical component: the support is the hypotenuse <span set:html={rich('[[c=3.5\\text{ m}]]')} />; the vertical component is the opposite side <span set:html={rich('[[a=1.2\\text{ m}]]')} />.</p>
+  <p><span set:html={rich('[[\\csc(A)=3.5/1.2]]')} />, so <span set:html={rich('[[\\boxed{\\csc(A)\\approx2.9167}]]')} />.</p>
+  <p>The support is about 2.9167 times its vertical component. The result does not establish structural suitability.</p>
+
+  <h3>Practical Examples Compared</h3>
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full min-w-[640px] border-collapse text-left text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30">
+          <th class="py-3 pr-4 font-semibold text-on-surface">Situation</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Hypotenuse c</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Opposite side a</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Cosecant formula</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Calculated ratio</th>
+          <th class="py-3 font-semibold text-on-surface">Interpretation</th>
+        </tr>
+      </thead>
+      <tbody class="text-on-surface-variant">
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Ladder</td><td class="py-2.5 pr-4">5.5 m</td><td class="py-2.5 pr-4">4.5 m</td><td class="py-2.5 pr-4">5.5/4.5</td><td class="py-2.5 pr-4">1.2222</td><td class="py-2.5">Ladder is 1.2222 times the height</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Roof rafter</td><td class="py-2.5 pr-4">6.5 m</td><td class="py-2.5 pr-4">4 m</td><td class="py-2.5 pr-4">6.5/4</td><td class="py-2.5 pr-4">1.625</td><td class="py-2.5">Rafter is 1.625 times the rise</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Ramp</td><td class="py-2.5 pr-4">9.5 m</td><td class="py-2.5 pr-4">0.75 m</td><td class="py-2.5 pr-4">9.5/0.75</td><td class="py-2.5 pr-4">12.6667</td><td class="py-2.5">Slope is 12.6667 times the rise</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Surveying</td><td class="py-2.5 pr-4">50 m</td><td class="py-2.5 pr-4">30 m</td><td class="py-2.5 pr-4">50/30</td><td class="py-2.5 pr-4">1.6667</td><td class="py-2.5">Distance is 1.6667 times the drop</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Guy wire</td><td class="py-2.5 pr-4">18 m</td><td class="py-2.5 pr-4">10 m</td><td class="py-2.5 pr-4">18/10</td><td class="py-2.5 pr-4">1.8</td><td class="py-2.5">Wire is 1.8 times the separation</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Staircase stringer</td><td class="py-2.5 pr-4">5 m</td><td class="py-2.5 pr-4">2.8 m</td><td class="py-2.5 pr-4">5/2.8</td><td class="py-2.5 pr-4">1.7857</td><td class="py-2.5">Stringer is 1.7857 times the rise</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Flight segment</td><td class="py-2.5 pr-4">5 km</td><td class="py-2.5 pr-4">1.5 km</td><td class="py-2.5 pr-4">5/1.5</td><td class="py-2.5 pr-4">3.3333</td><td class="py-2.5">Path is 3.3333 times the gain</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Mechanical brace</td><td class="py-2.5 pr-4">1700 mm</td><td class="py-2.5 pr-4">800 mm</td><td class="py-2.5 pr-4">1700/800</td><td class="py-2.5 pr-4">2.125</td><td class="py-2.5">Brace is 2.125 times the component</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Crane boom</td><td class="py-2.5 pr-4">10 m</td><td class="py-2.5 pr-4">8 m</td><td class="py-2.5 pr-4">10/8</td><td class="py-2.5 pr-4">1.25</td><td class="py-2.5">Boom is 1.25 times the component</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Tree sight line</td><td class="py-2.5 pr-4">20 m</td><td class="py-2.5 pr-4">12 m</td><td class="py-2.5 pr-4">20/12</td><td class="py-2.5 pr-4">1.6667</td><td class="py-2.5">Sight line is 1.6667 times the difference</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Hiking incline</td><td class="py-2.5 pr-4">100 m</td><td class="py-2.5 pr-4">80 m</td><td class="py-2.5 pr-4">100/80</td><td class="py-2.5 pr-4">1.25</td><td class="py-2.5">Slope is 1.25 times the gain</td></tr>
+        <tr><td class="py-2.5 pr-4">Awning support</td><td class="py-2.5 pr-4">3.5 m</td><td class="py-2.5 pr-4">1.2 m</td><td class="py-2.5 pr-4">3.5/1.2</td><td class="py-2.5 pr-4">2.9167</td><td class="py-2.5">Support is 2.9167 times the component</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('csc-practical.svg')} alt="Four panels: ladder 1.2222, rafter 1.625, ramp 12.6667, surveying 1.6667 cosecant ratios with right triangles" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Four practical calculations: each panel shows the triangle, the formula, and the ratio.</figcaption>
+  </figure>
+  <p>The pattern is consistent: the ratio is large when the opposite side is a small fraction of the hypotenuse, and near 1 when the two are nearly equal. Reading cosecant as a multiplier keeps every result meaningful.</p>
+</section>
+
+<!-- SECTION 8: Cosecant and angle size -->
+<section id="csc-angle" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding the Relationship Between Cosecant and Angle Size</h2>
+  <p>Cosecant moves in the opposite direction from the angle. When the acute angle is small, the opposite side is short relative to the hypotenuse, so <span set:html={rich('[[c/a]]')} /> is large. As the angle grows, the opposite side lengthens toward the hypotenuse, and the ratio shrinks. The verified reference values below show the pattern:</p>
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full min-w-[480px] border-collapse text-left text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30">
+          <th class="py-3 pr-4 font-semibold text-on-surface">Angle A</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Sine sin(A)</th>
+          <th class="py-3 font-semibold text-on-surface">Cosecant csc(A)</th>
+        </tr>
+      </thead>
+      <tbody class="text-on-surface-variant">
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">30 deg</td><td class="py-2.5 pr-4">0.5</td><td class="py-2.5">2</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">45 deg</td><td class="py-2.5 pr-4">0.7071</td><td class="py-2.5">1.4142</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">60 deg</td><td class="py-2.5 pr-4">0.8660</td><td class="py-2.5">1.1547</td></tr>
+        <tr><td class="py-2.5 pr-4">90 deg</td><td class="py-2.5 pr-4">1</td><td class="py-2.5">1, as a limiting value</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>As the angle approaches <span set:html={rich('[[90^\\circ]]')} />, the opposite side approaches the hypotenuse and the ratio approaches 1, while staying above 1 for every valid, non-degenerate right triangle. The 90-degree row is a limiting reference only, since angle <span set:html={rich('[[A]]')} /> must be acute. As the angle approaches <span set:html={rich('[[0^\\circ]]')} />, the opposite side shrinks toward zero and the ratio grows without bound. A ratio near 1 signals a relatively large acute angle; a large ratio signals a relatively small one.</p>
+  <figure class="not-prose my-6">
+    <img src={imgSrc('csc-angle-change.svg')} alt="Three triangles at 30, 45, 60 degrees with cosecant values 2, 1.4142, 1.1547; ratio falls as angle grows" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">As the opposite side becomes a larger share of the hypotenuse, csc(A) moves closer to 1.</figcaption>
+  </figure>
+  <p>The calculator does not accept an angle input; it computes the ratio from the two side lengths. These reference values serve as orientation and as check values when verifying a result.</p>
+</section>
+
+<!-- SECTION 9: Recover a side using cosecant -->
+<section id="csc-recover" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Using Cosecant to Find the Hypotenuse</h2>
+  <p>The formula rearranges cleanly. Start with:</p>
+  <p><span set:html={rich('[[[\\csc(A)=\\frac{c}{a}]]]')} /></p>
+  <p>Multiply both sides by <span set:html={rich('[[a]]')} />:</p>
+  <p><span set:html={rich('[[[\\boxed{c=a\\times\\csc(A)}]]]')} /></p>
+  <p>The hypotenuse is the opposite side multiplied by the cosecant ratio. With <span set:html={rich('[[a=6\\text{ m}]]')} /> and <span set:html={rich('[[\\csc(A)=2.5]]')} />:</p>
+  <p><span set:html={rich('[[c=6\\times2.5]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{c=15\\text{ m}}]]')} /></p>
+  <p>The result is longer than the opposite side, as every hypotenuse must be.</p>
+  <h3>How to Recover the Opposite Side</h3>
+  <p>Solving for <span set:html={rich('[[a]]')} /> instead gives:</p>
+  <p><span set:html={rich('[[[\\boxed{a=\\frac{c}{\\csc(A)}}]]]')} /></p>
+  <p>With <span set:html={rich('[[c=12\\text{ m}]]')} /> and <span set:html={rich('[[\\csc(A)=2]]')} />:</p>
+  <p><span set:html={rich('[[a=12/2]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{a=6\\text{ m}}]]')} /></p>
+  <p>These are mathematical rearrangements of the same ratio. The calculator on this page computes the ratio itself; it does not provide separate hypotenuse-finding or opposite-side-finding modes.</p>
+</section>
+
+<!-- SECTION 10: Common mistakes -->
+<section id="csc-mistakes" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Common Mistakes When Calculating Cosecant</h2>
+  <ol>
+    <li><strong>Confusing cosecant with sine.</strong> Sine is <span set:html={rich('[[a/c]]')} />; cosecant is <span set:html={rich('[[c/a]]')} />. What goes wrong: reporting 0.6 for a 3-4-5 triangle. Fix: put the hypotenuse on top.</li>
+    <li><strong>Reversing the formula to <span set:html={rich('[[a/c]]')} /> instead of <span set:html={rich('[[c/a]]')} />.</strong> What goes wrong: the answer is the sine, always below 1. Fix: check that the longer side is the numerator.</li>
+    <li><strong>Confusing cosecant with secant.</strong> Secant is <span set:html={rich('[[c/b]]')} />, the reciprocal of cosine. What goes wrong: using the adjacent side. Fix: cosecant pairs with sine and the opposite side.</li>
+    <li><strong>Using the adjacent side instead of the opposite side.</strong> What goes wrong: computing <span set:html={rich('[[c/b]]')} /> by mistake. Fix: confirm the side across from angle <span set:html={rich('[[A]]')} /> before dividing.</li>
+    <li><strong>Assuming cosecant is measured in degrees.</strong> What goes wrong: writing 1.6667 degrees. Fix: the ratio is a pure number, not an angle.</li>
+    <li><strong>Reporting a cosecant ratio with metres or centimetres.</strong> What goes wrong: the units were already cancelled. Fix: drop the unit from the answer.</li>
+    <li><strong>Accepting a result less than 1 for a valid triangle.</strong> What goes wrong: trusting a swapped-input calculation. Fix: a valid result always exceeds 1.</li>
+    <li><strong>Entering a hypotenuse shorter than the opposite side.</strong> What goes wrong: the inputs describe an impossible triangle. Fix: the hypotenuse field must hold the longer measurement.</li>
+    <li><strong>Entering zero or negative side lengths.</strong> What goes wrong: division by zero or a meaningless negative ratio. Fix: use positive lengths only.</li>
+    <li><strong>Mixing measurement units.</strong> What goes wrong: centimetres divided by metres skew the ratio by a factor of 100. Fix: convert both sides to one unit first.</li>
+    <li><strong>Rounding too early.</strong> What goes wrong: rounding <span set:html={rich('[[5/3]]')} /> to 1.67 before multiplying back adds avoidable error. Fix: keep the fraction or extra digits until the final step.</li>
+    <li><strong>Confusing the reference angle with the other acute angle.</strong> What goes wrong: the opposite and adjacent labels swap. Fix: mark angle <span set:html={rich('[[A]]')} /> on the diagram first.</li>
+    <li><strong>Assuming a large cosecant ratio is an angle.</strong> What goes wrong: reading 12.6667 as degrees. Fix: it is a multiplier, so the hypotenuse is 12.6667 times the opposite side.</li>
+    <li><strong>Assuming cosecant alone determines the hypotenuse.</strong> What goes wrong: expecting one number to produce a length. Fix: the ratio needs the opposite side too, via <span set:html={rich('[[c=a\\times\\csc(A)]]')} />.</li>
+    <li><strong>Confusing the reciprocal of sine with the reciprocal of cosine.</strong> What goes wrong: using secant where cosecant belongs. Fix: sine pairs with cosecant; cosine pairs with secant.</li>
+  </ol>
+
+  <h3>Wrong Versus Correct</h3>
+  <p>Given <span set:html={rich('[[c=5]]')} /> and <span set:html={rich('[[a=3]]')} />:</p>
+  <p>Incorrect: <span set:html={rich('[[3/5=0.6]]')} />. This is the sine ratio, not the cosecant ratio.</p>
+  <p>Correct: <span set:html={rich('[[\\csc(A)=5/3\\approx1.6667]]')} />.</p>
+  <p>Verify: <span set:html={rich('[[\\csc(A)=1/\\sin(A)]]')} />, and <span set:html={rich('[[1/0.6\\approx1.6667]]')} />.</p>
+</section>
+
+<!-- SECTION 11: Verification -->
+<section id="csc-verify" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Check Whether Your Cosecant Result Is Valid</h2>
+  <p>A valid, non-degenerate right triangle requires:</p>
+  <p><span set:html={rich('[[[c \\gt a \\gt 0]]]')} /></p>
+  <p>Therefore <span set:html={rich('[[c/a \\gt 1]]')} />. Both measurements must use compatible units, and the calculated ratio must exceed 1. A result of exactly 1 is only a limiting value as the acute angle approaches 90 degrees, not a result for a genuine triangle. A ratio below 1 usually indicates reversed inputs, an incorrect side label, or incompatible measurements.</p>
+  <h3>Method 1: Check the Sine Reciprocal</h3>
+  <p>Compute <span set:html={rich('[[\\sin(A)=a/c]]')} />, then <span set:html={rich('[[\\csc(A)=1/\\sin(A)]]')} />. For the 3-4-5 triangle, <span set:html={rich('[[\\sin(A)=3/5=0.6]]')} /> and <span set:html={rich('[[1/0.6\\approx1.6667]]')} />, matching the direct division.</p>
+  <h3>Method 2: Check the Pythagorean Theorem</h3>
+  <p>If the adjacent side is known or needed, verify <span set:html={rich('[[b=\\sqrt{c^2-a^2}]]')} />. For <span set:html={rich('[[c=5]]')} /> and <span set:html={rich('[[a=3]]')} />: <span set:html={rich('[[b=\\sqrt{25-9}=4]]')} />, and <span set:html={rich('[[3^2+4^2=5^2]]')} />. This confirms the side lengths form a right triangle.</p>
+  <h3>Method 3: Check the Ratio by Multiplication</h3>
+  <p>Verify <span set:html={rich('[[a\\times\\csc(A)\\approx c]]')} />. For <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[\\csc(A)=5/3]]')} />: <span set:html={rich('[[3\\times\\frac{5}{3}=5]]')} />. Small discrepancies may appear when a displayed decimal was rounded; the exact fraction removes them.</p>
+</section>
+
+<!-- SECTION 12: Choosing a ratio -->
+<section id="csc-vs" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Cosecant vs. Sine, Secant, and Other Trigonometric Ratios</h2>
+  <p>Each ratio compares a different pair of sides:</p>
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full min-w-[480px] border-collapse text-left text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30">
+          <th class="py-3 pr-4 font-semibold text-on-surface">Ratio</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Formula</th>
+          <th class="py-3 font-semibold text-on-surface">What it compares</th>
+        </tr>
+      </thead>
+      <tbody class="text-on-surface-variant">
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Sine</td><td class="py-2.5 pr-4">sin(A) = a/c</td><td class="py-2.5">Opposite side to hypotenuse</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Cosecant</td><td class="py-2.5 pr-4">csc(A) = c/a</td><td class="py-2.5">Hypotenuse to opposite side</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Cosine</td><td class="py-2.5 pr-4">cos(A) = b/c</td><td class="py-2.5">Adjacent side to hypotenuse</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Secant</td><td class="py-2.5 pr-4">sec(A) = c/b</td><td class="py-2.5">Hypotenuse to adjacent side</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Tangent</td><td class="py-2.5 pr-4">tan(A) = a/b</td><td class="py-2.5">Opposite side to adjacent side</td></tr>
+        <tr><td class="py-2.5 pr-4">Cotangent</td><td class="py-2.5 pr-4">cot(A) = b/a</td><td class="py-2.5">Adjacent side to opposite side</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The reciprocal pairs are sine with cosecant and cosine with secant: <span set:html={rich('[[\\csc(A)=1/\\sin(A)]]')} />, whereas <span set:html={rich('[[\\sec(A)=1/\\cos(A)]]')} />. Cosecant and secant are not interchangeable. Sine suits direct measurement problems with a known opposite side and hypotenuse; cosecant suits formulas built around the reciprocal and recovering the hypotenuse from a known cosecant value.</p>
+  <p>For the neighbouring ratios, see the <a href="/sine-ratio-calculator/" class="text-primary hover:underline">Sine Ratio Calculator</a>, the <a href="/secant-ratio-calculator/" class="text-primary hover:underline">Secant Ratio Calculator</a>, the <a href="/cotangent-ratio-calculator/" class="text-primary hover:underline">Cotangent Ratio Calculator</a>, and the <a href="/right-triangle-trig-ratios-calculator/" class="text-primary hover:underline">Right Triangle Trig Ratios Calculator</a>. The <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">Right Triangle Side Calculator</a> helps when a side length itself is the unknown.</p>
+</section>
+
+<!-- SECTION 13: FAQs -->
+<section id="csc-faq" class="mx-auto mt-12 w-full max-w-4xl section-shell scroll-mt-24">
+  <Faq heading="Frequently Asked Questions" items={faqs} />
+</section>
+
+<!-- SECTION 14: Related calculators -->
+<section id="csc-related" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Explore Related Trigonometric Calculators</h2>
+  <ul class="mt-5">
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-trig-ratios-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">01</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Trig Ratios Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/sine-ratio-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">02</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Sine Ratio Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/secant-ratio-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">03</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Secant Ratio Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/cotangent-ratio-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">04</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Cotangent Ratio Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-side-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">05</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Side Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-angle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">06</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Angle Calculator</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- Conclusion -->
+<section class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Master the Cosecant Ratio With Confidence</h2>
+  <p>Cosecant is sine seen from the other side: divide the hypotenuse by the opposite side, and the result tells you how many opposite-side lengths fit into the hypotenuse. The formula <span set:html={rich('[[\\csc(A)=c/a]]')} /> needs only two measurements, the answer is always a dimensionless number above 1, and the reciprocal identity <span set:html={rich('[[\\csc(A)=1/\\sin(A)]]')} /> gives you a built-in way to check every calculation. Whether the triangle is a ladder, a rafter, or a textbook 3-4-5, the method never changes: identify the hypotenuse, identify the opposite side, divide, and verify. Keep the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem calculator</a> handy for confirming triangle geometry, and this page bookmarked for every cosecant calculation.</p>
+</section>

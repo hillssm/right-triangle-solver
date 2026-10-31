@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>Missing angle: why the two acute angles add to 90 degrees</title>
+<desc>Two panels comparing the full 180 deg triangle sum with the 90 deg acute pair.</desc>
+<rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+<text x="600" y="44" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#f5eeda" text-anchor="middle" font-weight="bold">Why the two acute angles add to 90 degrees</text>
+<text x="285" y="92" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle" font-weight="bold">Part A: all three angles</text>
+<text x="885" y="92" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle" font-weight="bold">Part B: only the acute angles</text>
+<polygon points="110,480 460,480 460,235" fill="rgba(241,201,125,0.07)"/>
+<line x1="110" y1="480" x2="460" y2="480" stroke="#38bdf8" stroke-width="7" stroke-linecap="round"/>
+<line x1="460" y1="480" x2="460" y2="235" stroke="#f1c97d" stroke-width="7" stroke-linecap="round"/>
+<line x1="110" y1="480" x2="460" y2="235" stroke="#f472b6" stroke-width="7" stroke-linecap="round"/>
+<polyline points="436,480 436,456 460,456" stroke="#ffffff" stroke-width="3" fill="none"/>
+<circle cx="110" cy="480" r="8" fill="#f1c97d"/>
+<circle cx="460" cy="480" r="8" fill="#f1c97d"/>
+<circle cx="460" cy="235" r="8" fill="#f1c97d"/>
+<path d="M 175 480 Q 182 457 163 443" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.7"/>
+<path d="M 460 290 Q 433 287 415 267" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.7"/>
+<text x="190" y="428" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="normal">35 deg</text>
+<text x="400" y="300" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="normal">55 deg</text>
+<text x="388" y="458" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="normal">90 deg</text>
+<text x="285" y="532" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="normal">35 + 55 + 90 = 180 deg</text>
+<polygon points="710,480 1060,480 1060,235" fill="rgba(241,201,125,0.07)"/>
+<line x1="710" y1="480" x2="1060" y2="480" stroke="#38bdf8" stroke-width="7" stroke-linecap="round"/>
+<line x1="1060" y1="480" x2="1060" y2="235" stroke="#f1c97d" stroke-width="7" stroke-linecap="round"/>
+<line x1="710" y1="480" x2="1060" y2="235" stroke="#f472b6" stroke-width="7" stroke-linecap="round"/>
+<polyline points="1036,480 1036,456 1060,456" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.25"/>
+<circle cx="710" cy="480" r="8" fill="#f1c97d"/>
+<circle cx="1060" cy="480" r="8" fill="#f1c97d"/>
+<circle cx="1060" cy="235" r="8" fill="#f1c97d"/>
+<path d="M 775 480 Q 782 457 763 443" stroke="#f1c97d" stroke-width="3.5" fill="none"/>
+<path d="M 1060 290 Q 1033 287 1015 267" stroke="#f1c97d" stroke-width="3.5" fill="none"/>
+<text x="790" y="428" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f1c97d" text-anchor="middle" font-weight="bold">35 deg</text>
+<text x="1000" y="300" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f1c97d" text-anchor="middle" font-weight="bold">55 deg</text>
+<text x="988" y="458" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="normal" opacity="0.35">90 deg</text>
+<text x="885" y="532" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#f1c97d" text-anchor="middle" font-weight="bold">35 + 55 = 90 deg</text>
+<line x1="525" y1="350" x2="645" y2="350" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+<polygon points="645,350 628,340 628,360" fill="#ffffff"/>
+<text x="585" y="322" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#b8b0a5" text-anchor="middle" font-weight="normal">remove 90 deg</text>
+<rect x="430" y="566" width="340" height="52" rx="10" fill="#1c1b1b" stroke="#f1c97d" stroke-width="2"/>
+<text x="600" y="601" font-family="Noto Serif, Georgia, serif" font-size="28" fill="#f1c97d" text-anchor="middle" font-weight="normal" font-style="italic">B = 90 deg - A</text>
+</svg>

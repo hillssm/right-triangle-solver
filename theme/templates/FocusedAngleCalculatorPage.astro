@@ -9,6 +9,7 @@ import ArcsinGuide from 'theme/components/ArcsinGuide.astro';
 import ArcsinGuideLocalized from 'theme/components/ArcsinGuideLocalized.astro';
 import ArctanGuide from 'theme/components/ArctanGuide.astro';
 import ArctanGuideLocalized from 'theme/components/ArctanGuideLocalized.astro';
+import MissingAngleGuide from 'theme/components/MissingAngleGuide.astro';
 import { ARCSIN_GUIDE_TRANSLATIONS } from 'src/data/arcsinGuideTranslations';
 import { ARCTAN_GUIDE_TRANSLATIONS } from 'src/data/arctanGuideTranslations';
 import { getFormulaBySlug } from 'src/data/rightTriangleFormulas';
@@ -33,6 +34,7 @@ const formula = getFormulaBySlug(page.formulaSlug);
 const isArccosPage = page.slug === 'right-triangle-angle-from-cosine-calculator' && locale === 'en';
 const isArcsinPage = page.slug === 'right-triangle-angle-from-sine-calculator' && (locale === 'en' || ARCSIN_GUIDE_TRANSLATIONS[locale]);
 const isArctanPage = page.slug === 'right-triangle-angle-from-tangent-calculator' && (locale === 'en' || ARCTAN_GUIDE_TRANSLATIONS[locale]);
+const isMissingAnglePage = page.slug === 'right-triangle-missing-angle-calculator' && locale === 'en';
 
 if (!formula || !formula.calculator) {
   throw new Error(`Focused angle calculator formula is missing: ${page.formulaSlug}`);
@@ -234,7 +236,7 @@ const sectionHeading = (
     runtimeTranslations={runtimeTranslations}
   />
 
-  {!isArccosPage && !isArcsinPage && !isArctanPage && (
+  {!isArccosPage && !isArcsinPage && !isArctanPage && !isMissingAnglePage && (
   <>
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading(page.howItWorks.h2)}</h2>
@@ -546,6 +548,7 @@ const sectionHeading = (
   {page.slug === 'right-triangle-angle-from-cosine-calculator' && locale === 'en' ? <ArccosGuide /> : null}
   {page.slug === 'right-triangle-angle-from-sine-calculator' && locale === 'en' ? <ArcsinGuide /> : null}
   {page.slug === 'right-triangle-angle-from-tangent-calculator' && locale === 'en' ? <ArctanGuide /> : null}
+  {page.slug === 'right-triangle-missing-angle-calculator' && locale === 'en' ? <MissingAngleGuide /> : null}
   {page.slug === 'right-triangle-angle-from-sine-calculator' && locale !== 'en' && ARCSIN_GUIDE_TRANSLATIONS[locale] ? <ArcsinGuideLocalized guide={ARCSIN_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
   {page.slug === 'right-triangle-angle-from-tangent-calculator' && locale !== 'en' && ARCTAN_GUIDE_TRANSLATIONS[locale] ? <ArctanGuideLocalized guide={ARCTAN_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 

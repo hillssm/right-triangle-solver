@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>Missing angle: practical applications</title>
+<desc>Four panels: ladder, roof rafter, diagonal brace, and square diagonal complements.</desc>
+<rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+<text x="600" y="44" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#f5eeda" text-anchor="middle" font-weight="bold">Missing angles in real situations</text>
+<rect x="20" y="58" width="560" height="252" rx="12" fill="#1c1b1b"/>
+<text x="300" y="92" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle" font-weight="bold">Ladder: 68 deg from the ground</text>
+<line x1="200" y1="260" x2="400" y2="260" stroke="#b8b0a5" stroke-width="4" stroke-linecap="round"/>
+<line x1="276" y1="98" x2="276" y2="260" stroke="#b8b0a5" stroke-width="4" stroke-linecap="round"/>
+<line x1="210" y1="260" x2="276" y2="98" stroke="#f1c97d" stroke-width="6" stroke-linecap="round"/>
+<polyline points="252,260 252,236 276,236" stroke="#ffffff" stroke-width="3" fill="none"/>
+<path d="M 255 260 Q 249 233 227 218" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.8"/>
+<path d="M 276 143 Q 266 142 259 140" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.8"/>
+<text x="292" y="240" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="normal">68 deg</text>
+<text x="306" y="128" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="normal">22 deg</text>
+<text x="368" y="282" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#b8b0a5" text-anchor="middle" font-weight="normal">ground</text>
+<text x="300" y="296" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle" font-weight="normal">90 - 68 = 22 deg</text>
+<rect x="620" y="58" width="560" height="252" rx="12" fill="#1c1b1b"/>
+<text x="900" y="92" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle" font-weight="bold">Rafter: 35 deg from horizontal</text>
+<line x1="700" y1="260" x2="1090" y2="260" stroke="#b8b0a5" stroke-width="4" stroke-linecap="round"/>
+<line x1="760" y1="128" x2="760" y2="260" stroke="#b8b0a5" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 6"/>
+<line x1="760" y1="260" x2="948" y2="128" stroke="#f1c97d" stroke-width="6" stroke-linecap="round"/>
+<polyline points="736,260 736,236 760,236" stroke="#ffffff" stroke-width="3" fill="none"/>
+<path d="M 810 260 Q 808 244 801 231" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.8"/>
+<path d="M 760 190 Q 790 200 817 220" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.8"/>
+<text x="842" y="248" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="normal">35 deg</text>
+<text x="800" y="166" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="normal">55 deg</text>
+<text x="1030" y="282" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#b8b0a5" text-anchor="middle" font-weight="normal">horizontal</text>
+<text x="900" y="296" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle" font-weight="normal">90 - 35 = 55 deg</text>
+<rect x="20" y="322" width="560" height="252" rx="12" fill="#1c1b1b"/>
+<text x="300" y="356" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle" font-weight="bold">Brace: 40 deg from the beam</text>
+<line x1="70" y1="520" x2="360" y2="520" stroke="#b8b0a5" stroke-width="4" stroke-linecap="round"/>
+<line x1="281" y1="385" x2="281" y2="520" stroke="#b8b0a5" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 6"/>
+<line x1="120" y1="520" x2="281" y2="385" stroke="#f1c97d" stroke-width="6" stroke-linecap="round"/>
+<polyline points="257,520 257,496 281,496" stroke="#ffffff" stroke-width="3" fill="none"/>
+<path d="M 168 520 Q 166 504 157 489" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.8"/>
+<path d="M 281 430 Q 262 424 247 414" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.8"/>
+<text x="188" y="508" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="normal">40 deg</text>
+<text x="304" y="408" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="normal">50 deg</text>
+<text x="336" y="542" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" fill="#b8b0a5" text-anchor="middle" font-weight="normal">beam</text>
+<text x="300" y="566" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle" font-weight="normal">90 - 40 = 50 deg</text>
+<rect x="620" y="322" width="560" height="252" rx="12" fill="#1c1b1b"/>
+<text x="900" y="356" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle" font-weight="bold">Square diagonal: 45 deg each way</text>
+<rect x="820" y="390" width="150" height="150" fill="none" stroke="#b8b0a5" stroke-width="4"/>
+<line x1="820" y1="540" x2="970" y2="390" stroke="#f1c97d" stroke-width="6" stroke-linecap="round"/>
+<polyline points="844,540 844,516 820,516" stroke="#ffffff" stroke-width="3" fill="none"/>
+<path d="M 875 540 Q 871 518 859 501" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.8"/>
+<path d="M 915 390 Q 919 412 931 429" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.8"/>
+<text x="892" y="524" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="normal">45 deg</text>
+<text x="900" y="404" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="normal">45 deg</text>
+<text x="900" y="570" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle" font-weight="normal">90 - 45 = 45 deg</text>
+</svg>

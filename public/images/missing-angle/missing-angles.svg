@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>Missing angle: the three angles of a right triangle</title>
+<desc>Right triangle with angles A 35 deg, B 55 deg, C 90 deg.</desc>
+<rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+<text x="600" y="44" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#f5eeda" text-anchor="middle" font-weight="bold">The three angles of a right triangle</text>
+<polygon points="250,550 950,550 950,60" fill="rgba(241,201,125,0.07)"/>
+<line x1="250" y1="550" x2="950" y2="550" stroke="#38bdf8" stroke-width="7" stroke-linecap="round"/>
+<line x1="950" y1="550" x2="950" y2="60" stroke="#f1c97d" stroke-width="7" stroke-linecap="round"/>
+<line x1="250" y1="550" x2="950" y2="60" stroke="#f472b6" stroke-width="7" stroke-linecap="round"/>
+<polyline points="926,550 926,526 950,526" stroke="#ffffff" stroke-width="3" fill="none"/>
+<circle cx="250" cy="550" r="8" fill="#f1c97d"/>
+<circle cx="950" cy="550" r="8" fill="#f1c97d"/>
+<circle cx="950" cy="60" r="8" fill="#f1c97d"/>
+<path d="M 315 550 Q 322 527 303 513" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.7"/>
+<path d="M 950 115 Q 923 112 905 92" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.7"/>
+<text x="222" y="558" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="982" y="68" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">B</text>
+<text x="982" y="558" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">C</text>
+<text x="352" y="498" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="normal">35 deg</text>
+<text x="868" y="158" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="normal">55 deg</text>
+<text x="878" y="528" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="normal">90 deg</text>
+<text x="988" y="322" font-family="Noto Serif, Georgia, serif" font-size="40" fill="#f1c97d" text-anchor="middle" font-weight="normal" font-style="italic">a</text>
+<text x="600" y="538" font-family="Noto Serif, Georgia, serif" font-size="40" fill="#38bdf8" text-anchor="middle" font-weight="normal" font-style="italic">b</text>
+<text x="574" y="272" font-family="Noto Serif, Georgia, serif" font-size="40" fill="#f472b6" text-anchor="middle" font-weight="normal" font-style="italic">c</text>
+<text x="600" y="600" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f1c97d" text-anchor="middle" font-weight="bold">A + B = 90 deg   |   35 + 55 + 90 = 180 deg</text>
+</svg>

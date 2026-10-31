@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>Missing angle: how complementary angles change</title>
+<desc>Four right triangles showing complementary pairs 20-70, 30-60, 45-45, 70-20.</desc>
+<rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+<text x="600" y="44" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#f5eeda" text-anchor="middle" font-weight="bold">How complementary angles change</text>
+<rect x="20" y="58" width="560" height="252" rx="12" fill="#1c1b1b"/>
+<text x="300" y="92" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle" font-weight="bold">A = 20 deg  ->  B = 70 deg</text>
+<polygon points="200,272 400,272 400,199" fill="rgba(241,201,125,0.07)"/>
+<line x1="200" y1="272" x2="400" y2="272" stroke="#38bdf8" stroke-width="7" stroke-linecap="round"/>
+<line x1="400" y1="272" x2="400" y2="199" stroke="#f1c97d" stroke-width="7" stroke-linecap="round"/>
+<line x1="200" y1="272" x2="400" y2="199" stroke="#f472b6" stroke-width="7" stroke-linecap="round"/>
+<polyline points="376,272 376,248 400,248" stroke="#ffffff" stroke-width="3" fill="none"/>
+<circle cx="200" cy="272" r="8" fill="#f1c97d"/>
+<circle cx="400" cy="272" r="8" fill="#f1c97d"/>
+<circle cx="400" cy="199" r="8" fill="#f1c97d"/>
+<text x="178" y="280" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="422" y="207" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">B</text>
+<text x="300" y="298" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle" font-weight="normal">B = 90 - 20 = 70 deg</text>
+<path d="M 265 272 Q 271 260 261 250" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.7"/>
+<rect x="620" y="58" width="560" height="252" rx="12" fill="#1c1b1b"/>
+<text x="900" y="92" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle" font-weight="bold">A = 30 deg  ->  B = 60 deg</text>
+<polygon points="800,272 1000,272 1000,157" fill="rgba(241,201,125,0.07)"/>
+<line x1="800" y1="272" x2="1000" y2="272" stroke="#38bdf8" stroke-width="7" stroke-linecap="round"/>
+<line x1="1000" y1="272" x2="1000" y2="157" stroke="#f1c97d" stroke-width="7" stroke-linecap="round"/>
+<line x1="800" y1="272" x2="1000" y2="157" stroke="#f472b6" stroke-width="7" stroke-linecap="round"/>
+<polyline points="976,272 976,248 1000,248" stroke="#ffffff" stroke-width="3" fill="none"/>
+<circle cx="800" cy="272" r="8" fill="#f1c97d"/>
+<circle cx="1000" cy="272" r="8" fill="#f1c97d"/>
+<circle cx="1000" cy="157" r="8" fill="#f1c97d"/>
+<text x="778" y="280" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="1022" y="165" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">B</text>
+<text x="900" y="298" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle" font-weight="normal">B = 90 - 30 = 60 deg</text>
+<path d="M 860 272 Q 862 256 852 242" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.7"/>
+<rect x="20" y="322" width="560" height="252" rx="12" fill="#1c1b1b"/>
+<text x="300" y="356" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle" font-weight="bold">A = 45 deg  ->  B = 45 deg</text>
+<polygon points="220,536 380,536 380,376" fill="rgba(241,201,125,0.07)"/>
+<line x1="220" y1="536" x2="380" y2="536" stroke="#38bdf8" stroke-width="7" stroke-linecap="round"/>
+<line x1="380" y1="536" x2="380" y2="376" stroke="#f1c97d" stroke-width="7" stroke-linecap="round"/>
+<line x1="220" y1="536" x2="380" y2="376" stroke="#f472b6" stroke-width="7" stroke-linecap="round"/>
+<polyline points="356,536 356,512 380,512" stroke="#ffffff" stroke-width="3" fill="none"/>
+<circle cx="220" cy="536" r="8" fill="#f1c97d"/>
+<circle cx="380" cy="536" r="8" fill="#f1c97d"/>
+<circle cx="380" cy="376" r="8" fill="#f1c97d"/>
+<text x="198" y="544" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="402" y="384" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">B</text>
+<text x="300" y="562" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle" font-weight="normal">B = 90 - 45 = 45 deg</text>
+<path d="M 275 536 Q 272 516 259 497" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.7"/>
+<rect x="620" y="322" width="560" height="252" rx="12" fill="#1c1b1b"/>
+<text x="900" y="356" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle" font-weight="bold">A = 70 deg  ->  B = 20 deg</text>
+<polygon points="860,536 940,536 940,316" fill="rgba(241,201,125,0.07)"/>
+<line x1="860" y1="536" x2="940" y2="536" stroke="#38bdf8" stroke-width="7" stroke-linecap="round"/>
+<line x1="940" y1="536" x2="940" y2="316" stroke="#f1c97d" stroke-width="7" stroke-linecap="round"/>
+<line x1="860" y1="536" x2="940" y2="316" stroke="#f472b6" stroke-width="7" stroke-linecap="round"/>
+<polyline points="916,536 916,512 940,512" stroke="#ffffff" stroke-width="3" fill="none"/>
+<circle cx="860" cy="536" r="8" fill="#f1c97d"/>
+<circle cx="940" cy="536" r="8" fill="#f1c97d"/>
+<circle cx="940" cy="316" r="8" fill="#f1c97d"/>
+<text x="838" y="544" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="962" y="324" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">B</text>
+<text x="900" y="562" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f1c97d" text-anchor="middle" font-weight="normal">B = 90 - 70 = 20 deg</text>
+<path d="M 910 536 Q 900 512 877 489" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.7"/>
+</svg>

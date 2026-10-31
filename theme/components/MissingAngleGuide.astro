@@ -1,0 +1,502 @@
+---
+/**
+ * MissingAngleGuide.astro - Educational guide for the Right Triangle Missing Angle Calculator page.
+ * Built from the user's actual master prompt (Page 8 of 45). EN only.
+ * Sections follow the prompt: intro, angle anatomy, formula derivation, calculator
+ * walkthrough, 4 foundational examples, 12 practical examples, complementary-angle
+ * relationship, reverse formula, complementary vs supplementary, 12 mistakes,
+ * verification, choosing a calculator, 12 FAQs, related calculators.
+ */
+import katex from 'katex';
+import Faq from 'theme/components/Faq.astro';
+
+const rich = (s: string): string => {
+  if (!s || typeof s !== 'string') return '';
+  let out = s;
+  out = out.replace(
+    /\[\[\[(.+?)\]\]\]/g,
+    (_, l) =>
+      `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
+  );
+  out = out.replace(
+    /\[\[(.+?)\]\]/g,
+    (_, l) =>
+      `<span dir="ltr" class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>`
+  );
+  return out;
+};
+
+const imgSrc = (name: string): string => `/images/missing-angle/${name}`;
+
+const faqs = [
+  {
+    question: 'How do you find a missing angle in a right triangle?',
+    answer: 'Subtract the known acute angle from 90 degrees. The formula is B = 90 - A, where A is the angle you know and B is the missing one. For example, if A is 35 degrees, then B = 90 - 35 = 55 degrees. No side lengths or trigonometric functions are needed.',
+  },
+  {
+    question: 'Why do the two acute angles add up to 90 degrees?',
+    answer: 'Every triangle contains 180 degrees in total. A right triangle reserves 90 of those degrees for its right angle, which leaves exactly 90 degrees to be shared between the two remaining acute angles. That is why A + B always equals 90 degrees in a right triangle.',
+  },
+  {
+    question: 'What is the formula for a missing angle?',
+    answer: 'The formula is B = 90 - A. Start from the triangle angle sum A + B + 90 = 180, subtract 90 from both sides to get A + B = 90, then subtract A from both sides. The reverse form, A = 90 - B, works the same way when B is the known angle.',
+  },
+  {
+    question: 'What are complementary angles?',
+    answer: 'Two angles are complementary when their measures add to 90 degrees. The pairs 30 and 60, 35 and 55, and 45 and 45 are all complementary. In every right triangle, the two acute angles are complementary by definition, which is exactly what the missing-angle formula expresses.',
+  },
+  {
+    question: 'Can I find the missing angle without knowing the side lengths?',
+    answer: 'Yes. When one acute angle is known, side lengths are irrelevant to this calculation. The complementary-angle relationship depends only on the angle sum, so subtracting from 90 degrees gives the exact answer. Side lengths matter only when no angle is known yet.',
+  },
+  {
+    question: 'What is the difference between complementary and supplementary angles?',
+    answer: 'Complementary angles add to 90 degrees; supplementary angles add to 180 degrees. The two acute angles of a right triangle are complementary. A common mistake is subtracting the known angle from 180 instead of 90, which forgets that the right angle already accounts for half of the triangle total.',
+  },
+  {
+    question: 'Can both acute angles be equal?',
+    answer: 'Yes, when each measures 45 degrees. Then 90 - 45 = 45, so the triangle is an isosceles right triangle with two equal legs. This is the only case where the two acute angles match; in every other right triangle they differ.',
+  },
+  {
+    question: 'What happens if the known angle is 35 degrees?',
+    answer: 'The missing angle is 90 - 35 = 55 degrees. You can verify it two ways: 35 + 55 = 90 confirms the complementary pair, and 35 + 55 + 90 = 180 confirms the full triangle angle sum. Both checks should always agree.',
+  },
+  {
+    question: 'What happens if the known angle is greater than 45 degrees?',
+    answer: 'The missing angle comes out smaller than 45 degrees, because the two must still total 90. For instance, if A is 68 degrees, then B = 90 - 68 = 22 degrees. As the known angle grows toward 90, its complement shrinks toward 0.',
+  },
+  {
+    question: 'Can a missing acute angle be exactly 0 or 90 degrees?',
+    answer: 'Not in an ordinary right triangle. An input of 0 or 90 degrees describes a degenerate limiting case with no real triangular area, not a triangle with three distinct vertices. The calculator requires the known angle to be strictly between 0 and 90 degrees, and the result always falls in the same range.',
+  },
+  {
+    question: 'How do I find angle A when angle B is known?',
+    answer: 'Use the reverse formula A = 90 - B. It is the same complementary relationship solved for the other variable. For example, if B is 62 degrees, then A = 90 - 62 = 28 degrees. Note that this calculator accepts angle A as its input, so apply the reverse formula by hand when only B is known.',
+  },
+  {
+    question: 'When should I use a sine, cosine, or tangent calculator instead?',
+    answer: 'Use an inverse trigonometric calculator when no angle is known yet but two side lengths are. The angle from sine calculator needs the opposite side and hypotenuse, the angle from cosine calculator needs the adjacent side and hypotenuse, and the angle from tangent calculator needs both legs. Once any acute angle is known, the missing-angle calculator finishes the job.',
+  },
+];
+---
+
+<!-- Table of Contents -->
+<nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label="Guide contents">
+  <h2 class="font-headline text-2xl font-bold">In This Guide</h2>
+  <ol class="mt-4 grid gap-2 sm:grid-cols-2">
+    <li><a class="hover:text-primary hover:underline" href="#missing-intro">How to Find a Missing Angle in a Right Triangle</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#missing-angles">What Are the Angles in a Right Triangle?</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#missing-formula">The Formula for Finding a Missing Angle</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#missing-howto">How to Use the Calculator</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#missing-examples">Step-by-Step Examples</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#missing-applications">Real-Life Applications</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#missing-relationship">How Complementary Angles Change</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#missing-reverse">What If You Know Angle B Instead?</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#missing-vs">Complementary vs. Supplementary Angles</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#missing-mistakes">Common Mistakes</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#missing-verify">Checking Your Answer</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#missing-choose">Choosing the Right Calculator</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#missing-faq">FAQs</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#missing-related">Related Calculators</a></li>
+  </ol>
+</nav>
+
+<!-- SECTION 1: Introduction -->
+<section id="missing-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Find a Missing Angle in a Right Triangle</h2>
+  <p>If one acute angle of a right triangle measures <span set:html={rich('[[35^\\circ]]')} />, the missing angle is <span set:html={rich('[[90^\\circ-35^\\circ=55^\\circ]]')} />. That single subtraction is the whole calculation. A right triangle always contains one 90-degree angle, so the two remaining angles must share exactly the 90 degrees that are left over. Subtracting the known angle from 90 degrees reveals the missing one, with no side lengths and no trigonometric functions required.</p>
+  <p>The answer, 55 degrees in this case, represents the other acute angle in the same right triangle. The two angles always work as a pair: knowing either one determines the other completely. This calculator exists for exactly that situation, when an angle is already known and only its complement is missing. When no angle is known yet, an <a href="/right-triangle-angle-from-tangent-calculator/" class="text-primary hover:underline">angle from tangent calculator</a> or one of its sine and cosine counterparts derives the first angle from measured sides.</p>
+</section>
+
+<!-- SECTION 2: Understanding angles -->
+<section id="missing-angles" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>What Are the Angles in a Right Triangle?</h2>
+
+  <h3>The Right Angle</h3>
+  <p>A 90-degree angle represents a perfect corner, the angle between a vertical wall and a level floor. In every right triangle this angle is fixed: it never changes size, and diagrams mark it with a small square at the vertex. Because one angle is permanently set to 90 degrees, the other two angles have only 90 degrees left to share between them, which forces both to be acute.</p>
+
+  <h3>The Two Acute Angles</h3>
+  <p>An acute angle measures more than <span set:html={rich('[[0^\\circ]]')} /> and less than <span set:html={rich('[[90^\\circ]]')} />. Both remaining angles of a right triangle fall in this range, and they are called complementary because their measures always add to 90 degrees. The pairing is strict: a single known acute angle leaves exactly one possible value for its partner, so the missing angle is never a matter of estimation.</p>
+
+  <h3>What Are Complementary Angles?</h3>
+  <p>Two angles are complementary when their measures add up to <span set:html={rich('[[90^\\circ]]')} />. The pairs <span set:html={rich('[[30^\\circ+60^\\circ=90^\\circ]]')} />, <span set:html={rich('[[35^\\circ+55^\\circ=90^\\circ]]')} />, and <span set:html={rich('[[45^\\circ+45^\\circ=90^\\circ]]')} /> are all complementary. Complementary angles do not need to be equal; equality happens only at 45 degrees each. Any two positive angles that total 90 degrees qualify, whether they sit inside the same triangle or not.</p>
+
+  <h3>Why the Angles of a Triangle Add Up to 180 Degrees</h3>
+  <p>Every triangle, whatever its shape, contains exactly 180 degrees across its three interior angles. In a right triangle the fixed right angle claims 90 of those degrees immediately, which leaves precisely 90 degrees for the two acute angles combined. The diagram below shows the full accounting for a triangle with angles of 35, 55, and 90 degrees.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('missing-angles.svg')} alt="Right triangle labeled with angles A 35 deg, B 55 deg, C 90 deg" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Angles A (35 deg) and B (55 deg) are complementary: A + B = 90 deg, and 35 + 55 + 90 = 180 deg.</figcaption>
+  </figure>
+</section>
+
+<!-- SECTION 3: Formula derivation -->
+<section id="missing-formula" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>The Formula for Finding a Missing Angle</h2>
+  <p>The formula comes straight from the triangle angle-sum rule. Start with the general statement:</p>
+  <p><span set:html={rich('[[[A+B+C=180^\\circ]]]')} /></p>
+  <p>Because the triangle is right-angled, the third angle is fixed:</p>
+  <p><span set:html={rich('[[[C=90^\\circ]]]')} /></p>
+  <p>Substitute that value into the sum:</p>
+  <p><span set:html={rich('[[[A+B+90^\\circ=180^\\circ]]]')} /></p>
+  <p>Subtract 90 degrees from both sides, and the two acute angles stand alone:</p>
+  <p><span set:html={rich('[[[A+B=90^\\circ]]]')} /></p>
+  <p>Finally, subtract the known angle <span set:html={rich('[[A]]')} /> from both sides to isolate the missing angle:</p>
+  <p><span set:html={rich('[[[B=90^\\circ-A]]]')} /></p>
+  <p>Each step is ordinary algebra applied to a geometric fact. Nothing is memorized blindly: the 90 degrees in the formula is the share of the angle sum left over after the right angle takes its half.</p>
+  <p>The same relationship works in reverse. If angle <span set:html={rich('[[B]]')} /> is the known one, solving for <span set:html={rich('[[A]]')} /> gives:</p>
+  <p><span set:html={rich('[[[A=90^\\circ-B]]]')} /></p>
+  <p>This calculator uses the first form because its input field accepts angle <span set:html={rich('[[A]]')} /> and returns angle <span set:html={rich('[[B]]')} />. The two formulas are not different rules; they are the same complementary-angle relationship solved for different unknowns.</p>
+
+  <h3>Why 90 Degrees, Not 180 Degrees</h3>
+  <p>A frequent error is subtracting the known angle from 180 degrees. That total covers all three angles of the triangle, so using it alone forgets that the right angle has already been accounted for. With <span set:html={rich('[[A=35^\\circ]]')} />, the wrong computation gives <span set:html={rich('[[180^\\circ-35^\\circ=145^\\circ]]')} />, which cannot be an acute angle of any right triangle. The correct computation, <span set:html={rich('[[90^\\circ-35^\\circ=55^\\circ]]')} />, respects the right angle and can be checked at once: <span set:html={rich('[[35^\\circ+55^\\circ+90^\\circ=180^\\circ]]')} />.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('missing-complementary.svg')} alt="Two panels contrasting the 180 deg triangle sum with the 90 deg acute pair" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Part A shows the full triangle sum; Part B isolates the complementary acute angles.</figcaption>
+  </figure>
+</section>
+
+<!-- SECTION 4: Calculator walkthrough -->
+<section id="missing-howto" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Use the Right Triangle Missing Angle Calculator</h2>
+  <p>The walkthrough below matches the actual interface on this page.</p>
+  <ol>
+    <li><strong>Identify the right triangle.</strong> Confirm the shape has a genuine 90-degree corner before doing anything else; the formula only applies to right triangles.</li>
+    <li><strong>Locate the acute angle you already know.</strong> This is angle <span set:html={rich('[[A]]')} />, the value you will type into the calculator.</li>
+    <li><strong>Confirm the known angle is valid.</strong> It must be greater than <span set:html={rich('[[0^\\circ]]')} /> and less than <span set:html={rich('[[90^\\circ]]')} />. Anything outside that range cannot be an acute angle of a right triangle.</li>
+    <li><strong>Enter the known angle <span set:html={rich('[[A]]')} /> in degrees.</strong> The input field accepts decimal values such as 68.5, so keep the precision of your measurement.</li>
+    <li><strong>Click Calculate Angle B.</strong> The tool applies <span set:html={rich('[[B=90^\\circ-A]]')} /> to your input.</li>
+    <li><strong>Read the calculated complementary angle.</strong> The output is angle <span set:html={rich('[[B]]')} /> in degrees.</li>
+    <li><strong>Add the two acute angles to check the result.</strong> The sum must equal 90 degrees; if it does not, recheck the input.</li>
+    <li><strong>Use Reset when you want to start a new calculation.</strong> This clears the input so a fresh angle can be entered.</li>
+  </ol>
+  <p>Notice what the calculator never asks for: no opposite-side length, no adjacent-side length, no hypotenuse, and no sine, cosine, or tangent values. One known acute angle is the entire input because the angle-sum rule does the rest. The tool also does not accept radians or a direct entry of angle <span set:html={rich('[[B]]')} />; its input field is specifically angle <span set:html={rich('[[A]]')} /> in degrees.</p>
+</section>
+
+<!-- SECTION 5: Four foundational examples -->
+<section id="missing-examples" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Step-by-Step Examples of Finding Missing Angles</h2>
+  <p>These four examples build the core skill before the real-world applications. Each follows the same pattern: write the formula, substitute, subtract.</p>
+
+  <h3>Example 1: A Known Angle of 35 Degrees</h3>
+  <p>Given <span set:html={rich('[[A=35^\\circ]]')} />, find angle <span set:html={rich('[[B]]')} />.</p>
+  <p>Step 1: Write the formula. <span set:html={rich('[[B=90^\\circ-A]]')} /></p>
+  <p>Step 2: Substitute the known angle. <span set:html={rich('[[B=90^\\circ-35^\\circ]]')} /></p>
+  <p>Step 3: Subtract. <span set:html={rich('[[B=55^\\circ]]')} /></p>
+  <p>Check: <span set:html={rich('[[35^\\circ+55^\\circ=90^\\circ]]')} />. The answer is valid because the two acute angles total exactly 90 degrees and each sits strictly between 0 and 90 degrees.</p>
+
+  <h3>Example 2: A Known Angle of 20 Degrees</h3>
+  <p>Given <span set:html={rich('[[A=20^\\circ]]')} />:</p>
+  <p><span set:html={rich('[[B=90^\\circ-20^\\circ=70^\\circ]]')} /></p>
+  <p>A smaller acute angle produces a larger complementary angle. Because the pair must always total 90 degrees, every degree removed from one angle is added to the other. Here the 20-degree angle leaves a generous 70 degrees for its partner.</p>
+
+  <h3>Example 3: An Isosceles Right Triangle</h3>
+  <p>Given <span set:html={rich('[[A=45^\\circ]]')} />:</p>
+  <p><span set:html={rich('[[B=90^\\circ-45^\\circ=45^\\circ]]')} /></p>
+  <p>Both acute angles are equal at 45 degrees each. This is the isosceles right triangle, the only right triangle whose acute angles match. Its two legs are also equal in length, which is why the 45-45-90 triangle appears so often in drafting and construction layouts.</p>
+
+  <h3>Example 4: A Known Angle of 68.5 Degrees</h3>
+  <p>Given <span set:html={rich('[[A=68.5^\\circ]]')} />:</p>
+  <p><span set:html={rich('[[B=90^\\circ-68.5^\\circ=21.5^\\circ]]')} /></p>
+  <p>A relatively large acute angle has a relatively small complement. The decimal input works exactly like a whole-number input: subtract carefully, keeping the .5 aligned, and 90 minus 68.5 gives 21.5. The check still holds: <span set:html={rich('[[68.5^\\circ+21.5^\\circ=90^\\circ]]')} />.</p>
+</section>
+
+<!-- SECTION 6: Twelve practical examples -->
+<section id="missing-applications" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Real-Life Applications of Missing Angles</h2>
+  <p>One point needs care before the examples begin. The missing-angle formula applies directly when two angles belong to the same right triangle. In practical settings, a horizontal surface and a vertical surface often serve as the perpendicular reference lines, and a diagonal component such as a ladder or rafter forms the hypotenuse. The examples below state that assumption wherever it is used.</p>
+
+  <h3>Example 5: Finding a Roof Rafter Angle to the Vertical</h3>
+  <p>A roof rafter makes an angle of <span set:html={rich('[[35^\\circ]]')} /> with the horizontal. Find the angle between the same rafter and a vertical reference line.</p>
+  <p>Given <span set:html={rich('[[A=35^\\circ]]')} /> measured from the horizontal.</p>
+  <p><span set:html={rich('[[B=90^\\circ-35^\\circ=55^\\circ]]')} /></p>
+  <p>The horizontal and vertical reference lines are perpendicular, so the two angles are complementary. The 55-degree result is the angle relative to the vertical, not a complete roof-pitch or structural calculation.</p>
+
+  <h3>Example 6: Finding a Ladder Angle to a Wall</h3>
+  <p>A ladder rests against a vertical wall and forms an angle of <span set:html={rich('[[68^\\circ]]')} /> with the level ground. Find the angle between the ladder and the wall.</p>
+  <p><span set:html={rich('[[B=90^\\circ-68^\\circ=22^\\circ]]')} /></p>
+  <p>The ground and the wall form a right angle in this idealized model, with the ladder as the hypotenuse. The 22-degree angle describes the ladder orientation relative to the wall. The calculation alone does not establish whether the ladder is safely positioned.</p>
+
+  <h3>Example 7: Understanding a Ramp Angle to the Vertical</h3>
+  <p>A straight ramp makes an angle of <span set:html={rich('[[8^\\circ]]')} /> with the horizontal. Find the complementary angle between the ramp direction and a vertical reference line.</p>
+  <p><span set:html={rich('[[B=90^\\circ-8^\\circ=82^\\circ]]')} /></p>
+  <p>The ramp angle to the vertical is the complement of its angle to the horizontal. A shallow 8-degree incline leaves a steep 82-degree angle against the vertical. This angle alone does not determine accessibility or code compliance.</p>
+
+  <h3>Example 8: Finding a Staircase Stringer Complementary Angle</h3>
+  <p>A staircase stringer makes an angle of <span set:html={rich('[[32^\\circ]]')} /> with the floor. Calculate its angle relative to a vertical reference line.</p>
+  <p><span set:html={rich('[[B=90^\\circ-32^\\circ=58^\\circ]]')} /></p>
+  <p>The floor, the vertical reference, and the diagonal stringer form the right triangle. The 58-degree result describes the stringer orientation against the vertical. It does not verify staircase dimensions or building-code compliance.</p>
+
+  <h3>Example 9: Calculating a Diagonal Brace Angle to a Vertical Support</h3>
+  <p>A diagonal brace makes an angle of <span set:html={rich('[[40^\\circ]]')} /> with a horizontal beam. Find the angle between the brace and a perpendicular vertical support.</p>
+  <p><span set:html={rich('[[B=90^\\circ-40^\\circ=50^\\circ]]')} /></p>
+  <p>The two reference directions must be perpendicular for the complement rule to apply. The 50-degree angle is a pure geometry result; it does not determine the structural strength of the brace.</p>
+
+  <h3>Example 10: Finding a Guy Wire Angle to a Vertical Pole</h3>
+  <p>A guy wire makes an angle of <span set:html={rich('[[30^\\circ]]')} /> with level ground. Find the angle between the wire and a vertical pole.</p>
+  <p><span set:html={rich('[[B=90^\\circ-30^\\circ=60^\\circ]]')} /></p>
+  <p>The horizontal ground and the vertical pole define the right angle, with the wire as the hypotenuse. The 60-degree result reframes the same wire direction against the vertical reference. It does not establish the wire tension or anchor safety.</p>
+
+  <h3>Example 11: Converting an Elevation Angle to Its Complement</h3>
+  <p>A surveying diagram records a line of sight at an elevation angle of <span set:html={rich('[[24^\\circ]]')} /> above the horizontal. Calculate its complementary angle relative to the vertical.</p>
+  <p><span set:html={rich('[[B=90^\\circ-24^\\circ=66^\\circ]]')} /></p>
+  <p>An angle measured from the horizontal and an angle measured from the vertical describe the same line of sight from perpendicular viewpoints. The example assumes a straight line of sight with perpendicular horizontal and vertical references.</p>
+
+  <h3>Example 12: Finding a Roof Slope Angle to a Vertical Reference</h3>
+  <p>A roof slope is measured at <span set:html={rich('[[27^\\circ]]')} /> relative to the horizontal. Find its complementary angle to the vertical.</p>
+  <p><span set:html={rich('[[B=90^\\circ-27^\\circ=63^\\circ]]')} /></p>
+  <p>The two measurements describe the same slope from different perpendicular reference directions. Neither measurement alone is a structural assessment.</p>
+
+  <h3>Example 13: A Diagonal in a Square Drafting Layout</h3>
+  <p>A diagonal line in a square drafting layout makes an angle of <span set:html={rich('[[45^\\circ]]')} /> with one side. Find the angle it makes with the adjacent perpendicular side.</p>
+  <p><span set:html={rich('[[B=90^\\circ-45^\\circ=45^\\circ]]')} /></p>
+  <p>The diagonal bisects the square right angle, so both resulting angles are 45 degrees. This relationship helps with basic drawing and layout checks: if a measured diagonal does not split the corner evenly, the layout is not square.</p>
+
+  <h3>Example 14: Finding a Machine Panel Complementary Angle</h3>
+  <p>A panel is tilted <span set:html={rich('[[15^\\circ]]')} /> away from the horizontal. Calculate the angle between the panel orientation and the vertical reference direction.</p>
+  <p><span set:html={rich('[[B=90^\\circ-15^\\circ=75^\\circ]]')} /></p>
+  <p>The horizontal and vertical references are perpendicular, so the panel tilt and its complement describe the same orientation. The result describes orientation only, not machine safety or performance.</p>
+
+  <h3>Example 15: Converting a Tree Observation Angle</h3>
+  <p>A person looks toward the top of a tree at an angle of elevation of <span set:html={rich('[[38^\\circ]]')} /> above the horizontal. Find the complementary angle between the line of sight and a vertical reference direction.</p>
+  <p><span set:html={rich('[[B=90^\\circ-38^\\circ=52^\\circ]]')} /></p>
+  <p>The calculation changes the reference direction, not the line of sight itself. The 52-degree angle is simply the same gaze measured against the vertical. It does not calculate the tree height.</p>
+
+  <h3>Example 16: Finding a Handrail Angle to a Vertical Support</h3>
+  <p>A diagonal handrail makes an angle of <span set:html={rich('[[55^\\circ]]')} /> with a horizontal landing. Find its complementary angle relative to a vertical support line.</p>
+  <p><span set:html={rich('[[B=90^\\circ-55^\\circ=35^\\circ]]')} /></p>
+  <p>The complementary angle describes the same diagonal orientation from a different reference. A steep 55-degree angle against the horizontal becomes a shallow 35-degree angle against the vertical. The angle alone does not verify accessibility or construction requirements.</p>
+
+  <h3>Practical Examples Compared</h3>
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full min-w-[640px] border-collapse text-left text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30">
+          <th class="py-3 pr-4 font-semibold text-on-surface">Situation</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Known angle</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Reference direction</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Missing angle</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Calculation</th>
+          <th class="py-3 font-semibold text-on-surface">Interpretation</th>
+        </tr>
+      </thead>
+      <tbody class="text-on-surface-variant">
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Roof rafter</td><td class="py-2.5 pr-4">35 deg</td><td class="py-2.5 pr-4">Horizontal</td><td class="py-2.5 pr-4">55 deg</td><td class="py-2.5 pr-4">90 - 35</td><td class="py-2.5">Rafter angle to the vertical</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Ladder</td><td class="py-2.5 pr-4">68 deg</td><td class="py-2.5 pr-4">Ground</td><td class="py-2.5 pr-4">22 deg</td><td class="py-2.5 pr-4">90 - 68</td><td class="py-2.5">Ladder angle to the wall</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Ramp</td><td class="py-2.5 pr-4">8 deg</td><td class="py-2.5 pr-4">Horizontal</td><td class="py-2.5 pr-4">82 deg</td><td class="py-2.5 pr-4">90 - 8</td><td class="py-2.5">Ramp direction to the vertical</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Staircase stringer</td><td class="py-2.5 pr-4">32 deg</td><td class="py-2.5 pr-4">Floor</td><td class="py-2.5 pr-4">58 deg</td><td class="py-2.5 pr-4">90 - 32</td><td class="py-2.5">Stringer angle to the vertical</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Diagonal brace</td><td class="py-2.5 pr-4">40 deg</td><td class="py-2.5 pr-4">Horizontal beam</td><td class="py-2.5 pr-4">50 deg</td><td class="py-2.5 pr-4">90 - 40</td><td class="py-2.5">Brace angle to vertical support</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Guy wire</td><td class="py-2.5 pr-4">30 deg</td><td class="py-2.5 pr-4">Ground</td><td class="py-2.5 pr-4">60 deg</td><td class="py-2.5 pr-4">90 - 30</td><td class="py-2.5">Wire angle to the pole</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Surveying sight line</td><td class="py-2.5 pr-4">24 deg</td><td class="py-2.5 pr-4">Horizontal</td><td class="py-2.5 pr-4">66 deg</td><td class="py-2.5 pr-4">90 - 24</td><td class="py-2.5">Sight line to the vertical</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Roof slope</td><td class="py-2.5 pr-4">27 deg</td><td class="py-2.5 pr-4">Horizontal</td><td class="py-2.5 pr-4">63 deg</td><td class="py-2.5 pr-4">90 - 27</td><td class="py-2.5">Slope angle to the vertical</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Drafting diagonal</td><td class="py-2.5 pr-4">45 deg</td><td class="py-2.5 pr-4">One side</td><td class="py-2.5 pr-4">45 deg</td><td class="py-2.5 pr-4">90 - 45</td><td class="py-2.5">Diagonal to adjacent side</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Machine panel</td><td class="py-2.5 pr-4">15 deg</td><td class="py-2.5 pr-4">Horizontal</td><td class="py-2.5 pr-4">75 deg</td><td class="py-2.5 pr-4">90 - 15</td><td class="py-2.5">Panel orientation to vertical</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Tree observation</td><td class="py-2.5 pr-4">38 deg</td><td class="py-2.5 pr-4">Horizontal</td><td class="py-2.5 pr-4">52 deg</td><td class="py-2.5 pr-4">90 - 38</td><td class="py-2.5">Line of sight to the vertical</td></tr>
+        <tr><td class="py-2.5 pr-4">Handrail</td><td class="py-2.5 pr-4">55 deg</td><td class="py-2.5 pr-4">Landing</td><td class="py-2.5 pr-4">35 deg</td><td class="py-2.5 pr-4">90 - 55</td><td class="py-2.5">Handrail to vertical support</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- SECTION 7: Relationship between complementary angles -->
+<section id="missing-relationship" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding the Relationship Between Complementary Angles</h2>
+  <p>The pattern is perfectly predictable. If angle <span set:html={rich('[[A]]')} /> increases, angle <span set:html={rich('[[B]]')} /> decreases by exactly the same amount, because their total is locked at 90 degrees. If <span set:html={rich('[[A]]')} /> decreases, <span set:html={rich('[[B]]')} /> grows to fill the gap. At <span set:html={rich('[[A=45^\\circ]]')} /> the two meet in the middle, and neither acute angle can reach <span set:html={rich('[[0^\\circ]]')} /> or <span set:html={rich('[[90^\\circ]]')} /> in a genuine right triangle with three distinct vertices.</p>
+
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full min-w-[480px] border-collapse text-left text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30">
+          <th class="py-3 pr-4 font-semibold text-on-surface">Known angle A</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Formula</th>
+          <th class="py-3 font-semibold text-on-surface">Missing angle B</th>
+        </tr>
+      </thead>
+      <tbody class="text-on-surface-variant">
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">10 deg</td><td class="py-2.5 pr-4">90 - 10</td><td class="py-2.5">80 deg</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">20 deg</td><td class="py-2.5 pr-4">90 - 20</td><td class="py-2.5">70 deg</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">30 deg</td><td class="py-2.5 pr-4">90 - 30</td><td class="py-2.5">60 deg</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">45 deg</td><td class="py-2.5 pr-4">90 - 45</td><td class="py-2.5">45 deg</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">60 deg</td><td class="py-2.5 pr-4">90 - 60</td><td class="py-2.5">30 deg</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">75 deg</td><td class="py-2.5 pr-4">90 - 75</td><td class="py-2.5">15 deg</td></tr>
+        <tr><td class="py-2.5 pr-4">80 deg</td><td class="py-2.5 pr-4">90 - 80</td><td class="py-2.5">10 deg</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The table is symmetrical around 45 degrees: the pairs (10, 80), (20, 70), and (30, 60) mirror each other because swapping the known and missing angles just reads the same complementary relationship from the other side. The four panels below make this trade-off visual.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('missing-pairs.svg')} alt="Four triangles showing complementary pairs 20-70, 30-60, 45-45, 70-20 deg" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">As angle A grows, angle B shrinks by the same amount; their sum stays 90 deg.</figcaption>
+  </figure>
+</section>
+
+<!-- SECTION 8: Reverse formula -->
+<section id="missing-reverse" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>What If You Know Angle B Instead?</h2>
+  <p>The same complementary-angle rule works in reverse. If angle <span set:html={rich('[[B]]')} /> is the known one, solve the relationship for <span set:html={rich('[[A]]')} />:</p>
+  <p><span set:html={rich('[[[A=90^\\circ-B]]]')} /></p>
+  <p>No new formula is required; it is the identical equation with the roles exchanged.</p>
+
+  <h3>Worked Example</h3>
+  <p>Given <span set:html={rich('[[B=62^\\circ]]')} />:</p>
+  <p><span set:html={rich('[[A=90^\\circ-62^\\circ=28^\\circ]]')} /></p>
+  <p>Three more short reverse-direction examples follow the same step:</p>
+  <ul>
+    <li><span set:html={rich('[[B=15^\\circ]]')} />, so <span set:html={rich('[[A=90^\\circ-15^\\circ=75^\\circ]]')} />.</li>
+    <li><span set:html={rich('[[B=42^\\circ]]')} />, so <span set:html={rich('[[A=90^\\circ-42^\\circ=48^\\circ]]')} />.</li>
+    <li><span set:html={rich('[[B=70^\\circ]]')} />, so <span set:html={rich('[[A=90^\\circ-70^\\circ=20^\\circ]]')} />.</li>
+  </ul>
+  <p>One practical note: this calculator input field accepts angle <span set:html={rich('[[A]]')} /> and returns angle <span set:html={rich('[[B]]')} />. A reader who knows only angle <span set:html={rich('[[B]]')} /> should apply the reverse formula by hand unless the interface is verified to support entering <span set:html={rich('[[B]]')} /> directly.</p>
+</section>
+
+<!-- SECTION 9: Complementary vs supplementary -->
+<section id="missing-vs" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Complementary Angles vs. Supplementary Angles</h2>
+  <p>The two terms sound alike and both describe angle pairs, but they answer different questions.</p>
+
+  <h3>Complementary Angles</h3>
+  <p>Two angles are complementary when their sum is <span set:html={rich('[[90^\\circ]]')} />. The two acute angles of a right triangle are the textbook example: they must be complementary because the right angle already claims the other 90 degrees of the triangle total.</p>
+
+  <h3>Supplementary Angles</h3>
+  <p>Two angles are supplementary when their sum is <span set:html={rich('[[180^\\circ]]')} />. A straight line, for instance, can be split into two supplementary angles. Supplementary pairs should never be confused with the two acute angles of a right triangle, which sum to 90, not 180.</p>
+
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full min-w-[480px] border-collapse text-left text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30">
+          <th class="py-3 pr-4 font-semibold text-on-surface">Relationship</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Total</th>
+          <th class="py-3 font-semibold text-on-surface">Example</th>
+        </tr>
+      </thead>
+      <tbody class="text-on-surface-variant">
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Complementary</td><td class="py-2.5 pr-4">90 deg</td><td class="py-2.5">35 + 55</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Supplementary</td><td class="py-2.5 pr-4">180 deg</td><td class="py-2.5">110 + 70</td></tr>
+        <tr><td class="py-2.5 pr-4">Right angle</td><td class="py-2.5 pr-4">90 deg</td><td class="py-2.5">The fixed angle in a right triangle</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The full triangle angle sum is 180 degrees, but the two acute angles together sum to 90 degrees. Keeping those two totals separate is the key to avoiding the most common mistake on this page.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('missing-applications.svg')} alt="Four panels showing complementary angles for a ladder, rafter, brace, and square diagonal" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Complementary pairs in real settings: each known angle determines its partner.</figcaption>
+  </figure>
+</section>
+
+<!-- SECTION 10: Common mistakes -->
+<section id="missing-mistakes" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Common Mistakes When Finding a Missing Angle</h2>
+  <ol>
+    <li><strong>Subtracting the known angle from 180 degrees instead of 90.</strong> The 180-degree total includes the right angle, which is already fixed. What goes wrong: with <span set:html={rich('[[A=35^\\circ]]')} /> the wrong math gives 145 degrees, an impossible acute angle. Fix: subtract from 90, giving <span set:html={rich('[[55^\\circ]]')} />.</li>
+    <li><strong>Forgetting that one angle is already 90 degrees.</strong> The right angle is easy to overlook because it needs no calculation. What goes wrong: treating the triangle as if all three angles were unknown. Fix: remember the right angle claims half the 180-degree total before you begin.</li>
+    <li><strong>Entering 90 degrees into the calculator.</strong> The tool expects an acute angle strictly between 0 and 90 degrees. What goes wrong: a 90-degree input leaves no room for a second acute angle. Fix: enter only the known acute angle.</li>
+    <li><strong>Entering an angle greater than 90 degrees.</strong> No acute angle exceeds 90 degrees by definition. What goes wrong: the subtraction yields a negative result, which has no geometric meaning here. Fix: check that the input is below 90 degrees.</li>
+    <li><strong>Entering 0 degrees.</strong> A zero angle collapses the triangle into a line segment. What goes wrong: the result claims a 90-degree complement for a shape with no area. Fix: use only positive acute angles.</li>
+    <li><strong>Confusing complementary angles with supplementary angles.</strong> Complementary pairs sum to 90 degrees; supplementary pairs sum to 180. What goes wrong: subtracting from 180 produces the mistake in item 1. Fix: match the word to the total, complementary with 90.</li>
+    <li><strong>Assuming the two acute angles must be equal.</strong> Equality holds only at 45 degrees each. What goes wrong: expecting symmetry in a 20-70 triangle. Fix: let the subtraction decide; most pairs differ.</li>
+    <li><strong>Mixing up angle labels A and B.</strong> The calculator takes <span set:html={rich('[[A]]')} /> and returns <span set:html={rich('[[B]]')} />. What goes wrong: entering the already-known complement as if it were the input. Fix: label the known angle A before typing anything.</li>
+    <li><strong>Thinking that side lengths are required for this particular calculation.</strong> Sides matter for trigonometry, not for complements. What goes wrong: stalling on a problem that needs only subtraction. Fix: if an acute angle is known, subtract it from 90 and finish.</li>
+    <li><strong>Using inverse sine, cosine, or tangent when simple subtraction is sufficient.</strong> Inverse functions answer a harder question. What goes wrong: extra work and extra chances for mode errors. Fix: when an angle is known, the <a href="/right-triangle-angle-from-sine-calculator/" class="text-primary hover:underline">angle from sine calculator</a> and its siblings are the wrong tools; subtraction is exact and immediate.</li>
+    <li><strong>Assuming a measured physical angle automatically forms a right triangle without checking the reference directions.</strong> Real corners are rarely perfect. What goes wrong: applying the complement rule where the 90-degree corner does not actually exist. Fix: verify the reference directions are perpendicular before subtracting.</li>
+    <li><strong>Rounding an input measurement unnecessarily before subtracting.</strong> Early rounding throws away precision the input actually had. What goes wrong: 68.5 rounded to 69 gives 21 instead of 21.5. Fix: subtract with the full measured value, then round the result to match the input precision.</li>
+  </ol>
+
+  <h3>Wrong Versus Correct</h3>
+  <p>Given <span set:html={rich('[[A=35^\\circ]]')} />:</p>
+  <p>Incorrect: <span set:html={rich('[[180^\\circ-35^\\circ=145^\\circ]]')} />. This is not the missing acute angle because the right angle has not been accounted for; 145 degrees cannot sit inside a right triangle alongside a 90-degree corner.</p>
+  <p>Correct: <span set:html={rich('[[90^\\circ-35^\\circ=55^\\circ]]')} />.</p>
+  <p>Verify: <span set:html={rich('[[35^\\circ+55^\\circ+90^\\circ=180^\\circ]]')} />. The full angle sum confirms the answer.</p>
+</section>
+
+<!-- SECTION 11: Verification -->
+<section id="missing-verify" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Check Whether Your Missing Angle Is Valid</h2>
+  <p>The valid input range is:</p>
+  <p><span set:html={rich('[[[0^\\circ \\lt A \\lt 90^\\circ]]]')} /></p>
+  <p>and the calculated angle must satisfy the same range:</p>
+  <p><span set:html={rich('[[[0^\\circ \\lt B \\lt 90^\\circ]]]')} /></p>
+  <p>An input of 0 or 90 degrees would produce a degenerate limiting case rather than an ordinary right triangle with three distinct vertices and positive side lengths. The calculator enforces the strict inequality for exactly this reason.</p>
+
+  <h3>Method 1: Add the Acute Angles</h3>
+  <p>Verify <span set:html={rich('[[A+B=90^\\circ]]')} />. Example: <span set:html={rich('[[35^\\circ+55^\\circ=90^\\circ]]')} />. This is the fastest check and catches the 180-degree mistake immediately.</p>
+
+  <h3>Method 2: Check the Complete Triangle</h3>
+  <p>Verify <span set:html={rich('[[A+B+90^\\circ=180^\\circ]]')} />. Example: <span set:html={rich('[[35^\\circ+55^\\circ+90^\\circ=180^\\circ]]')} />. This confirms the answer against the universal triangle angle sum.</p>
+
+  <h3>Method 3: Check the Reverse Calculation</h3>
+  <p>If <span set:html={rich('[[B=90^\\circ-A]]')} />, then <span set:html={rich('[[A=90^\\circ-B]]')} /> must recover the original input. With <span set:html={rich('[[A=35^\\circ]]')} /> giving <span set:html={rich('[[B=55^\\circ]]')} />, the reverse check is <span set:html={rich('[[90^\\circ-55^\\circ=35^\\circ]]')} />. This consistency check needs no side measurements at all.</p>
+  <p>One caution: if the input angle comes from a physical measurement, its uncertainty carries into the result. A roughly measured 35 degrees yields a roughly known 55 degrees; report the answer with precision that matches the measurement. For checks involving side lengths, the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem calculator</a> can confirm the triangle geometry independently.</p>
+</section>
+
+<!-- SECTION 12: Choosing a calculator -->
+<section id="missing-choose" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Choosing the Right Right Triangle Calculator</h2>
+  <p>Each tool below answers a different question. Match the tool to what you actually know:</p>
+  <ul>
+    <li><strong>Right Triangle Missing Angle Calculator</strong> (this page): finds the complementary angle when one acute angle is already known. Use it whenever the input is an angle, not a side.</li>
+    <li><a href="/right-triangle-angle-from-sine-calculator/" class="text-primary hover:underline"><strong>Right Triangle Angle From Sine Calculator</strong></a>: finds an acute angle from the opposite side and the hypotenuse. Use it when those two lengths were measured.</li>
+    <li><a href="/right-triangle-angle-from-cosine-calculator/" class="text-primary hover:underline"><strong>Right Triangle Angle From Cosine Calculator</strong></a>: finds an acute angle from the adjacent side and the hypotenuse.</li>
+    <li><a href="/right-triangle-angle-from-tangent-calculator/" class="text-primary hover:underline"><strong>Right Triangle Angle From Tangent Calculator</strong></a>: finds an acute angle from the opposite and adjacent sides, the two legs.</li>
+    <li><a href="/right-triangle-side-from-sine-calculator/" class="text-primary hover:underline"><strong>Right Triangle Side From Sine Calculator</strong></a>: finds a missing side length when an angle and one side are known.</li>
+    <li><a href="/right-triangle-side-from-cosine-calculator/" class="text-primary hover:underline"><strong>Right Triangle Side From Cosine Calculator</strong></a>: finds a missing side length from an angle and the hypotenuse or adjacent side.</li>
+    <li><a href="/right-triangle-side-from-tangent-calculator/" class="text-primary hover:underline"><strong>Right Triangle Side From Tangent Calculator</strong></a>: finds a missing leg from a known angle and the other leg.</li>
+  </ul>
+  <p>The decision rule is simple. You know one acute angle: use the missing-angle calculator on this page. You know two suitable side lengths: use the matching inverse-trigonometric calculator. You need an unknown side: use a side calculator. And you need the second angle after a trigonometric calculation: subtract the known angle from 90 degrees, which is exactly what this page automates.</p>
+</section>
+
+<!-- SECTION 13: FAQs -->
+<section id="missing-faq" class="mx-auto mt-12 w-full max-w-4xl section-shell scroll-mt-24">
+  <Faq heading="Frequently Asked Questions" items={faqs} />
+</section>
+
+<!-- SECTION 14: Related calculators -->
+<section id="missing-related" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Explore Related Triangle Calculators</h2>
+  <ul class="mt-5">
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-angle-from-sine-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">01</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Angle From Sine Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-angle-from-cosine-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">02</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Angle From Cosine Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-angle-from-tangent-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">03</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Angle From Tangent Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-side-from-sine-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">04</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Side From Sine Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-side-from-cosine-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">05</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Side From Cosine Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-side-from-tangent-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">06</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Side From Tangent Calculator</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- Conclusion -->
+<section class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Find Any Missing Angle With Confidence</h2>
+  <p>The missing-angle calculation is the simplest operation in right-triangle geometry: subtract the known acute angle from 90 degrees. Behind that subtraction sits the triangle angle-sum rule, which reserves half of every triangle total for the right angle and leaves the other half to the complementary pair. Whether the known angle comes from a roof rafter, a ladder, a staircase stringer, or a drafting layout, the method never changes: confirm the right angle, subtract from 90, and verify that the two acute angles total 90 degrees. Keep this page bookmarked for the moments when an angle is already known and only its partner is missing.</p>
+</section>

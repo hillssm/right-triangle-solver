@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>Arcsin real-world applications</title>
+<desc>Four panels showing ladder, flagpole, kite, and ramp angle calculations with arcsin.</desc>
+<rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+<text x="600" y="60" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="32" fill="#f5eeda" text-anchor="middle" font-weight="bold">Real-world arcsin problems</text>
+
+<!-- Panel 1: Ladder -->
+<rect x="40" y="100" width="540" height="220" rx="14" fill="#1c1b1b" stroke="#38bdf8" stroke-width="2"/>
+<text x="310" y="145" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#38bdf8" text-anchor="middle" font-weight="bold">Ladder against a wall</text>
+<line x1="140" y1="290" x2="140" y2="160" stroke="#f472b6" stroke-width="6" stroke-linecap="round"/>
+<line x1="140" y1="160" x2="260" y2="290" stroke="#f1c97d" stroke-width="6" stroke-linecap="round"/>
+<line x1="140" y1="290" x2="260" y2="290" stroke="#38bdf8" stroke-width="4"/>
+<text x="310" y="200" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">12 ft ladder,</text>
+<text x="310" y="230" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">9 ft up the wall</text>
+<text x="310" y="270" font-family="Noto Serif, Georgia, serif" font-size="22" fill="#f1c97d" text-anchor="middle" font-style="italic">arcsin(9/12) = 48.59 deg</text>
+
+<!-- Panel 2: Flagpole -->
+<rect x="620" y="100" width="540" height="220" rx="14" fill="#1c1b1b" stroke="#f472b6" stroke-width="2"/>
+<text x="890" y="145" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f472b6" text-anchor="middle" font-weight="bold">Flagpole cable</text>
+<line x1="760" y1="290" x2="760" y2="160" stroke="#f472b6" stroke-width="6" stroke-linecap="round"/>
+<line x1="760" y1="160" x2="880" y2="290" stroke="#f1c97d" stroke-width="6" stroke-linecap="round"/>
+<line x1="760" y1="290" x2="880" y2="290" stroke="#38bdf8" stroke-width="4"/>
+<text x="890" y="200" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">20 m cable,</text>
+<text x="890" y="230" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">15 m pole height</text>
+<text x="890" y="270" font-family="Noto Serif, Georgia, serif" font-size="22" fill="#f1c97d" text-anchor="middle" font-style="italic">arcsin(15/20) = 48.59 deg</text>
+
+<!-- Panel 3: Kite -->
+<rect x="40" y="350" width="540" height="220" rx="14" fill="#1c1b1b" stroke="#f1c97d" stroke-width="2"/>
+<text x="310" y="395" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f1c97d" text-anchor="middle" font-weight="bold">Kite string height</text>
+<line x1="140" y1="540" x2="140" y2="410" stroke="#f472b6" stroke-width="6" stroke-linecap="round"/>
+<line x1="140" y1="410" x2="260" y2="540" stroke="#f1c97d" stroke-width="6" stroke-linecap="round"/>
+<line x1="140" y1="540" x2="260" y2="540" stroke="#38bdf8" stroke-width="4"/>
+<text x="310" y="450" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">50 m string,</text>
+<text x="310" y="480" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">30 m altitude</text>
+<text x="310" y="520" font-family="Noto Serif, Georgia, serif" font-size="22" fill="#f1c97d" text-anchor="middle" font-style="italic">arcsin(30/50) = 36.87 deg</text>
+
+<!-- Panel 4: Ramp -->
+<rect x="620" y="350" width="540" height="220" rx="14" fill="#1c1b1b" stroke="#38bdf8" stroke-width="2"/>
+<text x="890" y="395" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#38bdf8" text-anchor="middle" font-weight="bold">Wheelchair ramp</text>
+<line x1="760" y1="540" x2="760" y2="470" stroke="#f472b6" stroke-width="6" stroke-linecap="round"/>
+<line x1="760" y1="470" x2="900" y2="540" stroke="#f1c97d" stroke-width="6" stroke-linecap="round"/>
+<line x1="760" y1="540" x2="900" y2="540" stroke="#38bdf8" stroke-width="4"/>
+<text x="890" y="450" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">6 m ramp,</text>
+<text x="890" y="480" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#f5eeda" text-anchor="middle">1 m rise</text>
+<text x="890" y="520" font-family="Noto Serif, Georgia, serif" font-size="22" fill="#f1c97d" text-anchor="middle" font-style="italic">arcsin(1/6) = 9.59 deg</text>
+</svg>

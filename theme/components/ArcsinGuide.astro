@@ -1,0 +1,373 @@
+---
+/**
+ * ArcsinGuide.astro - Educational guide for the Right Triangle Angle From Sine Calculator page.
+ * En-only (following ArccosGuide pattern). 13 sections, 4 SVG diagrams, 16 examples, 12 FAQs.
+ */
+import katex from 'katex';
+import Faq from 'theme/components/Faq.astro';
+
+const rich = (s: string): string => {
+  if (!s || typeof s !== 'string') return '';
+  let out = s;
+  out = out.replace(
+    /\[\[\[(.+?)\]\]\]/g,
+    (_, l) =>
+      `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
+  );
+  out = out.replace(
+    /\[\[(.+?)\]\]/g,
+    (_, l) =>
+      `<span dir="ltr" class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>`
+  );
+  return out;
+};
+
+const imgSrc = (name: string): string => `/images/angle-from-sine/${name}`;
+---
+
+<!-- Table of Contents -->
+<nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label="Guide contents">
+  <h2 class="font-headline text-2xl font-bold">In This Guide</h2>
+  <ol class="mt-4 grid gap-2 sm:grid-cols-2">
+    <li><a class="hover:text-primary hover:underline" href="#arcsin-intro">What Is the Angle From Sine Calculator?</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arcsin-what">Understanding Arcsin (Inverse Sine)</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arcsin-vs">Arcsin vs. Arccos vs. Arctan</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arcsin-anatomy">Opposite Side and Hypotenuse</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arcsin-howto">How to Use the Calculator</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arcsin-examples">16 Worked Examples</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arcsin-special">Special Angle Values</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arcsin-mistakes">Common Mistakes</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arcsin-verify">Verifying Your Answer</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arcsin-applications">Real-Life Applications</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arcsin-related">Related Calculators</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#arcsin-faq">FAQs</a></li>
+  </ol>
+</nav>
+
+<!-- Section 1: Introduction -->
+<section id="arcsin-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>What Is the Right Triangle Angle From Sine Calculator?</h2>
+  <p>The right triangle angle from sine calculator finds an acute angle when you know the opposite side and the hypotenuse. It applies the inverse sine function, written arcsin or sin<span set:html={rich('[[-1]]')} />, to the ratio of those two sides. The result is angle A in degrees.</p>
+  <p>This tool exists for a specific measurement situation: you can measure the side across from your target angle and the longest side of the triangle, but the adjacent side is unknown or hard to reach. Instead of calculating the adjacent side first, arcsin skips it entirely and converts the opposite-over-hypotenuse ratio straight into the angle.</p>
+  <p>For example, an opposite side of 3 and a hypotenuse of 5 give the ratio 0.6. The arcsin of 0.6 is approximately 36.87 degrees. That is angle A. The other acute angle follows from the complement rule: 90 minus 36.87, or 53.13 degrees.</p>
+  <p>Arcsin is one of three inverse trigonometric tools on this site. If your known sides are the adjacent side and the hypotenuse, the <a href="/right-triangle-angle-from-cosine-calculator/" class="text-primary hover:underline">angle from cosine calculator</a> is the right choice. If you know both legs but not the hypotenuse, use the <a href="/right-triangle-angle-from-tangent-calculator/" class="text-primary hover:underline">angle from tangent calculator</a>. This page covers the sine case in full depth.</p>
+</section>
+
+<!-- Section 2: What is arcsin -->
+<section id="arcsin-what" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding Arcsin (Inverse Sine)</h2>
+  <p>Regular sine takes an angle and returns a ratio. The sine of 30 degrees is 0.5. Arcsin reverses this: it takes a ratio and returns the angle. The arcsin of 0.5 is 30 degrees. The two functions undo each other, which is why arcsin is also written as sin<span set:html={rich('[[-1]]')} />.</p>
+  <p>The formula used by this calculator is <span set:html={rich('[[A = \\sin^{-1}(a/c)]]')} />. Here a is the opposite side, c is the hypotenuse, and A is the angle across from side a. The ratio a/c always falls between 0 and 1 for a valid right triangle, because the opposite side is always shorter than the hypotenuse.</p>
+  <p>Think of arcsin as asking a question: "Which angle has this sine value?" If a/c equals 0.6, the question becomes "which angle has a sine of 0.6?" The answer, 36.87 degrees, is the angle whose opposite side is 60 percent as long as the hypotenuse.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('arcsin-ratio.svg')} alt="Diagram showing the two steps of arcsin: divide a by c, then apply arcsin to get the angle" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">How arcsin works: divide the opposite side by the hypotenuse, then apply inverse sine to recover the angle.</figcaption>
+  </figure>
+
+  <h3>The Ratio Tells a Story</h3>
+  <p>The value of a/c describes the shape of the triangle. A ratio near 1 means the opposite side is almost as long as the hypotenuse, so the angle across from it opens wide toward 90 degrees. A ratio near 0 means the opposite side is very short compared to the hypotenuse, so the angle is tiny. A ratio of exactly 0.5 always means 30 degrees.</p>
+  <h3>Domain of Arcsin</h3>
+  <p>Arcsin only accepts inputs from 0 to 1 in this geometric context. A ratio above 1 is impossible for a right triangle and signals a labeling error: the hypotenuse must be the denominator and must be the longest side. A negative ratio would describe an angle outside the first quadrant, which cannot appear as angle A in a right triangle.</p>
+</section>
+
+<!-- Section 3: Arcsin vs others -->
+<section id="arcsin-vs" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Arcsin vs. Arccos vs. Arctan: When to Use Each</h2>
+  <p>All three inverse functions find the same angle when applied to the same triangle. They differ only in which sides they require. Choosing correctly saves you from computing a side you do not need.</p>
+  <p>Use <strong>arcsin</strong> when you know the opposite side (a) and the hypotenuse (c). The formula is <span set:html={rich('[[A = \\sin^{-1}(a/c)]]')} />. This is the natural choice for height problems: the vertical rise is opposite the ground-level angle, so when you know the height and the slant distance, arcsin fits the measurements directly.</p>
+  <p>Use <strong>arccos</strong> when you know the adjacent side (b) and the hypotenuse (c). The formula is <span set:html={rich('[[A = \\cos^{-1}(b/c)]]')} />. Slope problems favor arccos: the horizontal run is adjacent to the slope angle. The <a href="/right-triangle-angle-from-cosine-calculator/" class="text-primary hover:underline">angle from cosine calculator</a> handles this case.</p>
+  <p>Use <strong>arctan</strong> when you know both legs (a and b) but not the hypotenuse. The formula is <span set:html={rich('[[A = \\tan^{-1}(a/b)]]')} />. Field measurements like rise over run favor arctan because both legs are measured directly. See the <a href="/right-triangle-angle-from-tangent-calculator/" class="text-primary hover:underline">angle from tangent calculator</a> for that method.</p>
+  <h3>They Must Agree</h3>
+  <p>For any single triangle, arcsin(a/c), arccos(b/c), and arctan(a/b) produce the identical angle. In a 3-4-5 triangle, arcsin(3/5), arccos(4/5), and arctan(3/4) all equal 36.87 degrees. If two methods disagree, a side is mislabeled. This cross-check is the most reliable verification available, and the <a href="/right-triangle-trig-ratios-calculator/" class="text-primary hover:underline">trig ratios calculator</a> can confirm all three ratios at once.</p>
+  <h3>Why Not Always Use Arctan?</h3>
+  <p>Arctan needs both legs. If the adjacent side is unknown and hard to measure, computing it first just to use arctan adds an unnecessary step and an extra chance of error. Arcsin goes straight from the two sides you have to the angle you want. Match the function to your measurements, not to habit.</p>
+</section>
+
+<!-- Section 4: Anatomy -->
+<section id="arcsin-anatomy" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Opposite Side and Hypotenuse: The Two Inputs</h2>
+  <p>Arcsin needs exactly two sides: the opposite side a and the hypotenuse c. Getting these labels right is the entire battle. Everything after that is arithmetic.</p>
+  <h3>Identifying the Opposite Side</h3>
+  <p>The opposite side is the leg across from angle A. It does not touch angle A at all. In the diagram below, side a runs vertically on the left, facing angle A on the right. If you are solving for the other acute angle B instead, the labels swap: the side opposite B is the one facing B.</p>
+  <h3>Identifying the Hypotenuse</h3>
+  <p>The hypotenuse is the side opposite the right angle. It is always the longest side of the triangle. It never touches the right angle vertex. If your "hypotenuse" is not the longest of your three measurements, relabel before calculating. The <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem calculator</a> can confirm which side is longest when you have all three.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('arcsin-anatomy.svg')} alt="Right triangle with opposite side a and hypotenuse c highlighted for the arcsin formula" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Anatomy for arcsin: a is the opposite side across from angle A, c is the hypotenuse opposite the right angle.</figcaption>
+  </figure>
+
+  <h3>Why the Adjacent Side Stays Out</h3>
+  <p>Sine is defined as opposite over hypotenuse. The adjacent side simply does not appear in this ratio. That is the point of this calculator: when the adjacent side is unknown, buried, or irrelevant to your measurement setup, arcsin still delivers the angle. You are not ignoring the adjacent side; you are using a ratio that never needed it.</p>
+</section>
+
+<!-- Section 5: How to use -->
+<section id="arcsin-howto" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Use the Angle From Sine Calculator</h2>
+  <ol>
+    <li><strong>Confirm the right angle.</strong> The calculator only works for right triangles. Identify the 90-degree corner first.</li>
+    <li><strong>Pick your target angle.</strong> Decide whether you are solving for angle A or angle B. The opposite side is defined relative to this choice.</li>
+    <li><strong>Measure the opposite side a.</strong> This is the leg across from your target angle. Record it in any unit.</li>
+    <li><strong>Measure the hypotenuse c.</strong> This is the longest side, across from the right angle. Use the same unit as a.</li>
+    <li><strong>Check that a is less than c.</strong> If it is not, the sides are mislabeled. The hypotenuse must be longest.</li>
+    <li><strong>Enter both values and press Calculate.</strong> The tool computes a/c, applies arcsin, and returns angle A in degrees.</li>
+    <li><strong>Find the second angle.</strong> Subtract from 90 degrees: B = 90<span set:html={rich('[[^\\circ]]')} /> minus A.</li>
+    <li><strong>Verify.</strong> Compute sin(A) on a calculator and confirm it equals a/c. If it does, the answer is solid.</li>
+  </ol>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('arcsin-steps.svg')} alt="Four step worked example of arcsin with a equals 3 and c equals 5" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Worked example: a = 3, c = 5 gives A = arcsin(0.6), approximately 36.87 degrees, verified by round-trip.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 6: Examples -->
+<section id="arcsin-examples" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>16 Worked Examples</h2>
+  <p>Each example follows the same four steps: write the formula, substitute, divide, apply arcsin. Angles are rounded to two decimal places.</p>
+
+  <h3>Example 1: The 3-4-5 Triangle</h3>
+  <p>Given opposite a = 3 and hypotenuse c = 5, find angle A.</p>
+  <p>A = arcsin(a/c) = arcsin(3/5) = arcsin(0.6) <span set:html={rich('[[\\approx 36.87^\\circ]]')} />. The complement B = 53.13<span set:html={rich('[[^\\circ]]')} />.</p>
+
+  <h3>Example 2: The 5-12-13 Triangle</h3>
+  <p>Given opposite a = 5 and hypotenuse c = 13, find angle A.</p>
+  <p>A = arcsin(5/13) = arcsin(0.3846) <span set:html={rich('[[\\approx 22.62^\\circ]]')} />. The complement B = 67.38<span set:html={rich('[[^\\circ]]')} />.</p>
+
+  <h3>Example 3: The 8-15-17 Triangle</h3>
+  <p>Given opposite a = 8 and hypotenuse c = 17, find angle A.</p>
+  <p>A = arcsin(8/17) = arcsin(0.4706) <span set:html={rich('[[\\approx 28.07^\\circ]]')} />. The complement B = 61.93<span set:html={rich('[[^\\circ]]')} />.</p>
+
+  <h3>Example 4: Same Triangle, Other Angle</h3>
+  <p>Given opposite a = 15 and hypotenuse c = 17 (solving for angle B of the 8-15-17 triangle).</p>
+  <p>B = arcsin(15/17) = arcsin(0.8824) <span set:html={rich('[[\\approx 61.93^\\circ]]')} />. Note 28.07 + 61.93 = 90, as required.</p>
+
+  <h3>Example 5: 5-12-13, Other Angle</h3>
+  <p>Given opposite a = 12 and hypotenuse c = 13.</p>
+  <p>B = arcsin(12/13) = arcsin(0.9231) <span set:html={rich('[[\\approx 67.38^\\circ]]')} />. This matches the complement from Example 2.</p>
+
+  <h3>Example 6: 3-4-5, Other Angle</h3>
+  <p>Given opposite a = 4 and hypotenuse c = 5.</p>
+  <p>B = arcsin(4/5) = arcsin(0.8) <span set:html={rich('[[\\approx 53.13^\\circ]]')} />. This matches the complement from Example 1.</p>
+
+  <h3>Example 7: The 30-Degree Special Case</h3>
+  <p>Given opposite a = 1 and hypotenuse c = 2.</p>
+  <p>A = arcsin(1/2) = arcsin(0.5) = 30<span set:html={rich('[[^\\circ]]')} /> exactly. This is the 30-60-90 special triangle. The <a href="/special-right-triangle-calculator/" class="text-primary hover:underline">special right triangle calculator</a> covers these exact values.</p>
+
+  <h3>Example 8: The 7-24-25 Triangle</h3>
+  <p>Given opposite a = 7 and hypotenuse c = 25, find angle A.</p>
+  <p>A = arcsin(7/25) = arcsin(0.28) <span set:html={rich('[[\\approx 16.26^\\circ]]')} />. The complement B = 73.74<span set:html={rich('[[^\\circ]]')} />.</p>
+
+  <h3>Example 9: 7-24-25, Other Angle</h3>
+  <p>Given opposite a = 24 and hypotenuse c = 25.</p>
+  <p>B = arcsin(24/25) = arcsin(0.96) <span set:html={rich('[[\\approx 73.74^\\circ]]')} />. Matches the complement from Example 8.</p>
+
+  <h3>Example 10: The 9-40-41 Triangle</h3>
+  <p>Given opposite a = 9 and hypotenuse c = 41, find angle A.</p>
+  <p>A = arcsin(9/41) = arcsin(0.2195) <span set:html={rich('[[\\approx 12.68^\\circ]]')} />. A small opposite side gives a narrow angle.</p>
+
+  <h3>Example 11: 9-40-41, Other Angle</h3>
+  <p>Given opposite a = 40 and hypotenuse c = 41.</p>
+  <p>B = arcsin(40/41) = arcsin(0.9756) <span set:html={rich('[[\\approx 77.32^\\circ]]')} />. Note 12.68 + 77.32 = 90.</p>
+
+  <h3>Example 12: The 20-21-29 Triangle</h3>
+  <p>Given opposite a = 20 and hypotenuse c = 29, find angle A.</p>
+  <p>A = arcsin(20/29) = arcsin(0.6897) <span set:html={rich('[[\\approx 43.60^\\circ]]')} />. The complement B = 46.40<span set:html={rich('[[^\\circ]]')} />.</p>
+
+  <h3>Example 13: 20-21-29, Other Angle</h3>
+  <p>Given opposite a = 21 and hypotenuse c = 29.</p>
+  <p>B = arcsin(21/29) = arcsin(0.7241) <span set:html={rich('[[\\approx 46.40^\\circ]]')} />. Matches the complement from Example 12.</p>
+
+  <h3>Example 14: The 6-8-10 Triangle</h3>
+  <p>Given opposite a = 6 and hypotenuse c = 10, find angle A.</p>
+  <p>A = arcsin(6/10) = arcsin(0.6) <span set:html={rich('[[\\approx 36.87^\\circ]]')} />. Same angle as Example 1, since 6-8-10 is a scaled 3-4-5.</p>
+
+  <h3>Example 15: 6-8-10, Other Angle</h3>
+  <p>Given opposite a = 8 and hypotenuse c = 10.</p>
+  <p>B = arcsin(8/10) = arcsin(0.8) <span set:html={rich('[[\\approx 53.13^\\circ]]')} />. Same as Example 6, confirming similar triangles share angles.</p>
+
+  <h3>Example 16: The 12-16-20 Triangle</h3>
+  <p>Given opposite a = 12 and hypotenuse c = 20, find angle A.</p>
+  <p>A = arcsin(12/20) = arcsin(0.6) <span set:html={rich('[[\\approx 36.87^\\circ]]')} />. Another scaled 3-4-5, same angle again. Scaling sides never changes angles.</p>
+</section>
+
+<!-- Section 7: Special values -->
+<section id="arcsin-special" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Special Angle Values Worth Memorizing</h2>
+  <p>A few arcsin values appear so often that recognizing them saves time. They come from the special right triangles.</p>
+  <p><span set:html={rich('[[\\sin^{-1}(0) = 0^\\circ]]')} />: the opposite side shrinks to zero, so the angle collapses to zero. This is a degenerate case, not a real triangle, but it anchors the scale.</p>
+  <p><span set:html={rich('[[\\sin^{-1}(1/2) = 30^\\circ]]')} />: from the 30-60-90 triangle. When the opposite side is exactly half the hypotenuse, the angle is exactly 30 degrees.</p>
+  <p><span set:html={rich('[[\\sin^{-1}(\\sqrt{2}/2) = 45^\\circ]]')} />: from the 45-45-90 triangle. Equal legs give this exact value.</p>
+  <p><span set:html={rich('[[\\sin^{-1}(\\sqrt{3}/2) \\approx 60^\\circ]]')} />: from the 30-60-90 triangle. When the opposite side is about 86.6 percent of the hypotenuse, the angle is 60 degrees.</p>
+  <p><span set:html={rich('[[\\sin^{-1}(1) = 90^\\circ]]')} />: the opposite side equals the hypotenuse, so the angle opens to a right angle. Like the zero case, this is a boundary, not a real triangle angle.</p>
+  <p>Between these landmarks, arcsin increases smoothly as the ratio increases. Memorizing the five anchor points lets you estimate any arcsin mentally: a ratio of 0.7 sits between 0.5 (30 degrees) and 0.866 (60 degrees), a bit closer to 45 degrees. The true value is about 44.43 degrees.</p>
+</section>
+
+<!-- Section 8: Mistakes -->
+<section id="arcsin-mistakes" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Common Mistakes When Using Arcsin</h2>
+
+  <h3>Using the Adjacent Side Instead of the Opposite Side</h3>
+  <p>The most frequent error. Arcsin needs the side across from angle A, not the side touching it. If you feed the adjacent side into arcsin, you get the complement of the intended angle. In a 3-4-5 triangle, arcsin(4/5) = 53.13 degrees is angle B, not angle A. Fix: sketch the triangle, mark your target angle, and find the side that does not touch it.</p>
+
+  <h3>Putting the Hypotenuse in the Numerator</h3>
+  <p>Arcsin expects opposite over hypotenuse, a number below 1. Entering c/a instead of a/c gives a ratio above 1, and the calculator returns a math error. Fix: the hypotenuse is always the denominator in the arcsin ratio.</p>
+
+  <h3>Confusing Arcsin With Sine</h3>
+  <p>On many calculators, the sine key and the inverse sine key (often labeled sin<span set:html={rich('[[-1]]')} /> or arcsin) sit near each other. Pressing sin(0.6) instead of arcsin(0.6) gives 0.5646, a meaningless ratio, instead of 36.87 degrees. Fix: check that your calculator is in degree mode and that you pressed the inverse key.</p>
+
+  <h3>Mixing Degrees and Radians</h3>
+  <p>Arcsin(0.6) is 36.87 degrees but 0.6435 radians. If your hand calculation gives 0.64 for a 3-4-5 triangle, the calculator is in radian mode. Multiply by 180/pi to convert, or switch the mode to degrees. This calculator outputs degrees.</p>
+
+  <h3>Entering Sides in Different Units</h3>
+  <p>Opposite in inches and hypotenuse in feet corrupts the ratio. Convert to a common unit first. The ratio is unitless, but only when both inputs share the unit.</p>
+
+  <h3>Rounding the Ratio Too Early</h3>
+  <p>Arcsin(0.6) = 36.87 degrees, but arcsin(0.60) rounded from 0.595 gives 36.53 degrees. Near ratios of 0 and 1, where arcsin is steepest, small ratio errors magnify. Keep full precision through the division and round only the final angle.</p>
+
+  <h3>Forgetting Which Angle Was Solved</h3>
+  <p>Arcsin returns the angle whose opposite side you entered. If you entered the side facing angle B, the result is angle B. Label the answer with the correct angle name, or verify with the complement: the two acute angles must sum to 90 degrees.</p>
+</section>
+
+<!-- Section 9: Verify -->
+<section id="arcsin-verify" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Verifying Your Arcsin Answer</h2>
+  <p>Three checks confirm a correct arcsin calculation:</p>
+  <ol>
+    <li><strong>Range check.</strong> The result must fall strictly between 0 and 90 degrees. Anything outside signals invalid inputs or mislabeled sides.</li>
+    <li><strong>Round-trip check.</strong> Compute sin(A) and confirm it equals a/c. For Example 1, sin(36.87<span set:html={rich('[[^\\circ]]')} />) <span set:html={rich('[[\\approx]]')} /> 0.6 = 3/5. If the round trip fails, the angle is wrong.</li>
+    <li><strong>Cross-method check.</strong> Recompute with arccos or arctan using the third side. If arcsin(3/5) = 36.87<span set:html={rich('[[^\\circ]]')} /> and arctan(3/4) = 36.87<span set:html={rich('[[^\\circ]]')} />, the answer is solid. Disagreement points to a labeling error.</li>
+  </ol>
+  <p>For the 3-4-5 triangle, also verify the sides satisfy the Pythagorean theorem: 9 + 16 = 25. Confirming the sides before trusting the angle derived from them is good practice, and the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem calculator</a> makes it quick.</p>
+  <p>A fourth check uses the complement. Compute B = 90<span set:html={rich('[[^\\circ]]')} /> minus A, then verify arcsin of the other ratio gives B. In Example 1, arcsin(4/5) = 53.13<span set:html={rich('[[^\\circ]]')} />, which matches 90 minus 36.87. When all four checks pass, the answer is beyond doubt.</p>
+</section>
+
+<!-- Section 10: Applications -->
+<section id="arcsin-applications" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Real-Life Applications of Arcsin</h2>
+  <p>Arcsin appears wherever a height and a slant distance are the natural measurements. The hypotenuse is measured along the slope itself, and the opposite side is the vertical component.</p>
+
+  <h3>Ladder Safety Angles</h3>
+  <p>A 12-foot ladder reaches 9 feet up a wall. The angle at the ground is arcsin(9/12), about 48.59 degrees. Ladder safety rules specify the base-to-wall ratio, and arcsin converts the height and ladder length into the setup angle directly.</p>
+
+  <h3>Flagpole Cable Tension</h3>
+  <p>A 20-meter support cable holds a 15-meter flagpole. The cable angle at the ground is arcsin(15/20), about 48.59 degrees. Engineers use this angle to compute the horizontal and vertical force components on the anchor.</p>
+
+  <h3>Kite Flying Height</h3>
+  <p>A kite flies on 50 meters of string at 30 meters altitude. The string angle above horizontal is arcsin(30/50), about 36.87 degrees. The string is the hypotenuse, the altitude is opposite the ground angle, so arcsin fits the measurements as taken.</p>
+
+  <h3>Wheelchair Ramp Compliance</h3>
+  <p>A 6-meter ramp rises 1 meter. The ramp angle is arcsin(1/6), about 9.59 degrees. Accessibility codes limit ramp slope, and arcsin turns the rise and ramp length into the angle inspectors check.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('arcsin-applications.svg')} alt="Four panels showing ladder, flagpole, kite, and ramp angle calculations with arcsin" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Real-world arcsin problems: ladder angles, cable tension, kite height, and ramp compliance angles.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 11: Related -->
+<section id="arcsin-related" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Explore Related Right Triangle Calculators</h2>
+  <ul class="not-prose mt-4 grid gap-x-8 sm:grid-cols-2">
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-angle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">01</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Angle Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-angle-from-cosine-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">02</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Angle From Cosine Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-angle-from-tangent-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">03</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Angle From Tangent Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-missing-angle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">04</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Missing Angle Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-trig-ratios-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">05</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Trig Ratios Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/sine-ratio-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">06</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Sine Ratio Calculator</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- Section 12: FAQs -->
+<section id="arcsin-faq" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <Faq
+    heading="Frequently Asked Questions"
+    items={[
+      {
+        question: 'What does A = arcsin(a / c) actually mean?',
+        answer: 'It means you divide the opposite side by the hypotenuse, then work backward from that decimal to find the angle whose sine equals it. The result is the acute angle across from the opposite side.'
+      },
+      {
+        question: 'When should I use arcsin instead of arccos?',
+        answer: 'Use arcsin when you know the opposite side and the hypotenuse. Use arccos when you know the adjacent side and the hypotenuse. Both give the same angle for the same triangle; the choice depends on which sides you measured.'
+      },
+      {
+        question: 'Why am I getting a math error from arcsin?',
+        answer: 'The most common cause is a ratio greater than 1, which happens when the opposite side entered is longer than the hypotenuse. In a valid right triangle the hypotenuse is always longest, so check your side labels.'
+      },
+      {
+        question: 'Can I use arcsin without knowing the adjacent side?',
+        answer: 'Yes. That is the main advantage of arcsin: it needs only the opposite side and the hypotenuse. The adjacent side never enters the calculation.'
+      },
+      {
+        question: 'What is the difference between sin and arcsin?',
+        answer: 'Sine takes an angle and returns a ratio: sin(30 degrees) = 0.5. Arcsin reverses this: it takes a ratio and returns the angle, so arcsin(0.5) = 30 degrees. Use sine when you know the angle; use arcsin when you know the sides.'
+      },
+      {
+        question: 'Why do arcsin, arccos, and arctan give the same answer?',
+        answer: 'Because they describe the same geometric angle through different side pairs. In a 3-4-5 triangle, arcsin(3/5), arccos(4/5), and arctan(3/4) all equal 36.87 degrees. Agreement between methods confirms correct side labels.'
+      },
+      {
+        question: 'What does it mean if a/c equals exactly 0.5?',
+        answer: 'The angle is exactly 30 degrees. This is the 30-60-90 special triangle, where the side opposite the 30-degree angle is half the hypotenuse.'
+      },
+      {
+        question: 'Should the answer be in degrees or radians?',
+        answer: 'This calculator uses degrees, the standard for construction, surveying, and classroom geometry. If you compute by hand, make sure the calculator is in degree mode; a radian-mode result like 0.64 converts to 36.87 degrees by multiplying by 180/pi.'
+      },
+      {
+        question: 'How do I find the other acute angle?',
+        answer: 'Subtract from 90 degrees. If arcsin gives A = 36.87 degrees, then B = 90 - 36.87 = 53.13 degrees. No further trigonometry is needed.'
+      },
+      {
+        question: 'Can the arcsin result ever be 90 degrees?',
+        answer: 'Only as a limit: arcsin(1) = 90 degrees, but an opposite side equal to the hypotenuse means a degenerate triangle, not a real one. Valid right triangle angles from arcsin always fall strictly between 0 and 90 degrees.'
+      },
+      {
+        question: 'How can I check my arcsin answer?',
+        answer: 'Compute sin(A) and confirm it equals a/c. Also recompute with arccos or arctan using the third side; all methods must agree. Finally, check that both acute angles sum to exactly 90 degrees.'
+      },
+      {
+        question: 'Does scaling the triangle change the arcsin result?',
+        answer: 'No. Similar triangles have identical angles. A 3-4-5 triangle and a 6-8-10 triangle both give arcsin(0.6) = 36.87 degrees, because the ratio a/c is unchanged by scaling.'
+      }
+    ]}
+  />
+</section>
+
+<!-- Conclusion -->
+<section id="arcsin-conclusion" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Find Any Angle From Sine With Confidence</h2>
+  <p>Start by identifying the opposite side: the leg across from your target angle. Confirm the hypotenuse is the longest side. Divide, apply arcsin, and read the angle in degrees. Get the second angle from 90 minus the first. Verify with the round-trip check, a cross-method computation, and the angle sum. With these steps, any opposite-and-hypotenuse problem reduces to a reliable routine. Return to the calculator at the top of this page to run your numbers.</p>
+</section>

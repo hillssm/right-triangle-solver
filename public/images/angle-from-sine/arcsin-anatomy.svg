@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>Angle from sine: triangle anatomy</title>
+<desc>Right triangle highlighting opposite side a and hypotenuse c used by arcsin to find angle A.</desc>
+<rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+<text x="600" y="70" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="34" fill="#f5eeda" text-anchor="middle" font-weight="bold">Arcsin uses the opposite side and the hypotenuse</text>
+<polygon points="380,500 830,500 380,180" fill="rgba(241,201,125,0.07)"/>
+<line x1="380" y1="500" x2="830" y2="500" stroke="#38bdf8" stroke-width="7" stroke-linecap="round"/>
+<line x1="380" y1="500" x2="380" y2="180" stroke="#f472b6" stroke-width="7" stroke-linecap="round"/>
+<line x1="830" y1="500" x2="380" y2="180" stroke="#f1c97d" stroke-width="7" stroke-linecap="round"/>
+<polyline points="380,472 408,472 408,500" stroke="#ffffff" stroke-width="3" fill="none"/>
+<circle cx="380" cy="500" r="8" fill="#f1c97d"/>
+<circle cx="830" cy="500" r="8" fill="#f1c97d"/>
+<circle cx="380" cy="180" r="8" fill="#f1c97d"/>
+<text x="350" y="545" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="bold">C</text>
+<text x="860" y="515" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="350" y="190" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="bold">B</text>
+<text x="605" y="542" font-family="Noto Serif, Georgia, serif" font-size="40" fill="#38bdf8" text-anchor="middle" font-style="italic">b</text>
+<text x="338" y="340" font-family="Noto Serif, Georgia, serif" font-size="40" fill="#f472b6" text-anchor="middle" font-style="italic">a</text>
+<text x="645" y="340" font-family="Noto Serif, Georgia, serif" font-size="40" fill="#f1c97d" text-anchor="middle" font-style="italic">c</text>
+<path d="M 790 500 Q 760 475 755 440" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.7"/>
+<text x="730" y="470" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">A</text>
+<text x="600" y="590" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#f472b6" text-anchor="middle">a = opposite (across from angle A)</text>
+<text x="600" y="620" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#f1c97d" text-anchor="middle">c = hypotenuse (longest side)</text>
+<rect x="880" y="100" width="260" height="90" rx="12" fill="#1c1b1b" stroke="#f1c97d" stroke-width="2"/>
+<text x="1010" y="135" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f5eeda" text-anchor="middle">Formula</text>
+<text x="1010" y="170" font-family="Noto Serif, Georgia, serif" font-size="28" fill="#f1c97d" text-anchor="middle" font-style="italic">A = arcsin(a / c)</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>Arcsin worked example steps</title>
+<desc>Four step worked example of arcsin with a equals 3 and c equals 5.</desc>
+<rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+<text x="600" y="70" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="34" fill="#f5eeda" text-anchor="middle" font-weight="bold">Worked example: a = 3, c = 5</text>
+
+<!-- Step 1 -->
+<rect x="60" y="130" width="240" height="360" rx="14" fill="#1c1b1b" stroke="#38bdf8" stroke-width="2.5"/>
+<text x="180" y="180" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#38bdf8" text-anchor="middle" font-weight="bold">Step 1</text>
+<text x="180" y="220" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle">Write the</text>
+<text x="180" y="250" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle">formula</text>
+<text x="180" y="320" font-family="Noto Serif, Georgia, serif" font-size="32" fill="#f1c97d" text-anchor="middle" font-style="italic">A = arcsin(a/c)</text>
+
+<!-- Step 2 -->
+<rect x="330" y="130" width="240" height="360" rx="14" fill="#1c1b1b" stroke="#38bdf8" stroke-width="2.5"/>
+<text x="450" y="180" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#38bdf8" text-anchor="middle" font-weight="bold">Step 2</text>
+<text x="450" y="220" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle">Substitute</text>
+<text x="450" y="250" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle">the values</text>
+<text x="450" y="320" font-family="Noto Serif, Georgia, serif" font-size="32" fill="#f1c97d" text-anchor="middle" font-style="italic">A = arcsin(3/5)</text>
+
+<!-- Step 3 -->
+<rect x="600" y="130" width="240" height="360" rx="14" fill="#1c1b1b" stroke="#f1c97d" stroke-width="2.5"/>
+<text x="720" y="180" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#f1c97d" text-anchor="middle" font-weight="bold">Step 3</text>
+<text x="720" y="220" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle">Divide, then</text>
+<text x="720" y="250" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle">apply arcsin</text>
+<text x="720" y="320" font-family="Noto Serif, Georgia, serif" font-size="32" fill="#f1c97d" text-anchor="middle" font-style="italic">arcsin(0.6)</text>
+<text x="720" y="370" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">= 36.87 deg</text>
+
+<!-- Step 4 -->
+<rect x="870" y="130" width="240" height="360" rx="14" fill="#1c1b1b" stroke="#f472b6" stroke-width="2.5"/>
+<text x="990" y="180" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#f472b6" text-anchor="middle" font-weight="bold">Step 4</text>
+<text x="990" y="220" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle">Verify by</text>
+<text x="990" y="250" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="22" fill="#f5eeda" text-anchor="middle">round-trip</text>
+<text x="990" y="320" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#f1c97d" text-anchor="middle">sin(36.87 deg)</text>
+<text x="990" y="370" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">= 0.6</text>
+
+<text x="600" y="560" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" fill="#a0a0a0" text-anchor="middle">The round-trip confirms the answer: sin(36.87 deg) = 3/5</text>
+</svg>

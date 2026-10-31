@@ -5,6 +5,8 @@ import {
   getFocusedAngleCalculatorUi
 } from 'src/data/focusedAngleCalculatorTranslations';
 import ArccosGuide from 'theme/components/ArccosGuide.astro';
+import ArcsinGuide from 'theme/components/ArcsinGuide.astro';
+import ArctanGuide from 'theme/components/ArctanGuide.astro';
 import { getFormulaBySlug } from 'src/data/rightTriangleFormulas';
 import { formatListItem, formatRootBars } from 'src/utils/formatList';
 import Faq from 'theme/components/Faq.astro';
@@ -25,6 +27,8 @@ interface Props {
 const { page, locale = DEFAULT_LOCALE } = Astro.props;
 const formula = getFormulaBySlug(page.formulaSlug);
 const isArccosPage = page.slug === 'right-triangle-angle-from-cosine-calculator' && locale === 'en';
+const isArcsinPage = page.slug === 'right-triangle-angle-from-sine-calculator' && locale === 'en';
+const isArctanPage = page.slug === 'right-triangle-angle-from-tangent-calculator' && locale === 'en';
 
 if (!formula || !formula.calculator) {
   throw new Error(`Focused angle calculator formula is missing: ${page.formulaSlug}`);
@@ -226,7 +230,7 @@ const sectionHeading = (
     runtimeTranslations={runtimeTranslations}
   />
 
-  {!isArccosPage && (
+  {!isArccosPage && !isArcsinPage && !isArctanPage && (
   <>
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading(page.howItWorks.h2)}</h2>
@@ -536,6 +540,8 @@ const sectionHeading = (
   )}
 
   {page.slug === 'right-triangle-angle-from-cosine-calculator' && locale === 'en' ? <ArccosGuide /> : null}
+  {page.slug === 'right-triangle-angle-from-sine-calculator' && locale === 'en' ? <ArcsinGuide /> : null}
+  {page.slug === 'right-triangle-angle-from-tangent-calculator' && locale === 'en' ? <ArctanGuide /> : null}
 
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
     <h2 class="break-words text-2xl font-semibold">{sectionHeading(angleUi.relatedAngleCalculators, 'related')}</h2>

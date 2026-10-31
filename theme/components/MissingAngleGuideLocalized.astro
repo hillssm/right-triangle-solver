@@ -47,7 +47,7 @@ const sectionOrder = [
 const tocOrder = [
   'missing-intro', 'missing-angles', 'missing-formula', 'missing-howto',
   'missing-examples', 'missing-applications', 'missing-relationship', 'missing-reverse',
-  'missing-vs', 'missing-mistakes', 'missing-verify', 'missing-choose', 'missing-related', 'missing-faq'
+  'missing-vs', 'missing-mistakes', 'missing-verify', 'missing-choose', 'missing-faq'
 ];
 
 // Fallback label for a TOC entry: translated TOC label, else the section h2, else the id
@@ -65,23 +65,6 @@ const sectionImages: Record<string, { src: string; altKey: string; captionKey: s
   'missing-vs': { src: 'missing-applications.svg', altKey: 'imgAlt', captionKey: 'figcaption' },
 };
 
-// Related calculator URLs in order (matches English MissingAngleGuide.astro)
-const relatedUrls = [
-  '/right-triangle-angle-from-sine-calculator/',
-  '/right-triangle-angle-from-cosine-calculator/',
-  '/right-triangle-angle-from-tangent-calculator/',
-  '/right-triangle-side-from-sine-calculator/',
-  '/right-triangle-side-from-cosine-calculator/',
-  '/right-triangle-side-from-tangent-calculator/',
-];
-
-// Related items: prefer name/desc objects from the missing-related section (batch1),
-// fall back to top-level relatedItems strings if present
-const relatedSection = G.sections && G.sections['missing-related'];
-const relatedEntries: Array<{ name: string; desc?: string }> =
-  (relatedSection && Array.isArray(relatedSection.related) && relatedSection.related.length > 0)
-    ? relatedSection.related
-    : (Array.isArray(G.relatedItems) ? G.relatedItems.map((label: string) => ({ name: label })) : []);
 ---
 
 <!-- Table of Contents -->
@@ -168,28 +151,6 @@ const relatedEntries: Array<{ name: string; desc?: string }> =
     </section>
   );
 })}
-
-<!-- Related Calculators -->
-<section id="missing-related" class="mx-auto mt-12 w-full max-w-4xl section-shell scroll-mt-24">
-  <h2 class="font-headline text-2xl font-bold text-on-surface">{G.relatedHeading || 'Related Calculators'}</h2>
-  {G.relatedIntro && <p class="mt-2 max-w-2xl text-sm text-on-surface-variant" set:html={rich(G.relatedIntro)} />}
-  {relatedEntries.length > 0 && (
-  <ul class="mt-5 grid gap-x-12 sm:grid-cols-2">
-    {relatedEntries.map((entry, i: number) => {
-      const num = String(i + 1).padStart(2, '0');
-      const url = relatedUrls[i] ? (locale === 'en' ? relatedUrls[i] : `/${locale}${relatedUrls[i]}`) : '#';
-      return (
-        <li class="border-b border-primary/10">
-          <a href={url} class="group flex items-baseline gap-4 py-3.5">
-            <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">{num}</span>
-            <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary" set:html={rich(entry.name)} />
-          </a>
-        </li>
-      );
-    })}
-  </ul>
-  )}
-</section>
 
 <!-- FAQs -->
 {G.faqs && (

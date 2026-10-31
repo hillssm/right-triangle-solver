@@ -1,0 +1,200 @@
+---
+/**
+ * ArcsinGuideLocalized.astro - Data-driven localized guide for Right Triangle Angle From Sine Calculator.
+ * Renders translated content from ARCSIN_GUIDE_TRANSLATIONS for 18 locales.
+ * English uses the hardcoded ArcsinGuide.astro; this is for non-English locales.
+ */
+import katex from 'katex';
+import Faq from 'theme/components/Faq.astro';
+
+interface Props {
+  guide: any;
+  locale: string;
+}
+
+const { guide: G, locale } = Astro.props;
+
+const rich = (s: string): string => {
+  if (!s || typeof s !== 'string') return '';
+  let out = s;
+  out = out.replace(
+    /\[\[\[(.+?)\]\]\]/g,
+    (_, l) =>
+      `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
+  );
+  out = out.replace(
+    /\[\[(.+?)\]\]/g,
+    (_, l) =>
+      `<span dir="ltr" class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>`
+  );
+  // Localize internal links for non-English locales
+  if (locale !== 'en') {
+    out = out.split('href="/').join(`href="/${locale}/`);
+  }
+  return out;
+};
+
+const imgSrc = (name: string): string => `/images/angle-from-sine/${name}`;
+
+// Section IDs in order (13 content sections, excluding related which is rendered separately)
+const sectionOrder = [
+  'arcsin-intro', 'arcsin-anatomy', 'arcsin-what', 'arcsin-formula', 'arcsin-howto',
+  'arcsin-examples', 'arcsin-applications', 'arcsin-ratio', 'arcsin-units',
+  'arcsin-mistakes', 'arcsin-verify', 'arcsin-choose', 'arcsin-conclusion'
+];
+
+// TOC items in order (15 items: 13 sections + related + faq)
+const tocOrder = [
+  'arcsin-intro', 'arcsin-anatomy', 'arcsin-what', 'arcsin-formula', 'arcsin-howto',
+  'arcsin-examples', 'arcsin-applications', 'arcsin-ratio', 'arcsin-units',
+  'arcsin-mistakes', 'arcsin-verify', 'arcsin-choose', 'arcsin-related', 'arcsin-faq',
+  'arcsin-conclusion'
+];
+
+// Fallback label for a TOC entry: translated TOC label, else the section h2, else the id
+const tocLabel = (id: string): string => {
+  if (G.tocItems && G.tocItems[id]) return G.tocItems[id];
+  if (G.sections && G.sections[id] && G.sections[id].h2) return G.sections[id].h2;
+  return id;
+};
+
+// Image mapping per section
+const sectionImages: Record<string, { src: string; altKey: string; captionKey: string }> = {
+  'arcsin-anatomy': { src: 'arcsin-anatomy.svg', altKey: 'imgAlt', captionKey: 'figcaption' },
+  'arcsin-what': { src: 'arcsin-ratio.svg', altKey: 'imgAlt', captionKey: 'figcaption' },
+  'arcsin-applications': { src: 'arcsin-applications.svg', altKey: 'imgAlt', captionKey: 'figcaption' },
+  'arcsin-ratio': { src: 'arcsin-ratio-change.svg', altKey: 'imgAlt', captionKey: 'figcaption' },
+};
+
+// Related calculator URLs in order
+const relatedUrls = [
+  '/right-triangle-angle-calculator/',
+  '/right-triangle-angle-from-cosine-calculator/',
+  '/right-triangle-angle-from-tangent-calculator/',
+  '/right-triangle-side-from-sine-calculator/',
+  '/right-triangle-side-calculator/',
+  '/right-triangle-missing-angle-calculator/',
+  '/right-triangle-trig-ratios-calculator/',
+  '/sine-ratio-calculator/',
+];
+---
+
+<!-- Table of Contents -->
+<nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label="Guide contents">
+  <h2 class="font-headline text-2xl font-bold">{G.tocHeading || 'In This Guide'}</h2>
+  {G.tocItems && (
+  <ol class="mt-4 grid gap-2 sm:grid-cols-2">
+    {tocOrder.map((id) => (
+      <li><a class="hover:text-primary hover:underline" href={`#${id}`} set:html={rich(tocLabel(id))} /></li>
+    ))}
+  </ol>
+  )}
+</nav>
+
+<!-- Content Sections -->
+{G && sectionOrder.map((sectionId) => {
+  const s = G.sections[sectionId];
+  if (!s) return null;
+  const img = sectionImages[sectionId];
+  const listItems = s.steps || s.list || s.listItems;
+  return (
+    <section id={sectionId} class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+      <h2 set:html={rich(s.h2)} />
+      {s.blocks ? (
+        // Use ordered blocks if available (batch1/batch2 format)
+        s.blocks.map((block: any) => {
+          if (block.kind === 'h3') {
+            return <h3 set:html={rich(block.text)} />;
+          } else {
+            return <p set:html={rich(block.text)} />;
+          }
+        })
+      ) : s.paragraphs ? (
+        // Fallback: interleave h3s and paragraphs (batch3 format)
+        <>
+          {s.h3s && s.h3s.length > 0 ? (
+            s.paragraphs.map((p: string, i: number) => (
+              <>
+                {s.h3s[i] && <h3 set:html={rich(s.h3s[i])} />}
+                <p set:html={rich(p)} />
+              </>
+            ))
+          ) : (
+            s.paragraphs.map((p: string) => <p set:html={rich(p)} />)
+          )}
+          {/* Render remaining h3s if more h3s than paragraphs */}
+          {s.h3s && s.h3s.length > s.paragraphs.length &&
+            s.h3s.slice(s.paragraphs.length).map((h: string) => <h3 set:html={rich(h)} />)
+          }
+        </>
+      ) : null}
+      {listItems && (
+        <ol>
+          {listItems.map((item: string) => <li set:html={rich(item)} />)}
+        </ol>
+      )}
+      {s.closingParagraphs && s.closingParagraphs.map((p: string) => <p set:html={rich(p)} />)}
+      {s.table && s.table.headers && s.table.rows && (
+        <div class="not-prose overflow-x-auto my-6">
+          <table class="w-full min-w-[480px] border-collapse text-sm">
+            <thead>
+              <tr class="border-b border-outline-variant/30 text-left">
+                {s.table.headers.map((h: string) => <th class="py-2 pr-4 font-semibold" set:html={rich(h)} />)}
+              </tr>
+            </thead>
+            <tbody>
+              {s.table.rows.map((row: string[]) => (
+                <tr class="border-b border-outline-variant/15">
+                  {row.map((cell: string, ci: number) => (
+                    <td class={ci === 2 ? "py-2 pr-4 font-mono" : "py-2 pr-4"} set:html={rich(cell)} />
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+      {img && s[img.altKey] && (
+        <figure class="not-prose my-6">
+          <img src={imgSrc(img.src)} alt={s[img.altKey]} class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+          {s[img.captionKey] && <figcaption class="mt-2 text-center text-sm text-on-surface-variant" set:html={rich(s[img.captionKey])} />}
+        </figure>
+      )}
+    </section>
+  );
+})}
+
+<!-- Related Calculators -->
+<section id="arcsin-related" class="mx-auto mt-12 w-full max-w-4xl section-shell scroll-mt-24">
+  <h2 class="font-headline text-2xl font-bold text-on-surface">{G.relatedHeading || 'Related Calculators'}</h2>
+  {G.relatedIntro && <p class="mt-2 max-w-2xl text-sm text-on-surface-variant" set:html={rich(G.relatedIntro)} />}
+  {G.relatedItems && (
+  <ul class="mt-5 grid gap-x-12 sm:grid-cols-2">
+    {G.relatedItems.map((label: string, i: number) => {
+      const num = String(i + 1).padStart(2, '0');
+      const url = locale === 'en' ? relatedUrls[i] : `/${locale}${relatedUrls[i]}`;
+      return (
+        <li class="border-b border-primary/10">
+          <a href={url} class="group flex items-baseline gap-4 py-3.5">
+            <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">{num}</span>
+            <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary" set:html={rich(label)} />
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+  )}
+</section>
+
+<!-- FAQs -->
+{G.faqs && (
+<section id="arcsin-faq" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <Faq
+    heading={G.faqHeading || 'FAQs'}
+    items={G.faqs.map((f: any) => ({
+      question: f.question || f.q,
+      answer: rich(f.answer || f.a)
+    }))}
+  />
+</section>
+)}

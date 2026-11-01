@@ -7,15 +7,15 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "slug": "sine-ratio-calculator",
       "url": "/hi/sine-ratio-calculator/",
       "h1": "साइन अनुपात कैलकुलेटर",
-      "metaTitle": "साइन अनुपात कैलकुलेटर | समकोण त्रिभुज पाप(ए)",
-      "metaDescription": "सूत्र, चरणों और उदाहरणों के साथ विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> ए और कर्ण सी का उपयोग करके एक समकोण त्रिभुज में पाप (ए) खोजने के लिए इस साइन अनुपात <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"> कैलकुलेटर </a> का उपयोग करें।",
+      "metaTitle": "साइन अनुपात कैलकुलेटर | समकोण त्रिभुज sin(A)",
+      "metaDescription": "सूत्र, चरणों और उदाहरणों के साथ विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> ए और कर्ण सी का उपयोग करके एक समकोण त्रिभुज में sin(A) खोजने के लिए इस साइन अनुपात <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"> कैलकुलेटर </a> का उपयोग करें।",
       "introHeading": "यह साइन अनुपात कैलकुलेटर कैसे काम करता है",
       "intro": [
-        "साइन अनुपात ज्यामिति में आपके द्वारा सीखे गए पहले त्रिकोणमितीय कार्यों में से एक है। यह एक समकोण त्रिभुज में एक विशिष्ट <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> को उसकी दो भुजाओं से जोड़ता है - विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> और कर्ण। यदि आप इन दो <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">मापों</a> को जानते हैं, तो यह कैलकुलेटर आपको तुरंत पाप(ए) देता है।",
+        "साइन अनुपात ज्यामिति में आपके द्वारा सीखे गए पहले त्रिकोणमितीय कार्यों में से एक है। यह एक समकोण त्रिभुज में एक विशिष्ट <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> को उसकी दो भुजाओं से जोड़ता है - विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> और कर्ण। यदि आप इन दो <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">मापों</a> को जानते हैं, तो यह कैलकुलेटर आपको तुरंत sin(A) देता है।",
         "चाहे आप होमवर्क की समस्या पर काम कर रहे हों, परीक्षा-शैली के उत्तर की जाँच कर रहे हों, या वास्तविक माप कार्य को हल कर रहे हों, यह टूल मैन्युअल विभाजन चरण को हटा देता है। अपने मान दर्ज करें और दिखाए गए सूत्र से परिणाम प्राप्त करें।"
       ],
-      "headerSummary": "एक समकोण त्रिभुज में विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> ए और कर्ण सी से पाप (ए) खोजें।",
-      "calculatorNote": "उपरोक्त फ़ील्ड में विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए की लंबाई और कर्ण सी दर्ज करें। <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> ए को सी से विभाजित करता है और पाप(ए) लौटाता है। दोनों मान सकारात्मक होने चाहिए, और c, a से बड़ा होना चाहिए।",
+      "headerSummary": "एक समकोण त्रिभुज में विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> ए और कर्ण सी से sin(A) खोजें।",
+      "calculatorNote": "उपरोक्त फ़ील्ड में विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए की लंबाई और कर्ण सी दर्ज करें। <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> ए को सी से विभाजित करता है और sin(A) लौटाता है। दोनों मान सकारात्मक होने चाहिए, और c, a से बड़ा होना चाहिए।",
       "diagramExplanation": [
         "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के लिए, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए विपरीत है, पक्ष बी आसन्न है, और पक्ष सी कर्ण है।",
         "साइन अनुपात इन तीन भुजाओं में से केवल दो का उपयोग करता है: विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए (सीधे <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के सामने) और कर्ण सी (सबसे लंबी भुजा, बी पर समकोण के विपरीत)।"
@@ -26,13 +26,13 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "कर्ण ज्ञात कीजिये. यह <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> सी है, सबसे लंबी भुजा, दाएं <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> के विपरीत।",
         "पहले इनपुट फ़ील्ड में a का मान दर्ज करें।",
         "दूसरे इनपुट फ़ील्ड में c का मान दर्ज करें।",
-        "पाप(ए) देखने के लिए गणना पर क्लिक करें।",
+        "sin(A) देखने के लिए गणना पर क्लिक करें।",
         "परिणाम की समीक्षा करें. यह 0 और 1 के बीच दशमलव होना चाहिए."
       ],
       "whatResultMeans": [
         "आउटपुट एक इकाई रहित अनुपात है। यह आपको बताता है कि विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> आकार में कर्ण से कैसे तुलना करता है। 0.5 के परिणाम का मतलब है कि विपरीत भुजा कर्ण का ठीक आधा है - जो कि <a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90 त्रिभुज </a> में होता है जहां ए = 30° है।",
         "छोटे मान (0 के करीब) का मतलब है <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए छोटा है और विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> कर्ण के सापेक्ष छोटा है। 1 माध्य कोण A के करीब का मान बड़ा है (90° के करीब) और विपरीत पक्ष लगभग कर्ण जितना लंबा है।",
-        "चूँकि पाप(ए) दो लंबाई का अनुपात है, इसकी कोई इकाई नहीं है। चाहे आपके त्रिभुज को सेंटीमीटर, इंच या मीटर में मापा जाए, ज्या का मान तब तक समान रहता है जब तक दोनों पक्ष एक ही इकाई का उपयोग करते हैं।"
+        "चूँकि sin(A) दो लंबाई का अनुपात है, इसकी कोई इकाई नहीं है। चाहे आपके त्रिभुज को सेंटीमीटर, इंच या मीटर में मापा जाए, ज्या का मान तब तक समान रहता है जब तक दोनों पक्ष एक ही इकाई का उपयोग करते हैं।"
       ],
       "whenToUse": {
         "intro": "इनमें से किसी भी स्थिति में इस साइन अनुपात <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> का उपयोग करें:",
@@ -56,7 +56,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "साइन अनुपात की गणना करें",
-        "outputLabel": "पाप(ए)",
+        "outputLabel": "sin(A)",
         "fields": [
           {
             "key": "a",
@@ -71,18 +71,18 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "पाप(ए) = ए/सी",
+        "display": "sin(A) = ए/सी",
         "paragraphs": [
           "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए की ज्या विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a> की लंबाई को कर्ण की लंबाई से विभाजित करने के बराबर होती है। इसे अक्सर SOH-CAH-TOA के SOH भाग के साथ याद किया जाता है।",
-          "एक समकोण त्रिभुज में, विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> वह है जो <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के ठीक सामने है। कर्ण हमेशा सबसे लंबी भुजा होती है - जो 90° कोण का सामना करती है। चूँकि कर्ण हमेशा किसी भी पैर से लंबा होता है, न्यून कोणों के लिए पाप (ए) हमेशा 0 और 1 के बीच आता है।"
+          "एक समकोण त्रिभुज में, विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> वह है जो <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के ठीक सामने है। कर्ण हमेशा सबसे लंबी भुजा होती है - जो 90° कोण का सामना करती है। चूँकि कर्ण हमेशा किसी भी पैर से लंबा होता है, न्यून कोणों के लिए sin(A) हमेशा 0 और 1 के बीच आता है।"
         ]
       },
       "example": {
         "intro": "मान लीजिए कि आपके पास एक समकोण त्रिभुज है जहां विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a> a = 3 और कर्ण c = 5 है।",
         "steps": [
-          "पाप(ए) = ए/सी",
-          "पाप(ए) = 3/5",
-          "पाप(ए) = 0.6"
+          "sin(A) = ए/सी",
+          "sin(A) = 3/5",
+          "sin(A) = 0.6"
         ],
         "conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए की ज्या 0.6 है। इसका मतलब है कि विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> कर्ण की लंबाई का 60% है। यदि आपको वास्तविक कोण की आवश्यकता है, तो व्युत्क्रम ज्या लें: A = आर्क्सिन(0.6) ≈ 36.87°।"
       },
@@ -106,19 +106,19 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       ],
       "faqs": [
         {
-          "question": "समकोण त्रिभुज में पाप(ए) का सूत्र क्या है?",
-          "answer": "सूत्र पाप(ए) = ए / सी है, जहां ए <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> विपरीत <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए है और सी कर्ण है। आप विपरीत भुजा को कर्ण से विभाजित करते हैं।"
+          "question": "समकोण त्रिभुज में sin(A) का सूत्र क्या है?",
+          "answer": "सूत्र sin(A) = ए / सी है, जहां ए <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> विपरीत <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए है और सी कर्ण है। आप विपरीत भुजा को कर्ण से विभाजित करते हैं।"
         },
         {
-          "question": "एक समकोण त्रिभुज में पाप(ए) हमेशा 1 से कम क्यों होता है?",
+          "question": "एक समकोण त्रिभुज में sin(A) हमेशा 1 से कम क्यों होता है?",
           "answer": "क्योंकि कर्ण c सदैव सबसे लंबी <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा</a> होती है। चूँकि a, c से छोटा है, भिन्न a/c सदैव 1 से कम होता है।"
         },
         {
           "question": "क्या मैं कोण ज्ञात करने के लिए इस कैलकुलेटर का उपयोग कर सकता हूँ?",
-          "answer": "यह <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> आपको साइन मान देता है। <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> खोजने के लिए, व्युत्क्रम ज्या फ़ंक्शन का उपयोग करें: ए = आर्क्सिन(पाप(ए))। आप इसे हमारे समकोण त्रिभुज कोण कैलकुलेटर से कर सकते हैं।"
+          "answer": "यह <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> आपको साइन मान देता है। <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> खोजने के लिए, व्युत्क्रम ज्या फ़ंक्शन का उपयोग करें: ए = आर्क्सिन(sin(A))। आप इसे हमारे समकोण त्रिभुज कोण कैलकुलेटर से कर सकते हैं।"
         },
         {
-          "question": "0.5 के पाप(ए) परिणाम का क्या मतलब है?",
+          "question": "0.5 के sin(A) परिणाम का क्या मतलब है?",
           "answer": "इसका मतलब है कि विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> कर्ण की लंबाई से बिल्कुल आधी है। यह <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के 30° से मेल खाता है।"
         },
         {
@@ -131,7 +131,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "slug": "cosine-ratio-calculator",
       "url": "/hi/cosine-ratio-calculator/",
       "h1": "कोसाइन अनुपात कैलकुलेटर",
-      "metaTitle": "कोसाइन अनुपात कैलकुलेटर | समकोण त्रिभुज क्योंकि(ए)",
+      "metaTitle": "कोसाइन अनुपात कैलकुलेटर | समकोण त्रिभुज cos(A)",
       "metaDescription": "सूत्र, चरणों और उदाहरणों के साथ आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> बी और कर्ण सी का उपयोग करके एक समकोण त्रिभुज में कॉस (ए) खोजने के लिए इस कोसाइन अनुपात <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"> कैलकुलेटर </a> का उपयोग करें।",
       "introHeading": "यह कोसाइन अनुपात कैलकुलेटर कैसे काम करता है",
       "intro": [
@@ -180,7 +180,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "कोसाइन अनुपात की गणना करें",
-        "outputLabel": "क्योंकि(ए)",
+        "outputLabel": "cos(A)",
         "fields": [
           {
             "key": "b",
@@ -208,7 +208,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
           "कॉस(ए) = 4/5",
           "कॉस(ए) = 0.8"
         ],
-        "conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए की कोज्या 0.8 है। आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> कर्ण की लंबाई का 80% है। कोण ज्ञात करने के लिए: A = आर्ककोस(0.8) ≈ 36.87°."
+        "conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए की कोज्या 0.8 है। आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> कर्ण की लंबाई का 80% है। कोण ज्ञात करने के लिए: A = आर्कcos(0.8) ≈ 36.87°."
       },
       "relatedLinks": [
         {
@@ -304,7 +304,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "स्पर्शरेखा अनुपात की गणना करें",
-        "outputLabel": "तन(ए)",
+        "outputLabel": "tan(A)",
         "fields": [
           {
             "key": "a",
@@ -319,7 +319,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "तन(ए) = ए / बी",
+        "display": "tan(A) = ए / बी",
         "paragraphs": [
           "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए की स्पर्शरेखा विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> को आसन्न पक्ष से विभाजित करने के बराबर होती है। यह SOH-CAH-TOA का TOA भाग है।",
           "साइन और कोसाइन के विपरीत, स्पर्शरेखा में कर्ण शामिल नहीं होता है। यह केवल दो पैरों का उपयोग करता है। इसका मतलब यह भी है कि स्पर्शरेखा को 1 पर सीमित नहीं किया गया है - यह न्यून कोणों के लिए कोई भी सकारात्मक संख्या हो सकती है, और जैसे-जैसे <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए 90° तक पहुंचता है, यह बिना किसी सीमा के बढ़ता है।"
@@ -328,8 +328,8 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "एक समकोण त्रिभुज की विपरीत भुजा <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> a = 3 और आसन्न भुजा b = 4 है।",
         "steps": [
-          "तन(ए) = ए / बी",
-          "तन(ए) = 3/4",
+          "tan(A) = ए / बी",
+          "tan(A) = 3/4",
           "टैन(ए) = 0.75"
         ],
         "conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए की स्पर्श रेखा 0.75 है। कोण ज्ञात करने के लिए: A = arctan(0.75) ≈ 36.87°."
@@ -379,15 +379,15 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "slug": "cotangent-ratio-calculator",
       "url": "/hi/cotangent-ratio-calculator/",
       "h1": "कोटैंजेंट अनुपात कैलकुलेटर",
-      "metaTitle": "कोटैंजेंट अनुपात कैलकुलेटर | समकोण त्रिभुज खाट(ए)",
-      "metaDescription": "सूत्र, चरणों और उदाहरणों के साथ आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> बी और विपरीत भुजा ए का उपयोग करके एक समकोण त्रिभुज में खाट (ए) खोजने के लिए इस कोटैंजेंट अनुपात <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"> कैलकुलेटर </a> का उपयोग करें।",
+      "metaTitle": "कोटैंजेंट अनुपात कैलकुलेटर | समकोण त्रिभुज cot(A)",
+      "metaDescription": "सूत्र, चरणों और उदाहरणों के साथ आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> बी और विपरीत भुजा ए का उपयोग करके एक समकोण त्रिभुज में cot(A) खोजने के लिए इस कोटैंजेंट अनुपात <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"> कैलकुलेटर </a> का उपयोग करें।",
       "introHeading": "यह कोटैंजेंट अनुपात कैलकुलेटर कैसे काम करता है",
       "intro": [
         "कोटैंजेंट स्पर्शरेखा का व्युत्क्रम है। जबकि स्पर्शरेखा विपरीत पक्ष <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> को आसन्न पक्ष से विभाजित करती है, कोटैंजेंट उस भिन्न को पलट देती है - यह आसन्न पक्ष को विपरीत पक्ष से विभाजित करती है। यह बुनियादी ज्यामिति कक्षाओं में कम बार दिखाई देता है, लेकिन यह उन्नत त्रिकोणमिति और कैलकुलस में एक महत्वपूर्ण भूमिका निभाता है।",
         "यह <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> बी और विपरीत पक्ष ए लेता है, फिर cot(A) = b/a लौटाता है। यदि आप स्पर्शरेखा के साथ काम करने के आदी हैं, तो कोटैंजेंट केवल व्युत्क्रम भिन्न है।"
       ],
-      "headerSummary": "एक समकोण त्रिभुज में आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> बी से विपरीत भुजा ए से खाट (ए) की गणना करें।",
-      "calculatorNote": "उपरोक्त फ़ील्ड में आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> बी और विपरीत पक्ष ए दर्ज करें। <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> खाट(ए) = बी/ए लौटाता है। दोनों मान सकारात्मक होने चाहिए.",
+      "headerSummary": "एक समकोण त्रिभुज में आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> बी से विपरीत भुजा ए से cot(A) की गणना करें।",
+      "calculatorNote": "उपरोक्त फ़ील्ड में आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> बी और विपरीत पक्ष ए दर्ज करें। <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> cot(A) = बी/ए लौटाता है। दोनों मान सकारात्मक होने चाहिए.",
       "diagramExplanation": [
         "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के लिए, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए विपरीत है, पक्ष बी आसन्न है, और पक्ष सी कर्ण है।",
         "कोटैंजेंट आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> बी (<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के बगल वाला पैर) को अंश के रूप में और विपरीत पक्ष ए (कोण ए के पार) को हर के रूप में उपयोग करता है। कर्ण c का प्रयोग नहीं किया गया है।"
@@ -427,7 +427,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "कोटैंजेंट अनुपात की गणना करें",
-        "outputLabel": "खाट(ए)",
+        "outputLabel": "cot(A)",
         "fields": [
           {
             "key": "b",
@@ -442,7 +442,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "खाट(ए) = बी/ए",
+        "display": "cot(A) = बी/ए",
         "paragraphs": [
           "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए का कोटैंजेंट आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> को विपरीत पक्ष से विभाजित करने के बराबर होता है। यह स्पर्शरेखा का व्युत्क्रम है: cot(A) = 1 / tan(A)।",
           "स्पर्शरेखा की तरह, कोटैंजेंट समकोण त्रिभुज के केवल दो पैरों का उपयोग करता है। कर्ण शामिल नहीं है. कोटैंजेंट न्यून कोणों के लिए कोई भी धनात्मक मान ले सकता है।"
@@ -451,9 +451,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "एक समकोण त्रिभुज की आसन्न भुजा <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> b = 4 और विपरीत भुजा a = 3 है।",
         "steps": [
-          "खाट(ए) = बी/ए",
-          "खाट(ए) = 4/3",
-          "खाट(ए) ≈ 1.3333"
+          "cot(A) = बी/ए",
+          "cot(A) = 4/3",
+          "cot(A) ≈ 1.3333"
         ],
         "conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए का कोटैंजेंट लगभग 1.3333 है। आप इसे सत्यापित कर सकते हैं: tan(A) = 3/4 = 0.75, और 1/0.75 = 1.3333।"
       },
@@ -494,7 +494,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "क्या कोटैंजेंट 1 को स्पर्शरेखा से विभाजित करने के समान है?",
-          "answer": "हाँ। खाट(ए) = 1 / टैन(ए) = बी / ए। दोनों भाव एक ही परिणाम देते हैं."
+          "answer": "हाँ। cot(A) = 1 / टैन(ए) = बी / ए। दोनों भाव एक ही परिणाम देते हैं."
         }
       ]
     },
@@ -503,14 +503,14 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "url": "/hi/secant-ratio-calculator/",
       "h1": "सेकेंट अनुपात कैलकुलेटर",
       "metaTitle": "सेकेंट अनुपात कैलकुलेटर | समकोण त्रिभुज sec(A)",
-      "metaDescription": "सूत्र, चरणों और उदाहरणों के साथ कर्ण सी और आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> बी का उपयोग करके एक समकोण त्रिभुज में सेकंड (ए) खोजने के लिए इस छेदक अनुपात <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"> कैलकुलेटर </a> का उपयोग करें।",
+      "metaDescription": "सूत्र, चरणों और उदाहरणों के साथ कर्ण सी और आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> बी का उपयोग करके एक समकोण त्रिभुज में sec(A) खोजने के लिए इस छेदक अनुपात <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"> कैलकुलेटर </a> का उपयोग करें।",
       "introHeading": "यह सेकेंट रेशियो कैलकुलेटर कैसे काम करता है",
       "intro": [
         "सेकेंट कोसाइन का व्युत्क्रम है। जहां कोज्या आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> को कर्ण से विभाजित करती है, छेदक रेखा उसे पलट देती है - यह कर्ण को आसन्न भुजा से विभाजित करती है। परिणाम हमेशा 1 से बड़ा या उसके बराबर होता है क्योंकि एक समकोण त्रिभुज में कर्ण हमेशा सबसे लंबी भुजा होती है।",
-        "यह <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> दो इनपुट लेता है - कर्ण सी और आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> बी - और सेकंड(ए) लौटाता है। यह हाथ से विभाजन किए बिना या पहले कोसाइन की गणना किए बिना इस पारस्परिक अनुपात को प्राप्त करने का एक त्वरित तरीका है।"
+        "यह <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> दो इनपुट लेता है - कर्ण सी और आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> बी - और sec(A) लौटाता है। यह हाथ से विभाजन किए बिना या पहले कोसाइन की गणना किए बिना इस पारस्परिक अनुपात को प्राप्त करने का एक त्वरित तरीका है।"
       ],
       "headerSummary": "कर्ण c की आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> b, कोज्या के व्युत्क्रम से तुलना करके sec(A) ज्ञात कीजिए।",
-      "calculatorNote": "उपरोक्त फ़ील्ड में कर्ण c और आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> b दर्ज करें। <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> सेकंड(ए) = सी/बी की गणना करता है। दोनों मान सकारात्मक होने चाहिए, और c, b से बड़ा होना चाहिए।",
+      "calculatorNote": "उपरोक्त फ़ील्ड में कर्ण c और आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> b दर्ज करें। <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> sec(A) = सी/बी की गणना करता है। दोनों मान सकारात्मक होने चाहिए, और c, b से बड़ा होना चाहिए।",
       "diagramExplanation": [
         "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के लिए, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए विपरीत है, पक्ष बी आसन्न है, और पक्ष सी कर्ण है।",
         "सेकेंट कर्ण c को अंश के रूप में और आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> b को हर के रूप में उपयोग करता है। विपरीत पक्ष ए सेकेंड गणना का हिस्सा नहीं है।"
@@ -550,7 +550,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "सेकेंट अनुपात की गणना करें",
-        "outputLabel": "सेकंड(ए)",
+        "outputLabel": "sec(A)",
         "fields": [
           {
             "key": "c",
@@ -565,18 +565,18 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "सेकंड(ए) = सी/बी",
+        "display": "sec(A) = सी/बी",
         "paragraphs": [
           "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए का छेदक, आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a> से विभाजित कर्ण के बराबर होता है। यह कोज्या का व्युत्क्रम है: sec(A) = 1 / cos(A)।",
-          "चूँकि एक समकोण त्रिभुज में कर्ण हमेशा आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> से अधिक लंबा होता है, सेकंड (ए) हमेशा 1 से बड़ा होता है। जैसे-जैसे <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"> कोण </a> ए बड़ा होता है, आसन्न पक्ष कर्ण के सापेक्ष सिकुड़ता है, इसलिए छेदक बढ़ता है।"
+          "चूँकि एक समकोण त्रिभुज में कर्ण हमेशा आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> से अधिक लंबा होता है, sec(A) हमेशा 1 से बड़ा होता है। जैसे-जैसे <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"> कोण </a> ए बड़ा होता है, आसन्न पक्ष कर्ण के सापेक्ष सिकुड़ता है, इसलिए छेदक बढ़ता है।"
         ]
       },
       "example": {
         "intro": "एक समकोण त्रिभुज में कर्ण c = 5 और आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> b = 4 है।",
         "steps": [
-          "सेकंड(ए) = सी/बी",
-          "सेकंड(ए) = 5/4",
-          "सेकंड(ए) = 1.25"
+          "sec(A) = सी/बी",
+          "sec(A) = 5/4",
+          "sec(A) = 1.25"
         ],
         "conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए का छेदक 1.25 है। सत्यापित करने के लिए: cos(A) = 4/5 = 0.8, और 1/0.8 = 1.25।"
       },
@@ -609,11 +609,11 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "मैं सेकेंड और कोसाइन के बीच कैसे परिवर्तित करूं?",
-          "answer": "सेकंड(ए) = 1 / कॉस(ए), और कॉस(ए) = 1 / सेकंड(ए)। यदि आप एक को जानते हैं, तो आप व्युत्क्रम लेकर दूसरे को पा सकते हैं।"
+          "answer": "sec(A) = 1 / कॉस(ए), और कॉस(ए) = 1 / sec(A)। यदि आप एक को जानते हैं, तो आप व्युत्क्रम लेकर दूसरे को पा सकते हैं।"
         },
         {
-          "question": "सेकंड(45°) क्या है?",
-          "answer": "<a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90 त्रिभुज</a> में, कर्ण पैर का √2 गुना है। तो सेकंड(45°) = √2 ≈ 1.4142।"
+          "question": "sec(45°) क्या है?",
+          "answer": "<a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90 त्रिभुज</a> में, कर्ण पैर का √2 गुना है। तो sec(45°) = √2 ≈ 1.4142।"
         },
         {
           "question": "क्या वास्तविक दुनिया के अनुप्रयोगों में सेकेंट का उपयोग किया जाता है?",
@@ -625,15 +625,15 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "slug": "cosecant-ratio-calculator",
       "url": "/hi/cosecant-ratio-calculator/",
       "h1": "सहसंयोजक अनुपात कैलकुलेटर",
-      "metaTitle": "सहसंयोजक अनुपात कैलक्यूलेटर | समकोण त्रिभुज सीएससी(ए)",
-      "metaDescription": "सूत्र, चरणों और उदाहरणों के साथ कर्ण सी और विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> ए का उपयोग करके एक समकोण त्रिभुज में सीएससी (ए) खोजने के लिए इस सहसंयोजक अनुपात <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"> कैलकुलेटर </a> का उपयोग करें।",
+      "metaTitle": "सहसंयोजक अनुपात कैलक्यूलेटर | समकोण त्रिभुज csc(A)",
+      "metaDescription": "सूत्र, चरणों और उदाहरणों के साथ कर्ण सी और विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> ए का उपयोग करके एक समकोण त्रिभुज में csc(A) खोजने के लिए इस सहसंयोजक अनुपात <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"> कैलकुलेटर </a> का उपयोग करें।",
       "introHeading": "यह कोसेकेंट अनुपात कैलकुलेटर कैसे काम करता है",
       "intro": [
         "कोसेकेंट साइन का व्युत्क्रम है। यह कर्ण को विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा</a> से विभाजित करता है, जिससे आपको एक अनुपात मिलता है जो एक समकोण त्रिभुज में हमेशा 1 से अधिक होता है। हो सकता है कि आप इसे बुनियादी पाठ्यक्रमों में साइन या कोसाइन जितनी बार न देखें, लेकिन अधिक उन्नत गणित और कुछ भौतिकी अनुप्रयोगों में यह आवश्यक है।",
         "यह <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> इसे सरल बनाता है। कर्ण c और विपरीत पक्ष <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> a दर्ज करें, और यह तुरंत csc(A) लौटाता है। पहले ज्या की गणना करने और फिर भिन्न को पलटने की आवश्यकता नहीं है।"
       ],
       "headerSummary": "कर्ण c और विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> a, ज्या के व्युत्क्रम से csc(A) की गणना करें।",
-      "calculatorNote": "उपरोक्त फ़ील्ड में कर्ण c और विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> a दर्ज करें। <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> सीएससी(ए) = सी/ए की गणना करता है। दोनों मान सकारात्मक होने चाहिए, और c, a से बड़ा होना चाहिए।",
+      "calculatorNote": "उपरोक्त फ़ील्ड में कर्ण c और विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> a दर्ज करें। <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> csc(A) = सी/ए की गणना करता है। दोनों मान सकारात्मक होने चाहिए, और c, a से बड़ा होना चाहिए।",
       "diagramExplanation": [
         "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए के लिए, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> ए विपरीत है, पक्ष बी आसन्न है, और पक्ष सी कर्ण है।",
         "कोसेकेंट कर्ण c को अंश के रूप में और विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> a को हर के रूप में उपयोग करता है। आसन्न भुजा b सहसंयोजक सूत्र में कोई भूमिका नहीं निभाती है।"
@@ -645,17 +645,17 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "पहले इनपुट फ़ील्ड में c टाइप करें।",
         "दूसरे इनपुट फ़ील्ड में a टाइप करें।",
         "गणना करें पर क्लिक करें.",
-        "परिणाम सीएससी(ए) है, हमेशा 1 से बड़ा।"
+        "परिणाम csc(A) है, हमेशा 1 से बड़ा।"
       ],
       "whatResultMeans": [
         "कोसेकैंट आपको बताता है कि विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> की तुलना में कर्ण कितनी गुना लंबा है। 1.6667 के सहसंयोजक का अर्थ है कि कर्ण विपरीत भुजा से लगभग 67% लंबा है।",
-        "जब <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए बड़ा होता है (90° के करीब), विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> लगभग कर्ण जितना लंबा होता है, इसलिए सीएससी(ए) 1 के करीब होता है। जब कोण ए छोटा होता है, तो विपरीत पक्ष बहुत छोटा होता है, और सहसंयोजक बड़ा होता है।",
-        "इसे इस तरह से सोचें: यदि आप विपरीत पक्ष <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> जानते हैं और कर्ण ज्ञात करना चाहते हैं, तो विपरीत पक्ष को सीएससी(ए) से गुणा करें। इससे आपको c = a × csc(A) प्राप्त होता है।"
+        "जब <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए बड़ा होता है (90° के करीब), विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> लगभग कर्ण जितना लंबा होता है, इसलिए csc(A) 1 के करीब होता है। जब कोण ए छोटा होता है, तो विपरीत पक्ष बहुत छोटा होता है, और सहसंयोजक बड़ा होता है।",
+        "इसे इस तरह से सोचें: यदि आप विपरीत पक्ष <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> जानते हैं और कर्ण ज्ञात करना चाहते हैं, तो विपरीत पक्ष को csc(A) से गुणा करें। इससे आपको c = a × csc(A) प्राप्त होता है।"
       ],
       "whenToUse": {
         "intro": "इस सहसंयोजक अनुपात तक पहुंचें <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">कैलकुलेटर</a> जब:",
         "items": [
-          "आपको पहले पाप(ए) की गणना किए बिना साइन के व्युत्क्रम की आवश्यकता है।",
+          "आपको पहले sin(A) की गणना किए बिना साइन के व्युत्क्रम की आवश्यकता है।",
           "एक सूत्र विशेष रूप से कोसेकेंट की मांग करता है, जो कुछ निश्चित त्रिकोणमितीय पहचानों में प्रकट होता है।",
           "आप विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> को पूर्ण कर्ण लंबाई तक माप रहे हैं।",
           "आप भौतिकी या इंजीनियरिंग समस्याओं पर काम कर रहे हैं जिसमें बल, तरंग फ़ंक्शन, या दोलन सूत्र शामिल हैं जो कोसेकेंट का उपयोग करते हैं।"
@@ -666,14 +666,14 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "items": [
           "साइन के साथ कोसेकेंट को भ्रमित करना। ज्या a/c (कर्ण के विपरीत) है। कोसेकेंट व्युत्क्रम है: c/a (विपरीत पर कर्ण)।",
           "सेकेंट के साथ कोसेकेंट को भ्रमित करना। कोसेकेंट विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> (साइन का व्युत्क्रम) पर आधारित है। सेकेंट आसन्न पक्ष (कोसाइन के व्युत्क्रम) पर आधारित है। वे अलग-अलग पैरों का उपयोग करते हैं।",
-          "1 से कम परिणाम प्राप्त करना। यदि आपका उत्तर 1 से नीचे है, तो हो सकता है कि आपने मान गलत क्रम में दर्ज किया हो। सीएससी(ए) हमेशा 1 से बड़ा होता है।",
+          "1 से कम परिणाम प्राप्त करना। यदि आपका उत्तर 1 से नीचे है, तो हो सकता है कि आपने मान गलत क्रम में दर्ज किया हो। csc(A) हमेशा 1 से बड़ा होता है।",
           "विपरीत पक्ष के बजाय आसन्न <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> का उपयोग करना। कोसेकेंट कर्ण को केवल विपरीत भुजा से जोड़ता है।",
           "कोसेकेंट और कोसाइन के नाम से संबंधित होने की उम्मीद है। सह-उपसर्ग के बावजूद, कोसेकेंट साइन का व्युत्क्रम है, कोसाइन नहीं।"
         ]
       },
       "calculator": {
         "heading": "सहसंयोजक अनुपात की गणना करें",
-        "outputLabel": "सीएससी(ए)",
+        "outputLabel": "csc(A)",
         "fields": [
           {
             "key": "c",
@@ -688,20 +688,20 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "सीएससी(ए) = सी/ए",
+        "display": "csc(A) = सी/ए",
         "paragraphs": [
-          "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए का सहसंयोजक विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> से विभाजित कर्ण के बराबर होता है। यह ज्या का व्युत्क्रम है: सीएससी(ए) = 1 / पाप(ए)।",
-          "कर्ण हमेशा विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> से लंबा होता है, इसलिए सीएससी (ए) न्यून कोणों के लिए हमेशा 1 से अधिक मान उत्पन्न करता है। जैसे-जैसे <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए घटता है, विपरीत भुजा कर्ण के सापेक्ष छोटी हो जाती है, और सहसंयोजक बढ़ जाता है।"
+          "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए का सहसंयोजक विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">पक्ष</a> से विभाजित कर्ण के बराबर होता है। यह ज्या का व्युत्क्रम है: csc(A) = 1 / sin(A)।",
+          "कर्ण हमेशा विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> से लंबा होता है, इसलिए csc(A) न्यून कोणों के लिए हमेशा 1 से अधिक मान उत्पन्न करता है। जैसे-जैसे <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए घटता है, विपरीत भुजा कर्ण के सापेक्ष छोटी हो जाती है, और सहसंयोजक बढ़ जाता है।"
         ]
       },
       "example": {
         "intro": "एक समकोण त्रिभुज का कर्ण c = 5 और विपरीत पक्ष <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> भुजा </a> a = 3 है।",
         "steps": [
-          "सीएससी(ए) = सी/ए",
-          "सीएससी(ए) = 5/3",
-          "सीएससी(ए) ≈ 1.6667"
+          "csc(A) = सी/ए",
+          "csc(A) = 5/3",
+          "csc(A) ≈ 1.6667"
         ],
-        "conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए का सहसंयोजक लगभग 1.6667 है। सत्यापन: पाप(ए) = 3/5 = 0.6, और 1/0.6 ≈ 1.6667।"
+        "conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">कोण</a> ए का सहसंयोजक लगभग 1.6667 है। सत्यापन: sin(A) = 3/5 = 0.6, और 1/0.6 ≈ 1.6667।"
       },
       "relatedLinks": [
         {
@@ -728,15 +728,15 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "कोसेकेंट साइन से किस प्रकार संबंधित है?",
-          "answer": "सीएससी(ए) = 1 / पाप(ए)। यदि पाप(ए) = 0.6, तो सीएससी(ए) = 1 / 0.6 ≈ 1.6667।"
+          "answer": "csc(A) = 1 / sin(A)। यदि sin(A) = 0.6, तो csc(A) = 1 / 0.6 ≈ 1.6667।"
         },
         {
           "question": "कोसेकेंट हमेशा 1 से बड़ा क्यों होता है?",
           "answer": "क्योंकि एक समकोण त्रिभुज में कर्ण सदैव विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a> से बड़ा होता है। भिन्न c/a सदैव 1 से अधिक होता है।"
         },
         {
-          "question": "सीएससी(30°) क्या है?",
-          "answer": "<a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90 त्रिभुज</a> में, पाप(30°) = 0.5, इसलिए सीएससी(30°) = 1 / 0.5 = 2। कर्ण विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a> से ठीक दोगुना है।"
+          "question": "csc(30°) क्या है?",
+          "answer": "<a href=\"/30-60-90-triangle-calculator/\" class=\"text-primary hover:underline\">30-60-90 त्रिभुज</a> में, sin(30°) = 0.5, इसलिए csc(30°) = 1 / 0.5 = 2। कर्ण विपरीत <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">भुजा</a> से ठीक दोगुना है।"
         },
         {
           "question": "मैं साइन के स्थान पर कोसेकैंट का उपयोग कब करूँगा?",
@@ -751,13 +751,13 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "url": "/es/sine-ratio-calculator/",
       "h1": "Calculadora de relación seno",
       "metaTitle": "Calculadora de relación seno | Pecado del triángulo rectángulo (A)",
-      "metaDescription": "Usa esta calculadora de razón de senos <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> para encontrar el pecado(A) en un triángulo rectángulo usando el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a y la hipotenusa c con fórmula, pasos y ejemplos.",
+      "metaDescription": "Usa esta calculadora de razón de senos <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> para encontrar el sin(A) en un triángulo rectángulo usando el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a y la hipotenusa c con fórmula, pasos y ejemplos.",
       "introHeading": "Cómo funciona esta calculadora de relación seno",
       "intro": [
         "La razón del seno es una de las primeras funciones trigonométricas que aprendes en geometría. Conecta un <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> específico en un triángulo rectángulo con dos de sus lados: el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> opuesto</a> y la hipotenusa. Si conoces estas dos <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">medidas</a>, esta calculadora te dará sen(A) al instante.",
         "Ya sea que esté resolviendo un problema de tarea, verificando una respuesta estilo examen o resolviendo una tarea de medición real, esta herramienta elimina el paso de división manual. Ingrese sus valores y obtenga el resultado con la fórmula que se muestra."
       ],
-      "headerSummary": "Encuentra el pecado (A) del lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a y la hipotenusa c en un triángulo rectángulo.",
+      "headerSummary": "Encuentra el sin(A) del lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a y la hipotenusa c en un triángulo rectángulo.",
       "calculatorNote": "Ingrese la longitud del lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a y la hipotenusa c en los campos de arriba. La <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculadora</a> divide a por c y devuelve sin(A). Ambos valores deben ser positivos y c debe ser mayor que a.",
       "diagramExplanation": [
         "Para <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> a es opuesto, el lado b es adyacente y el lado c es la hipotenusa.",
@@ -769,7 +769,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "Encuentra la hipotenusa. Este es el <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> c, el lado más largo, opuesto al <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> derecho.",
         "Ingrese el valor de a en el primer campo de entrada.",
         "Ingrese el valor de c en el segundo campo de entrada.",
-        "Haga clic en Calcular para ver el pecado (A).",
+        "Haga clic en Calcular para ver el sin(A).",
         "Revisa el resultado. Debe ser un decimal entre 0 y 1."
       ],
       "whatResultMeans": [
@@ -799,7 +799,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Calcular la relación seno",
-        "outputLabel": "pecado(A)",
+        "outputLabel": "sin(A)",
         "fields": [
           {
             "key": "a",
@@ -814,7 +814,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "pecado(A) = a/c",
+        "display": "sin(A) = a/c",
         "paragraphs": [
           "El seno del <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es igual a la longitud del <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> opuesto dividido por la longitud de la hipotenusa. Esto suele recordarse con la parte SOH de SOH-CAH-TOA.",
           "En un triángulo rectángulo, el <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> opuesto es el que está directamente frente al <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A. La hipotenusa es siempre el lado más largo, el que mira al ángulo de 90°. Dado que la hipotenusa siempre es más larga que cualquier cateto, sen(A) siempre cae entre 0 y 1 para ángulos agudos."
@@ -823,9 +823,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "Supongamos que tienes un triángulo rectángulo donde el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a = 3 y la hipotenusa c = 5.",
         "steps": [
-          "pecado(A) = a/c",
-          "pecado(A) = 3/5",
-          "pecado(A) = 0,6"
+          "sin(A) = a/c",
+          "sin(A) = 3/5",
+          "sin(A) = 0,6"
         ],
         "conclusion": "El seno de <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es 0,6. Esto significa que el lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> opuesto </a> es el 60% de la longitud de la hipotenusa. Si necesita el ángulo real, tome el seno inverso: A = arcsin(0,6) ≈ 36,87°."
       },
@@ -849,7 +849,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       ],
       "faqs": [
         {
-          "question": "¿Cuál es la fórmula del pecado (A) en un triángulo rectángulo?",
+          "question": "¿Cuál es la fórmula del sin(A) en un triángulo rectángulo?",
           "answer": "La fórmula es sin(A) = a / c, donde a es el <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> opuesto al <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A y c es la hipotenusa. Divides el lado opuesto por la hipotenusa."
         },
         {
@@ -1017,7 +1017,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "Identifica <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> b, el cateto que forma <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A junto a la hipotenusa.",
         "Introduzca el valor de a en el primer campo.",
         "Ingrese el valor de b en el segundo campo.",
-        "Haga clic en Calcular para obtener bronceado (A).",
+        "Haga clic en Calcular para obtener tan(A).",
         "El resultado puede ser menor que 1, igual a 1 o mayor que 1."
       ],
       "whatResultMeans": [
@@ -1047,7 +1047,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Calcular la relación tangente",
-        "outputLabel": "bronceado(A)",
+        "outputLabel": "tan(A)",
         "fields": [
           {
             "key": "a",
@@ -1062,7 +1062,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "bronceado(A) = a/b",
+        "display": "tan(A) = a/b",
         "paragraphs": [
           "La tangente de <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es igual al <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> opuesto dividido por el lado adyacente. Esta es la parte TOA de SOH-CAH-TOA.",
           "A diferencia del seno y el coseno, la tangente no involucra la hipotenusa. Sólo usa las dos piernas. Esto también significa que la tangente no tiene un límite de 1; puede ser cualquier número positivo para ángulos agudos y crece sin límite a medida que <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A se aproxima a 90°."
@@ -1071,9 +1071,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "Un triángulo rectángulo tiene el lado opuesto <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a = 3 y el lado adyacente b = 4.",
         "steps": [
-          "bronceado(A) = a/b",
-          "bronceado(A) = 3/4",
-          "bronceado(A) = 0,75"
+          "tan(A) = a/b",
+          "tan(A) = 3/4",
+          "tan(A) = 0,75"
         ],
         "conclusion": "La tangente de <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es 0,75. Para encontrar el ángulo: A = arctan(0,75) ≈ 36,87°."
       },
@@ -1170,7 +1170,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Calcular la relación cotangente",
-        "outputLabel": "cuna(A)",
+        "outputLabel": "cot(A)",
         "fields": [
           {
             "key": "b",
@@ -1185,7 +1185,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "cuna(A) = b / a",
+        "display": "cot(A) = b / a",
         "paragraphs": [
           "La cotangente de <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es igual al <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> adyacente dividido por el lado opuesto. Es el recíproco de la tangente: cot(A) = 1 / tan(A).",
           "Al igual que la tangente, la cotangente usa solo los dos catetos del triángulo rectángulo. La hipotenusa no está involucrada. La cotangente puede tomar cualquier valor positivo para ángulos agudos."
@@ -1194,9 +1194,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "Un triángulo rectángulo tiene <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> adyacente b = 4 y lado opuesto a = 3.",
         "steps": [
-          "cuna(A) = b / a",
-          "cuna(A) = 4 / 3",
-          "cuna(A) ≈ 1.3333"
+          "cot(A) = b / a",
+          "cot(A) = 4 / 3",
+          "cot(A) ≈ 1.3333"
         ],
         "conclusion": "La cotangente de <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es aproximadamente 1,3333. Puedes verificar esto: tan(A) = 3/4 = 0,75 y 1/0,75 = 1,3333."
       },
@@ -1237,7 +1237,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "¿Es cotangente lo mismo que 1 dividido por tangente?",
-          "answer": "Sí. cuna(A) = 1 / tan(A) = b / a. Ambas expresiones dan el mismo resultado."
+          "answer": "Sí. cot(A) = 1 / tan(A) = b / a. Ambas expresiones dan el mismo resultado."
         }
       ]
     },
@@ -1293,7 +1293,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Calcular la razón secante",
-        "outputLabel": "segundo(A)",
+        "outputLabel": "sec(A)",
         "fields": [
           {
             "key": "c",
@@ -1308,7 +1308,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "segundo(A) = c / b",
+        "display": "sec(A) = c / b",
         "paragraphs": [
           "La secante de <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es igual a la hipotenusa dividida por el lado adyacente <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a>. Este es el recíproco del coseno: sec(A) = 1 / cos(A).",
           "Debido a que la hipotenusa siempre es más larga que el <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> adyacente en un triángulo rectángulo, sec(A) siempre es mayor que 1. A medida que <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A aumenta, el lado adyacente se encoge en relación con la hipotenusa, por lo que la secante aumenta."
@@ -1317,9 +1317,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "Un triángulo rectángulo tiene hipotenusa c = 5 y lado <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> adyacente </a> b = 4.",
         "steps": [
-          "segundo(A) = c / b",
-          "segundo(A) = 5/4",
-          "segundo(A) = 1,25"
+          "sec(A) = c / b",
+          "sec(A) = 5/4",
+          "sec(A) = 1,25"
         ],
         "conclusion": "La secante de <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ángulo</a> A es 1,25. Para verificar: cos(A) = 4/5 = 0,8 y 1/0,8 = 1,25."
       },
@@ -1355,7 +1355,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
           "answer": "seg(A) = 1 / cos(A), y cos(A) = 1 / seg(A). Si conoces uno, puedes encontrar el otro tomando el recíproco."
         },
         {
-          "question": "¿Qué es el segundo (45°)?",
+          "question": "¿Qué es el sec(45°)?",
           "answer": "En un triángulo <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90</a>, la hipotenusa es √2 veces el cateto. Entonces sec(45°) = √2 ≈ 1,4142."
         },
         {
@@ -1471,7 +1471,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "¿Cómo se relaciona la cosecante con el seno?",
-          "answer": "csc(A) = 1 / pecado(A). Si sin(A) = 0,6, entonces csc(A) = 1 / 0,6 ≈ 1,6667."
+          "answer": "csc(A) = 1 / sin(A). Si sin(A) = 0,6, entonces csc(A) = 1 / 0,6 ≈ 1,6667."
         },
         {
           "question": "¿Por qué la cosecante es siempre mayor que 1?",
@@ -1512,7 +1512,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "Найдите гипотенузу. Это <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> c, самая длинная сторона, противоположная правому <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">углу</a>.",
         "Введите значение a в первое поле ввода.",
         "Введите значение c во второе поле ввода.",
-        "Нажмите «Рассчитать», чтобы увидеть грех (A).",
+        "Нажмите «Рассчитать», чтобы увидеть sin(A).",
         "Просмотрите результат. Это должно быть десятичное число от 0 до 1."
       ],
       "whatResultMeans": [
@@ -1542,7 +1542,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Вычислить соотношение синуса",
-        "outputLabel": "грех(А)",
+        "outputLabel": "sin(A)",
         "fields": [
           {
             "key": "a",
@@ -1557,7 +1557,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "грех(А) = а/с",
+        "display": "sin(A) = а/с",
         "paragraphs": [
           "Синус <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A равен длине противоположной <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">стороны</a> деленной на длину гипотенузы. Об этом часто вспоминают с помощью части SOH в SOH-CAH-TOA.",
           "В прямоугольном треугольнике противолежащая <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> — это сторона, расположенная прямо напротив <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A. Гипотенуза всегда является самой длинной стороной — той, которая обращена к углу 90°. Поскольку гипотенуза всегда длиннее любого катета, sin(A) всегда находится в диапазоне от 0 до 1 для острых углов."
@@ -1566,9 +1566,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "Предположим, у вас есть прямоугольный треугольник, у которого противолежащая сторона <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a = 3, а гипотенуза c = 5.",
         "steps": [
-          "грех(А) = а/с",
-          "грех(А) = 3/5",
-          "грех(А) = 0,6"
+          "sin(A) = а/с",
+          "sin(A) = 3/5",
+          "sin(A) = 0,6"
         ],
         "conclusion": "Синус <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A равен 0,6. Это означает, что противоположная сторона <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> составляет 60% длины гипотенузы. Если вам нужен реальный угол, возьмите обратный синус: A = arcsin(0,6) ≈ 36,87°."
       },
@@ -1760,7 +1760,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "Определите <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> b, катет, образующий <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угол</a> A вдоль гипотенузы.",
         "Введите значение a в первое поле.",
         "Введите значение b во второе поле.",
-        "Нажмите «Рассчитать», чтобы получить загар (A).",
+        "Нажмите «Рассчитать», чтобы получить tan(A).",
         "Результат может быть меньше 1, равен 1 или больше 1."
       ],
       "whatResultMeans": [
@@ -1790,7 +1790,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Вычислить коэффициент касательной",
-        "outputLabel": "загар(А)",
+        "outputLabel": "tan(A)",
         "fields": [
           {
             "key": "a",
@@ -1805,7 +1805,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "загар(А) = а/б",
+        "display": "tan(A) = а/б",
         "paragraphs": [
           "Тангенс <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A равен противоположной <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">стороне</a> деленной на примыкающую сторону. Это часть TOA SOH-CAH-TOA.",
           "В отличие от синуса и косинуса, тангенс не включает гипотенузу. Он использует только две ноги. Это также означает, что тангенс не ограничен единицей — это может быть любое положительное число для острых углов, и оно неограниченно растет по мере того, как <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угол</a> A приближается к 90°."
@@ -1814,8 +1814,8 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "В прямоугольном треугольнике противолежащая <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> a = 3 и примыкающая к ней сторона b = 4.",
         "steps": [
-          "загар(А) = а/б",
-          "загар(А) = 3/4",
+          "tan(A) = а/б",
+          "tan(A) = 3/4",
           "Тан(А) = 0,75"
         ],
         "conclusion": "Тангенс <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A равен 0,75. Чтобы найти угол: A = arctan(0,75) ≈ 36,87°."
@@ -1865,7 +1865,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "slug": "cotangent-ratio-calculator",
       "url": "/ru/cotangent-ratio-calculator/",
       "h1": "Калькулятор коэффициента котангенса",
-      "metaTitle": "Калькулятор котангенса | Треугольная детская кроватка (A)",
+      "metaTitle": "Калькулятор котангенса | Треугольная cot(A)",
       "metaDescription": "Используйте этот калькулятор котангенса <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a>, чтобы найти детскую решетку (A) в прямоугольном треугольнике, используя соседнюю <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> сторону</a> b и противоположную сторону a с формулой, шагами и примерами.",
       "introHeading": "Как работает этот калькулятор котангенса",
       "intro": [
@@ -1913,7 +1913,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Вычислить коэффициент котангенса",
-        "outputLabel": "детская кроватка(А)",
+        "outputLabel": "cot(A)",
         "fields": [
           {
             "key": "b",
@@ -1928,7 +1928,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "детская кроватка(А) = б/а",
+        "display": "cot(A) = б/а",
         "paragraphs": [
           "Котангенс <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A равен прилежащей <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">стороне</a> деленной на противоположную сторону. Это обратная величина тангенса: cot(A) = 1 / tan(A).",
           "Как и тангенс, котангенс использует только две стороны прямоугольного треугольника. Гипотенуза не участвует. Котангенс может принимать любое положительное значение для острых углов."
@@ -1937,9 +1937,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "Прямоугольный треугольник имеет смежную <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> b = 4 и противоположную сторону a = 3.",
         "steps": [
-          "детская кроватка(А) = б/а",
-          "детская кроватка(А) = 4/3",
-          "детская кроватка(А) ≈ 1,3333"
+          "cot(A) = б/а",
+          "cot(A) = 4/3",
+          "cot(A) ≈ 1,3333"
         ],
         "conclusion": "Котангенс угла <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A равен примерно 1,3333. Вы можете убедиться в этом: tan(A) = 3/4 = 0,75 и 1/0,75 = 1,3333."
       },
@@ -1988,7 +1988,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "slug": "secant-ratio-calculator",
       "url": "/ru/secant-ratio-calculator/",
       "h1": "Калькулятор секущего отношения",
-      "metaTitle": "Калькулятор секущего коэффициента | Прямоугольный треугольник сек(А)",
+      "metaTitle": "Калькулятор секущего коэффициента | Прямоугольный треугольник sec(A)",
       "metaDescription": "Используйте этот калькулятор сечения <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a>, чтобы найти sec(A) в прямоугольном треугольнике, используя гипотенузу c и прилегающую <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a> b с формулой, шагами и примерами.",
       "introHeading": "Как работает калькулятор секущего отношения",
       "intro": [
@@ -2036,7 +2036,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Вычислить секущее соотношение",
-        "outputLabel": "сек(А)",
+        "outputLabel": "sec(A)",
         "fields": [
           {
             "key": "c",
@@ -2051,7 +2051,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "сек(А) = с/б",
+        "display": "sec(A) = с/б",
         "paragraphs": [
           "Секанс <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A равен гипотенузе, разделенной на прилежащую <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторону</a>. Это обратная величина косинуса: sec(A) = 1 / cos(A).",
           "Поскольку гипотенуза всегда длиннее, чем соседняя <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">сторона</a> в прямоугольном треугольнике, sec(A) всегда больше 1. По мере того, как <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угол</a> A становится больше, примыкающая сторона сжимается относительно гипотенузы, поэтому секущая увеличивается."
@@ -2060,9 +2060,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "Прямоугольный треугольник имеет гипотенузу c = 5 и прилегающую к нему сторону <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> b = 4.",
         "steps": [
-          "сек(А) = с/б",
-          "сек(А) = 5/4",
-          "сек(А) = 1,25"
+          "sec(A) = с/б",
+          "sec(A) = 5/4",
+          "sec(A) = 1,25"
         ],
         "conclusion": "Секанс <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">угла</a> A равен 1,25. Для проверки: cos(A) = 4/5 = 0,8 и 1/0,8 = 1,25."
       },
@@ -2095,10 +2095,10 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "Как преобразовать секанс в косинус?",
-          "answer": "сек(А) = 1/соз(А) и соз(А) = 1/с(А). Если вы знаете одно, вы можете найти другое, взяв обратное."
+          "answer": "sec(A) = 1/соз(А) и соз(А) = 1/с(А). Если вы знаете одно, вы можете найти другое, взяв обратное."
         },
         {
-          "question": "Что такое сек(45°)?",
+          "question": "Что такое sec(45°)?",
           "answer": "В треугольнике <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90</a> гипотенуза в √2 раза больше катета. Итак, sec(45°) = √2 ≈ 1,4142."
         },
         {
@@ -2285,7 +2285,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Calculer le rapport sinusoïdal",
-        "outputLabel": "péché(A)",
+        "outputLabel": "sin(A)",
         "fields": [
           {
             "key": "a",
@@ -2300,7 +2300,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "péché(A) = a / c",
+        "display": "sin(A) = a / c",
         "paragraphs": [
           "Le sinus de l'<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A est égal à la longueur du <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">côté</a> opposé divisé par la longueur de l'hypoténuse. On s'en souvient souvent avec la partie SOH de SOH-CAH-TOA.",
           "Dans un triangle rectangle, le <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">côté</a> opposé est celui directement en face de l'<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A. L'hypoténuse est toujours le côté le plus long, celui qui fait face à l'angle de 90°. Puisque l’hypoténuse est toujours plus longue que n’importe quelle jambe, sin(A) se situe toujours entre 0 et 1 pour les angles aigus."
@@ -2309,9 +2309,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "Supposons que vous ayez un triangle rectangle dont le <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">côté</a> opposé a = 3 et l'hypoténuse c = 5.",
         "steps": [
-          "péché(A) = a / c",
-          "péché(A) = 3 / 5",
-          "péché(A) = 0,6"
+          "sin(A) = a / c",
+          "sin(A) = 3 / 5",
+          "sin(A) = 0,6"
         ],
         "conclusion": "Le sinus de <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A est de 0,6. Cela signifie que le <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">côté</a> opposé représente 60 % de la longueur de l'hypoténuse. Si vous avez besoin de l'angle réel, prenez le sinus inverse : A = arcsin(0,6) ≈ 36,87°."
       },
@@ -2503,7 +2503,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "Identifiez le <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">côté</a> b, la jambe qui forme l'<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A le long de l'hypoténuse.",
         "Entrez la valeur de a dans le premier champ.",
         "Entrez la valeur de b dans le deuxième champ.",
-        "Cliquez sur Calculer pour obtenir le bronzage (A).",
+        "Cliquez sur Calculer pour obtenir le tan(A).",
         "Le résultat peut être inférieur à 1, égal à 1 ou supérieur à 1."
       ],
       "whatResultMeans": [
@@ -2533,7 +2533,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Calculer le rapport tangentiel",
-        "outputLabel": "bronzage(A)",
+        "outputLabel": "tan(A)",
         "fields": [
           {
             "key": "a",
@@ -2548,7 +2548,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "bronzage(A) = a / b",
+        "display": "tan(A) = a / b",
         "paragraphs": [
           "Tangente de l'<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A est égal au <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">côté</a> opposé divisé par le côté adjacent. Il s'agit de la partie TOA de SOH-CAH-TOA.",
           "Contrairement au sinus et au cosinus, la tangente n’implique pas l’hypoténuse. Il utilise uniquement les deux pattes. Cela signifie également que la tangente n'est pas plafonnée à 1 : elle peut être n'importe quel nombre positif pour les angles aigus, et elle augmente sans limite à mesure que l'<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A s'approche de 90°."
@@ -2557,9 +2557,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "Un triangle rectangle a le <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">côté</a> opposé a = 3 et le côté adjacent b = 4.",
         "steps": [
-          "bronzage(A) = a / b",
-          "bronzage(A) = 3 / 4",
-          "bronzage(A) = 0,75"
+          "tan(A) = a / b",
+          "tan(A) = 3 / 4",
+          "tan(A) = 0,75"
         ],
         "conclusion": "La tangente de l'<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A est de 0,75. Pour trouver l'angle : A = arctan(0,75) ≈ 36,87°."
       },
@@ -2615,7 +2615,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "La cotangente est l'inverse de la tangente. Alors que la tangente divise le <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">côté</a> opposé par le côté adjacent, la cotangente retourne cette fraction - elle divise le côté adjacent par le côté opposé. Il apparaît moins souvent dans les cours de géométrie de base, mais il joue un rôle important dans la trigonométrie et le calcul avancés.",
         "Cette <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculatrice</a> prend le <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">côté</a> b adjacent et le côté opposé a, puis renvoie cot(A) = b / a. Si vous avez l'habitude de travailler avec la tangente, la cotangente est simplement la fraction inverse."
       ],
-      "headerSummary": "Calculez le lit bébé (A) du <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">côté</a> b adjacent sur le côté opposé a dans un triangle rectangle.",
+      "headerSummary": "Calculez le cot(A) du <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">côté</a> b adjacent sur le côté opposé a dans un triangle rectangle.",
       "calculatorNote": "Entrez le <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">côté</a> b adjacent et le côté opposé a dans les champs ci-dessus. La <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calculatrice</a> renvoie cot(A) = b / a. Les deux valeurs doivent être positives.",
       "diagramExplanation": [
         "Pour <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A, le <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">côté</a> a est opposé, le côté b est adjacent et le côté c est l'hypoténuse.",
@@ -2650,13 +2650,13 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
           "Écrire a/b au lieu de b/a. Cotangente place le <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">côté</a> adjacent au-dessus, pas le côté opposé. Les échanger vous donne une tangente.",
           "Confondre cotangente et cosinus. La cotangente est b/a (adjacente à l'opposé). Le cosinus est b / c (adjacent à l'hypoténuse). Ce sont des ratios différents.",
           "Utiliser l'hypoténuse dans le calcul. La cotangente n'implique que les deux jambes.",
-          "L’oublier est l’inverse de la tangente. Si vous connaissez déjà tan(A), prenez simplement 1 / tan(A) pour obtenir un lit bébé(A).",
+          "L’oublier est l’inverse de la tangente. Si vous connaissez déjà tan(A), prenez simplement 1 / tan(A) pour obtenir un cot(A).",
           "Mélanger quel <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">côté</a> est adjacent et lequel est opposé. Identifiez toujours les côtés par rapport à <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A."
         ]
       },
       "calculator": {
         "heading": "Calculer le rapport cotangent",
-        "outputLabel": "lit bébé(A)",
+        "outputLabel": "cot(A)",
         "fields": [
           {
             "key": "b",
@@ -2671,7 +2671,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "lit bébé(A) = b / a",
+        "display": "cot(A) = b / a",
         "paragraphs": [
           "Cotangente de <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A est égal au <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">côté</a> adjacent divisé par le côté opposé. C'est l'inverse de la tangente : cot(A) = 1 / tan(A).",
           "Comme la tangente, la cotangente utilise uniquement les deux branches du triangle rectangle. L'hypoténuse n'est pas impliquée. La cotangente peut prendre n'importe quelle valeur positive pour les angles aigus."
@@ -2680,9 +2680,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "Un triangle rectangle a un <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">côté</a> b = 4 et un côté opposé a = 3.",
         "steps": [
-          "lit bébé(A) = b / a",
-          "lit bébé(A) = 4 / 3",
-          "lit bébé(A) ≈ 1,3333"
+          "cot(A) = b / a",
+          "cot(A) = 4 / 3",
+          "cot(A) ≈ 1,3333"
         ],
         "conclusion": "La cotangente de l'<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A est d'environ 1,3333. Vous pouvez vérifier ceci : tan(A) = 3/4 = 0,75 et 1/0,75 = 1,3333."
       },
@@ -2723,7 +2723,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "La cotangente est-elle égale à 1 divisé par la tangente ?",
-          "answer": "Oui. lit bébé(A) = 1 / bronzage(A) = b / a. Les deux expressions donnent le même résultat."
+          "answer": "Oui. cot(A) = 1 / tan(A) = b / a. Les deux expressions donnent le même résultat."
         }
       ]
     },
@@ -2779,7 +2779,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Calculer le rapport sécant",
-        "outputLabel": "seconde(A)",
+        "outputLabel": "sec(A)",
         "fields": [
           {
             "key": "c",
@@ -2957,7 +2957,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "Quel est le lien entre la cosécante et le sinus ?",
-          "answer": "csc(A) = 1 / péché(A). Si sin(A) = 0,6, alors csc(A) = 1 / 0,6 ≈ 1,6667."
+          "answer": "csc(A) = 1 / sin(A). Si sin(A) = 0,6, alors csc(A) = 1 / 0,6 ≈ 1,6667."
         },
         {
           "question": "Pourquoi la cosécante est-elle toujours supérieure à 1 ?",
@@ -3028,7 +3028,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Berechnen Sie das Sinusverhältnis",
-        "outputLabel": "Sünde(A)",
+        "outputLabel": "sin(A)",
         "fields": [
           {
             "key": "a",
@@ -3276,7 +3276,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Berechnen Sie das Tangentenverhältnis",
-        "outputLabel": "braun(A)",
+        "outputLabel": "tan(A)",
         "fields": [
           {
             "key": "a",
@@ -3399,7 +3399,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Berechnen Sie das Kotangensverhältnis",
-        "outputLabel": "Kinderbett(A)",
+        "outputLabel": "cot(A)",
         "fields": [
           {
             "key": "b",
@@ -3424,7 +3424,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "intro": "Ein rechtwinkliges Dreieck hat die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b = 4 und die gegenüberliegende Seite a = 3.",
         "steps": [
           "cot(A) = b / a",
-          "Kinderbett(A) = 4 / 3",
+          "cot(A) = 4 / 3",
           "cot(A) ≈ 1,3333"
         ],
         "conclusion": "Der Kotangens von <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A beträgt ungefähr 1,3333. Sie können dies überprüfen: tan(A) = 3 / 4 = 0,75 und 1 / 0,75 = 1,3333."
@@ -3474,7 +3474,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "slug": "secant-ratio-calculator",
       "url": "/de/secant-ratio-calculator/",
       "h1": "Sekantenverhältnis-Rechner",
-      "metaTitle": "Sekantenverhältnis-Rechner | Rechtwinkliges Dreieck Sek(A)",
+      "metaTitle": "Sekantenverhältnis-Rechner | Rechtwinkliges Dreieck sec(A)",
       "metaDescription": "Verwenden Sie diesen Sekantenverhältnis-<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Rechner</a>, um sec(A) in einem rechtwinkligen Dreieck unter Verwendung der Hypotenuse c und der angrenzenden <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b mit Formel, Schritten und Beispielen zu ermitteln.",
       "introHeading": "So funktioniert dieser Sekantenverhältnis-Rechner",
       "intro": [
@@ -3522,7 +3522,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Berechnen Sie das Sekantenverhältnis",
-        "outputLabel": "Sek(A)",
+        "outputLabel": "sec(A)",
         "fields": [
           {
             "key": "c",
@@ -3537,7 +3537,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "Sek(A) = c / b",
+        "display": "sec(A) = c / b",
         "paragraphs": [
           "Sekante von <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A entspricht der Hypotenuse dividiert durch die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a>. Dies ist der Kehrwert des Kosinus: sec(A) = 1 / cos(A).",
           "Da die Hypotenuse in einem rechtwinkligen Dreieck immer länger ist als die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a>, ist sec(A) immer größer als 1. Wenn der <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A größer wird, schrumpft die angrenzende Seite relativ zur Hypotenuse, sodass die Sekante zunimmt."
@@ -3546,9 +3546,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "Ein rechtwinkliges Dreieck hat die Hypotenuse c = 5 und die angrenzende <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">Seite</a> b = 4.",
         "steps": [
-          "Sek(A) = c / b",
-          "Sek(A) = 5 / 4",
-          "Sek(A) = 1,25"
+          "sec(A) = c / b",
+          "sec(A) = 5 / 4",
+          "sec(A) = 1,25"
         ],
         "conclusion": "Der Sekante von <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Winkel</a> A beträgt 1,25. Zur Überprüfung: cos(A) = 4 / 5 = 0,8 und 1 / 0,8 = 1,25."
       },
@@ -3581,11 +3581,11 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "Wie rechne ich zwischen Sekante und Kosinus um?",
-          "answer": "Sek(A) = 1 / cos(A) und cos(A) = 1 / Sek(A). Wenn Sie das eine kennen, können Sie das andere finden, indem Sie den Kehrwert bilden."
+          "answer": "sec(A) = 1 / cos(A) und cos(A) = 1 / sec(A). Wenn Sie das eine kennen, können Sie das andere finden, indem Sie den Kehrwert bilden."
         },
         {
-          "question": "Was ist sek(45°)?",
-          "answer": "In einem <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90-Dreieck</a> beträgt die Hypotenuse das √2-fache des Schenkels. Also sek(45°) = √2 ≈ 1,4142."
+          "question": "Was ist sec(45°)?",
+          "answer": "In einem <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90-Dreieck</a> beträgt die Hypotenuse das √2-fache des Schenkels. Also sec(45°) = √2 ≈ 1,4142."
         },
         {
           "question": "Wird Sekante in realen Anwendungen verwendet?",
@@ -3722,7 +3722,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "slug": "sine-ratio-calculator",
       "url": "/it/sine-ratio-calculator/",
       "h1": "Calcolatore del rapporto sinusoidale",
-      "metaTitle": "Calcolatore del rapporto sinusoidale | Triangolo rettangolo peccato(A)",
+      "metaTitle": "Calcolatore del rapporto sinusoidale | Triangolo rettangolo sin(A)",
       "metaDescription": "Utilizza questo <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calcolatore</a> del rapporto seno per trovare il seno(A) in un triangolo rettangolo utilizzando il <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lato</a> opposto e l'ipotenusa c con formula, passaggi ed esempi.",
       "introHeading": "Come funziona questo calcolatore del rapporto sinusoidale",
       "intro": [
@@ -3771,7 +3771,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Calcola il rapporto sinusoidale",
-        "outputLabel": "peccato(A)",
+        "outputLabel": "sin(A)",
         "fields": [
           {
             "key": "a",
@@ -3786,7 +3786,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "peccato(A) = a / c",
+        "display": "sin(A) = a / c",
         "paragraphs": [
           "Il seno dell'<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angolo</a> A è uguale alla lunghezza del <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lato</a> opposto diviso per la lunghezza dell'ipotenusa. Questo viene spesso ricordato con la parte SOH di SOH-CAH-TOA.",
           "In un triangolo rettangolo, il <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lato</a> opposto è quello direttamente opposto all'<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angolo</a> A. L'ipotenusa è sempre il lato più lungo, quello rivolto verso l'angolo di 90°. Poiché l'ipotenusa è sempre più lunga di qualsiasi cateto, sin(A) è sempre compreso tra 0 e 1 per gli angoli acuti."
@@ -3795,9 +3795,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "Supponiamo di avere un triangolo rettangolo in cui il <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lato</a> opposto a = 3 e l'ipotenusa c = 5.",
         "steps": [
-          "peccato(A) = a / c",
-          "peccato(A) = 3/5",
-          "peccato(A) = 0,6"
+          "sin(A) = a / c",
+          "sin(A) = 3/5",
+          "sin(A) = 0,6"
         ],
         "conclusion": "Il seno dell'<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angolo</a> A è 0,6. Ciò significa che il <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lato</a> opposto è il 60% della lunghezza dell'ipotenusa. Se ti serve l'angolo reale, prendi l'arcoseno: A = arcsin(0,6) ≈ 36,87°."
       },
@@ -3821,7 +3821,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       ],
       "faqs": [
         {
-          "question": "Qual è la formula del peccato(A) in un triangolo rettangolo?",
+          "question": "Qual è la formula del sin(A) in un triangolo rettangolo?",
           "answer": "La formula è sin(A) = a / c, dove a è il <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lato</a> opposto all'<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angolo</a> A e c è l'ipotenusa. Dividi il cateto opposto per l'ipotenusa."
         },
         {
@@ -3970,7 +3970,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "slug": "tangent-ratio-calculator",
       "url": "/it/tangent-ratio-calculator/",
       "h1": "Calcolatore del rapporto tangente",
-      "metaTitle": "Calcolatore del rapporto tangente | Triangolo rettangolo marrone chiaro(A)",
+      "metaTitle": "Calcolatore del rapporto tangente | Triangolo rettangolo tan(A)",
       "metaDescription": "Utilizza questo <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">calcolatore</a> del rapporto tangente per trovare tan(A) in un triangolo rettangolo utilizzando il <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lato</a> opposto a e il lato adiacente b con formula, passaggi ed esempi.",
       "introHeading": "Come funziona questo calcolatore del rapporto tangente",
       "intro": [
@@ -4019,7 +4019,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Calcola il rapporto tangente",
-        "outputLabel": "marrone chiaro(A)",
+        "outputLabel": "tan(A)",
         "fields": [
           {
             "key": "a",
@@ -4142,7 +4142,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Calcola il rapporto cotangente",
-        "outputLabel": "lettino(A)",
+        "outputLabel": "cot(A)",
         "fields": [
           {
             "key": "b",
@@ -4157,7 +4157,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "lettino(A) = b / a",
+        "display": "cot(A) = b / a",
         "paragraphs": [
           "La cotangente dell'<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angolo</a> A è uguale al <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lato</a> adiacente diviso per il lato opposto. È il reciproco della tangente: cot(A) = 1 / tan(A).",
           "Come la tangente, la cotangente utilizza solo i due cateti del triangolo rettangolo. L'ipotenusa non è coinvolta. La cotangente può assumere qualsiasi valore positivo per gli angoli acuti."
@@ -4166,9 +4166,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "Un triangolo rettangolo ha il <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lato</a> b = 4 adiacente e il lato opposto a = 3.",
         "steps": [
-          "lettino(A) = b / a",
-          "lettino(A) = 4 / 3",
-          "lettino(A) ≈ 1.3333"
+          "cot(A) = b / a",
+          "cot(A) = 4 / 3",
+          "cot(A) ≈ 1.3333"
         ],
         "conclusion": "La cotangente dell'<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angolo</a> A è circa 1,3333. Puoi verificarlo: tan(A) = 3 / 4 = 0,75 e 1 / 0,75 = 1,3333."
       },
@@ -4209,7 +4209,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "La cotangente è uguale a 1 diviso per la tangente?",
-          "answer": "SÌ. lettino(A) = 1 / marrone chiaro(A) = b / a. Entrambe le espressioni danno lo stesso risultato."
+          "answer": "SÌ. cot(A) = 1 / tan(A) = b / a. Entrambe le espressioni danno lo stesso risultato."
         }
       ]
     },
@@ -4879,13 +4879,13 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
           "Escrevendo a/b em vez de b/a. A cotangente coloca o <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> adjacente no topo, não o lado oposto. Trocá-los fornece uma tangente.",
           "Confundindo cotangente com cosseno. A cotangente é b/a (adjacente ao oposto). Cosseno é b/c (adjacente à hipotenusa). São proporções diferentes.",
           "Usando a hipotenusa no cálculo. A cotangente envolve apenas as duas pernas.",
-          "Esquecer é a recíproca da tangente. Se você já conhece tan(A), basta pegar 1 / tan(A) para obter berço(A).",
+          "Esquecer é a recíproca da tangente. Se você já conhece tan(A), basta pegar 1 / tan(A) para obter cot(A).",
           "Misturar qual <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> é adjacente e qual é oposto. Sempre identifique os lados em relação ao <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ângulo</a> A."
         ]
       },
       "calculator": {
         "heading": "Calcular a Razão Cotangente",
-        "outputLabel": "berço(A)",
+        "outputLabel": "cot(A)",
         "fields": [
           {
             "key": "b",
@@ -4900,7 +4900,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "berço(A) = b / a",
+        "display": "cot(A) = b / a",
         "paragraphs": [
           "Cotangente do <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ângulo</a> A é igual ao <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado</a> adjacente dividido pelo lado oposto. É o inverso da tangente: cot(A) = 1 / tan(A).",
           "Assim como a tangente, a cotangente usa apenas os dois catetos do triângulo retângulo. A hipotenusa não está envolvida. A cotangente pode assumir qualquer valor positivo para ângulos agudos."
@@ -4909,9 +4909,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "Um triângulo retângulo tem <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">lado adjacente</a> b = 4 e lado oposto a = 3.",
         "steps": [
-          "berço(A) = b / a",
-          "berço(A) = 4/3",
-          "berço(A) ≈ 1,3333"
+          "cot(A) = b / a",
+          "cot(A) = 4/3",
+          "cot(A) ≈ 1,3333"
         ],
         "conclusion": "A cotangente do <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ângulo</a> A é aproximadamente 1,3333. Você pode verificar isso: tan(A) = 3/4 = 0,75 e 1/0,75 = 1,3333."
       },
@@ -4952,7 +4952,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "Cotangente é o mesmo que 1 dividido pela tangente?",
-          "answer": "Sim. berço(A) = 1 / bronzeado(A) = b / a. Ambas as expressões dão o mesmo resultado."
+          "answer": "Sim. cot(A) = 1 / bronzeado(A) = b / a. Ambas as expressões dão o mesmo resultado."
         }
       ]
     },
@@ -5456,15 +5456,15 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "slug": "tangent-ratio-calculator",
       "url": "/bn/tangent-ratio-calculator/",
       "h1": "স্পর্শক অনুপাত ক্যালকুলেটর",
-      "metaTitle": "স্পর্শক অনুপাত ক্যালকুলেটর | সমকোণী ত্রিভুজ ট্যান(A)",
-      "metaDescription": "সূত্র, ধাপ এবং উদাহরণ সহ বিপরীত <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a> a এবং সংলগ্ন বাহু ব্যবহার করে একটি সমকোণী ত্রিভুজে ট্যান(A) খুঁজে পেতে এই স্পর্শক অনুপাত <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">ক্যালকুলেটর</a> ব্যবহার করুন।",
+      "metaTitle": "স্পর্শক অনুপাত ক্যালকুলেটর | সমকোণী ত্রিভুজ tan(A)",
+      "metaDescription": "সূত্র, ধাপ এবং উদাহরণ সহ বিপরীত <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a> a এবং সংলগ্ন বাহু ব্যবহার করে একটি সমকোণী ত্রিভুজে tan(A) খুঁজে পেতে এই স্পর্শক অনুপাত <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">ক্যালকুলেটর</a> ব্যবহার করুন।",
       "introHeading": "কিভাবে এই স্পর্শক অনুপাত ক্যালকুলেটর কাজ করে",
       "intro": [
         "স্পর্শক হল প্রাথমিক <a href=\"/right-triangle-trig-ratios-calculator/\" class=\"text-primary hover:underline\">ট্রিগ অনুপাত</a> এর তৃতীয়, এবং এটি সাইন এবং কোসাইন থেকে একটু আলাদাভাবে কাজ করে। কর্ণের সাথে একটি পায়ের তুলনা করার পরিবর্তে, স্পর্শক একটি পাকে অন্যটির সাথে তুলনা করে — বিশেষ করে, বিপরীত <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a> সংলগ্ন দিকের সাথে। এটি ঢাল এবং <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">কোণ</a>-অব-উচ্চতার সমস্যাগুলিতে এটিকে বিশেষভাবে উপযোগী করে তোলে।",
-        "এই <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">ক্যালকুলেটর</a> বিপরীত <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a> a কে সংলগ্ন দিক দিয়ে ভাগ করে এবং আপনাকে ট্যান(A) দেয়। একটি ক্যালকুলেটর অ্যাপ বের করার দরকার নেই — শুধু আপনার দুই পায়ের দৈর্ঘ্য লিখুন এবং উত্তর পান।"
+        "এই <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">ক্যালকুলেটর</a> বিপরীত <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a> a কে সংলগ্ন দিক দিয়ে ভাগ করে এবং আপনাকে tan(A) দেয়। একটি ক্যালকুলেটর অ্যাপ বের করার দরকার নেই — শুধু আপনার দুই পায়ের দৈর্ঘ্য লিখুন এবং উত্তর পান।"
       ],
       "headerSummary": "ঢাল, উত্থান এবং দৌড়ের সমস্যাগুলির জন্য বিপরীত <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পাশ[</a> a এবং সংলগ্ন দিক b থেকে tan(A) খুঁজুন।",
-      "calculatorNote": "উপরের ইনপুট ক্ষেত্রগুলিতে বিপরীত <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পাশে[</a> a এবং সংলগ্ন পার্শ্ব b লিখুন। টুলটি ট্যান(A) = a/b গণনা করে। উভয় মান ইতিবাচক হতে হবে.",
+      "calculatorNote": "উপরের ইনপুট ক্ষেত্রগুলিতে বিপরীত <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পাশে[</a> a এবং সংলগ্ন পার্শ্ব b লিখুন। টুলটি tan(A) = a/b গণনা করে। উভয় মান ইতিবাচক হতে হবে.",
       "diagramExplanation": [
         "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">কোণ</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a> এর জন্য a হল বিপরীত, বাহু b সংলগ্ন এবং পাশের c হল কর্ণ।",
         "স্পর্শক শুধুমাত্র দুটি পা ব্যবহার করে: বিপরীত <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a> a এবং সংলগ্ন দিক b। ট্যানজেন্ট সূত্রে কর্ণ c প্রদর্শিত হয় না।"
@@ -5475,7 +5475,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "শনাক্ত করুন <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a> b, পা যা কর্ণের পাশাপাশি <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">কোণ</a> A গঠন করে।",
         "প্রথম ক্ষেত্রে a এর মান লিখুন।",
         "দ্বিতীয় ক্ষেত্রে b এর মান লিখুন।",
-        "ট্যান (এ) পেতে গণনা ক্লিক করুন।",
+        "tan(A) পেতে গণনা ক্লিক করুন।",
         "ফলাফল 1 এর কম, 1 এর সমান বা 1 এর বেশি হতে পারে।"
       ],
       "whatResultMeans": [
@@ -5505,7 +5505,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "স্পর্শক অনুপাত গণনা করুন",
-        "outputLabel": "ট্যান(A)",
+        "outputLabel": "tan(A)",
         "fields": [
           {
             "key": "a",
@@ -5559,8 +5559,8 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
           "answer": "এটি tan(A) = a / b, যেখানে a হল বিপরীত <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a> এবং b হল সংলগ্ন দিক। আপনি সংলগ্ন দ্বারা বিপরীত বিভক্ত."
         },
         {
-          "question": "ট্যান(A) কি 1 এর বেশি হতে পারে?",
-          "answer": "হ্যাঁ। যখন বিপরীত <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পাশ</a> সংলগ্ন বাহুর চেয়ে দীর্ঘ হয়, স্পর্শক 1 ছাড়িয়ে যায়। উদাহরণস্বরূপ, ট্যান(60°) ≈ 1.732।"
+          "question": "tan(A) কি 1 এর বেশি হতে পারে?",
+          "answer": "হ্যাঁ। যখন বিপরীত <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পাশ</a> সংলগ্ন বাহুর চেয়ে দীর্ঘ হয়, স্পর্শক 1 ছাড়িয়ে যায়। উদাহরণস্বরূপ, tan(60°) ≈ 1.732।"
         },
         {
           "question": "স্পর্শক কিভাবে ঢালের সাথে সম্পর্কিত?",
@@ -5572,7 +5572,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "a = b হলে কি হয়?",
-          "answer": "যখন উভয় পা সমান হয়, তখন ট্যান(A) = 1 এবং <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">কোণ</a> A ঠিক 45° হয়।"
+          "answer": "যখন উভয় পা সমান হয়, তখন tan(A) = 1 এবং <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">কোণ</a> A ঠিক 45° হয়।"
         }
       ]
     },
@@ -5580,14 +5580,14 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "slug": "cotangent-ratio-calculator",
       "url": "/bn/cotangent-ratio-calculator/",
       "h1": "কোট্যাঞ্জেন্ট রেশিও ক্যালকুলেটর",
-      "metaTitle": "কোট্যাঞ্জেন্ট অনুপাত ক্যালকুলেটর | সমকোণী ত্রিভুজ খাট(A)",
+      "metaTitle": "কোট্যাঞ্জেন্ট অনুপাত ক্যালকুলেটর | সমকোণী ত্রিভুজ cot(A)",
       "metaDescription": "সূত্র, ধাপ এবং উদাহরণ সহ সংলগ্ন <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a> b এবং বিপরীত বাহু a ব্যবহার করে একটি সমকোণী ত্রিভুজে cot(A) খুঁজতে এই কোট্যাঞ্জেন্ট অনুপাত <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">ক্যালকুলেটর</a> ব্যবহার করুন।",
       "introHeading": "এই কোট্যাঞ্জেন্ট অনুপাত ক্যালকুলেটর কিভাবে কাজ করে",
       "intro": [
         "কোট্যাঞ্জেন্ট হল স্পর্শকের পারস্পরিক। স্পর্শক যখন বিপরীত <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পাশ</a>কে সংলগ্ন দিক দিয়ে ভাগ করে, কোট্যাঞ্জেন্ট সেই ভগ্নাংশটিকে উল্টে দেয় — এটি সন্নিহিত দিকটিকে বিপরীত দিক দিয়ে ভাগ করে। এটি মৌলিক জ্যামিতি ক্লাসে কম দেখা যায়, তবে এটি উন্নত ত্রিকোণমিতি এবং ক্যালকুলাসে একটি গুরুত্বপূর্ণ ভূমিকা পালন করে।",
         "এই <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">ক্যালকুলেটর</a> সংলগ্ন <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব[</a> b এবং বিপরীত দিকটি a নেয়, তারপর cot(A) = b/a প্রদান করে। আপনি যদি স্পর্শক নিয়ে কাজ করতে অভ্যস্ত হন, তাহলে কোট্যাঞ্জেন্ট হল বিপরীত ভগ্নাংশ।"
       ],
-      "headerSummary": "একটি সমকোণী ত্রিভুজের বিপরীত দিকের a এর উপর সংলগ্ন <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পাশ</a> থেকে খাট(A) গণনা করুন।",
+      "headerSummary": "একটি সমকোণী ত্রিভুজের বিপরীত দিকের a এর উপর সংলগ্ন <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পাশ</a> থেকে cot(A) গণনা করুন।",
       "calculatorNote": "উপরের ক্ষেত্রগুলিতে সংলগ্ন <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পাশে</a> b এবং বিপরীত দিকে a লিখুন। <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">ক্যালকুলেটর</a> cot(A) = b/a প্রদান করে। উভয় মান ইতিবাচক হতে হবে.",
       "diagramExplanation": [
         "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">কোণ</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a> এর জন্য a হল বিপরীত, বাহু b সংলগ্ন এবং পাশের c হল কর্ণ।",
@@ -5622,13 +5622,13 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
           "b/a-এর পরিবর্তে a/b লেখা। কোট্যাঞ্জেন্ট সন্নিহিত <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a>কে উপরে রাখে, বিপরীত দিকে নয়। তাদের অদলবদল আপনাকে স্পর্শক দেয়।",
           "কোসাইন সহ বিভ্রান্তিকর কোট্যানজেন্ট। কোট্যাঞ্জেন্ট হল b/a (বিপরীতের উপর সংলগ্ন)। কোসাইন হল b/c (কর্ণের উপর সংলগ্ন)। তারা বিভিন্ন অনুপাত হয়.",
           "গণনায় কর্ণের ব্যবহার। Cotangent শুধুমাত্র দুই পা জড়িত.",
-          "এটি ভুলে যাওয়া স্পর্শকের পারস্পরিক সম্পর্ক। আপনি যদি ইতিমধ্যে tan(A) জানেন তবে খাট(A) পেতে শুধু 1 / tan(A) নিন।",
+          "এটি ভুলে যাওয়া স্পর্শকের পারস্পরিক সম্পর্ক। আপনি যদি ইতিমধ্যে tan(A) জানেন তবে cot(A) পেতে শুধু 1 / tan(A) নিন।",
           "মিশ্রিত করা কোনটি <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a> সংলগ্ন এবং কোনটি বিপরীত। সর্বদা <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">কোণ</a> এ সম্পর্কিত দিকগুলি চিহ্নিত করুন।"
         ]
       },
       "calculator": {
         "heading": "কোট্যাঞ্জেন্ট অনুপাত গণনা করুন",
-        "outputLabel": "খাট(A)",
+        "outputLabel": "cot(A)",
         "fields": [
           {
             "key": "b",
@@ -5683,14 +5683,14 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "কোট্যাঞ্জেন্ট কীভাবে স্পর্শকের সাথে সম্পর্কিত?",
-          "answer": "কোট্যাঞ্জেন্ট হল স্পর্শকের পারস্পরিক। যদি ট্যান(A) = 0.75, তাহলে cot(A) = 1 / 0.75 ≈ 1.3333।"
+          "answer": "কোট্যাঞ্জেন্ট হল স্পর্শকের পারস্পরিক। যদি tan(A) = 0.75, তাহলে cot(A) = 1 / 0.75 ≈ 1.3333।"
         },
         {
           "question": "আমি কখন স্পর্শকের পরিবর্তে কোট্যানজেন্ট ব্যবহার করব?",
           "answer": "একটি সূত্র বিশেষভাবে প্রয়োজন হলে cotangent ব্যবহার করুন, অথবা যখন আপনি সরাসরি সংলগ্ন থেকে বিপরীত অনুপাত চান। অনেক ক্যালকুলাস এবং পদার্থবিজ্ঞানের প্রসঙ্গে, কোট্যাঞ্জেন্ট পরিচয় এবং ডেরিভেটিভ সূত্রে উপস্থিত হয়।"
         },
         {
-          "question": "খাট(A) সমকোণী ত্রিভুজে শূন্যের সমান হতে পারে?",
+          "question": "cot(A) সমকোণী ত্রিভুজে শূন্যের সমান হতে পারে?",
           "answer": "শুধুমাত্র তীব্র কোণ সহ একটি সমকোণী ত্রিভুজে, cot(A) সর্বদা ধনাত্মক হয়। কোট্যাঞ্জেন্ট শূন্যের কাছাকাছি <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">কোণ</a> হিসাবে A 90° এর কাছে আসে, কিন্তু 90° কোণটি নিজেই সঠিক কোণ, আপনি পরিমাপ করবেন এমন একটি তীব্র কোণ নয়।"
         },
         {
@@ -5703,15 +5703,15 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "slug": "secant-ratio-calculator",
       "url": "/bn/secant-ratio-calculator/",
       "h1": "সেক্যান্ট রেশিও ক্যালকুলেটর",
-      "metaTitle": "সেকেন্ট রেশিও ক্যালকুলেটর | সমকোণী ত্রিভুজ সেকেন্ড(A)",
-      "metaDescription": "এই সেকেন্ট অনুপাত <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">ক্যালকুলেটর</a> ব্যবহার করে একটি সমকোণী ত্রিভুজে সেকেন্ড(A) বের করুন সি এবং সংলগ্ন <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব[</a> b সূত্র, ধাপ এবং উদাহরণ সহ।",
+      "metaTitle": "সেকেন্ট রেশিও ক্যালকুলেটর | সমকোণী ত্রিভুজ sec(A)",
+      "metaDescription": "এই সেকেন্ট অনুপাত <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">ক্যালকুলেটর</a> ব্যবহার করে একটি সমকোণী ত্রিভুজে sec(A) বের করুন সি এবং সংলগ্ন <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব[</a> b সূত্র, ধাপ এবং উদাহরণ সহ।",
       "introHeading": "এই সেক্যান্ট রেশিও ক্যালকুলেটর কিভাবে কাজ করে",
       "intro": [
         "সেক্যান্ট হল কোসাইনের পারস্পরিক সম্পর্ক। যেখানে কোসাইন সংলগ্ন <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্বকে [</a> কর্ণের দ্বারা বিভক্ত করে, সেক্যান্টটি উল্টে যায় — এটি কর্ণাকে সংলগ্ন দিক দ্বারা বিভক্ত করে। ফলাফল সর্বদা 1 এর চেয়ে বড় বা সমান কারণ কর্ণের সর্বদা একটি সমকোণী ত্রিভুজের দীর্ঘতম বাহু।",
-        "এই <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">ক্যালকুলেটর</a> দুটি ইনপুট নেয় — হাইপোটেনাস c এবং সংলগ্ন <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a> b — এবং সেকেন্ড(A) প্রদান করে। এই পারস্পরিক অনুপাতটি হাত দিয়ে ভাগ না করে বা প্রথমে কোসাইন কম্পিউটিং না করে এটি একটি দ্রুত উপায়।"
+        "এই <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">ক্যালকুলেটর</a> দুটি ইনপুট নেয় — হাইপোটেনাস c এবং সংলগ্ন <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a> b — এবং sec(A) প্রদান করে। এই পারস্পরিক অনুপাতটি হাত দিয়ে ভাগ না করে বা প্রথমে কোসাইন কম্পিউটিং না করে এটি একটি দ্রুত উপায়।"
       ],
       "headerSummary": "কোসাইনের পারস্পরিক সংলগ্ন <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a> b এর সাথে কর্পোটেনাস c তুলনা করে sec(A) খুঁজুন।",
-      "calculatorNote": "উপরের ক্ষেত্রগুলিতে c এবং সংলগ্ন <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a> b লিখুন। <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">ক্যালকুলেটর</a> সেকেন্ড(A) = c/b গণনা করে। উভয় মান অবশ্যই ধনাত্মক হতে হবে এবং c অবশ্যই b এর থেকে বড় হতে হবে।",
+      "calculatorNote": "উপরের ক্ষেত্রগুলিতে c এবং সংলগ্ন <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a> b লিখুন। <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">ক্যালকুলেটর</a> sec(A) = c/b গণনা করে। উভয় মান অবশ্যই ধনাত্মক হতে হবে এবং c অবশ্যই b এর থেকে বড় হতে হবে।",
       "diagramExplanation": [
         "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">কোণ</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a> এর জন্য a হল বিপরীত, বাহু b সংলগ্ন এবং পাশের c হল কর্ণ।",
         "সেক্যান্ট লব হিসাবে c এবং সংলগ্ন <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a> b হর হিসাবে ব্যবহার করে। বিপরীত দিক a সেক্যান্ট গণনার অংশ নয়।"
@@ -5723,7 +5723,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "প্রথম ইনপুট ক্ষেত্রে c লিখুন।",
         "দ্বিতীয় ইনপুট ক্ষেত্রে b লিখুন।",
         "গণনা ক্লিক করুন।",
-        "ফলাফল হল সেকেন্ড(A), যা সর্বদা 1 এর থেকে বড় বা সমান।"
+        "ফলাফল হল sec(A), যা সর্বদা 1 এর থেকে বড় বা সমান।"
       ],
       "whatResultMeans": [
         "সেক্যান্ট আপনাকে বলে যে কর্ণটি সংলগ্ন <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্বের[</a> সাথে তুলনা করা হয়। 1.25 এর সেকেন্ট মানে কর্ণটি সন্নিহিত বাহুর চেয়ে 25% দীর্ঘ।",
@@ -5751,7 +5751,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "সেক্যান্ট অনুপাত গণনা করুন",
-        "outputLabel": "সেকেন্ড(ক)",
+        "outputLabel": "sec(A)",
         "fields": [
           {
             "key": "c",
@@ -5769,15 +5769,15 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "display": "sec(A) = c/b",
         "paragraphs": [
           "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">কোণ</a> এর সেকেন্ট A সংলগ্ন <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব[</a> দ্বারা ভাগ করা কর্ণের সমান। এটি কোসাইনের পারস্পরিক সম্পর্ক: sec(A) = 1 / cos(A)।",
-          "যেহেতু একটি সমকোণী ত্রিভুজে কর্ণ সর্বদা সন্নিহিত <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্বের[</a> থেকে দীর্ঘ, সেকেন্ড(A) সর্বদা 1 এর চেয়ে বড় হয়। <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">কোণ</a> A বড় হওয়ার সাথে সাথে সংলগ্ন দিকটি কর্ণের সাপেক্ষে সঙ্কুচিত হয়, তাই সেকেন্ট বৃদ্ধি পায়।"
+          "যেহেতু একটি সমকোণী ত্রিভুজে কর্ণ সর্বদা সন্নিহিত <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্বের[</a> থেকে দীর্ঘ, sec(A) সর্বদা 1 এর চেয়ে বড় হয়। <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">কোণ</a> A বড় হওয়ার সাথে সাথে সংলগ্ন দিকটি কর্ণের সাপেক্ষে সঙ্কুচিত হয়, তাই সেকেন্ট বৃদ্ধি পায়।"
         ]
       },
       "example": {
         "intro": "একটি সমকোণী ত্রিভুজের কর্ণ c = 5 এবং সন্নিহিত <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a> b = 4 থাকে।",
         "steps": [
           "sec(A) = c/b",
-          "সেকেন্ড(A) = 5 / 4",
-          "সেকেন্ড(A) = 1.25"
+          "sec(A) = 5 / 4",
+          "sec(A) = 1.25"
         ],
         "conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">কোণ</a> A এর সেক্যান্ট হল 1.25। যাচাই করতে: cos(A) = 4 / 5 = 0.8, এবং 1 / 0.8 = 1.25।"
       },
@@ -5802,7 +5802,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "faqs": [
         {
           "question": "সমকোণী ত্রিভুজে সেকেন্ট অনুপাত কত?",
-          "answer": "সেক্যান্টকে সেকেন্ড (A) = c/b হিসাবে সংজ্ঞায়িত করা হয়েছে, যেখানে c হল কর্ণ এবং b হল সংলগ্ন <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a>। এটি কোসাইন এর পারস্পরিক।"
+          "answer": "সেক্যান্টকে sec(A) = c/b হিসাবে সংজ্ঞায়িত করা হয়েছে, যেখানে c হল কর্ণ এবং b হল সংলগ্ন <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">পার্শ্ব</a>। এটি কোসাইন এর পারস্পরিক।"
         },
         {
           "question": "কেন সেক্যান্ট সবসময় 1 এর চেয়ে বড় হয়?",
@@ -5813,8 +5813,8 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
           "answer": "sec(A) = 1 / cos(A), এবং cos(A) = 1 / sec(A)। আপনি যদি একটি জানেন, আপনি পারস্পরিক গ্রহণ করে অন্য খুঁজে পেতে পারেন."
         },
         {
-          "question": "সেকেন্ড (45°) কি?",
-          "answer": "একটি <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90 ত্রিভুজ</a>-এ, কর্ণটি পায়ের √2 গুণ। সুতরাং সেকেন্ড(45°) = √2 ≈ 1.4142।"
+          "question": "sec(45°) কি?",
+          "answer": "একটি <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90 ত্রিভুজ</a>-এ, কর্ণটি পায়ের √2 গুণ। সুতরাং sec(45°) = √2 ≈ 1.4142।"
         },
         {
           "question": "সেক্যান্ট কি বাস্তব-বিশ্বের অ্যাপ্লিকেশনগুলিতে ব্যবহৃত হয়?",
@@ -6000,7 +6000,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "正弦比の計算",
-        "outputLabel": "罪(A)",
+        "outputLabel": "sin(A)",
         "fields": [
           {
             "key": "a",
@@ -6248,7 +6248,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "正接比の計算",
-        "outputLabel": "タン(A)",
+        "outputLabel": "tan(A)",
         "fields": [
           {
             "key": "a",
@@ -6371,7 +6371,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "コタンジェント比の計算",
-        "outputLabel": "ベビーベッド(A)",
+        "outputLabel": "cot(A)",
         "fields": [
           {
             "key": "b",
@@ -6446,7 +6446,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "slug": "secant-ratio-calculator",
       "url": "/ja/secant-ratio-calculator/",
       "h1": "セカント比計算機",
-      "metaTitle": "セカント比計算ツール |直角三角形秒(A)",
+      "metaTitle": "セカント比計算ツール |直角三角形sec(A)",
       "metaDescription": "この正割比 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">計算機 </a> を使用して、斜辺 c と隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> b を使用して直角三角形の sec(A) を計算式、手順、例とともに求めます。",
       "introHeading": "この正割比計算ツールの仕組み",
       "intro": [
@@ -6494,7 +6494,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "正割比の計算",
-        "outputLabel": "秒(A)",
+        "outputLabel": "sec(A)",
         "fields": [
           {
             "key": "c",
@@ -6509,7 +6509,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "秒(A) = c / b",
+        "display": "sec(A) = c / b",
         "paragraphs": [
           "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> の正割 A は、斜辺を隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> で割ったものと等しくなります。これはコサインの逆数です: sec(A) = 1 / cos(A)。",
           "直角三角形では斜辺は常に隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> よりも長いため、sec(A) は常に 1 より大きくなります。 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">angle</a> A が大きくなるにつれて、隣接する辺は斜辺に対して縮小するため、セカントは増加します。"
@@ -6518,9 +6518,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "直角三角形には斜辺 c = 5 と隣接する <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">辺</a> b = 4 があります。",
         "steps": [
-          "秒(A) = c / b",
-          "秒(A) = 5 / 4",
-          "秒(A) = 1.25"
+          "sec(A) = c / b",
+          "sec(A) = 5 / 4",
+          "sec(A) = 1.25"
         ],
         "conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A の正割は 1.25 です。検証するには: cos(A) = 4 / 5 = 0.8、および 1 / 0.8 = 1.25。"
       },
@@ -6556,7 +6556,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
           "answer": "sec(A) = 1 / cos(A)、cos(A) = 1 / sec(A)。一方がわかっていれば、逆数を取ることでもう一方を見つけることができます。"
         },
         {
-          "question": "秒(45°)とは何ですか?",
+          "question": "sec(45°)とは何ですか?",
           "answer": "<a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90 の三角形</a> では、斜辺は脚の √2 倍です。したがって、sec(45°) = √2 ≈ 1.4142 となります。"
         },
         {
@@ -6694,7 +6694,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "slug": "sine-ratio-calculator",
       "url": "/ko/sine-ratio-calculator/",
       "h1": "사인비 계산기",
-      "metaTitle": "사인비 계산기 | 직각삼각형 죄(A)",
+      "metaTitle": "사인비 계산기 | 직각삼각형 sin(A)",
       "metaDescription": "이 사인비 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>를 사용하여 대변 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a와 빗변 c를 공식, 단계 및 예와 함께 사용하여 직각삼각형에서 sin(A)를 구합니다.",
       "introHeading": "이 사인비 계산기의 작동 방식",
       "intro": [
@@ -6743,7 +6743,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "사인비 계산",
-        "outputLabel": "죄(A)",
+        "outputLabel": "sin(A)",
         "fields": [
           {
             "key": "a",
@@ -6758,7 +6758,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "죄(A) = a / c",
+        "display": "sin(A) = a / c",
         "paragraphs": [
           "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A의 사인은 대변 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>의 길이를 빗변의 길이로 나눈 값과 같습니다. 이는 SOH-CAH-TOA의 SOH 부분으로 종종 기억됩니다.",
           "직각 삼각형에서 반대쪽 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>은 <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각</a> A의 바로 맞은편에 있습니다. 빗변은 항상 가장 긴 변, 즉 90° 각도를 향하는 변입니다. 빗변은 항상 다리보다 길기 때문에 sin(A)는 예각에 대해 항상 0과 1 사이에 속합니다."
@@ -6767,9 +6767,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "대변 ​​<a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> a = 3이고 빗변 c = 5인 직각삼각형이 있다고 가정합니다.",
         "steps": [
-          "죄(A) = a / c",
-          "죄(A) = 3 / 5",
-          "죄(A) = 0.6"
+          "sin(A) = a / c",
+          "sin(A) = 3 / 5",
+          "sin(A) = 0.6"
         ],
         "conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A의 사인은 0.6입니다. 이는 대변 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a>이 빗변 길이의 60%임을 의미합니다. 실제 각도가 필요한 경우 역사인을 취합니다. A = arcsin(0.6) ≒ 36.87°."
       },
@@ -6991,7 +6991,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "탄젠트 비율 계산",
-        "outputLabel": "황갈색(A)",
+        "outputLabel": "tan(A)",
         "fields": [
           {
             "key": "a",
@@ -7017,7 +7017,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "steps": [
           "탄(A) = a / b",
           "탄(A) = 3 / 4",
-          "황갈색(A) = 0.75"
+          "tan(A) = 0.75"
         ],
         "conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">각도</a> A의 탄젠트는 0.75입니다. 각도를 찾으려면: A = arctan(0.75) ≒ 36.87°."
       },
@@ -7066,7 +7066,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "slug": "cotangent-ratio-calculator",
       "url": "/ko/cotangent-ratio-calculator/",
       "h1": "코탄젠트 비율 계산기",
-      "metaTitle": "코탄젠트 비율 계산기 | 직삼각형 유아용침대(A)",
+      "metaTitle": "코탄젠트 비율 계산기 | 직삼각형 cot(A)",
       "metaDescription": "이 코탄젠트 비율 <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">계산기</a>를 사용하여 수식, 단계 및 예와 함께 인접한 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">변</a> b와 반대 변 a를 사용하여 직각 삼각형에서 cot(A)를 찾습니다.",
       "introHeading": "이 코탄젠트 비율 계산기의 작동 방식",
       "intro": [
@@ -7114,7 +7114,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "코탄젠트 비율 계산",
-        "outputLabel": "유아용침대(A)",
+        "outputLabel": "cot(A)",
         "fields": [
           {
             "key": "b",
@@ -7415,7 +7415,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "코시컨트는 사인과 어떤 관련이 있나요?",
-          "answer": "csc(A) = 1 / 죄(A). sin(A) = 0.6이면 csc(A) = 1 / 0.6 ≒ 1.6667입니다."
+          "answer": "csc(A) = 1 / sin(A). sin(A) = 0.6이면 csc(A) = 1 / 0.6 ≒ 1.6667입니다."
         },
         {
           "question": "코시컨트가 항상 1보다 큰 이유는 무엇입니까?",
@@ -7456,7 +7456,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "Cari hipotenus. Ini ialah <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> c, sisi terpanjang, bertentangan dengan sudut <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">yang betul</a>.",
         "Masukkan nilai a dalam medan input pertama.",
         "Masukkan nilai c dalam medan input kedua.",
-        "Klik Kira untuk melihat dosa(A).",
+        "Klik Kira untuk melihat sin(A).",
         "Semak keputusan. Ia mestilah perpuluhan antara 0 dan 1."
       ],
       "whatResultMeans": [
@@ -7486,7 +7486,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Kira Nisbah Sinus",
-        "outputLabel": "dosa(A)",
+        "outputLabel": "sin(A)",
         "fields": [
           {
             "key": "a",
@@ -7932,15 +7932,15 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "slug": "secant-ratio-calculator",
       "url": "/ms/secant-ratio-calculator/",
       "h1": "Kalkulator Nisbah Secant",
-      "metaTitle": "Kalkulator Nisbah Secant | Segitiga Kanan saat(A)",
-      "metaDescription": "Gunakan nisbah sekan <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> untuk mencari saat(A) dalam segi tiga tepat menggunakan hipotenus c dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b bersebelahan dengan formula, langkah dan contoh.",
+      "metaTitle": "Kalkulator Nisbah Secant | Segitiga Kanan sec(A)",
+      "metaDescription": "Gunakan nisbah sekan <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> untuk mencari sec(A) dalam segi tiga tepat menggunakan hipotenus c dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b bersebelahan dengan formula, langkah dan contoh.",
       "introHeading": "Cara Kalkulator Nisbah Secant Ini Berfungsi",
       "intro": [
         "Secant ialah salingan kosinus. Apabila kosinus membahagikan sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> bersebelahan dengan hipotenus, sekan membalikkannya — ia membahagikan hipotenus dengan sisi bersebelahan. Hasilnya sentiasa lebih besar daripada atau sama dengan 1 kerana hipotenus sentiasa sisi terpanjang dalam segi tiga tepat.",
         "<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Kalkulator</a> ini mengambil dua input — hipotenus c dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi bersebelahan</a> b — dan mengembalikan sec(A). Ia adalah cara cepat untuk mendapatkan nisbah timbal balik ini tanpa melakukan pembahagian dengan tangan atau mengira kosinus terlebih dahulu."
       ],
       "headerSummary": "Cari sec(A) dengan membandingkan hipotenus c dengan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b bersebelahan, salingan kosinus.",
-      "calculatorNote": "Masukkan hipotenus c dan sebelah <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sebelah</a> b dalam medan di atas. Kalkulator <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> mengira saat(A) = c / b. Kedua-dua nilai mestilah positif, dan c mestilah lebih besar daripada b.",
+      "calculatorNote": "Masukkan hipotenus c dan sebelah <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sebelah</a> b dalam medan di atas. Kalkulator <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> mengira sec(A) = c / b. Kedua-dua nilai mestilah positif, dan c mestilah lebih besar daripada b.",
       "diagramExplanation": [
         "Untuk <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a adalah bertentangan, sisi b adalah bersebelahan, dan sisi c ialah hipotenus.",
         "Secant menggunakan hipotenus c sebagai pengangka dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b bersebelahan sebagai penyebut. Bahagian bertentangan a bukan sebahagian daripada pengiraan secant."
@@ -7972,7 +7972,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "intro": "Ralat sekan ini paling kerap mengelirukan pelajar:",
         "items": [
           "Titik mengelirukan dengan kosinus. Kosinus ialah b / c (bersebelahan dengan hipotenus). Secant ialah timbal balik: c / b (hipotenus atas bersebelahan).",
-          "Mendapat keputusan kurang daripada 1. Jika jawapan anda di bawah 1, anda mungkin membalikkan pecahan itu. Dalam segi tiga tepat yang sah, saat(A) sentiasa lebih besar daripada atau sama dengan 1.",
+          "Mendapat keputusan kurang daripada 1. Jika jawapan anda di bawah 1, anda mungkin membalikkan pecahan itu. Dalam segi tiga tepat yang sah, sec(A) sentiasa lebih besar daripada atau sama dengan 1.",
           "Menggunakan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang bertentangan dan bukannya sisi bersebelahan. Secant memasangkan hipotenus dengan sisi bersebelahan, bukan sisi bertentangan.",
           "Mencampurkan secant dan cosecant. Secant ialah salingan kosinus. Cosecant ialah salingan sinus. Mereka menggunakan sisi yang berbeza.",
           "Memasuki b lebih besar daripada c. Hipotenus mestilah sentiasa lebih panjang daripada sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bersebelahan</a>."
@@ -7980,7 +7980,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Kira Nisbah Secant",
-        "outputLabel": "saat(A)",
+        "outputLabel": "sec(A)",
         "fields": [
           {
             "key": "c",
@@ -8005,7 +8005,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "intro": "Segitiga tegak mempunyai hipotenus c = 5 dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> bersebelahan b = 4.",
         "steps": [
           "sec(A) = c / b",
-          "saat(A) = 5 / 4",
+          "sec(A) = 5 / 4",
           "sec(A) = 1.25"
         ],
         "conclusion": "Sekan bagi <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A ialah 1.25. Untuk mengesahkan: cos(A) = 4 / 5 = 0.8, dan 1 / 0.8 = 1.25."
@@ -8477,7 +8477,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Oblicz współczynnik styczny",
-        "outputLabel": "opalony(A)",
+        "outputLabel": "tan(A)",
         "fields": [
           {
             "key": "a",
@@ -8723,7 +8723,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Oblicz stosunek siecznych",
-        "outputLabel": "s(A)",
+        "outputLabel": "sec(A)",
         "fields": [
           {
             "key": "c",
@@ -8738,7 +8738,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "s(A) = c / b",
+        "display": "sec(A) = c / b",
         "paragraphs": [
           "Sieczna <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> A równa się przeciwprostokątnej podzielonej przez sąsiedni <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a>. To jest odwrotność cosinusa: sec(A) = 1 / cos(A).",
           "Ponieważ przeciwprostokątna jest zawsze dłuższa niż sąsiedni <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> w trójkącie prostokątnym, sec(A) jest zawsze większa od 1. Gdy <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąt</a> A staje się większy, sąsiedni bok kurczy się względem przeciwprostokątnej, więc sieczna rośnie."
@@ -8747,9 +8747,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "Trójkąt prostokątny ma przeciwprostokątną c = 5 i sąsiedni <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">bok</a> b = 4.",
         "steps": [
-          "s(A) = c / b",
-          "s(A) = 5 / 4",
-          "s(A) = 1,25"
+          "sec(A) = c / b",
+          "sec(A) = 5 / 4",
+          "sec(A) = 1,25"
         ],
         "conclusion": "Sekans <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">kąta</a> A wynosi 1,25. Aby sprawdzić: cos(A) = 4 / 5 = 0,8 i 1 / 0,8 = 1,25."
       },
@@ -9096,7 +9096,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Hitung Rasio Cosinus",
-        "outputLabel": "karena(A)",
+        "outputLabel": "cos(A)",
         "fields": [
           {
             "key": "b",
@@ -9122,7 +9122,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "steps": [
           "cos(A) = b / c",
           "cos(A) = 4/5",
-          "karena(A) = 0,8"
+          "cos(A) = 0,8"
         ],
         "conclusion": "Kosinus <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A adalah 0,8. Sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> yang berdekatan adalah 80% dari panjang sisi miring. Mencari sudut: A = arccos(0,8) ≈ 36,87°."
       },
@@ -9220,7 +9220,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Hitung Rasio Tangen",
-        "outputLabel": "berjemur(A)",
+        "outputLabel": "tan(A)",
         "fields": [
           {
             "key": "a",
@@ -9418,15 +9418,15 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "slug": "secant-ratio-calculator",
       "url": "/id/secant-ratio-calculator/",
       "h1": "Kalkulator Rasio Garis Potong",
-      "metaTitle": "Kalkulator Rasio Garis Potong | Segitiga Kanan detik(A)",
-      "metaDescription": "Gunakan perbandingan garis potong <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini untuk mencari detik(A) pada segitiga siku-siku menggunakan sisi miring c dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b yang berdekatan beserta rumus, langkah, dan contoh.",
+      "metaTitle": "Kalkulator Rasio Garis Potong | Segitiga Kanan sec(A)",
+      "metaDescription": "Gunakan perbandingan garis potong <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini untuk mencari sec(A) pada segitiga siku-siku menggunakan sisi miring c dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b yang berdekatan beserta rumus, langkah, dan contoh.",
       "introHeading": "Cara Kerja Kalkulator Rasio Garis Potong ini",
       "intro": [
         "Garis potong adalah kebalikan dari kosinus. Jika kosinus membagi sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> yang berdekatan dengan sisi miring, maka garis potong akan membaliknya — sehingga membagi sisi miring dengan sisi yang berdekatan. Hasilnya selalu lebih besar atau sama dengan 1 karena sisi miring selalu merupakan sisi terpanjang pada segitiga siku-siku.",
-        "<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini mengambil dua masukan — sisi miring c dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b yang berdekatan — dan mengembalikan detik(A). Ini adalah cara cepat untuk mendapatkan rasio timbal balik tanpa melakukan pembagian secara manual atau menghitung kosinus terlebih dahulu."
+        "<a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> ini mengambil dua masukan — sisi miring c dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b yang berdekatan — dan mengembalikan sec(A). Ini adalah cara cepat untuk mendapatkan rasio timbal balik tanpa melakukan pembagian secara manual atau menghitung kosinus terlebih dahulu."
       ],
-      "headerSummary": "Cari detik(A) dengan membandingkan sisi miring c dengan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b yang berdekatan, kebalikan dari kosinus.",
-      "calculatorNote": "Masukkan sisi miring c dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b yang berdekatan pada kolom di atas. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> menghitung detik(A) = c / b. Kedua nilai tersebut harus positif, dan c harus lebih besar dari b.",
+      "headerSummary": "Cari sec(A) dengan membandingkan sisi miring c dengan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b yang berdekatan, kebalikan dari kosinus.",
+      "calculatorNote": "Masukkan sisi miring c dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b yang berdekatan pada kolom di atas. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkulator</a> menghitung sec(A) = c / b. Kedua nilai tersebut harus positif, dan c harus lebih besar dari b.",
       "diagramExplanation": [
         "Untuk <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> a berhadapan, sisi b berdekatan, dan sisi c adalah sisi miring.",
         "Garis potong menggunakan sisi miring c sebagai pembilangnya dan sisi </a> b yang berdekatan sebagai penyebutnya. Sisi berlawanan a bukan bagian dari perhitungan garis potong."
@@ -9466,7 +9466,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Hitung Rasio Garis Potong",
-        "outputLabel": "detik(A)",
+        "outputLabel": "sec(A)",
         "fields": [
           {
             "key": "c",
@@ -9481,18 +9481,18 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "detik(A) = c / b",
+        "display": "sec(A) = c / b",
         "paragraphs": [
-          "Garis potong dari <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A sama dengan sisi miring dibagi dengan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang berdekatan. Ini kebalikan dari kosinus: detik(A) = 1 / cos(A).",
-          "Karena sisi miring selalu lebih panjang dari <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang berdekatan pada segitiga siku-siku, detik(A) selalu lebih besar dari 1. Karena <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A semakin besar, sisi yang berdekatan menyusut relatif terhadap sisi miring, sehingga garis potong bertambah."
+          "Garis potong dari <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A sama dengan sisi miring dibagi dengan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang berdekatan. Ini kebalikan dari kosinus: sec(A) = 1 / cos(A).",
+          "Karena sisi miring selalu lebih panjang dari <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> yang berdekatan pada segitiga siku-siku, sec(A) selalu lebih besar dari 1. Karena <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A semakin besar, sisi yang berdekatan menyusut relatif terhadap sisi miring, sehingga garis potong bertambah."
         ]
       },
       "example": {
         "intro": "Segitiga siku-siku memiliki sisi miring c = 5 dan <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sisi</a> b = 4 yang berdekatan.",
         "steps": [
-          "detik(A) = c / b",
-          "detik(A) = 5/4",
-          "detik(A) = 1,25"
+          "sec(A) = c / b",
+          "sec(A) = 5/4",
+          "sec(A) = 1,25"
         ],
         "conclusion": "Garis potong <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">sudut</a> A adalah 1,25. Untuk memverifikasi: cos(A) = 4 / 5 = 0,8, dan 1 / 0,8 = 1,25."
       },
@@ -9517,7 +9517,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "faqs": [
         {
           "question": "Berapakah perbandingan garis potong pada segitiga siku-siku?",
-          "answer": "Garis potong didefinisikan sebagai detik(A) = c / b, dengan c adalah sisi miring dan b adalah sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> yang berdekatan. Ini adalah kebalikan dari kosinus."
+          "answer": "Garis potong didefinisikan sebagai sec(A) = c / b, dengan c adalah sisi miring dan b adalah sisi <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> yang berdekatan. Ini adalah kebalikan dari kosinus."
         },
         {
           "question": "Mengapa garis potong selalu lebih besar dari 1?",
@@ -9525,11 +9525,11 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "Bagaimana cara mengkonversi antara garis potong dan kosinus?",
-          "answer": "detik(A) = 1 / cos(A), dan cos(A) = 1 / detik(A). Jika Anda mengetahui salah satunya, Anda dapat menemukan yang lain dengan mengambil timbal baliknya."
+          "answer": "sec(A) = 1 / cos(A), dan cos(A) = 1 / sec(A). Jika Anda mengetahui salah satunya, Anda dapat menemukan yang lain dengan mengambil timbal baliknya."
         },
         {
-          "question": "Berapakah detik(45°)?",
-          "answer": "Pada segitiga <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90</a>, sisi miringnya adalah √2 kali kaki. Jadi detik(45°) = √2 ≈ 1,4142."
+          "question": "Berapakah sec(45°)?",
+          "answer": "Pada segitiga <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90</a>, sisi miringnya adalah √2 kali kaki. Jadi sec(45°) = √2 ≈ 1,4142."
         },
         {
           "question": "Apakah garis potong digunakan dalam aplikasi dunia nyata?",
@@ -9644,7 +9644,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "Bagaimana hubungan kosekan dengan sinus?",
-          "answer": "csc(A) = 1 / dosa(A). Jika sin(A) = 0,6, maka csc(A) = 1 / 0,6 ≈ 1,6667."
+          "answer": "csc(A) = 1 / sin(A). Jika sin(A) = 0,6, maka csc(A) = 1 / 0,6 ≈ 1,6667."
         },
         {
           "question": "Mengapa kosekan selalu lebih besar dari 1?",
@@ -9670,7 +9670,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "metaDescription": "استخدم نسبة الجيب <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">الآلة الحاسبة</a> للعثور على sin(A) في المثلث القائم باستخدام <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع المتقابل</a> a والوتر c مع الصيغة والخطوات والأمثلة.",
       "introHeading": "كيف تعمل حاسبة نسبة الجيب هذه",
       "intro": [
-        "تعد نسبة الجيب إحدى أولى الدوال المثلثية التي تتعلمها في الهندسة. فهو يربط <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">زاوية</a> محددة في مثلث قائم باثنين من أضلاعه - الضلع المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> والوتر. إذا كنت تعرف هذين <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">القياسين</a>، فإن هذه الآلة الحاسبة تعطيك الخطيئة(أ) على الفور.",
+        "تعد نسبة الجيب إحدى أولى الدوال المثلثية التي تتعلمها في الهندسة. فهو يربط <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">زاوية</a> محددة في مثلث قائم باثنين من أضلاعه - الضلع المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> والوتر. إذا كنت تعرف هذين <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">القياسين</a>، فإن هذه الآلة الحاسبة تعطيك sin(A) على الفور.",
         "سواء كنت تعمل على حل مشكلة في الواجب المنزلي، أو التحقق من إجابة بأسلوب الامتحان، أو حل مهمة قياس حقيقية، فإن هذه الأداة تزيل خطوة القسمة اليدوية. أدخل القيم الخاصة بك واحصل على النتيجة باستخدام الصيغة المعروضة."
       ],
       "headerSummary": "أوجد sin(A) من الضلع المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a والوتر c في المثلث القائم.",
@@ -9685,7 +9685,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "أوجد الوتر. هذا هو <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> c، الضلع الأطول، المقابل للزاوية اليمنى <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"></a>.",
         "أدخل قيمة a في حقل الإدخال الأول.",
         "أدخل قيمة c في حقل الإدخال الثاني.",
-        "انقر فوق \"حساب\" لرؤية الخطيئة (أ).",
+        "انقر فوق \"حساب\" لرؤية sin(A).",
         "قم بمراجعة النتيجة. يجب أن يكون رقمًا عشريًا بين 0 و1."
       ],
       "whatResultMeans": [
@@ -9715,7 +9715,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "حساب نسبة الجيب",
-        "outputLabel": "الخطيئة (أ)",
+        "outputLabel": "sin(A)",
         "fields": [
           {
             "key": "a",
@@ -9730,7 +9730,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "الخطيئة (أ) = أ / ج",
+        "display": "sin(A) = أ / ج",
         "paragraphs": [
           "جيب <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A يساوي طول الضلع المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> مقسومًا على طول الوتر. غالبًا ما يتم تذكر ذلك مع جزء SOH من SOH-CAH-TOA.",
           "في المثلث القائم الزاوية، الضلع المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> هو الضلع المقابل مباشرة للزاوية <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\"></a> A. الوتر هو دائمًا الضلع الأطول — الضلع المواجه للزاوية 90 درجة. نظرًا لأن الوتر دائمًا أطول من أي ساق، فإن sin(A) يقع دائمًا بين 0 و1 للزوايا الحادة."
@@ -9739,9 +9739,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "لنفترض أن لديك مثلثًا قائمًا حيث الضلع المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> a = 3 والوتر c = 5.",
         "steps": [
-          "الخطيئة (أ) = أ / ج",
-          "الخطيئة (أ) = 3 / 5",
-          "الخطيئة (أ) = 0.6"
+          "sin(A) = أ / ج",
+          "sin(A) = 3 / 5",
+          "sin(A) = 0.6"
         ],
         "conclusion": "جيب <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A هو 0.6. وهذا يعني أن الضلع المقابل <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> يمثل 60% من طول الوتر. إذا كنت تريد الزاوية الفعلية، فخذ الجيب العكسي: A = arcsin(0.6) ≈ 36.87°."
       },
@@ -9765,7 +9765,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       ],
       "faqs": [
         {
-          "question": "ما هي صيغة الخطيئة (أ) في المثلث القائم؟",
+          "question": "ما هي صيغة sin(A) في المثلث القائم؟",
           "answer": "الصيغة هي sin(A) = a / c، حيث a هو <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> المقابل لـ<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A وc هو الوتر. تقسم الضلع المقابل على الوتر."
         },
         {
@@ -9839,7 +9839,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "حساب نسبة جيب التمام",
-        "outputLabel": "كوس (أ)",
+        "outputLabel": "cos(A)",
         "fields": [
           {
             "key": "b",
@@ -9854,7 +9854,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "كوس (أ) = ب / ج",
+        "display": "cos(A) = ب / ج",
         "paragraphs": [
           "جيب تمام <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A يساوي الضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> مقسومًا على الوتر. هذا هو CAH في SOH-CAH-TOA.",
           "الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> b المجاور هو الساق التي تمس <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A والزاوية القائمة. يقع الوتر c على الجانب الآخر من الزاوية اليمنى ويكون دائمًا هو الضلع الأطول. نظرًا لأن الوتر أطول من أي ساق، فإن cos(A) ينتج دائمًا قيمة بين 0 و1 للزوايا الحادة."
@@ -9863,9 +9863,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "المثلث القائم الزاوية له <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">ضلع مجاور</a> b = 4 والوتر c = 5.",
         "steps": [
-          "كوس (أ) = ب / ج",
-          "كوس (أ) = 4 / 5",
-          "كوس (أ) = 0.8"
+          "cos(A) = ب / ج",
+          "cos(A) = 4 / 5",
+          "cos(A) = 0.8"
         ],
         "conclusion": "جيب التمام للزاوية <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A هو 0.8. الضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">المجاور</a> يمثل 80% من طول الوتر. لإيجاد الزاوية: A = arccos(0.8) ≈ 36.87°."
       },
@@ -9914,7 +9914,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "slug": "tangent-ratio-calculator",
       "url": "/ar/tangent-ratio-calculator/",
       "h1": "حاسبة نسبة الظل",
-      "metaTitle": "حاسبة نسبة الظل | المثلث الأيمن تان (أ)",
+      "metaTitle": "حاسبة نسبة الظل | المثلث الأيمن tan(A)",
       "metaDescription": "استخدم حاسبة نسبة الظل <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> للعثور على tan(A) في المثلث القائم باستخدام <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع المقابل</a> a والضلع المجاور b مع الصيغة والخطوات والأمثلة.",
       "introHeading": "كيف تعمل حاسبة نسبة الظل هذه",
       "intro": [
@@ -9963,7 +9963,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "حساب نسبة الظل",
-        "outputLabel": "تان (أ)",
+        "outputLabel": "tan(A)",
         "fields": [
           {
             "key": "a",
@@ -10022,7 +10022,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "كيف يرتبط الظل بالمنحدر؟",
-          "answer": "الظل هو في الأساس ميل الوتر عندما يكون الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> المجاور هو المسار الأفقي والجانب المقابل هو الارتفاع الرأسي. تان (أ) = الارتفاع / الجري."
+          "answer": "الظل هو في الأساس ميل الوتر عندما يكون الجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> المجاور هو المسار الأفقي والجانب المقابل هو الارتفاع الرأسي. tan(A) = الارتفاع / الجري."
         },
         {
           "question": "لماذا لا يستخدم الظل الوتر؟",
@@ -10086,7 +10086,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "حساب نسبة ظل التمام",
-        "outputLabel": "سرير أطفال (أ)",
+        "outputLabel": "cot(A)",
         "fields": [
           {
             "key": "b",
@@ -10161,15 +10161,15 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "slug": "secant-ratio-calculator",
       "url": "/ar/secant-ratio-calculator/",
       "h1": "حاسبة نسبة القاطع",
-      "metaTitle": "حاسبة نسبة القاطع | المثلث الأيمن ثانية(أ)",
+      "metaTitle": "حاسبة نسبة القاطع | المثلث الأيمن sec(A)",
       "metaDescription": "استخدم هذه النسبة القاطعة <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">الآلة الحاسبة</a> للعثور على sec(A) في المثلث القائم باستخدام الوتر c والضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> b مع الصيغة والخطوات والأمثلة.",
       "introHeading": "كيف تعمل حاسبة النسبة القاطعة هذه",
       "intro": [
         "القاطع هو مقلوب جيب التمام. عندما يقسم جيب التمام الضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> على الوتر، يقلب القاطع ذلك - فهو يقسم الوتر على الجانب المجاور. تكون النتيجة دائمًا أكبر من أو تساوي 1 لأن الوتر هو دائمًا أطول ضلع في المثلث القائم.",
-        "تأخذ هذه الآلة الحاسبة <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> مدخلين — الوتر c والضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> b — وترجع ثانية(A). إنها طريقة سريعة للحصول على هذه النسبة المتبادلة دون إجراء القسمة يدويًا أو حساب جيب التمام أولاً."
+        "تأخذ هذه الآلة الحاسبة <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\"></a> مدخلين — الوتر c والضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> b — وترجع sec(A). إنها طريقة سريعة للحصول على هذه النسبة المتبادلة دون إجراء القسمة يدويًا أو حساب جيب التمام أولاً."
       ],
       "headerSummary": "أوجد sec(A) من خلال مقارنة الوتر c مع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع المجاور</a> b، وهو مقلوب جيب التمام.",
-      "calculatorNote": "أدخل الوتر c والجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">المجاور</a> b في الحقول أعلاه. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">الآلة الحاسبة</a> تحسب ثانية(A) = ج / ب. يجب أن تكون كلا القيمتين موجبتين، ويجب أن تكون c أكبر من b.",
+      "calculatorNote": "أدخل الوتر c والجانب <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">المجاور</a> b في الحقول أعلاه. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">الآلة الحاسبة</a> تحسب sec(A) = ج / ب. يجب أن تكون كلا القيمتين موجبتين، ويجب أن تكون c أكبر من b.",
       "diagramExplanation": [
         "بالنسبة إلى <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A، <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> a هو المقابل، والضلع b مجاور، والضلع c هو الوتر.",
         "يستخدم القاطع الوتر c كالبسط والضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"></a> b كمقام. الجانب الآخر a ليس جزءًا من الحساب القاطع."
@@ -10209,7 +10209,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "حساب نسبة القاطع",
-        "outputLabel": "ثانية (أ)",
+        "outputLabel": "sec(A)",
         "fields": [
           {
             "key": "c",
@@ -10224,7 +10224,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "ثانية (أ) = ج / ب",
+        "display": "sec(A) = ج / ب",
         "paragraphs": [
           "قاطع <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A يساوي الوتر مقسومًا على الضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع المجاور</a>. هذا هو مقلوب جيب التمام: sec(A) = 1 / cos(A).",
           "نظرًا لأن الوتر يكون دائمًا أطول من الضلع <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الجانب</a> المجاور في المثلث القائم الزاوية، فإن sec(A) يكون دائمًا أكبر من 1. وعندما تصبح <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A أكبر، يتقلص الجانب المجاور بالنسبة إلى الوتر، وبالتالي يزيد القاطع."
@@ -10233,9 +10233,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "المثلث القائم الزاوية له الوتر c = 5 والضلع المجاور <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">الضلع</a> b = 4.",
         "steps": [
-          "ثانية (أ) = ج / ب",
-          "ثانية(أ) = 5 / 4",
-          "ثانية (أ) = 1.25"
+          "sec(A) = ج / ب",
+          "sec(A) = 5 / 4",
+          "sec(A) = 1.25"
         ],
         "conclusion": "قاطع <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">الزاوية</a> A هو 1.25. للتحقق: cos(A) = 4 / 5 = 0.8، و1 / 0.8 = 1.25."
       },
@@ -10271,8 +10271,8 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
           "answer": "sec(A) = 1 / cos(A)، وcos(A) = 1 / sec(A). إذا كنت تعرف أحدهما، يمكنك العثور على الآخر عن طريق أخذ المعاملة بالمثل."
         },
         {
-          "question": "ما هو ثانية (45 درجة)؟",
-          "answer": "في المثلث <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90</a>، يكون الوتر √2 ضرب الساق. إذن ثانية(45°) = √2 ≈ 1.4142."
+          "question": "ما هو sec(45 درجة)؟",
+          "answer": "في المثلث <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90</a>، يكون الوتر √2 ضرب الساق. إذن sec(45°) = √2 ≈ 1.4142."
         },
         {
           "question": "هل يستخدم secant في تطبيقات العالم الحقيقي؟",
@@ -10387,7 +10387,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "كيف يرتبط قاطع التمام بالجيب؟",
-          "answer": "جسك(أ) = 1 / الخطيئة(أ). إذا كانت sin(A) = 0.6، فإن csc(A) = 1 / 0.6 ≈ 1.6667."
+          "answer": "جسك(أ) = 1 / sin(A). إذا كانت sin(A) = 0.6، فإن csc(A) = 1 / 0.6 ≈ 1.6667."
         },
         {
           "question": "لماذا يكون قاطع التمام دائمًا أكبر من 1؟",
@@ -10676,7 +10676,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "Идентифицирайте <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">страна</a> b, катетът, който образува <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ъгъл</a> A заедно с хипотенузата.",
         "Въведете стойността на a в първото поле.",
         "Въведете стойността на b във второто поле.",
-        "Кликнете върху Изчисли, за да получите тен (A).",
+        "Кликнете върху Изчисли, за да получите tan(A).",
         "Резултатът може да бъде по-малък от 1, равен на 1 или по-голям от 1."
       ],
       "whatResultMeans": [
@@ -10706,7 +10706,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Изчислете съотношението на тангенс",
-        "outputLabel": "тен (A)",
+        "outputLabel": "tan(A)",
         "fields": [
           {
             "key": "a",
@@ -10731,8 +10731,8 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "intro": "Правоъгълен триъгълник има срещуположна <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">страна</a> a = 3 и съседна страна b = 4.",
         "steps": [
           "tan(A) = a / b",
-          "тен (A) = 3/4",
-          "тен (A) = 0,75"
+          "tan(A) = 3/4",
+          "tan(A) = 0,75"
         ],
         "conclusion": "Тангенсът на <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ъгъл</a> A е 0,75. За да намерите ъгъла: A = arctan(0,75) ≈ 36,87°."
       },
@@ -10823,13 +10823,13 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
           "Писане на a / b вместо b / a. Котангенсът поставя съседната <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">страна</a> отгоре, а не противоположната страна. Смяната им ви дава допирателна.",
           "Объркване на котангенс с косинус. Котангенсът е b / a (съседен върху срещуположния). Косинусът е b/c (съседен върху хипотенузата). Те са различни съотношения.",
           "Използване на хипотенузата при изчислението. Котангенсът включва само двата крака.",
-          "Забравянето е реципрочната на тангенса. Ако вече знаете тен (A), просто вземете 1 / тен (A), за да получите легло (A).",
+          "Забравянето е реципрочната на тангенса. Ако вече знаете tan(A), просто вземете 1 / tan(A), за да получите легло (A).",
           "Смесване коя <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">страна</a> е съседна и коя срещуположна. Винаги определяйте страните спрямо <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">ъгъл</a> A."
         ]
       },
       "calculator": {
         "heading": "Изчислете котангенсното отношение",
-        "outputLabel": "кошара(A)",
+        "outputLabel": "cot(A)",
         "fields": [
           {
             "key": "b",
@@ -10952,7 +10952,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Изчислете коефициента на секанс",
-        "outputLabel": "сек (А)",
+        "outputLabel": "sec(A)",
         "fields": [
           {
             "key": "c",
@@ -11014,7 +11014,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
           "answer": "sec(A) = 1 / cos(A) и cos(A) = 1 / sec(A). Ако познавате едното, можете да намерите другото, като вземете реципрочното."
         },
         {
-          "question": "Какво е сек (45°)?",
+          "question": "Какво е sec(45°)?",
           "answer": "В <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90 триъгълник</a> хипотенузата е √2 по катета. Значи sec(45°) = √2 ≈ 1,4142."
         },
         {
@@ -11153,13 +11153,13 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "url": "/tr/sine-ratio-calculator/",
       "h1": "Sinüs Oranı Hesaplayıcı",
       "metaTitle": "Sinüs Oranı Hesaplayıcısı | Sağ Üçgen sin(A)",
-      "metaDescription": "Karşıt <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> a ve hipotenüs c'yi formül, adımlar ve örneklerle kullanarak bir dik üçgende günah(A)'yı bulmak için bu sinüs oranı <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesaplayıcıyı</a> kullanın.",
+      "metaDescription": "Karşıt <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> a ve hipotenüs c'yi formül, adımlar ve örneklerle kullanarak bir dik üçgende sin(A)'yı bulmak için bu sinüs oranı <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesaplayıcıyı</a> kullanın.",
       "introHeading": "Bu Sinüs Oranı Hesaplayıcısı Nasıl Çalışır?",
       "intro": [
-        "Sinüs oranı geometride öğrendiğiniz ilk trigonometrik fonksiyonlardan biridir. Bir dik üçgendeki belirli bir <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açıyı</a> onun iki kenarına, yani karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenara</a> ve hipotenüse bağlar. Eğer bu iki <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">ölçümü</a> biliyorsanız, bu hesap makinesi size anında günah(A) değerini verir.",
+        "Sinüs oranı geometride öğrendiğiniz ilk trigonometrik fonksiyonlardan biridir. Bir dik üçgendeki belirli bir <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açıyı</a> onun iki kenarına, yani karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenara</a> ve hipotenüse bağlar. Eğer bu iki <a href=\"/right-triangle-measurements-calculator/\" class=\"text-primary hover:underline\">ölçümü</a> biliyorsanız, bu hesap makinesi size anında sin(A) değerini verir.",
         "İster bir ev ödevi problemi üzerinde çalışıyor olun, ister sınav tarzı bir cevabı kontrol ediyor olun, ister gerçek bir ölçüm görevini çözüyor olun, bu araç manuel bölme adımını ortadan kaldırır. Değerlerinizi girin ve gösterilen formülle sonucu alın."
       ],
-      "headerSummary": "Bir dik üçgende karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> a'dan ve hipotenüs c'den günah(A)'yı bulun.",
+      "headerSummary": "Bir dik üçgende karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> a'dan ve hipotenüs c'den sin(A)'yı bulun.",
       "calculatorNote": "Karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarın</a> a uzunluğunu ve hipotenüsü c'yi yukarıdaki alanlara girin. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">Hesap makinesi</a> a'yı c'ye böler ve sin(A) değerini döndürür. Her iki değer de pozitif olmalı ve c, a'dan büyük olmalıdır.",
       "diagramExplanation": [
         "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A için, <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> a karşıdır, b kenarı bitişiktir ve c kenarı hipotenüstür.",
@@ -11201,7 +11201,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Sinüs Oranını Hesapla",
-        "outputLabel": "günah(A)",
+        "outputLabel": "sin(A)",
         "fields": [
           {
             "key": "a",
@@ -11216,7 +11216,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "günah(A) = a / c",
+        "display": "sin(A) = a / c",
         "paragraphs": [
           "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın sinüsü, karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarın</a> uzunluğunun hipotenüs uzunluğuna bölünmesine eşittir. Bu genellikle SOH-CAH-TOA'nın SOH kısmıyla hatırlanır.",
           "Bir dik üçgende, karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a>, <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın doğrudan karşısındaki kenardır. Hipotenüs her zaman en uzun kenardır — 90° açıya bakan kenardır. Hipotenüs her zaman herhangi bir kenardan daha uzun olduğundan, dar açılar için sin(A) her zaman 0 ile 1 arasında düşer."
@@ -11225,9 +11225,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "Karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">yan</a> a = 3 ve hipotenüsün c = 5 olduğu bir dik üçgeniniz olduğunu varsayalım.",
         "steps": [
-          "günah(A) = a / c",
-          "günah(A) = 3 / 5",
-          "günah(A) = 0,6"
+          "sin(A) = a / c",
+          "sin(A) = 3 / 5",
+          "sin(A) = 0,6"
         ],
         "conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın sinüsü 0,6'dır. Bu, karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarın</a> hipotenüs uzunluğunun %60'ı olduğu anlamına gelir. Gerçek açıya ihtiyacınız varsa ters sinüsü alın: A = arcsin(0,6) ≈ 36,87°."
       },
@@ -11255,7 +11255,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
           "answer": "Formül sin(A) = a / c'dir; burada a, <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın karşısındaki <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a> ve c hipotenüstür. Karşı tarafı hipotenüse bölersiniz."
         },
         {
-          "question": "Bir dik üçgende günah(A) neden her zaman 1'den küçüktür?",
+          "question": "Bir dik üçgende sin(A) neden her zaman 1'den küçüktür?",
           "answer": "Çünkü hipotenüs c her zaman en uzun <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenar</a>'dır. A, c'den kısa olduğundan a/c kesri her zaman 1'den küçüktür."
         },
         {
@@ -11325,7 +11325,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Kosinüs Oranını Hesapla",
-        "outputLabel": "çünkü(A)",
+        "outputLabel": "cos(A)",
         "fields": [
           {
             "key": "b",
@@ -11449,7 +11449,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Teğet Oranını Hesapla",
-        "outputLabel": "ten rengi(A)",
+        "outputLabel": "tan(A)",
         "fields": [
           {
             "key": "a",
@@ -11474,7 +11474,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "intro": "Bir dik üçgenin karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarı</a> a = 3 ve komşu kenarı b = 4'tür.",
         "steps": [
           "tan(A) = a / b",
-          "ten rengi(A) = 3 / 4",
+          "tan(A) = 3 / 4",
           "tan(A) = 0,75"
         ],
         "conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a> A'nın tanjantı 0,75'tir. Açıyı bulmak için: A = arktan(0,75) ≈ 36,87°."
@@ -11525,7 +11525,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "url": "/tr/cotangent-ratio-calculator/",
       "h1": "Kotanjant Oranı Hesaplayıcı",
       "metaTitle": "Kotanjant Oranı Hesaplayıcı | Sağ Üçgen karyolası(A)",
-      "metaDescription": "Formül, adımlar ve örneklerle bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">taraf</a> b ve karşı taraf a'yı kullanarak bir dik üçgende bebek karyolası(A)'yı bulmak için bu kotanjant oranını <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesaplayıcıyı</a> kullanın.",
+      "metaDescription": "Formül, adımlar ve örneklerle bitişik <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">taraf</a> b ve karşı taraf a'yı kullanarak bir dik üçgende cot(A)'yı bulmak için bu kotanjant oranını <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">hesaplayıcıyı</a> kullanın.",
       "introHeading": "Bu Kotanjant Oranı Hesaplayıcı Nasıl Çalışır?",
       "intro": [
         "Kotanjant, tanjantın tersidir. Teğet karşı <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">tarafı</a> bitişik tarafa bölerken, kotanjant bu kesri ters çevirir — bitişik tarafı karşı tarafa böler. Temel geometri derslerinde daha az görülür, ancak ileri trigonometri ve matematikte önemli bir rol oynar.",
@@ -11572,7 +11572,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Kotanjant Oranını Hesapla",
-        "outputLabel": "bebek karyolası(A)",
+        "outputLabel": "cot(A)",
         "fields": [
           {
             "key": "b",
@@ -11587,7 +11587,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "bebek karyolası(A) = b / a",
+        "display": "cot(A) = b / a",
         "paragraphs": [
           "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">açı</a>'nın kotanjantı A, komşu <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarın</a> karşı tarafa bölünmesine eşittir. Teğetin tersidir: cot(A) = 1 / tan(A).",
           "Teğet gibi, kotanjant da dik üçgenin yalnızca iki ayağını kullanır. Hipotenüs söz konusu değildir. Kotanjant dar açılar için herhangi bir pozitif değeri alabilir."
@@ -11596,9 +11596,9 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "example": {
         "intro": "Bir dik üçgenin komşu <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">kenarı</a> b = 4 ve karşı kenarı a = 3'tür.",
         "steps": [
-          "bebek karyolası(A) = b / a",
-          "bebek karyolası(A) = 4 / 3",
-          "bebek karyolası(A) ≈ 1,3333"
+          "cot(A) = b / a",
+          "cot(A) = 4 / 3",
+          "cot(A) ≈ 1,3333"
         ],
         "conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">Açı</a> A'nın kotanjantı yaklaşık 1,3333'tür. Bunu doğrulayabilirsiniz: tan(A) = 3/4 = 0,75 ve 1/0,75 = 1,3333."
       },
@@ -11639,7 +11639,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "Kotanjant, 1'in teğete bölünmesiyle aynı mıdır?",
-          "answer": "Evet. bebek karyolası(A) = 1 / tan(A) = b / a. Her iki ifade de aynı sonucu verir."
+          "answer": "Evet. cot(A) = 1 / tan(A) = b / a. Her iki ifade de aynı sonucu verir."
         }
       ]
     },
@@ -11944,7 +11944,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Beräkna sinusförhållande",
-        "outputLabel": "synd(A)",
+        "outputLabel": "sin(A)",
         "fields": [
           {
             "key": "a",
@@ -12162,7 +12162,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "Identifiera <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b, benet som bildar <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A längs hypotenusan.",
         "Ange värdet på a i det första fältet.",
         "Ange värdet på b i det andra fältet.",
-        "Klicka på Beräkna för att få brun(A).",
+        "Klicka på Beräkna för att få tan(A).",
         "Resultatet kan vara mindre än 1, lika med 1 eller större än 1."
       ],
       "whatResultMeans": [
@@ -12192,7 +12192,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Beräkna Tangentkvot",
-        "outputLabel": "brun(A)",
+        "outputLabel": "tan(A)",
         "fields": [
           {
             "key": "a",
@@ -12315,7 +12315,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Beräkna Cotangens Ratio",
-        "outputLabel": "spjälsäng(A)",
+        "outputLabel": "cot(A)",
         "fields": [
           {
             "key": "b",
@@ -12340,7 +12340,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "intro": "En rätvinklig triangel har intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b = 4 och motsatt sida a = 3.",
         "steps": [
           "barnsäng(A) = b/a",
-          "spjälsäng(A) = 4/3",
+          "cot(A) = 4/3",
           "barnsäng (A) ≈ 1,3333"
         ],
         "conclusion": "Cotangensen för <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är ungefär 1,3333. Du kan verifiera detta: tan(A) = 3/4 = 0,75 och 1/0,75 = 1,3333."
@@ -12382,7 +12382,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "Är cotangens detsamma som 1 dividerat med tangent?",
-          "answer": "Ja. barnsäng(A) = 1 / brun(A) = b / a. Båda uttrycken ger samma resultat."
+          "answer": "Ja. barnsäng(A) = 1 / tan(A) = b / a. Båda uttrycken ger samma resultat."
         }
       ]
     },
@@ -12390,15 +12390,15 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       "slug": "secant-ratio-calculator",
       "url": "/sv/secant-ratio-calculator/",
       "h1": "Sekantkalkylator för förhållande",
-      "metaTitle": "Sekantskvotskalkylator | Rätt triangel sek(A)",
-      "metaDescription": "Använd denna sekantförhållande <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> för att hitta sek(A) i en rätvinklig triangel med hypotenusa c och intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b med formel, steg och exempel.",
+      "metaTitle": "Sekantskvotskalkylator | Rätt triangel sec(A)",
+      "metaDescription": "Använd denna sekantförhållande <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> för att hitta sec(A) i en rätvinklig triangel med hypotenusa c och intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b med formel, steg och exempel.",
       "introHeading": "Hur den här sekantskvotskalkylatorn fungerar",
       "intro": [
         "Secant är det ömsesidiga av cosinus. Där cosinus delar den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> med hypotenusan, vänder sekanten på det — den delar hypotenusan med den intilliggande sidan. Resultatet är alltid större än eller lika med 1 eftersom hypotenusan alltid är den längsta sidan i en rätvinklig triangel.",
-        "Denna <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> tar två ingångar – hypotenusa c och intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b – och returnerar sek(A). Det är ett snabbt sätt att få detta ömsesidiga förhållande utan att göra divisionen för hand eller beräkna cosinus först."
+        "Denna <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylator</a> tar två ingångar – hypotenusa c och intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b – och returnerar sec(A). Det är ett snabbt sätt att få detta ömsesidiga förhållande utan att göra divisionen för hand eller beräkna cosinus först."
       ],
       "headerSummary": "Hitta sec(A) genom att jämföra hypotenusa c med intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b, den reciproka av cosinus.",
-      "calculatorNote": "Ange hypotenusan c och intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b i fälten ovan. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylatorn</a> beräknar sek(A) = c / b. Båda värdena måste vara positiva och c måste vara större än b.",
+      "calculatorNote": "Ange hypotenusan c och intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b i fälten ovan. <a href=\"/right-triangle-calculator/\" class=\"text-primary hover:underline\">kalkylatorn</a> beräknar sec(A) = c / b. Båda värdena måste vara positiva och c måste vara större än b.",
       "diagramExplanation": [
         "För <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> a motsatt, sidan b ligger intill och sidan c är hypotenusan.",
         "Secant använder hypotenusan c som täljare och den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> b som nämnare. Den motsatta sidan a är inte en del av sekantberäkningen."
@@ -12410,7 +12410,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "Ange c i det första inmatningsfältet.",
         "Ange b i det andra inmatningsfältet.",
         "Klicka på Beräkna.",
-        "Resultatet är sek(A), som alltid är större än eller lika med 1."
+        "Resultatet är sec(A), som alltid är större än eller lika med 1."
       ],
       "whatResultMeans": [
         "Secant berättar hur många gånger längre hypotenusan är jämfört med den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>. En sekant på 1,25 betyder att hypotenusan är 25 % längre än den intilliggande sidan.",
@@ -12430,7 +12430,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "intro": "Dessa sekantfel slår upp eleverna oftast:",
         "items": [
           "Förvirrande sekant med cosinus. Cosinus är b/c (intill hypotenusan). Sekant är den reciproka: c / b (hypotenus över angränsande).",
-          "Få ett resultat som är mindre än 1. Om ditt svar är under 1 har du sannolikt vänt bråkdelen. I en giltig rätvinklig triangel är sek(A) alltid större än eller lika med 1.",
+          "Få ett resultat som är mindre än 1. Om ditt svar är under 1 har du sannolikt vänt bråkdelen. I en giltig rätvinklig triangel är sec(A) alltid större än eller lika med 1.",
           "Använd den motsatta <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> istället för den intilliggande sidan. Secant parar hypotenusan med den intilliggande sidan, inte den motsatta sidan.",
           "Blandar ihop sekant och cosekant. Secant är det ömsesidiga av cosinus. Cosecant är det reciproka av sinus. De använder olika sidor.",
           "Ange b större än c. Hypotenusan måste alltid vara längre än den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>."
@@ -12438,7 +12438,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "Beräkna sekantförhållande",
-        "outputLabel": "sek(A)",
+        "outputLabel": "sec(A)",
         "fields": [
           {
             "key": "c",
@@ -12453,18 +12453,18 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         ]
       },
       "formula": {
-        "display": "sek(A) = c/b",
+        "display": "sec(A) = c/b",
         "paragraphs": [
-          "Sekant av <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är lika med hypotenusan dividerat med den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>. Detta är den reciproka av cosinus: sek(A) = 1 / cos(A).",
-          "Eftersom hypotenusan alltid är längre än den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> i en rätvinklig triangel, är sek(A) alltid större än 1. När <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkeln</a> A blir större, krymper den intilliggande sidan relativt hypotenusan, så sekanten ökar."
+          "Sekant av <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är lika med hypotenusan dividerat med den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a>. Detta är den reciproka av cosinus: sec(A) = 1 / cos(A).",
+          "Eftersom hypotenusan alltid är längre än den intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sidan</a> i en rätvinklig triangel, är sec(A) alltid större än 1. När <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkeln</a> A blir större, krymper den intilliggande sidan relativt hypotenusan, så sekanten ökar."
         ]
       },
       "example": {
         "intro": "En rätvinklig triangel har hypotenusan c = 5 och intilliggande <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\">sida</a> b = 4.",
         "steps": [
-          "sek(A) = c/b",
-          "sek(A) = 5/4",
-          "sek(A) = 1,25"
+          "sec(A) = c/b",
+          "sec(A) = 5/4",
+          "sec(A) = 1,25"
         ],
         "conclusion": "Sekanten för <a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">vinkel</a> A är 1,25. För att verifiera: cos(A) = 4 / 5 = 0,8 och 1 / 0,8 = 1,25."
       },
@@ -12497,11 +12497,11 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "Hur konverterar jag mellan sekant och cosinus?",
-          "answer": "sek(A) = 1/cos(A) och cos(A) = 1/sek(A). Om du känner till den ena kan du hitta den andra genom att ta det ömsesidiga."
+          "answer": "sec(A) = 1/cos(A) och cos(A) = 1/sec(A). Om du känner till den ena kan du hitta den andra genom att ta det ömsesidiga."
         },
         {
-          "question": "Vad är sek(45°)?",
-          "answer": "I en <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90 triangel</a> är hypotenusan √2 gånger benet. Så sek(45°) = √2 ≈ 1,4142."
+          "question": "Vad är sec(45°)?",
+          "answer": "I en <a href=\"/45-45-90-triangle-calculator/\" class=\"text-primary hover:underline\">45-45-90 triangel</a> är hypotenusan √2 gånger benet. Så sec(45°) = √2 ≈ 1,4142."
         },
         {
           "question": "Används secant i verkliga applikationer?",
@@ -12687,7 +12687,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "计算正弦比",
-        "outputLabel": "罪恶(A)",
+        "outputLabel": "sin(A)",
         "fields": [
           {
             "key": "a",
@@ -12935,7 +12935,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "计算正切比",
-        "outputLabel": "棕褐色(A)",
+        "outputLabel": "tan(A)",
         "fields": [
           {
             "key": "a",
@@ -13058,7 +13058,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
       },
       "calculator": {
         "heading": "计算余切比",
-        "outputLabel": "婴儿床(A)",
+        "outputLabel": "cot(A)",
         "fields": [
           {
             "key": "b",
@@ -13083,7 +13083,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         "intro": "直角三角形的相邻边 <a href=\"/right-triangle-side-calculator/\" class=\"text-primary hover:underline\"> 边 </a> b = 4，对边 a = 3。",
         "steps": [
           "cot(A) = b / a",
-          "婴儿床(A) = 4 / 3",
+          "cot(A) = 4 / 3",
           "cot(A) ≈ 1.3333"
         ],
         "conclusion": "<a href=\"/right-triangle-angle-calculator/\" class=\"text-primary hover:underline\">角度</a> A 的余切约为 1.3333。您可以验证这一点：tan(A) = 3 / 4 = 0.75，以及 1 / 0.75 = 1.3333。"
@@ -13240,7 +13240,7 @@ export const FOCUSED_TRIG_RATIO_CALCULATOR_TRANSLATIONS: any = {
         },
         {
           "question": "如何在正割和余弦之间转换？",
-          "answer": "秒(A) = 1 / cos(A)，并且 cos(A) = 1 / 秒(A)。如果你知道一个，你可以通过取倒数找到另一个。"
+          "answer": "sec(A) = 1 / cos(A)，并且 cos(A) = 1 / sec(A)。如果你知道一个，你可以通过取倒数找到另一个。"
         },
         {
           "question": "什么是秒（45°）？",

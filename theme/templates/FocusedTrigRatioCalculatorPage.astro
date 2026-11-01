@@ -30,6 +30,7 @@ interface Props {
 
 const { page, locale = DEFAULT_LOCALE } = Astro.props;
 const isCosecantPage = page.slug === 'cosecant-ratio-calculator' && (locale === 'en' || COSECANT_GUIDE_TRANSLATIONS[locale]);
+const isCosinePage = page.slug === 'cosine-ratio-calculator' && (locale === 'en' || COSINE_GUIDE_TRANSLATIONS[locale]);
 const isCotangentPage = page.slug === 'cotangent-ratio-calculator' && (locale === 'en' || COTANGENT_GUIDE_TRANSLATIONS[locale]);
 const trigUi = getFocusedTrigRatioUi(locale);
 const runtimeTranslations = getFocusedTrigRatioRuntimeTranslations(page, locale);
@@ -269,7 +270,7 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
   />
 
   <!-- Intro -->
-  {!isCosecantPage && !isCotangentPage && (
+  {!isCosecantPage && !isCosinePage && !isCotangentPage && (
   <>
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={page.introHeading} />

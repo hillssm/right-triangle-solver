@@ -354,10 +354,10 @@ export const TANGENT_TRANSLATIONS_BATCH3 = {
                 "<strong>Masukkan panjang sisi samping di kolom input kedua.</strong> Ini adalah penyebut.",
                 "<strong>Pilih satuan pengukuran yang cocok menggunakan pemilih satuan yang tersedia.</strong> Kedua input harus dalam satuan yang sama, atau diubah ke satu satuan sebelum dibagi.",
                 "<strong>Pastikan kedua pengukuran positif.</strong> Sisi nol atau negatif tidak bisa dimiliki segitiga nyata.",
-                "<strong>Klik Calculate tan(A).</strong> Alat ini membagi sisi depan dengan sisi samping.",
+                "<strong>Klik Hitung tan(A).</strong> Alat ini membagi sisi depan dengan sisi samping.",
                 "<strong>Baca rasio tangen yang dihasilkan.</strong> Jawabannya adalah angka biasa, tanpa derajat dan tanpa satuan panjang yang menempel.",
                 "<strong>Periksa apakah hasilnya kurang dari, sama dengan, atau lebih besar dari 1.</strong> Di bawah 1 berarti segitiga lebih lebar daripada tingginya; tepat 1 berarti kakinya sama panjang; di atas 1 berarti sisi depan lebih panjang.",
-                "<strong>Gunakan Reset saat Anda ingin menghapus input dan memulai perhitungan lain.</strong> Input baru layak mendapatkan awal yang baru, bukan angka sisa dari soal sebelumnya."
+                "<strong>Gunakan Atur Ulang saat Anda ingin menghapus input dan memulai perhitungan lain.</strong> Input baru layak mendapatkan awal yang baru, bukan angka sisa dari soal sebelumnya."
             ],
             "closingParagraphs": [
                 "Kalkulator tidak memerlukan hipotenusa atau input sudut. Kalkulator melakukan satu operasi, pembagian [[a/b]], dan melakukannya pada tepat kedua kaki yang Anda tentukan."
@@ -1056,7 +1056,7 @@ export const TANGENT_TRANSLATIONS_BATCH3 = {
         },
         {
             "question": "Bagaimana cara menghitung tangen dari dua panjang sisi?",
-            "answer": "Tentukan sudut acuan A, ukur sisi depan a dan sisi samping b dalam satuan yang sama, pastikan keduanya positif, lalu bagi: tan(A) = a / b. Di halaman ini, masukkan sisi depan di kolom pertama dan sisi samping di kolom kedua, lalu klik Calculate tan(A)."
+            "answer": "Tentukan sudut acuan A, ukur sisi depan a dan sisi samping b dalam satuan yang sama, pastikan keduanya positif, lalu bagi: tan(A) = a / b. Di halaman ini, masukkan sisi depan di kolom pertama dan sisi samping di kolom kedua, lalu klik Hitung tan(A)."
         },
         {
             "question": "Mengapa tangen tidak menggunakan hipotenusa?",
@@ -1445,10 +1445,10 @@ export const TANGENT_TRANSLATIONS_BATCH3 = {
                 "<strong>أدخل طول الضلع المجاور في حقل الإدخال الثاني.</strong> هذا هو المقام.",
                 "<strong>اختر وحدات قياس متوافقة باستخدام محددات الوحدات المتاحة.</strong> يجب أن يكون المدخلان بالوحدة نفسها، أو محولين إلى وحدة واحدة قبل القسمة.",
                 "<strong>تأكد أن القياسين موجبان.</strong> فالضلع الصفري أو السالب لا يمكن أن ينتمي إلى مثلث حقيقي.",
-                "<strong>انقر Calculate tan(A).</strong> تقسم الأداة الضلع المقابل على الضلع المجاور.",
+                "<strong>انقر احسب tan(A).</strong> تقسم الأداة الضلع المقابل على الضلع المجاور.",
                 "<strong>اقرأ نسبة الظل الناتجة.</strong> الإجابة عدد خالص، بلا درجات ولا وحدات طول مرفقة.",
                 "<strong>تحقق ما إذا كانت النتيجة أقل من 1 أو تساويه أو أكبر منه.</strong> تحت 1 يعني أن المثلث أعرض مما هو أطول؛ وتساوي 1 يعني ضلعين متساويين؛ وفوق 1 يعني أن الضلع المقابل أطول.",
-                "<strong>استخدم Reset عندما تريد مسح المدخلات وبدء حساب آخر.</strong> المدخلات الجديدة تستحق بداية جديدة، لا أرقاما متبقية من المسألة السابقة."
+                "<strong>استخدم إعادة تعيين عندما تريد مسح المدخلات وبدء حساب آخر.</strong> المدخلات الجديدة تستحق بداية جديدة، لا أرقاما متبقية من المسألة السابقة."
             ],
             "closingParagraphs": [
                 "لا تتطلب الحاسبة الوتر ولا مدخلا للزاوية. وهي تجري عملية واحدة، القسمة [[a/b]]، وتجريها على الضلعين القائمين اللذين تحددهما بالضبط."
@@ -2304,7 +2304,7 @@ export const TANGENT_TRANSLATIONS_BATCH3 = {
         },
         {
             "question": "كيف تحسب الظل من طولي ضلعين؟",
-            "answer": "حدد الزاوية المرجعية A، وقس الضلع المقابل a والضلع المجاور b بالوحدة نفسها، وتأكد أنهما موجبان، ثم اقسم: tan(A) = a / b. وفي هذه الصفحة، أدخل الضلع المقابل في الحقل الأول والضلع المجاور في الحقل الثاني، ثم انقر Calculate tan(A)."
+            "answer": "حدد الزاوية المرجعية A، وقس الضلع المقابل a والضلع المجاور b بالوحدة نفسها، وتأكد أنهما موجبان، ثم اقسم: tan(A) = a / b. وفي هذه الصفحة، أدخل الضلع المقابل في الحقل الأول والضلع المجاور في الحقل الثاني، ثم انقر احسب tan(A)."
         },
         {
             "question": "لماذا لا يستخدم الظل الوتر؟",
@@ -2693,10 +2693,10 @@ export const TANGENT_TRANSLATIONS_BATCH3 = {
         "<strong>Въведете дължината на прилежащата страна във второто поле за въвеждане.</strong> Това е знаменателят.",
         "<strong>Изберете съвместими мерни единици чрез наличните избирачи на единици.</strong> И двата входа трябва да са в една и съща мерна единица или да се преобразуват в една преди делението.",
         "<strong>Потвърдете, че и двете измервания са положителни.</strong> Нулева или отрицателна страна не може да принадлежи на истински триъгълник.",
-        "<strong>Щракнете Calculate tan(A).</strong> Инструментът дели срещулежащата страна на прилежащата страна.",
+        "<strong>Щракнете Изчислете tan(A).</strong> Инструментът дели срещулежащата страна на прилежащата страна.",
         "<strong>Прочетете полученото тангенсово съотношение.</strong> Отговорът е обикновено число, без градуси и без мерни единици за дължина.",
         "<strong>Проверете дали резултатът е по-малък, равен или по-голям от 1.</strong> Под 1 означава, че триъгълникът е по-широк, отколкото висок; точно 1 означава равни катети; над 1 означава, че срещулежащата страна е по-дълга.",
-        "<strong>Използвайте Reset, когато искате да изчистите въведеното и да започнете друго изчисление.</strong> Новите входове заслужават ново начало, а не остатъчни числа от предишната задача."
+        "<strong>Използвайте Нулиране, когато искате да изчистите въведеното и да започнете друго изчисление.</strong> Новите входове заслужават ново начало, а не остатъчни числа от предишната задача."
       ],
       "closingParagraphs": [
         "Калкулаторът не изисква хипотенузата или ъгъл като вход. Той извършва една операция, делението [[a/b]], и я извършва върху точно двата катета, които определите."
@@ -3384,7 +3384,7 @@ export const TANGENT_TRANSLATIONS_BATCH3 = {
     },
     {
       "question": "Как се изчислява тангенс от две дължини на страни?",
-      "answer": "Определете референтния ъгъл A, измерете срещулежащата страна a и прилежащата страна b в една и съща мерна единица, потвърдете, че и двете са положителни, после разделете: tan(A) = a / b. На тази страница въведете срещулежащата страна в първото поле, а прилежащата страна във второто, после щракнете Calculate tan(A)."
+      "answer": "Определете референтния ъгъл A, измерете срещулежащата страна a и прилежащата страна b в една и съща мерна единица, потвърдете, че и двете са положителни, после разделете: tan(A) = a / b. На тази страница въведете срещулежащата страна в първото поле, а прилежащата страна във второто, после щракнете Изчислете tan(A)."
     },
     {
       "question": "Защо тангенсът не използва хипотенузата?",
@@ -3773,7 +3773,7 @@ export const TANGENT_TRANSLATIONS_BATCH3 = {
                 "<strong>Komşu kenar uzunluğunu ikinci giriş alanına yazın.</strong> Bu, kesrin paydasıdır.",
                 "<strong>Birlikte kullanılabilen ölçü birimlerini, mevcut birim seçicilerle seçin.</strong> İki girdi de aynı birimde olmalı ya da bölmeden önce tek birime çevrilmelidir.",
                 "<strong>İki ölçümün de pozitif olduğunu doğrulayın.</strong> Sıfır ya da negatif bir kenar gerçek bir üçgene ait olamaz.",
-                "<strong>Tanjant(A) Hesapla'ya tıklayın.</strong> Araç, karşı kenarı komşu kenara böler.",
+                "<strong>\"Hesapla tan(A)\" düğmesine tıklayın.</strong> Araç, karşı kenarı komşu kenara böler.",
                 "<strong>Ortaya çıkan tanjant oranını okuyun.</strong> Cevap yalın bir sayıdır; ne derece ne de uzunluk birimi taşır.",
                 "<strong>Sonucun 1'den küçük, 1'e eşit ya da 1'den büyük olduğunu kontrol edin.</strong> 1'in altı, üçgenin yüksekliğinden geniş olduğu anlamına gelir; tam 1, kenarların eşit olduğu; 1'in üstü, karşı kenarın daha uzun olduğu anlamına gelir.",
                 "<strong>Girdileri temizleyip yeni bir hesaba başlamak istediğinizde Sıfırla'yı kullanın.</strong> Taze girdiler, önceki problemden kalan sayıları değil, taze bir başlangıcı hak eder."
@@ -4492,7 +4492,7 @@ export const TANGENT_TRANSLATIONS_BATCH3 = {
         },
         {
             "question": "İki kenar uzunluğundan tanjant nasıl hesaplanır?",
-            "answer": "Referans açı A'yı belirleyin, karşı kenar a ile komşu kenar b'yi aynı birimde ölçün, ikisinin de pozitif olduğunu doğrulayın, sonra bölün: tan(A) = a / b. Bu sayfada karşı kenarı ilk alana, komşu kenarı ikinci alana yazın, sonra Tanjant(A) Hesapla'ya tıklayın."
+            "answer": "Referans açı A'yı belirleyin, karşı kenar a ile komşu kenar b'yi aynı birimde ölçün, ikisinin de pozitif olduğunu doğrulayın, sonra bölün: tan(A) = a / b. Bu sayfada karşı kenarı ilk alana, komşu kenarı ikinci alana yazın, sonra \"Hesapla tan(A)\" düğmesine tıklayın."
         },
         {
             "question": "Tanjant neden hipotenüsü kullanmaz?",
@@ -4881,10 +4881,10 @@ export const TANGENT_TRANSLATIONS_BATCH3 = {
             "<strong>Mata in den närliggande katetens längd i det andra inmatningsfältet.</strong> Detta är nämnaren.",
             "<strong>Välj kompatibla måttenheter med de tillgängliga enhetsväljarna.</strong> Båda inmatningarna måste vara i samma enhet, eller konverteras till en sådan innan division.",
             "<strong>Bekräfta att båda måtten är positiva.</strong> En noll- eller negativ katet kan inte tillhöra en verklig triangel.",
-            "<strong>Klicka på Calculate tan(A).</strong> Verktyget delar den motstående kateten med den närliggande kateten.",
+            "<strong>Klicka på Beräkna tan(A).</strong> Verktyget delar den motstående kateten med den närliggande kateten.",
             "<strong>Läs av den resulterande tangenskvoten.</strong> Svaret är ett vanligt tal, utan grader och utan längdenheter.",
             "<strong>Kontrollera om resultatet är mindre än, lika med eller större än 1.</strong> Under 1 betyder att triangeln är bredare än den är hög; exakt 1 betyder lika ben; över 1 betyder att den motstående kateten är längre.",
-            "<strong>Använd Reset när du vill rensa inmatningarna och börja en ny beräkning.</strong> Nya inmatningar förtjänar en nystart, inte överblivna tal från föregående uppgift."
+            "<strong>Använd Återställ när du vill rensa inmatningarna och börja en ny beräkning.</strong> Nya inmatningar förtjänar en nystart, inte överblivna tal från föregående uppgift."
         ],
         "closingParagraphs": [
             "Räknaren kräver inte hypotenusan eller en vinkel som inmatning. Den utför en operation, divisionen [[a/b]], och den utför den på exakt de två ben du identifierar."
@@ -5583,7 +5583,7 @@ export const TANGENT_TRANSLATIONS_BATCH3 = {
     },
     {
         "question": "Hur beräknar man tangens från två sidlängder?",
-        "answer": "Identifiera referensvinkeln A, mät den motstående kateten a och den närliggande kateten b i samma enhet, bekräfta att båda är positiva och dividera sedan: tan(A) = a / b. På denna sida matar du in den motstående kateten i det första fältet och den närliggande kateten i det andra och klickar sedan på Calculate tan(A)."
+        "answer": "Identifiera referensvinkeln A, mät den motstående kateten a och den närliggande kateten b i samma enhet, bekräfta att båda är positiva och dividera sedan: tan(A) = a / b. På denna sida matar du in den motstående kateten i det första fältet och den närliggande kateten i det andra och klickar sedan på Beräkna tan(A)."
     },
     {
         "question": "Varför använder inte tangens hypotenusan?",
@@ -5972,10 +5972,10 @@ export const TANGENT_TRANSLATIONS_BATCH3 = {
                 "<strong>在第二个输入框中输入邻边长度。</strong> 这是分数的分母。",
                 "<strong>使用单位选择器选择一致的测量单位。</strong> 两个输入必须是同一单位，否则先换算再除。",
                 "<strong>确认两个测量值都是正数。</strong> 零或负数的边长不可能属于真实三角形。",
-                "<strong>点击“Calculate tan(A)”。</strong> 工具将对边除以邻边。",
+                "<strong>点击“计算 tan(A)”。</strong> 工具将对边除以邻边。",
                 "<strong>读取得到的正切比。</strong> 答案是一个纯数字，不带度数，也不带长度单位。",
                 "<strong>判断结果是小于、等于还是大于1。</strong> 小于1说明三角形宽大于高；等于1说明两条直角边相等；大于1说明对边更长。",
-                "<strong>想重新计算时使用“Reset”。</strong> 新的输入值得一个全新的开始，而不是留着上一个问题的旧数字。"
+                "<strong>想重新计算时使用“重置”。</strong> 新的输入值得一个全新的开始，而不是留着上一个问题的旧数字。"
             ],
             "closingParagraphs": [
                 "计算器不需要斜边，也不需要输入角度。它只做一个运算，即除法[[a/b]]，而且只对你指认的两条直角边做这个运算。"
@@ -6674,7 +6674,7 @@ export const TANGENT_TRANSLATIONS_BATCH3 = {
         },
         {
             "question": "如何根据两条边长计算正切？",
-            "answer": "先确定参考角A，在同一单位下测量对边a和邻边b，确认两者都是正数，然后相除：tan(A) = a / b。在本页，在第一个输入框输入对边，在第二个输入框输入邻边，然后点击 Calculate tan(A)。"
+            "answer": "先确定参考角A，在同一单位下测量对边a和邻边b，确认两者都是正数，然后相除：tan(A) = a / b。在本页，在第一个输入框输入对边，在第二个输入框输入邻边，然后点击 计算 tan(A)。"
         },
         {
             "question": "为什么正切不用斜边？",

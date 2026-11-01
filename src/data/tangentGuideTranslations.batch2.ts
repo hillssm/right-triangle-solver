@@ -829,10 +829,10 @@ export const TANGENT_TRANSLATIONS_BATCH2 = {
           "দ্বিতীয় ইনপুট ঘরে সন্নিহিত বাহুর দৈর্ঘ্য লিখুন। এটি হর।",
           "উপলব্ধ একক নির্বাচক দিয়ে সামঞ্জস্যপূর্ণ পরিমাপের একক বেছে নিন। ভাগ করার আগে দুটি ইনপুট একই এককে থাকতে হবে, বা একটিতে রূপান্তর করতে হবে।",
           "নিশ্চিত করুন দুটি পরিমাপই ধনাত্মক। শূন্য বা ঋণাত্মক বাহু প্রকৃত ত্রিভুজের হতে পারে না।",
-          "Calculate tan(A) চাপুন। টুলটি বিপরীত বাহুকে সন্নিহিত বাহু দিয়ে ভাগ করে।",
+          "হিসাব করুন tan(A) চাপুন। টুলটি বিপরীত বাহুকে সন্নিহিত বাহু দিয়ে ভাগ করে।",
           "ফলাফলের ট্যানজেন্ট অনুপাত পড়ুন। উত্তরটি একটি সরল সংখ্যা, ডিগ্রি বা দৈর্ঘ্যের একক ছাড়া।",
           "ফলাফল ১-এর কম, সমান, না বেশি তা দেখুন। ১-এর নিচে মানে ত্রিভুজটি উচ্চতার চেয়ে প্রশস্ত; ঠিক ১ মানে সমান লেগ; ১-এর ওপরে মানে বিপরীত বাহু দীর্ঘ।",
-          "ইনপুট মুছে নতুন গণনা শুরু করতে চাইলে Reset ব্যবহার করুন। নতুন ইনপুটের নতুন শুরু প্রাপ্য, আগের সমস্যার বাসি সংখ্যা নয়।"
+          "ইনপুট মুছে নতুন গণনা শুরু করতে চাইলে রিসেট করুন। নতুন ইনপুটের নতুন শুরু প্রাপ্য, আগের সমস্যার বাসি সংখ্যা নয়।"
         ],
         "closingParagraphs": [
           "ক্যালকুলেটরের অতিভুজ বা কোণের ইনপুট দরকার নেই। এটি একটি ক্রিয়া করে, ভাগ [[a/b]], এবং ঠিক আপনার চিহ্নিত দুটি লেগের ওপরই করে।"
@@ -1194,7 +1194,7 @@ export const TANGENT_TRANSLATIONS_BATCH2 = {
       },
       {
         "question": "দুটি বাহুর দৈর্ঘ্য থেকে ট্যানজেন্ট কীভাবে গণনা করবেন?",
-        "answer": "প্রসঙ্গ কোণ A চিহ্নিত করুন, বিপরীত বাহু a ও সন্নিহিত বাহু b একই এককে মাপুন, দুটোই ধনাত্মক কিনা নিশ্চিত করুন, তারপর ভাগ করুন: tan(A) = a / b। এই পৃষ্ঠায়, প্রথম ঘরে বিপরীত বাহু ও দ্বিতীয় ঘরে সন্নিহিত বাহু লিখুন, তারপর Calculate tan(A) চাপুন।"
+        "answer": "প্রসঙ্গ কোণ A চিহ্নিত করুন, বিপরীত বাহু a ও সন্নিহিত বাহু b একই এককে মাপুন, দুটোই ধনাত্মক কিনা নিশ্চিত করুন, তারপর ভাগ করুন: tan(A) = a / b। এই পৃষ্ঠায়, প্রথম ঘরে বিপরীত বাহু ও দ্বিতীয় ঘরে সন্নিহিত বাহু লিখুন, তারপর হিসাব করুন tan(A) চাপুন।"
       },
       {
         "question": "ট্যানজেন্ট কেন অতিভুজ ব্যবহার করে না?",
@@ -1443,7 +1443,7 @@ export const TANGENT_TRANSLATIONS_BATCH2 = {
           "二番目の入力欄に隣辺の長さを入力します。これが分母です。",
           "利用可能な単位セレクターで互換性のある測定単位を選択します。両方の入力が同じ単位であるか、割る前に一方に変換されている必要があります。",
           "両方の測定値が正であることを確認します。ゼロや負の辺は本物の三角形には属しません。",
-          "「tan(A) を計算」をクリックします。ツールは対辺を隣辺で割ります。",
+          "「計算する tan(A)」をクリックします。ツールは対辺を隣辺で割ります。",
           "得られたタンジェント比を読み取ります。答えは素朴な数で、度数も長さの単位も付きません。",
           "結果が 1 より小さいか、等しいか、大きいかを確認します。1 未満は三角形が高さより幅が広いこと、ちょうど 1 は脚が等しいこと、1 超えは対辺が長いことを意味します。",
           "入力をクリアして別の計算を始めたいときは「リセット」を使います。新しい入力には新しいスタートがふさわしく、前の問題の残り物ではありません。"
@@ -1808,7 +1808,7 @@ export const TANGENT_TRANSLATIONS_BATCH2 = {
       },
       {
         "question": "二つの辺の長さからタンジェントを計算する方法は?",
-        "answer": "基準角 A を特定し、対辺 a と隣辺 b を同じ単位で測り、両方が正であることを確認してから割ります。tan(A) = a / b です。このページでは、最初の欄に対辺、二番目の欄に隣辺を入力し、「tan(A) を計算」をクリックします。"
+        "answer": "基準角 A を特定し、対辺 a と隣辺 b を同じ単位で測り、両方が正であることを確認してから割ります。tan(A) = a / b です。このページでは、最初の欄に対辺、二番目の欄に隣辺を入力し、「計算する tan(A)」をクリックします。"
       },
       {
         "question": "なぜタンジェントは斜辺を使わないのですか?",
@@ -2057,10 +2057,10 @@ export const TANGENT_TRANSLATIONS_BATCH2 = {
           "두 번째 입력 칸에 인접변 길이를 입력합니다. 이것이 분모입니다.",
           "사용 가능한 단위 선택기로 호환되는 측정 단위를 선택합니다. 두 입력 모두 같은 단위여야 하며, 나누기 전에 하나로 변환되어야 합니다.",
           "두 측정값이 모두 양수인지 확인합니다. 0이나 음수인 변은 실제 삼각형에 속할 수 없습니다.",
-          "tan(A) 계산을 클릭합니다. 도구가 대변을 인접변으로 나눕니다.",
+          "계산하기 tan(A)를 클릭합니다. 도구가 대변을 인접변으로 나눕니다.",
           "결과 탄젠트 비율을 읽습니다. 답은 도도 길이 단위도 붙지 않은 순수한 숫자입니다.",
           "결과가 1보다 작은지, 같은지, 큰지 확인합니다. 1 미만은 삼각형이 높이보다 너비가 넓다는 뜻, 정확히 1은 다리가 같다는 뜻, 1 초과는 대변이 더 길다는 뜻입니다.",
-          "입력을 지우고 새 계산을 시작하려면 재설정을 사용하세요. 새 입력에는 새 시작이 어울리며, 이전 문제의 잔여 숫자가 아닙니다."
+          "입력을 지우고 새 계산을 시작하려면 초기화를 사용하세요. 새 입력에는 새 시작이 어울리며, 이전 문제의 잔여 숫자가 아닙니다."
         ],
         "closingParagraphs": [
           "이 계산기는 빗변도 각도 입력도 필요로 하지 않습니다. 하나의 연산, 나눗셈 [[a/b]] 을 수행하며, 여러분이 지정한 두 다리에 정확히 적용합니다."
@@ -2422,7 +2422,7 @@ export const TANGENT_TRANSLATIONS_BATCH2 = {
       },
       {
         "question": "두 변 길이에서 탄젠트를 계산하는 방법은?",
-        "answer": "기준각 A를 정하고, 대변 a와 인접변 b를 같은 단위로 재고, 둘 다 양수인지 확인한 뒤 나눕니다. tan(A) = a / b 입니다. 이 페이지에서는 첫 번째 칸에 대변, 두 번째 칸에 인접변을 입력하고 tan(A) 계산을 클릭합니다."
+        "answer": "기준각 A를 정하고, 대변 a와 인접변 b를 같은 단위로 재고, 둘 다 양수인지 확인한 뒤 나눕니다. tan(A) = a / b 입니다. 이 페이지에서는 첫 번째 칸에 대변, 두 번째 칸에 인접변을 입력하고 계산하기 tan(A)를 클릭합니다."
       },
       {
         "question": "탄젠트가 빗변을 사용하지 않는 이유는?",
@@ -2674,7 +2674,7 @@ export const TANGENT_TRANSLATIONS_BATCH2 = {
           "Klik Kira tan(A). Alat itu membahagikan sisi bertentangan dengan sisi bersebelahan.",
           "Baca nisbah tangen yang terhasil. Jawapannya ialah nombor biasa, tanpa darjah dan tanpa unit panjang.",
           "Semak sama ada hasilnya kurang, sama atau lebih daripada 1. Di bawah 1 bermaksud segi tiga itu lebih lebar daripada tinggi; tepat 1 bermaksud kaki yang sama; di atas 1 bermaksud sisi bertentangan lebih panjang.",
-          "Gunakan Set Semula apabila anda mahu mengosongkan input dan memulakan pengiraan lain. Input baharu berhak mendapat permulaan baharu, bukan nombor sisa daripada masalah sebelumnya."
+          "Gunakan Tetapkan semula apabila anda mahu mengosongkan input dan memulakan pengiraan lain. Input baharu berhak mendapat permulaan baharu, bukan nombor sisa daripada masalah sebelumnya."
         ],
         "closingParagraphs": [
           "Kalkulator tidak memerlukan hipotenus atau input sudut. Ia melakukan satu operasi, pembahagian [[a/b]], dan ia melakukannya tepat pada dua kaki yang anda kenal pasti."

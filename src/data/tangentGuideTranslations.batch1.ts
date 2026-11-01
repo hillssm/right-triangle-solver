@@ -229,7 +229,7 @@ export const TANGENT_TRANSLATIONS_BATCH1 = {
           },
           {
             "kind": "p",
-            "text": "[[[\\frac{\\sin(A)}{\\cos(A)}=\\frac{a/c}{b/c}=\\frac{a}{b}]]"
+            "text": "[[[\\frac{\\sin(A)}{\\cos(A)}=\\frac{a/c}{b/c}=\\frac{a}{b}]]]"
           },
           {
             "kind": "p",
@@ -341,10 +341,10 @@ export const TANGENT_TRANSLATIONS_BATCH1 = {
           "<strong>दूसरे इनपुट फ़ील्ड में आसन्न भुजा की लंबाई दर्ज करें।</strong> यह हर है।",
           "<strong>उपलब्ध इकाई चयनकर्ताओं से संगत माप इकाइयाँ चुनें।</strong> दोनों इनपुट एक ही इकाई में होने चाहिए, या भाग देने से पहले एक में बदल लेने चाहिए।",
           "<strong>पुष्टि करें कि दोनों माप धनात्मक हैं।</strong> शून्य या ऋणात्मक भुजा वास्तविक त्रिभुज की नहीं हो सकती।",
-          "<strong>Calculate tan(A) पर क्लिक करें।</strong> उपकरण सम्मुख भुजा को आसन्न भुजा से भाग देता है।",
+          "<strong>गणना करें tan(A) पर क्लिक करें।</strong> उपकरण सम्मुख भुजा को आसन्न भुजा से भाग देता है।",
           "<strong>परिणामी स्पर्शज्या अनुपात पढ़ें।</strong> उत्तर एक सामान्य संख्या है, जिसमें न डिग्री जुड़ी है और न लंबाई की इकाइयाँ।",
           "<strong>जाँचें कि परिणाम 1 से कम, बराबर, या अधिक है।</strong> 1 से कम का अर्थ है त्रिभुज जितना ऊँचा है उससे अधिक चौड़ा है; ठीक 1 का अर्थ है टाँगें बराबर हैं; 1 से अधिक का अर्थ है सम्मुख भुजा लंबी है।",
-          "<strong>जब इनपुट साफ़ करके नई गणना शुरू करना हो तो Reset का उपयोग करें।</strong> नए इनपुट नई शुरुआत के हकदार हैं, पिछली समस्या के बचे हुए नंबरों के नहीं।"
+          "<strong>जब इनपुट साफ़ करके नई गणना शुरू करना हो तो रीसेट का उपयोग करें।</strong> नए इनपुट नई शुरुआत के हकदार हैं, पिछली समस्या के बचे हुए नंबरों के नहीं।"
         ],
         "closingParagraphs": [
           "कैलकुलेटर को कर्ण या कोण इनपुट की आवश्यकता नहीं होती। यह एक ही क्रिया करता है, भाग [[a/b]], और यह इसे ठीक उन दो टाँगों पर करता है जिनकी आप पहचान करते हैं।"
@@ -1129,7 +1129,7 @@ export const TANGENT_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "दो भुजा लंबाइयों से स्पर्शज्या की गणना कैसे करें?",
-        "answer": "संदर्भ कोण A की पहचान करें, सम्मुख भुजा a और आसन्न भुजा b को एक ही इकाई में मापें, पुष्टि करें कि दोनों धनात्मक हैं, फिर भाग दें: tan(A) = a / b। इस पृष्ठ पर, पहले फ़ील्ड में सम्मुख भुजा और दूसरे में आसन्न भुजा दर्ज करें, फिर Calculate tan(A) पर क्लिक करें।"
+        "answer": "संदर्भ कोण A की पहचान करें, सम्मुख भुजा a और आसन्न भुजा b को एक ही इकाई में मापें, पुष्टि करें कि दोनों धनात्मक हैं, फिर भाग दें: tan(A) = a / b। इस पृष्ठ पर, पहले फ़ील्ड में सम्मुख भुजा और दूसरे में आसन्न भुजा दर्ज करें, फिर गणना करें tan(A) पर क्लिक करें।"
       },
       {
         "question": "स्पर्शज्या में कर्ण का उपयोग क्यों नहीं होता?",
@@ -1390,7 +1390,7 @@ export const TANGENT_TRANSLATIONS_BATCH1 = {
           },
           {
             "kind": "p",
-            "text": "[[[\\frac{\\sin(A)}{\\cos(A)}=\\frac{a/c}{b/c}=\\frac{a}{b}]]"
+            "text": "[[[\\frac{\\sin(A)}{\\cos(A)}=\\frac{a/c}{b/c}=\\frac{a}{b}]]]"
           },
           {
             "kind": "p",
@@ -2551,7 +2551,7 @@ export const TANGENT_TRANSLATIONS_BATCH1 = {
           },
           {
             "kind": "p",
-            "text": "[[[\\frac{\\sin(A)}{\\cos(A)}=\\frac{a/c}{b/c}=\\frac{a}{b}]]"
+            "text": "[[[\\frac{\\sin(A)}{\\cos(A)}=\\frac{a/c}{b/c}=\\frac{a}{b}]]]"
           },
           {
             "kind": "p",
@@ -2663,7 +2663,7 @@ export const TANGENT_TRANSLATIONS_BATCH1 = {
           "<strong>Введите длину прилежащего катета во второе поле ввода.</strong> Это знаменатель.",
           "<strong>Выберите совместимые единицы измерения с помощью доступных селекторов единиц.</strong> Оба входных значения должны быть в одних единицах или приведены к одним перед делением.",
           "<strong>Убедитесь, что оба измерения положительные.</strong> Нулевой или отрицательный катет не может принадлежать настоящему треугольнику.",
-          "<strong>Нажмите «Вычислить tan(A)».</strong> Инструмент разделит противолежащий катет на прилежащий.",
+          "<strong>Нажмите «Рассчитать tan(A)».</strong> Инструмент разделит противолежащий катет на прилежащий.",
           "<strong>Прочитайте полученное отношение тангенса.</strong> Ответ: обычное число, без градусов и без единиц длины.",
           "<strong>Проверьте, меньше, равен или больше 1 результат.</strong> Меньше 1 означает, что треугольник шире, чем высок; ровно 1 означает равенство катетов; больше 1 означает, что противолежащий катет длиннее.",
           "<strong>Используйте «Сброс», если хотите очистить поля ввода и начать новое вычисление.</strong> Новым входным данным нужен чистый старт, а не оставшиеся числа от прошлой задачи."
@@ -3451,7 +3451,7 @@ export const TANGENT_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "Как вычислить тангенс по двум длинам сторон?",
-        "answer": "Определите опорный угол A, измерьте противолежащий катет a и прилежащий катет b в одних единицах, убедитесь, что оба положительны, затем разделите: tan(A) = a / b. На этой странице введите противолежащий катет в первое поле, а прилежащий катет во второе, затем нажмите «Вычислить tan(A)»."
+        "answer": "Определите опорный угол A, измерьте противолежащий катет a и прилежащий катет b в одних единицах, убедитесь, что оба положительны, затем разделите: tan(A) = a / b. На этой странице введите противолежащий катет в первое поле, а прилежащий катет во второе, затем нажмите «Рассчитать tan(A)»."
       },
       {
         "question": "Почему тангенс не использует гипотенузу?",
@@ -3712,7 +3712,7 @@ export const TANGENT_TRANSLATIONS_BATCH1 = {
           },
           {
             "kind": "p",
-            "text": "[[[\\frac{\\sin(A)}{\\cos(A)}=\\frac{a/c}{b/c}=\\frac{a}{b}]]"
+            "text": "[[[\\frac{\\sin(A)}{\\cos(A)}=\\frac{a/c}{b/c}=\\frac{a}{b}]]]"
           },
           {
             "kind": "p",
@@ -3824,10 +3824,10 @@ export const TANGENT_TRANSLATIONS_BATCH1 = {
           "<strong>Entrez la longueur du côté adjacent dans le deuxième champ de saisie.</strong> C’est le dénominateur.",
           "<strong>Sélectionnez des unités de mesure compatibles à l’aide des sélecteurs d’unités disponibles.</strong> Les deux entrées doivent être dans la même unité, ou converties dans une seule unité avant de diviser.",
           "<strong>Confirmez que les deux mesures sont positives.</strong> Un côté nul ou négatif ne peut pas appartenir à un triangle réel.",
-          "<strong>Cliquez sur Calculer tan(A).</strong> L’outil divise le côté opposé par le côté adjacent.",
+          "<strong>Cliquez sur « Calculer tan(A) ».</strong> L’outil divise le côté opposé par le côté adjacent.",
           "<strong>Lisez le rapport de tangente obtenu.</strong> La réponse est un simple nombre, sans degrés ni unités de longueur attachés.",
           "<strong>Vérifiez si le résultat est inférieur, égal ou supérieur à 1.</strong> En dessous de 1, le triangle est plus large que haut ; exactement 1 signifie des côtés égaux ; au-dessus de 1, le côté opposé est plus long.",
-          "<strong>Utilisez Réinitialiser lorsque vous voulez effacer les entrées et commencer un autre calcul.</strong> Des entrées fraîches méritent un nouveau départ, pas des nombres résiduels du problème précédent."
+          "<strong>Utilisez « Réinitialiser » lorsque vous voulez effacer les entrées et commencer un autre calcul.</strong> Des entrées fraîches méritent un nouveau départ, pas des nombres résiduels du problème précédent."
         ],
         "closingParagraphs": [
           "Le calculateur ne nécessite pas l’hypoténuse ni une entrée d’angle. Il effectue une seule opération, la division [[a/b]], et il l’effectue sur exactement les deux côtés que vous identifiez."
@@ -4612,7 +4612,7 @@ export const TANGENT_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "Comment calculer la tangente à partir de deux longueurs de côté ?",
-        "answer": "Identifiez l’angle de référence A, mesurez le côté opposé a et le côté adjacent b dans la même unité, confirmez que les deux sont positifs, puis divisez : tan(A) = a / b. Sur cette page, entrez le côté opposé dans le premier champ et le côté adjacent dans le deuxième, puis cliquez sur Calculer tan(A)."
+        "answer": "Identifiez l’angle de référence A, mesurez le côté opposé a et le côté adjacent b dans la même unité, confirmez que les deux sont positifs, puis divisez : tan(A) = a / b. Sur cette page, entrez le côté opposé dans le premier champ et le côté adjacent dans le deuxième, puis cliquez sur « Calculer tan(A) »."
       },
       {
         "question": "Pourquoi la tangente n’utilise-t-elle pas l’hypoténuse ?",
@@ -4873,7 +4873,7 @@ export const TANGENT_TRANSLATIONS_BATCH1 = {
           },
           {
             "kind": "p",
-            "text": "[[[\\frac{\\sin(A)}{\\cos(A)}=\\frac{a/c}{b/c}=\\frac{a}{b}]]"
+            "text": "[[[\\frac{\\sin(A)}{\\cos(A)}=\\frac{a/c}{b/c}=\\frac{a}{b}]]]"
           },
           {
             "kind": "p",
@@ -4985,7 +4985,7 @@ export const TANGENT_TRANSLATIONS_BATCH1 = {
           "<strong>Die Länge der Ankathete in das zweite Eingabefeld eintragen.</strong> Dies ist der Nenner.",
           "<strong>Über die verfügbaren Einheitenauswahlen kompatible Maßeinheiten wählen.</strong> Beide Eingaben müssen in derselben Einheit stehen oder vor der Division dorthin umgerechnet werden.",
           "<strong>Bestätigen, dass beide Messungen positiv sind.</strong> Eine Null oder eine negative Seite kann zu keinem echten Dreieck gehören.",
-          "<strong>Klicken Sie auf Tangens berechnen.</strong> Das Werkzeug dividiert die Gegenkathete durch die Ankathete.",
+          "<strong>Klicken Sie auf „Berechnen tan(A)\".</strong> Das Werkzeug dividiert die Gegenkathete durch die Ankathete.",
           "<strong>Das resultierende Tangensverhältnis ablesen.</strong> Die Antwort ist eine reine Zahl, ohne Grad und ohne Längeneinheiten.",
           "<strong>Prüfen, ob das Ergebnis kleiner, gleich oder größer als 1 ist.</strong> Unter 1 bedeutet, das Dreieck ist breiter als hoch; genau 1 bedeutet gleiche Katheten; über 1 bedeutet, die Gegenkathete ist länger.",
           "<strong>Verwenden Sie Zurücksetzen, wenn Sie die Eingaben löschen und eine neue Berechnung beginnen möchten.</strong> Frische Eingaben verdienen einen frischen Start, keine übrig gebliebenen Zahlen aus der vorherigen Aufgabe."
@@ -5773,7 +5773,7 @@ export const TANGENT_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "Wie berechnet man den Tangens aus zwei Seitenlängen?",
-        "answer": "Legen Sie den Bezugswinkel A fest, messen Sie die Gegenkathete a und die Ankathete b in derselben Einheit, vergewissern Sie sich, dass beide positiv sind, und dividieren Sie dann: tan(A) = a / b. Geben Sie auf dieser Seite die Gegenkathete in das erste Feld und die Ankathete in das zweite ein und klicken Sie dann auf Tangens berechnen."
+        "answer": "Legen Sie den Bezugswinkel A fest, messen Sie die Gegenkathete a und die Ankathete b in derselben Einheit, vergewissern Sie sich, dass beide positiv sind, und dividieren Sie dann: tan(A) = a / b. Geben Sie auf dieser Seite die Gegenkathete in das erste Feld und die Ankathete in das zweite ein und klicken Sie dann auf „Berechnen tan(A)\"."
       },
       {
         "question": "Warum verwendet der Tangens nicht die Hypotenuse?",
@@ -6034,7 +6034,7 @@ export const TANGENT_TRANSLATIONS_BATCH1 = {
           },
           {
             "kind": "p",
-            "text": "[[[\\frac{\\sin(A)}{\\cos(A)}=\\frac{a/c}{b/c}=\\frac{a}{b}]]"
+            "text": "[[[\\frac{\\sin(A)}{\\cos(A)}=\\frac{a/c}{b/c}=\\frac{a}{b}]]]"
           },
           {
             "kind": "p",
@@ -6149,7 +6149,7 @@ export const TANGENT_TRANSLATIONS_BATCH1 = {
           "<strong>Fai clic su Calcola tan(A).</strong> Lo strumento divide il cateto opposto per il cateto adiacente.",
           "<strong>Leggi il rapporto tangente risultante.</strong> La risposta è un semplice numero, senza gradi e senza unità di lunghezza.",
           "<strong>Controlla se il risultato è minore, uguale o maggiore di 1.</strong> Sotto 1 significa che il triangolo è più largo che alto; esattamente 1 significa cateti uguali; sopra 1 significa che il cateto opposto è più lungo.",
-          "<strong>Usa Reset quando vuoi azzerare gli input e iniziare un nuovo calcolo.</strong> Nuovi input meritano un nuovo inizio, non i numeri residui del problema precedente."
+          "<strong>Usa Reimposta quando vuoi azzerare gli input e iniziare un nuovo calcolo.</strong> Nuovi input meritano un nuovo inizio, non i numeri residui del problema precedente."
         ],
         "closingParagraphs": [
           "La calcolatrice non richiede l'ipotenusa né un input angolare. Esegue un'unica operazione, la divisione [[a/b]], e la esegue esattamente sui due cateti individuati."

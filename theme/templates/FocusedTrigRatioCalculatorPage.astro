@@ -36,6 +36,10 @@ const isCosecantPage = page.slug === 'cosecant-ratio-calculator' && (locale === 
 const isCosinePage = page.slug === 'cosine-ratio-calculator' && (locale === 'en' || COSINE_GUIDE_TRANSLATIONS[locale]);
 const isCotangentPage = page.slug === 'cotangent-ratio-calculator' && (locale === 'en' || COTANGENT_GUIDE_TRANSLATIONS[locale]);
 const isSecantPage = page.slug === 'secant-ratio-calculator' && (locale === 'en' || SECANT_GUIDE_TRANSLATIONS[locale]);
+// Proactive: sine (Page 13) and tangent (Page 14) guides not yet built; suppress old thin content when their EN guides render.
+// Translation checks to be added by the pipeline workers when they create the locale data files.
+const isSinePage = page.slug === 'sine-ratio-calculator' && locale === 'en';
+const isTangentPage = page.slug === 'tangent-ratio-calculator' && locale === 'en';
 const trigUi = getFocusedTrigRatioUi(locale);
 const runtimeTranslations = getFocusedTrigRatioRuntimeTranslations(page, locale);
 const sharedCalculatorUi = getFocusedSideCalculatorUi(locale);
@@ -274,7 +278,7 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
   />
 
   <!-- Intro -->
-  {!isCosecantPage && !isCosinePage && !isCotangentPage && !isSecantPage && (
+  {!isCosecantPage && !isCosinePage && !isCotangentPage && !isSecantPage && !isSinePage && !isTangentPage && (
   <>
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={page.introHeading} />

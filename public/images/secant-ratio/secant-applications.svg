@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="48" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">Four Practical Secant Calculations</text>
+
+  <rect x="20" y="90" width="560" height="240" rx="10" fill="#1c1b1b" stroke="#2a2a2a" stroke-width="1.5"/>
+  <text x="312" y="126" font-size="23" font-weight="700" fill="#ffffff" text-anchor="start">Ladder</text>
+  <text x="312" y="170" font-size="19" fill="#f1c97d" text-anchor="start">sec(A) = 5/4 = 1.25</text>
+  <text x="312" y="206" font-size="15" fill="#d4d4d4" text-anchor="start">25% longer than ground distance</text>
+<line x1="60" y1="290" x2="240" y2="155" stroke="#f1c97d" stroke-width="8"/>
+<line x1="60" y1="290" x2="240" y2="290" stroke="#38bdf8" stroke-width="8"/>
+<line x1="240" y1="290" x2="240" y2="155" stroke="#a3a3a3" stroke-width="8"/>
+<polyline points="216,290 216,266 240,266" fill="none" stroke="#ffffff" stroke-width="3"/>
+<polyline points="94.0,290.0 93.8,286.4 93.2,282.8 92.3,279.2 90.9,275.9 89.2,272.6 87.2,269.6" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+<circle cx="60" cy="290" r="6" fill="#ffffff"/>
+<circle cx="240" cy="290" r="6" fill="#ffffff"/>
+<circle cx="240" cy="155" r="6" fill="#ffffff"/>
+<text x="26" y="324" font-size="24" font-weight="700" fill="#ffffff">A</text>
+<text x="250" y="147" font-size="24" font-weight="700" fill="#ffffff">B</text>
+<text x="250" y="324" font-size="24" font-weight="700" fill="#ffffff">C</text>
+  <rect x="620" y="90" width="560" height="240" rx="10" fill="#1c1b1b" stroke="#2a2a2a" stroke-width="1.5"/>
+  <text x="912" y="126" font-size="23" font-weight="700" fill="#ffffff" text-anchor="start">Ramp</text>
+  <text x="912" y="170" font-size="19" fill="#f1c97d" text-anchor="start">sec(A) = 9.5/9 ≈ 1.0556</text>
+  <text x="912" y="206" font-size="15" fill="#d4d4d4" text-anchor="start">5.56% longer than the run</text>
+<line x1="660" y1="290" x2="840" y2="229" stroke="#f1c97d" stroke-width="8"/>
+<line x1="660" y1="290" x2="840" y2="290" stroke="#38bdf8" stroke-width="8"/>
+<line x1="840" y1="290" x2="840" y2="229" stroke="#a3a3a3" stroke-width="8"/>
+<polyline points="816,290 816,266 840,266" fill="none" stroke="#ffffff" stroke-width="3"/>
+<polyline points="694.0,290.0 693.9,288.1 693.8,286.3 693.5,284.5 693.2,282.7 692.7,280.9 692.2,279.1" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+<circle cx="660" cy="290" r="6" fill="#ffffff"/>
+<circle cx="840" cy="290" r="6" fill="#ffffff"/>
+<circle cx="840" cy="229" r="6" fill="#ffffff"/>
+<text x="626" y="324" font-size="24" font-weight="700" fill="#ffffff">A</text>
+<text x="850" y="221" font-size="24" font-weight="700" fill="#ffffff">B</text>
+<text x="850" y="324" font-size="24" font-weight="700" fill="#ffffff">C</text>
+  <rect x="20" y="360" width="560" height="240" rx="10" fill="#1c1b1b" stroke="#2a2a2a" stroke-width="1.5"/>
+  <text x="312" y="396" font-size="23" font-weight="700" fill="#ffffff" text-anchor="start">Surveying</text>
+  <text x="312" y="440" font-size="19" fill="#f1c97d" text-anchor="start">sec(A) = 50/40 = 1.25</text>
+  <text x="312" y="476" font-size="15" fill="#d4d4d4" text-anchor="start">25% longer than horizontal</text>
+<line x1="60" y1="560" x2="240" y2="425" stroke="#f1c97d" stroke-width="8"/>
+<line x1="60" y1="560" x2="240" y2="560" stroke="#38bdf8" stroke-width="8"/>
+<line x1="240" y1="560" x2="240" y2="425" stroke="#a3a3a3" stroke-width="8"/>
+<polyline points="216,560 216,536 240,536" fill="none" stroke="#ffffff" stroke-width="3"/>
+<polyline points="94.0,560.0 93.8,556.4 93.2,552.8 92.3,549.2 90.9,545.9 89.2,542.6 87.2,539.6" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+<circle cx="60" cy="560" r="6" fill="#ffffff"/>
+<circle cx="240" cy="560" r="6" fill="#ffffff"/>
+<circle cx="240" cy="425" r="6" fill="#ffffff"/>
+<text x="26" y="594" font-size="24" font-weight="700" fill="#ffffff">A</text>
+<text x="250" y="417" font-size="24" font-weight="700" fill="#ffffff">B</text>
+<text x="250" y="594" font-size="24" font-weight="700" fill="#ffffff">C</text>
+  <rect x="620" y="360" width="560" height="240" rx="10" fill="#1c1b1b" stroke="#2a2a2a" stroke-width="1.5"/>
+  <text x="912" y="396" font-size="23" font-weight="700" fill="#ffffff" text-anchor="start">Crane boom</text>
+  <text x="912" y="440" font-size="19" fill="#f1c97d" text-anchor="start">sec(A) = 10/6 ≈ 1.6667</text>
+  <text x="912" y="476" font-size="15" fill="#d4d4d4" text-anchor="start">66.67% longer than projection</text>
+<line x1="660" y1="560" x2="795" y2="380" stroke="#f1c97d" stroke-width="8"/>
+<line x1="660" y1="560" x2="795" y2="560" stroke="#38bdf8" stroke-width="8"/>
+<line x1="795" y1="560" x2="795" y2="380" stroke="#a3a3a3" stroke-width="8"/>
+<polyline points="771,560 771,536 795,536" fill="none" stroke="#ffffff" stroke-width="3"/>
+<polyline points="694.0,560.0 693.6,554.8 692.4,549.7 690.4,544.8 687.7,540.3 684.3,536.3 680.4,532.8" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+<circle cx="660" cy="560" r="6" fill="#ffffff"/>
+<circle cx="795" cy="560" r="6" fill="#ffffff"/>
+<circle cx="795" cy="380" r="6" fill="#ffffff"/>
+<text x="626" y="594" font-size="24" font-weight="700" fill="#ffffff">A</text>
+<text x="805" y="372" font-size="24" font-weight="700" fill="#ffffff">B</text>
+<text x="805" y="594" font-size="24" font-weight="700" fill="#ffffff">C</text>
+</svg>

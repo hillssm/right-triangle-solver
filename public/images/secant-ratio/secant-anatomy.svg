@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="48" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">Anatomy of a Right Triangle for Secant</text>
+
+  <rect x="30" y="110" width="232" height="118" rx="10" fill="#1c1b1b" stroke="#f1c97d" stroke-width="1.5"/>
+  <text x="146" y="152" font-size="25" font-weight="700" fill="#ffffff" text-anchor="middle">sec(A) = c / b</text>
+  <text x="146" y="184" font-size="17" fill="#f1c97d" text-anchor="middle">c = hypotenuse</text>
+  <text x="146" y="208" font-size="17" fill="#38bdf8" text-anchor="middle">b = adjacent side</text>
+<line x1="240" y1="560" x2="960" y2="100" stroke="#f1c97d" stroke-width="8"/>
+<line x1="240" y1="560" x2="960" y2="560" stroke="#38bdf8" stroke-width="8"/>
+<line x1="960" y1="560" x2="960" y2="100" stroke="#a3a3a3" stroke-width="8"/>
+<polyline points="936,560 936,536 960,536" fill="none" stroke="#ffffff" stroke-width="3"/>
+<polyline points="274.0,560.0 273.8,556.8 273.4,553.6 272.6,550.5 271.6,547.4 270.3,544.5 268.7,541.7" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+<circle cx="240" cy="560" r="6" fill="#ffffff"/>
+<circle cx="960" cy="560" r="6" fill="#ffffff"/>
+<circle cx="960" cy="100" r="6" fill="#ffffff"/>
+<text x="206" y="594" font-size="24" font-weight="700" fill="#ffffff">A</text>
+<text x="970" y="92" font-size="24" font-weight="700" fill="#ffffff">B</text>
+<text x="970" y="594" font-size="24" font-weight="700" fill="#ffffff">C</text>
+<text x="592.0" y="318.0" font-size="22" fill="#f1c97d" text-anchor="middle">c (hypotenuse)</text>
+<text x="600.0" y="594" font-size="22" fill="#38bdf8" text-anchor="middle">b (adjacent)</text>
+<text x="974" y="330.0" font-size="22" fill="#a3a3a3" text-anchor="start">a (opposite)</text>
+  <text x="600" y="614" font-size="17" fill="#d4d4d4" text-anchor="middle">Secant uses the hypotenuse c and the adjacent side b. The opposite side a is not used in the formula.</text>
+
+</svg>

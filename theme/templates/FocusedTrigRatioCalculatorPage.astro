@@ -17,6 +17,9 @@ import { COSINE_GUIDE_TRANSLATIONS } from 'src/data/cosineGuideTranslations';
 import CotangentRatioGuide from 'theme/components/CotangentRatioGuide.astro';
 import CotangentRatioGuideLocalized from 'theme/components/CotangentRatioGuideLocalized.astro';
 import { COTANGENT_GUIDE_TRANSLATIONS } from 'src/data/cotangentGuideTranslations';
+import SecantRatioGuide from 'theme/components/SecantRatioGuide.astro';
+import SecantRatioGuideLocalized from 'theme/components/SecantRatioGuideLocalized.astro';
+import { SECANT_GUIDE_TRANSLATIONS } from 'src/data/secantGuideTranslations';
 import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
@@ -32,6 +35,7 @@ const { page, locale = DEFAULT_LOCALE } = Astro.props;
 const isCosecantPage = page.slug === 'cosecant-ratio-calculator' && (locale === 'en' || COSECANT_GUIDE_TRANSLATIONS[locale]);
 const isCosinePage = page.slug === 'cosine-ratio-calculator' && (locale === 'en' || COSINE_GUIDE_TRANSLATIONS[locale]);
 const isCotangentPage = page.slug === 'cotangent-ratio-calculator' && (locale === 'en' || COTANGENT_GUIDE_TRANSLATIONS[locale]);
+const isSecantPage = page.slug === 'secant-ratio-calculator' && (locale === 'en' || SECANT_GUIDE_TRANSLATIONS[locale]);
 const trigUi = getFocusedTrigRatioUi(locale);
 const runtimeTranslations = getFocusedTrigRatioRuntimeTranslations(page, locale);
 const sharedCalculatorUi = getFocusedSideCalculatorUi(locale);
@@ -526,4 +530,7 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
 
   {page.slug === 'cotangent-ratio-calculator' && locale === 'en' ? <CotangentRatioGuide /> : null}
   {page.slug === 'cotangent-ratio-calculator' && locale !== 'en' && COTANGENT_GUIDE_TRANSLATIONS[locale] ? <CotangentRatioGuideLocalized guide={COTANGENT_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
+
+  {page.slug === 'secant-ratio-calculator' && locale === 'en' ? <SecantRatioGuide /> : null}
+  {page.slug === 'secant-ratio-calculator' && locale !== 'en' && SECANT_GUIDE_TRANSLATIONS[locale] ? <SecantRatioGuideLocalized guide={SECANT_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>

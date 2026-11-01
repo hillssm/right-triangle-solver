@@ -1,0 +1,540 @@
+---
+/**
+ * SecantRatioGuide.astro - Educational guide for the Secant Ratio Calculator page.
+ * Built from the user's actual master prompt (Page 12 of 45). EN only.
+ * Sections follow the prompt: intro, triangle anatomy, what is secant,
+ * formula derivation, calculator walkthrough, 4 foundational examples,
+ * 12 practical examples, angle relationship, finding the hypotenuse,
+ * finding an angle, 15 mistakes, verification, ratio comparison,
+ * 12 FAQs, related calculators.
+ */
+import katex from 'katex';
+import Faq from 'theme/components/Faq.astro';
+
+const rich = (s: string): string => {
+  if (!s || typeof s !== 'string') return '';
+  let out = s;
+  out = out.replace(
+    /\[\[\[(.+?)\]\]\]/g,
+    (_, l) =>
+      `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
+  );
+  out = out.replace(
+    /\[\[(.+?)\]\]/g,
+    (_, l) =>
+      `<span dir="ltr" class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>`
+  );
+  return out;
+};
+
+const imgSrc = (name: string): string => `/images/secant-ratio/${name}`;
+
+const faqs = [
+  {
+    question: 'What is the secant ratio formula for a right triangle?',
+    answer: 'sec(A) = c / b: divide the hypotenuse c by the side adjacent to angle A. With a hypotenuse of 5 cm and an adjacent side of 4 cm, the result is 5/4 = 1.25. That decimal is the complete answer, a dimensionless ratio, not an angle.',
+  },
+  {
+    question: 'How is secant related to cosine?',
+    answer: 'Secant is the reciprocal of cosine: sec(A) = 1 / cos(A). If cos(A) = 4/5 = 0.8, then sec(A) = 1/0.8 = 1.25. The two ratios describe the same angle from flipped perspectives, and the reciprocal check is the fastest way to verify a secant calculation.',
+  },
+  {
+    question: 'Why is secant greater than 1 in a right triangle?',
+    answer: 'In a valid, non-degenerate right triangle the hypotenuse is strictly longer than either leg, so c > b > 0. Dividing a larger length by a smaller one always gives a ratio above 1: sec(A) = c/b > 1 for every acute reference angle.',
+  },
+  {
+    question: 'Can secant equal 1?',
+    answer: 'Not for an ordinary acute angle in a real right triangle. A secant of exactly 1 would require the hypotenuse to equal the adjacent side, which collapses the triangle to a flat line. The value 1 is a limiting value approached as angle A shrinks toward 0 degrees, never a value a genuine triangle produces.',
+  },
+  {
+    question: 'What does a secant value of 1.25 mean?',
+    answer: 'The hypotenuse is 1.25 times as long as the adjacent side, or 25 percent longer. It does not mean the angle is 1.25 degrees, and it does not mean the triangle measures 1.25 units. Secant is a dimensionless comparison of two lengths.',
+  },
+  {
+    question: 'Does secant have measurement units?',
+    answer: 'No. Both inputs are lengths measured in the same unit, so the units cancel: 5 m / 4 m = 1.25, exactly as 500 cm / 400 cm = 1.25. Report secant as a plain number, never with degrees, metres, or feet attached.',
+  },
+  {
+    question: 'How do you calculate secant from side lengths?',
+    answer: 'Measure the hypotenuse c and the adjacent side b in the same unit, confirm both are positive and that c is longer than b, then divide: sec(A) = c / b. On this page, enter the hypotenuse in the first field and the adjacent side in the second, pick compatible units, and click Calculate sec(A).',
+  },
+  {
+    question: 'How can I find the hypotenuse using secant?',
+    answer: 'Rearrange the formula to c = b * sec(A). If the adjacent side is 4 m and angle A is 60 degrees, sec(60 deg) = 2, so c = 4 * 2 = 8 m. This is a manual rearrangement; this page\'s calculator returns the ratio from side lengths, not missing sides.',
+  },
+  {
+    question: 'How can I find an angle from a secant ratio?',
+    answer: 'Take the reciprocal to get the cosine ratio, then apply inverse cosine: A = cos^-1(1 / sec(A)). For sec(A) = 1.25, the cosine ratio is 0.8, so A = cos^-1(0.8), about 36.87 degrees. Set your scientific calculator to degrees mode first. This page\'s calculator returns the ratio, not the angle.',
+  },
+  {
+    question: 'What is the difference between secant and cosecant?',
+    answer: 'Secant divides the hypotenuse by the adjacent side (c/b); cosecant divides the hypotenuse by the opposite side (c/a). Both are reciprocal ratios involving the hypotenuse, but they use different legs, so they answer different questions and are never interchangeable.',
+  },
+  {
+    question: 'Can I calculate secant without knowing the opposite side?',
+    answer: 'Yes. The primary secant formula uses only the hypotenuse and the adjacent side, so the opposite side never enters the calculation. The opposite side becomes useful only when the Pythagorean theorem is used to verify the triangle or when sine, tangent, or cosecant enter the work.',
+  },
+  {
+    question: 'How is secant used in practical measurements?',
+    answer: 'Secant compares a sloping length with its horizontal projection: a ladder against its ground distance, a roof rafter against its horizontal run, a cable against the horizontal separation of its endpoints. The ratio tells you how much longer the sloping path is than its projection, which is useful for estimating material lengths from horizontal plans.',
+  },
+];
+---
+
+<!-- Table of Contents -->
+<nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label="Guide contents">
+  <h2 class="font-headline text-2xl font-bold">In This Guide</h2>
+  <ol class="mt-4 grid gap-2 sm:grid-cols-2">
+    <li><a class="hover:text-primary hover:underline" href="#sec-intro">What Is a Secant Ratio Calculator?</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-triangle">Understanding the Adjacent Side and Hypotenuse</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-whatis">Understanding the Secant Ratio</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-formula">How the Secant Formula Works</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-howto">How to Use the Secant Ratio Calculator</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-examples">Step-by-Step Examples of Calculating Secant</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-applications">Real-Life Examples of Using the Secant Ratio</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-angle">Understanding the Relationship Between Secant and Angle Size</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-hypotenuse">How to Find the Hypotenuse Using Secant</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-recover">How to Find an Angle From a Secant Ratio</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-mistakes">Common Mistakes When Calculating Secant</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-verify">How to Check Whether Your Secant Result Is Valid</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-vs">Secant vs. Cosine, Sine, and Cosecant</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-faq">Frequently Asked Questions</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-related">Explore Related Trigonometric Calculators</a></li>
+  </ol>
+</nav>
+
+<!-- SECTION 1: Introduction -->
+<section id="sec-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>What Is a Secant Ratio Calculator?</h2>
+  <p>A secant ratio calculator answers one question: for an acute angle in a right triangle, how does the longest side compare with the side next to the angle? Enter the hypotenuse and the adjacent side, and the tool divides the hypotenuse by the adjacent side, returning <span set:html={rich('[[\\sec(A)=c/b]]')} />. With a hypotenuse of 5 cm and an adjacent side of 4 cm, the calculation is <span set:html={rich('[[5/4=1.25]]')} />: the hypotenuse is 1.25 times as long as the adjacent side, which is another way of saying it is 25% longer. That decimal is the complete answer. It is a dimensionless ratio, since centimetres cancel in the division, and it is not an angle in degrees, so never read 1.25 as <span set:html={rich('[[1.25^\\circ]]')} />. The opposite side never enters this calculation; the hypotenuse and the adjacent side are sufficient. Secant is also the reciprocal of cosine, which is why many textbooks introduce it as the flipped form of <span set:html={rich('[[\\cos(A)]]')} />.</p>
+</section>
+
+<!-- SECTION 2: Understanding the right triangle -->
+<section id="sec-triangle" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding the Adjacent Side and Hypotenuse</h2>
+
+  <h3>What Is a Right Triangle?</h3>
+  <p>A right triangle has one angle of exactly <span set:html={rich('[[90^\\circ]]')} />, the angle between two perpendicular lines, like a wall meeting a level floor. The hypotenuse sits opposite that right angle and is always the longest side, because it must span the full diagonal across the corner. The other two angles share the remaining 90 degrees, so both are acute. The two legs meet at the right angle, perpendicular to each other, and it is their relationship with the hypotenuse that makes right-triangle trigonometry possible.</p>
+
+  <h3>What Is the Adjacent Side?</h3>
+  <p>The adjacent side <span set:html={rich('[[b]]')} /> is the leg that touches the reference angle <span set:html={rich('[[A]]')} /> without being the hypotenuse. In practical problems it often plays the role of the horizontal run: the ground distance from a ladder's base to a wall, the horizontal projection of a roof rafter, or the horizontal separation between two survey points. It goes in the denominator of the secant formula. Which leg counts as adjacent depends on the chosen reference angle, so switching from angle <span set:html={rich('[[A]]')} /> to angle <span set:html={rich('[[B]]')} /> swaps the adjacent and opposite labels.</p>
+
+  <h3>What Is the Hypotenuse?</h3>
+  <p>The hypotenuse <span set:html={rich('[[c]]')} /> is the side opposite the right angle: in any diagram it faces the small square marking the <span set:html={rich('[[90^\\circ]]')} /> corner, and it is strictly longer than either leg. In practical problems it often plays the role of a sloping length: a ladder, a ramp surface, a rafter, a cable, a diagonal brace, or a straight-line path. It goes in the numerator of the secant formula, which is why every secant value comes out greater than 1.</p>
+
+  <h3>What Is the Opposite Side?</h3>
+  <p>The opposite side <span set:html={rich('[[a]]')} /> sits directly across from angle <span set:html={rich('[[A]]')} /> and never touches its vertex. It plays no role in the primary secant calculation, which is why the calculator never asks for it. It becomes relevant when the Pythagorean theorem is used to verify that the two known lengths form a genuine right triangle, and it takes centre stage for sine, tangent, and cosecant, where the opposite side is one of the two working sides.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('secant-anatomy.svg')} alt="Right triangle with angle A bottom-left, gold hypotenuse c, blue adjacent side b, sec(A)=c/b" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Angle A sits at the bottom-left; secant uses the gold hypotenuse c and the blue adjacent side b, not the opposite side a.</figcaption>
+  </figure>
+</section>
+
+<!-- SECTION 3: What is secant -->
+<section id="sec-whatis" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding the Secant Ratio</h2>
+  <p>Secant compares the full sloping side with the leg next to the reference angle:</p>
+  <p><span set:html={rich('[[[\\sec(A)=\\frac{c}{b}]]]')} /></p>
+  <p>Here <span set:html={rich('[[\\sec(A)]]')} /> is the secant of angle <span set:html={rich('[[A]]')} />, <span set:html={rich('[[c]]')} /> is the hypotenuse, and <span set:html={rich('[[b]]')} /> is the adjacent side: how many times the adjacent side fits into the hypotenuse.</p>
+
+  <h3>Secant as the Reciprocal of Cosine</h3>
+  <p>Cosine divides the adjacent side by the hypotenuse, <span set:html={rich('[[\\cos(A)=b/c]]')} />. Taking the reciprocal flips that fraction, <span set:html={rich('[[1/\\cos(A)=c/b]]')} />, which is exactly the secant formula:</p>
+  <p><span set:html={rich('[[[\\boxed{\\sec(A)=\\frac{1}{\\cos(A)}=\\frac{c}{b}}]]]')} /></p>
+  <p>With <span set:html={rich('[[\\cos(A)=4/5=0.8]]')} />, the reciprocal is <span set:html={rich('[[\\sec(A)=1/0.8=1.25]]')} />: the same triangle, described from the opposite direction. This distinction matters because inverse cosine, written <span set:html={rich('[[\\cos^{-1}]]')} />, is a different idea: it recovers an angle from a cosine value, while <span set:html={rich('[[1/\\cos(A)]]')} /> is the reciprocal cosine, a ratio, not an angle.</p>
+
+  <h3>What Does a Secant Value of 1.25 Mean?</h3>
+  <p>A secant of 1.25 means the hypotenuse is 1.25 times as long as the adjacent side. The percentage difference is <span set:html={rich('[[(1.25-1)\\times100=25]]')} />, so the hypotenuse is 25% longer than the adjacent side. This does not mean the angle is <span set:html={rich('[[1.25^\\circ]]')} />, and it does not mean the triangle measures 1.25 units of anything. Secant is a comparison, not a measurement.</p>
+
+  <h3>Why Secant Is Greater Than 1</h3>
+  <p>In a valid, non-degenerate right triangle, the hypotenuse is longer than either leg, so <span set:html={rich('[[c \\gt b \\gt 0]]')} />. Dividing the hypotenuse by the adjacent side therefore produces a ratio greater than 1:</p>
+  <p><span set:html={rich('[[[\\boxed{\\frac{c}{b} \\gt 1}]]]')} /></p>
+  <p>A result of exactly 1 is not possible for an ordinary acute reference angle in a non-degenerate right triangle, because that would require the hypotenuse to equal the adjacent side, flattening the triangle into a line. The value 1 is a limiting value, approached only as the angle shrinks toward <span set:html={rich('[[0^\\circ]]')} />.</p>
+
+  <h3>Why Secant Is the Reciprocal of Cosine</h3>
+  <p>The relationship follows directly from the two formulas. Cosine divides adjacent by hypotenuse, secant divides hypotenuse by adjacent:</p>
+  <p><span set:html={rich('[[\\cos(A)=\\frac{b}{c}]]')} /></p>
+  <p><span set:html={rich('[[\\sec(A)=\\frac{c}{b}]]')} /></p>
+  <p>Multiplying them cancels everything and produces 1:</p>
+  <p><span set:html={rich('[[[\\cos(A)\\sec(A)=\\frac{b}{c}\\times\\frac{c}{b}=1]]]')} /></p>
+  <p>This identity is a practical verification tool: compute cosine from the same sides, take its reciprocal, and it must match the secant result exactly. A mismatch points to a flipped fraction or a mislabeled side.</p>
+
+  <h3>Why Secant Has No Units</h3>
+  <p>Secant divides one length by another, so the units cancel. For example:</p>
+  <p><span set:html={rich('[[[\\frac{5\\,\\text{m}}{4\\,\\text{m}}=1.25]]]')} /></p>
+  <p>The metres vanish, leaving a pure number. The same ratio appears with 500 cm and 400 cm, or with any pair of matching units, which is why mixing units, such as a hypotenuse in metres with an adjacent side in centimetres, breaks the calculation before it starts.</p>
+
+  <h3>Secant Versus Cosecant</h3>
+  <p>Secant and cosecant are both reciprocal ratios that use the hypotenuse in the numerator, but they use different legs in the denominator:</p>
+  <p><span set:html={rich('[[\\sec(A)=\\frac{c}{b}]]')} /></p>
+  <p><span set:html={rich('[[\\csc(A)=\\frac{c}{a}]]')} /></p>
+  <p>Secant pairs the hypotenuse with the adjacent side; cosecant pairs the hypotenuse with the opposite side. They are not interchangeable, and picking the wrong one answers a different question about the triangle.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('secant-reciprocal.svg')} alt="Three stages: 3-4-5 triangle, cosine cos(A)=4/5=0.8, secant sec(A)=5/4=1.25, the reciprocal relationship" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Three stages: label the 3-4-5 triangle, compute cosine cos(A) = 4/5, then flip the fraction to get sec(A) = 5/4.</figcaption>
+  </figure>
+</section>
+
+<!-- SECTION 4: Deriving the formula -->
+<section id="sec-formula" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How the Secant Formula Works</h2>
+  <p>The definition starts in words, then moves to symbols. Secant is the hypotenuse divided by the adjacent side:</p>
+  <p><span set:html={rich('[[[\\sec(A)=\\frac{\\text{Hypotenuse}}{\\text{Adjacent}}]]]')} /></p>
+  <p>In the standard notation this becomes:</p>
+  <p><span set:html={rich('[[[\\boxed{\\sec(A)=\\frac{c}{b}}]]]')} /></p>
+  <p>The hypotenuse belongs in the numerator because secant asks "how long is the sloping side relative to its horizontal footprint?", and the adjacent side belongs in the denominator because it is the reference length being compared against.</p>
+
+  <h3>Fully Worked Example: A 3-4-5 Right Triangle</h3>
+  <p>Given an adjacent side of <span set:html={rich('[[b=4\\,\\text{cm}]]')} />, an opposite side of <span set:html={rich('[[a=3\\,\\text{cm}]]')} />, and a hypotenuse of <span set:html={rich('[[c=5\\,\\text{cm}]]')} />, work through the formula step by step.</p>
+  <p><strong>Step 1: Write the formula.</strong> <span set:html={rich('[[\\sec(A)=c/b]]')} />.</p>
+  <p><strong>Step 2: Substitute the known values.</strong> <span set:html={rich('[[\\sec(A)=5/4]]')} />.</p>
+  <p><strong>Step 3: Divide.</strong> <span set:html={rich('[[\\boxed{\\sec(A)=1.25}]]')} />.</p>
+  <p><strong>Step 4: Interpret the result.</strong> The hypotenuse is 1.25 times the adjacent side, making it 25% longer. A 5 cm ladder spanning a 4 m horizontal distance behaves this way; the geometry does not care about the unit, only the proportion.</p>
+  <p><strong>Step 5: Verify using cosine.</strong> <span set:html={rich('[[\\cos(A)=4/5=0.8]]')} />, and <span set:html={rich('[[1/0.8=1.25]]')} />. The reciprocal check confirms the secant result, because cosine and secant are exact inverses of each other.</p>
+  <p><strong>Step 6: Verify the triangle.</strong> <span set:html={rich('[[3^2+4^2=5^2]]')} />, which is <span set:html={rich('[[9+16=25]]')} />. The side lengths satisfy the Pythagorean theorem, so they form a genuine right triangle and the secant value is trustworthy.</p>
+</section>
+
+<!-- SECTION 5: Calculator walkthrough -->
+<section id="sec-howto" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Use the Secant Ratio Calculator</h2>
+  <p>The calculator above takes two inputs, the hypotenuse <span set:html={rich('[[c]]')} /> and the adjacent side <span set:html={rich('[[b]]')} />, and returns <span set:html={rich('[[\\sec(A)]]')} />. Follow these steps in order.</p>
+  <ol class="mt-4 list-decimal space-y-3 pl-6">
+    <li><strong>Identify the reference angle <span set:html={rich('[[A]]')} />.</strong> Every side label in the ratio is defined relative to this angle, so choose it before touching the side lengths.</li>
+    <li><strong>Locate the hypotenuse <span set:html={rich('[[c]]')} />.</strong> It is opposite the right angle and the longest side of the triangle; in diagrams it is the sloping side.</li>
+    <li><strong>Locate the adjacent side <span set:html={rich('[[b]]')} />.</strong> It touches angle <span set:html={rich('[[A]]')} /> and is not the hypotenuse; it is one of the two perpendicular legs.</li>
+    <li><strong>Obtain or measure both side lengths.</strong> Measure with the same instrument and the same unit, or convert one measurement before continuing.</li>
+    <li><strong>Enter the hypotenuse in the first input field.</strong> This is the numerator of the fraction, so a mistake here shifts the whole answer.</li>
+    <li><strong>Enter the adjacent side in the second input field.</strong> This is the denominator; it must be the side next to angle <span set:html={rich('[[A]]')} />, not the side across from it.</li>
+    <li><strong>Select compatible measurement units using the available unit selectors.</strong> Both fields must use the same unit, or a converted equivalent, or the ratio will be wrong.</li>
+    <li><strong>Confirm that both measurements are positive.</strong> A zero or negative length has no meaning in a triangle and signals a data entry error.</li>
+    <li><strong>Check that the hypotenuse is longer than the adjacent side.</strong> If it is not, either the sides are mislabeled or the numbers cannot form a right triangle.</li>
+    <li><strong>Click Calculate sec(A).</strong> The tool performs the division <span set:html={rich('[[c/b]]')} /> and displays the ratio.</li>
+    <li><strong>Read the resulting secant ratio.</strong> It is a dimensionless decimal, typically with four decimal places, ready to use in further calculations.</li>
+    <li><strong>Confirm that the result is greater than 1.</strong> For a valid, non-degenerate right triangle with an acute reference angle, <span set:html={rich('[[\\sec(A) \\gt 1]]')} />; a value at or below 1 means something went wrong upstream.</li>
+    <li><strong>Use Reset when you want to clear the inputs and begin another calculation.</strong> The fields and result return to their starting state.</li>
+  </ol>
+  <p>The calculator does not need the opposite side or an angle input, because the basic secant ratio is fully determined by two lengths. It also does not recover angles or missing sides; for those, the rearranged formulas later in this guide show the manual path.</p>
+</section>
+
+<!-- SECTION 6: Four foundational examples -->
+<section id="sec-examples" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Step-by-Step Examples of Calculating Secant</h2>
+  <p>These four examples use classic triangles whose secant values are worth memorising, because they reappear constantly in trigonometry.</p>
+
+  <h3>Example 1: A 3-4-5 Right Triangle</h3>
+  <p>Given <span set:html={rich('[[b=4\\,\\text{cm}]]')} />, <span set:html={rich('[[a=3\\,\\text{cm}]]')} />, and <span set:html={rich('[[c=5\\,\\text{cm}]]')} />:</p>
+  <p><span set:html={rich('[[\\sec(A)=\\frac{5}{4}]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\sec(A)=1.25}]]')} /></p>
+  <p>The hypotenuse is 25% longer than the adjacent side. This is the single most common secant example in textbooks, and the 1.25 result is exact.</p>
+
+  <h3>Example 2: A 5-12-13 Right Triangle</h3>
+  <p>Given an adjacent side of <span set:html={rich('[[b=12\\,\\text{m}]]')} />, an opposite side of <span set:html={rich('[[a=5\\,\\text{m}]]')} />, and a hypotenuse of <span set:html={rich('[[c=13\\,\\text{m}]]')} />:</p>
+  <p><span set:html={rich('[[\\sec(A)=\\frac{13}{12}]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\sec(A)\\approx1.0833}]]')} /></p>
+  <p>The hypotenuse is approximately 8.33% longer than the adjacent side. This triangle appears in construction problems because 13 sits close to a shallow roof pitch.</p>
+
+  <h3>Example 3: A 45-45-90 Triangle</h3>
+  <p>Given an adjacent side of <span set:html={rich('[[b=1\\,\\text{cm}]]')} />, an opposite side of <span set:html={rich('[[a=1\\,\\text{cm}]]')} />, and a hypotenuse of <span set:html={rich('[[c=\\sqrt{2}\\,\\text{cm}]]')} />:</p>
+  <p><span set:html={rich('[[\\sec(45^\\circ)=\\frac{\\sqrt{2}}{1}]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\sec(45^\\circ)=\\sqrt{2}\\approx1.4142}]]')} /></p>
+  <p>The hypotenuse is approximately 1.4142 times either leg. At 45 degrees the two legs are equal, so secant equals cosecant here, both <span set:html={rich('[[\\sqrt{2}]]')} />.</p>
+
+  <h3>Example 4: A 30-60-90 Triangle</h3>
+  <p>For reference angle <span set:html={rich('[[A=30^\\circ]]')} />, use an adjacent side of <span set:html={rich('[[b=\\sqrt{3}\\,\\text{cm}]]')} />, an opposite side of <span set:html={rich('[[a=1\\,\\text{cm}]]')} />, and a hypotenuse of <span set:html={rich('[[c=2\\,\\text{cm}]]')} />:</p>
+  <p><span set:html={rich('[[\\sec(30^\\circ)=\\frac{2}{\\sqrt{3}}]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\sec(30^\\circ)\\approx1.1547}]]')} /></p>
+  <p>The hypotenuse is approximately 15.47% longer than the adjacent side. Note that the same 2:1 hypotenuse ratio appears at 60 degrees with the sides swapped, where the secant becomes 2.</p>
+</section>
+
+<!-- SECTION 7: Real-world applications -->
+<section id="sec-applications" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Real-Life Examples of Using the Secant Ratio</h2>
+  <p>Secant earns its keep wherever a sloping length must be compared with its horizontal projection. In each example the right triangle is a simplified geometric model of the real situation, and the stated assumptions keep the simplification honest.</p>
+
+  <h3>Example 5: Calculating a Ladder's Secant Ratio</h3>
+  <p>A ladder is 5 m long, and its base is 4 m from a vertical wall. The angle <span set:html={rich('[[A]]')} /> sits between the ladder and level ground. The hypotenuse is the ladder itself, <span set:html={rich('[[c=5\\,\\text{m}]]')} />, and the adjacent side is the horizontal ground distance, <span set:html={rich('[[b=4\\,\\text{m}]]')} />:</p>
+  <p><span set:html={rich('[[\\sec(A)=\\frac{5}{4}]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\sec(A)=1.25}]]')} /></p>
+  <p>The ladder is 25% longer than its horizontal ground projection. This ratio does not establish whether the ladder is safely positioned; ladder safety depends on the working angle and footing, not on secant alone.</p>
+
+  <h3>Example 6: Calculating a Roof Rafter's Secant Ratio</h3>
+  <p>A roof rafter has a sloping length of 6.5 m and a horizontal run of 6 m. The rafter is the hypotenuse, <span set:html={rich('[[c=6.5\\,\\text{m}]]')} />, and the horizontal run is the adjacent side, <span set:html={rich('[[b=6\\,\\text{m}]]')} />:</p>
+  <p><span set:html={rich('[[\\sec(A)=\\frac{6.5}{6}]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\sec(A)\\approx1.0833}]]')} /></p>
+  <p>The rafter is approximately 8.33% longer than its horizontal run. Roofers use this relationship in reverse all the time: measure the run on the plan, multiply by secant, order the rafter stock. The ratio is not a complete roof-design or structural assessment.</p>
+
+  <h3>Example 7: Evaluating a Ramp's Secant Ratio</h3>
+  <p>A simplified ramp has a sloping length of 9.5 m and a horizontal run of 9 m. The sloping surface is the hypotenuse, <span set:html={rich('[[c=9.5\\,\\text{m}]]')} />, and the horizontal run is the adjacent side, <span set:html={rich('[[b=9\\,\\text{m}]]')} />:</p>
+  <p><span set:html={rich('[[\\sec(A)=\\frac{9.5}{9}]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\sec(A)\\approx1.0556}]]')} /></p>
+  <p>The ramp's sloping length is approximately 5.56% longer than its horizontal projection. The shallow secant reflects a gentle slope, but the ratio alone does not establish accessibility or building-code compliance.</p>
+
+  <h3>Example 8: A Surveying Measurement</h3>
+  <p>A simplified surveying triangle has a straight-line distance of 50 m and a horizontal separation of 40 m. The straight-line distance is the hypotenuse, <span set:html={rich('[[c=50\\,\\text{m}]]')} />, and the horizontal separation is the adjacent side, <span set:html={rich('[[b=40\\,\\text{m}]]')} />:</p>
+  <p><span set:html={rich('[[\\sec(A)=\\frac{50}{40}]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\sec(A)=1.25}]]')} /></p>
+  <p>The straight-line distance is 25% longer than the horizontal separation. Surveyors apply this kind of horizontal reduction routinely; actual fieldwork may require additional corrections and measurement procedures beyond the simple model.</p>
+
+  <h3>Example 9: A Guy Wire Supporting a Pole</h3>
+  <p>A guy wire is 13 m long, and its ground anchor is 12 m horizontally from the pole. The wire is the hypotenuse, <span set:html={rich('[[c=13\\,\\text{m}]]')} />, and the horizontal distance from the pole to the anchor is the adjacent side, <span set:html={rich('[[b=12\\,\\text{m}]]')} />:</p>
+  <p><span set:html={rich('[[\\sec(A)=\\frac{13}{12}]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\sec(A)\\approx1.0833}]]')} /></p>
+  <p>The wire is approximately 8.33% longer than its horizontal projection. This tells you how much cable to cut, not how much load it carries; wire tension, anchor strength, and structural safety need separate analysis.</p>
+
+  <h3>Example 10: Calculating a Staircase Stringer's Secant Ratio</h3>
+  <p>A simplified staircase stringer is 5 m long and spans a horizontal run of 4 m. The stringer is the hypotenuse, <span set:html={rich('[[c=5\\,\\text{m}]]')} />, and the horizontal run is the adjacent side, <span set:html={rich('[[b=4\\,\\text{m}]]')} />:</p>
+  <p><span set:html={rich('[[\\sec(A)=\\frac{5}{4}]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\sec(A)=1.25}]]')} /></p>
+  <p>The diagonal stringer is 25% longer than the horizontal span. Carpenters use the reverse calculation to cut stringers from the plan dimensions. The ratio does not verify staircase dimensions or building-code compliance.</p>
+
+  <h3>Example 11: Understanding a Crane Boom's Horizontal Projection</h3>
+  <p>A simplified crane boom has a length of 10 m and a horizontal projection of 6 m. The boom is the hypotenuse, <span set:html={rich('[[c=10\\,\\text{m}]]')} />, and the horizontal projection is the adjacent side, <span set:html={rich('[[b=6\\,\\text{m}]]')} />:</p>
+  <p><span set:html={rich('[[\\sec(A)=\\frac{10}{6}]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\sec(A)\\approx1.6667}]]')} /></p>
+  <p>The boom is approximately 66.67% longer than its horizontal projection. The steep secant reflects a high working angle. The ratio does not establish crane capacity or operating safety.</p>
+
+  <h3>Example 12: A Straight Aircraft Flight Segment</h3>
+  <p>For a simplified straight flight segment, the path length is 5 km and the horizontal displacement is 4 km. The flight path is the hypotenuse, <span set:html={rich('[[c=5\\,\\text{km}]]')} />, and the horizontal displacement is the adjacent side, <span set:html={rich('[[b=4\\,\\text{km}]]')} />:</p>
+  <p><span set:html={rich('[[\\sec(A)=\\frac{5}{4}]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\sec(A)=1.25}]]')} /></p>
+  <p>The path length is 25% longer than the horizontal displacement. This is an idealised geometric example, not a complete flight-navigation calculation; real flight planning adds wind, altitude changes, and airspace routing.</p>
+
+  <h3>Example 13: A Diagonal Mechanical Brace</h3>
+  <p>A diagonal brace has a length of 2 m and a horizontal projection of 1.2 m. The brace is the hypotenuse, <span set:html={rich('[[c=2\\,\\text{m}]]')} />, and the horizontal projection is the adjacent side, <span set:html={rich('[[b=1.2\\,\\text{m}]]')} />:</p>
+  <p><span set:html={rich('[[\\sec(A)=\\frac{2}{1.2}]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\sec(A)\\approx1.6667}]]')} /></p>
+  <p>The brace is approximately 66.67% longer than its horizontal projection. The ratio describes the geometry of the installation; it does not determine the brace's strength or suitability.</p>
+
+  <h3>Example 14: Calculating a Hiking Route's Secant Ratio</h3>
+  <p>A simplified straight hiking section has a path length of 100 m and a horizontal displacement of 80 m. The path is the hypotenuse, <span set:html={rich('[[c=100\\,\\text{m}]]')} />, and the horizontal displacement is the adjacent side, <span set:html={rich('[[b=80\\,\\text{m}]]')} />:</p>
+  <p><span set:html={rich('[[\\sec(A)=\\frac{100}{80}]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\sec(A)=1.25}]]')} /></p>
+  <p>The straight path is 25% longer than its horizontal displacement. Actual hiking trails contain curves and changing gradients, so treat this as a single straight segment, not the whole route.</p>
+
+  <h3>Example 15: An Awning Support</h3>
+  <p>An awning support has a length of 3 m and a horizontal projection of 2.4 m. The support is the hypotenuse, <span set:html={rich('[[c=3\\,\\text{m}]]')} />, and the horizontal projection is the adjacent side, <span set:html={rich('[[b=2.4\\,\\text{m}]]')} />:</p>
+  <p><span set:html={rich('[[\\sec(A)=\\frac{3}{2.4}]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\sec(A)=1.25}]]')} /></p>
+  <p>The support is 25% longer than its horizontal projection. The calculation does not establish structural suitability; fastening strength and wind loading need their own checks.</p>
+
+  <h3>Example 16: A Cable Between Two Points</h3>
+  <p>A straight cable spans a total length of 25 m between two points with a horizontal separation of 24 m. The cable is the hypotenuse, <span set:html={rich('[[c=25\\,\\text{m}]]')} />, and the horizontal separation is the adjacent side, <span set:html={rich('[[b=24\\,\\text{m}]]')} />:</p>
+  <p><span set:html={rich('[[\\sec(A)=\\frac{25}{24}]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\sec(A)\\approx1.0417}]]')} /></p>
+  <p>The cable is approximately 4.17% longer than the horizontal separation. The simplified model assumes a straight cable and a right-triangle relationship; a real cable sags, which adds length beyond the secant model.</p>
+
+  <p>Secant is a mathematical ratio rather than a physical quantity with units. Its practical value comes from comparing a sloping length with its horizontal projection, recovering lengths when the angle is known, verifying triangle geometry, and using formulas that specifically require secant. It never certifies structural safety, load capacity, accessibility, or engineering compliance on its own.</p>
+
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full min-w-[640px] border-collapse text-left text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30">
+          <th class="py-3 pr-4 font-semibold text-on-surface">Situation</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">c</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">b</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Formula</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Ratio</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Longer by</th>
+          <th class="py-3 font-semibold text-on-surface">Meaning</th>
+        </tr>
+      </thead>
+      <tbody class="text-on-surface-variant">
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Ladder</td><td class="py-2.5 pr-4">5 m</td><td class="py-2.5 pr-4">4 m</td><td class="py-2.5 pr-4">5/4</td><td class="py-2.5 pr-4">1.25</td><td class="py-2.5 pr-4">25%</td><td class="py-2.5">Ladder a quarter longer than its ground distance</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Roof rafter</td><td class="py-2.5 pr-4">6.5 m</td><td class="py-2.5 pr-4">6 m</td><td class="py-2.5 pr-4">6.5/6</td><td class="py-2.5 pr-4">1.0833</td><td class="py-2.5 pr-4">8.33%</td><td class="py-2.5">Rafter slightly longer than the horizontal run</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Ramp</td><td class="py-2.5 pr-4">9.5 m</td><td class="py-2.5 pr-4">9 m</td><td class="py-2.5 pr-4">9.5/9</td><td class="py-2.5 pr-4">1.0556</td><td class="py-2.5 pr-4">5.56%</td><td class="py-2.5">Gentle slope barely longer than the run</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Surveying</td><td class="py-2.5 pr-4">50 m</td><td class="py-2.5 pr-4">40 m</td><td class="py-2.5 pr-4">50/40</td><td class="py-2.5 pr-4">1.25</td><td class="py-2.5 pr-4">25%</td><td class="py-2.5">Straight-line distance exceeds the horizontal one</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Guy wire</td><td class="py-2.5 pr-4">13 m</td><td class="py-2.5 pr-4">12 m</td><td class="py-2.5 pr-4">13/12</td><td class="py-2.5 pr-4">1.0833</td><td class="py-2.5 pr-4">8.33%</td><td class="py-2.5">Wire length for cutting from ground distance</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Stair stringer</td><td class="py-2.5 pr-4">5 m</td><td class="py-2.5 pr-4">4 m</td><td class="py-2.5 pr-4">5/4</td><td class="py-2.5 pr-4">1.25</td><td class="py-2.5 pr-4">25%</td><td class="py-2.5">Diagonal stringer versus horizontal span</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Crane boom</td><td class="py-2.5 pr-4">10 m</td><td class="py-2.5 pr-4">6 m</td><td class="py-2.5 pr-4">10/6</td><td class="py-2.5 pr-4">1.6667</td><td class="py-2.5 pr-4">66.67%</td><td class="py-2.5">Steep boom far longer than its projection</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Flight segment</td><td class="py-2.5 pr-4">5 km</td><td class="py-2.5 pr-4">4 km</td><td class="py-2.5 pr-4">5/4</td><td class="py-2.5 pr-4">1.25</td><td class="py-2.5 pr-4">25%</td><td class="py-2.5">Idealised path versus horizontal displacement</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Diagonal brace</td><td class="py-2.5 pr-4">2 m</td><td class="py-2.5 pr-4">1.2 m</td><td class="py-2.5 pr-4">2/1.2</td><td class="py-2.5 pr-4">1.6667</td><td class="py-2.5 pr-4">66.67%</td><td class="py-2.5">Brace length against its horizontal projection</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Hiking route</td><td class="py-2.5 pr-4">100 m</td><td class="py-2.5 pr-4">80 m</td><td class="py-2.5 pr-4">100/80</td><td class="py-2.5 pr-4">1.25</td><td class="py-2.5 pr-4">25%</td><td class="py-2.5">Straight segment versus horizontal map distance</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Awning support</td><td class="py-2.5 pr-4">3 m</td><td class="py-2.5 pr-4">2.4 m</td><td class="py-2.5 pr-4">3/2.4</td><td class="py-2.5 pr-4">1.25</td><td class="py-2.5 pr-4">25%</td><td class="py-2.5">Support length versus horizontal reach</td></tr>
+        <tr><td class="py-2.5 pr-4">Cable span</td><td class="py-2.5 pr-4">25 m</td><td class="py-2.5 pr-4">24 m</td><td class="py-2.5 pr-4">25/24</td><td class="py-2.5 pr-4">1.0417</td><td class="py-2.5 pr-4">4.17%</td><td class="py-2.5">Nearly horizontal cable, barely any extra length</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('secant-applications.svg')} alt="Four panels: ladder ratio 1.25, ramp 1.0556, surveying 1.25, crane boom 1.6667, each with a labeled right triangle" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Four practical calculations: ladder, ramp, surveying, and crane boom, each with its triangle, formula, and ratio.</figcaption>
+  </figure>
+</section>
+
+<!-- SECTION 8: Angle relationship -->
+<section id="sec-angle" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding the Relationship Between Secant and Angle Size</h2>
+  <p>Secant grows as the reference angle grows. The geometry explains why: when angle <span set:html={rich('[[A]]')} /> is small, the adjacent side is nearly as long as the hypotenuse, so the ratio sits just above 1. As the angle widens, the adjacent side becomes a smaller share of the hypotenuse, and the ratio climbs. At <span set:html={rich('[[45^\\circ]]')} /> the secant is <span set:html={rich('[[\\sqrt{2}]]')} />, about 1.4142; at <span set:html={rich('[[60^\\circ]]')} /> it is exactly 2, because the hypotenuse is twice the adjacent side; and as the angle approaches <span set:html={rich('[[90^\\circ]]')} />, the adjacent side shrinks toward zero and secant grows without bound.</p>
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full min-w-[480px] border-collapse text-left text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30">
+          <th class="py-3 pr-4 font-semibold text-on-surface">Angle <span set:html={rich('[[A]]')} /></th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Adjacent side <span set:html={rich('[[b]]')} /></th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Hypotenuse <span set:html={rich('[[c]]')} /></th>
+          <th class="py-3 font-semibold text-on-surface">Secant ratio</th>
+        </tr>
+      </thead>
+      <tbody class="text-on-surface-variant">
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4"><span set:html={rich('[[30^\\circ]]')} /></td><td class="py-2.5 pr-4"><span set:html={rich('[[\\sqrt{3}]]')} /></td><td class="py-2.5 pr-4">2</td><td class="py-2.5">Approximately 1.1547</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4"><span set:html={rich('[[45^\\circ]]')} /></td><td class="py-2.5 pr-4">1</td><td class="py-2.5 pr-4"><span set:html={rich('[[\\sqrt{2}]]')} /></td><td class="py-2.5">Approximately 1.4142</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4"><span set:html={rich('[[60^\\circ]]')} /></td><td class="py-2.5 pr-4">1</td><td class="py-2.5 pr-4">2</td><td class="py-2.5">2</td></tr>
+        <tr><td class="py-2.5 pr-4"><span set:html={rich('[[75^\\circ]]')} /></td><td class="py-2.5 pr-4">1</td><td class="py-2.5 pr-4">Approximately 3.8637</td><td class="py-2.5">Approximately 3.8637</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The pattern is monotonic: every increase in the angle raises the secant, and the ratio stays above 1 for every acute angle. The measurements in the table are illustrative; the ratio, not the absolute size of the triangle, determines the angle. Secant therefore describes the triangle's shape, not its scale.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('secant-angle-change.svg')} alt="Three triangles at 30, 45, 60 degrees with secant values 1.1547, 1.4142, 2; secant rises as the angle grows" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">As angle A grows, the adjacent side becomes a smaller share of the hypotenuse, so sec(A) rises.</figcaption>
+  </figure>
+</section>
+
+<!-- SECTION 9: Finding the hypotenuse -->
+<section id="sec-hypotenuse" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Find the Hypotenuse Using Secant</h2>
+  <p>The secant formula can be rearranged to find the hypotenuse when the adjacent side and the angle are known. Start with <span set:html={rich('[[\\sec(A)=c/b]]')} /> and multiply both sides by <span set:html={rich('[[b]]')} />:</p>
+  <p><span set:html={rich('[[[\\boxed{c=b\\sec(A)}]]]')} /></p>
+  <p>The hypotenuse equals the adjacent side multiplied by the secant of the angle. Given an adjacent side of <span set:html={rich('[[b=4\\,\\text{m}]]')} /> and an angle of <span set:html={rich('[[A=60^\\circ]]')} />, and knowing <span set:html={rich('[[\\sec(60^\\circ)=2]]')} />:</p>
+  <p><span set:html={rich('[[c=4\\times2]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{c=8\\,\\text{m}}]]')} /></p>
+  <p>The hypotenuse is twice the adjacent side at this angle, which matches the 30-60-90 geometry: the side opposite 30 degrees is half the hypotenuse. The adjacent side can be found the same way by rearranging again:</p>
+  <p><span set:html={rich('[[[\\boxed{b=\\frac{c}{\\sec(A)}}]]]')} /></p>
+  <p>With a hypotenuse of <span set:html={rich('[[c=10\\,\\text{m}]]')} /> and <span set:html={rich('[[A=60^\\circ]]')} />: <span set:html={rich('[[b=10/2]]')} />, so <span set:html={rich('[[\\boxed{b=5\\,\\text{m}}]]')} />. These are mathematical rearrangements of the same formula. The calculator on this page returns the secant ratio from side lengths; it does not directly calculate missing sides.</p>
+</section>
+
+<!-- SECTION 10: Finding an angle -->
+<section id="sec-recover" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Find an Angle From a Secant Ratio</h2>
+  <p>The secant ratio and the angle are different quantities: one is a dimensionless comparison of sides, the other is measured in degrees. If the secant ratio is known, recover cosine with the reciprocal:</p>
+  <p><span set:html={rich('[[\\cos(A)=\\frac{1}{\\sec(A)}]]')} /></p>
+  <p>Then inverse cosine returns the angle:</p>
+  <p><span set:html={rich('[[[\\boxed{A=\\cos^{-1}\\left(\\frac{1}{\\sec(A)}\\right)}]]]')} /></p>
+  <p>Given <span set:html={rich('[[\\sec(A)=1.25]]')} />, first calculate cosine: <span set:html={rich('[[\\cos(A)=1/1.25=0.8]]')} />. Then <span set:html={rich('[[A=\\cos^{-1}(0.8)]]')} />, giving <span set:html={rich('[[\\boxed{A\\approx36.87^\\circ}]]')} />. This is a separate angle calculation, not something the secant ratio calculator performs directly. Set the scientific calculator to degrees if the answer is expected in degrees; in radians mode the same input returns about 0.6435, the same angle in different units.</p>
+</section>
+
+<!-- SECTION 11: Common mistakes -->
+<section id="sec-mistakes" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Common Mistakes When Calculating Secant</h2>
+  <p>Most secant errors come from a flipped fraction, a mislabeled side, or a unit slip. Run through this list before trusting a result.</p>
+  <ol class="mt-4 list-decimal space-y-3 pl-6">
+    <li><strong>Reversing the formula and calculating <span set:html={rich('[[b/c]]')} /> instead of <span set:html={rich('[[c/b]]')} />.</strong> This is the single most common error, and it returns cosine instead of secant. With <span set:html={rich('[[c=5]]')} /> and <span set:html={rich('[[b=4]]')} />, the wrong order gives 0.8; the correct order gives 1.25.</li>
+    <li><strong>Confusing secant with cosine.</strong> Cosine is adjacent divided by hypotenuse; secant is the exact reverse. If the answer comes out below 1, it is almost certainly cosine, not secant.</li>
+    <li><strong>Confusing secant with cosecant.</strong> Both use the hypotenuse in the numerator, so they look similar. Secant divides by the adjacent side <span set:html={rich('[[b]]')} />; cosecant divides by the opposite side <span set:html={rich('[[a]]')} />. Check which leg the problem actually gives.</li>
+    <li><strong>Using the opposite side instead of the adjacent side.</strong> Dividing <span set:html={rich('[[c/a]]')} /> computes cosecant. With <span set:html={rich('[[c=5]]')} /> and <span set:html={rich('[[a=3]]')} />, that gives 1.6667, a correct cosecant but a wrong secant.</li>
+    <li><strong>Using a side that is not the hypotenuse in the numerator.</strong> Secant always has the hypotenuse on top. A leg over a leg is tangent or cotangent; a leg over the hypotenuse is sine or cosine.</li>
+    <li><strong>Mixing up adjacent and opposite sides.</strong> The labels swap when the reference angle changes from <span set:html={rich('[[A]]')} /> to <span set:html={rich('[[B]]')} />. Always confirm which angle the problem names before assigning <span set:html={rich('[[b]]')} />.</li>
+    <li><strong>Assuming secant is an angle measured in degrees.</strong> A result of 1.25 is a ratio, not <span set:html={rich('[[1.25^\\circ]]')} />. Treating it as degrees feeds nonsense into any follow-up calculation.</li>
+    <li><strong>Reporting the ratio with metres or centimetres.</strong> The units cancel in the division, so "1.25 m" is wrong. Write the plain number and keep the units in the input measurements where they belong.</li>
+    <li><strong>Entering zero or negative side lengths.</strong> A triangle cannot have a zero or negative side, so these inputs signal a data entry error or a missing measurement, not a valid edge case.</li>
+    <li><strong>Entering an adjacent side longer than the hypotenuse.</strong> The hypotenuse is always the longest side. If <span set:html={rich('[[b \\gt c]]')} />, the inputs are swapped or the triangle is impossible.</li>
+    <li><strong>Mixing measurement units.</strong> A hypotenuse of 5 m with an adjacent side of 40 cm gives 0.125, a meaningless number. Convert to a single unit first: 5 m and 4 m give the correct 1.25.</li>
+    <li><strong>Rounding too early.</strong> Rounding an intermediate division to two decimals and then continuing the calculation compounds the error. Keep full precision through every step and round only the final answer.</li>
+    <li><strong>Assuming secant must equal 1 for a right triangle.</strong> No right triangle has a secant of exactly 1. Expect a value above 1, and treat exactly 1 as a signal that the inputs were reversed or the triangle is degenerate.</li>
+    <li><strong>Confusing reciprocal cosine with inverse cosine.</strong> <span set:html={rich('[[1/\\cos(A)]]')} /> is secant, a ratio; <span set:html={rich('[[\\cos^{-1}]]')} /> is inverse cosine, which returns an angle. The similar names cause real errors, so read the notation carefully.</li>
+    <li><strong>Assuming secant alone determines the triangle's absolute dimensions.</strong> Secant describes shape, not size: infinitely many triangles share a secant of 1.25, from a 5 cm hypotenuse to a 5 km one. The ratio fixes the proportions; actual lengths need at least one side measurement.</li>
+  </ol>
+
+  <h3>Wrong Versus Correct: A Worked Comparison</h3>
+  <p>Given a hypotenuse of <span set:html={rich('[[c=5]]')} /> and an adjacent side of <span set:html={rich('[[b=4]]')} />:</p>
+  <p><strong>Incorrect:</strong> <span set:html={rich('[[4/5=0.8]]')} />. This is cosine, not secant. The numerator and denominator are reversed.</p>
+  <p><strong>Correct:</strong> <span set:html={rich('[[\\sec(A)=5/4=1.25]]')} />.</p>
+  <p><strong>Verify:</strong> <span set:html={rich('[[\\cos(A)=0.8]]')} />, and <span set:html={rich('[[1/0.8=1.25]]')} />. The reciprocal check confirms the result, and the answer sits above 1, as every valid secant must.</p>
+</section>
+
+<!-- SECTION 12: Verification -->
+<section id="sec-verify" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Check Whether Your Secant Result Is Valid</h2>
+  <p>A valid, non-degenerate right triangle requires positive sides with the hypotenuse strictly longest, <span set:html={rich('[[0 \\lt b \\lt c]]')} />, so the secant result must be greater than 1:</p>
+  <p><span set:html={rich('[[[\\boxed{\\sec(A)=\\frac{c}{b} \\gt 1}]]]')} /></p>
+  <p>Both measurements must use compatible units. A result at or below 1 usually indicates reversed inputs, incorrect side identification, incompatible measurements, or invalid triangle dimensions.</p>
+  <h3>Method 1: Check the Reciprocal of Cosine</h3>
+  <p>Verify <span set:html={rich('[[\\cos(A)=b/c]]')} />, then confirm <span set:html={rich('[[\\sec(A)=1/\\cos(A)]]')} />. With <span set:html={rich('[[b=4]]')} /> and <span set:html={rich('[[c=5]]')} />: <span set:html={rich('[[\\cos(A)=4/5=0.8]]')} />, so <span set:html={rich('[[\\sec(A)=1/0.8=1.25]]')} />. A mismatch between the two paths signals a reversed fraction or a mislabeled side.</p>
+  <h3>Method 2: Check the Pythagorean Theorem</h3>
+  <p>If the opposite side is known or needed, calculate <span set:html={rich('[[a=\\sqrt{c^2-b^2}]]')} />. For <span set:html={rich('[[b=4]]')} /> and <span set:html={rich('[[c=5]]')} />: <span set:html={rich('[[a=\\sqrt{25-16}=3]]')} />, and <span set:html={rich('[[3^2+4^2=5^2]]')} />. This confirms the dimensions of the 3-4-5 right triangle. The opposite side is a verification value here, not part of the primary secant formula.</p>
+  <h3>Method 3: Check Using Inverse Cosine</h3>
+  <p>For a secant ratio of 1.25: <span set:html={rich('[[A=\\cos^{-1}(1/1.25)]]')} />, which is <span set:html={rich('[[A=\\cos^{-1}(0.8)\\approx36.87^\\circ]]')} />. Because the secant sits modestly above 1, the angle should land well below <span set:html={rich('[[45^\\circ]]')} />; if it does not, the side labels are probably swapped. Small differences may arise from rounding.</p>
+</section>
+
+<!-- SECTION 13: Choosing a ratio -->
+<section id="sec-vs" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Secant vs. Cosine, Sine, and Cosecant</h2>
+  <p>Each ratio compares a different pair of sides, using the same reference angle and side labels:</p>
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full min-w-[480px] border-collapse text-left text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30">
+          <th class="py-3 pr-4 font-semibold text-on-surface">Ratio</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Formula</th>
+          <th class="py-3 font-semibold text-on-surface">What it compares</th>
+        </tr>
+      </thead>
+      <tbody class="text-on-surface-variant">
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Sine</td><td class="py-2.5 pr-4">sin(A) = a/c</td><td class="py-2.5">Opposite side to hypotenuse</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Cosine</td><td class="py-2.5 pr-4">cos(A) = b/c</td><td class="py-2.5">Adjacent side to hypotenuse</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Tangent</td><td class="py-2.5 pr-4">tan(A) = a/b</td><td class="py-2.5">Opposite side to adjacent side</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Secant</td><td class="py-2.5 pr-4">sec(A) = c/b</td><td class="py-2.5">Hypotenuse to adjacent side</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Cosecant</td><td class="py-2.5 pr-4">csc(A) = c/a</td><td class="py-2.5">Hypotenuse to opposite side</td></tr>
+        <tr><td class="py-2.5 pr-4">Cotangent</td><td class="py-2.5 pr-4">cot(A) = b/a</td><td class="py-2.5">Adjacent side to opposite side</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Secant and cosine are the reciprocal pair: <span set:html={rich('[[\\sec(A)=1/\\cos(A)]]')} />. If <span set:html={rich('[[\\cos(A)=0.8]]')} />, then <span set:html={rich('[[\\sec(A)=1.25]]')} />. Reach for secant when a formula calls for hypotenuse divided by adjacent, when you are comparing a sloping length with its horizontal projection, or when the known relationship starts from the longest side; reach for cosine for adjacent over hypotenuse, sine for the opposite side against the hypotenuse, and cosecant when the hypotenuse is compared with the opposite side.</p>
+  <p>For the neighbouring ratios, see the <a href="/sine-ratio-calculator/" class="text-primary hover:underline">Sine Ratio Calculator</a>, the <a href="/cosine-ratio-calculator/" class="text-primary hover:underline">Cosine Ratio Calculator</a>, the <a href="/tangent-ratio-calculator/" class="text-primary hover:underline">Tangent Ratio Calculator</a>, the <a href="/cosecant-ratio-calculator/" class="text-primary hover:underline">Cosecant Ratio Calculator</a>, and the <a href="/cotangent-ratio-calculator/" class="text-primary hover:underline">Cotangent Ratio Calculator</a>.</p>
+</section>
+
+<!-- SECTION 14: FAQs -->
+<section id="sec-faq" class="mx-auto mt-12 w-full max-w-4xl section-shell scroll-mt-24">
+  <Faq heading="Frequently Asked Questions" items={faqs} />
+</section>
+
+<!-- SECTION 15: Related calculators -->
+<section id="sec-related" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Explore Related Trigonometric Calculators</h2>
+  <ul class="mt-5">
+    <li class="border-b border-primary/10">
+      <a href="/sine-ratio-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">01</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Sine Ratio Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/cosine-ratio-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">02</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Cosine Ratio Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/tangent-ratio-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">03</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Tangent Ratio Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/cosecant-ratio-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">04</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Cosecant Ratio Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/cotangent-ratio-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">05</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Cotangent Ratio Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-angle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">06</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Angle Calculator</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- Conclusion -->
+<section id="sec-conclusion" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Use the Secant Ratio With Confidence</h2>
+  <p>Secant is the flipped form of cosine: divide the hypotenuse by the adjacent side and you have described how much longer the sloping length is than its horizontal footprint. The formula <span set:html={rich('[[\\sec(A)=c/b]]')} /> needs only two measurements, the answer is always a dimensionless number greater than 1, and it grows as the reference angle grows. When a missing side is needed, <span set:html={rich('[[c=b\\sec(A)]]')} /> recovers the hypotenuse; when the angle is needed, <span set:html={rich('[[A=\\cos^{-1}(1/\\sec(A))]]')} /> recovers it. Ladder, rafter, ramp, or textbook 3-4-5, the method never changes: identify the hypotenuse, identify the adjacent side, divide, and verify with the reciprocal of cosine.</p>
+</section>

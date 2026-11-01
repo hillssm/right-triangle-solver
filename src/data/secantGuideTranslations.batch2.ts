@@ -5605,10 +5605,10 @@ export const SECANT_TRANSLATIONS_BATCH2 = {
           "<strong>Wybierz zgodne jednostki miary za pomocą dostępnych selektorów jednostek.</strong> Oba pola muszą używać tej samej jednostki albo jej przeliczonego odpowiednika, w przeciwnym razie stosunek będzie błędny.",
           "<strong>Upewnij się, że oba pomiary są dodatnie.</strong> Zerowa lub ujemna długość nie ma sensu w trójkącie i sygnalizuje błąd wprowadzania danych.",
           "<strong>Sprawdź, czy przeciwprostokątna jest dłuższa od przyprostokątnej przyległej.</strong> Jeśli nie jest, boki są błędnie oznaczone albo liczby nie mogą tworzyć trójkąta prostokątnego.",
-          "<strong>Kliknij przycisk obliczania sec(A).</strong> Narzędzie wykonuje dzielenie [[c/b]] i wyświetla stosunek.",
+          "<strong>Kliknij przycisk Calculate sec(A).</strong> Narzędzie wykonuje dzielenie [[c/b]] i wyświetla stosunek.",
           "<strong>Odczytaj wynikowy stosunek secansa.</strong> Jest to bezwymiarowy ułamek dziesiętny, zwykle z czterema miejscami po przecinku, gotowy do użycia w dalszych obliczeniach.",
           "<strong>Potwierdź, że wynik jest większy od 1.</strong> Dla poprawnego, niezdegenerowanego trójkąta prostokątnego o ostrym kącie odniesienia [[\\sec(A) \\gt 1]]; wartość równa lub mniejsza od 1 oznacza, że coś poszło nie tak wcześniej.",
-          "<strong>Użyj przycisku resetowania, aby wyczyścić dane wejściowe i rozpocząć kolejne obliczenie.</strong> Pola i wynik wracają do stanu początkowego."
+          "<strong>Użyj przycisku Reset, aby wyczyścić dane wejściowe i rozpocząć kolejne obliczenie.</strong> Pola i wynik wracają do stanu początkowego."
         ],
         "closingParagraphs": [
           "Kalkulator nie potrzebuje przyprostokątnej przeciwległej ani kąta wejściowego, ponieważ podstawowy stosunek secansa jest w pełni wyznaczony przez dwie długości. Nie odtwarza też kątów ani brakujących boków; w tym celu przekształcone wzory w dalszej części przewodnika pokazują drogę ręczną."
@@ -6380,7 +6380,7 @@ export const SECANT_TRANSLATIONS_BATCH2 = {
       },
       {
         "question": "Jak obliczyć secans na podstawie długości boków?",
-        "answer": "Zmierz przeciwprostokątną c i bok przyległy b w tej samej jednostce, potwierdź, że obie są dodatnie i że c jest dłuższe od b, a następnie podziel: sec(A) = c / b. Na tej stronie wprowadź przeciwprostokątną w pierwszym polu, a bok przyległy w drugim, wybierz zgodne jednostki i kliknij przycisk obliczania sec(A)."
+        "answer": "Zmierz przeciwprostokątną c i bok przyległy b w tej samej jednostce, potwierdź, że obie są dodatnie i że c jest dłuższe od b, a następnie podziel: sec(A) = c / b. Na tej stronie wprowadź przeciwprostokątną w pierwszym polu, a bok przyległy w drugim, wybierz zgodne jednostki i kliknij przycisk Calculate sec(A)."
       },
       {
         "question": "Jak wyznaczyć przeciwprostokątną za pomocą secansa?",

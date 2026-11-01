@@ -3664,10 +3664,10 @@ export const SECANT_TRANSLATIONS_BATCH3 = {
                 "<strong>Mevcut birim seçicilerle uyumlu ölçü birimleri seçin.</strong> Her iki alan da aynı birimi ya da çevrilmiş eşdeğerini kullanmalı; yoksa oran yanlış olur.",
                 "<strong>Her iki ölçümün de pozitif olduğunu doğrulayın.</strong> Sıfır ya da negatif uzunluğun üçgende anlamı yoktur ve veri giriş hatasına işaret eder.",
                 "<strong>Hipotenüsün komşu kenardan uzun olduğunu kontrol edin.</strong> Değilse kenarlar yanlış etiketlenmiştir ya da sayılar bir dik üçgen oluşturamaz.",
-                "<strong>Hesapla sec(A) düğmesine tıklayın.</strong> Araç [[c/b]] bölmesini yapar ve oranı gösterir.",
+                "<strong>Calculate sec(A) düğmesine tıklayın.</strong> Araç [[c/b]] bölmesini yapar ve oranı gösterir.",
                 "<strong>Ortaya çıkan sekant oranını okuyun.</strong> Birimsiz bir ondalık sayıdır, genellikle dört ondalık basamakla, sonraki hesaplamalarda kullanıma hazırdır.",
                 "<strong>Sonucun 1'den büyük olduğunu doğrulayın.</strong> Dar referans açılı, geçerli ve yozlaşmamış bir dik üçgen için [[\\sec(A) \\gt 1]] olur; 1'e eşit ya da daha küçük bir değer, yukarıda bir şeylerin ters gittiği anlamına gelir.",
-                "<strong>Girdileri temizleyip yeni bir hesaba başlamak istediğinizde Sıfırla'yı kullanın.</strong> Alanlar ve sonuç başlangıç durumuna döner."
+                "<strong>Girdileri temizleyip yeni bir hesaba başlamak istediğinizde Reset'i kullanın.</strong> Alanlar ve sonuç başlangıç durumuna döner."
             ],
             "closingParagraphs": [
                 "Hesaplayıcı karşı kenara ya da açı girdisine ihtiyaç duymaz, çünkü temel sekant oranı iki uzunlukla tamamen belirlenir. Açıları ya da eksik kenarları da geri kazandırmaz; onlar için bu kılavuzun ilerleyen bölümlerindeki düzenlenmiş formüller el yolunu gösterir."
@@ -4490,7 +4490,7 @@ export const SECANT_TRANSLATIONS_BATCH3 = {
         },
         {
             "question": "Sekant kenar uzunluklarından nasıl hesaplanır?",
-            "answer": "Hipotenüs c'yi ve komşu kenar b'yi aynı birimde ölçün, ikisinin de pozitif olduğunu ve c'nin b'den uzun olduğunu doğrulayın, sonra bölün: sec(A) = c / b. Bu sayfada hipotenüsü ilk alana, komşu kenarı ikinci alana girin, uyumlu birimler seçin ve Hesapla sec(A) düğmesine tıklayın."
+            "answer": "Hipotenüs c'yi ve komşu kenar b'yi aynı birimde ölçün, ikisinin de pozitif olduğunu ve c'nin b'den uzun olduğunu doğrulayın, sonra bölün: sec(A) = c / b. Bu sayfada hipotenüsü ilk alana, komşu kenarı ikinci alana girin, uyumlu birimler seçin ve Calculate sec(A) düğmesine tıklayın."
         },
         {
             "question": "Sekant kullanarak hipotenüs nasıl bulunur?",
@@ -4782,10 +4782,10 @@ export const SECANT_TRANSLATIONS_BATCH3 = {
                 "<strong>Välj kompatibla måttenheter med de tillgängliga enhetsväljarna.</strong> Båda fälten måste använda samma enhet, eller en konverterad motsvarighet, annars blir kvoten fel.",
                 "<strong>Bekräfta att båda måtten är positiva.</strong> En noll- eller negativ längd har ingen betydelse i en triangel och signalerar ett inmatningsfel.",
                 "<strong>Kontrollera att hypotenusan är längre än den angränsande sidan.</strong> Om den inte är det är sidorna felmärkta eller så kan talen inte bilda en rätvinklig triangel.",
-                "<strong>Klicka på Beräkna sec(A).</strong> Verktyget utför divisionen [[c/b]] och visar kvoten.",
+                "<strong>Klicka på Calculate sec(A).</strong> Verktyget utför divisionen [[c/b]] och visar kvoten.",
                 "<strong>Läs av den resulterande sekanskvoten.</strong> Det är ett dimensionslöst decimaltal, vanligtvis med fyra decimaler, redo att användas i fortsatta beräkningar.",
                 "<strong>Bekräfta att resultatet är större än 1.</strong> För en giltig, icke-degenererad rätvinklig triangel med en spetsig referensvinkel gäller [[\\sec(A) \\gt 1]]; ett värde på eller under 1 betyder att något gick fel uppströms.",
-                "<strong>Använd Återställ när du vill rensa inmatningarna och påbörja en ny beräkning.</strong> Fälten och resultatet återgår till sitt starttillstånd."
+                "<strong>Använd Reset när du vill rensa inmatningarna och påbörja en ny beräkning.</strong> Fälten och resultatet återgår till sitt starttillstånd."
             ],
             "closingParagraphs": [
                 "Räknaren behöver varken den motstående sidan eller en vinkel som inmatning, eftersom den grundläggande sekanskvoten är helt bestämd av två längder. Den återfår inte heller vinklar eller saknade sidor; för dem visar de omställda formlerna längre ner i guiden den manuella vägen."
@@ -5565,7 +5565,7 @@ export const SECANT_TRANSLATIONS_BATCH3 = {
         },
         {
             "question": "Hur beräknar man sekans från sidlängder?",
-            "answer": "Mät hypotenusan c och den angränsande sidan b i samma enhet, bekräfta att båda är positiva och att c är längre än b, och dividera sedan: sec(A) = c / b. På denna sida matar du in hypotenusan i det första fältet och den angränsande sidan i det andra, väljer kompatibla enheter och klickar på Beräkna sec(A)."
+            "answer": "Mät hypotenusan c och den angränsande sidan b i samma enhet, bekräfta att båda är positiva och att c är längre än b, och dividera sedan: sec(A) = c / b. På denna sida matar du in hypotenusan i det första fältet och den angränsande sidan i det andra, väljer kompatibla enheter och klickar på Calculate sec(A)."
         },
         {
             "question": "Hur kan jag hitta hypotenusan med sekans?",
@@ -5855,10 +5855,10 @@ export const SECANT_TRANSLATIONS_BATCH3 = {
                 "<strong>用可用的单位选择器选择兼容的测量单位。</strong> 两个输入框必须使用同一单位，或换算后的等值，否则比值会出错。",
                 "<strong>确认两个测量值都为正数。</strong> 零或负的长度在三角形中没有意义，说明数据录入有误。",
                 "<strong>检查斜边是否长于邻边。</strong> 如果不是，说明边标错了，或者这些数字根本构不成直角三角形。",
-                "<strong>点击“计算sec(A)”。</strong> 工具执行除法[[c/b]]并显示比值。",
+                "<strong>点击“Calculate sec(A)”。</strong> 工具执行除法[[c/b]]并显示比值。",
                 "<strong>读取得到的正割比。</strong> 它是一个无量纲小数，通常保留四位小数，可直接用于后续计算。",
                 "<strong>确认结果大于1。</strong> 对于有效的非退化直角三角形和锐角参考角，[[\\sec(A) \\gt 1]]；结果等于或小于1说明上游某个环节出了问题。",
-                "<strong>想清空输入重新计算时使用“重置”。</strong> 输入框和结果会回到初始状态。"
+                "<strong>想清空输入重新计算时使用“Reset”。</strong> 输入框和结果会回到初始状态。"
             ],
             "closingParagraphs": [
                 "计算器不需要对边或角度输入，因为基本的正割比完全由两个长度决定。它也不还原角度或缺失的边；那些情形可以看本指南后面的变形公式，按手动路径求解。"
@@ -6636,7 +6636,7 @@ export const SECANT_TRANSLATIONS_BATCH3 = {
         },
         {
             "question": "如何从边长计算正割？",
-            "answer": "用相同单位测量斜边c和邻边b，确认两者都为正数且c长于b，然后相除：sec(A) = c / b。在本页的第一个输入框中输入斜边，第二个输入框中输入邻边，选择兼容的单位，点击“计算sec(A)”。"
+            "answer": "用相同单位测量斜边c和邻边b，确认两者都为正数且c长于b，然后相除：sec(A) = c / b。在本页的第一个输入框中输入斜边，第二个输入框中输入邻边，选择兼容的单位，点击“Calculate sec(A)”。"
         },
         {
             "question": "如何用正割求斜边？",

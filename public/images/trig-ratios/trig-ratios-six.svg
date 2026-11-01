@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="48" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">The Six Trigonometric Ratios Explained</text>
+<line x1="130" y1="540" x2="530" y2="240" stroke="#a3a3a3" stroke-width="8"/>
+<line x1="130" y1="540" x2="530" y2="540" stroke="#38bdf8" stroke-width="8"/>
+<line x1="530" y1="540" x2="530" y2="240" stroke="#f1c97d" stroke-width="8"/>
+<polyline points="506,540 506,516 530,516" fill="none" stroke="#ffffff" stroke-width="3"/>
+<circle cx="130" cy="540" r="6" fill="#ffffff"/>
+<circle cx="530" cy="540" r="6" fill="#ffffff"/>
+<circle cx="530" cy="240" r="6" fill="#ffffff"/>
+<text x="100" y="572" font-size="23" font-weight="700" fill="#ffffff">A</text>
+<text x="538" y="572" font-size="23" font-weight="700" fill="#ffffff">B</text>
+<text x="538" y="234" font-size="23" font-weight="700" fill="#ffffff">C</text>
+<text x="330" y="572" font-size="20" fill="#38bdf8" text-anchor="middle">b = 4</text>
+<text x="542" y="390" font-size="20" fill="#f1c97d" text-anchor="start">a = 3</text>
+<text x="300" y="380" font-size="20" fill="#a3a3a3" text-anchor="middle">c = 5</text>
+<rect x="600" y="92" width="280" height="150" rx="10" fill="#1c1b1b" stroke="#f1c97d" stroke-width="1.5"/>
+<text x="616" y="122" font-size="15" font-weight="700" fill="#f1c97d">PRIMARY</text>
+<text x="616" y="150" font-size="24" font-weight="700" fill="#ffffff">SINE</text>
+<text x="616" y="180" font-size="21" fill="#f1c97d">sin(A) = a / c</text>
+<text x="616" y="208" font-size="21" font-weight="700" fill="#ffffff">3 / 5 = 0.6</text>
+<text x="616" y="232" font-size="13" fill="#d4d4d4">opp. over hyp.</text>
+<rect x="896" y="92" width="280" height="150" rx="10" fill="#1c1b1b" stroke="#f1c97d" stroke-width="1.5"/>
+<text x="912" y="122" font-size="15" font-weight="700" fill="#f1c97d">PRIMARY</text>
+<text x="912" y="150" font-size="24" font-weight="700" fill="#ffffff">COSINE</text>
+<text x="912" y="180" font-size="21" fill="#38bdf8">cos(A) = b / c</text>
+<text x="912" y="208" font-size="21" font-weight="700" fill="#ffffff">4 / 5 = 0.8</text>
+<text x="912" y="232" font-size="13" fill="#d4d4d4">adj. over hyp.</text>
+<rect x="600" y="256" width="280" height="150" rx="10" fill="#1c1b1b" stroke="#f1c97d" stroke-width="1.5"/>
+<text x="616" y="286" font-size="15" font-weight="700" fill="#f1c97d">PRIMARY</text>
+<text x="616" y="314" font-size="24" font-weight="700" fill="#ffffff">TANGENT</text>
+<text x="616" y="344" font-size="21" fill="#ffffff">tan(A) = a / b</text>
+<text x="616" y="372" font-size="21" font-weight="700" fill="#ffffff">3 / 4 = 0.75</text>
+<text x="616" y="396" font-size="13" fill="#d4d4d4">opp. over adj.</text>
+<rect x="896" y="256" width="280" height="150" rx="10" fill="#1c1b1b" stroke="#38bdf8" stroke-width="1.5"/>
+<text x="912" y="286" font-size="15" font-weight="700" fill="#38bdf8">RECIPROCAL</text>
+<text x="912" y="314" font-size="24" font-weight="700" fill="#ffffff">COTANGENT</text>
+<text x="912" y="344" font-size="21" fill="#d4d4d4">cot(A) = b / a</text>
+<text x="912" y="372" font-size="21" font-weight="700" fill="#ffffff">4 / 3 = 1.3333</text>
+<text x="912" y="396" font-size="13" fill="#d4d4d4">reciprocal of tangent</text>
+<rect x="600" y="420" width="280" height="150" rx="10" fill="#1c1b1b" stroke="#38bdf8" stroke-width="1.5"/>
+<text x="616" y="450" font-size="15" font-weight="700" fill="#38bdf8">RECIPROCAL</text>
+<text x="616" y="478" font-size="24" font-weight="700" fill="#ffffff">SECANT</text>
+<text x="616" y="508" font-size="21" fill="#d4d4d4">sec(A) = c / b</text>
+<text x="616" y="536" font-size="21" font-weight="700" fill="#ffffff">5 / 4 = 1.25</text>
+<text x="616" y="560" font-size="13" fill="#d4d4d4">reciprocal of cosine</text>
+<rect x="896" y="420" width="280" height="150" rx="10" fill="#1c1b1b" stroke="#38bdf8" stroke-width="1.5"/>
+<text x="912" y="450" font-size="15" font-weight="700" fill="#38bdf8">RECIPROCAL</text>
+<text x="912" y="478" font-size="24" font-weight="700" fill="#ffffff">COSECANT</text>
+<text x="912" y="508" font-size="21" fill="#d4d4d4">csc(A) = c / a</text>
+<text x="912" y="536" font-size="21" font-weight="700" fill="#ffffff">5 / 3 = 1.6667</text>
+<text x="912" y="560" font-size="13" fill="#d4d4d4">reciprocal of sine</text>
+<text x="600" y="606" font-size="16" fill="#d4d4d4" text-anchor="middle">All six ratios describe the same reference angle A in one 3-4-5 triangle.</text>
+</svg>

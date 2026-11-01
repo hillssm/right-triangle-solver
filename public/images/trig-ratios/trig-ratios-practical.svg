@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="42" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">Four Real-World Trigonometry Examples</text>
+<rect x="22" y="60" width="566" height="250" rx="10" fill="#1c1b1b" stroke="#f1c97d" stroke-width="1.5"/>
+<text x="40" y="92" font-size="22" font-weight="700" fill="#ffffff">Roof Pitch</text>
+<line x1="92" y1="275" x2="282" y2="125" stroke="#a3a3a3" stroke-width="6"/>
+<line x1="92" y1="275" x2="282" y2="275" stroke="#38bdf8" stroke-width="6"/>
+<line x1="282" y1="275" x2="282" y2="125" stroke="#f1c97d" stroke-width="6"/>
+<polyline points="266,275 266,259 282,259" fill="none" stroke="#ffffff" stroke-width="3"/>
+<circle cx="92" cy="275" r="4" fill="#ffffff"/>
+<circle cx="282" cy="275" r="4" fill="#ffffff"/>
+<circle cx="282" cy="125" r="4" fill="#ffffff"/>
+<text x="312" y="200.0" font-size="16" fill="#f1c97d" text-anchor="middle">3 m</text>
+<text x="187.0" y="301" font-size="16" fill="#38bdf8" text-anchor="middle">4 m</text>
+<text x="127.0" y="200.0" font-size="16" fill="#a3a3a3" text-anchor="middle">5 m</text>
+<text x="322" y="130" font-size="19" fill="#ffffff">tan(A) = 3 / 4 = 0.75</text>
+<text x="322" y="160" font-size="19" fill="#ffffff">Grade: 75%</text>
+<text x="322" y="190" font-size="19" fill="#f1c97d">A = 36.87 deg</text>
+<rect x="612" y="60" width="566" height="250" rx="10" fill="#1c1b1b" stroke="#f1c97d" stroke-width="1.5"/>
+<text x="630" y="92" font-size="22" font-weight="700" fill="#ffffff">Ladder Against a Wall</text>
+<line x1="730" y1="275" x2="872" y2="125" stroke="#a3a3a3" stroke-width="6"/>
+<line x1="730" y1="275" x2="872" y2="275" stroke="#38bdf8" stroke-width="6"/>
+<line x1="872" y1="275" x2="872" y2="125" stroke="#f1c97d" stroke-width="6"/>
+<polyline points="856,275 856,259 872,259" fill="none" stroke="#ffffff" stroke-width="3"/>
+<circle cx="730" cy="275" r="4" fill="#ffffff"/>
+<circle cx="872" cy="275" r="4" fill="#ffffff"/>
+<circle cx="872" cy="125" r="4" fill="#ffffff"/>
+<text x="902" y="200.0" font-size="16" fill="#f1c97d" text-anchor="middle">4 m</text>
+<text x="801.0" y="301" font-size="16" fill="#38bdf8" text-anchor="middle">3 m</text>
+<text x="741.0" y="200.0" font-size="16" fill="#a3a3a3" text-anchor="middle">5 m</text>
+<text x="912" y="130" font-size="19" fill="#ffffff">sin(A) = 0.8</text>
+<text x="912" y="160" font-size="19" fill="#ffffff">cos(A) = 0.6</text>
+<text x="912" y="190" font-size="19" fill="#f1c97d">tan(A) = 1.3333</text>
+<rect x="22" y="322" width="566" height="250" rx="10" fill="#1c1b1b" stroke="#f1c97d" stroke-width="1.5"/>
+<text x="40" y="354" font-size="22" font-weight="700" fill="#ffffff">Surveying Elevation</text>
+<line x1="92" y1="537" x2="282" y2="387" stroke="#a3a3a3" stroke-width="6"/>
+<line x1="92" y1="537" x2="282" y2="537" stroke="#38bdf8" stroke-width="6"/>
+<line x1="282" y1="537" x2="282" y2="387" stroke="#f1c97d" stroke-width="6"/>
+<polyline points="266,537 266,521 282,521" fill="none" stroke="#ffffff" stroke-width="3"/>
+<circle cx="92" cy="537" r="4" fill="#ffffff"/>
+<circle cx="282" cy="537" r="4" fill="#ffffff"/>
+<circle cx="282" cy="387" r="4" fill="#ffffff"/>
+<text x="316" y="462.0" font-size="16" fill="#f1c97d" text-anchor="middle">15 m</text>
+<text x="187.0" y="563" font-size="16" fill="#38bdf8" text-anchor="middle">20 m</text>
+<text x="127.0" y="462.0" font-size="16" fill="#a3a3a3" text-anchor="middle">25 m</text>
+<text x="322" y="392" font-size="19" fill="#ffffff">sin(A) = 0.6</text>
+<text x="322" y="422" font-size="19" fill="#ffffff">cos(A) = 0.8</text>
+<text x="322" y="452" font-size="19" fill="#f1c97d">tan(A) = 0.75</text>
+<rect x="612" y="322" width="566" height="250" rx="10" fill="#1c1b1b" stroke="#f1c97d" stroke-width="1.5"/>
+<text x="630" y="354" font-size="22" font-weight="700" fill="#ffffff">Wheelchair Ramp</text>
+<line x1="682" y1="537" x2="872" y2="455" stroke="#a3a3a3" stroke-width="6"/>
+<line x1="682" y1="537" x2="872" y2="537" stroke="#38bdf8" stroke-width="6"/>
+<line x1="872" y1="537" x2="872" y2="455" stroke="#f1c97d" stroke-width="6"/>
+<polyline points="856,537 856,521 872,521" fill="none" stroke="#ffffff" stroke-width="3"/>
+<circle cx="682" cy="537" r="4" fill="#ffffff"/>
+<circle cx="872" cy="537" r="4" fill="#ffffff"/>
+<circle cx="872" cy="455" r="4" fill="#ffffff"/>
+<text x="906" y="496.0" font-size="16" fill="#f1c97d" text-anchor="middle">0.6 m</text>
+<text x="777.0" y="563" font-size="16" fill="#38bdf8" text-anchor="middle">8 m</text>
+<text x="912" y="392" font-size="19" fill="#ffffff">tan(A) = 0.075</text>
+<text x="912" y="422" font-size="19" fill="#ffffff">Grade: 7.5%</text>
+<text x="912" y="452" font-size="19" fill="#f1c97d">A = 4.29 deg</text>
+<text x="912" y="482" font-size="15" fill="#d4d4d4">Height not to scale</text>
+</svg>

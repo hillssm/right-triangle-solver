@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="48" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">Anatomy of a Right Triangle</text>
+<line x1="300" y1="540" x2="940" y2="140" stroke="#a3a3a3" stroke-width="8"/>
+<line x1="300" y1="540" x2="940" y2="540" stroke="#38bdf8" stroke-width="8"/>
+<line x1="940" y1="540" x2="940" y2="140" stroke="#f1c97d" stroke-width="8"/>
+<polyline points="916,540 916,516 940,516" fill="none" stroke="#ffffff" stroke-width="3"/>
+<polyline points="360.0,540.0 360.0,539.2 360.0,538.3 359.9,537.5 359.9,536.7 359.9,535.8 359.8,535.0 359.7,534.1 359.6,533.3 359.5,532.5 359.4,531.6 359.3,530.8 359.2,530.0 359.0,529.2 358.9,528.3 358.7,527.5 358.5,526.7 358.3,525.9 358.1,525.1 357.9,524.3 357.7,523.5 357.4,522.7 357.2,521.9 356.9,521.1 356.7,520.3 356.4,519.5 356.1,518.7 355.8,517.9 355.5,517.1 355.1,516.4 354.8,515.6 354.5,514.8 354.1,514.1 353.7,513.3 353.4,512.6 353.0,511.8 352.6,511.1 352.2,510.4 351.7,509.6 351.3,508.9 350.9,508.2" fill="none" stroke="#f1c97d" stroke-width="4"/>
+<circle cx="300" cy="540" r="6" fill="#ffffff"/>
+<circle cx="940" cy="540" r="6" fill="#ffffff"/>
+<circle cx="940" cy="140" r="6" fill="#ffffff"/>
+<text x="266" y="574" font-size="24" font-weight="700" fill="#ffffff">A</text>
+<text x="950" y="574" font-size="24" font-weight="700" fill="#ffffff">B</text>
+<text x="950" y="132" font-size="24" font-weight="700" fill="#ffffff">C</text>
+<text x="620" y="574" font-size="22" fill="#38bdf8" text-anchor="middle">b (adjacent)</text>
+<text x="952" y="340" font-size="22" fill="#f1c97d" text-anchor="start">a (opposite)</text>
+<text x="610" y="330" font-size="22" fill="#a3a3a3" text-anchor="middle">c (hypotenuse)</text>
+<rect x="30" y="100" width="250" height="130" rx="10" fill="#1c1b1b" stroke="#f1c97d" stroke-width="1.5"/>
+<text x="155" y="134" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle">Reference angle: A</text>
+<text x="155" y="164" font-size="17" fill="#f1c97d" text-anchor="middle">a = opposite side</text>
+<text x="155" y="192" font-size="17" fill="#38bdf8" text-anchor="middle">b = adjacent side</text>
+<text x="155" y="220" font-size="17" fill="#a3a3a3" text-anchor="middle">c = hypotenuse</text>
+<text x="600" y="612" font-size="17" fill="#d4d4d4" text-anchor="middle">Opposite and adjacent depend on the reference angle; the hypotenuse is always opposite the right angle.</text>
+</svg>

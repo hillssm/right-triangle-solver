@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="48" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">How to Choose the Correct Trigonometric Ratio</text>
+<rect x="380" y="90" width="440" height="80" rx="12" fill="#1c1b1b" stroke="#ffffff" stroke-width="2"/>
+<text x="600" y="124" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">Which two side lengths</text>
+<text x="600" y="152" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">do you know?</text>
+<line x1="235.0" y1="170" x2="235.0" y2="200" stroke="#f1c97d" stroke-width="3"/>
+<rect x="70" y="200" width="330" height="56" rx="10" fill="#1c1b1b" stroke="#f1c97d" stroke-width="2"/>
+<text x="235.0" y="236" font-size="20" font-weight="700" fill="#f1c97d" text-anchor="middle">Opposite + Hypotenuse</text>
+<rect x="70" y="280" width="330" height="110" rx="10" fill="#1c1b1b" stroke="#3a3a3a" stroke-width="1.5"/>
+<text x="86" y="306" font-size="13" font-weight="700" fill="#d4d4d4">DIRECT</text>
+<text x="86" y="334" font-size="22" font-weight="700" fill="#f1c97d">Sine</text>
+<text x="86" y="366" font-size="20" fill="#ffffff">sin(A) = a / c</text>
+<rect x="70" y="410" width="330" height="110" rx="10" fill="#1c1b1b" stroke="#3a3a3a" stroke-width="1.5"/>
+<text x="86" y="436" font-size="13" font-weight="700" fill="#d4d4d4">RECIPROCAL</text>
+<text x="86" y="464" font-size="22" font-weight="700" fill="#d4d4d4">Cosecant</text>
+<text x="86" y="496" font-size="20" fill="#ffffff">csc(A) = c / a</text>
+<line x1="600.0" y1="170" x2="600.0" y2="200" stroke="#38bdf8" stroke-width="3"/>
+<rect x="435" y="200" width="330" height="56" rx="10" fill="#1c1b1b" stroke="#38bdf8" stroke-width="2"/>
+<text x="600.0" y="236" font-size="20" font-weight="700" fill="#38bdf8" text-anchor="middle">Adjacent + Hypotenuse</text>
+<rect x="435" y="280" width="330" height="110" rx="10" fill="#1c1b1b" stroke="#3a3a3a" stroke-width="1.5"/>
+<text x="451" y="306" font-size="13" font-weight="700" fill="#d4d4d4">DIRECT</text>
+<text x="451" y="334" font-size="22" font-weight="700" fill="#38bdf8">Cosine</text>
+<text x="451" y="366" font-size="20" fill="#ffffff">cos(A) = b / c</text>
+<rect x="435" y="410" width="330" height="110" rx="10" fill="#1c1b1b" stroke="#3a3a3a" stroke-width="1.5"/>
+<text x="451" y="436" font-size="13" font-weight="700" fill="#d4d4d4">RECIPROCAL</text>
+<text x="451" y="464" font-size="22" font-weight="700" fill="#d4d4d4">Secant</text>
+<text x="451" y="496" font-size="20" fill="#ffffff">sec(A) = c / b</text>
+<line x1="965.0" y1="170" x2="965.0" y2="200" stroke="#ffffff" stroke-width="3"/>
+<rect x="800" y="200" width="330" height="56" rx="10" fill="#1c1b1b" stroke="#ffffff" stroke-width="2"/>
+<text x="965.0" y="236" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">Opposite + Adjacent</text>
+<rect x="800" y="280" width="330" height="110" rx="10" fill="#1c1b1b" stroke="#3a3a3a" stroke-width="1.5"/>
+<text x="816" y="306" font-size="13" font-weight="700" fill="#d4d4d4">DIRECT</text>
+<text x="816" y="334" font-size="22" font-weight="700" fill="#ffffff">Tangent</text>
+<text x="816" y="366" font-size="20" fill="#ffffff">tan(A) = a / b</text>
+<rect x="800" y="410" width="330" height="110" rx="10" fill="#1c1b1b" stroke="#3a3a3a" stroke-width="1.5"/>
+<text x="816" y="436" font-size="13" font-weight="700" fill="#d4d4d4">RECIPROCAL</text>
+<text x="816" y="464" font-size="22" font-weight="700" fill="#d4d4d4">Cotangent</text>
+<text x="816" y="496" font-size="20" fill="#ffffff">cot(A) = b / a</text>
+<text x="600" y="606" font-size="16" fill="#d4d4d4" text-anchor="middle">Each side pair gives two ratios; the reciprocal reverses the fraction.</text>
+</svg>

@@ -20,9 +20,12 @@ import SideFromAngleGuide from 'theme/components/SideFromAngleGuide.astro';
 import SideFromAngleGuideLocalized from 'theme/components/SideFromAngleGuideLocalized.astro';
 import AngleGuide from 'theme/components/AngleGuide.astro';
 import AngleGuideLocalized from 'theme/components/AngleGuideLocalized.astro';
+import TrigRatiosGuide from 'theme/components/TrigRatiosGuide.astro';
+import TrigRatiosGuideLocalized from 'theme/components/TrigRatiosGuideLocalized.astro';
 import { SIDE_FROM_ANGLE_TRANSLATIONS } from 'src/data/sideFromAngleTranslations';
 import { SIDE_GUIDE_TRANSLATIONS } from 'src/data/sideGuideTranslations';
 import { ANGLE_GUIDE_TRANSLATIONS } from 'src/data/angleGuideTranslations';
+import { TRIG_RATIOS_GUIDE_TRANSLATIONS } from 'src/data/trigRatiosGuideTranslations';
 import { toAbsoluteUrl } from 'theme/utils/site';
 import { replaceGenericSeoHeading, seoSectionHeading } from 'theme/utils/seoHeadings';
 import { formatListItem } from 'src/utils/formatList';
@@ -52,9 +55,11 @@ const isHubPage = slug === RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.slug;
 const isSidePage = slug === 'right-triangle-side-calculator';
 const isSideFromAnglePage = slug === 'right-triangle-side-from-angle-calculator';
 const isAnglePage = slug === 'right-triangle-angle-calculator';
+const isTrigRatiosPage = slug === 'right-triangle-trig-ratios-calculator';
 const hideOldSideContent = isSidePage;
 const hideOldSideFromAngleContent = isSideFromAnglePage;
 const hideOldAngleContent = isAnglePage;
+const hideOldTrigRatiosContent = isTrigRatiosPage;
 
 if (!groupedPage && !isHubPage) {
   throw new Error(`Unknown grouped calculator slug: ${slug}`);
@@ -791,7 +796,7 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
         </script>
       </section>
 
-      {!hideOldSideContent && !hideOldSideFromAngleContent && !hideOldAngleContent && (
+      {!hideOldSideContent && !hideOldSideFromAngleContent && !hideOldAngleContent && !hideOldTrigRatiosContent && (
       <>
       <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
         <h2>{sectionHeading(activePage.h2[0])}</h2>
@@ -1130,4 +1135,6 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
   {isSideFromAnglePage && locale !== 'en' && SIDE_FROM_ANGLE_TRANSLATIONS[locale] ? <SideFromAngleGuideLocalized guide={SIDE_FROM_ANGLE_TRANSLATIONS[locale]} locale={locale} /> : null}
   {isAnglePage && locale === 'en' ? <AngleGuide /> : null}
   {isAnglePage && locale !== 'en' && ANGLE_GUIDE_TRANSLATIONS[locale] ? <AngleGuideLocalized guide={ANGLE_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
+  {isTrigRatiosPage && locale === 'en' ? <TrigRatiosGuide /> : null}
+  {isTrigRatiosPage && locale !== 'en' && TRIG_RATIOS_GUIDE_TRANSLATIONS[locale] ? <TrigRatiosGuideLocalized guide={TRIG_RATIOS_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>

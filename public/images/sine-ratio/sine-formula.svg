@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="48" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">How the Sine Formula Works</text>
+
+  <rect x="20" y="100" width="360" height="500" rx="10" fill="#1c1b1b" stroke="#3a3838" stroke-width="1.5"/>
+  <text x="200" y="140" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">Stage 1: Identify the sides</text>
+  <line x1="50" y1="520" x2="330" y2="310" stroke="#38bdf8" stroke-width="7"/>
+  <line x1="50" y1="520" x2="330" y2="520" stroke="#a3a3a3" stroke-width="7"/>
+  <line x1="330" y1="520" x2="330" y2="310" stroke="#f1c97d" stroke-width="7"/>
+  <polyline points="306,520 306,496 330,496" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polyline points="84,520 83.8,516.8 83.4,513.6 82.6,510.5 81.6,507.4 80.3,504.5 78.7,501.7" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="50" cy="520" r="6" fill="#ffffff"/>
+  <circle cx="330" cy="520" r="6" fill="#ffffff"/>
+  <circle cx="330" cy="310" r="6" fill="#ffffff"/>
+  <text x="26" y="554" font-size="22" font-weight="700" fill="#ffffff">A</text>
+  <text x="342" y="554" font-size="22" font-weight="700" fill="#ffffff">B</text>
+  <text x="342" y="304" font-size="22" font-weight="700" fill="#ffffff">C</text>
+  <text x="344" y="420" font-size="20" fill="#f1c97d" text-anchor="start">a = 3</text>
+  <text x="190" y="556" font-size="20" fill="#a3a3a3" text-anchor="middle">b = 4</text>
+  <text x="176" y="404" font-size="20" fill="#38bdf8" text-anchor="middle">c = 5</text>
+  <text x="200" y="592" font-size="16" fill="#d4d4d4" text-anchor="middle">Angle A is at the bottom-left</text>
+
+  <rect x="420" y="100" width="360" height="500" rx="10" fill="#1c1b1b" stroke="#3a3838" stroke-width="1.5"/>
+  <text x="600" y="140" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">Stage 2: Apply the formula</text>
+  <text x="600" y="320" font-size="44" font-weight="700" fill="#ffffff" text-anchor="middle">sin(A) = a / c</text>
+  <text x="600" y="392" font-size="19" fill="#f1c97d" text-anchor="middle">a = opposite side (numerator)</text>
+  <text x="600" y="428" font-size="19" fill="#38bdf8" text-anchor="middle">c = hypotenuse (denominator)</text>
+  <text x="600" y="520" font-size="16" fill="#d4d4d4" text-anchor="middle">Sine compares the opposite side</text>
+  <text x="600" y="544" font-size="16" fill="#d4d4d4" text-anchor="middle">with the longest side</text>
+
+  <rect x="820" y="100" width="360" height="500" rx="10" fill="#1c1b1b" stroke="#3a3838" stroke-width="1.5"/>
+  <text x="1000" y="140" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">Stage 3: Calculate the ratio</text>
+  <text x="1000" y="320" font-size="36" font-weight="700" fill="#ffffff" text-anchor="middle">sin(A) = 3/5 = 0.6</text>
+  <text x="1000" y="392" font-size="19" fill="#f1c97d" text-anchor="middle">The opposite side is 60%</text>
+  <text x="1000" y="418" font-size="19" fill="#f1c97d" text-anchor="middle">of the hypotenuse.</text>
+  <text x="1000" y="520" font-size="16" fill="#d4d4d4" text-anchor="middle">0.6 is a ratio, not an angle.</text>
+  <text x="1000" y="544" font-size="16" fill="#d4d4d4" text-anchor="middle">Use inverse sine to get degrees.</text>
+</svg>

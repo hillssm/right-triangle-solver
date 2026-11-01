@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="48" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">How Sine Changes as the Angle Changes</text>
+
+  <rect x="20" y="90" width="370" height="510" rx="10" fill="#1c1b1b" stroke="#3a3838" stroke-width="1.5"/>
+  <text x="205" y="130" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">A = 30°</text>
+  <line x1="80" y1="500" x2="270" y2="390" stroke="#38bdf8" stroke-width="7"/>
+  <line x1="80" y1="500" x2="270" y2="500" stroke="#a3a3a3" stroke-width="7"/>
+  <line x1="270" y1="500" x2="270" y2="390" stroke="#f1c97d" stroke-width="7"/>
+  <polyline points="246,500 246,476 270,476" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polyline points="114,500 113.8,496.8 113.4,493.6 112.6,490.5 111.6,487.4 110.3,484.5 108.7,481.7" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="80" cy="500" r="6" fill="#ffffff"/>
+  <circle cx="270" cy="500" r="6" fill="#ffffff"/>
+  <circle cx="270" cy="390" r="6" fill="#ffffff"/>
+  <text x="56" y="534" font-size="20" font-weight="700" fill="#ffffff">A</text>
+  <text x="282" y="534" font-size="20" font-weight="700" fill="#ffffff">B</text>
+  <text x="282" y="382" font-size="20" font-weight="700" fill="#ffffff">C</text>
+  <text x="258" y="450" font-size="17" fill="#f1c97d" text-anchor="end">a = 1</text>
+  <text x="175" y="534" font-size="17" fill="#a3a3a3" text-anchor="middle">b = √3</text>
+  <text x="175" y="430" font-size="17" fill="#38bdf8" text-anchor="middle">c = 2</text>
+  <text x="205" y="572" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle">sin(A) = 1/2 = 0.5</text>
+
+  <rect x="415" y="90" width="370" height="510" rx="10" fill="#1c1b1b" stroke="#3a3838" stroke-width="1.5"/>
+  <text x="600" y="130" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">A = 45°</text>
+  <line x1="510" y1="500" x2="620" y2="390" stroke="#38bdf8" stroke-width="7"/>
+  <line x1="510" y1="500" x2="620" y2="500" stroke="#a3a3a3" stroke-width="7"/>
+  <line x1="620" y1="500" x2="620" y2="390" stroke="#f1c97d" stroke-width="7"/>
+  <polyline points="596,500 596,476 620,476" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polyline points="544,500 543.8,496.8 543.4,493.6 542.6,490.5 541.6,487.4 540.3,484.5 538.7,481.7" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="510" cy="500" r="6" fill="#ffffff"/>
+  <circle cx="620" cy="500" r="6" fill="#ffffff"/>
+  <circle cx="620" cy="390" r="6" fill="#ffffff"/>
+  <text x="486" y="534" font-size="20" font-weight="700" fill="#ffffff">A</text>
+  <text x="632" y="534" font-size="20" font-weight="700" fill="#ffffff">B</text>
+  <text x="632" y="382" font-size="20" font-weight="700" fill="#ffffff">C</text>
+  <text x="608" y="450" font-size="17" fill="#f1c97d" text-anchor="end">a = 1</text>
+  <text x="565" y="534" font-size="17" fill="#a3a3a3" text-anchor="middle">b = 1</text>
+  <text x="560" y="430" font-size="17" fill="#38bdf8" text-anchor="middle">c = √2</text>
+  <text x="600" y="572" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle">sin(A) ≈ 0.7071</text>
+
+  <rect x="810" y="90" width="370" height="510" rx="10" fill="#1c1b1b" stroke="#3a3838" stroke-width="1.5"/>
+  <text x="995" y="130" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">A = 60°</text>
+  <line x1="900" y1="500" x2="1010" y2="310" stroke="#38bdf8" stroke-width="7"/>
+  <line x1="900" y1="500" x2="1010" y2="500" stroke="#a3a3a3" stroke-width="7"/>
+  <line x1="1010" y1="500" x2="1010" y2="310" stroke="#f1c97d" stroke-width="7"/>
+  <polyline points="986,500 986,476 1010,476" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polyline points="934,500 933.8,496.8 933.4,493.6 932.6,490.5 931.6,487.4 930.3,484.5 928.7,481.7" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="900" cy="500" r="6" fill="#ffffff"/>
+  <circle cx="1010" cy="500" r="6" fill="#ffffff"/>
+  <circle cx="1010" cy="310" r="6" fill="#ffffff"/>
+  <text x="876" y="534" font-size="20" font-weight="700" fill="#ffffff">A</text>
+  <text x="1022" y="534" font-size="20" font-weight="700" fill="#ffffff">B</text>
+  <text x="1022" y="302" font-size="20" font-weight="700" fill="#ffffff">C</text>
+  <text x="998" y="410" font-size="17" fill="#f1c97d" text-anchor="end">a = √3</text>
+  <text x="955" y="534" font-size="17" fill="#a3a3a3" text-anchor="middle">b = 1</text>
+  <text x="950" y="396" font-size="17" fill="#38bdf8" text-anchor="middle">c = 2</text>
+  <text x="995" y="572" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle">sin(A) ≈ 0.8660</text>
+
+  <text x="600" y="622" font-size="16" fill="#d4d4d4" text-anchor="middle">As angle A grows, the opposite side becomes a larger share of the hypotenuse, so sin(A) rises.</text>
+</svg>

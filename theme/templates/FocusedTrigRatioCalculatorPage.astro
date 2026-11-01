@@ -20,6 +20,9 @@ import { COTANGENT_GUIDE_TRANSLATIONS } from 'src/data/cotangentGuideTranslation
 import SecantRatioGuide from 'theme/components/SecantRatioGuide.astro';
 import SecantRatioGuideLocalized from 'theme/components/SecantRatioGuideLocalized.astro';
 import { SECANT_GUIDE_TRANSLATIONS } from 'src/data/secantGuideTranslations';
+import SineRatioGuide from 'theme/components/SineRatioGuide.astro';
+import SineRatioGuideLocalized from 'theme/components/SineRatioGuideLocalized.astro';
+import { SINE_GUIDE_TRANSLATIONS } from 'src/data/sineGuideTranslations';
 import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
@@ -36,9 +39,9 @@ const isCosecantPage = page.slug === 'cosecant-ratio-calculator' && (locale === 
 const isCosinePage = page.slug === 'cosine-ratio-calculator' && (locale === 'en' || COSINE_GUIDE_TRANSLATIONS[locale]);
 const isCotangentPage = page.slug === 'cotangent-ratio-calculator' && (locale === 'en' || COTANGENT_GUIDE_TRANSLATIONS[locale]);
 const isSecantPage = page.slug === 'secant-ratio-calculator' && (locale === 'en' || SECANT_GUIDE_TRANSLATIONS[locale]);
-// Proactive: sine (Page 13) and tangent (Page 14) guides not yet built; suppress old thin content when their EN guides render.
-// Translation checks to be added by the pipeline workers when they create the locale data files.
-const isSinePage = page.slug === 'sine-ratio-calculator' && locale === 'en';
+// Proactive: tangent (Page 14) guide not yet built; suppress old thin content when its EN guide renders.
+// Sine (Page 13) translations now exist; isSinePage checks them like the other ratio pages.
+const isSinePage = page.slug === 'sine-ratio-calculator' && (locale === 'en' || SINE_GUIDE_TRANSLATIONS[locale]);
 const isTangentPage = page.slug === 'tangent-ratio-calculator' && locale === 'en';
 const trigUi = getFocusedTrigRatioUi(locale);
 const runtimeTranslations = getFocusedTrigRatioRuntimeTranslations(page, locale);
@@ -537,4 +540,7 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
 
   {page.slug === 'secant-ratio-calculator' && locale === 'en' ? <SecantRatioGuide /> : null}
   {page.slug === 'secant-ratio-calculator' && locale !== 'en' && SECANT_GUIDE_TRANSLATIONS[locale] ? <SecantRatioGuideLocalized guide={SECANT_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
+
+  {page.slug === 'sine-ratio-calculator' && locale === 'en' ? <SineRatioGuide /> : null}
+  {page.slug === 'sine-ratio-calculator' && locale !== 'en' && SINE_GUIDE_TRANSLATIONS[locale] ? <SineRatioGuideLocalized guide={SINE_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>

@@ -235,7 +235,7 @@ export const SECANT_TRANSLATIONS_BATCH1 = {
           },
           {
             "kind": "p",
-            "text": "<strong>चरण 4: परिणाम की व्याख्या करें।</strong> कर्ण संलग्न भुजा का 1.25 गुना है, जिससे यह 25% लंबा बनता है। 4 मीटर क्षैतिज दूरी फैली 5 सेमी सीढ़ी इस तरह व्यवहार करती है; ज्यामिति को इकाई की परवाह नहीं, केवल अनुपात की परवाह है।"
+            "text": "<strong>चरण 4: परिणाम की व्याख्या करें।</strong> कर्ण संलग्न भुजा का 1.25 गुना है, जिससे यह 25% लंबा बनता है। 4 सेमी क्षैतिज दूरी फैली 5 सेमी सीढ़ी इस तरह व्यवहार करती है; ज्यामिति को इकाई की परवाह नहीं, केवल अनुपात की परवाह है।"
           },
           {
             "kind": "p",
@@ -1303,7 +1303,7 @@ export const SECANT_TRANSLATIONS_BATCH1 = {
           },
           {
             "kind": "p",
-            "text": "<strong>Paso 4: Interpreta el resultado.</strong> La hipotenusa es 1.25 veces el cateto adyacente, lo que la hace un 25 % más larga. Una escalera de 5 cm que abarca una distancia horizontal de 4 m se comporta así; a la geometría no le importa la unidad, solo la proporción."
+            "text": "<strong>Paso 4: Interpreta el resultado.</strong> La hipotenusa es 1.25 veces el cateto adyacente, lo que la hace un 25 % más larga. Una escalera de 5 cm que abarca una distancia horizontal de 4 cm se comporta así; a la geometría no le importa la unidad, solo la proporción."
           },
           {
             "kind": "p",
@@ -2371,7 +2371,7 @@ export const SECANT_TRANSLATIONS_BATCH1 = {
           },
           {
             "kind": "p",
-            "text": "<strong>Шаг 4: истолкуйте результат.</strong> Гипотенуза в 1.25 раза длиннее прилежащего катета, то есть на 25% длиннее. Лестница длиной 5 см, перекрывающая горизонтальное расстояние 4 м, ведёт себя так же; геометрии не важна единица, важна только пропорция."
+            "text": "<strong>Шаг 4: истолкуйте результат.</strong> Гипотенуза в 1.25 раза длиннее прилежащего катета, то есть на 25% длиннее. Лестница длиной 5 см, перекрывающая горизонтальное расстояние 4 см, ведёт себя так же; геометрии не важна единица, важна только пропорция."
           },
           {
             "kind": "p",
@@ -3439,7 +3439,7 @@ export const SECANT_TRANSLATIONS_BATCH1 = {
           },
           {
             "kind": "p",
-            "text": "<strong>Étape 4 : interprétez le résultat.</strong> L'hypoténuse est 1.25 fois le côté adjacent, donc 25 % plus longue. Une échelle de 5 cm couvrant une distance horizontale de 4 m se comporte ainsi ; la géométrie se moque de l'unité, seule la proportion compte."
+            "text": "<strong>Étape 4 : interprétez le résultat.</strong> L'hypoténuse est 1.25 fois le côté adjacent, donc 25 % plus longue. Une échelle de 5 cm couvrant une distance horizontale de 4 cm se comporte ainsi ; la géométrie se moque de l'unité, seule la proportion compte."
           },
           {
             "kind": "p",
@@ -4507,7 +4507,7 @@ export const SECANT_TRANSLATIONS_BATCH1 = {
           },
           {
             "kind": "p",
-            "text": "<strong>Schritt 4: Interpretieren Sie das Ergebnis.</strong> Die Hypotenuse ist 1,25-mal so lang wie die Ankathete und damit 25 % länger. Eine 5-cm-Leiter, die einen 4-m-Horizontalabstand überbrückt, verhält sich so; der Geometrie ist die Einheit egal, nur das Verhältnis zählt."
+            "text": "<strong>Schritt 4: Interpretieren Sie das Ergebnis.</strong> Die Hypotenuse ist 1,25-mal so lang wie die Ankathete und damit 25 % länger. Eine 5-cm-Leiter, die einen 4-cm-Horizontalabstand überbrückt, verhält sich so; der Geometrie ist die Einheit egal, nur das Verhältnis zählt."
           },
           {
             "kind": "p",
@@ -5575,7 +5575,7 @@ export const SECANT_TRANSLATIONS_BATCH1 = {
           },
           {
             "kind": "p",
-            "text": "<strong>Passo 4: interpreta il risultato.</strong> L'ipotenusa è 1,25 volte il cateto adiacente, quindi è più lunga del 25%. Una scala da 5 cm che copre una distanza orizzontale di 4 m si comporta così; alla geometria non importa l'unità, solo la proporzione."
+            "text": "<strong>Passo 4: interpreta il risultato.</strong> L'ipotenusa è 1,25 volte il cateto adiacente, quindi è più lunga del 25%. Una scala da 5 cm che copre una distanza orizzontale di 4 cm si comporta così; alla geometria non importa l'unità, solo la proporzione."
           },
           {
             "kind": "p",

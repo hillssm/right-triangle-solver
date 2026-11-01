@@ -265,7 +265,7 @@ export const SECANT_TRANSLATIONS_BATCH3 = {
                 },
                 {
                     "kind": "p",
-                    "text": "<strong>Langkah 4: Tafsirkan hasilnya.</strong> Hipotenusa 1.25 kali sisi samping, membuatnya 25% lebih panjang. Tangga 5 cm yang merentang jarak horizontal 4 m berperilaku demikian; geometrinya tidak peduli satuannya, hanya proporsinya."
+                    "text": "<strong>Langkah 4: Tafsirkan hasilnya.</strong> Hipotenusa 1.25 kali sisi samping, membuatnya 25% lebih panjang. Tangga 5 cm yang merentang jarak horizontal 4 cm berperilaku demikian; geometrinya tidak peduli satuannya, hanya proporsinya."
                 },
                 {
                     "kind": "p",
@@ -1407,7 +1407,7 @@ export const SECANT_TRANSLATIONS_BATCH3 = {
                 },
                 {
                     "kind": "p",
-                    "text": "<strong>الخطوة 4: فسر النتيجة.</strong> الوتر أطول من الضلع المجاور بنحو 1.25 مرة، أي أطول بنسبة 25%. سلم طوله 5 سم يمتد على مسافة أفقية 4 م يتصرف هكذا؛ فالهندسة لا تكترث للوحدة، بل للنسبة فقط."
+                    "text": "<strong>الخطوة 4: فسر النتيجة.</strong> الوتر أطول من الضلع المجاور بنحو 1.25 مرة، أي أطول بنسبة 25%. سلم طوله 5 سم يمتد على مسافة أفقية 4 سم يتصرف هكذا؛ فالهندسة لا تكترث للوحدة، بل للنسبة فقط."
                 },
                 {
                     "kind": "p",
@@ -2537,7 +2537,7 @@ export const SECANT_TRANSLATIONS_BATCH3 = {
                 },
                 {
                     "kind": "p",
-                    "text": "<strong>Стъпка 4: Изтълкувайте резултата.</strong> Хипотенузата е 1.25 пъти прилежащата страна, което я прави с 25% по-дълга. Стълба от 5 см, премостваща 4 м хоризонтално разстояние, се държи по този начин; геометрията не се интересува от мерната единица, а само от пропорцията."
+                    "text": "<strong>Стъпка 4: Изтълкувайте резултата.</strong> Хипотенузата е 1.25 пъти прилежащата страна, което я прави с 25% по-дълга. Стълба от 5 см, премостваща 4 см хоризонтално разстояние, се държи по този начин; геометрията не се интересува от мерната единица, а само от пропорцията."
                 },
                 {
                     "kind": "p",
@@ -3628,7 +3628,7 @@ export const SECANT_TRANSLATIONS_BATCH3 = {
                 },
                 {
                     "kind": "p",
-                    "text": "<strong>Adım 4: Sonucu yorumlayın.</strong> Hipotenüs, komşu kenarın 1.25 katıdır; yani %25 daha uzundur. 4 m'lik yatay uzaklığı aşan 5 m'lik bir merdiven de böyle davranır; geometri birime aldırmaz, yalnızca orana bakar."
+                    "text": "<strong>Adım 4: Sonucu yorumlayın.</strong> Hipotenüs, komşu kenarın 1.25 katıdır; yani %25 daha uzundur. 4 cm'lik yatay uzaklığı aşan 5 cm'lik bir merdiven de böyle davranır; geometri birime aldırmaz, yalnızca orana bakar."
                 },
                 {
                     "kind": "p",
@@ -4752,7 +4752,7 @@ export const SECANT_TRANSLATIONS_BATCH3 = {
                 },
                 {
                     "kind": "p",
-                    "text": "<strong>Steg 4: Tolka resultatet.</strong> Hypotenusan är 1.25 gånger den angränsande sidan, vilket gör den 25 procent längre. En 5 cm lång stege som spänner över ett 4 m horisontellt avstånd beter sig så här; geometrin bryr sig inte om enheten, bara om proportionen."
+                    "text": "<strong>Steg 4: Tolka resultatet.</strong> Hypotenusan är 1.25 gånger den angränsande sidan, vilket gör den 25 procent längre. En 5 cm lång stege som spänner över ett 4 cm horisontellt avstånd beter sig så här; geometrin bryr sig inte om enheten, bara om proportionen."
                 },
                 {
                     "kind": "p",
@@ -5825,7 +5825,7 @@ export const SECANT_TRANSLATIONS_BATCH3 = {
                 },
                 {
                     "kind": "p",
-                    "text": "<strong>第4步：解释结果。</strong> 斜边是邻边的1.25倍，长25%。一段5厘米的梯子跨过4米的水平距离就是这样；几何只关心比例，不关心单位。"
+                    "text": "<strong>第4步：解释结果。</strong> 斜边是邻边的1.25倍，长25%。一段5厘米的梯子跨过4厘米的水平距离就是这样；几何只关心比例，不关心单位。"
                 },
                 {
                     "kind": "p",

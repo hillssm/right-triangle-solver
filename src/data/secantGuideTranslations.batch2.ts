@@ -240,7 +240,7 @@ export const SECANT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "<strong>Passo 4: Interprete o resultado.</strong> A hipotenusa é 1,25 vezes o cateto adjacente, o que a torna 25% mais longa. Uma escada de 5 cm a abranger uma distância horizontal de 4 m comporta-se assim; a geometria não se importa com a unidade, apenas com a proporção."
+            "text": "<strong>Passo 4: Interprete o resultado.</strong> A hipotenusa é 1,25 vezes o cateto adjacente, o que a torna 25% mais longa. Uma escada de 5 cm a abranger uma distância horizontal de 4 cm comporta-se assim; a geometria não se importa com a unidade, apenas com a proporção."
           },
           {
             "kind": "p",
@@ -1307,7 +1307,7 @@ export const SECANT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "<strong>ধাপ ৪: ফলাফলের ব্যাখ্যা দিন।</strong> অতিভুজ সংলগ্ন বাহুর 1.25 গুণ, অর্থাৎ এটি 25% বেশি লম্বা। 4 m অনুভূমিক দূরত্ব জুড়ে থাকা 5 cm মই এভাবেই আচরণ করে; জ্যামিতি এককের পরোয়া করে না, কেবল অনুপাতের।"
+            "text": "<strong>ধাপ ৪: ফলাফলের ব্যাখ্যা দিন।</strong> অতিভুজ সংলগ্ন বাহুর 1.25 গুণ, অর্থাৎ এটি 25% বেশি লম্বা। 4 cm অনুভূমিক দূরত্ব জুড়ে থাকা 5 cm মই এভাবেই আচরণ করে; জ্যামিতি এককের পরোয়া করে না, কেবল অনুপাতের।"
           },
           {
             "kind": "p",
@@ -2374,7 +2374,7 @@ export const SECANT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "<strong>ステップ4: 結果を解釈します。</strong> 斜辺は隣辺の1.25倍の長さであり、25%長くなります。水平距離4 mにまたがる長さ5 cmのはしごもこのように振る舞います。幾何学では単位は関係なく、比率だけが重要です。"
+            "text": "<strong>ステップ4: 結果を解釈します。</strong> 斜辺は隣辺の1.25倍の長さであり、25%長くなります。水平距離4 cmにまたがる長さ5 cmのはしごもこのように振る舞います。幾何学では単位は関係なく、比率だけが重要です。"
           },
           {
             "kind": "p",
@@ -3441,7 +3441,7 @@ export const SECANT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "<strong>4단계: 결과를 해석합니다.</strong> 빗변은 인접변의 1.25배이며, 25% 더 깁니다. 5cm 사다리가 4m 수평 거리를 가로지를 때 이렇게 됩니다. 기하학은 단위에 관심이 없고 비율에만 관심이 있습니다."
+            "text": "<strong>4단계: 결과를 해석합니다.</strong> 빗변은 인접변의 1.25배이며, 25% 더 깁니다. 5cm 사다리가 4cm 수평 거리를 가로지를 때 이렇게 됩니다. 기하학은 단위에 관심이 없고 비율에만 관심이 있습니다."
           },
           {
             "kind": "p",
@@ -4508,7 +4508,7 @@ export const SECANT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "<strong>Langkah 4: Tafsirkan hasilnya.</strong> Hipotenus adalah 1.25 kali sisi bersebelahan, menjadikannya 25% lebih panjang. Tangga 5 cm yang merentangi jarak mendatar 4 m berkelakuan seperti ini; geometri tidak peduli tentang unit, hanya perkadaran."
+            "text": "<strong>Langkah 4: Tafsirkan hasilnya.</strong> Hipotenus adalah 1.25 kali sisi bersebelahan, menjadikannya 25% lebih panjang. Tangga 5 cm yang merentangi jarak mendatar 4 cm berkelakuan seperti ini; geometri tidak peduli tentang unit, hanya perkadaran."
           },
           {
             "kind": "p",
@@ -5575,7 +5575,7 @@ export const SECANT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "<strong>Krok 4: Zinterpretuj wynik.</strong> Przeciwprostokątna jest 1.25 raza dłuższa od przyprostokątnej przyległej, czyli o 25% dłuższa. Drabina o długości 5 cm rozpięta nad poziomą odległością 4 m zachowuje się w ten sposób; geometria nie dba o jednostkę, tylko o proporcję."
+            "text": "<strong>Krok 4: Zinterpretuj wynik.</strong> Przeciwprostokątna jest 1.25 raza dłuższa od przyprostokątnej przyległej, czyli o 25% dłuższa. Drabina o długości 5 cm rozpięta nad poziomą odległością 4 cm zachowuje się w ten sposób; geometria nie dba o jednostkę, tylko o proporcję."
           },
           {
             "kind": "p",

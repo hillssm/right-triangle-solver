@@ -1,0 +1,243 @@
+---
+/**
+ * TangentRatioGuideLocalized.astro - Data-driven localized guide for the Tangent Ratio Calculator page.
+ * Renders translated content from tangent guide translations for 18 locales.
+ * English uses the hardcoded TangentRatioGuide.astro; this is for non-English locales.
+ *
+ * Translation data schema is documented in TANGENT_TRANSLATION_SCHEMA.md (repo root).
+ * Translators deliver TS batch files:
+ *   export const TANGENT_TRANSLATIONS_BATCH{n} = { <locale>: G, ... }
+ * merged by tangentGuideTranslations.ts into TANGENT_GUIDE_TRANSLATIONS.
+ *
+ * Rules for translators (see schema doc):
+ * - Keep every section id exactly as listed in sectionOrder/tocOrder (do NOT translate ids).
+ * - Math notation [[...]] (inline) and [[[...]]] (display) is passed through KaTeX; keep
+ *   variable symbols A, B, a, b, c and formulas identical, translate only surrounding prose.
+ * - Internal links written as href="/..." are auto-prefixed with the locale (except 'en').
+ * - Alt texts must stay under 125 characters.
+ * - No em dashes, no decorative unicode in translated strings.
+ */
+import katex from 'katex';
+import Faq from 'theme/components/Faq.astro';
+
+interface Props {
+  guide: any;
+  locale: string;
+}
+
+const { guide: G, locale } = Astro.props;
+
+const rich = (s: string): string => {
+  if (!s || typeof s !== 'string') return '';
+  let out = s;
+  out = out.replace(
+    /\[\[\[(.+?)\]\]\]/g,
+    (_, l) =>
+      `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
+  );
+  out = out.replace(
+    /\[\[(.+?)\]\]/g,
+    (_, l) =>
+      `<span dir="ltr" class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>`
+  );
+  // Localize internal links for non-English locales
+  if (locale !== 'en') {
+    out = out.split('href="/').join(`href="/${locale}/`);
+  }
+  return out;
+};
+
+const imgSrc = (name: string): string => `/images/tangent-ratio/${name}`;
+
+// Section IDs in order (13 content sections, excluding faq and related which are rendered separately)
+const sectionOrder = [
+  'sec-intro', 'sec-triangle', 'sec-whatis', 'sec-formula', 'sec-howto',
+  'sec-examples', 'sec-applications', 'sec-angle', 'sec-side',
+  'sec-recover', 'sec-mistakes', 'sec-verify', 'sec-vs'
+];
+
+// TOC items in order (15 items: 13 sections + related + faq)
+const tocOrder = [
+  'sec-intro', 'sec-triangle', 'sec-whatis', 'sec-formula', 'sec-howto',
+  'sec-examples', 'sec-applications', 'sec-angle', 'sec-side',
+  'sec-recover', 'sec-mistakes', 'sec-verify', 'sec-vs', 'sec-related', 'sec-faq'
+];
+
+// Fallback label for a TOC entry: translated TOC label, else the section h2, else the id
+const tocLabel = (id: string): string => {
+  if (G.tocItems && G.tocItems[id]) return G.tocItems[id];
+  if (G.sections && G.sections[id] && G.sections[id].h2) return G.sections[id].h2;
+  return id;
+};
+
+// Image mapping per section (matches English TangentRatioGuide.astro placement)
+const sectionImages: Record<string, { src: string; altKey: string; captionKey: string }> = {
+  'sec-triangle': { src: 'tangent-anatomy.svg', altKey: 'imgAlt', captionKey: 'figcaption' },
+  'sec-whatis': { src: 'tangent-formula.svg', altKey: 'imgAlt', captionKey: 'figcaption' },
+  'sec-applications': { src: 'tangent-practical.svg', altKey: 'imgAlt', captionKey: 'figcaption' },
+  'sec-angle': { src: 'tangent-angle-change.svg', altKey: 'imgAlt', captionKey: 'figcaption' },
+};
+
+// Related calculator URLs in order (matches English TangentRatioGuide.astro)
+const relatedUrls = [
+  '/sine-ratio-calculator/',
+  '/cosine-ratio-calculator/',
+  '/cotangent-ratio-calculator/',
+  '/secant-ratio-calculator/',
+  '/cosecant-ratio-calculator/',
+  '/right-triangle-angle-calculator/',
+  '/right-triangle-side-calculator/',
+];
+
+// Related items: prefer name/desc objects from the sec-related section,
+// fall back to top-level relatedItems strings if present
+const relatedSection = G.sections && G.sections['sec-related'];
+const relatedEntries: Array<{ name: string; desc?: string }> =
+  (relatedSection && Array.isArray(relatedSection.related) && relatedSection.related.length > 0)
+    ? relatedSection.related
+    : (Array.isArray(G.relatedItems) ? G.relatedItems.map((label: string) => ({ name: label })) : []);
+---
+
+<!-- Table of Contents -->
+<nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label="Guide contents">
+  <h2 class="font-headline text-2xl font-bold">{G.tocHeading || 'In This Guide'}</h2>
+  {G.tocItems && (
+  <ol class="mt-4 grid gap-2 sm:grid-cols-2">
+    {tocOrder.map((id) => (
+      <li><a class="hover:text-primary hover:underline" href={`#${id}`} set:html={rich(tocLabel(id))} /></li>
+    ))}
+  </ol>
+  )}
+</nav>
+
+<!-- Content Sections -->
+{G && sectionOrder.map((sectionId) => {
+  const s = G.sections[sectionId];
+  if (!s) return null;
+  const img = sectionImages[sectionId];
+  const listItems = s.steps || s.list || s.listItems;
+  // Table: batch files store tables:[{headers,rows}] (plural); support legacy s.table too
+  const table = (s.table && s.table.headers && s.table.rows)
+    ? s.table
+    : (Array.isArray(s.tables) && s.tables[0] && s.tables[0].headers && s.tables[0].rows ? s.tables[0] : null);
+  // Figure text: batch files store figures:[{alt,caption}] (plural); support legacy flat keys too
+  const figObj = Array.isArray(s.figures) && s.figures.length > 0 ? s.figures[0] : null;
+  const imgAlt = (img && s[img.altKey]) || (figObj && figObj.alt) || '';
+  const figcaption = (img && s[img.captionKey]) || (figObj && figObj.caption) || '';
+  return (
+    <section id={sectionId} class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+      <h2 set:html={rich(s.h2)} />
+      {s.blocks ? (
+        // Use ordered blocks if available (batch1/batch2 format)
+        s.blocks.map((block: any) => {
+          if (block.kind === 'h3') {
+            return <h3 set:html={rich(block.text)} />;
+          } else {
+            return <p set:html={rich(block.text)} />;
+          }
+        })
+      ) : s.paragraphs ? (
+        // Fallback: interleave h3s and paragraphs (batch3 format)
+        <>
+          {s.h3s && s.h3s.length > 0 ? (
+            s.paragraphs.map((p: string, i: number) => (
+              <>
+                {s.h3s[i] && <h3 set:html={rich(s.h3s[i])} />}
+                <p set:html={rich(p)} />
+              </>
+            ))
+          ) : (
+            s.paragraphs.map((p: string) => <p set:html={rich(p)} />)
+          )}
+          {/* Render remaining h3s if more h3s than paragraphs */}
+          {s.h3s && s.h3s.length > s.paragraphs.length &&
+            s.h3s.slice(s.paragraphs.length).map((h: string) => <h3 set:html={rich(h)} />)
+          }
+        </>
+      ) : null}
+      {listItems && (
+        <ol>
+          {listItems.map((item: string) => <li set:html={rich(item)} />)}
+        </ol>
+      )}
+      {s.closingParagraphs && s.closingParagraphs.map((p: string) => <p set:html={rich(p)} />)}
+      {table && (
+        <div class="not-prose overflow-x-auto my-6">
+          <table class="w-full min-w-[480px] border-collapse text-sm">
+            <thead>
+              <tr class="border-b border-outline-variant/30 text-left">
+                {table.headers.map((h: string) => <th class="py-2 pr-4 font-semibold" set:html={rich(h)} />)}
+              </tr>
+            </thead>
+            <tbody>
+              {table.rows.map((row: string[]) => (
+                <tr class="border-b border-outline-variant/15">
+                  {row.map((cell: string, ci: number) => (
+                    <td class={ci === 2 ? "py-2 pr-4 font-mono" : "py-2 pr-4"} set:html={rich(cell)} />
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+      {img && imgAlt && (
+        <figure class="not-prose my-6">
+          <img src={imgSrc(img.src)} alt={imgAlt} class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+          {figcaption && <figcaption class="mt-2 text-center text-sm text-on-surface-variant" set:html={rich(figcaption)} />}
+        </figure>
+      )}
+    </section>
+  );
+})}
+
+<!-- Related Calculators -->
+<section id="sec-related" class="mx-auto mt-12 w-full max-w-4xl section-shell scroll-mt-24">
+  <h2 class="font-headline text-2xl font-bold text-on-surface">{G.relatedHeading || 'Related Calculators'}</h2>
+  {G.relatedIntro && <p class="mt-2 max-w-2xl text-sm text-on-surface-variant" set:html={rich(G.relatedIntro)} />}
+  {relatedEntries.length > 0 && (
+  <ul class="mt-5 grid gap-x-12 sm:grid-cols-2">
+    {relatedEntries.map((entry, i: number) => {
+      const num = String(i + 1).padStart(2, '0');
+      const url = relatedUrls[i] ? (locale === 'en' ? relatedUrls[i] : `/${locale}${relatedUrls[i]}`) : '#';
+      return (
+        <li class="border-b border-primary/10">
+          <a href={url} class="group flex items-baseline gap-4 py-3.5">
+            <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">{num}</span>
+            <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary" set:html={rich(entry.name)} />
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+  )}
+</section>
+
+<!-- FAQs -->
+{G.faqs && (
+<section id="sec-faq" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <Faq
+    heading={G.faqHeading || 'FAQs'}
+    items={G.faqs.map((f: any) => ({
+      question: f.question || f.q,
+      answer: rich(f.answer || f.a)
+    }))}
+  />
+</section>
+)}
+
+<!-- Conclusion -->
+{G.conclusion && (
+<section class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2 set:html={rich(G.conclusion.h2)} />
+  {G.conclusion.paragraphs && G.conclusion.paragraphs.map((p: string) => <p set:html={rich(p)} />)}
+</section>
+)}
+{G.sections && G.sections['sec-conclusion'] && (
+<section class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2 set:html={rich(G.sections['sec-conclusion'].h2)} />
+  {G.sections['sec-conclusion'].blocks && G.sections['sec-conclusion'].blocks.map((block: any) => (
+    block.kind === 'h3' ? <h3 set:html={rich(block.text)} /> : <p set:html={rich(block.text)} />
+  ))}
+</section>
+)}

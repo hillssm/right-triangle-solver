@@ -23,6 +23,9 @@ import { SECANT_GUIDE_TRANSLATIONS } from 'src/data/secantGuideTranslations';
 import SineRatioGuide from 'theme/components/SineRatioGuide.astro';
 import SineRatioGuideLocalized from 'theme/components/SineRatioGuideLocalized.astro';
 import { SINE_GUIDE_TRANSLATIONS } from 'src/data/sineGuideTranslations';
+import TangentRatioGuide from 'theme/components/TangentRatioGuide.astro';
+import TangentRatioGuideLocalized from 'theme/components/TangentRatioGuideLocalized.astro';
+import { TANGENT_GUIDE_TRANSLATIONS } from 'src/data/tangentGuideTranslations';
 import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
@@ -39,10 +42,10 @@ const isCosecantPage = page.slug === 'cosecant-ratio-calculator' && (locale === 
 const isCosinePage = page.slug === 'cosine-ratio-calculator' && (locale === 'en' || COSINE_GUIDE_TRANSLATIONS[locale]);
 const isCotangentPage = page.slug === 'cotangent-ratio-calculator' && (locale === 'en' || COTANGENT_GUIDE_TRANSLATIONS[locale]);
 const isSecantPage = page.slug === 'secant-ratio-calculator' && (locale === 'en' || SECANT_GUIDE_TRANSLATIONS[locale]);
-// Proactive: tangent (Page 14) guide not yet built; suppress old thin content when its EN guide renders.
-// Sine (Page 13) translations now exist; isSinePage checks them like the other ratio pages.
+// Sine (Page 13) translations exist; isSinePage checks them like the other ratio pages.
 const isSinePage = page.slug === 'sine-ratio-calculator' && (locale === 'en' || SINE_GUIDE_TRANSLATIONS[locale]);
-const isTangentPage = page.slug === 'tangent-ratio-calculator' && locale === 'en';
+// Tangent (Page 14) guide now built; isTangentPage checks translations like the other ratio pages.
+const isTangentPage = page.slug === 'tangent-ratio-calculator' && (locale === 'en' || TANGENT_GUIDE_TRANSLATIONS[locale]);
 const trigUi = getFocusedTrigRatioUi(locale);
 const runtimeTranslations = getFocusedTrigRatioRuntimeTranslations(page, locale);
 const sharedCalculatorUi = getFocusedSideCalculatorUi(locale);
@@ -543,4 +546,7 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
 
   {page.slug === 'sine-ratio-calculator' && locale === 'en' ? <SineRatioGuide /> : null}
   {page.slug === 'sine-ratio-calculator' && locale !== 'en' && SINE_GUIDE_TRANSLATIONS[locale] ? <SineRatioGuideLocalized guide={SINE_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
+
+  {page.slug === 'tangent-ratio-calculator' && locale === 'en' ? <TangentRatioGuide /> : null}
+  {page.slug === 'tangent-ratio-calculator' && locale !== 'en' && TANGENT_GUIDE_TRANSLATIONS[locale] ? <TangentRatioGuideLocalized guide={TANGENT_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>

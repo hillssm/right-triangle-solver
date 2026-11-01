@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="48" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">How the Tangent Formula Works</text>
+  <rect x="30" y="90" width="360" height="470" rx="10" fill="#1c1b1b" stroke="#f1c97d" stroke-width="1.5"/>
+  <text x="210" y="124" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">Stage 1: Identify the sides</text>
+  <line x1="70" y1="500" x2="350" y2="290" stroke="#a3a3a3" stroke-width="8"/>
+  <line x1="70" y1="500" x2="350" y2="500" stroke="#38bdf8" stroke-width="8"/>
+  <line x1="350" y1="500" x2="350" y2="290" stroke="#f1c97d" stroke-width="8"/>
+  <polyline points="326,500 326,476 350,476" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polyline points="112.0,500.0 112.0,498.6 111.9,497.3 111.8,496.0 111.7,494.6 111.5,493.3 111.2,491.9 110.9,490.6 110.6,489.3 110.3,488.0 109.8,486.7 109.4,485.4 108.9,484.2 108.4,482.9 107.8,481.7 107.2,480.5 106.6,479.3 105.9,478.2 105.2,477.0 104.4,475.9 103.6,474.8" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="70" cy="500" r="6" fill="#ffffff"/>
+  <circle cx="350" cy="500" r="6" fill="#ffffff"/>
+  <circle cx="350" cy="290" r="6" fill="#ffffff"/>
+  <text x="36" y="534" font-size="24" font-weight="700" fill="#ffffff">A</text>
+  <text x="360" y="534" font-size="24" font-weight="700" fill="#ffffff">B</text>
+  <text x="360" y="282" font-size="24" font-weight="700" fill="#ffffff">C</text>
+  <text x="210" y="534" font-size="20" fill="#38bdf8" text-anchor="middle">b = 4</text>
+  <text x="364" y="400" font-size="20" fill="#f1c97d" text-anchor="start">a = 3</text>
+  <text x="180" y="380" font-size="20" fill="#a3a3a3" text-anchor="middle">c = 5</text>
+  <rect x="410" y="90" width="360" height="470" rx="10" fill="#1c1b1b" stroke="#f1c97d" stroke-width="1.5"/>
+  <text x="590" y="124" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">Stage 2: Apply the formula</text>
+  <text x="590" y="300" font-size="44" font-weight="700" fill="#ffffff" text-anchor="middle">tan(A) = a / b</text>
+  <text x="590" y="350" font-size="20" fill="#d4d4d4" text-anchor="middle">Opposite divided by adjacent</text>
+  <rect x="790" y="90" width="380" height="470" rx="10" fill="#1c1b1b" stroke="#f1c97d" stroke-width="1.5"/>
+  <text x="980" y="124" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">Stage 3: Calculate the ratio</text>
+  <text x="980" y="280" font-size="40" font-weight="700" fill="#ffffff" text-anchor="middle">tan(A) = 3 / 4</text>
+  <text x="980" y="340" font-size="48" font-weight="700" fill="#f1c97d" text-anchor="middle">= 0.75</text>
+  <text x="980" y="400" font-size="20" fill="#d4d4d4" text-anchor="middle">The opposite side is 75%</text>
+  <text x="980" y="430" font-size="20" fill="#d4d4d4" text-anchor="middle">as long as the adjacent side.</text>
+</svg>

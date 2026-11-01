@@ -124,7 +124,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "[[[\\boxed{\\cot(A)=\\frac{1}{\\tan(A)}=\\frac{b}{a}}}]]]"
+            "text": "[[[\\boxed{\\cot(A)=\\frac{1}{\\tan(A)}=\\frac{b}{a}}]]]]"
           },
           {
             "kind": "p",
@@ -190,7 +190,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "[[[\\boxed{\\cot(A)=\\frac{b}{a}}}]]]"
+            "text": "[[[\\boxed{\\cot(A)=\\frac{b}{a}}]]]]"
           },
           {
             "kind": "p",
@@ -607,7 +607,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "Verifique [[\\tan(A)=a/b]] e depois confirme [[\\cot(A)=1/\\tan(A)]]. Com [[a=3]] e [[b=4]]: [[\\tan(A)=3/4=0.75]], de modo que [[\\cot(A)=1/0.75\\approx1.3333}]]. Uma divergência entre os dois caminhos indica uma fração invertida ou um lado rotulado errado."
+            "text": "Verifique [[\\tan(A)=a/b]] e depois confirme [[\\cot(A)=1/\\tan(A)]]. Com [[a=3]] e [[b=4]]: [[\\tan(A)=3/4=0.75]], de modo que [[\\cot(A)=1/0.75\\approx1.3333]]. Uma divergência entre os dois caminhos indica uma fração invertida ou um lado rotulado errado."
           },
           {
             "kind": "h3",
@@ -641,7 +641,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
         ],
         "steps": [],
         "closingParagraphs": [
-          "A cotangente e a tangente são o par recíproco: [[\\cot(A)=1/\\tan(A)]]. Se [[\\tan(A)=0.75]], então [[\\cot(A)\\approx1.3333}]]. Use a cotangente quando uma fórmula pedir o adjacente dividido pelo oposto, quando estiver trabalhando relações de percurso para elevação, ou quando apenas os dois catetos forem conhecidos; use a tangente para elevação sobre percurso, o seno para o lado oposto contra a hipotenusa e o cosseno para o lado adjacente contra a hipotenusa.",
+          "A cotangente e a tangente são o par recíproco: [[\\cot(A)=1/\\tan(A)]]. Se [[\\tan(A)=0.75]], então [[\\cot(A)\\approx1.3333]]. Use a cotangente quando uma fórmula pedir o adjacente dividido pelo oposto, quando estiver trabalhando relações de percurso para elevação, ou quando apenas os dois catetos forem conhecidos; use a tangente para elevação sobre percurso, o seno para o lado oposto contra a hipotenusa e o cosseno para o lado adjacente contra a hipotenusa.",
           "Para as razões vizinhas, veja a <a href=\"/sine-ratio-calculator/\" class=\"text-primary hover:underline\">Calculadora de Razão Seno</a>, a <a href=\"/cosine-ratio-calculator/\" class=\"text-primary hover:underline\">Calculadora de Razão Cosseno</a>, a <a href=\"/tangent-ratio-calculator/\" class=\"text-primary hover:underline\">Calculadora de Razão Tangente</a>, a <a href=\"/secant-ratio-calculator/\" class=\"text-primary hover:underline\">Calculadora de Razão Secante</a> e a <a href=\"/cosecant-ratio-calculator/\" class=\"text-primary hover:underline\">Calculadora de Razão Cossecante</a>."
         ],
         "tables": [
@@ -838,7 +838,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "[[[\\boxed{\\cot(A)=\\frac{1}{\\tan(A)}=\\frac{b}{a}}}]]]"
+            "text": "[[[\\boxed{\\cot(A)=\\frac{1}{\\tan(A)}=\\frac{b}{a}}]]]]"
           },
           {
             "kind": "p",
@@ -904,7 +904,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "[[[\\boxed{\\cot(A)=\\frac{b}{a}}}]]]"
+            "text": "[[[\\boxed{\\cot(A)=\\frac{b}{a}}]]]]"
           },
           {
             "kind": "p",
@@ -1321,7 +1321,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "[[\\tan(A)=a/b]] যাচাই করুন, তারপর [[\\cot(A)=1/\\tan(A)]] নিশ্চিত করুন। [[a=3]] ও [[b=4]] হলে: [[\\tan(A)=3/4=0.75]], তাই [[\\cot(A)=1/0.75\\approx1.3333}]]। দুটি পথের মধ্যে অমিল উল্টো ভগ্নাংশ বা ভুল নামাঙ্কিত বাহুর সংকেত দেয়।"
+            "text": "[[\\tan(A)=a/b]] যাচাই করুন, তারপর [[\\cot(A)=1/\\tan(A)]] নিশ্চিত করুন। [[a=3]] ও [[b=4]] হলে: [[\\tan(A)=3/4=0.75]], তাই [[\\cot(A)=1/0.75\\approx1.3333]]। দুটি পথের মধ্যে অমিল উল্টো ভগ্নাংশ বা ভুল নামাঙ্কিত বাহুর সংকেত দেয়।"
           },
           {
             "kind": "h3",
@@ -1355,7 +1355,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
         ],
         "steps": [],
         "closingParagraphs": [
-          "কোট্যানজেন্ট ও ট্যানজেন্ট ব্যুৎক্রম জোড়া: [[\\cot(A)=1/\\tan(A)]]। [[\\tan(A)=0.75]] হলে [[\\cot(A)\\approx1.3333}]]। সংলগ্ন বনাম বিপরীত চাওয়া সূত্রে, দূরত্ব-বনাম-উচ্চতা সম্পর্কে কাজ করলে, বা শুধু দুটি বাহু জানা থাকলে কোট্যানজেন্ট নিন; উচ্চতা-বনাম-দূরত্বে ট্যানজেন্ট, অতিভুজের বিপরীতে বিপরীত বাহুতে সাইন, আর অতিভুজের বিপরীতে সংলগ্ন বাহুতে কোসাইন নিন।",
+          "কোট্যানজেন্ট ও ট্যানজেন্ট ব্যুৎক্রম জোড়া: [[\\cot(A)=1/\\tan(A)]]। [[\\tan(A)=0.75]] হলে [[\\cot(A)\\approx1.3333]]। সংলগ্ন বনাম বিপরীত চাওয়া সূত্রে, দূরত্ব-বনাম-উচ্চতা সম্পর্কে কাজ করলে, বা শুধু দুটি বাহু জানা থাকলে কোট্যানজেন্ট নিন; উচ্চতা-বনাম-দূরত্বে ট্যানজেন্ট, অতিভুজের বিপরীতে বিপরীত বাহুতে সাইন, আর অতিভুজের বিপরীতে সংলগ্ন বাহুতে কোসাইন নিন।",
           "পার্শ্ববর্তী অনুপাতগুলোর জন্য দেখুন <a href=\"/sine-ratio-calculator/\" class=\"text-primary hover:underline\">সাইন অনুপাত ক্যালকুলেটর</a>, <a href=\"/cosine-ratio-calculator/\" class=\"text-primary hover:underline\">কোসাইন অনুপাত ক্যালকুলেটর</a>, <a href=\"/tangent-ratio-calculator/\" class=\"text-primary hover:underline\">ট্যানজেন্ট অনুপাত ক্যালকুলেটর</a>, <a href=\"/secant-ratio-calculator/\" class=\"text-primary hover:underline\">সেক্যান্ট অনুপাত ক্যালকুলেটর</a> ও <a href=\"/cosecant-ratio-calculator/\" class=\"text-primary hover:underline\">কোসেক্যান্ট অনুপাত ক্যালকুলেটর</a>।"
         ],
         "tables": [
@@ -1552,7 +1552,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "[[[\\boxed{\\cot(A)=\\frac{1}{\\tan(A)}=\\frac{b}{a}}}]]]"
+            "text": "[[[\\boxed{\\cot(A)=\\frac{1}{\\tan(A)}=\\frac{b}{a}}]]]]"
           },
           {
             "kind": "p",
@@ -1618,7 +1618,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "[[[\\boxed{\\cot(A)=\\frac{b}{a}}}]]]"
+            "text": "[[[\\boxed{\\cot(A)=\\frac{b}{a}}]]]]"
           },
           {
             "kind": "p",
@@ -2035,7 +2035,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "[[\\tan(A)=a/b]] を確かめ、次に [[\\cot(A)=1/\\tan(A)]] を確認します。[[a=3]]、[[b=4]] の場合、[[\\tan(A)=3/4=0.75]] なので、[[\\cot(A)=1/0.75\\approx1.3333}]] です。2つの経路の不一致は、分数の反転や辺の呼び間違いのサインです。"
+            "text": "[[\\tan(A)=a/b]] を確かめ、次に [[\\cot(A)=1/\\tan(A)]] を確認します。[[a=3]]、[[b=4]] の場合、[[\\tan(A)=3/4=0.75]] なので、[[\\cot(A)=1/0.75\\approx1.3333]] です。2つの経路の不一致は、分数の反転や辺の呼び間違いのサインです。"
           },
           {
             "kind": "h3",
@@ -2069,7 +2069,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
         ],
         "steps": [],
         "closingParagraphs": [
-          "余接と正接は逆数のペアです。[[\\cot(A)=1/\\tan(A)]]。[[\\tan(A)=0.75]] なら [[\\cot(A)\\approx1.3333}]] です。公式が隣辺÷対辺を求める場合、走り÷上がりの関係を扱う場合、2辺だけが既知の場合には余接を使います。上がり÷走りには正接、斜辺に対する対辺には正弦、斜辺に対する隣辺には余弦を使います。",
+          "余接と正接は逆数のペアです。[[\\cot(A)=1/\\tan(A)]]。[[\\tan(A)=0.75]] なら [[\\cot(A)\\approx1.3333]] です。公式が隣辺÷対辺を求める場合、走り÷上がりの関係を扱う場合、2辺だけが既知の場合には余接を使います。上がり÷走りには正接、斜辺に対する対辺には正弦、斜辺に対する隣辺には余弦を使います。",
           "隣の比については、<a href=\"/sine-ratio-calculator/\" class=\"text-primary hover:underline\">正弦比計算機</a>、<a href=\"/cosine-ratio-calculator/\" class=\"text-primary hover:underline\">余弦比計算機</a>、<a href=\"/tangent-ratio-calculator/\" class=\"text-primary hover:underline\">正接比計算機</a>、<a href=\"/secant-ratio-calculator/\" class=\"text-primary hover:underline\">正割比計算機</a>、<a href=\"/cosecant-ratio-calculator/\" class=\"text-primary hover:underline\">余割比計算機</a>をご覧ください。"
         ],
         "tables": [
@@ -2266,7 +2266,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "[[[\\boxed{\\cot(A)=\\frac{1}{\\tan(A)}=\\frac{b}{a}}}]]]"
+            "text": "[[[\\boxed{\\cot(A)=\\frac{1}{\\tan(A)}=\\frac{b}{a}}]]]]"
           },
           {
             "kind": "p",
@@ -2332,7 +2332,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "[[[\\boxed{\\cot(A)=\\frac{b}{a}}}]]]"
+            "text": "[[[\\boxed{\\cot(A)=\\frac{b}{a}}]]]]"
           },
           {
             "kind": "p",
@@ -2749,7 +2749,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "[[\\tan(A)=a/b]] 를 확인한 뒤 [[\\cot(A)=1/\\tan(A)]] 를 확정합니다. [[a=3]], [[b=4]] 이면 [[\\tan(A)=3/4=0.75]] 이므로 [[\\cot(A)=1/0.75\\approx1.3333}]] 입니다. 두 경로 사이의 불일치는 분수 뒤집기나 변 이름 착오의 신호입니다."
+            "text": "[[\\tan(A)=a/b]] 를 확인한 뒤 [[\\cot(A)=1/\\tan(A)]] 를 확정합니다. [[a=3]], [[b=4]] 이면 [[\\tan(A)=3/4=0.75]] 이므로 [[\\cot(A)=1/0.75\\approx1.3333]] 입니다. 두 경로 사이의 불일치는 분수 뒤집기나 변 이름 착오의 신호입니다."
           },
           {
             "kind": "h3",
@@ -2783,7 +2783,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
         ],
         "steps": [],
         "closingParagraphs": [
-          "코탄젠트와 탄젠트는 역수 쌍입니다. [[\\cot(A)=1/\\tan(A)]]. [[\\tan(A)=0.75]] 이면 [[\\cot(A)\\approx1.3333}]] 입니다. 공식이 인접 변 ÷ 대변을 요구하거나, 주행 거리 대 상승 관계를 다루거나, 두 변만 알고 있을 때는 코탄젠트를 씁니다. 상승 ÷ 주행 거리에는 탄젠트, 빗변에 대한 대변에는 사인, 빗변에 대한 인접 변에는 코사인을 씁니다.",
+          "코탄젠트와 탄젠트는 역수 쌍입니다. [[\\cot(A)=1/\\tan(A)]]. [[\\tan(A)=0.75]] 이면 [[\\cot(A)\\approx1.3333]] 입니다. 공식이 인접 변 ÷ 대변을 요구하거나, 주행 거리 대 상승 관계를 다루거나, 두 변만 알고 있을 때는 코탄젠트를 씁니다. 상승 ÷ 주행 거리에는 탄젠트, 빗변에 대한 대변에는 사인, 빗변에 대한 인접 변에는 코사인을 씁니다.",
           "이웃 비율에 대해서는 <a href=\"/sine-ratio-calculator/\" class=\"text-primary hover:underline\">사인 비율 계산기</a>, <a href=\"/cosine-ratio-calculator/\" class=\"text-primary hover:underline\">코사인 비율 계산기</a>, <a href=\"/tangent-ratio-calculator/\" class=\"text-primary hover:underline\">탄젠트 비율 계산기</a>, <a href=\"/secant-ratio-calculator/\" class=\"text-primary hover:underline\">시컨트 비율 계산기</a>, <a href=\"/cosecant-ratio-calculator/\" class=\"text-primary hover:underline\">코시컨트 비율 계산기</a>를 참고하십시오."
         ],
         "tables": [
@@ -2980,7 +2980,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "[[[\\boxed{\\cot(A)=\\frac{1}{\\tan(A)}=\\frac{b}{a}}}]]]"
+            "text": "[[[\\boxed{\\cot(A)=\\frac{1}{\\tan(A)}=\\frac{b}{a}}]]]]"
           },
           {
             "kind": "p",
@@ -3046,7 +3046,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "[[[\\boxed{\\cot(A)=\\frac{b}{a}}}]]]"
+            "text": "[[[\\boxed{\\cot(A)=\\frac{b}{a}}]]]]"
           },
           {
             "kind": "p",
@@ -3463,7 +3463,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "Sahkan [[\\tan(A)=a/b]], kemudian pastikan [[\\cot(A)=1/\\tan(A)]]. Dengan [[a=3]] dan [[b=4]]: [[\\tan(A)=3/4=0.75]], jadi [[\\cot(A)=1/0.75\\approx1.3333}]]. Ketidakpadanan antara dua laluan menandakan pecahan terbalik atau sisi tersalah label."
+            "text": "Sahkan [[\\tan(A)=a/b]], kemudian pastikan [[\\cot(A)=1/\\tan(A)]]. Dengan [[a=3]] dan [[b=4]]: [[\\tan(A)=3/4=0.75]], jadi [[\\cot(A)=1/0.75\\approx1.3333]]. Ketidakpadanan antara dua laluan menandakan pecahan terbalik atau sisi tersalah label."
           },
           {
             "kind": "h3",
@@ -3497,7 +3497,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
         ],
         "steps": [],
         "closingParagraphs": [
-          "Kotangen dan tangen ialah pasangan salingan: [[\\cot(A)=1/\\tan(A)]]. Jika [[\\tan(A)=0.75]], maka [[\\cot(A)\\approx1.3333}]]. Gunakan kotangen apabila formula memanggil sisi bersebelahan dibahagi sisi bertentangan, apabila anda mengusahakan hubungan jarak-mendatar-kepada-kenaikan, atau apabila hanya dua kaki diketahui; gunakan tangen untuk kenaikan-kepada-jarak-mendatar, sinus untuk sisi bertentangan melawan hipotenus, dan kosinus untuk sisi bersebelahan melawan hipotenus.",
+          "Kotangen dan tangen ialah pasangan salingan: [[\\cot(A)=1/\\tan(A)]]. Jika [[\\tan(A)=0.75]], maka [[\\cot(A)\\approx1.3333]]. Gunakan kotangen apabila formula memanggil sisi bersebelahan dibahagi sisi bertentangan, apabila anda mengusahakan hubungan jarak-mendatar-kepada-kenaikan, atau apabila hanya dua kaki diketahui; gunakan tangen untuk kenaikan-kepada-jarak-mendatar, sinus untuk sisi bertentangan melawan hipotenus, dan kosinus untuk sisi bersebelahan melawan hipotenus.",
           "Bagi nisbah jiran, lihat <a href=\"/sine-ratio-calculator/\" class=\"text-primary hover:underline\">Kalkulator Nisbah Sinus</a>, <a href=\"/cosine-ratio-calculator/\" class=\"text-primary hover:underline\">Kalkulator Nisbah Kosinus</a>, <a href=\"/tangent-ratio-calculator/\" class=\"text-primary hover:underline\">Kalkulator Nisbah Tangen</a>, <a href=\"/secant-ratio-calculator/\" class=\"text-primary hover:underline\">Kalkulator Nisbah Sekan</a> dan <a href=\"/cosecant-ratio-calculator/\" class=\"text-primary hover:underline\">Kalkulator Nisbah Kosekan</a>."
         ],
         "tables": [
@@ -3694,7 +3694,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "[[[\\boxed{\\cot(A)=\\frac{1}{\\tan(A)}=\\frac{b}{a}}}]]]"
+            "text": "[[[\\boxed{\\cot(A)=\\frac{1}{\\tan(A)}=\\frac{b}{a}}]]]]"
           },
           {
             "kind": "p",
@@ -3760,7 +3760,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "[[[\\boxed{\\cot(A)=\\frac{b}{a}}}]]]"
+            "text": "[[[\\boxed{\\cot(A)=\\frac{b}{a}}]]]]"
           },
           {
             "kind": "p",
@@ -4177,7 +4177,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           },
           {
             "kind": "p",
-            "text": "Zweryfikuj [[\\tan(A)=a/b]], a potem potwierdź [[\\cot(A)=1/\\tan(A)]]. Przy [[a=3]] i [[b=4]]: [[\\tan(A)=3/4=0.75]], więc [[\\cot(A)=1/0.75\\approx1.3333}]]. Niezgodność między dwiema drogami sygnalizuje odwrócony ułamek albo błędnie oznaczony bok."
+            "text": "Zweryfikuj [[\\tan(A)=a/b]], a potem potwierdź [[\\cot(A)=1/\\tan(A)]]. Przy [[a=3]] i [[b=4]]: [[\\tan(A)=3/4=0.75]], więc [[\\cot(A)=1/0.75\\approx1.3333]]. Niezgodność między dwiema drogami sygnalizuje odwrócony ułamek albo błędnie oznaczony bok."
           },
           {
             "kind": "h3",
@@ -4211,7 +4211,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
         ],
         "steps": [],
         "closingParagraphs": [
-          "Cotangens i tangens tworzą parę odwrotną: [[\\cot(A)=1/\\tan(A)]]. Jeśli [[\\tan(A)=0.75]], to [[\\cot(A)\\approx1.3333}]]. Sięgaj po cotangens, gdy wzór wymaga boku przyległego podzielonego przez przeciwległy, gdy pracujesz nad relacjami zasięgu do wzniesienia albo gdy znane są tylko dwie przyprostokątne; sięgaj po tangens dla wzniesienia do zasięgu, po sinus dla boku przeciwległego względem przeciwprostokątnej, a po cosinus dla boku przyległego względem przeciwprostokątnej.",
+          "Cotangens i tangens tworzą parę odwrotną: [[\\cot(A)=1/\\tan(A)]]. Jeśli [[\\tan(A)=0.75]], to [[\\cot(A)\\approx1.3333]]. Sięgaj po cotangens, gdy wzór wymaga boku przyległego podzielonego przez przeciwległy, gdy pracujesz nad relacjami zasięgu do wzniesienia albo gdy znane są tylko dwie przyprostokątne; sięgaj po tangens dla wzniesienia do zasięgu, po sinus dla boku przeciwległego względem przeciwprostokątnej, a po cosinus dla boku przyległego względem przeciwprostokątnej.",
           "Sąsiednie stosunki znajdziesz w: <a href=\"/sine-ratio-calculator/\" class=\"text-primary hover:underline\">kalkulatorze stosunku sinusa</a>, <a href=\"/cosine-ratio-calculator/\" class=\"text-primary hover:underline\">kalkulatorze stosunku cosinusa</a>, <a href=\"/tangent-ratio-calculator/\" class=\"text-primary hover:underline\">kalkulatorze stosunku tangensa</a>, <a href=\"/secant-ratio-calculator/\" class=\"text-primary hover:underline\">kalkulatorze stosunku secansa</a> i <a href=\"/cosecant-ratio-calculator/\" class=\"text-primary hover:underline\">kalkulatorze stosunku cosecansa</a>."
         ],
         "tables": [

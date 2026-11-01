@@ -1,0 +1,471 @@
+---
+/**
+ * CotangentRatioGuide.astro - Educational guide for the Cotangent Ratio Calculator page.
+ * Built from the user's actual master prompt (Page 11 of 45). EN only.
+ * Sections follow the prompt: intro, triangle anatomy, what is cotangent,
+ * formula derivation, calculator walkthrough, 4 foundational examples,
+ * 12 practical examples, angle relationship, finding an angle, 15 mistakes,
+ * verification, ratio comparison, 12 FAQs, related calculators.
+ */
+import katex from 'katex';
+import Faq from 'theme/components/Faq.astro';
+
+const rich = (s: string): string => {
+  if (!s || typeof s !== 'string') return '';
+  let out = s;
+  out = out.replace(
+    /\[\[\[(.+?)\]\]\]/g,
+    (_, l) =>
+      `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
+  );
+  out = out.replace(
+    /\[\[(.+?)\]\]/g,
+    (_, l) =>
+      `<span dir="ltr" class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>`
+  );
+  return out;
+};
+
+const imgSrc = (name: string): string => `/images/cotangent/${name}`;
+
+const faqs = [
+  {
+    question: 'What is the cotangent formula for a right triangle?',
+    answer: 'cot(A) = b / a: divide the side adjacent to angle A by the side opposite angle A. With an adjacent side of 4 cm and an opposite side of 3 cm, the result is 4/3, about 1.3333.',
+  },
+  {
+    question: 'How is cotangent related to tangent?',
+    answer: 'Cotangent is the reciprocal of tangent: cot(A) = 1 / tan(A). If tan(A) = 3/4 = 0.75, then cot(A) = 4/3, about 1.3333. The two ratios describe the same triangle from flipped perspectives, and the reciprocal check is the fastest way to verify a result.',
+  },
+  {
+    question: 'What is the difference between cotangent and cosine?',
+    answer: 'Cotangent divides the adjacent side by the opposite side (b/a), using the two legs only. Cosine divides the adjacent side by the hypotenuse (b/c). Cotangent is the reciprocal of tangent, not of cosine; that distinction is one of the most tested mistakes in early trigonometry.',
+  },
+  {
+    question: 'Can cotangent be greater than 1?',
+    answer: 'Yes. Cotangent has no 0-to-1 ceiling because no hypotenuse is involved. When the adjacent side is longer than the opposite side, the result is above 1: for a 30-degree angle, cot(30 deg) is about 1.7321. Values of 2.4, 12, or any positive finite number are all possible.',
+  },
+  {
+    question: 'What does a cotangent value of 1 mean?',
+    answer: 'The adjacent and opposite sides are equal in length, so the triangle is isosceles at the reference angle and angle A is 45 degrees. A 6 cm adjacent side and a 6 cm opposite side give cot(A) = 6/6 = 1.',
+  },
+  {
+    question: 'Can cotangent be less than 1?',
+    answer: 'Yes, whenever the opposite side is longer than the adjacent side. An adjacent side of 6 m and an opposite side of 8 m give cot(A) = 6/8 = 0.75, and the reference angle is then greater than 45 degrees.',
+  },
+  {
+    question: 'Does cotangent have measurement units?',
+    answer: 'No. Both inputs are lengths measured in the same unit, so the units cancel: 4 m / 3 m = 4/3, exactly as 400 cm / 300 cm = 4/3. Report cotangent as a plain dimensionless number, never with degrees, metres, or feet attached.',
+  },
+  {
+    question: 'How do you calculate cotangent from side lengths?',
+    answer: 'Measure the adjacent side b and the opposite side a in the same unit, confirm both are positive, then divide: cot(A) = b / a. On this page, enter the adjacent side in the first field and the opposite side in the second, pick compatible units, and click Calculate cot(A).',
+  },
+  {
+    question: 'How can I find an angle from a cotangent ratio?',
+    answer: 'Take the reciprocal to get the tangent ratio, then apply inverse tangent: A = tan^-1(a / b). For cot(A) = 4/3, the tangent ratio is 3/4, so A = tan^-1(0.75), about 36.87 degrees. Set your scientific calculator to degrees mode first. This page\'s calculator returns the ratio, not the angle.',
+  },
+  {
+    question: 'Does the cotangent calculator need the hypotenuse?',
+    answer: 'No. The basic cotangent ratio uses only the two perpendicular sides, so the hypotenuse never enters the formula. It becomes relevant only for follow-up work with sine, cosine, secant, or cosecant, or when the Pythagorean theorem is used to verify the triangle.',
+  },
+  {
+    question: 'What does cotangent mean in terms of run and rise?',
+    answer: 'When angle A is measured from the horizontal, cot(A) is the horizontal run divided by the vertical rise. A cotangent of 0.75 means the horizontal run is 75 percent of the vertical rise; a cotangent of 12 means the run is twelve times the rise. Tangent is the same idea flipped: rise divided by run.',
+  },
+  {
+    question: 'When should I use cotangent instead of tangent?',
+    answer: 'Use cotangent when a formula or procedure specifically calls for adjacent divided by opposite, when you are comparing horizontal run against vertical rise, or when the known sides are the two legs. If the known relationship is rise over run, or opposite over adjacent, tangent is the direct choice.',
+  },
+];
+---
+
+<!-- Table of Contents -->
+<nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label="Guide contents">
+  <h2 class="font-headline text-2xl font-bold">In This Guide</h2>
+  <ol class="mt-4 grid gap-2 sm:grid-cols-2">
+    <li><a class="hover:text-primary hover:underline" href="#cot-intro">What Is a Cotangent Ratio Calculator?</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cot-triangle">Understanding the Adjacent Side and Opposite Side</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cot-whatis">Understanding the Cotangent Ratio</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cot-formula">How the Cotangent Formula Works</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cot-howto">How to Use the Cotangent Ratio Calculator</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cot-examples">Step-by-Step Examples of Calculating Cotangent</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cot-applications">Real-Life Examples of Using the Cotangent Ratio</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cot-angle">Understanding the Relationship Between Cotangent and Angle Size</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cot-recover">How to Find an Angle When Cotangent Is Known</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cot-mistakes">Common Mistakes When Calculating Cotangent</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cot-verify">How to Check Whether Your Cotangent Result Is Valid</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cot-vs">Cotangent vs. Tangent, Sine, and Cosine</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cot-faq">Frequently Asked Questions</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#cot-related">Explore Related Trigonometric Calculators</a></li>
+  </ol>
+</nav>
+
+<!-- SECTION 1: Introduction -->
+<section id="cot-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>What Is a Cotangent Ratio Calculator?</h2>
+  <p>A cotangent ratio calculator answers one question: for an acute angle in a right triangle, how does the side next to the angle compare with the side across from it? Enter the two side lengths, and the tool divides the adjacent side by the opposite side, returning <span set:html={rich('[[\\cot(A)=b/a]]')} />. With an adjacent side of 4 cm and an opposite side of 3 cm, the calculation is <span set:html={rich('[[4/3\\approx1.3333]]')} />: the adjacent side is roughly 1.3333 times as long as the opposite side. That decimal is the complete answer. It carries no units, since centimetres cancel in the division, and it is not an angle in degrees. The hypotenuse never enters this calculation; the two perpendicular legs are sufficient. Cotangent is also the reciprocal of tangent, which is why many textbooks introduce it as the flipped form of <span set:html={rich('[[\\tan(A)]]')} />.</p>
+</section>
+
+<!-- SECTION 2: Understanding the right triangle -->
+<section id="cot-triangle" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding the Adjacent Side and Opposite Side</h2>
+
+  <h3>What Is a Right Triangle?</h3>
+  <p>A right triangle has one angle of exactly <span set:html={rich('[[90^\\circ]]')} />, the angle between two perpendicular lines, like a wall meeting a level floor. The hypotenuse sits opposite that right angle and is always the longest side. The other two angles share the remaining 90 degrees, so both are acute. The two legs meet at the right angle, perpendicular to each other, and it is their relationship that cotangent describes.</p>
+
+  <h3>What Is the Adjacent Side?</h3>
+  <p>The adjacent side <span set:html={rich('[[b]]')} /> is the leg that touches the reference angle <span set:html={rich('[[A]]')} /> without being the hypotenuse. In practical problems it often plays the role of the horizontal run: ground distance from a ladder's base, the horizontal projection of a roof, or the horizontal component of a force. It goes in the numerator of the cotangent formula. Which leg counts as adjacent depends on the chosen reference angle, so switching from angle <span set:html={rich('[[A]]')} /> to angle <span set:html={rich('[[B]]')} /> swaps the adjacent and opposite labels.</p>
+
+  <h3>What Is the Opposite Side?</h3>
+  <p>The opposite side <span set:html={rich('[[a]]')} /> sits directly across from angle <span set:html={rich('[[A]]')} /> and never touches its vertex. In practical problems it often plays the role of the vertical rise: the height of a wall, an elevation difference, or the vertical component of a measurement. It goes in the denominator of the cotangent formula, which means making it larger shrinks the ratio and making it smaller grows the ratio.</p>
+
+  <h3>What Is the Hypotenuse?</h3>
+  <p>The hypotenuse <span set:html={rich('[[c]]')} /> is the side opposite the right angle: in any diagram it faces the small square marking the <span set:html={rich('[[90^\\circ]]')} /> corner, and it is strictly longer than either leg. It plays no role in the basic cotangent ratio, which is why the calculator never asks for it. It becomes relevant when sine, cosine, secant, or cosecant enter the work, or when the Pythagorean theorem is used to verify that the two legs form a genuine right triangle.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('cotangent-anatomy.svg')} alt="Right triangle with angle A bottom-left, gold adjacent side b, green opposite side a, cot(A)=b/a" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Angle A sits at the bottom-left; cotangent uses the gold adjacent side b and the green opposite side a, not the hypotenuse c.</figcaption>
+  </figure>
+</section>
+
+<!-- SECTION 3: What is cotangent -->
+<section id="cot-whatis" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding the Cotangent Ratio</h2>
+  <p>Cotangent compares the length next to the reference angle with the length across from it:</p>
+  <p><span set:html={rich('[[[\\cot(A)=\\frac{b}{a}]]]')} /></p>
+  <p>Here <span set:html={rich('[[\\cot(A)]]')} /> is the cotangent of angle <span set:html={rich('[[A]]')} />, <span set:html={rich('[[b]]')} /> is the adjacent side, and <span set:html={rich('[[a]]')} /> is the opposite side: how many times the opposite side fits into the adjacent side.</p>
+
+  <h3>Cotangent as the Reciprocal of Tangent</h3>
+  <p>Tangent divides the opposite side by the adjacent side, <span set:html={rich('[[\\tan(A)=a/b]]')} />. Taking the reciprocal flips that fraction, <span set:html={rich('[[1/\\tan(A)=b/a]]')} />, which is exactly the cotangent formula:</p>
+  <p><span set:html={rich('[[[\\boxed{\\cot(A)=\\frac{1}{\\tan(A)}=\\frac{b}{a}}}]]')} /></p>
+  <p>With <span set:html={rich('[[\\tan(A)=3/4=0.75]]')} />, the reciprocal is <span set:html={rich('[[\\cot(A)=1/0.75=4/3\\approx1.3333]]')} />: the same triangle, described from the opposite direction. This distinction matters because <span set:html={rich('[[\\tan^{-1}]]')} /> denotes the inverse tangent function, while <span set:html={rich('[[1/\\tan(A)]]')} /> is the reciprocal tangent: related ideas, different meanings, different answers.</p>
+
+  <h3>Understanding Cotangent as Run Divided by Rise</h3>
+  <p>When angle <span set:html={rich('[[A]]')} /> is measured from the horizontal, the adjacent side can represent the horizontal run and the opposite side the vertical rise. Then <span set:html={rich('[[\\cot(A)=\\frac{\\text{Horizontal run}}{\\text{Vertical rise}}]]')} />. Tangent gives the same relationship flipped, rise divided by run. This run-over-rise reading makes cotangent the natural ratio for questions like "how much horizontal distance covers how much height?" and it depends on the chosen reference angle and the geometry of the situation.</p>
+
+  <h3>What Does a Cotangent Value Mean?</h3>
+  <p>A cotangent greater than 1 means the adjacent side is longer than the opposite side, and the reference angle is less than <span set:html={rich('[[45^\\circ]]')} />. A cotangent equal to 1 means the two legs are equal and angle <span set:html={rich('[[A]]')} /> is exactly <span set:html={rich('[[45^\\circ]]')} />. A cotangent between 0 and 1 means the opposite side is longer than the adjacent side, and the reference angle lies between <span set:html={rich('[[45^\\circ]]')} /> and <span set:html={rich('[[90^\\circ]]')} />.</p>
+
+  <h3>Why Cotangent Can Be Greater Than 1</h3>
+  <p>Unlike sine and cosine, cotangent has no 0-to-1 ceiling because the hypotenuse never enters the division. For <span set:html={rich('[[\\cot(A)=8/2=4]]')} />, the adjacent side is simply four times the opposite side, and the reference angle is a relatively small acute angle. Any positive finite value is possible.</p>
+
+  <h3>Why Cotangent Can Be Less Than 1</h3>
+  <p>For <span set:html={rich('[[\\cot(A)=3/6=0.5]]')} />, the adjacent side is half the opposite side, so the reference angle is a relatively large acute angle. The ratio drops below 1 without anything going wrong: it is simply the signature of a taller, narrower triangle.</p>
+
+  <h3>Why Cotangent Is a Dimensionless Ratio</h3>
+  <p>Dividing one length by another cancels the units: <span set:html={rich('[[4\\text{ m}/3\\text{ m}=4/3]]')} />, and <span set:html={rich('[[400\\text{ cm}/300\\text{ cm}=4/3]]')} /> as well. The number describes the shape of the triangle, not a measurement with physical units, so write the result as a plain number, never with metres, centimetres, or degrees attached.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('cotangent-reciprocal.svg')} alt="Three stages: 3-4-5 triangle labeled, tangent tan(A)=3/4=0.75, cotangent cot(A)=4/3=1.3333, the reciprocal relationship" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Three stages: label the 3-4-5 triangle, compute tangent tan(A) = 3/4, then flip the fraction to get cot(A) = 4/3.</figcaption>
+  </figure>
+</section>
+
+<!-- SECTION 4: Formula derivation -->
+<section id="cot-formula" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How the Cotangent Formula Works</h2>
+  <p>Start from the definition: cotangent is the adjacent side divided by the opposite side. In this page's notation:</p>
+  <p><span set:html={rich('[[[\\boxed{\\cot(A)=\\frac{b}{a}}]]]')} /></p>
+  <p>The adjacent side is the numerator because it is the length being compared; the opposite side is the denominator because it is the reference length, the "how many of these fit into that" unit. Swapping them gives the tangent ratio instead.</p>
+
+  <h3>Fully Worked Example: A 3-4-5 Right Triangle</h3>
+  <p>Given <span set:html={rich('[[b=4\\text{ cm}]]')} />, <span set:html={rich('[[a=3\\text{ cm}]]')} />, <span set:html={rich('[[c=5\\text{ cm}]]')} />:</p>
+  <p>Step 1: Write the formula. <span set:html={rich('[[\\cot(A)=b/a]]')} /></p>
+  <p>Step 2: Substitute the measurements. <span set:html={rich('[[\\cot(A)=4/3]]')} /></p>
+  <p>Step 3: Divide. <span set:html={rich('[[\\boxed{\\cot(A)\\approx1.3333}]]')} /></p>
+  <p>Step 4: Interpret the answer. The adjacent side is about 1.3333 times the opposite side.</p>
+  <p>Step 5: Verify with the tangent ratio. <span set:html={rich('[[\\tan(A)=3/4=0.75]]')} />, and <span set:html={rich('[[1/0.75\\approx1.3333]]')} />. Both paths land on the same number, which is exactly how reciprocal ratios behave.</p>
+</section>
+
+<!-- SECTION 5: Calculator walkthrough -->
+<section id="cot-howto" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Use the Cotangent Ratio Calculator</h2>
+  <p>The walkthrough below matches the actual interface on this page.</p>
+  <ol>
+    <li><strong>Identify the reference angle <span set:html={rich('[[A]]')} />,</strong> since the adjacent and opposite sides are defined relative to it.</li>
+    <li><strong>Locate the adjacent side <span set:html={rich('[[b]]')} />:</strong> the leg touching angle <span set:html={rich('[[A]]')} /> that is not the hypotenuse.</li>
+    <li><strong>Locate the opposite side <span set:html={rich('[[a]]')} />:</strong> the leg directly across from angle <span set:html={rich('[[A]]')} />, the one that never touches its vertex.</li>
+    <li><strong>Measure or obtain both side lengths</strong> in the same unit.</li>
+    <li><strong>Enter the adjacent-side length</strong> in the first input field.</li>
+    <li><strong>Enter the opposite-side length</strong> in the second input field.</li>
+    <li><strong>Select matching units with the unit selectors</strong> so the division compares like with like.</li>
+    <li><strong>Confirm both measurements are positive;</strong> zero or negative lengths cannot form a real triangle.</li>
+    <li><strong>Click Calculate cot(A)</strong> to divide the adjacent side by the opposite side.</li>
+    <li><strong>Read the cotangent ratio:</strong> the adjacent side expressed as a multiple of the opposite side.</li>
+    <li><strong>Interpret the result:</strong> greater than 1 means a longer adjacent side, equal to 1 means equal legs, less than 1 means a longer opposite side.</li>
+    <li><strong>Use Reset</strong> to clear the inputs and start over.</li>
+  </ol>
+  <p>The calculator asks for no hypotenuse and no angle in degrees: two positive side lengths are the complete input, and the result is always a positive, dimensionless number.</p>
+</section>
+
+<!-- SECTION 6: Four foundational examples -->
+<section id="cot-examples" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Step-by-Step Examples of Calculating Cotangent</h2>
+  <p>Each example follows the same pattern: write the formula, substitute, divide, interpret.</p>
+
+  <h3>Example 1: A 3-4-5 Right Triangle</h3>
+  <p>Given <span set:html={rich('[[b=4\\text{ cm}]]')} />, <span set:html={rich('[[a=3\\text{ cm}]]')} />, <span set:html={rich('[[c=5\\text{ cm}]]')} />:</p>
+  <p><span set:html={rich('[[\\cot(A)=4/3]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\cot(A)\\approx1.3333}]]')} /></p>
+  <p>The adjacent side is about 1.3333 times the opposite side; the hypotenuse sits out of the calculation entirely.</p>
+
+  <h3>Example 2: A 5-12-13 Right Triangle</h3>
+  <p>Given <span set:html={rich('[[b=12\\text{ m}]]')} />, <span set:html={rich('[[a=5\\text{ m}]]')} />, <span set:html={rich('[[c=13\\text{ m}]]')} />:</p>
+  <p><span set:html={rich('[[\\cot(A)=12/5]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\cot(A)=2.4}]]')} /></p>
+  <p>The ratio is greater than 1 because the adjacent side is the longer leg; it tells us the adjacent side is 2.4 times the opposite side, not how large the triangle is.</p>
+
+  <h3>Example 3: An Isosceles Right Triangle</h3>
+  <p>Given <span set:html={rich('[[b=6\\text{ cm}]]')} />, <span set:html={rich('[[a=6\\text{ cm}]]')} />, <span set:html={rich('[[c=6\\sqrt{2}\\text{ cm}]]')} />:</p>
+  <p><span set:html={rich('[[\\cot(A)=6/6]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\cot(A)=1}]]')} /></p>
+  <p>Equal legs give a ratio of exactly 1, which is the signature of a <span set:html={rich('[[45^\\circ]]')} /> reference angle.</p>
+
+  <h3>Example 4: A Triangle With a Smaller Adjacent Side</h3>
+  <p>Given <span set:html={rich('[[b=6\\text{ m}]]')} /> and <span set:html={rich('[[a=8\\text{ m}]]')} />:</p>
+  <p><span set:html={rich('[[\\cot(A)=6/8]]')} /></p>
+  <p><span set:html={rich('[[\\boxed{\\cot(A)=0.75}]]')} /></p>
+  <p>The result is less than 1 because the opposite side is the longer leg, so the reference angle is greater than <span set:html={rich('[[45^\\circ]]')} />.</p>
+</section>
+
+<!-- SECTION 7: Twelve practical examples -->
+<section id="cot-applications" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Real-Life Examples of Using the Cotangent Ratio</h2>
+  <p>Cotangent is a mathematical ratio, not a physical quantity with units. Its practical value lies in comparing horizontal run with vertical rise, checking triangle geometry, and using formulas that specifically call for adjacent divided by opposite. Each example assumes a simplified right triangle, and none of these ratios alone settles questions of safety, strength, or code compliance.</p>
+
+  <h3>Example 5: Finding a Ladder's Run-to-Rise Ratio</h3>
+  <p>A ladder rests against a vertical wall. Its base is 3 m from the wall, and it reaches 4 m up the wall. The horizontal distance is the adjacent side <span set:html={rich('[[b=3\\text{ m}]]')} />, the vertical reach the opposite side <span set:html={rich('[[a=4\\text{ m}]]')} />. <span set:html={rich('[[\\cot(A)=3/4]]')} />, so <span set:html={rich('[[\\boxed{\\cot(A)=0.75}]]')} />: the horizontal distance is 75 percent of the vertical height. The ratio describes the ladder's geometry; it does not determine whether the ladder is safely positioned.</p>
+
+  <h3>Example 6: Calculating a Roof's Run-to-Rise Ratio</h3>
+  <p>A roof section has a horizontal run of 4 m and a vertical rise of 3 m. Here <span set:html={rich('[[b=4\\text{ m}]]')} /> and <span set:html={rich('[[a=3\\text{ m}]]')} />. <span set:html={rich('[[\\cot(A)=4/3]]')} />, so <span set:html={rich('[[\\boxed{\\cot(A)\\approx1.3333}]]')} />: the horizontal run is about 1.3333 times the vertical rise. This ratio is not a complete structural or roofing-code assessment.</p>
+
+  <h3>Example 7: Evaluating a Ramp's Cotangent Ratio</h3>
+  <p>A simplified ramp has a horizontal run of 9 m and a vertical rise of 0.75 m. With <span set:html={rich('[[b=9\\text{ m}]]')} /> and <span set:html={rich('[[a=0.75\\text{ m}]]')} />: <span set:html={rich('[[\\cot(A)=9/0.75]]')} />, so <span set:html={rich('[[\\boxed{\\cot(A)=12}]]')} />. The horizontal run is 12 times the vertical rise, the signature of a gentle slope. The ratio alone does not determine accessibility or building-code compliance.</p>
+
+  <h3>Example 8: A Surveying Measurement</h3>
+  <p>A simplified surveying triangle has a horizontal distance of 40 m and a vertical elevation difference of 30 m. With <span set:html={rich('[[b=40\\text{ m}]]')} /> and <span set:html={rich('[[a=30\\text{ m}]]')} />: <span set:html={rich('[[\\cot(A)=40/30]]')} />, so <span set:html={rich('[[\\boxed{\\cot(A)\\approx1.3333}]]')} />. The ratio compares the horizontal separation with the vertical difference directly. Actual surveying can require additional measurements, corrections, and instrument procedures.</p>
+
+  <h3>Example 9: A Guy Wire Supporting a Pole</h3>
+  <p>A guy wire connects a pole to a ground anchor. The anchor is 12 m horizontally from the pole, and the attachment point is 5 m above the ground. With <span set:html={rich('[[b=12\\text{ m}]]')} /> and <span set:html={rich('[[a=5\\text{ m}]]')} />: <span set:html={rich('[[\\cot(A)=12/5]]')} />, so <span set:html={rich('[[\\boxed{\\cot(A)=2.4}]]')} />. The horizontal distance is 2.4 times the vertical separation. This ratio does not establish wire tension, anchor strength, or structural safety.</p>
+
+  <h3>Example 10: Understanding a Staircase's Run-to-Rise Ratio</h3>
+  <p>A simplified staircase has a horizontal run of 4 m and a vertical rise of 3 m. With <span set:html={rich('[[b=4\\text{ m}]]')} /> and <span set:html={rich('[[a=3\\text{ m}]]')} />: <span set:html={rich('[[\\cot(A)=4/3]]')} />, so <span set:html={rich('[[\\boxed{\\cot(A)\\approx1.3333}]]')} />. The horizontal run is about 1.3333 times the vertical rise. The example describes an idealized diagonal and does not verify staircase dimensions or code compliance.</p>
+
+  <h3>Example 11: A Crane Boom's Horizontal and Vertical Components</h3>
+  <p>A simplified crane boom forms a right triangle with a horizontal projection of 6 m and a vertical rise of 8 m. With <span set:html={rich('[[b=6\\text{ m}]]')} /> and <span set:html={rich('[[a=8\\text{ m}]]')} />: <span set:html={rich('[[\\cot(A)=6/8]]')} />, so <span set:html={rich('[[\\boxed{\\cot(A)=0.75}]]')} />. The horizontal projection is 75 percent of the vertical component. The ratio does not establish lifting capacity or operating safety.</p>
+
+  <h3>Example 12: A Straight Aircraft Flight Segment</h3>
+  <p>For a simplified flight segment, an aircraft travels along a straight path with a horizontal displacement of 4 km and a vertical gain of 3 km. With <span set:html={rich('[[b=4\\text{ km}]]')} /> and <span set:html={rich('[[a=3\\text{ km}]]')} />: <span set:html={rich('[[\\cot(A)=4/3]]')} />, so <span set:html={rich('[[\\boxed{\\cot(A)\\approx1.3333}]]')} />. The horizontal displacement is about 1.3333 times the vertical gain. This is an idealized geometric model, not a complete flight-navigation calculation.</p>
+
+  <h3>Example 13: A Diagonal Mechanical Brace</h3>
+  <p>A diagonal brace has a horizontal offset of 1.2 m and a vertical rise of 1.6 m. With <span set:html={rich('[[b=1.2\\text{ m}]]')} /> and <span set:html={rich('[[a=1.6\\text{ m}]]')} />: <span set:html={rich('[[\\cot(A)=1.2/1.6]]')} />, so <span set:html={rich('[[\\boxed{\\cot(A)=0.75}]]')} />. The horizontal offset is 75 percent of the vertical rise. The ratio does not determine the brace's strength or suitability.</p>
+
+  <h3>Example 14: A Straight Hiking Section</h3>
+  <p>A simplified straight section of a hiking route has a horizontal displacement of 80 m and a vertical gain of 60 m. With <span set:html={rich('[[b=80\\text{ m}]]')} /> and <span set:html={rich('[[a=60\\text{ m}]]')} />: <span set:html={rich('[[\\cot(A)=80/60]]')} />, so <span set:html={rich('[[\\boxed{\\cot(A)\\approx1.3333}]]')} />. The horizontal displacement is about 1.3333 times the elevation gain. Actual trails can have curves and changing gradients.</p>
+
+  <h3>Example 15: An Awning Support</h3>
+  <p>A diagonal awning support has a horizontal projection of 2.4 m and a vertical rise of 1.8 m. With <span set:html={rich('[[b=2.4\\text{ m}]]')} /> and <span set:html={rich('[[a=1.8\\text{ m}]]')} />: <span set:html={rich('[[\\cot(A)=2.4/1.8]]')} />, so <span set:html={rich('[[\\boxed{\\cot(A)\\approx1.3333}]]')} />. The ratio describes the horizontal projection relative to the vertical rise. This calculation does not establish structural suitability.</p>
+
+  <h3>Example 16: A Cable Spanning Two Different Heights</h3>
+  <p>A straight cable spans 24 m horizontally between two points with a vertical separation of 7 m. With <span set:html={rich('[[b=24\\text{ m}]]')} /> and <span set:html={rich('[[a=7\\text{ m}]]')} />: <span set:html={rich('[[\\cot(A)=24/7]]')} />, so <span set:html={rich('[[\\boxed{\\cot(A)\\approx3.4286}]]')} />. The horizontal separation is about 3.4286 times the vertical difference. The model assumes a straight line between the endpoints.</p>
+
+  <h3>Practical Examples Compared</h3>
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full min-w-[640px] border-collapse text-left text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30">
+          <th class="py-3 pr-4 font-semibold text-on-surface">Situation</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Adjacent side b</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Opposite side a</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Cotangent formula</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Calculated ratio</th>
+          <th class="py-3 font-semibold text-on-surface">Interpretation</th>
+        </tr>
+      </thead>
+      <tbody class="text-on-surface-variant">
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Ladder</td><td class="py-2.5 pr-4">3 m</td><td class="py-2.5 pr-4">4 m</td><td class="py-2.5 pr-4">3/4</td><td class="py-2.5 pr-4">0.75</td><td class="py-2.5">Run is 75% of vertical reach</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Roof</td><td class="py-2.5 pr-4">4 m</td><td class="py-2.5 pr-4">3 m</td><td class="py-2.5 pr-4">4/3</td><td class="py-2.5 pr-4">1.3333</td><td class="py-2.5">Run is 1.3333 times the rise</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Ramp</td><td class="py-2.5 pr-4">9 m</td><td class="py-2.5 pr-4">0.75 m</td><td class="py-2.5 pr-4">9/0.75</td><td class="py-2.5 pr-4">12</td><td class="py-2.5">Run is 12 times the rise</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Surveying</td><td class="py-2.5 pr-4">40 m</td><td class="py-2.5 pr-4">30 m</td><td class="py-2.5 pr-4">40/30</td><td class="py-2.5 pr-4">1.3333</td><td class="py-2.5">Distance is 1.3333 times the elevation gap</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Guy wire</td><td class="py-2.5 pr-4">12 m</td><td class="py-2.5 pr-4">5 m</td><td class="py-2.5 pr-4">12/5</td><td class="py-2.5 pr-4">2.4</td><td class="py-2.5">Distance is 2.4 times the height</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Staircase</td><td class="py-2.5 pr-4">4 m</td><td class="py-2.5 pr-4">3 m</td><td class="py-2.5 pr-4">4/3</td><td class="py-2.5 pr-4">1.3333</td><td class="py-2.5">Run is 1.3333 times the rise</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Crane boom</td><td class="py-2.5 pr-4">6 m</td><td class="py-2.5 pr-4">8 m</td><td class="py-2.5 pr-4">6/8</td><td class="py-2.5 pr-4">0.75</td><td class="py-2.5">Projection is 75% of the rise</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Flight segment</td><td class="py-2.5 pr-4">4 km</td><td class="py-2.5 pr-4">3 km</td><td class="py-2.5 pr-4">4/3</td><td class="py-2.5 pr-4">1.3333</td><td class="py-2.5">Displacement is 1.3333 times the gain</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Brace</td><td class="py-2.5 pr-4">1.2 m</td><td class="py-2.5 pr-4">1.6 m</td><td class="py-2.5 pr-4">1.2/1.6</td><td class="py-2.5 pr-4">0.75</td><td class="py-2.5">Offset is 75% of the rise</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Hiking route</td><td class="py-2.5 pr-4">80 m</td><td class="py-2.5 pr-4">60 m</td><td class="py-2.5 pr-4">80/60</td><td class="py-2.5 pr-4">1.3333</td><td class="py-2.5">Displacement is 1.3333 times the gain</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Awning support</td><td class="py-2.5 pr-4">2.4 m</td><td class="py-2.5 pr-4">1.8 m</td><td class="py-2.5 pr-4">2.4/1.8</td><td class="py-2.5 pr-4">1.3333</td><td class="py-2.5">Projection is 1.3333 times the rise</td></tr>
+        <tr><td class="py-2.5 pr-4">Cable</td><td class="py-2.5 pr-4">24 m</td><td class="py-2.5 pr-4">7 m</td><td class="py-2.5 pr-4">24/7</td><td class="py-2.5 pr-4">3.4286</td><td class="py-2.5">Separation is 3.4286 times the height gap</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('cotangent-applications.svg')} alt="Four panels: ladder ratio 0.75, roof 1.3333, ramp 12, surveying 1.3333, each with a labeled right triangle" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Four practical calculations: ladder, roof, ramp, and surveying, each with its triangle, formula, and ratio.</figcaption>
+  </figure>
+  <p>The pattern holds throughout: the ratio is large when the adjacent side dwarfs the opposite side, and small when the opposite side dominates.</p>
+</section>
+
+<!-- SECTION 8: Cotangent and angle size -->
+<section id="cot-angle" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding the Relationship Between Cotangent and Angle Size</h2>
+  <p>Cotangent falls as the acute angle grows. A small angle keeps the adjacent side much longer than the opposite side, so the ratio is large; as angle <span set:html={rich('[[A]]')} /> opens toward <span set:html={rich('[[90^\\circ]]')} />, the opposite side takes over and the ratio drops toward 0. The verified reference values below show the pattern:</p>
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full min-w-[480px] border-collapse text-left text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30">
+          <th class="py-3 pr-4 font-semibold text-on-surface">Angle A</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Adjacent side b</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Opposite side a</th>
+          <th class="py-3 font-semibold text-on-surface">Cotangent ratio</th>
+        </tr>
+      </thead>
+      <tbody class="text-on-surface-variant">
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">30 deg</td><td class="py-2.5 pr-4">sqrt(3)</td><td class="py-2.5 pr-4">1</td><td class="py-2.5">Approximately 1.7321</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">45 deg</td><td class="py-2.5 pr-4">1</td><td class="py-2.5 pr-4">1</td><td class="py-2.5">1</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">60 deg</td><td class="py-2.5 pr-4">1</td><td class="py-2.5 pr-4">sqrt(3)</td><td class="py-2.5">Approximately 0.5774</td></tr>
+        <tr><td class="py-2.5 pr-4">75 deg</td><td class="py-2.5 pr-4">1</td><td class="py-2.5 pr-4">Approximately 3.7321</td><td class="py-2.5">Approximately 0.2679</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The table measurements are illustrative: the ratios, not the absolute lengths, determine the angles. The ratio grows without bound as the angle approaches <span set:html={rich('[[0^\\circ]]')} /> and approaches 0 as the angle approaches <span set:html={rich('[[90^\\circ]]')} />, staying positive and finite for every valid triangle.</p>
+  <figure class="not-prose my-6">
+    <img src={imgSrc('cotangent-angle-change.svg')} alt="Three triangles at 30, 45, 60 degrees with cotangent values 1.7321, 1, 0.5774; cotangent falls as the angle grows" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">As angle A grows, the opposite side becomes a larger share of the adjacent side, so cot(A) falls.</figcaption>
+  </figure>
+  <p>The calculator takes no angle input; these reference values serve as orientation and check values when verifying a result.</p>
+</section>
+
+<!-- SECTION 9: Finding an angle from cotangent -->
+<section id="cot-recover" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Find an Angle When Cotangent Is Known</h2>
+  <p>The cotangent ratio is not itself an angle. When the ratio is known and the angle is required, inverse trigonometry bridges the gap. For a positive cotangent ratio in a right triangle, take the reciprocal to recover the tangent ratio, then apply inverse tangent:</p>
+  <p><span set:html={rich('[[[\\boxed{A=\\tan^{-1}\\left(\\frac{1}{\\cot(A)}\\right)}]]]')} /></p>
+  <p>Equivalently, since <span set:html={rich('[[\\tan(A)=a/b]]')} />:</p>
+  <p><span set:html={rich('[[[\\boxed{A=\\tan^{-1}\\left(\\frac{a}{b}\\right)}]]]')} /></p>
+  <h3>Worked Example</h3>
+  <p>Given <span set:html={rich('[[\\cot(A)=4/3]]')} />: the reciprocal is <span set:html={rich('[[\\tan(A)=3/4]]')} />, so <span set:html={rich('[[A=\\tan^{-1}(3/4)]]')} /> and <span set:html={rich('[[\\boxed{A\\approx36.87^\\circ}]]')} />. Set the scientific calculator to degrees mode before pressing the inverse tangent key. This is a separate angle calculation; the cotangent ratio calculator on this page takes side lengths and returns the ratio, never the angle.</p>
+</section>
+
+<!-- SECTION 10: Common mistakes -->
+<section id="cot-mistakes" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Common Mistakes When Calculating Cotangent</h2>
+  <ol>
+    <li><strong>Reversing the formula to <span set:html={rich('[[a/b]]')} /> instead of <span set:html={rich('[[b/a]]')} />.</strong> This computes tangent. Fix: put the adjacent side on top.</li>
+    <li><strong>Confusing cotangent with tangent.</strong> Reporting 0.75 for a 3-4-5 triangle. Fix: tangent is opposite over adjacent; cotangent is the flipped fraction.</li>
+    <li><strong>Confusing cotangent with cosine.</strong> Using <span set:html={rich('[[b/c]]')} />. Fix: cosine needs the hypotenuse; cotangent never touches it.</li>
+    <li><strong>Using the hypotenuse instead of one of the two legs.</strong> Computing <span set:html={rich('[[b/c]]')} /> or <span set:html={rich('[[c/a]]')} />. Fix: the denominator is the opposite leg <span set:html={rich('[[a]]')} />, not <span set:html={rich('[[c]]')} />.</li>
+    <li><strong>Mixing up the adjacent and opposite sides.</strong> Choosing the wrong leg. Fix: trace from angle <span set:html={rich('[[A]]')} />: the leg touching it is adjacent, the one across from it is opposite.</li>
+    <li><strong>Forgetting that the side labels depend on the reference angle.</strong> Using labels drawn for angle <span set:html={rich('[[B]]')} />. Fix: relabel whenever the reference angle changes.</li>
+    <li><strong>Assuming cotangent must be between 0 and 1.</strong> Treating 2.4 or 12 as errors. Fix: those values are fine; only sine and cosine are capped at 1.</li>
+    <li><strong>Assuming a cotangent of 1 means an invalid triangle.</strong> Fix: <span set:html={rich('[[\\cot(A)=1]]')} /> simply means equal legs and a <span set:html={rich('[[45^\\circ]]')} /> angle, a perfectly valid triangle.</li>
+    <li><strong>Reporting the ratio with metres or centimetres.</strong> Writing 1.3333 m. Fix: the units already cancelled, so report a plain number.</li>
+    <li><strong>Entering zero or negative side lengths.</strong> Division by zero or a meaningless negative ratio. Fix: use positive lengths only.</li>
+    <li><strong>Mixing measurement units.</strong> Metres divided by centimetres skew the ratio by 100. Fix: convert both sides to one unit first.</li>
+    <li><strong>Rounding too early.</strong> Rounding <span set:html={rich('[[4/3]]')} /> to 1.33 before verifying adds avoidable error. Fix: keep extra digits until the final step.</li>
+    <li><strong>Assuming cotangent is an angle in degrees.</strong> Reading 1.3333 as 1.3333 degrees. Fix: it is a ratio; the angle needs inverse tangent.</li>
+    <li><strong>Confusing reciprocal tangent with inverse tangent.</strong> Writing <span set:html={rich('[[1/\\tan(A)]]')} /> when <span set:html={rich('[[\\tan^{-1}(a/b)]]')} /> is needed, or the reverse. Fix: reciprocal flips the fraction; inverse recovers the angle.</li>
+    <li><strong>Assuming the cotangent value determines the triangle's size.</strong> Two very different triangles can share <span set:html={rich('[[\\cot(A)=1.3333]]')} />. Fix: the ratio fixes the shape, not the scale.</li>
+  </ol>
+
+  <h3>Wrong Versus Correct</h3>
+  <p>Given <span set:html={rich('[[b=4]]')} /> and <span set:html={rich('[[a=3]]')} />:</p>
+  <p>Incorrect: <span set:html={rich('[[3/4=0.75]]')} />. This is the tangent ratio, not cotangent.</p>
+  <p>Correct: <span set:html={rich('[[\\cot(A)=4/3\\approx1.3333]]')} />. Verify: <span set:html={rich('[[\\tan(A)=3/4=0.75]]')} /> and <span set:html={rich('[[1/0.75\\approx1.3333]]')} />, which confirms the reciprocal relationship.</p>
+</section>
+
+<!-- SECTION 11: Verification -->
+<section id="cot-verify" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Check Whether Your Cotangent Result Is Valid</h2>
+  <p>A valid, non-degenerate right triangle requires positive legs, <span set:html={rich('[[a \\gt 0]]')} /> and <span set:html={rich('[[b \\gt 0]]')} />, so the cotangent result must be a positive, finite number:</p>
+  <p><span set:html={rich('[[[\\boxed{\\cot(A)=\\frac{b}{a} \\gt 0}]]]')} /></p>
+  <p>Both measurements must use compatible units. A result greater than 1, equal to 1, or less than 1 can all be valid; unlike sine and cosine, cotangent is not capped at 1.</p>
+  <h3>Method 1: Check the Reciprocal of Tangent</h3>
+  <p>Verify <span set:html={rich('[[\\tan(A)=a/b]]')} />, then confirm <span set:html={rich('[[\\cot(A)=1/\\tan(A)]]')} />. With <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[b=4]]')} />: <span set:html={rich('[[\\tan(A)=3/4=0.75]]')} />, so <span set:html={rich('[[\\cot(A)=1/0.75\\approx1.3333}]]')} />. A mismatch between the two paths signals a reversed fraction or a mislabeled side.</p>
+  <h3>Method 2: Check the Pythagorean Theorem</h3>
+  <p>If the hypotenuse is known or needed, calculate <span set:html={rich('[[c=\\sqrt{a^2+b^2}]]')} />. For <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[b=4]]')} />: <span set:html={rich('[[c=\\sqrt{9+16}=5]]')} />, and <span set:html={rich('[[3^2+4^2=5^2]]')} />. This confirms the side lengths form a genuine right triangle. The hypotenuse is a verification value here, not part of the primary cotangent formula.</p>
+  <h3>Method 3: Check the Angle Relationship</h3>
+  <p>For a known cotangent ratio, recover the angle with <span set:html={rich('[[A=\\tan^{-1}(a/b)]]')} />. With <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[b=4]]')} />: <span set:html={rich('[[A\\approx36.87^\\circ]]')} />. Because the adjacent side is longer than the opposite side, the angle should land below <span set:html={rich('[[45^\\circ]]')} />; if it does not, the side labels are probably swapped. Small differences may arise from rounding.</p>
+</section>
+
+<!-- SECTION 12: Choosing a ratio -->
+<section id="cot-vs" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Cotangent vs. Tangent, Sine, and Cosine</h2>
+  <p>Each ratio compares a different pair of sides, using the same reference angle and side labels:</p>
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full min-w-[480px] border-collapse text-left text-sm">
+      <thead>
+        <tr class="border-b border-outline-variant/30">
+          <th class="py-3 pr-4 font-semibold text-on-surface">Ratio</th>
+          <th class="py-3 pr-4 font-semibold text-on-surface">Formula</th>
+          <th class="py-3 font-semibold text-on-surface">What it compares</th>
+        </tr>
+      </thead>
+      <tbody class="text-on-surface-variant">
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Sine</td><td class="py-2.5 pr-4">sin(A) = a/c</td><td class="py-2.5">Opposite side to hypotenuse</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Cosine</td><td class="py-2.5 pr-4">cos(A) = b/c</td><td class="py-2.5">Adjacent side to hypotenuse</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Tangent</td><td class="py-2.5 pr-4">tan(A) = a/b</td><td class="py-2.5">Opposite side to adjacent side</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Cotangent</td><td class="py-2.5 pr-4">cot(A) = b/a</td><td class="py-2.5">Adjacent side to opposite side</td></tr>
+        <tr class="border-b border-outline-variant/15"><td class="py-2.5 pr-4">Secant</td><td class="py-2.5 pr-4">sec(A) = c/b</td><td class="py-2.5">Hypotenuse to adjacent side</td></tr>
+        <tr><td class="py-2.5 pr-4">Cosecant</td><td class="py-2.5 pr-4">csc(A) = c/a</td><td class="py-2.5">Hypotenuse to opposite side</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Cotangent and tangent are the reciprocal pair: <span set:html={rich('[[\\cot(A)=1/\\tan(A)]]')} />. If <span set:html={rich('[[\\tan(A)=0.75]]')} />, then <span set:html={rich('[[\\cot(A)\\approx1.3333}]]')} />. Reach for cotangent when a formula calls for adjacent divided by opposite, when you are working run-to-rise relationships, or when only the two legs are known; reach for tangent for rise-to-run, sine for the opposite side against the hypotenuse, and cosine for the adjacent side against the hypotenuse.</p>
+  <p>For the neighbouring ratios, see the <a href="/sine-ratio-calculator/" class="text-primary hover:underline">Sine Ratio Calculator</a>, the <a href="/cosine-ratio-calculator/" class="text-primary hover:underline">Cosine Ratio Calculator</a>, the <a href="/tangent-ratio-calculator/" class="text-primary hover:underline">Tangent Ratio Calculator</a>, the <a href="/secant-ratio-calculator/" class="text-primary hover:underline">Secant Ratio Calculator</a>, and the <a href="/cosecant-ratio-calculator/" class="text-primary hover:underline">Cosecant Ratio Calculator</a>.</p>
+</section>
+
+<!-- SECTION 13: FAQs -->
+<section id="cot-faq" class="mx-auto mt-12 w-full max-w-4xl section-shell scroll-mt-24">
+  <Faq heading="Frequently Asked Questions" items={faqs} />
+</section>
+
+<!-- SECTION 14: Related calculators -->
+<section id="cot-related" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Explore Related Trigonometric Calculators</h2>
+  <ul class="mt-5">
+    <li class="border-b border-primary/10">
+      <a href="/sine-ratio-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">01</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Sine Ratio Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/cosine-ratio-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">02</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Cosine Ratio Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/tangent-ratio-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">03</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Tangent Ratio Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/secant-ratio-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">04</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Secant Ratio Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/cosecant-ratio-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">05</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Cosecant Ratio Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-angle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">06</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Angle Calculator</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- Conclusion -->
+<section id="cot-conclusion" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Use the Cotangent Ratio With Confidence</h2>
+  <p>Cotangent is the flipped form of tangent: divide the adjacent side by the opposite side and you have described the triangle's run-to-rise shape. The formula <span set:html={rich('[[\\cot(A)=b/a]]')} /> needs only two measurements, the answer is always a positive dimensionless number, and it can sit above, at, or below 1 depending on which leg is longer. When the angle itself is needed, <span set:html={rich('[[A=\\tan^{-1}(a/b)]]')} /> recovers it. Ladder, roof, ramp, or textbook 3-4-5, the method never changes: identify the adjacent side, identify the opposite side, divide, and verify with the reciprocal of tangent.</p>
+</section>

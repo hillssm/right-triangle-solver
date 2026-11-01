@@ -14,6 +14,9 @@ import { COSECANT_GUIDE_TRANSLATIONS } from 'src/data/cosecantGuideTranslations'
 import CosineRatioGuide from 'theme/components/CosineRatioGuide.astro';
 import CosineRatioGuideLocalized from 'theme/components/CosineRatioGuideLocalized.astro';
 import { COSINE_GUIDE_TRANSLATIONS } from 'src/data/cosineGuideTranslations';
+import CotangentRatioGuide from 'theme/components/CotangentRatioGuide.astro';
+import CotangentRatioGuideLocalized from 'theme/components/CotangentRatioGuideLocalized.astro';
+import { COTANGENT_GUIDE_TRANSLATIONS } from 'src/data/cotangentGuideTranslations';
 import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
@@ -27,6 +30,7 @@ interface Props {
 
 const { page, locale = DEFAULT_LOCALE } = Astro.props;
 const isCosecantPage = page.slug === 'cosecant-ratio-calculator' && (locale === 'en' || COSECANT_GUIDE_TRANSLATIONS[locale]);
+const isCotangentPage = page.slug === 'cotangent-ratio-calculator' && (locale === 'en' || COTANGENT_GUIDE_TRANSLATIONS[locale]);
 const trigUi = getFocusedTrigRatioUi(locale);
 const runtimeTranslations = getFocusedTrigRatioRuntimeTranslations(page, locale);
 const sharedCalculatorUi = getFocusedSideCalculatorUi(locale);
@@ -265,7 +269,7 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
   />
 
   <!-- Intro -->
-  {!isCosecantPage && (
+  {!isCosecantPage && !isCotangentPage && (
   <>
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={page.introHeading} />
@@ -518,4 +522,7 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
 
   {page.slug === 'cosine-ratio-calculator' && locale === 'en' ? <CosineRatioGuide /> : null}
   {page.slug === 'cosine-ratio-calculator' && locale !== 'en' && COSINE_GUIDE_TRANSLATIONS[locale] ? <CosineRatioGuideLocalized guide={COSINE_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
+
+  {page.slug === 'cotangent-ratio-calculator' && locale === 'en' ? <CotangentRatioGuide /> : null}
+  {page.slug === 'cotangent-ratio-calculator' && locale !== 'en' && COTANGENT_GUIDE_TRANSLATIONS[locale] ? <CotangentRatioGuideLocalized guide={COTANGENT_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>

@@ -114,7 +114,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-formula": {
         "h2": "Mengapa Rumus Luas Adalah Setengah Hipotenusa Kali Garis Tinggi?",
         "blocks": [
-          { "kind": "p", "text": "Luas setiap segitiga berawal dari satu aturan [[K=\\frac12\\times\\text{base}\\times\\text{perpendicular height}]]. Sisi mana pun boleh menjadi alas jika tinggi yang digunakan tegak lurus terhadapnya. Kalkulator ini memilih hipotenusa sebagai alas, sehingga [[\\text{base}=c]] dan tinggi tegak lurus yang sesuai adalah garis tinggi, [[\\text{height}=h]]. Substitusi menghasilkan [[K=\\frac12\\times c\\times h]], yaitu [[[\\boxed{K=\\frac{ch}{2}}}]]]." },
+          { "kind": "p", "text": "Luas setiap segitiga berawal dari satu aturan [[K=\\frac12\\times\\text{base}\\times\\text{perpendicular height}]]. Sisi mana pun boleh menjadi alas jika tinggi yang digunakan tegak lurus terhadapnya. Kalkulator ini memilih hipotenusa sebagai alas, sehingga [[\\text{base}=c]] dan tinggi tegak lurus yang sesuai adalah garis tinggi, [[\\text{height}=h]]. Substitusi menghasilkan [[K=\\frac12\\times c\\times h]], yaitu [[[\\boxed{K=\\frac{ch}{2}}]]]." },
           { "kind": "h3", "text": "Mengapa Hipotenusa Bisa Digunakan sebagai Alas?" },
           { "kind": "p", "text": "Hipotenusa hanyalah alas yang dipilih untuk perhitungan ini. Garis tinggi harus diukur dari titik sudut berhadapan, yaitu titik sudut siku-siku [[C]], dan harus tegak lurus terhadap hipotenusa. Memilih sisi lain sebagai alas dengan garis tinggi pasangannya sendiri menghasilkan luas yang sama. Alas adalah peran yang dimainkan sebuah sisi, bukan label permanen." },
           { "kind": "h3", "text": "Mengapa Rumus Dibagi Dua?" },
@@ -130,7 +130,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-relationship": {
         "h2": "Bagaimana Hipotenusa dan Garis Tinggi Berhubungan dengan Kedua Kaki",
         "blocks": [
-          { "kind": "p", "text": "Dua rumus luas yang valid menggambarkan segitiga yang sama: [[K=ab/2]] dan [[K=ch/2]]. Karena keduanya menghitung luas yang sama, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Kalikan kedua sisi dengan dua: [[ab=ch]]. Menyusun ulang untuk garis tinggi menghasilkan [[[\\boxed{h=\\frac{ab}{c}}}]]]. Garis tinggi ke hipotenusa adalah hasil kali kedua kaki dibagi hipotenusa, yang menjelaskan mengapa kedua rumus luas tidak pernah bisa berbeda pada segitiga yang konsisten." },
+          { "kind": "p", "text": "Dua rumus luas yang valid menggambarkan segitiga yang sama: [[K=ab/2]] dan [[K=ch/2]]. Karena keduanya menghitung luas yang sama, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Kalikan kedua sisi dengan dua: [[ab=ch]]. Menyusun ulang untuk garis tinggi menghasilkan [[[\\boxed{h=\\frac{ab}{c}}]]]. Garis tinggi ke hipotenusa adalah hasil kali kedua kaki dibagi hipotenusa, yang menjelaskan mengapa kedua rumus luas tidak pernah bisa berbeda pada segitiga yang konsisten." },
           { "kind": "h3", "text": "Mengapa Hubungan Ini Berguna" },
           { "kind": "p", "text": "Ia menghubungkan tiga cara menggambarkan geometri yang sama. Kaki-kaki dan hipotenusa menentukan garis tinggi, sehingga segitiga yang diukur dari sisi-sisinya sudah memuatnya. Garis tinggi dan hipotenusa menentukan luas, sehingga luas tidak pernah perlu menemukan kembali kaki-kakinya terlebih dahulu. Menghitung luas melalui salah satu rumus lalu membandingkannya adalah salah satu pemeriksaan terkuat, karena kesalahan pada satu rute jarang terulang dengan cara yang sama pada rute lain." },
           { "kind": "h3", "text": "Menghubungkan Rumus dengan Teorema Pythagoras" },
@@ -142,7 +142,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-max": {
         "h2": "Mengapa Garis Tinggi Tidak Bisa Lebih Panjang dari Setengah Hipotenusa?",
         "blocks": [
-          { "kind": "p", "text": "Setiap segitiga siku-siku yang valid mematuhi [[[\\boxed{h\\leq\\frac{c}{2}}}]]]. Ini adalah fakta geometris, dan layak diturunkan." },
+          { "kind": "p", "text": "Setiap segitiga siku-siku yang valid mematuhi [[[\\boxed{h\\leq\\frac{c}{2}}]]]. Ini adalah fakta geometris, dan layak diturunkan." },
           { "kind": "h3", "text": "Memahami Kedua Ruas Hipotenusa" },
           { "kind": "p", "text": "Ingat [[x+y=c]] dan [[h^2=xy]]. Hasil kali [[xy]] paling besar ketika kedua ruas sama, akibat dari ketidaksamaan rata-rata aritmetika-geometris: [[xy\\leq\\left(\\frac{x+y}{2}\\right)^2]]. Karena [[x+y=c]], sisi kanan menjadi [[c^2/4]], sehingga [[h^2\\leq\\frac{c^2}{4}]], dan untuk panjang positif [[h\\leq c/2]]. Dengan kata sederhana: pembagian yang tidak seimbang mengecilkan hasil kali dan garis tingginya; garis tinggi tertinggi berasal dari pembagian yang paling seimbang." },
           { "kind": "h3", "text": "Apa yang Terjadi pada Garis Tinggi Maksimum?" },
@@ -186,13 +186,13 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
         "blocks": [
           { "kind": "p", "text": "Empat contoh pengerjaan membangun metode dari yang sudah dikenal ke atas. Setiap contoh menerapkan [[K=ch/2]] dengan setiap substitusi ditunjukkan, dan setiap contoh memeriksa bahwa garis tingginya menghormati batas segitiga siku-siku." },
           { "kind": "h3", "text": "Contoh 1: Menggunakan Contoh yang Sudah Ada di Kalkulator" },
-          { "kind": "p", "text": "Diberikan [[c=10]] dan [[h=4.8]]. Langkah 1: tulis rumusnya, [[K=ch/2]]. Langkah 2: substitusikan, [[K=\\frac{10\\times4.8}{2}]]. Langkah 3: kalikan, [[K=\\frac{48}{2}]]. Jawaban akhir: [[[\\boxed{K=24\\text{ square units}}}]]]. Garis tinggi valid karena [[4.8<5]], di bawah maksimum setengah hipotenusa." },
+          { "kind": "p", "text": "Diberikan [[c=10]] dan [[h=4.8]]. Langkah 1: tulis rumusnya, [[K=ch/2]]. Langkah 2: substitusikan, [[K=\\frac{10\\times4.8}{2}]]. Langkah 3: kalikan, [[K=\\frac{48}{2}]]. Jawaban akhir: [[[\\boxed{K=24\\text{ square units}}]]]. Garis tinggi valid karena [[4.8<5]], di bawah maksimum setengah hipotenusa." },
           { "kind": "h3", "text": "Contoh 2: Segitiga 3-4-5" },
           { "kind": "p", "text": "Diberikan [[a=3]], [[b=4]], [[c=5]]. Cari dulu garis tingginya: [[h=ab/c]], sehingga [[h=\\frac{3\\times4}{5}=2.4]]. Kemudian [[K=\\frac{5\\times2.4}{2}]], [[[\\boxed{K=6}]]]. Verifikasi dengan kaki-kaki: [[K=\\frac{3\\times4}{2}=6]]. Kedua rute sepakat, sebagaimana mestinya." },
           { "kind": "h3", "text": "Contoh 3: Segitiga Siku-siku Sama Kaki" },
           { "kind": "p", "text": "Diberikan [[c=10]] dan [[h=5]]. Maka [[K=\\frac{10\\times5}{2}]], [[[\\boxed{K=25}]]]. Garis tinggi sama dengan setengah hipotenusa, sehingga kaki-kakinya sama dan setiap sudut lancip adalah [[45^\\circ]]. Ini adalah luas maksimum yang mungkin untuk segitiga siku-siku mana pun dengan hipotenusa 10." },
           { "kind": "h3", "text": "Contoh 4: Garis Tinggi Segitiga yang Lebih Kecil" },
-          { "kind": "p", "text": "Diberikan [[c=13]] dan [[h=5]]. Maka [[K=\\frac{13\\times5}{2}]], [[[\\boxed{K=32.5\\text{ square units}}}]]]. Garis tinggi memenuhi batas karena [[5\\leq6.5]]: setengah hipotenusa adalah 6.5, dan 5 berada jauh di bawahnya." }
+          { "kind": "p", "text": "Diberikan [[c=13]] dan [[h=5]]. Maka [[K=\\frac{13\\times5}{2}]], [[[\\boxed{K=32.5\\text{ square units}}]]]. Garis tinggi memenuhi batas karena [[5\\leq6.5]]: setengah hipotenusa adalah 6.5, dan 5 berada jauh di bawahnya." }
         ]
       },
       "sec-applications": {
@@ -260,7 +260,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-legs": {
         "h2": "Cara Menemukan Kembali Kedua Kaki Ketika Hipotenusa dan Garis Tinggi Diketahui",
         "blocks": [
-          { "kind": "p", "text": "Kalkulator hanya membutuhkan [[c]] dan [[h]] untuk luas, tetapi dua pengukuran itu juga memuat cukup informasi untuk menentukan panjang kedua kaki, hingga pertukaran posisinya. Mulai dari [[a^2+b^2=c^2]] dan [[ab=ch]]. Karena [[(a^2-b^2)^2=(a^2+b^2)^2-4a^2b^2]], substitusi menghasilkan [[(a^2-b^2)^2=c^4-4c^2h^2]], dan karena itu [[[\\boxed{a^2,b^2=\\frac{c^2\\pm c\\sqrt{c^2-4h^2}}{2}}}]]]. Dua tanda bersesuaian dengan dua penetapan kaki: menukar kaki-kaki tidak mengubah apa pun tentang segitiga maupun luasnya." },
+          { "kind": "p", "text": "Kalkulator hanya membutuhkan [[c]] dan [[h]] untuk luas, tetapi dua pengukuran itu juga memuat cukup informasi untuk menentukan panjang kedua kaki, hingga pertukaran posisinya. Mulai dari [[a^2+b^2=c^2]] dan [[ab=ch]]. Karena [[(a^2-b^2)^2=(a^2+b^2)^2-4a^2b^2]], substitusi menghasilkan [[(a^2-b^2)^2=c^4-4c^2h^2]], dan karena itu [[[\\boxed{a^2,b^2=\\frac{c^2\\pm c\\sqrt{c^2-4h^2}}{2}}]]]. Dua tanda bersesuaian dengan dua penetapan kaki: menukar kaki-kaki tidak mengubah apa pun tentang segitiga maupun luasnya." },
           { "kind": "p", "text": "Contoh numerik: diberikan [[c=10]] dan [[h=4.8]], maka [[ab=ch=48]] dan [[a^2+b^2=100]]. Kaki-kakinya adalah [[a=6]] dan [[b=8]]. Verifikasi: [[6^2+8^2=10^2]], [[36+64=100]]. Luas terperiksa dua arah: [[K=\\frac{6\\times8}{2}=24]] dan [[K=\\frac{10\\times4.8}{2}=24]]. Ini adalah wawasan matematika tambahan, bukan fungsi tambahan dari kalkulator yang ada, dan tidak boleh mengalihkan dari tujuan kalkulator: luas dari hipotenusa dan garis tinggi." }
         ]
       },
@@ -486,7 +486,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-formula": {
         "h2": "لماذا صيغة المساحة هي نصف الوتر مضروبًا في الارتفاع؟",
         "blocks": [
-          { "kind": "p", "text": "تبدأ مساحة كل مثلث من قاعدة واحدة [[K=\\frac12\\times\\text{base}\\times\\text{perpendicular height}]]. يجوز أن يكون أي ضلع هو القاعدة إذا كان الارتفاع المستخدم عموديًا عليه. تختار هذه الحاسبة الوتر قاعدة، فيكون [[\\text{base}=c]] والارتفاع العمودي المقابل هو الارتفاع، [[\\text{height}=h]]. يعطي التعويض [[K=\\frac12\\times c\\times h]]، أي [[[\\boxed{K=\\frac{ch}{2}}}]]]." },
+          { "kind": "p", "text": "تبدأ مساحة كل مثلث من قاعدة واحدة [[K=\\frac12\\times\\text{base}\\times\\text{perpendicular height}]]. يجوز أن يكون أي ضلع هو القاعدة إذا كان الارتفاع المستخدم عموديًا عليه. تختار هذه الحاسبة الوتر قاعدة، فيكون [[\\text{base}=c]] والارتفاع العمودي المقابل هو الارتفاع، [[\\text{height}=h]]. يعطي التعويض [[K=\\frac12\\times c\\times h]]، أي [[[\\boxed{K=\\frac{ch}{2}}]]]." },
           { "kind": "h3", "text": "لماذا يمكن استخدام الوتر كقاعدة؟" },
           { "kind": "p", "text": "الوتر ببساطة هو القاعدة المختارة لهذا الحساب. يجب قياس الارتفاع من الرأس المقابل، وهو رأس الزاوية القائمة [[C]]، ويجب أن يكون عموديًا على الوتر. اختيار ضلع آخر قاعدة مع ارتفاعه المقابل يعطي المساحة نفسها. القاعدة دور يلعبه الضلع، وليست تسمية دائمة." },
           { "kind": "h3", "text": "لماذا تُقسم الصيغة على اثنين؟" },
@@ -502,7 +502,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-relationship": {
         "h2": "كيف يرتبط الوتر والارتفاع بالضلعين",
         "blocks": [
-          { "kind": "p", "text": "تصف صيغتا مساحة صحيحتان المثلث نفسه: [[K=ab/2]] و [[K=ch/2]]. وبما أنهما تحسبان المساحة نفسها، فإن [[\\frac{ab}{2}=\\frac{ch}{2}]]. بضرب الطرفين في اثنين: [[ab=ch]]. وإعادة الترتيب للارتفاع تعطي [[[\\boxed{h=\\frac{ab}{c}}}]]]. الارتفاع على الوتر هو حاصل ضرب الضلعين مقسومًا على الوتر، وهذا يفسر لماذا لا يمكن لصيغتي المساحة أن تختلفا في مثلث متسق." },
+          { "kind": "p", "text": "تصف صيغتا مساحة صحيحتان المثلث نفسه: [[K=ab/2]] و [[K=ch/2]]. وبما أنهما تحسبان المساحة نفسها، فإن [[\\frac{ab}{2}=\\frac{ch}{2}]]. بضرب الطرفين في اثنين: [[ab=ch]]. وإعادة الترتيب للارتفاع تعطي [[[\\boxed{h=\\frac{ab}{c}}]]]. الارتفاع على الوتر هو حاصل ضرب الضلعين مقسومًا على الوتر، وهذا يفسر لماذا لا يمكن لصيغتي المساحة أن تختلفا في مثلث متسق." },
           { "kind": "h3", "text": "لماذا هذه العلاقة مفيدة" },
           { "kind": "p", "text": "إنها تربط ثلاث طرق لوصف الهندسة نفسها. الضلعان والوتر يحددان الارتفاع، فالمثلث المقاس بأضلاعه يحتويه سلفًا. والارتفاع والوتر يحددان المساحة، فلا تحتاج المساحة أبدًا إلى استعادة الضلعين أولًا. حساب المساحة بأي من الصيغتين ثم المقارنة من أقوى عمليات التحقق، لأن الخطأ في طريق نادرًا ما يتكرر في الآخر." },
           { "kind": "h3", "text": "ربط الصيغة بنظرية فيثاغورس" },
@@ -514,7 +514,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-max": {
         "h2": "لماذا لا يمكن أن يكون الارتفاع أطول من نصف الوتر أبدًا؟",
         "blocks": [
-          { "kind": "p", "text": "كل مثلث قائم صحيح يخضع لـ [[[\\boxed{h\\leq\\frac{c}{2}}}]]]. هذه حقيقة هندسية، وتستحق اشتقاقًا." },
+          { "kind": "p", "text": "كل مثلث قائم صحيح يخضع لـ [[[\\boxed{h\\leq\\frac{c}{2}}]]]. هذه حقيقة هندسية، وتستحق اشتقاقًا." },
           { "kind": "h3", "text": "فهم قطعتي الوتر" },
           { "kind": "p", "text": "تذكر [[x+y=c]] و [[h^2=xy]]. يكون حاصل الضرب [[xy]] أكبر ما يمكن عندما تتساوى القطعتان، نتيجة لمتباينة الوسط الحسابي الهندسي: [[xy\\leq\\left(\\frac{x+y}{2}\\right)^2]]. وبما أن [[x+y=c]]، يصبح الطرف الأيمن [[c^2/4]]، أي [[h^2\\leq\\frac{c^2}{4}]]، وللأطوال الموجبة [[h\\leq c/2]]. بعبارة بسيطة: التقسيمات غير المتساوية تصغّر حاصل الضرب والارتفاع؛ وأطول ارتفاع يأتي من أكثر تقسيم تساويًا." },
           { "kind": "h3", "text": "ماذا يحدث عند الارتفاع الأقصى؟" },
@@ -558,13 +558,13 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
         "blocks": [
           { "kind": "p", "text": "تبني أربعة أمثلة محلولة الطريقة من المألوف صعودًا. يطبق كل مثال [[K=ch/2]] مع إظهار كل تعويض، ويتحقق كل مثال من أن الارتفاع يحترم حد المثلث القائم." },
           { "kind": "h3", "text": "المثال 1: استخدام مثال الحاسبة الموجود" },
-          { "kind": "p", "text": "بفرض [[c=10]] و [[h=4.8]]. الخطوة 1: اكتب الصيغة، [[K=ch/2]]. الخطوة 2: عوّض، [[K=\\frac{10\\times4.8}{2}]]. الخطوة 3: اضرب، [[K=\\frac{48}{2}]]. الجواب النهائي: [[[\\boxed{K=24\\text{ square units}}}]]]. الارتفاع صحيح لأن [[4.8<5]]، دون الحد الأقصى البالغ نصف الوتر." },
+          { "kind": "p", "text": "بفرض [[c=10]] و [[h=4.8]]. الخطوة 1: اكتب الصيغة، [[K=ch/2]]. الخطوة 2: عوّض، [[K=\\frac{10\\times4.8}{2}]]. الخطوة 3: اضرب، [[K=\\frac{48}{2}]]. الجواب النهائي: [[[\\boxed{K=24\\text{ square units}}]]]. الارتفاع صحيح لأن [[4.8<5]]، دون الحد الأقصى البالغ نصف الوتر." },
           { "kind": "h3", "text": "المثال 2: مثلث 3-4-5" },
           { "kind": "p", "text": "بفرض [[a=3]] و [[b=4]] و [[c=5]]. أوجد الارتفاع أولًا: [[h=ab/c]]، أي [[h=\\frac{3\\times4}{5}=2.4]]. ثم [[K=\\frac{5\\times2.4}{2}]]، [[[\\boxed{K=6}]]]. تحقق بالضلعين: [[K=\\frac{3\\times4}{2}=6]]. يتفق الطريقان كما يجب." },
           { "kind": "h3", "text": "المثال 3: مثلث قائم متساوي الساقين" },
           { "kind": "p", "text": "بفرض [[c=10]] و [[h=5]]. عندها [[K=\\frac{10\\times5}{2}]]، [[[\\boxed{K=25}]]]. يساوي الارتفاع نصف الوتر، فتتساوى الساقان وتكون كل زاوية حادة [[45^\\circ]]. هذه هي أكبر مساحة ممكنة لأي مثلث قائم وتره 10." },
           { "kind": "h3", "text": "المثال 4: ارتفاع مثلث أصغر" },
-          { "kind": "p", "text": "بفرض [[c=13]] و [[h=5]]. عندها [[K=\\frac{13\\times5}{2}]]، [[[\\boxed{K=32.5\\text{ square units}}}]]]. يحقق الارتفاع الحد لأن [[5\\leq6.5]]: نصف الوتر 6.5، و 5 دونه بارتياح." }
+          { "kind": "p", "text": "بفرض [[c=13]] و [[h=5]]. عندها [[K=\\frac{13\\times5}{2}]]، [[[\\boxed{K=32.5\\text{ square units}}]]]. يحقق الارتفاع الحد لأن [[5\\leq6.5]]: نصف الوتر 6.5، و 5 دونه بارتياح." }
         ]
       },
       "sec-applications": {
@@ -632,7 +632,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-legs": {
         "h2": "كيفية استعادة الضلعين عندما يكون الوتر والارتفاع معروفين",
         "blocks": [
-          { "kind": "p", "text": "تحتاج الحاسبة إلى [[c]] و [[h]] فقط للمساحة، لكن هذين القياسين يحتويان أيضًا على معلومات كافية لتحديد طولي الضلعين، حتى تبديل موضعيهما. ابدأ من [[a^2+b^2=c^2]] و [[ab=ch]]. وبما أن [[(a^2-b^2)^2=(a^2+b^2)^2-4a^2b^2]]، يعطي التعويض [[(a^2-b^2)^2=c^4-4c^2h^2]]، وبالتالي [[[\\boxed{a^2,b^2=\\frac{c^2\\pm c\\sqrt{c^2-4h^2}}{2}}}]]]. تتوافق الإشارتان مع إسنادي الضلعين: تبديل الضلعين لا يغير شيئًا في المثلث ولا في مساحته." },
+          { "kind": "p", "text": "تحتاج الحاسبة إلى [[c]] و [[h]] فقط للمساحة، لكن هذين القياسين يحتويان أيضًا على معلومات كافية لتحديد طولي الضلعين، حتى تبديل موضعيهما. ابدأ من [[a^2+b^2=c^2]] و [[ab=ch]]. وبما أن [[(a^2-b^2)^2=(a^2+b^2)^2-4a^2b^2]]، يعطي التعويض [[(a^2-b^2)^2=c^4-4c^2h^2]]، وبالتالي [[[\\boxed{a^2,b^2=\\frac{c^2\\pm c\\sqrt{c^2-4h^2}}{2}}]]]. تتوافق الإشارتان مع إسنادي الضلعين: تبديل الضلعين لا يغير شيئًا في المثلث ولا في مساحته." },
           { "kind": "p", "text": "مثال عددي: بفرض [[c=10]] و [[h=4.8]]، عندها [[ab=ch=48]] و [[a^2+b^2=100]]. الضلعان هما [[a=6]] و [[b=8]]. تحقق: [[6^2+8^2=10^2]]، [[36+64=100]]. تتحقق المساحة بالاتجاهين: [[K=\\frac{6\\times8}{2}=24]] و [[K=\\frac{10\\times4.8}{2}=24]]. هذه بصيرة رياضية إضافية، ليست وظيفة إضافية للحاسبة الموجودة، ويجب ألا تشتت عن غرض الحاسبة: المساحة من الوتر والارتفاع." }
         ]
       },
@@ -850,7 +850,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
           { "kind": "h3", "text": "Разбиране на височината към хипотенузата" },
           { "kind": "p", "text": "В триъгълник [[ABC]], [[C]] е върхът на правия ъгъл, а [[AB]] е хипотенузата. Височината [[h]] е отсечката [[CD]], спусната от [[C]] перпендикулярно на [[AB]], значи [[CD\\perp AB]], [[CD=h]] и [[AB=c]], с [[D]] като пета, разделяща триъгълника на два по-малки правоъгълни триъгълника, вложени в него." },
           { "kind": "h3", "text": "Как височината разделя хипотенузата" },
-          { "kind": "p", "text": "Нека височината реже хипотенузата на [[AD=x]] и [[DB=y]]. Тогава [[[\\boxed{x+y=c}]]]. Всеки по-малък триъгълник съдържа прав ъгъл и споделя един остър ъгъл с първоначалния, значи и трите триъгълника са подобни. Подобието на двата по-малки триъгълника дава [[x/h=h/y]], а кръстосаното умножение дава [[[\\boxed{h^2=xy}]]] — връзката на средното геометрично: височината е средното геометрично на двете отсечки на хипотенузата и отправната точка за правилото за максималната височина по-долу." }
+          { "kind": "p", "text": "Нека височината реже хипотенузата на [[AD=x]] и [[DB=y]]. Тогава [[[\\boxed{x+y=c}]]]. Всеки по-малък триъгълник съдържа прав ъгъл и споделя един остър ъгъл с първоначалния, значи и трите триъгълника са подобни. Подобието на двата по-малки триъгълника дава [[x/h=h/y]], а кръстосаното умножение дава [[[\\boxed{h^2=xy}]]], връзката на средното геометрично: височината е средното геометрично на двете отсечки на хипотенузата и отправната точка за правилото за максималната височина по-долу." }
         ],
         "imgAlt": "Триъгълник ABC с прав ъгъл при C, хипотенуза AB означена с c, височина CD означена с h, отсечки x и y",
         "figcaption": "Триъгълник ABC с височината CD към хипотенузата: AD = x, DB = y, x + y = c, h² = xy и K = ch/2."
@@ -858,7 +858,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-formula": {
         "h2": "Защо формулата за лице е половината хипотенуза по височината?",
         "blocks": [
-          { "kind": "p", "text": "Лицето на всеки триъгълник тръгва от едно правило [[K=\\frac12\\times\\text{base}\\times\\text{perpendicular height}]]. Всяка страна може да е основа, ако използваната височина е перпендикулярна на нея. Този калкулатор избира хипотенузата за основа, значи [[\\text{base}=c]], а съответната перпендикулярна височина е височината, [[\\text{height}=h]]. Заместването дава [[K=\\frac12\\times c\\times h]], което е [[[\\boxed{K=\\frac{ch}{2}}}]]]." },
+          { "kind": "p", "text": "Лицето на всеки триъгълник тръгва от едно правило [[K=\\frac12\\times\\text{base}\\times\\text{perpendicular height}]]. Всяка страна може да е основа, ако използваната височина е перпендикулярна на нея. Този калкулатор избира хипотенузата за основа, значи [[\\text{base}=c]], а съответната перпендикулярна височина е височината, [[\\text{height}=h]]. Заместването дава [[K=\\frac12\\times c\\times h]], което е [[[\\boxed{K=\\frac{ch}{2}}]]]." },
           { "kind": "h3", "text": "Защо хипотенузата може да се използва като основа?" },
           { "kind": "p", "text": "Хипотенузата е просто избраната основа за това изчисление. Височината трябва да се измерва от срещуположния връх, върха на правия ъгъл [[C]], и трябва да е перпендикулярна на хипотенузата. Избирането на друга страна за основа със собствената ѝ съответна височина дава същото лице. Основата е роля, която страната играе, не постоянен етикет." },
           { "kind": "h3", "text": "Защо формулата се дели на две?" },
@@ -874,7 +874,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-relationship": {
         "h2": "Как хипотенузата и височината са свързани с двата катета",
         "blocks": [
-          { "kind": "p", "text": "Две валидни формули за лице описват един и същ триъгълник: [[K=ab/2]] и [[K=ch/2]]. Тъй като изчисляват едно и също лице, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Умножете двете страни по две: [[ab=ch]]. Преобразуването за височината дава [[[\\boxed{h=\\frac{ab}{c}}}]]]. Височината към хипотенузата е произведението на двата катета, разделено на хипотенузата, което обяснява защо двете формули за лице никога не могат да се разминат при последователен триъгълник." },
+          { "kind": "p", "text": "Две валидни формули за лице описват един и същ триъгълник: [[K=ab/2]] и [[K=ch/2]]. Тъй като изчисляват едно и също лице, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Умножете двете страни по две: [[ab=ch]]. Преобразуването за височината дава [[[\\boxed{h=\\frac{ab}{c}}]]]. Височината към хипотенузата е произведението на двата катета, разделено на хипотенузата, което обяснява защо двете формули за лице никога не могат да се разминат при последователен триъгълник." },
           { "kind": "h3", "text": "Защо тази връзка е полезна" },
           { "kind": "p", "text": "Тя свързва три начина за описание на една и съща геометрия. Катетите и хипотенузата определят височината, значи триъгълникът, измерен по страните си, вече я съдържа. Височината и хипотенузата определят лицето, значи лицето никога не се нуждае първо да възстановява катетите. Изчисляването на лицето по едната формула и сравняването е една от най-силните проверки, защото грешка в единия път рядко се възпроизвежда в другия." },
           { "kind": "h3", "text": "Свързване на формулата с Питагоровата теорема" },
@@ -886,11 +886,11 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-max": {
         "h2": "Защо височината никога не може да е по-дълга от половината хипотенуза?",
         "blocks": [
-          { "kind": "p", "text": "Всеки валиден правоъгълен триъгълник спазва [[[\\boxed{h\\leq\\frac{c}{2}}}]]]. Това е геометричен факт и заслужава извеждане." },
+          { "kind": "p", "text": "Всеки валиден правоъгълен триъгълник спазва [[[\\boxed{h\\leq\\frac{c}{2}}]]]. Това е геометричен факт и заслужава извеждане." },
           { "kind": "h3", "text": "Разбиране на двете отсечки на хипотенузата" },
-          { "kind": "p", "text": "Припомнете си [[x+y=c]] и [[h^2=xy]]. Произведението [[xy]] е най-голямо, когато двете отсечки са равни — следствие от неравенството между средноаритметичното и средногеометричното: [[xy\\leq\\left(\\frac{x+y}{2}\\right)^2]]. Тъй като [[x+y=c]], дясната страна става [[c^2/4]], значи [[h^2\\leq\\frac{c^2}{4}]], а за положителни дължини [[h\\leq c/2]]. С прости думи: неравните разделяния смаляват произведението и височината; най-високата височина идва от най-равномерното разделяне." },
+          { "kind": "p", "text": "Припомнете си [[x+y=c]] и [[h^2=xy]]. Произведението [[xy]] е най-голямо, когато двете отсечки са равни, следствие от неравенството между средноаритметичното и средногеометричното: [[xy\\leq\\left(\\frac{x+y}{2}\\right)^2]]. Тъй като [[x+y=c]], дясната страна става [[c^2/4]], значи [[h^2\\leq\\frac{c^2}{4}]], а за положителни дължини [[h\\leq c/2]]. С прости думи: неравните разделяния смаляват произведението и височината; най-високата височина идва от най-равномерното разделяне." },
           { "kind": "h3", "text": "Какво се случва при максималната височина?" },
-          { "kind": "p", "text": "Максимумът настъпва при [[x=y=c/2]], а тогава [[h=c/2]]. Това дава равнобедрен правоъгълен триъгълник: двата му катета са равни, а острите му ъгли са [[45^\\circ]] и [[45^\\circ]]. Височината тогава служи и като медиана към хипотенузата — валиден триъгълник, не изроден." },
+          { "kind": "p", "text": "Максимумът настъпва при [[x=y=c/2]], а тогава [[h=c/2]]. Това дава равнобедрен правоъгълен триъгълник: двата му катета са равни, а острите му ъгли са [[45^\\circ]] и [[45^\\circ]]. Височината тогава служи и като медиана към хипотенузата, валиден триъгълник, не изроден." },
           { "kind": "h3", "text": "Пример за максимална височина" },
           { "kind": "p", "text": "При [[c=10]] максималната височина е [[h_{\\max}=10/2=5]]. Максималното лице е [[K=\\frac{10\\times5}{2}]], [[[\\boxed{K_{\\max}=25}]]]. Никой правоъгълен триъгълник с хипотенуза 10 не може да има височина над 5 и следователно никой не може да има лице над 25 квадратни единици." },
           { "kind": "h3", "text": "Какво се случва, когато височината е по-голяма от c/2?" },
@@ -904,7 +904,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-howto": {
         "h2": "Как да използвате калкулатора за лице на правоъгълен триъгълник от хипотенуза и височина",
         "blocks": [
-          { "kind": "p", "text": "Калкулаторът се нуждае от точно два входа. Обяснението по-долу следва реда на екрана — от измерения триъгълник до проверения резултат." }
+          { "kind": "p", "text": "Калкулаторът се нуждае от точно два входа. Обяснението по-долу следва реда на екрана, от измерения триъгълник до проверения резултат." }
         ],
         "steps": [
           "<strong>Измерете или определете хипотенузата.</strong> Най-дългата страна, срещу ъгъла от 90 градуса.",
@@ -930,13 +930,13 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
         "blocks": [
           { "kind": "p", "text": "Четири решени примера изграждат метода от познатото нагоре. Всеки прилага [[K=ch/2]] с показано всяко заместване и всеки проверява, че височината спазва границата на правоъгълния триъгълник." },
           { "kind": "h3", "text": "Пример 1: Използване на съществуващия пример на калкулатора" },
-          { "kind": "p", "text": "Дадено [[c=10]] и [[h=4.8]]. Стъпка 1: запишете формулата, [[K=ch/2]]. Стъпка 2: заместете, [[K=\\frac{10\\times4.8}{2}]]. Стъпка 3: умножете, [[K=\\frac{48}{2}]]. Краен отговор: [[[\\boxed{K=24\\text{ square units}}}]]]. Височината е валидна, защото [[4.8<5]] — под максимума от половината хипотенуза." },
+          { "kind": "p", "text": "Дадено [[c=10]] и [[h=4.8]]. Стъпка 1: запишете формулата, [[K=ch/2]]. Стъпка 2: заместете, [[K=\\frac{10\\times4.8}{2}]]. Стъпка 3: умножете, [[K=\\frac{48}{2}]]. Краен отговор: [[[\\boxed{K=24\\text{ square units}}]]]. Височината е валидна, защото [[4.8<5]], под максимума от половината хипотенуза." },
           { "kind": "h3", "text": "Пример 2: Триъгълник 3-4-5" },
           { "kind": "p", "text": "Дадено [[a=3]], [[b=4]], [[c=5]]. Първо намерете височината: [[h=ab/c]], значи [[h=\\frac{3\\times4}{5}=2.4]]. Тогава [[K=\\frac{5\\times2.4}{2}]], [[[\\boxed{K=6}]]]. Проверете с катетите: [[K=\\frac{3\\times4}{2}=6]]. И двата пътя съвпадат, както трябва." },
           { "kind": "h3", "text": "Пример 3: Равнобедрен правоъгълен триъгълник" },
           { "kind": "p", "text": "Дадено [[c=10]] и [[h=5]]. Тогава [[K=\\frac{10\\times5}{2}]], [[[\\boxed{K=25}]]]. Височината е равна на половината хипотенуза, значи катетите са равни и всеки остър ъгъл е [[45^\\circ]]. Това е максималното възможно лице за всеки правоъгълен триъгълник с хипотенуза 10." },
           { "kind": "h3", "text": "Пример 4: По-малка височина на триъгълник" },
-          { "kind": "p", "text": "Дадено [[c=13]] и [[h=5]]. Тогава [[K=\\frac{13\\times5}{2}]], [[[\\boxed{K=32.5\\text{ square units}}}]]]. Височината удовлетворява границата, защото [[5\\leq6.5]]: половината хипотенуза е 6.5, а 5 е удобно под нея." }
+          { "kind": "p", "text": "Дадено [[c=13]] и [[h=5]]. Тогава [[K=\\frac{13\\times5}{2}]], [[[\\boxed{K=32.5\\text{ square units}}]]]. Височината удовлетворява границата, защото [[5\\leq6.5]]: половината хипотенуза е 6.5, а 5 е удобно под нея." }
         ]
       },
       "sec-applications": {
@@ -994,7 +994,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
         "blocks": [
           { "kind": "p", "text": "Височината среща хипотенузата в [[D]], разделяйки я на [[AD=x]] и [[DB=y]]. Връзката е [[[\\boxed{h^2=xy}]]]. Тук [[x]] е първата отсечка, [[y]] е втората, а [[h]] е перпендикулярната височина. Струва си да се види откъде идва, а не да се запомня." },
           { "kind": "h3", "text": "Как работи тази връзка?" },
-          { "kind": "p", "text": "Височината създава два по-малки правоъгълни триъгълника, всеки подобен на първоначалния и следователно подобни един на друг. Съпоставянето на късия катет на единия с дългия катет на другия дава [[\\frac{x}{h}=\\frac{h}{y}]], което при кръстосано умножение става [[h^2=xy]]. Като извадим квадратен корен, [[h=\\sqrt{xy}]]: височината е средното геометрично на двете отсечки на хипотенузата — числото, чийто квадрат е равен на тяхното произведение." },
+          { "kind": "p", "text": "Височината създава два по-малки правоъгълни триъгълника, всеки подобен на първоначалния и следователно подобни един на друг. Съпоставянето на късия катет на единия с дългия катет на другия дава [[\\frac{x}{h}=\\frac{h}{y}]], което при кръстосано умножение става [[h^2=xy]]. Като извадим квадратен корен, [[h=\\sqrt{xy}]]: височината е средното геометрично на двете отсечки на хипотенузата, числото, чийто квадрат е равен на тяхното произведение." },
           { "kind": "h3", "text": "Числов пример" },
           { "kind": "p", "text": "При [[x=4]] и [[y=9]] тогава [[h^2=4\\times9=36]], [[[\\boxed{h=6}]]]. Цялата хипотенуза е [[c=4+9=13]], а лицето е [[K=\\frac{13\\times6}{2}]], [[[\\boxed{K=39}]]]. Когато двете отсечки на хипотенузата са известни, височината следва без измервания на катети." },
           { "kind": "h3", "text": "Кога е полезна тази връзка?" },
@@ -1004,7 +1004,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-legs": {
         "h2": "Как да възстановим двата катета, когато хипотенузата и височината са известни",
         "blocks": [
-          { "kind": "p", "text": "Калкулаторът се нуждае само от [[c]] и [[h]] за лицето, но тези две измервания съдържат и достатъчно информация за определяне на дължините на двата катета — с точност до размяната им. Започнете от [[a^2+b^2=c^2]] и [[ab=ch]]. Тъй като [[(a^2-b^2)^2=(a^2+b^2)^2-4a^2b^2]], заместването дава [[(a^2-b^2)^2=c^4-4c^2h^2]] и следователно [[[\\boxed{a^2,b^2=\\frac{c^2\\pm c\\sqrt{c^2-4h^2}}{2}}}]]]. Двата знака съответстват на двете присвоявания на катетите: размяната на катетите не променя нищо нито в триъгълника, нито в лицето му." },
+          { "kind": "p", "text": "Калкулаторът се нуждае само от [[c]] и [[h]] за лицето, но тези две измервания съдържат и достатъчно информация за определяне на дължините на двата катета, с точност до размяната им. Започнете от [[a^2+b^2=c^2]] и [[ab=ch]]. Тъй като [[(a^2-b^2)^2=(a^2+b^2)^2-4a^2b^2]], заместването дава [[(a^2-b^2)^2=c^4-4c^2h^2]] и следователно [[[\\boxed{a^2,b^2=\\frac{c^2\\pm c\\sqrt{c^2-4h^2}}{2}}]]]. Двата знака съответстват на двете присвоявания на катетите: размяната на катетите не променя нищо нито в триъгълника, нито в лицето му." },
           { "kind": "p", "text": "Числов пример: при [[c=10]] и [[h=4.8]] тогава [[ab=ch=48]] и [[a^2+b^2=100]]. Катетите са [[a=6]] и [[b=8]]. Проверка: [[6^2+8^2=10^2]], [[36+64=100]]. Лицето се проверява и в двете посоки: [[K=\\frac{6\\times8}{2}=24]] и [[K=\\frac{10\\times4.8}{2}=24]]. Това е допълнителен математически поглед, не допълнителна функция на съществуващия калкулатор, и не бива да отвлича от целта на калкулатора: лице от хипотенуза и височина." }
         ]
       },
@@ -1019,7 +1019,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
           { "kind": "h3", "text": "Граничен случай" },
           { "kind": "p", "text": "При [[c=12]] и [[h=6]] височината е равна на максималната възможна стойност. Това е равнобедрен правоъгълен триъгълник с два равни катета, седящ точно на границата. Границата е включваща: [[h\\leq c/2]] допуска равенство." },
           { "kind": "h3", "text": "Ами нулевите или отрицателните стойности?" },
-          { "kind": "p", "text": "Хипотенузата трябва да е положителна, а височината трябва да е положителна за неизроден триъгълник. Нулевата височина дава нулево лице и изродена фигура — линия, а не триъгълник, а отрицателните дължини нямат геометричен смисъл. Това ръководство не твърди, че калкулаторът извършва всяка проверка автоматично." }
+          { "kind": "p", "text": "Хипотенузата трябва да е положителна, а височината трябва да е положителна за неизроден триъгълник. Нулевата височина дава нулево лице и изродена фигура, линия, а не триъгълник, а отрицателните дължини нямат геометричен смисъл. Това ръководство не твърди, че калкулаторът извършва всяка проверка автоматично." }
         ]
       },
       "sec-units": {
@@ -1069,7 +1069,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
           { "kind": "h3", "text": "15. Предполагане, че формулата автоматично валидира геометрията на триъгълника" },
           { "kind": "p", "text": "Аритметиката никога не отказва вход. Поправка: изпълнете сами проверките за валидност." },
           { "kind": "h3", "text": "Грешно срещу правилно: конкретен пример" },
-          { "kind": "p", "text": "При [[c=10]] и [[h=4]] правилното изчисление е [[K=\\frac{10\\times4}{2}=20]]. Пропускането на разполовяването дава [[K=10\\times4=40]] — двойното лице на триъгълника. По същия начин [[h=6]] при [[c=10]] не издържа границата на височината, макар аритметиката да дава число." }
+          { "kind": "p", "text": "При [[c=10]] и [[h=4]] правилното изчисление е [[K=\\frac{10\\times4}{2}=20]]. Пропускането на разполовяването дава [[K=10\\times4=40]], двойното лице на триъгълника. По същия начин [[h=6]] при [[c=10]] не издържа границата на височината, макар аритметиката да дава число." }
         ]
       },
       "sec-verify": {

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="50" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Four Practical Right Triangle Area Calculations</text>
+
+<rect x="20" y="68" width="560" height="230" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+<text x="44" y="102" font-size="23" font-weight="700" fill="#ffffff">Roof gable</text>
+<polygon points="64,264 264,114 264,264" fill="#ffffff" fill-opacity="0.05"/>
+<line x1="64" y1="264" x2="264" y2="264" stroke="#a3a3a3" stroke-width="5" stroke-linecap="round"/>
+<line x1="264" y1="264" x2="264" y2="114" stroke="#a3a3a3" stroke-width="5" stroke-linecap="round"/>
+<line x1="64" y1="264" x2="264" y2="114" stroke="#f1c97d" stroke-width="6" stroke-linecap="round"/>
+<polyline points="248,264 248,248 264,248" fill="none" stroke="#ffffff" stroke-width="3"/>
+<circle cx="64" cy="264" r="7" fill="#f1c97d"/>
+<circle cx="264" cy="264" r="7" fill="#f1c97d"/>
+<circle cx="264" cy="114" r="7" fill="#f1c97d"/>
+<text x="316" y="134" font-size="20" fill="#ffffff" text-anchor="start">b = 4 m</text>
+<text x="316" y="164" font-size="20" fill="#ffffff" text-anchor="start">c = 5 m</text>
+<text x="316" y="194" font-size="20" fill="#ffffff" text-anchor="start">A = 36.87 deg</text>
+<text x="316" y="236" font-size="21" font-weight="700" fill="#f1c97d" text-anchor="start">K = bc sin(A) / 2</text>
+<text x="316" y="264" font-size="21" font-weight="700" fill="#f1c97d" text-anchor="start">= 6 m2</text>
+<rect x="620" y="68" width="560" height="230" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+<text x="644" y="102" font-size="23" font-weight="700" fill="#ffffff">Glass window</text>
+<polygon points="664,264 808.0,156.0 808.0,264" fill="#ffffff" fill-opacity="0.05"/>
+<line x1="664" y1="264" x2="808.0" y2="264" stroke="#a3a3a3" stroke-width="5" stroke-linecap="round"/>
+<line x1="808.0" y1="264" x2="808.0" y2="156.0" stroke="#a3a3a3" stroke-width="5" stroke-linecap="round"/>
+<line x1="664" y1="264" x2="808.0" y2="156.0" stroke="#f1c97d" stroke-width="6" stroke-linecap="round"/>
+<polyline points="792.0,264 792.0,248 808.0,248" fill="none" stroke="#ffffff" stroke-width="3"/>
+<circle cx="664" cy="264" r="7" fill="#f1c97d"/>
+<circle cx="808.0" cy="264" r="7" fill="#f1c97d"/>
+<circle cx="808.0" cy="156.0" r="7" fill="#f1c97d"/>
+<text x="916" y="134" font-size="20" fill="#ffffff" text-anchor="start">a = 0.6 m</text>
+<text x="916" y="164" font-size="20" fill="#ffffff" text-anchor="start">c = 1 m</text>
+<text x="916" y="194" font-size="20" fill="#ffffff" text-anchor="start">B = 53.13 deg</text>
+<text x="916" y="236" font-size="21" font-weight="700" fill="#f1c97d" text-anchor="start">K = ac sin(B) / 2</text>
+<text x="916" y="264" font-size="21" font-weight="700" fill="#f1c97d" text-anchor="start">= 0.24 m2</text>
+<rect x="20" y="336" width="560" height="230" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+<text x="44" y="370" font-size="23" font-weight="700" fill="#ffffff">Field survey</text>
+<polygon points="64,532 280,469 280,532" fill="#ffffff" fill-opacity="0.05"/>
+<line x1="64" y1="532" x2="280" y2="532" stroke="#a3a3a3" stroke-width="5" stroke-linecap="round"/>
+<line x1="280" y1="532" x2="280" y2="469" stroke="#a3a3a3" stroke-width="5" stroke-linecap="round"/>
+<line x1="64" y1="532" x2="280" y2="469" stroke="#f1c97d" stroke-width="6" stroke-linecap="round"/>
+<polyline points="264,532 264,516 280,516" fill="none" stroke="#ffffff" stroke-width="3"/>
+<circle cx="64" cy="532" r="7" fill="#f1c97d"/>
+<circle cx="280" cy="532" r="7" fill="#f1c97d"/>
+<circle cx="280" cy="469" r="7" fill="#f1c97d"/>
+<text x="316" y="402" font-size="20" fill="#ffffff" text-anchor="start">a = 7 m</text>
+<text x="316" y="432" font-size="20" fill="#ffffff" text-anchor="start">c = 25 m</text>
+<text x="316" y="462" font-size="20" fill="#ffffff" text-anchor="start">B = 73.74 deg</text>
+<text x="316" y="504" font-size="21" font-weight="700" fill="#f1c97d" text-anchor="start">K = ac sin(B) / 2</text>
+<text x="316" y="532" font-size="21" font-weight="700" fill="#f1c97d" text-anchor="start">= 84 m2</text>
+<rect x="620" y="336" width="560" height="230" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+<text x="644" y="370" font-size="23" font-weight="700" fill="#ffffff">Triangular sail</text>
+<polygon points="664,532 832,462 832,532" fill="#ffffff" fill-opacity="0.05"/>
+<line x1="664" y1="532" x2="832" y2="532" stroke="#a3a3a3" stroke-width="5" stroke-linecap="round"/>
+<line x1="832" y1="532" x2="832" y2="462" stroke="#a3a3a3" stroke-width="5" stroke-linecap="round"/>
+<line x1="664" y1="532" x2="832" y2="462" stroke="#f1c97d" stroke-width="6" stroke-linecap="round"/>
+<polyline points="816,532 816,516 832,516" fill="none" stroke="#ffffff" stroke-width="3"/>
+<circle cx="664" cy="532" r="7" fill="#f1c97d"/>
+<circle cx="832" cy="532" r="7" fill="#f1c97d"/>
+<circle cx="832" cy="462" r="7" fill="#f1c97d"/>
+<text x="916" y="402" font-size="20" fill="#ffffff" text-anchor="start">b = 12 ft</text>
+<text x="916" y="432" font-size="20" fill="#ffffff" text-anchor="start">c = 13 ft</text>
+<text x="916" y="462" font-size="20" fill="#ffffff" text-anchor="start">A = 22.62 deg</text>
+<text x="916" y="504" font-size="21" font-weight="700" fill="#f1c97d" text-anchor="start">K = bc sin(A) / 2</text>
+<text x="916" y="532" font-size="21" font-weight="700" fill="#f1c97d" text-anchor="start">= 30 ft2</text>
+</svg>

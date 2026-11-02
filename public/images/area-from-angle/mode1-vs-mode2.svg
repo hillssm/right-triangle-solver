@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="50" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Mode 1 vs. Mode 2: Same Triangle, Same Area</text>
+
+<polygon points="430,400 770,145 770,400" fill="#ffffff" fill-opacity="0.05"/>
+<line x1="770" y1="145" x2="770" y2="400" stroke="#a3a3a3" stroke-width="7" stroke-linecap="round"/>
+<line x1="770" y1="400" x2="430" y2="400" stroke="#a3a3a3" stroke-width="7" stroke-linecap="round"/>
+<line x1="430" y1="400" x2="770" y2="145" stroke="#f1c97d" stroke-width="8" stroke-linecap="round"/>
+<circle cx="404" cy="402" r="9" fill="#f1c97d"/>
+<text x="404" y="411" font-size="24" font-weight="700" fill="#131313" text-anchor="middle">A</text>
+<circle cx="798" cy="402" r="9" fill="#f1c97d"/>
+<text x="798" y="411" font-size="24" font-weight="700" fill="#131313" text-anchor="middle">C</text>
+<circle cx="774" cy="117" r="9" fill="#f1c97d"/>
+<text x="774" y="126" font-size="24" font-weight="700" fill="#131313" text-anchor="middle">B</text>
+<text x="802" y="280.5" font-size="24" font-weight="700" fill="#a3a3a3" text-anchor="start">a = 3</text>
+<text x="600.0" y="442" font-size="24" font-weight="700" fill="#a3a3a3" text-anchor="middle">b = 4</text>
+<text x="560.0" y="264.5" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">c = 5</text>
+<polyline points="746,400 746,376 770,376" fill="none" stroke="#ffffff" stroke-width="3"/>
+<polyline points="468.4,371.2 469.9,373.3 471.3,375.5 472.5,377.7 473.7,380.0 474.7,382.4 475.5,384.8 476.3,387.3 476.9,389.8 477.4,392.3 477.7,394.9 477.9,397.4 478.0,400.0" fill="none" stroke="#f1c97d" stroke-width="4"/>
+<polyline points="770.0,193.0 767.4,192.9 764.8,192.7 762.2,192.4 759.6,191.9 757.1,191.2 754.6,190.5 752.1,189.5 749.7,188.5 747.4,187.3 745.1,186.0 742.9,184.6 740.8,183.1 738.7,181.4 736.8,179.7 735.0,177.8 733.2,175.9 731.6,173.8" fill="none" stroke="#f1c97d" stroke-width="4"/>
+<text x="502" y="380" font-size="20" fill="#ffffff">A = 36.87 deg</text>
+<text x="594" y="207" font-size="20" fill="#ffffff">B = 53.13 deg</text>
+<rect x="30" y="150" width="360" height="280" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+<text x="210" y="196" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">Mode 1</text>
+<text x="210" y="248" font-size="22" fill="#ffffff" text-anchor="middle">K = bc sin(A) / 2</text>
+<text x="210" y="300" font-size="22" fill="#ffffff" text-anchor="middle">K = 4 x 5 x 0.6 / 2</text>
+<text x="210" y="380" font-size="46" font-weight="700" fill="#f1c97d" text-anchor="middle">K = 6</text>
+<rect x="810" y="150" width="360" height="280" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+<text x="990" y="196" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">Mode 2</text>
+<text x="990" y="248" font-size="22" fill="#ffffff" text-anchor="middle">K = ac sin(B) / 2</text>
+<text x="990" y="300" font-size="22" fill="#ffffff" text-anchor="middle">K = 3 x 5 x 0.8 / 2</text>
+<text x="990" y="380" font-size="46" font-weight="700" fill="#f1c97d" text-anchor="middle">K = 6</text>
+<rect x="30" y="462" width="1140" height="140" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+<text x="600" y="516" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">Verification with the legs formula</text>
+<text x="600" y="568" font-size="30" font-weight="700" fill="#4ade80" text-anchor="middle">K = ab / 2 = 3 x 4 / 2 = 6</text>
+</svg>

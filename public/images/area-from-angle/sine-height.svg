@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="50" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">How Sine Creates the Perpendicular Height</text>
+
+<rect x="20" y="64" width="373" height="548" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+<rect x="413" y="64" width="374" height="548" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+<rect x="807" y="64" width="373" height="548" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+<text x="206" y="104" font-size="22" font-weight="700" fill="#f1c97d" text-anchor="middle">Part A: height from sine</text>
+<text x="600" y="104" font-size="22" font-weight="700" fill="#f1c97d" text-anchor="middle">Part B: base times height</text>
+<text x="993" y="104" font-size="22" font-weight="700" fill="#f1c97d" text-anchor="middle">Part C: direct formula</text>
+<polygon points="60,470 328,268 328,470" fill="#ffffff" fill-opacity="0.05"/>
+<line x1="328" y1="268" x2="328" y2="470" stroke="#4ade80" stroke-width="7" stroke-linecap="round"/>
+<line x1="328" y1="470" x2="60" y2="470" stroke="#a3a3a3" stroke-width="7" stroke-linecap="round"/>
+<line x1="60" y1="470" x2="328" y2="268" stroke="#f1c97d" stroke-width="8" stroke-linecap="round"/>
+<circle cx="38" cy="472" r="9" fill="#f1c97d"/>
+<text x="38" y="481" font-size="24" font-weight="700" fill="#131313" text-anchor="middle">A</text>
+<circle cx="352" cy="472" r="9" fill="#f1c97d"/>
+<text x="352" y="481" font-size="24" font-weight="700" fill="#131313" text-anchor="middle">C</text>
+<circle cx="330" cy="244" r="9" fill="#f1c97d"/>
+<text x="330" y="253" font-size="24" font-weight="700" fill="#131313" text-anchor="middle">B</text>
+<text x="356" y="377.0" font-size="24" font-weight="700" fill="#4ade80" text-anchor="start">a = 3</text>
+<text x="194.0" y="510" font-size="24" font-weight="700" fill="#a3a3a3" text-anchor="middle">b = 4</text>
+<text x="160.0" y="365.0" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">c = 5</text>
+<polyline points="306,470 306,448 328,448" fill="none" stroke="#ffffff" stroke-width="3"/>
+<polyline points="95.2,443.6 96.6,445.5 97.8,447.5 99.0,449.6 100.0,451.7 100.9,453.9 101.7,456.1 102.4,458.3 103.0,460.6 103.4,463.0 103.7,465.3 103.9,467.6 104.0,470.0" fill="none" stroke="#ffffff" stroke-width="4"/>
+<text x="126" y="452" font-size="20" fill="#ffffff">A = 36.87 deg</text>
+<text x="206" y="540" font-size="22" font-weight="700" fill="#4ade80" text-anchor="middle">a = c sin(A) = 5 x 0.6 = 3</text>
+<text x="206" y="572" font-size="19" fill="#a3a3a3" text-anchor="middle">sine turns the hypotenuse</text>
+<text x="206" y="596" font-size="19" fill="#a3a3a3" text-anchor="middle">into the perpendicular height</text>
+<text x="600" y="220" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">K = b a / 2</text>
+<text x="600" y="300" font-size="28" fill="#ffffff" text-anchor="middle">K = 4 x 3 / 2</text>
+<text x="600" y="380" font-size="44" font-weight="700" fill="#f1c97d" text-anchor="middle">K = 6</text>
+<text x="600" y="440" font-size="20" fill="#a3a3a3" text-anchor="middle">familiar legs formula</text>
+<text x="993" y="220" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">K = bc sin(A) / 2</text>
+<text x="993" y="300" font-size="28" fill="#ffffff" text-anchor="middle">K = 4 x 5 x 0.6 / 2</text>
+<text x="993" y="380" font-size="44" font-weight="700" fill="#f1c97d" text-anchor="middle">K = 6</text>
+<text x="993" y="440" font-size="20" fill="#a3a3a3" text-anchor="middle">both calculations agree</text>
+<text x="400" y="360" font-size="34" font-weight="700" fill="#f1c97d" text-anchor="middle">=</text>
+<text x="794" y="360" font-size="34" font-weight="700" fill="#f1c97d" text-anchor="middle">=</text>
+</svg>

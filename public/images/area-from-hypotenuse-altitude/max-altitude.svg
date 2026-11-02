@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<rect width="1200" height="630" fill="#111412"/>
+<text x="60" y="55" fill="#f1c97d" font-size="26" font-family="Georgia,serif" font-weight="bold">Maximum and Minimum Altitude Conditions (c = 10)</text>
+
+<!-- Panel 1: Maximum (isosceles) -->
+<text x="80" y="110" fill="#90d090" font-size="20" font-weight="bold">Maximum: h = 5 (valid)</text>
+<polygon points="60,400 340,400 200,260" fill="none" stroke="#90d090" stroke-width="3"/>
+<line x1="200" y1="260" x2="200" y2="400" stroke="#7db8f1" stroke-width="2" stroke-dasharray="8,5"/>
+<text x="190" y="440" fill="#f5f0e6" font-size="18">c = 10</text>
+<text x="212" y="340" fill="#7db8f1" font-size="18">h = 5</text>
+<text x="80" y="480" fill="#90d090" font-size="20">K = 25</text>
+<text x="80" y="510" fill="#9a958a" font-size="16">Isosceles, 45-45-90</text>
+
+<!-- Panel 2: Valid smaller -->
+<text x="460" y="110" fill="#7db8f1" font-size="20" font-weight="bold">Valid: h = 4</text>
+<polygon points="420,400 740,400 500,290" fill="none" stroke="#7db8f1" stroke-width="3"/>
+<line x1="500" y1="290" x2="500" y2="400" stroke="#7db8f1" stroke-width="2" stroke-dasharray="8,5"/>
+<text x="570" y="440" fill="#f5f0e6" font-size="18">c = 10</text>
+<text x="512" y="350" fill="#7db8f1" font-size="18">h = 4</text>
+<text x="460" y="480" fill="#7db8f1" font-size="20">K = 20</text>
+<text x="460" y="510" fill="#9a958a" font-size="16">Elongated triangle</text>
+
+<!-- Panel 3: Invalid -->
+<text x="840" y="110" fill="#d09090" font-size="20" font-weight="bold">Invalid: h = 5.5</text>
+<polygon points="800,400 1120,400 880,230" fill="none" stroke="#d09090" stroke-width="3" stroke-dasharray="12,6"/>
+<line x1="880" y1="230" x2="880" y2="400" stroke="#d09090" stroke-width="2" stroke-dasharray="8,5"/>
+<text x="950" y="440" fill="#f5f0e6" font-size="18">c = 10</text>
+<text x="892" y="320" fill="#d09090" font-size="18">h = 5.5</text>
+<text x="840" y="480" fill="#d09090" font-size="20">h &gt; c/2: INVALID</text>
+<text x="840" y="510" fill="#9a958a" font-size="16">Not a right triangle</text>
+
+<text x="150" y="580" fill="#f5f0e6" font-size="20">The altitude can never exceed half the hypotenuse in a right triangle.</text>
+</svg>

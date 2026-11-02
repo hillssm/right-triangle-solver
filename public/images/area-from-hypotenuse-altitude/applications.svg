@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<rect width="1200" height="630" fill="#111412"/>
+<text x="60" y="50" fill="#f1c97d" font-size="26" font-family="Georgia,serif" font-weight="bold">Four Practical Applications</text>
+
+<!-- Top-left: Glass window -->
+<text x="80" y="100" fill="#7db8f1" font-size="18" font-weight="bold">Glass Window</text>
+<polygon points="80,230 280,230 140,120" fill="#f1c97d" fill-opacity="0.15" stroke="#f1c97d" stroke-width="2"/>
+<text x="80" y="260" fill="#f5f0e6" font-size="16">c=2.5m, h=1.2m</text>
+<text x="80" y="285" fill="#f1c97d" font-size="18">K=1.5 m²</text>
+
+<!-- Top-right: Ramp panel -->
+<text x="650" y="100" fill="#7db8f1" font-size="18" font-weight="bold">Ramp Side Panel</text>
+<polygon points="650,230 850,230 700,130" fill="#f1c97d" fill-opacity="0.15" stroke="#f1c97d" stroke-width="2"/>
+<text x="650" y="260" fill="#f5f0e6" font-size="16">c=4m, h=1.5m</text>
+<text x="650" y="285" fill="#f1c97d" font-size="18">K=3 m²</text>
+
+<!-- Bottom-left: Sail -->
+<text x="80" y="350" fill="#7db8f1" font-size="18" font-weight="bold">Sail Section</text>
+<polygon points="80,480 280,480 150,370" fill="#f1c97d" fill-opacity="0.15" stroke="#f1c97d" stroke-width="2"/>
+<text x="80" y="510" fill="#f5f0e6" font-size="16">c=13ft, h=5ft</text>
+<text x="80" y="535" fill="#f1c97d" font-size="18">K=32.5 ft²</text>
+
+<!-- Bottom-right: Land -->
+<text x="650" y="350" fill="#7db8f1" font-size="18" font-weight="bold">Land Section</text>
+<polygon points="650,480 850,480 720,380" fill="#f1c97d" fill-opacity="0.15" stroke="#f1c97d" stroke-width="2"/>
+<text x="650" y="510" fill="#f5f0e6" font-size="16">c=50m, h=12m</text>
+<text x="650" y="535" fill="#f1c97d" font-size="18">K=300 m²</text>
+
+<text x="150" y="590" fill="#9a958a" font-size="18">Each panel shows a right-triangular model with its hypotenuse, altitude, and calculated area.</text>
+</svg>

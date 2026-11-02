@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<rect width="1200" height="630" fill="#111412"/>
+<text x="60" y="55" fill="#f1c97d" font-size="26" font-family="Georgia,serif" font-weight="bold">Right Triangle With Altitude to the Hypotenuse</text>
+<!-- Triangle ABC -->
+<polygon points="300,500 900,500 497,218" fill="none" stroke="#f1c97d" stroke-width="3"/>
+<!-- Altitude CD (dashed, distinct color) -->
+<line x1="497" y1="218" x2="497" y2="500" stroke="#7db8f1" stroke-width="3" stroke-dasharray="10,6"/>
+<!-- Labels -->
+<text x="272" y="532" fill="#f5f0e6" font-size="24" font-weight="bold">A</text>
+<text x="912" y="532" fill="#f5f0e6" font-size="24" font-weight="bold">B</text>
+<text x="469" y="226" fill="#f5f0e6" font-size="24" font-weight="bold">C</text>
+<text x="485" y="532" fill="#7db8f1" font-size="22" font-weight="bold">D</text>
+<!-- Side labels -->
+<text x="600" y="545" fill="#f5f0e6" font-size="22">c (hypotenuse)</text>
+<text x="511.0" y="359.0" fill="#7db8f1" font-size="22">h</text>
+<text x="368.5" y="488" fill="#9a958a" font-size="20">x</text>
+<text x="708.5" y="488" fill="#9a958a" font-size="20">y</text>
+<text x="348.5" y="359.0" fill="#9a958a" font-size="20">b</text>
+<text x="716.5" y="359.0" fill="#9a958a" font-size="20">a</text>
+<!-- Right angle markers -->
+<rect x="483" y="220" width="14" height="14" fill="none" stroke="#f1c97d" stroke-width="2"/>
+<rect x="483" y="486" width="14" height="14" fill="none" stroke="#7db8f1" stroke-width="2"/>
+<!-- Formulas at bottom -->
+<text x="150" y="585" fill="#f5f0e6" font-size="20">x + y = c</text>
+<text x="400" y="585" fill="#f5f0e6" font-size="20">h² = xy</text>
+<text x="620" y="585" fill="#f1c97d" font-size="20">K = ch/2</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<rect width="1200" height="630" fill="#111412"/>
+<text x="60" y="55" fill="#f1c97d" font-size="26" font-family="Georgia,serif" font-weight="bold">Two Ways to Calculate the Same Area</text>
+
+<!-- Panel A: hypotenuse and altitude -->
+<text x="150" y="110" fill="#7db8f1" font-size="22" font-weight="bold">Panel A: Hypotenuse and Altitude</text>
+<polygon points="120,450 480,450 240,180" fill="none" stroke="#f1c97d" stroke-width="3"/>
+<line x1="240" y1="180" x2="240" y2="450" stroke="#7db8f1" stroke-width="3" stroke-dasharray="10,6"/>
+<text x="290" y="470" fill="#f5f0e6" font-size="20">c</text>
+<text x="252" y="320" fill="#7db8f1" font-size="20">h</text>
+<text x="120" y="520" fill="#f1c97d" font-size="22">K = ch/2</text>
+
+<!-- Divider -->
+<line x1="600" y1="90" x2="600" y2="540" stroke="#4a4a4a" stroke-width="2"/>
+
+<!-- Panel B: two legs -->
+<text x="720" y="110" fill="#7db8f1" font-size="22" font-weight="bold">Panel B: Two Perpendicular Legs</text>
+<polygon points="720,450 1080,450 720,180" fill="none" stroke="#f1c97d" stroke-width="3"/>
+<text x="890" y="480" fill="#f5f0e6" font-size="20">a</text>
+<text x="690" y="320" fill="#f5f0e6" font-size="20">b</text>
+<rect x="720" y="420" width="30" height="30" fill="none" stroke="#f1c97d" stroke-width="2"/>
+<text x="720" y="520" fill="#f1c97d" font-size="22">K = ab/2</text>
+
+<!-- Bottom equality -->
+<text x="350" y="585" fill="#f5f0e6" font-size="24">ch/2 = ab/2</text>
+<text x="620" y="585" fill="#9a958a" font-size="20">Both formulas give the same enclosed area.</text>
+</svg>

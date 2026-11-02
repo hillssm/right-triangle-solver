@@ -15,6 +15,9 @@ import { AREA_FROM_ALTITUDE_GUIDE_TRANSLATIONS } from 'src/data/areaFromAltitude
 import AreaFromAngleGuide from 'theme/components/AreaFromAngleGuide.astro';
 import AreaFromAngleGuideLocalized from 'theme/components/AreaFromAngleGuideLocalized.astro';
 import { AREA_FROM_ANGLE_GUIDE_TRANSLATIONS } from 'src/data/areaFromAngleGuideTranslations';
+import AreaFromHypotenuseAltitudeGuide from 'theme/components/AreaFromHypotenuseAltitudeGuide.astro';
+import AreaFromHypotenuseAltitudeGuideLocalized from 'theme/components/AreaFromHypotenuseAltitudeGuideLocalized.astro';
+import { AREA_FROM_HYPOTENUSE_ALTITUDE_GUIDE_TRANSLATIONS } from 'src/data/areaFromHypotenuseAltitudeGuideTranslations';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 
@@ -294,6 +297,12 @@ const isAreaFromAnglePage =
   page.slug === 'right-triangle-area-from-angle-calculator' &&
   (locale === 'en' || AREA_FROM_ANGLE_GUIDE_TRANSLATIONS[locale]);
 
+// Page 19 of 45: full guide replaces the old thin template content on the
+// area-from-hypotenuse-and-altitude page (calculator itself stays untouched).
+const isAreaFromHypotenuseAltitudePage =
+  page.slug === 'right-triangle-area-from-hypotenuse-and-altitude-calculator' &&
+  (locale === 'en' || AREA_FROM_HYPOTENUSE_ALTITUDE_GUIDE_TRANSLATIONS[locale]);
+
 // Each area page is a standalone ranking page with a self-referencing canonical.
 const canonicalPath = localizePath(locale, page.url);
 const showDiagramFormula = !isAreaChildCalculator;
@@ -568,7 +577,7 @@ const measurementSideEntries = page.diagram
   )}
 
   {/* Full guides replace the old thin content on the area-from-altitude and area-from-angle pages */}
-  {!isAreaFromAltitudePage && !isAreaFromAnglePage && (
+  {!isAreaFromAltitudePage && !isAreaFromAnglePage && !isAreaFromHypotenuseAltitudePage && (
   <>
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={howItWorksHeading} />
@@ -794,6 +803,8 @@ const measurementSideEntries = page.diagram
   {isAreaFromAltitudePage && locale !== 'en' && AREA_FROM_ALTITUDE_GUIDE_TRANSLATIONS[locale] ? <AreaFromAltitudeGuideLocalized guide={AREA_FROM_ALTITUDE_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
   {isAreaFromAnglePage && locale === 'en' ? <AreaFromAngleGuide /> : null}
   {isAreaFromAnglePage && locale !== 'en' && AREA_FROM_ANGLE_GUIDE_TRANSLATIONS[locale] ? <AreaFromAngleGuideLocalized guide={AREA_FROM_ANGLE_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
+  {isAreaFromHypotenuseAltitudePage && locale === 'en' ? <AreaFromHypotenuseAltitudeGuide /> : null}
+  {isAreaFromHypotenuseAltitudePage && locale !== 'en' && AREA_FROM_HYPOTENUSE_ALTITUDE_GUIDE_TRANSLATIONS[locale] ? <AreaFromHypotenuseAltitudeGuideLocalized guide={AREA_FROM_HYPOTENUSE_ALTITUDE_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>
 
 <style>

@@ -849,30 +849,6 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
         { key: 'A', label: 'Angle A', min: 0 }
       ]
     },
-    calculatorModes: [
-      {
-        formulaSlug: 'area-sin-a',
-        label: 'Adjacent side b, hypotenuse c, angle A',
-        heading: 'Find Area From Adjacent Side b, Hypotenuse c, and Angle A',
-        outputLabel: 'Area',
-        fields: [
-          { key: 'b', label: 'Adjacent side b', min: 0 },
-          { key: 'c', label: 'Hypotenuse c', min: 0 },
-          { key: 'A', label: 'Angle A', min: 0 }
-        ]
-      },
-      {
-        formulaSlug: 'area-sin-b',
-        label: 'Opposite side a, hypotenuse c, angle B',
-        heading: 'Find Area From Opposite Side a, Hypotenuse c, and Angle B',
-        outputLabel: 'Area',
-        fields: [
-          { key: 'a', label: 'Opposite side a', min: 0 },
-          { key: 'c', label: 'Hypotenuse c', min: 0 },
-          { key: 'B', label: 'Angle B', min: 0 }
-        ]
-      }
-    ],
     diagram: {
       h2: 'Triangle Diagram: Area Using Angle and Sine',
       intro: 'This diagram labels both acute angles (A and B), the two legs (a and b), and the hypotenuse (c). In Mode 1, the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> uses <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> b, hypotenuse c, and <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> A. In Mode 2, it uses side a, hypotenuse c, and angle B.',

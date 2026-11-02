@@ -265,7 +265,7 @@ export const SECANT_TRANSLATIONS_BATCH1 = {
           "<strong>उपलब्ध इकाई चयनकर्ताओं से संगत मापन इकाइयाँ चुनें।</strong> दोनों फ़ील्डों को एक ही इकाई, या रूपांतरित समतुल्य, उपयोग करना चाहिए, वरना अनुपात गलत होगा।",
           "<strong>पुष्टि करें कि दोनों माप धनात्मक हैं।</strong> शून्य या ऋणात्मक लंबाई का त्रिभुज में कोई अर्थ नहीं, और यह डेटा प्रविष्टि त्रुटि का संकेत है।",
           "<strong>जाँचें कि कर्ण संलग्न भुजा से लंबा है।</strong> अगर ऐसा नहीं है, तो या तो भुजाएँ गलत लेबल की गई हैं या संख्याएँ समकोण त्रिभुज नहीं बना सकतीं।",
-          "<strong>Calculate sec(A) पर क्लिक करें।</strong> टूल [[c/b]] भाग करता है और अनुपात दिखाता है।",
+          "<strong>गणना करें sec(A) पर क्लिक करें।</strong> टूल [[c/b]] भाग करता है और अनुपात दिखाता है।",
           "<strong>प्राप्त सेकेंट अनुपात पढ़ें।</strong> यह एक इकाईरहित दशमलव है, आमतौर पर चार दशमलव स्थानों के साथ, आगे की गणनाओं में उपयोग के लिए तैयार।",
           "<strong>पुष्टि करें कि परिणाम 1 से बड़ा है।</strong> न्यून संदर्भ कोण वाले वैध, अपभ्रष्ट न हुए समकोण त्रिभुज के लिए, [[\\sec(A) \\gt 1]]; 1 या उससे कम मान का मतलब है कि ऊपर कुछ गलत हुआ।",
           "<strong>जब इनपुट साफ़ करके दूसरी गणना शुरू करना चाहें तो Reset का उपयोग करें।</strong> फ़ील्ड और परिणाम अपनी प्रारंभिक स्थिति में लौट आते हैं।"
@@ -1041,7 +1041,7 @@ export const SECANT_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "भुजाओं की लंबाइयों से सेकेंट की गणना कैसे करें?",
-        "answer": "कर्ण c और संलग्न भुजा b को एक ही इकाई में मापें, पुष्टि करें कि दोनों धनात्मक हैं और c, b से लंबा है, फिर भाग दें: sec(A) = c / b। इस पेज पर, पहले फ़ील्ड में कर्ण और दूसरे में संलग्न भुजा दर्ज करें, संगत इकाइयाँ चुनें, और Calculate sec(A) पर क्लिक करें।"
+        "answer": "कर्ण c और संलग्न भुजा b को एक ही इकाई में मापें, पुष्टि करें कि दोनों धनात्मक हैं और c, b से लंबा है, फिर भाग दें: sec(A) = c / b। इस पेज पर, पहले फ़ील्ड में कर्ण और दूसरे में संलग्न भुजा दर्ज करें, संगत इकाइयाँ चुनें, और गणना करें sec(A) पर क्लिक करें।"
       },
       {
         "question": "सेकेंट का उपयोग करके कर्ण कैसे निकालूँ?",
@@ -1333,7 +1333,7 @@ export const SECANT_TRANSLATIONS_BATCH1 = {
           "<strong>Selecciona unidades de medida compatibles con los selectores de unidades disponibles.</strong> Ambos campos deben usar la misma unidad, o un equivalente convertido, o la razón será incorrecta.",
           "<strong>Confirma que ambas medidas sean positivas.</strong> Una longitud cero o negativa no tiene sentido en un triángulo y señala un error de entrada de datos.",
           "<strong>Comprueba que la hipotenusa sea más larga que el cateto adyacente.</strong> Si no lo es, o los lados están mal etiquetados o los números no pueden formar un triángulo rectángulo.",
-          "<strong>Haz clic en Calculate sec(A).</strong> La herramienta realiza la división [[c/b]] y muestra la razón.",
+          "<strong>Haz clic en Calcular sec(A).</strong> La herramienta realiza la división [[c/b]] y muestra la razón.",
           "<strong>Lee la razón secante resultante.</strong> Es un decimal sin dimensiones, normalmente con cuatro cifras decimales, listo para usar en cálculos posteriores.",
           "<strong>Confirma que el resultado sea mayor que 1.</strong> Para un triángulo rectángulo válido y no degenerado con un ángulo de referencia agudo, [[\\sec(A) \\gt 1]]; un valor igual o inferior a 1 significa que algo salió mal antes.",
           "<strong>Usa Reset cuando quieras borrar las entradas y empezar otro cálculo.</strong> Los campos y el resultado vuelven a su estado inicial."
@@ -2109,7 +2109,7 @@ export const SECANT_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "¿Cómo se calcula la secante a partir de las longitudes de los lados?",
-        "answer": "Mide la hipotenusa c y el cateto adyacente b en la misma unidad, confirma que ambas sean positivas y que c sea más larga que b, y luego divide: sec(A) = c / b. En esta página, introduce la hipotenusa en el primer campo y el cateto adyacente en el segundo, elige unidades compatibles y haz clic en Calculate sec(A)."
+        "answer": "Mide la hipotenusa c y el cateto adyacente b en la misma unidad, confirma que ambas sean positivas y que c sea más larga que b, y luego divide: sec(A) = c / b. En esta página, introduce la hipotenusa en el primer campo y el cateto adyacente en el segundo, elige unidades compatibles y haz clic en Calcular sec(A)."
       },
       {
         "question": "¿Cómo puedo hallar la hipotenusa usando la secante?",
@@ -2401,7 +2401,7 @@ export const SECANT_TRANSLATIONS_BATCH1 = {
           "<strong>Выберите совместимые единицы измерения с помощью доступных переключателей единиц.</strong> В обоих полях должна использоваться одна и та же единица или пересчитанный эквивалент, иначе отношение получится неверным.",
           "<strong>Убедитесь, что оба измерения положительны.</strong> Нулевая или отрицательная длина не имеет смысла в треугольнике и сигнализирует об ошибке ввода данных.",
           "<strong>Проверьте, что гипотенуза длиннее прилежащего катета.</strong> Если это не так, либо стороны обозначены неверно, либо числа не могут образовать прямоугольный треугольник.",
-          "<strong>Нажмите «Calculate sec(A)».</strong> Инструмент выполняет деление [[c/b]] и показывает отношение.",
+          "<strong>Нажмите «Рассчитать sec(A)».</strong> Инструмент выполняет деление [[c/b]] и показывает отношение.",
           "<strong>Прочитайте полученное значение секанса.</strong> Это безразмерное десятичное число, обычно с четырьмя знаками после запятой, готовое к использованию в дальнейших расчётах.",
           "<strong>Убедитесь, что результат больше 1.</strong> Для правильного невырожденного прямоугольного треугольника с острым опорным углом [[\\sec(A) \\gt 1]]; значение, равное 1 или меньшее, означает, что на одном из предыдущих шагов что-то пошло не так.",
           "<strong>Используйте «Reset», когда хотите очистить поля ввода и начать новый расчёт.</strong> Поля и результат вернутся в исходное состояние."
@@ -3177,7 +3177,7 @@ export const SECANT_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "Как вычислить секанс по длинам сторон?",
-        "answer": "Измерьте гипотенузу c и прилежащий катет b в одних и тех же единицах, убедитесь, что обе величины положительны и что c длиннее b, затем разделите: sec(A) = c / b. На этой странице введите гипотенузу в первое поле, а прилежащий катет во второе, выберите совместимые единицы и нажмите «Calculate sec(A)»."
+        "answer": "Измерьте гипотенузу c и прилежащий катет b в одних и тех же единицах, убедитесь, что обе величины положительны и что c длиннее b, затем разделите: sec(A) = c / b. На этой странице введите гипотенузу в первое поле, а прилежащий катет во второе, выберите совместимые единицы и нажмите «Рассчитать sec(A)»."
       },
       {
         "question": "Как найти гипотенузу с помощью секанса?",
@@ -3469,7 +3469,7 @@ export const SECANT_TRANSLATIONS_BATCH1 = {
           "<strong>Sélectionnez des unités de mesure compatibles avec les sélecteurs d'unités disponibles.</strong> Les deux champs doivent utiliser la même unité, ou un équivalent converti, sinon le rapport sera faux.",
           "<strong>Vérifiez que les deux mesures sont positives.</strong> Une longueur nulle ou négative n'a aucun sens dans un triangle et signale une erreur de saisie.",
           "<strong>Vérifiez que l'hypoténuse est plus longue que le côté adjacent.</strong> Sinon, soit les côtés sont mal étiquetés, soit les nombres ne peuvent pas former un triangle rectangle.",
-          "<strong>Cliquez sur « Calculate sec(A) ».</strong> L'outil effectue la division [[c/b]] et affiche le rapport.",
+          "<strong>Cliquez sur « Calculer sec(A) ».</strong> L'outil effectue la division [[c/b]] et affiche le rapport.",
           "<strong>Lisez le rapport de sécante obtenu.</strong> C'est un nombre décimal sans dimension, généralement avec quatre décimales, prêt à être utilisé dans d'autres calculs.",
           "<strong>Vérifiez que le résultat est supérieur à 1.</strong> Pour un triangle rectangle valide et non dégénéré avec un angle de référence aigu, [[\\sec(A) \\gt 1]] ; une valeur égale ou inférieure à 1 signifie que quelque chose s'est mal passé en amont.",
           "<strong>Utilisez « Reset » lorsque vous voulez effacer les champs et commencer un nouveau calcul.</strong> Les champs et le résultat reviennent à leur état initial."
@@ -4245,7 +4245,7 @@ export const SECANT_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "Comment calculer la sécante à partir des longueurs des côtés ?",
-        "answer": "Mesurez l'hypoténuse c et le côté adjacent b dans la même unité, vérifiez que les deux valeurs sont positives et que c est plus longue que b, puis divisez : sec(A) = c / b. Sur cette page, saisissez l'hypoténuse dans le premier champ et le côté adjacent dans le second, choisissez des unités compatibles, puis cliquez sur « Calculate sec(A) »."
+        "answer": "Mesurez l'hypoténuse c et le côté adjacent b dans la même unité, vérifiez que les deux valeurs sont positives et que c est plus longue que b, puis divisez : sec(A) = c / b. Sur cette page, saisissez l'hypoténuse dans le premier champ et le côté adjacent dans le second, choisissez des unités compatibles, puis cliquez sur « Calculer sec(A) »."
       },
       {
         "question": "Comment trouver l'hypoténuse à l'aide de la sécante ?",
@@ -4537,7 +4537,7 @@ export const SECANT_TRANSLATIONS_BATCH1 = {
           "<strong>Wählen Sie mit den verfügbaren Einheitenauswahlen kompatible Maßeinheiten.</strong> Beide Felder müssen dieselbe Einheit oder ein umgerechnetes Äquivalent verwenden, sonst ist das Verhältnis falsch.",
           "<strong>Vergewissern Sie sich, dass beide Messungen positiv sind.</strong> Eine Länge von null oder negativ hat in einem Dreieck keine Bedeutung und signalisiert einen Dateneingabefehler.",
           "<strong>Prüfen Sie, ob die Hypotenuse länger ist als die Ankathete.</strong> Ist sie es nicht, sind entweder die Seiten falsch beschriftet oder die Zahlen können kein rechtwinkliges Dreieck bilden.",
-          "<strong>Klicken Sie auf „Calculate sec(A)\".</strong> Das Tool führt die Division [[c/b]] durch und zeigt das Verhältnis an.",
+          "<strong>Klicken Sie auf „Berechnen sec(A)\".</strong> Das Tool führt die Division [[c/b]] durch und zeigt das Verhältnis an.",
           "<strong>Lesen Sie das resultierende Sekans-Verhältnis ab.</strong> Es ist eine dimensionslose Dezimalzahl, typischerweise mit vier Nachkommastellen, bereit für weitere Berechnungen.",
           "<strong>Vergewissern Sie sich, dass das Ergebnis größer als 1 ist.</strong> Für ein gültiges, nicht entartetes rechtwinkliges Dreieck mit spitzem Referenzwinkel gilt [[\\sec(A) \\gt 1]]; ein Wert von 1 oder darunter bedeutet, dass weiter oben etwas schiefgegangen ist.",
           "<strong>Verwenden Sie Reset, wenn Sie die Eingaben löschen und eine neue Berechnung beginnen möchten.</strong> Felder und Ergebnis kehren in ihren Ausgangszustand zurück."
@@ -5313,7 +5313,7 @@ export const SECANT_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "Wie berechnet man den Sekans aus Seitenlängen?",
-        "answer": "Messen Sie die Hypotenuse c und die Ankathete b in derselben Einheit, vergewissern Sie sich, dass beide positiv sind und c länger ist als b, und dividieren Sie dann: sec(A) = c / b. Geben Sie auf dieser Seite die Hypotenuse in das erste Feld und die Ankathete in das zweite ein, wählen Sie kompatible Einheiten und klicken Sie auf „Calculate sec(A)“."
+        "answer": "Messen Sie die Hypotenuse c und die Ankathete b in derselben Einheit, vergewissern Sie sich, dass beide positiv sind und c länger ist als b, und dividieren Sie dann: sec(A) = c / b. Geben Sie auf dieser Seite die Hypotenuse in das erste Feld und die Ankathete in das zweite ein, wählen Sie kompatible Einheiten und klicken Sie auf „Berechnen sec(A)“."
       },
       {
         "question": "Wie kann ich die Hypotenuse mithilfe des Sekans finden?",
@@ -5605,7 +5605,7 @@ export const SECANT_TRANSLATIONS_BATCH1 = {
           "<strong>Seleziona unità di misura compatibili usando i selettori di unità disponibili.</strong> Entrambi i campi devono usare la stessa unità, o un equivalente convertito, altrimenti il rapporto sarà sbagliato.",
           "<strong>Conferma che entrambe le misure siano positive.</strong> Una lunghezza zero o negativa non ha significato in un triangolo e segnala un errore di inserimento dati.",
           "<strong>Verifica che l'ipotenusa sia più lunga del cateto adiacente.</strong> Se non lo è, o i lati sono mal etichettati o i numeri non possono formare un triangolo rettangolo.",
-          "<strong>Fai clic su Calculate sec(A).</strong> Lo strumento esegue la divisione [[c/b]] e mostra il rapporto.",
+          "<strong>Fai clic su Calcola sec(A).</strong> Lo strumento esegue la divisione [[c/b]] e mostra il rapporto.",
           "<strong>Leggi il rapporto della secante risultante.</strong> È un decimale adimensionale, tipicamente con quattro cifre decimali, pronto per ulteriori calcoli.",
           "<strong>Conferma che il risultato sia maggiore di 1.</strong> Per un triangolo rettangolo valido e non degenere con un angolo acuto di riferimento, [[\\sec(A) \\gt 1]]; un valore pari o inferiore a 1 significa che qualcosa è andato storto a monte.",
           "<strong>Usa Reset quando vuoi cancellare gli ingressi e iniziare un altro calcolo.</strong> I campi e il risultato tornano allo stato iniziale."
@@ -6381,7 +6381,7 @@ export const SECANT_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "Come si calcola la secante dalle lunghezze dei lati?",
-        "answer": "Misura l'ipotenusa c e il cateto adiacente b nella stessa unità, conferma che entrambi siano positivi e che c sia più lungo di b, poi dividi: sec(A) = c / b. In questa pagina, inserisci l'ipotenusa nel primo campo e il cateto adiacente nel secondo, scegli unità compatibili e fai clic su Calculate sec(A)."
+        "answer": "Misura l'ipotenusa c e il cateto adiacente b nella stessa unità, conferma che entrambi siano positivi e che c sia più lungo di b, poi dividi: sec(A) = c / b. In questa pagina, inserisci l'ipotenusa nel primo campo e il cateto adiacente nel secondo, scegli unità compatibili e fai clic su Calcola sec(A)."
       },
       {
         "question": "Come posso trovare l'ipotenusa usando la secante?",

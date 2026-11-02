@@ -237,7 +237,7 @@ export const SINE_TRANSLATIONS_BATCH2 = {
           "<strong>Selecione unidades de medida compatíveis usando os seletores de unidade disponíveis.</strong> Metros com metros, centímetros com centímetros; unidades mistas dão uma razão sem sentido.",
           "<strong>Confirme que ambas as medidas são positivas.</strong> Comprimentos zero ou negativos não podem formar um triângulo.",
           "<strong>Verifique se a hipotenusa é mais longa que o cateto oposto.</strong> Se [[a \\ge c]], as entradas estão trocadas ou o triângulo é impossível.",
-          "<strong>Clique em Calculate sin(A).</strong> A ferramenta divide o cateto oposto pela hipotenusa.",
+          "<strong>Clique em Calcular sin(A).</strong> A ferramenta divide o cateto oposto pela hipotenusa.",
           "<strong>Leia a razão seno resultante.</strong> É um decimal simples, não um ângulo nem um comprimento.",
           "<strong>Confirme que o resultado é maior que 0 e menor que 1.</strong> Para um triângulo retângulo válido e não degenerado com ângulo de referência agudo, esse é o único intervalo legal.",
           "<strong>Use Reset quando quiser limpar as entradas e começar outro cálculo.</strong>"
@@ -844,7 +844,7 @@ export const SINE_TRANSLATIONS_BATCH2 = {
       },
       {
         "question": "Como calcular o seno a partir de dois comprimentos de lado?",
-        "answer": "Identifique o ângulo de referência A, meça o cateto oposto a e a hipotenusa c na mesma unidade, confirme que ambos são positivos e que c é mais longa que a, então divida: sin(A) = a / c. Nesta página, digite o cateto oposto no primeiro campo e a hipotenusa no segundo, depois clique em Calculate sin(A)."
+        "answer": "Identifique o ângulo de referência A, meça o cateto oposto a e a hipotenusa c na mesma unidade, confirme que ambos são positivos e que c é mais longa que a, então divida: sin(A) = a / c. Nesta página, digite o cateto oposto no primeiro campo e a hipotenusa no segundo, depois clique em Calcular sin(A)."
       },
       {
         "question": "Qual é a diferença entre seno e cosseno?",
@@ -1128,7 +1128,7 @@ export const SINE_TRANSLATIONS_BATCH2 = {
           "<strong>উপলব্ধ একক নির্বাচক ব্যবহার করে সামঞ্জস্যপূর্ণ পরিমাপ একক বেছে নাও।</strong> মিটারের সাথে মিটার, সেন্টিমিটারের সাথে সেন্টিমিটার; মিশ্র একক অর্থহীন অনুপাত দেয়।",
           "<strong>নিশ্চিত করো উভয় পরিমাপ ধনাত্মক।</strong> শূন্য বা ঋণাত্মক দৈর্ঘ্য ত্রিভুজ গঠন করতে পারে না।",
           "<strong>যাচাই করো অতিভুজ বিপরীত বাহুর চেয়ে দীর্ঘ।</strong> [[a \\ge c]] হলে, ইনপুটগুলো অদলবদল হয়েছে অথবা ত্রিভুজটি অসম্ভব।",
-          "<strong>Calculate sin(A)-এ ক্লিক করো।</strong> টুলটি বিপরীত বাহুকে অতিভুজ দিয়ে ভাগ করে।",
+          "<strong>হিসাব করুন sin(A)-এ ক্লিক করো।</strong> টুলটি বিপরীত বাহুকে অতিভুজ দিয়ে ভাগ করে।",
           "<strong>ফলে পাওয়া সাইন অনুপাতটি পড়ো।</strong> এটি একটি সরল দশমিক, কোণও নয়, দৈর্ঘ্যও নয়।",
           "<strong>নিশ্চিত করো ফলাফল 0-এর চেয়ে বড় ও 1-এর চেয়ে ছোট।</strong> সূক্ষ্ম রেফারেন্স কোণসহ বৈধ, অ-অপভ্রষ্ট সমকোণ ত্রিভুজের জন্য এটাই একমাত্র বৈধ পরিসর।",
           "<strong>ইনপুট মুছে আরেকটি গণনা শুরু করতে চাইলে Reset ব্যবহার করো।</strong>"
@@ -1735,7 +1735,7 @@ export const SINE_TRANSLATIONS_BATCH2 = {
       },
       {
         "question": "দুটি বাহুর দৈর্ঘ্য থেকে সাইন কীভাবে গণনা করবেন?",
-        "answer": "রেফারেন্স কোণ A চিহ্নিত করো, বিপরীত বাহু a ও অতিভুজ c একই এককে মাপো, উভয়ই ধনাত্মক এবং c, a-এর চেয়ে দীর্ঘ তা নিশ্চিত করো, তারপর ভাগ করো: sin(A) = a / c। এই পৃষ্ঠায়, প্রথম ক্ষেত্রে বিপরীত বাহু ও দ্বিতীয় ক্ষেত্রে অতিভুজ লেখো, তারপর Calculate sin(A)-এ ক্লিক করো।"
+        "answer": "রেফারেন্স কোণ A চিহ্নিত করো, বিপরীত বাহু a ও অতিভুজ c একই এককে মাপো, উভয়ই ধনাত্মক এবং c, a-এর চেয়ে দীর্ঘ তা নিশ্চিত করো, তারপর ভাগ করো: sin(A) = a / c। এই পৃষ্ঠায়, প্রথম ক্ষেত্রে বিপরীত বাহু ও দ্বিতীয় ক্ষেত্রে অতিভুজ লেখো, তারপর হিসাব করুন sin(A)-এ ক্লিক করো।"
       },
       {
         "question": "সাইন ও কোসাইনের মধ্যে পার্থক্য কী?",
@@ -2019,7 +2019,7 @@ export const SINE_TRANSLATIONS_BATCH2 = {
           "<strong>利用可能な単位選択で互換性のある測定単位を選びます。</strong> メートルにはメートル、センチメートルにはセンチメートル。混ざった単位では意味のない比になります。",
           "<strong>両方の測定値が正であることを確認します。</strong> ゼロや負の長さでは三角形は作れません。",
           "<strong>斜辺が対辺より長いことを確認します。</strong> [[a \\ge c]] の場合、入力が入れ替わっているか、三角形が不可能です。",
-          "<strong>Calculate sin(A) をクリックします。</strong> ツールは対辺を斜辺で割ります。",
+          "<strong>計算する sin(A) をクリックします。</strong> ツールは対辺を斜辺で割ります。",
           "<strong>得られたサイン比を読みます。</strong> これは単なる小数であり、角度でも長さでもありません。",
           "<strong>結果が 0 より大きく 1 より小さいことを確認します。</strong> 鋭角を基準角とする有効で退化していない直角三角形では、これが唯一の合法範囲です。",
           "<strong>入力をクリアして別の計算を始めたい場合は Reset を使います。</strong>"
@@ -2626,7 +2626,7 @@ export const SINE_TRANSLATIONS_BATCH2 = {
       },
       {
         "question": "二つの辺の長さからサインをどう計算しますか？",
-        "answer": "基準角 A を特定し、対辺 a と斜辺 c を同じ単位で測定し、両方が正で、c が a より長いことを確認してから割ります。sin(A) = a / c。このページでは、最初の欄に対辺、二番目の欄に斜辺を入力し、Calculate sin(A) をクリックします。"
+        "answer": "基準角 A を特定し、対辺 a と斜辺 c を同じ単位で測定し、両方が正で、c が a より長いことを確認してから割ります。sin(A) = a / c。このページでは、最初の欄に対辺、二番目の欄に斜辺を入力し、計算する sin(A) をクリックします。"
       },
       {
         "question": "サインとコサインの違いは？",
@@ -2910,7 +2910,7 @@ export const SINE_TRANSLATIONS_BATCH2 = {
           "<strong>사용 가능한 단위 선택기로 호환되는 측정 단위를 선택합니다.</strong> 미터는 미터끼리, 센티미터는 센티미터끼리. 단위가 섞이면 무의미한 비가 나옵니다.",
           "<strong>두 측정값이 모두 양수인지 확인합니다.</strong> 0이나 음수 길이는 삼각형을 이룰 수 없습니다.",
           "<strong>빗변이 대변보다 긴지 확인합니다.</strong> [[a \\ge c]]라면 입력이 뒤바뀌었거나 삼각형이 불가능합니다.",
-          "<strong>Calculate sin(A)를 클릭합니다.</strong> 도구가 대변을 빗변으로 나눕니다.",
+          "<strong>계산하기 sin(A)를 클릭합니다.</strong> 도구가 대변을 빗변으로 나눕니다.",
           "<strong>나온 사인 비를 읽습니다.</strong> 각도도 길이도 아닌 그냥 소수입니다.",
           "<strong>결과가 0보다 크고 1보다 작은지 확인합니다.</strong> 유효하고 퇴화되지 않은 직각삼각형의 예각 기준각에서는 그 범위가 유일하게 합법적입니다.",
           "<strong>입력을 지우고 새로 계산하려면 Reset을 사용합니다.</strong>"
@@ -3517,7 +3517,7 @@ export const SINE_TRANSLATIONS_BATCH2 = {
       },
       {
         "question": "두 변의 길이로 사인을 계산하는 방법은?",
-        "answer": "기준각 A를 확인하고, 대변 a와 빗변 c를 같은 단위로 측정합니다. 둘 다 양수이고 c가 a보다 긴지 확인한 뒤 나눕니다. sin(A) = a / c. 이 페이지에서는 첫 번째 입력란에 대변을, 두 번째 입력란에 빗변을 입력하고 Calculate sin(A)를 클릭합니다."
+        "answer": "기준각 A를 확인하고, 대변 a와 빗변 c를 같은 단위로 측정합니다. 둘 다 양수이고 c가 a보다 긴지 확인한 뒤 나눕니다. sin(A) = a / c. 이 페이지에서는 첫 번째 입력란에 대변을, 두 번째 입력란에 빗변을 입력하고 계산하기 sin(A)를 클릭합니다."
       },
       {
         "question": "사인과 코사인의 차이는 무엇인가요?",
@@ -3801,7 +3801,7 @@ export const SINE_TRANSLATIONS_BATCH2 = {
           "<strong>Pilih unit pengukuran yang serasi menggunakan pemilih unit yang tersedia.</strong> Meter dengan meter, sentimeter dengan sentimeter; unit yang bercampur menghasilkan nisbah yang tidak bermakna.",
           "<strong>Pastikan kedua-dua ukuran adalah positif.</strong> Panjang sifar atau negatif tidak boleh membentuk segi tiga.",
           "<strong>Semak bahawa hipotenus lebih panjang daripada sisi bertentangan.</strong> Jika [[a \\ge c]], input telah bertukar tempat atau segi tiga itu mustahil.",
-          "<strong>Klik Calculate sin(A).</strong> Alat ini membahagikan sisi bertentangan dengan hipotenus.",
+          "<strong>Klik Kira sin(A).</strong> Alat ini membahagikan sisi bertentangan dengan hipotenus.",
           "<strong>Baca nisbah sinus yang terhasil.</strong> Ia ialah perpuluhan biasa, bukan sudut dan bukan panjang.",
           "<strong>Pastikan hasilnya lebih besar daripada 0 dan kurang daripada 1.</strong> Untuk segi tiga bersudut tepat yang sah dan tidak merosot dengan sudut rujukan tirus, itulah satu-satunya julat yang sah.",
           "<strong>Gunakan Reset apabila anda ingin mengosongkan input dan memulakan pengiraan baharu.</strong>"
@@ -4408,7 +4408,7 @@ export const SINE_TRANSLATIONS_BATCH2 = {
       },
       {
         "question": "Bagaimana cara mengira sinus daripada dua panjang sisi?",
-        "answer": "Kenal pasti sudut rujukan A, ukur sisi bertentangan a dan hipotenus c dalam unit yang sama, pastikan kedua-duanya positif dan c lebih panjang daripada a, kemudian bahagikan: sin(A) = a / c. Di halaman ini, masukkan sisi bertentangan dalam medan pertama dan hipotenus dalam medan kedua, kemudian klik Calculate sin(A)."
+        "answer": "Kenal pasti sudut rujukan A, ukur sisi bertentangan a dan hipotenus c dalam unit yang sama, pastikan kedua-duanya positif dan c lebih panjang daripada a, kemudian bahagikan: sin(A) = a / c. Di halaman ini, masukkan sisi bertentangan dalam medan pertama dan hipotenus dalam medan kedua, kemudian klik Kira sin(A)."
       },
       {
         "question": "Apakah perbezaan antara sinus dan kosinus?",
@@ -4692,7 +4692,7 @@ export const SINE_TRANSLATIONS_BATCH2 = {
           "<strong>Wybierz zgodne jednostki miary za pomocą dostępnych selektorów jednostek.</strong> Metry z metrami, centymetry z centymetrami; mieszane jednostki dają bezsensowny stosunek.",
           "<strong>Upewnij się, że oba pomiary są dodatnie.</strong> Zerowe lub ujemne długości nie mogą utworzyć trójkąta.",
           "<strong>Sprawdź, czy przeciwprostokątna jest dłuższa od boku przeciwległego.</strong> Jeśli [[a \\ge c]], wejścia są zamienione albo trójkąt jest niemożliwy.",
-          "<strong>Kliknij Calculate sin(A).</strong> Narzędzie dzieli bok przeciwległy przez przeciwprostokątną.",
+          "<strong>Kliknij Oblicz sin(A).</strong> Narzędzie dzieli bok przeciwległy przez przeciwprostokątną.",
           "<strong>Odczytaj wynikowy stosunek sinus.</strong> To zwykła liczba dziesiętna, nie kąt i nie długość.",
           "<strong>Upewnij się, że wynik jest większy od 0 i mniejszy od 1.</strong> Dla poprawnego, niezdegenerowanego trójkąta prostokątnego o ostrym kącie odniesienia to jedyny dopuszczalny zakres.",
           "<strong>Użyj Reset, gdy chcesz wyczyścić wejścia i rozpocząć kolejne obliczenie.</strong>"
@@ -5299,7 +5299,7 @@ export const SINE_TRANSLATIONS_BATCH2 = {
       },
       {
         "question": "Jak obliczyć sinus z dwóch długości boków?",
-        "answer": "Rozpoznaj kąt odniesienia A, zmierz bok przeciwległy a i przeciwprostokątną c w tej samej jednostce, upewnij się, że oba są dodatnie i że c jest dłuższe od a, a następnie podziel: sin(A) = a / c. Na tej stronie wpisz bok przeciwległy w pierwsze pole, a przeciwprostokątną w drugie, po czym kliknij Calculate sin(A)."
+        "answer": "Rozpoznaj kąt odniesienia A, zmierz bok przeciwległy a i przeciwprostokątną c w tej samej jednostce, upewnij się, że oba są dodatnie i że c jest dłuższe od a, a następnie podziel: sin(A) = a / c. Na tej stronie wpisz bok przeciwległy w pierwsze pole, a przeciwprostokątną w drugie, po czym kliknij Oblicz sin(A)."
       },
       {
         "question": "Jaka jest różnica między sinusem a cosinusem?",

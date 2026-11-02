@@ -961,7 +961,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           "<strong>বিপরীত বাহুর দৈর্ঘ্য লিখুন</strong> দ্বিতীয় ইনপুট ঘরে।",
           "<strong>একক নির্বাচকে সামঞ্জস্যপূর্ণ একক বেছে নিন</strong> যাতে ভাগে তুলনা হয় সমানের সঙ্গে সমানের।",
           "<strong>নিশ্চিত করুন দুটি পরিমাপই ধনাত্মক;</strong> শূন্য বা ঋণাত্মক দৈর্ঘ্যে বাস্তব ত্রিভুজ গঠন সম্ভব নয়।",
-          "<strong>Calculate cot(A)-তে ক্লিক করুন</strong> সংলগ্ন বাহুকে বিপরীত বাহু দিয়ে ভাগ করতে।",
+          "<strong>হিসাব করুন cot(A)-তে ক্লিক করুন</strong> সংলগ্ন বাহুকে বিপরীত বাহু দিয়ে ভাগ করতে।",
           "<strong>কোট্যানজেন্ট অনুপাত পড়ুন:</strong> বিপরীত বাহুর গুণিতক হিসেবে প্রকাশিত সংলগ্ন বাহু।",
           "<strong>ফলাফলের ব্যাখ্যা করুন:</strong> 1-এর বেশি মানে লম্বা সংলগ্ন বাহু, 1-এর সমান মানে সমান বাহু, 1-এর কম মানে লম্বা বিপরীত বাহু।",
           "<strong>Reset ব্যবহার করুন</strong> ইনপুট মুছে নতুন করে শুরু করতে।"
@@ -1421,7 +1421,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
       },
       {
         "question": "বাহুর দৈর্ঘ্য থেকে কোট্যানজেন্ট কীভাবে গণনা করবেন?",
-        "answer": "সংলগ্ন বাহু b ও বিপরীত বাহু a একই এককে মাপুন, দুটোই ধনাত্মক নিশ্চিত করুন, তারপর ভাগ করুন: cot(A) = b / a। এই পৃষ্ঠায় প্রথম ঘরে সংলগ্ন বাহু আর দ্বিতীয় ঘরে বিপরীত বাহু লিখুন, সামঞ্জস্যপূর্ণ একক বেছে নিন, আর Calculate cot(A)-তে ক্লিক করুন।"
+        "answer": "সংলগ্ন বাহু b ও বিপরীত বাহু a একই এককে মাপুন, দুটোই ধনাত্মক নিশ্চিত করুন, তারপর ভাগ করুন: cot(A) = b / a। এই পৃষ্ঠায় প্রথম ঘরে সংলগ্ন বাহু আর দ্বিতীয় ঘরে বিপরীত বাহু লিখুন, সামঞ্জস্যপূর্ণ একক বেছে নিন, আর হিসাব করুন cot(A)-তে ক্লিক করুন।"
       },
       {
         "question": "কোট্যানজেন্ট অনুপাত থেকে কোণ কীভাবে বের করব?",
@@ -1675,7 +1675,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           "<strong>対辺の長さを入力します。</strong>2番目の入力欄です。",
           "<strong>単位選択で対応する単位を選びます。</strong>割り算で同等同士を比べられるようにします。",
           "<strong>両方の測定値が正であることを確認します。</strong>ゼロや負の長さでは本物の三角形はできません。",
-          "<strong>「Calculate cot(A)」をクリックします。</strong>隣辺を対辺で割ります。",
+          "<strong>「計算する cot(A)」をクリックします。</strong>隣辺を対辺で割ります。",
           "<strong>余接比を読み取ります。</strong>対辺の何倍かとして表された隣辺です。",
           "<strong>結果を解釈します。</strong>1より大きければ隣辺が長く、1に等しければ2辺が等しく、1より小さければ対辺が長いことを意味します。",
           "<strong>「Reset」を使います。</strong>入力を消去して最初からやり直します。"
@@ -2135,7 +2135,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
       },
       {
         "question": "辺の長さから余接を計算する方法は?",
-        "answer": "隣辺 b と対辺 a を同じ単位で測り、両方が正であることを確認してから割ります。cot(A) = b / a です。このページでは、最初の欄に隣辺、2番目の欄に対辺を入力し、対応する単位を選んで「Calculate cot(A)」をクリックします。"
+        "answer": "隣辺 b と対辺 a を同じ単位で測り、両方が正であることを確認してから割ります。cot(A) = b / a です。このページでは、最初の欄に隣辺、2番目の欄に対辺を入力し、対応する単位を選んで「計算する cot(A)」をクリックします。"
       },
       {
         "question": "余接比から角を求める方法は?",
@@ -2389,7 +2389,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           "<strong>대변의 길이를 입력합니다.</strong>두 번째 입력 칸입니다.",
           "<strong>단위 선택기에서 맞는 단위를 고릅니다.</strong>나눗셈에서 동등한 것끼리 비교되도록 합니다.",
           "<strong>두 측정값이 모두 양수인지 확인합니다.</strong>0이나 음수 길이로는 실제 삼각형을 만들 수 없습니다.",
-          "<strong>Calculate cot(A)를 클릭합니다.</strong>인접 변을 대변으로 나눕니다.",
+          "<strong>계산하기 cot(A)를 클릭합니다.</strong>인접 변을 대변으로 나눕니다.",
           "<strong>코탄젠트 비율을 읽습니다.</strong>대변의 몇 배인지로 나타낸 인접 변입니다.",
           "<strong>결과를 해석합니다.</strong>1보다 크면 인접 변이 길고, 1과 같으면 두 변이 같으며, 1보다 작으면 대변이 길다는 뜻입니다.",
           "<strong>Reset을 사용합니다.</strong>입력을 지우고 처음부터 다시 시작합니다."
@@ -2849,7 +2849,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
       },
       {
         "question": "변 길이에서 코탄젠트를 계산하는 방법은?",
-        "answer": "인접 변 b와 대변 a를 같은 단위로 재고, 둘 다 양수인지 확인한 뒤 나눕니다. cot(A) = b / a 입니다. 이 페이지에서는 첫 번째 칸에 인접 변, 두 번째 칸에 대변을 입력하고, 맞는 단위를 고른 뒤 Calculate cot(A)를 클릭합니다."
+        "answer": "인접 변 b와 대변 a를 같은 단위로 재고, 둘 다 양수인지 확인한 뒤 나눕니다. cot(A) = b / a 입니다. 이 페이지에서는 첫 번째 칸에 인접 변, 두 번째 칸에 대변을 입력하고, 맞는 단위를 고른 뒤 계산하기 cot(A)를 클릭합니다."
       },
       {
         "question": "코탄젠트 비율에서 각을 구하는 방법은?",
@@ -3103,7 +3103,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           "<strong>Masukkan panjang sisi bertentangan</strong> dalam medan input kedua.",
           "<strong>Pilih unit yang sepadan dengan pemilih unit</strong> supaya pembahagian membandingkan yang setara dengan yang setara.",
           "<strong>Pastikan kedua-dua ukuran positif;</strong> panjang sifar atau negatif tidak boleh membentuk segi tiga sebenar.",
-          "<strong>Klik Calculate cot(A)</strong> untuk membahagikan sisi bersebelahan dengan sisi bertentangan.",
+          "<strong>Klik Kira cot(A)</strong> untuk membahagikan sisi bersebelahan dengan sisi bertentangan.",
           "<strong>Baca nisbah kotangen:</strong> sisi bersebelahan dinyatakan sebagai gandaan sisi bertentangan.",
           "<strong>Tafsir hasilnya:</strong> lebih besar daripada 1 bermaksud sisi bersebelahan lebih panjang, sama dengan 1 bermaksud kaki sama panjang, kurang daripada 1 bermaksud sisi bertentangan lebih panjang.",
           "<strong>Gunakan Reset</strong> untuk mengosongkan input dan bermula semula."
@@ -3563,7 +3563,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
       },
       {
         "question": "Bagaimana mengira kotangen daripada panjang sisi?",
-        "answer": "Ukur sisi bersebelahan b dan sisi bertentangan a dalam unit yang sama, pastikan kedua-duanya positif, kemudian bahagi: cot(A) = b / a. Pada halaman ini, masukkan sisi bersebelahan dalam medan pertama dan sisi bertentangan dalam medan kedua, pilih unit yang serasi, dan klik Calculate cot(A)."
+        "answer": "Ukur sisi bersebelahan b dan sisi bertentangan a dalam unit yang sama, pastikan kedua-duanya positif, kemudian bahagi: cot(A) = b / a. Pada halaman ini, masukkan sisi bersebelahan dalam medan pertama dan sisi bertentangan dalam medan kedua, pilih unit yang serasi, dan klik Kira cot(A)."
       },
       {
         "question": "Bagaimana saya boleh mencari sudut daripada nisbah kotangen?",
@@ -3817,7 +3817,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
           "<strong>Wpisz długość boku przeciwległego</strong> w drugim polu wejściowym.",
           "<strong>Wybierz pasujące jednostki w selektorach jednostek</strong>, aby dzielenie porównywało porównywalne z porównywalnym.",
           "<strong>Potwierdź, że oba pomiary są dodatnie;</strong> długości zerowe lub ujemne nie mogą utworzyć prawdziwego trójkąta.",
-          "<strong>Kliknij Calculate cot(A)</strong>, aby podzielić bok przyległy przez bok przeciwległy.",
+          "<strong>Kliknij Oblicz cot(A)</strong>, aby podzielić bok przyległy przez bok przeciwległy.",
           "<strong>Odczytaj stosunek cotangensa:</strong> bok przyległy wyrażony jako wielokrotność boku przeciwległego.",
           "<strong>Zinterpretuj wynik:</strong> większy niż 1 oznacza dłuższy bok przyległy, równy 1 oznacza równe przyprostokątne, mniejszy niż 1 oznacza dłuższy bok przeciwległy.",
           "<strong>Użyj Reset</strong>, aby wyczyścić dane wejściowe i zacząć od nowa."
@@ -4277,7 +4277,7 @@ export const COTANGENT_TRANSLATIONS_BATCH2 = {
       },
       {
         "question": "Jak obliczyć cotangens z długości boków?",
-        "answer": "Zmierz bok przyległy b i bok przeciwległy a w tej samej jednostce, potwierdź, że oba są dodatnie, a potem podziel: cot(A) = b / a. Na tej stronie wpisz bok przyległy w pierwszym polu, a bok przeciwległy w drugim, wybierz zgodne jednostki i kliknij Calculate cot(A)."
+        "answer": "Zmierz bok przyległy b i bok przeciwległy a w tej samej jednostce, potwierdź, że oba są dodatnie, a potem podziel: cot(A) = b / a. Na tej stronie wpisz bok przyległy w pierwszym polu, a bok przeciwległy w drugim, wybierz zgodne jednostki i kliknij Oblicz cot(A)."
       },
       {
         "question": "Jak znaleźć kąt ze stosunku cotangensa?",

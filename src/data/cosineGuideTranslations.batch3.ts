@@ -239,7 +239,7 @@ export const COSINE_TRANSLATIONS_BATCH3 = {
           "<strong>Pilih satuan yang cocok dengan pemilih satuan</strong> agar pembagiannya bermakna.",
           "<strong>Pastikan kedua nilai positif;</strong> panjang nol atau negatif tidak dapat membentuk segitiga.",
           "<strong>Periksa bahwa hipotenusa lebih panjang daripada sisi samping;</strong> jika tidak, masukannya tertukar atau salah label.",
-          "<strong>Klik Calculate cos(A)</strong> untuk membagi sisi samping dengan hipotenusa.",
+          "<strong>Klik Hitung cos(A)</strong> untuk membagi sisi samping dengan hipotenusa.",
           "<strong>Baca rasio kosinusnya:</strong> sisi samping sebagai bagian dari hipotenusa.",
           "<strong>Verifikasi jawabannya berada di antara 0 dan 1;</strong> nilai apa pun di luar rentang itu menandakan kesalahan masukan.",
           "<strong>Gunakan Reset</strong> untuk menghapus masukan dan memulai lagi."
@@ -996,7 +996,7 @@ export const COSINE_TRANSLATIONS_BATCH3 = {
           "<strong>اختر وحدات متوافقة من منتقي الوحدات</strong> لتكون القسمة ذات معنى.",
           "<strong>تأكد أن القيمتين موجبتان؛</strong> فالأطوال الصفرية أو السالبة لا يمكن أن تكوّن مثلثاً.",
           "<strong>تحقق أن الوتر أطول من الضلع المجاور؛</strong> فإن لم يكن، فالمدخلات متبادلة أو مسماة خطأ.",
-          "<strong>انقر Calculate cos(A)</strong> لقسمة الضلع المجاور على الوتر.",
+          "<strong>انقر احسب cos(A)</strong> لقسمة الضلع المجاور على الوتر.",
           "<strong>اقرأ نسبة جيب التمام:</strong> أي الضلع المجاور كحصة من الوتر.",
           "<strong>تحقق أن الجواب بين 0 و1؛</strong> فأي شيء خارج هذا المدى يشير إلى خطأ في الإدخال.",
           "<strong>استخدم Reset</strong> لمسح المدخلات والبدء من جديد."
@@ -1775,7 +1775,7 @@ export const COSINE_TRANSLATIONS_BATCH3 = {
           "<strong>Изберете съвпадащи мерни единици с избирачите на единици,</strong> за да е смислено делението.",
           "<strong>Потвърдете, че и двете стойности са положителни;</strong> нулеви или отрицателни дължини не могат да образуват триъгълник.",
           "<strong>Проверете дали хипотенузата е по-дълга от прилежащия катет;</strong> ако не е, входовете са разменени или погрешно означени.",
-          "<strong>Щракнете Calculate cos(A),</strong> за да разделите прилежащия катет на хипотенузата.",
+          "<strong>Щракнете Изчислете cos(A),</strong> за да разделите прилежащия катет на хипотенузата.",
           "<strong>Прочетете отношението на косинуса:</strong> прилежащия катет като дял от хипотенузата.",
           "<strong>Проверете дали отговорът е между 0 и 1;</strong> всичко извън този интервал сигнализира за грешка във входа.",
           "<strong>Използвайте Reset,</strong> за да изчистите входовете и да започнете отначало."
@@ -2554,7 +2554,7 @@ export const COSINE_TRANSLATIONS_BATCH3 = {
           "<strong>Birim seçicilerle eşleşen birimler seçin</strong>, böylece bölme anlamlı olur.",
           "<strong>İki değerin de pozitif olduğunu onaylayın;</strong> sıfır veya negatif uzunluklar üçgen oluşturamaz.",
           "<strong>Hipotenüsün komşu kenardan uzun olduğunu kontrol edin;</strong> değilse girdiler yer değiştirmiş veya yanlış etiketlenmiştir.",
-          "<strong>Calculate cos(A) düğmesine tıklayın</strong> ve komşu kenarı hipotenüse bölün.",
+          "<strong>Hesapla cos(A) düğmesine tıklayın</strong> ve komşu kenarı hipotenüse bölün.",
           "<strong>Kosinüs oranını okuyun:</strong> komşu kenarın hipotenüsteki payı.",
           "<strong>Cevabın 0 ile 1 arasında olduğunu doğrulayın;</strong> bu aralığın dışındaki her şey girdi hatasına işarettir.",
           "<strong>Girdileri temizlemek için Reset kullanın</strong> ve baştan başlayın."
@@ -3327,7 +3327,7 @@ export const COSINE_TRANSLATIONS_BATCH3 = {
           "<strong>Välj matchande enheter med enhetsväljarna</strong> så att divisionen blir meningsfull.",
           "<strong>Bekräfta att båda värdena är positiva;</strong> noll eller negativa längder kan inte bilda en triangel.",
           "<strong>Kontrollera att hypotenusan är längre än den närliggande kateten;</strong> om inte är inmatningarna omkastade eller felmärkta.",
-          "<strong>Klicka på Calculate cos(A)</strong> för att dividera den närliggande kateten med hypotenusan.",
+          "<strong>Klicka på Beräkna cos(A)</strong> för att dividera den närliggande kateten med hypotenusan.",
           "<strong>Läs av cosinuskvoten:</strong> den närliggande kateten som andel av hypotenusan.",
           "<strong>Verifiera att svaret ligger mellan 0 och 1;</strong> allt utanför det intervallet signalerar ett inmatningsfel.",
           "<strong>Använd Reset</strong> för att rensa inmatningarna och börja om."
@@ -4102,7 +4102,7 @@ export const COSINE_TRANSLATIONS_BATCH3 = {
           "<strong>用单位选择器选择匹配的单位，</strong>使除法有意义。",
           "<strong>确认两个值都为正数；</strong>零或负的长度无法构成三角形。",
           "<strong>检查斜边是否长于邻边；</strong>如果不是，说明输入调换了或标号错误。",
-          "<strong>点击 Calculate cos(A)，</strong>用邻边除以斜边。",
+          "<strong>点击 计算 cos(A)，</strong>用邻边除以斜边。",
           "<strong>读取余弦比值：</strong>邻边在斜边中所占的份额。",
           "<strong>验证答案在 0 和 1 之间；</strong>超出这个范围的值表示输入错误。",
           "<strong>用 Reset 清空输入，</strong>重新开始。"

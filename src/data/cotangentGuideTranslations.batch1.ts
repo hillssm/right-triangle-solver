@@ -254,7 +254,7 @@ export const COTANGENT_TRANSLATIONS_BATCH1 = {
           "<strong>दूसरे इनपुट फ़ील्ड में सम्मुख भुजा की लंबाई दर्ज करें।</strong>",
           "<strong>इकाई चयनकर्ताओं से मेल खाती इकाइयाँ चुनें</strong> ताकि भाग में समान की तुलना हो।",
           "<strong>पुष्टि करें कि दोनों माप धनात्मक हैं;</strong> शून्य या ऋणात्मक लंबाइयाँ वास्तविक त्रिभुज नहीं बना सकतीं।",
-          "<strong>आसन्न भुजा को सम्मुख भुजा से भाग देने के लिए Calculate cot(A) पर क्लिक करें।</strong>",
+          "<strong>आसन्न भुजा को सम्मुख भुजा से भाग देने के लिए गणना करें cot(A) पर क्लिक करें।</strong>",
           "<strong>कोटैंजेंट अनुपात पढ़ें:</strong> सम्मुख भुजा के गुणज के रूप में आसन्न भुजा।",
           "<strong>परिणाम की व्याख्या करें:</strong> 1 से बड़ा मतलब लंबी आसन्न भुजा, 1 के बराबर मतलब बराबर टाँगें, 1 से छोटा मतलब लंबी सम्मुख भुजा।",
           "<strong>इनपुट साफ़ करके फिर से शुरू करने के लिए Reset का उपयोग करें।</strong>"
@@ -747,7 +747,7 @@ export const COTANGENT_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "भुजाओं की लंबाई से कोटैंजेंट कैसे निकालें?",
-        "answer": "आसन्न भुजा b और सम्मुख भुजा a को एक ही इकाई में मापें, पुष्टि करें कि दोनों धनात्मक हैं, फिर भाग दें: cot(A) = b / a। इस पृष्ठ पर पहले फ़ील्ड में आसन्न भुजा और दूसरे में सम्मुख भुजा दर्ज करें, संगत इकाइयाँ चुनें, और Calculate cot(A) पर क्लिक करें।"
+        "answer": "आसन्न भुजा b और सम्मुख भुजा a को एक ही इकाई में मापें, पुष्टि करें कि दोनों धनात्मक हैं, फिर भाग दें: cot(A) = b / a। इस पृष्ठ पर पहले फ़ील्ड में आसन्न भुजा और दूसरे में सम्मुख भुजा दर्ज करें, संगत इकाइयाँ चुनें, और गणना करें cot(A) पर क्लिक करें।"
       },
       {
         "question": "कोटैंजेंट अनुपात से कोण कैसे ज्ञात करूँ?",
@@ -1007,7 +1007,7 @@ export const COTANGENT_TRANSLATIONS_BATCH1 = {
           "<strong>Introduzca la longitud del cateto opuesto</strong> en el segundo campo de entrada.",
           "<strong>Seleccione unidades coincidentes con los selectores de unidad</strong> para que la división compare magnitudes equivalentes.",
           "<strong>Confirme que ambas medidas son positivas;</strong> longitudes cero o negativas no pueden formar un triángulo real.",
-          "<strong>Haga clic en Calculate cot(A)</strong> para dividir el cateto adyacente entre el cateto opuesto.",
+          "<strong>Haga clic en Calcular cot(A)</strong> para dividir el cateto adyacente entre el cateto opuesto.",
           "<strong>Lea la razón cotangente:</strong> el cateto adyacente expresado como múltiplo del cateto opuesto.",
           "<strong>Interprete el resultado:</strong> mayor que 1 significa un cateto adyacente más largo, igual a 1 significa catetos iguales, menor que 1 significa un cateto opuesto más largo.",
           "<strong>Use Reset</strong> para borrar las entradas y empezar de nuevo."
@@ -1500,7 +1500,7 @@ export const COTANGENT_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "¿Cómo se calcula la cotangente a partir de las longitudes de los lados?",
-        "answer": "Mida el cateto adyacente b y el cateto opuesto a en la misma unidad, confirme que ambos son positivos y luego divida: cot(A) = b / a. En esta página, introduzca el cateto adyacente en el primer campo y el cateto opuesto en el segundo, elija unidades compatibles y haga clic en Calculate cot(A)."
+        "answer": "Mida el cateto adyacente b y el cateto opuesto a en la misma unidad, confirme que ambos son positivos y luego divida: cot(A) = b / a. En esta página, introduzca el cateto adyacente en el primer campo y el cateto opuesto en el segundo, elija unidades compatibles y haga clic en Calcular cot(A)."
       },
       {
         "question": "¿Cómo puedo hallar un ángulo a partir de una razón cotangente?",
@@ -1760,7 +1760,7 @@ export const COTANGENT_TRANSLATIONS_BATCH1 = {
           "<strong>Введите длину противолежащего катета</strong> во второе поле ввода.",
           "<strong>Выберите совпадающие единицы в селекторах единиц</strong>, чтобы деление сравнивало подобное с подобным.",
           "<strong>Убедитесь, что оба измерения положительны;</strong> нулевые или отрицательные длины не могут образовать настоящий треугольник.",
-          "<strong>Нажмите Calculate cot(A)</strong>, чтобы разделить прилежащий катет на противолежащий.",
+          "<strong>Нажмите Рассчитать cot(A)</strong>, чтобы разделить прилежащий катет на противолежащий.",
           "<strong>Прочитайте отношение котангенса:</strong> прилежащий катет, выраженный как кратное противолежащего.",
           "<strong>Истолкуйте результат:</strong> больше 1 означает более длинный прилежащий катет, равно 1: равные катеты, меньше 1: более длинный противолежащий катет.",
           "<strong>Используйте Reset</strong>, чтобы очистить ввод и начать заново."
@@ -2252,7 +2252,7 @@ export const COTANGENT_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "Как вычислить котангенс по длинам сторон?",
-        "answer": "Измерьте прилежащий катет b и противолежащий катет a в одних единицах, убедитесь, что оба положительны, затем разделите: cot(A) = b / a. На этой странице введите прилежащий катет в первое поле, а противолежащий катет во второе, выберите совместимые единицы и нажмите Calculate cot(A)."
+        "answer": "Измерьте прилежащий катет b и противолежащий катет a в одних единицах, убедитесь, что оба положительны, затем разделите: cot(A) = b / a. На этой странице введите прилежащий катет в первое поле, а противолежащий катет во второе, выберите совместимые единицы и нажмите Рассчитать cot(A)."
       },
       {
         "question": "Как найти угол по отношению котангенса?",
@@ -2512,7 +2512,7 @@ export const COTANGENT_TRANSLATIONS_BATCH1 = {
           "<strong>Saisissez la longueur du côté opposé</strong> dans le second champ de saisie.",
           "<strong>Sélectionnez des unités concordantes avec les sélecteurs d'unité</strong> pour que la division compare des grandeurs équivalentes.",
           "<strong>Vérifiez que les deux mesures sont positives ;</strong> des longueurs nulles ou négatives ne peuvent pas former un vrai triangle.",
-          "<strong>Cliquez sur Calculate cot(A)</strong> pour diviser le côté adjacent par le côté opposé.",
+          "<strong>Cliquez sur Calculer cot(A)</strong> pour diviser le côté adjacent par le côté opposé.",
           "<strong>Lisez le rapport cotangente :</strong> le côté adjacent exprimé comme multiple du côté opposé.",
           "<strong>Interprétez le résultat :</strong> supérieur à 1 signifie un côté adjacent plus long, égal à 1 signifie des côtés égaux, inférieur à 1 signifie un côté opposé plus long.",
           "<strong>Utilisez Reset</strong> pour effacer les saisies et recommencer."
@@ -3005,7 +3005,7 @@ export const COTANGENT_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "Comment calculer la cotangente à partir des longueurs des côtés ?",
-        "answer": "Mesurez le côté adjacent b et le côté opposé a dans la même unité, vérifiez que les deux sont positifs, puis divisez : cot(A) = b / a. Sur cette page, saisissez le côté adjacent dans le premier champ et le côté opposé dans le second, choisissez des unités compatibles, puis cliquez sur Calculate cot(A)."
+        "answer": "Mesurez le côté adjacent b et le côté opposé a dans la même unité, vérifiez que les deux sont positifs, puis divisez : cot(A) = b / a. Sur cette page, saisissez le côté adjacent dans le premier champ et le côté opposé dans le second, choisissez des unités compatibles, puis cliquez sur Calculer cot(A)."
       },
       {
         "question": "Comment trouver un angle à partir d'un rapport cotangente ?",
@@ -3265,7 +3265,7 @@ export const COTANGENT_TRANSLATIONS_BATCH1 = {
           "<strong>Geben Sie die Länge der Gegenkathete</strong> in das zweite Eingabefeld ein.",
           "<strong>Wählen Sie mit den Einheitenwählern passende Einheiten,</strong> damit die Division Gleiches mit Gleichem vergleicht.",
           "<strong>Vergewissern Sie sich, dass beide Messwerte positiv sind;</strong> Null- oder negative Längen können kein echtes Dreieck bilden.",
-          "<strong>Klicken Sie auf Calculate cot(A),</strong> um die Ankathete durch die Gegenkathete zu teilen.",
+          "<strong>Klicken Sie auf Berechnen cot(A),</strong> um die Ankathete durch die Gegenkathete zu teilen.",
           "<strong>Lesen Sie das Kotangensverhältnis ab:</strong> die Ankathete, ausgedrückt als Vielfaches der Gegenkathete.",
           "<strong>Deuten Sie das Ergebnis:</strong> größer als 1 bedeutet eine längere Ankathete, gleich 1 bedeutet gleiche Katheten, kleiner als 1 bedeutet eine längere Gegenkathete.",
           "<strong>Verwenden Sie Reset,</strong> um die Eingaben zu löschen und von vorn zu beginnen."
@@ -3758,7 +3758,7 @@ export const COTANGENT_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "Wie berechnen Sie den Kotangens aus Seitenlängen?",
-        "answer": "Messen Sie die Ankathete b und die Gegenkathete a in derselben Einheit, vergewissern Sie sich, dass beide positiv sind, und teilen Sie dann: cot(A) = b / a. Geben Sie auf dieser Seite die Ankathete in das erste Feld und die Gegenkathete in das zweite ein, wählen Sie passende Einheiten und klicken Sie auf Calculate cot(A)."
+        "answer": "Messen Sie die Ankathete b und die Gegenkathete a in derselben Einheit, vergewissern Sie sich, dass beide positiv sind, und teilen Sie dann: cot(A) = b / a. Geben Sie auf dieser Seite die Ankathete in das erste Feld und die Gegenkathete in das zweite ein, wählen Sie passende Einheiten und klicken Sie auf Berechnen cot(A)."
       },
       {
         "question": "Wie finde ich einen Winkel aus einem Kotangensverhältnis?",
@@ -4018,7 +4018,7 @@ export const COTANGENT_TRANSLATIONS_BATCH1 = {
           "<strong>Inserisci la lunghezza del cateto opposto</strong> nel secondo campo di input.",
           "<strong>Seleziona unità corrispondenti con i selettori di unità</strong> così che la divisione confronti grandezze omogenee.",
           "<strong>Verifica che entrambe le misure siano positive;</strong> lunghezze nulle o negative non possono formare un vero triangolo.",
-          "<strong>Fai clic su Calculate cot(A)</strong> per dividere il cateto adiacente per il cateto opposto.",
+          "<strong>Fai clic su Calcola cot(A)</strong> per dividere il cateto adiacente per il cateto opposto.",
           "<strong>Leggi il rapporto cotangente:</strong> il cateto adiacente espresso come multiplo del cateto opposto.",
           "<strong>Interpreta il risultato:</strong> maggiore di 1 significa un cateto adiacente più lungo, uguale a 1 significa cateti uguali, minore di 1 significa un cateto opposto più lungo.",
           "<strong>Usa Reset</strong> per cancellare gli input e ricominciare."
@@ -4511,7 +4511,7 @@ export const COTANGENT_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "Come si calcola la cotangente dalle lunghezze dei lati?",
-        "answer": "Misura il cateto adiacente b e il cateto opposto a nella stessa unità, verifica che entrambi siano positivi, poi dividi: cot(A) = b / a. In questa pagina, inserisci il cateto adiacente nel primo campo e il cateto opposto nel secondo, scegli unità compatibili e fai clic su Calculate cot(A)."
+        "answer": "Misura il cateto adiacente b e il cateto opposto a nella stessa unità, verifica che entrambi siano positivi, poi dividi: cot(A) = b / a. In questa pagina, inserisci il cateto adiacente nel primo campo e il cateto opposto nel secondo, scegli unità compatibili e fai clic su Calcola cot(A)."
       },
       {
         "question": "Come posso trovare un angolo da un rapporto cotangente?",

@@ -243,7 +243,7 @@ export const COSINE_TRANSLATIONS_BATCH1 = {
           "<strong>इकाई चयनकर्ताओं से मिलती-जुलती इकाइयाँ चुनें</strong> ताकि भाग सार्थक हो।",
           "<strong>पुष्टि करें कि दोनों मान धनात्मक हैं;</strong> शून्य या ऋणात्मक लंबाई त्रिभुज नहीं बना सकती।",
           "<strong>जाँचें कि कर्ण आसन्न भुजा से लंबा है;</strong> यदि नहीं, तो इनपुट उलटे या गलत चिह्नित हैं।",
-          "<strong>Calculate cos(A) पर क्लिक करें</strong> ताकि आसन्न भुजा कर्ण से भाग दी जाए।",
+          "<strong>गणना करें cos(A) पर क्लिक करें</strong> ताकि आसन्न भुजा कर्ण से भाग दी जाए।",
           "<strong>कोज्या अनुपात पढ़ें:</strong> कर्ण के हिस्से के रूप में आसन्न भुजा।",
           "<strong>सत्यापित करें कि उत्तर 0 और 1 के बीच है;</strong> इस सीमा के बाहर कुछ भी इनपुट त्रुटि का संकेत है।",
           "<strong>Reset का उपयोग करें</strong> ताकि इनपुट साफ़ हों और नए सिरे से शुरू किया जा सके।"
@@ -1145,7 +1145,7 @@ export const COSINE_TRANSLATIONS_BATCH1 = {
           "<strong>Seleccione unidades compatibles con los selectores de unidades</strong> para que la división tenga sentido.",
           "<strong>Confirme que ambos valores sean positivos;</strong> las longitudes cero o negativas no pueden formar un triángulo.",
           "<strong>Compruebe que la hipotenusa sea más larga que el cateto adyacente;</strong> si no lo es, las entradas están intercambiadas o mal etiquetadas.",
-          "<strong>Haga clic en Calculate cos(A)</strong> para dividir el cateto adyacente entre la hipotenusa.",
+          "<strong>Haga clic en Calcular cos(A)</strong> para dividir el cateto adyacente entre la hipotenusa.",
           "<strong>Lea la razón coseno:</strong> el cateto adyacente como parte de la hipotenusa.",
           "<strong>Verifique que la respuesta esté entre 0 y 1;</strong> cualquier valor fuera de ese intervalo señala un error de entrada.",
           "<strong>Use Reset</strong> para borrar las entradas y empezar de nuevo."
@@ -2865,7 +2865,7 @@ export const COSINE_TRANSLATIONS_BATCH1 = {
           "<strong>Sélectionnez des unités correspondantes avec les sélecteurs d'unités</strong> pour que la division ait un sens.",
           "<strong>Vérifiez que les deux valeurs sont positives ;</strong> des longueurs nulles ou négatives ne peuvent former un triangle.",
           "<strong>Vérifiez que l'hypoténuse est plus longue que le côté adjacent ;</strong> sinon, les entrées sont inversées ou mal étiquetées.",
-          "<strong>Cliquez sur Calculate cos(A)</strong> pour diviser le côté adjacent par l'hypoténuse.",
+          "<strong>Cliquez sur Calculer cos(A)</strong> pour diviser le côté adjacent par l'hypoténuse.",
           "<strong>Lisez le rapport cosinus :</strong> le côté adjacent comme part de l'hypoténuse.",
           "<strong>Vérifiez que la réponse est entre 0 et 1 ;</strong> tout ce qui sort de cet intervalle signale une erreur de saisie.",
           "<strong>Utilisez Reset</strong> pour effacer les entrées et recommencer."
@@ -3706,7 +3706,7 @@ export const COSINE_TRANSLATIONS_BATCH1 = {
           "<strong>Wählen Sie mit den Einheiten-Auswahlfeldern passende Einheiten.</strong> Beide Felder müssen dieselbe Einheit verwenden, damit die Division sinnvoll ist.",
           "<strong>Vergewissern Sie sich, dass beide Werte positiv sind.</strong> Null- oder negative Längen können kein Dreieck bilden.",
           "<strong>Prüfen Sie, dass die Hypotenuse länger ist als die Ankathete.</strong> Ist dies nicht der Fall, sind die Eingaben vertauscht oder falsch beschriftet.",
-          "<strong>Klicken Sie auf Calculate cos(A).</strong> Das Werkzeug dividiert die Ankathete durch die Hypotenuse.",
+          "<strong>Klicken Sie auf Berechnen cos(A).</strong> Das Werkzeug dividiert die Ankathete durch die Hypotenuse.",
           "<strong>Lesen Sie das Kosinus-Verhältnis ab:</strong> die Ankathete als Anteil der Hypotenuse.",
           "<strong>Vergewissern Sie sich, dass die Antwort zwischen 0 und 1 liegt.</strong> Alles außerhalb dieses Bereichs signalisiert einen Eingabefehler.",
           "<strong>Verwenden Sie Reset,</strong> um die Eingaben zu löschen und von vorn zu beginnen."

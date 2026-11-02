@@ -245,7 +245,7 @@ export const COTANGENT_TRANSLATIONS_BATCH3 = {
           "<strong>Masukkan panjang sisi depan</strong> di kolom input kedua.",
           "<strong>Pilih satuan yang cocok dengan pemilih satuan</strong> agar pembagian membandingkan hal yang sepadan.",
           "<strong>Pastikan kedua pengukuran bernilai positif;</strong> panjang nol atau negatif tidak dapat membentuk segitiga nyata.",
-          "<strong>Klik Calculate cot(A)</strong> untuk membagi sisi samping dengan sisi depan.",
+          "<strong>Klik Hitung cot(A)</strong> untuk membagi sisi samping dengan sisi depan.",
           "<strong>Baca rasio kotangen:</strong> sisi samping yang dinyatakan sebagai kelipatan sisi depan.",
           "<strong>Tafsirkan hasilnya:</strong> lebih besar dari 1 berarti sisi samping lebih panjang, sama dengan 1 berarti kedua kaki sama panjang, kurang dari 1 berarti sisi depan lebih panjang.",
           "<strong>Gunakan Reset</strong> untuk menghapus input dan memulai lagi."
@@ -738,7 +738,7 @@ export const COTANGENT_TRANSLATIONS_BATCH3 = {
       },
       {
         "question": "Bagaimana cara menghitung kotangen dari panjang sisi?",
-        "answer": "Ukur sisi samping b dan sisi depan a dalam satuan yang sama, pastikan keduanya positif, lalu bagi: cot(A) = b / a. Di halaman ini, masukkan sisi samping di kolom pertama dan sisi depan di kolom kedua, pilih satuan yang cocok, dan klik Calculate cot(A)."
+        "answer": "Ukur sisi samping b dan sisi depan a dalam satuan yang sama, pastikan keduanya positif, lalu bagi: cot(A) = b / a. Di halaman ini, masukkan sisi samping di kolom pertama dan sisi depan di kolom kedua, pilih satuan yang cocok, dan klik Hitung cot(A)."
       },
       {
         "question": "Bagaimana cara menemukan sudut dari rasio kotangen?",
@@ -998,7 +998,7 @@ export const COTANGENT_TRANSLATIONS_BATCH3 = {
           "<strong>أدخل طول الضلع المقابل</strong> في حقل الإدخال الثاني.",
           "<strong>اختر وحدات متطابقة بمحددات الوحدات</strong> حتى تقارن القسمة مثلا بمثل.",
           "<strong>تأكد أن القياسين موجبان؛</strong> فالأطوال الصفرية أو السالبة لا يمكن أن تشكل مثلثا حقيقيا.",
-          "<strong>انقر Calculate cot(A)</strong> لقسمة الضلع المجاور على الضلع المقابل.",
+          "<strong>انقر احسب cot(A)</strong> لقسمة الضلع المجاور على الضلع المقابل.",
           "<strong>اقرأ نسبة ظل التمام:</strong> الضلع المجاور معبرا عنه مضاعفا للضلع المقابل.",
           "<strong>فسر النتيجة:</strong> الأكبر من 1 يعني ضلعا مجاورا أطول، والمساوي لـ 1 يعني ضلعين متساويين، والأقل من 1 يعني ضلعا مقابلا أطول.",
           "<strong>استخدم Reset</strong> لمسح المدخلات والبدء من جديد."
@@ -1491,7 +1491,7 @@ export const COTANGENT_TRANSLATIONS_BATCH3 = {
       },
       {
         "question": "كيف تحسب ظل التمام من أطوال الأضلاع؟",
-        "answer": "قس الضلع المجاور b والضلع المقابل a بالوحدة نفسها، وتأكد أنهما موجبان، ثم اقسم: cot(A) = b / a. وفي هذه الصفحة، أدخل الضلع المجاور في الحقل الأول والضلع المقابل في الحقل الثاني، واختر وحدات متوافقة، وانقر Calculate cot(A)."
+        "answer": "قس الضلع المجاور b والضلع المقابل a بالوحدة نفسها، وتأكد أنهما موجبان، ثم اقسم: cot(A) = b / a. وفي هذه الصفحة، أدخل الضلع المجاور في الحقل الأول والضلع المقابل في الحقل الثاني، واختر وحدات متوافقة، وانقر احسب cot(A)."
       },
       {
         "question": "كيف أجد زاوية من نسبة ظل تمام؟",
@@ -1751,7 +1751,7 @@ export const COTANGENT_TRANSLATIONS_BATCH3 = {
           "<strong>Въведете дължината на срещулежащата страна</strong> във второто поле за въвеждане.",
           "<strong>Изберете съвпадащи единици с избирачите на единици,</strong> така че делението да сравнява еднородни величини.",
           "<strong>Потвърдете, че и двете измервания са положителни;</strong> нулеви или отрицателни дължини не могат да образуват истински триъгълник.",
-          "<strong>Щракнете Calculate cot(A),</strong> за да разделите прилежащата страна на срещулежащата.",
+          "<strong>Щракнете Изчислете cot(A),</strong> за да разделите прилежащата страна на срещулежащата.",
           "<strong>Прочетете котангенс съотношението:</strong> прилежащата страна, изразена като кратно на срещулежащата.",
           "<strong>Изтълкувайте резултата:</strong> по-голям от 1 означава по-дълга прилежаща страна, равен на 1 означава равни катети, по-малък от 1 означава по-дълга срещулежаща страна.",
           "<strong>Използвайте Reset,</strong> за да изчистите въведеното и да започнете отначало."
@@ -2244,7 +2244,7 @@ export const COTANGENT_TRANSLATIONS_BATCH3 = {
       },
       {
         "question": "Как да изчисля котангенс от дължини на страни?",
-        "answer": "Измерете прилежащата страна b и срещулежащата страна a в една и съща единица, потвърдете, че и двете са положителни, после разделете: cot(A) = b / a. На тази страница въведете прилежащата страна в първото поле, а срещулежащата във второто, изберете съвместими единици и щракнете Calculate cot(A)."
+        "answer": "Измерете прилежащата страна b и срещулежащата страна a в една и съща единица, потвърдете, че и двете са положителни, после разделете: cot(A) = b / a. На тази страница въведете прилежащата страна в първото поле, а срещулежащата във второто, изберете съвместими единици и щракнете Изчислете cot(A)."
       },
       {
         "question": "Как да намеря ъгъл от котангенс съотношение?",

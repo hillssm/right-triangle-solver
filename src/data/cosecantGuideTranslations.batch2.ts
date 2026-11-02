@@ -1233,7 +1233,7 @@ export const COSECANT_TRANSLATIONS_BATCH2 = {
           "<strong>একক নির্বাচক দিয়ে সামঞ্জস্যপূর্ণ একক বেছে নিন।</strong> ভাগটি অর্থবহ হতে উভয় ঘরে একই একক থাকতে হবে।",
           "<strong>নিশ্চিত করুন উভয় মান ধনাত্মক।</strong> শূন্য বা ঋণাত্মক দৈর্ঘ্য দিয়ে ত্রিভুজ গঠন সম্ভব নয়।",
           "<strong>যাচাই করুন অতিভুজ বিপরীত বাহুর চেয়ে দীর্ঘ।</strong> না হলে ইনপুটগুলো অদলবদল হয়েছে বা ভুল লেবেল দেওয়া হয়েছে।",
-          "<strong>Calculate csc(A)-তে ক্লিক করুন।</strong> টুলটি অতিভুজকে বিপরীত বাহু দিয়ে ভাগ করে।",
+          "<strong>হিসাব করুন csc(A)-তে ক্লিক করুন।</strong> টুলটি অতিভুজকে বিপরীত বাহু দিয়ে ভাগ করে।",
           "<strong>ফলাফলের কোসেক্যান্ট অনুপাতটি পড়ুন।</strong> এটি এককবিহীন সংখ্যা যা বিপরীত বাহুর গুণিতক হিসেবে অতিভুজকে বর্ণনা করে।",
           "<strong>যাচাই করুন উত্তরটি 1-এর বেশি।</strong> 1 বা তার নিচে যেকোনো মান ইনপুট ত্রুটির সংকেত।",
           "<strong>ইনপুট মুছতে Reset ব্যবহার করুন</strong> এবং আরেকটি গণনা শুরু করুন।"
@@ -2184,7 +2184,7 @@ export const COSECANT_TRANSLATIONS_BATCH2 = {
           "<strong>単位セレクターで互換性のある単位を選びます。</strong>割り算が意味を持つよう、両方の欄で同じ単位を使う必要があります。",
           "<strong>両方の値が正であることを確認します。</strong>0や負の長さでは三角形は作れません。",
           "<strong>斜辺が対辺より長いことを確認します。</strong>そうでなければ、入力が入れ替わっているかラベルが間違っています。",
-          "<strong>「Calculate csc(A)」をクリックします。</strong>ツールが斜辺を対辺で割ります。",
+          "<strong>「計算する csc(A)」をクリックします。</strong>ツールが斜辺を対辺で割ります。",
           "<strong>得られたコセカント比を読みます。</strong>斜辺を対辺の倍数として表す、単位のない数です。",
           "<strong>答えが1より大きいことを確認します。</strong>1以下なら入力ミスの合図です。",
           "<strong>「Reset」で入力をクリアし</strong>、次の計算を始めます。"
@@ -3135,7 +3135,7 @@ export const COSECANT_TRANSLATIONS_BATCH2 = {
           "<strong>단위 선택기로 호환되는 단위를 선택합니다.</strong>나눗셈이 의미를 가지려면 두 입력란 모두 같은 단위를 사용해야 합니다.",
           "<strong>두 값이 모두 양수인지 확인합니다.</strong>0이나 음수 길이로는 삼각형을 만들 수 없습니다.",
           "<strong>빗변이 대변보다 긴지 확인합니다.</strong>그렇지 않다면 입력이 바뀌었거나 라벨이 잘못된 것입니다.",
-          "<strong>Calculate csc(A)를 클릭합니다.</strong>도구가 빗변을 대변으로 나눕니다.",
+          "<strong>계산하기 csc(A)를 클릭합니다.</strong>도구가 빗변을 대변으로 나눕니다.",
           "<strong>결과 코시컨트 비를 읽습니다.</strong>빗변을 대변의 배수로 나타내는 단위 없는 수입니다.",
           "<strong>답이 1보다 큰지 확인합니다.</strong>1 이하의 값은 입력 오류의 신호입니다.",
           "<strong>Reset으로 입력을 지우고</strong>다음 계산을 시작합니다."
@@ -4086,7 +4086,7 @@ export const COSECANT_TRANSLATIONS_BATCH2 = {
           "<strong>Pilih unit yang serasi dengan pemilih unit.</strong>Kedua-dua medan mesti menggunakan unit yang sama agar pembahagian bermakna.",
           "<strong>Pastikan kedua-dua nilai adalah positif.</strong>Panjang sifar atau negatif tidak boleh membentuk segi tiga.",
           "<strong>Semak bahawa hipotenus lebih panjang daripada sisi bertentangan.</strong>Jika tidak, input telah tertukar atau dilabel dengan salah.",
-          "<strong>Klik Calculate csc(A).</strong>Alat membahagikan hipotenus dengan sisi bertentangan.",
+          "<strong>Klik Kira csc(A).</strong>Alat membahagikan hipotenus dengan sisi bertentangan.",
           "<strong>Baca nisbah kosekan yang terhasil.</strong>Ia ialah nombor tanpa dimensi yang memerikan hipotenus sebagai gandaan sisi bertentangan.",
           "<strong>Sahkan bahawa jawapannya lebih besar daripada 1.</strong>Apa-apa sahaja pada atau di bawah 1 menandakan ralat input.",
           "<strong>Gunakan Reset untuk mengosongkan input</strong> dan mulakan pengiraan lain."
@@ -5037,7 +5037,7 @@ export const COSECANT_TRANSLATIONS_BATCH2 = {
           "<strong>Wybierz zgodne jednostki w selektorach jednostek.</strong>Oba pola muszą używać tej samej jednostki, aby dzielenie miało sens.",
           "<strong>Potwierdź, że obie wartości są dodatnie.</strong>Długości zerowe lub ujemne nie mogą utworzyć trójkąta.",
           "<strong>Sprawdź, czy przeciwprostokątna jest dłuższa od przyprostokątnej przeciwległej.</strong>Jeśli nie, dane wejściowe są zamienione albo błędnie oznaczone.",
-          "<strong>Kliknij Calculate csc(A).</strong>Narzędzie dzieli przeciwprostokątną przez przyprostokątną przeciwległą.",
+          "<strong>Kliknij Oblicz csc(A).</strong>Narzędzie dzieli przeciwprostokątną przez przyprostokątną przeciwległą.",
           "<strong>Odczytaj wynikowy stosunek cosecansa.</strong>To bezwymiarowa liczba opisująca przeciwprostokątną jako wielokrotność przyprostokątnej przeciwległej.",
           "<strong>Sprawdź, czy odpowiedź jest większa od 1.</strong>Wszystko na poziomie 1 lub poniżej sygnalizuje błąd danych wejściowych.",
           "<strong>Użyj Reset, aby wyczyścić dane wejściowe</strong> i rozpocząć kolejne obliczenie."

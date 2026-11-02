@@ -270,7 +270,7 @@ export const SECANT_TRANSLATIONS_BATCH2 = {
           "<strong>Selecione unidades de medida compatíveis usando os seletores de unidades disponíveis.</strong> Ambos os campos têm de usar a mesma unidade, ou um equivalente convertido, ou a razão sairá errada.",
           "<strong>Confirme que ambas as medidas são positivas.</strong> Um comprimento zero ou negativo não tem significado num triângulo e indica um erro de introdução de dados.",
           "<strong>Verifique se a hipotenusa é mais longa do que o cateto adjacente.</strong> Se não for, ou os lados estão mal identificados ou os números não conseguem formar um triângulo retângulo.",
-          "<strong>Clique em Calculate sec(A).</strong> A ferramenta efetua a divisão [[c/b]] e apresenta a razão.",
+          "<strong>Clique em Calcular sec(A).</strong> A ferramenta efetua a divisão [[c/b]] e apresenta a razão.",
           "<strong>Leia a razão secante resultante.</strong> É um decimal sem dimensões, normalmente com quatro casas decimais, pronto a usar em cálculos posteriores.",
           "<strong>Confirme que o resultado é superior a 1.</strong> Para um triângulo retângulo válido e não degenerado com um ângulo de referência agudo, [[\\sec(A) \\gt 1]]; um valor igual ou inferior a 1 significa que algo correu mal a montante.",
           "<strong>Use Reset quando quiser limpar as entradas e começar outro cálculo.</strong> Os campos e o resultado voltam ao estado inicial."
@@ -1045,7 +1045,7 @@ export const SECANT_TRANSLATIONS_BATCH2 = {
       },
       {
         "question": "Como se calcula a secante a partir dos comprimentos dos lados?",
-        "answer": "Meça a hipotenusa c e o cateto adjacente b na mesma unidade, confirme que ambos são positivos e que c é mais longo do que b, e depois divida: sec(A) = c / b. Nesta página, introduza a hipotenusa no primeiro campo e o cateto adjacente no segundo, escolha unidades compatíveis e clique em Calculate sec(A)."
+        "answer": "Meça a hipotenusa c e o cateto adjacente b na mesma unidade, confirme que ambos são positivos e que c é mais longo do que b, e depois divida: sec(A) = c / b. Nesta página, introduza a hipotenusa no primeiro campo e o cateto adjacente no segundo, escolha unidades compatíveis e clique em Calcular sec(A)."
       },
       {
         "question": "Como posso encontrar a hipotenusa usando a secante?",
@@ -1337,7 +1337,7 @@ export const SECANT_TRANSLATIONS_BATCH2 = {
           "<strong>উপলব্ধ একক নির্বাচক দিয়ে সামঞ্জস্যপূর্ণ পরিমাপ একক বেছে নিন।</strong> দুটি ঘরেই একই একক, বা রূপান্তরিত সমতুল্য ব্যবহার করতে হবে, নইলে অনুপাত ভুল হবে।",
           "<strong>নিশ্চিত করুন দুটি পরিমাপই ধনাত্মক।</strong> শূন্য বা ঋণাত্মক দৈর্ঘ্যের ত্রিভুজে কোনো অর্থ নেই এবং এটি তথ্য এন্ট্রি ভুলের সংকেত।",
           "<strong>যাচাই করুন অতিভুজ সংলগ্ন বাহুর চেয়ে লম্বা।</strong> না হলে হয় বাহুর নাম ভুল, নয়তো সংখ্যাগুলো দিয়ে সমকোণী ত্রিভুজ গঠন সম্ভব নয়।",
-          "<strong>Calculate sec(A) ক্লিক করুন।</strong> টুলটি [[c/b]] ভাগটি সম্পন্ন করে অনুপাত দেখায়।",
+          "<strong>হিসাব করুন sec(A) ক্লিক করুন।</strong> টুলটি [[c/b]] ভাগটি সম্পন্ন করে অনুপাত দেখায়।",
           "<strong>প্রাপ্ত সেক্যান্ট অনুপাত পড়ুন।</strong> এটি মাত্রাহীন দশমিক, সাধারণত চার দশমিক স্থানসহ, পরবর্তী গণনায় ব্যবহারের জন্য প্রস্তুত।",
           "<strong>নিশ্চিত করুন ফলাফল 1 এর চেয়ে বড়।</strong> সূক্ষ্ম প্রসঙ্গ কোণবিশিষ্ট বৈধ, অবনমিত নয় এমন সমকোণী ত্রিভুজের ক্ষেত্রে [[\\sec(A) \\gt 1]]; 1 বা তার কম মান মানে আগে কোথাও ভুল হয়েছে।",
           "<strong>ইনপুট মুছে নতুন গণনা শুরু করতে Reset ব্যবহার করুন।</strong> ঘরগুলো ও ফলাফল প্রাথমিক অবস্থায় ফিরে আসে।"
@@ -2112,7 +2112,7 @@ export const SECANT_TRANSLATIONS_BATCH2 = {
       },
       {
         "question": "বাহুর দৈর্ঘ্য থেকে সেক্যান্ট কীভাবে নির্ণয় করবেন?",
-        "answer": "একই এককে অতিভুজ c ও সংলগ্ন বাহু b পরিমাপ করুন, নিশ্চিত করুন দুটোই ধনাত্মক এবং c, b এর চেয়ে লম্বা, তারপর ভাগ করুন: sec(A) = c / b। এই পৃষ্ঠায় প্রথম ঘরে অতিভুজ ও দ্বিতীয় ঘরে সংলগ্ন বাহু লিখুন, সামঞ্জস্যপূর্ণ একক বেছে নিন, এবং Calculate sec(A) ক্লিক করুন।"
+        "answer": "একই এককে অতিভুজ c ও সংলগ্ন বাহু b পরিমাপ করুন, নিশ্চিত করুন দুটোই ধনাত্মক এবং c, b এর চেয়ে লম্বা, তারপর ভাগ করুন: sec(A) = c / b। এই পৃষ্ঠায় প্রথম ঘরে অতিভুজ ও দ্বিতীয় ঘরে সংলগ্ন বাহু লিখুন, সামঞ্জস্যপূর্ণ একক বেছে নিন, এবং হিসাব করুন sec(A) ক্লিক করুন।"
       },
       {
         "question": "সেক্যান্ট ব্যবহার করে অতিভুজ কীভাবে নির্ণয় করবেন?",
@@ -2404,7 +2404,7 @@ export const SECANT_TRANSLATIONS_BATCH2 = {
           "<strong>単位選択を使って互換性のある単位を選びます。</strong> 両方の欄が同じ単位（または換算後の等価な単位）でなければ、比は間違ってしまいます。",
           "<strong>両方の測定値が正の数であることを確認します。</strong> ゼロや負の長さは三角形では意味をなさず、入力ミスのサインです。",
           "<strong>斜辺が隣辺より長いことを確認します。</strong> そうでなければ、辺の呼び名を間違えているか、その数値では直角三角形にならないかのどちらかです。",
-          "<strong>「Calculate sec(A)」をクリックします。</strong> ツールが [[c/b]] の割り算を行い、比を表示します。",
+          "<strong>「計算する sec(A)」をクリックします。</strong> ツールが [[c/b]] の割り算を行い、比を表示します。",
           "<strong>結果のセカント比を読み取ります。</strong> これは無次元の小数で、通常は小数第4位まで表示され、そのまま次の計算に使えます。",
           "<strong>結果が1より大きいことを確認します。</strong> 正しく退化していない直角三角形で基準角が鋭角なら、[[\\sec(A) \\gt 1]] です。1以下の値が出たら、上流のどこかで間違いが起きています。",
           "<strong>入力を消して別の計算を始めたいときは「Reset」を使います。</strong> 入力欄と結果が初期状態に戻ります。"
@@ -3179,7 +3179,7 @@ export const SECANT_TRANSLATIONS_BATCH2 = {
       },
       {
         "question": "辺の長さからセカントを計算する方法は",
-        "answer": "斜辺cと隣辺bを同じ単位で測り、両方が正でcがbより長いことを確認してから割ります。sec(A) = c / b です。このページでは、1つ目の欄に斜辺、2つ目の欄に隣辺を入力し、互換性のある単位を選んで「Calculate sec(A)」をクリックします。"
+        "answer": "斜辺cと隣辺bを同じ単位で測り、両方が正でcがbより長いことを確認してから割ります。sec(A) = c / b です。このページでは、1つ目の欄に斜辺、2つ目の欄に隣辺を入力し、互換性のある単位を選んで「計算する sec(A)」をクリックします。"
       },
       {
         "question": "セカントを使って斜辺を求める方法は",
@@ -3471,7 +3471,7 @@ export const SECANT_TRANSLATIONS_BATCH2 = {
           "<strong>단위 선택기를 이용해 호환되는 측정 단위를 선택합니다.</strong> 두 칸 모두 같은 단위이거나 변환된 동등 단위이어야 하며, 그렇지 않으면 비율이 틀립니다.",
           "<strong>두 측정값이 모두 양수인지 확인합니다.</strong> 길이가 0이거나 음수인 것은 삼각형에서 의미가 없으며, 입력 오류 신호입니다.",
           "<strong>빗변이 인접변보다 긴지 확인합니다.</strong> 그렇지 않다면 변 이름이 잘못 붙었거나 해당 수치로는 직각삼각형을 만들 수 없습니다.",
-          "<strong>Calculate sec(A)를 클릭합니다.</strong> 도구가 나눗셈 [[c/b]]를 수행하고 비율을 표시합니다.",
+          "<strong>계산하기 sec(A)를 클릭합니다.</strong> 도구가 나눗셈 [[c/b]]를 수행하고 비율을 표시합니다.",
           "<strong>결과로 나온 시컨트 비율을 읽습니다.</strong> 단위가 없는 소수이며, 보통 소수점 넷째 자리까지 표시되어 추가 계산에 바로 쓸 수 있습니다.",
           "<strong>결과가 1보다 큰지 확인합니다.</strong> 유효한 퇴화되지 않은 직각삼각형에서 예각 기준각에 대해서는 [[\\sec(A) \\gt 1]]입니다. 1 이하의 값이 나오면 앞 단계에서 뭔가 잘못된 것입니다.",
           "<strong>입력을 지우고 새로 계산하고 싶으면 Reset을 사용합니다.</strong> 입력 칸과 결과가 초기 상태로 돌아갑니다."
@@ -4246,7 +4246,7 @@ export const SECANT_TRANSLATIONS_BATCH2 = {
       },
       {
         "question": "변 길이로 시컨트를 어떻게 계산하나요?",
-        "answer": "빗변 c와 인접변 b를 같은 단위로 재고, 둘 다 양수이며 c가 b보다 긴지 확인한 뒤 나눕니다. sec(A) = c / b입니다. 이 페이지에서는 첫 번째 칸에 빗변, 두 번째 칸에 인접변을 입력하고 호환되는 단위를 고른 뒤 Calculate sec(A)를 클릭하세요."
+        "answer": "빗변 c와 인접변 b를 같은 단위로 재고, 둘 다 양수이며 c가 b보다 긴지 확인한 뒤 나눕니다. sec(A) = c / b입니다. 이 페이지에서는 첫 번째 칸에 빗변, 두 번째 칸에 인접변을 입력하고 호환되는 단위를 고른 뒤 계산하기 sec(A)를 클릭하세요."
       },
       {
         "question": "시컨트로 빗변을 어떻게 구하나요?",
@@ -4538,7 +4538,7 @@ export const SECANT_TRANSLATIONS_BATCH2 = {
           "<strong>Pilih unit ukuran yang serasi menggunakan pemilih unit yang disediakan.</strong> Kedua-dua medan mesti menggunakan unit yang sama, atau setara yang ditukar, atau nisbahnya akan salah.",
           "<strong>Pastikan kedua-dua ukuran adalah positif.</strong> Panjang sifar atau negatif tidak bermakna dalam segi tiga dan menandakan ralat memasukkan data.",
           "<strong>Semak bahawa hipotenus lebih panjang daripada sisi bersebelahan.</strong> Jika tidak, sama ada sisinya tersalah label atau nombor-nombor itu tidak boleh membentuk segi tiga tegak.",
-          "<strong>Klik Calculate sec(A).</strong> Alat ini melakukan pembahagian [[c/b]] dan memaparkan nisbah.",
+          "<strong>Klik Kira sec(A).</strong> Alat ini melakukan pembahagian [[c/b]] dan memaparkan nisbah.",
           "<strong>Baca nisbah sekan yang terhasil.</strong> Ia ialah perpuluhan tanpa dimensi, biasanya dengan empat tempat perpuluhan, sedia untuk digunakan dalam pengiraan lanjut.",
           "<strong>Pastikan hasilnya lebih besar daripada 1.</strong> Bagi segi tiga tegak yang sah dan tidak degenerat dengan sudut rujukan tirus, [[\\sec(A) \\gt 1]]; nilai pada atau di bawah 1 bermakna sesuatu yang tidak kena di peringkat awal.",
           "<strong>Gunakan Reset apabila anda ingin mengosongkan input dan memulakan pengiraan baharu.</strong> Medan-medan dan hasil kembali ke keadaan asal."
@@ -5313,7 +5313,7 @@ export const SECANT_TRANSLATIONS_BATCH2 = {
       },
       {
         "question": "Bagaimana cara mengira sekan daripada panjang sisi?",
-        "answer": "Ukur hipotenus c dan sisi bersebelahan b dalam unit yang sama, pastikan kedua-duanya positif dan c lebih panjang daripada b, kemudian bahagikan: sec(A) = c / b. Pada halaman ini, masukkan hipotenus dalam medan pertama dan sisi bersebelahan dalam medan kedua, pilih unit yang serasi, dan klik Calculate sec(A)."
+        "answer": "Ukur hipotenus c dan sisi bersebelahan b dalam unit yang sama, pastikan kedua-duanya positif dan c lebih panjang daripada b, kemudian bahagikan: sec(A) = c / b. Pada halaman ini, masukkan hipotenus dalam medan pertama dan sisi bersebelahan dalam medan kedua, pilih unit yang serasi, dan klik Kira sec(A)."
       },
       {
         "question": "Bagaimana saya boleh mencari hipotenus menggunakan sekan?",
@@ -5605,7 +5605,7 @@ export const SECANT_TRANSLATIONS_BATCH2 = {
           "<strong>Wybierz zgodne jednostki miary za pomocą dostępnych selektorów jednostek.</strong> Oba pola muszą używać tej samej jednostki albo jej przeliczonego odpowiednika, w przeciwnym razie stosunek będzie błędny.",
           "<strong>Upewnij się, że oba pomiary są dodatnie.</strong> Zerowa lub ujemna długość nie ma sensu w trójkącie i sygnalizuje błąd wprowadzania danych.",
           "<strong>Sprawdź, czy przeciwprostokątna jest dłuższa od przyprostokątnej przyległej.</strong> Jeśli nie jest, boki są błędnie oznaczone albo liczby nie mogą tworzyć trójkąta prostokątnego.",
-          "<strong>Kliknij przycisk Calculate sec(A).</strong> Narzędzie wykonuje dzielenie [[c/b]] i wyświetla stosunek.",
+          "<strong>Kliknij przycisk Oblicz sec(A).</strong> Narzędzie wykonuje dzielenie [[c/b]] i wyświetla stosunek.",
           "<strong>Odczytaj wynikowy stosunek secansa.</strong> Jest to bezwymiarowy ułamek dziesiętny, zwykle z czterema miejscami po przecinku, gotowy do użycia w dalszych obliczeniach.",
           "<strong>Potwierdź, że wynik jest większy od 1.</strong> Dla poprawnego, niezdegenerowanego trójkąta prostokątnego o ostrym kącie odniesienia [[\\sec(A) \\gt 1]]; wartość równa lub mniejsza od 1 oznacza, że coś poszło nie tak wcześniej.",
           "<strong>Użyj przycisku Reset, aby wyczyścić dane wejściowe i rozpocząć kolejne obliczenie.</strong> Pola i wynik wracają do stanu początkowego."
@@ -6380,7 +6380,7 @@ export const SECANT_TRANSLATIONS_BATCH2 = {
       },
       {
         "question": "Jak obliczyć secans na podstawie długości boków?",
-        "answer": "Zmierz przeciwprostokątną c i bok przyległy b w tej samej jednostce, potwierdź, że obie są dodatnie i że c jest dłuższe od b, a następnie podziel: sec(A) = c / b. Na tej stronie wprowadź przeciwprostokątną w pierwszym polu, a bok przyległy w drugim, wybierz zgodne jednostki i kliknij przycisk Calculate sec(A)."
+        "answer": "Zmierz przeciwprostokątną c i bok przyległy b w tej samej jednostce, potwierdź, że obie są dodatnie i że c jest dłuższe od b, a następnie podziel: sec(A) = c / b. Na tej stronie wprowadź przeciwprostokątną w pierwszym polu, a bok przyległy w drugim, wybierz zgodne jednostki i kliknij przycisk Oblicz sec(A)."
       },
       {
         "question": "Jak wyznaczyć przeciwprostokątną za pomocą secansa?",

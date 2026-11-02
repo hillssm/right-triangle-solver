@@ -237,7 +237,7 @@ export const SINE_TRANSLATIONS_BATCH1 = {
           "<strong>उपलब्ध इकाई चयनकर्ताओं से संगत मापन इकाइयाँ चुनें।</strong> मीटर के साथ मीटर, सेंटीमीटर के साथ सेंटीमीटर; मिली-जुली इकाइयाँ अर्थहीन अनुपात देती हैं।",
           "<strong>पुष्टि करें कि दोनों माप धनात्मक हैं।</strong> शून्य या ऋणात्मक लंबाइयाँ त्रिभुज नहीं बना सकतीं।",
           "<strong>जाँचें कि कर्ण सम्मुख भुजा से लंबा है।</strong> अगर [[a \\ge c]] है, तो इनपुट अदल-बदल हैं या त्रिभुज असंभव है।",
-          "<strong>Calculate sin(A) पर क्लिक करें।</strong> टूल सम्मुख भुजा को कर्ण से भाग देता है।",
+          "<strong>गणना करें sin(A) पर क्लिक करें।</strong> टूल सम्मुख भुजा को कर्ण से भाग देता है।",
           "<strong>प्राप्त साइन अनुपात पढ़ें।</strong> यह सादा दशमलव है, न कोण और न लंबाई।",
           "<strong>पुष्टि करें कि परिणाम 0 से बड़ा और 1 से छोटा है।</strong> न्यून संदर्भ कोण वाले वैध, अपभ्रष्ट न हुए समकोण त्रिभुज के लिए, यही एकमात्र वैध सीमा है।",
           "<strong>जब इनपुट साफ़ करके दूसरी गणना शुरू करना चाहें तो Reset का उपयोग करें।</strong>"
@@ -860,7 +860,7 @@ export const SINE_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "दो भुजा लंबाइयों से साइन की गणना कैसे करें?",
-        "answer": "संदर्भ कोण A पहचानें, सम्मुख भुजा a और कर्ण c को एक ही इकाई में मापें, पुष्टि करें कि दोनों धनात्मक हैं और c, a से लंबा है, फिर भाग दें: sin(A) = a / c। इस पेज पर, पहले फ़ील्ड में सम्मुख भुजा और दूसरे में कर्ण दर्ज करें, फिर Calculate sin(A) पर क्लिक करें।"
+        "answer": "संदर्भ कोण A पहचानें, सम्मुख भुजा a और कर्ण c को एक ही इकाई में मापें, पुष्टि करें कि दोनों धनात्मक हैं और c, a से लंबा है, फिर भाग दें: sin(A) = a / c। इस पेज पर, पहले फ़ील्ड में सम्मुख भुजा और दूसरे में कर्ण दर्ज करें, फिर गणना करें sin(A) पर क्लिक करें।"
       },
       {
         "question": "साइन और कोसाइन में क्या अंतर है?",
@@ -1144,7 +1144,7 @@ export const SINE_TRANSLATIONS_BATCH1 = {
           "<strong>Selecciona unidades de medida compatibles con los selectores de unidades disponibles.</strong> Metros con metros, centímetros con centímetros; las unidades mezcladas dan una razón sin sentido.",
           "<strong>Confirma que ambas mediciones son positivas.</strong> Las longitudes cero o negativas no pueden formar un triángulo.",
           "<strong>Comprueba que la hipotenusa es más larga que el cateto opuesto.</strong> Si [[a \\ge c]], las entradas están intercambiadas o el triángulo es imposible.",
-          "<strong>Haz clic en Calculate sin(A).</strong> La herramienta divide el cateto opuesto entre la hipotenusa.",
+          "<strong>Haz clic en Calcular sin(A).</strong> La herramienta divide el cateto opuesto entre la hipotenusa.",
           "<strong>Lee la razón seno resultante.</strong> Es un decimal simple, no un ángulo ni una longitud.",
           "<strong>Confirma que el resultado es mayor que 0 y menor que 1.</strong> Para un triángulo rectángulo válido y no degenerado con un ángulo de referencia agudo, ese es el único rango legal.",
           "<strong>Usa Reset cuando quieras borrar las entradas y empezar otro cálculo.</strong>"
@@ -1767,7 +1767,7 @@ export const SINE_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "¿Cómo se calcula el seno a partir de dos longitudes de lados?",
-        "answer": "Identifica el ángulo de referencia A, mide el cateto opuesto a y la hipotenusa c en la misma unidad, confirma que ambos son positivos y que c es más larga que a, y luego divide: sin(A) = a / c. En esta página, introduce el cateto opuesto en el primer campo y la hipotenusa en el segundo, y luego haz clic en Calculate sin(A)."
+        "answer": "Identifica el ángulo de referencia A, mide el cateto opuesto a y la hipotenusa c en la misma unidad, confirma que ambos son positivos y que c es más larga que a, y luego divide: sin(A) = a / c. En esta página, introduce el cateto opuesto en el primer campo y la hipotenusa en el segundo, y luego haz clic en Calcular sin(A)."
       },
       {
         "question": "¿Cuál es la diferencia entre el seno y el coseno?",
@@ -2051,7 +2051,7 @@ export const SINE_TRANSLATIONS_BATCH1 = {
           "<strong>Выберите совместимые единицы измерения в доступных селекторах единиц.</strong> Метры с метрами, сантиметры с сантиметрами; смешанные единицы дают бессмысленное отношение.",
           "<strong>Убедитесь, что оба измерения положительны.</strong> Нулевые или отрицательные длины не могут образовать треугольник.",
           "<strong>Проверьте, что гипотенуза длиннее противолежащего катета.</strong> Если [[a \\ge c]], входы перепутаны или треугольник невозможен.",
-          "<strong>Нажмите «Calculate sin(A)».</strong> Инструмент разделит противолежащий катет на гипотенузу.",
+          "<strong>Нажмите «Рассчитать sin(A)».</strong> Инструмент разделит противолежащий катет на гипотенузу.",
           "<strong>Прочитайте получившееся значение синуса.</strong> Это простое десятичное число, не угол и не длина.",
           "<strong>Убедитесь, что результат больше 0 и меньше 1.</strong> Для правильного, невырожденного прямоугольного треугольника с острым опорным углом это единственный допустимый диапазон.",
           "<strong>Используйте «Reset», когда хотите очистить поля ввода и начать новый расчёт.</strong>"
@@ -2674,7 +2674,7 @@ export const SINE_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "Как вычислить синус по двум длинам сторон?",
-        "answer": "Определите опорный угол A, измерьте противолежащий катет a и гипотенузу c в одной единице, убедитесь, что оба положительны и что c длиннее a, затем разделите: sin(A) = a / c. На этой странице введите противолежащий катет в первое поле, а гипотенузу во второе, затем нажмите «Calculate sin(A)»."
+        "answer": "Определите опорный угол A, измерьте противолежащий катет a и гипотенузу c в одной единице, убедитесь, что оба положительны и что c длиннее a, затем разделите: sin(A) = a / c. На этой странице введите противолежащий катет в первое поле, а гипотенузу во второе, затем нажмите «Рассчитать sin(A)»."
       },
       {
         "question": "В чём разница между синусом и косинусом?",
@@ -2958,7 +2958,7 @@ export const SINE_TRANSLATIONS_BATCH1 = {
           "<strong>Sélectionnez des unités de mesure compatibles avec les sélecteurs d'unités disponibles.</strong> Des mètres avec des mètres, des centimètres avec des centimètres ; des unités mélangées donnent un rapport sans signification.",
           "<strong>Confirmez que les deux mesures sont positives.</strong> Des longueurs nulles ou négatives ne peuvent pas former un triangle.",
           "<strong>Vérifiez que l'hypoténuse est plus longue que le côté opposé.</strong> Si [[a \\ge c]], les entrées sont inversées ou le triangle est impossible.",
-          "<strong>Cliquez sur Calculate sin(A).</strong> L'outil divise le côté opposé par l'hypoténuse.",
+          "<strong>Cliquez sur Calculer sin(A).</strong> L'outil divise le côté opposé par l'hypoténuse.",
           "<strong>Lisez le rapport sinus obtenu.</strong> C'est un nombre décimal simple, ni un angle ni une longueur.",
           "<strong>Confirmez que le résultat est supérieur à 0 et inférieur à 1.</strong> Pour un triangle rectangle valide et non dégénéré avec un angle de référence aigu, c'est la seule plage légale.",
           "<strong>Utilisez Reset quand vous voulez effacer les entrées et commencer un autre calcul.</strong>"
@@ -3581,7 +3581,7 @@ export const SINE_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "Comment calcule-t-on le sinus à partir de deux longueurs de côtés ?",
-        "answer": "Identifiez l'angle de référence A, mesurez le côté opposé a et l'hypoténuse c dans la même unité, confirmez que les deux sont positifs et que c est plus longue que a, puis divisez : sin(A) = a / c. Sur cette page, saisissez le côté opposé dans le premier champ et l'hypoténuse dans le second, puis cliquez sur Calculate sin(A)."
+        "answer": "Identifiez l'angle de référence A, mesurez le côté opposé a et l'hypoténuse c dans la même unité, confirmez que les deux sont positifs et que c est plus longue que a, puis divisez : sin(A) = a / c. Sur cette page, saisissez le côté opposé dans le premier champ et l'hypoténuse dans le second, puis cliquez sur Calculer sin(A)."
       },
       {
         "question": "Quelle est la différence entre le sinus et le cosinus ?",
@@ -3865,7 +3865,7 @@ export const SINE_TRANSLATIONS_BATCH1 = {
           "<strong>Wählen Sie mit den verfügbaren Einheitenauswahlen kompatible Maßeinheiten.</strong> Meter zu Metern, Zentimeter zu Zentimetern; gemischte Einheiten ergeben ein sinnloses Verhältnis.",
           "<strong>Bestätigen Sie, dass beide Messungen positiv sind.</strong> Null- oder negative Längen können kein Dreieck bilden.",
           "<strong>Prüfen Sie, dass die Hypotenuse länger als die Gegenkathete ist.</strong> Wenn [[a \\ge c]] gilt, sind die Eingaben vertauscht oder das Dreieck ist unmöglich.",
-          "<strong>Klicken Sie auf Calculate sin(A).</strong> Das Tool teilt die Gegenkathete durch die Hypotenuse.",
+          "<strong>Klicken Sie auf Berechnen sin(A).</strong> Das Tool teilt die Gegenkathete durch die Hypotenuse.",
           "<strong>Lesen Sie das resultierende Sinus-Verhältnis.</strong> Es ist eine einfache Dezimalzahl, kein Winkel und keine Länge.",
           "<strong>Bestätigen Sie, dass das Ergebnis größer als 0 und kleiner als 1 ist.</strong> Für ein gültiges, nicht entartetes rechtwinkliges Dreieck mit spitzem Referenzwinkel ist das der einzig zulässige Bereich.",
           "<strong>Verwenden Sie Reset, wenn Sie die Eingaben löschen und eine weitere Berechnung beginnen möchten.</strong>"
@@ -4488,7 +4488,7 @@ export const SINE_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "Wie berechnet man den Sinus aus zwei Seitenlängen?",
-        "answer": "Identifizieren Sie den Referenzwinkel A, messen Sie die Gegenkathete a und die Hypotenuse c in derselben Einheit, bestätigen Sie, dass beide positiv sind und c länger als a ist, und teilen Sie dann: sin(A) = a / c. Geben Sie auf dieser Seite die Gegenkathete in das erste Feld und die Hypotenuse in das zweite ein und klicken Sie dann auf Calculate sin(A)."
+        "answer": "Identifizieren Sie den Referenzwinkel A, messen Sie die Gegenkathete a und die Hypotenuse c in derselben Einheit, bestätigen Sie, dass beide positiv sind und c länger als a ist, und teilen Sie dann: sin(A) = a / c. Geben Sie auf dieser Seite die Gegenkathete in das erste Feld und die Hypotenuse in das zweite ein und klicken Sie dann auf Berechnen sin(A)."
       },
       {
         "question": "Was ist der Unterschied zwischen Sinus und Kosinus?",
@@ -4772,7 +4772,7 @@ export const SINE_TRANSLATIONS_BATCH1 = {
           "<strong>Seleziona unità di misura compatibili usando i selettori di unità disponibili.</strong> Metri con metri, centimetri con centimetri; unità miste danno un rapporto senza senso.",
           "<strong>Conferma che entrambe le misure siano positive.</strong> Lunghezze zero o negative non possono formare un triangolo.",
           "<strong>Verifica che l'ipotenusa sia più lunga del cateto opposto.</strong> Se [[a \\ge c]], gli input sono scambiati o il triangolo è impossibile.",
-          "<strong>Fai clic su Calculate sin(A).</strong> Lo strumento divide il cateto opposto per l'ipotenusa.",
+          "<strong>Fai clic su Calcola sin(A).</strong> Lo strumento divide il cateto opposto per l'ipotenusa.",
           "<strong>Leggi il rapporto del seno risultante.</strong> È un semplice decimale, non un angolo e non una lunghezza.",
           "<strong>Conferma che il risultato sia maggiore di 0 e minore di 1.</strong> Per un triangolo rettangolo valido e non degenere con un angolo di riferimento acuto, questo è l'unico intervallo legale.",
           "<strong>Usa Reset quando vuoi cancellare gli input e iniziare un altro calcolo.</strong>"
@@ -5395,7 +5395,7 @@ export const SINE_TRANSLATIONS_BATCH1 = {
       },
       {
         "question": "Come si calcola il seno da due lunghezze dei lati?",
-        "answer": "Identifica l'angolo di riferimento A, misura il cateto opposto a e l'ipotenusa c nella stessa unità, conferma che entrambi siano positivi e che c sia più lunga di a, poi dividi: sin(A) = a / c. In questa pagina, inserisci il cateto opposto nel primo campo e l'ipotenusa nel secondo, poi fai clic su Calculate sin(A)."
+        "answer": "Identifica l'angolo di riferimento A, misura il cateto opposto a e l'ipotenusa c nella stessa unità, conferma che entrambi siano positivi e che c sia più lunga di a, poi dividi: sin(A) = a / c. In questa pagina, inserisci il cateto opposto nel primo campo e l'ipotenusa nel secondo, poi fai clic su Calcola sin(A)."
       },
       {
         "question": "Qual è la differenza tra seno e coseno?",

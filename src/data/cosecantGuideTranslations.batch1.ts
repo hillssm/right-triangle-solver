@@ -283,7 +283,7 @@ export const COSECANT_TRANSLATIONS_BATCH1 = {
           "<strong>इकाई चयनकर्ताओं से संगत इकाइयाँ चुनें।</strong> दोनों फ़ील्डों में एक ही इकाई होनी चाहिए ताकि भाग सार्थक हो।",
           "<strong>पुष्टि करें कि दोनों मान धनात्मक हैं।</strong> शून्य या ऋणात्मक लंबाइयाँ त्रिभुज नहीं बना सकतीं।",
           "<strong>जांचें कि कर्ण सम्मुख भुजा से लंबा है।</strong> यदि ऐसा नहीं है, तो इनपुट आपस में बदल गए हैं या गलत लेबल लगाए गए हैं।",
-          "<strong>Calculate csc(A) पर क्लिक करें।</strong> टूल कर्ण को सम्मुख भुजा से भाग देता है।",
+          "<strong>गणना करें csc(A) पर क्लिक करें।</strong> टूल कर्ण को सम्मुख भुजा से भाग देता है।",
           "<strong>परिणामी कोसेकेंट अनुपात पढ़ें।</strong> यह एक विमाहीन संख्या है जो कर्ण को सम्मुख भुजा के गुणज के रूप में बताती है।",
           "<strong>सत्यापित करें कि उत्तर 1 से बड़ा है।</strong> 1 या उससे कम कुछ भी इनपुट त्रुटि का संकेत देता है।",
           "<strong>इनपुट साफ़ करने के लिए Reset का उपयोग करें</strong> और दूसरी गणना शुरू करें।"
@@ -1223,7 +1223,7 @@ export const COSECANT_TRANSLATIONS_BATCH1 = {
           "<strong>Seleccione unidades compatibles con los selectores de unidades.</strong> Ambos campos deben usar la misma unidad para que la división tenga sentido.",
           "<strong>Confirme que ambos valores sean positivos.</strong> Las longitudes cero o negativas no pueden formar un triángulo.",
           "<strong>Compruebe que la hipotenusa sea más larga que el cateto opuesto.</strong> Si no lo es, las entradas están intercambiadas o mal etiquetadas.",
-          "<strong>Haga clic en Calculate csc(A).</strong> La herramienta divide la hipotenusa entre el cateto opuesto.",
+          "<strong>Haga clic en Calcular csc(A).</strong> La herramienta divide la hipotenusa entre el cateto opuesto.",
           "<strong>Lea la razón cosecante resultante.</strong> Es un número sin dimensiones que describe la hipotenusa como un múltiplo del cateto opuesto.",
           "<strong>Verifique que la respuesta sea mayor que 1.</strong> Cualquier valor igual o inferior a 1 señala un error de entrada.",
           "<strong>Use Reset para borrar las entradas</strong> y comenzar otro cálculo."
@@ -2163,7 +2163,7 @@ export const COSECANT_TRANSLATIONS_BATCH1 = {
           "<strong>Выберите совместимые единицы с помощью селекторов единиц.</strong> Оба поля должны использовать одну и ту же единицу, чтобы деление было осмысленным.",
           "<strong>Убедитесь, что оба значения положительны.</strong> Нулевые или отрицательные длины не могут образовать треугольник.",
           "<strong>Проверьте, что гипотенуза длиннее противолежащего катета.</strong> Если это не так, вводы перепутаны или неверно подписаны.",
-          "<strong>Нажмите Calculate csc(A).</strong> Инструмент делит гипотенузу на противолежащий катет.",
+          "<strong>Нажмите Рассчитать csc(A).</strong> Инструмент делит гипотенузу на противолежащий катет.",
           "<strong>Прочитайте полученное отношение косеканса.</strong> Это безразмерное число, описывающее гипотенузу как кратное противолежащего катета.",
           "<strong>Убедитесь, что ответ больше 1.</strong> Любое значение, равное 1 или ниже, сигнализирует об ошибке ввода.",
           "<strong>Используйте Reset, чтобы очистить ввод</strong> и начать новый расчёт."
@@ -3103,7 +3103,7 @@ export const COSECANT_TRANSLATIONS_BATCH1 = {
           "<strong>Sélectionnez des unités compatibles avec les sélecteurs d'unités.</strong> Les deux champs doivent utiliser la même unité pour que la division ait un sens.",
           "<strong>Confirmez que les deux valeurs sont positives.</strong> Des longueurs nulles ou négatives ne peuvent pas former un triangle.",
           "<strong>Vérifiez que l'hypoténuse est plus longue que le côté opposé.</strong> Si ce n'est pas le cas, les entrées sont inversées ou mal étiquetées.",
-          "<strong>Cliquez sur Calculate csc(A).</strong> L'outil divise l'hypoténuse par le côté opposé.",
+          "<strong>Cliquez sur Calculer csc(A).</strong> L'outil divise l'hypoténuse par le côté opposé.",
           "<strong>Lisez le rapport cosécante obtenu.</strong> C'est un nombre sans dimension qui décrit l'hypoténuse comme un multiple du côté opposé.",
           "<strong>Vérifiez que la réponse est supérieure à 1.</strong> Toute valeur égale ou inférieure à 1 signale une erreur de saisie.",
           "<strong>Utilisez Reset pour effacer les entrées</strong> et commencer un autre calcul."
@@ -4043,7 +4043,7 @@ export const COSECANT_TRANSLATIONS_BATCH1 = {
           "<strong>Wählen Sie mit den Einheiten-Auswahlfeldern kompatible Einheiten.</strong> Beide Felder müssen dieselbe Einheit verwenden, damit die Division sinnvoll ist.",
           "<strong>Vergewissern Sie sich, dass beide Werte positiv sind.</strong> Null- oder negative Längen können kein Dreieck bilden.",
           "<strong>Prüfen Sie, dass die Hypotenuse länger ist als die Gegenkathete.</strong> Ist dies nicht der Fall, sind die Eingaben vertauscht oder falsch beschriftet.",
-          "<strong>Klicken Sie auf Calculate csc(A).</strong> Das Werkzeug dividiert die Hypotenuse durch die Gegenkathete.",
+          "<strong>Klicken Sie auf Berechnen csc(A).</strong> Das Werkzeug dividiert die Hypotenuse durch die Gegenkathete.",
           "<strong>Lesen Sie das resultierende Kosekans-Verhältnis ab.</strong> Es ist eine dimensionslose Zahl, die die Hypotenuse als Vielfaches der Gegenkathete beschreibt.",
           "<strong>Vergewissern Sie sich, dass die Antwort größer als 1 ist.</strong> Alles bei oder unter 1 signalisiert einen Eingabefehler.",
           "<strong>Verwenden Sie Reset, um die Eingaben zu löschen</strong> und eine weitere Berechnung zu starten."
@@ -4983,7 +4983,7 @@ export const COSECANT_TRANSLATIONS_BATCH1 = {
           "<strong>Seleziona unità compatibili con i selettori di unità.</strong> Entrambi i campi devono usare la stessa unità affinché la divisione abbia senso.",
           "<strong>Conferma che entrambi i valori siano positivi.</strong> Lunghezze zero o negative non possono formare un triangolo.",
           "<strong>Verifica che l'ipotenusa sia più lunga del cateto opposto.</strong> Se non lo è, gli input sono scambiati o etichettati male.",
-          "<strong>Fai clic su Calculate csc(A).</strong> Lo strumento divide l'ipotenusa per il cateto opposto.",
+          "<strong>Fai clic su Calcola csc(A).</strong> Lo strumento divide l'ipotenusa per il cateto opposto.",
           "<strong>Leggi il rapporto cosecante risultante.</strong> È un numero adimensionale che descrive l'ipotenusa come multiplo del cateto opposto.",
           "<strong>Verifica che la risposta sia maggiore di 1.</strong> Qualsiasi valore pari o inferiore a 1 segnala un errore di input.",
           "<strong>Usa Reset per cancellare gli input</strong> e iniziare un altro calcolo."

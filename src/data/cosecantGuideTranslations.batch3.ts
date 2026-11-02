@@ -283,7 +283,7 @@ export const COSECANT_TRANSLATIONS_BATCH3 = {
           "<strong>Pilih satuan yang kompatibel dengan pemilih satuan.</strong> Kedua kolom harus menggunakan satuan yang sama agar pembagiannya bermakna.",
           "<strong>Pastikan kedua nilai positif.</strong> Panjang nol atau negatif tidak dapat membentuk segitiga.",
           "<strong>Periksa bahwa hipotenusa lebih panjang daripada sisi depan.</strong> Jika tidak, masukannya tertukar atau salah label.",
-          "<strong>Klik Calculate csc(A).</strong> Alat ini membagi hipotenusa dengan sisi depan.",
+          "<strong>Klik Hitung csc(A).</strong> Alat ini membagi hipotenusa dengan sisi depan.",
           "<strong>Baca rasio cosecan yang dihasilkan.</strong> Ini adalah bilangan tak berdimensi yang menggambarkan hipotenusa sebagai kelipatan sisi depan.",
           "<strong>Verifikasi bahwa jawabannya lebih besar dari 1.</strong> Nilai 1 atau di bawahnya menandakan kesalahan masukan.",
           "<strong>Gunakan Reset untuk menghapus masukan</strong> dan memulai perhitungan lain."
@@ -1223,7 +1223,7 @@ export const COSECANT_TRANSLATIONS_BATCH3 = {
           "<strong>اختر وحدات متوافقة من منتقي الوحدات.</strong> يجب أن يستخدم الحقلان الوحدة نفسها لتكون القسمة ذات معنى.",
           "<strong>تأكد أن القيمتين موجبتان.</strong> فالأطوال الصفرية أو السالبة لا يمكن أن تكوّن مثلثاً.",
           "<strong>تحقق أن الوتر أطول من الضلع المقابل.</strong> فإن لم يكن، فالمدخلات متبادلة أو مسماة خطأ.",
-          "<strong>انقر Calculate csc(A).</strong> تقسم الأداة الوتر على الضلع المقابل.",
+          "<strong>انقر احسب csc(A).</strong> تقسم الأداة الوتر على الضلع المقابل.",
           "<strong>اقرأ نسبة قاطع التمام الناتجة.</strong> وهي عدد بلا أبعاد يصف الوتر كمضاعف للضلع المقابل.",
           "<strong>تحقق أن الجواب أكبر من 1.</strong> فأي شيء عند 1 أو دونه يشير إلى خطأ في الإدخال.",
           "<strong>استخدم Reset لمسح المدخلات</strong> وبدء حساب آخر."
@@ -2163,7 +2163,7 @@ export const COSECANT_TRANSLATIONS_BATCH3 = {
           "<strong>Изберете съвместими мерни единици с избирачите на единици.</strong> И двете полета трябва да използват една и съща мерна единица, за да е смислено делението.",
           "<strong>Потвърдете, че и двете стойности са положителни.</strong> Нулеви или отрицателни дължини не могат да образуват триъгълник.",
           "<strong>Проверете дали хипотенузата е по-дълга от срещулежащия катет.</strong> Ако не е, входовете са разменени или погрешно означени.",
-          "<strong>Щракнете Calculate csc(A).</strong> Инструментът дели хипотенузата на срещулежащия катет.",
+          "<strong>Щракнете Изчислете csc(A).</strong> Инструментът дели хипотенузата на срещулежащия катет.",
           "<strong>Прочетете полученото отношение на косеканса.</strong> Това е безразмерно число, описващо хипотенузата като кратно на срещулежащия катет.",
           "<strong>Проверете дали отговорът е по-голям от 1.</strong> Всичко на или под 1 сигнализира за грешка във входа.",
           "<strong>Използвайте Reset, за да изчистите входовете</strong> и да започнете друго изчисление."
@@ -3103,7 +3103,7 @@ export const COSECANT_TRANSLATIONS_BATCH3 = {
           "<strong>Birim seçicilerle uyumlu birimler seçin.</strong> Bölmenin anlamlı olması için iki alan da aynı birimi kullanmalıdır.",
           "<strong>İki değerin de pozitif olduğunu onaylayın.</strong> Sıfır veya negatif uzunluklar üçgen oluşturamaz.",
           "<strong>Hipotenüsün karşı kenardan uzun olduğunu kontrol edin.</strong> Değilse, girdiler yer değiştirmiş veya yanlış etiketlenmiştir.",
-          "<strong>Calculate csc(A) düğmesine tıklayın.</strong> Araç hipotenüsü karşı kenara böler.",
+          "<strong>Hesapla csc(A) düğmesine tıklayın.</strong> Araç hipotenüsü karşı kenara böler.",
           "<strong>Ortaya çıkan kosekant oranını okuyun.</strong> Bu, hipotenüsü karşı kenarın bir katı olarak tanımlayan boyutsuz bir sayıdır.",
           "<strong>Cevabın 1'den büyük olduğunu doğrulayın.</strong> 1 veya altındaki her şey bir giriş hatasına işaret eder.",
           "<strong>Girdileri temizlemek için Reset kullanın</strong> ve başka bir hesaplamaya başlayın."
@@ -4043,7 +4043,7 @@ export const COSECANT_TRANSLATIONS_BATCH3 = {
           "<strong>Välj kompatibla enheter med enhetsväljarna.</strong> Båda fälten måste använda samma enhet för att divisionen ska vara meningsfull.",
           "<strong>Bekräfta att båda värdena är positiva.</strong> Noll eller negativa längder kan inte bilda en triangel.",
           "<strong>Kontrollera att hypotenusan är längre än den motstående kateten.</strong> Om den inte är det är inmatningarna omkastade eller felmärkta.",
-          "<strong>Klicka på Calculate csc(A).</strong> Verktyget dividerar hypotenusan med den motstående kateten.",
+          "<strong>Klicka på Beräkna csc(A).</strong> Verktyget dividerar hypotenusan med den motstående kateten.",
           "<strong>Läs av den resulterande cosekanskvoten.</strong> Det är ett dimensionslöst tal som beskriver hypotenusan som en multipel av den motstående kateten.",
           "<strong>Verifiera att svaret är större än 1.</strong> Allt vid eller under 1 signalerar ett inmatningsfel.",
           "<strong>Använd Reset för att rensa inmatningarna</strong> och starta en ny beräkning."
@@ -4983,7 +4983,7 @@ export const COSECANT_TRANSLATIONS_BATCH3 = {
           "<strong>用单位选择器选择兼容的单位。</strong>两个输入框必须使用相同单位，除法才有意义。",
           "<strong>确认两个值都为正数。</strong>零或负的长度无法构成三角形。",
           "<strong>检查斜边是否长于对边。</strong>如果不是，说明输入调换了或标号错误。",
-          "<strong>点击 Calculate csc(A)。</strong>工具会用斜边除以对边。",
+          "<strong>点击 计算 csc(A)。</strong>工具会用斜边除以对边。",
           "<strong>读取得到的余割比值。</strong>它是一个无量纲数，把斜边描述为对边的倍数。",
           "<strong>验证答案大于 1。</strong>任何等于或小于 1 的值都表示输入错误。",
           "<strong>用 Reset 清空输入</strong>，开始下一次计算。"

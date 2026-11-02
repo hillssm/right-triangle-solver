@@ -237,7 +237,7 @@ export const SINE_TRANSLATIONS_BATCH3 = {
           "<strong>Pilih satuan pengukuran yang kompatibel menggunakan pemilih satuan yang tersedia.</strong> Meter dengan meter, sentimeter dengan sentimeter; satuan campuran menghasilkan rasio yang tidak bermakna.",
           "<strong>Pastikan kedua pengukuran positif.</strong> Panjang nol atau negatif tidak dapat membentuk segitiga.",
           "<strong>Periksa bahwa hipotenusa lebih panjang dari sisi depan.</strong> Jika [[a \\ge c]], masukan tertukar atau segitiganya mustahil.",
-          "<strong>Klik Calculate sin(A).</strong> Alat membagi sisi depan dengan hipotenusa.",
+          "<strong>Klik Hitung sin(A).</strong> Alat membagi sisi depan dengan hipotenusa.",
           "<strong>Baca rasio sinus yang dihasilkan.</strong> Ia adalah desimal biasa, bukan sudut dan bukan panjang.",
           "<strong>Pastikan hasilnya lebih besar dari 0 dan kurang dari 1.</strong> Untuk segitiga siku-siku yang valid dan tidak degenerate dengan sudut acuan lancip, itulah satu-satunya rentang yang sah.",
           "<strong>Gunakan Reset saat Anda ingin menghapus masukan dan memulai perhitungan lain.</strong>"
@@ -842,7 +842,7 @@ export const SINE_TRANSLATIONS_BATCH3 = {
       },
       {
         "question": "Bagaimana cara menghitung sinus dari dua panjang sisi?",
-        "answer": "Identifikasi sudut acuan A, ukur sisi depan a dan hipotenusa c dalam satuan yang sama, pastikan keduanya positif dan c lebih panjang dari a, lalu bagi: sin(A) = a / c. Di halaman ini, masukkan sisi depan di kolom pertama dan hipotenusa di kolom kedua, lalu klik Calculate sin(A)."
+        "answer": "Identifikasi sudut acuan A, ukur sisi depan a dan hipotenusa c dalam satuan yang sama, pastikan keduanya positif dan c lebih panjang dari a, lalu bagi: sin(A) = a / c. Di halaman ini, masukkan sisi depan di kolom pertama dan hipotenusa di kolom kedua, lalu klik Hitung sin(A)."
       },
       {
         "question": "Apa perbedaan antara sinus dan kosinus?",
@@ -1127,7 +1127,7 @@ export const SINE_TRANSLATIONS_BATCH3 = {
           "<strong>اختر وحدات قياس متوافقة باستخدام محددات الوحدات المتاحة.</strong> أمتار مع أمتار، وسنتيمترات مع سنتيمترات؛ فالوحدات المختلطة تعطي نسبة بلا معنى.",
           "<strong>تأكد أن القياسين موجبان.</strong> الأطوال الصفرية أو السالبة لا يمكن أن تشكل مثلثا.",
           "<strong>تحقق أن الوتر أطول من الضلع المقابل.</strong> إذا كان [[a \\ge c]]، فالمدخلات متبادلة أو المثلث مستحيل.",
-          "<strong>انقر Calculate sin(A).</strong> تقسم الأداة الضلع المقابل على الوتر.",
+          "<strong>انقر احسب sin(A).</strong> تقسم الأداة الضلع المقابل على الوتر.",
           "<strong>اقرأ نسبة الجيب الناتجة.</strong> إنها عدد عشري مجرد، لا زاوية ولا طول.",
           "<strong>تأكد أن الناتج أكبر من 0 وأقل من 1.</strong> بالنسبة لمثلث قائم صحيح وغير منهار بزاوية مرجعية حادة، هذا هو النطاق القانوني الوحيد.",
           "<strong>استخدم Reset عندما تريد مسح المدخلات وبدء حساب آخر.</strong>"
@@ -1732,7 +1732,7 @@ export const SINE_TRANSLATIONS_BATCH3 = {
       },
       {
         "question": "كيف تحسب الجيب من طولي ضلعين؟",
-        "answer": "حدد الزاوية المرجعية A، وقس الضلع المقابل a والوتر c بالوحدة نفسها، وتأكد أن كليهما موجب وأن c أطول من a، ثم اقسم: sin(A) = a / c. في هذه الصفحة، أدخل الضلع المقابل في الحقل الأول والوتر في الثاني، ثم انقر Calculate sin(A)."
+        "answer": "حدد الزاوية المرجعية A، وقس الضلع المقابل a والوتر c بالوحدة نفسها، وتأكد أن كليهما موجب وأن c أطول من a، ثم اقسم: sin(A) = a / c. في هذه الصفحة، أدخل الضلع المقابل في الحقل الأول والوتر في الثاني، ثم انقر احسب sin(A)."
       },
       {
         "question": "ما الفرق بين الجيب وجيب التمام؟",
@@ -2017,7 +2017,7 @@ export const SINE_TRANSLATIONS_BATCH3 = {
           "<strong>Изберете съвместими мерни единици с наличните селектори за единици.</strong> Метри с метри, сантиметри със сантиметри; смесените единици дават безсмислено отношение.",
           "<strong>Потвърдете, че и двете измервания са положителни.</strong> Нулеви или отрицателни дължини не могат да образуват триъгълник.",
           "<strong>Проверете дали хипотенузата е по-дълга от срещулежащия катет.</strong> Ако [[a \\ge c]], входовете са разменени или триъгълникът е невъзможен.",
-          "<strong>Щракнете върху Calculate sin(A).</strong> Инструментът дели срещулежащия катет на хипотенузата.",
+          "<strong>Щракнете върху Изчислете sin(A).</strong> Инструментът дели срещулежащия катет на хипотенузата.",
           "<strong>Прочетете полученото синусово отношение.</strong> То е обикновено десетично число, не ъгъл и не дължина.",
           "<strong>Потвърдете, че резултатът е по-голям от 0 и по-малък от 1.</strong> За валиден, неизроден правоъгълен триъгълник с остър референтен ъгъл това е единственият допустим диапазон.",
           "<strong>Използвайте Reset, когато искате да изчистите входовете и да започнете друго изчисление.</strong>"
@@ -2622,7 +2622,7 @@ export const SINE_TRANSLATIONS_BATCH3 = {
       },
       {
         "question": "Как се изчислява синус от две дължини на страни?",
-        "answer": "Идентифицирайте референтния ъгъл A, измерете срещулежащия катет a и хипотенузата c в една и съща единица, потвърдете, че и двете са положителни и че c е по-дълга от a, след което разделете: sin(A) = a / c. На тази страница въведете срещулежащия катет в първото поле и хипотенузата във второто, след което щракнете върху Calculate sin(A)."
+        "answer": "Идентифицирайте референтния ъгъл A, измерете срещулежащия катет a и хипотенузата c в една и съща единица, потвърдете, че и двете са положителни и че c е по-дълга от a, след което разделете: sin(A) = a / c. На тази страница въведете срещулежащия катет в първото поле и хипотенузата във второто, след което щракнете върху Изчислете sin(A)."
       },
       {
         "question": "Каква е разликата между синус и косинус?",
@@ -2907,7 +2907,7 @@ export const SINE_TRANSLATIONS_BATCH3 = {
           "<strong>Mevcut birim seçicileri kullanarak uyumlu ölçü birimleri seçin.</strong> Metre ile metre, santimetre ile santimetre; karışık birimler anlamsız bir oran verir.",
           "<strong>İki ölçümün de pozitif olduğunu doğrulayın.</strong> Sıfır veya negatif uzunluklar üçgen oluşturamaz.",
           "<strong>Hipotenüsün karşı kenardan uzun olduğunu kontrol edin.</strong> [[a \\ge c]] ise girdiler yer değiştirmiştir veya üçgen imkansızdır.",
-          "<strong>Calculate sin(A) düğmesine tıklayın.</strong> Araç karşı kenarı hipotenüse böler.",
+          "<strong>Hesapla sin(A) düğmesine tıklayın.</strong> Araç karşı kenarı hipotenüse böler.",
           "<strong>Elde edilen sinüs oranını okuyun.</strong> Bu sade bir ondalıktır; açı veya uzunluk değildir.",
           "<strong>Sonucun 0'dan büyük ve 1'den küçük olduğunu doğrulayın.</strong> Dar referans açılı, geçerli ve yozlaşmamış bir dik üçgen için tek yasal aralık budur.",
           "<strong>Girdileri temizleyip başka bir hesaba başlamak istediğinizde Reset kullanın.</strong>"
@@ -3512,7 +3512,7 @@ export const SINE_TRANSLATIONS_BATCH3 = {
       },
       {
         "question": "İki kenar uzunluğundan sinüs nasıl hesaplanır?",
-        "answer": "Referans açı A'yı belirleyin, karşı kenar a ile hipotenüs c'yi aynı birimle ölçün, ikisinin de pozitif ve c'nin a'dan uzun olduğunu doğrulayın, sonra bölün: sin(A) = a / c. Bu sayfada karşı kenarı ilk alana, hipotenüsü ikinci alana girin ve Calculate sin(A) düğmesine tıklayın."
+        "answer": "Referans açı A'yı belirleyin, karşı kenar a ile hipotenüs c'yi aynı birimle ölçün, ikisinin de pozitif ve c'nin a'dan uzun olduğunu doğrulayın, sonra bölün: sin(A) = a / c. Bu sayfada karşı kenarı ilk alana, hipotenüsü ikinci alana girin ve Hesapla sin(A) düğmesine tıklayın."
       },
       {
         "question": "Sinüs ile kosinüs arasındaki fark nedir?",
@@ -3797,7 +3797,7 @@ export const SINE_TRANSLATIONS_BATCH3 = {
           "<strong>Välj kompatibla mätenheter med de tillgängliga enhetsväljarna.</strong> Meter med meter, centimeter med centimeter; blandade enheter ger ett meningslöst förhållande.",
           "<strong>Bekräfta att båda mätningarna är positiva.</strong> Noll- eller negativa längder kan inte bilda en triangel.",
           "<strong>Kontrollera att hypotenusan är längre än den motstående kateten.</strong> Om [[a \\ge c]] är inmatningarna omkastade eller triangeln omöjlig.",
-          "<strong>Klicka på Calculate sin(A).</strong> Verktyget dividerar den motstående kateten med hypotenusan.",
+          "<strong>Klicka på Beräkna sin(A).</strong> Verktyget dividerar den motstående kateten med hypotenusan.",
           "<strong>Läs av det resulterande sinusförhållandet.</strong> Det är ett vanligt decimaltal, inte en vinkel och inte en längd.",
           "<strong>Bekräfta att resultatet är större än 0 och mindre än 1.</strong> För en giltig, icke-degenererad rätvinklig triangel med en spetsig referensvinkel är det det enda lagliga intervallet.",
           "<strong>Använd Reset när du vill rensa inmatningarna och påbörja en ny beräkning.</strong>"
@@ -4402,7 +4402,7 @@ export const SINE_TRANSLATIONS_BATCH3 = {
       },
       {
         "question": "Hur beräknar man sinus ur två sidlängder?",
-        "answer": "Identifiera referensvinkeln A, mät den motstående kateten a och hypotenusan c i samma enhet, bekräfta att båda är positiva och att c är längre än a, dividera sedan: sin(A) = a / c. På denna sida anger du den motstående kateten i det första fältet och hypotenusan i det andra och klickar sedan på Calculate sin(A)."
+        "answer": "Identifiera referensvinkeln A, mät den motstående kateten a och hypotenusan c i samma enhet, bekräfta att båda är positiva och att c är längre än a, dividera sedan: sin(A) = a / c. På denna sida anger du den motstående kateten i det första fältet och hypotenusan i det andra och klickar sedan på Beräkna sin(A)."
       },
       {
         "question": "Vad är skillnaden mellan sinus och cosinus?",
@@ -4687,7 +4687,7 @@ export const SINE_TRANSLATIONS_BATCH3 = {
           "<strong>使用可用的单位选择器选择兼容的测量单位。</strong>米配米，厘米配厘米；混合单位会得到无意义的比值。",
           "<strong>确认两个测量值都为正数。</strong>零或负的长度无法构成三角形。",
           "<strong>检查斜边比对边长。</strong>如果 [[a \\ge c]]，则输入颠倒了，或者三角形不可能存在。",
-          "<strong>点击 Calculate sin(A)。</strong>工具将对边除以斜边。",
+          "<strong>点击 计算 sin(A)。</strong>工具将对边除以斜边。",
           "<strong>读取得到的正弦比。</strong>它是一个普通小数，不是角度也不是长度。",
           "<strong>确认结果大于 0 且小于 1。</strong>对于参考角为锐角的有效非退化直角三角形，这是唯一的合法范围。",
           "<strong>当你想清除输入并开始另一次计算时，使用 Reset。</strong>"
@@ -5292,7 +5292,7 @@ export const SINE_TRANSLATIONS_BATCH3 = {
       },
       {
         "question": "如何根据两个边长计算正弦？",
-        "answer": "确定参考角 A，用同一单位测量对边 a 和斜边 c，确认两者都为正数且 c 比 a 长，然后相除：sin(A) = a / c。在本页，在第一个输入框中输入对边，在第二个输入框中输入斜边，然后点击 Calculate sin(A)。"
+        "answer": "确定参考角 A，用同一单位测量对边 a 和斜边 c，确认两者都为正数且 c 比 a 长，然后相除：sin(A) = a / c。在本页，在第一个输入框中输入对边，在第二个输入框中输入斜边，然后点击 计算 sin(A)。"
       },
       {
         "question": "正弦和余弦有什么区别？",

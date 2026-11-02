@@ -1168,7 +1168,7 @@ export const COSINE_TRANSLATIONS_BATCH2 = {
           "<strong>একক নির্বাচকের সাহায্যে মিলিয়ে নেওয়া একক বেছে নিন</strong> যাতে ভাগটি অর্থবহ হয়।",
           "<strong>নিশ্চিত করুন দুটি মানই ধনাত্মক;</strong> শূন্য বা ঋণাত্মক দৈর্ঘ্য ত্রিভুজ গঠন করতে পারে না।",
           "<strong>যাচাই করুন অতিভুজ সন্নিহিত বাহুর চেয়ে লম্বা;</strong> না হলে ইনপুট অদলবদল হয়েছে বা ভুল লেবেল দেওয়া হয়েছে।",
-          "<strong>'Calculate cos(A)' বোতামে ক্লিক করুন</strong> সন্নিহিত বাহুকে অতিভুজ দিয়ে ভাগ করতে।",
+          "<strong>'হিসাব করুন cos(A)' বোতামে ক্লিক করুন</strong> সন্নিহিত বাহুকে অতিভুজ দিয়ে ভাগ করতে।",
           "<strong>কোসাইন অনুপাত পড়ুন:</strong> অতিভুজের অংশ হিসেবে সন্নিহিত বাহু।",
           "<strong>যাচাই করুন উত্তর 0 ও 1-এর মধ্যে;</strong> এর বাইরে যেকোনো মান ইনপুট ত্রুটির সংকেত।",
           "<strong>'Reset' ব্যবহার করুন</strong> ইনপুট মুছে নতুন করে শুরু করতে।"
@@ -2096,7 +2096,7 @@ export const COSINE_TRANSLATIONS_BATCH2 = {
           "<strong>単位選択で単位をそろえます。</strong>そうすることで割り算が意味を持ちます。",
           "<strong>両方の値が正であることを確認します。</strong>ゼロや負の長さでは三角形は作れません。",
           "<strong>斜辺が隣辺より長いことを確認します。</strong>そうでない場合、入力が逆か、辺のラベルが間違っています。",
-          "<strong>「Calculate cos(A)」をクリックします。</strong>隣辺を斜辺で割ります。",
+          "<strong>「計算する cos(A)」をクリックします。</strong>隣辺を斜辺で割ります。",
           "<strong>余弦比を読み取ります。</strong>斜辺に対する隣辺の割合です。",
           "<strong>答えが0と1の間にあることを確認します。</strong>この範囲を外れる場合は入力ミスのサインです。",
           "<strong>「Reset」を使います。</strong>入力を消去して最初からやり直せます。"
@@ -3018,7 +3018,7 @@ export const COSINE_TRANSLATIONS_BATCH2 = {
           "<strong>단위 선택기로 단위를 맞춥니다.</strong> 그래야 나눗셈이 의미를 가집니다.",
           "<strong>두 값이 모두 양수인지 확인합니다.</strong> 0이나 음수 길이는 삼각형을 이룰 수 없습니다.",
           "<strong>빗변이 인접변보다 긴지 확인합니다.</strong> 그렇지 않다면 입력이 뒤바뀌었거나 변 이름이 잘못된 것입니다.",
-          "<strong>Calculate cos(A) 버튼을 누릅니다.</strong> 인접변을 빗변으로 나눕니다.",
+          "<strong>계산하기 cos(A) 버튼을 누릅니다.</strong> 인접변을 빗변으로 나눕니다.",
           "<strong>코사인 비를 읽습니다.</strong> 빗변에서 인접변이 차지하는 비율입니다.",
           "<strong>답이 0과 1 사이인지 확인합니다.</strong> 그 범위를 벗어나면 입력 오류의 신호입니다.",
           "<strong>Reset을 사용합니다.</strong> 입력을 지우고 처음부터 다시 시작합니다."
@@ -3940,7 +3940,7 @@ export const COSINE_TRANSLATIONS_BATCH2 = {
           "<strong>Pilih unit yang sepadan dengan pemilih unit</strong> agar pembahagian bermakna.",
           "<strong>Pastikan kedua-dua nilai adalah positif;</strong> panjang sifar atau negatif tidak boleh membentuk segi tiga.",
           "<strong>Semak bahawa hipotenus lebih panjang daripada sisi bersebelahan;</strong> jika tidak, input telah tertukar atau dilabel dengan salah.",
-          "<strong>Klik Calculate cos(A)</strong> untuk membahagikan sisi bersebelahan dengan hipotenus.",
+          "<strong>Klik Kira cos(A)</strong> untuk membahagikan sisi bersebelahan dengan hipotenus.",
           "<strong>Baca nisbah kosinus:</strong> sisi bersebelahan sebagai perkadaran hipotenus.",
           "<strong>Sahkan jawapan berada antara 0 dan 1;</strong> apa-apa sahaja di luar julat itu menandakan ralat input.",
           "<strong>Gunakan Reset</strong> untuk mengosongkan input dan mulakan semula."

@@ -1,0 +1,1364 @@
+# MASTER PROMPT: Right Triangle Missing Angle Calculator — Comprehensive Educational Guide, 12 Practical Examples, Four Diagrams, and SEO
+
+## 1. ROLE AND OBJECTIVE
+
+Act as an experienced mathematics educator, geometry specialist, professional educational content writer, technical SEO strategist, and educational website content editor.
+
+Create a comprehensive, original, mathematically accurate, human-sounding educational guide for the following webpage.
+
+**Website:** Right Triangle Solver
+
+**Target URL:**  
+https://www.righttrianglesolver.com/right-triangle-missing-angle-calculator/
+
+**Primary keyword:** Right Triangle Missing Angle Calculator
+
+**Language:** English (US)
+
+**Recommended article length:** 3,000–4,000 words, excluding diagram specifications, SVG code, and SEO metadata.
+
+### Main objective
+
+Explain how to calculate the missing acute angle of a right triangle when the other acute angle is known.
+
+The guide must teach readers:
+
+- What a missing angle is in a right triangle.
+- Why the two acute angles always add up to 90 degrees.
+- What complementary angles are.
+- Why the formula \(B=90^\circ-A\) works.
+- How to use the existing calculator correctly.
+- How to find angle \(A\) when angle \(B\) is known.
+- How to check whether an answer is mathematically valid.
+- How complementary angles appear in practical situations.
+- How to interpret angles relative to horizontal and vertical reference lines.
+- How to recognise common calculation mistakes.
+- When to use this calculator instead of a trigonometric angle calculator.
+- How to verify a result without using a calculator.
+
+The intended audience includes students, teachers, parents helping with homework, construction learners, architects, engineers, DIY enthusiasts, drafting professionals, and anyone who needs to understand complementary angles.
+
+**Critical instruction:** Expand the educational content below the existing calculator. Do not replace the calculator, duplicate its functionality, or redesign its existing interface.
+
+---
+
+## 2. INSPECT THE EXISTING PAGE FIRST
+
+Before writing, inspect the live webpage, calculator interface, input fields, formula, triangle diagram, existing worked example, practical applications, common mistakes, FAQs, and related calculators.
+
+The existing calculator has these characteristics:
+
+- It accepts angle \(A\) in degrees.
+- It calculates angle \(B\).
+- It uses the formula \(B=90^\circ-A\).
+- It does not require side lengths.
+- It includes Calculate Angle B and Reset controls.
+- It requires the entered acute angle to be strictly greater than \(0^\circ\) and strictly less than \(90^\circ\).
+
+Preserve the existing mathematical convention throughout the article:
+
+- \(A\): the known acute angle entered into the calculator.
+- \(B\): the missing acute angle calculated by the tool.
+- \(C\): the right angle, equal to \(90^\circ\).
+- \(a\): the side opposite angle \(A\).
+- \(b\): the side adjacent to angle \(A\).
+- \(c\): the hypotenuse, opposite the right angle.
+
+The triangle's three angles satisfy:
+
+\[
+A+B+C=180^\circ
+\]
+
+Because:
+
+\[
+C=90^\circ
+\]
+
+the equation becomes:
+
+\[
+A+B+90^\circ=180^\circ
+\]
+
+Therefore:
+
+\[
+A+B=90^\circ
+\]
+
+Rearranging gives the calculator's formula:
+
+\[
+\boxed{B=90^\circ-A}
+\]
+
+If angle \(B\) is known and angle \(A\) is missing, the corresponding formula is:
+
+\[
+\boxed{A=90^\circ-B}
+\]
+
+Explain that these formulas are two versions of the same complementary-angle relationship.
+
+**Important:** The current calculator's interface specifically accepts angle \(A\) and returns angle \(B\). Do not claim that it accepts angle \(B\) unless the actual interface supports that input.
+
+Do not invent calculator features, output options, or accuracy guarantees.
+
+---
+
+## 3. HUMAN WRITING REQUIREMENTS
+
+The content must sound like a knowledgeable mathematics teacher explaining a concept naturally, not like generic AI-generated content.
+
+Follow these rules:
+
+1. Use clear, natural, professional English.
+2. Explain why the formula works instead of simply asking readers to memorise it.
+3. Introduce concepts in a logical sequence.
+4. Use realistic practical situations.
+5. Vary sentence lengths naturally.
+6. Keep paragraphs focused and readable.
+7. Explain technical terms when they first appear.
+8. Connect sections with useful transitions.
+9. Avoid repeating the same explanation in multiple sections.
+10. Do not add filler to meet the word count.
+11. Avoid excessive bullet lists and decorative callouts.
+12. Do not invent personal experiences, testimonials, or professional credentials.
+13. Avoid unnatural keyword repetition.
+14. Avoid exaggerated claims.
+15. Explain the practical meaning of each calculated angle.
+16. Distinguish between a mathematical relationship and a real-world structure that only approximates a right triangle.
+
+Avoid generic phrases such as:
+
+- In today's fast-paced world
+- Let's delve into
+- Unlock the power of
+- In the realm of mathematics
+- Whether you're a beginner or an expert
+- Look no further
+- Seamlessly calculate
+- Revolutionise your calculations
+
+Make the content useful through accurate explanations, relevant examples, and clear reasoning.
+
+---
+
+## 4. REQUIRED ARTICLE STRUCTURE
+
+Retain the existing H1:
+
+# Right Triangle Missing Angle Calculator
+
+Do not add another H1.
+
+Expand the educational guide below the existing calculator while preserving the page's hierarchy and the calculator's position.
+
+### SECTION 1 — INTRODUCTION
+
+H2: How to Find a Missing Angle in a Right Triangle
+
+Write approximately 120–160 words.
+
+Explain:
+
+- What a missing angle is.
+- Why finding the other acute angle is often straightforward.
+- Why a right triangle always contains one 90-degree angle.
+- Why the remaining two angles must add up to 90 degrees.
+- How subtracting the known angle from 90 degrees reveals the missing angle.
+- Why side lengths and trigonometric functions are unnecessary when one acute angle is already known.
+
+Start with a simple numerical example.
+
+For instance, if one acute angle measures \(35^\circ\), the missing angle is:
+
+\[
+90^\circ-35^\circ=55^\circ
+\]
+
+Explain that the answer represents the other acute angle in the same right triangle.
+
+Keep the introduction focused on the actual purpose of this calculator.
+
+### SECTION 2 — UNDERSTANDING ANGLES IN A RIGHT TRIANGLE
+
+H2: What Are the Angles in a Right Triangle?
+
+H3: The Right Angle
+
+Explain:
+
+- What a 90-degree angle represents.
+- Why the right angle is fixed in every right triangle.
+- How the right angle is normally shown using a small square in a diagram.
+- Why the other two angles must be acute.
+
+H3: The Two Acute Angles
+
+Explain:
+
+- What an acute angle is.
+- Why both remaining angles must be greater than \(0^\circ\) and less than \(90^\circ\).
+- Why the two angles are complementary.
+- How one angle determines the other completely.
+
+H3: What Are Complementary Angles?
+
+Define complementary angles as two angles whose measures add up to \(90^\circ\).
+
+Use these examples:
+
+\[
+30^\circ+60^\circ=90^\circ
+\]
+
+\[
+35^\circ+55^\circ=90^\circ
+\]
+
+\[
+45^\circ+45^\circ=90^\circ
+\]
+
+Explain that complementary angles do not need to be equal.
+
+H3: Why the Angles of a Triangle Add Up to 180 Degrees
+
+Explain the triangle angle-sum rule in accessible language.
+
+Show how the fixed right angle leaves exactly 90 degrees for the other two angles.
+
+Avoid an unnecessarily advanced proof.
+
+Insert Diagram 1 here.
+
+### DIAGRAM 1 — The Three Angles of a Right Triangle
+
+Create an original educational diagram showing:
+
+- A right triangle with vertices \(A\), \(B\), and \(C\).
+- Angle \(A\) at the bottom-left.
+- Angle \(B\) at the upper vertex.
+- Angle \(C=90^\circ\) at the bottom-right.
+- A right-angle marker at \(C\).
+- Angle \(A=35^\circ\).
+- Angle \(B=55^\circ\).
+- A clear annotation showing \(A+B=90^\circ\).
+- The complete angle sum \(35^\circ+55^\circ+90^\circ=180^\circ\).
+
+Use the same vertex convention throughout the article.
+
+Do not confuse the side labels with angle labels.
+
+Provide:
+
+- Diagram title.
+- Exact placement.
+- Caption.
+- Descriptive filename.
+- Accessible alt text under 125 characters.
+- Detailed SVG creation instructions.
+
+---
+
+## 5. DERIVING THE MISSING-ANGLE FORMULA
+
+H2: The Formula for Finding a Missing Angle
+
+Explain the formula step by step.
+
+Start with the general triangle angle-sum rule:
+
+\[
+A+B+C=180^\circ
+\]
+
+Since the triangle is right-angled:
+
+\[
+C=90^\circ
+\]
+
+Substitute:
+
+\[
+A+B+90^\circ=180^\circ
+\]
+
+Subtract \(90^\circ\) from both sides:
+
+\[
+A+B=90^\circ
+\]
+
+Subtract \(A\) from both sides:
+
+\[
+\boxed{B=90^\circ-A}
+\]
+
+Explain every step in plain language.
+
+Then show the reverse formula:
+
+\[
+\boxed{A=90^\circ-B}
+\]
+
+Explain that the calculator uses the first formula because its input field accepts angle \(A\) and its output is angle \(B\).
+
+### Explain the difference between 90 degrees and 180 degrees
+
+Discuss the common mistake of subtracting the known angle from \(180^\circ\).
+
+Explain that \(180^\circ\) is the total for all three angles, while \(90^\circ\) is the total for the two acute angles in a right triangle.
+
+Use a simple example to show why subtracting from 180 degrees alone gives an incorrect result when the right angle has not been accounted for.
+
+Insert Diagram 2 here.
+
+### DIAGRAM 2 — Why Two Acute Angles Add Up to 90 Degrees
+
+Create an educational diagram or infographic with two clear parts.
+
+**Part A: Whole-triangle angle sum**
+
+Show:
+
+\[
+35^\circ+55^\circ+90^\circ=180^\circ
+\]
+
+**Part B: Complementary angles**
+
+Highlight the two acute angles and show:
+
+\[
+35^\circ+55^\circ=90^\circ
+\]
+
+Add an arrow or visual transition explaining that the right angle accounts for half of the triangle's total angle sum.
+
+Include a small formula panel:
+
+\[
+B=90^\circ-A
+\]
+
+The diagram must make the distinction between the 180-degree triangle sum and the 90-degree complementary-angle sum immediately clear.
+
+Provide caption, alt text, filename, exact placement, and SVG creation instructions.
+
+---
+
+## 6. HOW TO USE THE EXISTING CALCULATOR
+
+H2: How to Use the Right Triangle Missing Angle Calculator
+
+Write a beginner-friendly walkthrough matching the actual interface.
+
+Step 1: Identify the right triangle.
+
+Step 2: Locate the acute angle you already know.
+
+Step 3: Confirm that the known angle is greater than \(0^\circ\) and less than \(90^\circ\).
+
+Step 4: Enter the known angle \(A\) in degrees.
+
+Step 5: Click Calculate Angle B.
+
+Step 6: Read the calculated complementary angle.
+
+Step 7: Add the two acute angles to check the result.
+
+Step 8: Use Reset when you want to start a new calculation.
+
+Explain why each step matters.
+
+Make it clear that the calculator does not need:
+
+- Opposite-side length.
+- Adjacent-side length.
+- Hypotenuse length.
+- Sine, cosine, or tangent values.
+
+Do not claim that the current input field accepts radians or angle \(B\) unless the actual interface confirms it.
+
+Do not invent download, export, history, or other unsupported features.
+
+---
+
+## 7. FOUR FULLY WORKED MATHEMATICAL EXAMPLES
+
+H2: Step-by-Step Examples of Finding Missing Angles
+
+Provide four foundational examples before the practical applications.
+
+### Example 1 — A Known Angle of 35 Degrees
+
+Given:
+
+\[
+A=35^\circ
+\]
+
+Find angle \(B\).
+
+Step 1: Write the formula.
+
+\[
+B=90^\circ-A
+\]
+
+Step 2: Substitute the known angle.
+
+\[
+B=90^\circ-35^\circ
+\]
+
+Step 3: Subtract.
+
+\[
+\boxed{B=55^\circ}
+\]
+
+Check:
+
+\[
+35^\circ+55^\circ=90^\circ
+\]
+
+Explain why the answer is valid.
+
+### Example 2 — A Known Angle of 20 Degrees
+
+Given:
+
+\[
+A=20^\circ
+\]
+
+Calculate:
+
+\[
+B=90^\circ-20^\circ
+\]
+
+Final answer:
+
+\[
+\boxed{B=70^\circ}
+\]
+
+Explain why a smaller acute angle produces a larger complementary angle.
+
+### Example 3 — An Isosceles Right Triangle
+
+Given:
+
+\[
+A=45^\circ
+\]
+
+Calculate:
+
+\[
+B=90^\circ-45^\circ
+\]
+
+Final answer:
+
+\[
+\boxed{B=45^\circ}
+\]
+
+Explain why both acute angles are equal in an isosceles right triangle.
+
+### Example 4 — A Known Angle of 68.5 Degrees
+
+Given:
+
+\[
+A=68.5^\circ
+\]
+
+Calculate:
+
+\[
+B=90^\circ-68.5^\circ
+\]
+
+Final answer:
+
+\[
+\boxed{B=21.5^\circ}
+\]
+
+Explain why a relatively large acute angle has a relatively small complement.
+
+---
+
+## 8. REAL-WORLD PRACTICAL EXAMPLES
+
+H2: Real-Life Applications of Missing Angles
+
+Create at least 12 fully worked practical examples.
+
+Explain an important distinction before starting: the missing-angle formula applies directly when two angles belong to the same right triangle. Real-world examples may use a horizontal surface and a vertical surface as perpendicular reference lines, or a diagonal component that forms a right triangle.
+
+For every example:
+
+1. Describe the practical situation naturally.
+2. Identify the right triangle or perpendicular reference lines.
+3. State the known acute angle.
+4. Identify the missing complementary angle.
+5. Write the formula.
+6. Substitute the known value.
+7. Show the subtraction.
+8. Give the final answer.
+9. Explain what the result means in context.
+10. State any relevant assumptions.
+
+Use the following examples.
+
+### Example 5 — Finding a Roof Rafter's Angle to the Vertical
+
+A roof rafter makes an angle of \(35^\circ\) with the horizontal.
+
+Find the angle between the same rafter and a vertical reference line.
+
+Given:
+
+\[
+A=35^\circ
+\]
+
+Calculation:
+
+\[
+B=90^\circ-35^\circ
+\]
+
+Final answer:
+
+\[
+\boxed{B=55^\circ}
+\]
+
+Explain that the horizontal and vertical reference lines are perpendicular.
+
+Clarify that this is the angle relative to the vertical, not a complete roof-pitch or structural calculation.
+
+### Example 6 — Finding a Ladder's Angle to a Wall
+
+A ladder rests against a vertical wall and forms an angle of \(68^\circ\) with the level ground.
+
+Find the angle between the ladder and the wall.
+
+\[
+B=90^\circ-68^\circ
+\]
+
+Final answer:
+
+\[
+\boxed{B=22^\circ}
+\]
+
+Explain that the ground and wall form a right angle under the idealised model.
+
+Mention that the calculation alone does not establish whether the ladder is safely positioned.
+
+### Example 7 — Understanding a Ramp's Angle to the Vertical
+
+A straight ramp makes an angle of \(8^\circ\) with the horizontal.
+
+Find the complementary angle between the ramp direction and a vertical reference line.
+
+\[
+B=90^\circ-8^\circ
+\]
+
+Final answer:
+
+\[
+\boxed{B=82^\circ}
+\]
+
+Explain why the ramp's angle to the vertical is the complement of its angle to the horizontal.
+
+Do not suggest that this angle alone determines accessibility or code compliance.
+
+### Example 8 — Finding a Staircase Stringer's Complementary Angle
+
+A staircase stringer makes an angle of \(32^\circ\) with the floor.
+
+Calculate its angle relative to a vertical reference line.
+
+\[
+B=90^\circ-32^\circ
+\]
+
+Final answer:
+
+\[
+\boxed{B=58^\circ}
+\]
+
+Explain the relationship between the floor, vertical reference, and diagonal stringer.
+
+Clarify that this does not verify staircase dimensions or building-code compliance.
+
+### Example 9 — Calculating a Diagonal Brace's Angle to a Vertical Support
+
+A diagonal brace makes an angle of \(40^\circ\) with a horizontal beam.
+
+Find the angle between the brace and a perpendicular vertical support.
+
+\[
+B=90^\circ-40^\circ
+\]
+
+Final answer:
+
+\[
+\boxed{B=50^\circ}
+\]
+
+Explain why the two reference directions must be perpendicular.
+
+Clarify that the angle calculation does not determine structural strength.
+
+### Example 10 — Finding a Guy Wire's Angle to a Vertical Pole
+
+A guy wire makes an angle of \(30^\circ\) with level ground.
+
+Find the angle between the wire and a vertical pole.
+
+\[
+B=90^\circ-30^\circ
+\]
+
+Final answer:
+
+\[
+\boxed{B=60^\circ}
+\]
+
+Explain how the horizontal ground and vertical pole define the right angle.
+
+Mention that this does not establish the wire's tension or anchor safety.
+
+### Example 11 — Converting an Elevation Angle to Its Complement
+
+A surveying diagram records a line of sight at an elevation angle of \(24^\circ\) above the horizontal.
+
+Calculate its complementary angle relative to the vertical.
+
+\[
+B=90^\circ-24^\circ
+\]
+
+Final answer:
+
+\[
+\boxed{B=66^\circ}
+\]
+
+Explain the difference between an angle measured from horizontal and an angle measured from vertical.
+
+Clarify that the example assumes a straight line of sight and perpendicular horizontal and vertical references.
+
+### Example 12 — Finding a Roof Slope's Angle to a Vertical Reference
+
+A roof slope is measured at \(27^\circ\) relative to the horizontal.
+
+Find its complementary angle to the vertical.
+
+\[
+B=90^\circ-27^\circ
+\]
+
+Final answer:
+
+\[
+\boxed{B=63^\circ}
+\]
+
+Explain why the two measurements describe the same slope from different perpendicular reference directions.
+
+### Example 13 — A Diagonal in a Square or Drafting Layout
+
+A diagonal line in a square drafting layout makes an angle of \(45^\circ\) with one side.
+
+Find the angle it makes with the adjacent perpendicular side.
+
+\[
+B=90^\circ-45^\circ
+\]
+
+Final answer:
+
+\[
+\boxed{B=45^\circ}
+\]
+
+Explain why the diagonal bisects the square's right angle.
+
+Mention how the relationship helps with basic drawing and layout checks.
+
+### Example 14 — Finding a Machine Panel's Complementary Angle
+
+A panel is tilted \(15^\circ\) away from the horizontal.
+
+Calculate the angle between the panel's orientation and the vertical reference direction.
+
+\[
+B=90^\circ-15^\circ
+\]
+
+Final answer:
+
+\[
+\boxed{B=75^\circ}
+\]
+
+Explain the relationship between the two reference directions.
+
+Clarify that the result describes orientation rather than machine safety or performance.
+
+### Example 15 — Converting a Tree Observation Angle
+
+A person looks toward the top of a tree at an angle of elevation of \(38^\circ\) above the horizontal.
+
+Find the complementary angle between the line of sight and a vertical reference direction.
+
+\[
+B=90^\circ-38^\circ
+\]
+
+Final answer:
+
+\[
+\boxed{B=52^\circ}
+\]
+
+Explain that the calculation changes the reference direction, not the line of sight itself.
+
+Clarify that this does not calculate the tree's height.
+
+### Example 16 — Finding a Handrail's Angle to a Vertical Support
+
+A diagonal handrail makes an angle of \(55^\circ\) with a horizontal landing.
+
+Find its complementary angle relative to a vertical support line.
+
+\[
+B=90^\circ-55^\circ
+\]
+
+Final answer:
+
+\[
+\boxed{B=35^\circ}
+\]
+
+Explain how the complementary angle helps describe the same diagonal orientation from a different reference.
+
+Do not suggest that the angle alone verifies accessibility or construction requirements.
+
+After the examples, provide a comparison table containing:
+
+- Practical situation.
+- Known angle.
+- Reference direction of the known angle.
+- Missing angle.
+- Calculation.
+- Practical interpretation.
+
+Do not repeat the complete worked calculations in the table.
+
+### Important realism requirement
+
+Do not force every application to be a complicated construction scenario. Include a balanced range of educational geometry, drafting, simple mechanical layouts, and real-world orientation examples.
+
+Where a practical example uses an idealised right triangle, state that assumption clearly and naturally.
+
+---
+
+## 9. HOW THE KNOWN ANGLE AFFECTS THE MISSING ANGLE
+
+H2: Understanding the Relationship Between Complementary Angles
+
+Explain the pattern:
+
+- If angle \(A\) increases, angle \(B\) decreases by the same amount.
+- If angle \(A\) decreases, angle \(B\) increases by the same amount.
+- If angle \(A=45^\circ\), then angle \(B=45^\circ\).
+- The two acute angles always add up to \(90^\circ\).
+- Neither acute angle can equal \(0^\circ\) or \(90^\circ\) in a non-degenerate right triangle.
+
+Include this comparison table:
+
+| Known angle \(A\) | Formula | Missing angle \(B\) |
+|---:|---|---:|
+| \(10^\circ\) | \(90^\circ-10^\circ\) | \(80^\circ\) |
+| \(20^\circ\) | \(90^\circ-20^\circ\) | \(70^\circ\) |
+| \(30^\circ\) | \(90^\circ-30^\circ\) | \(60^\circ\) |
+| \(45^\circ\) | \(90^\circ-45^\circ\) | \(45^\circ\) |
+| \(60^\circ\) | \(90^\circ-60^\circ\) | \(30^\circ\) |
+| \(75^\circ\) | \(90^\circ-75^\circ\) | \(15^\circ\) |
+| \(80^\circ\) | \(90^\circ-80^\circ\) | \(10^\circ\) |
+
+Explain why the table is symmetrical around \(45^\circ\).
+
+Insert Diagram 3 here.
+
+### DIAGRAM 3 — How Complementary Angles Change
+
+Create a four-panel educational diagram showing these angle pairs:
+
+- \(A=20^\circ\), \(B=70^\circ\).
+- \(A=30^\circ\), \(B=60^\circ\).
+- \(A=45^\circ\), \(B=45^\circ\).
+- \(A=70^\circ\), \(B=20^\circ\).
+
+Each panel must show:
+
+- A correctly drawn right triangle.
+- The right-angle marker.
+- Angle \(A\).
+- Angle \(B\).
+- The equation \(A+B=90^\circ\).
+- A clear indication of which angle is known and which is calculated.
+
+Use the same vertex and angle-label conventions throughout.
+
+The diagram should visually demonstrate that one acute angle becomes larger as its complement becomes smaller.
+
+Provide filename, caption, alt text, exact placement, and SVG creation instructions.
+
+---
+
+## 10. FINDING ANGLE A WHEN ANGLE B IS KNOWN
+
+H2: What If You Know Angle B Instead?
+
+Explain that the same complementary-angle rule works in reverse.
+
+If angle \(B\) is known:
+
+\[
+A=90^\circ-B
+\]
+
+### Worked example
+
+Given:
+
+\[
+B=62^\circ
+\]
+
+Calculate:
+
+\[
+A=90^\circ-62^\circ
+\]
+
+Final answer:
+
+\[
+\boxed{A=28^\circ}
+\]
+
+Explain that no new formula is required.
+
+Be explicit that the existing calculator's input field accepts angle \(A\) and calculates angle \(B\). A reader who knows only angle \(B\) can use the reverse formula manually unless the interface supports entering \(B\) directly.
+
+Include three additional short reverse-direction examples:
+
+- \(B=15^\circ\), so \(A=75^\circ\).
+- \(B=42^\circ\), so \(A=48^\circ\).
+- \(B=70^\circ\), so \(A=20^\circ\).
+
+Do not imply that the tool supports an input mode that has not been verified.
+
+---
+
+## 11. COMPLEMENTARY ANGLES VERSUS OTHER ANGLE RELATIONSHIPS
+
+H2: Complementary Angles vs. Supplementary Angles
+
+Explain the distinction carefully.
+
+### Complementary angles
+
+Two angles are complementary when their sum is:
+
+\[
+90^\circ
+\]
+
+The two acute angles of a right triangle are complementary.
+
+### Supplementary angles
+
+Two angles are supplementary when their sum is:
+
+\[
+180^\circ
+\]
+
+Explain why supplementary angles should not be confused with the two acute angles of a right triangle.
+
+Include a simple comparison table:
+
+| Relationship | Total | Example |
+|---|---:|---|
+| Complementary | \(90^\circ\) | \(35^\circ+55^\circ\) |
+| Supplementary | \(180^\circ\) | \(110^\circ+70^\circ\) |
+| Right angle | \(90^\circ\) | The fixed angle in a right triangle |
+
+Explain that the full triangle angle sum is \(180^\circ\), but the two acute angles together sum to \(90^\circ\).
+
+Avoid adding unrelated geometry concepts that do not help readers understand the missing-angle calculation.
+
+---
+
+## 12. COMMON MISTAKES
+
+H2: Common Mistakes When Finding a Missing Angle
+
+Discuss at least these mistakes:
+
+1. Subtracting the known angle from \(180^\circ\) instead of \(90^\circ\).
+2. Forgetting that one angle is already \(90^\circ\).
+3. Entering \(90^\circ\) into the calculator.
+4. Entering an angle greater than \(90^\circ\).
+5. Entering \(0^\circ\).
+6. Confusing complementary angles with supplementary angles.
+7. Assuming the two acute angles must be equal.
+8. Mixing up angle labels \(A\) and \(B\).
+9. Thinking that side lengths are required for this particular calculation.
+10. Using inverse sine, cosine, or tangent when simple subtraction is sufficient.
+11. Assuming a measured physical angle automatically forms a right triangle without checking the reference directions.
+12. Rounding an input measurement unnecessarily before subtracting.
+
+For each mistake:
+
+- Explain what goes wrong.
+- Explain why it is incorrect.
+- Show how to correct it.
+- Provide a numerical example where useful.
+
+### Include a clear wrong-versus-correct example
+
+Given:
+
+\[
+A=35^\circ
+\]
+
+Incorrect:
+
+\[
+180^\circ-35^\circ=145^\circ
+\]
+
+Explain that this is not the missing acute angle because the right angle has not been accounted for.
+
+Correct:
+
+\[
+90^\circ-35^\circ=55^\circ
+\]
+
+Verify:
+
+\[
+35^\circ+55^\circ+90^\circ=180^\circ
+\]
+
+---
+
+## 13. INPUT VALIDATION AND ANSWER VERIFICATION
+
+H2: How to Check Whether Your Missing Angle Is Valid
+
+Explain the valid input range:
+
+\[
+0^\circ<A<90^\circ
+\]
+
+For the calculated angle:
+
+\[
+0^\circ<B<90^\circ
+\]
+
+Explain why an input of \(0^\circ\) or \(90^\circ\) would produce a degenerate limiting case rather than an ordinary right triangle with three distinct vertices and positive side lengths.
+
+Provide three verification methods.
+
+### Method 1 — Add the acute angles
+
+Verify:
+
+\[
+A+B=90^\circ
+\]
+
+Example:
+
+\[
+35^\circ+55^\circ=90^\circ
+\]
+
+### Method 2 — Check the complete triangle
+
+Verify:
+
+\[
+A+B+90^\circ=180^\circ
+\]
+
+Example:
+
+\[
+35^\circ+55^\circ+90^\circ=180^\circ
+\]
+
+### Method 3 — Check the reverse calculation
+
+If:
+
+\[
+B=90^\circ-A
+\]
+
+then:
+
+\[
+A=90^\circ-B
+\]
+
+Use the result to recover the original known angle.
+
+Explain that this is a simple consistency check and does not require side measurements.
+
+Mention that if the input angle comes from a physical measurement, its uncertainty may affect how precisely the result can be reported.
+
+---
+
+## 14. WHEN TO USE ANOTHER CALCULATOR
+
+H2: Choosing the Right Right Triangle Calculator
+
+Explain the differences between these tools:
+
+- **Right Triangle Missing Angle Calculator:** Finds the complementary angle when one acute angle is known.
+- **Right Triangle Angle Calculator:** Helps solve an angle when additional triangle information is available.
+- **Right Triangle Angle From Sine Calculator:** Finds an acute angle using the opposite side and hypotenuse.
+- **Right Triangle Angle From Cosine Calculator:** Finds an acute angle using the adjacent side and hypotenuse.
+- **Right Triangle Angle From Tangent Calculator:** Finds an acute angle using the opposite and adjacent sides.
+- **Right Triangle Side Calculator:** Helps find missing side lengths.
+
+Explain the best choice for each situation:
+
+- You know one acute angle: use the missing-angle calculator.
+- You know two suitable side lengths: use the corresponding inverse-trigonometric calculator.
+- You need an unknown side: use a side calculator.
+- You need the second angle after a trigonometric calculation: subtract the known angle from \(90^\circ\).
+
+Inspect the website and verify every internal destination URL before linking to it.
+
+Do not invent URLs or claim unsupported functionality.
+
+Keep this page focused on complementary angles.
+
+---
+
+## 15. FREQUENTLY ASKED QUESTIONS
+
+H2: Frequently Asked Questions
+
+Write 12 original FAQs with direct, useful answers.
+
+Include:
+
+1. How do you find a missing angle in a right triangle?
+2. Why do the two acute angles add up to 90 degrees?
+3. What is the formula for a missing angle?
+4. What are complementary angles?
+5. Can I find the missing angle without knowing the side lengths?
+6. What is the difference between complementary and supplementary angles?
+7. Can both acute angles be equal?
+8. What happens if the known angle is 35 degrees?
+9. What happens if the known angle is greater than 45 degrees?
+10. Can a missing acute angle be exactly 0 or 90 degrees?
+11. How do I find angle \(A\) when angle \(B\) is known?
+12. When should I use a sine, cosine, or tangent calculator instead?
+
+Write approximately 40–70 words per answer where appropriate.
+
+Keep each answer direct, mathematically accurate, and understandable on its own.
+
+Avoid copying entire paragraphs from the main article.
+
+Ensure the answers match the actual calculator interface and capabilities.
+
+---
+
+## 16. RELATED CALCULATORS AND INTERNAL LINKS
+
+H2: Explore Related Triangle Calculators
+
+Recommend relevant pages from the existing website.
+
+Potential links include:
+
+- Right Triangle Angle Calculator.
+- Right Triangle Angle From Sine Calculator.
+- Right Triangle Angle From Cosine Calculator.
+- Right Triangle Angle From Tangent Calculator.
+- Right Triangle Side Calculator.
+
+Inspect the website and verify every destination URL before including it.
+
+For each link, provide:
+
+- Verified URL.
+- Natural anchor text.
+- Recommended placement.
+- A brief explanation of why the link is useful.
+
+Use the missing-angle calculator as the simplest option for readers who already know one acute angle.
+
+Use the inverse-trigonometric calculators for readers who need to derive an angle from side measurements.
+
+Do not invent URLs, add irrelevant links, or duplicate large sections of related pages.
+
+---
+
+## 17. SEO OPTIMIZATION
+
+### Primary keyword
+
+Right Triangle Missing Angle Calculator
+
+### Secondary keywords
+
+- find missing angle in a right triangle
+- right triangle missing angle formula
+- complementary angle calculator
+- calculate the other angle of a right triangle
+- missing acute angle calculator
+- right angle triangle angle calculator
+- how to find the second angle of a right triangle
+- formula for complementary angles
+- angles in a right triangle
+- calculate angle B from angle A
+- right triangle angle sum
+- complementary angles in geometry
+
+Use these keywords naturally in headings and explanations where relevant.
+
+Do not stuff keywords into every paragraph.
+
+### Semantic concepts
+
+Cover relevant concepts such as:
+
+- Right triangle.
+- Right angle.
+- Acute angle.
+- Complementary angles.
+- Triangle angle-sum theorem.
+- Angle \(A\).
+- Angle \(B\).
+- Angle \(C\).
+- \(90^\circ\).
+- \(180^\circ\).
+- Horizontal reference.
+- Vertical reference.
+- Angle of elevation.
+- Roof inclination.
+- Ladder angle.
+- Staircase incline.
+- Drafting geometry.
+- Angle verification.
+
+Optimise for genuine search intent, completeness, clarity, and natural language.
+
+Do not invent keyword volumes, search rankings, traffic statistics, or guarantees of first-page rankings.
+
+### SEO metadata
+
+Provide:
+
+1. SEO title, approximately 50–60 characters where practical.
+2. Meta description, approximately 145–160 characters.
+3. Primary keyword.
+4. Relevant secondary keywords.
+5. Four descriptive image filenames.
+6. Four accessible image alt texts.
+7. Verified internal-link recommendations.
+8. Appropriate structured-data recommendations where justified.
+
+Keep the existing URL unless a change is explicitly requested.
+
+Do not fabricate reviews, ratings, author credentials, or unsupported claims.
+
+---
+
+## 18. FOUR CUSTOM EDUCATIONAL DIAGRAMS
+
+Create exactly four primary educational diagrams:
+
+1. The Three Angles of a Right Triangle.
+2. Why Two Acute Angles Add Up to 90 Degrees.
+3. How Complementary Angles Change.
+4. Practical Applications of Missing Angles.
+
+### DIAGRAM 4 — Practical Applications of Missing Angles
+
+Create a four-panel educational infographic showing complementary-angle relationships in practical settings.
+
+**Panel 1: Ladder and wall**
+
+- Angle between ladder and ground: \(68^\circ\).
+- Complementary angle between ladder and wall: \(22^\circ\).
+- Label the ground and wall as perpendicular.
+
+**Panel 2: Roof rafter**
+
+- Angle between roof slope and horizontal: \(35^\circ\).
+- Complementary angle to vertical: \(55^\circ\).
+- Show horizontal and vertical reference directions.
+
+**Panel 3: Diagonal brace**
+
+- Angle with horizontal beam: \(40^\circ\).
+- Complementary angle with vertical support: \(50^\circ\).
+- Clearly identify the right angle between the reference directions.
+
+**Panel 4: Drafting diagonal**
+
+- Angle with one side of a square: \(45^\circ\).
+- Angle with the perpendicular side: \(45^\circ\).
+- Show the diagonal bisecting the square's right angle.
+
+Each panel must include:
+
+- A simple, accurate diagram.
+- The known angle.
+- The missing angle.
+- The equation \(B=90^\circ-A\).
+- A short practical explanation.
+- Correctly placed right-angle markers.
+
+Do not make the diagram imply that unrelated angles are complementary. The two reference directions must actually be perpendicular.
+
+For all four diagrams, provide:
+
+- Exact placement within the article.
+- Descriptive title.
+- Correct mathematical labels.
+- Caption.
+- Accessible alt text under 125 characters.
+- Descriptive filename.
+- Detailed drawing instructions.
+- SVG code if supported, or a ready-to-use image-generation prompt.
+
+Use consistent labels, accessible contrast, readable typography, and responsive layouts.
+
+If SVG generation is available, provide clean, responsive SVG code.
+
+If only image-generation prompts can be provided, label them as prompts rather than claiming the images have already been generated.
+
+---
+
+## 19. TECHNICAL AND EDITORIAL REQUIREMENTS
+
+Preserve the existing calculator and its functionality.
+
+Do not:
+
+- Replace the calculator with a static illustration.
+- Add a duplicate calculator.
+- Change the formula.
+- Change existing technical identifiers.
+- Invent calculator modes or features.
+- Remove useful existing content without justification.
+- Add irrelevant internal links.
+- Use inverse trigonometry when simple subtraction is sufficient.
+- Confuse complementary angles with supplementary angles.
+- Present approximate real-world reference directions as perfectly perpendicular without stating the assumption.
+- Claim that diagrams have been generated when only prompts are supplied.
+
+Use accessible headings, readable mathematical formatting, responsive diagrams, and descriptive alt text.
+
+If HTML is requested for implementation, use semantic HTML and preserve the existing calculator's CSS classes and JavaScript identifiers.
+
+---
+
+## 20. FINAL OUTPUT FORMAT
+
+Deliver the complete work in this order.
+
+**A. SEO metadata**
+
+Provide the SEO title, meta description, keyword focus, and image metadata.
+
+**B. Complete publish-ready article**
+
+Include all headings, explanations, formulas, worked examples, comparison tables, FAQs, and conclusion.
+
+**C. Four diagram specifications**
+
+Provide exact placement, captions, filenames, alt text, drawing instructions, and SVG code or image-generation prompts.
+
+**D. Internal-link recommendations**
+
+Include only verified URLs and relevant anchor text.
+
+**E. Editorial quality-control report**
+
+Confirm mathematical accuracy, example calculations, diagram consistency, SEO completeness, and content completeness.
+
+Do not deliver only an outline.
+
+Do not replace worked examples with placeholders.
+
+Do not summarise the requested article instead of writing it.
+
+If the complete deliverable cannot fit in one response, deliver complete sections in clearly numbered batches until the entire article and all diagram specifications are finished.
+
+---
+
+## 21. FINAL QUALITY CHECK
+
+Before delivering the article, independently verify:
+
+1. The formula \(B=90^\circ-A\) is correct.
+2. The reverse formula \(A=90^\circ-B\) is correct.
+3. All 12 practical examples have accurate answers.
+4. Every example clearly identifies the known and missing angles.
+5. The right angle is correctly identified as \(90^\circ\).
+6. All four diagrams match the written explanations.
+7. Complementary and supplementary angles are not confused.
+8. The input range is correctly described as strictly between \(0^\circ\) and \(90^\circ\).
+9. The existing calculator's actual input and output behaviour is preserved.
+10. Internal links use verified URLs.
+11. The article reads naturally and avoids unnecessary repetition.
+12. Practical examples include appropriate assumptions and limitations.
+13. The page remains focused on finding the missing acute angle.
+14. SEO metadata is relevant and natural.
+15. The content helps readers understand the mathematical relationship rather than merely memorising a subtraction rule.
+
+The ultimate goal is to create a comprehensive, accurate, natural, and genuinely helpful educational resource explaining how to find a missing angle in a right triangle, while preserving the existing calculator as the main interactive feature.

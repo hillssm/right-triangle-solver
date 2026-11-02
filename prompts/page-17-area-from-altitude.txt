@@ -1,0 +1,2069 @@
+# MASTER PROMPT: Right Triangle Area From Altitude Calculator — Comprehensive Educational Guide, 6 Practical Examples, Four Diagrams, and SEO Optimization
+
+## 1. ROLE AND OBJECTIVE
+
+Act as a highly experienced mathematics educator, geometry specialist, educational content strategist, professional website content writer, and technical SEO expert.
+
+Your task is to research, improve, and substantially expand the educational content on this specific webpage:
+
+**Website:** Right Triangle Solver
+
+**Target URL:** https://www.righttrianglesolver.com/right-triangle-area-from-altitude-calculator/
+
+**Primary keyword:** Right Triangle Area From Altitude Calculator
+
+**Language:** English (US)
+
+**Recommended article length:** 3,000–4,000 words, excluding diagram specifications, SVG code, and SEO metadata.
+
+### Main objective
+
+Create an exceptionally useful, mathematically accurate, original, and natural-sounding educational guide explaining how to calculate the area of a right triangle using its hypotenuse and the perpendicular altitude drawn to that hypotenuse.
+
+The content must explain not only how the formula works but also why it works, when it should be used, how the altitude differs from the two legs, and how to check that the measurements describe a valid right triangle.
+
+The guide must thoroughly cover:
+
+- What the area of a right triangle represents.
+- What an altitude is in geometry.
+- What the hypotenuse is.
+- How the altitude to the hypotenuse is identified.
+- Why the altitude is different from either perpendicular leg.
+- Why the hypotenuse can serve as the base.
+- How to use the formula Area = (c × h) / 2.
+- Why every triangle's area is half its base multiplied by its corresponding perpendicular height.
+- How the altitude divides a right triangle into two smaller right triangles.
+- Why these smaller triangles are similar to the original triangle.
+- How the altitude relates to the two legs.
+- How the geometric mean theorem applies to the altitude.
+- How to calculate the altitude when both legs and the hypotenuse are known.
+- How to verify the area using the two-leg formula.
+- How to understand the maximum possible altitude for a given hypotenuse.
+- How to identify impossible measurements.
+- How to interpret square units.
+- How to apply the formula to practical geometry, construction drawings, land measurements, triangular panels, sails, roofing, and engineering sketches.
+- How to avoid common mathematical mistakes.
+- When to use this calculator instead of another right-triangle area calculator.
+
+**Important:** This page focuses exclusively on finding area from hypotenuse \(c\) and perpendicular altitude \(h\).
+
+Do not transform it into a generic triangle calculator or duplicate the educational content already developed for the main Right Triangle Area Calculator.
+
+Preserve the existing calculator and all its functionality.
+
+---
+
+## 2. INSPECT THE EXISTING WEBPAGE FIRST
+
+Before writing the content, carefully inspect the live page.
+
+Review:
+
+1. Existing H1 and introduction.
+2. Hypotenuse \(c\) input.
+3. Altitude \(h\) input.
+4. Measurement-unit selectors.
+5. Calculate Area button.
+6. Reset button.
+7. Area output.
+8. Step-by-step solution display.
+9. Live Visualization section.
+10. Existing area-from-altitude diagram.
+11. Current worked examples.
+12. Explanation of the altitude.
+13. Common mistakes.
+14. FAQs.
+15. Related calculators.
+16. Internal links.
+17. Current heading structure.
+18. Existing SEO metadata, if accessible.
+
+The calculator uses the formula:
+
+\[
+\boxed{K=\frac{ch}{2}}
+\]
+
+Where:
+
+- \(K\) = area of the right triangle.
+- \(c\) = hypotenuse length.
+- \(h\) = perpendicular altitude from the right-angle vertex to the hypotenuse.
+
+The result is expressed in square units.
+
+### Consistent triangle notation
+
+Use:
+
+- \(A\): one acute angle.
+- \(B\): the other acute angle.
+- \(C\): the right angle, measuring \(90^\circ\).
+- \(a\): leg opposite angle \(A\).
+- \(b\): leg opposite angle \(B\).
+- \(c\): hypotenuse opposite angle \(C\).
+- \(h\): altitude from vertex \(C\) to hypotenuse \(c\).
+- \(D\): point where the altitude meets the hypotenuse.
+- \(p\): segment \(AD\) of the hypotenuse.
+- \(q\): segment \(DB\) of the hypotenuse.
+- \(K\): triangle area.
+
+Use this convention consistently in the text, formulas, worked examples, and all four diagrams.
+
+### Important mathematical requirements
+
+The main formula is:
+
+\[
+K=\frac{ch}{2}
+\]
+
+The alternative legs formula is:
+
+\[
+K=\frac{ab}{2}
+\]
+
+The altitude relationship is:
+
+\[
+\boxed{h=\frac{ab}{c}}
+\]
+
+Therefore:
+
+\[
+\frac{ch}{2}=\frac{ab}{2}
+\]
+
+The hypotenuse satisfies:
+
+\[
+a^2+b^2=c^2
+\]
+
+If altitude \(h\) splits the hypotenuse into segments \(p\) and \(q\):
+
+\[
+p+q=c
+\]
+
+The geometric mean theorem gives:
+
+\[
+\boxed{h^2=pq}
+\]
+
+For the specified vertex and segment labels:
+
+\[
+\boxed{a^2=cq}
+\]
+
+\[
+\boxed{b^2=cp}
+\]
+
+### Critical geometric feasibility rule
+
+For a valid, non-degenerate right triangle:
+
+\[
+\boxed{0<h\leq\frac{c}{2}}
+\]
+
+Explain this condition carefully.
+
+The altitude must be positive, and it cannot be greater than half the hypotenuse.
+
+The maximum occurs when the two legs are equal, creating a 45-45-90 right triangle.
+
+This is an important educational detail that must not be omitted.
+
+Do not claim that the current calculator automatically rejects every impossible altitude unless its actual input validation has been tested.
+
+---
+
+## 3. STRICT HUMAN WRITING REQUIREMENTS
+
+The final article must read as though it was carefully written by an experienced human mathematics teacher who understands what students commonly find confusing.
+
+### Writing style
+
+Follow these rules:
+
+1. Write naturally and professionally.
+2. Start explanations with the mathematical problem the reader is trying to solve.
+3. Explain the reasoning behind formulas.
+4. Use practical examples to clarify concepts.
+5. Keep paragraphs focused and readable.
+6. Vary sentence lengths and paragraph structures.
+7. Explain unfamiliar terminology in simple language.
+8. Use conversational but academically accurate explanations.
+9. Build concepts gradually from basic to advanced.
+10. Avoid repeating the same formula description in every paragraph.
+11. Do not add unnecessary filler to reach the word count.
+12. Give each section a distinct educational purpose.
+13. Include meaningful numerical examples throughout.
+14. Explain what each answer means in its real-world context.
+15. State assumptions when simplifying a physical object into a mathematical triangle.
+16. Do not claim personal experience, professional qualifications, or experiments that never occurred.
+17. Avoid excessive lists when a natural paragraph would explain something better.
+18. Use accurate measurement terminology.
+19. Explain calculations in enough detail for beginners to reproduce them.
+20. Ensure the article is valuable even to readers who do not use the calculator.
+
+### Avoid generic AI expressions
+
+Do not use phrases such as:
+
+- In today's fast-paced world
+- Let's dive into
+- Let's delve into
+- Unlock the power of
+- In the fascinating world of mathematics
+- Whether you're a beginner or a professional
+- Look no further
+- Seamlessly calculate
+- Revolutionize your calculations
+- In conclusion, it is important to note
+- This comprehensive guide will empower you
+
+Do not artificially make writing imperfect to appear human.
+
+Human-quality content should come from clear reasoning, useful details, mathematical precision, realistic examples, and a natural flow.
+
+### Content originality
+
+Do not copy competitor paragraphs or reuse large sections from the website's other calculator pages.
+
+Write original explanations specifically for the altitude-to-hypotenuse method.
+
+Avoid unnecessary keyword repetition and near-identical paragraphs.
+
+---
+
+## 4. REQUIRED ARTICLE STRUCTURE
+
+Retain the existing H1:
+
+# Right Triangle Area From Altitude Calculator
+
+Do not add another H1.
+
+Place expanded educational content below the existing calculator while keeping its functionality intact.
+
+### SECTION 1 — INTRODUCTION
+
+H2: How to Calculate Right Triangle Area From Altitude
+
+Write approximately 130–170 words.
+
+Explain:
+
+- What the calculator does.
+- Why knowing the hypotenuse and altitude is sufficient.
+- What the altitude represents.
+- Why the hypotenuse can be used as the base.
+- Why the calculator does not require both legs.
+- How the formula works.
+- What the resulting area represents.
+
+Begin with a specific numerical example.
+
+Suppose the hypotenuse is 10 m and the altitude to that hypotenuse is 4.8 m.
+
+\[
+K=\frac{10\times4.8}{2}
+\]
+
+\[
+\boxed{K=24\text{ m}^2}
+\]
+
+Explain that the triangle encloses an area of 24 square metres.
+
+Clarify that the altitude must be perpendicular to the hypotenuse.
+
+Keep this introduction concise, useful, and directly connected to the calculator.
+
+---
+
+## 5. UNDERSTANDING THE GEOMETRY
+
+H2: Understanding the Hypotenuse and Altitude of a Right Triangle
+
+### H3: What Is a Right Triangle?
+
+Explain:
+
+- A right triangle contains one 90-degree angle.
+- The two legs meet at the right angle.
+- The hypotenuse lies opposite the right angle.
+- The hypotenuse is the longest side.
+- The two remaining angles are acute.
+- The angles together add up to 180 degrees.
+
+Show:
+
+\[
+A+B=90^\circ
+\]
+
+Explain why these geometric properties matter.
+
+### H3: What Is the Hypotenuse?
+
+Explain that the hypotenuse is the side opposite the right angle.
+
+It is labelled \(c\) in the calculator.
+
+Explain how to identify it even when the triangle is rotated.
+
+Clarify that the hypotenuse is used as the base in the altitude-based area formula.
+
+### H3: What Is the Altitude?
+
+Define an altitude as a perpendicular segment from a triangle's vertex to the opposite side or the line containing that side.
+
+For this calculator, altitude \(h\) is drawn from the right-angle vertex \(C\) to the hypotenuse \(AB\).
+
+It meets the hypotenuse at point \(D\).
+
+Therefore:
+
+\[
+CD\perp AB
+\]
+
+Explain that the altitude is a perpendicular distance, not simply any diagonal or vertical line drawn inside a triangle.
+
+### H3: Is the Altitude the Same as a Leg?
+
+Explain why the answer is no for the altitude drawn to the hypotenuse.
+
+The legs \(a\) and \(b\) meet at the original right angle.
+
+The altitude \(h\) is a separate segment drawn from that vertex to the opposite side.
+
+Use a 6-8-10 triangle:
+
+\[
+a=6,\qquad b=8,\qquad c=10
+\]
+
+The altitude is:
+
+\[
+h=\frac{6\times8}{10}=4.8
+\]
+
+Explain that neither leg is 4.8, even though the triangle's altitude to the hypotenuse is 4.8.
+
+### H3: Why the Altitude Falls Inside the Triangle
+
+Explain that, for a non-degenerate right triangle, the perpendicular from the right-angle vertex meets the hypotenuse between its endpoints.
+
+It divides the original right triangle into two smaller right triangles.
+
+Explain why these triangles are similar to the original triangle without giving an unnecessarily complicated proof at this stage.
+
+Insert Diagram 1 here.
+
+### DIAGRAM 1 — Right Triangle With Hypotenuse and Perpendicular Altitude
+
+Create a mathematically accurate educational diagram showing:
+
+- Triangle \(ABC\).
+- Right angle at \(C\).
+- Hypotenuse \(AB=c\).
+- Leg \(BC=a\).
+- Leg \(AC=b\).
+- Altitude \(CD=h\).
+- Point \(D\) on hypotenuse \(AB\).
+- A clear right-angle marker at \(C\).
+- A separate right-angle marker at \(D\).
+- Angle \(A\).
+- Angle \(B\).
+- The formula \(K=ch/2\).
+
+Use:
+
+- Hypotenuse in one strong colour.
+- Altitude in a contrasting colour.
+- Both legs in a neutral colour.
+- Light shading inside the triangle.
+
+Clearly show that altitude \(h\) is perpendicular to \(c\), not parallel to a leg.
+
+Provide:
+
+- Exact placement.
+- Diagram title.
+- Caption.
+- Descriptive filename.
+- Accessible alt text under 125 characters.
+- SVG drawing instructions.
+
+---
+
+## 6. EXPLAINING THE AREA FORMULA
+
+H2: Right Triangle Area From Altitude Formula
+
+Introduce:
+
+\[
+\boxed{K=\frac{ch}{2}}
+\]
+
+Explain every variable:
+
+- \(K\): area.
+- \(c\): hypotenuse, serving as the base.
+- \(h\): perpendicular altitude to the hypotenuse.
+
+### H3: Why Do We Multiply the Hypotenuse by the Altitude?
+
+Explain the general triangle area formula:
+
+\[
+K=\frac{\text{base}\times\text{height}}{2}
+\]
+
+The base and corresponding height must be perpendicular.
+
+When the hypotenuse serves as the base:
+
+\[
+\text{base}=c
+\]
+
+and:
+
+\[
+\text{height}=h
+\]
+
+Therefore:
+
+\[
+K=\frac{ch}{2}
+\]
+
+Explain why this works even when the triangle is rotated or the hypotenuse appears slanted in a diagram.
+
+### H3: Why Is the Result Divided by Two?
+
+Explain that the area of a triangle is half the area of a corresponding parallelogram with the same base and perpendicular height.
+
+Use a simple visual explanation.
+
+If:
+
+\[
+c=10,\qquad h=4.8
+\]
+
+then:
+
+\[
+c\times h=48
+\]
+
+Half of that gives:
+
+\[
+K=24
+\]
+
+Explain why 48 would be incorrect as the area of the triangle.
+
+### H3: Does This Formula Work for Every Triangle?
+
+Explain that the general base-height formula works for all triangles when the chosen height is perpendicular to the corresponding base.
+
+The special feature of this page is that the triangle is right-angled and the chosen base is its hypotenuse.
+
+Explain that additional geometric constraints apply to the altitude in a right triangle.
+
+### H3: Why the Formula Does Not Need the Two Legs
+
+Explain that the area can be found directly from one side and its corresponding perpendicular height.
+
+The two legs are not necessary when \(c\) and \(h\) are already known.
+
+Clarify that the right-triangle area can also be calculated using the legs, but that is a different input method.
+
+---
+
+## 7. STEP-BY-STEP WORKED FORMULA EXAMPLE
+
+H2: Step-by-Step Example of Calculating Area From Altitude
+
+Use the following example:
+
+- Hypotenuse \(c=10\text{ m}\).
+- Perpendicular altitude \(h=4.8\text{ m}\).
+
+Step 1: Identify the given measurements.
+
+Explain that 10 m is the hypotenuse and 4.8 m is the perpendicular distance to that hypotenuse.
+
+Step 2: Write the formula.
+
+\[
+K=\frac{ch}{2}
+\]
+
+Step 3: Substitute the measurements.
+
+\[
+K=\frac{10\times4.8}{2}
+\]
+
+Step 4: Multiply.
+
+\[
+K=\frac{48}{2}
+\]
+
+Step 5: Divide by two.
+
+\[
+\boxed{K=24\text{ m}^2}
+\]
+
+Step 6: Interpret the answer.
+
+Explain that the triangle encloses 24 square metres of flat area.
+
+Step 7: Check the feasibility.
+
+\[
+h\leq\frac{c}{2}
+\]
+
+\[
+4.8\leq5
+\]
+
+Explain why the measurements can describe a valid right triangle.
+
+Step 8: Verify using the legs.
+
+A 6-8-10 right triangle has:
+
+\[
+K=\frac{6\times8}{2}=24
+\]
+
+Explain why this agrees with the altitude-based method.
+
+---
+
+## 8. HOW TO USE THE EXISTING CALCULATOR
+
+H2: How to Use the Right Triangle Area From Altitude Calculator
+
+Provide a beginner-friendly walkthrough matching the actual webpage interface.
+
+Step 1: Identify the right triangle.
+
+Step 2: Locate its hypotenuse \(c\).
+
+Step 3: Identify the perpendicular altitude \(h\) from the right-angle vertex to the hypotenuse.
+
+Step 4: Measure or obtain both values.
+
+Step 5: Enter the hypotenuse into the Hypotenuse c field.
+
+Step 6: Enter the perpendicular altitude into the Altitude h field.
+
+Step 7: Select compatible length units using the available unit selectors.
+
+Step 8: Confirm that both values are positive.
+
+Step 9: Check that \(h\) is no greater than half the hypotenuse.
+
+Step 10: Click Calculate Area.
+
+Step 11: Review the area result.
+
+Step 12: Read the displayed solution steps.
+
+Step 13: Inspect the live visualization to understand the geometry.
+
+Step 14: Use Reset when beginning a new calculation.
+
+Explain why each step matters.
+
+Clarify that the calculator does not require the two legs or an angle as direct inputs.
+
+Do not invent downloadable reports, saved histories, automatic construction designs, or additional calculator modes.
+
+---
+
+## 9. FOUR FOUNDATIONAL MATHEMATICAL EXAMPLES
+
+H2: Worked Examples of Right Triangle Area From Hypotenuse and Altitude
+
+Before the real-world applications, provide four detailed mathematical examples.
+
+### Example 1 — A 3-4-5 Right Triangle
+
+Given:
+
+\[
+a=3,\qquad b=4,\qquad c=5
+\]
+
+Calculate the altitude:
+
+\[
+h=\frac{ab}{c}
+\]
+
+\[
+h=\frac{3\times4}{5}=2.4
+\]
+
+Calculate the area:
+
+\[
+K=\frac{5\times2.4}{2}
+\]
+
+\[
+\boxed{K=6\text{ square units}}
+\]
+
+Verify:
+
+\[
+K=\frac{3\times4}{2}=6
+\]
+
+Explain why both formulas produce the same result.
+
+### Example 2 — A 5-12-13 Right Triangle
+
+Given:
+
+\[
+a=5,\qquad b=12,\qquad c=13
+\]
+
+Calculate:
+
+\[
+h=\frac{5\times12}{13}
+\]
+
+\[
+h=\frac{60}{13}\approx4.61538
+\]
+
+Then:
+
+\[
+K=\frac{13\times(60/13)}{2}
+\]
+
+\[
+\boxed{K=30\text{ square units}}
+\]
+
+Explain why retaining the exact fractional altitude avoids early-rounding errors.
+
+### Example 3 — A 6-8-10 Right Triangle
+
+Given:
+
+\[
+c=10,\qquad h=4.8
+\]
+
+Calculate:
+
+\[
+K=\frac{10\times4.8}{2}
+\]
+
+\[
+\boxed{K=24\text{ square units}}
+\]
+
+Verify using the legs:
+
+\[
+K=\frac{6\times8}{2}=24
+\]
+
+### Example 4 — An Isosceles Right Triangle
+
+Given:
+
+\[
+c=10,\qquad h=5
+\]
+
+Calculate:
+
+\[
+K=\frac{10\times5}{2}
+\]
+
+\[
+\boxed{K=25\text{ square units}}
+\]
+
+Explain why this is the maximum possible area of a right triangle with hypotenuse 10 units.
+
+Discuss the equal-leg case and the two acute angles of \(45^\circ\).
+
+---
+
+## 10. TWELVE PRACTICAL REAL-WORLD EXAMPLES
+
+H2: Real-Life Applications of Right Triangle Area From Altitude
+
+This must be one of the most useful sections of the article.
+
+Write at least 12 fully worked practical examples.
+
+For every example:
+
+1. Describe the real-world situation naturally.
+2. Explain what forms the right triangle.
+3. Identify the hypotenuse.
+4. Identify the perpendicular altitude.
+5. State the known measurements.
+6. Write the formula.
+7. Substitute the measurements.
+8. Show the arithmetic.
+9. Give the result in correct square units.
+10. Explain the result in plain English.
+11. Check the measurements when appropriate.
+12. State realistic limitations or assumptions.
+
+Use these examples and verify the arithmetic independently.
+
+### Practical Example 1 — Triangular Garden Section
+
+A right-triangular garden section has a longest boundary measuring 10 m. The perpendicular distance from the right-angle corner to that boundary is 4.8 m.
+
+Known:
+
+\[
+c=10\text{ m},\qquad h=4.8\text{ m}
+\]
+
+Calculate:
+
+\[
+K=\frac{10\times4.8}{2}
+\]
+
+\[
+\boxed{K=24\text{ m}^2}
+\]
+
+Explain that the garden section occupies 24 square metres.
+
+Clarify that the formula assumes the garden boundary can be modelled accurately as a flat right triangle.
+
+### Practical Example 2 — Triangular Plywood Panel
+
+A right-triangular plywood panel has a hypotenuse of 1 m and a perpendicular altitude of 0.48 m.
+
+Calculate:
+
+\[
+K=\frac{1\times0.48}{2}
+\]
+
+\[
+\boxed{K=0.24\text{ m}^2}
+\]
+
+Explain how this helps estimate the flat surface area of the panel.
+
+Clarify that cutting waste and material allowances are not included.
+
+### Practical Example 3 — Right-Triangular Glass Window
+
+A right-triangular glass panel has a hypotenuse of 1.3 m and an altitude of 0.6 m perpendicular to that side.
+
+Calculate:
+
+\[
+K=\frac{1.3\times0.6}{2}
+\]
+
+\[
+\boxed{K=0.39\text{ m}^2}
+\]
+
+Explain that this is the geometric glass area before considering frame coverage or installation allowances.
+
+### Practical Example 4 — Surveying a Triangular Section
+
+A survey drawing contains a right triangle with hypotenuse 13 m and altitude \(60/13\) m.
+
+Calculate:
+
+\[
+K=\frac{13\times(60/13)}{2}
+\]
+
+\[
+\boxed{K=30\text{ m}^2}
+\]
+
+Explain why this represents a 30-square-metre section.
+
+Mention that actual surveying may require more precise boundary measurements and instrument corrections.
+
+### Practical Example 5 — Measuring a Triangular Tile
+
+A right-triangular tile has a hypotenuse of 25 cm and a perpendicular altitude of 6.72 cm.
+
+Calculate:
+
+\[
+K=\frac{25\times6.72}{2}
+\]
+
+\[
+\boxed{K=84\text{ cm}^2}
+\]
+
+Explain how the result can help estimate the surface area of one tile.
+
+Mention that grout gaps and cutting losses are separate considerations.
+
+### Practical Example 6 — Steel Support Panel
+
+A flat right-triangular support panel has a hypotenuse of 1.7 m. It corresponds to legs of 0.8 m and 1.5 m, so its altitude is:
+
+\[
+h=\frac{0.8\times1.5}{1.7}=\frac{12}{17}\text{ m}
+\]
+
+Calculate:
+
+\[
+K=\frac{1.7\times(12/17)}{2}
+\]
+
+\[
+\boxed{K=0.6\text{ m}^2}
+\]
+
+Explain that this is the geometric panel area, not its load-bearing capacity.
+
+### Practical Example 7 — Triangular Ramp Side Panel
+
+A simplified ramp side panel forms a right triangle with a hypotenuse of 5 m and a perpendicular altitude of 2.4 m to that hypotenuse.
+
+Calculate:
+
+\[
+K=\frac{5\times2.4}{2}
+\]
+
+\[
+\boxed{K=6\text{ m}^2}
+\]
+
+Explain that the result gives the flat area of the triangular side section.
+
+Clarify that this is not the area of the sloping ramp surface, and the calculation does not establish accessibility compliance.
+
+### Practical Example 8 — Roof Gable Section
+
+A right-triangular roof gable section has a hypotenuse of 6.5 m and a perpendicular altitude of \(30/13\) m.
+
+Calculate:
+
+\[
+K=\frac{6.5\times(30/13)}{2}
+\]
+
+\[
+\boxed{K=7.5\text{ m}^2}
+\]
+
+Explain how the area represents the triangular plane or cross-section described by the measurements.
+
+Clarify that the total roof area is a separate three-dimensional measurement problem.
+
+### Practical Example 9 — Right-Triangular Land Plot
+
+A right-triangular land section has a hypotenuse of 50 m and a perpendicular altitude of 24 m.
+
+Calculate:
+
+\[
+K=\frac{50\times24}{2}
+\]
+
+\[
+\boxed{K=600\text{ m}^2}
+\]
+
+Explain what the result means for the area enclosed by the measured boundaries.
+
+Mention that real plot areas may require survey verification.
+
+### Practical Example 10 — Large Triangular Survey Plot
+
+A surveyed right-triangular section has a hypotenuse of 100 m and a perpendicular altitude of 48 m.
+
+Calculate:
+
+\[
+K=\frac{100\times48}{2}
+\]
+
+\[
+\boxed{K=2400\text{ m}^2}
+\]
+
+Explain how the result represents the planar area of the triangular section.
+
+Do not claim it represents the entire property unless the property consists solely of that triangle.
+
+### Practical Example 11 — Triangular Sail Section
+
+A flat right-triangular sail design has a hypotenuse of 15 ft and a perpendicular altitude of 7.2 ft.
+
+Calculate:
+
+\[
+K=\frac{15\times7.2}{2}
+\]
+
+\[
+\boxed{K=54\text{ ft}^2}
+\]
+
+Explain how this gives the planar area of the idealised triangular sail.
+
+Mention that curved fabric, seams, and edge allowances require separate consideration.
+
+### Practical Example 12 — Small Mechanical Bracket
+
+A flat right-triangular bracket has a hypotenuse of 250 mm and a perpendicular altitude of 120 mm.
+
+Calculate:
+
+\[
+K=\frac{250\times120}{2}
+\]
+
+\[
+\boxed{K=15000\text{ mm}^2}
+\]
+
+Explain why the result is in square millimetres.
+
+Show that this equals:
+
+\[
+\boxed{150\text{ cm}^2}
+\]
+
+Explain the unit conversion without confusing millimetres with square millimetres.
+
+### After the practical examples
+
+Provide a comparison table with:
+
+- Practical situation.
+- Hypotenuse \(c\).
+- Altitude \(h\).
+- Formula.
+- Calculated area.
+- Practical interpretation.
+
+Do not repeat all the full calculations in the table.
+
+Ensure the examples use realistic scenarios and varied measurements rather than sounding like twelve identical template paragraphs.
+
+Insert Diagram 3 here.
+
+---
+
+## 11. WHY THE ALTITUDE FORMULA EQUALS THE LEGS FORMULA
+
+H2: Why Both Right Triangle Area Formulas Give the Same Answer
+
+Explain that a right triangle can be measured using either:
+
+- Its two perpendicular legs.
+- Its hypotenuse and the altitude perpendicular to the hypotenuse.
+
+The legs formula is:
+
+\[
+K=\frac{ab}{2}
+\]
+
+The altitude formula is:
+
+\[
+K=\frac{ch}{2}
+\]
+
+Since both calculate the same triangle's area:
+
+\[
+\frac{ab}{2}=\frac{ch}{2}
+\]
+
+Multiply both sides by two:
+
+\[
+ab=ch
+\]
+
+Solve for \(h\):
+
+\[
+\boxed{h=\frac{ab}{c}}
+\]
+
+Explain this derivation carefully.
+
+### Numerical verification
+
+For:
+
+\[
+a=6,\qquad b=8,\qquad c=10
+\]
+
+Calculate altitude:
+
+\[
+h=\frac{6\times8}{10}=4.8
+\]
+
+Using legs:
+
+\[
+K=\frac{6\times8}{2}=24
+\]
+
+Using altitude:
+
+\[
+K=\frac{10\times4.8}{2}=24
+\]
+
+Explain why both formulas agree exactly.
+
+### What if only the hypotenuse and altitude are known?
+
+Explain that the area is already determined.
+
+There is no need to reconstruct the original two legs to find the area.
+
+However, the two leg lengths may be recovered through additional geometry when the measurements are valid.
+
+Keep that discussion separate from the basic calculator instructions.
+
+---
+
+## 12. UNDERSTANDING THE GEOMETRIC MEAN THEOREM
+
+H2: How the Altitude Divides a Right Triangle
+
+Explain that altitude \(h\) divides the hypotenuse into two smaller segments.
+
+Use:
+
+\[
+AD=p
+\]
+
+\[
+DB=q
+\]
+
+Therefore:
+
+\[
+p+q=c
+\]
+
+### H3: Two Smaller Similar Right Triangles
+
+Explain how the altitude divides the original triangle into two smaller right triangles.
+
+Discuss how the three triangles share corresponding acute-angle measures and are therefore similar.
+
+Explain that similarity leads to relationships between the segment lengths and altitude.
+
+### H3: The Altitude Geometric Mean Theorem
+
+Introduce:
+
+\[
+\boxed{h^2=pq}
+\]
+
+Therefore:
+
+\[
+\boxed{h=\sqrt{pq}}
+\]
+
+Explain why the altitude is called the geometric mean of the two hypotenuse segments.
+
+### Worked example
+
+Suppose:
+
+\[
+p=6.4,\qquad q=3.6
+\]
+
+Then:
+
+\[
+c=p+q=10
+\]
+
+Calculate:
+
+\[
+h=\sqrt{6.4\times3.6}
+\]
+
+\[
+h=\sqrt{23.04}
+\]
+
+\[
+\boxed{h=4.8}
+\]
+
+The triangle's area is:
+
+\[
+K=\frac{10\times4.8}{2}
+\]
+
+\[
+\boxed{K=24\text{ square units}}
+\]
+
+Explain how the segment theorem verifies the altitude.
+
+### H3: Relationship Between the Segments and Legs
+
+Explain:
+
+\[
+b^2=cp
+\]
+
+\[
+a^2=cq
+\]
+
+Using:
+
+\[
+c=10,\quad p=6.4,\quad q=3.6
+\]
+
+calculate:
+
+\[
+b=\sqrt{10\times6.4}=8
+\]
+
+\[
+a=\sqrt{10\times3.6}=6
+\]
+
+Explain that the original 6-8-10 triangle can be recovered.
+
+Keep the section understandable for beginners while offering enough depth for advanced students.
+
+---
+
+## 13. MAXIMUM POSSIBLE ALTITUDE AND VALID INPUTS
+
+H2: How Large Can the Altitude of a Right Triangle Be?
+
+Explain the important geometric restriction:
+
+\[
+\boxed{0<h\leq\frac{c}{2}}
+\]
+
+### H3: Why the Altitude Cannot Exceed Half the Hypotenuse
+
+Using:
+
+\[
+h^2=pq
+\]
+
+and:
+
+\[
+p+q=c
+\]
+
+explain that the product \(pq\) is greatest when \(p=q=c/2\).
+
+Therefore:
+
+\[
+h^2\leq\frac{c^2}{4}
+\]
+
+For positive lengths:
+
+\[
+h\leq\frac{c}{2}
+\]
+
+Explain this geometric restriction in plain English.
+
+### H3: Maximum Area for a Fixed Hypotenuse
+
+Start with:
+
+\[
+K=\frac{ch}{2}
+\]
+
+Since:
+
+\[
+h\leq\frac{c}{2}
+\]
+
+the maximum area is:
+
+\[
+\boxed{K_{\max}=\frac{c^2}{4}}
+\]
+
+Explain that this maximum occurs for an isosceles right triangle.
+
+### Worked example
+
+Given:
+
+\[
+c=10
+\]
+
+The maximum possible altitude is:
+
+\[
+h_{\max}=5
+\]
+
+The maximum area is:
+
+\[
+K_{\max}=\frac{10\times5}{2}=25
+\]
+
+Explain why an altitude of 6 is impossible for a right triangle whose hypotenuse is 10.
+
+### H3: What Happens If the Altitude Is Too Large?
+
+Use this invalid example:
+
+\[
+c=10,\qquad h=6
+\]
+
+Show:
+
+\[
+6>5
+\]
+
+Explain that these measurements cannot describe a valid right triangle with the stated hypotenuse.
+
+The arithmetic expression \(10\times6/2=30\) can represent a triangle's area in a more general geometric setting, but it does not make the measurements valid for the specific right-triangle model.
+
+Do not assume or claim that the live calculator rejects this input unless its validation has been verified.
+
+### H3: Can the Altitude Equal Half the Hypotenuse?
+
+Yes.
+
+Explain that equality corresponds to an isosceles right triangle with two equal legs.
+
+This is a valid, non-degenerate right triangle.
+
+---
+
+## 14. FOUR ORIGINAL EDUCATIONAL DIAGRAMS
+
+Create exactly four primary diagrams.
+
+### DIAGRAM 1 — Anatomy of the Right Triangle and Altitude
+
+Placement: After the basic geometry section.
+
+Show:
+
+- Hypotenuse \(c\).
+- Legs \(a\) and \(b\).
+- Right-angle vertex \(C\).
+- Altitude \(h\).
+- Perpendicular foot \(D\).
+- Two right-angle markers.
+- Formula \(K=ch/2\).
+
+Purpose: Teach readers to recognise the correct altitude.
+
+### DIAGRAM 2 — Why Area Equals Half the Hypotenuse Times Altitude
+
+Placement: Immediately after the formula explanation.
+
+Create a visual area demonstration.
+
+Use:
+
+\[
+c=10,\qquad h=4.8
+\]
+
+Show:
+
+- The hypotenuse as the chosen base.
+- The corresponding perpendicular altitude.
+- A doubled congruent-triangle or parallelogram interpretation where helpful.
+- The multiplication \(10\times4.8=48\).
+- The final division \(48/2=24\).
+- The result \(24\text{ square units}\).
+
+Purpose: Explain why the formula includes division by two.
+
+Do not use an incorrectly positioned height.
+
+### DIAGRAM 3 — Four Real-World Altitude Area Examples
+
+Placement: After the practical examples section.
+
+Create a four-panel infographic.
+
+Panel 1 — Garden:
+
+- \(c=10\text{ m}\).
+- \(h=4.8\text{ m}\).
+- \(K=24\text{ m}^2\).
+
+Panel 2 — Glass panel:
+
+- \(c=1.3\text{ m}\).
+- \(h=0.6\text{ m}\).
+- \(K=0.39\text{ m}^2\).
+
+Panel 3 — Land plot:
+
+- \(c=50\text{ m}\).
+- \(h=24\text{ m}\).
+- \(K=600\text{ m}^2\).
+
+Panel 4 — Mechanical bracket:
+
+- \(c=250\text{ mm}\).
+- \(h=120\text{ mm}\).
+- \(K=15000\text{ mm}^2\).
+
+Each panel must show the triangle, perpendicular altitude, hypotenuse, formula, and calculated area.
+
+Purpose: Demonstrate how the formula applies to different scales and measurement units.
+
+### DIAGRAM 4 — Geometric Mean Theorem and Maximum Altitude
+
+Placement: After the geometric mean and maximum-altitude sections.
+
+Create a two-part educational diagram.
+
+**Part A: Altitude dividing the hypotenuse**
+
+Show a 6-8-10 triangle with:
+
+- \(c=10\).
+- \(p=6.4\).
+- \(q=3.6\).
+- \(h=4.8\).
+- \(h^2=pq\).
+
+Show clearly that the perpendicular altitude divides the hypotenuse into two segments.
+
+**Part B: Maximum altitude for a fixed hypotenuse**
+
+Show an isosceles right triangle with:
+
+- \(c=10\).
+- \(h=5\).
+- Two 45-degree acute angles.
+- Maximum area \(25\) square units.
+
+Explain why the maximum altitude occurs when the triangle's legs are equal.
+
+### Universal diagram requirements
+
+For every diagram provide:
+
+- Exact placement.
+- Descriptive heading.
+- Caption.
+- Descriptive filename.
+- Accessible alt text under 125 characters.
+- Drawing instructions.
+- Mathematical validation notes.
+- Responsive dimensions.
+- SVG code if supported, or a ready-to-use image-generation prompt.
+
+Use original diagrams only.
+
+Avoid copied illustrations or stock-looking decoration.
+
+Use accurate geometry, clear angle markers, readable labels, and accessible colours.
+
+Where diagrams represent numerical measurements, keep the geometry to scale whenever practical. Otherwise label the drawing as schematic.
+
+---
+
+## 15. HOW TO FIND ALTITUDE FROM OTHER MEASUREMENTS
+
+H2: How to Calculate the Altitude When It Is Unknown
+
+Explain that the current area calculator requires \(h\) as an input.
+
+If \(h\) is unknown, it must be calculated or measured first.
+
+### Method 1 — Using Both Legs and Hypotenuse
+
+Use:
+
+\[
+\boxed{h=\frac{ab}{c}}
+\]
+
+Worked example:
+
+\[
+a=6,\qquad b=8,\qquad c=10
+\]
+
+\[
+h=\frac{6\times8}{10}=4.8
+\]
+
+### Method 2 — Using Hypotenuse Segments
+
+Use:
+
+\[
+\boxed{h=\sqrt{pq}}
+\]
+
+Worked example:
+
+\[
+p=6.4,\qquad q=3.6
+\]
+
+\[
+h=\sqrt{23.04}=4.8
+\]
+
+### Method 3 — Using Known Area and Hypotenuse
+
+Rearrange:
+
+\[
+K=\frac{ch}{2}
+\]
+
+to:
+
+\[
+\boxed{h=\frac{2K}{c}}
+\]
+
+Worked example:
+
+\[
+K=24,\qquad c=10
+\]
+
+\[
+h=\frac{2\times24}{10}=4.8
+\]
+
+Clarify that these are mathematical rearrangements or related calculations.
+
+Do not claim that the existing area-from-altitude calculator directly finds missing altitude unless that feature is verified.
+
+---
+
+## 16. MEASUREMENT UNITS AND AREA CONVERSIONS
+
+H2: Understanding Square Units in Right Triangle Area Calculations
+
+Explain that area is two-dimensional.
+
+When two lengths are multiplied, their units are multiplied as well.
+
+For example:
+
+\[
+\text{m}\times\text{m}=\text{m}^2
+\]
+
+### H3: Square Metres
+
+Use a right triangle with:
+
+\[
+c=10\text{ m},\qquad h=4.8\text{ m}
+\]
+
+Show:
+
+\[
+K=24\text{ m}^2
+\]
+
+### H3: Square Centimetres
+
+Use:
+
+\[
+c=25\text{ cm},\qquad h=6.72\text{ cm}
+\]
+
+Show:
+
+\[
+K=84\text{ cm}^2
+\]
+
+### H3: Square Millimetres
+
+Use:
+
+\[
+c=250\text{ mm},\qquad h=120\text{ mm}
+\]
+
+Show:
+
+\[
+K=15000\text{ mm}^2
+\]
+
+### H3: Converting Area Units
+
+Explain that:
+
+\[
+1\text{ m}^2=10000\text{ cm}^2
+\]
+
+and:
+
+\[
+1\text{ cm}^2=100\text{ mm}^2
+\]
+
+Explain why converting linear units and converting square units are different operations.
+
+### H3: What If the Inputs Use Different Units?
+
+Use an example with hypotenuse in metres and altitude in centimetres.
+
+Explain that the measurements must be converted into compatible units before applying the formula.
+
+Follow the actual unit-selection behaviour of the live calculator.
+
+Do not assume that it automatically converts every unit combination unless verified.
+
+---
+
+## 17. COMMON MISTAKES WHEN CALCULATING AREA FROM ALTITUDE
+
+H2: Common Mistakes When Using the Altitude Area Formula
+
+Discuss at least these mistakes:
+
+1. Using one leg instead of altitude \(h\).
+2. Confusing altitude with hypotenuse.
+3. Drawing altitude from the wrong vertex.
+4. Measuring the altitude at a non-perpendicular angle.
+5. Using a height that corresponds to a different base.
+6. Forgetting to divide by two.
+7. Multiplying two lengths with incompatible units.
+8. Reporting the answer in metres instead of square metres.
+9. Entering zero or negative lengths.
+10. Entering an altitude greater than half the hypotenuse.
+11. Assuming every positive \(c,h\) combination forms a right triangle.
+12. Confusing the altitude with the triangle's vertical leg.
+13. Rounding the altitude too early.
+14. Assuming the hypotenuse must be horizontal.
+15. Confusing the altitude theorem with the Pythagorean theorem.
+16. Using an altitude measured from a different triangle.
+17. Assuming that knowing the area determines every side length.
+18. Treating a geometric area as the exact amount of material to purchase.
+
+For each mistake:
+
+- Explain the mistake.
+- Show why it happens.
+- Provide a clear correction.
+- Give a numerical example where useful.
+
+### Wrong-versus-correct example
+
+Given:
+
+\[
+c=10,\qquad h=4.8
+\]
+
+Incorrect:
+
+\[
+K=10\times4.8=48
+\]
+
+Explain that this omits the necessary division by two.
+
+Correct:
+
+\[
+K=\frac{10\times4.8}{2}
+\]
+
+\[
+\boxed{K=24}
+\]
+
+Use another example to illustrate why substituting a leg for the altitude gives the wrong result.
+
+---
+
+## 18. MATHEMATICAL VALIDATION AND ANSWER VERIFICATION
+
+H2: How to Check Whether Your Area Calculation Is Correct
+
+Provide at least five checks.
+
+### Check 1 — Verify Positive Inputs
+
+For a valid right triangle:
+
+\[
+c>0,\qquad h>0
+\]
+
+### Check 2 — Verify the Altitude Limit
+
+Use:
+
+\[
+h\leq\frac{c}{2}
+\]
+
+Explain why the inequality matters.
+
+### Check 3 — Confirm the Right Angle
+
+Make sure the altitude is perpendicular to the hypotenuse.
+
+### Check 4 — Verify Square Units
+
+If \(c\) and \(h\) are measured in metres, area is in square metres.
+
+### Check 5 — Cross-check With the Legs Formula
+
+For a 6-8-10 triangle:
+
+\[
+K=\frac{6\times8}{2}=24
+\]
+
+and:
+
+\[
+K=\frac{10\times4.8}{2}=24
+\]
+
+Explain why these agree.
+
+### Check 6 — Check the Geometric Mean Relationship
+
+If the hypotenuse segments are known, verify:
+
+\[
+h^2=pq
+\]
+
+Use:
+
+\[
+4.8^2=6.4\times3.6
+\]
+
+\[
+23.04=23.04
+\]
+
+### Check 7 — Compare Against Maximum Possible Area
+
+For a fixed hypotenuse:
+
+\[
+K\leq\frac{c^2}{4}
+\]
+
+Use:
+
+\[
+c=10
+\]
+
+Maximum possible area:
+
+\[
+K_{\max}=25
+\]
+
+Explain why any claimed right-triangle area greater than 25 square units is impossible for that hypotenuse length.
+
+Clarify that the calculator's actual validation behaviour must not be misrepresented.
+
+---
+
+## 19. COMPARISON WITH OTHER AREA METHODS
+
+H2: Area From Altitude vs. Area From Two Legs
+
+Explain both formulas:
+
+\[
+K=\frac{ab}{2}
+\]
+
+and:
+
+\[
+K=\frac{ch}{2}
+\]
+
+Describe when each is appropriate.
+
+Use a comparison table:
+
+| Method | Required measurements | Main advantage |
+|---|---|---|
+| Area from legs | \(a,b\) | Simplest when the two legs are known |
+| Area from altitude | \(c,h\) | Direct when the hypotenuse and perpendicular altitude are known |
+| Area from angle | Appropriate sides and included angle | Useful when an acute angle is known |
+| Area from inradius | \(r,s\) | Useful in incircle and semiperimeter problems |
+
+Explain that the same right triangle's area does not change when another valid method is used.
+
+Avoid turning this section into a duplicate of the main Right Triangle Area Calculator page.
+
+---
+
+## 20. FREQUENTLY ASKED QUESTIONS
+
+H2: Frequently Asked Questions
+
+Write 12 original FAQs with natural, useful, mathematically accurate answers.
+
+Include:
+
+1. What is the formula for the area of a right triangle using altitude?
+2. What does altitude \(h\) mean in a right triangle?
+3. Is the altitude the same as one of the legs?
+4. Why can the hypotenuse be used as the base?
+5. Why do we divide the hypotenuse-altitude product by two?
+6. How do you find altitude if both legs are known?
+7. What is the geometric mean theorem for right-triangle altitude?
+8. Can the altitude be longer than half the hypotenuse?
+9. How do you calculate area when only the hypotenuse and altitude are known?
+10. Why does the altitude-based formula give the same result as the legs formula?
+11. What units should the area result use?
+12. Can the altitude-based formula be used for other triangles?
+
+Write approximately 40–75 words per answer where useful.
+
+Make each answer understandable on its own.
+
+Avoid copying complete paragraphs from the article.
+
+Do not invent calculator features or unsupported mathematical claims.
+
+---
+
+## 21. INTERNAL LINKING STRATEGY
+
+H2: Explore Related Right Triangle Calculators
+
+Inspect the website and recommend relevant internal links.
+
+Potential destinations include:
+
+- Right Triangle Area Calculator.
+- Right Triangle Area From Legs Calculator.
+- Right Triangle Altitude Calculator.
+- Right Triangle Area From Semiperimeter Calculator.
+- Right Triangle Side Calculator.
+- Right Triangle Angle Calculator.
+- Right Triangle Pythagorean Theorem Calculator, if available.
+
+Verify all URLs before including them.
+
+For every recommended link provide:
+
+- Verified destination URL.
+- Natural anchor text.
+- Suggested location in the article.
+- Reason the link is relevant.
+
+Use the altitude calculator as the main tool for readers who know \(c\) and \(h\).
+
+Use the area-from-legs calculator when both perpendicular legs are known.
+
+Use the altitude calculator when altitude is unknown and needs to be found first.
+
+Do not invent URLs or add irrelevant links merely to increase link count.
+
+---
+
+## 22. SEO OPTIMIZATION REQUIREMENTS
+
+### Primary keyword
+
+Right Triangle Area From Altitude Calculator
+
+### Secondary keywords
+
+- right triangle area from altitude
+- area of right triangle using altitude
+- hypotenuse and altitude area calculator
+- area from hypotenuse and height
+- right triangle area formula
+- right triangle altitude formula
+- perpendicular altitude to hypotenuse
+- area equals half base times height
+- find triangle area from hypotenuse
+- area of right angle triangle
+- geometric mean theorem
+- altitude to hypotenuse theorem
+- triangle area from height
+- calculate right triangle area
+- right triangle altitude and area
+- area from hypotenuse length
+- right triangle geometric mean
+
+Use these phrases naturally.
+
+Do not force the exact primary keyword into every H2 or H3.
+
+### Semantic concepts
+
+Include relevant educational concepts:
+
+- Right triangle.
+- Hypotenuse.
+- Perpendicular altitude.
+- Right-angle vertex.
+- Base-height formula.
+- Legs.
+- Triangle similarity.
+- Geometric mean theorem.
+- Hypotenuse segments.
+- Pythagorean theorem.
+- Isosceles right triangle.
+- Maximum triangle area.
+- Square units.
+- Area verification.
+- Geometry measurements.
+- Triangular panels.
+- Roof cross-sections.
+- Surveying.
+- Construction sketches.
+
+### Search intent
+
+The article must satisfy readers who want to:
+
+- Calculate area immediately.
+- Understand the formula.
+- Identify the correct altitude.
+- Learn the derivation.
+- Solve homework problems.
+- Check whether measurements are valid.
+- Use the calculation in practical settings.
+- Compare different area formulas.
+
+Do not dilute the page by turning it into a broad guide to unrelated triangle geometry.
+
+### SEO metadata
+
+Provide:
+
+1. SEO title, approximately 50–60 characters where practical.
+2. Meta description, approximately 145–160 characters.
+3. Primary keyword.
+4. Secondary keywords.
+5. Four descriptive image filenames.
+6. Four accessible alt texts.
+7. Verified internal-link recommendations.
+8. Appropriate structured-data recommendations.
+
+Use only factually supported structured data.
+
+Do not fabricate reviews, ratings, traffic figures, credentials, keyword volumes, or search-engine ranking guarantees.
+
+Use WebApplication or other relevant schema only when it accurately describes the page. If FAQ markup is considered, ensure it matches visible content and do not promise FAQ rich-result eligibility.
+
+---
+
+## 23. TECHNICAL AND EDITORIAL REQUIREMENTS
+
+Preserve the existing calculator's:
+
+- Input fields.
+- Measurement-unit selectors.
+- Calculate Area button.
+- Reset functionality.
+- Result display.
+- Solution steps.
+- Live triangle visualization.
+- Existing technical identifiers and functionality.
+
+Do not:
+
+- Replace the calculator with a static image.
+- Add a duplicate calculator.
+- Change the main formula.
+- Remove useful existing educational content without justification.
+- Invent calculator modes.
+- Confuse the altitude with either leg.
+- Confuse area with perimeter.
+- Use incompatible measurement units.
+- Report area in linear units.
+- Claim any positive altitude is valid for a fixed hypotenuse.
+- Confuse the geometric mean theorem with an unrelated formula.
+- Present real-world geometry as a complete engineering safety assessment.
+- Copy large portions of other calculator pages.
+- Make unsupported claims about ranking or calculator accuracy.
+
+If HTML or SVG code is requested, preserve the website's existing CSS classes, JavaScript identifiers, and responsive behaviour.
+
+Keep the article accessible and readable on desktop and mobile devices.
+
+---
+
+## 24. FINAL OUTPUT FORMAT
+
+Deliver the complete work in this order.
+
+### A. SEO metadata
+
+Provide the SEO title, meta description, primary keyword, secondary keywords, and diagram metadata.
+
+### B. Complete publish-ready article
+
+Include:
+
+- Introduction.
+- Right-triangle fundamentals.
+- Hypotenuse and altitude explanations.
+- Formula and derivation.
+- Calculator instructions.
+- Four foundational worked examples.
+- Twelve practical worked examples.
+- Relationship between the altitude and legs formulas.
+- Similar triangles and geometric mean theorem.
+- Maximum altitude and area conditions.
+- Unit conversions.
+- Common mistakes.
+- Validation methods.
+- FAQs.
+- Relevant internal links.
+- Concise conclusion.
+
+### C. Four educational diagrams
+
+For every diagram provide:
+
+- Exact placement.
+- Title.
+- Caption.
+- Filename.
+- Alt text.
+- Drawing instructions.
+- SVG code or image-generation prompt.
+
+### D. Internal-link recommendations
+
+Use verified URLs only.
+
+### E. Editorial quality-control report
+
+Confirm mathematical accuracy, examples, diagrams, SEO requirements, and calculator preservation.
+
+Do not deliver only an outline.
+
+Do not replace worked examples with placeholders.
+
+Do not shorten the article into a summary.
+
+If the full deliverable cannot fit into one response, provide complete sections in numbered batches until all requested content and diagram specifications are finished.
+
+---
+
+## 25. FINAL QUALITY-CONTROL CHECKLIST
+
+Before delivering the finished article, verify:
+
+1. The primary formula is \(K=ch/2\).
+2. The altitude is perpendicular to the hypotenuse.
+3. The altitude begins at the right-angle vertex.
+4. The legs are not incorrectly labelled as the altitude.
+5. The relationship \(h=ab/c\) is correct.
+6. The geometric mean relationship \(h^2=pq\) is correct.
+7. The hypotenuse segments satisfy \(p+q=c\).
+8. The valid altitude condition \(0<h\leq c/2\) is explained.
+9. The maximum area for a fixed hypotenuse is \(c^2/4\).
+10. The 3-4-5 triangle produces an area of 6 square units.
+11. The 6-8-10 triangle produces an area of 24 square units.
+12. All 12 practical examples have accurate numerical results.
+13. All measurements use compatible units.
+14. Every area answer uses square units.
+15. All four diagrams are mathematically consistent.
+16. The content distinguishes the general triangle area formula from the special properties of right triangles.
+17. The existing calculator functionality remains unchanged.
+18. Internal links use verified URLs.
+19. The writing sounds natural and avoids unnecessary repetition.
+20. The article does not contain unsupported claims.
+21. Each major formula is explained rather than merely presented.
+22. The content directly answers the search intent of finding right-triangle area from hypotenuse and perpendicular altitude.
+
+**Ultimate goal:** Create a comprehensive, mathematically accurate, original, natural, and genuinely helpful educational guide showing how to calculate the area of a right triangle from its hypotenuse and perpendicular altitude. The final result should teach readers why the formula works, how to use it correctly, how to recognise impossible measurements, and how to apply the method to realistic geometry problems, while keeping the existing calculator as the primary interactive feature.

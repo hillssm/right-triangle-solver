@@ -1,0 +1,2028 @@
+# MASTER PROMPT: Right Triangle Area Calculator — In-Depth Educational Content, 12 Practical Examples, Four Diagrams, and SEO Optimization
+
+## 1. ROLE AND OBJECTIVE
+
+Act as an experienced mathematics educator, geometry specialist, educational content writer, technical SEO strategist, and professional website content editor.
+
+Your task is to thoroughly research, improve, and expand the educational content on the following webpage.
+
+**Website:** Right Triangle Solver
+
+**Target URL:** https://www.righttrianglesolver.com/right-triangle-area-calculator/
+
+**Primary keyword:** Right Triangle Area Calculator
+
+**Language:** English (US)
+
+**Recommended article length:** 4,000–5,000 words, excluding image specifications, SVG code, and SEO metadata.
+
+### Main objective
+
+Create a comprehensive, original, mathematically accurate, natural-sounding educational resource explaining how to calculate the area of a right triangle using five different methods.
+
+The content must help readers understand both the mathematics and the practical meaning of the results.
+
+Cover these five methods:
+
+1. Area using the two perpendicular legs.
+2. Area using side \(b\), hypotenuse \(c\), and angle \(A\).
+3. Area using side \(a\), hypotenuse \(c\), and angle \(B\).
+4. Area using the inradius and semiperimeter.
+5. Area using the hypotenuse and perpendicular altitude.
+
+Explain when each method is useful, which measurements it requires, why its formula works, and how its result can be checked using another method.
+
+The intended audience includes school and university students, teachers, construction learners, surveyors, engineering students, DIY enthusiasts, and people who need to calculate triangular areas for practical projects.
+
+**Critical requirement:** Preserve the existing calculator, all five calculation modes, their input fields, unit selectors, Calculate and Reset buttons, result displays, solution steps, and live visualizations. Do not replace the calculator with a static image or create a duplicate calculator.
+
+---
+
+## 2. INSPECT THE EXISTING PAGE BEFORE WRITING
+
+Inspect the complete live page before drafting the article.
+
+Review:
+
+- The current H1 and introduction.
+- All five calculator modes.
+- Input fields and unit selectors.
+- Formula displays.
+- Result areas.
+- Step-by-step solutions.
+- Existing triangle visualizations.
+- Existing educational explanations.
+- How-to instructions.
+- Common mistakes.
+- FAQs.
+- Related calculators.
+- Internal links and heading hierarchy.
+
+Retain useful existing content where appropriate, but improve explanations that are too brief, repetitive, unclear, or mathematically incomplete.
+
+Do not assume that the page needs to be rebuilt from scratch.
+
+### Consistent triangle notation
+
+Use the following notation throughout the article.
+
+- \(A\): one acute angle.
+- \(B\): the other acute angle.
+- \(C\): the right angle, equal to \(90^\circ\).
+- \(a\): the side opposite angle \(A\).
+- \(b\): the side opposite angle \(B\).
+- \(c\): the hypotenuse, opposite angle \(C\).
+- \(h\): the perpendicular altitude drawn from vertex \(C\) to hypotenuse \(c\).
+- \(r\): the inradius, or radius of the circle inscribed in the triangle.
+- \(s\): the semiperimeter, equal to half the perimeter.
+- \(K\): the area of the triangle, used as a mathematical symbol in explanatory sections where helpful.
+
+The angle relationship is:
+
+\[
+A+B+C=180^\circ
+\]
+
+Since \(C=90^\circ\):
+
+\[
+\boxed{A+B=90^\circ}
+\]
+
+The Pythagorean theorem is:
+
+\[
+\boxed{a^2+b^2=c^2}
+\]
+
+The hypotenuse \(c\) is always longer than either leg in a valid, non-degenerate right triangle.
+
+Both legs \(a\) and \(b\) meet at the right angle and are perpendicular.
+
+### Essential instruction about side labels
+
+Keep the same convention throughout all diagrams and examples:
+
+- Side \(a\) is opposite angle \(A\).
+- Side \(b\) is opposite angle \(B\).
+- Side \(c\) is the hypotenuse.
+- Angle \(C\) is the right angle.
+- Altitude \(h\) is perpendicular to the hypotenuse \(c\).
+
+This convention is especially important for the two angle-based formulas.
+
+The angle \(A\) is between sides \(b\) and \(c\).
+
+The angle \(B\) is between sides \(a\) and \(c\).
+
+Therefore, never accidentally pair angle \(A\) with side \(a\) in the included-angle area formula, or angle \(B\) with side \(b\).
+
+---
+
+## 3. THE FIVE AREA FORMULAS
+
+Explain the five methods accurately and consistently.
+
+### Method 1: Area from the two legs
+
+\[
+\boxed{K=\frac{ab}{2}}
+\]
+
+Required inputs:
+
+- Leg \(a\).
+- Leg \(b\).
+
+Both legs form the right angle, so one can serve as the base and the other as the perpendicular height.
+
+### Method 2: Area from side \(b\), hypotenuse \(c\), and angle \(A\)
+
+\[
+\boxed{K=\frac{bc\sin(A)}{2}}
+\]
+
+Required inputs:
+
+- Leg \(b\).
+- Hypotenuse \(c\).
+- Acute angle \(A\).
+
+Explain that \(b\) and \(c\) are the two sides enclosing angle \(A\).
+
+### Method 3: Area from side \(a\), hypotenuse \(c\), and angle \(B\)
+
+\[
+\boxed{K=\frac{ac\sin(B)}{2}}
+\]
+
+Required inputs:
+
+- Leg \(a\).
+- Hypotenuse \(c\).
+- Acute angle \(B\).
+
+Explain that \(a\) and \(c\) are the two sides enclosing angle \(B\).
+
+### Method 4: Area from inradius and semiperimeter
+
+\[
+\boxed{K=rs}
+\]
+
+Required inputs:
+
+- Inradius \(r\).
+- Semiperimeter \(s\).
+
+Define:
+
+\[
+\boxed{s=\frac{a+b+c}{2}}
+\]
+
+For a right triangle, the inradius can be calculated from the three sides:
+
+\[
+\boxed{r=\frac{a+b-c}{2}}
+\]
+
+Explain that \(r\) is the radius of the circle inside the triangle that touches all three sides. It is not the circumradius.
+
+### Method 5: Area from hypotenuse and altitude
+
+\[
+\boxed{K=\frac{ch}{2}}
+\]
+
+Required inputs:
+
+- Hypotenuse \(c\).
+- Perpendicular altitude \(h\) from the right-angle vertex to the hypotenuse.
+
+Explain that the altitude must be perpendicular to the hypotenuse, not one of the triangle's legs.
+
+### Critical unit requirements
+
+If all side lengths are expressed in metres, the area is in square metres.
+
+If all side lengths are expressed in centimetres, the area is in square centimetres.
+
+When using \(K=rs\), both \(r\) and \(s\) are lengths, so their product has square units.
+
+The result must always be expressed in square units, not linear units.
+
+When different measurement units are used, convert them to compatible units before multiplying.
+
+Do not invent calculator functionality or claim that a particular mode accepts inputs that are not actually supported.
+
+---
+
+## 4. HUMAN WRITING REQUIREMENTS
+
+Write like a knowledgeable mathematics teacher who explains concepts clearly and naturally.
+
+The article must feel educational rather than machine-generated or artificially expanded for SEO.
+
+Follow these rules:
+
+1. Use clear, natural, professional English.
+2. Explain why a formula works before or after showing its application.
+3. Introduce basic geometry before advanced formulas.
+4. Use natural transitions between sections.
+5. Vary sentence length and paragraph structure.
+6. Keep paragraphs focused and easy to follow.
+7. Explain mathematical terminology when it first appears.
+8. Include meaningful numerical examples.
+9. Explain the significance of the final answer.
+10. Avoid repeating identical definitions across multiple sections.
+11. Avoid filler paragraphs that exist only to increase word count.
+12. Do not invent personal experiences, credentials, testimonials, or research.
+13. Avoid excessive bullet points and unnecessary callout boxes.
+14. Do not force the same formula into every practical example.
+15. Explain when a method is useful and when another method is simpler.
+16. Distinguish area from perimeter and side length.
+17. Explain assumptions in real-world geometry problems.
+18. Keep mathematical notation accurate and consistent.
+19. Avoid exaggerated claims about the calculator.
+20. Make the article useful to someone who has never studied triangle-area formulas before.
+
+Avoid generic AI phrases such as:
+
+- In today's fast-paced world
+- Let's delve into
+- Unlock the power of
+- In the realm of mathematics
+- Whether you're a beginner or an expert
+- Look no further
+- Seamlessly calculate
+- Revolutionise your calculations
+
+Do not deliberately introduce awkward language to appear human. Natural writing should come from clear reasoning, varied explanations, realistic examples, and mathematical accuracy.
+
+---
+
+## 5. REQUIRED ARTICLE STRUCTURE
+
+Retain the existing H1 if it is already appropriate.
+
+Recommended H1:
+
+# Right Triangle Area Calculator
+
+Do not introduce a second H1.
+
+Place the expanded educational content around the existing calculator without removing its functionality.
+
+### SECTION 1 — INTRODUCTION
+
+H2: What Is a Right Triangle Area Calculator?
+
+Write approximately 130–170 words.
+
+Explain:
+
+- What the area of a right triangle represents.
+- Why the area is measured in square units.
+- How the perpendicular legs simplify the calculation.
+- Why there are several methods for finding the same area.
+- How the available calculator modes match different sets of known measurements.
+- Why the best method depends on the values already available.
+
+Begin with a simple example.
+
+A right triangle has legs:
+
+\[
+a=3\text{ m},\qquad b=4\text{ m}
+\]
+
+Its area is:
+
+\[
+K=\frac{3\times4}{2}=6\text{ m}^2
+\]
+
+Explain that the triangle occupies six square metres of area.
+
+Mention that a different set of measurements, such as the inradius and semiperimeter, can produce the same answer.
+
+Do not explain all five methods in detail in the introduction. Introduce the purpose of the calculator and prepare readers for the sections that follow.
+
+---
+
+## 6. UNDERSTANDING THE AREA OF A RIGHT TRIANGLE
+
+H2: What Is the Area of a Right Triangle?
+
+### H3: What Is a Right Triangle?
+
+Explain:
+
+- A right triangle has one angle of exactly \(90^\circ\).
+- Its two legs meet at the right angle.
+- The hypotenuse lies opposite the right angle.
+- The hypotenuse is the longest side.
+- The other two angles are acute.
+- The two acute angles add up to \(90^\circ\).
+
+Use simple language and a clearly labelled triangle.
+
+### H3: What Does Area Mean?
+
+Explain that area measures the two-dimensional space enclosed by the triangle's three sides.
+
+Distinguish area from:
+
+- Perimeter, which measures the total boundary length.
+- Side length, which measures one dimension.
+- Volume, which measures three-dimensional space.
+
+Give a simple example using a triangular piece of paper or a triangular garden section.
+
+### H3: Why Is the Area Divided by Two?
+
+Explain the geometric reasoning behind the legs formula.
+
+Two identical right triangles can be combined along their hypotenuses to form a rectangle.
+
+If each triangle has perpendicular legs \(a\) and \(b\), the rectangle has area:
+
+\[
+ab
+\]
+
+One triangle occupies exactly half the rectangle:
+
+\[
+K=\frac{ab}{2}
+\]
+
+Explain why dividing by two is necessary.
+
+### H3: Why Can the Same Triangle Have Five Area Formulas?
+
+Explain that the triangle's area does not change when a different measurement method is used.
+
+The methods simply start with different known values.
+
+- Two legs give the simplest formula.
+- A leg, hypotenuse, and included acute angle allow a sine-based formula.
+- Inradius and semiperimeter provide an alternative geometric relationship.
+- Hypotenuse and perpendicular altitude use the general base-height rule.
+
+Explain that all five methods must produce the same area when the inputs describe the same valid triangle.
+
+Insert Diagram 1 here.
+
+### DIAGRAM 1 — Anatomy of a Right Triangle
+
+Create an original, mathematically accurate educational diagram.
+
+Show:
+
+- A right triangle with vertices \(A\), \(B\), and \(C\).
+- Right angle \(C=90^\circ\).
+- Side \(a\) opposite angle \(A\).
+- Side \(b\) opposite angle \(B\).
+- Hypotenuse \(c\) opposite angle \(C\).
+- Acute angles \(A\) and \(B\).
+- A perpendicular altitude \(h\) from vertex \(C\) to hypotenuse \(c\).
+- A small right-angle marker where altitude \(h\) meets \(c\).
+- The formula \(K=ab/2\).
+
+Use distinct, accessible colours to distinguish the two legs, the hypotenuse, and the altitude.
+
+Do not place the altitude along a leg. It must meet the hypotenuse at \(90^\circ\).
+
+Provide:
+
+- Exact placement.
+- Diagram title.
+- Caption.
+- Descriptive filename.
+- Accessible alt text under 125 characters.
+- Detailed SVG drawing instructions.
+
+All subsequent diagrams must use the same side-label convention.
+
+---
+
+## 7. METHOD ONE — AREA FROM TWO LEGS
+
+H2: Area of a Right Triangle Using Its Two Legs
+
+Introduce:
+
+\[
+\boxed{K=\frac{ab}{2}}
+\]
+
+### H3: When Should You Use the Legs Formula?
+
+Explain that this is usually the simplest method when both perpendicular sides are known.
+
+No angle, hypotenuse, inradius, or altitude calculation is required.
+
+### H3: How the Formula Works
+
+Explain that the two legs form the base and perpendicular height.
+
+Show:
+
+\[
+K=\frac{\text{base}\times\text{height}}{2}
+\]
+
+Since the legs are perpendicular:
+
+\[
+K=\frac{ab}{2}
+\]
+
+### H3: Fully Worked Example — A 3-4-5 Triangle
+
+Given:
+
+\[
+a=3\text{ m},\qquad b=4\text{ m}
+\]
+
+Step 1: Write the formula.
+
+\[
+K=\frac{ab}{2}
+\]
+
+Step 2: Substitute the values.
+
+\[
+K=\frac{3\times4}{2}
+\]
+
+Step 3: Multiply.
+
+\[
+K=\frac{12}{2}
+\]
+
+Step 4: Divide by two.
+
+\[
+\boxed{K=6\text{ m}^2}
+\]
+
+Explain that the answer is six square metres, not six metres.
+
+### H3: Can You Swap the Two Legs?
+
+Explain that:
+
+\[
+ab=ba
+\]
+
+Therefore:
+
+\[
+\frac{ab}{2}=\frac{ba}{2}
+\]
+
+The area remains the same if the two legs are entered in the opposite order, provided the calculator fields correspond to those leg lengths.
+
+### H3: What If the Legs Have Decimal Values?
+
+Use:
+
+\[
+a=3.5\text{ cm},\qquad b=9.2\text{ cm}
+\]
+
+Calculate:
+
+\[
+K=\frac{3.5\times9.2}{2}
+\]
+
+\[
+K=\frac{32.2}{2}
+\]
+
+\[
+\boxed{K=16.1\text{ cm}^2}
+\]
+
+Explain why decimal measurements work in the same formula.
+
+### H3: What If One Leg Is Unknown?
+
+Briefly explain that a missing leg may sometimes be found using the Pythagorean theorem or a known angle before calculating the area.
+
+Do not imply that the existing legs mode automatically finds missing side lengths unless the interface supports that feature.
+
+---
+
+## 8. METHOD TWO — AREA USING ANGLE A
+
+H2: Find Right Triangle Area Using Side b, Hypotenuse c, and Angle A
+
+Introduce:
+
+\[
+\boxed{K=\frac{bc\sin(A)}{2}}
+\]
+
+Explain that this method is useful when side \(b\), hypotenuse \(c\), and acute angle \(A\) are known.
+
+### H3: Why Does This Formula Use Sine?
+
+Explain that the general area formula for two sides and their included angle is:
+
+\[
+K=\frac12 xy\sin(\theta)
+\]
+
+In this mode, the two sides enclosing angle \(A\) are \(b\) and \(c\).
+
+Therefore:
+
+\[
+K=\frac12 bc\sin(A)
+\]
+
+Explain that sine accounts for the perpendicular component of one side.
+
+### H3: Fully Worked Example — A 3-4-5 Triangle
+
+Given:
+
+\[
+b=4\text{ m},\qquad c=5\text{ m}
+\]
+
+\[
+A\approx36.87^\circ
+\]
+
+Since:
+
+\[
+\sin(36.87^\circ)\approx0.6
+\]
+
+Substitute:
+
+\[
+K=\frac{4\times5\times0.6}{2}
+\]
+
+\[
+K=\frac{12}{2}
+\]
+
+\[
+\boxed{K=6\text{ m}^2}
+\]
+
+Explain why this agrees with the legs formula.
+
+### H3: What Happens If the Angle Changes?
+
+Explain that the sine factor changes the area when the two side lengths and included angle are varied within a valid triangle.
+
+Do not suggest that an angle can be changed independently while every side length remains fixed.
+
+Explain that the included angle is essential to this formula.
+
+### H3: Common Errors in Angle A Mode
+
+Discuss:
+
+- Pairing angle \(A\) with the wrong side.
+- Using side \(a\) instead of side \(b\) in this mode.
+- Entering an angle in the wrong unit.
+- Forgetting to divide by two.
+- Using an invalid or non-acute angle.
+
+State that the live calculator's expected angle unit must be followed.
+
+---
+
+## 9. METHOD THREE — AREA USING ANGLE B
+
+H2: Find Right Triangle Area Using Side a, Hypotenuse c, and Angle B
+
+Introduce:
+
+\[
+\boxed{K=\frac{ac\sin(B)}{2}}
+\]
+
+Explain that this mode uses the other acute angle and its two adjoining sides.
+
+### H3: Why Does This Formula Work?
+
+Explain that sides \(a\) and \(c\) enclose angle \(B\).
+
+Using the general formula:
+
+\[
+K=\frac12 xy\sin(\theta)
+\]
+
+substitute:
+
+\[
+x=a,\qquad y=c,\qquad \theta=B
+\]
+
+Therefore:
+
+\[
+K=\frac12 ac\sin(B)
+\]
+
+### H3: Fully Worked Example — The Same 3-4-5 Triangle
+
+Given:
+
+\[
+a=3\text{ m},\qquad c=5\text{ m}
+\]
+
+\[
+B\approx53.13^\circ
+\]
+
+Since:
+
+\[
+\sin(53.13^\circ)\approx0.8
+\]
+
+Calculate:
+
+\[
+K=\frac{3\times5\times0.8}{2}
+\]
+
+\[
+K=\frac{12}{2}
+\]
+
+\[
+\boxed{K=6\text{ m}^2}
+\]
+
+Explain that the result matches both previous methods.
+
+### H3: How Are Angles A and B Related?
+
+Show:
+
+\[
+A+B=90^\circ
+\]
+
+Explain that the two acute angles are complementary.
+
+Show the identity:
+
+\[
+\sin(A)=\cos(B)
+\]
+
+and:
+
+\[
+\sin(B)=\cos(A)
+\]
+
+Use these relationships to explain why both angle-based modes can calculate the same triangle's area when their inputs are consistent.
+
+### H3: Common Errors in Angle B Mode
+
+Discuss:
+
+- Using side \(b\) instead of side \(a\).
+- Pairing angle \(B\) with the wrong side.
+- Confusing the two acute angles.
+- Forgetting the sine function.
+- Forgetting to divide by two.
+- Using an angle that does not correspond to the measured triangle.
+
+---
+
+## 10. METHOD FOUR — AREA FROM INRADIUS AND SEMIPERIMETER
+
+H2: Find Right Triangle Area Using Inradius and Semiperimeter
+
+Introduce:
+
+\[
+\boxed{K=rs}
+\]
+
+Define the inradius \(r\) as the radius of the circle inscribed inside the triangle.
+
+Define the semiperimeter \(s\) as half the triangle's perimeter:
+
+\[
+\boxed{s=\frac{a+b+c}{2}}
+\]
+
+### H3: Why Does Area Equal Inradius Times Semiperimeter?
+
+Explain the geometric reasoning.
+
+Imagine connecting the incenter to all three vertices of the triangle.
+
+This divides the triangle into three smaller triangles. Each smaller triangle has the same perpendicular height \(r\), because the inradius is the perpendicular distance from the incenter to each side.
+
+Adding their areas gives:
+
+\[
+K=\frac12 ar+\frac12 br+\frac12 cr
+\]
+
+Factor out \(r/2\):
+
+\[
+K=\frac12 r(a+b+c)
+\]
+
+Since:
+
+\[
+s=\frac{a+b+c}{2}
+\]
+
+it follows that:
+
+\[
+\boxed{K=rs}
+\]
+
+Explain why this method works for any valid triangle, not just a right triangle, when the correct inradius and semiperimeter are known.
+
+### H3: Finding the Inradius of a Right Triangle
+
+For a right triangle:
+
+\[
+\boxed{r=\frac{a+b-c}{2}}
+\]
+
+Explain that this shortcut applies to right triangles and should not be presented as the general inradius formula for every triangle.
+
+### H3: Fully Worked Example — A 3-4-5 Triangle
+
+Given:
+
+\[
+a=3,\qquad b=4,\qquad c=5
+\]
+
+First, calculate the semiperimeter:
+
+\[
+s=\frac{3+4+5}{2}
+\]
+
+\[
+\boxed{s=6}
+\]
+
+Then calculate the inradius:
+
+\[
+r=\frac{3+4-5}{2}
+\]
+
+\[
+\boxed{r=1}
+\]
+
+Calculate the area:
+
+\[
+K=rs
+\]
+
+\[
+K=1\times6
+\]
+
+\[
+\boxed{K=6\text{ square units}}
+\]
+
+Explain that this result matches the legs formula.
+
+### H3: Fully Worked Example — A 5-12-13 Triangle
+
+Given:
+
+\[
+a=5,\qquad b=12,\qquad c=13
+\]
+
+Calculate:
+
+\[
+s=\frac{5+12+13}{2}=15
+\]
+
+\[
+r=\frac{5+12-13}{2}=2
+\]
+
+Then:
+
+\[
+K=2\times15
+\]
+
+\[
+\boxed{K=30\text{ square units}}
+\]
+
+Explain why the result can be verified using the legs formula.
+
+### H3: Common Errors
+
+Discuss:
+
+- Confusing the inradius with the circumradius.
+- Using the full perimeter instead of the semiperimeter.
+- Using the right-triangle inradius shortcut on a non-right triangle.
+- Forgetting that the result has square units.
+- Applying the formula to inconsistent side measurements.
+
+---
+
+## 11. METHOD FIVE — AREA FROM HYPOTENUSE AND ALTITUDE
+
+H2: Find Right Triangle Area Using Hypotenuse and Altitude
+
+Introduce:
+
+\[
+\boxed{K=\frac{ch}{2}}
+\]
+
+Explain that \(c\) is the hypotenuse and \(h\) is the perpendicular distance from the right-angle vertex to the hypotenuse.
+
+### H3: What Is the Altitude?
+
+Explain that an altitude is a perpendicular line drawn from a vertex to the opposite side or its extension.
+
+In this calculator mode, the altitude begins at the right-angle vertex and meets the hypotenuse at \(90^\circ\).
+
+Clarify that this altitude is not the same as either leg \(a\) or \(b\).
+
+### H3: Why Does the Formula Work?
+
+Explain the general base-height formula:
+
+\[
+K=\frac12\times\text{base}\times\text{perpendicular height}
+\]
+
+Choose the hypotenuse as the base:
+
+\[
+\text{base}=c
+\]
+
+The perpendicular altitude is:
+
+\[
+\text{height}=h
+\]
+
+Therefore:
+
+\[
+K=\frac{ch}{2}
+\]
+
+### H3: Fully Worked Example — A 6-8-10 Triangle
+
+Given:
+
+\[
+c=10\text{ m},\qquad h=4.8\text{ m}
+\]
+
+Calculate:
+
+\[
+K=\frac{10\times4.8}{2}
+\]
+
+\[
+K=\frac{48}{2}
+\]
+
+\[
+\boxed{K=24\text{ m}^2}
+\]
+
+Explain that this is the same area as a right triangle whose legs measure 6 m and 8 m.
+
+### H3: How Can the Altitude Be Calculated?
+
+When both legs and the hypotenuse are known, the altitude to the hypotenuse can be derived from the equality of area formulas:
+
+\[
+\frac{ab}{2}=\frac{ch}{2}
+\]
+
+Therefore:
+
+\[
+\boxed{h=\frac{ab}{c}}
+\]
+
+Use the 6-8-10 triangle:
+
+\[
+h=\frac{6\times8}{10}=4.8\text{ m}
+\]
+
+Explain why the altitude is shorter than the hypotenuse and why it must be perpendicular.
+
+Do not claim that the existing altitude mode automatically calculates missing inputs unless that behaviour is present in the actual interface.
+
+---
+
+## 12. HOW TO CHOOSE THE CORRECT AREA METHOD
+
+H2: Which Right Triangle Area Formula Should You Use?
+
+Create a clear comparison table.
+
+| Known measurements | Recommended method | Formula |
+|---|---|---|
+| Both perpendicular legs \(a,b\) | Area from Legs | \(K=ab/2\) |
+| Leg \(b\), hypotenuse \(c\), angle \(A\) | Area Variation (Angle A) | \(K=bc\sin(A)/2\) |
+| Leg \(a\), hypotenuse \(c\), angle \(B\) | Area Variation (Angle B) | \(K=ac\sin(B)/2\) |
+| Inradius \(r\), semiperimeter \(s\) | Area from Semiperimeter | \(K=rs\) |
+| Hypotenuse \(c\), perpendicular altitude \(h\) | Area Variation (Altitude) | \(K=ch/2\) |
+
+Explain each row in plain English.
+
+Emphasise that the best method is usually the one that uses the measurements already known.
+
+Do not force readers to calculate additional sides or angles when an available formula can calculate the area directly.
+
+### H3: Why the Legs Formula Is Often the Simplest
+
+Explain that the legs formula requires only two measurements and no trigonometric calculations.
+
+### H3: When the Sine Formula Is Useful
+
+Explain that an angle-based method is helpful when the available measurements include an acute angle, one leg, and the hypotenuse.
+
+### H3: When the Semiperimeter Method Is Useful
+
+Explain that the inradius-semiperimeter formula is particularly relevant to geometry problems involving an incircle or when these two measurements are already known.
+
+### H3: When the Altitude Formula Is Useful
+
+Explain that the altitude method is useful when the hypotenuse and its perpendicular height are available.
+
+---
+
+## 13. HOW TO USE THE EXISTING CALCULATOR
+
+H2: How to Use the Right Triangle Area Calculator
+
+Write a beginner-friendly step-by-step guide matching the live calculator interface.
+
+Step 1: Identify the measurements already known.
+
+Step 2: Select the calculator mode matching those measurements.
+
+Step 3: Read the labels of the required input fields.
+
+Step 4: Identify the legs, hypotenuse, angle, inradius, semiperimeter, or altitude as appropriate.
+
+Step 5: Enter the first required measurement.
+
+Step 6: Enter the remaining measurements.
+
+Step 7: Select compatible units using the available unit selectors.
+
+Step 8: For angle-based modes, enter the correct acute angle and follow the angle unit expected by the calculator.
+
+Step 9: Check that all inputs are positive and describe a valid triangle.
+
+Step 10: Click Calculate Area.
+
+Step 11: Review the area result and solution steps.
+
+Step 12: Use the live triangle visualization to verify that the labels correspond to the intended measurements.
+
+Step 13: Use Reset when starting a new calculation.
+
+Explain why choosing the correct mode matters.
+
+### Include one complete walkthrough for every mode
+
+Provide a concise, worked walkthrough for all five calculator modes using the same 3-4-5 right triangle.
+
+Use:
+
+\[
+a=3,\quad b=4,\quad c=5
+\]
+
+For the two angle-based modes:
+
+\[
+A\approx36.87^\circ,\qquad B\approx53.13^\circ
+\]
+
+For the semiperimeter mode:
+
+\[
+r=1,\qquad s=6
+\]
+
+For the altitude mode:
+
+\[
+h=2.4
+\]
+
+Every mode must return:
+
+\[
+\boxed{K=6\text{ square units}}
+\]
+
+Show the correct inputs, formula, substitution, and final answer for each mode.
+
+Do not claim that all five methods require the same input fields. Explain that each mode uses a different set of known values.
+
+---
+
+## 14. TWELVE PRACTICAL WORKED EXAMPLES
+
+H2: Real-Life Applications of Right Triangle Area Calculations
+
+Include at least 12 practical examples.
+
+Every example must include:
+
+1. A realistic situation.
+2. The known measurements.
+3. The chosen calculator mode.
+4. A brief explanation of why that mode fits.
+5. The relevant formula.
+6. Step-by-step substitution.
+7. The correct final answer with square units.
+8. A plain-English interpretation.
+9. A suitable verification method where useful.
+10. Any assumptions needed to simplify the real situation into a right triangle.
+
+Use the following examples and independently verify every numerical result.
+
+### Example 1 — Calculating the Area of a Triangular Garden
+
+A garden contains a right-triangular planting section with perpendicular legs of 6 m and 8 m.
+
+Known:
+
+\[
+a=6\text{ m},\qquad b=8\text{ m}
+\]
+
+Choose Area from Legs.
+
+Calculate:
+
+\[
+K=\frac{6\times8}{2}
+\]
+
+\[
+\boxed{K=24\text{ m}^2}
+\]
+
+Explain that 24 square metres is the surface area inside the triangular planting section.
+
+Mention that this calculation assumes the garden section is accurately represented by a right triangle.
+
+### Example 2 — Measuring a Triangular Plywood Panel
+
+A carpenter cuts a right-triangular panel with legs measuring 1.2 m and 0.8 m.
+
+Calculate:
+
+\[
+K=\frac{1.2\times0.8}{2}
+\]
+
+\[
+K=\frac{0.96}{2}
+\]
+
+\[
+\boxed{K=0.48\text{ m}^2}
+\]
+
+Explain how the result can help estimate the panel's surface area.
+
+Clarify that material waste and cutting allowances are not included.
+
+### Example 3 — Finding the Area of a Triangular Sail
+
+A triangular sail section has perpendicular legs of 5 m and 12 m.
+
+Calculate:
+
+\[
+K=\frac{5\times12}{2}
+\]
+
+\[
+\boxed{K=30\text{ m}^2}
+\]
+
+Explain how the formula determines the flat area of the triangular section.
+
+### Example 4 — Estimating a Right-Triangular Land Section
+
+A land survey identifies a right-triangular section with perpendicular sides of 30 m and 40 m.
+
+Calculate:
+
+\[
+K=\frac{30\times40}{2}
+\]
+
+\[
+\boxed{K=600\text{ m}^2}
+\]
+
+Explain that this is the area of the specified triangular section, not necessarily the total area of the surrounding property.
+
+Mention that real land boundaries may require more detailed surveying.
+
+### Example 5 — Calculating a Roof Gable's Area Using Angle A
+
+A simplified triangular roof section has:
+
+\[
+b=6\text{ m},\qquad c=10\text{ m}
+\]
+
+\[
+A\approx53.13^\circ
+\]
+
+Use Area Variation (Angle A).
+
+Since:
+
+\[
+\sin(53.13^\circ)\approx0.8
+\]
+
+Calculate:
+
+\[
+K=\frac{6\times10\times0.8}{2}
+\]
+
+\[
+\boxed{K=24\text{ m}^2}
+\]
+
+Explain that the calculation determines the area of the triangular cross-section.
+
+Clarify that a real roof's total surface area depends on its three-dimensional geometry and other roof sections.
+
+### Example 6 — Finding the Area of a Triangular Awning
+
+A right-triangular awning section has:
+
+\[
+b=4\text{ m},\qquad c=5\text{ m}
+\]
+
+\[
+A\approx36.87^\circ
+\]
+
+Use:
+
+\[
+K=\frac{bc\sin(A)}{2}
+\]
+
+Since:
+
+\[
+\sin(36.87^\circ)\approx0.6
+\]
+
+Calculate:
+
+\[
+K=\frac{4\times5\times0.6}{2}
+\]
+
+\[
+\boxed{K=6\text{ m}^2}
+\]
+
+Explain that this is the area of the triangular section, assuming the measurements describe a flat right triangle.
+
+### Example 7 — Calculating a Triangular Support Panel Using Angle B
+
+A support panel has:
+
+\[
+a=3\text{ m},\qquad c=5\text{ m}
+\]
+
+\[
+B\approx53.13^\circ
+\]
+
+Use Area Variation (Angle B).
+
+Calculate:
+
+\[
+K=\frac{3\times5\times0.8}{2}
+\]
+
+\[
+\boxed{K=6\text{ m}^2}
+\]
+
+Explain how the angle-based formula finds the area without entering both legs directly.
+
+### Example 8 — Finding the Area of a Truss Section
+
+A right-triangular truss section has:
+
+\[
+a=5\text{ m},\qquad c=13\text{ m}
+\]
+
+\[
+B\approx67.38^\circ
+\]
+
+Since:
+
+\[
+\sin(67.38^\circ)\approx\frac{12}{13}
+\]
+
+Calculate:
+
+\[
+K=\frac{5\times13\times(12/13)}{2}
+\]
+
+\[
+\boxed{K=30\text{ m}^2}
+\]
+
+Explain that this is the geometric area of the triangular section, not a structural load-capacity calculation.
+
+### Example 9 — Calculating Area From Inradius and Semiperimeter
+
+Consider a 3-4-5 right triangle.
+
+Given:
+
+\[
+r=1,\qquad s=6
+\]
+
+Use:
+
+\[
+K=rs
+\]
+
+Calculate:
+
+\[
+K=1\times6
+\]
+
+\[
+\boxed{K=6\text{ square units}}
+\]
+
+Explain how the inradius and semiperimeter provide an alternative to multiplying the two legs.
+
+### Example 10 — Finding the Area of a 5-12-13 Triangular Plot
+
+A right-triangular plot has sides:
+
+\[
+a=5,\qquad b=12,\qquad c=13
+\]
+
+Calculate the semiperimeter:
+
+\[
+s=\frac{5+12+13}{2}=15
+\]
+
+Calculate the inradius:
+
+\[
+r=\frac{5+12-13}{2}=2
+\]
+
+Calculate:
+
+\[
+K=2\times15
+\]
+
+\[
+\boxed{K=30\text{ square units}}
+\]
+
+Verify using the legs formula:
+
+\[
+K=\frac{5\times12}{2}=30
+\]
+
+Explain why both methods produce the same answer.
+
+### Example 11 — Estimating a Triangular Panel's Area From Altitude
+
+A triangular panel is represented by a right triangle whose hypotenuse measures 10 m and whose perpendicular altitude to the hypotenuse is 4.8 m.
+
+Given:
+
+\[
+c=10\text{ m},\qquad h=4.8\text{ m}
+\]
+
+Use:
+
+\[
+K=\frac{ch}{2}
+\]
+
+Calculate:
+
+\[
+K=\frac{10\times4.8}{2}
+\]
+
+\[
+\boxed{K=24\text{ m}^2}
+\]
+
+Explain why the altitude must be perpendicular to the hypotenuse.
+
+### Example 12 — Calculating a Triangular Section From Hypotenuse and Altitude
+
+A right-triangular section has a hypotenuse of 20 m and a perpendicular altitude of 9 m.
+
+Given:
+
+\[
+c=20\text{ m},\qquad h=9\text{ m}
+\]
+
+Calculate:
+
+\[
+K=\frac{20\times9}{2}
+\]
+
+\[
+\boxed{K=90\text{ m}^2}
+\]
+
+Explain that this is the area of the triangle when the measurements describe the same valid right triangle.
+
+### Practical example comparison table
+
+After all 12 examples, provide a concise table with:
+
+- Practical situation.
+- Known values.
+- Calculator mode.
+- Formula used.
+- Final area.
+- Short interpretation.
+
+Do not repeat all the working in the table.
+
+Use appropriate units such as \(\text{m}^2\), \(\text{cm}^2\), and square feet.
+
+Avoid presenting estimated real-world measurements as exact survey data.
+
+---
+
+## 15. WHY ALL FIVE METHODS GIVE THE SAME AREA
+
+H2: How to Verify the Area of a Right Triangle
+
+Use a 3-4-5 triangle to demonstrate all five methods.
+
+Given:
+
+\[
+a=3,\quad b=4,\quad c=5
+\]
+
+The acute angles are approximately:
+
+\[
+A=36.87^\circ,\qquad B=53.13^\circ
+\]
+
+The inradius and semiperimeter are:
+
+\[
+r=1,\qquad s=6
+\]
+
+The altitude to the hypotenuse is:
+
+\[
+h=\frac{ab}{c}=\frac{12}{5}=2.4
+\]
+
+Calculate using each method.
+
+**Method 1 — Legs**
+
+\[
+K=\frac{3\times4}{2}=6
+\]
+
+**Method 2 — Angle A**
+
+\[
+K=\frac{4\times5\times0.6}{2}=6
+\]
+
+**Method 3 — Angle B**
+
+\[
+K=\frac{3\times5\times0.8}{2}=6
+\]
+
+**Method 4 — Inradius and semiperimeter**
+
+\[
+K=1\times6=6
+\]
+
+**Method 5 — Hypotenuse and altitude**
+
+\[
+K=\frac{5\times2.4}{2}=6
+\]
+
+Explain why these are different mathematical routes to the same geometric quantity.
+
+Make the central lesson clear: the triangle's area does not depend on which correct formula is used.
+
+It depends on the actual geometry of the triangle.
+
+---
+
+## 16. FOUR EDUCATIONAL DIAGRAMS
+
+Create exactly four primary diagrams for the article.
+
+### DIAGRAM 1 — Anatomy of a Right Triangle
+
+Placement: Immediately after the right-triangle fundamentals section.
+
+Show:
+
+- Vertices \(A\), \(B\), and \(C\).
+- Right angle \(C\).
+- Legs \(a\) and \(b\).
+- Hypotenuse \(c\).
+- Altitude \(h\) to the hypotenuse.
+- Formula \(K=ab/2\).
+
+Purpose: Help readers identify the sides and understand the altitude.
+
+### DIAGRAM 2 — The Five Right Triangle Area Formulas
+
+Placement: After the explanation of all five methods.
+
+Create an educational infographic with five clearly separated formula panels.
+
+Panel 1:
+
+\[
+K=\frac{ab}{2}
+\]
+
+Inputs: \(a,b\).
+
+Panel 2:
+
+\[
+K=\frac{bc\sin(A)}{2}
+\]
+
+Inputs: \(b,c,A\).
+
+Panel 3:
+
+\[
+K=\frac{ac\sin(B)}{2}
+\]
+
+Inputs: \(a,c,B\).
+
+Panel 4:
+
+\[
+K=rs
+\]
+
+Inputs: \(r,s\).
+
+Panel 5:
+
+\[
+K=\frac{ch}{2}
+\]
+
+Inputs: \(c,h\).
+
+Add a brief description beneath each panel explaining when that method is useful.
+
+Keep the formulas readable on desktop and mobile screens.
+
+### DIAGRAM 3 — Four Practical Area Calculations
+
+Placement: Within the real-world examples section.
+
+Create a four-panel infographic.
+
+Panel 1: Garden
+
+- Legs: 6 m and 8 m.
+- Area: \(24\text{ m}^2\).
+
+Panel 2: Roof gable
+
+- Side \(b=6\text{ m}\).
+- Hypotenuse \(c=10\text{ m}\).
+- Angle \(A\approx53.13^\circ\).
+- Area: \(24\text{ m}^2\).
+
+Panel 3: Triangular truss
+
+- Sides \(a=5\text{ m}\), \(c=13\text{ m}\).
+- Angle \(B\approx67.38^\circ\).
+- Area: \(30\text{ m}^2\).
+
+Panel 4: Triangular panel
+
+- Hypotenuse: 10 m.
+- Perpendicular altitude: 4.8 m.
+- Area: \(24\text{ m}^2\).
+
+Each panel must show the correct geometry, measurements, formula, substitution, and final answer.
+
+### DIAGRAM 4 — Five Methods, One Triangle, One Area
+
+Placement: After the section comparing all five methods.
+
+Use the same 3-4-5 right triangle.
+
+Show the following values:
+
+- \(a=3\).
+- \(b=4\).
+- \(c=5\).
+- \(A\approx36.87^\circ\).
+- \(B\approx53.13^\circ\).
+- \(r=1\).
+- \(s=6\).
+- \(h=2.4\).
+
+Show five small calculation panels, one for each formula.
+
+Every panel must produce:
+
+\[
+\boxed{K=6\text{ square units}}
+\]
+
+Add the caption:
+
+“Different inputs, different formulas, the same triangle area.”
+
+### Requirements for all diagrams
+
+For each diagram, provide:
+
+- Exact placement.
+- Descriptive title.
+- Caption.
+- Descriptive filename.
+- Accessible alt text under 125 characters.
+- Detailed drawing instructions.
+- Responsive layout instructions.
+- SVG code if supported, or a ready-to-use image-generation prompt.
+
+All diagrams must be original, readable, mathematically accurate, and consistent with the article.
+
+Do not copy diagrams from competitors.
+
+Do not claim that images have already been generated if you have only provided prompts.
+
+---
+
+## 17. COMMON MISTAKES AND HOW TO AVOID THEM
+
+H2: Common Mistakes When Calculating Right Triangle Area
+
+Discuss at least these errors:
+
+1. Forgetting to divide by two.
+2. Using the hypotenuse as one of the perpendicular legs.
+3. Pairing angle \(A\) with the wrong side.
+4. Pairing angle \(B\) with the wrong side.
+5. Using the wrong included angle in a sine formula.
+6. Confusing altitude with a leg.
+7. Using a line that is not perpendicular as the altitude.
+8. Confusing inradius with circumradius.
+9. Using the full perimeter instead of the semiperimeter.
+10. Mixing incompatible measurement units.
+11. Reporting square metres as metres.
+12. Rounding the sine value too early.
+13. Entering a right angle or invalid angle into an acute-angle field.
+14. Assuming all five modes require the same measurements.
+15. Assuming a larger perimeter always means a proportionally larger area.
+16. Forgetting that the same area can be calculated in multiple ways.
+17. Entering side lengths that cannot describe the intended triangle.
+18. Using the right-triangle inradius shortcut for a non-right triangle.
+
+For each mistake, explain:
+
+- What the mistake looks like.
+- Why it is incorrect.
+- How to correct it.
+- A short numerical example where appropriate.
+
+### Include a wrong-versus-correct example
+
+Given:
+
+\[
+a=3,\qquad b=4
+\]
+
+Incorrect calculation:
+
+\[
+K=3\times4=12
+\]
+
+Explain that 12 is the area of the corresponding 3-by-4 rectangle, not the right triangle.
+
+Correct calculation:
+
+\[
+K=\frac{3\times4}{2}=6
+\]
+
+Explain why the triangle occupies half the rectangle.
+
+---
+
+## 18. INPUT VALIDATION AND MATHEMATICAL CHECKS
+
+H2: How to Check Whether Your Area Result Is Valid
+
+Explain the following checks.
+
+### Check 1 — Positive measurements
+
+All required lengths must be positive.
+
+\[
+a>0,\quad b>0,\quad c>0
+\]
+
+For the inradius mode:
+
+\[
+r>0,\qquad s>0
+\]
+
+The altitude must also be positive.
+
+### Check 2 — Valid triangle side lengths
+
+For a right triangle:
+
+\[
+a^2+b^2=c^2
+\]
+
+Explain that the hypotenuse must be longer than either leg.
+
+### Check 3 — Correct angle-side pairing
+
+Explain that angle \(A\) uses \(b\) and \(c\) in the included-angle formula, while angle \(B\) uses \(a\) and \(c\).
+
+### Check 4 — Correct altitude
+
+Explain that \(h\) must be perpendicular to \(c\).
+
+### Check 5 — Correct area units
+
+If the input lengths are in metres, the area must be in square metres.
+
+### Check 6 — Cross-check with another method
+
+Use the 3-4-5 triangle to compare the legs formula with the semiperimeter formula.
+
+Both must give:
+
+\[
+K=6\text{ square units}
+\]
+
+Explain that small discrepancies in angle-based calculations may result from rounded angle measurements or rounded trigonometric values.
+
+Do not invent a precision tolerance or accuracy guarantee for the calculator.
+
+---
+
+## 19. FREQUENTLY ASKED QUESTIONS
+
+H2: Frequently Asked Questions
+
+Write 12 original FAQs with direct, mathematically accurate answers.
+
+Include:
+
+1. What is the formula for the area of a right triangle?
+2. Why do you divide by two when calculating triangle area?
+3. Can I calculate the area without knowing the hypotenuse?
+4. How do I find the area using one side and an angle?
+5. Why does the angle-based formula use sine?
+6. What is the inradius of a right triangle?
+7. What is the difference between perimeter and semiperimeter?
+8. How do I calculate area using the hypotenuse and altitude?
+9. Why do all five area methods give the same result?
+10. What units should I use for the area?
+11. Can I calculate the area if I only know the hypotenuse?
+12. How can I check whether my area calculation is correct?
+
+Write approximately 40–70 words per answer where appropriate.
+
+Keep each answer understandable on its own.
+
+Avoid copying entire paragraphs from the main article.
+
+Do not claim that the calculator supports inputs or features that are not present on the live page.
+
+---
+
+## 20. RELATED CALCULATORS AND INTERNAL LINKS
+
+H2: Explore Related Right Triangle Calculators
+
+Inspect the live website and recommend relevant internal links.
+
+Potentially relevant pages include:
+
+- Right Triangle Area From Legs Calculator.
+- Right Triangle Area From Angle Calculator.
+- Right Triangle Area From Semiperimeter Calculator.
+- Right Triangle Height (Altitude) Calculator.
+- Right Triangle Perimeter and Semiperimeter Calculator.
+- Right Triangle Inradius and Circumradius Calculator.
+- Right Triangle Side Calculator.
+
+Verify every destination URL before including it.
+
+For each link, provide:
+
+- Verified destination URL.
+- Natural anchor text.
+- Recommended placement.
+- A short explanation of why the link helps the reader.
+
+Use relevant contextual links rather than inserting links into every paragraph.
+
+Do not invent URLs or link to irrelevant content.
+
+Do not place internal links in headings.
+
+Avoid repeating the same link unnecessarily.
+
+---
+
+## 21. SEO OPTIMIZATION
+
+### Primary keyword
+
+Right Triangle Area Calculator
+
+### Secondary keywords
+
+- right triangle area formula
+- area of a right triangle
+- right triangle area calculator with steps
+- calculate triangle area from two sides
+- right triangle area from legs
+- triangle area using sine
+- triangle area using angle and hypotenuse
+- right triangle inradius and semiperimeter
+- area using hypotenuse and altitude
+- right triangle base and height
+- right triangle area examples
+- how to calculate right triangle area
+- right triangle geometry calculator
+- triangle area in square units
+
+Use these phrases naturally where relevant.
+
+Do not force every keyword into headings or repeat the primary keyword excessively.
+
+### Semantic concepts
+
+Cover relevant entities and concepts such as:
+
+- Right triangle.
+- Perpendicular legs.
+- Hypotenuse.
+- Base and height.
+- Acute angle.
+- Included angle.
+- Sine function.
+- Area.
+- Inradius.
+- Circumradius.
+- Semiperimeter.
+- Perpendicular altitude.
+- Pythagorean theorem.
+- Square units.
+- Triangular land plot.
+- Roof gable.
+- Triangular panel.
+- Surveying.
+- Geometry verification.
+
+Optimise for actual search intent, completeness, natural language, and mathematical accuracy.
+
+Do not invent keyword search volumes, ranking statistics, traffic figures, or guarantees of first-page rankings.
+
+### SEO metadata
+
+Provide:
+
+1. An SEO title, approximately 50–60 characters where practical.
+2. A meta description, approximately 145–160 characters.
+3. Primary keyword.
+4. Relevant secondary keywords.
+5. Four descriptive image filenames.
+6. Four accessible image alt texts.
+7. Verified internal-link recommendations.
+8. Appropriate structured-data recommendations where justified.
+
+Keep the existing URL unless a change is explicitly requested.
+
+Do not fabricate reviews, ratings, author credentials, or unsupported claims.
+
+---
+
+## 22. TECHNICAL AND EDITORIAL REQUIREMENTS
+
+Preserve the existing calculator and all five modes.
+
+Do not:
+
+- Replace the calculator with a static diagram.
+- Create a duplicate calculator.
+- Remove existing input fields.
+- Change mathematical formulas incorrectly.
+- Change existing technical identifiers.
+- Invent calculator features.
+- Remove useful content without justification.
+- Add irrelevant internal links.
+- Confuse inradius with circumradius.
+- Confuse altitude with a leg.
+- Use the wrong included angle in an area formula.
+- Mix incompatible measurement units.
+- Report area in linear units.
+- Make unsupported engineering or construction-safety claims.
+- Claim that diagrams have been generated when only prompts are supplied.
+
+Use semantic headings, readable mathematical formatting, accessible diagrams, and descriptive alt text.
+
+If implementation code is requested, preserve the calculator's existing CSS classes, JavaScript identifiers, and interactive behaviour.
+
+This is a content expansion, not a calculator rebuild.
+
+---
+
+## 23. FINAL OUTPUT FORMAT
+
+Deliver the complete work in the following order.
+
+### A. SEO metadata
+
+Provide the SEO title, meta description, keyword focus, image filenames, and alt texts.
+
+### B. Complete publish-ready article
+
+Include:
+
+- Introduction.
+- Right-triangle fundamentals.
+- All five area methods.
+- Detailed formula derivations.
+- Calculator instructions.
+- Twelve practical worked examples.
+- Comparison tables.
+- Cross-verification using the same triangle.
+- Common mistakes.
+- Input validation.
+- FAQs.
+- Related calculator links.
+- A concise conclusion.
+
+### C. Four diagram specifications
+
+Provide exact placement, captions, filenames, alt text, drawing instructions, and SVG code or image-generation prompts.
+
+### D. Internal-link recommendations
+
+Include only verified URLs and relevant anchor text.
+
+### E. Editorial quality-control report
+
+Confirm:
+
+- All five formulas are correct.
+- All numerical examples are accurate.
+- The side labels are consistent.
+- The angle-based formulas use the correct included angles.
+- The altitude is perpendicular to the hypotenuse.
+- The inradius and semiperimeter formulas are correct.
+- All four diagrams match the written explanations.
+- The area units are correct.
+- SEO requirements have been addressed.
+- The writing is natural and non-repetitive.
+- Existing calculator functionality is preserved.
+
+Do not deliver only an outline.
+
+Do not replace worked examples with placeholders.
+
+Do not summarise the article instead of writing it.
+
+If the entire deliverable cannot fit into one response, deliver complete, clearly numbered sections until all content and diagram specifications are finished.
+
+---
+
+## 24. FINAL MATHEMATICAL QUALITY CHECK
+
+Before delivering the content, independently verify:
+
+1. The legs formula is \(K=ab/2\).
+2. The Angle A formula is \(K=bc\sin(A)/2\).
+3. The Angle B formula is \(K=ac\sin(B)/2\).
+4. The inradius-semiperimeter formula is \(K=rs\).
+5. The altitude formula is \(K=ch/2\).
+6. The right angle is at vertex \(C\).
+7. Side \(a\) is opposite angle \(A\).
+8. Side \(b\) is opposite angle \(B\).
+9. Side \(c\) is the hypotenuse.
+10. The altitude \(h\) is perpendicular to the hypotenuse.
+11. The 3-4-5 triangle produces an area of 6 square units using all five methods.
+12. All 12 practical examples have correct numerical results.
+13. Every area result uses square units.
+14. All angle-based examples use the correct included angle.
+15. Internal links use verified URLs.
+16. The writing avoids unnecessary repetition and keyword stuffing.
+17. The article explains the practical meaning of every major formula.
+18. The calculator's existing functionality remains unchanged.
+
+The ultimate goal is to create a comprehensive, accurate, natural, and genuinely useful educational resource that explains not only how to calculate the area of a right triangle, but also why the formulas work, when to use each method, and how to verify the answer.

@@ -1,0 +1,1660 @@
+# MASTER PROMPT: Cosine Ratio Calculator — Comprehensive Educational Guide, 12 Practical Examples, Four Diagrams, and SEO
+
+## 1. ROLE AND OBJECTIVE
+
+Act as an experienced mathematics educator, trigonometry specialist, professional educational content writer, technical SEO strategist, and educational website content editor.
+
+Your task is to create a comprehensive, original, mathematically accurate, human-sounding educational guide for the following webpage.
+
+**Website:** Right Triangle Solver
+
+**Target URL:**  
+https://www.righttrianglesolver.com/cosine-ratio-calculator/
+
+**Primary keyword:** Cosine Ratio Calculator
+
+**Language:** English (US)
+
+**Recommended article length:** 2,500–3000 words, excluding diagram specifications, SVG code, and SEO metadata.
+
+### Main objective
+
+Create an in-depth educational resource explaining how to calculate the cosine ratio of an acute angle in a right triangle when the adjacent side and hypotenuse are known.
+
+The article must teach readers:
+
+- What cosine means in a right triangle.
+- Why cosine is the adjacent side divided by the hypotenuse.
+- How to identify the adjacent side, opposite side, and hypotenuse.
+- Why the hypotenuse is always the longest side.
+- How to calculate cosine step by step.
+- Why the cosine ratio is between 0 and 1 for an acute angle in a valid, non-degenerate right triangle.
+- What the calculated decimal represents.
+- Why cosine has no physical unit.
+- How cosine relates to sine, tangent, secant, cosecant, and cotangent.
+- How cosine can be used to calculate a horizontal component or projection.
+- How to recover an angle from a known cosine ratio using inverse cosine.
+- How to find the adjacent side from the hypotenuse and cosine.
+- How to verify calculations using the Pythagorean theorem.
+- How to recognise invalid measurements and common mistakes.
+- How the cosine ratio changes when the reference angle changes.
+- How cosine appears in practical geometry, construction measurements, surveying, physics, and technical calculations.
+
+The intended audience includes students, teachers, engineering learners, physics students, homeowners, construction learners, surveying students, DIY enthusiasts, and anyone learning right-triangle trigonometry.
+
+**Critical instruction:** Expand the educational content below the existing calculator. Preserve the current calculator, its two inputs, unit selectors, Calculate cos(A) button, Reset button, and existing functionality.
+
+Do not replace the calculator with a static diagram or create a duplicate calculator.
+
+---
+
+## 2. INSPECT THE EXISTING PAGE BEFORE WRITING
+
+Inspect the live webpage, calculator interface, input fields, unit selectors, mathematical formula, triangle diagram, worked example, existing explanations, common mistakes, FAQs, and related calculator links.
+
+The existing calculator calculates cosine from:
+
+- Adjacent side \(b\).
+- Hypotenuse \(c\).
+
+Its primary formula is:
+
+\[
+\boxed{\cos(A)=\frac{b}{c}}
+\]
+
+Use this consistent notation throughout the article:
+
+- \(A\): the acute reference angle.
+- \(B\): the other acute angle.
+- \(a\): the side opposite angle \(A\).
+- \(b\): the side adjacent to angle \(A\).
+- \(c\): the hypotenuse, opposite the right angle.
+
+The triangle's angles satisfy:
+
+\[
+A+B=90^\circ
+\]
+
+The three sides satisfy:
+
+\[
+a^2+b^2=c^2
+\]
+
+For a valid, non-degenerate right triangle:
+
+\[
+0<b<c
+\]
+
+Therefore:
+
+\[
+\boxed{0<\frac{b}{c}<1}
+\]
+
+and:
+
+\[
+\boxed{0<\cos(A)<1}
+\]
+
+Explain that cosine is a dimensionless ratio because the units in the numerator and denominator cancel.
+
+### Important mathematical distinctions
+
+- Cosine equals adjacent divided by hypotenuse.
+- Sine equals opposite divided by hypotenuse.
+- Tangent equals opposite divided by adjacent.
+- Cosine is not the reciprocal of sine.
+- Secant is the reciprocal of cosine.
+- The opposite side \(a\) is not required for the primary cosine calculation.
+- The hypotenuse must be strictly longer than the adjacent side.
+- The cosine ratio is a number, not an angle.
+- The calculator calculates \(\cos(A)\) from side lengths; it should not be described as an inverse-cosine calculator.
+- If a user wants angle \(A\) from a known cosine ratio, inverse cosine is required.
+- Both side lengths must use compatible measurement units.
+
+Do not invent calculator modes, output options, accuracy guarantees, or unsupported functionality.
+
+---
+
+## 3. HUMAN WRITING REQUIREMENTS
+
+The article must sound like a knowledgeable mathematics teacher explaining the concept clearly and naturally.
+
+Follow these requirements:
+
+1. Use simple, professional, natural English.
+2. Explain why formulas work instead of asking readers to memorise them.
+3. Introduce concepts in a logical sequence.
+4. Use realistic measurements and relevant situations.
+5. Vary sentence lengths naturally.
+6. Keep paragraphs focused and readable.
+7. Explain technical terms when they first appear.
+8. Use natural transitions between sections.
+9. Avoid repeating the same explanation unnecessarily.
+10. Do not add filler to meet the word count.
+11. Avoid excessive bullet lists and decorative callouts.
+12. Do not invent personal experiences, testimonials, or professional credentials.
+13. Avoid unnatural keyword repetition.
+14. Do not exaggerate calculator accuracy.
+15. Explain the practical meaning of every important numerical result.
+16. Distinguish a mathematical ratio from a direct physical measurement.
+17. State practical assumptions wherever a simplified right triangle represents a real structure or movement.
+
+Avoid generic AI phrases such as:
+
+- In today's fast-paced world
+- Let's delve into
+- Unlock the power of
+- In the realm of mathematics
+- Whether you're a beginner or an expert
+- Look no further
+- Seamlessly calculate
+- Revolutionise your calculations
+
+The content should feel human because of its clear reasoning, realistic examples, useful explanations, and mathematical accuracy.
+
+---
+
+## 4. REQUIRED ARTICLE STRUCTURE
+
+Retain the existing H1:
+
+# Cosine Ratio Calculator
+
+Do not add another H1.
+
+Place the expanded educational guide below the existing calculator while preserving the current page hierarchy.
+
+### SECTION 1 — INTRODUCTION
+
+H2: What Is a Cosine Ratio Calculator?
+
+Write approximately 120–160 words.
+
+Explain:
+
+- What the cosine ratio calculator does.
+- Why cosine is useful in right-triangle trigonometry.
+- Why the adjacent side and hypotenuse are sufficient.
+- How cosine describes the adjacent side relative to the hypotenuse.
+- Why the result is a decimal ratio rather than an angle.
+- Why the opposite side is not required.
+- How the ratio can be useful in practical calculations.
+
+Start with a simple example.
+
+For example, a right triangle has an adjacent side of 4 cm and a hypotenuse of 5 cm.
+
+\[
+\cos(A)=\frac{4}{5}=0.8
+\]
+
+Explain that the adjacent side is 80% of the hypotenuse.
+
+Mention that the ratio alone does not directly give the angle in degrees.
+
+Keep the introduction focused and useful.
+
+---
+
+## 5. UNDERSTANDING THE SIDES OF A RIGHT TRIANGLE
+
+H2: Understanding the Adjacent Side and Hypotenuse
+
+### H3: What Is a Right Triangle?
+
+Explain:
+
+- What a 90-degree angle represents.
+- Why the hypotenuse is opposite the right angle.
+- Why the hypotenuse is the longest side.
+- Why the remaining two angles are acute.
+- Why right-triangle geometry makes the cosine ratio possible.
+
+### H3: What Is the Adjacent Side?
+
+Explain:
+
+- How to identify the side adjacent to reference angle \(A\).
+- Why side \(b\) touches angle \(A\) and is one of the perpendicular legs.
+- Why the adjacent side is not the hypotenuse.
+- How the adjacent side can represent a horizontal run, ground distance, or horizontal projection in a practical problem.
+- Why the adjacent side depends on the chosen reference angle.
+
+### H3: What Is the Hypotenuse?
+
+Explain:
+
+- How to identify the hypotenuse.
+- Why it is always opposite the right angle.
+- Why it is the longest side.
+- Why it may represent the length of a ladder, rafter, ramp, cable, diagonal brace, or straight-line path.
+- Why the hypotenuse must be longer than the adjacent side in a valid, non-degenerate right triangle.
+
+### H3: What Is the Opposite Side?
+
+Briefly explain:
+
+- How the opposite side is identified relative to angle \(A\).
+- Why side \(a\) is not used in the primary cosine formula.
+- How the opposite side becomes relevant when calculating sine or tangent.
+- Why the labels opposite and adjacent depend on the reference angle.
+
+Insert Diagram 1 here.
+
+### DIAGRAM 1 — Anatomy of a Right Triangle for Cosine
+
+Create an original, mathematically accurate educational diagram showing:
+
+- A right triangle with vertices \(A\), \(B\), and \(C\).
+- Reference angle \(A\) at the bottom-left.
+- Angle \(B\) at the upper vertex.
+- The right angle at the bottom-right.
+- Opposite side \(a\) as the vertical leg.
+- Adjacent side \(b\) as the horizontal base.
+- Hypotenuse \(c\) as the sloping side.
+- Adjacent side \(b\) highlighted in one colour.
+- Hypotenuse \(c\) highlighted in a contrasting colour.
+- Opposite side \(a\) shown in a neutral colour.
+- A clear right-angle marker.
+- A formula annotation showing \(\cos(A)=b/c\).
+
+Add a short note explaining that cosine uses the adjacent side and hypotenuse, not the opposite side.
+
+Keep the notation consistent throughout the article.
+
+Provide:
+
+- Diagram title.
+- Exact placement.
+- Caption.
+- Descriptive filename.
+- Accessible alt text under 125 characters.
+- Detailed SVG creation instructions.
+
+---
+
+## 6. WHAT IS COSINE?
+
+H2: Understanding the Cosine Ratio
+
+Explain cosine in simple, natural language.
+
+Introduce:
+
+\[
+\cos(A)=\frac{b}{c}
+\]
+
+Explain each component:
+
+- \(\cos(A)\) is the cosine of angle \(A\).
+- \(b\) is the adjacent side.
+- \(c\) is the hypotenuse.
+
+Explain that cosine compares the length of the leg next to angle \(A\) with the length of the complete sloping side.
+
+### H3: Understanding SOH-CAH-TOA
+
+Introduce the memory aid:
+
+- SOH: Sine = Opposite / Hypotenuse.
+- CAH: Cosine = Adjacent / Hypotenuse.
+- TOA: Tangent = Opposite / Adjacent.
+
+Explain why the letters CAH correspond to the cosine formula.
+
+Do not turn this section into a long guide to every trigonometric function.
+
+### H3: Why Cosine Is a Ratio
+
+Explain why dividing two lengths produces a dimensionless value.
+
+For example:
+
+\[
+\frac{4\text{ m}}{5\text{ m}}=0.8
+\]
+
+The metres cancel, leaving the number 0.8.
+
+Explain that the same result is obtained using 400 cm and 500 cm.
+
+### H3: What Does a Cosine Value of 0.8 Mean?
+
+Explain that:
+
+\[
+\cos(A)=0.8
+\]
+
+means the adjacent side is 80% as long as the hypotenuse.
+
+Explain what this tells us about the triangle's shape without claiming that the value is an angle.
+
+### H3: Why Cosine Is Less Than 1
+
+Explain that the hypotenuse is longer than either leg.
+
+Therefore:
+
+\[
+b<c
+\]
+
+and:
+
+\[
+\frac{b}{c}<1
+\]
+
+For a valid, non-degenerate right triangle with an acute reference angle, cosine is also greater than zero.
+
+Therefore:
+
+\[
+0<\cos(A)<1
+\]
+
+Clarify that the boundary values 0 and 1 are limiting values for acute-angle cases, not the cosine values of an ordinary non-degenerate right triangle's acute angle.
+
+### H3: Cosine Versus Sine
+
+Explain the difference:
+
+\[
+\cos(A)=\frac{b}{c}
+\]
+
+\[
+\sin(A)=\frac{a}{c}
+\]
+
+Both ratios use the hypotenuse, but they use different legs.
+
+Explain that choosing the correct leg depends on the reference angle and the quantity being calculated.
+
+Insert Diagram 2 here.
+
+### DIAGRAM 2 — Visual Explanation of the Cosine Formula
+
+Create a clean educational infographic with three stages.
+
+**Stage 1: Identify the sides**
+
+Show a right triangle with:
+
+- Adjacent side \(b=4\).
+- Opposite side \(a=3\).
+- Hypotenuse \(c=5\).
+- Reference angle \(A\).
+
+**Stage 2: Apply the cosine formula**
+
+Show:
+
+\[
+\cos(A)=\frac{b}{c}
+\]
+
+**Stage 3: Calculate the ratio**
+
+Show:
+
+\[
+\cos(A)=\frac{4}{5}=0.8
+\]
+
+Add a plain-English annotation:
+
+“The adjacent side is 80% of the hypotenuse.”
+
+Clearly distinguish the ratio from the angle.
+
+Use arrows or visual emphasis to show why the adjacent side is the numerator and the hypotenuse is the denominator.
+
+Provide caption, alt text, filename, exact placement, and SVG creation instructions.
+
+---
+
+## 7. DERIVING THE COSINE FORMULA STEP BY STEP
+
+H2: How the Cosine Formula Works
+
+Explain the formula in a sequence that a beginner can follow.
+
+Start with the definition:
+
+\[
+\cos(A)=\frac{\text{Adjacent}}{\text{Hypotenuse}}
+\]
+
+Then use the page's notation:
+
+\[
+\boxed{\cos(A)=\frac{b}{c}}
+\]
+
+Explain why the adjacent side belongs in the numerator and the hypotenuse in the denominator.
+
+### Worked example: A 3-4-5 Right Triangle
+
+Given:
+
+- Adjacent side \(b=4\text{ cm}\).
+- Opposite side \(a=3\text{ cm}\).
+- Hypotenuse \(c=5\text{ cm}\).
+
+Step 1: Write the formula.
+
+\[
+\cos(A)=\frac{b}{c}
+\]
+
+Step 2: Substitute the known values.
+
+\[
+\cos(A)=\frac{4}{5}
+\]
+
+Step 3: Divide.
+
+\[
+\boxed{\cos(A)=0.8}
+\]
+
+Step 4: Interpret the answer.
+
+The adjacent side is 80% of the hypotenuse.
+
+Step 5: Verify the triangle.
+
+\[
+3^2+4^2=5^2
+\]
+
+\[
+9+16=25
+\]
+
+Explain why the triangle is mathematically consistent.
+
+### Important clarification
+
+If the reader wants to calculate angle \(A\) rather than the cosine ratio, inverse cosine is required:
+
+\[
+A=\cos^{-1}(0.8)\approx36.87^\circ
+\]
+
+Explain that this is a separate calculation from the ratio returned by the existing calculator.
+
+Do not imply that the cosine ratio calculator directly calculates the angle.
+
+---
+
+## 8. HOW TO USE THE EXISTING CALCULATOR
+
+H2: How to Use the Cosine Ratio Calculator
+
+Provide a beginner-friendly walkthrough that matches the live interface.
+
+Step 1: Identify the reference angle \(A\).
+
+Step 2: Locate the adjacent side \(b\), which touches angle \(A\) and is not the hypotenuse.
+
+Step 3: Locate the hypotenuse \(c\), opposite the right angle.
+
+Step 4: Measure or obtain both side lengths.
+
+Step 5: Enter the adjacent-side length in the first field.
+
+Step 6: Enter the hypotenuse length in the second field.
+
+Step 7: Select compatible measurement units using the available unit selectors.
+
+Step 8: Confirm that both measurements are positive.
+
+Step 9: Check that the hypotenuse is longer than the adjacent side.
+
+Step 10: Click Calculate cos(A).
+
+Step 11: Read the resulting cosine ratio.
+
+Step 12: Confirm that the answer is greater than 0 and less than 1 for a valid, non-degenerate right triangle.
+
+Step 13: Use Reset when you want to clear the inputs and start another calculation.
+
+Explain why each step matters.
+
+Clarify that the calculator does not require the opposite side or an angle input.
+
+Do not invent calculator modes, saved-history functionality, downloadable results, graphing features, or unsupported functionality.
+
+---
+
+## 9. FOUR FOUNDATIONAL MATHEMATICAL EXAMPLES
+
+H2: Step-by-Step Examples of Calculating Cosine
+
+Provide four worked examples before the real-world applications.
+
+### Example 1 — A 3-4-5 Right Triangle
+
+Given:
+
+- \(b=4\text{ cm}\).
+- \(a=3\text{ cm}\).
+- \(c=5\text{ cm}\).
+
+Calculate:
+
+\[
+\cos(A)=\frac{4}{5}
+\]
+
+Final answer:
+
+\[
+\boxed{\cos(A)=0.8}
+\]
+
+Explain that the adjacent side is 80% of the hypotenuse.
+
+### Example 2 — A 5-12-13 Right Triangle
+
+Given:
+
+- Adjacent side \(b=12\text{ m}\).
+- Opposite side \(a=5\text{ m}\).
+- Hypotenuse \(c=13\text{ m}\).
+
+Calculate:
+
+\[
+\cos(A)=\frac{12}{13}
+\]
+
+Final answer:
+
+\[
+\boxed{\cos(A)\approx0.9231}
+\]
+
+Explain why the adjacent side is approximately 92.31% of the hypotenuse.
+
+### Example 3 — A 30-60-90 Triangle
+
+For angle \(A=30^\circ\), the adjacent side is \(\sqrt{3}/2\) times the hypotenuse.
+
+Use:
+
+- \(b=\sqrt{3}\text{ cm}\).
+- \(c=2\text{ cm}\).
+
+Calculate:
+
+\[
+\cos(30^\circ)=\frac{\sqrt{3}}{2}
+\]
+
+Final answer:
+
+\[
+\boxed{\cos(30^\circ)\approx0.8660}
+\]
+
+Explain that this is a standard special-angle value.
+
+### Example 4 — A Triangle With Adjacent Side 8 and Hypotenuse 10
+
+Given:
+
+- \(b=8\text{ m}\).
+- \(c=10\text{ m}\).
+
+Calculate:
+
+\[
+\cos(A)=\frac{8}{10}
+\]
+
+Final answer:
+
+\[
+\boxed{\cos(A)=0.8}
+\]
+
+Explain why the ratio is identical to the 3-4-5 triangle's cosine ratio even though the triangles have different side lengths.
+
+Mention that scaling all sides proportionally preserves the angles and ratios.
+
+---
+
+## 10. REAL-WORLD PRACTICAL APPLICATIONS
+
+H2: Real-Life Examples of Using the Cosine Ratio
+
+This must be one of the most comprehensive sections.
+
+Include at least 12 fully worked practical examples.
+
+For every example:
+
+1. Describe the practical situation naturally.
+2. Identify the right triangle or idealised geometric model.
+3. State the known adjacent-side and hypotenuse measurements.
+4. Explain why those measurements correspond to \(b\) and \(c\).
+5. Write the cosine formula.
+6. Substitute the measurements.
+7. Calculate the ratio.
+8. Explain the numerical result in plain English.
+9. Explain any relevant next step, such as recovering an angle or checking a horizontal component.
+10. State practical assumptions and limitations where relevant.
+
+Use the following examples and independently verify every numerical result.
+
+### Example 5 — Calculating a Ladder's Cosine Ratio
+
+A ladder is 5 m long, and its base is 3 m from the wall.
+
+The angle \(A\) is between the ladder and the level ground.
+
+Known:
+
+- Adjacent ground distance \(b=3\text{ m}\).
+- Hypotenuse \(c=5\text{ m}\).
+
+Calculation:
+
+\[
+\cos(A)=\frac{3}{5}
+\]
+
+Final answer:
+
+\[
+\boxed{\cos(A)=0.6}
+\]
+
+Explain that the horizontal ground distance is 60% of the ladder's length.
+
+If the reader needs the angle:
+
+\[
+A=\cos^{-1}(0.6)\approx53.13^\circ
+\]
+
+Clarify that the cosine calculation alone does not determine whether the ladder is safely positioned.
+
+### Example 6 — Calculating a Roof Rafter's Cosine Ratio
+
+A roof rafter has a sloping length of 5 m and a horizontal run of 4 m.
+
+Known:
+
+- Adjacent horizontal run \(b=4\text{ m}\).
+- Hypotenuse \(c=5\text{ m}\).
+
+Calculation:
+
+\[
+\cos(A)=\frac{4}{5}
+\]
+
+Final answer:
+
+\[
+\boxed{\cos(A)=0.8}
+\]
+
+Explain how the horizontal run compares with the rafter's sloping length.
+
+Clarify that this is a geometric ratio, not a complete roof-design or structural assessment.
+
+### Example 7 — Evaluating a Ramp's Cosine Ratio
+
+A ramp has a sloping length of 9.5 m and a horizontal run of 9 m.
+
+Known:
+
+- \(b=9\text{ m}\).
+- \(c=9.5\text{ m}\).
+
+Calculation:
+
+\[
+\cos(A)=\frac{9}{9.5}
+\]
+
+Final answer:
+
+\[
+\boxed{\cos(A)\approx0.9474}
+\]
+
+Explain that the horizontal run is approximately 94.74% of the sloping length.
+
+Clarify that this ratio alone does not establish accessibility or building-code compliance.
+
+### Example 8 — A Surveying Measurement
+
+A simplified surveying triangle has a straight-line distance of 50 m and a horizontal separation of 40 m.
+
+Known:
+
+- Horizontal distance \(b=40\text{ m}\).
+- Straight-line distance \(c=50\text{ m}\).
+
+Calculation:
+
+\[
+\cos(A)=\frac{40}{50}
+\]
+
+Final answer:
+
+\[
+\boxed{\cos(A)=0.8}
+\]
+
+Explain that the horizontal distance is 80% of the straight-line distance.
+
+Mention that real surveying may require instrument-height corrections, terrain adjustments, and other measurement considerations.
+
+### Example 9 — Finding a Guy Wire's Cosine Ratio
+
+A guy wire is 13 m long, and its ground anchor is 12 m horizontally from the pole.
+
+Known:
+
+- Horizontal separation \(b=12\text{ m}\).
+- Wire length \(c=13\text{ m}\).
+
+Calculation:
+
+\[
+\cos(A)=\frac{12}{13}
+\]
+
+Final answer:
+
+\[
+\boxed{\cos(A)\approx0.9231}
+\]
+
+Explain that the horizontal separation is approximately 92.31% of the wire's length.
+
+Clarify that the ratio does not establish wire tension, anchor strength, or structural safety.
+
+### Example 10 — Calculating a Staircase Stringer's Cosine Ratio
+
+A simplified staircase stringer is 5 m long and spans a horizontal run of 4 m.
+
+Known:
+
+- Horizontal run \(b=4\text{ m}\).
+- Stringer length \(c=5\text{ m}\).
+
+Calculation:
+
+\[
+\cos(A)=\frac{4}{5}
+\]
+
+Final answer:
+
+\[
+\boxed{\cos(A)=0.8}
+\]
+
+Explain how the ratio compares the horizontal span with the diagonal stringer.
+
+Clarify that the calculation does not verify staircase dimensions or building-code compliance.
+
+### Example 11 — Understanding a Crane Boom's Horizontal Projection
+
+A simplified crane boom has a length of 10 m and a horizontal projection of 6 m.
+
+Known:
+
+- Horizontal projection \(b=6\text{ m}\).
+- Boom length \(c=10\text{ m}\).
+
+Calculation:
+
+\[
+\cos(A)=\frac{6}{10}
+\]
+
+Final answer:
+
+\[
+\boxed{\cos(A)=0.6}
+\]
+
+Explain that the horizontal projection is 60% of the boom's length.
+
+Clarify that the ratio does not establish crane capacity or operating safety.
+
+### Example 12 — A Straight Aircraft Flight Segment
+
+For a simplified flight segment, an aircraft travels 5 km along a straight path while covering 4 km horizontally.
+
+Known:
+
+- Horizontal displacement \(b=4\text{ km}\).
+- Straight-line path length \(c=5\text{ km}\).
+
+Calculation:
+
+\[
+\cos(A)=\frac{4}{5}
+\]
+
+Final answer:
+
+\[
+\boxed{\cos(A)=0.8}
+\]
+
+Explain that the horizontal displacement is 80% of the straight-line path length.
+
+Clarify that this is an idealised geometric model, not a complete flight-navigation calculation.
+
+### Example 13 — Calculating a Diagonal Brace's Cosine Ratio
+
+A diagonal brace is 2 m long, and its horizontal projection is 1.2 m.
+
+Known:
+
+- Horizontal projection \(b=1.2\text{ m}\).
+- Brace length \(c=2\text{ m}\).
+
+Calculation:
+
+\[
+\cos(A)=\frac{1.2}{2}
+\]
+
+Final answer:
+
+\[
+\boxed{\cos(A)=0.6}
+\]
+
+Explain that the horizontal projection is 60% of the brace's length.
+
+Clarify that the cosine ratio does not determine the brace's strength or suitability.
+
+### Example 14 — Calculating a Hiking Trail's Cosine Ratio
+
+A simplified straight hiking section has a path length of 100 m and a horizontal displacement of 80 m.
+
+Known:
+
+- Horizontal displacement \(b=80\text{ m}\).
+- Sloping path length \(c=100\text{ m}\).
+
+Calculation:
+
+\[
+\cos(A)=\frac{80}{100}
+\]
+
+Final answer:
+
+\[
+\boxed{\cos(A)=0.8}
+\]
+
+Explain that the horizontal displacement is 80% of the path length.
+
+Clarify that actual trails may contain curves and changing gradients.
+
+### Example 15 — An Awning Support
+
+An awning support is 3 m long, with a horizontal projection of 2.4 m.
+
+Known:
+
+- Horizontal projection \(b=2.4\text{ m}\).
+- Support length \(c=3\text{ m}\).
+
+Calculation:
+
+\[
+\cos(A)=\frac{2.4}{3}
+\]
+
+Final answer:
+
+\[
+\boxed{\cos(A)=0.8}
+\]
+
+Explain how the ratio describes the support's horizontal projection relative to its total length.
+
+Clarify that this does not establish structural suitability.
+
+### Example 16 — A Cable Between Two Points
+
+A straight cable spans a total length of 25 m between two points whose horizontal separation is 24 m.
+
+Known:
+
+- Horizontal separation \(b=24\text{ m}\).
+- Cable length \(c=25\text{ m}\).
+
+Calculation:
+
+\[
+\cos(A)=\frac{24}{25}
+\]
+
+Final answer:
+
+\[
+\boxed{\cos(A)=0.96}
+\]
+
+Explain that the horizontal separation is 96% of the cable length.
+
+Clarify that the simplified model assumes a straight cable and a right-triangle relationship.
+
+### Practical interpretation requirement
+
+Explain that cosine is a mathematical ratio rather than a physical quantity with units.
+
+Its practical value comes from comparing the adjacent side with the hypotenuse, calculating horizontal projections, verifying measurements, and finding angles or components when used with the appropriate additional formula.
+
+Do not suggest that the cosine ratio alone determines structural safety, load capacity, accessibility, or engineering compliance.
+
+After all 12 examples, provide a comparison table containing:
+
+- Practical situation.
+- Adjacent side \(b\).
+- Hypotenuse \(c\).
+- Cosine formula.
+- Calculated ratio.
+- Plain-English interpretation.
+
+Do not repeat the complete calculations in the table.
+
+Insert Diagram 3 here.
+
+### DIAGRAM 3 — Four Practical Cosine Calculations
+
+Create a four-panel educational infographic.
+
+**Panel 1: Ladder**
+
+- Ground distance: 3 m.
+- Ladder length: 5 m.
+- Cosine ratio: 0.6.
+- Formula: \(\cos(A)=3/5\).
+
+**Panel 2: Roof rafter**
+
+- Horizontal run: 4 m.
+- Rafter length: 5 m.
+- Cosine ratio: 0.8.
+- Formula: \(\cos(A)=4/5\).
+
+**Panel 3: Surveying**
+
+- Horizontal distance: 40 m.
+- Straight-line distance: 50 m.
+- Cosine ratio: 0.8.
+- Formula: \(\cos(A)=40/50\).
+
+**Panel 4: Crane boom**
+
+- Horizontal projection: 6 m.
+- Boom length: 10 m.
+- Cosine ratio: 0.6.
+- Formula: \(\cos(A)=6/10\).
+
+Each panel must include:
+
+- A correctly drawn right triangle.
+- A right-angle marker.
+- Reference angle \(A\).
+- Adjacent side \(b\).
+- Hypotenuse \(c\).
+- The numerical cosine ratio.
+- A concise interpretation.
+
+Use consistent labels, readable typography, and accurate values.
+
+Provide filename, caption, alt text, exact placement, and SVG creation instructions.
+
+---
+
+## 11. HOW THE COSINE RATIO CHANGES WITH THE ANGLE
+
+H2: Understanding the Relationship Between Cosine and Angle Size
+
+Explain how cosine changes as the reference angle increases.
+
+Discuss:
+
+- Why a small acute angle has a cosine value close to 1.
+- Why the adjacent side becomes a smaller proportion of the hypotenuse as angle \(A\) increases.
+- Why cosine decreases as the acute angle increases from \(0^\circ\) toward \(90^\circ\).
+- Why cosine approaches 0 as the angle approaches \(90^\circ\).
+- Why cosine approaches 1 as the angle approaches \(0^\circ\).
+- Why cosine stays between 0 and 1 for an acute angle in a valid, non-degenerate right triangle.
+- Why the cosine ratio describes triangle shape rather than absolute triangle size.
+
+Include this comparison table:
+
+| Angle \(A\) | Adjacent side \(b\) | Hypotenuse \(c\) | Cosine ratio |
+|---:|---:|---:|---:|
+| \(30^\circ\) | \(\sqrt{3}\) | 2 | Approximately 0.8660 |
+| \(45^\circ\) | 1 | \(\sqrt{2}\) | Approximately 0.7071 |
+| \(60^\circ\) | 1 | 2 | 0.5 |
+| \(80^\circ\) | 1 | Approximately 5.7588 | Approximately 0.1736 |
+
+Explain the pattern in simple language.
+
+Clarify that the measurements in the table are illustrative and that the ratios, rather than the absolute lengths, determine the angles.
+
+### DIAGRAM 4 — How Cosine Changes as the Angle Changes
+
+Create a three-panel educational comparison diagram.
+
+**Panel A: Small acute angle**
+
+- \(A=30^\circ\).
+- Adjacent side \(b=\sqrt{3}\).
+- Hypotenuse \(c=2\).
+- Cosine ratio approximately 0.8660.
+
+**Panel B: Medium acute angle**
+
+- \(A=45^\circ\).
+- Adjacent side \(b=1\).
+- Hypotenuse \(c=\sqrt{2}\).
+- Cosine ratio approximately 0.7071.
+
+**Panel C: Larger acute angle**
+
+- \(A=60^\circ\).
+- Adjacent side \(b=1\).
+- Hypotenuse \(c=2\).
+- Cosine ratio 0.5.
+
+Each panel must show:
+
+- Reference angle \(A\).
+- Right-angle marker.
+- Adjacent side \(b\).
+- Hypotenuse \(c\).
+- Formula \(\cos(A)=b/c\).
+- Calculated cosine value.
+
+Use accurate triangle proportions and consistent labels.
+
+Explain visually that as angle \(A\) grows, the adjacent side becomes a smaller proportion of the hypotenuse.
+
+Provide filename, caption, alt text, exact placement, and SVG creation instructions.
+
+---
+
+## 12. USING COSINE TO FIND A MISSING SIDE
+
+H2: How to Find the Adjacent Side Using Cosine
+
+Explain that the cosine formula can be rearranged to find a missing adjacent side when the hypotenuse and angle are known.
+
+Start with:
+
+\[
+\cos(A)=\frac{b}{c}
+\]
+
+Multiply both sides by \(c\):
+
+\[
+\boxed{b=c\cos(A)}
+\]
+
+Explain that the adjacent side is calculated by multiplying the hypotenuse by the cosine of the angle.
+
+### Worked example
+
+Given:
+
+- Hypotenuse \(c=10\text{ m}\).
+- Angle \(A=60^\circ\).
+
+Calculate:
+
+\[
+b=10\cos(60^\circ)
+\]
+
+Since:
+
+\[
+\cos(60^\circ)=0.5
+\]
+
+then:
+
+\[
+\boxed{b=5\text{ m}}
+\]
+
+Explain why the adjacent side is half the hypotenuse for this particular angle.
+
+### How to find the hypotenuse
+
+Rearrange the formula:
+
+\[
+\boxed{c=\frac{b}{\cos(A)}}
+\]
+
+Use an example:
+
+- Adjacent side \(b=4\text{ m}\).
+- Angle \(A=60^\circ\).
+
+Then:
+
+\[
+c=\frac{4}{0.5}
+\]
+
+Final answer:
+
+\[
+\boxed{c=8\text{ m}}
+\]
+
+Clarify that these formulas are mathematical rearrangements. Do not claim that the existing cosine ratio calculator directly calculates missing sides.
+
+---
+
+## 13. USING INVERSE COSINE TO FIND AN ANGLE
+
+H2: How to Find an Angle From a Cosine Ratio
+
+Explain that the cosine ratio and the angle are different quantities.
+
+If the cosine ratio is known, inverse cosine can be used to find the corresponding acute angle.
+
+Introduce:
+
+\[
+\boxed{A=\cos^{-1}\left(\frac{b}{c}\right)}
+\]
+
+Explain that inverse cosine is also called arccosine.
+
+### Worked example
+
+Given:
+
+\[
+\cos(A)=0.8
+\]
+
+Calculate:
+
+\[
+A=\cos^{-1}(0.8)
+\]
+
+Final answer:
+
+\[
+\boxed{A\approx36.87^\circ}
+\]
+
+Explain that this is a separate operation from calculating the cosine ratio from side lengths.
+
+Mention that the scientific calculator must be configured to return degrees if the answer is expected in degrees.
+
+Do not claim that the existing Cosine Ratio Calculator returns an angle unless the live interface supports that functionality.
+
+---
+
+## 14. COMMON COSINE CALCULATION MISTAKES
+
+H2: Common Mistakes When Calculating Cosine
+
+Discuss at least these mistakes:
+
+1. Using the opposite side instead of the adjacent side.
+2. Reversing the fraction and calculating \(c/b\) instead of \(b/c\).
+3. Confusing cosine with sine.
+4. Confusing cosine with secant.
+5. Entering an adjacent side longer than the hypotenuse.
+6. Entering zero or negative side lengths.
+7. Mixing measurement units.
+8. Reporting cosine as an angle in degrees.
+9. Assuming the cosine ratio has units.
+10. Confusing the reference angle with the other acute angle.
+11. Rounding too early.
+12. Assuming cosine is the same for every angle in every triangle.
+13. Thinking the cosine ratio directly provides the angle in degrees.
+14. Assuming a cosine ratio of 0.8 means the angle is \(0.8^\circ\).
+15. Using a side label without first identifying the reference angle.
+
+For each mistake:
+
+- Explain what goes wrong.
+- Explain why it is incorrect.
+- Show the correct method.
+- Include a short numerical example where useful.
+
+### Include a wrong-versus-correct example
+
+Given:
+
+- Adjacent side \(b=4\).
+- Hypotenuse \(c=5\).
+
+Incorrect:
+
+\[
+\frac{5}{4}=1.25
+\]
+
+Explain that this is the reciprocal of cosine, called secant, and is not the cosine ratio.
+
+Correct:
+
+\[
+\cos(A)=\frac{4}{5}=0.8
+\]
+
+Explain why the result is valid.
+
+---
+
+## 15. INPUT VALIDATION AND MATHEMATICAL VERIFICATION
+
+H2: How to Check Whether Your Cosine Result Is Valid
+
+Explain the input requirements for a valid, non-degenerate right triangle:
+
+- Adjacent side \(b\) must be positive.
+- Hypotenuse \(c\) must be positive.
+- The hypotenuse must be strictly longer than the adjacent side.
+- Both measurements must use compatible units.
+- The cosine result must be greater than 0 and less than 1.
+
+Show:
+
+\[
+0<b<c
+\]
+
+Therefore:
+
+\[
+0<\frac{b}{c}<1
+\]
+
+Explain why a result greater than or equal to 1 usually indicates reversed inputs, incorrect side identification, incompatible measurements, or invalid triangle dimensions.
+
+Provide three verification methods.
+
+### Method 1 — Check the ratio
+
+Verify:
+
+\[
+\cos(A)=\frac{b}{c}
+\]
+
+Use \(b=4\) and \(c=5\):
+
+\[
+\cos(A)=\frac{4}{5}=0.8
+\]
+
+### Method 2 — Check the Pythagorean theorem
+
+If the opposite side is known or needed, calculate:
+
+\[
+a=\sqrt{c^2-b^2}
+\]
+
+For \(b=4\) and \(c=5\):
+
+\[
+a=\sqrt{25-16}=3
+\]
+
+Verify:
+
+\[
+3^2+4^2=5^2
+\]
+
+Explain why this confirms the dimensions of the 3-4-5 right triangle.
+
+### Method 3 — Check using inverse cosine
+
+If the ratio is 0.8:
+
+\[
+A=\cos^{-1}(0.8)\approx36.87^\circ
+\]
+
+Then verify that the angle and side ratio are consistent.
+
+Mention that minor differences can occur due to rounding. Do not invent an accuracy tolerance for the calculator.
+
+---
+
+## 16. COSINE VERSUS OTHER TRIGONOMETRIC RATIOS
+
+H2: Cosine vs. Sine, Tangent, and Secant
+
+Explain the differences using the same reference angle and side labels.
+
+Include this comparison table:
+
+| Ratio | Formula | What it compares |
+|---|---|---|
+| Sine | \(\sin(A)=a/c\) | Opposite side to hypotenuse |
+| Cosine | \(\cos(A)=b/c\) | Adjacent side to hypotenuse |
+| Tangent | \(\tan(A)=a/b\) | Opposite side to adjacent side |
+| Secant | \(\sec(A)=c/b\) | Hypotenuse to adjacent side |
+| Cosecant | \(\csc(A)=c/a\) | Hypotenuse to opposite side |
+| Cotangent | \(\cot(A)=b/a\) | Adjacent side to opposite side |
+
+Explain that secant is the reciprocal of cosine:
+
+\[
+\sec(A)=\frac{1}{\cos(A)}
+\]
+
+For example, if:
+
+\[
+\cos(A)=0.8
+\]
+
+then:
+
+\[
+\sec(A)=\frac{1}{0.8}=1.25
+\]
+
+Explain when cosine is appropriate and when another ratio may be more useful.
+
+Keep cosine as the central topic rather than turning this section into a complete replacement for the website's other ratio pages.
+
+---
+
+## 17. FREQUENTLY ASKED QUESTIONS
+
+H2: Frequently Asked Questions
+
+Write 12 original FAQs with direct, useful, mathematically accurate answers.
+
+Include:
+
+1. What is the cosine ratio formula for a right triangle?
+2. How do you calculate cosine from two side lengths?
+3. What is the difference between cosine and sine?
+4. Why is cosine less than 1 for an acute angle in a right triangle?
+5. Can cosine be greater than 1 in a valid right triangle?
+6. What does a cosine value of 0.8 mean?
+7. Does the cosine ratio have units?
+8. How can I find an angle from a cosine ratio?
+9. How can I find the adjacent side using cosine?
+10. What is the difference between cosine and secant?
+11. Can I calculate cosine without knowing the opposite side?
+12. How can cosine be used in practical measurements?
+
+Write approximately 40–70 words per answer where appropriate.
+
+Keep the answers direct and understandable on their own.
+
+Avoid copying entire paragraphs from the main article.
+
+Ensure that the answers match the actual calculator interface and capabilities.
+
+---
+
+## 18. RELATED CALCULATORS AND INTERNAL LINKS
+
+H2: Explore Related Trigonometric Calculators
+
+Recommend relevant pages from the existing website.
+
+Potential links include:
+
+- Right Triangle Trig Ratios Calculator.
+- Sine Ratio Calculator.
+- Tangent Ratio Calculator.
+- Secant Ratio Calculator.
+- Right Triangle Angle Calculator.
+- Right Triangle Side Calculator.
+
+Inspect the website and verify every destination URL before including it.
+
+For each link, provide:
+
+- Verified URL.
+- Natural anchor text.
+- Recommended placement in the article.
+- A short explanation of why the link is useful.
+
+Use the cosine ratio calculator when the adjacent side and hypotenuse are known.
+
+Recommend the angle calculator when the reader needs an angle.
+
+Recommend the side calculator when the reader needs a missing side.
+
+Do not invent URLs, add irrelevant links, or copy large blocks of content from related pages.
+
+---
+
+## 19. SEO OPTIMIZATION
+
+### Primary keyword
+
+Cosine Ratio Calculator
+
+### Secondary keywords
+
+- cosine calculator
+- cosine ratio formula
+- cos(A) calculator
+- cosine of a right triangle
+- adjacent side divided by hypotenuse
+- calculate cosine from side lengths
+- right triangle cosine formula
+- cosine ratio in trigonometry
+- cosine vs sine
+- cosine vs secant
+- calculate horizontal projection
+- cosine of an angle
+- cosine trigonometric ratio
+- CAH in SOH-CAH-TOA
+
+Use these keywords naturally where relevant.
+
+Do not stuff keywords into every paragraph or heading.
+
+### Semantic concepts
+
+Cover relevant concepts such as:
+
+- Right triangle.
+- Adjacent side.
+- Opposite side.
+- Hypotenuse.
+- Reference angle.
+- Cosine ratio.
+- SOH-CAH-TOA.
+- Dimensionless ratio.
+- Pythagorean theorem.
+- Inverse cosine.
+- Arccosine.
+- Secant.
+- Horizontal projection.
+- Horizontal displacement.
+- Roof pitch geometry.
+- Ladder angle.
+- Ramp geometry.
+- Surveying measurements.
+- Vector components.
+- Mathematical verification.
+
+Optimise for genuine search intent, topical completeness, natural language, and reader understanding.
+
+Do not invent keyword volumes, search rankings, traffic statistics, or guarantees of first-page rankings.
+
+### SEO metadata
+
+Provide:
+
+1. SEO title, approximately 50–60 characters where practical.
+2. Meta description, approximately 145–160 characters.
+3. Primary keyword.
+4. Relevant secondary keywords.
+5. Four descriptive image filenames.
+6. Four accessible image alt texts.
+7. Verified internal-link recommendations.
+8. Appropriate structured-data recommendations where justified.
+
+Keep the existing URL unless a change is explicitly requested.
+
+Do not fabricate reviews, ratings, author credentials, or unsupported claims.
+
+---
+
+## 20. FOUR CUSTOM EDUCATIONAL DIAGRAMS
+
+Create exactly four primary educational diagrams:
+
+1. Anatomy of a Right Triangle for Cosine.
+2. Visual Explanation of the Cosine Formula.
+3. Four Practical Cosine Calculations.
+4. How Cosine Changes as the Angle Changes.
+
+For every diagram, provide:
+
+- Exact placement within the article.
+- Descriptive title.
+- Correct mathematical labels.
+- Caption.
+- Accessible alt text under 125 characters.
+- Descriptive filename.
+- Detailed drawing instructions.
+- SVG code if supported, or a ready-to-use image-generation prompt.
+
+All diagrams must:
+
+- Follow the same side-label convention.
+- Mark the right angle correctly.
+- Place reference angle \(A\) at the correct vertex.
+- Highlight the adjacent side and hypotenuse appropriately.
+- Match the written examples.
+- Use readable labels and accessible contrast.
+- Be responsive on mobile screens.
+- Avoid unnecessary decoration.
+- Avoid misleading geometric proportions.
+
+If SVG generation is available, provide clean, responsive SVG code.
+
+If only image-generation prompts can be provided, label them as prompts rather than claiming that the images have already been created.
+
+---
+
+## 21. TECHNICAL AND EDITORIAL REQUIREMENTS
+
+Preserve the existing calculator and its functionality.
+
+Do not:
+
+- Replace the calculator with a static illustration.
+- Add a duplicate calculator.
+- Change the mathematical formula.
+- Change existing technical identifiers.
+- Invent calculator modes or features.
+- Remove useful existing content without justification.
+- Add irrelevant internal links.
+- Confuse cosine with sine or secant.
+- Treat the cosine ratio as an angle.
+- Use incompatible side-length units.
+- Make unsupported engineering or construction-safety claims.
+- Claim that diagrams have been generated when only prompts are supplied.
+
+Use accessible headings, readable mathematical formatting, responsive diagrams, and descriptive alt text.
+
+If HTML is requested for implementation, use semantic HTML and preserve the existing calculator's CSS classes and JavaScript identifiers.
+
+---
+
+## 22. FINAL OUTPUT FORMAT
+
+Deliver the complete work in this order.
+
+**A. SEO metadata**
+
+Provide the SEO title, meta description, keyword focus, and image metadata.
+
+**B. Complete publish-ready article**
+
+Include all headings, explanations, formulas, worked examples, comparison tables, FAQs, and conclusion.
+
+**C. Four diagram specifications**
+
+Provide exact placement, captions, filenames, alt text, drawing instructions, and SVG code or image-generation prompts.
+
+**D. Internal-link recommendations**
+
+Include only verified URLs and relevant anchor text.
+
+**E. Editorial quality-control report**
+
+Confirm mathematical accuracy, example calculations, diagram consistency, SEO completeness, and content completeness.
+
+Do not deliver only an outline.
+
+Do not replace worked examples with placeholders.
+
+Do not summarise the requested article instead of writing it.
+
+If the complete deliverable cannot fit in one response, deliver complete sections in clearly numbered batches until the entire article and all diagram specifications are finished.
+
+---
+
+## 23. FINAL QUALITY CHECK
+
+Before delivering the article, independently verify:
+
+1. The formula \(\cos(A)=b/c\) is correct.
+2. The adjacent side and hypotenuse are labelled consistently.
+3. All 12 practical examples have accurate numerical results.
+4. Every example uses compatible measurement units.
+5. All four diagrams match the written explanations.
+6. Cosine is not confused with sine, secant, or inverse cosine.
+7. The result is described as a dimensionless ratio, not an angle.
+8. The result is between 0 and 1 for a valid, non-degenerate right triangle with an acute reference angle.
+9. The hypotenuse is always longer than the adjacent side.
+10. Inverse cosine is explained as a separate operation.
+11. Internal links use verified URLs.
+12. The article reads naturally and avoids unnecessary repetition.
+13. Practical examples include appropriate assumptions and limitations.
+14. Existing calculator functionality is preserved.
+15. The content addresses the actual search intent: calculating cosine from the adjacent side and hypotenuse.
+
+The ultimate goal is to create a comprehensive, accurate, natural, and genuinely helpful educational resource explaining the cosine ratio, while preserving the existing calculator as the main interactive feature.

@@ -1,0 +1,1770 @@
+# MASTER PROMPT: Secant Ratio Calculator — Comprehensive Educational Guide, 6 Practical Examples, Four Diagrams, and SEO
+
+## 1. ROLE AND OBJECTIVE
+
+Act as an experienced mathematics educator, trigonometry specialist, professional educational content writer, technical SEO strategist, and educational website content editor.
+
+Your task is to create a comprehensive, original, mathematically accurate, human-sounding educational guide for the following webpage.
+
+**Website:** Right Triangle Solver
+
+**Target URL:** https://www.righttrianglesolver.com/secant-ratio-calculator/
+
+**Primary keyword:** Secant Ratio Calculator
+
+**Language:** English (US)
+
+**Recommended article length:** 2,500–3,500 words, excluding diagram specifications, SVG code, and SEO metadata.
+
+### Main objective
+
+Create an in-depth educational resource explaining how to calculate the secant ratio of an acute angle in a right triangle when the hypotenuse and adjacent side are known.
+
+The article must teach readers:
+
+- What secant means in right-triangle trigonometry.
+- Why secant is the reciprocal of cosine.
+- How to identify the adjacent side, opposite side, and hypotenuse.
+- Why the secant formula is \(\sec(A)=c/b\).
+- Why secant uses the hypotenuse divided by the adjacent side.
+- Why the opposite side is not required for the primary calculation.
+- How to calculate secant step by step.
+- Why secant is greater than 1 for a valid, non-degenerate right triangle with an acute reference angle.
+- Why a secant value of 1 is a limiting value rather than the value of an ordinary acute angle.
+- How secant changes as the reference angle increases.
+- What a secant value means in practical measurements.
+- How secant can help calculate a hypotenuse from a known adjacent side and angle.
+- How to recover an angle from a known secant ratio.
+- How secant relates to cosine, sine, tangent, cosecant, and cotangent.
+- How secant appears in surveying, construction geometry, ramps, ladders, diagonal supports, and horizontal-projection calculations.
+- How to verify a secant calculation using cosine and the Pythagorean theorem.
+- How to identify invalid inputs and common calculation mistakes.
+
+The intended audience includes students, teachers, engineering learners, physics students, construction learners, surveying students, DIY enthusiasts, and anyone studying right-triangle trigonometry.
+
+**Critical instruction:** Expand the educational content below the existing calculator. Preserve the current calculator, its two inputs, unit selectors, Calculate sec(A) button, Reset button, and functionality.
+
+Do not replace the calculator with a static illustration or create a duplicate calculator.
+
+---
+
+## 2. INSPECT THE EXISTING PAGE BEFORE WRITING
+
+Inspect the live webpage, calculator interface, input fields, unit selectors, mathematical formula, triangle diagram, worked example, result explanation, common mistakes, FAQs, and related calculator links.
+
+The calculator uses these inputs:
+
+- Hypotenuse \(c\).
+- Adjacent side \(b\).
+
+Its primary formula is:
+
+\[
+\boxed{\sec(A)=\frac{c}{b}}
+\]
+
+Use this notation consistently throughout the article:
+
+- \(A\): the acute reference angle.
+- \(B\): the other acute angle.
+- \(a\): the side opposite angle \(A\).
+- \(b\): the side adjacent to angle \(A\).
+- \(c\): the hypotenuse, opposite the right angle.
+
+The angles satisfy:
+
+\[
+A+B=90^\circ
+\]
+
+The side lengths satisfy the Pythagorean theorem:
+
+\[
+a^2+b^2=c^2
+\]
+
+For a valid, non-degenerate right triangle:
+
+\[
+0<b<c
+\]
+
+Therefore:
+
+\[
+\boxed{\sec(A)=\frac{c}{b}>1}
+\]
+
+The reciprocal relationship is:
+
+\[
+\boxed{\sec(A)=\frac{1}{\cos(A)}}
+\]
+
+Because:
+
+\[
+\cos(A)=\frac{b}{c}
+\]
+
+taking its reciprocal gives:
+
+\[
+\sec(A)=\frac{c}{b}
+\]
+
+### Important mathematical distinctions
+
+- Secant equals hypotenuse divided by adjacent.
+- Cosine equals adjacent divided by hypotenuse.
+- Secant is the reciprocal of cosine.
+- Secant is not the reciprocal of sine.
+- Secant is not the same as inverse cosine.
+- Secant does not use the opposite side in its primary formula.
+- The adjacent side depends on the selected reference angle.
+- The hypotenuse is always longer than either leg in a valid, non-degenerate right triangle.
+- Secant is dimensionless because both numerator and denominator are lengths.
+- The secant value is greater than 1 for every acute angle in a valid, non-degenerate right triangle.
+- A secant value approaching 1 corresponds to an angle approaching \(0^\circ\), but an ordinary acute angle never produces exactly 1.
+- Secant increases as the acute reference angle increases toward \(90^\circ\).
+- The existing calculator calculates a ratio from side lengths; do not describe it as an angle calculator.
+
+**Mathematical accuracy requirement:** If the existing page describes secant as greater than or equal to 1, refine that explanation. For a non-degenerate right triangle with an acute angle, secant is strictly greater than 1. The value 1 is a limiting value as the angle approaches zero.
+
+Do not invent calculator modes, output options, accuracy guarantees, or unsupported functionality.
+
+---
+
+## 3. HUMAN WRITING REQUIREMENTS
+
+The article must sound like a knowledgeable mathematics teacher explaining an unfamiliar concept clearly and naturally.
+
+Follow these requirements:
+
+1. Use simple, professional, natural English.
+2. Explain why formulas work instead of asking readers to memorise them.
+3. Introduce concepts in a logical sequence.
+4. Use realistic measurements and meaningful practical situations.
+5. Vary sentence lengths naturally.
+6. Keep paragraphs focused and readable.
+7. Explain technical terms when they first appear.
+8. Use natural transitions between sections.
+9. Avoid repeating the same explanation unnecessarily.
+10. Do not add filler to meet the word count.
+11. Avoid excessive bullet lists and decorative callouts.
+12. Do not invent personal experiences, testimonials, or professional credentials.
+13. Avoid unnatural keyword repetition.
+14. Do not exaggerate calculator accuracy.
+15. Explain the practical meaning of every important numerical result.
+16. Distinguish mathematical ratios from physical measurements.
+17. State practical assumptions when a simplified right triangle represents a real structure or situation.
+18. Use examples to build understanding rather than simply listing formulas.
+
+Avoid generic AI phrases such as:
+
+- In today's fast-paced world
+- Let's delve into
+- Unlock the power of
+- In the realm of mathematics
+- Whether you're a beginner or an expert
+- Look no further
+- Seamlessly calculate
+- Revolutionise your calculations
+
+The article should feel human because of its clear reasoning, realistic examples, precise explanations, and mathematical accuracy.
+
+---
+
+## 4. REQUIRED ARTICLE STRUCTURE
+
+Retain the existing H1:
+
+# Secant Ratio Calculator
+
+Do not add another H1.
+
+Place the expanded educational guide below the existing calculator while preserving the current page hierarchy.
+
+### SECTION 1 — INTRODUCTION
+
+H2: What Is a Secant Ratio Calculator?
+
+Write approximately 120–160 words.
+
+Explain:
+
+- What the calculator does.
+- What secant means.
+- Why the hypotenuse and adjacent side are sufficient.
+- Why secant is the reciprocal of cosine.
+- How secant compares the hypotenuse with the adjacent side.
+- Why the result is a dimensionless ratio rather than an angle.
+- Why the opposite side is not required.
+
+Begin with a straightforward example.
+
+A right triangle has:
+
+- Hypotenuse \(c=5\text{ cm}\).
+- Adjacent side \(b=4\text{ cm}\).
+
+Calculate:
+
+\[
+\sec(A)=\frac{5}{4}=1.25
+\]
+
+Explain that the hypotenuse is 1.25 times as long as the adjacent side, or 25% longer.
+
+Clarify that 1.25 is the secant ratio, not an angle of \(1.25^\circ\).
+
+Keep the introduction focused on the purpose of the calculator.
+
+---
+
+## 5. UNDERSTANDING THE SIDES OF A RIGHT TRIANGLE
+
+H2: Understanding the Adjacent Side and Hypotenuse
+
+### H3: What Is a Right Triangle?
+
+Explain:
+
+- What a 90-degree angle represents.
+- Why the hypotenuse lies opposite the right angle.
+- Why the hypotenuse is the longest side.
+- Why the remaining two angles are acute.
+- Why the two legs are perpendicular.
+- How these relationships make right-triangle trigonometry possible.
+
+### H3: What Is the Adjacent Side?
+
+Explain:
+
+- How to identify the side adjacent to angle \(A\).
+- Why side \(b\) touches angle \(A\) and is one of the perpendicular legs.
+- Why the adjacent side is not the hypotenuse.
+- How it can represent a horizontal run, ground distance, or horizontal projection in a practical problem.
+- Why the adjacent side depends on the selected reference angle.
+
+### H3: What Is the Hypotenuse?
+
+Explain:
+
+- How to identify the hypotenuse.
+- Why it is opposite the right angle.
+- Why it is always the longest side.
+- How it can represent the length of a ladder, ramp, rafter, cable, diagonal brace, or straight-line path.
+- Why it is the numerator in the secant formula.
+
+### H3: What Is the Opposite Side?
+
+Briefly explain:
+
+- How to identify the side opposite angle \(A\).
+- Why side \(a\) is not required in the primary secant calculation.
+- How it can help verify the triangle using the Pythagorean theorem.
+- How the opposite side becomes important for sine, tangent, and cosecant.
+- Why the opposite and adjacent labels depend on the reference angle.
+
+Insert Diagram 1 here.
+
+### DIAGRAM 1 — Anatomy of a Right Triangle for Secant
+
+Create an original, mathematically accurate educational diagram showing:
+
+- A right triangle with vertices \(A\), \(B\), and \(C\).
+- Reference angle \(A\) at the bottom-left.
+- Angle \(B\) at the upper vertex.
+- The right angle at the bottom-right.
+- Opposite side \(a\) as the vertical leg.
+- Adjacent side \(b\) as the horizontal base.
+- Hypotenuse \(c\) as the sloping side.
+- Hypotenuse \(c\) highlighted in one colour.
+- Adjacent side \(b\) highlighted in a contrasting colour.
+- Opposite side \(a\) shown in a neutral colour.
+- A clear right-angle marker.
+- A formula annotation showing \(\sec(A)=c/b\).
+
+Add a short note explaining that secant uses the hypotenuse and adjacent side, not the opposite side.
+
+Keep the notation consistent throughout the article.
+
+Provide:
+
+- Diagram title.
+- Exact placement.
+- Caption.
+- Descriptive filename.
+- Accessible alt text under 125 characters.
+- Detailed SVG creation instructions.
+
+---
+
+## 6. WHAT IS SECANT?
+
+H2: Understanding the Secant Ratio
+
+Introduce the formula:
+
+\[
+\sec(A)=\frac{c}{b}
+\]
+
+Explain each component:
+
+- \(\sec(A)\) means the secant of angle \(A\).
+- \(c\) is the hypotenuse.
+- \(b\) is the adjacent side.
+
+Explain that secant compares the full sloping side with the leg next to the reference angle.
+
+### H3: Secant as the Reciprocal of Cosine
+
+Begin with the cosine formula:
+
+\[
+\cos(A)=\frac{b}{c}
+\]
+
+Explain that taking the reciprocal reverses the numerator and denominator:
+
+\[
+\frac{1}{\cos(A)}=\frac{c}{b}
+\]
+
+Therefore:
+
+\[
+\boxed{\sec(A)=\frac{1}{\cos(A)}=\frac{c}{b}}
+\]
+
+Use this example:
+
+\[
+\cos(A)=\frac{4}{5}=0.8
+\]
+
+Then:
+
+\[
+\sec(A)=\frac{1}{0.8}=1.25
+\]
+
+Explain why cosine and secant describe the same angle using reciprocal ratios.
+
+Clarify that secant is not inverse cosine. Inverse cosine is used to recover an angle from a cosine value.
+
+### H3: What Does a Secant Value of 1.25 Mean?
+
+Explain that:
+
+\[
+\sec(A)=1.25
+\]
+
+means the hypotenuse is 1.25 times as long as the adjacent side.
+
+The percentage difference is:
+
+\[
+(1.25-1)\times100=25\%
+\]
+
+Therefore, the hypotenuse is 25% longer than the adjacent side.
+
+Explain that this does not mean the angle is \(1.25^\circ\), nor does it mean the triangle has a length of 1.25 units.
+
+### H3: Why Secant Is Greater Than 1
+
+Explain that the hypotenuse is longer than either leg in a valid, non-degenerate right triangle.
+
+Therefore:
+
+\[
+c>b>0
+\]
+
+Dividing \(c\) by \(b\) produces a ratio greater than 1:
+
+\[
+\boxed{\frac{c}{b}>1}
+\]
+
+Clarify that a result of exactly 1 is not possible for an ordinary acute reference angle in a non-degenerate right triangle.
+
+The value approaches 1 as the angle approaches \(0^\circ\).
+
+### H3: Why Secant Is the Reciprocal of Cosine
+
+Explain the relationship using both formulas:
+
+\[
+\cos(A)=\frac{b}{c}
+\]
+
+\[
+\sec(A)=\frac{c}{b}
+\]
+
+Show that multiplying them produces 1:
+
+\[
+\cos(A)\sec(A)=\frac{b}{c}\times\frac{c}{b}=1
+\]
+
+Explain that this reciprocal relationship is a useful way to verify a calculation.
+
+### H3: Why Secant Has No Units
+
+Explain that secant divides one length by another.
+
+For example:
+
+\[
+\frac{5\text{ m}}{4\text{ m}}=1.25
+\]
+
+The metres cancel, leaving a dimensionless ratio.
+
+Explain that the same ratio is obtained using 500 cm and 400 cm.
+
+### H3: Secant Versus Cosecant
+
+Explain that secant and cosecant are different reciprocal ratios.
+
+Secant:
+
+\[
+\sec(A)=\frac{c}{b}
+\]
+
+Cosecant:
+
+\[
+\csc(A)=\frac{c}{a}
+\]
+
+Secant uses the adjacent side, while cosecant uses the opposite side.
+
+Do not imply that the two functions are interchangeable.
+
+Insert Diagram 2 here.
+
+### DIAGRAM 2 — Cosine and Secant Are Reciprocal Ratios
+
+Create an educational infographic with three stages.
+
+**Stage 1: Identify the sides**
+
+Show a right triangle with:
+
+- Adjacent side \(b=4\).
+- Opposite side \(a=3\).
+- Hypotenuse \(c=5\).
+- Reference angle \(A\).
+
+**Stage 2: Calculate cosine**
+
+Show:
+
+\[
+\cos(A)=\frac{4}{5}=0.8
+\]
+
+**Stage 3: Calculate secant**
+
+Show:
+
+\[
+\sec(A)=\frac{5}{4}=1.25
+\]
+
+Add the identity:
+
+\[
+\sec(A)=\frac{1}{\cos(A)}
+\]
+
+Use arrows or a visual transition to demonstrate how the fraction reverses.
+
+Add a short interpretation:
+
+“The hypotenuse is 25% longer than the adjacent side.”
+
+Provide caption, alt text, filename, exact placement, and SVG creation instructions.
+
+---
+
+## 7. DERIVING THE SECANT FORMULA STEP BY STEP
+
+H2: How the Secant Formula Works
+
+Explain the formula in a logical sequence.
+
+Start with the definition:
+
+\[
+\sec(A)=\frac{\text{Hypotenuse}}{\text{Adjacent}}
+\]
+
+Then use the standard notation:
+
+\[
+\boxed{\sec(A)=\frac{c}{b}}
+\]
+
+Explain why the hypotenuse belongs in the numerator and the adjacent side belongs in the denominator.
+
+### Fully worked example: A 3-4-5 Right Triangle
+
+Given:
+
+- Adjacent side \(b=4\text{ cm}\).
+- Opposite side \(a=3\text{ cm}\).
+- Hypotenuse \(c=5\text{ cm}\).
+
+Step 1: Write the formula.
+
+\[
+\sec(A)=\frac{c}{b}
+\]
+
+Step 2: Substitute the known values.
+
+\[
+\sec(A)=\frac{5}{4}
+\]
+
+Step 3: Divide.
+
+\[
+\boxed{\sec(A)=1.25}
+\]
+
+Step 4: Interpret the result.
+
+The hypotenuse is 1.25 times the adjacent side, making it 25% longer.
+
+Step 5: Verify using cosine.
+
+\[
+\cos(A)=\frac{4}{5}=0.8
+\]
+
+Then:
+
+\[
+\frac{1}{0.8}=1.25
+\]
+
+Explain why the reciprocal check confirms the secant result.
+
+Step 6: Verify the triangle.
+
+\[
+3^2+4^2=5^2
+\]
+
+\[
+9+16=25
+\]
+
+Explain why the side lengths are consistent with a right triangle.
+
+---
+
+## 8. HOW TO USE THE EXISTING CALCULATOR
+
+H2: How to Use the Secant Ratio Calculator
+
+Provide a beginner-friendly walkthrough that matches the live interface.
+
+Step 1: Identify the reference angle \(A\).
+
+Step 2: Locate the hypotenuse \(c\), opposite the right angle and the longest side.
+
+Step 3: Locate the adjacent side \(b\), which touches angle \(A\) and is not the hypotenuse.
+
+Step 4: Obtain or measure both side lengths.
+
+Step 5: Enter the hypotenuse in the first input field.
+
+Step 6: Enter the adjacent side in the second input field.
+
+Step 7: Select compatible measurement units using the available unit selectors.
+
+Step 8: Confirm that both measurements are positive.
+
+Step 9: Check that the hypotenuse is longer than the adjacent side.
+
+Step 10: Click Calculate sec(A).
+
+Step 11: Read the resulting secant ratio.
+
+Step 12: Confirm that the result is greater than 1 for a valid, non-degenerate right triangle with an acute reference angle.
+
+Step 13: Use Reset when you want to clear the inputs and begin another calculation.
+
+Explain why each step matters.
+
+Clarify that the calculator does not require the opposite side or an angle input.
+
+Do not invent calculator modes, saved-history functionality, downloadable results, graphing features, or unsupported functionality.
+
+---
+
+## 9. FOUR FOUNDATIONAL MATHEMATICAL EXAMPLES
+
+H2: Step-by-Step Examples of Calculating Secant
+
+Provide four worked examples before the real-world applications.
+
+### Example 1 — A 3-4-5 Right Triangle
+
+Given:
+
+- \(b=4\text{ cm}\).
+- \(a=3\text{ cm}\).
+- \(c=5\text{ cm}\).
+
+Calculate:
+
+\[
+\sec(A)=\frac{5}{4}
+\]
+
+Final answer:
+
+\[
+\boxed{\sec(A)=1.25}
+\]
+
+Explain that the hypotenuse is 25% longer than the adjacent side.
+
+### Example 2 — A 5-12-13 Right Triangle
+
+Given:
+
+- Adjacent side \(b=12\text{ m}\).
+- Opposite side \(a=5\text{ m}\).
+- Hypotenuse \(c=13\text{ m}\).
+
+Calculate:
+
+\[
+\sec(A)=\frac{13}{12}
+\]
+
+Final answer:
+
+\[
+\boxed{\sec(A)\approx1.0833}
+\]
+
+Explain that the hypotenuse is approximately 8.33% longer than the adjacent side.
+
+### Example 3 — A 45-45-90 Triangle
+
+Given:
+
+- Adjacent side \(b=1\text{ cm}\).
+- Opposite side \(a=1\text{ cm}\).
+- Hypotenuse \(c=\sqrt{2}\text{ cm}\).
+
+Calculate:
+
+\[
+\sec(45^\circ)=\frac{\sqrt{2}}{1}
+\]
+
+Final answer:
+
+\[
+\boxed{\sec(45^\circ)=\sqrt{2}\approx1.4142}
+\]
+
+Explain why the hypotenuse is approximately 1.4142 times either leg.
+
+### Example 4 — A 30-60-90 Triangle
+
+For reference angle \(A=30^\circ\), use:
+
+- Adjacent side \(b=\sqrt{3}\text{ cm}\).
+- Opposite side \(a=1\text{ cm}\).
+- Hypotenuse \(c=2\text{ cm}\).
+
+Calculate:
+
+\[
+\sec(30^\circ)=\frac{2}{\sqrt{3}}
+\]
+
+Final answer:
+
+\[
+\boxed{\sec(30^\circ)\approx1.1547}
+\]
+
+Explain why the hypotenuse is approximately 15.47% longer than the adjacent side.
+
+---
+
+## 10. REAL-WORLD PRACTICAL APPLICATIONS
+
+H2: Real-Life Examples of Using the Secant Ratio
+
+This must be one of the most comprehensive sections.
+
+Include at least 12 fully worked practical examples.
+
+For every example:
+
+1. Describe the practical situation naturally.
+2. Identify the right triangle or simplified geometric model.
+3. State the known hypotenuse and adjacent-side measurements.
+4. Explain why those measurements correspond to \(c\) and \(b\).
+5. Write the secant formula.
+6. Substitute the measurements.
+7. Calculate the ratio.
+8. Explain the numerical result in plain English.
+9. Explain a relevant practical interpretation, such as the relationship between a sloping length and its horizontal projection.
+10. State assumptions or limitations where appropriate.
+
+Use the following examples and independently verify every calculation.
+
+### Example 5 — Calculating a Ladder's Secant Ratio
+
+A ladder is 5 m long, and its base is 4 m from a vertical wall.
+
+The angle \(A\) is between the ladder and level ground.
+
+Known:
+
+- Hypotenuse \(c=5\text{ m}\).
+- Adjacent horizontal distance \(b=4\text{ m}\).
+
+Calculate:
+
+\[
+\sec(A)=\frac{5}{4}
+\]
+
+Final answer:
+
+\[
+\boxed{\sec(A)=1.25}
+\]
+
+Explain that the ladder is 25% longer than its horizontal ground projection.
+
+Clarify that this ratio does not establish whether the ladder is safely positioned.
+
+### Example 6 — Calculating a Roof Rafter's Secant Ratio
+
+A roof rafter has a sloping length of 6.5 m and a horizontal run of 6 m.
+
+Known:
+
+- Hypotenuse \(c=6.5\text{ m}\).
+- Adjacent horizontal run \(b=6\text{ m}\).
+
+Calculate:
+
+\[
+\sec(A)=\frac{6.5}{6}
+\]
+
+Final answer:
+
+\[
+\boxed{\sec(A)\approx1.0833}
+\]
+
+Explain that the rafter is approximately 8.33% longer than its horizontal run.
+
+Clarify that the ratio is not a complete roof-design or structural assessment.
+
+### Example 7 — Evaluating a Ramp's Secant Ratio
+
+A simplified ramp has a sloping length of 9.5 m and a horizontal run of 9 m.
+
+Known:
+
+- \(c=9.5\text{ m}\).
+- \(b=9\text{ m}\).
+
+Calculate:
+
+\[
+\sec(A)=\frac{9.5}{9}
+\]
+
+Final answer:
+
+\[
+\boxed{\sec(A)\approx1.0556}
+\]
+
+Explain that the ramp's sloping length is approximately 5.56% longer than its horizontal projection.
+
+Clarify that this ratio alone does not establish accessibility or building-code compliance.
+
+### Example 8 — A Surveying Measurement
+
+A simplified surveying triangle has a straight-line distance of 50 m and a horizontal separation of 40 m.
+
+Known:
+
+- Hypotenuse \(c=50\text{ m}\).
+- Horizontal distance \(b=40\text{ m}\).
+
+Calculate:
+
+\[
+\sec(A)=\frac{50}{40}
+\]
+
+Final answer:
+
+\[
+\boxed{\sec(A)=1.25}
+\]
+
+Explain that the straight-line distance is 25% longer than the horizontal separation.
+
+Mention that actual surveying may require additional corrections and measurement procedures.
+
+### Example 9 — A Guy Wire Supporting a Pole
+
+A guy wire is 13 m long, and its ground anchor is 12 m horizontally from the pole.
+
+Known:
+
+- Hypotenuse \(c=13\text{ m}\).
+- Horizontal distance \(b=12\text{ m}\).
+
+Calculate:
+
+\[
+\sec(A)=\frac{13}{12}
+\]
+
+Final answer:
+
+\[
+\boxed{\sec(A)\approx1.0833}
+\]
+
+Explain that the wire is approximately 8.33% longer than its horizontal projection.
+
+Clarify that this ratio does not establish wire tension, anchor strength, or structural safety.
+
+### Example 10 — Calculating a Staircase Stringer's Secant Ratio
+
+A simplified staircase stringer is 5 m long and spans a horizontal run of 4 m.
+
+Known:
+
+- Hypotenuse \(c=5\text{ m}\).
+- Horizontal run \(b=4\text{ m}\).
+
+Calculate:
+
+\[
+\sec(A)=\frac{5}{4}
+\]
+
+Final answer:
+
+\[
+\boxed{\sec(A)=1.25}
+\]
+
+Explain how the diagonal stringer's length compares with the horizontal span.
+
+Clarify that this calculation does not verify staircase dimensions or building-code compliance.
+
+### Example 11 — Understanding a Crane Boom's Horizontal Projection
+
+A simplified crane boom has a length of 10 m and a horizontal projection of 6 m.
+
+Known:
+
+- Hypotenuse \(c=10\text{ m}\).
+- Horizontal projection \(b=6\text{ m}\).
+
+Calculate:
+
+\[
+\sec(A)=\frac{10}{6}
+\]
+
+Final answer:
+
+\[
+\boxed{\sec(A)\approx1.6667}
+\]
+
+Explain that the boom is approximately 66.67% longer than its horizontal projection.
+
+Clarify that this ratio does not establish crane capacity or operating safety.
+
+### Example 12 — A Straight Aircraft Flight Segment
+
+For a simplified straight flight segment, the path length is 5 km and the horizontal displacement is 4 km.
+
+Known:
+
+- Straight-line path length \(c=5\text{ km}\).
+- Horizontal displacement \(b=4\text{ km}\).
+
+Calculate:
+
+\[
+\sec(A)=\frac{5}{4}
+\]
+
+Final answer:
+
+\[
+\boxed{\sec(A)=1.25}
+\]
+
+Explain that the path length is 25% longer than the horizontal displacement.
+
+Clarify that this is an idealised geometric example, not a complete flight-navigation calculation.
+
+### Example 13 — A Diagonal Mechanical Brace
+
+A diagonal brace has a length of 2 m and a horizontal projection of 1.2 m.
+
+Known:
+
+- Hypotenuse \(c=2\text{ m}\).
+- Horizontal projection \(b=1.2\text{ m}\).
+
+Calculate:
+
+\[
+\sec(A)=\frac{2}{1.2}
+\]
+
+Final answer:
+
+\[
+\boxed{\sec(A)\approx1.6667}
+\]
+
+Explain that the brace is approximately 66.67% longer than its horizontal projection.
+
+Clarify that the ratio does not determine the brace's strength or suitability.
+
+### Example 14 — Calculating a Hiking Route's Secant Ratio
+
+A simplified straight hiking section has a path length of 100 m and a horizontal displacement of 80 m.
+
+Known:
+
+- Path length \(c=100\text{ m}\).
+- Horizontal displacement \(b=80\text{ m}\).
+
+Calculate:
+
+\[
+\sec(A)=\frac{100}{80}
+\]
+
+Final answer:
+
+\[
+\boxed{\sec(A)=1.25}
+\]
+
+Explain that the straight path is 25% longer than its horizontal displacement.
+
+Clarify that actual hiking trails may contain curves and changing gradients.
+
+### Example 15 — An Awning Support
+
+An awning support has a length of 3 m and a horizontal projection of 2.4 m.
+
+Known:
+
+- Hypotenuse \(c=3\text{ m}\).
+- Horizontal projection \(b=2.4\text{ m}\).
+
+Calculate:
+
+\[
+\sec(A)=\frac{3}{2.4}
+\]
+
+Final answer:
+
+\[
+\boxed{\sec(A)=1.25}
+\]
+
+Explain that the support is 25% longer than its horizontal projection.
+
+Clarify that the calculation does not establish structural suitability.
+
+### Example 16 — A Cable Between Two Points
+
+A straight cable spans a total length of 25 m between two points with a horizontal separation of 24 m.
+
+Known:
+
+- Cable length \(c=25\text{ m}\).
+- Horizontal separation \(b=24\text{ m}\).
+
+Calculate:
+
+\[
+\sec(A)=\frac{25}{24}
+\]
+
+Final answer:
+
+\[
+\boxed{\sec(A)\approx1.0417}
+\]
+
+Explain that the cable is approximately 4.17% longer than the horizontal separation.
+
+Clarify that the simplified model assumes a straight cable and a right-triangle relationship.
+
+### Practical interpretation requirement
+
+Explain that secant is a mathematical ratio rather than a physical quantity with units.
+
+Its practical value comes from comparing a sloping length with its horizontal projection, recovering lengths when the angle is known, verifying triangle geometry, and using formulas that specifically require secant.
+
+Do not suggest that secant alone determines structural safety, load capacity, accessibility, or engineering compliance.
+
+After all 12 examples, provide a comparison table containing:
+
+- Practical situation.
+- Hypotenuse \(c\).
+- Adjacent side \(b\).
+- Secant formula.
+- Calculated ratio.
+- Percentage by which the hypotenuse exceeds the adjacent side.
+- Plain-English interpretation.
+
+Do not repeat the complete calculations in the table.
+
+Insert Diagram 3 here.
+
+### DIAGRAM 3 — Four Practical Secant Calculations
+
+Create a four-panel educational infographic.
+
+**Panel 1: Ladder**
+
+- Ladder length: 5 m.
+- Horizontal ground distance: 4 m.
+- Secant ratio: 1.25.
+- Formula: \(\sec(A)=5/4\).
+
+**Panel 2: Ramp**
+
+- Sloping length: 9.5 m.
+- Horizontal run: 9 m.
+- Secant ratio: approximately 1.0556.
+- Formula: \(\sec(A)=9.5/9\).
+
+**Panel 3: Surveying**
+
+- Straight-line distance: 50 m.
+- Horizontal distance: 40 m.
+- Secant ratio: 1.25.
+- Formula: \(\sec(A)=50/40\).
+
+**Panel 4: Crane boom**
+
+- Boom length: 10 m.
+- Horizontal projection: 6 m.
+- Secant ratio: approximately 1.6667.
+- Formula: \(\sec(A)=10/6\).
+
+Each panel must show:
+
+- A correctly drawn right triangle.
+- A right-angle marker.
+- Reference angle \(A\).
+- Adjacent side \(b\).
+- Hypotenuse \(c\).
+- The calculated secant ratio.
+- A concise interpretation.
+
+Use consistent labels, readable typography, and accurate values.
+
+Provide filename, caption, alt text, exact placement, and SVG creation instructions.
+
+---
+
+## 11. HOW SECANT CHANGES WITH THE ANGLE
+
+H2: Understanding the Relationship Between Secant and Angle Size
+
+Explain how secant changes as the reference angle increases.
+
+Discuss:
+
+- Why secant is close to 1 when the acute angle is small.
+- Why the adjacent side is nearly as long as the hypotenuse when the angle is small.
+- Why secant equals \(\sqrt{2}\) at \(45^\circ\).
+- Why secant equals 2 at \(60^\circ\).
+- Why secant increases as the angle increases toward \(90^\circ\).
+- Why secant grows without bound as the angle approaches \(90^\circ\).
+- Why secant remains greater than 1 for every acute angle in a valid, non-degenerate right triangle.
+- Why secant describes triangle shape rather than absolute triangle size.
+
+Include this comparison table:
+
+| Angle \(A\) | Adjacent side \(b\) | Hypotenuse \(c\) | Secant ratio |
+|---:|---:|---:|---:|
+| \(30^\circ\) | \(\sqrt{3}\) | 2 | Approximately 1.1547 |
+| \(45^\circ\) | 1 | \(\sqrt{2}\) | Approximately 1.4142 |
+| \(60^\circ\) | 1 | 2 | 2 |
+| \(75^\circ\) | 1 | Approximately 3.8637 | Approximately 3.8637 |
+
+Explain the pattern in simple language.
+
+Clarify that the measurements are illustrative and that the ratio, rather than the absolute size of the triangle, determines the angle.
+
+Insert Diagram 4 here.
+
+### DIAGRAM 4 — How Secant Changes as the Angle Changes
+
+Create a three-panel educational comparison diagram.
+
+**Panel A: Small acute angle**
+
+- \(A=30^\circ\).
+- Adjacent side \(b=\sqrt{3}\).
+- Hypotenuse \(c=2\).
+- Secant ratio approximately 1.1547.
+
+**Panel B: Medium acute angle**
+
+- \(A=45^\circ\).
+- Adjacent side \(b=1\).
+- Hypotenuse \(c=\sqrt{2}\).
+- Secant ratio approximately 1.4142.
+
+**Panel C: Larger acute angle**
+
+- \(A=60^\circ\).
+- Adjacent side \(b=1\).
+- Hypotenuse \(c=2\).
+- Secant ratio 2.
+
+Each panel must show:
+
+- Reference angle \(A\).
+- Right-angle marker.
+- Adjacent side \(b\).
+- Hypotenuse \(c\).
+- Formula \(\sec(A)=c/b\).
+- Calculated secant value.
+
+Use accurate triangle proportions and consistent labels.
+
+Explain visually that as angle \(A\) grows, the adjacent side becomes shorter relative to the hypotenuse, so the secant value increases.
+
+Provide filename, caption, alt text, exact placement, and SVG creation instructions.
+
+---
+
+## 12. USING SECANT TO FIND A MISSING SIDE
+
+H2: How to Find the Hypotenuse Using Secant
+
+Explain that the secant formula can be rearranged to find the hypotenuse when the adjacent side and angle are known.
+
+Start with:
+
+\[
+\sec(A)=\frac{c}{b}
+\]
+
+Multiply both sides by \(b\):
+
+\[
+\boxed{c=b\sec(A)}
+\]
+
+Explain that the hypotenuse equals the adjacent side multiplied by the secant of the angle.
+
+### Worked example
+
+Given:
+
+- Adjacent side \(b=4\text{ m}\).
+- Angle \(A=60^\circ\).
+
+Since:
+
+\[
+\sec(60^\circ)=2
+\]
+
+calculate:
+
+\[
+c=4\times2
+\]
+
+Final answer:
+
+\[
+\boxed{c=8\text{ m}}
+\]
+
+Explain why the hypotenuse is twice the adjacent side at this angle.
+
+### How to find the adjacent side
+
+Rearrange the formula:
+
+\[
+\boxed{b=\frac{c}{\sec(A)}}
+\]
+
+Use an example:
+
+- Hypotenuse \(c=10\text{ m}\).
+- Angle \(A=60^\circ\).
+
+Then:
+
+\[
+b=\frac{10}{2}
+\]
+
+Final answer:
+
+\[
+\boxed{b=5\text{ m}}
+\]
+
+Clarify that these formulas are mathematical rearrangements. Do not claim that the existing Secant Ratio Calculator directly calculates missing sides.
+
+---
+
+## 13. USING SECANT TO FIND AN ANGLE
+
+H2: How to Find an Angle From a Secant Ratio
+
+Explain that the secant ratio and the angle are different quantities.
+
+If the secant ratio is known, cosine can be recovered using the reciprocal:
+
+\[
+\cos(A)=\frac{1}{\sec(A)}
+\]
+
+Then inverse cosine can be used to calculate the angle:
+
+\[
+\boxed{A=\cos^{-1}\left(\frac{1}{\sec(A)}\right)}
+\]
+
+### Worked example
+
+Given:
+
+\[
+\sec(A)=1.25
+\]
+
+First calculate cosine:
+
+\[
+\cos(A)=\frac{1}{1.25}=0.8
+\]
+
+Then:
+
+\[
+A=\cos^{-1}(0.8)
+\]
+
+Final answer:
+
+\[
+\boxed{A\approx36.87^\circ}
+\]
+
+Explain that this is a separate angle calculation.
+
+Mention that the scientific calculator must be set to degrees if the answer is expected in degrees.
+
+Do not claim that the existing secant ratio calculator directly returns the angle.
+
+---
+
+## 14. COMMON SECANT CALCULATION MISTAKES
+
+H2: Common Mistakes When Calculating Secant
+
+Discuss at least these mistakes:
+
+1. Reversing the formula and calculating \(b/c\) instead of \(c/b\).
+2. Confusing secant with cosine.
+3. Confusing secant with cosecant.
+4. Using the opposite side instead of the adjacent side.
+5. Using a side that is not the hypotenuse in the numerator.
+6. Mixing up adjacent and opposite sides.
+7. Assuming secant is an angle measured in degrees.
+8. Reporting the ratio with metres or centimetres.
+9. Entering zero or negative side lengths.
+10. Entering an adjacent side longer than the hypotenuse.
+11. Mixing measurement units.
+12. Rounding too early.
+13. Assuming secant must equal 1 for a right triangle.
+14. Confusing reciprocal cosine with inverse cosine.
+15. Assuming secant alone determines the triangle's absolute dimensions.
+
+For each mistake:
+
+- Explain what goes wrong.
+- Explain why it is incorrect.
+- Show the correct method.
+- Include a short numerical example where useful.
+
+### Include a wrong-versus-correct example
+
+Given:
+
+- Hypotenuse \(c=5\).
+- Adjacent side \(b=4\).
+
+Incorrect:
+
+\[
+\frac{4}{5}=0.8
+\]
+
+Explain that this is cosine, not secant.
+
+Correct:
+
+\[
+\sec(A)=\frac{5}{4}=1.25
+\]
+
+Verify:
+
+\[
+\cos(A)=0.8
+\]
+
+\[
+\frac{1}{0.8}=1.25
+\]
+
+Explain why the reciprocal check confirms the result.
+
+---
+
+## 15. INPUT VALIDATION AND MATHEMATICAL VERIFICATION
+
+H2: How to Check Whether Your Secant Result Is Valid
+
+Explain the input requirements for a valid, non-degenerate right triangle:
+
+- Hypotenuse \(c\) must be positive.
+- Adjacent side \(b\) must be positive.
+- The hypotenuse must be strictly longer than the adjacent side.
+- Both measurements must use compatible units.
+- The resulting secant must be greater than 1.
+
+Show:
+
+\[
+0<b<c
+\]
+
+Therefore:
+
+\[
+\boxed{\sec(A)=\frac{c}{b}>1}
+\]
+
+Explain why a result below or equal to 1 usually indicates reversed inputs, incorrect side identification, incompatible measurements, or invalid triangle dimensions.
+
+Provide three verification methods.
+
+### Method 1 — Check the reciprocal of cosine
+
+Verify:
+
+\[
+\cos(A)=\frac{b}{c}
+\]
+
+Then:
+
+\[
+\sec(A)=\frac{1}{\cos(A)}
+\]
+
+Use \(b=4\) and \(c=5\):
+
+\[
+\cos(A)=\frac{4}{5}=0.8
+\]
+
+\[
+\sec(A)=\frac{1}{0.8}=1.25
+\]
+
+### Method 2 — Check the Pythagorean theorem
+
+If the opposite side is known or needed, calculate:
+
+\[
+a=\sqrt{c^2-b^2}
+\]
+
+For \(b=4\) and \(c=5\):
+
+\[
+a=\sqrt{25-16}=3
+\]
+
+Verify:
+
+\[
+3^2+4^2=5^2
+\]
+
+Explain why this confirms the dimensions of the 3-4-5 right triangle.
+
+Clarify that the opposite side is not required for the primary secant formula.
+
+### Method 3 — Check using inverse cosine
+
+If the secant ratio is 1.25:
+
+\[
+A=\cos^{-1}\left(\frac{1}{1.25}\right)
+\]
+
+\[
+A=\cos^{-1}(0.8)\approx36.87^\circ
+\]
+
+Explain why the angle and side ratio are consistent.
+
+Mention that minor differences may occur due to rounding. Do not invent an accuracy tolerance for the calculator.
+
+---
+
+## 16. SECANT VERSUS OTHER TRIGONOMETRIC RATIOS
+
+H2: Secant vs. Cosine, Sine, and Cosecant
+
+Explain the differences using the same reference angle and side labels.
+
+Include this comparison table:
+
+| Ratio | Formula | What it compares |
+|---|---|---|
+| Sine | \(\sin(A)=a/c\) | Opposite side to hypotenuse |
+| Cosine | \(\cos(A)=b/c\) | Adjacent side to hypotenuse |
+| Tangent | \(\tan(A)=a/b\) | Opposite side to adjacent side |
+| Secant | \(\sec(A)=c/b\) | Hypotenuse to adjacent side |
+| Cosecant | \(\csc(A)=c/a\) | Hypotenuse to opposite side |
+| Cotangent | \(\cot(A)=b/a\) | Adjacent side to opposite side |
+
+Explain that secant and cosine are reciprocal ratios:
+
+\[
+\sec(A)=\frac{1}{\cos(A)}
+\]
+
+For example, if:
+
+\[
+\cos(A)=0.8
+\]
+
+then:
+
+\[
+\sec(A)=\frac{1}{0.8}=1.25
+\]
+
+Explain why secant is useful when a formula requires hypotenuse divided by adjacent or when the actual sloping length must be compared with its horizontal projection.
+
+Keep secant as the main topic rather than turning this section into a complete replacement for the website's other trigonometric-ratio pages.
+
+---
+
+## 17. FREQUENTLY ASKED QUESTIONS
+
+H2: Frequently Asked Questions
+
+Write 12 original FAQs with direct, mathematically accurate answers.
+
+Include:
+
+1. What is the secant ratio formula for a right triangle?
+2. How is secant related to cosine?
+3. Why is secant greater than 1 in a right triangle?
+4. Can secant equal 1?
+5. What does a secant value of 1.25 mean?
+6. Does secant have measurement units?
+7. How do you calculate secant from side lengths?
+8. How can I find the hypotenuse using secant?
+9. How can I find an angle from a secant ratio?
+10. What is the difference between secant and cosecant?
+11. Can I calculate secant without knowing the opposite side?
+12. How is secant used in practical measurements?
+
+Write approximately 40–70 words per answer where appropriate.
+
+Keep answers direct and understandable on their own.
+
+Avoid copying entire paragraphs from the main article.
+
+Ensure the answers match the actual calculator interface and functionality.
+
+---
+
+## 18. RELATED CALCULATORS AND INTERNAL LINKS
+
+H2: Explore Related Trigonometric Calculators
+
+Recommend relevant pages from the existing website.
+
+Potential links include:
+
+- Right Triangle Trig Ratios Calculator.
+- Cosine Ratio Calculator.
+- Cosecant Ratio Calculator.
+- Sine Ratio Calculator.
+- Tangent Ratio Calculator.
+- Cotangent Ratio Calculator.
+- Right Triangle Angle Calculator.
+- Right Triangle Side Calculator.
+
+Inspect the website and verify every destination URL before including it.
+
+For each link, provide:
+
+- Verified URL.
+- Natural anchor text.
+- Recommended placement in the article.
+- A short explanation of why the link is useful.
+
+Use the secant calculator when the hypotenuse and adjacent side are known.
+
+Recommend the cosine calculator when the reader needs adjacent divided by hypotenuse.
+
+Recommend the angle calculator when the reader needs an angle in degrees.
+
+Recommend the side calculator when the reader needs a missing side.
+
+Do not invent URLs, add irrelevant links, or copy large blocks of content from related pages.
+
+---
+
+## 19. SEO OPTIMIZATION
+
+### Primary keyword
+
+Secant Ratio Calculator
+
+### Secondary keywords
+
+- secant calculator
+- secant ratio formula
+- sec(A) calculator
+- secant of a right triangle
+- hypotenuse divided by adjacent side
+- calculate secant from side lengths
+- secant vs cosine
+- reciprocal of cosine
+- secant ratio in trigonometry
+- right triangle secant formula
+- secant of an angle
+- how to calculate secant
+- secant trigonometric ratio
+- horizontal projection and hypotenuse
+
+Use these keywords naturally where relevant.
+
+Do not stuff keywords into every paragraph or heading.
+
+### Semantic concepts
+
+Cover relevant concepts such as:
+
+- Right triangle.
+- Adjacent side.
+- Opposite side.
+- Hypotenuse.
+- Reference angle.
+- Secant.
+- Cosine.
+- Reciprocal ratio.
+- Dimensionless ratio.
+- Pythagorean theorem.
+- Inverse cosine.
+- Horizontal projection.
+- Sloping distance.
+- Roof rafter geometry.
+- Ladder angle.
+- Ramp geometry.
+- Surveying measurements.
+- Diagonal supports.
+- Trigonometric verification.
+
+Optimise for genuine search intent, topical completeness, natural language, and reader understanding.
+
+Do not invent keyword volumes, search rankings, traffic statistics, or guarantees of first-page rankings.
+
+### SEO metadata
+
+Provide:
+
+1. SEO title, approximately 50–60 characters where practical.
+2. Meta description, approximately 145–160 characters.
+3. Primary keyword.
+4. Relevant secondary keywords.
+5. Four descriptive image filenames.
+6. Four accessible image alt texts.
+7. Verified internal-link recommendations.
+8. Appropriate structured-data recommendations where justified.
+
+Keep the existing URL unless a change is explicitly requested.
+
+Do not fabricate reviews, ratings, author credentials, or unsupported claims.
+
+---
+
+## 20. FOUR CUSTOM EDUCATIONAL DIAGRAMS
+
+Create exactly four primary educational diagrams:
+
+1. Anatomy of a Right Triangle for Secant.
+2. Cosine and Secant Are Reciprocal Ratios.
+3. Four Practical Secant Calculations.
+4. How Secant Changes as the Angle Changes.
+
+For every diagram, provide:
+
+- Exact placement within the article.
+- Descriptive title.
+- Correct mathematical labels.
+- Caption.
+- Accessible alt text under 125 characters.
+- Descriptive filename.
+- Detailed drawing instructions.
+- SVG code if supported, or a ready-to-use image-generation prompt.
+
+All diagrams must:
+
+- Follow the same side-label convention.
+- Mark the right angle correctly.
+- Place reference angle \(A\) at the correct vertex.
+- Highlight the hypotenuse and adjacent side appropriately.
+- Match the written examples.
+- Use readable labels and accessible contrast.
+- Be responsive on mobile screens.
+- Avoid unnecessary decoration.
+- Avoid misleading geometric proportions.
+
+If SVG generation is available, provide clean, responsive SVG code.
+
+If only image-generation prompts can be provided, label them as prompts rather than claiming that the images have already been created.
+
+---
+
+## 21. TECHNICAL AND EDITORIAL REQUIREMENTS
+
+Preserve the existing calculator and its functionality.
+
+Do not:
+
+- Replace the calculator with a static illustration.
+- Add a duplicate calculator.
+- Change the mathematical formula.
+- Change existing technical identifiers.
+- Invent calculator modes or features.
+- Remove useful existing content without justification.
+- Add irrelevant internal links.
+- Confuse secant with cosine or cosecant.
+- Treat the secant ratio as an angle.
+- Allow a result of 1 or less for a valid, non-degenerate right triangle with an acute reference angle.
+- Use incompatible side-length units.
+- Make unsupported engineering or construction-safety claims.
+- Claim that diagrams have been generated when only prompts are supplied.
+
+Use accessible headings, readable mathematical formatting, responsive diagrams, and descriptive alt text.
+
+If HTML is requested for implementation, use semantic HTML and preserve the existing calculator's CSS classes and JavaScript identifiers.
+
+---
+
+## 22. FINAL OUTPUT FORMAT
+
+Deliver the complete work in this order.
+
+**A. SEO metadata**
+
+Provide the SEO title, meta description, keyword focus, and image metadata.
+
+**B. Complete publish-ready article**
+
+Include all headings, explanations, formulas, worked examples, comparison tables, FAQs, and conclusion.
+
+**C. Four diagram specifications**
+
+Provide exact placement, captions, filenames, alt text, drawing instructions, and SVG code or image-generation prompts.
+
+**D. Internal-link recommendations**
+
+Include only verified URLs and relevant anchor text.
+
+**E. Editorial quality-control report**
+
+Confirm mathematical accuracy, example calculations, diagram consistency, SEO completeness, and content completeness.
+
+Do not deliver only an outline.
+
+Do not replace worked examples with placeholders.
+
+Do not summarise the requested article instead of writing it.
+
+If the complete deliverable cannot fit in one response, deliver complete sections in clearly numbered batches until the entire article and all diagram specifications are finished.
+
+---
+
+## 23. FINAL QUALITY CHECK
+
+Before delivering the article, independently verify:
+
+1. The formula \(\sec(A)=c/b\) is correct.
+2. Secant is correctly explained as the reciprocal of cosine.
+3. The adjacent side and hypotenuse are labelled consistently.
+4. All 12 practical examples have accurate numerical results.
+5. Every example uses compatible measurement units.
+6. All four diagrams match the written explanations.
+7. Secant is not confused with cosine, cosecant, or inverse cosine.
+8. The result is described as a dimensionless ratio, not an angle.
+9. The result is greater than 1 for a valid, non-degenerate right triangle with an acute reference angle.
+10. The limiting value of 1 is explained correctly.
+11. Internal links use verified URLs.
+12. The article reads naturally and avoids unnecessary repetition.
+13. Practical examples include appropriate assumptions and limitations.
+14. Existing calculator functionality is preserved.
+15. The content addresses the actual search intent: calculating secant from the hypotenuse and adjacent side.
+
+The ultimate goal is to create a comprehensive, accurate, natural, and genuinely helpful educational resource explaining the secant ratio, while preserving the existing calculator as the main interactive feature.

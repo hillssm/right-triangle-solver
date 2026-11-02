@@ -9,6 +9,9 @@ import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
 import { replaceGenericSeoHeading, seoSectionHeading } from 'theme/utils/seoHeadings';
 import { formatListItem, formatRootBars } from 'src/utils/formatList';
+import AreaFromAltitudeGuide from 'theme/components/AreaFromAltitudeGuide.astro';
+import AreaFromAltitudeGuideLocalized from 'theme/components/AreaFromAltitudeGuideLocalized.astro';
+import { AREA_FROM_ALTITUDE_GUIDE_TRANSLATIONS } from 'src/data/areaFromAltitudeGuideTranslations';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 
@@ -275,6 +278,12 @@ const areaChildCalculatorSlugs = new Set([
   'right-triangle-area-from-hypotenuse-and-altitude-calculator'
 ]);
 const isAreaChildCalculator = areaChildCalculatorSlugs.has(page.slug);
+
+// Page 17 of 45: full guide replaces the old thin template content on the
+// area-from-altitude page (calculator itself stays untouched).
+const isAreaFromAltitudePage =
+  page.slug === 'right-triangle-area-from-altitude-calculator' &&
+  (locale === 'en' || AREA_FROM_ALTITUDE_GUIDE_TRANSLATIONS[locale]);
 
 // Each area page is a standalone ranking page with a self-referencing canonical.
 const canonicalPath = localizePath(locale, page.url);
@@ -549,6 +558,9 @@ const measurementSideEntries = page.diagram
     />
   )}
 
+  {/* Full guide replaces the old thin content on the area-from-altitude page */}
+  {!isAreaFromAltitudePage && (
+  <>
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={howItWorksHeading} />
     <p set:html={formatRootBars(page.toolPurpose)} />
@@ -766,6 +778,11 @@ const measurementSideEntries = page.diagram
       ))}
     </div>
   </section>
+  </>
+  )}
+
+  {isAreaFromAltitudePage && locale === 'en' ? <AreaFromAltitudeGuide /> : null}
+  {isAreaFromAltitudePage && locale !== 'en' && AREA_FROM_ALTITUDE_GUIDE_TRANSLATIONS[locale] ? <AreaFromAltitudeGuideLocalized guide={AREA_FROM_ALTITUDE_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>
 
 <style>

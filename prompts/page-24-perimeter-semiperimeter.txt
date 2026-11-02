@@ -1,0 +1,2380 @@
+# MASTER PROMPT: Right Triangle Perimeter and Semiperimeter Calculator — Comprehensive Educational Guide, 12 Practical Examples, 4 Original Diagrams, and Advanced SEO Optimization
+
+## 1. ROLE AND OBJECTIVE
+
+Act as an expert mathematics educator, geometry specialist, mathematical researcher, professional educational content writer, and technical SEO strategist.
+
+Create a comprehensive, original, mathematically accurate, and naturally written educational guide for the following webpage.
+
+**Website:** Right Triangle Solver
+
+**Target URL:**
+https://www.righttrianglesolver.com/right-triangle-measurements-calculator/
+
+**Existing H1:** Right Triangle Perimeter and Semiperimeter Calculator
+
+**Primary Keyword:** Right Triangle Perimeter and Semiperimeter Calculator
+
+**Language:** English (US)
+
+**Recommended Article Length:** 3,500–4,500 words, excluding equations, diagrams, and metadata.
+
+### Main objective
+
+Create an in-depth educational resource explaining how to calculate the perimeter and semiperimeter of a right triangle using its three side lengths.
+
+The article must thoroughly explain two separate calculations.
+
+**Perimeter formula:**
+
+\[
+\boxed{P=a+b+c}
+\]
+
+**Semiperimeter formula:**
+
+\[
+\boxed{s=\frac{a+b+c}{2}}
+\]
+
+Or:
+
+\[
+\boxed{s=\frac{P}{2}}
+\]
+
+Where:
+
+- P = total perimeter.
+- s = semiperimeter.
+- a = first perpendicular leg.
+- b = second perpendicular leg.
+- c = hypotenuse.
+
+The article must deeply discuss:
+
+- What a right triangle is.
+- What its three sides represent.
+- What perimeter means geometrically.
+- What semiperimeter means.
+- The difference between perimeter and semiperimeter.
+- Why all three side lengths are added.
+- Why semiperimeter requires division by two.
+- How the hypotenuse contributes to the total perimeter.
+- How the Pythagorean theorem helps calculate a missing side.
+- How to verify whether three measurements form a valid right triangle.
+- How perimeter helps estimate border, trim, edging, and wiring requirements.
+- How semiperimeter is used in advanced geometry formulas.
+- How semiperimeter relates to the inradius.
+- How Heron's formula uses semiperimeter.
+- How to work with different measurement units.
+- How to calculate perimeter with decimal values.
+- How to avoid common measurement mistakes.
+- How to verify calculated results.
+- How perimeter and semiperimeter differ from area.
+
+The article should be useful for:
+
+- High school students.
+- College and university students.
+- Mathematics teachers.
+- Geometry learners.
+- Engineering students.
+- Architecture students.
+- Construction professionals.
+- Surveying learners.
+- Fabrication professionals.
+- DIY enthusiasts.
+
+Do not turn the page into a generic triangle-area guide.
+
+Keep its primary focus on perimeter and semiperimeter calculations.
+
+---
+
+## 2. ANALYZE THE EXISTING PAGE BEFORE WRITING
+
+Visit and thoroughly inspect:
+
+https://www.righttrianglesolver.com/right-triangle-measurements-calculator/
+
+Review the following:
+
+- Existing H1.
+- Calculator introduction.
+- Calculator mode selector.
+- Perimeter mode.
+- Semiperimeter mode.
+- Leg a input.
+- Leg b input.
+- Hypotenuse c input.
+- Measurement-unit selectors.
+- Calculate Perimeter button.
+- Calculate Semiperimeter button.
+- Reset buttons.
+- Result displays.
+- Solution steps.
+- Live visualizations.
+- Formula diagrams.
+- Existing practical applications.
+- Input instructions.
+- Common mistakes.
+- FAQs.
+- Related calculators.
+
+Preserve useful existing information and functionality.
+
+Expand the educational content instead of unnecessarily repeating existing paragraphs.
+
+### Existing calculator functionality
+
+The page contains two modes.
+
+**Mode 1: Perimeter Calculator**
+
+Inputs:
+
+- Leg a.
+- Leg b.
+- Hypotenuse c.
+
+Formula:
+
+\[
+\boxed{P=a+b+c}
+\]
+
+Output:
+
+Total perimeter P.
+
+**Mode 2: Semiperimeter Calculator**
+
+Inputs:
+
+- Leg a.
+- Leg b.
+- Hypotenuse c.
+
+Formula:
+
+\[
+\boxed{s=\frac{a+b+c}{2}}
+\]
+
+Output:
+
+Semiperimeter s.
+
+Both modes have measurement-unit selectors and their own calculation and reset controls.
+
+The calculator also provides:
+
+- Solution steps.
+- Live visualization.
+- Formula diagram.
+- Result display.
+
+Do not replace the existing two-mode calculator with a new calculator.
+
+Do not invent additional input fields or calculation modes.
+
+### Important formula-rendering requirement
+
+Verify the displayed semiperimeter formula.
+
+It must appear correctly as:
+
+\[
+s=\frac{a+b+c}{2}
+\]
+
+Never display it as:
+
+\[
+s=2(a+b+c)
+\]
+
+or any incorrectly formatted variation.
+
+### Standard mathematical notation
+
+Use these symbols consistently:
+
+- A = first acute angle.
+- B = second acute angle.
+- C = right angle.
+- a = leg opposite angle A.
+- b = leg opposite angle B.
+- c = hypotenuse.
+- P = perimeter.
+- s = semiperimeter.
+- K = triangle area.
+- r = inradius.
+
+Do not use P and s interchangeably.
+
+Do not confuse perimeter with area.
+
+---
+
+## 3. STRICT HUMAN WRITING REQUIREMENTS
+
+Write like an experienced mathematics teacher explaining geometry to students.
+
+The content must feel natural, informative, original, and professionally edited.
+
+Follow these requirements:
+
+1. Use natural English sentence structures.
+2. Vary paragraph and sentence lengths.
+3. Explain mathematical concepts in a logical order.
+4. Explain why formulas work instead of simply displaying equations.
+5. Use realistic numerical examples.
+6. Connect mathematical ideas to practical situations.
+7. Explain difficult concepts in straightforward language.
+8. Use natural transitions between sections.
+9. Explain the practical meaning of calculated results.
+10. Avoid repetitive paragraphs.
+11. Avoid excessive bullet points.
+12. Explain technical terminology when first introduced.
+13. Distinguish exact values from approximations.
+14. Include mathematical assumptions where necessary.
+15. Avoid fabricated personal experiences.
+16. Do not add filler to reach the word count.
+17. Avoid unnatural keyword repetition.
+18. Do not exaggerate calculator capabilities.
+19. Make explanations useful to beginners and advanced learners.
+20. Ensure every section contributes new educational value.
+
+### Avoid generic AI-style expressions
+
+Do not use:
+
+- In today's fast-paced world.
+- Let's dive into.
+- Let's delve into.
+- Unlock the power of.
+- In the fascinating world of mathematics.
+- Whether you're a beginner or professional.
+- Look no further.
+- Seamlessly calculate.
+- Revolutionize your calculations.
+- This powerful tool empowers you.
+- In conclusion, it is important to note.
+
+Do not intentionally introduce grammatical mistakes to make the article appear human.
+
+Human-quality writing should come from original explanations, mathematical reasoning, realistic examples, and natural educational storytelling.
+
+---
+
+## 4. REQUIRED ARTICLE STRUCTURE
+
+Keep the existing H1 unchanged:
+
+# Right Triangle Perimeter and Semiperimeter Calculator
+
+Do not add another H1.
+
+Place the expanded educational content beneath the existing calculator.
+
+### SECTION 1 — INTRODUCTION
+
+H2: How to Calculate the Perimeter and Semiperimeter of a Right Triangle
+
+Write approximately 130–170 words.
+
+Explain:
+
+- What the calculator calculates.
+- What perimeter represents.
+- What semiperimeter represents.
+- Why three side measurements are required.
+- Why the hypotenuse must be included.
+- Why semiperimeter is half the perimeter.
+- When these calculations are useful.
+
+Start with a simple numerical example.
+
+Given:
+
+\[
+a=3,\quad b=4,\quad c=5
+\]
+
+Calculate perimeter:
+
+\[
+P=3+4+5
+\]
+
+\[
+\boxed{P=12\text{ units}}
+\]
+
+Calculate semiperimeter:
+
+\[
+s=\frac{3+4+5}{2}
+\]
+
+\[
+\boxed{s=6\text{ units}}
+\]
+
+Explain that the perimeter describes the complete boundary of the triangle, whereas semiperimeter is half of that numerical total.
+
+Mention that both measurements are lengths, not areas.
+
+---
+
+## 5. UNDERSTANDING THE GEOMETRY OF A RIGHT TRIANGLE
+
+H2: What Is a Right Triangle?
+
+### H3: Definition of a Right Triangle
+
+Explain that a right triangle is a three-sided polygon with one interior angle measuring exactly 90 degrees.
+
+Discuss:
+
+- Three vertices.
+- Three sides.
+- Two acute angles.
+- One right angle.
+- Two perpendicular legs.
+- One hypotenuse.
+
+Show:
+
+\[
+A+B+C=180^\circ
+\]
+
+Since:
+
+\[
+C=90^\circ
+\]
+
+Therefore:
+
+\[
+\boxed{A+B=90^\circ}
+\]
+
+### H3: What Are the Two Legs?
+
+Explain:
+
+- Leg a.
+- Leg b.
+- Their perpendicular relationship.
+- Why they meet at the right-angle vertex.
+- Their role in the triangle's geometry.
+
+### H3: What Is the Hypotenuse?
+
+Explain:
+
+- Its position opposite the right angle.
+- Why it is the longest side.
+- How it differs from the two legs.
+- Why it must be included when calculating the complete perimeter.
+
+Introduce:
+
+\[
+\boxed{c=\sqrt{a^2+b^2}}
+\]
+
+Explain that the Pythagorean theorem can determine the hypotenuse when both perpendicular legs are known.
+
+### H3: Why Is the Right Angle Important?
+
+Discuss the importance of perpendicular sides in:
+
+- Identifying a right triangle.
+- Applying the Pythagorean theorem.
+- Construction measurements.
+- Engineering drawings.
+- Geometric verification.
+
+### H3: How Can You Identify the Correct Side Labels?
+
+Explain that:
+
+- a and b are the legs.
+- c is the hypotenuse.
+- c must be the longest side in a nondegenerate right triangle.
+- The right angle is opposite c.
+
+Insert Diagram 1 here.
+
+### DIAGRAM 1 — Anatomy of a Right Triangle With All Three Side Measurements
+
+Create a professional educational geometry diagram showing:
+
+- Triangle ABC.
+- Right angle at C.
+- Acute angle A.
+- Acute angle B.
+- Leg a.
+- Leg b.
+- Hypotenuse c.
+- Perpendicular marker.
+- Clearly labelled vertices.
+
+Show the perimeter formula:
+
+\[
+P=a+b+c
+\]
+
+And semiperimeter:
+
+\[
+s=\frac{a+b+c}{2}
+\]
+
+Use different visual styles to distinguish the legs and hypotenuse.
+
+Provide:
+
+- Exact article placement.
+- Diagram title.
+- Caption.
+- Filename.
+- Alt text under 125 characters.
+- Detailed SVG creation instructions.
+
+---
+
+## 6. UNDERSTANDING THE PERIMETER OF A RIGHT TRIANGLE
+
+H2: What Is the Perimeter of a Right Triangle?
+
+### H3: Definition of Perimeter
+
+Explain that perimeter is the total distance around the outer boundary of a two-dimensional shape.
+
+For a triangle, it is the sum of its three side lengths.
+
+Show:
+
+\[
+\boxed{P=a+b+c}
+\]
+
+Explain why every side must be included.
+
+### H3: Why Does the Hypotenuse Count Toward the Perimeter?
+
+Explain that the perimeter measures the complete outer boundary, not just the two perpendicular sides.
+
+Even though the hypotenuse is opposite the right angle, it remains one of the three boundary edges.
+
+### H3: How to Calculate Perimeter Step by Step
+
+Use:
+
+\[
+a=3,\quad b=4,\quad c=5
+\]
+
+Substitute:
+
+\[
+P=3+4+5
+\]
+
+Add:
+
+\[
+P=7+5
+\]
+
+Final result:
+
+\[
+\boxed{P=12\text{ units}}
+\]
+
+Explain what the result means physically.
+
+### H3: What Does Perimeter Tell You in Practical Work?
+
+Discuss its use in estimating:
+
+- Border materials.
+- Window trim.
+- Fence edging.
+- Protective strips.
+- Decorative framing.
+- Cable routes.
+- Fabric borders.
+- Metal edge profiles.
+
+Explain that perimeter describes the length of the triangle's complete outline, not the amount of surface inside it.
+
+---
+
+## 7. UNDERSTANDING SEMIPERIMETER
+
+H2: What Is the Semiperimeter of a Right Triangle?
+
+### H3: Definition of Semiperimeter
+
+Explain that semiperimeter is exactly half the triangle's full perimeter.
+
+Show:
+
+\[
+\boxed{s=\frac{P}{2}}
+\]
+
+Since:
+
+\[
+P=a+b+c
+\]
+
+Therefore:
+
+\[
+\boxed{s=\frac{a+b+c}{2}}
+\]
+
+Explain why addition comes before division.
+
+### H3: How to Calculate Semiperimeter Step by Step
+
+Use:
+
+\[
+a=3,\quad b=4,\quad c=5
+\]
+
+\[
+s=\frac{3+4+5}{2}
+\]
+
+\[
+s=\frac{12}{2}
+\]
+
+\[
+\boxed{s=6\text{ units}}
+\]
+
+Explain that semiperimeter is a derived geometric measurement used in several important triangle formulas.
+
+### H3: Why Is Semiperimeter Used in Geometry?
+
+Discuss its role in:
+
+- Heron's formula.
+- Inradius calculations.
+- Incircle geometry.
+- Triangle area relationships.
+- Advanced geometric proofs.
+
+### H3: Is Semiperimeter the Same as Half the Boundary Physically?
+
+Explain that semiperimeter is half the numerical perimeter.
+
+It does not necessarily describe a continuous physical path covering half the triangle's boundary.
+
+This distinction helps prevent misunderstandings.
+
+### H3: Can Semiperimeter Be Smaller Than the Longest Side?
+
+Explain the triangle inequality:
+
+\[
+a+b>c
+\]
+
+Therefore:
+
+\[
+a+b+c>2c
+\]
+
+Dividing by two:
+
+\[
+\boxed{s>c}
+\]
+
+For a valid nondegenerate triangle, the semiperimeter is greater than the longest side.
+
+Explain why this is a useful mathematical check.
+
+---
+
+## 8. DIFFERENCE BETWEEN PERIMETER AND SEMIPERIMETER
+
+H2: Perimeter vs. Semiperimeter: What Is the Difference?
+
+This should be a detailed comparison section.
+
+Explain:
+
+**Perimeter:**
+
+The total length around the triangle.
+
+\[
+P=a+b+c
+\]
+
+**Semiperimeter:**
+
+Half the total perimeter.
+
+\[
+s=\frac{a+b+c}{2}
+\]
+
+### H3: Numerical Comparison
+
+Use a 6-8-10 right triangle.
+
+Perimeter:
+
+\[
+P=6+8+10
+\]
+
+\[
+\boxed{P=24}
+\]
+
+Semiperimeter:
+
+\[
+s=\frac{24}{2}
+\]
+
+\[
+\boxed{s=12}
+\]
+
+Explain the difference clearly.
+
+### H3: Which Measurement Should You Use?
+
+Explain when perimeter is useful for:
+
+- Bordering.
+- Framing.
+- Edging.
+- Fencing.
+- Material estimates around an object.
+
+Explain when semiperimeter is useful for:
+
+- Heron's formula.
+- Inradius relationships.
+- Incircle calculations.
+- Geometry problems involving triangle side lengths.
+
+### H3: Does Semiperimeter Measure Half the Triangle's Area?
+
+Clearly explain that it does not.
+
+Both perimeter and semiperimeter are linear measurements.
+
+Area measures the two-dimensional surface enclosed by the triangle.
+
+Insert Diagram 2 here.
+
+### DIAGRAM 2 — Visual Comparison of Perimeter and Semiperimeter
+
+Create a professional educational infographic using a 6-8-10 right triangle.
+
+Show:
+
+**Perimeter calculation:**
+
+\[
+P=6+8+10=24
+\]
+
+Highlight all three outer sides.
+
+Then show:
+
+**Semiperimeter calculation:**
+
+\[
+s=\frac{24}{2}=12
+\]
+
+Visually represent the full boundary total being divided into two equal numerical parts.
+
+Clearly distinguish:
+
+- Full perimeter.
+- Semiperimeter.
+- The triangle's enclosed area.
+
+Include a small warning:
+
+"Semiperimeter is half the perimeter, not half the area."
+
+Provide title, caption, filename, alt text, exact placement, and detailed SVG instructions.
+
+---
+
+## 9. WHY THE TWO CALCULATOR MODES ARE USEFUL
+
+H2: Understanding the Two Calculator Modes
+
+Explain the actual interface in detail.
+
+### H3: Perimeter Calculator Mode
+
+Explain that this mode calculates the total boundary length.
+
+Inputs:
+
+- Leg a.
+- Leg b.
+- Hypotenuse c.
+
+Formula:
+
+\[
+P=a+b+c
+\]
+
+Output:
+
+Perimeter P.
+
+Explain that the result is useful for estimating the total length of material required around a triangular outline.
+
+### H3: Semiperimeter Calculator Mode
+
+Explain that this mode calculates half the total perimeter.
+
+Inputs:
+
+- Leg a.
+- Leg b.
+- Hypotenuse c.
+
+Formula:
+
+\[
+s=\frac{a+b+c}{2}
+\]
+
+Output:
+
+Semiperimeter s.
+
+Explain that the result is useful as an intermediate value in advanced triangle calculations.
+
+### H3: Why Are There Two Separate Modes?
+
+Explain that both calculations use the same three side measurements but return different geometric quantities.
+
+The two modes save users from performing manual calculations.
+
+Do not describe the semiperimeter mode as an area calculator.
+
+Do not invent extra input fields.
+
+---
+
+## 10. HOW TO USE THE EXISTING CALCULATOR
+
+H2: How to Use the Right Triangle Perimeter and Semiperimeter Calculator
+
+Provide clear instructions matching the actual interface.
+
+### Perimeter mode
+
+Step 1: Select Perimeter mode.
+
+Step 2: Identify leg a.
+
+Step 3: Identify leg b.
+
+Step 4: Identify hypotenuse c.
+
+Step 5: Enter leg a.
+
+Step 6: Enter leg b.
+
+Step 7: Enter hypotenuse c.
+
+Step 8: Select the appropriate units.
+
+Step 9: Click Calculate Perimeter.
+
+Step 10: Review the result.
+
+Step 11: Check the displayed solution steps.
+
+Step 12: Verify that the output uses a linear measurement unit.
+
+### Semiperimeter mode
+
+Step 1: Select Semiperimeter mode.
+
+Step 2: Enter leg a.
+
+Step 3: Enter leg b.
+
+Step 4: Enter hypotenuse c.
+
+Step 5: Select compatible measurement units.
+
+Step 6: Click Calculate Semiperimeter.
+
+Step 7: Review the result.
+
+Step 8: Verify that the result is exactly half the perimeter.
+
+Step 9: Check the solution steps and visualization.
+
+Step 10: Use Reset when starting a new calculation.
+
+Explain the purpose of the live visualization and formula diagram.
+
+Do not invent additional calculator functionality.
+
+---
+
+## 11. FOUR FULLY WORKED MATHEMATICAL EXAMPLES
+
+H2: Step-by-Step Examples of Right Triangle Perimeter and Semiperimeter
+
+Use four well-known Pythagorean triples.
+
+### Example 1 — 3-4-5 Right Triangle
+
+Given:
+
+\[
+a=3,\quad b=4,\quad c=5
+\]
+
+Calculate perimeter:
+
+\[
+P=3+4+5
+\]
+
+\[
+\boxed{P=12\text{ units}}
+\]
+
+Calculate semiperimeter:
+
+\[
+s=\frac{3+4+5}{2}
+\]
+
+\[
+\boxed{s=6\text{ units}}
+\]
+
+Explain why both results are correct.
+
+### Example 2 — 6-8-10 Right Triangle
+
+Given:
+
+\[
+a=6,\quad b=8,\quad c=10
+\]
+
+\[
+P=6+8+10
+\]
+
+\[
+\boxed{P=24\text{ units}}
+\]
+
+\[
+s=\frac{24}{2}
+\]
+
+\[
+\boxed{s=12\text{ units}}
+\]
+
+Explain how doubling all three sides affects both measurements.
+
+### Example 3 — 5-12-13 Right Triangle
+
+Given:
+
+\[
+a=5,\quad b=12,\quad c=13
+\]
+
+\[
+P=5+12+13
+\]
+
+\[
+\boxed{P=30\text{ units}}
+\]
+
+\[
+s=\frac{30}{2}
+\]
+
+\[
+\boxed{s=15\text{ units}}
+\]
+
+### Example 4 — 8-15-17 Right Triangle
+
+Given:
+
+\[
+a=8,\quad b=15,\quad c=17
+\]
+
+\[
+P=8+15+17
+\]
+
+\[
+\boxed{P=40\text{ units}}
+\]
+
+\[
+s=\frac{40}{2}
+\]
+
+\[
+\boxed{s=20\text{ units}}
+\]
+
+After the examples, create a comparison table with:
+
+- Triangle.
+- Leg a.
+- Leg b.
+- Hypotenuse c.
+- Perimeter P.
+- Semiperimeter s.
+
+Explain how the results change as the triangle dimensions increase.
+
+---
+
+## 12. TWELVE PRACTICAL REAL-WORLD EXAMPLES
+
+H2: Real-Life Applications of Right Triangle Perimeter and Semiperimeter
+
+Create 12 realistic, detailed, fully worked practical examples.
+
+Each example must include:
+
+1. A realistic situation.
+2. A description of the right-triangular object.
+3. Three known side measurements.
+4. Perimeter calculation.
+5. Semiperimeter calculation.
+6. Correct measurement units.
+7. Practical interpretation.
+8. Explanation of what the result helps estimate.
+
+Use these exact examples.
+
+### EXAMPLE 1 — TRIANGULAR GLASS WINDOW FRAME
+
+A right-triangular window has:
+
+\[
+a=3\text{ m},\quad b=4\text{ m},\quad c=5\text{ m}
+\]
+
+Perimeter:
+
+\[
+P=3+4+5
+\]
+
+\[
+\boxed{P=12\text{ m}}
+\]
+
+Semiperimeter:
+
+\[
+s=\frac{12}{2}
+\]
+
+\[
+\boxed{s=6\text{ m}}
+\]
+
+Explain that 12 metres is the total length around the window's triangular outline.
+
+### EXAMPLE 2 — ROOF EDGE TRIM
+
+A triangular roof-end section has:
+
+\[
+a=6\text{ ft},\quad b=8\text{ ft},\quad c=10\text{ ft}
+\]
+
+\[
+P=6+8+10
+\]
+
+\[
+\boxed{P=24\text{ ft}}
+\]
+
+\[
+s=\frac{24}{2}
+\]
+
+\[
+\boxed{s=12\text{ ft}}
+\]
+
+Explain how perimeter helps estimate trim around the triangular outline.
+
+### EXAMPLE 3 — GARDEN BORDER
+
+A right-triangular garden section has:
+
+\[
+a=5\text{ m},\quad b=12\text{ m},\quad c=13\text{ m}
+\]
+
+\[
+P=5+12+13
+\]
+
+\[
+\boxed{P=30\text{ m}}
+\]
+
+\[
+s=15\text{ m}
+\]
+
+Explain how the perimeter helps estimate the full length of garden edging.
+
+### EXAMPLE 4 — STEEL SUPPORT BRACKET
+
+A triangular metal bracket has:
+
+\[
+a=8\text{ cm},\quad b=15\text{ cm},\quad c=17\text{ cm}
+\]
+
+\[
+P=8+15+17
+\]
+
+\[
+\boxed{P=40\text{ cm}}
+\]
+
+\[
+\boxed{s=20\text{ cm}}
+\]
+
+Explain how the perimeter describes the bracket's outer edge.
+
+### EXAMPLE 5 — TRIANGULAR FABRIC PANEL
+
+A right-triangular fabric panel has:
+
+\[
+a=9\text{ ft},\quad b=12\text{ ft},\quad c=15\text{ ft}
+\]
+
+\[
+P=9+12+15
+\]
+
+\[
+\boxed{P=36\text{ ft}}
+\]
+
+\[
+\boxed{s=18\text{ ft}}
+\]
+
+Explain how the perimeter helps estimate the edge length before adding seam allowances.
+
+### EXAMPLE 6 — TRIANGULAR SIGN FRAME
+
+A sign has a right-triangular shape with:
+
+\[
+a=12\text{ cm},\quad b=16\text{ cm},\quad c=20\text{ cm}
+\]
+
+\[
+P=12+16+20
+\]
+
+\[
+\boxed{P=48\text{ cm}}
+\]
+
+\[
+\boxed{s=24\text{ cm}}
+\]
+
+Explain how the total perimeter helps estimate the framing material.
+
+### EXAMPLE 7 — LANDSCAPING BOUNDARY
+
+A right-triangular landscaping section has:
+
+\[
+a=7\text{ m},\quad b=24\text{ m},\quad c=25\text{ m}
+\]
+
+\[
+P=7+24+25
+\]
+
+\[
+\boxed{P=56\text{ m}}
+\]
+
+\[
+\boxed{s=28\text{ m}}
+\]
+
+Explain how perimeter can help estimate border material around the section.
+
+### EXAMPLE 8 — TRIANGULAR SOLAR PANEL SUPPORT
+
+A simplified triangular support frame has:
+
+\[
+a=9\text{ m},\quad b=40\text{ m},\quad c=41\text{ m}
+\]
+
+\[
+P=9+40+41
+\]
+
+\[
+\boxed{P=90\text{ m}}
+\]
+
+\[
+\boxed{s=45\text{ m}}
+\]
+
+Explain that these are the lengths of the three sides of the modeled triangular frame.
+
+### EXAMPLE 9 — TRIANGULAR AWNING BORDER
+
+A right-triangular awning section has:
+
+\[
+a=15\text{ ft},\quad b=20\text{ ft},\quad c=25\text{ ft}
+\]
+
+\[
+P=15+20+25
+\]
+
+\[
+\boxed{P=60\text{ ft}}
+\]
+
+\[
+\boxed{s=30\text{ ft}}
+\]
+
+Explain how the perimeter helps estimate border material.
+
+### EXAMPLE 10 — WAREHOUSE ROOF-END FRAME
+
+A simplified right-triangular roof-end frame has:
+
+\[
+a=11\text{ m},\quad b=60\text{ m},\quad c=61\text{ m}
+\]
+
+\[
+P=11+60+61
+\]
+
+\[
+\boxed{P=132\text{ m}}
+\]
+
+\[
+\boxed{s=66\text{ m}}
+\]
+
+Explain how the result represents the full outline of the triangular section.
+
+### EXAMPLE 11 — TRIANGULAR FABRICATION PANEL
+
+A right-triangular industrial panel has:
+
+\[
+a=13\text{ cm},\quad b=84\text{ cm},\quad c=85\text{ cm}
+\]
+
+\[
+P=13+84+85
+\]
+
+\[
+\boxed{P=182\text{ cm}}
+\]
+
+\[
+\boxed{s=91\text{ cm}}
+\]
+
+Explain how perimeter can help estimate protective edge profiles.
+
+### EXAMPLE 12 — LARGE TRIANGULAR SUPPORT STRUCTURE
+
+A right-triangular support structure has:
+
+\[
+a=28\text{ m},\quad b=45\text{ m},\quad c=53\text{ m}
+\]
+
+\[
+P=28+45+53
+\]
+
+\[
+\boxed{P=126\text{ m}}
+\]
+
+\[
+\boxed{s=63\text{ m}}
+\]
+
+Explain how these measurements can be used as geometric inputs for further engineering calculations.
+
+### Practical examples comparison table
+
+After the 12 examples, create a comparison table containing:
+
+- Practical application.
+- Leg a.
+- Leg b.
+- Hypotenuse c.
+- Perimeter P.
+- Semiperimeter s.
+- Measurement unit.
+
+Do not repeat the complete calculations in the table.
+
+### Important practical-example requirements
+
+Describe all applications as simplified right-triangular objects or models.
+
+Do not imply that every actual window, roof, garden, awning, panel, or support structure is automatically a perfect right triangle.
+
+Explain that:
+
+- Material allowances may be needed.
+- Cutting waste is not included.
+- Curved boundaries require different calculations.
+- Structural strength cannot be determined from perimeter alone.
+- Actual construction measurements should be verified before purchasing materials.
+
+---
+
+## 13. HOW TO FIND A MISSING SIDE BEFORE CALCULATING PERIMETER
+
+H2: How to Calculate Perimeter When One Side Is Missing
+
+Explain that the existing calculator requires all three side lengths.
+
+If one side is unknown, calculate it first.
+
+### H3: Finding the Hypotenuse When Both Legs Are Known
+
+Use the Pythagorean theorem:
+
+\[
+\boxed{c=\sqrt{a^2+b^2}}
+\]
+
+Example:
+
+\[
+a=6,\quad b=8
+\]
+
+\[
+c=\sqrt{6^2+8^2}
+\]
+
+\[
+c=\sqrt{36+64}
+\]
+
+\[
+\boxed{c=10}
+\]
+
+Then calculate:
+
+\[
+P=6+8+10
+\]
+
+\[
+\boxed{P=24}
+\]
+
+### H3: Finding a Missing Leg When the Hypotenuse Is Known
+
+Rearrange:
+
+\[
+a^2+b^2=c^2
+\]
+
+Therefore:
+
+\[
+\boxed{a=\sqrt{c^2-b^2}}
+\]
+
+Example:
+
+\[
+c=13,\quad b=12
+\]
+
+\[
+a=\sqrt{13^2-12^2}
+\]
+
+\[
+a=\sqrt{169-144}
+\]
+
+\[
+\boxed{a=5}
+\]
+
+Then calculate perimeter.
+
+### H3: Why Must the Missing Side Be Calculated First?
+
+Explain that perimeter requires all three boundary lengths.
+
+A missing side cannot simply be ignored or estimated without justification.
+
+Provide a contextual internal link to the Right Triangle Side Calculator.
+
+Clarify that this is an educational method and not an additional input mode in the existing calculator.
+
+---
+
+## 14. RELATIONSHIP WITH THE PYTHAGOREAN THEOREM
+
+H2: How Is the Pythagorean Theorem Related to Right Triangle Perimeter?
+
+Introduce:
+
+\[
+\boxed{a^2+b^2=c^2}
+\]
+
+Explain that the theorem establishes the relationship between the two legs and the hypotenuse.
+
+### H3: Why Does It Matter for Perimeter?
+
+Explain that if the two legs are known, the hypotenuse can be calculated before finding the complete perimeter.
+
+### H3: Worked Example
+
+Given:
+
+\[
+a=5,\quad b=12
+\]
+
+Find c:
+
+\[
+c=\sqrt{5^2+12^2}
+\]
+
+\[
+c=\sqrt{25+144}
+\]
+
+\[
+\boxed{c=13}
+\]
+
+Calculate perimeter:
+
+\[
+P=5+12+13
+\]
+
+\[
+\boxed{P=30}
+\]
+
+Calculate semiperimeter:
+
+\[
+s=\frac{30}{2}
+\]
+
+\[
+\boxed{s=15}
+\]
+
+### H3: How Can You Verify a Right Triangle?
+
+Explain that the three measurements must satisfy:
+
+\[
+a^2+b^2=c^2
+\]
+
+The hypotenuse must be the longest side.
+
+Also explain the triangle inequality.
+
+For any valid triangle:
+
+\[
+a+b>c
+\]
+
+\[
+a+c>b
+\]
+
+\[
+b+c>a
+\]
+
+Explain why these conditions matter when checking measurements.
+
+---
+
+## 15. WHY SEMIPERIMETER IS IMPORTANT IN ADVANCED GEOMETRY
+
+H2: How Is Semiperimeter Used in Other Triangle Formulas?
+
+This section should provide mathematical depth without changing the main subject of the page.
+
+### H3: Relationship Between Semiperimeter and Inradius
+
+Introduce:
+
+\[
+\boxed{K=rs}
+\]
+
+Where:
+
+- K = area.
+- r = inradius.
+- s = semiperimeter.
+
+Explain that this relationship works for all nondegenerate triangles.
+
+For a right triangle, the inradius can also be calculated using:
+
+\[
+\boxed{r=\frac{a+b-c}{2}}
+\]
+
+Show a 3-4-5 example:
+
+\[
+s=6,\quad r=1
+\]
+
+\[
+K=1\times6
+\]
+
+\[
+\boxed{K=6}
+\]
+
+Explain that semiperimeter is an important intermediate measurement in this calculation.
+
+### H3: Relationship With Heron's Formula
+
+Introduce:
+
+\[
+\boxed{K=\sqrt{s(s-a)(s-b)(s-c)}}
+\]
+
+Explain:
+
+- It uses all three side lengths.
+- It uses the semiperimeter.
+- It calculates triangle area.
+- It works for any valid triangle.
+
+Use a 3-4-5 example:
+
+\[
+s=6
+\]
+
+\[
+K=\sqrt{6(6-3)(6-4)(6-5)}
+\]
+
+\[
+K=\sqrt{36}
+\]
+
+\[
+\boxed{K=6}
+\]
+
+### H3: Why Is Semiperimeter a Foundation Measurement?
+
+Explain that semiperimeter is more than half a perimeter. It is a useful mathematical quantity that connects side lengths to area and circle geometry.
+
+Do not turn this section into a full Heron's formula or inradius calculator tutorial.
+
+---
+
+## 16. PERIMETER VS. AREA
+
+H2: What Is the Difference Between Perimeter and Area?
+
+Explain this important distinction clearly.
+
+### H3: Perimeter Measures the Boundary
+
+\[
+P=a+b+c
+\]
+
+It measures the total length around the triangle.
+
+Units:
+
+- Metres.
+- Centimetres.
+- Feet.
+- Inches.
+
+### H3: Area Measures the Enclosed Surface
+
+\[
+\boxed{K=\frac{ab}{2}}
+\]
+
+It measures the flat two-dimensional region inside the right triangle.
+
+Units:
+
+- Square metres.
+- Square centimetres.
+- Square feet.
+- Square inches.
+
+### H3: Can Two Triangles Have the Same Perimeter but Different Areas?
+
+Yes.
+
+Use:
+
+Triangle 1:
+
+\[
+a=3,\quad b=4,\quad c=5
+\]
+
+\[
+P=12
+\]
+
+\[
+K=6
+\]
+
+Triangle 2:
+
+\[
+a=4,\quad b=\sqrt{32},\quad c=\sqrt{48}
+\]
+
+Explain that the example should only be used if all three measurements and the perimeter equality are verified. Prefer a simple exact Pythagorean comparison or a mathematically verified alternative.
+
+Demonstrate that equal perimeter does not automatically mean equal area.
+
+### H3: Why Should You Never Report Perimeter in Square Units?
+
+Explain the difference between one-dimensional length and two-dimensional surface measurement.
+
+Use simple examples.
+
+---
+
+## 17. MEASUREMENT UNITS AND DECIMAL CALCULATIONS
+
+H2: Understanding Measurement Units in Perimeter and Semiperimeter Calculations
+
+Explain:
+
+- Metres.
+- Centimetres.
+- Millimetres.
+- Kilometres.
+- Feet.
+- Inches.
+- Yards.
+- Miles.
+
+### H3: Why Must All Three Side Lengths Use Compatible Units?
+
+Explain that perimeter is a sum of lengths.
+
+Before adding measurements, convert them into a common unit.
+
+### H3: Worked Unit Conversion Example
+
+Given:
+
+\[
+a=3\text{ ft}
+\]
+
+\[
+b=48\text{ inches}
+\]
+
+\[
+c=5\text{ ft}
+\]
+
+Convert:
+
+\[
+48\text{ inches}=4\text{ ft}
+\]
+
+Then:
+
+\[
+P=3+4+5
+\]
+
+\[
+\boxed{P=12\text{ ft}}
+\]
+
+Semiperimeter:
+
+\[
+\boxed{s=6\text{ ft}}
+\]
+
+Explain why mixing units without conversion produces an incorrect result.
+
+### H3: Calculating With Decimal Side Measurements
+
+Use:
+
+\[
+a=2.5,\quad b=6,\quad c=6.5
+\]
+
+Calculate:
+
+\[
+P=2.5+6+6.5
+\]
+
+\[
+\boxed{P=15\text{ units}}
+\]
+
+Then:
+
+\[
+s=\frac{15}{2}
+\]
+
+\[
+\boxed{s=7.5\text{ units}}
+\]
+
+### H3: Why Should You Avoid Rounding Too Early?
+
+Explain that measurement calculations may contain decimal values.
+
+Keep sufficient precision in intermediate steps and round only the final answer according to the measurement accuracy required.
+
+---
+
+## 18. HOW PERIMETER CHANGES WHEN TRIANGLE DIMENSIONS CHANGE
+
+H2: How Do Changes in Side Lengths Affect Perimeter and Semiperimeter?
+
+### H3: What Happens When Every Side Doubles?
+
+Original:
+
+\[
+P=a+b+c
+\]
+
+If every side doubles:
+
+\[
+P_2=2a+2b+2c
+\]
+
+Therefore:
+
+\[
+\boxed{P_2=2P}
+\]
+
+Semiperimeter also doubles.
+
+### H3: What Happens When Every Side Is Tripled?
+
+\[
+\boxed{P_2=3P}
+\]
+
+\[
+\boxed{s_2=3s}
+\]
+
+Explain the linear scaling relationship.
+
+### H3: What Happens When Only One Side Changes?
+
+Explain that increasing one side while keeping the other two fixed changes the perimeter by the same amount, provided the resulting measurements still form a valid right triangle.
+
+Clarify that in a right triangle, side lengths are related by the Pythagorean theorem, so arbitrary side changes may not preserve the right-angle condition.
+
+### H3: Comparing Two Right Triangles
+
+Use a 3-4-5 triangle and a 6-8-10 triangle.
+
+Compare:
+
+- Side lengths.
+- Perimeter.
+- Semiperimeter.
+- Scale factor.
+
+Explain how doubling all side lengths doubles both boundary measurements.
+
+---
+
+## 19. COMMON MISTAKES AND HOW TO AVOID THEM
+
+H2: Common Mistakes When Calculating Right Triangle Perimeter and Semiperimeter
+
+Discuss at least these 16 mistakes:
+
+1. Forgetting to include the hypotenuse.
+2. Confusing the perimeter with the semiperimeter.
+3. Dividing the perimeter by two when calculating perimeter.
+4. Forgetting to divide by two when calculating semiperimeter.
+5. Using the wrong side as the hypotenuse.
+6. Entering measurements that do not form a right triangle.
+7. Mixing centimetres and metres.
+8. Mixing feet and inches.
+9. Reporting perimeter in square units.
+10. Reporting semiperimeter as an area.
+11. Rounding too early.
+12. Using only two sides in the existing calculator.
+13. Ignoring the triangle inequality.
+14. Assuming the semiperimeter is a physical half-boundary path.
+15. Confusing perimeter with the sum of only the perpendicular legs.
+16. Assuming perimeter alone determines the triangle's area.
+
+For each mistake:
+
+- Explain what goes wrong.
+- Explain why it happens.
+- Show the correct approach.
+- Include a numerical example where useful.
+
+### Wrong-versus-correct example
+
+Given:
+
+\[
+a=3,\quad b=4,\quad c=5
+\]
+
+Correct perimeter:
+
+\[
+P=3+4+5=12
+\]
+
+Incorrectly omitting the hypotenuse:
+
+\[
+3+4=7
+\]
+
+Explain why 7 is not the complete perimeter.
+
+Correct semiperimeter:
+
+\[
+s=\frac{12}{2}=6
+\]
+
+Explain why 6 is not the full boundary length.
+
+---
+
+## 20. HOW TO VERIFY YOUR CALCULATED RESULT
+
+H2: How to Check Whether Your Right Triangle Perimeter Is Correct
+
+Explain the following verification methods.
+
+### Method 1: Add All Three Sides Again
+
+\[
+P=a+b+c
+\]
+
+### Method 2: Divide the Perimeter by Two
+
+\[
+s=\frac{P}{2}
+\]
+
+### Method 3: Double the Semiperimeter
+
+\[
+\boxed{P=2s}
+\]
+
+### Method 4: Verify the Pythagorean Relationship
+
+\[
+a^2+b^2=c^2
+\]
+
+### Method 5: Check the Triangle Inequality
+
+\[
+a+b>c
+\]
+
+### Method 6: Check the Measurement Units
+
+Confirm that all three sides use compatible units.
+
+### Method 7: Compare With the Live Visualization
+
+Explain how the displayed triangle helps users identify incorrectly assigned sides.
+
+Use the 3-4-5 example to demonstrate these checks.
+
+Explain why independent verification is useful in homework, technical drawings, and material estimation.
+
+---
+
+## 21. FOURTH DIAGRAM — REAL-WORLD APPLICATIONS
+
+### DIAGRAM 4 — Practical Uses of Right Triangle Perimeter
+
+Create a four-panel educational infographic.
+
+Show:
+
+**Panel 1: Triangular window frame**
+
+\[
+a=3\text{ m},\quad b=4\text{ m},\quad c=5\text{ m}
+\]
+
+\[
+P=12\text{ m}
+\]
+
+**Panel 2: Roof edge trim**
+
+\[
+a=6\text{ ft},\quad b=8\text{ ft},\quad c=10\text{ ft}
+\]
+
+\[
+P=24\text{ ft}
+\]
+
+**Panel 3: Garden border**
+
+\[
+a=7\text{ m},\quad b=24\text{ m},\quad c=25\text{ m}
+\]
+
+\[
+P=56\text{ m}
+\]
+
+**Panel 4: Steel support frame**
+
+\[
+a=8\text{ cm},\quad b=15\text{ cm},\quad c=17\text{ cm}
+\]
+
+\[
+P=40\text{ cm}
+\]
+
+Each panel must show:
+
+- A recognizable triangular object.
+- Three side measurements.
+- A highlighted outer boundary.
+- The perimeter formula.
+- The final result.
+
+Include a smaller semiperimeter value for each example.
+
+Provide:
+
+- Exact article placement.
+- Heading.
+- Caption.
+- Filename.
+- Alt text.
+- Detailed SVG drawing instructions.
+- Responsive layout instructions.
+
+---
+
+## 22. FREQUENTLY ASKED QUESTIONS
+
+H2: Frequently Asked Questions
+
+Write 12 original, detailed, mathematically accurate FAQs.
+
+Include:
+
+1. What is the formula for the perimeter of a right triangle?
+2. What is the formula for the semiperimeter of a right triangle?
+3. What is the difference between perimeter and semiperimeter?
+4. Why is the hypotenuse included in the perimeter?
+5. Can I calculate perimeter if one side is missing?
+6. How do I find the hypotenuse before calculating perimeter?
+7. Why is semiperimeter useful in geometry?
+8. Is semiperimeter half the triangle's area?
+9. What units should I use for perimeter?
+10. Can I calculate perimeter using decimal measurements?
+11. How do I check whether three sides form a valid right triangle?
+12. What is the relationship between semiperimeter, inradius, and Heron's formula?
+
+Write approximately 40–75 words per answer where useful.
+
+Every answer must be self-contained.
+
+Avoid repeating entire paragraphs from the article.
+
+---
+
+## 23. INTERNAL LINKING STRATEGY
+
+H2: Explore Related Right Triangle Calculators
+
+Inspect the website and recommend relevant internal links.
+
+Potential destinations:
+
+- Right Triangle Calculator.
+- Right Triangle Side Calculator.
+- Right Triangle Area Calculator.
+- Right Triangle Inradius and Circumradius Calculator.
+- Right Triangle Area From Semiperimeter Calculator.
+- Right Triangle Measurements Calculator.
+
+Verify all destination URLs before including them.
+
+For each internal link provide:
+
+- Exact verified URL.
+- Suggested anchor text.
+- Recommended placement.
+- Reason the link helps the reader.
+
+### Contextual linking examples
+
+Link to the Right Triangle Side Calculator when a user knows only two sides and needs to calculate the missing side.
+
+Link to the Right Triangle Area Calculator when a reader wants to calculate the enclosed surface rather than its boundary length.
+
+Link to the Right Triangle Inradius and Circumradius Calculator when the semiperimeter is being used for circle-related calculations.
+
+Link to the Right Triangle Area From Semiperimeter Calculator when readers want to use semiperimeter as part of an area calculation.
+
+Do not invent URLs.
+
+Avoid irrelevant internal links.
+
+Do not duplicate the full content of related calculator pages.
+
+---
+
+## 24. SEO OPTIMIZATION REQUIREMENTS
+
+### Primary keyword
+
+Right Triangle Perimeter and Semiperimeter Calculator
+
+### Secondary keywords
+
+- right triangle perimeter calculator
+- right triangle semiperimeter calculator
+- perimeter of a right triangle
+- semiperimeter of a right triangle
+- right triangle perimeter formula
+- right triangle semiperimeter formula
+- how to calculate triangle perimeter
+- how to find semiperimeter
+- perimeter using three sides
+- right triangle side lengths
+- triangle perimeter calculation
+- perimeter vs semiperimeter
+- Pythagorean theorem and perimeter
+- right triangle measurements
+- perimeter of a 3 4 5 triangle
+- semiperimeter formula with examples
+
+Use keywords naturally.
+
+Do not force the primary keyword into every heading.
+
+### Semantic concepts
+
+Cover:
+
+- Right triangle.
+- Perpendicular legs.
+- Hypotenuse.
+- Right angle.
+- Side lengths.
+- Perimeter.
+- Semiperimeter.
+- Triangle inequality.
+- Pythagorean theorem.
+- Heron's formula.
+- Inradius.
+- Circumradius.
+- Incircle.
+- Boundary length.
+- Linear measurement.
+- Unit conversion.
+- Decimal measurements.
+- Material estimation.
+- Border.
+- Trim.
+- Edging.
+- Fabrication.
+- Construction geometry.
+- Surveying.
+
+### Search intent
+
+The article must satisfy users who want to:
+
+- Calculate the complete boundary length.
+- Calculate half the perimeter.
+- Understand the two formulas.
+- Identify the three correct sides.
+- Understand the role of the hypotenuse.
+- Compare perimeter and semiperimeter.
+- Find a missing side before calculating perimeter.
+- Understand the Pythagorean theorem connection.
+- Estimate materials for triangular borders.
+- Convert measurement units.
+- Solve practical problems.
+- Understand how semiperimeter is used in advanced geometry.
+- Avoid common calculation mistakes.
+- Verify their answers.
+
+### SEO metadata
+
+Provide:
+
+1. SEO title, approximately 50–60 characters where practical.
+2. Meta description, approximately 145–160 characters.
+3. Primary keyword.
+4. Secondary keywords.
+5. Four descriptive diagram filenames.
+6. Four accessible image alt texts.
+7. Verified internal links.
+8. Relevant structured-data recommendations.
+
+Do not invent search volumes, keyword difficulty, traffic, rankings, reviews, or backlinks.
+
+Do not guarantee first-page rankings.
+
+Keep the existing URL unchanged.
+
+---
+
+## 25. FOUR ORIGINAL EDUCATIONAL DIAGRAMS
+
+Create exactly four main diagrams.
+
+### DIAGRAM 1 — Anatomy of a Right Triangle
+
+Show:
+
+- Triangle ABC.
+- Right angle C.
+- Leg a.
+- Leg b.
+- Hypotenuse c.
+- Acute angles A and B.
+- Perpendicular marker.
+
+Purpose: Teach readers to identify the three side measurements.
+
+### DIAGRAM 2 — Perimeter vs. Semiperimeter
+
+Show:
+
+- A 6-8-10 right triangle.
+- All three highlighted boundary sides.
+- Total perimeter.
+- Semiperimeter.
+- A visual distinction between boundary length and enclosed area.
+
+Purpose: Make the difference between P and s immediately clear.
+
+### DIAGRAM 3 — Calculating a Missing Side Before Perimeter
+
+Show:
+
+- A right triangle with legs 6 and 8.
+- An initially unknown hypotenuse.
+- Pythagorean theorem.
+- Calculated hypotenuse of 10.
+- Final perimeter of 24.
+
+Purpose: Demonstrate why all three sides are needed for the perimeter calculation.
+
+### DIAGRAM 4 — Practical Applications
+
+Show four real-world applications:
+
+- Triangular window frame.
+- Roof edge trim.
+- Garden border.
+- Steel support frame.
+
+Show the three side measurements and calculated perimeter for each.
+
+### Diagram production requirements
+
+For all four diagrams provide:
+
+- Exact article placement.
+- Heading.
+- Caption.
+- Filename.
+- Alt text under 125 characters.
+- Detailed SVG drawing instructions or image-generation prompts.
+- Responsive layout guidance.
+
+All diagrams must be:
+
+- Original.
+- Mathematically accurate.
+- Easy to understand.
+- Professionally designed.
+- Mobile-friendly.
+- Consistent in visual style.
+- Properly labelled.
+
+Do not use decorative diagrams that simply repeat the same information.
+
+Ensure that all right-angle markers and side labels are geometrically correct.
+
+---
+
+## 26. TECHNICAL AND CONTENT PRESERVATION
+
+Preserve the existing calculator:
+
+- Perimeter mode.
+- Semiperimeter mode.
+- Leg a input.
+- Leg b input.
+- Hypotenuse c input.
+- Unit selectors.
+- Calculate Perimeter button.
+- Calculate Semiperimeter button.
+- Reset controls.
+- Result displays.
+- Solution steps.
+- Live visualizations.
+- Formula diagrams.
+
+Do not:
+
+- Replace the calculator with a static image.
+- Create a duplicate calculator.
+- Remove either calculator mode.
+- Change the core formulas.
+- Remove existing functionality.
+- Invent additional input fields.
+- Add an area calculator inside this page.
+- Confuse perimeter with area.
+- Confuse semiperimeter with full perimeter.
+- Ignore the hypotenuse.
+- Use inconsistent measurement units.
+- Report perimeter in square units.
+- Add irrelevant content.
+- Repeat paragraphs to increase word count.
+
+Use semantic headings, accessible diagrams, readable mathematical notation, and responsive design.
+
+---
+
+## 27. FINAL OUTPUT FORMAT
+
+Deliver the completed work in the following order.
+
+### A. SEO Metadata
+
+Provide:
+
+- SEO title.
+- Meta description.
+- Primary keyword.
+- Secondary keywords.
+- Four diagram filenames.
+- Four image alt texts.
+
+### B. Complete Publish-Ready Article
+
+Include:
+
+- Introduction.
+- Right-triangle geometry.
+- Understanding the legs.
+- Understanding the hypotenuse.
+- Perimeter explanation.
+- Semiperimeter explanation.
+- Perimeter vs. semiperimeter.
+- Explanation of the two calculator modes.
+- Calculator instructions.
+- Four foundational examples.
+- Twelve practical examples.
+- Finding a missing side.
+- Pythagorean theorem relationship.
+- Advanced uses of semiperimeter.
+- Perimeter vs. area.
+- Measurement units.
+- Decimal calculations.
+- Scaling relationships.
+- Common mistakes.
+- Verification methods.
+- FAQs.
+- Internal links.
+- Conclusion.
+
+### C. Four Original Diagrams
+
+For every diagram provide:
+
+- Exact article placement.
+- Heading.
+- Caption.
+- Filename.
+- Alt text.
+- Detailed drawing instructions.
+- SVG code or image-generation prompt.
+
+### D. Internal Linking Recommendations
+
+Provide verified URLs and natural anchor text.
+
+### E. Final Editorial Quality Report
+
+Confirm:
+
+- Mathematical accuracy.
+- Correct perimeter formula.
+- Correct semiperimeter formula.
+- Correct Pythagorean calculations.
+- Valid numerical examples.
+- Accurate unit conversions.
+- Correct linear units.
+- Accurate diagrams.
+- Natural writing.
+- SEO coverage.
+- Calculator functionality preservation.
+
+Do not provide only an outline.
+
+Do not replace worked examples with placeholders.
+
+Do not deliver a short summary instead of the complete article.
+
+If the complete deliverable cannot fit into one response, deliver complete numbered sections in consecutive batches.
+
+---
+
+## 28. FINAL MATHEMATICAL QUALITY-CONTROL CHECKLIST
+
+Before delivering the finished article, independently verify:
+
+1. The perimeter formula is \(P=a+b+c\).
+2. The semiperimeter formula is \(s=(a+b+c)/2\).
+3. The relationship \(s=P/2\) is correct.
+4. The two legs meet at exactly 90 degrees.
+5. The hypotenuse is opposite the right angle.
+6. The hypotenuse is the longest side.
+7. All three sides are included in perimeter.
+8. Semiperimeter is exactly half the perimeter.
+9. The Pythagorean theorem is used correctly.
+10. The triangle inequality is explained accurately.
+11. All 12 practical examples use valid right-triangle measurements.
+12. All numerical calculations are independently checked.
+13. Perimeter is expressed in linear units.
+14. Semiperimeter is expressed in linear units.
+15. Area is expressed in square units.
+16. Perimeter and area are never confused.
+17. Unit conversions are correct.
+18. Decimal calculations are correct.
+19. All four diagrams show correct geometry.
+20. The two calculator modes are accurately explained.
+21. The existing calculator functionality is preserved.
+22. Internal links use verified destinations.
+23. The article avoids keyword stuffing.
+24. No unsupported calculator features are claimed.
+
+**ULTIMATE GOAL:** Produce an exceptionally useful, comprehensive, original, and naturally written educational guide explaining how to calculate the perimeter and semiperimeter of a right triangle. Teach readers what the three sides represent, why all three must be included in the perimeter, why semiperimeter is half the total, how the Pythagorean theorem helps determine missing measurements, and how these values are used in practical construction, geometry, and material estimation. Include 12 realistic applications, four original educational diagrams, detailed mathematical proofs and examples, and a clear explanation of both calculator modes. The finished content must explain not only how to calculate the answer but also why the mathematics works.

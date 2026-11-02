@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="48" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">Geometric Mean Theorem and Maximum Altitude</text>
+  <line x1="600" y1="84" x2="600" y2="600" stroke="#333333" stroke-width="2"/>
+  <text x="300" y="108" font-size="23" font-weight="700" fill="#f1c97d" text-anchor="middle">A: altitude splits the hypotenuse</text>
+  <polygon points="80,470 336,278 480,470" fill="#ffffff" fill-opacity="0.05"/>
+  <line x1="80" y1="470" x2="480" y2="470" stroke="#f1c97d" stroke-width="7" stroke-linecap="round"/>
+  <line x1="336" y1="278" x2="336" y2="470" stroke="#4ade80" stroke-width="6" stroke-linecap="round"/>
+  <line x1="80" y1="470" x2="336" y2="278" stroke="#a3a3a3" stroke-width="5" stroke-linecap="round"/>
+  <line x1="336" y1="278" x2="480" y2="470" stroke="#a3a3a3" stroke-width="5" stroke-linecap="round"/>
+  <polyline points="320,290 332,306 348,294" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polyline points="336,450 356,450 356,470" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="80.0" cy="470.0" r="6" fill="#ffffff"/>
+  <circle cx="480.0" cy="470.0" r="6" fill="#ffffff"/>
+  <circle cx="336.0" cy="278.0" r="6" fill="#ffffff"/>
+  <circle cx="336.0" cy="470.0" r="6" fill="#ffffff"/>
+  <text x="208" y="446" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">p = 6.4</text>
+  <text x="408" y="446" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">q = 3.6</text>
+  <text x="281" y="382" font-size="22" font-style="italic" font-weight="700" fill="#4ade80" text-anchor="middle">h = 4.8</text>
+  <text x="280" y="508" font-size="22" font-style="italic" font-weight="700" fill="#f1c97d" text-anchor="middle">c = 10</text>
+  <text x="62" y="492" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+  <text x="498" y="492" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="318" y="262" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <text x="358" y="500" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">D</text>
+  <text x="300" y="552" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">h² = p x q</text>
+  <text x="300" y="586" font-size="20" fill="#a3a3a3" text-anchor="middle">4.8² = 6.4 x 3.6 = 23.04</text>
+  <text x="900" y="108" font-size="23" font-weight="700" fill="#f1c97d" text-anchor="middle">B: maximum altitude h = c/2</text>
+  <polygon points="680,470 880,270 1080,470" fill="#ffffff" fill-opacity="0.05"/>
+  <line x1="680" y1="470" x2="1080" y2="470" stroke="#f1c97d" stroke-width="7" stroke-linecap="round"/>
+  <line x1="880" y1="270" x2="880" y2="470" stroke="#4ade80" stroke-width="6" stroke-linecap="round"/>
+  <line x1="680" y1="470" x2="880" y2="270" stroke="#a3a3a3" stroke-width="5" stroke-linecap="round"/>
+  <line x1="880" y1="270" x2="1080" y2="470" stroke="#a3a3a3" stroke-width="5" stroke-linecap="round"/>
+  <polyline points="860,470 860,450 880,450" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="680.0" cy="470.0" r="6" fill="#ffffff"/>
+  <circle cx="1080.0" cy="470.0" r="6" fill="#ffffff"/>
+  <circle cx="880.0" cy="270.0" r="6" fill="#ffffff"/>
+  <circle cx="880.0" cy="470.0" r="6" fill="#ffffff"/>
+  <text x="722" y="448" font-size="22" font-style="italic" fill="#ffffff" text-anchor="middle">45°</text>
+  <text x="1038" y="448" font-size="22" font-style="italic" fill="#ffffff" text-anchor="middle">45°</text>
+  <text x="912" y="378" font-size="22" font-style="italic" font-weight="700" fill="#4ade80" text-anchor="middle">h = 5</text>
+  <text x="880" y="508" font-size="22" font-style="italic" font-weight="700" fill="#f1c97d" text-anchor="middle">c = 10</text>
+  <text x="662" y="492" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+  <text x="1098" y="492" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="862" y="254" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <text x="900" y="552" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">Kmax = c²/4</text>
+  <text x="900" y="586" font-size="20" fill="#a3a3a3" text-anchor="middle">Kmax = (10 x 5)/2 = 25 square units</text>
+</svg>

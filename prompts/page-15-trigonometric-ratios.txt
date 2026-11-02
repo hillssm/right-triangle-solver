@@ -1,0 +1,2242 @@
+# MASTER PROMPT: Right Triangle Trigonometric Ratios Calculator — Comprehensive Educational Guide, 12 Practical Examples, Four Diagrams, and SEO
+
+## 1. ROLE AND OBJECTIVE
+
+Act as an experienced mathematics educator, trigonometry specialist, educational content strategist, professional human-style content writer, and technical SEO expert.
+
+Your task is to research, expand, and improve the educational content on the following webpage.
+
+**Website:** Right Triangle Solver
+
+**Target URL:** https://www.righttrianglesolver.com/right-triangle-trig-ratios-calculator/
+
+**Primary keyword:** Right Triangle Trig Ratios Calculator
+
+**Language:** English (US)
+
+**Recommended article length:** 4,000–5,000 words, excluding diagram code, image-generation instructions, and SEO metadata.
+
+### Main objective
+
+Create a comprehensive educational guide that teaches readers how to calculate and understand all six trigonometric ratios in a right triangle.
+
+The six ratios are:
+
+1. Sine.
+2. Cosine.
+3. Tangent.
+4. Cotangent.
+5. Secant.
+6. Cosecant.
+
+The content must explain not only how to calculate each ratio, but also why each formula works, how the ratios relate to one another, when each ratio is useful, and how they appear in practical measurements.
+
+The guide must help readers understand:
+
+- What a right triangle is and how its sides are identified.
+- How the opposite side, adjacent side, and hypotenuse depend on the reference angle.
+- What trigonometric ratios measure.
+- Why sine equals opposite divided by hypotenuse.
+- Why cosine equals adjacent divided by hypotenuse.
+- Why tangent equals opposite divided by adjacent.
+- Why cotangent, secant, and cosecant are reciprocal trigonometric ratios.
+- How to choose the correct calculator mode based on the known side lengths.
+- How to calculate all six ratios using a single valid right triangle.
+- How to use SOH-CAH-TOA to remember sine, cosine, and tangent.
+- How to distinguish direct ratios from reciprocal ratios.
+- Why trigonometric ratios are dimensionless.
+- Why sine and cosine are between 0 and 1 for an acute angle in a valid right triangle.
+- Why tangent and cotangent can be less than, equal to, or greater than 1.
+- Why secant and cosecant are greater than 1 for acute angles in a valid, non-degenerate right triangle.
+- How the six ratios change when the reference angle changes.
+- How complementary angles affect sine, cosine, tangent, and cotangent.
+- How to calculate a missing angle using inverse trigonometric functions.
+- How to calculate a missing side using a known angle and side.
+- How to verify calculations using the Pythagorean theorem and trigonometric identities.
+- How trigonometric ratios are used in ladders, ramps, roof pitch, surveying, elevation measurements, construction geometry, mechanical braces, and other practical situations.
+- How to identify incorrect inputs, reversed side labels, invalid triangles, and common calculation mistakes.
+
+The intended audience includes school and university students, teachers, engineering learners, physics students, construction learners, surveyors, DIY enthusiasts, and anyone studying right-triangle trigonometry.
+
+**Critical requirement:** Preserve the existing calculator and its six calculation modes. Expand the educational content around the calculator instead of replacing it, simplifying it, or building a duplicate calculator.
+
+---
+
+## 2. INSPECT THE EXISTING PAGE BEFORE WRITING
+
+Inspect the live page carefully before drafting the content.
+
+Review:
+
+- The H1 and introductory text.
+- The calculator's six modes.
+- Input labels and measurement-unit selectors.
+- Calculate and Reset buttons.
+- Result displays.
+- Solution steps.
+- Live triangle visualizations.
+- Existing educational explanations.
+- Existing usage instructions.
+- Common mistakes.
+- FAQs.
+- Related calculator links.
+- Page structure and heading hierarchy.
+
+The calculator offers six modes, each using the appropriate pair of side lengths.
+
+Use the following notation consistently throughout the article:
+
+- \(A\): the acute reference angle.
+- \(B\): the right angle.
+- \(C\): the other acute angle.
+- \(a\): the side opposite angle \(A\).
+- \(b\): the side adjacent to angle \(A\).
+- \(c\): the hypotenuse, opposite the right angle at \(B\).
+
+The triangle's angles satisfy:
+
+\[
+A+B+C=180^\circ
+\]
+
+Since \(B=90^\circ\):
+
+\[
+\boxed{A+C=90^\circ}
+\]
+
+The side lengths satisfy the Pythagorean theorem:
+
+\[
+\boxed{a^2+b^2=c^2}
+\]
+
+The hypotenuse must be the longest side of a valid, non-degenerate right triangle.
+
+### Important side-label convention
+
+Use a consistent triangle orientation in all four diagrams:
+
+- \(A\) at the bottom-left.
+- \(B\) at the bottom-right, marked as the right angle.
+- \(C\) at the upper vertex.
+- Side \(a\) as the vertical leg.
+- Side \(b\) as the horizontal base.
+- Side \(c\) as the sloping hypotenuse.
+
+With this convention, side \(a\) is opposite angle \(A\), side \(b\) is adjacent to angle \(A\), and side \(c\) is the hypotenuse.
+
+Explain that opposite and adjacent are defined relative to the selected reference angle. If the reference angle changes from \(A\) to \(C\), the roles of \(a\) and \(b\) switch.
+
+### Essential mathematical formulas
+
+Use these formulas accurately and consistently:
+
+**Sine**
+
+\[
+\boxed{\sin(A)=\frac{a}{c}}
+\]
+
+**Cosine**
+
+\[
+\boxed{\cos(A)=\frac{b}{c}}
+\]
+
+**Tangent**
+
+\[
+\boxed{\tan(A)=\frac{a}{b}}
+\]
+
+**Cotangent**
+
+\[
+\boxed{\cot(A)=\frac{b}{a}}
+\]
+
+**Secant**
+
+\[
+\boxed{\sec(A)=\frac{c}{b}}
+\]
+
+**Cosecant**
+
+\[
+\boxed{\csc(A)=\frac{c}{a}}
+\]
+
+### Reciprocal relationships
+
+\[
+\boxed{\csc(A)=\frac{1}{\sin(A)}}
+\]
+
+\[
+\boxed{\sec(A)=\frac{1}{\cos(A)}}
+\]
+
+\[
+\boxed{\cot(A)=\frac{1}{\tan(A)}}
+\]
+
+### Quotient relationships
+
+\[
+\boxed{\tan(A)=\frac{\sin(A)}{\cos(A)}}
+\]
+
+\[
+\boxed{\cot(A)=\frac{\cos(A)}{\sin(A)}}
+\]
+
+### Pythagorean trigonometric identities
+
+Explain these identities where appropriate:
+
+\[
+\sin^2(A)+\cos^2(A)=1
+\]
+
+\[
+1+\tan^2(A)=\sec^2(A)
+\]
+
+\[
+1+\cot^2(A)=\csc^2(A)
+\]
+
+Do not overwhelm beginners by presenting every identity before explaining the basic ratios. Introduce each concept in the appropriate section.
+
+### Important mathematical restrictions
+
+- All six ratios are dimensionless.
+- For an acute angle in a valid, non-degenerate right triangle, sine and cosine are strictly between 0 and 1.
+- Tangent and cotangent are positive and can be below, equal to, or above 1.
+- Secant and cosecant are greater than 1 for acute angles in a valid, non-degenerate right triangle.
+- The hypotenuse must be strictly longer than either leg.
+- The two leg lengths must be positive.
+- Measurements must use compatible units.
+- Reciprocal ratios must not be confused with inverse trigonometric functions.
+- Sine, cosine, and tangent are not interchangeable.
+- The trigonometric ratio is not the same thing as the angle.
+- The six ratios are related, but each answers a different mathematical question.
+
+Do not invent calculator features, output options, accuracy guarantees, or functionality that does not exist.
+
+---
+
+## 3. HUMAN WRITING REQUIREMENTS
+
+The content must read like an experienced mathematics teacher explaining trigonometry to a student who wants to understand the topic rather than memorise formulas.
+
+Follow these requirements:
+
+1. Write in clear, natural, professional English.
+2. Explain why formulas work, not just what the formulas are.
+3. Introduce concepts gradually, beginning with triangle geometry.
+4. Use natural transitions between sections.
+5. Keep paragraphs focused and readable.
+6. Vary sentence structure naturally.
+7. Explain technical terminology the first time it appears.
+8. Use realistic measurements and practical scenarios.
+9. Show the complete mathematical working for important examples.
+10. Explain the meaning of the result after each calculation.
+11. Avoid repeating the same definition in every section.
+12. Avoid filler and exaggerated claims.
+13. Do not invent personal experiences, professional credentials, testimonials, or research.
+14. Avoid unnatural keyword repetition.
+15. Do not write every paragraph as a bullet list.
+16. Do not force every trigonometric ratio into every practical example.
+17. Use examples that genuinely demonstrate the formula being discussed.
+18. Clearly distinguish ratios, side lengths, angles, slope, and percentage grade.
+19. Explain limitations when simplified geometry represents a real-world situation.
+20. Make the content useful to readers even if they have never used a trigonometric calculator before.
+
+Avoid generic AI phrases such as:
+
+- In today's fast-paced world
+- Let's delve into
+- Unlock the power of
+- In the realm of mathematics
+- Whether you're a beginner or an expert
+- Look no further
+- Seamlessly calculate
+- Revolutionise your calculations
+
+Do not deliberately introduce spelling mistakes or awkward wording to make the content appear human. Natural writing comes from clear reasoning, useful examples, varied explanations, and accurate mathematics.
+
+---
+
+## 4. REQUIRED ARTICLE STRUCTURE
+
+Preserve the existing page's H1 if it is already appropriate. Do not add a second H1.
+
+Recommended H1:
+
+# Right Triangle Trig Ratios Calculator
+
+If the live page already uses a slightly different H1, retain the existing heading unless there is a justified SEO reason to change it.
+
+Place the expanded educational guide around the existing calculator without removing useful interface elements.
+
+### SECTION 1 — INTRODUCTION
+
+H2: What Is a Right Triangle Trig Ratios Calculator?
+
+Write approximately 130–170 words.
+
+Explain:
+
+- What the calculator does.
+- Which six ratios it calculates.
+- Why the ratios depend on a reference angle and the triangle's side lengths.
+- How the six modes help users solve different types of problems.
+- Why the calculator can work without a direct angle input when the required side pair is known.
+- Why understanding the formula helps users verify the result.
+
+Begin with a simple 3-4-5 triangle.
+
+Given:
+
+- Opposite side \(a=3\).
+- Adjacent side \(b=4\).
+- Hypotenuse \(c=5\).
+
+Briefly show that the same triangle produces six different ratio values:
+
+\[
+\sin(A)=\frac{3}{5}=0.6
+\]
+
+\[
+\cos(A)=\frac{4}{5}=0.8
+\]
+
+\[
+\tan(A)=\frac{3}{4}=0.75
+\]
+
+Explain that the reciprocal ratios are calculated from the corresponding reciprocal fractions.
+
+Do not attempt to explain every ratio in full in the introduction. Use the example to show why one triangle can produce six different values.
+
+---
+
+## 5. UNDERSTANDING RIGHT TRIANGLES
+
+H2: Understanding the Sides of a Right Triangle
+
+### H3: What Is a Right Triangle?
+
+Explain:
+
+- A right triangle has one angle measuring \(90^\circ\).
+- The other two angles are acute.
+- The two legs meet at the right angle.
+- The hypotenuse lies opposite the right angle.
+- The hypotenuse is the longest side.
+- The sum of the triangle's three interior angles is \(180^\circ\).
+- The two acute angles are complementary.
+
+Use:
+
+\[
+A+C=90^\circ
+\]
+
+Explain why these properties make right triangles suitable for trigonometric calculations.
+
+### H3: What Is the Opposite Side?
+
+Explain:
+
+- The opposite side is directly across from the chosen reference angle.
+- Side \(a\) is opposite angle \(A\) in the chosen diagram.
+- It may represent vertical height, elevation difference, or a perpendicular component in a practical problem.
+- Its role changes when the reference angle changes.
+
+### H3: What Is the Adjacent Side?
+
+Explain:
+
+- The adjacent side touches the reference angle.
+- It is one of the two legs of the triangle.
+- It is not the hypotenuse.
+- Side \(b\) is adjacent to angle \(A\) in the chosen diagram.
+- It can represent horizontal run, a ground distance, or a horizontal projection.
+
+### H3: What Is the Hypotenuse?
+
+Explain:
+
+- It is opposite the right angle.
+- It is always the longest side.
+- It is the diagonal side in the chosen diagram.
+- It can represent a ladder, a cable, a sloping roof support, or a straight-line distance.
+- It appears in sine, cosine, secant, and cosecant formulas.
+- It does not appear directly in the tangent and cotangent formulas.
+
+### H3: Why the Reference Angle Matters
+
+Explain that opposite and adjacent are relative labels rather than permanent names for a side.
+
+For angle \(A\):
+
+- Opposite side is \(a\).
+- Adjacent side is \(b\).
+
+For angle \(C\):
+
+- Opposite side is \(b\).
+- Adjacent side is \(a\).
+
+The hypotenuse remains \(c\) regardless of the selected acute reference angle.
+
+Insert Diagram 1 here.
+
+### DIAGRAM 1 — Anatomy of a Right Triangle
+
+Create an original, mathematically accurate educational diagram.
+
+The diagram must show:
+
+- Vertices \(A\), \(B\), and \(C\).
+- Angle \(A\) at the bottom-left.
+- Right angle \(B\) at the bottom-right.
+- Vertex \(C\) at the top.
+- Opposite side \(a\).
+- Adjacent side \(b\).
+- Hypotenuse \(c\).
+- A right-angle marker at \(B\).
+- Clear visual differentiation between all three sides.
+- A highlighted reference angle \(A\).
+
+Add a short annotation:
+
+“The opposite and adjacent sides depend on the chosen reference angle. The hypotenuse is always opposite the right angle.”
+
+Provide:
+
+- Exact placement.
+- Diagram title.
+- Caption.
+- Descriptive filename.
+- Accessible alt text under 125 characters.
+- Detailed SVG drawing instructions.
+
+Keep the side labels consistent in all subsequent diagrams.
+
+---
+
+## 6. WHAT ARE TRIGONOMETRIC RATIOS?
+
+H2: Understanding Trigonometric Ratios
+
+Explain that trigonometric ratios compare the side lengths of a right triangle relative to a selected acute angle.
+
+Clarify that these ratios describe relationships between sides rather than the absolute size of a triangle.
+
+For example, if every side of a triangle is doubled, the six ratios remain unchanged because the numerator and denominator are multiplied by the same factor.
+
+Use the 3-4-5 triangle and a scaled 6-8-10 triangle to illustrate this principle.
+
+### H3: Understanding SOH-CAH-TOA
+
+Introduce the memory aid:
+
+- SOH: Sine = Opposite / Hypotenuse.
+- CAH: Cosine = Adjacent / Hypotenuse.
+- TOA: Tangent = Opposite / Adjacent.
+
+Explain each part in plain English.
+
+Clarify that SOH-CAH-TOA helps with sine, cosine, and tangent, while reciprocal relationships help calculate cosecant, secant, and cotangent.
+
+Do not suggest that SOH-CAH-TOA directly lists all six ratios.
+
+### H3: Why Trigonometric Ratios Are Dimensionless
+
+Use:
+
+\[
+\frac{3\text{ m}}{5\text{ m}}=0.6
+\]
+
+Explain that metres cancel when one length is divided by another length measured in metres.
+
+Show that:
+
+\[
+\frac{300\text{ cm}}{500\text{ cm}}=0.6
+\]
+
+Explain that changing compatible measurement units does not change the mathematical ratio.
+
+### H3: Why One Triangle Produces Six Ratios
+
+Use the same reference angle and side labels throughout the explanation.
+
+Explain that each ratio compares a different pair of sides.
+
+Sine compares opposite with hypotenuse.
+
+Cosine compares adjacent with hypotenuse.
+
+Tangent compares opposite with adjacent.
+
+Cosecant, secant, and cotangent reverse the corresponding numerator and denominator.
+
+Explain why different ratios can describe the same triangle without contradicting one another.
+
+---
+
+## 7. ALL SIX TRIGONOMETRIC RATIOS EXPLAINED
+
+H2: The Six Trigonometric Ratios of a Right Triangle
+
+This must be one of the most comprehensive sections.
+
+Give every ratio its own H3 heading.
+
+For every ratio, explain:
+
+1. What the ratio means.
+2. Its formula.
+3. Which sides it uses.
+4. Why the numerator and denominator appear in that order.
+5. A fully worked numerical example.
+6. What the resulting number means.
+7. When that ratio is useful.
+8. How it relates to another ratio.
+9. One common mistake to avoid.
+
+### H3: 1. Sine — Opposite Divided by Hypotenuse
+
+Introduce:
+
+\[
+\boxed{\sin(A)=\frac{a}{c}}
+\]
+
+Explain that sine compares the opposite side with the hypotenuse.
+
+Example:
+
+\[
+a=3,\qquad c=5
+\]
+
+\[
+\sin(A)=\frac{3}{5}
+\]
+
+\[
+\boxed{\sin(A)=0.6}
+\]
+
+Explain that the opposite side is 60% of the hypotenuse.
+
+Clarify that 0.6 is not an angle of \(0.6^\circ\).
+
+### H3: 2. Cosine — Adjacent Divided by Hypotenuse
+
+Introduce:
+
+\[
+\boxed{\cos(A)=\frac{b}{c}}
+\]
+
+Explain that cosine compares the adjacent side with the hypotenuse.
+
+Example:
+
+\[
+b=4,\qquad c=5
+\]
+
+\[
+\cos(A)=\frac{4}{5}
+\]
+
+\[
+\boxed{\cos(A)=0.8}
+\]
+
+Explain that the adjacent side is 80% of the hypotenuse.
+
+Contrast cosine with sine by explaining that both use the hypotenuse but have different numerators.
+
+### H3: 3. Tangent — Opposite Divided by Adjacent
+
+Introduce:
+
+\[
+\boxed{\tan(A)=\frac{a}{b}}
+\]
+
+Example:
+
+\[
+a=3,\qquad b=4
+\]
+
+\[
+\tan(A)=\frac{3}{4}
+\]
+
+\[
+\boxed{\tan(A)=0.75}
+\]
+
+Explain that the opposite side is 75% as long as the adjacent side.
+
+Describe tangent's connection to rise over run and slope.
+
+Clarify that tangent can exceed 1.
+
+### H3: 4. Cotangent — Adjacent Divided by Opposite
+
+Introduce:
+
+\[
+\boxed{\cot(A)=\frac{b}{a}}
+\]
+
+Example:
+
+\[
+b=4,\qquad a=3
+\]
+
+\[
+\cot(A)=\frac{4}{3}
+\]
+
+\[
+\boxed{\cot(A)\approx1.3333}
+\]
+
+Explain that cotangent is the reciprocal of tangent.
+
+Show:
+
+\[
+\cot(A)=\frac{1}{\tan(A)}
+\]
+
+Explain that cotangent reverses the side comparison used by tangent.
+
+### H3: 5. Secant — Hypotenuse Divided by Adjacent
+
+Introduce:
+
+\[
+\boxed{\sec(A)=\frac{c}{b}}
+\]
+
+Example:
+
+\[
+c=5,\qquad b=4
+\]
+
+\[
+\sec(A)=\frac{5}{4}
+\]
+
+\[
+\boxed{\sec(A)=1.25}
+\]
+
+Explain that secant is the reciprocal of cosine.
+
+Show:
+
+\[
+\sec(A)=\frac{1}{\cos(A)}
+\]
+
+Explain why secant exceeds 1 for an acute reference angle in a valid, non-degenerate right triangle.
+
+### H3: 6. Cosecant — Hypotenuse Divided by Opposite
+
+Introduce:
+
+\[
+\boxed{\csc(A)=\frac{c}{a}}
+\]
+
+Example:
+
+\[
+c=5,\qquad a=3
+\]
+
+\[
+\csc(A)=\frac{5}{3}
+\]
+
+\[
+\boxed{\csc(A)\approx1.6667}
+\]
+
+Explain that cosecant is the reciprocal of sine.
+
+Show:
+
+\[
+\csc(A)=\frac{1}{\sin(A)}
+\]
+
+Explain why cosecant is greater than 1 for an acute reference angle in a valid, non-degenerate right triangle.
+
+### H3: All Six Ratios in One Table
+
+Provide this comparison table:
+
+| Ratio | Formula | Side relationship | 3-4-5 example |
+|---|---|---|---|
+| Sine | \(a/c\) | Opposite / Hypotenuse | \(3/5=0.6\) |
+| Cosine | \(b/c\) | Adjacent / Hypotenuse | \(4/5=0.8\) |
+| Tangent | \(a/b\) | Opposite / Adjacent | \(3/4=0.75\) |
+| Cotangent | \(b/a\) | Adjacent / Opposite | \(4/3\approx1.3333\) |
+| Secant | \(c/b\) | Hypotenuse / Adjacent | \(5/4=1.25\) |
+| Cosecant | \(c/a\) | Hypotenuse / Opposite | \(5/3\approx1.6667\) |
+
+Explain that all six calculations refer to the same reference angle \(A\).
+
+Insert Diagram 2 here.
+
+### DIAGRAM 2 — The Six Trigonometric Ratios Explained
+
+Create an original educational infographic using a correctly labelled 3-4-5 right triangle.
+
+Show the triangle on the left and six clearly separated formula panels on the right.
+
+Each panel must include:
+
+- Ratio name.
+- Symbol.
+- Formula.
+- Numerical result.
+- The two sides used.
+
+Use these values:
+
+- \(\sin(A)=3/5=0.6\).
+- \(\cos(A)=4/5=0.8\).
+- \(\tan(A)=3/4=0.75\).
+- \(\cot(A)=4/3\approx1.3333\).
+- \(\sec(A)=5/4=1.25\).
+- \(\csc(A)=5/3\approx1.6667\).
+
+Visually group sine, cosine, and tangent as the three primary ratios.
+
+Group cosecant, secant, and cotangent as their respective reciprocals.
+
+Make the formulas readable and mathematically correct.
+
+Provide:
+
+- Exact placement.
+- Caption.
+- Filename.
+- Accessible alt text.
+- Detailed SVG creation instructions.
+
+---
+
+## 8. HOW TO CHOOSE THE CORRECT CALCULATOR MODE
+
+H2: How to Choose the Right Trigonometric Ratio
+
+Explain that the best ratio depends on the two side lengths available in a problem.
+
+Use the following guide:
+
+| Known sides | Direct ratio | Reciprocal ratio |
+|---|---|---|
+| Opposite and hypotenuse | Sine | Cosecant |
+| Adjacent and hypotenuse | Cosine | Secant |
+| Opposite and adjacent | Tangent | Cotangent |
+
+Explain that each pair allows two reciprocal calculations.
+
+For example, if the opposite side and hypotenuse are known:
+
+\[
+\sin(A)=\frac{a}{c}
+\]
+
+and:
+
+\[
+\csc(A)=\frac{c}{a}
+\]
+
+If the adjacent side and hypotenuse are known:
+
+\[
+\cos(A)=\frac{b}{c}
+\]
+
+and:
+
+\[
+\sec(A)=\frac{c}{b}
+\]
+
+If the opposite and adjacent sides are known:
+
+\[
+\tan(A)=\frac{a}{b}
+\]
+
+and:
+
+\[
+\cot(A)=\frac{b}{a}
+\]
+
+Explain that the calculator's six modes are designed to match these relationships.
+
+### H3: How to Use the Sine Ratio Mode
+
+Explain that the required measurements are the opposite side and hypotenuse.
+
+### H3: How to Use the Cosine Ratio Mode
+
+Explain that the required measurements are the adjacent side and hypotenuse.
+
+### H3: How to Use the Tangent Ratio Mode
+
+Explain that the required measurements are the opposite and adjacent sides.
+
+### H3: How to Use the Cotangent Ratio Mode
+
+Explain that the required measurements are the adjacent and opposite sides, in that order.
+
+### H3: How to Use the Secant Ratio Mode
+
+Explain that the required measurements are the hypotenuse and adjacent side.
+
+### H3: How to Use the Cosecant Ratio Mode
+
+Explain that the required measurements are the hypotenuse and opposite side.
+
+Do not suggest that every mode requires all three side lengths.
+
+Do not invent calculator features that are not present on the live page.
+
+---
+
+## 9. HOW TO USE THE EXISTING CALCULATOR
+
+H2: How to Use the Right Triangle Trig Ratios Calculator
+
+Write a practical step-by-step guide matching the current interface.
+
+Step 1: Identify the reference angle in the triangle.
+
+Step 2: Label the opposite side, adjacent side, and hypotenuse.
+
+Step 3: Determine which two side lengths are known.
+
+Step 4: Choose the calculator mode matching those two sides.
+
+Step 5: Enter the first required side length.
+
+Step 6: Enter the second required side length.
+
+Step 7: Select compatible units using the available unit selectors.
+
+Step 8: Check that both measurements are positive and appropriate for a right triangle.
+
+Step 9: Click the relevant Calculate button.
+
+Step 10: Review the result and the displayed solution steps.
+
+Step 11: Use the live visualization to check that the side labels match the intended reference angle.
+
+Step 12: Use Reset when beginning a new calculation.
+
+Explain why correct side identification matters more than memorising a formula.
+
+### Include one complete calculator walkthrough
+
+Given:
+
+- Opposite side \(a=3\).
+- Adjacent side \(b=4\).
+- Hypotenuse \(c=5\).
+
+Show the appropriate inputs and results for all six modes.
+
+Clearly distinguish the two required inputs in each mode.
+
+Explain that the ratios are unitless and that the input measurements must use compatible units.
+
+Do not claim that the calculator automatically determines missing sides or angles unless the actual interface supports that functionality.
+
+---
+
+## 10. FOUR FOUNDATIONAL WORKED EXAMPLES
+
+H2: Step-by-Step Examples of Trigonometric Ratios
+
+Include four examples that gradually build understanding.
+
+### Example 1 — A 3-4-5 Right Triangle
+
+Given:
+
+- \(a=3\text{ cm}\).
+- \(b=4\text{ cm}\).
+- \(c=5\text{ cm}\).
+
+Calculate all six ratios.
+
+Show the formulas, substitutions, and final values.
+
+Explain why the ratios differ even though they describe the same triangle.
+
+### Example 2 — A 5-12-13 Right Triangle
+
+Given:
+
+- \(a=5\text{ m}\).
+- \(b=12\text{ m}\).
+- \(c=13\text{ m}\).
+
+Calculate:
+
+\[
+\sin(A)=\frac{5}{13}\approx0.3846
+\]
+
+\[
+\cos(A)=\frac{12}{13}\approx0.9231
+\]
+
+\[
+\tan(A)=\frac{5}{12}\approx0.4167
+\]
+
+Then calculate the three reciprocal ratios.
+
+Explain how a longer adjacent side changes the tangent ratio.
+
+### Example 3 — A 45-45-90 Triangle
+
+Given:
+
+\[
+a=1,\qquad b=1,\qquad c=\sqrt{2}
+\]
+
+Calculate:
+
+\[
+\sin(45^\circ)=\cos(45^\circ)=\frac{\sqrt{2}}{2}
+\]
+
+\[
+\tan(45^\circ)=\cot(45^\circ)=1
+\]
+
+\[
+\sec(45^\circ)=\csc(45^\circ)=\sqrt{2}
+\]
+
+Explain why equal legs produce equal sine and cosine values and why tangent and cotangent both equal 1.
+
+### Example 4 — A 30-60-90 Triangle
+
+For angle \(A=30^\circ\), use:
+
+\[
+a=1,\qquad b=\sqrt{3},\qquad c=2
+\]
+
+Calculate:
+
+\[
+\sin(30^\circ)=\frac12
+\]
+
+\[
+\cos(30^\circ)=\frac{\sqrt{3}}{2}
+\]
+
+\[
+\tan(30^\circ)=\frac{1}{\sqrt{3}}
+\]
+
+Then calculate cotangent, secant, and cosecant.
+
+Explain why the ratios for \(30^\circ\) and \(60^\circ\) are related through complementary-angle relationships.
+
+---
+
+## 11. REAL-WORLD PRACTICAL APPLICATIONS
+
+H2: Real-Life Applications of Trigonometric Ratios
+
+Write at least 12 practical examples.
+
+Do not make every example artificially use all six ratios. Instead, select the most useful ratio or pair of ratios for each situation.
+
+For every example:
+
+1. Describe the situation naturally.
+2. Identify the simplified right-triangle model.
+3. State the known side lengths.
+4. Identify the reference angle.
+5. Explain which sides are opposite, adjacent, and hypotenuse.
+6. Choose the appropriate trigonometric ratio.
+7. Show the formula.
+8. Substitute the measurements.
+9. Calculate the result.
+10. Explain what the result means in plain English.
+11. Calculate an angle using an inverse trigonometric function when relevant.
+12. State assumptions or limitations where necessary.
+
+Use the following examples.
+
+### Example 5 — Calculating Roof Pitch
+
+A roof rises 3 m over a horizontal run of 4 m.
+
+Known:
+
+- Opposite rise \(a=3\text{ m}\).
+- Adjacent run \(b=4\text{ m}\).
+
+Calculate:
+
+\[
+\tan(A)=\frac{3}{4}=0.75
+\]
+
+Percentage grade:
+
+\[
+0.75\times100\%=75\%
+\]
+
+Angle:
+
+\[
+A=\tan^{-1}(0.75)\approx36.87^\circ
+\]
+
+Explain the difference between a slope ratio, percentage grade, and angle.
+
+Clarify that this is a geometric example rather than a complete roof-design assessment.
+
+### Example 6 — Understanding a Ladder Against a Wall
+
+A ladder reaches 4 m up a wall, with its base 3 m from the wall.
+
+The ladder is the hypotenuse.
+
+Calculate the hypotenuse:
+
+\[
+c=\sqrt{4^2+3^2}=5\text{ m}
+\]
+
+For the angle between the ladder and the ground:
+
+\[
+\sin(A)=\frac45=0.8
+\]
+
+\[
+\cos(A)=\frac35=0.6
+\]
+
+\[
+\tan(A)=\frac43\approx1.3333
+\]
+
+Calculate the angle:
+
+\[
+A\approx53.13^\circ
+\]
+
+Explain how the same triangle produces different ratios for the same angle.
+
+Clarify that the calculation does not establish ladder safety.
+
+### Example 7 — Evaluating a Ramp's Gradient
+
+A ramp rises 0.6 m over a horizontal run of 8 m.
+
+Calculate:
+
+\[
+\tan(A)=\frac{0.6}{8}=0.075
+\]
+
+Percentage grade:
+
+\[
+0.075\times100\%=7.5\%
+\]
+
+Angle:
+
+\[
+A=\tan^{-1}(0.075)\approx4.29^\circ
+\]
+
+Explain why a 7.5% grade is not a \(7.5^\circ\) angle.
+
+Clarify that accessibility and building-code compliance require additional checks.
+
+### Example 8 — Measuring a Building's Elevation
+
+An observer stands 24 m horizontally from a building. The top is 18 m above the observer's eye level.
+
+Calculate:
+
+\[
+\tan(A)=\frac{18}{24}=0.75
+\]
+
+Therefore:
+
+\[
+A\approx36.87^\circ
+\]
+
+Calculate the straight-line distance if useful:
+
+\[
+c=\sqrt{18^2+24^2}=30\text{ m}
+\]
+
+Explain how tangent finds the angle of elevation, while sine and cosine describe the same geometry using the line-of-sight distance.
+
+Clarify that the result is relative to eye level, not necessarily the total building height.
+
+### Example 9 — Surveying an Elevation Difference
+
+A surveyor models a vertical elevation difference of 15 m over a horizontal distance of 20 m.
+
+Calculate:
+
+\[
+\tan(A)=\frac{15}{20}=0.75
+\]
+
+The straight-line distance is:
+
+\[
+c=\sqrt{15^2+20^2}=25\text{ m}
+\]
+
+Then calculate:
+
+\[
+\sin(A)=\frac{15}{25}=0.6
+\]
+
+\[
+\cos(A)=\frac{20}{25}=0.8
+\]
+
+Explain how different ratios describe the same surveyed triangle.
+
+Mention that actual surveying may require instrument-height adjustments and additional corrections.
+
+### Example 10 — Estimating a Tree's Height From Its Shadow
+
+A vertical tree casts a 9 m shadow, and the height above the ground is 12 m.
+
+Calculate:
+
+\[
+\tan(A)=\frac{12}{9}\approx1.3333
+\]
+
+Calculate the line-of-sight hypotenuse of the simplified triangle:
+
+\[
+c=\sqrt{12^2+9^2}=15\text{ m}
+\]
+
+Then:
+
+\[
+\sin(A)=\frac{12}{15}=0.8
+\]
+
+\[
+\cos(A)=\frac{9}{15}=0.6
+\]
+
+Explain how the same geometry can be described by multiple ratios.
+
+State the assumptions of level ground, a vertical tree, and an appropriate shadow model.
+
+### Example 11 — Understanding a Guy Wire
+
+A guy wire connects to a pole 12 m above the ground, and the anchor is 5 m horizontally from the pole.
+
+The wire length is:
+
+\[
+c=\sqrt{12^2+5^2}=13\text{ m}
+\]
+
+Calculate:
+
+\[
+\sin(A)=\frac{12}{13}\approx0.9231
+\]
+
+\[
+\cos(A)=\frac{5}{13}\approx0.3846
+\]
+
+\[
+\tan(A)=\frac{12}{5}=2.4
+\]
+
+Explain why tangent exceeds 1 in this example.
+
+Clarify that these ratios do not establish anchor strength, wire tension, or structural safety.
+
+### Example 12 — Understanding Staircase Geometry
+
+A simplified staircase has a total rise of 2.4 m and a horizontal run of 3.2 m.
+
+The diagonal length is:
+
+\[
+c=\sqrt{2.4^2+3.2^2}=4\text{ m}
+\]
+
+Calculate:
+
+\[
+\sin(A)=\frac{2.4}{4}=0.6
+\]
+
+\[
+\cos(A)=\frac{3.2}{4}=0.8
+\]
+
+\[
+\tan(A)=\frac{2.4}{3.2}=0.75
+\]
+
+Explain how the ratios describe the staircase's overall geometry.
+
+Clarify that these calculations do not establish compliance with staircase regulations.
+
+### Example 13 — Understanding a Crane Boom's Direction
+
+A simplified crane boom has a vertical component of 8 m and a horizontal projection of 6 m.
+
+Calculate:
+
+\[
+c=\sqrt{8^2+6^2}=10\text{ m}
+\]
+
+Then:
+
+\[
+\sin(A)=\frac{8}{10}=0.8
+\]
+
+\[
+\cos(A)=\frac{6}{10}=0.6
+\]
+
+\[
+\tan(A)=\frac{8}{6}\approx1.3333
+\]
+
+Explain the different geometric interpretations of these values.
+
+Clarify that trigonometric ratios alone do not determine crane capacity or safe operation.
+
+### Example 14 — Estimating a Hiking Trail's Gradient
+
+A simplified straight section of a hiking route gains 120 m in elevation over 800 m horizontally.
+
+Calculate:
+
+\[
+\tan(A)=\frac{120}{800}=0.15
+\]
+
+Percentage grade:
+
+\[
+0.15\times100\%=15\%
+\]
+
+Angle:
+
+\[
+A=\tan^{-1}(0.15)\approx8.53^\circ
+\]
+
+Explain that this is a constant-gradient model and does not describe the entire geometry of a winding trail.
+
+### Example 15 — Checking a Mechanical Brace
+
+A diagonal brace has a vertical component of 1.5 m and a horizontal component of 2 m.
+
+Calculate:
+
+\[
+c=\sqrt{1.5^2+2^2}=2.5\text{ m}
+\]
+
+Then:
+
+\[
+\sin(A)=\frac{1.5}{2.5}=0.6
+\]
+
+\[
+\cos(A)=\frac{2}{2.5}=0.8
+\]
+
+\[
+\tan(A)=\frac{1.5}{2}=0.75
+\]
+
+Explain why the ratios remain the same when all dimensions are scaled proportionally.
+
+Clarify that this does not establish the brace's strength or load capacity.
+
+### Example 16 — Understanding a Straight Aircraft Climb
+
+A simplified straight flight segment has a vertical gain of 1.5 km and a horizontal distance of 5 km.
+
+Calculate:
+
+\[
+\tan(A)=\frac{1.5}{5}=0.3
+\]
+
+The angle is:
+
+\[
+A=\tan^{-1}(0.3)\approx16.70^\circ
+\]
+
+The straight-line distance is:
+
+\[
+c=\sqrt{1.5^2+5^2}\approx5.22\text{ km}
+\]
+
+Calculate the sine ratio:
+
+\[
+\sin(A)\approx\frac{1.5}{5.22}\approx0.287
+\]
+
+Explain how the tangent and sine ratios use different distances to describe the same idealised climb.
+
+Clarify that this is a geometry example, not a complete flight-navigation calculation.
+
+### Practical example comparison table
+
+After the 12 examples, provide a concise table containing:
+
+- Practical situation.
+- Known measurements.
+- Primary ratio used.
+- Calculated value.
+- Plain-English interpretation.
+
+Do not repeat the full worked calculations in the table.
+
+Insert Diagram 3 here.
+
+### DIAGRAM 3 — Four Real-World Trigonometry Examples
+
+Create a four-panel educational infographic.
+
+**Panel 1: Roof pitch**
+
+- Vertical rise: 3 m.
+- Horizontal run: 4 m.
+- Hypotenuse: 5 m.
+- Tangent: 0.75.
+- Angle: approximately \(36.87^\circ\).
+
+**Panel 2: Ladder**
+
+- Vertical height: 4 m.
+- Horizontal distance: 3 m.
+- Ladder length: 5 m.
+- Sine: 0.8.
+- Cosine: 0.6.
+- Tangent: approximately 1.3333.
+
+**Panel 3: Surveying**
+
+- Vertical difference: 15 m.
+- Horizontal distance: 20 m.
+- Straight-line distance: 25 m.
+- Sine: 0.6.
+- Cosine: 0.8.
+- Tangent: 0.75.
+
+**Panel 4: Ramp**
+
+- Vertical rise: 0.6 m.
+- Horizontal run: 8 m.
+- Tangent: 0.075.
+- Percentage grade: 7.5%.
+- Angle: approximately \(4.29^\circ\).
+
+Each panel must show a correctly oriented right triangle, the reference angle, the right-angle marker, relevant side labels, the formula, and the calculated result.
+
+Use readable labels, consistent colours, and mathematically accurate proportions.
+
+Provide filename, caption, accessible alt text, exact placement, and SVG creation instructions.
+
+---
+
+## 12. RELATIONSHIPS BETWEEN THE SIX RATIOS
+
+H2: How the Six Trigonometric Ratios Relate to One Another
+
+Explain the three reciprocal pairs:
+
+\[
+\sin(A)\csc(A)=1
+\]
+
+\[
+\cos(A)\sec(A)=1
+\]
+
+\[
+\tan(A)\cot(A)=1
+\]
+
+Explain why the products equal 1.
+
+Use the 3-4-5 triangle to demonstrate:
+
+\[
+0.6\times1.6667\approx1
+\]
+
+\[
+0.8\times1.25=1
+\]
+
+\[
+0.75\times1.3333\approx1
+\]
+
+Mention that small discrepancies may arise from rounded decimal values.
+
+### H3: Tangent as Sine Divided by Cosine
+
+Show:
+
+\[
+\tan(A)=\frac{\sin(A)}{\cos(A)}
+\]
+
+Use the example:
+
+\[
+\frac{0.6}{0.8}=0.75
+\]
+
+Explain why this provides a useful verification method.
+
+### H3: Cotangent as Cosine Divided by Sine
+
+Show:
+
+\[
+\cot(A)=\frac{\cos(A)}{\sin(A)}
+\]
+
+Use:
+
+\[
+\frac{0.8}{0.6}\approx1.3333
+\]
+
+### H3: The Pythagorean Trigonometric Identity
+
+Show:
+
+\[
+\sin^2(A)+\cos^2(A)=1
+\]
+
+For the 3-4-5 triangle:
+
+\[
+0.6^2+0.8^2=0.36+0.64=1
+\]
+
+Explain why this relationship follows from the Pythagorean theorem.
+
+Introduce the other two Pythagorean identities briefly and explain when they may be useful.
+
+### H3: How Complementary Angles Affect the Ratios
+
+Explain that:
+
+\[
+A+C=90^\circ
+\]
+
+Therefore:
+
+\[
+\sin(A)=\cos(C)
+\]
+
+\[
+\cos(A)=\sin(C)
+\]
+
+\[
+\tan(A)=\cot(C)
+\]
+
+\[
+\cot(A)=\tan(C)
+\]
+
+Also explain:
+
+\[
+\sec(A)=\csc(C)
+\]
+
+\[
+\csc(A)=\sec(C)
+\]
+
+Use a simple numerical example to show how the ratios change when the reference angle switches from \(A\) to \(C\).
+
+---
+
+## 13. HOW THE RATIOS CHANGE WITH THE ANGLE
+
+H2: Understanding Trigonometric Ratios at Different Angles
+
+Explain how the ratios change as an acute reference angle increases.
+
+Cover:
+
+- Sine increases from values near 0 toward 1.
+- Cosine decreases from values near 1 toward 0.
+- Tangent increases from values near 0 without an upper limit.
+- Cotangent decreases from large positive values toward 0.
+- Secant increases from values near 1 without an upper limit.
+- Cosecant decreases from large positive values toward 1.
+
+Clarify that these are limiting behaviours near \(0^\circ\) and \(90^\circ\), not values attained by an acute angle in a valid, non-degenerate right triangle at those endpoints.
+
+Include a comparison table:
+
+| Angle | Sine | Cosine | Tangent |
+|---|---:|---:|---:|
+| \(30^\circ\) | 0.5 | Approximately 0.8660 | Approximately 0.5774 |
+| \(45^\circ\) | Approximately 0.7071 | Approximately 0.7071 | 1 |
+| \(60^\circ\) | Approximately 0.8660 | 0.5 | Approximately 1.7321 |
+
+Explain that cotangent, secant, and cosecant can be obtained from the reciprocal relationships.
+
+Avoid presenting the table without explaining its mathematical significance.
+
+Insert Diagram 4 here.
+
+### DIAGRAM 4 — How to Choose the Correct Trigonometric Ratio
+
+Create a clear educational flowchart that helps readers select the appropriate calculator mode.
+
+Start with the question:
+
+**Which two side lengths do you know?**
+
+Branch 1:
+
+- Opposite + Hypotenuse.
+- Sine: \(a/c\).
+- Cosecant: \(c/a\).
+
+Branch 2:
+
+- Adjacent + Hypotenuse.
+- Cosine: \(b/c\).
+- Secant: \(c/b\).
+
+Branch 3:
+
+- Opposite + Adjacent.
+- Tangent: \(a/b\).
+- Cotangent: \(b/a\).
+
+For each branch, explain that the first ratio compares the sides in one order and the reciprocal ratio reverses that order.
+
+Use the same side-label convention as Diagram 1.
+
+Make the flowchart readable on mobile screens.
+
+Provide filename, caption, alt text, exact placement, and SVG creation instructions.
+
+---
+
+## 14. USING TRIGONOMETRIC RATIOS TO FIND MISSING SIDES
+
+H2: How to Calculate a Missing Side of a Right Triangle
+
+Explain that the six-ratio calculator calculates ratios from known side lengths. Finding an unknown side is a related but different task.
+
+### H3: Finding the Opposite Side With Sine
+
+Start with:
+
+\[
+\sin(A)=\frac{a}{c}
+\]
+
+Rearrange:
+
+\[
+\boxed{a=c\sin(A)}
+\]
+
+Example:
+
+- Hypotenuse \(c=10\text{ m}\).
+- Angle \(A=30^\circ\).
+
+Then:
+
+\[
+a=10\sin(30^\circ)=5\text{ m}
+\]
+
+### H3: Finding the Adjacent Side With Cosine
+
+Start with:
+
+\[
+\cos(A)=\frac{b}{c}
+\]
+
+Rearrange:
+
+\[
+\boxed{b=c\cos(A)}
+\]
+
+Example:
+
+- Hypotenuse \(c=10\text{ m}\).
+- Angle \(A=60^\circ\).
+
+Then:
+
+\[
+b=10\cos(60^\circ)=5\text{ m}
+\]
+
+### H3: Finding the Opposite Side With Tangent
+
+Start with:
+
+\[
+\tan(A)=\frac{a}{b}
+\]
+
+Rearrange:
+
+\[
+\boxed{a=b\tan(A)}
+\]
+
+Example:
+
+- Adjacent side \(b=8\text{ m}\).
+- Angle \(A=30^\circ\).
+
+Then:
+
+\[
+a=8\tan(30^\circ)\approx4.62\text{ m}
+\]
+
+Explain why the tangent formula is especially useful when the opposite and adjacent sides are involved.
+
+Clarify that these are related calculations and must not be misrepresented as features of the six-ratio calculator unless the interface explicitly supports them.
+
+---
+
+## 15. USING INVERSE TRIGONOMETRIC FUNCTIONS TO FIND ANGLES
+
+H2: How to Find an Angle From a Trigonometric Ratio
+
+Explain that a trigonometric ratio is not an angle.
+
+If the ratio is known and the angle is unknown, an inverse trigonometric function can recover the acute reference angle.
+
+Introduce:
+
+\[
+A=\sin^{-1}(r)
+\]
+
+\[
+A=\cos^{-1}(r)
+\]
+
+\[
+A=\tan^{-1}(r)
+\]
+
+Explain that these functions are called inverse sine, inverse cosine, and inverse tangent. The term arcsine, arccosine, and arctangent is also used.
+
+### Worked example using sine
+
+Given:
+
+\[
+\sin(A)=0.6
+\]
+
+Then:
+
+\[
+A=\sin^{-1}(0.6)\approx36.87^\circ
+\]
+
+### Worked example using cosine
+
+Given:
+
+\[
+\cos(A)=0.8
+\]
+
+Then:
+
+\[
+A=\cos^{-1}(0.8)\approx36.87^\circ
+\]
+
+### Worked example using tangent
+
+Given:
+
+\[
+\tan(A)=0.75
+\]
+
+Then:
+
+\[
+A=\tan^{-1}(0.75)\approx36.87^\circ
+\]
+
+Explain why all three examples recover the same angle from the same triangle.
+
+Clarify the difference between inverse functions and reciprocals.
+
+For example:
+
+\[
+\frac{1}{\sin(A)}=\csc(A)
+\]
+
+is not the same operation as:
+
+\[
+\sin^{-1}(r)
+\]
+
+Explain the importance of selecting degrees or radians in a calculator used for angle calculations.
+
+Do not claim that the existing ratio calculator directly returns an angle unless its interface supports that feature.
+
+---
+
+## 16. COMMON TRIGONOMETRIC CALCULATION MISTAKES
+
+H2: Common Mistakes When Using Trigonometric Ratios
+
+Discuss at least these mistakes:
+
+1. Confusing the opposite side with the adjacent side.
+2. Identifying sides relative to the wrong reference angle.
+3. Using sine instead of cosine.
+4. Using tangent when the known sides are opposite and hypotenuse.
+5. Reversing the numerator and denominator.
+6. Confusing tangent with cotangent.
+7. Confusing cosine with secant.
+8. Confusing sine with cosecant.
+9. Assuming every ratio must be less than 1.
+10. Assuming a ratio such as 0.6 represents an angle of \(0.6^\circ\).
+11. Forgetting that ratios are dimensionless.
+12. Mixing incompatible measurement units.
+13. Entering zero or negative side lengths.
+14. Using side lengths that do not form a valid right triangle.
+15. Rounding too early.
+16. Confusing reciprocal ratios with inverse trigonometric functions.
+17. Treating the hypotenuse as one of the legs.
+18. Assuming the six ratios have the same value.
+19. Assuming the same side is always opposite regardless of the selected reference angle.
+20. Treating a simplified geometric result as proof of engineering safety or code compliance.
+
+For each mistake:
+
+- Explain the error.
+- Explain why it is incorrect.
+- Show the correct method.
+- Provide a short numerical example where appropriate.
+
+### Wrong-versus-correct example
+
+Given:
+
+\[
+a=3,\qquad b=4,\qquad c=5
+\]
+
+Incorrect sine calculation:
+
+\[
+\frac{3}{4}=0.75
+\]
+
+Explain that \(3/4\) is the tangent ratio, not the sine ratio.
+
+Correct sine calculation:
+
+\[
+\sin(A)=\frac{3}{5}=0.6
+\]
+
+Then verify:
+
+\[
+\tan(A)=\frac{\sin(A)}{\cos(A)}
+=\frac{0.6}{0.8}=0.75
+\]
+
+Explain why identifying the correct sides is essential.
+
+---
+
+## 17. INPUT VALIDATION AND MATHEMATICAL VERIFICATION
+
+H2: How to Check Whether Your Trigonometric Results Are Valid
+
+Explain the requirements for a valid, non-degenerate right triangle:
+
+- Both legs are positive.
+- The hypotenuse is positive and longer than either leg.
+- The side lengths satisfy the Pythagorean theorem.
+- All measurements use compatible units.
+- The selected ratio uses the correct pair of sides.
+- The reciprocal calculations agree with their original ratios.
+
+Show:
+
+\[
+a>0,\qquad b>0,\qquad c>0
+\]
+
+and:
+
+\[
+a^2+b^2=c^2
+\]
+
+### Verification method 1 — Check the side lengths
+
+For the 3-4-5 triangle:
+
+\[
+3^2+4^2=5^2
+\]
+
+\[
+9+16=25
+\]
+
+Explain why this confirms the side lengths are consistent with a right triangle.
+
+### Verification method 2 — Check reciprocal pairs
+
+For the same triangle:
+
+\[
+\sin(A)\csc(A)=0.6\times1.6667\approx1
+\]
+
+\[
+\cos(A)\sec(A)=0.8\times1.25=1
+\]
+
+\[
+\tan(A)\cot(A)=0.75\times1.3333\approx1
+\]
+
+Explain that small differences can occur when rounded decimal values are used.
+
+### Verification method 3 — Check tangent using sine and cosine
+
+Show:
+
+\[
+\tan(A)=\frac{\sin(A)}{\cos(A)}
+\]
+
+Use:
+
+\[
+\frac{0.6}{0.8}=0.75
+\]
+
+Explain that this is an effective consistency check.
+
+### Verification method 4 — Check the inverse angle
+
+Use:
+
+\[
+A=\tan^{-1}(0.75)\approx36.87^\circ
+\]
+
+Explain how inverse tangent helps verify the acute angle.
+
+Do not invent a precision tolerance or accuracy guarantee for the calculator.
+
+---
+
+## 18. FREQUENTLY ASKED QUESTIONS
+
+H2: Frequently Asked Questions
+
+Write 12 original FAQs with direct, natural, mathematically accurate answers.
+
+Include:
+
+1. What are the six trigonometric ratios of a right triangle?
+2. How do you calculate sine, cosine, and tangent?
+3. What is the difference between direct and reciprocal trigonometric ratios?
+4. Why are trigonometric ratios dimensionless?
+5. How do I choose the correct calculator mode?
+6. Can a tangent or cotangent ratio be greater than 1?
+7. Why are secant and cosecant greater than 1 for acute angles?
+8. How do I find an angle from a trigonometric ratio?
+9. How do I calculate a missing side using trigonometry?
+10. What is the difference between inverse sine and cosecant?
+11. How can I verify my trigonometric calculations?
+12. How are trigonometric ratios used in real life?
+
+Write approximately 40–70 words per answer where appropriate.
+
+Keep each answer understandable on its own.
+
+Avoid copying complete paragraphs from the main article.
+
+Ensure the answers accurately describe the existing calculator's functionality.
+
+---
+
+## 19. RELATED CALCULATORS AND INTERNAL LINKS
+
+H2: Explore Related Right Triangle Calculators
+
+Inspect the live website and recommend relevant internal links.
+
+Potential destinations include:
+
+- Right Triangle Angle Calculator.
+- Right Triangle Side Calculator Using Angle.
+- Special Right Triangle Calculator.
+- Sine Ratio Calculator.
+- Cosine Ratio Calculator.
+- Tangent Ratio Calculator.
+- Cotangent Ratio Calculator.
+- Secant Ratio Calculator.
+- Cosecant Ratio Calculator.
+
+Verify every destination URL before including it.
+
+For each recommendation, provide:
+
+- Verified destination URL.
+- Natural anchor text.
+- Suggested placement.
+- A short explanation of its relevance.
+
+Use natural links within explanatory paragraphs rather than forcing links into every section.
+
+Do not add links to irrelevant text or invent destinations.
+
+Do not add internal links to headings.
+
+Avoid repeatedly linking the same phrase in adjacent paragraphs.
+
+---
+
+## 20. SEO OPTIMIZATION
+
+### Primary keyword
+
+Right Triangle Trig Ratios Calculator
+
+### Secondary keywords
+
+- trigonometric ratios calculator
+- right triangle trigonometry calculator
+- six trigonometric ratios
+- sine cosine tangent calculator
+- sine ratio formula
+- cosine ratio formula
+- tangent ratio formula
+- cotangent ratio formula
+- secant ratio formula
+- cosecant ratio formula
+- SOH-CAH-TOA
+- reciprocal trigonometric ratios
+- right triangle trig ratios
+- calculate trig ratios from sides
+- trigonometric identities
+- inverse trigonometric functions
+- opposite adjacent hypotenuse
+- right triangle side relationships
+
+Use these keywords naturally where relevant.
+
+Do not stuff the primary keyword into every heading.
+
+### Semantic concepts
+
+Cover relevant concepts such as:
+
+- Right triangle.
+- Reference angle.
+- Opposite side.
+- Adjacent side.
+- Hypotenuse.
+- Sine.
+- Cosine.
+- Tangent.
+- Cotangent.
+- Secant.
+- Cosecant.
+- Reciprocal.
+- Dimensionless ratio.
+- SOH-CAH-TOA.
+- Pythagorean theorem.
+- Pythagorean trigonometric identities.
+- Complementary angles.
+- Inverse sine.
+- Inverse cosine.
+- Inverse tangent.
+- Angle of elevation.
+- Roof pitch.
+- Slope.
+- Rise over run.
+- Surveying.
+- Construction geometry.
+- Mathematical verification.
+
+Optimise for search intent, completeness, natural language, and reader understanding.
+
+Do not invent keyword search volumes, ranking statistics, competitor data, or guarantees of first-page rankings.
+
+### SEO metadata
+
+Provide:
+
+1. An SEO title, approximately 50–60 characters where practical.
+2. A meta description, approximately 145–160 characters.
+3. Primary keyword.
+4. Relevant secondary keywords.
+5. Four descriptive image filenames.
+6. Four accessible image alt texts.
+7. Verified internal-link recommendations.
+8. Appropriate structured-data recommendations where justified.
+
+Keep the existing URL unless a change is explicitly requested.
+
+Do not fabricate reviews, ratings, author credentials, or unsupported claims.
+
+---
+
+## 21. FOUR CUSTOM EDUCATIONAL DIAGRAMS
+
+Create exactly four primary educational diagrams:
+
+1. Anatomy of a Right Triangle.
+2. The Six Trigonometric Ratios Explained.
+3. Four Real-World Trigonometry Examples.
+4. How to Choose the Correct Trigonometric Ratio.
+
+For every diagram, provide:
+
+- Exact placement within the article.
+- Descriptive title.
+- Correct mathematical labels.
+- Caption.
+- Accessible alt text under 125 characters.
+- Descriptive filename.
+- Detailed drawing instructions.
+- Responsive layout requirements.
+- SVG code if supported, or a ready-to-use image-generation prompt.
+
+All diagrams must:
+
+- Use the same side-label convention.
+- Show the reference angle clearly.
+- Mark the right angle correctly.
+- Distinguish opposite, adjacent, and hypotenuse.
+- Match the written examples.
+- Use readable typography and accessible contrast.
+- Remain readable on mobile screens.
+- Avoid misleading side proportions.
+- Avoid unnecessary decoration.
+- Use mathematically accurate formulas.
+- Clearly distinguish a ratio from an angle.
+- Be original rather than copied from another website.
+
+If SVG code is provided, make it responsive and suitable for embedding in the existing page.
+
+If only image-generation prompts are provided, identify them as prompts rather than claiming the images have already been generated.
+
+---
+
+## 22. TECHNICAL AND EDITORIAL REQUIREMENTS
+
+Preserve the existing calculator and its six modes.
+
+Do not:
+
+- Replace the calculator with a static image.
+- Create a duplicate calculator.
+- Remove the existing six calculation modes.
+- Change mathematical formulas incorrectly.
+- Change existing technical identifiers.
+- Invent calculator functionality.
+- Remove useful existing content without justification.
+- Add irrelevant internal links.
+- Confuse reciprocal ratios with inverse trigonometric functions.
+- Suggest that every ratio must be below 1.
+- Use incompatible measurement units.
+- Treat a ratio as an angle.
+- Make unsupported engineering or construction-safety claims.
+- Claim that diagrams have been generated when only prompts are supplied.
+
+Use semantic headings, accessible mathematical formatting, responsive diagrams, and descriptive alt text.
+
+If implementation code is requested, preserve existing calculator CSS classes, JavaScript identifiers, and interactive behaviour.
+
+Do not change calculator functionality as part of a content-only expansion.
+
+---
+
+## 23. FINAL OUTPUT FORMAT
+
+Deliver the complete work in this order.
+
+### A. SEO metadata
+
+Provide the SEO title, meta description, keyword focus, image filenames, and alt texts.
+
+### B. Complete publish-ready article
+
+Include:
+
+- Introduction.
+- Right-triangle fundamentals.
+- All six ratio explanations.
+- Comparison tables.
+- Calculator instructions.
+- Four foundational worked examples.
+- At least 12 practical examples.
+- Ratio relationships and identities.
+- Angle and side calculations.
+- Common mistakes.
+- Verification methods.
+- FAQs.
+- Relevant internal links.
+- A concise conclusion.
+
+### C. Four diagram specifications
+
+Provide exact placement, captions, filenames, alt text, drawing instructions, and SVG code or image-generation prompts.
+
+### D. Internal-link recommendations
+
+Include only verified URLs and relevant anchor text.
+
+### E. Editorial quality-control report
+
+Confirm:
+
+- Mathematical accuracy.
+- Correct formulas.
+- Correct side labels.
+- Accurate numerical results.
+- Diagram consistency.
+- SEO completeness.
+- Natural writing.
+- Completeness of the requested sections.
+- Preservation of the calculator's existing functionality.
+
+Do not deliver only an outline.
+
+Do not replace worked examples with placeholders.
+
+Do not summarise the requested article instead of writing it.
+
+If the full deliverable cannot fit in one response, deliver complete sections in numbered batches until the entire article and all diagram specifications are finished.
+
+---
+
+## 24. FINAL QUALITY CHECK
+
+Before delivering the content, independently verify:
+
+1. All six trigonometric formulas are correct.
+2. Opposite, adjacent, and hypotenuse labels remain consistent.
+3. Reciprocal relationships are mathematically correct.
+4. Quotient relationships are mathematically correct.
+5. Pythagorean identities are correctly explained.
+6. All 12 practical examples have accurate numerical results.
+7. Every worked example uses compatible units.
+8. All four diagrams match the written explanations.
+9. Direct ratios are not confused with reciprocal ratios.
+10. Inverse trigonometric functions are explained correctly.
+11. Complementary-angle relationships are correct.
+12. The difference between a ratio and an angle is clear.
+13. All internal links use verified URLs.
+14. The content reads naturally and avoids unnecessary repetition.
+15. Practical examples include suitable assumptions and limitations.
+16. Existing calculator functionality is preserved.
+17. The page answers the search intent for calculating all six trigonometric ratios from right-triangle side lengths.
+
+The ultimate goal is to create a comprehensive, mathematically accurate, natural, and genuinely useful educational resource that helps readers understand and apply all six right-triangle trigonometric ratios while keeping the existing calculator as the primary interactive feature.

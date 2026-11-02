@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="48" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">Why the Area Is Half of Base Times Height</text>
+  <text x="350" y="168" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">Rectangle: base times height</text>
+  <polygon points="150,200 150,390 550,390" fill="#f1c97d" fill-opacity="0.22"/>
+  <rect x="150" y="200" width="400" height="190" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <line x1="150" y1="200" x2="550" y2="390" stroke="#ffffff" stroke-width="2.5"/>
+  <polyline points="150,364 176,364 176,390" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <text x="350" y="432" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">c = 10</text>
+  <text x="112" y="303" font-size="24" font-weight="700" fill="#4ade80" text-anchor="middle">h = 4.8</text>
+  <text x="350" y="478" font-size="24" fill="#ffffff" text-anchor="middle">c x h = 10 x 4.8 = 48</text>
+  <text x="612" y="312" font-size="44" font-weight="700" fill="#ffffff" text-anchor="middle">/ 2</text>
+  <text x="890" y="168" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">Half of it: the triangle</text>
+  <polygon points="690,200 690,390 1090,390" fill="#f1c97d" fill-opacity="0.22" stroke="#f1c97d" stroke-width="4"/>
+  <text x="890" y="432" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">c = 10</text>
+  <text x="890" y="478" font-size="24" fill="#ffffff" text-anchor="middle">48 / 2 = 24 square units</text>
+  <text x="600" y="548" font-size="30" font-weight="700" fill="#f1c97d" text-anchor="middle">K = ch/2</text>
+  <text x="600" y="596" font-size="17" fill="#d4d4d4" text-anchor="middle">A triangle fills exactly half of its base-times-height rectangle.</text>
+</svg>

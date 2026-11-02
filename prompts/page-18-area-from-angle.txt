@@ -1,0 +1,2270 @@
+# MASTER PROMPT: Right Triangle Area From Angle Calculator — Comprehensive Educational Guide, 12 Practical Examples, Four Diagrams, and SEO Optimization
+
+## 1. ROLE AND OBJECTIVE
+
+Act as an experienced mathematics educator, trigonometry specialist, geometry researcher, professional educational content writer, and technical SEO strategist.
+
+Your task is to thoroughly research, improve, and expand the educational content of the following webpage.
+
+**Website:** Right Triangle Solver
+
+**Target URL:**  
+https://www.righttrianglesolver.com/right-triangle-area-from-angle-calculator/
+
+**Primary keyword:** Right Triangle Area From Angle Calculator
+
+**Content language:** English (US)
+
+**Recommended article length:** 4,000–5,000 words, excluding diagrams, SVG code, and SEO metadata.
+
+### Primary objective
+
+Create a comprehensive, original, mathematically accurate, natural-sounding educational article explaining how to calculate the area of a right triangle when one leg, the hypotenuse, and an acute angle are known.
+
+The content must explain both available calculation methods:
+
+**Method 1: Using angle A**
+
+\[
+K=\frac{bc\sin(A)}{2}
+\]
+
+**Method 2: Using angle B**
+
+\[
+K=\frac{ac\sin(B)}{2}
+\]
+
+The guide must help readers understand:
+
+- What the area of a right triangle means.
+- Why area is measured in square units.
+- What a leg, hypotenuse, and acute angle are.
+- How angle A differs from angle B.
+- Why the included angle matters.
+- Why the formula uses sine.
+- How sine relates to perpendicular height.
+- How the two angle-based area formulas are derived.
+- How to use each mode of the existing calculator.
+- Why the two methods produce the same area for the same triangle.
+- How to verify an area calculation using the two legs.
+- How to calculate the missing leg when necessary.
+- How to calculate area using alternative trigonometric formulas.
+- How to check whether the known side lengths and angle are geometrically consistent.
+- How degree and radian measurements differ.
+- How to interpret the result in practical situations.
+- How to avoid common errors.
+- How the formula applies to surveying, roofing, triangular panels, ramps, sails, land measurements, and construction geometry.
+
+The intended audience includes students, teachers, university learners, surveying students, engineering learners, architects, construction learners, DIY enthusiasts, and people working with triangular measurements.
+
+**Critical instruction:** The task is to expand the educational content, not rebuild the calculator.
+
+Preserve both existing calculation modes, their input fields, unit selectors, Calculate Area buttons, Reset buttons, result displays, and solution steps.
+
+---
+
+## 2. INSPECT THE EXISTING PAGE FIRST
+
+Before writing, examine the live webpage carefully.
+
+Review:
+
+1. Existing H1 and introductory text.
+2. Calculator Mode selector.
+3. Mode 1 input fields.
+4. Mode 2 input fields.
+5. Unit selectors.
+6. Angle input requirements.
+7. Calculate Area buttons.
+8. Reset buttons.
+9. Result displays.
+10. Solution steps.
+11. Existing educational triangle diagram.
+12. Existing worked examples.
+13. Common mistakes.
+14. FAQ section.
+15. Related calculators.
+16. Internal links.
+17. Existing headings and page hierarchy.
+18. Any repeated, incomplete, or mathematically unclear explanations.
+
+Retain useful information, but expand thin sections and remove unnecessary repetition.
+
+### Existing calculation modes
+
+**Mode 1: Adjacent side b, hypotenuse c, and angle A**
+
+The calculator uses:
+
+\[
+\boxed{K=\frac{bc\sin(A)}{2}}
+\]
+
+Required inputs:
+
+- Adjacent side \(b\).
+- Hypotenuse \(c\).
+- Acute angle \(A\), measured in degrees.
+
+**Mode 2: Opposite side a, hypotenuse c, and angle B**
+
+The calculator uses:
+
+\[
+\boxed{K=\frac{ac\sin(B)}{2}}
+\]
+
+Required inputs:
+
+- Side \(a\), which is opposite angle \(A\) and adjacent to angle \(B\).
+- Hypotenuse \(c\).
+- Acute angle \(B\), measured in degrees.
+
+Both modes calculate the triangle's area in square units.
+
+### Consistent mathematical notation
+
+Use:
+
+- \(A\): first acute angle.
+- \(B\): second acute angle.
+- \(C\): right angle, equal to \(90^\circ\).
+- \(a\): leg opposite angle \(A\).
+- \(b\): leg opposite angle \(B\).
+- \(c\): hypotenuse, opposite right angle \(C\).
+- \(K\): area of the right triangle.
+
+Angle \(A\) lies between sides \(b\) and \(c\).
+
+Angle \(B\) lies between sides \(a\) and \(c\).
+
+The triangle satisfies:
+
+\[
+A+B=90^\circ
+\]
+
+and:
+
+\[
+a^2+b^2=c^2
+\]
+
+### Critical mathematical accuracy requirement
+
+Because this is a right triangle, the known leg, hypotenuse, and included acute angle must be mutually consistent.
+
+For Mode 1:
+
+\[
+\boxed{b=c\cos(A)}
+\]
+
+For Mode 2:
+
+\[
+\boxed{a=c\cos(B)}
+\]
+
+Do not imply that any arbitrary positive leg, longer hypotenuse, and acute angle necessarily form a right triangle.
+
+Explain this clearly in a separate section on input validation.
+
+The general two-sides-and-included-angle area formula can calculate an area for other triangles, but the resulting triangle is not necessarily right-angled.
+
+This distinction is essential.
+
+---
+
+## 3. HUMAN WRITING REQUIREMENTS
+
+Write as an experienced mathematics teacher who is explaining a problem to a real student.
+
+The writing must be accurate, natural, direct, and genuinely educational.
+
+Follow these requirements:
+
+1. Use clear, professional English.
+2. Introduce concepts in a logical sequence.
+3. Explain why formulas work rather than only presenting equations.
+4. Use realistic measurements.
+5. Explain every important variable.
+6. Vary sentence length and paragraph structure.
+7. Use meaningful transitions.
+8. Keep paragraphs focused on one concept.
+9. Explain mathematical terminology in everyday language.
+10. Avoid repeating the same explanation in several sections.
+11. Do not use filler to reach the word count.
+12. Use worked examples to demonstrate reasoning.
+13. Interpret answers in real-world terms.
+14. Do not invent personal experience or professional credentials.
+15. Avoid exaggerated descriptions of the calculator.
+16. Do not make unsupported claims about engineering safety.
+17. Distinguish exact mathematical results from rounded approximations.
+18. Avoid keyword stuffing.
+19. Do not force every example to follow identical wording.
+20. Keep the article readable for both beginners and advanced learners.
+
+### Avoid generic AI-style expressions
+
+Do not use phrases such as:
+
+- In today's fast-paced world
+- Let's delve into
+- Let's dive deep into
+- Unlock the power of
+- In the fascinating world of mathematics
+- Whether you're a beginner or professional
+- Look no further
+- Seamlessly calculate
+- Revolutionize your calculations
+- This powerful tool empowers you
+
+Do not deliberately add grammatical mistakes to imitate human writing.
+
+Human-quality content should come from detailed reasoning, varied explanations, relevant examples, and clear mathematical understanding.
+
+---
+
+## 4. REQUIRED CONTENT STRUCTURE
+
+Preserve the existing H1:
+
+# Right Triangle Area From Angle Calculator
+
+Do not introduce another H1.
+
+Place the expanded educational content below the calculator while maintaining the existing website structure.
+
+### SECTION 1 — INTRODUCTION
+
+H2: How to Calculate Right Triangle Area From an Angle
+
+Write approximately 130–170 words.
+
+Explain:
+
+- What the calculator does.
+- Why an angle-based formula is useful.
+- When one leg and the hypotenuse are known.
+- Why an acute angle is needed by the calculator's selected mode.
+- How sine appears in the formula.
+- Why the result is expressed in square units.
+- Why the correct angle-side pairing matters.
+
+Begin with a numerical example.
+
+Suppose:
+
+\[
+b=4\text{ m}
+\]
+
+\[
+c=5\text{ m}
+\]
+
+\[
+A\approx36.87^\circ
+\]
+
+Then:
+
+\[
+K=\frac{4\times5\times\sin(36.87^\circ)}{2}
+\]
+
+Since:
+
+\[
+\sin(36.87^\circ)\approx0.6
+\]
+
+the area is approximately:
+
+\[
+\boxed{K=6\text{ m}^2}
+\]
+
+Explain that this is the area enclosed by the triangle.
+
+Clarify that \(36.87^\circ\) is a rounded angle and that retaining full precision gives the most accurate result.
+
+Avoid spending the entire introduction defining basic geometry. Keep it focused on the calculator's purpose.
+
+---
+
+## 5. UNDERSTANDING RIGHT TRIANGLE GEOMETRY
+
+H2: Understanding the Sides and Angles of a Right Triangle
+
+### H3: What Is a Right Triangle?
+
+Explain:
+
+- A right triangle has one interior angle of exactly \(90^\circ\).
+- Its two legs meet at that right angle.
+- The hypotenuse lies opposite the right angle.
+- The hypotenuse is the longest side.
+- The remaining angles are acute.
+- The two acute angles add up to \(90^\circ\).
+
+Show:
+
+\[
+A+B+C=180^\circ
+\]
+
+Since:
+
+\[
+C=90^\circ
+\]
+
+then:
+
+\[
+A+B=90^\circ
+\]
+
+### H3: What Is the Hypotenuse?
+
+Explain how to identify the hypotenuse regardless of the triangle's orientation.
+
+Clarify that side \(c\) is the hypotenuse in both calculator modes.
+
+Explain why the hypotenuse is longer than either leg.
+
+### H3: What Is the Adjacent Side?
+
+Explain that the adjacent leg touches the selected reference angle and is not the hypotenuse.
+
+For angle \(A\), the adjacent leg is \(b\).
+
+For angle \(B\), the adjacent leg is \(a\).
+
+Explain why identifying the reference angle first prevents mistakes.
+
+### H3: What Is the Opposite Side?
+
+Explain that the opposite side lies directly across from the selected angle.
+
+For angle \(A\), side \(a\) is opposite.
+
+For angle \(B\), side \(b\) is opposite.
+
+Show that the labels change depending on the reference angle, but the hypotenuse remains unchanged.
+
+### H3: What Is an Included Angle?
+
+Define an included angle as the angle between two specified sides.
+
+Explain:
+
+- Angle \(A\) is between sides \(b\) and \(c\).
+- Angle \(B\) is between sides \(a\) and \(c\).
+
+Explain why the included angle is essential to the general sine-based area formula.
+
+Insert Diagram 1 here.
+
+### DIAGRAM 1 — Right Triangle Anatomy and Both Area Modes
+
+Create a clean, original educational diagram showing:
+
+- A right triangle with vertices \(A\), \(B\), and \(C\).
+- Angle \(A\) at the bottom-left.
+- Right angle \(C\) at the bottom-right.
+- Angle \(B\) at the upper vertex.
+- Opposite side \(a\).
+- Adjacent side \(b\).
+- Hypotenuse \(c\).
+- Clear right-angle marker.
+- Acute-angle markers.
+
+Create two visually distinguished views of the same triangle.
+
+**Mode 1 view**
+
+Highlight:
+
+- Side \(b\).
+- Hypotenuse \(c\).
+- Included angle \(A\).
+
+Show:
+
+\[
+K=\frac{bc\sin(A)}{2}
+\]
+
+**Mode 2 view**
+
+Highlight:
+
+- Side \(a\).
+- Hypotenuse \(c\).
+- Included angle \(B\).
+
+Show:
+
+\[
+K=\frac{ac\sin(B)}{2}
+\]
+
+Use the same triangle orientation in both views.
+
+Provide:
+
+- Exact placement.
+- Descriptive diagram title.
+- Caption.
+- Filename.
+- Accessible alt text under 125 characters.
+- Detailed SVG instructions.
+
+---
+
+## 6. UNDERSTANDING THE SINE AREA FORMULA
+
+H2: Why Does the Area Formula Use Sine?
+
+Explain the general area formula involving two sides and their included angle:
+
+\[
+\boxed{K=\frac12 xy\sin(\theta)}
+\]
+
+Where:
+
+- \(x\) and \(y\) are two side lengths.
+- \(\theta\) is the included angle.
+- \(K\) is the area.
+
+### H3: How the General Formula Works
+
+Explain that the familiar triangle-area formula is:
+
+\[
+K=\frac12\times\text{base}\times\text{height}
+\]
+
+When the perpendicular height is not directly available, sine can be used to calculate the perpendicular component of another side.
+
+Show an appropriate diagram and explain the geometric relationship.
+
+If one side has length \(y\) and forms an angle \(\theta\) with base \(x\), then the corresponding perpendicular height is:
+
+\[
+h=y\sin(\theta)
+\]
+
+Substitute:
+
+\[
+K=\frac12 x(y\sin(\theta))
+\]
+
+Therefore:
+
+\[
+\boxed{K=\frac12xy\sin(\theta)}
+\]
+
+Explain why the included angle must correspond to the two selected sides.
+
+### H3: Why Is the Area Divided by Two?
+
+Explain that the triangle occupies half the area of an appropriate parallelogram with the same base and perpendicular height.
+
+Show why simply multiplying the sides and sine value produces twice the desired area.
+
+### H3: Why the Hypotenuse Can Be Used
+
+Explain that the hypotenuse can be one of the two sides in the included-angle formula.
+
+When paired with the correct leg and included angle, it provides enough information to calculate the triangle's area.
+
+### H3: Why the Angle Must Be Correct
+
+Explain that replacing angle \(A\) with angle \(B\) while leaving the same side pairing unchanged usually produces the wrong result.
+
+Use a numerical example to demonstrate the difference.
+
+This explanation should be one of the page's main educational strengths.
+
+Insert Diagram 2 here.
+
+### DIAGRAM 2 — How Sine Creates the Perpendicular Height
+
+Create an educational diagram showing how the sine formula connects to base times height.
+
+Use a 3-4-5 right triangle.
+
+**Part A**
+
+- Show side \(b=4\).
+- Show hypotenuse \(c=5\).
+- Show angle \(A\approx36.87^\circ\).
+- Highlight the perpendicular height \(a=3\).
+
+Show:
+
+\[
+a=c\sin(A)
+\]
+
+\[
+a=5(0.6)=3
+\]
+
+**Part B**
+
+Substitute the height into the standard area formula:
+
+\[
+K=\frac{ba}{2}
+\]
+
+\[
+K=\frac{4\times3}{2}=6
+\]
+
+**Part C**
+
+Show the direct sine-based formula:
+
+\[
+K=\frac{bc\sin(A)}{2}
+\]
+
+\[
+K=\frac{4\times5\times0.6}{2}=6
+\]
+
+Use clear arrows to explain why both calculations agree.
+
+Provide caption, filename, alt text, exact placement, and SVG instructions.
+
+---
+
+## 7. METHOD ONE — AREA USING ANGLE A
+
+H2: How to Find Area Using Side b, Hypotenuse c, and Angle A
+
+Introduce:
+
+\[
+\boxed{K=\frac{bc\sin(A)}{2}}
+\]
+
+Explain the variables:
+
+- \(b\): leg adjacent to angle \(A\).
+- \(c\): hypotenuse.
+- \(A\): acute included angle between \(b\) and \(c\).
+- \(K\): area.
+
+### H3: Step-by-Step Formula Derivation
+
+Begin with:
+
+\[
+K=\frac{ab}{2}
+\]
+
+Use the sine ratio:
+
+\[
+\sin(A)=\frac{a}{c}
+\]
+
+Therefore:
+
+\[
+a=c\sin(A)
+\]
+
+Substitute:
+
+\[
+K=\frac{b(c\sin(A))}{2}
+\]
+
+Rearrange:
+
+\[
+\boxed{K=\frac{bc\sin(A)}{2}}
+\]
+
+Explain why the unknown opposite leg does not need to be entered into the calculator.
+
+### H3: Complete Worked Example
+
+Given:
+
+\[
+b=4\text{ m}
+\]
+
+\[
+c=5\text{ m}
+\]
+
+\[
+A\approx36.87^\circ
+\]
+
+Step 1: Write the formula.
+
+\[
+K=\frac{bc\sin(A)}{2}
+\]
+
+Step 2: Substitute.
+
+\[
+K=\frac{4\times5\times\sin(36.87^\circ)}{2}
+\]
+
+Step 3: Calculate sine.
+
+\[
+\sin(36.87^\circ)\approx0.6
+\]
+
+Step 4: Multiply.
+
+\[
+K\approx\frac{20\times0.6}{2}
+\]
+
+Step 5: Divide.
+
+\[
+\boxed{K\approx6\text{ m}^2}
+\]
+
+Explain the significance of the answer.
+
+### H3: Verify Using the Missing Leg
+
+Calculate:
+
+\[
+a=\sqrt{c^2-b^2}
+\]
+
+\[
+a=\sqrt{25-16}=3
+\]
+
+Then:
+
+\[
+K=\frac{3\times4}{2}=6
+\]
+
+Explain why both methods agree.
+
+### H3: When Should You Use Mode 1?
+
+Explain that this mode is appropriate when the known measurements correspond to \(b\), \(c\), and angle \(A\).
+
+Clarify that if both legs are already known, the direct legs formula is simpler.
+
+---
+
+## 8. METHOD TWO — AREA USING ANGLE B
+
+H2: How to Find Area Using Side a, Hypotenuse c, and Angle B
+
+Introduce:
+
+\[
+\boxed{K=\frac{ac\sin(B)}{2}}
+\]
+
+Explain:
+
+- \(a\): leg adjacent to angle \(B\), although it is opposite angle \(A\).
+- \(c\): hypotenuse.
+- \(B\): included acute angle between \(a\) and \(c\).
+- \(K\): area.
+
+### H3: Step-by-Step Formula Derivation
+
+Start with:
+
+\[
+K=\frac{ab}{2}
+\]
+
+Using sine relative to angle \(B\):
+
+\[
+\sin(B)=\frac{b}{c}
+\]
+
+Therefore:
+
+\[
+b=c\sin(B)
+\]
+
+Substitute:
+
+\[
+K=\frac{a(c\sin(B))}{2}
+\]
+
+Hence:
+
+\[
+\boxed{K=\frac{ac\sin(B)}{2}}
+\]
+
+Explain why this formula uses side \(a\) even though side \(a\) is called the opposite side in the page's main notation.
+
+It is opposite angle \(A\) but adjacent to angle \(B\).
+
+### H3: Complete Worked Example
+
+Given:
+
+\[
+a=3\text{ m}
+\]
+
+\[
+c=5\text{ m}
+\]
+
+\[
+B\approx53.13^\circ
+\]
+
+Step 1:
+
+\[
+K=\frac{ac\sin(B)}{2}
+\]
+
+Step 2:
+
+\[
+K=\frac{3\times5\times\sin(53.13^\circ)}{2}
+\]
+
+Step 3:
+
+\[
+\sin(53.13^\circ)\approx0.8
+\]
+
+Step 4:
+
+\[
+K\approx\frac{15\times0.8}{2}
+\]
+
+Final answer:
+
+\[
+\boxed{K\approx6\text{ m}^2}
+\]
+
+Explain that the result is the same as Mode 1 because both examples describe the same triangle.
+
+### H3: Verify Using the Missing Leg
+
+Calculate:
+
+\[
+b=\sqrt{c^2-a^2}
+\]
+
+\[
+b=\sqrt{25-9}=4
+\]
+
+Then:
+
+\[
+K=\frac{3\times4}{2}=6
+\]
+
+### H3: When Should You Use Mode 2?
+
+Explain that Mode 2 is appropriate when side \(a\), hypotenuse \(c\), and angle \(B\) are known.
+
+Describe why this is not interchangeable with Mode 1 unless all measurements and labels are adjusted correctly.
+
+---
+
+## 9. WHY BOTH FORMULAS PRODUCE THE SAME AREA
+
+H2: Two Angle-Based Formulas, One Right Triangle
+
+Explain that both modes calculate the area of the same geometric object.
+
+Mode 1:
+
+\[
+K=\frac{bc\sin(A)}{2}
+\]
+
+Mode 2:
+
+\[
+K=\frac{ac\sin(B)}{2}
+\]
+
+For a valid right triangle:
+
+\[
+\sin(A)=\frac{a}{c}
+\]
+
+Therefore:
+
+\[
+bc\sin(A)=ab
+\]
+
+Similarly:
+
+\[
+\sin(B)=\frac{b}{c}
+\]
+
+Therefore:
+
+\[
+ac\sin(B)=ab
+\]
+
+Both formulas simplify to:
+
+\[
+\boxed{K=\frac{ab}{2}}
+\]
+
+Use the 3-4-5 triangle to demonstrate.
+
+| Method | Inputs | Result |
+|---|---|---|
+| Legs formula | \(a=3,b=4\) | 6 square units |
+| Mode 1 | \(b=4,c=5,A\approx36.87^\circ\) | Approximately 6 |
+| Mode 2 | \(a=3,c=5,B\approx53.13^\circ\) | Approximately 6 |
+
+Explain that rounded angle measurements can introduce small numerical differences.
+
+---
+
+## 10. HOW TO USE THE EXISTING CALCULATOR
+
+H2: How to Use the Right Triangle Area From Angle Calculator
+
+Provide a clear walkthrough matching the actual calculator interface.
+
+Step 1: Identify the measurements already known.
+
+Step 2: Choose the correct mode.
+
+- Mode 1 for side \(b\), hypotenuse \(c\), and angle \(A\).
+- Mode 2 for side \(a\), hypotenuse \(c\), and angle \(B\).
+
+Step 3: Confirm which acute angle is being measured.
+
+Step 4: Identify the corresponding leg.
+
+Step 5: Enter the leg length.
+
+Step 6: Enter the hypotenuse length.
+
+Step 7: Select compatible measurement units.
+
+Step 8: Enter the acute angle in degrees.
+
+Step 9: Confirm that the angle is strictly between \(0^\circ\) and \(90^\circ\).
+
+Step 10: Confirm that the hypotenuse is longer than the leg.
+
+Step 11: Check that the leg, hypotenuse, and angle describe the same right triangle.
+
+Step 12: Click Calculate Area.
+
+Step 13: Review the result and solution steps.
+
+Step 14: Interpret the result in square units.
+
+Step 15: Use Reset to clear the previous calculation.
+
+Explain that the calculator requires a different leg and angle in each mode.
+
+Do not invent features, input modes, or automatic consistency checks that have not been verified.
+
+---
+
+## 11. FOUR FOUNDATIONAL MATHEMATICAL EXAMPLES
+
+H2: Step-by-Step Examples of Right Triangle Area From an Angle
+
+Provide four examples before the practical applications.
+
+### Example 1 — 3-4-5 Triangle Using Angle A
+
+Given:
+
+\[
+b=4,\quad c=5,\quad A\approx36.87^\circ
+\]
+
+Use:
+
+\[
+K=\frac{bc\sin(A)}{2}
+\]
+
+Final result:
+
+\[
+\boxed{K\approx6}
+\]
+
+Explain why the area is six square units.
+
+### Example 2 — Same Triangle Using Angle B
+
+Given:
+
+\[
+a=3,\quad c=5,\quad B\approx53.13^\circ
+\]
+
+Use:
+
+\[
+K=\frac{ac\sin(B)}{2}
+\]
+
+Final result:
+
+\[
+\boxed{K\approx6}
+\]
+
+Explain why the result matches Example 1.
+
+### Example 3 — A 30-60-90 Triangle
+
+Use:
+
+\[
+c=10,\qquad A=30^\circ
+\]
+
+Since:
+
+\[
+b=c\cos(30^\circ)=5\sqrt3
+\]
+
+Calculate:
+
+\[
+K=\frac{(5\sqrt3)(10)\sin(30^\circ)}{2}
+\]
+
+\[
+\boxed{K=\frac{25\sqrt3}{2}\approx21.65}
+\]
+
+Explain why special-angle values are helpful.
+
+### Example 4 — A 45-45-90 Triangle
+
+Given:
+
+\[
+c=10,\qquad A=45^\circ
+\]
+
+For this triangle:
+
+\[
+a=b=5\sqrt2
+\]
+
+Calculate:
+
+\[
+K=\frac{(5\sqrt2)(10)\sin(45^\circ)}{2}
+\]
+
+Final result:
+
+\[
+\boxed{K=25}
+\]
+
+Explain that this is an isosceles right triangle.
+
+Mention that it also has the maximum area possible for a right triangle with hypotenuse 10 units.
+
+---
+
+## 12. TWELVE REAL-WORLD PRACTICAL EXAMPLES
+
+H2: Real-Life Applications of Right Triangle Area From Angle
+
+Provide 12 realistic, fully worked examples.
+
+Use six examples for Mode 1 and six for Mode 2.
+
+For every example:
+
+1. Explain the real-world situation.
+2. Identify the triangle.
+3. State the known measurements.
+4. Select the calculator mode.
+5. Explain the angle-side relationship.
+6. Write the correct formula.
+7. Substitute the measurements.
+8. Calculate the sine value.
+9. Calculate the area.
+10. Report the answer in square units.
+11. Explain the practical meaning.
+12. Mention assumptions or limitations.
+13. Independently verify the calculation.
+
+Use exact underlying triangle relationships when possible. Display angles to two decimal places but retain sufficient precision for the arithmetic.
+
+### Practical Example 1 — Triangular Roof Gable
+
+A simplified right-triangular roof gable section has:
+
+- Adjacent side \(b=4\text{ m}\).
+- Hypotenuse \(c=5\text{ m}\).
+- Included angle \(A\approx36.87^\circ\).
+
+Use Mode 1.
+
+\[
+K=\frac{4\times5\times\sin(36.87^\circ)}{2}
+\]
+
+Final result:
+
+\[
+\boxed{K\approx6\text{ m}^2}
+\]
+
+Explain that the answer describes the flat area of the triangular section, not the total roof surface.
+
+### Practical Example 2 — Triangular Ramp Side Panel
+
+A right-triangular ramp side panel has:
+
+- Adjacent side \(b=2.4\text{ m}\).
+- Hypotenuse \(c=2.5\text{ m}\).
+- Included angle \(A\approx16.26^\circ\).
+
+Use Mode 1.
+
+The underlying opposite side is 0.7 m, so:
+
+\[
+\sin(A)=\frac{0.7}{2.5}=0.28
+\]
+
+Calculate:
+
+\[
+K=\frac{2.4\times2.5\times0.28}{2}
+\]
+
+\[
+\boxed{K\approx0.84\text{ m}^2}
+\]
+
+Explain that the result is the triangular side-panel area, not the sloping ramp surface.
+
+Do not make accessibility or code-compliance claims.
+
+### Practical Example 3 — Triangular Sail
+
+A flat right-triangular sail section has:
+
+- Adjacent side \(b=12\text{ ft}\).
+- Hypotenuse \(c=13\text{ ft}\).
+- Angle \(A\approx22.62^\circ\).
+
+Use Mode 1.
+
+The opposite side is 5 ft.
+
+\[
+\sin(A)=\frac5{13}
+\]
+
+Calculate:
+
+\[
+K=\frac{12\times13\times(5/13)}{2}
+\]
+
+\[
+\boxed{K=30\text{ ft}^2}
+\]
+
+Explain that this is the flat geometric area before allowing for seams, curves, or material wastage.
+
+### Practical Example 4 — Right-Triangular Land Section
+
+A surveying sketch describes a right-triangular plot with:
+
+- Adjacent leg \(b=40\text{ m}\).
+- Hypotenuse \(c=50\text{ m}\).
+- Included angle \(A\approx36.87^\circ\).
+
+Use Mode 1.
+
+\[
+\sin(A)=\frac{30}{50}=0.6
+\]
+
+Calculate:
+
+\[
+K=\frac{40\times50\times0.6}{2}
+\]
+
+\[
+\boxed{K=600\text{ m}^2}
+\]
+
+Explain that this is the area of the triangular land section under the simplified geometric model.
+
+### Practical Example 5 — Steel Support Panel
+
+A flat triangular steel panel has:
+
+- Adjacent side \(b=1.5\text{ m}\).
+- Hypotenuse \(c=1.7\text{ m}\).
+- Angle \(A\approx28.07^\circ\).
+
+Use Mode 1.
+
+The opposite side is 0.8 m.
+
+\[
+\sin(A)=\frac{0.8}{1.7}
+\]
+
+Calculate:
+
+\[
+K=\frac{1.5\times1.7\times(0.8/1.7)}{2}
+\]
+
+\[
+\boxed{K=0.6\text{ m}^2}
+\]
+
+Explain that this is a planar area measurement, not a structural load-capacity calculation.
+
+### Practical Example 6 — Staircase Side Profile
+
+A simplified staircase side panel has:
+
+- Horizontal leg \(b=3.2\text{ m}\).
+- Hypotenuse \(c=4\text{ m}\).
+- Angle \(A\approx36.87^\circ\).
+
+Use Mode 1.
+
+\[
+\sin(A)=0.6
+\]
+
+Calculate:
+
+\[
+K=\frac{3.2\times4\times0.6}{2}
+\]
+
+\[
+\boxed{K=3.84\text{ m}^2}
+\]
+
+Explain that the result represents the triangular side profile, not the total area of the stair treads.
+
+### Practical Example 7 — Triangular Glass Window
+
+A right-triangular window has:
+
+- Side \(a=0.6\text{ m}\).
+- Hypotenuse \(c=1\text{ m}\).
+- Included angle \(B\approx53.13^\circ\).
+
+Use Mode 2.
+
+\[
+\sin(B)=0.8
+\]
+
+Calculate:
+
+\[
+K=\frac{0.6\times1\times0.8}{2}
+\]
+
+\[
+\boxed{K=0.24\text{ m}^2}
+\]
+
+Explain that this is the glass area's geometric estimate before frame allowances.
+
+### Practical Example 8 — Triangular Awning
+
+A flat right-triangular awning section has:
+
+- Side \(a=1.2\text{ m}\).
+- Hypotenuse \(c=2\text{ m}\).
+- Included angle \(B\approx53.13^\circ\).
+
+Use Mode 2.
+
+\[
+K=\frac{1.2\times2\times0.8}{2}
+\]
+
+\[
+\boxed{K=0.96\text{ m}^2}
+\]
+
+Explain how the angle-based formula calculates the awning's triangular area.
+
+### Practical Example 9 — Plywood Cutting Pattern
+
+A right-triangular plywood piece has:
+
+- Side \(a=0.9\text{ m}\).
+- Hypotenuse \(c=1.5\text{ m}\).
+- Angle \(B\approx53.13^\circ\).
+
+Use Mode 2.
+
+\[
+K=\frac{0.9\times1.5\times0.8}{2}
+\]
+
+\[
+\boxed{K=0.54\text{ m}^2}
+\]
+
+Explain how this helps estimate usable material area, excluding cut-off waste.
+
+### Practical Example 10 — Surveying a Triangular Field
+
+A simplified triangular field measurement gives:
+
+- Side \(a=7\text{ m}\).
+- Hypotenuse \(c=25\text{ m}\).
+- Angle \(B\approx73.74^\circ\).
+
+Use Mode 2.
+
+The other leg is 24 m.
+
+\[
+\sin(B)=\frac{24}{25}=0.96
+\]
+
+Calculate:
+
+\[
+K=\frac{7\times25\times0.96}{2}
+\]
+
+\[
+\boxed{K=84\text{ m}^2}
+\]
+
+Explain the result as the planar area of the triangular section.
+
+### Practical Example 11 — Triangular Kite Panel
+
+A right-triangular kite or fabric panel has:
+
+- Side \(a=20\text{ cm}\).
+- Hypotenuse \(c=25\text{ cm}\).
+- Angle \(B\approx36.87^\circ\).
+
+Use Mode 2.
+
+\[
+\sin(B)=\frac{15}{25}=0.6
+\]
+
+Calculate:
+
+\[
+K=\frac{20\times25\times0.6}{2}
+\]
+
+\[
+\boxed{K=150\text{ cm}^2}
+\]
+
+Explain why the result is measured in square centimetres.
+
+### Practical Example 12 — Solar Mounting Side Panel
+
+A flat right-triangular support-side panel has:
+
+- Side \(a=1.8\text{ m}\).
+- Hypotenuse \(c=3\text{ m}\).
+- Included angle \(B\approx53.13^\circ\).
+
+Use Mode 2.
+
+\[
+\sin(B)=0.8
+\]
+
+Calculate:
+
+\[
+K=\frac{1.8\times3\times0.8}{2}
+\]
+
+\[
+\boxed{K=2.16\text{ m}^2}
+\]
+
+Explain that the result describes the triangular panel area, not the solar panel's electricity output or structural capacity.
+
+### After all 12 examples
+
+Provide a comparison table containing:
+
+- Practical situation.
+- Calculator mode.
+- Known leg.
+- Hypotenuse.
+- Acute angle.
+- Formula used.
+- Calculated area.
+- Practical interpretation.
+
+Do not repeat every full calculation in the table.
+
+Insert Diagram 3 here.
+
+### DIAGRAM 3 — Four Practical Right Triangle Area Calculations
+
+Create a professional four-panel educational infographic.
+
+**Panel 1: Roof gable**
+
+- \(b=4\text{ m}\).
+- \(c=5\text{ m}\).
+- \(A\approx36.87^\circ\).
+- Area approximately \(6\text{ m}^2\).
+
+**Panel 2: Triangular glass window**
+
+- \(a=0.6\text{ m}\).
+- \(c=1\text{ m}\).
+- \(B\approx53.13^\circ\).
+- Area \(0.24\text{ m}^2\).
+
+**Panel 3: Surveying**
+
+- \(a=7\text{ m}\).
+- \(c=25\text{ m}\).
+- \(B\approx73.74^\circ\).
+- Area \(84\text{ m}^2\).
+
+**Panel 4: Triangular sail**
+
+- \(b=12\text{ ft}\).
+- \(c=13\text{ ft}\).
+- \(A\approx22.62^\circ\).
+- Area \(30\text{ ft}^2\).
+
+Every panel must include:
+
+- Correct triangle geometry.
+- Right-angle marker.
+- Appropriate included angle.
+- Relevant side lengths.
+- Correct area formula.
+- Final area in square units.
+
+Keep the diagrams readable on desktop and mobile screens.
+
+Provide filename, caption, alt text, and SVG generation instructions.
+
+---
+
+## 13. MATHEMATICAL CONSISTENCY OF THE INPUTS
+
+H2: How to Check Whether the Side Lengths and Angle Form a Right Triangle
+
+This is a mandatory section.
+
+Explain that a leg, hypotenuse, and acute angle provide more information than is strictly necessary to determine a right triangle.
+
+The three measurements must agree.
+
+### H3: Validating Mode 1
+
+For Mode 1:
+
+\[
+\cos(A)=\frac{b}{c}
+\]
+
+Therefore:
+
+\[
+\boxed{b=c\cos(A)}
+\]
+
+Use:
+
+\[
+b=4,\qquad c=5
+\]
+
+Then:
+
+\[
+\cos(A)=0.8
+\]
+
+\[
+A=\cos^{-1}(0.8)\approx36.87^\circ
+\]
+
+Explain why an arbitrary angle such as \(60^\circ\) would not describe the same right triangle with these side lengths.
+
+### H3: Validating Mode 2
+
+For Mode 2:
+
+\[
+\cos(B)=\frac{a}{c}
+\]
+
+Therefore:
+
+\[
+\boxed{a=c\cos(B)}
+\]
+
+Use:
+
+\[
+a=3,\qquad c=5
+\]
+
+Then:
+
+\[
+B=\cos^{-1}(0.6)\approx53.13^\circ
+\]
+
+Explain why the chosen angle must correspond to the actual measurements.
+
+### H3: Why the General Area Formula Can Still Return a Number
+
+Explain that the formula:
+
+\[
+K=\frac12xy\sin(\theta)
+\]
+
+can calculate the area of a general triangle defined by two sides and their included angle.
+
+However, an incompatible angle-side combination may describe a non-right triangle.
+
+The arithmetic result does not automatically prove that the inputs describe a valid right triangle.
+
+### H3: How to Handle Rounded Angle Measurements
+
+Explain that an angle such as \(36.87^\circ\) may be a rounded representation of approximately \(36.8699^\circ\).
+
+Small differences caused by measurement or display rounding should be distinguished from genuinely inconsistent geometry.
+
+Do not invent a numerical validation tolerance for the existing calculator.
+
+---
+
+## 14. OTHER USEFUL AREA FORMULAS INVOLVING ANGLES
+
+H2: Alternative Ways to Find Right Triangle Area Using Angles
+
+Introduce related formulas for educational completeness.
+
+Clarify that these are mathematical alternatives, not necessarily additional modes supported by the existing calculator.
+
+### H3: Using the Hypotenuse and One Acute Angle
+
+For a valid right triangle:
+
+\[
+a=c\sin(A)
+\]
+
+\[
+b=c\cos(A)
+\]
+
+Substitute into:
+
+\[
+K=\frac{ab}{2}
+\]
+
+Therefore:
+
+\[
+\boxed{K=\frac{c^2\sin(A)\cos(A)}{2}}
+\]
+
+Using the double-angle identity:
+
+\[
+\sin(2A)=2\sin(A)\cos(A)
+\]
+
+obtain:
+
+\[
+\boxed{K=\frac{c^2\sin(2A)}{4}}
+\]
+
+Explain why the hypotenuse and one acute angle determine the triangle completely.
+
+### H3: Using One Leg and Its Adjacent Angle
+
+If side \(b\) and angle \(A\) are known:
+
+\[
+a=b\tan(A)
+\]
+
+Therefore:
+
+\[
+\boxed{K=\frac{b^2\tan(A)}{2}}
+\]
+
+### H3: Using Side a and Angle B
+
+For angle \(B\):
+
+\[
+b=a\tan(B)
+\]
+
+Therefore:
+
+\[
+\boxed{K=\frac{a^2\tan(B)}{2}}
+\]
+
+Explain the side-angle pairing carefully.
+
+### H3: Which Method Is Simplest?
+
+Explain that the best formula depends on the available measurements.
+
+Do not add unnecessary computations when a direct method is available.
+
+Keep the existing calculator's two modes as the primary topic.
+
+---
+
+## 15. HOW THE ANGLE AFFECTS THE AREA
+
+H2: How Does the Acute Angle Affect Right Triangle Area?
+
+Explain that sine changes as an acute angle increases.
+
+However, clarify that the side lengths and angle of a right triangle cannot be changed independently.
+
+### H3: Fixed Hypotenuse, Changing Angle
+
+For a fixed hypotenuse:
+
+\[
+K=\frac{c^2\sin(2A)}{4}
+\]
+
+Explain why the area increases as angle \(A\) moves from near \(0^\circ\) toward \(45^\circ\).
+
+After \(45^\circ\), the area decreases as angle \(A\) approaches \(90^\circ\).
+
+Explain this using complementary angles and the double-angle formula.
+
+### H3: Maximum Area for a Fixed Hypotenuse
+
+Since:
+
+\[
+\sin(2A)\leq1
+\]
+
+the maximum area is:
+
+\[
+\boxed{K_{\max}=\frac{c^2}{4}}
+\]
+
+This occurs at:
+
+\[
+A=B=45^\circ
+\]
+
+For:
+
+\[
+c=10
+\]
+
+the maximum area is:
+
+\[
+\boxed{K_{\max}=25\text{ square units}}
+\]
+
+Explain why this corresponds to an isosceles right triangle.
+
+### H3: Why Area Does Not Simply Increase With Angle in Every Case
+
+Explain that statements about increasing angles only make sense when the quantities being held constant are specified.
+
+For a valid right triangle with fixed hypotenuse, the relationship is not simply increasing throughout the full acute-angle range.
+
+Use this section to avoid a common mathematical oversimplification.
+
+---
+
+## 16. FOURTH DIAGRAM — TWO FORMULAS, SAME TRIANGLE
+
+### DIAGRAM 4 — Mode 1 vs. Mode 2: Same Triangle, Same Area
+
+Create a professionally designed educational infographic using one 3-4-5 right triangle.
+
+**Main triangle**
+
+Show:
+
+- \(a=3\).
+- \(b=4\).
+- \(c=5\).
+- \(A\approx36.87^\circ\).
+- \(B\approx53.13^\circ\).
+- \(C=90^\circ\).
+
+**Left calculation panel — Mode 1**
+
+Show:
+
+\[
+K=\frac{bc\sin(A)}{2}
+\]
+
+\[
+K\approx\frac{4\times5\times0.6}{2}
+\]
+
+\[
+K\approx6
+\]
+
+**Right calculation panel — Mode 2**
+
+Show:
+
+\[
+K=\frac{ac\sin(B)}{2}
+\]
+
+\[
+K\approx\frac{3\times5\times0.8}{2}
+\]
+
+\[
+K\approx6
+\]
+
+**Bottom verification panel**
+
+Show:
+
+\[
+K=\frac{ab}{2}
+\]
+
+\[
+K=\frac{3\times4}{2}=6
+\]
+
+Caption:
+
+"Two included angles, two equivalent formulas, one triangle area."
+
+Include all three calculations in a clean, responsive layout.
+
+Provide:
+
+- Exact placement.
+- Diagram title.
+- Caption.
+- Descriptive filename.
+- Accessible alt text.
+- Detailed SVG creation instructions.
+
+---
+
+## 17. UNDERSTANDING MEASUREMENT UNITS
+
+H2: Area Units, Degrees, and Rounding
+
+Explain why side lengths and area use different units.
+
+### H3: Square Metres
+
+If the inputs are in metres, the resulting area is in square metres.
+
+For example:
+
+\[
+4\text{ m}\times5\text{ m}\times0.6/2
+=6\text{ m}^2
+\]
+
+### H3: Square Centimetres
+
+Explain how centimetre measurements produce square-centimetre results.
+
+### H3: Square Feet
+
+Explain how foot measurements produce square-foot results.
+
+### H3: Degrees vs. Radians
+
+The existing calculator expects angles in degrees.
+
+Explain the conversion:
+
+\[
+\text{Degrees}=\text{Radians}\times\frac{180}{\pi}
+\]
+
+Give a simple example:
+
+\[
+\frac{\pi}{6}\text{ radians}=30^\circ
+\]
+
+### H3: Why Sine Has No Units
+
+Explain that sine produces a dimensionless ratio.
+
+When multiplied by two lengths, the resulting area has square units.
+
+### H3: Why Intermediate Rounding Matters
+
+Explain that rounding an angle or sine value too early can slightly change the calculated area.
+
+Recommend retaining full precision during calculations and rounding the final result according to the input measurements.
+
+---
+
+## 18. COMMON MISTAKES
+
+H2: Common Mistakes When Calculating Right Triangle Area From an Angle
+
+Discuss at least these 16 mistakes:
+
+1. Using angle \(B\) with Mode 1 without changing the side inputs.
+2. Using angle \(A\) with Mode 2 incorrectly.
+3. Confusing adjacent and opposite sides.
+4. Entering the hypotenuse into the leg field.
+5. Using the wrong included angle.
+6. Forgetting the sine function.
+7. Forgetting to divide by two.
+8. Entering radians when degrees are expected.
+9. Entering an angle of \(0^\circ\) or \(90^\circ\).
+10. Entering negative or zero lengths.
+11. Entering a leg longer than the hypotenuse.
+12. Using mutually inconsistent leg, hypotenuse, and angle measurements.
+13. Mixing length units.
+14. Reporting area in linear units.
+15. Rounding the angle too early.
+16. Assuming the two calculator modes use interchangeable inputs.
+
+For every mistake:
+
+- Describe the error.
+- Explain why it happens.
+- Show the correct approach.
+- Give a short numerical example where helpful.
+
+### Wrong-versus-correct example
+
+Given a 3-4-5 right triangle:
+
+\[
+b=4,\qquad c=5,\qquad A\approx36.87^\circ
+\]
+
+Correct:
+
+\[
+K=\frac{4\times5\times\sin(A)}{2}
+\]
+
+\[
+K\approx6
+\]
+
+If the wrong angle is substituted:
+
+\[
+K=\frac{4\times5\times\sin(B)}{2}
+\]
+
+the result is approximately 8, not 6.
+
+Explain that this mistake uses the incorrect included angle for sides \(b\) and \(c\).
+
+---
+
+## 19. VERIFYING THE AREA RESULT
+
+H2: How to Check Whether Your Calculated Area Is Correct
+
+Provide several verification methods.
+
+### Method 1 — Check the Pythagorean Theorem
+
+For a valid right triangle:
+
+\[
+a^2+b^2=c^2
+\]
+
+Use the 3-4-5 triangle as an example.
+
+### Method 2 — Check the Legs Formula
+
+Verify:
+
+\[
+K=\frac{ab}{2}
+\]
+
+For:
+
+\[
+a=3,\qquad b=4
+\]
+
+the area is:
+
+\[
+K=6
+\]
+
+### Method 3 — Check the Complementary Angle
+
+Verify:
+
+\[
+A+B=90^\circ
+\]
+
+For:
+
+\[
+A\approx36.87^\circ
+\]
+
+then:
+
+\[
+B\approx53.13^\circ
+\]
+
+### Method 4 — Check the Sine Relationship
+
+Mode 1:
+
+\[
+\sin(A)=\frac{a}{c}
+\]
+
+Mode 2:
+
+\[
+\sin(B)=\frac{b}{c}
+\]
+
+### Method 5 — Verify the Input Consistency
+
+Mode 1:
+
+\[
+b\approx c\cos(A)
+\]
+
+Mode 2:
+
+\[
+a\approx c\cos(B)
+\]
+
+Explain that the approximation symbol is appropriate when angle measurements have been rounded.
+
+### Method 6 — Check the Maximum Area
+
+For a fixed hypotenuse:
+
+\[
+K\leq\frac{c^2}{4}
+\]
+
+Use this as an independent reasonableness check.
+
+### Method 7 — Check Square Units
+
+Ensure the result is expressed in the appropriate square units.
+
+Do not invent calculator accuracy specifications or validation features.
+
+---
+
+## 20. FREQUENTLY ASKED QUESTIONS
+
+H2: Frequently Asked Questions
+
+Write 12 original FAQs with direct and helpful answers.
+
+Include:
+
+1. How do you find the area of a right triangle using an angle?
+2. What is the formula for area using side b, hypotenuse c, and angle A?
+3. What is the formula for area using side a, hypotenuse c, and angle B?
+4. Why does the area formula use sine?
+5. What is an included angle?
+6. Can I calculate the area without knowing both legs?
+7. Why do both calculator modes give the same area?
+8. Can I use any acute angle with a given leg and hypotenuse?
+9. How can I verify the area using the legs formula?
+10. Does the angle need to be in degrees or radians?
+11. What is the maximum area for a given hypotenuse?
+12. When should I use the main Right Triangle Area Calculator instead?
+
+Write approximately 40–75 words per answer where useful.
+
+Avoid copying complete paragraphs from the article.
+
+Keep answers mathematically accurate and consistent with the calculator.
+
+---
+
+## 21. RELATED CALCULATORS AND INTERNAL LINKS
+
+H2: Explore Related Right Triangle Calculators
+
+Inspect the website and recommend useful internal links.
+
+Potential destinations include:
+
+- Right Triangle Area Calculator.
+- Right Triangle Area From Legs Calculator.
+- Right Triangle Area From Altitude Calculator.
+- Right Triangle Area From Leg and Angle Calculator.
+- Right Triangle Side From Angle Calculator.
+- Right Triangle Angle Calculator.
+- Right Triangle Trig Ratios Calculator.
+
+Verify each destination URL before including it.
+
+For every internal link provide:
+
+- Verified URL.
+- Natural anchor text.
+- Suggested placement.
+- Reason the destination is useful.
+
+Use this page as the primary resource when a reader has a leg, the hypotenuse, and the corresponding included angle.
+
+Link to the legs calculator when both perpendicular legs are known.
+
+Link to the side-from-angle calculator when a missing side must be calculated.
+
+Avoid irrelevant or excessive internal linking.
+
+---
+
+## 22. SEO OPTIMIZATION
+
+### Primary keyword
+
+Right Triangle Area From Angle Calculator
+
+### Secondary keywords
+
+- right triangle area from angle
+- area of right triangle using angle
+- right triangle area using sine
+- triangle area from side and angle
+- area from hypotenuse and angle
+- right triangle area formula
+- sine area formula
+- right angle triangle area calculator
+- triangle area using included angle
+- right triangle area with hypotenuse
+- how to calculate triangle area using sine
+- area from two sides and included angle
+- right triangle area step by step
+- area of right triangle using trigonometry
+- right triangle area examples
+
+Use the keywords naturally.
+
+Do not stuff the primary keyword into every section.
+
+### Semantic concepts
+
+Cover:
+
+- Right triangle.
+- Hypotenuse.
+- Adjacent side.
+- Opposite side.
+- Acute angle.
+- Included angle.
+- Sine function.
+- Base and perpendicular height.
+- Pythagorean theorem.
+- Complementary angles.
+- Inverse cosine.
+- Trigonometric identities.
+- Square units.
+- Measurement precision.
+- Triangular land plot.
+- Roof gable.
+- Triangular panel.
+- Surveying geometry.
+- Construction sketches.
+
+### Search intent
+
+The article must satisfy readers who want to:
+
+- Calculate area immediately.
+- Learn the formula.
+- Understand why sine is used.
+- Identify the correct angle and side.
+- Choose between the two modes.
+- Work through numerical examples.
+- Solve homework questions.
+- Understand practical applications.
+- Verify calculations.
+- Recognize invalid input combinations.
+
+### SEO metadata
+
+Provide:
+
+1. SEO title, approximately 50–60 characters where practical.
+2. Meta description, approximately 145–160 characters.
+3. Primary keyword.
+4. Secondary keywords.
+5. Four descriptive image filenames.
+6. Four accessible image alt texts.
+7. Verified internal-link recommendations.
+8. Appropriate structured-data recommendations.
+
+Do not invent keyword volumes, traffic figures, ranking positions, testimonials, or review ratings.
+
+Do not guarantee first-page rankings.
+
+Preserve the existing URL.
+
+---
+
+## 23. FOUR EDUCATIONAL DIAGRAM REQUIREMENTS
+
+Produce exactly four primary diagrams:
+
+1. Right Triangle Anatomy and Both Area Modes.
+2. How Sine Creates the Perpendicular Height.
+3. Four Practical Right Triangle Area Calculations.
+4. Mode 1 vs. Mode 2: Same Triangle, Same Area.
+
+Each diagram must include:
+
+- Exact placement in the article.
+- Title.
+- Mathematically correct labels.
+- Clear angle markers.
+- Appropriate side measurements.
+- Formula.
+- Caption.
+- Descriptive filename.
+- Accessible alt text under 125 characters.
+- Responsive layout instructions.
+- SVG code if supported, or an image-generation prompt.
+
+Use clear educational styling and accessible contrast.
+
+Avoid unnecessary decoration.
+
+Do not use misleading triangle proportions.
+
+Where measurements are rounded, distinguish approximate values from exact values.
+
+Use original diagrams rather than copied illustrations.
+
+If only image prompts are created, label them as prompts rather than claiming finished images exist.
+
+---
+
+## 24. TECHNICAL AND EDITORIAL REQUIREMENTS
+
+Preserve the existing calculator's:
+
+- Two calculation modes.
+- Input fields.
+- Unit selectors.
+- Angle fields.
+- Calculate Area buttons.
+- Reset functionality.
+- Result displays.
+- Solution steps.
+- Existing interactive behaviour.
+
+Do not:
+
+- Replace the calculator with a static diagram.
+- Create a duplicate calculator.
+- Change its core formulas.
+- Remove useful existing features.
+- Introduce unsupported modes.
+- Change technical identifiers without a specific reason.
+- Confuse angle \(A\) with angle \(B\).
+- Treat any arbitrary three inputs as a valid right triangle.
+- Confuse area with perimeter.
+- Report area in linear units.
+- Use angles in radians when the calculator expects degrees.
+- Make unsupported engineering or construction-safety claims.
+- Duplicate large amounts of content from related pages.
+- Add filler merely to increase word count.
+
+Use semantic HTML headings, accessible descriptions, readable mathematical notation, and mobile-friendly diagrams when implementation code is requested.
+
+---
+
+## 25. FINAL OUTPUT FORMAT
+
+Deliver the complete work in this order.
+
+### A. SEO Metadata
+
+Provide:
+
+- SEO title.
+- Meta description.
+- Primary keyword.
+- Secondary keywords.
+- Four diagram filenames.
+- Four alt texts.
+
+### B. Complete Publish-Ready Article
+
+Include:
+
+- Introduction.
+- Triangle geometry.
+- Included-angle explanation.
+- Sine-based formula derivation.
+- Mode 1 explanation.
+- Mode 2 explanation.
+- Calculator walkthrough.
+- Four foundational examples.
+- Twelve practical examples.
+- Formula equivalence.
+- Mathematical consistency checks.
+- Alternative area formulas.
+- Angle and area relationships.
+- Measurement units.
+- Common mistakes.
+- Verification methods.
+- FAQs.
+- Relevant internal links.
+- Concise conclusion.
+
+### C. Four Diagrams
+
+Provide placement, captions, filenames, alt text, detailed drawing instructions, and SVG code or image-generation prompts.
+
+### D. Internal Link Recommendations
+
+Include verified URLs only.
+
+### E. Editorial Quality-Control Report
+
+Confirm mathematical accuracy, numerical results, diagram consistency, SEO requirements, natural writing, and preservation of calculator functionality.
+
+Do not produce only an outline.
+
+Do not replace calculations with placeholders.
+
+Do not summarize the article instead of writing it.
+
+If the entire deliverable cannot fit in one response, provide complete sections in numbered batches until all requested material is delivered.
+
+---
+
+## 26. FINAL MATHEMATICAL QUALITY CHECK
+
+Before delivering the article, independently verify:
+
+1. Mode 1 uses \(K=bc\sin(A)/2\).
+2. Mode 2 uses \(K=ac\sin(B)/2\).
+3. Angle \(A\) is included between \(b\) and \(c\).
+4. Angle \(B\) is included between \(a\) and \(c\).
+5. The right angle is \(C=90^\circ\).
+6. Side \(c\) is always the hypotenuse.
+7. The angles satisfy \(A+B=90^\circ\).
+8. The side lengths satisfy \(a^2+b^2=c^2\).
+9. Mode 1 measurements satisfy \(b=c\cos(A)\), within justified rounding.
+10. Mode 2 measurements satisfy \(a=c\cos(B)\), within justified rounding.
+11. Both modes produce the same area for the same triangle.
+12. All 12 practical examples have accurate mathematical results.
+13. Every area result is reported in square units.
+14. Angle values are interpreted in degrees as required by the calculator.
+15. The difference between exact and rounded values is explained.
+16. Diagrams use correct side-angle relationships.
+17. The article clearly distinguishes the included-angle formula from unrelated angle calculations.
+18. Internal links point to verified destinations.
+19. The writing is natural and avoids repetition or keyword stuffing.
+20. The calculator's existing two-mode functionality remains unchanged.
+21. The discussion of maximum area for a fixed hypotenuse is mathematically correct.
+22. The article provides useful explanations, not merely formulas and repeated numerical examples.
+
+**Ultimate goal:** Create a comprehensive, mathematically accurate, original, and natural educational guide that teaches readers how to calculate the area of a right triangle from a leg, hypotenuse, and included acute angle. The finished content must explain both calculation modes, show why sine appears in the formulas, provide meaningful real-world examples, explain mathematical validity, and help readers verify their answers without changing the existing calculator.

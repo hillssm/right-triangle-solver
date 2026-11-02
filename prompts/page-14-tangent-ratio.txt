@@ -1,0 +1,1901 @@
+# MASTER PROMPT: Tangent Ratio Calculator — Comprehensive Educational Guide, 12 Practical Examples, Four Diagrams, and SEO
+
+## 1. ROLE AND OBJECTIVE
+
+Act as an experienced mathematics educator, trigonometry specialist, professional educational content writer, technical SEO strategist, and educational website content editor.
+
+Create a comprehensive, original, mathematically accurate, natural-sounding educational guide for the following webpage.
+
+**Website:** Right Triangle Solver
+
+**Target URL:** https://www.righttrianglesolver.com/tangent-ratio-calculator/
+
+**Primary keyword:** Tangent Ratio Calculator
+
+**Language:** English (US)
+
+**Recommended article length:** 3,500–4,500 words, excluding diagram specifications, SVG code, and SEO metadata.
+
+### Main objective
+
+Create an in-depth educational resource explaining how to calculate the tangent ratio of an acute angle in a right triangle when the opposite and adjacent sides are known.
+
+The article must help readers understand:
+
+- What tangent means in right-triangle trigonometry.
+- Why tangent equals the opposite side divided by the adjacent side.
+- How to identify the opposite side, adjacent side, and hypotenuse.
+- Why the formula is \(\tan(A)=a/b\).
+- Why tangent does not require the hypotenuse.
+- How to calculate tangent step by step.
+- Why tangent can be less than 1, equal to 1, or greater than 1.
+- What a tangent value such as 0.75 means in practical terms.
+- Why tangent is a dimensionless ratio rather than an angle or physical length.
+- How tangent describes steepness, slope, rise over run, and pitch.
+- How tangent changes as the reference angle increases.
+- How to calculate an angle from a known tangent ratio using inverse tangent.
+- How to calculate a missing side using tangent and a known angle.
+- How tangent relates to sine, cosine, cotangent, secant, and cosecant.
+- How to verify tangent calculations using the Pythagorean theorem and other trigonometric relationships.
+- How tangent is used in construction, roof pitch, ramps, surveying, elevation measurements, ladders, roads, stairs, and mechanical geometry.
+- How to distinguish a slope ratio from a percentage grade and an angle measured in degrees.
+- How to recognise incorrect side labels, invalid inputs, and common calculation mistakes.
+
+The intended audience includes students, teachers, engineering learners, physics students, construction learners, surveyors, DIY enthusiasts, and anyone studying right-triangle trigonometry.
+
+**Critical instruction:** Expand and improve the educational content below the existing calculator. Preserve the current calculator, its two inputs, unit selectors, Calculate tan(A) button, Reset button, and functionality.
+
+Do not replace the calculator with a static illustration or create a duplicate calculator.
+
+---
+
+## 2. INSPECT THE EXISTING PAGE BEFORE WRITING
+
+Inspect the live webpage, calculator interface, input fields, unit selectors, formula, triangle diagram, worked example, result explanation, common mistakes, FAQs, and related calculator links.
+
+The calculator uses these inputs:
+
+- Opposite side \(a\).
+- Adjacent side \(b\).
+
+Its primary formula is:
+
+\[
+\boxed{\tan(A)=\frac{a}{b}}
+\]
+
+Use this notation consistently throughout the article:
+
+- \(A\): the acute reference angle.
+- \(B\): the right angle.
+- \(C\): the other acute angle.
+- \(a\): the side opposite angle \(A\).
+- \(b\): the side adjacent to angle \(A\).
+- \(c\): the hypotenuse, opposite the right angle at vertex \(B\).
+
+The angles satisfy:
+
+\[
+A+C=90^\circ
+\]
+
+The side lengths satisfy the Pythagorean theorem:
+
+\[
+a^2+b^2=c^2
+\]
+
+For a valid, non-degenerate right triangle:
+
+\[
+a>0,\qquad b>0
+\]
+
+Therefore:
+
+\[
+\boxed{\tan(A)=\frac{a}{b}>0}
+\]
+
+Unlike sine and cosine, tangent has no upper limit for acute angles. It can be less than 1, equal to 1, or greater than 1.
+
+### Essential mathematical distinctions
+
+- Tangent equals opposite divided by adjacent.
+- Sine equals opposite divided by hypotenuse.
+- Cosine equals adjacent divided by hypotenuse.
+- Cotangent is the reciprocal of tangent.
+- The hypotenuse does not appear in the primary tangent formula.
+- The opposite and adjacent labels depend on the selected reference angle.
+- Tangent is a ratio, not an angle.
+- Inverse tangent is a separate operation used to recover an angle from a known tangent ratio.
+- Tangent is dimensionless because it divides one length by another.
+- For a positive tangent ratio in a right triangle with an acute reference angle, the result is greater than zero.
+- A tangent value of 1 means the opposite and adjacent sides are equal, so the acute reference angle is \(45^\circ\).
+- A tangent value below 1 means the opposite side is shorter than the adjacent side.
+- A tangent value above 1 means the opposite side is longer than the adjacent side.
+- Tangent approaches zero as the angle approaches \(0^\circ\).
+- Tangent grows without bound as the angle approaches \(90^\circ\).
+- The tangent ratio equals rise divided by run when the opposite side represents vertical rise and the adjacent side represents horizontal run.
+- Percentage grade is \(100\times\tan(A)\%\), when the angle is measured from the horizontal and the triangle models a straight incline.
+
+Do not invent calculator modes, output options, accuracy guarantees, or unsupported functionality.
+
+---
+
+## 3. HUMAN WRITING REQUIREMENTS
+
+The article must sound like a knowledgeable mathematics teacher explaining an unfamiliar concept clearly and naturally.
+
+Follow these requirements:
+
+1. Use simple, professional, natural English.
+2. Explain why formulas work instead of asking readers to memorise them.
+3. Introduce mathematical concepts in a logical sequence.
+4. Use realistic measurements and meaningful practical situations.
+5. Vary sentence lengths naturally.
+6. Keep paragraphs focused and readable.
+7. Explain technical terms when they first appear.
+8. Use natural transitions between sections.
+9. Avoid repeating the same explanation unnecessarily.
+10. Do not add filler to meet the word count.
+11. Avoid excessive bullet lists and decorative callouts.
+12. Do not invent personal experiences, testimonials, or professional credentials.
+13. Avoid unnatural keyword repetition.
+14. Do not exaggerate calculator accuracy.
+15. Explain the practical meaning of every important numerical result.
+16. Distinguish mathematical ratios from physical measurements.
+17. State assumptions when a simplified right triangle represents a real-world structure or situation.
+18. Use examples to build understanding rather than simply listing formulas.
+19. Explain the difference between tangent, slope, percentage grade, and angle in degrees.
+20. Use realistic examples without presenting mathematical calculations as professional safety assessments.
+
+Avoid generic AI phrases such as:
+
+- In today's fast-paced world
+- Let's delve into
+- Unlock the power of
+- In the realm of mathematics
+- Whether you're a beginner or an expert
+- Look no further
+- Seamlessly calculate
+- Revolutionise your calculations
+
+The content should feel human because of its reasoning, clear explanations, realistic examples, and mathematical accuracy.
+
+---
+
+## 4. REQUIRED ARTICLE STRUCTURE
+
+Retain the existing H1:
+
+# Tangent Ratio Calculator
+
+Do not add another H1.
+
+Place the expanded educational guide below the existing calculator while preserving the current page hierarchy and useful content.
+
+### SECTION 1 — INTRODUCTION
+
+H2: What Is a Tangent Ratio Calculator?
+
+Write approximately 120–160 words.
+
+Explain:
+
+- What the calculator does.
+- What tangent means.
+- Why the opposite and adjacent sides are sufficient.
+- Why tangent is one of the fundamental trigonometric ratios.
+- How tangent compares vertical rise with horizontal run.
+- Why the result is a dimensionless ratio rather than an angle.
+- Why the hypotenuse is not required.
+
+Start with a simple example.
+
+A right triangle has:
+
+- Opposite side \(a=3\text{ cm}\).
+- Adjacent side \(b=4\text{ cm}\).
+
+Calculate:
+
+\[
+\tan(A)=\frac{3}{4}=0.75
+\]
+
+Explain that the opposite side is 75% as long as the adjacent side.
+
+Clarify that 0.75 is the tangent ratio, not an angle of \(0.75^\circ\).
+
+Mention that inverse tangent can be used when the reader wants to recover the angle in degrees.
+
+Keep the introduction focused on the purpose of the calculator.
+
+---
+
+## 5. UNDERSTANDING THE SIDES OF A RIGHT TRIANGLE
+
+H2: Understanding the Opposite Side and Adjacent Side
+
+### H3: What Is a Right Triangle?
+
+Explain:
+
+- What a 90-degree angle represents.
+- Why the hypotenuse lies opposite the right angle.
+- Why the hypotenuse is the longest side.
+- Why the other two angles are acute.
+- Why the two legs are perpendicular.
+- How these relationships make right-triangle trigonometry possible.
+
+### H3: What Is the Opposite Side?
+
+Explain:
+
+- How to identify the side directly across from reference angle \(A\).
+- Why side \(a\) is the opposite side.
+- Why the opposite side depends on the selected reference angle.
+- How it can represent vertical rise, elevation difference, height, or a perpendicular component.
+- Why it appears in the numerator of the tangent formula.
+
+### H3: What Is the Adjacent Side?
+
+Explain:
+
+- How to identify the side next to angle \(A\).
+- Why side \(b\) touches angle \(A\) and is one of the two legs.
+- Why the adjacent side is not the hypotenuse.
+- How it can represent horizontal run, ground distance, or horizontal projection.
+- Why it appears in the denominator of the tangent formula.
+
+### H3: What Is the Hypotenuse?
+
+Briefly explain:
+
+- How to identify the hypotenuse.
+- Why it is opposite the right angle.
+- Why it is always the longest side.
+- How it can represent a ladder, sloping support, roof rafter, or diagonal brace.
+- Why it is not needed for the primary tangent calculation.
+- How it can be calculated later using the Pythagorean theorem if required.
+
+Insert Diagram 1 here.
+
+### DIAGRAM 1 — Anatomy of a Right Triangle for Tangent
+
+Create an original, mathematically accurate educational diagram showing:
+
+- A right triangle with vertices \(A\), \(B\), and \(C\).
+- Reference angle \(A\) at the bottom-left.
+- Right angle \(B\) at the bottom-right.
+- Vertex \(C\) at the upper point.
+- Opposite side \(a\) as the vertical leg.
+- Adjacent side \(b\) as the horizontal base.
+- Hypotenuse \(c\) as the sloping side.
+- Opposite side \(a\) highlighted in one colour.
+- Adjacent side \(b\) highlighted in a contrasting colour.
+- Hypotenuse \(c\) shown in a neutral colour.
+- A clear right-angle marker at \(B\).
+- A formula annotation showing \(\tan(A)=a/b\).
+
+Add a short note explaining that tangent uses the two legs and does not require the hypotenuse.
+
+Keep this side-label convention consistent throughout the article.
+
+Provide:
+
+- Diagram title.
+- Exact placement.
+- Caption.
+- Descriptive filename.
+- Accessible alt text under 125 characters.
+- Detailed SVG creation instructions.
+
+---
+
+## 6. WHAT IS TANGENT?
+
+H2: Understanding the Tangent Ratio
+
+Introduce the formula:
+
+\[
+\boxed{\tan(A)=\frac{a}{b}}
+\]
+
+Explain each component:
+
+- \(\tan(A)\) means the tangent of angle \(A\).
+- \(a\) is the opposite side.
+- \(b\) is the adjacent side.
+
+Explain that tangent compares the vertical leg with the horizontal leg when the triangle is positioned with its base along the horizontal direction.
+
+### H3: Understanding SOH-CAH-TOA
+
+Introduce the memory aid:
+
+- SOH: Sine = Opposite / Hypotenuse.
+- CAH: Cosine = Adjacent / Hypotenuse.
+- TOA: Tangent = Opposite / Adjacent.
+
+Explain why TOA corresponds to the tangent formula.
+
+\[
+\boxed{\tan(A)=\frac{a}{b}}
+\]
+
+Explain how this memory aid helps students select the correct numerator and denominator.
+
+Keep the explanation focused on tangent rather than turning it into a full guide to all trigonometric functions.
+
+### H3: Why Tangent Does Not Use the Hypotenuse
+
+Explain that tangent directly compares the two perpendicular legs.
+
+For example:
+
+\[
+\tan(A)=\frac{3}{4}=0.75
+\]
+
+The hypotenuse is unnecessary because the ratio already compares the opposite and adjacent sides.
+
+Explain that the Pythagorean theorem can calculate the hypotenuse if it is needed for another problem.
+
+### H3: Why Tangent Is a Dimensionless Ratio
+
+Explain why dividing two lengths produces a number without physical units.
+
+For example:
+
+\[
+\frac{3\text{ m}}{4\text{ m}}=0.75
+\]
+
+The metres cancel.
+
+Explain that the same ratio is obtained using 300 cm and 400 cm.
+
+Clarify that measurements must use compatible units.
+
+### H3: What Does a Tangent Value of 0.75 Mean?
+
+Explain:
+
+\[
+\tan(A)=0.75
+\]
+
+means the opposite side is 0.75 times the adjacent side.
+
+It can also be interpreted as 75 units of vertical rise for every 100 units of horizontal run in the same straight-line geometry.
+
+Explain that the ratio does not mean the angle is \(0.75^\circ\).
+
+### H3: What Does a Tangent Value of 1 Mean?
+
+Explain that:
+
+\[
+\tan(A)=1
+\]
+
+means:
+
+\[
+a=b
+\]
+
+The opposite and adjacent sides are equal.
+
+Therefore:
+
+\[
+A=45^\circ
+\]
+
+Explain why an isosceles right triangle has two equal legs and two equal acute angles.
+
+### H3: Why Tangent Can Be Greater Than 1
+
+Explain that tangent has no upper limit for acute angles.
+
+If:
+
+\[
+a=6,\qquad b=3
+\]
+
+then:
+
+\[
+\tan(A)=\frac{6}{3}=2
+\]
+
+Explain that the opposite side is twice as long as the adjacent side.
+
+Clarify that a tangent value greater than 1 is mathematically valid and does not indicate a calculator error.
+
+### H3: How Tangent Relates to Sine and Cosine
+
+Start with:
+
+\[
+\sin(A)=\frac{a}{c}
+\]
+
+and:
+
+\[
+\cos(A)=\frac{b}{c}
+\]
+
+Divide sine by cosine:
+
+\[
+\frac{\sin(A)}{\cos(A)}
+=
+\frac{a/c}{b/c}
+=
+\frac{a}{b}
+\]
+
+Therefore:
+
+\[
+\boxed{\tan(A)=\frac{\sin(A)}{\cos(A)}}
+\]
+
+Explain why this identity agrees with the opposite-over-adjacent definition.
+
+Insert Diagram 2 here.
+
+### DIAGRAM 2 — How the Tangent Formula Works
+
+Create a clean educational infographic with three stages.
+
+**Stage 1: Identify the sides**
+
+Show a right triangle with:
+
+- Opposite side \(a=3\).
+- Adjacent side \(b=4\).
+- Hypotenuse \(c=5\).
+- Reference angle \(A\).
+- Right angle \(B\).
+
+**Stage 2: Apply the formula**
+
+Show:
+
+\[
+\tan(A)=\frac{a}{b}
+\]
+
+**Stage 3: Calculate the ratio**
+
+Show:
+
+\[
+\tan(A)=\frac{3}{4}=0.75
+\]
+
+Add a plain-English annotation:
+
+“The opposite side is 75% as long as the adjacent side.”
+
+Highlight the opposite and adjacent sides and de-emphasise the hypotenuse.
+
+Provide caption, alt text, filename, exact placement, and SVG creation instructions.
+
+---
+
+## 7. DERIVING THE TANGENT FORMULA STEP BY STEP
+
+H2: How the Tangent Formula Works
+
+Start with the definition:
+
+\[
+\tan(A)=\frac{\text{Opposite}}{\text{Adjacent}}
+\]
+
+Then use the existing page's notation:
+
+\[
+\boxed{\tan(A)=\frac{a}{b}}
+\]
+
+Explain why the opposite side belongs in the numerator and the adjacent side belongs in the denominator.
+
+### Fully worked example: A 3-4-5 Right Triangle
+
+Given:
+
+- Opposite side \(a=3\text{ cm}\).
+- Adjacent side \(b=4\text{ cm}\).
+- Hypotenuse \(c=5\text{ cm}\).
+
+Step 1: Write the formula.
+
+\[
+\tan(A)=\frac{a}{b}
+\]
+
+Step 2: Substitute the known values.
+
+\[
+\tan(A)=\frac{3}{4}
+\]
+
+Step 3: Divide.
+
+\[
+\boxed{\tan(A)=0.75}
+\]
+
+Step 4: Interpret the result.
+
+The opposite side is 75% as long as the adjacent side.
+
+Step 5: Verify the triangle.
+
+\[
+3^2+4^2=5^2
+\]
+
+\[
+9+16=25
+\]
+
+Explain why the side lengths are consistent with a right triangle.
+
+### Find the angle from the ratio
+
+If the angle is required:
+
+\[
+A=\tan^{-1}(0.75)
+\]
+
+\[
+\boxed{A\approx36.87^\circ}
+\]
+
+Explain that inverse tangent is also called arctangent.
+
+Clarify that calculating the tangent ratio and calculating the angle are separate operations.
+
+Do not imply that the existing tangent ratio calculator directly returns the angle.
+
+---
+
+## 8. HOW TO USE THE EXISTING CALCULATOR
+
+H2: How to Use the Tangent Ratio Calculator
+
+Provide a beginner-friendly walkthrough that matches the live interface.
+
+Step 1: Identify the reference angle \(A\).
+
+Step 2: Locate the opposite side \(a\), directly across from angle \(A\).
+
+Step 3: Locate the adjacent side \(b\), which touches angle \(A\) and is not the hypotenuse.
+
+Step 4: Obtain or measure both side lengths.
+
+Step 5: Enter the opposite-side length in the first input field.
+
+Step 6: Enter the adjacent-side length in the second input field.
+
+Step 7: Select compatible measurement units using the available unit selectors.
+
+Step 8: Confirm that both measurements are positive.
+
+Step 9: Click Calculate tan(A).
+
+Step 10: Read the resulting tangent ratio.
+
+Step 11: Check whether the result is less than, equal to, or greater than 1.
+
+Step 12: Use Reset when you want to clear the inputs and begin another calculation.
+
+Explain why each step matters.
+
+Clarify that the calculator does not require the hypotenuse or an angle input.
+
+Do not invent calculator modes, saved-history functionality, downloadable results, graphing features, or unsupported functionality.
+
+---
+
+## 9. FOUR FOUNDATIONAL MATHEMATICAL EXAMPLES
+
+H2: Step-by-Step Examples of Calculating Tangent
+
+Provide four worked examples before the practical applications.
+
+### Example 1 — A 3-4-5 Right Triangle
+
+Given:
+
+- \(a=3\text{ cm}\).
+- \(b=4\text{ cm}\).
+- \(c=5\text{ cm}\).
+
+Calculate:
+
+\[
+\tan(A)=\frac{3}{4}
+\]
+
+Final answer:
+
+\[
+\boxed{\tan(A)=0.75}
+\]
+
+Explain that the opposite side is 75% as long as the adjacent side.
+
+### Example 2 — A 5-12-13 Right Triangle
+
+Given:
+
+- Opposite side \(a=5\text{ m}\).
+- Adjacent side \(b=12\text{ m}\).
+- Hypotenuse \(c=13\text{ m}\).
+
+Calculate:
+
+\[
+\tan(A)=\frac{5}{12}
+\]
+
+Final answer:
+
+\[
+\boxed{\tan(A)\approx0.4167}
+\]
+
+Explain that the opposite side is approximately 41.67% as long as the adjacent side.
+
+### Example 3 — A 45-45-90 Triangle
+
+Given:
+
+- Opposite side \(a=1\text{ cm}\).
+- Adjacent side \(b=1\text{ cm}\).
+- Hypotenuse \(c=\sqrt{2}\text{ cm}\).
+
+Calculate:
+
+\[
+\tan(45^\circ)=\frac{1}{1}
+\]
+
+Final answer:
+
+\[
+\boxed{\tan(45^\circ)=1}
+\]
+
+Explain why equal legs produce a tangent ratio of 1.
+
+### Example 4 — A 30-60-90 Triangle
+
+For reference angle \(A=60^\circ\), use:
+
+- Opposite side \(a=\sqrt{3}\text{ cm}\).
+- Adjacent side \(b=1\text{ cm}\).
+- Hypotenuse \(c=2\text{ cm}\).
+
+Calculate:
+
+\[
+\tan(60^\circ)=\frac{\sqrt{3}}{1}
+\]
+
+Final answer:
+
+\[
+\boxed{\tan(60^\circ)\approx1.7321}
+\]
+
+Explain why the opposite side is longer than the adjacent side.
+
+Add a brief comparison with \(30^\circ\):
+
+\[
+\tan(30^\circ)=\frac{1}{\sqrt{3}}\approx0.5774
+\]
+
+Explain why complementary acute angles have reciprocal tangent values.
+
+---
+
+## 10. REAL-WORLD PRACTICAL APPLICATIONS
+
+H2: Real-Life Examples of Using the Tangent Ratio
+
+This must be one of the most comprehensive sections.
+
+Include at least 12 fully worked practical examples.
+
+For every example:
+
+1. Describe the practical situation naturally.
+2. Identify the right triangle or simplified geometric model.
+3. State the known opposite-side and adjacent-side measurements.
+4. Explain why those measurements correspond to \(a\) and \(b\).
+5. Write the tangent formula.
+6. Substitute the measurements.
+7. Calculate the ratio.
+8. Explain the numerical result in plain English.
+9. Explain the practical interpretation, such as slope, steepness, rise over run, or pitch.
+10. Where relevant, calculate the angle using inverse tangent.
+11. State assumptions or limitations where appropriate.
+
+Use the following examples and independently verify every numerical result.
+
+### Example 5 — Calculating a Ramp's Slope
+
+A simplified ramp rises 0.6 m over a horizontal run of 8 m.
+
+Known:
+
+- Opposite vertical rise \(a=0.6\text{ m}\).
+- Adjacent horizontal run \(b=8\text{ m}\).
+
+Calculate:
+
+\[
+\tan(A)=\frac{0.6}{8}
+\]
+
+Final answer:
+
+\[
+\boxed{\tan(A)=0.075}
+\]
+
+Calculate the percentage grade:
+
+\[
+0.075\times100\%=7.5\%
+\]
+
+Calculate the angle if useful:
+
+\[
+A=\tan^{-1}(0.075)\approx4.29^\circ
+\]
+
+Explain that the ramp rises 7.5 units vertically for every 100 units horizontally.
+
+Clarify that the calculation does not establish accessibility or building-code compliance.
+
+### Example 6 — Calculating Roof Pitch
+
+A roof rises 3 m over a horizontal run of 4 m.
+
+Known:
+
+- Vertical rise \(a=3\text{ m}\).
+- Horizontal run \(b=4\text{ m}\).
+
+Calculate:
+
+\[
+\tan(A)=\frac{3}{4}
+\]
+
+Final answer:
+
+\[
+\boxed{\tan(A)=0.75}
+\]
+
+Explain that the roof rises 0.75 units for each horizontal unit.
+
+Express the slope as a percentage:
+
+\[
+0.75\times100\%=75\%
+\]
+
+Calculate the angle:
+
+\[
+A=\tan^{-1}(0.75)\approx36.87^\circ
+\]
+
+Explain that roof pitch may also be expressed as rise over run, including traditional units such as inches of rise per 12 inches of run.
+
+Clarify that this ratio does not constitute a complete roof-design assessment.
+
+### Example 7 — Finding the Angle of a Ladder
+
+A ladder reaches 4 m up a wall, and its base is 3 m horizontally from the wall.
+
+The angle \(A\) is between the ladder and the ground.
+
+Known:
+
+- Opposite vertical height \(a=4\text{ m}\).
+- Adjacent ground distance \(b=3\text{ m}\).
+
+Calculate:
+
+\[
+\tan(A)=\frac{4}{3}
+\]
+
+Final answer:
+
+\[
+\boxed{\tan(A)\approx1.3333}
+\]
+
+Find the angle:
+
+\[
+A=\tan^{-1}\left(\frac{4}{3}\right)
+\]
+
+\[
+\boxed{A\approx53.13^\circ}
+\]
+
+Explain why the vertical height is greater than the horizontal distance.
+
+Clarify that the example explains geometry and does not establish whether the ladder is safely positioned.
+
+### Example 8 — Estimating the Angle of Elevation to a Tree
+
+A tree is 12 m tall, and its shadow is 9 m long on level ground.
+
+Assume the sun's rays create a simplified right-triangle model.
+
+Known:
+
+- Opposite height \(a=12\text{ m}\).
+- Adjacent shadow length \(b=9\text{ m}\).
+
+Calculate:
+
+\[
+\tan(A)=\frac{12}{9}
+\]
+
+Final answer:
+
+\[
+\boxed{\tan(A)\approx1.3333}
+\]
+
+Explain that the height is approximately 1.3333 times the shadow length.
+
+The corresponding geometric angle is approximately:
+
+\[
+A\approx53.13^\circ
+\]
+
+Clarify that the example assumes level ground, a vertical tree, and a straight-line shadow model.
+
+### Example 9 — Surveying an Elevation Difference
+
+A surveying measurement shows a vertical elevation difference of 15 m over a horizontal distance of 20 m.
+
+Known:
+
+- Opposite elevation difference \(a=15\text{ m}\).
+- Adjacent horizontal distance \(b=20\text{ m}\).
+
+Calculate:
+
+\[
+\tan(A)=\frac{15}{20}
+\]
+
+Final answer:
+
+\[
+\boxed{\tan(A)=0.75}
+\]
+
+The corresponding angle is approximately:
+
+\[
+A\approx36.87^\circ
+\]
+
+Explain that the elevation difference is 0.75 times the horizontal separation.
+
+Mention that actual surveying can require instrument-height adjustments, corrections, and additional measurements.
+
+### Example 10 — Calculating a Road's Percentage Grade
+
+A simplified road section rises 1.2 m over a horizontal distance of 24 m.
+
+Known:
+
+- Vertical rise \(a=1.2\text{ m}\).
+- Horizontal run \(b=24\text{ m}\).
+
+Calculate:
+
+\[
+\tan(A)=\frac{1.2}{24}
+\]
+
+Final answer:
+
+\[
+\boxed{\tan(A)=0.05}
+\]
+
+Convert to percentage grade:
+
+\[
+0.05\times100\%=5\%
+\]
+
+The angle is approximately:
+
+\[
+A=\tan^{-1}(0.05)\approx2.86^\circ
+\]
+
+Explain that a 5% grade does not mean a 5-degree angle.
+
+This distinction must be explained clearly because it is a common source of confusion.
+
+### Example 11 — Calculating a Staircase's Steepness
+
+A simplified staircase has a total vertical rise of 2.4 m and a horizontal run of 3.2 m.
+
+Known:
+
+- Opposite vertical rise \(a=2.4\text{ m}\).
+- Adjacent horizontal run \(b=3.2\text{ m}\).
+
+Calculate:
+
+\[
+\tan(A)=\frac{2.4}{3.2}
+\]
+
+Final answer:
+
+\[
+\boxed{\tan(A)=0.75}
+\]
+
+Explain that the vertical rise is 75% of the horizontal run.
+
+Calculate the angle:
+
+\[
+A\approx36.87^\circ
+\]
+
+Clarify that the calculation does not verify stair dimensions, comfort, or building-code compliance.
+
+### Example 12 — Understanding a Guy Wire's Angle
+
+A guy wire attaches to a pole 12 m above the ground, while its ground anchor is 5 m horizontally from the pole.
+
+Known:
+
+- Opposite height \(a=12\text{ m}\).
+- Adjacent ground distance \(b=5\text{ m}\).
+
+Calculate:
+
+\[
+\tan(A)=\frac{12}{5}
+\]
+
+Final answer:
+
+\[
+\boxed{\tan(A)=2.4}
+\]
+
+Calculate the angle:
+
+\[
+A=\tan^{-1}(2.4)\approx67.38^\circ
+\]
+
+Explain that the vertical height is 2.4 times the horizontal anchor distance.
+
+Clarify that the tangent ratio does not determine wire tension, anchor strength, or structural safety.
+
+### Example 13 — Calculating a Crane Boom's Direction
+
+A simplified crane boom has a vertical component of 8 m and a horizontal projection of 6 m.
+
+Known:
+
+- Opposite vertical component \(a=8\text{ m}\).
+- Adjacent horizontal projection \(b=6\text{ m}\).
+
+Calculate:
+
+\[
+\tan(A)=\frac{8}{6}
+\]
+
+Final answer:
+
+\[
+\boxed{\tan(A)\approx1.3333}
+\]
+
+The corresponding angle is approximately:
+
+\[
+A\approx53.13^\circ
+\]
+
+Explain that the vertical component is approximately 1.3333 times the horizontal projection.
+
+Clarify that this is a simplified geometric example and does not establish crane capacity or operating safety.
+
+### Example 14 — Estimating a Hiking Trail's Gradient
+
+A simplified straight hiking section has a vertical elevation gain of 120 m and a horizontal distance of 800 m.
+
+Known:
+
+- Opposite elevation gain \(a=120\text{ m}\).
+- Adjacent horizontal distance \(b=800\text{ m}\).
+
+Calculate:
+
+\[
+\tan(A)=\frac{120}{800}
+\]
+
+Final answer:
+
+\[
+\boxed{\tan(A)=0.15}
+\]
+
+Convert to percentage grade:
+
+\[
+0.15\times100\%=15\%
+\]
+
+The corresponding angle is approximately:
+
+\[
+A\approx8.53^\circ
+\]
+
+Explain that this simplified model represents a constant straight-line gradient, not an entire winding hiking trail.
+
+### Example 15 — Evaluating a Mechanical Brace
+
+A diagonal mechanical brace has a vertical component of 1.5 m and a horizontal component of 2 m.
+
+Known:
+
+- Opposite vertical component \(a=1.5\text{ m}\).
+- Adjacent horizontal component \(b=2\text{ m}\).
+
+Calculate:
+
+\[
+\tan(A)=\frac{1.5}{2}
+\]
+
+Final answer:
+
+\[
+\boxed{\tan(A)=0.75}
+\]
+
+Explain that the vertical component is 75% of the horizontal component.
+
+Clarify that the ratio does not determine the brace's strength, load capacity, or suitability.
+
+### Example 16 — Finding the Angle of Elevation to a Building
+
+An observer is standing 24 m horizontally from a building. The top of the building is 18 m above the observer's eye level.
+
+Known:
+
+- Opposite vertical difference \(a=18\text{ m}\).
+- Adjacent horizontal distance \(b=24\text{ m}\).
+
+Calculate:
+
+\[
+\tan(A)=\frac{18}{24}
+\]
+
+Final answer:
+
+\[
+\boxed{\tan(A)=0.75}
+\]
+
+Find the angle:
+
+\[
+A=\tan^{-1}(0.75)\approx36.87^\circ
+\]
+
+Explain that the angle of elevation is approximately \(36.87^\circ\) under the simplified geometry.
+
+Clarify that this is the angle to the top relative to the observer's horizontal eye level, not necessarily the total building height.
+
+### Practical interpretation requirement
+
+Explain that tangent is a dimensionless ratio, but it has important geometric applications.
+
+Its practical value comes from comparing vertical rise with horizontal run, describing the steepness of a straight incline, calculating angles of elevation, and solving for missing sides when the angle is known.
+
+Clearly distinguish these concepts:
+
+- **Tangent ratio:** vertical rise divided by horizontal run.
+- **Percentage grade:** tangent ratio multiplied by 100%.
+- **Angle:** the result obtained by applying inverse tangent to the ratio.
+
+Do not suggest that tangent alone determines structural safety, load capacity, accessibility, or engineering compliance.
+
+After all 12 examples, provide a comparison table containing:
+
+- Practical situation.
+- Opposite side \(a\).
+- Adjacent side \(b\).
+- Tangent formula.
+- Calculated ratio.
+- Percentage grade where meaningful.
+- Plain-English interpretation.
+
+Do not repeat the complete calculations in the table.
+
+Insert Diagram 3 here.
+
+### DIAGRAM 3 — Four Practical Tangent Calculations
+
+Create a four-panel educational infographic.
+
+**Panel 1: Ramp**
+
+- Vertical rise: 0.6 m.
+- Horizontal run: 8 m.
+- Tangent ratio: 0.075.
+- Percentage grade: 7.5%.
+- Formula: \(\tan(A)=0.6/8\).
+
+**Panel 2: Roof pitch**
+
+- Vertical rise: 3 m.
+- Horizontal run: 4 m.
+- Tangent ratio: 0.75.
+- Percentage grade: 75%.
+- Formula: \(\tan(A)=3/4\).
+
+**Panel 3: Ladder**
+
+- Vertical height: 4 m.
+- Horizontal ground distance: 3 m.
+- Tangent ratio: approximately 1.3333.
+- Angle: approximately \(53.13^\circ\).
+- Formula: \(\tan(A)=4/3\).
+
+**Panel 4: Surveying**
+
+- Vertical difference: 15 m.
+- Horizontal distance: 20 m.
+- Tangent ratio: 0.75.
+- Angle: approximately \(36.87^\circ\).
+- Formula: \(\tan(A)=15/20\).
+
+Each panel must show:
+
+- A correctly drawn right triangle.
+- A right-angle marker at \(B\).
+- Reference angle \(A\).
+- Opposite side \(a\).
+- Adjacent side \(b\).
+- The calculated tangent ratio.
+- A concise interpretation.
+
+Show the hypotenuse as the diagonal side, but do not use it in the tangent formula.
+
+Use consistent labels, readable typography, and accurate numerical values.
+
+Provide filename, caption, alt text, exact placement, and SVG creation instructions.
+
+---
+
+## 11. HOW TANGENT CHANGES WITH THE ANGLE
+
+H2: Understanding the Relationship Between Tangent and Angle Size
+
+Explain how tangent changes as the reference angle increases.
+
+Discuss:
+
+- Why tangent is small when the opposite side is short relative to the adjacent side.
+- Why tangent equals 1 at \(45^\circ\).
+- Why tangent exceeds 1 when the reference angle is greater than \(45^\circ\).
+- Why tangent increases as an acute angle approaches \(90^\circ\).
+- Why tangent approaches zero as the angle approaches \(0^\circ\).
+- Why tangent grows without bound as the angle approaches \(90^\circ\).
+- Why tangent is not restricted to values below 1.
+- Why triangles with the same angle have the same tangent ratio even if their side lengths differ.
+
+Include this comparison table:
+
+| Angle \(A\) | Opposite side \(a\) | Adjacent side \(b\) | Tangent ratio |
+|---:|---:|---:|---:|
+| \(30^\circ\) | 1 | \(\sqrt{3}\) | Approximately 0.5774 |
+| \(45^\circ\) | 1 | 1 | 1 |
+| \(60^\circ\) | \(\sqrt{3}\) | 1 | Approximately 1.7321 |
+| \(75^\circ\) | Approximately 3.7321 | 1 | Approximately 3.7321 |
+
+Explain the pattern in simple language.
+
+Clarify that the side lengths are illustrative and that the ratio, rather than the absolute size of the triangle, determines the angle.
+
+### DIAGRAM 4 — How Tangent Changes as the Angle Changes
+
+Create a three-panel educational comparison diagram.
+
+**Panel A: Smaller acute angle**
+
+- \(A=30^\circ\).
+- Opposite side \(a=1\).
+- Adjacent side \(b=\sqrt{3}\).
+- Tangent ratio approximately 0.5774.
+
+**Panel B: Equal legs**
+
+- \(A=45^\circ\).
+- Opposite side \(a=1\).
+- Adjacent side \(b=1\).
+- Tangent ratio 1.
+
+**Panel C: Larger acute angle**
+
+- \(A=60^\circ\).
+- Opposite side \(a=\sqrt{3}\).
+- Adjacent side \(b=1\).
+- Tangent ratio approximately 1.7321.
+
+Each panel must show:
+
+- Reference angle \(A\).
+- Right-angle marker at \(B\).
+- Opposite side \(a\).
+- Adjacent side \(b\).
+- Hypotenuse \(c\).
+- Formula \(\tan(A)=a/b\).
+- Calculated tangent value.
+
+Use accurate triangle proportions and consistent labels.
+
+Explain visually that as angle \(A\) increases, the opposite side becomes longer relative to the adjacent side, causing the tangent ratio to increase.
+
+Provide filename, caption, alt text, exact placement, and SVG creation instructions.
+
+---
+
+## 12. USING TANGENT TO FIND A MISSING SIDE
+
+H2: How to Find the Opposite Side Using Tangent
+
+Explain that the tangent formula can be rearranged to find the opposite side when the adjacent side and angle are known.
+
+Start with:
+
+\[
+\tan(A)=\frac{a}{b}
+\]
+
+Multiply both sides by \(b\):
+
+\[
+\boxed{a=b\tan(A)}
+\]
+
+Explain that the opposite side equals the adjacent side multiplied by the tangent of the angle.
+
+### Worked example
+
+Given:
+
+- Adjacent side \(b=10\text{ m}\).
+- Angle \(A=30^\circ\).
+
+Since:
+
+\[
+\tan(30^\circ)=\frac{1}{\sqrt{3}}\approx0.5774
+\]
+
+Calculate:
+
+\[
+a=10\times0.5774
+\]
+
+Final answer:
+
+\[
+\boxed{a\approx5.774\text{ m}}
+\]
+
+Explain that the vertical rise is approximately 5.774 m for a 10 m horizontal run at this angle.
+
+### How to find the adjacent side
+
+Rearrange the formula:
+
+\[
+\boxed{b=\frac{a}{\tan(A)}}
+\]
+
+Use an example:
+
+- Opposite side \(a=6\text{ m}\).
+- Angle \(A=45^\circ\).
+
+Since:
+
+\[
+\tan(45^\circ)=1
+\]
+
+Then:
+
+\[
+b=\frac{6}{1}
+\]
+
+Final answer:
+
+\[
+\boxed{b=6\text{ m}}
+\]
+
+Clarify that these formulas are mathematical rearrangements. Do not claim that the existing Tangent Ratio Calculator directly calculates missing sides.
+
+---
+
+## 13. USING INVERSE TANGENT TO FIND AN ANGLE
+
+H2: How to Find an Angle From a Tangent Ratio
+
+Explain that the tangent ratio and the angle are different quantities.
+
+When the ratio is known and the angle is required, inverse tangent can be used.
+
+Introduce:
+
+\[
+\boxed{A=\tan^{-1}\left(\frac{a}{b}\right)}
+\]
+
+Explain that inverse tangent is also called arctangent.
+
+### Worked example
+
+Given:
+
+\[
+\tan(A)=0.75
+\]
+
+Calculate:
+
+\[
+A=\tan^{-1}(0.75)
+\]
+
+Final answer:
+
+\[
+\boxed{A\approx36.87^\circ}
+\]
+
+Explain that the angle is approximately \(36.87^\circ\) when the calculator is set to degrees.
+
+### Why the calculator's angle mode matters
+
+Explain the difference between degrees and radians.
+
+For example:
+
+\[
+45^\circ=\frac{\pi}{4}\text{ radians}
+\]
+
+Clarify that the tangent ratio itself does not have degree or radian units. Those units apply to the angle.
+
+Do not claim that the existing tangent ratio calculator directly returns the angle.
+
+---
+
+## 14. COMMON TANGENT CALCULATION MISTAKES
+
+H2: Common Mistakes When Calculating Tangent
+
+Discuss at least these mistakes:
+
+1. Reversing the formula and calculating \(b/a\) instead of \(a/b\).
+2. Confusing tangent with sine.
+3. Confusing tangent with cosine.
+4. Confusing tangent with cotangent.
+5. Including the hypotenuse in the primary tangent formula.
+6. Mixing up opposite and adjacent sides.
+7. Identifying the sides relative to the wrong reference angle.
+8. Assuming tangent must be less than 1.
+9. Reporting the tangent ratio as an angle in degrees.
+10. Reporting the tangent ratio with measurement units.
+11. Entering zero or negative side lengths.
+12. Mixing incompatible measurement units.
+13. Rounding too early.
+14. Confusing percentage grade with angle in degrees.
+15. Assuming the tangent ratio determines the absolute size of a triangle.
+
+For each mistake:
+
+- Explain what goes wrong.
+- Explain why it is incorrect.
+- Show the correct method.
+- Include a short numerical example where useful.
+
+### Include a wrong-versus-correct example
+
+Given:
+
+- Opposite side \(a=3\).
+- Adjacent side \(b=4\).
+
+Incorrect:
+
+\[
+\frac{4}{3}\approx1.3333
+\]
+
+Explain that this is the cotangent ratio for angle \(A\), not the tangent ratio.
+
+Correct:
+
+\[
+\tan(A)=\frac{3}{4}=0.75
+\]
+
+Verify using sine and cosine:
+
+\[
+\sin(A)=\frac{3}{5}=0.6
+\]
+
+\[
+\cos(A)=\frac{4}{5}=0.8
+\]
+
+Therefore:
+
+\[
+\frac{\sin(A)}{\cos(A)}=\frac{0.6}{0.8}=0.75
+\]
+
+Explain why this confirms the tangent calculation.
+
+---
+
+## 15. INPUT VALIDATION AND MATHEMATICAL VERIFICATION
+
+H2: How to Check Whether Your Tangent Result Is Valid
+
+Explain the input requirements for a valid, non-degenerate right triangle:
+
+- Opposite side \(a\) must be positive.
+- Adjacent side \(b\) must be positive.
+- Both measurements must use compatible units.
+- Neither leg can be zero.
+- The tangent ratio must be positive for the acute reference angle.
+- The result may be less than, equal to, or greater than 1.
+
+Show:
+
+\[
+a>0,\qquad b>0
+\]
+
+Therefore:
+
+\[
+\boxed{\tan(A)=\frac{a}{b}>0}
+\]
+
+Explain why there is no requirement for the opposite side to be shorter than the adjacent side.
+
+Provide three verification methods.
+
+### Method 1 — Check the ratio
+
+Use:
+
+- \(a=3\).
+- \(b=4\).
+
+Calculate:
+
+\[
+\tan(A)=\frac{3}{4}=0.75
+\]
+
+Verify that the opposite side is shorter than the adjacent side and the ratio is below 1.
+
+### Method 2 — Check the Pythagorean theorem
+
+Calculate the hypotenuse when needed:
+
+\[
+c=\sqrt{a^2+b^2}
+\]
+
+For \(a=3\) and \(b=4\):
+
+\[
+c=\sqrt{9+16}=5
+\]
+
+Verify:
+
+\[
+3^2+4^2=5^2
+\]
+
+Explain why this confirms the dimensions of the right triangle.
+
+Clarify that the hypotenuse is not required for the primary tangent formula.
+
+### Method 3 — Check using inverse tangent
+
+If:
+
+\[
+\tan(A)=0.75
+\]
+
+then:
+
+\[
+A=\tan^{-1}(0.75)\approx36.87^\circ
+\]
+
+Explain how the recovered angle can help verify the triangle's geometry.
+
+Mention that minor differences may arise from rounding. Do not invent an accuracy tolerance for the calculator.
+
+---
+
+## 16. TANGENT VERSUS OTHER TRIGONOMETRIC RATIOS
+
+H2: Tangent vs. Sine, Cosine, and Cotangent
+
+Explain the differences using the same reference angle and side labels.
+
+Include this comparison table:
+
+| Ratio | Formula | What it compares |
+|---|---|---|
+| Sine | \(\sin(A)=a/c\) | Opposite side to hypotenuse |
+| Cosine | \(\cos(A)=b/c\) | Adjacent side to hypotenuse |
+| Tangent | \(\tan(A)=a/b\) | Opposite side to adjacent side |
+| Cosecant | \(\csc(A)=c/a\) | Hypotenuse to opposite side |
+| Secant | \(\sec(A)=c/b\) | Hypotenuse to adjacent side |
+| Cotangent | \(\cot(A)=b/a\) | Adjacent side to opposite side |
+
+Explain that cotangent is the reciprocal of tangent:
+
+\[
+\cot(A)=\frac{1}{\tan(A)}
+\]
+
+For example, if:
+
+\[
+\tan(A)=0.75
+\]
+
+then:
+
+\[
+\cot(A)=\frac{1}{0.75}\approx1.3333
+\]
+
+Explain that tangent is particularly useful when both legs are known or when a problem involves rise over run.
+
+Keep tangent as the central topic rather than repeating entire explanations from the website's other trigonometric-ratio pages.
+
+---
+
+## 17. FREQUENTLY ASKED QUESTIONS
+
+H2: Frequently Asked Questions
+
+Write 12 original FAQs with direct, mathematically accurate answers.
+
+Include:
+
+1. What is the tangent ratio formula for a right triangle?
+2. How do you calculate tangent from two side lengths?
+3. Why does tangent not use the hypotenuse?
+4. Can tangent be greater than 1?
+5. What does a tangent value of 0.75 mean?
+6. What is the difference between tangent and cotangent?
+7. How can I calculate an angle from a tangent ratio?
+8. How can I find the opposite side using tangent?
+9. How can I find the adjacent side using tangent?
+10. Is tangent the same as slope?
+11. What is the difference between percentage grade and angle in degrees?
+12. How is tangent used in construction and surveying?
+
+Write approximately 40–70 words per answer where appropriate.
+
+Keep answers direct and understandable on their own.
+
+Avoid copying entire paragraphs from the main article.
+
+Ensure the answers match the actual calculator interface and functionality.
+
+---
+
+## 18. RELATED CALCULATORS AND INTERNAL LINKS
+
+H2: Explore Related Trigonometric Calculators
+
+Recommend relevant pages from the existing website.
+
+Potential links include:
+
+- Right Triangle Trig Ratios Calculator.
+- Sine Ratio Calculator.
+- Cosine Ratio Calculator.
+- Cotangent Ratio Calculator.
+- Secant Ratio Calculator.
+- Cosecant Ratio Calculator.
+- Right Triangle Angle Calculator.
+- Right Triangle Side Calculator.
+
+Inspect the website and verify every destination URL before including it.
+
+For each link, provide:
+
+- Verified URL.
+- Natural anchor text.
+- Recommended placement in the article.
+- A short explanation of why the link is useful.
+
+Use the tangent ratio calculator when the opposite and adjacent sides are known.
+
+Recommend the angle calculator when the reader needs an angle in degrees.
+
+Recommend the side calculator when the reader needs a missing side.
+
+Recommend the sine or cosine calculator when the problem requires the hypotenuse.
+
+Do not invent URLs, add irrelevant links, or copy large blocks of content from related pages.
+
+---
+
+## 19. SEO OPTIMIZATION
+
+### Primary keyword
+
+Tangent Ratio Calculator
+
+### Secondary keywords
+
+- tangent calculator
+- tangent ratio formula
+- tan(A) calculator
+- tangent of a right triangle
+- opposite side divided by adjacent side
+- calculate tangent from side lengths
+- right triangle tangent formula
+- tangent ratio in trigonometry
+- tangent vs cosine
+- tangent vs cotangent
+- inverse tangent calculator
+- calculate angle using tangent
+- rise over run calculator
+- slope tangent ratio
+- roof pitch tangent
+- percentage grade and angle
+
+Use these keywords naturally where relevant.
+
+Do not stuff keywords into every paragraph or heading.
+
+### Semantic concepts
+
+Cover relevant concepts such as:
+
+- Right triangle.
+- Opposite side.
+- Adjacent side.
+- Hypotenuse.
+- Reference angle.
+- Tangent ratio.
+- SOH-CAH-TOA.
+- Dimensionless ratio.
+- Pythagorean theorem.
+- Inverse tangent.
+- Arctangent.
+- Cotangent.
+- Rise over run.
+- Percentage grade.
+- Roof pitch.
+- Slope.
+- Angle of elevation.
+- Vertical component.
+- Horizontal projection.
+- Surveying measurements.
+- Ladder geometry.
+- Ramp geometry.
+- Road gradients.
+- Mathematical verification.
+
+Optimise for genuine search intent, topical completeness, natural language, and reader understanding.
+
+Do not invent keyword volumes, search rankings, traffic statistics, or guarantees of first-page rankings.
+
+### SEO metadata
+
+Provide:
+
+1. SEO title, approximately 50–60 characters where practical.
+2. Meta description, approximately 145–160 characters.
+3. Primary keyword.
+4. Relevant secondary keywords.
+5. Four descriptive image filenames.
+6. Four accessible image alt texts.
+7. Verified internal-link recommendations.
+8. Appropriate structured-data recommendations where justified.
+
+Keep the existing URL unless a change is explicitly requested.
+
+Do not fabricate reviews, ratings, author credentials, or unsupported claims.
+
+---
+
+## 20. FOUR CUSTOM EDUCATIONAL DIAGRAMS
+
+Create exactly four primary educational diagrams:
+
+1. Anatomy of a Right Triangle for Tangent.
+2. How the Tangent Formula Works.
+3. Four Practical Tangent Calculations.
+4. How Tangent Changes as the Angle Changes.
+
+For every diagram, provide:
+
+- Exact placement within the article.
+- Descriptive title.
+- Correct mathematical labels.
+- Caption.
+- Accessible alt text under 125 characters.
+- Descriptive filename.
+- Detailed drawing instructions.
+- SVG code if supported, or a ready-to-use image-generation prompt.
+
+All diagrams must:
+
+- Follow the same side-label convention.
+- Mark the right angle correctly.
+- Place reference angle \(A\) at the correct vertex.
+- Highlight the opposite and adjacent sides appropriately.
+- Match the written examples.
+- Use readable labels and accessible contrast.
+- Be responsive on mobile screens.
+- Avoid unnecessary decoration.
+- Avoid misleading geometric proportions.
+- Clearly distinguish the tangent ratio from the angle itself.
+- Avoid showing the hypotenuse as part of the tangent calculation.
+
+If SVG generation is available, provide clean, responsive SVG code.
+
+If only image-generation prompts can be provided, label them as prompts rather than claiming that the images have already been created.
+
+---
+
+## 21. TECHNICAL AND EDITORIAL REQUIREMENTS
+
+Preserve the existing calculator and its functionality.
+
+Do not:
+
+- Replace the calculator with a static illustration.
+- Add a duplicate calculator.
+- Change the mathematical formula.
+- Change existing technical identifiers.
+- Invent calculator modes or features.
+- Remove useful existing content without justification.
+- Add irrelevant internal links.
+- Confuse tangent with sine, cosine, or cotangent.
+- Treat the tangent ratio as an angle.
+- Claim tangent must always be below 1.
+- Use incompatible side-length units.
+- Confuse percentage grade with degrees.
+- Make unsupported engineering or construction-safety claims.
+- Claim that diagrams have been generated when only prompts are supplied.
+
+Use accessible headings, readable mathematical formatting, responsive diagrams, and descriptive alt text.
+
+If HTML is requested for implementation, use semantic HTML and preserve the existing calculator's CSS classes and JavaScript identifiers.
+
+---
+
+## 22. FINAL OUTPUT FORMAT
+
+Deliver the complete work in this order.
+
+**A. SEO metadata**
+
+Provide the SEO title, meta description, keyword focus, and image metadata.
+
+**B. Complete publish-ready article**
+
+Include all headings, explanations, formulas, worked examples, comparison tables, FAQs, and conclusion.
+
+**C. Four diagram specifications**
+
+Provide exact placement, captions, filenames, alt text, drawing instructions, and SVG code or image-generation prompts.
+
+**D. Internal-link recommendations**
+
+Include only verified URLs and relevant anchor text.
+
+**E. Editorial quality-control report**
+
+Confirm mathematical accuracy, example calculations, diagram consistency, SEO completeness, and content completeness.
+
+Do not deliver only an outline.
+
+Do not replace worked examples with placeholders.
+
+Do not summarise the requested article instead of writing it.
+
+If the complete deliverable cannot fit in one response, deliver complete sections in clearly numbered batches until the entire article and all diagram specifications are finished.
+
+---
+
+## 23. FINAL QUALITY CHECK
+
+Before delivering the article, independently verify:
+
+1. The formula \(\tan(A)=a/b\) is correct.
+2. The opposite and adjacent sides are labelled consistently.
+3. All 12 practical examples have accurate numerical results.
+4. Every example uses compatible measurement units.
+5. All four diagrams match the written explanations.
+6. Tangent is not confused with sine, cosine, cotangent, or inverse tangent.
+7. The result is described as a dimensionless ratio, not an angle.
+8. Tangent can be less than, equal to, or greater than 1.
+9. The hypotenuse is not incorrectly included in the primary tangent formula.
+10. Percentage grade is distinguished from angle in degrees.
+11. Inverse tangent is explained as a separate operation.
+12. Internal links use verified URLs.
+13. The article reads naturally and avoids unnecessary repetition.
+14. Practical examples include appropriate assumptions and limitations.
+15. Existing calculator functionality is preserved.
+16. The content addresses the actual search intent: calculating tangent from the opposite and adjacent sides.
+
+The ultimate goal is to create a comprehensive, accurate, natural, and genuinely helpful educational resource explaining the tangent ratio, while preserving the existing calculator as the main interactive feature.

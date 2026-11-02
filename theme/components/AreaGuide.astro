@@ -1,0 +1,544 @@
+---
+/**
+ * AreaGuide.astro - Educational guide for the Right Triangle Area Calculator page.
+ * Page 16 of 45. EN-only (following TrigRatiosGuide pattern). 16 sections, 4 SVG diagrams,
+ * 12 practical worked examples, 12 FAQs.
+ * Covers the five area methods: legs, angle A, angle B, inradius-semiperimeter,
+ * and hypotenuse-altitude, plus the page's five calculator modes.
+ */
+import katex from 'katex';
+import Faq from 'theme/components/Faq.astro';
+
+const rich = (s: string): string => {
+  if (!s || typeof s !== 'string') return '';
+  let out = s;
+  out = out.replace(
+    /\[\[\[(.+?)\]\]\]/g,
+    (_, l) =>
+      `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
+  );
+  out = out.replace(
+    /\[\[(.+?)\]\]/g,
+    (_, l) =>
+      `<span dir="ltr" class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>`
+  );
+  return out;
+};
+
+const imgSrc = (name: string): string => `/images/area/${name}`;
+---
+
+<!-- Table of Contents -->
+<nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label="Guide contents">
+  <h2 class="font-headline text-2xl font-bold">In This Guide</h2>
+  <ol class="mt-4 grid gap-2 sm:grid-cols-2">
+    <li><a class="hover:text-primary hover:underline" href="#sec-intro">What Is a Right Triangle Area Calculator?</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-triangle">What Is the Area of a Right Triangle?</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-legs">Area of a Right Triangle Using Its Two Legs</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-angle-a">Find Right Triangle Area Using Side b, Hypotenuse c, and Angle A</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-angle-b">Find Right Triangle Area Using Side a, Hypotenuse c, and Angle B</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-inradius">Find Right Triangle Area Using Inradius and Semiperimeter</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-altitude">Find Right Triangle Area Using Hypotenuse and Altitude</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-choose">Which Right Triangle Area Formula Should You Use?</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-howto">How to Use the Right Triangle Area Calculator</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-applications">Real-Life Applications of Right Triangle Area Calculations</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-verify">How to Verify the Area of a Right Triangle</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-mistakes">Common Mistakes When Calculating Right Triangle Area</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-validate">How to Check Whether Your Area Result Is Valid</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-related">Explore Related Right Triangle Calculators</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-faq">FAQs</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-conclusion">Conclusion</a></li>
+  </ol>
+</nav>
+
+<!-- Section 1: Introduction -->
+<section id="sec-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>What Is a Right Triangle Area Calculator?</h2>
+  <p>A right triangle area calculator finds the two-dimensional area enclosed by a right triangle's three sides. For example, a right triangle with legs <span set:html={rich('[[a=3\\text{ m}]]')} /> and <span set:html={rich('[[b=4\\text{ m}]]')} /> has area <span set:html={rich('[[K=\\frac{3\\times4}{2}=6\\text{ m}^2]]')} />: the triangle occupies six square metres of surface. Area is measured in square units because it counts flat space, not length.</p>
+  <p>The perpendicular legs simplify the calculation enormously. Because the two legs meet at 90 degrees, one leg can serve as the base and the other as the height, so the area is just half their product. That simplicity is one reason the legs formula is the first method most students learn.</p>
+  <p>Several methods exist for the same area because real problems hand you different measurements. A carpenter measures the two legs of a panel; a surveyor measures a hypotenuse and an angle; a geometer working with an inscribed circle knows the inradius and semiperimeter. Each method turns its own set of known values into the same area. The calculator on this page offers five modes matching these situations: Area from Legs, Area Variation (Angle A), Area Variation (Angle B), Area from Semiperimeter, and Area Variation (Altitude). The best method is usually the one that uses the measurements you already have, without forcing extra conversions first.</p>
+</section>
+
+<!-- Section 2: Understanding the area -->
+<section id="sec-triangle" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>What Is the Area of a Right Triangle?</h2>
+  <p>This guide uses one consistent notation throughout: <span set:html={rich('[[A]]')} /> and <span set:html={rich('[[B]]')} /> are the two acute angles, <span set:html={rich('[[C=90^\\circ]]')} /> is the right angle, side <span set:html={rich('[[a]]')} /> lies opposite angle <span set:html={rich('[[A]]')} />, side <span set:html={rich('[[b]]')} /> lies opposite angle <span set:html={rich('[[B]]')} />, side <span set:html={rich('[[c]]')} /> is the hypotenuse opposite angle <span set:html={rich('[[C]]')} />, <span set:html={rich('[[h]]')} /> is the perpendicular altitude from vertex <span set:html={rich('[[C]]')} /> to the hypotenuse, <span set:html={rich('[[r]]')} /> is the inradius, <span set:html={rich('[[s]]')} /> is the semiperimeter, and <span set:html={rich('[[K]]')} /> is the area.</p>
+
+  <h3>What Is a Right Triangle?</h3>
+  <p>A right triangle has one angle of exactly 90 degrees. Its two legs meet at the right angle, and the hypotenuse lies opposite that angle. The hypotenuse is always the longest side, and the other two angles are acute: because the three angles sum to 180 degrees, <span set:html={rich('[[A+B=90^\\circ]]')} />. The two legs are perpendicular, which is the property that makes the area formula so direct.</p>
+
+  <h3>What Does Area Mean?</h3>
+  <p>Area measures the two-dimensional space enclosed by the triangle's three sides. It differs from perimeter, which measures the total boundary length, from side length, which measures one dimension, and from volume, which measures three-dimensional space. A triangular piece of paper has area equal to the amount of paper it covers; a triangular garden section has area equal to the ground it occupies. Both are reported in square units such as square metres, because area counts unit squares that fit inside the shape.</p>
+
+  <h3>Why Is the Area Divided by Two?</h3>
+  <p>Two identical right triangles can be combined along their hypotenuses to form a rectangle. If each triangle has perpendicular legs <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[b]]')} /> the rectangle has area <span set:html={rich('[[ab]]')} />. One triangle occupies exactly half of that rectangle, so <span set:html={rich('[[[\\boxed{K=\\frac{ab}{2}}]]]')} />. The division by two is not a fudge factor: it is the geometric consequence of a triangle being half a rectangle, and it appears in every area method on this page in one form or another.</p>
+
+  <h3>Why Can the Same Triangle Have Five Area Formulas?</h3>
+  <p>The triangle's area does not change when a different measurement method is used. The methods simply start with different known values. Two legs give the simplest formula. A leg, the hypotenuse, and the included acute angle allow a sine-based formula. Inradius and semiperimeter provide an alternative geometric relationship. Hypotenuse and perpendicular altitude use the general base-height rule. All five methods must produce the same area when the inputs describe the same valid triangle, and that agreement is the strongest verification available: two methods, one triangle, one answer.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('area-anatomy.svg')} alt="Right triangle anatomy: legs a and b, hypotenuse c, right angle C, altitude h to the hypotenuse, formula K = ab/2" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Anatomy of a right triangle: C is the right angle, a and b are the legs, c is the hypotenuse, and h is the altitude to the hypotenuse.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 3: Method one, legs -->
+<section id="sec-legs" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Area of a Right Triangle Using Its Two Legs</h2>
+  <p>The legs formula is the starting point for right triangle area: <span set:html={rich('[[[\\boxed{K=\\frac{ab}{2}}]]]')} />. It needs only the two perpendicular sides, and everything else on this page can be seen as a variation that recovers this same quantity from different inputs.</p>
+
+  <h3>When Should You Use the Legs Formula?</h3>
+  <p>Use this method whenever both perpendicular sides are known. No angle, hypotenuse, inradius, or altitude calculation is required first. Direct measurement of the two legs is common in carpentry, tiling, and classroom problems, which is why the Area from Legs mode is the default choice for most everyday calculations.</p>
+
+  <h3>How the Formula Works</h3>
+  <p>The two legs form the base and perpendicular height of the triangle. The general triangle area formula is <span set:html={rich('[[K=\\frac{\\text{base}\\times\\text{height}}{2}]]')} />; since the legs are perpendicular, base and height can be taken directly as <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[b]]')} />, giving <span set:html={rich('[[K=ab/2]]')} />. No trigonometry is involved, and no extra side needs to be found first.</p>
+
+  <h3>Fully Worked Example: A 3-4-5 Triangle</h3>
+  <p>Given <span set:html={rich('[[a=3\\text{ m}]]')} /> and <span set:html={rich('[[b=4\\text{ m}]]')} />. Step 1: write the formula <span set:html={rich('[[K=ab/2]]')} />. Step 2: substitute the values, <span set:html={rich('[[K=(3\\times4)/2]]')} />. Step 3: multiply, <span set:html={rich('[[K=12/2]]')} />. Step 4: divide by two, <span set:html={rich('[[[\\boxed{K=6\\text{ m}^2}]]]')} />. The answer is six square metres, not six metres: the unit carries the meaning of the quantity.</p>
+
+  <h3>Can You Swap the Two Legs?</h3>
+  <p>Yes. Multiplication is commutative, so <span set:html={rich('[[ab=ba]]')} /> and therefore <span set:html={rich('[[ab/2=ba/2]]')} />. The area is unchanged if the two legs are entered in the opposite order, provided the calculator fields correspond to the correct leg lengths. This symmetry holds only for the legs: swapping a leg with the hypotenuse would break the formula.</p>
+
+  <h3>What If the Legs Have Decimal Values?</h3>
+  <p>Decimal measurements work in the same formula. With <span set:html={rich('[[a=3.5\\text{ cm}]]')} /> and <span set:html={rich('[[b=9.2\\text{ cm}]]')} />: <span set:html={rich('[[K=(3.5\\times9.2)/2]]')} />, <span set:html={rich('[[K=32.2/2]]')} />, <span set:html={rich('[[[\\boxed{K=16.1\\text{ cm}^2}]]]')} />. The arithmetic is identical; only the precision of the inputs changes, so keep enough digits and round at the end.</p>
+
+  <h3>What If One Leg Is Unknown?</h3>
+  <p>A missing leg can sometimes be found first using the Pythagorean theorem or a known angle, and the legs formula applied afterward. Note that the legs mode itself needs both legs: it does not recover a missing side automatically. If only one leg and the hypotenuse are known, the missing-leg calculation is a separate step before this mode can be used.</p>
+</section>
+
+<!-- Section 4: Method two, angle A -->
+<section id="sec-angle-a" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Find Right Triangle Area Using Side b, Hypotenuse c, and Angle A</h2>
+  <p>This method is useful when side <span set:html={rich('[[b]]')} />, hypotenuse <span set:html={rich('[[c]]')} />, and acute angle <span set:html={rich('[[A]]')} /> are known: <span set:html={rich('[[[\\boxed{K=\\frac{bc\\sin(A)}{2}}]]]')} />. It is the calculator's Area Variation (Angle A) mode.</p>
+
+  <h3>Why Does This Formula Use Sine?</h3>
+  <p>The general area formula for two sides and their included angle is <span set:html={rich('[[K=\\frac12 xy\\sin(\\theta)]]')} />. Angle <span set:html={rich('[[A]]')} /> lies between sides <span set:html={rich('[[b]]')} /> and <span set:html={rich('[[c]]')} />, so substituting <span set:html={rich('[[x=b]]')} />, <span set:html={rich('[[y=c]]')} />, <span set:html={rich('[[\\theta=A]]')} /> gives <span set:html={rich('[[K=\\frac12 bc\\sin(A)]]')} />. Sine accounts for the perpendicular component of one side: only the part of side <span set:html={rich('[[c]]')} /> that stands perpendicular to <span set:html={rich('[[b]]')} /> contributes height, and that perpendicular part is <span set:html={rich('[[c\\sin(A)]]')} />.</p>
+
+  <h3>Fully Worked Example: A 3-4-5 Triangle</h3>
+  <p>Given <span set:html={rich('[[b=4\\text{ m}]]')} />, <span set:html={rich('[[c=5\\text{ m}]]')} />, and <span set:html={rich('[[A\\approx36.87^\\circ]]')} />. Since <span set:html={rich('[[\\sin(36.87^\\circ)\\approx0.6]]')} />, substitute: <span set:html={rich('[[K=(4\\times5\\times0.6)/2]]')} />, <span set:html={rich('[[K=12/2]]')} />, <span set:html={rich('[[[\\boxed{K=6\\text{ m}^2}]]]')} />. This agrees with the legs formula because 0.6 is exactly the ratio <span set:html={rich('[[a/c=3/5]]')} />: the sine form is the legs form in disguise, with <span set:html={rich('[[c\\sin(A)]]')} /> playing the role of the other leg.</p>
+
+  <h3>What Happens If the Angle Changes?</h3>
+  <p>The sine factor changes the area when the two side lengths and included angle are varied within a valid triangle. Do not imagine an angle changing while every side length stays fixed: in a real triangle the sides and angles are linked, so changing the angle reshapes the triangle and moves the area with it. The included angle is essential to this formula precisely because it encodes how open or closed the triangle is.</p>
+
+  <h3>Common Errors in Angle A Mode</h3>
+  <p>Five mistakes recur in this mode. Pairing angle <span set:html={rich('[[A]]')} /> with the wrong side is the most frequent: this formula needs side <span set:html={rich('[[b]]')} />, not side <span set:html={rich('[[a]]')} />, because <span set:html={rich('[[b]]')} /> and <span set:html={rich('[[c]]')} /> are the sides enclosing angle <span set:html={rich('[[A]]')} />. Entering the angle in the wrong unit breaks the sine value: this calculator expects degrees, so 36.87 degrees must not be entered as 0.6435 radians. Forgetting to divide by two doubles the answer. And entering a right angle or an otherwise non-acute angle in the acute-angle field describes no valid input for this mode; the angle must sit strictly between 0 and 90 degrees.</p>
+</section>
+
+<!-- Section 5: Method three, angle B -->
+<section id="sec-angle-b" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Find Right Triangle Area Using Side a, Hypotenuse c, and Angle B</h2>
+  <p>This mode uses the other acute angle and its two adjoining sides: <span set:html={rich('[[[\\boxed{K=\\frac{ac\\sin(B)}{2}}]]]')} />. It is the calculator's Area Variation (Angle B) mode.</p>
+
+  <h3>Why Does This Formula Work?</h3>
+  <p>Sides <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[c]]')} /> enclose angle <span set:html={rich('[[B]]')} />. Starting from the general formula <span set:html={rich('[[K=\\frac12 xy\\sin(\\theta)]]')} /> and substituting <span set:html={rich('[[x=a]]')} />, <span set:html={rich('[[y=c]]')} />, <span set:html={rich('[[\\theta=B]]')} /> gives <span set:html={rich('[[K=\\frac12 ac\\sin(B)]]')} />. The structure is identical to the Angle A formula; only the labels move, because the geometry of the two acute angles mirrors itself.</p>
+
+  <h3>Fully Worked Example: The Same 3-4-5 Triangle</h3>
+  <p>Given <span set:html={rich('[[a=3\\text{ m}]]')} />, <span set:html={rich('[[c=5\\text{ m}]]')} />, and <span set:html={rich('[[B\\approx53.13^\\circ]]')} />. Since <span set:html={rich('[[\\sin(53.13^\\circ)\\approx0.8]]')} />, calculate: <span set:html={rich('[[K=(3\\times5\\times0.8)/2]]')} />, <span set:html={rich('[[K=12/2]]')} />, <span set:html={rich('[[[\\boxed{K=6\\text{ m}^2}]]]')} />. The result matches the legs method and the Angle A method, as it must: all three describe the same triangle.</p>
+
+  <h3>How Are Angles A and B Related?</h3>
+  <p>The two acute angles are complementary: <span set:html={rich('[[[\\boxed{A+B=90^\\circ}]]]')} />. This gives the identities <span set:html={rich('[[\\sin(A)=\\cos(B)]]')} /> and <span set:html={rich('[[\\sin(B)=\\cos(A)]]')} />. In the 3-4-5 triangle, <span set:html={rich('[[\\sin(A)=0.6=\\cos(B)]]')} /> and <span set:html={rich('[[\\sin(B)=0.8=\\cos(A)]]')} />. These relationships explain why both angle-based modes calculate the same area when their inputs are consistent: one mode's sine is the other mode's cosine, and the triangle's geometry is unchanged whichever acute angle you start from.</p>
+
+  <h3>Common Errors in Angle B Mode</h3>
+  <p>The mirror-image mistakes appear here: using side <span set:html={rich('[[b]]')} /> instead of side <span set:html={rich('[[a]]')} />, pairing angle <span set:html={rich('[[B]]')} /> with the wrong side, and confusing the two acute angles with each other. Forgetting the sine function or forgetting to divide by two are the same arithmetic slips as in Angle A mode. Finally, an angle that does not correspond to the measured triangle, for example entering 36.87 degrees where 53.13 degrees belongs, silently produces a wrong but plausible-looking area, so always check that the angle matches the side pair.</p>
+</section>
+
+<!-- Section 6: Method four, inradius and semiperimeter -->
+<section id="sec-inradius" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Find Right Triangle Area Using Inradius and Semiperimeter</h2>
+  <p>This method needs only two numbers, the inradius <span set:html={rich('[[r]]')} /> and the semiperimeter <span set:html={rich('[[s]]')} />: <span set:html={rich('[[[\\boxed{K=rs}]]]')} />. The inradius is the radius of the circle inscribed inside the triangle, the circle that touches all three sides. The semiperimeter is half the triangle's perimeter: <span set:html={rich('[[[\\boxed{s=\\frac{a+b+c}{2}}]]]')} />. It is the calculator's Area from Semiperimeter mode.</p>
+
+  <h3>Why Does Area Equal Inradius Times Semiperimeter?</h3>
+  <p>Connect the incenter, the center of the inscribed circle, to all three vertices. This divides the triangle into three smaller triangles. Each smaller triangle has the same perpendicular height <span set:html={rich('[[r]]')} />, because the inradius is the perpendicular distance from the incenter to each side. Adding their areas gives <span set:html={rich('[[K=\\frac12 ar+\\frac12 br+\\frac12 cr]]')} />. Factor out <span set:html={rich('[[r/2]]')} />: <span set:html={rich('[[K=\\frac12 r(a+b+c)]]')} />. Since <span set:html={rich('[[s=(a+b+c)/2]]')} />, it follows that <span set:html={rich('[[[\\boxed{K=rs}]]]')} />. This relationship holds for any valid triangle, not just a right triangle, provided the correct inradius and semiperimeter are known.</p>
+
+  <h3>Finding the Inradius of a Right Triangle</h3>
+  <p>For a right triangle there is a convenient shortcut: <span set:html={rich('[[[\\boxed{r=\\frac{a+b-c}{2}}]]]')} />. Treat it as a right-triangle shortcut, not as the general inradius formula: for a general triangle the inradius comes from <span set:html={rich('[[r=K/s]]')} />, which is circular if you are trying to find the area. The shortcut works because the two tangent lengths from the right-angle vertex are equal and the algebra collapses neatly for the 90-degree case.</p>
+
+  <h3>Fully Worked Example: A 3-4-5 Triangle</h3>
+  <p>Given <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />. First the semiperimeter: <span set:html={rich('[[s=(3+4+5)/2]]')} />, <span set:html={rich('[[[\\boxed{s=6}]]]')} />. Then the inradius: <span set:html={rich('[[r=(3+4-5)/2]]')} />, <span set:html={rich('[[[\\boxed{r=1}]]]')} />. The area is <span set:html={rich('[[K=rs]]')} />, <span set:html={rich('[[K=1\\times6]]')} />, <span set:html={rich('[[[\\boxed{K=6\\text{ square units}}]]]')} />. The answer matches the legs formula, confirming that the incircle view and the legs view describe the same triangle.</p>
+
+  <h3>Fully Worked Example: A 5-12-13 Triangle</h3>
+  <p>Given <span set:html={rich('[[a=5]]')} />, <span set:html={rich('[[b=12]]')} />, <span set:html={rich('[[c=13]]')} />. Semiperimeter: <span set:html={rich('[[s=(5+12+13)/2=15]]')} />. Inradius: <span set:html={rich('[[r=(5+12-13)/2=2]]')} />. Area: <span set:html={rich('[[K=2\\times15]]')} />, <span set:html={rich('[[[\\boxed{K=30\\text{ square units}}]]]')} />. Verify with the legs formula: <span set:html={rich('[[K=(5\\times12)/2=30]]')} />. Both methods agree, which is the expected outcome whenever the side measurements are consistent.</p>
+
+  <h3>Common Errors</h3>
+  <p>Confusing the inradius with the circumradius is the signature mistake: the inradius touches the sides from inside, while the circumradius reaches the vertices from outside, and they are different numbers. Using the full perimeter instead of the semiperimeter doubles the answer. Applying the right-triangle inradius shortcut <span set:html={rich('[[r=(a+b-c)/2]]')} /> to a non-right triangle produces a meaningless value. Forgetting that the product <span set:html={rich('[[rs]]')} /> has square units, and feeding inconsistent side measurements into the <span set:html={rich('[[r]]')} /> and <span set:html={rich('[[s]]')} /> calculations, round out the common failures.</p>
+</section>
+
+<!-- Section 7: Method five, hypotenuse and altitude -->
+<section id="sec-altitude" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Find Right Triangle Area Using Hypotenuse and Altitude</h2>
+  <p>This method uses the hypotenuse <span set:html={rich('[[c]]')} /> as the base and the perpendicular altitude <span set:html={rich('[[h]]')} /> as the height: <span set:html={rich('[[[\\boxed{K=\\frac{ch}{2}}]]]')} />. It is the calculator's Area Variation (Altitude) mode.</p>
+
+  <h3>What Is the Altitude?</h3>
+  <p>An altitude is a perpendicular line drawn from a vertex to the opposite side. In this mode the altitude begins at the right-angle vertex <span set:html={rich('[[C]]')} /> and meets the hypotenuse at 90 degrees. It is not the same as either leg <span set:html={rich('[[a]]')} /> or <span set:html={rich('[[b]]')} />: the legs lie along the triangle's edges, while the altitude drops into the interior and lands on the hypotenuse. The right-angle marker where <span set:html={rich('[[h]]')} /> meets <span set:html={rich('[[c]]')} /> is the visual guarantee that the perpendicularity condition is met.</p>
+
+  <h3>Why Does the Formula Work?</h3>
+  <p>It is the general base-height formula with a particular choice of base. Start from <span set:html={rich('[[K=\\frac12\\times\\text{base}\\times\\text{perpendicular height}]]')} />. Choose the hypotenuse as the base, <span set:html={rich('[[\\text{base}=c]]')} />, and the perpendicular altitude as the height, <span set:html={rich('[[\\text{height}=h]]')} />. Therefore <span set:html={rich('[[K=ch/2]]')} />. Nothing about this derivation is specific to right triangles: any triangle's area can be written this way, but the right triangle's legs formula is simply faster when the legs are known.</p>
+
+  <h3>Fully Worked Example: A 6-8-10 Triangle</h3>
+  <p>Given <span set:html={rich('[[c=10\\text{ m}]]')} /> and <span set:html={rich('[[h=4.8\\text{ m}]]')} />. Calculate: <span set:html={rich('[[K=(10\\times4.8)/2]]')} />, <span set:html={rich('[[K=48/2]]')} />, <span set:html={rich('[[[\\boxed{K=24\\text{ m}^2}]]]')} />. This is the same area as a right triangle whose legs measure 6 m and 8 m, since <span set:html={rich('[[(6\\times8)/2=24]]')} />. Two different descriptions, one area.</p>
+
+  <h3>How Can the Altitude Be Calculated?</h3>
+  <p>When both legs and the hypotenuse are known, the altitude follows from equating the two area formulas: <span set:html={rich('[[ab/2=ch/2]]')} />, so <span set:html={rich('[[[\\boxed{h=\\frac{ab}{c}}]]]')} />. For the 6-8-10 triangle: <span set:html={rich('[[h=(6\\times8)/10=4.8\\text{ m}]]')} />. The altitude is shorter than the hypotenuse, as it must be: the perpendicular is the shortest path from the vertex to the line. Note that the altitude mode does not calculate a missing altitude on its own; the altitude must be known or derived first.</p>
+</section>
+
+<!-- Section 8: Which method to choose -->
+<section id="sec-choose" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Which Right Triangle Area Formula Should You Use?</h2>
+  <p>Five methods, one area. The comparison below maps each set of known measurements to its formula and calculator mode. Pick the row that matches the numbers already in your hand.</p>
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full min-w-[640px] border-collapse text-left text-[15px]">
+      <thead>
+        <tr class="border-b border-primary/20">
+          <th class="py-3 pr-4 font-headline">Known measurements</th>
+          <th class="py-3 pr-4 font-headline">Recommended method</th>
+          <th class="py-3 font-headline">Formula</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b border-primary/10"><td class="py-3 pr-4">Both perpendicular legs <span set:html={rich('[[a]]')} />, <span set:html={rich('[[b]]')} /></td><td class="py-3 pr-4">Area from Legs</td><td class="py-3"><span set:html={rich('[[K=ab/2]]')} /></td></tr>
+        <tr class="border-b border-primary/10"><td class="py-3 pr-4">Leg <span set:html={rich('[[b]]')} />, hypotenuse <span set:html={rich('[[c]]')} />, angle <span set:html={rich('[[A]]')} /></td><td class="py-3 pr-4">Area Variation (Angle A)</td><td class="py-3"><span set:html={rich('[[K=bc\\sin(A)/2]]')} /></td></tr>
+        <tr class="border-b border-primary/10"><td class="py-3 pr-4">Leg <span set:html={rich('[[a]]')} />, hypotenuse <span set:html={rich('[[c]]')} />, angle <span set:html={rich('[[B]]')} /></td><td class="py-3 pr-4">Area Variation (Angle B)</td><td class="py-3"><span set:html={rich('[[K=ac\\sin(B)/2]]')} /></td></tr>
+        <tr class="border-b border-primary/10"><td class="py-3 pr-4">Inradius <span set:html={rich('[[r]]')} />, semiperimeter <span set:html={rich('[[s]]')} /></td><td class="py-3 pr-4">Area from Semiperimeter</td><td class="py-3"><span set:html={rich('[[K=rs]]')} /></td></tr>
+        <tr><td class="py-3 pr-4">Hypotenuse <span set:html={rich('[[c]]')} />, perpendicular altitude <span set:html={rich('[[h]]')} /></td><td class="py-3 pr-4">Area Variation (Altitude)</td><td class="py-3"><span set:html={rich('[[K=ch/2]]')} /></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Why the Legs Formula Is Often the Simplest</h3>
+  <p>The legs formula needs only two measurements and no trigonometry. Multiply, halve, done. Whenever the two perpendicular sides are available, every other method is a longer route to the same number.</p>
+
+  <h3>When the Sine Formula Is Useful</h3>
+  <p>An angle-based method earns its place when the available measurements include an acute angle, one leg, and the hypotenuse, as they do in surveying sight lines or navigation triangles. If the angle were not known, you would first have to recover the missing leg before the legs formula could be used; the sine form skips that detour.</p>
+
+  <h3>When the Semiperimeter Method Is Useful</h3>
+  <p>The inradius-semiperimeter formula suits geometry problems that already involve an incircle, or situations where <span set:html={rich('[[r]]')} /> and <span set:html={rich('[[s]]')} /> are known from earlier steps. It is also an excellent independent cross-check: because it shares no arithmetic with the legs formula, agreement between the two strongly suggests both are right.</p>
+
+  <h3>When the Altitude Formula Is Useful</h3>
+  <p>The altitude method is the natural choice when the hypotenuse and its perpendicular height are the known quantities, which happens in decomposition problems where a triangle is split along its altitude. Like the legs formula, it is a plain base-height calculation with no trigonometry.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('area-formulas.svg')} alt="Five panels showing the area formulas K=ab/2, K=bc sin(A)/2, K=ac sin(B)/2, K=rs, and K=ch/2" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">The five area formulas and the measurements each one needs.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 9: How to use the calculator -->
+<section id="sec-howto" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Use the Right Triangle Area Calculator</h2>
+  <p>Follow these steps for any of the five modes. Choosing the correct mode matters more than anything else: the mode decides which formula runs, so a correct formula with the wrong mode still answers the wrong question.</p>
+  <ol>
+    <li><strong>Identify the measurements already known.</strong> List which of the legs, hypotenuse, angles, inradius, semiperimeter, or altitude you actually have.</li>
+    <li><strong>Select the calculator mode matching those measurements.</strong> Area from Legs, Area Variation (Angle A), Area Variation (Angle B), Area from Semiperimeter, or Area Variation (Altitude).</li>
+    <li><strong>Read the labels of the required input fields.</strong> Each mode shows only the fields its formula needs.</li>
+    <li><strong>Identify the legs, hypotenuse, angle, inradius, semiperimeter, or altitude as appropriate.</strong> Match each known measurement to its label, using the notation of this guide.</li>
+    <li><strong>Enter the first required measurement.</strong> For example, "Leg a" in the legs mode.</li>
+    <li><strong>Enter the remaining measurements.</strong> Keep the values in the fields their labels describe.</li>
+    <li><strong>Select compatible units using the available unit selectors.</strong> All length inputs must share one unit system before they are multiplied.</li>
+    <li><strong>For angle-based modes, enter the correct acute angle.</strong> This calculator expects angles in degrees. Enter angle <span set:html={rich('[[A]]')} /> in the Angle A mode and angle <span set:html={rich('[[B]]')} /> in the Angle B mode, never the right angle.</li>
+    <li><strong>Check that all inputs are positive and describe a valid triangle.</strong> Lengths must be positive, and the hypotenuse must exceed either leg.</li>
+    <li><strong>Click Calculate Area.</strong> The button runs the selected mode's formula.</li>
+    <li><strong>Review the area result and solution steps.</strong> The calculator shows the formula, the substitution, and the final area in square units.</li>
+    <li><strong>Use the live triangle visualization to verify the labels.</strong> Confirm the diagram's side and angle labels correspond to your intended measurements.</li>
+    <li><strong>Use Reset when starting a new calculation.</strong> The Reset button clears all fields so the next calculation starts clean.</li>
+  </ol>
+
+  <h3>Complete Walkthrough: All Five Modes on a 3-4-5 Triangle</h3>
+  <p>Given <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />, with <span set:html={rich('[[A\\approx36.87^\\circ]]')} />, <span set:html={rich('[[B\\approx53.13^\\circ]]')} />, <span set:html={rich('[[r=1]]')} />, <span set:html={rich('[[s=6]]')} />, and <span set:html={rich('[[h=2.4]]')} />, here is what each mode needs and returns. Every mode returns <span set:html={rich('[[[\\boxed{K=6\\text{ square units}}]]]')} />.</p>
+  <ol>
+    <li><strong>Area from Legs.</strong> Enter "Leg a" = 3 and "Leg b" = 4. Formula: <span set:html={rich('[[K=ab/2]]')} />. Substitution: <span set:html={rich('[[K=(3\\times4)/2]]')} />. Result: 6 square units.</li>
+    <li><strong>Area Variation (Angle A).</strong> Enter "Leg b" = 4, "Hypotenuse c" = 5, "Angle A" = 36.87. Formula: <span set:html={rich('[[K=bc\\sin(A)/2]]')} />. Substitution: <span set:html={rich('[[K=(4\\times5\\times0.6)/2]]')} />. Result: 6 square units.</li>
+    <li><strong>Area Variation (Angle B).</strong> Enter "Leg a" = 3, "Hypotenuse c" = 5, "Angle B" = 53.13. Formula: <span set:html={rich('[[K=ac\\sin(B)/2]]')} />. Substitution: <span set:html={rich('[[K=(3\\times5\\times0.8)/2]]')} />. Result: 6 square units.</li>
+    <li><strong>Area from Semiperimeter.</strong> Enter "Inradius r" = 1 and "Semiperimeter s" = 6. Formula: <span set:html={rich('[[K=rs]]')} />. Substitution: <span set:html={rich('[[K=1\\times6]]')} />. Result: 6 square units.</li>
+    <li><strong>Area Variation (Altitude).</strong> Enter "Hypotenuse c" = 5 and "Altitude h" = 2.4. Formula: <span set:html={rich('[[K=ch/2]]')} />. Substitution: <span set:html={rich('[[K=(5\\times2.4)/2]]')} />. Result: 6 square units.</li>
+  </ol>
+  <p>Each mode uses a different set of known values, and none of them requires the same input fields. The shared answer is the point: five descriptions, one triangle, one area.</p>
+</section>
+
+<!-- Section 10: Practical applications -->
+<section id="sec-applications" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Real-Life Applications of Right Triangle Area Calculations</h2>
+  <p>Each example names the situation, the known measurements, the calculator mode that fits, why that mode fits, the formula, the step-by-step substitution, the final answer in square units, a plain-English interpretation, a verification idea where useful, and the assumptions behind the triangle model.</p>
+
+  <h3>Example 1: Calculating the Area of a Triangular Garden</h3>
+  <p>A garden contains a right-triangular planting section with perpendicular legs of 6 m and 8 m. Choose Area from Legs, the natural fit when both legs are measured directly: <span set:html={rich('[[K=(6\\times8)/2]]')} />, <span set:html={rich('[[[\\boxed{K=24\\text{ m}^2}]]]')} />. The section covers 24 square metres of planting surface. This assumes the garden section is accurately represented by a right triangle with straight edges.</p>
+
+  <h3>Example 2: Measuring a Triangular Plywood Panel</h3>
+  <p>A carpenter cuts a right-triangular panel with legs measuring 1.2 m and 0.8 m. Choose Area from Legs: <span set:html={rich('[[K=(1.2\\times0.8)/2]]')} />, <span set:html={rich('[[K=0.96/2]]')} />, <span set:html={rich('[[[\\boxed{K=0.48\\text{ m}^2}]]]')} />. The panel covers just under half a square metre, which helps estimate material coverage. Cutting allowances and material waste are not included in this geometric area.</p>
+
+  <h3>Example 3: Finding the Area of a Triangular Sail</h3>
+  <p>A triangular sail section has perpendicular legs of 5 m and 12 m. Choose Area from Legs: <span set:html={rich('[[K=(5\\times12)/2]]')} />, <span set:html={rich('[[[\\boxed{K=30\\text{ m}^2}]]]')} />. The formula gives the flat area of the triangular section, useful for cloth estimates before seams and curvature are considered.</p>
+
+  <h3>Example 4: Estimating a Right-Triangular Land Section</h3>
+  <p>A land survey identifies a right-triangular section with perpendicular sides of 30 m and 40 m. Choose Area from Legs: <span set:html={rich('[[K=(30\\times40)/2]]')} />, <span set:html={rich('[[[\\boxed{K=600\\text{ m}^2}]]]')} />. This is the area of the specified triangular section, not necessarily the total area of the surrounding property. Real land boundaries may require more detailed surveying than a single triangle model.</p>
+
+  <h3>Example 5: Calculating a Roof Gable's Area Using Angle A</h3>
+  <p>A simplified triangular roof section has <span set:html={rich('[[b=6\\text{ m}]]')} />, <span set:html={rich('[[c=10\\text{ m}]]')} />, and <span set:html={rich('[[A\\approx53.13^\\circ]]')} />. Choose Area Variation (Angle A), since a leg, the hypotenuse, and the included angle are the measured data. With <span set:html={rich('[[\\sin(53.13^\\circ)\\approx0.8]]')} />: <span set:html={rich('[[K=(6\\times10\\times0.8)/2]]')} />, <span set:html={rich('[[[\\boxed{K=24\\text{ m}^2}]]]')} />. The result is the area of the triangular cross-section. A real roof's total surface area depends on its three-dimensional geometry and other roof sections.</p>
+
+  <h3>Example 6: Finding the Area of a Triangular Awning</h3>
+  <p>A right-triangular awning section has <span set:html={rich('[[b=4\\text{ m}]]')} />, <span set:html={rich('[[c=5\\text{ m}]]')} />, and <span set:html={rich('[[A\\approx36.87^\\circ]]')} />. Choose Area Variation (Angle A): <span set:html={rich('[[K=bc\\sin(A)/2]]')} />, and with <span set:html={rich('[[\\sin(36.87^\\circ)\\approx0.6]]')} />, <span set:html={rich('[[K=(4\\times5\\times0.6)/2]]')} />, <span set:html={rich('[[[\\boxed{K=6\\text{ m}^2}]]]')} />. This assumes the measurements describe a flat right triangle, which holds for a tensioned rectangular awning cut on the diagonal.</p>
+
+  <h3>Example 7: Calculating a Triangular Support Panel Using Angle B</h3>
+  <p>A support panel has <span set:html={rich('[[a=3\\text{ m}]]')} />, <span set:html={rich('[[c=5\\text{ m}]]')} />, and <span set:html={rich('[[B\\approx53.13^\\circ]]')} />. Choose Area Variation (Angle B): <span set:html={rich('[[K=(3\\times5\\times0.8)/2]]')} />, <span set:html={rich('[[[\\boxed{K=6\\text{ m}^2}]]]')} />. The angle-based formula finds the area without entering both legs directly, which helps when the second leg was never measured.</p>
+
+  <h3>Example 8: Finding the Area of a Truss Section</h3>
+  <p>A right-triangular truss section has <span set:html={rich('[[a=5\\text{ m}]]')} />, <span set:html={rich('[[c=13\\text{ m}]]')} />, and <span set:html={rich('[[B\\approx67.38^\\circ]]')} />. Choose Area Variation (Angle B). Since <span set:html={rich('[[\\sin(67.38^\\circ)\\approx12/13]]')} />: <span set:html={rich('[[K=(5\\times13\\times(12/13))/2]]')} />, <span set:html={rich('[[[\\boxed{K=30\\text{ m}^2}]]]')} />. This is the geometric area of the triangular section, not a structural load-capacity calculation.</p>
+
+  <h3>Example 9: Calculating Area From Inradius and Semiperimeter</h3>
+  <p>Consider a 3-4-5 right triangle with <span set:html={rich('[[r=1]]')} /> and <span set:html={rich('[[s=6]]')} />. Choose Area from Semiperimeter: <span set:html={rich('[[K=rs]]')} />, <span set:html={rich('[[K=1\\times6]]')} />, <span set:html={rich('[[[\\boxed{K=6\\text{ square units}}]]]')} />. The inradius and semiperimeter give an alternative route that never multiplies the two legs, yet lands on the same answer.</p>
+
+  <h3>Example 10: Finding the Area of a 5-12-13 Triangular Plot</h3>
+  <p>A right-triangular plot has sides <span set:html={rich('[[a=5]]')} />, <span set:html={rich('[[b=12]]')} />, <span set:html={rich('[[c=13]]')} />. Choose Area from Semiperimeter. Semiperimeter: <span set:html={rich('[[s=(5+12+13)/2=15]]')} />. Inradius: <span set:html={rich('[[r=(5+12-13)/2=2]]')} />. Area: <span set:html={rich('[[K=2\\times15]]')} />, <span set:html={rich('[[[\\boxed{K=30\\text{ square units}}]]]')} />. Verify with the legs formula: <span set:html={rich('[[K=(5\\times12)/2=30]]')} />. Both methods agree because both describe the same plot.</p>
+
+  <h3>Example 11: Estimating a Triangular Panel's Area From Altitude</h3>
+  <p>A triangular panel is represented by a right triangle whose hypotenuse measures 10 m and whose perpendicular altitude to the hypotenuse is 4.8 m. Choose Area Variation (Altitude): <span set:html={rich('[[K=ch/2]]')} />, <span set:html={rich('[[K=(10\\times4.8)/2]]')} />, <span set:html={rich('[[[\\boxed{K=24\\text{ m}^2}]]]')} />. The altitude must be perpendicular to the hypotenuse: any other line from the vertex to the hypotenuse is longer and would overstate the area.</p>
+
+  <h3>Example 12: Calculating a Triangular Section From Hypotenuse and Altitude</h3>
+  <p>A right-triangular section has a hypotenuse of 20 m and a perpendicular altitude of 9 m. Choose Area Variation (Altitude): <span set:html={rich('[[K=(20\\times9)/2]]')} />, <span set:html={rich('[[[\\boxed{K=90\\text{ m}^2}]]]')} />. This is the area of the triangle when the measurements describe the same valid right triangle, which they do here: 9 m is well under the hypotenuse length, as a perpendicular must be.</p>
+
+  <h3>Practical Example Comparison</h3>
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full min-w-[640px] border-collapse text-left text-[15px]">
+      <thead>
+        <tr class="border-b border-primary/20">
+          <th class="py-3 pr-4 font-headline">Situation</th>
+          <th class="py-3 pr-4 font-headline">Known values</th>
+          <th class="py-3 pr-4 font-headline">Calculator mode</th>
+          <th class="py-3 pr-4 font-headline">Formula</th>
+          <th class="py-3 pr-4 font-headline">Final area</th>
+          <th class="py-3 font-headline">Interpretation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b border-primary/10"><td class="py-3 pr-4">Garden bed</td><td class="py-3 pr-4">Legs 6 m, 8 m</td><td class="py-3 pr-4">Area from Legs</td><td class="py-3 pr-4"><span set:html={rich('[[K=ab/2]]')} /></td><td class="py-3 pr-4">24 m²</td><td class="py-3">Planting surface</td></tr>
+        <tr class="border-b border-primary/10"><td class="py-3 pr-4">Plywood panel</td><td class="py-3 pr-4">Legs 1.2 m, 0.8 m</td><td class="py-3 pr-4">Area from Legs</td><td class="py-3 pr-4"><span set:html={rich('[[K=ab/2]]')} /></td><td class="py-3 pr-4">0.48 m²</td><td class="py-3">Material coverage</td></tr>
+        <tr class="border-b border-primary/10"><td class="py-3 pr-4">Sail</td><td class="py-3 pr-4">Legs 5 m, 12 m</td><td class="py-3 pr-4">Area from Legs</td><td class="py-3 pr-4"><span set:html={rich('[[K=ab/2]]')} /></td><td class="py-3 pr-4">30 m²</td><td class="py-3">Flat cloth area</td></tr>
+        <tr class="border-b border-primary/10"><td class="py-3 pr-4">Land section</td><td class="py-3 pr-4">Legs 30 m, 40 m</td><td class="py-3 pr-4">Area from Legs</td><td class="py-3 pr-4"><span set:html={rich('[[K=ab/2]]')} /></td><td class="py-3 pr-4">600 m²</td><td class="py-3">Section, not whole property</td></tr>
+        <tr class="border-b border-primary/10"><td class="py-3 pr-4">Roof gable</td><td class="py-3 pr-4">b 6 m, c 10 m, A 53.13°</td><td class="py-3 pr-4">Area Variation (Angle A)</td><td class="py-3 pr-4"><span set:html={rich('[[K=bc\\sin(A)/2]]')} /></td><td class="py-3 pr-4">24 m²</td><td class="py-3">Cross-section only</td></tr>
+        <tr class="border-b border-primary/10"><td class="py-3 pr-4">Awning</td><td class="py-3 pr-4">b 4 m, c 5 m, A 36.87°</td><td class="py-3 pr-4">Area Variation (Angle A)</td><td class="py-3 pr-4"><span set:html={rich('[[K=bc\\sin(A)/2]]')} /></td><td class="py-3 pr-4">6 m²</td><td class="py-3">Flat fabric area</td></tr>
+        <tr class="border-b border-primary/10"><td class="py-3 pr-4">Support panel</td><td class="py-3 pr-4">a 3 m, c 5 m, B 53.13°</td><td class="py-3 pr-4">Area Variation (Angle B)</td><td class="py-3 pr-4"><span set:html={rich('[[K=ac\\sin(B)/2]]')} /></td><td class="py-3 pr-4">6 m²</td><td class="py-3">No second leg needed</td></tr>
+        <tr class="border-b border-primary/10"><td class="py-3 pr-4">Truss section</td><td class="py-3 pr-4">a 5 m, c 13 m, B 67.38°</td><td class="py-3 pr-4">Area Variation (Angle B)</td><td class="py-3 pr-4"><span set:html={rich('[[K=ac\\sin(B)/2]]')} /></td><td class="py-3 pr-4">30 m²</td><td class="py-3">Geometry, not load capacity</td></tr>
+        <tr class="border-b border-primary/10"><td class="py-3 pr-4">3-4-5 triangle</td><td class="py-3 pr-4">r 1, s 6</td><td class="py-3 pr-4">Area from Semiperimeter</td><td class="py-3 pr-4"><span set:html={rich('[[K=rs]]')} /></td><td class="py-3 pr-4">6 sq units</td><td class="py-3">Incircle view of area</td></tr>
+        <tr class="border-b border-primary/10"><td class="py-3 pr-4">5-12-13 plot</td><td class="py-3 pr-4">r 2, s 15</td><td class="py-3 pr-4">Area from Semiperimeter</td><td class="py-3 pr-4"><span set:html={rich('[[K=rs]]')} /></td><td class="py-3 pr-4">30 sq units</td><td class="py-3">Matches legs check</td></tr>
+        <tr class="border-b border-primary/10"><td class="py-3 pr-4">Triangular panel</td><td class="py-3 pr-4">c 10 m, h 4.8 m</td><td class="py-3 pr-4">Area Variation (Altitude)</td><td class="py-3 pr-4"><span set:html={rich('[[K=ch/2]]')} /></td><td class="py-3 pr-4">24 m²</td><td class="py-3">Altitude must be perpendicular</td></tr>
+        <tr><td class="py-3 pr-4">Triangular section</td><td class="py-3 pr-4">c 20 m, h 9 m</td><td class="py-3 pr-4">Area Variation (Altitude)</td><td class="py-3 pr-4"><span set:html={rich('[[K=ch/2]]')} /></td><td class="py-3 pr-4">90 m²</td><td class="py-3">Valid right triangle</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('area-practical.svg')} alt="Four panels: garden 24 sq m, roof gable 24 sq m, truss 30 sq m, and panel 24 sq m, each with its triangle" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Four real-world calculations: garden, roof gable, truss, and panel, each with its triangle and final area.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 11: Verification -->
+<section id="sec-verify" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Verify the Area of a Right Triangle</h2>
+  <p>One 3-4-5 triangle, five methods, one answer. Given <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />, with <span set:html={rich('[[A\\approx36.87^\\circ]]')} />, <span set:html={rich('[[B\\approx53.13^\\circ]]')} />, <span set:html={rich('[[r=1]]')} />, <span set:html={rich('[[s=6]]')} />, and <span set:html={rich('[[h=ab/c=12/5=2.4]]')} />:</p>
+  <p><strong>Method 1, Legs:</strong> <span set:html={rich('[[K=(3\\times4)/2=6]]')} />. <strong>Method 2, Angle A:</strong> <span set:html={rich('[[K=(4\\times5\\times0.6)/2=6]]')} />. <strong>Method 3, Angle B:</strong> <span set:html={rich('[[K=(3\\times5\\times0.8)/2=6]]')} />. <strong>Method 4, Inradius and semiperimeter:</strong> <span set:html={rich('[[K=1\\times6=6]]')} />. <strong>Method 5, Hypotenuse and altitude:</strong> <span set:html={rich('[[K=(5\\times2.4)/2=6]]')} />.</p>
+  <p>These are five mathematical routes to the same geometric quantity. The triangle's area does not depend on which correct formula is used; it depends on the actual geometry of the triangle. Whenever two independent methods agree on your triangle, you can trust the number.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('area-five-methods.svg')} alt="3-4-5 triangle with five panels: legs, angle A, angle B, inradius-semiperimeter, altitude, all giving area 6" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Different inputs, different formulas, the same triangle area.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 12: Mistakes -->
+<section id="sec-mistakes" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Common Mistakes When Calculating Right Triangle Area</h2>
+  <p>Area errors are rarely arithmetic failures. They are labeling failures, formula mix-ups, and unit slips. The eighteen below cover nearly every wrong answer this page's calculator can produce.</p>
+
+  <h3>1. Forgetting to Divide by Two</h3>
+  <p>Multiplying the legs without halving gives the rectangle's area, not the triangle's. With legs 3 and 4, <span set:html={rich('[[3\\times4=12]]')} /> is wrong; <span set:html={rich('[[(3\\times4)/2=6]]')} /> is right. Fix: end every legs or base-height calculation with the division by two.</p>
+
+  <h3>2. Using the Hypotenuse as One of the Perpendicular Legs</h3>
+  <p>The hypotenuse is never a leg. Entering c = 5 as a leg with the other leg 3 gives <span set:html={rich('[[(5\\times3)/2=7.5]]')} /> instead of 6. Fix: identify the longest side first and reserve it for the hypotenuse field.</p>
+
+  <h3>3. Pairing Angle A With the Wrong Side</h3>
+  <p>The Angle A formula needs side <span set:html={rich('[[b]]')} />, the side enclosing angle <span set:html={rich('[[A]]')} /> with the hypotenuse. Entering side <span set:html={rich('[[a]]')} /> instead computes the wrong product. Fix: check that angle <span set:html={rich('[[A]]')} /> sits between sides <span set:html={rich('[[b]]')} /> and <span set:html={rich('[[c]]')} /> before entering values.</p>
+
+  <h3>4. Pairing Angle B With the Wrong Side</h3>
+  <p>The mirror image: the Angle B formula needs side <span set:html={rich('[[a]]')} />, not side <span set:html={rich('[[b]]')} />. Fix: confirm that angle <span set:html={rich('[[B]]')} /> sits between sides <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[c]]')} />.</p>
+
+  <h3>5. Using the Wrong Included Angle in a Sine Formula</h3>
+  <p>Entering 36.87 degrees where 53.13 degrees belongs, or vice versa, produces a plausible but wrong area. Fix: match the angle to the side pair: Angle A goes with <span set:html={rich('[[b]]')} /> and <span set:html={rich('[[c]]')} />, Angle B with <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[c]]')} />.</p>
+
+  <h3>6. Confusing Altitude With a Leg</h3>
+  <p>The altitude <span set:html={rich('[[h]]')} /> drops from the right-angle vertex to the hypotenuse; a leg runs along the triangle's edge. Entering a leg as the altitude overstates the height. Fix: the altitude must land on the hypotenuse with a right-angle marker.</p>
+
+  <h3>7. Using a Line That Is Not Perpendicular as the Altitude</h3>
+  <p>Any non-perpendicular line from the vertex to the hypotenuse is longer than the true altitude, so the area comes out too large. Fix: verify perpendicularity, by construction or by the <span set:html={rich('[[h=ab/c]]')} /> check, before using the altitude mode.</p>
+
+  <h3>8. Confusing Inradius With Circumradius</h3>
+  <p>The inradius touches the sides from inside; the circumradius reaches the vertices from outside. In a right triangle the circumradius is <span set:html={rich('[[c/2]]')} />, always larger than the inradius. Entering the circumradius into the <span set:html={rich('[[K=rs]]')} /> formula inflates the area. Fix: use <span set:html={rich('[[r=(a+b-c)/2]]')} /> for the right-triangle inradius.</p>
+
+  <h3>9. Using the Full Perimeter Instead of the Semiperimeter</h3>
+  <p>The formula is <span set:html={rich('[[K=rs]]')} /> with <span set:html={rich('[[s]]')} /> the semiperimeter. Entering the full perimeter 12 instead of 6 in the 3-4-5 triangle gives 12 instead of 6. Fix: halve the perimeter before multiplying by <span set:html={rich('[[r]]')} />.</p>
+
+  <h3>10. Mixing Incompatible Measurement Units</h3>
+  <p>Legs of 3 metres and 40 centimetres are not 3 and 40 in one formula. Fix: convert every input to one unit, for example 3 m and 0.4 m, before calculating.</p>
+
+  <h3>11. Reporting Square Metres as Metres</h3>
+  <p>An area of 6 m² is not 6 m. The square unit is part of the answer's meaning: it says how much surface, not how much length. Fix: always write the square unit with the number.</p>
+
+  <h3>12. Rounding the Sine Value Too Early</h3>
+  <p>Using 0.6 for sine when the true value is 0.6000 is harmless, but rounding 0.9231 to 0.9 mid-calculation shifts the result. Fix: keep full precision through every step and round only the final answer.</p>
+
+  <h3>13. Entering a Right Angle or Invalid Angle Into an Acute-Angle Field</h3>
+  <p>The angle modes expect an acute angle between 0 and 90 degrees. Entering 90 degrees or a negative value describes no valid input for these modes. Fix: enter the acute angle the triangle actually has, in degrees.</p>
+
+  <h3>14. Assuming All Five Modes Require the Same Measurements</h3>
+  <p>Each mode asks for a different set of inputs: legs mode needs two legs, the Angle A mode needs a leg, the hypotenuse, and an angle, and the semiperimeter mode needs an inradius and a semiperimeter. Fix: read the field labels of the mode you selected.</p>
+
+  <h3>15. Assuming a Larger Perimeter Always Means a Proportionally Larger Area</h3>
+  <p>Perimeter and area scale differently: doubling all sides quadruples the area. A triangle with a larger perimeter can even have a smaller area if it is long and thin. Fix: compare areas with area formulas, never with perimeters.</p>
+
+  <h3>16. Forgetting That the Same Area Can Be Calculated in Multiple Ways</h3>
+  <p>Treating each method as a separate fact misses the built-in verification: if two methods disagree, something is wrong with the inputs or the mode choice. Fix: run a second method and investigate any mismatch.</p>
+
+  <h3>17. Entering Side Lengths That Cannot Describe the Intended Triangle</h3>
+  <p>Sides that fail the Pythagorean check, such as 2, 3, and 10, describe no right triangle at all. Fix: verify <span set:html={rich('[[a^2+b^2=c^2]]')} /> before trusting any area built from those sides.</p>
+
+  <h3>18. Using the Right-Triangle Inradius Shortcut for a Non-Right Triangle</h3>
+  <p>The formula <span set:html={rich('[[r=(a+b-c)/2]]')} /> is derived from the 90-degree geometry. Applying it to an acute or obtuse triangle produces a meaningless inradius. Fix: use this shortcut only when the triangle is confirmed right-angled.</p>
+
+  <h3>Wrong Versus Correct: A Concrete Example</h3>
+  <p>Given <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[b=4]]')} />, an incorrect calculation skips the halving: <span set:html={rich('[[K=3\\times4=12]]')} />. That is the area of the corresponding 3-by-4 rectangle, not the right triangle. The correct calculation is <span set:html={rich('[[K=(3\\times4)/2=6]]')} />. The triangle occupies half the rectangle, so the division by two is what turns a rectangle answer into a triangle answer.</p>
+</section>
+
+<!-- Section 13: Validation -->
+<section id="sec-validate" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Check Whether Your Area Result Is Valid</h2>
+  <p>Six checks catch the vast majority of invalid results before they leave the page.</p>
+
+  <h3>Check 1: Positive Measurements</h3>
+  <p>All required lengths must be positive: <span set:html={rich('[[a>0]]')} />, <span set:html={rich('[[b>0]]')} />, <span set:html={rich('[[c>0]]')} />. For the inradius mode, <span set:html={rich('[[r>0]]')} /> and <span set:html={rich('[[s>0]]')} />, and the altitude must be positive too. Zero or negative inputs describe no triangle.</p>
+
+  <h3>Check 2: Valid Triangle Side Lengths</h3>
+  <p>For a right triangle, <span set:html={rich('[[a^2+b^2=c^2]]')} /> must hold, and the hypotenuse must be longer than either leg. If the sides fail this check, the inputs are inconsistent and the area is meaningless.</p>
+
+  <h3>Check 3: Correct Angle-Side Pairing</h3>
+  <p>Angle <span set:html={rich('[[A]]')} /> pairs with sides <span set:html={rich('[[b]]')} /> and <span set:html={rich('[[c]]')} /> in the included-angle formula; angle <span set:html={rich('[[B]]')} /> pairs with sides <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[c]]')} />. Confirm the pairing before accepting an angle-based result.</p>
+
+  <h3>Check 4: Correct Altitude</h3>
+  <p>The altitude <span set:html={rich('[[h]]')} /> must be perpendicular to the hypotenuse <span set:html={rich('[[c]]')} />. A quick sanity test: the altitude is always shorter than the hypotenuse and shorter than either leg.</p>
+
+  <h3>Check 5: Correct Area Units</h3>
+  <p>If the input lengths are in metres, the area must be in square metres; centimetres give square centimetres. The unit of the answer is the square of the input unit, never the input unit itself.</p>
+
+  <h3>Check 6: Cross-Check With Another Method</h3>
+  <p>Use the 3-4-5 triangle to compare the legs formula with the semiperimeter formula: <span set:html={rich('[[(3\\times4)/2=6]]')} /> and <span set:html={rich('[[1\\times6=6]]')} />. Both must give 6 square units. Small discrepancies in angle-based calculations may come from rounded angle measurements or rounded trigonometric values; larger ones signal a real error. This guide states no precision tolerance or accuracy guarantee for the calculator: the check is about consistency, not about promised precision.</p>
+</section>
+
+<!-- Section 14: Related -->
+<section id="sec-related" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Explore Related Right Triangle Calculators</h2>
+  <ul class="not-prose mt-4 grid gap-x-8 sm:grid-cols-2">
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-area-from-legs-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">01</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Area From Legs Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-area-from-angle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">02</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Area From Angle Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-area-from-semiperimeter-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">03</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Area From Semiperimeter Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-area-from-altitude-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">04</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Area From Altitude Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-perimeter-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">05</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Perimeter and Semiperimeter Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-radius-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">06</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Inradius and Circumradius Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-side-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">07</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Side Calculator</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- Section 15: FAQs -->
+<section id="sec-faq" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <Faq
+    heading="Frequently Asked Questions"
+    items={[
+      {
+        question: 'What is the formula for the area of a right triangle?',
+        answer: 'The standard formula is K = ab/2, where a and b are the two perpendicular legs. Four equivalent methods cover other known measurements: K = bc sin(A)/2, K = ac sin(B)/2, K = rs (inradius times semiperimeter), and K = ch/2 (hypotenuse times altitude, divided by two).'
+      },
+      {
+        question: 'Why do you divide by two when calculating triangle area?',
+        answer: 'Two identical right triangles join along their hypotenuses to form a rectangle of area ab. One triangle is exactly half of that rectangle, so the area is ab/2. The division by two is geometric, not arbitrary, and it appears in every area method on this page.'
+      },
+      {
+        question: 'Can I calculate the area without knowing the hypotenuse?',
+        answer: 'Yes. The legs formula K = ab/2 needs no hypotenuse, and the inradius-semiperimeter formula K = rs needs none either. The hypotenuse is required only for the angle-based modes and the altitude mode.'
+      },
+      {
+        question: 'How do I find the area using one side and an angle?',
+        answer: 'Use the included-angle form. With leg b, hypotenuse c, and angle A, the area is K = bc sin(A)/2. With leg a, hypotenuse c, and angle B, it is K = ac sin(B)/2. Enter the angle in degrees, and make sure it is the acute angle between the two known sides.'
+      },
+      {
+        question: 'Why does the angle-based formula use sine?',
+        answer: 'The general formula for two sides and their included angle is K = 1/2 xy sin(theta). Sine extracts the perpendicular component of one side relative to the other, which is the effective height. For angle A enclosed by sides b and c, that gives K = bc sin(A)/2.'
+      },
+      {
+        question: 'What is the inradius of a right triangle?',
+        answer: 'The inradius is the radius of the circle inscribed inside the triangle, touching all three sides. For a right triangle it can be computed as r = (a + b - c)/2. It is not the circumradius, which reaches the vertices and equals c/2 in a right triangle.'
+      },
+      {
+        question: 'What is the difference between perimeter and semiperimeter?',
+        answer: 'The perimeter is the total boundary length, a + b + c. The semiperimeter is half of that, s = (a + b + c)/2. The area formula K = rs uses the semiperimeter; using the full perimeter would double the answer.'
+      },
+      {
+        question: 'How do I calculate area using the hypotenuse and altitude?',
+        answer: 'Use K = ch/2, where c is the hypotenuse and h is the perpendicular altitude from the right-angle vertex to the hypotenuse. The altitude must meet the hypotenuse at 90 degrees; it is not one of the legs. If only the legs are known, find the altitude first with h = ab/c.'
+      },
+      {
+        question: 'Why do all five area methods give the same result?',
+        answer: 'Because they are different algebraic descriptions of the same geometric quantity. The legs formula, the sine forms, the inradius-semiperimeter product, and the hypotenuse-altitude form are all provably equal for a consistent right triangle. Agreement between two methods is the best verification that the inputs and mode are correct.'
+      },
+      {
+        question: 'What units should I use for the area?',
+        answer: 'Square units matching the input lengths: metres give square metres, centimetres give square centimetres. Convert all inputs to one unit before calculating, and report the result with the square unit, never a linear unit.'
+      },
+      {
+        question: 'Can I calculate the area if I only know the hypotenuse?',
+        answer: 'No. The hypotenuse alone does not determine a unique right triangle, so the area is not fixed. You need at least one more independent measurement: a leg, an acute angle, the altitude, or the inradius with the semiperimeter.'
+      },
+      {
+        question: 'How can I check whether my area calculation is correct?',
+        answer: 'Run a second method on the same triangle and compare. For a 3-4-5 triangle, the legs formula gives (3 x 4)/2 = 6 and the semiperimeter method gives 1 x 6 = 6. Also verify the sides satisfy the Pythagorean theorem, confirm the angle-side pairing, and check the altitude is perpendicular to the hypotenuse.'
+      }
+    ]}
+  />
+</section>
+
+<!-- Conclusion -->
+<section id="sec-conclusion" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>One Triangle, Five Methods, One Area</h2>
+  <p>Every method on this page answers the same question from a different starting point. Legs when you have both perpendicular sides, sine when you have an included angle, inradius and semiperimeter when the incircle is in view, altitude when the hypotenuse and its height are known. Match the mode to your measurements, enter them in the right fields with compatible units, and let the calculator do the arithmetic. Then verify with a second method: two routes to the same number is the surest sign the geometry is right.</p>
+</section>

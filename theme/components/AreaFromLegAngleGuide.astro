@@ -80,7 +80,7 @@ const imgSrc = (name: string): string => `/images/area-from-leg-angle/${name}`;
   <p>The two legs are the sides that meet at the right angle, perpendicular to one another. Leg <span set:html={rich('[[a]]')} /> sits opposite angle <span set:html={rich('[[A]]')} />; leg <span set:html={rich('[[b]]')} /> sits opposite angle <span set:html={rich('[[B]]')} />. The calculator takes leg <span set:html={rich('[[b]]')} />, the one adjacent to angle <span set:html={rich('[[A]]')} />, as its first input. Together the legs form the corner where the 90-degree angle lives.</p>
 
   <h3>Understanding Angle A</h3>
-  <p>Angle <span set:html={rich('[[A]]')} /> is the acute angle formed by leg <span set:html={rich('[[b]]')} /> and hypotenuse <span set:html={rich('[[c]]')} />. It is the included angle between the calculator's two side inputs, so <span set:html={rich('[[\\angle A=\\text{angle between }b\\text{ and }c]]')} />. This pairing is fixed: wherever the formula mentions <span set:html={rich('[[A]]')} />, it means the corner where the known leg meets the hypotenuse, not the corner at the far end of leg <span set:html={rich('[[b]]')} />.</p>
+  <p>Angle <span set:html={rich('[[A]]')} /> is the acute angle formed by leg <span set:html={rich('[[b]]')} /> and hypotenuse <span set:html={rich('[[c]]')} />. It is the included angle between the calculator's two side inputs, so <span set:html={rich('[[\\angle A=\\text{angle between }b\\text{ and }c]]')} />. This pairing is fixed: wherever the formula mentions <span set:html={rich('[[A]]')} />, it means the corner where the known leg meets the hypotenuse, not the corner at the far end of leg <span set:html={rich('[[b]]')} /></p>
 
   <h3>Opposite and Adjacent Sides Relative to Angle A</h3>
   <p>Stand at angle <span set:html={rich('[[A]]')} /> and look across the triangle. The side you face without touching is the opposite side; the side forming the angle alongside the hypotenuse is the adjacent side. These labels follow the reference angle, so switching the reference from <span set:html={rich('[[A]]')} /> to <span set:html={rich('[[B]]')} /> swaps which leg is which.</p>
@@ -101,7 +101,7 @@ const imgSrc = (name: string): string => `/images/area-from-leg-angle/${name}`;
   </div>
 
   <h3>Understanding the Included Angle</h3>
-  <p>An included angle is the angle formed by two chosen sides. The area formula multiplies <span set:html={rich('[[b]]')} /> and <span set:html={rich('[[c]]')} />, so the angle it needs is the one trapped between them: angle <span set:html={rich('[[A]]')} />. The correct pairing for this calculator is <span set:html={rich('[[b,\\;c,\\;A]]')} />. Using any other angle with the same two sides breaks the pairing the formula assumes, so do not confuse angle <span set:html={rich('[[A]]')} /> with angle <span set:html={rich('[[B]]')} />.</p>
+  <p>An included angle is the angle formed by two chosen sides. The area formula multiplies <span set:html={rich('[[b]]')} /> and <span set:html={rich('[[c]]')} />, so the angle it needs is the one trapped between them: angle <span set:html={rich('[[A]]')} />. The correct pairing for this calculator is <span set:html={rich('[[b,\\;c,\\;A]]')} />. Using any other angle with the same two sides breaks the pairing the formula assumes, so do not confuse angle <span set:html={rich('[[A]]')} /> with angle <span set:html={rich('[[B]]')} /></p>
 
   <figure class="not-prose my-6">
     <img src={imgSrc('right-triangle-anatomy.svg')} alt="Right triangle ABC: leg b and hypotenuse c highlighted, included angle A, missing leg a labeled" class="mx-auto h-auto w-full max-w-xl my-8" loading="lazy" />
@@ -200,16 +200,16 @@ const imgSrc = (name: string): string => `/images/area-from-leg-angle/${name}`;
   <p>Four classic right triangles show the method at increasing sizes. Each example substitutes into the sine formula and then verifies the result with the two-legs formula.</p>
 
   <h3>Example 1: 3-4-5 Right Triangle</h3>
-  <p>Given <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />, <span set:html={rich('[[A=36.87^\\circ]]')} />. Step 1: <span set:html={rich('[[K=\\frac{bc\\sin(A)}{2}]]')} />. Step 2: <span set:html={rich('[[K=\\frac{4\\times5\\times\\sin(36.87^\\circ)}{2}]]')} />. Step 3: <span set:html={rich('[[\\sin(36.87^\\circ)\\approx0.6]]')} />. Step 4: <span set:html={rich('[[K=\\frac{20\\times0.6}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=6\\text{ square units}}]]]')} />. Verify: <span set:html={rich('[[a=5\\times0.6=3]]')} />, and <span set:html={rich('[[K=\\frac{4\\times3}{2}=6]]')} />.</p>
+  <p>Given <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />, <span set:html={rich('[[A=36.87^\\circ]]')} />. Step 1: <span set:html={rich('[[K=\\frac{bc\\sin(A)}{2}]]')} />. Step 2: <span set:html={rich('[[K=\\frac{4\\times5\\times\\sin(36.87^\\circ)}{2}]]')} />. Step 3: <span set:html={rich('[[\\sin(36.87^\\circ)\\approx0.6]]')} />. Step 4: <span set:html={rich('[[K=\\frac{20\\times0.6}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=6\\text{ square units}}]]]')} />. Verify: <span set:html={rich('[[a=5\\times0.6=3]]')} />, and <span set:html={rich('[[K=\\frac{4\\times3}{2}=6]]')} /></p>
 
   <h3>Example 2: 5-12-13 Right Triangle</h3>
-  <p>Given <span set:html={rich('[[b=12]]')} />, <span set:html={rich('[[c=13]]')} />, <span set:html={rich('[[A\\approx22.62^\\circ]]')} />, with <span set:html={rich('[[\\sin(A)=\\frac{5}{13}]]')} />. Substitute: <span set:html={rich('[[K=\\frac{12\\times13\\times(5/13)}{2}]]')} />. The 13 cancels: <span set:html={rich('[[K=\\frac{12\\times5}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=30\\text{ square units}}]]]')} />. Verify: <span set:html={rich('[[a=13\\times(5/13)=5]]')} />, and <span set:html={rich('[[K=\\frac{12\\times5}{2}=30]]')} />.</p>
+  <p>Given <span set:html={rich('[[b=12]]')} />, <span set:html={rich('[[c=13]]')} />, <span set:html={rich('[[A\\approx22.62^\\circ]]')} />, with <span set:html={rich('[[\\sin(A)=\\frac{5}{13}]]')} />. Substitute: <span set:html={rich('[[K=\\frac{12\\times13\\times(5/13)}{2}]]')} />. The 13 cancels: <span set:html={rich('[[K=\\frac{12\\times5}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=30\\text{ square units}}]]]')} />. Verify: <span set:html={rich('[[a=13\\times(5/13)=5]]')} />, and <span set:html={rich('[[K=\\frac{12\\times5}{2}=30]]')} /></p>
 
   <h3>Example 3: 8-15-17 Right Triangle</h3>
-  <p>Given <span set:html={rich('[[b=15]]')} />, <span set:html={rich('[[c=17]]')} />, <span set:html={rich('[[A\\approx28.07^\\circ]]')} />, with <span set:html={rich('[[\\sin(A)=\\frac{8}{17}]]')} />. Then <span set:html={rich('[[K=\\frac{15\\times17\\times(8/17)}{2}=\\frac{15\\times8}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=60\\text{ square units}}]]]')} />. Verify: <span set:html={rich('[[a=8]]')} />, and <span set:html={rich('[[\\frac{15\\times8}{2}=60]]')} />.</p>
+  <p>Given <span set:html={rich('[[b=15]]')} />, <span set:html={rich('[[c=17]]')} />, <span set:html={rich('[[A\\approx28.07^\\circ]]')} />, with <span set:html={rich('[[\\sin(A)=\\frac{8}{17}]]')} />. Then <span set:html={rich('[[K=\\frac{15\\times17\\times(8/17)}{2}=\\frac{15\\times8}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=60\\text{ square units}}]]]')} />. Verify: <span set:html={rich('[[a=8]]')} />, and <span set:html={rich('[[\\frac{15\\times8}{2}=60]]')} /></p>
 
   <h3>Example 4: 7-24-25 Right Triangle</h3>
-  <p>Given <span set:html={rich('[[b=24]]')} />, <span set:html={rich('[[c=25]]')} />, <span set:html={rich('[[A\\approx16.26^\\circ]]')} />, with <span set:html={rich('[[\\sin(A)=\\frac{7}{25}]]')} />. Then <span set:html={rich('[[K=\\frac{24\\times25\\times(7/25)}{2}=\\frac{24\\times7}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=84\\text{ square units}}]]]')} />. Verify: <span set:html={rich('[[a=7]]')} />, and <span set:html={rich('[[\\frac{24\\times7}{2}=84]]')} />.</p>
+  <p>Given <span set:html={rich('[[b=24]]')} />, <span set:html={rich('[[c=25]]')} />, <span set:html={rich('[[A\\approx16.26^\\circ]]')} />, with <span set:html={rich('[[\\sin(A)=\\frac{7}{25}]]')} />. Then <span set:html={rich('[[K=\\frac{24\\times25\\times(7/25)}{2}=\\frac{24\\times7}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=84\\text{ square units}}]]]')} />. Verify: <span set:html={rich('[[a=7]]')} />, and <span set:html={rich('[[\\frac{24\\times7}{2}=84]]')} /></p>
 
   <h3>Foundational Examples Comparison</h3>
   <div class="not-prose my-6 overflow-x-auto">
@@ -339,7 +339,7 @@ const imgSrc = (name: string): string => `/images/area-from-leg-angle/${name}`;
 <!-- Section 11: Alternative tangent-based method -->
 <section id="sec-alternative" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>Can You Calculate Right Triangle Area Using One Leg and Its Angle?</h2>
-  <p>Yes, with tangent instead of sine. If leg <span set:html={rich('[[b]]')} /> and angle <span set:html={rich('[[A]]')} /> are known, the opposite leg follows from <span set:html={rich('[[a=b\\tan(A)]]')} />. Put that into <span set:html={rich('[[K=\\frac{ab}{2}]]')} />: <span set:html={rich('[[K=\\frac{b(b\\tan(A))}{2}]]')} />, therefore <span set:html={rich('[[[\\boxed{K=\\frac{b^2\\tan(A)}{2}}]]]')} />. From the other corner, <span set:html={rich('[[b=a\\tan(B)]]')} /> gives <span set:html={rich('[[[\\boxed{K=\\frac{a^2\\tan(B)}{2}}]]]')} />. These are genuine alternative methods, useful when the hypotenuse is unknown but a leg and its angle are in hand. They are mathematical alternatives, not extra modes in the calculator above, which works only with <span set:html={rich('[[b]]')} />, <span set:html={rich('[[c]]')} />, and <span set:html={rich('[[A]]')} />.</p>
+  <p>Yes, with tangent instead of sine. If leg <span set:html={rich('[[b]]')} /> and angle <span set:html={rich('[[A]]')} /> are known, the opposite leg follows from <span set:html={rich('[[a=b\\tan(A)]]')} />. Put that into <span set:html={rich('[[K=\\frac{ab}{2}]]')} />: <span set:html={rich('[[K=\\frac{b(b\\tan(A))}{2}]]')} />, therefore <span set:html={rich('[[[\\boxed{K=\\frac{b^2\\tan(A)}{2}}]]]')} />. From the other corner, <span set:html={rich('[[b=a\\tan(B)]]')} /> gives <span set:html={rich('[[[\\boxed{K=\\frac{a^2\\tan(B)}{2}}]]]')} />. These are genuine alternative methods, useful when the hypotenuse is unknown but a leg and its angle are in hand. They are mathematical alternatives, not extra modes in the calculator above, which works only with <span set:html={rich('[[b]]')} />, <span set:html={rich('[[c]]')} />, and <span set:html={rich('[[A]]')} /></p>
 </section>
 
 <!-- Section 12: Angle units and measurements -->
@@ -387,13 +387,13 @@ const imgSrc = (name: string): string => `/images/area-from-leg-angle/${name}`;
   <p>Computing <span set:html={rich('[[\\frac{bc}{2}]]')} /> alone treats <span set:html={rich('[[\\sin(A)]]')} /> as 1, which holds only at 90°, an impossible acute input. Fix: include <span set:html={rich('[[\\sin(A)]]')} />; it carries the missing leg's share.</p>
 
   <h3>8. Entering a Leg Longer Than the Hypotenuse</h3>
-  <p>No leg can exceed the hypotenuse, so <span set:html={rich('[[c\\leq b]]')} /> means a label is wrong. Fix: re-identify the sides; the longest measurement is <span set:html={rich('[[c]]')} />.</p>
+  <p>No leg can exceed the hypotenuse, so <span set:html={rich('[[c\\leq b]]')} /> means a label is wrong. Fix: re-identify the sides; the longest measurement is <span set:html={rich('[[c]]')} /></p>
 
   <h3>9. Entering an Angle of 0 Degrees</h3>
   <p>At 0°, <span set:html={rich('[[\\sin(A)=0]]')} /> and the triangle collapses to a line with zero area. Fix: use a genuine acute angle, strictly between 0° and 90°.</p>
 
   <h3>10. Entering an Angle of 90 Degrees as an Acute Angle</h3>
-  <p>90° is the right angle <span set:html={rich('[[C]]')} />, not an acute angle; <span set:html={rich('[[\\sin(90^\\circ)=1]]')} /> turns the formula into <span set:html={rich('[[\\frac{bc}{2}]]')} />, which is not this triangle's area. Fix: enter the acute angle between <span set:html={rich('[[b]]')} /> and <span set:html={rich('[[c]]')} />.</p>
+  <p>90° is the right angle <span set:html={rich('[[C]]')} />, not an acute angle; <span set:html={rich('[[\\sin(90^\\circ)=1]]')} /> turns the formula into <span set:html={rich('[[\\frac{bc}{2}]]')} />, which is not this triangle's area. Fix: enter the acute angle between <span set:html={rich('[[b]]')} /> and <span set:html={rich('[[c]]')} /></p>
 
   <h3>11. Mixing Different Length Units</h3>
   <p><span set:html={rich('[[b=400\\text{ cm}]]')} /> with <span set:html={rich('[[c=5\\text{ m}]]')} /> multiplies incompatible scales. Fix: convert both to one unit (400 cm = 4 m) before calculating.</p>

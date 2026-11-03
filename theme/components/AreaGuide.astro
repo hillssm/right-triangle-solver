@@ -112,7 +112,7 @@ const imgSrc = (name: string): string => `/images/area/${name}`;
   <p>This method is useful when side <span set:html={rich('[[b]]')} />, hypotenuse <span set:html={rich('[[c]]')} />, and acute angle <span set:html={rich('[[A]]')} /> are known: <span set:html={rich('[[[\\boxed{K=\\frac{bc\\sin(A)}{2}}]]]')} />. It is the calculator's Area Variation (Angle A) mode.</p>
 
   <h3>Why Does This Formula Use Sine?</h3>
-  <p>The general area formula for two sides and their included angle is <span set:html={rich('[[K=\\frac12 xy\\sin(\\theta)]]')} />. Angle <span set:html={rich('[[A]]')} /> lies between sides <span set:html={rich('[[b]]')} /> and <span set:html={rich('[[c]]')} />, so substituting <span set:html={rich('[[x=b]]')} />, <span set:html={rich('[[y=c]]')} />, <span set:html={rich('[[\\theta=A]]')} /> gives <span set:html={rich('[[K=\\frac12 bc\\sin(A)]]')} />. Sine accounts for the perpendicular component of one side: only the part of side <span set:html={rich('[[c]]')} /> that stands perpendicular to <span set:html={rich('[[b]]')} /> contributes height, and that perpendicular part is <span set:html={rich('[[c\\sin(A)]]')} />.</p>
+  <p>The general area formula for two sides and their included angle is <span set:html={rich('[[K=\\frac12 xy\\sin(\\theta)]]')} />. Angle <span set:html={rich('[[A]]')} /> lies between sides <span set:html={rich('[[b]]')} /> and <span set:html={rich('[[c]]')} />, so substituting <span set:html={rich('[[x=b]]')} />, <span set:html={rich('[[y=c]]')} />, <span set:html={rich('[[\\theta=A]]')} /> gives <span set:html={rich('[[K=\\frac12 bc\\sin(A)]]')} />. Sine accounts for the perpendicular component of one side: only the part of side <span set:html={rich('[[c]]')} /> that stands perpendicular to <span set:html={rich('[[b]]')} /> contributes height, and that perpendicular part is <span set:html={rich('[[c\\sin(A)]]')} /></p>
 
   <h3>Fully Worked Example: A 3-4-5 Triangle</h3>
   <p>Given <span set:html={rich('[[b=4\\text{ m}]]')} />, <span set:html={rich('[[c=5\\text{ m}]]')} />, and <span set:html={rich('[[A\\approx36.87^\\circ]]')} />. Since <span set:html={rich('[[\\sin(36.87^\\circ)\\approx0.6]]')} />, substitute: <span set:html={rich('[[K=(4\\times5\\times0.6)/2]]')} />, <span set:html={rich('[[K=12/2]]')} />, <span set:html={rich('[[[\\boxed{K=6\\text{ m}^2}]]]')} />. This agrees with the legs formula because 0.6 is exactly the ratio <span set:html={rich('[[a/c=3/5]]')} />: the sine form is the legs form in disguise, with <span set:html={rich('[[c\\sin(A)]]')} /> playing the role of the other leg.</p>
@@ -243,7 +243,7 @@ const imgSrc = (name: string): string => `/images/area/${name}`;
   </ol>
 
   <h3>Complete Walkthrough: All Five Modes on a 3-4-5 Triangle</h3>
-  <p>Given <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />, with <span set:html={rich('[[A\\approx36.87^\\circ]]')} />, <span set:html={rich('[[B\\approx53.13^\\circ]]')} />, <span set:html={rich('[[r=1]]')} />, <span set:html={rich('[[s=6]]')} />, and <span set:html={rich('[[h=2.4]]')} />, here is what each mode needs and returns. Every mode returns <span set:html={rich('[[[\\boxed{K=6\\text{ square units}}]]]')} />.</p>
+  <p>Given <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />, with <span set:html={rich('[[A\\approx36.87^\\circ]]')} />, <span set:html={rich('[[B\\approx53.13^\\circ]]')} />, <span set:html={rich('[[r=1]]')} />, <span set:html={rich('[[s=6]]')} />, and <span set:html={rich('[[h=2.4]]')} />, here is what each mode needs and returns. Every mode returns <span set:html={rich('[[[\\boxed{K=6\\text{ square units}}]]]')} /></p>
   <ol>
     <li><strong>Area from Legs.</strong> Enter "Leg a" = 3 and "Leg b" = 4. Formula: <span set:html={rich('[[K=ab/2]]')} />. Substitution: <span set:html={rich('[[K=(3\\times4)/2]]')} />. Result: 6 square units.</li>
     <li><strong>Area Variation (Angle A).</strong> Enter "Leg b" = 4, "Hypotenuse c" = 5, "Angle A" = 36.87. Formula: <span set:html={rich('[[K=bc\\sin(A)/2]]')} />. Substitution: <span set:html={rich('[[K=(4\\times5\\times0.6)/2]]')} />. Result: 6 square units.</li>
@@ -335,7 +335,7 @@ const imgSrc = (name: string): string => `/images/area/${name}`;
 <section id="sec-verify" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>How to Verify the Area of a Right Triangle</h2>
   <p>One 3-4-5 triangle, five methods, one answer. Given <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />, with <span set:html={rich('[[A\\approx36.87^\\circ]]')} />, <span set:html={rich('[[B\\approx53.13^\\circ]]')} />, <span set:html={rich('[[r=1]]')} />, <span set:html={rich('[[s=6]]')} />, and <span set:html={rich('[[h=ab/c=12/5=2.4]]')} />:</p>
-  <p><strong>Method 1, Legs:</strong> <span set:html={rich('[[K=(3\\times4)/2=6]]')} />. <strong>Method 2, Angle A:</strong> <span set:html={rich('[[K=(4\\times5\\times0.6)/2=6]]')} />. <strong>Method 3, Angle B:</strong> <span set:html={rich('[[K=(3\\times5\\times0.8)/2=6]]')} />. <strong>Method 4, Inradius and semiperimeter:</strong> <span set:html={rich('[[K=1\\times6=6]]')} />. <strong>Method 5, Hypotenuse and altitude:</strong> <span set:html={rich('[[K=(5\\times2.4)/2=6]]')} />.</p>
+  <p><strong>Method 1, Legs:</strong> <span set:html={rich('[[K=(3\\times4)/2=6]]')} />. <strong>Method 2, Angle A:</strong> <span set:html={rich('[[K=(4\\times5\\times0.6)/2=6]]')} />. <strong>Method 3, Angle B:</strong> <span set:html={rich('[[K=(3\\times5\\times0.8)/2=6]]')} />. <strong>Method 4, Inradius and semiperimeter:</strong> <span set:html={rich('[[K=1\\times6=6]]')} />. <strong>Method 5, Hypotenuse and altitude:</strong> <span set:html={rich('[[K=(5\\times2.4)/2=6]]')} /></p>
   <p>These are five mathematical routes to the same geometric quantity. The triangle's area does not depend on which correct formula is used; it depends on the actual geometry of the triangle. Whenever two independent methods agree on your triangle, you can trust the number.</p>
 
   <figure class="not-prose my-6">
@@ -359,10 +359,10 @@ const imgSrc = (name: string): string => `/images/area/${name}`;
   <p>The Angle A formula needs side <span set:html={rich('[[b]]')} />, the side enclosing angle <span set:html={rich('[[A]]')} /> with the hypotenuse. Entering side <span set:html={rich('[[a]]')} /> instead computes the wrong product. Fix: check that angle <span set:html={rich('[[A]]')} /> sits between sides <span set:html={rich('[[b]]')} /> and <span set:html={rich('[[c]]')} /> before entering values.</p>
 
   <h3>4. Pairing Angle B With the Wrong Side</h3>
-  <p>The mirror image: the Angle B formula needs side <span set:html={rich('[[a]]')} />, not side <span set:html={rich('[[b]]')} />. Fix: confirm that angle <span set:html={rich('[[B]]')} /> sits between sides <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[c]]')} />.</p>
+  <p>The mirror image: the Angle B formula needs side <span set:html={rich('[[a]]')} />, not side <span set:html={rich('[[b]]')} />. Fix: confirm that angle <span set:html={rich('[[B]]')} /> sits between sides <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[c]]')} /></p>
 
   <h3>5. Using the Wrong Included Angle in a Sine Formula</h3>
-  <p>Entering 36.87 degrees where 53.13 degrees belongs, or vice versa, produces a plausible but wrong area. Fix: match the angle to the side pair: Angle A goes with <span set:html={rich('[[b]]')} /> and <span set:html={rich('[[c]]')} />, Angle B with <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[c]]')} />.</p>
+  <p>Entering 36.87 degrees where 53.13 degrees belongs, or vice versa, produces a plausible but wrong area. Fix: match the angle to the side pair: Angle A goes with <span set:html={rich('[[b]]')} /> and <span set:html={rich('[[c]]')} />, Angle B with <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[c]]')} /></p>
 
   <h3>6. Confusing Altitude With a Leg</h3>
   <p>The altitude <span set:html={rich('[[h]]')} /> drops from the right-angle vertex to the hypotenuse; a leg runs along the triangle's edge. Entering a leg as the altitude overstates the height. Fix: the altitude must land on the hypotenuse with a right-angle marker.</p>
@@ -374,7 +374,7 @@ const imgSrc = (name: string): string => `/images/area/${name}`;
   <p>The inradius touches the sides from inside; the circumradius reaches the vertices from outside. In a right triangle the circumradius is <span set:html={rich('[[c/2]]')} />, always larger than the inradius. Entering the circumradius into the <span set:html={rich('[[K=rs]]')} /> formula inflates the area. Fix: use <span set:html={rich('[[r=(a+b-c)/2]]')} /> for the right-triangle inradius.</p>
 
   <h3>9. Using the Full Perimeter Instead of the Semiperimeter</h3>
-  <p>The formula is <span set:html={rich('[[K=rs]]')} /> with <span set:html={rich('[[s]]')} /> the semiperimeter. Entering the full perimeter 12 instead of 6 in the 3-4-5 triangle gives 12 instead of 6. Fix: halve the perimeter before multiplying by <span set:html={rich('[[r]]')} />.</p>
+  <p>The formula is <span set:html={rich('[[K=rs]]')} /> with <span set:html={rich('[[s]]')} /> the semiperimeter. Entering the full perimeter 12 instead of 6 in the 3-4-5 triangle gives 12 instead of 6. Fix: halve the perimeter before multiplying by <span set:html={rich('[[r]]')} /></p>
 
   <h3>10. Mixing Incompatible Measurement Units</h3>
   <p>Legs of 3 metres and 40 centimetres are not 3 and 40 in one formula. Fix: convert every input to one unit, for example 3 m and 0.4 m, before calculating.</p>

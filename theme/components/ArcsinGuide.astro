@@ -67,7 +67,7 @@ const imgSrc = (name: string): string => `/images/angle-from-sine/${name}`;
   <p>The hypotenuse is the side opposite the right angle, represented by <span set:html={rich('[[c]]')} />. It is always the longest side of the triangle. It never touches the right-angle vertex. In practical settings the hypotenuse is often the sloping length itself: the ladder, the rafter, the ramp surface, or the straight-line sight distance.</p>
   <p>When a triangle is drawn rotated, identify the hypotenuse first by finding the side across from the square right-angle marker. Everything else follows from that identification.</p>
   <h3>What Is the Adjacent Side?</h3>
-  <p>Side <span set:html={rich('[[b]]')} /> is the leg that touches angle <span set:html={rich('[[A]]')} /> without being the hypotenuse. This calculator does not need it. If you later require the adjacent side, the Pythagorean theorem gives it as <span set:html={rich('[[b = \\sqrt{c^2 - a^2}]]')} />.</p>
+  <p>Side <span set:html={rich('[[b]]')} /> is the leg that touches angle <span set:html={rich('[[A]]')} /> without being the hypotenuse. This calculator does not need it. If you later require the adjacent side, the Pythagorean theorem gives it as <span set:html={rich('[[b = \\sqrt{c^2 - a^2}]]')} /></p>
 
   <figure class="not-prose my-6">
     <img src={imgSrc('arcsin-anatomy.svg')} alt="Right triangle with opposite side a and hypotenuse c highlighted for arcsin" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
@@ -84,7 +84,7 @@ const imgSrc = (name: string): string => `/images/angle-from-sine/${name}`;
   <h3>What Is Inverse Sine?</h3>
   <p>Ordinary sine starts with an angle and produces a ratio. Inverse sine starts with a valid ratio and returns the corresponding angle. If <span set:html={rich('[[\\sin(A) = 0.6]]')} />, then <span set:html={rich('[[A = \\arcsin(0.6) \\approx 36.87^\\circ]]')} />. Inverse sine reverses the sine relationship to recover the angle you started from.</p>
   <h3>Is Arcsine the Same as Inverse Sine?</h3>
-  <p>Yes. The notations <span set:html={rich('[[\\arcsin(x)]]')} /> and <span set:html={rich('[[\\sin^{-1}(x)]]')} /> refer to the same function. The superscript <span set:html={rich('[[-1]]')} /> does not mean reciprocal. The reciprocal of sine is a different function entirely: cosecant, written <span set:html={rich('[[\\csc(x)]]')} />.</p>
+  <p>Yes. The notations <span set:html={rich('[[\\arcsin(x)]]')} /> and <span set:html={rich('[[\\sin^{-1}(x)]]')} /> refer to the same function. The superscript <span set:html={rich('[[-1]]')} /> does not mean reciprocal. The reciprocal of sine is a different function entirely: cosecant, written <span set:html={rich('[[\\csc(x)]]')} /></p>
   <h3>Why Does the Formula Use the Opposite Side?</h3>
   <p>Sine is the ratio that pairs the opposite side with the hypotenuse, which is exactly the pair this calculator accepts. The memory aid SOH-CAH-TOA summarises the three pairings: SOH means Sine equals Opposite over Hypotenuse, CAH means Cosine equals Adjacent over Hypotenuse, and TOA means Tangent equals Opposite over Adjacent. When your known sides are opposite and hypotenuse, SOH applies, so arcsin is the correct inverse function.</p>
 
@@ -102,9 +102,9 @@ const imgSrc = (name: string): string => `/images/angle-from-sine/${name}`;
   <p>The known side lengths let you compute the ratio on the right. Then apply inverse sine to both sides to isolate the angle:</p>
   <p><span set:html={rich('[[[A=\\arcsin\\left(\\frac{a}{c}\\right)]]]')} /></p>
   <p>Inverse sine is applied to the entire ratio because the ratio as a whole is the sine value. Work through a numerical example. Given <span set:html={rich('[[a = 3]]')} /> cm and <span set:html={rich('[[c = 5]]')} /> cm:</p>
-  <p>Step 1: Divide the opposite side by the hypotenuse: <span set:html={rich('[[3/5 = 0.6]]')} />.</p>
-  <p>Step 2: Apply inverse sine: <span set:html={rich('[[A = \\arcsin(0.6)]]')} />.</p>
-  <p>Step 3: Calculate the angle: <span set:html={rich('[[A \\approx 36.87^\\circ]]')} />.</p>
+  <p>Step 1: Divide the opposite side by the hypotenuse: <span set:html={rich('[[3/5 = 0.6]]')} /></p>
+  <p>Step 2: Apply inverse sine: <span set:html={rich('[[A = \\arcsin(0.6)]]')} /></p>
+  <p>Step 3: Calculate the angle: <span set:html={rich('[[A \\approx 36.87^\\circ]]')} /></p>
   <p>The result is an approximation rounded to two decimal places. In plain language: the angle whose sine is 0.6 measures about 36.87 degrees.</p>
 </section>
 
@@ -131,11 +131,11 @@ const imgSrc = (name: string): string => `/images/angle-from-sine/${name}`;
 <section id="arcsin-examples" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>Step-by-Step Examples of Finding an Angle Using Sine</h2>
   <h3>Example 1: A Basic 3-4-5 Right Triangle</h3>
-  <p>Given opposite side <span set:html={rich('[[a = 3]]')} /> cm and hypotenuse <span set:html={rich('[[c = 5]]')} /> cm, find angle <span set:html={rich('[[A]]')} />.</p>
-  <p>Step 1: Write the formula: <span set:html={rich('[[A = \\arcsin(a/c)]]')} />.</p>
-  <p>Step 2: Substitute the values: <span set:html={rich('[[A = \\arcsin(3/5)]]')} />.</p>
-  <p>Step 3: Calculate the ratio: <span set:html={rich('[[3/5 = 0.6]]')} />.</p>
-  <p>Step 4: Apply inverse sine: <span set:html={rich('[[A = \\arcsin(0.6) \\approx 36.87^\\circ]]')} />.</p>
+  <p>Given opposite side <span set:html={rich('[[a = 3]]')} /> cm and hypotenuse <span set:html={rich('[[c = 5]]')} /> cm, find angle <span set:html={rich('[[A]]')} /></p>
+  <p>Step 1: Write the formula: <span set:html={rich('[[A = \\arcsin(a/c)]]')} /></p>
+  <p>Step 2: Substitute the values: <span set:html={rich('[[A = \\arcsin(3/5)]]')} /></p>
+  <p>Step 3: Calculate the ratio: <span set:html={rich('[[3/5 = 0.6]]')} /></p>
+  <p>Step 4: Apply inverse sine: <span set:html={rich('[[A = \\arcsin(0.6) \\approx 36.87^\\circ]]')} /></p>
   <p>This angle is the tilt between the hypotenuse and the adjacent side, with the 3 cm side standing opposite it.</p>
   <h3>Example 2: When the Opposite Side Is Half the Hypotenuse</h3>
   <p>Given <span set:html={rich('[[a = 5]]')} /> m and <span set:html={rich('[[c = 10]]')} /> m: <span set:html={rich('[[A = \\arcsin(5/10) = \\arcsin(0.5) = 30^\\circ]]')} /> exactly. This is the familiar 30-60-90 special triangle, where the side opposite the 30-degree angle is half the hypotenuse.</p>
@@ -287,7 +287,7 @@ const imgSrc = (name: string): string => `/images/angle-from-sine/${name}`;
   <p>A valid, non-degenerate right triangle requires: the opposite side positive, the hypotenuse positive, the hypotenuse strictly longer than the opposite side, the ratio <span set:html={rich('[[a/c]]')} /> strictly between 0 and 1, and the resulting angle strictly between 0 and 90 degrees.</p>
   <p>If <span set:html={rich('[[a = c]]')} />, arcsin returns 90 degrees, a degenerate limiting case rather than a real triangle. If <span set:html={rich('[[a > c]]')} />, the triangle is geometrically impossible.</p>
   <h3>Method 1: Check the sine ratio</h3>
-  <p>Verify <span set:html={rich('[[\\sin(A) \\approx a/c]]')} /> using the unrounded angle. For the 3-4-5 example, <span set:html={rich('[[\\sin(36.87^\\circ) \\approx 0.6 = 3/5]]')} />.</p>
+  <p>Verify <span set:html={rich('[[\\sin(A) \\approx a/c]]')} /> using the unrounded angle. For the 3-4-5 example, <span set:html={rich('[[\\sin(36.87^\\circ) \\approx 0.6 = 3/5]]')} /></p>
   <h3>Method 2: Check the complementary angle</h3>
   <p>Compute <span set:html={rich('[[B = 90^\\circ - A]]')} />. The two acute angles must sum to exactly 90 degrees. Then confirm the triangle makes sense with angle <span set:html={rich('[[B]]')} /> as reference.</p>
   <h3>Method 3: Use the Pythagorean theorem</h3>

@@ -57,7 +57,7 @@ const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
 <section id="sec-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>How to Calculate Right Triangle Area From Altitude</h2>
   <p>Suppose a right triangle has a hypotenuse of 10 m, and the perpendicular distance from the right-angle corner to that hypotenuse measures 4.8 m. Its area follows directly: <span set:html={rich('[[K=(10\\times4.8)/2]]')} />, <span set:html={rich('[[[\\boxed{K=24\\text{ m}^2}]]]')} />. The triangle encloses 24 square metres of flat surface.</p>
-  <p>This calculator exists for exactly that situation. When you know the longest side of a right triangle, the hypotenuse <span set:html={rich('[[c]]')} />, and the perpendicular altitude from the right-angle vertex to that side, <span set:html={rich('[[h]]')} />, the two legs are not needed. The hypotenuse serves as the base, the altitude is its matching perpendicular height, and every triangle's area is half the product of a base and its corresponding height: <span set:html={rich('[[K=ch/2]]')} />.</p>
+  <p>This calculator exists for exactly that situation. When you know the longest side of a right triangle, the hypotenuse <span set:html={rich('[[c]]')} />, and the perpendicular altitude from the right-angle vertex to that side, <span set:html={rich('[[h]]')} />, the two legs are not needed. The hypotenuse serves as the base, the altitude is its matching perpendicular height, and every triangle's area is half the product of a base and its corresponding height: <span set:html={rich('[[K=ch/2]]')} /></p>
   <p>The altitude must meet the hypotenuse at a right angle; a slanted segment that is not perpendicular gives a wrong height and a wrong area. Enter both measurements in matching length units, and the calculator returns the area in the corresponding square units, with each substitution step shown.</p>
 </section>
 
@@ -113,7 +113,7 @@ const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
 <!-- Section 4: Step-by-step example -->
 <section id="sec-steps" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>Step-by-Step Example of Calculating Area From Altitude</h2>
-  <p>One complete calculation, from measurements to verified answer, using <span set:html={rich('[[c=10\\text{ m}]]')} /> and <span set:html={rich('[[h=4.8\\text{ m}]]')} />.</p>
+  <p>One complete calculation, from measurements to verified answer, using <span set:html={rich('[[c=10\\text{ m}]]')} /> and <span set:html={rich('[[h=4.8\\text{ m}]]')} /></p>
   <ol>
     <li><strong>Identify the given measurements.</strong> The hypotenuse is <span set:html={rich('[[c=10\\text{ m}]]')} /> and the perpendicular altitude to it is <span set:html={rich('[[h=4.8\\text{ m}]]')} />. Confirm the altitude meets the hypotenuse at a right angle.</li>
     <li><strong>Write the formula.</strong> <span set:html={rich('[[K=ch/2]]')} />.</li>
@@ -296,13 +296,13 @@ const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
   <p>This calculator takes <span set:html={rich('[[h]]')} /> as an input, so an unknown altitude must be found or measured first. Three standard routes cover the common cases. When the sides are known and the altitude is the missing piece, the <a href="/right-triangle-altitude-from-sides-calculator/">Right Triangle Altitude From Sides Calculator</a> computes it directly.</p>
 
   <h3>Method 1: Using Both Legs and Hypotenuse</h3>
-  <p><span set:html={rich('[[[\\boxed{h=\\frac{ab}{c}}]]]')} />. With <span set:html={rich('[[a=6]]')} />, <span set:html={rich('[[b=8]]')} />, <span set:html={rich('[[c=10]]')} />: <span set:html={rich('[[h=(6\\times8)/10=4.8]]')} />.</p>
+  <p><span set:html={rich('[[[\\boxed{h=\\frac{ab}{c}}]]]')} />. With <span set:html={rich('[[a=6]]')} />, <span set:html={rich('[[b=8]]')} />, <span set:html={rich('[[c=10]]')} />: <span set:html={rich('[[h=(6\\times8)/10=4.8]]')} /></p>
 
   <h3>Method 2: Using Hypotenuse Segments</h3>
-  <p><span set:html={rich('[[[\\boxed{h=\\sqrt{pq}}]]]')} />. With <span set:html={rich('[[p=6.4]]')} /> and <span set:html={rich('[[q=3.6]]')} />: <span set:html={rich('[[h=\\sqrt{23.04}=4.8]]')} />.</p>
+  <p><span set:html={rich('[[[\\boxed{h=\\sqrt{pq}}]]]')} />. With <span set:html={rich('[[p=6.4]]')} /> and <span set:html={rich('[[q=3.6]]')} />: <span set:html={rich('[[h=\\sqrt{23.04}=4.8]]')} /></p>
 
   <h3>Method 3: Using Known Area and Hypotenuse</h3>
-  <p>Rearranging <span set:html={rich('[[K=ch/2]]')} /> gives <span set:html={rich('[[[\\boxed{h=\\frac{2K}{c}}]]]')} />. With <span set:html={rich('[[K=24]]')} /> and <span set:html={rich('[[c=10]]')} />: <span set:html={rich('[[h=(2\\times24)/10=4.8]]')} />.</p>
+  <p>Rearranging <span set:html={rich('[[K=ch/2]]')} /> gives <span set:html={rich('[[[\\boxed{h=\\frac{2K}{c}}]]]')} />. With <span set:html={rich('[[K=24]]')} /> and <span set:html={rich('[[c=10]]')} />: <span set:html={rich('[[h=(2\\times24)/10=4.8]]')} /></p>
 
   <p>These are mathematical rearrangements, not extra calculator modes: the area-from-altitude calculator itself still expects the altitude as an input.</p>
 </section>
@@ -316,10 +316,10 @@ const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
   <p>With <span set:html={rich('[[c=10\\text{ m}]]')} /> and <span set:html={rich('[[h=4.8\\text{ m}]]')} />, <span set:html={rich('[[K=24\\text{ m}^2]]')} />. Read it as 24 square metres of surface.</p>
 
   <h3>Square Centimetres</h3>
-  <p>With <span set:html={rich('[[c=25\\text{ cm}]]')} /> and <span set:html={rich('[[h=6.72\\text{ cm}]]')} />, <span set:html={rich('[[K=84\\text{ cm}^2]]')} />.</p>
+  <p>With <span set:html={rich('[[c=25\\text{ cm}]]')} /> and <span set:html={rich('[[h=6.72\\text{ cm}]]')} />, <span set:html={rich('[[K=84\\text{ cm}^2]]')} /></p>
 
   <h3>Square Millimetres</h3>
-  <p>With <span set:html={rich('[[c=250\\text{ mm}]]')} /> and <span set:html={rich('[[h=120\\text{ mm}]]')} />, <span set:html={rich('[[K=15000\\text{ mm}^2]]')} />.</p>
+  <p>With <span set:html={rich('[[c=250\\text{ mm}]]')} /> and <span set:html={rich('[[h=120\\text{ mm}]]')} />, <span set:html={rich('[[K=15000\\text{ mm}^2]]')} /></p>
 
   <h3>Converting Area Units</h3>
   <p><span set:html={rich('[[1\\text{ m}^2=10000\\text{ cm}^2]]')} /> and <span set:html={rich('[[1\\text{ cm}^2=100\\text{ mm}^2]]')} />. A linear conversion multiplies by 10, 100, or 1000, but an area conversion squares that factor: 100 cm in a metre becomes <span set:html={rich('[[100^2=10000]]')} /> square centimetres in a square metre. Converting the length and converting the area are different operations.</p>
@@ -343,7 +343,7 @@ const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
   <p>Only the altitude from the right-angle vertex <span set:html={rich('[[C]]')} /> pairs with the hypotenuse as its base. A perpendicular from an acute vertex lands on a leg, not the hypotenuse, and does not belong in this formula. Fix: start at the square corner.</p>
 
   <h3>4. Measuring the Altitude at a Non-Perpendicular Angle</h3>
-  <p>Any non-perpendicular segment from <span set:html={rich('[[C]]')} /> to the hypotenuse is longer than the true altitude, so the area comes out too large. Fix: verify the 90-degree meeting, by construction or with <span set:html={rich('[[h=ab/c]]')} />.</p>
+  <p>Any non-perpendicular segment from <span set:html={rich('[[C]]')} /> to the hypotenuse is longer than the true altitude, so the area comes out too large. Fix: verify the 90-degree meeting, by construction or with <span set:html={rich('[[h=ab/c]]')} /></p>
 
   <h3>5. Using a Height That Matches a Different Base</h3>
   <p>The altitude to the hypotenuse pairs only with the hypotenuse. Pairing it with a leg, as in <span set:html={rich('[[(8\\times4.8)/2=19.2]]')} />, mixes two different base-height pairs. Fix: each height belongs to exactly one base.</p>
@@ -388,7 +388,7 @@ const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
   <p>The formula gives ideal geometric area. Real projects need waste, overlaps, and cutting allowances on top. Fix: add a project margin after the geometry is done.</p>
 
   <h3>Wrong Versus Correct: A Concrete Example</h3>
-  <p>Given <span set:html={rich('[[c=10]]')} /> and <span set:html={rich('[[h=4.8]]')} />, the incorrect calculation skips the halving: <span set:html={rich('[[K=10\\times4.8=48]]')} />. That is the area of the corresponding parallelogram. The correct calculation is <span set:html={rich('[[K=(10\\times4.8)/2]]')} />, <span set:html={rich('[[[\\boxed{K=24}]]]')} />. A second illustration: substituting leg 8 for the altitude gives <span set:html={rich('[[(10\\times8)/2=40]]')} />, wrong because 8 is not perpendicular to the hypotenuse. The altitude, and only the altitude, pairs with <span set:html={rich('[[c]]')} />.</p>
+  <p>Given <span set:html={rich('[[c=10]]')} /> and <span set:html={rich('[[h=4.8]]')} />, the incorrect calculation skips the halving: <span set:html={rich('[[K=10\\times4.8=48]]')} />. That is the area of the corresponding parallelogram. The correct calculation is <span set:html={rich('[[K=(10\\times4.8)/2]]')} />, <span set:html={rich('[[[\\boxed{K=24}]]]')} />. A second illustration: substituting leg 8 for the altitude gives <span set:html={rich('[[(10\\times8)/2=40]]')} />, wrong because 8 is not perpendicular to the hypotenuse. The altitude, and only the altitude, pairs with <span set:html={rich('[[c]]')} /></p>
 </section>
 
 <!-- Section 14: Verification -->
@@ -400,7 +400,7 @@ const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
   <p>For a valid right triangle, <span set:html={rich('[[c>0]]')} /> and <span set:html={rich('[[h>0]]')} />. Zero or negative lengths describe no triangle.</p>
 
   <h3>Check 2: The Altitude Limit</h3>
-  <p>Confirm <span set:html={rich('[[h\\leq c/2]]')} />. This single inequality rules out the most common impossible input, such as <span set:html={rich('[[c=10]]')} /> with <span set:html={rich('[[h=6]]')} />.</p>
+  <p>Confirm <span set:html={rich('[[h\\leq c/2]]')} />. This single inequality rules out the most common impossible input, such as <span set:html={rich('[[c=10]]')} /> with <span set:html={rich('[[h=6]]')} /></p>
 
   <h3>Check 3: Confirm the Right Angle</h3>
   <p>The altitude must be perpendicular to the hypotenuse. If the drawing or measurement cannot confirm the 90-degree meeting, the input is not an altitude.</p>

@@ -150,25 +150,25 @@ const imgSrc = (name: string): string => `/images/hub/${name}`;
 
   <h3>Mode 1: Find Leg a Using Sine</h3>
   <p>Choose this mode when you know the hypotenuse and need the side opposite the angle. Confirm the known side is the one across from the right angle, and that your angle is the acute angle the opposite side faces. Sine is the right ratio because it directly relates opposite and hypotenuse. Enter the hypotenuse length and the angle in degrees. The result is the opposite leg.</p>
-  <p><strong>Worked example:</strong> Given <span set:html={rich('[[c = 10\\text{ m}]]')} /> and <span set:html={rich('[[A = 30^\\circ]]')} />, find leg <span set:html={rich('[[a]]')} />.</p>
+  <p><strong>Worked example:</strong> Given <span set:html={rich('[[c = 10\\text{ m}]]')} /> and <span set:html={rich('[[A = 30^\\circ]]')} />, find leg <span set:html={rich('[[a]]')} /></p>
   <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[a = 10\\sin(30^\\circ) = 10(0.5) = 5\\text{ m}]]]')} />
   <p>The answer is reasonable: at 30 degrees the opposite side is exactly half the hypotenuse, a handy check you can do mentally.</p>
 
   <h3>Mode 2: Find Leg b Using Cosine</h3>
   <p>Choose this mode when you know the hypotenuse and need the side adjacent to the angle. Cosine relates adjacent and hypotenuse, so it converts the sloping length into the leg running alongside the angle. The adjacent side is always shorter than the hypotenuse, since the cosine of an acute angle is always less than 1.</p>
-  <p><strong>Worked example:</strong> Given <span set:html={rich('[[c = 12\\text{ ft}]]')} /> and <span set:html={rich('[[A = 60^\\circ]]')} />, find leg <span set:html={rich('[[b]]')} />.</p>
+  <p><strong>Worked example:</strong> Given <span set:html={rich('[[c = 12\\text{ ft}]]')} /> and <span set:html={rich('[[A = 60^\\circ]]')} />, find leg <span set:html={rich('[[b]]')} /></p>
   <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[b = 12\\cos(60^\\circ) = 12(0.5) = 6\\text{ ft}]]]')} />
   <p>At 60 degrees the adjacent side is half the hypotenuse, mirroring the 30-degree sine case. The two acute angles trade roles: the side adjacent to 60° is opposite 30°.</p>
 
   <h3>Mode 3: Find Leg a Using Tangent</h3>
   <p>Choose this mode when you know the adjacent leg and need the opposite leg. This is the classic "distance and angle of elevation" situation: you stand a known horizontal distance away and want the height. Tangent scales the adjacent leg up (or down) into the opposite leg. The angle controls the ratio, so a steeper angle means a taller opposite side for the same base.</p>
-  <p><strong>Worked example:</strong> Given <span set:html={rich('[[b = 8\\text{ m}]]')} /> and <span set:html={rich('[[A = 35^\\circ]]')} />, find leg <span set:html={rich('[[a]]')} />.</p>
+  <p><strong>Worked example:</strong> Given <span set:html={rich('[[b = 8\\text{ m}]]')} /> and <span set:html={rich('[[A = 35^\\circ]]')} />, find leg <span set:html={rich('[[a]]')} /></p>
   <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[a = 8\\tan(35^\\circ) \\approx 8(0.7002) \\approx 5.60\\text{ m}]]]')} />
   <p>Because 35° is below 45°, the opposite side comes out shorter than the adjacent leg, which matches the geometry.</p>
 
   <h3>Mode 4: Find Leg b Using Tangent</h3>
   <p>Choose this mode when you know the opposite leg and need the adjacent leg. It answers questions like "the rise is fixed, how far back must the base extend?" Division by tangent reverses the Mode 3 scaling: instead of stretching the base into the height, you compress the height back into the base.</p>
-  <p><strong>Worked example:</strong> Given <span set:html={rich('[[a = 4\\text{ m}]]')} /> and <span set:html={rich('[[A = 40^\\circ]]')} />, find leg <span set:html={rich('[[b]]')} />.</p>
+  <p><strong>Worked example:</strong> Given <span set:html={rich('[[a = 4\\text{ m}]]')} /> and <span set:html={rich('[[A = 40^\\circ]]')} />, find leg <span set:html={rich('[[b]]')} /></p>
   <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[b = \\frac{4}{\\tan(40^\\circ)} \\approx \\frac{4}{0.8391} \\approx 4.77\\text{ m}]]]')} />
   <p>At 40°, just under 45°, the adjacent side is slightly longer than the opposite side. That small difference is exactly what the division captures.</p>
 

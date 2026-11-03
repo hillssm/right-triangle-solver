@@ -149,7 +149,7 @@ const faqs = [
   <p>This calculator uses the first form because its input field accepts angle <span set:html={rich('[[A]]')} /> and returns angle <span set:html={rich('[[B]]')} />. The two formulas are not different rules; they are the same complementary-angle relationship solved for different unknowns.</p>
 
   <h3>Why 90 Degrees, Not 180 Degrees</h3>
-  <p>A frequent error is subtracting the known angle from 180 degrees. That total covers all three angles of the triangle, so using it alone forgets that the right angle has already been accounted for. With <span set:html={rich('[[A=35^\\circ]]')} />, the wrong computation gives <span set:html={rich('[[180^\\circ-35^\\circ=145^\\circ]]')} />, which cannot be an acute angle of any right triangle. The correct computation, <span set:html={rich('[[90^\\circ-35^\\circ=55^\\circ]]')} />, respects the right angle and can be checked at once: <span set:html={rich('[[35^\\circ+55^\\circ+90^\\circ=180^\\circ]]')} />.</p>
+  <p>A frequent error is subtracting the known angle from 180 degrees. That total covers all three angles of the triangle, so using it alone forgets that the right angle has already been accounted for. With <span set:html={rich('[[A=35^\\circ]]')} />, the wrong computation gives <span set:html={rich('[[180^\\circ-35^\\circ=145^\\circ]]')} />, which cannot be an acute angle of any right triangle. The correct computation, <span set:html={rich('[[90^\\circ-35^\\circ=55^\\circ]]')} />, respects the right angle and can be checked at once: <span set:html={rich('[[35^\\circ+55^\\circ+90^\\circ=180^\\circ]]')} /></p>
 
   <figure class="not-prose my-6">
     <img src={imgSrc('missing-complementary.svg')} alt="Two panels contrasting the 180 deg triangle sum with the 90 deg acute pair" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
@@ -180,7 +180,7 @@ const faqs = [
   <p>These four examples build the core skill before the real-world applications. Each follows the same pattern: write the formula, substitute, subtract.</p>
 
   <h3>Example 1: A Known Angle of 35 Degrees</h3>
-  <p>Given <span set:html={rich('[[A=35^\\circ]]')} />, find angle <span set:html={rich('[[B]]')} />.</p>
+  <p>Given <span set:html={rich('[[A=35^\\circ]]')} />, find angle <span set:html={rich('[[B]]')} /></p>
   <p>Step 1: Write the formula. <span set:html={rich('[[B=90^\\circ-A]]')} /></p>
   <p>Step 2: Substitute the known angle. <span set:html={rich('[[B=90^\\circ-35^\\circ]]')} /></p>
   <p>Step 3: Subtract. <span set:html={rich('[[B=55^\\circ]]')} /></p>
@@ -199,7 +199,7 @@ const faqs = [
   <h3>Example 4: A Known Angle of 68.5 Degrees</h3>
   <p>Given <span set:html={rich('[[A=68.5^\\circ]]')} />:</p>
   <p><span set:html={rich('[[B=90^\\circ-68.5^\\circ=21.5^\\circ]]')} /></p>
-  <p>A relatively large acute angle has a relatively small complement. The decimal input works exactly like a whole-number input: subtract carefully, keeping the .5 aligned, and 90 minus 68.5 gives 21.5. The check still holds: <span set:html={rich('[[68.5^\\circ+21.5^\\circ=90^\\circ]]')} />.</p>
+  <p>A relatively large acute angle has a relatively small complement. The decimal input works exactly like a whole-number input: subtract carefully, keeping the .5 aligned, and 90 minus 68.5 gives 21.5. The check still holds: <span set:html={rich('[[68.5^\\circ+21.5^\\circ=90^\\circ]]')} /></p>
 </section>
 
 <!-- SECTION 6: Twelve practical examples -->
@@ -407,7 +407,7 @@ const faqs = [
   <h3>Wrong Versus Correct</h3>
   <p>Given <span set:html={rich('[[A=35^\\circ]]')} />:</p>
   <p>Incorrect: <span set:html={rich('[[180^\\circ-35^\\circ=145^\\circ]]')} />. This is not the missing acute angle because the right angle has not been accounted for; 145 degrees cannot sit inside a right triangle alongside a 90-degree corner.</p>
-  <p>Correct: <span set:html={rich('[[90^\\circ-35^\\circ=55^\\circ]]')} />.</p>
+  <p>Correct: <span set:html={rich('[[90^\\circ-35^\\circ=55^\\circ]]')} /></p>
   <p>Verify: <span set:html={rich('[[35^\\circ+55^\\circ+90^\\circ=180^\\circ]]')} />. The full angle sum confirms the answer.</p>
 </section>
 

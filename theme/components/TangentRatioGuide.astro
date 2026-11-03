@@ -123,13 +123,13 @@ const faqs = [
   <p>The adjacent side <span set:html={rich('[[b]]')} /> is the leg that touches the reference angle <span set:html={rich('[[A]]')} /> without being the hypotenuse. In practical problems it often plays the role of a horizontal run or ground distance: the base of a ladder from a wall, the horizontal run of a roof, or the shadow length in a sun-angle problem. It is never the hypotenuse, a point worth checking every time, because the hypotenuse is the side facing the right angle. It appears in the denominator of the tangent formula, which is why tangent compares the opposite side against this leg rather than against the longest side.</p>
 
   <h3>What Is the Hypotenuse?</h3>
-  <p>The hypotenuse <span set:html={rich('[[c]]')} /> is the side opposite the right angle: in any diagram it faces the small square marking the <span set:html={rich('[[90^\\circ]]')} /> corner, and it is strictly longer than either leg. In practical problems it often plays the role of a sloping length: a ladder, a roof rafter, a guy wire, or a diagonal brace. It is not needed for the primary tangent calculation, because the tangent formula compares the two legs directly. If it is required for another problem, the Pythagorean theorem calculates it from the two legs: <span set:html={rich('[[c=\\sqrt{a^2+b^2}]]')} />.</p>
+  <p>The hypotenuse <span set:html={rich('[[c]]')} /> is the side opposite the right angle: in any diagram it faces the small square marking the <span set:html={rich('[[90^\\circ]]')} /> corner, and it is strictly longer than either leg. In practical problems it often plays the role of a sloping length: a ladder, a roof rafter, a guy wire, or a diagonal brace. It is not needed for the primary tangent calculation, because the tangent formula compares the two legs directly. If it is required for another problem, the Pythagorean theorem calculates it from the two legs: <span set:html={rich('[[c=\\sqrt{a^2+b^2}]]')} /></p>
 
   <figure class="not-prose my-6">
     <img src={imgSrc('tangent-anatomy.svg')} alt="Right triangle with angle A bottom-left, gold opposite side a, blue adjacent side b, tan(A)=a/b" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
     <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Angle A sits at the bottom-left; tangent uses the gold opposite side a and the blue adjacent side b, not the hypotenuse c.</figcaption>
   </figure>
-  <p>Tangent uses the two legs and does not require the hypotenuse. Keep this side-label convention consistent: <span set:html={rich('[[a]]')} /> opposite angle <span set:html={rich('[[A]]')} />, <span set:html={rich('[[b]]')} /> adjacent to angle <span set:html={rich('[[A]]')} />, and <span set:html={rich('[[c]]')} /> the hypotenuse opposite the right angle at <span set:html={rich('[[B]]')} />.</p>
+  <p>Tangent uses the two legs and does not require the hypotenuse. Keep this side-label convention consistent: <span set:html={rich('[[a]]')} /> opposite angle <span set:html={rich('[[A]]')} />, <span set:html={rich('[[b]]')} /> adjacent to angle <span set:html={rich('[[A]]')} />, and <span set:html={rich('[[c]]')} /> the hypotenuse opposite the right angle at <span set:html={rich('[[B]]')} /></p>
 </section>
 
 <!-- SECTION 3: What is tangent -->
@@ -461,7 +461,7 @@ const faqs = [
   <h3>Wrong Versus Correct: A Worked Comparison</h3>
   <p>Given an opposite side of <span set:html={rich('[[a=3]]')} /> and an adjacent side of <span set:html={rich('[[b=4]]')} />:</p>
   <p><strong>Incorrect:</strong> <span set:html={rich('[[4/3\\approx1.3333]]')} />. This is the cotangent ratio for angle <span set:html={rich('[[A]]')} />, not the tangent ratio. The numerator and denominator are reversed.</p>
-  <p><strong>Correct:</strong> <span set:html={rich('[[\\tan(A)=3/4=0.75]]')} />.</p>
+  <p><strong>Correct:</strong> <span set:html={rich('[[\\tan(A)=3/4=0.75]]')} /></p>
   <p><strong>Verify using sine and cosine:</strong> with <span set:html={rich('[[c=5]]')} />, <span set:html={rich('[[\\sin(A)=3/5=0.6]]')} /> and <span set:html={rich('[[\\cos(A)=4/5=0.8]]')} />. Therefore <span set:html={rich('[[\\sin(A)/\\cos(A)=0.6/0.8=0.75]]')} />, which confirms the tangent calculation.</p>
 </section>
 

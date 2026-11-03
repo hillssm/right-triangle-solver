@@ -345,7 +345,7 @@ const faqs = [
   <h3>How to Find the Hypotenuse</h3>
   <p>Solving for <span set:html={rich('[[c]]')} /> instead gives:</p>
   <p><span set:html={rich('[[[\\boxed{c=\\frac{b}{\\cos(A)}}]]]')} /></p>
-  <p>With <span set:html={rich('[[b=4\\text{ m}]]')} /> and <span set:html={rich('[[A=60^\\circ]]')} />: <span set:html={rich('[[c=4/0.5]]')} />, so <span set:html={rich('[[\\boxed{c=8\\text{ m}}]]')} />.</p>
+  <p>With <span set:html={rich('[[b=4\\text{ m}]]')} /> and <span set:html={rich('[[A=60^\\circ]]')} />: <span set:html={rich('[[c=4/0.5]]')} />, so <span set:html={rich('[[\\boxed{c=8\\text{ m}}]]')} /></p>
   <h3>How to Find an Angle From a Cosine Ratio</h3>
   <p>The cosine ratio and the angle are different quantities. If the ratio is known, inverse cosine, also called arccosine, recovers the angle:</p>
   <p><span set:html={rich('[[[\\boxed{A=\\cos^{-1}\\left(\\frac{b}{c}\\right)}]]]')} /></p>
@@ -376,7 +376,7 @@ const faqs = [
   <h3>Wrong Versus Correct</h3>
   <p>Given <span set:html={rich('[[b=4]]')} /> and <span set:html={rich('[[c=5]]')} />:</p>
   <p>Incorrect: <span set:html={rich('[[5/4=1.25]]')} />. This is the reciprocal of cosine, called secant, and it is not the cosine ratio.</p>
-  <p>Correct: <span set:html={rich('[[\\cos(A)=4/5=0.8]]')} />.</p>
+  <p>Correct: <span set:html={rich('[[\\cos(A)=4/5=0.8]]')} /></p>
   <p>A valid cosine of an acute angle always sits between 0 and 1.</p>
 </section>
 
@@ -385,7 +385,7 @@ const faqs = [
   <h2>How to Check Whether Your Cosine Result Is Valid</h2>
   <p>A valid, non-degenerate right triangle requires <span set:html={rich('[[0 \\lt b \\lt c]]')} />, and therefore <span set:html={rich('[[0 \\lt b/c \\lt 1]]')} />. Both measurements must use compatible units, and the cosine result must be greater than 0 and less than 1. A result of 1 or more usually indicates reversed inputs, incorrect side identification, or incompatible measurements.</p>
   <h3>Method 1: Check the Ratio</h3>
-  <p>Verify <span set:html={rich('[[\\cos(A)=b/c]]')} /> directly. With <span set:html={rich('[[b=4]]')} /> and <span set:html={rich('[[c=5]]')} />: <span set:html={rich('[[4/5=0.8]]')} />.</p>
+  <p>Verify <span set:html={rich('[[\\cos(A)=b/c]]')} /> directly. With <span set:html={rich('[[b=4]]')} /> and <span set:html={rich('[[c=5]]')} />: <span set:html={rich('[[4/5=0.8]]')} /></p>
   <h3>Method 2: Check the Pythagorean Theorem</h3>
   <p>If the opposite side is known or needed, calculate <span set:html={rich('[[a=\\sqrt{c^2-b^2}]]')} />. For <span set:html={rich('[[b=4]]')} /> and <span set:html={rich('[[c=5]]')} />: <span set:html={rich('[[a=\\sqrt{25-16}=3]]')} />, and <span set:html={rich('[[3^2+4^2=5^2]]')} />. This confirms the dimensions of the 3-4-5 right triangle.</p>
   <h3>Method 3: Check Using Inverse Cosine</h3>

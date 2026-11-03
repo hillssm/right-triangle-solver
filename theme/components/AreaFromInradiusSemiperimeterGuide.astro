@@ -67,7 +67,7 @@ const imgSrc = (name: string): string => `/images/area-from-inradius-semiperimet
 <!-- Section 2: Understanding the incircle and inradius -->
 <section id="sec-incircle" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>What Is an Incircle in Geometry?</h2>
-  <p>The notation throughout is: <span set:html={rich('[[A]]')} />, <span set:html={rich('[[B]]')} />, and <span set:html={rich('[[C]]')} /> are the vertices and angles with <span set:html={rich('[[C=90^\\circ]]')} />; <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[b]]')} /> are the two legs; <span set:html={rich('[[c]]')} /> is the hypotenuse opposite <span set:html={rich('[[C]]')} />; <span set:html={rich('[[r]]')} /> is the inradius; <span set:html={rich('[[I]]')} /> is the incenter; <span set:html={rich('[[s]]')} /> is the semiperimeter; <span set:html={rich('[[P]]')} /> is the perimeter; and <span set:html={rich('[[K]]')} /> is the area, used everywhere so it is never confused with angle <span set:html={rich('[[A]]')} />.</p>
+  <p>The notation throughout is: <span set:html={rich('[[A]]')} />, <span set:html={rich('[[B]]')} />, and <span set:html={rich('[[C]]')} /> are the vertices and angles with <span set:html={rich('[[C=90^\\circ]]')} />; <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[b]]')} /> are the two legs; <span set:html={rich('[[c]]')} /> is the hypotenuse opposite <span set:html={rich('[[C]]')} />; <span set:html={rich('[[r]]')} /> is the inradius; <span set:html={rich('[[I]]')} /> is the incenter; <span set:html={rich('[[s]]')} /> is the semiperimeter; <span set:html={rich('[[P]]')} /> is the perimeter; and <span set:html={rich('[[K]]')} /> is the area, used everywhere so it is never confused with angle <span set:html={rich('[[A]]')} /></p>
 
   <h3>Definition of an Incircle</h3>
   <p>An incircle is the largest circle that fits inside a triangle while touching all three of its sides. It lies entirely inside because each side of the triangle is a tangent line to the circle: the circle reaches the side at exactly one point and stays on the inside of it. A circle that merely lies near a side does not count; the incircle must be tangent to each side, touching it at a single point and then turning back into the interior. Every non-degenerate triangle has exactly one such circle, and it has a unique center, because the three lines are not parallel and their geometry pins the circle down completely.</p>
@@ -113,13 +113,13 @@ const imgSrc = (name: string): string => `/images/area-from-inradius-semiperimet
   <p>Start from the standard triangle area rule: <span set:html={rich('[[K=\\frac12\\times\\text{base}\\times\\text{height}]]')} />. Drawing segments from the incenter <span set:html={rich('[[I]]')} /> to the three vertices divides the original triangle into three smaller triangles. Each smaller triangle has a base equal to one side of the original triangle and a perpendicular height equal to the inradius <span set:html={rich('[[r]]')} />, because the radius meets each side at a right angle. This works for every non-degenerate triangle; for this calculator the triangle is right-angled, but the area identity itself is fully general.</p>
 
   <h3>Area of the First Smaller Triangle</h3>
-  <p>The smaller triangle standing on side <span set:html={rich('[[a]]')} /> has base <span set:html={rich('[[a]]')} /> and height <span set:html={rich('[[r]]')} />: <span set:html={rich('[[[\\boxed{K_1=\\frac{ar}{2}}]]]')} />.</p>
+  <p>The smaller triangle standing on side <span set:html={rich('[[a]]')} /> has base <span set:html={rich('[[a]]')} /> and height <span set:html={rich('[[r]]')} />: <span set:html={rich('[[[\\boxed{K_1=\\frac{ar}{2}}]]]')} /></p>
 
   <h3>Area of the Second Smaller Triangle</h3>
-  <p>The smaller triangle standing on side <span set:html={rich('[[b]]')} /> has base <span set:html={rich('[[b]]')} /> and height <span set:html={rich('[[r]]')} />: <span set:html={rich('[[[\\boxed{K_2=\\frac{br}{2}}]]]')} />.</p>
+  <p>The smaller triangle standing on side <span set:html={rich('[[b]]')} /> has base <span set:html={rich('[[b]]')} /> and height <span set:html={rich('[[r]]')} />: <span set:html={rich('[[[\\boxed{K_2=\\frac{br}{2}}]]]')} /></p>
 
   <h3>Area of the Third Smaller Triangle</h3>
-  <p>The smaller triangle standing on side <span set:html={rich('[[c]]')} /> has base <span set:html={rich('[[c]]')} /> and height <span set:html={rich('[[r]]')} />: <span set:html={rich('[[[\\boxed{K_3=\\frac{cr}{2}}]]]')} />.</p>
+  <p>The smaller triangle standing on side <span set:html={rich('[[c]]')} /> has base <span set:html={rich('[[c]]')} /> and height <span set:html={rich('[[r]]')} />: <span set:html={rich('[[[\\boxed{K_3=\\frac{cr}{2}}]]]')} /></p>
 
   <h3>Add the Three Areas</h3>
   <p>The three smaller triangles tile the original without overlap, so <span set:html={rich('[[K=K_1+K_2+K_3]]')} />. Substituting: <span set:html={rich('[[K=\\frac{ar}{2}+\\frac{br}{2}+\\frac{cr}{2}]]')} />. Factor out <span set:html={rich('[[\\frac{r}{2}]]')} />: <span set:html={rich('[[K=\\frac{r(a+b+c)}{2}]]')} />. Recall <span set:html={rich('[[s=\\frac{a+b+c}{2}]]')} />, therefore <span set:html={rich('[[[\\boxed{K=r\\times s}]]]')} />. Every transition is justified: the tiling is exact, the height <span set:html={rich('[[r]]')} /> is common, and the semiperimeter absorbs the division by two.</p>
@@ -187,16 +187,16 @@ const imgSrc = (name: string): string => `/images/area-from-inradius-semiperimet
   <p>Four worked examples build the method from the familiar upward. Each one computes the semiperimeter and the inradius from the three sides, applies <span set:html={rich('[[K=rs]]')} /> with every substitution shown, and verifies with the legs formula.</p>
 
   <h3>Example 1: 3-4-5 Right Triangle</h3>
-  <p>Given <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />. Step 1: semiperimeter, <span set:html={rich('[[s=\\frac{3+4+5}{2}=6]]')} />. Step 2: inradius, <span set:html={rich('[[r=\\frac{3+4-5}{2}=1]]')} />. Step 3: apply the formula, <span set:html={rich('[[K=1\\times6]]')} />, <span set:html={rich('[[[\\boxed{K=6\\text{ square units}}]]]')} />. Verify: <span set:html={rich('[[K=\\frac{3\\times4}{2}=6]]')} />.</p>
+  <p>Given <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />. Step 1: semiperimeter, <span set:html={rich('[[s=\\frac{3+4+5}{2}=6]]')} />. Step 2: inradius, <span set:html={rich('[[r=\\frac{3+4-5}{2}=1]]')} />. Step 3: apply the formula, <span set:html={rich('[[K=1\\times6]]')} />, <span set:html={rich('[[[\\boxed{K=6\\text{ square units}}]]]')} />. Verify: <span set:html={rich('[[K=\\frac{3\\times4}{2}=6]]')} /></p>
 
   <h3>Example 2: 6-8-10 Right Triangle</h3>
-  <p>Given <span set:html={rich('[[a=6]]')} />, <span set:html={rich('[[b=8]]')} />, <span set:html={rich('[[c=10]]')} />. Then <span set:html={rich('[[s=\\frac{6+8+10}{2}=12]]')} />, <span set:html={rich('[[r=\\frac{6+8-10}{2}=2]]')} />, and <span set:html={rich('[[K=2\\times12]]')} />, <span set:html={rich('[[[\\boxed{K=24\\text{ square units}}]]]')} />. Verify: <span set:html={rich('[[K=\\frac{6\\times8}{2}=24]]')} />.</p>
+  <p>Given <span set:html={rich('[[a=6]]')} />, <span set:html={rich('[[b=8]]')} />, <span set:html={rich('[[c=10]]')} />. Then <span set:html={rich('[[s=\\frac{6+8+10}{2}=12]]')} />, <span set:html={rich('[[r=\\frac{6+8-10}{2}=2]]')} />, and <span set:html={rich('[[K=2\\times12]]')} />, <span set:html={rich('[[[\\boxed{K=24\\text{ square units}}]]]')} />. Verify: <span set:html={rich('[[K=\\frac{6\\times8}{2}=24]]')} /></p>
 
   <h3>Example 3: 5-12-13 Right Triangle</h3>
-  <p>Given <span set:html={rich('[[a=5]]')} />, <span set:html={rich('[[b=12]]')} />, <span set:html={rich('[[c=13]]')} />. Then <span set:html={rich('[[s=\\frac{5+12+13}{2}=15]]')} />, <span set:html={rich('[[r=\\frac{5+12-13}{2}=2]]')} />, and <span set:html={rich('[[K=2\\times15]]')} />, <span set:html={rich('[[[\\boxed{K=30\\text{ square units}}]]]')} />. Verify: <span set:html={rich('[[K=\\frac{5\\times12}{2}=30]]')} />.</p>
+  <p>Given <span set:html={rich('[[a=5]]')} />, <span set:html={rich('[[b=12]]')} />, <span set:html={rich('[[c=13]]')} />. Then <span set:html={rich('[[s=\\frac{5+12+13}{2}=15]]')} />, <span set:html={rich('[[r=\\frac{5+12-13}{2}=2]]')} />, and <span set:html={rich('[[K=2\\times15]]')} />, <span set:html={rich('[[[\\boxed{K=30\\text{ square units}}]]]')} />. Verify: <span set:html={rich('[[K=\\frac{5\\times12}{2}=30]]')} /></p>
 
   <h3>Example 4: 8-15-17 Right Triangle</h3>
-  <p>Given <span set:html={rich('[[a=8]]')} />, <span set:html={rich('[[b=15]]')} />, <span set:html={rich('[[c=17]]')} />. Then <span set:html={rich('[[s=\\frac{8+15+17}{2}=20]]')} />, <span set:html={rich('[[r=\\frac{8+15-17}{2}=3]]')} />, and <span set:html={rich('[[K=3\\times20]]')} />, <span set:html={rich('[[[\\boxed{K=60\\text{ square units}}]]]')} />. Verify: <span set:html={rich('[[K=\\frac{8\\times15}{2}=60]]')} />.</p>
+  <p>Given <span set:html={rich('[[a=8]]')} />, <span set:html={rich('[[b=15]]')} />, <span set:html={rich('[[c=17]]')} />. Then <span set:html={rich('[[s=\\frac{8+15+17}{2}=20]]')} />, <span set:html={rich('[[r=\\frac{8+15-17}{2}=3]]')} />, and <span set:html={rich('[[K=3\\times20]]')} />, <span set:html={rich('[[[\\boxed{K=60\\text{ square units}}]]]')} />. Verify: <span set:html={rich('[[K=\\frac{8\\times15}{2}=60]]')} /></p>
 
   <h3>Foundational Examples Comparison</h3>
   <div class="not-prose my-6 overflow-x-auto">
@@ -371,7 +371,7 @@ const imgSrc = (name: string): string => `/images/area-from-inradius-semiperimet
   <p>The inradius is a distance inside the triangle, not one of its three sides. It never belongs in <span set:html={rich('[[a+b+c]]')} />. Fix: keep <span set:html={rich('[[r]]')} /> out of every side-length expression.</p>
 
   <h3>6. Using an Incorrect Right-Triangle Inradius Formula</h3>
-  <p>The right-triangle shortcut is <span set:html={rich('[[r=\\frac{a+b-c}{2}]]')} />, not a variant with the wrong sign or the wrong side halved. A common slip is using <span set:html={rich('[[r=\\frac{a+c-b}{2}]]')} />, which gives a different number unless the triangle is isosceles. Fix: the subtracted side is always the hypotenuse <span set:html={rich('[[c]]')} />.</p>
+  <p>The right-triangle shortcut is <span set:html={rich('[[r=\\frac{a+b-c}{2}]]')} />, not a variant with the wrong sign or the wrong side halved. A common slip is using <span set:html={rich('[[r=\\frac{a+c-b}{2}]]')} />, which gives a different number unless the triangle is isosceles. Fix: the subtracted side is always the hypotenuse <span set:html={rich('[[c]]')} /></p>
 
   <h3>7. Forgetting That c Is the Hypotenuse</h3>
   <p>In the shortcut, <span set:html={rich('[[c]]')} /> means the hypotenuse specifically. Fix: label the longest side <span set:html={rich('[[c]]')} /> before applying the formula.</p>
@@ -401,7 +401,7 @@ const imgSrc = (name: string): string => `/images/area-from-inradius-semiperimet
   <p><span set:html={rich('[[K=rs]]')} /> holds for every non-degenerate triangle; only the shortcut <span set:html={rich('[[r=\\frac{a+b-c}{2}]]')} /> is right-triangle specific. Fix: apply the area formula freely, but use the general inradius derivation for non-right triangles.</p>
 
   <h3>Wrong Versus Correct: A Concrete Example</h3>
-  <p>Use a 6-8-10 triangle. Correct: <span set:html={rich('[[r=2]]')} />, <span set:html={rich('[[s=12]]')} />, <span set:html={rich('[[K=2\\times12=24]]')} />. Incorrectly using the full perimeter: <span set:html={rich('[[K=2\\times24=48]]')} />, which doubles the area. Incorrectly dividing the correct answer by two again: <span set:html={rich('[[K=\\frac{24}{2}=12]]')} />, which halves it. Both errors come from mishandling the one-half that lives inside <span set:html={rich('[[s]]')} />.</p>
+  <p>Use a 6-8-10 triangle. Correct: <span set:html={rich('[[r=2]]')} />, <span set:html={rich('[[s=12]]')} />, <span set:html={rich('[[K=2\\times12=24]]')} />. Incorrectly using the full perimeter: <span set:html={rich('[[K=2\\times24=48]]')} />, which doubles the area. Incorrectly dividing the correct answer by two again: <span set:html={rich('[[K=\\frac{24}{2}=12]]')} />, which halves it. Both errors come from mishandling the one-half that lives inside <span set:html={rich('[[s]]')} /></p>
 </section>
 
 <!-- Section 14: Verification -->

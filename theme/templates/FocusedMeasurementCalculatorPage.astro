@@ -18,6 +18,9 @@ import { AREA_FROM_ANGLE_GUIDE_TRANSLATIONS } from 'src/data/areaFromAngleGuideT
 import AreaFromHypotenuseAltitudeGuide from 'theme/components/AreaFromHypotenuseAltitudeGuide.astro';
 import AreaFromHypotenuseAltitudeGuideLocalized from 'theme/components/AreaFromHypotenuseAltitudeGuideLocalized.astro';
 import { AREA_FROM_HYPOTENUSE_ALTITUDE_GUIDE_TRANSLATIONS } from 'src/data/areaFromHypotenuseAltitudeGuideTranslations';
+import AreaFromInradiusSemiperimeterGuide from 'theme/components/AreaFromInradiusSemiperimeterGuide.astro';
+import AreaFromInradiusSemiperimeterGuideLocalized from 'theme/components/AreaFromInradiusSemiperimeterGuideLocalized.astro';
+import { AREA_FROM_INRADIUS_SEMIPERIMETER_GUIDE_TRANSLATIONS } from 'src/data/areaFromInradiusSemiperimeterGuideTranslations';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 
@@ -303,6 +306,12 @@ const isAreaFromHypotenuseAltitudePage =
   page.slug === 'right-triangle-area-from-hypotenuse-and-altitude-calculator' &&
   (locale === 'en' || AREA_FROM_HYPOTENUSE_ALTITUDE_GUIDE_TRANSLATIONS[locale]);
 
+// Page 20 of 45: full guide replaces the old thin template content on the
+// area-from-inradius-and-semiperimeter page (calculator itself stays untouched).
+const isAreaFromInradiusSemiperimeterPage =
+  page.slug === 'right-triangle-area-from-inradius-and-semiperimeter-calculator' &&
+  (locale === 'en' || AREA_FROM_INRADIUS_SEMIPERIMETER_GUIDE_TRANSLATIONS[locale]);
+
 // Each area page is a standalone ranking page with a self-referencing canonical.
 const canonicalPath = localizePath(locale, page.url);
 const showDiagramFormula = !isAreaChildCalculator;
@@ -577,7 +586,7 @@ const measurementSideEntries = page.diagram
   )}
 
   {/* Full guides replace the old thin content on the area-from-altitude and area-from-angle pages */}
-  {!isAreaFromAltitudePage && !isAreaFromAnglePage && !isAreaFromHypotenuseAltitudePage && (
+  {!isAreaFromAltitudePage && !isAreaFromAnglePage && !isAreaFromHypotenuseAltitudePage && !isAreaFromInradiusSemiperimeterPage && (
   <>
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={howItWorksHeading} />
@@ -805,6 +814,8 @@ const measurementSideEntries = page.diagram
   {isAreaFromAnglePage && locale !== 'en' && AREA_FROM_ANGLE_GUIDE_TRANSLATIONS[locale] ? <AreaFromAngleGuideLocalized guide={AREA_FROM_ANGLE_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
   {isAreaFromHypotenuseAltitudePage && locale === 'en' ? <AreaFromHypotenuseAltitudeGuide /> : null}
   {isAreaFromHypotenuseAltitudePage && locale !== 'en' && AREA_FROM_HYPOTENUSE_ALTITUDE_GUIDE_TRANSLATIONS[locale] ? <AreaFromHypotenuseAltitudeGuideLocalized guide={AREA_FROM_HYPOTENUSE_ALTITUDE_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
+  {isAreaFromInradiusSemiperimeterPage && locale === 'en' ? <AreaFromInradiusSemiperimeterGuide /> : null}
+  {isAreaFromInradiusSemiperimeterPage && locale !== 'en' && AREA_FROM_INRADIUS_SEMIPERIMETER_GUIDE_TRANSLATIONS[locale] ? <AreaFromInradiusSemiperimeterGuideLocalized guide={AREA_FROM_INRADIUS_SEMIPERIMETER_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>
 
 <style>

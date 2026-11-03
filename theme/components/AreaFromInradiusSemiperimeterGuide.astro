@@ -1,0 +1,558 @@
+---
+/**
+ * AreaFromInradiusSemiperimeterGuide.astro - Educational guide for the Right Triangle
+ * Area From Inradius and Semiperimeter Calculator page.
+ * Page 20 of 45. EN-only. 18 content sections, 4 SVG diagrams,
+ * 4 foundational worked examples, 12 practical examples, 12 FAQs.
+ * Covers the incircle and inradius, the semiperimeter, the derivation of
+ * K = rs from three smaller triangles, the right-triangle inradius shortcut
+ * r = (a+b-c)/2 via tangent segments, the relationship with the legs formula
+ * and Heron's formula, and the right-triangle validity condition
+ * s/r >= 3 + 2*sqrt(2).
+ */
+import katex from 'katex';
+import Faq from 'theme/components/Faq.astro';
+
+const rich = (s: string): string => {
+  if (!s || typeof s !== 'string') return '';
+  let out = s;
+  out = out.replace(
+    /\[\[\[(.+?)\]\]\]/g,
+    (_, l) =>
+      `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
+  );
+  out = out.replace(
+    /\[\[(.+?)\]\]/g,
+    (_, l) =>
+      `<span dir="ltr" class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>`
+  );
+  return out;
+};
+
+const imgSrc = (name: string): string => `/images/area-from-inradius-semiperimeter/${name}`;
+---
+
+<!-- Table of Contents -->
+<nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label="Guide contents">
+  <h2 class="font-headline text-2xl font-bold">In This Guide</h2>
+  <ol class="mt-4 grid gap-2 sm:grid-cols-2">
+    <li><a class="hover:text-primary hover:underline" href="#sec-intro">How to Calculate the Area of a Right Triangle Using Inradius and Semiperimeter</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-incircle">What Is an Incircle in Geometry?</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-semiperimeter">What Is the Semiperimeter of a Triangle?</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-formula">Why the Area Equals Inradius Times Semiperimeter</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-inradius">How to Find the Inradius of a Right Triangle</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-howto">How to Use the Inradius and Semiperimeter Area Calculator</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-examples">Step-by-Step Worked Examples</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-applications">Real-Life Applications</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-relationship">How Inradius and Semiperimeter Relate to the Three Sides</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-valid">Checking Whether Your Measurements Are Valid</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-heron">How the Inradius Formula Compares With Heron's Formula</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-legs">Why the Inradius Formula Agrees With the Legs Formula</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-mistakes">Common Mistakes</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-verify">How to Verify Your Area</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-units">Measurement Units and Rounding</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-faq">FAQs</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-related">Explore Related Right Triangle Calculators</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-conclusion">Conclusion</a></li>
+  </ol>
+</nav>
+
+<!-- Section 1: Introduction -->
+<section id="sec-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Calculate the Area of a Right Triangle Using Inradius and Semiperimeter</h2>
+  <p>A right triangle has an inradius of <span set:html={rich('[[r=2]]')} /> and a semiperimeter of <span set:html={rich('[[s=12]]')} />. Apply <span set:html={rich('[[K=r\\times s]]')} />: <span set:html={rich('[[K=2\\times12]]')} />, <span set:html={rich('[[[\\boxed{K=24\\text{ square units}}]]]')} />. The triangle encloses 24 square units of flat area. This is the complete method the calculator automates: two measurements, one multiplication, one answer.</p>
+  <p>The inradius is the radius of the circle that fits snugly inside the triangle, touching all three sides. The semiperimeter is half the distance around the triangle. Together they are enough to determine the area because the circle's radius acts as the height of three smaller triangles whose bases are the triangle's sides. This identity holds for every non-degenerate triangle, not only right triangles; what is special about right triangles is the fast way the inradius itself can be computed from the three sides. It is most useful when the incircle has been measured directly, or when the inradius and semiperimeter are already known from earlier work.</p>
+</section>
+
+<!-- Section 2: Understanding the incircle and inradius -->
+<section id="sec-incircle" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>What Is an Incircle in Geometry?</h2>
+  <p>The notation throughout is: <span set:html={rich('[[A]]')} />, <span set:html={rich('[[B]]')} />, and <span set:html={rich('[[C]]')} /> are the vertices and angles with <span set:html={rich('[[C=90^\\circ]]')} />; <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[b]]')} /> are the two legs; <span set:html={rich('[[c]]')} /> is the hypotenuse opposite <span set:html={rich('[[C]]')} />; <span set:html={rich('[[r]]')} /> is the inradius; <span set:html={rich('[[I]]')} /> is the incenter; <span set:html={rich('[[s]]')} /> is the semiperimeter; <span set:html={rich('[[P]]')} /> is the perimeter; and <span set:html={rich('[[K]]')} /> is the area, used everywhere so it is never confused with angle <span set:html={rich('[[A]]')} />.</p>
+
+  <h3>Definition of an Incircle</h3>
+  <p>An incircle is the largest circle that fits inside a triangle while touching all three of its sides. It lies entirely inside because each side of the triangle is a tangent line to the circle: the circle reaches the side at exactly one point and stays on the inside of it. A circle that merely lies near a side does not count; the incircle must be tangent to each side, touching it at a single point and then turning back into the interior. Every non-degenerate triangle has exactly one such circle, and it has a unique center, because the three lines are not parallel and their geometry pins the circle down completely.</p>
+
+  <h3>What Is an Inradius?</h3>
+  <p>The inradius is the distance from the incenter to any side of the triangle. If <span set:html={rich('[[I]]')} /> is the incenter and <span set:html={rich('[[D]]')} /> is the point where the incircle touches a side, then <span set:html={rich('[[r=ID]]')} />. The circle's radius is the shortest distance from its center to the tangent side, and that shortest distance is the same for all three sides, which is why the circle is tangent to all three rather than merely near them.</p>
+
+  <h3>Why Is the Inradius Perpendicular to Each Side?</h3>
+  <p>A basic property of circles says that at every point where a line touches a circle, the radius drawn to that point meets the line at a right angle. So if <span set:html={rich('[[D]]')} /> is the touchpoint on side <span set:html={rich('[[AB]]')} />, then <span set:html={rich('[[ID\\perp AB]]')} />. The same holds for the other two sides. This perpendicularity is not decorative: it is what lets each radius act as the height of a smaller triangle when the area formula is derived, since a triangle's height must be perpendicular to its base.</p>
+
+  <h3>Understanding the Incenter</h3>
+  <p>The incenter <span set:html={rich('[[I]]')} /> is the point where the triangle's three internal angle bisectors meet. Each angle bisector is the set of points equally distant from the two sides forming that angle, so a point sitting on all three bisectors is equally distant from all three sides, and it must lie inside the triangle. That common distance is exactly the inradius, and the circle centered at <span set:html={rich('[[I]]')} /> with radius <span set:html={rich('[[r]]')} /> touches each side once: the incircle.</p>
+
+  <h3>Is the Inradius the Same as the Circumradius?</h3>
+  <p>No. The inradius <span set:html={rich('[[r]]')} /> is the radius of the circle inside the triangle, while the circumradius <span set:html={rich('[[R]]')} /> is the radius of the circle that passes through all three vertices, the circumcircle. For a right triangle the circumcircle's center is the midpoint of the hypotenuse, so <span set:html={rich('[[[\\boxed{R=\\frac{c}{2}}]]]')} />. The two radii describe completely different circles: one is inscribed in the triangle, the other is drawn around it. Mixing them up is one of the most common errors in this topic, so keep them separate: <span set:html={rich('[[r]]')} /> for inside, <span set:html={rich('[[R]]')} /> for around.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('incircle-anatomy.svg')} alt="Right triangle ABC with incircle, incenter I, inradius r, three tangency points, perpendicular markers, and circumcircle comparison" class="mx-auto h-auto w-full max-w-xl my-8" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Triangle ABC and its incircle: incenter I, inradius r = ID with ID perpendicular to each side, plus the circumcircle for comparison.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 3: Understanding the semiperimeter -->
+<section id="sec-semiperimeter" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>What Is the Semiperimeter of a Triangle?</h2>
+
+  <h3>Definition of Semiperimeter</h3>
+  <p>The semiperimeter is half the total perimeter of a triangle: <span set:html={rich('[[[\\boxed{s=\\frac{a+b+c}{2}}]]]')} />, where <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[b]]')} /> are the legs and <span set:html={rich('[[c]]')} /> is the hypotenuse. It is a length, like any side, and it earns its place in the area formula because it combines all three sides into one number.</p>
+
+  <h3>Difference Between Perimeter and Semiperimeter</h3>
+  <p>The perimeter is the full distance around the triangle, <span set:html={rich('[[P=a+b+c]]')} />, while the semiperimeter is half of that, <span set:html={rich('[[s=\\frac{P}{2}]]')} />. For a 3-4-5 triangle: <span set:html={rich('[[P=3+4+5=12]]')} /> and <span set:html={rich('[[s=\\frac{12}{2}=6]]')} />. The semiperimeter is not the length of the boundary; it is half of it, and feeding the full perimeter into <span set:html={rich('[[K=rs]]')} /> would double the true area.</p>
+
+  <h3>Why Is the Semiperimeter Used in the Area Formula?</h3>
+  <p>Connecting the incenter to the three vertices divides the triangle into three smaller triangles, each with perpendicular height <span set:html={rich('[[r]]')} />. Their bases are <span set:html={rich('[[a]]')} />, <span set:html={rich('[[b]]')} />, and <span set:html={rich('[[c]]')} />, so their combined area is <span set:html={rich('[[K=\\frac12r(a+b+c)]]')} />. Since <span set:html={rich('[[s=\\frac{a+b+c}{2}]]')} />, the half-perimeter is already built into <span set:html={rich('[[s]]')} />, giving <span set:html={rich('[[K=rs]]')} />. The next section derives this fully.</p>
+
+  <h3>Can the Semiperimeter Be Smaller Than One Side?</h3>
+  <p>No. The triangle inequality says that for any triangle, <span set:html={rich('[[a+b>c]]')} />, so <span set:html={rich('[[s=\\frac{a+b+c}{2}>c]]')} />. The same argument applies to the other two sides: <span set:html={rich('[[s>a]]')} /> and <span set:html={rich('[[s>b]]')} />. The semiperimeter is always larger than each individual side. This is a quick sanity check on inputs: if a claimed semiperimeter is smaller than any side, the numbers cannot describe a real triangle.</p>
+</section>
+
+<!-- Section 4: Deriving the main area formula -->
+<section id="sec-formula" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Why Does the Area of a Triangle Equal Inradius Times Semiperimeter?</h2>
+  <p>Start from the standard triangle area rule: <span set:html={rich('[[K=\\frac12\\times\\text{base}\\times\\text{height}]]')} />. Drawing segments from the incenter <span set:html={rich('[[I]]')} /> to the three vertices divides the original triangle into three smaller triangles. Each smaller triangle has a base equal to one side of the original triangle and a perpendicular height equal to the inradius <span set:html={rich('[[r]]')} />, because the radius meets each side at a right angle. This works for every non-degenerate triangle; for this calculator the triangle is right-angled, but the area identity itself is fully general.</p>
+
+  <h3>Area of the First Smaller Triangle</h3>
+  <p>The smaller triangle standing on side <span set:html={rich('[[a]]')} /> has base <span set:html={rich('[[a]]')} /> and height <span set:html={rich('[[r]]')} />: <span set:html={rich('[[[\\boxed{K_1=\\frac{ar}{2}}]]]')} />.</p>
+
+  <h3>Area of the Second Smaller Triangle</h3>
+  <p>The smaller triangle standing on side <span set:html={rich('[[b]]')} /> has base <span set:html={rich('[[b]]')} /> and height <span set:html={rich('[[r]]')} />: <span set:html={rich('[[[\\boxed{K_2=\\frac{br}{2}}]]]')} />.</p>
+
+  <h3>Area of the Third Smaller Triangle</h3>
+  <p>The smaller triangle standing on side <span set:html={rich('[[c]]')} /> has base <span set:html={rich('[[c]]')} /> and height <span set:html={rich('[[r]]')} />: <span set:html={rich('[[[\\boxed{K_3=\\frac{cr}{2}}]]]')} />.</p>
+
+  <h3>Add the Three Areas</h3>
+  <p>The three smaller triangles tile the original without overlap, so <span set:html={rich('[[K=K_1+K_2+K_3]]')} />. Substituting: <span set:html={rich('[[K=\\frac{ar}{2}+\\frac{br}{2}+\\frac{cr}{2}]]')} />. Factor out <span set:html={rich('[[\\frac{r}{2}]]')} />: <span set:html={rich('[[K=\\frac{r(a+b+c)}{2}]]')} />. Recall <span set:html={rich('[[s=\\frac{a+b+c}{2}]]')} />, therefore <span set:html={rich('[[[\\boxed{K=r\\times s}]]]')} />. Every transition is justified: the tiling is exact, the height <span set:html={rich('[[r]]')} /> is common, and the semiperimeter absorbs the division by two.</p>
+
+  <h3>Why Does This Formula Not Need Another Division by Two?</h3>
+  <p>Because the one-half is already folded into the semiperimeter. The three halves combine into <span set:html={rich('[[\\frac{r(a+b+c)}{2}]]')} />, and <span set:html={rich('[[s]]')} /> is exactly half the perimeter, so dividing by two a second time would quarter the correct expression. Calculate <span set:html={rich('[[r\\times s]]')} /> and stop there; a further halving is a mistake, not a correction.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('incircle-three-triangles.svg')} alt="Incircle dividing triangle ABC into three smaller triangles with height r and bases a, b, c" class="mx-auto h-auto w-full max-w-xl my-8" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Three smaller triangles with common height r and bases a, b, c: their areas ar/2 + br/2 + cr/2 add to rs.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 5: The right-triangle inradius shortcut -->
+<section id="sec-inradius" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Calculate the Inradius Using the Three Side Lengths</h2>
+  <p>When the three sides are known, the inradius of a right triangle follows a shortcut that avoids drawing the incircle at all: <span set:html={rich('[[[\\boxed{r=\\frac{a+b-c}{2}}]]]')} />, where <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[b]]')} /> are the perpendicular legs and <span set:html={rich('[[c]]')} /> is the hypotenuse. This is one of the handiest facts in right-triangle geometry.</p>
+
+  <h3>Deriving the Right Triangle Inradius Formula</h3>
+  <p>The derivation uses the equal tangent-segment theorem: from a common external point, the two tangent segments drawn to a circle have equal lengths. Let the tangent lengths from the three vertices be <span set:html={rich('[[x]]')} /> from vertex <span set:html={rich('[[A]]')} />, <span set:html={rich('[[y]]')} /> from vertex <span set:html={rich('[[B]]')} />, and <span set:html={rich('[[z]]')} /> from vertex <span set:html={rich('[[C]]')} />. At the right angle <span set:html={rich('[[C]]')} />, the incircle's two tangents run along the perpendicular legs and each has length <span set:html={rich('[[r]]')} />, forming a small square with the two radii, so <span set:html={rich('[[z=r]]')} />. The sides are then <span set:html={rich('[[a=y+r]]')} />, <span set:html={rich('[[b=x+r]]')} />, and <span set:html={rich('[[c=x+y]]')} />. Subtract: <span set:html={rich('[[a+b-c=(y+r)+(x+r)-(x+y)]]')} />, so <span set:html={rich('[[a+b-c=2r]]')} />, giving <span set:html={rich('[[[\\boxed{r=\\frac{a+b-c}{2}}]]]')} />. The square at the right angle is why this shortcut belongs to right triangles alone.</p>
+
+  <h3>Example Using a 3-4-5 Triangle</h3>
+  <p>Given <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />: <span set:html={rich('[[r=\\frac{3+4-5}{2}]]')} />, <span set:html={rich('[[[\\boxed{r=1}]]]')} />. The incircle's radius is exactly 1, no construction needed.</p>
+
+  <h3>Example Using a 5-12-13 Triangle</h3>
+  <p>Given <span set:html={rich('[[a=5]]')} />, <span set:html={rich('[[b=12]]')} />, <span set:html={rich('[[c=13]]')} />: <span set:html={rich('[[r=\\frac{5+12-13}{2}]]')} />, <span set:html={rich('[[[\\boxed{r=2}]]]')} />. Again, the inradius drops out of the side lengths directly.</p>
+
+  <h3>Finding the Semiperimeter at the Same Time</h3>
+  <p>With the same three sides, compute <span set:html={rich('[[s=\\frac{a+b+c}{2}]]')} /> alongside <span set:html={rich('[[r]]')} />. For the 5-12-13 triangle: <span set:html={rich('[[s=\\frac{5+12+13}{2}=15]]')} />, and then <span set:html={rich('[[K=rs=2\\times15=30]]')} />. One pass over the three sides supplies both calculator inputs and the area itself.</p>
+
+  <h3>When Should You Use This Shortcut?</h3>
+  <p>Use it whenever the three sides are known but the incircle has not been measured or drawn: textbook exercises, construction dimensions, and survey data usually give side lengths, not an inradius. The shortcut converts them to <span set:html={rich('[[r]]')} /> in one line. When the inradius is the measured quantity instead, enter it directly and skip the conversion.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('inradius-tangent-segments.svg')} alt="3-4-5 triangle showing equal tangent segments and the inradius shortcut r = (a+b-c)/2 = 1" class="mx-auto h-auto w-full max-w-xl my-8" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Tangent segments on a 3-4-5 triangle: equal lengths from each vertex give r = (3 + 4 - 5)/2 = 1.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 6: How to use the calculator -->
+<section id="sec-howto" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Use the Right Triangle Area From Inradius and Semiperimeter Calculator</h2>
+  <p>The calculator needs exactly two inputs. The walkthrough below follows the on-screen order, from known measurements to a verified result.</p>
+  <ol>
+    <li><strong>Identify the inradius r.</strong> The radius of the inscribed circle, the perpendicular distance from the incenter to any side.</li>
+    <li><strong>Identify the semiperimeter s.</strong> Half the total perimeter of the triangle.</li>
+    <li><strong>If the three sides are known, calculate r using <span set:html={rich('[[r=\\frac{a+b-c}{2}]]')} />.</strong> Here <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[b]]')} /> are the legs and <span set:html={rich('[[c]]')} /> is the hypotenuse.</li>
+    <li><strong>Calculate s using <span set:html={rich('[[s=\\frac{a+b+c}{2}]]')} />.</strong></li>
+    <li><strong>Enter the inradius in the first field.</strong></li>
+    <li><strong>Enter the semiperimeter in the second field.</strong></li>
+    <li><strong>Select compatible length units.</strong> Both measurements must use the same unit.</li>
+    <li><strong>Check that both values are positive.</strong> Zero or negative lengths describe no triangle.</li>
+    <li><strong>Click Calculate Area.</strong></li>
+    <li><strong>Review the result.</strong> The area appears in the square units matching the inputs.</li>
+    <li><strong>Confirm that the answer is expressed in square units.</strong> Metres give square metres; centimetres give square centimetres.</li>
+    <li><strong>Review the mathematical solution.</strong> It shows the substitution and the arithmetic.</li>
+    <li><strong>Use Reset when beginning a new calculation.</strong> It clears both fields so the next calculation starts clean.</li>
+  </ol>
+  <p>The calculator does not ask for the three side lengths: the inradius and the semiperimeter already contain everything the formula <span set:html={rich('[[K=rs]]')} /> needs.</p>
+</section>
+
+<!-- Section 7: Four foundational worked examples -->
+<section id="sec-examples" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Step-by-Step Examples of Area Calculation Using Inradius and Semiperimeter</h2>
+  <p>Four worked examples build the method from the familiar upward. Each one computes the semiperimeter and the inradius from the three sides, applies <span set:html={rich('[[K=rs]]')} /> with every substitution shown, and verifies with the legs formula.</p>
+
+  <h3>Example 1: 3-4-5 Right Triangle</h3>
+  <p>Given <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />. Step 1: semiperimeter, <span set:html={rich('[[s=\\frac{3+4+5}{2}=6]]')} />. Step 2: inradius, <span set:html={rich('[[r=\\frac{3+4-5}{2}=1]]')} />. Step 3: apply the formula, <span set:html={rich('[[K=1\\times6]]')} />, <span set:html={rich('[[[\\boxed{K=6\\text{ square units}}]]]')} />. Verify: <span set:html={rich('[[K=\\frac{3\\times4}{2}=6]]')} />.</p>
+
+  <h3>Example 2: 6-8-10 Right Triangle</h3>
+  <p>Given <span set:html={rich('[[a=6]]')} />, <span set:html={rich('[[b=8]]')} />, <span set:html={rich('[[c=10]]')} />. Then <span set:html={rich('[[s=\\frac{6+8+10}{2}=12]]')} />, <span set:html={rich('[[r=\\frac{6+8-10}{2}=2]]')} />, and <span set:html={rich('[[K=2\\times12]]')} />, <span set:html={rich('[[[\\boxed{K=24\\text{ square units}}]]]')} />. Verify: <span set:html={rich('[[K=\\frac{6\\times8}{2}=24]]')} />.</p>
+
+  <h3>Example 3: 5-12-13 Right Triangle</h3>
+  <p>Given <span set:html={rich('[[a=5]]')} />, <span set:html={rich('[[b=12]]')} />, <span set:html={rich('[[c=13]]')} />. Then <span set:html={rich('[[s=\\frac{5+12+13}{2}=15]]')} />, <span set:html={rich('[[r=\\frac{5+12-13}{2}=2]]')} />, and <span set:html={rich('[[K=2\\times15]]')} />, <span set:html={rich('[[[\\boxed{K=30\\text{ square units}}]]]')} />. Verify: <span set:html={rich('[[K=\\frac{5\\times12}{2}=30]]')} />.</p>
+
+  <h3>Example 4: 8-15-17 Right Triangle</h3>
+  <p>Given <span set:html={rich('[[a=8]]')} />, <span set:html={rich('[[b=15]]')} />, <span set:html={rich('[[c=17]]')} />. Then <span set:html={rich('[[s=\\frac{8+15+17}{2}=20]]')} />, <span set:html={rich('[[r=\\frac{8+15-17}{2}=3]]')} />, and <span set:html={rich('[[K=3\\times20]]')} />, <span set:html={rich('[[[\\boxed{K=60\\text{ square units}}]]]')} />. Verify: <span set:html={rich('[[K=\\frac{8\\times15}{2}=60]]')} />.</p>
+
+  <h3>Foundational Examples Comparison</h3>
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full text-sm my-6 border-collapse">
+      <thead>
+        <tr>
+          <th class="border-gray-600 px-4 py-2 text-left">Triangle</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Semiperimeter s</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Inradius r</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Area K = rs</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="border-gray-600 px-4 py-2">3-4-5</td><td class="border-gray-600 px-4 py-2">6</td><td class="border-gray-600 px-4 py-2">1</td><td class="border-gray-600 px-4 py-2">6</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">6-8-10</td><td class="border-gray-600 px-4 py-2">12</td><td class="border-gray-600 px-4 py-2">2</td><td class="border-gray-600 px-4 py-2">24</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">5-12-13</td><td class="border-gray-600 px-4 py-2">15</td><td class="border-gray-600 px-4 py-2">2</td><td class="border-gray-600 px-4 py-2">30</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">8-15-17</td><td class="border-gray-600 px-4 py-2">20</td><td class="border-gray-600 px-4 py-2">3</td><td class="border-gray-600 px-4 py-2">60</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Section 8: Twelve practical examples -->
+<section id="sec-applications" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Real-World Applications of Right Triangle Area Using Inradius and Semiperimeter</h2>
+  <p>Twelve worked situations show the formula at different scales and in different units. Each one names the triangular object, gives the three side measurements, computes the inradius and the semiperimeter, applies the main formula step by step, and states the assumption behind it. Every example is a right-triangular panel, section, profile, or simplified geometric model; where the real object is curved or irregular, the calculation covers the modelled triangle only.</p>
+
+  <h3>Example 1: Triangular Glass Window</h3>
+  <p>A right-triangular glass window has <span set:html={rich('[[a=3\\text{ m}]]')} />, <span set:html={rich('[[b=4\\text{ m}]]')} />, <span set:html={rich('[[c=5\\text{ m}]]')} />. Inradius: <span set:html={rich('[[r=\\frac{3+4-5}{2}=1\\text{ m}]]')} />. Semiperimeter: <span set:html={rich('[[s=\\frac{3+4+5}{2}=6\\text{ m}]]')} />. Area: <span set:html={rich('[[K=1\\times6]]')} />, <span set:html={rich('[[[\\boxed{K=6\\text{ m}^2}]]]')} />. This is the flat glass area before allowing for frame dimensions.</p>
+
+  <h3>Example 2: Steel Support Bracket</h3>
+  <p>A triangular steel support plate has <span set:html={rich('[[a=5\\text{ cm}]]')} />, <span set:html={rich('[[b=12\\text{ cm}]]')} />, <span set:html={rich('[[c=13\\text{ cm}]]')} />. Then <span set:html={rich('[[r=2\\text{ cm}]]')} />, <span set:html={rich('[[s=15\\text{ cm}]]')} />, <span set:html={rich('[[[\\boxed{K=30\\text{ cm}^2}]]]')} />. Area alone does not determine the plate's load-bearing capacity.</p>
+
+  <h3>Example 3: Triangular Ramp Side Profile</h3>
+  <p>A simplified right-triangular ramp profile has <span set:html={rich('[[a=6\\text{ m}]]')} />, <span set:html={rich('[[b=8\\text{ m}]]')} />, <span set:html={rich('[[c=10\\text{ m}]]')} />. Then <span set:html={rich('[[r=2\\text{ m}]]')} />, <span set:html={rich('[[s=12\\text{ m}]]')} />, <span set:html={rich('[[[\\boxed{K=24\\text{ m}^2}]]]')} />. This represents the side profile rather than the sloping walking surface.</p>
+
+  <h3>Example 4: Triangular Roof Support Panel</h3>
+  <p>A right-triangular roof support panel has <span set:html={rich('[[a=8\\text{ ft}]]')} />, <span set:html={rich('[[b=15\\text{ ft}]]')} />, <span set:html={rich('[[c=17\\text{ ft}]]')} />. Then <span set:html={rich('[[r=3\\text{ ft}]]')} />, <span set:html={rich('[[s=20\\text{ ft}]]')} />, <span set:html={rich('[[[\\boxed{K=60\\text{ ft}^2}]]]')} />. The result is the estimated flat triangular panel area.</p>
+
+  <h3>Example 5: Surveyed Garden Section</h3>
+  <p>A right-triangular garden section has <span set:html={rich('[[a=7\\text{ m}]]')} />, <span set:html={rich('[[b=24\\text{ m}]]')} />, <span set:html={rich('[[c=25\\text{ m}]]')} />. Then <span set:html={rich('[[r=3\\text{ m}]]')} />, <span set:html={rich('[[s=28\\text{ m}]]')} />, <span set:html={rich('[[[\\boxed{K=84\\text{ m}^2}]]]')} />. The formula gives the triangular section's area directly from its three boundary measurements.</p>
+
+  <h3>Example 6: Triangular Fabric Sail</h3>
+  <p>A right-triangular fabric panel has <span set:html={rich('[[a=9\\text{ ft}]]')} />, <span set:html={rich('[[b=12\\text{ ft}]]')} />, <span set:html={rich('[[c=15\\text{ ft}]]')} />. Then <span set:html={rich('[[r=3\\text{ ft}]]')} />, <span set:html={rich('[[s=18\\text{ ft}]]')} />, <span set:html={rich('[[[\\boxed{K=54\\text{ ft}^2}]]]')} />. Seams and fabric allowances are excluded from this flat-panel figure.</p>
+
+  <h3>Example 7: Large Triangular Land Section</h3>
+  <p>A surveyed land section modelled as a right triangle has <span set:html={rich('[[a=9\\text{ m}]]')} />, <span set:html={rich('[[b=40\\text{ m}]]')} />, <span set:html={rich('[[c=41\\text{ m}]]')} />. Then <span set:html={rich('[[r=4\\text{ m}]]')} />, <span set:html={rich('[[s=45\\text{ m}]]')} />, <span set:html={rich('[[[\\boxed{K=180\\text{ m}^2}]]]')} />. The simplified right-triangular model assumes straight boundaries on flat ground.</p>
+
+  <h3>Example 8: Plywood Cutting Template</h3>
+  <p>A triangular plywood template has <span set:html={rich('[[a=12\\text{ cm}]]')} />, <span set:html={rich('[[b=16\\text{ cm}]]')} />, <span set:html={rich('[[c=20\\text{ cm}]]')} />. Then <span set:html={rich('[[r=4\\text{ cm}]]')} />, <span set:html={rich('[[s=24\\text{ cm}]]')} />, <span set:html={rich('[[[\\boxed{K=96\\text{ cm}^2}]]]')} />. The area helps estimate material requirements before cutting waste.</p>
+
+  <h3>Example 9: Large Triangular Sign Panel</h3>
+  <p>A right-triangular sign panel has <span set:html={rich('[[a=20\\text{ m}]]')} />, <span set:html={rich('[[b=21\\text{ m}]]')} />, <span set:html={rich('[[c=29\\text{ m}]]')} />. Then <span set:html={rich('[[r=6\\text{ m}]]')} />, <span set:html={rich('[[s=35\\text{ m}]]')} />, <span set:html={rich('[[[\\boxed{K=210\\text{ m}^2}]]]')} />. The result represents the flat triangular surface facing the viewer.</p>
+
+  <h3>Example 10: Triangular Awning Support</h3>
+  <p>A right-triangular awning support section has <span set:html={rich('[[a=15\\text{ ft}]]')} />, <span set:html={rich('[[b=20\\text{ ft}]]')} />, <span set:html={rich('[[c=25\\text{ ft}]]')} />. Then <span set:html={rich('[[r=5\\text{ ft}]]')} />, <span set:html={rich('[[s=30\\text{ ft}]]')} />, <span set:html={rich('[[[\\boxed{K=150\\text{ ft}^2}]]]')} />. This is the calculated area of the modelled triangular section.</p>
+
+  <h3>Example 11: Industrial Support Panel</h3>
+  <p>A right-triangular industrial support panel has <span set:html={rich('[[a=11\\text{ m}]]')} />, <span set:html={rich('[[b=60\\text{ m}]]')} />, <span set:html={rich('[[c=61\\text{ m}]]')} />. Then <span set:html={rich('[[r=5\\text{ m}]]')} />, <span set:html={rich('[[s=66\\text{ m}]]')} />, <span set:html={rich('[[[\\boxed{K=330\\text{ m}^2}]]]')} />. This geometric calculation describes the panel's flat area, not its structural performance.</p>
+
+  <h3>Example 12: Large Triangular Roof End Section</h3>
+  <p>A right-triangular roof-end section has <span set:html={rich('[[a=13\\text{ ft}]]')} />, <span set:html={rich('[[b=84\\text{ ft}]]')} />, <span set:html={rich('[[c=85\\text{ ft}]]')} />. Then <span set:html={rich('[[r=6\\text{ ft}]]')} />, <span set:html={rich('[[s=91\\text{ ft}]]')} />, <span set:html={rich('[[[\\boxed{K=546\\text{ ft}^2}]]]')} />. The calculated area helps estimate flat triangular coverage.</p>
+
+  <h3>Practical Examples Comparison</h3>
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full text-sm my-6 border-collapse">
+      <thead>
+        <tr>
+          <th class="border-gray-600 px-4 py-2 text-left">Application</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Side a</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Side b</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Hypotenuse c</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Inradius r</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Semiperimeter s</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Area</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="border-gray-600 px-4 py-2">Glass window</td><td class="border-gray-600 px-4 py-2">3</td><td class="border-gray-600 px-4 py-2">4</td><td class="border-gray-600 px-4 py-2">5</td><td class="border-gray-600 px-4 py-2">1</td><td class="border-gray-600 px-4 py-2">6</td><td class="border-gray-600 px-4 py-2">6 m²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Steel bracket</td><td class="border-gray-600 px-4 py-2">5</td><td class="border-gray-600 px-4 py-2">12</td><td class="border-gray-600 px-4 py-2">13</td><td class="border-gray-600 px-4 py-2">2</td><td class="border-gray-600 px-4 py-2">15</td><td class="border-gray-600 px-4 py-2">30 cm²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Ramp profile</td><td class="border-gray-600 px-4 py-2">6</td><td class="border-gray-600 px-4 py-2">8</td><td class="border-gray-600 px-4 py-2">10</td><td class="border-gray-600 px-4 py-2">2</td><td class="border-gray-600 px-4 py-2">12</td><td class="border-gray-600 px-4 py-2">24 m²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Roof panel</td><td class="border-gray-600 px-4 py-2">8</td><td class="border-gray-600 px-4 py-2">15</td><td class="border-gray-600 px-4 py-2">17</td><td class="border-gray-600 px-4 py-2">3</td><td class="border-gray-600 px-4 py-2">20</td><td class="border-gray-600 px-4 py-2">60 ft²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Garden section</td><td class="border-gray-600 px-4 py-2">7</td><td class="border-gray-600 px-4 py-2">24</td><td class="border-gray-600 px-4 py-2">25</td><td class="border-gray-600 px-4 py-2">3</td><td class="border-gray-600 px-4 py-2">28</td><td class="border-gray-600 px-4 py-2">84 m²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Fabric sail</td><td class="border-gray-600 px-4 py-2">9</td><td class="border-gray-600 px-4 py-2">12</td><td class="border-gray-600 px-4 py-2">15</td><td class="border-gray-600 px-4 py-2">3</td><td class="border-gray-600 px-4 py-2">18</td><td class="border-gray-600 px-4 py-2">54 ft²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Land section</td><td class="border-gray-600 px-4 py-2">9</td><td class="border-gray-600 px-4 py-2">40</td><td class="border-gray-600 px-4 py-2">41</td><td class="border-gray-600 px-4 py-2">4</td><td class="border-gray-600 px-4 py-2">45</td><td class="border-gray-600 px-4 py-2">180 m²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Plywood template</td><td class="border-gray-600 px-4 py-2">12</td><td class="border-gray-600 px-4 py-2">16</td><td class="border-gray-600 px-4 py-2">20</td><td class="border-gray-600 px-4 py-2">4</td><td class="border-gray-600 px-4 py-2">24</td><td class="border-gray-600 px-4 py-2">96 cm²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Sign panel</td><td class="border-gray-600 px-4 py-2">20</td><td class="border-gray-600 px-4 py-2">21</td><td class="border-gray-600 px-4 py-2">29</td><td class="border-gray-600 px-4 py-2">6</td><td class="border-gray-600 px-4 py-2">35</td><td class="border-gray-600 px-4 py-2">210 m²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Awning support</td><td class="border-gray-600 px-4 py-2">15</td><td class="border-gray-600 px-4 py-2">20</td><td class="border-gray-600 px-4 py-2">25</td><td class="border-gray-600 px-4 py-2">5</td><td class="border-gray-600 px-4 py-2">30</td><td class="border-gray-600 px-4 py-2">150 ft²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Industrial panel</td><td class="border-gray-600 px-4 py-2">11</td><td class="border-gray-600 px-4 py-2">60</td><td class="border-gray-600 px-4 py-2">61</td><td class="border-gray-600 px-4 py-2">5</td><td class="border-gray-600 px-4 py-2">66</td><td class="border-gray-600 px-4 py-2">330 m²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Roof end section</td><td class="border-gray-600 px-4 py-2">13</td><td class="border-gray-600 px-4 py-2">84</td><td class="border-gray-600 px-4 py-2">85</td><td class="border-gray-600 px-4 py-2">6</td><td class="border-gray-600 px-4 py-2">91</td><td class="border-gray-600 px-4 py-2">546 ft²</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Section 9: Relationship between inradius, semiperimeter, and the three sides -->
+<section id="sec-relationship" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How Are Inradius and Semiperimeter Related to the Three Sides?</h2>
+  <p>In a right triangle the inradius and semiperimeter are not independent of the sides; they are built from them. Starting from <span set:html={rich('[[r=\\frac{a+b-c}{2}]]')} /> and <span set:html={rich('[[s=\\frac{a+b+c}{2}]]')} />, add and subtract the two expressions. Adding gives <span set:html={rich('[[[\\boxed{s+r=a+b}]]]')} />, and subtracting gives <span set:html={rich('[[[\\boxed{s-r=c}]]]')} />. These two identities are specific to right triangles under the given notation, and they turn the two calculator inputs into a surprising amount of information about the triangle itself.</p>
+
+  <h3>Recovering the Hypotenuse</h3>
+  <p>From <span set:html={rich('[[s-r=c]]')} />, the hypotenuse can be recovered when <span set:html={rich('[[r]]')} /> and <span set:html={rich('[[s]]')} /> are known. For <span set:html={rich('[[r=2]]')} /> and <span set:html={rich('[[s=12]]')} />: <span set:html={rich('[[c=12-2]]')} />, <span set:html={rich('[[[\\boxed{c=10}]]]')} />. Two inputs thus reveal the longest side without any further measurement.</p>
+
+  <h3>Recovering the Sum of the Two Legs</h3>
+  <p>From <span set:html={rich('[[a+b=s+r]]')} />, the legs' sum follows directly. For <span set:html={rich('[[r=2]]')} /> and <span set:html={rich('[[s=12]]')} />: <span set:html={rich('[[a+b=14]]')} />. The sum alone cannot identify each leg individually; the individual lengths need one more piece of information.</p>
+
+  <h3>Recovering the Product of the Two Legs</h3>
+  <p>Since <span set:html={rich('[[K=\\frac{ab}{2}]]')} /> and <span set:html={rich('[[K=rs]]')} />, it follows that <span set:html={rich('[[[\\boxed{ab=2rs}]]]')} />. For <span set:html={rich('[[r=2]]')} /> and <span set:html={rich('[[s=12]]')} />: <span set:html={rich('[[ab=48]]')} />. With <span set:html={rich('[[a+b=14]]')} /> and <span set:html={rich('[[ab=48]]')} />, the two legs are 6 and 8: <span set:html={rich('[[6+8=14]]')} /> and <span set:html={rich('[[6\\times8=48]]')} />. The two legs can be interchanged without changing the triangle's area.</p>
+
+  <h3>Recovering Both Leg Lengths</h3>
+  <p>The sum and product make <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[b]]')} /> the two roots of <span set:html={rich('[[t^2-(s+r)t+2rs=0]]')} />, giving <span set:html={rich('[[[\\boxed{a,b=\\frac{(s+r)\\pm\\sqrt{(s+r)^2-8rs}}{2}}]]]')} />. The two signs correspond to the two possible leg assignments. With <span set:html={rich('[[r=2]]')} /> and <span set:html={rich('[[s=12]]')} />: <span set:html={rich('[[a,b=\\frac{14\\pm\\sqrt{196-192}}{2}]]')} />, so <span set:html={rich('[[a,b=\\frac{14\\pm2}{2}]]')} />, legs 6 and 8. This is an advanced mathematical deduction, not an additional calculator feature.</p>
+</section>
+
+<!-- Section 10: Input validation and geometric consistency -->
+<section id="sec-valid" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Check Whether Inradius and Semiperimeter Form a Valid Right Triangle</h2>
+  <p>The calculator multiplies two inputs, but not every positive pair of lengths describes a right triangle. The checks below separate arithmetic from geometry.</p>
+
+  <h3>Basic Input Conditions</h3>
+  <p>The inputs must satisfy <span set:html={rich('[[r>0]]')} /> and <span set:html={rich('[[s>0]]')} />. For a right triangle, <span set:html={rich('[[s>r]]')} /> is also required, because <span set:html={rich('[[c=s-r]]')} /> and the hypotenuse must be positive. These three conditions are necessary but not sufficient.</p>
+
+  <h3>An Advanced Right-Triangle Consistency Check</h3>
+  <p>From <span set:html={rich('[[a+b=s+r]]')} /> and <span set:html={rich('[[ab=2rs]]')} />, the two legs are real exactly when the discriminant <span set:html={rich('[[\\Delta=(s+r)^2-8rs]]')} /> is non-negative. Simplified: <span set:html={rich('[[[\\boxed{\\Delta=s^2-6rs+r^2}]]]')} />. For real leg lengths, <span set:html={rich('[[\\Delta\\geq0]]')} />. Since <span set:html={rich('[[s]]')} /> must exceed <span set:html={rich('[[r]]')} />, the equivalent right-triangle condition is <span set:html={rich('[[[\\boxed{\\frac{s}{r}\\geq3+2\\sqrt2}]]]')} />, or <span set:html={rich('[[[\\boxed{\\frac{r}{s}\\leq3-2\\sqrt2}]]]')} />. Equality occurs for an isosceles right triangle, the tightest possible fit. This is an advanced mathematical compatibility test, clearly separated from the basic checks above.</p>
+
+  <h3>Valid Example</h3>
+  <p>Given <span set:html={rich('[[r=2]]')} /> and <span set:html={rich('[[s=12]]')} />, the ratio is <span set:html={rich('[[\\frac{s}{r}=6]]')} />. Since <span set:html={rich('[[6>3+2\\sqrt2]]')} /> (about 5.83), the values can describe a valid right triangle, and the corresponding sides are 6, 8, and 10.</p>
+
+  <h3>Incompatible Example</h3>
+  <p>Given <span set:html={rich('[[r=2]]')} /> and <span set:html={rich('[[s=10]]')} />, the ratio is <span set:html={rich('[[\\frac{s}{r}=5]]')} />, below the required threshold of about 5.83. This pair cannot describe a right triangle, even though multiplying the inputs produces a numerical result. Calculating <span set:html={rich('[[rs]]')} /> and confirming the measurements describe a right triangle are two different tasks. This guide does not claim the calculator performs this check automatically.</p>
+</section>
+
+<!-- Section 11: Comparing with Heron's formula -->
+<section id="sec-heron" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How Does the Inradius Formula Compare With Heron's Formula?</h2>
+  <p>Heron's formula computes the area from all three sides: <span set:html={rich('[[[\\boxed{K=\\sqrt{s(s-a)(s-b)(s-c)}}]]]')} />. It uses the three side lengths and the semiperimeter, it works for any non-degenerate triangle, and it does not need the inradius as a separate input. Compare it with <span set:html={rich('[[[\\boxed{K=rs}]]]')} />. The two are close relatives: the semiperimeter <span set:html={rich('[[s]]')} /> appears in both, and proving they agree is one of the cleanest ways to see that <span set:html={rich('[[K=rs]]')} /> is correct.</p>
+
+  <h3>When Is the Inradius Formula Easier?</h3>
+  <p><span set:html={rich('[[K=rs]]')} /> is especially convenient when the inradius and semiperimeter are already known: a single multiplication, no square roots, no factoring of side differences. When an incircle has been measured, or when earlier steps already produced <span set:html={rich('[[r]]')} /> and <span set:html={rich('[[s]]')} />, this is the shortest path to the area.</p>
+
+  <h3>When Is Heron's Formula More Useful?</h3>
+  <p>Heron's formula is the better choice when the three side lengths are known but the inradius has not been calculated. It reaches the area directly from <span set:html={rich('[[a]]')} />, <span set:html={rich('[[b]]')} />, and <span set:html={rich('[[c]]')} /> without the detour through <span set:html={rich('[[r]]')} />. Neither formula is universally more accurate; they are exact on consistent inputs, and they disagree only when the inputs are inconsistent.</p>
+
+  <h3>Verify Both Formulas Using a 3-4-5 Triangle</h3>
+  <p>Given <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />, with <span set:html={rich('[[s=6]]')} /> and <span set:html={rich('[[r=1]]')} />. Using the inradius: <span set:html={rich('[[K=1\\times6=6]]')} />. Using Heron's formula: <span set:html={rich('[[K=\\sqrt{6(6-3)(6-4)(6-5)}]]')} />, so <span set:html={rich('[[K=\\sqrt{6\\times3\\times2\\times1}]]')} />, <span set:html={rich('[[[\\boxed{K=6}]]]')} />. The results agree because both formulas measure the same region; they are two expressions of one area, and agreement between them is a strong sign the arithmetic is right.</p>
+</section>
+
+<!-- Section 12: Consistency with the legs formula -->
+<section id="sec-legs" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Why Does the Inradius Formula Produce the Same Area as the Legs Formula?</h2>
+  <p>Two formulas claim the same area: <span set:html={rich('[[K=\\frac{ab}{2}]]')} /> and <span set:html={rich('[[K=rs]]')} />. Writing <span set:html={rich('[[r]]')} /> and <span set:html={rich('[[s]]')} /> in terms of the sides gives <span set:html={rich('[[rs=\\frac{a+b-c}{2}\\times\\frac{a+b+c}{2}]]')} />, so <span set:html={rich('[[rs=\\frac{(a+b-c)(a+b+c)}{4}]]')} />. The numerator is a difference of squares: <span set:html={rich('[[rs=\\frac{(a+b)^2-c^2}{4}]]')} />. Apply the Pythagorean theorem <span set:html={rich('[[c^2=a^2+b^2]]')} />: <span set:html={rich('[[rs=\\frac{a^2+2ab+b^2-a^2-b^2}{4}]]')} />, therefore <span set:html={rich('[[[\\boxed{rs=\\frac{ab}{2}}]]]')} />. The two formulas are identical on every right triangle; they cannot disagree on consistent inputs.</p>
+  <p>Check with a 3-4-5 triangle: <span set:html={rich('[[r=1]]')} />, <span set:html={rich('[[s=6]]')} />, <span set:html={rich('[[rs=6]]')} />, and <span set:html={rich('[[\\frac{ab}{2}=\\frac{3\\times4}{2}=6]]')} />. With a 6-8-10 triangle: <span set:html={rich('[[r=2]]')} />, <span set:html={rich('[[s=12]]')} />, <span set:html={rich('[[rs=24]]')} />, and <span set:html={rich('[[\\frac{ab}{2}=\\frac{6\\times8}{2}=24]]')} />. The familiar legs formula and the inradius formula are the same quantity wearing different clothes.</p>
+</section>
+
+<!-- Section 13: Common mistakes -->
+<section id="sec-mistakes" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Common Mistakes When Calculating Area From Inradius and Semiperimeter</h2>
+  <p>Most wrong answers come from mislabelled inputs rather than bad arithmetic. The fifteen mistakes below cover nearly every one.</p>
+
+  <h3>1. Confusing the Inradius With the Circumradius</h3>
+  <p>The inradius is the circle inside; the circumradius is the circle around. In a 6-8-10 triangle, <span set:html={rich('[[r=2]]')} /> but <span set:html={rich('[[R=\\frac{c}{2}=5]]')} />. Using 5 for <span set:html={rich('[[r]]')} /> gives <span set:html={rich('[[K=5\\times12=60]]')} /> instead of 24. Fix: ask whether the circle sits inside the triangle or passes through its vertices.</p>
+
+  <h3>2. Using the Full Perimeter Instead of the Semiperimeter</h3>
+  <p>The formula needs <span set:html={rich('[[s]]')} />, half the perimeter. With <span set:html={rich('[[r=2]]')} /> and full perimeter 24 instead of <span set:html={rich('[[s=12]]')} />, the result is <span set:html={rich('[[K=2\\times24=48]]')} />, twice the correct 24. Fix: halve the perimeter before multiplying.</p>
+
+  <h3>3. Dividing the Final Answer by Two Again</h3>
+  <p>The halving is already inside <span set:html={rich('[[s]]')} />. Dividing <span set:html={rich('[[2\\times12=24]]')} /> by two again gives 12, half the true area. Fix: calculate <span set:html={rich('[[rs]]')} /> and stop.</p>
+
+  <h3>4. Confusing the Incenter With the Circumcenter</h3>
+  <p>The incenter is where angle bisectors meet; the circumcenter is where perpendicular bisectors meet, and for a right triangle it sits at the hypotenuse midpoint. They are different points. Fix: trace the correct construction for the circle you need.</p>
+
+  <h3>5. Treating the Inradius as a Triangle Side</h3>
+  <p>The inradius is a distance inside the triangle, not one of its three sides. It never belongs in <span set:html={rich('[[a+b+c]]')} />. Fix: keep <span set:html={rich('[[r]]')} /> out of every side-length expression.</p>
+
+  <h3>6. Using an Incorrect Right-Triangle Inradius Formula</h3>
+  <p>The right-triangle shortcut is <span set:html={rich('[[r=\\frac{a+b-c}{2}]]')} />, not a variant with the wrong sign or the wrong side halved. A common slip is using <span set:html={rich('[[r=\\frac{a+c-b}{2}]]')} />, which gives a different number unless the triangle is isosceles. Fix: the subtracted side is always the hypotenuse <span set:html={rich('[[c]]')} />.</p>
+
+  <h3>7. Forgetting That c Is the Hypotenuse</h3>
+  <p>In the shortcut, <span set:html={rich('[[c]]')} /> means the hypotenuse specifically. Fix: label the longest side <span set:html={rich('[[c]]')} /> before applying the formula.</p>
+
+  <h3>8. Using the Wrong Side as the Hypotenuse</h3>
+  <p>Picking a leg for <span set:html={rich('[[c]]')} /> corrupts both <span set:html={rich('[[r]]')} /> and <span set:html={rich('[[s]]')} />. Fix: the hypotenuse is the side opposite the right angle, always the longest.</p>
+
+  <h3>9. Mixing Different Measurement Units</h3>
+  <p>An inradius of 20 cm with a semiperimeter of 1 m gives no meaningful number until conversion. Fix: convert to one unit first, then multiply.</p>
+
+  <h3>10. Entering Zero or Negative Lengths</h3>
+  <p>Zero and negative lengths describe no triangle. Fix: check that every length entered is positive.</p>
+
+  <h3>11. Assuming Every Positive r and s Pair Represents a Right Triangle</h3>
+  <p>As shown earlier, <span set:html={rich('[[r=2]]')} /> with <span set:html={rich('[[s=10]]')} /> yields the number 20 but no right triangle. Fix: run the <span set:html={rich('[[s/r\\geq3+2\\sqrt2]]')} /> check when the geometry matters.</p>
+
+  <h3>12. Reporting Area in Linear Units</h3>
+  <p>An area of 24 m² is not 24 m. Fix: write the squared unit with the number.</p>
+
+  <h3>13. Rounding the Inradius Too Early</h3>
+  <p>Rounding <span set:html={rich('[[r]]')} /> before multiplying shifts the whole area. Fix: keep full precision through the intermediate steps and round only the final answer.</p>
+
+  <h3>14. Confusing Semiperimeter With the Sum of Two Sides</h3>
+  <p>The semiperimeter is half the sum of all three sides, not the sum of two. Fix: add all three sides, then halve.</p>
+
+  <h3>15. Assuming the Formula Only Works for Right Triangles</h3>
+  <p><span set:html={rich('[[K=rs]]')} /> holds for every non-degenerate triangle; only the shortcut <span set:html={rich('[[r=\\frac{a+b-c}{2}]]')} /> is right-triangle specific. Fix: apply the area formula freely, but use the general inradius derivation for non-right triangles.</p>
+
+  <h3>Wrong Versus Correct: A Concrete Example</h3>
+  <p>Use a 6-8-10 triangle. Correct: <span set:html={rich('[[r=2]]')} />, <span set:html={rich('[[s=12]]')} />, <span set:html={rich('[[K=2\\times12=24]]')} />. Incorrectly using the full perimeter: <span set:html={rich('[[K=2\\times24=48]]')} />, which doubles the area. Incorrectly dividing the correct answer by two again: <span set:html={rich('[[K=\\frac{24}{2}=12]]')} />, which halves it. Both errors come from mishandling the one-half that lives inside <span set:html={rich('[[s]]')} />.</p>
+</section>
+
+<!-- Section 14: Verification -->
+<section id="sec-verify" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Check Whether Your Right Triangle Area Is Correct</h2>
+  <p>Several independent checks catch the common errors. The 3-4-5 triangle demonstrates most of them.</p>
+
+  <h3>Method 1: Inradius and Semiperimeter</h3>
+  <p>Recompute <span set:html={rich('[[K=rs]]')} /> with the entered values. For <span set:html={rich('[[r=1]]')} /> and <span set:html={rich('[[s=6]]')} />, <span set:html={rich('[[K=1\\times6=6]]')} />. A second pass catches typos.</p>
+
+  <h3>Method 2: Two Perpendicular Legs</h3>
+  <p>When the legs are known or recovered, <span set:html={rich('[[K=\\frac{ab}{2}]]')} /> must agree. Here <span set:html={rich('[[\\frac{3\\times4}{2}=6]]')} /> matches <span set:html={rich('[[1\\times6=6]]')} />: two methods, one triangle, one answer.</p>
+
+  <h3>Method 3: Pythagorean Theorem</h3>
+  <p>Confirm <span set:html={rich('[[a^2+b^2=c^2]]')} />: <span set:html={rich('[[9+16=25]]')} />. If the sides do not satisfy it, the triangle identification is wrong.</p>
+
+  <h3>Method 4: Right Triangle Inradius</h3>
+  <p>Confirm <span set:html={rich('[[r=\\frac{a+b-c}{2}]]')} />: <span set:html={rich('[[\\frac{3+4-5}{2}=1]]')} />. A mismatch means the entered inradius does not belong to this triangle.</p>
+
+  <h3>Method 5: Semiperimeter</h3>
+  <p>Confirm <span set:html={rich('[[s=\\frac{a+b+c}{2}]]')} />: <span set:html={rich('[[\\frac{3+4+5}{2}=6]]')} />. This catches mix-ups between perimeter and semiperimeter.</p>
+
+  <h3>Method 6: Heron's Formula</h3>
+  <p>Confirm <span set:html={rich('[[K=\\sqrt{s(s-a)(s-b)(s-c)}]]')} />: <span set:html={rich('[[K=\\sqrt{6\\times3\\times2\\times1}=6]]')} />. Agreement between independent formulas is the strongest check available.</p>
+  <p>Explain why agreement between independent formulas is a useful mathematical check: a mistake in one route rarely reproduces itself in another, so two matching answers from different formulas mean both the inputs and the arithmetic are sound.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('three-methods-comparison.svg')} alt="3-4-5 triangle area compared across K = rs, K = ab/2, and Heron's formula" class="mx-auto h-auto w-full max-w-xl my-8" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Three methods, one answer: K = rs, K = ab/2, and Heron's formula all give 6 for the 3-4-5 triangle.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 15: Measurement units and rounding -->
+<section id="sec-units" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding Measurement Units in Inradius and Semiperimeter Calculations</h2>
+  <p>Area is two-dimensional, so its unit is the square of the length unit. In symbols, <span set:html={rich('[[\\text{cm}\\times\\text{cm}=\\text{cm}^2]]')} />. The same holds for metres and square metres, millimetres and square millimetres, feet and square feet, inches and square inches. The unit selectors exist so the result can be labelled correctly.</p>
+
+  <h3>Why Both Inputs Must Use Compatible Units</h3>
+  <p>The inradius and the semiperimeter must be expressed in the same unit before the formula is applied. If <span set:html={rich('[[r=20\\text{ cm}]]')} /> and <span set:html={rich('[[s=1\\text{ m}]]')} />, convert first: <span set:html={rich('[[1\\text{ m}=100\\text{ cm}]]')} />. Then <span set:html={rich('[[K=20\\times100]]')} />, <span set:html={rich('[[[\\boxed{K=2,000\\text{ cm}^2}]]]')} />, or equivalently <span set:html={rich('[[[\\boxed{K=0.2\\text{ m}^2}]]]')} />. Multiplying measurements in different units produces a number with no clean unit, so convert first and calculate second.</p>
+
+  <h3>Why You Should Avoid Early Rounding</h3>
+  <p>Rounded values of <span set:html={rich('[[r]]')} /> or <span set:html={rich('[[s]]')} /> may slightly affect the final area, because the inradius is multiplied directly into it. Keep sufficient precision through the intermediate calculations and round only the final answer. This guide makes no claim about the calculator's internal precision beyond what its interface shows.</p>
+
+  <h3>Exact Measurements Versus Practical Measurements</h3>
+  <p>Exact mathematical dimensions, like the inradius 1 of a 3-4-5 triangle, behave differently from measurements taken with physical instruments. Instrument uncertainty flows into the area, so treat the last digit as only as reliable as the inputs. A tape-measured inradius of 2 cm might really be 1.9 or 2.1, and the area carries that uncertainty with it.</p>
+</section>
+
+<!-- Section 16: FAQs -->
+<section id="sec-faq" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <Faq
+    heading="Frequently Asked Questions"
+    items={[
+      {
+        question: 'What is the formula for area using inradius and semiperimeter?',
+        answer: 'Multiply the inradius r by the semiperimeter s: K = rs. For example, r = 2 and s = 12 give K = 24 square units. The formula holds for every non-degenerate triangle, not only right triangles.'
+      },
+      {
+        question: 'What is an inradius in a right triangle?',
+        answer: 'It is the radius of the circle inscribed in the triangle, the perpendicular distance from the incenter to any side. In a 3-4-5 triangle the inradius is 1; in a 6-8-10 triangle it is 2.'
+      },
+      {
+        question: 'How do you calculate the inradius of a right triangle?',
+        answer: 'From the three sides, use the shortcut r = (a + b - c) / 2, where a and b are the legs and c is the hypotenuse. For a 5-12-13 triangle this gives r = 2.'
+      },
+      {
+        question: 'How do you calculate the semiperimeter?',
+        answer: 'Add the three sides and halve the total: s = (a + b + c) / 2. For a 5-12-13 triangle, s = 15. It is always larger than each individual side.'
+      },
+      {
+        question: 'Why is area equal to inradius multiplied by semiperimeter?',
+        answer: 'Joining the incenter to the three vertices splits the triangle into three smaller triangles of common height r and bases a, b, and c. Their areas ar/2 + br/2 + cr/2 factor to r(a+b+c)/2, and since s = (a+b+c)/2, the total is rs.'
+      },
+      {
+        question: 'Does the formula work for non-right triangles?',
+        answer: 'Yes. K = rs is valid for every non-degenerate triangle. Only the shortcut r = (a+b-c)/2 is right-triangle specific, because it relies on the square formed at the right angle.'
+      },
+      {
+        question: 'What is the difference between inradius and circumradius?',
+        answer: 'The inradius r is the radius of the circle inside the triangle, touching all three sides; the circumradius R is the radius of the circle passing through the three vertices. For a right triangle, R = c/2.'
+      },
+      {
+        question: 'Can I calculate area without knowing all three sides?',
+        answer: 'Yes. If the inradius and semiperimeter are already known, K = rs gives the area directly with one multiplication, no side lengths required.'
+      },
+      {
+        question: 'Is semiperimeter the same as half the perimeter?',
+        answer: 'Yes, exactly: s = P/2 = (a+b+c)/2. The distinction matters because the formula needs the halved value; using the full perimeter doubles the answer.'
+      },
+      {
+        question: 'How is the inradius related to the three sides?',
+        answer: 'In a right triangle, r = (a+b-c)/2, where a and b are the legs and c is the hypotenuse. It also satisfies s + r = a + b and s - r = c, so the sides can be recovered from r and s.'
+      },
+      {
+        question: 'What is the difference between Heron\'s formula and the inradius formula?',
+        answer: 'Heron\'s formula, K = sqrt(s(s-a)(s-b)(s-c)), needs all three sides; the inradius formula, K = rs, needs only r and s. Use Heron when you have sides, and K = rs when r and s are already in hand. Both give the same area on consistent inputs.'
+      },
+      {
+        question: 'How can I verify the calculated area?',
+        answer: 'Check with independent methods: the legs formula K = ab/2, the Pythagorean theorem, the inradius shortcut, the semiperimeter definition, and Heron\'s formula. Agreement across methods means the inputs and arithmetic are sound.'
+      }
+    ]}
+  />
+</section>
+
+<!-- Section 17: Related calculators -->
+<section id="sec-related" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Explore Related Right Triangle Calculators</h2>
+  <p>Different measurements call for different calculators.</p>
+  <ul class="not-prose mt-4 grid gap-x-8 sm:grid-cols-2">
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-area-from-legs-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">01</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Area From Legs Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-area-from-hypotenuse-and-altitude-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">02</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Area From Hypotenuse and Altitude Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-area-from-angle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">03</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Area From Angle Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-area-from-altitude-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">04</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Area From Altitude Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-inradius-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">05</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Inradius Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-semiperimeter-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">06</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Semiperimeter Calculator</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- Conclusion -->
+<section id="sec-conclusion" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Two Measurements Carry the Whole Area</h2>
+  <p>The inradius and the semiperimeter look like modest inputs, but together they encode the triangle's full extent. The derivation through the three smaller triangles shows why the product is exact, the tangent-segment argument shows where the right-triangle shortcut comes from, and the comparisons with the legs formula and Heron's formula show that the result always agrees with the rest of geometry.</p>
+  <p>The working habit is simple: confirm what r and s really are, keep the units consistent, and verify the answer through an independent formula. When those habits hold, K = rs is one of the most dependable area calculations in triangle geometry.</p>
+</section>

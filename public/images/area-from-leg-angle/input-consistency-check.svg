@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<rect width="1200" height="630" fill="#111412"/>
+<text x="60" y="55" fill="#f1c97d" font-size="26" font-family="Georgia,serif" font-weight="bold">Validating the Three Inputs</text>
+<line x1="410" y1="88" x2="410" y2="600" stroke="#2b2f2b" stroke-width="2"/>
+<line x1="790" y1="88" x2="790" y2="600" stroke="#2b2f2b" stroke-width="2"/>
+<text x="220" y="115" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">Valid</text>
+<text x="600" y="115" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">Valid, different triangle</text>
+<text x="980" y="115" fill="#e57373" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">Inconsistent</text>
+<polyline points="344,118 356,130 378,106" fill="none" stroke="#f1c97d" stroke-width="4.5" stroke-linecap="round"/>
+<polyline points="724,138 736,150 758,126" fill="none" stroke="#f1c97d" stroke-width="4.5" stroke-linecap="round"/>
+<line x1="1106" y1="106" x2="1134" y2="134" stroke="#e57373" stroke-width="4.5" stroke-linecap="round"/>
+<line x1="1134" y1="106" x2="1106" y2="134" stroke="#e57373" stroke-width="4.5" stroke-linecap="round"/>
+<line x1="110" y1="305" x2="110" y2="470" stroke="#9a958a" stroke-width="2.5" stroke-dasharray="8,6"/>
+<line x1="110" y1="470" x2="330" y2="470" stroke="#f1c97d" stroke-width="4"/>
+<line x1="110" y1="305" x2="330" y2="470" stroke="#f1c97d" stroke-width="4"/>
+<polyline points="110,442 138,442 138,470" fill="none" stroke="#f5f0e6" stroke-width="2"/>
+<polyline points="110.0,343.0 111.3,343.0 112.5,342.9 113.8,342.8 115.0,342.7 116.3,342.5 117.5,342.3 118.7,342.0 120.0,341.7 121.2,341.3 122.4,340.9 123.5,340.5 124.7,340.0 125.9,339.5 127.0,339.0 128.1,338.4 129.2,337.8 130.3,337.1 131.3,336.4 132.4,335.7 133.4,335.0 134.3,334.2 135.3,333.4 136.2,332.5 137.1,331.6 138.0,330.7 138.8,329.8 139.6,328.8 140.4,327.8" fill="none" stroke="#f1c97d" stroke-width="2.5"/>
+<circle cx="110" cy="305" r="5" fill="#f5f0e6"/>
+<circle cx="330" cy="470" r="5" fill="#f5f0e6"/>
+<circle cx="110" cy="470" r="5" fill="#f5f0e6"/>
+<text x="110" y="272" fill="#f1c97d" font-size="16" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">36.87°</text>
+<text x="220.0" y="505" fill="#f1c97d" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">b = 4</text>
+<text x="240.4" y="360.3" fill="#f1c97d" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">c = 5</text>
+<text x="95" y="392" fill="#9a958a" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="end">a = 3</text>
+<text x="220" y="545" fill="#f5f0e6" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle">b = c cos(A)</text>
+<text x="220" y="572" fill="#f1c97d" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">4 = 5 × 0.8</text>
+<line x1="490" y1="227.4" x2="490" y2="470" stroke="#9a958a" stroke-width="2.5" stroke-dasharray="8,6"/>
+<line x1="490" y1="470" x2="630" y2="470" stroke="#f1c97d" stroke-width="4"/>
+<line x1="490" y1="227.4" x2="630" y2="470" stroke="#f1c97d" stroke-width="4"/>
+<polyline points="490,442 518,442 518,470" fill="none" stroke="#f5f0e6" stroke-width="2"/>
+<polyline points="490.0,265.4 490.7,265.4 491.4,265.4 492.1,265.3 492.8,265.3 493.5,265.2 494.3,265.2 495.0,265.1 495.7,265.0 496.4,264.9 497.1,264.7 497.8,264.6 498.5,264.4 499.1,264.3 499.8,264.1 500.5,263.9 501.2,263.7 501.9,263.5 502.5,263.3 503.2,263.0 503.9,262.8 504.5,262.5 505.2,262.2 505.8,261.9 506.5,261.6 507.1,261.3 507.7,261.0 508.4,260.7 509.0,260.3" fill="none" stroke="#f1c97d" stroke-width="2.5"/>
+<circle cx="490" cy="227.4" r="5" fill="#f5f0e6"/>
+<circle cx="630" cy="470" r="5" fill="#f5f0e6"/>
+<circle cx="490" cy="470" r="5" fill="#f5f0e6"/>
+<text x="490" y="194.4" fill="#f1c97d" font-size="16" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">60°</text>
+<text x="560.0" y="505" fill="#f1c97d" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">b = 5</text>
+<text x="589.4" y="331.7" fill="#f1c97d" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">c = 10</text>
+<text x="600" y="545" fill="#f5f0e6" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle">b = c cos(A)</text>
+<text x="600" y="572" fill="#f1c97d" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">5 = 10 × cos(60°)</text>
+<line x1="850" y1="302" x2="850" y2="470" stroke="#9a958a" stroke-width="2.5" stroke-dasharray="8,6"/>
+<line x1="850" y1="470" x2="1074" y2="470" stroke="#f1c97d" stroke-width="4"/>
+<line x1="850" y1="302" x2="1074" y2="470" stroke="#f1c97d" stroke-width="4"/>
+<polyline points="850,442 878,442 878,470" fill="none" stroke="#f5f0e6" stroke-width="2"/>
+<polyline points="850.0,340.0 850.7,340.0 851.4,340.0 852.1,339.9 852.8,339.9 853.5,339.8 854.3,339.8 855.0,339.7 855.7,339.6 856.4,339.5 857.1,339.3 857.8,339.2 858.5,339.0 859.1,338.9 859.8,338.7 860.5,338.5 861.2,338.3 861.9,338.1 862.6,337.9 863.2,337.6 863.9,337.4 864.5,337.1 865.2,336.8 865.8,336.5 866.5,336.2 867.1,335.9 867.8,335.6 868.4,335.3 869.0,334.9" fill="none" stroke="#e57373" stroke-width="2.5"/>
+<circle cx="850" cy="302" r="5" fill="#f5f0e6"/>
+<circle cx="1074" cy="470" r="5" fill="#f5f0e6"/>
+<circle cx="850" cy="470" r="5" fill="#f5f0e6"/>
+<text x="850" y="269" fill="#e57373" font-size="16" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">60°</text>
+<text x="962.0" y="505" fill="#f1c97d" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">b = 8</text>
+<text x="982.4" y="358.8" fill="#f1c97d" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">c = 10</text>
+<text x="980" y="545" fill="#e57373" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle">b = c cos(A) fails</text>
+<text x="980" y="572" fill="#e57373" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">10 × cos(60°) = 5, not 8</text>
+</svg>

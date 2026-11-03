@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<rect width="1200" height="630" fill="#111412"/>
+<text x="60" y="55" fill="#f1c97d" font-size="26" font-family="Georgia,serif" font-weight="bold">Area From Leg and Angle in Practice</text>
+<line x1="600" y1="88" x2="600" y2="612" stroke="#2b2f2b" stroke-width="2"/>
+<line x1="30" y1="355" x2="1170" y2="355" stroke="#2b2f2b" stroke-width="2"/>
+<text x="307" y="115" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">Glass window</text>
+<line x1="140" y1="153" x2="140" y2="285" stroke="#9a958a" stroke-width="2.5"/>
+<line x1="140" y1="285" x2="316" y2="285" stroke="#f1c97d" stroke-width="4"/>
+<line x1="140" y1="153" x2="316" y2="285" stroke="#f1c97d" stroke-width="4"/>
+<polyline points="140,263 162,263 162,285" fill="none" stroke="#f5f0e6" stroke-width="2"/>
+<polyline points="140.0,183.0 141.0,183.0 142.0,182.9 143.0,182.9 144.0,182.7 144.9,182.6 145.9,182.4 146.9,182.2 147.9,182.0 148.8,181.7 149.8,181.4 150.7,181.0 151.6,180.7 152.5,180.3 153.4,179.8 154.3,179.4 155.2,178.9 156.0,178.4 156.8,177.8 157.7,177.3 158.4,176.7 159.2,176.0 160.0,175.4 160.7,174.7 161.4,174.0 162.1,173.3 162.8,172.5 163.4,171.8 164.0,171.0" fill="none" stroke="#f1c97d" stroke-width="2.5"/>
+<circle cx="140" cy="153" r="5" fill="#f5f0e6"/>
+<circle cx="316" cy="285" r="5" fill="#f5f0e6"/>
+<circle cx="140" cy="285" r="5" fill="#f5f0e6"/>
+<text x="140" y="127" fill="#f1c97d" font-size="15" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">36.87°</text>
+<text x="228.0" y="307" fill="#f1c97d" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">b = 4 m</text>
+<text x="246.0" y="195.0" fill="#f1c97d" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">c = 5 m</text>
+<text x="307" y="338" fill="#f1c97d" font-size="22" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">K = 6 m²</text>
+<text x="892" y="115" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">Roof support</text>
+<line x1="755" y1="220" x2="755" y2="285" stroke="#9a958a" stroke-width="2.5"/>
+<line x1="755" y1="285" x2="911" y2="285" stroke="#f1c97d" stroke-width="4"/>
+<line x1="755" y1="220" x2="911" y2="285" stroke="#f1c97d" stroke-width="4"/>
+<polyline points="755,263 777,263 777,285" fill="none" stroke="#f5f0e6" stroke-width="2"/>
+<polyline points="755.0,246.0 756.1,246.0 757.2,245.9 758.3,245.8 759.3,245.6 760.4,245.4 761.5,245.2 762.5,244.9 763.6,244.5 764.6,244.2 765.6,243.7 766.6,243.3 767.6,242.8 768.5,242.2 769.4,241.6 770.3,241.0 771.2,240.3 772.0,239.6 772.8,238.9 773.6,238.2 774.4,237.4 775.1,236.5 775.7,235.7 776.4,234.8 777.0,233.9 777.6,232.9 778.1,232.0 778.6,231.0 779.0,230.0" fill="none" stroke="#f1c97d" stroke-width="2.5"/>
+<circle cx="755" cy="220" r="5" fill="#f5f0e6"/>
+<circle cx="911" cy="285" r="5" fill="#f5f0e6"/>
+<circle cx="755" cy="285" r="5" fill="#f5f0e6"/>
+<text x="755" y="194" fill="#f1c97d" font-size="15" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">22.62°</text>
+<text x="833.0" y="307" fill="#f1c97d" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">b = 12 ft</text>
+<text x="844.5" y="224.8" fill="#f1c97d" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">c = 13 ft</text>
+<text x="892" y="338" fill="#f1c97d" font-size="22" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">K = 30 ft²</text>
+<text x="307" y="395" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">Ramp profile</text>
+<line x1="165" y1="448" x2="165" y2="556" stroke="#9a958a" stroke-width="2.5"/>
+<line x1="165" y1="556" x2="309" y2="556" stroke="#f1c97d" stroke-width="4"/>
+<line x1="165" y1="448" x2="309" y2="556" stroke="#f1c97d" stroke-width="4"/>
+<polyline points="165,534 187,534 187,556" fill="none" stroke="#f5f0e6" stroke-width="2"/>
+<polyline points="165.0,478.0 166.0,478.0 167.0,477.9 168.0,477.9 169.0,477.7 169.9,477.6 170.9,477.4 171.9,477.2 172.9,477.0 173.8,476.7 174.8,476.4 175.7,476.0 176.6,475.7 177.5,475.3 178.4,474.8 179.3,474.4 180.2,473.9 181.0,473.4 181.8,472.8 182.7,472.3 183.4,471.7 184.2,471.0 185.0,470.4 185.7,469.7 186.4,469.0 187.1,468.3 187.8,467.5 188.4,466.8 189.0,466.0" fill="none" stroke="#f1c97d" stroke-width="2.5"/>
+<circle cx="165" cy="448" r="5" fill="#f5f0e6"/>
+<circle cx="309" cy="556" r="5" fill="#f5f0e6"/>
+<circle cx="165" cy="556" r="5" fill="#f5f0e6"/>
+<text x="165" y="422" fill="#f1c97d" font-size="15" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">36.87°</text>
+<text x="237.0" y="580" fill="#f1c97d" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">b = 8 m</text>
+<text x="255.0" y="478.0" fill="#f1c97d" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">c = 10 m</text>
+<text x="307" y="610" fill="#f1c97d" font-size="22" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">K = 24 m²</text>
+<text x="892" y="395" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">Survey section</text>
+<line x1="755" y1="514" x2="755" y2="556" stroke="#9a958a" stroke-width="2.5"/>
+<line x1="755" y1="556" x2="899" y2="556" stroke="#f1c97d" stroke-width="4"/>
+<line x1="755" y1="514" x2="899" y2="556" stroke="#f1c97d" stroke-width="4"/>
+<polyline points="755,534 777,534 777,556" fill="none" stroke="#f5f0e6" stroke-width="2"/>
+<polyline points="755.0,530.8 755.8,530.8 756.5,530.7 757.3,530.6 758.1,530.5 758.8,530.4 759.6,530.2 760.3,529.9 761.0,529.7 761.8,529.4 762.5,529.1 763.1,528.7 763.8,528.3 764.5,527.9 765.1,527.4 765.7,527.0 766.3,526.5 766.8,525.9 767.4,525.4 767.9,524.8 768.4,524.2 768.8,523.6 769.2,522.9 769.6,522.3 770.0,521.6 770.3,520.9 770.6,520.2 770.9,519.4 771.1,518.7" fill="none" stroke="#f1c97d" stroke-width="2.5"/>
+<circle cx="755" cy="514" r="5" fill="#f5f0e6"/>
+<circle cx="899" cy="556" r="5" fill="#f5f0e6"/>
+<circle cx="755" cy="556" r="5" fill="#f5f0e6"/>
+<text x="755" y="488" fill="#f1c97d" font-size="15" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">16.26°</text>
+<text x="827.0" y="580" fill="#f1c97d" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">b = 24 m</text>
+<text x="835.4" y="506.2" fill="#f1c97d" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">c = 25 m</text>
+<text x="892" y="610" fill="#f1c97d" font-size="22" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">K = 84 m²</text>
+</svg>

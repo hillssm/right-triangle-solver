@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<rect width="1200" height="630" fill="#111412"/>
+<text x="60" y="55" fill="#f1c97d" font-size="26" font-family="Georgia,serif" font-weight="bold">Right Triangle Area in Everyday Objects</text>
+<line x1="600" y1="88" x2="600" y2="570" stroke="#2b2f2b" stroke-width="2"/>
+<line x1="30" y1="352" x2="1170" y2="352" stroke="#2b2f2b" stroke-width="2"/>
+<text x="315" y="115" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">Glass window</text>
+<line x1="215" y1="170" x2="215" y2="290" stroke="#f1c97d" stroke-width="4"/>
+<line x1="215" y1="290" x2="375" y2="290" stroke="#f1c97d" stroke-width="4"/>
+<line x1="215" y1="170" x2="375" y2="290" stroke="#f1c97d" stroke-width="4"/>
+<line x1="215" y1="184" x2="361" y2="290" stroke="#9a958a" stroke-width="2"/>
+<polyline points="215,266 239,266 239,290" fill="none" stroke="#f5f0e6" stroke-width="2.5"/>
+<polyline points="239.0,188.0 238.4,188.8 237.8,189.5 237.1,190.3 236.4,191.0 235.7,191.7 235.0,192.4 234.2,193.0 233.4,193.7 232.7,194.3 231.8,194.8 231.0,195.4 230.2,195.9 229.3,196.4 228.4,196.8 227.5,197.3 226.6,197.7 225.7,198.0 224.8,198.4 223.8,198.7 222.9,199.0 221.9,199.2 220.9,199.4 219.9,199.6 219.0,199.7 218.0,199.9 217.0,199.9 216.0,200.0 215.0,200.0" fill="none" stroke="#f1c97d" stroke-width="2.5"/>
+<circle cx="215" cy="170" r="5" fill="#f1c97d"/>
+<circle cx="215" cy="290" r="5" fill="#f1c97d"/>
+<circle cx="375" cy="290" r="5" fill="#f1c97d"/>
+<text x="215" y="148" fill="#f1c97d" font-size="15" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">53.13°</text>
+<text x="200" y="230" fill="#f1c97d" font-size="17" font-family="Manrope,Arial,sans-serif" text-anchor="end" font-weight="bold">a = 3 m</text>
+<text x="295" y="318" fill="#f1c97d" font-size="17" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">b = 4 m</text>
+<text x="312" y="209" fill="#f1c97d" font-size="17" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">c = 5 m</text>
+<text x="315" y="340" fill="#f1c97d" font-size="21" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">K = 6 m²</text>
+<text x="885" y="115" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">Roof support</text>
+<line x1="780" y1="178" x2="780" y2="290" stroke="#f1c97d" stroke-width="4"/>
+<line x1="780" y1="290" x2="990" y2="290" stroke="#f1c97d" stroke-width="4"/>
+<line x1="780" y1="178" x2="990" y2="290" stroke="#f1c97d" stroke-width="4"/>
+<line x1="885" y1="234" x2="885" y2="290" stroke="#9a958a" stroke-width="2" stroke-dasharray="6,5"/>
+<polyline points="780,266 804,266 804,290" fill="none" stroke="#f5f0e6" stroke-width="2.5"/>
+<polyline points="806.5,192.1 805.9,193.1 805.3,194.1 804.7,195.1 804.0,196.0 803.3,196.9 802.5,197.8 801.7,198.7 800.9,199.5 800.1,200.3 799.2,201.0 798.3,201.8 797.4,202.5 796.4,203.1 795.4,203.7 794.4,204.3 793.4,204.8 792.4,205.3 791.3,205.8 790.2,206.2 789.1,206.6 788.0,206.9 786.9,207.2 785.8,207.4 784.6,207.6 783.5,207.8 782.3,207.9 781.2,208.0 780.0,208.0" fill="none" stroke="#f1c97d" stroke-width="2.5"/>
+<circle cx="780" cy="178" r="5" fill="#f1c97d"/>
+<circle cx="780" cy="290" r="5" fill="#f1c97d"/>
+<circle cx="990" cy="290" r="5" fill="#f1c97d"/>
+<text x="780" y="156" fill="#f1c97d" font-size="15" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">61.93°</text>
+<text x="765" y="234" fill="#f1c97d" font-size="17" font-family="Manrope,Arial,sans-serif" text-anchor="end" font-weight="bold">a = 8 ft</text>
+<text x="885" y="318" fill="#f1c97d" font-size="17" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">b = 15 ft</text>
+<text x="900" y="211" fill="#f1c97d" font-size="17" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">c = 17 ft</text>
+<text x="885" y="340" fill="#f1c97d" font-size="21" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">K = 60 ft²</text>
+<text x="315" y="378" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">Garden section</text>
+<line x1="180" y1="416" x2="180" y2="500" stroke="#f1c97d" stroke-width="4"/>
+<line x1="180" y1="500" x2="468" y2="500" stroke="#f1c97d" stroke-width="4"/>
+<line x1="180" y1="416" x2="468" y2="500" stroke="#f1c97d" stroke-width="4"/>
+<polyline points="180,476 204,476 204,500" fill="none" stroke="#f5f0e6" stroke-width="2.5"/>
+<polyline points="206.9,423.8 206.5,425.1 206.0,426.3 205.5,427.5 205.0,428.6 204.4,429.8 203.7,430.9 203.0,431.9 202.3,433.0 201.5,434.0 200.6,435.0 199.7,435.9 198.8,436.8 197.8,437.6 196.8,438.4 195.8,439.1 194.7,439.8 193.6,440.5 192.4,441.1 191.3,441.6 190.1,442.1 188.9,442.6 187.6,442.9 186.4,443.3 185.1,443.5 183.8,443.7 182.6,443.9 181.3,444.0 180.0,444.0" fill="none" stroke="#f1c97d" stroke-width="2.5"/>
+<circle cx="180" cy="416" r="5" fill="#f1c97d"/>
+<circle cx="180" cy="500" r="5" fill="#f1c97d"/>
+<circle cx="468" cy="500" r="5" fill="#f1c97d"/>
+<circle cx="340" cy="490" r="5" fill="#5a8a5f"/>
+<circle cx="375" cy="482" r="5" fill="#5a8a5f"/>
+<circle cx="415" cy="492" r="5" fill="#5a8a5f"/>
+<text x="180" y="394" fill="#f1c97d" font-size="15" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">73.74°</text>
+<text x="165" y="458" fill="#f1c97d" font-size="17" font-family="Manrope,Arial,sans-serif" text-anchor="end" font-weight="bold">a = 7 m</text>
+<text x="324" y="486" fill="#f1c97d" font-size="17" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">b = 24 m</text>
+<text x="335" y="433" fill="#f1c97d" font-size="17" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">c = 25 m</text>
+<text x="265" y="468" fill="#f1c97d" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">K = 84 m²</text>
+<text x="885" y="378" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">Steel plate</text>
+<line x1="790" y1="420" x2="790" y2="500" stroke="#f1c97d" stroke-width="4"/>
+<line x1="790" y1="500" x2="982" y2="500" stroke="#f1c97d" stroke-width="4"/>
+<line x1="790" y1="420" x2="982" y2="500" stroke="#f1c97d" stroke-width="4"/>
+<polyline points="790,476 814,476 814,500" fill="none" stroke="#f5f0e6" stroke-width="2.5"/>
+<polyline points="815.8,430.8 815.4,431.8 814.9,432.9 814.3,433.9 813.7,434.9 813.0,435.9 812.3,436.9 811.6,437.8 810.9,438.7 810.0,439.5 809.2,440.4 808.3,441.2 807.4,441.9 806.5,442.6 805.5,443.3 804.5,443.9 803.5,444.5 802.5,445.1 801.4,445.6 800.3,446.0 799.2,446.4 798.1,446.8 797.0,447.1 795.8,447.4 794.7,447.6 793.5,447.8 792.3,447.9 791.2,448.0 790.0,448.0" fill="none" stroke="#f1c97d" stroke-width="2.5"/>
+<circle cx="790" cy="420" r="7" fill="#111412" stroke="#9a958a" stroke-width="2"/>
+<circle cx="790" cy="500" r="7" fill="#111412" stroke="#9a958a" stroke-width="2"/>
+<circle cx="982" cy="500" r="7" fill="#111412" stroke="#9a958a" stroke-width="2"/>
+<text x="790" y="398" fill="#f1c97d" font-size="15" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">67.38°</text>
+<text x="775" y="460" fill="#f1c97d" font-size="17" font-family="Manrope,Arial,sans-serif" text-anchor="end" font-weight="bold">a = 5 cm</text>
+<text x="920" y="488" fill="#f1c97d" font-size="17" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">b = 12 cm</text>
+<text x="899" y="436" fill="#f1c97d" font-size="17" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">c = 13 cm</text>
+<text x="845" y="465" fill="#f1c97d" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">K = 30 cm²</text>
+<text x="600" y="600" fill="#9a958a" font-size="21" font-family="Manrope,Arial,sans-serif" text-anchor="middle">Everyday objects with area equal to half the leg product.</text>
+</svg>

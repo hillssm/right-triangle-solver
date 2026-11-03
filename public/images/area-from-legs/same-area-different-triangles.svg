@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<rect width="1200" height="630" fill="#111412"/>
+<text x="60" y="55" fill="#f1c97d" font-size="26" font-family="Georgia,serif" font-weight="bold">Same Area, Different Triangles</text>
+<line x1="600" y1="88" x2="600" y2="540" stroke="#2b2f2b" stroke-width="2"/>
+<polygon points="215,275 215,440 435,440" fill="#f1c97d" fill-opacity="0.1" stroke="none"/>
+<line x1="215" y1="275" x2="215" y2="440" stroke="#f1c97d" stroke-width="5"/>
+<line x1="215" y1="440" x2="435" y2="440" stroke="#86c5be" stroke-width="5"/>
+<line x1="215" y1="275" x2="435" y2="440" stroke="#f5f0e6" stroke-width="4"/>
+<polyline points="215,414 241,414 241,440" fill="none" stroke="#f5f0e6" stroke-width="2.5"/>
+<polyline points="242.2,295.4 241.5,296.3 240.8,297.2 240.0,298.0 239.3,298.8 238.5,299.6 237.6,300.4 236.8,301.1 235.9,301.8 235.0,302.5 234.1,303.1 233.1,303.8 232.2,304.3 231.2,304.9 230.2,305.4 229.2,305.9 228.2,306.4 227.1,306.8 226.1,307.2 225.0,307.5 223.9,307.8 222.8,308.1 221.7,308.3 220.6,308.5 219.5,308.7 218.4,308.8 217.3,308.9 216.1,309.0 215.0,309.0" fill="none" stroke="#f1c97d" stroke-width="2.5"/>
+<circle cx="215" cy="275" r="5" fill="#f1c97d"/>
+<circle cx="215" cy="440" r="5" fill="#f1c97d"/>
+<circle cx="435" cy="440" r="5" fill="#f1c97d"/>
+<text x="325" y="120" fill="#f5f0e6" font-size="22" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">Triangle A</text>
+<text x="190" y="358" fill="#f1c97d" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="end" font-weight="bold">a = 3</text>
+<text x="325" y="472" fill="#86c5be" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">b = 4</text>
+<text x="344" y="335" fill="#f5f0e6" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">c</text>
+<text x="325" y="512" fill="#f5f0e6" font-size="21" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">K = (3 × 4) / 2 = 6</text>
+<polygon points="720,330 720,440 1050,440" fill="#f1c97d" fill-opacity="0.1" stroke="none"/>
+<line x1="720" y1="330" x2="720" y2="440" stroke="#f1c97d" stroke-width="5"/>
+<line x1="720" y1="440" x2="1050" y2="440" stroke="#86c5be" stroke-width="5"/>
+<line x1="720" y1="330" x2="1050" y2="440" stroke="#f5f0e6" stroke-width="4"/>
+<polyline points="720,414 746,414 746,440" fill="none" stroke="#f5f0e6" stroke-width="2.5"/>
+<polyline points="752.3,340.7 751.7,342.2 751.2,343.6 750.5,345.0 749.8,346.3 749.1,347.6 748.3,348.9 747.4,350.1 746.5,351.3 745.5,352.5 744.5,353.6 743.4,354.7 742.3,355.7 741.1,356.7 739.9,357.6 738.6,358.4 737.3,359.2 736.0,360.0 734.7,360.7 733.3,361.3 731.9,361.9 730.4,362.4 729.0,362.8 727.5,363.2 726.0,363.5 724.5,363.7 723.0,363.9 721.5,364.0 720.0,364.0" fill="none" stroke="#f1c97d" stroke-width="2.5"/>
+<circle cx="720" cy="330" r="5" fill="#f1c97d"/>
+<circle cx="720" cy="440" r="5" fill="#f1c97d"/>
+<circle cx="1050" cy="440" r="5" fill="#f1c97d"/>
+<text x="885" y="120" fill="#f5f0e6" font-size="22" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">Triangle B</text>
+<text x="695" y="385" fill="#f1c97d" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="end" font-weight="bold">a = 2</text>
+<text x="885" y="472" fill="#86c5be" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">b = 6</text>
+<text x="897" y="358" fill="#f5f0e6" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">c</text>
+<text x="885" y="512" fill="#f5f0e6" font-size="21" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">K = (2 × 6) / 2 = 6</text>
+<text x="600" y="330" fill="#f1c97d" font-size="60" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">=</text>
+<text x="600" y="372" fill="#9a958a" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="middle">equal areas</text>
+<text x="600" y="600" fill="#9a958a" font-size="21" font-family="Manrope,Arial,sans-serif" text-anchor="middle">Legs 3 and 4 and legs 2 and 6 both enclose an area of 6.</text>
+</svg>

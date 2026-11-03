@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<rect width="1200" height="630" fill="#111412"/>
+<text x="60" y="55" fill="#f1c97d" font-size="26" font-family="Georgia,serif" font-weight="bold">Anatomy of a Right Triangle</text>
+<polygon points="300,140 300,460 780,460" fill="#f1c97d" fill-opacity="0.1" stroke="none"/>
+<line x1="300" y1="140" x2="300" y2="460" stroke="#f1c97d" stroke-width="6"/>
+<line x1="300" y1="460" x2="780" y2="460" stroke="#86c5be" stroke-width="6"/>
+<line x1="300" y1="140" x2="780" y2="460" stroke="#f5f0e6" stroke-width="5"/>
+<polyline points="300,434 326,434 326,460" fill="none" stroke="#f5f0e6" stroke-width="2.5"/>
+<polyline points="345.8,170.5 344.7,172.1 343.5,173.6 342.3,175.1 341.0,176.6 339.7,178.0 338.4,179.4 337.0,180.7 335.5,182.0 334.0,183.2 332.5,184.4 330.9,185.5 329.3,186.6 327.6,187.6 326.0,188.5 324.2,189.4 322.5,190.2 320.7,191.0 318.9,191.6 317.1,192.3 315.2,192.8 313.4,193.3 311.5,193.8 309.6,194.2 307.7,194.5 305.8,194.7 303.9,194.9 301.9,195.0 300.0,195.0" fill="none" stroke="#f1c97d" stroke-width="2.5"/>
+<polyline points="732.0,460.0 732.0,459.0 732.0,458.0 732.1,457.0 732.2,456.0 732.3,455.0 732.4,454.0 732.5,453.0 732.7,452.0 732.9,451.0 733.1,450.0 733.3,449.0 733.5,448.0 733.8,447.1 734.1,446.1 734.4,445.1 734.7,444.2 735.0,443.2 735.4,442.3 735.8,441.4 736.2,440.4 736.6,439.5 737.0,438.6 737.5,437.7 738.0,436.8 738.5,435.9 739.0,435.1 739.5,434.2 740.1,433.4" fill="none" stroke="#f1c97d" stroke-width="2.5"/>
+<circle cx="300" cy="140" r="6" fill="#f1c97d"/>
+<circle cx="300" cy="460" r="6" fill="#f1c97d"/>
+<circle cx="780" cy="460" r="6" fill="#f1c97d"/>
+<text x="348" y="195" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">B</text>
+<text x="345" y="425" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">C</text>
+<text x="715" y="425" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">A</text>
+<text x="262" y="300" fill="#f1c97d" font-size="26" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">a</text>
+<text x="540" y="505" fill="#86c5be" font-size="26" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">b</text>
+<text x="557" y="278" fill="#f5f0e6" font-size="26" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">c</text>
+<line x1="840" y1="250" x2="900" y2="250" stroke="#f1c97d" stroke-width="6"/>
+<text x="912" y="257" fill="#f1c97d" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">leg a (input)</text>
+<line x1="840" y1="295" x2="900" y2="295" stroke="#86c5be" stroke-width="6"/>
+<text x="912" y="302" fill="#86c5be" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">leg b (input)</text>
+<line x1="840" y1="340" x2="900" y2="340" stroke="#f5f0e6" stroke-width="5"/>
+<text x="912" y="347" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">hypotenuse c</text>
+<text x="840" y="415" fill="#f5f0e6" font-size="28" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">K = a × b / 2</text>
+<text x="840" y="445" fill="#9a958a" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="start">area from the two legs</text>
+<text x="840" y="485" fill="#9a958a" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="start">c faces the right angle</text>
+<text x="600" y="600" fill="#9a958a" font-size="21" font-family="Manrope,Arial,sans-serif" text-anchor="middle">Legs a and b are the two measurements the calculator needs.</text>
+</svg>

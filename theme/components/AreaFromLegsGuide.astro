@@ -1,0 +1,536 @@
+---
+/**
+ * AreaFromLegsGuide.astro - Educational guide for the Right Triangle
+ * Area From Legs Calculator page.
+ * Page 22 of 45. EN-only. 16 content sections, 4 SVG diagrams,
+ * 4 foundational worked examples, 12 practical examples, 12 FAQs.
+ * Covers the two perpendicular legs as base and height, the rectangle
+ * derivation of K = ab/2, a coordinate proof, unit conversion and decimal
+ * measurements, the Pythagorean connection, the missing-leg rearrangement,
+ * area scaling, the general K = ab sin(C)/2 formula, and verification methods.
+ */
+import katex from 'katex';
+import Faq from 'theme/components/Faq.astro';
+
+const rich = (s: string): string => {
+  if (!s || typeof s !== 'string') return '';
+  let out = s;
+  out = out.replace(
+    /\[\[\[(.+?)\]\]\]/g,
+    (_, l) =>
+      `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
+  );
+  out = out.replace(
+    /\[\[(.+?)\]\]/g,
+    (_, l) =>
+      `<span dir="ltr" class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>`
+  );
+  return out;
+};
+
+const imgSrc = (name: string): string => `/images/area-from-legs/${name}`;
+---
+
+<!-- Table of Contents -->
+<nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label="Guide contents">
+  <h2 class="font-headline text-2xl font-bold">In This Guide</h2>
+  <ol class="mt-4 grid gap-2 sm:grid-cols-2">
+    <li><a class="hover:text-primary hover:underline" href="#sec-intro">How to Calculate the Area of a Right Triangle Using Its Two Legs</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-anatomy">What Is a Right Triangle?</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-base-height">Why Are the Two Legs the Base and Height?</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-formula">Why Is the Area of a Right Triangle Half the Product of Its Legs?</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-howto">How to Use the Right Triangle Area From Legs Calculator</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-examples">Step-by-Step Examples of Right Triangle Area From Two Legs</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-practical">Real-World Applications of Right Triangle Area From Two Legs</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-pythagoras">How Is the Pythagorean Theorem Related to Right Triangle Area?</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-missing-leg">How to Find a Missing Leg When the Triangle Area Is Known</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-scaling">How Does Changing the Two Legs Affect the Area?</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-general">Why Can&apos;t You Use the Two-Leg Formula for Every Triangle?</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-units">Understanding Units When Calculating Right Triangle Area</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-mistakes">Common Mistakes When Calculating Right Triangle Area From Legs</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-verify">How to Check Whether Your Right Triangle Area Is Correct</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-applications">Right Triangle Area From Two Legs in Practice</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-related">Explore Related Right Triangle Calculators</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-faq">Frequently Asked Questions</a></li>
+    <li><a class="hover:text-primary hover:underline" href="#sec-conclusion">Two Measurements, One Halved Product</a></li>
+  </ol>
+</nav>
+
+<!-- Section 1: Introduction -->
+<section id="sec-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Calculate the Area of a Right Triangle Using Its Two Legs</h2>
+  <p>Take <span set:html={rich('[[a=6]]')} />, <span set:html={rich('[[b=8]]')} />. Apply <span set:html={rich('[[K=\\frac{6\\times8}{2}]]')} />: <span set:html={rich('[[K=\\frac{48}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=24\\text{ square units}}]]]')} />. The result names the total flat surface enclosed by the three sides: twenty-four square units. This is exactly what the Right Triangle Area From Legs Calculator returns for these two inputs.</p>
+  <p>The calculator needs only the two legs, the sides that meet at the right angle. Because those two sides are perpendicular, one serves as the base and the other as the height, so no further measurement is required. The hypotenuse plays no part here. Multiply the legs, halve the product, and the area follows from <span set:html={rich('[[K=\\frac{ab}{2}]]')} />.</p>
+  <p>This is one of the simplest area calculations in geometry, because both perpendicular measurements are already in hand. It appears wherever a corner is square: construction layouts, cut sheets, garden beds, and survey sketches all reduce to two legs and one halved product.</p>
+</section>
+
+<!-- Section 2: Right triangle anatomy -->
+<section id="sec-anatomy" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>What Is a Right Triangle?</h2>
+  <p>Before the formula makes sense, the labels must be exact. Every symbol below appears in the calculator, and each one carries a single, fixed meaning.</p>
+
+  <h3>Definition of a Right Triangle</h3>
+  <p>A right triangle is a three-sided polygon containing exactly one interior angle of 90 degrees. It has three vertices, three sides, and three interior angles that sum to 180 degrees. The right angle is usually marked with a small square at the corner. The two sides forming that corner are the legs; the side opposite is the hypotenuse. Since <span set:html={rich('[[C=90^\\circ]]')} />, it follows that <span set:html={rich('[[[\\boxed{A+B=90^\\circ}]]]')} />: the two acute angles are complementary, so knowing one determines the other.</p>
+
+  <h3>What Are the Two Legs of a Right Triangle?</h3>
+  <p>The legs are the two sides that meet at the right angle. Leg <span set:html={rich('[[a]]')} /> sits opposite angle <span set:html={rich('[[A]]')} />; leg <span set:html={rich('[[b]]')} /> sits opposite angle <span set:html={rich('[[B]]')} />. Their defining property is perpendicularity: <span set:html={rich('[[a\\perp b]]')} />. That single fact is what makes the area calculation so direct, because a perpendicular pair already supplies a base and a height with no extra construction.</p>
+
+  <h3>What Is the Hypotenuse?</h3>
+  <p>The hypotenuse is the side opposite the 90-degree angle. It is always the longest side of the triangle, and it never forms the right angle itself; it stretches across from it. It is not required in the legs-based area formula. It becomes useful when a side is missing, since <span set:html={rich('[[[\\boxed{c=\\sqrt{a^2+b^2}}]]]')} /> recovers it through the Pythagorean theorem, but the area calculator never asks for it.</p>
+
+  <h3>Why Are the Two Legs Perpendicular?</h3>
+  <p>Perpendicular means meeting at exactly 90 degrees. The legs share the right-angle vertex, so the corner between them is square by definition. This matters because area needs a base multiplied by a perpendicular height. In a right triangle that pair is already drawn: no altitude to drop, no extra line to construct. The triangle hands over both measurements directly.</p>
+
+  <h3>Can the Legs Be Swapped?</h3>
+  <p>Yes. Because <span set:html={rich('[[a\\times b=b\\times a]]')} />, it follows that <span set:html={rich('[[\\frac{a\\times b}{2}=\\frac{b\\times a}{2}]]')} />. A concrete check: <span set:html={rich('[[\\frac{3\\times4}{2}=6]]')} /> and <span set:html={rich('[[\\frac{4\\times3}{2}=6]]')} />. Relabeling which leg is called <span set:html={rich('[[a]]')} /> and which is called <span set:html={rich('[[b]]')} /> changes nothing about the triangle or its area. Enter the two measurements in either input; the calculator returns the same result.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('right-triangle-anatomy.svg')} alt="Right triangle ABC: right angle at C, highlighted legs a and b, hypotenuse c, formula K = ab/2" class="mx-auto h-auto w-full max-w-xl my-8" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Triangle ABC: the highlighted legs a and b are the two measurements the calculator needs.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 3: Base and height -->
+<section id="sec-base-height" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Why Are the Two Legs the Base and Height?</h2>
+  <p>The whole method rests on one geometric fact: in a right triangle, the base and the perpendicular height are already drawn as the two legs. Understanding why turns the formula from a memorized rule into something obvious.</p>
+
+  <h3>What Is the Base of a Triangle?</h3>
+  <p>The base is the side selected as the reference for the area calculation. Any side of a triangle can serve as the base. For a right triangle, choosing either leg as the base is natural, because the other leg is already perpendicular to it. The choice is a convenience: pick one leg as the base and the geometry of the right angle does the rest.</p>
+
+  <h3>What Is the Perpendicular Height?</h3>
+  <p>The height is the shortest distance from the base to the opposite vertex, measured at right angles to the base. When the base is leg <span set:html={rich('[[a]]')} />, the opposite vertex is the far end of leg <span set:html={rich('[[b]]')} />, and leg <span set:html={rich('[[b]]')} /> itself is that perpendicular distance. Nothing needs to be drawn or measured beyond the triangle; the height is a side, not a construction.</p>
+
+  <h3>Why Does Perpendicularity Matter?</h3>
+  <p>Multiplying two side lengths produces a base-times-height product only when the sides are perpendicular. A sloping side paired with a base measures a longer diagonal stretch, not the perpendicular height, so the product overshoots the true base-height rectangle. The legs of a right triangle are perpendicular by definition, which is exactly why their product is the correct starting point. This calculator requires the two sides forming the right angle; any other pairing breaks the logic the formula depends on.</p>
+
+  <h3>Can the Hypotenuse Be Used as the Base?</h3>
+  <p>A triangle can use any side as its base, including the hypotenuse, but the height must then be the perpendicular distance from the opposite vertex to that side. That distance is not one of the legs, and this calculator does not measure it. The hypotenuse cannot simply replace a leg in <span set:html={rich('[[K=\\frac{ab}{2}]]')} />; doing so computes a different, incorrect quantity. This calculator is built for the two perpendicular legs only.</p>
+</section>
+
+<!-- Section 4: Deriving the main area formula -->
+<section id="sec-formula" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Why Is the Area of a Right Triangle Half the Product of Its Legs?</h2>
+  <p>Start with the general rule: <span set:html={rich('[[K=\\frac{\\text{base}\\times\\text{height}}{2}]]')} />. For a right triangle, set <span set:html={rich('[[\\text{Base}=a]]')} /> and <span set:html={rich('[[\\text{Height}=b]]')} />. Because the two legs are perpendicular, <span set:html={rich('[[[\\boxed{K=\\frac{a\\times b}{2}}]]]')} />. The rest of this section shows where that halving comes from, so the division by two is understood, not just remembered.</p>
+
+  <h3>Understanding the Rectangle Method</h3>
+  <p>Draw a rectangle with width <span set:html={rich('[[a]]')} /> and height <span set:html={rich('[[b]]')} />. Its area is <span set:html={rich('[[K_{\\text{rectangle}}=a\\times b]]')} />. Now draw a diagonal from one corner to the opposite corner. The diagonal cuts the rectangle into two triangles that are exact copies of each other, each with legs <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[b]]')} /> and a right angle where the rectangle&apos;s corner was. Both triangles have equal area, so each owns half the rectangle: <span set:html={rich('[[[\\boxed{K_{\\text{triangle}}=\\frac{a\\times b}{2}}]]]')} />.</p>
+
+  <h3>Why Do Two Identical Right Triangles Form a Rectangle?</h3>
+  <p>Place two copies of the triangle so their hypotenuses meet. The matching legs line up: <span set:html={rich('[[a]]')} /> against <span set:html={rich('[[a]]')} />, <span set:html={rich('[[b]]')} /> against <span set:html={rich('[[b]]')} />. Because the acute angles of a right triangle are complementary (<span set:html={rich('[[A+B=90^\\circ]]')} />), the angles that join at each corner of the combined shape add up to 90 degrees all around. The result has four right angles and opposite sides equal: a rectangle. Its sides are exactly the two legs, which is why the rectangle&apos;s area is <span set:html={rich('[[a\\times b]]')} /> and each triangle owns half.</p>
+
+  <h3>Why Is Division by Two Necessary?</h3>
+  <p>Take the 6-by-8 rectangle. Its area is <span set:html={rich('[[K=6\\times8=48]]')} />. Each of the two identical right triangles occupies half: <span set:html={rich('[[K=\\frac{48}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=24}]]]')} />. Skipping the division answers a different question: the rectangle&apos;s area, not the triangle&apos;s. The division by two is not a fudge factor; it is the step that trims the enclosing rectangle down to the triangle.</p>
+
+  <h3>Geometric Proof Using Coordinates</h3>
+  <p>For readers comfortable with coordinates, here is the same result from algebra. Place the right-angle vertex at the origin and let the vertices be <span set:html={rich('[[C=(0,0)]]')} />, <span set:html={rich('[[A=(a,0)]]')} />, <span set:html={rich('[[B=(0,b)]]')} />. The triangle is the region bounded by the two coordinate axes and the line joining <span set:html={rich('[[A]]')} /> to <span set:html={rich('[[B]]')} />. The base along the x-axis has length <span set:html={rich('[[a]]')} />, the vertical side has length <span set:html={rich('[[b]]')} />, and the enclosed right triangle fills exactly half of the <span set:html={rich('[[a]]')} />-by-<span set:html={rich('[[b]]')} /> rectangle those axes mark out. So <span set:html={rich('[[[\\boxed{K=\\frac{ab}{2}}]]]')} />, the same formula, reached without any new machinery.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('rectangle-two-triangles.svg')} alt="Rectangle a by b split by a diagonal into two identical right triangles, each area ab/2" class="mx-auto h-auto w-full max-w-xl my-8" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">A rectangle of width a and height b, cut along its diagonal into two identical right triangles.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 5: How to use the calculator -->
+<section id="sec-howto" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Use the Right Triangle Area From Legs Calculator</h2>
+  <p>The calculator needs exactly two inputs, entered in order. The steps below follow the on-screen layout from identifying the measurements to a checked result.</p>
+  <ol>
+    <li><strong>Identify the two sides that meet at the 90-degree angle.</strong> These are the legs; the right-angle marker shows where they join.</li>
+    <li><strong>Confirm that neither selected measurement is the hypotenuse.</strong> The hypotenuse is the longest side, opposite the right angle.</li>
+    <li><strong>Measure the first leg.</strong> Use a tape, ruler, or drawing scale suited to the object.</li>
+    <li><strong>Measure the second leg.</strong> Measure along the side itself, corner to corner.</li>
+    <li><strong>Make sure both measurements use compatible units.</strong> Metres with metres, feet with feet, never mixed.</li>
+    <li><strong>Enter leg a in the first input field.</strong> Either leg may go first; the labels are interchangeable.</li>
+    <li><strong>Enter leg b in the second input field.</strong> This is the other perpendicular side.</li>
+    <li><strong>Select the appropriate measurement units.</strong> Match the unit to what was actually measured.</li>
+    <li><strong>Click Calculate Area.</strong> The result appears with the substitution shown.</li>
+    <li><strong>Review the calculated result.</strong> Read the area and confirm that it looks reasonable.</li>
+    <li><strong>Check the step-by-step mathematical solution.</strong> It shows the formula, the substitution, and the arithmetic.</li>
+    <li><strong>Use the triangle diagram to verify the side labels.</strong> Confirm that a and b sit on the perpendicular sides.</li>
+    <li><strong>Confirm that the result is expressed in square units.</strong> Length units squared, matching the inputs.</li>
+    <li><strong>Click Reset when starting a new calculation.</strong> It clears both fields for a clean start.</li>
+  </ol>
+  <p>The calculator has exactly two inputs, leg <span set:html={rich('[[a]]')} /> and leg <span set:html={rich('[[b]]')} />. There are no other modes and no hidden fields; every area on this page comes from <span set:html={rich('[[K=\\frac{ab}{2}]]')} />.</p>
+</section>
+
+<!-- Section 6: Four foundational worked examples -->
+<section id="sec-examples" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Step-by-Step Examples of Right Triangle Area From Two Legs</h2>
+  <p>Four classic right triangles show the method at increasing sizes. Each example substitutes into the formula, and the hypotenuse appears only as an optional check, never as an input.</p>
+
+  <h3>Example 1: 3-4-5 Right Triangle</h3>
+  <p>Given <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />. Step 1: write the formula, <span set:html={rich('[[K=\\frac{a\\times b}{2}]]')} />. Step 2: substitute, <span set:html={rich('[[K=\\frac{3\\times4}{2}]]')} />. Step 3: multiply, <span set:html={rich('[[K=\\frac{12}{2}]]')} />. Final answer: <span set:html={rich('[[[\\boxed{K=6\\text{ square units}}]]]')} />. Optional check: <span set:html={rich('[[c=\\sqrt{3^2+4^2}=5]]')} />. The hypotenuse confirms the familiar triple but plays no part in the area.</p>
+
+  <h3>Example 2: 6-8-10 Right Triangle</h3>
+  <p>Given <span set:html={rich('[[a=6]]')} />, <span set:html={rich('[[b=8]]')} />. Then <span set:html={rich('[[K=\\frac{6\\times8}{2}]]')} />, <span set:html={rich('[[K=\\frac{48}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=24\\text{ square units}}]]]')} />. Rectangle check: the enclosing 6-by-8 rectangle has area 48, and the triangle owns exactly half of it.</p>
+
+  <h3>Example 3: 5-12-13 Right Triangle</h3>
+  <p>Given <span set:html={rich('[[a=5]]')} />, <span set:html={rich('[[b=12]]')} />. Then <span set:html={rich('[[K=\\frac{5\\times12}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=30\\text{ square units}}]]]')} />. The hypotenuse of 13 never enters the calculation; it would only matter if a side were missing.</p>
+
+  <h3>Example 4: 8-15-17 Right Triangle</h3>
+  <p>Given <span set:html={rich('[[a=8]]')} />, <span set:html={rich('[[b=15]]')} />. Then <span set:html={rich('[[K=\\frac{8\\times15}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=60\\text{ square units}}]]]')} />. Same three steps, larger numbers, identical logic.</p>
+
+  <h3>Foundational Examples Comparison</h3>
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full text-sm my-6 border-collapse">
+      <thead>
+        <tr>
+          <th class="border-gray-600 px-4 py-2 text-left">Triangle</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Leg a</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Leg b</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Hypotenuse (check only)</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Calculated area</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="border-gray-600 px-4 py-2">3-4-5</td><td class="border-gray-600 px-4 py-2">3</td><td class="border-gray-600 px-4 py-2">4</td><td class="border-gray-600 px-4 py-2">5</td><td class="border-gray-600 px-4 py-2">6</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">6-8-10</td><td class="border-gray-600 px-4 py-2">6</td><td class="border-gray-600 px-4 py-2">8</td><td class="border-gray-600 px-4 py-2">10</td><td class="border-gray-600 px-4 py-2">24</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">5-12-13</td><td class="border-gray-600 px-4 py-2">5</td><td class="border-gray-600 px-4 py-2">12</td><td class="border-gray-600 px-4 py-2">13</td><td class="border-gray-600 px-4 py-2">30</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">8-15-17</td><td class="border-gray-600 px-4 py-2">8</td><td class="border-gray-600 px-4 py-2">15</td><td class="border-gray-600 px-4 py-2">17</td><td class="border-gray-600 px-4 py-2">60</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Section 7: Twelve practical examples -->
+<section id="sec-practical" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Real-World Applications of Right Triangle Area From Two Legs</h2>
+  <p>Twelve worked situations carry the formula from the page into the workshop, the site, and the studio. Each one names a right-triangular panel, section, profile, or simplified model, works the two calculator inputs through the formula, and states the assumption behind the numbers. Where the real object is curved or irregular, the calculation covers the modeled triangle only, and the area never stands in for strength, cost, or safety on its own.</p>
+
+  <h3>Example 1: Triangular Glass Window</h3>
+  <p>A triangular glass window has perpendicular dimensions of <span set:html={rich('[[a=3\\text{ m}]]')} />, <span set:html={rich('[[b=4\\text{ m}]]')} />. Substitute: <span set:html={rich('[[K=\\frac{3\\times4}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=6\\text{ m}^2}]]]')} />. The result represents the flat glass surface before frame dimensions are subtracted. Assumption: the pane is a true right triangle; the frame allowance is handled separately.</p>
+
+  <h3>Example 2: Steel Support Bracket</h3>
+  <p>A triangular steel bracket has <span set:html={rich('[[a=5\\text{ cm}]]')} />, <span set:html={rich('[[b=12\\text{ cm}]]')} />. Then <span set:html={rich('[[K=\\frac{5\\times12}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=30\\text{ cm}^2}]]]')} />. The area describes the flat plate and does not determine its load-bearing capacity. Assumption: the bracket blank is cut as a right triangle; bolt holes and bends are excluded.</p>
+
+  <h3>Example 3: Triangular Ramp Side Profile</h3>
+  <p>A simplified ramp side profile has <span set:html={rich('[[a=6\\text{ m}]]')} />, <span set:html={rich('[[b=8\\text{ m}]]')} />. Then <span set:html={rich('[[K=\\frac{6\\times8}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=24\\text{ m}^2}]]]')} />. This is the vertical triangular side profile, not the sloping walking surface. Assumption: the profile is modeled with a square corner at the base.</p>
+
+  <h3>Example 4: Triangular Roof Support</h3>
+  <p>A triangular roof support section has <span set:html={rich('[[a=8\\text{ ft}]]')} />, <span set:html={rich('[[b=15\\text{ ft}]]')} />. Then <span set:html={rich('[[K=\\frac{8\\times15}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=60\\text{ ft}^2}]]]')} />. The area represents the flat triangular section, useful for material estimates. Assumption: the section is modeled as a right triangle; the full roof geometry may differ.</p>
+
+  <h3>Example 5: Right-Triangular Garden Section</h3>
+  <p>A garden contains a right-triangular section with <span set:html={rich('[[a=7\\text{ m}]]')} />, <span set:html={rich('[[b=24\\text{ m}]]')} />. Then <span set:html={rich('[[K=\\frac{7\\times24}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=84\\text{ m}^2}]]]')} />. The result helps estimate the area available for planting or turf. Assumption: the bed boundaries are straight and meet at a right angle.</p>
+
+  <h3>Example 6: Triangular Fabric Sail</h3>
+  <p>A right-triangular fabric panel has <span set:html={rich('[[a=9\\text{ ft}]]')} />, <span set:html={rich('[[b=12\\text{ ft}]]')} />. Then <span set:html={rich('[[K=\\frac{9\\times12}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=54\\text{ ft}^2}]]]')} />. This represents the flat triangular fabric section before seams and material allowances. Assumption: the sail is modeled flat; real sails curve under load.</p>
+
+  <h3>Example 7: Plywood Cutting Template</h3>
+  <p>A right-triangular plywood template has <span set:html={rich('[[a=12\\text{ cm}]]')} />, <span set:html={rich('[[b=16\\text{ cm}]]')} />. Then <span set:html={rich('[[K=\\frac{12\\times16}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=96\\text{ cm}^2}]]]')} />. The result helps estimate material requirements before cutting waste. Assumption: the template is a true right triangle; saw kerf and offcuts are extra.</p>
+
+  <h3>Example 8: Triangular Sign Panel</h3>
+  <p>A triangular sign panel has perpendicular dimensions of <span set:html={rich('[[a=20\\text{ cm}]]')} />, <span set:html={rich('[[b=21\\text{ cm}]]')} />. Then <span set:html={rich('[[K=\\frac{20\\times21}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=210\\text{ cm}^2}]]]')} />. This represents the flat printable or painted area. Assumption: the panel face is flat and right-triangular; mounting hardware is excluded.</p>
+
+  <h3>Example 9: Land Surveying Section</h3>
+  <p>A simplified right-triangular land section has <span set:html={rich('[[a=9\\text{ m}]]')} />, <span set:html={rich('[[b=40\\text{ m}]]')} />. Then <span set:html={rich('[[K=\\frac{9\\times40}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=180\\text{ m}^2}]]]')} />. The formula calculates the area of the surveyed triangular section. Assumption: the section is modeled with a square corner; an irregular lot needs subdivision into simpler shapes.</p>
+
+  <h3>Example 10: Triangular Awning Support</h3>
+  <p>A right-triangular awning support section has <span set:html={rich('[[a=15\\text{ ft}]]')} />, <span set:html={rich('[[b=20\\text{ ft}]]')} />. Then <span set:html={rich('[[K=\\frac{15\\times20}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=150\\text{ ft}^2}]]]')} />. The result represents the modeled flat triangular section, not necessarily the full surface of an irregular awning. Assumption: the support geometry is simplified to a right triangle.</p>
+
+  <h3>Example 11: Industrial Support Panel</h3>
+  <p>A right-triangular industrial panel has <span set:html={rich('[[a=11\\text{ m}]]')} />, <span set:html={rich('[[b=60\\text{ m}]]')} />. Then <span set:html={rich('[[K=\\frac{11\\times60}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=330\\text{ m}^2}]]]')} />. The area describes the flat geometric panel rather than its structural performance. Assumption: the panel is modeled as a right triangle; thickness and fixings are separate concerns.</p>
+
+  <h3>Example 12: Warehouse Roof-End Section</h3>
+  <p>A warehouse has a simplified right-triangular roof-end section with <span set:html={rich('[[a=13\\text{ ft}]]')} />, <span set:html={rich('[[b=84\\text{ ft}]]')} />. Then <span set:html={rich('[[K=\\frac{13\\times84}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=546\\text{ ft}^2}]]]')} />. The result helps estimate the flat triangular end area, for example when pricing cladding. Assumption: the gable end is modeled as a right triangle.</p>
+
+  <h3>Practical Examples Comparison</h3>
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full text-sm my-6 border-collapse">
+      <thead>
+        <tr>
+          <th class="border-gray-600 px-4 py-2 text-left">Practical application</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Leg a</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Leg b</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Hypotenuse (optional)</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Calculated area</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Measurement unit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="border-gray-600 px-4 py-2">Glass window</td><td class="border-gray-600 px-4 py-2">3</td><td class="border-gray-600 px-4 py-2">4</td><td class="border-gray-600 px-4 py-2">5</td><td class="border-gray-600 px-4 py-2">6</td><td class="border-gray-600 px-4 py-2">m²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Steel bracket</td><td class="border-gray-600 px-4 py-2">5</td><td class="border-gray-600 px-4 py-2">12</td><td class="border-gray-600 px-4 py-2">13</td><td class="border-gray-600 px-4 py-2">30</td><td class="border-gray-600 px-4 py-2">cm²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Ramp profile</td><td class="border-gray-600 px-4 py-2">6</td><td class="border-gray-600 px-4 py-2">8</td><td class="border-gray-600 px-4 py-2">10</td><td class="border-gray-600 px-4 py-2">24</td><td class="border-gray-600 px-4 py-2">m²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Roof support</td><td class="border-gray-600 px-4 py-2">8</td><td class="border-gray-600 px-4 py-2">15</td><td class="border-gray-600 px-4 py-2">17</td><td class="border-gray-600 px-4 py-2">60</td><td class="border-gray-600 px-4 py-2">ft²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Garden section</td><td class="border-gray-600 px-4 py-2">7</td><td class="border-gray-600 px-4 py-2">24</td><td class="border-gray-600 px-4 py-2">25</td><td class="border-gray-600 px-4 py-2">84</td><td class="border-gray-600 px-4 py-2">m²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Fabric sail</td><td class="border-gray-600 px-4 py-2">9</td><td class="border-gray-600 px-4 py-2">12</td><td class="border-gray-600 px-4 py-2">15</td><td class="border-gray-600 px-4 py-2">54</td><td class="border-gray-600 px-4 py-2">ft²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Plywood template</td><td class="border-gray-600 px-4 py-2">12</td><td class="border-gray-600 px-4 py-2">16</td><td class="border-gray-600 px-4 py-2">20</td><td class="border-gray-600 px-4 py-2">96</td><td class="border-gray-600 px-4 py-2">cm²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Sign panel</td><td class="border-gray-600 px-4 py-2">20</td><td class="border-gray-600 px-4 py-2">21</td><td class="border-gray-600 px-4 py-2">29</td><td class="border-gray-600 px-4 py-2">210</td><td class="border-gray-600 px-4 py-2">cm²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Survey section</td><td class="border-gray-600 px-4 py-2">9</td><td class="border-gray-600 px-4 py-2">40</td><td class="border-gray-600 px-4 py-2">41</td><td class="border-gray-600 px-4 py-2">180</td><td class="border-gray-600 px-4 py-2">m²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Awning support</td><td class="border-gray-600 px-4 py-2">15</td><td class="border-gray-600 px-4 py-2">20</td><td class="border-gray-600 px-4 py-2">25</td><td class="border-gray-600 px-4 py-2">150</td><td class="border-gray-600 px-4 py-2">ft²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Industrial panel</td><td class="border-gray-600 px-4 py-2">11</td><td class="border-gray-600 px-4 py-2">60</td><td class="border-gray-600 px-4 py-2">61</td><td class="border-gray-600 px-4 py-2">330</td><td class="border-gray-600 px-4 py-2">m²</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Warehouse roof end</td><td class="border-gray-600 px-4 py-2">13</td><td class="border-gray-600 px-4 py-2">84</td><td class="border-gray-600 px-4 py-2">85</td><td class="border-gray-600 px-4 py-2">546</td><td class="border-gray-600 px-4 py-2">ft²</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Section 8: Pythagorean theorem and area -->
+<section id="sec-pythagoras" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How Is the Pythagorean Theorem Related to Right Triangle Area?</h2>
+  <p>The Pythagorean theorem states <span set:html={rich('[[[\\boxed{a^2+b^2=c^2}]]]')} />: the legs <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[b]]')} /> determine the hypotenuse <span set:html={rich('[[c]]')} />. It answers a question about side lengths, while the area formula measures the enclosed surface. The two are related but solve different problems, and the area calculation here never depends on the theorem.</p>
+
+  <h3>Calculating the Hypotenuse From Both Legs</h3>
+  <p>With <span set:html={rich('[[a=6]]')} /> and <span set:html={rich('[[b=8]]')} />, the hypotenuse is <span set:html={rich('[[c=\\sqrt{6^2+8^2}]]')} />, <span set:html={rich('[[c=\\sqrt{36+64}]]')} />, <span set:html={rich('[[[\\boxed{c=10}]]]')} />. The area is then computed separately: <span set:html={rich('[[K=\\frac{6\\times8}{2}=24]]')} />. The hypotenuse is optional extra information for this area calculation, a useful fact rather than a required step.</p>
+
+  <h3>Can the Pythagorean Theorem Replace the Area Formula?</h3>
+  <p>No. The Pythagorean theorem determines relationships between side lengths; the area formula converts two perpendicular sides into enclosed surface. One answers how long, the other answers how much surface. They cooperate: when only one leg and the hypotenuse are known, the theorem recovers the missing leg first, and then the area formula takes over. Neither replaces the other.</p>
+
+  <h3>When Is the Pythagorean Theorem Useful?</h3>
+  <p>It earns its place when a side is missing or a measurement needs checking: only one leg and the hypotenuse are known, the missing side must be found before the area step, a calculated hypotenuse needs verification, or a construction measurement must be confirmed on site. For a dedicated missing-side calculation, the Right Triangle Side Calculator handles that step, and its result can feed straight back into the legs area formula.</p>
+</section>
+
+<!-- Section 9: Finding a missing leg -->
+<section id="sec-missing-leg" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Find a Missing Leg When the Triangle Area Is Known</h2>
+  <p>The area formula reads both ways. Start with <span set:html={rich('[[K=\\frac{ab}{2}]]')} />. Multiply both sides by 2: <span set:html={rich('[[2K=ab]]')} />. Divide by <span set:html={rich('[[a]]')} />: <span set:html={rich('[[[\\boxed{b=\\frac{2K}{a}}]]]')} />. Similarly, <span set:html={rich('[[[\\boxed{a=\\frac{2K}{b}}]]]')} />. The same relationship, rearranged, recovers whichever leg is unknown.</p>
+
+  <h3>Worked Example</h3>
+  <p>Suppose <span set:html={rich('[[K=24\\text{ cm}^2]]')} /> and <span set:html={rich('[[a=6\\text{ cm}]]')} />. Then <span set:html={rich('[[b=\\frac{2\\times24}{6}]]')} />, <span set:html={rich('[[[\\boxed{b=8\\text{ cm}}]]]')} />. The units stay consistent: square centimetres divided by centimetres give centimetres. This reverse use is handy for checking a reported area or recovering a dimension from plans, but note it is an educational rearrangement, not an additional input mode in the calculator above, which still takes the two legs.</p>
+</section>
+
+<!-- Section 10: How leg lengths affect area -->
+<section id="sec-scaling" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How Does Changing the Two Legs Affect the Area?</h2>
+  <p>Because <span set:html={rich('[[K=\\frac{ab}{2}]]')} /> is a product, stretching the legs stretches the area in predictable ways. The patterns below are worth knowing before resizing any triangular design.</p>
+
+  <h3>What Happens When One Leg Doubles?</h3>
+  <p>Keep <span set:html={rich('[[a]]')} /> fixed and double <span set:html={rich('[[b]]')} />. Then <span set:html={rich('[[K_1=\\frac{ab}{2}]]')} /> becomes <span set:html={rich('[[K_2=\\frac{a(2b)}{2}]]')} />, so <span set:html={rich('[[[\\boxed{K_2=2K_1}]]]')} />. Doubling only one leg doubles the area. A concrete check: the 3-by-4 triangle has <span set:html={rich('[[K=6]]')} />; stretching one leg to 3-by-8 gives <span set:html={rich('[[K=12]]')} />.</p>
+
+  <h3>What Happens When Both Legs Double?</h3>
+  <p>Now double both: <span set:html={rich('[[K_2=\\frac{(2a)(2b)}{2}]]')} />, which simplifies to <span set:html={rich('[[[\\boxed{K_2=4K_1}]]]')} />. Doubling both perpendicular dimensions makes the area four times larger, not twice. The 3-by-4 triangle (<span set:html={rich('[[K=6]]')} />) scaled to 6-by-8 gives <span set:html={rich('[[K=24]]')} />, exactly four times the original.</p>
+
+  <h3>What Happens When Both Legs Are Scaled?</h3>
+  <p>Multiply each leg by a scale factor <span set:html={rich('[[k]]')} />: <span set:html={rich('[[K_2=\\frac{(ka)(kb)}{2}]]')} />, therefore <span set:html={rich('[[[\\boxed{K_2=k^2K_1}]]]')} />. Area grows with the square of the scale factor. Practical example: scale the 6-by-8 triangle by 1.5 to get 9-by-12. Then <span set:html={rich('[[K=\\frac{9\\times12}{2}=54]]')} />, and <span set:html={rich('[[24\\times1.5^2=24\\times2.25=54]]')} />. This is why material estimates jump faster than linear dimensions: double every length and four times the sheet is needed.</p>
+
+  <h3>Can Two Different Right Triangles Have the Same Area?</h3>
+  <p>Yes. Compare triangle 1, <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />: <span set:html={rich('[[K=\\frac{3\\times4}{2}=6]]')} />. Triangle 2, <span set:html={rich('[[a=2]]')} />, <span set:html={rich('[[b=6]]')} />: <span set:html={rich('[[K=\\frac{2\\times6}{2}=6]]')} />. Different shapes enclose the same area whenever the product of their legs is equal. A short wide triangle and a tall narrow one can cover identical surface, which matters when fitting panels into different spaces.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('same-area-different-triangles.svg')} alt="Two right triangles, 3 by 4 and 2 by 6, shown side by side with equal area 6" class="mx-auto h-auto w-full max-w-xl my-8" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Different proportions, same area: both right triangles enclose 6 square units.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 11: Right triangle vs general triangle -->
+<section id="sec-general" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Why Can&apos;t You Use the Two-Leg Formula for Every Triangle?</h2>
+  <p>The formula <span set:html={rich('[[K=\\frac{ab}{2}]]')} /> works because the two legs are perpendicular. For a general triangle, two side lengths alone are insufficient: the included angle between them, or the corresponding height, must also be known.</p>
+  <p>The general rule is <span set:html={rich('[[[\\boxed{K=\\frac{ab\\sin(C)}{2}}]]]')} />, where <span set:html={rich('[[C]]')} /> is the included angle between sides <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[b]]')} />. For a right triangle, <span set:html={rich('[[C=90^\\circ]]')} /> and <span set:html={rich('[[\\sin(90^\\circ)=1]]')} />. Therefore <span set:html={rich('[[K=\\frac{ab\\times1}{2}]]')} />, which is <span set:html={rich('[[[\\boxed{K=\\frac{ab}{2}}]]]')} />. The right-triangle formula is the general formula with the sine factor equal to 1. For any other angle the sine shrinks the product, which is why the legs formula must never be applied to a non-right triangle: it silently treats <span set:html={rich('[[\\sin(C)]]')} /> as 1 when it is not.</p>
+</section>
+
+<!-- Section 12: Units and decimals -->
+<section id="sec-units" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding Units When Calculating Right Triangle Area</h2>
+  <p>The two legs must share one length unit before the formula is applied. The square unit in the answer comes from multiplying the two length units, so consistent units are what keep the number meaningful.</p>
+
+  <h3>Why the Result Uses Square Units</h3>
+  <p>Area counts unit squares covering the surface: <span set:html={rich('[[\\text{cm}\\times\\text{cm}=\\text{cm}^2]]')} />, <span set:html={rich('[[\\text{m}\\times\\text{m}=\\text{m}^2]]')} />, <span set:html={rich('[[\\text{ft}\\times\\text{ft}=\\text{ft}^2]]')} />. The unit is always the length unit squared, because the product of two lengths is a count of squares. Reporting an area as 24 m is a category error: 24 m is a length, while 24 m² is a surface.</p>
+
+  <h3>Converting Different Units Before Calculating</h3>
+  <p>Take <span set:html={rich('[[a=3\\text{ ft}]]')} /> and <span set:html={rich('[[b=24\\text{ inches}]]')} />. Convert first: <span set:html={rich('[[24\\text{ inches}=2\\text{ ft}]]')} />. Then <span set:html={rich('[[K=\\frac{3\\times2}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=3\\text{ ft}^2}]]]')} />. Without conversion, the raw product 72 has no clean meaning: it is neither square feet nor square inches. Convert first, multiply second, and the unit of the answer follows automatically.</p>
+
+  <h3>Calculating With Decimal Measurements</h3>
+  <p>The same formula handles decimals without any change. Given <span set:html={rich('[[a=3.5]]')} /> and <span set:html={rich('[[b=9.2]]')} />: <span set:html={rich('[[K=\\frac{3.5\\times9.2}{2}]]')} />, <span set:html={rich('[[K=\\frac{32.2}{2}]]')} />, <span set:html={rich('[[[\\boxed{K=16.1\\text{ square units}}]]]')} />. Whole numbers, decimals, and fine workshop measurements all flow through the same multiply-and-halve. Keep the decimal places the measurement supports and let the calculator handle the arithmetic.</p>
+
+  <h3>Why Early Rounding Should Be Avoided</h3>
+  <p>Round the inputs and the error rides through the multiplication into the answer. A leg measured as 9.2 should not become 9 before multiplying; the lost 0.2 per unit adds up across the product. Keep full precision through the intermediate steps and round only the final result, to the accuracy the measurements justify. Precision kept early is accuracy delivered at the end.</p>
+</section>
+
+<!-- Section 13: Common mistakes -->
+<section id="sec-mistakes" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Common Mistakes When Calculating Right Triangle Area From Legs</h2>
+  <p>Nearly every wrong answer in this topic traces to a mislabeled input rather than bad arithmetic. The fifteen mistakes below are the ones that appear again and again, each with its cause and its fix.</p>
+
+  <h3>1. Using the Hypotenuse Instead of One of the Legs</h3>
+  <p>The hypotenuse is the longest side and never forms the right angle. Entering it as a leg inflates the product, for example treating 10 as a leg with 8 gives 40 instead of 24. Fix: find the right angle first; the two sides touching it are the legs.</p>
+
+  <h3>2. Confusing the Two Legs With the Other Sides</h3>
+  <p>In a tilted drawing, any side can look like a natural base. The labels <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[b]]')} /> belong to the perpendicular pair only. Fix: locate the square corner marker before assigning labels, regardless of how the triangle is rotated.</p>
+
+  <h3>3. Forgetting That the Legs Must Form a 90-Degree Angle</h3>
+  <p>The halved product assumes perpendicularity. Two sides meeting at 80 or 100 degrees need the general sine formula instead. Fix: confirm the corner is square before using <span set:html={rich('[[K=\\frac{ab}{2}]]')} />.</p>
+
+  <h3>4. Forgetting to Divide by Two</h3>
+  <p>The product <span set:html={rich('[[a\\times b]]')} /> alone is the enclosing rectangle&apos;s area, double the triangle&apos;s. Fix: halve the product; the /2 is part of the formula, not optional.</p>
+
+  <h3>5. Calculating the Rectangle&apos;s Area Instead of the Triangle&apos;s Area</h3>
+  <p>Forty-eight is a valid area for the 6-by-8 rectangle, just not for the triangle inside it. Fix: ask which shape the question wants, then apply the halving only for the triangle.</p>
+
+  <h3>6. Mixing Feet and Inches</h3>
+  <p>Multiplying 3 ft by 24 in gives 72 of nothing clean. Fix: convert both to one unit (24 in = 2 ft) before calculating.</p>
+
+  <h3>7. Mixing Centimetres and Metres</h3>
+  <p>The same trap at metric scale: 2 m by 30 cm must become one unit first. Fix: convert (30 cm = 0.3 m), then multiply.</p>
+
+  <h3>8. Reporting the Result in Linear Units</h3>
+  <p>An area of 24 m² is not 24 m. Fix: write the squared unit with the number, every time.</p>
+
+  <h3>9. Using Only One Leg</h3>
+  <p>One leg is a length, not an area; the formula needs the pair. Entering a single measurement answers nothing. Fix: measure both perpendicular sides.</p>
+
+  <h3>10. Treating Any Two Sides of a Right Triangle as Perpendicular</h3>
+  <p>Only the legs are perpendicular. A leg-plus-hypotenuse pair meets at an acute angle, so their halved product is not the area. Fix: check that both chosen sides touch the right angle.</p>
+
+  <h3>11. Using Negative or Zero Measurements</h3>
+  <p>Lengths are positive. Zero collapses the triangle to a line with no area, and negative lengths have no geometric meaning here. Fix: re-measure; reject non-positive inputs.</p>
+
+  <h3>12. Rounding Decimal Inputs Too Early</h3>
+  <p>Rounding 9.2 to 9 before multiplying shifts the answer from 16.1 downward. Fix: keep full precision through the calculation and round only the final result.</p>
+
+  <h3>13. Assuming the Hypotenuse Is Required</h3>
+  <p>It is not. <span set:html={rich('[[K=\\frac{ab}{2}]]')} /> uses only the legs, and computing the hypotenuse first adds a step that changes nothing. Fix: skip it unless a different calculation needs it.</p>
+
+  <h3>14. Confusing Perimeter With Area</h3>
+  <p>Perimeter adds the three sides (<span set:html={rich('[[a+b+c]]')} />); area multiplies two legs and halves. For 6-8-10, the perimeter is 24 while the area is also 24, a coincidence that causes real confusion. Fix: check whether the question asks for boundary length or enclosed surface.</p>
+
+  <h3>15. Applying the Right-Triangle Formula to a Non-Right Triangle</h3>
+  <p>Without a 90-degree corner, the product needs the sine of the included angle. Using <span set:html={rich('[[K=\\frac{ab}{2}]]')} /> on a general triangle overstates the area. Fix: use <span set:html={rich('[[K=\\frac{ab\\sin(C)}{2}]]')} /> with the actual included angle.</p>
+
+  <h3>Wrong Versus Correct: A Concrete Example</h3>
+  <p>Use <span set:html={rich('[[a=6]]')} />, <span set:html={rich('[[b=8]]')} />. Correct: <span set:html={rich('[[K=\\frac{6\\times8}{2}=24]]')} />. Incorrectly forgetting to divide by two: <span set:html={rich('[[6\\times8=48]]')} />, which is the area of the corresponding rectangle, not the right triangle. Incorrectly using the hypotenuse 10 as if it were a perpendicular leg: <span set:html={rich('[[K=\\frac{10\\times8}{2}=40]]')} />, wrong because 10 is not perpendicular to 8. The arithmetic looks confident in all three cases; only the geometry tells them apart.</p>
+</section>
+
+<!-- Section 14: Verification -->
+<section id="sec-verify" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Check Whether Your Right Triangle Area Is Correct</h2>
+  <p>Six independent checks, all demonstrated on the 6-8-10 triangle (<span set:html={rich('[[a=6]]')} />, <span set:html={rich('[[b=8]]')} />, <span set:html={rich('[[c=10]]')} />, <span set:html={rich('[[K=24]]')} />). Agreement between different routes is the strongest evidence an answer is right, in homework and in practical measurement alike.</p>
+
+  <h3>Method 1: Recalculate Using the Main Formula</h3>
+  <p>Run <span set:html={rich('[[K=\\frac{ab}{2}]]')} /> fresh: <span set:html={rich('[[K=\\frac{6\\times8}{2}=24]]')} />. A second pass with the numbers re-entered catches typos and mis-keyed digits.</p>
+
+  <h3>Method 2: Double the Triangle to Form a Rectangle</h3>
+  <p>The doubled triangle is a 6-by-8 rectangle: <span set:html={rich('[[K_{\\text{rectangle}}=6\\times8=48]]')} />, so <span set:html={rich('[[K_{\\text{triangle}}=\\frac{48}{2}=24]]')} />. If the doubled area does not match <span set:html={rich('[[a\\times b]]')} />, the arithmetic slipped somewhere.</p>
+
+  <h3>Method 3: Check the Hypotenuse Using the Pythagorean Theorem</h3>
+  <p>Confirm <span set:html={rich('[[c=\\sqrt{a^2+b^2}]]')} />: <span set:html={rich('[[c=\\sqrt{36+64}=10]]')} />. This checks the side identification behind the area; a wrong hypotenuse means a side was mislabeled.</p>
+
+  <h3>Method 4: Rearrange the Area Formula</h3>
+  <p>Recover a known input from the answer: <span set:html={rich('[[b=\\frac{2K}{a}=\\frac{48}{6}=8]]')} />. Getting back the leg you started with closes the loop and confirms the division step.</p>
+
+  <h3>Method 5: Check the Measurement Units</h3>
+  <p>Both legs must use the same length unit, and the answer must use that unit squared. Mixed units or a linear unit on the answer flag a setup error before any numbers are rechecked.</p>
+
+  <h3>Method 6: Estimate the Result</h3>
+  <p>Round to friendly numbers: 6 by 8 is near 50, halved near 25. An answer of 24 sits right beside the estimate; an answer of 240 or 2.4 would not. Estimation catches decimal-point and division errors that exact recomputation can repeat.</p>
+</section>
+
+<!-- Section 15: Applications in practice -->
+<section id="sec-applications" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Right Triangle Area From Two Legs in Practice</h2>
+  <p>The same two-input pattern shows up wherever a square corner needs measuring. A glazier reads the two perpendicular edges of a window; a fabricator measures the legs of a bracket blank; a surveyor reduces a lot corner to two perpendicular offsets. In each case the hypotenuse is the awkward measurement to take, and this formula never asks for it.</p>
+  <p>The four panels below show the pattern at different scales. A glass window (6 m²) and a garden section (84 m²) use metre-scale 3-4-5 and 7-24-25 geometry; a roof support (60 ft²) uses the 8-15-17 triangle; a steel plate (30 cm²) uses 5-12-13. Every panel labels both legs, the right-angle marker, and the resulting area, so the path from measurement to answer stays visible.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('practical-applications.svg')} alt="Four panels: glass window 6 m2, roof support 60 ft2, garden section 84 m2, steel plate 30 cm2" class="mx-auto h-auto w-full max-w-xl my-8" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Four real uses: a glass window, a roof support, a garden section, and a steel plate with their areas.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 16: FAQs -->
+<section id="sec-faq" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <Faq
+    heading="Frequently Asked Questions"
+    items={[
+      {
+        question: 'What is the formula for the area of a right triangle from its legs?',
+        answer: 'K = ab/2, where a and b are the two perpendicular legs. Multiply the legs and divide by two. For a = 6 and b = 8, K = (6 × 8) / 2 = 24 square units. No hypotenuse, angle, or other measurement is needed.'
+      },
+      {
+        question: 'Why do you multiply both legs and divide by two?',
+        answer: 'The two legs form the sides of an enclosing rectangle with area a × b, and the rectangle diagonal cuts it into two identical right triangles. Each triangle owns half the rectangle, so the area is the halved product. The multiplication builds the rectangle; the division trims it to the triangle.'
+      },
+      {
+        question: 'Do I need the hypotenuse to calculate the area?',
+        answer: 'No. The area comes from the two legs alone through K = ab/2. The hypotenuse, c = √(a² + b²), is useful for checking side labels or recovering a missing side, but it never enters the area calculation itself.'
+      },
+      {
+        question: 'What is the difference between a leg and a hypotenuse?',
+        answer: 'The legs are the two sides that meet at the right angle and are perpendicular to each other. The hypotenuse sits opposite the right angle and is always the longest side. The calculator takes the two legs as its inputs; entering the hypotenuse as a leg produces a wrong answer.'
+      },
+      {
+        question: 'Can I swap leg a and leg b?',
+        answer: 'Yes. Multiplication commutes, so (a × b) / 2 equals (b × a) / 2. Entering 3 and 4 in either order gives 6. The labels are a convenience for talking about the sides, not a constraint on the calculation.'
+      },
+      {
+        question: 'Can I calculate area using decimal leg measurements?',
+        answer: 'Yes. For a = 3.5 and b = 9.2, K = (3.5 × 9.2) / 2 = 16.1 square units. The method is identical for whole numbers and decimals. Keep full precision during the calculation and round only the final answer to match the measurement accuracy.'
+      },
+      {
+        question: 'What happens if the two legs use different units?',
+        answer: 'Convert to one unit before calculating. With a = 3 ft and b = 24 inches, convert 24 inches to 2 ft, then K = (3 × 2) / 2 = 3 ft². Multiplying mixed units gives a number with no clean meaning, so the conversion step is mandatory.'
+      },
+      {
+        question: 'Can I find a missing leg if I know the area?',
+        answer: 'Yes, by rearranging the formula to b = 2K/a (or a = 2K/b). With K = 24 cm² and a = 6 cm, b = 48/6 = 8 cm. This is the same relationship read backwards, not a separate calculator mode; the calculator itself still takes the two legs.'
+      },
+      {
+        question: 'How is the Pythagorean theorem related to triangle area?',
+        answer: 'It connects the side lengths through a² + b² = c², while the area formula measures the enclosed surface. Use the theorem to find a missing side or verify a hypotenuse, then apply K = ab/2. For legs 6 and 8, c = 10, and the area stays 24 either way.'
+      },
+      {
+        question: 'Does the formula work for non-right triangles?',
+        answer: 'No. K = ab/2 assumes the included angle between the sides is 90 degrees. For other triangles use K = ab sin(C)/2 with the actual included angle C. Applying the legs formula to a non-right triangle treats sin(C) as 1 when it is not, overstating the area.'
+      },
+      {
+        question: 'Why is the answer expressed in square units?',
+        answer: 'Area counts the unit squares covering the surface: cm × cm = cm², m × m = m², ft × ft = ft². A linear unit such as 24 m describes a length, not a surface. Always report the squared unit with the number.'
+      },
+      {
+        question: 'Can two different right triangles have the same area?',
+        answer: 'Yes, whenever their leg products match. A 3-by-4 triangle and a 2-by-6 triangle both give K = 6. Shape and area are independent: equal products mean equal areas, so a tall narrow triangle can enclose exactly as much surface as a short wide one.'
+      }
+    ]}
+  />
+</section>
+
+<!-- Section 17: Related calculators -->
+<section id="sec-related" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Explore Related Right Triangle Calculators</h2>
+  <p>Different measurements call for different calculators.</p>
+  <ul class="not-prose mt-4 grid gap-x-8 sm:grid-cols-2">
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-area-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">01</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Area Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-area-from-leg-and-angle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">02</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Area From Leg and Angle Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-area-from-angle-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">03</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Area From Angle Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-area-from-semiperimeter-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">04</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Area From Semiperimeter Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-side-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">05</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Side Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-perimeter-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">06</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Perimeter Calculator</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- Conclusion -->
+<section id="sec-conclusion" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Two Measurements, One Halved Product</h2>
+  <p>Two perpendicular lengths are enough. Multiply them, halve the product, and the enclosed surface is named. The rectangle proof shows why the halving is exact rather than conventional, the Pythagorean theorem checks the sides behind the answer, and the rearranged formula recovers a missing leg when the area is already known.</p>
+  <p>The working habit is simple: confirm the 90-degree corner, match the units, keep decimals unrounded until the end, and verify through the rectangle. With those habits, <span set:html={rich('[[K=\\frac{ab}{2}]]')} /> is the most dependable area calculation in geometry.</p>
+</section>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<rect width="1200" height="630" fill="#111412"/>
+<text x="60" y="55" fill="#f1c97d" font-size="26" font-family="Georgia,serif" font-weight="bold">One Rectangle, Two Identical Right Triangles</text>
+<polygon points="320,100 880,100 320,520" fill="#f1c97d" fill-opacity="0.14" stroke="none"/>
+<polygon points="320,520 880,100 880,520" fill="#86c5be" fill-opacity="0.14" stroke="none"/>
+<rect x="320" y="100" width="560" height="420" fill="none" stroke="#f5f0e6" stroke-width="4"/>
+<line x1="320" y1="520" x2="880" y2="100" stroke="#f5f0e6" stroke-width="5"/>
+<polyline points="344,100 344,124 320,124" fill="none" stroke="#f5f0e6" stroke-width="2.5"/>
+<polyline points="856,520 856,496 880,496" fill="none" stroke="#f5f0e6" stroke-width="2.5"/>
+<text x="600" y="88" fill="#f1c97d" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">a = 8</text>
+<text x="296" y="310" fill="#86c5be" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="end" font-weight="bold">b = 6</text>
+<text x="490" y="215" fill="#f1c97d" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">Triangle 1</text>
+<text x="490" y="243" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">K = 24</text>
+<text x="710" y="380" fill="#86c5be" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">Triangle 2</text>
+<text x="710" y="408" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">K = 24</text>
+<text x="915" y="200" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">Rectangle</text>
+<text x="915" y="232" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">K = 8 × 6 = 48</text>
+<text x="915" y="292" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">Each triangle</text>
+<text x="915" y="324" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">K = 48 / 2 = 24</text>
+<text x="915" y="384" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">General rule</text>
+<text x="915" y="416" fill="#9a958a" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start">K_rect = a × b</text>
+<text x="915" y="448" fill="#9a958a" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start">K_tri = a × b / 2</text>
+<text x="600" y="600" fill="#9a958a" font-size="21" font-family="Manrope,Arial,sans-serif" text-anchor="middle">Half of rectangle ab: each triangle has area ab/2.</text>
+</svg>

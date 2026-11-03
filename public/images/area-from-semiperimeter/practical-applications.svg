@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<rect width="1200" height="630" fill="#111412"/>
+<text x="60" y="50" fill="#f1c97d" font-size="26" font-family="Georgia,serif" text-anchor="start" font-weight="bold">Practical Applications of K = r × s</text>
+<rect x="30" y="70" width="530" height="245" rx="8" fill="#161a18" stroke="#33362f" stroke-width="1.5"/>
+<text x="50" y="102" fill="#f1c97d" font-size="22" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">Glass window</text>
+<line x1="90" y1="125" x2="90" y2="245" stroke="#f5f0e6" stroke-width="4"/>
+<line x1="90" y1="245" x2="250" y2="245" stroke="#f5f0e6" stroke-width="4"/>
+<line x1="90" y1="125" x2="250" y2="245" stroke="#f5f0e6" stroke-width="4"/>
+<polyline points="90,227 108,227 108,245" fill="none" stroke="#f5f0e6" stroke-width="2"/>
+<circle cx="130" cy="205" r="40" stroke="#86c5be" stroke-width="2.5" fill="none"/>
+<circle cx="90" cy="125" r="4" fill="#f5f0e6"/>
+<circle cx="90" cy="245" r="4" fill="#f5f0e6"/>
+<circle cx="250" cy="245" r="4" fill="#f5f0e6"/>
+<circle cx="130" cy="205" r="5" fill="#f1c97d"/>
+<text x="290" y="160" fill="#86c5be" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">r = 1 m</text>
+<text x="290" y="195" fill="#f1c97d" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">s = 6 m</text>
+<text x="290" y="230" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">K = 6 m²</text>
+<rect x="640" y="70" width="530" height="245" rx="8" fill="#161a18" stroke="#33362f" stroke-width="1.5"/>
+<text x="660" y="102" fill="#f1c97d" font-size="22" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">Roof support</text>
+<line x1="700" y1="125" x2="700" y2="245" stroke="#f5f0e6" stroke-width="4"/>
+<line x1="700" y1="245" x2="860" y2="245" stroke="#f5f0e6" stroke-width="4"/>
+<line x1="700" y1="125" x2="860" y2="245" stroke="#f5f0e6" stroke-width="4"/>
+<polyline points="700,227 718,227 718,245" fill="none" stroke="#f5f0e6" stroke-width="2"/>
+<circle cx="740" cy="205" r="40" stroke="#86c5be" stroke-width="2.5" fill="none"/>
+<circle cx="700" cy="125" r="4" fill="#f5f0e6"/>
+<circle cx="700" cy="245" r="4" fill="#f5f0e6"/>
+<circle cx="860" cy="245" r="4" fill="#f5f0e6"/>
+<circle cx="740" cy="205" r="5" fill="#f1c97d"/>
+<text x="900" y="160" fill="#86c5be" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">r = 3 ft</text>
+<text x="900" y="195" fill="#f1c97d" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">s = 20 ft</text>
+<text x="900" y="230" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">K = 60 ft²</text>
+<rect x="30" y="355" width="530" height="245" rx="8" fill="#161a18" stroke="#33362f" stroke-width="1.5"/>
+<text x="50" y="387" fill="#f1c97d" font-size="22" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">Garden section</text>
+<line x1="90" y1="400" x2="90" y2="520" stroke="#f5f0e6" stroke-width="4"/>
+<line x1="90" y1="520" x2="250" y2="520" stroke="#f5f0e6" stroke-width="4"/>
+<line x1="90" y1="400" x2="250" y2="520" stroke="#f5f0e6" stroke-width="4"/>
+<polyline points="90,502 108,502 108,520" fill="none" stroke="#f5f0e6" stroke-width="2"/>
+<circle cx="130" cy="480" r="40" stroke="#86c5be" stroke-width="2.5" fill="none"/>
+<circle cx="90" cy="400" r="4" fill="#f5f0e6"/>
+<circle cx="90" cy="520" r="4" fill="#f5f0e6"/>
+<circle cx="250" cy="520" r="4" fill="#f5f0e6"/>
+<circle cx="130" cy="480" r="5" fill="#f1c97d"/>
+<text x="290" y="445" fill="#86c5be" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">r = 3 m</text>
+<text x="290" y="480" fill="#f1c97d" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">s = 28 m</text>
+<text x="290" y="515" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">K = 84 m²</text>
+<rect x="640" y="355" width="530" height="245" rx="8" fill="#161a18" stroke="#33362f" stroke-width="1.5"/>
+<text x="660" y="387" fill="#f1c97d" font-size="22" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">Steel plate</text>
+<line x1="700" y1="439" x2="700" y2="520" stroke="#f5f0e6" stroke-width="4"/>
+<line x1="700" y1="520" x2="808" y2="520" stroke="#f5f0e6" stroke-width="4"/>
+<line x1="700" y1="439" x2="808" y2="520" stroke="#f5f0e6" stroke-width="4"/>
+<polyline points="700,502 718,502 718,520" fill="none" stroke="#f5f0e6" stroke-width="2"/>
+<circle cx="727" cy="493" r="27" stroke="#86c5be" stroke-width="2.5" fill="none"/>
+<circle cx="700" cy="439" r="4" fill="#f5f0e6"/>
+<circle cx="700" cy="520" r="4" fill="#f5f0e6"/>
+<circle cx="808" cy="520" r="4" fill="#f5f0e6"/>
+<circle cx="727" cy="493" r="5" fill="#f1c97d"/>
+<text x="900" y="445" fill="#86c5be" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">r = 2 cm</text>
+<text x="900" y="480" fill="#f1c97d" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">s = 15 cm</text>
+<text x="900" y="515" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">K = 30 cm²</text>
+</svg>

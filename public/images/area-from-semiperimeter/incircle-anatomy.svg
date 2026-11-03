@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<rect width="1200" height="630" fill="#111412"/>
+<text x="60" y="55" fill="#f1c97d" font-size="26" font-family="Georgia,serif" text-anchor="start" font-weight="bold">Anatomy of a Right Triangle With an Incircle</text>
+<polygon points="360,180 360,480 760,480" fill="#f1c97d" fill-opacity="0.08" stroke="none"/>
+<line x1="360" y1="180" x2="360" y2="480" stroke="#f1c97d" stroke-width="6"/>
+<line x1="360" y1="480" x2="760" y2="480" stroke="#86c5be" stroke-width="6"/>
+<line x1="360" y1="180" x2="760" y2="480" stroke="#f5f0e6" stroke-width="5"/>
+<polyline points="360,454 386,454 386,480" fill="none" stroke="#f5f0e6" stroke-width="2.5"/>
+<polyline points="386,380 360,380 360,354" fill="none" stroke="#f5f0e6" stroke-width="2"/>
+<polyline points="460,454 460,480 486,480" fill="none" stroke="#f5f0e6" stroke-width="2"/>
+<polyline points="532,284 520,300 536,312" fill="none" stroke="#f5f0e6" stroke-width="2"/>
+<circle cx="460" cy="380" r="100" stroke="#f1c97d" stroke-width="3" fill="none"/>
+<line x1="460" y1="380" x2="360" y2="380" stroke="#86c5be" stroke-width="2.5" stroke-dasharray="8,6"/>
+<line x1="460" y1="380" x2="460" y2="480" stroke="#86c5be" stroke-width="2.5" stroke-dasharray="8,6"/>
+<line x1="460" y1="380" x2="520" y2="300" stroke="#86c5be" stroke-width="2.5" stroke-dasharray="8,6"/>
+<circle cx="360" cy="380" r="5" fill="#f5f0e6"/>
+<circle cx="460" cy="480" r="5" fill="#f5f0e6"/>
+<circle cx="520" cy="300" r="5" fill="#f5f0e6"/>
+<circle cx="360" cy="180" r="6" fill="#f1c97d"/>
+<circle cx="360" cy="480" r="6" fill="#f1c97d"/>
+<circle cx="760" cy="480" r="6" fill="#f1c97d"/>
+<text x="360" y="152" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">B</text>
+<text x="330" y="508" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">C</text>
+<text x="792" y="470" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">A</text>
+<circle cx="460" cy="380" r="7" fill="#f1c97d"/>
+<text x="484" y="398" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">I</text>
+<text x="318" y="330" fill="#f1c97d" font-size="26" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">a</text>
+<text x="560" y="518" fill="#86c5be" font-size="26" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">b</text>
+<text x="592" y="306" fill="#f5f0e6" font-size="26" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">c</text>
+<text x="405" y="368" fill="#86c5be" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">r</text>
+<text x="512" y="347" fill="#86c5be" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">r</text>
+<text x="840" y="300" fill="#f1c97d" font-size="28" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">K = r × s</text>
+<text x="840" y="330" fill="#9a958a" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="normal">area from inradius</text>
+<text x="840" y="354" fill="#9a958a" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="normal">and semiperimeter</text>
+<line x1="840" y1="392" x2="892" y2="392" stroke="#f1c97d" stroke-width="3"/>
+<text x="902" y="399" fill="#f5f0e6" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">incircle</text>
+<line x1="840" y1="428" x2="892" y2="428" stroke="#86c5be" stroke-width="2.5" stroke-dasharray="8,6"/>
+<text x="902" y="435" fill="#f5f0e6" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">radius r (perpendicular)</text>
+</svg>

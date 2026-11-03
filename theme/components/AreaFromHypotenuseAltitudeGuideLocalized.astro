@@ -80,15 +80,15 @@ const relatedUrls = [
 ];
 ---
 
-<!-- Table of Contents -->
-<nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label="Guide contents">
-  <h2 class="font-headline text-2xl font-bold">{G.tocHeading || 'In This Guide'}</h2>
+<!-- Section Navigation -->
+<nav class="surface-card p-5 mb-10 mx-auto mt-12 w-full max-w-4xl" aria-label="Guide contents">
+  <h2 class="text-on-surface !mt-0 text-xl">{G.tocHeading || 'Section Navigation'}</h2>
   {G.tocItems && (
-  <ol class="mt-4 grid gap-2 sm:grid-cols-2">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
     {tocOrder.map((id) => (
-      <li><a class="hover:text-primary hover:underline" href={`#${id}`} set:html={rich(tocLabel(id))} /></li>
+      <a class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline" href={`#${id}`} set:html={rich(tocLabel(id))} />
     ))}
-  </ol>
+  </div>
   )}
 </nav>
 

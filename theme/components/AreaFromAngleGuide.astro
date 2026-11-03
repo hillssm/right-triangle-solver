@@ -28,29 +28,29 @@ const rich = (s: string): string => {
 const imgSrc = (name: string): string => `/images/area-from-angle/${name}`;
 ---
 
-<!-- Table of Contents -->
-<nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label="Guide contents">
-  <h2 class="font-headline text-2xl font-bold">In This Guide</h2>
-  <ol class="mt-4 grid gap-2 sm:grid-cols-2">
-    <li><a class="hover:text-primary hover:underline" href="#sec-intro">How to Calculate Right Triangle Area From an Angle</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-geometry">Understanding the Sides and Angles of a Right Triangle</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-sine">Why Does the Area Formula Use Sine?</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-mode1">How to Find Area Using Side b, Hypotenuse c, and Angle A</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-mode2">How to Find Area Using Side a, Hypotenuse c, and Angle B</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-same">Two Angle-Based Formulas, One Right Triangle</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-howto">How to Use the Right Triangle Area From Angle Calculator</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-foundations">Step-by-Step Examples of Right Triangle Area From an Angle</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-applications">Real-Life Applications of Right Triangle Area From Angle</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-consistency">How to Check Whether the Side Lengths and Angle Form a Right Triangle</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-alternatives">Alternative Ways to Find Right Triangle Area Using Angles</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-angle-effect">How Does the Acute Angle Affect Right Triangle Area?</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-units">Area Units, Degrees, and Rounding</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-mistakes">Common Mistakes When Calculating Right Triangle Area From an Angle</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-verify">How to Check Whether Your Calculated Area Is Correct</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-related">Explore Related Right Triangle Calculators</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-faq">FAQs</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-conclusion">Conclusion</a></li>
-  </ol>
+<!-- Section Navigation -->
+<nav class="surface-card p-5 mb-10 mx-auto mt-12 w-full max-w-4xl" aria-label="Guide contents">
+  <h2 class="text-on-surface !mt-0 text-xl">Section Navigation</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+    <a href="#sec-intro" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How to Calculate Right Triangle Area From an Angle</a>
+    <a href="#sec-geometry" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Understanding the Sides and Angles of a Right Triangle</a>
+    <a href="#sec-sine" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Why Does the Area Formula Use Sine?</a>
+    <a href="#sec-mode1" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How to Find Area Using Side b, Hypotenuse c, and Angle A</a>
+    <a href="#sec-mode2" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How to Find Area Using Side a, Hypotenuse c, and Angle B</a>
+    <a href="#sec-same" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Two Angle-Based Formulas, One Right Triangle</a>
+    <a href="#sec-howto" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How to Use the Right Triangle Area From Angle Calculator</a>
+    <a href="#sec-foundations" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Step-by-Step Examples of Right Triangle Area From an Angle</a>
+    <a href="#sec-applications" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Real-Life Applications of Right Triangle Area From Angle</a>
+    <a href="#sec-consistency" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How to Check Whether the Side Lengths and Angle Form a Right Triangle</a>
+    <a href="#sec-alternatives" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Alternative Ways to Find Right Triangle Area Using Angles</a>
+    <a href="#sec-angle-effect" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How Does the Acute Angle Affect Right Triangle Area?</a>
+    <a href="#sec-units" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Area Units, Degrees, and Rounding</a>
+    <a href="#sec-mistakes" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Common Mistakes When Calculating Right Triangle Area From an Angle</a>
+    <a href="#sec-verify" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How to Check Whether Your Calculated Area Is Correct</a>
+    <a href="#sec-related" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Explore Related Right Triangle Calculators</a>
+    <a href="#sec-faq" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">FAQs</a>
+    <a href="#sec-conclusion" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Conclusion</a>
+  </div>
 </nav>
 
 <!-- Section 1: Introduction -->

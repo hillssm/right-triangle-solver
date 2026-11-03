@@ -31,29 +31,29 @@ const rich = (s: string): string => {
 const imgSrc = (name: string): string => `/images/area-from-legs/${name}`;
 ---
 
-<!-- Table of Contents -->
-<nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label="Guide contents">
-  <h2 class="font-headline text-2xl font-bold">In This Guide</h2>
-  <ol class="mt-4 grid gap-2 sm:grid-cols-2">
-    <li><a class="hover:text-primary hover:underline" href="#sec-intro">How to Calculate the Area of a Right Triangle Using Its Two Legs</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-anatomy">What Is a Right Triangle?</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-base-height">Why Are the Two Legs the Base and Height?</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-formula">Why Is the Area of a Right Triangle Half the Product of Its Legs?</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-howto">How to Use the Right Triangle Area From Legs Calculator</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-examples">Step-by-Step Examples of Right Triangle Area From Two Legs</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-practical">Real-World Applications of Right Triangle Area From Two Legs</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-pythagoras">How Is the Pythagorean Theorem Related to Right Triangle Area?</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-missing-leg">How to Find a Missing Leg When the Triangle Area Is Known</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-scaling">How Does Changing the Two Legs Affect the Area?</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-general">Why Can&apos;t You Use the Two-Leg Formula for Every Triangle?</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-units">Understanding Units When Calculating Right Triangle Area</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-mistakes">Common Mistakes When Calculating Right Triangle Area From Legs</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-verify">How to Check Whether Your Right Triangle Area Is Correct</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-applications">Right Triangle Area From Two Legs in Practice</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-related">Explore Related Right Triangle Calculators</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-faq">Frequently Asked Questions</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-conclusion">Two Measurements, One Halved Product</a></li>
-  </ol>
+<!-- Section Navigation -->
+<nav class="surface-card p-5 mb-10 mx-auto mt-12 w-full max-w-4xl" aria-label="Guide contents">
+  <h2 class="text-on-surface !mt-0 text-xl">Section Navigation</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+    <a href="#sec-intro" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How to Calculate the Area of a Right Triangle Using Its Two Legs</a>
+    <a href="#sec-anatomy" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">What Is a Right Triangle?</a>
+    <a href="#sec-base-height" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Why Are the Two Legs the Base and Height?</a>
+    <a href="#sec-formula" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Why Is the Area of a Right Triangle Half the Product of Its Legs?</a>
+    <a href="#sec-howto" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How to Use the Right Triangle Area From Legs Calculator</a>
+    <a href="#sec-examples" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Step-by-Step Examples of Right Triangle Area From Two Legs</a>
+    <a href="#sec-practical" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Real-World Applications of Right Triangle Area From Two Legs</a>
+    <a href="#sec-pythagoras" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How Is the Pythagorean Theorem Related to Right Triangle Area?</a>
+    <a href="#sec-missing-leg" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How to Find a Missing Leg When the Triangle Area Is Known</a>
+    <a href="#sec-scaling" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How Does Changing the Two Legs Affect the Area?</a>
+    <a href="#sec-general" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Why Can&apos;t You Use the Two-Leg Formula for Every Triangle?</a>
+    <a href="#sec-units" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Understanding Units When Calculating Right Triangle Area</a>
+    <a href="#sec-mistakes" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Common Mistakes When Calculating Right Triangle Area From Legs</a>
+    <a href="#sec-verify" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How to Check Whether Your Right Triangle Area Is Correct</a>
+    <a href="#sec-applications" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Right Triangle Area From Two Legs in Practice</a>
+    <a href="#sec-related" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Explore Related Right Triangle Calculators</a>
+    <a href="#sec-faq" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Frequently Asked Questions</a>
+    <a href="#sec-conclusion" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Two Measurements, One Halved Product</a>
+  </div>
 </nav>
 
 <!-- Section 1: Introduction -->

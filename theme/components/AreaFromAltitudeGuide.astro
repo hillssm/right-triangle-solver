@@ -28,29 +28,29 @@ const rich = (s: string): string => {
 const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
 ---
 
-<!-- Table of Contents -->
-<nav class="mx-auto mt-12 w-full max-w-4xl section-shell" aria-label="Guide contents">
-  <h2 class="font-headline text-2xl font-bold">In This Guide</h2>
-  <ol class="mt-4 grid gap-2 sm:grid-cols-2">
-    <li><a class="hover:text-primary hover:underline" href="#sec-intro">How to Calculate Right Triangle Area From Altitude</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-understand">Understanding the Hypotenuse and Altitude</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-formula">Right Triangle Area From Altitude Formula</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-steps">Step-by-Step Calculation Example</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-howto">How to Use the Area From Altitude Calculator</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-examples">Worked Examples: Hypotenuse and Altitude</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-applications">Real-Life Applications</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-equal">Why Both Area Formulas Agree</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-geomean">How the Altitude Divides a Right Triangle</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-max">Maximum Possible Altitude</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-find-altitude">Finding the Altitude When It Is Unknown</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-units">Square Units and Conversions</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-mistakes">Common Mistakes</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-verify">How to Verify Your Answer</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-compare">Area From Altitude vs. Area From Two Legs</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-related">Explore Related Right Triangle Calculators</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-faq">FAQs</a></li>
-    <li><a class="hover:text-primary hover:underline" href="#sec-conclusion">Conclusion</a></li>
-  </ol>
+<!-- Section Navigation -->
+<nav class="surface-card p-5 mb-10 mx-auto mt-12 w-full max-w-4xl" aria-label="Guide contents">
+  <h2 class="text-on-surface !mt-0 text-xl">Section Navigation</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+    <a href="#sec-intro" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How to Calculate Right Triangle Area From Altitude</a>
+    <a href="#sec-understand" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Understanding the Hypotenuse and Altitude</a>
+    <a href="#sec-formula" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Right Triangle Area From Altitude Formula</a>
+    <a href="#sec-steps" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Step-by-Step Calculation Example</a>
+    <a href="#sec-howto" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How to Use the Area From Altitude Calculator</a>
+    <a href="#sec-examples" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Worked Examples: Hypotenuse and Altitude</a>
+    <a href="#sec-applications" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Real-Life Applications</a>
+    <a href="#sec-equal" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Why Both Area Formulas Agree</a>
+    <a href="#sec-geomean" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How the Altitude Divides a Right Triangle</a>
+    <a href="#sec-max" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Maximum Possible Altitude</a>
+    <a href="#sec-find-altitude" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Finding the Altitude When It Is Unknown</a>
+    <a href="#sec-units" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Square Units and Conversions</a>
+    <a href="#sec-mistakes" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Common Mistakes</a>
+    <a href="#sec-verify" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How to Verify Your Answer</a>
+    <a href="#sec-compare" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Area From Altitude vs. Area From Two Legs</a>
+    <a href="#sec-related" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Explore Related Right Triangle Calculators</a>
+    <a href="#sec-faq" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">FAQs</a>
+    <a href="#sec-conclusion" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Conclusion</a>
+  </div>
 </nav>
 
 <!-- Section 1: Introduction -->

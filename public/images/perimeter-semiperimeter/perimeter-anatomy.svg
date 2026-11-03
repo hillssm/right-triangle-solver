@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<rect width="1200" height="630" fill="#111412"/>
+<text x="60" y="55" fill="#f1c97d" font-size="26" font-family="Georgia,serif" text-anchor="start" font-weight="bold">Anatomy of a Right Triangle: Three Sides</text>
+<polygon points="380,150 380,490 830,490" fill="#f1c97d" fill-opacity="0.08"/>
+<line x1="380" y1="150" x2="380" y2="490" stroke="#f1c97d" stroke-width="6"/>
+<line x1="380" y1="490" x2="830" y2="490" stroke="#86c5be" stroke-width="6"/>
+<line x1="380" y1="150" x2="830" y2="490" stroke="#f5f0e6" stroke-width="6"/>
+<polyline points="380,462 352,462 352,490" fill="none" stroke="#f5f0e6" stroke-width="2.5"/>
+<circle cx="380" cy="150" r="6" fill="#f1c97d"/>
+<circle cx="380" cy="490" r="6" fill="#f1c97d"/>
+<circle cx="830" cy="490" r="6" fill="#f1c97d"/>
+<text x="380" y="118" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">B</text>
+<text x="348" y="505" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">C</text>
+<text x="862" y="505" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">A</text>
+<text x="340" y="320" fill="#f1c97d" font-size="26" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">a</text>
+<text x="605" y="528" fill="#86c5be" font-size="26" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">b</text>
+<text x="638" y="295" fill="#f5f0e6" font-size="26" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">c</text>
+<text x="905" y="270" fill="#f1c97d" font-size="30" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">P = a + b + c</text>
+<text x="905" y="318" fill="#f5f0e6" font-size="24" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">s = P / 2</text>
+<line x1="905" y1="358" x2="955" y2="358" stroke="#f1c97d" stroke-width="5"/>
+<text x="968" y="366" fill="#f5f0e6" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">leg a</text>
+<line x1="905" y1="398" x2="955" y2="398" stroke="#86c5be" stroke-width="5"/>
+<text x="968" y="406" fill="#f5f0e6" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">leg b</text>
+<line x1="905" y1="438" x2="955" y2="438" stroke="#f5f0e6" stroke-width="5"/>
+<text x="968" y="446" fill="#f5f0e6" font-size="18" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">hypotenuse c</text>
+</svg>

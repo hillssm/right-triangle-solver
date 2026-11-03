@@ -1,0 +1,620 @@
+---
+/**
+ * PerimeterSemiperimeterGuide.astro - Educational guide for the Right Triangle
+ * Perimeter and Semiperimeter Calculator page.
+ * Page 24 of 45. EN-only. 21 content sections, 4 SVG diagrams,
+ * 4 foundational worked examples, 12 practical examples, 12 FAQs.
+ * Covers right-triangle anatomy, perimeter P = a+b+c, semiperimeter
+ * s = (a+b+c)/2, the P vs s comparison, missing-side recovery with the
+ * Pythagorean theorem, Heron's formula and K = r s, unit handling and
+ * decimal measurements, scaling, common mistakes, and verification.
+ */
+import katex from 'katex';
+import Faq from 'theme/components/Faq.astro';
+
+const rich = (s: string): string => {
+  if (!s || typeof s !== 'string') return '';
+  let out = s;
+  out = out.replace(
+    /\[\[\[(.+?)\]\]\]/g,
+    (_, l) =>
+      `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
+  );
+  out = out.replace(
+    /\[\[(.+?)\]\]/g,
+    (_, l) =>
+      `<span dir="ltr" class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>`
+  );
+  return out;
+};
+
+const imgSrc = (name: string): string => `/images/perimeter-semiperimeter/${name}`;
+---
+
+<!-- Section Navigation -->
+<nav class="surface-card p-5 mb-10 mx-auto mt-12 w-full max-w-4xl" aria-label="Guide contents">
+  <h2 class="text-on-surface !mt-0 text-xl">Section Navigation</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+    <a href="#sec-intro" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How to Calculate the Perimeter and Semiperimeter of a Right Triangle</a>
+    <a href="#sec-right-triangle" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">What Is a Right Triangle?</a>
+    <a href="#sec-perimeter" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">What Is the Perimeter of a Right Triangle?</a>
+    <a href="#sec-semiperimeter" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">What Is the Semiperimeter of a Right Triangle?</a>
+    <a href="#sec-difference" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Perimeter vs. Semiperimeter: What Is the Difference?</a>
+    <a href="#sec-modes" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Understanding the Two Calculator Modes</a>
+    <a href="#sec-howto" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How to Use the Right Triangle Perimeter and Semiperimeter Calculator</a>
+    <a href="#sec-examples" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Step-by-Step Examples of Right Triangle Perimeter and Semiperimeter</a>
+    <a href="#sec-practical" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Real-Life Applications of Right Triangle Perimeter and Semiperimeter</a>
+    <a href="#sec-missing-side" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How to Calculate Perimeter When One Side Is Missing</a>
+    <a href="#sec-pythagoras" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How Is the Pythagorean Theorem Related to Right Triangle Perimeter?</a>
+    <a href="#sec-advanced" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How Is Semiperimeter Used in Other Triangle Formulas?</a>
+    <a href="#sec-perimeter-area" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">What Is the Difference Between Perimeter and Area?</a>
+    <a href="#sec-units" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Understanding Measurement Units in Perimeter and Semiperimeter Calculations</a>
+    <a href="#sec-scaling" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How Do Changes in Side Lengths Affect Perimeter and Semiperimeter?</a>
+    <a href="#sec-applications" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Practical Applications of Right Triangle Perimeter</a>
+    <a href="#sec-mistakes" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Common Mistakes When Calculating Right Triangle Perimeter and Semiperimeter</a>
+    <a href="#sec-verify" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">How to Check Whether Your Right Triangle Perimeter Is Correct</a>
+    <a href="#sec-related" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Explore Related Right Triangle Calculators</a>
+    <a href="#sec-faq" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">Frequently Asked Questions</a>
+    <a href="#sec-conclusion" class="no-underline px-3 py-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-primary/40 transition-colors text-primary underline">One Boundary, Two Useful Measurements</a>
+  </div>
+</nav>
+
+<!-- Section 1: Introduction -->
+<section id="sec-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Calculate the Perimeter and Semiperimeter of a Right Triangle</h2>
+  <p>Take <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />. The perimeter is <span set:html={rich('[[P=3+4+5]]')} />, <span set:html={rich('[[[\\boxed{P=12\\text{ units}}]]]')} />. The semiperimeter is <span set:html={rich('[[s=\\frac{3+4+5}{2}]]')} />, <span set:html={rich('[[[\\boxed{s=6\\text{ units}}]]]')} />. This is exactly what the Right Triangle Perimeter and Semiperimeter Calculator returns for these three inputs.</p>
+  <p>The perimeter describes the complete boundary of the triangle: the total length you would trace if you walked all three sides and returned to the start. The semiperimeter is half of that numerical total. Both are lengths, measured in units like metres, centimetres, feet, or inches. Neither one is an area, and neither one is reported in square units.</p>
+  <p>Three side measurements are required because the boundary has three edges, and the hypotenuse must be included: it is one of the three edges even though it never touches the right angle. The semiperimeter is half the perimeter because several advanced formulas, including Heron&apos;s formula and the inradius relation, are built around half the boundary rather than the whole. These two calculations are useful whenever a triangular outline needs measuring: edging a garden, trimming a frame, or feeding a length into the next formula in a longer problem.</p>
+</section>
+
+<!-- Section 2: Right triangle geometry -->
+<section id="sec-right-triangle" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>What Is a Right Triangle?</h2>
+  <p>Before any addition starts, the three sides must be labelled without error. The symbols below stay fixed through the whole guide, and the calculator uses the same names.</p>
+
+  <h3>Definition of a Right Triangle</h3>
+  <p>A right triangle is a three-sided polygon containing exactly one interior angle of 90 degrees. It has three vertices, three sides, two acute angles, and one right angle usually marked with a small square. The two sides forming the right angle are the legs; the side opposite is the hypotenuse. Since the angles of any triangle add to 180 degrees, <span set:html={rich('[[A+B+C=180^\\circ]]')} />, and with <span set:html={rich('[[C=90^\\circ]]')} /> it follows that <span set:html={rich('[[[\\boxed{A+B=90^\\circ}]]]')} />: the two acute angles are complementary, so knowing one determines the other.</p>
+
+  <h3>What Are the Two Legs?</h3>
+  <p>Leg <span set:html={rich('[[a]]')} /> sits opposite angle <span set:html={rich('[[A]]')} />; leg <span set:html={rich('[[b]]')} /> sits opposite angle <span set:html={rich('[[B]]')} />. The two legs meet at the right-angle vertex and are perpendicular to each other: each one stands at 90 degrees to the other. They form the square corner of the triangle, the kind of edge you would measure along a wall corner or a table edge. For perimeter work their role is simple: both are boundary edges, so both join the sum.</p>
+
+  <h3>What Is the Hypotenuse?</h3>
+  <p>The hypotenuse is the side opposite the right angle, always the longest side of the triangle. It never forms the right angle; it stretches across from it, connecting the far ends of the two legs. It differs from the legs in position and in length: the legs meet at 90 degrees, while the hypotenuse meets each leg at an acute angle. It must be included when calculating the complete perimeter, because the boundary is not complete until all three edges are counted. If both legs are known, the Pythagorean theorem recovers it through <span set:html={rich('[[[\\boxed{c=\\sqrt{a^2+b^2}}]]]')} />.</p>
+
+  <h3>Why Is the Right Angle Important?</h3>
+  <p>The right angle is what makes the triangle a right triangle, and everything else follows from it. It identifies the shape in a drawing or on site: find the square corner and the side labelling falls into place. It is the condition the Pythagorean theorem needs before it can be applied. In construction measurements and engineering drawings, the right angle is the reference everything is squared against: walls, frames, and brackets are checked with it. For verification, the right angle is the promise the three side lengths must keep through <span set:html={rich('[[a^2+b^2=c^2]]')} />.</p>
+
+  <h3>How Can You Identify the Correct Side Labels?</h3>
+  <p><span set:html={rich('[[a]]')} /> and <span set:html={rich('[[b]]')} /> are the legs, <span set:html={rich('[[c]]')} /> is the hypotenuse, and in a nondegenerate right triangle <span set:html={rich('[[c]]')} /> is the longest side. The right angle sits opposite <span set:html={rich('[[c]]')} />, so the vertex carrying the square marker tells you which side is <span set:html={rich('[[c]]')} />: it is the one that does not touch that vertex. A quick ordering check helps: sort the three numbers, and the largest must play the role of <span set:html={rich('[[c]]')} />. If the largest side is not opposite the square corner, the labels are wrong, and every calculation built on them will be wrong too.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('perimeter-anatomy.svg')} alt="Right triangle ABC with legs a and b, hypotenuse c, right-angle marker, and formulas P = a+b+c, s = (a+b+c)/2" class="mx-auto h-auto w-full max-w-xl my-8" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Triangle ABC with legs a and b, hypotenuse c, and the two boundary formulas.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 3: Perimeter -->
+<section id="sec-perimeter" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>What Is the Perimeter of a Right Triangle?</h2>
+  <p>The perimeter is the total distance around the outer boundary of a two-dimensional shape. For a triangle it is the sum of its three side lengths, <span set:html={rich('[[[\\boxed{P=a+b+c}]]]')} />, and every side must be included because every side is part of the boundary. Leave one out and the result is not a perimeter; it is a partial walk.</p>
+
+  <h3>Why Does the Hypotenuse Count Toward the Perimeter?</h3>
+  <p>The perimeter measures the complete outer boundary, not just the two perpendicular sides. Even though the hypotenuse sits opposite the right angle, it remains one of the three boundary edges: walk the triangle and you walk the hypotenuse too. Leaving it out measures two sides of a broken path, not the outline of a closed triangle. The formula has three terms because the shape has three edges; no edge is optional, however the triangle is oriented on the page or on the ground.</p>
+
+  <h3>How to Calculate Perimeter Step by Step</h3>
+  <p>Use <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />. Substitute into the formula: <span set:html={rich('[[P=3+4+5]]')} />. Add the first two lengths: <span set:html={rich('[[P=7+5]]')} />. Final result: <span set:html={rich('[[[\\boxed{P=12\\text{ units}}]]]')} />. Physically, 12 units is the length of a tape laid along all three edges end to end: the full outline of the triangle expressed as one continuous length.</p>
+
+  <h3>What Does Perimeter Tell You in Practical Work?</h3>
+  <p>It answers one question in many trades: how much material does the outline consume? That covers border materials, window trim, fence edging, protective strips, decorative framing, cable routes, fabric borders, and metal edge profiles. In each case the perimeter is the number taken to the supplier. It describes the length of the triangle&apos;s complete outline, not the amount of surface inside it: 12 metres of trim says nothing about the area the window covers, and it was never meant to.</p>
+</section>
+
+<!-- Section 4: Semiperimeter -->
+<section id="sec-semiperimeter" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>What Is the Semiperimeter of a Right Triangle?</h2>
+  <p>The semiperimeter is exactly half the triangle&apos;s full perimeter: <span set:html={rich('[[[\\boxed{s=\\frac{P}{2}}]]]')} />. Since <span set:html={rich('[[P=a+b+c]]')} />, it follows that <span set:html={rich('[[[\\boxed{s=\\frac{a+b+c}{2}}]]]')} />. The addition comes before the division because the semiperimeter halves the whole boundary, not each side separately. Dividing each side first and then adding would give the same number here, but the formula states the correct order of ideas: sum the boundary, then halve it.</p>
+
+  <h3>How to Calculate Semiperimeter Step by Step</h3>
+  <p>Use <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />. Add the three sides: <span set:html={rich('[[s=\\frac{3+4+5}{2}]]')} />. Simplify the total: <span set:html={rich('[[s=\\frac{12}{2}]]')} />. Final result: <span set:html={rich('[[[\\boxed{s=6\\text{ units}}]]]')} />. The semiperimeter is a derived geometric measurement used in several important triangle formulas; it rarely describes something you would measure directly with a tape, which is why the calculator computes it for you.</p>
+
+  <h3>Why Is Semiperimeter Used in Geometry?</h3>
+  <p>It is the natural variable of Heron&apos;s formula, of the inradius relation <span set:html={rich('[[K=rs]]')} />, and of incircle geometry in general. Triangle area formulas keep producing halves, and the semiperimeter absorbs them all at once, which is why proofs and advanced formulas prefer it over the full perimeter. When a formula asks for <span set:html={rich('[[s]]')} />, entering <span set:html={rich('[[P]]')} /> instead doubles or otherwise distorts the result, so the distinction is worth keeping sharp from the start.</p>
+
+  <h3>Is Semiperimeter Half the Boundary Physically?</h3>
+  <p>Not necessarily. The semiperimeter is half the numerical perimeter: 6 units when the perimeter is 12. It does not necessarily describe a continuous physical path covering half the triangle&apos;s boundary. There is no single walk along the edges that is &quot;the semiperimeter&quot; the way the perimeter is the full walk: the half is a number, not a route. Treating <span set:html={rich('[[s]]')} /> as a physical half-loop leads to confusion; treat it as half the total, the value the formulas need.</p>
+
+  <h3>Can Semiperimeter Be Smaller Than the Longest Side?</h3>
+  <p>No. The triangle inequality requires <span set:html={rich('[[a+b>c]]')} />: the two shorter sides together must exceed the longest side, or the triangle cannot close. Adding <span set:html={rich('[[c]]')} /> to both sides gives <span set:html={rich('[[a+b+c>2c]]')} />, and halving gives <span set:html={rich('[[[\\boxed{s>c}]]]')} />. For a valid nondegenerate triangle, the semiperimeter is greater than the longest side. This is a useful mathematical check: if a reported semiperimeter is smaller than the hypotenuse, the measurements cannot form a real triangle.</p>
+</section>
+
+<!-- Section 5: Perimeter vs semiperimeter -->
+<section id="sec-difference" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Perimeter vs. Semiperimeter: What Is the Difference?</h2>
+  <p>Perimeter: the total length around the triangle, <span set:html={rich('[[P=a+b+c]]')} />. Semiperimeter: half the total perimeter, <span set:html={rich('[[s=\\frac{a+b+c}{2}]]')} />. Same three sides, different geometric quantities: one is the whole, the other is the half. They are related by <span set:html={rich('[[s=\\frac{P}{2}]]')} /> and <span set:html={rich('[[P=2s]]')} />, and the calculator never uses the two symbols interchangeably.</p>
+
+  <h3>Numerical Comparison</h3>
+  <p>Use a 6-8-10 right triangle. Perimeter: <span set:html={rich('[[P=6+8+10]]')} />, <span set:html={rich('[[[\\boxed{P=24}]]]')} />. Semiperimeter: <span set:html={rich('[[s=\\frac{24}{2}]]')} />, <span set:html={rich('[[[\\boxed{s=12}]]]')} />. The two numbers differ by a factor of two, always: <span set:html={rich('[[s=\\frac{P}{2}]]')} /> and <span set:html={rich('[[P=2s]]')} />. The difference is not a different shape or a different triangle; it is the same boundary counted once versus counted as a half.</p>
+
+  <h3>Which Measurement Should You Use?</h3>
+  <p>Use the perimeter for bordering, framing, edging, fencing, and material estimates around an object: any job where the question is how much material the outline consumes. Use the semiperimeter for Heron&apos;s formula, inradius relationships, incircle calculations, and geometry problems involving triangle side lengths: any job where a formula asks for half the boundary as its input. The choice is driven by the task, not by preference: a trim estimate wants <span set:html={rich('[[P]]')} />, an area proof wants <span set:html={rich('[[s]]')} />.</p>
+
+  <h3>Does Semiperimeter Measure Half the Triangle&apos;s Area?</h3>
+  <p>No. Both perimeter and semiperimeter are linear measurements: lengths, reported in metres or feet, never square metres. Area measures the two-dimensional surface enclosed by the triangle and uses square units. Halving a length still gives a length. The warning is worth repeating because the names sound related: the semiperimeter is half the perimeter, not half the area, and no division of a boundary can produce a surface.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('semiperimeter-half.svg')} alt="6-8-10 triangle: perimeter bar of 24 units halved to a semiperimeter bar of 12 units" class="mx-auto h-auto w-full max-w-xl my-8" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">P = 24 halved to s = 12: the full boundary, then half of it.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 6: The two calculator modes -->
+<section id="sec-modes" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding the Two Calculator Modes</h2>
+  <p>The calculator keeps the two calculations in two separate modes because they answer different questions from the same three inputs. Choosing the mode is choosing which question is being asked.</p>
+
+  <h3>Perimeter Calculator Mode</h3>
+  <p>This mode calculates the total boundary length. Inputs: leg <span set:html={rich('[[a]]')} />, leg <span set:html={rich('[[b]]')} />, hypotenuse <span set:html={rich('[[c]]')} />. Formula: <span set:html={rich('[[P=a+b+c]]')} />. Output: perimeter <span set:html={rich('[[P]]')} />. The result is useful for estimating the total length of material required around a triangular outline: the number you take to the supplier when the job is edging, trim, or framing.</p>
+
+  <h3>Semiperimeter Calculator Mode</h3>
+  <p>This mode calculates half the total perimeter. Inputs: leg <span set:html={rich('[[a]]')} />, leg <span set:html={rich('[[b]]')} />, hypotenuse <span set:html={rich('[[c]]')} />. Formula: <span set:html={rich('[[s=\\frac{a+b+c}{2}]]')} />. Output: semiperimeter <span set:html={rich('[[s]]')} />. The result is useful as an intermediate value in advanced triangle calculations: the number you feed into Heron&apos;s formula or the inradius relation when the problem continues past the boundary.</p>
+
+  <h3>Why Are There Two Separate Modes?</h3>
+  <p>Both calculations use the same three side measurements but return different geometric quantities, and mixing them up is one of the most common errors in this topic. Two labelled modes keep the intent explicit: the button says Calculate Perimeter or Calculate Semiperimeter, and the result is labelled <span set:html={rich('[[P]]')} /> or <span set:html={rich('[[s]]')} />. The two modes save users from performing manual calculations while keeping the two answers impossible to confuse. Do not describe the semiperimeter mode as an area calculator: its output is a length, and it stays a length.</p>
+</section>
+
+<!-- Section 7: How to use the calculator -->
+<section id="sec-howto" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Use the Right Triangle Perimeter and Semiperimeter Calculator</h2>
+  <p>The steps below follow the on-screen layout for each mode, from identifying the measurements to a checked result. The two modes share the same three inputs and differ only in the final calculation.</p>
+
+  <h3>Perimeter Mode</h3>
+  <ol>
+    <li><strong>Select Perimeter mode.</strong> This tells the calculator the goal is the total boundary length.</li>
+    <li><strong>Identify leg a.</strong> This is one of the two sides forming the right angle.</li>
+    <li><strong>Identify leg b.</strong> This is the other side forming the right angle.</li>
+    <li><strong>Identify the hypotenuse c.</strong> This is the longest side, opposite the right angle.</li>
+    <li><strong>Enter leg a.</strong> Type the measured length into the first field.</li>
+    <li><strong>Enter leg b.</strong> Type the measured length into the second field.</li>
+    <li><strong>Enter the hypotenuse c.</strong> Type the measured length into the third field.</li>
+    <li><strong>Select the appropriate units.</strong> All three sides must share one unit before the addition means anything.</li>
+    <li><strong>Click Calculate Perimeter.</strong> The calculator adds the three sides.</li>
+    <li><strong>Review the result.</strong> Confirm that the perimeter exceeds the longest side.</li>
+    <li><strong>Check the displayed solution steps.</strong> They show <span set:html={rich('[[P=a+b+c]]')} /> with the entered values filled in.</li>
+    <li><strong>Verify that the output uses a linear measurement unit.</strong> Metres, centimetres, feet, or inches: never a square unit.</li>
+  </ol>
+
+  <h3>Semiperimeter Mode</h3>
+  <ol>
+    <li><strong>Select Semiperimeter mode.</strong> This tells the calculator the goal is half the boundary.</li>
+    <li><strong>Enter leg a.</strong> Same identification as in perimeter mode.</li>
+    <li><strong>Enter leg b.</strong> The second side forming the right angle.</li>
+    <li><strong>Enter the hypotenuse c.</strong> The longest side, opposite the right angle.</li>
+    <li><strong>Select compatible measurement units.</strong> One unit for all three sides.</li>
+    <li><strong>Click Calculate Semiperimeter.</strong> The calculator adds the three sides and halves the total.</li>
+    <li><strong>Review the result.</strong> It should be clearly smaller than the perimeter.</li>
+    <li><strong>Verify that the result is exactly half the perimeter.</strong> Check <span set:html={rich('[[s=\\frac{P}{2}]]')} /> against the perimeter mode output.</li>
+    <li><strong>Check the solution steps and the live visualization.</strong> The steps show the addition and the halving; the drawing shows the triangle those numbers came from.</li>
+    <li><strong>Use Reset when starting a new calculation.</strong> It clears all three fields for a clean start.</li>
+  </ol>
+  <p>The live visualization draws the triangle from the entered sides, which helps catch a mislabelled hypotenuse before the numbers are trusted. The formula diagram shows where each side sits in <span set:html={rich('[[P=a+b+c]]')} /> or <span set:html={rich('[[s=\\frac{a+b+c}{2}]]')} />. Neither mode accepts two sides: the calculator needs all three boundary lengths, so a missing side must be found first, as the missing-side section explains.</p>
+</section>
+
+<!-- Section 8: Four foundational examples -->
+<section id="sec-examples" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Step-by-Step Examples of Right Triangle Perimeter and Semiperimeter</h2>
+  <p>Four well-known Pythagorean triples show the full calculation for both measurements. Each one adds the three sides for the perimeter, then halves the total for the semiperimeter. The arithmetic is deliberately shown in full so the pattern is unmistakable.</p>
+
+  <h3>Example 1: 3-4-5 Right Triangle</h3>
+  <p>Given <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />. Calculate the perimeter: <span set:html={rich('[[P=3+4+5]]')} />, <span set:html={rich('[[[\\boxed{P=12\\text{ units}}]]]')} />. Calculate the semiperimeter: <span set:html={rich('[[s=\\frac{3+4+5}{2}]]')} />, <span set:html={rich('[[[\\boxed{s=6\\text{ units}}]]]')} />. Both results are correct because the perimeter counts every boundary edge once, and the semiperimeter is exactly half that count.</p>
+
+  <h3>Example 2: 6-8-10 Right Triangle</h3>
+  <p>Given <span set:html={rich('[[a=6]]')} />, <span set:html={rich('[[b=8]]')} />, <span set:html={rich('[[c=10]]')} />. Perimeter: <span set:html={rich('[[P=6+8+10]]')} />, <span set:html={rich('[[[\\boxed{P=24\\text{ units}}]]]')} />. Semiperimeter: <span set:html={rich('[[s=\\frac{24}{2}]]')} />, <span set:html={rich('[[[\\boxed{s=12\\text{ units}}]]]')} />. Doubling all three sides doubles both measurements: 24 is twice 12, and 12 is twice 6. Scaling the triangle scales its boundary measurements by the same factor.</p>
+
+  <h3>Example 3: 5-12-13 Right Triangle</h3>
+  <p>Given <span set:html={rich('[[a=5]]')} />, <span set:html={rich('[[b=12]]')} />, <span set:html={rich('[[c=13]]')} />. Perimeter: <span set:html={rich('[[P=5+12+13]]')} />, <span set:html={rich('[[[\\boxed{P=30\\text{ units}}]]]')} />. Semiperimeter: <span set:html={rich('[[s=\\frac{30}{2}]]')} />, <span set:html={rich('[[[\\boxed{s=15\\text{ units}}]]]')} />. Note that 15 exceeds the hypotenuse 13, as the triangle inequality check requires.</p>
+
+  <h3>Example 4: 8-15-17 Right Triangle</h3>
+  <p>Given <span set:html={rich('[[a=8]]')} />, <span set:html={rich('[[b=15]]')} />, <span set:html={rich('[[c=17]]')} />. Perimeter: <span set:html={rich('[[P=8+15+17]]')} />, <span set:html={rich('[[[\\boxed{P=40\\text{ units}}]]]')} />. Semiperimeter: <span set:html={rich('[[s=\\frac{40}{2}]]')} />, <span set:html={rich('[[[\\boxed{s=20\\text{ units}}]]]')} />. Again the semiperimeter clears the longest side: 20 against 17.</p>
+
+  <h3>Foundational Examples Comparison</h3>
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full text-sm my-6 border-collapse">
+      <thead>
+        <tr>
+          <th class="border-gray-600 px-4 py-2 text-left">Triangle</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Leg a</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Leg b</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Hypotenuse c</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Perimeter P</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Semiperimeter s</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="border-gray-600 px-4 py-2">3-4-5</td><td class="border-gray-600 px-4 py-2">3</td><td class="border-gray-600 px-4 py-2">4</td><td class="border-gray-600 px-4 py-2">5</td><td class="border-gray-600 px-4 py-2">12</td><td class="border-gray-600 px-4 py-2">6</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">6-8-10</td><td class="border-gray-600 px-4 py-2">6</td><td class="border-gray-600 px-4 py-2">8</td><td class="border-gray-600 px-4 py-2">10</td><td class="border-gray-600 px-4 py-2">24</td><td class="border-gray-600 px-4 py-2">12</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">5-12-13</td><td class="border-gray-600 px-4 py-2">5</td><td class="border-gray-600 px-4 py-2">12</td><td class="border-gray-600 px-4 py-2">13</td><td class="border-gray-600 px-4 py-2">30</td><td class="border-gray-600 px-4 py-2">15</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">8-15-17</td><td class="border-gray-600 px-4 py-2">8</td><td class="border-gray-600 px-4 py-2">15</td><td class="border-gray-600 px-4 py-2">17</td><td class="border-gray-600 px-4 py-2">40</td><td class="border-gray-600 px-4 py-2">20</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>As the triangle dimensions increase, both <span set:html={rich('[[P]]')} /> and <span set:html={rich('[[s]]')} /> grow in step with the sides. The table shows two patterns at once: each row&apos;s perimeter is the plain sum of its three sides, and each row&apos;s perimeter is exactly double its semiperimeter. The 3-4-5 and 6-8-10 rows also show scaling directly: every side doubled, both boundary measurements doubled.</p>
+</section>
+
+<!-- Section 9: Twelve practical examples -->
+<section id="sec-practical" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Real-Life Applications of Right Triangle Perimeter and Semiperimeter</h2>
+  <p>Twelve worked situations carry the two formulas from the page into the workshop and the site. Each one names a simplified right-triangular object or model, works the perimeter and semiperimeter through the formulas, and states the practical reading of the result. These are simplified models: not every real window, roof, garden, awning, panel, or support structure forms an exact right triangle, and an irregular object must be divided into simpler shapes before the formulas apply. Material allowances may be needed, cutting waste is not included, curved boundaries require different calculations, structural strength cannot be determined from perimeter alone, and actual construction measurements should be verified before purchasing materials.</p>
+
+  <h3>Example 1: Triangular Glass Window Frame</h3>
+  <p>A right-triangular window has <span set:html={rich('[[a=3\\text{ m}]]')} />, <span set:html={rich('[[b=4\\text{ m}]]')} />, <span set:html={rich('[[c=5\\text{ m}]]')} />. Perimeter: <span set:html={rich('[[P=3+4+5]]')} />, <span set:html={rich('[[[\\boxed{P=12\\text{ m}}]]]')} />. Semiperimeter: <span set:html={rich('[[s=\\frac{12}{2}]]')} />, <span set:html={rich('[[[\\boxed{s=6\\text{ m}}]]]')} />. Twelve metres is the total length around the window&apos;s triangular outline: the frame stock to order before mitre and waste allowances.</p>
+
+  <h3>Example 2: Roof Edge Trim</h3>
+  <p>A triangular roof-end section has <span set:html={rich('[[a=6\\text{ ft}]]')} />, <span set:html={rich('[[b=8\\text{ ft}]]')} />, <span set:html={rich('[[c=10\\text{ ft}]]')} />. Perimeter: <span set:html={rich('[[P=6+8+10]]')} />, <span set:html={rich('[[[\\boxed{P=24\\text{ ft}}]]]')} />. Semiperimeter: <span set:html={rich('[[s=\\frac{24}{2}]]')} />, <span set:html={rich('[[[\\boxed{s=12\\text{ ft}}]]]')} />. The perimeter estimates the trim length around the triangular outline of the roof end.</p>
+
+  <h3>Example 3: Garden Border</h3>
+  <p>A right-triangular garden section has <span set:html={rich('[[a=5\\text{ m}]]')} />, <span set:html={rich('[[b=12\\text{ m}]]')} />, <span set:html={rich('[[c=13\\text{ m}]]')} />. Perimeter: <span set:html={rich('[[P=5+12+13]]')} />, <span set:html={rich('[[[\\boxed{P=30\\text{ m}}]]]')} />. Semiperimeter: <span set:html={rich('[[s=15\\text{ m}]]')} />. The perimeter estimates the full length of garden edging around the section.</p>
+
+  <h3>Example 4: Steel Support Bracket</h3>
+  <p>A triangular metal bracket has <span set:html={rich('[[a=8\\text{ cm}]]')} />, <span set:html={rich('[[b=15\\text{ cm}]]')} />, <span set:html={rich('[[c=17\\text{ cm}]]')} />. Perimeter: <span set:html={rich('[[P=8+15+17]]')} />, <span set:html={rich('[[[\\boxed{P=40\\text{ cm}}]]]')} />. Semiperimeter: <span set:html={rich('[[[\\boxed{s=20\\text{ cm}}]]]')} />. The perimeter describes the bracket&apos;s outer edge, useful when specifying edge finishing.</p>
+
+  <h3>Example 5: Triangular Fabric Panel</h3>
+  <p>A right-triangular fabric panel has <span set:html={rich('[[a=9\\text{ ft}]]')} />, <span set:html={rich('[[b=12\\text{ ft}]]')} />, <span set:html={rich('[[c=15\\text{ ft}]]')} />. Perimeter: <span set:html={rich('[[P=9+12+15]]')} />, <span set:html={rich('[[[\\boxed{P=36\\text{ ft}}]]]')} />. Semiperimeter: <span set:html={rich('[[[\\boxed{s=18\\text{ ft}}]]]')} />. The perimeter estimates the edge length before seam allowances are added.</p>
+
+  <h3>Example 6: Triangular Sign Frame</h3>
+  <p>A sign has a right-triangular shape with <span set:html={rich('[[a=12\\text{ cm}]]')} />, <span set:html={rich('[[b=16\\text{ cm}]]')} />, <span set:html={rich('[[c=20\\text{ cm}]]')} />. Perimeter: <span set:html={rich('[[P=12+16+20]]')} />, <span set:html={rich('[[[\\boxed{P=48\\text{ cm}}]]]')} />. Semiperimeter: <span set:html={rich('[[[\\boxed{s=24\\text{ cm}}]]]')} />. The total perimeter estimates the framing material for the sign.</p>
+
+  <h3>Example 7: Landscaping Boundary</h3>
+  <p>A right-triangular landscaping section has <span set:html={rich('[[a=7\\text{ m}]]')} />, <span set:html={rich('[[b=24\\text{ m}]]')} />, <span set:html={rich('[[c=25\\text{ m}]]')} />. Perimeter: <span set:html={rich('[[P=7+24+25]]')} />, <span set:html={rich('[[[\\boxed{P=56\\text{ m}}]]]')} />. Semiperimeter: <span set:html={rich('[[[\\boxed{s=28\\text{ m}}]]]')} />. The perimeter estimates the border material around the section.</p>
+
+  <h3>Example 8: Triangular Solar Panel Support</h3>
+  <p>A simplified triangular support frame has <span set:html={rich('[[a=9\\text{ m}]]')} />, <span set:html={rich('[[b=40\\text{ m}]]')} />, <span set:html={rich('[[c=41\\text{ m}]]')} />. Perimeter: <span set:html={rich('[[P=9+40+41]]')} />, <span set:html={rich('[[[\\boxed{P=90\\text{ m}}]]]')} />. Semiperimeter: <span set:html={rich('[[[\\boxed{s=45\\text{ m}}]]]')} />. These are the lengths of the three sides of the modeled triangular frame, the starting point for member sizing.</p>
+
+  <h3>Example 9: Triangular Awning Border</h3>
+  <p>A right-triangular awning section has <span set:html={rich('[[a=15\\text{ ft}]]')} />, <span set:html={rich('[[b=20\\text{ ft}]]')} />, <span set:html={rich('[[c=25\\text{ ft}]]')} />. Perimeter: <span set:html={rich('[[P=15+20+25]]')} />, <span set:html={rich('[[[\\boxed{P=60\\text{ ft}}]]]')} />. Semiperimeter: <span set:html={rich('[[[\\boxed{s=30\\text{ ft}}]]]')} />. The perimeter estimates the border material for the awning edge.</p>
+
+  <h3>Example 10: Warehouse Roof-End Frame</h3>
+  <p>A simplified right-triangular roof-end frame has <span set:html={rich('[[a=11\\text{ m}]]')} />, <span set:html={rich('[[b=60\\text{ m}]]')} />, <span set:html={rich('[[c=61\\text{ m}]]')} />. Perimeter: <span set:html={rich('[[P=11+60+61]]')} />, <span set:html={rich('[[[\\boxed{P=132\\text{ m}}]]]')} />. Semiperimeter: <span set:html={rich('[[[\\boxed{s=66\\text{ m}}]]]')} />. The result represents the full outline of the triangular section.</p>
+
+  <h3>Example 11: Triangular Fabrication Panel</h3>
+  <p>A right-triangular industrial panel has <span set:html={rich('[[a=13\\text{ cm}]]')} />, <span set:html={rich('[[b=84\\text{ cm}]]')} />, <span set:html={rich('[[c=85\\text{ cm}]]')} />. Perimeter: <span set:html={rich('[[P=13+84+85]]')} />, <span set:html={rich('[[[\\boxed{P=182\\text{ cm}}]]]')} />. Semiperimeter: <span set:html={rich('[[[\\boxed{s=91\\text{ cm}}]]]')} />. The perimeter estimates the protective edge profiles for the panel.</p>
+
+  <h3>Example 12: Large Triangular Support Structure</h3>
+  <p>A right-triangular support structure has <span set:html={rich('[[a=28\\text{ m}]]')} />, <span set:html={rich('[[b=45\\text{ m}]]')} />, <span set:html={rich('[[c=53\\text{ m}]]')} />. Perimeter: <span set:html={rich('[[P=28+45+53]]')} />, <span set:html={rich('[[[\\boxed{P=126\\text{ m}}]]]')} />. Semiperimeter: <span set:html={rich('[[[\\boxed{s=63\\text{ m}}]]]')} />. These measurements serve as geometric inputs for further engineering calculations.</p>
+
+  <h3>Practical Examples Comparison</h3>
+  <div class="not-prose my-6 overflow-x-auto">
+    <table class="w-full text-sm my-6 border-collapse">
+      <thead>
+        <tr>
+          <th class="border-gray-600 px-4 py-2 text-left">Practical application</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Leg a</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Leg b</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Hypotenuse c</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Perimeter P</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Semiperimeter s</th>
+          <th class="border-gray-600 px-4 py-2 text-left">Measurement unit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="border-gray-600 px-4 py-2">Glass window frame</td><td class="border-gray-600 px-4 py-2">3</td><td class="border-gray-600 px-4 py-2">4</td><td class="border-gray-600 px-4 py-2">5</td><td class="border-gray-600 px-4 py-2">12</td><td class="border-gray-600 px-4 py-2">6</td><td class="border-gray-600 px-4 py-2">m</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Roof edge trim</td><td class="border-gray-600 px-4 py-2">6</td><td class="border-gray-600 px-4 py-2">8</td><td class="border-gray-600 px-4 py-2">10</td><td class="border-gray-600 px-4 py-2">24</td><td class="border-gray-600 px-4 py-2">12</td><td class="border-gray-600 px-4 py-2">ft</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Garden border</td><td class="border-gray-600 px-4 py-2">5</td><td class="border-gray-600 px-4 py-2">12</td><td class="border-gray-600 px-4 py-2">13</td><td class="border-gray-600 px-4 py-2">30</td><td class="border-gray-600 px-4 py-2">15</td><td class="border-gray-600 px-4 py-2">m</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Steel bracket</td><td class="border-gray-600 px-4 py-2">8</td><td class="border-gray-600 px-4 py-2">15</td><td class="border-gray-600 px-4 py-2">17</td><td class="border-gray-600 px-4 py-2">40</td><td class="border-gray-600 px-4 py-2">20</td><td class="border-gray-600 px-4 py-2">cm</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Fabric panel</td><td class="border-gray-600 px-4 py-2">9</td><td class="border-gray-600 px-4 py-2">12</td><td class="border-gray-600 px-4 py-2">15</td><td class="border-gray-600 px-4 py-2">36</td><td class="border-gray-600 px-4 py-2">18</td><td class="border-gray-600 px-4 py-2">ft</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Sign frame</td><td class="border-gray-600 px-4 py-2">12</td><td class="border-gray-600 px-4 py-2">16</td><td class="border-gray-600 px-4 py-2">20</td><td class="border-gray-600 px-4 py-2">48</td><td class="border-gray-600 px-4 py-2">24</td><td class="border-gray-600 px-4 py-2">cm</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Landscaping boundary</td><td class="border-gray-600 px-4 py-2">7</td><td class="border-gray-600 px-4 py-2">24</td><td class="border-gray-600 px-4 py-2">25</td><td class="border-gray-600 px-4 py-2">56</td><td class="border-gray-600 px-4 py-2">28</td><td class="border-gray-600 px-4 py-2">m</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Solar panel support</td><td class="border-gray-600 px-4 py-2">9</td><td class="border-gray-600 px-4 py-2">40</td><td class="border-gray-600 px-4 py-2">41</td><td class="border-gray-600 px-4 py-2">90</td><td class="border-gray-600 px-4 py-2">45</td><td class="border-gray-600 px-4 py-2">m</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Awning border</td><td class="border-gray-600 px-4 py-2">15</td><td class="border-gray-600 px-4 py-2">20</td><td class="border-gray-600 px-4 py-2">25</td><td class="border-gray-600 px-4 py-2">60</td><td class="border-gray-600 px-4 py-2">30</td><td class="border-gray-600 px-4 py-2">ft</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Warehouse roof end</td><td class="border-gray-600 px-4 py-2">11</td><td class="border-gray-600 px-4 py-2">60</td><td class="border-gray-600 px-4 py-2">61</td><td class="border-gray-600 px-4 py-2">132</td><td class="border-gray-600 px-4 py-2">66</td><td class="border-gray-600 px-4 py-2">m</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Fabrication panel</td><td class="border-gray-600 px-4 py-2">13</td><td class="border-gray-600 px-4 py-2">84</td><td class="border-gray-600 px-4 py-2">85</td><td class="border-gray-600 px-4 py-2">182</td><td class="border-gray-600 px-4 py-2">91</td><td class="border-gray-600 px-4 py-2">cm</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2">Support structure</td><td class="border-gray-600 px-4 py-2">28</td><td class="border-gray-600 px-4 py-2">45</td><td class="border-gray-600 px-4 py-2">53</td><td class="border-gray-600 px-4 py-2">126</td><td class="border-gray-600 px-4 py-2">63</td><td class="border-gray-600 px-4 py-2">m</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Section 10: Missing side -->
+<section id="sec-missing-side" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Calculate Perimeter When One Side Is Missing</h2>
+  <p>The calculator on this page requires all three side lengths. If one side is unknown, calculate it first with the Pythagorean theorem. The perimeter cannot be completed from two sides: two lengths describe an open corner, not a closed boundary.</p>
+
+  <h3>Finding the Hypotenuse When Both Legs Are Known</h3>
+  <p>Use the Pythagorean theorem in its hypotenuse form: <span set:html={rich('[[[\\boxed{c=\\sqrt{a^2+b^2}}]]]')} />. Example: <span set:html={rich('[[a=6]]')} />, <span set:html={rich('[[b=8]]')} />. Then <span set:html={rich('[[c=\\sqrt{6^2+8^2}]]')} />, <span set:html={rich('[[c=\\sqrt{36+64}]]')} />, <span set:html={rich('[[c=\\sqrt{100}]]')} />, <span set:html={rich('[[[\\boxed{c=10}]]]')} />. Now the perimeter can be calculated: <span set:html={rich('[[P=6+8+10]]')} />, <span set:html={rich('[[[\\boxed{P=24}]]]')} />, with <span set:html={rich('[[s=12]]')} /> following from the halving.</p>
+
+  <h3>Finding a Missing Leg When the Hypotenuse Is Known</h3>
+  <p>Rearrange <span set:html={rich('[[a^2+b^2=c^2]]')} /> to isolate the unknown leg: <span set:html={rich('[[[\\boxed{a=\\sqrt{c^2-b^2}}]]]')} />. Example: <span set:html={rich('[[c=13]]')} />, <span set:html={rich('[[b=12]]')} />. Then <span set:html={rich('[[a=\\sqrt{13^2-12^2}]]')} />, <span set:html={rich('[[a=\\sqrt{169-144}]]')} />, <span set:html={rich('[[a=\\sqrt{25}]]')} />, <span set:html={rich('[[[\\boxed{a=5}]]]')} />. The perimeter follows: <span set:html={rich('[[P=5+12+13=30]]')} />, <span set:html={rich('[[s=15]]')} />. The subtraction inside the root is the signature of a missing leg; a missing hypotenuse always adds.</p>
+
+  <h3>Why Must the Missing Side Be Calculated First?</h3>
+  <p>The perimeter requires all three boundary lengths. A missing side cannot simply be ignored or estimated without justification: two sides do not bound a triangle, and a guessed third side makes the total fiction. If only two sides are known, the <a href="/missing-leg-from-c-and-a-calculator/" class="text-primary underline">Right Triangle Side Calculator</a> finds the third before this page&apos;s calculator takes over. Note that this is an educational method, not an additional input mode in the existing calculator: the perimeter and semiperimeter modes still take three sides each.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('pythagoras-missing-side.svg')} alt="Right triangle with legs 6 and 8, unknown hypotenuse solved as 10, giving perimeter 24" class="mx-auto h-auto w-full max-w-xl my-8" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Legs 6 and 8 give c = 10, so P = 24 and s = 12.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 11: Pythagorean theorem -->
+<section id="sec-pythagoras" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How Is the Pythagorean Theorem Related to Right Triangle Perimeter?</h2>
+  <p>The theorem states <span set:html={rich('[[[\\boxed{a^2+b^2=c^2}]]]')} />. It establishes the relationship between the two legs and the hypotenuse: the square corner forces the three lengths into this exact balance. For perimeter work, the theorem is the bridge between an incomplete set of measurements and the complete boundary.</p>
+
+  <h3>Why Does It Matter for Perimeter?</h3>
+  <p>If the two legs are known, the hypotenuse can be calculated before finding the complete perimeter. Without the theorem, a missing side would block the calculation entirely; with it, two known sides are enough to recover the third and finish the sum. The theorem also runs the other direction: a known hypotenuse and one known leg recover the other leg. Either way, it turns a two-side problem into a three-side perimeter.</p>
+
+  <h3>Worked Example</h3>
+  <p>Given <span set:html={rich('[[a=5]]')} />, <span set:html={rich('[[b=12]]')} />. Find <span set:html={rich('[[c]]')} />: <span set:html={rich('[[c=\\sqrt{5^2+12^2}]]')} />, <span set:html={rich('[[c=\\sqrt{25+144}]]')} />, <span set:html={rich('[[c=\\sqrt{169}]]')} />, <span set:html={rich('[[[\\boxed{c=13}]]]')} />. Calculate the perimeter: <span set:html={rich('[[P=5+12+13]]')} />, <span set:html={rich('[[[\\boxed{P=30}]]]')} />. Calculate the semiperimeter: <span set:html={rich('[[s=\\frac{30}{2}]]')} />, <span set:html={rich('[[[\\boxed{s=15}]]]')} />. One theorem, one addition, one halving: the complete chain from two legs to both boundary measurements.</p>
+
+  <h3>How Can You Verify a Right Triangle?</h3>
+  <p>The three measurements must satisfy <span set:html={rich('[[a^2+b^2=c^2]]')} />, with the hypotenuse as the longest side. Also check the triangle inequality: for any valid triangle, <span set:html={rich('[[a+b>c]]')} />, <span set:html={rich('[[a+c>b]]')} />, and <span set:html={rich('[[b+c>a]]')} />. These conditions matter when checking measurements: a failed Pythagorean check means the triangle is not right-angled, or a side is mislabelled; a failed triangle inequality means the three lengths cannot form any triangle at all. Run both checks before trusting a perimeter built from field measurements.</p>
+</section>
+
+<!-- Section 12: Advanced uses of semiperimeter -->
+<section id="sec-advanced" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How Is Semiperimeter Used in Other Triangle Formulas?</h2>
+  <p>This section gives the semiperimeter its mathematical depth without turning the page into a different calculator&apos;s tutorial. The semiperimeter is more than half a perimeter: it is the quantity that connects side lengths to area and circle geometry, and the formulas below are where it earns its keep.</p>
+
+  <h3>Relationship Between Semiperimeter and Inradius</h3>
+  <p>The area of any nondegenerate triangle equals its inradius times its semiperimeter: <span set:html={rich('[[[\\boxed{K=rs}]]]')} />, where <span set:html={rich('[[K]]')} /> is the area, <span set:html={rich('[[r]]')} /> the inradius, and <span set:html={rich('[[s]]')} /> the semiperimeter. This relationship works for all nondegenerate triangles, not only right ones. For a right triangle, the inradius can also be calculated from the sides using <span set:html={rich('[[[\\boxed{r=\\frac{a+b-c}{2}}]]]')} />. Take the 3-4-5 triangle: <span set:html={rich('[[s=6]]')} />, <span set:html={rich('[[r=\\frac{3+4-5}{2}=1]]')} />, then <span set:html={rich('[[K=1\\times6]]')} />, <span set:html={rich('[[[\\boxed{K=6}]]]')} />. The semiperimeter is an important intermediate measurement in this calculation: it carries the boundary information while the inradius carries the circle information.</p>
+
+  <h3>Relationship With Heron&apos;s Formula</h3>
+  <p>Heron&apos;s formula computes the area from the three sides and the semiperimeter: <span set:html={rich('[[[\\boxed{K=\\sqrt{s(s-a)(s-b)(s-c)}}]]]')} />. It uses all three side lengths, it uses the semiperimeter, it calculates triangle area, and it works for any valid triangle. Use the 3-4-5 triangle with <span set:html={rich('[[s=6]]')} />: <span set:html={rich('[[K=\\sqrt{6(6-3)(6-4)(6-5)}]]')} />, <span set:html={rich('[[K=\\sqrt{6\\times3\\times2\\times1}]]')} />, <span set:html={rich('[[K=\\sqrt{36}]]')} />, <span set:html={rich('[[[\\boxed{K=6}]]]')} />. The semiperimeter appears four times inside the root, which shows how central it is: Heron&apos;s formula cannot even be written without it.</p>
+
+  <h3>Why Is Semiperimeter a Foundation Measurement?</h3>
+  <p>It is more than half a perimeter. It is a useful mathematical quantity that connects side lengths to area and circle geometry: the inradius relation treats it as the natural partner of <span set:html={rich('[[r]]')} />, and Heron&apos;s formula builds the entire area on it. Whenever a formula needs the boundary distilled to a single convenient number, <span set:html={rich('[[s]]')} /> is that number. This page does not turn into a full Heron&apos;s formula or inradius tutorial; it notes the connection so the semiperimeter mode&apos;s output has somewhere to go next.</p>
+</section>
+
+<!-- Section 13: Perimeter vs area -->
+<section id="sec-perimeter-area" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>What Is the Difference Between Perimeter and Area?</h2>
+  <p>One of the most persistent confusions in geometry is mixing up the outline with the surface. Perimeter and area share the same triangle but measure different things, in different units, answering different questions.</p>
+
+  <h3>Perimeter Measures the Boundary</h3>
+  <p><span set:html={rich('[[P=a+b+c]]')} />. It measures the total length around the triangle: the edging, the trim, the fence line. Units are linear: metres, centimetres, feet, inches. It is one-dimensional, a length and nothing else.</p>
+
+  <h3>Area Measures the Enclosed Surface</h3>
+  <p><span set:html={rich('[[[\\boxed{K=\\frac{ab}{2}}]]]')} />. It measures the flat two-dimensional region inside the right triangle: the glass in the window, the turf in the garden section. Units are square: square metres, square centimetres, square feet, square inches. It is two-dimensional, a surface count and nothing else.</p>
+
+  <h3>Can Two Triangles Have the Same Perimeter but Different Areas?</h3>
+  <p>Yes. Triangle 1: <span set:html={rich('[[a=5]]')} />, <span set:html={rich('[[b=12]]')} />, <span set:html={rich('[[c=13]]')} />. Then <span set:html={rich('[[P=5+12+13=30]]')} /> and <span set:html={rich('[[K=\\frac{5\\times12}{2}=30]]')} />. Triangle 2: <span set:html={rich('[[a=7.5]]')} />, <span set:html={rich('[[b=10]]')} />, <span set:html={rich('[[c=12.5]]')} />. Check the right angle: <span set:html={rich('[[7.5^2+10^2=56.25+100=156.25=12.5^2]]')} />, so it is a genuine right triangle. Its perimeter is <span set:html={rich('[[P=7.5+10+12.5=30]]')} />, the same 30, but its area is <span set:html={rich('[[K=\\frac{7.5\\times10}{2}=37.5]]')} />, clearly different. Equal perimeter does not automatically mean equal area: the outline length fixes the total edging, but the shape of the triangle decides how much surface that edging encloses.</p>
+
+  <h3>Why Should You Never Report Perimeter in Square Units?</h3>
+  <p>A perimeter is a one-dimensional length; square units describe a two-dimensional surface. Reporting 12 m² for a perimeter claims a surface where only an outline was measured, and anyone reading the number will picture the wrong thing. Keep the units honest: lengths in m, cm, ft, in; areas in m², cm², ft², in². The unit is part of the answer, and the wrong unit turns a right answer into a wrong one.</p>
+</section>
+
+<!-- Section 14: Units and decimals -->
+<section id="sec-units" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Understanding Measurement Units in Perimeter and Semiperimeter Calculations</h2>
+  <p>Metres, centimetres, millimetres, kilometres, feet, inches, yards, miles: length units come in many sizes, and the perimeter formula accepts any of them. The one rule is agreement: all three sides must speak the same unit before they are added.</p>
+
+  <h3>Why Must All Three Side Lengths Use Compatible Units?</h3>
+  <p>The perimeter is a sum of lengths. Adding 3 feet to 48 inches without converting mixes two scales, and the total has no clean meaning: 56 of what? Before adding measurements, convert them into a common unit. The calculator&apos;s unit selectors exist for exactly this step, and the worked example below shows the conversion doing its quiet, essential work.</p>
+
+  <h3>Worked Unit Conversion Example</h3>
+  <p>Given <span set:html={rich('[[a=3\\text{ ft}]]')} />, <span set:html={rich('[[b=48\\text{ inches}]]')} />, <span set:html={rich('[[c=5\\text{ ft}]]')} />. Convert the middle side: <span set:html={rich('[[48\\text{ inches}=4\\text{ ft}]]')} />. Then <span set:html={rich('[[P=3+4+5]]')} />, <span set:html={rich('[[[\\boxed{P=12\\text{ ft}}]]]')} />. Semiperimeter: <span set:html={rich('[[[\\boxed{s=6\\text{ ft}}]]]')} />. Note that the converted triple is the familiar 3-4-5, which confirms the conversion independently: had the inches been added raw, the &quot;perimeter&quot; would have been 56 of nothing coherent.</p>
+
+  <h3>Calculating With Decimal Side Measurements</h3>
+  <p>Use <span set:html={rich('[[a=2.5]]')} />, <span set:html={rich('[[b=6]]')} />, <span set:html={rich('[[c=6.5]]')} />. First confirm the right angle: <span set:html={rich('[[2.5^2+6^2=6.25+36=42.25=6.5^2]]')} />. Calculate the perimeter: <span set:html={rich('[[P=2.5+6+6.5]]')} />, <span set:html={rich('[[[\\boxed{P=15\\text{ units}}]]]')} />. Then the semiperimeter: <span set:html={rich('[[s=\\frac{15}{2}]]')} />, <span set:html={rich('[[[\\boxed{s=7.5\\text{ units}}]]]')} />. Decimals flow through the same addition and halving as whole numbers; the formulas never require integers, and workshop measurements rarely are.</p>
+
+  <h3>Why Should You Avoid Rounding Too Early?</h3>
+  <p>Measurement calculations may contain decimal values, and every intermediate rounding injects error that the later steps cannot remove. Keep sufficient precision in the intermediate steps and round only the final answer according to the measurement accuracy required. Rounding 2.5 to 3 mid-calculation would corrupt both <span set:html={rich('[[P]]')} /> and <span set:html={rich('[[s]]')} />; the calculator keeps full precision until the end, and hand calculations should do the same.</p>
+</section>
+
+<!-- Section 15: Scaling -->
+<section id="sec-scaling" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How Do Changes in Side Lengths Affect Perimeter and Semiperimeter?</h2>
+  <p>The perimeter is a linear measurement, so it scales linearly with the triangle: stretch every side by some factor and the boundary stretches by exactly that factor. The semiperimeter follows along, since it is always half the perimeter.</p>
+
+  <h3>What Happens When Every Side Doubles?</h3>
+  <p>Start from <span set:html={rich('[[P=a+b+c]]')} />. If every side doubles, the new perimeter is <span set:html={rich('[[P_2=2a+2b+2c]]')} />, which factors to <span set:html={rich('[[P_2=2(a+b+c)]]')} />. Therefore <span set:html={rich('[[[\\boxed{P_2=2P}]]]')} />. The semiperimeter also doubles, since halving a doubled total still doubles the half. The 3-4-5 to 6-8-10 pair shows it in numbers: 12 becomes 24, and 6 becomes 12.</p>
+
+  <h3>What Happens When Every Side Is Tripled?</h3>
+  <p>The same algebra with a factor of three gives <span set:html={rich('[[[\\boxed{P_2=3P}]]]')} /> and <span set:html={rich('[[[\\boxed{s_2=3s}]]]')} />. The linear scaling relationship holds for any scale factor <span set:html={rich('[[k]]')} />: multiply every side by <span set:html={rich('[[k]]')} /> and both boundary measurements multiply by <span set:html={rich('[[k]]')} />. This is why scale drawings are so well behaved: measure the drawing, multiply by the scale factor, and the real perimeter is done.</p>
+
+  <h3>What Happens When Only One Side Changes?</h3>
+  <p>Increasing one side while keeping the other two fixed changes the perimeter by the same amount: add 2 units to one side and <span set:html={rich('[[P]]')} /> grows by exactly 2, because the perimeter is a plain sum. But in a right triangle the side lengths are tied together by the Pythagorean theorem, so arbitrary side changes may not preserve the right-angle condition. Lengthening a leg without adjusting the hypotenuse breaks <span set:html={rich('[[a^2+b^2=c^2]]')} />, and the shape is no longer right-angled: the perimeter formula still adds three numbers, but they no longer describe a right triangle.</p>
+
+  <h3>Comparing Two Right Triangles</h3>
+  <p>Put 3-4-5 beside 6-8-10. Side lengths: each side doubled, scale factor 2. Perimeter: 12 against 24. Semiperimeter: 6 against 12. Doubling all side lengths doubles both boundary measurements, exactly as the algebra predicts. The comparison also runs the other way: if two triangles&apos; perimeters stand in a 2:1 ratio and both are right-angled, their sides stand in that ratio too.</p>
+</section>
+
+<!-- Section 16: Applications figure -->
+<section id="sec-applications" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Practical Applications of Right Triangle Perimeter</h2>
+  <p>The same two-step pattern, add then halve, shows up wherever a triangular outline needs measuring and a formula needs its half. A glazier totals a window frame from its edge lengths; a roofer totals trim around a gable end; a landscaper totals edging around a bed; a fabricator totals edge profile around a panel. From the three sides come the perimeter for the material order and the semiperimeter for any downstream geometry. The four panels below show the pattern at different scales: a window frame (12 m), roof edge trim (24 ft), a garden border (56 m), and a steel support frame (40 cm), each labelled with its perimeter and its semiperimeter.</p>
+
+  <figure class="not-prose my-6">
+    <img src={imgSrc('perimeter-applications.svg')} alt="Four panels: window frame 12 m, roof trim 24 ft, garden border 56 m, steel frame 40 cm perimeters" class="mx-auto h-auto w-full max-w-xl my-8" loading="lazy" />
+    <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Four real uses: a window frame, roof edge trim, a garden border, and a steel frame.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 17: Common mistakes -->
+<section id="sec-mistakes" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Common Mistakes When Calculating Right Triangle Perimeter and Semiperimeter</h2>
+  <p>Nearly every wrong answer in this topic traces to a skipped side or a confused label rather than bad arithmetic. The sixteen mistakes below are the ones that appear again and again, each with its cause and its fix.</p>
+
+  <h3>1. Forgetting to Include the Hypotenuse</h3>
+  <p>Using <span set:html={rich('[[P=a+b]]')} /> on the 3-4-5 triangle gives 7, not 12. The mistake happens because the hypotenuse never touches the right angle, so it feels separate from the triangle proper. Fix: the boundary has three edges; count all three, <span set:html={rich('[[P=a+b+c]]')} />.</p>
+
+  <h3>2. Confusing the Perimeter With the Semiperimeter</h3>
+  <p>Entering 6 where 12 belongs, or the reverse, halves or doubles the material estimate. The mistake comes from the two values sharing the same three sides. Fix: label every result <span set:html={rich('[[P]]')} /> or <span set:html={rich('[[s]]')} />, and check <span set:html={rich('[[s=\\frac{P}{2}]]')} /> before moving on.</p>
+
+  <h3>3. Dividing the Perimeter by Two When Calculating Perimeter</h3>
+  <p>Computing <span set:html={rich('[[\\frac{3+4+5}{2}=6]]')} /> and calling it the perimeter understates the boundary by half. The mistake is running the semiperimeter formula out of habit. Fix: <span set:html={rich('[[P=a+b+c]]')} /> has no division; the halving belongs to <span set:html={rich('[[s]]')} /> only.</p>
+
+  <h3>4. Forgetting to Divide by Two When Calculating Semiperimeter</h3>
+  <p>Reporting <span set:html={rich('[[s=12]]')} /> for the 3-4-5 triangle feeds Heron&apos;s formula a doubled <span set:html={rich('[[s]]')} /> and corrupts the area. Fix: <span set:html={rich('[[s=\\frac{a+b+c}{2}]]')} /> always ends with the halving; without it, the number is the perimeter.</p>
+
+  <h3>5. Using the Wrong Side as the Hypotenuse</h3>
+  <p>Treating a leg as <span set:html={rich('[[c]]')} />, for example entering a=5, b=4, c=3, scrambles every downstream formula. The mistake usually comes from reading the sides in the wrong order. Fix: <span set:html={rich('[[c]]')} /> is the longest side, opposite the right angle; sort the three numbers and assign <span set:html={rich('[[c]]')} /> to the largest.</p>
+
+  <h3>6. Entering Measurements That Do Not Form a Right Triangle</h3>
+  <p>Sides 2, 3, 4 give <span set:html={rich('[[P=9]]')} /> arithmetically, but <span set:html={rich('[[2^2+3^2=13\\neq16]]')} />, so no right angle exists and the page&apos;s formulas rest on a false premise. Fix: verify <span set:html={rich('[[a^2+b^2=c^2]]')} /> before calculating.</p>
+
+  <h3>7. Mixing Centimetres and Metres</h3>
+  <p>Adding 3 m, 40 cm, and 5 m as <span set:html={rich('[[3+40+5=48]]')} /> produces 48 of nothing. Fix: convert to one unit first: <span set:html={rich('[[40\\text{ cm}=0.4\\text{ m}]]')} />, then <span set:html={rich('[[P=8.4\\text{ m}]]')} />.</p>
+
+  <h3>8. Mixing Feet and Inches</h3>
+  <p>Adding 3 ft, 48 in, and 5 ft as 56 repeats the same scale error in imperial units. Fix: <span set:html={rich('[[48\\text{ in}=4\\text{ ft}]]')} />, then <span set:html={rich('[[P=12\\text{ ft}]]')} />.</p>
+
+  <h3>9. Reporting Perimeter in Square Units</h3>
+  <p>Writing <span set:html={rich('[[P=12\\text{ m}^2]]')} />. The mistake usually comes from copying an area unit out of habit after working area problems. Fix: perimeters are lengths, so <span set:html={rich('[[P=12\\text{ m}]]')} />.</p>
+
+  <h3>10. Reporting Semiperimeter as an Area</h3>
+  <p>Treating <span set:html={rich('[[s=6]]')} /> as 6 square units. The semiperimeter is a length, half a boundary, not a surface. Fix: <span set:html={rich('[[s=6]]')} /> units of length, full stop.</p>
+
+  <h3>11. Rounding Too Early</h3>
+  <p>Rounding 2.5 to 3 before adding gives <span set:html={rich('[[3+6+6.5=15.5]]')} /> instead of the true 15. The mistake feels harmless because the rounding looks small. Fix: keep full precision through the calculation and round only the final answer.</p>
+
+  <h3>12. Using Only Two Sides in the Existing Calculator</h3>
+  <p>Entering <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} /> and no <span set:html={rich('[[c]]')} /> leaves the boundary open. The calculator needs all three lengths because a perimeter is a closed total. Fix: find the missing side first with the Pythagorean theorem, then calculate.</p>
+
+  <h3>13. Ignoring the Triangle Inequality</h3>
+  <p>Sides 2, 3, 10 give <span set:html={rich('[[P=15]]')} /> arithmetically, but <span set:html={rich('[[2+3<10]]')} />, so no triangle exists at all. Fix: check <span set:html={rich('[[a+b>c]]')} /> before trusting any result built from the three numbers.</p>
+
+  <h3>14. Assuming the Semiperimeter Is a Physical Half-Boundary Path</h3>
+  <p>Looking for the &quot;6-unit walk&quot; along the 3-4-5 edges. No single continuous half-path equals <span set:html={rich('[[s]]')} /> in general; <span set:html={rich('[[s]]')} /> is half the numerical total. Fix: treat <span set:html={rich('[[s]]')} /> as a number for formulas, not a route to walk.</p>
+
+  <h3>15. Confusing Perimeter With the Sum of Only the Perpendicular Legs</h3>
+  <p>Computing <span set:html={rich('[[a+b=7]]')} /> and stopping, as if the hypotenuse were interior decoration. Fix: the hypotenuse is a boundary edge; <span set:html={rich('[[P=a+b+c]]')} />, all three terms, every time.</p>
+
+  <h3>16. Assuming Perimeter Alone Determines the Triangle&apos;s Area</h3>
+  <p>Believing <span set:html={rich('[[P=30]]')} /> fixes <span set:html={rich('[[K]]')} />. The 5-12-13 triangle (<span set:html={rich('[[K=30]]')} />) and the 7.5-10-12.5 triangle (<span set:html={rich('[[K=37.5]]')} />) share <span set:html={rich('[[P=30]]')} /> with different areas. Fix: area needs more than the boundary total; use the legs or Heron&apos;s formula.</p>
+
+  <h3>Wrong Versus Correct: A Concrete Example</h3>
+  <p>Given <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />. Correct perimeter: <span set:html={rich('[[P=3+4+5=12]]')} />. Incorrectly omitting the hypotenuse: <span set:html={rich('[[3+4=7]]')} />. Seven is not the complete perimeter because the boundary&apos;s third edge was never counted. Correct semiperimeter: <span set:html={rich('[[s=\\frac{12}{2}=6]]')} />. Six is not the full boundary length: it is half of it, the value formulas like Heron&apos;s need. The arithmetic looks confident in all three cases; only the geometry tells them apart.</p>
+</section>
+
+<!-- Section 18: Verification -->
+<section id="sec-verify" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>How to Check Whether Your Right Triangle Perimeter Is Correct</h2>
+  <p>Seven independent checks, all demonstrated on the 3-4-5 triangle (<span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />, <span set:html={rich('[[P=12]]')} />, <span set:html={rich('[[s=6]]')} />). Agreement between different routes is the strongest evidence an answer is right, in homework and in practical measurement alike.</p>
+
+  <h3>Method 1: Add All Three Sides Again</h3>
+  <p>Run <span set:html={rich('[[P=a+b+c]]')} /> fresh: <span set:html={rich('[[P=3+4+5=12]]')} />. A second pass with the numbers re-entered catches typos and mis-keyed digits that a single pass hides.</p>
+
+  <h3>Method 2: Divide the Perimeter by Two</h3>
+  <p>Compute <span set:html={rich('[[s=\\frac{P}{2}]]')} />: <span set:html={rich('[[s=\\frac{12}{2}=6]]')} />. If the halving does not match the semiperimeter mode&apos;s output, one of the two calculations went wrong and both deserve a second look.</p>
+
+  <h3>Method 3: Double the Semiperimeter</h3>
+  <p>Check <span set:html={rich('[[[\\boxed{P=2s}]]]')} />: <span set:html={rich('[[P=2\\times6=12]]')} />. This is the reverse of Method 2 and catches the same class of error from the other direction: a wrong <span set:html={rich('[[s]]')} /> fails here even when the original addition looked fine.</p>
+
+  <h3>Method 4: Verify the Pythagorean Relationship</h3>
+  <p>Confirm <span set:html={rich('[[a^2+b^2=c^2]]')} />: <span set:html={rich('[[3^2+4^2=9+16=25=5^2]]')} />. This checks the side identification behind every other calculation; a wrong hypotenuse means a side was mislabeled, and <span set:html={rich('[[P]]')} /> and <span set:html={rich('[[s]]')} /> both need rebuilding.</p>
+
+  <h3>Method 5: Check the Triangle Inequality</h3>
+  <p>Confirm <span set:html={rich('[[a+b>c]]')} />: <span set:html={rich('[[3+4=7>5]]')} />. The three lengths must be able to form a triangle at all before the right-angle check means anything. A failure here sends you back to the measurements, not to the arithmetic.</p>
+
+  <h3>Method 6: Check the Measurement Units</h3>
+  <p>Confirm that all three sides use compatible units. Mixed units are the quietest error in this topic: the arithmetic looks clean while the scale is wrong. Re-read each input&apos;s unit selector before trusting the total.</p>
+
+  <h3>Method 7: Compare With the Live Visualization</h3>
+  <p>The calculator draws the triangle from the entered sides. If the drawing looks nothing like the measured object, a side was misassigned: the longest entered side should sit opposite the square corner. The picture is an independent witness, and it is worth a glance before the numbers go into an order or a report.</p>
+</section>
+
+<!-- Section 19: Related calculators -->
+<section id="sec-related" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>Explore Related Right Triangle Calculators</h2>
+  <p>Different measurements call for different calculators.</p>
+  <ul class="not-prose mt-4 grid gap-x-8 sm:grid-cols-2">
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-perimeter-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">01</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Perimeter Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-semiperimeter-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">02</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Semiperimeter Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-area-from-semiperimeter-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">03</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Area From Semiperimeter Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/right-triangle-area-from-legs-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">04</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Area From Legs Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/pythagorean-theorem-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">05</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Pythagorean Theorem Calculator</span>
+      </a>
+    </li>
+    <li class="border-b border-primary/10">
+      <a href="/missing-leg-from-c-and-a-calculator/" class="group flex items-baseline gap-4 py-3.5">
+        <span class="font-headline text-sm text-primary/70 transition-colors group-hover:text-primary">06</span>
+        <span class="text-[15px] leading-snug text-on-surface transition-colors group-hover:text-primary">Right Triangle Missing Leg Calculator</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- Section 20: FAQs -->
+<section id="sec-faq" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <Faq
+    heading="Frequently Asked Questions"
+    items={[
+      {
+        question: 'What is the formula for the perimeter of a right triangle?',
+        answer: 'P = a + b + c, where a and b are the two legs and c is the hypotenuse. Add all three side lengths; the total is the complete boundary length in linear units. For a 3-4-5 triangle, P = 3 + 4 + 5 = 12 units. Every side must be included, including the hypotenuse, because it is one of the three boundary edges.'
+      },
+      {
+        question: 'What is the formula for the semiperimeter of a right triangle?',
+        answer: 's = (a + b + c) / 2, exactly half the perimeter, equivalently s = P / 2. Add the three sides first, then divide once. For a 3-4-5 triangle, s = (3 + 4 + 5) / 2 = 6 units. It is a length, not an area, and it is the input that formulas like Heron&apos;s expect.'
+      },
+      {
+        question: 'What is the difference between perimeter and semiperimeter?',
+        answer: 'The perimeter is the whole boundary, P = a + b + c; the semiperimeter is half of it, s = P / 2. For a 6-8-10 triangle, P = 24 and s = 12. Use P for material estimates around an outline and s as the input to advanced geometry formulas. The two differ by exactly a factor of two, always.'
+      },
+      {
+        question: 'Why is the hypotenuse included in the perimeter?',
+        answer: 'Because the perimeter measures the complete outer boundary, and the hypotenuse is one of its three edges. Walking the triangle means walking the hypotenuse too. Omitting it measures an open path, not a closed outline. For 3-4-5, leaving out the 5 gives 7, which is not the perimeter of any triangle with those sides.'
+      },
+      {
+        question: 'Can I calculate perimeter if one side is missing?',
+        answer: 'Not directly: the formula needs all three boundary lengths. Find the missing side first with the Pythagorean theorem: c = sqrt(a^2 + b^2) for a missing hypotenuse, or a = sqrt(c^2 - b^2) for a missing leg. With a = 6 and b = 8, c = 10, then P = 6 + 8 + 10 = 24. The calculator on this page requires all three sides.'
+      },
+      {
+        question: 'How do I find the hypotenuse before calculating perimeter?',
+        answer: 'Use c = sqrt(a^2 + b^2) with the two known legs. For a = 5 and b = 12: c = sqrt(25 + 144) = sqrt(169) = 13. Then add all three sides: P = 5 + 12 + 13 = 30. Confirm the result is the longest side; if it is not, the legs were mislabelled.'
+      },
+      {
+        question: 'Why is semiperimeter useful in geometry?',
+        answer: 'It is the natural variable of Heron&apos;s formula, K = sqrt(s(s - a)(s - b)(s - c)), and of the inradius relation K = r x s. Area formulas keep producing halves, and the semiperimeter absorbs them into one convenient number. For 3-4-5, s = 6 feeds both formulas and both return K = 6. It connects side lengths to area and circle geometry.'
+      },
+      {
+        question: 'Is semiperimeter half the triangle&apos;s area?',
+        answer: 'No. The semiperimeter is half the perimeter, a length measured in units like metres or feet. Area is a two-dimensional surface measured in square units. For the 3-4-5 triangle, s = 6 units while the area is 6 square units; the matching numbers are a coincidence of this particular triangle, not a rule.'
+      },
+      {
+        question: 'What units should I use for perimeter?',
+        answer: 'Any linear unit, as long as all three sides share it: metres, centimetres, millimetres, kilometres, feet, inches, yards, or miles. Convert before adding: 3 ft, 48 in, 5 ft becomes 3 ft, 4 ft, 5 ft, giving P = 12 ft. Never report a perimeter in square units; it is a length, not a surface.'
+      },
+      {
+        question: 'Can I calculate perimeter using decimal measurements?',
+        answer: 'Yes. The formulas handle decimals exactly like whole numbers. With a = 2.5, b = 6, c = 6.5: P = 2.5 + 6 + 6.5 = 15 units and s = 15 / 2 = 7.5 units. Keep full precision through the addition and round only the final answer to the accuracy the measurements justify.'
+      },
+      {
+        question: 'How do I check whether three sides form a valid right triangle?',
+        answer: 'Confirm the Pythagorean relationship a^2 + b^2 = c^2 with c as the longest side, and confirm the triangle inequality a + b > c. For 3, 4, 5: 9 + 16 = 25 and 3 + 4 > 5, so the triangle is valid and right-angled. Failing either test means the measurements need re-checking before any perimeter is trusted.'
+      },
+      {
+        question: 'What is the relationship between semiperimeter, inradius, and Heron&apos;s formula?',
+        answer: 'The semiperimeter feeds both: K = r x s links it to the inradius, and K = sqrt(s(s - a)(s - b)(s - c)) is Heron&apos;s formula built on it. For a right triangle the inradius also follows from the sides as r = (a + b - c) / 2. With 3-4-5, s = 6 and r = 1, so K = 1 x 6 = 6, matching Heron&apos;s result.'
+      }
+    ]}
+  />
+</section>
+
+<!-- Conclusion -->
+<section id="sec-conclusion" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
+  <h2>One Boundary, Two Useful Measurements</h2>
+  <p>The perimeter totals the boundary; the semiperimeter halves that total for the formulas that need it. The 3-4-5 triangle carries the whole story in miniature: <span set:html={rich('[[P=12]]')} /> units of outline for the material order, <span set:html={rich('[[s=6]]')} /> units ready for Heron&apos;s formula or the inradius relation. One addition and one halving cover both jobs.</p>
+  <p>The working habit is simple: label the hypotenuse correctly, include all three sides, match the units, keep decimals unrounded until the end, and verify through a second method. With those habits, <span set:html={rich('[[P=a+b+c]]')} /> and <span set:html={rich('[[s=\\frac{a+b+c}{2}]]')} /> are two of the most dependable measurements in geometry.</p>
+</section>

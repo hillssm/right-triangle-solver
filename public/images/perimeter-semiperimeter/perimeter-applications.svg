@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<rect width="1200" height="630" fill="#111412"/>
+<text x="60" y="55" fill="#f1c97d" font-size="26" font-family="Georgia,serif" text-anchor="start" font-weight="bold">Perimeter in Four Real-World Uses</text>
+<rect x="30" y="70" width="530" height="245" rx="8" fill="#161a18" stroke="#33362f" stroke-width="1.5"/>
+<text x="50" y="102" fill="#f1c97d" font-size="22" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">Window frame</text>
+<line x1="90" y1="125" x2="90" y2="245" stroke="#f1c97d" stroke-width="4"/>
+<line x1="90" y1="245" x2="250" y2="245" stroke="#f1c97d" stroke-width="4"/>
+<line x1="90" y1="125" x2="250" y2="245" stroke="#f1c97d" stroke-width="4"/>
+<polyline points="90,227 108,227 108,245" fill="none" stroke="#f5f0e6" stroke-width="2"/>
+<circle cx="90" cy="125" r="4" fill="#f5f0e6"/>
+<circle cx="90" cy="245" r="4" fill="#f5f0e6"/>
+<circle cx="250" cy="245" r="4" fill="#f5f0e6"/>
+<text x="290" y="160" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="normal">3 m, 4 m, 5 m</text>
+<text x="290" y="195" fill="#f1c97d" font-size="22" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">P = 12 m</text>
+<text x="290" y="230" fill="#86c5be" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">s = 6 m</text>
+<rect x="640" y="70" width="530" height="245" rx="8" fill="#161a18" stroke="#33362f" stroke-width="1.5"/>
+<text x="660" y="102" fill="#f1c97d" font-size="22" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">Roof edge trim</text>
+<line x1="700" y1="125" x2="700" y2="245" stroke="#f1c97d" stroke-width="4"/>
+<line x1="700" y1="245" x2="860" y2="245" stroke="#f1c97d" stroke-width="4"/>
+<line x1="700" y1="125" x2="860" y2="245" stroke="#f1c97d" stroke-width="4"/>
+<polyline points="700,227 718,227 718,245" fill="none" stroke="#f5f0e6" stroke-width="2"/>
+<circle cx="700" cy="125" r="4" fill="#f5f0e6"/>
+<circle cx="700" cy="245" r="4" fill="#f5f0e6"/>
+<circle cx="860" cy="245" r="4" fill="#f5f0e6"/>
+<text x="900" y="160" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="normal">6 ft, 8 ft, 10 ft</text>
+<text x="900" y="195" fill="#f1c97d" font-size="22" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">P = 24 ft</text>
+<text x="900" y="230" fill="#86c5be" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">s = 12 ft</text>
+<rect x="30" y="355" width="530" height="245" rx="8" fill="#161a18" stroke="#33362f" stroke-width="1.5"/>
+<text x="50" y="387" fill="#f1c97d" font-size="22" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">Garden border</text>
+<line x1="90" y1="410" x2="90" y2="530" stroke="#f1c97d" stroke-width="4"/>
+<line x1="90" y1="530" x2="250" y2="530" stroke="#f1c97d" stroke-width="4"/>
+<line x1="90" y1="410" x2="250" y2="530" stroke="#f1c97d" stroke-width="4"/>
+<polyline points="90,512 108,512 108,530" fill="none" stroke="#f5f0e6" stroke-width="2"/>
+<circle cx="90" cy="410" r="4" fill="#f5f0e6"/>
+<circle cx="90" cy="530" r="4" fill="#f5f0e6"/>
+<circle cx="250" cy="530" r="4" fill="#f5f0e6"/>
+<text x="290" y="445" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="normal">7 m, 24 m, 25 m</text>
+<text x="290" y="480" fill="#f1c97d" font-size="22" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">P = 56 m</text>
+<text x="290" y="515" fill="#86c5be" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">s = 28 m</text>
+<rect x="640" y="355" width="530" height="245" rx="8" fill="#161a18" stroke="#33362f" stroke-width="1.5"/>
+<text x="660" y="387" fill="#f1c97d" font-size="22" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">Steel support frame</text>
+<line x1="700" y1="410" x2="700" y2="530" stroke="#f1c97d" stroke-width="4"/>
+<line x1="700" y1="530" x2="860" y2="530" stroke="#f1c97d" stroke-width="4"/>
+<line x1="700" y1="410" x2="860" y2="530" stroke="#f1c97d" stroke-width="4"/>
+<polyline points="700,512 718,512 718,530" fill="none" stroke="#f5f0e6" stroke-width="2"/>
+<circle cx="700" cy="410" r="4" fill="#f5f0e6"/>
+<circle cx="700" cy="530" r="4" fill="#f5f0e6"/>
+<circle cx="860" cy="530" r="4" fill="#f5f0e6"/>
+<text x="900" y="445" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="normal">8 cm, 15 cm, 17 cm</text>
+<text x="900" y="480" fill="#f1c97d" font-size="22" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">P = 40 cm</text>
+<text x="900" y="515" fill="#86c5be" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">s = 20 cm</text>
+</svg>

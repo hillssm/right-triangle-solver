@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<rect width="1200" height="630" fill="#111412"/>
+<text x="60" y="55" fill="#f1c97d" font-size="26" font-family="Georgia,serif" text-anchor="start" font-weight="bold">Perimeter Halved: The Semiperimeter</text>
+<text x="100" y="152" fill="#f5f0e6" font-size="22" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="normal">P = 6 + 8 + 10 = 24 units</text>
+<rect x="100" y="170" width="240" height="90" fill="#f1c97d" stroke="#111412" stroke-width="3"/>
+<text x="220" y="228" fill="#1a1a1a" font-size="30" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">6</text>
+<rect x="340" y="170" width="320" height="90" fill="#86c5be" stroke="#111412" stroke-width="3"/>
+<text x="500" y="228" fill="#1a1a1a" font-size="30" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">8</text>
+<rect x="660" y="170" width="400" height="90" fill="#f5f0e6" stroke="#111412" stroke-width="3"/>
+<text x="860" y="228" fill="#1a1a1a" font-size="30" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">10</text>
+<line x1="580" y1="272" x2="580" y2="306" stroke="#f5f0e6" stroke-width="3"/>
+<polyline points="564,290 580,310 596,290" fill="none" stroke="#f5f0e6" stroke-width="3"/>
+<text x="340" y="352" fill="#f5f0e6" font-size="22" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="normal">s = 24 / 2 = 12 units</text>
+<rect x="340" y="370" width="480" height="90" fill="#f1c97d" stroke="#111412" stroke-width="3"/>
+<text x="580" y="428" fill="#1a1a1a" font-size="30" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">12</text>
+<rect x="100" y="500" width="1000" height="70" rx="8" fill="#161a18" stroke="#f1c97d" stroke-width="1.5"/>
+<text x="600" y="545" fill="#f5f0e6" font-size="24" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="normal">s is half the perimeter, not half the area.</text>
+</svg>

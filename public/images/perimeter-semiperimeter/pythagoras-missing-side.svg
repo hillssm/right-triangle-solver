@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<rect width="1200" height="630" fill="#111412"/>
+<text x="60" y="55" fill="#f1c97d" font-size="26" font-family="Georgia,serif" text-anchor="start" font-weight="bold">Find the Missing Side Before the Perimeter</text>
+<polygon points="300,200 300,480 660,480" fill="#f1c97d" fill-opacity="0.08"/>
+<line x1="300" y1="200" x2="300" y2="480" stroke="#f5f0e6" stroke-width="6"/>
+<line x1="300" y1="480" x2="660" y2="480" stroke="#f5f0e6" stroke-width="6"/>
+<line x1="300" y1="200" x2="660" y2="480" stroke="#86c5be" stroke-width="5" stroke-dasharray="12,8"/>
+<polyline points="300,452 272,452 272,480" fill="none" stroke="#f5f0e6" stroke-width="2.5"/>
+<circle cx="300" cy="200" r="6" fill="#f1c97d"/>
+<circle cx="300" cy="480" r="6" fill="#f1c97d"/>
+<circle cx="660" cy="480" r="6" fill="#f1c97d"/>
+<text x="300" y="168" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">B</text>
+<text x="268" y="495" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">C</text>
+<text x="692" y="495" fill="#f5f0e6" font-size="20" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">A</text>
+<text x="268" y="340" fill="#f5f0e6" font-size="26" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">6</text>
+<text x="480" y="520" fill="#f5f0e6" font-size="26" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">8</text>
+<text x="516" y="293" fill="#86c5be" font-size="28" font-family="Manrope,Arial,sans-serif" text-anchor="middle" font-weight="bold">c = ?</text>
+<text x="790" y="240" fill="#f5f0e6" font-size="26" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="normal">c² = 6² + 8²</text>
+<text x="790" y="292" fill="#f5f0e6" font-size="26" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="normal">c = √(36 + 64) = √100</text>
+<text x="790" y="350" fill="#f1c97d" font-size="30" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">c = 10</text>
+<line x1="790" y1="380" x2="1120" y2="380" stroke="#33362f" stroke-width="1.5"/>
+<text x="790" y="428" fill="#f5f0e6" font-size="26" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">P = 6 + 8 + 10 = 24</text>
+<text x="790" y="476" fill="#f5f0e6" font-size="26" font-family="Manrope,Arial,sans-serif" text-anchor="start" font-weight="bold">s = 24 / 2 = 12</text>
+</svg>

@@ -1,0 +1,992 @@
+# MASTER SEO CONTENT PROMPT — RIGHT TRIANGLE ALTITUDE FROM PROJECTIONS CALCULATOR
+
+## ROLE AND OBJECTIVE
+
+Act as an experienced mathematics educator, geometry specialist, professional educational content writer, and technical SEO strategist.
+
+Your task is to write a comprehensive, mathematically accurate, genuinely helpful, and SEO-friendly educational guide for the following calculator page:
+
+**Page URL:** https://www.righttrianglesolver.com/right-triangle-altitude-from-projections-calculator/
+
+**Primary Topic:** Right Triangle Altitude From Projections Calculator
+
+**Primary Focus Keyword:** Right Triangle Altitude From Projections Calculator
+
+**Target Length:** 3,500–4,000 words, excluding metadata, diagrams, and structured data. You may exceed 4,000 words only if doing so adds meaningful educational value.
+
+**Target Audience:**
+- Middle school and high school geometry students
+- College students reviewing triangle geometry
+- Mathematics teachers and tutors
+- Parents helping children with homework
+- Beginners learning geometric mean relationships
+- Anyone solving right triangle altitude problems
+
+**Writing Style:** Natural, approachable, clear, educational, engaging, and professionally written in American English.
+
+The article must feel like a knowledgeable mathematics teacher patiently explaining the topic to a student.
+
+Avoid robotic writing, keyword stuffing, unnecessary repetition, exaggerated claims, generic introductions, and content written solely to increase word count.
+
+The primary objective is to help readers understand, calculate, visualize, and verify the altitude of a right triangle when its two hypotenuse projections are known.
+
+---
+
+## 1. RESEARCH AND EXISTING PAGE ANALYSIS
+
+Before writing, carefully examine the existing webpage.
+
+Identify:
+- The calculator's actual functionality
+- Available input fields
+- Supported units, if applicable
+- Calculation formula
+- Current diagram and its labels
+- Existing examples
+- Existing FAQs
+- Related calculator links
+- Educational explanations already present
+
+Retain accurate existing information and improve its clarity, depth, and usefulness.
+
+Do not invent calculator features.
+
+Do not claim that the calculator offers downloadable reports, interactive diagrams, additional measurements, or other functionality unless the page actually provides those features.
+
+Do not replace useful existing content merely to make the article longer.
+
+Preserve the working calculator and keep it near the top of the page.
+
+Write original explanations rather than copying wording from competing websites.
+
+---
+
+## 2. SEO STRATEGY
+
+### Primary Keyword
+
+Right Triangle Altitude From Projections Calculator
+
+Use the exact primary keyword naturally in:
+- SEO title
+- H1 heading
+- First 100 words
+- One relevant H2 heading, if appropriate
+- Meta description, if it fits naturally
+- A small number of additional relevant locations
+
+Do not force the exact keyword into every section.
+
+### Secondary Keywords
+
+Use these phrases only where contextually appropriate:
+
+- altitude of a right triangle
+- right triangle altitude formula
+- altitude from projections
+- geometric mean theorem
+- right triangle height calculator
+- hypotenuse projections
+- altitude to the hypotenuse
+- geometric mean of two segments
+- right triangle projection formula
+- find triangle altitude
+- right triangle similarity theorem
+- altitude theorem
+- height of a right triangle
+- hypotenuse segments
+- right triangle geometry
+
+### Semantic Terms
+
+Naturally incorporate relevant mathematical terminology:
+
+- perpendicular height
+- right angle
+- hypotenuse
+- legs of a triangle
+- similar triangles
+- geometric mean
+- square root
+- proportional segments
+- altitude foot
+- Pythagorean theorem
+- projection length
+- geometric relationships
+- triangle area
+- 45-45-90 triangle
+- squared units
+- positive lengths
+
+### Keyword Usage Rules
+
+1. Prioritize natural language over keyword density.
+2. Avoid repeating the full focus keyword unnecessarily.
+3. Use synonyms and contextual variations.
+4. Never insert keywords into sentences where they sound unnatural.
+5. Do not create multiple headings that answer the same question.
+6. Avoid keyword-heavy paragraphs.
+7. Satisfy search intent before considering SEO scoring tools.
+8. Do not add irrelevant sections merely to target more keywords.
+
+The content should demonstrate topical depth through useful mathematics, not repetitive phrases.
+
+---
+
+## 3. SEARCH INTENT
+
+The primary search intent is informational with a calculator-based task.
+
+A visitor typically wants to:
+
+1. Calculate the altitude of a right triangle using two projections.
+2. Find the correct mathematical formula.
+3. Understand what projections mean.
+4. Learn how the altitude theorem works.
+5. Follow a step-by-step calculation.
+6. See a clearly labeled geometric diagram.
+7. Verify an answer manually.
+8. Avoid common geometry mistakes.
+
+Address the first two needs immediately.
+
+Place the calculator and essential formula before the lengthy educational explanations.
+
+Do not make visitors scroll through thousands of words to find the actual calculation method.
+
+---
+
+## 4. REQUIRED ARTICLE STRUCTURE
+
+Follow the structure below while avoiding overlapping explanations.
+
+### H1: Right Triangle Altitude From Projections Calculator
+
+Write an engaging introduction of approximately 100–140 words.
+
+Explain:
+- What the calculator does
+- Which two measurements are required
+- What result the user receives
+- Why the formula works in simple terms
+
+Introduce the formula early:
+
+**h = √(p × q)**
+
+Where:
+- h = altitude to the hypotenuse
+- p = first hypotenuse projection
+- q = second hypotenuse projection
+
+Use a small numerical illustration to establish the concept.
+
+Keep the introduction direct and useful.
+
+### H2: Calculate the Altitude of a Right Triangle From Projections
+
+This section must appear directly above or below the existing calculator interface.
+
+Explain:
+- Projection p input
+- Projection q input
+- Unit consistency
+- Calculate button
+- Displayed result
+- Reset button
+
+Do not invent calculator capabilities.
+
+Provide a short example:
+
+If p = 9 cm and q = 16 cm:
+
+h = √(9 × 16)
+
+h = √144
+
+h = 12 cm
+
+Explain that the altitude is 12 cm.
+
+### H2: What Is the Altitude of a Right Triangle?
+
+Explain the concept in beginner-friendly language.
+
+Cover:
+- Definition of altitude
+- Perpendicular distance
+- Altitude drawn from the right-angle vertex
+- Difference between an altitude and a triangle leg
+- Why the hypotenuse can serve as the base
+
+Explain how the altitude divides the original right triangle into two smaller right triangles.
+
+Use a relatable explanation without sacrificing mathematical accuracy.
+
+### H2: What Are Projections in a Right Triangle?
+
+Define the two hypotenuse projections.
+
+Explain:
+- How the altitude divides the hypotenuse
+- What p represents
+- What q represents
+- How p and q relate to the hypotenuse
+- Why p + q = c
+- Why both projections must be positive
+
+Clarify that projections are not the same as the two legs.
+
+Include a simple comparison table:
+
+| Measurement | Meaning |
+|---|---|
+| p | First hypotenuse segment |
+| q | Second hypotenuse segment |
+| h | Perpendicular altitude |
+| c | Complete hypotenuse |
+| a | First triangle leg |
+| b | Second triangle leg |
+
+Use a consistent diagram-labeling convention throughout the article.
+
+### H2: Right Triangle Altitude From Projections Formula
+
+Introduce:
+
+h² = p × q
+
+Then:
+
+h = √(p × q)
+
+Explain every variable.
+
+Provide a short explanation of why multiplication is required and why the square root must be taken.
+
+Discuss:
+- Positive lengths
+- Consistent measurement units
+- Squared units in the intermediate calculation
+- Linear units in the final answer
+
+Explain that the altitude is the geometric mean of the two projections.
+
+Do not repeat the same definition across several paragraphs.
+
+### H2: How to Calculate Altitude From Projections Step by Step
+
+Present a clear numbered method.
+
+Step 1: Identify both hypotenuse projections.
+
+Step 2: Check that the measurements use the same unit.
+
+Step 3: Multiply p and q.
+
+Step 4: Take the positive square root.
+
+Step 5: Write the final answer with its correct unit.
+
+Step 6: Check whether the answer is reasonable.
+
+Use a fully worked example:
+
+p = 4 cm
+
+q = 9 cm
+
+h² = 4 × 9
+
+h² = 36
+
+h = 6 cm
+
+Explain each operation.
+
+### H2: Right Triangle Altitude Diagram Explained
+
+Include a large, accurate, clearly labeled geometric diagram.
+
+**Diagram requirements:**
+- Draw triangle ABC with the right angle at C.
+- Draw altitude CD perpendicular to hypotenuse AB.
+- Label AD = p.
+- Label DB = q.
+- Label CD = h.
+- Label AB = c.
+- Label AC = a.
+- Label BC = b.
+- Show a 90° marker at C.
+- Show a 90° marker at D.
+- Clearly distinguish the altitude from the legs.
+
+Provide explanatory text below the diagram.
+
+Describe how the altitude divides the original triangle into two similar triangles.
+
+Explain how readers can identify the correct projections in textbook questions.
+
+**Diagram quality requirements:**
+
+Use a mathematically correct SVG diagram or provide a precise SVG implementation specification.
+
+Ensure all labels are readable on desktop and mobile.
+
+Use accessible color contrast.
+
+Include descriptive alternative text and a useful figure caption.
+
+Do not rely on an inaccurate AI-generated mathematical illustration.
+
+### H2: Why Does the Altitude Formula Work? Proof Using Similar Triangles
+
+Explain the mathematical reasoning behind:
+
+h² = p × q
+
+Use triangle similarity.
+
+Show the proportional relationship:
+
+h / p = q / h
+
+Then cross-multiply:
+
+h² = p × q
+
+Finally:
+
+h = √(p × q)
+
+Explain why the positive square root represents a length.
+
+Include a second supporting diagram showing the two smaller right triangles and their corresponding sides.
+
+Keep the proof mathematically rigorous but understandable for beginners.
+
+### H2: Worked Examples of Altitude From Projections
+
+Include at least six genuinely different examples.
+
+**Example 1: Simple whole numbers**
+
+p = 4 cm, q = 9 cm
+
+Answer: 6 cm
+
+**Example 2: Equal projections**
+
+p = 5 cm, q = 5 cm
+
+Answer: 5 cm
+
+Explain the special case of an isosceles right triangle.
+
+**Example 3: Decimal projections**
+
+p = 3.6 m, q = 6.4 m
+
+Answer: 4.8 m
+
+**Example 4: Unequal projections**
+
+p = 2 cm, q = 18 cm
+
+Answer: 6 cm
+
+Explain why the altitude is not the arithmetic average.
+
+**Example 5: Non-perfect square**
+
+p = 5 cm, q = 7 cm
+
+h = √35 cm
+
+h ≈ 5.916 cm
+
+Explain when rounding is appropriate.
+
+**Example 6: Different input units**
+
+p = 40 mm
+
+q = 9 cm
+
+Convert 40 mm to 4 cm.
+
+h = √(4 × 9)
+
+h = 6 cm
+
+Explain why units must be converted before calculation.
+
+For each example:
+- State the given measurements.
+- Show the formula.
+- Substitute values.
+- Show intermediate calculations.
+- Present the final answer.
+- Explain the result briefly.
+
+Do not repeat generic commentary after every example.
+
+### H2: How to Check Your Altitude Calculation
+
+Explain three independent verification methods.
+
+**Method 1: Geometric mean check**
+
+Verify:
+
+h² = p × q
+
+**Method 2: Hypotenuse and leg relationships**
+
+Calculate:
+
+c = p + q
+
+a = √(p × c)
+
+b = √(q × c)
+
+Then verify:
+
+h = ab / c
+
+**Method 3: Triangle area relationship**
+
+Show that:
+
+Area = (a × b) / 2
+
+and:
+
+Area = (c × h) / 2
+
+Explain why both expressions represent the same area.
+
+Use a consistent numerical example to verify the results.
+
+### H2: Relationship Between Altitude, Hypotenuse, and Triangle Legs
+
+Explain how the measurements relate.
+
+Include:
+
+c = p + q
+
+a² = p × c
+
+b² = q × c
+
+h² = p × q
+
+h = ab / c
+
+Explain the conditions under which each formula applies.
+
+Clarify the difference between finding altitude from projections and finding altitude from the legs.
+
+Include a concise formula comparison table.
+
+### H2: Geometric Mean Theorem and Right Triangle Altitude
+
+Explain:
+- What the geometric mean means
+- Why altitude is the geometric mean of p and q
+- Difference between geometric mean and arithmetic mean
+- How similar triangles establish the relationship
+
+Include a small comparison.
+
+For p = 4 and q = 9:
+
+Geometric mean = √36 = 6
+
+Arithmetic mean = (4 + 9) / 2 = 6.5
+
+Explain why the altitude equals 6 rather than 6.5.
+
+### H2: Special Cases and Important Properties
+
+Discuss the following cases:
+
+**Equal projections:** p = q
+
+Explain the isosceles right triangle case.
+
+**Very unequal projections:** p is much smaller than q
+
+Explain how the altitude changes.
+
+**Fixed hypotenuse:** p + q remains constant
+
+Explain why the altitude is largest when p = q.
+
+Include:
+
+h ≤ (p + q) / 2
+
+Explain equality conditions.
+
+**Zero projections:** p = 0 or q = 0
+
+Explain that this is a degenerate case rather than a valid nondegenerate right triangle.
+
+**Negative projections**
+
+Explain why negative segment lengths are invalid.
+
+Keep this section accessible and avoid unnecessary advanced terminology.
+
+### H2: Common Mistakes When Finding Altitude From Projections
+
+Cover at least eight meaningful mistakes:
+
+1. Adding projections instead of multiplying them.
+2. Forgetting the square root.
+3. Confusing projections with triangle legs.
+4. Using inconsistent units.
+5. Using negative measurements.
+6. Treating h² as the final altitude.
+7. Rounding too early.
+8. Using the formula for an arbitrary triangle without the required right-triangle geometry.
+
+For each mistake, provide:
+- The incorrect approach
+- Why it is wrong
+- The correct method
+
+Use brief examples where helpful.
+
+### H2: Practical Applications of the Altitude Theorem
+
+Explain where this mathematical relationship may be useful.
+
+Possible contexts:
+- Classroom geometry exercises
+- Triangle construction problems
+- Similarity proofs
+- Surveying models
+- Engineering geometry
+- Architectural drawings
+- Triangular structural layouts
+
+Avoid suggesting that two arbitrary baseline distances are sufficient to determine a real-world height.
+
+Explain that the geometric conditions of a right triangle must be satisfied before the theorem applies.
+
+Use realistic hypothetical examples and distinguish them from verified engineering procedures.
+
+### H2: Practice Problems With Answers
+
+Provide five original problems.
+
+Use varied difficulty levels:
+- Beginner
+- Beginner-intermediate
+- Intermediate
+- Intermediate with decimals
+- Advanced application
+
+Include a separate answer section with calculations.
+
+Make sure every answer is mathematically correct.
+
+Avoid using the same numbers repeatedly.
+
+### H2: Frequently Asked Questions
+
+Write 10–12 helpful FAQs addressing genuine reader questions.
+
+Suggested questions:
+
+1. What is the formula for altitude from projections?
+2. What are hypotenuse projections?
+3. Why is altitude the geometric mean of two projections?
+4. Can I find altitude without knowing the triangle legs?
+5. Can the two projections have different lengths?
+6. What happens when both projections are equal?
+7. Can the altitude be longer than either projection?
+8. What if the projections use different units?
+9. Can the altitude be greater than half the hypotenuse?
+10. How do I check my altitude calculation?
+11. Is the altitude theorem related to the Pythagorean theorem?
+12. Can I use this formula for a non-right triangle?
+
+Keep each answer approximately 40–75 words unless a shorter explanation completely answers the question.
+
+Do not repeat entire article sections in the FAQs.
+
+---
+
+## 5. VISUAL CONTENT REQUIREMENTS
+
+Provide specifications for at least four meaningful educational diagrams.
+
+**Diagram 1: Main Right Triangle Altitude Diagram**
+
+Show ABC, altitude CD, and projections p and q.
+
+**Diagram 2: Similar Triangles Proof**
+
+Show the two smaller right triangles and their corresponding sides.
+
+**Diagram 3: Equal vs. Unequal Projections**
+
+Compare two triangles with the same hypotenuse length but different projection distributions.
+
+Explain how their altitudes differ.
+
+**Diagram 4: Geometric Mean vs. Arithmetic Mean**
+
+Create a clear mathematical comparison using p = 4 and q = 9.
+
+For every diagram, provide:
+- Suggested placement
+- Accurate geometric labels
+- Visual construction instructions
+- Descriptive image alt text
+- Short educational caption
+- Mobile readability requirements
+
+Prefer responsive SVG for precise mathematical figures.
+
+Ensure diagrams are mathematically consistent with the examples.
+
+Do not generate decorative images that add no educational value.
+
+---
+
+## 6. INTERNAL LINKING STRATEGY
+
+Include natural, contextual internal links to relevant existing tools on RightTriangleSolver.com.
+
+Relevant pages include:
+
+- https://www.righttrianglesolver.com/right-triangle-altitude-calculator/
+- https://www.righttrianglesolver.com/right-triangle-altitude-from-sides-calculator/
+- https://www.righttrianglesolver.com/right-triangle-projection-calculator/
+- https://www.righttrianglesolver.com/right-triangle-area-from-altitude-calculator/
+- https://www.righttrianglesolver.com/right-triangle-side-calculator/
+
+Internal linking requirements:
+
+1. Link only where the destination genuinely helps the reader.
+2. Use natural, descriptive anchor text.
+3. Avoid repetitive exact-match anchor text.
+4. Do not place multiple links in one sentence.
+5. Do not insert links into every paragraph.
+6. Do not link to the current page itself.
+7. Verify that destination URLs work before including them.
+8. Avoid adding links simply to reach a numerical target.
+
+Use approximately 4–7 contextual internal links if they fit naturally.
+
+Do not force additional links.
+
+---
+
+## 7. READABILITY AND HUMAN-WRITING RULES
+
+The article must sound naturally written by an experienced educator.
+
+Follow these rules strictly.
+
+### Sentence Structure
+
+- Prefer short and medium-length sentences.
+- Vary sentence rhythm naturally.
+- Use active voice whenever practical.
+- Avoid comma splices.
+- Avoid unnecessary subordinate clauses.
+- Break down complicated mathematical explanations.
+- Use transitions only when they improve understanding.
+
+### Paragraph Structure
+
+- Prefer paragraphs of 2–4 sentences.
+- Allow longer paragraphs when necessary for a connected explanation.
+- Avoid walls of text.
+- Avoid excessive one-sentence paragraphs.
+- Use bullet points for genuine lists, not every explanation.
+
+### Language
+
+Use simple, accurate English.
+
+Explain technical terminology before relying on it.
+
+Avoid unnecessarily formal language.
+
+Do not use exaggerated phrases such as:
+- Ultimate game-changing calculator
+- Revolutionary mathematics tool
+- Unlock the secrets of geometry
+- In today's fast-paced digital world
+- Dive into the fascinating world of triangles
+- Seamlessly calculate
+- Effortlessly master everything
+
+Avoid formulaic AI-style introductions and conclusions.
+
+Do not make unsupported claims about accuracy, popularity, or educational outcomes.
+
+### Human-Friendly Teaching
+
+Anticipate genuine beginner questions.
+
+Explain why each calculation step matters.
+
+Use practical comparisons where appropriate.
+
+Point out common misconceptions.
+
+Offer simple verification methods.
+
+Do not repeat the same definition in different words just to increase article length.
+
+---
+
+## 8. MATHEMATICAL ACCURACY REQUIREMENTS
+
+Mathematical correctness is mandatory.
+
+Before finalizing, verify:
+
+- All formulas
+- Every worked example
+- All square-root calculations
+- Decimal approximations
+- Unit conversions
+- Similar-triangle proportions
+- Triangle diagrams
+- Special-case explanations
+- Practice-problem answers
+- FAQ calculations
+
+Use:
+
+h = √(p × q)
+
+only when p and q are the positive segments into which the altitude from the right-angle vertex divides the hypotenuse.
+
+Maintain a consistent labeling convention.
+
+For triangle ABC, with right angle C and altitude CD to AB:
+
+AD = p
+
+DB = q
+
+CD = h
+
+AB = c
+
+AC = a
+
+BC = b
+
+Therefore:
+
+c = p + q
+
+a² = p × c
+
+b² = q × c
+
+h² = p × q
+
+Use correct mathematical notation and dimensional units.
+
+For example, when p and q are measured in centimeters, p × q is measured in square centimeters, while h is measured in centimeters.
+
+Distinguish exact answers from rounded approximations.
+
+Never invent mathematical theorems or unsupported properties.
+
+---
+
+## 9. SEO METADATA
+
+After completing the article, provide:
+
+**SEO Title**
+
+Write a compelling title of approximately 50–60 characters when practical.
+
+Include the main keyword or a natural close variation.
+
+**Meta Description**
+
+Write approximately 145–160 characters.
+
+Describe the calculator's usefulness, formula, and educational value.
+
+Avoid keyword stuffing.
+
+**Suggested URL Slug**
+
+Retain the existing slug:
+
+right-triangle-altitude-from-projections-calculator
+
+Do not recommend changing the live URL without a strong technical reason.
+
+**Primary Focus Keyword**
+
+Provide the main keyword.
+
+**Secondary Keywords**
+
+Provide 8–12 relevant supporting keywords.
+
+**Image SEO**
+
+Provide descriptive alt text for each proposed educational diagram.
+
+Avoid stuffing keywords into alt text.
+
+---
+
+## 10. STRUCTURED DATA RECOMMENDATIONS
+
+Suggest suitable structured data based on the actual page content.
+
+Consider:
+- WebPage
+- BreadcrumbList
+- WebApplication, if its properties accurately describe the calculator
+
+Only recommend structured data that accurately represents visible page content.
+
+Do not invent reviews, ratings, prices, organizations, or unsupported features.
+
+FAQ content may be included on the page for users, but do not promise Google FAQ rich results.
+
+Do not insert schema code into the visible article.
+
+Provide any suggested JSON-LD separately after the article.
+
+---
+
+## 11. USER EXPERIENCE AND PAGE LAYOUT
+
+Structure the page in this order:
+
+1. H1 and short introduction
+2. Calculator interface
+3. Formula summary
+4. Main triangle diagram
+5. Calculator usage instructions
+6. Essential definitions
+7. Detailed formula explanation
+8. Step-by-step examples
+9. Similar-triangle proof
+10. Advanced relationships
+11. Common mistakes
+12. Practical applications
+13. Practice problems
+14. FAQs
+15. Related calculators
+
+Make the page easy to scan.
+
+Use informative H2 and H3 headings.
+
+Avoid unnecessary heading depth.
+
+Include tables only when comparisons genuinely benefit readers.
+
+Use diagrams near the explanations they support.
+
+Keep the main calculator accessible without excessive scrolling.
+
+For mobile visitors, prioritize readable equations, responsive diagrams, and concise instructions.
+
+---
+
+## 12. CONTENT QUALITY AND ORIGINALITY CHECK
+
+Before submitting, evaluate the article against these questions:
+
+- Does the introduction answer the main search intent immediately?
+- Can a beginner understand the formula?
+- Are the projections clearly distinguished from the legs?
+- Are the examples varied and useful?
+- Are all calculations accurate?
+- Do the diagrams explain real mathematical relationships?
+- Is the similar-triangle proof correct?
+- Are the internal links relevant?
+- Does every section add distinct information?
+- Are any paragraphs repetitive?
+- Does the writing sound natural when read aloud?
+- Is the content useful even without considering search rankings?
+- Does the article avoid unsupported claims?
+- Are headings descriptive rather than keyword-stuffed?
+- Are the FAQs genuinely helpful?
+- Does the article match the actual calculator functionality?
+
+Remove weak, repetitive, irrelevant, or generic content.
+
+Prioritize clarity and accuracy over word count.
+
+---
+
+## 13. REQUIRED FINAL OUTPUT
+
+Deliver the following in this order:
+
+**Part A: SEO Metadata**
+- SEO title
+- Meta description
+- Primary keyword
+- Secondary keywords
+- Existing URL slug
+
+**Part B: Complete Article**
+- 3,500–4,000 words, with additional words only where justified
+- Proper H1, H2, and H3 hierarchy
+- Natural internal links
+- Accurate mathematical formulas
+- Worked examples
+- Helpful tables
+- Practical explanations
+- Practice problems
+- FAQs
+
+**Part C: Diagram Specifications**
+- Four educational diagrams
+- Exact mathematical labeling
+- Placement recommendations
+- Alt text
+- Captions
+- Responsive SVG guidance
+
+**Part D: Structured Data Recommendations**
+- Appropriate schema types
+- Implementation notes
+- JSON-LD only where supported by actual page information
+
+**Part E: Final Quality Report**
+- Approximate article word count
+- Mathematical accuracy review
+- Repetition review
+- Internal link review
+- Search intent coverage
+- Readability review
+
+Do not claim guaranteed rankings, perfect SEO scores, or guaranteed AI-detection outcomes.
+
+Do not add generic filler to meet the word target.
+
+**FINAL INSTRUCTION:**
+
+Write a genuinely useful, comprehensive educational resource that helps readers solve right triangle altitude problems from projections confidently.
+
+The article should be accurate enough for mathematics teachers, simple enough for beginners, and structured well enough for a calculator-focused educational website.
+
+Every section must earn its place through clear explanations, correct calculations, meaningful examples, or practical learning value.

@@ -19,6 +19,12 @@ const rich = (s: string): string => {
     (_, l) =>
       `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
   );
+  // Keep a trailing period glued to inline math (prevents orphaned "." on mobile wraps)
+  out = out.replace(
+    /\[\[((?:(?!\[\[|\]\]).)+?)\]\]\./g,
+    (_, l) =>
+      `<span dir="ltr" class="math-nowrap"><span class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>.</span>`
+  );
   out = out.replace(
     /\[\[(.+?)\]\]/g,
     (_, l) =>
@@ -106,7 +112,7 @@ const faqs = [
 <!-- SECTION 1: Introduction -->
 <section id="sec-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>What Is a Sine Ratio Calculator?</h2>
-  <p>A sine ratio calculator answers one question: for an acute angle in a right triangle, how does the side across from the angle compare with the longest side? Enter the opposite side and the hypotenuse, and the tool divides the opposite side by the hypotenuse, returning <span set:html={rich('[[\\sin(A)=a/c]]')} />. A right triangle has an opposite side of 3 cm and a hypotenuse of 5 cm, so <span set:html={rich('[[\\sin(A)=3/5=0.6]]')} />. That 0.6 is the sine ratio: it tells you the opposite side is 60 percent of the hypotenuse. It is not an angle, so never read it as <span set:html={rich('[[0.6^\\circ]]')} />. The adjacent side never enters this calculation; the opposite side and the hypotenuse are sufficient on their own. Sine is one of the fundamental trigonometric ratios, and its power is that it compares two lengths in a way that depends only on the angle, not on the size of the triangle. If the angle in degrees is what you need, inverse sine converts the ratio into degrees.</p>
+  <p>A sine ratio calculator answers one question: for an acute angle in a right triangle, how does the side across from the angle compare with the longest side? Enter the opposite side and the hypotenuse, and the tool divides the opposite side by the hypotenuse, returning <span set:html={rich('[[\\sin(A)=a/c]].')} /> A right triangle has an opposite side of 3 cm and a hypotenuse of 5 cm, so <span set:html={rich('[[\\sin(A)=3/5=0.6]].')} /> That 0.6 is the sine ratio: it tells you the opposite side is 60 percent of the hypotenuse. It is not an angle, so never read it as <span set:html={rich('[[0.6^\\circ]].')} /> The adjacent side never enters this calculation; the opposite side and the hypotenuse are sufficient on their own. Sine is one of the fundamental trigonometric ratios, and its power is that it compares two lengths in a way that depends only on the angle, not on the size of the triangle. If the angle in degrees is what you need, inverse sine converts the ratio into degrees.</p>
 </section>
 
 <!-- SECTION 2: Understanding the right triangle -->
@@ -141,7 +147,7 @@ const faqs = [
   <h3>Understanding SOH-CAH-TOA</h3>
   <p>Students remember the three main ratios with the mnemonic SOH-CAH-TOA:</p>
   <p><strong>SOH:</strong> Sine = Opposite / Hypotenuse. <strong>CAH:</strong> Cosine = Adjacent / Hypotenuse. <strong>TOA:</strong> Tangent = Opposite / Adjacent.</p>
-  <p>SOH corresponds directly to the sine formula <span set:html={rich('[[\\sin(A)=a/c]]')} />. The mnemonic works because it pairs each ratio name with the two sides it needs, in the right order: for sine, the opposite side goes on top and the hypotenuse goes underneath. Once the two sides are named correctly, the mnemonic turns "which side goes where" from a memory problem into a lookup.</p>
+  <p>SOH corresponds directly to the sine formula <span set:html={rich('[[\\sin(A)=a/c]].')} /> The mnemonic works because it pairs each ratio name with the two sides it needs, in the right order: for sine, the opposite side goes on top and the hypotenuse goes underneath. Once the two sides are named correctly, the mnemonic turns "which side goes where" from a memory problem into a lookup.</p>
 
   <h3>Why Sine Is a Ratio</h3>
   <p>Dividing two lengths produces a dimensionless number because the units cancel:</p>
@@ -149,7 +155,7 @@ const faqs = [
   <p>The metres cancel, leaving 0.6. Using 300 cm and 500 cm gives the identical result, since both lengths scale together. The only requirement is compatible units: both measurements must use the same unit, or one must be converted before dividing. The ratio is therefore a property of the angle, not of the particular ruler used to measure the triangle.</p>
 
   <h3>What Does a Sine Value of 0.6 Mean?</h3>
-  <p><span set:html={rich('[[\\sin(A)=0.6]]')} /> means the opposite side is 60 percent of the hypotenuse. The 3-4-5 triangle is the classic reference: <span set:html={rich('[[\\sin(A)=3/5=0.6]]')} />. The number reveals the triangle's shape at a glance: a sine near 1 means the opposite side nearly matches the hypotenuse and the angle is steep; a sine near 0 means the opposite side is short relative to the hypotenuse and the angle is shallow. None of this suggests that 0.6 is an angle; it is a proportion, and only inverse sine turns it into degrees.</p>
+  <p><span set:html={rich('[[\\sin(A)=0.6]]')} /> means the opposite side is 60 percent of the hypotenuse. The 3-4-5 triangle is the classic reference: <span set:html={rich('[[\\sin(A)=3/5=0.6]].')} /> The number reveals the triangle's shape at a glance: a sine near 1 means the opposite side nearly matches the hypotenuse and the angle is steep; a sine near 0 means the opposite side is short relative to the hypotenuse and the angle is shallow. None of this suggests that 0.6 is an angle; it is a proportion, and only inverse sine turns it into degrees.</p>
 
   <h3>Why Sine Is Between 0 and 1</h3>
   <p>The hypotenuse is longer than the opposite side, so <span set:html={rich('[[0 \\lt a \\lt c]]')} />, and therefore:</p>
@@ -182,10 +188,10 @@ const faqs = [
   <p><strong>Step 2:</strong> Substitute the known values. <span set:html={rich('[[\\sin(A)=3/5]]')} /></p>
   <p><strong>Step 3:</strong> Divide. <span set:html={rich('[[\\boxed{\\sin(A)=0.6}]]')} /></p>
   <p><strong>Step 4:</strong> Interpret the result. The opposite side is 60 percent of the hypotenuse.</p>
-  <p><strong>Step 5:</strong> Verify the triangle. <span set:html={rich('[[3^2+4^2=5^2]]')} />, and <span set:html={rich('[[9+16=25]]')} />. The Pythagorean check confirms these side lengths form a right triangle, so the sine result is trustworthy.</p>
+  <p><strong>Step 5:</strong> Verify the triangle. <span set:html={rich('[[3^2+4^2=5^2]]')} />, and <span set:html={rich('[[9+16=25]].')} /> The Pythagorean check confirms these side lengths form a right triangle, so the sine result is trustworthy.</p>
 
   <h3>Important Clarification</h3>
-  <p>If the reader wants the angle rather than its sine ratio, inverse sine is required: <span set:html={rich('[[A=\\sin^{-1}(0.6)\\approx36.87^\\circ]]')} />. Inverse sine is also called arcsine and is a separate operation from calculating the sine ratio. The existing sine ratio calculator computes the ratio from two side lengths; it does not directly return the angle.</p>
+  <p>If the reader wants the angle rather than its sine ratio, inverse sine is required: <span set:html={rich('[[A=\\sin^{-1}(0.6)\\approx36.87^\\circ]].')} /> Inverse sine is also called arcsine and is a separate operation from calculating the sine ratio. The existing sine ratio calculator computes the ratio from two side lengths; it does not directly return the angle.</p>
 </section>
 
 <!-- SECTION 5: How to use -->
@@ -193,12 +199,12 @@ const faqs = [
   <h2>How to Use the Sine Ratio Calculator</h2>
   <p>The calculator mirrors the formula exactly: two inputs, one button, one ratio. Walk through the interface in order.</p>
   <ol class="mt-4 list-decimal space-y-3 pl-6">
-    <li><strong>Identify the reference angle <span set:html={rich('[[A]]')} />.</strong> Every sine calculation is anchored to one acute angle; the opposite side is defined relative to it.</li>
-    <li><strong>Locate the opposite side <span set:html={rich('[[a]]')} />, directly across from angle <span set:html={rich('[[A]]')} />.</strong> It is the leg that never touches the angle's vertex.</li>
+    <li><strong>Identify the reference angle <span set:html={rich('[[A]].')} /></strong> Every sine calculation is anchored to one acute angle; the opposite side is defined relative to it.</li>
+    <li><strong>Locate the opposite side <span set:html={rich('[[a]]')} />, directly across from angle <span set:html={rich('[[A]].')} /></strong> It is the leg that never touches the angle's vertex.</li>
     <li><strong>Locate the hypotenuse <span set:html={rich('[[c]]')} />, opposite the right angle and the longest side.</strong> It faces the small square marking the <span set:html={rich('[[90^\\circ]]')} /> corner.</li>
     <li><strong>Obtain or measure both side lengths.</strong> Use a tape, a plan dimension, or values from the problem statement.</li>
-    <li><strong>Enter the opposite-side length in the first input field.</strong> This becomes the numerator <span set:html={rich('[[a]]')} />.</li>
-    <li><strong>Enter the hypotenuse length in the second input field.</strong> This becomes the denominator <span set:html={rich('[[c]]')} />.</li>
+    <li><strong>Enter the opposite-side length in the first input field.</strong> This becomes the numerator <span set:html={rich('[[a]].')} /></li>
+    <li><strong>Enter the hypotenuse length in the second input field.</strong> This becomes the denominator <span set:html={rich('[[c]].')} /></li>
     <li><strong>Select compatible measurement units using the available unit selectors.</strong> Metres with metres, centimetres with centimetres; mixed units give a meaningless ratio.</li>
     <li><strong>Confirm that both measurements are positive.</strong> Zero or negative lengths cannot form a triangle.</li>
     <li><strong>Check that the hypotenuse is longer than the opposite side.</strong> If <span set:html={rich('[[a \\ge c]]')} />, the inputs are swapped or the triangle is impossible.</li>
@@ -393,7 +399,7 @@ const faqs = [
   <p>The opposite side is half the hypotenuse for a <span set:html={rich('[[30^\\circ]]')} /> angle, which matches the 30-60-90 geometry: the side opposite 30 degrees is exactly half the hypotenuse.</p>
   <p>The hypotenuse can be found the same way by rearranging again:</p>
   <p><span set:html={rich('[[[\\boxed{c=\\frac{a}{\\sin(A)}}]]]')} /></p>
-  <p>With an opposite side of <span set:html={rich('[[a=6\\,\\text{m}]]')} /> and <span set:html={rich('[[A=30^\\circ]]')} />: <span set:html={rich('[[c=6/0.5]]')} />, so <span set:html={rich('[[\\boxed{c=12\\,\\text{m}}]]')} />. These are mathematical rearrangements of the same formula. The calculator on this page returns the sine ratio from side lengths; it does not directly calculate missing sides.</p>
+  <p>With an opposite side of <span set:html={rich('[[a=6\\,\\text{m}]]')} /> and <span set:html={rich('[[A=30^\\circ]]')} />: <span set:html={rich('[[c=6/0.5]]')} />, so <span set:html={rich('[[\\boxed{c=12\\,\\text{m}}]].')} /> These are mathematical rearrangements of the same formula. The calculator on this page returns the sine ratio from side lengths; it does not directly calculate missing sides.</p>
 </section>
 
 <!-- SECTION 10: Finding an angle -->
@@ -413,27 +419,27 @@ const faqs = [
   <p>Most sine errors come from a flipped fraction, a mislabeled side, or a unit slip. Run through this list before trusting a result.</p>
   <ol class="mt-4 list-decimal space-y-3 pl-6">
     <li><strong>Using the adjacent side instead of the opposite side.</strong> Dividing <span set:html={rich('[[b/c]]')} /> computes cosine. With <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, and <span set:html={rich('[[c=5]]')} />, the wrong leg gives 0.8; the correct one gives 0.6.</li>
-    <li><strong>Reversing the formula and calculating <span set:html={rich('[[c/a]]')} /> instead of <span set:html={rich('[[a/c]]')} />.</strong> This returns cosecant, not sine. With <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[c=5]]')} />, the reversed fraction gives 1.6667, always above 1, a clear warning sign.</li>
+    <li><strong>Reversing the formula and calculating <span set:html={rich('[[c/a]]')} /> instead of <span set:html={rich('[[a/c]].')} /></strong> This returns cosecant, not sine. With <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[c=5]]')} />, the reversed fraction gives 1.6667, always above 1, a clear warning sign.</li>
     <li><strong>Confusing sine with cosine.</strong> Sine uses the opposite side; cosine uses the adjacent side. If the wrong leg is in the numerator, the answer is cosine, not sine.</li>
     <li><strong>Confusing sine with cosecant.</strong> Cosecant is the reciprocal, hypotenuse over opposite side. The similar names cause real errors, but the fraction order is exactly reversed.</li>
     <li><strong>Entering an opposite side longer than the hypotenuse.</strong> The hypotenuse is always the longest side. If <span set:html={rich('[[a \\ge c]]')} />, the inputs are swapped or the triangle is impossible.</li>
     <li><strong>Entering zero or negative side lengths.</strong> A triangle cannot have a zero or negative side, so these inputs signal a data entry error or a missing measurement, not a valid edge case.</li>
     <li><strong>Mixing measurement units.</strong> An opposite side of 3 m with a hypotenuse of 50 cm gives 6, a meaningless number. Convert to a single unit first: 3 m and 5 m give the correct 0.6.</li>
-    <li><strong>Reporting the sine ratio as an angle in degrees.</strong> A result of 0.6 is a ratio, not <span set:html={rich('[[0.6^\\circ]]')} />. Treating it as degrees feeds nonsense into any follow-up calculation.</li>
+    <li><strong>Reporting the sine ratio as an angle in degrees.</strong> A result of 0.6 is a ratio, not <span set:html={rich('[[0.6^\\circ]].')} /> Treating it as degrees feeds nonsense into any follow-up calculation.</li>
     <li><strong>Assuming sine has physical units.</strong> The units cancel in the division, so "0.6 m" is wrong. Write the plain number and keep the units in the input measurements where they belong.</li>
     <li><strong>Confusing the reference angle with the right angle.</strong> Sine always uses an acute angle. The <span set:html={rich('[[90^\\circ]]')} /> angle is never the reference angle <span set:html={rich('[[A]]')} /> in these calculations.</li>
     <li><strong>Rounding too early.</strong> Rounding an intermediate division to two decimals and then continuing the calculation compounds the error. Keep full precision through every step and round only the final answer.</li>
     <li><strong>Assuming sine is the same for every angle.</strong> Each angle has its own sine value. A 0.6 result belongs to one specific angle (about 36.87 degrees), not to every right triangle.</li>
-    <li><strong>Assuming a sine value of 0.6 means the angle is <span set:html={rich('[[0.6^\\circ]]')} />.</strong> A ratio is not a degree measure. Convert with inverse sine if the angle itself is needed.</li>
+    <li><strong>Assuming a sine value of 0.6 means the angle is <span set:html={rich('[[0.6^\\circ]].')} /></strong> A ratio is not a degree measure. Convert with inverse sine if the angle itself is needed.</li>
     <li><strong>Confusing reciprocal sine with inverse sine.</strong> <span set:html={rich('[[1/\\sin(A)]]')} /> is cosecant, a ratio; <span set:html={rich('[[\\sin^{-1}]]')} /> is inverse sine, which returns an angle. The similar names cause real errors, so read the notation carefully.</li>
     <li><strong>Assuming the sine ratio determines the absolute size of a triangle.</strong> Sine describes shape, not size: infinitely many triangles share a sine of 0.6, from a 3 cm opposite side to a 3 km one. The ratio fixes the proportions; actual lengths need at least one side measurement.</li>
   </ol>
 
   <h3>Wrong Versus Correct: A Worked Comparison</h3>
   <p>Given an opposite side of <span set:html={rich('[[a=3]]')} /> and a hypotenuse of <span set:html={rich('[[c=5]]')} />:</p>
-  <p><strong>Incorrect:</strong> <span set:html={rich('[[5/3\\approx1.6667]]')} />. This is the cosecant ratio, not the sine ratio. The numerator and denominator are reversed.</p>
+  <p><strong>Incorrect:</strong> <span set:html={rich('[[5/3\\approx1.6667]].')} /> This is the cosecant ratio, not the sine ratio. The numerator and denominator are reversed.</p>
   <p><strong>Correct:</strong> <span set:html={rich('[[\\sin(A)=3/5=0.6]]')} /></p>
-  <p><strong>Verify:</strong> <span set:html={rich('[[\\csc(A)=1/0.6\\approx1.6667]]')} />. The reciprocal check confirms the result, and the answer sits between 0 and 1, as every valid sine must.</p>
+  <p><strong>Verify:</strong> <span set:html={rich('[[\\csc(A)=1/0.6\\approx1.6667]].')} /> The reciprocal check confirms the result, and the answer sits between 0 and 1, as every valid sine must.</p>
 </section>
 
 <!-- SECTION 12: Verification -->
@@ -443,11 +449,11 @@ const faqs = [
   <p><span set:html={rich('[[[\\boxed{0 \\lt \\frac{a}{c} \\lt 1}]]]')} /></p>
   <p>Both measurements must use compatible units. A result less than or equal to 0 or greater than or equal to 1 usually indicates invalid inputs, reversed sides, or an incorrect triangle model.</p>
   <h3>Method 1: Check the Ratio</h3>
-  <p>Re-verify <span set:html={rich('[[\\sin(A)=a/c]]')} /> directly. With <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[c=5]]')} />: <span set:html={rich('[[\\sin(A)=3/5=0.6]]')} />. If a second hand calculation disagrees, a side was mislabeled or a unit was mixed.</p>
+  <p>Re-verify <span set:html={rich('[[\\sin(A)=a/c]]')} /> directly. With <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[c=5]]')} />: <span set:html={rich('[[\\sin(A)=3/5=0.6]].')} /> If a second hand calculation disagrees, a side was mislabeled or a unit was mixed.</p>
   <h3>Method 2: Check the Pythagorean Theorem</h3>
-  <p>If the adjacent side is needed, calculate <span set:html={rich('[[b=\\sqrt{c^2-a^2}]]')} />. For <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[c=5]]')} />: <span set:html={rich('[[b=\\sqrt{25-9}=4]]')} />, and <span set:html={rich('[[3^2+4^2=5^2]]')} />. This confirms the dimensions of the 3-4-5 right triangle. The adjacent side is a verification value here, not part of the primary sine formula.</p>
+  <p>If the adjacent side is needed, calculate <span set:html={rich('[[b=\\sqrt{c^2-a^2}]].')} /> For <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[c=5]]')} />: <span set:html={rich('[[b=\\sqrt{25-9}=4]]')} />, and <span set:html={rich('[[3^2+4^2=5^2]].')} /> This confirms the dimensions of the 3-4-5 right triangle. The adjacent side is a verification value here, not part of the primary sine formula.</p>
   <h3>Method 3: Check Using Inverse Sine</h3>
-  <p>For a sine ratio of 0.6: <span set:html={rich('[[A=\\sin^{-1}(0.6)\\approx36.87^\\circ]]')} />. Because the sine sits modestly above 0.5, the angle should land a little above <span set:html={rich('[[30^\\circ]]')} />; if it does not, the side labels are probably swapped. Small differences may arise from rounding.</p>
+  <p>For a sine ratio of 0.6: <span set:html={rich('[[A=\\sin^{-1}(0.6)\\approx36.87^\\circ]].')} /> Because the sine sits modestly above 0.5, the angle should land a little above <span set:html={rich('[[30^\\circ]]')} />; if it does not, the side labels are probably swapped. Small differences may arise from rounding.</p>
 </section>
 
 <!-- SECTION 13: Choosing a ratio -->
@@ -473,7 +479,7 @@ const faqs = [
       </tbody>
     </table>
   </div>
-  <p>Sine and cosecant are the reciprocal pair: <span set:html={rich('[[\\csc(A)=1/\\sin(A)]]')} />. If <span set:html={rich('[[\\sin(A)=0.6]]')} />, then <span set:html={rich('[[\\csc(A)\\approx1.6667]]')} />. Reach for sine when the opposite side is known against the hypotenuse, when a vertical component must be compared with a sloping length, or when SOH is the matching mnemonic; reach for cosine for adjacent over hypotenuse, tangent when the two legs are known, and cosecant when the hypotenuse is compared with the opposite side.</p>
+  <p>Sine and cosecant are the reciprocal pair: <span set:html={rich('[[\\csc(A)=1/\\sin(A)]].')} /> If <span set:html={rich('[[\\sin(A)=0.6]]')} />, then <span set:html={rich('[[\\csc(A)\\approx1.6667]].')} /> Reach for sine when the opposite side is known against the hypotenuse, when a vertical component must be compared with a sloping length, or when SOH is the matching mnemonic; reach for cosine for adjacent over hypotenuse, tangent when the two legs are known, and cosecant when the hypotenuse is compared with the opposite side.</p>
   <p>For the neighbouring ratios, see the <a href="/cosine-ratio-calculator/" class="text-primary hover:underline">Cosine Ratio Calculator</a>, the <a href="/tangent-ratio-calculator/" class="text-primary hover:underline">Tangent Ratio Calculator</a>, the <a href="/cosecant-ratio-calculator/" class="text-primary hover:underline">Cosecant Ratio Calculator</a>, the <a href="/secant-ratio-calculator/" class="text-primary hover:underline">Secant Ratio Calculator</a>, and the <a href="/cotangent-ratio-calculator/" class="text-primary hover:underline">Cotangent Ratio Calculator</a>.</p>
 </section>
 

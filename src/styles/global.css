@@ -651,6 +651,10 @@
     background: rgba(233, 193, 118, 0.14);
   }
 
+  .math-nowrap {
+    white-space: nowrap;
+  }
+
   .math-textbook {
     font-family: var(--font-headline);
     font-style: italic;

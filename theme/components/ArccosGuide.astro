@@ -14,6 +14,12 @@ const rich = (s: string): string => {
     (_, l) =>
       `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
   );
+  // Keep a trailing period glued to inline math (prevents orphaned "." on mobile wraps)
+  out = out.replace(
+    /\[\[((?:(?!\[\[|\]\]).)+?)\]\]\./g,
+    (_, l) =>
+      `<span dir="ltr" class="math-nowrap"><span class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>.</span>`
+  );
   out = out.replace(
     /\[\[(.+?)\]\]/g,
     (_, l) =>
@@ -57,7 +63,7 @@ const imgSrc = (name: string): string => `/images/angle-from-cosine/${name}`;
 <section id="arccos-what" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>Understanding Arccos (Inverse Cosine)</h2>
   <p>Regular cosine takes an angle and returns a ratio. The cosine of 60 degrees is 0.5. Arccos reverses this: it takes a ratio and returns the angle. The arccos of 0.5 is 60 degrees. The two functions undo each other, which is why arccos is also written as cos<span set:html={rich('[[-1]]')} /></p>
-  <p>The formula used by this calculator is <span set:html={rich('[[A = \\cos^{-1}(b/c)]]')} />. Here b is the adjacent side, c is the hypotenuse, and A is the angle between them. The ratio b/c always falls between 0 and 1 for a valid right triangle, because the adjacent side is always shorter than the hypotenuse.</p>
+  <p>The formula used by this calculator is <span set:html={rich('[[A = \\cos^{-1}(b/c)]].')} /> Here b is the adjacent side, c is the hypotenuse, and A is the angle between them. The ratio b/c always falls between 0 and 1 for a valid right triangle, because the adjacent side is always shorter than the hypotenuse.</p>
   <p>Think of arccos as asking a question: "Which angle has this cosine value?" If b/c equals 0.8, the question becomes "which angle has a cosine of 0.8?" The answer, 36.87 degrees, is the angle whose adjacent side is 80 percent as long as the hypotenuse.</p>
 
   <figure class="not-prose my-6">
@@ -75,9 +81,9 @@ const imgSrc = (name: string): string => `/images/angle-from-cosine/${name}`;
 <section id="arccos-vs" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>Arccos vs. Arcsin vs. Arctan: When to Use Each</h2>
   <p>All three inverse functions find the same angle when applied to the same triangle. They differ only in which sides they require. Choosing correctly saves you from computing a side you do not need.</p>
-  <p>Use <strong>arccos</strong> when you know the adjacent side (b) and the hypotenuse (c). The formula is <span set:html={rich('[[A = \\cos^{-1}(b/c)]]')} />. This is the natural choice when the hypotenuse was measured directly, for example with a tape along a slope, and the horizontal distance is known.</p>
-  <p>Use <strong>arcsin</strong> when you know the opposite side (a) and the hypotenuse (c). The formula is <span set:html={rich('[[A = \\sin^{-1}(a/c)]]')} />. Height problems favor arcsin: the vertical rise is opposite the ground-level angle. The <a href="/right-triangle-angle-from-sine-calculator/" class="text-primary hover:underline">angle from sine calculator</a> handles this case.</p>
-  <p>Use <strong>arctan</strong> when you know both legs (a and b) but not the hypotenuse. The formula is <span set:html={rich('[[A = \\tan^{-1}(a/b)]]')} />. Field measurements like roof rise over run favor arctan because both legs are measured directly. See the <a href="/right-triangle-angle-from-tangent-calculator/" class="text-primary hover:underline">angle from tangent calculator</a> for that method.</p>
+  <p>Use <strong>arccos</strong> when you know the adjacent side (b) and the hypotenuse (c). The formula is <span set:html={rich('[[A = \\cos^{-1}(b/c)]].')} /> This is the natural choice when the hypotenuse was measured directly, for example with a tape along a slope, and the horizontal distance is known.</p>
+  <p>Use <strong>arcsin</strong> when you know the opposite side (a) and the hypotenuse (c). The formula is <span set:html={rich('[[A = \\sin^{-1}(a/c)]].')} /> Height problems favor arcsin: the vertical rise is opposite the ground-level angle. The <a href="/right-triangle-angle-from-sine-calculator/" class="text-primary hover:underline">angle from sine calculator</a> handles this case.</p>
+  <p>Use <strong>arctan</strong> when you know both legs (a and b) but not the hypotenuse. The formula is <span set:html={rich('[[A = \\tan^{-1}(a/b)]].')} /> Field measurements like roof rise over run favor arctan because both legs are measured directly. See the <a href="/right-triangle-angle-from-tangent-calculator/" class="text-primary hover:underline">angle from tangent calculator</a> for that method.</p>
   <h3>They Must Agree</h3>
   <p>For any single triangle, arccos(b/c), arcsin(a/c), and arctan(a/b) produce the identical angle. In a 3-4-5 triangle, arccos(4/5), arcsin(3/5), and arctan(3/4) all equal 36.87 degrees. If two methods disagree, a side is mislabeled. This cross-check is the most reliable verification available, and the <a href="/right-triangle-trig-ratios-calculator/" class="text-primary hover:underline">trig ratios calculator</a> can confirm all three ratios at once.</p>
   <h3>Why Not Always Use Arctan?</h3>
@@ -129,27 +135,27 @@ const imgSrc = (name: string): string => `/images/angle-from-cosine/${name}`;
 
   <h3>Example 1: The 3-4-5 Triangle</h3>
   <p>Given adjacent b = 4 and hypotenuse c = 5, find angle A.</p>
-  <p>A = arccos(b/c) = arccos(4/5) = arccos(0.8) <span set:html={rich('[[\\approx 36.87^\\circ]]')} />. The complement B = 53.13<span set:html={rich('[[^\\circ]]')} /></p>
+  <p>A = arccos(b/c) = arccos(4/5) = arccos(0.8) <span set:html={rich('[[\\approx 36.87^\\circ]].')} /> The complement B = 53.13<span set:html={rich('[[^\\circ]]')} /></p>
 
   <h3>Example 2: The 5-12-13 Triangle</h3>
   <p>Given adjacent b = 12 and hypotenuse c = 13, find angle A.</p>
-  <p>A = arccos(12/13) = arccos(0.9231) <span set:html={rich('[[\\approx 22.62^\\circ]]')} />. The complement B = 67.38<span set:html={rich('[[^\\circ]]')} /></p>
+  <p>A = arccos(12/13) = arccos(0.9231) <span set:html={rich('[[\\approx 22.62^\\circ]].')} /> The complement B = 67.38<span set:html={rich('[[^\\circ]]')} /></p>
 
   <h3>Example 3: The 8-15-17 Triangle</h3>
   <p>Given adjacent b = 8 and hypotenuse c = 17, find angle A.</p>
-  <p>A = arccos(8/17) = arccos(0.4706) <span set:html={rich('[[\\approx 61.93^\\circ]]')} />. The complement B = 28.07<span set:html={rich('[[^\\circ]]')} /></p>
+  <p>A = arccos(8/17) = arccos(0.4706) <span set:html={rich('[[\\approx 61.93^\\circ]].')} /> The complement B = 28.07<span set:html={rich('[[^\\circ]]')} /></p>
 
   <h3>Example 4: Same Triangle, Other Angle</h3>
   <p>Given adjacent b = 15 and hypotenuse c = 17 (solving for angle B of the 8-15-17 triangle).</p>
-  <p>B = arccos(15/17) = arccos(0.8824) <span set:html={rich('[[\\approx 28.07^\\circ]]')} />. Note 61.93 + 28.07 = 90, as required.</p>
+  <p>B = arccos(15/17) = arccos(0.8824) <span set:html={rich('[[\\approx 28.07^\\circ]].')} /> Note 61.93 + 28.07 = 90, as required.</p>
 
   <h3>Example 5: 5-12-13, Other Angle</h3>
   <p>Given adjacent b = 5 and hypotenuse c = 13.</p>
-  <p>B = arccos(5/13) = arccos(0.3846) <span set:html={rich('[[\\approx 67.38^\\circ]]')} />. This matches the complement from Example 2.</p>
+  <p>B = arccos(5/13) = arccos(0.3846) <span set:html={rich('[[\\approx 67.38^\\circ]].')} /> This matches the complement from Example 2.</p>
 
   <h3>Example 6: 3-4-5, Other Angle</h3>
   <p>Given adjacent b = 3 and hypotenuse c = 5.</p>
-  <p>B = arccos(3/5) = arccos(0.6) <span set:html={rich('[[\\approx 53.13^\\circ]]')} />. This matches the complement from Example 1.</p>
+  <p>B = arccos(3/5) = arccos(0.6) <span set:html={rich('[[\\approx 53.13^\\circ]].')} /> This matches the complement from Example 1.</p>
 
   <h3>Example 7: The 60-Degree Special Case</h3>
   <p>Given adjacent b = 1 and hypotenuse c = 2.</p>
@@ -157,39 +163,39 @@ const imgSrc = (name: string): string => `/images/angle-from-cosine/${name}`;
 
   <h3>Example 8: The 7-24-25 Triangle</h3>
   <p>Given adjacent b = 7 and hypotenuse c = 25, find angle A.</p>
-  <p>A = arccos(7/25) = arccos(0.28) <span set:html={rich('[[\\approx 73.74^\\circ]]')} />. The complement B = 16.26<span set:html={rich('[[^\\circ]]')} /></p>
+  <p>A = arccos(7/25) = arccos(0.28) <span set:html={rich('[[\\approx 73.74^\\circ]].')} /> The complement B = 16.26<span set:html={rich('[[^\\circ]]')} /></p>
 
   <h3>Example 9: 7-24-25, Other Angle</h3>
   <p>Given adjacent b = 24 and hypotenuse c = 25.</p>
-  <p>B = arccos(24/25) = arccos(0.96) <span set:html={rich('[[\\approx 16.26^\\circ]]')} />. Matches the complement from Example 8.</p>
+  <p>B = arccos(24/25) = arccos(0.96) <span set:html={rich('[[\\approx 16.26^\\circ]].')} /> Matches the complement from Example 8.</p>
 
   <h3>Example 10: The 9-40-41 Triangle</h3>
   <p>Given adjacent b = 9 and hypotenuse c = 41, find angle A.</p>
-  <p>A = arccos(9/41) = arccos(0.2195) <span set:html={rich('[[\\approx 77.32^\\circ]]')} />. A small adjacent side gives a wide angle.</p>
+  <p>A = arccos(9/41) = arccos(0.2195) <span set:html={rich('[[\\approx 77.32^\\circ]].')} /> A small adjacent side gives a wide angle.</p>
 
   <h3>Example 11: 9-40-41, Other Angle</h3>
   <p>Given adjacent b = 40 and hypotenuse c = 41.</p>
-  <p>B = arccos(40/41) = arccos(0.9756) <span set:html={rich('[[\\approx 12.68^\\circ]]')} />. Note 77.32 + 12.68 = 90.</p>
+  <p>B = arccos(40/41) = arccos(0.9756) <span set:html={rich('[[\\approx 12.68^\\circ]].')} /> Note 77.32 + 12.68 = 90.</p>
 
   <h3>Example 12: The 20-21-29 Triangle</h3>
   <p>Given adjacent b = 20 and hypotenuse c = 29, find angle A.</p>
-  <p>A = arccos(20/29) = arccos(0.6897) <span set:html={rich('[[\\approx 46.40^\\circ]]')} />. The complement B = 43.60<span set:html={rich('[[^\\circ]]')} /></p>
+  <p>A = arccos(20/29) = arccos(0.6897) <span set:html={rich('[[\\approx 46.40^\\circ]].')} /> The complement B = 43.60<span set:html={rich('[[^\\circ]]')} /></p>
 
   <h3>Example 13: 20-21-29, Other Angle</h3>
   <p>Given adjacent b = 21 and hypotenuse c = 29.</p>
-  <p>B = arccos(21/29) = arccos(0.7241) <span set:html={rich('[[\\approx 43.60^\\circ]]')} />. Matches the complement from Example 12.</p>
+  <p>B = arccos(21/29) = arccos(0.7241) <span set:html={rich('[[\\approx 43.60^\\circ]].')} /> Matches the complement from Example 12.</p>
 
   <h3>Example 14: The 6-8-10 Triangle</h3>
   <p>Given adjacent b = 6 and hypotenuse c = 10, find angle A.</p>
-  <p>A = arccos(6/10) = arccos(0.6) <span set:html={rich('[[\\approx 53.13^\\circ]]')} />. Same angle as Example 6, since 6-8-10 is a scaled 3-4-5.</p>
+  <p>A = arccos(6/10) = arccos(0.6) <span set:html={rich('[[\\approx 53.13^\\circ]].')} /> Same angle as Example 6, since 6-8-10 is a scaled 3-4-5.</p>
 
   <h3>Example 15: 6-8-10, Other Angle</h3>
   <p>Given adjacent b = 8 and hypotenuse c = 10.</p>
-  <p>B = arccos(8/10) = arccos(0.8) <span set:html={rich('[[\\approx 36.87^\\circ]]')} />. Same as Example 1, confirming similar triangles share angles.</p>
+  <p>B = arccos(8/10) = arccos(0.8) <span set:html={rich('[[\\approx 36.87^\\circ]].')} /> Same as Example 1, confirming similar triangles share angles.</p>
 
   <h3>Example 16: The 12-16-20 Triangle</h3>
   <p>Given adjacent b = 12 and hypotenuse c = 20, find angle A.</p>
-  <p>A = arccos(12/20) = arccos(0.6) <span set:html={rich('[[\\approx 53.13^\\circ]]')} />. Another scaled 3-4-5, same angle again. Scaling sides never changes angles.</p>
+  <p>A = arccos(12/20) = arccos(0.6) <span set:html={rich('[[\\approx 53.13^\\circ]].')} /> Another scaled 3-4-5, same angle again. Scaling sides never changes angles.</p>
 </section>
 
 <!-- Section 7: Special values -->

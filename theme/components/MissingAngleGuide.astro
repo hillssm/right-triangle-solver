@@ -18,6 +18,12 @@ const rich = (s: string): string => {
     (_, l) =>
       `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
   );
+  // Keep a trailing period glued to inline math (prevents orphaned "." on mobile wraps)
+  out = out.replace(
+    /\[\[((?:(?!\[\[|\]\]).)+?)\]\]\./g,
+    (_, l) =>
+      `<span dir="ltr" class="math-nowrap"><span class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>.</span>`
+  );
   out = out.replace(
     /\[\[(.+?)\]\]/g,
     (_, l) =>
@@ -104,7 +110,7 @@ const faqs = [
 <!-- SECTION 1: Introduction -->
 <section id="missing-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>How to Find a Missing Angle in a Right Triangle</h2>
-  <p>If one acute angle of a right triangle measures <span set:html={rich('[[35^\\circ]]')} />, the missing angle is <span set:html={rich('[[90^\\circ-35^\\circ=55^\\circ]]')} />. That single subtraction is the whole calculation. A right triangle always contains one 90-degree angle, so the two remaining angles must share exactly the 90 degrees that are left over. Subtracting the known angle from 90 degrees reveals the missing one, with no side lengths and no trigonometric functions required.</p>
+  <p>If one acute angle of a right triangle measures <span set:html={rich('[[35^\\circ]]')} />, the missing angle is <span set:html={rich('[[90^\\circ-35^\\circ=55^\\circ]].')} /> That single subtraction is the whole calculation. A right triangle always contains one 90-degree angle, so the two remaining angles must share exactly the 90 degrees that are left over. Subtracting the known angle from 90 degrees reveals the missing one, with no side lengths and no trigonometric functions required.</p>
   <p>The answer, 55 degrees in this case, represents the other acute angle in the same right triangle. The two angles always work as a pair: knowing either one determines the other completely. This calculator exists for exactly that situation, when an angle is already known and only its complement is missing. When no angle is known yet, an <a href="/right-triangle-angle-from-tangent-calculator/" class="text-primary hover:underline">angle from tangent calculator</a> or one of its sine and cosine counterparts derives the first angle from measured sides.</p>
 </section>
 
@@ -116,10 +122,10 @@ const faqs = [
   <p>A 90-degree angle represents a perfect corner, the angle between a vertical wall and a level floor. In every right triangle this angle is fixed: it never changes size, and diagrams mark it with a small square at the vertex. Because one angle is permanently set to 90 degrees, the other two angles have only 90 degrees left to share between them, which forces both to be acute.</p>
 
   <h3>The Two Acute Angles</h3>
-  <p>An acute angle measures more than <span set:html={rich('[[0^\\circ]]')} /> and less than <span set:html={rich('[[90^\\circ]]')} />. Both remaining angles of a right triangle fall in this range, and they are called complementary because their measures always add to 90 degrees. The pairing is strict: a single known acute angle leaves exactly one possible value for its partner, so the missing angle is never a matter of estimation.</p>
+  <p>An acute angle measures more than <span set:html={rich('[[0^\\circ]]')} /> and less than <span set:html={rich('[[90^\\circ]].')} /> Both remaining angles of a right triangle fall in this range, and they are called complementary because their measures always add to 90 degrees. The pairing is strict: a single known acute angle leaves exactly one possible value for its partner, so the missing angle is never a matter of estimation.</p>
 
   <h3>What Are Complementary Angles?</h3>
-  <p>Two angles are complementary when their measures add up to <span set:html={rich('[[90^\\circ]]')} />. The pairs <span set:html={rich('[[30^\\circ+60^\\circ=90^\\circ]]')} />, <span set:html={rich('[[35^\\circ+55^\\circ=90^\\circ]]')} />, and <span set:html={rich('[[45^\\circ+45^\\circ=90^\\circ]]')} /> are all complementary. Complementary angles do not need to be equal; equality happens only at 45 degrees each. Any two positive angles that total 90 degrees qualify, whether they sit inside the same triangle or not.</p>
+  <p>Two angles are complementary when their measures add up to <span set:html={rich('[[90^\\circ]].')} /> The pairs <span set:html={rich('[[30^\\circ+60^\\circ=90^\\circ]]')} />, <span set:html={rich('[[35^\\circ+55^\\circ=90^\\circ]]')} />, and <span set:html={rich('[[45^\\circ+45^\\circ=90^\\circ]]')} /> are all complementary. Complementary angles do not need to be equal; equality happens only at 45 degrees each. Any two positive angles that total 90 degrees qualify, whether they sit inside the same triangle or not.</p>
 
   <h3>Why the Angles of a Triangle Add Up to 180 Degrees</h3>
   <p>Every triangle, whatever its shape, contains exactly 180 degrees across its three interior angles. In a right triangle the fixed right angle claims 90 of those degrees immediately, which leaves precisely 90 degrees for the two acute angles combined. The diagram below shows the full accounting for a triangle with angles of 35, 55, and 90 degrees.</p>
@@ -146,7 +152,7 @@ const faqs = [
   <p>Each step is ordinary algebra applied to a geometric fact. Nothing is memorized blindly: the 90 degrees in the formula is the share of the angle sum left over after the right angle takes its half.</p>
   <p>The same relationship works in reverse. If angle <span set:html={rich('[[B]]')} /> is the known one, solving for <span set:html={rich('[[A]]')} /> gives:</p>
   <p><span set:html={rich('[[[A=90^\\circ-B]]]')} /></p>
-  <p>This calculator uses the first form because its input field accepts angle <span set:html={rich('[[A]]')} /> and returns angle <span set:html={rich('[[B]]')} />. The two formulas are not different rules; they are the same complementary-angle relationship solved for different unknowns.</p>
+  <p>This calculator uses the first form because its input field accepts angle <span set:html={rich('[[A]]')} /> and returns angle <span set:html={rich('[[B]].')} /> The two formulas are not different rules; they are the same complementary-angle relationship solved for different unknowns.</p>
 
   <h3>Why 90 Degrees, Not 180 Degrees</h3>
   <p>A frequent error is subtracting the known angle from 180 degrees. That total covers all three angles of the triangle, so using it alone forgets that the right angle has already been accounted for. With <span set:html={rich('[[A=35^\\circ]]')} />, the wrong computation gives <span set:html={rich('[[180^\\circ-35^\\circ=145^\\circ]]')} />, which cannot be an acute angle of any right triangle. The correct computation, <span set:html={rich('[[90^\\circ-35^\\circ=55^\\circ]]')} />, respects the right angle and can be checked at once: <span set:html={rich('[[35^\\circ+55^\\circ+90^\\circ=180^\\circ]]')} /></p>
@@ -164,7 +170,7 @@ const faqs = [
   <ol>
     <li><strong>Identify the right triangle.</strong> Confirm the shape has a genuine 90-degree corner before doing anything else; the formula only applies to right triangles.</li>
     <li><strong>Locate the acute angle you already know.</strong> This is angle <span set:html={rich('[[A]]')} />, the value you will type into the calculator.</li>
-    <li><strong>Confirm the known angle is valid.</strong> It must be greater than <span set:html={rich('[[0^\\circ]]')} /> and less than <span set:html={rich('[[90^\\circ]]')} />. Anything outside that range cannot be an acute angle of a right triangle.</li>
+    <li><strong>Confirm the known angle is valid.</strong> It must be greater than <span set:html={rich('[[0^\\circ]]')} /> and less than <span set:html={rich('[[90^\\circ]].')} /> Anything outside that range cannot be an acute angle of a right triangle.</li>
     <li><strong>Enter the known angle <span set:html={rich('[[A]]')} /> in degrees.</strong> The input field accepts decimal values such as 68.5, so keep the precision of your measurement.</li>
     <li><strong>Click Calculate Angle B.</strong> The tool applies <span set:html={rich('[[B=90^\\circ-A]]')} /> to your input.</li>
     <li><strong>Read the calculated complementary angle.</strong> The output is angle <span set:html={rich('[[B]]')} /> in degrees.</li>
@@ -184,7 +190,7 @@ const faqs = [
   <p>Step 1: Write the formula. <span set:html={rich('[[B=90^\\circ-A]]')} /></p>
   <p>Step 2: Substitute the known angle. <span set:html={rich('[[B=90^\\circ-35^\\circ]]')} /></p>
   <p>Step 3: Subtract. <span set:html={rich('[[B=55^\\circ]]')} /></p>
-  <p>Check: <span set:html={rich('[[35^\\circ+55^\\circ=90^\\circ]]')} />. The answer is valid because the two acute angles total exactly 90 degrees and each sits strictly between 0 and 90 degrees.</p>
+  <p>Check: <span set:html={rich('[[35^\\circ+55^\\circ=90^\\circ]].')} /> The answer is valid because the two acute angles total exactly 90 degrees and each sits strictly between 0 and 90 degrees.</p>
 
   <h3>Example 2: A Known Angle of 20 Degrees</h3>
   <p>Given <span set:html={rich('[[A=20^\\circ]]')} />:</p>
@@ -344,11 +350,11 @@ const faqs = [
   <p><span set:html={rich('[[A=90^\\circ-62^\\circ=28^\\circ]]')} /></p>
   <p>Three more short reverse-direction examples follow the same step:</p>
   <ul>
-    <li><span set:html={rich('[[B=15^\\circ]]')} />, so <span set:html={rich('[[A=90^\\circ-15^\\circ=75^\\circ]]')} />.</li>
-    <li><span set:html={rich('[[B=42^\\circ]]')} />, so <span set:html={rich('[[A=90^\\circ-42^\\circ=48^\\circ]]')} />.</li>
-    <li><span set:html={rich('[[B=70^\\circ]]')} />, so <span set:html={rich('[[A=90^\\circ-70^\\circ=20^\\circ]]')} />.</li>
+    <li><span set:html={rich('[[B=15^\\circ]]')} />, so <span set:html={rich('[[A=90^\\circ-15^\\circ=75^\\circ]].')} /></li>
+    <li><span set:html={rich('[[B=42^\\circ]]')} />, so <span set:html={rich('[[A=90^\\circ-42^\\circ=48^\\circ]].')} /></li>
+    <li><span set:html={rich('[[B=70^\\circ]]')} />, so <span set:html={rich('[[A=90^\\circ-70^\\circ=20^\\circ]].')} /></li>
   </ul>
-  <p>One practical note: this calculator input field accepts angle <span set:html={rich('[[A]]')} /> and returns angle <span set:html={rich('[[B]]')} />. A reader who knows only angle <span set:html={rich('[[B]]')} /> should apply the reverse formula by hand unless the interface is verified to support entering <span set:html={rich('[[B]]')} /> directly.</p>
+  <p>One practical note: this calculator input field accepts angle <span set:html={rich('[[A]]')} /> and returns angle <span set:html={rich('[[B]].')} /> A reader who knows only angle <span set:html={rich('[[B]]')} /> should apply the reverse formula by hand unless the interface is verified to support entering <span set:html={rich('[[B]]')} /> directly.</p>
 </section>
 
 <!-- SECTION 9: Complementary vs supplementary -->
@@ -357,10 +363,10 @@ const faqs = [
   <p>The two terms sound alike and both describe angle pairs, but they answer different questions.</p>
 
   <h3>Complementary Angles</h3>
-  <p>Two angles are complementary when their sum is <span set:html={rich('[[90^\\circ]]')} />. The two acute angles of a right triangle are the textbook example: they must be complementary because the right angle already claims the other 90 degrees of the triangle total.</p>
+  <p>Two angles are complementary when their sum is <span set:html={rich('[[90^\\circ]].')} /> The two acute angles of a right triangle are the textbook example: they must be complementary because the right angle already claims the other 90 degrees of the triangle total.</p>
 
   <h3>Supplementary Angles</h3>
-  <p>Two angles are supplementary when their sum is <span set:html={rich('[[180^\\circ]]')} />. A straight line, for instance, can be split into two supplementary angles. Supplementary pairs should never be confused with the two acute angles of a right triangle, which sum to 90, not 180.</p>
+  <p>Two angles are supplementary when their sum is <span set:html={rich('[[180^\\circ]].')} /> A straight line, for instance, can be split into two supplementary angles. Supplementary pairs should never be confused with the two acute angles of a right triangle, which sum to 90, not 180.</p>
 
   <div class="not-prose my-6 overflow-x-auto">
     <table class="w-full min-w-[480px] border-collapse text-left text-sm">
@@ -390,14 +396,14 @@ const faqs = [
 <section id="missing-mistakes" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>Common Mistakes When Finding a Missing Angle</h2>
   <ol>
-    <li><strong>Subtracting the known angle from 180 degrees instead of 90.</strong> The 180-degree total includes the right angle, which is already fixed. What goes wrong: with <span set:html={rich('[[A=35^\\circ]]')} /> the wrong math gives 145 degrees, an impossible acute angle. Fix: subtract from 90, giving <span set:html={rich('[[55^\\circ]]')} />.</li>
+    <li><strong>Subtracting the known angle from 180 degrees instead of 90.</strong> The 180-degree total includes the right angle, which is already fixed. What goes wrong: with <span set:html={rich('[[A=35^\\circ]]')} /> the wrong math gives 145 degrees, an impossible acute angle. Fix: subtract from 90, giving <span set:html={rich('[[55^\\circ]].')} /></li>
     <li><strong>Forgetting that one angle is already 90 degrees.</strong> The right angle is easy to overlook because it needs no calculation. What goes wrong: treating the triangle as if all three angles were unknown. Fix: remember the right angle claims half the 180-degree total before you begin.</li>
     <li><strong>Entering 90 degrees into the calculator.</strong> The tool expects an acute angle strictly between 0 and 90 degrees. What goes wrong: a 90-degree input leaves no room for a second acute angle. Fix: enter only the known acute angle.</li>
     <li><strong>Entering an angle greater than 90 degrees.</strong> No acute angle exceeds 90 degrees by definition. What goes wrong: the subtraction yields a negative result, which has no geometric meaning here. Fix: check that the input is below 90 degrees.</li>
     <li><strong>Entering 0 degrees.</strong> A zero angle collapses the triangle into a line segment. What goes wrong: the result claims a 90-degree complement for a shape with no area. Fix: use only positive acute angles.</li>
     <li><strong>Confusing complementary angles with supplementary angles.</strong> Complementary pairs sum to 90 degrees; supplementary pairs sum to 180. What goes wrong: subtracting from 180 produces the mistake in item 1. Fix: match the word to the total, complementary with 90.</li>
     <li><strong>Assuming the two acute angles must be equal.</strong> Equality holds only at 45 degrees each. What goes wrong: expecting symmetry in a 20-70 triangle. Fix: let the subtraction decide; most pairs differ.</li>
-    <li><strong>Mixing up angle labels A and B.</strong> The calculator takes <span set:html={rich('[[A]]')} /> and returns <span set:html={rich('[[B]]')} />. What goes wrong: entering the already-known complement as if it were the input. Fix: label the known angle A before typing anything.</li>
+    <li><strong>Mixing up angle labels A and B.</strong> The calculator takes <span set:html={rich('[[A]]')} /> and returns <span set:html={rich('[[B]].')} /> What goes wrong: entering the already-known complement as if it were the input. Fix: label the known angle A before typing anything.</li>
     <li><strong>Thinking that side lengths are required for this particular calculation.</strong> Sides matter for trigonometry, not for complements. What goes wrong: stalling on a problem that needs only subtraction. Fix: if an acute angle is known, subtract it from 90 and finish.</li>
     <li><strong>Using inverse sine, cosine, or tangent when simple subtraction is sufficient.</strong> Inverse functions answer a harder question. What goes wrong: extra work and extra chances for mode errors. Fix: when an angle is known, the <a href="/right-triangle-angle-from-sine-calculator/" class="text-primary hover:underline">angle from sine calculator</a> and its siblings are the wrong tools; subtraction is exact and immediate.</li>
     <li><strong>Assuming a measured physical angle automatically forms a right triangle without checking the reference directions.</strong> Real corners are rarely perfect. What goes wrong: applying the complement rule where the 90-degree corner does not actually exist. Fix: verify the reference directions are perpendicular before subtracting.</li>
@@ -406,9 +412,9 @@ const faqs = [
 
   <h3>Wrong Versus Correct</h3>
   <p>Given <span set:html={rich('[[A=35^\\circ]]')} />:</p>
-  <p>Incorrect: <span set:html={rich('[[180^\\circ-35^\\circ=145^\\circ]]')} />. This is not the missing acute angle because the right angle has not been accounted for; 145 degrees cannot sit inside a right triangle alongside a 90-degree corner.</p>
+  <p>Incorrect: <span set:html={rich('[[180^\\circ-35^\\circ=145^\\circ]].')} /> This is not the missing acute angle because the right angle has not been accounted for; 145 degrees cannot sit inside a right triangle alongside a 90-degree corner.</p>
   <p>Correct: <span set:html={rich('[[90^\\circ-35^\\circ=55^\\circ]]')} /></p>
-  <p>Verify: <span set:html={rich('[[35^\\circ+55^\\circ+90^\\circ=180^\\circ]]')} />. The full angle sum confirms the answer.</p>
+  <p>Verify: <span set:html={rich('[[35^\\circ+55^\\circ+90^\\circ=180^\\circ]].')} /> The full angle sum confirms the answer.</p>
 </section>
 
 <!-- SECTION 11: Verification -->
@@ -421,13 +427,13 @@ const faqs = [
   <p>An input of 0 or 90 degrees would produce a degenerate limiting case rather than an ordinary right triangle with three distinct vertices and positive side lengths. The calculator enforces the strict inequality for exactly this reason.</p>
 
   <h3>Method 1: Add the Acute Angles</h3>
-  <p>Verify <span set:html={rich('[[A+B=90^\\circ]]')} />. Example: <span set:html={rich('[[35^\\circ+55^\\circ=90^\\circ]]')} />. This is the fastest check and catches the 180-degree mistake immediately.</p>
+  <p>Verify <span set:html={rich('[[A+B=90^\\circ]].')} /> Example: <span set:html={rich('[[35^\\circ+55^\\circ=90^\\circ]].')} /> This is the fastest check and catches the 180-degree mistake immediately.</p>
 
   <h3>Method 2: Check the Complete Triangle</h3>
-  <p>Verify <span set:html={rich('[[A+B+90^\\circ=180^\\circ]]')} />. Example: <span set:html={rich('[[35^\\circ+55^\\circ+90^\\circ=180^\\circ]]')} />. This confirms the answer against the universal triangle angle sum.</p>
+  <p>Verify <span set:html={rich('[[A+B+90^\\circ=180^\\circ]].')} /> Example: <span set:html={rich('[[35^\\circ+55^\\circ+90^\\circ=180^\\circ]].')} /> This confirms the answer against the universal triangle angle sum.</p>
 
   <h3>Method 3: Check the Reverse Calculation</h3>
-  <p>If <span set:html={rich('[[B=90^\\circ-A]]')} />, then <span set:html={rich('[[A=90^\\circ-B]]')} /> must recover the original input. With <span set:html={rich('[[A=35^\\circ]]')} /> giving <span set:html={rich('[[B=55^\\circ]]')} />, the reverse check is <span set:html={rich('[[90^\\circ-55^\\circ=35^\\circ]]')} />. This consistency check needs no side measurements at all.</p>
+  <p>If <span set:html={rich('[[B=90^\\circ-A]]')} />, then <span set:html={rich('[[A=90^\\circ-B]]')} /> must recover the original input. With <span set:html={rich('[[A=35^\\circ]]')} /> giving <span set:html={rich('[[B=55^\\circ]]')} />, the reverse check is <span set:html={rich('[[90^\\circ-55^\\circ=35^\\circ]].')} /> This consistency check needs no side measurements at all.</p>
   <p>One caution: if the input angle comes from a physical measurement, its uncertainty carries into the result. A roughly measured 35 degrees yields a roughly known 55 degrees; report the answer with precision that matches the measurement. For checks involving side lengths, the <a href="/pythagorean-theorem-calculator/" class="text-primary hover:underline">Pythagorean theorem calculator</a> can confirm the triangle geometry independently.</p>
 </section>
 

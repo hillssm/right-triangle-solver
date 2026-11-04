@@ -29,6 +29,12 @@ const rich = (s: string): string => {
     (_, l) =>
       `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
   );
+  // Keep a trailing period glued to inline math (prevents orphaned "." on mobile wraps)
+  out = out.replace(
+    /\[\[((?:(?!\[\[|\]\]).)+?)\]\]\./g,
+    (_, l) =>
+      `<span dir="ltr" class="math-nowrap"><span class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>.</span>`
+  );
   out = out.replace(
     /\[\[(.+?)\]\]/g,
     (_, l) =>

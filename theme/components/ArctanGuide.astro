@@ -17,6 +17,12 @@ const rich = (s: string): string => {
     (_, l) =>
       `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
   );
+  // Keep a trailing period glued to inline math (prevents orphaned "." on mobile wraps)
+  out = out.replace(
+    /\[\[((?:(?!\[\[|\]\]).)+?)\]\]\./g,
+    (_, l) =>
+      `<span dir="ltr" class="math-nowrap"><span class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>.</span>`
+  );
   out = out.replace(
     /\[\[(.+?)\]\]/g,
     (_, l) =>
@@ -105,7 +111,7 @@ const faqs = [
   <h2>How to Find an Angle Using Tangent</h2>
   <p>A right triangle angle from tangent calculator finds an acute angle when you know the two legs of the triangle: the opposite side and the adjacent side. It divides the opposite side by the adjacent side, then applies inverse tangent to that ratio. The result is the angle in degrees.</p>
   <p>Picture a wheelchair ramp. You can measure how high it rises and how far it runs horizontally, but the sloping surface itself might be awkward to measure. Those two measurements, the vertical rise and the horizontal run, are the opposite and adjacent sides. Their ratio is all you need. Inverse tangent converts that ratio directly into the incline angle, with no need to measure the slope length at all.</p>
-  <p>Here <span set:html={rich('[[A]]')} /> is the angle you want, <span set:html={rich('[[a]]')} /> is the opposite side, and <span set:html={rich('[[b]]')} /> is the adjacent side. Tangent relates them as <span set:html={rich('[[\\tan(A) = a/b]]')} />, and inverse tangent reverses the relationship: <span set:html={rich('[[A = \\arctan(a/b)]]')} />. Because the hypotenuse never enters the formula, this is the natural method whenever the two legs are the measurements you actually have.</p>
+  <p>Here <span set:html={rich('[[A]]')} /> is the angle you want, <span set:html={rich('[[a]]')} /> is the opposite side, and <span set:html={rich('[[b]]')} /> is the adjacent side. Tangent relates them as <span set:html={rich('[[\\tan(A) = a/b]]')} />, and inverse tangent reverses the relationship: <span set:html={rich('[[A = \\arctan(a/b)]].')} /> Because the hypotenuse never enters the formula, this is the natural method whenever the two legs are the measurements you actually have.</p>
 </section>
 
 <!-- SECTION 2: Understanding the sides -->
@@ -116,16 +122,16 @@ const faqs = [
   <p>A right triangle has one angle of exactly 90 degrees. The other two angles are acute, meaning each is less than 90 degrees, and together they always add up to 90 degrees. The 90-degree condition is what makes the trigonometric ratios work: sine, cosine, and tangent are defined by the fixed relationships between the sides of a right triangle. Without the right angle, the ratio <span set:html={rich('[[a/b]]')} /> would not correspond to a single consistent angle.</p>
 
   <h3>What Is the Opposite Side?</h3>
-  <p>The opposite side is the leg that lies directly across from angle <span set:html={rich('[[A]]')} />. It never touches the angle itself. In practical terms it often represents a vertical rise: the height a ladder reaches up a wall, the elevation a roof gains, or the vertical component of a crane boom. The label "opposite" depends on which angle you chose as the reference. If you switch the reference from <span set:html={rich('[[A]]')} /> to <span set:html={rich('[[B]]')} />, the side that was opposite becomes adjacent.</p>
+  <p>The opposite side is the leg that lies directly across from angle <span set:html={rich('[[A]].')} /> It never touches the angle itself. In practical terms it often represents a vertical rise: the height a ladder reaches up a wall, the elevation a roof gains, or the vertical component of a crane boom. The label "opposite" depends on which angle you chose as the reference. If you switch the reference from <span set:html={rich('[[A]]')} /> to <span set:html={rich('[[B]]')} />, the side that was opposite becomes adjacent.</p>
 
   <h3>What Is the Adjacent Side?</h3>
   <p>The adjacent side is the leg that touches angle <span set:html={rich('[[A]]')} /> but is not the hypotenuse. It forms one edge of the angle. In field measurements it often represents a horizontal run: the ground distance from a wall to a ladder base, the horizontal span of a roof, or the run of a ramp. It is one of the two perpendicular legs, and it must not be confused with the hypotenuse, which is the side opposite the right angle.</p>
 
   <h3>What Is the Hypotenuse?</h3>
-  <p>The hypotenuse, labelled <span set:html={rich('[[c]]')} />, is the side opposite the 90-degree angle and always the longest side of the triangle. The tangent calculator does not require its length. If you ever need it, the Pythagorean theorem gives it from the two legs: <span set:html={rich('[[c = \\sqrt{a^2 + b^2}]]')} />. But for finding the angle itself, the hypotenuse is extra information you can simply skip.</p>
+  <p>The hypotenuse, labelled <span set:html={rich('[[c]]')} />, is the side opposite the 90-degree angle and always the longest side of the triangle. The tangent calculator does not require its length. If you ever need it, the Pythagorean theorem gives it from the two legs: <span set:html={rich('[[c = \\sqrt{a^2 + b^2}]].')} /> But for finding the angle itself, the hypotenuse is extra information you can simply skip.</p>
 
   <h3>Why the Reference Angle Matters</h3>
-  <p>Opposite and adjacent are defined relative to the chosen angle. In the same triangle, swapping the reference from <span set:html={rich('[[A]]')} /> to <span set:html={rich('[[B]]')} /> exchanges the roles of the two legs: the side that was opposite becomes adjacent and vice versa. Reversing the ratio from <span set:html={rich('[[a/b]]')} /> to <span set:html={rich('[[b/a]]')} /> therefore computes the complementary angle <span set:html={rich('[[B = 90^\\circ - A]]')} /> rather than <span set:html={rich('[[A]]')} />. Keeping the reference angle fixed throughout a calculation avoids this mix-up.</p>
+  <p>Opposite and adjacent are defined relative to the chosen angle. In the same triangle, swapping the reference from <span set:html={rich('[[A]]')} /> to <span set:html={rich('[[B]]')} /> exchanges the roles of the two legs: the side that was opposite becomes adjacent and vice versa. Reversing the ratio from <span set:html={rich('[[a/b]]')} /> to <span set:html={rich('[[b/a]]')} /> therefore computes the complementary angle <span set:html={rich('[[B = 90^\\circ - A]]')} /> rather than <span set:html={rich('[[A]].')} /> Keeping the reference angle fixed throughout a calculation avoids this mix-up.</p>
 
   <figure class="not-prose my-6">
     <img src={imgSrc('arctan-anatomy.svg')} alt="Right triangle anatomy showing opposite side a, adjacent side b, and hypotenuse c for the arctan formula" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
@@ -144,10 +150,10 @@ const faqs = [
   <p>The ratio has no physical unit. Metres divided by metres cancel out, so whether you measured in metres, feet, or centimetres, the ratio 0.75 is the same pure number.</p>
 
   <h3>What Is Inverse Tangent?</h3>
-  <p>Ordinary tangent starts with an angle and produces a ratio. Inverse tangent starts with a ratio and returns the angle. If <span set:html={rich('[[\\tan(A) = 0.75]]')} />, then <span set:html={rich('[[A = \\arctan(0.75) \\approx 36.87^\\circ]]')} />. Inverse tangent reverses the tangent relationship, recovering the original angle from the side ratio.</p>
+  <p>Ordinary tangent starts with an angle and produces a ratio. Inverse tangent starts with a ratio and returns the angle. If <span set:html={rich('[[\\tan(A) = 0.75]]')} />, then <span set:html={rich('[[A = \\arctan(0.75) \\approx 36.87^\\circ]].')} /> Inverse tangent reverses the tangent relationship, recovering the original angle from the side ratio.</p>
 
   <h3>Is Arctangent the Same as Inverse Tangent?</h3>
-  <p>Yes. <span set:html={rich('[[\\arctan(x)]]')} /> and <span set:html={rich('[[\\tan^{-1}(x)]]')} /> are two notations for the same function. The superscript <span set:html={rich('[[-1]]')} /> does not mean the reciprocal <span set:html={rich('[[1/\\tan(x)]]')} />. The reciprocal of tangent is cotangent, a separate function.</p>
+  <p>Yes. <span set:html={rich('[[\\arctan(x)]]')} /> and <span set:html={rich('[[\\tan^{-1}(x)]]')} /> are two notations for the same function. The superscript <span set:html={rich('[[-1]]')} /> does not mean the reciprocal <span set:html={rich('[[1/\\tan(x)]].')} /> The reciprocal of tangent is cotangent, a separate function.</p>
 
   <h3>Understanding SOH-CAH-TOA</h3>
   <p>SOH-CAH-TOA is the standard memory aid: Sine = Opposite / Hypotenuse, Cosine = Adjacent / Hypotenuse, Tangent = Opposite / Adjacent. The TOA part identifies the correct ratio for this calculator, since the known measurements are the opposite and adjacent sides.</p>
@@ -281,7 +287,7 @@ const faqs = [
   <h3>Example 13: Calculating a Road Grade Angle</h3>
   <p>A road rises 5 m over a horizontal distance of 100 m. Find the road incline angle.</p>
   <p><span set:html={rich('[[[A = \\arctan\\left(\\frac{5}{100}\\right) \\approx 2.86^\\circ]]]')} /></p>
-  <p>The percentage grade is <span set:html={rich('[[(5/100) \\times 100 = 5\\%]]')} />. A 5 percent grade is not a 5-degree angle; the angle is arctan of the ratio, about 2.86 degrees.</p>
+  <p>The percentage grade is <span set:html={rich('[[(5/100) \\times 100 = 5\\%]].')} /> A 5 percent grade is not a 5-degree angle; the angle is arctan of the ratio, about 2.86 degrees.</p>
 
   <h3>Example 14: Finding a Crane Boom Angle</h3>
   <p>A simplified boom has a vertical rise of 8 m and a horizontal projection of 6 m. Find the angle relative to the horizontal.</p>
@@ -337,7 +343,7 @@ const faqs = [
 <!-- SECTION 9: How the ratio changes the angle -->
 <section id="arctan-ratio" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>How the Opposite-to-Adjacent Ratio Affects the Angle</h2>
-  <p>The ratio <span set:html={rich('[[a/b]]')} /> determines angle <span set:html={rich('[[A]]')} />. A small ratio produces a small acute angle, equal sides produce exactly 45 degrees, and an opposite side longer than the adjacent side produces an angle greater than 45 degrees. A ratio greater than 1 is completely valid for tangent, which sets it apart from sine and cosine. Proportional triangles share the same angles, and scaling both legs by the same positive factor leaves the angle unchanged. As the ratio grows extremely large, the angle approaches 90 degrees without reaching it for finite positive side lengths.</p>
+  <p>The ratio <span set:html={rich('[[a/b]]')} /> determines angle <span set:html={rich('[[A]].')} /> A small ratio produces a small acute angle, equal sides produce exactly 45 degrees, and an opposite side longer than the adjacent side produces an angle greater than 45 degrees. A ratio greater than 1 is completely valid for tangent, which sets it apart from sine and cosine. Proportional triangles share the same angles, and scaling both legs by the same positive factor leaves the angle unchanged. As the ratio grows extremely large, the angle approaches 90 degrees without reaching it for finite positive side lengths.</p>
 
   <div class="overflow-x-auto">
     <table class="w-full border-collapse text-sm">
@@ -382,15 +388,15 @@ const faqs = [
   <ol>
     <li><strong>Using the hypotenuse instead of the adjacent side.</strong> The formula needs the leg touching angle A, not the longest side. Check: is your denominator one of the two legs?</li>
     <li><strong>Swapping the opposite and adjacent sides.</strong> This computes the complementary angle instead. If you expected about 37 degrees and got about 53, the legs are swapped.</li>
-    <li><strong>Reversing the ratio into b/a.</strong> <span set:html={rich('[[\\arctan(b/a)]]')} /> gives <span set:html={rich('[[B]]')} />, not <span set:html={rich('[[A]]')} />. For a 3-4 triangle, arctan(4/3) is 53.13 degrees, the other acute angle.</li>
+    <li><strong>Reversing the ratio into b/a.</strong> <span set:html={rich('[[\\arctan(b/a)]]')} /> gives <span set:html={rich('[[B]]')} />, not <span set:html={rich('[[A]].')} /> For a 3-4 triangle, arctan(4/3) is 53.13 degrees, the other acute angle.</li>
     <li><strong>Using ordinary tangent instead of inverse tangent.</strong> Typing tan(0.75) instead of arctan(0.75) answers a different question entirely.</li>
-    <li><strong>Confusing inverse tangent with reciprocal tangent.</strong> <span set:html={rich('[[\\tan^{-1}(x)]]')} /> is not <span set:html={rich('[[1/\\tan(x)]]')} />. The reciprocal is cotangent.</li>
+    <li><strong>Confusing inverse tangent with reciprocal tangent.</strong> <span set:html={rich('[[\\tan^{-1}(x)]]')} /> is not <span set:html={rich('[[1/\\tan(x)]].')} /> The reciprocal is cotangent.</li>
     <li><strong>Assuming the tangent ratio must be between 0 and 1.</strong> It can exceed 1 freely. A ratio of 2 with angle 63.43 degrees is perfectly valid.</li>
     <li><strong>Entering zero or negative side lengths.</strong> Side lengths must be positive. Zero or negative inputs have no geometric meaning here.</li>
     <li><strong>Mixing incompatible measurement units.</strong> Metres for one leg and feet for the other corrupts the ratio. Convert first.</li>
     <li><strong>Rounding the ratio too early.</strong> Rounding 0.6667 to 0.67 before applying arctan shifts the answer. Keep full precision until the final step.</li>
     <li><strong>Reporting radians when degrees are expected.</strong> Arctan(1) is 45 degrees but 0.785 radians. Check your calculator mode.</li>
-    <li><strong>Confusing angle A with its complementary angle B.</strong> Remember <span set:html={rich('[[A + B = 90^\\circ]]')} />. If the answer looks like the "other" angle, the ratio was inverted.</li>
+    <li><strong>Confusing angle A with its complementary angle B.</strong> Remember <span set:html={rich('[[A + B = 90^\\circ]].')} /> If the answer looks like the "other" angle, the ratio was inverted.</li>
     <li><strong>Treating a percentage grade as an angle in degrees.</strong> A 5% grade is arctan(0.05), about 2.86 degrees, not 5 degrees.</li>
     <li><strong>Confusing vertical rise with sloping distance.</strong> The opposite side is the pure vertical component, not the length along the slope.</li>
     <li><strong>Assuming the calculated angle proves a structure is safe.</strong> Geometry describes shape only. Ladder safety, roof loads, and ramp compliance need separate engineering checks.</li>
@@ -406,11 +412,11 @@ const faqs = [
   <p>Verify <span set:html={rich('[[\\tan(A) \\approx a/b]]')} /> using the unrounded angle when possible. If tan of your answer reproduces the input ratio, the answer is consistent.</p>
 
   <h3>Method 2: Check the Complementary Angle</h3>
-  <p>Calculate <span set:html={rich('[[B = 90^\\circ - A]]')} />. The two acute angles of a right triangle must sum to 90 degrees, so this is a quick sanity check on every result.</p>
+  <p>Calculate <span set:html={rich('[[B = 90^\\circ - A]].')} /> The two acute angles of a right triangle must sum to 90 degrees, so this is a quick sanity check on every result.</p>
 
   <h3>Method 3: Use the Pythagorean Theorem</h3>
   <p>Compute the hypotenuse <span set:html={rich('[[c = \\sqrt{a^2 + b^2}]]')} />, then confirm <span set:html={rich('[[a^2 + b^2 = c^2]]')} /></p>
-  <p>Full check with <span set:html={rich('[[a = 3]]')} /> and <span set:html={rich('[[b = 4]]')} />: <span set:html={rich('[[c = \\sqrt{9 + 16} = 5]]')} />. The angle <span set:html={rich('[[A = \\arctan(3/4) \\approx 36.87^\\circ]]')} /> and its complement <span set:html={rich('[[B \\approx 53.13^\\circ]]')} /> sum to 90 degrees. Small differences come from rounding the displayed angle.</p>
+  <p>Full check with <span set:html={rich('[[a = 3]]')} /> and <span set:html={rich('[[b = 4]]')} />: <span set:html={rich('[[c = \\sqrt{9 + 16} = 5]].')} /> The angle <span set:html={rich('[[A = \\arctan(3/4) \\approx 36.87^\\circ]]')} /> and its complement <span set:html={rich('[[B \\approx 53.13^\\circ]]')} /> sum to 90 degrees. Small differences come from rounding the displayed angle.</p>
 </section>
 
 <!-- SECTION 13: Choosing a calculator -->
@@ -418,7 +424,7 @@ const faqs = [
   <h2>Choosing the Right Right Triangle Calculator</h2>
   <p>Match the tool to the measurements you actually have:</p>
   <ul>
-    <li><strong>Angle From Tangent Calculator</strong> (this page): opposite side <span set:html={rich('[[a]]')} /> and adjacent side <span set:html={rich('[[b]]')} /> known, finds angle <span set:html={rich('[[A]]')} />. Best when both legs were measured directly.</li>
+    <li><strong>Angle From Tangent Calculator</strong> (this page): opposite side <span set:html={rich('[[a]]')} /> and adjacent side <span set:html={rich('[[b]]')} /> known, finds angle <span set:html={rich('[[A]].')} /> Best when both legs were measured directly.</li>
     <li><a href="/right-triangle-angle-from-sine-calculator/" class="text-primary hover:underline"><strong>Angle From Sine Calculator</strong></a>: opposite side and hypotenuse known. Best for height problems where the sloping length was measured.</li>
     <li><a href="/right-triangle-angle-from-cosine-calculator/" class="text-primary hover:underline"><strong>Angle From Cosine Calculator</strong></a>: adjacent side and hypotenuse known. Best when the hypotenuse was measured directly along a slope.</li>
     <li><a href="/right-triangle-angle-calculator/" class="text-primary hover:underline"><strong>Angle Calculator</strong></a>: helps you pick the right method when you are unsure which sides you have.</li>

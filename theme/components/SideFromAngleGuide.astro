@@ -14,6 +14,12 @@ const rich = (s: string): string => {
     (_, l) =>
       `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
   );
+  // Keep a trailing period glued to inline math (prevents orphaned "." on mobile wraps)
+  out = out.replace(
+    /\[\[((?:(?!\[\[|\]\]).)+?)\]\]\./g,
+    (_, l) =>
+      `<span dir="ltr" class="math-nowrap"><span class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>.</span>`
+  );
   out = out.replace(
     /\[\[(.+?)\]\]/g,
     (_, l) =>
@@ -63,7 +69,7 @@ const imgSrc = (name: string): string => `/images/hub/${name}`;
   <p>The hypotenuse sits opposite the right angle and is always the longest of the three sides. It earns the label <span set:html={rich('[[c]]')} /> by convention. To spot it in a rotated diagram, find the side that does not touch the right-angle marker. No matter how the triangle is turned, the hypotenuse stays opposite the square corner.</p>
 
   <h3>What Are the Opposite and Adjacent Sides?</h3>
-  <p>Pick one acute angle and call it <span set:html={rich('[[A]]')} />. The leg across from <span set:html={rich('[[A]]')} /> is the opposite side, labelled <span set:html={rich('[[a]]')} />. The leg that forms <span set:html={rich('[[A]]')} /> together with the hypotenuse is the adjacent side, labelled <span set:html={rich('[[b]]')} />. Here is the part that trips up beginners: the labels depend on which angle you choose. The same leg that is opposite angle <span set:html={rich('[[A]]')} /> becomes adjacent when you switch your reference to angle <span set:html={rich('[[B]]')} />. The hypotenuse never changes its role. Throughout this guide, <span set:html={rich('[[a]]')} /> is opposite <span set:html={rich('[[A]]')} />, <span set:html={rich('[[b]]')} /> is adjacent to <span set:html={rich('[[A]]')} />, and <span set:html={rich('[[c]]')} /> is the hypotenuse.</p>
+  <p>Pick one acute angle and call it <span set:html={rich('[[A]].')} /> The leg across from <span set:html={rich('[[A]]')} /> is the opposite side, labelled <span set:html={rich('[[a]].')} /> The leg that forms <span set:html={rich('[[A]]')} /> together with the hypotenuse is the adjacent side, labelled <span set:html={rich('[[b]].')} /> Here is the part that trips up beginners: the labels depend on which angle you choose. The same leg that is opposite angle <span set:html={rich('[[A]]')} /> becomes adjacent when you switch your reference to angle <span set:html={rich('[[B]].')} /> The hypotenuse never changes its role. Throughout this guide, <span set:html={rich('[[a]]')} /> is opposite <span set:html={rich('[[A]]')} />, <span set:html={rich('[[b]]')} /> is adjacent to <span set:html={rich('[[A]]')} />, and <span set:html={rich('[[c]]')} /> is the hypotenuse.</p>
 
   <figure class="not-prose my-6">
     <img src={imgSrc('angle-anatomy.svg')} alt="Right triangle with angle A at bottom left, legs a opposite and b adjacent to A, hypotenuse c" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
@@ -77,13 +83,13 @@ const imgSrc = (name: string): string => `/images/hub/${name}`;
   <p>A trigonometric ratio is a fixed relationship between two sides of a right triangle for a given angle. Change the angle and the ratio changes; keep the angle the same and every triangle with that angle shares the same ratios, whatever its size. That is why one angle plus one side determines everything else. Each of the three ratios pairs the angle with a different combination of sides, so the side you know decides which ratio to reach for.</p>
 
   <h3>Understanding Sine</h3>
-  <p>Sine compares the opposite side with the hypotenuse: <span set:html={rich('[[\\sin(A) = \\frac{a}{c}]]')} />. To solve for the missing side, multiply both sides by <span set:html={rich('[[c]]')} />. The <span set:html={rich('[[c]]')} /> on the right cancels, leaving <span set:html={rich('[[a = c\\sin(A)]]')} />. In words: the opposite leg equals the hypotenuse scaled by the sine of the angle. A larger angle gives a larger sine value, so the opposite side grows as the angle opens up.</p>
+  <p>Sine compares the opposite side with the hypotenuse: <span set:html={rich('[[\\sin(A) = \\frac{a}{c}]].')} /> To solve for the missing side, multiply both sides by <span set:html={rich('[[c]].')} /> The <span set:html={rich('[[c]]')} /> on the right cancels, leaving <span set:html={rich('[[a = c\\sin(A)]].')} /> In words: the opposite leg equals the hypotenuse scaled by the sine of the angle. A larger angle gives a larger sine value, so the opposite side grows as the angle opens up.</p>
 
   <h3>Understanding Cosine</h3>
-  <p>Cosine compares the adjacent side with the hypotenuse: <span set:html={rich('[[\\cos(A) = \\frac{b}{c}]]')} />. Multiply both sides by <span set:html={rich('[[c]]')} /> and you get <span set:html={rich('[[b = c\\cos(A)]]')} />. The adjacent leg equals the hypotenuse scaled by the cosine of the angle. As angle <span set:html={rich('[[A]]')} /> grows toward 90 degrees, the adjacent side shrinks toward zero, which matches the geometry: the angle squeezes the adjacent leg flat.</p>
+  <p>Cosine compares the adjacent side with the hypotenuse: <span set:html={rich('[[\\cos(A) = \\frac{b}{c}]].')} /> Multiply both sides by <span set:html={rich('[[c]]')} /> and you get <span set:html={rich('[[b = c\\cos(A)]].')} /> The adjacent leg equals the hypotenuse scaled by the cosine of the angle. As angle <span set:html={rich('[[A]]')} /> grows toward 90 degrees, the adjacent side shrinks toward zero, which matches the geometry: the angle squeezes the adjacent leg flat.</p>
 
   <h3>Understanding Tangent</h3>
-  <p>Tangent compares the two legs directly: <span set:html={rich('[[\\tan(A) = \\frac{a}{b}]]')} />. Rearranged both ways it gives <span set:html={rich('[[a = b\\tan(A)]]')} /> and <span set:html={rich('[[b = \\frac{a}{\\tan(A)}]]')} />. Use multiplication when the known leg is adjacent and you want the opposite leg: scaling the adjacent side by the tangent stretches it into the opposite side. Use division when the known leg is opposite and you want the adjacent one: you are asking how many tangent-sized pieces fit into the opposite leg. The two forms are the same relationship read in opposite directions.</p>
+  <p>Tangent compares the two legs directly: <span set:html={rich('[[\\tan(A) = \\frac{a}{b}]].')} /> Rearranged both ways it gives <span set:html={rich('[[a = b\\tan(A)]]')} /> and <span set:html={rich('[[b = \\frac{a}{\\tan(A)}]].')} /> Use multiplication when the known leg is adjacent and you want the opposite leg: scaling the adjacent side by the tangent stretches it into the opposite side. Use division when the known leg is opposite and you want the adjacent one: you are asking how many tangent-sized pieces fit into the opposite leg. The two forms are the same relationship read in opposite directions.</p>
 
   <h3>What Does SOH-CAH-TOA Mean?</h3>
   <p>SOH-CAH-TOA is a memory aid, not a substitute for identifying sides correctly. SOH: Sine = Opposite / Hypotenuse. CAH: Cosine = Adjacent / Hypotenuse. TOA: Tangent = Opposite / Adjacent. It helps you pick the ratio once you have labelled opposite, adjacent, and hypotenuse relative to your angle. Always label the sides first; the mnemonic only tells you which fraction to write after that.</p>
@@ -184,14 +190,14 @@ const imgSrc = (name: string): string => `/images/hub/${name}`;
   <p>Each example below follows the same path: spot the right triangle, name the known side and angle, pick the ratio that connects them to the missing side, substitute, calculate, and read the answer back in context. Watch how the choice of sine, cosine, or tangent falls out of the geometry every time.</p>
 
   <h3>Example 1: Finding the Height a Ladder Reaches</h3>
-  <p>A 5 m ladder rests against a vertical wall, making a 65-degree angle with the level ground. The wall, ground, and ladder form a right triangle with the ladder as the hypotenuse. Known: <span set:html={rich('[[c = 5\\text{ m}]]')} />, <span set:html={rich('[[A = 65^\\circ]]')} />. The missing height is opposite the 65° angle, so sine fits: the ratio connects opposite and hypotenuse.</p>
+  <p>A 5 m ladder rests against a vertical wall, making a 65-degree angle with the level ground. The wall, ground, and ladder form a right triangle with the ladder as the hypotenuse. Known: <span set:html={rich('[[c = 5\\text{ m}]]')} />, <span set:html={rich('[[A = 65^\\circ]].')} /> The missing height is opposite the 65° angle, so sine fits: the ratio connects opposite and hypotenuse.</p>
   <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[a = 5\\sin(65^\\circ) \\approx 5(0.9063) \\approx 4.53\\text{ m}]]]')} />
   <p>The ladder reaches about 4.53 m up the wall. The horizontal distance from the wall comes from cosine, since that leg is adjacent to the angle:</p>
   <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[b = 5\\cos(65^\\circ) \\approx 5(0.4226) \\approx 2.11\\text{ m}]]]')} />
   <p>One hypotenuse and one angle gave both legs. Note this is a geometry calculation only; it says nothing about whether the ladder setup is safe, so follow manufacturer guidance for real use.</p>
 
   <h3>Example 2: Calculating the Rise of a Ramp</h3>
-  <p>A simplified ramp runs 12 m horizontally and rises at 5 degrees above the horizontal. The run and rise are the legs of a right triangle, with the run adjacent to the 5° angle. Known: <span set:html={rich('[[b = 12\\text{ m}]]')} />, <span set:html={rich('[[A = 5^\\circ]]')} />. The missing rise is the opposite leg, and tangent connects opposite to adjacent.</p>
+  <p>A simplified ramp runs 12 m horizontally and rises at 5 degrees above the horizontal. The run and rise are the legs of a right triangle, with the run adjacent to the 5° angle. Known: <span set:html={rich('[[b = 12\\text{ m}]]')} />, <span set:html={rich('[[A = 5^\\circ]].')} /> The missing rise is the opposite leg, and tangent connects opposite to adjacent.</p>
   <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[a = 12\\tan(5^\\circ) \\approx 12(0.0875) \\approx 1.05\\text{ m}]]]')} />
   <p>The ramp rises about 1.05 m over its 12 m run. Keep the horizontal run and the sloping surface distinct: the slope itself is slightly longer than 12 m. This result does not certify the ramp against accessibility or building rules.</p>
 
@@ -309,7 +315,7 @@ const imgSrc = (name: string): string => `/images/hub/${name}`;
 <!-- Section 7: Degrees and Calculator Settings -->
 <section id="angle-degrees" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>Why the Correct Angle Setting Matters</h2>
-  <p>Angles can be measured in degrees or radians, and the two scales disagree completely on what a number means. A full circle is 360 degrees but only about 6.283 radians. This calculator expects degrees: entering 30 means 30°, and <span set:html={rich('[[\\sin(30^\\circ) = 0.5]]')} />. If the same 30 were read as radians, the sine would be about −0.988, a wildly different answer with no warning.</p>
+  <p>Angles can be measured in degrees or radians, and the two scales disagree completely on what a number means. A full circle is 360 degrees but only about 6.283 radians. This calculator expects degrees: entering 30 means 30°, and <span set:html={rich('[[\\sin(30^\\circ) = 0.5]].')} /> If the same 30 were read as radians, the sine would be about −0.988, a wildly different answer with no warning.</p>
   <p>The trap works the other way too. Suppose your angle comes from a calculation that produced radians, say 0.5 rad (about 28.65°). Typing 0.5 into a degree-mode calculator computes sin(0.5°) ≈ 0.0087 instead of sin(0.5 rad) ≈ 0.479. Always confirm which unit your angle is in before entering it. Rounding the angle early also costs accuracy: at steep angles a tenth of a degree moves the tangent noticeably, so keep the full angle precision until the final step.</p>
 </section>
 

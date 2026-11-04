@@ -1,0 +1,1574 @@
+# MASTER SEO CONTENT WRITING PROMPT
+## Right Triangle Projection Calculator — 4500–5,000+ Words
+
+### 1. ROLE AND OBJECTIVE
+
+Act as a senior mathematics educator, geometry specialist, professional educational content writer, mathematical proofreader, and technical SEO strategist.
+
+Create a comprehensive, original, mathematically accurate, engaging, and search-engine-optimized educational guide for the following webpage.
+
+**Website:** RightTriangleSolver.com
+
+**Page URL:** https://www.righttrianglesolver.com/right-triangle-projection-calculator/
+
+**Existing Page Title:** Right Triangle Projection and Segment Calculator
+
+**Primary Focus Keyword:** Right Triangle Projection Calculator
+
+**Secondary Topic:** Right Triangle Hypotenuse Projection and Segment Calculator
+
+**Target Word Count:** 3,500–4,000 words of meaningful educational content. Exceed 4,000 words only when additional content provides genuine learning value.
+
+**Language:** American English
+
+**Target Audience:**
+- Middle school geometry students
+- High school mathematics students
+- College students
+- Mathematics teachers
+- Private tutors
+- Parents helping children with geometry
+- Beginners learning right triangle geometry
+- Students studying geometric mean and projection theorems
+- Anyone solving right triangle segment and projection problems
+
+**Main Objective:**
+
+Create a detailed educational guide explaining how to calculate right triangle projections, hypotenuse segments, and related side lengths using the five calculation modes available on the existing page.
+
+The content must teach visitors how to select the correct calculator mode according to their known measurements.
+
+It must explain the mathematical relationships between:
+- Leg a
+- Leg b
+- Hypotenuse c
+- Projection p
+- Projection q
+- Altitude h
+
+The article should work as a central educational resource for right triangle projection calculations.
+
+Write naturally, like an experienced mathematics teacher explaining the topic to real students.
+
+Avoid robotic language, keyword stuffing, repetitive explanations, unnecessary filler, and artificially expanded paragraphs.
+
+---
+
+### 2. MANDATORY EXISTING PAGE ANALYSIS
+
+Before writing, inspect the live webpage.
+
+Confirm its current calculator modes, input fields, unit selectors, buttons, formulas, diagrams, and related links.
+
+The existing calculator has five calculation modes.
+
+**Mode 1: Hypotenuse Segment p Calculator**
+
+Inputs:
+- Leg a
+- Hypotenuse c
+
+Formula:
+
+p = a²/c
+
+**Mode 2: Hypotenuse Segment q Calculator**
+
+Inputs:
+- Leg b
+- Hypotenuse c
+
+Formula:
+
+q = b²/c
+
+**Mode 3: Leg a Squared Projection Calculator**
+
+Inputs:
+- Hypotenuse c
+- Projection p
+
+Formula:
+
+a² = c × p
+
+Result:
+
+a = √(c × p)
+
+**Mode 4: Leg b Squared Projection Calculator**
+
+Inputs:
+- Hypotenuse c
+- Projection q
+
+Formula:
+
+b² = c × q
+
+Result:
+
+b = √(c × q)
+
+**Mode 5: Projections Sum to c Calculator**
+
+Inputs:
+- Projection p
+- Projection q
+
+Formula:
+
+c = p + q
+
+Each mode includes its own input fields, unit selectors, Calculate button, and Reset button.
+
+Confirm the current interface before describing it.
+
+Do not invent features or additional calculation modes.
+
+Do not claim that the calculator automatically calculates altitude, triangle angles, area, or missing measurements unless those capabilities are actually present.
+
+Explain additional mathematical formulas as educational relationships, not as additional calculator functions.
+
+The current page also includes:
+- Introduction to projection relationships
+- Projection theorem explanation
+- Calculator instructions
+- Input tips
+- Common mistakes
+- FAQs
+- Related projection calculators
+
+Improve the existing material without unnecessarily repeating it.
+
+---
+
+### 3. PRIMARY SEARCH INTENT
+
+The main search intent is informational and calculator-based.
+
+Visitors want to:
+
+1. Understand what projections mean in a right triangle.
+2. Calculate projection p.
+3. Calculate projection q.
+4. Find leg a from projection p.
+5. Find leg b from projection q.
+6. Calculate the complete hypotenuse using p and q.
+7. Understand the projection theorem.
+8. Identify the correct calculator mode.
+9. Verify projection calculations.
+10. Understand the relationship between projections, altitude, legs, and hypotenuse.
+
+The most important user need is choosing the correct calculation method.
+
+Introduce the five modes early.
+
+Make the calculator and formula summary easy to find.
+
+Do not place lengthy theoretical explanations before the calculator instructions.
+
+---
+
+### 4. SEO KEYWORD STRATEGY
+
+**Primary Focus Keyword:**
+
+Right Triangle Projection Calculator
+
+**Secondary Keywords:**
+- right triangle projection calculator
+- right triangle projection formula
+- hypotenuse projection calculator
+- right triangle projection theorem
+- hypotenuse segment calculator
+- calculate projection of right triangle
+- right triangle segment calculator
+- projection p and q calculator
+- right triangle leg from projection
+- hypotenuse segment formula
+- geometric mean theorem right triangle
+- right triangle projection relationships
+
+**Related Semantic Keywords:**
+- right triangle
+- perpendicular legs
+- hypotenuse
+- altitude
+- projection p
+- projection q
+- hypotenuse segments
+- similar triangles
+- geometric mean
+- Pythagorean theorem
+- perpendicular height
+- right angle
+- triangle similarity
+- side length
+- segment addition
+- geometric projection
+- square root
+- squared side length
+- projection theorem
+- altitude foot
+
+### Keyword Placement
+
+Use the primary keyword naturally in:
+- SEO title
+- H1
+- Opening paragraph
+- One relevant H2, if appropriate
+- Meta description, where natural
+
+Use secondary keywords contextually.
+
+Avoid:
+- Keyword stuffing
+- Artificial keyword density
+- Excessive exact-match phrases
+- Repetitive headings
+- Unnecessary keyword variations
+
+Prioritize search intent, mathematical accuracy, and natural writing.
+
+---
+
+### 5. MATHEMATICAL DEFINITIONS AND NOTATION
+
+Use one consistent triangle throughout the entire article.
+
+Consider right triangle ABC, with a right angle at C.
+
+Draw altitude CD perpendicular to hypotenuse AB.
+
+Use the following notation:
+
+- AC = a: first perpendicular leg
+- BC = b: second perpendicular leg
+- AB = c: complete hypotenuse
+- AD = p: projection associated with leg a
+- DB = q: projection associated with leg b
+- CD = h: altitude to the hypotenuse
+
+The essential relationships are:
+
+**Projection p:**
+
+p = a²/c
+
+**Projection q:**
+
+q = b²/c
+
+**Leg a from projection p:**
+
+a² = cp
+
+a = √(cp)
+
+**Leg b from projection q:**
+
+b² = cq
+
+b = √(cq)
+
+**Hypotenuse from projections:**
+
+c = p + q
+
+**Altitude from projections:**
+
+h² = pq
+
+h = √(pq)
+
+**Pythagorean theorem:**
+
+a² + b² = c²
+
+Maintain these pairings throughout the article:
+
+Leg a corresponds to projection p.
+
+Leg b corresponds to projection q.
+
+Do not reverse the relationships.
+
+Explain that p and q are segments along the hypotenuse, not the perpendicular legs.
+
+For a valid nondegenerate right triangle:
+
+p > 0
+
+q > 0
+
+c = p + q
+
+p < c
+
+q < c
+
+---
+
+## 6. REQUIRED ARTICLE STRUCTURE
+
+Follow the structure below.
+
+The suggested word allocations are flexible. The complete article should contain approximately 3,500–4,000 words of valuable educational content.
+
+### H1: Right Triangle Projection Calculator
+
+**Suggested length: 120–150 words**
+
+Write a direct, engaging introduction.
+
+Explain:
+- What a projection means in a right triangle
+- How the altitude divides the hypotenuse
+- What p and q represent
+- How the legs relate to their corresponding projections
+- What the calculator can calculate
+- Why the five calculation modes are useful
+
+Introduce the five available calculations.
+
+Include a brief example:
+
+If:
+
+p = 9 cm
+
+q = 16 cm
+
+Then:
+
+c = 9 + 16 = 25 cm
+
+Explain that the same projection measurements can also help calculate the altitude.
+
+Avoid generic introductory statements.
+
+### H2: Calculate Right Triangle Projections and Hypotenuse Segments
+
+**Suggested length: 130–180 words**
+
+Place this section immediately above or beside the existing calculator.
+
+Explain that the calculator offers five modes.
+
+Provide a clear comparison table:
+
+| Calculator Mode | Known Measurements | Result |
+|---|---|---|
+| Hypotenuse Segment p | Leg a and hypotenuse c | Projection p |
+| Hypotenuse Segment q | Leg b and hypotenuse c | Projection q |
+| Leg a Squared Projection | Hypotenuse c and projection p | Leg a |
+| Leg b Squared Projection | Hypotenuse c and projection q | Leg b |
+| Projections Sum to c | Projection p and projection q | Hypotenuse c |
+
+Explain that users should choose the mode that matches their available measurements.
+
+Do not claim that the calculator offers an additional automatic all-in-one solver mode.
+
+### H2: What Are Projections in a Right Triangle?
+
+**Suggested length: 200–250 words**
+
+Explain projections in beginner-friendly language.
+
+Describe how the altitude from the right-angle vertex meets the hypotenuse.
+
+Explain how the intersection divides the hypotenuse into two segments.
+
+Define:
+
+AD = p
+
+DB = q
+
+AB = c
+
+Explain:
+- Why p is associated with leg a
+- Why q is associated with leg b
+- Why projections lie along the hypotenuse
+- Why they are different from the triangle legs
+
+Show:
+
+p + q = c
+
+Use a numerical illustration.
+
+Include a labeled diagram.
+
+### H2: Understanding the Sides and Segments of a Right Triangle
+
+**Suggested length: 180–230 words**
+
+Explain the complete triangle structure.
+
+Cover:
+- Right angle
+- Leg a
+- Leg b
+- Hypotenuse c
+- Altitude h
+- Projection p
+- Projection q
+
+Provide a comparison table with the variable, meaning, and position.
+
+Explain why identifying the correct segment matters when selecting a calculator mode.
+
+Use consistent labels throughout.
+
+### H2: Right Triangle Projection Formulas Explained
+
+**Suggested length: 250–300 words**
+
+Introduce the five primary formulas.
+
+**Formula 1: Projection p**
+
+p = a²/c
+
+**Formula 2: Projection q**
+
+q = b²/c
+
+**Formula 3: Leg a**
+
+a = √(cp)
+
+**Formula 4: Leg b**
+
+b = √(cq)
+
+**Formula 5: Hypotenuse**
+
+c = p + q
+
+Explain every variable.
+
+Discuss the difference between:
+- Finding a projection
+- Finding a leg
+- Finding the hypotenuse
+
+Explain why the square root is required when calculating a leg.
+
+Clarify that all measurements must use compatible units.
+
+### H2: How to Choose the Correct Calculator Mode
+
+**Suggested length: 220–280 words**
+
+This is one of the most important sections.
+
+Explain each mode individually.
+
+**Mode 1: Choose Hypotenuse Segment p**
+
+Use when leg a and hypotenuse c are known.
+
+Formula:
+
+p = a²/c
+
+**Mode 2: Choose Hypotenuse Segment q**
+
+Use when leg b and hypotenuse c are known.
+
+Formula:
+
+q = b²/c
+
+**Mode 3: Choose Leg a Squared Projection**
+
+Use when hypotenuse c and projection p are known.
+
+Formula:
+
+a = √(cp)
+
+**Mode 4: Choose Leg b Squared Projection**
+
+Use when hypotenuse c and projection q are known.
+
+Formula:
+
+b = √(cq)
+
+**Mode 5: Choose Projections Sum to c**
+
+Use when both projections are known.
+
+Formula:
+
+c = p + q
+
+Finish with a short decision guide.
+
+Help readers identify the mode without having to understand every theorem first.
+
+### H2: How to Calculate Projection P From Leg A and Hypotenuse
+
+**Suggested length: 180–220 words**
+
+Explain:
+
+p = a²/c
+
+Use:
+
+a = 9 cm
+
+c = 15 cm
+
+Step 1:
+
+p = a²/c
+
+Step 2:
+
+p = 81/15
+
+Step 3:
+
+p = 5.4 cm
+
+Explain that projection p is the segment associated with leg a.
+
+Include a short verification using the complete triangle.
+
+### H2: How to Calculate Projection Q From Leg B and Hypotenuse
+
+**Suggested length: 180–220 words**
+
+Explain:
+
+q = b²/c
+
+Use:
+
+b = 12 cm
+
+c = 15 cm
+
+Step 1:
+
+q = b²/c
+
+Step 2:
+
+q = 144/15
+
+Step 3:
+
+q = 9.6 cm
+
+Explain why q belongs to leg b.
+
+Compare p and q without confusing the two.
+
+### H2: How to Find Leg A From Projection P
+
+**Suggested length: 170–210 words**
+
+Explain:
+
+a² = cp
+
+a = √(cp)
+
+Use:
+
+c = 25 cm
+
+p = 9 cm
+
+a = √(25 × 9)
+
+a = √225
+
+a = 15 cm
+
+Explain why the square root is necessary.
+
+Clarify that cp represents a squared length, not the final leg.
+
+Add a contextual link to the dedicated Leg A calculator.
+
+### H2: How to Find Leg B From Projection Q
+
+**Suggested length: 170–210 words**
+
+Explain:
+
+b² = cq
+
+b = √(cq)
+
+Use:
+
+c = 25 cm
+
+q = 16 cm
+
+b = √(25 × 16)
+
+b = √400
+
+b = 20 cm
+
+Explain why q is associated with leg b.
+
+Add a contextual link to the dedicated Leg B calculator.
+
+### H2: How to Calculate the Complete Hypotenuse From Projections
+
+**Suggested length: 170–210 words**
+
+Explain:
+
+c = p + q
+
+Use:
+
+p = 9 cm
+
+q = 16 cm
+
+c = 25 cm
+
+Explain the segment addition principle.
+
+Show how the two adjacent hypotenuse segments form the complete hypotenuse.
+
+Add a contextual link to the dedicated Hypotenuse From Projections calculator.
+
+### H2: How to Use the Right Triangle Projection Calculator
+
+**Suggested length: 180–230 words**
+
+Provide clear numbered instructions.
+
+Step 1: Identify which measurements are known.
+
+Step 2: Open the calculator mode selector.
+
+Step 3: Choose the matching calculation mode.
+
+Step 4: Enter the first required measurement.
+
+Step 5: Enter the second required measurement.
+
+Step 6: Select compatible measurement units.
+
+Step 7: Click the relevant Calculate button.
+
+Step 8: Read the displayed result.
+
+Step 9: Check the answer using another geometric relationship when appropriate.
+
+Step 10: Use Reset before starting another calculation.
+
+Do not describe unsupported features.
+
+### H2: Understanding the Right Triangle Projection Diagram
+
+**Suggested length: 180–230 words**
+
+Create an accurate geometric diagram.
+
+Use triangle ABC, right-angled at C.
+
+Show:
+- AC = a
+- BC = b
+- AB = c
+- AD = p
+- DB = q
+- CD = h
+
+Include:
+- Right-angle marker at C
+- Right-angle marker at D
+- Projection labels
+- Side labels
+- Perpendicular altitude
+
+Explain the diagram in detail.
+
+Show how the altitude creates two smaller right triangles.
+
+Explain why p and q are located on opposite sides of D.
+
+Provide an accessible caption and descriptive alt text.
+
+### H2: Why Do the Projection Theorems Work?
+
+**Suggested length: 250–320 words**
+
+Explain the relationship using similar triangles.
+
+The original triangle ABC is right-angled at C.
+
+The altitude CD creates two smaller triangles.
+
+Explain that:
+
+Triangle ACD is similar to triangle ABC.
+
+Triangle CBD is similar to triangle ABC.
+
+Use the similarity relationships to derive:
+
+a² = cp
+
+b² = cq
+
+Explain the corresponding sides carefully.
+
+For leg a:
+
+p/a = a/c
+
+Therefore:
+
+a² = cp
+
+For leg b:
+
+q/b = b/c
+
+Therefore:
+
+b² = cq
+
+Explain how these relationships form the foundation of the projection theorem.
+
+Do not skip mathematical steps.
+
+Ensure the proof and diagram use identical labels.
+
+### H2: Worked Examples Using All Five Calculator Modes
+
+**Suggested length: 500–650 words**
+
+Provide at least ten worked examples, with two for each calculator mode.
+
+Every example must include:
+- Given values
+- Selected calculator mode
+- Formula
+- Substitution
+- Calculation
+- Final answer
+- Brief explanation
+
+**Mode 1: Find Projection P**
+
+Example 1:
+
+a = 9 cm
+
+c = 15 cm
+
+p = 81/15 = 5.4 cm
+
+Example 2:
+
+a = 12 m
+
+c = 20 m
+
+p = 144/20 = 7.2 m
+
+**Mode 2: Find Projection Q**
+
+Example 3:
+
+b = 12 cm
+
+c = 15 cm
+
+q = 144/15 = 9.6 cm
+
+Example 4:
+
+b = 8 m
+
+c = 10 m
+
+q = 64/10 = 6.4 m
+
+**Mode 3: Find Leg A**
+
+Example 5:
+
+c = 25 cm
+
+p = 9 cm
+
+a = 15 cm
+
+Example 6:
+
+c = 10 cm
+
+p = 4 cm
+
+a = √40 ≈ 6.325 cm
+
+**Mode 4: Find Leg B**
+
+Example 7:
+
+c = 25 cm
+
+q = 16 cm
+
+b = 20 cm
+
+Example 8:
+
+c = 10 cm
+
+q = 6 cm
+
+b = √60 ≈ 7.746 cm
+
+**Mode 5: Find Hypotenuse**
+
+Example 9:
+
+p = 9 cm
+
+q = 16 cm
+
+c = 25 cm
+
+Example 10:
+
+p = 3.5 m
+
+q = 6.5 m
+
+c = 10 m
+
+Avoid identical explanations for every example.
+
+Use the examples to demonstrate different mathematical situations.
+
+### H2: How to Calculate All Main Measurements of a Right Triangle
+
+**Suggested length: 200–260 words**
+
+Demonstrate how several projection relationships can be combined.
+
+Use:
+
+p = 9 cm
+
+q = 16 cm
+
+First:
+
+c = 9 + 16 = 25 cm
+
+Then:
+
+a = √(25 × 9) = 15 cm
+
+b = √(25 × 16) = 20 cm
+
+Altitude:
+
+h = √(9 × 16) = 12 cm
+
+Explain that knowing the two projections can determine the hypotenuse, both legs, and the altitude of the same right triangle.
+
+Clarify that these are mathematical relationships and are not all separate calculator modes.
+
+### H2: Relationship Between Projections and the Pythagorean Theorem
+
+**Suggested length: 220–280 words**
+
+Explain:
+
+a² + b² = c²
+
+Using:
+
+a² = cp
+
+b² = cq
+
+Substitute:
+
+cp + cq = c²
+
+Factor:
+
+c(p + q) = c²
+
+Since:
+
+p + q = c
+
+Therefore:
+
+a² + b² = c²
+
+Explain why the projection theorem is consistent with the Pythagorean theorem.
+
+Use simple, beginner-friendly mathematical reasoning.
+
+### H2: Relationship Between Projections and Altitude
+
+**Suggested length: 180–230 words**
+
+Explain:
+
+h² = pq
+
+h = √(pq)
+
+Use:
+
+p = 9 cm
+
+q = 16 cm
+
+h = √144 = 12 cm
+
+Explain that projection measurements can determine the altitude as well as the hypotenuse and both legs.
+
+Clarify that the current page does not have a dedicated altitude mode.
+
+Add a contextual link to the altitude-from-projections calculator.
+
+### H2: How to Verify Your Projection Calculations
+
+**Suggested length: 200–260 words**
+
+Explain four verification methods.
+
+**Check 1: Projection Addition**
+
+p + q = c
+
+**Check 2: Projection Theorem for Leg A**
+
+a² = cp
+
+**Check 3: Projection Theorem for Leg B**
+
+b² = cq
+
+**Check 4: Pythagorean Theorem**
+
+a² + b² = c²
+
+Use one consistent numerical example.
+
+Explain why checking multiple relationships helps identify incorrect inputs.
+
+### H2: Common Mistakes When Using a Right Triangle Projection Calculator
+
+**Suggested length: 250–320 words**
+
+Explain at least ten mistakes:
+
+1. Confusing projection p with projection q.
+2. Pairing leg a with q instead of p.
+3. Pairing leg b with p instead of q.
+4. Forgetting the square root when calculating a leg.
+5. Mixing different measurement units.
+6. Using the wrong calculator mode.
+7. Treating p or q as a perpendicular leg.
+8. Forgetting that c = p + q.
+9. Using invalid or negative lengths.
+10. Rounding too early.
+11. Applying right-triangle projection formulas to an arbitrary triangle.
+12. Confusing squared side lengths with actual side lengths.
+
+For every mistake:
+- Explain the error.
+- Show the correct relationship.
+- Provide a short example where useful.
+
+### H2: Special Cases and Important Projection Properties
+
+**Suggested length: 200–250 words**
+
+Explain:
+
+**Equal projections:**
+
+p = q
+
+Then:
+
+a = b
+
+Explain why the triangle is isosceles.
+
+**Unequal projections:**
+
+If p is greater than q, leg a is longer than leg b.
+
+If q is greater than p, leg b is longer than leg a.
+
+**Swapping projections:**
+
+Swapping p and q swaps the corresponding leg lengths but does not change the total hypotenuse.
+
+**Scaling:**
+
+If every measurement is multiplied by the same positive factor, all resulting side lengths and segments scale by that factor.
+
+**Positive segment requirements:**
+
+Explain why zero or negative projection lengths do not describe a valid nondegenerate triangle.
+
+### H2: Practical Applications of Right Triangle Projection Relationships
+
+**Suggested length: 150–200 words**
+
+Discuss relevant educational and theoretical applications:
+
+- Geometry homework
+- Similar-triangle proofs
+- Triangle reconstruction
+- Technical drawing
+- Mathematical modeling
+- Classroom demonstrations
+- Side-length verification
+- Geometric design exercises
+
+Use realistic hypothetical examples.
+
+Do not claim that these formulas replace professional engineering, surveying, or construction procedures.
+
+### H2: Practice Problems With Answers
+
+**Suggested length: 250–300 words**
+
+Create six original questions.
+
+Include:
+- Finding projection p
+- Finding projection q
+- Finding leg a
+- Finding leg b
+- Finding the hypotenuse
+- A multi-step projection theorem problem
+
+Provide complete solutions after the questions.
+
+Use different values from the worked examples.
+
+Verify every result.
+
+### H2: Frequently Asked Questions
+
+**Suggested length: 400–500 words**
+
+Include 10–12 useful FAQs.
+
+Suggested questions:
+
+1. What is a projection in a right triangle?
+2. What is the difference between projection p and projection q?
+3. What is the formula for projection p?
+4. What is the formula for projection q?
+5. How do I calculate leg a from projection p?
+6. How do I calculate leg b from projection q?
+7. How do I find the hypotenuse from two projections?
+8. Why do we use a square root in the projection theorem?
+9. Can projections determine the altitude?
+10. How are projections related to the Pythagorean theorem?
+11. Which calculator mode should I choose?
+12. Are projections the same as the legs of a right triangle?
+
+Keep answers approximately 35–65 words.
+
+Do not repeat entire article sections.
+
+### H2: Related Right Triangle Calculators
+
+**Suggested length: 80–110 words**
+
+Introduce the specialized calculators.
+
+Explain which one to use when visitors need a single calculation.
+
+Include relevant contextual links.
+
+Avoid generic promotional conclusions.
+
+---
+
+## 7. REQUIRED EDUCATIONAL DIAGRAMS
+
+Provide at least seven accurate mathematical diagrams.
+
+### Diagram 1: Complete Right Triangle Projection Diagram
+
+Show triangle ABC with right angle at C.
+
+Include:
+- AC = a
+- BC = b
+- AB = c
+- AD = p
+- DB = q
+- CD = h
+
+Show the perpendicular altitude.
+
+### Diagram 2: Projection P and Leg A Relationship
+
+Show:
+
+p = a²/c
+
+Explain how leg a corresponds to projection p.
+
+### Diagram 3: Projection Q and Leg B Relationship
+
+Show:
+
+q = b²/c
+
+Explain how leg b corresponds to projection q.
+
+### Diagram 4: Five Calculator Modes
+
+Create an educational mode-selection infographic.
+
+Show the known values and the calculated result for each mode.
+
+Keep the mathematical formulas readable.
+
+Clearly distinguish this infographic from the actual interactive calculator.
+
+### Diagram 5: Similar Triangles Proof
+
+Show the original triangle and two smaller triangles.
+
+Identify corresponding angles and sides.
+
+Demonstrate both projection theorems.
+
+### Diagram 6: Complete Numerical Example
+
+Use:
+
+p = 9
+
+q = 16
+
+c = 25
+
+a = 15
+
+b = 20
+
+h = 12
+
+Show all relationships on the same triangle.
+
+### Diagram 7: Equal vs. Unequal Projections
+
+Compare:
+- p = 5, q = 5
+- p = 2, q = 8
+
+Keep the hypotenuse equal to 10 in both diagrams.
+
+Explain how equal projections produce equal legs.
+
+**Diagram requirements:**
+
+For every diagram, provide:
+- Suggested placement
+- Exact mathematical labels
+- Construction instructions
+- Descriptive alt text
+- Educational figure caption
+- Mobile-responsive SVG guidance
+
+Prefer mathematically accurate SVG.
+
+Avoid decorative illustrations without educational purpose.
+
+Do not use inaccurate AI-generated geometry diagrams.
+
+---
+
+## 8. INTERNAL LINKING STRATEGY
+
+Use verified, relevant internal links from RightTriangleSolver.com.
+
+Suggested destinations:
+
+1. https://www.righttrianglesolver.com/right-triangle-projection-p-calculator/
+
+2. https://www.righttrianglesolver.com/right-triangle-projection-q-calculator/
+
+3. https://www.righttrianglesolver.com/right-triangle-leg-a-from-projection-calculator/
+
+4. https://www.righttrianglesolver.com/right-triangle-leg-b-from-projection-calculator/
+
+5. https://www.righttrianglesolver.com/right-triangle-hypotenuse-from-projections-calculator/
+
+6. https://www.righttrianglesolver.com/right-triangle-altitude-from-projections-calculator/
+
+7. https://www.righttrianglesolver.com/right-triangle-altitude-calculator/
+
+Verify every destination URL before including it.
+
+Use approximately 5–8 relevant internal links.
+
+Use descriptive anchor text.
+
+Do not insert links into unrelated paragraphs.
+
+Avoid excessive exact-match anchor text.
+
+Do not link to the current page itself.
+
+---
+
+## 9. KEYWORD CANNIBALIZATION PREVENTION
+
+This page should serve as the main educational hub for right triangle projection relationships.
+
+Its primary keyword is:
+
+**Right Triangle Projection Calculator**
+
+Its main purpose is to explain and support all five existing calculator modes.
+
+Keep the following pages focused on their specialized search intents:
+
+- Projection p Calculator: finding p from a and c.
+- Projection q Calculator: finding q from b and c.
+- Leg A From Projection Calculator: finding a from c and p.
+- Leg B From Projection Calculator: finding b from c and q.
+- Hypotenuse From Projections Calculator: finding c from p and q.
+- Altitude From Projections Calculator: finding h from p and q.
+
+The main page should introduce all these relationships and explain how to choose between them.
+
+Link to specialized pages for detailed treatment.
+
+Do not duplicate their complete articles.
+
+---
+
+## 10. HUMAN-LIKE WRITING REQUIREMENTS
+
+Write naturally and professionally, like a mathematics educator.
+
+**Sentence structure:**
+- Use short and medium-length sentences.
+- Vary sentence lengths naturally.
+- Avoid comma splices.
+- Use active voice where practical.
+- Break complicated explanations into smaller steps.
+- Explain technical terms before relying on them.
+
+**Paragraph structure:**
+- Prefer 2–4 sentences per paragraph.
+- Keep paragraphs focused on one idea.
+- Avoid walls of text.
+- Avoid repetitive openings.
+- Do not create unnecessary one-sentence paragraphs.
+
+**Tone:**
+- Friendly
+- Educational
+- Professional
+- Clear
+- Patient
+- Accurate
+
+Avoid generic AI phrases such as:
+- Unlock the secrets of geometry.
+- Dive into the fascinating world of triangles.
+- Revolutionary calculator.
+- Game-changing mathematical solution.
+- Seamlessly calculate.
+- In today's fast-paced digital world.
+- Master geometry effortlessly.
+
+Avoid promotional filler.
+
+Do not repeat the same formula explanation in multiple sections.
+
+Every section must contribute distinct educational value.
+
+---
+
+## 11. MATHEMATICAL ACCURACY REQUIREMENTS
+
+Mathematical correctness is mandatory.
+
+Verify every formula, example, proof, and diagram.
+
+Use:
+
+p = a²/c
+
+q = b²/c
+
+a² = cp
+
+a = √(cp)
+
+b² = cq
+
+b = √(cq)
+
+c = p + q
+
+h² = pq
+
+h = √(pq)
+
+a² + b² = c²
+
+Ensure:
+- Leg a is always paired with p.
+- Leg b is always paired with q.
+- Square roots cover complete products.
+- All lengths use compatible units.
+- Positive values are used for nondegenerate triangles.
+- Every example is numerically correct.
+- Exact and approximate values are distinguished.
+- Diagrams follow the same labeling convention.
+- The calculator modes are described accurately.
+
+Never confuse:
+- Projection p with projection q.
+- Projections with perpendicular legs.
+- Leg lengths with squared leg lengths.
+- The altitude with the hypotenuse.
+- Mathematical explanations with actual calculator functionality.
+
+---
+
+## 12. SEO METADATA REQUIREMENTS
+
+After completing the article, provide:
+
+**SEO Title**
+
+Approximately 50–60 characters when practical.
+
+Include the primary keyword naturally.
+
+**Meta Description**
+
+Approximately 145–160 characters.
+
+Explain that the calculator solves projection segments, right triangle legs, and hypotenuse relationships.
+
+**Primary Focus Keyword**
+
+Right Triangle Projection Calculator
+
+**Secondary Keywords**
+
+Provide 8–12 relevant variations.
+
+**Existing URL Slug**
+
+right-triangle-projection-calculator
+
+Keep the existing live URL unchanged.
+
+Do not recommend changing the URL without a compelling technical reason.
+
+**Image SEO**
+
+Provide descriptive alt text for all seven educational diagrams.
+
+Avoid keyword stuffing.
+
+---
+
+## 13. STRUCTURED DATA RECOMMENDATIONS
+
+Recommend appropriate structured data based on the actual page.
+
+Consider:
+- WebPage
+- BreadcrumbList
+- WebApplication
+
+Only include properties that accurately represent the live calculator.
+
+Do not invent:
+- Ratings
+- Reviews
+- Prices
+- Authors
+- User counts
+- Unsupported features
+- Download capabilities
+
+Keep JSON-LD separate from the visible article.
+
+Do not promise Google rich results.
+
+---
+
+## 14. FINAL QUALITY CONTROL
+
+Before submitting, perform a complete editorial and mathematical review.
+
+### Mathematical Accuracy
+
+Verify:
+- All five calculator formulas.
+- All worked examples.
+- All square-root calculations.
+- All decimal approximations.
+- All unit conversions.
+- All projection relationships.
+- All similar-triangle proofs.
+- All Pythagorean checks.
+- All diagram labels.
+
+### Content Quality
+
+Check:
+- No duplicated introduction.
+- No repeated explanations.
+- No generic filler.
+- No unnecessary paragraphs.
+- All five calculator modes are explained.
+- Mode-selection guidance is clear.
+- Examples are varied.
+- Beginners can follow the explanations.
+
+### SEO Quality
+
+Check:
+- Natural primary keyword placement.
+- Search intent coverage.
+- Relevant internal linking.
+- Distinct positioning from specialized calculators.
+- Logical heading structure.
+- Useful metadata.
+- No keyword stuffing.
+
+### User Experience
+
+Confirm:
+- The calculator remains near the top.
+- All five modes are easy to understand.
+- The mode comparison table is readable.
+- Formulas are easy to locate.
+- Diagrams are mobile-friendly.
+- Worked examples are understandable.
+- FAQs answer genuine questions.
+
+Remove weak, repetitive, or irrelevant content.
+
+---
+
+## 15. REQUIRED FINAL OUTPUT
+
+Deliver the completed work in five parts.
+
+### PART A: SEO METADATA
+
+Include:
+- SEO title
+- Meta description
+- Primary focus keyword
+- Secondary keywords
+- Existing URL slug
+
+### PART B: COMPLETE EDUCATIONAL ARTICLE
+
+Write 3,500–4,000 words, exceeding this range only where additional information provides genuine value.
+
+Include:
+- One H1
+- Logical H2 and H3 hierarchy
+- Mathematical formulas
+- Calculator mode comparison
+- Step-by-step explanations
+- Ten worked examples
+- Useful comparison tables
+- Natural internal links
+- Practice questions
+- FAQs
+
+### PART C: EDUCATIONAL DIAGRAMS
+
+Provide all seven diagrams.
+
+Include:
+- Mathematical labels
+- Construction instructions
+- Suggested placement
+- Alt text
+- Captions
+- Responsive SVG guidance
+
+### PART D: STRUCTURED DATA
+
+Recommend appropriate schema and implementation guidance.
+
+Do not invent unsupported information.
+
+### PART E: FINAL EDITORIAL REPORT
+
+Provide:
+- Approximate article word count
+- Mathematical accuracy review
+- Repetition review
+- Readability review
+- Internal linking review
+- Search intent coverage
+- Diagram accuracy review
+
+Keep this editorial report outside the published article.
+
+---
+
+## FINAL INSTRUCTION
+
+Create a comprehensive, original, mathematically accurate, human-friendly, and genuinely useful educational guide for the Right Triangle Projection Calculator.
+
+The main purpose is to explain all five existing calculation modes and help users choose the correct one based on their known measurements.
+
+Give particular attention to:
+- Understanding projections p and q.
+- Distinguishing the two hypotenuse segments.
+- Understanding how each leg corresponds to its projection.
+- Calculating the two projections.
+- Recovering both legs.
+- Finding the complete hypotenuse.
+- Understanding the projection theorem.
+- Verifying results through the Pythagorean theorem.
+
+Use accurate mathematical diagrams, varied worked examples, clear mode-selection instructions, and detailed but accessible proofs.
+
+Avoid keyword stuffing, unnecessary repetition, generic filler, artificial writing patterns, and unsupported mathematical claims.
+
+Every section must provide distinct educational value.
+
+The final article should be suitable as the main educational resource for right triangle projection calculations on RightTriangleSolver.com.
+
+Prioritize mathematical accuracy, reader understanding, and genuine usefulness over word count and SEO scoring metrics.

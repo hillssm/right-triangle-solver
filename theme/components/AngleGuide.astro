@@ -14,6 +14,12 @@ const rich = (s: string): string => {
     (_, l) =>
       `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
   );
+  // Keep a trailing period glued to inline math (prevents orphaned "." on mobile wraps)
+  out = out.replace(
+    /\[\[((?:(?!\[\[|\]\]).)+?)\]\]\./g,
+    (_, l) =>
+      `<span dir="ltr" class="math-nowrap"><span class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>.</span>`
+  );
   out = out.replace(
     /\[\[(.+?)\]\]/g,
     (_, l) =>
@@ -81,13 +87,13 @@ const imgSrc = (name: string): string => `/images/angle/${name}`;
   <p>Regular trigonometric functions take an angle and return a ratio. Sine of 30 degrees is 0.5. Inverse trigonometric functions reverse this: they take a ratio and return the angle. Arcsin of 0.5 is 30 degrees. The calculator uses three inverse functions, each matched to a specific pair of known sides.</p>
 
   <h3>Arcsin: Opposite and Hypotenuse</h3>
-  <p>When you know the opposite side (a) and the hypotenuse (c), use arcsin. The formula is <span set:html={rich('[[A = \\sin^{-1}(a/c)]]')} />. The ratio a/c must fall between 0 and 1, since the opposite side is always shorter than the hypotenuse. For a 3-4-5 triangle, A = arcsin(3/5) = arcsin(0.6), which is approximately 36.87 degrees.</p>
+  <p>When you know the opposite side (a) and the hypotenuse (c), use arcsin. The formula is <span set:html={rich('[[A = \\sin^{-1}(a/c)]].')} /> The ratio a/c must fall between 0 and 1, since the opposite side is always shorter than the hypotenuse. For a 3-4-5 triangle, A = arcsin(3/5) = arcsin(0.6), which is approximately 36.87 degrees.</p>
 
   <h3>Arccos: Adjacent and Hypotenuse</h3>
-  <p>When you know the adjacent side (b) and the hypotenuse (c), use arccos. The formula is <span set:html={rich('[[A = \\cos^{-1}(b/c)]]')} />. Like arcsin, the ratio b/c must fall between 0 and 1. For the same 3-4-5 triangle, A = arccos(4/5) = arccos(0.8), which is also approximately 36.87 degrees. Both methods agree because they describe the same angle.</p>
+  <p>When you know the adjacent side (b) and the hypotenuse (c), use arccos. The formula is <span set:html={rich('[[A = \\cos^{-1}(b/c)]].')} /> Like arcsin, the ratio b/c must fall between 0 and 1. For the same 3-4-5 triangle, A = arccos(4/5) = arccos(0.8), which is also approximately 36.87 degrees. Both methods agree because they describe the same angle.</p>
 
   <h3>Arctan: Opposite and Adjacent</h3>
-  <p>When you know both legs (a and b) but not the hypotenuse, use arctan. The formula is <span set:html={rich('[[A = \\tan^{-1}(a/b)]]')} />. The ratio a/b can be any positive number. For the 3-4-5 triangle, A = arctan(3/4) = arctan(0.75), which is approximately 36.87 degrees. Arctan is the most practical choice for field measurements like roof pitch, where the two legs (rise and run) are the easiest dimensions to measure.</p>
+  <p>When you know both legs (a and b) but not the hypotenuse, use arctan. The formula is <span set:html={rich('[[A = \\tan^{-1}(a/b)]].')} /> The ratio a/b can be any positive number. For the 3-4-5 triangle, A = arctan(3/4) = arctan(0.75), which is approximately 36.87 degrees. Arctan is the most practical choice for field measurements like roof pitch, where the two legs (rise and run) are the easiest dimensions to measure.</p>
 
   <figure class="not-prose my-6">
     <img src={imgSrc('inverse-trig.svg')} alt="Three panels showing arcsin, arccos, and arctan formulas with their side ratios" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
@@ -98,7 +104,7 @@ const imgSrc = (name: string): string => `/images/angle/${name}`;
 <!-- Section 4: Complementary Angles -->
 <section id="angle-complement" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>Complementary Angles: A + B = 90 Degrees</h2>
-  <p>The two acute angles in a right triangle are complementary, meaning they sum to exactly 90 degrees. This gives the relationship <span set:html={rich('[[A + B = 90^\\circ]]')} />. Once you find one acute angle, the other follows immediately by subtraction: B = 90 degrees minus A.</p>
+  <p>The two acute angles in a right triangle are complementary, meaning they sum to exactly 90 degrees. This gives the relationship <span set:html={rich('[[A + B = 90^\\circ]].')} /> Once you find one acute angle, the other follows immediately by subtraction: B = 90 degrees minus A.</p>
   <p>This is not a separate measurement method. It is a consistency check and a shortcut. If arcsin gives A = 36.87 degrees, then B = 53.13 degrees without any further trigonometry. The calculator uses this relationship in its angle-sum modes.</p>
   <p>The complementary relationship also explains why sin(A) equals cos(B). In a 3-4-5 triangle, sin(36.87°) is 0.6 and cos(53.13°) is also 0.6. The sine of one acute angle always equals the cosine of the other, because the side opposite one angle is adjacent to the other.</p>
 </section>
@@ -127,7 +133,7 @@ const imgSrc = (name: string): string => `/images/angle/${name}`;
 <!-- Section 6: Arcsin Examples -->
 <section id="angle-arcsin" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>Finding Angles with Arcsin</h2>
-  <p>Use arcsin when you know the side opposite your target angle and the hypotenuse. The formula is <span set:html={rich('[[A = \\sin^{-1}(a/c)]]')} />. The ratio must be between 0 and 1. If your ratio exceeds 1, you have mislabeled the sides: the hypotenuse must be the denominator.</p>
+  <p>Use arcsin when you know the side opposite your target angle and the hypotenuse. The formula is <span set:html={rich('[[A = \\sin^{-1}(a/c)]].')} /> The ratio must be between 0 and 1. If your ratio exceeds 1, you have mislabeled the sides: the hypotenuse must be the denominator.</p>
 
   <h3>Example 1: The 3-4-5 Triangle</h3>
   <p>Given opposite side a = 3 and hypotenuse c = 5, find angle A.</p>
@@ -158,7 +164,7 @@ const imgSrc = (name: string): string => `/images/angle/${name}`;
 <!-- Section 7: Arccos Examples -->
 <section id="angle-arccos" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>Finding Angles with Arccos</h2>
-  <p>Use arccos when you know the side adjacent to your target angle and the hypotenuse. The formula is <span set:html={rich('[[A = \\cos^{-1}(b/c)]]')} />. Like arcsin, the ratio must fall between 0 and 1. Arccos is natural when the adjacent side is the easiest to measure, such as the horizontal run of a roof or the base distance in surveying.</p>
+  <p>Use arccos when you know the side adjacent to your target angle and the hypotenuse. The formula is <span set:html={rich('[[A = \\cos^{-1}(b/c)]].')} /> Like arcsin, the ratio must fall between 0 and 1. Arccos is natural when the adjacent side is the easiest to measure, such as the horizontal run of a roof or the base distance in surveying.</p>
 
   <h3>Example 10: Rafter Angle (Arccos)</h3>
   <p>A rafter has a horizontal run of 6 meters and a rafter length (hypotenuse) of 6.5 meters. Find the pitch angle at the eave.</p>
@@ -175,7 +181,7 @@ const imgSrc = (name: string): string => `/images/angle/${name}`;
 <!-- Section 8: Arctan Examples -->
 <section id="angle-arctan" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>Finding Angles with Arctan</h2>
-  <p>Use arctan when you know both legs but not the hypotenuse. The formula is <span set:html={rich('[[A = \\tan^{-1}(a/b)]]')} />. The ratio a/b can be any positive value. Arctan is the workhorse of field work: rise over run is the most common pair of measurements in construction, landscaping, and road design.</p>
+  <p>Use arctan when you know both legs but not the hypotenuse. The formula is <span set:html={rich('[[A = \\tan^{-1}(a/b)]].')} /> The ratio a/b can be any positive value. Arctan is the workhorse of field work: rise over run is the most common pair of measurements in construction, landscaping, and road design.</p>
 
   <h3>Example 5: Roof Pitch (Arctan)</h3>
   <p>A roof rises 4 feet over a horizontal run of 12 feet. Find the pitch angle.</p>

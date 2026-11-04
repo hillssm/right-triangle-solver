@@ -17,6 +17,12 @@ const rich = (s: string): string => {
     (_, l) =>
       `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
   );
+  // Keep a trailing period glued to inline math (prevents orphaned "." on mobile wraps)
+  out = out.replace(
+    /\[\[((?:(?!\[\[|\]\]).)+?)\]\]\./g,
+    (_, l) =>
+      `<span dir="ltr" class="math-nowrap"><span class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>.</span>`
+  );
   out = out.replace(
     /\[\[(.+?)\]\]/g,
     (_, l) =>
@@ -56,7 +62,7 @@ const imgSrc = (name: string): string => `/images/area-from-angle/${name}`;
 <!-- Section 1: Introduction -->
 <section id="sec-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>How to Calculate Right Triangle Area From an Angle</h2>
-  <p>Suppose a right triangle has a leg of <span set:html={rich('[[b=4\\text{ m}]]')} />, a hypotenuse of <span set:html={rich('[[c=5\\text{ m}]]')} />, and the acute angle between those two sides measures about <span set:html={rich('[[A\\approx36.87^\\circ]]')} />. Its area follows directly: <span set:html={rich('[[K=\\frac{4\\times5\\times\\sin(36.87^\\circ)}{2}]]')} />. Since <span set:html={rich('[[\\sin(36.87^\\circ)\\approx0.6]]')} />, the area is approximately <span set:html={rich('[[[\\boxed{K=6\\text{ m}^2}]]]')} />. The triangle encloses 6 square metres of flat surface.</p>
+  <p>Suppose a right triangle has a leg of <span set:html={rich('[[b=4\\text{ m}]]')} />, a hypotenuse of <span set:html={rich('[[c=5\\text{ m}]]')} />, and the acute angle between those two sides measures about <span set:html={rich('[[A\\approx36.87^\\circ]].')} /> Its area follows directly: <span set:html={rich('[[K=\\frac{4\\times5\\times\\sin(36.87^\\circ)}{2}]].')} /> Since <span set:html={rich('[[\\sin(36.87^\\circ)\\approx0.6]]')} />, the area is approximately <span set:html={rich('[[[\\boxed{K=6\\text{ m}^2}]]]')} />. The triangle encloses 6 square metres of flat surface.</p>
   <p>This calculator handles that situation: with one leg, the hypotenuse, and the acute angle between them, sine turns the hypotenuse into the missing perpendicular height, and half of base times height gives the area in square units. The included angle must sit between the two sides entered, and each mode pairs one specific angle with its two sides.</p>
   <p>The angle <span set:html={rich('[[36.87^\\circ]]')} /> is rounded from about <span set:html={rich('[[36.8699^\\circ]]')} />; keeping full precision on the calculator gives the most accurate result.</p>
 </section>
@@ -67,19 +73,19 @@ const imgSrc = (name: string): string => `/images/area-from-angle/${name}`;
   <p>This guide uses one consistent notation throughout: <span set:html={rich('[[A]]')} /> and <span set:html={rich('[[B]]')} /> are the two acute angles, <span set:html={rich('[[C=90^\\circ]]')} /> is the right angle, side <span set:html={rich('[[a]]')} /> lies opposite angle <span set:html={rich('[[A]]')} />, side <span set:html={rich('[[b]]')} /> lies opposite angle <span set:html={rich('[[B]]')} />, side <span set:html={rich('[[c]]')} /> is the hypotenuse, and <span set:html={rich('[[K]]')} /> is the area.</p>
 
   <h3>What Is a Right Triangle?</h3>
-  <p>A right triangle has one interior angle of exactly <span set:html={rich('[[90^\\circ]]')} />. Its two legs meet at that right angle, and the hypotenuse lies opposite it. The hypotenuse is always the longest side. The remaining two angles are acute, and because the three interior angles add to 180 degrees, <span set:html={rich('[[A+B+C=180^\\circ]]')} />. Since <span set:html={rich('[[C=90^\\circ]]')} />, the acute angles satisfy <span set:html={rich('[[A+B=90^\\circ]]')} />: knowing one tells you the other.</p>
+  <p>A right triangle has one interior angle of exactly <span set:html={rich('[[90^\\circ]].')} /> Its two legs meet at that right angle, and the hypotenuse lies opposite it. The hypotenuse is always the longest side. The remaining two angles are acute, and because the three interior angles add to 180 degrees, <span set:html={rich('[[A+B+C=180^\\circ]].')} /> Since <span set:html={rich('[[C=90^\\circ]]')} />, the acute angles satisfy <span set:html={rich('[[A+B=90^\\circ]]')} />: knowing one tells you the other.</p>
 
   <h3>What Is the Hypotenuse?</h3>
   <p>The hypotenuse is the side opposite the right angle, labelled <span set:html={rich('[[c]]')} /> in both calculator modes. To find it in a triangle drawn in any orientation, look for the side that does not touch the square corner marker: that side is the hypotenuse. It is longer than either leg, because it spans the whole right angle while each leg spans only an acute angle. Every area formula on this page uses <span set:html={rich('[[c]]')} /> as one of its two sides, so identifying it correctly is the first skill to practise.</p>
 
   <h3>What Is the Adjacent Side?</h3>
-  <p>The adjacent leg is the leg that touches the chosen reference angle without being the hypotenuse. For angle <span set:html={rich('[[A]]')} /> the adjacent leg is <span set:html={rich('[[b]]')} />; for angle <span set:html={rich('[[B]]')} /> the adjacent leg is <span set:html={rich('[[a]]')} />. Name the reference angle first, then read off its adjacent leg. Swapping the reference angle silently swaps which leg counts as adjacent, and that swap is behind many of the common mistakes listed later on this page.</p>
+  <p>The adjacent leg is the leg that touches the chosen reference angle without being the hypotenuse. For angle <span set:html={rich('[[A]]')} /> the adjacent leg is <span set:html={rich('[[b]]')} />; for angle <span set:html={rich('[[B]]')} /> the adjacent leg is <span set:html={rich('[[a]].')} /> Name the reference angle first, then read off its adjacent leg. Swapping the reference angle silently swaps which leg counts as adjacent, and that swap is behind many of the common mistakes listed later on this page.</p>
 
   <h3>What Is the Opposite Side?</h3>
   <p>The opposite side lies directly across from the chosen angle, not touching it. For angle <span set:html={rich('[[A]]')} /> side <span set:html={rich('[[a]]')} /> is opposite; for angle <span set:html={rich('[[B]]')} /> side <span set:html={rich('[[b]]')} /> is opposite. The labels change with the reference angle, but the hypotenuse stays <span set:html={rich('[[c]]')} /> in both cases. Holding the reference angle fixed while you label the triangle keeps every later step consistent.</p>
 
   <h3>What Is an Included Angle?</h3>
-  <p>An included angle is the angle sitting between two specified sides. Angle <span set:html={rich('[[A]]')} /> is included between sides <span set:html={rich('[[b]]')} /> and <span set:html={rich('[[c]]')} />; angle <span set:html={rich('[[B]]')} /> is included between sides <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[c]]')} />. The general sine area formula only works when the angle is the one included between the two sides used, because the formula reads the perpendicular height off that angle. Pairing a side with an angle it does not touch breaks the geometry the formula depends on.</p>
+  <p>An included angle is the angle sitting between two specified sides. Angle <span set:html={rich('[[A]]')} /> is included between sides <span set:html={rich('[[b]]')} /> and <span set:html={rich('[[c]]')} />; angle <span set:html={rich('[[B]]')} /> is included between sides <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[c]].')} /> The general sine area formula only works when the angle is the one included between the two sides used, because the formula reads the perpendicular height off that angle. Pairing a side with an angle it does not touch breaks the geometry the formula depends on.</p>
 
   <figure class="not-prose my-6">
     <img src={imgSrc('angle-anatomy-modes.svg')} alt="Right triangle ABC showing both area modes: angle A between sides b and c, angle B between sides a and c" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
@@ -95,7 +101,7 @@ const imgSrc = (name: string): string => `/images/area-from-angle/${name}`;
   <p>Here <span set:html={rich('[[x]]')} /> and <span set:html={rich('[[y]]')} /> are two side lengths, <span set:html={rich('[[\\theta]]')} /> is the angle included between them, and <span set:html={rich('[[K]]')} /> is the area. The sine term is what builds the perpendicular height out of the second side.</p>
 
   <h3>How the General Formula Works</h3>
-  <p>The familiar triangle area rule is <span set:html={rich('[[K=\\frac12\\times\\text{base}\\times\\text{height}]]')} />. When the perpendicular height is not measured directly, sine can recover it from another side. Take a base of length <span set:html={rich('[[x]]')} /> and a second side of length <span set:html={rich('[[y]]')} /> meeting it at an angle <span set:html={rich('[[\\theta]]')} />. The perpendicular component of that second side, the height that counts for area, is <span set:html={rich('[[h=y\\sin(\\theta)]]')} />. Substituting into the base-height rule gives <span set:html={rich('[[K=\\frac12 x(y\\sin(\\theta))]]')} />, the general formula above. The included angle must correspond to the two selected sides; an angle from elsewhere in the triangle measures a different perpendicular.</p>
+  <p>The familiar triangle area rule is <span set:html={rich('[[K=\\frac12\\times\\text{base}\\times\\text{height}]].')} /> When the perpendicular height is not measured directly, sine can recover it from another side. Take a base of length <span set:html={rich('[[x]]')} /> and a second side of length <span set:html={rich('[[y]]')} /> meeting it at an angle <span set:html={rich('[[\\theta]].')} /> The perpendicular component of that second side, the height that counts for area, is <span set:html={rich('[[h=y\\sin(\\theta)]].')} /> Substituting into the base-height rule gives <span set:html={rich('[[K=\\frac12 x(y\\sin(\\theta))]]')} />, the general formula above. The included angle must correspond to the two selected sides; an angle from elsewhere in the triangle measures a different perpendicular.</p>
 
   <h3>Why Is the Area Divided by Two?</h3>
   <p>The triangle occupies half the area of the parallelogram built on the same base with the same perpendicular height. With base <span set:html={rich('[[x]]')} /> and height <span set:html={rich('[[h]]')} />, the product <span set:html={rich('[[x\\times h]]')} /> is the full parallelogram, and the triangle is exactly half of it. Multiplying the two sides and the sine value without the halving therefore produces twice the desired area.</p>
@@ -104,7 +110,7 @@ const imgSrc = (name: string): string => `/images/area-from-angle/${name}`;
   <p>One of the two sides in the included-angle formula can be the hypotenuse. Paired with the correct leg and the acute angle between them, the hypotenuse carries enough information to build the area: its sine component is precisely the perpendicular height relative to that leg as base. This is why the calculator never asks for the second leg. The hypotenuse is not a special exception to the formula; it is an ordinary choice of side, sitting at an ordinary included angle.</p>
 
   <h3>Why the Angle Must Be Correct</h3>
-  <p>Replacing angle <span set:html={rich('[[A]]')} /> with angle <span set:html={rich('[[B]]')} /> while keeping the same side pairing usually gives the wrong result. Take the 3-4-5 triangle with <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />, <span set:html={rich('[[A\\approx36.87^\\circ]]')} />. The correct Mode 1 calculation is <span set:html={rich('[[K=(4\\times5\\times\\sin(36.87^\\circ))/2\\approx6]]')} />. Substituting the other angle instead gives <span set:html={rich('[[K=(4\\times5\\times\\sin(53.13^\\circ))/2\\approx8]]')} />, because <span set:html={rich('[[\\sin(53.13^\\circ)\\approx0.8]]')} />. The answer 8 is not a rounding artifact; it is the area of a different configuration, one where the side pairing no longer matches the included angle. Getting the angle-side pairing right is one of this page's most important lessons.</p>
+  <p>Replacing angle <span set:html={rich('[[A]]')} /> with angle <span set:html={rich('[[B]]')} /> while keeping the same side pairing usually gives the wrong result. Take the 3-4-5 triangle with <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />, <span set:html={rich('[[A\\approx36.87^\\circ]].')} /> The correct Mode 1 calculation is <span set:html={rich('[[K=(4\\times5\\times\\sin(36.87^\\circ))/2\\approx6]].')} /> Substituting the other angle instead gives <span set:html={rich('[[K=(4\\times5\\times\\sin(53.13^\\circ))/2\\approx8]]')} />, because <span set:html={rich('[[\\sin(53.13^\\circ)\\approx0.8]].')} /> The answer 8 is not a rounding artifact; it is the area of a different configuration, one where the side pairing no longer matches the included angle. Getting the angle-side pairing right is one of this page's most important lessons.</p>
 
   <figure class="not-prose my-6">
     <img src={imgSrc('sine-height.svg')} alt="3-4-5 right triangle showing a equals c times sin A equals 3 as the perpendicular height for area" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
@@ -120,21 +126,21 @@ const imgSrc = (name: string): string => `/images/area-from-angle/${name}`;
   <p>The variables are: <span set:html={rich('[[b]]')} /> the leg adjacent to angle <span set:html={rich('[[A]]')} />, <span set:html={rich('[[c]]')} /> the hypotenuse, <span set:html={rich('[[A]]')} /> the acute included angle between <span set:html={rich('[[b]]')} /> and <span set:html={rich('[[c]]')} />, and <span set:html={rich('[[K]]')} /> the area.</p>
 
   <h3>Step-by-Step Formula Derivation</h3>
-  <p>Start from the legs area formula <span set:html={rich('[[K=ab/2]]')} />. From the sine ratio at angle <span set:html={rich('[[A]]')} />, <span set:html={rich('[[\\sin(A)=a/c]]')} />, so <span set:html={rich('[[a=c\\sin(A)]]')} />. The opposite leg <span set:html={rich('[[a]]')} /> is being rewritten as the sine component of the hypotenuse. Substituting gives <span set:html={rich('[[K=\\frac{b(c\\sin(A))}{2}]]')} />, and rearranging yields <span set:html={rich('[[[\\boxed{K=\\frac{bc\\sin(A)}{2}}]]]')} />. The unknown opposite leg never needs to be entered because the formula constructs it from the hypotenuse and the angle behind the scenes.</p>
+  <p>Start from the legs area formula <span set:html={rich('[[K=ab/2]].')} /> From the sine ratio at angle <span set:html={rich('[[A]]')} />, <span set:html={rich('[[\\sin(A)=a/c]]')} />, so <span set:html={rich('[[a=c\\sin(A)]].')} /> The opposite leg <span set:html={rich('[[a]]')} /> is being rewritten as the sine component of the hypotenuse. Substituting gives <span set:html={rich('[[K=\\frac{b(c\\sin(A))}{2}]]')} />, and rearranging yields <span set:html={rich('[[[\\boxed{K=\\frac{bc\\sin(A)}{2}}]]]')} />. The unknown opposite leg never needs to be entered because the formula constructs it from the hypotenuse and the angle behind the scenes.</p>
 
   <h3>Complete Worked Example</h3>
   <p>Given <span set:html={rich('[[b=4\\text{ m}]]')} />, <span set:html={rich('[[c=5\\text{ m}]]')} />, <span set:html={rich('[[A\\approx36.87^\\circ]]')} />:</p>
   <ol>
-    <li><strong>Write the formula.</strong> <span set:html={rich('[[K=bc\\sin(A)/2]]')} />.</li>
-    <li><strong>Substitute.</strong> <span set:html={rich('[[K=(4\\times5\\times\\sin(36.87^\\circ))/2]]')} />.</li>
-    <li><strong>Calculate the sine.</strong> <span set:html={rich('[[\\sin(36.87^\\circ)\\approx0.6]]')} />.</li>
-    <li><strong>Multiply.</strong> <span set:html={rich('[[K\\approx(20\\times0.6)/2]]')} />.</li>
+    <li><strong>Write the formula.</strong> <span set:html={rich('[[K=bc\\sin(A)/2]].')} /></li>
+    <li><strong>Substitute.</strong> <span set:html={rich('[[K=(4\\times5\\times\\sin(36.87^\\circ))/2]].')} /></li>
+    <li><strong>Calculate the sine.</strong> <span set:html={rich('[[\\sin(36.87^\\circ)\\approx0.6]].')} /></li>
+    <li><strong>Multiply.</strong> <span set:html={rich('[[K\\approx(20\\times0.6)/2]].')} /></li>
     <li><strong>Divide.</strong> <span set:html={rich('[[[\\boxed{K\\approx6\\text{ m}^2}]]]')} />.</li>
   </ol>
   <p>The answer says the triangle covers about 6 square metres. Because the input angle is rounded, the word approximately belongs in the report, though with full precision the same inputs give 6 exactly.</p>
 
   <h3>Verify Using the Missing Leg</h3>
-  <p>The missing leg follows from the Pythagorean theorem: <span set:html={rich('[[a=\\sqrt{c^2-b^2}]]')} />, so <span set:html={rich('[[a=\\sqrt{25-16}=3]]')} />. Then <span set:html={rich('[[K=(3\\times4)/2=6]]')} />. Both routes agree because they describe the same triangle: the sine route builds the missing leg from the angle, while the legs route uses the leg directly.</p>
+  <p>The missing leg follows from the Pythagorean theorem: <span set:html={rich('[[a=\\sqrt{c^2-b^2}]]')} />, so <span set:html={rich('[[a=\\sqrt{25-16}=3]].')} /> Then <span set:html={rich('[[K=(3\\times4)/2=6]].')} /> Both routes agree because they describe the same triangle: the sine route builds the missing leg from the angle, while the legs route uses the leg directly.</p>
 
   <h3>When Should You Use Mode 1?</h3>
   <p>Use Mode 1 when the known measurements are the leg adjacent to the known acute angle, the hypotenuse, and that angle itself. If both legs are already known, the direct legs formula is simpler and skips the angle entirely. Mode 1 is for the common field situation where an angle and two lengths come from the same measurement setup, and the second leg was never recorded.</p>
@@ -148,29 +154,29 @@ const imgSrc = (name: string): string => `/images/area-from-angle/${name}`;
   <p>The variables are: <span set:html={rich('[[a]]')} /> the leg adjacent to angle <span set:html={rich('[[B]]')} />, which is opposite angle <span set:html={rich('[[A]]')} />; <span set:html={rich('[[c]]')} /> the hypotenuse; <span set:html={rich('[[B]]')} /> the included acute angle between <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[c]]')} />; and <span set:html={rich('[[K]]')} /> the area.</p>
 
   <h3>Step-by-Step Formula Derivation</h3>
-  <p>Start again from <span set:html={rich('[[K=ab/2]]')} />. The sine ratio measured at angle <span set:html={rich('[[B]]')} /> reads <span set:html={rich('[[\\sin(B)=b/c]]')} />, because from <span set:html={rich('[[B]]')} />'s viewpoint the opposite side is <span set:html={rich('[[b]]')} />. Hence <span set:html={rich('[[b=c\\sin(B)]]')} />. Substituting gives <span set:html={rich('[[K=\\frac{a(c\\sin(B))}{2}]]')} />, so <span set:html={rich('[[[\\boxed{K=\\frac{ac\\sin(B)}{2}}]]]')} />. The formula uses side <span set:html={rich('[[a]]')} /> even though <span set:html={rich('[[a]]')} /> is called the opposite side in the page's main notation; the label opposite belongs to angle <span set:html={rich('[[A]]')} />, while relative to angle <span set:html={rich('[[B]]')} /> the same side is adjacent. Side labels are always relative to the chosen reference angle.</p>
+  <p>Start again from <span set:html={rich('[[K=ab/2]].')} /> The sine ratio measured at angle <span set:html={rich('[[B]]')} /> reads <span set:html={rich('[[\\sin(B)=b/c]]')} />, because from <span set:html={rich('[[B]]')} />'s viewpoint the opposite side is <span set:html={rich('[[b]].')} /> Hence <span set:html={rich('[[b=c\\sin(B)]].')} /> Substituting gives <span set:html={rich('[[K=\\frac{a(c\\sin(B))}{2}]]')} />, so <span set:html={rich('[[[\\boxed{K=\\frac{ac\\sin(B)}{2}}]]]')} />. The formula uses side <span set:html={rich('[[a]]')} /> even though <span set:html={rich('[[a]]')} /> is called the opposite side in the page's main notation; the label opposite belongs to angle <span set:html={rich('[[A]]')} />, while relative to angle <span set:html={rich('[[B]]')} /> the same side is adjacent. Side labels are always relative to the chosen reference angle.</p>
 
   <h3>Complete Worked Example</h3>
   <p>Given <span set:html={rich('[[a=3\\text{ m}]]')} />, <span set:html={rich('[[c=5\\text{ m}]]')} />, <span set:html={rich('[[B\\approx53.13^\\circ]]')} />:</p>
   <ol>
-    <li><strong>Write the formula.</strong> <span set:html={rich('[[K=ac\\sin(B)/2]]')} />.</li>
-    <li><strong>Substitute.</strong> <span set:html={rich('[[K=(3\\times5\\times\\sin(53.13^\\circ))/2]]')} />.</li>
-    <li><strong>Calculate the sine.</strong> <span set:html={rich('[[\\sin(53.13^\\circ)\\approx0.8]]')} />.</li>
+    <li><strong>Write the formula.</strong> <span set:html={rich('[[K=ac\\sin(B)/2]].')} /></li>
+    <li><strong>Substitute.</strong> <span set:html={rich('[[K=(3\\times5\\times\\sin(53.13^\\circ))/2]].')} /></li>
+    <li><strong>Calculate the sine.</strong> <span set:html={rich('[[\\sin(53.13^\\circ)\\approx0.8]].')} /></li>
     <li><strong>Multiply and divide.</strong> <span set:html={rich('[[[\\boxed{K\\approx6\\text{ m}^2}]]]')} />.</li>
   </ol>
   <p>The result is the same 6 square metres as the Mode 1 example, because both examples describe the same 3-4-5 triangle viewed from its two acute angles.</p>
 
   <h3>Verify Using the Missing Leg</h3>
-  <p>Compute <span set:html={rich('[[b=\\sqrt{c^2-a^2}]]')} />, so <span set:html={rich('[[b=\\sqrt{25-9}=4]]')} />. Then <span set:html={rich('[[K=(3\\times4)/2=6]]')} />. The agreement is expected: the sine formula quietly reconstructed the missing leg <span set:html={rich('[[b]]')} /> from the hypotenuse and the angle.</p>
+  <p>Compute <span set:html={rich('[[b=\\sqrt{c^2-a^2}]]')} />, so <span set:html={rich('[[b=\\sqrt{25-9}=4]].')} /> Then <span set:html={rich('[[K=(3\\times4)/2=6]].')} /> The agreement is expected: the sine formula quietly reconstructed the missing leg <span set:html={rich('[[b]]')} /> from the hypotenuse and the angle.</p>
 
   <h3>When Should You Use Mode 2?</h3>
-  <p>Use Mode 2 when the known side is <span set:html={rich('[[a]]')} />, the hypotenuse <span set:html={rich('[[c]]')} /> is known, and the measured angle is the one touching side <span set:html={rich('[[a]]')} />, namely angle <span set:html={rich('[[B]]')} />. The two modes are not interchangeable without also changing the side and angle labels; feeding Mode 2 the inputs of Mode 1 computes the area of a different triangle.</p>
+  <p>Use Mode 2 when the known side is <span set:html={rich('[[a]]')} />, the hypotenuse <span set:html={rich('[[c]]')} /> is known, and the measured angle is the one touching side <span set:html={rich('[[a]]')} />, namely angle <span set:html={rich('[[B]].')} /> The two modes are not interchangeable without also changing the side and angle labels; feeding Mode 2 the inputs of Mode 1 computes the area of a different triangle.</p>
 </section>
 
 <!-- Section 6: Why both formulas produce the same area -->
 <section id="sec-same" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>Two Angle-Based Formulas, One Right Triangle</h2>
-  <p>Both modes calculate the area of the same geometric object, so they must agree. For Mode 1, <span set:html={rich('[[K=bc\\sin(A)/2]]')} />, and since <span set:html={rich('[[\\sin(A)=a/c]]')} /> for a valid right triangle, <span set:html={rich('[[bc\\sin(A)=ab]]')} />. For Mode 2, <span set:html={rich('[[K=ac\\sin(B)/2]]')} />, and since <span set:html={rich('[[\\sin(B)=b/c]]')} />, <span set:html={rich('[[ac\\sin(B)=ab]]')} />. Both formulas simplify to <span set:html={rich('[[[\\boxed{K=\\frac{ab}{2}}]]]')} />, the familiar legs formula. The two modes are two different input routes to one quantity.</p>
+  <p>Both modes calculate the area of the same geometric object, so they must agree. For Mode 1, <span set:html={rich('[[K=bc\\sin(A)/2]]')} />, and since <span set:html={rich('[[\\sin(A)=a/c]]')} /> for a valid right triangle, <span set:html={rich('[[bc\\sin(A)=ab]].')} /> For Mode 2, <span set:html={rich('[[K=ac\\sin(B)/2]]')} />, and since <span set:html={rich('[[\\sin(B)=b/c]]')} />, <span set:html={rich('[[ac\\sin(B)=ab]].')} /> Both formulas simplify to <span set:html={rich('[[[\\boxed{K=\\frac{ab}{2}}]]]')} />, the familiar legs formula. The two modes are two different input routes to one quantity.</p>
 
   <div class="not-prose overflow-x-auto my-6">
     <table class="w-full min-w-[480px] border-collapse text-sm">
@@ -201,7 +207,7 @@ const imgSrc = (name: string): string => `/images/area-from-angle/${name}`;
     </table>
   </div>
 
-  <p>Rounded angle measurements can introduce small numerical differences between the two modes, because <span set:html={rich('[[36.87^\\circ]]')} /> is only an approximation of the true <span set:html={rich('[[36.8699^\\circ]]')} />. A discrepancy of a few hundredths is a rounding effect, not a disagreement between the formulas.</p>
+  <p>Rounded angle measurements can introduce small numerical differences between the two modes, because <span set:html={rich('[[36.87^\\circ]]')} /> is only an approximation of the true <span set:html={rich('[[36.8699^\\circ]].')} /> A discrepancy of a few hundredths is a rounding effect, not a disagreement between the formulas.</p>
 
   <figure class="not-prose my-6">
     <img src={imgSrc('mode1-vs-mode2.svg')} alt="Same 3-4-5 triangle solved by Mode 1 and Mode 2 formulas, both giving area 6, verified by legs formula" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
@@ -215,14 +221,14 @@ const imgSrc = (name: string): string => `/images/area-from-angle/${name}`;
   <p>This walkthrough follows the actual calculator interface on this page, step by step.</p>
   <ol>
     <li><strong>Identify the measurements already known.</strong> Confirm you have one leg, the hypotenuse, and an acute angle from the same triangle.</li>
-    <li><strong>Choose the correct mode.</strong> Select Mode 1 for side <span set:html={rich('[[b]]')} />, hypotenuse <span set:html={rich('[[c]]')} />, and angle <span set:html={rich('[[A]]')} />; select Mode 2 for side <span set:html={rich('[[a]]')} />, hypotenuse <span set:html={rich('[[c]]')} />, and angle <span set:html={rich('[[B]]')} />.</li>
+    <li><strong>Choose the correct mode.</strong> Select Mode 1 for side <span set:html={rich('[[b]]')} />, hypotenuse <span set:html={rich('[[c]]')} />, and angle <span set:html={rich('[[A]]')} />; select Mode 2 for side <span set:html={rich('[[a]]')} />, hypotenuse <span set:html={rich('[[c]]')} />, and angle <span set:html={rich('[[B]].')} /></li>
     <li><strong>Confirm which acute angle is being measured.</strong> The angle must be one of the two acute angles, not the right angle.</li>
     <li><strong>Identify the corresponding leg.</strong> The leg must touch the measured angle; check the adjacent and opposite definitions above if unsure.</li>
     <li><strong>Enter the leg length.</strong> Type the measured leg into the leg field of the selected mode.</li>
     <li><strong>Enter the hypotenuse length.</strong> Type it into the hypotenuse field; it must be the longest of the two lengths.</li>
     <li><strong>Select compatible measurement units.</strong> Both lengths must use the same unit before calculating.</li>
     <li><strong>Enter the acute angle in degrees.</strong> The calculator expects degrees, not radians.</li>
-    <li><strong>Confirm that the angle is strictly between <span set:html={rich('[[0^\\circ]]')} /> and <span set:html={rich('[[90^\\circ]]')} />.</strong> Boundary values describe degenerate shapes, not triangles.</li>
+    <li><strong>Confirm that the angle is strictly between <span set:html={rich('[[0^\\circ]]')} /> and <span set:html={rich('[[90^\\circ]].')} /></strong> Boundary values describe degenerate shapes, not triangles.</li>
     <li><strong>Confirm that the hypotenuse is longer than the leg.</strong> A leg equal to or longer than the hypotenuse cannot belong to a right triangle.</li>
     <li><strong>Check that the leg, hypotenuse, and angle describe the same right triangle.</strong> The consistency tests in the validation section show how.</li>
     <li><strong>Click Calculate Area.</strong> The result appears with the solution steps shown.</li>
@@ -239,16 +245,16 @@ const imgSrc = (name: string): string => `/images/area-from-angle/${name}`;
   <p>Four examples build the method on familiar triangles, from the 3-4-5 triple to special-angle cases.</p>
 
   <h3>Example 1: 3-4-5 Triangle Using Angle A</h3>
-  <p>Given <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />, <span set:html={rich('[[A\\approx36.87^\\circ]]')} />, use <span set:html={rich('[[K=bc\\sin(A)/2]]')} />. Then <span set:html={rich('[[K=(4\\times5\\times\\sin(36.87^\\circ))/2]]')} />, <span set:html={rich('[[K\\approx(20\\times0.6)/2]]')} />, so <span set:html={rich('[[[\\boxed{K\\approx6}]]]')} />. The area is 6 square units because the triangle encloses six unit squares of flat surface; with full-precision angle the value is exactly 6.</p>
+  <p>Given <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />, <span set:html={rich('[[A\\approx36.87^\\circ]]')} />, use <span set:html={rich('[[K=bc\\sin(A)/2]].')} /> Then <span set:html={rich('[[K=(4\\times5\\times\\sin(36.87^\\circ))/2]]')} />, <span set:html={rich('[[K\\approx(20\\times0.6)/2]]')} />, so <span set:html={rich('[[[\\boxed{K\\approx6}]]]')} />. The area is 6 square units because the triangle encloses six unit squares of flat surface; with full-precision angle the value is exactly 6.</p>
 
   <h3>Example 2: Same Triangle Using Angle B</h3>
-  <p>Given <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[c=5]]')} />, <span set:html={rich('[[B\\approx53.13^\\circ]]')} />, use <span set:html={rich('[[K=ac\\sin(B)/2]]')} />. Then <span set:html={rich('[[K=(3\\times5\\times\\sin(53.13^\\circ))/2]]')} />, <span set:html={rich('[[K\\approx(15\\times0.8)/2]]')} />, so <span set:html={rich('[[[\\boxed{K\\approx6}]]]')} />. The result matches Example 1 because both examples describe the same triangle; the two angles are complementary views of one shape.</p>
+  <p>Given <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[c=5]]')} />, <span set:html={rich('[[B\\approx53.13^\\circ]]')} />, use <span set:html={rich('[[K=ac\\sin(B)/2]].')} /> Then <span set:html={rich('[[K=(3\\times5\\times\\sin(53.13^\\circ))/2]]')} />, <span set:html={rich('[[K\\approx(15\\times0.8)/2]]')} />, so <span set:html={rich('[[[\\boxed{K\\approx6}]]]')} />. The result matches Example 1 because both examples describe the same triangle; the two angles are complementary views of one shape.</p>
 
   <h3>Example 3: A 30-60-90 Triangle</h3>
-  <p>Take <span set:html={rich('[[c=10]]')} /> and <span set:html={rich('[[A=30^\\circ]]')} />. The leg follows from <span set:html={rich('[[b=c\\cos(30^\\circ)=5\\sqrt{3}]]')} />. Then <span set:html={rich('[[K=(5\\sqrt{3})(10)\\sin(30^\\circ)/2]]')} />, and since <span set:html={rich('[[\\sin(30^\\circ)=1/2]]')} />, <span set:html={rich('[[[\\boxed{K=\\frac{25\\sqrt{3}}{2}\\approx21.65}]]]')} />. Special-angle values such as <span set:html={rich('[[\\sin(30^\\circ)]]')} /> and <span set:html={rich('[[\\cos(30^\\circ)]]')} /> give exact forms before any decimal rounding, which is why these triangles are useful for checking the calculator by hand.</p>
+  <p>Take <span set:html={rich('[[c=10]]')} /> and <span set:html={rich('[[A=30^\\circ]].')} /> The leg follows from <span set:html={rich('[[b=c\\cos(30^\\circ)=5\\sqrt{3}]].')} /> Then <span set:html={rich('[[K=(5\\sqrt{3})(10)\\sin(30^\\circ)/2]]')} />, and since <span set:html={rich('[[\\sin(30^\\circ)=1/2]]')} />, <span set:html={rich('[[[\\boxed{K=\\frac{25\\sqrt{3}}{2}\\approx21.65}]]]')} />. Special-angle values such as <span set:html={rich('[[\\sin(30^\\circ)]]')} /> and <span set:html={rich('[[\\cos(30^\\circ)]]')} /> give exact forms before any decimal rounding, which is why these triangles are useful for checking the calculator by hand.</p>
 
   <h3>Example 4: A 45-45-90 Triangle</h3>
-  <p>Given <span set:html={rich('[[c=10]]')} /> and <span set:html={rich('[[A=45^\\circ]]')} />, the legs are equal: <span set:html={rich('[[a=b=5\\sqrt{2}]]')} />. Then <span set:html={rich('[[K=(5\\sqrt{2})(10)\\sin(45^\\circ)/2]]')} />, and since <span set:html={rich('[[\\sin(45^\\circ)=\\sqrt{2}/2]]')} />, the product simplifies to <span set:html={rich('[[[\\boxed{K=25}]]]')} />. This is an isosceles right triangle, and as shown later, it also has the maximum area possible for a right triangle with a hypotenuse of 10 units.</p>
+  <p>Given <span set:html={rich('[[c=10]]')} /> and <span set:html={rich('[[A=45^\\circ]]')} />, the legs are equal: <span set:html={rich('[[a=b=5\\sqrt{2}]].')} /> Then <span set:html={rich('[[K=(5\\sqrt{2})(10)\\sin(45^\\circ)/2]]')} />, and since <span set:html={rich('[[\\sin(45^\\circ)=\\sqrt{2}/2]]')} />, the product simplifies to <span set:html={rich('[[[\\boxed{K=25}]]]')} />. This is an isosceles right triangle, and as shown later, it also has the maximum area possible for a right triangle with a hypotenuse of 10 units.</p>
 </section>
 
 <!-- Section 9: Twelve practical examples -->
@@ -257,40 +263,40 @@ const imgSrc = (name: string): string => `/images/area-from-angle/${name}`;
   <p>Twelve fully worked situations, six for each calculator mode. Each example states the measurements, selects the mode, applies the formula, and interprets the answer. Angle values are shown to two decimal places while the arithmetic keeps full precision underneath.</p>
 
   <h3>Practical Example 1: Triangular Roof Gable</h3>
-  <p>A simplified right-triangular roof gable section has adjacent side <span set:html={rich('[[b=4\\text{ m}]]')} />, hypotenuse <span set:html={rich('[[c=5\\text{ m}]]')} />, and included angle <span set:html={rich('[[A\\approx36.87^\\circ]]')} />. Use Mode 1: <span set:html={rich('[[K=(4\\times5\\times\\sin(36.87^\\circ))/2]]')} />, so <span set:html={rich('[[[\\boxed{K\\approx6\\text{ m}^2}]]]')} />. the flat section area, not the total roof surface. Check: <span set:html={rich('[[K=(3\\times4)/2=6]]')} /></p>
+  <p>A simplified right-triangular roof gable section has adjacent side <span set:html={rich('[[b=4\\text{ m}]]')} />, hypotenuse <span set:html={rich('[[c=5\\text{ m}]]')} />, and included angle <span set:html={rich('[[A\\approx36.87^\\circ]].')} /> Use Mode 1: <span set:html={rich('[[K=(4\\times5\\times\\sin(36.87^\\circ))/2]]')} />, so <span set:html={rich('[[[\\boxed{K\\approx6\\text{ m}^2}]]]')} />. the flat section area, not the total roof surface. Check: <span set:html={rich('[[K=(3\\times4)/2=6]]')} /></p>
 
   <h3>Practical Example 2: Triangular Ramp Side Panel</h3>
-  <p>A right-triangular ramp side panel has <span set:html={rich('[[b=2.4\\text{ m}]]')} />, <span set:html={rich('[[c=2.5\\text{ m}]]')} />, and <span set:html={rich('[[A\\approx16.26^\\circ]]')} />. The underlying opposite side is 0.7 m, so <span set:html={rich('[[\\sin(A)=0.7/2.5=0.28]]')} />. Use Mode 1: <span set:html={rich('[[K=(2.4\\times2.5\\times0.28)/2]]')} />, so <span set:html={rich('[[[\\boxed{K\\approx0.84\\text{ m}^2}]]]')} />. the side-panel area, not the sloping ramp surface. Check: <span set:html={rich('[[K=(0.7\\times2.4)/2=0.84]]')} /></p>
+  <p>A right-triangular ramp side panel has <span set:html={rich('[[b=2.4\\text{ m}]]')} />, <span set:html={rich('[[c=2.5\\text{ m}]]')} />, and <span set:html={rich('[[A\\approx16.26^\\circ]].')} /> The underlying opposite side is 0.7 m, so <span set:html={rich('[[\\sin(A)=0.7/2.5=0.28]].')} /> Use Mode 1: <span set:html={rich('[[K=(2.4\\times2.5\\times0.28)/2]]')} />, so <span set:html={rich('[[[\\boxed{K\\approx0.84\\text{ m}^2}]]]')} />. the side-panel area, not the sloping ramp surface. Check: <span set:html={rich('[[K=(0.7\\times2.4)/2=0.84]]')} /></p>
 
   <h3>Practical Example 3: Triangular Sail</h3>
-  <p>A flat right-triangular sail section has <span set:html={rich('[[b=12\\text{ ft}]]')} />, <span set:html={rich('[[c=13\\text{ ft}]]')} />, and <span set:html={rich('[[A\\approx22.62^\\circ]]')} />. The opposite side is 5 ft, so <span set:html={rich('[[\\sin(A)=5/13]]')} />. Use Mode 1: <span set:html={rich('[[K=(12\\times13\\times(5/13))/2]]')} />, so <span set:html={rich('[[[\\boxed{K=30\\text{ ft}^2}]]]')} />. flat geometric area, before seams or wastage. Check: <span set:html={rich('[[K=(5\\times12)/2=30]]')} /></p>
+  <p>A flat right-triangular sail section has <span set:html={rich('[[b=12\\text{ ft}]]')} />, <span set:html={rich('[[c=13\\text{ ft}]]')} />, and <span set:html={rich('[[A\\approx22.62^\\circ]].')} /> The opposite side is 5 ft, so <span set:html={rich('[[\\sin(A)=5/13]].')} /> Use Mode 1: <span set:html={rich('[[K=(12\\times13\\times(5/13))/2]]')} />, so <span set:html={rich('[[[\\boxed{K=30\\text{ ft}^2}]]]')} />. flat geometric area, before seams or wastage. Check: <span set:html={rich('[[K=(5\\times12)/2=30]]')} /></p>
 
   <h3>Practical Example 4: Right-Triangular Land Section</h3>
-  <p>A surveying sketch describes a right-triangular plot with <span set:html={rich('[[b=40\\text{ m}]]')} />, <span set:html={rich('[[c=50\\text{ m}]]')} />, and <span set:html={rich('[[A\\approx36.87^\\circ]]')} />. Since <span set:html={rich('[[\\sin(A)=30/50=0.6]]')} />, Mode 1 gives <span set:html={rich('[[K=(40\\times50\\times0.6)/2]]')} />, so <span set:html={rich('[[[\\boxed{K=600\\text{ m}^2}]]]')} />. the planar plot area under a flat model. Check: <span set:html={rich('[[K=(30\\times40)/2=600]]')} /></p>
+  <p>A surveying sketch describes a right-triangular plot with <span set:html={rich('[[b=40\\text{ m}]]')} />, <span set:html={rich('[[c=50\\text{ m}]]')} />, and <span set:html={rich('[[A\\approx36.87^\\circ]].')} /> Since <span set:html={rich('[[\\sin(A)=30/50=0.6]]')} />, Mode 1 gives <span set:html={rich('[[K=(40\\times50\\times0.6)/2]]')} />, so <span set:html={rich('[[[\\boxed{K=600\\text{ m}^2}]]]')} />. the planar plot area under a flat model. Check: <span set:html={rich('[[K=(30\\times40)/2=600]]')} /></p>
 
   <h3>Practical Example 5: Steel Support Panel</h3>
-  <p>A flat triangular steel panel has <span set:html={rich('[[b=1.5\\text{ m}]]')} />, <span set:html={rich('[[c=1.7\\text{ m}]]')} />, and <span set:html={rich('[[A\\approx28.07^\\circ]]')} />. The opposite side is 0.8 m, so <span set:html={rich('[[\\sin(A)=0.8/1.7]]')} />. Use Mode 1: <span set:html={rich('[[K=(1.5\\times1.7\\times(0.8/1.7))/2]]')} />, so <span set:html={rich('[[[\\boxed{K=0.6\\text{ m}^2}]]]')} />. planar area only, not load capacity. Check: <span set:html={rich('[[K=(0.8\\times1.5)/2=0.6]]')} /></p>
+  <p>A flat triangular steel panel has <span set:html={rich('[[b=1.5\\text{ m}]]')} />, <span set:html={rich('[[c=1.7\\text{ m}]]')} />, and <span set:html={rich('[[A\\approx28.07^\\circ]].')} /> The opposite side is 0.8 m, so <span set:html={rich('[[\\sin(A)=0.8/1.7]].')} /> Use Mode 1: <span set:html={rich('[[K=(1.5\\times1.7\\times(0.8/1.7))/2]]')} />, so <span set:html={rich('[[[\\boxed{K=0.6\\text{ m}^2}]]]')} />. planar area only, not load capacity. Check: <span set:html={rich('[[K=(0.8\\times1.5)/2=0.6]]')} /></p>
 
   <h3>Practical Example 6: Staircase Side Profile</h3>
-  <p>A simplified staircase side panel has horizontal leg <span set:html={rich('[[b=3.2\\text{ m}]]')} />, hypotenuse <span set:html={rich('[[c=4\\text{ m}]]')} />, and <span set:html={rich('[[A\\approx36.87^\\circ]]')} />. With <span set:html={rich('[[\\sin(A)=0.6]]')} />, Mode 1 gives <span set:html={rich('[[K=(3.2\\times4\\times0.6)/2]]')} />, so <span set:html={rich('[[[\\boxed{K=3.84\\text{ m}^2}]]]')} />. the side profile, not the tread area. Check: with the other leg 2.4 m, <span set:html={rich('[[K=(2.4\\times3.2)/2=3.84]]')} /></p>
+  <p>A simplified staircase side panel has horizontal leg <span set:html={rich('[[b=3.2\\text{ m}]]')} />, hypotenuse <span set:html={rich('[[c=4\\text{ m}]]')} />, and <span set:html={rich('[[A\\approx36.87^\\circ]].')} /> With <span set:html={rich('[[\\sin(A)=0.6]]')} />, Mode 1 gives <span set:html={rich('[[K=(3.2\\times4\\times0.6)/2]]')} />, so <span set:html={rich('[[[\\boxed{K=3.84\\text{ m}^2}]]]')} />. the side profile, not the tread area. Check: with the other leg 2.4 m, <span set:html={rich('[[K=(2.4\\times3.2)/2=3.84]]')} /></p>
 
   <h3>Practical Example 7: Triangular Glass Window</h3>
-  <p>A right-triangular window has side <span set:html={rich('[[a=0.6\\text{ m}]]')} />, hypotenuse <span set:html={rich('[[c=1\\text{ m}]]')} />, and included angle <span set:html={rich('[[B\\approx53.13^\\circ]]')} />. With <span set:html={rich('[[\\sin(B)=0.8]]')} />, Mode 2 gives <span set:html={rich('[[K=(0.6\\times1\\times0.8)/2]]')} />, so <span set:html={rich('[[[\\boxed{K=0.24\\text{ m}^2}]]]')} />. glass area before frame allowances. Check: <span set:html={rich('[[K=(0.6\\times0.8)/2=0.24]]')} /></p>
+  <p>A right-triangular window has side <span set:html={rich('[[a=0.6\\text{ m}]]')} />, hypotenuse <span set:html={rich('[[c=1\\text{ m}]]')} />, and included angle <span set:html={rich('[[B\\approx53.13^\\circ]].')} /> With <span set:html={rich('[[\\sin(B)=0.8]]')} />, Mode 2 gives <span set:html={rich('[[K=(0.6\\times1\\times0.8)/2]]')} />, so <span set:html={rich('[[[\\boxed{K=0.24\\text{ m}^2}]]]')} />. glass area before frame allowances. Check: <span set:html={rich('[[K=(0.6\\times0.8)/2=0.24]]')} /></p>
 
   <h3>Practical Example 8: Triangular Awning</h3>
-  <p>A flat right-triangular awning section has <span set:html={rich('[[a=1.2\\text{ m}]]')} />, <span set:html={rich('[[c=2\\text{ m}]]')} />, and <span set:html={rich('[[B\\approx53.13^\\circ]]')} />. Use Mode 2: <span set:html={rich('[[K=(1.2\\times2\\times0.8)/2]]')} />, so <span set:html={rich('[[[\\boxed{K=0.96\\text{ m}^2}]]]')} />. Check: <span set:html={rich('[[K=(1.2\\times1.6)/2=0.96]]')} /></p>
+  <p>A flat right-triangular awning section has <span set:html={rich('[[a=1.2\\text{ m}]]')} />, <span set:html={rich('[[c=2\\text{ m}]]')} />, and <span set:html={rich('[[B\\approx53.13^\\circ]].')} /> Use Mode 2: <span set:html={rich('[[K=(1.2\\times2\\times0.8)/2]]')} />, so <span set:html={rich('[[[\\boxed{K=0.96\\text{ m}^2}]]]')} />. Check: <span set:html={rich('[[K=(1.2\\times1.6)/2=0.96]]')} /></p>
 
   <h3>Practical Example 9: Plywood Cutting Pattern</h3>
-  <p>A right-triangular plywood piece has <span set:html={rich('[[a=0.9\\text{ m}]]')} />, <span set:html={rich('[[c=1.5\\text{ m}]]')} />, and <span set:html={rich('[[B\\approx53.13^\\circ]]')} />. Use Mode 2: <span set:html={rich('[[K=(0.9\\times1.5\\times0.8)/2]]')} />, so <span set:html={rich('[[[\\boxed{K=0.54\\text{ m}^2}]]]')} />. usable material area, excluding cut-off waste. Check: <span set:html={rich('[[K=(0.9\\times1.2)/2=0.54]]')} /></p>
+  <p>A right-triangular plywood piece has <span set:html={rich('[[a=0.9\\text{ m}]]')} />, <span set:html={rich('[[c=1.5\\text{ m}]]')} />, and <span set:html={rich('[[B\\approx53.13^\\circ]].')} /> Use Mode 2: <span set:html={rich('[[K=(0.9\\times1.5\\times0.8)/2]]')} />, so <span set:html={rich('[[[\\boxed{K=0.54\\text{ m}^2}]]]')} />. usable material area, excluding cut-off waste. Check: <span set:html={rich('[[K=(0.9\\times1.2)/2=0.54]]')} /></p>
 
   <h3>Practical Example 10: Surveying a Triangular Field</h3>
-  <p>A simplified triangular field measurement gives <span set:html={rich('[[a=7\\text{ m}]]')} />, <span set:html={rich('[[c=25\\text{ m}]]')} />, and <span set:html={rich('[[B\\approx73.74^\\circ]]')} />. The other leg is 24 m, so <span set:html={rich('[[\\sin(B)=24/25=0.96]]')} />. Use Mode 2: <span set:html={rich('[[K=(7\\times25\\times0.96)/2]]')} />, so <span set:html={rich('[[[\\boxed{K=84\\text{ m}^2}]]]')} />. the planar section area. Check: <span set:html={rich('[[K=(7\\times24)/2=84]]')} /></p>
+  <p>A simplified triangular field measurement gives <span set:html={rich('[[a=7\\text{ m}]]')} />, <span set:html={rich('[[c=25\\text{ m}]]')} />, and <span set:html={rich('[[B\\approx73.74^\\circ]].')} /> The other leg is 24 m, so <span set:html={rich('[[\\sin(B)=24/25=0.96]].')} /> Use Mode 2: <span set:html={rich('[[K=(7\\times25\\times0.96)/2]]')} />, so <span set:html={rich('[[[\\boxed{K=84\\text{ m}^2}]]]')} />. the planar section area. Check: <span set:html={rich('[[K=(7\\times24)/2=84]]')} /></p>
 
   <h3>Practical Example 11: Triangular Kite Panel</h3>
-  <p>A right-triangular kite or fabric panel has <span set:html={rich('[[a=20\\text{ cm}]]')} />, <span set:html={rich('[[c=25\\text{ cm}]]')} />, and <span set:html={rich('[[B\\approx36.87^\\circ]]')} />. Since <span set:html={rich('[[\\sin(B)=15/25=0.6]]')} />, Mode 2 gives <span set:html={rich('[[K=(20\\times25\\times0.6)/2]]')} />, so <span set:html={rich('[[[\\boxed{K=150\\text{ cm}^2}]]]')} />. square centimetres, matching the inputs. Check: <span set:html={rich('[[K=(20\\times15)/2=150]]')} /></p>
+  <p>A right-triangular kite or fabric panel has <span set:html={rich('[[a=20\\text{ cm}]]')} />, <span set:html={rich('[[c=25\\text{ cm}]]')} />, and <span set:html={rich('[[B\\approx36.87^\\circ]].')} /> Since <span set:html={rich('[[\\sin(B)=15/25=0.6]]')} />, Mode 2 gives <span set:html={rich('[[K=(20\\times25\\times0.6)/2]]')} />, so <span set:html={rich('[[[\\boxed{K=150\\text{ cm}^2}]]]')} />. square centimetres, matching the inputs. Check: <span set:html={rich('[[K=(20\\times15)/2=150]]')} /></p>
 
   <h3>Practical Example 12: Solar Mounting Side Panel</h3>
-  <p>A flat right-triangular support-side panel has <span set:html={rich('[[a=1.8\\text{ m}]]')} />, <span set:html={rich('[[c=3\\text{ m}]]')} />, and included angle <span set:html={rich('[[B\\approx53.13^\\circ]]')} />. With <span set:html={rich('[[\\sin(B)=0.8]]')} />, Mode 2 gives <span set:html={rich('[[K=(1.8\\times3\\times0.8)/2]]')} />, so <span set:html={rich('[[[\\boxed{K=2.16\\text{ m}^2}]]]')} />. panel area, not electrical output or capacity. Check: <span set:html={rich('[[K=(1.8\\times2.4)/2=2.16]]')} /></p>
+  <p>A flat right-triangular support-side panel has <span set:html={rich('[[a=1.8\\text{ m}]]')} />, <span set:html={rich('[[c=3\\text{ m}]]')} />, and included angle <span set:html={rich('[[B\\approx53.13^\\circ]].')} /> With <span set:html={rich('[[\\sin(B)=0.8]]')} />, Mode 2 gives <span set:html={rich('[[K=(1.8\\times3\\times0.8)/2]]')} />, so <span set:html={rich('[[[\\boxed{K=2.16\\text{ m}^2}]]]')} />. panel area, not electrical output or capacity. Check: <span set:html={rich('[[K=(1.8\\times2.4)/2=2.16]]')} /></p>
 
   <div class="not-prose overflow-x-auto my-6">
     <table class="w-full min-w-[560px] border-collapse text-sm">
@@ -333,16 +339,16 @@ const imgSrc = (name: string): string => `/images/area-from-angle/${name}`;
   <p>A leg, a hypotenuse, and an acute angle carry more information than a right triangle needs: two of the three determine the third, so all three must agree. The checks below confirm the computed number describes a right triangle.</p>
 
   <h3>Validating Mode 1</h3>
-  <p>For Mode 1 the consistency relation is <span set:html={rich('[[\\cos(A)=b/c]]')} />, equivalently <span set:html={rich('[[[\\boxed{b=c\\cos(A)}]]]')} />. With <span set:html={rich('[[b=4]]')} /> and <span set:html={rich('[[c=5]]')} />, <span set:html={rich('[[\\cos(A)=0.8]]')} /> gives <span set:html={rich('[[A=\\cos^{-1}(0.8)\\approx36.87^\\circ]]')} />. An arbitrary angle such as <span set:html={rich('[[60^\\circ]]')} /> would not describe the same right triangle with these side lengths: <span set:html={rich('[[5\\cos(60^\\circ)=2.5\\neq4]]')} />, so the three inputs would be mutually inconsistent.</p>
+  <p>For Mode 1 the consistency relation is <span set:html={rich('[[\\cos(A)=b/c]]')} />, equivalently <span set:html={rich('[[[\\boxed{b=c\\cos(A)}]]]')} />. With <span set:html={rich('[[b=4]]')} /> and <span set:html={rich('[[c=5]]')} />, <span set:html={rich('[[\\cos(A)=0.8]]')} /> gives <span set:html={rich('[[A=\\cos^{-1}(0.8)\\approx36.87^\\circ]].')} /> An arbitrary angle such as <span set:html={rich('[[60^\\circ]]')} /> would not describe the same right triangle with these side lengths: <span set:html={rich('[[5\\cos(60^\\circ)=2.5\\neq4]]')} />, so the three inputs would be mutually inconsistent.</p>
 
   <h3>Validating Mode 2</h3>
-  <p>For Mode 2 the relation is <span set:html={rich('[[\\cos(B)=a/c]]')} />, equivalently <span set:html={rich('[[[\\boxed{a=c\\cos(B)}]]]')} />. With <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[c=5]]')} />, <span set:html={rich('[[B=\\cos^{-1}(0.6)\\approx53.13^\\circ]]')} />. The chosen angle must correspond to the actual measurements; a leg of 3 with a hypotenuse of 5 simply does not meet at an included angle of, say, <span set:html={rich('[[70^\\circ]]')} /></p>
+  <p>For Mode 2 the relation is <span set:html={rich('[[\\cos(B)=a/c]]')} />, equivalently <span set:html={rich('[[[\\boxed{a=c\\cos(B)}]]]')} />. With <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[c=5]]')} />, <span set:html={rich('[[B=\\cos^{-1}(0.6)\\approx53.13^\\circ]].')} /> The chosen angle must correspond to the actual measurements; a leg of 3 with a hypotenuse of 5 simply does not meet at an included angle of, say, <span set:html={rich('[[70^\\circ]]')} /></p>
 
   <h3>Why the General Area Formula Can Still Return a Number</h3>
   <p>The formula <span set:html={rich('[[K=\\frac12xy\\sin(\\theta)]]')} /> computes the area of a general triangle defined by two sides and their included angle. An incompatible angle-side combination still returns a number, but the resulting triangle is not right-angled: it is some other triangle that happens to share those three inputs. The arithmetic result does not by itself prove the inputs describe a valid right triangle; the cosine check above does that work.</p>
 
   <h3>How to Handle Rounded Angle Measurements</h3>
-  <p>An angle such as <span set:html={rich('[[36.87^\\circ]]')} /> may be a rounded display of approximately <span set:html={rich('[[36.8699^\\circ]]')} />. Small mismatches from display or measurement rounding should be distinguished from genuinely inconsistent geometry: a few hundredths of a degree of slack is rounding, while several degrees of mismatch means the inputs disagree. No numerical validation tolerance is claimed for the calculator itself; the distinction is a judgement made from the measurements at hand.</p>
+  <p>An angle such as <span set:html={rich('[[36.87^\\circ]]')} /> may be a rounded display of approximately <span set:html={rich('[[36.8699^\\circ]].')} /> Small mismatches from display or measurement rounding should be distinguished from genuinely inconsistent geometry: a few hundredths of a degree of slack is rounding, while several degrees of mismatch means the inputs disagree. No numerical validation tolerance is claimed for the calculator itself; the distinction is a judgement made from the measurements at hand.</p>
 </section>
 
 <!-- Section 11: Alternative formulas -->
@@ -351,7 +357,7 @@ const imgSrc = (name: string): string => `/images/area-from-angle/${name}`;
   <p>These are mathematical alternatives, not extra calculator modes; they show the same geometry under other input combinations.</p>
 
   <h3>Using the Hypotenuse and One Acute Angle</h3>
-  <p>For a valid right triangle, <span set:html={rich('[[a=c\\sin(A)]]')} /> and <span set:html={rich('[[b=c\\cos(A)]]')} />. Substituting into <span set:html={rich('[[K=ab/2]]')} /> gives <span set:html={rich('[[[\\boxed{K=\\frac{c^2\\sin(A)\\cos(A)}{2}}]]]')} />. With the double-angle identity <span set:html={rich('[[\\sin(2A)=2\\sin(A)\\cos(A)]]')} />, this becomes <span set:html={rich('[[[\\boxed{K=\\frac{c^2\\sin(2A)}{4}}]]]')} />. The hypotenuse and one acute angle determine the triangle completely, so no leg measurement is needed at all.</p>
+  <p>For a valid right triangle, <span set:html={rich('[[a=c\\sin(A)]]')} /> and <span set:html={rich('[[b=c\\cos(A)]].')} /> Substituting into <span set:html={rich('[[K=ab/2]]')} /> gives <span set:html={rich('[[[\\boxed{K=\\frac{c^2\\sin(A)\\cos(A)}{2}}]]]')} />. With the double-angle identity <span set:html={rich('[[\\sin(2A)=2\\sin(A)\\cos(A)]]')} />, this becomes <span set:html={rich('[[[\\boxed{K=\\frac{c^2\\sin(2A)}{4}}]]]')} />. The hypotenuse and one acute angle determine the triangle completely, so no leg measurement is needed at all.</p>
 
   <h3>Using One Leg and Its Adjacent Angle</h3>
   <p>If side <span set:html={rich('[[b]]')} /> and angle <span set:html={rich('[[A]]')} /> are known, then <span set:html={rich('[[a=b\\tan(A)]]')} />, and <span set:html={rich('[[[\\boxed{K=\\frac{b^2\\tan(A)}{2}}]]]')} />. The pairing matters: <span set:html={rich('[[b]]')} /> must be the leg adjacent to angle <span set:html={rich('[[A]]')} /> for the tangent to produce the opposite leg.</p>
@@ -369,10 +375,10 @@ const imgSrc = (name: string): string => `/images/area-from-angle/${name}`;
   <p>Sine grows as an acute angle increases, so a larger angle seems to promise a larger area. That holds only when the other quantities stay fixed, and in a right triangle the sides and the angle cannot change independently.</p>
 
   <h3>Fixed Hypotenuse, Changing Angle</h3>
-  <p>For a fixed hypotenuse, the area can be written as <span set:html={rich('[[K=\\frac{c^2\\sin(2A)}{4}]]')} />. The factor <span set:html={rich('[[\\sin(2A)]]')} /> rises as <span set:html={rich('[[A]]')} /> moves from near <span set:html={rich('[[0^\\circ]]')} /> toward <span set:html={rich('[[45^\\circ]]')} />, then falls as <span set:html={rich('[[A]]')} /> approaches <span set:html={rich('[[90^\\circ]]')} />. The area therefore increases over the first half of the acute range and decreases over the second half. The two halves are mirror images through the complementary-angle relationship <span set:html={rich('[[A+B=90^\\circ]]')} />: swapping the angles swaps the legs and leaves the area unchanged.</p>
+  <p>For a fixed hypotenuse, the area can be written as <span set:html={rich('[[K=\\frac{c^2\\sin(2A)}{4}]].')} /> The factor <span set:html={rich('[[\\sin(2A)]]')} /> rises as <span set:html={rich('[[A]]')} /> moves from near <span set:html={rich('[[0^\\circ]]')} /> toward <span set:html={rich('[[45^\\circ]]')} />, then falls as <span set:html={rich('[[A]]')} /> approaches <span set:html={rich('[[90^\\circ]].')} /> The area therefore increases over the first half of the acute range and decreases over the second half. The two halves are mirror images through the complementary-angle relationship <span set:html={rich('[[A+B=90^\\circ]]')} />: swapping the angles swaps the legs and leaves the area unchanged.</p>
 
   <h3>Maximum Area for a Fixed Hypotenuse</h3>
-  <p>Since <span set:html={rich('[[\\sin(2A)\\leq1]]')} />, the largest possible area is <span set:html={rich('[[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]]')} />, reached when <span set:html={rich('[[A=B=45^\\circ]]')} />. For <span set:html={rich('[[c=10]]')} /> the maximum area is <span set:html={rich('[[[\\boxed{K_{\\max}=25\\text{ square units}}]]]')} />. This is the isosceles right triangle of Example 4: equal legs make the product of the legs, and hence the area, as large as the fixed hypotenuse allows.</p>
+  <p>Since <span set:html={rich('[[\\sin(2A)\\leq1]]')} />, the largest possible area is <span set:html={rich('[[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]]')} />, reached when <span set:html={rich('[[A=B=45^\\circ]].')} /> For <span set:html={rich('[[c=10]]')} /> the maximum area is <span set:html={rich('[[[\\boxed{K_{\\max}=25\\text{ square units}}]]]')} />. This is the isosceles right triangle of Example 4: equal legs make the product of the legs, and hence the area, as large as the fixed hypotenuse allows.</p>
 
   <h3>Why Area Does Not Simply Increase With Angle in Every Case</h3>
   <p>A claim about increasing angles is meaningless without naming what is held constant. With a fixed hypotenuse the relationship rises then falls; with a fixed leg the relationship is different again. Treating area as a simple increasing function of angle is a common oversimplification, and this section exists to keep it out of your work.</p>
@@ -383,7 +389,7 @@ const imgSrc = (name: string): string => `/images/area-from-angle/${name}`;
   <h2>Area Units, Degrees, and Rounding</h2>
 
   <h3>Square Metres</h3>
-  <p>If the inputs are in metres, the area comes out in square metres: <span set:html={rich('[[4\\text{ m}\\times5\\text{ m}\\times0.6/2=6\\text{ m}^2]]')} />. The multiplication of two lengths always produces a square unit, whatever the unit system.</p>
+  <p>If the inputs are in metres, the area comes out in square metres: <span set:html={rich('[[4\\text{ m}\\times5\\text{ m}\\times0.6/2=6\\text{ m}^2]].')} /> The multiplication of two lengths always produces a square unit, whatever the unit system.</p>
 
   <h3>Square Centimetres</h3>
   <p>Centimetre inputs produce square-centimetre areas, as in the kite panel example with its <span set:html={rich('[[150\\text{ cm}^2]]')} /> result. Converting between square units squares the linear conversion factor: 1 m&#178; = 10,000 cm&#178;, not 100.</p>
@@ -392,7 +398,7 @@ const imgSrc = (name: string): string => `/images/area-from-angle/${name}`;
   <p>Foot inputs produce square-foot areas, as in the sail example with its <span set:html={rich('[[30\\text{ ft}^2]]')} /> result. Convert all inputs to one length unit before calculating; the calculator cannot mix metres and feet.</p>
 
   <h3>Degrees vs. Radians</h3>
-  <p>The calculator expects angles in degrees. To convert, use <span set:html={rich('[[\\text{Degrees}=\\text{Radians}\\times\\frac{180}{\\pi}]]')} />. For example, <span set:html={rich('[[\\frac{\\pi}{6}\\text{ radians}=30^\\circ]]')} />. Entering a radian value where degrees are expected is one of the most damaging mistakes, because the sine of a small radian number looks plausible while being entirely wrong.</p>
+  <p>The calculator expects angles in degrees. To convert, use <span set:html={rich('[[\\text{Degrees}=\\text{Radians}\\times\\frac{180}{\\pi}]].')} /> For example, <span set:html={rich('[[\\frac{\\pi}{6}\\text{ radians}=30^\\circ]].')} /> Entering a radian value where degrees are expected is one of the most damaging mistakes, because the sine of a small radian number looks plausible while being entirely wrong.</p>
 
   <h3>Why Sine Has No Units</h3>
   <p>Sine is a ratio of two lengths, so the units cancel and the value is dimensionless. Multiplying two lengths by a dimensionless number leaves exactly the square units the area needs. This is also why the sine value is the same whether the sides were measured in metres or feet, as long as the triangle's shape is the same.</p>
@@ -406,7 +412,7 @@ const imgSrc = (name: string): string => `/images/area-from-angle/${name}`;
   <h2>Common Mistakes When Calculating Right Triangle Area From an Angle</h2>
   <ol>
     <li><strong>Using angle B with Mode 1 without changing the sides.</strong> Mode 1 pairs <span set:html={rich('[[b]]')} /> and <span set:html={rich('[[c]]')} /> with angle <span set:html={rich('[[A]]')} />; feeding it <span set:html={rich('[[B]]')} /> computes a different triangle's area.</li>
-    <li><strong>Using angle A with Mode 2.</strong> Mode 2 pairs <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[c]]')} /> with angle <span set:html={rich('[[B]]')} />. Check the mode selector before entering numbers.</li>
+    <li><strong>Using angle A with Mode 2.</strong> Mode 2 pairs <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[c]]')} /> with angle <span set:html={rich('[[B]].')} /> Check the mode selector before entering numbers.</li>
     <li><strong>Confusing adjacent and opposite.</strong> These labels depend on the reference angle: fix the angle first, then label the legs relative to it.</li>
     <li><strong>Entering the hypotenuse into the leg field.</strong> The leg must be shorter than <span set:html={rich('[[c]]')} />; swapping them breaks every consistency check.</li>
     <li><strong>Using the wrong included angle.</strong> The angle must sit between the two entered sides, or the sine projection is wrong.</li>
@@ -423,7 +429,7 @@ const imgSrc = (name: string): string => `/images/area-from-angle/${name}`;
     <li><strong>Treating the modes as interchangeable.</strong> Each mode is its own formula with its own input contract.</li>
   </ol>
   <h3>Wrong-Versus-Correct Example</h3>
-  <p>Take the 3-4-5 triangle with <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />, <span set:html={rich('[[A\\approx36.87^\\circ]]')} />. Correct: <span set:html={rich('[[K=(4\\times5\\times\\sin(A))/2\\approx6]]')} />. If the wrong angle is substituted, <span set:html={rich('[[K=(4\\times5\\times\\sin(B))/2\\approx8]]')} />, not 6. The mistake uses the incorrect included angle for sides <span set:html={rich('[[b]]')} /> and <span set:html={rich('[[c]]')} />, and 8 is simply the wrong triangle's area.</p>
+  <p>Take the 3-4-5 triangle with <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />, <span set:html={rich('[[A\\approx36.87^\\circ]].')} /> Correct: <span set:html={rich('[[K=(4\\times5\\times\\sin(A))/2\\approx6]].')} /> If the wrong angle is substituted, <span set:html={rich('[[K=(4\\times5\\times\\sin(B))/2\\approx8]]')} />, not 6. The mistake uses the incorrect included angle for sides <span set:html={rich('[[b]]')} /> and <span set:html={rich('[[c]]')} />, and 8 is simply the wrong triangle's area.</p>
 </section>
 
 <!-- Section 15: Verification methods -->
@@ -431,22 +437,22 @@ const imgSrc = (name: string): string => `/images/area-from-angle/${name}`;
   <h2>How to Check Whether Your Calculated Area Is Correct</h2>
 
   <h3>Method 1: Check the Pythagorean Theorem</h3>
-  <p>For a valid right triangle, <span set:html={rich('[[a^2+b^2=c^2]]')} />. For the 3-4-5 triangle, <span set:html={rich('[[9+16=25]]')} />. A failure here means the side inputs describe no right triangle at all.</p>
+  <p>For a valid right triangle, <span set:html={rich('[[a^2+b^2=c^2]].')} /> For the 3-4-5 triangle, <span set:html={rich('[[9+16=25]].')} /> A failure here means the side inputs describe no right triangle at all.</p>
 
   <h3>Method 2: Check the Legs Formula</h3>
-  <p>Compute <span set:html={rich('[[K=ab/2]]')} /> independently. For <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[K=6]]')} />. Agreement with the angle-based result confirms the whole computation.</p>
+  <p>Compute <span set:html={rich('[[K=ab/2]]')} /> independently. For <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[K=6]].')} /> Agreement with the angle-based result confirms the whole computation.</p>
 
   <h3>Method 3: Check the Complementary Angle</h3>
-  <p>Verify <span set:html={rich('[[A+B=90^\\circ]]')} />. For <span set:html={rich('[[A\\approx36.87^\\circ]]')} />, <span set:html={rich('[[B\\approx53.13^\\circ]]')} />. The sum must hold for the entered angle to be a genuine acute angle of the triangle.</p>
+  <p>Verify <span set:html={rich('[[A+B=90^\\circ]].')} /> For <span set:html={rich('[[A\\approx36.87^\\circ]]')} />, <span set:html={rich('[[B\\approx53.13^\\circ]].')} /> The sum must hold for the entered angle to be a genuine acute angle of the triangle.</p>
 
   <h3>Method 4: Check the Sine Relationship</h3>
-  <p>For Mode 1, <span set:html={rich('[[\\sin(A)=a/c]]')} />; for Mode 2, <span set:html={rich('[[\\sin(B)=b/c]]')} />. In the 3-4-5 triangle, <span set:html={rich('[[\\sin(36.87^\\circ)\\approx3/5]]')} /> and <span set:html={rich('[[\\sin(53.13^\\circ)\\approx4/5]]')} />. This is the same relationship the formula uses, checked in the opposite direction.</p>
+  <p>For Mode 1, <span set:html={rich('[[\\sin(A)=a/c]]')} />; for Mode 2, <span set:html={rich('[[\\sin(B)=b/c]].')} /> In the 3-4-5 triangle, <span set:html={rich('[[\\sin(36.87^\\circ)\\approx3/5]]')} /> and <span set:html={rich('[[\\sin(53.13^\\circ)\\approx4/5]].')} /> This is the same relationship the formula uses, checked in the opposite direction.</p>
 
   <h3>Method 5: Verify the Input Consistency</h3>
-  <p>For Mode 1, <span set:html={rich('[[b\\approx c\\cos(A)]]')} />; for Mode 2, <span set:html={rich('[[a\\approx c\\cos(B)]]')} />. The approximation symbol is appropriate when the angle measurement has been rounded.</p>
+  <p>For Mode 1, <span set:html={rich('[[b\\approx c\\cos(A)]]')} />; for Mode 2, <span set:html={rich('[[a\\approx c\\cos(B)]].')} /> The approximation symbol is appropriate when the angle measurement has been rounded.</p>
 
   <h3>Method 6: Check the Maximum Area</h3>
-  <p>For a fixed hypotenuse, <span set:html={rich('[[K\\leq c^2/4]]')} />. With <span set:html={rich('[[c=5]]')} />, no valid area exceeds 6.25 square units. A computed area above that bound signals an input error immediately.</p>
+  <p>For a fixed hypotenuse, <span set:html={rich('[[K\\leq c^2/4]].')} /> With <span set:html={rich('[[c=5]]')} />, no valid area exceeds 6.25 square units. A computed area above that bound signals an input error immediately.</p>
 
   <h3>Method 7: Check Square Units</h3>
   <p>Ensure the result is expressed in the square of the input length unit. This catches the surprisingly common habit of reporting the area number with the length unit unchanged.</p>

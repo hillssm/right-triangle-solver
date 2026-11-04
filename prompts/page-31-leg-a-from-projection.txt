@@ -1,0 +1,1408 @@
+# MASTER SEO CONTENT WRITING PROMPT
+## Right Triangle Leg A From Projection Calculator — 3,500–4,000+ Words
+
+### 1. ROLE AND OBJECTIVE
+
+Act as an experienced mathematics educator, geometry specialist, professional educational content writer, mathematical proofreader, and technical SEO strategist.
+
+Create a comprehensive, original, mathematically accurate, human-friendly, and search-engine-optimized educational guide for the following calculator page.
+
+**Website:** RightTriangleSolver.com
+
+**Page URL:** https://www.righttrianglesolver.com/right-triangle-leg-a-from-projection-calculator/
+
+**Existing Page Title:** Right Triangle Leg a From Projection Calculator
+
+**Primary Focus Keyword:** Right Triangle Leg A From Projection Calculator
+
+**Secondary Topic:** Find a Right Triangle Leg From Its Hypotenuse Projection
+
+**Main Formula:**
+
+a = √(c × p)
+
+**Target Word Count:** 3,500–4,000 words of meaningful educational content. Exceed 4,000 words only when additional material genuinely improves understanding.
+
+**Language:** American English
+
+**Target Audience:**
+- Middle school geometry students
+- High school mathematics students
+- College students studying geometry
+- Mathematics teachers and tutors
+- Parents helping children with homework
+- Beginners learning right triangle geometry
+- Students studying the projection theorem
+- Anyone solving right triangle side-length problems
+
+**Primary Goal:**
+
+Teach readers how to calculate leg a of a right triangle when the complete hypotenuse c and the corresponding hypotenuse projection p are known.
+
+The article must explain:
+- What leg a represents
+- What hypotenuse projection p means
+- Why c and p are multiplied
+- Why a square root is necessary
+- How the projection theorem works
+- How to solve different types of problems
+- How to verify the result
+- How this formula relates to other right triangle relationships
+
+Write as a knowledgeable teacher explaining geometry to a student.
+
+Avoid robotic writing, generic filler, excessive keyword repetition, unnecessary complexity, and artificial word-count expansion.
+
+---
+
+### 2. EXISTING PAGE AND CALCULATOR ANALYSIS
+
+Before writing, inspect the live page carefully.
+
+Confirm the current calculator functionality.
+
+The calculator currently includes:
+
+**Input 1: Hypotenuse c**
+
+The complete hypotenuse of the right triangle.
+
+**Input 2: Projection p**
+
+The hypotenuse segment associated with leg a.
+
+**Calculation Button:**
+
+Calculate Leg a.
+
+**Reset Button:**
+
+Clears the input values.
+
+**Main Formula:**
+
+a = √(c × p)
+
+**Other Existing Content:**
+- Formula explanation
+- Live triangle visualization
+- Diagram key
+- Calculator instructions
+- Worked examples
+- Explanation of the result
+- Common mistakes
+- FAQs
+- Related calculators
+
+Inspect the current interface and ensure that the proposed article accurately describes its actual functionality.
+
+Do not invent features such as missing-side input, downloadable solutions, automatic unit conversion beyond the existing interface, or unsupported calculation modes.
+
+The page currently contains mathematical notation that is not displayed consistently in some extracted text. Ensure that every formula is presented correctly in the final content.
+
+The most important distinction:
+
+c × p = a²
+
+NOT a.
+
+The actual leg length is obtained by taking the positive square root:
+
+a = √(c × p)
+
+Do not reproduce malformed mathematical notation from the existing page.
+
+---
+
+### 3. SEARCH INTENT
+
+The primary search intent is informational and calculator-based.
+
+Visitors want to:
+
+1. Find leg a using the hypotenuse and projection p.
+2. Understand what projection p represents.
+3. Learn the formula a = √(cp).
+4. Understand why multiplication is required.
+5. Understand why the square root is necessary.
+6. Identify the correct projection in a triangle diagram.
+7. Solve right triangle projection problems manually.
+8. Verify their calculated leg.
+9. Understand the projection theorem.
+10. Distinguish projection p from projection q.
+
+Answer the main calculation question immediately.
+
+Do not make users read a lengthy introduction before reaching the calculator or formula.
+
+Keep the calculator and essential instructions near the top.
+
+---
+
+### 4. SEO KEYWORD STRATEGY
+
+**Primary Keyword:**
+
+Right Triangle Leg A From Projection Calculator
+
+**Secondary Keywords:**
+- right triangle leg from projection
+- find leg a from projection p
+- right triangle projection theorem
+- leg length from hypotenuse projection
+- calculate right triangle leg
+- right triangle leg formula
+- hypotenuse projection calculator
+- right triangle side from projection
+- leg a formula
+- right triangle geometric mean theorem
+- calculate leg using hypotenuse and projection
+- right triangle projection formula
+
+**Semantic Keywords:**
+- hypotenuse
+- projection p
+- projection q
+- perpendicular legs
+- right angle
+- altitude
+- geometric mean
+- similar triangles
+- projection theorem
+- Pythagorean theorem
+- hypotenuse segment
+- squared side length
+- positive square root
+- triangle similarity
+- right triangle geometry
+- perpendicular height
+- segment division
+
+**Keyword Placement:**
+
+Use the primary keyword naturally in:
+- SEO title
+- H1
+- First paragraph
+- One relevant H2 when appropriate
+- Meta description, if natural
+
+Use secondary keywords in relevant explanations.
+
+Avoid keyword stuffing.
+
+Do not force exact-match keywords into every section.
+
+Do not create unnecessary headings just to target variations.
+
+Prioritize educational quality, mathematical accuracy, and natural language.
+
+---
+
+### 5. MATHEMATICAL NOTATION AND DEFINITIONS
+
+Maintain one consistent triangle-labeling convention throughout the article.
+
+Consider triangle ABC with a right angle at C.
+
+Draw altitude CD perpendicular to hypotenuse AB.
+
+Define:
+
+- AC = a: leg a, the side this calculator finds
+- BC = b: the other perpendicular leg
+- AB = c: complete hypotenuse
+- AD = p: projection associated with leg a
+- DB = q: projection associated with leg b
+- CD = h: altitude to the hypotenuse
+
+The primary theorem is:
+
+a² = c × p
+
+Therefore:
+
+a = √(c × p)
+
+Related relationships:
+
+b² = c × q
+
+b = √(c × q)
+
+c = p + q
+
+h² = p × q
+
+h = √(p × q)
+
+a² + b² = c²
+
+Explain why projection p belongs with leg a and projection q belongs with leg b.
+
+Do not switch the labeling convention midway through the article.
+
+Explain that all segment lengths are positive for a nondegenerate right triangle.
+
+For the standard geometric arrangement:
+
+0 < p < c
+
+and:
+
+0 < q < c
+
+Also:
+
+p + q = c
+
+The calculator uses c and p to find a.
+
+---
+
+## 6. REQUIRED ARTICLE STRUCTURE
+
+Follow the outline below.
+
+The suggested section lengths are editorial guidelines. Adjust them to achieve a complete, well-balanced article of approximately 3,500–4,000 words.
+
+### H1: Right Triangle Leg A From Projection Calculator
+
+**Suggested length: 100–130 words**
+
+Write an engaging and direct introduction.
+
+Explain:
+- What the calculator finds
+- What hypotenuse c represents
+- What projection p represents
+- What leg a represents
+- Which measurements the user must enter
+- What result the calculator provides
+
+Introduce the main formula:
+
+a = √(c × p)
+
+Include a brief numerical example.
+
+For example:
+
+c = 10 cm
+
+p = 3.6 cm
+
+a = √(10 × 3.6)
+
+a = √36
+
+a = 6 cm
+
+Avoid generic opening statements.
+
+Do not duplicate the introduction elsewhere.
+
+### H2: Calculate Right Triangle Leg A From Projection
+
+**Suggested length: 120–160 words**
+
+Place this section immediately beside or above the existing calculator.
+
+Explain the two input fields.
+
+**Hypotenuse c:**
+
+The full length of the side opposite the right angle.
+
+**Projection p:**
+
+The segment of the hypotenuse associated with leg a.
+
+Explain:
+- How to identify the two measurements
+- How to choose appropriate measurement units
+- Why projection p must be smaller than c
+- Calculate Leg a button
+- Reset button
+- The displayed result
+
+Show the formula:
+
+a = √(c × p)
+
+Do not claim the calculator provides unsupported features.
+
+### H2: What Is Leg A in a Right Triangle?
+
+**Suggested length: 180–230 words**
+
+Explain the meaning of leg a.
+
+Cover:
+- The two perpendicular sides
+- The right-angle vertex
+- The hypotenuse
+- How leg a is positioned
+- How leg a differs from leg b
+- Why the two legs meet at 90 degrees
+
+Explain that leg a is not a projection segment.
+
+Use the main triangle diagram.
+
+Clarify that the calculator finds the actual side length of leg a, not the length of projection p.
+
+### H2: What Is Projection P in a Right Triangle?
+
+**Suggested length: 200–250 words**
+
+Explain the concept of projection p.
+
+Describe:
+- How the altitude is drawn from the right-angle vertex
+- How it meets the hypotenuse
+- How the hypotenuse is divided into p and q
+- Why p is associated with leg a
+- Why q is associated with leg b
+
+Show:
+
+c = p + q
+
+Clarify that p and q are segments along the hypotenuse.
+
+They are not the perpendicular legs.
+
+Explain the connection between the projection theorem and similar triangles.
+
+Include a clearly labeled diagram.
+
+### H2: Right Triangle Leg A From Projection Formula
+
+**Suggested length: 200–250 words**
+
+Introduce the main formula.
+
+a² = c × p
+
+Then:
+
+a = √(c × p)
+
+Define each variable.
+
+Explain the calculation in two distinct stages.
+
+**Stage 1: Multiply the hypotenuse and its corresponding projection.**
+
+c × p = a²
+
+**Stage 2: Take the positive square root.**
+
+a = √(c × p)
+
+Explain why the product represents a squared length rather than the actual leg.
+
+Discuss why the positive square root is used.
+
+Explain unit consistency.
+
+If c and p are in centimeters, the product is in square centimeters and the final leg is in centimeters.
+
+Use a small numerical example.
+
+### H2: Why Is There a Square Root in the Formula?
+
+**Suggested length: 180–230 words**
+
+Give this concept special attention because it is a common source of student mistakes.
+
+Explain:
+
+a² = c × p
+
+If:
+
+c = 10
+
+p = 3.6
+
+Then:
+
+a² = 36
+
+The value 36 represents the squared side length.
+
+Therefore:
+
+a = √36 = 6
+
+Explain the difference between:
+- a
+- a²
+- √(cp)
+
+Use a small comparison table.
+
+Do not simply repeat the formula explanation.
+
+Focus on why the square root is mathematically necessary.
+
+### H2: How to Use the Right Triangle Leg A Calculator
+
+**Suggested length: 170–220 words**
+
+Provide clear numbered instructions.
+
+Step 1: Identify the full hypotenuse c.
+
+Step 2: Find the altitude's intersection with the hypotenuse.
+
+Step 3: Identify projection p associated with leg a.
+
+Step 4: Make sure p is smaller than c.
+
+Step 5: Select compatible units.
+
+Step 6: Enter c.
+
+Step 7: Enter p.
+
+Step 8: Click Calculate Leg a.
+
+Step 9: Read the result.
+
+Step 10: Use Reset when starting another problem.
+
+Explain why entering projection q instead of p can produce the wrong leg.
+
+### H2: Step-by-Step Example of Finding Leg A
+
+**Suggested length: 180–230 words**
+
+Use the following example:
+
+c = 10 cm
+
+p = 3.6 cm
+
+Step 1: Write the formula.
+
+a = √(cp)
+
+Step 2: Substitute the values.
+
+a = √(10 × 3.6)
+
+Step 3: Multiply.
+
+a = √36
+
+Step 4: Take the square root.
+
+a = 6 cm
+
+Explain that 6 cm is the actual perpendicular side.
+
+Show a short verification:
+
+a² = cp
+
+36 = 36
+
+### H2: Right Triangle Leg A From Projection Diagram Explained
+
+**Suggested length: 180–230 words**
+
+Create a mathematically accurate main diagram.
+
+Use triangle ABC:
+
+- Right angle at C
+- AC = a
+- BC = b
+- AB = c
+- AD = p
+- DB = q
+- CD = h
+
+Show the altitude CD perpendicular to AB.
+
+Explain:
+- Where leg a is located
+- Where projection p is located
+- Why p is associated with a
+- How the altitude divides the hypotenuse
+- How the two smaller triangles are similar
+
+Include descriptive alt text and a figure caption.
+
+Make all labels readable on mobile.
+
+### H2: Why Does the Projection Theorem Work?
+
+**Suggested length: 240–300 words**
+
+Provide a proof using similar triangles.
+
+Use triangle ABC and altitude CD.
+
+Explain that triangle ACD is similar to triangle ABC.
+
+Match corresponding sides carefully.
+
+The corresponding relationship is:
+
+AD / AC = AC / AB
+
+Substitute:
+
+p / a = a / c
+
+Cross-multiply:
+
+a² = cp
+
+Take the positive square root:
+
+a = √(cp)
+
+Explain every step.
+
+Clarify why similarity produces the geometric relationship.
+
+Avoid skipping steps.
+
+Do not use an incorrect side correspondence.
+
+### H2: Worked Examples of Finding Leg A From Projection
+
+**Suggested length: 500–650 words**
+
+Provide at least eight varied examples.
+
+Every example must include:
+- Given values
+- Formula
+- Substitution
+- Intermediate calculation
+- Final answer
+- Short explanation
+
+**Example 1: Basic Whole Numbers**
+
+c = 10 cm
+
+p = 4 cm
+
+a = √40
+
+a ≈ 6.325 cm
+
+**Example 2: Perfect Square Result**
+
+c = 10 cm
+
+p = 3.6 cm
+
+a = √36 = 6 cm
+
+**Example 3: Larger Triangle**
+
+c = 25 m
+
+p = 9 m
+
+a = √225 = 15 m
+
+**Example 4: Decimal Measurements**
+
+c = 12.5 cm
+
+p = 3.2 cm
+
+a = √40
+
+a ≈ 6.325 cm
+
+**Example 5: Equal Hypotenuse Projections**
+
+c = 20 cm
+
+p = 10 cm
+
+a = √200
+
+a = 10√2 cm
+
+a ≈ 14.142 cm
+
+Explain that equal projections create an isosceles right triangle.
+
+**Example 6: Small Measurements**
+
+c = 8 mm
+
+p = 2 mm
+
+a = √16 = 4 mm
+
+**Example 7: Different Units**
+
+c = 0.5 m
+
+p = 20 cm
+
+Convert c to centimeters:
+
+c = 50 cm
+
+a = √(50 × 20)
+
+a = √1000
+
+a ≈ 31.623 cm
+
+**Example 8: Fractional Measurements**
+
+c = 16 ft
+
+p = 4 ft
+
+a = √64 = 8 ft
+
+Do not repeat the same explanation after every example.
+
+Use varied explanatory language.
+
+### H2: How to Find Leg A When the Other Projection Is Known
+
+**Suggested length: 200–250 words**
+
+Explain the situation where q is known instead of p.
+
+Since:
+
+c = p + q
+
+Find p:
+
+p = c − q
+
+Then:
+
+a = √(c × p)
+
+Use an example:
+
+c = 25 cm
+
+q = 16 cm
+
+p = 25 − 16 = 9 cm
+
+a = √(25 × 9)
+
+a = 15 cm
+
+Explain that the existing calculator requires p, so users must first determine the corresponding projection if they only know q.
+
+Do not suggest that the calculator accepts q as an input.
+
+### H2: Relationship Between Leg A, Hypotenuse, and Projection P
+
+**Suggested length: 180–230 words**
+
+Explain the three measurements.
+
+a = √(cp)
+
+c = a²/p
+
+p = a²/c
+
+Show how the same theorem can be rearranged to find different missing quantities.
+
+Include a comparison table.
+
+Explain which quantities must be known for each calculation.
+
+Clarify that this page focuses on finding a.
+
+### H2: Relationship Between Leg A and Leg B
+
+**Suggested length: 180–230 words**
+
+Explain the corresponding formula for leg b:
+
+b² = cq
+
+b = √(cq)
+
+Compare:
+
+a = √(cp)
+
+b = √(cq)
+
+Explain why leg a uses projection p and leg b uses projection q.
+
+Use a consistent example:
+
+c = 25
+
+p = 9
+
+q = 16
+
+a = √225 = 15
+
+b = √400 = 20
+
+Explain how both legs fit into the same right triangle.
+
+Provide a contextual link to the leg b from projection calculator.
+
+### H2: Relationship Between Projection P and the Pythagorean Theorem
+
+**Suggested length: 200–260 words**
+
+Explain:
+
+a² + b² = c²
+
+Using the projection theorem:
+
+a² = cp
+
+b² = cq
+
+Add:
+
+a² + b² = cp + cq
+
+Factor:
+
+a² + b² = c(p + q)
+
+Since:
+
+p + q = c
+
+Therefore:
+
+a² + b² = c²
+
+Explain why the projection theorem and Pythagorean theorem are consistent.
+
+Use simple mathematical language.
+
+### H2: How to Verify the Calculated Leg A
+
+**Suggested length: 200–250 words**
+
+Explain three verification methods.
+
+**Method 1: Projection Theorem**
+
+Verify:
+
+a² = cp
+
+**Method 2: Pythagorean Theorem**
+
+Find or calculate leg b.
+
+Then verify:
+
+a² + b² = c²
+
+**Method 3: Projection Addition**
+
+Verify:
+
+p + q = c
+
+Use a complete numerical example.
+
+Explain that a correct result should be smaller than the hypotenuse for a nondegenerate right triangle.
+
+### H2: Important Properties of Leg A From Projection
+
+**Suggested length: 200–260 words**
+
+Explain:
+
+1. Leg a is always shorter than the hypotenuse.
+2. Projection p is smaller than c.
+3. Increasing p while keeping c fixed increases a.
+4. Increasing c while keeping p fixed increases a mathematically, provided the geometric constraints remain valid.
+5. Swapping p and q changes which leg is calculated.
+6. Equal projections produce equal legs.
+7. The result is a length, not an area.
+8. Scaling all measurements by the same factor scales the calculated leg by that factor.
+
+Explain the conditions behind these properties.
+
+Avoid unsupported statements.
+
+### H2: Common Mistakes When Finding Leg A From Projection
+
+**Suggested length: 250–320 words**
+
+Discuss at least ten common errors.
+
+1. Forgetting the square root.
+2. Treating cp as the final answer.
+3. Using projection q instead of p.
+4. Entering a leg in the hypotenuse field.
+5. Confusing the hypotenuse with a projection.
+6. Using p greater than or equal to c.
+7. Mixing centimeters and meters.
+8. Using negative measurements.
+9. Applying the formula to a non-right triangle.
+10. Rounding too early.
+11. Confusing a and a².
+12. Using the wrong side correspondence in the diagram.
+
+For each mistake:
+- Explain why it is wrong.
+- Provide the correct approach.
+- Include a small example where useful.
+
+### H2: Practical Applications of the Projection Theorem
+
+**Suggested length: 150–200 words**
+
+Discuss educational and theoretical applications:
+
+- Geometry homework
+- Similar-triangle exercises
+- Right triangle construction
+- Technical drawing
+- Geometric modeling
+- Mathematics teaching
+- Pythagorean theorem verification
+- Triangle side reconstruction
+
+Use hypothetical examples.
+
+Do not suggest that the theorem replaces real-world surveying or professional engineering measurements.
+
+Explain that the required right-triangle geometry must exist.
+
+### H2: Practice Problems With Answers
+
+**Suggested length: 250–300 words**
+
+Create six original practice questions.
+
+Include:
+
+1. Basic whole-number values.
+2. Decimal projection.
+3. Large hypotenuse.
+4. Unit conversion.
+5. Finding p from q and c before finding a.
+6. A multi-step problem involving leg b and the Pythagorean theorem.
+
+Provide full solutions.
+
+Use different values from the main worked examples.
+
+Check every calculation.
+
+### H2: Frequently Asked Questions
+
+**Suggested length: 350–450 words**
+
+Write 10–12 useful FAQs.
+
+Suggested questions:
+
+1. What is the formula for finding leg a from projection p?
+2. Why do we multiply c and p?
+3. Why is a square root necessary?
+4. What does projection p represent?
+5. Is projection p the same as leg a?
+6. Can I use projection q to find leg a?
+7. What if I only know projection q?
+8. Can projection p equal the hypotenuse?
+9. How do I verify the calculated leg?
+10. What happens when p and q are equal?
+11. Can I find leg b using the same theorem?
+12. Is the projection theorem related to the Pythagorean theorem?
+
+Keep answers concise and informative.
+
+Avoid copying paragraphs from the main article.
+
+### H2: Related Right Triangle Calculators
+
+**Suggested length: 70–100 words**
+
+Provide contextual links to relevant tools.
+
+Explain which calculator helps when the reader knows different measurements.
+
+Do not add a generic promotional conclusion.
+
+---
+
+## 7. REQUIRED EDUCATIONAL DIAGRAMS
+
+Create specifications for at least six mathematically accurate diagrams.
+
+### Diagram 1: Main Right Triangle With Leg A and Projection P
+
+Show:
+- Right triangle ABC
+- Right angle at C
+- Leg a = AC
+- Leg b = BC
+- Hypotenuse c = AB
+- Altitude CD = h
+- Projection AD = p
+- Projection DB = q
+
+Clearly highlight leg a and projection p as the main relationship.
+
+### Diagram 2: Projection Theorem Illustration
+
+Show:
+
+a² = c × p
+
+Label c as the entire hypotenuse and p as the segment associated with leg a.
+
+Explain the geometric relationship visually.
+
+### Diagram 3: Worked Example With c = 10 and p = 3.6
+
+Show:
+
+c = 10
+
+p = 3.6
+
+q = 6.4
+
+a = 6
+
+b = 8
+
+h = 4.8
+
+Ensure the triangle is mathematically proportional.
+
+### Diagram 4: Projection P vs. Projection Q
+
+Compare:
+- Leg a paired with p
+- Leg b paired with q
+
+Show:
+
+a² = cp
+
+b² = cq
+
+Explain why using q in the formula for a gives the wrong result.
+
+### Diagram 5: Similar Triangles Proof
+
+Show the original right triangle and the two smaller triangles.
+
+Identify corresponding sides and angles.
+
+Demonstrate:
+
+p/a = a/c
+
+and:
+
+a² = cp
+
+### Diagram 6: Equal Projections
+
+Show an isosceles right triangle.
+
+Use:
+
+c = 20
+
+p = 10
+
+q = 10
+
+a = 10√2
+
+b = 10√2
+
+Explain why equal projections correspond to equal legs.
+
+**Diagram standards:**
+
+For every diagram provide:
+- Suggested placement
+- Accurate construction instructions
+- Exact mathematical labels
+- Descriptive alt text
+- Figure caption
+- Mobile-responsive SVG guidance
+
+Use mathematically accurate SVG drawings.
+
+Avoid decorative illustrations that do not help explain the geometry.
+
+Do not use inaccurate AI-generated mathematical diagrams.
+
+---
+
+## 8. INTERNAL LINKING STRATEGY
+
+Use relevant internal links from RightTriangleSolver.com.
+
+Suggested pages:
+
+1. https://www.righttrianglesolver.com/right-triangle-projection-calculator/
+
+2. https://www.righttrianglesolver.com/right-triangle-projection-p-calculator/
+
+3. https://www.righttrianglesolver.com/right-triangle-projection-q-calculator/
+
+4. https://www.righttrianglesolver.com/right-triangle-leg-b-from-projection-calculator/
+
+5. https://www.righttrianglesolver.com/right-triangle-hypotenuse-from-projections-calculator/
+
+6. https://www.righttrianglesolver.com/right-triangle-altitude-from-projections-calculator/
+
+7. https://www.righttrianglesolver.com/right-triangle-side-calculator/
+
+Verify every destination before using it.
+
+Use approximately 4–7 relevant internal links.
+
+Use descriptive anchor text.
+
+Do not force links into unrelated paragraphs.
+
+Do not repeat the same anchor text excessively.
+
+Do not link the current page to itself.
+
+---
+
+## 9. KEYWORD CANNIBALIZATION PREVENTION
+
+This page must primarily target:
+
+**Right Triangle Leg A From Projection Calculator**
+
+Its specific calculation is:
+
+a = √(cp)
+
+Keep the content focused on:
+- Recovering leg a
+- Identifying projection p
+- Understanding the projection theorem
+- Taking the correct square root
+- Verifying the calculated leg
+
+Do not turn this page into a duplicate of:
+
+- Right Triangle Leg B From Projection Calculator
+- Right Triangle Projection Calculator
+- Right Triangle Hypotenuse From Projections Calculator
+- Right Triangle Altitude From Projections Calculator
+- Right Triangle Side Calculator
+
+Explain related formulas only to support the main topic.
+
+Link to specialized calculators when users need different calculations.
+
+---
+
+## 10. HUMAN-LIKE WRITING REQUIREMENTS
+
+The content must sound like a real mathematics teacher.
+
+**Sentence structure:**
+- Use short and medium-length sentences.
+- Vary sentence rhythm naturally.
+- Avoid comma splices.
+- Use active voice where practical.
+- Break complicated calculations into smaller steps.
+- Explain mathematical terminology clearly.
+
+**Paragraph structure:**
+- Prefer 2–4 sentences per paragraph.
+- Keep each paragraph focused.
+- Avoid repetitive openings.
+- Avoid walls of text.
+- Do not create excessive one-sentence paragraphs.
+
+**Tone:**
+- Educational
+- Friendly
+- Professional
+- Clear
+- Patient
+- Accurate
+
+Avoid generic AI-style phrases such as:
+
+- Unlock the secrets of geometry.
+- Dive into the fascinating world of mathematics.
+- Revolutionary calculator.
+- Game-changing tool.
+- Seamlessly calculate.
+- In today's digital world.
+- Master geometry effortlessly.
+
+Do not add unnecessary promotional language.
+
+Avoid repeating the same formula explanation across multiple sections.
+
+Make every section contribute new information.
+
+---
+
+## 11. MATHEMATICAL ACCURACY REQUIREMENTS
+
+Accuracy is mandatory.
+
+Verify all mathematical expressions.
+
+Use:
+
+a² = cp
+
+a = √(cp)
+
+b² = cq
+
+b = √(cq)
+
+b = √(cq) only for the corresponding projection q.
+
+c = p + q
+
+h² = pq
+
+h = √(pq)
+
+a² + b² = c²
+
+Ensure:
+- The square root covers the complete product cp.
+- The final result is a positive length.
+- All measurements use compatible units.
+- Projection p is positive and smaller than c.
+- The hypotenuse is longer than either leg.
+- The diagrams use the same labels throughout.
+- Exact values and approximations are distinguished.
+
+Never write:
+
+a = c × p
+
+Never treat cp as the final side length.
+
+Never pair projection q with leg a under the defined labeling convention.
+
+---
+
+## 12. SEO METADATA
+
+After the article, provide:
+
+**SEO Title**
+
+Approximately 50–60 characters where practical.
+
+Include the primary keyword or a natural variation.
+
+**Meta Description**
+
+Approximately 145–160 characters.
+
+Explain that the calculator finds leg a using the hypotenuse and projection p.
+
+**Primary Focus Keyword**
+
+Right Triangle Leg A From Projection Calculator
+
+**Secondary Keywords**
+
+Provide 8–12 relevant variations.
+
+**Existing URL Slug**
+
+right-triangle-leg-a-from-projection-calculator
+
+Keep the existing URL unchanged.
+
+Do not recommend changing the live URL without a strong technical reason.
+
+**Image SEO**
+
+Provide descriptive alt text for all six educational diagrams.
+
+Avoid keyword stuffing.
+
+---
+
+## 13. STRUCTURED DATA RECOMMENDATIONS
+
+Recommend appropriate schema based on actual visible page content.
+
+Consider:
+- WebPage
+- BreadcrumbList
+- WebApplication
+
+Use only accurate properties.
+
+Do not invent:
+- Ratings
+- Reviews
+- Prices
+- Authors
+- Features
+- User counts
+- Download capabilities
+
+Keep JSON-LD separate from the article.
+
+Do not promise Google rich results.
+
+---
+
+## 14. FINAL CONTENT QUALITY REVIEW
+
+Before submission, perform a detailed quality check.
+
+**Mathematical Accuracy**
+- Check every formula.
+- Recalculate every example.
+- Verify all square roots.
+- Check decimal approximations.
+- Verify unit conversions.
+- Confirm correct projection-to-leg relationships.
+- Check all diagram labels.
+- Verify the similar-triangle proof.
+
+**Content Quality**
+- Remove duplicated introductions.
+- Remove repetitive definitions.
+- Eliminate unnecessary filler.
+- Make the article understandable to beginners.
+- Ensure all examples add distinct value.
+- Explain why the square root is necessary.
+- Distinguish p from q.
+- Distinguish a from a².
+
+**SEO Quality**
+- Use the main keyword naturally.
+- Cover the primary search intent.
+- Include contextual internal links.
+- Avoid keyword stuffing.
+- Maintain a logical heading hierarchy.
+- Prevent overlap with specialized calculator pages.
+
+**User Experience**
+- Keep the calculator near the top.
+- Make the formula immediately visible.
+- Explain the input fields.
+- Use readable diagrams.
+- Make examples easy to follow.
+- Ensure responsive mobile presentation.
+
+---
+
+## 15. REQUIRED FINAL OUTPUT
+
+Deliver the completed content in five parts.
+
+### PART A: SEO METADATA
+
+Include:
+- SEO title
+- Meta description
+- Primary focus keyword
+- Secondary keywords
+- Existing URL slug
+
+### PART B: COMPLETE EDUCATIONAL ARTICLE
+
+Write 3,500–4,000 words, exceeding this range only when additional information is genuinely valuable.
+
+Include:
+- One H1
+- Logical H2 and H3 headings
+- Mathematical formulas
+- Step-by-step explanations
+- Worked examples
+- Comparison tables
+- Contextual internal links
+- Practice questions
+- FAQs
+
+### PART C: DIAGRAM SPECIFICATIONS
+
+Provide all six diagrams.
+
+Include:
+- Exact labels
+- Mathematical construction instructions
+- Placement recommendations
+- Alt text
+- Captions
+- Responsive SVG guidance
+
+### PART D: STRUCTURED DATA RECOMMENDATIONS
+
+Recommend suitable schema and explain implementation requirements.
+
+Do not include unsupported properties.
+
+### PART E: FINAL EDITORIAL REPORT
+
+Provide:
+- Approximate article word count
+- Mathematical accuracy review
+- Repetition review
+- Readability review
+- Internal linking review
+- Search intent coverage
+- Diagram accuracy review
+
+Do not include the editorial report in the published article.
+
+---
+
+## FINAL INSTRUCTION
+
+Write a comprehensive, original, mathematically accurate, and genuinely helpful educational resource for the Right Triangle Leg A From Projection Calculator.
+
+The main focus must remain on calculating leg a using the full hypotenuse c and its corresponding projection p.
+
+Explain the formula:
+
+a = √(c × p)
+
+in a way that beginners can understand.
+
+Give special attention to the difference between the squared result and the actual side length.
+
+Use accurate geometric diagrams, varied worked examples, a rigorous but understandable proof, and useful verification methods.
+
+Avoid keyword stuffing, unnecessary repetition, generic filler, artificial transitions, and unsupported mathematical claims.
+
+The finished article must be useful to students, teachers, and anyone solving right triangle projection problems.
+
+Every section must provide unique educational value.
+
+Prioritize reader understanding, mathematical accuracy, and practical usefulness over word count or SEO scoring metrics.

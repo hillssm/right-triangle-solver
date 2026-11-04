@@ -1,0 +1,1282 @@
+# MASTER SEO CONTENT PROMPT
+## Right Triangle Hypotenuse From Projections Calculator — 3,500–4,000+ Words
+
+### 1. ROLE AND OBJECTIVE
+
+Act as a senior mathematics educator, geometry specialist, professional educational content writer, mathematical proofreader, and technical SEO strategist with expertise in creating high-quality calculator landing pages.
+
+Your task is to write a comprehensive, original, engaging, mathematically accurate, and human-friendly educational guide for:
+
+**Website:** RightTriangleSolver.com
+
+**Page URL:** https://www.righttrianglesolver.com/right-triangle-hypotenuse-from-projections-calculator/
+
+**Primary Focus Keyword:** Right Triangle Hypotenuse From Projections Calculator
+
+**Main Formula:** c = p + q
+
+**Target Word Count:** 3,500–4,000 words of meaningful educational content. Exceed 4,000 words only if additional material provides genuine educational value.
+
+**Language:** American English
+
+**Target Audience:**
+- Middle school students
+- High school geometry students
+- College students
+- Mathematics teachers
+- Private tutors
+- Parents assisting with homework
+- Beginners studying right triangles
+- Technical drawing students
+- People solving geometry problems involving hypotenuse projections
+
+**Main Objective:**
+
+Create a complete educational resource that teaches readers how to calculate the hypotenuse of a right triangle when the two segments formed by the altitude to the hypotenuse are known.
+
+The article must explain what projections are, why their lengths add together, how the hypotenuse relates to the triangle's legs and altitude, and how to solve and verify related geometry problems.
+
+The article must feel naturally written by an experienced teacher.
+
+Avoid robotic writing, generic filler, unnecessary keyword repetition, exaggerated claims, and artificially expanded explanations.
+
+---
+
+### 2. ANALYZE THE EXISTING PAGE BEFORE WRITING
+
+Visit the live URL and inspect its content, calculator functionality, headings, diagram, examples, and internal links.
+
+The current calculator includes:
+
+- Projection p input
+- Projection q input
+- Measurement unit selectors
+- Calculate Hypotenuse c button
+- Reset button
+- Main formula: c = p + q
+- Explanation of the hypotenuse segments
+- Triangle diagram section
+- Worked examples
+- Common mistakes
+- FAQs
+- Related calculators
+
+Confirm the current functionality before writing.
+
+The existing page repeats its opening sentence. Remove this duplication.
+
+Identify areas where explanations are too brief, repetitive, confusing, or incomplete.
+
+Improve the educational value without unnecessarily changing the calculator's purpose.
+
+Do not invent features such as downloadable solutions, interactive graphing, or automatic calculations of other triangle measurements unless those features actually exist.
+
+Preserve the calculator's current functionality.
+
+---
+
+### 3. UNDERSTAND THE SEARCH INTENT
+
+The main search intent is calculator-based and informational.
+
+Users primarily want to:
+
+1. Find the hypotenuse using projections p and q.
+2. Understand what hypotenuse projections mean.
+3. Learn why c = p + q.
+4. Identify projections correctly in a diagram.
+5. Calculate the hypotenuse manually.
+6. Solve geometry homework problems.
+7. Understand how projections relate to the legs and altitude.
+8. Verify the calculated hypotenuse.
+9. Avoid common mistakes.
+10. Explore related right-triangle formulas.
+
+Address the primary calculation immediately.
+
+Do not force readers to scroll through a long article before finding the formula or calculator.
+
+Keep the calculator near the top of the page.
+
+---
+
+### 4. SEO KEYWORD STRATEGY
+
+**Primary Keyword:**
+
+Right Triangle Hypotenuse From Projections Calculator
+
+Use the primary keyword naturally in:
+- SEO title
+- H1
+- First paragraph
+- One relevant H2 heading, if appropriate
+- Meta description, if it fits naturally
+
+Do not repeatedly insert the complete keyword throughout the article.
+
+**Secondary Keywords:**
+- hypotenuse from projections
+- right triangle hypotenuse formula
+- calculate hypotenuse from projections
+- hypotenuse projection formula
+- right triangle projection calculator
+- find hypotenuse using p and q
+- hypotenuse segments
+- right triangle projection theorem
+- hypotenuse length calculator
+- right triangle geometric relationships
+- projection of legs on hypotenuse
+- right triangle hypotenuse calculation
+
+**Related Semantic Terms:**
+- right triangle
+- perpendicular legs
+- hypotenuse
+- altitude
+- perpendicular height
+- altitude foot
+- projection length
+- similar triangles
+- geometric mean theorem
+- Pythagorean theorem
+- triangle similarity
+- segment addition
+- hypotenuse division
+- projection theorem
+- right-angle vertex
+- square root
+- triangle side lengths
+- geometric proportions
+
+**SEO Requirements:**
+
+Use keywords naturally and contextually.
+
+Avoid keyword stuffing.
+
+Do not target an arbitrary keyword density.
+
+Avoid multiple headings that answer the same question.
+
+Use semantic variations only when they fit the explanation.
+
+Write descriptive headings that help readers locate information.
+
+Prioritize mathematical accuracy and usefulness over SEO scores.
+
+Do not make unsupported claims about search rankings.
+
+---
+
+## 5. MATHEMATICAL DEFINITIONS AND CONSISTENT NOTATION
+
+Use the following convention throughout the article.
+
+Consider right triangle ABC, with the right angle at C.
+
+Draw altitude CD perpendicular to hypotenuse AB.
+
+Define:
+
+- AC = a, first perpendicular leg
+- BC = b, second perpendicular leg
+- AB = c, complete hypotenuse
+- AD = p, first hypotenuse projection
+- DB = q, second hypotenuse projection
+- CD = h, altitude to the hypotenuse
+
+The primary relationship is:
+
+**c = p + q**
+
+Other useful relationships:
+
+a² = cp
+
+b² = cq
+
+h² = pq
+
+h = √(pq)
+
+a = √(cp)
+
+b = √(cq)
+
+a² + b² = c²
+
+h = ab/c
+
+Explain that these relationships apply to the correctly labeled right triangle.
+
+The two projections are positive lengths measured along the hypotenuse.
+
+They are not the perpendicular legs.
+
+The altitude divides the hypotenuse into two adjacent segments.
+
+Their sum equals the full hypotenuse.
+
+Do not confuse projections with arbitrary perpendicular distances.
+
+---
+
+## 6. REQUIRED ARTICLE STRUCTURE
+
+### H1: Right Triangle Hypotenuse From Projections Calculator
+
+**Suggested length: 100–130 words**
+
+Write a direct and helpful introduction.
+
+Explain:
+- What the calculator does
+- What projections p and q represent
+- What the hypotenuse is
+- Which values users must enter
+- The formula c = p + q
+
+Include a quick example:
+
+If p = 4 cm and q = 9 cm:
+
+c = 4 + 9 = 13 cm
+
+Explain that the hypotenuse is 13 cm.
+
+Keep the introduction concise.
+
+Do not begin with a generic statement about the importance of geometry.
+
+### H2: Calculate the Hypotenuse From Two Projections
+
+**Suggested length: 120–160 words**
+
+Place this section immediately beside the calculator.
+
+Explain the two input fields:
+
+Projection p — the first segment of the hypotenuse.
+
+Projection q — the second segment of the hypotenuse.
+
+Explain:
+- Measurement units
+- Positive input values
+- Calculate button
+- Reset button
+- Hypotenuse result
+
+Include the formula:
+
+c = p + q
+
+Explain that the result is the full length of the hypotenuse.
+
+Do not invent calculator capabilities.
+
+### H2: What Are Hypotenuse Projections in a Right Triangle?
+
+**Suggested length: 200–250 words**
+
+Explain the meaning of hypotenuse projections.
+
+Describe how the altitude from the right-angle vertex meets the hypotenuse.
+
+Explain that the point of intersection divides the hypotenuse into two smaller segments.
+
+Define:
+- First projection p
+- Second projection q
+- Complete hypotenuse c
+
+Explain why:
+
+p + q = c
+
+Clarify the difference between a projection and a triangle leg.
+
+Use a beginner-friendly numerical example.
+
+Include a labeled diagram.
+
+### H2: Understanding the Hypotenuse and Its Two Segments
+
+**Suggested length: 180–220 words**
+
+Explain:
+- What makes a side the hypotenuse
+- Why it lies opposite the right angle
+- Why it is the longest side of a nondegenerate right triangle
+- How the altitude divides it
+- Why the two segments lie along the same straight side
+
+Include a table:
+
+| Symbol | Meaning |
+|---|---|
+| a | First perpendicular leg |
+| b | Second perpendicular leg |
+| c | Complete hypotenuse |
+| p | First hypotenuse segment |
+| q | Second hypotenuse segment |
+| h | Altitude to the hypotenuse |
+
+Explain how the labels correspond to the main diagram.
+
+### H2: Right Triangle Hypotenuse From Projections Formula
+
+**Suggested length: 180–230 words**
+
+Introduce:
+
+c = p + q
+
+Explain every variable.
+
+Describe why the formula uses addition rather than multiplication or square roots.
+
+Explain the segment addition principle.
+
+Use:
+
+p = 7 cm
+
+q = 11 cm
+
+c = 7 + 11
+
+c = 18 cm
+
+Explain that both segments must be measured using compatible units.
+
+Clarify that the formula itself is simple, but understanding the geometry is important.
+
+### H2: How to Use the Hypotenuse From Projections Calculator
+
+**Suggested length: 170–210 words**
+
+Provide a numbered process.
+
+Step 1: Identify the right triangle.
+
+Step 2: Locate the hypotenuse.
+
+Step 3: Find the altitude's intersection with the hypotenuse.
+
+Step 4: Identify the two projections p and q.
+
+Step 5: Convert measurements into compatible units.
+
+Step 6: Enter p and q into the calculator.
+
+Step 7: Click Calculate Hypotenuse c.
+
+Step 8: Read the result.
+
+Step 9: Use Reset when starting another problem.
+
+Explain why correct identification of p and q matters.
+
+### H2: How to Calculate Hypotenuse From Projections Manually
+
+**Suggested length: 180–230 words**
+
+Demonstrate the calculation step by step.
+
+Use:
+
+p = 3.6 cm
+
+q = 6.4 cm
+
+Step 1:
+
+c = p + q
+
+Step 2:
+
+c = 3.6 + 6.4
+
+Step 3:
+
+c = 10 cm
+
+Explain that no Pythagorean calculation is necessary when both projections are already known.
+
+Explain how to verify the sum.
+
+### H2: Right Triangle Hypotenuse Projection Diagram Explained
+
+**Suggested length: 180–230 words**
+
+Create a mathematically accurate diagram.
+
+Draw triangle ABC with right angle at C.
+
+Draw CD perpendicular to AB.
+
+Label:
+- AC = a
+- BC = b
+- AB = c
+- AD = p
+- DB = q
+- CD = h
+
+Show the right-angle markers.
+
+Explain:
+- Why AB is the hypotenuse
+- Where p begins and ends
+- Where q begins and ends
+- How p and q form the full side
+- How the altitude divides the original triangle
+
+Include descriptive alt text and a caption.
+
+### H2: Why Does the Hypotenuse Equal the Sum of Its Projections?
+
+**Suggested length: 200–250 words**
+
+Explain the segment addition postulate.
+
+If point D lies between A and B:
+
+AB = AD + DB
+
+Substitute the variables:
+
+c = p + q
+
+Explain why this relationship is true.
+
+Clarify that the formula does not require advanced trigonometry.
+
+Explain that triangle similarity is useful for deriving other projection relationships, but simple segment addition is sufficient to establish c = p + q.
+
+Provide a visual explanation.
+
+### H2: Worked Examples of Hypotenuse From Projections
+
+**Suggested length: 450–550 words**
+
+Provide at least eight different examples.
+
+Each example must include:
+- Given values
+- Formula
+- Substitution
+- Calculation
+- Final answer
+- Brief explanation
+
+**Example 1: Whole Numbers**
+
+p = 4 cm
+
+q = 9 cm
+
+c = 13 cm
+
+**Example 2: Equal Projections**
+
+p = 5 cm
+
+q = 5 cm
+
+c = 10 cm
+
+Explain the connection to an isosceles right triangle.
+
+**Example 3: Decimal Projections**
+
+p = 3.6 m
+
+q = 6.4 m
+
+c = 10 m
+
+**Example 4: Unequal Projections**
+
+p = 2 cm
+
+q = 18 cm
+
+c = 20 cm
+
+**Example 5: Larger Measurements**
+
+p = 125 mm
+
+q = 275 mm
+
+c = 400 mm
+
+**Example 6: Different Units**
+
+p = 40 mm
+
+q = 9 cm
+
+Convert 40 mm to 4 cm.
+
+c = 13 cm
+
+**Example 7: Fractional Measurements**
+
+p = 1/2 ft
+
+q = 3/4 ft
+
+c = 5/4 ft = 1.25 ft
+
+**Example 8: Hypotenuse With an Unknown Projection**
+
+c = 25 cm
+
+p = 9 cm
+
+Find q.
+
+q = c − p
+
+q = 16 cm
+
+Clarify that this final example demonstrates the inverse relationship and is not the primary function of the current calculator.
+
+Avoid repeating identical commentary after every example.
+
+### H2: Relationship Between Hypotenuse Projections and Triangle Legs
+
+**Suggested length: 230–290 words**
+
+Explain the projection theorem.
+
+Use:
+
+a² = cp
+
+b² = cq
+
+Therefore:
+
+a = √(cp)
+
+b = √(cq)
+
+Explain how these formulas are derived from similar triangles.
+
+Use:
+
+p = 9 cm
+
+q = 16 cm
+
+First calculate:
+
+c = 25 cm
+
+Then:
+
+a = √(25 × 9) = 15 cm
+
+b = √(25 × 16) = 20 cm
+
+Explain how the hypotenuse result helps determine the remaining sides.
+
+Clarify that these calculations are educational extensions, not necessarily functions of the current calculator.
+
+### H2: How Hypotenuse Projections Relate to Altitude
+
+**Suggested length: 200–250 words**
+
+Explain:
+
+h² = pq
+
+Therefore:
+
+h = √(pq)
+
+Use:
+
+p = 9 cm
+
+q = 16 cm
+
+h = √144
+
+h = 12 cm
+
+Explain that the same projections can be used to calculate both the hypotenuse and altitude, but different formulas are required.
+
+Compare:
+
+c = p + q
+
+h = √(pq)
+
+Explain why the two results represent different measurements.
+
+Provide a contextual link to the altitude-from-projections calculator.
+
+### H2: Hypotenuse Projections and the Pythagorean Theorem
+
+**Suggested length: 220–280 words**
+
+Explain:
+
+a² + b² = c²
+
+From the projection theorem:
+
+a² = cp
+
+b² = cq
+
+Add the equations:
+
+a² + b² = cp + cq
+
+Factor c:
+
+a² + b² = c(p + q)
+
+Since:
+
+p + q = c
+
+Therefore:
+
+a² + b² = c²
+
+Explain how this demonstrates the consistency between the projection theorem and the Pythagorean theorem.
+
+Keep the proof easy to follow.
+
+### H2: How to Verify Your Hypotenuse Calculation
+
+**Suggested length: 200–250 words**
+
+Explain three checks.
+
+**Check 1: Segment Addition**
+
+Verify:
+
+c = p + q
+
+**Check 2: Triangle Legs**
+
+Calculate:
+
+a = √(cp)
+
+b = √(cq)
+
+Then verify:
+
+a² + b² = c²
+
+**Check 3: Diagram Reasonableness**
+
+Check that:
+- Both projections are positive.
+- Both segments lie along the same hypotenuse.
+- The total hypotenuse is longer than either individual segment.
+
+Use a numerical example.
+
+Explain that the first check is the direct calculation, while the second provides a related geometric consistency check.
+
+### H2: Special Cases and Important Properties
+
+**Suggested length: 220–280 words**
+
+Discuss:
+
+1. Equal projections.
+2. Unequal projections.
+3. Very small projection values.
+4. Very large projection values.
+5. Scaling both projections.
+6. Switching p and q.
+7. Zero-length projections.
+8. Negative projection values.
+
+Explain:
+
+If p = q, then:
+
+c = 2p
+
+If p and q are swapped:
+
+p + q = q + p
+
+Therefore, the hypotenuse remains unchanged.
+
+Explain why positive projection lengths are required for a nondegenerate right triangle.
+
+### H2: Hypotenuse From Projections vs. Hypotenuse From Legs
+
+**Suggested length: 180–230 words**
+
+Compare two formulas.
+
+From projections:
+
+c = p + q
+
+From perpendicular legs:
+
+c = √(a² + b²)
+
+Explain when to use each.
+
+Include a comparison table:
+
+| Known Values | Formula | Method |
+|---|---|---|
+| p and q | c = p + q | Segment addition |
+| a and b | c = √(a² + b²) | Pythagorean theorem |
+
+Explain that both formulas describe the same hypotenuse when the measurements belong to the same right triangle.
+
+Avoid turning this section into a complete article about the Pythagorean theorem.
+
+### H2: Common Mistakes When Calculating Hypotenuse From Projections
+
+**Suggested length: 250–320 words**
+
+Cover at least nine mistakes:
+
+1. Multiplying p and q instead of adding.
+2. Confusing projections with legs.
+3. Using the altitude as a projection.
+4. Mixing measurement units.
+5. Using negative segment lengths.
+6. Confusing the hypotenuse with a leg.
+7. Forgetting to include one segment.
+8. Using unrelated measurements.
+9. Applying the Pythagorean theorem directly to p and q.
+10. Confusing c = p + q with h = √(pq).
+
+For each mistake:
+- Explain the error.
+- Show the correct method.
+- Include a brief example when useful.
+
+Avoid repetitive explanations.
+
+### H2: Practical Applications of Hypotenuse Projection Calculations
+
+**Suggested length: 170–220 words**
+
+Explain realistic uses in:
+
+- Classroom geometry
+- Mathematics homework
+- Triangle similarity exercises
+- Technical drawings
+- Geometric construction
+- Surveying models
+- Architectural geometry
+- Engineering education
+
+Clarify that p and q must be adjacent parts of the same hypotenuse.
+
+Avoid implying that arbitrary distances can be added to obtain the hypotenuse of a real-world triangle.
+
+Use hypothetical examples with appropriate geometric assumptions.
+
+### H2: Practice Problems With Answers
+
+**Suggested length: 220–280 words**
+
+Provide six original practice problems.
+
+Include:
+- Basic whole-number calculation
+- Decimal values
+- Equal projections
+- Unit conversion
+- Missing projection
+- Multi-step problem involving the legs
+
+Provide complete solutions after the questions.
+
+Ensure all calculations are accurate.
+
+Avoid repeating the same values from the main examples.
+
+### H2: Frequently Asked Questions
+
+**Suggested length: 350–450 words**
+
+Include 10–12 useful FAQs.
+
+Suggested questions:
+
+1. What is the formula for hypotenuse from projections?
+2. What are hypotenuse projections?
+3. Why do we add p and q?
+4. Are projections the same as triangle legs?
+5. Can the projections have different lengths?
+6. What happens when p and q are equal?
+7. Can I calculate the altitude using p and q?
+8. Can I find the triangle legs from projections?
+9. Is the Pythagorean theorem necessary for this calculation?
+10. What if p and q have different units?
+11. Can a projection be longer than the hypotenuse?
+12. How can I verify the hypotenuse result?
+
+Keep each answer approximately 30–60 words.
+
+Avoid copying entire paragraphs from earlier sections.
+
+### H2: Related Right Triangle Calculators
+
+**Suggested length: 70–100 words**
+
+Provide contextual links to related tools.
+
+Help readers choose the next calculator based on their known measurements.
+
+Avoid generic promotional conclusions.
+
+---
+
+## 7. EDUCATIONAL DIAGRAM REQUIREMENTS
+
+Provide at least six accurate diagrams.
+
+### Diagram 1: Main Hypotenuse Projection Diagram
+
+Show triangle ABC with right angle C.
+
+Draw altitude CD to hypotenuse AB.
+
+Label p, q, c, a, b, and h.
+
+### Diagram 2: Segment Addition
+
+Show a straight segment AB divided at D.
+
+Label:
+
+AD = p
+
+DB = q
+
+AB = c
+
+Demonstrate:
+
+c = p + q
+
+### Diagram 3: Equal vs. Unequal Projections
+
+Compare two right triangles with the same hypotenuse length.
+
+Triangle 1:
+
+p = 5
+
+q = 5
+
+c = 10
+
+Triangle 2:
+
+p = 2
+
+q = 8
+
+c = 10
+
+Explain the difference in triangle shape.
+
+### Diagram 4: Hypotenuse and Altitude From Projections
+
+Use:
+
+p = 9
+
+q = 16
+
+c = 25
+
+h = 12
+
+Show both results on one correctly scaled triangle.
+
+### Diagram 5: Projection Theorem and Triangle Legs
+
+Use:
+
+p = 9
+
+q = 16
+
+c = 25
+
+a = 15
+
+b = 20
+
+Show the corresponding side-projection relationships.
+
+### Diagram 6: Similar Triangles
+
+Show the original right triangle and the two smaller triangles formed by its altitude.
+
+Identify corresponding angles and sides.
+
+Explain how similarity supports the projection theorem.
+
+**Diagram Rules:**
+
+For every diagram, provide:
+- Suggested placement
+- Exact labels
+- Geometric construction details
+- Alt text
+- Figure caption
+- Responsive SVG guidance
+
+Prefer SVG over decorative illustrations.
+
+Ensure all diagrams are mathematically accurate.
+
+Do not generate misleading triangle proportions.
+
+---
+
+## 8. INTERNAL LINKING STRATEGY
+
+Use verified internal links from RightTriangleSolver.com.
+
+Suggested pages:
+
+1. https://www.righttrianglesolver.com/right-triangle-projection-calculator/
+
+2. https://www.righttrianglesolver.com/right-triangle-projection-p-calculator/
+
+3. https://www.righttrianglesolver.com/right-triangle-projection-q-calculator/
+
+4. https://www.righttrianglesolver.com/right-triangle-altitude-from-projections-calculator/
+
+5. https://www.righttrianglesolver.com/right-triangle-side-calculator/
+
+6. https://www.righttrianglesolver.com/right-triangle-altitude-calculator/
+
+Verify every destination.
+
+Use approximately 4–7 relevant contextual internal links.
+
+Do not repeat the same anchor text unnecessarily.
+
+Do not link to the current page.
+
+Do not add links solely to meet a numerical target.
+
+---
+
+## 9. PREVENT KEYWORD CANNIBALIZATION
+
+This page must focus on:
+
+**Right Triangle Hypotenuse From Projections Calculator**
+
+Its main task is finding:
+
+c = p + q
+
+Do not turn the article into a duplicate of:
+
+- Right Triangle Projection Calculator
+- Right Triangle Projection p Calculator
+- Right Triangle Projection q Calculator
+- Right Triangle Altitude From Projections Calculator
+- Right Triangle Side Calculator
+
+Explain related formulas only as supporting educational information.
+
+Link to specialized calculators when readers need deeper explanations or different calculations.
+
+Keep the page's primary search intent clear.
+
+---
+
+## 10. HUMAN-FRIENDLY WRITING RULES
+
+Write naturally, as an experienced teacher would.
+
+Use:
+- Clear explanations
+- Short and medium-length sentences
+- Natural transitions
+- Varied examples
+- Logical paragraphs
+- Active voice where practical
+- Helpful mathematical reasoning
+
+Avoid:
+- Generic introductions
+- Keyword stuffing
+- Repetitive definitions
+- Unnecessary filler
+- Excessive bold text
+- Artificial transitions
+- Robotic sentence patterns
+- Promotional language
+
+Do not use phrases such as:
+
+- Unlock the secrets of geometry
+- Dive into the world of triangles
+- Revolutionary mathematical calculator
+- Game-changing solution
+- Seamlessly calculate
+- In today's fast-paced digital world
+- Effortlessly master mathematics
+
+Explain technical concepts before relying on them.
+
+Use tables only where they help readers compare information.
+
+Keep paragraphs generally between two and four sentences.
+
+Avoid long walls of text.
+
+---
+
+## 11. MATHEMATICAL ACCURACY REQUIREMENTS
+
+Verify all formulas and calculations.
+
+Maintain consistent notation:
+
+c = p + q
+
+a² = cp
+
+b² = cq
+
+h² = pq
+
+h = √(pq)
+
+a² + b² = c²
+
+Explain that all projections are positive lengths in a nondegenerate right triangle.
+
+Use consistent units.
+
+Distinguish exact results from approximations.
+
+Check square roots and decimal answers.
+
+Ensure every diagram corresponds to the numerical example.
+
+Do not confuse the altitude with the hypotenuse.
+
+Do not confuse projection segments with the legs.
+
+Do not claim that arbitrary positive p and q are the legs of a right triangle.
+
+Explain the correct geometric conditions.
+
+---
+
+## 12. SEO METADATA REQUIREMENTS
+
+Provide:
+
+**SEO Title**
+
+Approximately 50–60 characters where practical.
+
+Include the primary keyword naturally.
+
+**Meta Description**
+
+Approximately 145–160 characters.
+
+Explain that the calculator finds the hypotenuse by adding two projection segments.
+
+**Primary Focus Keyword**
+
+Right Triangle Hypotenuse From Projections Calculator
+
+**Secondary Keywords**
+
+Provide 8–12 natural variations.
+
+**URL Slug**
+
+Keep:
+
+right-triangle-hypotenuse-from-projections-calculator
+
+Do not recommend changing the existing live URL without a compelling technical reason.
+
+**Image SEO**
+
+Provide descriptive alt text for each diagram.
+
+Avoid keyword stuffing.
+
+---
+
+## 13. STRUCTURED DATA
+
+Recommend appropriate structured data based on the actual page.
+
+Consider:
+- WebPage
+- BreadcrumbList
+- WebApplication
+
+Use only factual properties.
+
+Do not invent:
+- Ratings
+- Reviews
+- Prices
+- User counts
+- Authors
+- Features
+
+Do not promise Google rich results.
+
+Keep schema code separate from the visible article.
+
+---
+
+## 14. FINAL QUALITY CONTROL
+
+Before delivering the article, verify:
+
+**Mathematical Accuracy**
+- Every formula is correct.
+- Every example is calculated correctly.
+- Unit conversions are accurate.
+- All diagrams use consistent labels.
+- The Pythagorean proof is valid.
+- The projection relationships are correct.
+
+**Content Quality**
+- The introduction is not duplicated.
+- Every section adds distinct value.
+- There is no keyword stuffing.
+- There are no repetitive definitions.
+- The explanations are useful to beginners.
+- The examples are varied.
+- The diagrams are educational.
+
+**SEO Quality**
+- The primary keyword appears naturally.
+- The article matches search intent.
+- Internal links are relevant.
+- The page is distinct from related calculators.
+- Metadata is descriptive.
+- Headings are logically structured.
+
+**User Experience**
+- The calculator remains near the top.
+- The formula is immediately visible.
+- Instructions are clear.
+- Diagrams are mobile-friendly.
+- Worked examples are easy to follow.
+- FAQs address real questions.
+
+Remove unnecessary material before submitting.
+
+---
+
+## 15. REQUIRED FINAL OUTPUT
+
+Deliver the completed work in five parts.
+
+**PART A: SEO Metadata**
+
+Provide:
+- SEO title
+- Meta description
+- Focus keyword
+- Secondary keywords
+- Existing URL slug
+
+**PART B: Complete Educational Article**
+
+Write 3,500–4,000 words, exceeding that range only when additional content is genuinely useful.
+
+Include:
+- One H1
+- Clear H2 and H3 headings
+- Mathematical formulas
+- Step-by-step calculations
+- Worked examples
+- Comparison tables
+- Natural internal links
+- Practice questions
+- FAQs
+
+**PART C: Educational Diagrams**
+
+Provide six accurate diagram specifications.
+
+Include:
+- Labels
+- Construction instructions
+- Captions
+- Alt text
+- Suggested placement
+- Responsive SVG guidance
+
+**PART D: Structured Data Recommendations**
+
+Provide suitable schema recommendations.
+
+Do not invent unsupported information.
+
+**PART E: Editorial Quality Report**
+
+Include:
+- Approximate article word count
+- Mathematical accuracy review
+- Readability review
+- Repetition review
+- Internal link review
+- Search intent coverage
+- Diagram accuracy review
+
+Do not insert the quality report into the published article.
+
+---
+
+## FINAL INSTRUCTION
+
+Write a comprehensive, genuinely helpful, original, mathematically accurate, and human-friendly educational guide for the Right Triangle Hypotenuse From Projections Calculator.
+
+The main purpose is to teach readers how to find the complete hypotenuse using the two projection segments.
+
+Explain the formula clearly.
+
+Use accurate geometric diagrams.
+
+Provide varied worked examples.
+
+Include meaningful mathematical relationships without losing focus on the main calculation.
+
+Avoid unnecessary repetition, keyword stuffing, generic filler, and artificial writing patterns.
+
+The final content must be useful to real students, understandable to beginners, and credible to mathematics educators.
+
+Every section must contribute educational value.
+
+Prioritize mathematical correctness, reader understanding, and practical usefulness over word count and SEO scoring metrics.

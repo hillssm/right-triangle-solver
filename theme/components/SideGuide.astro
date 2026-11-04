@@ -14,6 +14,12 @@ const rich = (s: string): string => {
     (_, l) =>
       `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
   );
+  // Keep a trailing period glued to inline math (prevents orphaned "." on mobile wraps)
+  out = out.replace(
+    /\[\[((?:(?!\[\[|\]\]).)+?)\]\]\./g,
+    (_, l) =>
+      `<span dir="ltr" class="math-nowrap"><span class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>.</span>`
+  );
   out = out.replace(
     /\[\[(.+?)\]\]/g,
     (_, l) =>
@@ -93,7 +99,7 @@ const imgSrc = (name: string): string => `/images/hub/${name}`;
 <!-- Section 4: Finding Hypotenuse -->
 <section id="side-hypotenuse" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>How to Find the Hypotenuse Using Two Legs</h2>
-  <p>Solving <span set:html={rich('[[a^2 + b^2 = c^2]]')} /> for c gives <span set:html={rich('[[c = \\sqrt{a^2 + b^2}]]')} />. The process: identify both legs, square each, add the squares, take the root, write the unit, and confirm the result exceeds both legs.</p>
+  <p>Solving <span set:html={rich('[[a^2 + b^2 = c^2]]')} /> for c gives <span set:html={rich('[[c = \\sqrt{a^2 + b^2}]].')} /> The process: identify both legs, square each, add the squares, take the root, write the unit, and confirm the result exceeds both legs.</p>
   
   <h3>Example 1: Finding the Hypotenuse of a 6-8 Right Triangle</h3>
   <p>Given legs a = 6 cm and b = 8 cm: square each (36 and 64), add (100), take the root (10). The hypotenuse is 10 cm, exceeding both legs as expected.</p>
@@ -113,14 +119,14 @@ const imgSrc = (name: string): string => `/images/hub/${name}`;
   <p>When you know the hypotenuse and one leg, rearrange the Pythagorean theorem to isolate the unknown leg. Starting from <span set:html={rich('[[a^2 + b^2 = c^2]]')} />, subtract the known leg squared from both sides. This gives two formulas, one for each leg.</p>
   
   <h3>Find Leg b When Hypotenuse c and Leg a Are Known</h3>
-  <p>The formula is <span set:html={rich('[[b = \\sqrt{c^2 - a^2}]]')} />. Derive it: begin with <span set:html={rich('[[a^2 + b^2 = c^2]]')} />, subtract a² from both sides to get <span set:html={rich('[[b^2 = c^2 - a^2]]')} />, then take the square root. The subtraction reflects that the hypotenuse squared contains both leg squares, so removing one leaves the other.</p>
+  <p>The formula is <span set:html={rich('[[b = \\sqrt{c^2 - a^2}]].')} /> Derive it: begin with <span set:html={rich('[[a^2 + b^2 = c^2]]')} />, subtract a² from both sides to get <span set:html={rich('[[b^2 = c^2 - a^2]]')} />, then take the square root. The subtraction reflects that the hypotenuse squared contains both leg squares, so removing one leaves the other.</p>
   
   <h3>Example 3: Find Leg b From a 13 cm Hypotenuse</h3>
   <p>Given c = 13 cm and a = 5 cm, find leg b. Square both: 13² = 169 and 5² = 25. Subtract: 169 − 25 = 144. Take the root: √144 = 12. Leg b measures 12 cm. Verify: 5² + 12² = 25 + 144 = 169 = 13². The triple 5-12-13 confirms the result.</p>
   <div class="not-prose my-4 rounded-xl border border-outline-variant/25 bg-surface-container-lowest/60 p-5" set:html={rich('[[[b = \\sqrt{13^2 - 5^2} = \\sqrt{169 - 25} = \\sqrt{144} = 12\\text{ cm}]]]')} />
   
   <h3>Find Leg a When Hypotenuse c and Leg b Are Known</h3>
-  <p>The formula is <span set:html={rich('[[a = \\sqrt{c^2 - b^2}]]')} />. The legs are interchangeable in the Pythagorean relationship; labeling one as a and the other as b is a convention. The calculator offers both modes so you can match the field labels to your specific problem without mentally swapping variables.</p>
+  <p>The formula is <span set:html={rich('[[a = \\sqrt{c^2 - b^2}]].')} /> The legs are interchangeable in the Pythagorean relationship; labeling one as a and the other as b is a convention. The calculator offers both modes so you can match the field labels to your specific problem without mentally swapping variables.</p>
   
   <h3>Example 4: Finding the Unknown Leg</h3>
   <p>Given c = 17 inches and b = 15 inches, find leg a. Square: 17² = 289 and 15² = 225. Subtract: 289 − 225 = 64. Take the root: √64 = 8. Leg a is 8 inches. This is the 8-15-17 triple. The two missing-leg modes differ only in which leg is known; the mathematics is identical.</p>
@@ -222,7 +228,7 @@ const imgSrc = (name: string): string => `/images/hub/${name}`;
   <h2>Real-Life Examples of Right Triangle Side Calculations</h2>
   
   <h3>Example 5: Ladder Against a Wall</h3>
-  <p>A ladder reaches 2.4 m vertically up a wall, with its base 1.8 m from the wall. The wall and ground form a right angle, creating a right triangle where the ladder is the hypotenuse. Known: a = 1.8 m (base), b = 2.4 m (height). Find: c (ladder length). Formula: <span set:html={rich('[[c = \\sqrt{a^2 + b^2}]]')} />. Substitute: c = √(1.8² + 2.4²) = √(3.24 + 5.76) = √9 = 3. The ladder measures 3 m. This tells you the ladder length needed to reach that height at that distance. Note: this geometry does not assess ladder safety; follow manufacturer guidelines and safety regulations for actual use.</p>
+  <p>A ladder reaches 2.4 m vertically up a wall, with its base 1.8 m from the wall. The wall and ground form a right angle, creating a right triangle where the ladder is the hypotenuse. Known: a = 1.8 m (base), b = 2.4 m (height). Find: c (ladder length). Formula: <span set:html={rich('[[c = \\sqrt{a^2 + b^2}]].')} /> Substitute: c = √(1.8² + 2.4²) = √(3.24 + 5.76) = √9 = 3. The ladder measures 3 m. This tells you the ladder length needed to reach that height at that distance. Note: this geometry does not assess ladder safety; follow manufacturer guidelines and safety regulations for actual use.</p>
   
   <h3>Example 6: Diagonal of a Rectangular Room</h3>
   <p>A room measures 9 ft long and 12 ft wide. The diagonal between opposite corners forms the hypotenuse of a right triangle with the walls as legs. Known: a = 9 ft, b = 12 ft. Find: c. Formula: c = √(9² + 12²) = √(81 + 144) = √225 = 15. The diagonal is 15 ft. This helps when checking if a room is square (both diagonals should match) or determining the longest straight-line distance for furniture placement.</p>
@@ -254,7 +260,7 @@ const imgSrc = (name: string): string => `/images/hub/${name}`;
 <!-- Section 9: Pythagorean Triples -->
 <section id="side-triples" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>Common Pythagorean Triples and Why They Matter</h2>
-  <p>A Pythagorean triple consists of three whole numbers that satisfy <span set:html={rich('[[a^2 + b^2 = c^2]]')} />. These triples provide quick mental checks; if your inputs match a triple, you know the answer without calculating. Scaled triples also work: multiplying 3-4-5 by 2 gives 6-8-10, which still satisfies the equation (36 + 64 = 100). Not every right triangle has whole-number sides; most produce decimals or irrational numbers.</p>
+  <p>A Pythagorean triple consists of three whole numbers that satisfy <span set:html={rich('[[a^2 + b^2 = c^2]].')} /> These triples provide quick mental checks; if your inputs match a triple, you know the answer without calculating. Scaled triples also work: multiplying 3-4-5 by 2 gives 6-8-10, which still satisfies the equation (36 + 64 = 100). Not every right triangle has whole-number sides; most produce decimals or irrational numbers.</p>
   <div class="not-prose overflow-x-auto my-6">
     <table class="w-full min-w-[400px] border-collapse text-sm">
       <thead>
@@ -316,7 +322,7 @@ const imgSrc = (name: string): string => `/images/hub/${name}`;
 <!-- Section 12: Verification -->
 <section id="side-verify" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>How to Check Whether Your Calculated Side Is Correct</h2>
-  <p><strong>Method 1: Substitute back.</strong> Plug all three sides into <span set:html={rich('[[a^2 + b^2 = c^2]]')} />. For the 6-8-10 triangle: 36 + 64 = 100. If both sides match, the answer is correct.</p>
+  <p><strong>Method 1: Substitute back.</strong> Plug all three sides into <span set:html={rich('[[a^2 + b^2 = c^2]].')} /> For the 6-8-10 triangle: 36 + 64 = 100. If both sides match, the answer is correct.</p>
   <p><strong>Method 2: Check the hypotenuse is longest.</strong> If you solved for c, confirm it exceeds both a and b. If you solved for a leg, confirm it is shorter than c.</p>
   <p><strong>Method 3: Compare with triples.</strong> If your inputs are whole numbers, see if they form a known triple. Inputs 9 and 12 giving 15 matches the scaled 3-4-5 triple.</p>
   <p><strong>Method 4: Estimate reasonableness.</strong> The hypotenuse should be longer than either leg but shorter than their sum. For legs 6 and 8, the hypotenuse 10 satisfies 8 &lt; 10 &lt; 14.</p>

@@ -17,6 +17,12 @@ const rich = (s: string): string => {
     (_, l) =>
       `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
   );
+  // Keep a trailing period glued to inline math (prevents orphaned "." on mobile wraps)
+  out = out.replace(
+    /\[\[((?:(?!\[\[|\]\]).)+?)\]\]\./g,
+    (_, l) =>
+      `<span dir="ltr" class="math-nowrap"><span class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>.</span>`
+  );
   out = out.replace(
     /\[\[(.+?)\]\]/g,
     (_, l) =>
@@ -67,16 +73,16 @@ const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
   <p>This guide uses one consistent notation throughout: <span set:html={rich('[[A]]')} /> and <span set:html={rich('[[B]]')} /> are the two acute angles, <span set:html={rich('[[C=90^\\circ]]')} /> is the right angle, side <span set:html={rich('[[a]]')} /> lies opposite angle <span set:html={rich('[[A]]')} />, side <span set:html={rich('[[b]]')} /> lies opposite angle <span set:html={rich('[[B]]')} />, side <span set:html={rich('[[c]]')} /> is the hypotenuse opposite angle <span set:html={rich('[[C]]')} />, <span set:html={rich('[[h]]')} /> is the perpendicular altitude from vertex <span set:html={rich('[[C]]')} /> to the hypotenuse meeting it at point <span set:html={rich('[[D]]')} />, <span set:html={rich('[[p]]')} /> and <span set:html={rich('[[q]]')} /> are the hypotenuse segments <span set:html={rich('[[AD]]')} /> and <span set:html={rich('[[DB]]')} />, and <span set:html={rich('[[K]]')} /> is the area.</p>
 
   <h3>What Is a Right Triangle?</h3>
-  <p>A right triangle contains exactly one 90-degree angle. Its two legs meet at the right angle, and the hypotenuse lies opposite it. The hypotenuse is always the longest side. The other two angles are acute, and because the three angles sum to 180 degrees, <span set:html={rich('[[A+B=90^\\circ]]')} />. These facts matter because the altitude method leans on them: the base must be the hypotenuse, and the height must drop from the right-angle vertex.</p>
+  <p>A right triangle contains exactly one 90-degree angle. Its two legs meet at the right angle, and the hypotenuse lies opposite it. The hypotenuse is always the longest side. The other two angles are acute, and because the three angles sum to 180 degrees, <span set:html={rich('[[A+B=90^\\circ]].')} /> These facts matter because the altitude method leans on them: the base must be the hypotenuse, and the height must drop from the right-angle vertex.</p>
 
   <h3>What Is the Hypotenuse?</h3>
   <p>The hypotenuse is the side opposite the right angle, labelled <span set:html={rich('[[c]]')} /> in the calculator. To identify it in any orientation, find the side that does not touch the square corner marker: that side is the hypotenuse. In the altitude formula it plays the role of the base, so recognizing it correctly is the first skill this page teaches.</p>
 
   <h3>What Is the Altitude?</h3>
-  <p>An altitude is a perpendicular segment from a triangle's vertex to the line containing the opposite side. Here the altitude <span set:html={rich('[[h]]')} /> runs from the right-angle vertex <span set:html={rich('[[C]]')} /> to the hypotenuse <span set:html={rich('[[AB]]')} /> and meets it at point <span set:html={rich('[[D]]')} />, so <span set:html={rich('[[CD\\perp AB]]')} />. It is a perpendicular distance, not simply any line drawn inside the triangle: only the segment that meets the hypotenuse at 90 degrees qualifies.</p>
+  <p>An altitude is a perpendicular segment from a triangle's vertex to the line containing the opposite side. Here the altitude <span set:html={rich('[[h]]')} /> runs from the right-angle vertex <span set:html={rich('[[C]]')} /> to the hypotenuse <span set:html={rich('[[AB]]')} /> and meets it at point <span set:html={rich('[[D]]')} />, so <span set:html={rich('[[CD\\perp AB]].')} /> It is a perpendicular distance, not simply any line drawn inside the triangle: only the segment that meets the hypotenuse at 90 degrees qualifies.</p>
 
   <h3>Is the Altitude the Same as a Leg?</h3>
-  <p>No. The legs <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[b]]')} /> meet at the original right angle, while the altitude is a separate segment from that same vertex to the opposite side. Take a 6-8-10 triangle: <span set:html={rich('[[a=6]]')} />, <span set:html={rich('[[b=8]]')} />, <span set:html={rich('[[c=10]]')} />. Its altitude is <span set:html={rich('[[h=(6\\times8)/10=4.8]]')} />. Neither leg measures 4.8, yet the altitude to the hypotenuse is exactly 4.8. Confusing a leg with the altitude is one of the most common errors on this page.</p>
+  <p>No. The legs <span set:html={rich('[[a]]')} /> and <span set:html={rich('[[b]]')} /> meet at the original right angle, while the altitude is a separate segment from that same vertex to the opposite side. Take a 6-8-10 triangle: <span set:html={rich('[[a=6]]')} />, <span set:html={rich('[[b=8]]')} />, <span set:html={rich('[[c=10]].')} /> Its altitude is <span set:html={rich('[[h=(6\\times8)/10=4.8]].')} /> Neither leg measures 4.8, yet the altitude to the hypotenuse is exactly 4.8. Confusing a leg with the altitude is one of the most common errors on this page.</p>
 
   <h3>Why the Altitude Falls Inside the Triangle</h3>
   <p>For a non-degenerate right triangle, the perpendicular from the right-angle vertex lands on the hypotenuse between its endpoints, never outside it. It splits the original triangle into two smaller right triangles. Those two triangles share the acute-angle measures of the original, which makes all three triangles similar to one another. That similarity is the reason the altitude satisfies such tidy relationships, explored in the geometric mean section below.</p>
@@ -93,10 +99,10 @@ const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
   <p>The altitude area formula is <span set:html={rich('[[[\\boxed{K=\\frac{ch}{2}}]]]')} />. Here <span set:html={rich('[[K]]')} /> is the area, <span set:html={rich('[[c]]')} /> is the hypotenuse serving as the base, and <span set:html={rich('[[h]]')} /> is the perpendicular altitude to the hypotenuse. Three symbols, one multiplication, one halving.</p>
 
   <h3>Why Do We Multiply the Hypotenuse by the Altitude?</h3>
-  <p>The general triangle area formula is <span set:html={rich('[[K=\\frac{\\text{base}\\times\\text{height}}{2}]]')} />, and the base and height must be perpendicular to each other. Choosing the hypotenuse as the base forces the height to be the perpendicular distance to it, which is exactly the altitude: <span set:html={rich('[[\\text{base}=c]]')} /> and <span set:html={rich('[[\\text{height}=h]]')} />, therefore <span set:html={rich('[[K=ch/2]]')} />. This holds however the triangle is rotated or drawn: perpendicularity is a geometric relationship, not a screen direction, so a slanted hypotenuse works as a base just as well as a horizontal one.</p>
+  <p>The general triangle area formula is <span set:html={rich('[[K=\\frac{\\text{base}\\times\\text{height}}{2}]]')} />, and the base and height must be perpendicular to each other. Choosing the hypotenuse as the base forces the height to be the perpendicular distance to it, which is exactly the altitude: <span set:html={rich('[[\\text{base}=c]]')} /> and <span set:html={rich('[[\\text{height}=h]]')} />, therefore <span set:html={rich('[[K=ch/2]].')} /> This holds however the triangle is rotated or drawn: perpendicularity is a geometric relationship, not a screen direction, so a slanted hypotenuse works as a base just as well as a horizontal one.</p>
 
   <h3>Why Is the Result Divided by Two?</h3>
-  <p>A triangle occupies half of the parallelogram built on the same base with the same perpendicular height. With <span set:html={rich('[[c=10]]')} /> and <span set:html={rich('[[h=4.8]]')} />, the product <span set:html={rich('[[c\\times h=48]]')} /> is the area of that parallelogram. The triangle is half of it, so <span set:html={rich('[[K=48/2=24]]')} />. Reporting 48 would answer a different question: the area of the full parallelogram, not the triangle inside it.</p>
+  <p>A triangle occupies half of the parallelogram built on the same base with the same perpendicular height. With <span set:html={rich('[[c=10]]')} /> and <span set:html={rich('[[h=4.8]]')} />, the product <span set:html={rich('[[c\\times h=48]]')} /> is the area of that parallelogram. The triangle is half of it, so <span set:html={rich('[[K=48/2=24]].')} /> Reporting 48 would answer a different question: the area of the full parallelogram, not the triangle inside it.</p>
 
   <h3>Does This Formula Work for Every Triangle?</h3>
   <p>The base-height rule works for every triangle, provided the height is perpendicular to the chosen base. What is special here is the choice of base: the hypotenuse of a right triangle, with the altitude dropped from the right-angle vertex. That choice brings extra geometric constraints, such as the altitude never exceeding half the hypotenuse, which do not apply to general triangles.</p>
@@ -115,14 +121,14 @@ const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
   <h2>Step-by-Step Example of Calculating Area From Altitude</h2>
   <p>One complete calculation, from measurements to verified answer, using <span set:html={rich('[[c=10\\text{ m}]]')} /> and <span set:html={rich('[[h=4.8\\text{ m}]]')} /></p>
   <ol>
-    <li><strong>Identify the given measurements.</strong> The hypotenuse is <span set:html={rich('[[c=10\\text{ m}]]')} /> and the perpendicular altitude to it is <span set:html={rich('[[h=4.8\\text{ m}]]')} />. Confirm the altitude meets the hypotenuse at a right angle.</li>
-    <li><strong>Write the formula.</strong> <span set:html={rich('[[K=ch/2]]')} />.</li>
-    <li><strong>Substitute the measurements.</strong> <span set:html={rich('[[K=(10\\times4.8)/2]]')} />.</li>
-    <li><strong>Multiply.</strong> <span set:html={rich('[[10\\times4.8=48]]')} />, so <span set:html={rich('[[K=48/2]]')} />.</li>
+    <li><strong>Identify the given measurements.</strong> The hypotenuse is <span set:html={rich('[[c=10\\text{ m}]]')} /> and the perpendicular altitude to it is <span set:html={rich('[[h=4.8\\text{ m}]].')} /> Confirm the altitude meets the hypotenuse at a right angle.</li>
+    <li><strong>Write the formula.</strong> <span set:html={rich('[[K=ch/2]].')} /></li>
+    <li><strong>Substitute the measurements.</strong> <span set:html={rich('[[K=(10\\times4.8)/2]].')} /></li>
+    <li><strong>Multiply.</strong> <span set:html={rich('[[10\\times4.8=48]]')} />, so <span set:html={rich('[[K=48/2]].')} /></li>
     <li><strong>Divide by two.</strong> <span set:html={rich('[[[\\boxed{K=24\\text{ m}^2}]]]')} />.</li>
     <li><strong>Interpret the answer.</strong> The triangle encloses 24 square metres of flat area.</li>
     <li><strong>Check feasibility.</strong> A valid right triangle needs <span set:html={rich('[[h\\leq c/2]]')} />; here <span set:html={rich('[[4.8\\leq5]]')} />, so the measurements can describe a real right triangle.</li>
-    <li><strong>Verify using the legs.</strong> A 6-8-10 triangle has the same hypotenuse and altitude, and <span set:html={rich('[[K=(6\\times8)/2=24]]')} />. Both routes agree.</li>
+    <li><strong>Verify using the legs.</strong> A 6-8-10 triangle has the same hypotenuse and altitude, and <span set:html={rich('[[K=(6\\times8)/2=24]].')} /> Both routes agree.</li>
   </ol>
 </section>
 
@@ -132,8 +138,8 @@ const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
   <p>The calculator on this page needs exactly two inputs. The walkthrough below follows the on-screen order, so a first-time user can go from a drawn or measured triangle to a verified area.</p>
   <ol>
     <li><strong>Identify the right triangle.</strong> Confirm one angle is 90 degrees; the method only applies to right triangles.</li>
-    <li><strong>Locate its hypotenuse <span set:html={rich('[[c]]')} />.</strong> It is the side opposite the right angle and the longest side.</li>
-    <li><strong>Identify the perpendicular altitude <span set:html={rich('[[h]]')} />.</strong> It runs from the right-angle vertex to the hypotenuse and meets it at 90 degrees.</li>
+    <li><strong>Locate its hypotenuse <span set:html={rich('[[c]].')} /></strong> It is the side opposite the right angle and the longest side.</li>
+    <li><strong>Identify the perpendicular altitude <span set:html={rich('[[h]].')} /></strong> It runs from the right-angle vertex to the hypotenuse and meets it at 90 degrees.</li>
     <li><strong>Measure or obtain both values.</strong> Measure directly, or compute the altitude first with <span set:html={rich('[[h=ab/c]]')} /> when the legs are known.</li>
     <li><strong>Enter the hypotenuse into the Hypotenuse c field.</strong></li>
     <li><strong>Enter the altitude into the Altitude h field.</strong></li>
@@ -155,16 +161,16 @@ const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
   <p>Four worked examples build the method from familiar triangles upward. Each one computes the altitude from the legs where needed, applies <span set:html={rich('[[K=ch/2]]')} />, and cross-checks against the legs formula.</p>
 
   <h3>Example 1: A 3-4-5 Right Triangle</h3>
-  <p>Given <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]]')} />. The altitude is <span set:html={rich('[[h=ab/c]]')} />, so <span set:html={rich('[[h=(3\\times4)/5=2.4]]')} />. The area is <span set:html={rich('[[K=(5\\times2.4)/2]]')} />, <span set:html={rich('[[[\\boxed{K=6\\text{ square units}}]]]')} />. Checking with the legs, <span set:html={rich('[[K=(3\\times4)/2=6]]')} />. Both formulas describe the same triangle, so they must agree, and they do.</p>
+  <p>Given <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]].')} /> The altitude is <span set:html={rich('[[h=ab/c]]')} />, so <span set:html={rich('[[h=(3\\times4)/5=2.4]].')} /> The area is <span set:html={rich('[[K=(5\\times2.4)/2]]')} />, <span set:html={rich('[[[\\boxed{K=6\\text{ square units}}]]]')} />. Checking with the legs, <span set:html={rich('[[K=(3\\times4)/2=6]].')} /> Both formulas describe the same triangle, so they must agree, and they do.</p>
 
   <h3>Example 2: A 5-12-13 Right Triangle</h3>
-  <p>Given <span set:html={rich('[[a=5]]')} />, <span set:html={rich('[[b=12]]')} />, <span set:html={rich('[[c=13]]')} />. The altitude is <span set:html={rich('[[h=(5\\times12)/13=60/13\\approx4.61538]]')} />. Keeping the exact fraction, <span set:html={rich('[[K=(13\\times(60/13))/2]]')} />, <span set:html={rich('[[[\\boxed{K=30\\text{ square units}}]]]')} />. Retaining <span set:html={rich('[[60/13]]')} /> instead of a rounded decimal avoids an early-rounding error: the 13 cancels exactly, leaving a clean 30.</p>
+  <p>Given <span set:html={rich('[[a=5]]')} />, <span set:html={rich('[[b=12]]')} />, <span set:html={rich('[[c=13]].')} /> The altitude is <span set:html={rich('[[h=(5\\times12)/13=60/13\\approx4.61538]].')} /> Keeping the exact fraction, <span set:html={rich('[[K=(13\\times(60/13))/2]]')} />, <span set:html={rich('[[[\\boxed{K=30\\text{ square units}}]]]')} />. Retaining <span set:html={rich('[[60/13]]')} /> instead of a rounded decimal avoids an early-rounding error: the 13 cancels exactly, leaving a clean 30.</p>
 
   <h3>Example 3: A 6-8-10 Right Triangle</h3>
   <p>Given <span set:html={rich('[[c=10]]')} /> and <span set:html={rich('[[h=4.8]]')} /> directly. Then <span set:html={rich('[[K=(10\\times4.8)/2]]')} />, <span set:html={rich('[[[\\boxed{K=24\\text{ square units}}]]]')} />. With legs 6 and 8, <span set:html={rich('[[K=(6\\times8)/2=24]]')} />, which confirms the altitude route.</p>
 
   <h3>Example 4: An Isosceles Right Triangle</h3>
-  <p>Given <span set:html={rich('[[c=10]]')} /> and <span set:html={rich('[[h=5]]')} />. Then <span set:html={rich('[[K=(10\\times5)/2]]')} />, <span set:html={rich('[[[\\boxed{K=25\\text{ square units}}]]]')} />. This is the largest area any right triangle with hypotenuse 10 can have. The altitude equals half the hypotenuse only when the legs are equal, making each acute angle <span set:html={rich('[[45^\\circ]]')} />, and no valid right triangle with this hypotenuse can exceed 25 square units.</p>
+  <p>Given <span set:html={rich('[[c=10]]')} /> and <span set:html={rich('[[h=5]].')} /> Then <span set:html={rich('[[K=(10\\times5)/2]]')} />, <span set:html={rich('[[[\\boxed{K=25\\text{ square units}}]]]')} />. This is the largest area any right triangle with hypotenuse 10 can have. The altitude equals half the hypotenuse only when the legs are equal, making each acute angle <span set:html={rich('[[45^\\circ]]')} />, and no valid right triangle with this hypotenuse can exceed 25 square units.</p>
 </section>
 
 <!-- Section 7: Practical applications -->
@@ -247,15 +253,15 @@ const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
 <!-- Section 8: Why both formulas agree -->
 <section id="sec-equal" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>Why Both Right Triangle Area Formulas Give the Same Answer</h2>
-  <p>A right triangle can be measured through its two perpendicular legs or through its hypotenuse and altitude. The legs formula is <span set:html={rich('[[K=ab/2]]')} /> and the altitude formula is <span set:html={rich('[[K=ch/2]]')} />. Since both describe the same triangle's area, <span set:html={rich('[[\\frac{ab}{2}=\\frac{ch}{2}]]')} />. Multiply both sides by two: <span set:html={rich('[[ab=ch]]')} />. Solve for <span set:html={rich('[[h]]')} />: <span set:html={rich('[[[\\boxed{h=\\frac{ab}{c}}]]]')} />. The altitude is the product of the legs divided by the hypotenuse, which is why the two formulas can never disagree on a consistent triangle.</p>
-  <p>Numerical verification: for <span set:html={rich('[[a=6]]')} />, <span set:html={rich('[[b=8]]')} />, <span set:html={rich('[[c=10]]')} />, the altitude is <span set:html={rich('[[h=(6\\times8)/10=4.8]]')} />. By legs: <span set:html={rich('[[K=(6\\times8)/2=24]]')} />. By altitude: <span set:html={rich('[[K=(10\\times4.8)/2=24]]')} />. The same triangle, the same area, two routes.</p>
+  <p>A right triangle can be measured through its two perpendicular legs or through its hypotenuse and altitude. The legs formula is <span set:html={rich('[[K=ab/2]]')} /> and the altitude formula is <span set:html={rich('[[K=ch/2]].')} /> Since both describe the same triangle's area, <span set:html={rich('[[\\frac{ab}{2}=\\frac{ch}{2}]].')} /> Multiply both sides by two: <span set:html={rich('[[ab=ch]].')} /> Solve for <span set:html={rich('[[h]]')} />: <span set:html={rich('[[[\\boxed{h=\\frac{ab}{c}}]]]')} />. The altitude is the product of the legs divided by the hypotenuse, which is why the two formulas can never disagree on a consistent triangle.</p>
+  <p>Numerical verification: for <span set:html={rich('[[a=6]]')} />, <span set:html={rich('[[b=8]]')} />, <span set:html={rich('[[c=10]]')} />, the altitude is <span set:html={rich('[[h=(6\\times8)/10=4.8]].')} /> By legs: <span set:html={rich('[[K=(6\\times8)/2=24]].')} /> By altitude: <span set:html={rich('[[K=(10\\times4.8)/2=24]].')} /> The same triangle, the same area, two routes.</p>
   <p>When only the hypotenuse and altitude are known, the area is already fixed: there is no need to reconstruct the legs first. The leg lengths can still be recovered from valid <span set:html={rich('[[c]]')} /> and <span set:html={rich('[[h]]')} /> through the segment relationships below, but that is a separate computation from finding the area. When the legs are the known data instead, the <a href="/right-triangle-area-from-legs-calculator/">Right Triangle Area From Legs Calculator</a> takes them directly.</p>
 </section>
 
 <!-- Section 9: Geometric mean -->
 <section id="sec-geomean" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>How the Altitude Divides a Right Triangle</h2>
-  <p>The altitude meets the hypotenuse at <span set:html={rich('[[D]]')} />, splitting it into the segments <span set:html={rich('[[AD=p]]')} /> and <span set:html={rich('[[DB=q]]')} />, so <span set:html={rich('[[p+q=c]]')} />. That split creates two smaller right triangles nested inside the original, and their proportions are remarkably tidy.</p>
+  <p>The altitude meets the hypotenuse at <span set:html={rich('[[D]]')} />, splitting it into the segments <span set:html={rich('[[AD=p]]')} /> and <span set:html={rich('[[DB=q]]')} />, so <span set:html={rich('[[p+q=c]].')} /> That split creates two smaller right triangles nested inside the original, and their proportions are remarkably tidy.</p>
 
   <h3>Two Smaller Similar Right Triangles</h3>
   <p>The altitude divides the original triangle into two smaller right triangles, each sharing one acute angle with the original and each containing a right angle. Sharing two angle measures makes all three triangles similar. Similarity is what forces the clean proportional relationships between the altitude, the segments, and the legs.</p>
@@ -264,7 +270,7 @@ const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
   <p>Similarity gives <span set:html={rich('[[[\\boxed{h^2=pq}]]]')} />, or equivalently <span set:html={rich('[[[\\boxed{h=\\sqrt{pq}}]]]')} />. The altitude is the geometric mean of the two hypotenuse segments: its square equals their product. Worked example: with <span set:html={rich('[[p=6.4]]')} /> and <span set:html={rich('[[q=3.6]]')} />, <span set:html={rich('[[c=p+q=10]]')} />, and <span set:html={rich('[[h=\\sqrt{6.4\\times3.6}=\\sqrt{23.04}]]')} />, <span set:html={rich('[[[\\boxed{h=4.8}]]]')} />. The area follows: <span set:html={rich('[[K=(10\\times4.8)/2]]')} />, <span set:html={rich('[[[\\boxed{K=24\\text{ square units}}]]]')} />. The segment theorem verifies an altitude measured or computed another way.</p>
 
   <h3>Relationship Between the Segments and Legs</h3>
-  <p>The same similarity yields <span set:html={rich('[[b^2=cp]]')} /> and <span set:html={rich('[[a^2=cq]]')} />. With <span set:html={rich('[[c=10]]')} />, <span set:html={rich('[[p=6.4]]')} />, <span set:html={rich('[[q=3.6]]')} />: <span set:html={rich('[[b=\\sqrt{10\\times6.4}=\\sqrt{64}=8]]')} /> and <span set:html={rich('[[a=\\sqrt{10\\times3.6}=\\sqrt{36}=6]]')} />. The original 6-8-10 triangle is recovered exactly, which shows how tightly the segments, the altitude, and the legs are bound together.</p>
+  <p>The same similarity yields <span set:html={rich('[[b^2=cp]]')} /> and <span set:html={rich('[[a^2=cq]].')} /> With <span set:html={rich('[[c=10]]')} />, <span set:html={rich('[[p=6.4]]')} />, <span set:html={rich('[[q=3.6]]')} />: <span set:html={rich('[[b=\\sqrt{10\\times6.4}=\\sqrt{64}=8]]')} /> and <span set:html={rich('[[a=\\sqrt{10\\times3.6}=\\sqrt{36}=6]].')} /> The original 6-8-10 triangle is recovered exactly, which shows how tightly the segments, the altitude, and the legs are bound together.</p>
 </section>
 
 <!-- Section 10: Maximum altitude -->
@@ -273,10 +279,10 @@ const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
   <p>Not every pair of positive numbers can be a hypotenuse and altitude. For a valid, non-degenerate right triangle, <span set:html={rich('[[[\\boxed{0<h\\leq\\frac{c}{2}}]]]')} />. The altitude must be positive and can never exceed half the hypotenuse.</p>
 
   <h3>Why the Altitude Cannot Exceed Half the Hypotenuse</h3>
-  <p>From <span set:html={rich('[[h^2=pq]]')} /> with <span set:html={rich('[[p+q=c]]')} />, the product <span set:html={rich('[[pq]]')} /> is largest when the two segments are equal, <span set:html={rich('[[p=q=c/2]]')} />. Therefore <span set:html={rich('[[h^2\\leq c^2/4]]')} />, and for positive lengths <span set:html={rich('[[h\\leq c/2]]')} />. In plain terms: the altitude is tallest when it splits the hypotenuse into two equal halves, and even then it reaches only half the hypotenuse.</p>
+  <p>From <span set:html={rich('[[h^2=pq]]')} /> with <span set:html={rich('[[p+q=c]]')} />, the product <span set:html={rich('[[pq]]')} /> is largest when the two segments are equal, <span set:html={rich('[[p=q=c/2]].')} /> Therefore <span set:html={rich('[[h^2\\leq c^2/4]]')} />, and for positive lengths <span set:html={rich('[[h\\leq c/2]].')} /> In plain terms: the altitude is tallest when it splits the hypotenuse into two equal halves, and even then it reaches only half the hypotenuse.</p>
 
   <h3>Maximum Area for a Fixed Hypotenuse</h3>
-  <p>Since <span set:html={rich('[[K=ch/2]]')} /> and <span set:html={rich('[[h\\leq c/2]]')} />, the largest possible area is <span set:html={rich('[[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]]')} />. This maximum belongs to the isosceles right triangle, where the two legs are equal. With <span set:html={rich('[[c=10]]')} />, the tallest valid altitude is <span set:html={rich('[[h_{\\max}=5]]')} />, giving <span set:html={rich('[[K_{\\max}=(10\\times5)/2=25]]')} />. An altitude of 6 with a hypotenuse of 10 is impossible for a right triangle.</p>
+  <p>Since <span set:html={rich('[[K=ch/2]]')} /> and <span set:html={rich('[[h\\leq c/2]]')} />, the largest possible area is <span set:html={rich('[[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]]')} />. This maximum belongs to the isosceles right triangle, where the two legs are equal. With <span set:html={rich('[[c=10]]')} />, the tallest valid altitude is <span set:html={rich('[[h_{\\max}=5]]')} />, giving <span set:html={rich('[[K_{\\max}=(10\\times5)/2=25]].')} /> An altitude of 6 with a hypotenuse of 10 is impossible for a right triangle.</p>
 
   <h3>What Happens If the Altitude Is Too Large?</h3>
   <p>Take <span set:html={rich('[[c=10]]')} /> and <span set:html={rich('[[h=6]]')} />: <span set:html={rich('[[6>5]]')} />, so no right triangle has these measurements. The arithmetic <span set:html={rich('[[(10\\times6)/2=30]]')} /> is a valid area for some triangle in a more general setting, but it does not make <span set:html={rich('[[c=10]]')} />, <span set:html={rich('[[h=6]]')} /> a valid right-triangle input. This page does not claim the calculator rejects such input automatically; the check is yours to run.</p>
@@ -310,10 +316,10 @@ const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
 <!-- Section 12: Units -->
 <section id="sec-units" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>Understanding Square Units in Right Triangle Area Calculations</h2>
-  <p>Area is two-dimensional. Multiplying two lengths multiplies their units too: <span set:html={rich('[[\\text{m}\\times\\text{m}=\\text{m}^2]]')} />. The area unit is always the square of the length unit.</p>
+  <p>Area is two-dimensional. Multiplying two lengths multiplies their units too: <span set:html={rich('[[\\text{m}\\times\\text{m}=\\text{m}^2]].')} /> The area unit is always the square of the length unit.</p>
 
   <h3>Square Metres</h3>
-  <p>With <span set:html={rich('[[c=10\\text{ m}]]')} /> and <span set:html={rich('[[h=4.8\\text{ m}]]')} />, <span set:html={rich('[[K=24\\text{ m}^2]]')} />. Read it as 24 square metres of surface.</p>
+  <p>With <span set:html={rich('[[c=10\\text{ m}]]')} /> and <span set:html={rich('[[h=4.8\\text{ m}]]')} />, <span set:html={rich('[[K=24\\text{ m}^2]].')} /> Read it as 24 square metres of surface.</p>
 
   <h3>Square Centimetres</h3>
   <p>With <span set:html={rich('[[c=25\\text{ cm}]]')} /> and <span set:html={rich('[[h=6.72\\text{ cm}]]')} />, <span set:html={rich('[[K=84\\text{ cm}^2]]')} /></p>
@@ -322,7 +328,7 @@ const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
   <p>With <span set:html={rich('[[c=250\\text{ mm}]]')} /> and <span set:html={rich('[[h=120\\text{ mm}]]')} />, <span set:html={rich('[[K=15000\\text{ mm}^2]]')} /></p>
 
   <h3>Converting Area Units</h3>
-  <p><span set:html={rich('[[1\\text{ m}^2=10000\\text{ cm}^2]]')} /> and <span set:html={rich('[[1\\text{ cm}^2=100\\text{ mm}^2]]')} />. A linear conversion multiplies by 10, 100, or 1000, but an area conversion squares that factor: 100 cm in a metre becomes <span set:html={rich('[[100^2=10000]]')} /> square centimetres in a square metre. Converting the length and converting the area are different operations.</p>
+  <p><span set:html={rich('[[1\\text{ m}^2=10000\\text{ cm}^2]]')} /> and <span set:html={rich('[[1\\text{ cm}^2=100\\text{ mm}^2]].')} /> A linear conversion multiplies by 10, 100, or 1000, but an area conversion squares that factor: 100 cm in a metre becomes <span set:html={rich('[[100^2=10000]]')} /> square centimetres in a square metre. Converting the length and converting the area are different operations.</p>
 
   <h3>What If the Inputs Use Different Units?</h3>
   <p>Convert first, calculate second. A hypotenuse in metres and an altitude in centimetres must be brought to one unit, for example 2 m and 150 cm become 2 m and 1.5 m, before the formula is applied. Mixed units in the formula produce a meaningless number with no clean unit.</p>
@@ -361,7 +367,7 @@ const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
   <p><span set:html={rich('[[c>0]]')} /> and <span set:html={rich('[[h>0]]')} /> are required; zero or negative inputs describe no triangle. Fix: measure again.</p>
 
   <h3>10. Entering an Altitude Greater Than Half the Hypotenuse</h3>
-  <p><span set:html={rich('[[c=10]]')} />, <span set:html={rich('[[h=6]]')} /> violates <span set:html={rich('[[h\\leq c/2]]')} />. Fix: recheck which segment was measured; it was not the perpendicular altitude.</p>
+  <p><span set:html={rich('[[c=10]]')} />, <span set:html={rich('[[h=6]]')} /> violates <span set:html={rich('[[h\\leq c/2]].')} /> Fix: recheck which segment was measured; it was not the perpendicular altitude.</p>
 
   <h3>11. Assuming Every Positive Pair Forms a Right Triangle</h3>
   <p>Positivity is not enough; the altitude limit must also hold. Fix: run the <span set:html={rich('[[h\\leq c/2]]')} /> check on every new pair.</p>
@@ -388,7 +394,7 @@ const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
   <p>The formula gives ideal geometric area. Real projects need waste, overlaps, and cutting allowances on top. Fix: add a project margin after the geometry is done.</p>
 
   <h3>Wrong Versus Correct: A Concrete Example</h3>
-  <p>Given <span set:html={rich('[[c=10]]')} /> and <span set:html={rich('[[h=4.8]]')} />, the incorrect calculation skips the halving: <span set:html={rich('[[K=10\\times4.8=48]]')} />. That is the area of the corresponding parallelogram. The correct calculation is <span set:html={rich('[[K=(10\\times4.8)/2]]')} />, <span set:html={rich('[[[\\boxed{K=24}]]]')} />. A second illustration: substituting leg 8 for the altitude gives <span set:html={rich('[[(10\\times8)/2=40]]')} />, wrong because 8 is not perpendicular to the hypotenuse. The altitude, and only the altitude, pairs with <span set:html={rich('[[c]]')} /></p>
+  <p>Given <span set:html={rich('[[c=10]]')} /> and <span set:html={rich('[[h=4.8]]')} />, the incorrect calculation skips the halving: <span set:html={rich('[[K=10\\times4.8=48]].')} /> That is the area of the corresponding parallelogram. The correct calculation is <span set:html={rich('[[K=(10\\times4.8)/2]]')} />, <span set:html={rich('[[[\\boxed{K=24}]]]')} />. A second illustration: substituting leg 8 for the altitude gives <span set:html={rich('[[(10\\times8)/2=40]]')} />, wrong because 8 is not perpendicular to the hypotenuse. The altitude, and only the altitude, pairs with <span set:html={rich('[[c]]')} /></p>
 </section>
 
 <!-- Section 14: Verification -->
@@ -397,10 +403,10 @@ const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
   <p>Seven checks catch the vast majority of bad results before they leave the page.</p>
 
   <h3>Check 1: Positive Inputs</h3>
-  <p>For a valid right triangle, <span set:html={rich('[[c>0]]')} /> and <span set:html={rich('[[h>0]]')} />. Zero or negative lengths describe no triangle.</p>
+  <p>For a valid right triangle, <span set:html={rich('[[c>0]]')} /> and <span set:html={rich('[[h>0]].')} /> Zero or negative lengths describe no triangle.</p>
 
   <h3>Check 2: The Altitude Limit</h3>
-  <p>Confirm <span set:html={rich('[[h\\leq c/2]]')} />. This single inequality rules out the most common impossible input, such as <span set:html={rich('[[c=10]]')} /> with <span set:html={rich('[[h=6]]')} /></p>
+  <p>Confirm <span set:html={rich('[[h\\leq c/2]].')} /> This single inequality rules out the most common impossible input, such as <span set:html={rich('[[c=10]]')} /> with <span set:html={rich('[[h=6]]')} /></p>
 
   <h3>Check 3: Confirm the Right Angle</h3>
   <p>The altitude must be perpendicular to the hypotenuse. If the drawing or measurement cannot confirm the 90-degree meeting, the input is not an altitude.</p>
@@ -409,13 +415,13 @@ const imgSrc = (name: string): string => `/images/area-from-altitude/${name}`;
   <p>Metre inputs give square metres, centimetre inputs give square centimetres. The answer's unit is the square of the input unit, never the input unit itself.</p>
 
   <h3>Check 5: Cross-Check With the Legs Formula</h3>
-  <p>For the 6-8-10 triangle, <span set:html={rich('[[(6\\times8)/2=24]]')} /> and <span set:html={rich('[[(10\\times4.8)/2=24]]')} />. Two methods, one triangle, one answer: agreement is the strongest verification available.</p>
+  <p>For the 6-8-10 triangle, <span set:html={rich('[[(6\\times8)/2=24]]')} /> and <span set:html={rich('[[(10\\times4.8)/2=24]].')} /> Two methods, one triangle, one answer: agreement is the strongest verification available.</p>
 
   <h3>Check 6: The Geometric Mean Relationship</h3>
-  <p>When the hypotenuse segments are known, verify <span set:html={rich('[[h^2=pq]]')} />: <span set:html={rich('[[4.8^2=6.4\\times3.6]]')} />, <span set:html={rich('[[23.04=23.04]]')} />. A mismatch means the altitude, the segments, or the triangle identification is wrong.</p>
+  <p>When the hypotenuse segments are known, verify <span set:html={rich('[[h^2=pq]]')} />: <span set:html={rich('[[4.8^2=6.4\\times3.6]]')} />, <span set:html={rich('[[23.04=23.04]].')} /> A mismatch means the altitude, the segments, or the triangle identification is wrong.</p>
 
   <h3>Check 7: Compare Against the Maximum Possible Area</h3>
-  <p>For a fixed hypotenuse, <span set:html={rich('[[K\\leq c^2/4]]')} />. With <span set:html={rich('[[c=10]]')} />, any claimed right-triangle area above 25 square units is impossible. This page makes no claim about the calculator's own validation behaviour; the check is yours to run.</p>
+  <p>For a fixed hypotenuse, <span set:html={rich('[[K\\leq c^2/4]].')} /> With <span set:html={rich('[[c=10]]')} />, any claimed right-triangle area above 25 square units is impossible. This page makes no claim about the calculator's own validation behaviour; the check is yours to run.</p>
 </section>
 
 <!-- Section 15: Method comparison -->

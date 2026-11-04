@@ -19,6 +19,12 @@ const rich = (s: string): string => {
     (_, l) =>
       `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
   );
+  // Keep a trailing period glued to inline math (prevents orphaned "." on mobile wraps)
+  out = out.replace(
+    /\[\[((?:(?!\[\[|\]\]).)+?)\]\]\./g,
+    (_, l) =>
+      `<span dir="ltr" class="math-nowrap"><span class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>.</span>`
+  );
   out = out.replace(
     /\[\[(.+?)\]\]/g,
     (_, l) =>
@@ -106,7 +112,7 @@ const faqs = [
 <!-- SECTION 1: Introduction -->
 <section id="sec-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>What Is a Tangent Ratio Calculator?</h2>
-  <p>A tangent ratio calculator answers one question: for an acute angle in a right triangle, how does the side across from the angle compare with the side next to it? Enter the opposite side and the adjacent side, and the tool divides the opposite side by the adjacent side, returning <span set:html={rich('[[\\tan(A)=a/b]]')} />. A right triangle has an opposite side of 3 cm and an adjacent side of 4 cm, so <span set:html={rich('[[\\tan(A)=3/4=0.75]]')} />. That 0.75 is the tangent ratio: it tells you the opposite side is 75 percent as long as the adjacent side. It is not an angle, so never read it as <span set:html={rich('[[0.75^\\circ]]')} />. The hypotenuse never enters this calculation; the opposite side and the adjacent side are sufficient on their own. Tangent is one of the fundamental trigonometric ratios, and its particular strength is comparing vertical rise with horizontal run, which is why it appears in roof pitch, road grades, and ramp slopes. The result is a dimensionless number: a pure comparison of two lengths, not a measurement in centimetres or degrees. If the angle in degrees is what you need, inverse tangent converts the ratio into degrees.</p>
+  <p>A tangent ratio calculator answers one question: for an acute angle in a right triangle, how does the side across from the angle compare with the side next to it? Enter the opposite side and the adjacent side, and the tool divides the opposite side by the adjacent side, returning <span set:html={rich('[[\\tan(A)=a/b]].')} /> A right triangle has an opposite side of 3 cm and an adjacent side of 4 cm, so <span set:html={rich('[[\\tan(A)=3/4=0.75]].')} /> That 0.75 is the tangent ratio: it tells you the opposite side is 75 percent as long as the adjacent side. It is not an angle, so never read it as <span set:html={rich('[[0.75^\\circ]].')} /> The hypotenuse never enters this calculation; the opposite side and the adjacent side are sufficient on their own. Tangent is one of the fundamental trigonometric ratios, and its particular strength is comparing vertical rise with horizontal run, which is why it appears in roof pitch, road grades, and ramp slopes. The result is a dimensionless number: a pure comparison of two lengths, not a measurement in centimetres or degrees. If the angle in degrees is what you need, inverse tangent converts the ratio into degrees.</p>
 </section>
 
 <!-- SECTION 2: Understanding the right triangle -->
@@ -202,7 +208,7 @@ const faqs = [
   <p><strong>Step 2:</strong> Substitute the known values. <span set:html={rich('[[\\tan(A)=3/4]]')} /></p>
   <p><strong>Step 3:</strong> Divide. <span set:html={rich('[[\\boxed{\\tan(A)=0.75}]]')} /></p>
   <p><strong>Step 4:</strong> Interpret the result. The opposite side is 75 percent as long as the adjacent side.</p>
-  <p><strong>Step 5:</strong> Verify the triangle. <span set:html={rich('[[3^2+4^2=5^2]]')} />, which is <span set:html={rich('[[9+16=25]]')} />. The side lengths are consistent with a genuine right triangle.</p>
+  <p><strong>Step 5:</strong> Verify the triangle. <span set:html={rich('[[3^2+4^2=5^2]]')} />, which is <span set:html={rich('[[9+16=25]].')} /> The side lengths are consistent with a genuine right triangle.</p>
 
   <h3>Find the Angle From the Ratio</h3>
   <p>If the angle itself is required, apply inverse tangent to the ratio:</p>
@@ -216,8 +222,8 @@ const faqs = [
   <h2>How to Use the Tangent Ratio Calculator</h2>
   <p>The walkthrough below matches the live interface on this page. Each step matters, because a tangent result is only as trustworthy as the two measurements behind it.</p>
   <ol class="mt-4 list-decimal space-y-3 pl-6">
-    <li><strong>Identify the reference angle <span set:html={rich('[[A]]')} />.</strong> Tangent always works from one acute angle; naming it first fixes which side is opposite and which is adjacent.</li>
-    <li><strong>Locate the opposite side <span set:html={rich('[[a]]')} />, directly across from angle <span set:html={rich('[[A]]')} />.</strong> This is the side that never touches the angle's vertex.</li>
+    <li><strong>Identify the reference angle <span set:html={rich('[[A]].')} /></strong> Tangent always works from one acute angle; naming it first fixes which side is opposite and which is adjacent.</li>
+    <li><strong>Locate the opposite side <span set:html={rich('[[a]]')} />, directly across from angle <span set:html={rich('[[A]].')} /></strong> This is the side that never touches the angle's vertex.</li>
     <li><strong>Locate the adjacent side <span set:html={rich('[[b]]')} />, which touches angle <span set:html={rich('[[A]]')} /> and is not the hypotenuse.</strong> Double-check that you have not grabbed the slanted side by mistake.</li>
     <li><strong>Obtain or measure both side lengths.</strong> A tape measure, a scale drawing, or a known specification all work, as long as the numbers describe the same triangle.</li>
     <li><strong>Enter the opposite-side length in the first input field.</strong> This is the numerator of the fraction.</li>
@@ -273,61 +279,61 @@ const faqs = [
   <p>A simplified ramp rises 0.6 m over a horizontal run of 8 m. The vertical rise is the opposite side, <span set:html={rich('[[a=0.6\\,\\text{m}]]')} />, and the horizontal run is the adjacent side, <span set:html={rich('[[b=8\\,\\text{m}]]')} />:</p>
   <p><span set:html={rich('[[\\tan(A)=\\frac{0.6}{8}]]')} /></p>
   <p><span set:html={rich('[[\\boxed{\\tan(A)=0.075}]]')} /></p>
-  <p>The percentage grade is <span set:html={rich('[[0.075 \\times 100\\%=7.5\\%]]')} />, and the angle is <span set:html={rich('[[A=\\tan^{-1}(0.075)\\approx4.29^\\circ]]')} />. The ramp rises 7.5 units vertically for every 100 units horizontally. The calculation does not establish accessibility or building-code compliance.</p>
+  <p>The percentage grade is <span set:html={rich('[[0.075 \\times 100\\%=7.5\\%]]')} />, and the angle is <span set:html={rich('[[A=\\tan^{-1}(0.075)\\approx4.29^\\circ]].')} /> The ramp rises 7.5 units vertically for every 100 units horizontally. The calculation does not establish accessibility or building-code compliance.</p>
 
   <h3>Example 6: Calculating Roof Pitch</h3>
   <p>A roof rises 3 m over a horizontal run of 4 m. The vertical rise is the opposite side, <span set:html={rich('[[a=3\\,\\text{m}]]')} />, and the horizontal run is the adjacent side, <span set:html={rich('[[b=4\\,\\text{m}]]')} />:</p>
   <p><span set:html={rich('[[\\tan(A)=\\frac{3}{4}]]')} /></p>
   <p><span set:html={rich('[[\\boxed{\\tan(A)=0.75}]]')} /></p>
-  <p>The roof rises 0.75 units for each horizontal unit, a 75 percent slope, and the pitch angle is <span set:html={rich('[[A=\\tan^{-1}(0.75)\\approx36.87^\\circ]]')} />. Roof pitch is also expressed as rise over run in traditional units, such as inches of rise per 12 inches of run, which is the same ratio in different clothing. This ratio does not constitute a complete roof-design assessment.</p>
+  <p>The roof rises 0.75 units for each horizontal unit, a 75 percent slope, and the pitch angle is <span set:html={rich('[[A=\\tan^{-1}(0.75)\\approx36.87^\\circ]].')} /> Roof pitch is also expressed as rise over run in traditional units, such as inches of rise per 12 inches of run, which is the same ratio in different clothing. This ratio does not constitute a complete roof-design assessment.</p>
 
   <h3>Example 7: Finding the Angle of a Ladder</h3>
   <p>A ladder reaches 4 m up a wall, and its base is 3 m horizontally from the wall. The angle <span set:html={rich('[[A]]')} /> is between the ladder and the ground. The vertical height is the opposite side, <span set:html={rich('[[a=4\\,\\text{m}]]')} />, and the ground distance is the adjacent side, <span set:html={rich('[[b=3\\,\\text{m}]]')} />:</p>
   <p><span set:html={rich('[[\\tan(A)=\\frac{4}{3}]]')} /></p>
   <p><span set:html={rich('[[\\boxed{\\tan(A)\\approx1.3333}]]')} /></p>
-  <p>The angle is <span set:html={rich('[[A=\\tan^{-1}(4/3)\\approx53.13^\\circ]]')} />. The vertical height is greater than the horizontal distance, which is why the ratio exceeds 1. The example explains geometry and does not establish whether the ladder is safely positioned.</p>
+  <p>The angle is <span set:html={rich('[[A=\\tan^{-1}(4/3)\\approx53.13^\\circ]].')} /> The vertical height is greater than the horizontal distance, which is why the ratio exceeds 1. The example explains geometry and does not establish whether the ladder is safely positioned.</p>
 
   <h3>Example 8: Estimating the Angle of Elevation to a Tree</h3>
   <p>A tree is 12 m tall, and its shadow is 9 m long on level ground. Assume the sun's rays create a simplified right-triangle model. The tree height is the opposite side, <span set:html={rich('[[a=12\\,\\text{m}]]')} />, and the shadow length is the adjacent side, <span set:html={rich('[[b=9\\,\\text{m}]]')} />:</p>
   <p><span set:html={rich('[[\\tan(A)=\\frac{12}{9}]]')} /></p>
   <p><span set:html={rich('[[\\boxed{\\tan(A)\\approx1.3333}]]')} /></p>
-  <p>The height is approximately 1.3333 times the shadow length, and the corresponding geometric angle is about <span set:html={rich('[[53.13^\\circ]]')} />. The example assumes level ground, a vertical tree, and a straight-line shadow model.</p>
+  <p>The height is approximately 1.3333 times the shadow length, and the corresponding geometric angle is about <span set:html={rich('[[53.13^\\circ]].')} /> The example assumes level ground, a vertical tree, and a straight-line shadow model.</p>
 
   <h3>Example 9: Surveying an Elevation Difference</h3>
   <p>A surveying measurement shows a vertical elevation difference of 15 m over a horizontal distance of 20 m. The elevation difference is the opposite side, <span set:html={rich('[[a=15\\,\\text{m}]]')} />, and the horizontal distance is the adjacent side, <span set:html={rich('[[b=20\\,\\text{m}]]')} />:</p>
   <p><span set:html={rich('[[\\tan(A)=\\frac{15}{20}]]')} /></p>
   <p><span set:html={rich('[[\\boxed{\\tan(A)=0.75}]]')} /></p>
-  <p>The elevation difference is 0.75 times the horizontal separation, and the corresponding angle is about <span set:html={rich('[[36.87^\\circ]]')} />. Actual surveying can require instrument-height adjustments, corrections, and additional measurements beyond this simplified model.</p>
+  <p>The elevation difference is 0.75 times the horizontal separation, and the corresponding angle is about <span set:html={rich('[[36.87^\\circ]].')} /> Actual surveying can require instrument-height adjustments, corrections, and additional measurements beyond this simplified model.</p>
 
   <h3>Example 10: Calculating a Road's Percentage Grade</h3>
   <p>A simplified road section rises 1.2 m over a horizontal distance of 24 m. The vertical rise is the opposite side, <span set:html={rich('[[a=1.2\\,\\text{m}]]')} />, and the horizontal run is the adjacent side, <span set:html={rich('[[b=24\\,\\text{m}]]')} />:</p>
   <p><span set:html={rich('[[\\tan(A)=\\frac{1.2}{24}]]')} /></p>
   <p><span set:html={rich('[[\\boxed{\\tan(A)=0.05}]]')} /></p>
-  <p>The percentage grade is <span set:html={rich('[[0.05 \\times 100\\%=5\\%]]')} />, and the angle is <span set:html={rich('[[A=\\tan^{-1}(0.05)\\approx2.86^\\circ]]')} />. A 5 percent grade does not mean a 5-degree angle; this distinction is a common source of confusion, and the two numbers should never be used interchangeably.</p>
+  <p>The percentage grade is <span set:html={rich('[[0.05 \\times 100\\%=5\\%]]')} />, and the angle is <span set:html={rich('[[A=\\tan^{-1}(0.05)\\approx2.86^\\circ]].')} /> A 5 percent grade does not mean a 5-degree angle; this distinction is a common source of confusion, and the two numbers should never be used interchangeably.</p>
 
   <h3>Example 11: Calculating a Staircase's Steepness</h3>
   <p>A simplified staircase has a total vertical rise of 2.4 m and a horizontal run of 3.2 m. The vertical rise is the opposite side, <span set:html={rich('[[a=2.4\\,\\text{m}]]')} />, and the horizontal run is the adjacent side, <span set:html={rich('[[b=3.2\\,\\text{m}]]')} />:</p>
   <p><span set:html={rich('[[\\tan(A)=\\frac{2.4}{3.2}]]')} /></p>
   <p><span set:html={rich('[[\\boxed{\\tan(A)=0.75}]]')} /></p>
-  <p>The vertical rise is 75 percent of the horizontal run, and the angle is about <span set:html={rich('[[36.87^\\circ]]')} />. The calculation does not verify stair dimensions, comfort, or building-code compliance.</p>
+  <p>The vertical rise is 75 percent of the horizontal run, and the angle is about <span set:html={rich('[[36.87^\\circ]].')} /> The calculation does not verify stair dimensions, comfort, or building-code compliance.</p>
 
   <h3>Example 12: Understanding a Guy Wire's Angle</h3>
   <p>A guy wire attaches to a pole 12 m above the ground, while its ground anchor is 5 m horizontally from the pole. The attachment height is the opposite side, <span set:html={rich('[[a=12\\,\\text{m}]]')} />, and the ground distance is the adjacent side, <span set:html={rich('[[b=5\\,\\text{m}]]')} />:</p>
   <p><span set:html={rich('[[\\tan(A)=\\frac{12}{5}]]')} /></p>
   <p><span set:html={rich('[[\\boxed{\\tan(A)=2.4}]]')} /></p>
-  <p>The angle is <span set:html={rich('[[A=\\tan^{-1}(2.4)\\approx67.38^\\circ]]')} />. The vertical height is 2.4 times the horizontal anchor distance, a steep wire by any measure. The tangent ratio does not determine wire tension, anchor strength, or structural safety.</p>
+  <p>The angle is <span set:html={rich('[[A=\\tan^{-1}(2.4)\\approx67.38^\\circ]].')} /> The vertical height is 2.4 times the horizontal anchor distance, a steep wire by any measure. The tangent ratio does not determine wire tension, anchor strength, or structural safety.</p>
 
   <h3>Example 13: Calculating a Crane Boom's Direction</h3>
   <p>A simplified crane boom has a vertical component of 8 m and a horizontal projection of 6 m. The vertical component is the opposite side, <span set:html={rich('[[a=8\\,\\text{m}]]')} />, and the horizontal projection is the adjacent side, <span set:html={rich('[[b=6\\,\\text{m}]]')} />:</p>
   <p><span set:html={rich('[[\\tan(A)=\\frac{8}{6}]]')} /></p>
   <p><span set:html={rich('[[\\boxed{\\tan(A)\\approx1.3333}]]')} /></p>
-  <p>The corresponding angle is about <span set:html={rich('[[53.13^\\circ]]')} />. The vertical component is approximately 1.3333 times the horizontal projection. This is a simplified geometric example and does not establish crane capacity or operating safety.</p>
+  <p>The corresponding angle is about <span set:html={rich('[[53.13^\\circ]].')} /> The vertical component is approximately 1.3333 times the horizontal projection. This is a simplified geometric example and does not establish crane capacity or operating safety.</p>
 
   <h3>Example 14: Estimating a Hiking Trail's Gradient</h3>
   <p>A simplified straight hiking section has a vertical elevation gain of 120 m and a horizontal distance of 800 m. The elevation gain is the opposite side, <span set:html={rich('[[a=120\\,\\text{m}]]')} />, and the horizontal distance is the adjacent side, <span set:html={rich('[[b=800\\,\\text{m}]]')} />:</p>
   <p><span set:html={rich('[[\\tan(A)=\\frac{120}{800}]]')} /></p>
   <p><span set:html={rich('[[\\boxed{\\tan(A)=0.15}]]')} /></p>
-  <p>The percentage grade is 15 percent, and the corresponding angle is about <span set:html={rich('[[8.53^\\circ]]')} />. This simplified model represents a constant straight-line gradient, not an entire winding hiking trail.</p>
+  <p>The percentage grade is 15 percent, and the corresponding angle is about <span set:html={rich('[[8.53^\\circ]].')} /> This simplified model represents a constant straight-line gradient, not an entire winding hiking trail.</p>
 
   <h3>Example 15: Evaluating a Mechanical Brace</h3>
   <p>A diagonal mechanical brace has a vertical component of 1.5 m and a horizontal component of 2 m. The vertical component is the opposite side, <span set:html={rich('[[a=1.5\\,\\text{m}]]')} />, and the horizontal component is the adjacent side, <span set:html={rich('[[b=2\\,\\text{m}]]')} />:</p>
@@ -382,7 +388,7 @@ const faqs = [
 <!-- SECTION 8: Angle relationship -->
 <section id="sec-angle" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>Understanding the Relationship Between Tangent and Angle Size</h2>
-  <p>Tangent increases as the reference angle increases, and the geometry explains why. When angle <span set:html={rich('[[A]]')} /> is small, the opposite side is short relative to the adjacent side, so the ratio sits near 0. As the angle widens, the opposite side becomes a longer share of the adjacent side, and the ratio climbs: past 1 at <span set:html={rich('[[45^\\circ]]')} />, then without bound as the angle approaches <span set:html={rich('[[90^\\circ]]')} />. The table below uses illustrative side lengths; the ratio, not the absolute size of the triangle, determines the angle.</p>
+  <p>Tangent increases as the reference angle increases, and the geometry explains why. When angle <span set:html={rich('[[A]]')} /> is small, the opposite side is short relative to the adjacent side, so the ratio sits near 0. As the angle widens, the opposite side becomes a longer share of the adjacent side, and the ratio climbs: past 1 at <span set:html={rich('[[45^\\circ]]')} />, then without bound as the angle approaches <span set:html={rich('[[90^\\circ]].')} /> The table below uses illustrative side lengths; the ratio, not the absolute size of the triangle, determines the angle.</p>
   <div class="not-prose my-6 overflow-x-auto">
     <table class="w-full min-w-[480px] border-collapse text-left text-sm">
       <thead>
@@ -401,7 +407,7 @@ const faqs = [
       </tbody>
     </table>
   </div>
-  <p>The pattern is simple: tangent is small when the opposite side is short relative to the adjacent side, equals 1 at <span set:html={rich('[[45^\\circ]]')} />, exceeds 1 for larger acute angles, approaches zero as the angle approaches <span set:html={rich('[[0^\\circ]]')} />, and grows without bound as the angle approaches <span set:html={rich('[[90^\\circ]]')} />. Triangles with the same angle have the same tangent ratio even when their side lengths differ, because the ratio captures shape, not size.</p>
+  <p>The pattern is simple: tangent is small when the opposite side is short relative to the adjacent side, equals 1 at <span set:html={rich('[[45^\\circ]]')} />, exceeds 1 for larger acute angles, approaches zero as the angle approaches <span set:html={rich('[[0^\\circ]]')} />, and grows without bound as the angle approaches <span set:html={rich('[[90^\\circ]].')} /> Triangles with the same angle have the same tangent ratio even when their side lengths differ, because the ratio captures shape, not size.</p>
 
   <figure class="not-prose my-6">
     <img src={imgSrc('tangent-angle-change.svg')} alt="Three triangles at 30, 45, 60 degrees with tangent values 0.5774, 1, 1.7321; tangent rises with angle" class="mx-auto h-auto w-full max-w-xl" loading="lazy" />
@@ -420,7 +426,7 @@ const faqs = [
   <p>The vertical rise is approximately 5.774 m for a 10 m horizontal run at this angle.</p>
   <p>The adjacent side can be found the same way by rearranging again:</p>
   <p><span set:html={rich('[[[\\boxed{b=\\frac{a}{\\tan(A)}}]]]')} /></p>
-  <p>With an opposite side of <span set:html={rich('[[a=6\\,\\text{m}]]')} /> and <span set:html={rich('[[A=45^\\circ]]')} />: since <span set:html={rich('[[\\tan(45^\\circ)=1]]')} />, <span set:html={rich('[[b=6/1]]')} />, so <span set:html={rich('[[\\boxed{b=6\\,\\text{m}}]]')} />. These are mathematical rearrangements of the same formula. The calculator on this page returns the tangent ratio from side lengths; it does not directly calculate missing sides.</p>
+  <p>With an opposite side of <span set:html={rich('[[a=6\\,\\text{m}]]')} /> and <span set:html={rich('[[A=45^\\circ]]')} />: since <span set:html={rich('[[\\tan(45^\\circ)=1]]')} />, <span set:html={rich('[[b=6/1]]')} />, so <span set:html={rich('[[\\boxed{b=6\\,\\text{m}}]].')} /> These are mathematical rearrangements of the same formula. The calculator on this page returns the tangent ratio from side lengths; it does not directly calculate missing sides.</p>
 </section>
 
 <!-- SECTION 10: Finding an angle -->
@@ -441,15 +447,15 @@ const faqs = [
   <h2>Common Mistakes When Calculating Tangent</h2>
   <p>Most tangent errors come from a flipped fraction, a mislabeled side, or confusing the ratio with the angle. Run through this list before trusting a result.</p>
   <ol class="mt-4 list-decimal space-y-3 pl-6">
-    <li><strong>Reversing the formula and calculating <span set:html={rich('[[b/a]]')} /> instead of <span set:html={rich('[[a/b]]')} />.</strong> This returns cotangent, not tangent. With <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[b=4]]')} />, the reversed fraction gives 1.3333; the correct one gives 0.75.</li>
+    <li><strong>Reversing the formula and calculating <span set:html={rich('[[b/a]]')} /> instead of <span set:html={rich('[[a/b]].')} /></strong> This returns cotangent, not tangent. With <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[b=4]]')} />, the reversed fraction gives 1.3333; the correct one gives 0.75.</li>
     <li><strong>Confusing tangent with sine.</strong> Tangent divides the opposite side by the adjacent side; sine divides the opposite side by the hypotenuse. If the hypotenuse is in the denominator, the answer is sine, not tangent.</li>
     <li><strong>Confusing tangent with cosine.</strong> Cosine divides the adjacent side by the hypotenuse. Tangent never uses the hypotenuse at all, so a hypotenuse in either position signals the wrong ratio.</li>
     <li><strong>Confusing tangent with cotangent.</strong> Cotangent is the reciprocal, adjacent over opposite. The similar names cause real errors, but the fraction order is exactly reversed.</li>
-    <li><strong>Including the hypotenuse in the primary tangent formula.</strong> The hypotenuse plays no role in <span set:html={rich('[[a/b]]')} />. If it appears in the calculation, the wrong formula was used.</li>
+    <li><strong>Including the hypotenuse in the primary tangent formula.</strong> The hypotenuse plays no role in <span set:html={rich('[[a/b]].')} /> If it appears in the calculation, the wrong formula was used.</li>
     <li><strong>Mixing up the opposite and adjacent sides.</strong> Both are legs, so the labels are easy to swap. Always trace from the reference angle: across from it is opposite, touching it is adjacent.</li>
     <li><strong>Identifying the sides relative to the wrong reference angle.</strong> Switching from angle <span set:html={rich('[[A]]')} /> to angle <span set:html={rich('[[C]]')} /> swaps the opposite and adjacent labels, which flips the ratio to its reciprocal.</li>
     <li><strong>Assuming tangent must be less than 1.</strong> That rule belongs to sine and cosine. Tangent has no upper limit for acute angles, and a result above 1 is perfectly valid.</li>
-    <li><strong>Reporting the tangent ratio as an angle in degrees.</strong> A result of 0.75 is a ratio, not <span set:html={rich('[[0.75^\\circ]]')} />. Treating it as degrees feeds nonsense into any follow-up calculation.</li>
+    <li><strong>Reporting the tangent ratio as an angle in degrees.</strong> A result of 0.75 is a ratio, not <span set:html={rich('[[0.75^\\circ]].')} /> Treating it as degrees feeds nonsense into any follow-up calculation.</li>
     <li><strong>Reporting the tangent ratio with measurement units.</strong> The units cancel in the division, so "0.75 m" is wrong. Write the plain number and keep the units in the input measurements where they belong.</li>
     <li><strong>Entering zero or negative side lengths.</strong> A triangle cannot have a zero or negative side, so these inputs signal a data entry error or a missing measurement, not a valid edge case.</li>
     <li><strong>Mixing incompatible measurement units.</strong> An opposite side of 3 m with an adjacent side of 40 cm gives 7.5, a meaningless number. Convert to a single unit first: 3 m and 4 m give the correct 0.75.</li>
@@ -460,9 +466,9 @@ const faqs = [
 
   <h3>Wrong Versus Correct: A Worked Comparison</h3>
   <p>Given an opposite side of <span set:html={rich('[[a=3]]')} /> and an adjacent side of <span set:html={rich('[[b=4]]')} />:</p>
-  <p><strong>Incorrect:</strong> <span set:html={rich('[[4/3\\approx1.3333]]')} />. This is the cotangent ratio for angle <span set:html={rich('[[A]]')} />, not the tangent ratio. The numerator and denominator are reversed.</p>
+  <p><strong>Incorrect:</strong> <span set:html={rich('[[4/3\\approx1.3333]].')} /> This is the cotangent ratio for angle <span set:html={rich('[[A]]')} />, not the tangent ratio. The numerator and denominator are reversed.</p>
   <p><strong>Correct:</strong> <span set:html={rich('[[\\tan(A)=3/4=0.75]]')} /></p>
-  <p><strong>Verify using sine and cosine:</strong> with <span set:html={rich('[[c=5]]')} />, <span set:html={rich('[[\\sin(A)=3/5=0.6]]')} /> and <span set:html={rich('[[\\cos(A)=4/5=0.8]]')} />. Therefore <span set:html={rich('[[\\sin(A)/\\cos(A)=0.6/0.8=0.75]]')} />, which confirms the tangent calculation.</p>
+  <p><strong>Verify using sine and cosine:</strong> with <span set:html={rich('[[c=5]]')} />, <span set:html={rich('[[\\sin(A)=3/5=0.6]]')} /> and <span set:html={rich('[[\\cos(A)=4/5=0.8]].')} /> Therefore <span set:html={rich('[[\\sin(A)/\\cos(A)=0.6/0.8=0.75]]')} />, which confirms the tangent calculation.</p>
 </section>
 
 <!-- SECTION 12: Verification -->
@@ -472,11 +478,11 @@ const faqs = [
   <p><span set:html={rich('[[[\\boxed{\\tan(A)=\\frac{a}{b} \\gt 0}]]]')} /></p>
   <p>There is no requirement for the opposite side to be shorter than the adjacent side, so the result may sit below, at, or above 1. A result that is zero or negative usually indicates invalid inputs or reversed labels.</p>
   <h3>Method 1: Check the Ratio</h3>
-  <p>Re-verify <span set:html={rich('[[\\tan(A)=a/b]]')} /> directly. With <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[b=4]]')} />: <span set:html={rich('[[\\tan(A)=3/4=0.75]]')} />. Because the opposite side is shorter than the adjacent side, the ratio should land below 1; if a second hand calculation disagrees, a side was mislabeled or a unit was mixed.</p>
+  <p>Re-verify <span set:html={rich('[[\\tan(A)=a/b]]')} /> directly. With <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[b=4]]')} />: <span set:html={rich('[[\\tan(A)=3/4=0.75]].')} /> Because the opposite side is shorter than the adjacent side, the ratio should land below 1; if a second hand calculation disagrees, a side was mislabeled or a unit was mixed.</p>
   <h3>Method 2: Check the Pythagorean Theorem</h3>
-  <p>Calculate the hypotenuse when needed: <span set:html={rich('[[c=\\sqrt{a^2+b^2}]]')} />. For <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[b=4]]')} />: <span set:html={rich('[[c=\\sqrt{9+16}=5]]')} />, and <span set:html={rich('[[3^2+4^2=5^2]]')} />. This confirms the dimensions of the 3-4-5 right triangle. The hypotenuse is a verification value here, not part of the primary tangent formula.</p>
+  <p>Calculate the hypotenuse when needed: <span set:html={rich('[[c=\\sqrt{a^2+b^2}]].')} /> For <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[b=4]]')} />: <span set:html={rich('[[c=\\sqrt{9+16}=5]]')} />, and <span set:html={rich('[[3^2+4^2=5^2]].')} /> This confirms the dimensions of the 3-4-5 right triangle. The hypotenuse is a verification value here, not part of the primary tangent formula.</p>
   <h3>Method 3: Check Using Inverse Tangent</h3>
-  <p>For a tangent ratio of 0.75: <span set:html={rich('[[A=\\tan^{-1}(0.75)\\approx36.87^\\circ]]')} />. Because the ratio sits below 1, the angle should land below <span set:html={rich('[[45^\\circ]]')} />; if it does not, the side labels are probably swapped. Small differences may arise from rounding.</p>
+  <p>For a tangent ratio of 0.75: <span set:html={rich('[[A=\\tan^{-1}(0.75)\\approx36.87^\\circ]].')} /> Because the ratio sits below 1, the angle should land below <span set:html={rich('[[45^\\circ]]')} />; if it does not, the side labels are probably swapped. Small differences may arise from rounding.</p>
 </section>
 
 <!-- SECTION 13: Choosing a ratio -->
@@ -502,7 +508,7 @@ const faqs = [
       </tbody>
     </table>
   </div>
-  <p>Tangent and cotangent are the reciprocal pair: <span set:html={rich('[[\\cot(A)=1/\\tan(A)]]')} />. If <span set:html={rich('[[\\tan(A)=0.75]]')} />, then <span set:html={rich('[[\\cot(A)\\approx1.3333]]')} />. Reach for tangent when both legs are known or when a problem involves rise over run; reach for sine or cosine when the hypotenuse enters the work, and cotangent when the comparison runs the other way. Keep tangent central: the neighbouring ratios have their own pages with full treatments.</p>
+  <p>Tangent and cotangent are the reciprocal pair: <span set:html={rich('[[\\cot(A)=1/\\tan(A)]].')} /> If <span set:html={rich('[[\\tan(A)=0.75]]')} />, then <span set:html={rich('[[\\cot(A)\\approx1.3333]].')} /> Reach for tangent when both legs are known or when a problem involves rise over run; reach for sine or cosine when the hypotenuse enters the work, and cotangent when the comparison runs the other way. Keep tangent central: the neighbouring ratios have their own pages with full treatments.</p>
   <p>For the neighbouring ratios, see the <a href="/sine-ratio-calculator/" class="text-primary hover:underline">Sine Ratio Calculator</a>, the <a href="/cosine-ratio-calculator/" class="text-primary hover:underline">Cosine Ratio Calculator</a>, the <a href="/cotangent-ratio-calculator/" class="text-primary hover:underline">Cotangent Ratio Calculator</a>, the <a href="/secant-ratio-calculator/" class="text-primary hover:underline">Secant Ratio Calculator</a>, and the <a href="/cosecant-ratio-calculator/" class="text-primary hover:underline">Cosecant Ratio Calculator</a>.</p>
 </section>
 

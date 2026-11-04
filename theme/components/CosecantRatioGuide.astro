@@ -18,6 +18,12 @@ const rich = (s: string): string => {
     (_, l) =>
       `<div dir="ltr" class="katex-block">${katex.renderToString(l, { throwOnError: false, displayMode: true })}</div>`
   );
+  // Keep a trailing period glued to inline math (prevents orphaned "." on mobile wraps)
+  out = out.replace(
+    /\[\[((?:(?!\[\[|\]\]).)+?)\]\]\./g,
+    (_, l) =>
+      `<span dir="ltr" class="math-nowrap"><span class="math-textbook">${katex.renderToString(l, { throwOnError: false, displayMode: false })}</span>.</span>`
+  );
   out = out.replace(
     /\[\[(.+?)\]\]/g,
     (_, l) =>
@@ -104,7 +110,7 @@ const faqs = [
 <!-- SECTION 1: Introduction -->
 <section id="csc-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>What Is a Cosecant Ratio Calculator?</h2>
-  <p>A cosecant ratio calculator finds the cosecant of an acute angle in a right triangle from two side lengths: the hypotenuse <span set:html={rich('[[c]]')} /> and the opposite side <span set:html={rich('[[a]]')} />. It divides the first by the second, giving <span set:html={rich('[[\\csc(A)=c/a]]')} />. Cosecant is the reciprocal of sine: wherever sine gives opposite over hypotenuse, cosecant gives hypotenuse over opposite, so the two values always multiply to 1.</p>
+  <p>A cosecant ratio calculator finds the cosecant of an acute angle in a right triangle from two side lengths: the hypotenuse <span set:html={rich('[[c]]')} /> and the opposite side <span set:html={rich('[[a]].')} /> It divides the first by the second, giving <span set:html={rich('[[\\csc(A)=c/a]].')} /> Cosecant is the reciprocal of sine: wherever sine gives opposite over hypotenuse, cosecant gives hypotenuse over opposite, so the two values always multiply to 1.</p>
   <p>The calculator needs no angle input and no adjacent side, because the ratio <span set:html={rich('[[c/a]]')} /> is fully determined by those two lengths. The answer is a pure number with no units, since centimetres divided by centimetres cancel out, and it describes the hypotenuse as a multiple of the opposite side. For a 5 cm hypotenuse and a 3 cm opposite side, <span set:html={rich('[[\\csc(A)=5/3\\approx1.6667]]')} />, meaning the hypotenuse is about 1.67 times the opposite side.</p>
 </section>
 
@@ -116,7 +122,7 @@ const faqs = [
   <p>A right triangle has one angle of exactly <span set:html={rich('[[90^\\circ]]')} />, the angle between two perpendicular lines, like a wall meeting a level floor. The hypotenuse sits opposite that right angle and is always the longest side. Because the three angles must total <span set:html={rich('[[180^\\circ]]')} />, the remaining two angles share exactly 90 degrees and are therefore both acute. Cosecant belongs to this geometry because its formula compares two of those sides, the hypotenuse and the opposite side, in a fixed relationship.</p>
 
   <h3>What Is the Opposite Side?</h3>
-  <p>The opposite side is the side directly across from the reference angle <span set:html={rich('[[A]]')} />: it is the one side of the triangle that does not touch the vertex of <span set:html={rich('[[A]]')} />. Which side counts as opposite depends on the reference angle, so switching from angle <span set:html={rich('[[A]]')} /> to angle <span set:html={rich('[[B]]')} /> swaps the labels of the two legs. In practical problems the opposite side often represents a vertical height, an elevation difference, or the perpendicular leg of a structure. Getting the reference angle right matters, because the wrong angle silently swaps the opposite and adjacent sides.</p>
+  <p>The opposite side is the side directly across from the reference angle <span set:html={rich('[[A]]')} />: it is the one side of the triangle that does not touch the vertex of <span set:html={rich('[[A]].')} /> Which side counts as opposite depends on the reference angle, so switching from angle <span set:html={rich('[[A]]')} /> to angle <span set:html={rich('[[B]]')} /> swaps the labels of the two legs. In practical problems the opposite side often represents a vertical height, an elevation difference, or the perpendicular leg of a structure. Getting the reference angle right matters, because the wrong angle silently swaps the opposite and adjacent sides.</p>
 
   <h3>What Is the Hypotenuse?</h3>
   <p>The hypotenuse is the side opposite the right angle, and two facts identify it in any diagram, however the triangle is rotated: it faces the small square marking the <span set:html={rich('[[90^\\circ]]')} /> corner, and it is the longest side. In a valid, non-degenerate triangle it is strictly longer than either leg. In real settings it may represent a ladder leaning on a wall, a sloping distance, a line of sight, a roof rafter, or a diagonal support.</p>
@@ -147,7 +153,7 @@ const faqs = [
   <p>A concrete check makes the flip visible. With <span set:html={rich('[[\\sin(A)=3/5=0.6]]')} />, the reciprocal is <span set:html={rich('[[1/0.6=5/3\\approx1.6667]]')} />, which is exactly the cosecant. Both numbers describe the same triangle from reciprocal viewpoints, and multiplying them always returns 1.</p>
 
   <h3>Why Cosecant Is Greater Than 1</h3>
-  <p>The hypotenuse is longer than the opposite side, so <span set:html={rich('[[c \\gt a]]')} /> and therefore <span set:html={rich('[[c/a \\gt 1]]')} />. A quick numeric check: with <span set:html={rich('[[c=10]]')} /> and <span set:html={rich('[[a=8]]')} />, the ratio is <span set:html={rich('[[10/8=1.25]]')} />, above 1 as required. For a large acute angle the opposite side is nearly as long as the hypotenuse, so the ratio sits just above 1, but it can never equal 1 in a valid, non-degenerate right triangle.</p>
+  <p>The hypotenuse is longer than the opposite side, so <span set:html={rich('[[c \\gt a]]')} /> and therefore <span set:html={rich('[[c/a \\gt 1]].')} /> A quick numeric check: with <span set:html={rich('[[c=10]]')} /> and <span set:html={rich('[[a=8]]')} />, the ratio is <span set:html={rich('[[10/8=1.25]]')} />, above 1 as required. For a large acute angle the opposite side is nearly as long as the hypotenuse, so the ratio sits just above 1, but it can never equal 1 in a valid, non-degenerate right triangle.</p>
 
   <h3>What Does a Cosecant Value Mean?</h3>
   <p>A cosecant of 2 means the hypotenuse is exactly twice the opposite side; 1.6667 means about 1.6667 times. Read the number as a multiplier, not an angle: it carries no degrees and no metres or feet, because the two side units cancel in the division.</p>
@@ -180,7 +186,7 @@ const faqs = [
   <p>Step 1: Write the formula. <span set:html={rich('[[\\csc(A)=c/a]]')} /></p>
   <p>Step 2: Substitute the measurements. <span set:html={rich('[[\\csc(A)=5/3]]')} /></p>
   <p>Step 3: Divide. <span set:html={rich('[[\\boxed{\\csc(A)\\approx1.6667}]]')} /></p>
-  <p>Step 4: Verify using sine. <span set:html={rich('[[\\sin(A)=3/5=0.6]]')} />, and <span set:html={rich('[[1/0.6\\approx1.6667]]')} />. Both routes land on the same value because they are reciprocal views of one triangle. Note that 1.6667 is the rounded decimal; <span set:html={rich('[[5/3]]')} /> is the exact ratio for these side lengths.</p>
+  <p>Step 4: Verify using sine. <span set:html={rich('[[\\sin(A)=3/5=0.6]]')} />, and <span set:html={rich('[[1/0.6\\approx1.6667]].')} /> Both routes land on the same value because they are reciprocal views of one triangle. Note that 1.6667 is the rounded decimal; <span set:html={rich('[[5/3]]')} /> is the exact ratio for these side lengths.</p>
 </section>
 
 <!-- SECTION 5: Calculator walkthrough -->
@@ -188,9 +194,9 @@ const faqs = [
   <h2>How to Use the Cosecant Ratio Calculator</h2>
   <p>The walkthrough below matches the actual interface on this page.</p>
   <ol>
-    <li><strong>Identify the reference angle <span set:html={rich('[[A]]')} />.</strong> Decide which acute angle the ratio describes, since the opposite side is defined relative to it.</li>
-    <li><strong>Locate the hypotenuse <span set:html={rich('[[c]]')} />.</strong> It is the side opposite the right angle and the longest side of the triangle.</li>
-    <li><strong>Locate the opposite side <span set:html={rich('[[a]]')} />.</strong> It is the side directly across from angle <span set:html={rich('[[A]]')} />.</li>
+    <li><strong>Identify the reference angle <span set:html={rich('[[A]].')} /></strong> Decide which acute angle the ratio describes, since the opposite side is defined relative to it.</li>
+    <li><strong>Locate the hypotenuse <span set:html={rich('[[c]].')} /></strong> It is the side opposite the right angle and the longest side of the triangle.</li>
+    <li><strong>Locate the opposite side <span set:html={rich('[[a]].')} /></strong> It is the side directly across from angle <span set:html={rich('[[A]].')} /></li>
     <li><strong>Measure or obtain both side lengths.</strong> Use a tape, a drawing, or given data, keeping the same unit for both.</li>
     <li><strong>Enter the hypotenuse in the first input field.</strong> This is the larger of the two values.</li>
     <li><strong>Enter the opposite side in the second input field.</strong> This is the smaller of the two values.</li>
@@ -226,7 +232,7 @@ const faqs = [
   <p>For angle <span set:html={rich('[[A=30^\\circ]]')} />, the opposite side is half the hypotenuse. With <span set:html={rich('[[a=5\\text{ cm}]]')} /> and <span set:html={rich('[[c=10\\text{ cm}]]')} />:</p>
   <p><span set:html={rich('[[\\csc(30^\\circ)=10/5]]')} /></p>
   <p><span set:html={rich('[[\\boxed{\\csc(30^\\circ)=2}]]')} /></p>
-  <p>Verify: <span set:html={rich('[[\\sin(30^\\circ)=0.5]]')} />, and <span set:html={rich('[[1/0.5=2]]')} />. This exact value is worth memorizing because the 30-60-90 triangle appears constantly in geometry problems.</p>
+  <p>Verify: <span set:html={rich('[[\\sin(30^\\circ)=0.5]]')} />, and <span set:html={rich('[[1/0.5=2]].')} /> This exact value is worth memorizing because the 30-60-90 triangle appears constantly in geometry problems.</p>
 
   <h3>Example 4: A Triangle With an Opposite Side of 8 and Hypotenuse of 10</h3>
   <p>Given <span set:html={rich('[[a=8\\text{ m}]]')} /> and <span set:html={rich('[[c=10\\text{ m}]]')} />:</p>
@@ -390,8 +396,8 @@ const faqs = [
 <section id="csc-mistakes" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>Common Mistakes When Calculating Cosecant</h2>
   <ol>
-    <li><strong>Confusing cosecant with sine.</strong> Sine is <span set:html={rich('[[a/c]]')} />; cosecant is <span set:html={rich('[[c/a]]')} />. What goes wrong: reporting 0.6 for a 3-4-5 triangle. Fix: put the hypotenuse on top.</li>
-    <li><strong>Reversing the formula to <span set:html={rich('[[a/c]]')} /> instead of <span set:html={rich('[[c/a]]')} />.</strong> What goes wrong: the answer is the sine, always below 1. Fix: check that the longer side is the numerator.</li>
+    <li><strong>Confusing cosecant with sine.</strong> Sine is <span set:html={rich('[[a/c]]')} />; cosecant is <span set:html={rich('[[c/a]].')} /> What goes wrong: reporting 0.6 for a 3-4-5 triangle. Fix: put the hypotenuse on top.</li>
+    <li><strong>Reversing the formula to <span set:html={rich('[[a/c]]')} /> instead of <span set:html={rich('[[c/a]].')} /></strong> What goes wrong: the answer is the sine, always below 1. Fix: check that the longer side is the numerator.</li>
     <li><strong>Confusing cosecant with secant.</strong> Secant is <span set:html={rich('[[c/b]]')} />, the reciprocal of cosine. What goes wrong: using the adjacent side. Fix: cosecant pairs with sine and the opposite side.</li>
     <li><strong>Using the adjacent side instead of the opposite side.</strong> What goes wrong: computing <span set:html={rich('[[c/b]]')} /> by mistake. Fix: confirm the side across from angle <span set:html={rich('[[A]]')} /> before dividing.</li>
     <li><strong>Assuming cosecant is measured in degrees.</strong> What goes wrong: writing 1.6667 degrees. Fix: the ratio is a pure number, not an angle.</li>
@@ -403,13 +409,13 @@ const faqs = [
     <li><strong>Rounding too early.</strong> What goes wrong: rounding <span set:html={rich('[[5/3]]')} /> to 1.67 before multiplying back adds avoidable error. Fix: keep the fraction or extra digits until the final step.</li>
     <li><strong>Confusing the reference angle with the other acute angle.</strong> What goes wrong: the opposite and adjacent labels swap. Fix: mark angle <span set:html={rich('[[A]]')} /> on the diagram first.</li>
     <li><strong>Assuming a large cosecant ratio is an angle.</strong> What goes wrong: reading 12.6667 as degrees. Fix: it is a multiplier, so the hypotenuse is 12.6667 times the opposite side.</li>
-    <li><strong>Assuming cosecant alone determines the hypotenuse.</strong> What goes wrong: expecting one number to produce a length. Fix: the ratio needs the opposite side too, via <span set:html={rich('[[c=a\\times\\csc(A)]]')} />.</li>
+    <li><strong>Assuming cosecant alone determines the hypotenuse.</strong> What goes wrong: expecting one number to produce a length. Fix: the ratio needs the opposite side too, via <span set:html={rich('[[c=a\\times\\csc(A)]].')} /></li>
     <li><strong>Confusing the reciprocal of sine with the reciprocal of cosine.</strong> What goes wrong: using secant where cosecant belongs. Fix: sine pairs with cosecant; cosine pairs with secant.</li>
   </ol>
 
   <h3>Wrong Versus Correct</h3>
   <p>Given <span set:html={rich('[[c=5]]')} /> and <span set:html={rich('[[a=3]]')} />:</p>
-  <p>Incorrect: <span set:html={rich('[[3/5=0.6]]')} />. This is the sine ratio, not the cosecant ratio.</p>
+  <p>Incorrect: <span set:html={rich('[[3/5=0.6]].')} /> This is the sine ratio, not the cosecant ratio.</p>
   <p>Correct: <span set:html={rich('[[\\csc(A)=5/3\\approx1.6667]]')} /></p>
   <p>Verify: <span set:html={rich('[[\\csc(A)=1/\\sin(A)]]')} />, and <span set:html={rich('[[1/0.6\\approx1.6667]]')} /></p>
 </section>
@@ -419,13 +425,13 @@ const faqs = [
   <h2>How to Check Whether Your Cosecant Result Is Valid</h2>
   <p>A valid, non-degenerate right triangle requires:</p>
   <p><span set:html={rich('[[[c \\gt a \\gt 0]]]')} /></p>
-  <p>Therefore <span set:html={rich('[[c/a \\gt 1]]')} />. Both measurements must use compatible units, and the calculated ratio must exceed 1. A result of exactly 1 is only a limiting value as the acute angle approaches 90 degrees, not a result for a genuine triangle. A ratio below 1 usually indicates reversed inputs, an incorrect side label, or incompatible measurements.</p>
+  <p>Therefore <span set:html={rich('[[c/a \\gt 1]].')} /> Both measurements must use compatible units, and the calculated ratio must exceed 1. A result of exactly 1 is only a limiting value as the acute angle approaches 90 degrees, not a result for a genuine triangle. A ratio below 1 usually indicates reversed inputs, an incorrect side label, or incompatible measurements.</p>
   <h3>Method 1: Check the Sine Reciprocal</h3>
-  <p>Compute <span set:html={rich('[[\\sin(A)=a/c]]')} />, then <span set:html={rich('[[\\csc(A)=1/\\sin(A)]]')} />. For the 3-4-5 triangle, <span set:html={rich('[[\\sin(A)=3/5=0.6]]')} /> and <span set:html={rich('[[1/0.6\\approx1.6667]]')} />, matching the direct division.</p>
+  <p>Compute <span set:html={rich('[[\\sin(A)=a/c]]')} />, then <span set:html={rich('[[\\csc(A)=1/\\sin(A)]].')} /> For the 3-4-5 triangle, <span set:html={rich('[[\\sin(A)=3/5=0.6]]')} /> and <span set:html={rich('[[1/0.6\\approx1.6667]]')} />, matching the direct division.</p>
   <h3>Method 2: Check the Pythagorean Theorem</h3>
-  <p>If the adjacent side is known or needed, verify <span set:html={rich('[[b=\\sqrt{c^2-a^2}]]')} />. For <span set:html={rich('[[c=5]]')} /> and <span set:html={rich('[[a=3]]')} />: <span set:html={rich('[[b=\\sqrt{25-9}=4]]')} />, and <span set:html={rich('[[3^2+4^2=5^2]]')} />. This confirms the side lengths form a right triangle.</p>
+  <p>If the adjacent side is known or needed, verify <span set:html={rich('[[b=\\sqrt{c^2-a^2}]].')} /> For <span set:html={rich('[[c=5]]')} /> and <span set:html={rich('[[a=3]]')} />: <span set:html={rich('[[b=\\sqrt{25-9}=4]]')} />, and <span set:html={rich('[[3^2+4^2=5^2]].')} /> This confirms the side lengths form a right triangle.</p>
   <h3>Method 3: Check the Ratio by Multiplication</h3>
-  <p>Verify <span set:html={rich('[[a\\times\\csc(A)\\approx c]]')} />. For <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[\\csc(A)=5/3]]')} />: <span set:html={rich('[[3\\times\\frac{5}{3}=5]]')} />. Small discrepancies may appear when a displayed decimal was rounded; the exact fraction removes them.</p>
+  <p>Verify <span set:html={rich('[[a\\times\\csc(A)\\approx c]].')} /> For <span set:html={rich('[[a=3]]')} /> and <span set:html={rich('[[\\csc(A)=5/3]]')} />: <span set:html={rich('[[3\\times\\frac{5}{3}=5]].')} /> Small discrepancies may appear when a displayed decimal was rounded; the exact fraction removes them.</p>
 </section>
 
 <!-- SECTION 12: Choosing a ratio -->
@@ -451,7 +457,7 @@ const faqs = [
       </tbody>
     </table>
   </div>
-  <p>The reciprocal pairs are sine with cosecant and cosine with secant: <span set:html={rich('[[\\csc(A)=1/\\sin(A)]]')} />, whereas <span set:html={rich('[[\\sec(A)=1/\\cos(A)]]')} />. Cosecant and secant are not interchangeable. Sine suits direct measurement problems with a known opposite side and hypotenuse; cosecant suits formulas built around the reciprocal and recovering the hypotenuse from a known cosecant value.</p>
+  <p>The reciprocal pairs are sine with cosecant and cosine with secant: <span set:html={rich('[[\\csc(A)=1/\\sin(A)]]')} />, whereas <span set:html={rich('[[\\sec(A)=1/\\cos(A)]].')} /> Cosecant and secant are not interchangeable. Sine suits direct measurement problems with a known opposite side and hypotenuse; cosecant suits formulas built around the reciprocal and recovering the hypotenuse from a known cosecant value.</p>
   <p>For the neighbouring ratios, see the <a href="/sine-ratio-calculator/" class="text-primary hover:underline">Sine Ratio Calculator</a>, the <a href="/secant-ratio-calculator/" class="text-primary hover:underline">Secant Ratio Calculator</a>, the <a href="/cotangent-ratio-calculator/" class="text-primary hover:underline">Cotangent Ratio Calculator</a>, and the <a href="/right-triangle-trig-ratios-calculator/" class="text-primary hover:underline">Right Triangle Trig Ratios Calculator</a>. The <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">Right Triangle Side Calculator</a> helps when a side length itself is the unknown.</p>
 </section>
 

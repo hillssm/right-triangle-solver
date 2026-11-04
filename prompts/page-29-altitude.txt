@@ -1,0 +1,1369 @@
+# ULTIMATE SEO CONTENT WRITING PROMPT
+## Right Triangle Altitude Calculator — 4,500–5,000+ Words
+
+### 1. ROLE AND PRIMARY OBJECTIVE
+
+Act as a highly experienced mathematics educator, geometry subject-matter expert, educational UX writer, mathematical content editor, and technical SEO strategist.
+
+Your task is to create a comprehensive, accurate, original, engaging, and exceptionally useful educational guide for the following page:
+
+**Website:** RightTriangleSolver.com
+
+**Existing URL:** https://www.righttrianglesolver.com/right-triangle-altitude-calculator/
+
+**Existing H1:** Right Triangle Height (Altitude) Calculator
+
+**Primary SEO Keyword:** Right Triangle Altitude Calculator
+
+**Secondary Topic:** Right Triangle Height Calculator
+
+**Content Target:** 3,500–4,000 words of substantive educational content, excluding metadata, schema, and diagram code. Exceed 4,000 words only where the additional content provides genuine value.
+
+**Language:** American English.
+
+**Target Readers:**
+- Middle school geometry students
+- High school students
+- College students reviewing trigonometry and geometry
+- Teachers and mathematics tutors
+- Parents assisting with homework
+- Engineering and technical drawing students
+- Anyone trying to calculate the altitude of a right triangle
+
+The final content must feel like it was carefully written and reviewed by a knowledgeable mathematics teacher.
+
+It must be:
+- Mathematically accurate
+- Naturally written
+- Easy to understand
+- Useful for beginners
+- Detailed enough for advanced learners
+- Organized for fast problem-solving
+- Visually educational
+- Accessible on mobile devices
+- Search-engine-friendly without keyword stuffing
+- Focused on genuine user needs
+
+Do not produce a generic, repetitive, keyword-heavy article.
+
+The main purpose is to help readers understand what the altitude of a right triangle means, select the correct calculator mode, calculate the altitude using different known measurements, verify their results, and understand the geometry behind the formulas.
+
+---
+
+### 2. MANDATORY EXISTING PAGE ANALYSIS
+
+Before writing the article, open and inspect the live page.
+
+Confirm the calculator's current functionality and visible content.
+
+The page currently includes two main calculation modes.
+
+**Mode 1: Altitude to Hypotenuse**
+
+Inputs:
+- Leg a
+- Leg b
+- Hypotenuse c
+
+Formula:
+
+h = (a × b) / c
+
+**Mode 2: Altitude Squared**
+
+Inputs:
+- Projection p
+- Projection q
+
+Formula:
+
+h = √(p × q)
+
+Also inspect:
+- Calculator mode selector
+- Input unit selectors
+- Calculate buttons
+- Reset buttons
+- Result presentation
+- Existing formula explanations
+- Validation behavior
+- Existing FAQ content
+- Related calculator links
+- Breadcrumbs
+- Mobile usability
+- Existing diagrams, if present
+
+The page's extracted text currently contains a duplicated introductory sentence. Remove this duplication from the proposed final content.
+
+Do not invent features.
+
+Do not claim that the calculator supports angle-based inputs, automatic missing-side calculations, interactive graphs, downloads, or other functions unless they are actually available.
+
+Distinguish between:
+1. Formulas implemented by the calculator.
+2. Additional educational formulas explained in the article.
+
+Preserve the working calculator and its two modes.
+
+Do not recommend changing its functionality unless providing a separate, clearly identified UX suggestion.
+
+---
+
+### 3. PRIMARY SEARCH INTENT
+
+The primary search intent is to calculate and understand the altitude of a right triangle.
+
+Readers may want to know:
+
+1. What is the altitude of a right triangle?
+2. How do I calculate it?
+3. Which altitude formula should I use?
+4. What if I know the legs and hypotenuse?
+5. What if I know the hypotenuse projections?
+6. Can I calculate altitude with only two known sides?
+7. How is altitude related to triangle area?
+8. Why does the altitude theorem work?
+9. How can I verify my result?
+10. What are common mistakes?
+
+Address the immediate calculation need before introducing lengthy theory.
+
+A user should find the calculator, main formulas, and mode-selection guidance without scrolling through thousands of words.
+
+---
+
+### 4. KEYWORD RESEARCH AND SEO OPTIMIZATION
+
+**Primary Focus Keyword:**
+
+Right Triangle Altitude Calculator
+
+**Secondary Keywords:**
+- right triangle height calculator
+- altitude of a right triangle
+- right triangle altitude formula
+- height of a right triangle
+- altitude to hypotenuse
+- right angle altitude calculator
+- right triangle height formula
+- calculate altitude of a right triangle
+- altitude from hypotenuse projections
+- altitude from triangle sides
+- right triangle geometric mean theorem
+- perpendicular height of a right triangle
+
+**Related Semantic Terms:**
+- hypotenuse
+- perpendicular legs
+- right-angle vertex
+- triangle height
+- perpendicular distance
+- similar triangles
+- geometric mean
+- Pythagorean theorem
+- hypotenuse segments
+- triangle area
+- altitude foot
+- base-height relationship
+- projection theorem
+- right triangle similarity
+- square root
+- triangle side lengths
+
+**SEO Rules:**
+
+Use the exact primary keyword naturally in:
+- SEO title
+- H1, or a natural close variant
+- First paragraph
+- One relevant H2
+- Meta description when appropriate
+
+Do not repeat the primary keyword excessively.
+
+Avoid artificial keyword-density targets.
+
+Use natural synonyms, related questions, and meaningful mathematical terminology.
+
+Avoid creating headings solely to insert keywords.
+
+Optimize for user intent, clarity, accuracy, and topical completeness.
+
+Do not claim that any word count, keyword density, or SEO plugin score guarantees rankings.
+
+---
+
+### 5. MATHEMATICAL DEFINITIONS AND NOTATION
+
+Use consistent notation throughout the article.
+
+Let triangle ABC be right-angled at C.
+
+Define:
+
+a = length of leg AC
+
+b = length of leg BC
+
+c = length of hypotenuse AB
+
+h = altitude from C to AB
+
+D = foot of the altitude on AB
+
+p = length of hypotenuse segment AD
+
+q = length of hypotenuse segment DB
+
+Therefore:
+
+c = p + q
+
+The primary formulas are:
+
+**Altitude from sides:**
+
+h = ab/c
+
+**Altitude from projections:**
+
+h = √(pq)
+
+**Pythagorean theorem:**
+
+a² + b² = c²
+
+**Altitude from two known legs:**
+
+h = ab/√(a² + b²)
+
+**Altitude from area and hypotenuse:**
+
+h = 2A/c
+
+where A represents the area.
+
+**Hypotenuse projections:**
+
+p = a²/c
+
+q = b²/c
+
+**Geometric mean relationship:**
+
+h² = pq
+
+These formulas must be explained accurately and used only under appropriate geometric conditions.
+
+---
+
+## 6. REQUIRED ARTICLE STRUCTURE
+
+Follow the outline below.
+
+The suggested section lengths are flexible editorial guides. Prioritize clarity and usefulness over exact section word counts.
+
+### H1: Right Triangle Altitude Calculator
+
+**Suggested length: 100–130 words**
+
+Write a concise, useful introduction.
+
+Explain:
+- What altitude means
+- What this calculator finds
+- Which two input modes are available
+- What measurements users need
+- What result they receive
+
+Introduce both formulas immediately:
+
+h = ab/c
+
+h = √(pq)
+
+Explain that both formulas find the same perpendicular altitude to the hypotenuse, but use different known measurements.
+
+Avoid generic introductions such as "Geometry is an important part of mathematics."
+
+Use direct, natural language.
+
+### H2: Calculate the Altitude of a Right Triangle
+
+**Suggested length: 120–170 words**
+
+Place this section immediately beside the existing calculator.
+
+Explain the two available modes.
+
+**Mode 1: Altitude to Hypotenuse**
+
+Use when the two legs and hypotenuse are known.
+
+Formula:
+
+h = ab/c
+
+**Mode 2: Altitude Squared**
+
+Use when the two segments of the hypotenuse are known.
+
+Formula:
+
+h = √(pq)
+
+Provide a small comparison table:
+
+| Known Measurements | Calculator Mode | Formula |
+|---|---|---|
+| Legs a, b and hypotenuse c | Altitude to Hypotenuse | h = ab/c |
+| Hypotenuse projections p and q | Altitude Squared | h = √(pq) |
+
+Explain that users should select the mode matching their known measurements.
+
+Do not create an additional calculator interface in the article.
+
+### H2: What Is the Altitude of a Right Triangle?
+
+**Suggested length: 180–230 words**
+
+Explain the geometric meaning of altitude.
+
+Cover:
+- A perpendicular segment from a vertex to the opposite side
+- The right-angle vertex
+- The hypotenuse
+- The foot of the altitude
+- The two smaller right triangles created by the altitude
+
+Clarify that a right triangle has three altitudes.
+
+Two coincide with the perpendicular legs when the opposite leg is chosen as the base.
+
+The third runs from the right-angle vertex to the hypotenuse.
+
+Explain that this third altitude is the one calculated on this page.
+
+Include an accurate diagram.
+
+### H2: Right Triangle Altitude Diagram Explained
+
+**Suggested length: 170–220 words**
+
+Introduce triangle ABC, right-angled at C.
+
+Draw altitude CD to hypotenuse AB.
+
+Label:
+- AC = a
+- BC = b
+- AB = c
+- CD = h
+- AD = p
+- DB = q
+
+Show right-angle markers at C and D.
+
+Explain:
+- Which sides form the right angle
+- Why AB is the hypotenuse
+- Why CD is perpendicular to AB
+- How the altitude divides AB into two projections
+- How the original triangle is divided into two smaller similar triangles
+
+Provide a descriptive caption.
+
+Ensure the diagram is mathematically proportional.
+
+### H2: Right Triangle Altitude Formulas Explained
+
+**Suggested length: 200–250 words**
+
+Introduce a formula summary table.
+
+Include:
+
+1. h = ab/c
+2. h = √(pq)
+3. h = ab/√(a² + b²)
+4. h = 2A/c
+
+Explain the required inputs for each formula.
+
+Clarify that the live calculator directly implements the first two methods.
+
+The remaining formulas are useful for manual calculation or finding missing measurements before using the calculator.
+
+Avoid suggesting that all four formulas are separate calculator modes.
+
+### H2: How to Use the Right Triangle Altitude Calculator
+
+**Suggested length: 170–220 words**
+
+Provide practical instructions.
+
+Step 1: Identify your known measurements.
+
+Step 2: Select the appropriate calculator mode.
+
+Step 3: Enter positive measurements in compatible units.
+
+Step 4: Check that your measurements describe a valid right triangle.
+
+Step 5: Click the Calculate button.
+
+Step 6: Read the altitude result.
+
+Step 7: Verify the answer if necessary.
+
+Step 8: Use Reset before entering a new problem.
+
+Explain how to decide between the two modes.
+
+Use simple, direct instructions.
+
+### H2: Method 1 — Find Right Triangle Altitude From Side Lengths
+
+**Suggested length: 220–280 words**
+
+Explain the formula:
+
+h = ab/c
+
+Define every variable.
+
+Use a 3-4-5 right triangle.
+
+Given:
+
+a = 3 cm
+
+b = 4 cm
+
+c = 5 cm
+
+Step 1:
+
+h = ab/c
+
+Step 2:
+
+h = (3 × 4)/5
+
+Step 3:
+
+h = 12/5
+
+Final answer:
+
+h = 2.4 cm
+
+Explain why the altitude is shorter than either leg.
+
+Describe the conditions under which this method is appropriate.
+
+Include a small supporting diagram.
+
+### H2: Method 2 — Find Altitude From Hypotenuse Projections
+
+**Suggested length: 220–280 words**
+
+Explain the altitude theorem.
+
+Formula:
+
+h² = pq
+
+Therefore:
+
+h = √(pq)
+
+Use:
+
+p = 9 cm
+
+q = 16 cm
+
+Step 1:
+
+h² = 9 × 16
+
+Step 2:
+
+h² = 144
+
+Step 3:
+
+h = √144
+
+Final answer:
+
+h = 12 cm
+
+Explain the meaning of the geometric mean.
+
+Clarify that p and q are segments of the hypotenuse, not the triangle's perpendicular legs.
+
+Include a diagram showing both projections.
+
+### H2: How to Find Altitude When Only Two Sides Are Known
+
+**Suggested length: 230–290 words**
+
+Explain how to calculate altitude when not all three side lengths are available.
+
+**Case 1: Both legs are known**
+
+Use:
+
+c = √(a² + b²)
+
+Then:
+
+h = ab/c
+
+Example:
+
+a = 6 cm
+
+b = 8 cm
+
+c = 10 cm
+
+h = 4.8 cm
+
+**Case 2: One leg and the hypotenuse are known**
+
+Use:
+
+b = √(c² − a²)
+
+Then:
+
+h = ab/c
+
+Example:
+
+a = 5 cm
+
+c = 13 cm
+
+b = 12 cm
+
+h = 60/13 cm ≈ 4.615 cm
+
+Explain that these are manual methods for deriving the required measurements.
+
+Do not claim the existing calculator accepts blank inputs unless verified.
+
+### H2: Why Does the Right Triangle Altitude Formula Work?
+
+**Suggested length: 240–300 words**
+
+Provide a mathematical proof using triangle area.
+
+First:
+
+A = ab/2
+
+Then:
+
+A = ch/2
+
+Set them equal:
+
+ab/2 = ch/2
+
+Multiply by 2:
+
+ab = ch
+
+Divide by c:
+
+h = ab/c
+
+Explain each step.
+
+Show why the same triangle can have different base-height pairs but the same area.
+
+Include a diagram comparing the two base-height arrangements.
+
+Use accessible language while maintaining mathematical rigor.
+
+### H2: Proof of the Altitude Theorem Using Similar Triangles
+
+**Suggested length: 220–280 words**
+
+Explain how the altitude creates two smaller similar right triangles.
+
+Use the consistent diagram:
+
+Triangle ABC is right-angled at C.
+
+D lies on AB.
+
+CD is perpendicular to AB.
+
+AD = p
+
+DB = q
+
+CD = h
+
+From the similarity of triangles ACD and CBD:
+
+p/h = h/q
+
+Cross-multiply:
+
+h² = pq
+
+Therefore:
+
+h = √(pq)
+
+Explain why the positive square root is used.
+
+Show corresponding sides clearly in the diagram.
+
+Avoid introducing a second, inconsistent labeling convention.
+
+### H2: Worked Examples of Right Triangle Altitude
+
+**Suggested length: 450–550 words**
+
+Include at least seven different examples.
+
+Each example must contain:
+- Given measurements
+- Selected formula
+- Substitution
+- Intermediate calculations
+- Final answer
+- Short explanation
+
+**Example 1: Classic 3-4-5 Triangle**
+
+a = 3 cm
+
+b = 4 cm
+
+c = 5 cm
+
+h = 2.4 cm
+
+**Example 2: 5-12-13 Triangle**
+
+a = 5 m
+
+b = 12 m
+
+c = 13 m
+
+h = 60/13 m ≈ 4.615 m
+
+**Example 3: 8-15-17 Triangle**
+
+a = 8 cm
+
+b = 15 cm
+
+c = 17 cm
+
+h = 120/17 cm ≈ 7.059 cm
+
+**Example 4: Equal Hypotenuse Projections**
+
+p = 5 cm
+
+q = 5 cm
+
+h = 5 cm
+
+Explain the relationship to an isosceles right triangle.
+
+**Example 5: Unequal Hypotenuse Projections**
+
+p = 4 cm
+
+q = 25 cm
+
+h = 10 cm
+
+**Example 6: Decimal Measurements**
+
+a = 1.5 m
+
+b = 2 m
+
+c = 2.5 m
+
+h = 1.2 m
+
+**Example 7: Different Measurement Units**
+
+a = 30 cm
+
+b = 0.4 m
+
+c = 0.5 m
+
+Convert all values to centimeters.
+
+a = 30 cm
+
+b = 40 cm
+
+c = 50 cm
+
+h = 24 cm
+
+Do not repeat identical explanatory paragraphs after every example.
+
+### H2: Relationship Between Altitude and Triangle Area
+
+**Suggested length: 170–220 words**
+
+Explain:
+
+A = ab/2
+
+A = ch/2
+
+Therefore:
+
+h = 2A/c
+
+Use an example:
+
+A = 54 cm²
+
+c = 15 cm
+
+h = (2 × 54)/15
+
+h = 7.2 cm
+
+Explain when the area-based method is useful.
+
+Show how altitude can be verified using the triangle's area.
+
+### H2: Geometric Mean and Hypotenuse Projections
+
+**Suggested length: 170–220 words**
+
+Explain why the altitude is the geometric mean of the two projections.
+
+Use:
+
+p = 4
+
+q = 9
+
+Geometric mean:
+
+√(4 × 9) = 6
+
+Arithmetic mean:
+
+(4 + 9)/2 = 6.5
+
+Explain why the correct altitude is 6 rather than 6.5.
+
+Discuss the difference between the geometric mean and arithmetic mean in accessible language.
+
+### H2: Important Properties of Right Triangle Altitude
+
+**Suggested length: 220–280 words**
+
+Explain these properties:
+
+1. The altitude to the hypotenuse is perpendicular to it.
+2. The altitude divides the triangle into two smaller similar triangles.
+3. The altitude is shorter than both legs.
+4. The altitude is shorter than the hypotenuse.
+5. The altitude is the geometric mean of the two hypotenuse projections.
+6. For a fixed hypotenuse, the altitude is greatest when the two projections are equal.
+7. Scaling all side lengths by the same factor scales the altitude by that factor.
+
+Explain:
+
+h ≤ c/2
+
+Equality occurs when the two legs are equal.
+
+Use examples to illustrate the properties.
+
+### H2: How to Check Whether Your Altitude Answer Is Correct
+
+**Suggested length: 180–230 words**
+
+Explain three verification methods.
+
+**Check 1: Triangle Area**
+
+Compare:
+
+ab/2
+
+and:
+
+ch/2
+
+**Check 2: Geometric Mean**
+
+Verify:
+
+h² = pq
+
+**Check 3: Pythagorean Theorem**
+
+Confirm:
+
+a² + b² = c²
+
+Clarify that the Pythagorean theorem verifies the side lengths rather than directly verifying the calculated altitude.
+
+Explain the importance of using consistent units.
+
+### H2: Common Mistakes When Calculating Altitude
+
+**Suggested length: 230–300 words**
+
+Explain at least nine mistakes:
+
+1. Confusing altitude with a leg.
+2. Choosing the wrong calculator mode.
+3. Confusing projections with legs.
+4. Using the wrong hypotenuse.
+5. Forgetting the square root in the projection formula.
+6. Mixing centimeters and meters.
+7. Entering invalid side lengths.
+8. Rounding too early.
+9. Treating h² as the final altitude.
+10. Applying right-triangle formulas to an arbitrary triangle.
+
+For each mistake:
+- Explain the error.
+- Show the correction.
+- Include a short example when useful.
+
+Avoid repetitive warnings.
+
+### H2: Real-World Applications of Right Triangle Altitude
+
+**Suggested length: 170–220 words**
+
+Discuss relevant applications:
+
+- Geometry education
+- Technical drawing
+- Triangle-based layout problems
+- Surveying geometry
+- Structural geometry
+- Construction planning models
+- Area calculations
+- Geometric design
+
+Use realistic hypothetical examples.
+
+Explain that these applications require the correct geometric conditions.
+
+Do not imply that the altitude theorem can replace professional engineering or surveying methods.
+
+### H2: Practice Problems With Answers
+
+**Suggested length: 220–280 words**
+
+Create five original practice problems.
+
+Include:
+- Beginner side-based problem
+- Beginner projection-based problem
+- Decimal measurement problem
+- Missing-side problem
+- Intermediate geometric application
+
+Provide worked solutions after the questions.
+
+Ensure every answer is mathematically correct.
+
+Avoid repeating the same values used in the main worked examples.
+
+### H2: Frequently Asked Questions
+
+**Suggested length: 350–450 words**
+
+Write 10–12 useful FAQs.
+
+Suggested questions:
+
+1. What is the altitude of a right triangle?
+2. How do I calculate right triangle altitude?
+3. What is the altitude formula using three sides?
+4. How do I calculate altitude from projections?
+5. Can I calculate altitude using only two sides?
+6. Is altitude the same as height?
+7. Is altitude always shorter than the hypotenuse?
+8. Can the altitude be equal to a hypotenuse projection?
+9. How does the geometric mean theorem relate to altitude?
+10. How do I check my altitude calculation?
+11. Can I use this calculator for a non-right triangle?
+12. Which calculator mode should I choose?
+
+Keep answers concise, clear, and accurate.
+
+Avoid copying entire explanations from earlier sections.
+
+### H2: Related Right Triangle Calculators
+
+**Suggested length: 70–110 words**
+
+Briefly introduce relevant specialized tools.
+
+Explain which tool to use based on known measurements.
+
+Use contextual internal links.
+
+Do not add a generic promotional conclusion.
+
+---
+
+## 7. REQUIRED MATHEMATICAL DIAGRAMS
+
+Provide specifications for at least six accurate educational diagrams.
+
+### Diagram 1: Right Triangle With Altitude
+
+Show triangle ABC with:
+- Right angle at C
+- Hypotenuse AB = c
+- Legs AC = a and BC = b
+- Altitude CD = h
+- Segments AD = p and DB = q
+
+### Diagram 2: Altitude From Sides
+
+Show a 3-4-5 right triangle.
+
+Label:
+
+a = 3
+
+b = 4
+
+c = 5
+
+h = 2.4
+
+Use accurate proportions.
+
+### Diagram 3: Altitude From Projections
+
+Show:
+
+p = 9
+
+q = 16
+
+h = 12
+
+c = 25
+
+Make the perpendicular relationship visually clear.
+
+### Diagram 4: Similar Triangles Proof
+
+Show the original triangle and its two smaller similar triangles.
+
+Identify corresponding angles and sides.
+
+### Diagram 5: Area Formula Comparison
+
+Show the same right triangle with two different base-height arrangements.
+
+First:
+
+Base = a
+
+Height = b
+
+Second:
+
+Base = c
+
+Height = h
+
+Explain why the area remains unchanged.
+
+### Diagram 6: Equal vs. Unequal Projections
+
+Compare two right triangles with the same hypotenuse length.
+
+Use:
+
+Triangle 1:
+
+p = 5
+
+q = 5
+
+c = 10
+
+h = 5
+
+Triangle 2:
+
+p = 2
+
+q = 8
+
+c = 10
+
+h = 4
+
+Explain why the altitude is larger when the projections are equal.
+
+**Diagram requirements:**
+
+For every diagram, provide:
+- Suggested placement
+- Exact mathematical labels
+- Accurate construction instructions
+- Descriptive alt text
+- Figure caption
+- Responsive SVG implementation guidance
+
+Use mathematically accurate SVG illustrations whenever possible.
+
+Avoid decorative images that do not teach anything.
+
+Do not use inaccurate AI-generated geometry.
+
+---
+
+## 8. INTERNAL LINKING STRATEGY
+
+This page should serve as the central educational resource for right triangle altitude.
+
+Use relevant internal links to specialized calculators.
+
+Suggested pages:
+
+1. https://www.righttrianglesolver.com/right-triangle-altitude-from-sides-calculator/
+
+2. https://www.righttrianglesolver.com/right-triangle-altitude-from-projections-calculator/
+
+3. https://www.righttrianglesolver.com/right-triangle-area-calculator/
+
+4. https://www.righttrianglesolver.com/right-triangle-side-calculator/
+
+5. https://www.righttrianglesolver.com/right-triangle-projection-calculator/
+
+Verify every destination before including it.
+
+If a suggested URL is unavailable, locate the correct existing page or omit the link.
+
+Use approximately 4–7 natural internal links.
+
+Avoid repeating the same anchor text.
+
+Do not insert links simply to reach a numerical target.
+
+Do not link the page to itself.
+
+### Prevent Keyword Cannibalization
+
+The main page should focus on:
+
+**Right Triangle Altitude Calculator**
+
+The specialized side-based page should focus on:
+
+**Right Triangle Altitude From Sides Calculator**
+
+The specialized projection-based page should focus on:
+
+**Right Triangle Altitude From Projections Calculator**
+
+The main page should explain both methods sufficiently for readers to understand them.
+
+Link to the specialized pages for more detailed treatment.
+
+Do not duplicate the specialized pages' entire content.
+
+---
+
+## 9. HUMAN-LIKE WRITING REQUIREMENTS
+
+Write in a natural, professional, educational style.
+
+The content should sound like an experienced teacher.
+
+**Sentence Rules:**
+- Prefer short and medium-length sentences.
+- Vary sentence lengths naturally.
+- Use active voice where appropriate.
+- Avoid comma splices.
+- Avoid unnecessarily complex clauses.
+- Explain technical terms clearly.
+
+**Paragraph Rules:**
+- Prefer 2–4 sentences per paragraph.
+- Keep one main idea per paragraph.
+- Avoid excessive one-sentence paragraphs.
+- Do not repeat definitions to increase word count.
+
+**Tone:**
+- Friendly
+- Clear
+- Patient
+- Accurate
+- Helpful
+- Professional
+
+Avoid exaggerated or generic phrases such as:
+
+- Unlock the secrets of geometry
+- Dive into the world of triangles
+- Revolutionary calculator
+- Game-changing mathematical tool
+- Seamlessly calculate
+- In today's fast-paced digital world
+- Master every triangle effortlessly
+- The ultimate solution for everyone
+
+Avoid repetitive transitions.
+
+Do not use filler.
+
+Do not write paragraphs that merely restate the heading.
+
+Use examples, reasoning, and diagrams to create genuine depth.
+
+---
+
+## 10. SEO AND CONTENT QUALITY STANDARDS
+
+Follow people-first content principles and sound on-page SEO practices.
+
+Ensure:
+- The article satisfies search intent.
+- The calculator appears before long explanations.
+- Both calculator modes are explained clearly.
+- The mathematical formulas are easy to locate.
+- The diagrams support learning.
+- Examples use correct calculations.
+- The writing avoids keyword stuffing.
+- Headings are descriptive.
+- Internal links are contextual.
+- FAQs address genuine questions.
+- The article avoids duplicated explanations.
+- No unsupported claims are made.
+
+Do not claim that the article will guarantee first-page rankings.
+
+Do not fabricate author credentials, reviews, ratings, or user testimonials.
+
+Avoid making unsupported claims about the calculator's accuracy or popularity.
+
+Do not invent external citations.
+
+---
+
+## 11. SEO METADATA
+
+After writing the article, provide:
+
+**SEO Title**
+
+Approximately 50–60 characters when practical.
+
+Include the primary keyword naturally.
+
+**Meta Description**
+
+Approximately 145–160 characters.
+
+Explain that the calculator finds right triangle altitude using side lengths or hypotenuse projections.
+
+**Focus Keyword**
+
+Right Triangle Altitude Calculator
+
+**Secondary Keywords**
+
+Provide 8–12 relevant variations.
+
+**URL Slug**
+
+Keep the existing slug:
+
+right-triangle-altitude-calculator
+
+**Image SEO**
+
+Provide accurate, descriptive alt text for all six diagrams.
+
+Avoid keyword stuffing.
+
+---
+
+## 12. STRUCTURED DATA RECOMMENDATIONS
+
+Recommend suitable structured data based on the actual page.
+
+Consider:
+- WebPage
+- BreadcrumbList
+- WebApplication
+
+Only include properties supported by the real page.
+
+Do not invent:
+- Aggregate ratings
+- Reviews
+- Prices
+- Authors
+- Features
+- Download capabilities
+
+FAQ content may be included for user experience, but do not promise Google FAQ rich results.
+
+Provide JSON-LD separately from the article if requested.
+
+---
+
+## 13. FINAL EDITORIAL AND MATHEMATICAL REVIEW
+
+Before submitting the article, perform a complete review.
+
+### Mathematical Accuracy
+
+Verify:
+- Every formula
+- All examples
+- All square roots
+- All decimal approximations
+- All unit conversions
+- Triangle validity
+- Diagram geometry
+- Similar-triangle proportions
+- Practice-problem solutions
+
+### Content Quality
+
+Check:
+- No duplicated introduction
+- No repetitive definitions
+- No unnecessary paragraphs
+- No generic filler
+- No keyword stuffing
+- No unsupported claims
+- Clear distinctions between calculator modes
+- Helpful explanations for beginners
+- Meaningful diagrams
+- Useful worked examples
+
+### SEO Quality
+
+Check:
+- Clear primary search intent
+- Natural focus keyword placement
+- Logical heading hierarchy
+- Contextual internal links
+- Distinction from specialized altitude pages
+- Helpful FAQs
+- Descriptive metadata
+- Mobile-friendly content organization
+
+### User Experience
+
+Confirm:
+- The calculator remains near the top.
+- Users can identify the correct mode quickly.
+- Formulas are clearly displayed.
+- Diagrams are readable.
+- Examples are easy to follow.
+- Tables work on mobile.
+- The article can be scanned easily.
+
+---
+
+## 14. FINAL OUTPUT REQUIREMENTS
+
+Deliver the completed work in this order.
+
+**PART A — SEO Metadata**
+
+Provide:
+- SEO title
+- Meta description
+- Focus keyword
+- Secondary keywords
+- Existing URL slug
+
+**PART B — Complete Educational Article**
+
+Write 3,500–4,000 words of original, genuinely helpful content.
+
+Exceed 4,000 words only when additional explanations are valuable.
+
+Use:
+- One H1
+- Clear H2 and H3 headings
+- Mathematical formulas
+- Step-by-step examples
+- Comparison tables
+- Natural internal links
+- Practice problems
+- FAQs
+
+**PART C — Diagram Specifications**
+
+Provide six mathematically accurate educational diagrams.
+
+Include:
+- Construction instructions
+- Labels
+- Placement
+- Alt text
+- Captions
+- Responsive SVG recommendations
+
+**PART D — Structured Data**
+
+Recommend suitable structured data without inventing properties.
+
+**PART E — Final Quality Report**
+
+Include:
+- Approximate word count
+- Mathematical accuracy review
+- Readability review
+- Repetition review
+- Internal link review
+- Diagram accuracy review
+- Search intent review
+
+Do not include the editorial report within the published article.
+
+---
+
+## FINAL INSTRUCTION
+
+Create a comprehensive, trustworthy, engaging, mathematically accurate, and naturally written educational guide for the Right Triangle Altitude Calculator.
+
+Prioritize the reader's ability to solve a problem over search-engine optimization metrics.
+
+Explain both existing calculator modes clearly.
+
+Use meaningful worked examples and accurate geometric diagrams.
+
+Make complex mathematical relationships understandable without oversimplifying them.
+
+Avoid keyword stuffing, repetitive explanations, unnecessary filler, and artificial writing patterns.
+
+Ensure every section contributes unique educational value.
+
+The finished article should function as the website's central educational resource for understanding and calculating the altitude of a right triangle.

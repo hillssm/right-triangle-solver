@@ -92,17 +92,37 @@ def js_single_quoted(s):
     return "'" + s.replace("\\", "\\\\").replace("'", "\\'").replace("\n", "\\n") + "'"
 
 
+ANCHOR_RE = re.compile(r'<a href="[^"]*">.*?</a>')
+
+
+def prose_html(text):
+    """Escape prose HTML but keep author-controlled <a href> links raw.
+
+    Internal guide links are authored as literal <a href="/...">...</a> in the
+    JSON source (and render raw in the localized components via set:html),
+    so the EN generator must not escape them either.
+    """
+    out = []
+    pos = 0
+    for m in ANCHOR_RE.finditer(text):
+        out.append(html.escape(text[pos:m.start()], quote=False))
+        out.append(m.group(0))
+        pos = m.end()
+    out.append(html.escape(text[pos:], quote=False))
+    return "".join(out)
+
+
 def mixed_html(text):
     """Split text on [[...]]/[[[...]]] segments; prose -> escaped HTML, math -> rich() span."""
     out = []
     pos = 0
     for m in MATH_RE.finditer(text):
         if m.start() > pos:
-            out.append(html.escape(text[pos:m.start()], quote=False))
+            out.append(prose_html(text[pos:m.start()]))
         out.append(f"<span set:html={{rich({js_single_quoted(m.group(0))})}} />")
         pos = m.end()
     if pos < len(text):
-        out.append(html.escape(text[pos:], quote=False))
+        out.append(prose_html(text[pos:]))
     return "".join(out)
 
 

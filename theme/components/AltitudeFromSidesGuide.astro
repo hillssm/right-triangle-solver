@@ -75,7 +75,7 @@ const imgSrc = (name: string): string => `/images/right-triangle-altitude-from-s
   <p>The calculator takes three measurements. Leg a is the first perpendicular side, Leg b is the second perpendicular side, and Hypotenuse c is the longest side, opposite the right angle. All three must use the same unit, so convert meters to centimeters or feet to inches before typing.</p>
   <p>Click Calculate Altitude h to see the result with its substitution, and use Reset to clear the fields for the next problem. The calculator answers with the compact formula:</p>
   <p><span set:html={rich('[[[h=\\frac{ab}{c}]]]')} /></p>
-  <p>If you know only two sides, recover the third with the Pythagorean theorem first, or try the general &lt;a href="/right-triangle-altitude-calculator/"&gt;altitude calculator&lt;/a&gt; for a different starting point.</p>
+  <p>If you know only two sides, recover the third with the Pythagorean theorem first, or try the general <a href="/right-triangle-altitude-calculator/">altitude calculator</a> for a different starting point.</p>
 </section>
 
 <!-- Section 3: sec-altitude -->
@@ -224,7 +224,7 @@ const imgSrc = (name: string): string => `/images/right-triangle-altitude-from-s
   <p>Take <span set:html={rich('[[a=7]]')} /> and <span set:html={rich('[[b=24]]')} />. Find the hypotenuse first: <span set:html={rich('[[[c=\\sqrt{7^2+24^2}=\\sqrt{49+576}=\\sqrt{625}=25]]]')} /> Then the altitude follows: <span set:html={rich('[[[h=\\frac{7 \\times 24}{25}=\\frac{168}{25}=6.72]]]')} /></p>
   <h3>Case 2: One Leg and the Hypotenuse Known</h3>
   <p>Take <span set:html={rich('[[a=8]]')} /> and <span set:html={rich('[[c=10]]')} />. Recover the missing leg with the rearranged Pythagorean theorem: <span set:html={rich('[[[b=\\sqrt{c^2-a^2}=\\sqrt{100-64}=\\sqrt{36}=6]]]')} /> Then the altitude is: <span set:html={rich('[[[h=\\frac{8 \\times 6}{10}=\\frac{48}{10}=4.8]]]')} /></p>
-  <p>Treat these as educational alternatives, since the calculator expects three measurements. A dedicated &lt;a href="/right-triangle-side-calculator/"&gt;side calculator&lt;/a&gt; can recover the missing length before you continue here.</p>
+  <p>Treat these as educational alternatives, since the calculator expects three measurements. A dedicated <a href="/right-triangle-side-calculator/">side calculator</a> can recover the missing length before you continue here.</p>
 </section>
 
 <!-- Section 12: sec-verify -->
@@ -242,7 +242,7 @@ const imgSrc = (name: string): string => `/images/right-triangle-altitude-from-s
 <!-- Section 13: sec-vs-projections -->
 <section id="sec-vs-projections" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>Altitude From Sides vs. Altitude From Projections</h2>
-  <p>The altitude can be found two ways. The side method on this page is <span set:html={rich('[[h=\\frac{ab}{c}]]')} />, starting from the three side lengths. The projection method is <span set:html={rich('[[h=\\sqrt{pq}]]')} />, starting from the two segments into which the altitude divides the hypotenuse. Both describe the same segment and always agree for the same triangle; the choice depends on which measurements you have. For the second route, see the &lt;a href="/right-triangle-altitude-from-projections-calculator/"&gt;altitude-from-projections calculator&lt;/a&gt; page.</p>
+  <p>The altitude can be found two ways. The side method on this page is <span set:html={rich('[[h=\\frac{ab}{c}]]')} />, starting from the three side lengths. The projection method is <span set:html={rich('[[h=\\sqrt{pq}]]')} />, starting from the two segments into which the altitude divides the hypotenuse. Both describe the same segment and always agree for the same triangle; the choice depends on which measurements you have. For the second route, see the <a href="/right-triangle-altitude-from-projections-calculator/">altitude-from-projections calculator</a> page.</p>
   <div class="not-prose overflow-x-auto my-6">
     <table class="w-full text-sm my-6 border-collapse">
       <thead>
@@ -265,7 +265,7 @@ const imgSrc = (name: string): string => `/images/right-triangle-altitude-from-s
   <h2>Relationship Between Altitude, Area, and Hypotenuse</h2>
   <p>Altitude, area, and hypotenuse link through two expressions for one area. From the legs: <span set:html={rich('[[[A=\\frac{ab}{2}]]]')} /> From the hypotenuse and altitude: <span set:html={rich('[[[A=\\frac{ch}{2}]]]')} /></p>
   <p>Solving the second expression for <span set:html={rich('[[h]]')} /> gives a handy rearrangement: <span set:html={rich('[[[h=\\frac{2A}{c}]]]')} /></p>
-  <p>This offers a second route when the area is known directly. For a triangle with area <span set:html={rich('[[54\\text{ cm}^2]]')} /> and hypotenuse <span set:html={rich('[[15\\text{ cm}]]')} />, <span set:html={rich('[[[h=\\frac{2 \\times 54}{15}=\\frac{108}{15}=7.2\\text{ cm}]]]')} />, the same answer the side formula gave for the 9-12-15 triangle. If you need the area first, an &lt;a href="/right-triangle-area-calculator/"&gt;area calculator&lt;/a&gt; handles that step, and the &lt;a href="/right-triangle-area-from-altitude-calculator/"&gt;area-from-altitude calculator&lt;/a&gt; reverses the computation once <span set:html={rich('[[h]]')} /> is known.</p>
+  <p>This offers a second route when the area is known directly. For a triangle with area <span set:html={rich('[[54\\text{ cm}^2]]')} /> and hypotenuse <span set:html={rich('[[15\\text{ cm}]]')} />, <span set:html={rich('[[[h=\\frac{2 \\times 54}{15}=\\frac{108}{15}=7.2\\text{ cm}]]]')} />, the same answer the side formula gave for the 9-12-15 triangle. If you need the area first, an <a href="/right-triangle-area-calculator/">area calculator</a> handles that step, and the <a href="/right-triangle-area-from-altitude-calculator/">area-from-altitude calculator</a> reverses the computation once <span set:html={rich('[[h]]')} /> is known.</p>
   <p>This route shines when a problem states the area directly, as many textbook questions do, or when the area was computed in a previous part. Instead of hunting for the individual legs, you divide twice the area by the hypotenuse and finish in one line. It is the same altitude the side formula gives, reached from a different starting point.</p>
 </section>
 
@@ -425,6 +425,6 @@ const imgSrc = (name: string): string => `/images/right-triangle-altitude-from-s
 <!-- Section 21: sec-conclusion -->
 <section id="sec-conclusion" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>Related Right Triangle Calculators</h2>
-  <p>With the altitude formula in hand, pick the next tool by what you know. If you know the hypotenuse segments instead of the sides, head to the projections calculator. If you know the altitude and want the area, the &lt;a href="/right-triangle-area-from-hypotenuse-and-altitude-calculator/"&gt;area from hypotenuse and altitude&lt;/a&gt; tool reverses the computation from the area section. The five related calculators below cover every neighboring calculation. Start with the tool that matches the measurements you already have, and let each result check the next.</p>
+  <p>With the altitude formula in hand, pick the next tool by what you know. If you know the hypotenuse segments instead of the sides, head to the projections calculator. If you know the altitude and want the area, the <a href="/right-triangle-area-from-hypotenuse-and-altitude-calculator/">area from hypotenuse and altitude</a> tool reverses the computation from the area section. The five related calculators below cover every neighboring calculation. Start with the tool that matches the measurements you already have, and let each result check the next.</p>
 </section>
 

@@ -206,7 +206,7 @@ export const B1_ES = {
           ],
           "image": {
             "src": "altitude-main.svg",
-            "alt": "Triángulo rectángulo ABC con ángulo recto en C, altura CD a la hipotenusa AB, proyecciones AD = [[p]] y DB = [[q]], altura CD = [[h]]",
+            "alt": "Triángulo rectángulo ABC con ángulo recto en C, altura CD a la hipotenusa AB, proyecciones AD = p y DB = q, altura CD = h",
             "caption": "La altura CD divide la hipotenusa AB en las proyecciones [[p]] y [[q]]; [[h]] es la media geométrica de [[p]] y [[q]].",
           },
         },
@@ -244,7 +244,7 @@ export const B1_ES = {
           ],
           "image": {
             "src": "altitude-proof.svg",
-            "alt": "Los dos triángulos rectángulos más pequeños ACD y CBD con lados correspondientes etiquetados para mostrar [[\\frac{h}{p}=\\frac{q}{h}]]",
+            "alt": "Los dos triángulos rectángulos más pequeños ACD y CBD con lados correspondientes etiquetados para mostrar h/p=q/h",
             "caption": "Los triángulos ACD y CBD son semejantes, así que [[\\frac{h}{p}=\\frac{q}{h}]] y [[h]] al cuadrado es igual a [[p]] por [[q]].",
           },
         },
@@ -451,7 +451,7 @@ export const B1_ES = {
           ],
           "image": {
             "src": "altitude-geometric-mean.svg",
-            "alt": "Rectángulo de [[4]] por [[9]] y cuadrado de [[6]] por [[6]] con igual área, más una recta numérica que compara la media geométrica [[6]] y la media aritmética [[6.5]]",
+            "alt": "Rectángulo de 4 por 9 y cuadrado de 6 por 6 con igual área, más una recta numérica que compara la media geométrica 6 y la media aritmética 6.5",
             "caption": "Para [[p=4]] y [[q=9]], la media geométrica [[6]] (la altura) queda por debajo de la media aritmética [[6.5]].",
           },
         },

@@ -206,7 +206,7 @@ export const B2_FR = {
           ],
           "image": {
             "src": "altitude-main.svg",
-            "alt": "Triangle rectangle ABC avec angle droit en C, hauteur CD vers l'hypoténuse AB, projections AD = [[p]] et DB = [[q]], hauteur CD = [[h]]",
+            "alt": "Triangle rectangle ABC avec angle droit en C, hauteur CD vers l'hypoténuse AB, projections AD = p et DB = q, hauteur CD = h",
             "caption": "La hauteur CD divise l'hypoténuse AB en projections [[p]] et [[q]] ; [[h]] est la moyenne géométrique de [[p]] et [[q]].",
           },
         },
@@ -244,7 +244,7 @@ export const B2_FR = {
           ],
           "image": {
             "src": "altitude-proof.svg",
-            "alt": "Les deux triangles rectangles plus petits ACD et CBD avec les côtés correspondants notés pour montrer [[\\frac{h}{p}=\\frac{q}{h}]]",
+            "alt": "Les deux triangles rectangles plus petits ACD et CBD avec les côtés correspondants notés pour montrer h/p=q/h",
             "caption": "Les triangles ACD et CBD sont semblables, donc [[\\frac{h}{p}=\\frac{q}{h}]] et [[h]] au carré vaut [[p]] fois [[q]].",
           },
         },
@@ -451,7 +451,7 @@ export const B2_FR = {
           ],
           "image": {
             "src": "altitude-geometric-mean.svg",
-            "alt": "Rectangle [[4]] sur [[9]] et carré [[6]] sur [[6]] d'aire égale, plus une droite numérique comparant la moyenne géométrique [[6]] et la moyenne arithmétique [[6.5]]",
+            "alt": "Rectangle 4 sur 9 et carré 6 sur 6 d'aire égale, plus une droite numérique comparant la moyenne géométrique 6 et la moyenne arithmétique 6.5",
             "caption": "Pour [[p=4]] et [[q=9]], la moyenne géométrique [[6]] (la hauteur) se situe sous la moyenne arithmétique [[6.5]].",
           },
         },

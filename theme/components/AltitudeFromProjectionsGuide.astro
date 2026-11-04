@@ -137,7 +137,7 @@ const imgSrc = (name: string): string => `/images/altitude-from-projections/${na
   <p>Two small squares mark the two right angles: one at C inside the original triangle, and one at D where the altitude meets the hypotenuse. The altitude CD appears as a clean interior segment, visually distinct from the two legs that form the triangle's outer frame.</p>
   <p>The altitude divides ABC into two smaller right triangles, ACD and CBD, which are similar to each other and to the original triangle. In textbook questions, projections are often described as the two segments of the hypotenuse, or simply as the numbers sitting on either side of the altitude foot. Label them <span set:html={rich('[[p]]')} /> and <span set:html={rich('[[q]]')} /> before computing anything.</p>
   <figure class="not-prose my-6">
-    <img src={imgSrc('altitude-main.svg')} alt="Right triangle ABC with right angle at C, altitude CD to hypotenuse AB, projections AD = [[p]] and DB = [[q]], altitude CD = [[h]]" class="mx-auto h-auto w-full max-w-xl my-8" loading="lazy" />
+    <img src={imgSrc('altitude-main.svg')} alt="Right triangle ABC with right angle at C, altitude CD to hypotenuse AB, projections AD = p and DB = q, altitude CD = h" class="mx-auto h-auto w-full max-w-xl my-8" loading="lazy" />
     <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Altitude CD splits hypotenuse AB into projections <span set:html={rich('[[p]]')} /> and <span set:html={rich('[[q]]')} />; <span set:html={rich('[[h]]')} /> is the geometric mean of <span set:html={rich('[[p]]')} /> and <span set:html={rich('[[q]]')} />.</figcaption>
   </figure>
 </section>
@@ -153,7 +153,7 @@ const imgSrc = (name: string): string => `/images/altitude-from-projections/${na
   <p><span set:html={rich('[[[h^2=p \\times q]]]')} /></p>
   <p>Taking the square root of both sides gives <span set:html={rich('[[h=\\sqrt{p\\times q}]]')} />. The equation <span set:html={rich('[[h^2=p\\times q]]')} /> has two algebraic roots, positive and negative, but a length is a positive quantity, so only the positive root describes the altitude.</p>
   <figure class="not-prose my-6">
-    <img src={imgSrc('altitude-proof.svg')} alt="The two smaller right triangles ACD and CBD with corresponding sides labeled to show [[\frac{h}{p}=\frac{q}{h}]]" class="mx-auto h-auto w-full max-w-xl my-8" loading="lazy" />
+    <img src={imgSrc('altitude-proof.svg')} alt="The two smaller right triangles ACD and CBD with corresponding sides labeled to show h/p=q/h" class="mx-auto h-auto w-full max-w-xl my-8" loading="lazy" />
     <figcaption class="mt-2 text-center text-sm text-on-surface-variant">Triangles ACD and CBD are similar, so <span set:html={rich('[[\\frac{h}{p}=\\frac{q}{h}]]')} /> and <span set:html={rich('[[h]]')} /> squared equals <span set:html={rich('[[p]]')} /> times <span set:html={rich('[[q]]')} />.</figcaption>
   </figure>
 </section>
@@ -228,7 +228,7 @@ const imgSrc = (name: string): string => `/images/altitude-from-projections/${na
   <p>The arithmetic mean is the familiar average: <span set:html={rich('[[(p+q)/2]]')} />. For <span set:html={rich('[[p=4]]')} /> and <span set:html={rich('[[q=9]]')} />, the geometric mean is <span set:html={rich('[[\\sqrt{36}=6]]')} /> while the arithmetic mean is <span set:html={rich('[[13/2=6.5]]')} />. The altitude equals <span set:html={rich('[[6]]')} />, not <span set:html={rich('[[6.5]]')} />, because the similar-triangle proportion forces a multiplicative relationship, not an additive one.</p>
   <p>The geometric mean never exceeds the arithmetic mean for positive inputs, with equality only when <span set:html={rich('[[p=q]]')} />. That is why the altitude is largest, relative to the hypotenuse, when the projections are equal. A rectangle <span set:html={rich('[[4]]')} /> by <span set:html={rich('[[9]]')} /> and a square <span set:html={rich('[[6]]')} /> by <span set:html={rich('[[6]]')} /> have the same area, <span set:html={rich('[[36]]')} />, which is the same idea drawn as shapes: the altitude is the side of the square whose area equals the rectangle's.</p>
   <figure class="not-prose my-6">
-    <img src={imgSrc('altitude-geometric-mean.svg')} alt="Rectangle [[4]] by [[9]] and square [[6]] by [[6]] with equal area, plus a number line comparing geometric mean [[6]] and arithmetic mean [[6.5]]" class="mx-auto h-auto w-full max-w-xl my-8" loading="lazy" />
+    <img src={imgSrc('altitude-geometric-mean.svg')} alt="Rectangle 4 by 9 and square 6 by 6 with equal area, plus a number line comparing geometric mean 6 and arithmetic mean 6.5" class="mx-auto h-auto w-full max-w-xl my-8" loading="lazy" />
     <figcaption class="mt-2 text-center text-sm text-on-surface-variant">For <span set:html={rich('[[p=4]]')} /> and <span set:html={rich('[[q=9]]')} />, the geometric mean <span set:html={rich('[[6]]')} /> (the altitude) sits below the arithmetic mean <span set:html={rich('[[6.5]]')} />.</figcaption>
   </figure>
 </section>

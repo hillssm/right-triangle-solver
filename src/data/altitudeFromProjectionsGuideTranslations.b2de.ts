@@ -206,7 +206,7 @@ export const B2_DE = {
           ],
           "image": {
             "src": "altitude-main.svg",
-            "alt": "Rechtwinkliges Dreieck ABC mit rechtem Winkel bei C, Höhe CD zur Hypotenuse AB, Projektionen AD = [[p]] und DB = [[q]], Höhe CD = [[h]]",
+            "alt": "Rechtwinkliges Dreieck ABC mit rechtem Winkel bei C, Höhe CD zur Hypotenuse AB, Projektionen AD = p und DB = q, Höhe CD = h",
             "caption": "Die Höhe CD teilt die Hypotenuse AB in die Projektionen [[p]] und [[q]]; [[h]] ist das geometrische Mittel von [[p]] und [[q]].",
           },
         },
@@ -244,7 +244,7 @@ export const B2_DE = {
           ],
           "image": {
             "src": "altitude-proof.svg",
-            "alt": "Die beiden kleineren rechtwinkligen Dreiecke ACD und CBD mit entsprechend beschrifteten Seiten, die [[\\frac{h}{p}=\\frac{q}{h}]] zeigen",
+            "alt": "Die beiden kleineren rechtwinkligen Dreiecke ACD und CBD mit entsprechend beschrifteten Seiten, die h/p=q/h zeigen",
             "caption": "Die Dreiecke ACD und CBD sind ähnlich, also gilt [[\\frac{h}{p}=\\frac{q}{h}]] und [[h]] zum Quadrat ist gleich [[p]] mal [[q]].",
           },
         },
@@ -451,7 +451,7 @@ export const B2_DE = {
           ],
           "image": {
             "src": "altitude-geometric-mean.svg",
-            "alt": "Rechteck [[4]] mal [[9]] und Quadrat [[6]] mal [[6]] mit gleicher Fläche, dazu ein Zahlenstrahl, der das geometrische Mittel [[6]] mit dem arithmetischen Mittel [[6.5]] vergleicht",
+            "alt": "Rechteck 4 mal 9 und Quadrat 6 mal 6 mit gleicher Fläche, dazu ein Zahlenstrahl, der das geometrische Mittel 6 mit dem arithmetischen Mittel 6.5 vergleicht",
             "caption": "Für [[p=4]] und [[q=9]] liegt das geometrische Mittel [[6]] (die Höhe) unter dem arithmetischen Mittel [[6.5]].",
           },
         },

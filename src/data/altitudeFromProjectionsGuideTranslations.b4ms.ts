@@ -206,7 +206,7 @@ export const B4_MS = {
           ],
           "image": {
             "src": "altitude-main.svg",
-            "alt": "Segi tiga bersudut tepat ABC dengan sudut tepat di C, altitud CD ke hipotenus AB, unjuran AD = [[p]] dan DB = [[q]], altitud CD = [[h]]",
+            "alt": "Segi tiga bersudut tepat ABC dengan sudut tepat di C, altitud CD ke hipotenus AB, unjuran AD = p dan DB = q, altitud CD = h",
             "caption": "Altitud CD membahagikan hipotenus AB kepada unjuran [[p]] dan [[q]]; [[h]] ialah min geometri bagi [[p]] dan [[q]].",
           },
         },
@@ -244,7 +244,7 @@ export const B4_MS = {
           ],
           "image": {
             "src": "altitude-proof.svg",
-            "alt": "Dua segi tiga bersudut tepat yang lebih kecil ACD dan CBD dengan sisi-sisi sepadan dilabel untuk menunjukkan [[\\frac{h}{p}=\\frac{q}{h}]]",
+            "alt": "Dua segi tiga bersudut tepat yang lebih kecil ACD dan CBD dengan sisi-sisi sepadan dilabel untuk menunjukkan h/p=q/h",
             "caption": "Segi tiga ACD dan CBD adalah serupa, jadi [[\\frac{h}{p}=\\frac{q}{h}]] dan [[h]] kuasa dua sama dengan [[p]] darab [[q]].",
           },
         },
@@ -451,7 +451,7 @@ export const B4_MS = {
           ],
           "image": {
             "src": "altitude-geometric-mean.svg",
-            "alt": "Segi empat tepat [[4]] dengan [[9]] dan segi empat sama [[6]] dengan [[6]] dengan luas yang sama, serta garis nombor yang membandingkan min geometri [[6]] dan min aritmetik [[6.5]]",
+            "alt": "Segi empat tepat 4 dengan 9 dan segi empat sama 6 dengan 6 dengan luas yang sama, serta garis nombor yang membandingkan min geometri 6 dan min aritmetik 6.5",
             "caption": "Untuk [[p=4]] dan [[q=9]], min geometri [[6]] (altitud) terletak di bawah min aritmetik [[6.5]].",
           },
         },

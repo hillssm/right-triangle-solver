@@ -206,7 +206,7 @@ export const B5_ID = {
           ],
           "image": {
             "src": "altitude-main.svg",
-            "alt": "Segitiga siku-siku ABC dengan sudut siku-siku di C, garis tinggi CD ke hipotenusa AB, proyeksi AD = [[p]] dan DB = [[q]], tinggi CD = [[h]]",
+            "alt": "Segitiga siku-siku ABC dengan sudut siku-siku di C, garis tinggi CD ke hipotenusa AB, proyeksi AD = p dan DB = q, tinggi CD = h",
             "caption": "Garis tinggi CD membelah hipotenusa AB menjadi proyeksi [[p]] dan [[q]]; [[h]] adalah rata-rata geometri dari [[p]] dan [[q]].",
           },
         },
@@ -244,7 +244,7 @@ export const B5_ID = {
           ],
           "image": {
             "src": "altitude-proof.svg",
-            "alt": "Dua segitiga siku-siku yang lebih kecil, ACD dan CBD, dengan sisi-sisi yang bersesuaian diberi label untuk menunjukkan [[\\frac{h}{p}=\\frac{q}{h}]]",
+            "alt": "Dua segitiga siku-siku yang lebih kecil, ACD dan CBD, dengan sisi-sisi yang bersesuaian diberi label untuk menunjukkan h/p=q/h",
             "caption": "Segitiga ACD dan CBD sebangun, sehingga [[\\frac{h}{p}=\\frac{q}{h}]] dan kuadrat [[h]] sama dengan [[p]] kali [[q]].",
           },
         },
@@ -451,7 +451,7 @@ export const B5_ID = {
           ],
           "image": {
             "src": "altitude-geometric-mean.svg",
-            "alt": "Persegi panjang [[4]] kali [[9]] dan persegi [[6]] kali [[6]] dengan luas yang sama, plus garis bilangan yang membandingkan rata-rata geometri [[6]] dan rata-rata aritmetika [[6.5]]",
+            "alt": "Persegi panjang 4 kali 9 dan persegi 6 kali 6 dengan luas yang sama, plus garis bilangan yang membandingkan rata-rata geometri 6 dan rata-rata aritmetika 6.5",
             "caption": "Untuk [[p=4]] dan [[q=9]], rata-rata geometri [[6]] (tinggi segitiga) berada di bawah rata-rata aritmetika [[6.5]].",
           },
         },

@@ -205,7 +205,7 @@ export const B2_IT = {
           ],
           "h2": "Diagramma dell'altezza del triangolo rettangolo spiegato",
           "image": {
-            "alt": "Triangolo rettangolo ABC con angolo retto in C, altezza CD all'ipotenusa AB, proiezioni AD = [[p]] e DB = [[q]], altezza CD = [[h]]",
+            "alt": "Triangolo rettangolo ABC con angolo retto in C, altezza CD all'ipotenusa AB, proiezioni AD = p e DB = q, altezza CD = h",
             "caption": "L'altezza CD divide l'ipotenusa AB nelle proiezioni [[p]] e [[q]]; [[h]] è la media geometrica di [[p]] e [[q]].",
             "src": "altitude-main.svg",
           },
@@ -243,7 +243,7 @@ export const B2_IT = {
           ],
           "h2": "Perché funziona la formula dell'altezza? Dimostrazione con triangoli simili",
           "image": {
-            "alt": "I due triangoli rettangoli più piccoli ACD e CBD con i lati corrispondenti etichettati per mostrare [[\\frac{h}{p}=\\frac{q}{h}]]",
+            "alt": "I due triangoli rettangoli più piccoli ACD e CBD con i lati corrispondenti etichettati per mostrare h/p=q/h",
             "caption": "I triangoli ACD e CBD sono simili, quindi [[\\frac{h}{p}=\\frac{q}{h}]] e [[h]] al quadrato è uguale a [[p]] per [[q]].",
             "src": "altitude-proof.svg",
           },
@@ -450,7 +450,7 @@ export const B2_IT = {
           ],
           "h2": "Teorema della media geometrica e altezza del triangolo rettangolo",
           "image": {
-            "alt": "Rettangolo [[4]] per [[9]] e quadrato [[6]] per [[6]] con area uguale, più una retta dei numeri che confronta la media geometrica [[6]] e la media aritmetica [[6.5]]",
+            "alt": "Rettangolo 4 per 9 e quadrato 6 per 6 con area uguale, più una retta dei numeri che confronta la media geometrica 6 e la media aritmetica 6.5",
             "caption": "Per [[p=4]] e [[q=9]], la media geometrica [[6]] (l'altezza) si trova sotto la media aritmetica [[6.5]].",
             "src": "altitude-geometric-mean.svg",
           },

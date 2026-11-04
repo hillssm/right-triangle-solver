@@ -206,7 +206,7 @@ export const B6_ZH = {
           ],
           "image": {
             "src": "altitude-main.svg",
-            "alt": "直角三角形 ABC，直角在 C 处，高 CD 落在斜边 AB 上，投影 AD = [[p]]、DB = [[q]]，高 CD = [[h]]",
+            "alt": "直角三角形 ABC，直角在 C 处，高 CD 落在斜边 AB 上，投影 AD = p、DB = q，高 CD = h",
             "caption": "高 CD 把斜边 AB 分成投影 [[p]] 和 [[q]]；[[h]] 是 [[p]] 和 [[q]] 的几何平均数。",
           },
         },
@@ -244,7 +244,7 @@ export const B6_ZH = {
           ],
           "image": {
             "src": "altitude-proof.svg",
-            "alt": "两个较小的直角三角形 ACD 和 CBD，对应边已标出，显示 [[\\frac{h}{p}=\\frac{q}{h}]]",
+            "alt": "两个较小的直角三角形 ACD 和 CBD，对应边已标出，显示 h/p=q/h",
             "caption": "三角形 ACD 和 CBD 相似，所以 [[\\frac{h}{p}=\\frac{q}{h}]]，[[h]] 的平方等于 [[p]] 乘以 [[q]]。",
           },
         },
@@ -451,7 +451,7 @@ export const B6_ZH = {
           ],
           "image": {
             "src": "altitude-geometric-mean.svg",
-            "alt": "[[4]] 乘 [[9]] 的长方形与 [[6]] 乘 [[6]] 的正方形面积相等，外加一条数轴比较几何平均数 [[6]] 与算术平均数 [[6.5]]",
+            "alt": "4 乘 9 的长方形与 6 乘 6 的正方形面积相等，外加一条数轴比较几何平均数 6 与算术平均数 6.5",
             "caption": "当 [[p=4]]、[[q=9]] 时，几何平均数 [[6]]（即高）位于算术平均数 [[6.5]] 之下。",
           },
         },

@@ -206,7 +206,7 @@ export const B4_PL = {
           ],
           "image": {
             "src": "altitude-main.svg",
-            "alt": "Trójkąt prostokątny ABC z kątem prostym przy C, wysokością CD na przeciwprostokątną AB, rzutami AD = [[p]] i DB = [[q]], wysokością CD = [[h]]",
+            "alt": "Trójkąt prostokątny ABC z kątem prostym przy C, wysokością CD na przeciwprostokątną AB, rzutami AD = p i DB = q, wysokością CD = h",
             "caption": "Wysokość CD dzieli przeciwprostokątną AB na rzuty [[p]] i [[q]]; [[h]] to średnia geometryczna [[p]] i [[q]].",
           },
         },
@@ -244,7 +244,7 @@ export const B4_PL = {
           ],
           "image": {
             "src": "altitude-proof.svg",
-            "alt": "Dwa mniejsze trójkąty prostokątne ACD i CBD z oznaczonymi odpowiadającymi sobie bokami, pokazujące [[\\frac{h}{p}=\\frac{q}{h}]]",
+            "alt": "Dwa mniejsze trójkąty prostokątne ACD i CBD z oznaczonymi odpowiadającymi sobie bokami, pokazujące h/p=q/h",
             "caption": "Trójkąty ACD i CBD są podobne, więc [[\\frac{h}{p}=\\frac{q}{h}]], a [[h]] do kwadratu równa się [[p]] razy [[q]].",
           },
         },
@@ -451,7 +451,7 @@ export const B4_PL = {
           ],
           "image": {
             "src": "altitude-geometric-mean.svg",
-            "alt": "Prostokąt [[4]] na [[9]] i kwadrat [[6]] na [[6]] o równych polach oraz oś liczbowa porównująca średnią geometryczną [[6]] ze średnią arytmetyczną [[6.5]]",
+            "alt": "Prostokąt 4 na 9 i kwadrat 6 na 6 o równych polach oraz oś liczbowa porównująca średnią geometryczną 6 ze średnią arytmetyczną 6.5",
             "caption": "Dla [[p=4]] i [[q=9]] średnia geometryczna [[6]] (wysokość) leży poniżej średniej arytmetycznej [[6.5]].",
           },
         },

@@ -206,7 +206,7 @@ export const B6_SV = {
           ],
           "image": {
             "src": "altitude-main.svg",
-            "alt": "Rätvinklig triangel ABC med rät vinkel vid C, höjd CD mot hypotenusa AB, projektioner AD = [[p]] och DB = [[q]], höjd CD = [[h]]",
+            "alt": "Rätvinklig triangel ABC med rät vinkel vid C, höjd CD mot hypotenusa AB, projektioner AD = p och DB = q, höjd CD = h",
             "caption": "Höjd CD delar hypotenusa AB i projektionerna [[p]] och [[q]]; [[h]] är det geometriska medelvärdet av [[p]] och [[q]].",
           },
         },
@@ -244,7 +244,7 @@ export const B6_SV = {
           ],
           "image": {
             "src": "altitude-proof.svg",
-            "alt": "De två mindre rätvinkliga trianglarna ACD och CBD med motsvarande sidor betecknade för att visa [[\\frac{h}{p}=\\frac{q}{h}]]",
+            "alt": "De två mindre rätvinkliga trianglarna ACD och CBD med motsvarande sidor betecknade för att visa h/p=q/h",
             "caption": "Trianglarna ACD och CBD är likformiga, så [[\\frac{h}{p}=\\frac{q}{h}]] och [[h]] i kvadrat är lika med [[p]] gånger [[q]].",
           },
         },
@@ -451,7 +451,7 @@ export const B6_SV = {
           ],
           "image": {
             "src": "altitude-geometric-mean.svg",
-            "alt": "Rektangel [[4]] gånger [[9]] och kvadrat [[6]] gånger [[6]] med lika area, plus en tallinje som jämför geometriskt medelvärde [[6]] och aritmetiskt medelvärde [[6.5]]",
+            "alt": "Rektangel 4 gånger 9 och kvadrat 6 gånger 6 med lika area, plus en tallinje som jämför geometriskt medelvärde 6 och aritmetiskt medelvärde 6.5",
             "caption": "För [[p=4]] och [[q=9]], det geometriska medelvärdet [[6]] (höjden) ligger under det aritmetiska medelvärdet [[6.5]].",
           },
         },

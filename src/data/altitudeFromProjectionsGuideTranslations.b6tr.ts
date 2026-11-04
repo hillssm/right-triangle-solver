@@ -206,7 +206,7 @@ export const B6_TR = {
           ],
           "image": {
             "src": "altitude-main.svg",
-            "alt": "C'de dik açılı ABC dik üçgeni, AB hipotenüsüne CD yüksekliği, izdüşümler AD = [[p]] ve DB = [[q]], yükseklik CD = [[h]]",
+            "alt": "C'de dik açılı ABC dik üçgeni, AB hipotenüsüne CD yüksekliği, izdüşümler AD = p ve DB = q, yükseklik CD = h",
             "caption": "CD yüksekliği AB hipotenüsünü [[p]] ve [[q]] izdüşümlerine böler; [[h]], [[p]] ve [[q]] değerlerinin geometrik ortalamasıdır.",
           },
         },
@@ -244,7 +244,7 @@ export const B6_TR = {
           ],
           "image": {
             "src": "altitude-proof.svg",
-            "alt": "[[\\frac{h}{p}=\\frac{q}{h}]] oranını göstermek için karşılıklı kenarları etiketlenmiş ACD ve CBD adlı iki küçük dik üçgen",
+            "alt": "h/p=q/h oranını göstermek için karşılıklı kenarları etiketlenmiş ACD ve CBD adlı iki küçük dik üçgen",
             "caption": "ACD ve CBD üçgenleri benzerdir, yani [[\\frac{h}{p}=\\frac{q}{h}]] olur ve [[h]] karesi [[p]] ile [[q]] çarpımına eşittir.",
           },
         },
@@ -451,7 +451,7 @@ export const B6_TR = {
           ],
           "image": {
             "src": "altitude-geometric-mean.svg",
-            "alt": "[[4]]'e [[9]] dikdörtgen ve eşit alanlı [[6]]'ya [[6]] kare, ayrıca geometrik ortalama [[6]] ile aritmetik ortalama [[6.5]] değerlerini karşılaştıran bir sayı doğrusu",
+            "alt": "4'e 9 dikdörtgen ve eşit alanlı 6'ya 6 kare, ayrıca geometrik ortalama 6 ile aritmetik ortalama 6.5 değerlerini karşılaştıran bir sayı doğrusu",
             "caption": "[[p=4]] ve [[q=9]] için geometrik ortalama [[6]] (yükseklik), aritmetik ortalama [[6.5]] değerinin altında kalır.",
           },
         },

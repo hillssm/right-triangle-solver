@@ -206,7 +206,7 @@ export const B4_KO = {
           ],
           "image": {
             "src": "altitude-main.svg",
-            "alt": "C에 직각을 가진 직각삼각형 ABC, 빗변 AB에 내린 수선 CD, 사영 AD = [[p]]와 DB = [[q]], 수선 CD = [[h]]",
+            "alt": "C에 직각을 가진 직각삼각형 ABC, 빗변 AB에 내린 수선 CD, 사영 AD = p와 DB = q, 수선 CD = h",
             "caption": "수선 CD가 빗변 AB를 사영 [[p]]와 [[q]]로 나눕니다. [[h]]는 [[p]]와 [[q]]의 기하평균입니다.",
           },
         },
@@ -244,7 +244,7 @@ export const B4_KO = {
           ],
           "image": {
             "src": "altitude-proof.svg",
-            "alt": "대응하는 변에 [[\\frac{h}{p}=\\frac{q}{h}]]를 보여주도록 표시된 두 작은 직각삼각형 ACD와 CBD",
+            "alt": "대응하는 변에 h/p=q/h를 보여주도록 표시된 두 작은 직각삼각형 ACD와 CBD",
             "caption": "삼각형 ACD와 CBD는 닮았으므로 [[\\frac{h}{p}=\\frac{q}{h}]]이고, [[h]]의 제곱은 [[p]] 곱하기 [[q]]와 같습니다.",
           },
         },
@@ -451,7 +451,7 @@ export const B4_KO = {
           ],
           "image": {
             "src": "altitude-geometric-mean.svg",
-            "alt": "넓이가 같은 [[4]] 곱하기 [[9]] 직사각형과 [[6]] 곱하기 [[6]] 정사각형, 그리고 기하평균 [[6]]과 산술평균 [[6.5]]를 비교하는 수직선",
+            "alt": "넓이가 같은 4 곱하기 9 직사각형과 6 곱하기 6 정사각형, 그리고 기하평균 6과 산술평균 6.5를 비교하는 수직선",
             "caption": "[[p=4]]이고 [[q=9]]인 경우, 기하평균 [[6]](수선)은 산술평균 [[6.5]]보다 아래에 놓입니다.",
           },
         },

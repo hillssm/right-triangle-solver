@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="52" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Heron's Formula Using the Semiperimeter</text>
+
+<rect x="20" y="90" width="480" height="470" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+<polygon points="80,510 400,270 400,510" fill="#ffffff" fill-opacity="0.05"/>
+<line x1="400" y1="270" x2="400" y2="510" stroke="#4ade80" stroke-width="8" stroke-linecap="round"/>
+<line x1="400" y1="510" x2="80" y2="510" stroke="#7dd3fc" stroke-width="8" stroke-linecap="round"/>
+<line x1="80" y1="510" x2="400" y2="270" stroke="#f1c97d" stroke-width="9" stroke-linecap="round"/>
+<circle cx="54" cy="512" r="9" fill="#f1c97d"/>
+<text x="54" y="521" font-size="24" font-weight="700" fill="#131313" text-anchor="middle">A</text>
+<circle cx="428" cy="512" r="9" fill="#f1c97d"/>
+<text x="428" y="521" font-size="24" font-weight="700" fill="#131313" text-anchor="middle">C</text>
+<circle cx="402" cy="242" r="9" fill="#f1c97d"/>
+<text x="402" y="251" font-size="24" font-weight="700" fill="#131313" text-anchor="middle">B</text>
+<text x="434" y="399.0" font-size="26" font-weight="700" fill="#4ade80" text-anchor="start">a = 3</text>
+<text x="240.0" y="556" font-size="26" font-weight="700" fill="#7dd3fc" text-anchor="middle">b = 4</text>
+<text x="140.0" y="390.0" font-size="26" font-weight="700" fill="#f1c97d" text-anchor="middle">c = 5</text>
+<polyline points="376,510 376,486 400,486" fill="none" stroke="#ffffff" stroke-width="3"/>
+<rect x="540" y="90" width="640" height="470" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+<rect x="570" y="108" width="580" height="82" rx="10" fill="#131313" stroke="#2e2c2c" stroke-width="2"/>
+<circle cx="612" cy="149" r="19" fill="#f1c97d"/>
+<text x="612" y="157" font-size="22" font-weight="700" fill="#131313" text-anchor="middle">1</text>
+<text x="646" y="142" font-size="20" font-weight="400" fill="#a3a3a3" text-anchor="start">Identify the three sides</text>
+<text x="646" y="172" font-size="25" font-weight="700" fill="#ffffff" text-anchor="start">a = 3, b = 4, c = 5</text>
+<rect x="570" y="200" width="580" height="82" rx="10" fill="#131313" stroke="#2e2c2c" stroke-width="2"/>
+<circle cx="612" cy="241" r="19" fill="#f1c97d"/>
+<text x="612" y="249" font-size="22" font-weight="700" fill="#131313" text-anchor="middle">2</text>
+<text x="646" y="234" font-size="20" font-weight="400" fill="#a3a3a3" text-anchor="start">Calculate the semiperimeter</text>
+<text x="646" y="264" font-size="25" font-weight="700" fill="#ffffff" text-anchor="start">s = (3 + 4 + 5) / 2 = 6</text>
+<rect x="570" y="292" width="580" height="82" rx="10" fill="#131313" stroke="#2e2c2c" stroke-width="2"/>
+<circle cx="612" cy="333" r="19" fill="#f1c97d"/>
+<text x="612" y="341" font-size="22" font-weight="700" fill="#131313" text-anchor="middle">3</text>
+<text x="646" y="326" font-size="20" font-weight="400" fill="#a3a3a3" text-anchor="start">Apply Heron's formula</text>
+<text x="646" y="356" font-size="25" font-weight="700" fill="#ffffff" text-anchor="start">K = sqrt(6(6-3)(6-4)(6-5))</text>
+<rect x="570" y="384" width="580" height="82" rx="10" fill="#131313" stroke="#2e2c2c" stroke-width="2"/>
+<circle cx="612" cy="425" r="19" fill="#f1c97d"/>
+<text x="612" y="433" font-size="22" font-weight="700" fill="#131313" text-anchor="middle">4</text>
+<text x="646" y="418" font-size="20" font-weight="400" fill="#a3a3a3" text-anchor="start">Simplify to the area</text>
+<text x="646" y="448" font-size="25" font-weight="700" fill="#ffffff" text-anchor="start">K = sqrt(36) = 6 square units</text>
+<rect x="570" y="476" width="580" height="82" rx="10" fill="#131313" stroke="#2e2c2c" stroke-width="2"/>
+<circle cx="612" cy="517" r="19" fill="#f1c97d"/>
+<text x="612" y="525" font-size="22" font-weight="700" fill="#131313" text-anchor="middle">5</text>
+<text x="646" y="510" font-size="20" font-weight="400" fill="#a3a3a3" text-anchor="start">Verify with K = ab/2</text>
+<text x="646" y="540" font-size="25" font-weight="700" fill="#ffffff" text-anchor="start">K = (3 x 4) / 2 = 6</text>
+</svg>

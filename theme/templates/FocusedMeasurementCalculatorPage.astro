@@ -30,6 +30,9 @@ import { AREA_FROM_LEGS_GUIDE_TRANSLATIONS } from 'src/data/areaFromLegsGuideTra
 import PerimeterGuide from 'theme/components/PerimeterGuide.astro';
 import PerimeterGuideLocalized from 'theme/components/PerimeterGuideLocalized.astro';
 import { PERIMETER_GUIDE_TRANSLATIONS } from 'src/data/perimeterGuideTranslations';
+import SemiperimeterGuide from 'theme/components/SemiperimeterGuide.astro';
+import SemiperimeterGuideLocalized from 'theme/components/SemiperimeterGuideLocalized.astro';
+import { SEMIPERIMETER_GUIDE_TRANSLATIONS } from 'src/data/semiperimeterGuideTranslations';
 import AreaFromSemiperimeterGuide from 'theme/components/AreaFromSemiperimeterGuide.astro';
 import AreaFromSemiperimeterGuideLocalized from 'theme/components/AreaFromSemiperimeterGuideLocalized.astro';
 import { AREA_FROM_SEMIPERIMETER_GUIDE_TRANSLATIONS } from 'src/data/areaFromSemiperimeterGuideTranslations';
@@ -348,6 +351,12 @@ const isPerimeterPage =
   page.slug === 'right-triangle-perimeter-calculator' &&
   (locale === 'en' || PERIMETER_GUIDE_TRANSLATIONS[locale]);
 
+// Page 26 of 45: full guide replaces the old thin template content on the
+// semiperimeter page (calculator itself stays untouched).
+const isSemiperimeterPage =
+  page.slug === 'right-triangle-semiperimeter-calculator' &&
+  (locale === 'en' || SEMIPERIMETER_GUIDE_TRANSLATIONS[locale]);
+
 // Each area page is a standalone ranking page with a self-referencing canonical.
 const canonicalPath = localizePath(locale, page.url);
 const showDiagramFormula = !isAreaChildCalculator;
@@ -622,7 +631,7 @@ const measurementSideEntries = page.diagram
   )}
 
   {/* Full guides replace the old thin content on the area-from-altitude and area-from-angle pages */}
-  {!isAreaFromAltitudePage && !isAreaFromAnglePage && !isAreaFromHypotenuseAltitudePage && !isAreaFromInradiusSemiperimeterPage && !isAreaFromLegAnglePage && !isAreaFromLegsPage && !isPerimeterPage && !isAreaFromSemiperimeterPage && (
+  {!isAreaFromAltitudePage && !isAreaFromAnglePage && !isAreaFromHypotenuseAltitudePage && !isAreaFromInradiusSemiperimeterPage && !isAreaFromLegAnglePage && !isAreaFromLegsPage && !isPerimeterPage && !isSemiperimeterPage && !isAreaFromSemiperimeterPage && (
   <>
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={howItWorksHeading} />
@@ -858,6 +867,8 @@ const measurementSideEntries = page.diagram
   {isAreaFromLegsPage && locale !== 'en' && AREA_FROM_LEGS_GUIDE_TRANSLATIONS[locale] ? <AreaFromLegsGuideLocalized guide={AREA_FROM_LEGS_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
   {isPerimeterPage && locale === 'en' ? <PerimeterGuide /> : null}
   {isPerimeterPage && locale !== 'en' && PERIMETER_GUIDE_TRANSLATIONS[locale] ? <PerimeterGuideLocalized guide={PERIMETER_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
+  {isSemiperimeterPage && locale === 'en' ? <SemiperimeterGuide /> : null}
+  {isSemiperimeterPage && locale !== 'en' && SEMIPERIMETER_GUIDE_TRANSLATIONS[locale] ? <SemiperimeterGuideLocalized guide={SEMIPERIMETER_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
   {isAreaFromSemiperimeterPage && locale === 'en' ? <AreaFromSemiperimeterGuide /> : null}
   {isAreaFromSemiperimeterPage && locale !== 'en' && AREA_FROM_SEMIPERIMETER_GUIDE_TRANSLATIONS[locale] ? <AreaFromSemiperimeterGuideLocalized guide={AREA_FROM_SEMIPERIMETER_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>

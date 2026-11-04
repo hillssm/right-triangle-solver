@@ -112,7 +112,7 @@ export const FOCUSED_ALTITUDE_CALCULATOR_PAGES: FocusedAltitudeCalculatorPage[] 
     toolPurpose:
       'Enter leg a, leg b, and hypotenuse c to find the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude</a> drawn from the right-<a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a> vertex to the hypotenuse. The calculator shows the formula, substitution, and result so you can follow every step.',
     intro:
-      'If you already know all three sides of a right triangle, finding the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude to the hypotenuse</a> takes one quick calculation. This page handles that exact scenario\u2014type in the two legs and the hypotenuse, and the altitude appears instantly.',
+      'If you already know all three sides of a right triangle, finding the <a href="/right-triangle-altitude-calculator/" class="text-primary hover:underline">altitude to the hypotenuse</a> takes one quick calculation. This page handles that exact scenario: type in the two legs and the hypotenuse, and the altitude appears instantly.',
     quickSummary: {
       h2: 'What This Tool Solves',
       intro:

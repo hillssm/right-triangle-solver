@@ -14,6 +14,10 @@ import 'katex/dist/katex.min.css';
 import AltitudeFromProjectionsGuide from 'theme/components/AltitudeFromProjectionsGuide.astro';
 import AltitudeFromProjectionsGuideLocalized from 'theme/components/AltitudeFromProjectionsGuideLocalized.astro';
 import { ALTITUDE_FROM_PROJECTIONS_GUIDE_TRANSLATIONS } from 'src/data/altitudeFromProjectionsGuideTranslations';
+// Page 28 of 45: full altitude-from-sides guide (EN + 18 locales).
+import AltitudeFromSidesGuide from 'theme/components/AltitudeFromSidesGuide.astro';
+import AltitudeFromSidesGuideLocalized from 'theme/components/AltitudeFromSidesGuideLocalized.astro';
+import { ALTITUDE_FROM_SIDES_GUIDE_TRANSLATIONS } from 'src/data/altitudeFromSidesGuideTranslations';
 
 interface Props {
   page: FocusedAltitudeCalculatorPageData;
@@ -111,6 +115,12 @@ const diagramSideEntries = page.diagram
 const isAltitudeFromProjectionsPage =
   page.slug === 'right-triangle-altitude-from-projections-calculator' &&
   (locale === 'en' || ALTITUDE_FROM_PROJECTIONS_GUIDE_TRANSLATIONS[locale]);
+
+// Page 28 of 45: full guide replaces the old thin template content on the
+// altitude-from-sides page (calculator itself stays untouched).
+const isAltitudeFromSidesPage =
+  page.slug === 'right-triangle-altitude-from-sides-calculator' &&
+  (locale === 'en' || ALTITUDE_FROM_SIDES_GUIDE_TRANSLATIONS[locale]);
 ---
 
 <BaseLayout
@@ -171,8 +181,8 @@ const isAltitudeFromProjectionsPage =
     runtimeTranslations={page.runtimeTranslations}
   />
 
-  {/* Full guide replaces the old thin content on the altitude-from-projections page */}
-  {!isAltitudeFromProjectionsPage && (
+  {/* Full guide replaces the old thin content on the altitude-from-projections and altitude-from-sides pages */}
+  {!isAltitudeFromProjectionsPage && !isAltitudeFromSidesPage && (
   <>
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={howItWorksHeading} />
@@ -437,6 +447,8 @@ const isAltitudeFromProjectionsPage =
 
   {isAltitudeFromProjectionsPage && locale === 'en' ? <AltitudeFromProjectionsGuide /> : null}
   {isAltitudeFromProjectionsPage && locale !== 'en' && ALTITUDE_FROM_PROJECTIONS_GUIDE_TRANSLATIONS[locale] ? <AltitudeFromProjectionsGuideLocalized guide={ALTITUDE_FROM_PROJECTIONS_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
+  {isAltitudeFromSidesPage && locale === 'en' ? <AltitudeFromSidesGuide /> : null}
+  {isAltitudeFromSidesPage && locale !== 'en' && ALTITUDE_FROM_SIDES_GUIDE_TRANSLATIONS[locale] ? <AltitudeFromSidesGuideLocalized guide={ALTITUDE_FROM_SIDES_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>
 
 <style>

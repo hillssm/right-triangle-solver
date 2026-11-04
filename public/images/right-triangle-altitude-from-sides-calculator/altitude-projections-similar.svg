@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="52" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Projections p and q, Similar Halves</text>
+  <polygon points="250,490 950,490 502,154" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="250,490 950,490 502,154" fill="none" stroke="#f1c97d" stroke-width="8" stroke-linejoin="round"/>
+  <line x1="502" y1="154" x2="502" y2="490" stroke="#4ade80" stroke-width="6" stroke-dasharray="10 8" stroke-linecap="round"/>
+  <polyline points="487.6,173.2 506.8,187.6 521.2,168.4" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polyline points="478,490 478,466 502,466" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="250.0" cy="490.0" r="9" fill="#f1c97d"/>
+  <circle cx="950.0" cy="490.0" r="9" fill="#f1c97d"/>
+  <circle cx="502.0" cy="154.0" r="9" fill="#f1c97d"/>
+  <circle cx="502.0" cy="490.0" r="7" fill="#4ade80"/>
+  <text x="230.0" y="520.0" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+  <text x="970.0" y="520.0" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="502.0" y="122.0" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <text x="526.0" y="484.0" font-size="20" font-weight="700" fill="#4ade80" text-anchor="middle">D</text>
+  <text x="376.0" y="522.0" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">p</text>
+  <text x="726.0" y="522.0" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">q</text>
+  <text x="348" y="300" font-size="24" font-weight="700" fill="#7dd3fc" text-anchor="middle">a = 3</text>
+  <text x="754" y="300" font-size="24" font-weight="700" fill="#7dd3fc" text-anchor="middle">b = 4</text>
+  <text x="472.0" y="322.0" font-size="30" font-weight="700" fill="#4ade80" text-anchor="middle">h</text>
+  <text x="418" y="388" font-size="20" font-weight="700" fill="#a3a3a3" text-anchor="middle">Δ ACD</text>
+  <text x="651" y="388" font-size="20" font-weight="700" fill="#a3a3a3" text-anchor="middle">Δ CBD</text>
+  <rect x="24" y="110" width="280" height="230" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+  <text x="164" y="166" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">h² = p × q</text>
+  <text x="164" y="210" font-size="22" font-weight="700" fill="#f1c97d" text-anchor="middle">p = AD,  q = DB</text>
+  <text x="164" y="252" font-size="19" fill="#a3a3a3" text-anchor="middle">Δ ACD ~ Δ CBD</text>
+  <text x="164" y="282" font-size="19" fill="#a3a3a3" text-anchor="middle">(similar triangles)</text>
+  <text x="600" y="560" font-size="22" fill="#a3a3a3" text-anchor="middle">The altitude splits the hypotenuse into p and q;</text>
+  <text x="600" y="590" font-size="22" fill="#a3a3a3" text-anchor="middle">h² = p × q</text>
+</svg>

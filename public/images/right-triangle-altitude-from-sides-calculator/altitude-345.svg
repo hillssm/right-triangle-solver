@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="52" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">3-4-5 Triangle: Altitude to Scale</text>
+  <polygon points="340,520 900,100 340,100" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="340,520 900,100 340,100" fill="none" stroke="#f1c97d" stroke-width="8" stroke-linejoin="round"/>
+  <line x1="340" y1="100" x2="541.6" y2="368.8" stroke="#4ade80" stroke-width="6" stroke-dasharray="10 8" stroke-linecap="round"/>
+  <polyline points="340,124 364,124 364,100" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polyline points="522.4,383.2 508,364 527.2,349.6" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="340.0" cy="520.0" r="9" fill="#f1c97d"/>
+  <circle cx="900.0" cy="100.0" r="9" fill="#f1c97d"/>
+  <circle cx="340.0" cy="100.0" r="9" fill="#f1c97d"/>
+  <circle cx="541.6" cy="368.8" r="7" fill="#4ade80"/>
+  <text x="340.0" y="552.0" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+  <text x="926.0" y="108.0" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="312.0" y="108.0" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <text x="565.6" y="394.8" font-size="20" font-weight="700" fill="#4ade80" text-anchor="middle">D</text>
+  <text x="306" y="310" font-size="24" font-weight="700" fill="#7dd3fc" text-anchor="middle">a = 3</text>
+  <text x="620" y="74" font-size="24" font-weight="700" fill="#7dd3fc" text-anchor="middle">b = 4</text>
+  <text x="648" y="336" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">c = 5</text>
+  <text x="410.8" y="234.4" font-size="24" font-weight="700" fill="#4ade80" text-anchor="middle">h = 2.4</text>
+  <rect x="24" y="110" width="270" height="260" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+  <text x="48" y="156" font-size="22" font-weight="700" fill="#7dd3fc" text-anchor="start">a = 3</text>
+  <text x="48" y="182" font-size="19" fill="#a3a3a3" text-anchor="start">vertical leg</text>
+  <text x="48" y="216" font-size="22" font-weight="700" fill="#7dd3fc" text-anchor="start">b = 4</text>
+  <text x="48" y="242" font-size="19" fill="#a3a3a3" text-anchor="start">horizontal leg</text>
+  <text x="48" y="276" font-size="22" font-weight="700" fill="#ffffff" text-anchor="start">c = 5</text>
+  <text x="48" y="302" font-size="19" fill="#a3a3a3" text-anchor="start">hypotenuse</text>
+  <text x="48" y="336" font-size="22" font-weight="700" fill="#4ade80" text-anchor="start">h = (3 × 4) / 5</text>
+  <text x="48" y="362" font-size="19" fill="#a3a3a3" text-anchor="start">= 2.4</text>
+  <text x="600" y="592" font-size="22" fill="#a3a3a3" text-anchor="middle">A 3-4-5 triangle: altitude h equals (3 x 4) / 5 = 2.4.</text>
+</svg>

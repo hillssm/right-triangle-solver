@@ -12,7 +12,7 @@ import {
   RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE,
   RIGHT_TRIANGLE_GROUPED_PAGES
 } from 'src/data/rightTriangleGroupedPages';
-import { localizePath, SUPPORTED_LOCALES } from 'theme/i18n/locales';
+import { DEFAULT_LOCALE, localizePath, SUPPORTED_LOCALES } from 'theme/i18n/locales';
 import { site } from 'theme/utils/site';
 
 const PAGE_SIZE = 12;
@@ -27,6 +27,10 @@ const LOCALIZED_STATIC_PATHS = [
 ];
 
 const ENGLISH_ONLY_STATIC_PATHS = ['/sitemap/', '/blog/'];
+
+// Locale versions of these thin utility pages are noindexed (user order
+// 2026-11-04), so they must not appear in the sitemap. English versions stay.
+const NOINDEX_LOCALE_PATHS = ['/about-us/', '/contact-us/', '/privacy/', '/terms/'];
 
 const CALCULATOR_PATHS = [
   RIGHT_TRIANGLE_CALCULATOR_HUB_PAGE.url,
@@ -63,6 +67,7 @@ export async function GET() {
 
   const localizedPaths = [...LOCALIZED_STATIC_PATHS, ...CALCULATOR_PATHS].flatMap((path) =>
     SUPPORTED_LOCALES.map((locale) => {
+      if (locale !== DEFAULT_LOCALE && NOINDEX_LOCALE_PATHS.includes(path)) return null;
       return localizePath(locale, path);
     }).filter((p): p is string => p !== null)
   );
